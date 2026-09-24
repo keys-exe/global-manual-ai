@@ -116,13 +116,15 @@ def t2i(sc, f):
     if sc["house"]:
         parts.append(PROP_REF); parts.append(PROP_SHELL)
     parts.append("Named anchors: "+LOCN[sc["loc"]]["anchors"]+".")
+    if sc["loc"]=="L-KIT": parts.append("The kitchen floor is beige vinyl tile with a worn patch, exactly as in the kitchen plate; the sage carpet stops at the hall threshold and never enters the kitchen.")
     if sc["loc"] in VIEW and f["scale"] in ("WIDE","FULL","MCU"):
         parts.append(S["VIEW-OUT"].replace("[WHAT THE PROPERTY'S EXTERIOR SHOWS FROM THIS ROOM'S SIDE, NAMED]",VIEW[sc["loc"]]))
     parts.append(light(sc, "the window side" if sc["loc"] in ("L-KIT","L-LIV","L-GP") else "the landing-window side" if sc["loc"]=="L-STAIR" else "the front-door side"))
     parts.append(LOOK_STRING)
     parts.append(S["PHYS-FRAME-C"])
     parts.append(CAPF)
-    negs=[S["NEG-FILM"],S["NEG-SCENECUT"],S["NEG-BODY"]]
+    negs=[S["NEG-FILM"],S["NEG-SCENECUT"],S["NEG-BODY"],"no film camera, no tripod, no dolly, no microphone, no boom pole, no lights on stands, no film crew or equipment anywhere in frame, no character-sheet panels, no split screen, no text"]
+    if sc["loc"]=="L-KIT": negs.append("no carpet in the kitchen, no rug on the kitchen floor")
     if faces: negs+= [S["NEG-SKIN"]]
     if sc["house"]: negs.append(S["NEG-PROP"])
     if not f.get("key"): negs.append(S["NEG-SCENE"])
