@@ -93,6 +93,8 @@ LOCKS = [
  ("Voice","Supplied voice masters per character; Joan to be supplied or cast","§22D","D7"),
  ("Declared side","Margaret RIGHT (Hook C 'her right knee') · Barbara LEFT","Product Sheet §7","Held on every beat"),
  ("Product first appearance","TN-SC05-SH05 (Barbara's reveal). Nothing before the Turn","§9, §3B","Hook B strap concealed (D4)"),
+ ("Product references","Canonical composite (front · three-quarter · rear) on every product call + REF-PROD. Placement refs: FRONT on straight-leg worn beats, BENT on seated / stairs / flexed beats, REAR on rear and turning beats","Product Sheet registry","The four product images you sent. Self-test passed: 18 strings, 24 checks"),
+ ("Seating beats","Straight leg, strap starts mid-shin and seats on the tendon (SEAT-LOCK)","Product Sheet RULINGS","Bent-knee seating was tested and dropped"),
  ("Mechanism route","SCREEN on Barbara's phone first, then INSIDE","§24G","MODEL unavailable: the knee model is in SC07, after the Turn"),
 ]
 
@@ -103,7 +105,7 @@ CLAIMS = [
  ("P-039","Over two hundred thousand people wear one.","3","Product Sheet: volume claim, generate as scripted","warn"),
  ("P-036","Bone on bone, arthritis, worn cartilage, meniscus… that's the spot taking the weight… That's why nothing worked.","3","Efficacy across four named conditions. Flagged; not on the register","warn"),
  ("P-034 · P-052 · P-069","It changes where the weight lands / moves the weight off the worn part","—","A load-path mechanism. Product Sheet locks 'protection' (D1)","warn"),
- ("P-034","There's a silicone pad on the inside.","—","Contradicts the spec: rigid polymer shell, keeper loops inside. Silicone is the knock-off signifier (D2)","warn"),
+ ("P-034","There's a silicone pad on the inside.","—","Advertiser-stated, unphotographed (Product Sheet inner_face_script). Inner face never rendered (D2)","info"),
  ("P-074","It's two for one right now.","—","BOGO terms unconfirmed. Generate as simulated promo","info"),
  ("P-074","Sixty days, and you keep the straps.","—","Guarantee unconfirmed. Generate as simulated promo","info"),
  ("P-039","Ten seconds to put on.","—","Observable; shown as a §9B seating demo, no timer on screen","ok"),
@@ -114,7 +116,7 @@ CLAIMS = [
 DECISIONS = [
  ("D0","Mode","The script says 'AI Drama', which §3B runs in Mode 4 or 5. Mode 4 is explicit-instruction-only, so I've read the header as that instruction.","Confirm Mode 4. Your plates already sit in this look."),
  ("D1","Mechanism claim","The script pitches load-path (weight moved off the worn part) in P-034, P-052 and P-069. The Product Sheet locks 'protection' and marks load-path retired for this product. The Product Sheet outranks the script.","The lines are unchanged. Renders follow the sheet unless you switch MECHANISM_CLAIM for this build. Recommend switching: the whole Turn argues load-path"),
- ("D2","'Silicone pad on the inside'","The spec is a rigid matte polymer shell with moulded keeper loops. The Product Sheet names a soft silicone pad as the market knock-off's signifier.","The line stays. No render ever shows a silicone pad. Recommend the advertiser corrects the line; it describes the copy you warn about in P-074"),
+ ("D2","'Silicone pad on the inside'","Already logged on the Product Sheet (UNSETTLED inner_face_script, V7.49.12): advertiser-stated, unphotographed. The inner face is never shown.","The line plays as written. No beat shows the inside of the shell, so the pad is never rendered"),
  ("D3","'A small black strap'","The shell spans the whole front of the knee. 'Small' pulls the render undersized (NEG-PLACE bans it).","Direction ignored for render; 'That little thing?' still plays as dialogue"),
  ("D4","Hook B hem","A strap under the kneecap cannot show 'below a cropped trouser hem'. The hem covers the knee. §9 also keeps the product out until the Turn.","Default: CONCEALED, knees moving freely under the trousers. Alternate written alongside: a skirt clearly above the knee with the strap VISIBLE, flagged against §9"),
  ("D5","Hook C 'buckles sideways'","In P-027 Margaret says her knee doesn't hurt going sideways. Barbara's argument depends on it.","Render as buckling forwards under load on the bend. Flagged, line untouched"),
