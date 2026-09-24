@@ -205,7 +205,7 @@ def clip(sc, c):
         parts.append(S["RIG-"+r].replace("[DISTANCE]","30"))
     parts.append(S["INHERIT-FILM"])
     parts.append(S["AUD-FILM"]+" "+AUD[sc["loc"]])
-    negs=[S["NEG-WARP-C"],S["NEG-SCENECUT"],S["NEG-DRAMA"],S["NEG-AUD"],"no generated music, no subtitles, no text on screen, no letterbox bars, no slow motion, no speed ramp, no actor looking into the lens"]
+    negs=[S["NEG-WARP-C"],S["NEG-SCENECUT"],S["NEG-DRAMA"],S["NEG-AUD"],"no microphone in frame, no boom pole, no boom microphone or furry windshield visible anywhere in the frame, no film crew or equipment in frame, no generated music, no subtitles, no text on screen, no letterbox bars, no slow motion, no speed ramp, no actor looking into the lens"]
     if prod: negs+=["no second unit"+("" if sc["_id"]!="SC11" else " beyond the two in her lap"),"no strap sliding, no strap rotating, no strap changing shape","no silicone pad visible"]
     if sc["_id"] in ("SC07","SC08","SC09","SC10","SC11"): negs.append(S["NEG-SUPPORT"])
     parts.append("Avoid: "+", ".join(negs)+".")
