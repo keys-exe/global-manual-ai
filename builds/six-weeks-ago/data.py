@@ -121,7 +121,7 @@ DECISIONS = [
  ("D4","Hook B hem","A strap under the kneecap cannot show 'below a cropped trouser hem'. The hem covers the knee. §9 also keeps the product out until the Turn.","Default: CONCEALED, knees moving freely under the trousers. Alternate written alongside: a skirt clearly above the knee with the strap VISIBLE, flagged against §9"),
  ("D5","Hook C 'buckles sideways'","In P-027 Margaret says her knee doesn't hurt going sideways. Barbara's argument depends on it.","Render as buckling forwards under load on the bend. Flagged, line untouched"),
  ("D6","Scene 8 'hand resting on the rail'","Product Sheet after-state: reciprocal gait, never hovering near a rail.","Default: hands free at her sides on SC09. Say if you want the rail kept"),
- ("D7","Joan","Two lines, voice only on the phone. No voice master supplied.","Keep her off-screen, phone-filtered. Send a Joan voice or I cast one to a §22D brief"),
+ ("D7","Joan · RESOLVED","Joan stays off-screen on the phone. Her voice master is generated on Seedance: a one-off seed frame, then a 10-second neutral read of her two lines.","Generate the two prompts on the Cast tab, then send me the audio to measure against Margaret and Barbara"),
  ("D8","Time cards","Script headings 'that night', 'a week later', 'a month later', 'Sunday'. The reference used DAY 90 / DAY 180 cards.","Recommend cards for 'A week later' and 'A month later' only; the others read from the light"),
  ("D9","Doctor plate X-ray","The monitor X-ray is labelled 'L'. Margaret's strap is on the RIGHT knee.","Regenerate the monitor as a bilateral knee film with no letters"),
  ("D10","Runtime","About 919 words of dialogue plus ~38 silent shots: estimate 6:40–7:45 (unverified) against the reference's 5:40. Scene 5 is 417 words (~2:30).","No script change. Scene 5 is paced at the reference Turn rhythm. Your call if you want a trim pass"),
@@ -142,7 +142,7 @@ CAST = [
       voice="Master supplied · F0 ≈ 208 Hz · 176 wpm · 7.1 s",note="The sheet reads mid-30s. Fine for Sarah's daughter; say if you want her younger",beats=0),
  dict(id="DOCTOR",role="Knee doctor, 40s–50s",sheet="Dark curly hair greying at the temples, brown eyes, stubble, lean long face; light-blue shirt, rolled sleeves, navy knit tie, navy chinos, tan brogues",
       voice="Master supplied · F0 ≈ 108 Hz · 213 wpm · 11.0 s",note="Generic role, no real clinician or institution named (§19B)",beats=0),
- dict(id="JOAN",role="Friend · phone only",sheet="Not sheeted (off-screen)",voice="Not supplied",note="D7",beats=0),
+ dict(id="JOAN",role="Friend · phone only",sheet="Off-screen in the ad. A one-off face exists only to generate her voice master and never appears in the film",voice="Voice master to be generated on Seedance (10 s, neutral read): prompts below",note="D7 resolved",beats=0),
  dict(id="W1 · W2",role="Commuters, late 40s · Hook B only",sheet="One-off subjects, not sheeted (§13)",voice="Seedance-generated in scene",note="—",beats=0),
 ]
 

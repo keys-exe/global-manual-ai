@@ -44,9 +44,7 @@ VOICE = {
   "Quick even tempo, sentences in one breath. Every line lands on the same measured fall. Consonants fully sounded. "
   "No age wear. Emphasis by slowing down and spacing the words, never by raising pitch. "
   "A short exhale through the nose while he reads; a single low 'hm' of recognition."),
- "JOAN": ("A woman of seventy-three, Lincolnshire, a thin reedy head voice with a slow, weary drawl that sags at the end of every line. "
-  "Flat Lincolnshire vowels, no RP. Nasal colouring, dry. Slow, long vowels, a pause before she gives in. Lines trail off downwards. "
-  "Soft, lazy consonants. Wavering held vowels, breath short. Emphasis is a sigh on the key word. A long weary sigh; a small reluctant laugh."),
+ "JOAN": __import__("joan").VOICE_JOAN,
 }
 
 AXES = ["Face architecture","Hair","Age position","Build","Class / wardrobe register","Marker","Voice","Environment"]
