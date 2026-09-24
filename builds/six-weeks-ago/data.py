@@ -90,7 +90,7 @@ LOCKS = [
  ("GPT Image on any body frame","Never","§18A rule 7","—"),
  ("Video — dialogue and MULTI-SHOT scenes","Seedance 2.5, ingredients mode, 720p","§18A, §44.5","Voice masters attached"),
  ("Video — single-shot inserts","Kling 3.0 (kling3_0), start image, ≤2,500 chars","§4, §44.5","—"),
- ("Voice","Supplied voice masters per character; Joan to be supplied or cast","§22D","D7"),
+ ("Voice","Supplied voice masters per character, all British (confirmed); Joan to be supplied or cast","§22D","D7"),
  ("Declared side","Margaret RIGHT (Hook C 'her right knee') · Barbara LEFT","Product Sheet §7","Held on every beat"),
  ("Product first appearance","TN-SC05-SH05 (Barbara's reveal). Nothing before the Turn","§9, §3B","Hook B strap concealed (D4)"),
  ("Product references","Canonical composite (front · three-quarter · rear) on every product call + REF-PROD. Placement refs: FRONT on straight-leg worn beats, BENT on seated / stairs / flexed beats, REAR on rear and turning beats","Product Sheet registry","The four product images you sent. Self-test passed: 18 strings, 24 checks"),
@@ -125,7 +125,7 @@ DECISIONS = [
  ("D8","Time cards","Script headings 'that night', 'a week later', 'a month later', 'Sunday'. The reference used DAY 90 / DAY 180 cards.","Recommend cards for 'A week later' and 'A month later' only; the others read from the light"),
  ("D9","Doctor plate X-ray","The monitor X-ray is labelled 'L'. Margaret's strap is on the RIGHT knee.","Regenerate the monitor as a bilateral knee film with no letters"),
  ("D10","Runtime","About 919 words of dialogue plus ~38 silent shots: estimate 6:40–7:45 (unverified) against the reference's 5:40. Scene 5 is 417 words (~2:30).","No script change. Scene 5 is paced at the reference Turn rhythm. Your call if you want a trim pass"),
- ("D11","'Mom' in a British house","The cast, plates and Product Sheet buyer are British; 'Mom' is American (P-001, P-064, P-066, Hook A).","Line untouched. Tell the voice masters which way to say it"),
+ ("D11","'Mom' in British mouths","You've confirmed the voices are British. 'Mom' is American and appears in P-001, P-064, P-066 and Hook A (Sarah's lines). A British voice saying 'Mom' will sound off, and NEG-DEFAULT-VOICE bans American vowel colouring.","Recommend changing to 'Mum' in all four places. It's a script edit, so it's yours to approve; until then the lines stay as written"),
  ("D12","Hook A/C time card","The '6 weeks ago' card after Hooks A and C jumps back from a moment that is itself in the Before.","Keep as the title device. It reads cleanly only after Hook B"),
  ("D13","Hall plate handrail","The stairs plate shows a brass-bracket wall handrail; the hall plate's stair wall has none.","Redress the hall plate with the wall rail before any hall master is built"),
 ]
