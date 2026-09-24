@@ -8,10 +8,10 @@ def b(id, p, kind, scale, rig, fn, subj, emo, vis="—", note=""):
 # ---------------- HOOK A · "Get away" · stairs + hall · story day HKA
 b("HKA-SC01-SH01","H-A0","SIL","ECU","F3","CONSEQUENCE","Margaret's right knee trembling as she lowers backwards onto the next tread, same foot leading","dread","—","cool grey grade; step-to gait")
 b("HKA-SC01-SH02","H-A0","INS","INSERT","F2","CONSEQUENCE","Knuckles white on the dark-wood banister rail","strain")
-b("HKA-SC01-SH03","H-A1","SH","FULL","F5","CONSEQUENCE","Sarah in the hall, shopping bags drop, she runs for the stairs — 'Mom! Your knee! Here, let me help you.'","alarm","—","bags hit the hall carpet; §27E consequence")
+b("HKA-SC01-SH03","H-A1","SH","FULL","F5","CONSEQUENCE","Sarah in the hall, shopping bags drop, she runs for the stairs — 'Mum! Your knee! Here, let me help you.'","alarm","—","bags hit the hall carpet; §27E consequence")
 b("HKA-SC01-SH04","H-A2","SH","CU","F3","CONSEQUENCE","Margaret yanks her arm out of Sarah's hand — 'No! I can do this. Get away from me!'","shame masked as anger")
 b("HKA-SC01-SH05","H-A2","LS","MCU","F2","CONSEQUENCE","Sarah freezes, hand still raised","hurt")
-b("HKA-SC01-SH06","H-A3","SH","MCU","F1","CONSEQUENCE","Sarah, quietly — 'Mom, you're going down backwards.'","grief")
+b("HKA-SC01-SH06","H-A3","SH","MCU","F1","CONSEQUENCE","Sarah, quietly — 'Mum, you're going down backwards.'","grief")
 b("HKA-SC01-SH07","H-A4","SH","CU","F1","CONSEQUENCE","Margaret turns her face to the wall, chin shaking — 'I know. Please don't watch me.'","shame","—","open loop planted: backwards on the stairs")
 b("HKA-SC01-SH08","—","CARD","—","—","—","Black card, white type: 6 weeks ago","—","—","post type §17")
 # ---------------- HOOK B · "Seventy-one!" · station staircase · story day HKB (after-state, flash-forward)
@@ -34,7 +34,7 @@ b("HKC-SC01-SH08","—","CARD","—","—","—","Black card, white type: 6 week
 
 # ---------------- BF · SC02 · Kitchen · afternoon · story day D1
 b("BF-SC02-SH01","A","SIL","INSERT","F4","ILLUSTRATE","A stairlift brochure slid across the floral oilcloth table","pressure","—","brochure: generic, no readable brand (§17)")
-b("BF-SC02-SH02","P-001","SH","MCU","F2","—","Sarah — 'It's just a stairlift, Mom. Just look at it.'","pleading")
+b("BF-SC02-SH02","P-001","SH","MCU","F2","—","Sarah — 'It's just a stairlift, Mum. Just look at it.'","pleading")
 b("BF-SC02-SH03","P-002","SH","CU","F2","—","Margaret, not looking at it — 'I know what it is.'","closed")
 b("BF-SC02-SH04","P-003","SH","MCU","F3","—","Sarah — 'I watched you come down those stairs backwards.'","hurt")
 b("BF-SC02-SH05","P-004","SH","CU","F2","—","Margaret — 'Then don't watch.'","cold shame")
@@ -135,11 +135,11 @@ b("AF-SC08-SH12","P-063","SH","TWO-SHOT","F2","CONTRAST","Margaret takes his han
 # ---------------- AF · SC09 · Stairs · Sunday midday · D6
 b("AF-SC09-SH00","—","CARD","—","—","—","Time card: Sunday","—","—","post type (optional — D8)")
 b("AF-SC09-SH01","A","SIL","FULL","F5","CONTRAST","From the hall: Margaret going up forwards at a normal pace; Sarah behind her, arms out","protective","CONCEALED","D6: 'hand resting on the rail' vs Product Sheet after-state")
-b("AF-SC09-SH02","P-064","SH","MCU","F2","—","Sarah — 'Slowly, Mom. I'm right behind you.'","habit")
+b("AF-SC09-SH02","P-064","SH","MCU","F2","—","Sarah — 'Slowly, Mum. I'm right behind you.'","habit")
 b("AF-SC09-SH03","A","SIL","ECU","F4","CONTRAST","Margaret's feet, reciprocal gait up the brass-rodded treads","ease","CONCEALED","mirror of HKA-SH01")
 b("AF-SC09-SH04","P-065","SH","MCU","F2","CONTRAST","At the top, she turns — 'You can put your arms down now, love.'","gentle mischief")
 b("AF-SC09-SH05","A","SIL","MEDIUM","F1","CONTRAST","Sarah halfway up, arms still out; slowly lowers them","stunned")
-b("AF-SC09-SH06","P-066","SH","CU","F1","—","Sarah, tearing up — 'Mom... when did that happen?'","wonder")
+b("AF-SC09-SH06","P-066","SH","CU","F1","—","Sarah, tearing up — 'Mum... when did that happen?'","wonder")
 b("AF-SC09-SH07","P-067","SH","CU","F2","—","Margaret — 'Six weeks ago. Barbara happened.'","warm","—","title payoff")
 b("AF-SC09-SH08","P-068","SH","MCU","F2","—","Sarah — 'What does that even mean?'","laughing confusion")
 b("AF-SC09-SH09","P-069","INS","ECU","F4","PRODUCT-IN-LIFE","Margaret pulls up her trouser leg on the top step: the strap under her right kneecap","show","REVEAL","nano_banana_pro")

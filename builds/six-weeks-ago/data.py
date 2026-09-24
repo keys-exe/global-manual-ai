@@ -125,7 +125,7 @@ DECISIONS = [
  ("D8","Time cards","Script headings 'that night', 'a week later', 'a month later', 'Sunday'. The reference used DAY 90 / DAY 180 cards.","Recommend cards for 'A week later' and 'A month later' only; the others read from the light"),
  ("D9","Doctor plate X-ray","The monitor X-ray is labelled 'L'. Margaret's strap is on the RIGHT knee.","Regenerate the monitor as a bilateral knee film with no letters"),
  ("D10","Runtime","About 919 words of dialogue plus ~38 silent shots: estimate 6:40–7:45 (unverified) against the reference's 5:40. Scene 5 is 417 words (~2:30).","No script change. Scene 5 is paced at the reference Turn rhythm. Your call if you want a trim pass"),
- ("D11","'Mom' in British mouths","You've confirmed the voices are British. 'Mom' is American and appears in P-001, P-064, P-066 and Hook A (Sarah's lines). A British voice saying 'Mom' will sound off, and NEG-DEFAULT-VOICE bans American vowel colouring.","Recommend changing to 'Mum' in all four places. It's a script edit, so it's yours to approve; until then the lines stay as written"),
+ ("D11","'Mom' → 'Mum' · RESOLVED","You approved the change. All five of Sarah's lines now say 'Mum': P-001, P-064, P-066 and both of her Hook A lines.","Done. The script's other lines are untouched"),
  ("D12","Hook A/C time card","The '6 weeks ago' card after Hooks A and C jumps back from a moment that is itself in the Before.","Keep as the title device. It reads cleanly only after Hook B"),
  ]
 

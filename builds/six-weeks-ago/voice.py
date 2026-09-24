@@ -113,7 +113,7 @@ C20 = {
   ("Gesture register","Restrained"),("Ocular default","Off-lens; looks away when his voice goes"),("Camera rig","F2, F1 on SC08's confession"),("Audio","AUD-FILM"),
   ("Wardrobe never-list","No sportswear, no jeans"),("Physical never-list","Never lifts Margaret successfully (Hook C); never cries openly, only the voice goes"),
   ("Eyeline","Off-lens"),("Voice spec","VOICE-FRANK"),("Stress register","Stops dead, then says it quietly"),("Non-speech","Throat-clear; shaky in-breath"),("Mouth asymmetry","Assigned: left corner. Confirm")],
- "SARAH": [("Accent","Nottingham, trimmed (British confirmed; region as proposed). 'Mom' is D11"),("Pacing","Fast, pressing, ~180 wpm"),
+ "SARAH": [("Accent","Nottingham, trimmed (British confirmed; region as proposed). says 'Mum' (D11 resolved)"),("Pacing","Fast, pressing, ~180 wpm"),
   ("Posture","Leans in, hands busy; arms out behind Margaret on the stairs"),("Rest position","Hands flat on the table either side of the brochure"),
   ("Gesture register","Continuous in SC02, Restrained in SC09"),("Ocular default","Locked on Margaret; breaks up and away fighting tears"),("Camera rig","F3 in SC02, F2/F1 in SC09"),("Audio","AUD-FILM"),
   ("Wardrobe never-list","No dresses except the wedding"),("Physical never-list","Never raises her voice at the lens; never touches Margaret's knee"),("Eyeline","Off-lens"),
