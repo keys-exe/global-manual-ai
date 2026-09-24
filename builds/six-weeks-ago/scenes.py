@@ -70,6 +70,6 @@ WARD = [
  ("D5","Frank","polo shirt, bottle green","buttoned cable cardigan, oatmeal (signature)","wax jacket, olive — half on","cords, brown","loafers, brown suede (sheet)","—","green family","AF-SC08 · hall"),
  ("D6","Margaret","blouse, soft-pink floral","buttoned cardigan, cream","—","wide-leg trousers, navy","slippers, moccasin","signature glasses","pattern-led","AF-SC09 stairs · REVEAL ; AF-SC10 kitchen · CONCEALED"),
  ("D6","Sarah","button-down shirt, chambray","—","—","cords, tan","loafers, brown","signature hoops","earth","AF-SC09 stairs ; AF-SC10 doorway"),
- ("D6","Emily","cable crew jumper worn alone, soft sage","—","—","jeans, light wash","ankle boots, tan suede","—","green family","AF-SC10 · kitchen"),
+ ("D6","Emily","long-sleeve tee, cream","vintage fair-isle cardigan, rust and teal","—","wide-leg cords, rust","chunky lace-up boots, oxblood","—","pattern-led","AF-SC10 · kitchen · register changed to clear Sarah (§19A)"),
  ("D7","Margaret","tunic, mustard","—","—","leggings, charcoal","slipper boots, grey knit","signature glasses","earth","OC-SC11 · living room · CONCEALED ; two straps HELD"),
 ]
