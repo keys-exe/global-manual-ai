@@ -46,3 +46,32 @@ Method: every coverage frame is the master's own camera position pushed in on a 
 
 Round 2 frames moved to rejected/. Contact sheet round 3: PASS.
 Lesson: coverage built as push-ins or edits of an approved frame holds identity and geography; coverage described from scratch drifts.
+
+## Round 4: side-by-side blocking (master B), realistic movement
+
+Direction: from "Can I show you something?" Barbara moves her chair round and sits beside Margaret. She shows her knee to Margaret, not to camera. Every pose must be physically real: weight in the chairs, feet flat, natural knee angles, trousers that behave like cloth. The first side-by-side pass (F12–F19, never committed) was dropped for awkward limbs and geography drift.
+
+| Beat | Job | Result |
+|---|---|---|
+| SC05-F11-MASTER2 | ce8e414e-a0b2-40b4-8978-e56f1cb031ed | PASS: chosen master "B" |
+| SC05-F20-CHAIR-MOVE (a) | 22a3a8f7-6b2c-4fee-acf7-6c2a0c8b8691 | FAIL: chair left standing, not being moved |
+| SC05-F20-CHAIR-MOVE (b) | 4a483a45-e3f1-4aba-9dee-c1c68653542d | PASS: both hands on the chair rail, sliding it into place |
+| SC05-F21-SIT-BESIDE | 9a876ae9-b2c6-44f0-bacb-18c85f7faa23 | PASS: lowering onto the seat, hand on the table taking her weight |
+| SC05-F22-HITCH (a) | 77021768-4312-400d-a92b-6101972958f0 | FAIL: trouser leg slit open, impossible cloth |
+| SC05-F22-HITCH (b) | a50f73b1-bb5b-40f2-ab19-982768e4dcc3 | FAIL: cardigan missing |
+| SC05-F22-HITCH (c) | 5dd5ef6c-cc62-4ad8-b63a-c9dc3b5eca38 | PASS: edit of (b), cardigan restored |
+| SC05-F23-REVEAL-2S | e00e245a-1b9b-497a-b41a-d8a77a22a847 | PASS: knee turned to Margaret, strap under the kneecap, Margaret leaning in |
+| SC05-F24-REVEAL-INSERT | 1a85038a-dc53-4004-abb9-365edc7be41c | PASS: over Margaret's shoulder, leg bent, foot flat |
+| SC05-F25-B-MCU-SIDE | 452b2f03-9a60-4d3d-8ad8-50341fcc17d0 | PASS |
+| SC05-F26-M-MCU-SIDE | ac4e736f-da5f-4014-a961-60541901174d | PASS |
+| SC05-F27-TENDON (a) | e4cdef86-273f-4030-a083-915296bc31ab | FAIL: too wide, no finger on the tendon |
+| SC05-F27-TENDON (b) | 7915ab13-e377-4756-ae6c-c0ca72d25200 | FAIL: a strap appeared on Margaret's knee |
+| SC05-F27-TENDON (c) | 71c9c328-01b3-479d-abec-64568ed54e5f | PASS: Margaret's finger through her trouser, Barbara's on the notch |
+| SC05-F28-B-CU-TRUTH | 7d6900d2-a948-46a0-873a-a81a6cf2860d | PASS |
+| SC05-F29-M-CU-RAW (a) | 85aef0f5-0770-477c-9a30-46c3c85e01e7 | FAIL: two-shot, not a close-up |
+| SC05-F29-M-CU-RAW (b) | af76c426-02dc-4338-8a00-58d472647999 | FAIL: glasses hanging, not on her nose |
+| SC05-F29-M-CU-RAW (c) | bb14c764-f8ab-45d4-aebf-bed8070e6009 | PASS |
+| SC05-F30-PALM | e4ca8c68-5fdb-4581-8010-ad259c1604ff | PASS |
+
+From C02's "Can I show you something?" onwards, round-3 frames F04–F10 are superseded by F20–F30. F01–F03 still cover the opening at the original seating.
+Lesson: write the body mechanics into every prompt (weight, feet, knee angle, cloth), and build each movement beat as an edit of its neighbour so the action reads as one continuous motion.
