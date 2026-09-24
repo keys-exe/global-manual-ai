@@ -88,14 +88,14 @@ LOCKS = [
  ("Frames with no person","nano_banana_2 · Sunburst (variant sunburst, quality high, 2k)","§18A","End card: Sunburst quality xhigh"),
  ("Mechanism renders","nano_banana_2 · nano_banana_pro","§18A, §12A","Anatomical register (Product Sheet)"),
  ("GPT Image on any body frame","Never","§18A rule 7","—"),
- ("Video — dialogue and MULTI-SHOT scenes","Seedance 2.5, ingredients mode, 720p","§18A, §44.5","Voice masters attached"),
- ("Video — single-shot inserts","Kling 3.0 (kling3_0), start image, ≤2,500 chars","§4, §44.5","—"),
+ ("Video — every clip","Seedance 2.5 on kie.ai, reference images + reference audio, 720p (your routing; Kling unused)","§4, §18A","Tool override by you, recorded"),
+ ("Images","Higgsfield, nano_banana_pro, 2k, references as image_references","§18A","Your routing"),
  ("Voice","Supplied voice masters per character, all British (confirmed); Joan to be supplied or cast","§22D","D7"),
  ("Declared side","Margaret RIGHT (Hook C 'her right knee') · Barbara LEFT","Product Sheet §7","Held on every beat"),
  ("Product first appearance","TN-SC05-SH05 (Barbara's reveal). Nothing before the Turn","§9, §3B","Hook B strap concealed (D4)"),
  ("Product references","Canonical composite (front · three-quarter · rear) on every product call + REF-PROD. Placement refs: FRONT on straight-leg worn beats, BENT on seated / stairs / flexed beats, REAR on rear and turning beats","Product Sheet registry","The four product images you sent. Self-test passed: 18 strings, 24 checks"),
  ("Seating beats","Straight leg, strap starts mid-shin and seats on the tendon (SEAT-LOCK)","Product Sheet RULINGS","Bent-knee seating was tested and dropped"),
- ("Mechanism route","SCREEN on Barbara's phone first, then INSIDE","§24G","MODEL unavailable: the knee model is in SC07, after the Turn"),
+ ("Coverage","Film coverage only: masters, singles, reverses, in-scene close-ups. No B-roll, no cutaways, no mechanism renders","§24G","Your instruction"),
 ]
 
 CLAIMS = [
@@ -115,7 +115,7 @@ CLAIMS = [
 
 DECISIONS = [
  ("D0","Mode","The script says 'AI Drama', which §3B runs in Mode 4 or 5. Mode 4 is explicit-instruction-only, so I've read the header as that instruction.","Confirm Mode 4. Your plates already sit in this look."),
- ("D1","Mechanism claim","The script pitches load-path (weight moved off the worn part) in P-034, P-052 and P-069. The Product Sheet locks 'protection' and marks load-path retired for this product. The Product Sheet outranks the script.","The lines are unchanged. Renders follow the sheet unless you switch MECHANISM_CLAIM for this build. Recommend switching: the whole Turn argues load-path"),
+ ("D1","Mechanism claim · RESOLVED","The standards themselves cut load-path at V7.48 and lock the claim to protection (§12A, §44.17), so switching the Product Sheet isn't open. You've also dropped B-roll, so there are no mechanism renders.","Barbara's, the doctor's and Margaret's lines play as written. Nothing on screen depicts a mechanism"),
  ("D2","'Silicone pad on the inside'","Already logged on the Product Sheet (UNSETTLED inner_face_script, V7.49.12): advertiser-stated, unphotographed. The inner face is never shown.","The line plays as written. No beat shows the inside of the shell, so the pad is never rendered"),
  ("D3","'A small black strap'","The shell spans the whole front of the knee. 'Small' pulls the render undersized (NEG-PLACE bans it).","Direction ignored for render; 'That little thing?' still plays as dialogue"),
  ("D4","Hook B hem","A strap under the kneecap cannot show 'below a cropped trouser hem'. The hem covers the knee. §9 also keeps the product out until the Turn.","Default: CONCEALED, knees moving freely under the trousers. Alternate written alongside: a skirt clearly above the knee with the strap VISIBLE, flagged against §9"),
