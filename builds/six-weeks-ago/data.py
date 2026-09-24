@@ -127,8 +127,7 @@ DECISIONS = [
  ("D10","Runtime","About 919 words of dialogue plus ~38 silent shots: estimate 6:40–7:45 (unverified) against the reference's 5:40. Scene 5 is 417 words (~2:30).","No script change. Scene 5 is paced at the reference Turn rhythm. Your call if you want a trim pass"),
  ("D11","'Mom' in British mouths","You've confirmed the voices are British. 'Mom' is American and appears in P-001, P-064, P-066 and Hook A (Sarah's lines). A British voice saying 'Mom' will sound off, and NEG-DEFAULT-VOICE bans American vowel colouring.","Recommend changing to 'Mum' in all four places. It's a script edit, so it's yours to approve; until then the lines stay as written"),
  ("D12","Hook A/C time card","The '6 weeks ago' card after Hooks A and C jumps back from a moment that is itself in the Before.","Keep as the title device. It reads cleanly only after Hook B"),
- ("D13","Hall plate handrail","The stairs plate shows a brass-bracket wall handrail; the hall plate's stair wall has none.","Redress the hall plate with the wall rail before any hall master is built"),
-]
+ ]
 
 CAST = [
  dict(id="MARGARET",role="Protagonist, 71",sheet="Silver-grey chin-length bob with a side part; hazel eyes; broad face, soft jowl, fine forehead lines, a small healed mark on the nose bridge; fair skin with pink cheeks; heavy-set, rounded shoulders",

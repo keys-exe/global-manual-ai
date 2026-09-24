@@ -104,7 +104,7 @@ b("TN-SC06-SH04","A","SIL","ECU","F2","CONTRAST","The first step, forwards. Slow
 b("TN-SC06-SH05","P-044","SH","MCU","F1","—","Barbara — 'Feel that under the kneecap? That's the weight going somewhere else.'","coaching")
 b("TN-SC06-SH06","A","SIL","FULL","F2","CONTRAST","Second step. Third. Uncut. Her eyes fill","disbelief","VISIBLE","demonstration plays uncut (§30B)")
 b("TN-SC06-SH07","P-045","SH","CU","F1","CONTRAST","Margaret, tears running — 'Barbara... I'm not gripping it.'","wonder")
-b("TN-SC06-SH08","A","INS","INSERT","F2","CONTRAST","Her hand hovering loose above the rail, not holding it","release","—","mirror of HKA-SH02 white knuckles")
+b("TN-SC06-SH08","A","INS","INSERT","F2","CONTRAST","Her hand resting open on the rail, not gripping it","release","—","mirror of HKA-SH02 white knuckles; D14")
 b("TN-SC06-SH09","P-046","SH","CU","F1","—","Barbara, own eyes wet — 'I know, love. Keep coming.'","moved")
 b("TN-SC06-SH10","A","SIL","FULL","F5","CONTRAST","She comes the rest of the way down. Both feet. Forwards. Reciprocal gait","breakthrough","VISIBLE","after-state gait (§30D)")
 b("TN-SC06-SH11","P-047","SH","CU","F2","—","At the bottom, hand over her mouth, weeping — 'I can't believe it. I can't believe it.'","release")
