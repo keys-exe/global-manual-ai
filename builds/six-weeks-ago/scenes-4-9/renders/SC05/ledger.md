@@ -24,3 +24,25 @@ Finding: CAM-FILM's "operated by a camera crew" put a camera rig in frame (v2), 
 
 Contact sheet (§24H step 4): PASS. Light from the window side in every frame, same clothes, props in state, eyelines Barbara screen-left / Margaret screen-right, floor vinyl in the kitchen.
 Cause of the eyeline failures: the scene data had the off-screen sides reversed for Barbara; corrected in scenes_b2.py.
+
+## Round 3 — push-ins from the master camera (user: frames must connect to the master; worn placement must match the worn references)
+
+Method: every coverage frame is the master's own camera position pushed in on a longer lens, with the master attached first. Barbara's singles are in near profile facing screen-left with the radio, cork board, back door and fridge behind her; Margaret faces camera with the window behind, glasses on her nose as in the master. The reveal uses the seated worn reference (54b04c4f) as the placement authority.
+
+| Beat | Job | Result |
+|---|---|---|
+| SC05-F02-B-MCU | 9c342a32-5557-4c31-9c19-1c7f3184cfb9 | PASS |
+| SC05-F03-M-CU | 3cdda2ba-6e14-4fac-9c5e-039116396fb8 | PASS |
+| SC05-F04-REVEAL | a854e75d-ef5c-41fc-9156-a7cbaeadbf55 | PASS — near (left) knee, notch under the kneecap, chrome slide at the outer edge, band round behind |
+| SC05-F05-B-MCU-CANDID (a) | 9cc7a6dd-8e32-4ee9-8e2e-3a362a08556d | FAIL — impossible over-the-shoulder geography |
+| SC05-F05-B-MCU-CANDID (b) | e1403708-1ffc-4ae7-8692-9b6cd1a29d91 | FAIL — face drift, window moved behind her |
+| SC05-F05-B-MCU-CANDID (c) | 412edf2f-5337-4ab6-8967-c8b49e4b29be | PASS — edit of F02, next moment |
+| SC05-F06-M-CU-SCEPTIC (a) | 27d6a0b0-1f43-41f4-80ea-e6e8a5c37afa | FAIL — white top under Barbara's cardigan |
+| SC05-F06-M-CU-SCEPTIC (b) | 26bf2be6-0090-4ca8-80b1-305100df6b2d | PASS — edit, purple t-shirt restored |
+| SC05-F07-FINGER | 6383150e-769f-4873-a144-bd20c72584de | PASS |
+| SC05-F08-B-CU-TRUTH | fce7baac-83ae-4b50-9281-d1852538dee1 | PASS |
+| SC05-F09-M-CU-RAW | ea2fc906-6189-4838-a5b7-eda6d4e9ffea | PASS |
+| SC05-F10-PALM | 360af344-863e-4fec-a771-71d95a9d2c42 | PASS |
+
+Round 2 frames moved to rejected/. Contact sheet round 3: PASS.
+Lesson: coverage built as push-ins or edits of an approved frame holds identity and geography; coverage described from scratch drifts.
