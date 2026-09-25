@@ -68,3 +68,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 38 | Margaret CU push-in (33 setup): "I can't try another thing that doesn't work, Barbara. I can't get my hopes up again." Hands clutched at chest | 8c2ad6e9-3b34-422b-8e38-e7db4a8a0b5d (edit of 35) | APPROVED (option A) |
 | – | Frame 39 tries f1ce1e67 / eb3c27fb (gaze near lens) | – | not chosen |
 | 39 | Barbara CU push-in (36 setup): "Then don't get your hopes up. Just put it on and walk down the stairs." | cc95aeec-8c4a-4f31-9097-e93554acfb55 (edit of 36) | APPROVED (option C) |
+| – | Frame 40 tries 760772ce (shell warped) / 04c29a32 (shell edge uneven) | – | not chosen |
+| 40 | Insert: Barbara presses a second strap into Margaret's open palm (strap handed over notch-down) | 9e9eff35-883d-424e-854d-a8ab95eefe6c (edit of 37) | APPROVED (option A) |
