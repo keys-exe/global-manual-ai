@@ -1948,7 +1948,7 @@ Step 5 remains where three expensive things are caught: the product's first appe
 
 DET steps ship their checks with the deliverable — reconciliation lines, count tables, axis tables, QA matrices. In Manual the pipeline stops only after step 3 (the avatars) and at step 6.
 
-**Automatic run mode (Appendix E0).** The eight steps and the step-6 gate are unchanged. Automatic adds one more stop — the final review before the CapCut block — plus the credit-cap stop and the E2 escalations. It never removes the step-6 gate.
+**Automatic run mode (Appendix E0).** The eight steps are unchanged; the gates are not. **Automatic has one stop — the credit cap** (E0, V7.60.6). The agent confirms the hooks at step 6 itself, and the final review and E2 escalations are its own calls, listed in the final report's *Flags*.
 
 ---
 
@@ -7874,6 +7874,7 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | **18** | Step 3 is a Manual gate (the avatar review); steps 1–3 ship as one delivery in Manual, then steps 4–5. Automatic unchanged — steps 1–5 in one pass |
 | **1**, **31**, **44** | §1 run mode, the §31 output order and defaults 55, 83 and 85 name the Manual avatar exception and gate |
 | **E0** | Manual: a Drive intake is fetched and absorbed, the avatars generated, then the run stops |
+| **18** *(fix)* | The closing Automatic paragraph still said Automatic adds a final-review stop and keeps the step-6 gate — contradicting E0 since V7.60.6. Now: one stop, the credit cap |
 | Files | `ai-prompt-engineer` skill (run mode, intake, build order), `ai-prompt-engineer-auto` skill (version), `builds/INTAKE_TEMPLATE.md`, `CLAUDE.md` (version) |
 
 **Origin:** user instruction — "I will also use the Drive link and say run manual, just like the automation; you absorb them … you will generate the avatars after absorbing them, then stop, because that is the part I'll decide for the manual."
