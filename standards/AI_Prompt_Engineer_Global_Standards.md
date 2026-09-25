@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.58.1 — supersedes all prior versions.** *(the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.59.0 — supersedes all prior versions.** *(strict connector routing — Higgsfield images, Kling connector for Kling, Kie AI for Seedance 2.5 and as the image fallback, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -406,6 +406,24 @@ The two Kling routes are live and measured. Higgsfield-to-Higgsfield is fewer mo
 ## 5. Platform & Execution Layer
 
 Prompt quality is half the job. Most product drift traces to execution, not wording.
+
+### Connector routing — strict *(new V7.59.0)*
+
+**Every generation goes through the connector named here and no other.** A call routed anywhere else is a failed generation, even if it renders.
+
+| Job | Connector | Model |
+|---|---|---|
+| **Images** — every T2I: seeds, cast sheets, property and location plates, start frames | **Higgsfield** | `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst per §18A |
+| **Kling video** — Kling B-roll, mechanism beats, any Kling I2V | **Kling** (Kling AI direct) | `kling-video-v3_0_omni` per §44 default 5 |
+| **Seedance 2.5** — every Seedance call, including the §22U voice source and the §24I film voice master | **Kie AI** (the connector appears as *Higgsless*) | `bytedance/seedance-2-5`, 720p |
+| Voice | ElevenLabs (§22U) | `eleven_v3` |
+| Talking heads | HeyGen (§22U) | Avatar V |
+
+**Image fallback — Higgsfield out of credits.** Read the Higgsfield balance before every image batch. When it is below that batch's cost, the batch — and every image batch after it in the build — routes to **Kie AI**: `nano-banana-pro` or `nano-banana-2` per §18A, at 2K, 9:16. **Kie has no GPT Image 2.5 Sunburst:** a beat locked to Sunburst routes to Kie's `gpt-image-2-text-to-image` (the §4 fallback) and the substitution is logged. The switch is recorded in the ledger with the balance that triggered it. It never switches back mid-build, so one build's images come from one platform after the switch point.
+
+**Nothing else falls back.** Kling out of credits, or Kie out of credits, is a stop (E2 `CREDIT_CAP`), never a silent reroute to another platform's copy of the model.
+
+**Kie reference inputs are public URLs.** Seedance on Kie takes images and voice audio as `reference_urls`. Higgsfield outputs already have URLs. **A local file — a voice master, a trimmed clip — needs a public URL first.** How that URL is made is an open decision (unverified); until it closes, a local voice file is the one Kie input that can block a Seedance call.
 
 ### Asset discipline
 
@@ -1964,6 +1982,19 @@ FORMAT / TOOLS / CAST NOTES / NOTES: <optional>
 
 **The supplied Product Sheet is read against Appendix B.** Its facts are authority layer 2 as supplied. The agent writes `products/<name>/` in the Appendix B schema from it, and lists every Appendix B field the supplied sheet left empty. The product images are the §7 reference images, authority layer 1.
 
+### Where the output goes — the Drive tree *(new V7.59.0)*
+
+Drive is organised **parent → brand → task**: the parent folder holds one folder per brand, and each brand folder holds one folder per task, named with the task's title. **Every output of a build goes into an `OUTPUT` folder inside its task folder**, next to the inputs, which are never moved or renamed:
+
+```
+<task folder>/OUTPUT/
+  OUTPUT.md          index — every file, its beat ID, its prompt, its verdict, its link
+  01_ABSORPTION  02_CAST  03_LOCATIONS  04_VOICE
+  05_HOOKS  06_TALKING_HEADS  07_BROLL  08_EDIT
+```
+
+The agent creates the tree on the first run and records every folder ID in `builds/<BUILD>/drive.json`, so later runs reuse it and never duplicate it. **Text goes up through the Google Drive connector.** Images and video need the connector to accept the file's bytes inline, which is impractical above a few hundred KB. Until a service-account upload route exists (open decision), media are indexed in `OUTPUT.md` by their platform link, and the key files are sent to the user at each stop point.
+
 ### The single-message intake — the alternative
 
 Where there is no folder, the same fields travel in one message:
@@ -2650,6 +2681,31 @@ Judge the four takes in this order: **(1) every word of the script is present an
 - **§22C Part A and B audio artefacts** (proximity, room) now come from the step-2 source through the clone, not per beat. A clean studio read is still the §22C tell — reject a master that sounds like a booth (step 10, criterion 2).
 
 **NORMATIVE — `TAG-PALETTE` (above).** Unverified: clone quality from a looped ~7–8s source (steps 4–5), the Avatar V gesture route, and stylized-mode (2, 3, 5) photo avatars on HeyGen.
+
+---
+
+## 22V. Image Verdict — the agent judges every image *(new V7.59.0)*
+
+**Every generated image is opened and judged by the agent before anything is built on it.** The verdict is final. There are two outcomes: **USE**, or **REGENERATE** with the named fault and the named fix. The image is never passed on because it is "close".
+
+**Scope:** every image in every run mode where the agent generated it or was handed it: cast sheets, property and location plates, seeds, start frames and hook frames.
+
+### The questions, in order — the first NO is the verdict
+
+1. **Does it show the line?** Read the beat's phrase (§27B) and its function (§30B). The image must show *that* moment: the right action, the right object, the right emotional register (§30F), the right beat of the story. A good image of the wrong moment is a REGENERATE.
+2. **Is the product right?** Shape, colour, placement, orientation, visibility per the Product Sheet (§8, §9, §9D). A wrong product is the most expensive failure in the pipeline.
+3. **Is the body whole?** One head, two arms, two legs, five fingers per visible hand; hidden parts hidden by the frame edge or an object (§27D).
+4. **Does it hold continuity?** Same person as the sheet (§19, §30E), same room as the plate (§30C, §30G), wardrobe for the story day (§14), axis and window side (§30C).
+5. **Is it the right register?** Mode and capture as locked (§18A, §22A, §22S), 9:16, framing scale (§22F), no garbled text (§17).
+6. **Will it animate?** It works as the start frame for the motion the beat needs (§6, §27A): room for the move, and the subject not frozen at the end state.
+
+### The verdict line — shipped for every image
+
+`<BEAT-ID> · <file> · USE` — or — `<BEAT-ID> · <file> · REGENERATE · Q<n>: <fault> → <fix in the prompt>`
+
+The fix is a named change to the prompt: a clause added, a string restated at full form, a reference attached. A REGENERATE with no named fix is not a verdict. The changed prompt is shown as a new iteration (§16), never swapped in silently.
+
+**Budget:** two regenerations per image per fault (E2). On the third failure of the same fault, the image goes to the user with its three versions and the verdict history. That is the only case where an image reaches the user for a decision.
 
 ---
 
@@ -5190,7 +5246,7 @@ Three tiers. Every numeric, clinical or comparative claim in a script is assigne
 
 **4. Gesture register → per character, not globally.** Restrained for founders and clinicians. Continuous for presenters and hard sell. Economical for plain-spoken characters. **Overridden to Restrained or Economical on any held-product beat** (§28D). **Capped at three landings on any beat carrying audio** (§37).
 
-**5. Video model → `kling-video-v3_0_omni` on Kling AI, `kling3_0` on Higgsfield.** `prefer_multi_shots` false, `enable_audio` true, 1080p not 4k. **Wan 3.0 and Seedance 2.5 are sanctioned alternates for lifestyle B-roll** (§4 routing table). **Seedance runs ingredients mode on every call, never a start frame, up to 30 files, `ING-MANIFEST` opening the prompt** (V7.54.1). Wan runs references mode, `REF-MANIFEST` opening the prompt, four ingredients maximum with the seed always first; one moment per prompt, `enable_prompt_expansion` off, duration stated never `auto`. First-frame mode is the fallback where a platform cannot combine a start frame with references. Talking heads and mechanism beats stay on Kling. **Every Seedance call is 720p** (V7.54.0). **Mode 4 dialogue and MULTI-SHOT scenes route to Seedance 2.5 references mode** — override-against-measurement, since the §4 voice-lock test has not run.
+**5. Video model → `kling-video-v3_0_omni` on Kling AI, through the Kling connector only (§5, V7.59.0 — the Higgsfield `kling3_0` route is retired).** `prefer_multi_shots` false, `enable_audio` true, 1080p not 4k. **Wan 3.0 and Seedance 2.5 are sanctioned alternates for lifestyle B-roll** (§4 routing table). **Seedance runs ingredients mode on every call, never a start frame, up to 30 files, `ING-MANIFEST` opening the prompt** (V7.54.1). Wan runs references mode, `REF-MANIFEST` opening the prompt, four ingredients maximum with the seed always first; one moment per prompt, `enable_prompt_expansion` off, duration stated never `auto`. First-frame mode is the fallback where a platform cannot combine a start frame with references. Talking heads and mechanism beats stay on Kling. **Every Seedance call is 720p** (V7.54.0). **Mode 4 dialogue and MULTI-SHOT scenes route to Seedance 2.5 references mode** — override-against-measurement, since the §4 voice-lock test has not run.
 
 **6. Camera rig → R3 compressed on VSL talking heads, R2 on UGC talking heads, R1 on B-roll, R1-W on moving-operator beats, R1-FAST on high-energy stabs, R4 on hero product, RV on mechanism A–B, RV-FAST on mechanism C, R1 on mechanism D.** No beat type is exempt from §22B.
 
@@ -7346,7 +7402,7 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | **Execution** | The agent submits every call itself on the E7 templates, waits per E7, and logs every job in `run_ledger.json` (E3) under `builds/<build>/` (E9) |
 | **Stop points** | (1) **§18 step 6** — hooks, unchanged; (2) **final review** — every approved beat, the QA table and the trimmed clips, before the CapCut block; (3) **credit cap** — see below; (4) any E2 escalation to HUMAN. Nothing else stops the run |
 | **Credit cap** | The user states a per-build credit cap when the run starts; absent one, the agent asks once, before the first call. The balance is read before every batch; a batch that would cross the cap does not submit — the run stops with the spend so far and the cost of what remains |
-| **QA** | Every render is downloaded and checked against E1. AUTO checks run by instrument. **HUMAN checks run as AGENT-FIRST**: the agent looks and judges; a clear pass proceeds, a clear fail takes the E2 remedy, an uncertain read queues for the user. **Always queued for the user regardless of the agent's read:** subject identity across sheets and beats, the §19 avatar sheet, the §28F closure/sync frame check, voice (§22D), and any Mode 4/5 performance or contact-sheet check |
+| **QA** | Every render is downloaded and checked against E1. AUTO checks run by instrument. **HUMAN checks run as AGENT-FIRST**: the agent looks and judges; a clear pass proceeds, a clear fail takes the E2 remedy, an uncertain read queues for the user. **Images are the agent's to judge (§22V, V7.59.0):** every image gets a USE or REGENERATE verdict from the agent, and only a third failure of the same fault reaches the user. **Always queued for the user regardless of the agent's read:** the §28F closure/sync frame check, voice (§22D), and any Mode 4/5 performance check on video |
 | **Trim** | Every talking-head clip that passes QA goes through the E11 trim pass before final review |
 | **Intake** | An Intake Pack or Drive intake message with `RUN: AUTOMATION` starts the run; cast sheets, the property plate and location plates are generated straight after absorption (§18B) |
 | **Film voices** | §24I voice masters are generated, checked and stored untouched; E11 never runs on them |
@@ -7385,6 +7441,8 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | Avatar sheet panels (§19) | the rendered sheet | close-up = front panel · hair tone in all five · window same side, profiles lit opposite · wardrobe identical · nothing on the skin in one panel only · **grid: heads on one line, feet on one line, true 90° profiles, nothing cut off** · logged params `sunburst`/`high`/`2k` | HUMAN | Reroll the sheet; never attach a failing sheet |
 | Candid face seed light (§22T) | first frame | terminator across near cheek · forehead highlight broken · window blown flat · room a stop under | HUMAN | Reroll with `LIGHT-EVENT` restated; skin not judged until this passes |
 | Property hold | first frame vs Property Sheet | shell finishes identical to the plate · window on the correct side for this room · view out correct · no upkeep shift between rooms | HUMAN | Reroll with `PROP-REF` + `PROP-SHELL` full form; a shell mismatch is a fail, not a taste note |
+| Image verdict (§22V) | the agent opens the image | all six §22V questions YES | AUTO (agent) | REGENERATE with the named fix; third failure of one fault → user |
+| Connector route (§5) | call log vs the §5 table | every call on its named connector; any image fallback logged with the triggering balance | AUTO | Re-run on the right connector; a mis-routed render is discarded |
 | Body integrity | first frame: head count, limb count, finger count per visible hand | one head per person, two arms, two legs, 4+1 fingers; hidden parts hidden by the frame edge or a named object | HUMAN | ANATOMY_FAIL (E2) — never passed to I2V |
 | Subject scale (§22F) | first frame, person's height ÷ frame height | within the framing's stated scale; room readable; ≤1 frame edge cuts the body | AUTO-ASSIST | Reroll with `FRAME-SCALE` + the framing block restated; full body over two thirds → WIDE |
 | Face/skin/register quality | — | — | HUMAN | §22S escalation ladder |
@@ -7419,7 +7477,9 @@ Every generated batch ships its QA table alongside the prompts — the reconcili
 | ALIAS_MISMATCH | logged model ≠ passed | resubmit explicit | 1 | HUMAN; record in phrasing table |
 | TRIM_FAIL | E1 trim rows | re-trim with adjusted thresholds or padding | 1 | HUMAN — ship the untrimmed clip with the cut list as a CapCut line |
 | CREDIT_CAP | E1 credit-cap row | none — never raised by the agent | 0 | HUMAN — the user raises the cap or ends the run |
-| AGENT_UNSURE | AGENT-FIRST read with no clear pass or fail (E0) | none | 0 | HUMAN — queued with the frame, the check and the agent's note |
+| AGENT_UNSURE | AGENT-FIRST read with no clear pass or fail (E0) — **not used for images, which always get a verdict (§22V)** | none | 0 | HUMAN — queued with the frame, the check and the agent's note |
+| IMAGE_REGENERATE | §22V verdict | regenerate with the named fix | 2 per fault | HUMAN — three versions and the verdict history |
+| IMAGE_FALLBACK | Higgsfield balance < image batch cost | route that batch and every later image batch to Kie AI (§5) | — | none — logged, not a stop |
 
 Global rule: **two automatic rerolls per beat per failure class**, then the beat queues for a human with its failure history attached. Retries never change the prompt silently — every changed prompt is a delivered iteration (§16).
 
@@ -7462,7 +7522,7 @@ Words at pace → duration: brisk ≤9 → 5s · unhurried ≤8 → 5s · brisk 
 
 **T2I (Higgsfield):** `generate_image_batch` → `{model: "nano_banana_pro"|"nano_banana_2", prompt, aspect_ratio: "9:16", resolution: "2k", medias: [{role: "image", value: <media_id>} …]}`
 **T2I (Higgsfield, GPT Image 2.5 Sunburst):** `generate_image_batch` → `{model: "gpt_image_2_5", variant: "sunburst", quality: "high", resolution: "2k", prompt, aspect_ratio: "9:16", medias: [{role: "image_references", value: <media_id>} …]}`. Never omit `quality` or `resolution` — both default low. Fallback `gpt_image_2` takes `quality: "high"`, `resolution: "2k"`, role `image`. — reference images by media id, up to product + character + scene plate on one call. Verify logged model on completion.
-**I2V (Higgsfield):** `generate_video_batch` → `{model: "kling3_0", prompt: <JSON-as-string per §35/§36>, duration: 5|10, resolution: "1080p", medias: [{role: "start_image", value: <completed T2I job_id>}], declined_preset_id: <id> (mandatory on dark-field and any beat that has matched a preset)}`.
+**I2V (Higgsfield) — retired V7.59.0, Kling runs on the Kling connector (§5); kept for reference:** `generate_video_batch` → `{model: "kling3_0", prompt: <JSON-as-string per §35/§36>, duration: 5|10, resolution: "1080p", medias: [{role: "start_image", value: <completed T2I job_id>}], declined_preset_id: <id> (mandatory on dark-field and any beat that has matched a preset)}`.
 **I2V (Kling-direct):** `kling-video-v3_0_omni` → external URLs accepted, `prefer_multi_shots: false` explicit, `enable_audio: true`, duration 3–15s, ceiling 2,500 applies.
 **I2V (Wan 3.0, references mode — the default, unverified):** reference-to-video endpoint → `{prompt: <REF-MANIFEST + prose per §27A + §22B + full §22A block>, images: [<seed>, <character sheet>, <product ref>, <scene plate if PLATED>], audios: [<voice clip>] only on a spoken beat and only after the voice-lock test, resolution: "1080p", aspect_ratio: "9:16", duration: <E6>, enable_prompt_expansion: false, thinking_mode: false, seed: <fixed for reissues>}`. Where the platform's schema allows a start frame alongside references, the seed goes in as the start frame and drops out of the image array. Never video references.
 **I2V (Wan 3.0, first-frame fallback):** image-to-video endpoint → `{prompt, image_url: <seed URL>, resolution: "1080p", aspect_ratio: "9:16", duration: <E6>, enable_audio: false on B-roll, enable_prompt_expansion: false, thinking_mode: false}`. Never `last_image` on a §27A beat — an end frame is a resolved exit.
@@ -7474,6 +7534,11 @@ Words at pace → duration: brisk ≤9 → 5s · unhurried ≤8 → 5s · brisk 
 **TTS (ElevenLabs connector, §22U step 9):** `creative_generate_speech` → `{model_id: "eleven_v3", voice_id: <clone>, prompt: <tagged script ≤ 5,000>, generations_count: 4}`; poll `creative_get_flow_run_status`. `estimate_only: true` first when the credit cap is tight.
 **Avatar (HeyGen, §22U step 11):** `create_asset_upload` → PUT bytes → `complete_asset_upload` → `create_photo_avatar {name: <VoiceName>-<look>, file: {type: "asset_id", asset_id}}`; wait for the avatar look to be ready.
 **Talking head (HeyGen, §22U step 13):** audio segment uploaded the same way → `create_video_from_avatar {avatarId: <look id>, engine: {type: "avatar_v"}, audioAssetId, aspectRatio: "9:16", resolution: "1080p", motionPrompt: <gestures>}`; poll `get_video`. Fallback: `engine: {type: "avatar_iv"}, expressiveness: "high"`.
+**Connector calls (§5, V7.59.0):**
+- **Images — Higgsfield:** `generate_image` / `generate_image_batch` on the T2I templates above; `balance` before every batch.
+- **Images — Kie fallback:** `generate {model_id: "nano-banana-pro" | "nano-banana-2" | "gpt-image-2-text-to-image", prompt, aspect_ratio: "9:16", resolution: "2K", reference_urls: [<public image URLs>]}` → `wait_for_generation`. Nano Banana Pro takes at most 8 references and Nano Banana 2 at most 14.
+- **Kling — Kling connector:** `who_am_i` once per session for the live argument spec, then `image_to_video {model: "kling-video-v3_0_omni", …}` with the start image; `query_tasks` to poll; `query_membership_and_credits` before every batch.
+- **Seedance — Kie AI:** `generate {model_id: "bytedance/seedance-2-5", prompt: <ING-MANIFEST + prose>, resolution: "720p", aspect_ratio: "9:16", duration: <E6>, reference_urls: [<images, composition first>, <voice master URL on dialogue>], sound: true}` → `wait_for_generation`. At most 30 image and 10 audio references. `get_credits` before every batch.
 **Waits:** `jobs_wait` on every T2I before its I2V; batch order never implies completion order — on every route.
 
 ## E8. Boundary definitions
@@ -7484,7 +7549,7 @@ Words at pace → duration: brisk ≤9 → 5s · unhurried ≤8 → 5s · brisk 
 
 ## E9. Build directory layout
 
-`/build/{product_sheet.md, product_sheet.py, absorption_sheet.md, build_sheet.md, act_map.json, phrase_inventory.json, wardrobe_map.json, location_sheets/, registries/{roster,voice,scene,subject}.json, run_ledger.json, beats/{BEAT-ID}.t2i.txt, beats/{BEAT-ID}.i2v.json, capcut_block.md}` — one beat, one pair of files, so §34 global corrections, coverage diffs and reissue passes run as scripts over the tree, never as memory.
+`/build/{product_sheet.md, product_sheet.py, absorption_sheet.md, build_sheet.md, act_map.json, phrase_inventory.json, wardrobe_map.json, location_sheets/, registries/{roster,voice,scene,subject}.json, run_ledger.json, beats/{BEAT-ID}.t2i.txt, beats/{BEAT-ID}.i2v.json, capcut_block.md}` — one beat, one pair of files, so §34 global corrections, coverage diffs and reissue passes run as scripts over the tree, never as memory. **The repo tree lives at `builds/<BUILD>/` and carries `drive.json`; the delivered copy lives in the task's Drive `OUTPUT` folder (§18B).**
 
 ## E10. Doc-lint — standing §34 step at every version cut
 
@@ -7613,6 +7678,8 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 **V7.55.1 film-mode beats — visual check, first use.** One `HERO-FILM` reveal insert, one `MECH-SCREEN` push into the §12A render with its matched grade, and one `ANIM-XRAY` beat. Judge: does the insert read as a story moment rather than product photography, does the cut from screen to render feel motivated, and does the X-ray read as friendly and clear while the product still visibly works? Settles by looking.
 
+**Media upload and public URLs (§5, §18B).** Two gaps, one likely fix: a way to put images, video and voice files into the Drive `OUTPUT` folder, and a public URL for a local voice master so Kie's Seedance can take it. Candidate: a Google service account key as an environment secret, with folders shared to it as Editor. Unverified.
+
 **§18B Intake Pack — first run.** One Drive folder end to end: do native Google Docs download, and does the sort put every file where it belongs? Measured V7.58.1: a public Drive folder downloads from the container (`gdown`), and the sort passed on a mock folder of two videos, a `.docx` script, a PDF sheet, two images and one stray file. Then the link route: does every `INSPO` link download? **Measured V7.58.0: YouTube refuses the video stream from the cloud container (HTTP 403 from YouTube, not the proxy) — YouTube inspos go in `builds/<BUILD>/intake/`.** TikTok and Instagram unverified, and do steps 1–5 ship without a question?
 
 **§24I film voice master — first use.** One character: does the untrimmed 10s master hold the voice across three dialogue shots with different emotions, and does it stay neutral under `DRAMA-DELIVERY`?
@@ -7625,6 +7692,19 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 ---
 
+# CHANGELOG — V7.58.1 → V7.59.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **5** | **Connector routing, strict (new).** Higgsfield for images, the Kling connector for Kling, Kie AI (connector "Higgsless") for Seedance 2.5. Higgsfield out of credits → images to Kie (Nano Banana; GPT Image 2 stands in for Sunburst), logged, no switch back. Nothing else falls back. Kie references must be public URLs |
+| **22V** | **Image verdict (new).** The agent judges every image on six questions — the line first — and ships USE or REGENERATE with a named fix. Two regenerations per fault, then the user |
+| 18B, E9 | Drive output tree: parent → brand → task → `OUTPUT` with eight numbered folders and `OUTPUT.md`; `drive.json` in the repo |
+| E0, E1, E2, E7 | Images leave the always-queued list; image-verdict and routing checks; `IMAGE_REGENERATE`, `IMAGE_FALLBACK`; connector call templates |
+
+**Origin:** user rules — strict connectors with a Kie fallback, the agent as the judge of every image, and output organised in Drive.
+
+---
+
 # CHANGELOG — V7.58.0 → V7.58.1 *(cut authorised)*
 
 | § | Change |
@@ -7634,21 +7714,6 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | Files | `scripts/fetch_drive.py`; `builds/INTAKE_TEMPLATE.md` rewritten Drive-first |
 
 **Origin:** user request — send everything as one Drive link.
-
----
-
-# CHANGELOG — V7.57.0 → V7.58.0 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **18B** | **Intake Pack (new).** Steps 1 and 2 in one message — build, mode, format, run, tools, inspo links, script, product, cast notes. Links fetched and measured; steps 1–5 run without questions; the voice route follows the mode |
-| **24I** | **Film voice master production (new).** Seedance 10s, face-only sheet, a plain line read neutral; audio extracted by stream copy — never trimmed, sped, looped or cleaned. Narrator clone uses the untrimmed master |
-| 22U | Scope — film builds leave §22U |
-| 44 | New default **85** |
-| E0, E1, E7 | Intake and film-voice rows; the voice-master check; the voice-master call |
-| Files | `builds/INTAKE_TEMPLATE.md` |
-
-**Origin:** user request — send steps 1 and 2 in one go, build avatars and plates from it, and give film characters consistent untrimmed Seedance voices.
 
 ---
 

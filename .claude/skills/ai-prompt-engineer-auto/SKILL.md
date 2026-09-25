@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer-auto
-description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.58.1, Appendix E0/E11, §18B, §22U, §24I). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
+description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.59.0, Appendix E0/E11, §5, §18B, §22U, §22V, §24I). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
 ---
 
 # AI Prompt Engineer — Automatic run mode
@@ -10,14 +10,15 @@ description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.5
 **This skill adds execution; it changes no craft.** Load `ai-prompt-engineer` first and follow it for every prompt. The master file `standards/AI_Prompt_Engineer_Global_Standards.md` wins over this summary. Before the first call, read these sections by grepping their headings:
 
 ```
-Grep  pattern="^## (E(0|1|2|3|7|9|11)|18B|22U|24I)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
+Grep  pattern="^## (E(0|1|2|3|7|9|11)|5|18B|22U|22V|24I)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
 ```
 
 ## 1. Start of run — before any credit is spent
 
 1. **Confirm the trigger** in one line: "Automatic run for build `<name>`." An Intake Pack with `RUN: AUTOMATION` is the trigger (§18B).
-2. **Credit cap.** Take the user's per-build cap; if none was given, ask once. Read the balance (`balance` / `get_credits` / `query_membership_and_credits` on the routed platform) and record it.
-3. **Build directory** `builds/<build>/` per E9, with `run_ledger.json` (E3) and `renders/` and `trim/` folders. Media stays out of git (`.gitignore` covers it).
+2. **Credit cap.** Take the user's per-build cap; if none was given, ask once. Read all three balances and record them: Higgsfield `balance`, Kling `query_membership_and_credits`, Kie (Higgsless) `get_credits`.
+   **Routing is strict (§5):** images → Higgsfield (below the batch cost → Kie `nano-banana-pro`/`nano-banana-2`, logged, no switch back); Kling → Kling connector; Seedance → Kie `bytedance/seedance-2-5`. Kling or Kie out of credits = stop.
+3. **Build directory** `builds/<build>/` per E9, with `run_ledger.json` (E3) and `renders/` and `trim/` folders. Media stays out of git (`.gitignore` covers it). **Drive output (§18B):** create or reuse `<task folder>/OUTPUT/` with `01_ABSORPTION` … `08_EDIT` and `OUTPUT.md`; record the IDs in `builds/<build>/drive.json`. Text uploads through the Google Drive connector; media are indexed in `OUTPUT.md` by platform link.
 4. **Tool setup** — the container is ephemeral, so install every session:
    ```
    pip install -q imageio-ffmpeg faster-whisper auto-editor yt-dlp gdown python-docx pypdf cffi
@@ -35,10 +36,10 @@ For every batch, in this order:
 3. **Submit** on the E7 call templates. T2I completes before any I2V (`jobs_wait` or the platform's poll). Log every job ID in the ledger.
 4. **Fetch the result** — download the output URL to `builds/<build>/renders/<BEAT-ID>.<ext>` with `curl -sSL -o`. If the download is refused, say so; never describe a render you have not opened.
 5. **QA per E1.**
-   - Images: open the file with Read and judge it.
+   - **Images: you are the judge (§22V).** Open every image with Read and answer the six questions — does it show the line, product, body, continuity, register, will it animate. Ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then the user with all three versions.
    - Video: grab frames with ffmpeg (`-ss <t> -frames:v 1`) at the first frame, the contact/closure moment and the last frame, then Read them. Silence and timing checks run on the audio (`silencedetect=noise=-40dB:d=0.4`).
    - AUTO rows run by instrument. HUMAN rows run **AGENT-FIRST**: clear pass → proceed; clear fail → E2 remedy; unsure → queue for the user (`AGENT_UNSURE`).
-   - **Always queue for the user**, whatever your read: subject identity across beats, the §19 avatar sheet, the §28F/§28H closure-sync check, voice (§22D), and Mode 4/5 performance and contact sheets.
+   - **Always queue for the user**, whatever your read: the §28F/§28H closure-sync check, voice (§22D), and Mode 4/5 performance on video. Images are not queued — they get your verdict.
 6. **Reroll per E2** — at most two automatic rerolls per beat per failure class, then HUMAN with the failure history. A changed prompt is shown to the user as a new iteration; never change a prompt silently.
 7. **Trim (E11)** every talking-head clip that passed QA (section 4 below).
 8. **Update the ledger** and ship the batch's QA table, marking which reads were yours and which the user's.
