@@ -329,11 +329,20 @@ WORN_REF_SCENES = {
               "standing adult in dark grey shorts ending mid-thigh, knee straight, the frame running from "
               "mid-thigh to mid-calf with the back of the knee in the centre, a plain living room wall behind, "
               "daylight from a window to one side."),
-    "bent":  ("Vertical 9:16 phone photo, three-quarter view from the front right, of an adult in dark grey "
-              "shorts ending mid-thigh, seated on the edge of a sofa with the right knee bent to about a right "
+    "bent":  ("Vertical 9:16 phone photo, taken from about forty-five degrees to the right of straight in front "
+              "of the knee, so both peaks, the notch between them and the centred wordmark read, of an "
+              "adult in dark grey shorts ending mid-thigh, seated on the edge of a sofa with the right knee bent to about a right "
               "angle and the foot flat on the floor, the frame running from mid-thigh to the ankle with the knee "
               "in the upper centre, daylight from a window across the knee."),
 }
+
+# Bent-frame shape guard (V7.49.15, after bent attempt 2 drew a tall narrow
+# U-shell with horn peaks). No aspect figure: UNSETTLED['shell_elevation_aspect'].
+WORN_REF_SHAPE = (
+"The shell keeps the exact proportions of the front product photo: far wider than it is tall, a broad low "
+"plate wrapping the front of the knee, the two peaks broad and low, the notch a wide rounded curve between "
+"them. The wordmark is the bold rounded grey lowercase lettering of the product photos. Each chrome slide is a "
+"slim bar with three small fine dotted chevrons.")
 
 # Attach these with each prompt (products/stryde_refs/). The product photos
 # carry the object; the prompt carries the placement.
@@ -356,7 +365,8 @@ def worn_ref_prompts(side="right"):
     }
     out = {}
     for k, scene in WORN_REF_SCENES.items():
-        out[k] = " ".join((scene, lead + worn, body[k], FIT_SNUG, LEG_SKIN, CAP_A, BODY_WHOLE))
+        extra = (WORN_REF_SHAPE,) if k == "bent" else ()
+        out[k] = " ".join((scene, lead + worn, body[k]) + extra + (FIT_SNUG, LEG_SKIN, CAP_A, BODY_WHOLE))
     return out
 
 
@@ -449,50 +459,55 @@ REVEAL_STATUS = {
 # frames (one size fits all, fitted exactly, supplied product photos as the
 # object reference). The frames below stay attached until the new ones are
 # accepted by the user; then swap file/job ids here and log it.
-PLACEMENT_REFERENCES_STATUS = "REPLACING -- new front, rear, bent prompted V7.49.15, not yet accepted"
+PLACEMENT_REFERENCES_STATUS = ("REPLACED V7.49.15 -- front, rear, bent generated from worn_ref_prompts() and "
+                               "judged USE by the agent (§22V); the user may still reject any of them")
 PLACEMENT_REFERENCES = {
     "front": {
-        "file": "hf_20260819_134414_dab787bf-2285-4662-8597-1f60d7076347.png",
-        "upload": "worn_front_ref.png",   # V7.49.12, Six Weeks Ago absorption
-        "reads": ("right knee, weight on it, kneecap prominent; the notch cradles the "
-                  "kneecap's lower border with the flesh filling the curve; the peaks "
-                  "reach the lower half of the kneecap's side margins; the shell spans "
-                  "almost the full width of the knee with a chrome slide just inside each "
-                  "outer margin; the shell's lower edge sits at the top of the shin; "
-                  "the wordmark on the lower body, horizontal, centred under the "
-                  "side of the leg; the band level with the shell's middle; kneecap face "
-                  "bare above. Shell height roughly half its width (estimated by eye)."),
+        "file": "stryde_refs/worn_front.jpg",
+        "job_id": "f5263ed7-0667-4ebd-977e-9bfd835d5036",
+        "higgsfield_media": "use the job_id as the medias value",
+        "model_passed": "nano_banana_pro", "model_logged": "nano_banana_2",   # routing fault, logged
+        "attempt": "1 of 1",
+        "reads": ("right knee, standing, straight-on; the notch cups the kneecap's lower border with the "
+                  "flesh filling it, the peaks no higher than the base of the kneecap's sides, the kneecap "
+                  "bare above; the shell spans the whole front of the joint with a chrome slide at each side "
+                  "of the leg; wordmark centred beneath the notch; snug, one-size fit."),
     },
     "bent": {
-        "file": "hf_20260915_182228_5e75f3c8-33ae-47eb-9e5e-f1bf32172d52.png",
-        "upload": "worn_bent.png",
-        "reads": ("right knee bent to about a right angle, seated, three-quarter from the right; "
-                  "the shell on the patellar tendon with the notch cupping the underside of the "
-                  "jutting kneecap, no gap; the near peak rising to flank the lower third of the "
-                  "kneecap's side, the face bare above; the shell wrapped round the leg so the "
-                  "wordmark reads horizontally from three-quarter, never edge-on; the chrome slide "
-                  "standing proud at the outer margin with the band folding through it and running "
-                  "back across the top of the calf; light band across the knee, matte black holding "
-                  "its edges in the sun. Attached on every bent-knee worn beat."),
+        "file": "stryde_refs/worn_bent.jpg",
+        "job_id": "d2d0124c-1ab8-4d41-ac95-9b825250493b",
+        "higgsfield_media": "use the job_id as the medias value",
+        "model_passed": "nano_banana_pro", "model_logged": "nano_banana_2",
+        "attempt": ("3 of 3 -- attempt 1 (b0a3f260) REGENERATE Q2: too side-on, one peak, notch lost; "
+                    "attempt 2 (970785f4) REGENERATE Q2: tall narrow U-shell, horn peaks, wrong type; "
+                    "attempt 3 USE with flags"),
+        "flags": ("near peak reads low at this yaw; band at the near slide reads smoother than the knit; "
+                  "wordmark shifted toward the far peak by yaw"),
+        "reads": ("right knee bent about a right angle, seated, three-quarter from the front right; the notch "
+                  "cups the underside of the jutting kneecap, the far peak flanking its lower side, the face "
+                  "bare above; broad low shell wrapping the leg, slim chrome slide with three dotted chevrons "
+                  "at the near margin, band running back round the calf. Attached on every bent-knee worn beat."),
     },
     "rear": {
-        "file": "hf_20260922_120414_6e07d1c8-e539-458d-9f87-86e017bf7808.png",
-        "job_id": "6e07d1c8-e539-458d-9f87-86e017bf7808",
+        "file": "stryde_refs/worn_rear.jpg",
+        "job_id": "a38bc276-9e83-48b4-86ae-8e5fd8192fcc",
         "higgsfield_media": "use the job_id as the medias value",
-        "supersedes": ("worn_back_ref.png (hf_20260819_134410_6a573801) -- scalloped band, "
-                       "no keepers. Retired V7.49.13, never attached again."),
-        "accepted": "V7.49.13, user-accepted. Edit of the original frame: band corrected to back.png, "
-                    "straight-edged knit, two keeper loops at the centre rear holding the doubled band. "
-                    "Logged model nano_banana_2 (connector routing fault).",
-        "reads": ("right knee from behind, standing; the band crosses BELOW the hollow, "
-                  "across the top of the calf, the hollow and the knee's bulge bare above "
-                  "it; BAND DETAIL IN THIS FRAME IS SUPERSEDED by CANONICAL_REFERENCES['rear'] -- "
-                  "in a regular soft wave; a small bright chrome bar standing proud at each "
-                  "outer edge of the leg; the band roughly a third of the leg's width there "
-                  "(estimated 0.33 by eye), a few degrees off horizontal, pressing in; no "
-                  "shell, wordmark or fastening at the rear."),
+        "model_passed": "nano_banana_pro", "model_logged": "nano_banana_2",
+        "attempt": "1 of 1",
+        "reads": ("right knee from behind, standing; the band crosses BELOW the hollow, across the top of the "
+                  "calf, the knee's bulge bare above; two black keeper loops side by side at the centre rear "
+                  "exactly as back.webp; straight band edges; a chrome slide as a bright bar at each side; "
+                  "no shell, wordmark or fastening at the rear; band about a third of the leg's width."),
     },
 }
+
+# The V7.49.8-13 worn frames, retired V7.49.15. Never attached again.
+RETIRED_PLACEMENT_REFERENCES = (
+    "hf_20260819_134414_dab787bf (worn_front_ref.png)",
+    "hf_20260915_182228_5e75f3c8 (worn_bent.png)",
+    "hf_20260922_120414_6e07d1c8 (rear, accepted V7.49.13)",
+    "hf_20260819_134410_6a573801 (worn_back_ref.png, retired V7.49.13)",
+)
 
 # --- §30B demonstration table, this product's fills ------------------
 DEMONSTRATION_TABLE = (
