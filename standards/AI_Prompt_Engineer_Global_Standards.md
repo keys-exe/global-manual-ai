@@ -2719,7 +2719,7 @@ The fix is a named change to the prompt: a clause added, a string restated at fu
 
 ---
 
-## 22W. Clip Verdict — the agent judges every video *(new V7.59.2 → V7.60.0)*
+## 22W. Clip Verdict — the agent judges every video *(new V7.60.0)*
 
 **Every generated clip is opened and judged by the agent before it goes into the edit.** This is the video counterpart of §22V, with the same two outcomes: **USE**, or **REGENERATE** with the named fault and the named fix. The same budget applies: two regenerations per fault, then the user.
 
