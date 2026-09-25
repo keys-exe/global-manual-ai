@@ -511,7 +511,8 @@
    "t2i_qa": "BEST-OF-RETRIES v5 — descending, shod; strap on her RIGHT knee (v2 right knee, v3 correct side but climbing and barefoot, v4/v5 right knee). Flagged.",
    "model_logged": "nano_banana_2",
    "file": "renders/BR29_v2.png",
-   "i2v_job": "AUjC5lkZ6Gy7NOd4Vf4698XKs7vTGBlTDdYiSSZbl0kPDODoON-8dYkau3pKO_fQE-eq8Zgy"
+   "i2v_job": "AUjC5lkZ6Gy7NOd4Vf4698XKs7vTGBlTDdYiSSZbl0kPDODoON-8dYkau3pKO_fQE-eq8Zgy",
+   "i2v_qa": "USE (best-of-retries, flagged) — descends into hall, shoes on, small smile; strap on her RIGHT knee (start frame)"
   },
   "HK2-01": {
    "beat_id": "HK2-01",
