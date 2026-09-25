@@ -64,3 +64,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 36 | Wider front-right: Barbara smooths her trouser leg flat over the strapped knee, "It sits flat under your trousers…"; Margaret beside her at left | f1d4cd67-8b2f-4d35-9d72-7674ac7048a2 (edit of 34) | APPROVED (option A) |
 | – | Frame 37 tries e6eb9474 (Barbara's sleeve in near foreground) / de4ea578 | – | REJECTED / not chosen |
 | 37 | Insert: Margaret's hands go still on the oilcloth, Barbara's sleeve beside her at the same depth | a9e4ad54-22cd-4511-9eec-1825b7a4668f (from 34) | APPROVED (option C) |
+| – | Frame 38 tries f5767ec5 / 4ab407f0 | – | not chosen |
+| 38 | Margaret CU push-in (33 setup): "I can't try another thing that doesn't work, Barbara. I can't get my hopes up again." Hands clutched at chest | 8c2ad6e9-3b34-422b-8e38-e7db4a8a0b5d (edit of 35) | APPROVED (option A) |
