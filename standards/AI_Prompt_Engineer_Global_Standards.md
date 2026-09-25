@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.58.0 — supersedes all prior versions.** *(the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.58.1 — supersedes all prior versions.** *(the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -1937,7 +1937,36 @@ DET steps ship their checks with the deliverable — reconciliation lines, count
 
 ## 18B. Intake Pack — steps 1 and 2 in one message *(new V7.58.0)*
 
-**Everything steps 1 and 2 need arrives in one message** — the Intake Pack. The agent then runs steps 1–5 without a question, as one opening delivery (§18), and goes straight on to the voice route. The template lives at `builds/INTAKE_TEMPLATE.md`; the user copies it, fills it, and sends it as one message.
+**Everything steps 1 and 2 need arrives in one message** — the Intake Pack. The agent then runs steps 1–5 without a question, as one opening delivery (§18), and goes straight on to the voice route. The template lives at `builds/INTAKE_TEMPLATE.md`.
+
+### The Drive intake — the default *(new V7.58.1)*
+
+**The files live in one shared Google Drive folder; the message carries the link and the choices.** The message is short:
+
+```
+DRIVE: <folder link>
+BUILD: <short name>
+MODE: <1–5>
+RUN: MANUAL | AUTOMATION
+FORMAT / TOOLS / CAST NOTES / NOTES: <optional>
+```
+
+**The folder** is shared *Anyone with the link — Viewer* and holds, at its top level or in subfolders:
+
+| File | How it is recognised | Formats |
+|---|---|---|
+| Inspo video(s) | any video file; a name containing `inspo` is primary, else the first alphabetically | `.mp4` `.mov` `.webm` `.m4v` |
+| Script | a document with `script` in its name; **title on the first line** | `.docx` `.pdf` `.txt` `.md` |
+| Product Sheet | a document with `product` or `sheet` in its name | `.docx` `.pdf` `.txt` `.md` |
+| Product images | any image file | `.jpg` `.png` `.webp` `.heic` |
+
+**The agent runs `scripts/fetch_drive.py <BUILD> <link>`**: it downloads the folder to `builds/<BUILD>/intake/`, sorts every file by the table, extracts document text, and runs the §42 Part 1 instruments on every inspo video. It then reports, before absorbing anything: what it found, what it could not sort, any missing part, and any document that read as empty (a scanned PDF). **A missing required part is the one question the intake may ask.** Native Google Docs in the folder are unverified; saving the script and sheet as `.docx` or `.pdf` is the safe route.
+
+**The supplied Product Sheet is read against Appendix B.** Its facts are authority layer 2 as supplied. The agent writes `products/<name>/` in the Appendix B schema from it, and lists every Appendix B field the supplied sheet left empty. The product images are the §7 reference images, authority layer 1.
+
+### The single-message intake — the alternative
+
+Where there is no folder, the same fields travel in one message:
 
 | Field | Content | Required |
 |---|---|---|
@@ -7319,7 +7348,7 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | **Credit cap** | The user states a per-build credit cap when the run starts; absent one, the agent asks once, before the first call. The balance is read before every batch; a batch that would cross the cap does not submit — the run stops with the spend so far and the cost of what remains |
 | **QA** | Every render is downloaded and checked against E1. AUTO checks run by instrument. **HUMAN checks run as AGENT-FIRST**: the agent looks and judges; a clear pass proceeds, a clear fail takes the E2 remedy, an uncertain read queues for the user. **Always queued for the user regardless of the agent's read:** subject identity across sheets and beats, the §19 avatar sheet, the §28F closure/sync frame check, voice (§22D), and any Mode 4/5 performance or contact-sheet check |
 | **Trim** | Every talking-head clip that passes QA goes through the E11 trim pass before final review |
-| **Intake** | An Intake Pack with `RUN: AUTOMATION` starts the run; cast sheets, the property plate and location plates are generated straight after absorption (§18B) |
+| **Intake** | An Intake Pack or Drive intake message with `RUN: AUTOMATION` starts the run; cast sheets, the property plate and location plates are generated straight after absorption (§18B) |
 | **Film voices** | §24I voice masters are generated, checked and stored untouched; E11 never runs on them |
 | **Voice pipeline** | §22U runs in order. Step 6 (clone) is HUMAN unless `ELEVENLABS_API_KEY` is set; the run pauses there for the voice ID. The step-10 master is always played to the user before any HeyGen render |
 | **Record** | The ledger is the record. Every reroll, every changed prompt and every trim is logged with its reason; a changed prompt is still a delivered iteration (§16) |
@@ -7584,7 +7613,7 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 **V7.55.1 film-mode beats — visual check, first use.** One `HERO-FILM` reveal insert, one `MECH-SCREEN` push into the §12A render with its matched grade, and one `ANIM-XRAY` beat. Judge: does the insert read as a story moment rather than product photography, does the cut from screen to render feel motivated, and does the X-ray read as friendly and clear while the product still visibly works? Settles by looking.
 
-**§18B Intake Pack — first run.** One pack end to end: does every `INSPO` link download? **Measured V7.58.0: YouTube refuses the video stream from the cloud container (HTTP 403 from YouTube, not the proxy) — YouTube inspos go in `builds/<BUILD>/intake/`.** TikTok and Instagram unverified, and do steps 1–5 ship without a question?
+**§18B Intake Pack — first run.** One Drive folder end to end: do native Google Docs download, and does the sort put every file where it belongs? Measured V7.58.1: a public Drive folder downloads from the container (`gdown`), and the sort passed on a mock folder of two videos, a `.docx` script, a PDF sheet, two images and one stray file. Then the link route: does every `INSPO` link download? **Measured V7.58.0: YouTube refuses the video stream from the cloud container (HTTP 403 from YouTube, not the proxy) — YouTube inspos go in `builds/<BUILD>/intake/`.** TikTok and Instagram unverified, and do steps 1–5 ship without a question?
 
 **§24I film voice master — first use.** One character: does the untrimmed 10s master hold the voice across three dialogue shots with different emotions, and does it stay neutral under `DRAMA-DELIVERY`?
 
@@ -7593,6 +7622,18 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **E11 trim pass — first production run.** One talking-head beat through the full procedure. Judge: does every cut land between words, does any joint click, does the entry breath survive at 120 ms, and does the keep-list silence survive at its listed length? Then one A/B of `auto-editor` against the transcription route on the same clip. Settles by instrument plus one listen.
 
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
+
+---
+
+# CHANGELOG — V7.58.0 → V7.58.1 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **18B** | **Drive intake (new, the default).** One shared folder holds the inspo, script, Product Sheet and product images; the message carries the link, build, mode and run. Files sorted by name and type; documents extracted; inspo measured; missing parts reported before absorbing. Supplied Product Sheet mapped to Appendix B. The single-message pack stays as the alternative |
+| E0 | Intake row covers the Drive message |
+| Files | `scripts/fetch_drive.py`; `builds/INTAKE_TEMPLATE.md` rewritten Drive-first |
+
+**Origin:** user request — send everything as one Drive link.
 
 ---
 
@@ -7608,22 +7649,6 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | Files | `builds/INTAKE_TEMPLATE.md` |
 
 **Origin:** user request — send steps 1 and 2 in one go, build avatars and plates from it, and give film characters consistent untrimmed Seedance voices.
-
----
-
-# CHANGELOG — V7.56.0 → V7.57.0 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **22U** | **Voice & talking-head pipeline (new).** Talking-head image → 10s Seedance voice source → trim → ×1.2 → loop to ≥30s → ElevenLabs clone named by a script-title keyword → Eleven v3 TTS with `TAG-PALETTE` inside 5,000 characters → pick and save the master → HeyGen Avatar V talking heads from the uploaded audio, expressiveness on, hand gestures. All-B-roll and film builds skip HeyGen |
-| 4 | ElevenLabs on every build; HeyGen Avatar V added for talking heads |
-| 22C, 22D | Voice source rewritten — the cloned voice is every character's voice; cloned regime added |
-| 31, 36, 38 | §36/§38 become the fallback route; multiplier note |
-| 44 | Default **7** rewritten; default **11**'s gate removed; new default **84** |
-| E0, E1, E7 | Clone step HUMAN without an API key; four QA checks; five call templates |
-| Skills | Tag library reference file; `voice_source.py`, `tts_budget.py` |
-
-**Origin:** user workflow — clone the voice from a Seedance clip, voice it in Eleven v3, drive HeyGen Avatar V with it.
 
 ---
 

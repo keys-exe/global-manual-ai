@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer-auto
-description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.58.0, Appendix E0/E11, §18B, §22U, §24I). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
+description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.58.1, Appendix E0/E11, §18B, §22U, §24I). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
 ---
 
 # AI Prompt Engineer — Automatic run mode
@@ -20,10 +20,10 @@ Grep  pattern="^## (E(0|1|2|3|7|9|11)|18B|22U|24I)\."  path="standards/AI_Prompt
 3. **Build directory** `builds/<build>/` per E9, with `run_ledger.json` (E3) and `renders/` and `trim/` folders. Media stays out of git (`.gitignore` covers it).
 4. **Tool setup** — the container is ephemeral, so install every session:
    ```
-   pip install -q imageio-ffmpeg faster-whisper auto-editor yt-dlp
+   pip install -q imageio-ffmpeg faster-whisper auto-editor yt-dlp gdown python-docx pypdf cffi
    ```
    `ffmpeg` path: `python3 -c "import imageio_ffmpeg as f; print(f.get_ffmpeg_exe())"`.
-5. **Intake → steps 1–5 (§18B).** `python3 .claude/skills/ai-prompt-engineer/scripts/fetch_inspo.py <BUILD> <links…>`; report any FETCH_FAILED link and ask for the file before absorbing. Then absorb, and **generate every cast sheet (§19 panel check), the property plate (§30G) and every location plate (§30C)** — QA each per E1 — and ship steps 1–5 as one delivery.
+5. **Intake → steps 1–5 (§18B).** Drive: `python3 .claude/skills/ai-prompt-engineer/scripts/fetch_drive.py <BUILD> <folder link>`; links: `fetch_inspo.py <BUILD> <links…>`. Report any missing part, unreadable document or FETCH_FAILED link and ask for it before absorbing. Then absorb, and **generate every cast sheet (§19 panel check), the property plate (§30G) and every location plate (§30C)** — QA each per E1 — and ship steps 1–5 as one delivery.
 6. **Voice route by mode** — Mode 1–3: §22U (section 5 below) before any talking-head beat. **Mode 4, 5, AI Drama: section 6 below** — no §22U, no HeyGen.
 
 ## 2. The loop — per batch
