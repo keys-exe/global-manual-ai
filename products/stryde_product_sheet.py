@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.14
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.15
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -13,6 +13,7 @@ product; it carries everything that step needs.
     the assertions .............. verify()
     the geometry checker ........ check(), was stryde_frame_check.py
     the fit / "adjustable" rule . ADJUSTABLE_RULE, NEG_ADJUST (V7.49.14)
+    one size fits all ........... FIT_SNUG, worn_ref_prompts() (V7.49.15)
     the V7.49.4 pattern fills ... HOLD_PC, HOLD_PROD, NEG_WARP_P, WEAR_*,
                                   REAR_VIEW_SPEC, DEMONSTRATION_TABLE, ...
                                   (content moved OUT of the Standards)
@@ -22,7 +23,8 @@ USE
     python3 stryde_product_sheet.py              self-test, counts, ratios
     python3 stryde_product_sheet.py --md         write the prose sheet out
     python3 stryde_product_sheet.py --check f... score frames against RATIOS
-    python3 stryde_product_sheet.py --refs       score the canonical five
+    python3 stryde_product_sheet.py --refs       score the supplied product photos
+    python3 stryde_product_sheet.py --worn-refs  print the three worn-reference T2I prompts
 
     from stryde_product_sheet import PLACE_LOCK, fill
     fill(PLACE_LOCK, side="right")
@@ -57,7 +59,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.14"
+VERSION = "7.49.15"
 
 # --------------------------------------------------------------- slots
 
@@ -130,7 +132,7 @@ PLACE_LOCK = (
 "ONLY THE MIDDLE THREE FIFTHS OF THE SHELL: beyond each peak the shell continues outward and tapers down "
 "across the front of the knee, ending in a brushed chrome slide inset flush at each outer margin of the leg, "
 "so the shell spans the whole front of the joint rather than the kneecap alone. Slim and flush against the "
-"leg, the flat black woven band running from the slides around behind the knee. Wordmark horizontal and "
+"leg, the black coarse-knit elastic band running from the slides around behind the knee. Wordmark horizontal and "
 "readable on the broad lower body of the shell, centred directly beneath the notch, never off to one side. "
 "The band runs level around the leg at the height of the shell's middle. The kneecap's "
 "face stays completely uncovered above the strap, its outline reading in full.")
@@ -158,17 +160,17 @@ ORIENT_LOCK = (
 "hollow behind the knee, running horizontally across the top of the calf with the knee's own bulge bare above "
 "it and unbroken calf below, its height roughly a third of the leg's width at that point, the two keeper loops "
 "standing proud together at the centre of the rear, and the outermost edge of one chrome slide at each side of "
-"the leg silhouette standing proud of the outline as a small bright bar. The band presses in: flesh swells slightly above and below it, its edges undulate rather "
-"than running as straight lines, and it sits a few degrees off horizontal, following the leg instead of a "
-"drawn line. The shell is entirely hidden by the leg and no shell, wordmark or fastening appears anywhere on "
+"the leg silhouette standing proud of the outline as a small bright bar. The band presses in: flesh swells slightly "
+"above and below it, the band's own edges stay straight while its line follows the curve of the leg, a few "
+"degrees off horizontal, never a drawn line. The shell is entirely hidden by the leg and no shell, wordmark or fastening appears anywhere on "
 "the rear.")
 
 ORIENT_C = (
-"The rigid shell stays on the front of the knee throughout, never rotating around the leg. Only the flat "
-"black woven webbing band crosses the back of the leg, below the hollow behind the knee and across the top of "
+"The rigid shell stays on the front of the knee throughout, never rotating around the leg. Only the "
+"black coarse-knit elastic band crosses the back of the leg, below the hollow behind the knee and across the top of "
 "the calf with the knee bare above it, its outer face carrying the two black keeper loops side by side at the rear, "
 "with the chrome slides standing proud at the outer sides as small bright bars. The band "
-"presses in: flesh swells above and below it and its edges undulate rather than running straight. No shell, "
+"presses in: flesh swells above and below it and its line follows the curve of the leg. No shell, "
 "wordmark or fastening appears at the rear.")
 
 # Bent-knee placement. The standing spec guards against the shell riding UP
@@ -181,8 +183,8 @@ PLACE_BENT = (
 "into the notch and filling it with no gap of bare skin anywhere between them, and the two matching peaks "
 "rising either side to flank the lower part of the kneecap's sides -- never past its middle and never covering "
 "any of its face. The kneecap's own face stays completely uncovered above the "
-"shell, its outline reading in full. The shell's lower body carries on down onto the upper shin. A polished "
-"chrome slide sits at each outer margin of the leg with the flat black band running back from it. The shell "
+"shell, its outline reading in full. The shell's lower body carries on down onto the upper shin. A brushed "
+"chrome slide sits at each outer margin of the leg with the black coarse-knit band running back from it. The shell "
 "never rotates with the joint -- the notch stays under the kneecap through every angle of flexion.")
 
 # The shell wraps far enough round that a side or three-quarter view still
@@ -192,8 +194,8 @@ PLACE_PROFILE = (
 "Seen from the side or three-quarter with the knee bent, the shell wraps far enough around the leg that most "
 "of its face still reads: the nearer pointed peak curls up and over toward the front of the knee, the notch "
 "dips between the peaks under the kneecap, and the wordmark runs horizontally along the shell's lower body, "
-"readable rather than edge-on. At the rear edge of the shell a polished chrome slide stands proud with the "
-"flat black band folding through it and running on around the leg. The shell's own curve follows the leg -- "
+"readable rather than edge-on. At the rear edge of the shell a brushed chrome slide stands proud with the "
+"black coarse-knit band folding through it and running on around the leg. The shell's own curve follows the leg -- "
 "it is a wrapped plate, never a flat panel stuck on the front.")
 
 NEG_BENT = (
@@ -238,7 +240,7 @@ NEG_ORIENT = (
 "behind the knee, no fastening visible at the back of the knee, no velcro tab at the rear, no buckle at the "
 "rear, no band without its two keeper loops, no keeper loops on the inner face, no scalloped band edges, no wavy band edges, no smooth flat webbing band, no fine even weave, "
 "no band sitting in the hollow behind the knee, no band above the knee, no band on the thigh, "
-"no straight undented band edges, no band tracing a perfect straight line across the leg, no band floating off "
+"no band tracing a perfect straight line across the leg, no band floating off "
 "the skin, no hardware at the centre of the back, no strap orientation changing between beats")
 
 NEG_SEAT = (
@@ -253,9 +255,9 @@ NEG_SEAT = (
 REF_PROD = (
 "The product exactly as in the attached reference image — a matte-black polymer shell spanning "
 "the whole front of the knee, its top edge waving up into two matching pointed peaks of equal height either side of a crisp "
-"concave notch that occupies only the middle three fifths of its width, waisted off-centre, a flat matte-black "
+"concave notch that occupies only the middle three fifths of its width, waisted off-centre, a "
 "black elastic band in a coarse knit with a visible textured weave carrying two black keeper loops on its outer "
-"face, a brushed chrome slide inset flush into each end of the shell, and a lowercase grey stryde wordmark "
+"face, a brushed chrome slide inset flush into each end of the shell carrying three engraved dotted chevrons, and a lowercase grey stryde wordmark "
 "centred on the lower body directly beneath the notch, horizontal and readable, never to one side "
 "of the notch —")
 
@@ -285,6 +287,79 @@ NEG_ADJUST = (
 # (the end position). The shin start is written, never shown by reference.
 SEAT_REFERENCES = ("composite", "front")
 
+# --- one size fits all (V7.49.15, user) --------------------------------
+# One unit, no sizes. The shell is a fixed size; the elastic band takes up
+# the leg. A worn frame shows it fitting THIS leg exactly: snug, flat, no
+# slack, the shell scaled to the knee. Positive wording only -- this string
+# goes into T2I, which has no negative channel.
+FIT_SNUG = (
+"One size fits all, and it fits this leg exactly: the elastic band runs snug and flat all the way round the "
+"leg, pressing in lightly so the skin dips a touch at its edges, the band's tail folded back through each "
+"chrome slide and lying flat against the band, every part of it in contact with the skin. The shell is "
+"scaled to this knee: its notch is one kneecap wide and the shell spans the whole front of the joint, a "
+"chrome slide at each side of the leg, the size of a hand laid across the front of the knee.")
+
+# Leg-skin clause for worn frames with no face in them (SKIN-A is written
+# for faces). Buyer age band, not an identity.
+LEG_SKIN = (
+"Real unretouched skin on an adult leg of about sixty: fine hairs on the shin and thigh catching the light, "
+"visible pores, faint veins at the side of the knee, soft creases and slight redness over the kneecap, a "
+"mildly uneven tone between thigh, knee and shin. Every crease and hair casts its own small shadow.")
+
+# CAP-A and BODY-WHOLE, copied verbatim from the Standards (Appendix A) so the
+# prompts below are complete. The Standards own them: re-copy on any change.
+CAP_A = (
+"Capture must look like a phone camera file, not a lit scene: Smart HDR 5 tone-mapping lifting the shadows so "
+"they read flat rather than deep, highlight clipping at the brightest edge of frame, natural warm-neutral "
+"colour temperature straight out of the phone, subtle lens distortion and softening at the frame edges "
+"consistent with a 24mm phone lens. No colour grading, no retouched skin, no shaped or lit light on the subject.")
+BODY_WHOLE = (
+"EVERY PERSON IN FRAME IS ANATOMICALLY WHOLE. Each person has exactly one head attached to one neck, two arms "
+"and two legs, each joined to the body at the right place and bending only at real joints. Every visible hand "
+"has one thumb and four fingers, separate, correctly sized, gripping or resting the way a real hand does. Any "
+"part of a body that is not visible is out of view for a reason you can see — cut by the frame edge or hidden "
+"behind a named object — never simply missing inside the frame.")
+
+WORN_REF_SCENES = {
+    "front": ("Vertical 9:16 phone photo, taken at knee height from straight in front of the right leg of a "
+              "standing adult in dark grey shorts ending mid-thigh, weight on the right leg, knee straight, the "
+              "frame running from mid-thigh to mid-shin with the knee in the centre, a plain living room behind "
+              "out of focus, daylight from a window to one side."),
+    "rear":  ("Vertical 9:16 phone photo, taken at knee height from directly behind the right leg of a "
+              "standing adult in dark grey shorts ending mid-thigh, knee straight, the frame running from "
+              "mid-thigh to mid-calf with the back of the knee in the centre, a plain living room wall behind, "
+              "daylight from a window to one side."),
+    "bent":  ("Vertical 9:16 phone photo, three-quarter view from the front right, of an adult in dark grey "
+              "shorts ending mid-thigh, seated on the edge of a sofa with the right knee bent to about a right "
+              "angle and the foot flat on the floor, the frame running from mid-thigh to the ankle with the knee "
+              "in the upper centre, daylight from a window across the knee."),
+}
+
+# Attach these with each prompt (products/stryde_refs/). The product photos
+# carry the object; the prompt carries the placement.
+WORN_REF_ATTACH = {
+    "front": ("front.webp", "three_quarter_b.jpg"),
+    "rear":  ("back.webp", "front.webp"),
+    "bent":  ("three_quarter_b.jpg", "front.webp"),
+}
+
+
+def worn_ref_prompts(side="right"):
+    """The three worn-placement reference T2I prompts (V7.49.15), built from
+    the locked strings so nothing is retyped. Nano Banana Pro, 9:16, 2k."""
+    lead = REF_PROD.replace("the attached reference image", "the attached product photos")
+    worn = " worn on the %s leg of a real person, fitted exactly." % side
+    body = {
+        "front": fill(PLACE_LOCK, side=side),
+        "rear":  fill(ORIENT_LOCK, side=side),
+        "bent":  fill(PLACE_BENT, side=side) + " " + fill(PLACE_PROFILE, side=side),
+    }
+    out = {}
+    for k, scene in WORN_REF_SCENES.items():
+        out[k] = " ".join((scene, lead + worn, body[k], FIT_SNUG, LEG_SKIN, CAP_A, BODY_WHOLE))
+    return out
+
+
 # ==================================================================
 # MOVED FROM THE STANDARDS AT V7.49.4
 #
@@ -304,8 +379,8 @@ REAR_VIEW_SPEC = (
 "under the kneecap cannot put the band behind the joint. Two further readings from the "
 "same reference: the chrome slides read from behind as small bright bars standing proud "
 "of the leg silhouette at each outer edge, and the band presses in -- flesh swelling above "
-"and below it, its edges undulating rather than running straight, the whole thing a few "
-"degrees off horizontal. Band height / leg width at the contact point is its own ratio "
+"and below it, its line following the leg (V7.49.15: the band's own edges stay straight, per the "
+"supplied photos), the whole thing a few degrees off horizontal. Band height / leg width at the contact point is its own ratio "
 "(INFO_RATIOS['BAND_HEIGHT_TO_LIMB_WIDTH']), not the band-thickness figure measured "
 "against the shell's height.")
 
@@ -370,6 +445,11 @@ REVEAL_STATUS = {
 # the end position (SEAT_REFERENCES, V7.49.14). Image + names: the beat still
 # carries PLACE_LOCK / ORIENT_LOCK in prose. The person in these frames is
 # not the beat's subject -- the reference carries placement, never identity.
+# V7.49.15: all three frames are to be REPLACED by the worn_ref_prompts()
+# frames (one size fits all, fitted exactly, supplied product photos as the
+# object reference). The frames below stay attached until the new ones are
+# accepted by the user; then swap file/job ids here and log it.
+PLACEMENT_REFERENCES_STATUS = "REPLACING -- new front, rear, bent prompted V7.49.15, not yet accepted"
 PLACEMENT_REFERENCES = {
     "front": {
         "file": "hf_20260819_134414_dab787bf-2285-4662-8597-1f60d7076347.png",
@@ -576,13 +656,15 @@ UNSETTLED = {
         "generation, is retired -- a worn frame is a placement reference, never a "
         "product-geometry source. The inner face remains undescribed.",
     "band_keepers":
-        "SETTLED FOR RENDERING, OPEN AS A FACT. Small black moulded keeper "
+        "RESOLVED V7.49.15 by PRODUCT_PHOTOS['back.webp']: two black moulded keeper loops side by "
+        "side at the centre rear of the band's outer face. Was: SETTLED FOR RENDERING, OPEN AS A FACT. Small black moulded keeper "
         "loops sit on the band, consistent across 63, 64, 68 and every "
         "V7.48.2 reference panel. They are a secondary component the "
         "eight-field spec did not carry, and they now render on every "
         "object beat. UNBLOCKED AS A FACT BY: a photograph of the band.",
     "band_weave":
-        "SETTLED FOR RENDERING, OPEN AS A FACT. At V7.48.1 the native-"
+        "RESOLVED V7.49.15 by PRODUCT_PHOTOS: a coarse knit with a visible textured weave and "
+        "straight edges (BAND_MATERIAL). History follows. Was: SETTLED FOR RENDERING, OPEN AS A FACT. At V7.48.1 the native-"
         "resolution rear crop shows a tight, regular, fine woven grain with "
         "no loop structure at all, at a scale where loops would resolve. "
         "CORRECTED AT V7.48.2: every V7.48.2 panel and the macro frame show a COARSE OPEN KNIT WITH VISIBLE LOOP STRUCTURE, not a fine even weave. BAND_MATERIAL therefore describes what must RENDER: flat matte-"
@@ -594,7 +676,8 @@ UNSETTLED = {
         "appearance. RESOLVED AS A FACT BY: a photograph of the physical band, or an "
         "advertiser statement of the closure type.",
     "band_inner_lugs":
-        "The outer-face keeper loops are neither confirmed nor killed by the "
+        "RETIRED V7.49.15: the photos show the keeper loops on the OUTER face and a plain inner "
+        "face. Nothing is ever written about inner-face lugs. History follows. The outer-face keeper loops are neither confirmed nor killed by the "
         "V7.48 rear reference. The band's lower edge does undulate against "
         "the calf, but plain compression explains that equally, and the lugs "
         "sit against the skin where the camera cannot see them. They stay as "
@@ -638,6 +721,21 @@ CANONICAL_REFERENCE = {
     "excluded": "3.png -- its wordmark sits on the opposite side of the notch from 2.png; a composite must not contradict itself",
 }
 CANONICAL_REFERENCES = {"composite": CANONICAL_REFERENCE}  # single-image rule, V7.49.11
+
+# --- the supplied product photos, stored in the repo (V7.49.15) ----------
+# Layer 1 (Order of Authority). Stored beside this sheet so every session
+# has them. Read by eye V7.49.15.
+PRODUCT_PHOTOS_DIR = "stryde_refs"
+PRODUCT_PHOTOS = {
+    "front.webp": ("straight-on front elevation: two matching peaks, notch centred, grey lowercase "
+                   "stryde wordmark centred beneath the notch, chrome slide inset at each end with three "
+                   "engraved dotted chevrons, coarse-knit band with straight edges each side"),
+    "back.webp": ("rear view: the band doubled through the slides and running round the back, two "
+                  "black moulded keeper loops side by side at the centre of the band's outer face, the "
+                  "shell's inner face plain matte black, the peaks rising behind"),
+    "three_quarter_a.jpg": "three-quarter, floating: wordmark reads left of the notch in this view (yaw)",
+    "three_quarter_b.jpg": "three-quarter, floating: the wrap reads, slide and band tail at the near end",
+}
 
 REFERENCE_SHEET = {
     "version": "7.48.2",
@@ -737,14 +835,16 @@ CHECKLIST = [
     "notch and peaks span one kneecap and sit inside the middle three "
     "fifths; the shell continues out to a chrome slide at each outer "
     "margin of the leg",
-    "the band's outer face carries spaced moulded keeper loops, visible on "
-    "rear and turning beats",
+    "the band's outer face carries two moulded keeper loops side by side at "
+    "the centre rear, visible on rear and turning beats",
+    "one size fits all: band snug and flat all the way round, tail folded "
+    "back flat through each slide, no slack, shell scaled to the knee",
     "rear and turning beats: only the woven band crosses the back of the "
     "knee, and no fastening is visible there",
     "rear beats: the band sits BELOW the hollow, across the top of the calf, "
     "with the knee's own bulge bare above it -- never in the hollow",
     "rear beats: the band presses in, flesh swelling above and below it, its "
-    "edges undulating rather than running as straight lines",
+    "line following the leg's curve while its own edges stay straight",
     "rear beats: a chrome slide reads as a bright bar standing proud of the "
     "leg silhouette at each outer edge",
     "bent-knee beats: the kneecap's flesh presses INTO the notch curve and "
@@ -777,9 +877,9 @@ REVERSALS_V7482 = (
     ("wordmark position", "PLACE-LOCK-C and REF-PROD require the wordmark "
      "offset to one side of the notch, matching the canonical five. The "
      "accepted V7.48.2 front elevation shows it centred beneath the notch, "
-     "a phrasing this sheet retires. Prompts keep the offset wording; the "
-     "front elevation panel is NOT attached on beats where wordmark "
-     "position matters. See OVERRIDES."),
+     "a phrasing this sheet retires. RESOLVED V7.49.11/V7.49.15: the "
+     "supplied front photo centres it beneath the notch, and every string "
+     "now says so. See OVERRIDES."),
 )
 
 RETIRED_PHRASINGS = [
@@ -1070,6 +1170,27 @@ def verify(verbose=False):
     if not all(k in {**CANONICAL_REFERENCES, **PLACEMENT_REFERENCES} for k in SEAT_REFERENCES):
         fails.append("SEAT_REFERENCES names an unregistered reference")
 
+    # 8c one size fits all; worn-reference prompts build and stay positive (V7.49.15)
+    for frag in ("One size fits all", "snug and flat", "scaled to this knee"):
+        if frag not in FIT_SNUG:
+            fails.append("FIT_SNUG missing: %s" % frag)
+    wr = worn_ref_prompts("right")
+    if set(wr) != {"front", "rear", "bent"} or set(WORN_REF_ATTACH) != set(wr):
+        fails.append("worn reference prompts must be exactly front, rear, bent, each with attachments")
+    for k, v in wr.items():
+        if "[" in v:
+            fails.append("worn ref %s left a slot unfilled" % k)
+        for bad in RETIRED_PHRASINGS:
+            if bad in v.lower() and bad not in NEG_ONLY:
+                fails.append("worn ref %s carries retired phrasing: %r" % (k, bad))
+    for k, files in WORN_REF_ATTACH.items():
+        for f in files:
+            if f not in PRODUCT_PHOTOS:
+                fails.append("worn ref %s attaches an unregistered photo: %s" % (k, f))
+    for name in ("PLACE-LOCK", "ORIENT-C", "REF-PROD"):
+        if "webbing" in S[name] or "flat matte-black black" in S[name]:
+            fails.append("%s still describes the band as flat webbing" % name)
+
     # 9 one mechanism claim, and it is not the retired one
     if MECHANISM_CLAIM != "protection":
         fails.append("mechanism claim is not the locked one")
@@ -1110,15 +1231,15 @@ def counts():
 # ==================================================================
 SHEET_MD = r'''# Product Sheet — Stryde Precision Strap
 
-**V7.49.14.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
+**V7.49.15.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
 
-Every geometry figure below was measured off the five canonical renders (63, 64, 65, 66, 68) with a roll correction applied, not read off the prose. Where a figure is external it is marked Tier 3 and is not advertiser-held.
+The geometry ratios were measured off the five V7.48 canonical renders (63, 64, 65, 66, 68) with a roll correction applied. **Since V7.49.11 the supplied product photos (`stryde_refs/`) are the product** (layer 1) and outrank those renders wherever they disagree. Where a figure is external it is marked Tier 3 and is not advertiser-held.
 
 ---
 
 ## 1. Product name and category
 
-Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior shell on a closed knit band, worn on one knee, sitting under the kneecap and over the upper patellar tendon.
+Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior shell on a closed elastic knit band, **one size fits all**, worn on one knee, sitting under the kneecap and over the upper patellar tendon.
 
 **Market note.** Multiple marketplace sellers list a "Stryde Precision Strap" built around a soft silicone lock-point pad. Our hero is rigid matte polymer with brushed chrome hardware, which is the opposite construction. Two consequences: the cheap-silicone villain archetype (§10) is the literal market reality and the anti-knock-off angle is stronger than it looked; and the name question is the advertiser's counsel's, not this sheet's.
 
@@ -1128,7 +1249,7 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 
 **1 — Primary form.** A rigid moulded polymer shell spanning the whole front of the knee from one side of the leg to the other, its top edge waving up into two matching pointed peaks of equal height either side of a crisp concave notch, waisted off-centre, closed behind the leg by a flat matte-black woven elastic band.
 
-**2 — Material and finish.** Shell: matte polymer, satin not gloss, holding a soft broad highlight along the crown of each peak and down the waist. Band: black elastic band in a coarse open knit with visible loop structure, no visible loop structure — read off the native-resolution rear crop at V7.48.1. This describes what must **render**; see `UNSETTLED["band_weave"]` for why it is not a manufacturing claim. Hardware: polished brushed chrome, the only specular element on the object. Inner-face lugs: soft matte black, lower sheen than the shell.
+**2 — Material and finish.** Shell: matte polymer, satin not gloss, holding a soft broad highlight along the crown of each peak and down the waist. Band: black elastic band in a coarse knit with a visible textured weave and straight edges (supplied photos). Hardware: brushed chrome slides carrying three engraved dotted chevrons, the only specular element on the object. Keeper loops: moulded matte black, on the band's outer face.
 
 **3 — Distinguishing asymmetries.** *The most important field, and every item here is normalised out if unstated.*
 
@@ -1146,13 +1267,13 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 - Band width is roughly a quarter to a third of the shell's greatest height.
 - **No width-to-height figure exists yet.** See §7 below.
 
-**5 — Secondary components.** Band: flat matte-black woven elastic webbing, threading through each slide and folding back on itself, so the fold-back sits at the sides of the leg and never at the rear. The band is never shown being adjusted (§12 below). **Inner-face keeper loops:** spaced soft matte-black moulded rounded rectangles, a little narrower than the band, standing slightly proud of the webbing, at least two visible per side. Hardware: polished chrome rectangular bars inset flush into each shell end, carrying fine engraved dashed detail on the face — captured by the shell, not floating on the band.
+**5 — Secondary components.** Band: black coarse-knit elastic, threading through each slide and folding back on itself, so the fold-back sits at the sides of the leg and never at the rear. The band is never shown being adjusted (§12 below). **Keeper loops — outer face:** two black moulded rounded rectangles side by side at the centre rear of the band, a little narrower than the band, standing proud of the knit. The inner face is plain and never described. Hardware: brushed chrome rectangular slides inset flush into each shell end, carrying three engraved dotted chevrons — captured by the shell, not floating on the band.
 
 **6 — Interface mechanism.** Band threads through the chrome slides and folds back. There is no visible velcro tab, buckle or fastening in any canonical render, and none at the rear in any beat.
 
 **7 — Placement lock.** `[SITE]` is the patellar tendon immediately below the patella; `[LANDMARK]` is the kneecap. Height is set by **contact** — the kneecap's lower pole seats into the concave notch, its flesh filling the curve, no gap anywhere between skin and shell — never by a measured offset. Coverage is guarded separately: the kneecap's face stays completely uncovered, its outline reading in full. Side is declared at the act map and held; the product is **not handed**. Strings: `PLACE-LOCK`, `PLACE-LOCK-C`, `ORIENT-LOCK`, `ORIENT-C`, `SEAT-LOCK`, `NEG-PLACE`, `NEG-ORIENT`, `NEG-SEAT`.
 
-**8 — Standing negatives.** `NEG-PLACE` and `NEG-ORIENT` in the `.py`, accumulated from observed failures. Three clauses were added at V7.47: `no undersized shell`, `no peaks filling the whole width of the shell`, `no band without keeper loops on its inner face`.
+**8 — Standing negatives.** `NEG-PLACE` and `NEG-ORIENT` in the `.py`, accumulated from observed failures. Clauses added at V7.47: `no undersized shell`, `no peaks filling the whole width of the shell`, `no band without its two keeper loops` (outer face — the V7.47 "inner face" wording is retired).
 
 ---
 
@@ -1163,8 +1284,9 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 | Set the height | "2 cm below the kneecap" / "one to two fingers below" | The kneecap's lower pole seats deep into the notch, its flesh filling the curve, no gap between skin and shell |
 | Keep the kneecap clear | "a clear gap of bare skin between the kneecap and the strap" — rendered the strap low on the shin and visibly disengaged from what it acts on | The kneecap's face stays completely uncovered above the strap, its outline reading in full |
 | Set the shell's size | "spans the full width of the kneecap and slightly beyond" — rendered a small pad, and contradicted the same string's chrome-slides-at-the-outer-edges clause | The notch and peaks are one kneecap wide and occupy the middle three fifths; beyond each peak the shell continues out to a chrome slide at each outer margin of the leg |
-| Describe the rear | "a plain knit strip, unbroken and featureless" — rendered a plain band, which is wrong; the inner face carries lugs | Outer face unbroken and featureless; inner face carrying spaced soft matte-black moulded keeper loops, reading in silhouette against the skin |
-| Place the wordmark | "offset to one side of the notch" — contradicted by the supplied front elevation (V7.49.11) | On the broad lower body, offset to one side of the notch rather than centred beneath it |
+| Describe the rear | "a plain knit strip, unbroken and featureless" — rendered a plain band with no keepers | A coarse-knit band with straight edges, two black moulded keeper loops side by side at the centre rear of its outer face |
+| Place the wordmark | "offset to one side of the notch" — contradicted by the supplied front photo (V7.49.11) | Horizontal and readable on the broad lower body, centred directly beneath the notch |
+| Show that it fits | "adjustable" — renders the act of adjusting (V7.49.14) | The seating move up the shin, then the product itself (§12); on a worn frame, `FIT_SNUG` |
 | Bound the scale | "no wider than X" — biased the object small | State what it spans positively; put the upper bound in the negatives |
 | Stop the rear shell | `no shell at the back` alone — a generator does not classify a flat printed patch as a shell | State the rear positively and at length, then negate |
 
@@ -1172,11 +1294,11 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 
 ## 4. Reference image registry
 
-**Canonical set:** 63, 64, 65, 66, 68. Attach one of these to every product-facing generation call, alongside `REF-PROD` in prose. Image plus names is the pair; either alone leaks.
+**Canonical set (V7.49.15):** the supplied product photos in `stryde_refs/` — `front.webp`, `back.webp`, `three_quarter_a.jpg`, `three_quarter_b.jpg` (`PRODUCT_PHOTOS`) — and the V7.49.11 composite built from them. Attach one to every product-facing generation call, alongside `REF-PROD` in prose. Image plus names is the pair; either alone leaks. The V7.48 renders (63–68) are retired as references; their measured ratios stay.
 
 **Never attach as reference:** any image carrying baked-in headline type, any multi-instance shot, any marketplace listing image of a silicone-pad product sold under the same name.
 
-**Per-batch first-frame check:** the 19-item `CHECKLIST` in the `.py`. The measurable half runs as a script — `stryde_frame_check.py`. The rest stays an eyeball: matte finish, woven band, wordmark legibility, declared side, placement on the body, shell on the front, keeper loops on rear and turning beats.
+**Per-batch first-frame check:** the `CHECKLIST` in the `.py` (the self-test prints its count). The measurable half runs as `stryde_product_sheet.py --check <frames>`. The rest stays an eyeball: matte finish, woven band, wordmark legibility, declared side, placement on the body, shell on the front, keeper loops on rear and turning beats.
 
 ---
 
@@ -1186,7 +1308,7 @@ Register: anatomical (§12A-1). Slots: `[REGION]` knee · `[STACK]` quadriceps, 
 
 **`[SITE]` is not the anatomical insertion.** The tibial tuberosity is the textbook-obvious spot and it is the wrong one — the product acts above it. Name the tuberosity in the negatives on every modulation beat.
 
-**Standards slots this product fills:** `[BAND-MATERIAL]` black elastic band in a coarse open knit with visible loop structure · `[HARDWARE]` brushed chrome slides · `[BAND-INNER]` spaced soft matte-black moulded keeper loops, rounded rectangles a little narrower than the band, standing slightly proud of the webbing.
+**Standards slots this product fills:** `[BAND-MATERIAL]` black elastic band in a coarse knit with a visible textured weave and straight edges · `[HARDWARE]` brushed chrome slides · `[BAND-INNER]` two black moulded keeper loops side by side on the band's outer face at the rear (the slot name is historical; the inner face is never described).
 
 ---
 
@@ -1212,7 +1334,7 @@ British, roughly 55–80. Cast to the buyer, balanced across men and women, with
 
 | Claim | Tier | Status |
 |---|---|---|
-| Below-knee circumference roughly 25–44 cm across sized ranges; 15–46 cm range | 3 | Category figures from competitor sizing. Not advertiser-held. Does not block B-roll; do not present as an advertiser-held product fact unless supplied/verified. Exact readable numerals may be POST-ASSIST |
+| **One size fits all** | Advertiser (user-stated V7.49.15) | Rendered as `FIT_SNUG` on worn frames and covered per §12 on fit lines. No size chart, size label or S/M/L is ever shown. The V7.49.13 competitor sizing figures (25–44 cm, 15–46 cm) are retired — this product has no sizes |
 | Band height about 2 inches | 3 | Category figure. Not advertiser-held |
 | Adult patella about 4–5 cm wide; tendon 4–5 cm from inferior pole to tibial tuberosity | 3 | Anatomical anchor, used for scale reasoning only, never as a claim |
 | Clinical placement "just below the kneecap"; one manufacturer specifies about 2 inches below | 3 | Third-party guidance. Compatible with the contact phrasing — the top edge touches the pole while the body covers the upper tendon |
@@ -1230,7 +1352,7 @@ The global Standards are product-agnostic from V7.49.4. Everything below used to
 | 9A-P | Rear path `[REAR-PATH]`, `[BAND-HEIGHT-RATIO]` | `SLOTS`, `REAR_VIEW_SPEC` — the band crosses **below** the hollow, across the top of the calf, knee bare above it; slides as bright bars at each outer edge; band presses in |
 | 9A-P / A | `PLACE-BENT`, `PLACE-PROFILE`, `NEG-BENT` | `PLACE_BENT`, `PLACE_PROFILE`, `NEG_BENT` |
 | 27D / A | `HOLD-PC`, `HOLD-PROD`, `NEG-WARP-P` | `HOLD_PC`, `HOLD_PROD`, `NEG_WARP_P` — matching peaks, notch, band width |
-| 9D / A | `WEAR-CONCEAL`, `WEAR-REVEAL`, `NEG-CONCEAL`, garment list, reveal block | `WEAR_*`, `NEG_CONCEAL`, `CONCEALING`, `EXPOSING`, `HEM_RULE`, `REVEAL_STATUS` (BLOCKED) |
+| 9D / A | `WEAR-CONCEAL`, `WEAR-REVEAL`, `NEG-CONCEAL`, garment list, reveal block | `WEAR_*`, `NEG_CONCEAL`, `CONCEALING`, `EXPOSING`, `HEM_RULE`, `REVEAL_STATUS` (OPEN since V7.49.8) |
 | A | `NEG-ORIENT` product tail | `NEG_ORIENT_PRODUCT_TAIL` (velcro, buckle, keeper loops, thigh, calf, hamstring) |
 | 12A / 12B | `[LOAD-CADENCE]`, form constraint | `SLOTS["LOAD_CADENCE"]` = walking cadence; `MECHANISM_FORM_NOTE` |
 | 30B | Demonstration table | `DEMONSTRATION_TABLE` |
@@ -1254,7 +1376,9 @@ The global Standards are product-agnostic from V7.49.4. Everything below used to
 
 ## 10. Standing open item
 
-**One asset settles three open geometry questions: an orthographic front elevation of the shell** — flat to camera, no yaw, no roll, band symmetrical either side. It settles peak asymmetry direction, confirms the wordmark ruling, and gives the true width-to-height, none of which any three-quarter render can supply. Measured aspect across the five renders is 1.23–1.72, but yaw compresses width and the wrap tilts the bounding box, so every one of those is an under-estimate. **No aspect figure enters this sheet until it lands**, and the peak-asymmetry ruling stays a ruling.
+**Peak equality and the wordmark are settled** by the supplied front photo (V7.49.10–11). **Still open: the true shell width-to-height.** `front.webp` gives an estimate (2.3–2.6, `INFO_RATIOS`); it becomes a figure only when measured edge to edge on a flat, no-yaw, no-roll elevation. Until then no aspect figure enters this sheet.
+
+**Worn references (V7.49.15):** new front, rear and bent frames are prompted by `--worn-refs` (one size fits all, fitted exactly). They replace `PLACEMENT_REFERENCES` once accepted.
 '''
 
 
@@ -1267,7 +1391,7 @@ The global Standards are product-agnostic from V7.49.4. Everything below used to
 
 import sys, os, glob
 
-REFS = "/mnt/user-data/uploads/*.jpg"
+REFS = os.path.join(os.path.dirname(os.path.abspath(__file__)), PRODUCT_PHOTOS_DIR, "*")
 
 
 np = None
@@ -1288,8 +1412,6 @@ def _lazy():
             "    pip install numpy opencv-python-headless "
             "--break-system-packages\n(%s)" % e)
     np, cv2 = _np, _cv2
-
-REFS = "/mnt/user-data/uploads/*.jpg"
 
 
 # ------------------------------------------------------------ segmentation
@@ -1567,6 +1689,15 @@ if __name__ == "__main__":
             print("wrote %s (%d chars)" % (out, len(SHEET_MD)))
         else:
             sys.stdout.write(SHEET_MD)
+        sys.exit(0)
+
+    if a[0] == "--worn-refs":
+        side = a[1] if len(a) > 1 else "right"
+        for k, v in worn_ref_prompts(side).items():
+            print("=== WORN-REF-%s · nano_banana_pro · 9:16 · 2k · %d chars · attach: %s"
+                  % (k.upper(), len(v), ", ".join(WORN_REF_ATTACH[k])))
+            print(v)
+            print()
         sys.exit(0)
 
     if a[0] in ("--check", "--refs"):
