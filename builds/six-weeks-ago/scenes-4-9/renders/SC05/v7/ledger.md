@@ -34,3 +34,4 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 20 | Barbara across the table: "That's the tendon. Every step you take lands right there." | 4c718a76-83e3-4f6a-b5ed-aafb311f9c44 (edit of 11) | APPROVED (option A) |
 | 21 | Margaret near profile: slow out-breath on "Every stride." | b52a672a-0dbf-471d-b6c4-c7ac07a93994 (edit of 14) | APPROVED (option A) |
 | 22 | Margaret OTS: "Barbara, my knees are bone on bone. There's nothing left in there." | d71d9197-fad8-4d66-ac56-0d142e26bfb2 (edit of 16) | APPROVED (option B) |
+| 23 | Barbara OTS: "Mine too. This doesn't put anything back." | ae7d7030-93ea-4788-9e37-b184bc24b139 (edit of 20) | APPROVED (option A) |
