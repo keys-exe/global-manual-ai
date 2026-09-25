@@ -40,3 +40,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 25 | Margaret tight CU three-quarter: "Then what does it do?" | 904b89e5-ec95-4ed6-8481-10ab9f5f1e04 (reframe of b2b2ae90) | APPROVED (option D) |
 | – | Frame 26 tries 38411ad0 (finger on kneecap) / 308ee664 (strap above kneecap); finger fixes 49870646 / c76e026a (shell top edge warped into double bump) | – | REJECTED |
 | 26 | Insert, high three-quarter from Margaret's side: Barbara's fingertip at the strap's peak under her kneecap, "It changes where the weight lands." | 4bf2798d-3f4d-4ee0-8fef-6f508e71ec45 (edit of 18) | APPROVED (option B) |
+| – | Frame 27 tries 81dd5d1b ("time out" T gesture) / a71d0814 (busy gesture) | – | REJECTED / not chosen |
+| 27 | Barbara waist-up, stronger three-quarter: fingertip into open palm, "The pad presses on that one spot…" | 89b84687-0dfb-4eb3-a73d-d82f2f7be34c (edit of 23) | APPROVED (option C) |
