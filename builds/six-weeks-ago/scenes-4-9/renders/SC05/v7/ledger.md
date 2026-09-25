@@ -23,3 +23,4 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 14 | Margaret near profile: jaw sets at the brace, 'while your knee got worse' | ad8f8c36-2acd-47ce-873b-56b4fdf75bc1 (edit of 4a979491: Barbara's striped top fixed to purple plus beads) | APPROVED (Fixed 1) |
 | – | Frame 15 first pair (ecfb430c / 216c275d) | – | REJECTED: Barbara's face drifted (earrings, thinner), rainbow mug, over-sharpened look |
 | 15 | Two-shot: Barbara, "Does your knee hurt going sideways?", flat hand tilting | bc9928f0-26ed-41dd-9575-7cb496891bcc (edit of 07) | APPROVED (option A; stays wide, did not push in) |
+| 16 | Margaret OTS: "No." | b4620516-887b-44c6-81c6-859ee005c189 (edit of 12) | APPROVED (option A) |
