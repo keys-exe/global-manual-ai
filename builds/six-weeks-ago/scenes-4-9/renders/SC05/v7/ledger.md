@@ -44,3 +44,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 27 | Barbara waist-up, stronger three-quarter: fingertip into open palm, "The pad presses on that one spot…" | 89b84687-0dfb-4eb3-a73d-d82f2f7be34c (edit of 23) | APPROVED (option C) |
 | – | Frame 28 tries 35c180f5 (Barbara earrings, face and room drift) / f5e8e840 (Margaret looks into lens) | – | REJECTED |
 | 28 | Low diagonal two-shot across the table corner: Barbara "It catches the weight… Thirty four percent less strain, every step."; Margaret listening | b8087ae9-e4de-48f0-861c-3daeaf7b0edc (edit of 15) | APPROVED (option A) |
+| – | Frame 29 tries 8c2c9127 (Margaret looks into lens) / 155b3699 (Barbara cut off, Margaret looks away) | – | REJECTED |
+| 29 | Barbara CU three-quarter profile foreground, Margaret soft behind almost nodding: "Bone on bone, arthritis… that's the spot taking the weight." | 87c5ab65-cb1d-4124-ae4b-7316fe1d7145 (edit of 28) | APPROVED (option A) |
