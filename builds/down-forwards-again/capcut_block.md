@@ -10,15 +10,15 @@ Apply to each of `edit/down-forwards-again_HK1.mp4`, `_HK2.mp4`, `_HK3.mp4`. The
 ## 2. Text cards — EG07
 | When (spoken) | Card | Style |
 |---|---|---|
-| HK1 "Without an operation. Without another course of physio. Without one more brace going in the drawer." | Build a handwritten list line by line on each "Without": "an operation ✗" / "another course of physio ✗" / "one more brace in the drawer ✗" | white card, handwritten font, red strike + ✗ as each line is spoken, over the TH lower half |
+| HK1 "Without an operation. Without another course of physio. Without one more brace going in the drawer." | Build a handwritten list line by line on each "Without": "an operation ✗" / "another course of physio ✗" / "one more brace going in the drawer ✗" | white card, handwritten font, red strike + ✗ as each line is spoken, over the TH lower half |
 | Body "A sleeve squeezes the whole knee. A hinged brace… A gel sits on the skin." | "Sleeve ✗" / "Hinged brace ✗" / "Gel ✗" | same card, one line per phrase |
 | "Thirty four percent less strain. Measured." | "34% less strain" | white pill, larger, 1.5s — **claim to substantiate** |
 | "Three years with orthopedic surgeons." | "3 years with orthopedic surgeons" | white pill — **claim to substantiate** |
-| "Two hundred thousand people wearing one." | "200,000 wearers" | white pill — **claim to substantiate** |
+| "Two hundred thousand people wearing one." | "200,000 people wearing one" | white pill — **claim to substantiate** |
 
 ## 3. Badge — EG08
-- On BR27 ("Two for one… Sixty days, and you keep the straps"): gold seal "60 DAYS · MONEY BACK" top-right, pop-in on "Sixty days", hold to the end of BR27.
-- On "Two for one": white pill "2 FOR 1" under the product.
+- On BR27 ("Two for one… Sixty days, and you keep the straps"): gold seal "SIXTY DAYS" with "and you keep the straps" beneath it, top-right, pop-in on "Sixty days", hold to the end of BR27. The inspo’s seal says "money back"; this script does not, so the badge carries only the spoken words.
+- On "Two for one": white pill "Two for one" under the product.
 
 ## 4. Arrow (optional)
 - BR05 "Put your finger under your kneecap and press.": small white arrow pointing to the spot just under the kneecap, 1s.
