@@ -72,3 +72,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 40 | Insert: Barbara presses a second strap into Margaret's open palm (strap handed over notch-down) | 9e9eff35-883d-424e-854d-a8ab95eefe6c (edit of 37) | APPROVED (option A) |
 | – | Frame 41 tries 5ac54b68 / 41189ec1 | – | not chosen |
 | 41 | Side-by-side two-shot, slightly higher: Margaret holds the strap; Barbara deadpan "And keep your hand on the rail. I'm not crazy." | 61420f5c-81df-439c-aa7b-c37abe06038b (edit of 34 + 40) | APPROVED (option B) |
+| – | Frame 42 tries 51adb7c7 / ffa43849 | – | not chosen |
+| 42 | Margaret CU (38 setup): eyes on the strap in her hands, a small smile | c0e71a94-0c9c-4754-be16-3e7ccef8bd4d (edit of 38) | APPROVED (option B) |
