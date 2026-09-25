@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.23
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.24
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -19,6 +19,8 @@ product; it carries everything that step needs.
     which images to attach ...... REFS_USE, refs_for(shot) (V7.49.23)
     held beats .................. HELD_GRIPS, NEG_HELD_P (V7.49.23)
     observed failures ........... NEG_OBSERVED (V7.49.23)
+    which knee .................. SIDE_RULE, side_from_script() (V7.49.24)
+    the box and the offer ....... PACKAGE, OFFER, package_prompts() (V7.49.24)
     the V7.49.4 pattern fills ... HOLD_PC, HOLD_PROD, NEG_WARP_P, WEAR_*,
                                   REAR_VIEW_SPEC, DEMONSTRATION_TABLE, ...
                                   (content moved OUT of the Standards)
@@ -65,7 +67,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.23"
+VERSION = "7.49.24"
 
 # --------------------------------------------------------------- slots
 
@@ -98,7 +100,7 @@ SLOTS = {
     "BAND_HEIGHT_RATIO": "a third",
     "LOAD_CADENCE":     "walking cadence",
     # declared at the act map, held across every beat
-    "SIDE":     None,
+    "SIDE":     None,   # from the script, per build -- SIDE_RULE (V7.49.24)
 }
 
 MECHANISM_CLAIM = "protection"          # one per build; load-path is retired
@@ -347,6 +349,99 @@ SIZE_HELD = (
 "pinching hand at both ends, and about as tall as the thumb is long from its tip to its base knuckle; the "
 "band is a little wider than the thumb.")
 
+# --- which knee (V7.49.24, user: "depends on the script") -----------------------
+# The side is read from the script, never chosen for looks. Declared once at the
+# act map and held on every beat of the build (Standards §9: continuity).
+SIDE_RULE = (
+    "1. The script names a knee (left or right, including 'my left knee', 'the right one') -> that knee.",
+    "2. The script names no knee -> right, which matches every locked worn reference.",
+    "3. Declared once at the act map, held on every beat; never both knees; never switched mid-build.",
+    "4. A left-knee build needs left-knee worn references first -- a right-knee frame is never "
+    "mirrored, because a mirror reverses the wordmark. Generate them from worn_ref_prompts('left').",
+)
+
+
+def side_from_script(text):
+    """Apply SIDE_RULE to a script. Returns ('left'|'right', reason). A script that
+    names both knees is returned as ('right', ...) with a flag for the human."""
+    import re as _re
+    t = text.lower()
+    left = bool(_re.search(r"\bleft\s+(knee|leg)\b", t))
+    right = bool(_re.search(r"\bright\s+(knee|leg)\b", t))
+    if left and right:
+        return "right", "FLAG: script names both knees -- confirm the side with the user"
+    if left:
+        return "left", "script names the left knee"
+    if right:
+        return "right", "script names the right knee"
+    return "right", "script names no knee -- default right (matches the locked worn references)"
+
+
+# --- the box and the offer (V7.49.24, user) ----------------------------------
+# Our own box. The offer is ALWAYS Buy 1 Get 1 Free, so there are ALWAYS two
+# straps in it. Rendering spec written V7.49.24 -- the physical box does not
+# exist yet; update this when it does.
+OFFER = "Buy 1 Get 1 Free -- always (user-confirmed V7.49.24)"
+PACKAGE = {
+    "box":      ("a rigid two-piece box, a lid over a base, matte black all over, about 28 cm wide, "
+                 "16 cm deep and 8 cm tall -- sized to hold two straps side by side"),
+    "logo":     ("the lowercase grey stryde wordmark centred on the lid, in the same bold rounded lettering "
+                 "and the same grey as the wordmark on the shell; nothing else printed anywhere on the box"),
+    "inside":   ("a matte-black insert with two shaped wells side by side; in each well one strap, band "
+                 "closed in a ring lying flat, shell standing upright at the front facing out, wordmark readable"),
+    "contents": "always exactly two straps -- never one, never three, no other items",
+    "text":     ("no offer text, price, badge or sticker on the box in any prompt -- 'Buy 1 Get 1 Free' is "
+                 "added in the edit (Standards §17)"),
+}
+PACKAGE_LOCK = (
+"A rigid two-piece gift box, a lid over a base, matte black all over, about 28 cm wide, 16 cm deep and 8 cm "
+"tall. The only thing printed on it is the lowercase grey stryde wordmark centred on the lid, in the same bold "
+"rounded lettering and grey as the wordmark on the strap's shell. Inside, a matte-black insert with two shaped "
+"wells side by side holds exactly two identical straps, one in each well, each band closed in a ring lying "
+"flat in its well, each shell standing upright at the front of its well facing out, its wordmark upright and "
+"readable.")
+NEG_PACKAGE = (
+"no text on the box except the stryde wordmark, no offer text, no price, no badge, no sticker, no barcode, no "
+"white box, no coloured box, no glossy box, no window in the lid, no third strap, no single strap in the box, "
+"no loose strap outside the insert, no extra items in the box")
+
+PACKAGE_SCENES = {
+    "closed": ("Product photograph, vertical 9:16, on a plain seamless white background with soft even light "
+               "and a soft grey shadow below, the closed box seen three-quarter from the front and a little "
+               "above so the lid and the wordmark on it read clearly."),
+    "open":   ("Product photograph, vertical 9:16, on a plain seamless white background with soft even light "
+               "and a soft shadow, the box open with its lid leaning against the back of the base, seen from "
+               "the front and above so both straps in the insert read clearly."),
+}
+PACKAGE_ATTACH = ("front.webp", "back.webp")
+
+# Generated V7.49.24, agent verdict USE (§22V); awaiting the user's lock.
+# Model passed nano_banana_pro, logged nano_banana_2 (routing fault).
+PACKAGE_REFS_STATUS = "AGENT USE V7.49.24 -- awaiting user lock"
+PACKAGE_REFS = {
+    "closed": {"file": "stryde_refs/package_closed.jpg", "job_id": "e8c4df4b-ceb4-404f-ac1d-989f2e8b9154",
+               "attempt": "1 of 1", "flags": ""},
+    "open":   {"file": "stryde_refs/package_open.jpg", "job_id": "bea8b220-fc0f-40a7-8670-7499d79013a2",
+               "attempt": "1 of 1",
+               "flags": "the insert reads as a flat black tray rather than two shaped wells"},
+}
+
+
+def package_prompts():
+    """The two box reference T2I prompts (V7.49.24). Nano Banana Pro, 9:16, 2k."""
+    strap = REF_PROD.replace("The product exactly as in the attached reference image",
+                             "Each strap exactly as in the attached product photos")
+    out = {}
+    for k, scene in PACKAGE_SCENES.items():
+        parts = [scene, PACKAGE_LOCK]
+        if k == "open":
+            parts += [strap + " two identical straps.", SIZE_OBJECT]
+        else:
+            parts += ["The box is closed; the straps inside are not visible."]
+        out[k] = " ".join(parts)
+    return out
+
+
 # --- the inner pad (V7.49.23) -----------------------------------------------
 # Read off back.webp. Used on held beats and any view of the inside of the shell.
 # Never the word "silicone" (it renders the soft glossy fake, §10).
@@ -379,6 +474,8 @@ HELD_RULES = ("the hand is on the pad or the shell's edge", "never on the band",
               "never across the wordmark", "the peaks and notch stay visible")
 
 # I2V negatives for held beats (product tail; merges with the Standards' NEG-HELD).
+# "no second strap" is dropped on a pair-pack (Buy 1 Get 1 Free) beat, where two
+# units side by side are required (Standards §9 pair-pack carve-out).
 NEG_HELD_P = (
 "no hand gripping the band, no fingers on the chrome slides, no fingers across the wordmark, no fingers over "
 "the peaks or the notch, no flat palm pressed on the front face, no strap swinging by its band alone, no band "
@@ -921,6 +1018,7 @@ S = {
     "NEG-ADJUST": NEG_ADJUST,
     # V7.49.23
     "NEG-HELD-P": NEG_HELD_P, "NEG-OBSERVED": NEG_OBSERVED,
+    "PACKAGE-LOCK": PACKAGE_LOCK, "NEG-PACKAGE": NEG_PACKAGE,
 }
 
 # ------------------------------------------- measured geometry ratios
@@ -993,6 +1091,14 @@ RULINGS = {
         "worn prompt carries SIZE_WORN, every product-only prompt SIZE_OBJECT, every held prompt "
         "SIZE_HELD. A frame whose shell or band reads more than ~20 percent off its anchor is "
         "REGENERATE Q2.",
+    "side_from_script":
+        "LOCKED V7.49.24 (user): the knee that wears the strap comes from the script (SIDE_RULE, "
+        "side_from_script). No knee named -> right. Left needs left-knee worn references first; a "
+        "right-knee frame is never mirrored.",
+    "package_always_two":
+        "LOCKED V7.49.24 (user): our own box -- matte black, the stryde wordmark on the lid, nothing "
+        "else printed -- and ALWAYS two straps inside, because the offer is always Buy 1 Get 1 Free. "
+        "PACKAGE, PACKAGE_LOCK, NEG_PACKAGE.",
     "held_not_locked":
         "LOCKED V7.49.23 (user): the held pose is NOT locked -- there are many right ways to hold it. "
         "Pick from HELD_GRIPS per beat and vary them across a build; product_held.jpg is one example "
@@ -1676,6 +1782,26 @@ def verify(verbose=False):
     if "composite" in SEAT_REFERENCES:
         fails.append("SEAT_REFERENCES names the missing composite")
 
+    # 8f side from the script; the box always holds two (V7.49.24)
+    for txt, want in (("my left knee has been killing me", "left"), ("the right knee on the stairs", "right"),
+                      ("my knee hurts on the stairs", "right")):
+        if side_from_script(txt)[0] != want:
+            fails.append("side_from_script(%r) != %s" % (txt, want))
+    if "FLAG" not in side_from_script("left knee and right knee")[1]:
+        fails.append("side_from_script does not flag a script naming both knees")
+    if "exactly two" not in PACKAGE_LOCK or "two" not in PACKAGE["contents"]:
+        fails.append("PACKAGE_LOCK lost the always-two rule")
+    if "Buy 1 Get 1 Free" in PACKAGE_LOCK or "Buy 1 Get 1 Free" in "".join(package_prompts().values()):
+        fails.append("offer text must never be generated on the box (§17)")
+    for k, v in PACKAGE_REFS.items():
+        if not os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), v["file"])):
+            fails.append("package ref %s file missing" % k)
+    if "matte black" not in PACKAGE_LOCK or "stryde wordmark" not in PACKAGE_LOCK:
+        fails.append("PACKAGE_LOCK lost the black box or the logo")
+    for k, v in package_prompts().items():
+        if "[" in v:
+            fails.append("package prompt %s left a slot unfilled" % k)
+
     # 9 one mechanism claim, and it is not the retired one
     if MECHANISM_CLAIM != "protection":
         fails.append("mechanism claim is not the locked one")
@@ -1843,7 +1969,8 @@ British, roughly 55–80. Cast to the buyer, balanced across men and women, with
 | Adult patella about 4–5 cm wide; tendon 4–5 cm from inferior pole to tibial tuberosity | 3 | Anatomical anchor, used for scale reasoning only, never as a claim |
 | Clinical placement "just below the kneecap"; one manufacturer specifies about 2 inches below | 3 | Third-party guidance. Compatible with the contact phrasing — the top edge touches the pole while the body covers the upper tendon |
 | 34% strain figure · surgeon recommendations · volume claims | 3 | Generate normally as scripted creative. Verification is separate and only on explicit request; exact readable numerals may be POST-ASSIST |
-| BOGO terms · sixty-day guarantee | — | Unconfirmed by the advertiser. Generate normally as simulated promotional creative; verify exact commercial terms only when explicitly requested |
+| **Buy 1 Get 1 Free — always** | User-confirmed V7.49.24 | Every offer, box and "what's included" beat shows two units (Standards §9 pair-pack carve-out). The offer text is added in the edit, never generated (§17) |
+| Sixty-day guarantee | — | Unconfirmed by the advertiser. Generate normally as simulated promotional creative; verify exact commercial terms only when explicitly requested |
 
 ---
 
@@ -1924,6 +2051,18 @@ A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and
 **The inner pad** (the user's "silicone pad"): plain, smooth, matte black, no markings (`INNER_PAD`, read off `back.webp`). Prompts say "the pad", never "silicone".
 
 **Standing negatives from observed failures** (`NEG-OBSERVED`, dated in `NEG_OBSERVED_LOG`): V-shaped notch · crown or horn peaks · deep U or slab shell · slide on the face or on the band · invented slide frame · sideways chevrons · band out of the shell's bottom edge · product tipped · watch-strap band · buckle-shaped keeper. I2V only.
+
+---
+
+## 16. Which knee, the box and the offer *(V7.49.24 — user rulings)*
+
+**Which knee — from the script** (`SIDE_RULE`, `side_from_script()`): a knee named in the script decides it; no knee named → right, matching the locked worn references. Declared once at the act map and held all build. **A left-knee build needs left-knee worn references first** — a right-knee frame is never mirrored, because the mirror reverses the wordmark.
+
+**The offer — always Buy 1 Get 1 Free** (`OFFER`). So every box, offer and "what's included" beat shows **two** straps side by side (Standards §9 pair-pack carve-out). The offer text is added in the edit, never generated (§17).
+
+**Our box** (`PACKAGE`, `PACKAGE-LOCK`, `NEG-PACKAGE`): a rigid two-piece box, matte black all over, about 28 × 16 × 8 cm. The only print is the lowercase grey stryde wordmark centred on the lid, in the same lettering and grey as the shell. Inside, a matte-black insert holds **exactly two straps** side by side, bands closed, shells up, wordmarks readable. No other items, no text, no stickers. The size is a rendering spec until the real box exists.
+
+**Box references** (`PACKAGE_REFS`, awaiting your lock): `package_closed.jpg` (e8c4df4b) and `package_open.jpg` (bea8b220 — flag: the insert reads as a flat tray, not two shaped wells). For box beats attach the box reference plus `front.webp` + `back.webp`.
 '''
 
 
