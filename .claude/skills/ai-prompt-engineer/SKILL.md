@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.62.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.63.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -53,6 +53,8 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Loom brief (§18C, V7.61.0).** Optional — no Loom, no question. The `LOOM:` link comes beside `DRIVE:`. Run `scripts/fetch_loom.py <BUILD> <link>` (download, timestamped transcript, frames every 5s and at cuts → `loom.md`), read it and the frames, and log each instruction in the ledger as `LMxx`. It never changes a spoken word or overrides a higher layer. Loom vs a written note on the same line: Manual asks; Automatic follows the Loom and flags it. Private Loom → ask for the MP4 in the Drive folder (named `loom`; `fetch_drive.py` sorts it as the Loom, never as an inspo).
 
+**Edit grammar (§42 Part 3A, V7.63.0, both run modes).** Copy how the inspo edits, not just how often it cuts. Read `fetch_inspo.py`'s shot frames and per-second contact sheets (a split-screen or PiP appearing over a held shot is not a scene cut) and log every device as `EGxx`: B-roll layout (`full` · `split` band + ratio · `pip` box, which is inside, corner, size · `cutout` · `card`), punch-ins, transitions, speed ramps, caption style, text overlays, SFX. Compile `EDIT-[BUILD]` (style axis — wins over house defaults, never over compliance). Step 5: every B-roll row gets its `layout` by the reference's own rule; §35: frame non-full B-roll for its crop; `assemble.py` renders `full`/`split`/`pip`/punch-ins; everything else is a CapCut line with its `EG` ID.
+
 **Placement & no holes (§30H). B-roll starts on its phrase's first word (script-aligned timing); joins are frame-exact; no talking-head flicker under 1.5s between B-rolls; voice-only builds have no uncovered frame; no B-roll under 0.8s. `scripts/assemble.py` places, fixes, renders and verifies the rough cut; CapCut finishes it.
 
 **Hook variants (§30H).** The output is **one finished video per hook**: HK1 + body, HK2 + body, HK3 + body — three when you write the hooks, else as many as the script has. Each hook voiced separately, the body voiced once and reused. `scripts/variants.py` builds every variant as one timeline (no holes across the seam), keeps the body's cuts identical in every variant, and checks each duration = hook + body.
@@ -72,14 +74,14 @@ Where a script line contradicts a product spec or visual standard, the render fo
 - `scripts/voice_source.py` — steps 3–5: trim → ×1.2 → loop to ≥30s → `<Keyword>_clone_source.mp3`
 - `scripts/script_lines.py` — §22U step 8: spoken lines only, verbatim; reports every dropped line (title, headings, links, visual notes); `--visual` writes the §27F ledger's `VNxx` rows; reads `.docx` tables (two-column VO | VISUAL scripts) and cuts speaker labels (`VO:`, `SARAH:`) — never voiced
 - `scripts/tts_budget.py` — verbatim lock with `--script-lines`; steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags
-- `scripts/assemble.py` — §30H: place B-roll on its lines, close flickers and holes, render + verify the rough cut
+- `scripts/assemble.py` — §30H: place B-roll on its lines, close flickers and holes, render + verify the rough cut; per-B-roll `layout` (`full`, `split`, `pip`) and `punch_in` from `EDIT-[BUILD]`
 - `scripts/variants.py` — §30H hook variants: `<BUILD>_HK1.mp4` … each hook + the identical body, set-checked
 - `scripts/contact_sheet.py` — §22W: one image per clip (first → last frame), frozen/black runs, `--full` for zoom
 - `scripts/trim.py` — E11 trim pass (never on a §24I film voice master)
 - `scripts/kie.py` — Kie AI API (§5): `credit`, `upload` (public URL), `image` (fallback), `seedance` (720p, 9:16, ingredients, stated duration), `wait`
 - `scripts/fetch_drive.py` — §18B Drive intake: downloads the shared folder, sorts inspo / script / product sheet / images, extracts document text, measures the inspo
 - `scripts/fetch_loom.py` — §18C: downloads the Loom brief, transcribes it with timestamps, saves frames → `builds/<BUILD>/intake/loom/loom.md` (`LMxx` rows)
-- `scripts/fetch_inspo.py` — §18B/§42 Part 1: downloads INSPO links into `builds/<BUILD>/intake/` and measures duration, aspect, shots, cuts, silences. YouTube returns 403 from the cloud — ask for the file instead
+- `scripts/fetch_inspo.py` — §18B/§42 Part 1: downloads INSPO links into `builds/<BUILD>/intake/` and measures duration, aspect, shots, cuts, silences; saves two frames per shot and per-second contact sheets for the Edit Grammar (§42 Part 3A). YouTube returns 403 from the cloud — ask for the file instead
 - `references/eleven_v3_tags.json` — the full Eleven v3 tag library (1,806 tags); `TAG-PALETTE` in §22U is the default subset
 
 Setup per session: `pip install -q imageio-ffmpeg faster-whisper yt-dlp gdown python-docx pypdf cffi`. In Manual, run these on a clip the user supplies and deliver every other step as copy-ready text and settings.
@@ -215,7 +217,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 41. Prompt Length Rule
 
 **BLOCK 9 — GOVERNANCE**
-- 42. Reference Video Absorption *(rebuilt this cycle — seven parts, in order, none skipped)*
+- 42. Reference Video Absorption *(rebuilt this cycle — seven parts, in order, none skipped; Part 3A Edit Grammar new V7.63.0)*
 - 43. Declined Executions
 - 43A. Claim Substantiation *(amended V7.48.2)*
 - 44. Locked Defaults *(overridable — say so and they change)*
@@ -280,6 +282,8 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 **PENDING AMENDMENTS**
 
 **OPEN DECISIONS**
+
+**CHANGELOG — V7.62.0 → V7.63.0 *(cut authorised)***
 
 **CHANGELOG — V7.61.1 → V7.62.0 *(cut authorised)***
 

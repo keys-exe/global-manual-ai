@@ -14,8 +14,27 @@ PLAN.json:
   "base":  "th/talking_heads.mp4" | null,     # talking-head track aligned to the master;
                                               # null = voice-only build: every frame must be B-roll
   "broll": [ {"beat": "BR-01", "clip": "renders/BR-01.mp4",
-              "phrase": "seventeen times your bodyweight", "in": 0.0}, ... ]
+              "phrase": "seventeen times your bodyweight", "in": 0.0,
+              "layout": {"type": "full"}}, ... ],     # optional, default full (§42 Part 3A)
+  "punch_in": [ {"phrase": "and that's when", "scale": 1.15}, ... ],   # optional
+  "th_focus_y": 0.4                            # optional: face height in the TH frame (0-1)
 }
+
+Layouts (the inspo's edit grammar, EDIT-[BUILD], §42 Part 3A / §30H):
+  {"type": "full"}                              B-roll fills the frame (default)
+  {"type": "split", "broll_pos": "top"|"bottom", "ratio": 0.5}
+                                                B-roll in one band (ratio of the height,
+                                                0.3-0.7), talking head in the other,
+                                                cropped around th_focus_y
+  {"type": "pip", "over": "th"|"broll", "corner": "tl"|"tr"|"bl"|"br",
+   "scale": 0.35, "border": 0}                  over "th": B-roll box over the talking
+                                                head; over "broll": talking-head box over
+                                                the B-roll. scale = box width / frame width
+                                                (0.2-0.5), border in px (white)
+  split and pip need a talking-head track (base); in a voice-only build they FAIL.
+Punch-ins: the talking head cuts in to `scale` (1.05-1.5) on the phrase's first word
+and holds until the next B-roll or the next punch-in (scale 1.0 = punch back out).
+A punch-in landing under a B-roll is reported and ignored.
 
 Rules (§30H):
   1. PLACE   each B-roll starts on the first word of its phrase (word timestamps of
@@ -47,6 +66,35 @@ FF = imageio_ffmpeg.get_ffmpeg_exe()
 FPS = 30
 MIN_SLOW = 0.8
 MIN_FLASH = 0.8
+W, H = 1080, 1920
+CORNER_MARGIN = 48
+
+
+def even(x):
+    return int(round(x / 2.0)) * 2
+
+
+def check_layout(b, has_base):
+    """Normalise a B-roll's layout; return (layout, error)."""
+    lay = dict(b.get("layout") or {"type": "full"})
+    t = lay.get("type", "full")
+    if t == "full":
+        return {"type": "full"}, None
+    if not has_base:
+        return lay, f"layout {t} needs a talking-head track; this build is voice-only"
+    if t == "split":
+        lay.setdefault("broll_pos", "top"); lay.setdefault("ratio", 0.5)
+        if lay["broll_pos"] not in ("top", "bottom") or not 0.3 <= lay["ratio"] <= 0.7:
+            return lay, "split needs broll_pos top|bottom and ratio 0.3-0.7"
+        return lay, None
+    if t == "pip":
+        lay.setdefault("over", "th"); lay.setdefault("corner", "tr")
+        lay.setdefault("scale", 0.35); lay.setdefault("border", 0)
+        if lay["over"] not in ("th", "broll") or lay["corner"] not in ("tl", "tr", "bl", "br") \
+                or not 0.2 <= lay["scale"] <= 0.5:
+            return lay, "pip needs over th|broll, corner tl|tr|bl|br and scale 0.2-0.5"
+        return lay, None
+    return lay, f"unknown layout type {t!r}"
 
 
 def norm(t):
@@ -166,7 +214,10 @@ def main():
         i, j = hit
         cursor = i + 1
         clip = root / b["clip"]
-        edl.append({"beat": b["beat"], "clip": str(clip), "phrase": b["phrase"],
+        lay, lerr = check_layout(b, base is not None)
+        if lerr:
+            fails.append({"beat": b["beat"], "fail": "LAYOUT_INVALID", "detail": lerr})
+        edl.append({"beat": b["beat"], "clip": str(clip), "phrase": b["phrase"], "layout": lay,
                     "start": snap(ws[i][0]), "line_end": snap(line_end(ws, j)),
                     "in": b.get("in", 0.0), "clip_len": duration(clip), "speed": 1.0})
     edl.sort(key=lambda e: e["start"])
@@ -210,45 +261,115 @@ def main():
             fails.append({"beat": e["beat"], "fail": "FLASH", "detail": f"on screen {e['end']-e['start']:.2f}s < {MIN_FLASH}s"})
 
     # timeline segments
-    segs, t = [], 0.0
+    raw, t = [], 0.0
     for e in edl:
         if e["start"] - t > 1e-3:
-            segs.append({"kind": "TH" if base else "HOLE", "start": t, "end": e["start"]})
-        segs.append({"kind": "BR", "beat": e["beat"], "start": e["start"], "end": e["end"]})
+            raw.append({"kind": "TH" if base else "HOLE", "start": t, "end": e["start"]})
+        raw.append({"kind": "BR", "beat": e["beat"], "layout": e["layout"]["type"], "start": e["start"], "end": e["end"]})
         t = e["end"]
     if total - t > 1e-3:
-        segs.append({"kind": "TH" if base else "HOLE", "start": t, "end": total})
-    for s in segs:
+        raw.append({"kind": "TH" if base else "HOLE", "start": t, "end": total})
+    for s in raw:
         if s["kind"] == "TH" and s["end"] - s["start"] < a.min_th and 0 < s["start"] and s["end"] < total:
             fails.append({"fail": "FLICKER_REMAINS", "detail": f"TH {s['start']:.2f}–{s['end']:.2f}s"})
         if s["kind"] == "HOLE":
             fails.append({"fail": "HOLE_REMAINS", "detail": f"{s['start']:.2f}–{s['end']:.2f}s"})
 
+    # punch-ins: split talking-head runs at each punch; the zoom holds until the next
+    # B-roll or the next punch-in
+    punches, pc = [], 0
+    for p in plan.get("punch_in", []):
+        hit = find_phrase(ws, p["phrase"], pc)
+        sc = float(p.get("scale", 1.15))
+        if not hit:
+            fails.append({"fail": "PUNCH_PHRASE_NOT_FOUND", "phrase": p["phrase"]}); continue
+        if not (sc == 1.0 or 1.05 <= sc <= 1.5):
+            fails.append({"fail": "PUNCH_SCALE", "phrase": p["phrase"], "detail": "scale 1.0 or 1.05-1.5"}); continue
+        pc = hit[0] + 1
+        punches.append((snap(ws[hit[0]][0]), sc, p["phrase"]))
+    warnings = []
+    if punches and base is None:
+        fails.append({"fail": "PUNCH_NEEDS_TH", "detail": "punch-ins need a talking-head track"})
+    segs = []
+    for s in raw:
+        if s["kind"] != "TH":
+            segs.append(s); continue
+        cuts_at = [(pt, sc) for pt, sc, _ in punches if s["start"] - 1e-3 <= pt < s["end"] - 1e-3]
+        t0, zoom = s["start"], 1.0
+        for pt, sc in cuts_at:
+            if pt - t0 > 1e-3:
+                segs.append({"kind": "TH", "start": t0, "end": pt, "zoom": zoom})
+            t0, zoom = max(pt, t0), sc
+        segs.append({"kind": "TH", "start": t0, "end": s["end"], "zoom": zoom})
+    for pt, sc, ph in punches:
+        if any(s["kind"] == "BR" and s["start"] + 1e-3 < pt < s["end"] - 1e-3 for s in raw):
+            warnings.append({"punch": ph, "warning": f"lands under a B-roll at {pt:.2f}s — ignored"})
+
     report = {"master_s": round(total, 3), "min_th_s": a.min_th, "edl": edl,
               "timeline": [{k: (round(v, 3) if isinstance(v, float) else v) for k, v in s.items()} for s in segs],
-              "fixes": fixes, "failures": fails}
+              "fixes": fixes, "warnings": warnings, "failures": fails}
     if fails or a.dry_run:
         report["status"] = "FAIL" if fails else "PLANNED"
         print(json.dumps(report, indent=2)); sys.exit(2 if fails else 0)
 
     # render: concat of segments, master audio only
     out = Path(a.out) if a.out else root / "rough_cut.mp4"
+    focus = float(plan.get("th_focus_y", 0.4))
+    V = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps=30,setsar=1"
+    END = ",setsar=1,format=yuv420p"
     inputs, parts = [], []
-    V = "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,setsar=1"
+
+    def add(path):
+        """Register an input file; return its ffmpeg input index."""
+        inputs.extend(["-i", str(path)])
+        return len(inputs) // 2 - 1
+
+    def th_chain(idx, s0, s1):
+        return f"[{idx}:v]trim={s0}:{s1},setpts=PTS-STARTPTS,{V}"
+
+    def br_chain(e, dur, w, h):
+        src_len = dur * e["speed"]
+        fit = f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps=30,setsar=1"
+        return (f"[{add(e['clip'])}:v]trim={e['in']}:{e['in'] + src_len},setpts=(PTS-STARTPTS)/{e['speed']},"
+                f"{fit},trim=0:{dur},setpts=PTS-STARTPTS")
+
     for n, s in enumerate(segs):
+        dur = s["end"] - s["start"]
         if s["kind"] == "TH":
-            inputs += ["-i", str(base)]
-            parts.append(f"[{n}:v]trim={s['start']}:{s['end']},setpts=PTS-STARTPTS,{V}[s{n}]")
-        else:
-            e = next(x for x in edl if x["beat"] == s["beat"])
-            src_len = (s["end"] - s["start"]) * e["speed"]
-            inputs += ["-i", e["clip"]]
-            parts.append(f"[{n}:v]trim={e['in']}:{e['in'] + src_len},setpts=(PTS-STARTPTS)/{e['speed']},{V},"
-                         f"trim=0:{s['end'] - s['start']}[s{n}]")
-    inputs += ["-i", str(audio)]
+            z = s.get("zoom", 1.0)
+            zoom = "" if z == 1.0 else (f",scale=trunc(iw*{z}/2)*2:trunc(ih*{z}/2)*2,"
+                                        f"crop={W}:{H}:(in_w-{W})/2:(in_h-{H})*{focus}")  # the face point holds still
+            parts.append(f"{th_chain(add(base), s['start'], s['end'])}{zoom}{END}[s{n}]")
+            continue
+        e = next(x for x in edl if x["beat"] == s["beat"])
+        lay = e["layout"]
+        if lay["type"] == "full":
+            parts.append(f"{br_chain(e, dur, W, H)}{END}[s{n}]")
+        elif lay["type"] == "split":
+            hb = even(H * lay["ratio"]); ht = H - hb
+            y = even(min(max(H * focus - ht / 2, 0), H - ht))
+            parts.append(f"{br_chain(e, dur, W, hb)}[b{n}]")
+            parts.append(f"{th_chain(add(base), s['start'], s['end'])},crop={W}:{ht}:0:{y}[t{n}]")
+            order = f"[b{n}][t{n}]" if lay["broll_pos"] == "top" else f"[t{n}][b{n}]"
+            parts.append(f"{order}vstack=inputs=2{END}[s{n}]")
+        else:  # pip
+            bw = even(W * lay["scale"]); bh = even(bw * 16 / 9); bd = int(lay.get("border", 0))
+            fw, fh = bw + 2 * bd, bh + 2 * bd
+            x = CORNER_MARGIN if lay["corner"] in ("tl", "bl") else W - fw - CORNER_MARGIN
+            y = CORNER_MARGIN * 3 if lay["corner"] in ("tl", "tr") else H - fh - CORNER_MARGIN * 6
+            box = f",pad={fw}:{fh}:{bd}:{bd}:white" if bd else ""
+            if lay["over"] == "th":
+                parts.append(f"{th_chain(add(base), s['start'], s['end'])}[g{n}]")
+                parts.append(f"{br_chain(e, dur, bw, bh)}{box}[f{n}]")
+            else:
+                parts.append(f"{br_chain(e, dur, W, H)}[g{n}]")
+                th_box = f"scale={bw}:{bh}:force_original_aspect_ratio=increase,crop={bw}:{bh}"
+                parts.append(f"{th_chain(add(base), s['start'], s['end'])},{th_box}{box}[f{n}]")
+            parts.append(f"[g{n}][f{n}]overlay={x}:{y}:shortest=1{END}[s{n}]")
+    aidx = add(audio)
     graph = ";".join(parts) + ";" + "".join(f"[s{n}]" for n in range(len(segs))) + f"concat=n={len(segs)}:v=1:a=0[v]"
     subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", *inputs, "-filter_complex", graph,
-                    "-map", "[v]", "-map", f"{len(segs)}:a", "-c:v", "libx264", "-crf", "18",
+                    "-map", "[v]", "-map", f"{aidx}:a", "-c:v", "libx264", "-crf", "18",
                     "-c:a", "aac", "-b:a", "192k", "-shortest", str(out)], check=True)
 
     # verify
