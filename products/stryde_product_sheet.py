@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.27
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.28
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -21,6 +21,8 @@ product; it carries everything that step needs.
     observed failures ........... NEG_OBSERVED (V7.49.23)
     which knee .................. SIDE_RULE, side_from_script() (V7.49.24)
     the box and the offer ....... PACKAGE, OFFER, package_prompts() (V7.49.24)
+    the cheap copy .............. FAKE_BASE, FAKE_ARCHETYPES, NEG_FAKE_HERO (V7.49.28)
+    the back of the pad ......... PAD_BACK_SHOT (V7.49.28)
     the V7.49.4 pattern fills ... HOLD_PC, HOLD_PROD, NEG_WARP_P, WEAR_*,
                                   REAR_VIEW_SPEC, DEMONSTRATION_TABLE, ...
                                   (content moved OUT of the Standards)
@@ -67,7 +69,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.27"
+VERSION = "7.49.28"
 
 # --------------------------------------------------------------- slots
 
@@ -451,6 +453,45 @@ def package_prompts():
         out[k] = " ".join(parts)
     return out
 
+
+# --- the cheap copy (V7.49.28, user: "looks alike STRYDE but looks cheap and
+# easy to get damaged") --------------------------------------------------------
+# Standards §10: a near-copy of the hero silhouette, visibly cheaper, no wordmark,
+# in a real home (never on white). FAKE_BASE is on EVERY copy; one archetype from
+# FAKE_ARCHETYPES is added per build and never reused in that build. A knock-off
+# may be damaged or break (Standards §27E / §9C SIDE-BY-SIDE); the hero never does.
+FAKE_BASE = (
+"A cheap copy of the strap: at a glance the same shape -- a shell with two peaks and a notch, a band, a "
+"fastening at each end -- but everything about it is cheaper and already worn. The shell is thin shiny "
+"black plastic with no wordmark, its peaks rounded and soft, scuffed and scratched across the face, a small "
+"crack running in from one edge; the band is a thin flat shiny nylon strap with frayed edges and loose "
+"threads; the fastenings are thin black plastic buckles instead of chrome, one of them chipped. It looks "
+"like it came in a plastic bag and has been worn a few times too many.")
+FAKE_ARCHETYPES = (
+    ("too small", "the whole copy visibly undersized -- a narrow shell that covers only a small patch below "
+     "the kneecap and never reaches the sides of the knee (the script line 'too small to reach it')"),
+    ("soft silicone", "the shell is soft floppy glossy silicone that sags and folds instead of holding its shape"),
+    ("wide webbing", "a wide stiff flat nylon webbing band with a velcro tab, fraying at the cut end"),
+    ("thick and proud", "a bulky thick shell that sits proud of the leg with a gap at its edges"),
+    ("blue gel", "a blue gel pad showing at the inside edge of the shell (cheap-silicone archetype only)"),
+    ("breaking", "the copy failing on camera: the band's stitching splitting or the shell snapping at the "
+     "crack when it is flexed -- SIDE-BY-SIDE only, the hero next to it never gives"),
+)
+NEG_FAKE_HERO = (
+"no wordmark on the copy, no chrome on the copy, no copy with a different silhouette, no copy on a white "
+"background, no copy in a shop, no damage on the hero strap, no crack in the hero shell, no fraying on the "
+"hero band")
+
+# --- the back of the pad (V7.49.28, user: "inside a silicone pad -- it should be
+# the back of the silicone pad") ------------------------------------------------
+# The script line about the pad is covered by the BACK of the shell -- the inner
+# pad turned to the lens -- never by the front. Then the mechanism shot.
+PAD_BACK_SHOT = (
+"The strap turned round so the back of the shell faces the camera: the inside of the shell, the pad that "
+"sits against the skin, fills the frame -- a plain, smooth, matte-black pad following the shell's curve, "
+"with no markings, no texture pattern and no second colour -- the two peaks rising along its top edge, a "
+"chrome slide at each end, the band running away from the slides behind it. No wordmark is visible from "
+"this side.")
 
 # --- the inner pad (V7.49.23) -----------------------------------------------
 # Read off back.webp. Used on held beats and any view of the inside of the shell.
@@ -1035,6 +1076,7 @@ S = {
     "NEG-ADJUST": NEG_ADJUST,
     # V7.49.23
     "NEG-HELD-P": NEG_HELD_P, "NEG-OBSERVED": NEG_OBSERVED,
+    "FAKE-BASE": FAKE_BASE, "NEG-FAKE-HERO": NEG_FAKE_HERO, "PAD-BACK-SHOT": PAD_BACK_SHOT,
     "PACKAGE-LOCK": PACKAGE_LOCK, "NEG-PACKAGE": NEG_PACKAGE,
 }
 
@@ -1121,6 +1163,13 @@ RULINGS = {
         "not held up, the strap lies flat -- in the box, on a surface -- the band relaxed in a "
         "flattened loop. Only the studio product views (after the supplied photos) show the ring "
         "standing open.",
+    "fake_cheap_and_damaged":
+        "LOCKED V7.49.28 (user): the cheap copy looks like STRYDE at a glance but cheap and easily "
+        "damaged -- FAKE_BASE on every copy (thin shiny plastic, scuffs, a crack, frayed thin nylon, "
+        "plastic buckles, no wordmark), plus one FAKE_ARCHETYPES entry per build, never reused.",
+    "pad_line_shows_back":
+        "LOCKED V7.49.28 (user): a line about the pad inside ('Inside, a silicone pad...') is covered "
+        "by the BACK of the shell turned to the lens (PAD_BACK_SHOT), then the mechanism.",
     "held_not_locked":
         "LOCKED V7.49.23 (user): the held pose is NOT locked -- there are many right ways to hold it. "
         "Pick from HELD_GRIPS per beat and vary them across a build; product_held.jpg is one example "
@@ -1831,6 +1880,20 @@ def verify(verbose=False):
         if "[" in v:
             fails.append("package prompt %s left a slot unfilled" % k)
 
+    # 8g the cheap copy and the pad-back shot (V7.49.28)
+    for frag in ("no wordmark", "scuffed", "frayed", "plastic buckles", "crack"):
+        if frag not in FAKE_BASE:
+            fails.append("FAKE_BASE missing: %s" % frag)
+    if "chrome" in FAKE_BASE.split("instead of")[0].split("fastenings")[-1]:
+        fails.append("FAKE_BASE gives the copy chrome")
+    if not any(n == "too small" for n, _ in FAKE_ARCHETYPES):
+        fails.append("FAKE_ARCHETYPES lost the undersized copy the script needs")
+    if "back of the shell" not in PAD_BACK_SHOT or "silicone" in PAD_BACK_SHOT.lower():
+        fails.append("PAD_BACK_SHOT must show the back and never say silicone")
+    for clause in ("no damage on the hero strap", "no wordmark on the copy"):
+        if clause not in NEG_FAKE_HERO:
+            fails.append("NEG_FAKE_HERO missing: %s" % clause)
+
     # 9 one mechanism claim, and it is not the retired one
     if MECHANISM_CLAIM != "protection":
         fails.append("mechanism claim is not the locked one")
@@ -1980,6 +2043,8 @@ Register: anatomical (§12A-1). Slots: `[REGION]` knee · `[STACK]` quadriceps, 
 ---
 
 ## 7. Competitor archetypes (§10)
+
+**V7.49.28 (user): the copy looks like STRYDE at a glance but cheap and easily damaged.** Every copy carries `FAKE-BASE` — thin shiny plastic shell, no wordmark, soft rounded peaks, scuffs and a crack, a thin frayed nylon band, cheap plastic buckles instead of chrome. On top, **one** archetype per build from `FAKE_ARCHETYPES` (too small · soft silicone · wide webbing · thick and proud · blue gel · breaking), never reused in that build. Always in a real home, never on white. The hero is never damaged (`NEG-FAKE-HERO`).
 
 Degraded near-copies of the same silhouette, never different products. One signifier per archetype, never repeated across a build (symmetric peaks are no longer a fake signifier -- the hero's are symmetric): · rounded mushy peaks · shallow vague notch · soft glossy silicone · wide flat nylon webbing · black plastic hardware · thicker and sitting proud. Blank shells, no wordmarks ever. Blue gel pad on the cheap-silicone archetype only.
 
