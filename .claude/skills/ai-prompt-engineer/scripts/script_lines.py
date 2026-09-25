@@ -15,6 +15,13 @@ Drops only what is never spoken:
     MUSIC / NOTE / EDITOR / CAPTION / SUPER
   - inline [bracketed] notes inside a spoken line (square brackets are never
     spoken): cut out of the line, the rest of the line kept word for word
+  - speaker labels at the start of a spoken line (VO:, V.O.:, NARRATOR:, SARAH:,
+    DR. LEE: ...): cut off, the rest of the line kept word for word
+.docx tables are read in document order (V7.61.1). A table whose header row names a
+voice column (VO, Voiceover, Voice, Audio, Script, Dialogue, Narration, Copy) and a
+visual column (Visual, B-roll, Shot, Scene, Video, On screen, Direction, Notes) is a
+two-column script: each row's visual cell becomes a VISUAL note anchored to that
+row's spoken line. Any other table is read cell by cell, row by row.
 Prints JSON: the kept lines, and every dropped line with the reason, so nothing
 leaves the script silently.
 
@@ -31,16 +38,64 @@ NOTE_PREFIX = re.compile(r"^\s*(visual|visuals|b-?roll|shot|scene|on[- ]screen|t
                          r"editor|caption|super|overlay)\b\s*[:\-–]", re.I)
 REF_PREFIX = re.compile(r"^\s*(reference|ref|link|source|inspo)\s*[:\-–]", re.I)
 URL = re.compile(r"https?://|www\.", re.I)
+SPEAKER = re.compile(r"^\s*((?:V\.?O\.?|VOICE[- ]?OVER|NARRATOR|NARRATION|ANNCR|ANNOUNCER|"
+                     r"[A-Z][A-Z.'\-]*(?: [A-Z][A-Z.'\-]*){0,2})(?:\s*\([^)]*\))?)\s*:\s+(?=\S)")
+VOICE_COL = re.compile(r"^\s*(vo|v\.o\.?|voice[- ]?over|voice|audio|script|dialogue|narration|copy|spoken)\b", re.I)
+VISUAL_COL = re.compile(r"^\s*(visuals?|b-?roll|shots?|scenes?|video|on[- ]screen|directions?|notes?|images?)\b", re.I)
 INLINE = re.compile(r"\s*\[[^\]]*\]\s*")
 VISUAL = {"visual/editor note", "bracketed direction"}
+
+
+def docx_lines(path):
+    """Every paragraph and table of a .docx, in document order (tables were skipped before V7.61.1)."""
+    import docx
+    from docx.table import Table
+    from docx.text.paragraph import Paragraph
+    d = docx.Document(str(path))
+    out = []
+    for el in d.element.body.iterchildren():
+        tag = el.tag.rsplit("}", 1)[-1]
+        if tag == "p":
+            out.append(Paragraph(el, d).text)
+        elif tag == "tbl":
+            out += table_lines(Table(el, d))
+    return out
+
+
+def cell_lines(cell):
+    return [t.strip() for t in cell.text.splitlines() if t.strip()]
+
+
+def table_lines(t):
+    rows = [[c for c in r.cells] for r in t.rows]
+    if not rows:
+        return []
+    head = [c.text.strip() for c in rows[0]]
+    vo = next((i for i, h in enumerate(head) if VOICE_COL.match(h)), None)
+    vis = next((i for i, h in enumerate(head) if VISUAL_COL.match(h) and i != vo), None)
+    out = []
+    if vo is not None and vis is not None:  # two-column script: visual cell anchors to its row
+        for r in rows[1:]:
+            out += [f"VISUAL: {x}" for x in cell_lines(r[vis])] if vis < len(r) else []
+            out += cell_lines(r[vo]) if vo < len(r) else []
+        return out
+    for r in rows:
+        seen, row = set(), []
+        for c in r:
+            if id(c._tc) in seen:  # merged cells repeat
+                continue
+            seen.add(id(c._tc))
+            row += cell_lines(c)
+        # a note in a row belongs to that row's spoken line: notes first, then the line
+        out += [x for x in row if classify(x)] + [x for x in row if not classify(x)]
+    return out
 
 
 def read(path):
     p = Path(path)
     ext = p.suffix.lower()
     if ext == ".docx":
-        import docx
-        return [para.text for para in docx.Document(str(p)).paragraphs]
+        return docx_lines(p)
     if ext == ".pdf":
         from pypdf import PdfReader
         return "\n".join((pg.extract_text() or "") for pg in PdfReader(str(p)).pages).splitlines()
@@ -94,6 +149,10 @@ def main():
             if not s:
                 pending += [{"line": n, "text": t, "kind": "bracketed direction"} for t in inline]
                 continue
+        m = SPEAKER.match(s)
+        if m and m.group(1).upper() not in {"VISUAL", "NOTE", "TEXT"}:
+            dropped.append({"line": n, "text": m.group(1), "reason": "speaker label"})
+            s = s[m.end():].strip()
         kept.append(s)
         for p in pending:
             notes.append({**p, "applies_to": len(kept), "spoken": s})

@@ -6,6 +6,8 @@ Usage:
 
 Downloads the folder (shared "Anyone with the link — Viewer") into
 builds/<BUILD>/intake/, then sorts every file by name and type:
+  video named *loom*                    -> loom    (§18C Loom brief, read by fetch_loom.py —
+                                                     never measured as an inspo)
   video (.mp4 .mov .webm .m4v)          -> inspo   (a name containing "inspo" is primary;
                                                      else the first alphabetically)
   document named *script*               -> script
@@ -13,7 +15,10 @@ builds/<BUILD>/intake/, then sorts every file by name and type:
   image (.jpg .jpeg .png .webp .heic)   -> product_images
   anything else                         -> unsorted (reported, never guessed)
 Documents (.txt .md .docx .pdf) are converted to .txt beside the original.
-Then runs fetch_inspo.py on the inspo videos for the §42 Part 1 measurements.
+Then runs fetch_inspo.py on the inspo videos for the §42 Part 1 measurements, and
+fetch_loom.py on a Loom MP4 when there is one (optional — never reported missing).
+.docx tables are read in document order (script_lines.docx_lines), so a two-column
+VO | VISUAL script is no longer extracted as empty.
 Prints a JSON report. Exit 0 = every required part found, 2 = something missing.
 
 Setup (per session): pip install -q gdown python-docx pypdf imageio-ffmpeg yt-dlp
@@ -33,8 +38,9 @@ def to_text(path):
     if ext in {".txt", ".md"}:
         return path.read_text(encoding="utf-8", errors="replace")
     if ext == ".docx":
-        import docx
-        return "\n".join(p.text for p in docx.Document(str(path)).paragraphs)
+        sys.path.insert(0, str(HERE))
+        from script_lines import docx_lines
+        return "\n".join(docx_lines(path))
     if ext == ".pdf":
         from pypdf import PdfReader
         return "\n".join((pg.extract_text() or "") for pg in PdfReader(str(path)).pages)
@@ -57,10 +63,12 @@ def main():
         sys.exit(2)
 
     files = sorted(p for p in dest.rglob("*") if p.is_file() and not p.name.endswith(".extracted.txt"))
-    sorted_ = {"inspo": [], "script": [], "product_sheet": [], "product_images": [], "unsorted": []}
+    sorted_ = {"loom": [], "inspo": [], "script": [], "product_sheet": [], "product_images": [], "unsorted": []}
     for p in files:
         name, ext = p.stem.lower(), p.suffix.lower()
-        if ext in VIDEO:
+        if ext in VIDEO and "loom" in name:
+            sorted_["loom"].append(p)
+        elif ext in VIDEO:
             sorted_["inspo"].append(p)
         elif ext in IMAGE:
             sorted_["product_images"].append(p)
@@ -96,6 +104,12 @@ def main():
                             *[str(p) for p in sorted_["inspo"]]], capture_output=True, text=True)
         measures = json.loads(m.stdout) if m.stdout.strip() else [{"error": m.stderr[-400:]}]
 
+    loom = None
+    if sorted_["loom"]:
+        m = subprocess.run([sys.executable, str(HERE / "fetch_loom.py"), build, str(sorted_["loom"][0])],
+                           capture_output=True, text=True)
+        loom = json.loads(m.stdout) if m.stdout.strip() else {"status": "FAILED", "error": m.stderr[-400:]}
+
     missing = [k for k in ("inspo", "script", "product_sheet", "product_images") if not sorted_[k]]
     unreadable = [k for k, v in texts.items() if v["chars"] == 0]
     report = {
@@ -107,6 +121,7 @@ def main():
         "primary_inspo": str(sorted_["inspo"][0]) if sorted_["inspo"] else None,
         "documents": texts,
         "inspo_measurements": measures,
+        "loom": loom,  # None = no Loom in the folder (optional, §18C)
     }
     print(json.dumps(report, indent=2))
     sys.exit(0 if report["status"] == "OK" else 2)
