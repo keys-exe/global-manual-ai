@@ -20,13 +20,19 @@ DRIVE:
 BUILD: 
 MODE: 1 Realistic | 2 3D Pixar | 3 Claymation | 4 Realistic Film | 5 Pixar Film
 RUN: MANUAL | AUTOMATION
+VOICE: e.g. British, female, 50s, warm and plain-spoken
+HOOKS: 3 | in script
+CAP: e.g. 3000 Higgsfield, 2000 Kling, 20000 Kie
+ADJUST:
+- 
+- 
 FORMAT: 
 TOOLS: 
 CAST NOTES: 
 NOTES: 
 ```
 
-DRIVE, BUILD and MODE are required. Leave the rest blank to use the defaults (RUN blank = Manual).
+DRIVE, BUILD and MODE are required. Leave the rest blank to use the defaults (RUN blank = Manual, HOOKS blank = 3). With CAP filled in, the run never asks about credits. Each ADJUST line is applied and recorded. One that conflicts with the product sheet or product images is flagged, not applied.
 
 ---
 

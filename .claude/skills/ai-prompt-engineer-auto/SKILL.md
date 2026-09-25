@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer-auto
-description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.60.1, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
+description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.60.2, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
 ---
 
 # AI Prompt Engineer — Automatic run mode
@@ -16,7 +16,7 @@ Grep  pattern="^## (E(0|1|2|3|7|9|11)|5|18B|22U|22V|22W|24I|30H)\."  path="stand
 ## 1. Start of run — before any credit is spent
 
 1. **Confirm the trigger** in one line: "Automatic run for build `<name>`." An Intake Pack with `RUN: AUTOMATION` is the trigger (§18B).
-2. **Credit cap.** Take the user's per-build cap; if none was given, ask once. Read all three balances and record them: Higgsfield `balance`, Kling `query_membership_and_credits`, Kie `python3 .claude/skills/ai-prompt-engineer/scripts/kie.py credit`.
+2. **Credit cap.** Take `CAP` from the intake message; only if it is absent, ask once. Apply `VOICE` as the narrator's `VOICE-[CHAR]`, `HOOKS` as the hook count, and every `ADJUST` line (recorded in the Build Sheet; conflicts with higher authority flagged in the steps 1–5 delivery). Read all three balances and record them: Higgsfield `balance`, Kling `query_membership_and_credits`, Kie `python3 .claude/skills/ai-prompt-engineer/scripts/kie.py credit`.
    **Routing is strict (§5):** images → Higgsfield (below the batch cost → Kie API `kie.py image`, same model as locked, logged, no switch back); Kling → Kling connector; Seedance → Kie API `kie.py seedance` (local refs auto-uploaded to temporary public URLs). Kling or Kie out of credits = stop.
 3. **Build directory** `builds/<build>/` per E9, with `run_ledger.json` (E3) and `renders/` and `trim/` folders. Media stays out of git (`.gitignore` covers it). **Drive output (§18B):** create or reuse `<task folder>/OUTPUT/` with `01_ABSORPTION` … `08_EDIT` and `OUTPUT.md`; record the IDs in `builds/<build>/drive.json`. Text uploads through the Google Drive connector; media are indexed in `OUTPUT.md` by platform link.
 4. **Tool setup** — the container is ephemeral, so install every session:

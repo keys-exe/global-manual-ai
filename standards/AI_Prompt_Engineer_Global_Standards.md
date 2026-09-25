@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.60.1 — supersedes all prior versions.** *(hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.60.2 — supersedes all prior versions.** *(the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -1966,8 +1966,20 @@ DRIVE: <folder link>
 BUILD: <short name>
 MODE: <1–5>
 RUN: MANUAL | AUTOMATION
+VOICE: <accent, sex, age, tone — e.g. "British, female, 50s, warm and plain-spoken">
+HOOKS: <number to write, default 3 — or "in script">
+CAP: <credit cap for the build, per platform or total>
+ADJUST: <anything else, one per line — e.g. "no talking head", "kitchen not living room", "slower pace">
 FORMAT / TOOLS / CAST NOTES / NOTES: <optional>
 ```
+
+**Every field is read once and applied without a follow-up question.**
+- `VOICE` becomes the narrator's `VOICE-[CHAR]` (§22D). That string steers the §22U step-2 voice source, or the §24I film voice master, so the clone and every line inherit it.
+- `HOOKS` sets how many hooks are written, and therefore how many variant videos are delivered (§30H).
+- `CAP` is the E0 credit cap. When it is present, the run never asks for it.
+- **Each `ADJUST` line is applied, and recorded in the Build Sheet with the section it overrides.** An adjustment that contradicts a higher authority layer (§1: reference images, Product Sheet, locked standards) is **flagged at the step-1–5 delivery and not applied silently**. Everything else runs.
+
+**The stops that remain in a one-message run:** hook approval (§18 step 6), the voice clone (§22U step 6, until `ELEVENLABS_API_KEY` is set), the voice master listen (§22U step 10), and the final review. `CAP` in the message removes the credit question.
 
 **The folder** is shared *Anyone with the link — Viewer* and holds, at its top level or in subfolders:
 
@@ -7766,6 +7778,17 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 ---
 
+# CHANGELOG — V7.60.1 → V7.60.2 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **18B** | Intake message gains `VOICE` (the narrator's `VOICE-[CHAR]`), `HOOKS` (hook and variant count), `CAP` (E0 credit cap) and `ADJUST` (free overrides, recorded in the Build Sheet; conflicts with higher authority flagged, never silent). The remaining stops are named |
+| Files | `builds/INTAKE_TEMPLATE.md` |
+
+**Origin:** user request — one message with the Drive link, mode, accent and adjustments.
+
+---
+
 # CHANGELOG — V7.60.0 → V7.60.1 *(cut authorised)*
 
 | § | Change |
@@ -7775,19 +7798,6 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | Files | `scripts/variants.py`; `assemble.py` takes hook + body as one timeline |
 
 **Origin:** user rule — builds almost always have several hooks; the output is one video per hook with the body.
-
----
-
-# CHANGELOG — V7.59.2 → V7.60.0 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **22W** | **Clip verdict (new).** The agent judges every video on seven questions, reading a contact sheet with the true first and last frames. Product and body are checked in every frame, and the clip must have enough footage for its slot |
-| **30H** | **B-roll placement and hole-free assembly (new).** Place on the phrase's first word (script-aligned timing); frame-exact joins; no talking-head flicker under 1.5s; no uncovered frame in voice-only builds; no B-roll under 0.8s. The agent renders and verifies the rough cut; CapCut finishes |
-| E1, E2 | Clip, placement, hole and render checks; `CLIP_REGENERATE`, `NEED_LONGER` |
-| Files | `scripts/assemble.py`, `scripts/contact_sheet.py` |
-
-**Origin:** user request — check the B-roll videos, place them on the right lines, edit them with no holes or talking-head flicker.
 
 ---
 
