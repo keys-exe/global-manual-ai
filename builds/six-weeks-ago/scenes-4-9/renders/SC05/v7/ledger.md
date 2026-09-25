@@ -6,3 +6,4 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 |---|---|---|---|
 | 01 | OPEN: Margaret sets the ice pack last; Barbara watches over her mug | d0b844fe-6718-4c6e-a820-27805d45ad14 | APPROVED (option B) |
 | 02 | Barbara MCU: "You've done this every morning…" | b3170d21-a83f-45de-a940-0e0962f38b8a | APPROVED (option A) |
+| 03 | Margaret CU: "For eleven years." | cc7e7a8d-e049-447f-adf3-edc410c0acb8 (edit of 70452cc9, burned-in caption removed) | APPROVED (Fixed 2) |
