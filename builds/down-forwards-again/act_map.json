@@ -1,0 +1,1080 @@
+[
+ {
+  "beat_id": "BR01",
+  "part": "body",
+  "phrase": "A patient of mine. Nine years of knee pain.",
+  "type": "BR",
+  "kind": "life",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "LIVING",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "0e111a5c-521c-49ed-9101-e67156d0416e"
+  ],
+  "ref_names": [
+   "PT",
+   "LIVING"
+  ],
+  "span": [
+   0.0,
+   1.96
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "LIVING-D1",
+  "side": null,
+  "t2i_chars": 4131,
+  "i2v_chars": 1598
+ },
+ {
+  "beat_id": "BR02",
+  "part": "body",
+  "phrase": "Bone on bone on the left, the right one following it.",
+  "type": "BR",
+  "kind": "object",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.45,
+   "border": 6
+  },
+  "location_id": "CLINIC",
+  "refs": [
+   "52da3180-a52a-45e2-b8d0-00a31ddd458e"
+  ],
+  "ref_names": [
+   "CLINIC"
+  ],
+  "span": [
+   2.14,
+   4.7
+  ],
+  "duration": 4,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "CLINIC-D1",
+  "side": null,
+  "t2i_chars": 2083,
+  "i2v_chars": 1342
+ },
+ {
+  "beat_id": "BR03",
+  "part": "body",
+  "phrase": "Two centimetres below your kneecap there is a band of tendon about as wide as your thumb.",
+  "type": "MECH",
+  "kind": "mech",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.45
+  },
+  "location_id": null,
+  "refs": [],
+  "ref_names": [],
+  "span": [
+   7.1,
+   11.0
+  ],
+  "duration": 5,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "NONE-D1",
+  "side": null,
+  "t2i_chars": 819,
+  "i2v_chars": 1320
+ },
+ {
+  "beat_id": "BR04",
+  "part": "body",
+  "phrase": "Every step you take lands on it. Seventeen times your bodyweight.",
+  "type": "MECH",
+  "kind": "mech",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.45
+  },
+  "location_id": null,
+  "refs": [],
+  "ref_names": [],
+  "span": [
+   11.3,
+   14.96
+  ],
+  "duration": 5,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "NONE-D1",
+  "side": null,
+  "t2i_chars": 831,
+  "i2v_chars": 1388
+ },
+ {
+  "beat_id": "BR05",
+  "part": "body",
+  "phrase": "Put your finger under your kneecap and press.",
+  "type": "BR",
+  "kind": "life",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "LIVING",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "0e111a5c-521c-49ed-9101-e67156d0416e"
+  ],
+  "ref_names": [
+   "PT",
+   "LIVING"
+  ],
+  "span": [
+   14.96,
+   16.66
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "LIVING-D1",
+  "side": null,
+  "t2i_chars": 4099,
+  "i2v_chars": 1594
+ },
+ {
+  "beat_id": "BR06",
+  "part": "body",
+  "phrase": "Coming down is worse than going up.",
+  "type": "BR",
+  "kind": "life",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "STAIRS",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "866fa4c5-1fd4-4989-8f3a-397cdea1ee07"
+  ],
+  "ref_names": [
+   "PT",
+   "STAIRS"
+  ],
+  "span": [
+   18.74,
+   20.36
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "STAIRS-D1",
+  "side": null,
+  "t2i_chars": 4098,
+  "i2v_chars": 1596
+ },
+ {
+  "beat_id": "BR07",
+  "part": "body",
+  "phrase": "Going up, your muscles lift you. Coming down, you are catching yourself, and the catch lands on that band.",
+  "type": "MECH",
+  "kind": "mech",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.45
+  },
+  "location_id": null,
+  "refs": [],
+  "ref_names": [],
+  "span": [
+   20.54,
+   25.56
+  ],
+  "duration": 6,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "NONE-D1",
+  "side": null,
+  "t2i_chars": 872,
+  "i2v_chars": 1421
+ },
+ {
+  "beat_id": "BR08",
+  "part": "body",
+  "phrase": "That is why she came down backwards.",
+  "type": "BR",
+  "kind": "life",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "STAIRS",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "866fa4c5-1fd4-4989-8f3a-397cdea1ee07"
+  ],
+  "ref_names": [
+   "PT",
+   "STAIRS"
+  ],
+  "span": [
+   25.92,
+   27.36
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "STAIRS-D1",
+  "side": null,
+  "t2i_chars": 4113,
+  "i2v_chars": 1646
+ },
+ {
+  "beat_id": "BR09",
+  "part": "body",
+  "phrase": "That is why the chair took three tries.",
+  "type": "BR",
+  "kind": "life",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "LIVING",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "0e111a5c-521c-49ed-9101-e67156d0416e"
+  ],
+  "ref_names": [
+   "PT",
+   "LIVING"
+  ],
+  "span": [
+   29.2,
+   31.0
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "LIVING-D1",
+  "side": null,
+  "t2i_chars": 4031,
+  "i2v_chars": 1590
+ },
+ {
+  "beat_id": "BR10",
+  "part": "body",
+  "phrase": "That is why the good knee started going the same way. She had been leading with it for years.",
+  "type": "BR",
+  "kind": "life",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "STAIRS",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "866fa4c5-1fd4-4989-8f3a-397cdea1ee07"
+  ],
+  "ref_names": [
+   "PT",
+   "STAIRS"
+  ],
+  "span": [
+   31.38,
+   35.08
+  ],
+  "duration": 5,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "STAIRS-D1",
+  "side": null,
+  "t2i_chars": 4148,
+  "i2v_chars": 1634
+ },
+ {
+  "beat_id": "BR11",
+  "part": "body",
+  "phrase": "The long walk. The garden.",
+  "type": "BR",
+  "kind": "life",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.45,
+   "border": 6
+  },
+  "location_id": "GARDEN",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "a48713bc-da97-4e6b-b599-7dd5b58dfb52"
+  ],
+  "ref_names": [
+   "PT",
+   "GARDEN"
+  ],
+  "span": [
+   38.58,
+   39.72
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "GARDEN-D1",
+  "side": null,
+  "t2i_chars": 3699,
+  "i2v_chars": 1569
+ },
+ {
+  "beat_id": "BR12",
+  "part": "body",
+  "phrase": "Her family coming to her instead.",
+  "type": "BR",
+  "kind": "life",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "LIVING",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "0e111a5c-521c-49ed-9101-e67156d0416e"
+  ],
+  "ref_names": [
+   "PT",
+   "LIVING"
+  ],
+  "span": [
+   40.12,
+   41.44
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "LIVING-D1",
+  "side": null,
+  "t2i_chars": 4136,
+  "i2v_chars": 1597
+ },
+ {
+  "beat_id": "BR13",
+  "part": "body",
+  "phrase": "A sleeve squeezes the whole knee.",
+  "type": "BR",
+  "kind": "object",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.45,
+   "border": 6
+  },
+  "location_id": null,
+  "refs": [],
+  "ref_names": [],
+  "span": [
+   46.58,
+   48.02
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "NONE-D1",
+  "side": null,
+  "t2i_chars": 1861,
+  "i2v_chars": 1271
+ },
+ {
+  "beat_id": "BR14",
+  "part": "body",
+  "phrase": "A hinged brace stops it going sideways, and her knee was never going sideways.",
+  "type": "BR",
+  "kind": "object",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.45,
+   "border": 6
+  },
+  "location_id": null,
+  "refs": [],
+  "ref_names": [],
+  "span": [
+   48.38,
+   51.9
+  ],
+  "duration": 5,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "NONE-D1",
+  "side": null,
+  "t2i_chars": 1880,
+  "i2v_chars": 1261
+ },
+ {
+  "beat_id": "BR15",
+  "part": "body",
+  "phrase": "A gel sits on the skin.",
+  "type": "BR",
+  "kind": "object",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.45,
+   "border": 6
+  },
+  "location_id": null,
+  "refs": [],
+  "ref_names": [],
+  "span": [
+   52.44,
+   53.56
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "NONE-D1",
+  "side": null,
+  "t2i_chars": 1813,
+  "i2v_chars": 1276
+ },
+ {
+  "beat_id": "BR16",
+  "part": "body",
+  "phrase": "It is called Stryde.",
+  "type": "PRODUCT",
+  "kind": "held",
+  "layout": {
+   "type": "full"
+  },
+  "location_id": "CLINIC",
+  "refs": [
+   "c7f0b639-ccf2-4bda-adba-db564b45779f",
+   "cdbd3614-14b7-44ef-9485-643d0fb8b65a",
+   "c463fe3e-fd82-4b53-8e50-bad1e2a465a0",
+   "52da3180-a52a-45e2-b8d0-00a31ddd458e"
+  ],
+  "ref_names": [
+   "DR",
+   "front",
+   "tq_left",
+   "CLINIC"
+  ],
+  "span": [
+   55.78,
+   57.22
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "CLINIC-D1",
+  "side": null,
+  "t2i_chars": 5718,
+  "i2v_chars": 2191
+ },
+ {
+  "beat_id": "BR17",
+  "part": "body",
+  "phrase": "It sits two centimetres below the kneecap, on the tendon. It never crosses the joint.",
+  "type": "BR",
+  "kind": "worn",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "LIVING",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "51bbba5b-4271-4e49-8245-b785b96cd30a",
+   "cdbd3614-14b7-44ef-9485-643d0fb8b65a",
+   "0e111a5c-521c-49ed-9101-e67156d0416e"
+  ],
+  "ref_names": [
+   "PT",
+   "wornF",
+   "front",
+   "LIVING"
+  ],
+  "span": [
+   57.22,
+   61.14
+  ],
+  "duration": 5,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "LIVING-D1",
+  "side": "left",
+  "t2i_chars": 7144,
+  "i2v_chars": 2171
+ },
+ {
+  "beat_id": "BR18",
+  "part": "body",
+  "phrase": "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee.",
+  "type": "PRODUCT",
+  "kind": "object",
+  "layout": {
+   "type": "full"
+  },
+  "location_id": null,
+  "refs": [
+   "e54b691d-1108-4e08-8918-8068044b5305",
+   "cdbd3614-14b7-44ef-9485-643d0fb8b65a"
+  ],
+  "ref_names": [
+   "back",
+   "front"
+  ],
+  "span": [
+   61.44,
+   66.26
+  ],
+  "duration": 6,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "NONE-D1",
+  "side": null,
+  "t2i_chars": 3101,
+  "i2v_chars": 1662
+ },
+ {
+  "beat_id": "BR19",
+  "part": "body",
+  "phrase": "The weight gets caught and moved off the worn part before it reaches the joint.",
+  "type": "MECH",
+  "kind": "mech",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.45
+  },
+  "location_id": null,
+  "refs": [
+   "cdbd3614-14b7-44ef-9485-643d0fb8b65a"
+  ],
+  "ref_names": [
+   "front"
+  ],
+  "span": [
+   66.56,
+   69.86
+  ],
+  "duration": 4,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "NONE-D1",
+  "side": null,
+  "t2i_chars": 989,
+  "i2v_chars": 1404
+ },
+ {
+  "beat_id": "BR20",
+  "part": "body",
+  "phrase": "The placement is the whole thing. A centimetre too high and it is a sleeve again.",
+  "type": "BR",
+  "kind": "seat",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "LIVING",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "51bbba5b-4271-4e49-8245-b785b96cd30a",
+   "cdbd3614-14b7-44ef-9485-643d0fb8b65a",
+   "0e111a5c-521c-49ed-9101-e67156d0416e"
+  ],
+  "ref_names": [
+   "PT",
+   "wornF",
+   "front",
+   "LIVING"
+  ],
+  "span": [
+   70.24,
+   73.92
+  ],
+  "duration": 5,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "LIVING-D1",
+  "side": "left",
+  "t2i_chars": 6057,
+  "i2v_chars": 2489
+ },
+ {
+  "beat_id": "BR21",
+  "part": "body",
+  "phrase": "Ten seconds to put on.",
+  "type": "BR",
+  "kind": "seat",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "LIVING",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "51bbba5b-4271-4e49-8245-b785b96cd30a",
+   "cdbd3614-14b7-44ef-9485-643d0fb8b65a",
+   "0e111a5c-521c-49ed-9101-e67156d0416e"
+  ],
+  "ref_names": [
+   "PT",
+   "wornF",
+   "front",
+   "LIVING"
+  ],
+  "span": [
+   79.9,
+   81.06
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "LIVING-D1",
+  "side": "left",
+  "t2i_chars": 6043,
+  "i2v_chars": 2444
+ },
+ {
+  "beat_id": "BR22",
+  "part": "body",
+  "phrase": "No sores, no rolling down, and nobody can see it.",
+  "type": "BR",
+  "kind": "life",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "PROP",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "ea51fa7e-a1ab-4f2d-8b8a-1b6bc5792caf"
+  ],
+  "ref_names": [
+   "PT",
+   "PROP"
+  ],
+  "span": [
+   81.06,
+   83.98
+  ],
+  "duration": 4,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "PROP-D1",
+  "side": null,
+  "t2i_chars": 4476,
+  "i2v_chars": 1584
+ },
+ {
+  "beat_id": "BR23",
+  "part": "body",
+  "phrase": "You do not have to take my word for it. One knee only. Leave the other bare.",
+  "type": "BR",
+  "kind": "worn",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "LIVING",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "dedcd2b6-1639-42b1-99ff-45daaebc271e",
+   "cdbd3614-14b7-44ef-9485-643d0fb8b65a",
+   "0e111a5c-521c-49ed-9101-e67156d0416e"
+  ],
+  "ref_names": [
+   "PT",
+   "wornB",
+   "front",
+   "LIVING"
+  ],
+  "span": [
+   93.02,
+   96.7
+  ],
+  "duration": 5,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "LIVING-D1",
+  "side": "left",
+  "t2i_chars": 8033,
+  "i2v_chars": 2159
+ },
+ {
+  "beat_id": "BR24",
+  "part": "body",
+  "phrase": "Go to your own stairs and come down forwards.",
+  "type": "BR",
+  "kind": "worn",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "STAIRS",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "866fa4c5-1fd4-4989-8f3a-397cdea1ee07",
+   "51bbba5b-4271-4e49-8245-b785b96cd30a"
+  ],
+  "ref_names": [
+   "PT",
+   "STAIRS",
+   "wornF"
+  ],
+  "span": [
+   96.7,
+   98.48
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "STAIRS-D1",
+  "side": "left",
+  "t2i_chars": 7102,
+  "i2v_chars": 2193
+ },
+ {
+  "beat_id": "BR25",
+  "part": "body",
+  "phrase": "Her scan looks exactly the same as it did in March. I have both of them.",
+  "type": "BR",
+  "kind": "object",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.45,
+   "border": 6
+  },
+  "location_id": "CLINIC",
+  "refs": [
+   "52da3180-a52a-45e2-b8d0-00a31ddd458e"
+  ],
+  "ref_names": [
+   "CLINIC"
+  ],
+  "span": [
+   101.74,
+   105.12
+  ],
+  "duration": 4,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "CLINIC-D1",
+  "side": null,
+  "t2i_chars": 1918,
+  "i2v_chars": 1313
+ },
+ {
+  "beat_id": "BR26",
+  "part": "body",
+  "phrase": "Because the load is not landing on that band any more.",
+  "type": "BR",
+  "kind": "worn",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "STAIRS",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "866fa4c5-1fd4-4989-8f3a-397cdea1ee07",
+   "51bbba5b-4271-4e49-8245-b785b96cd30a"
+  ],
+  "ref_names": [
+   "PT",
+   "STAIRS",
+   "wornF"
+  ],
+  "span": [
+   105.12,
+   107.84
+  ],
+  "duration": 4,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "STAIRS-D1",
+  "side": "left",
+  "t2i_chars": 7133,
+  "i2v_chars": 2151
+ },
+ {
+  "beat_id": "BR27",
+  "part": "body",
+  "phrase": "Two for one, so you do both knees, which is what she needed.",
+  "type": "PRODUCT",
+  "kind": "object",
+  "layout": {
+   "type": "full"
+  },
+  "location_id": null,
+  "refs": [
+   "1cf90fd6-db30-4b1b-a6d8-4dfb1aa193d6",
+   "cdbd3614-14b7-44ef-9485-643d0fb8b65a"
+  ],
+  "ref_names": [
+   "package_open",
+   "front"
+  ],
+  "span": [
+   111.66,
+   114.22
+  ],
+  "duration": 4,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "NONE-D1",
+  "side": null,
+  "t2i_chars": 3254,
+  "i2v_chars": 1650
+ },
+ {
+  "beat_id": "BR28",
+  "part": "body",
+  "phrase": "The copies stretch, and a stretched strap stops holding the spot.",
+  "type": "BR",
+  "kind": "object",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.45,
+   "border": 6
+  },
+  "location_id": null,
+  "refs": [],
+  "ref_names": [],
+  "span": [
+   117.8,
+   120.72
+  ],
+  "duration": 4,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "NONE-D1",
+  "side": null,
+  "t2i_chars": 2371,
+  "i2v_chars": 1277
+ },
+ {
+  "beat_id": "BR29",
+  "part": "body",
+  "phrase": "Nothing to lose but the pain. Go and do your stairs.",
+  "type": "BR",
+  "kind": "worn",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "STAIRS",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "866fa4c5-1fd4-4989-8f3a-397cdea1ee07",
+   "51bbba5b-4271-4e49-8245-b785b96cd30a"
+  ],
+  "ref_names": [
+   "PT",
+   "STAIRS",
+   "wornF"
+  ],
+  "span": [
+   121.1,
+   123.24
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "STAIRS-D1",
+  "side": "left",
+  "t2i_chars": 7109,
+  "i2v_chars": 2165
+ },
+ {
+  "beat_id": "HK1-01",
+  "part": "HK1",
+  "phrase": "In six weeks, this woman stopped coming down her own stairs backwards.",
+  "type": "BR",
+  "kind": "worn",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.45,
+   "border": 6
+  },
+  "location_id": "STAIRS",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "866fa4c5-1fd4-4989-8f3a-397cdea1ee07",
+   "51bbba5b-4271-4e49-8245-b785b96cd30a"
+  ],
+  "ref_names": [
+   "PT",
+   "STAIRS",
+   "wornF"
+  ],
+  "span": [
+   0.0,
+   4.0
+  ],
+  "duration": 5,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "STAIRS-D1",
+  "side": "left",
+  "t2i_chars": 7071,
+  "i2v_chars": 2081
+ },
+ {
+  "beat_id": "HK1-02",
+  "part": "HK1",
+  "phrase": "Without one more brace going in the drawer.",
+  "type": "BR",
+  "kind": "object",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.45,
+   "border": 6
+  },
+  "location_id": null,
+  "refs": [],
+  "ref_names": [],
+  "span": [
+   7.08,
+   9.06
+  ],
+  "duration": 3,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "NONE-D1",
+  "side": null,
+  "t2i_chars": 1815,
+  "i2v_chars": 1265
+ },
+ {
+  "beat_id": "HK2-01",
+  "part": "HK2",
+  "phrase": "It takes ten seconds and it is not a prescription.",
+  "type": "BR",
+  "kind": "seat",
+  "layout": {
+   "type": "pip",
+   "over": "broll",
+   "corner": "bl",
+   "scale": 0.33,
+   "border": 0
+  },
+  "location_id": "LIVING",
+  "refs": [
+   "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "51bbba5b-4271-4e49-8245-b785b96cd30a",
+   "cdbd3614-14b7-44ef-9485-643d0fb8b65a",
+   "0e111a5c-521c-49ed-9101-e67156d0416e"
+  ],
+  "ref_names": [
+   "PT",
+   "wornF",
+   "front",
+   "LIVING"
+  ],
+  "span": [
+   6.08,
+   8.82
+  ],
+  "duration": 4,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "LIVING-D1",
+  "side": "left",
+  "t2i_chars": 6011,
+  "i2v_chars": 2429
+ },
+ {
+  "beat_id": "HK3-01",
+  "part": "HK3",
+  "phrase": "Every week somebody brings me a scan of a knee and asks what can be done about the cartilage.",
+  "type": "BR",
+  "kind": "object",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.45,
+   "border": 6
+  },
+  "location_id": "CLINIC",
+  "refs": [
+   "52da3180-a52a-45e2-b8d0-00a31ddd458e"
+  ],
+  "ref_names": [
+   "CLINIC"
+  ],
+  "span": [
+   0.0,
+   5.28
+  ],
+  "duration": 6,
+  "model": "nano_banana_pro",
+  "story_day": "D1",
+  "capture_event_id": "CLINIC-D1",
+  "side": null,
+  "t2i_chars": 1929,
+  "i2v_chars": 1280
+ }
+]

@@ -1,0 +1,10 @@
+front.webp {"url": "https://tempfile.redpandaai.co/kieai/329820/pipeline/front.webp"}
+back.webp {"url": "https://tempfile.redpandaai.co/kieai/329820/pipeline/back.webp"}
+product_tq_left.jpg {"url": "https://tempfile.redpandaai.co/kieai/329820/pipeline/product_tq_left.jpg"}
+product_tq_right.jpg {"url": "https://tempfile.redpandaai.co/kieai/329820/pipeline/product_tq_right.jpg"}
+product_side.jpg {"url": "https://tempfile.redpandaai.co/kieai/329820/pipeline/product_side.jpg"}
+product_macro.jpg {"url": "https://tempfile.redpandaai.co/kieai/329820/pipeline/product_macro.jpg"}
+worn_front.jpg {"url": "https://tempfile.redpandaai.co/kieai/329820/pipeline/worn_front.jpg"}
+worn_bent.jpg {"url": "https://tempfile.redpandaai.co/kieai/329820/pipeline/worn_bent.jpg"}
+worn_rear.jpg {"url": "https://tempfile.redpandaai.co/kieai/329820/pipeline/worn_rear.jpg"}
+package_open.jpg {"url": "https://tempfile.redpandaai.co/kieai/329820/pipeline/package_open.jpg"}

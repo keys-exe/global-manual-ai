@@ -1,0 +1,525 @@
+{
+ "build": "down-forwards-again",
+ "version_built_against": "7.63.0",
+ "run": "AUTOMATION",
+ "declared": {
+  "mode": 1,
+  "format": "Short VSL — Doctor Authority, talking head + B-roll (matches inspo)",
+  "side": "left",
+  "side_reason": "SIDE_RULE 1: script names the left knee ('Bone on bone on the left')",
+  "voice": "VOICE: British (user) → VOICE-DR per §22D",
+  "hooks": "in script: 3 (Door A, B, C)",
+  "mechanism_claim": "protection (Product Sheet MECHANISM_CLAIM)",
+  "model_lock": {
+   "avatar_sheets": {
+    "model": "gpt_image_2_5",
+    "variant": "sunburst",
+    "quality": "high"
+   },
+   "talking_head_seed": {
+    "model": "nano_banana_pro"
+   },
+   "wordmark_with_body": {
+    "model": "nano_banana_pro"
+   },
+   "plates": {
+    "model": "nano_banana_pro"
+   },
+   "volume_broll_person": {
+    "model": "nano_banana_2"
+   },
+   "volume_broll_no_person": {
+    "model": "nano_banana_2"
+   },
+   "mechanism": {
+    "model": "nano_banana_pro"
+   },
+   "video": {
+    "model": "kling-video-v3_0_omni",
+    "resolution": "1080p"
+   },
+   "voice_source": {
+    "model": "bytedance/seedance-2-5",
+    "resolution": "720p"
+   }
+  },
+  "model_lock_note": "§34 correction 2026-09-25: nano_banana_2 passed on Higgsfield logs nano_banana_flash (failed, 8 jobs: 08952142 1cc3121a 23f02afd b67d0886 9443bd06 90953d8d 61da7577 bb7c7f4e). Every Nano Banana class now passes nano_banana_pro, which logs nano_banana_2 (arsenal). Locked classes unchanged in effect."
+ },
+ "caps": {
+  "higgsfield": 600,
+  "kling": 3000,
+  "kie": 2000,
+  "source": "E0 default (no CAP in intake)"
+ },
+ "balances_start": {
+  "higgsfield": 21553,
+  "kling": 8957,
+  "kie": 88203.8,
+  "ts": "2026-09-25"
+ },
+ "elevenlabs_check": "PASS (525 free slots)",
+ "jobs": [],
+ "beats": {
+  "CAST-DR": {
+   "beat_id": "CAST-DR",
+   "retries": [],
+   "t2i_prompt_path": "beats/CAST-DR.t2i.txt",
+   "t2i_job_id": "c7f0b639-ccf2-4bda-adba-db564b45779f",
+   "model_logged": "gpt_image_2_5",
+   "t2i_status": "completed",
+   "t2i_qa": "USE — panel check pass: grid, profiles opposite, close-up = front, window left, wardrobe identical; marker (kinked nose) reads",
+   "file": "renders/CAST-DR_v1.png"
+  },
+  "CAST-PT": {
+   "beat_id": "CAST-PT",
+   "retries": [],
+   "t2i_prompt_path": "beats/CAST-PT.t2i.txt",
+   "t2i_job_id": "735ae689-870f-45d4-9fd1-f5f85ad06e48",
+   "model_logged": "gpt_image_2_5",
+   "t2i_status": "completed",
+   "t2i_qa": "USE — panel check pass; mole beside left nostril; knees bare; roots read stronger in close-up than full panels (minor, flagged)",
+   "file": "renders/CAST-PT_v1.png"
+  },
+  "PLATE-PROP": {
+   "beat_id": "PLATE-PROP",
+   "retries": [
+    {
+     "class": "ALIAS_MISMATCH",
+     "action": "accepted: known §5 routing fault; nano_banana_2 is an arsenal model; verdict judged on the render",
+     "ts": "2026-09-25T19:26:37.705917"
+    }
+   ],
+   "t2i_job_id": "ea51fa7e-a1ab-4f2d-8b8a-1b6bc5792caf",
+   "model_passed": "nano_banana_pro",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE — shell readable (magnolia, gloss skirting, 4-panel doors brass levers, Artex, beige carpet→laminate threshold, single-panel rad), stairs left, doorway right; not a show home",
+   "file": "renders/PLATE-PROP_v1.png"
+  },
+  "PLATE-CLINIC": {
+   "beat_id": "PLATE-CLINIC",
+   "retries": [],
+   "t2i_job_id": "52da3180-a52a-45e2-b8d0-00a31ddd458e",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE — window left, couch right, knee model on shelf, lived-in; strip light on ceiling",
+   "file": "renders/PLATE-CLINIC_v1.png"
+  },
+  "REF-WORN-rear-L": {
+   "beat_id": "REF-WORN-rear-L",
+   "retries": [],
+   "t2i_job_id": "f2e5943d-b2a3-4dd5-a593-f6ed79625da4",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE — band below the hollow, keeper loops centred, slides as bright bars, no shell at rear",
+   "file": "renders/REF-WORN-rear-L_v1.png"
+  },
+  "REF-WORN-bent-L": {
+   "beat_id": "REF-WORN-bent-L",
+   "retries": [],
+   "t2i_job_id": "dedcd2b6-1639-42b1-99ff-45daaebc271e",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE — left knee nearest camera, notch under kneecap, peaks flank lower half, wordmark readable (shifted by yaw, as locked ref)",
+   "file": "renders/REF-WORN-bent-L_v1.png"
+  },
+  "REF-WORN-front-L": {
+   "beat_id": "REF-WORN-front-L",
+   "retries": [
+    {
+     "class": "IMAGE_REGENERATE",
+     "action": "v2 prompt beats/REF-WORN-front-L.v2.t2i.txt",
+     "ts": "2026-09-25T19:26:37.799313"
+    }
+   ],
+   "t2i_job_id": "51bbba5b-4271-4e49-8245-b785b96cd30a",
+   "t2i_qa": "USE (v2) — strap on the person's left leg (picture-right), notch under kneecap, wordmark centred",
+   "file": "renders/REF-WORN-front-L_v2.png"
+  },
+  "PLATE-STAIRS": {
+   "beat_id": "PLATE-STAIRS",
+   "retries": [],
+   "t2i_job_id": "866fa4c5-1fd4-4989-8f3a-397cdea1ee07",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE — property shell carried; anchors present; not a show home",
+   "file": "renders/PLATE-STAIRS_v1.png"
+  },
+  "PLATE-LIVING": {
+   "beat_id": "PLATE-LIVING",
+   "retries": [],
+   "t2i_job_id": "0e111a5c-521c-49ed-9101-e67156d0416e",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE — property shell carried; anchors present; not a show home",
+   "file": "renders/PLATE-LIVING_v1.png"
+  },
+  "PLATE-GARDEN": {
+   "beat_id": "PLATE-GARDEN",
+   "retries": [],
+   "t2i_job_id": "a48713bc-da97-4e6b-b599-7dd5b58dfb52",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE — property shell carried; anchors present; not a show home",
+   "file": "renders/PLATE-GARDEN_v1.png"
+  },
+  "TH-DR-SEED": {
+   "beat_id": "TH-DR-SEED",
+   "retries": [
+    {
+     "class": "IMAGE_REGENERATE",
+     "action": "v2 beats/TH-DR-SEED.v2.t2i.txt",
+     "ts": "2026-09-25T19:30:06.595282"
+    }
+   ],
+   "t2i_job_id": "eee0e92e-1ae2-48f4-9ffb-4af482b4c9f4",
+   "t2i_qa": "USE (v2) — same man as sheet, no UI, clinic anchors hold, hands whole; framing waist-up (wider than inspo chest-up; th_focus_y 0.33)",
+   "model_logged": "nano_banana_2",
+   "file": "renders/TH-DR-SEED_v2.png"
+  },
+  "VOICE-MASTER": {
+   "beat_id": "VOICE-MASTER",
+   "retries": [],
+   "file": "voice/Forwards_master.mp3",
+   "voice_id": "7Jh1KORnOEknCS0IfC6z",
+   "qa": "body take A (b6tGQCXPs5mjOCzPYbqo) 123.8s: transcript diff = numerals/spelling only (17, 34, 200 000, 10, 60, stride, anymore, body weight) + 'stretched'→'stretch' (ASR, unverified); take C disqualified (added 'it's it's'); no silence >0.4s"
+  },
+  "VOICE-HK1": {
+   "beat_id": "VOICE-HK1",
+   "retries": [],
+   "file": "voice/Forwards_HK1_master.mp3",
+   "qa": "take 4nNDNKr1 11.7s exact"
+  },
+  "VOICE-HK2": {
+   "beat_id": "VOICE-HK2",
+   "retries": [],
+   "file": "voice/Forwards_HK2_master.mp3",
+   "qa": "take 4rggki9q 9.2s exact (10→ten numeral only); take 1arEd had a 0.4s gap"
+  },
+  "VOICE-HK3": {
+   "beat_id": "VOICE-HK3",
+   "retries": [],
+   "file": "voice/Forwards_HK3_master.mp3",
+   "qa": "take aai9Vyzz 8.3s exact"
+  },
+  "TH-BODY": {
+   "beat_id": "TH-BODY",
+   "retries": [
+    {
+     "class": "USER_INSTRUCTION",
+     "action": "user: use Avatar V not Avatar IV. Avatar V + motionPrompt rejected (no reference look in group) -> Avatar V without motionPrompt. Earlier Avatar IV renders 6de34081/6275842a/b481a293/0eba03dd superseded, unused",
+     "ts": "2026-09-25T19:47:35.216124"
+    }
+   ],
+   "heygen_video_id": "1d1bda9ddaf332db7fb2409e13be58bc",
+   "engine": "avatar_v",
+   "avatar": "ba9fdeebc2e7d8069ee01d283cedbd13",
+   "file": "th/TH-BODY.mp4",
+   "clip_qa": "USE — Avatar V, 123.74s = master, natural hand gestures, lip movement tracks, no freeze/black; a ring appears on left hand late in the clip (sheet: no jewellery) — minor, flagged"
+  },
+  "TH-HK1": {
+   "beat_id": "TH-HK1",
+   "retries": [],
+   "heygen_video_id": "31faf590bd08ac0c885fc92999a79e24",
+   "engine": "avatar_v",
+   "qa": "USE — Avatar V, same doctor/room as body, lip-sync on HK1 master, 11.65s"
+  },
+  "TH-HK2": {
+   "beat_id": "TH-HK2",
+   "retries": [],
+   "heygen_video_id": "d7778161f7dc229eb1f6e7c31419caf4",
+   "engine": "avatar_v",
+   "qa": "USE — Avatar V, 9.18s"
+  },
+  "TH-HK3": {
+   "beat_id": "TH-HK3",
+   "retries": [],
+   "heygen_video_id": "230a4ef342c4a0ee35ae335e9528b798",
+   "engine": "avatar_v",
+   "qa": "USE — Avatar V, 8.29s; brief smile near the end (register, minor)"
+  },
+  "BR03": {
+   "beat_id": "BR03",
+   "retries": [],
+   "t2i_job_id": "2af4749a-a104-41ce-8714-1c8e4e7770cc",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE — tendon band the one coloured element, 2 cm below kneecap, no text",
+   "file": "renders/BR03_v1.png"
+  },
+  "BR07": {
+   "beat_id": "BR07",
+   "retries": [],
+   "t2i_job_id": "0a13e316-74ef-4d90-aae4-8581aee1fc57",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE — knee flexing, quads red, tendon orange; orange slightly overlaps kneecap (minor)",
+   "file": "renders/BR07_v1.png"
+  },
+  "BR04": {
+   "beat_id": "BR04",
+   "retries": [],
+   "t2i_job_id": "888b25a2-ece3-4f27-8a05-b962e6e1651e",
+   "t2i_qa": "USE (v2)",
+   "model_logged": "nano_banana_2",
+   "file": "renders/BR04_v2.png"
+  },
+  "BR19": {
+   "beat_id": "BR19",
+   "retries": [],
+   "t2i_job_id": "0ccd0ea0-d765-4db8-b15d-9efc65a3729e",
+   "t2i_qa": "USE (v2)",
+   "model_logged": "nano_banana_2",
+   "file": "renders/BR19_v2.png"
+  },
+  "BR02": {
+   "beat_id": "BR02",
+   "retries": [],
+   "t2i_job_id": "21794a44-a6a4-4975-b258-1c223de55001",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR02_v1.png"
+  },
+  "BR13": {
+   "beat_id": "BR13",
+   "retries": [],
+   "t2i_job_id": "e3e8c124-1a32-499e-8999-3dfcc0592dc7",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR13_v1.png"
+  },
+  "BR14": {
+   "beat_id": "BR14",
+   "retries": [],
+   "t2i_job_id": "b3e4f3e2-1101-40d5-a0e1-0175f984cb36",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR14_v1.png"
+  },
+  "BR15": {
+   "beat_id": "BR15",
+   "retries": [],
+   "t2i_job_id": "3643ed30-631a-407e-b81f-8d5193847d35",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR15_v1.png"
+  },
+  "HK1-02": {
+   "beat_id": "HK1-02",
+   "retries": [],
+   "t2i_job_id": "3257a9e5-f630-4c83-9932-9cdfef7b6d07",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/HK1-02_v1.png",
+   "i2v_qa": "USE — generic brace folded into drawer, drawer closes; no product shown (correct for the line)"
+  },
+  "HK3-01": {
+   "beat_id": "HK3-01",
+   "retries": [],
+   "t2i_job_id": "cb17eb2a-f5b5-4c6f-b7bc-89368c528cbf",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/HK3-01_v1.png",
+   "i2v_qa": "USE — scan slid from envelope across the desk, doctor and patient hands"
+  },
+  "BR25": {
+   "beat_id": "BR25",
+   "retries": [],
+   "t2i_job_id": "968a1a1e-b80a-4a0b-9fb6-9ee0048ffef8",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE — two films on a stand lightbox; each film shows one knee (minor, pip-sized)",
+   "file": "renders/BR25_v1.png"
+  },
+  "BR28": {
+   "beat_id": "BR28",
+   "retries": [],
+   "t2i_job_id": "031b81ca-6bec-4bcf-afea-699a026cafad",
+   "t2i_qa": "USE (v2) — copy keeps peaks/notch, scratched, frayed velcro",
+   "model_logged": "nano_banana_2",
+   "file": "renders/BR28_v2.png"
+  },
+  "BR01": {
+   "beat_id": "BR01",
+   "retries": [],
+   "t2i_job_id": "8b3d1537-fc59-4b27-aed7-94925d8b3370",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR01_v1.png"
+  },
+  "BR05": {
+   "beat_id": "BR05",
+   "retries": [],
+   "t2i_job_id": "6059d735-8cc6-4882-a625-f9b646682c26",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR05_v1.png"
+  },
+  "BR06": {
+   "beat_id": "BR06",
+   "retries": [],
+   "t2i_job_id": "21386dce-ff52-4279-a9bb-8d417ed06d44",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR06_v1.png"
+  },
+  "BR09": {
+   "beat_id": "BR09",
+   "retries": [],
+   "t2i_job_id": "8f631d18-4c3c-4f3c-92a8-ea253169a238",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR09_v1.png"
+  },
+  "BR10": {
+   "beat_id": "BR10",
+   "retries": [],
+   "t2i_job_id": "5e1e4f4c-caea-40b7-a4af-32c2b97b307f",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR10_v1.png"
+  },
+  "BR11": {
+   "beat_id": "BR11",
+   "retries": [],
+   "t2i_job_id": "0e5a2d31-d308-48b7-8f2a-19fe5858092f",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR11_v1.png"
+  },
+  "BR12": {
+   "beat_id": "BR12",
+   "retries": [],
+   "t2i_job_id": "5b02948b-d99f-4b98-bb56-2e28ca910516",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR12_v1.png"
+  },
+  "BR16": {
+   "beat_id": "BR16",
+   "retries": [],
+   "t2i_job_id": "0066b708-60b7-4d03-905d-8c29f4fceba7",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR16_v1.png"
+  },
+  "BR17": {
+   "beat_id": "BR17",
+   "retries": [],
+   "t2i_job_id": "793d940b-538b-4597-89e4-cab74f4e210f",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR17_v1.png"
+  },
+  "BR08": {
+   "beat_id": "BR08",
+   "retries": [],
+   "t2i_job_id": "7ce781a9-f82c-4298-9dd6-a0403ae6f9ed",
+   "t2i_qa": "USE (v2) — facing up the stairs, descending backwards",
+   "model_logged": "nano_banana_2",
+   "file": "renders/BR08_v2.png"
+  },
+  "BR18": {
+   "beat_id": "BR18",
+   "retries": [],
+   "t2i_job_id": "a0850a66-7541-4441-801a-91785e7d72ac",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR18_v1.png"
+  },
+  "BR22": {
+   "beat_id": "BR22",
+   "retries": [],
+   "t2i_job_id": "a8c73048-a3c4-468d-b97d-87df5a2cf419",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR22_v1.png"
+  },
+  "BR24": {
+   "beat_id": "BR24",
+   "retries": [
+    {
+     "class": "IMAGE_REGENERATE",
+     "action": "v3/v4 picture-side + camera-position clauses, handrail reference removed; beats/BR24.v4.t2i.txt, BR24.v4.i2v.json",
+     "ts": "2026-09-25T20:32:49.191495"
+    }
+   ],
+   "t2i_job_id": "eddee54c-4c66-490d-a0ee-9b581f510916",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "v1 clip QA caught strap on her right and her climbing -> v3 (side wrong: handrail clause misfired) -> v4 USE",
+   "file": "renders/BR24_v1.png",
+   "i2v_job": "AfShJAtmgd3OU4VpbFGS7R5bexxVuCtIaxgL5jQaxS42Vy1rVYXyOirfZLbMQmSgZ2F23zjl"
+  },
+  "BR27": {
+   "beat_id": "BR27",
+   "retries": [],
+   "t2i_job_id": "60f91068-60d4-4d61-af3b-1bb370de1200",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE",
+   "file": "renders/BR27_v1.png"
+  },
+  "HK1-01": {
+   "beat_id": "HK1-01",
+   "retries": [
+    {
+     "class": "IMAGE_REGENERATE",
+     "action": "v2 then v3: picture-side strap clause + CAMERA POSITION at foot of stairs; beats/HK1-01.v3.t2i.txt, beats/HK1-01.v3.i2v.json. v1 clip superseded: start frame had strap on her right (missed at first image QA)",
+     "ts": "2026-09-25T20:32:49.170902"
+    }
+   ],
+   "t2i_job_id": "46aa1177-524b-48e2-ab57-6ee771c7aa15",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "REGENERATE v1 (Q3 strap on her right) -> v2 (side fixed; Q1 camera at top, climbing, barefoot) -> v3 USE",
+   "file": "renders/HK1-01_v1.png",
+   "i2v_job": "AYTzuwByjvvgrgNzq-X87ZtZZ2xgFtTLOnXrEhM82iFimu4xT_LbRKKFW-435m69a_4t3y9m",
+   "i2v_qa": "USE (v3) — descends forwards, strap on her left every frame, shoes on"
+  },
+  "BR20": {
+   "beat_id": "BR20",
+   "retries": [],
+   "t2i_job_id": "0bc05242-bcf1-4579-8821-e0c722f08d24",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE with motion change — strap already at the tendon (end state), so I2V motion changed from slide-up to press-into-place-and-lift (logged §16)",
+   "file": "renders/BR20_v1.png"
+  },
+  "BR21": {
+   "beat_id": "BR21",
+   "retries": [],
+   "t2i_job_id": "1aebc214-4adf-44c2-8129-acf9816843dc",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE with motion change — strap already at the tendon; I2V motion = fingers settle the notch under the kneecap and lift away",
+   "file": "renders/BR21_v1.png"
+  },
+  "BR23": {
+   "beat_id": "BR23",
+   "retries": [],
+   "t2i_job_id": "6b5f8c6d-98ac-4266-9110-e14180d2dd6c",
+   "t2i_qa": "USE (v3)",
+   "i2v_qa": "USE (v3) — standing, strap on her left, right knee bare, shoes on",
+   "i2v_job": "AXd4Pl3ycCFyOB8bd_8LbBCcZYGCPGthnDUFlcTFF27KYwM4IWZJFzIPlFCI89xbeEGL9Uio"
+  },
+  "BR26": {
+   "beat_id": "BR26",
+   "retries": [],
+   "t2i_job_id": "8b580cc9-3904-45f7-98e0-173b7504d2ea",
+   "t2i_qa": "USE (v2) — strap on her left knee; one foot reads bare (minor continuity, flagged)",
+   "model_logged": "nano_banana_2",
+   "file": "renders/BR26_v2.png",
+   "i2v_qa": "USE (flag) — strap on her left, descending into hall; one foot bare mid-clip"
+  },
+  "BR29": {
+   "beat_id": "BR29",
+   "retries": [
+    {
+     "class": "IMAGE_REGENERATE",
+     "action": "v3 v4 v5 per beats/BR29.v*.t2i.txt; kept v5 as best (E2)",
+     "ts": "2026-09-25T20:32:49.209567"
+    }
+   ],
+   "t2i_job_id": "d1c482a8-a5a6-41da-a6bb-f54a2248fd3d",
+   "t2i_qa": "BEST-OF-RETRIES v5 — descending, shod; strap on her RIGHT knee (v2 right knee, v3 correct side but climbing and barefoot, v4/v5 right knee). Flagged.",
+   "model_logged": "nano_banana_2",
+   "file": "renders/BR29_v2.png",
+   "i2v_job": "AUjC5lkZ6Gy7NOd4Vf4698XKs7vTGBlTDdYiSSZbl0kPDODoON-8dYkau3pKO_fQE-eq8Zgy"
+  },
+  "HK2-01": {
+   "beat_id": "HK2-01",
+   "retries": [],
+   "t2i_job_id": "0ca63cee-dac3-4280-b670-33d7decf0005",
+   "model_logged": "nano_banana_2",
+   "t2i_qa": "USE with motion change (strap already seated; press-and-lift), barefoot (minor)",
+   "file": "renders/HK2-01_v1.png",
+   "i2v_qa": "USE — seated press-and-lift on the near (left) knee; barefoot at home (continuity flag)"
+  }
+ }
+}
