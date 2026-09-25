@@ -15,3 +15,4 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 07 | Barbara sits beside Margaret, behind the table, on Margaret's left | 37135aa1-1739-450c-bfb5-876b43b2b3a2 | APPROVED (option C). Built as the end position first; frame 06 is derived backwards from it. |
 | 06 | Barbara carries her chair round behind the table and sets it on Margaret's left | ae25710f-5261-491d-96f2-24e11b02e6c5 | APPROVED (option B, built backwards from 07) |
 | 08 | Strap reveal: Barbara, beside Margaret, draws her trouser up; Margaret leans in to look (new low angle from the table end) | 669e8523-3404-4040-b9a8-71d438b6db8e | APPROVED (option A) |
+| 09 | Barbara OTS: "It's called Stryde… All night." | 1ca74736-fb34-4abd-b5ee-b40f003d2b37 | APPROVED (option B; A drifted to a dark kitchen and a different face) |
