@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.55.1) — the only authoritative standard for this repo. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself.
+description: AI Prompt Engineer Global Standards (V7.56.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -30,6 +30,8 @@ Read every section a deliverable touches **before** writing it. Sections cross-r
 6. Locked defaults (§44)
 
 Where a script line contradicts a product spec or visual standard, the render follows the higher layer and the line is **flagged to the advertiser, not rewritten**. Anything not in these six layers is not authoritative — including anything auto-loaded alongside this document.
+
+**Run mode (§1, §44 default 83, Appendix E0).** **Manual is the default, always** — you write prompts, the user generates and reviews. Automatic runs only when the user explicitly calls it ("we will use automation" or an equally direct instruction), per build, through the separate `ai-prompt-engineer-auto` skill. Never infer it from "check this render" or "fix this"; never carry it into the next build. Checking one render the user names, or trimming one clip they supply (E11), is still Manual.
 
 **Three artefacts.** Standards (global, product-agnostic) · Product Sheet (one per product, Appendix B) · Build Sheet (one per build, Appendix C). **Nothing that names a product, brand, body region, character or location enters the Standards.** Sheets fill slots the Standards define; they never invent or override a rule.
 
@@ -220,6 +222,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 **APPENDIX D — RATIONALE INDEX**
 
 **APPENDIX E — AUTOMATION LAYER *(new at V7.36)***
+- E0. Run modes — Manual (default) and Automatic *(new V7.56.0)*
 - E1. QA matrix — every check bound to an instrument, a threshold, and an on-fail action
 - E2. Failure taxonomy and retry budgets
 - E3. Run ledger — the build's state file (`run_ledger.json`)
@@ -230,11 +233,12 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - E8. Boundary definitions
 - E9. Build directory layout
 - E10. Doc-lint — standing §34 step at every version cut
+- E11. Trim pass — dead air and inhales *(new V7.56.0 — unverified on production clips)*
 
 **PENDING AMENDMENTS**
 
 **OPEN DECISIONS**
 
-**CHANGELOG — V7.55.0 → V7.55.1 *(cut authorised)***
+**CHANGELOG — V7.55.1 → V7.56.0 *(cut authorised)***
 
-**CHANGELOG — V7.54.2 → V7.55.0 *(cut authorised)***
+**CHANGELOG — V7.55.0 → V7.55.1 *(cut authorised)***

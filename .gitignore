@@ -1,0 +1,8 @@
+# Automatic run mode media (Appendix E0/E9) stays out of git
+builds/**/renders/
+builds/**/trim/
+*.mp4
+*.mov
+*.wav
+*.mp3
+__pycache__/
