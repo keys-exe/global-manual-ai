@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.4
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.14
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -12,6 +12,7 @@ product; it carries everything that step needs.
     the per-batch checklist ..... CHECKLIST
     the assertions .............. verify()
     the geometry checker ........ check(), was stryde_frame_check.py
+    the fit / "adjustable" rule . ADJUSTABLE_RULE, NEG_ADJUST (V7.49.14)
     the V7.49.4 pattern fills ... HOLD_PC, HOLD_PROD, NEG_WARP_P, WEAR_*,
                                   REAR_VIEW_SPEC, DEMONSTRATION_TABLE, ...
                                   (content moved OUT of the Standards)
@@ -56,7 +57,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.13"
+VERSION = "7.49.14"
 
 # --------------------------------------------------------------- slots
 
@@ -205,14 +206,17 @@ NEG_BENT = (
 # seating beat and a worn beat describe one position rather than two.
 SEAT_LOCK = (
 "The strap is already fully formed and closed — correct geometry, band closed, wordmark readable — but "
-"sitting clearly off-position, well down the shin below the knee. Both hands slide it smoothly upward in a "
-"single unhurried movement and seat it: it comes to rest ON THE PATELLAR TENDON, at the exact point where the "
-"raised wave on the shell's top edge meets the underside of the kneecap -- the concave notch cupping the "
-"kneecap's lower border, its flesh filling the curve with no gap anywhere between skin and shell, the two matching peaks either side reaching "
-"no higher than the base of the kneecap's sides, the shell's outer ends carrying the chrome slides to the outer "
-"margins of the leg. It is stopped there by the kneecap itself and travels no further, never climbing onto it. The kneecap's face stays completely uncovered and clearly "
-"visible above it, its outline reading in full. The band stays closed and correctly formed throughout — "
-"repositioned only, never threaded, never fastened, never adjusted, never removed. Fingers are just beginning "
+"sitting clearly off-position at mid-shin, well below the knee, on a straight leg. Both hands hold the shell by "
+"its two sides, palms and fingertips flat on the matte shell, and slide the whole strap UPWARD in a single "
+"unhurried movement, travelling up the front of the shin as one piece, and seat it: it comes to rest ON THE "
+"PATELLAR TENDON, at the exact point where the raised wave on the shell's top edge meets the underside of the "
+"kneecap -- the concave notch cupping the kneecap's lower border, its flesh filling the curve with no gap "
+"anywhere between skin and shell, the two matching peaks either side reaching no higher than the base of the "
+"kneecap's sides, the shell's outer ends carrying the chrome slides to the outer margins of the leg, exactly as "
+"in the attached worn-placement reference. It is stopped there by the kneecap itself and travels no further, "
+"never climbing onto it. The kneecap's face stays completely uncovered and clearly visible above it, its "
+"outline reading in full. The band stays closed and correctly formed throughout — moved up the leg only, "
+"never threaded, never fastened, never adjusted, never tightened, never removed. Fingers are just beginning "
 "to lift away at the cut, still in contact, the movement unfinished.")
 
 NEG_PLACE = (
@@ -243,7 +247,8 @@ NEG_SEAT = (
 "band, no deformed shell, no stretched shell, no product changing shape, no product changing size, no hands "
 "passing through the product, no hands passing through the body, no additional hands, no second person, no "
 "two separate actions in one clip, no product travelling past the kneecap, no product climbing onto the kneecap, no shell riding up over the kneecap, no product coming to rest low on "
-"the shin")
+"the shin, no product moving downward, no product coming down from above the kneecap, no band being pulled "
+"tight, no band ends being tugged, no fingers pulling the band through the slides, no hands gripping the band")
 
 REF_PROD = (
 "The product exactly as in the attached reference image — a matte-black polymer shell spanning "
@@ -253,6 +258,32 @@ REF_PROD = (
 "face, a brushed chrome slide inset flush into each end of the shell, and a lowercase grey stryde wordmark "
 "centred on the lower body directly beneath the notch, horizontal and readable, never to one side "
 "of the notch —")
+
+# --- fit lines and the word "adjustable" (V7.49.14) --------------------
+# A generator reads "adjustable" as the act of adjusting: the band pulled
+# tighter, the tail tugged, fingers working at the slides. That is not how
+# this product is shown. A line about fit is covered by the FIT -- the closed
+# strap slid up the shin and seated -- and by the product itself.
+ADJUSTABLE_RULE = (
+"A script line about fit or adjustability -- 'adjustable', 'fits any knee', 'one size fits all', 'easy to "
+"put on', 'no fiddly straps', 'slips on in seconds' -- is covered by showing the fit, never the adjustment. "
+"First beat: SEAT_LOCK -- the closed strap slid UP from mid-shin along the front of the shin and seated on "
+"the patellar tendon, ending exactly on PLACEMENT_REFERENCES['front']. Second beat, when the line is long "
+"enough for two (§27): the product itself -- in hand, turned through the light (DEMONSTRATION_TABLE "
+"'Quality / materials'), or worn and already seated in a close front hold. Never shown: the band pulled "
+"tighter, the band tail tugged, the band threaded or re-threaded through a slide, fingers working at the "
+"slides, the strap opened, wrapped round the leg or closed. The word never enters a prompt. NEG_ADJUST on "
+"every in-hand beat; NEG_SEAT on every seating beat.")
+
+NEG_ADJUST = (
+"no band being pulled tight, no band ends being tugged, no band tail being pulled, no fingers pulling the "
+"band through the slides, no band being threaded through a slide, no band being unthreaded, no hands working "
+"the chrome slides, no tightening motion, no loosening motion, no strap being opened, no strap being "
+"wrapped around the leg, no strap being closed, no velcro, no buckle, no band tail hanging loose")
+
+# Seating beats attach the canonical product image AND the front worn frame
+# (the end position). The shin start is written, never shown by reference.
+SEAT_REFERENCES = ("composite", "front")
 
 # ==================================================================
 # MOVED FROM THE STANDARDS AT V7.49.4
@@ -335,7 +366,8 @@ REVEAL_STATUS = {
 # three-quarter beats, the BENT frame on any beat with the knee flexed
 # (seated, stairs, kneeling, rising), the REAR frame on rear, turning and
 # orbiting beats, and two of them on any beat where the leg turns or flexes
-# through the clip. Image + names: the beat still
+# through the clip. Seating beats attach the composite + the FRONT frame as
+# the end position (SEAT_REFERENCES, V7.49.14). Image + names: the beat still
 # carries PLACE_LOCK / ORIENT_LOCK in prose. The person in these frames is
 # not the beat's subject -- the reference carries placement, never identity.
 PLACEMENT_REFERENCES = {
@@ -393,9 +425,11 @@ DEMONSTRATION_TABLE = (
     ("It takes the load",
      "worn under a real step -- shell settling into the tissue under the kneecap, "
      "band tensioning and easing (12B tension cycle, 8A)"),
-    ("How it fits / where it sits",
-     "9B seating beat -- one move up the shin, seats with the kneecap's pole in the notch, "
-     "fingers lifting at the cut"),
+    ("How it fits / where it sits / adjustable / fits any knee",
+     "9B seating beat (SEAT_LOCK) -- the closed strap rises from mid-shin up the front of the "
+     "shin in one move and seats on the patellar tendon with the kneecap's pole in the notch, "
+     "ending on PLACEMENT_REFERENCES['front'], fingers lifting at the cut; then the product "
+     "itself if the line runs long. Never adjusted or tightened on camera (ADJUSTABLE_RULE)"),
     ("Fake vs real",
      "9C SIDE-BY-SIDE -- same force on both, the silicone fake folds"),
     ("Quality / materials (offer act)",
@@ -447,6 +481,8 @@ S = {
     # V7.49.4 pattern fills
     "HOLD-PC": HOLD_PC, "HOLD-PROD": HOLD_PROD, "NEG-WARP-P": NEG_WARP_P,
     "WEAR-CONCEAL": WEAR_CONCEAL, "WEAR-REVEAL": WEAR_REVEAL, "NEG-CONCEAL": NEG_CONCEAL,
+    # V7.49.14 fit lines
+    "NEG-ADJUST": NEG_ADJUST,
 }
 
 # ------------------------------------------- measured geometry ratios
@@ -507,6 +543,11 @@ RULINGS = {
         "was tested and dropped. Placement wording is per joint state: straight -- peaks "
         "no higher than the base of the kneecap's sides; bent -- peaks flanking the lower "
         "part of its sides, never past its middle.",
+    "fit_not_adjustment":
+        "LOCKED V7.49.14 (user). A fit or 'adjustable' line is covered by the seating move -- "
+        "closed strap, mid-shin, slid UP the front of the shin, seated on the patellar tendon "
+        "matching PLACEMENT_REFERENCES['front'] -- and by the product itself. Never by the band "
+        "being pulled, tightened, threaded or worked at the slides. See ADJUSTABLE_RULE.",
     "peak_asymmetry_RETIRED_7_49_10":
         "RETIRED. The peaks are EQUAL in height and width -- two matching pointed "
         "peaks either side of a crisp centred notch. The 'taller narrower peak on "
@@ -713,6 +754,11 @@ CHECKLIST = [
     "side and three-quarter beats: the shell reads as a WRAPPED plate "
     "following the leg's curve, wordmark still horizontal and readable, "
     "never a flat panel on the front",
+    "seating beats: the closed strap starts at mid-shin and moves UP the "
+    "front of the shin only -- never down, never from above the kneecap",
+    "seating beats: hands flat on the shell's sides, never on the band "
+    "ends or the slides; nothing pulled, tightened or threaded",
+    "seating beats: end position matches the front worn-placement reference",
 ]
 
 # back-compat for callers that imported the bare name
@@ -769,6 +815,11 @@ RETIRED_PHRASINGS = [
     "river of load",
     "molten amber load",
     "plumes descending",
+    # V7.49.14 -- a generator renders the word as the act of adjusting
+    "adjustable",
+    "adjust the strap",
+    "tighten the strap",
+    "pull the strap tight",
 ]
 
 # clauses that are legal ONLY inside a named negatives string
@@ -1002,6 +1053,23 @@ def verify(verbose=False):
         if clause not in SEAT_LOCK:
             fails.append("SEAT-LOCK missing: %s" % clause)
 
+    # 8b seating rises from the shin and never adjusts (V7.49.14)
+    for frag in ("mid-shin", "UPWARD", "never tightened", "worn-placement reference"):
+        if frag not in SEAT_LOCK:
+            fails.append("SEAT-LOCK missing: %s" % frag)
+    for clause in ("no product moving downward", "no band being pulled tight"):
+        if clause not in NEG_SEAT:
+            fails.append("NEG-SEAT missing: %s" % clause)
+    for clause in ("no band being pulled tight", "no fingers pulling the band through the slides",
+                   "no tightening motion"):
+        if clause not in NEG_ADJUST:
+            fails.append("NEG-ADJUST missing: %s" % clause)
+    for frag in ("SEAT_LOCK", "NEG_ADJUST", "PLACEMENT_REFERENCES['front']", "never the adjustment"):
+        if frag not in ADJUSTABLE_RULE:
+            fails.append("ADJUSTABLE_RULE missing: %s" % frag)
+    if not all(k in {**CANONICAL_REFERENCES, **PLACEMENT_REFERENCES} for k in SEAT_REFERENCES):
+        fails.append("SEAT_REFERENCES names an unregistered reference")
+
     # 9 one mechanism claim, and it is not the retired one
     if MECHANISM_CLAIM != "protection":
         fails.append("mechanism claim is not the locked one")
@@ -1042,7 +1110,7 @@ def counts():
 # ==================================================================
 SHEET_MD = r'''# Product Sheet — Stryde Precision Strap
 
-**V7.49.4.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
+**V7.49.14.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
 
 Every geometry figure below was measured off the five canonical renders (63, 64, 65, 66, 68) with a roll correction applied, not read off the prose. Where a figure is external it is marked Tier 3 and is not advertiser-held.
 
@@ -1050,7 +1118,7 @@ Every geometry figure below was measured off the five canonical renders (63, 64,
 
 ## 1. Product name and category
 
-Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior shell on an adjustable knit band, worn on one knee, sitting under the kneecap and over the upper patellar tendon.
+Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior shell on a closed knit band, worn on one knee, sitting under the kneecap and over the upper patellar tendon.
 
 **Market note.** Multiple marketplace sellers list a "Stryde Precision Strap" built around a soft silicone lock-point pad. Our hero is rigid matte polymer with brushed chrome hardware, which is the opposite construction. Two consequences: the cheap-silicone villain archetype (§10) is the literal market reality and the anti-knock-off angle is stronger than it looked; and the name question is the advertiser's counsel's, not this sheet's.
 
@@ -1078,7 +1146,7 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 - Band width is roughly a quarter to a third of the shell's greatest height.
 - **No width-to-height figure exists yet.** See §7 below.
 
-**5 — Secondary components.** Band: flat matte-black woven elastic webbing, threading through each slide and folding back on itself, so the adjustment sits at the sides of the leg and never at the rear. **Inner-face keeper loops:** spaced soft matte-black moulded rounded rectangles, a little narrower than the band, standing slightly proud of the webbing, at least two visible per side. Hardware: polished chrome rectangular bars inset flush into each shell end, carrying fine engraved dashed detail on the face — captured by the shell, not floating on the band.
+**5 — Secondary components.** Band: flat matte-black woven elastic webbing, threading through each slide and folding back on itself, so the fold-back sits at the sides of the leg and never at the rear. The band is never shown being adjusted (§12 below). **Inner-face keeper loops:** spaced soft matte-black moulded rounded rectangles, a little narrower than the band, standing slightly proud of the webbing, at least two visible per side. Hardware: polished chrome rectangular bars inset flush into each shell end, carrying fine engraved dashed detail on the face — captured by the shell, not floating on the band.
 
 **6 — Interface mechanism.** Band threads through the chrome slides and folds back. There is no visible velcro tab, buckle or fastening in any canonical render, and none at the rear in any beat.
 
@@ -1144,7 +1212,7 @@ British, roughly 55–80. Cast to the buyer, balanced across men and women, with
 
 | Claim | Tier | Status |
 |---|---|---|
-| Below-knee circumference roughly 25–44 cm across sized ranges; 15–46 cm adjustable | 3 | Category figures from competitor sizing. Not advertiser-held. Does not block B-roll; do not present as an advertiser-held product fact unless supplied/verified. Exact readable numerals may be POST-ASSIST |
+| Below-knee circumference roughly 25–44 cm across sized ranges; 15–46 cm range | 3 | Category figures from competitor sizing. Not advertiser-held. Does not block B-roll; do not present as an advertiser-held product fact unless supplied/verified. Exact readable numerals may be POST-ASSIST |
 | Band height about 2 inches | 3 | Category figure. Not advertiser-held |
 | Adult patella about 4–5 cm wide; tendon 4–5 cm from inferior pole to tibial tuberosity | 3 | Anatomical anchor, used for scale reasoning only, never as a claim |
 | Clinical placement "just below the kneecap"; one manufacturer specifies about 2 inches below | 3 | Third-party guidance. Compatible with the contact phrasing — the top edge touches the pole while the body covers the upper tendon |
@@ -1170,6 +1238,17 @@ The global Standards are product-agnostic from V7.49.4. Everything below used to
 | 16A | Widget examples | `WIDGET_EXAMPLES` |
 | Open Decision 15 | Orthographic elevation | `OPEN_ITEMS`, `UNSETTLED`, `RULINGS` |
 | 8 | `[FEATURE]` / `[FRACTION]` / `[RIGID]` | notch and peaks / three fifths / shell |
+
+---
+
+## 12. Fit lines and "adjustable" *(V7.49.14 — user ruling)*
+
+**Show the fit, never the adjustment.** A script line about fit — "adjustable", "fits any knee", "one size fits all", "easy to put on" — is covered by:
+
+1. **The seating beat (`SEAT_LOCK`).** The strap is already closed and sits at mid-shin on a straight leg. Both hands, flat on the shell's sides, slide it **up** the front of the shin in one unhurried move until it seats on the patellar tendon, the kneecap's lower border in the notch, ending exactly like the front worn-placement reference. It only ever moves up — never down, never from above the kneecap.
+2. **The product itself**, when the line is long enough for a second beat — in hand, turned through the light, or worn and already seated in a close front hold.
+
+**Never shown:** the band pulled tighter, the tail tugged, the band threaded through a slide, fingers working the slides, the strap opened, wrapped or closed. **The word "adjustable" never enters a prompt** — a generator renders it as the act of adjusting. Negatives: `NEG-SEAT` on seating beats, `NEG-ADJUST` on in-hand beats. References: the product composite plus the front worn frame (`SEAT_REFERENCES`).
 
 ---
 
