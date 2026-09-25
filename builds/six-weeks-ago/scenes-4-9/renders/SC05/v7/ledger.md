@@ -30,3 +30,4 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 18 (replaced) | Previous 18 (e08d68ac) superseded: the finger sat on the side of the knee, not on the patellar tendon (user: "she should be pointing at the patellar tendon") | – | moved to rejected/ |
 | – | Frame 19 tries 6bd7b324 / 0e9bf448 / fixes 1e4beb64 / 534e8b67 / tendon tries 61c3df0e / 48e54fa0 / 36de40bf | – | REJECTED: bare knee, finger on the brace, finger above the knee; the high side angle cannot show the tendon |
 | 18 | Knee insert from the front: Margaret's finger just below the kneecap on the patellar tendon, level with Barbara's strap | 6ec98f45-43cf-4423-a0e2-9f27d389d603 (edit of 013422cd) | APPROVED (option A) |
+| 19 | Margaret OTS: quiet "Yes.", eyes on her knee, hands out of frame | a56a17b4-57ac-482d-8837-edaba82cdf0c (edit of 16) | APPROVED (option A) |
