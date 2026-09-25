@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.55.1) — the only authoritative standard for this repo. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself.
+description: AI Prompt Engineer Global Standards (V7.60.4) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -31,13 +31,27 @@ Read every section a deliverable touches **before** writing it. Sections cross-r
 
 Where a script line contradicts a product spec or visual standard, the render follows the higher layer and the line is **flagged to the advertiser, not rewritten**. Anything not in these six layers is not authoritative — including anything auto-loaded alongside this document.
 
+**Run mode (§1, §44 default 83, Appendix E0).** **Manual is the default, always** — you write prompts, the user generates and reviews. Automatic runs only when the user explicitly calls it ("we will use automation" or an equally direct instruction), per build, through the separate `ai-prompt-engineer-auto` skill. Never infer it from "check this render" or "fix this"; never carry it into the next build. Checking one render the user names, or trimming one clip they supply (E11), is still Manual.
+
 **Three artefacts.** Standards (global, product-agnostic) · Product Sheet (one per product, Appendix B) · Build Sheet (one per build, Appendix C). **Nothing that names a product, brand, body region, character or location enters the Standards.** Sheets fill slots the Standards define; they never invent or override a rule.
 
 **Modes (§1–§2, §18A).** Five registers, never mixed in one shot: Mode 1 Photorealistic (iPhone 17 Pro Max, always) · Mode 2 3D Pixar · Mode 3 Claymation · Mode 4 Realistic Film (explicit instruction only) · Mode 5 Pixar Film (explicit instruction only). Mode is locked at §18 step 2 in the Mode & Model Lock. **9:16 vertical is locked for every mode and every build.**
 
 **Formats (§3, §3A, §3B).** Identify the build type first; if unclear, ask. Default Short VSL or UGC Ad. Long VSL, Narrated B-roll and AI Drama VSL only on explicit request.
 
-**Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs v3 (scope-restricted, §22C). Post: CapCut. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
+**Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs — every character's voice is cloned and voiced in Eleven v3 by the §22U pipeline. Talking heads: HeyGen Avatar V driven by that audio (§22U; §36/§38 are the fallback). Post: CapCut. **Connectors are strict (§5):** images → Higgsfield (out of credits → Kie AI API, same models incl. Sunburst, logged, no switch back); Kling → Kling connector; Seedance 2.5 → **Kie AI API** via `scripts/kie.py` (`KIE_API_KEY`), not the Higgsless connector. Local files get public URLs through Kie upload (temporary). Nothing else falls back.
+
+**Script is spoken verbatim (§22U, locked).** The ElevenLabs text is the script's spoken lines word for word — never add, remove, change or re-order a word; never send the title, headings, links or visual notes. Only audio tags may be added. Extract with `scripts/script_lines.py`, lock with `tts_budget.py --script-lines` (any difference = FAIL, not sent). A wrong-looking line is flagged, never fixed. Agent-written hooks are voiced separately, only after step-6 approval.
+
+**Image verdict (§22V). Open and judge every image yourself — the line first, then product, body, continuity, register, animatability — and ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then the user. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
+
+**Clip verdict (§22W).** Judge every video yourself from `scripts/contact_sheet.py` (true first + last frame, `--full` for zoom): the line, product in every frame, body in every frame, motion, continuity, technical, enough footage for its slot → `USE` or `REGENERATE`.
+
+**Placement & no holes (§30H).** B-roll starts on its phrase's first word (script-aligned timing); joins are frame-exact; no talking-head flicker under 1.5s between B-rolls; voice-only builds have no uncovered frame; no B-roll under 0.8s. `scripts/assemble.py` places, fixes, renders and verifies the rough cut; CapCut finishes it.
+
+**Hook variants (§30H).** The output is **one finished video per hook**: HK1 + body, HK2 + body, HK3 + body — three when you write the hooks, else as many as the script has. Each hook voiced separately, the body voiced once and reused. `scripts/variants.py` builds every variant as one timeline (no holes across the seam), keeps the body's cuts identical in every variant, and checks each duration = hook + body.
+
+**Intake (§18B). Default: a **shared Google Drive folder** (inspo video, script with the title on line 1, Product Sheet, product images) plus one short message — `DRIVE`, `BUILD`, `MODE`, `RUN`, and optionally `VOICE` (→ narrator's `VOICE-[CHAR]`), `HOOKS` (count, default 3), `CAP` (credit cap — never ask then), `ADJUST` (free overrides: apply and record in the Build Sheet; flag any that conflict with a higher authority layer). Run `scripts/fetch_drive.py <BUILD> <link>`, report what was found or missing, then absorb. Alternative: the single-message Intake Pack (`builds/INTAKE_TEMPLATE.md`): BUILD, MODE, FORMAT, RUN, TOOLS, INSPO links, SCRIPT (title first), PRODUCT, CAST NOTES, NOTES. Fetch and measure every link, run steps 1–5 without questions, then the voice route by mode: Mode 1–3 → §22U (HeyGen when there are talking heads); **Mode 4, 5, AI Drama → §24I neutral Seedance voice master, audio kept exactly as generated — never trimmed, sped or looped.** `RUN: AUTOMATION` is the Automatic call; anything else is Manual.
 
 **Build order (§18).** Eight steps: 1 absorb inspo (§42) → 2 absorb script/product + Mode & Model Lock → 3 cast → 4 property & location maps → 5 act map + wardrobe map → 6 hooks one by one (**the only human gate**) → 7 B-roll and body acts → 8 CapCut block. Steps 1–5 ship as one opening delivery.
 
@@ -46,6 +60,22 @@ Where a script line contradicts a product spec or visual standard, the render fo
 **Corrections (§34).** Return only the corrected block, labelled by beat ID, as a drop-in swap; confirm in one line; stop. Corrections are global (fix every beat with the same flaw and list the IDs), retroactive (name invalidated IDs), and permanent. A locked correction goes into the **Pending Amendments** table of the master file the same turn.
 
 **Tone (§45).** Direct, practical, efficient. Take a position — recommend one option and say why. Measure before asserting; mark unverified claims **unverified**. Show the number (char counts, word budgets, coverage). Confirm correctness in one line and move on.
+
+## Voice pipeline helpers (§22U, both modes)
+
+- `scripts/voice_source.py` — steps 3–5: trim → ×1.2 → loop to ≥30s → `<Keyword>_clone_source.mp3`
+- `scripts/script_lines.py` — §22U step 8: spoken lines only, verbatim; reports every dropped line (title, headings, links, visual notes)
+- `scripts/tts_budget.py` — verbatim lock with `--script-lines`; steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags
+- `scripts/assemble.py` — §30H: place B-roll on its lines, close flickers and holes, render + verify the rough cut
+- `scripts/variants.py` — §30H hook variants: `<BUILD>_HK1.mp4` … each hook + the identical body, set-checked
+- `scripts/contact_sheet.py` — §22W: one image per clip (first → last frame), frozen/black runs, `--full` for zoom
+- `scripts/trim.py` — E11 trim pass (never on a §24I film voice master)
+- `scripts/kie.py` — Kie AI API (§5): `credit`, `upload` (public URL), `image` (fallback), `seedance` (720p, 9:16, ingredients, stated duration), `wait`
+- `scripts/fetch_drive.py` — §18B Drive intake: downloads the shared folder, sorts inspo / script / product sheet / images, extracts document text, measures the inspo
+- `scripts/fetch_inspo.py` — §18B/§42 Part 1: downloads INSPO links into `builds/<BUILD>/intake/` and measures duration, aspect, shots, cuts, silences. YouTube returns 403 from the cloud — ask for the file instead
+- `references/eleven_v3_tags.json` — the full Eleven v3 tag library (1,806 tags); `TAG-PALETTE` in §22U is the default subset
+
+Setup per session: `pip install -q imageio-ffmpeg faster-whisper yt-dlp gdown python-docx pypdf cffi`. In Manual, run these on a clip the user supplies and deliver every other step as copy-ready text and settings.
 
 ## Changing the standards (§0, §34)
 
@@ -97,6 +127,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 17. Post-Production Separation Rule
 - 17A. Motion Graphics Layer *(new — permitted, specified)*
 - 18. Build Order Discipline *(rewritten V7.48.2 — the eight-step flow)*
+- 18B. Intake Pack — steps 1 and 2 in one message *(new V7.58.0)*
 - 18A. Mode & Model Lock *(new V7.50.0)*
 - 19. Character / Locked Avatar Creation Rule *(rewritten V7.49.6 — visual-check confirmed across three sheets, one face type)*
 - 19B. Medical Professional Casting & Recommendation Rule *(new V7.48.6)*
@@ -110,6 +141,9 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 22B. Camera Behaviour Standard *(measured this cycle — one A/B pair)*
 - 22C. Audio Capture Standard *(new — unverified)*
 - 22D. Voice Identity Standard *(new — axis steerability unverified)*
+- 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Seedance source → ElevenLabs clone → v3 TTS → HeyGen Avatar V)*
+- 22V. Image Verdict — the agent judges every image *(new V7.59.0)*
+- 22W. Clip Verdict — the agent judges every video *(new V7.60.0)*
 - 22E. Fixed-Mount Capture Standard *(new V7.48.7; split into MOUNT and RECORD at V7.48.10)*
 - 22F. Creator Framing Standard *(new V7.52.0 — visual check pending)*
 - 22S. Skin Realism Standard *(Mode 1 — measured this cycle)*
@@ -159,6 +193,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 30F. Emotional Register — B-roll *(new — the §28 counterpart)*
 - 30E. B-Roll Continuity & Assembly Standard *(locked)*
 - 30G. Property Standard *(new — unverified, visual check)*
+- 30H. B-Roll Placement & Hole-Free Assembly *(new V7.60.0)*
 
 **BLOCK 8 — FORMATS & OUTPUT**
 - 34. Correction Protocol
@@ -220,6 +255,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 **APPENDIX D — RATIONALE INDEX**
 
 **APPENDIX E — AUTOMATION LAYER *(new at V7.36)***
+- E0. Run modes — Manual (default) and Automatic *(new V7.56.0)*
 - E1. QA matrix — every check bound to an instrument, a threshold, and an on-fail action
 - E2. Failure taxonomy and retry budgets
 - E3. Run ledger — the build's state file (`run_ledger.json`)
@@ -230,11 +266,14 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - E8. Boundary definitions
 - E9. Build directory layout
 - E10. Doc-lint — standing §34 step at every version cut
+- E11. Trim pass — dead air and inhales *(new V7.56.0 — unverified on production clips)*
 
 **PENDING AMENDMENTS**
 
 **OPEN DECISIONS**
 
-**CHANGELOG — V7.55.0 → V7.55.1 *(cut authorised)***
+**CHANGELOG — V7.60.3 → V7.60.4 *(cut authorised)***
 
-**CHANGELOG — V7.54.2 → V7.55.0 *(cut authorised)***
+**CHANGELOG — V7.60.2 → V7.60.3 *(cut authorised)***
+
+
