@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.15
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.16
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -59,7 +59,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.15"
+VERSION = "7.49.16"
 
 # --------------------------------------------------------------- slots
 
@@ -178,12 +178,13 @@ ORIENT_C = (
 # opening between the kneecap and the notch, so the shell reads disengaged
 # from the thing it acts on. Stated positively as contact, per PLACE-LOCK.
 PLACE_BENT = (
-"With the knee bent the kneecap stands out as a distinct bulge and the shell sits directly beneath it: the "
-"concave notch cradles the underside of the kneecap along its whole curve, the flesh of the kneecap pressing "
-"into the notch and filling it with no gap of bare skin anywhere between them, and the two matching peaks "
-"rising either side to flank the lower part of the kneecap's sides -- never past its middle and never covering "
-"any of its face. The kneecap's own face stays completely uncovered above the "
-"shell, its outline reading in full. The shell's lower body carries on down onto the upper shin. A brushed "
+"With the knee bent the kneecap stands out as a distinct bulge and the shell sits HIGH, pushed well up the "
+"leg and tight against it: the shell's top edge sits level with the kneecap's lower pole, the concave notch "
+"pressed firmly up into the underside of the kneecap along its whole curve, the flesh of the kneecap filling "
+"it with no gap of bare skin anywhere between them, and the two matching peaks rising either side to flank "
+"the lower half of the kneecap's sides -- up to but never past its middle and never covering any of its face. "
+"The kneecap's own face stays completely uncovered above the shell, its outline reading in full. The shell's "
+"lower body reaches only just onto the top of the shin, never down the shin. A brushed "
 "chrome slide sits at each outer margin of the leg with the black coarse-knit band running back from it. The shell "
 "never rotates with the joint -- the notch stays under the kneecap through every angle of flexion.")
 
@@ -199,7 +200,8 @@ PLACE_PROFILE = (
 "it is a wrapped plate, never a flat panel stuck on the front.")
 
 NEG_BENT = (
-"no shell above the kneecap, no shell covering the kneecap, no gap of bare skin between the kneecap and the "
+"no shell above the kneecap, no shell covering the kneecap, no shell sitting low on the shin, no shell top edge "
+"below the kneecap's lower pole, no gap of bare skin between the kneecap and the "
 "notch, no kneecap sitting clear of the notch, no shell rotating with the joint, no shell sliding down the "
 "shin, no wordmark upside down, no wordmark rotated, no flat panel sitting proud of the leg, no shell edge "
 "lifting away from the skin, no second slide at the centre front")
@@ -475,17 +477,19 @@ PLACEMENT_REFERENCES = {
     },
     "bent": {
         "file": "stryde_refs/worn_bent.jpg",
-        "job_id": "d2d0124c-1ab8-4d41-ac95-9b825250493b",
+        "job_id": "8a8979ac-9eb1-4398-b41b-eea793a99a26",
         "higgsfield_media": "use the job_id as the medias value",
         "model_passed": "nano_banana_pro", "model_logged": "nano_banana_2",
         "attempt": ("3 of 3 -- attempt 1 (b0a3f260) REGENERATE Q2: too side-on, one peak, notch lost; "
                     "attempt 2 (970785f4) REGENERATE Q2: tall narrow U-shell, horn peaks, wrong type; "
-                    "attempt 3 USE with flags"),
+                    "attempt 3 (d2d0124c) USE with flags; V7.49.16 user correction 'higher' -> "
+                    "edit of d2d0124c (8a8979ac), strap raised only, USE"),
         "flags": ("near peak reads low at this yaw; band at the near slide reads smoother than the knit; "
                   "wordmark shifted toward the far peak by yaw"),
-        "reads": ("right knee bent about a right angle, seated, three-quarter from the front right; the notch "
-                  "cups the underside of the jutting kneecap, the far peak flanking its lower side, the face "
-                  "bare above; broad low shell wrapping the leg, slim chrome slide with three dotted chevrons "
+        "reads": ("right knee bent about a right angle, seated, three-quarter from the front right; the shell "
+                  "sits HIGH -- top edge level with the kneecap's lower pole, the notch pressed up into its "
+                  "underside, the far peak flanking the lower half of its side, the face bare above, the "
+                  "lower body only just onto the top of the shin; broad low shell wrapping the leg, slim chrome slide with three dotted chevrons "
                   "at the near margin, band running back round the calf. Attached on every bent-knee worn beat."),
     },
     "rear": {
@@ -637,7 +641,12 @@ RULINGS = {
         "is a WORN beat only (PLACEMENT_REFERENCES['bent']); a bent-knee seating beat "
         "was tested and dropped. Placement wording is per joint state: straight -- peaks "
         "no higher than the base of the kneecap's sides; bent -- peaks flanking the lower "
-        "part of its sides, never past its middle.",
+        "half of its sides, up to but never past its middle (V7.49.16).",
+    "bent_height":
+        "LOCKED V7.49.16 (user: 'the bent one should be higher'). On a bent knee the shell sits "
+        "HIGH: top edge level with the kneecap's lower pole, notch pressed up into its underside, "
+        "the lower body only just onto the top of the shin. Applies to every bent-knee worn "
+        "beat (PLACE_BENT, NEG_BENT) and to PLACEMENT_REFERENCES['bent'].",
     "fit_not_adjustment":
         "LOCKED V7.49.14 (user). A fit or 'adjustable' line is covered by the seating move -- "
         "closed strap, mid-shin, slid UP the front of the shin, seated on the patellar tendon "
@@ -864,8 +873,8 @@ CHECKLIST = [
     "leg silhouette at each outer edge",
     "bent-knee beats: the kneecap's flesh presses INTO the notch curve and "
     "fills it -- no gap between kneecap and notch",
-    "bent-knee beats: the shell's lower body carries on down onto the upper "
-    "shin, and the shell has not rotated with the joint",
+    "bent-knee beats: the shell sits HIGH -- top edge level with the kneecap's "
+    "lower pole, only just onto the top of the shin -- and has not rotated with the joint",
     "side and three-quarter beats: the shell reads as a WRAPPED plate "
     "following the leg's curve, wordmark still horizontal and readable, "
     "never a flat panel on the front",
