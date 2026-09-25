@@ -10,7 +10,7 @@ fi
 
 # cffi: the system cryptography package (pulled in by pypdf) fails without it
 pip install -q --disable-pip-version-check \
-  imageio-ffmpeg faster-whisper yt-dlp gdown python-docx pypdf cffi 2>&1 | grep -v "as the 'root' user" || true
+  imageio-ffmpeg faster-whisper auto-editor yt-dlp gdown python-docx pypdf cffi 2>&1 | grep -v "as the 'root' user" || true
 
 python3 -c "import imageio_ffmpeg, faster_whisper, yt_dlp, gdown, docx, pypdf"
 

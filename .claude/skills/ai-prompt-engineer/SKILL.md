@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.60.5) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.60.6) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -39,7 +39,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Formats (§3, §3A, §3B).** Identify the build type first; if unclear, ask. Default Short VSL or UGC Ad. Long VSL, Narrated B-roll and AI Drama VSL only on explicit request.
 
-**Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs — every character's voice is cloned and voiced in Eleven v3 by the §22U pipeline. **Every voice starts as a Seedance clip, audio extracted there — never ElevenLabs Voice Design, never a library/premade voice** (§22U, V7.60.5). Talking heads: HeyGen Avatar V driven by that audio (§22U; §36/§38 are the fallback). Post: CapCut. **Connectors are strict (§5):** images → Higgsfield (out of credits → Kie AI API, same models incl. Sunburst, logged, no switch back); Kling → Kling connector; Seedance 2.5 → **Kie AI API** via `scripts/kie.py` (`KIE_API_KEY`), not the Higgsless connector. Local files get public URLs through Kie upload (temporary). Nothing else falls back.
+**Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs — every character's voice is cloned and voiced in Eleven v3 by the §22U pipeline. **Every voice starts as a Seedance clip, audio extracted there — never ElevenLabs Voice Design, never a library/premade voice** (§22U, V7.60.6). Talking heads: HeyGen Avatar V driven by that audio (§22U; §36/§38 are the fallback). Post: CapCut. **Connectors are strict (§5):** images → Higgsfield (out of credits → Kie AI API, same models incl. Sunburst, logged, no switch back); Kling → Kling connector; Seedance 2.5 → **Kie AI API** via `scripts/kie.py` (`KIE_API_KEY`), not the Higgsless connector. Local files get public URLs through Kie upload (temporary). Nothing else falls back.
 
 **Script is spoken verbatim (§22U, locked).** The ElevenLabs text is the script's spoken lines word for word — never add, remove, change or re-order a word; never send the title, headings, links or visual notes. Only audio tags may be added. Extract with `scripts/script_lines.py`, lock with `tts_budget.py --script-lines` (any difference = FAIL, not sent). A wrong-looking line is flagged, never fixed. Agent-written hooks are voiced separately, only after step-6 approval.
 
@@ -47,13 +47,15 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Clip verdict (§22W).** Judge every video yourself from `scripts/contact_sheet.py` (true first + last frame, `--full` for zoom): the line, product in every frame, body in every frame, motion, continuity, technical, enough footage for its slot → `USE` or `REGENERATE`.
 
+**B-roll length (E6, V7.60.6).** Every B-roll clip — mechanism and anatomy included — is as long as the script line (or §27 phrase) it covers: the span on the voice master's word timestamps + 0.5s, rounded up, Kling 3–15s. Never a fixed 5s/3s. The voice master comes before any B-roll call.
+
 **Placement & no holes (§30H).** B-roll starts on its phrase's first word (script-aligned timing); joins are frame-exact; no talking-head flicker under 1.5s between B-rolls; voice-only builds have no uncovered frame; no B-roll under 0.8s. `scripts/assemble.py` places, fixes, renders and verifies the rough cut; CapCut finishes it.
 
 **Hook variants (§30H).** The output is **one finished video per hook**: HK1 + body, HK2 + body, HK3 + body — three when you write the hooks, else as many as the script has. Each hook voiced separately, the body voiced once and reused. `scripts/variants.py` builds every variant as one timeline (no holes across the seam), keeps the body's cuts identical in every variant, and checks each duration = hook + body.
 
 **Intake (§18B). Default: a **shared Google Drive folder** (inspo video, script with the title on line 1, Product Sheet, product images) plus one short message — `DRIVE`, `BUILD`, `MODE`, `RUN`, and optionally `VOICE` (→ narrator's `VOICE-[CHAR]`), `HOOKS` (count, default 3), `CAP` (credit cap — never ask then), `ADJUST` (free overrides: apply and record in the Build Sheet; flag any that conflict with a higher authority layer). Run `scripts/fetch_drive.py <BUILD> <link>`, report what was found or missing, then absorb. Alternative: the single-message Intake Pack (`builds/INTAKE_TEMPLATE.md`): BUILD, MODE, FORMAT, RUN, TOOLS, INSPO links, SCRIPT (title first), PRODUCT, CAST NOTES, NOTES. Fetch and measure every link, run steps 1–5 without questions, then the voice route by mode: Mode 1–3 → §22U (HeyGen when there are talking heads); **Mode 4, 5, AI Drama → §24I neutral Seedance voice master, audio kept exactly as generated — never trimmed, sped or looped.** `RUN: AUTOMATION` is the Automatic call; anything else is Manual.
 
-**Build order (§18).** Eight steps: 1 absorb inspo (§42) → 2 absorb script/product + Mode & Model Lock → 3 cast → 4 property & location maps → 5 act map + wardrobe map → 6 hooks one by one (**the only human gate**) → 7 B-roll and body acts → 8 CapCut block. Steps 1–5 ship as one opening delivery.
+**Build order (§18).** Eight steps: 1 absorb inspo (§42) → 2 absorb script/product + Mode & Model Lock → 3 cast → 4 property & location maps → 5 act map + wardrobe map → 6 hooks one by one (**the only human gate** in Manual; Automatic has no gates — E0) → 7 B-roll and body acts → 8 CapCut block. Steps 1–5 ship as one opening delivery.
 
 **Output layout (§16, §16A).** Every prompt in its own block; never clump; never blend prompt text with explanation. Each shipped prompt carries its model string, aspect ratio, resolution/duration and character count. Editor/strategy notes sit outside the prompt block.
 
@@ -272,9 +274,10 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 
 **OPEN DECISIONS**
 
+**CHANGELOG — V7.60.5 → V7.60.6 *(cut authorised)***
+
 **CHANGELOG — V7.60.4 → V7.60.5 *(cut authorised)***
 
-**CHANGELOG — V7.60.3 → V7.60.4 *(cut authorised)***
 
 
 
