@@ -523,5 +523,26 @@
    "file": "renders/HK2-01_v1.png",
    "i2v_qa": "USE — seated press-and-lift on the near (left) knee; barefoot at home (continuity flag)"
   }
+ },
+ "balances_end": {
+  "higgsfield": 21250.5,
+  "kling": 7181,
+  "kie": 61995.8,
+  "ts": "2026-09-25T21:57Z"
+ },
+ "spend": {
+  "higgsfield": 302.5,
+  "kling": 1776,
+  "kie_this_run": 630,
+  "kie_note": "shared Kie balance fell 26,208 over the run; only one Seedance task (84c6ca0491df85c35db108dc00177e42, 630) came from this run"
+ },
+ "delivery": {
+  "variants": "PASS",
+  "body_identical": true,
+  "files": [
+   "edit/down-forwards-again_HK1.mp4",
+   "edit/down-forwards-again_HK2.mp4",
+   "edit/down-forwards-again_HK3.mp4"
+  ]
  }
 }

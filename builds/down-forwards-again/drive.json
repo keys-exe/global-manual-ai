@@ -1,5 +1,19 @@
-{"task_folder":"1j0QiaFzwqK1NHlQH3TCZ3Qf5gsPQMZ49","OUTPUT":"1OABbJ8mSJqcXWVJU7jqCcEcwlPyXrZcj",
- "01_ABSORPTION":"1okypXh4fdkzZx1on56ghpXwjXFoIcE8o","02_CAST":"1w0VSVugitN0O2LpKSyMH37K-8MTu8rKp",
- "03_LOCATIONS":"1AnrCVDxQNvBIiZDYce4rN0tngmeXWOGZ","04_VOICE":"1VTTeUA56wWAnkPkCVTHMIImPvFrs0Rpu",
- "05_HOOKS":"1-n9xVAtqPOIscwYyUQyW9loMkpVkffPw","06_TALKING_HEADS":"1F438WprKYXYzmUZGEsolL4FPkDTHua23",
- "07_BROLL":"1HkWd5ZE2YgHLhAAGViAkqfzw0Wn79Pr4","08_EDIT":"1m9EHuBN6jxSJRuYKah5U0b7UZ1LjEKkc"}
+{
+ "task_folder": "1j0QiaFzwqK1NHlQH3TCZ3Qf5gsPQMZ49",
+ "OUTPUT": "1OABbJ8mSJqcXWVJU7jqCcEcwlPyXrZcj",
+ "01_ABSORPTION": "1okypXh4fdkzZx1on56ghpXwjXFoIcE8o",
+ "02_CAST": "1w0VSVugitN0O2LpKSyMH37K-8MTu8rKp",
+ "03_LOCATIONS": "1AnrCVDxQNvBIiZDYce4rN0tngmeXWOGZ",
+ "04_VOICE": "1VTTeUA56wWAnkPkCVTHMIImPvFrs0Rpu",
+ "05_HOOKS": "1-n9xVAtqPOIscwYyUQyW9loMkpVkffPw",
+ "06_TALKING_HEADS": "1F438WprKYXYzmUZGEsolL4FPkDTHua23",
+ "07_BROLL": "1HkWd5ZE2YgHLhAAGViAkqfzw0Wn79Pr4",
+ "08_EDIT": "1m9EHuBN6jxSJRuYKah5U0b7UZ1LjEKkc",
+ "files": {
+  "OUTPUT.md": "132XyRr_yMsW4WXtI2w37HvzVqVAWCLLW",
+  "capcut_block.md": "1WLq4D4T0rmWVlww-dq0hLEFQIuX4HCr4",
+  "edit_grammar.md": "1mRag2PvHuboayTiEkYK6Uoj1JNLeqJ1v",
+  "visual_ledger.md": "14c5Xa9DcoiiCTNJNr-0YQMBPk4r7ZOhc",
+  "voice_roster.md": "145a7KAeZMwa0zOlgDxxsiPguVaVwcaRD"
+ }
+}
