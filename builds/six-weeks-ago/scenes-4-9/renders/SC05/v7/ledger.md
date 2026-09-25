@@ -50,3 +50,6 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 30 | Barbara tight CU, jaw set: "…aimed at the whole knee. Not that spot. That's why nothing worked." | 15340d9b-cf62-43bd-b4c6-f55e6a4061e1 (edit of 24) | APPROVED (option C) |
 | – | Frame 31 tries 17388edb / 6af4c779 (Margaret with a fringe, colder grade, room drift) | – | REJECTED |
 | 31 | Low table-edge angle: pill packets in foreground, Margaret's eyes fill as she looks at them (silent) | d8bf9405-99f5-4e9d-8f5e-289673907b0b (from 25 + 28) | APPROVED (option A) |
+| – | Frame 32 tries 7e299304 / 7da8a97f / fde790fa and hand fixes 15dbfece / 9b251941 / b4783fd1 | – | REJECTED by user ("all are wrong positions"): Barbara placed across the table corner instead of beside Margaret; 7da8a97f / fde790fa also changed Barbara's face |
+| – | Frame 32 redo 3473ba56 (same framing as 28) / f39bb3f3 (both faces and room drift) | – | not chosen / REJECTED |
+| 32 | Side-by-side two-shot, closer and a little higher than 28: Barbara's hand over Margaret's, "Your arthritis will still be there…" | 1c9cdcde-c97e-403a-b62a-cf926db7c77d (edit of 28) | APPROVED (option F) |
