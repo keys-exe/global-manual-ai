@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.22
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.23
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -16,6 +16,9 @@ product; it carries everything that step needs.
     one size fits all ........... FIT_SNUG, worn_ref_prompts() (V7.49.15)
     the size lock ............... SIZE_LOCK, SIZE_WORN, SIZE_HELD, SIZE_OBJECT (V7.49.21)
     how it is worn .............. WEAR_GUIDE (V7.49.21)
+    which images to attach ...... REFS_USE, refs_for(shot) (V7.49.23)
+    held beats .................. HELD_GRIPS, NEG_HELD_P (V7.49.23)
+    observed failures ........... NEG_OBSERVED (V7.49.23)
     the V7.49.4 pattern fills ... HOLD_PC, HOLD_PROD, NEG_WARP_P, WEAR_*,
                                   REAR_VIEW_SPEC, DEMONSTRATION_TABLE, ...
                                   (content moved OUT of the Standards)
@@ -62,7 +65,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.22"
+VERSION = "7.49.23"
 
 # --------------------------------------------------------------- slots
 
@@ -290,7 +293,7 @@ NEG_ADJUST = (
 
 # Seating beats attach the canonical product image AND the front worn frame
 # (the end position). The shin start is written, never shown by reference.
-SEAT_REFERENCES = ("composite", "front")
+SEAT_REFERENCES = ("front.webp", "back.webp", "front")   # V7.49.23: originals + PLACEMENT_REFERENCES["front"]; the composite was never in the repo
 
 # --- one size fits all (V7.49.15, user) --------------------------------
 # One unit, no sizes. The shell is a fixed size; the elastic band takes up
@@ -343,6 +346,63 @@ SIZE_HELD = (
 "Its size never changes: the shell is about five to six of the holder's thumb-widths across, overhanging the "
 "pinching hand at both ends, and about as tall as the thumb is long from its tip to its base knuckle; the "
 "band is a little wider than the thumb.")
+
+# --- the inner pad (V7.49.23) -----------------------------------------------
+# Read off back.webp. Used on held beats and any view of the inside of the shell.
+# Never the word "silicone" (it renders the soft glossy fake, §10).
+INNER_PAD = (
+"The inside of the shell is a plain, smooth, matte-black pad following the shell's curve, with no markings, "
+"no texture pattern and no second colour.")
+
+# --- held beats (V7.49.23, user: "there are so many ways to hold it") -------
+# NOT a locked pose. Any of these grips, chosen per beat and varied across a
+# build; every one keeps the three fixed rules: the hand is on the pad or the
+# shell's edge, never on the band or the slides, never across the wordmark.
+HELD_GRIPS = (
+    ("bottom-edge pinch",
+     "thumb in front on the shell's bottom edge below the wordmark, fingers behind on the pad, band slack "
+     "round the wrist (HELD_EXAMPLE shows this one)"),
+    ("open palm",
+     "the strap resting across an open upturned palm, the pad on the palm and the front face up to the lens, "
+     "fingers loosely curled at the shell's lower edge, the band draped over the hand"),
+    ("fingertips behind",
+     "held up by the fingertips pressed flat on the pad behind the shell, the thumb at one lower corner of the "
+     "shell, the front face square to the lens, the band hanging below"),
+    ("turned through the light",
+     "the bottom-edge pinch, the wrist slowly turning the shell a little either way so the chrome slides catch "
+     "the light -- video only, one slow turn"),
+    ("two-hand presentation",
+     "both hands, each with fingers on the pad near one end of the shell and thumbs on the bottom edge, "
+     "holding it out square to the lens -- briefly, on a presentation landing only (§9A)"),
+)
+HELD_RULES = ("the hand is on the pad or the shell's edge", "never on the band", "never on the chrome slides",
+              "never across the wordmark", "the peaks and notch stay visible")
+
+# I2V negatives for held beats (product tail; merges with the Standards' NEG-HELD).
+NEG_HELD_P = (
+"no hand gripping the band, no fingers on the chrome slides, no fingers across the wordmark, no fingers over "
+"the peaks or the notch, no flat palm pressed on the front face, no strap swinging by its band alone, no band "
+"being stretched, no band being threaded, no product changing hands, no second strap, no strap worn while held")
+
+# Standing negatives accumulated from observed failures (Appendix B item 11),
+# dated. I2V only -- T2I has no negative channel.
+NEG_OBSERVED = (
+"no V-shaped notch, no crown-shaped peaks, no tall horn peaks, no deep U-shaped shell, no slot-shaped notch, "
+"no flat rectangular shell, no slab shell without peaks, no chrome slide mounted on the front face, no slide "
+"on the band instead of the shell's end, no moulded frame around the slide, no sideways chevrons, no band "
+"leaving the bottom edge of the shell, no product tipped on its side, no watch-strap band, no keeper loop "
+"shaped like a buckle")
+NEG_OBSERVED_LOG = (
+    ("V7.49.15", "worn bent", "shell tall and narrow, U-shaped with horn peaks"),
+    ("V7.49.18", "three-quarter right", "V notch, crown peaks, slide on the face, watch-strap band"),
+    ("V7.49.18", "profile", "slot notch, slab shell, slide on the face"),
+    ("V7.49.18", "macro", "invented moulded slide frame, sideways chevrons"),
+    ("V7.49.18", "held", "flat rectangular shell with no peaks"),
+    ("V7.49.19", "side", "slide on the band's face, shell reduced to a thin inner shape"),
+    ("V7.49.19", "side", "product tipped, band leaving the shell's bottom edge"),
+    ("V7.49.20", "held", "fingers curled over the top edge hiding the notch and peaks"),
+    ("V7.49.21", "product front", "camera above, notch deep and narrow, peaks 12% unequal"),
+)
 
 # --- how the strap is worn (V7.49.21, user: "it needs to be clarified") ------
 # The one reference answer for every worn, seating and bent beat. Every line
@@ -510,7 +570,8 @@ PRODUCT_SET_GEOM = (
 
 # Generated product set, V7.49.18. Agent verdicts per §22V; awaiting the
 # user's lock. Model passed nano_banana_pro, logged nano_banana_2 (routing fault).
-PRODUCT_SET_STATUS = "AGENT USE V7.49.20 -- awaiting user lock"
+PRODUCT_SET_STATUS = ("V7.49.23: the images in REFS_USE are LOCKED by the user; product_front, "
+                      "product_back and product_profile retired; the held example is not locked")
 PRODUCT_SET_REFS = {
     "tq_left":  {"file": "stryde_refs/product_tq_left.jpg", "job_id": "0cdf393f-6525-4f0e-a52b-728fda2410dd",
                  "attempt": "1 of 1", "flags": ""},
@@ -519,7 +580,7 @@ PRODUCT_SET_REFS = {
                              "slide); 3 = tq_left mirrored (media 182f9710) and re-rendered with the wordmark "
                              "reading correctly"),
                  "flags": "wordmark reads slightly left of the notch at this yaw"},
-    "profile":  {"file": "stryde_refs/product_profile.jpg", "job_id": "0b58a185-987e-4f71-97f6-0493ce15f17e",
+    "profile":  {"file": "stryde_refs/retired/product_profile.jpg", "job_id": "0b58a185-987e-4f71-97f6-0493ce15f17e",
                  "attempt": ("3 of 3 -- 3e404d2e and fcb96952 REGENERATE Q2 (slot notch / slab shell, "
                              "face-mounted slide); 3 = tq_left turned to about seventy degrees"),
                  "flags": "near peak reads low from the side"},
@@ -531,12 +592,12 @@ PRODUCT_SET_REFS = {
                              "edge hiding the notch and peaks). Superseded: 972e16d9 (flat palm, not a real "
                              "hold), 930e3245 (grip not on the pad), 86093b25 (flat rectangular shell)"),
                  "flags": "one fingertip shows through the notch from behind the shell"},
-    "front_view": {"file": "stryde_refs/product_front.jpg", "job_id": "81f0fb23-9472-414d-bdc8-79926db9b2af",
+    "front_view": {"file": "stryde_refs/retired/product_front.jpg", "job_id": "81f0fb23-9472-414d-bdc8-79926db9b2af",
                    "attempt": ("3 of 3 (V7.49.22) -- eb1e16e1 failed --check (rise 0.272, span 0.442, peaks 12% "
                                "unequal); 314cab43 camera above the product (ring top visible); 3 = re-render of "
                                "front.webp at level camera height. --check: all shape gates pass, peaks 2%"),
                    "flags": "band reads 0.387 on --check (front.webp 0.351): ~10% thicker, inside SIZE_LOCK tolerance"},
-    "back_view":  {"file": "stryde_refs/product_back.jpg", "job_id": "7921dfdf-9bda-4599-a861-9234a30b961f",
+    "back_view":  {"file": "stryde_refs/retired/product_back.jpg", "job_id": "7921dfdf-9bda-4599-a861-9234a30b961f",
                    "attempt": "1 of 1", "flags": ""},
     "side_view":  {"file": "stryde_refs/product_side.jpg", "job_id": "a18b4a42-a306-41d8-8d09-2306c85393fb",
                    "attempt": ("3 of 3 -- 18c09090 REGENERATE Q2 (slide on the band face, shell reduced); "
@@ -545,6 +606,47 @@ PRODUCT_SET_REFS = {
                                "upright leg"),
                    "flags": ""},
 }
+# --- which images to attach (V7.49.23, user) --------------------------------
+# The whole answer to "which product images do I use". Paths are relative to
+# this file. LOCKED by the user V7.49.23, except the held example, which is
+# deliberately NOT locked: there are many right ways to hold it (HELD_GRIPS).
+REFS_USE = {
+    "base":     ("stryde_refs/front.webp", "stryde_refs/back.webp"),   # every product-facing call
+    "tq_left":  ("stryde_refs/product_tq_left.jpg",),
+    "tq_right": ("stryde_refs/product_tq_right.jpg",),
+    "side":     ("stryde_refs/product_side.jpg",),
+    "macro":    ("stryde_refs/product_macro.jpg",),
+    "worn_front": ("stryde_refs/worn_front.jpg",),
+    "worn_bent":  ("stryde_refs/worn_bent.jpg",),
+    "worn_rear":  ("stryde_refs/worn_rear.jpg",),
+}
+REFS_USE_STATUS = "LOCKED V7.49.23 by the user"
+HELD_EXAMPLE = "stryde_refs/product_held.jpg"   # an example of grip 1 only -- never locked, optional
+REFS_RETIRED = (
+    "stryde_refs/retired/product_front.jpg -- duplicate of front.webp; the original wins",
+    "stryde_refs/retired/product_back.jpg -- duplicate of back.webp",
+    "stryde_refs/retired/product_profile.jpg -- replaced by product_side + the three-quarter pair",
+    "stryde_refs/retired/three_quarter_b.jpg -- replaced by the three-quarter pair",
+    "stryde_refs/retired/three_quarter_a.jpg -- wordmark on the wrong side of the notch",
+)
+_SHOT_EXTRA = {
+    "front": (), "back": (), "tq_left": ("tq_left",), "tq_right": ("tq_right",),
+    "side": ("side",), "macro": ("macro",), "held": (),
+    "worn_front": ("worn_front",), "worn_bent": ("worn_bent",), "worn_rear": ("worn_rear",),
+    "seating": ("worn_front",),
+}
+
+
+def refs_for(shot):
+    """The files to attach for one shot type: the two originals plus at most one extra."""
+    if shot not in _SHOT_EXTRA:
+        raise ValueError("unknown shot type %r; one of %s" % (shot, sorted(_SHOT_EXTRA)))
+    out = list(REFS_USE["base"])
+    for k in _SHOT_EXTRA[shot]:
+        out += REFS_USE[k]
+    return tuple(out)
+
+
 # Retired V7.49.18: three_quarter_a.jpg -- its wordmark contradicts front.webp.
 # Replaced by PRODUCT_SET_REFS['tq_left'] / ['tq_right'].
 
@@ -582,7 +684,7 @@ def product_set_prompts(anchor=False):
                            SIZE_OBJECT))
     out["held"] = " ".join((PRODUCT_SET_HELD, lead + " a single unit.", PRODUCT_SET_RING.replace(
         "standing open as a round ring as if around an invisible leg", "hanging as a closed loop"),
-        PRODUCT_SET_GEOM, SIZE_HELD, CAP_A, BODY_WHOLE))
+        PRODUCT_SET_GEOM, SIZE_HELD, INNER_PAD, CAP_A, BODY_WHOLE))
     return out
 
 
@@ -817,6 +919,8 @@ S = {
     "WEAR-CONCEAL": WEAR_CONCEAL, "WEAR-REVEAL": WEAR_REVEAL, "NEG-CONCEAL": NEG_CONCEAL,
     # V7.49.14 fit lines
     "NEG-ADJUST": NEG_ADJUST,
+    # V7.49.23
+    "NEG-HELD-P": NEG_HELD_P, "NEG-OBSERVED": NEG_OBSERVED,
 }
 
 # ------------------------------------------- measured geometry ratios
@@ -889,6 +993,10 @@ RULINGS = {
         "worn prompt carries SIZE_WORN, every product-only prompt SIZE_OBJECT, every held prompt "
         "SIZE_HELD. A frame whose shell or band reads more than ~20 percent off its anchor is "
         "REGENERATE Q2.",
+    "held_not_locked":
+        "LOCKED V7.49.23 (user): the held pose is NOT locked -- there are many right ways to hold it. "
+        "Pick from HELD_GRIPS per beat and vary them across a build; product_held.jpg is one example "
+        "(grip 1), optional, never required. The fixed rules are HELD_RULES.",
     "held_on_pad":
         "LOCKED V7.49.19, made realistic V7.49.20 (user). Whenever the product is held, the grip is "
         "on the pad, the way a person really holds a strap: a relaxed pinch at the bottom edge -- "
@@ -921,9 +1029,11 @@ UNSETTLED = {
         "for PLACEMENT ONLY on rear and turning beats, with ORIENT_LOCK + NEG_ORIENT_PRODUCT_TAIL "
         "stated in full. RESOLVED BY: one regenerated rear worn frame, right knee, straight-edged "
         "knit band with both keeper loops, accepted by the user.",
-    "inner_face_script":
-        "OPEN V7.49.12. The Six Weeks Ago script states a silicone pad on the inside of the "
-        "shell. Advertiser-stated, unphotographed. Never rendered: no beat shows the inner face.",
+    "inner_face_script_RESOLVED_7_49_23":
+        "RESOLVED V7.49.23 for rendering by back.webp: the inside of the shell is a plain, smooth, "
+        "matte-black pad with no markings (INNER_PAD). The user calls it the silicone pad; the "
+        "material stays advertiser-stated (Six Weeks Ago script), so prompts say 'the pad' and never "
+        "'silicone'. Was: OPEN V7.49.12, unphotographed.",
     "band_faces_RESOLVED_7_49_11":
         "RESOLVED by the supplied product images (CANONICAL_REFERENCES). The OUTER "
         "face carries TWO black moulded keeper loops side by side at the rear; the "
@@ -998,11 +1108,13 @@ CANONICAL_REFERENCE = {
     "excluded": "3.png -- its wordmark sits on the opposite side of the notch from 2.png; a composite must not contradict itself",
 }
 CANONICAL_REFERENCES = {"composite": CANONICAL_REFERENCE}  # single-image rule, V7.49.11
+# V7.49.23: RETIRED. STRYDE_reference_v7_49_11.png was never stored in the repo, so
+# nothing may name it. Its job is done by front.webp + back.webp (REFS_USE).
 
 # --- the supplied product photos, stored in the repo (V7.49.15) ----------
 # Layer 1 (Order of Authority). Stored beside this sheet so every session
 # has them. Read by eye V7.49.15.
-PRODUCT_PHOTOS_DIR = "stryde_refs"
+PRODUCT_PHOTOS_DIR = "stryde_refs"   # three_quarter_a/_b moved to stryde_refs/retired/ V7.49.23
 PRODUCT_PHOTOS = {
     "front.webp": ("straight-on front elevation: two matching peaks, notch centred, grey lowercase "
                    "stryde wordmark centred beneath the notch, chrome slide inset at each end with three "
@@ -1076,7 +1188,9 @@ PHRASING_V7482 = (
 )
 
 NEVER_ATTACH = (
-    "stryde_refs/three_quarter_a.jpg -- wordmark on the wrong side of the notch against front.webp; retired V7.49.18",
+    "any file in REFS_RETIRED (V7.49.23)",
+    "STRYDE_reference_v7_49_11.png -- never stored in the repo; retired V7.49.23",
+    "stryde_refs/retired/three_quarter_a.jpg -- wordmark on the wrong side of the notch against front.webp; retired V7.49.18",
     "STRYDE_reference_sheet_v7.48.2.png -- SUPERSEDED V7.49.11 by CANONICAL_REFERENCES; its close-front panel taught the tall-peak error",
     "any frame showing more than one unit",
     "any worn frame other than PLACEMENT_REFERENCES on a beat where placement is the claim",
@@ -1478,7 +1592,7 @@ def verify(verbose=False):
     for frag in ("SEAT_LOCK", "NEG_ADJUST", "PLACEMENT_REFERENCES['front']", "never the adjustment"):
         if frag not in ADJUSTABLE_RULE:
             fails.append("ADJUSTABLE_RULE missing: %s" % frag)
-    if not all(k in {**CANONICAL_REFERENCES, **PLACEMENT_REFERENCES} for k in SEAT_REFERENCES):
+    if not all(k in PRODUCT_PHOTOS or k in PLACEMENT_REFERENCES for k in SEAT_REFERENCES):
         fails.append("SEAT_REFERENCES names an unregistered reference")
 
     # 8c one size fits all; worn-reference prompts build and stay positive (V7.49.15)
@@ -1527,6 +1641,41 @@ def verify(verbose=False):
             if bad in v.lower() and bad not in NEG_ONLY:
                 fails.append("%s carries retired phrasing: %r" % (name, bad))
 
+    # 8e image use map, held grips, observed negatives (V7.49.23)
+    here = os.path.dirname(os.path.abspath(__file__))
+    for k, files in REFS_USE.items():
+        for f in files:
+            if not os.path.exists(os.path.join(here, f)):
+                fails.append("REFS_USE[%s] names a file that is not in the repo: %s" % (k, f))
+    if not os.path.exists(os.path.join(here, HELD_EXAMPLE)):
+        fails.append("HELD_EXAMPLE missing")
+    used = {f for files in REFS_USE.values() for f in files}
+    for r in REFS_RETIRED:
+        if r.split(" -- ")[0] in used:
+            fails.append("a retired image is still in REFS_USE: %s" % r)
+    for shot in _SHOT_EXTRA:
+        if len(refs_for(shot)) > 3:
+            fails.append("refs_for(%s) attaches more than the two originals plus one" % shot)
+    if HELD_EXAMPLE in used:
+        fails.append("the held example must not be in the locked set")
+    if len(HELD_GRIPS) < 3:
+        fails.append("HELD_GRIPS must offer several grips")
+    for name, how in HELD_GRIPS:
+        low = how.lower()
+        if "band" in low and ("gripping the band" in low or "by the band" in low):
+            fails.append("held grip %s holds the band" % name)
+        if "silicone" in low:
+            fails.append("held grip %s names silicone" % name)
+    for clause in ("no hand gripping the band", "no fingers on the chrome slides", "no fingers across the wordmark"):
+        if clause not in NEG_HELD_P:
+            fails.append("NEG_HELD_P missing: %s" % clause)
+    if len(NEG_OBSERVED_LOG) < 9 or "no V-shaped notch" not in NEG_OBSERVED:
+        fails.append("NEG_OBSERVED lost its logged failures")
+    if "silicone" in INNER_PAD.lower():
+        fails.append("INNER_PAD names silicone")
+    if "composite" in SEAT_REFERENCES:
+        fails.append("SEAT_REFERENCES names the missing composite")
+
     # 9 one mechanism claim, and it is not the retired one
     if MECHANISM_CLAIM != "protection":
         fails.append("mechanism claim is not the locked one")
@@ -1567,7 +1716,7 @@ def counts():
 # ==================================================================
 SHEET_MD = r'''# Product Sheet — Stryde Precision Strap
 
-**V7.49.15.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
+**V7.49.23.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
 
 The geometry ratios were measured off the five V7.48 canonical renders (63, 64, 65, 66, 68) with a roll correction applied. **Since V7.49.11 the supplied product photos (`stryde_refs/`) are the product** (layer 1) and outrank those renders wherever they disagree. Where a figure is external it is marked Tier 3 and is not advertiser-held.
 
@@ -1623,6 +1772,13 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 | Describe the rear | "a plain knit strip, unbroken and featureless" — rendered a plain band with no keepers | A coarse-knit band with straight edges, two black moulded keeper loops side by side at the centre rear of its outer face |
 | Place the wordmark | "offset to one side of the notch" — contradicted by the supplied front photo (V7.49.11) | Horizontal and readable on the broad lower body, centred directly beneath the notch |
 | Show that it fits | "adjustable" — renders the act of adjusting (V7.49.14) | The seating move up the shin, then the product itself (§12); on a worn frame, `FIT_SNUG` |
+| Any new angle of the product | Describing the view from scratch — the model redesigns the object: V notch, crown peaks, slide on the face (V7.49.18) | Attach a frame that already reads right FIRST and open with "the exact same object as the first attached image … only the view changes" (`PRODUCT_SET_ANCHOR`) |
+| Opposite three-quarter | "Seen from the front right" — failed twice | Mirror the good left view and ask for a re-render with the wordmark reading correctly (V7.49.18) |
+| True side view | "Exactly from the side, edge-on" — tipped the object, band out of the bottom edge (V7.49.19) | Anchor on the front and back views; "the camera moves round to the outside of an invisible upright leg; the band stays horizontal" |
+| Straight front | "Straight-on" alone — camera drifted above, ring top showing, notch read deep (V7.49.21) | "Camera level with the middle of the shell, not from above and not from below; the ring behind hidden" |
+| Held | "Held from underneath" / "fingers flat behind" — flat stop-sign palm, then fingers over the top edge (V7.49.19–20) | Pick a grip from `HELD_GRIPS` and add "nothing rises above the shell's top edge"; the band falls slack round the wrist — never prompt it away |
+| Same size every time | Adjectives ("broad", "the size of a hand") — band drifted 2–3.5 cm (V7.49.21) | `SIZE_OBJECT` / `SIZE_WORN` / `SIZE_HELD` — the size said against the body in each context |
+| Change one thing on a good frame | A fresh generation — loses what was right | An edit: attach the frame first, "keep everything exactly the same and change one thing only" (bent height, rear band, V7.49.16/22) |
 | Bound the scale | "no wider than X" — biased the object small | State what it spans positively; put the upper bound in the negatives |
 | Stop the rear shell | `no shell at the back` alone — a generator does not classify a flat printed patch as a shell | State the rear positively and at length, then negate |
 
@@ -1630,7 +1786,19 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 
 ## 4. Reference image registry
 
-**Canonical set (V7.49.15):** the supplied product photos in `stryde_refs/` — `front.webp`, `back.webp`, `three_quarter_a.jpg`, `three_quarter_b.jpg` (`PRODUCT_PHOTOS`) — and the V7.49.11 composite built from them. Attach one to every product-facing generation call, alongside `REF-PROD` in prose. Image plus names is the pair; either alone leaks. The V7.48 renders (63–68) are retired as references; their measured ratios stay.
+**Which images to attach (V7.49.23, locked by the user) — `REFS_USE`, `refs_for(shot)`:**
+
+| Shot | Attach |
+|---|---|
+| Every product-facing call | `front.webp` + `back.webp` (your originals) |
+| Three-quarter | + `product_tq_left.jpg` or `product_tq_right.jpg`, matching the angle |
+| Side | + `product_side.jpg` |
+| Close-up of slide or band | + `product_macro.jpg` |
+| Worn — straight, bent, rear | + `worn_front.jpg`, `worn_bent.jpg` or `worn_rear.jpg` |
+| Putting it on | + `worn_front.jpg` (the end position) |
+| Held | the two originals only; `product_held.jpg` is an optional example of one grip, **not locked** — pick a grip from `HELD_GRIPS` |
+
+Never more than the two originals plus one. **Retired:** `product_front.jpg`, `product_back.jpg`, `product_profile.jpg`, `three_quarter_a.jpg`, `three_quarter_b.jpg`, and the never-stored composite `STRYDE_reference_v7_49_11.png`. Image plus names is the pair; either alone leaks.
 
 **Never attach as reference:** any image carrying baked-in headline type, any multi-instance shot, any marketplace listing image of a silicone-pad product sold under the same name.
 
@@ -1679,6 +1847,14 @@ British, roughly 55–80. Cast to the buyer, balanced across men and women, with
 
 ---
 
+## 10. Standing open item
+
+**Peak equality and the wordmark are settled** by the supplied front photo (V7.49.10–11). **Still open: the true shell width-to-height.** `front.webp` gives an estimate (2.3–2.6, `INFO_RATIOS`); it becomes a figure only when measured edge to edge on a flat, no-yaw, no-roll elevation. Until then no aspect figure enters this sheet.
+
+**Worn references (V7.49.15):** new front, rear and bent frames are prompted by `--worn-refs` (one size fits all, fitted exactly). They replace `PLACEMENT_REFERENCES` once accepted.
+
+---
+
 ## 11. Content moved from the Standards at V7.49.4
 
 The global Standards are product-agnostic from V7.49.4. Everything below used to be written into the global document about this product and now lives only here, imported from the `.py`:
@@ -1696,6 +1872,17 @@ The global Standards are product-agnostic from V7.49.4. Everything below used to
 | 16A | Widget examples | `WIDGET_EXAMPLES` |
 | Open Decision 15 | Orthographic elevation | `OPEN_ITEMS`, `UNSETTLED`, `RULINGS` |
 | 8 | `[FEATURE]` / `[FRACTION]` / `[RIGID]` | notch and peaks / three fifths / shell |
+
+---
+
+## 12. Fit lines and "adjustable" *(V7.49.14 — user ruling)*
+
+**Show the fit, never the adjustment.** A script line about fit — "adjustable", "fits any knee", "one size fits all", "easy to put on" — is covered by:
+
+1. **The seating beat (`SEAT_LOCK`).** The strap is already closed and sits at mid-shin on a straight leg. Both hands, flat on the shell's sides, slide it **up** the front of the shin in one unhurried move until it seats on the patellar tendon, the kneecap's lower border in the notch, ending exactly like the front worn-placement reference. It only ever moves up — never down, never from above the kneecap.
+2. **The product itself**, when the line is long enough for a second beat — in hand, turned through the light, or worn and already seated in a close front hold.
+
+**Never shown:** the band pulled tighter, the tail tugged, the band threaded through a slide, fingers working the slides, the strap opened, wrapped or closed. **The word "adjustable" never enters a prompt** — a generator renders it as the act of adjusting. Negatives: `NEG-SEAT` on seating beats, `NEG-ADJUST` on in-hand beats. References: the product composite plus the front worn frame (`SEAT_REFERENCES`).
 
 ---
 
@@ -1730,22 +1917,13 @@ A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and
 
 ---
 
-## 12. Fit lines and "adjustable" *(V7.49.14 — user ruling)*
+## 15. Held beats, the inner pad and the standing negatives *(V7.49.23)*
 
-**Show the fit, never the adjustment.** A script line about fit — "adjustable", "fits any knee", "one size fits all", "easy to put on" — is covered by:
+**Held is not locked** (user): there are many right ways to hold it. Choose from `HELD_GRIPS` per beat — bottom-edge pinch, open palm, fingertips behind, turned through the light, two-hand presentation — and vary them across a build. Fixed rules: on the pad or the shell's edge; never on the band, never on the slides, never across the wordmark; peaks and notch visible. I2V negatives: `NEG-HELD-P`.
 
-1. **The seating beat (`SEAT_LOCK`).** The strap is already closed and sits at mid-shin on a straight leg. Both hands, flat on the shell's sides, slide it **up** the front of the shin in one unhurried move until it seats on the patellar tendon, the kneecap's lower border in the notch, ending exactly like the front worn-placement reference. It only ever moves up — never down, never from above the kneecap.
-2. **The product itself**, when the line is long enough for a second beat — in hand, turned through the light, or worn and already seated in a close front hold.
+**The inner pad** (the user's "silicone pad"): plain, smooth, matte black, no markings (`INNER_PAD`, read off `back.webp`). Prompts say "the pad", never "silicone".
 
-**Never shown:** the band pulled tighter, the tail tugged, the band threaded through a slide, fingers working the slides, the strap opened, wrapped or closed. **The word "adjustable" never enters a prompt** — a generator renders it as the act of adjusting. Negatives: `NEG-SEAT` on seating beats, `NEG-ADJUST` on in-hand beats. References: the product composite plus the front worn frame (`SEAT_REFERENCES`).
-
----
-
-## 10. Standing open item
-
-**Peak equality and the wordmark are settled** by the supplied front photo (V7.49.10–11). **Still open: the true shell width-to-height.** `front.webp` gives an estimate (2.3–2.6, `INFO_RATIOS`); it becomes a figure only when measured edge to edge on a flat, no-yaw, no-roll elevation. Until then no aspect figure enters this sheet.
-
-**Worn references (V7.49.15):** new front, rear and bent frames are prompted by `--worn-refs` (one size fits all, fitted exactly). They replace `PLACEMENT_REFERENCES` once accepted.
+**Standing negatives from observed failures** (`NEG-OBSERVED`, dated in `NEG_OBSERVED_LOG`): V-shaped notch · crown or horn peaks · deep U or slab shell · slide on the face or on the band · invented slide frame · sideways chevrons · band out of the shell's bottom edge · product tipped · watch-strap band · buckle-shaped keeper. I2V only.
 '''
 
 
