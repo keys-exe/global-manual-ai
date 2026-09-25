@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.60.7) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.61.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -25,7 +25,7 @@ Read every section a deliverable touches **before** writing it. Sections cross-r
 1. Reference images (§7)
 2. Product Sheet spec (§8, Appendix B)
 3. Locked visual and performance standards (§11, §12A, §15A, §22A–C, §22S, §27A, §28A–E, §30A–B)
-4. Script
+4. Script — its spoken lines, its visual instructions and the build's Loom brief (§27F, §18C)
 5. Build Sheet (§20, §21, Appendix C)
 6. Locked defaults (§44)
 
@@ -49,11 +49,15 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **B-roll length (E6, V7.60.6).** Every B-roll clip — mechanism and anatomy included — is as long as the script line (or §27 phrase) it covers: the span on the voice master's word timestamps + 0.5s, rounded up, Kling 3–15s. Never a fixed 5s/3s. The voice master comes before any B-roll call.
 
-**Placement & no holes (§30H).** B-roll starts on its phrase's first word (script-aligned timing); joins are frame-exact; no talking-head flicker under 1.5s between B-rolls; voice-only builds have no uncovered frame; no B-roll under 0.8s. `scripts/assemble.py` places, fixes, renders and verifies the rough cut; CapCut finishes it.
+**Script visual instructions are binding (§27F, V7.61.0).** Every visual note on the script (`VISUAL:`, `B-ROLL:`, `ON SCREEN:`, `SFX:`, `[brackets]`, `(parentheses)`, inline `[notes]`…) is kept out of the voice but **never dropped**: `script_lines.py --visual` lists them (`VN01`…) anchored to their spoken line, and they open the **Visual Instruction Ledger** at step 2. Step 5 assigns each row to the beat that shows it or the CapCut line that carries it (on-screen text verbatim). Follow it as written, don't substitute your own shot; a row that breaks a higher layer is flagged with the nearest compliant execution. §22V/§22W Q1 check it. Every row ends `verified` or `flagged` — none open at step 8.
+
+**Loom brief (§18C, V7.61.0).** Optional — no Loom, no question. The `LOOM:` link comes beside `DRIVE:`. Run `scripts/fetch_loom.py <BUILD> <link>` (download, timestamped transcript, frames every 5s and at cuts → `loom.md`), read it and the frames, and log each instruction in the ledger as `LMxx`. It never changes a spoken word or overrides a higher layer. Loom vs a written note on the same line: Manual asks; Automatic follows the Loom and flags it. Private Loom → ask for the MP4 in the Drive folder.
+
+**Placement & no holes (§30H). B-roll starts on its phrase's first word (script-aligned timing); joins are frame-exact; no talking-head flicker under 1.5s between B-rolls; voice-only builds have no uncovered frame; no B-roll under 0.8s. `scripts/assemble.py` places, fixes, renders and verifies the rough cut; CapCut finishes it.
 
 **Hook variants (§30H).** The output is **one finished video per hook**: HK1 + body, HK2 + body, HK3 + body — three when you write the hooks, else as many as the script has. Each hook voiced separately, the body voiced once and reused. `scripts/variants.py` builds every variant as one timeline (no holes across the seam), keeps the body's cuts identical in every variant, and checks each duration = hook + body.
 
-**Intake (§18B). Default: a **shared Google Drive folder** (inspo video, script with the title on line 1, Product Sheet, product images) plus one short message — `DRIVE`, `BUILD`, `MODE`, `RUN`, and optionally `VOICE` (→ narrator's `VOICE-[CHAR]`), `HOOKS` (count, default 3), `CAP` (credit cap — never ask then), `ADJUST` (free overrides: apply and record in the Build Sheet; flag any that conflict with a higher authority layer). Run `scripts/fetch_drive.py <BUILD> <link>`, report what was found or missing, then absorb. Alternative: the single-message Intake Pack (`builds/INTAKE_TEMPLATE.md`): BUILD, MODE, FORMAT, RUN, TOOLS, INSPO links, SCRIPT (title first), PRODUCT, CAST NOTES, NOTES. Fetch and measure every link, run steps 1–5 without questions, then the voice route by mode: Mode 1–3 → §22U (HeyGen when there are talking heads); **Mode 4, 5, AI Drama → §24I neutral Seedance voice master, audio kept exactly as generated — never trimmed, sped or looped.** `RUN: AUTOMATION` is the Automatic call; anything else is Manual.
+**Intake (§18B). Default: a **shared Google Drive folder** (inspo video, script with the title on line 1, Product Sheet, product images) plus one short message — `DRIVE`, `LOOM` (optional, §18C), `BUILD`, `MODE`, `RUN`, and optionally `VOICE` (→ narrator's `VOICE-[CHAR]`), `HOOKS` (count, default 3), `CAP` (credit cap — never ask then), `ADJUST` (free overrides: apply and record in the Build Sheet; flag any that conflict with a higher authority layer). Run `scripts/fetch_drive.py <BUILD> <link>`, report what was found or missing, then absorb. Alternative: the single-message Intake Pack (`builds/INTAKE_TEMPLATE.md`): BUILD, MODE, FORMAT, RUN, TOOLS, INSPO links, SCRIPT (title first), PRODUCT, CAST NOTES, NOTES. Fetch and measure every link, run steps 1–5 without questions, then the voice route by mode: Mode 1–3 → §22U (HeyGen when there are talking heads); **Mode 4, 5, AI Drama → §24I neutral Seedance voice master, audio kept exactly as generated — never trimmed, sped or looped.** `RUN: AUTOMATION` is the Automatic call; anything else is Manual.
 
 **Build order (§18).** Eight steps: 1 absorb inspo (§42) → 2 absorb script/product + Mode & Model Lock → 3 cast → 4 property & location maps → 5 act map + wardrobe map → 6 hooks one by one (**the only human gate** in Manual; Automatic has no gates — E0) → 7 B-roll and body acts → 8 CapCut block. Steps 1–5 ship as one opening delivery.
 
@@ -66,7 +70,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 ## Voice pipeline helpers (§22U, both modes)
 
 - `scripts/voice_source.py` — steps 3–5: trim → ×1.2 → loop to ≥30s → `<Keyword>_clone_source.mp3`
-- `scripts/script_lines.py` — §22U step 8: spoken lines only, verbatim; reports every dropped line (title, headings, links, visual notes)
+- `scripts/script_lines.py` — §22U step 8: spoken lines only, verbatim; reports every dropped line (title, headings, links, visual notes); `--visual` writes the §27F ledger's `VNxx` rows
 - `scripts/tts_budget.py` — verbatim lock with `--script-lines`; steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags
 - `scripts/assemble.py` — §30H: place B-roll on its lines, close flickers and holes, render + verify the rough cut
 - `scripts/variants.py` — §30H hook variants: `<BUILD>_HK1.mp4` … each hook + the identical body, set-checked
@@ -74,6 +78,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 - `scripts/trim.py` — E11 trim pass (never on a §24I film voice master)
 - `scripts/kie.py` — Kie AI API (§5): `credit`, `upload` (public URL), `image` (fallback), `seedance` (720p, 9:16, ingredients, stated duration), `wait`
 - `scripts/fetch_drive.py` — §18B Drive intake: downloads the shared folder, sorts inspo / script / product sheet / images, extracts document text, measures the inspo
+- `scripts/fetch_loom.py` — §18C: downloads the Loom brief, transcribes it with timestamps, saves frames → `builds/<BUILD>/intake/loom/loom.md` (`LMxx` rows)
 - `scripts/fetch_inspo.py` — §18B/§42 Part 1: downloads INSPO links into `builds/<BUILD>/intake/` and measures duration, aspect, shots, cuts, silences. YouTube returns 403 from the cloud — ask for the file instead
 - `references/eleven_v3_tags.json` — the full Eleven v3 tag library (1,806 tags); `TAG-PALETTE` in §22U is the default subset
 
@@ -130,6 +135,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 17A. Motion Graphics Layer *(new — permitted, specified)*
 - 18. Build Order Discipline *(rewritten V7.48.2 — the eight-step flow)*
 - 18B. Intake Pack — steps 1 and 2 in one message *(new V7.58.0)*
+- 18C. Loom Brief — the advertiser's walkthrough *(new V7.61.0)*
 - 18A. Mode & Model Lock *(new V7.50.0)*
 - 19. Character / Locked Avatar Creation Rule *(rewritten V7.49.6 — visual-check confirmed across three sheets, one face type)*
 - 19B. Medical Professional Casting & Recommendation Rule *(new V7.48.6)*
@@ -172,6 +178,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 27C. Physical Plausibility Standard *(new — unverified, visual check)*
 - 27D. Structural Integrity Standard *(new at V7.48 — unverified, A/B pending)*
 - 27E. Material Failure and Consequence *(new V7.48.9 — visual check pending)*
+- 27F. Script Visual Instructions — binding *(new V7.61.0)*
 - 28. Emotional Match Rule (talking heads)
 - 28A. Delivery Field Standard *(locked)*
 - 28B. Gesture Register *(locked)*
@@ -273,6 +280,8 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 **PENDING AMENDMENTS**
 
 **OPEN DECISIONS**
+
+**CHANGELOG — V7.60.7 → V7.61.0 *(cut authorised)***
 
 **CHANGELOG — V7.60.6 → V7.60.7 *(cut authorised)***
 

@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer-auto
-description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.60.7, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
+description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.61.0, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
 ---
 
 # AI Prompt Engineer — Automatic run mode
@@ -29,8 +29,8 @@ Grep  pattern="^## (E(0|1|2|3|7|9|11)|5|18B|22U|22V|22W|24I|30H)\."  path="stand
    ```
    The repo's session start hook already runs this; re-run only if an import fails.
    `ffmpeg` path: `python3 -c "import imageio_ffmpeg as f; print(f.get_ffmpeg_exe())"`.
-5. **Intake → steps 1–5 (§18B).** Drive: `python3 .claude/skills/ai-prompt-engineer/scripts/fetch_drive.py <BUILD> <folder link>`; links: `fetch_inspo.py <BUILD> <links…>`. A missing script, unreadable document or FETCH_FAILED link that blocks absorption is reported before any credit is spent — the one message allowed before the final delivery. Then run **in this order — each stage finished and passed before the next starts** (E0 run order, V7.60.7):
-   1. **Absorb** the inspo, script and product (§18 steps 1–2).
+5. **Intake → steps 1–5 (§18B).** Drive: `python3 .claude/skills/ai-prompt-engineer/scripts/fetch_drive.py <BUILD> <folder link>`; links: `fetch_inspo.py <BUILD> <links…>`. **Loom (§18C, optional):** `fetch_loom.py <BUILD> <LOOM link>` — read `loom.md` and the frames; a Loom that will not download is listed in *Flags* and the run continues without it. A missing script, unreadable document or FETCH_FAILED link that blocks absorption is reported before any credit is spent — the one message allowed before the final delivery. Then run **in this order — each stage finished and passed before the next starts** (E0 run order, V7.60.7):
+   1. **Absorb** the inspo, script and product (§18 steps 1–2). Open the **Visual Instruction Ledger (§27F)**: `script_lines.py <script> --visual builds/<build>/visual_ledger.md`, plus the Loom's `LMxx` rows. Every row is carried by its beat or CapCut line and ends `verified` or `flagged` — none open at delivery. Loom vs a written note on the same line: the Loom wins, listed in *Flags*.
    2. **Cast** — every §19 avatar sheet generated and passed (panel check); identity strings read off the renders.
    3. **Plates** — the property plate first (§30G), then every location plate (§30C), each generated and passed.
    4. **Act map + wardrobe map** (§18 step 5) — only now, built from what the sheets and plates rendered. B-roll `duration` = `pending-master` (E4).

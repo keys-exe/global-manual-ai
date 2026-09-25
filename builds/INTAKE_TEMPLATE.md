@@ -17,6 +17,7 @@ Save the script and product sheet as .docx or .pdf (native Google Docs are not t
 
 ```
 DRIVE: 
+LOOM: (optional — your Loom walkthrough for this script)
 BUILD: 
 MODE: 1 Realistic | 2 3D Pixar | 3 Claymation | 4 Realistic Film | 5 Pixar Film
 RUN: MANUAL | AUTOMATION
@@ -32,7 +33,7 @@ CAST NOTES:
 NOTES: 
 ```
 
-DRIVE, BUILD and MODE are required. Leave the rest blank to use the defaults (RUN blank = Manual, HOOKS blank = 3). With CAP filled in, the run never asks about credits. Each ADJUST line is applied and recorded. One that conflicts with the product sheet or product images is flagged, not applied.
+DRIVE, BUILD and MODE are required. LOOM is optional: set the Loom to "anyone with the link" (a private one can't be downloaded — put its MP4 in the Drive folder with `loom` in the name instead). Everything the Loom asks for, and every visual note written on the script, is followed (§27F, §18C). Leave the rest blank to use the defaults (RUN blank = Manual, HOOKS blank = 3). With CAP filled in, the run never asks about credits. Each ADJUST line is applied and recorded. One that conflicts with the product sheet or product images is flagged, not applied.
 
 ---
 
@@ -44,6 +45,7 @@ MODE: 1 Realistic | 2 3D Pixar | 3 Claymation | 4 Realistic Film | 5 Pixar Film
 FORMAT: UGC Ad | Short VSL | Long VSL | Narrated B-roll | AI Drama VSL
 RUN: MANUAL | AUTOMATION
 TOOLS: 
+LOOM: (optional)
 
 INSPO:
 - 
