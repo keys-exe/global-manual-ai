@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.16
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.17
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -59,7 +59,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.16"
+VERSION = "7.49.17"
 
 # --------------------------------------------------------------- slots
 
@@ -461,8 +461,8 @@ REVEAL_STATUS = {
 # frames (one size fits all, fitted exactly, supplied product photos as the
 # object reference). The frames below stay attached until the new ones are
 # accepted by the user; then swap file/job ids here and log it.
-PLACEMENT_REFERENCES_STATUS = ("REPLACED V7.49.15 -- front, rear, bent generated from worn_ref_prompts() and "
-                               "judged USE by the agent (§22V); the user may still reject any of them")
+PLACEMENT_REFERENCES_STATUS = ("LOCKED V7.49.17 by the user -- front (f5263ed7), bent (8a8979ac, raised) and "
+                               "rear (a38bc276). Layer 1 for placement. Replaced only on a user instruction.")
 PLACEMENT_REFERENCES = {
     "front": {
         "file": "stryde_refs/worn_front.jpg",
@@ -1097,6 +1097,11 @@ def _verify_v7490():
     for k in ("front", "bent", "rear"):
         if k not in PLACEMENT_REFERENCES or "file" not in PLACEMENT_REFERENCES[k]:
             fails.append("PLACEMENT_REFERENCES missing the %s frame" % k)
+    if not PLACEMENT_REFERENCES_STATUS.startswith("LOCKED"):
+        fails.append("worn placement references are not locked")
+    if [PLACEMENT_REFERENCES[k]["job_id"][:8] for k in ("front", "bent", "rear")] != \
+            ["f5263ed7", "8a8979ac", "a38bc276"]:
+        fails.append("a locked worn reference was swapped without a user instruction")
     if len(DEMONSTRATION_TABLE) != 7:
         fails.append("DEMONSTRATION_TABLE must carry the seven §30B rows")
     # fill() must resolve both slot spellings the Standards use
