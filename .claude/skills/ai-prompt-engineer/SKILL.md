@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.59.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.59.1) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -39,7 +39,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Formats (§3, §3A, §3B).** Identify the build type first; if unclear, ask. Default Short VSL or UGC Ad. Long VSL, Narrated B-roll and AI Drama VSL only on explicit request.
 
-**Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs — every character's voice is cloned and voiced in Eleven v3 by the §22U pipeline. Talking heads: HeyGen Avatar V driven by that audio (§22U; §36/§38 are the fallback). Post: CapCut. **Connectors are strict (§5):** images → Higgsfield (out of credits → Kie AI, logged, no switch back; Kie has no Sunburst, GPT Image 2 stands in); Kling → Kling connector; Seedance 2.5 → Kie AI (connector "Higgsless"). Nothing else falls back.
+**Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs — every character's voice is cloned and voiced in Eleven v3 by the §22U pipeline. Talking heads: HeyGen Avatar V driven by that audio (§22U; §36/§38 are the fallback). Post: CapCut. **Connectors are strict (§5):** images → Higgsfield (out of credits → Kie AI API, same models incl. Sunburst, logged, no switch back); Kling → Kling connector; Seedance 2.5 → **Kie AI API** via `scripts/kie.py` (`KIE_API_KEY`), not the Higgsless connector. Local files get public URLs through Kie upload (temporary). Nothing else falls back.
 
 **Image verdict (§22V).** Open and judge every image yourself — the line first, then product, body, continuity, register, animatability — and ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then the user. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
 
@@ -58,6 +58,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 - `scripts/voice_source.py` — steps 3–5: trim → ×1.2 → loop to ≥30s → `<Keyword>_clone_source.mp3`
 - `scripts/tts_budget.py` — steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags
 - `scripts/trim.py` — E11 trim pass (never on a §24I film voice master)
+- `scripts/kie.py` — Kie AI API (§5): `credit`, `upload` (public URL), `image` (fallback), `seedance` (720p, 9:16, ingredients, stated duration), `wait`
 - `scripts/fetch_drive.py` — §18B Drive intake: downloads the shared folder, sorts inspo / script / product sheet / images, extracts document text, measures the inspo
 - `scripts/fetch_inspo.py` — §18B/§42 Part 1: downloads INSPO links into `builds/<BUILD>/intake/` and measures duration, aspect, shots, cuts, silences. YouTube returns 403 from the cloud — ask for the file instead
 - `references/eleven_v3_tags.json` — the full Eleven v3 tag library (1,806 tags); `TAG-PALETTE` in §22U is the default subset
@@ -257,6 +258,6 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 
 **OPEN DECISIONS**
 
-**CHANGELOG — V7.58.1 → V7.59.0 *(cut authorised)***
+**CHANGELOG — V7.59.0 → V7.59.1 *(cut authorised)***
 
-**CHANGELOG — V7.58.0 → V7.58.1 *(cut authorised)***
+**CHANGELOG — V7.58.1 → V7.59.0 *(cut authorised)***

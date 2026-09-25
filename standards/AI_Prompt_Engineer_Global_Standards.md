@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.59.0 — supersedes all prior versions.** *(strict connector routing — Higgsfield images, Kling connector for Kling, Kie AI for Seedance 2.5 and as the image fallback, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.59.1 — supersedes all prior versions.** *(strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -415,15 +415,15 @@ Prompt quality is half the job. Most product drift traces to execution, not word
 |---|---|---|
 | **Images** — every T2I: seeds, cast sheets, property and location plates, start frames | **Higgsfield** | `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst per §18A |
 | **Kling video** — Kling B-roll, mechanism beats, any Kling I2V | **Kling** (Kling AI direct) | `kling-video-v3_0_omni` per §44 default 5 |
-| **Seedance 2.5** — every Seedance call, including the §22U voice source and the §24I film voice master | **Kie AI** (the connector appears as *Higgsless*) | `bytedance/seedance-2-5`, 720p |
+| **Seedance 2.5** — every Seedance call, including the §22U voice source and the §24I film voice master | **Kie AI API** (`KIE_API_KEY`, `scripts/kie.py`) — not the *Higgsless* connector | `bytedance/seedance-2-5`, 720p |
 | Voice | ElevenLabs (§22U) | `eleven_v3` |
 | Talking heads | HeyGen (§22U) | Avatar V |
 
-**Image fallback — Higgsfield out of credits.** Read the Higgsfield balance before every image batch. When it is below that batch's cost, the batch — and every image batch after it in the build — routes to **Kie AI**: `nano-banana-pro` or `nano-banana-2` per §18A, at 2K, 9:16. **Kie has no GPT Image 2.5 Sunburst:** a beat locked to Sunburst routes to Kie's `gpt-image-2-text-to-image` (the §4 fallback) and the substitution is logged. The switch is recorded in the ledger with the balance that triggered it. It never switches back mid-build, so one build's images come from one platform after the switch point.
+**Image fallback — Higgsfield out of credits.** Read the Higgsfield balance before every image batch. When it is below that batch's cost, the batch — and every image batch after it in the build — routes to the **Kie AI API**: `nano-banana-pro`, `nano-banana-2`, or `gpt-image-2-5-sunburst-text-to-image` / `-image-to-image` per the §18A lock, at 2K, 9:16. The whole arsenal exists on the Kie API, so nothing is substituted. *(Corrected V7.59.1: the Higgsless connector's catalogue lacked Sunburst; the API has it.)* The switch is recorded in the ledger with the balance that triggered it. It never switches back mid-build, so one build's images come from one platform after the switch point.
 
 **Nothing else falls back.** Kling out of credits, or Kie out of credits, is a stop (E2 `CREDIT_CAP`), never a silent reroute to another platform's copy of the model.
 
-**Kie reference inputs are public URLs.** Seedance on Kie takes images and voice audio as `reference_urls`. Higgsfield outputs already have URLs. **A local file — a voice master, a trimmed clip — needs a public URL first.** How that URL is made is an open decision (unverified); until it closes, a local voice file is the one Kie input that can block a Seedance call.
+**Kie reference inputs are public URLs, and Kie makes them.** Seedance takes `reference_image_urls` (≤30), `reference_audio_urls` (≤10, ≤30s in total) and `reference_video_urls` (≤10). Higgsfield outputs already have URLs. **A local file — a voice master, a trimmed clip, a product image — goes through Kie's file upload first** (`kie.py upload`, or passed as a path, which `kie.py` uploads itself). *Measured V7.59.1: a 793 KB MP3 uploaded and fetched back whole over a public URL.* **Upload URLs are temporary (24 hours to 3 days):** they are generation inputs, never the archive. Re-upload rather than reuse an old URL.
 
 ### Asset discipline
 
@@ -7536,9 +7536,10 @@ Words at pace → duration: brisk ≤9 → 5s · unhurried ≤8 → 5s · brisk 
 **Talking head (HeyGen, §22U step 13):** audio segment uploaded the same way → `create_video_from_avatar {avatarId: <look id>, engine: {type: "avatar_v"}, audioAssetId, aspectRatio: "9:16", resolution: "1080p", motionPrompt: <gestures>}`; poll `get_video`. Fallback: `engine: {type: "avatar_iv"}, expressiveness: "high"`.
 **Connector calls (§5, V7.59.0):**
 - **Images — Higgsfield:** `generate_image` / `generate_image_batch` on the T2I templates above; `balance` before every batch.
-- **Images — Kie fallback:** `generate {model_id: "nano-banana-pro" | "nano-banana-2" | "gpt-image-2-text-to-image", prompt, aspect_ratio: "9:16", resolution: "2K", reference_urls: [<public image URLs>]}` → `wait_for_generation`. Nano Banana Pro takes at most 8 references and Nano Banana 2 at most 14.
+- **Images — Kie API fallback:** `createTask {model: "nano-banana-pro" | "nano-banana-2", input: {prompt, image_input: [<URLs>], aspect_ratio: "9:16", resolution: "2K", output_format: "png"}}`, or `{model: "gpt-image-2-5-sunburst-image-to-image", input: {prompt, input_urls: [<URLs>], aspect_ratio: "9:16", resolution: "2K"}}` (`-text-to-image` takes no references). Reference caps: Nano Banana Pro 8, Nano Banana 2 14, Sunburst 16. Wrapped in `scripts/kie.py image`.
 - **Kling — Kling connector:** `who_am_i` once per session for the live argument spec, then `image_to_video {model: "kling-video-v3_0_omni", …}` with the start image; `query_tasks` to poll; `query_membership_and_credits` before every batch.
-- **Seedance — Kie AI:** `generate {model_id: "bytedance/seedance-2-5", prompt: <ING-MANIFEST + prose>, resolution: "720p", aspect_ratio: "9:16", duration: <E6>, reference_urls: [<images, composition first>, <voice master URL on dialogue>], sound: true}` → `wait_for_generation`. At most 30 image and 10 audio references. `get_credits` before every batch.
+- **Seedance — Kie API:** `POST https://api.kie.ai/api/v1/jobs/createTask {model: "bytedance/seedance-2-5", input: {prompt: <ING-MANIFEST + prose>, reference_image_urls: [<composition first>], reference_audio_urls: [<voice master>] on dialogue, resolution: "720p", aspect_ratio: "9:16", duration: <E6, 4–30, never -1>, generate_audio: true, output_format: "mp4"}}` → poll `GET /jobs/recordInfo?taskId=` until `state` is `success` or `fail`; the video is `resultJson.resultUrls[0]`. **Never `first_frame_url`** — it is mutually exclusive with references, and that is first-frame mode, retired at V7.54.1. Balance: `GET /chat/credit`. All of this is wrapped in `scripts/kie.py seedance`.
+- **File upload — Kie API:** `POST https://kieai.redpandaai.co/api/file-stream-upload` (multipart `file`, `uploadPath`, `fileName`) → `data.downloadUrl`.
 **Waits:** `jobs_wait` on every T2I before its I2V; batch order never implies completion order — on every route.
 
 ## E8. Boundary definitions
@@ -7678,7 +7679,9 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 **V7.55.1 film-mode beats — visual check, first use.** One `HERO-FILM` reveal insert, one `MECH-SCREEN` push into the §12A render with its matched grade, and one `ANIM-XRAY` beat. Judge: does the insert read as a story moment rather than product photography, does the cut from screen to render feel motivated, and does the X-ray read as friendly and clear while the product still visibly works? Settles by looking.
 
-**Media upload and public URLs (§5, §18B).** Two gaps, one likely fix: a way to put images, video and voice files into the Drive `OUTPUT` folder, and a public URL for a local voice master so Kie's Seedance can take it. Candidate: a Google service account key as an environment secret, with folders shared to it as Editor. Unverified.
+**Media upload to Drive (§18B).** Public URLs for Kie inputs are closed (V7.59.1: Kie file upload). Still open: putting images, video and voice files into the Drive `OUTPUT` folder. Candidate: a Google service account key as an environment secret, with folders shared to it as Editor. Unverified.
+
+**Kie API generation — first call.** `kie.py` is verified on the free paths only: balance, upload, error handling, and the guards on duration and reference caps. The first Seedance and image tasks confirm the `resultJson` parsing.
 
 **§18B Intake Pack — first run.** One Drive folder end to end: do native Google Docs download, and does the sort put every file where it belongs? Measured V7.58.1: a public Drive folder downloads from the container (`gdown`), and the sort passed on a mock folder of two videos, a `.docx` script, a PDF sheet, two images and one stray file. Then the link route: does every `INSPO` link download? **Measured V7.58.0: YouTube refuses the video stream from the cloud container (HTTP 403 from YouTube, not the proxy) — YouTube inspos go in `builds/<BUILD>/intake/`.** TikTok and Instagram unverified, and do steps 1–5 ship without a question?
 
@@ -7692,6 +7695,19 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 ---
 
+# CHANGELOG — V7.59.0 → V7.59.1 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **5** | Kie runs through its **API** (`KIE_API_KEY`), not the Higgsless connector. The API carries GPT Image 2.5 Sunburst, so the image fallback substitutes nothing. Kie file upload makes public URLs for local inputs (measured); the URLs are temporary |
+| E7 | Kie API call templates: `createTask`, `recordInfo`, `chat/credit`, file upload; never `first_frame_url` |
+| Open Decisions | Public-URL gap closed; Drive media upload still open; first Kie API generation pending |
+| Files | `scripts/kie.py` |
+
+**Origin:** user decision — use the Kie AI API.
+
+---
+
 # CHANGELOG — V7.58.1 → V7.59.0 *(cut authorised)*
 
 | § | Change |
@@ -7702,18 +7718,6 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | E0, E1, E2, E7 | Images leave the always-queued list; image-verdict and routing checks; `IMAGE_REGENERATE`, `IMAGE_FALLBACK`; connector call templates |
 
 **Origin:** user rules — strict connectors with a Kie fallback, the agent as the judge of every image, and output organised in Drive.
-
----
-
-# CHANGELOG — V7.58.0 → V7.58.1 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **18B** | **Drive intake (new, the default).** One shared folder holds the inspo, script, Product Sheet and product images; the message carries the link, build, mode and run. Files sorted by name and type; documents extracted; inspo measured; missing parts reported before absorbing. Supplied Product Sheet mapped to Appendix B. The single-message pack stays as the alternative |
-| E0 | Intake row covers the Drive message |
-| Files | `scripts/fetch_drive.py`; `builds/INTAKE_TEMPLATE.md` rewritten Drive-first |
-
-**Origin:** user request — send everything as one Drive link.
 
 ---
 
