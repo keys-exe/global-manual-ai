@@ -32,3 +32,4 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 18 | Knee insert from the front: Margaret's finger just below the kneecap on the patellar tendon, level with Barbara's strap | 6ec98f45-43cf-4423-a0e2-9f27d389d603 (edit of 013422cd) | APPROVED (option A) |
 | 19 | Margaret OTS: quiet "Yes.", eyes on her knee, hands out of frame | a56a17b4-57ac-482d-8837-edaba82cdf0c (edit of 16) | APPROVED (option A) |
 | 20 | Barbara across the table: "That's the tendon. Every step you take lands right there." | 4c718a76-83e3-4f6a-b5ed-aafb311f9c44 (edit of 11) | APPROVED (option A) |
+| 21 | Margaret near profile: slow out-breath on "Every stride." | b52a672a-0dbf-471d-b6c4-c7ac07a93994 (edit of 14) | APPROVED (option A) |
