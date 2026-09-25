@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.60.5 — supersedes all prior versions.** *(every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.60.6 — supersedes all prior versions.** *(Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -302,7 +302,7 @@ Read side by side, the two schemas differ in **three tags and nothing else**: `n
 | Beat class | Route | Why |
 |---|---|---|
 | Talking heads | **Kling `kling-video-v3_0_omni`** | The only route with a measured voice, lip-sync and `prefer_multi_shots` history in this pipeline (§22C, §28F, §28H). Do not move talking heads to a new model mid-build — two generators is two voices for one character (§22C) |
-| Mechanism A–C | **Kling-direct at 3s** | The 3s floor exists nowhere else; §12A's compressed blocks are designed to it |
+| Mechanism A–C | **Kling-direct, as long as the line (E6), 3s minimum** | Kling's 3–15s range lets the clip match the line; §12A's compressed blocks set the pace inside it |
 | Lifestyle B-roll | Kling by default; **Wan 3.0 in references mode or Seedance 2.5 in ingredients mode as sanctioned alternates** | Audio is discarded, so the voice argument does not apply; a B-roll beat can move routes without a continuity cost. Use the alternates to break a stubborn beat (§5's routing fallback, now with two siblings), to spend the 2–30s range on a demonstration that must play uncut through the proof (§30B), or wherever a recurring subject's face must show small or turning — references mode establishes the face from the sheet, not the seed |
 | Talking heads on Seedance | **Mode 4: the default route**, with each speaker's voice master as an audio ingredient. **Mode 1: permitted**, Kling stays the default. Both are override-against-measurement until the voice-lock test runs (Open Decisions) | The audio ingredient is the reason to want it |
 | Talking heads on Wan | **Blocked until the voice-lock test passes** (Open Decisions) | The audio-reference slot is the reason to want it; until it is shown to carry timbre, a prose-model talking head is a second voice for the character |
@@ -1188,9 +1188,9 @@ Add the trough explicitly — *"drops back to a deep angry orange between peaks"
 
 ### Duration and entry
 
-**Anatomy B-roll is 3 seconds, including the whole-arc beat** *(locked V7.48)*. The compressed blocks are the default form and the full-length blocks are the exception for a beat with room. The prior "the arc needs full duration, never a 2–3s cutaway" clause is **withdrawn**: it was inferred from a reference clip that happened to be five seconds long, and the duration was never part of the finding. Where a problem-to-relief line needs covering, two forms are equally valid and picked per line at the act map — `ANAT-ARC-S`, where the change happens inside one shot with no edit point mid-line, or a **match-cut pair** sharing camera position, framing and cadence, where the change lands exactly on the cut and the editor controls its timing.
+**Anatomy B-roll is as long as the script line it covers, 3 seconds minimum** *(V7.60.6 — was a fixed 3s; E6)*. The compressed blocks are the default form and the full-length blocks are the exception for a beat with room. The prior "the arc needs full duration, never a 2–3s cutaway" clause is **withdrawn**: it was inferred from a reference clip that happened to be five seconds long, and the duration was never part of the finding. Where a problem-to-relief line needs covering, two forms are equally valid and picked per line at the act map — `ANAT-ARC-S`, where the change happens inside one shot with no edit point mid-line, or a **match-cut pair** sharing camera position, framing and cadence, where the change lands exactly on the cut and the editor controls its timing.
 
-**Generate mechanism beats at the shortest duration the model offers.** A travelling boundary spread over five seconds has no urgency; the same event in three is a hook. §4's Kling-direct route offers 3–15s granularity where the Higgsfield floor is 5 — **generate mechanism beats at 3s on Kling-direct** and the escalation is designed edge-to-edge with nothing wasted.
+**Mechanism beats are as long as the script line they cover (E6, V7.60.6), 3s minimum.** A travelling boundary spread thin has no urgency, so the escalation is designed to fill the line's span edge-to-edge with nothing wasted; Kling-direct's 3–15s granularity lets the clip match the line to the second. *(Was: always the 3s floor.)*
 
 ### Escalating beats are cut from the tail, never the head
 
@@ -1911,7 +1911,7 @@ The CapCut block (§40) carries every graphic as its own line: beat ID, graphic 
 ---
 ## 18. Build Order Discipline *(rewritten V7.48.2 — the eight-step flow)*
 
-Work runs continuously. Steps 3, 4 and 5 **send** their artefact and continue in the same pass — a handoff, not an approval. **The only gate in the build is step 6.**
+Work runs continuously. Steps 3, 4 and 5 **send** their artefact and continue in the same pass — a handoff, not an approval. **The only gate in the build is step 6** — in Manual. **In Automatic there is no gate: the agent confirms each hook itself (E0, V7.60.6).**
 
 Every step carries a class:
 
@@ -1926,7 +1926,7 @@ Every step carries a class:
 | 3 | **Cast — everyone who recurs** | DET *(render dependency)* | **Every subject with two or more beats on the step-2 inventory** — the narrator, every named side character, **and every anonymous B-roll subject who recurs** (`S-01`, `S-02`…) — gets a full §19 reference sheet — one prose generation, 9:16, no reference — passed through the §19 panel check before it is attached anywhere. Identity strings locked from what rendered, never from what was prompted (§7 applied to our own output). Ships per sheet: §19A axis table with clearance counts; **speaking characters additionally** get `VOICE-[CHAR]` roster-cleared and a full §20 constraint sheet. One-off subjects are not sheeted (§13). **Sent, then straight on** |
 | 4 | **Property and location maps** | DET | The §30C Location Derivation Pass over the step-2 phrase inventory, **opening with channel C0 — which locations are rooms of one dwelling.** Where two or more are, the **Property Sheet is written and its property plate generated and checked first (§30G)**, before any location plate is built against it. Five-part Location Sheets, §22A lighting profiles reconciled to the property's orientation, plates rendered for **PLATED locations only** — never for INCIDENTAL or **TRAVERSED** ones (§30C 1a), both of which still carry the property plate where they are interiors of the dwelling. Four set-level checks run. **The location set closes here.** **Sent, then straight on** |
 | 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims |
-| 6 | **Hooks, one by one** | AC → **HG** | Serial: deliver → generate → first-frame check (§5/§30C/§30E) → confirm → next. Seeds built against plates that already exist. Confirmed renders feed the Scene and Subject Registries as they land. **The only gate** |
+| 6 | **Hooks, one by one** | AC → **HG** | Serial: deliver → generate → first-frame check (§5/§30C/§30E) → confirm → next. Seeds built against plates that already exist. Confirmed renders feed the Scene and Subject Registries as they land. **The only gate** in Manual; in Automatic the agent confirms (E0) |
 | 7 | **B-roll and body acts** | DET | Executing step 5's dispositions in the §30E assembly order — motion arc first, start frame derived, plates attached, strings by register, model routed. `TH`-carried lines get no cutaway on purpose. Each act delivery ends on its §27B reconciliation line |
 | 8 | **CapCut block** | DET | Cover points, J-cuts, designed-silence list, sync triage, motion-graphics layer, supplied-asset cut-ins (§40) — last and separate |
 
@@ -1979,7 +1979,7 @@ FORMAT / TOOLS / CAST NOTES / NOTES: <optional>
 - `CAP` is the E0 credit cap. When it is present, the run never asks for it.
 - **Each `ADJUST` line is applied, and recorded in the Build Sheet with the section it overrides.** An adjustment that contradicts a higher authority layer (§1: reference images, Product Sheet, locked standards) is **flagged at the step-1–5 delivery and not applied silently**. Everything else runs.
 
-**The stops that remain in a one-message run:** hook approval (§18 step 6), the voice clone in Manual (§22U step 6 — Automatic clones by API and does not stop, E0), the voice master listen (§22U step 10), and the final review. `CAP` in the message removes the credit question.
+**The stops that remain in a one-message run — Manual:** hook approval (§18 step 6), the voice clone (§22U step 6), the voice master listen (§22U step 10), and the final review. **Automatic (V7.60.6): none.** The Drive link with `RUN: AUTOMATION` is the last message the run needs; the agent approves every step and delivers only the finished videos. `CAP` overrides the E0 default caps; `VOICE` absent → derived per §22D. The one exception is an intake that cannot be absorbed (no script, unreadable file) — that is reported before any credit is spent.
 
 **The folder** is shared *Anyone with the link — Viewer* and holds, at its top level or in subfolders:
 
@@ -2038,7 +2038,7 @@ Where there is no folder, the same fields travel in one message:
 | Mode 1, 2, 3 all B-roll or narrated | §22U steps 1–10 — the master is the voiceover | none |
 | **Mode 4, Mode 5, AI Drama** | **§24I film voice master — untrimmed** | none — dialogue is Seedance with the master as audio ingredient |
 
-5. **Stop at step 6** — the hooks gate — as always.
+5. **Stop at step 6** — the hooks gate — in Manual. Automatic does not stop (E0).
 
 **Manual vs Automatic.** In Manual the agent still fetches, measures and absorbs the inspo itself, because absorption is analysis rather than generation. Steps 3–5 and the voice route are then delivered as copy-ready prompts, in the order the user runs them. In Automatic (`RUN: AUTOMATION`), the agent generates every cast sheet, plate and voice itself, with the §19 panel check, the §30C/§30G plate checks and E1 on each one, and stops at the E0 stop points.
 
@@ -2647,7 +2647,7 @@ Both run modes (E0). **Manual:** the agent delivers every step's prompt, text an
 | 7 | **Name the voice** | — | **One keyword from the script title**, capitalised (title "The Knee Pain Nobody Talks About" → `Knee`). If two builds share a keyword, add the character's first name (`Knee-Maria`). **A name already on the account is never reused** — `elevenlabs_clone.py` refuses it; `--character <FirstName>` applies the suffix (V7.60.5). Recorded on the constraint sheet with the voice ID |
 | 8 | **Tag the script** | Eleven v3 audio tags | From the tag library (below) |
 | 9 | **TTS** | ElevenLabs `eleven_v3`, the cloned voice ID, 4 takes | **5,000 characters maximum per request, tags and spaces included** — the budget ladder below |
-| 10 | **Pick and save the master** | — | The most realistic take (below). Saved as `<VoiceName>_master.mp3` in the build tree and logged in the ledger |
+| 10 | **Pick and save the master** | — | The most realistic take (below). Saved as `<VoiceName>_master.mp3` in the build tree and logged in the ledger. Manual: the user listens. Automatic: the agent picks by the four criteria and does not stop (E0) |
 | 11 | **Upload the avatar image** | HeyGen asset upload → photo avatar | The step-1 image, or the matching look image for each act/location/story day (§14, §30C). One photo avatar per look |
 | 12 | **Split the master** | `ffmpeg`, cut at sentence ends by word timestamps | One audio segment per talking-head beat (§29), each cut between words. B-roll-covered lines stay in the master for the edit and are not rendered |
 | 13 | **Talking heads** | HeyGen, engine **Avatar V**, audio upload, 9:16, 1080p | **Expressiveness on and hand gestures while talking** — see the HeyGen settings below |
@@ -2659,7 +2659,7 @@ Both run modes (E0). **Manual:** the agent delivers every step's prompt, text an
 - **Extract:** `scripts/script_lines.py <script>` keeps the spoken lines and reports every dropped line with its reason (title, heading, reference/link, visual note, bracketed direction), so nothing leaves the script silently.
 - **Lock:** `scripts/tts_budget.py <tagged> --script-lines <lines>` removes the tags and compares word for word. **Any difference is a FAIL, and the text is not sent.**
 - **A script line that looks wrong is flagged to the user, never fixed** (§1 order of authority). That covers a typo, a claim problem (§43A) or a contradiction with the Product Sheet.
-- **Hooks the agent writes are not script.** They are voiced only after the user approves them at step 6, as separate files. They are never merged into the body text.
+- **Hooks the agent writes are not script.** They are voiced only after they are approved at step 6 — by the user in Manual, by the agent in Automatic — as separate files. They are never merged into the body text.
 - **The budget ladder never touches words.** It removes tags, and as a last step it splits at paragraph ends. It never shortens a line.
 
 ### Step 8–9 — tags and the 5,000-character budget
@@ -4646,7 +4646,7 @@ Mechanism beats A–C are the only exception to the iPhone camera lock and **the
 7. Body acts in order, each closing on its reconciliation line *(step 7)*
 8. CapCut block — last and separate *(step 8)*
 
-**Steps 1–5 are one delivery. The build stops once, at step 6.**
+**Steps 1–5 are one delivery. The build stops once, at step 6** (Manual; Automatic never stops, E0).
 
 ---
 
@@ -4971,7 +4971,7 @@ One frame carrying the whole shell: the hall seen from just inside the front doo
 
 **The deliverable is one finished video per hook: hook 1 + the body, hook 2 + the body, hook 3 + the body.** Every variant carries the same body. Only the hook changes, which is what makes the variants a clean test.
 
-- **How many:** as many as the script supplies. Where the agent writes the hooks (an empty Hooks section), **three**, each approved one by one at §18 step 6. Beat IDs per §33: `HK1-01`, `HK2-01`, `HK3-01`.
+- **How many:** as many as the script supplies. Where the agent writes the hooks (an empty Hooks section), **three**, each approved one by one at §18 step 6 (by the agent in Automatic, E0). Beat IDs per §33: `HK1-01`, `HK2-01`, `HK3-01`.
 - **Voice:** each hook is its own master in the build's cloned voice (§22U), made only after its step-6 approval. The body master is voiced once and reused by every variant, never re-voiced per hook.
 - **One timeline per variant:** hook and body are assembled together, so every §30H rule holds across the hook-to-body seam. A hook's last B-roll may extend over the seam to close a flicker; that is the only difference allowed at the seam.
 - **The body is locked:** word timings are taken per part (the hook alone, the body alone), and the body starts on a whole frame. **The body's B-roll cuts are therefore identical in every variant**, and the instrument checks it.
@@ -5389,7 +5389,7 @@ Three tiers. Every numeric, clinical or comparative claim in a script is assigne
 
 **37. B-roll → sheets, one map per sequence, I2V before T2I.** Every subject with two or more beats — anonymous or not — is sheeted at step 3 with a §19 composite and named markers; subject plates lifted from a first render are withdrawn; every sequence establishes its geography once and holds the axis; the motion arc is written first and the start frame derived from it, with scene, subject and product references all attached and named (§30E).
 
-**38. Call parameters → 9:16, locked, and duration by the E6 function.** Aspect 9:16 on every call in every mode, never overridden and never letterboxed; Seedance always 720p; B-roll calls 5s, mechanism 3s on Kling-direct, dialogue beats per the words→duration table; parameters live at call level, never inside B-roll JSON (§27, Appendix E6–E7).
+**38. Call parameters → 9:16, locked, and duration by the E6 function.** Aspect 9:16 on every call in every mode, never overridden and never letterboxed; Seedance always 720p; **every B-roll call — mechanism and anatomy included — as long as the script line it covers (E6, V7.60.6)**, dialogue beats per the words→duration table; parameters live at call level, never inside B-roll JSON (§27, Appendix E6–E7).
 
 **39. Product Sheets → the `.md` + `.py` pair.** The python companion carries slots, locked strings and assertions; absorbed at §18 step 2, created when absent (Appendix B).
 
@@ -7475,16 +7475,18 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 
 | Part | Automatic rule |
 |---|---|
-| **Prompts** | Written and delivered exactly as in Manual (§16, §16B). Every submitted prompt is a delivered prompt; nothing is generated from a prompt the user cannot see |
+| **Hands-off** *(V7.60.6)* | **Automatic never stops for the user.** Wherever §1–§45, Appendices A–E or a skill says HUMAN, HG, "the user approves", "queue for the user" or "stop", the agent is that human in Automatic: it judges, decides and continues. The user sends the Drive link with `RUN: AUTOMATION` and receives only the finished videos. Manual is unchanged |
 | **Execution** | The agent submits every call itself on the E7 templates, waits per E7, and logs every job in `run_ledger.json` (E3) under `builds/<build>/` (E9) |
-| **Stop points** | (1) **§18 step 6** — hooks, unchanged; (2) **final review** — every approved beat, the QA table and the trimmed clips, before the CapCut block; (3) **credit cap** — see below; (4) any E2 escalation to HUMAN. Nothing else stops the run |
-| **Credit cap** | The user states a per-build credit cap when the run starts; absent one, the agent asks once, before the first call. The balance is read before every batch; a batch that would cross the cap does not submit — the run stops with the spend so far and the cost of what remains |
-| **QA** | Every render is downloaded and checked against E1. AUTO checks run by instrument. **HUMAN checks run as AGENT-FIRST**: the agent looks and judges; a clear pass proceeds, a clear fail takes the E2 remedy, an uncertain read queues for the user. **Images are the agent's to judge (§22V, V7.59.0):** every image gets a USE or REGENERATE verdict from the agent, and only a third failure of the same fault reaches the user. **Always queued for the user regardless of the agent's read:** the §28F closure/sync frame check, voice (§22D), and any Mode 4/5 performance check on video |
+| **Prompts** | Written exactly as in Manual (§16, §16B) and saved to the build tree and Drive (`OUTPUT/`), not sent as messages. Every submitted prompt is on record; nothing is generated from a prompt that is not saved |
+| **Stop points** | **One: the credit cap** (below). Hooks (§18 step 6), the voice master (§22U step 10), the final review and E2 escalations do not stop the run — the agent decides each one (V7.60.6). An intake that cannot be absorbed (no script, unreadable file) is reported before the first paid call |
+| **Credit cap** | **Default per build (V7.60.6), never asked:** Mode 1–3 — Higgsfield 600 · Kling 3,000 · Kie 2,000. Mode 4, 5, AI Drama — Higgsfield 600 · Kling 3,000 · Kie 25,000. A `CAP` line in the intake overrides it. Basis: Nano Banana Pro 2k = 2 credits per image (measured); Seedance 2.5 720p on Kie = 160–630 per call, median ~45/s (42 production tasks); Kling 3.0 per-second cost **unverified** — the ledger logs spend per clip-second and the first build calibrates it. The balance is read before every batch; a batch that would cross the cap does not submit — the run stops with the spend so far and the cost of what remains. This is the only stop |
+| **QA** | Every render is downloaded and checked against E1. AUTO checks run by instrument. **HUMAN checks are the agent's (V7.60.6)**: a pass proceeds, a fail takes the E2 remedy, and an uncertain read is decided by the agent on the stricter reading — nothing is queued. This covers images (§22V), video (§22W), the §28F closure/sync check, voice (§22D) and Mode 4/5 performance. **When E2's retries run out**, the agent keeps the best attempt, logs why, and lists it under *Flags* in the final report — the run does not stop |
 | **Trim** | Every talking-head clip that passes QA goes through the E11 trim pass before final review |
 | **Intake** | An Intake Pack or Drive intake message with `RUN: AUTOMATION` starts the run; cast sheets, the property plate and location plates are generated straight after absorption (§18B) |
 | **Film voices** | §24I voice masters are generated, checked and stored untouched; E11 never runs on them |
-| **Voice pipeline** | §22U runs in order. Step 6 (clone) runs by API through `scripts/elevenlabs_clone.py` and does not stop the run (Automatic only — Manual keeps the §22U step-6 HUMAN clone, V7.60.4); `elevenlabs_clone.py check` runs at the start of the run, before the first paid call — a missing key or a failed check stops the run there. The step-10 master is always played to the user before any HeyGen render |
-| **Record** | The ledger is the record. Every reroll, every changed prompt and every trim is logged with its reason; a changed prompt is still a delivered iteration (§16) |
+| **Voice pipeline** | §22U runs in order, **before any B-roll call** (the master times every B-roll, E6). Step 6 (clone) runs by API through `scripts/elevenlabs_clone.py` and does not stop the run (Automatic only — Manual keeps the §22U step-6 HUMAN clone, V7.60.4); `elevenlabs_clone.py check` runs at the start of the run, before the first paid call — a missing key or a failed check stops the run there. The agent picks the step-10 master itself (V7.60.6) |
+| **Record** | The ledger is the record. Every reroll, every changed prompt and every trim is logged with its reason; a changed prompt is saved as a new iteration (§16) |
+| **Final delivery** *(V7.60.6)* | The only message of the run: one finished video per hook (§30H) in Drive `08_EDIT`, with links; then a short report — hooks chosen and why, voice ID, spend per platform against the cap, and *Flags* (every best-of-retries pick and every uncertain call the agent made). Everything else — absorption, sheets, prompts, QA tables, CapCut block — is in Drive `OUTPUT/` and the build tree, not sent |
 
 **Automatic never changes the craft.** Every rule in §1–§45 and Appendices A–D applies unchanged; this section changes who presses generate, not what is generated.
 
@@ -7544,7 +7546,7 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | HeyGen call (§22U step 13) | call params | engine `avatar_v` (or the logged fallback), `9:16`, `1080p`, uploaded audio, `motionPrompt` present | AUTO | Resubmit with the params fixed |
 | Credit cap (E0, Automatic) | balance read before every batch | batch cost + spend so far ≤ cap | AUTO | Do not submit; stop the run and report |
 
-Every generated batch ships its QA table alongside the prompts — the reconciliation-line pattern, generalised. **In Automatic, HUMAN rows run as AGENT-FIRST (E0)** and the table records which reads were the agent's and which the user's.
+Every generated batch ships its QA table alongside the prompts — the reconciliation-line pattern, generalised. **In Automatic, HUMAN rows are the agent's and never stop the run (E0, V7.60.6)** and the table records which reads were the agent's and which the user's.
 
 ## E2. Failure taxonomy and retry budgets
 
@@ -7601,7 +7603,12 @@ One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t
 
 ## E6. Duration function *(the §28H inverse)*
 
-Words at pace → duration: brisk ≤9 → 5s · unhurried ≤8 → 5s · brisk 10–20 → 10s · unhurried 9–18 → 10s · above → split the line per §29. Talking-while-doing always reads the unhurried column. B-roll calls: 5s (the Higgsfield floor; Wan 2–30s and Seedance 4–30s where routed there, still 5s unless the demonstration needs longer); mechanism on Kling-direct: 3s; `ANAT-STRESS-R` and whole-arc beats: 5s minimum. Aspect: 9:16, locked — never overridden, never letterboxed. Resolution per §4; **Seedance 720p always**.
+Words at pace → duration: brisk ≤9 → 5s · unhurried ≤8 → 5s · brisk 10–20 → 10s · unhurried 9–18 → 10s · above → split the line per §29. Talking-while-doing always reads the unhurried column. **B-roll duration = the script line it covers** *(V7.60.6 — replaces the fixed 5s / 3s B-roll durations)*. Every B-roll clip — mechanism, anatomy, product and object beats included — is generated as long as the spoken span it is placed on (§30H): the line, or the phrase where §27 splits a line across several B-rolls.
+- **Measured, not estimated:** the span is read from the voice master's word timestamps (first word start → last word end). In Automatic the voice master is made before any B-roll call, so every B-roll duration is measured.
+- **Call duration** = span + 0.5s handle, rounded **up** to the next whole second, within the model's range — Kling 3.0 3–15s. A span needing under 3s gets 3s and is cut to the span in assembly; a span over 15s is split at a word boundary into two clips.
+- **Never a default length.** A B-roll call without a measured span is not submitted.
+
+Superseded B-roll rule, kept for reference: B-roll calls: 5s (the Higgsfield floor; Wan 2–30s and Seedance 4–30s where routed there, still 5s unless the demonstration needs longer); mechanism on Kling-direct: 3s; `ANAT-STRESS-R` and whole-arc beats: 5s minimum. Aspect: 9:16, locked — never overridden, never letterboxed. Resolution per §4; **Seedance 720p always**.
 
 ## E7. Verified call templates *(param names measured in production)*
 
@@ -7780,6 +7787,21 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 ---
 
+# CHANGELOG — V7.60.5 → V7.60.6 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **E0** | **Automatic is hands-off.** The agent is the human for every HUMAN/HG/approval/queue in the document; hooks, voice master, final review and E2 escalations no longer stop the run. The only stop is the credit cap. Prompts are saved to Drive and the build tree, not sent. The run's only message is the final delivery: the finished videos plus a short report with *Flags* |
+| **E0** | **Default credit caps per build**, never asked: Mode 1–3 Higgsfield 600 · Kling 3,000 · Kie 2,000; Mode 4/5/AI Drama Kie 25,000. `CAP` overrides. Kling per-second cost unverified — calibrated from the first build's ledger |
+| **E6** | **Every B-roll clip is as long as the script line (or §27 phrase) it covers**: span from the voice master's word timestamps + 0.5s, rounded up, Kling 3–15s; the voice master is made before any B-roll call. Replaces the fixed 5s / 3s B-roll durations |
+| 4, 12A (mechanism and anatomy), 44 default 38 | Synced to the E6 line-length rule; 3s is now the minimum, not the length |
+| 18, 18B, 22U, 30H, E1 | Manual keeps its gates; Automatic notes added |
+| Files | Automation skill; session hook adds `auto-editor` |
+
+**Origin:** user rule — the agent approves everything and gives only the final results after the Drive link; Higgsfield images, Kling B-roll, Kie Seedance; B-roll length follows the script line.
+
+---
+
 # CHANGELOG — V7.60.4 → V7.60.5 *(cut authorised)*
 
 | § | Change |
@@ -7792,20 +7814,6 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | Files | `scripts/elevenlabs_clone.py` (`--character`, name check) |
 
 **Origin:** user rule — voices always come from a Seedance clip with the audio extracted there; ElevenLabs Voice Design is never used.
-
----
-
-# CHANGELOG — V7.60.3 → V7.60.4 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **22U** | **Step 6 split by run mode.** Manual: HUMAN clone in the ElevenLabs app, restored as before V7.60.3. Automatic: by API through `scripts/elevenlabs_clone.py`, not a stop (E0) |
-| 18B | The clone stays in the stop list for Manual; Automatic skips it |
-| E0 | `elevenlabs_clone.py check` runs at the start of an Automatic run; a failure stops the run there |
-| E7 | Clone template labelled Manual (app) / Automatic (script) |
-| Skills | The clone script is listed in the Automatic skill only |
-
-**Origin:** user correction — the API clone is automation work; the Manual standard keeps its human clone.
 
 ---
 
