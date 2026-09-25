@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.24
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.25
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -67,7 +67,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.24"
+VERSION = "7.49.25"
 
 # --------------------------------------------------------------- slots
 
@@ -387,8 +387,9 @@ PACKAGE = {
                  "16 cm deep and 8 cm tall -- sized to hold two straps side by side"),
     "logo":     ("the lowercase grey stryde wordmark centred on the lid, in the same bold rounded lettering "
                  "and the same grey as the wordmark on the shell; nothing else printed anywhere on the box"),
-    "inside":   ("a matte-black insert with two shaped wells side by side; in each well one strap, band "
-                 "closed in a ring lying flat, shell standing upright at the front facing out, wordmark readable"),
+    "inside":   ("a matte-black insert with two shaped wells side by side; in each well one strap standing as "
+                 "ONE continuous ring -- the shell is the front arc, facing out, the band runs from its two slides "
+                 "round the back at the shell's height; shell and band never apart (V7.49.25, user)"),
     "contents": "always exactly two straps -- never one, never three, no other items",
     "text":     ("no offer text, price, badge or sticker on the box in any prompt -- 'Buy 1 Get 1 Free' is "
                  "added in the edit (Standards §17)"),
@@ -397,13 +398,16 @@ PACKAGE_LOCK = (
 "A rigid two-piece gift box, a lid over a base, matte black all over, about 28 cm wide, 16 cm deep and 8 cm "
 "tall. The only thing printed on it is the lowercase grey stryde wordmark centred on the lid, in the same bold "
 "rounded lettering and grey as the wordmark on the strap's shell. Inside, a matte-black insert with two shaped "
-"wells side by side holds exactly two identical straps, one in each well, each band closed in a ring lying "
-"flat in its well, each shell standing upright at the front of its well facing out, its wordmark upright and "
-"readable.")
+"wells side by side holds exactly two identical straps, one in each well. Each strap is ONE piece, one "
+"continuous closed ring standing upright in its well like a bracelet standing on its edge: the rigid shell is "
+"the front arc of that ring, facing out with its wordmark upright and readable, and the band leaves the "
+"chrome slide at each end of the shell and runs round the back of the ring at the same height as the shell, "
+"so shell and band are joined at the slides into one unbroken loop.")
 NEG_PACKAGE = (
 "no text on the box except the stryde wordmark, no offer text, no price, no badge, no sticker, no barcode, no "
 "white box, no coloured box, no glossy box, no window in the lid, no third strap, no single strap in the box, "
-"no loose strap outside the insert, no extra items in the box")
+"no loose strap outside the insert, no extra items in the box, no shell separate from its band, no band lying "
+"flat under the shell, no shell resting on top of a loop of band")
 
 PACKAGE_SCENES = {
     "closed": ("Product photograph, vertical 9:16, on a plain seamless white background with soft even light "
@@ -421,9 +425,12 @@ PACKAGE_REFS_STATUS = "AGENT USE V7.49.24 -- awaiting user lock"
 PACKAGE_REFS = {
     "closed": {"file": "stryde_refs/package_closed.jpg", "job_id": "e8c4df4b-ceb4-404f-ac1d-989f2e8b9154",
                "attempt": "1 of 1", "flags": ""},
-    "open":   {"file": "stryde_refs/package_open.jpg", "job_id": "bea8b220-fc0f-40a7-8670-7499d79013a2",
-               "attempt": "1 of 1",
-               "flags": "the insert reads as a flat black tray rather than two shaped wells"},
+    "open":   {"file": None, "job_id": "bea8b220-fc0f-40a7-8670-7499d79013a2",
+               "attempt": ("3 of 3 used, none accepted -- bea8b220 shell and band drawn apart (user); "
+                           "5448322e one-piece rings but turned 90 degrees, wordmark vertical; 3f1b84a8 edit "
+                           "to turn them upright changed nothing"),
+               "status": "OPEN -- back to the user (§22V: two regenerations per fault)",
+               "flags": "no accepted open-box reference yet"},
 }
 
 
@@ -488,7 +495,8 @@ NEG_OBSERVED = (
 "no flat rectangular shell, no slab shell without peaks, no chrome slide mounted on the front face, no slide "
 "on the band instead of the shell's end, no moulded frame around the slide, no sideways chevrons, no band "
 "leaving the bottom edge of the shell, no product tipped on its side, no watch-strap band, no keeper loop "
-"shaped like a buckle")
+"shaped like a buckle, no shell drawn apart from its band, no strap turned on its side with the wordmark "
+"vertical")
 NEG_OBSERVED_LOG = (
     ("V7.49.15", "worn bent", "shell tall and narrow, U-shaped with horn peaks"),
     ("V7.49.18", "three-quarter right", "V notch, crown peaks, slide on the face, watch-strap band"),
@@ -499,6 +507,8 @@ NEG_OBSERVED_LOG = (
     ("V7.49.19", "side", "product tipped, band leaving the shell's bottom edge"),
     ("V7.49.20", "held", "fingers curled over the top edge hiding the notch and peaks"),
     ("V7.49.21", "product front", "camera above, notch deep and narrow, peaks 12% unequal"),
+    ("V7.49.24", "package open", "each strap drawn as two pieces -- a flat band loop with the shell sitting on top"),
+    ("V7.49.25", "package open", "one-piece rings turned 90 degrees in the box, peaks sideways, wordmark vertical"),
 )
 
 # --- how the strap is worn (V7.49.21, user: "it needs to be clarified") ------
@@ -1789,12 +1799,14 @@ def verify(verbose=False):
             fails.append("side_from_script(%r) != %s" % (txt, want))
     if "FLAG" not in side_from_script("left knee and right knee")[1]:
         fails.append("side_from_script does not flag a script naming both knees")
+    if "ONE piece" not in PACKAGE_LOCK or "no shell separate from its band" not in NEG_PACKAGE:
+        fails.append("PACKAGE lost the one-piece rule (V7.49.25)")
     if "exactly two" not in PACKAGE_LOCK or "two" not in PACKAGE["contents"]:
         fails.append("PACKAGE_LOCK lost the always-two rule")
     if "Buy 1 Get 1 Free" in PACKAGE_LOCK or "Buy 1 Get 1 Free" in "".join(package_prompts().values()):
         fails.append("offer text must never be generated on the box (§17)")
     for k, v in PACKAGE_REFS.items():
-        if not os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), v["file"])):
+        if v["file"] and not os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), v["file"])):
             fails.append("package ref %s file missing" % k)
     if "matte black" not in PACKAGE_LOCK or "stryde wordmark" not in PACKAGE_LOCK:
         fails.append("PACKAGE_LOCK lost the black box or the logo")
@@ -2062,7 +2074,7 @@ A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and
 
 **Our box** (`PACKAGE`, `PACKAGE-LOCK`, `NEG-PACKAGE`): a rigid two-piece box, matte black all over, about 28 × 16 × 8 cm. The only print is the lowercase grey stryde wordmark centred on the lid, in the same lettering and grey as the shell. Inside, a matte-black insert holds **exactly two straps** side by side, bands closed, shells up, wordmarks readable. No other items, no text, no stickers. The size is a rendering spec until the real box exists.
 
-**Box references** (`PACKAGE_REFS`, awaiting your lock): `package_closed.jpg` (e8c4df4b) and `package_open.jpg` (bea8b220 — flag: the insert reads as a flat tray, not two shaped wells). For box beats attach the box reference plus `front.webp` + `back.webp`.
+**Box references** (`PACKAGE_REFS`, awaiting your lock): `package_closed.jpg` (e8c4df4b) and the open box has **no accepted reference yet** (three tries, V7.49.25 — see `PACKAGE_REFS`). For box beats attach the box reference plus `front.webp` + `back.webp`.
 '''
 
 
