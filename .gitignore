@@ -7,3 +7,5 @@ builds/**/trim/
 *.mp3
 __pycache__/
 builds/*/intake/
+builds/**/work/*.jpg
+builds/**/work/*.png
