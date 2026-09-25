@@ -1,0 +1,212 @@
+{
+ "SC05-V7-C01": {
+  "task": "92dc6bb6d5f6a0e1c2def95a5d52fcd4",
+  "dur": 4,
+  "frame": "SC05-V7-01-OPEN.png"
+ },
+ "SC05-V7-C02": {
+  "task": "084d988e197c271e20f21c1dd6fe1cef",
+  "dur": 9,
+  "frame": "SC05-V7-02-B-EVERY-MORNING.png"
+ },
+ "SC05-V7-C03": {
+  "task": "818668497d55a8d016e535bfd9edbfc4",
+  "dur": 4,
+  "frame": "SC05-V7-03-M-ELEVEN-YEARS.png"
+ },
+ "SC05-V7-C04": {
+  "task": "d8b88663cd8ced8442bcf5a5d2d907d5",
+  "dur": 4,
+  "frame": "SC05-V7-04-B-SHOW-YOU.png"
+ },
+ "SC05-V7-C05": {
+  "task": "dc785f116c6e4fc9a8295c9ade77675a",
+  "dur": 4,
+  "frame": "SC05-V7-05-BACK-UP.png"
+ },
+ "SC05-V7-C06": {
+  "task": "d31d58ca7362c9886816309404b16c81",
+  "dur": 4,
+  "frame": "SC05-V7-06-CHAIR-BEHIND.png"
+ },
+ "SC05-V7-C07": {
+  "task": "d719797d55f19c1d1175dd5ba3275753",
+  "dur": 4,
+  "frame": "SC05-V7-07-SAT-BESIDE.png"
+ },
+ "SC05-V7-C08": {
+  "task": "3ba996296e6e2a3252c48ced14a1a77d",
+  "dur": 4,
+  "frame": "SC05-V7-08-REVEAL.png"
+ },
+ "SC05-V7-C09": {
+  "task": "01b112d52f1a86c7f457c977ac281216",
+  "dur": 6,
+  "frame": "SC05-V7-09-B-ITS-CALLED-STRYDE.png"
+ },
+ "SC05-V7-C10": {
+  "task": "de79e5e88e423e3a2f464e847bf6b071",
+  "dur": 6,
+  "frame": "SC05-V7-10-M-LITTLE-THING.png"
+ },
+ "SC05-V7-C11": {
+  "task": "2a9b5d09684bffe565d8e78f33590e0e",
+  "dur": 10,
+  "frame": "SC05-V7-11-B-OWN-STAIRS.png"
+ },
+ "SC05-V7-C12": {
+  "task": "6b44f74b459e3e5659893683c31c297d",
+  "dur": 4,
+  "frame": "SC05-V7-12-M-LISTEN-STAIRS.png"
+ },
+ "SC05-V7-C13": {
+  "task": "f4d0013e0ff13c046586d04df85fa1b5",
+  "dur": 8,
+  "frame": "SC05-V7-13-INSERT-BRACE.png"
+ },
+ "SC05-V7-C14": {
+  "task": "f9410032de7b6a6af12f62679e1e0dcb",
+  "dur": 4,
+  "frame": "SC05-V7-14-M-JAW-SETS.png"
+ },
+ "SC05-V7-C15": {
+  "task": "20b7f738206f8d17e47fcd2a78fd457a",
+  "dur": 9,
+  "frame": "SC05-V7-15-2S-SIDEWAYS.png"
+ },
+ "SC05-V7-C16": {
+  "task": "f6b02705608c7eb41934bc2f2b1da610",
+  "dur": 4,
+  "frame": "SC05-V7-16-M-NO.png"
+ },
+ "SC05-V7-C17": {
+  "task": "d40fc2e85e3fee23862846937e055926",
+  "dur": 7,
+  "frame": "SC05-V7-17-B-FINGER-UNDER.png"
+ },
+ "SC05-V7-C18": {
+  "task": "c12143d9aac5d69af59377a2e1513673",
+  "dur": 5,
+  "frame": "SC05-V7-18-INSERT-PRESS-IN.png"
+ },
+ "SC05-V7-C19": {
+  "task": "af03b9becb8b9c7a57f4b35c72f65a53",
+  "dur": 4,
+  "frame": "SC05-V7-19-M-YES.png"
+ },
+ "SC05-V7-C20": {
+  "task": "7e98ffb4c7a6e62d5e37c5ddc04dcf0e",
+  "dur": 9,
+  "frame": "SC05-V7-20-B-THATS-THE-TENDON.png"
+ },
+ "SC05-V7-C21": {
+  "task": "600d982f40bfdb2c8ac9325cb751a5f6",
+  "dur": 4,
+  "frame": "SC05-V7-21-M-EVERY-STRIDE.png"
+ },
+ "SC05-V7-C22": {
+  "task": "36d7680de79f45dbee5abd9e2b66c2c0",
+  "dur": 6,
+  "frame": "SC05-V7-22-M-BONE-ON-BONE.png"
+ },
+ "SC05-V7-C23": {
+  "task": "b7d3d09779a4f1e97da09da37066c0a0",
+  "dur": 4,
+  "frame": "SC05-V7-23-B-MINE-TOO.png"
+ },
+ "SC05-V7-C24": {
+  "task": "6e3466b1dd931f87f7a81a3c075bc261",
+  "dur": 11,
+  "frame": "SC05-V7-24-B-NO-TIME-TO-LIE.png"
+ },
+ "SC05-V7-C25": {
+  "task": "2ef2055fa9544ba53d15857a74d64ba6",
+  "dur": 4,
+  "frame": "SC05-V7-25-M-WHAT-DOES-IT-DO.png"
+ },
+ "SC05-V7-C26": {
+  "task": "65071b30cbecf9c002cb40ae2c5798b3",
+  "dur": 8,
+  "frame": "SC05-V7-26-INSERT-WEIGHT-LANDS.png"
+ },
+ "SC05-V7-C27": {
+  "task": "5b24ac59e3ff6b5b0a6fbb6437f61e3d",
+  "dur": 12,
+  "frame": "SC05-V7-27-B-PAD-ONE-SPOT.png"
+ },
+ "SC05-V7-C28": {
+  "task": "2f3d4aabd7220a93e15683aa988373aa",
+  "dur": 12,
+  "frame": "SC05-V7-28-2S-THIRTY-FOUR.png"
+ },
+ "SC05-V7-C29": {
+  "task": "e616779d3cb90dba9f0625ae093b07c1",
+  "dur": 10,
+  "frame": "SC05-V7-29-B-THATS-THE-SPOT.png"
+ },
+ "SC05-V7-C30": {
+  "task": "76cb184a6913b137873e7b243f802cbd",
+  "dur": 10,
+  "frame": "SC05-V7-30-B-NOT-THAT-SPOT.png"
+ },
+ "SC05-V7-C31": {
+  "task": "12a1d6c25d5265fb92716a645488a8fb",
+  "dur": 4,
+  "frame": "SC05-V7-31-M-PILLS-EYES-FILL.png"
+ },
+ "SC05-V7-C32": {
+  "task": "74401febb0ced42b0f06eae982f4744e",
+  "dur": 8,
+  "frame": "SC05-V7-32-2S-STILL-THERE.png"
+ },
+ "SC05-V7-C33": {
+  "task": "ec941887dc97b5b8b162abee86b5c0b9",
+  "dur": 4,
+  "frame": "SC05-V7-33-M-IT-LL-SLIP.png"
+ },
+ "SC05-V7-C34": {
+  "task": "33999b71038695d11763b410a1f451f2",
+  "dur": 11,
+  "frame": "SC05-V7-34-2S-TEN-SECONDS.png"
+ },
+ "SC05-V7-C35": {
+  "task": "14599b708a5102cabbb58f2b4ac6f20c",
+  "dur": 4,
+  "frame": "SC05-V7-35-M-LOOKS-AT-KNEE.png"
+ },
+ "SC05-V7-C36": {
+  "task": "2ff493e63f503869a13c78ed1bfb2361",
+  "dur": 10,
+  "frame": "SC05-V7-36-B-SITS-FLAT.png"
+ },
+ "SC05-V7-C37": {
+  "task": "7c8cb9d85c1a083d60bcc2be2585a5dd",
+  "dur": 4,
+  "frame": "SC05-V7-37-INSERT-HANDS-STILL.png"
+ },
+ "SC05-V7-C38": {
+  "task": "e320c5aad4a48eeeebc2509c399db1fc",
+  "dur": 8,
+  "frame": "SC05-V7-38-M-HOPES-UP.png"
+ },
+ "SC05-V7-C39": {
+  "task": "a52566e7efce9ba34ac3b79136f49597",
+  "dur": 8,
+  "frame": "SC05-V7-39-B-WALK-DOWN-STAIRS.png"
+ },
+ "SC05-V7-C40": {
+  "task": "7386a881be879fafcb9251b6bc0f76cf",
+  "dur": 4,
+  "frame": "SC05-V7-40-INSERT-STRAP-IN-PALM.png"
+ },
+ "SC05-V7-C41": {
+  "task": "4c9d601d9a03a4caebdfbbe566815d45",
+  "dur": 6,
+  "frame": "SC05-V7-41-2S-HAND-ON-RAIL.png"
+ },
+ "SC05-V7-C42": {
+  "task": "55d4335b7add46cbdba0c2369f256a86",
+  "dur": 4,
+  "frame": "SC05-V7-42-M-ALMOST-SMILES.png"
+ }
+}
