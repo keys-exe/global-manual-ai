@@ -21,3 +21,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 12 | Margaret listens: 'my own stairs' lands, eyes drop to the pills | d0a4179e-71b4-4168-85a7-514c45bf3980 | APPROVED (option A; B changed the tablecloth) |
 | 13 | Insert: Barbara's hand turns the old brace, "Every brace you've ever bought…" | b13042bd-25f3-45db-bfee-f6e74842744e | APPROVED (option A) |
 | 14 | Margaret near profile: jaw sets at the brace, 'while your knee got worse' | ad8f8c36-2acd-47ce-873b-56b4fdf75bc1 (edit of 4a979491: Barbara's striped top fixed to purple plus beads) | APPROVED (Fixed 1) |
+| – | Frame 15 first pair (ecfb430c / 216c275d) | – | REJECTED: Barbara's face drifted (earrings, thinner), rainbow mug, over-sharpened look |
+| 15 | Two-shot: Barbara, "Does your knee hurt going sideways?", flat hand tilting | bc9928f0-26ed-41dd-9575-7cb496891bcc (edit of 07) | APPROVED (option A; stays wide, did not push in) |
