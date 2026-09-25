@@ -62,3 +62,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 35 | Margaret push-in (33 setup), silent: eyes drop to Barbara's strapped knee below frame | 5640e3ff-4cdb-49e1-95a5-ee00b674027a (edit of 33) | APPROVED (option A) |
 | – | Frame 36 tries dee8eaf1 / 66fbe53b (Margaret out of frame, her seat reads empty) | – | not chosen |
 | 36 | Wider front-right: Barbara smooths her trouser leg flat over the strapped knee, "It sits flat under your trousers…"; Margaret beside her at left | f1d4cd67-8b2f-4d35-9d72-7674ac7048a2 (edit of 34) | APPROVED (option A) |
+| – | Frame 37 tries e6eb9474 (Barbara's sleeve in near foreground) / de4ea578 | – | REJECTED / not chosen |
+| 37 | Insert: Margaret's hands go still on the oilcloth, Barbara's sleeve beside her at the same depth | a9e4ad54-22cd-4511-9eec-1825b7a4668f (from 34) | APPROVED (option C) |
