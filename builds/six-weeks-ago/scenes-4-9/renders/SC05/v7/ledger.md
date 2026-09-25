@@ -27,3 +27,6 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 17 | Barbara points under her kneecap: "Put your finger just under your kneecap"; Margaret starts to copy on her own knee | f0840705-fee2-4d59-b3f4-f67428adecb2 (edit of 08) | APPROVED (option A; B had Margaret touching Barbara's knee) |
 | – | Frame 18 first tries d79d2962 / 3c4cd538 and their fixes 0c092b38 / 7f9f449a | – | REJECTED by user ("wrong scene"): a different room with curtains, another tablecloth and another floor |
 | 18 | Knee insert: Margaret presses under her own kneecap, "Two centimetres down. Press in."; Barbara's strapped knee beside | e08d68ac-c58a-4e6b-94c6-094f3aa42dab (edit of 17) | APPROVED (option C) |
+| 18 (replaced) | Previous 18 (e08d68ac) superseded: the finger sat on the side of the knee, not on the patellar tendon (user: "she should be pointing at the patellar tendon") | – | moved to rejected/ |
+| – | Frame 19 tries 6bd7b324 / 0e9bf448 / fixes 1e4beb64 / 534e8b67 / tendon tries 61c3df0e / 48e54fa0 / 36de40bf | – | REJECTED: bare knee, finger on the brace, finger above the knee; the high side angle cannot show the tendon |
+| 18 | Knee insert from the front: Margaret's finger just below the kneecap on the patellar tendon, level with Barbara's strap | 6ec98f45-43cf-4423-a0e2-9f27d389d603 (edit of 013422cd) | APPROVED (option A) |
