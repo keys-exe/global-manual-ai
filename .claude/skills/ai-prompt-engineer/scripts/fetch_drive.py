@@ -47,7 +47,7 @@ def main():
     dest = Path("builds") / build / "intake"
     dest.mkdir(parents=True, exist_ok=True)
 
-    r = subprocess.run(["gdown", "--folder", url, "-O", str(dest), "--remaining-ok"],
+    r = subprocess.run(["gdown", "--folder", url, "-O", str(dest)],
                        capture_output=True, text=True)
     if r.returncode != 0:
         print(json.dumps({"status": "FETCH_FAILED",
