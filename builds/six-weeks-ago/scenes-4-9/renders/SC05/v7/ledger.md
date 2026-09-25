@@ -38,3 +38,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 24 | Barbara CU: "Nothing can. I'm seventy-four. I haven't got time to lie to you." | e39d44cf-6b43-4727-99e6-c46e7b45c050 (edit of 23) | APPROVED (option A) |
 | – | Frame 25 tries b2b2ae90 / 0f16d33f | – | NOT SHOWN: same framing as 22 (no push-in, one linear axis) |
 | 25 | Margaret tight CU three-quarter: "Then what does it do?" | 904b89e5-ec95-4ed6-8481-10ab9f5f1e04 (reframe of b2b2ae90) | APPROVED (option D) |
+| – | Frame 26 tries 38411ad0 (finger on kneecap) / 308ee664 (strap above kneecap); finger fixes 49870646 / c76e026a (shell top edge warped into double bump) | – | REJECTED |
+| 26 | Insert, high three-quarter from Margaret's side: Barbara's fingertip at the strap's peak under her kneecap, "It changes where the weight lands." | 4bf2798d-3f4d-4ee0-8fef-6f508e71ec45 (edit of 18) | APPROVED (option B) |
