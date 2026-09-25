@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.61.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.61.1) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -49,9 +49,9 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **B-roll length (E6, V7.60.6).** Every B-roll clip — mechanism and anatomy included — is as long as the script line (or §27 phrase) it covers: the span on the voice master's word timestamps + 0.5s, rounded up, Kling 3–15s. Never a fixed 5s/3s. The voice master comes before any B-roll call.
 
-**Script visual instructions are binding (§27F, V7.61.0).** Every visual note on the script (`VISUAL:`, `B-ROLL:`, `ON SCREEN:`, `SFX:`, `[brackets]`, `(parentheses)`, inline `[notes]`…) is kept out of the voice but **never dropped**: `script_lines.py --visual` lists them (`VN01`…) anchored to their spoken line, and they open the **Visual Instruction Ledger** at step 2. Step 5 assigns each row to the beat that shows it or the CapCut line that carries it (on-screen text verbatim). Follow it as written, don't substitute your own shot; a row that breaks a higher layer is flagged with the nearest compliant execution. §22V/§22W Q1 check it. Every row ends `verified` or `flagged` — none open at step 8.
+**Script visual instructions are binding (§27F, V7.61.0).** Every visual note on the script (`VISUAL:`, `B-ROLL:`, `ON SCREEN:`, `SFX:`, `[brackets]`, `(parentheses)`, inline `[notes]`, the visual column of a VO | VISUAL table…) is kept out of the voice but **never dropped**: `script_lines.py --visual` lists them (`VN01`…) anchored to their spoken line, and they open the **Visual Instruction Ledger** at step 2. Step 5 assigns each row to the beat that shows it or the CapCut line that carries it (on-screen text verbatim). Follow it as written, don't substitute your own shot; a row that breaks a higher layer is flagged with the nearest compliant execution. §22V/§22W Q1 check it. Every row ends `verified` or `flagged` — none open at step 8.
 
-**Loom brief (§18C, V7.61.0).** Optional — no Loom, no question. The `LOOM:` link comes beside `DRIVE:`. Run `scripts/fetch_loom.py <BUILD> <link>` (download, timestamped transcript, frames every 5s and at cuts → `loom.md`), read it and the frames, and log each instruction in the ledger as `LMxx`. It never changes a spoken word or overrides a higher layer. Loom vs a written note on the same line: Manual asks; Automatic follows the Loom and flags it. Private Loom → ask for the MP4 in the Drive folder.
+**Loom brief (§18C, V7.61.0).** Optional — no Loom, no question. The `LOOM:` link comes beside `DRIVE:`. Run `scripts/fetch_loom.py <BUILD> <link>` (download, timestamped transcript, frames every 5s and at cuts → `loom.md`), read it and the frames, and log each instruction in the ledger as `LMxx`. It never changes a spoken word or overrides a higher layer. Loom vs a written note on the same line: Manual asks; Automatic follows the Loom and flags it. Private Loom → ask for the MP4 in the Drive folder (named `loom`; `fetch_drive.py` sorts it as the Loom, never as an inspo).
 
 **Placement & no holes (§30H). B-roll starts on its phrase's first word (script-aligned timing); joins are frame-exact; no talking-head flicker under 1.5s between B-rolls; voice-only builds have no uncovered frame; no B-roll under 0.8s. `scripts/assemble.py` places, fixes, renders and verifies the rough cut; CapCut finishes it.
 
@@ -70,7 +70,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 ## Voice pipeline helpers (§22U, both modes)
 
 - `scripts/voice_source.py` — steps 3–5: trim → ×1.2 → loop to ≥30s → `<Keyword>_clone_source.mp3`
-- `scripts/script_lines.py` — §22U step 8: spoken lines only, verbatim; reports every dropped line (title, headings, links, visual notes); `--visual` writes the §27F ledger's `VNxx` rows
+- `scripts/script_lines.py` — §22U step 8: spoken lines only, verbatim; reports every dropped line (title, headings, links, visual notes); `--visual` writes the §27F ledger's `VNxx` rows; reads `.docx` tables (two-column VO | VISUAL scripts) and cuts speaker labels (`VO:`, `SARAH:`) — never voiced
 - `scripts/tts_budget.py` — verbatim lock with `--script-lines`; steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags
 - `scripts/assemble.py` — §30H: place B-roll on its lines, close flickers and holes, render + verify the rough cut
 - `scripts/variants.py` — §30H hook variants: `<BUILD>_HK1.mp4` … each hook + the identical body, set-checked
@@ -280,6 +280,8 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 **PENDING AMENDMENTS**
 
 **OPEN DECISIONS**
+
+**CHANGELOG — V7.61.0 → V7.61.1 *(cut authorised)***
 
 **CHANGELOG — V7.60.7 → V7.61.0 *(cut authorised)***
 
