@@ -46,3 +46,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 28 | Low diagonal two-shot across the table corner: Barbara "It catches the weight… Thirty four percent less strain, every step."; Margaret listening | b8087ae9-e4de-48f0-861c-3daeaf7b0edc (edit of 15) | APPROVED (option A) |
 | – | Frame 29 tries 8c2c9127 (Margaret looks into lens) / 155b3699 (Barbara cut off, Margaret looks away) | – | REJECTED |
 | 29 | Barbara CU three-quarter profile foreground, Margaret soft behind almost nodding: "Bone on bone, arthritis… that's the spot taking the weight." | 87c5ab65-cb1d-4124-ae4b-7316fe1d7145 (edit of 28) | APPROVED (option A) |
+| – | Frame 30 tries 3dc922c0 (face drift, blue eyes, near lens) / 03d071e7 (eyeline drifts to lens) | – | REJECTED |
+| 30 | Barbara tight CU, jaw set: "…aimed at the whole knee. Not that spot. That's why nothing worked." | 15340d9b-cf62-43bd-b4c6-f55e6a4061e1 (edit of 24) | APPROVED (option C) |
