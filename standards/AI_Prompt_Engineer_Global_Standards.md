@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.60.2 — supersedes all prior versions.** *(the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.60.3 — supersedes all prior versions.** *(the voice clone runs by API — `scripts/elevenlabs_clone.py`, no manual clone stop, §22U step 6/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -1979,7 +1979,7 @@ FORMAT / TOOLS / CAST NOTES / NOTES: <optional>
 - `CAP` is the E0 credit cap. When it is present, the run never asks for it.
 - **Each `ADJUST` line is applied, and recorded in the Build Sheet with the section it overrides.** An adjustment that contradicts a higher authority layer (§1: reference images, Product Sheet, locked standards) is **flagged at the step-1–5 delivery and not applied silently**. Everything else runs.
 
-**The stops that remain in a one-message run:** hook approval (§18 step 6), the voice clone (§22U step 6, until `ELEVENLABS_API_KEY` is set), the voice master listen (§22U step 10), and the final review. `CAP` in the message removes the credit question.
+**The stops that remain in a one-message run:** hook approval (§18 step 6), the voice master listen (§22U step 10), and the final review. `CAP` in the message removes the credit question.
 
 **The folder** is shared *Anyone with the link — Viewer* and holds, at its top level or in subfolders:
 
@@ -2641,7 +2641,7 @@ Both run modes (E0). **Manual:** the agent delivers every step's prompt, text an
 | 3 | **Trim** dead air and inhales | E11 trim pass | Talking-head rules; no keep-list — the source must be speech only |
 | 4 | **Speed ×1.2** | `ffmpeg` `atempo=1.2` | Pitch preserved. Audio only is required |
 | 5 | **Loop to ≥ 30s** | `ffmpeg` concat | Repeat the sped clip whole until the total is **30s or more**; never cut mid-word to reach it |
-| 6 | **Clone** | ElevenLabs Instant Voice Clone | **HUMAN in both modes** unless `ELEVENLABS_API_KEY` is set in the environment — the connector has no clone call. Upload the step-5 file, remove background noise on |
+| 6 | **Clone** | ElevenLabs Instant Voice Clone, by API — `scripts/elevenlabs_clone.py` (`ELEVENLABS_API_KEY`; the connector has no clone call) | **Not a stop** (V7.60.3). `check` confirms the key, Instant Voice Cloning and a free voice slot; `clone` refuses a step-5 file under 30s, uploads it with background-noise removal on, and reads the voice back. Manual mode delivers the command; Automatic runs it. A missing key or a failed `check` is reported at intake, before the first paid call |
 | 7 | **Name the voice** | — | **One keyword from the script title**, capitalised (title "The Knee Pain Nobody Talks About" → `Knee`). If two builds share a keyword, add the character's first name (`Knee-Maria`). Recorded on the constraint sheet with the voice ID |
 | 8 | **Tag the script** | Eleven v3 audio tags | From the tag library (below) |
 | 9 | **TTS** | ElevenLabs `eleven_v3`, the cloned voice ID, 4 takes | **5,000 characters maximum per request, tags and spaces included** — the budget ladder below |
@@ -7481,7 +7481,7 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | **Trim** | Every talking-head clip that passes QA goes through the E11 trim pass before final review |
 | **Intake** | An Intake Pack or Drive intake message with `RUN: AUTOMATION` starts the run; cast sheets, the property plate and location plates are generated straight after absorption (§18B) |
 | **Film voices** | §24I voice masters are generated, checked and stored untouched; E11 never runs on them |
-| **Voice pipeline** | §22U runs in order. Step 6 (clone) is HUMAN unless `ELEVENLABS_API_KEY` is set; the run pauses there for the voice ID. The step-10 master is always played to the user before any HeyGen render |
+| **Voice pipeline** | §22U runs in order. Step 6 (clone) runs by API through `scripts/elevenlabs_clone.py` and does not stop the run (V7.60.3); `elevenlabs_clone.py check` runs at intake. The step-10 master is always played to the user before any HeyGen render |
 | **Record** | The ledger is the record. Every reroll, every changed prompt and every trim is logged with its reason; a changed prompt is still a delivered iteration (§16) |
 
 **Automatic never changes the craft.** Every rule in §1–§45 and Appendices A–D applies unchanged; this section changes who presses generate, not what is generated.
@@ -7613,7 +7613,7 @@ Words at pace → duration: brisk ≤9 → 5s · unhurried ≤8 → 5s · brisk 
 **Seedance first-frame mode is retired** (V7.54.1). A Seedance call with a start frame and no ingredient pack is a failed generation.
 **Film voice master (Seedance, §24I):** the Seedance ingredients template with `duration: 10`, `images_list: [<face-only sheet>]`, no `audios_list`; then `ffmpeg -i <clip> -vn -c:a copy <CHAR>_voice_master.<ext>`.
 **Voice source (Seedance, §22U step 2):** the Seedance ingredients template above with `duration: 10`, the step-1 image first in `images_list`, no `audios_list`.
-**Clone (ElevenLabs, §22U step 6):** Instant Voice Clone in the ElevenLabs app, or `POST /v1/voices/add` with `ELEVENLABS_API_KEY` → `{name: <keyword>, files: [<step-5 file>], remove_background_noise: true}`. The connector has no clone call.
+**Clone (ElevenLabs, §22U step 6):** `scripts/elevenlabs_clone.py clone <Keyword>_clone_source.mp3 --name <Keyword>` → `POST /v1/voices/add` (multipart, header `xi-api-key: $ELEVENLABS_API_KEY`) `{name: <keyword>, files: [<step-5 file>], remove_background_noise: true}` → `{voice_id, requires_verification: false}`; confirmed by `GET /v1/voices/{id}` (`category: "cloned"`). Preflight `GET /v1/user/subscription`: `can_use_instant_voice_cloning`, `voice_limit − voice_slots_used`. Cleanup `DELETE /v1/voices/{id}`. Measured 2026-09-25 (one test clone from a 48s source, then deleted). The connector has no clone call.
 **TTS (ElevenLabs connector, §22U step 9):** `creative_generate_speech` → `{model_id: "eleven_v3", voice_id: <clone>, prompt: <tagged script ≤ 5,000>, generations_count: 4}`; poll `creative_get_flow_run_status`. `estimate_only: true` first when the credit cap is tight.
 **Avatar (HeyGen, §22U step 11):** `create_asset_upload` → PUT bytes → `complete_asset_upload` → `create_photo_avatar {name: <VoiceName>-<look>, file: {type: "asset_id", asset_id}}`; wait for the avatar look to be ready.
 **Talking head (HeyGen, §22U step 13):** audio segment uploaded the same way → `create_video_from_avatar {avatarId: <look id>, engine: {type: "avatar_v"}, audioAssetId, aspectRatio: "9:16", resolution: "1080p", motionPrompt: <gestures>}`; poll `get_video`. Fallback: `engine: {type: "avatar_iv"}, expressiveness: "high"`.
@@ -7778,6 +7778,19 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 ---
 
+# CHANGELOG — V7.60.2 → V7.60.3 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **22U** | **Step 6 (clone) is no longer a manual stop.** It runs by API through `scripts/elevenlabs_clone.py`: `check` (key, Instant Voice Cloning, free slot), `clone` (refuses a source under 30s, noise removal on, reads the voice back), `delete` |
+| 18B, E0 | The clone is removed from the stop list; `check` runs at intake |
+| E7 | Clone call template measured: one test clone, then deleted |
+| Files | `scripts/elevenlabs_clone.py` |
+
+**Origin:** user request — `ELEVENLABS_API_KEY` is set in the cloud environment; remove the manual clone stop.
+
+---
+
 # CHANGELOG — V7.60.1 → V7.60.2 *(cut authorised)*
 
 | § | Change |
@@ -7786,18 +7799,6 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | Files | `builds/INTAKE_TEMPLATE.md` |
 
 **Origin:** user request — one message with the Drive link, mode, accent and adjustments.
-
----
-
-# CHANGELOG — V7.60.0 → V7.60.1 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **30H** | **Hook variants (new).** One finished video per hook, each hook + the identical body. Three hooks when the agent writes them; each hook voiced separately, the body voiced once. One timeline per variant, so the no-hole rules hold across the seam. Body timed per part on a whole frame, so its cuts are identical in every variant |
-| E1 | Hook-variant set check |
-| Files | `scripts/variants.py`; `assemble.py` takes hook + body as one timeline |
-
-**Origin:** user rule — builds almost always have several hooks; the output is one video per hook with the body.
 
 ---
 

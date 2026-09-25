@@ -25,6 +25,7 @@ Decisions made in session_01BQXq8gzSUiosctGYAGnASj, 2026-09-25. Read this first 
 Higgsfield 23,725 · Kling 13,677 · Kie 153,049 · HeyGen 11,573 premium.
 
 ## Open before running
-- `ELEVENLABS_API_KEY` was added to the GLOBAL CLOUD environment after this session started; verify in the new
-  session, then write + test the clone script and remove the manual clone stop (§22U step 6, E0).
+- ~~ElevenLabs key / clone script~~ **Done 2026-09-25 (V7.60.3):** `ELEVENLABS_API_KEY` set; plan `growing_business`,
+  Instant Voice Cloning allowed, 533/660 voice slots free. `scripts/elevenlabs_clone.py` tested with one test clone
+  (deleted). The clone is no longer a stop (§22U step 6, E0).
 - Nothing generated yet; no credits spent.

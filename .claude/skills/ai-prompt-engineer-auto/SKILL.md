@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer-auto
-description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.60.2, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
+description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.60.3, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
 ---
 
 # AI Prompt Engineer — Automatic run mode
@@ -53,7 +53,6 @@ For every batch, in this order:
 | **Hooks** | §18 step 6 — unchanged; the user approves each hook |
 | **Final review** | Every approved beat, the QA table, the queued human checks and the trimmed clips — before the CapCut block |
 | **Credit cap** | A batch would cross the cap |
-| **Voice clone** | §22U step 6 — the user clones in ElevenLabs and gives the voice ID (skipped only if `ELEVENLABS_API_KEY` is set) |
 | **Voice master** | §22U step 10 — the user hears the chosen master before any HeyGen render |
 | **Escalation** | Any E2 class that reaches HUMAN |
 
@@ -92,7 +91,7 @@ Per speaking character, in order. The master file's §22U table is the rule; thi
 | 1 | Talking-head image | Higgsfield T2I (E7), 9:16, 2k |
 | 2 | 10s voice source clip | Seedance ingredients, 720p, `duration: 10`, image first; opening script line within the 10s word budget; `VOICE-[CHAR]` first in delivery |
 | 3–5 | Trim → ×1.2 → loop to ≥ 30s | `python3 .claude/skills/ai-prompt-engineer/scripts/voice_source.py builds/<build>/renders/<char>_voice10.mp4 --name <Keyword> --outdir builds/<build>/voice/` |
-| 6 | Clone | **Stop:** hand the user `<Keyword>_clone_source.mp3` and the name; wait for the voice ID. (With `ELEVENLABS_API_KEY`: `POST /v1/voices/add`) |
+| 6 | Clone | `elevenlabs_clone.py clone <Keyword>_clone_source.mp3 --name <Keyword>` → voice ID (logged). No stop. `elevenlabs_clone.py check` runs at intake |
 | 7 | Name | One keyword from the script title (`Knee`); clash → add the first name (`Knee-Maria`) |
 | 8–9 | Tag + TTS | **Verbatim:** `script_lines.py <script> --out lines.txt` (spoken lines only, no title/headings/links/visuals); tag a copy from `TAG-PALETTE` (tags only, no word changes); `tts_budget.py tagged.txt --script-lines lines.txt` → must say `verbatim: PASS`, fitted ≤ 5,000 per part; `creative_generate_speech` with `eleven_v3`, the clone ID, 4 takes; poll `creative_get_flow_run_status` |
 | 10 | Pick + save | Transcribe each take (faster-whisper) and diff against the script; judge the four criteria; save `<Keyword>_master.mp3`; **stop — the user listens** |
