@@ -53,3 +53,6 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | – | Frame 32 tries 7e299304 / 7da8a97f / fde790fa and hand fixes 15dbfece / 9b251941 / b4783fd1 | – | REJECTED by user ("all are wrong positions"): Barbara placed across the table corner instead of beside Margaret; 7da8a97f / fde790fa also changed Barbara's face |
 | – | Frame 32 redo 3473ba56 (same framing as 28) / f39bb3f3 (both faces and room drift) | – | not chosen / REJECTED |
 | 32 | Side-by-side two-shot, closer and a little higher than 28: Barbara's hand over Margaret's, "Your arthritis will still be there…" | 1c9cdcde-c97e-403a-b62a-cf926db7c77d (edit of 28) | APPROVED (option F) |
+| – | Frame 33 tries 76c9b714 / 884bfe52 / ef620bfa | – | NOT SHOWN: Barbara's shoulder in the near foreground reads as sitting in front of Margaret |
+| – | Frame 33 redo 01be21a5 (hands at bottom) / 749868d9 (Margaret brunette, room drift) | – | not chosen / REJECTED |
+| 33 | Front push-in on Margaret, Barbara's profile beside her at the same depth: "It'll slip. They all slip." | 5d458a50-3d54-46aa-ab91-543a1d13796a (edit of 32) | APPROVED (option F) |
