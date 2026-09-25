@@ -12,6 +12,8 @@ the budget ladder in order until it fits:
   3. strip every tag
   4. split untagged text at paragraph ends into requests <= limit
 Also flags any tag not in the library or in a banned category.
+BREATH TAGS (V7.60.8): any breath, sigh, gasp, pant or inhale/exhale tag is a
+FAIL (exit 2) — breaths are never asked for; E11 cuts the ones the model adds.
 
 VERBATIM LOCK (--script-lines LINES.txt, from script_lines.py): with every tag
 removed, the fitted text must be the script's spoken lines word for word — no
@@ -25,6 +27,7 @@ from pathlib import Path
 LIB = Path(__file__).parent.parent / "references" / "eleven_v3_tags.json"
 BANNED = {"Sound Effects", "Effects", "Environment", "Genre", "Accents", "Humor"}
 TAG = re.compile(r"\[[^\[\]]+\]")
+BREATH = re.compile(r"breath|sigh|inhal|exhal|gasp|pant|huff", re.I)
 
 
 def library():
@@ -79,6 +82,7 @@ def main():
     used = TAG.findall(text)
     unknown = sorted({t for t in used if t.lower() not in lib})
     banned = sorted({t for t in used if lib.get(t.lower()) in BANNED})
+    breath = sorted({t for t in used if BREATH.search(t)})
 
     rungs = [
         ("1 full tagging", text),
@@ -88,6 +92,7 @@ def main():
     ]
     report = {"limit": a.limit, "tags_used": len(used), "unknown_tags": unknown,
               "banned_category_tags": banned,
+              "breath_tags": breath,
               "ladder": [{"rung": r, "chars": len(t)} for r, t in rungs]}
     for rung, t in rungs:
         if len(t) <= a.limit:
@@ -110,7 +115,7 @@ def main():
             import difflib
             report["verbatim_diff"] = [d for d in difflib.ndiff(want, got) if d[:1] in "+-"][:40]
     print(json.dumps(report, indent=2))
-    if report.get("verbatim") == "FAIL":
+    if report.get("verbatim") == "FAIL" or breath:
         raise SystemExit(2)
 
 

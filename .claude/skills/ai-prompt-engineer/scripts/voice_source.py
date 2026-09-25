@@ -4,7 +4,7 @@
 Usage:
   voice_source.py SEEDANCE.mp4 --name KEYWORD [--outdir DIR] [--speed 1.2] [--min 30]
 
-Steps: E11 trim (trim.py) -> atempo speed-up (pitch preserved) -> loop the whole
+Steps: E11 trim (trim.py --cut-all: every breath cut) -> atempo speed-up (pitch preserved) -> loop the whole
 sped clip until the total is >= --min seconds -> <KEYWORD>_clone_source.mp3.
 Prints a JSON report. Exit 0 = pass, 2 = fail (trim failed or source too short).
 
@@ -32,7 +32,7 @@ def main():
     ap.add_argument("--outdir", default=None)
     ap.add_argument("--speed", type=float, default=1.2)
     ap.add_argument("--min", type=float, default=30.0)
-    ap.add_argument("--model", default="base.en")
+    ap.add_argument("--model", default="small.en")
     a = ap.parse_args()
 
     src = Path(a.src)
@@ -42,9 +42,9 @@ def main():
     sped = out / f"{a.name}_source.x{a.speed}.wav"
     final = out / f"{a.name}_clone_source.mp3"
 
-    # Step 3 — trim dead air and inhales (E11)
+    # Step 3 — trim dead air and every breath (E11, --cut-all)
     r = subprocess.run([sys.executable, str(HERE / "trim.py"), str(src), "--out", str(trimmed),
-                        "--model", a.model], capture_output=True, text=True)
+                        "--model", a.model, "--cut-all"], capture_output=True, text=True)
     trim_report = json.loads(r.stdout) if r.stdout.strip() else {"error": r.stderr[-500:]}
     if r.returncode != 0:
         print(json.dumps({"status": "FAIL", "step": 3, "trim": trim_report}, indent=2))

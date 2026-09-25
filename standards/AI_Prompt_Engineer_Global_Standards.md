@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.60.7 — supersedes all prior versions.** *(Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.60.8 — supersedes all prior versions.** *(Breaths are trimmed out — E11 finds a breath in the audio itself, not the transcript, and cuts it; the entry breath is no longer kept; short breaths inside a talking-head take are muted, longer ones cut; the narration master and every hook voice file are trimmed before anything is timed from them; a breath check on the output fails any breath left; breath and sigh tags are never sent; the voice-source clip is prompted without breaths through `AUD-SRC`, E11/E0/E1/E2/§22U/§22C; Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -1847,7 +1847,7 @@ Instructions like *"allow a brief unresolved pause"* or *"finish with a delibera
 
 ### The trim pass *(new V7.56.0 — Automatic run mode only)*
 
-In Automatic (Appendix E0) the dead-air and inhale trim on talking-head clips runs inside the pipeline (Appendix E11) and the clips reach CapCut already trimmed. **Only the trim moves.** Captions, overlays, motion graphics (§17A), the ambient bed, music, J-cuts and designed holds stay CapCut work, and the CapCut block still ships. In Manual the trim stays a CapCut line, or runs through E11 on request against a clip the user supplies.
+In Automatic (Appendix E0) the dead-air and breath trim on talking-head clips, the narration master and the hook voice files runs inside the pipeline (Appendix E11) and they reach CapCut already trimmed. **Only the trim moves.** Captions, overlays, motion graphics (§17A), the ambient bed, music, J-cuts and designed holds stay CapCut work, and the CapCut block still ships. In Manual the trim stays a CapCut line, or runs through E11 on request against a clip the user supplies.
 
 ### Camera moves the rig cannot make are post
 
@@ -2528,6 +2528,8 @@ A hum baked into a voice track cannot be ducked under music or stripped if the b
 
 The breath clause is **the same event as §28B's entry inhale** — under §28G both are the short quick version, audible but brief, never a long theatrical intake. Write it in both fields — the visible inhale in `motion`, the audible one here. One without the other is a mismatch.
 
+**One exception — the §22U step-2 voice source clip takes `AUD-SRC` in place of `AUD-A`** *(V7.60.8)*. That clip exists only to give the clone its voice, and a clone copies the breathing it hears. `AUD-SRC` is `AUD-A` with the breath clause replaced by a no-breath clause; everything else is word for word. `AUD-A` itself is unchanged and stays in every other Mode 1 talking-head `delivery`.
+
 ### Proximity is rig-matched — mirrors §22B
 
 | Rig | Distance | Signature |
@@ -2639,15 +2641,15 @@ Both run modes (E0). **Manual:** the agent delivers every step's prompt, text an
 | # | Step | Tool | Rule |
 |---|---|---|---|
 | 1 | **Talking-head image** | T2I per §18A (Nano Banana on any beat with a person) | The §19 character, 9:16, 2k, composed as a talking-head frame (§22F). This image is both the Seedance ingredient and the HeyGen avatar image |
-| 2 | **Voice source clip** — 10s of the character talking | Seedance 2.5, ingredients mode, 720p, 9:16, `duration: 10` | The step-1 image first in the pack. Dialogue = the script's opening line, cut to the E6 10s budget (≤20 words brisk, ≤18 unhurried). `VOICE-[CHAR]` verbatim, first in the delivery description (§22D) — **this clip is where the character's voice is designed; the clone inherits it** |
-| 3 | **Trim** dead air and inhales | E11 trim pass | Talking-head rules; no keep-list — the source must be speech only |
+| 2 | **Voice source clip** — 10s of the character talking | Seedance 2.5, ingredients mode, 720p, 9:16, `duration: 10` | The step-1 image first in the pack. Dialogue = the script's opening line, cut to the E6 10s budget (≤20 words brisk, ≤18 unhurried). `VOICE-[CHAR]` verbatim, first in the delivery description (§22D); the audio clause is `AUD-SRC`, never `AUD-A` (§22C, V7.60.8) — **this clip is where the character's voice is designed; the clone inherits it** |
+| 3 | **Trim** dead air and every breath | E11 trim pass, `--cut-all` | No keep-list and no mutes — the source must be speech only, because the clone copies any breath left in it (V7.60.8) |
 | 4 | **Speed ×1.2** | `ffmpeg` `atempo=1.2` | Pitch preserved. Audio only is required |
 | 5 | **Loop to ≥ 30s** | `ffmpeg` concat | Repeat the sped clip whole until the total is **30s or more**; never cut mid-word to reach it |
 | 6 | **Clone** | ElevenLabs Instant Voice Clone | **Manual: HUMAN** — the user clones in the ElevenLabs app (upload the step-5 file, remove background noise on) and gives the voice ID; the connector has no clone call. **Automatic: by API, not a stop** — E0, E7 |
 | 7 | **Name the voice** | — | **One keyword from the script title**, capitalised (title "The Knee Pain Nobody Talks About" → `Knee`). If two builds share a keyword, add the character's first name (`Knee-Maria`). **A name already on the account is never reused** — `elevenlabs_clone.py` refuses it; `--character <FirstName>` applies the suffix (V7.60.5). Recorded on the constraint sheet with the voice ID |
 | 8 | **Tag the script** | Eleven v3 audio tags | From the tag library (below) |
 | 9 | **TTS** | ElevenLabs `eleven_v3`, the cloned voice ID, 4 takes | **5,000 characters maximum per request, tags and spaces included** — the budget ladder below |
-| 10 | **Pick and save the master** | — | The most realistic take (below). Saved as `<VoiceName>_master.mp3` in the build tree and logged in the ledger. Manual: the user listens. Automatic: the agent picks by the four criteria and does not stop (E0) |
+| 10 | **Pick, save and trim the master** | E11 trim pass, audio only | The most realistic take (below). Saved as `<VoiceName>_master.mp3` in the build tree and logged in the ledger, **then trimmed by E11 — every breath and dead-air gap cut, designed §28G silences kept** — to `<VoiceName>_master.trim.mp3`. **The trimmed file is the master from here on:** word timestamps, B-roll durations (E6), the step-12 split and assembly (§30H) all read it. Each hook voice file is trimmed the same way before use (V7.60.8). Manual: the user listens, and the agent trims the master when the user sends it (E11 on a supplied file is still Manual, E0). Automatic: the agent picks by the four criteria, trims, and does not stop (E0) |
 | 11 | **Upload the avatar image** | HeyGen asset upload → photo avatar | The step-1 image, or the matching look image for each act/location/story day (§14, §30C). One photo avatar per look |
 | 12 | **Split the master** | `ffmpeg`, cut at sentence ends by word timestamps | One audio segment per talking-head beat (§29), each cut between words. B-roll-covered lines stay in the master for the edit and are not rendered |
 | 13 | **Talking heads** | HeyGen, engine **Avatar V**, audio upload, 9:16, 1080p | **Expressiveness on and hand gestures while talking** — see the HeyGen settings below |
@@ -2668,11 +2670,13 @@ Tags are drawn from the Eleven v3 Tag Library (1,806 tags, 15 categories, stored
 
 **`TAG-PALETTE` — the default set** (every tag confirmed present in the library):
 - **Emotion:** `[sincere]` `[hopeful]` `[confident]` `[caring]` `[determined]` `[relieved]` `[frustrated]` `[excited]` `[curious]` `[surprised]` `[serious]` `[skeptical]` `[embarrassed]` `[tired]` `[sad]` `[nervous]` `[proud]` `[satisfied]` `[thoughtful]` `[honest]` `[gentle]` `[amused]` `[annoyed]` `[happy]`
-- **Delivery:** `[conversational]` `[casual]` `[relaxed]` `[warm]` `[measured]` `[fast]` `[rushed]` `[breathless]` `[deadpan]` `[sarcastic]` `[interview style]`
+- **Delivery:** `[conversational]` `[casual]` `[relaxed]` `[warm]` `[measured]` `[fast]` `[rushed]` `[deadpan]` `[sarcastic]` `[interview style]`
 - **Dialogue moves:** `[hesitates]` `[corrects self]` `[insists]` `[firm affirmation]` `[confirming tone]` `[real surprise]` `[building anticipation]`
 - **Reactions:** `[chuckle]` `[laugh]` `[hmm]` `[ahh]` `[ohh]` `[mmm]` `[clears throat]`
-- **Introspective:** `[resigned sigh]` `[contemplative sigh]` `[regretful tone]` `[wistful reflection]` `[growing acceptance]` `[anxious pause]`
+- **Introspective:** `[regretful tone]` `[wistful reflection]` `[growing acceptance]` `[anxious pause]`
 - **Rhythm:** `[short pause]` `[pauses]` — **only where the §28G designed-silence list names a pause**; every other pause is churn
+
+**No breath tags, ever** *(V7.60.8)*. No tag that asks for a breath, sigh, gasp, pant, inhale or exhale — `[breathless]`, `[sigh]`, `[resigned sigh]`, `[gasp]`, `[heavy breathing]`, `[short of breath]` and every other one in the library. Asking for a breath puts back what E11 exists to cut. `tts_budget.py` fails any text carrying one, and the text is not sent.
 
 **Density:** one tag at the start of each act, then only where the emotional register turns (§28), roughly one per 2–3 sentences. Never two tags in a row; never a tag the line's words already carry.
 
@@ -5888,6 +5892,11 @@ no smooth sheen sweeping across the forehead, no unbroken highlight on the nose,
 Audio must sound like a phone microphone recording in a room, not a studio voice track: audible breath before the first word and between phrases, mouth and lip noise, sibilance present and un-de-essed, plosives on hard consonants, level drifting slightly across the take rather than sitting compressed and even. No studio compression, no noise gate, no reverb plate, no post EQ.
 ```
 
+**`AUD-SRC`** — replaces `AUD-A` in the §22U step-2 voice source clip only (§22C, V7.60.8). `AUD-A` with the breath clause swapped for a no-breath clause. Never edited, never trimmed. *(406)*
+```
+Audio must sound like a phone microphone recording in a room, not a studio voice track: mouth and lip noise, sibilance present and un-de-essed, plosives on hard consonants, level drifting slightly across the take rather than sitting compressed and even. Speech runs phrase to phrase with no audible breath or inhale before or between them. No studio compression, no noise gate, no reverb plate, no post EQ.
+```
+
 **`AUD-PATTERN`** — Part B format model. Two clauses: room size and surface hardness, then where the voice sits. *(160)*
 ```
 [Room size and surface character], [reflection character and tail length], voice [distance from mic] with [amount] of room in the signal, [bass proximity note].
@@ -7171,6 +7180,7 @@ Why the load-bearing rules exist. One lookup instead of a document search. **Whe
 |---|---|
 | `CAP-A` never trimmed | Flat shadows is the strongest single realism clause measured. Everything else in the block is secondary |
 | `AUD-A` never trimmed | Perfect audio over imperfect video reads as ADR — the fastest tell in the pipeline |
+| `AUD-SRC` on the voice source; breaths found in the audio, not the transcript | A clone copies the breathing in its source, and Whisper folds a breath into the word beside it — a transcript-only trim leaves most breaths in (V7.60.8) |
 | Arcs never lose their EXIT | An arc missing its exit is a state again. States are the failure arcs exist to fix |
 | One correction per clip | Two reads as unsteady hands, zero reads as a tripod. Operators do not notice drift immediately |
 | Camera lags the subject | A camera that moves with or before the subject is the clearest generated-footage tell |
@@ -7481,7 +7491,7 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | **Stop points** | **One: the credit cap** (below). Hooks (§18 step 6), the voice master (§22U step 10), the final review and E2 escalations do not stop the run — the agent decides each one (V7.60.6). An intake that cannot be absorbed (no script, unreadable file) is reported before the first paid call |
 | **Credit cap** | **Default per build (V7.60.6), never asked:** Mode 1–3 — Higgsfield 600 · Kling 3,000 · Kie 2,000. Mode 4, 5, AI Drama — Higgsfield 600 · Kling 3,000 · Kie 25,000. A `CAP` line in the intake overrides it. Basis: Nano Banana Pro 2k = 2 credits per image (measured); Seedance 2.5 720p on Kie = 160–630 per call, median ~45/s (42 production tasks); Kling 3.0 per-second cost **unverified** — the ledger logs spend per clip-second and the first build calibrates it. The balance is read before every batch; a batch that would cross the cap does not submit — the run stops with the spend so far and the cost of what remains. This is the only stop |
 | **QA** | Every render is downloaded and checked against E1. AUTO checks run by instrument. **HUMAN checks are the agent's (V7.60.6)**: a pass proceeds, a fail takes the E2 remedy, and an uncertain read is decided by the agent on the stricter reading — nothing is queued. This covers images (§22V), video (§22W), the §28F closure/sync check, voice (§22D) and Mode 4/5 performance. **When E2's retries run out**, the agent keeps the best attempt, logs why, and lists it under *Flags* in the final report — the run does not stop |
-| **Trim** | Every talking-head clip that passes QA goes through the E11 trim pass before final review |
+| **Trim** | Every talking-head clip that passes QA, the narration master (§22U step 10) and every hook voice file go through the E11 trim pass — the master and hook files before anything is timed from them (V7.60.8) |
 | **Intake** | An Intake Pack or Drive intake message with `RUN: AUTOMATION` starts the run; cast sheets, the property plate and location plates are generated straight after absorption (§18B) |
 | **Run order** *(V7.60.7)* | Strict, each stage finished before the next starts: (1) absorb inspo, script, product — §18 steps 1–2; (2) **cast** — every §19 sheet generated and passed; (3) **property plate, then every location plate** — generated and passed; (4) **act map and wardrobe map** (§18 step 5) — built from what rendered, B-roll durations `pending-master`; (5) **hooks written** (text only, §30H) and confirmed by the agent; (6) **voice** — Mode 1–3: §22U steps 1–10 for body and hooks → master; Mode 4/5/AI Drama: §24I masters; (7) **B-roll durations filled** from the master (E6); (8) hook beats, then body B-roll and talking heads; (9) assembly and hook variants (§30H); (10) final delivery |
 | **Film voices** | §24I voice masters are generated, checked and stored untouched; E11 never runs on them |
@@ -7532,10 +7542,11 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | Pixar Film look (Mode 5) | first frame vs the Look Sheet and each character's sheet | matches `LOOK-[BUILD]` · every character on model · product real · motivated key · no letterbox | HUMAN | Reroll with `CAM-ANIM` + `LOOK-[BUILD]` + `CAP-ANIM` restated; concept-art or game read means `NEG-ANIMFILM` is missing |
 | Dramatic performance (Mode 4) | frames and clips vs the emotion map | each face at its EMO value · listener reacting a beat after the words · expressions progress, never reset · no theatrical tears | HUMAN | Reroll the frame with `EMO-SEED` restated; reissue the clip with the `DRAMA-DELIVERY` or `LISTEN-LINE` event named more precisely |
 | Seedance ingredient pack | call params vs `ING-MANIFEST` | ≤ 30 files · every file named in the manifest · composition first · no two files contradicting · sheets marked face-only | AUTO-ASSIST | Rebuild the pack in §4 order and drop order; a contradiction is removed, never resolved in prose |
-| Trim — dead air (E11, Automatic) | silence detection, −40 dB, on the trimmed clip | no silence > 0.4s except keep-list IDs; first word ≤ 0.5s; tail ends ≤ 0.3s after the last word | AUTO | Re-trim at tightened thresholds, cap 1; then HUMAN |
-| Trim — inhales (E11, Automatic) | word timestamps vs cut list, then a waveform check at each joint | no cut lands inside a word; no audible click at the joint (waveform zero-cross ± 10 ms) | AUTO-ASSIST | Widen the padding by 40 ms and re-trim; a cut inside a word is TRIM_FAIL |
+| Trim — dead air (E11, Automatic) | silence detection, −40 dB, on the trimmed clip or voice file | no silence > 0.4s except keep-list IDs; first word ≤ 0.5s; tail ends ≤ 0.3s after the last word | AUTO | Re-trim at tightened thresholds, cap 1; then HUMAN |
+| Trim — joints (E11, Automatic) | word timestamps vs cut list, then a waveform check at each joint | no cut lands inside a word; no audible click at the joint (waveform zero-cross ± 10 ms) | AUTO-ASSIST | Widen the padding by 40 ms and re-trim; a cut inside a word is TRIM_FAIL |
+| Trim — breaths (E11, Automatic) *(V7.60.8)* | `trim.py` breath detector re-run on the output (`verify.breaths_out`) | **no breath ≥ 60 ms left**, except inside a keep-list silence; report shows `breaths_in` and `breaths_out` | AUTO | Re-trim once at `--breath-drop 12 --pre 0.04 --post 0.05` (more sensitive, tighter padding); then TRIM_FAIL |
 | Film voice master (§24I) | ffprobe duration + codec vs the source clip's audio stream; one-speaker listen | identical duration and codec (stream copy — no edit); neutral affect | AUTO + HUMAN | Regenerate the clip; never edit the audio |
-| Clone source (§22U steps 3–5) | duration + silencedetect on the step-5 file | ≥ 30.0s; no silence > 0.4s; `atempo` 1.2 logged | AUTO | Re-loop; a source under 30s is never uploaded |
+| Clone source (§22U steps 3–5) | duration + silencedetect on the step-5 file; step-3 `trim.py` report | ≥ 30.0s; no silence > 0.4s; step 3 `breaths_out` empty; `atempo` 1.2 logged | AUTO | Re-loop; a source under 30s is never uploaded |
 | Clip verdict (§22W) | `contact_sheet.py` sheet + full frames where needed | all seven §22W questions YES | AUTO (agent) | REGENERATE with the named fix; third failure of one fault → user |
 | B-roll placement (§30H) | `assemble.py` EDL vs aligned word timestamps | every B-roll starts on its phrase's first word | AUTO | Re-plan; a phrase not found is a plan error, never a guess |
 | Holes and flicker (§30H) | `assemble.py` timeline | no TH window < 1.5s between B-rolls; voice-only: no uncovered frame; no B-roll < 0.8s | AUTO | Extend → slow ≥ 0.8x → regenerate longer |
@@ -7561,7 +7572,7 @@ Every generated batch ships its QA table alongside the prompts — the reconcili
 | CONSISTENCY_FAIL | scene/subject/product checks | reroll with full-form lock strings | 2 | HUMAN — plate or reference may be at fault |
 | SYNC_DRIFT | §28H triage | constant → post slip (no regen); progressive → reissue with duration/line fixed | 1 reissue | HUMAN |
 | ALIAS_MISMATCH | logged model ≠ passed | resubmit explicit | 1 | HUMAN; record in phrasing table |
-| TRIM_FAIL | E1 trim rows | re-trim with adjusted thresholds or padding | 1 | HUMAN — ship the untrimmed clip with the cut list as a CapCut line |
+| TRIM_FAIL | E1 trim rows | re-trim with adjusted thresholds or padding | 1 | HUMAN — ship the better trim (fewest `breaths_out`, no cut inside a word) with the remaining breaths listed as a CapCut line and in the final report's *Flags*; the untrimmed file only when both trims cut inside a word (V7.60.8) |
 | CREDIT_CAP | E1 credit-cap row | none — never raised by the agent | 0 | HUMAN — the user raises the cap or ends the run |
 | AGENT_UNSURE | AGENT-FIRST read with no clear pass or fail (E0) — **not used for images, which always get a verdict (§22V)** | none | 0 | HUMAN — queued with the frame, the check and the agent's note |
 | IMAGE_REGENERATE | §22V verdict | regenerate with the named fix | 2 per fault | HUMAN — three versions and the verdict history |
@@ -7652,33 +7663,36 @@ Superseded B-roll rule, kept for reference: B-roll calls: 5s (the Higgsfield flo
 
 Computed before any cut ships: every Appendix A string has a count and the count matches its block · every `NORMATIVE —` ID resolves to a defined string · every slot token appears in the E5 manifest · §18 and §31 agree · §44 numbering is ordered · Open Decisions counts equal their lists · every act-map row carries a `story_day` and a `capture_event_id`, every capture event resolves to a story day, and every story day resolves to exactly one outfit row (§14A W4) · no retired phrase ("accurate lip sync", "accent restated", the measurement-plus-gap seating clause, the unscoped featureless-band clause, any reference to a confirmation code outside its retirement notice) and no retired string ID (`ANAT-MOD1`, `ANAT-MOD2`, `ANAT-MOD5`, `ANAT-MOD6`, `ANAT-ARC`, `ANAT-COL`, `ANAT-HOLD`, `NEG-FUTILE`, `NEG-M2`, `NEG-M3`, `NEG-M4`, `NEG-M5`, every `M3-*`, `M4-*` and `M5-*` ID) survives outside a retirement notice · every Mode 1 beat class with a stated assembly order opens it with `CAM-LOCK` and names `CAP-A` and `CAP-FILE`, and the only classes without one are the five named exempt in §22 · every Mode 4 T2I opens with `CAM-FILM` and carries `LOOK-[BUILD]`, `LIGHT-FILM` and `CAP-FILM`, and none carries `CAM-LOCK`, `CAP-A`, `CAP-FILE`, `CAP-SHARP`, `NEG-M1` or `NEG-FINISH` · every Mode 4 coverage frame attaches its scene master and every scene has a passed contact sheet before any clip · every Mode 5 T2I opens with `CAM-ANIM` and carries `LOOK-[BUILD]`, `LIGHT-ANIM` and `CAP-ANIM`, and no Mode 5 call routes to GPT Image · every Seedance call is 720p, in ingredients mode, with 30 files or fewer and every file named in `ING-MANIFEST` · every call is 9:16 · no lock, route or call template names `flare` or `nano_banana_flash` outside a retirement notice, and every logged model in the ledger is one of the three arsenal models · every job id in the ledger resolves to a beat_id, and every delivered batch carries a manifest whose order matches its payload (§16B) · every location row resolves to a `dwelling_id` or an explicit null, and every location carrying a `dwelling_id` has a property plate in the ledger · no interior beat of a dwelling ships without `PROP-REF` and `NEG-PROP` · changelogs = current + one prior · **the project instructions byte-match the file at the cut** (§34 — the mirror is refreshed in the same action, and a cut that patches only one copy has not shipped). A cut failing lint does not ship.
 
-## E11. Trim pass — dead air and inhales *(new V7.56.0 — unverified on production clips)*
+## E11. Trim pass — dead air and breaths *(new V7.56.0; breath detection rebuilt V7.60.8 — unverified on production clips)*
 
-**Scope:** talking-head clips, and any clip carrying dialogue. B-roll is trimmed at head and tail only — a cut inside a continuous move is a visible jump and breaks §27A. Mode 4 and Mode 5 clips are not trimmed inside the take: their silences are performance (§24I) and are cut in the edit.
+**Scope:** talking-head clips, any clip carrying dialogue, **the §22U narration master and every hook voice file (step 10), and the clone source (step 3)**. B-roll is trimmed at head and tail only — a cut inside a continuous move is a visible jump and breaks §27A. Mode 4 and Mode 5 clips are not trimmed inside the take: their silences are performance (§24I) and are cut in the edit.
 
 **Tools** (installed per session; the container is ephemeral):
 
 | Tool | Role | Status |
 |---|---|---|
 | `ffmpeg` (via `pip install imageio-ffmpeg`) | silence detection, frame grabs, cutting, joining | installed and tested on a synthetic clip |
-| `trim.py` (`.claude/skills/ai-prompt-engineer/scripts/`) | this procedure as one command, with the E1 verification | synthetic clip: 17.4s → 9.5s, no gap > 0.4s, keep-list silence survived; entry breath left at ~0.3s on the tiny model — unverified on production clips |
+| `trim.py` (`.claude/skills/ai-prompt-engineer/scripts/`) | this procedure as one command, with the E1 verification; video clips and audio-only files (mp3, wav, m4a) | V7.56.0 synthetic clip: 17.4s → 9.5s, no gap > 0.4s, keep-list silence survived, entry breath left at ~0.3s — the transcript-only route. **V7.60.8 breath detector (pitch + level per 10 ms frame, `numpy`) not yet run on any clip — unverified** |
 | `auto-editor` (`pip install auto-editor`) | loudness-threshold cut in one command — the fast dead-air pass | installed, not yet run on a production clip |
-| `faster-whisper` (`pip install faster-whisper`) | word-level timestamps — what finds an inhale, since a breath is quiet noise, not silence | installed, not yet run on a production clip |
+| `faster-whisper` (`pip install faster-whisper`) | word-level timestamps — where the words are. **It does not find breaths:** it stretches a word's edges over the breath beside it (V7.60.8). Default model `small.en` | installed, not yet run on a production clip |
 | HeyGen `create_filler_word_removal` | filler-word removal on the platform | alternate — unverified |
 | ElevenLabs `creative_transcribe_audio` | word timestamps on the platform | alternate to `faster-whisper` — unverified |
 
 **Procedure, in order:**
-1. **Transcribe** with word timestamps.
-2. **Keep-spans** = every word, padded 60 ms before and 80 ms after, **minus any measured silence (−40 dB, ≥ 0.15s) inside them** — transcription stretches word edges over the silence beside them, and a word span alone leaves the gap in (found on the first test run). Everything between keep-spans is a candidate cut.
-3. **Keep-list** — any candidate that overlaps a designed silence on the §28G list survives, at its listed duration.
-4. **Inhale rule** — a candidate whose audio sits above −40 dB but contains no word is a breath: cut it. The one exception is the entry breath: `BREATH-A` keeps the last 120 ms before the first word, so speech still begins as the inhale finishes (§28G ENTRY CAP).
-5. **Cut** on the keep-spans, joint on the nearest audio zero-crossing, and re-encode once.
-6. **Verify** against the E1 trim rows. A clip that fails re-trims once, then escalates (E2 TRIM_FAIL).
-7. **Record** the cut list (in/out per cut, reason) in the ledger row and on the final-review sheet.
+1. **Transcribe** with word timestamps (`small.en`).
+2. **Voiced cores** — analyse the audio in 25 ms frames every 10 ms: level (dBFS) and pitch (autocorrelation peak ≥ 0.45 at 75–400 Hz = voiced). Each word's edges are **snapped to its first and last voiced frame**, then widened by 40 ms either side so unvoiced consonants (an opening *s*, *f*, *h*, a closing *t*) stay. This is what stops a breath hiding inside a word's timestamp.
+3. **Breaths** — any run of **≥ 60 ms** that is unvoiced, sits **15 dB or more under the clip's speech level** (median level of voiced frames) and no more than 40 dB under it, and lies outside every voiced core, is a breath. Loud unvoiced consonants fail the 15 dB test and are kept. The entry breath is a breath like any other: **it is cut** — the file starts on the first word (V7.60.8; replaces the 120 ms `BREATH-A` keep). `BREATH-A` stays in video prompts: it sets how fast speech starts, not what the audio keeps.
+4. **Keep-spans** = every voiced core, padded 60 ms before and 80 ms after, **minus measured silence (−40 dB, ≥ 0.15s) and minus every breath**.
+5. **Keep-list** — anything that overlaps a designed silence on the §28G list survives at its listed duration, breaths inside it included.
+6. **Cut or mute** — head and tail are always cut. Between words: in a clip with picture, a removed stretch **under 150 ms is muted** (≈ −35 dB, picture untouched, so no micro jump cut) and **150 ms or longer is cut**. In an audio-only file (the narration master, hook voice files, the clone source) or with `--cut-all`, **every stretch is cut**. Every segment is faded 10 ms at each joint and the file is re-encoded once.
+7. **Verify** against the E1 trim rows — dead air, joints, and **breaths: the breath detector runs again on the output and must find none**. A file that fails re-trims once at tighter settings, then escalates (E2 TRIM_FAIL).
+8. **Record** the cut list, the mute list and `breaths_in` / `breaths_out` in the ledger row and on the final-review sheet.
 
 **Every cut inside a talking-head take is a jump cut.** On UGC and VSL talking heads that is native and allowed. The §30A cross-beat assembly still decides where one beat hands to the next — the trim pass only removes air inside a beat.
 
-**The original is never overwritten.** The trimmed file sits beside it as `<BEAT-ID>.trim.mp4`; the untrimmed file stays in the build tree for the editor.
+**The original is never overwritten.** The trimmed file sits beside it as `<BEAT-ID>.trim.mp4` (or `<VoiceName>_master.trim.mp3`); the untrimmed file stays in the build tree for the editor.
+
+**Never trimmed:** §24I film voice masters (Mode 4, Mode 5, AI Drama) — their breaths are performance and the audio stays exactly as generated.
 
 ---
 # PENDING AMENDMENTS
@@ -7785,9 +7799,27 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 **§22U voice pipeline — first production run.** One character through all thirteen steps. Judge: does the clone from a looped ~8s source hold the step-2 voice, does the chosen master pass all four step-10 criteria, and does Avatar V produce hand gestures from `motionPrompt` — or does it reject it and force the Avatar IV fallback? Settles by listening and one look.
 
-**E11 trim pass — first production run.** One talking-head beat through the full procedure. Judge: does every cut land between words, does any joint click, does the entry breath survive at 120 ms, and does the keep-list silence survive at its listed length? Then one A/B of `auto-editor` against the transcription route on the same clip. Settles by instrument plus one listen.
+**E11 trim pass — first production run.** One talking-head beat through the full procedure. Judge: does every cut land between words, does any joint click, **does the V7.60.8 breath detector catch every audible breath (`breaths_out` empty, confirmed by one listen) without clipping an opening *s*, *f* or *h***, do the sub-150 ms mutes sound clean, and does the keep-list silence survive at its listed length? Run it on one talking-head beat **and one ElevenLabs master**; tune `--breath-drop` and `--min-breath` from the numbers. Then one A/B of `auto-editor` against the transcription route on the same clip. Settles by instrument plus one listen.
 
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
+
+---
+
+# CHANGELOG — V7.60.7 → V7.60.8 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **E11** | Rebuilt breath removal: breaths found in the audio (unvoiced, ≥ 15 dB under speech, ≥ 60 ms, outside each word's voiced core), not from the transcript; word edges snapped to voicing; entry breath cut (was kept at 120 ms); cut vs mute (< 150 ms muted in a clip with picture, all cut in audio-only files); breath re-check on the output; `small.en` default; scope adds the narration master, hook voice files and clone source; §24I film masters stay untouched |
+| **22U** | Step 2 takes `AUD-SRC`; step 3 cuts every breath (`--cut-all`); step 10 trims the master and hook files, and the trimmed master is the one every later step reads; no breath tags — `[breathless]`, `[resigned sigh]`, `[contemplative sigh]` leave `TAG-PALETTE` |
+| **22C** | `AUD-SRC` exception for the voice source clip; `AUD-A` unchanged |
+| **App. A** | New `AUD-SRC` |
+| **E0** | Trim row covers the master and hook voice files |
+| **E1** | "Trim — inhales" renamed "Trim — joints"; new "Trim — breaths" row; clone source row checks `breaths_out` |
+| **E2** | TRIM_FAIL ships the better trim with remaining breaths flagged |
+| **§17, App. D, Open Decisions** | Trim wording; rationale row; E11 first-run test now covers the breath detector and one master |
+| Files | `trim.py` (breath detector, mute/cut, audio-only files, breath verify), `voice_source.py` (`--cut-all`, `small.en`), `tts_budget.py` (breath tags fail), both skills |
+
+**Origin:** user check — the trimmed output still carried inhales and breaths.
 
 ---
 

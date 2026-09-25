@@ -1,13 +1,13 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.60.7) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.60.8) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
 
 The full standard lives at **`standards/AI_Prompt_Engineer_Global_Standards.md`** (repo root). It is the master file and the only standard. This skill is a loader: it holds the always-on rules and tells you how to pull the section a task needs. **If this summary and the master file ever disagree, the master file wins** (§34).
 
-The master file is ~7,400 lines (~190k tokens). Do not read it whole. Find the section you need with Grep on its heading, then Read that range:
+The master file is ~7,850 lines (~200k tokens). Do not read it whole. Find the section you need with Grep on its heading, then Read that range:
 
 ```
 Grep  pattern="^## 22F\."      path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
@@ -43,6 +43,8 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Script is spoken verbatim (§22U, locked).** The ElevenLabs text is the script's spoken lines word for word — never add, remove, change or re-order a word; never send the title, headings, links or visual notes. Only audio tags may be added. Extract with `scripts/script_lines.py`, lock with `tts_budget.py --script-lines` (any difference = FAIL, not sent). A wrong-looking line is flagged, never fixed. Agent-written hooks are voiced separately, only after step-6 approval.
 
+**No breaths (V7.60.8).** Never send a breath, sigh or gasp tag (`tts_budget.py` fails it). The voice-source clip (§22U step 2) takes `AUD-SRC`, not `AUD-A`. The narration master and each hook voice file go through E11 (`trim.py`, every breath cut) at step 10, and the trimmed file is the master for everything after. §24I film voice masters are never trimmed.
+
 **Image verdict (§22V). Open and judge every image yourself — the line first, then product, body, continuity, register, animatability — and ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then the user. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
 
 **Clip verdict (§22W).** Judge every video yourself from `scripts/contact_sheet.py` (true first + last frame, `--full` for zoom): the line, product in every frame, body in every frame, motion, continuity, technical, enough footage for its slot → `USE` or `REGENERATE`.
@@ -65,13 +67,13 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 ## Voice pipeline helpers (§22U, both modes)
 
-- `scripts/voice_source.py` — steps 3–5: trim → ×1.2 → loop to ≥30s → `<Keyword>_clone_source.mp3`
+- `scripts/voice_source.py` — steps 3–5: trim (every breath cut) → ×1.2 → loop to ≥30s → `<Keyword>_clone_source.mp3`
 - `scripts/script_lines.py` — §22U step 8: spoken lines only, verbatim; reports every dropped line (title, headings, links, visual notes)
-- `scripts/tts_budget.py` — verbatim lock with `--script-lines`; steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags
+- `scripts/tts_budget.py` — verbatim lock with `--script-lines`; steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags, fails any breath/sigh/gasp tag
 - `scripts/assemble.py` — §30H: place B-roll on its lines, close flickers and holes, render + verify the rough cut
 - `scripts/variants.py` — §30H hook variants: `<BUILD>_HK1.mp4` … each hook + the identical body, set-checked
 - `scripts/contact_sheet.py` — §22W: one image per clip (first → last frame), frozen/black runs, `--full` for zoom
-- `scripts/trim.py` — E11 trim pass (never on a §24I film voice master)
+- `scripts/trim.py` — E11 trim pass: dead air and breaths, found in the audio (pitch + level), not the transcript; entry breath cut; clips mute breaths < 150 ms and cut longer ones, audio files cut all; re-checks the output for breaths. Runs on talking-head clips, the step-10 narration master and hook voice files (before anything is timed from them), and the clone source — never on a §24I film voice master
 - `scripts/kie.py` — Kie AI API (§5): `credit`, `upload` (public URL), `image` (fallback), `seedance` (720p, 9:16, ingredients, stated duration), `wait`
 - `scripts/fetch_drive.py` — §18B Drive intake: downloads the shared folder, sorts inspo / script / product sheet / images, extracts document text, measures the inspo
 - `scripts/fetch_inspo.py` — §18B/§42 Part 1: downloads INSPO links into `builds/<BUILD>/intake/` and measures duration, aspect, shots, cuts, silences. YouTube returns 403 from the cloud — ask for the file instead
@@ -268,11 +270,13 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - E8. Boundary definitions
 - E9. Build directory layout
 - E10. Doc-lint — standing §34 step at every version cut
-- E11. Trim pass — dead air and inhales *(new V7.56.0 — unverified on production clips)*
+- E11. Trim pass — dead air and breaths *(new V7.56.0; breath detection rebuilt V7.60.8 — unverified on production clips)*
 
 **PENDING AMENDMENTS**
 
 **OPEN DECISIONS**
+
+**CHANGELOG — V7.60.7 → V7.60.8 *(cut authorised)***
 
 **CHANGELOG — V7.60.6 → V7.60.7 *(cut authorised)***
 
