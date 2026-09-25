@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "variants": [
+    {
+      "hook": "HK1",
+      "file": "edit/identity-callout-v2_HK1.mp4",
+      "status": "PASS",
+      "hook_s": 5.1,
+      "body_s": 77.1,
+      "duration_s": 82.2,
+      "expected_s": 82.2,
+      "fixes": [
+        {
+          "beat": "HK1-01",
+          "fix": "HOLE: extended with own footage to 5.10s"
+        },
+        {
+          "beat": "B03",
+          "fix": "HOLE: extended with own footage to 11.93s"
+        },
+        {
+          "beat": "B06",
+          "fix": "HOLE: extended with own footage to 22.43s"
+        },
+        {
+          "beat": "B10",
+          "fix": "HOLE: extended with own footage to 36.67s"
+        },
+        {
+          "beat": "B12",
+          "fix": "HOLE: slowed to 0.96x to reach 42.40s"
+        },
+        {
+          "beat": "B16",
+          "fix": "HOLE: slowed to 0.95x to reach 53.30s"
+        },
+        {
+          "beat": "B17",
+          "fix": "HOLE: extended with own footage to 54.97s"
+        },
+        {
+          "beat": "B23",
+          "fix": "HOLE: extended with own footage to 75.27s"
+        },
+        {
+          "beat": "B26",
+          "fix": "HOLE: extended with own footage to 82.20s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    },
+    {
+      "hook": "HK2",
+      "file": "edit/identity-callout-v2_HK2.mp4",
+      "status": "PASS",
+      "hook_s": 3.7,
+      "body_s": 77.1,
+      "duration_s": 80.8,
+      "expected_s": 80.8,
+      "fixes": [
+        {
+          "beat": "HK2-01",
+          "fix": "HOLE: extended with own footage to 3.70s"
+        },
+        {
+          "beat": "B03",
+          "fix": "HOLE: extended with own footage to 10.53s"
+        },
+        {
+          "beat": "B06",
+          "fix": "HOLE: extended with own footage to 21.03s"
+        },
+        {
+          "beat": "B10",
+          "fix": "HOLE: extended with own footage to 35.27s"
+        },
+        {
+          "beat": "B12",
+          "fix": "HOLE: slowed to 0.96x to reach 41.00s"
+        },
+        {
+          "beat": "B16",
+          "fix": "HOLE: slowed to 0.95x to reach 51.90s"
+        },
+        {
+          "beat": "B17",
+          "fix": "HOLE: extended with own footage to 53.57s"
+        },
+        {
+          "beat": "B23",
+          "fix": "HOLE: extended with own footage to 73.87s"
+        },
+        {
+          "beat": "B26",
+          "fix": "HOLE: extended with own footage to 80.80s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    },
+    {
+      "hook": "HK3",
+      "file": "edit/identity-callout-v2_HK3.mp4",
+      "status": "PASS",
+      "hook_s": 5.3,
+      "body_s": 77.1,
+      "duration_s": 82.4,
+      "expected_s": 82.4,
+      "fixes": [
+        {
+          "beat": "HK3-01",
+          "fix": "HOLE: extended with own footage to 5.30s"
+        },
+        {
+          "beat": "B03",
+          "fix": "HOLE: extended with own footage to 12.13s"
+        },
+        {
+          "beat": "B06",
+          "fix": "HOLE: extended with own footage to 22.63s"
+        },
+        {
+          "beat": "B10",
+          "fix": "HOLE: extended with own footage to 36.87s"
+        },
+        {
+          "beat": "B12",
+          "fix": "HOLE: slowed to 0.96x to reach 42.60s"
+        },
+        {
+          "beat": "B16",
+          "fix": "HOLE: slowed to 0.95x to reach 53.50s"
+        },
+        {
+          "beat": "B17",
+          "fix": "HOLE: extended with own footage to 55.17s"
+        },
+        {
+          "beat": "B23",
+          "fix": "HOLE: extended with own footage to 75.47s"
+        },
+        {
+          "beat": "B26",
+          "fix": "HOLE: extended with own footage to 82.40s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    }
+  ],
+  "body_identical_across_variants": true
+}

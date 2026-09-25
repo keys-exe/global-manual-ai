@@ -1,0 +1,148 @@
+{
+  "audio": [
+    "voice/Identity_HK1_master.pad.wav",
+    "voice/Identity_master.pad.wav"
+  ],
+  "script": [
+    "voice/HK1.lines.txt",
+    "voice/script.lines.txt"
+  ],
+  "base": null,
+  "broll": [
+    {
+      "beat": "HK1-01",
+      "clip": "renders/HK1-01.mp4",
+      "phrase": "Why this knee strap is a must for anyone who dreads the stairs."
+    },
+    {
+      "beat": "B01",
+      "clip": "renders/B01.mp4",
+      "phrase": "Because every step"
+    },
+    {
+      "beat": "B02",
+      "clip": "renders/B02.mp4",
+      "phrase": "puts seventeen times your bodyweight"
+    },
+    {
+      "beat": "B03",
+      "clip": "renders/B03.mp4",
+      "phrase": "through one small spot below your kneecap."
+    },
+    {
+      "beat": "B04",
+      "clip": "renders/B04.mp4",
+      "phrase": "These straps took three years to build with orthopaedic surgeons,"
+    },
+    {
+      "beat": "B05",
+      "clip": "renders/B05.mp4",
+      "phrase": "to sit right on that spot."
+    },
+    {
+      "beat": "B06",
+      "clip": "renders/B06.mp4",
+      "phrase": "Unlike the cheap copies, which are too small to reach it."
+    },
+    {
+      "beat": "B07",
+      "clip": "renders/B07.mp4",
+      "phrase": "Inside, a silicone pad"
+    },
+    {
+      "beat": "B08",
+      "clip": "renders/B08.mp4",
+      "phrase": "catches the force and moves it off the worn part, before it hits the joint."
+    },
+    {
+      "beat": "B09",
+      "clip": "renders/B09.mp4",
+      "phrase": "Sports scientists measured it."
+    },
+    {
+      "beat": "B10",
+      "clip": "renders/B10.mp4",
+      "phrase": "Thirty-four percent less strain, every step."
+    },
+    {
+      "beat": "B11",
+      "clip": "renders/B11.mp4",
+      "phrase": "Built for bone on bone, arthritis,"
+    },
+    {
+      "beat": "B12",
+      "clip": "renders/B12.mp4",
+      "phrase": "worn cartilage and meniscus."
+    },
+    {
+      "beat": "B13",
+      "clip": "renders/B13.mp4",
+      "phrase": "So you walk further,"
+    },
+    {
+      "beat": "B14",
+      "clip": "renders/B14.mp4",
+      "phrase": "and take the stairs without gripping the rail."
+    },
+    {
+      "beat": "B15",
+      "clip": "renders/B15.mp4",
+      "phrase": "Not because the arthritis has gone."
+    },
+    {
+      "beat": "B16",
+      "clip": "renders/B16.mp4",
+      "phrase": "Because the force isn't landing where it hurts."
+    },
+    {
+      "beat": "B17",
+      "clip": "renders/B17.mp4",
+      "phrase": "Adjustable."
+    },
+    {
+      "beat": "B18",
+      "clip": "renders/B18.mp4",
+      "phrase": "No sores. No rolling down."
+    },
+    {
+      "beat": "B19",
+      "clip": "renders/B19.mp4",
+      "phrase": "It sits flat under your trousers, light enough to wear all day."
+    },
+    {
+      "beat": "B20",
+      "clip": "renders/B20.mp4",
+      "phrase": "Recommended by orthopaedic surgeons,"
+    },
+    {
+      "beat": "B21",
+      "clip": "renders/B21.mp4",
+      "phrase": "and worn by over two hundred thousand people."
+    },
+    {
+      "beat": "B22",
+      "clip": "renders/B22.mp4",
+      "phrase": "And the best part? It's two for the price of one today."
+    },
+    {
+      "beat": "B23",
+      "clip": "renders/B23.mp4",
+      "phrase": "You get sixty days."
+    },
+    {
+      "beat": "B24",
+      "clip": "renders/B24.mp4",
+      "phrase": "If it doesn't change your stairs, you get your money back."
+    },
+    {
+      "beat": "B25",
+      "clip": "renders/B25.mp4",
+      "phrase": "Put one on,"
+    },
+    {
+      "beat": "B26",
+      "clip": "renders/B26.mp4",
+      "phrase": "stairs will tell you."
+    }
+  ]
+}
