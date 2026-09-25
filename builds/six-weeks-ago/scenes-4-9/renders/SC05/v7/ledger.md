@@ -35,3 +35,4 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 21 | Margaret near profile: slow out-breath on "Every stride." | b52a672a-0dbf-471d-b6c4-c7ac07a93994 (edit of 14) | APPROVED (option A) |
 | 22 | Margaret OTS: "Barbara, my knees are bone on bone. There's nothing left in there." | d71d9197-fad8-4d66-ac56-0d142e26bfb2 (edit of 16) | APPROVED (option B) |
 | 23 | Barbara OTS: "Mine too. This doesn't put anything back." | ae7d7030-93ea-4788-9e37-b184bc24b139 (edit of 20) | APPROVED (option A) |
+| 24 | Barbara CU: "Nothing can. I'm seventy-four. I haven't got time to lie to you." | e39d44cf-6b43-4727-99e6-c46e7b45c050 (edit of 23) | APPROVED (option A) |
