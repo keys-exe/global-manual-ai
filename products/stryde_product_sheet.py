@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.20
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.21
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -14,6 +14,8 @@ product; it carries everything that step needs.
     the geometry checker ........ check(), was stryde_frame_check.py
     the fit / "adjustable" rule . ADJUSTABLE_RULE, NEG_ADJUST (V7.49.14)
     one size fits all ........... FIT_SNUG, worn_ref_prompts() (V7.49.15)
+    the size lock ............... SIZE_LOCK, SIZE_WORN, SIZE_HELD, SIZE_OBJECT (V7.49.21)
+    how it is worn .............. WEAR_GUIDE (V7.49.21)
     the V7.49.4 pattern fills ... HOLD_PC, HOLD_PROD, NEG_WARP_P, WEAR_*,
                                   REAR_VIEW_SPEC, DEMONSTRATION_TABLE, ...
                                   (content moved OUT of the Standards)
@@ -60,7 +62,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.20"
+VERSION = "7.49.21"
 
 # --------------------------------------------------------------- slots
 
@@ -300,7 +302,88 @@ FIT_SNUG = (
 "leg, pressing in lightly so the skin dips a touch at its edges, the band's tail folded back through each "
 "chrome slide and lying flat against the band, every part of it in contact with the skin. The shell is "
 "scaled to this knee: its notch is one kneecap wide and the shell spans the whole front of the joint, a "
-"chrome slide at each side of the leg, the size of a hand laid across the front of the knee.")
+"chrome slide at each side of the leg.")
+
+# --- the size lock (V7.49.21, user: "we need a perfect sizing so we always get
+# the same size") ------------------------------------------------------------
+# One unit, one size. Proportions are MEASURED on the canonical front photo
+# (front.webp, layer 1, straight-on): shell 688 px slide-to-slide x 275 px
+# peak-to-lowest-edge = 2.50; product_front.jpg (eb1e16e1) 2.32; band 147 px
+# = 0.53 of the shell's height. Absolute sizes are a RENDERING size derived
+# from those proportions and Tier-3 adult anatomy (thumb ~2 cm wide, kneecap
+# ~5 cm tall, knee ~10-11 cm across the front) -- not advertiser-held. Replace
+# with supplied dimensions the moment they exist.
+SIZE_LOCK = {
+    "shell_width_cm":   12.0,   # slide to slide, along the curve
+    "shell_height_cm":  5.0,    # peak tips to the lowest point of the bottom edge
+    "band_width_cm":    2.5,    # band height, edge to edge
+    "shell_aspect":     (2.3, 2.6),   # width / height, measured straight-on
+    "band_over_shell_h": (0.45, 0.60),  # edge-to-edge by eye; the --check distance
+                                        # transform reads the same band as 0.351 (front.webp) --
+                                        # different method, so RATIOS keeps its own gates
+    "notch_rise_over_w": (0.15, 0.21),  # front.webp 0.18
+    "peak_span_over_w":  (0.55, 0.66),  # front.webp 0.60
+    "worn_band_over_leg": (0.20, 0.28), # band height / leg width at the calf, from behind
+    "held_shell_in_thumbs": (5.0, 6.0), # shell width / the holder's thumb width
+    "source": "front.webp measured V7.49.21; anatomy Tier 3; NOT advertiser-held",
+}
+
+# The same size said three ways -- one per context. Positive wording (T2I).
+SIZE_OBJECT = (
+"Its size never changes: a rigid shell about 12 cm across from slide to slide and about 5 cm tall at the "
+"peaks, so it is roughly two and a half times as wide as it is tall, with a band about 2.5 cm wide -- the band "
+"about half as tall as the shell.")
+SIZE_WORN = (
+"Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome "
+"slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a "
+"quarter of the leg's width at the top of the calf.")
+SIZE_HELD = (
+"Its size never changes: the shell is about five to six of the holder's thumb-widths across, overhanging the "
+"pinching hand at both ends, and about as tall as the thumb is long from its tip to its base knuckle; the "
+"band is a little wider than the thumb.")
+
+# --- how the strap is worn (V7.49.21, user: "it needs to be clarified") ------
+# The one reference answer for every worn, seating and bent beat. Every line
+# is already enforced by a locked string; this is the plain-words version.
+WEAR_GUIDE = (
+    ("ONE UNIT, ONE KNEE",
+     "One strap on one knee -- the side declared at the act map, held all build. Never both knees, never "
+     "two units on one person. The same unit fits left or right; it is not handed."),
+    ("SHELL ON THE FRONT, NOTCH UP",
+     "The rigid shell sits on the front of the leg, the notch at the top pointing up at the kneecap, the "
+     "wordmark upright and readable to someone facing the wearer. Never upside down, never turned to the "
+     "side or the back (PLACE_LOCK, ORIENT_LOCK)."),
+    ("HEIGHT -- ON THE PATELLAR TENDON",
+     "Directly below the kneecap, on the tendon. The notch cups the kneecap's lower border with no gap; "
+     "straight leg -- peaks no higher than the base of the kneecap's sides; bent leg -- the shell sits "
+     "high, top edge level with the kneecap's lower pole, peaks to the lower half of its sides. The "
+     "kneecap's face is always fully uncovered (PLACE_LOCK, PLACE_BENT)."),
+    ("BAND ROUND THE BACK, BELOW THE HOLLOW",
+     "From the slides the band runs level round the back of the leg, below the hollow behind the knee, "
+     "across the top of the calf, the two keeper loops together at the centre back. Only the band is at "
+     "the back -- no shell, no wordmark, no fastening (ORIENT_LOCK)."),
+    ("FIT -- ONE SIZE, SNUG",
+     "One size fits all: the elastic band takes up the leg. Snug and flat all the way round, pressing in "
+     "lightly, no slack, no loose tail, no gap between band and skin (FIT_SNUG, SIZE_LOCK)."),
+    ("ON BARE SKIN",
+     "Worn directly on the skin. Under trousers it is hidden (CONCEALED); it is never worn over "
+     "clothing (§9D, CONCEALING / EXPOSING)."),
+    ("PUTTING IT ON",
+     "The band stays closed. The strap goes over the foot like a sock cuff, sits at mid-shin on a straight "
+     "leg, and both hands, flat on the shell's sides, slide it UP the front of the shin until the kneecap "
+     "stops it on the tendon. Never opened, threaded, fastened or tightened on camera (SEAT_LOCK, "
+     "ADJUSTABLE_RULE)."),
+    ("WHILE WORN",
+     "Hands off it (Standards §9). It holds its place through walking, stairs, sitting and standing; the "
+     "shell never rotates with the joint and never slides down the shin."),
+    ("HELD, NOT WORN",
+     "In the hand it is pinched at the shell's bottom edge -- thumb in front below the wordmark, fingers "
+     "behind on the pad, band slack round the wrist (RULINGS['held_on_pad']). Held and worn never in the "
+     "same beat."),
+    ("NEVER SHOWN",
+     "Taking it off, the band open, the band being adjusted, two units worn, the shell on the thigh, "
+     "calf or kneecap."),
+)
 
 # Leg-skin clause for worn frames with no face in them (SKIN-A is written
 # for faces). Buyer age band, not an identity.
@@ -340,7 +423,7 @@ WORN_REF_SCENES = {
 }
 
 # Bent-frame shape guard (V7.49.15, after bent attempt 2 drew a tall narrow
-# U-shell with horn peaks). No aspect figure: UNSETTLED['shell_elevation_aspect'].
+# U-shell with horn peaks). Aspect since settled: SIZE_LOCK (V7.49.21).
 WORN_REF_SHAPE = (
 "The shell keeps the exact proportions of the front product photo: far wider than it is tall, a broad low "
 "plate wrapping the front of the knee, the two peaks broad and low, the notch a wide rounded curve between "
@@ -447,7 +530,9 @@ PRODUCT_SET_REFS = {
                              "hold), 930e3245 (grip not on the pad), 86093b25 (flat rectangular shell)"),
                  "flags": "one fingertip shows through the notch from behind the shell"},
     "front_view": {"file": "stryde_refs/product_front.jpg", "job_id": "eb1e16e1-066c-4f6e-8bf0-311b962799ed",
-                   "attempt": "1 of 1", "flags": ""},
+                   "attempt": "1 of 1",
+                   "flags": ("V7.49.21 --check: FAIL rise 0.272, peak span 0.442, peaks 12% unequal; band "
+                             "reads thick -- re-roll before locking; use front.webp as the front meanwhile")},
     "back_view":  {"file": "stryde_refs/product_back.jpg", "job_id": "7921dfdf-9bda-4599-a861-9234a30b961f",
                    "attempt": "1 of 1", "flags": ""},
     "side_view":  {"file": "stryde_refs/product_side.jpg", "job_id": "a18b4a42-a306-41d8-8d09-2306c85393fb",
@@ -490,10 +575,11 @@ def product_set_prompts(anchor=False):
         lead = PRODUCT_SET_ANCHOR + " " + lead
     out = {}
     for k, view in PRODUCT_SET_VIEWS.items():
-        out[k] = " ".join((PRODUCT_SET_STUDIO, lead + " a single unit.", PRODUCT_SET_RING, view, PRODUCT_SET_GEOM))
+        out[k] = " ".join((PRODUCT_SET_STUDIO, lead + " a single unit.", PRODUCT_SET_RING, view, PRODUCT_SET_GEOM,
+                           SIZE_OBJECT))
     out["held"] = " ".join((PRODUCT_SET_HELD, lead + " a single unit.", PRODUCT_SET_RING.replace(
         "standing open as a round ring as if around an invisible leg", "hanging as a closed loop"),
-        PRODUCT_SET_GEOM, CAP_A, BODY_WHOLE))
+        PRODUCT_SET_GEOM, SIZE_HELD, CAP_A, BODY_WHOLE))
     return out
 
 
@@ -510,7 +596,7 @@ def worn_ref_prompts(side="right"):
     out = {}
     for k, scene in WORN_REF_SCENES.items():
         extra = (WORN_REF_SHAPE,) if k == "bent" else ()
-        out[k] = " ".join((scene, lead + worn, body[k]) + extra + (FIT_SNUG, LEG_SKIN, CAP_A, BODY_WHOLE))
+        out[k] = " ".join((scene, lead + worn, body[k]) + extra + (FIT_SNUG, SIZE_WORN, LEG_SKIN, CAP_A, BODY_WHOLE))
     return out
 
 
@@ -701,7 +787,7 @@ OPEN_ITEMS = (
     ("orthographic front elevation",
      "One straight-on frame settles two geometry questions: where the wordmark sits "
      "against the notch, and the true width-to-height. Peak equality is settled "
-     "(V7.49.10). See UNSETTLED['shell_elevation_aspect'] and RULINGS."),
+     "(V7.49.10). Width-to-height settled V7.49.21 (ASPECT_RATIO, SIZE_LOCK)."),
     ("worn-placement reference", "See REVEAL_STATUS."),
 )
 
@@ -763,18 +849,20 @@ INFO_RATIOS = {
     # in RATIOS, which is measured against the shell's height: different
     # denominators, and conflating them puts a wrong ratio on every frame.
     # Single sample, upscaled video, so it is informational not gated.
-    "BAND_HEIGHT_TO_LIMB_WIDTH": (0.28, 0.36),
+    # V7.49.21: target (0.20, 0.28) = SIZE_LOCK['worn_band_over_leg'] (2.5 cm band on a
+    # 10-11 cm calf). The old 0.28-0.36 came off an upscaled V7.48 frame and
+    # rendered the band ~3.5 cm (worn_rear.jpg reads 0.33 -- flagged, locked by user).
+    "BAND_HEIGHT_TO_LIMB_WIDTH": (0.20, 0.28),
     # V7.49.12. Shell width (slide to slide) / greatest height, read off the
     # supplied straight-on front.png: height measured (565 px of 2048), width
     # by eye at the slides' outer edges. Informational, never gated.
     "SHELL_ASPECT_EST": (2.3, 2.6),
 }
 
-# Deliberately absent: shell width-to-height. Measured 1.23-1.72 across the
-# five renders, but yaw compresses width and the wrap tilts the bounding
-# box, so every one of those is an UNDER-estimate of the true elevation.
-# No aspect figure enters this sheet until the elevation render exists.
-ASPECT_RATIO = None
+# Shell width-to-height, SETTLED V7.49.21: measured on two straight-on,
+# no-yaw frames -- front.webp (layer 1) 2.50 and product_front.jpg 2.32. The
+# 1.23-1.72 read off the V7.48 three-quarter renders was yaw, as predicted.
+ASPECT_RATIO = (2.3, 2.6)
 
 RULINGS = {
     "seating_joint_state":
@@ -789,6 +877,11 @@ RULINGS = {
         "HIGH: top edge level with the kneecap's lower pole, notch pressed up into its underside, "
         "the lower body only just onto the top of the shin. Applies to every bent-knee worn "
         "beat (PLACE_BENT, NEG_BENT) and to PLACEMENT_REFERENCES['bent'].",
+    "size_lock":
+        "LOCKED V7.49.21 (user: always the same size). SIZE_LOCK is the product's one size. Every "
+        "worn prompt carries SIZE_WORN, every product-only prompt SIZE_OBJECT, every held prompt "
+        "SIZE_HELD. A frame whose shell or band reads more than ~20 percent off its anchor is "
+        "REGENERATE Q2.",
     "held_on_pad":
         "LOCKED V7.49.19, made realistic V7.49.20 (user). Whenever the product is held, the grip is "
         "on the pad, the way a person really holds a strap: a relaxed pinch at the bottom edge -- "
@@ -860,8 +953,9 @@ UNSETTLED = {
         "written and stay unverified. RESOLVED AS A FACT BY: a close still of the "
         "band's inner face, or a rear beat generated with and without the "
         "inner-face clause.",
-    "shell_elevation_aspect":
-        "True shell width-to-height is unknown. Every canonical render is "
+    "shell_elevation_aspect_RESOLVED_7_49_21":
+        "RESOLVED V7.49.21: 2.3-2.6 measured on front.webp (2.50) and product_front.jpg (2.32), "
+        "both straight-on -- ASPECT_RATIO, SIZE_LOCK. History: True shell width-to-height is unknown. Every canonical render is "
         "three-quarter, and yaw makes the measured 1.23-1.72 an "
         "under-estimate. V7.49.12: the supplied straight-on front.png gives an ESTIMATE "
         "of 2.3-2.6 (INFO_RATIOS['SHELL_ASPECT_EST']); still informational until measured "
@@ -1036,6 +1130,10 @@ CHECKLIST = [
     "seating beats: hands flat on the shell's sides, never on the band "
     "ends or the slides; nothing pulled, tightened or threaded",
     "seating beats: end position matches the front worn-placement reference",
+    "size (SIZE_LOCK): shell about two and a half times as wide as tall; band about half "
+    "the shell's height; worn -- shell spans the leg's front width and stands about as tall "
+    "as the kneecap, band about a quarter of the calf's width; held -- shell five to six "
+    "thumb-widths across",
 ]
 
 # back-compat for callers that imported the bare name
@@ -1397,6 +1495,31 @@ def verify(verbose=False):
         if "webbing" in S[name] or "flat matte-black black" in S[name]:
             fails.append("%s still describes the band as flat webbing" % name)
 
+    # 8d size lock and wear guide (V7.49.21)
+    if ASPECT_RATIO != SIZE_LOCK["shell_aspect"]:
+        fails.append("ASPECT_RATIO and SIZE_LOCK disagree")
+    if INFO_RATIOS["BAND_HEIGHT_TO_LIMB_WIDTH"] != SIZE_LOCK["worn_band_over_leg"]:
+        fails.append("INFO_RATIOS band/limb and SIZE_LOCK disagree")
+    for k, v in worn_ref_prompts("right").items():
+        if SIZE_WORN not in v:
+            fails.append("worn ref %s missing SIZE_WORN" % k)
+    for k, v in product_set_prompts().items():
+        want = SIZE_HELD if k == "held" else SIZE_OBJECT
+        if want not in v:
+            fails.append("product set %s missing its size string" % k)
+    heads = [h for h, _ in WEAR_GUIDE]
+    for must in ("ONE UNIT, ONE KNEE", "SHELL ON THE FRONT, NOTCH UP", "HEIGHT -- ON THE PATELLAR TENDON",
+                 "BAND ROUND THE BACK, BELOW THE HOLLOW", "FIT -- ONE SIZE, SNUG", "PUTTING IT ON"):
+        if must not in heads:
+            fails.append("WEAR_GUIDE missing: %s" % must)
+    for name in ("SIZE_OBJECT", "SIZE_WORN", "SIZE_HELD"):
+        v = globals()[name]
+        if "never changes" not in v:
+            fails.append("%s lost its fixed-size clause" % name)
+        for bad in RETIRED_PHRASINGS:
+            if bad in v.lower() and bad not in NEG_ONLY:
+                fails.append("%s carries retired phrasing: %r" % (name, bad))
+
     # 9 one mechanism claim, and it is not the retired one
     if MECHANISM_CLAIM != "protection":
         fails.append("mechanism claim is not the locked one")
@@ -1541,7 +1664,7 @@ British, roughly 55–80. Cast to the buyer, balanced across men and women, with
 | Claim | Tier | Status |
 |---|---|---|
 | **One size fits all** | Advertiser (user-stated V7.49.15) | Rendered as `FIT_SNUG` on worn frames and covered per §12 on fit lines. No size chart, size label or S/M/L is ever shown. The V7.49.13 competitor sizing figures (25–44 cm, 15–46 cm) are retired — this product has no sizes |
-| Band height about 2 inches | 3 | Category figure. Not advertiser-held |
+| Rendering size: shell ~12 cm × ~5 cm, band ~2.5 cm (`SIZE_LOCK`) | Derived | Proportions measured on `front.webp` (V7.49.21); absolute size from Tier-3 anatomy. Not advertiser-held — replace with supplied dimensions. Never stated on screen. (The V7.49.13 "band about 2 inches" category figure is retired.) |
 | Adult patella about 4–5 cm wide; tendon 4–5 cm from inferior pole to tibial tuberosity | 3 | Anatomical anchor, used for scale reasoning only, never as a claim |
 | Clinical placement "just below the kneecap"; one manufacturer specifies about 2 inches below | 3 | Third-party guidance. Compatible with the contact phrasing — the top edge touches the pole while the body covers the upper tendon |
 | 34% strain figure · surgeon recommendations · volume claims | 3 | Generate normally as scripted creative. Verification is separate and only on explicit request; exact readable numerals may be POST-ASSIST |
@@ -1566,6 +1689,37 @@ The global Standards are product-agnostic from V7.49.4. Everything below used to
 | 16A | Widget examples | `WIDGET_EXAMPLES` |
 | Open Decision 15 | Orthographic elevation | `OPEN_ITEMS`, `UNSETTLED`, `RULINGS` |
 | 8 | `[FEATURE]` / `[FRACTION]` / `[RIGID]` | notch and peaks / three fifths / shell |
+
+---
+
+## 13. Size — always the same *(V7.49.21 — user ruling)*
+
+**One unit, one size, every frame.** Proportions measured straight-on on `front.webp`: the shell is **about 2.5× as wide as it is tall** (2.50; `product_front.jpg` 2.32), the band is **about half the shell's height**, the notch rises 0.18 of the width, the peaks span 0.60 of it. Rendering size: **shell ~12 cm across × ~5 cm tall, band ~2.5 cm** — derived, not advertiser-held.
+
+| Context | Size anchor (string) |
+|---|---|
+| Product only | ~12 × 5 cm shell, band half the shell's height (`SIZE_OBJECT`) |
+| Worn | shell spans the leg's whole front width, about as tall as the kneecap; band about a quarter of the calf's width (`SIZE_WORN`) |
+| Held | shell five to six thumb-widths across, as tall as the thumb is long; band a little wider than the thumb (`SIZE_HELD`) |
+
+A frame more than ~20% off its anchor is REGENERATE Q2. Measured drift in the current set: `worn_rear.jpg` band reads ~0.33 of the leg (target 0.20–0.28, a little wide); `product_front.jpg` band reads ~0.7 of the shell's height (target 0.45–0.60, a little thick). Both are flagged, not re-rendered. The `--check` geometry gates stay in their own units (a distance-transform band reading), so `front.webp` passes them; `product_front.jpg` fails three shape gates (rise 0.272, peak span 0.442, peaks 12% unequal) and is due a re-roll before it is locked.
+
+---
+
+## 14. How it is worn *(V7.49.21 — user ruling)*
+
+`WEAR_GUIDE` in the `.py` is the plain-words answer; every line points at the locked string that enforces it.
+
+1. **One unit, one knee.** The side declared at the act map, held all build. Not handed.
+2. **Shell on the front, notch up.** Wordmark upright and readable to someone facing the wearer. Never upside down, never on the side or back.
+3. **On the patellar tendon.** Directly below the kneecap; the notch cups its lower border, no gap. Straight leg: peaks no higher than the base of the kneecap's sides. Bent leg: sits high, top edge level with the kneecap's lower pole. Kneecap face always uncovered.
+4. **Band round the back, below the hollow.** Level, across the top of the calf, the two keeper loops together at the centre back. Only the band at the back.
+5. **One size, snug.** Flat all the way round, no slack, no loose tail.
+6. **On bare skin.** Hidden under trousers; never worn over clothing.
+7. **Putting it on.** Closed band over the foot, to mid-shin on a straight leg, both hands flat on the shell slide it **up** until the kneecap stops it. Never opened, threaded or tightened on camera.
+8. **While worn.** Hands off; it holds its place through walking, stairs, sitting.
+9. **Held.** Pinched at the shell's bottom edge — thumb in front, fingers behind on the pad, band slack round the wrist. Never held and worn in one beat.
+10. **Never shown.** Taking it off, the band open or adjusted, two units worn, the shell on the thigh, calf or kneecap.
 
 ---
 
