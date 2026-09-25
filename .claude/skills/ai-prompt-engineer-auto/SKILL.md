@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer-auto
-description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.60.0, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
+description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.60.1, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
 ---
 
 # AI Prompt Engineer — Automatic run mode
@@ -44,6 +44,7 @@ For every batch, in this order:
 7. **Trim (E11)** every talking-head clip that passed QA (section 4 below).
 8. **Update the ledger** and ship the batch's QA table, marking which reads were yours and which the user's.
 9. **Assemble (§30H)** once an act's B-rolls pass: write `plan.json` (master, `script.lines.txt`, talking-head track or `null`, each B-roll with its phrase) → `assemble.py plan.json --out builds/<build>/edit/<act>.mp4`. Every FAIL is fixed (NEED_LONGER → regenerate that clip longer) before rendering. Then `contact_sheet.py` on the render and a frame either side of each cut, and judge the edit. Deliver rough cut + EDL + report to `08_EDIT`.
+10. **Hook variants (§30H)** once the hooks are approved and voiced: write `variants.json` (the body plan once + one entry per hook) → `variants.py variants.json --build <BUILD> --outdir builds/<build>/edit/` → `<BUILD>_HK1.mp4`, `_HK2.mp4`, `_HK3.mp4`. The set must PASS with `body_identical_across_variants: true`. Judge each variant's hook and seam by §22W. Deliver every variant + the set report to `08_EDIT` and list them in `OUTPUT.md`.
 
 ## 3. Stop points — the only places the run waits
 

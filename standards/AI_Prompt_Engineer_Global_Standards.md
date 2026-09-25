@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.60.0 — supersedes all prior versions.** *(clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.60.1 — supersedes all prior versions.** *(hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -4953,6 +4953,17 @@ One frame carrying the whole shell: the hall seen from just inside the front doo
 
 `scripts/assemble.py <plan.json>` takes the master, the verbatim lines, the talking-head track (or none) and the B-roll list with each clip's phrase. It places, joins, closes flickers and holes, reports every fix and every failure, and renders a 1080×1920 rough cut with the master as the only audio. It then **verifies the render**: duration equals the master to within two frames, and there are no black frames. A plan with any failure does not render. **Measured V7.60.0 on a synthetic cut:** four B-rolls placed on their phrases, including a numeral-vs-word match. Two flickers closed (1.47s and 0.73s, by 0.88x and 0.87x slow-down). Every cut landed frame-exact: pixel colour sampled at ±1 frame of each cut. Duration matched, with 0 black frames. The voice-only variant of the same plan correctly failed with three holes and two NEED_LONGER.
 
+### Hook variants — one video per hook *(new V7.60.1)*
+
+**The deliverable is one finished video per hook: hook 1 + the body, hook 2 + the body, hook 3 + the body.** Every variant carries the same body. Only the hook changes, which is what makes the variants a clean test.
+
+- **How many:** as many as the script supplies. Where the agent writes the hooks (an empty Hooks section), **three**, each approved one by one at §18 step 6. Beat IDs per §33: `HK1-01`, `HK2-01`, `HK3-01`.
+- **Voice:** each hook is its own master in the build's cloned voice (§22U), made only after its step-6 approval. The body master is voiced once and reused by every variant, never re-voiced per hook.
+- **One timeline per variant:** hook and body are assembled together, so every §30H rule holds across the hook-to-body seam. A hook's last B-roll may extend over the seam to close a flicker; that is the only difference allowed at the seam.
+- **The body is locked:** word timings are taken per part (the hook alone, the body alone), and the body starts on a whole frame. **The body's B-roll cuts are therefore identical in every variant**, and the instrument checks it.
+- **Instrument:** `scripts/variants.py <variants.json>` builds every variant through `assemble.py`, names them `<BUILD>_HK1.mp4` … into `08_EDIT`, and checks the set: every variant PASS; body cuts identical across variants; each duration equals its hook master + the body master within two frames. **Measured V7.60.1 on a synthetic set of three hooks:** all PASS, body identical, durations 33.93 / 34.54 / 34.51s against 33.96 / 34.53 / 34.53s expected, 0 black frames, each hook's own B-roll on screen. The first run caught the body drifting between variants (the transcript timed the body differently behind each hook). Per-part timing and frame-aligned offsets fixed it.
+- **Delivered:** the variant videos, one EDL per variant, the set report, and the variant table in `OUTPUT.md`.
+
 ### What the agent edits, and what CapCut still does
 
 The agent delivers the **rough cut** (`08_EDIT`), its **EDL** (every clip, in/out, speed, phrase, fix) and the verification report. After the render, it reads `contact_sheet.py` of the rough cut plus a frame on each side of every cut, and judges the whole edit by §22W. CapCut still does captions, motion graphics, the ambient bed, music and supplied-asset cut-ins (§17, §17A), working from the rough cut instead of from loose clips. §28G's designed-silence list and J-cuts stay CapCut lines.
@@ -7511,6 +7522,7 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | Clip verdict (§22W) | `contact_sheet.py` sheet + full frames where needed | all seven §22W questions YES | AUTO (agent) | REGENERATE with the named fix; third failure of one fault → user |
 | B-roll placement (§30H) | `assemble.py` EDL vs aligned word timestamps | every B-roll starts on its phrase's first word | AUTO | Re-plan; a phrase not found is a plan error, never a guess |
 | Holes and flicker (§30H) | `assemble.py` timeline | no TH window < 1.5s between B-rolls; voice-only: no uncovered frame; no B-roll < 0.8s | AUTO | Extend → slow ≥ 0.8x → regenerate longer |
+| Hook variants (§30H) | `variants.py` set report | one video per hook; every variant PASS; body cuts identical across variants; duration = hook + body ± 2 frames | AUTO | Fix the failing variant; a body mismatch is a plan error — rebuild from one body plan |
 | Rough-cut render (§30H) | duration + blackdetect on the render | duration = master ± 2 frames; 0 black frames | AUTO | Re-render; a second failure → HUMAN |
 | TTS verbatim (§22U step 8) | `tts_budget.py --script-lines`: tags stripped, word-for-word compare against `script_lines.py` output | identical word sequence; title, headings, links and notes absent | AUTO | Rebuild the tagged text from the extracted lines; never send a FAIL |
 | TTS request length (§22U step 9) | character count of the full request, tags included | ≤ 5,000 | AUTO | Budget ladder, in order; never truncate the script |
@@ -7754,6 +7766,18 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 ---
 
+# CHANGELOG — V7.60.0 → V7.60.1 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **30H** | **Hook variants (new).** One finished video per hook, each hook + the identical body. Three hooks when the agent writes them; each hook voiced separately, the body voiced once. One timeline per variant, so the no-hole rules hold across the seam. Body timed per part on a whole frame, so its cuts are identical in every variant |
+| E1 | Hook-variant set check |
+| Files | `scripts/variants.py`; `assemble.py` takes hook + body as one timeline |
+
+**Origin:** user rule — builds almost always have several hooks; the output is one video per hook with the body.
+
+---
+
 # CHANGELOG — V7.59.2 → V7.60.0 *(cut authorised)*
 
 | § | Change |
@@ -7764,18 +7788,6 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | Files | `scripts/assemble.py`, `scripts/contact_sheet.py` |
 
 **Origin:** user request — check the B-roll videos, place them on the right lines, edit them with no holes or talking-head flicker.
-
----
-
-# CHANGELOG — V7.59.1 → V7.59.2 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **22U** | **Script spoken verbatim (locked).** The TTS text is the spoken lines only, word for word — no title, headings, links or visual notes. `script_lines.py` extracts the lines and reports every drop; `tts_budget.py --script-lines` blocks any difference. Script errors are flagged, not fixed. Agent-written hooks are voiced separately, and only after approval |
-| E1 | TTS verbatim check |
-| Files | `scripts/script_lines.py`; `tts_budget.py` verbatim lock |
-
-**Origin:** user rule — never change the script; nothing added, nothing removed, no titles or visuals.
 
 ---
 

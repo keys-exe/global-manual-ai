@@ -98,6 +98,30 @@ def line_end(ws, j):
     return ws[k][1]
 
 
+def join_media(root, spec, kind):
+    """One path, or a list of paths joined in order (hook + body)."""
+    if not isinstance(spec, list):
+        return root / spec
+    if len(spec) == 1:
+        return root / spec[0]
+    tmp = root / "_joined"
+    tmp.mkdir(exist_ok=True)
+    out = tmp / ("_".join(Path(x).stem for x in spec) + (".wav" if kind == "audio" else ".mp4"))
+    ins = sum([["-i", str(root / x)] for x in spec], [])
+    n = len(spec)
+    if kind == "audio":
+        graph = "".join(f"[{k}:a]aresample=48000,aformat=channel_layouts=mono[a{k}];" for k in range(n)) + \
+                "".join(f"[a{k}]" for k in range(n)) + f"concat=n={n}:v=0:a=1[o]"
+        extra = ["-c:a", "pcm_s16le"]
+    else:
+        graph = "".join(f"[{k}:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,setsar=1[v{k}];"
+                        for k in range(n)) + "".join(f"[v{k}]" for k in range(n)) + f"concat=n={n}:v=1:a=0[o]"
+        extra = ["-c:v", "libx264", "-crf", "16"]
+    subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", *ins, "-filter_complex", graph,
+                    "-map", "[o]", *extra, str(out)], check=True)
+    return out
+
+
 def snap(t):
     return round(round(t * FPS) / FPS, 4)
 
@@ -113,12 +137,23 @@ def main():
 
     root = Path(a.plan).parent
     plan = json.loads(Path(a.plan).read_text())
-    audio = root / plan["audio"]
-    base = root / plan["base"] if plan.get("base") else None
+    # A hook variant is [hook, body]: lists are joined in order into one continuous
+    # master, one script and one talking-head track, so §30H holds across the seam.
+    audio = join_media(root, plan["audio"], "audio")
+    base = join_media(root, plan["base"], "video") if plan.get("base") else None
     total = duration(audio)
-    ws = words(audio, a.model)
-    if plan.get("script"):
-        ws = align((root / plan["script"]).read_text(encoding="utf-8").split(), ws)
+    # Word timings are taken PER PART (hook alone, body alone) and offset by the
+    # parts before it, so the body is timed identically in every hook variant.
+    parts = plan["audio"] if isinstance(plan["audio"], list) else [plan["audio"]]
+    scripts = plan.get("script")
+    scripts = (scripts if isinstance(scripts, list) else [scripts]) if scripts else [None] * len(parts)
+    ws, offset = [], 0.0
+    for part, sc in zip(parts, scripts):
+        pw = words(root / part, a.model)
+        if sc:
+            pw = align((root / sc).read_text(encoding="utf-8").split(), pw)
+        ws += [(s0 + offset, e0 + offset, w) for s0, e0, w in pw]
+        offset += snap(duration(root / part))  # each part starts on a whole frame
     fails, fixes, edl = [], [], []
 
     # 1. PLACE

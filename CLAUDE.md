@@ -1,6 +1,6 @@
 # global-manual-ai
 
-This repo runs under the **AI Prompt Engineer — Global Standards** (currently V7.60.0).
+This repo runs under the **AI Prompt Engineer — Global Standards** (currently V7.60.1).
 
 - Master file (the only standard): `standards/AI_Prompt_Engineer_Global_Standards.md`
 - Project skill that loads it: `.claude/skills/ai-prompt-engineer/SKILL.md` — the **Manual** run mode, always the default
