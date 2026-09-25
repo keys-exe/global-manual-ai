@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.19
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.20
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -60,7 +60,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.19"
+VERSION = "7.49.20"
 
 # --------------------------------------------------------------- slots
 
@@ -403,15 +403,19 @@ PRODUCT_SET_VIEWS = {
 }
 
 PRODUCT_SET_HELD = (
-"Vertical 9:16 phone photo, close, of an adult's right hand holding the strap at chest height in a lived-in "
-"living room, the room soft and out of focus behind, daylight from a window to one side. One hand holds it by "
-"the pad: the fingers spread flat behind the shell against its inner pad, the thumb resting on the pad at the "
-"shell's lower edge, the hand's whole grip on the pad and nowhere else -- never on the band, never on the chrome "
-"slides, nothing crossing the shell's front face, the wordmark and both slides completely clear. The shell's front face is toward the lens, the wordmark "
-"horizontal and readable, both chrome slides catching hard specular highlights, the closed band hanging down "
-"below the hand with its own weight, its tail visible. The hand is still and simply holding it. Real "
-"unretouched skin on the hand of an adult of about sixty: visible pores and fine lines across the knuckles, "
-"faint veins on the back of the hand, short clean nails.")
+"Vertical 9:16 phone photo, close, of an adult casually showing the strap to the camera at chest height in a "
+"lived-in living room, the room soft and out of focus behind, daylight from a window to one side, the forearm "
+"coming in from the bottom corner of the frame. One hand holds it by the pad the way a real person holds a "
+"strap: a relaxed natural pinch at the shell's bottom edge, the thumb in front resting on the bottom edge just "
+"below the wordmark, the four fingers behind the shell on its inner pad with their tips hidden behind it, the "
+"wrist loose and turned slightly toward the lens. Nothing rises above the shell's top edge: both peaks and the "
+"notch stand completely clear against the room. Never on the band, never on the chrome slides, nothing across "
+"the wordmark. The shell's front face is toward the lens, the wordmark horizontal and readable, both chrome "
+"slides catching hard specular highlights. Because the hand is inside the ring, the closed band falls loosely "
+"down behind the hand and hangs slack around the wrist under its own weight, the way a real strap does, its "
+"tail visible. Real unretouched skin on "
+"the hand of an adult of about sixty: visible pores and fine lines across the knuckles, faint veins on the "
+"back of the hand, short clean nails.")
 
 # T2I geometry guard for the set (HOLD_PROD is written for I2V).
 PRODUCT_SET_GEOM = (
@@ -421,7 +425,7 @@ PRODUCT_SET_GEOM = (
 
 # Generated product set, V7.49.18. Agent verdicts per §22V; awaiting the
 # user's lock. Model passed nano_banana_pro, logged nano_banana_2 (routing fault).
-PRODUCT_SET_STATUS = "AGENT USE V7.49.19 -- awaiting user lock"
+PRODUCT_SET_STATUS = "AGENT USE V7.49.20 -- awaiting user lock"
 PRODUCT_SET_REFS = {
     "tq_left":  {"file": "stryde_refs/product_tq_left.jpg", "job_id": "0cdf393f-6525-4f0e-a52b-728fda2410dd",
                  "attempt": "1 of 1", "flags": ""},
@@ -437,10 +441,11 @@ PRODUCT_SET_REFS = {
     "macro":    {"file": "stryde_refs/product_macro.jpg", "job_id": "8a9b0c5d-d3d7-496a-a557-0437c94c9579",
                  "attempt": "2 of 3 -- 42629d4f REGENERATE Q2 (invented moulded frame, sideways chevrons)",
                  "flags": "strap tilted on the diagonal"},
-    "held":     {"file": "stryde_refs/product_held.jpg", "job_id": "972e16d9-fa9d-4fce-ab2c-c6a9276e4f0f",
-                 "attempt": ("V7.49.19 grip-on-the-pad re-roll, 1 of 1. Superseded: 930e3245 (grip not on the "
-                             "pad), 86093b25 (REGENERATE Q2, flat rectangular shell)"),
-                 "flags": "the band loops round the wrist rather than hanging free"},
+    "held":     {"file": "stryde_refs/product_held.jpg", "job_id": "c8339084-5ec3-4884-a558-e92681654e64",
+                 "attempt": ("V7.49.20 realistic pinch, 2 of 3 -- 1f6ebf58 REGENERATE (fingers over the top "
+                             "edge hiding the notch and peaks). Superseded: 972e16d9 (flat palm, not a real "
+                             "hold), 930e3245 (grip not on the pad), 86093b25 (flat rectangular shell)"),
+                 "flags": "one fingertip shows through the notch from behind the shell"},
     "front_view": {"file": "stryde_refs/product_front.jpg", "job_id": "eb1e16e1-066c-4f6e-8bf0-311b962799ed",
                    "attempt": "1 of 1", "flags": ""},
     "back_view":  {"file": "stryde_refs/product_back.jpg", "job_id": "7921dfdf-9bda-4599-a861-9234a30b961f",
@@ -785,9 +790,13 @@ RULINGS = {
         "the lower body only just onto the top of the shin. Applies to every bent-knee worn "
         "beat (PLACE_BENT, NEG_BENT) and to PLACEMENT_REFERENCES['bent'].",
     "held_on_pad":
-        "LOCKED V7.49.19 (user). Whenever the product is held, the grip is on the pad: fingers flat "
-        "behind the shell on its inner pad, thumb on the pad at the lower edge. Never by the band, "
-        "never by the slides, nothing across the front face. Prompts say 'the pad' / 'inner pad', "
+        "LOCKED V7.49.19, made realistic V7.49.20 (user). Whenever the product is held, the grip is "
+        "on the pad, the way a person really holds a strap: a relaxed pinch at the bottom edge -- "
+        "thumb in front on the edge below the wordmark, four fingers behind on the inner pad with "
+        "their tips hidden, wrist loose. Nothing above the shell's top edge (peaks and notch clear). "
+        "The hand is inside the ring, so the band falls slack around the wrist -- physically right, "
+        "never prompted away. Never a flat "
+        "palm, never by the band, never by the slides, never across the wordmark. Prompts say 'the pad' / 'inner pad', "
         "never 'silicone' (UNSETTLED['inner_face_script'] -- advertiser-stated, and the word renders "
         "the soft glossy fake).",
     "fit_not_adjustment":
@@ -1253,7 +1262,8 @@ def _verify_v7490():
         for f in PRODUCT_SET_ATTACH[k]:
             if f not in PRODUCT_PHOTOS:
                 fails.append("product set %s attaches an unregistered photo: %s" % (k, f))
-    if "holds it by the pad" not in PRODUCT_SET_HELD or "never on the band" not in PRODUCT_SET_HELD:
+    if "holds it by the pad" not in PRODUCT_SET_HELD or "never on the band" not in PRODUCT_SET_HELD.lower() \
+            or "natural pinch" not in PRODUCT_SET_HELD or "Nothing rises above the shell's top edge" not in PRODUCT_SET_HELD:
         fails.append("held frame lost the V7.49.19 grip-on-the-pad rule")
     if "silicone" in PRODUCT_SET_HELD.lower():
         fails.append("held prompt names silicone -- renders the shell as the soft fake")
