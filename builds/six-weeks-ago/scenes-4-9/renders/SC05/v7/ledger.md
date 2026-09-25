@@ -42,3 +42,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 26 | Insert, high three-quarter from Margaret's side: Barbara's fingertip at the strap's peak under her kneecap, "It changes where the weight lands." | 4bf2798d-3f4d-4ee0-8fef-6f508e71ec45 (edit of 18) | APPROVED (option B) |
 | – | Frame 27 tries 81dd5d1b ("time out" T gesture) / a71d0814 (busy gesture) | – | REJECTED / not chosen |
 | 27 | Barbara waist-up, stronger three-quarter: fingertip into open palm, "The pad presses on that one spot…" | 89b84687-0dfb-4eb3-a73d-d82f2f7be34c (edit of 23) | APPROVED (option C) |
+| – | Frame 28 tries 35c180f5 (Barbara earrings, face and room drift) / f5e8e840 (Margaret looks into lens) | – | REJECTED |
+| 28 | Low diagonal two-shot across the table corner: Barbara "It catches the weight… Thirty four percent less strain, every step."; Margaret listening | b8087ae9-e4de-48f0-861c-3daeaf7b0edc (edit of 15) | APPROVED (option A) |
