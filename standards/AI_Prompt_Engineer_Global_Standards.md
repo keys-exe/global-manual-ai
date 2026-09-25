@@ -1956,8 +1956,8 @@ FORMAT / TOOLS / CAST NOTES / NOTES: <optional>
 | File | How it is recognised | Formats |
 |---|---|---|
 | Inspo video(s) | any video file; a name containing `inspo` is primary, else the first alphabetically | `.mp4` `.mov` `.webm` `.m4v` |
-| Script | a document with `script` in its name; **title on the first line** | `.docx` `.pdf` `.txt` `.md` |
-| Product Sheet | a document with `product` or `sheet` in its name | `.docx` `.pdf` `.txt` `.md` |
+| Script | a document with `script` in its name — or, failing that, the only document left unsorted (reported as inferred); **title on the first line** | `.docx` `.pdf` `.txt` `.md` |
+| Product Sheet | a document or `.py` sheet with `product` or `sheet` in its name | `.docx` `.pdf` `.txt` `.md` `.py` |
 | Product images | any image file | `.jpg` `.png` `.webp` `.heic` |
 
 **The agent runs `scripts/fetch_drive.py <BUILD> <link>`**: it downloads the folder to `builds/<BUILD>/intake/`, sorts every file by the table, extracts document text, and runs the §42 Part 1 instruments on every inspo video. It then reports, before absorbing anything: what it found, what it could not sort, any missing part, and any document that read as empty (a scanned PDF). **A missing required part is the one question the intake may ask.** Native Google Docs in the folder are unverified; saving the script and sheet as `.docx` or `.pdf` is the safe route.

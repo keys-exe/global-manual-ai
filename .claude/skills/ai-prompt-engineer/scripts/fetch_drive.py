@@ -25,6 +25,7 @@ HERE = Path(__file__).parent
 VIDEO = {".mp4", ".mov", ".webm", ".m4v"}
 IMAGE = {".jpg", ".jpeg", ".png", ".webp", ".heic"}
 DOC = {".txt", ".md", ".docx", ".pdf"}
+SHEET_CODE = {".py"}  # the Appendix B / E9 product_sheet.py
 
 
 def to_text(path):
@@ -65,15 +66,24 @@ def main():
             sorted_["product_images"].append(p)
         elif ext in DOC and "script" in name:
             sorted_["script"].append(p)
-        elif ext in DOC and ("product" in name or "sheet" in name):
+        elif ext in DOC | SHEET_CODE and ("product" in name or "sheet" in name):
             sorted_["product_sheet"].append(p)
         else:
             sorted_["unsorted"].append(p)
+    # A script named after the ad title: exactly one unsorted document and no script -> script
+    inferred = []
+    docs_left = [p for p in sorted_["unsorted"] if p.suffix.lower() in DOC]
+    if not sorted_["script"] and len(docs_left) == 1:
+        sorted_["script"].append(docs_left[0])
+        sorted_["unsorted"].remove(docs_left[0])
+        inferred.append(f"script <- {docs_left[0].name} (only unsorted document)")
     sorted_["inspo"].sort(key=lambda p: ("inspo" not in p.stem.lower(), p.name.lower()))
 
     texts = {}
     for key in ("script", "product_sheet"):
         for p in sorted_[key]:
+            if p.suffix.lower() in SHEET_CODE:
+                continue  # read as code, not extracted
             t = to_text(p)
             out = p.with_name(p.name + ".extracted.txt")
             out.write_text(t or "", encoding="utf-8")
@@ -91,6 +101,7 @@ def main():
     report = {
         "status": "OK" if not (missing or unreadable) else "MISSING_PARTS",
         "missing": missing,
+        "inferred": inferred,
         "unreadable_documents": unreadable,  # 0 chars: scanned PDF or empty file — ask for .docx/.txt
         "files": {k: [str(p) for p in v] for k, v in sorted_.items()},
         "primary_inspo": str(sorted_["inspo"][0]) if sorted_["inspo"] else None,
