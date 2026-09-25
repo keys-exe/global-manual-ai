@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.59.1 — supersedes all prior versions.** *(strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.59.2 — supersedes all prior versions.** *(the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -2637,6 +2637,16 @@ Both run modes (E0). **Manual:** the agent delivers every step's prompt, text an
 | 11 | **Upload the avatar image** | HeyGen asset upload → photo avatar | The step-1 image, or the matching look image for each act/location/story day (§14, §30C). One photo avatar per look |
 | 12 | **Split the master** | `ffmpeg`, cut at sentence ends by word timestamps | One audio segment per talking-head beat (§29), each cut between words. B-roll-covered lines stay in the master for the edit and are not rendered |
 | 13 | **Talking heads** | HeyGen, engine **Avatar V**, audio upload, 9:16, 1080p | **Expressiveness on and hand gestures while talking** — see the HeyGen settings below |
+
+### Step 8–9 — the script is spoken verbatim *(locked V7.59.2)*
+
+**The text sent to ElevenLabs is the script's spoken lines, word for word.** No word is added, removed, changed, re-ordered, abbreviated or spelled out differently: "Thirty-four percent" stays "Thirty-four percent". **Never sent:** the title, section headings (Hooks, Body…), reference links, and visual, editor or on-screen notes. The only additions allowed are Eleven v3 audio tags in square brackets, which are not spoken as words.
+
+- **Extract:** `scripts/script_lines.py <script>` keeps the spoken lines and reports every dropped line with its reason (title, heading, reference/link, visual note, bracketed direction), so nothing leaves the script silently.
+- **Lock:** `scripts/tts_budget.py <tagged> --script-lines <lines>` removes the tags and compares word for word. **Any difference is a FAIL, and the text is not sent.**
+- **A script line that looks wrong is flagged to the user, never fixed** (§1 order of authority). That covers a typo, a claim problem (§43A) or a contradiction with the Product Sheet.
+- **Hooks the agent writes are not script.** They are voiced only after the user approves them at step 6, as separate files. They are never merged into the body text.
+- **The budget ladder never touches words.** It removes tags, and as a last step it splits at paragraph ends. It never shortens a line.
 
 ### Step 8–9 — tags and the 5,000-character budget
 
@@ -7456,6 +7466,7 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | Trim — inhales (E11, Automatic) | word timestamps vs cut list, then a waveform check at each joint | no cut lands inside a word; no audible click at the joint (waveform zero-cross ± 10 ms) | AUTO-ASSIST | Widen the padding by 40 ms and re-trim; a cut inside a word is TRIM_FAIL |
 | Film voice master (§24I) | ffprobe duration + codec vs the source clip's audio stream; one-speaker listen | identical duration and codec (stream copy — no edit); neutral affect | AUTO + HUMAN | Regenerate the clip; never edit the audio |
 | Clone source (§22U steps 3–5) | duration + silencedetect on the step-5 file | ≥ 30.0s; no silence > 0.4s; `atempo` 1.2 logged | AUTO | Re-loop; a source under 30s is never uploaded |
+| TTS verbatim (§22U step 8) | `tts_budget.py --script-lines`: tags stripped, word-for-word compare against `script_lines.py` output | identical word sequence; title, headings, links and notes absent | AUTO | Rebuild the tagged text from the extracted lines; never send a FAIL |
 | TTS request length (§22U step 9) | character count of the full request, tags included | ≤ 5,000 | AUTO | Budget ladder, in order; never truncate the script |
 | TTS master (§22U step 10) | transcript vs script diff; the four-criterion read | every word present, in order; human, not narrator; no artefacts | AUTO-ASSIST + HUMAN | Next take; all four fail → regenerate with fewer tags |
 | HeyGen call (§22U step 13) | call params | engine `avatar_v` (or the logged fallback), `9:16`, `1080p`, uploaded audio, `motionPrompt` present | AUTO | Resubmit with the params fixed |
@@ -7695,6 +7706,18 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 ---
 
+# CHANGELOG — V7.59.1 → V7.59.2 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **22U** | **Script spoken verbatim (locked).** The TTS text is the spoken lines only, word for word — no title, headings, links or visual notes. `script_lines.py` extracts the lines and reports every drop; `tts_budget.py --script-lines` blocks any difference. Script errors are flagged, not fixed. Agent-written hooks are voiced separately, and only after approval |
+| E1 | TTS verbatim check |
+| Files | `scripts/script_lines.py`; `tts_budget.py` verbatim lock |
+
+**Origin:** user rule — never change the script; nothing added, nothing removed, no titles or visuals.
+
+---
+
 # CHANGELOG — V7.59.0 → V7.59.1 *(cut authorised)*
 
 | § | Change |
@@ -7705,19 +7728,6 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | Files | `scripts/kie.py` |
 
 **Origin:** user decision — use the Kie AI API.
-
----
-
-# CHANGELOG — V7.58.1 → V7.59.0 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **5** | **Connector routing, strict (new).** Higgsfield for images, the Kling connector for Kling, Kie AI (connector "Higgsless") for Seedance 2.5. Higgsfield out of credits → images to Kie (Nano Banana; GPT Image 2 stands in for Sunburst), logged, no switch back. Nothing else falls back. Kie references must be public URLs |
-| **22V** | **Image verdict (new).** The agent judges every image on six questions — the line first — and ships USE or REGENERATE with a named fix. Two regenerations per fault, then the user |
-| 18B, E9 | Drive output tree: parent → brand → task → `OUTPUT` with eight numbered folders and `OUTPUT.md`; `drive.json` in the repo |
-| E0, E1, E2, E7 | Images leave the always-queued list; image-verdict and routing checks; `IMAGE_REGENERATE`, `IMAGE_FALLBACK`; connector call templates |
-
-**Origin:** user rules — strict connectors with a Kie fallback, the agent as the judge of every image, and output organised in Drive.
 
 ---
 

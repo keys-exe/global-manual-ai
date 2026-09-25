@@ -12,6 +12,11 @@ the budget ladder in order until it fits:
   3. strip every tag
   4. split untagged text at paragraph ends into requests <= limit
 Also flags any tag not in the library or in a banned category.
+
+VERBATIM LOCK (--script-lines LINES.txt, from script_lines.py): with every tag
+removed, the fitted text must be the script's spoken lines word for word — no
+word added, removed or changed, nothing re-ordered. Any difference is a FAIL
+(exit 2) and the text is never sent to ElevenLabs.
 Prints a JSON report; writes the fitted text (parts joined by a line of '=====').
 """
 import argparse, json, re
@@ -66,6 +71,7 @@ def main():
     ap.add_argument("script")
     ap.add_argument("--limit", type=int, default=5000)
     ap.add_argument("--out")
+    ap.add_argument("--script-lines", help="spoken lines from script_lines.py; enables the verbatim lock")
     a = ap.parse_args()
 
     lib = library()
@@ -96,7 +102,16 @@ def main():
     out = Path(a.out) if a.out else Path(a.script).with_suffix(".fitted.txt")
     out.write_text("\n=====\n".join(fitted), encoding="utf-8")
     report["out"] = str(out)
+    if a.script_lines:
+        want = Path(a.script_lines).read_text(encoding="utf-8").split()
+        got = tidy(TAG.sub("", " ".join(fitted))).split()
+        report["verbatim"] = "PASS" if got == want else "FAIL"
+        if got != want:
+            import difflib
+            report["verbatim_diff"] = [d for d in difflib.ndiff(want, got) if d[:1] in "+-"][:40]
     print(json.dumps(report, indent=2))
+    if report.get("verbatim") == "FAIL":
+        raise SystemExit(2)
 
 
 if __name__ == "__main__":
