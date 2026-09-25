@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.28
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.29
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -69,7 +69,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.28"
+VERSION = "7.49.29"
 
 # --------------------------------------------------------------- slots
 
@@ -1170,6 +1170,12 @@ RULINGS = {
     "pad_line_shows_back":
         "LOCKED V7.49.28 (user): a line about the pad inside ('Inside, a silicone pad...') is covered "
         "by the BACK of the shell turned to the lens (PAD_BACK_SHOT), then the mechanism.",
+    "claims_confirmed":
+        "V7.49.29 (user): every claim in the Identity Callout script is confirmed and advertiser-held -- "
+        "17x bodyweight, three years with orthopaedic surgeons, the silicone pad, 34% less strain, "
+        "bone on bone / arthritis / cartilage / meniscus, recommended by surgeons, 200,000 wearers, "
+        "sixty-day money-back guarantee, Buy 1 Get 1 Free. Numbers and terms are still post overlays "
+        "(§17); 'silicone' still never enters a prompt.",
     "held_not_locked":
         "LOCKED V7.49.23 (user): the held pose is NOT locked -- there are many right ways to hold it. "
         "Pick from HELD_GRIPS per beat and vary them across a build; product_held.jpg is one example "
@@ -2064,9 +2070,15 @@ British, roughly 55–80. Cast to the buyer, balanced across men and women, with
 | Rendering size: shell ~12 cm × ~5 cm, band ~2.5 cm (`SIZE_LOCK`) | Derived | Proportions measured on `front.webp` (V7.49.21); absolute size from Tier-3 anatomy. Not advertiser-held — replace with supplied dimensions. Never stated on screen. (The V7.49.13 "band about 2 inches" category figure is retired.) |
 | Adult patella about 4–5 cm wide; tendon 4–5 cm from inferior pole to tibial tuberosity | 3 | Anatomical anchor, used for scale reasoning only, never as a claim |
 | Clinical placement "just below the kneecap"; one manufacturer specifies about 2 inches below | 3 | Third-party guidance. Compatible with the contact phrasing — the top edge touches the pole while the body covers the upper tendon |
-| 34% strain figure · surgeon recommendations · volume claims | 3 | Generate normally as scripted creative. Verification is separate and only on explicit request; exact readable numerals may be POST-ASSIST |
+| Every step puts **17× bodyweight** through the spot below the kneecap | **User-confirmed V7.49.29** | Advertiser-held. The number is a post overlay, never generated (§17) |
+| **Three years to build with orthopaedic surgeons** | **User-confirmed V7.49.29** | Advertiser-held. Surgeon cast per §19B |
+| Inside, a **silicone pad** catches the force | **User-confirmed V7.49.29** | The material is now advertiser-held. Rendering rule unchanged: prompts say "the pad", never "silicone", because the word renders the soft glossy fake (§10, `RULINGS['held_on_pad']`) |
+| **Sports scientists measured 34% less strain** every step | **User-confirmed V7.49.29** | Advertiser-held. 34% is a post overlay; no screen with numerals is generated (§10) |
+| Built for bone on bone, arthritis, worn cartilage, meniscus | **User-confirmed V7.49.29** | Advertiser-held |
+| **Recommended by orthopaedic surgeons** | **User-confirmed V7.49.29** | Advertiser-held. Surgeon cast per §19B |
+| **Worn by over 200,000 people** | **User-confirmed V7.49.29** | Advertiser-held. The number is a post overlay |
 | **Buy 1 Get 1 Free — always** | User-confirmed V7.49.24 | Every offer, box and "what's included" beat shows two units (Standards §9 pair-pack carve-out). The offer text is added in the edit, never generated (§17) |
-| Sixty-day guarantee | — | Unconfirmed by the advertiser. Generate normally as simulated promotional creative; verify exact commercial terms only when explicitly requested |
+| **Sixty-day money-back guarantee** | **User-confirmed V7.49.29** | Advertiser-held. Terms shown in the edit, never generated |
 
 ---
 
