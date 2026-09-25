@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.17
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.18
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -25,6 +25,7 @@ USE
     python3 stryde_product_sheet.py --check f... score frames against RATIOS
     python3 stryde_product_sheet.py --refs       score the supplied product photos
     python3 stryde_product_sheet.py --worn-refs  print the three worn-reference T2I prompts
+    python3 stryde_product_sheet.py --product-set print the five product-set T2I prompts
 
     from stryde_product_sheet import PLACE_LOCK, fill
     fill(PLACE_LOCK, side="right")
@@ -59,7 +60,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.17"
+VERSION = "7.49.18"
 
 # --------------------------------------------------------------- slots
 
@@ -353,6 +354,114 @@ WORN_REF_ATTACH = {
     "rear":  ("back.webp", "front.webp"),
     "bent":  ("three_quarter_b.jpg", "front.webp"),
 }
+
+
+# --- product set (V7.49.18) ---------------------------------------------
+# Fills the gaps in PRODUCT_PHOTOS: a matched three-quarter pair, a side
+# profile, the product held in one hand (§9A), and a hardware close-up.
+# front.webp and back.webp stay the product's identity and are never
+# regenerated. Studio frames match the supplied photos' register; the held
+# frame is Mode 1 phone capture (§9A: a product in a hand is never a catalogue photo).
+PRODUCT_SET_STUDIO = (
+"Product photograph, vertical 9:16, on a plain seamless white background with soft even light from above "
+"and the front, the product floating with a soft grey shadow on the ground below it, exactly the lighting and "
+"background of the attached product photos, sharp focus across the whole object, no props and no added text "
+"or graphics.")
+
+PRODUCT_SET_RING = (
+"The band is closed in a loop behind the shell exactly as in the product photos, standing open as a round "
+"ring as if around an invisible leg, the band's tail folded back through each chrome slide and lying flat.")
+
+PRODUCT_SET_VIEWS = {
+    "tq_left": ("Seen three-quarter from the front left, about forty-five degrees: the shell's front face, both "
+                "peaks, the notch and the wordmark read, the left chrome slide nearest the camera, the band "
+                "curving away behind to the right, the far slide just visible at the far end of the shell."),
+    "tq_right": ("Seen three-quarter from the front right, about forty-five degrees: the shell's front face, both "
+                 "peaks, the notch and the wordmark read, the right chrome slide nearest the camera, the band "
+                 "curving away behind to the left, the far slide just visible at the far end of the shell."),
+    "profile": ("Seen exactly from the side, edge-on to the shell: the shell reads as a rigid curved plate bending "
+                "around the ring, the near peak rising at its top edge, the near chrome slide facing the camera "
+                "with its three dotted chevrons, the band continuing round behind as a ring with the two keeper "
+                "loops on its outer face at the back."),
+    "macro": ("Close-up filling the frame with one end of the strap: the matte-black end of the shell, the brushed "
+              "chrome slide inset flush into it with its three engraved dotted chevrons crisp, and the black "
+              "coarse-knit elastic band threading through the slide and folding back on itself, the textured "
+              "weave resolved stitch by stitch, the band's edges straight."),
+}
+
+PRODUCT_SET_HELD = (
+"Vertical 9:16 phone photo, close, of an adult's right hand holding the strap at chest height in a lived-in "
+"living room, the room soft and out of focus behind, daylight from a window to one side. One hand holds it from "
+"underneath, the shell's lower edge resting across the fingers with the thumb at its outer edge, fingers clear "
+"of the wordmark and clear of the chrome slides. The shell's front face is toward the lens, the wordmark "
+"horizontal and readable, both chrome slides catching hard specular highlights, the closed band hanging down "
+"below the hand with its own weight, its tail visible. The hand is still and simply holding it. Real "
+"unretouched skin on the hand of an adult of about sixty: visible pores and fine lines across the knuckles, "
+"faint veins on the back of the hand, short clean nails.")
+
+# T2I geometry guard for the set (HOLD_PROD is written for I2V).
+PRODUCT_SET_GEOM = (
+"The shell is rigid and keeps the exact geometry of the product photos: same silhouette, same two matching "
+"peaks of equal height, same notch depth and width, same band width, same slide and wordmark positions, the "
+"wordmark spelled stryde, never bent, flexed or stretched from any angle.")
+
+# Generated product set, V7.49.18. Agent verdicts per §22V; awaiting the
+# user's lock. Model passed nano_banana_pro, logged nano_banana_2 (routing fault).
+PRODUCT_SET_STATUS = "AGENT USE V7.49.18 -- awaiting user lock"
+PRODUCT_SET_REFS = {
+    "tq_left":  {"file": "stryde_refs/product_tq_left.jpg", "job_id": "0cdf393f-6525-4f0e-a52b-728fda2410dd",
+                 "attempt": "1 of 1", "flags": ""},
+    "tq_right": {"file": "stryde_refs/product_tq_right.jpg", "job_id": "1794fcb5-9307-4d17-9138-a73481604fd2",
+                 "attempt": ("3 of 3 -- a783c579 and 9e92a908 REGENERATE Q2 (V notch, crown peaks, face-mounted "
+                             "slide); 3 = tq_left mirrored (media 182f9710) and re-rendered with the wordmark "
+                             "reading correctly"),
+                 "flags": "wordmark reads slightly left of the notch at this yaw"},
+    "profile":  {"file": "stryde_refs/product_profile.jpg", "job_id": "0b58a185-987e-4f71-97f6-0493ce15f17e",
+                 "attempt": ("3 of 3 -- 3e404d2e and fcb96952 REGENERATE Q2 (slot notch / slab shell, "
+                             "face-mounted slide); 3 = tq_left turned to about seventy degrees"),
+                 "flags": "near peak reads low from the side"},
+    "macro":    {"file": "stryde_refs/product_macro.jpg", "job_id": "8a9b0c5d-d3d7-496a-a557-0437c94c9579",
+                 "attempt": "2 of 3 -- 42629d4f REGENERATE Q2 (invented moulded frame, sideways chevrons)",
+                 "flags": "strap tilted on the diagonal"},
+    "held":     {"file": "stryde_refs/product_held.jpg", "job_id": "930e3245-ad43-4bd2-902a-e22d66c77f29",
+                 "attempt": "2 of 3 -- 86093b25 REGENERATE Q2 (flat rectangular shell, no peaks)",
+                 "flags": "the bottom keeper loop reads slightly like a clip"},
+}
+# Retired V7.49.18: three_quarter_a.jpg -- its wordmark contradicts front.webp.
+# Replaced by PRODUCT_SET_REFS['tq_left'] / ['tq_right'].
+
+# Re-roll anchor (V7.49.18): the first product-set pass drew invented shells on
+# every view except tq_left (0cdf393f, USE). Every re-roll attaches that frame
+# FIRST and opens with this sentence.
+PRODUCT_SET_ANCHOR_JOB = "0cdf393f-6525-4f0e-a52b-728fda2410dd"
+PRODUCT_SET_ANCHOR = (
+"The strap is the exact same object as the first attached image -- the same broad low shell with two matching "
+"peaks and a rounded notch between them, the same slim brushed chrome slides inset into the shell's two ends, "
+"the same wordmark, the same black coarse-knit band -- and only the view changes. Nothing about the object is "
+"redesigned.")
+
+PRODUCT_SET_ATTACH = {
+    "tq_left":  ("front.webp", "back.webp", "three_quarter_b.jpg"),
+    "tq_right": ("front.webp", "back.webp", "three_quarter_b.jpg"),
+    "profile":  ("front.webp", "back.webp", "three_quarter_b.jpg"),
+    "held":     ("front.webp", "back.webp"),
+    "macro":    ("front.webp", "back.webp"),
+}
+
+
+def product_set_prompts(anchor=False):
+    """The five product-set T2I prompts (V7.49.18). Nano Banana Pro, 9:16, 2k.
+    anchor=True: re-roll form -- PRODUCT_SET_ANCHOR first, attach PRODUCT_SET_ANCHOR_JOB first."""
+    lead = REF_PROD.replace("the attached reference image", "the attached product photos")
+    if anchor:
+        lead = PRODUCT_SET_ANCHOR + " " + lead
+    out = {}
+    for k, view in PRODUCT_SET_VIEWS.items():
+        out[k] = " ".join((PRODUCT_SET_STUDIO, lead + " a single unit.", PRODUCT_SET_RING, view, PRODUCT_SET_GEOM))
+    out["held"] = " ".join((PRODUCT_SET_HELD, lead + " a single unit.", PRODUCT_SET_RING.replace(
+        "standing open as a round ring as if around an invisible leg", "hanging as a closed loop"),
+        PRODUCT_SET_GEOM, CAP_A, BODY_WHOLE))
+    return out
 
 
 def worn_ref_prompts(side="right"):
@@ -823,6 +932,7 @@ PHRASING_V7482 = (
 )
 
 NEVER_ATTACH = (
+    "stryde_refs/three_quarter_a.jpg -- wordmark on the wrong side of the notch against front.webp; retired V7.49.18",
     "STRYDE_reference_sheet_v7.48.2.png -- SUPERSEDED V7.49.11 by CANONICAL_REFERENCES; its close-front panel taught the tall-peak error",
     "any frame showing more than one unit",
     "any worn frame other than PLACEMENT_REFERENCES on a beat where placement is the claim",
@@ -1097,6 +1207,25 @@ def _verify_v7490():
     for k in ("front", "bent", "rear"):
         if k not in PLACEMENT_REFERENCES or "file" not in PLACEMENT_REFERENCES[k]:
             fails.append("PLACEMENT_REFERENCES missing the %s frame" % k)
+    ps = product_set_prompts()
+    if set(ps) != set(PRODUCT_SET_ATTACH):
+        fails.append("product set prompts and attachments disagree")
+    for k, v in ps.items():
+        if "[" in v:
+            fails.append("product set %s left a slot unfilled" % k)
+        for bad in RETIRED_PHRASINGS:
+            if bad in v.lower() and bad not in NEG_ONLY:
+                fails.append("product set %s carries retired phrasing: %r" % (k, bad))
+        for f in PRODUCT_SET_ATTACH[k]:
+            if f not in PRODUCT_PHOTOS:
+                fails.append("product set %s attaches an unregistered photo: %s" % (k, f))
+    if "clear of the wordmark" not in PRODUCT_SET_HELD or "One hand" not in PRODUCT_SET_HELD:
+        fails.append("held frame lost the §9A grip rules")
+    for k, v in PRODUCT_SET_REFS.items():
+        if k not in PRODUCT_SET_ATTACH or not v.get("job_id"):
+            fails.append("product set ref %s unregistered" % k)
+    if any("three_quarter_a.jpg" in files for files in PRODUCT_SET_ATTACH.values()):
+        fails.append("retired three_quarter_a.jpg is still attached")
     if not PLACEMENT_REFERENCES_STATUS.startswith("LOCKED"):
         fails.append("worn placement references are not locked")
     if [PLACEMENT_REFERENCES[k]["job_id"][:8] for k in ("front", "bent", "rear")] != \
@@ -1725,6 +1854,14 @@ if __name__ == "__main__":
         for k, v in worn_ref_prompts(side).items():
             print("=== WORN-REF-%s · nano_banana_pro · 9:16 · 2k · %d chars · attach: %s"
                   % (k.upper(), len(v), ", ".join(WORN_REF_ATTACH[k])))
+            print(v)
+            print()
+        sys.exit(0)
+
+    if a[0] == "--product-set":
+        for k, v in product_set_prompts().items():
+            print("=== PRODUCT-%s · nano_banana_pro · 9:16 · 2k · %d chars · attach: %s"
+                  % (k.upper(), len(v), ", ".join(PRODUCT_SET_ATTACH[k])))
             print(v)
             print()
         sys.exit(0)
