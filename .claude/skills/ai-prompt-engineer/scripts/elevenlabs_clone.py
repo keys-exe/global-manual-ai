@@ -5,12 +5,14 @@ Needs ELEVENLABS_API_KEY in the environment (an environment secret; never pasted
 The ElevenLabs connector has no clone call, so this is the clone route.
 
   elevenlabs_clone.py check                               -> plan, IVC allowed, free voice slots
-  elevenlabs_clone.py clone FILE --name KEYWORD [--min 30] [--no-denoise]
+  elevenlabs_clone.py clone FILE --name KEYWORD [--character FIRSTNAME] [--min 30] [--no-denoise]
   elevenlabs_clone.py get VOICE_ID
   elevenlabs_clone.py delete VOICE_ID
 
 clone runs `check` first, refuses a source under --min seconds (E1: a source under
-30s is never uploaded), uploads with remove_background_noise on, then reads the
+30s is never uploaded), refuses a name already on the account (§22U step 7: a shared
+keyword takes the character's first name — with --character the name becomes
+KEYWORD-FIRSTNAME; still taken = refused), uploads with remove_background_noise on, then reads the
 voice back to confirm it exists. FILE is the step-5 <Keyword>_clone_source.mp3.
 Every command prints JSON. Exit 0 = success, 2 = refused / check failed, 1 = error.
 
@@ -56,6 +58,13 @@ def subscription():
     }
 
 
+def taken(name):
+    """Voice names on the account matching `name` (case-insensitive, exact)."""
+    voices = call("GET", "/voices").get("voices", [])
+    return [{"voice_id": v["voice_id"], "name": v["name"], "category": v.get("category")}
+            for v in voices if v.get("name", "").strip().lower() == name.strip().lower()]
+
+
 def check_ok(c):
     return bool(c["can_use_instant_voice_cloning"]) and c["free_voice_slots"] > 0 \
         and c["voice_add_edits_left"] > 0
@@ -76,6 +85,19 @@ def cmd_clone(a):
     if not check_ok(c):
         print(json.dumps({"status": "REFUSED", "reason": "account cannot clone", "check": c}, indent=2, ensure_ascii=False))
         sys.exit(2)
+    name = a.name
+    clash = taken(name)
+    if clash and a.character:
+        name = f"{a.name}-{a.character}"
+        clash = taken(name)
+    if clash:
+        print(json.dumps({"status": "REFUSED",
+                          "reason": f"voice name '{name}' is already on the account (§22U step 7)",
+                          "existing": clash,
+                          "fix": f"add the character's first name: --character <FirstName> -> {a.name}-<FirstName>"
+                                 if not a.character else "pick a different keyword from the script title"},
+                         indent=2, ensure_ascii=False))
+        sys.exit(2)
     secs = duration(src)
     if secs < a.min:
         print(json.dumps({"status": "REFUSED", "reason": f"source {secs:.2f}s < {a.min}s (§22U step 5)",
@@ -85,7 +107,7 @@ def cmd_clone(a):
     # multipart upload through curl (same route as kie.py upload)
     out = subprocess.run(["curl", "-sS", "-m", "300", "-X", "POST", f"{API}/voices/add",
                           "-H", f"xi-api-key: {key()}",
-                          "-F", f"name={a.name}",
+                          "-F", f"name={name}",
                           "-F", f"files=@{src}",
                           "-F", f"remove_background_noise={'false' if a.no_denoise else 'true'}",
                           "-F", f"description={a.description}"],
@@ -127,6 +149,7 @@ def main():
     p = sub.add_parser("clone")
     p.add_argument("file")
     p.add_argument("--name", required=True, help="voice name: one keyword from the script title (§22U step 7)")
+    p.add_argument("--character", help="character's first name, added when the keyword is taken")
     p.add_argument("--min", type=float, default=30.0)
     p.add_argument("--no-denoise", action="store_true")
     p.add_argument("--description", default="§22U clone")
