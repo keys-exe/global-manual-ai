@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.57.0 — supersedes all prior versions.** *(the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.58.0 — supersedes all prior versions.** *(the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -1935,6 +1935,41 @@ DET steps ship their checks with the deliverable — reconciliation lines, count
 ---
 
 
+## 18B. Intake Pack — steps 1 and 2 in one message *(new V7.58.0)*
+
+**Everything steps 1 and 2 need arrives in one message** — the Intake Pack. The agent then runs steps 1–5 without a question, as one opening delivery (§18), and goes straight on to the voice route. The template lives at `builds/INTAKE_TEMPLATE.md`; the user copies it, fills it, and sends it as one message.
+
+| Field | Content | Required |
+|---|---|---|
+| `BUILD` | A short build name — the folder under `builds/` | yes |
+| `MODE` | 1 Realistic · 2 3D Pixar · 3 Claymation · 4 Realistic Film · 5 Pixar Film. **Naming 4 or 5 here is the explicit instruction §2 requires** | yes |
+| `FORMAT` | UGC Ad · Short VSL · Long VSL · Narrated B-roll · AI Drama VSL. Blank → §44 default 11 | no |
+| `RUN` | `MANUAL` or `AUTOMATION`. **`AUTOMATION` is the explicit call (E0)**; blank or anything else → Manual (§44 default 83) | no |
+| `TOOLS` | Video model and platform, where not the §44 defaults | no |
+| `INSPO` | One link per line (TikTok, Instagram, YouTube, Drive, Dropbox, or a file already in `builds/<BUILD>/intake/`). First link is the primary reference; the rest are secondary (§42) | yes |
+| `SCRIPT` | Pasted whole, title on the first line — **the title supplies the §22U voice-name keyword** | yes |
+| `PRODUCT` | Product name, what it is, and reference image links — or `SHEET: products/<name>` where a Product Sheet exists | yes |
+| `CAST NOTES` | Only what must be held — age band, sex, a named character. Everything else is derived (§19A) | no |
+| `NOTES` | Anything else: claims to avoid, offer, CTA, a reference to beat | no |
+
+**Files.** A link the agent can download is enough (`yt-dlp` for social links, direct download otherwise; `scripts/fetch_inspo.py` fetches and runs the §42 Part 1 instruments in one pass). **YouTube links do not download from the cloud container (measured: HTTP 403 from YouTube)** — put YouTube inspos in the intake folder. Where a link will not download — private, expiring, login-walled — the user puts the file in `builds/<BUILD>/intake/` on the working branch (GitHub web upload works from a phone) and names it in `INSPO`. The agent reports any link it could not fetch before absorbing anything; it never absorbs a reference it has not opened.
+
+**What the agent does with it, in order:**
+1. **Fetch and measure** every `INSPO` file — §42 Part 1 instruments run on the file, not on a description of it.
+2. **Steps 1–2** — Absorption Sheet, Product Sheet (created where absent), claims pass, phrase inventory, Mode & Model Lock with `MODE` as given.
+3. **Steps 3–5** — cast sheets (§19), Property Sheet and plate (§30G), Location Sheets and plates (§30C), act map and wardrobe map.
+4. **Voice route, chosen by mode and format:**
+
+| Build | Voice route | Talking-head route |
+|---|---|---|
+| Mode 1, 2, 3 with talking heads | §22U steps 1–10 per speaking character | §22U steps 11–13 — HeyGen Avatar V |
+| Mode 1, 2, 3 all B-roll or narrated | §22U steps 1–10 — the master is the voiceover | none |
+| **Mode 4, Mode 5, AI Drama** | **§24I film voice master — untrimmed** | none — dialogue is Seedance with the master as audio ingredient |
+
+5. **Stop at step 6** — the hooks gate — as always.
+
+**Manual vs Automatic.** In Manual the agent still fetches, measures and absorbs the inspo itself, because absorption is analysis rather than generation. Steps 3–5 and the voice route are then delivered as copy-ready prompts, in the order the user runs them. In Automatic (`RUN: AUTOMATION`), the agent generates every cast sheet, plate and voice itself, with the §19 panel check, the §30C/§30G plate checks and E1 on each one, and stops at the E0 stop points.
+
 ## 18A. Mode & Model Lock *(new V7.50.0)*
 
 **Decided at §18 step 2, from the absorbed script and phrase inventory. Never inferred later, never varied per beat.**
@@ -2521,7 +2556,7 @@ A bookended build (§3A) has generated bookends and TTS narration — two source
 
 ## 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — user workflow; steps marked unverified are not yet measured)*
 
-**Scope:** every build with a speaking character. **Talking-head builds run all thirteen steps. All-B-roll, narrated and film builds (Mode 4, Mode 5, AI Drama) run steps 1–10 only and skip HeyGen** — the saved TTS master is the voiceover, or the audio ingredient on a Seedance dialogue call (E7 `audios_list`).
+**Scope:** every Mode 1, 2 and 3 build with a speaking character. **Talking-head builds run all thirteen steps. All-B-roll and narrated builds run steps 1–10 only and skip HeyGen** — the saved TTS master is the voiceover. **Film builds (Mode 4, Mode 5, AI Drama) do not use §22U** — their voices are §24I film voice masters, kept untrimmed (V7.58.0).
 
 Both run modes (E0). **Manual:** the agent delivers every step's prompt, text and settings as copy-ready blocks; the user runs them. **Automatic:** the agent runs them, except where a step is marked HUMAN.
 
@@ -3304,6 +3339,17 @@ Every Scene Bible states the rhythm of its dialogue: who cuts in, where a line l
 ### 7. The voice master carries who, never how
 
 A Seedance voice ingredient (§4) sets timbre, pitch, accent and pace. **It must be recorded neutral.** A master recorded upset makes every line upset, and a master recorded cheerful undercuts every hard scene. The emotion of each line comes from `DRAMA-DELIVERY`, never from the audio. One neutral master per character, for the whole film.
+
+**How the master is made** *(new V7.58.0)* — per speaking character, after step 3 and before any dialogue shot:
+
+1. **Seedance 2.5, ingredients mode, 720p, 9:16, `duration: 10`.** Pack: the character's face-only reference (§19) first, nothing else. Framing: a plain medium close-up against a quiet, neutral background — this clip exists for its audio.
+2. **Line:** one plain, informational sentence from the script with no emotional charge (a time, a place, a fact), inside the E6 10s budget. Never a line from the crisis or the Turn.
+3. **Delivery:** `VOICE-[CHAR]` verbatim, first (§22D), then: *level, even and unhurried; conversational volume; no emotion coloured into the words; a person reading a sentence aloud to themselves.*
+4. **Keep the audio exactly as generated.** Extract the track with a stream copy (`ffmpeg -i <clip> -vn -c:a copy`). **No trim, no dead-air or inhale cut, no speed change, no loop, no noise reduction, no normalising.** The breaths, the room and the pace are part of who the character sounds like; cutting them hands Seedance a voice that never breathes. The E11 trim pass never runs on a voice master.
+5. **Check, then lock:** one speaker, every word audible, affect neutral (not sad, not bright), no music or effects. A fail is a regeneration, never an edit. The passing file is saved as `<CHAR>_voice_master.<ext>` beside the untouched clip and logged on the constraint sheet.
+6. **Use:** attached in `audios_list` on every Seedance dialogue call where the character speaks (E7), the same file every time.
+
+**Narrator voiceover** (§3B): the narrator's master feeds the §22U clone steps 6–10 with no trim and no speed-up; where the master is under 30s it is looped whole to reach 30s. *(Agent addition — the untrimmed rule extended to the clone source, since the narrator must match the on-screen master.)*
 
 ### 8. §28 in Mode 4
 
@@ -5214,6 +5260,8 @@ Three tiers. Every numeric, clinical or comparative claim in a script is assigne
 **81. Film-mode mechanism → through the world (§24G, §24J).** Mode 4 enters the §12A render through a screen or model in the scene, then may cut inside; the render takes a matched contrast pass, never the LUT's colour shift. Mode 5 uses `ANIM-XRAY` instead.
 
 **82. Film-mode edit → the standing lines (§40).** `FILM-CAPCUT` on Mode 4, `ANIM-CAPCUT` on Mode 5.
+
+**85. Intake → one message, then no questions (§18B).** The Intake Pack carries steps 1 and 2; `MODE` locks the mode, `RUN: AUTOMATION` is the Automatic call, and the voice route follows the mode. **Film voices (Mode 4, 5, AI Drama) are neutral Seedance masters kept exactly as generated — never trimmed, sped or looped** (§24I).
 
 **84. Talking heads → HeyGen Avatar V, driven by the §22U master (§22U steps 11–13).** Expressiveness on, hand gestures via `motionPrompt`, 9:16, 1080p. §36/§38 are the fallback. All-B-roll, narrated and film builds skip HeyGen and use the master as voiceover or audio ingredient.
 
@@ -7271,6 +7319,8 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | **Credit cap** | The user states a per-build credit cap when the run starts; absent one, the agent asks once, before the first call. The balance is read before every batch; a batch that would cross the cap does not submit — the run stops with the spend so far and the cost of what remains |
 | **QA** | Every render is downloaded and checked against E1. AUTO checks run by instrument. **HUMAN checks run as AGENT-FIRST**: the agent looks and judges; a clear pass proceeds, a clear fail takes the E2 remedy, an uncertain read queues for the user. **Always queued for the user regardless of the agent's read:** subject identity across sheets and beats, the §19 avatar sheet, the §28F closure/sync frame check, voice (§22D), and any Mode 4/5 performance or contact-sheet check |
 | **Trim** | Every talking-head clip that passes QA goes through the E11 trim pass before final review |
+| **Intake** | An Intake Pack with `RUN: AUTOMATION` starts the run; cast sheets, the property plate and location plates are generated straight after absorption (§18B) |
+| **Film voices** | §24I voice masters are generated, checked and stored untouched; E11 never runs on them |
 | **Voice pipeline** | §22U runs in order. Step 6 (clone) is HUMAN unless `ELEVENLABS_API_KEY` is set; the run pauses there for the voice ID. The step-10 master is always played to the user before any HeyGen render |
 | **Record** | The ledger is the record. Every reroll, every changed prompt and every trim is logged with its reason; a changed prompt is still a delivered iteration (§16) |
 
@@ -7317,6 +7367,7 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | Seedance ingredient pack | call params vs `ING-MANIFEST` | ≤ 30 files · every file named in the manifest · composition first · no two files contradicting · sheets marked face-only | AUTO-ASSIST | Rebuild the pack in §4 order and drop order; a contradiction is removed, never resolved in prose |
 | Trim — dead air (E11, Automatic) | silence detection, −40 dB, on the trimmed clip | no silence > 0.4s except keep-list IDs; first word ≤ 0.5s; tail ends ≤ 0.3s after the last word | AUTO | Re-trim at tightened thresholds, cap 1; then HUMAN |
 | Trim — inhales (E11, Automatic) | word timestamps vs cut list, then a waveform check at each joint | no cut lands inside a word; no audible click at the joint (waveform zero-cross ± 10 ms) | AUTO-ASSIST | Widen the padding by 40 ms and re-trim; a cut inside a word is TRIM_FAIL |
+| Film voice master (§24I) | ffprobe duration + codec vs the source clip's audio stream; one-speaker listen | identical duration and codec (stream copy — no edit); neutral affect | AUTO + HUMAN | Regenerate the clip; never edit the audio |
 | Clone source (§22U steps 3–5) | duration + silencedetect on the step-5 file | ≥ 30.0s; no silence > 0.4s; `atempo` 1.2 logged | AUTO | Re-loop; a source under 30s is never uploaded |
 | TTS request length (§22U step 9) | character count of the full request, tags included | ≤ 5,000 | AUTO | Budget ladder, in order; never truncate the script |
 | TTS master (§22U step 10) | transcript vs script diff; the four-criterion read | every word present, in order; human, not narrator; no artefacts | AUTO-ASSIST + HUMAN | Next take; all four fail → regenerate with fewer tags |
@@ -7388,6 +7439,7 @@ Words at pace → duration: brisk ≤9 → 5s · unhurried ≤8 → 5s · brisk 
 **I2V (Wan 3.0, first-frame fallback):** image-to-video endpoint → `{prompt, image_url: <seed URL>, resolution: "1080p", aspect_ratio: "9:16", duration: <E6>, enable_audio: false on B-roll, enable_prompt_expansion: false, thinking_mode: false}`. Never `last_image` on a §27A beat — an end frame is a resolved exit.
 **I2V (Seedance 2.5, ingredients — every call, unverified):** omni-reference endpoint → `{prompt: <ING-MANIFEST + prose>, images_list: [<the §4 pack, composition first>], videos_list: [<our own approved clips only>], audios_list: [<voice masters>], resolution: "720p", aspect_ratio: "9:16", duration: <E6, never "auto">}`. **30 files maximum across all three lists.** Audio is generated regardless and discarded on B-roll.
 **Seedance first-frame mode is retired** (V7.54.1). A Seedance call with a start frame and no ingredient pack is a failed generation.
+**Film voice master (Seedance, §24I):** the Seedance ingredients template with `duration: 10`, `images_list: [<face-only sheet>]`, no `audios_list`; then `ffmpeg -i <clip> -vn -c:a copy <CHAR>_voice_master.<ext>`.
 **Voice source (Seedance, §22U step 2):** the Seedance ingredients template above with `duration: 10`, the step-1 image first in `images_list`, no `audios_list`.
 **Clone (ElevenLabs, §22U step 6):** Instant Voice Clone in the ElevenLabs app, or `POST /v1/voices/add` with `ELEVENLABS_API_KEY` → `{name: <keyword>, files: [<step-5 file>], remove_background_noise: true}`. The connector has no clone call.
 **TTS (ElevenLabs connector, §22U step 9):** `creative_generate_speech` → `{model_id: "eleven_v3", voice_id: <clone>, prompt: <tagged script ≤ 5,000>, generations_count: 4}`; poll `creative_get_flow_run_status`. `estimate_only: true` first when the credit cap is tight.
@@ -7532,11 +7584,30 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 **V7.55.1 film-mode beats — visual check, first use.** One `HERO-FILM` reveal insert, one `MECH-SCREEN` push into the §12A render with its matched grade, and one `ANIM-XRAY` beat. Judge: does the insert read as a story moment rather than product photography, does the cut from screen to render feel motivated, and does the X-ray read as friendly and clear while the product still visibly works? Settles by looking.
 
+**§18B Intake Pack — first run.** One pack end to end: does every `INSPO` link download? **Measured V7.58.0: YouTube refuses the video stream from the cloud container (HTTP 403 from YouTube, not the proxy) — YouTube inspos go in `builds/<BUILD>/intake/`.** TikTok and Instagram unverified, and do steps 1–5 ship without a question?
+
+**§24I film voice master — first use.** One character: does the untrimmed 10s master hold the voice across three dialogue shots with different emotions, and does it stay neutral under `DRAMA-DELIVERY`?
+
 **§22U voice pipeline — first production run.** One character through all thirteen steps. Judge: does the clone from a looped ~8s source hold the step-2 voice, does the chosen master pass all four step-10 criteria, and does Avatar V produce hand gestures from `motionPrompt` — or does it reject it and force the Avatar IV fallback? Settles by listening and one look.
 
 **E11 trim pass — first production run.** One talking-head beat through the full procedure. Judge: does every cut land between words, does any joint click, does the entry breath survive at 120 ms, and does the keep-list silence survive at its listed length? Then one A/B of `auto-editor` against the transcription route on the same clip. Settles by instrument plus one listen.
 
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
+
+---
+
+# CHANGELOG — V7.57.0 → V7.58.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **18B** | **Intake Pack (new).** Steps 1 and 2 in one message — build, mode, format, run, tools, inspo links, script, product, cast notes. Links fetched and measured; steps 1–5 run without questions; the voice route follows the mode |
+| **24I** | **Film voice master production (new).** Seedance 10s, face-only sheet, a plain line read neutral; audio extracted by stream copy — never trimmed, sped, looped or cleaned. Narrator clone uses the untrimmed master |
+| 22U | Scope — film builds leave §22U |
+| 44 | New default **85** |
+| E0, E1, E7 | Intake and film-voice rows; the voice-master check; the voice-master call |
+| Files | `builds/INTAKE_TEMPLATE.md` |
+
+**Origin:** user request — send steps 1 and 2 in one go, build avatars and plates from it, and give film characters consistent untrimmed Seedance voices.
 
 ---
 
@@ -7553,21 +7624,6 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | Skills | Tag library reference file; `voice_source.py`, `tts_budget.py` |
 
 **Origin:** user workflow — clone the voice from a Seedance clip, voice it in Eleven v3, drive HeyGen Avatar V with it.
-
----
-
-# CHANGELOG — V7.55.1 → V7.56.0 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **E0** | **Run modes (new).** Manual is the default; Automatic runs only on the explicit call "we will use automation". Stop points: step 6, final review, credit cap, E2 escalations. HUMAN checks run AGENT-FIRST, with identity, avatar sheets, sync, voice and film performance always queued for the user |
-| **E11** | **Trim pass (new).** Dead air and inhales cut on talking-head clips by word timestamps; keep-list from §28G; entry breath kept at 120 ms; originals never overwritten. Unverified on production clips |
-| 1, 44 | Run-mode exception to the deliverable rule; new default **83** — Manual always, Automatic per build on explicit instruction |
-| 17, 18, 28G | Trim moves into the pipeline in Automatic only; Automatic adds the final-review stop and keeps step 6; the §28G silence list is the trim keep-list |
-| E1, E2 | Trim and credit-cap checks; `TRIM_FAIL`, `CREDIT_CAP`, `AGENT_UNSURE` classes |
-| Skills | New `ai-prompt-engineer-auto` skill, loaded only on the explicit call |
-
-**Origin:** user request — a separate Automatic version, called explicitly, with Manual always the default.
 
 ---
 

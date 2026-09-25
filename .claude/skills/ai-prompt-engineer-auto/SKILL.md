@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer-auto
-description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.57.0, Appendix E0/E11, §22U). Load ONLY when the user explicitly says "we will use automation" or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
+description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.58.0, Appendix E0/E11, §18B, §22U, §24I). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
 ---
 
 # AI Prompt Engineer — Automatic run mode
@@ -10,21 +10,21 @@ description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.5
 **This skill adds execution; it changes no craft.** Load `ai-prompt-engineer` first and follow it for every prompt. The master file `standards/AI_Prompt_Engineer_Global_Standards.md` wins over this summary. Before the first call, read these sections by grepping their headings:
 
 ```
-Grep  pattern="^## (E(0|1|2|3|7|9|11)|22U)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
+Grep  pattern="^## (E(0|1|2|3|7|9|11)|18B|22U|24I)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
 ```
 
 ## 1. Start of run — before any credit is spent
 
-1. **Confirm the trigger** in one line: "Automatic run for build `<name>`."
+1. **Confirm the trigger** in one line: "Automatic run for build `<name>`." An Intake Pack with `RUN: AUTOMATION` is the trigger (§18B).
 2. **Credit cap.** Take the user's per-build cap; if none was given, ask once. Read the balance (`balance` / `get_credits` / `query_membership_and_credits` on the routed platform) and record it.
 3. **Build directory** `builds/<build>/` per E9, with `run_ledger.json` (E3) and `renders/` and `trim/` folders. Media stays out of git (`.gitignore` covers it).
 4. **Tool setup** — the container is ephemeral, so install every session:
    ```
-   pip install -q imageio-ffmpeg faster-whisper auto-editor
+   pip install -q imageio-ffmpeg faster-whisper auto-editor yt-dlp
    ```
    `ffmpeg` path: `python3 -c "import imageio_ffmpeg as f; print(f.get_ffmpeg_exe())"`.
-5. Run §18 steps 1–5 exactly as in Manual and ship them as one delivery.
-6. **Voice pipeline first** — for every speaking character, run §22U (section 5 below) before any talking-head beat is rendered.
+5. **Intake → steps 1–5 (§18B).** `python3 .claude/skills/ai-prompt-engineer/scripts/fetch_inspo.py <BUILD> <links…>`; report any FETCH_FAILED link and ask for the file before absorbing. Then absorb, and **generate every cast sheet (§19 panel check), the property plate (§30G) and every location plate (§30C)** — QA each per E1 — and ship steps 1–5 as one delivery.
+6. **Voice route by mode** — Mode 1–3: §22U (section 5 below) before any talking-head beat. **Mode 4, 5, AI Drama: section 6 below** — no §22U, no HeyGen.
 
 ## 2. The loop — per batch
 
@@ -98,7 +98,17 @@ Per speaking character, in order. The master file's §22U table is the rule; thi
 | 12 | Split | Cut the master at sentence ends (word timestamps) into one segment per on-screen talking-head beat |
 | 13 | Render | Upload each segment; `create_video_from_avatar` with `engine: {type: "avatar_v"}`, `audioAssetId`, `9:16`, `1080p`, `motionPrompt` = the beat's gestures. Rejected → Avatar IV + `expressiveness: "high"` + `motionPrompt`, logged. Then QA and E11 trim as normal |
 
-## 6. Never
+## 6. Film voice masters (§24I) — Mode 4, Mode 5, AI Drama
+
+Per speaking character, after the cast sheets pass:
+
+1. Seedance ingredients, 720p, 9:16, `duration: 10`, `images_list: [<face-only sheet>]`, no audio. A plain informational line from the script inside the 10s word budget; delivery = `VOICE-[CHAR]` verbatim, then level, even, unhurried, no emotion.
+2. `ffmpeg -i <clip> -vn -c:a copy builds/<build>/voice/<CHAR>_voice_master.<ext>` — **stream copy. No trim, no E11, no speed change, no loop, no cleanup.** Keep the clip too.
+3. Check: one speaker, every word audible, neutral affect, no music. Fail → regenerate the clip; never edit the audio. Queue the master for the user to hear (voice is always queued).
+4. Attach the same file in `audios_list` on every Seedance dialogue call for that character.
+5. Narrator only: clone the untrimmed master (looped whole to ≥30s if short, no speed-up) and voice the VO in Eleven v3 per §22U steps 6–10.
+
+## 7. Never
 
 - Run without the explicit call, or continue into another build.
 - Skip the step-6 gate or the final review.
@@ -106,3 +116,4 @@ Per speaking character, in order. The master file's §22U table is the rule; thi
 - Pass a render you have not opened.
 - Change a prompt without showing it.
 - Overwrite an original render, or commit media to git.
+- Trim, speed up, loop or clean a film voice master.

@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.57.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.58.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -41,6 +41,8 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs — every character's voice is cloned and voiced in Eleven v3 by the §22U pipeline. Talking heads: HeyGen Avatar V driven by that audio (§22U; §36/§38 are the fallback). Post: CapCut. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
 
+**Intake (§18B).** Steps 1 and 2 arrive in one message — the Intake Pack (`builds/INTAKE_TEMPLATE.md`): BUILD, MODE, FORMAT, RUN, TOOLS, INSPO links, SCRIPT (title first), PRODUCT, CAST NOTES, NOTES. Fetch and measure every link, run steps 1–5 without questions, then the voice route by mode: Mode 1–3 → §22U (HeyGen when there are talking heads); **Mode 4, 5, AI Drama → §24I neutral Seedance voice master, audio kept exactly as generated — never trimmed, sped or looped.** `RUN: AUTOMATION` is the Automatic call; anything else is Manual.
+
 **Build order (§18).** Eight steps: 1 absorb inspo (§42) → 2 absorb script/product + Mode & Model Lock → 3 cast → 4 property & location maps → 5 act map + wardrobe map → 6 hooks one by one (**the only human gate**) → 7 B-roll and body acts → 8 CapCut block. Steps 1–5 ship as one opening delivery.
 
 **Output layout (§16, §16A).** Every prompt in its own block; never clump; never blend prompt text with explanation. Each shipped prompt carries its model string, aspect ratio, resolution/duration and character count. Editor/strategy notes sit outside the prompt block.
@@ -53,10 +55,11 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 - `scripts/voice_source.py` — steps 3–5: trim → ×1.2 → loop to ≥30s → `<Keyword>_clone_source.mp3`
 - `scripts/tts_budget.py` — steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags
-- `scripts/trim.py` — E11 trim pass
+- `scripts/trim.py` — E11 trim pass (never on a §24I film voice master)
+- `scripts/fetch_inspo.py` — §18B/§42 Part 1: downloads INSPO links into `builds/<BUILD>/intake/` and measures duration, aspect, shots, cuts, silences. YouTube returns 403 from the cloud — ask for the file instead
 - `references/eleven_v3_tags.json` — the full Eleven v3 tag library (1,806 tags); `TAG-PALETTE` in §22U is the default subset
 
-Setup per session: `pip install -q imageio-ffmpeg faster-whisper`. In Manual, run these on a clip the user supplies and deliver every other step as copy-ready text and settings.
+Setup per session: `pip install -q imageio-ffmpeg faster-whisper yt-dlp`. In Manual, run these on a clip the user supplies and deliver every other step as copy-ready text and settings.
 
 ## Changing the standards (§0, §34)
 
@@ -108,6 +111,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 17. Post-Production Separation Rule
 - 17A. Motion Graphics Layer *(new — permitted, specified)*
 - 18. Build Order Discipline *(rewritten V7.48.2 — the eight-step flow)*
+- 18B. Intake Pack — steps 1 and 2 in one message *(new V7.58.0)*
 - 18A. Mode & Model Lock *(new V7.50.0)*
 - 19. Character / Locked Avatar Creation Rule *(rewritten V7.49.6 — visual-check confirmed across three sheets, one face type)*
 - 19B. Medical Professional Casting & Recommendation Rule *(new V7.48.6)*
@@ -249,6 +253,6 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 
 **OPEN DECISIONS**
 
-**CHANGELOG — V7.56.0 → V7.57.0 *(cut authorised)***
+**CHANGELOG — V7.57.0 → V7.58.0 *(cut authorised)***
 
-**CHANGELOG — V7.55.1 → V7.56.0 *(cut authorised)***
+**CHANGELOG — V7.56.0 → V7.57.0 *(cut authorised)***
