@@ -8,7 +8,8 @@ VARIANTS.json:
 {
   "body":  {"audio": "voice/body_master.mp3", "script": "work/script.lines.txt",
             "base": "th/body_th.mp4" | null,
-            "broll": [ {"beat": "BR-01", "clip": "...", "phrase": "..."}, ... ]},
+            "broll": [ {"beat": "BR-01", "clip": "...", "phrase": "...", "layout": {...}}, ... ],
+            "punch_in": [ ... ], "th_focus_y": 0.4},          # optional (assemble.py)
   "hooks": [
     {"id": "HK1", "audio": "voice/HK1.mp3", "script": "work/HK1.lines.txt",
      "base": "th/HK1_th.mp4" | null, "broll": [ {"beat": "HK1-01", ...} ]},
@@ -55,6 +56,8 @@ def main():
             "script": [h["script"], body["script"]],
             "base": [h["base"], body["base"]] if body.get("base") and h.get("base") else None,
             "broll": h.get("broll", []) + body["broll"],
+            "punch_in": h.get("punch_in", []) + body.get("punch_in", []),
+            "th_focus_y": body.get("th_focus_y", 0.4),
         }
         if bool(body.get("base")) != bool(h.get("base")):
             results.append({"hook": h["id"], "status": "FAIL",
@@ -74,7 +77,7 @@ def main():
         expect = hook_len + body_len
         got = rep.get("render", {}).get("duration_s")
         body_beats = {b["beat"] for b in body["broll"]}
-        body_part = [(s["beat"], round(s["start"] - hook_len, 2), round(s["end"] - hook_len, 2))
+        body_part = [(s["beat"], s.get("layout"), round(s["start"] - hook_len, 2), round(s["end"] - hook_len, 2))
                      for s in rep["timeline"] if s.get("beat") in body_beats]
         body_edls.append(body_part)
         ok = rep.get("status") == "PASS" and got is not None and abs(got - expect) <= 2 / 30

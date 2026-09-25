@@ -7,7 +7,14 @@ Usage:
 Downloads each link into builds/<BUILD>/intake/ (yt-dlp for social links, a local
 path is used as-is), then reports per file: duration, resolution, aspect, fps,
 scene cuts (shot count, mean shot length, cut times) and silences at two
-thresholds. Prints JSON. A link that fails to download is reported, never skipped
+thresholds. Saves two frames per shot — just after the cut and mid-shot — to
+builds/<BUILD>/intake/frames/<video>/S01_in.jpg, S01_mid.jpg … and lists them per
+shot, plus contact sheets of one frame per second (sheet_01.jpg …, 6x5 tiles =
+30 seconds each, left to right, top to bottom). The per-second sheets catch what
+scene detection misses: a split-screen or picture-in-picture that appears over a
+held shot changes only part of the frame and does not score as a cut. The agent reads the §42 Part 3A Edit Grammar (how each shot is laid out —
+full-frame, split-screen, picture-in-picture, punch-in, captions) off these frames.
+Prints JSON. A link that fails to download is reported, never skipped
 silently.
 
 Setup (per session): pip install -q imageio-ffmpeg yt-dlp
@@ -60,6 +67,33 @@ def silences(path, db, dur=0.3):
     return [(round(a, 2), round(en[i], 2) if i < len(en) else None) for i, a in enumerate(st)]
 
 
+def shot_frames(path, cut_list, dur, outdir):
+    """Two frames per shot (just after the cut, mid-shot); returns the shot table."""
+    outdir.mkdir(parents=True, exist_ok=True)
+    edges = [0.0] + [c for c in cut_list if 0 < c < dur] + [dur]
+    shots = []
+    for n in range(len(edges) - 1):
+        t0, t1 = edges[n], edges[n + 1]
+        sid = f"S{n + 1:02d}"
+        frames = {}
+        for tag, t in (("in", t0 + min(0.15, (t1 - t0) / 4)), ("mid", (t0 + t1) / 2)):
+            f = outdir / f"{sid}_{tag}.jpg"
+            subprocess.run([FFMPEG, "-hide_banner", "-loglevel", "error", "-y", "-ss", f"{t:.3f}",
+                            "-i", str(path), "-frames:v", "1", "-vf", "scale=540:-2", "-q:v", "3", str(f)])
+            frames[tag] = str(f) if f.exists() else None
+        shots.append({"shot": sid, "t_in": round(t0, 2), "t_out": round(t1, 2),
+                      "len_s": round(t1 - t0, 2), "frame_in": frames["in"], "frame_mid": frames["mid"]})
+    return shots
+
+
+def second_sheets(path, outdir):
+    """One frame per second, tiled 6x5 (30s per sheet)."""
+    subprocess.run([FFMPEG, "-hide_banner", "-loglevel", "error", "-y", "-i", str(path), "-vf",
+                    "fps=1,scale=180:-2,tile=6x5:padding=4:color=white", "-q:v", "3",
+                    str(outdir / "sheet_%02d.jpg")])
+    return sorted(str(p) for p in outdir.glob("sheet_*.jpg"))
+
+
 def main():
     if len(sys.argv) < 3:
         sys.exit(__doc__)
@@ -83,6 +117,8 @@ def main():
             "shot_count": shots, "mean_shot_s": round(dur / shots, 2), "cut_times_s": c,
             "silences_-40dB": silences(path, -40) if has_audio else [],
             "silences_-30dB": silences(path, -30) if has_audio else [],
+            "shots": shot_frames(path, c, dur, dest / "frames" / path.stem),
+            "second_sheets": second_sheets(path, dest / "frames" / path.stem),
         })
     print(json.dumps(out, indent=2))
     sys.exit(0 if all(o["status"] == "OK" for o in out) else 2)
