@@ -374,7 +374,7 @@ def main():
                 parts.append(f"[g][f]overlay={x}:{y}:shortest=1{END}[v]")
         seg = tmp / f"seg{n:04d}.mp4"
         # a source that ends a few frames early holds its last frame, so every segment is exactly `dur`
-        parts.append(f"[v]tpad=stop_mode=clone:stop_duration={dur:.4f}[vo]")
+        parts.append(f"[v]fps={FPS},tpad=stop_mode=clone:stop_duration={dur:.4f}[vo]")
         subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", *inputs, "-filter_complex", ";".join(parts),
                         "-map", "[vo]", "-frames:v", str(round(s["end"] * FPS) - round(s["start"] * FPS)), "-c:v", "libx264", "-crf", "18",
                         "-pix_fmt", "yuv420p", "-r", str(FPS), str(seg)], check=True)
