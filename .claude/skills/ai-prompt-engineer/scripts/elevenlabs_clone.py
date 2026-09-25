@@ -79,7 +79,7 @@ def cmd_clone(a):
     secs = duration(src)
     if secs < a.min:
         print(json.dumps({"status": "REFUSED", "reason": f"source {secs:.2f}s < {a.min}s (§22U step 5)",
-                          "file": str(src)}, indent=2))
+                          "file": str(src)}, indent=2, ensure_ascii=False))
         sys.exit(2)
 
     # multipart upload through curl (same route as kie.py upload)
@@ -107,7 +107,7 @@ def cmd_clone(a):
         "source": str(src),
         "source_s": round(secs, 3),
         "remove_background_noise": not a.no_denoise,
-    }, indent=2))
+    }, indent=2, ensure_ascii=False))
 
 
 def cmd_get(a):
