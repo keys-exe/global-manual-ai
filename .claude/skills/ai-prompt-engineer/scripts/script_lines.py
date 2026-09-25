@@ -2,7 +2,7 @@
 """§22U step 8 — pull the spoken lines out of a script file, verbatim.
 
 Usage:
-  script_lines.py SCRIPT(.docx|.txt|.md|.pdf) [--out LINES.txt]
+  script_lines.py SCRIPT(.docx|.txt|.md|.pdf) [--out LINES.txt] [--visual VISUAL.md]
 
 Keeps every spoken line exactly as written (no word added, removed or changed).
 Drops only what is never spoken:
@@ -13,8 +13,16 @@ Drops only what is never spoken:
   - visual and editor notes: whole lines in [brackets] or (parentheses), or lines
     starting VISUAL / B-ROLL / BROLL / SHOT / SCENE / ON SCREEN / TEXT / SFX /
     MUSIC / NOTE / EDITOR / CAPTION / SUPER
+  - inline [bracketed] notes inside a spoken line (square brackets are never
+    spoken): cut out of the line, the rest of the line kept word for word
 Prints JSON: the kept lines, and every dropped line with the reason, so nothing
 leaves the script silently.
+
+§27F: every visual/editor note, bracketed direction and inline note is also a
+binding visual instruction. They are listed under "visual_notes" (VN01, VN02...),
+each anchored to the spoken line it applies to: the next spoken line, or the
+previous one when the note closes a section. --visual writes them as the starting
+rows of the Visual Instruction Ledger.
 """
 import argparse, json, re, sys
 from pathlib import Path
@@ -23,6 +31,8 @@ NOTE_PREFIX = re.compile(r"^\s*(visual|visuals|b-?roll|shot|scene|on[- ]screen|t
                          r"editor|caption|super|overlay)\b\s*[:\-–]", re.I)
 REF_PREFIX = re.compile(r"^\s*(reference|ref|link|source|inspo)\s*[:\-–]", re.I)
 URL = re.compile(r"https?://|www\.", re.I)
+INLINE = re.compile(r"\s*\[[^\]]*\]\s*")
+VISUAL = {"visual/editor note", "bracketed direction"}
 
 
 def read(path):
@@ -54,9 +64,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("script")
     ap.add_argument("--out")
+    ap.add_argument("--visual")
     a = ap.parse_args()
     raw = read(a.script)
-    kept, dropped, title_done = [], [], False
+    kept, dropped, notes, title_done = [], [], [], False
+    pending = []  # notes waiting for the next spoken line
     for n, line in enumerate(raw, 1):
         if not line.strip():
             continue
@@ -67,13 +79,44 @@ def main():
         why = classify(line)
         if why:
             dropped.append({"line": n, "text": line.strip(), "reason": why})
-        else:
-            kept.append(line.strip())
+            if why in VISUAL:
+                pending.append({"line": n, "text": line.strip(), "kind": why})
+            elif why == "section heading" and pending and kept:
+                for p in pending:  # a note that closes a section belongs to its last line
+                    notes.append({**p, "applies_to": len(kept), "spoken": kept[-1]})
+                pending = []
+            continue
+        s = line.strip()
+        inline = [m.strip() for m in re.findall(r"\[[^\]]*\]", s)]
+        if inline:
+            s = INLINE.sub(" ", s).strip()
+            dropped.append({"line": n, "text": " ".join(inline), "reason": "inline note"})
+            if not s:
+                pending += [{"line": n, "text": t, "kind": "bracketed direction"} for t in inline]
+                continue
+        kept.append(s)
+        for p in pending:
+            notes.append({**p, "applies_to": len(kept), "spoken": s})
+        pending = []
+        notes += [{"line": n, "text": t, "kind": "inline note", "applies_to": len(kept), "spoken": s}
+                  for t in inline]
+    for p in pending:
+        notes.append({**p, "applies_to": len(kept) or None, "spoken": kept[-1] if kept else None})
+    notes.sort(key=lambda x: x["line"])
+    for i, v in enumerate(notes, 1):
+        v["id"] = f"VN{i:02d}"
     text = "\n".join(kept)
     out = Path(a.out) if a.out else Path(a.script).with_suffix(".lines.txt")
     out.write_text(text + "\n", encoding="utf-8")
+    if a.visual:
+        md = ["| ID | Source | Instruction | Applies to (spoken line) | Carried by | Beat ID | Status |",
+              "|---|---|---|---|---|---|---|"]
+        md += [f"| {v['id']} | script L{v['line']} | {v['text']} | {v['applies_to']}: {v['spoken']} | | | open |"
+               for v in notes]
+        Path(a.visual).write_text("\n".join(md) + "\n", encoding="utf-8")
     print(json.dumps({"out": str(out), "spoken_lines": len(kept), "words": len(text.split()),
-                      "chars": len(text), "dropped": dropped, "lines": kept}, indent=2))
+                      "chars": len(text), "dropped": dropped, "visual_notes": notes,
+                      "lines": kept}, indent=2))
 
 
 if __name__ == "__main__":

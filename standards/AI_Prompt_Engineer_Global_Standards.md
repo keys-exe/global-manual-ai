@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.60.7 — supersedes all prior versions.** *(Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.61.0 — supersedes all prior versions.** *(the script's visual instructions are binding — every note on the script is logged in the Visual Instruction Ledger, carried by a named beat or CapCut line, and checked in the image and clip verdicts, §27F; the Loom brief — an optional Loom link sent beside the Drive link, fetched, transcribed and framed by `scripts/fetch_loom.py`, its instructions followed like the script's own, §18C; Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -43,7 +43,7 @@ When two locked things collide, this is the order. Highest wins. **A lower layer
 1. **Reference images** (§7)
 2. **Product Sheet spec** (§8, Appendix B)
 3. **Locked visual and performance standards** (§11, §12A, §15A, §22A–C, §22S, §27A, §28A–E, §30A–B)
-4. **Script**
+4. **Script** — its spoken lines, its visual instructions and the build's Loom brief (§27F, §18C)
 5. **Build Sheet** (§20, §21, Appendix C)
 6. **Locked defaults** (§44)
 
@@ -1922,13 +1922,13 @@ Every step carries a class:
 | # | Step | Class | Carries |
 |---|---|---|---|
 | 1 | **Absorb the inspo video** | DET | The full §42 seven-part protocol → Absorption Sheet. Style Lock set, not proposed. Secondary references contribute named devices only, each recorded position-not-look |
-| 2 | **Absorb script, product, Product Sheet — and lock mode and model** | DET | The `.md` + `.py` pair, created where absent. §43A claims pass — every figure tiered before anything builds against it. **The phrase inventory is built here** (§27B): a mechanical pass over the script as written. **The Mode & Model Lock is written here (§18A)** — mode per act, image model per beat class, read off what the script demands. Every other lock resolved here — camera, format, tools, mechanism claim, declared side |
+| 2 | **Absorb script, product, Product Sheet — and lock mode and model** | DET | The `.md` + `.py` pair, created where absent. §43A claims pass — every figure tiered before anything builds against it. **The phrase inventory is built here** (§27B): a mechanical pass over the script as written. **The Visual Instruction Ledger is opened here (§27F)** — every visual note on the script and every Loom instruction (§18C), each anchored to its spoken line. **The Mode & Model Lock is written here (§18A)** — mode per act, image model per beat class, read off what the script demands. Every other lock resolved here — camera, format, tools, mechanism claim, declared side |
 | 3 | **Cast — everyone who recurs** | DET *(render dependency)* | **Every subject with two or more beats on the step-2 inventory** — the narrator, every named side character, **and every anonymous B-roll subject who recurs** (`S-01`, `S-02`…) — gets a full §19 reference sheet — one prose generation, 9:16, no reference — passed through the §19 panel check before it is attached anywhere. Identity strings locked from what rendered, never from what was prompted (§7 applied to our own output). Ships per sheet: §19A axis table with clearance counts; **speaking characters additionally** get `VOICE-[CHAR]` roster-cleared and a full §20 constraint sheet. One-off subjects are not sheeted (§13). **Sent, then straight on** |
 | 4 | **Property and location maps** | DET | The §30C Location Derivation Pass over the step-2 phrase inventory, **opening with channel C0 — which locations are rooms of one dwelling.** Where two or more are, the **Property Sheet is written and its property plate generated and checked first (§30G)**, before any location plate is built against it. Five-part Location Sheets, §22A lighting profiles reconciled to the property's orientation, plates rendered for **PLATED locations only** — never for INCIDENTAL or **TRAVERSED** ones (§30C 1a), both of which still carry the property plate where they are interiors of the dwelling. Four set-level checks run. **The location set closes here.** **Sent, then straight on** |
-| 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims. **Automatic (V7.60.7): written only after every step-3 sheet and step-4 plate has passed E1**, with identity strings and plate facts read off the renders; B-roll `duration` is `pending-master` until the voice master exists (E4, E6) |
+| 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; **every Visual Instruction Ledger row assigned to the beat or CapCut line that carries it (§27F)**; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims. **Automatic (V7.60.7): written only after every step-3 sheet and step-4 plate has passed E1**, with identity strings and plate facts read off the renders; B-roll `duration` is `pending-master` until the voice master exists (E4, E6) |
 | 6 | **Hooks, one by one** | AC → **HG** | Serial: deliver → generate → first-frame check (§5/§30C/§30E) → confirm → next. Seeds built against plates that already exist. Confirmed renders feed the Scene and Subject Registries as they land. **The only gate** in Manual; in Automatic the agent confirms (E0) |
-| 7 | **B-roll and body acts** | DET | Executing step 5's dispositions in the §30E assembly order — motion arc first, start frame derived, plates attached, strings by register, model routed. `TH`-carried lines get no cutaway on purpose. Each act delivery ends on its §27B reconciliation line |
-| 8 | **CapCut block** | DET | Cover points, J-cuts, designed-silence list, sync triage, motion-graphics layer, supplied-asset cut-ins (§40) — last and separate |
+| 7 | **B-roll and body acts** | DET | Executing step 5's dispositions in the §30E assembly order — motion arc first, start frame derived, plates attached, strings by register, model routed. `TH`-carried lines get no cutaway on purpose. **A beat whose line carries a visual instruction executes that instruction (§27F).** Each act delivery ends on its §27B reconciliation line and its §27F ledger line |
+| 8 | **CapCut block** | DET | Cover points, J-cuts, designed-silence list, sync triage, motion-graphics layer, supplied-asset cut-ins, **every on-screen text, SFX, music and edit instruction from the Visual Instruction Ledger, verbatim** (§40, §27F) — last and separate |
 
 **Mode 4 builds add three artefacts to the same flow, with no extra stops** (§24G–§24H). At step 1 the inspo's look is measured into the Film Look Sheet. At step 2 the script's genre and tone complete it, and it is compiled into `LOOK-[BUILD]` and locked in the Mode & Model Lock. At step 5 the act map is broken into scenes, with one Scene Bible per scene. Steps 6 and 7 then generate **per scene** in a fixed order: master frame, coverage frames, chained frames, the contact-sheet check, and only then video.
 
@@ -1963,6 +1963,7 @@ DET steps ship their checks with the deliverable — reconciliation lines, count
 
 ```
 DRIVE: <folder link>
+LOOM: <Loom link — optional, one per script (§18C)>
 BUILD: <short name>
 MODE: <1–5>
 RUN: MANUAL | AUTOMATION
@@ -1974,6 +1975,7 @@ FORMAT / TOOLS / CAST NOTES / NOTES: <optional>
 ```
 
 **Every field is read once and applied without a follow-up question.**
+- `LOOM` is the build's Loom brief (§18C). It is fetched with the Drive folder and its instructions enter the Visual Instruction Ledger (§27F). **It is optional: no Loom, no question, no flag.**
 - `VOICE` becomes the narrator's `VOICE-[CHAR]` (§22D). That string steers the §22U step-2 voice source, or the §24I film voice master, so the clone and every line inherit it.
 - `HOOKS` sets how many hooks are written, and therefore how many variant videos are delivered (§30H).
 - `CAP` is the E0 credit cap. When it is present, the run never asks for it.
@@ -1989,6 +1991,7 @@ FORMAT / TOOLS / CAST NOTES / NOTES: <optional>
 | Script | a document with `script` in its name — or, failing that, the only document left unsorted (reported as inferred); **title on the first line** | `.docx` `.pdf` `.txt` `.md` |
 | Product Sheet | a document or `.py` sheet with `product` or `sheet` in its name | `.docx` `.pdf` `.txt` `.md` `.py` |
 | Product images | any image file | `.jpg` `.png` `.webp` `.heic` |
+| Loom brief *(optional)* | a video with `loom` in its name — the fallback when the `LOOM` link will not download (§18C) | `.mp4` `.mov` `.webm` |
 
 **The agent runs `scripts/fetch_drive.py <BUILD> <link>`**: it downloads the folder to `builds/<BUILD>/intake/`, sorts every file by the table, extracts document text, and runs the §42 Part 1 instruments on every inspo video. It then reports, before absorbing anything: what it found, what it could not sort, any missing part, and any document that read as empty (a scanned PDF). **A missing required part is the one question the intake may ask.** Native Google Docs in the folder are unverified; saving the script and sheet as `.docx` or `.pdf` is the safe route.
 
@@ -2022,13 +2025,14 @@ Where there is no folder, the same fields travel in one message:
 | `SCRIPT` | Pasted whole, title on the first line — **the title supplies the §22U voice-name keyword** | yes |
 | `PRODUCT` | Product name, what it is, and reference image links — or `SHEET: products/<name>` where a Product Sheet exists | yes |
 | `CAST NOTES` | Only what must be held — age band, sex, a named character. Everything else is derived (§19A) | no |
+| `LOOM` | The build's Loom brief link (§18C) | no |
 | `NOTES` | Anything else: claims to avoid, offer, CTA, a reference to beat | no |
 
 **Files.** A link the agent can download is enough (`yt-dlp` for social links, direct download otherwise; `scripts/fetch_inspo.py` fetches and runs the §42 Part 1 instruments in one pass). **YouTube links do not download from the cloud container (measured: HTTP 403 from YouTube)** — put YouTube inspos in the intake folder. Where a link will not download — private, expiring, login-walled — the user puts the file in `builds/<BUILD>/intake/` on the working branch (GitHub web upload works from a phone) and names it in `INSPO`. The agent reports any link it could not fetch before absorbing anything; it never absorbs a reference it has not opened.
 
 **What the agent does with it, in order:**
-1. **Fetch and measure** every `INSPO` file — §42 Part 1 instruments run on the file, not on a description of it.
-2. **Steps 1–2** — Absorption Sheet, Product Sheet (created where absent), claims pass, phrase inventory, Mode & Model Lock with `MODE` as given.
+1. **Fetch and measure** every `INSPO` file — §42 Part 1 instruments run on the file, not on a description of it. **Fetch the `LOOM` brief** where one is given (§18C).
+2. **Steps 1–2** — Absorption Sheet, Product Sheet (created where absent), claims pass, phrase inventory, **Visual Instruction Ledger (§27F)**, Mode & Model Lock with `MODE` as given.
 3. **Steps 3–5** — cast sheets (§19), Property Sheet and plate (§30G), Location Sheets and plates (§30C), act map and wardrobe map.
 4. **Voice route, chosen by mode and format:**
 
@@ -2041,6 +2045,26 @@ Where there is no folder, the same fields travel in one message:
 5. **Stop at step 6** — the hooks gate — in Manual. Automatic does not stop (E0).
 
 **Manual vs Automatic.** In Manual the agent still fetches, measures and absorbs the inspo itself, because absorption is analysis rather than generation. Steps 3–5 and the voice route are then delivered as copy-ready prompts, in the order the user runs them. In Automatic (`RUN: AUTOMATION`), the agent generates every cast sheet, plate and voice itself, with the §19 panel check, the §30C/§30G plate checks and E1 on each one, and stops at the E0 stop points.
+
+## 18C. Loom Brief — the advertiser's walkthrough *(new V7.61.0)*
+
+**A script may come with a Loom: a screen recording in which the advertiser talks through what they want to see.** Its instructions are followed like the script's own visual instructions (§27F). **The Loom is optional.** A build without one runs exactly as before, with no question and no flag.
+
+**Where it arrives.** The `LOOM:` line of the intake message, beside `DRIVE:` (§18B). One Loom per script. The link must be shared *anyone with the link*. A private or password-protected Loom does not download from the cloud container; the fallback is its MP4 in the Drive folder, named with `loom`.
+
+**How it is read — `scripts/fetch_loom.py <BUILD> <link>`.** The agent never works from a description of a Loom, only from the file:
+1. Downloads the Loom to `builds/<BUILD>/intake/loom/`.
+2. Transcribes the voice with timestamps.
+3. Saves a frame every 5 seconds and at every scene cut. **What is shown matters as much as what is said**: a highlighted script line, a reference clip, a drawing, a pointed-at product.
+4. Writes `loom.md` — one row per spoken segment (`LM01`, `LM02`…) with its time and the frames on screen while it was said.
+
+**What the agent does with it.** It reads `loom.md` and opens the frames. It turns every instruction into a row of the Visual Instruction Ledger (§27F), sourced `Loom LMxx @ m:ss`, anchored to the script line it is about. Talk that gives no instruction (greetings, thinking aloud) is not logged. A preference that covers the whole build ("keep it bright", "no talking head in the body") is logged once, anchored `whole build`, and applied like an `ADJUST` line (§18B).
+
+**Authority.** The Loom sits with the script at layer 4 (§1). It never changes a spoken word: the voice stays verbatim (§22U). It never overrides the reference images, the Product Sheet or a locked standard. A Loom instruction that would is flagged, not followed.
+
+**Loom vs the written script.** Where a Loom instruction and a visual note on the script disagree about the same line: **Manual** — both are shown to the user with a recommendation, and the build waits on that line only. **Automatic** — the Loom wins, since it is the more recent direction, and the conflict is listed in the final report's *Flags* (E0).
+
+**Measured V7.61.0:** a public Loom share link downloaded through `yt-dlp` from the cloud container (27s, 7 HLS fragments), frames extracted, and a spoken test brief transcribed into two timestamped rows. **Unverified:** a production Loom with a long talk-through.
 
 ## 18A. Mode & Model Lock *(new V7.50.0)*
 
@@ -2656,7 +2680,7 @@ Both run modes (E0). **Manual:** the agent delivers every step's prompt, text an
 
 **The text sent to ElevenLabs is the script's spoken lines, word for word.** No word is added, removed, changed, re-ordered, abbreviated or spelled out differently: "Thirty-four percent" stays "Thirty-four percent". **Never sent:** the title, section headings (Hooks, Body…), reference links, and visual, editor or on-screen notes. The only additions allowed are Eleven v3 audio tags in square brackets, which are not spoken as words.
 
-- **Extract:** `scripts/script_lines.py <script>` keeps the spoken lines and reports every dropped line with its reason (title, heading, reference/link, visual note, bracketed direction), so nothing leaves the script silently.
+- **Extract:** `scripts/script_lines.py <script>` keeps the spoken lines and reports every dropped line with its reason (title, heading, reference/link, visual note, bracketed direction), so nothing leaves the script silently. **A dropped note is not discarded**: it is kept out of the voice and goes into the Visual Instruction Ledger (§27F). Inline `[bracketed]` notes inside a spoken line are cut out of it the same way, and the rest of the line stays verbatim.
 - **Lock:** `scripts/tts_budget.py <tagged> --script-lines <lines>` removes the tags and compares word for word. **Any difference is a FAIL, and the text is not sent.**
 - **A script line that looks wrong is flagged to the user, never fixed** (§1 order of authority). That covers a typo, a claim problem (§43A) or a contradiction with the Product Sheet.
 - **Hooks the agent writes are not script.** They are voiced only after they are approved at step 6 — by the user in Manual, by the agent in Automatic — as separate files. They are never merged into the body text.
@@ -2716,7 +2740,7 @@ Judge the four takes in this order: **(1) every word of the script is present an
 
 ### The questions, in order — the first NO is the verdict
 
-1. **Does it show the line?** Read the beat's phrase (§27B) and its function (§30B). The image must show *that* moment: the right action, the right object, the right emotional register (§30F), the right beat of the story. A good image of the wrong moment is a REGENERATE.
+1. **Does it show the line?** Read the beat's phrase (§27B) and its function (§30B). The image must show *that* moment: the right action, the right object, the right emotional register (§30F), the right beat of the story. **Where the line carries a Visual Instruction Ledger row, the image shows that instruction (§27F).** A good image of the wrong moment is a REGENERATE.
 2. **Is the product right?** Shape, colour, placement, orientation, visibility per the Product Sheet (§8, §9, §9D). A wrong product is the most expensive failure in the pipeline.
 3. **Is the body whole?** One head, two arms, two legs, five fingers per visible hand; hidden parts hidden by the frame edge or an object (§27D).
 4. **Does it hold continuity?** Same person as the sheet (§19, §30E), same room as the plate (§30C, §30G), wardrobe for the story day (§14), axis and window side (§30C).
@@ -2741,7 +2765,7 @@ The fix is a named change to the prompt: a clause added, a string restated at fu
 
 ### The questions, in order — the first NO is the verdict
 
-1. **Does it show the line?** The clip performs the beat's phrase and function (§27B, §30B), in the right emotional register (§30F).
+1. **Does it show the line?** The clip performs the beat's phrase and function (§27B, §30B), in the right emotional register (§30F), **and carries out every Visual Instruction Ledger row assigned to it (§27F)**.
 2. **Is the product right in every frame?** It must not morph, swap sides, change size or lose its wordmark across the clip (§8, §9). Product drift that starts halfway through is the typical video failure. The first frame passing proves nothing.
 3. **Is the body whole in every frame?** No extra or merged fingers, no limbs passing through objects, no face melt (§27D).
 4. **Is the motion right?** The §27A arc runs and the clip is never at rest at the cut. Camera per §22B. Physics per §27C and §27E. No frozen run over 0.5s unless the beat is a hold.
@@ -3951,6 +3975,37 @@ Two options, picked per line: **generate at 3s** so the fall is short and the ev
 
 ---
 
+## 27F. Script Visual Instructions — binding *(new V7.61.0)*
+
+**When the script says what to show, the build shows it.** A visual note on the script is the advertiser's direction for that line, not a suggestion. The agent does not replace it with its own idea of a better shot, and does not drop it because the voice pipeline removes it from the spoken text (§22U).
+
+**What counts as a visual instruction:**
+- a line starting `VISUAL`, `B-ROLL`, `SHOT`, `SCENE`, `ON SCREEN`, `TEXT`, `OVERLAY`, `CAPTION`, `SUPER`, `SFX`, `MUSIC`, `NOTE` or `EDITOR`;
+- a whole line in `[brackets]` or `(parentheses)`;
+- a `[bracketed]` note inside a spoken line;
+- every instruction in the build's Loom brief (§18C).
+
+### The Visual Instruction Ledger
+
+`scripts/script_lines.py <script> --visual <ledger.md>` writes the script's notes as the ledger's first rows (`VN01`, `VN02`…), each anchored to the spoken line it applies to. **The anchor rule:** a note applies to the next spoken line; a note that closes a section applies to the line before it; an inline note applies to its own line. The agent checks every anchor against the script's sense, and moves it where the note plainly names another line. The Loom rows (`LM01`…) are added by the agent from `loom.md`.
+
+| ID | Source | Instruction | Applies to | Carried by | Beat ID | Status |
+|---|---|---|---|---|---|---|
+| `VN03` | script L7 | *verbatim note* | spoken line 3 | B-roll · talking head · hook · CapCut text · CapCut SFX/music · CapCut edit · whole build | `B2-04` | open → carried → verified · flagged |
+
+**Carried by** is decided at §18 step 5:
+- **Picture instructions** (what is shown, who, where, the action, the framing) go into the beat's prompt. On a talking-head line with no B-roll, the instruction becomes a B-roll beat for that phrase, or sets the talking head's action and framing where it describes the presenter.
+- **On-screen text, captions and overlays** go into the CapCut block **word for word, with the spelling and figures exactly as written** (§17, §17A). They are never generated inside a frame (§17).
+- **SFX, music and edit instructions** (cut, zoom, pause, speed) go into the CapCut block as their own lines (§40). In Automatic, those the §30H rough cut can carry (a cut point, a hold) are carried there, and the rest stay CapCut lines.
+
+### Rules
+
+1. **Followed as written.** The beat carries the instruction's subject, action, object and framing. Detail the note leaves open is filled by the standards as usual: register, capture, cast, location, wardrobe.
+2. **Higher layers still win (§1).** An instruction that contradicts the reference images, the Product Sheet or a locked standard is **flagged to the advertiser at the step 1–5 delivery with the nearest compliant execution**, and that execution is what is built. Typical cases: a claim the §43A pass blocks, a product shown other than its sheet, a generated brand name or on-screen type (§10A, §17), a real marketplace name.
+3. **Nothing is left open.** Every ledger row ends as `verified` (the beat's verdict passed with the instruction on screen) or `flagged` (with the reason). **An open row at step 8 means the build is not finished.**
+4. **The ledger line.** Every act delivery ends with `§27F: n instructions in this act · n carried · n flagged` beside its §27B reconciliation line.
+5. **Checked on the render.** §22V and §22W question 1 read the row. An image or clip that misses its instruction is `REGENERATE · Q1: instruction VNxx not shown → <fix>`.
+
 ## 28. Emotional Match Rule (talking heads)
 
 *B-roll has its own counterpart — see §30F. This section governs the presenter only, and applying it to B-roll by analogy was never enough: a cutaway needs its light and its frame to carry the charge as well as its face.*
@@ -4980,7 +5035,7 @@ One frame carrying the whole shell: the hall seen from just inside the front doo
 
 ### What the agent edits, and what CapCut still does
 
-The agent delivers the **rough cut** (`08_EDIT`), its **EDL** (every clip, in/out, speed, phrase, fix) and the verification report. After the render, it reads `contact_sheet.py` of the rough cut plus a frame on each side of every cut, and judges the whole edit by §22W. CapCut still does captions, motion graphics, the ambient bed, music and supplied-asset cut-ins (§17, §17A), working from the rough cut instead of from loose clips. §28G's designed-silence list and J-cuts stay CapCut lines.
+The agent delivers the **rough cut** (`08_EDIT`), its **EDL** (every clip, in/out, speed, phrase, fix) and the verification report. After the render, it reads `contact_sheet.py` of the rough cut plus a frame on each side of every cut, and judges the whole edit by §22W. CapCut still does captions, motion graphics, the ambient bed, music and supplied-asset cut-ins (§17, §17A), working from the rough cut instead of from loose clips. **Every Visual Instruction Ledger row carried by the edit (§27F) is placed on its line** — in the rough cut where the instrument can carry it, else as a CapCut line with its ledger ID. §28G's designed-silence list and J-cuts stay CapCut lines.
 
 ---
 
@@ -5188,6 +5243,8 @@ Clean prose, not JSON. **One moment only** — no shot numbers, no time ranges, 
 After each prompt, a short editor note outside the code block. Practical and short. **Never inside the prompt block.**
 
 Flag: retention beats, micro-hooks, CTA positions, supplied-asset cut-ins, permitted pair-pack duplicate shots, **every pause the script calls for** (§17), **every post-only camera move the beat implies but cannot generate** (§22B), **the ambient audio bed for that location** (§22C), **the named/generic line pair on any beat naming a real platform** (§10A), **the cover point on any talking head that will be partly covered** (§31), **the tail-cut point on any escalating mechanism beat** (§12A), **any claim carrying a §43A qualification**, **the trim point after the final word on every talking-head beat** (§28G), **the build's designed-silence list by ID** (§28G), **the framing step-in on any uncovered-mouth claim line** (§28F), and **the sync triage lines — check at closure + stress word, offset-slip permitted, drift = reissue** (§28H), on any Mode 4 build **`FILM-CAPCUT`'s standing lines**, on any Mode 5 build **`ANIM-CAPCUT`'s** (V7.55.1), and on any Mode 3 build **`CLAY-CAPCUT`'s standing lines — posterize to 12fps, no stabilisation, no denoise, no frame-blend** (§24F).
+
+**Visual instructions (§27F, V7.61.0).** Every Visual Instruction Ledger row carried by the edit is a CapCut line: its ledger ID (`VNxx` / `LMxx`), the spoken line it lands on, and the instruction — on-screen text **verbatim**, SFX, music, cut, zoom, pause. The CapCut block closes with the ledger count: `§27F: n rows · n carried · n flagged · 0 open`.
 
 ---
 
@@ -5428,6 +5485,8 @@ Three tiers. Every numeric, clinical or comparative claim in a script is assigne
 **84. Talking heads → HeyGen Avatar V, driven by the §22U master (§22U steps 11–13).** Expressiveness on, hand gestures via `motionPrompt`, 9:16, 1080p. §36/§38 are the fallback. All-B-roll, narrated and film builds skip HeyGen and use the master as voiceover or audio ingredient.
 
 **83. Run mode → Manual (§1, Appendix E0).** Copy-ready prompts; the user generates, the user reviews. **Automatic only on explicit instruction, per build** — "we will use automation" or an equally direct call — through the `ai-prompt-engineer-auto` skill. Never inferred from a request to "check", "review" or "fix" a render, never switched on mid-build without the call, never carried into the next build. Analysing or trimming a single clip the user supplies is a Manual task, not Automatic.
+
+**86. Script visual instructions and the Loom brief → binding (§27F, §18C).** Every visual note on the script and every instruction in the build's Loom brief is logged in the Visual Instruction Ledger and carried by a named beat or CapCut line. The Loom is optional. Where the two disagree: Manual asks, Automatic follows the Loom and flags it.
 
 **76. Seedance → 720p, always**, every mode, every call. Upscale in post if needed; never regenerate at a higher resolution.
 
@@ -7147,6 +7206,7 @@ One per build. Disposable.
 4a. **Roster Ledger** — every locked avatar's eight §19A axis values; new characters cleared against it at five of eight, axis table shipped with the sheet
 5. **Act map** — beat IDs, register per act, retention beats, product first appearance, **frame side and framing step per beat** (§30A), **location per beat** (§22A), **ownership, function, subject class, alibi and energy class per B-roll beat, and run shape per beat group** (§30B), claims flagged (§43A)
 5a. **Phrase inventory + coverage ledger** — every phrase ID'd and dispositioned (§27B)
+5b. **Visual Instruction Ledger** — every script visual note (`VNxx`) and Loom instruction (`LMxx`), its spoken line, what carries it, its beat ID and its status (§27F, §18C)
 6. **Wardrobe map** — talking head per act, B-roll **per capture event** with per-beat rows and the full §14A ledger columns, shipped with its three audits (§21, §14A)
 6a. **Wardrobe Ledger** — one outfit row per story day (`story-day · subject · BASE · MID · OUTER · LOWER · FOOT · ACCENT · colour-family`) with its capture events listed beneath (`event-id · location · visibility · beats covered`), plus each character's available class subset, the **build-level GENERIC class pool** for anonymous cast, and each character's one declared signature item (§14A)
 6b. **Story-day map** — the output of the §14A five-channel derivation pass: day count, which acts fall on which day, and the two exceptions where a day spans acts or an act spans days
@@ -7158,7 +7218,7 @@ One per build. Disposable.
 7c. **Property Sheet** — the §30G seven fields for each dwelling in the build, plus the property plate job id and its check result. Location Sheets for rooms of that dwelling are children of it and inherit shell, orientation and view (§30G)
 8. **Audio Part B library** — one per location (§22C)
 9. **Surface library** — one per object-beat location (§15A)
-10. **CapCut block** — overlays, pauses, post-only camera moves, ambient audio bed, supplied assets, cover points
+10. **CapCut block** — overlays, pauses, post-only camera moves, ambient audio bed, supplied assets, cover points, every ledger row carried by the edit (§27F)
 11. **Build-level open decisions**
 
 ---
@@ -7545,6 +7605,8 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | TTS request length (§22U step 9) | character count of the full request, tags included | ≤ 5,000 | AUTO | Budget ladder, in order; never truncate the script |
 | TTS master (§22U step 10) | transcript vs script diff; the four-criterion read | every word present, in order; human, not narrator; no artefacts | AUTO-ASSIST + HUMAN | Next take; all four fail → regenerate with fewer tags |
 | HeyGen call (§22U step 13) | call params | engine `avatar_v` (or the logged fallback), `9:16`, `1080p`, uploaded audio, `motionPrompt` present | AUTO | Resubmit with the params fixed |
+| Visual instructions (§27F) | Visual Instruction Ledger vs `script_lines.py --visual` output + `loom.md` | every note and Loom instruction has a row; every row `verified` or `flagged`; 0 open at step 8 | AUTO | Carry the open row on its beat or CapCut line; a row missing from the ledger is a plan error |
+| Loom brief (§18C) | `fetch_loom.py` report | status OK, transcript and frames present — or no `LOOM` given | AUTO | FETCH_FAILED → ask for the MP4 in the Drive folder (Manual); Automatic continues without it and lists it in *Flags* |
 | Credit cap (E0, Automatic) | balance read before every batch | batch cost + spend so far ≤ cap | AUTO | Do not submit; stop the run and report |
 
 Every generated batch ships its QA table alongside the prompts — the reconciliation-line pattern, generalised. **In Automatic, HUMAN rows are the agent's and never stop the run (E0, V7.60.6)** and the table records which reads were the agent's and which the user's.
@@ -7646,7 +7708,7 @@ Superseded B-roll rule, kept for reference: B-roll calls: 5s (the Higgsfield flo
 
 ## E9. Build directory layout
 
-`/build/{product_sheet.md, product_sheet.py, absorption_sheet.md, build_sheet.md, act_map.json, phrase_inventory.json, wardrobe_map.json, location_sheets/, registries/{roster,voice,scene,subject}.json, run_ledger.json, beats/{BEAT-ID}.t2i.txt, beats/{BEAT-ID}.i2v.json, capcut_block.md}` — one beat, one pair of files, so §34 global corrections, coverage diffs and reissue passes run as scripts over the tree, never as memory. **The repo tree lives at `builds/<BUILD>/` and carries `drive.json`; the delivered copy lives in the task's Drive `OUTPUT` folder (§18B).**
+`/build/{product_sheet.md, product_sheet.py, absorption_sheet.md, build_sheet.md, act_map.json, phrase_inventory.json, wardrobe_map.json, location_sheets/, registries/{roster,voice,scene,subject}.json, run_ledger.json, beats/{BEAT-ID}.t2i.txt, beats/{BEAT-ID}.i2v.json, capcut_block.md, visual_ledger.md, intake/loom/{loom.md, loom.json, frames/}}` — one beat, one pair of files, so §34 global corrections, coverage diffs and reissue passes run as scripts over the tree, never as memory. **The repo tree lives at `builds/<BUILD>/` and carries `drive.json`; the delivered copy lives in the task's Drive `OUTPUT` folder (§18B).**
 
 ## E10. Doc-lint — standing §34 step at every version cut
 
@@ -7788,6 +7850,26 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **E11 trim pass — first production run.** One talking-head beat through the full procedure. Judge: does every cut land between words, does any joint click, does the entry breath survive at 120 ms, and does the keep-list silence survive at its listed length? Then one A/B of `auto-editor` against the transcription route on the same clip. Settles by instrument plus one listen.
 
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
+
+---
+
+# CHANGELOG — V7.60.7 → V7.61.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **27F** *(new)* | Script visual instructions are binding: the Visual Instruction Ledger, the anchor rule, what carries each kind of instruction, higher layers still win, nothing left open |
+| **18C** *(new)* | The Loom brief: optional, sent as `LOOM:` beside `DRIVE:`, read by `scripts/fetch_loom.py` (download, transcript, frames), its instructions logged in the §27F ledger; Loom vs script conflict — Manual asks, Automatic follows the Loom and flags it |
+| **1** | Authority layer 4 names the script's visual instructions and the Loom brief |
+| **18** | Step 2 opens the ledger; step 5 assigns each row; step 7 executes it; step 8 carries the edit rows |
+| **18B** | `LOOM` field in the Drive message and the single-message table; Loom MP4 row in the folder table |
+| **22U** | Step 8: dropped notes go to the ledger, not the bin; inline `[notes]` cut from spoken lines |
+| **22V, 22W** | Question 1 checks the line's ledger rows |
+| **30H, 40** | Edit-carried rows placed on their line; CapCut block lists them with their IDs and closes on the ledger count |
+| **44** | Default 86 |
+| **Appendix C, E1, E9** | Ledger in the Build Sheet; two QA rows; `visual_ledger.md` and `intake/loom/` in the tree |
+| Files | `scripts/fetch_loom.py` (new); `scripts/script_lines.py --visual`; both skills; intake template |
+
+**Origin:** user instruction — follow the visual instructions on the script; read and follow the Loom sent with every script.
 
 ---
 
