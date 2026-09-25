@@ -93,3 +93,27 @@ Direction: Barbara backs her chair up and faces Margaret to show the strap. For 
 
 Order: F01 → F03 → F31 back up → F32 hitch → F33 reveal → F34 insert → F35/F36 talk across (C03–C06) → F20 moves her chair → F21 sits beside → F11 master 2 → F22 draws the trouser up again → F27 tendon (C07–C08) → F25/F26, F28/F29 → F30 palm.
 F23/F24 (reveal already beside her) are moved to rejected/ because the reveal now happens across the gap.
+
+## Round 6: real-life drama coverage in the inspo reel's style
+
+Direction: "these are not like real life scenarios". Diagnosis: the earlier sets were wide shots of the whole room from the doorway, evenly lit, which read as staged stock photography. The inspo reel is tight and intimate: faces fill the frame on an 85mm lens, light comes from the window side and falls off into shadow with a warm lamp in the background, skin is real, and shoulders and mugs sit soft in the foreground. The blocking is unchanged: Barbara backs up and faces Margaret to show the strap, then drags her chair beside Margaret for the tendon.
+
+| Beat | Job | Result |
+|---|---|---|
+| SC05-F40-B-ASK | b29fb553-bfee-4cc0-a08a-208575763c9e | PASS |
+| SC05-F41-BACK-UP | f8fcee53-804d-4802-b5fc-23a6b090e6dd | PASS |
+| SC05-F42-HEM | 3cf6f163-804f-4ba1-a899-35d52ee96b54 | PASS |
+| SC05-F43-M-LEAN | c5e06bea-677c-4d7a-a5a0-c1c1c9175da1 | PASS |
+| SC05-F44-REVEAL-OTS | 528bea19-26d2-48d8-a5a7-5ecafa9c22a3 | PASS |
+| SC05-F45-B-PROUD | 6ac42a08-4401-49e6-b669-cc28632b799c | PASS |
+| SC05-F46-M-SCEPTIC | fd96999d-56c6-4e3a-a59f-aa71ba366c6c | PASS |
+| SC05-F47-B-SIDEWAYS | 52c0c914-8acf-4e10-9448-3b438e13b485 | PASS |
+| SC05-F48-CHAIR-DRAG | 7faabe4e-c3a0-47c2-a228-1936d16a16f5 | PASS |
+| SC05-F49-BESIDE-2S | 9ca36851-21e1-4da7-8a2f-6655bb125b7e | PASS |
+| SC05-F50-TENDON | 30ff8635-61ce-4e8e-84cd-eb0f4cbf7f00 | PASS |
+| SC05-F51-M-YES | 75df5fbf-2bfb-4106-9845-7179885adcbc | PASS |
+| SC05-F52-B-TRUTH | b2edff3b-82b5-4dec-9fca-77c49fcbb4b0 | PASS |
+| SC05-F53-M-RAW | f133ada9-797b-43bb-b83b-0bc0ab4d184f | PASS |
+| SC05-F54-PALM | 3efe0e73-0863-4b32-8b2e-8994b177c311 | PASS |
+
+This set supersedes F04–F10, F20–F36 for the reveal-onward coverage. F01–F03 still cover the opening.
