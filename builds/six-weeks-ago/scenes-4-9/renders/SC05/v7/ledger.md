@@ -56,3 +56,6 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | – | Frame 33 tries 76c9b714 / 884bfe52 / ef620bfa | – | NOT SHOWN: Barbara's shoulder in the near foreground reads as sitting in front of Margaret |
 | – | Frame 33 redo 01be21a5 (hands at bottom) / 749868d9 (Margaret brunette, room drift) | – | not chosen / REJECTED |
 | 33 | Front push-in on Margaret, Barbara's profile beside her at the same depth: "It'll slip. They all slip." | 5d458a50-3d54-46aa-ab91-543a1d13796a (edit of 32) | APPROVED (option F) |
+| – | Frame 34 tries 9ec31389 (no cardigan) / f106dcdb (letterboxed, other room, earrings) / 9737b5a5 (Margaret's shoulder nearer camera, reads as in front) | – | REJECTED ("wrong position") |
+| – | Frame 34 redo 336a7719 (gesture unclear) / 86a53f4c (gesture cramped) | – | not chosen |
+| 34 | Side-by-side two-shot (32 seating): Barbara ticks two fingers, "It's adjustable… Ten seconds to put on." | ccd66ff6-7498-4b5e-a802-b6b87306d970 (edit of 32) | APPROVED (option E) |
