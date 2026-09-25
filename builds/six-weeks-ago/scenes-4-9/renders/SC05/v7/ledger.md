@@ -25,3 +25,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 15 | Two-shot: Barbara, "Does your knee hurt going sideways?", flat hand tilting | bc9928f0-26ed-41dd-9575-7cb496891bcc (edit of 07) | APPROVED (option A; stays wide, did not push in) |
 | 16 | Margaret OTS: "No." | b4620516-887b-44c6-81c6-859ee005c189 (edit of 12) | APPROVED (option A) |
 | 17 | Barbara points under her kneecap: "Put your finger just under your kneecap"; Margaret starts to copy on her own knee | f0840705-fee2-4d59-b3f4-f67428adecb2 (edit of 08) | APPROVED (option A; B had Margaret touching Barbara's knee) |
+| – | Frame 18 first tries d79d2962 / 3c4cd538 and their fixes 0c092b38 / 7f9f449a | – | REJECTED by user ("wrong scene"): a different room with curtains, another tablecloth and another floor |
+| 18 | Knee insert: Margaret presses under her own kneecap, "Two centimetres down. Press in."; Barbara's strapped knee beside | e08d68ac-c58a-4e6b-94c6-094f3aa42dab (edit of 17) | APPROVED (option C) |
