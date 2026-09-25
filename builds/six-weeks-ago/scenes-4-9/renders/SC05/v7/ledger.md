@@ -24,3 +24,4 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | – | Frame 15 first pair (ecfb430c / 216c275d) | – | REJECTED: Barbara's face drifted (earrings, thinner), rainbow mug, over-sharpened look |
 | 15 | Two-shot: Barbara, "Does your knee hurt going sideways?", flat hand tilting | bc9928f0-26ed-41dd-9575-7cb496891bcc (edit of 07) | APPROVED (option A; stays wide, did not push in) |
 | 16 | Margaret OTS: "No." | b4620516-887b-44c6-81c6-859ee005c189 (edit of 12) | APPROVED (option A) |
+| 17 | Barbara points under her kneecap: "Put your finger just under your kneecap"; Margaret starts to copy on her own knee | f0840705-fee2-4d59-b3f4-f67428adecb2 (edit of 08) | APPROVED (option A; B had Margaret touching Barbara's knee) |
