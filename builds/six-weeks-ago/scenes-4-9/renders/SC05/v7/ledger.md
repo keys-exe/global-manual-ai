@@ -48,3 +48,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 29 | Barbara CU three-quarter profile foreground, Margaret soft behind almost nodding: "Bone on bone, arthritis… that's the spot taking the weight." | 87c5ab65-cb1d-4124-ae4b-7316fe1d7145 (edit of 28) | APPROVED (option A) |
 | – | Frame 30 tries 3dc922c0 (face drift, blue eyes, near lens) / 03d071e7 (eyeline drifts to lens) | – | REJECTED |
 | 30 | Barbara tight CU, jaw set: "…aimed at the whole knee. Not that spot. That's why nothing worked." | 15340d9b-cf62-43bd-b4c6-f55e6a4061e1 (edit of 24) | APPROVED (option C) |
+| – | Frame 31 tries 17388edb / 6af4c779 (Margaret with a fringe, colder grade, room drift) | – | REJECTED |
+| 31 | Low table-edge angle: pill packets in foreground, Margaret's eyes fill as she looks at them (silent) | d8bf9405-99f5-4e9d-8f5e-289673907b0b (from 25 + 28) | APPROVED (option A) |
