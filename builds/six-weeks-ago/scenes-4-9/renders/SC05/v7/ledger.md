@@ -60,3 +60,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | – | Frame 34 redo 336a7719 (gesture unclear) / 86a53f4c (gesture cramped) | – | not chosen |
 | 34 | Side-by-side two-shot (32 seating): Barbara ticks two fingers, "It's adjustable… Ten seconds to put on." | ccd66ff6-7498-4b5e-a802-b6b87306d970 (edit of 32) | APPROVED (option E) |
 | 35 | Margaret push-in (33 setup), silent: eyes drop to Barbara's strapped knee below frame | 5640e3ff-4cdb-49e1-95a5-ee00b674027a (edit of 33) | APPROVED (option A) |
+| – | Frame 36 tries dee8eaf1 / 66fbe53b (Margaret out of frame, her seat reads empty) | – | not chosen |
+| 36 | Wider front-right: Barbara smooths her trouser leg flat over the strapped knee, "It sits flat under your trousers…"; Margaret beside her at left | f1d4cd67-8b2f-4d35-9d72-7674ac7048a2 (edit of 34) | APPROVED (option A) |
