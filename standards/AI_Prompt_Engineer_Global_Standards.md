@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.59.2 — supersedes all prior versions.** *(the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.60.0 — supersedes all prior versions.** *(clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -2719,6 +2719,26 @@ The fix is a named change to the prompt: a clause added, a string restated at fu
 
 ---
 
+## 22W. Clip Verdict — the agent judges every video *(new V7.59.2 → V7.60.0)*
+
+**Every generated clip is opened and judged by the agent before it goes into the edit.** This is the video counterpart of §22V, with the same two outcomes: **USE**, or **REGENERATE** with the named fault and the named fix. The same budget applies: two regenerations per fault, then the user.
+
+**How the agent sees a clip:** `scripts/contact_sheet.py <clip>` tiles evenly spaced frames, always including the true first and last frame, into one image. It also reports duration, resolution, 9:16, audio, frozen runs and black runs. `--full` keeps every frame at full resolution for zooming into hands, product and text. The agent reads the sheet, plus full frames wherever a question needs detail.
+
+### The questions, in order — the first NO is the verdict
+
+1. **Does it show the line?** The clip performs the beat's phrase and function (§27B, §30B), in the right emotional register (§30F).
+2. **Is the product right in every frame?** It must not morph, swap sides, change size or lose its wordmark across the clip (§8, §9). Product drift that starts halfway through is the typical video failure. The first frame passing proves nothing.
+3. **Is the body whole in every frame?** No extra or merged fingers, no limbs passing through objects, no face melt (§27D).
+4. **Is the motion right?** The §27A arc runs and the clip is never at rest at the cut. Camera per §22B. Physics per §27C and §27E. No frozen run over 0.5s unless the beat is a hold.
+5. **Does it hold continuity?** The subject matches the sheet, the room matches the plate, the wardrobe matches the story day, and the axis and screen direction match `GEO-LINE` (§30C, §30E).
+6. **Is it technically clean?** 9:16, the stated duration (E6), no black frames, no garbled on-screen text, and no cut inside the clip unless the beat is MULTI-SHOT (§29).
+7. **Is there enough footage for its slot?** The clip covers its §30H slot at 1.0x, or at no slower than 0.8x. Otherwise it is REGENERATE at a longer duration.
+
+The verdict line and the fix rule are §22V's: `<BEAT-ID> · <clip> · USE` or `… · REGENERATE · Q<n>: <fault> → <fix>`.
+
+---
+
 ## 22E. Fixed-Mount Capture Standard *(new V7.48.7; split into MOUNT and RECORD at V7.48.10)*
 
 **Scope: any beat whose premise is that a camera was already recording.** Declared per beat on the act map, **never inferred** from a script line about being watched, a shop, a doorway, or a fall. Same gate as narrated B-roll and POV-dominant: it is a register decision, not a shot idea.
@@ -4916,6 +4936,28 @@ One frame carrying the whole shell: the hall seen from just inside the front doo
 ---
 
 # BLOCK 8 — FORMATS & OUTPUT
+
+## 30H. B-Roll Placement & Hole-Free Assembly *(new V7.60.0)*
+
+**B-roll lands on its line, and the picture never shows a hole.** A hole is a moment with no intended picture. In a voice-only build that means an uncovered frame. In a talking-head build it means a **flicker**: a sliver of talking head between two B-rolls, too short to read as a return to the presenter. It reads as a glitch, and viewers scroll.
+
+### The rules
+
+1. **PLACE — on the word.** Each B-roll starts on the first word of its phrase. Time comes from the master's word timestamps, **aligned to the verbatim script**, so the transcript's "17" still finds the script's "seventeen" (§22U). It runs until the next B-roll starts, until its line ends, or until its footage runs out, whichever comes first. The master audio is one continuous track and is never cut.
+2. **JOIN — frame-exact.** Two B-rolls that meet share one cut: no gap frame and no overlap. Cuts are snapped to the 30 fps frame grid.
+3. **FLICKER — none.** **A talking-head window under 1.5s between two B-rolls is closed**, in this order: extend the earlier clip with its own footage; slow it to no slower than 0.8x; else the clip is **REGENERATE at a longer duration** (§22W Q7). A talking-head window of 1.5s or more is a deliberate return to face and stays. §31's ~15s return-to-face rule still governs the long runs.
+4. **HOLE — none, in voice-only builds.** All-B-roll, narrated and film voiceover builds have no talking-head base, so **every frame from 0.00s to the last word is B-roll**. Uncovered time is closed the same way. An uncovered opening means a B-roll is missing on the first line. An unclosable hole is a FAIL, never black.
+5. **FLASH — none.** A B-roll on screen for under 0.8s is too short to read. It is merged into its neighbour's slot, or its phrase gets a longer clip.
+
+### The instrument
+
+`scripts/assemble.py <plan.json>` takes the master, the verbatim lines, the talking-head track (or none) and the B-roll list with each clip's phrase. It places, joins, closes flickers and holes, reports every fix and every failure, and renders a 1080×1920 rough cut with the master as the only audio. It then **verifies the render**: duration equals the master to within two frames, and there are no black frames. A plan with any failure does not render. **Measured V7.60.0 on a synthetic cut:** four B-rolls placed on their phrases, including a numeral-vs-word match. Two flickers closed (1.47s and 0.73s, by 0.88x and 0.87x slow-down). Every cut landed frame-exact: pixel colour sampled at ±1 frame of each cut. Duration matched, with 0 black frames. The voice-only variant of the same plan correctly failed with three holes and two NEED_LONGER.
+
+### What the agent edits, and what CapCut still does
+
+The agent delivers the **rough cut** (`08_EDIT`), its **EDL** (every clip, in/out, speed, phrase, fix) and the verification report. After the render, it reads `contact_sheet.py` of the rough cut plus a frame on each side of every cut, and judges the whole edit by §22W. CapCut still does captions, motion graphics, the ambient bed, music and supplied-asset cut-ins (§17, §17A), working from the rough cut instead of from loose clips. §28G's designed-silence list and J-cuts stay CapCut lines.
+
+---
 
 ## 34. Correction Protocol
 
@@ -7466,6 +7508,10 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | Trim — inhales (E11, Automatic) | word timestamps vs cut list, then a waveform check at each joint | no cut lands inside a word; no audible click at the joint (waveform zero-cross ± 10 ms) | AUTO-ASSIST | Widen the padding by 40 ms and re-trim; a cut inside a word is TRIM_FAIL |
 | Film voice master (§24I) | ffprobe duration + codec vs the source clip's audio stream; one-speaker listen | identical duration and codec (stream copy — no edit); neutral affect | AUTO + HUMAN | Regenerate the clip; never edit the audio |
 | Clone source (§22U steps 3–5) | duration + silencedetect on the step-5 file | ≥ 30.0s; no silence > 0.4s; `atempo` 1.2 logged | AUTO | Re-loop; a source under 30s is never uploaded |
+| Clip verdict (§22W) | `contact_sheet.py` sheet + full frames where needed | all seven §22W questions YES | AUTO (agent) | REGENERATE with the named fix; third failure of one fault → user |
+| B-roll placement (§30H) | `assemble.py` EDL vs aligned word timestamps | every B-roll starts on its phrase's first word | AUTO | Re-plan; a phrase not found is a plan error, never a guess |
+| Holes and flicker (§30H) | `assemble.py` timeline | no TH window < 1.5s between B-rolls; voice-only: no uncovered frame; no B-roll < 0.8s | AUTO | Extend → slow ≥ 0.8x → regenerate longer |
+| Rough-cut render (§30H) | duration + blackdetect on the render | duration = master ± 2 frames; 0 black frames | AUTO | Re-render; a second failure → HUMAN |
 | TTS verbatim (§22U step 8) | `tts_budget.py --script-lines`: tags stripped, word-for-word compare against `script_lines.py` output | identical word sequence; title, headings, links and notes absent | AUTO | Rebuild the tagged text from the extracted lines; never send a FAIL |
 | TTS request length (§22U step 9) | character count of the full request, tags included | ≤ 5,000 | AUTO | Budget ladder, in order; never truncate the script |
 | TTS master (§22U step 10) | transcript vs script diff; the four-criterion read | every word present, in order; human, not narrator; no artefacts | AUTO-ASSIST + HUMAN | Next take; all four fail → regenerate with fewer tags |
@@ -7490,6 +7536,8 @@ Every generated batch ships its QA table alongside the prompts — the reconcili
 | CREDIT_CAP | E1 credit-cap row | none — never raised by the agent | 0 | HUMAN — the user raises the cap or ends the run |
 | AGENT_UNSURE | AGENT-FIRST read with no clear pass or fail (E0) — **not used for images, which always get a verdict (§22V)** | none | 0 | HUMAN — queued with the frame, the check and the agent's note |
 | IMAGE_REGENERATE | §22V verdict | regenerate with the named fix | 2 per fault | HUMAN — three versions and the verdict history |
+| CLIP_REGENERATE | §22W verdict | regenerate with the named fix | 2 per fault | HUMAN — three versions, sheets and the verdict history |
+| NEED_LONGER | §30H: a clip cannot fill its slot at ≥ 0.8x | regenerate that clip at the duration its slot needs | 2 | HUMAN |
 | IMAGE_FALLBACK | Higgsfield balance < image batch cost | route that batch and every later image batch to Kie AI (§5) | — | none — logged, not a stop |
 
 Global rule: **two automatic rerolls per beat per failure class**, then the beat queues for a human with its failure history attached. Retries never change the prompt silently — every changed prompt is a delivered iteration (§16).
@@ -7706,6 +7754,19 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 ---
 
+# CHANGELOG — V7.59.2 → V7.60.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **22W** | **Clip verdict (new).** The agent judges every video on seven questions, reading a contact sheet with the true first and last frames. Product and body are checked in every frame, and the clip must have enough footage for its slot |
+| **30H** | **B-roll placement and hole-free assembly (new).** Place on the phrase's first word (script-aligned timing); frame-exact joins; no talking-head flicker under 1.5s; no uncovered frame in voice-only builds; no B-roll under 0.8s. The agent renders and verifies the rough cut; CapCut finishes |
+| E1, E2 | Clip, placement, hole and render checks; `CLIP_REGENERATE`, `NEED_LONGER` |
+| Files | `scripts/assemble.py`, `scripts/contact_sheet.py` |
+
+**Origin:** user request — check the B-roll videos, place them on the right lines, edit them with no holes or talking-head flicker.
+
+---
+
 # CHANGELOG — V7.59.1 → V7.59.2 *(cut authorised)*
 
 | § | Change |
@@ -7715,19 +7776,6 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | Files | `scripts/script_lines.py`; `tts_budget.py` verbatim lock |
 
 **Origin:** user rule — never change the script; nothing added, nothing removed, no titles or visuals.
-
----
-
-# CHANGELOG — V7.59.0 → V7.59.1 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **5** | Kie runs through its **API** (`KIE_API_KEY`), not the Higgsless connector. The API carries GPT Image 2.5 Sunburst, so the image fallback substitutes nothing. Kie file upload makes public URLs for local inputs (measured); the URLs are temporary |
-| E7 | Kie API call templates: `createTask`, `recordInfo`, `chat/credit`, file upload; never `first_frame_url` |
-| Open Decisions | Public-URL gap closed; Drive media upload still open; first Kie API generation pending |
-| Files | `scripts/kie.py` |
-
-**Origin:** user decision — use the Kie AI API.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer-auto
-description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.59.2, Appendix E0/E11, §5, §18B, §22U, §22V, §24I). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
+description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.60.0, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
 ---
 
 # AI Prompt Engineer — Automatic run mode
@@ -10,7 +10,7 @@ description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.5
 **This skill adds execution; it changes no craft.** Load `ai-prompt-engineer` first and follow it for every prompt. The master file `standards/AI_Prompt_Engineer_Global_Standards.md` wins over this summary. Before the first call, read these sections by grepping their headings:
 
 ```
-Grep  pattern="^## (E(0|1|2|3|7|9|11)|5|18B|22U|22V|24I)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
+Grep  pattern="^## (E(0|1|2|3|7|9|11)|5|18B|22U|22V|22W|24I|30H)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
 ```
 
 ## 1. Start of run — before any credit is spent
@@ -37,12 +37,13 @@ For every batch, in this order:
 4. **Fetch the result** — download the output URL to `builds/<build>/renders/<BEAT-ID>.<ext>` with `curl -sSL -o`. If the download is refused, say so; never describe a render you have not opened.
 5. **QA per E1.**
    - **Images: you are the judge (§22V).** Open every image with Read and answer the six questions — does it show the line, product, body, continuity, register, will it animate. Ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then the user with all three versions.
-   - Video: grab frames with ffmpeg (`-ss <t> -frames:v 1`) at the first frame, the contact/closure moment and the last frame, then Read them. Silence and timing checks run on the audio (`silencedetect=noise=-40dB:d=0.4`).
+   - **Video: you are the judge (§22W).** `contact_sheet.py <clip>` → Read the sheet (true first and last frames); `--full` and Read single frames where hands, product or text need detail. Seven questions — line, product every frame, body every frame, motion, continuity, technical, enough footage for its slot → `USE` or `REGENERATE`. Silence and timing checks run on the audio (`silencedetect=noise=-40dB:d=0.4`).
    - AUTO rows run by instrument. HUMAN rows run **AGENT-FIRST**: clear pass → proceed; clear fail → E2 remedy; unsure → queue for the user (`AGENT_UNSURE`).
    - **Always queue for the user**, whatever your read: the §28F/§28H closure-sync check, voice (§22D), and Mode 4/5 performance on video. Images are not queued — they get your verdict.
 6. **Reroll per E2** — at most two automatic rerolls per beat per failure class, then HUMAN with the failure history. A changed prompt is shown to the user as a new iteration; never change a prompt silently.
 7. **Trim (E11)** every talking-head clip that passed QA (section 4 below).
 8. **Update the ledger** and ship the batch's QA table, marking which reads were yours and which the user's.
+9. **Assemble (§30H)** once an act's B-rolls pass: write `plan.json` (master, `script.lines.txt`, talking-head track or `null`, each B-roll with its phrase) → `assemble.py plan.json --out builds/<build>/edit/<act>.mp4`. Every FAIL is fixed (NEED_LONGER → regenerate that clip longer) before rendering. Then `contact_sheet.py` on the render and a frame either side of each cut, and judge the edit. Deliver rough cut + EDL + report to `08_EDIT`.
 
 ## 3. Stop points — the only places the run waits
 

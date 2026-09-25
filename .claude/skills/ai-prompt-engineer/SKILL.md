@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.59.2) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.60.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -45,7 +45,11 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Image verdict (§22V). Open and judge every image yourself — the line first, then product, body, continuity, register, animatability — and ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then the user. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
 
-**Intake (§18B).** Default: a **shared Google Drive folder** (inspo video, script with the title on line 1, Product Sheet, product images) plus a short message — `DRIVE`, `BUILD`, `MODE`, `RUN`. Run `scripts/fetch_drive.py <BUILD> <link>`, report what was found or missing, then absorb. Alternative: the single-message Intake Pack (`builds/INTAKE_TEMPLATE.md`): BUILD, MODE, FORMAT, RUN, TOOLS, INSPO links, SCRIPT (title first), PRODUCT, CAST NOTES, NOTES. Fetch and measure every link, run steps 1–5 without questions, then the voice route by mode: Mode 1–3 → §22U (HeyGen when there are talking heads); **Mode 4, 5, AI Drama → §24I neutral Seedance voice master, audio kept exactly as generated — never trimmed, sped or looped.** `RUN: AUTOMATION` is the Automatic call; anything else is Manual.
+**Clip verdict (§22W).** Judge every video yourself from `scripts/contact_sheet.py` (true first + last frame, `--full` for zoom): the line, product in every frame, body in every frame, motion, continuity, technical, enough footage for its slot → `USE` or `REGENERATE`.
+
+**Placement & no holes (§30H).** B-roll starts on its phrase's first word (script-aligned timing); joins are frame-exact; no talking-head flicker under 1.5s between B-rolls; voice-only builds have no uncovered frame; no B-roll under 0.8s. `scripts/assemble.py` places, fixes, renders and verifies the rough cut; CapCut finishes it.
+
+**Intake (§18B). Default: a **shared Google Drive folder** (inspo video, script with the title on line 1, Product Sheet, product images) plus a short message — `DRIVE`, `BUILD`, `MODE`, `RUN`. Run `scripts/fetch_drive.py <BUILD> <link>`, report what was found or missing, then absorb. Alternative: the single-message Intake Pack (`builds/INTAKE_TEMPLATE.md`): BUILD, MODE, FORMAT, RUN, TOOLS, INSPO links, SCRIPT (title first), PRODUCT, CAST NOTES, NOTES. Fetch and measure every link, run steps 1–5 without questions, then the voice route by mode: Mode 1–3 → §22U (HeyGen when there are talking heads); **Mode 4, 5, AI Drama → §24I neutral Seedance voice master, audio kept exactly as generated — never trimmed, sped or looped.** `RUN: AUTOMATION` is the Automatic call; anything else is Manual.
 
 **Build order (§18).** Eight steps: 1 absorb inspo (§42) → 2 absorb script/product + Mode & Model Lock → 3 cast → 4 property & location maps → 5 act map + wardrobe map → 6 hooks one by one (**the only human gate**) → 7 B-roll and body acts → 8 CapCut block. Steps 1–5 ship as one opening delivery.
 
@@ -60,6 +64,8 @@ Where a script line contradicts a product spec or visual standard, the render fo
 - `scripts/voice_source.py` — steps 3–5: trim → ×1.2 → loop to ≥30s → `<Keyword>_clone_source.mp3`
 - `scripts/script_lines.py` — §22U step 8: spoken lines only, verbatim; reports every dropped line (title, headings, links, visual notes)
 - `scripts/tts_budget.py` — verbatim lock with `--script-lines`; steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags
+- `scripts/assemble.py` — §30H: place B-roll on its lines, close flickers and holes, render + verify the rough cut
+- `scripts/contact_sheet.py` — §22W: one image per clip (first → last frame), frozen/black runs, `--full` for zoom
 - `scripts/trim.py` — E11 trim pass (never on a §24I film voice master)
 - `scripts/kie.py` — Kie AI API (§5): `credit`, `upload` (public URL), `image` (fallback), `seedance` (720p, 9:16, ingredients, stated duration), `wait`
 - `scripts/fetch_drive.py` — §18B Drive intake: downloads the shared folder, sorts inspo / script / product sheet / images, extracts document text, measures the inspo
@@ -134,6 +140,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 22D. Voice Identity Standard *(new — axis steerability unverified)*
 - 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Seedance source → ElevenLabs clone → v3 TTS → HeyGen Avatar V)*
 - 22V. Image Verdict — the agent judges every image *(new V7.59.0)*
+- 22W. Clip Verdict — the agent judges every video *(new V7.60.0)*
 - 22E. Fixed-Mount Capture Standard *(new V7.48.7; split into MOUNT and RECORD at V7.48.10)*
 - 22F. Creator Framing Standard *(new V7.52.0 — visual check pending)*
 - 22S. Skin Realism Standard *(Mode 1 — measured this cycle)*
@@ -183,6 +190,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 30F. Emotional Register — B-roll *(new — the §28 counterpart)*
 - 30E. B-Roll Continuity & Assembly Standard *(locked)*
 - 30G. Property Standard *(new — unverified, visual check)*
+- 30H. B-Roll Placement & Hole-Free Assembly *(new V7.60.0)*
 
 **BLOCK 8 — FORMATS & OUTPUT**
 - 34. Correction Protocol
@@ -261,6 +269,6 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 
 **OPEN DECISIONS**
 
-**CHANGELOG — V7.59.1 → V7.59.2 *(cut authorised)***
+**CHANGELOG — V7.59.2 → V7.60.0 *(cut authorised)***
 
-**CHANGELOG — V7.59.0 → V7.59.1 *(cut authorised)***
+**CHANGELOG — V7.59.1 → V7.59.2 *(cut authorised)***
