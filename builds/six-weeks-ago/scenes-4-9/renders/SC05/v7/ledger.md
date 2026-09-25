@@ -36,3 +36,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 22 | Margaret OTS: "Barbara, my knees are bone on bone. There's nothing left in there." | d71d9197-fad8-4d66-ac56-0d142e26bfb2 (edit of 16) | APPROVED (option B) |
 | 23 | Barbara OTS: "Mine too. This doesn't put anything back." | ae7d7030-93ea-4788-9e37-b184bc24b139 (edit of 20) | APPROVED (option A) |
 | 24 | Barbara CU: "Nothing can. I'm seventy-four. I haven't got time to lie to you." | e39d44cf-6b43-4727-99e6-c46e7b45c050 (edit of 23) | APPROVED (option A) |
+| – | Frame 25 tries b2b2ae90 / 0f16d33f | – | NOT SHOWN: same framing as 22 (no push-in, one linear axis) |
+| 25 | Margaret tight CU three-quarter: "Then what does it do?" | 904b89e5-ec95-4ed6-8481-10ab9f5f1e04 (reframe of b2b2ae90) | APPROVED (option D) |
