@@ -438,7 +438,8 @@
    "model_logged": "nano_banana_2",
    "t2i_qa": "v1 clip QA caught strap on her right and her climbing -> v3 (side wrong: handrail clause misfired) -> v4 USE",
    "file": "renders/BR24_v1.png",
-   "i2v_job": "AfShJAtmgd3OU4VpbFGS7R5bexxVuCtIaxgL5jQaxS42Vy1rVYXyOirfZLbMQmSgZ2F23zjl"
+   "i2v_job": "AfShJAtmgd3OU4VpbFGS7R5bexxVuCtIaxgL5jQaxS42Vy1rVYXyOirfZLbMQmSgZ2F23zjl",
+   "i2v_qa": "USE (v4) — descends forwards towards camera, strap on her left every frame, shoes on"
   },
   "BR27": {
    "beat_id": "BR27",
