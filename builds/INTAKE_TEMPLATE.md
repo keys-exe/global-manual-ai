@@ -33,7 +33,7 @@ CAST NOTES:
 NOTES: 
 ```
 
-DRIVE, BUILD and MODE are required. LOOM is optional: set the Loom to "anyone with the link" (a private one can't be downloaded — put its MP4 in the Drive folder with `loom` in the name instead). Everything the Loom asks for, and every visual note written on the script, is followed (§27F, §18C). Leave the rest blank to use the defaults (RUN blank = Manual, HOOKS blank = 3). With CAP filled in, the run never asks about credits. Each ADJUST line is applied and recorded. One that conflicts with the product sheet or product images is flagged, not applied.
+DRIVE, BUILD and MODE are required. LOOM is optional: set the Loom to "anyone with the link" (a private one can't be downloaded — put its MP4 in the Drive folder with `loom` in the name instead). Everything the Loom asks for, and every visual note written on the script, is followed (§27F, §18C). Leave the rest blank to use the defaults (RUN blank = Manual, HOOKS blank = 3). With RUN: MANUAL the agent still downloads and absorbs everything itself and generates the avatars, then sends you the absorption and the avatars and waits for your decision; after your go you get the prompts and generate as usual. With CAP filled in, the run never asks about credits. Each ADJUST line is applied and recorded. One that conflicts with the product sheet or product images is flagged, not applied.
 
 ---
 
