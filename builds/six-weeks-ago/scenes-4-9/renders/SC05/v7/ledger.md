@@ -70,3 +70,5 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 39 | Barbara CU push-in (36 setup): "Then don't get your hopes up. Just put it on and walk down the stairs." | cc95aeec-8c4a-4f31-9097-e93554acfb55 (edit of 36) | APPROVED (option C) |
 | – | Frame 40 tries 760772ce (shell warped) / 04c29a32 (shell edge uneven) | – | not chosen |
 | 40 | Insert: Barbara presses a second strap into Margaret's open palm (strap handed over notch-down) | 9e9eff35-883d-424e-854d-a8ab95eefe6c (edit of 37) | APPROVED (option A) |
+| – | Frame 41 tries 5ac54b68 / 41189ec1 | – | not chosen |
+| 41 | Side-by-side two-shot, slightly higher: Margaret holds the strap; Barbara deadpan "And keep your hand on the rail. I'm not crazy." | 61420f5c-81df-439c-aa7b-c37abe06038b (edit of 34 + 40) | APPROVED (option B) |
