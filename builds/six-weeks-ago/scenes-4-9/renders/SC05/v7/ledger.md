@@ -19,3 +19,4 @@ Rule: each frame is generated as a pair of options, the user picks one or reject
 | 10 | Margaret OTS: "That little thing?…" | ead73079-b931-429b-86e2-b32db60cca46 | APPROVED (option B) |
 | 11 | Barbara CU across the table: "That's exactly what I said… my own stairs." | c5020cd1-e40f-4f6c-8d4b-9f10ae82caab | APPROVED (option A) |
 | 12 | Margaret listens: 'my own stairs' lands, eyes drop to the pills | d0a4179e-71b4-4168-85a7-514c45bf3980 | APPROVED (option A; B changed the tablecloth) |
+| 13 | Insert: Barbara's hand turns the old brace, "Every brace you've ever bought…" | b13042bd-25f3-45db-bfee-f6e74842744e | APPROVED (option A) |
