@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.56.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.57.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -39,7 +39,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Formats (§3, §3A, §3B).** Identify the build type first; if unclear, ask. Default Short VSL or UGC Ad. Long VSL, Narrated B-roll and AI Drama VSL only on explicit request.
 
-**Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs v3 (scope-restricted, §22C). Post: CapCut. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
+**Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs — every character's voice is cloned and voiced in Eleven v3 by the §22U pipeline. Talking heads: HeyGen Avatar V driven by that audio (§22U; §36/§38 are the fallback). Post: CapCut. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
 
 **Build order (§18).** Eight steps: 1 absorb inspo (§42) → 2 absorb script/product + Mode & Model Lock → 3 cast → 4 property & location maps → 5 act map + wardrobe map → 6 hooks one by one (**the only human gate**) → 7 B-roll and body acts → 8 CapCut block. Steps 1–5 ship as one opening delivery.
 
@@ -48,6 +48,15 @@ Where a script line contradicts a product spec or visual standard, the render fo
 **Corrections (§34).** Return only the corrected block, labelled by beat ID, as a drop-in swap; confirm in one line; stop. Corrections are global (fix every beat with the same flaw and list the IDs), retroactive (name invalidated IDs), and permanent. A locked correction goes into the **Pending Amendments** table of the master file the same turn.
 
 **Tone (§45).** Direct, practical, efficient. Take a position — recommend one option and say why. Measure before asserting; mark unverified claims **unverified**. Show the number (char counts, word budgets, coverage). Confirm correctness in one line and move on.
+
+## Voice pipeline helpers (§22U, both modes)
+
+- `scripts/voice_source.py` — steps 3–5: trim → ×1.2 → loop to ≥30s → `<Keyword>_clone_source.mp3`
+- `scripts/tts_budget.py` — steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags
+- `scripts/trim.py` — E11 trim pass
+- `references/eleven_v3_tags.json` — the full Eleven v3 tag library (1,806 tags); `TAG-PALETTE` in §22U is the default subset
+
+Setup per session: `pip install -q imageio-ffmpeg faster-whisper`. In Manual, run these on a clip the user supplies and deliver every other step as copy-ready text and settings.
 
 ## Changing the standards (§0, §34)
 
@@ -112,6 +121,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 22B. Camera Behaviour Standard *(measured this cycle — one A/B pair)*
 - 22C. Audio Capture Standard *(new — unverified)*
 - 22D. Voice Identity Standard *(new — axis steerability unverified)*
+- 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Seedance source → ElevenLabs clone → v3 TTS → HeyGen Avatar V)*
 - 22E. Fixed-Mount Capture Standard *(new V7.48.7; split into MOUNT and RECORD at V7.48.10)*
 - 22F. Creator Framing Standard *(new V7.52.0 — visual check pending)*
 - 22S. Skin Realism Standard *(Mode 1 — measured this cycle)*
@@ -239,6 +249,6 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 
 **OPEN DECISIONS**
 
-**CHANGELOG — V7.55.1 → V7.56.0 *(cut authorised)***
+**CHANGELOG — V7.56.0 → V7.57.0 *(cut authorised)***
 
-**CHANGELOG — V7.55.0 → V7.55.1 *(cut authorised)***
+**CHANGELOG — V7.55.1 → V7.56.0 *(cut authorised)***

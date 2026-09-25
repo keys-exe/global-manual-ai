@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer-auto
-description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.56.0, Appendix E0/E11). Load ONLY when the user explicitly says "we will use automation" or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
+description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.57.0, Appendix E0/E11, §22U). Load ONLY when the user explicitly says "we will use automation" or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
 ---
 
 # AI Prompt Engineer — Automatic run mode
@@ -10,7 +10,7 @@ description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.5
 **This skill adds execution; it changes no craft.** Load `ai-prompt-engineer` first and follow it for every prompt. The master file `standards/AI_Prompt_Engineer_Global_Standards.md` wins over this summary. Before the first call, read these sections by grepping their headings:
 
 ```
-Grep  pattern="^## E(0|1|2|3|7|9|11)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
+Grep  pattern="^## (E(0|1|2|3|7|9|11)|22U)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
 ```
 
 ## 1. Start of run — before any credit is spent
@@ -24,6 +24,7 @@ Grep  pattern="^## E(0|1|2|3|7|9|11)\."  path="standards/AI_Prompt_Engineer_Glob
    ```
    `ffmpeg` path: `python3 -c "import imageio_ffmpeg as f; print(f.get_ffmpeg_exe())"`.
 5. Run §18 steps 1–5 exactly as in Manual and ship them as one delivery.
+6. **Voice pipeline first** — for every speaking character, run §22U (section 5 below) before any talking-head beat is rendered.
 
 ## 2. The loop — per batch
 
@@ -49,6 +50,8 @@ For every batch, in this order:
 | **Hooks** | §18 step 6 — unchanged; the user approves each hook |
 | **Final review** | Every approved beat, the QA table, the queued human checks and the trimmed clips — before the CapCut block |
 | **Credit cap** | A batch would cross the cap |
+| **Voice clone** | §22U step 6 — the user clones in ElevenLabs and gives the voice ID (skipped only if `ELEVENLABS_API_KEY` is set) |
+| **Voice master** | §22U step 10 — the user hears the chosen master before any HeyGen render |
 | **Escalation** | Any E2 class that reaches HUMAN |
 
 Nothing else stops the run. Between stops, report only in the batch deliveries and QA tables.
@@ -56,7 +59,7 @@ Nothing else stops the run. Between stops, report only in the batch deliveries a
 ## 4. Trim pass (E11)
 
 ```
-python3 .claude/skills/ai-prompt-engineer-auto/scripts/trim.py builds/<build>/renders/<BEAT-ID>.mp4 \
+python3 .claude/skills/ai-prompt-engineer/scripts/trim.py builds/<build>/renders/<BEAT-ID>.mp4 \
     --out builds/<build>/trim/<BEAT-ID>.trim.mp4 [--keep START:END ...]
 ```
 
@@ -77,7 +80,25 @@ python3 .claude/skills/ai-prompt-engineer-auto/scripts/trim.py builds/<build>/re
 
 CapCut still does captions, overlays, motion graphics (§17A), the ambient bed, music and J-cuts. The CapCut block always ships.
 
-## 5. Never
+## 5. Voice & talking-head pipeline (§22U)
+
+Per speaking character, in order. The master file's §22U table is the rule; this is the run sheet.
+
+| # | Do | How |
+|---|---|---|
+| 1 | Talking-head image | Higgsfield T2I (E7), 9:16, 2k |
+| 2 | 10s voice source clip | Seedance ingredients, 720p, `duration: 10`, image first; opening script line within the 10s word budget; `VOICE-[CHAR]` first in delivery |
+| 3–5 | Trim → ×1.2 → loop to ≥ 30s | `python3 .claude/skills/ai-prompt-engineer/scripts/voice_source.py builds/<build>/renders/<char>_voice10.mp4 --name <Keyword> --outdir builds/<build>/voice/` |
+| 6 | Clone | **Stop:** hand the user `<Keyword>_clone_source.mp3` and the name; wait for the voice ID. (With `ELEVENLABS_API_KEY`: `POST /v1/voices/add`) |
+| 7 | Name | One keyword from the script title (`Knee`); clash → add the first name (`Knee-Maria`) |
+| 8–9 | Tag + TTS | Tag from `TAG-PALETTE`; `python3 .claude/skills/ai-prompt-engineer/scripts/tts_budget.py script.txt` → fitted text ≤ 5,000 per part; `creative_generate_speech` with `eleven_v3`, the clone ID, 4 takes; poll `creative_get_flow_run_status` |
+| 10 | Pick + save | Transcribe each take (faster-whisper) and diff against the script; judge the four criteria; save `<Keyword>_master.mp3`; **stop — the user listens** |
+| — | **Voice-only builds** (all B-roll, narrated, Mode 4/5, AI Drama) | Stop here. The master is the VO, or the Seedance `audios_list` ingredient |
+| 11 | Avatar | HeyGen `create_asset_upload` → PUT → `complete_asset_upload` → `create_photo_avatar`, one per look |
+| 12 | Split | Cut the master at sentence ends (word timestamps) into one segment per on-screen talking-head beat |
+| 13 | Render | Upload each segment; `create_video_from_avatar` with `engine: {type: "avatar_v"}`, `audioAssetId`, `9:16`, `1080p`, `motionPrompt` = the beat's gestures. Rejected → Avatar IV + `expressiveness: "high"` + `motionPrompt`, logged. Then QA and E11 trim as normal |
+
+## 6. Never
 
 - Run without the explicit call, or continue into another build.
 - Skip the step-6 gate or the final review.
