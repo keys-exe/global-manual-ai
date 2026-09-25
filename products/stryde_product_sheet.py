@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.18
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.19
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -60,7 +60,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.18"
+VERSION = "7.49.19"
 
 # --------------------------------------------------------------- slots
 
@@ -383,6 +383,19 @@ PRODUCT_SET_VIEWS = {
                 "around the ring, the near peak rising at its top edge, the near chrome slide facing the camera "
                 "with its three dotted chevrons, the band continuing round behind as a ring with the two keeper "
                 "loops on its outer face at the back."),
+    "front_view": ("Seen exactly straight-on from the front, level with the product, no turn and no tilt, as "
+                   "flat to the camera as the attached front product photo: both peaks equal, the notch dead "
+                   "centre, the wordmark centred beneath it, a chrome slide at each end, the band's two sides "
+                   "just visible leaving each slide."),
+    "back_view": ("Seen exactly straight-on from the back, level with the product, no turn and no tilt, as in "
+                  "the attached back product photo: the band crossing the front of the frame with its two black "
+                  "keeper loops side by side at the centre, the shell's plain inner face behind it with both peaks "
+                  "rising above the band, a chrome slide at each end, no wordmark visible."),
+    "side_view": ("Seen exactly from the side at ninety degrees, level with the product, looking straight at "
+                  "one end: that end's chrome slide faces the camera flat with its three dotted chevrons and the "
+                  "band threading through it, the shell curving away to one side as a rigid wrapped plate with "
+                  "the silhouette of its peaks along the top edge, the band ring running away to the other side "
+                  "with the keeper loops on its outer face at the back."),
     "macro": ("Close-up filling the frame with one end of the strap: the matte-black end of the shell, the brushed "
               "chrome slide inset flush into it with its three engraved dotted chevrons crisp, and the black "
               "coarse-knit elastic band threading through the slide and folding back on itself, the textured "
@@ -391,9 +404,10 @@ PRODUCT_SET_VIEWS = {
 
 PRODUCT_SET_HELD = (
 "Vertical 9:16 phone photo, close, of an adult's right hand holding the strap at chest height in a lived-in "
-"living room, the room soft and out of focus behind, daylight from a window to one side. One hand holds it from "
-"underneath, the shell's lower edge resting across the fingers with the thumb at its outer edge, fingers clear "
-"of the wordmark and clear of the chrome slides. The shell's front face is toward the lens, the wordmark "
+"living room, the room soft and out of focus behind, daylight from a window to one side. One hand holds it by "
+"the pad: the fingers spread flat behind the shell against its inner pad, the thumb resting on the pad at the "
+"shell's lower edge, the hand's whole grip on the pad and nowhere else -- never on the band, never on the chrome "
+"slides, nothing crossing the shell's front face, the wordmark and both slides completely clear. The shell's front face is toward the lens, the wordmark "
 "horizontal and readable, both chrome slides catching hard specular highlights, the closed band hanging down "
 "below the hand with its own weight, its tail visible. The hand is still and simply holding it. Real "
 "unretouched skin on the hand of an adult of about sixty: visible pores and fine lines across the knuckles, "
@@ -407,7 +421,7 @@ PRODUCT_SET_GEOM = (
 
 # Generated product set, V7.49.18. Agent verdicts per §22V; awaiting the
 # user's lock. Model passed nano_banana_pro, logged nano_banana_2 (routing fault).
-PRODUCT_SET_STATUS = "AGENT USE V7.49.18 -- awaiting user lock"
+PRODUCT_SET_STATUS = "AGENT USE V7.49.19 -- awaiting user lock"
 PRODUCT_SET_REFS = {
     "tq_left":  {"file": "stryde_refs/product_tq_left.jpg", "job_id": "0cdf393f-6525-4f0e-a52b-728fda2410dd",
                  "attempt": "1 of 1", "flags": ""},
@@ -423,9 +437,20 @@ PRODUCT_SET_REFS = {
     "macro":    {"file": "stryde_refs/product_macro.jpg", "job_id": "8a9b0c5d-d3d7-496a-a557-0437c94c9579",
                  "attempt": "2 of 3 -- 42629d4f REGENERATE Q2 (invented moulded frame, sideways chevrons)",
                  "flags": "strap tilted on the diagonal"},
-    "held":     {"file": "stryde_refs/product_held.jpg", "job_id": "930e3245-ad43-4bd2-902a-e22d66c77f29",
-                 "attempt": "2 of 3 -- 86093b25 REGENERATE Q2 (flat rectangular shell, no peaks)",
-                 "flags": "the bottom keeper loop reads slightly like a clip"},
+    "held":     {"file": "stryde_refs/product_held.jpg", "job_id": "972e16d9-fa9d-4fce-ab2c-c6a9276e4f0f",
+                 "attempt": ("V7.49.19 grip-on-the-pad re-roll, 1 of 1. Superseded: 930e3245 (grip not on the "
+                             "pad), 86093b25 (REGENERATE Q2, flat rectangular shell)"),
+                 "flags": "the band loops round the wrist rather than hanging free"},
+    "front_view": {"file": "stryde_refs/product_front.jpg", "job_id": "eb1e16e1-066c-4f6e-8bf0-311b962799ed",
+                   "attempt": "1 of 1", "flags": ""},
+    "back_view":  {"file": "stryde_refs/product_back.jpg", "job_id": "7921dfdf-9bda-4599-a861-9234a30b961f",
+                   "attempt": "1 of 1", "flags": ""},
+    "side_view":  {"file": "stryde_refs/product_side.jpg", "job_id": "a18b4a42-a306-41d8-8d09-2306c85393fb",
+                   "attempt": ("3 of 3 -- 18c09090 REGENERATE Q2 (slide on the band face, shell reduced); "
+                               "64d17655 REGENERATE Q2 (object tipped, band leaving the shell's bottom edge); "
+                               "3 = anchored on front_view + back_view, camera moved round an invisible "
+                               "upright leg"),
+                   "flags": ""},
 }
 # Retired V7.49.18: three_quarter_a.jpg -- its wordmark contradicts front.webp.
 # Replaced by PRODUCT_SET_REFS['tq_left'] / ['tq_right'].
@@ -445,6 +470,9 @@ PRODUCT_SET_ATTACH = {
     "tq_right": ("front.webp", "back.webp", "three_quarter_b.jpg"),
     "profile":  ("front.webp", "back.webp", "three_quarter_b.jpg"),
     "held":     ("front.webp", "back.webp"),
+    "front_view": ("front.webp", "back.webp"),
+    "back_view":  ("back.webp", "front.webp"),
+    "side_view":  ("front.webp", "back.webp"),
     "macro":    ("front.webp", "back.webp"),
 }
 
@@ -756,6 +784,12 @@ RULINGS = {
         "HIGH: top edge level with the kneecap's lower pole, notch pressed up into its underside, "
         "the lower body only just onto the top of the shin. Applies to every bent-knee worn "
         "beat (PLACE_BENT, NEG_BENT) and to PLACEMENT_REFERENCES['bent'].",
+    "held_on_pad":
+        "LOCKED V7.49.19 (user). Whenever the product is held, the grip is on the pad: fingers flat "
+        "behind the shell on its inner pad, thumb on the pad at the lower edge. Never by the band, "
+        "never by the slides, nothing across the front face. Prompts say 'the pad' / 'inner pad', "
+        "never 'silicone' (UNSETTLED['inner_face_script'] -- advertiser-stated, and the word renders "
+        "the soft glossy fake).",
     "fit_not_adjustment":
         "LOCKED V7.49.14 (user). A fit or 'adjustable' line is covered by the seating move -- "
         "closed strap, mid-shin, slid UP the front of the shin, seated on the patellar tendon "
@@ -1219,7 +1253,11 @@ def _verify_v7490():
         for f in PRODUCT_SET_ATTACH[k]:
             if f not in PRODUCT_PHOTOS:
                 fails.append("product set %s attaches an unregistered photo: %s" % (k, f))
-    if "clear of the wordmark" not in PRODUCT_SET_HELD or "One hand" not in PRODUCT_SET_HELD:
+    if "holds it by the pad" not in PRODUCT_SET_HELD or "never on the band" not in PRODUCT_SET_HELD:
+        fails.append("held frame lost the V7.49.19 grip-on-the-pad rule")
+    if "silicone" in PRODUCT_SET_HELD.lower():
+        fails.append("held prompt names silicone -- renders the shell as the soft fake")
+    if "One hand" not in PRODUCT_SET_HELD:
         fails.append("held frame lost the §9A grip rules")
     for k, v in PRODUCT_SET_REFS.items():
         if k not in PRODUCT_SET_ATTACH or not v.get("job_id"):
