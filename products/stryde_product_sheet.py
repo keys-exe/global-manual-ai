@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.21
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.22
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -62,7 +62,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.21"
+VERSION = "7.49.22"
 
 # --------------------------------------------------------------- slots
 
@@ -318,9 +318,11 @@ SIZE_LOCK = {
     "shell_height_cm":  5.0,    # peak tips to the lowest point of the bottom edge
     "band_width_cm":    2.5,    # band height, edge to edge
     "shell_aspect":     (2.3, 2.6),   # width / height, measured straight-on
-    "band_over_shell_h": (0.45, 0.60),  # edge-to-edge by eye; the --check distance
-                                        # transform reads the same band as 0.351 (front.webp) --
-                                        # different method, so RATIOS keeps its own gates
+    "band_over_shell_h": (0.45, 0.60),  # edge-to-edge by eye, confirmed on back.webp V7.49.22
+                                        # (band ~175 px vs shell ~310 px head-on). The --check
+                                        # distance transform reads the same band as 0.351 on
+                                        # front.webp: its dark threshold drops the knit's light
+                                        # fibres, so it UNDER-reads bands. RATIOS keeps its own gates.
     "notch_rise_over_w": (0.15, 0.21),  # front.webp 0.18
     "peak_span_over_w":  (0.55, 0.66),  # front.webp 0.60
     "worn_band_over_leg": (0.20, 0.28), # band height / leg width at the calf, from behind
@@ -529,10 +531,11 @@ PRODUCT_SET_REFS = {
                              "edge hiding the notch and peaks). Superseded: 972e16d9 (flat palm, not a real "
                              "hold), 930e3245 (grip not on the pad), 86093b25 (flat rectangular shell)"),
                  "flags": "one fingertip shows through the notch from behind the shell"},
-    "front_view": {"file": "stryde_refs/product_front.jpg", "job_id": "eb1e16e1-066c-4f6e-8bf0-311b962799ed",
-                   "attempt": "1 of 1",
-                   "flags": ("V7.49.21 --check: FAIL rise 0.272, peak span 0.442, peaks 12% unequal; band "
-                             "reads thick -- re-roll before locking; use front.webp as the front meanwhile")},
+    "front_view": {"file": "stryde_refs/product_front.jpg", "job_id": "81f0fb23-9472-414d-bdc8-79926db9b2af",
+                   "attempt": ("3 of 3 (V7.49.22) -- eb1e16e1 failed --check (rise 0.272, span 0.442, peaks 12% "
+                               "unequal); 314cab43 camera above the product (ring top visible); 3 = re-render of "
+                               "front.webp at level camera height. --check: all shape gates pass, peaks 2%"),
+                   "flags": "band reads 0.387 on --check (front.webp 0.351): ~10% thicker, inside SIZE_LOCK tolerance"},
     "back_view":  {"file": "stryde_refs/product_back.jpg", "job_id": "7921dfdf-9bda-4599-a861-9234a30b961f",
                    "attempt": "1 of 1", "flags": ""},
     "side_view":  {"file": "stryde_refs/product_side.jpg", "job_id": "a18b4a42-a306-41d8-8d09-2306c85393fb",
@@ -690,7 +693,8 @@ REVEAL_STATUS = {
 # object reference). The frames below stay attached until the new ones are
 # accepted by the user; then swap file/job ids here and log it.
 PLACEMENT_REFERENCES_STATUS = ("LOCKED V7.49.17 by the user -- front (f5263ed7), bent (8a8979ac, raised) and "
-                               "rear (a38bc276). Layer 1 for placement. Replaced only on a user instruction.")
+                               "rear (81992d6c, band narrowed V7.49.22 on user instruction; was a38bc276). "
+                               "Layer 1 for placement. Replaced only on a user instruction.")
 PLACEMENT_REFERENCES = {
     "front": {
         "file": "stryde_refs/worn_front.jpg",
@@ -722,14 +726,17 @@ PLACEMENT_REFERENCES = {
     },
     "rear": {
         "file": "stryde_refs/worn_rear.jpg",
-        "job_id": "a38bc276-9e83-48b4-86ae-8e5fd8192fcc",
+        "job_id": "81992d6c-dbf2-406d-95eb-cf5a941d5ed9",
+        "edit_of": ("a38bc276 (locked V7.49.17) -- V7.49.22 user-ordered band fix: band/leg 0.33 -> "
+                    "about 0.27, everything else unchanged"),
         "higgsfield_media": "use the job_id as the medias value",
         "model_passed": "nano_banana_pro", "model_logged": "nano_banana_2",
         "attempt": "1 of 1",
         "reads": ("right knee from behind, standing; the band crosses BELOW the hollow, across the top of the "
                   "calf, the knee's bulge bare above; two black keeper loops side by side at the centre rear "
                   "exactly as back.webp; straight band edges; a chrome slide as a bright bar at each side; "
-                  "no shell, wordmark or fastening at the rear; band about a third of the leg's width."),
+                  "no shell, wordmark or fastening at the rear; band about a quarter of the leg's width "
+                  "(0.27, V7.49.22)."),
     },
 }
 
@@ -1375,7 +1382,7 @@ def _verify_v7490():
     if not PLACEMENT_REFERENCES_STATUS.startswith("LOCKED"):
         fails.append("worn placement references are not locked")
     if [PLACEMENT_REFERENCES[k]["job_id"][:8] for k in ("front", "bent", "rear")] != \
-            ["f5263ed7", "8a8979ac", "a38bc276"]:
+            ["f5263ed7", "8a8979ac", "81992d6c"]:
         fails.append("a locked worn reference was swapped without a user instruction")
     if len(DEMONSTRATION_TABLE) != 7:
         fails.append("DEMONSTRATION_TABLE must carry the seven §30B rows")
@@ -1702,7 +1709,7 @@ The global Standards are product-agnostic from V7.49.4. Everything below used to
 | Worn | shell spans the leg's whole front width, about as tall as the kneecap; band about a quarter of the calf's width (`SIZE_WORN`) |
 | Held | shell five to six thumb-widths across, as tall as the thumb is long; band a little wider than the thumb (`SIZE_HELD`) |
 
-A frame more than ~20% off its anchor is REGENERATE Q2. Measured drift in the current set: `worn_rear.jpg` band reads ~0.33 of the leg (target 0.20–0.28, a little wide); `product_front.jpg` band reads ~0.7 of the shell's height (target 0.45–0.60, a little thick). Both are flagged, not re-rendered. The `--check` geometry gates stay in their own units (a distance-transform band reading), so `front.webp` passes them; `product_front.jpg` fails three shape gates (rise 0.272, peak span 0.442, peaks 12% unequal) and is due a re-roll before it is locked.
+A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and fixed V7.49.22: `worn_rear.jpg` band 0.33 of the leg → re-rolled to ~0.27 (edit, everything else unchanged); `product_front.jpg` failed three `--check` shape gates → re-rolled level and now passes them all. The `--check` gates stay in their own units: its band reading under-reads the knit (0.351 on `front.webp` for a band that is about half the shell's height edge to edge, confirmed on `back.webp`).
 
 ---
 
