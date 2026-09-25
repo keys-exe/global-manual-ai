@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.60.6 — supersedes all prior versions.** *(Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.60.7 — supersedes all prior versions.** *(Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -1925,7 +1925,7 @@ Every step carries a class:
 | 2 | **Absorb script, product, Product Sheet — and lock mode and model** | DET | The `.md` + `.py` pair, created where absent. §43A claims pass — every figure tiered before anything builds against it. **The phrase inventory is built here** (§27B): a mechanical pass over the script as written. **The Mode & Model Lock is written here (§18A)** — mode per act, image model per beat class, read off what the script demands. Every other lock resolved here — camera, format, tools, mechanism claim, declared side |
 | 3 | **Cast — everyone who recurs** | DET *(render dependency)* | **Every subject with two or more beats on the step-2 inventory** — the narrator, every named side character, **and every anonymous B-roll subject who recurs** (`S-01`, `S-02`…) — gets a full §19 reference sheet — one prose generation, 9:16, no reference — passed through the §19 panel check before it is attached anywhere. Identity strings locked from what rendered, never from what was prompted (§7 applied to our own output). Ships per sheet: §19A axis table with clearance counts; **speaking characters additionally** get `VOICE-[CHAR]` roster-cleared and a full §20 constraint sheet. One-off subjects are not sheeted (§13). **Sent, then straight on** |
 | 4 | **Property and location maps** | DET | The §30C Location Derivation Pass over the step-2 phrase inventory, **opening with channel C0 — which locations are rooms of one dwelling.** Where two or more are, the **Property Sheet is written and its property plate generated and checked first (§30G)**, before any location plate is built against it. Five-part Location Sheets, §22A lighting profiles reconciled to the property's orientation, plates rendered for **PLATED locations only** — never for INCIDENTAL or **TRAVERSED** ones (§30C 1a), both of which still carry the property plate where they are interiors of the dwelling. Four set-level checks run. **The location set closes here.** **Sent, then straight on** |
-| 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims |
+| 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims. **Automatic (V7.60.7): written only after every step-3 sheet and step-4 plate has passed E1**, with identity strings and plate facts read off the renders; B-roll `duration` is `pending-master` until the voice master exists (E4, E6) |
 | 6 | **Hooks, one by one** | AC → **HG** | Serial: deliver → generate → first-frame check (§5/§30C/§30E) → confirm → next. Seeds built against plates that already exist. Confirmed renders feed the Scene and Subject Registries as they land. **The only gate** in Manual; in Automatic the agent confirms (E0) |
 | 7 | **B-roll and body acts** | DET | Executing step 5's dispositions in the §30E assembly order — motion arc first, start frame derived, plates attached, strings by register, model routed. `TH`-carried lines get no cutaway on purpose. Each act delivery ends on its §27B reconciliation line |
 | 8 | **CapCut block** | DET | Cover points, J-cuts, designed-silence list, sync triage, motion-graphics layer, supplied-asset cut-ins (§40) — last and separate |
@@ -7483,6 +7483,7 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | **QA** | Every render is downloaded and checked against E1. AUTO checks run by instrument. **HUMAN checks are the agent's (V7.60.6)**: a pass proceeds, a fail takes the E2 remedy, and an uncertain read is decided by the agent on the stricter reading — nothing is queued. This covers images (§22V), video (§22W), the §28F closure/sync check, voice (§22D) and Mode 4/5 performance. **When E2's retries run out**, the agent keeps the best attempt, logs why, and lists it under *Flags* in the final report — the run does not stop |
 | **Trim** | Every talking-head clip that passes QA goes through the E11 trim pass before final review |
 | **Intake** | An Intake Pack or Drive intake message with `RUN: AUTOMATION` starts the run; cast sheets, the property plate and location plates are generated straight after absorption (§18B) |
+| **Run order** *(V7.60.7)* | Strict, each stage finished before the next starts: (1) absorb inspo, script, product — §18 steps 1–2; (2) **cast** — every §19 sheet generated and passed; (3) **property plate, then every location plate** — generated and passed; (4) **act map and wardrobe map** (§18 step 5) — built from what rendered, B-roll durations `pending-master`; (5) **hooks written** (text only, §30H) and confirmed by the agent; (6) **voice** — Mode 1–3: §22U steps 1–10 for body and hooks → master; Mode 4/5/AI Drama: §24I masters; (7) **B-roll durations filled** from the master (E6); (8) hook beats, then body B-roll and talking heads; (9) assembly and hook variants (§30H); (10) final delivery |
 | **Film voices** | §24I voice masters are generated, checked and stored untouched; E11 never runs on them |
 | **Voice pipeline** | §22U runs in order, **before any B-roll call** (the master times every B-roll, E6). Step 6 (clone) runs by API through `scripts/elevenlabs_clone.py` and does not stop the run (Automatic only — Manual keeps the §22U step-6 HUMAN clone, V7.60.4); `elevenlabs_clone.py check` runs at the start of the run, before the first paid call — a missing key or a failed check stops the run there. The agent picks the step-10 master itself (V7.60.6) |
 | **Record** | The ledger is the record. Every reroll, every changed prompt and every trim is logged with its reason; a changed prompt is saved as a new iteration (§16) |
@@ -7580,6 +7581,8 @@ One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t
 
 **`story_day` and `capture_event_id` are mandatory on every row** *(added V7.48.8)*. `wardrobe_ref` resolves through `story_day` to an outfit row and through `capture_event_id` to its event line (§14A). A row carrying a `wardrobe_ref` but no `story_day` is the failure this correction removes — the ledger keyed to something the map did not have.
 
+**`duration` (V7.60.7).** Talking-head and dialogue rows take the E6 words→duration value at step 5. **B-roll rows are written `pending-master` at step 5** and filled from the voice master's word timestamps (E6) before any B-roll call; a row still `pending-master` is never submitted.
+
 ## E5. Slot-fill manifest
 
 | Slot | Source | Procedure |
@@ -7606,7 +7609,8 @@ One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t
 Words at pace → duration: brisk ≤9 → 5s · unhurried ≤8 → 5s · brisk 10–20 → 10s · unhurried 9–18 → 10s · above → split the line per §29. Talking-while-doing always reads the unhurried column. **B-roll duration = the script line it covers** *(V7.60.6 — replaces the fixed 5s / 3s B-roll durations)*. Every B-roll clip — mechanism, anatomy, product and object beats included — is generated as long as the spoken span it is placed on (§30H): the line, or the phrase where §27 splits a line across several B-rolls.
 - **Measured, not estimated:** the span is read from the voice master's word timestamps (first word start → last word end). In Automatic the voice master is made before any B-roll call, so every B-roll duration is measured.
 - **Call duration** = span + 0.5s handle, rounded **up** to the next whole second, within the model's range — Kling 3.0 3–15s. A span needing under 3s gets 3s and is cut to the span in assembly; a span over 15s is split at a word boundary into two clips.
-- **Never a default length.** A B-roll call without a measured span is not submitted.
+- **No voice master over the line** (Mode 4/5/AI Drama dialogue scenes, voiced in-clip by Seedance): the span is the E6 words→duration estimate at the scene's pace, recorded as `estimated` in the ledger (V7.60.7).
+- **Never a default length.** A B-roll call without a span — measured, or estimated where no master covers the line — is not submitted.
 
 Superseded B-roll rule, kept for reference: B-roll calls: 5s (the Higgsfield floor; Wan 2–30s and Seedance 4–30s where routed there, still 5s unless the demonstration needs longer); mechanism on Kling-direct: 3s; `ANAT-STRESS-R` and whole-arc beats: 5s minimum. Aspect: 9:16, locked — never overridden, never letterboxed. Resolution per §4; **Seedance 720p always**.
 
@@ -7787,6 +7791,20 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 ---
 
+# CHANGELOG — V7.60.6 → V7.60.7 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **E0** | **Run order** row: absorb → cast sheets passed → property and location plates passed → act map + wardrobe map → hooks written → voice master → B-roll durations filled → hook beats, body → assembly and variants → final delivery |
+| **18** | Step 5 in Automatic waits for every step-3 sheet and step-4 plate to pass; B-roll durations `pending-master` |
+| **E4** | `duration`: B-roll rows `pending-master` at step 5, filled from the master before any B-roll call |
+| **E6** | Film dialogue scenes with no master over the line use the words→duration estimate, logged `estimated` — closes a V7.60.6 gap that would have blocked them |
+| Files | Automation skill run order |
+
+**Origin:** user check — the act map and wardrobe map come after all avatars and location plates are made.
+
+---
+
 # CHANGELOG — V7.60.5 → V7.60.6 *(cut authorised)*
 
 | § | Change |
@@ -7799,21 +7817,6 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | Files | Automation skill; session hook adds `auto-editor` |
 
 **Origin:** user rule — the agent approves everything and gives only the final results after the Drive link; Higgsfield images, Kling B-roll, Kie Seedance; B-roll length follows the script line.
-
----
-
-# CHANGELOG — V7.60.4 → V7.60.5 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **22U** | **Every voice starts as a Seedance clip (locked).** Never ElevenLabs Voice Design, never a library/premade/shared voice. ElevenLabs only clones the step-5 source and speaks the script in that clone |
-| 22U step 7 | A clone name already on the account is refused; `--character` adds the first name |
-| 22D | TTS regime and its casting gate retired; bookended builds voice bookends and narration from one clone |
-| 4 | Audio 1 reference comes from the §22U clone master, not a cast TTS voice |
-| E7 | Clone template includes the name check |
-| Files | `scripts/elevenlabs_clone.py` (`--character`, name check) |
-
-**Origin:** user rule — voices always come from a Seedance clip with the audio extracted there; ElevenLabs Voice Design is never used.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.60.6) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.60.7) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -39,7 +39,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Formats (§3, §3A, §3B).** Identify the build type first; if unclear, ask. Default Short VSL or UGC Ad. Long VSL, Narrated B-roll and AI Drama VSL only on explicit request.
 
-**Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs — every character's voice is cloned and voiced in Eleven v3 by the §22U pipeline. **Every voice starts as a Seedance clip, audio extracted there — never ElevenLabs Voice Design, never a library/premade voice** (§22U, V7.60.6). Talking heads: HeyGen Avatar V driven by that audio (§22U; §36/§38 are the fallback). Post: CapCut. **Connectors are strict (§5):** images → Higgsfield (out of credits → Kie AI API, same models incl. Sunburst, logged, no switch back); Kling → Kling connector; Seedance 2.5 → **Kie AI API** via `scripts/kie.py` (`KIE_API_KEY`), not the Higgsless connector. Local files get public URLs through Kie upload (temporary). Nothing else falls back.
+**Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs — every character's voice is cloned and voiced in Eleven v3 by the §22U pipeline. **Every voice starts as a Seedance clip, audio extracted there — never ElevenLabs Voice Design, never a library/premade voice** (§22U, V7.60.5). Talking heads: HeyGen Avatar V driven by that audio (§22U; §36/§38 are the fallback). Post: CapCut. **Connectors are strict (§5):** images → Higgsfield (out of credits → Kie AI API, same models incl. Sunburst, logged, no switch back); Kling → Kling connector; Seedance 2.5 → **Kie AI API** via `scripts/kie.py` (`KIE_API_KEY`), not the Higgsless connector. Local files get public URLs through Kie upload (temporary). Nothing else falls back.
 
 **Script is spoken verbatim (§22U, locked).** The ElevenLabs text is the script's spoken lines word for word — never add, remove, change or re-order a word; never send the title, headings, links or visual notes. Only audio tags may be added. Extract with `scripts/script_lines.py`, lock with `tts_budget.py --script-lines` (any difference = FAIL, not sent). A wrong-looking line is flagged, never fixed. Agent-written hooks are voiced separately, only after step-6 approval.
 
@@ -274,9 +274,10 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 
 **OPEN DECISIONS**
 
+**CHANGELOG — V7.60.6 → V7.60.7 *(cut authorised)***
+
 **CHANGELOG — V7.60.5 → V7.60.6 *(cut authorised)***
 
-**CHANGELOG — V7.60.4 → V7.60.5 *(cut authorised)***
 
 
 

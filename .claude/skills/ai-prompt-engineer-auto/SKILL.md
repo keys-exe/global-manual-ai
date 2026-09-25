@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer-auto
-description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.60.6, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
+description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.60.7, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
 ---
 
 # AI Prompt Engineer — Automatic run mode
@@ -29,14 +29,20 @@ Grep  pattern="^## (E(0|1|2|3|7|9|11)|5|18B|22U|22V|22W|24I|30H)\."  path="stand
    ```
    The repo's session start hook already runs this; re-run only if an import fails.
    `ffmpeg` path: `python3 -c "import imageio_ffmpeg as f; print(f.get_ffmpeg_exe())"`.
-5. **Intake → steps 1–5 (§18B).** Drive: `python3 .claude/skills/ai-prompt-engineer/scripts/fetch_drive.py <BUILD> <folder link>`; links: `fetch_inspo.py <BUILD> <links…>`. A missing script, unreadable document or FETCH_FAILED link that blocks absorption is reported before any credit is spent — the one message allowed before the final delivery. Then absorb, and **generate every cast sheet (§19 panel check), the property plate (§30G) and every location plate (§30C)** — QA each per E1 — and save steps 1–5 to Drive `01_ABSORPTION`… (not sent).
-6. **Voice route by mode** — Mode 1–3: §22U (section 5 below) **before any B-roll or talking-head call** — the master times every B-roll (E6). **Mode 4, 5, AI Drama: section 6 below** — no §22U, no HeyGen.
+5. **Intake → steps 1–5 (§18B).** Drive: `python3 .claude/skills/ai-prompt-engineer/scripts/fetch_drive.py <BUILD> <folder link>`; links: `fetch_inspo.py <BUILD> <links…>`. A missing script, unreadable document or FETCH_FAILED link that blocks absorption is reported before any credit is spent — the one message allowed before the final delivery. Then run **in this order — each stage finished and passed before the next starts** (E0 run order, V7.60.7):
+   1. **Absorb** the inspo, script and product (§18 steps 1–2).
+   2. **Cast** — every §19 avatar sheet generated and passed (panel check); identity strings read off the renders.
+   3. **Plates** — the property plate first (§30G), then every location plate (§30C), each generated and passed.
+   4. **Act map + wardrobe map** (§18 step 5) — only now, built from what the sheets and plates rendered. B-roll `duration` = `pending-master` (E4).
+   5. **Hooks** — write the text (§30H) and confirm it yourself.
+6. **Voice** (run order stage 6) — Mode 1–3: §22U (section 5 below) for body and hooks → master. **Mode 4, 5, AI Drama: section 6 below** — no §22U, no HeyGen.
+7. **Fill B-roll durations** from the master's word timestamps (E6); film dialogue lines with no master use the words→duration estimate, logged `estimated`. Then section 2's loop: hook beats first, then body B-roll and talking heads, then assembly and variants. Save every stage to Drive `OUTPUT/` (not sent).
 
 ## 2. The loop — per batch
 
 For every batch, in this order:
 
-1. **Write the prompts** per the Manual rules (§16, §16B) and save them to the build tree and Drive — not sent. **B-roll duration (E6):** each clip = the span of the line or phrase it covers on the master's word timestamps + 0.5s, rounded up, Kling 3–15s (span < 3s → 3s, cut in assembly; > 15s → split at a word). Never a default length.
+1. **Write the prompts** per the Manual rules (§16, §16B) and save them to the build tree and Drive — not sent. **B-roll duration (E6):** each clip = the span of the line or phrase it covers on the master's word timestamps + 0.5s, rounded up, Kling 3–15s (span < 3s → 3s, cut in assembly; > 15s → split at a word). Never a default length; a row still `pending-master` is never submitted.
 2. **Credit check** — balance + this batch's cost ≤ cap, else stop (E2 `CREDIT_CAP`). Never raise the cap yourself.
 3. **Submit** on the E7 call templates. T2I completes before any I2V (`jobs_wait` or the platform's poll). Log every job ID in the ledger.
 4. **Fetch the result** — download the output URL to `builds/<build>/renders/<BEAT-ID>.<ext>` with `curl -sSL -o`. If the download is refused, say so; never describe a render you have not opened.
