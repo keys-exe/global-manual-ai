@@ -75,3 +75,21 @@ Direction: from "Can I show you something?" Barbara moves her chair round and si
 
 From C02's "Can I show you something?" onwards, round-3 frames F04–F10 are superseded by F20–F30. F01–F03 still cover the opening at the original seating.
 Lesson: write the body mechanics into every prompt (weight, feet, knee angle, cloth), and build each movement beat as an edit of its neighbour so the action reads as one continuous motion.
+
+## Round 5: Barbara backs up to show the strap, then moves beside for the tendon
+
+Direction: Barbara backs her chair up and faces Margaret to show the strap. For the demonstration she gets up and moves beside Margaret.
+
+| Beat | Job | Result |
+|---|---|---|
+| SC05-F31-BACK-UP (edits a–d) | 7a8d0be6 / 91e2fd39 / c78a19f2 / f0882ce7 | FAIL: the edit kept her at the table edge |
+| SC05-F31-BACK-UP | 6cff3a38-3af4-422e-ac47-92b76f239a4b | PASS: fresh frame on master 1; chair out on open floor, facing Margaret |
+| SC05-F32-HITCH-ACROSS | 30e6132a-4fea-448f-9b3d-d61cca6197c9 | PASS: draws the trouser up; Margaret leans over the table corner |
+| SC05-F33-REVEAL-ACROSS | 1417587c-4bff-4fbf-bad3-8e9c8cc10cb2 | PASS: knee turned to Margaret, strap under the kneecap |
+| SC05-F34-KNEE-INSERT | 7aca7e70-5307-4b3e-8aa1-4c663d1df554 | PASS: side view, Margaret soft behind |
+| SC05-F35-B-MCU-BACKED (a) | cb0fadd9-3ba4-4b03-8478-f895b5379bb5 | FAIL: reads as sitting on the floor |
+| SC05-F35-B-MCU-BACKED (b) | e4d22aa5-42a6-47f9-90f5-2462e6c1e6ce | PASS: on her chair, back door behind |
+| SC05-F36-M-CU-ACROSS | d89e5b1a-f7cc-4b18-bc59-49edf08b36e2 | PASS: "That little thing?" |
+
+Order: F01 → F03 → F31 back up → F32 hitch → F33 reveal → F34 insert → F35/F36 talk across (C03–C06) → F20 moves her chair → F21 sits beside → F11 master 2 → F22 draws the trouser up again → F27 tendon (C07–C08) → F25/F26, F28/F29 → F30 palm.
+F23/F24 (reveal already beside her) are moved to rejected/ because the reveal now happens across the gap.
