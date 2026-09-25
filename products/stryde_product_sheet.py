@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.26
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.27
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -67,7 +67,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.26"
+VERSION = "7.49.27"
 
 # --------------------------------------------------------------- slots
 
@@ -422,7 +422,8 @@ PACKAGE_ATTACH = ("front.webp", "back.webp")
 
 # Generated V7.49.24, agent verdict USE (§22V); awaiting the user's lock.
 # Model passed nano_banana_pro, logged nano_banana_2 (routing fault).
-PACKAGE_REFS_STATUS = "AGENT USE V7.49.24 -- awaiting user lock"
+PACKAGE_REFS_STATUS = ("LOCKED V7.49.27 by the user -- closed e8c4df4b, open a9409405. "
+                       "Replaced only on a user instruction.")
 PACKAGE_REFS = {
     "closed": {"file": "stryde_refs/package_closed.jpg", "job_id": "e8c4df4b-ceb4-404f-ac1d-989f2e8b9154",
                "attempt": "1 of 1", "flags": ""},
@@ -729,6 +730,8 @@ REFS_USE = {
     "worn_front": ("stryde_refs/worn_front.jpg",),
     "worn_bent":  ("stryde_refs/worn_bent.jpg",),
     "worn_rear":  ("stryde_refs/worn_rear.jpg",),
+    "package_closed": ("stryde_refs/package_closed.jpg",),   # V7.49.27, locked
+    "package_open":   ("stryde_refs/package_open.jpg",),
 }
 REFS_USE_STATUS = "LOCKED V7.49.23 by the user"
 HELD_EXAMPLE = "stryde_refs/product_held.jpg"   # an example of grip 1 only -- never locked, optional
@@ -744,6 +747,7 @@ _SHOT_EXTRA = {
     "side": ("side",), "macro": ("macro",), "held": (),
     "worn_front": ("worn_front",), "worn_bent": ("worn_bent",), "worn_rear": ("worn_rear",),
     "seating": ("worn_front",),
+    "package_closed": ("package_closed",), "package_open": ("package_open",),
 }
 
 
@@ -1815,6 +1819,9 @@ def verify(verbose=False):
         fails.append("PACKAGE_LOCK lost the always-two rule")
     if "Buy 1 Get 1 Free" in PACKAGE_LOCK or "Buy 1 Get 1 Free" in "".join(package_prompts().values()):
         fails.append("offer text must never be generated on the box (§17)")
+    if not PACKAGE_REFS_STATUS.startswith("LOCKED") or \
+            [PACKAGE_REFS[k]["job_id"][:8] for k in ("closed", "open")] != ["e8c4df4b", "a9409405"]:
+        fails.append("the locked box references were changed without a user instruction")
     for k, v in PACKAGE_REFS.items():
         if v["file"] and not os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), v["file"])):
             fails.append("package ref %s file missing" % k)
@@ -1945,6 +1952,7 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 | Close-up of slide or band | + `product_macro.jpg` |
 | Worn — straight, bent, rear | + `worn_front.jpg`, `worn_bent.jpg` or `worn_rear.jpg` |
 | Putting it on | + `worn_front.jpg` (the end position) |
+| Box — closed / open | + `package_closed.jpg` or `package_open.jpg` (locked V7.49.27) |
 | Held | the two originals only; `product_held.jpg` is an optional example of one grip, **not locked** — pick a grip from `HELD_GRIPS` |
 
 Never more than the two originals plus one. **Retired:** `product_front.jpg`, `product_back.jpg`, `product_profile.jpg`, `three_quarter_a.jpg`, `three_quarter_b.jpg`, and the never-stored composite `STRYDE_reference_v7_49_11.png`. Image plus names is the pair; either alone leaks.
@@ -2085,7 +2093,7 @@ A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and
 
 **Our box** (`PACKAGE`, `PACKAGE-LOCK`, `NEG-PACKAGE`): a rigid two-piece box, matte black all over, about 28 × 16 × 8 cm. The only print is the lowercase grey stryde wordmark centred on the lid, in the same lettering and grey as the shell. Inside, a matte-black insert holds **exactly two straps** side by side, bands closed, shells up, wordmarks readable. No other items, no text, no stickers. The size is a rendering spec until the real box exists.
 
-**Box references** (`PACKAGE_REFS`, awaiting your lock): `package_closed.jpg` (e8c4df4b) and `package_open.jpg` (a9409405): straps **lie flat** (the band is soft), shell face up, one piece, band folded under (V7.49.26). For box beats attach the box reference plus `front.webp` + `back.webp`.
+**Box references** (`PACKAGE_REFS`, **locked V7.49.27**): `package_closed.jpg` (e8c4df4b) and `package_open.jpg` (a9409405): straps **lie flat** (the band is soft), shell face up, one piece, band folded under (V7.49.26). For box beats attach the box reference plus `front.webp` + `back.webp`.
 '''
 
 
