@@ -1,0 +1,153 @@
+{
+ "2baqdPMjT7hW66E19TDG": {
+  "dur": 77.28,
+  "diff": [
+   [
+    "replace",
+    "feet all",
+    "fetal"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ]
+  ],
+  "cuts": [
+   4.4,
+   8.82,
+   13.76
+  ],
+  "gaps": [
+   [
+    4.04,
+    4.76
+   ],
+   [
+    8.46,
+    9.18
+   ],
+   [
+    13.46,
+    14.06
+   ]
+  ]
+ },
+ "3oxVQwX6A3skqRLYMczK": {
+  "dur": 80.16,
+  "diff": [
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ]
+  ],
+  "cuts": [
+   4.46,
+   9.23,
+   14.26
+  ],
+  "gaps": [
+   [
+    4.12,
+    4.8
+   ],
+   [
+    8.9,
+    9.56
+   ],
+   [
+    14.02,
+    14.5
+   ]
+  ]
+ },
+ "H8WKX1YAAElMu9TLyHzF": {
+  "dur": 79.28,
+  "diff": [
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ]
+  ],
+  "cuts": [
+   4.35,
+   8.75,
+   13.49
+  ],
+  "gaps": [
+   [
+    4.0,
+    4.7
+   ],
+   [
+    8.36,
+    9.14
+   ],
+   [
+    13.12,
+    13.86
+   ]
+  ]
+ },
+ "ZzBlBJ4fBT3haBAlh0Rp": {
+  "dur": 82.56,
+  "diff": [
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "silicone",
+    "silicon"
+   ],
+   [
+    "replace",
+    "sports",
+    "sport"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ]
+  ],
+  "cuts": [
+   4.5,
+   9.63,
+   14.73
+  ],
+  "gaps": [
+   [
+    4.0,
+    5.0
+   ],
+   [
+    9.08,
+    10.18
+   ],
+   [
+    14.26,
+    15.2
+   ]
+  ]
+ }
+}

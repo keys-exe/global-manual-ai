@@ -1,41 +1,37 @@
 # Narrator VO — §22U steps 6–10 (stryde-identity)
 
-**Clone (step 6–7):** done by API on the user's instruction ("clone the voice and generate the VO"), 2026-09-26 09:30 UTC.
-`Identity-Narrator` · voice ID **`F5vpA7jC44a7w7td6GdQ`** · source `voice/Identity_clone_source.mp3` (41.27s) · background-noise removal on.
-The name `Identity` was already on the account (Carol, `identity-callout-v2`, `bZKwARZ93x98MmNw9MTG`), so the suffix was added (§22U step 7).
+**Clone (steps 6–7):** by API on the user's instruction, 2026-09-26 09:30 UTC. `Identity-Narrator` · voice ID
+**`F5vpA7jC44a7w7td6GdQ`** · source `voice/Identity_clone_source.mp3` (41.27s) · background-noise removal on.
+`Identity` was already on the account (Carol, `identity-callout-v2`), so the suffix was added (§22U step 7).
 
-**Text (step 8):** `script.lines` verbatim, tags only. Lock `tts_budget.py --script-lines`: **PASS** on HK1, HK2, HK3 and BODY
-(the hook lines keep the script's quote marks; they are not spoken). Body 1,113 chars, rung 1 (full tagging), 8 tags.
-Tags: hooks `[serious]`; body `[serious]` → `[confident]` (numbers) → `[warm]` / `[measured]` (the stress-register turn on
-"Not because the arthritis has gone") → `[casual]` → `[building anticipation]` (offer) → `[sincere]` → `[gentle]`.
+## One-go VO (user's instruction, 2026-09-26 09:47 UTC)
 
-**TTS (step 9):** ElevenLabs connector, `eleven_v3`, 4 takes each. Flows: BODY `kWZLwIiKsVXE1o6lnplN` · HK1 `McNGpaB8c7KTL5Q2VAIB` ·
-HK2 `txKDkP2aeydTxUO5AHhv` · HK3 `EqRsRhlnpdSqVxfUyQcM`. HK3 take 4 failed (account concurrency limit, 15), so HK3 has 3 takes.
-Spend ≈ 4 × 1,113 + 8 × 85 + 3 × 98 ≈ 5,425 ElevenLabs credits.
+"Generate it in one go, all hooks and body, for consistent voice-over, then trim them. Delete the previous ones."
+The first round (hooks and body as separate requests) was deleted from the board, the build tree and ElevenLabs history.
 
-## Body — checked against the script (medium.en transcript), then E11 trim
+**Text (step 8):** `ALL.tagged.txt` = HK1, HK2, HK3, body, in script order, one request. Lock against the whole
+`script.lines`: **PASS** · 1,354 chars · rung 1 · 8 tags (`[serious]` opens; body tags as before, its opening
+`[serious]` dropped because HK1's already sets it).
 
-| Take | Raw | Words (1) | Gaps > 0.6s | After E11 trim | Verdict |
-|---|---|---|---|---|---|
-| **T1 `gjdy…`** | 77.52s · 129 wpm | ✓ | 14 | **59.90s** (−17.70s) · ~176 wpm · no gap > 0.4s · PASS | **Recommended master** |
-| T2 `ACeF…` | 80.40s · 124 wpm | ✓ | 14 | 59.95s (−20.51s) · PASS | alternate |
-| `Fuxv…` | 70.72s | ✗ "the arthritis **is** gone" | 12 | — | out on (1) |
-| `h2Rk…` | 80.64s | ✗ "the arthritis **is** gone" | 17 | — | out on (1) |
+**TTS (step 9):** ElevenLabs connector, `eleven_v3`, 4 takes, flow `tEAVkrzG6BhDg0yzhlqU` (≈ 5,416 credits).
 
-All raw takes paused ~0.6–1.5s at every line break (124–141 wpm against `VOICE-NARR`'s ~185). The E11 trim
-closes that air between words only — no word is touched — and brings the body to the reference's pace
-(≈ 5s hook + 60s body, as the absorption forecast). The untrimmed files stay beside the trims.
-`trim.py` got an audio-only path in this session (it assumed a video stream).
+**Split** (`split_vo.py`): medium.en word timestamps on each full take → cut in the middle of the silence after
+"bone." / "work." / "anymore." → `HK1` `HK2` `HK3` `BODY`. **Trim** (E11, `trim.py`): every piece, air between words only.
 
-## Hooks — every take verbatim (small.en), no gaps
+| Take | History id | Full | HK1 | HK2 | HK3 | Body (trimmed) | Words |
+|---|---|---|---|---|---|---|---|
+| T1 | `2baqdPMjT7hW66E19TDG` | 77.28s | 3.92 | 3.87 | 4.34 | 50.34s · ~210 wpm | ✓ |
+| **T2** | `3oxVQwX6A3skqRLYMczK` | 80.16s | 3.97 | 4.18 | 4.41 | **53.08s · ~199 wpm** | ✓ |
+| T3 | `H8WKX1YAAElMu9TLyHzF` | 79.28s | 3.87 | 3.79 | 4.02 | 50.96s · ~207 wpm | ✓ |
+| T4 | `ZzBlBJ4fBT3haBAlh0Rp` | 82.56s | 3.89 | 4.21 | 4.26 | 53.32s · ~198 wpm | ✓ |
 
-| Hook | Takes (s · wpm · F0) | Pick by measurement |
-|---|---|---|
-| HK1 | T1 3.92·236·114 · **T2 3.92·236·118** · T3 4.00·231·114 · T4 4.00·234·115 | T2 |
-| HK2 | T1 4.32·229·115 · T2 4.32·233·113 · **T3 4.64·216·119** · T4 4.88·202·117 | T3 |
-| HK3 | **T1 4.72·211·119** · T2 5.04·203·113 · T3 5.20·196·119 | T1 |
+Words: every take has every word in order — checked on the full take (medium.en) and again on each trimmed piece;
+the two small-model doubts (T2 "has gone", T1 "feet all day") were re-read with medium.en beam 5 and are correct.
+All 16 trims PASS E1 (entry ≤ cap, tail ≤ cap, no gap > 0.4s).
 
-Seam: the body's opening line measures 116–119 Hz (T1/T2), the hooks 113–119 Hz — no pitch jump at hook → body.
+**Recommended: T2** — pace closest to the reference's 191 wpm, and every word read cleanly by both models.
+T4 is the same pace; T1/T3 run faster (~207–210 wpm). Each variant = HKn + BODY of the **same take**, so the
+voice is identical across the seam.
 
-**Step 10 (Manual): the user listens and picks** one body master and one take per hook (board, stage Voice). The picks
-by measurement are above; accent and realism are the ear's call (unverified by instrument).
+**Step 10 (Manual): the user listens and picks the take** (board → Voice, cards `VO-T<n>-<part>`). Accent and
+realism are the ear's call (unverified by instrument).
