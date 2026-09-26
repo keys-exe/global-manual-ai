@@ -70,7 +70,7 @@ select.field,input.field{background:var(--surface);border:1px solid var(--line);
 .bar i{display:block;height:100%}
 
 /* pipeline strip */
-.pipe{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px}
+.pipe{display:grid;grid-template-columns:repeat(var(--n,8),minmax(0,1fr));gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px}
 @media (max-width:900px){.pipe{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .step{border:0;background:transparent;text-align:left;border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:6px;min-width:0}
 .step:hover{background:var(--sunk)}
@@ -455,7 +455,22 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .abs-dl div{background:var(--sunk);border-radius:8px;padding:8px 10px;min-width:0}
 .abs-dl dt{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .abs-dl dd{margin:2px 0 0;font-family:var(--display);font-weight:700;font-size:14px;overflow-wrap:anywhere}
-.abs-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.abs-foot{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.abs-foot .grow{flex:1}
+.vcheck{display:flex;flex-direction:column;gap:8px}
+.vc-h{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.vc-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.vc-list li{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.vc-list li.nn{opacity:.6}
+.vc-i{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-weight:700;background:var(--sunk);color:var(--muted);font-size:12px}
+.vc-i.ok{background:var(--use-bg);color:var(--use)}.vc-i.no{background:var(--regen-bg);color:var(--regen)}
+.vc-t{display:flex;flex-direction:column;min-width:0;font-size:12.5px}
+.vc-t span{color:var(--muted);overflow-wrap:anywhere}
+.vosum{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.vop{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:8px;padding:4px 9px;font-size:12.5px}
+.vop.ok{border-color:var(--use);background:var(--use-bg);color:var(--use)}
+.v-audio{display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;width:min(420px,90vw);background:#161a22;border:1px solid #2c323e;border-radius:14px;padding:22px}
+.v-audio audio{width:100%}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
 .box-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:14px 14px 0}
 .box-head .sn{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;background:var(--ink);color:var(--surface);flex:none}
@@ -551,9 +566,10 @@ const STAGES = [
   {key:"absorption", name:"Absorption", folder:"01_ABSORPTION", sub:"Inspo, script, product · §42 · Visual Instruction Ledger", kind:"doc"},
   {key:"cast",       name:"Cast",       folder:"02_CAST",       sub:"Avatar sheets · §19 · judged by §22V", kind:"image"},
   {key:"locations",  name:"Locations",  folder:"03_LOCATIONS",  sub:"Property & location maps · §30G", kind:"image"},
-  {key:"voice",      name:"Voice",      folder:"04_VOICE",      sub:"Kling source → clone → Eleven v3 · §22U", kind:"audio"},
+  {key:"voice",      name:"Voice",      folder:"04_VOICE",      sub:"Everyone who speaks has a voice · §22U steps 1–7", kind:"audio"},
+  {key:"vo",         name:"VO",         folder:"04_VOICE",      sub:"Voice-over takes, hooks + body · §22U steps 8–10", kind:"audio", narration:true},
+  {key:"talking",    name:"Talking heads", folder:"06_TALKING_HEADS", sub:"HeyGen Avatar V + motion prompt · after the VO is locked", kind:"video", narration:true},
   {key:"hooks",      name:"Hooks",      folder:"05_HOOKS",      sub:"One variant per hook · §30H", kind:"video"},
-  {key:"talking",    name:"Talking heads", folder:"06_TALKING_HEADS", sub:"HeyGen Avatar V + motion prompt", kind:"video"},
   {key:"broll",      name:"B-roll",     folder:"07_BROLL",      sub:"One clip per line · §27 · judged by §22W", kind:"video", wide:true},
   {key:"edit",       name:"Edit",       folder:"08_EDIT",       sub:"Rough cut, variants, CapCut block · §30H", kind:"video"},
 ];
@@ -609,6 +625,55 @@ function matches(g){
 }
 function beatSort(a,b){return String(a.beat||"").localeCompare(String(b.beat||""),undefined,{numeric:true})}
 
+// Which stages this build has: films (Mode 4/5, AI Drama) carry their voices in the scenes, so no VO and no
+// talking heads; a narration build shows Talking heads only when it uses them.
+function isFilm(b){return !!b&&(b.kind==="film"||(b.kind!=="narration"&&/mode\s*[45]\b|film|drama/i.test(`${b.mode||""} ${b.format||""}`)))}
+function needsTalking(b,gens){if(!b||isFilm(b)) return false; if(b.talkingHeads===true) return true; if(b.talkingHeads===false) return false; return gens.some(g=>g.stage==="talking")}
+function stagesFor(b,gens){return STAGES.filter(s=>!(s.narration&&isFilm(b))&&!(s.key==="talking"&&!needsTalking(b,gens)))}
+// Voice: done when every character who needs a voice has one (the build's voices list).
+function voiceList(b){return Array.isArray(b&&b.voices)?b.voices:[]}
+function voicesDone(b){const v=voiceList(b).filter(x=>x.needed!==false);return v.length>0&&v.every(x=>["cloned","locked"].includes(x.status))}
+// VO: locked when every part (HK1, HK2…, BODY) has a take marked USE, or the build says so.
+const voPart=g=>String(g.part||String(g.beat||"").split("-").pop()).toUpperCase();
+function voParts(gens){const vo=gens.filter(g=>g.stage==="vo");const parts=[...new Set(vo.map(voPart))].sort((a,b)=>(a==="BODY")-(b==="BODY")||a.localeCompare(b,undefined,{numeric:true}));
+  return parts.map(p=>{const takes=vo.filter(g=>voPart(g)===p);const use=takes.find(g=>g.status==="use");return {part:p,takes:takes.length,use}})}
+function voLocked(b,gens){if(b&&b.voLocked) return true;const p=voParts(gens);return p.length>0&&p.every(x=>x.use)}
+function stageDone(s,b,gens,sg){
+  if(s.key==="absorption"&&!sg.length) return !!planDoc("absorption")&&absDone();
+  if(s.key==="voice"&&voiceList(b).length) return voicesDone(b);
+  if(s.key==="vo") return voLocked(b,gens);
+  return sg.length>0&&sg.every(g=>g.status==="use");
+}
+function stageCount(s,b,gens,sg){
+  const u=sg.filter(g=>g.status==="use").length;
+  if(s.key==="absorption"&&!sg.length) return planDoc("absorption")?(absDone()?"Confirmed · in Plan":"Check it · in Plan"):"—";
+  if(s.key==="voice"&&voiceList(b).length){const v=voiceList(b).filter(x=>x.needed!==false);return `${v.filter(x=>["cloned","locked"].includes(x.status)).length}/${v.length} voiced`}
+  if(s.key==="vo"){const p=voParts(gens);return p.length?(voLocked(b,gens)?"Locked":`${p.filter(x=>x.use).length}/${p.length} parts locked`):"—"}
+  return sg.length?`${u}/${sg.length} USE`:"—";
+}
+function stageBar(s,b,gens,sg){
+  const done=stageDone(s,b,gens,sg);
+  if(s.key==="absorption"&&!sg.length) return planDoc("absorption")?`<i style="width:100%;background:var(${done?"--use":"--review"})"></i>`:"";
+  if(s.key==="voice"&&voiceList(b).length){const v=voiceList(b).filter(x=>x.needed!==false);const n=v.filter(x=>["cloned","locked"].includes(x.status)).length;return `<i style="width:${v.length?n/v.length*100:0}%;background:var(--use)"></i>`}
+  if(s.key==="vo"){const p=voParts(gens);return p.length?`<i style="width:${p.filter(x=>x.use).length/p.length*100}%;background:var(--use)"></i>`:""}
+  const u=sg.filter(g=>g.status==="use").length; return sg.length?`<i style="width:${u/sg.length*100}%;background:var(--use)"></i>`:"";
+}
+const VSTAT={locked:["s-use","Locked"],cloned:["s-use","Cloned"],building:["s-review","Building"],missing:["s-regenerate","Missing"]};
+function voiceChecklist(b){
+  const list=voiceList(b); if(!list.length) return "";
+  const film=isFilm(b);
+  return `<div class="vcheck">
+    <div class="vc-h"><span class="lbl">${film?"Every speaking character needs a voice":"Who needs a voice — narrator and any talking heads"}</span>${voicesDone(b)?`<span class="pill s-use">All voiced</span>`:`<span class="pill s-review">Not everyone yet</span>`}</div>
+    <ul class="vc-list">${list.map(x=>{const need=x.needed!==false;const st=need?(VSTAT[x.status]||VSTAT.missing):null;
+      return `<li class="${need?"":"nn"}"><span class="vc-i ${need&&st&&st[0]==="s-use"?"ok":need?"no":""}">${need&&st&&st[0]==="s-use"?I.ok:need?"!":"–"}</span>
+        <div class="vc-t"><b>${esc(x.id?x.id+" · ":"")}${esc(x.name||"")}</b><span>${need?esc(x.voice||"No voice yet"):esc(x.note||"No lines — no voice needed")}</span></div>
+        ${need?`<span class="pill ${st[0]}">${st[1]}</span>`:`<span class="pill s-planned">Not needed</span>`}</li>`}).join("")}</ul></div>`;
+}
+function voSummary(b,gens){
+  const p=voParts(gens); if(!p.length) return "";
+  return `<div class="vosum"><span class="lbl">Parts</span>${p.map(x=>`<span class="vop ${x.use?"ok":""}">${x.use?I.ok:""}<b>${esc(x.part)}</b>${x.use?` <span class="mono">${esc(String(x.use.beat||"").split("-").slice(-2,-1)[0]||"")}</span>`:` <span class="note">${x.takes} take${x.takes===1?"":"s"} to choose from</span>`}</span>`).join("")}
+    ${voLocked(b,gens)?`<span class="pill s-use">Locked</span>`:`<span class="note">Confirm one take per part to lock the VO.</span>`}</div>`;
+}
 function render(){renderInner();hydrate()}
 function renderInner(){
   const b=currentBuild();
@@ -643,13 +708,14 @@ function renderInner(){
     if(sig!==state.planSig||!$("#planView").children.length){state.planSig=sig;renderPlan(gens)}
     return}
 
-  $("#pipe").innerHTML=STAGES.map((s,i)=>{
-    const sg=gens.filter(g=>g.stage===s.key), u=sg.filter(g=>g.status==="use").length;
-    const done=sg.length&&u===sg.length;
+  const ST=stagesFor(b,gens);
+  $("#pipe").style.setProperty("--n",ST.length);
+  $("#pipe").innerHTML=ST.map((s,i)=>{
+    const sg=gens.filter(g=>g.stage===s.key), done=stageDone(s,b,gens,sg);
     return `<button class="step${done?" done":""}" type="button" data-jump="${s.key}">
       <span class="n">${String(i+1).padStart(2,"0")}${done?" ✓":""}</span><span class="t">${s.name}</span>
-      <div class="bar">${sg.length?`<i style="width:${u/sg.length*100}%;background:var(--use)"></i>`:""}</div>
-      <span class="c">${sg.length?`${u}/${sg.length} USE`:s.key==="absorption"&&planDoc("absorption")?"Written · in Plan":"—"}</span></button>`}).join("");
+      <div class="bar">${stageBar(s,b,gens,sg)}</div>
+      <span class="c">${stageCount(s,b,gens,sg)}</span></button>`}).join("");
 
   const counts=Object.fromEntries(STATUSES.map(s=>[s.key,by(s.key)]));
   $("#filters").innerHTML=`<button class="chip" type="button" data-f="all" aria-pressed="${state.filter==="all"}">All <span class="cnt">${total}</span></button>`+
@@ -657,7 +723,7 @@ function renderInner(){
     `<span class="grow"></span><input class="field" id="search" type="search" placeholder="Search beat, line, model" value="${esc(state.q)}" aria-label="Search">`;
 
   const folders=(b&&b.folders)||{};
-  let html=STAGES.map((s,i)=>{
+  let html=ST.map((s,i)=>{
     const all=gens.filter(g=>g.stage===s.key);
     const sg=all.filter(matches).sort(beatSort);
     const u=all.filter(g=>g.status==="use").length;
@@ -666,11 +732,14 @@ function renderInner(){
       `<div class="empty">${all.length?"Nothing matches this filter.":"No generations yet."}</div>`;
     // Absorption makes a document, not renders: show the sheet's key numbers and open it in Plan
     if(s.key==="absorption"&&!all.length) body=absorptionSummary(b);
+    if(s.key==="voice") body=voiceChecklist(b)+(all.length?`<span class="lbl" style="display:block;margin:14px 0 8px">Voice building</span>`+body:voiceList(b).length?"":body);
+    if(s.key==="vo") body=voSummary(b,gens)+body;
+    if(s.key==="talking"&&!voLocked(b,gens)) body=`<p class="note" style="margin:0 0 10px">Talking heads start after the VO is locked.</p>`+body;
     return `<section class="widget${s.wide?" wide":""}" id="w-${s.key}">
       <div class="w-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
         <div class="w-title"><h2>${s.name}</h2><span class="sub">${s.sub}</span></div>
         <div class="w-actions">${link}</div></div>
-      <div class="bar w-bar">${all.length?`<i style="width:${u/all.length*100}%;background:var(--use)"></i>`:""}</div>
+      <div class="bar w-bar">${stageBar(s,b,gens,all)}</div>
       <div class="w-body">${body}</div></section>`;
   }).join("");
   const bal=b&&b.balances||{};
@@ -895,12 +964,12 @@ function needsMe(g){return nextStep(g)!==null}
 function actNum(v){const m=String(v||"").match(/\d+/);return m?Number(m[0]):null}
 function groupOf(g){
   if(g.stage==="hooks"){const n=actNum(g.act)||actNum(g.beat)||0;return {key:"hook-"+n,label:n?"Hook "+n:"Hook",kicker:"Hook",order:300+n}}
-  if(g.stage==="broll"||g.stage==="talking"){
+  if(g.stage==="broll"){
     const n=actNum(g.act);
     return n?{key:"act-"+n,label:"Act "+n,kicker:"Act",order:400+n}:{key:"act-none",label:"Act not set yet",kicker:"Body",order:990,note:"These beats get their act at step 5, the act map."};
   }
   const st=STAGES.find(x=>x.key===g.stage)||STAGES[0];
-  const order={absorption:100,cast:110,locations:120,voice:130,edit:999}[st.key]||150;
+  const order={absorption:100,cast:110,locations:120,voice:130,vo:135,talking:140,edit:999}[st.key]||150;
   return {key:"stage-"+st.key,label:st.name,kicker:"Setup",order};
 }
 function groups(gens){
@@ -1116,7 +1185,8 @@ function renderViewer(){
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
   const src=shown?srcFrom(shown.asset,shown.parts,shown.type):"";
   const locked=k==="video"&&stepState(g,"image")!=="ok";
-  const media=asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
+  const isAud=type.startsWith("audio/");
+  const media=asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
     `<div class="v-empty">${locked?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
   const s=stepState(g,k);
   const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
@@ -1239,6 +1309,12 @@ function docStats(d){
   return [[(d.sections||[]).length,"sections"]];
 }
 function planDoc(id){const b=currentBuild();return state.docs.find(d=>d.id===id&&(!d.build||!b||d.build===b.id))||null}
+// Absorption is done when the sheet is confirmed, or once the build has moved on to step 5 (the act map exists).
+function absDone(){const d=planDoc("absorption");return !!d&&(!!d.confirmed||!!planDoc("actmap"))}
+async function confirmAbsorption(){
+  const d=planDoc("absorption"); if(!d||!state.db) return;
+  try{await state.db.doc("docs/"+d.id).update({confirmed:true,confirmedAt:Date.now()});toast("Absorption confirmed")}catch(e){handleWriteError(e)}
+}
 function absorptionSummary(){
   const d=planDoc("absorption");
   if(!d) return `<div class="empty">The Absorption Sheet appears here once step 1 is written. It is a document, not renders, so it lives in the <b>Plan</b> tab.</div>`;
@@ -1247,7 +1323,11 @@ function absorptionSummary(){
   const short=v=>{v=String(v||"");const cut=v.split(/[;·]/)[0].trim();return cut.length>34?cut.slice(0,32)+"…":cut};
   return `<div class="abs-sum">
     ${rows.length?`<dl class="abs-dl">${rows.map(r=>`<div><dt>${esc(r[0])}</dt><dd>${esc(short(r[1]))}</dd></div>`).join("")}</dl>`:""}
-    <div class="abs-foot"><span class="note">${(d.sections||[]).length} parts${d.updatedAt?" · updated "+esc(when(d.updatedAt)):""}</span>
+    <div class="abs-foot">
+      ${absDone()?`<span class="pill s-use">Confirmed</span>`:`<span class="pill s-review">Check it</span>`}
+      <span class="note">${(d.sections||[]).length} parts${d.updatedAt?" · updated "+esc(when(d.updatedAt)):""}</span>
+      <span class="grow"></span>
+      ${!absDone()&&!state.readOnly?`<button class="btn small ok" type="button" data-absok="1">${I.ok} Confirm</button>`:""}
       <button class="btn small primary" type="button" data-popen="absorption">Open in Plan →</button></div></div>`;
 }
 function renderPlan(gens){
@@ -1422,9 +1502,10 @@ function tocJump(i){
 /* events */
 let pickTarget=null;
 document.addEventListener("click",e=>{
-  const t=e.target.closest("[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
+  if(ds.absok){confirmAbsorption();return}
   if(ds.popen){state.view="plan";lsSet("gb.view","plan");state.pdoc=ds.popen;state.pactive=0;state.planSig=null;render();window.scrollTo({top:0});return}
   if(ds.pdoc){state.pdoc=ds.pdoc;state.pact="all";state.psubj="all";state.pactive=0;render();window.scrollTo({top:$("#planView").offsetTop-12});return}
   if(ds.pjump!==undefined){tocJump(Number(ds.pjump));return}
@@ -1512,7 +1593,7 @@ render();
     render();
   },()=>{});
   db.collection("generations").onSnapshot(snap=>{
-    state.gens=snap.docs.map(d=>({id:d.id,...d.data()}));
+    state.gens=snap.docs.map(d=>{const g={id:d.id,...d.data()};if(g.stage==="voice"&&/^VO-T/i.test(g.beat||"")) g.stage="vo";return g});
     setSync(true,"Live");render();if(state.viewer) renderViewer();
     if(state.editing&&!state.editing._new&&!state.gens.some(g=>g.id===state.editing.id)) closeDrawer();
   },err=>{setSync(false,"Sync stopped")});
