@@ -459,6 +459,11 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .abs-dl dt{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .abs-dl dd{margin:2px 0 0;font-family:var(--display);font-weight:700;font-size:14px;overflow-wrap:anywhere}
 .abs-foot{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:auto}
+.abs-plain{margin:0;display:flex;flex-direction:column;gap:0;flex:1}
+.abs-plain div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.abs-plain div:last-child{border-bottom:0}
+.abs-plain dt{font-weight:600;font-size:12.5px;color:var(--muted)}
+.abs-plain dd{margin:0;font-size:13.5px;line-height:1.45}
 .abs-foot .grow{flex:1}
 .vcheck{display:flex;flex-direction:column;gap:8px}
 .vc-h{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
@@ -628,7 +633,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
 <script>
 const STAGES = [
-  {key:"absorption", name:"Absorption", folder:"01_ABSORPTION", sub:"Inspo, script and product, read and measured", kind:"doc"},
+  {key:"absorption", name:"Absorption", folder:"01_ABSORPTION", sub:"What the reference ad does, in plain words", kind:"doc"},
   {key:"cast",       name:"Cast",       folder:"02_CAST",       sub:"Character sheets, checked image by image", kind:"image"},
   {key:"locations",  name:"Locations",  folder:"03_LOCATIONS",  sub:"Property and location plates", kind:"image"},
   {key:"voice",      name:"Voice",      folder:"04_VOICE",      sub:"Everyone who speaks has a voice", kind:"audio", wide:true},
@@ -1463,20 +1468,31 @@ async function confirmAbsorption(){
   const d=planDoc("absorption"); if(!d||!state.db) return;
   try{await state.db.doc("docs/"+d.id).update({confirmed:true,confirmedAt:Date.now()});toast("Absorption confirmed")}catch(e){handleWriteError(e)}
 }
+// Plain-language summary of the reference ad: the doc's own `summary` when written, else a few readings put in plain words.
+function plainAbsorption(d){
+  if(Array.isArray(d.summary)&&d.summary.length) return d.summary.map(x=>[x.label,x.value]);
+  const m=(d.sections||[]).flatMap(x=>mdTables(x.md)).find(t=>t.head[0]==="instrument"||t.head[1]==="reading"); if(!m) return [];
+  const out=[];
+  m.rows.forEach(([k,v])=>{k=String(k||"").toLowerCase();v=String(v||"");let n;
+    if(k.startsWith("duration")&&(n=v.match(/([\d.]+)\s*s/))) out.push(["Length",`${Math.round(n[1])} seconds${/9:16/.test(v)?", vertical video":""}`]);
+    else if(k.startsWith("scene cuts")&&(n=v.match(/mean\s*([\d.]+)\s*s/i))) out.push(["Pace",`A new shot about every ${Math.round(n[1])} seconds`]);
+    else if(/transcript|wpm/.test(k)&&(n=v.match(/(\d+)\s*wpm/i))) out.push(["Voice",`About ${n[1]} words a minute${Number(n[1])>170?" — a fast read":""}`]);
+    else if(/talking|b-roll/.test(k)&&(n=v.match(/(\d+)\s*talking heads/i))) out.push(["On screen",Number(n[1])===0?"Only footage of the product in use — nobody talks to camera":`${n[1]} talking-head shots plus product footage`]);
+  });
+  return out;
+}
 function absorptionSummary(){
   const d=planDoc("absorption");
-  if(!d) return `<div class="empty">The Absorption Sheet appears here once step 1 is written. It is a document, not renders, so it lives in the <b>Plan</b> tab.</div>`;
-  const m=(d.sections||[]).flatMap(x=>mdTables(x.md)).find(t=>t.head[0]==="instrument"||t.head[1]==="reading");
-  const rows=m?m.rows.slice(0,8):[];
-  const short=v=>{v=String(v||"");const cut=v.split(/[;·]/)[0].trim();return cut.length>44?cut.slice(0,42)+"…":cut};
+  if(!d) return `<div class="empty">What we learned from the reference ad appears here once step 1 is written. The full sheet lives in the <b>Plan</b> tab.</div>`;
+  const rows=plainAbsorption(d);
   return `<div class="abs-sum">
-    ${rows.length?`<dl class="abs-dl">${rows.map(r=>`<div><dt>${esc(r[0])}</dt><dd>${esc(short(r[1]))}</dd></div>`).join("")}</dl>`:""}
+    <span class="lbl">What we learned from the reference ad</span>
+    ${rows.length?`<dl class="abs-plain">${rows.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>`:`<p class="note" style="margin:0">A plain summary hasn't been written yet — open the full sheet in Plan.</p>`}
     <div class="abs-foot">
       ${absDone()?`<span class="pill s-use">Confirmed</span>`:`<span class="pill s-review">Check it</span>`}
-      <span class="note">${(d.sections||[]).length} parts${d.updatedAt?" · updated "+esc(when(d.updatedAt)):""}</span>
       <span class="grow"></span>
       ${!absDone()&&!state.readOnly?`<button class="btn small ok" type="button" data-absok="1">${I.ok} Confirm</button>`:""}
-      <button class="btn small primary" type="button" data-popen="absorption">Open in Plan →</button></div></div>`;
+      <button class="btn small primary" type="button" data-popen="absorption">Full sheet in Plan →</button></div></div>`;
 }
 const noRef=t=>String(t||"").replace(/\s*\((?:[^()]*§[^()]*)\)/g,"").replace(/\s*§\s*[\w.–-]+/g,"").replace(/\s{2,}/g," ").trim();
 function renderPlan(gens){
