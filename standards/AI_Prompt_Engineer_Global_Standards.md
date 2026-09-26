@@ -1702,7 +1702,7 @@ Every generated beat is accompanied by its **full prompt text in a fenced block*
 | Generation calls and job ids | 6–8 | **Chat prose, never a widget** (§16B). Label above every call, manifest above every batch, job ids written back against their beats |
 | Reconciliation lines | 5, 8 | Chat prose, never a widget. One line, outside everything |
 
-### The Generation Board — every generation, one page per build *(pending amendment 2026-09-26)*
+### The Generation Board — every generation, one page per build *(locked 2026-09-26)*
 
 Every generation of a build — image and video, both run modes — is logged on that build's **Generation Board**: one private web page per build, published from the repo template `dashboard/generation_board.html` and shared with the team build by build. The board's link is Build Sheet content, never Standards. The board is the review surface; generation calls and job ids stay in chat prose (§16B), explanation stays outside (§16).
 
@@ -1711,6 +1711,8 @@ Every generation of a build — image and video, both run modes — is logged on
 - **The agent writes the board as it works:** the card the turn the prompt is written (`ready`), the render uploaded at full quality the turn it lands — never re-encoded or shrunk; a file over the platform's per-file cap is stored in byte pieces the page joins back into the exact original — (the connector's link kept as the original; the page cannot display a connector's CDN link), and its §22V / §22W verdict. Balances are read live from the connectors whenever the agent writes the board.
 - **The reviewer has two buttons, Confirm and Fix.** Fix takes a note of what should be fixed. The note is the reviewer's correction for that beat (§34): the agent regenerates with it, inside the two-regenerations-per-fault budget (§22V), and returns the card for review. A scheduled hourly check picks up Fix notes, so a teammate's Fix needs no chat message.
 - **Cards are added only by the agent:** no build picker, no "new card" control. In Automatic (E0) the agent confirms its own cards; the board stays the record.
+
+**The design is locked.** `dashboard/generation_board.html` is the spec at implementation depth, the way the carousel plate above is: its layout, grouping, labels, buttons, viewer and file handling are the accepted design. A session never redesigns, restyles or simplifies it, and never publishes a board from anything but this template. It changes only when the user asks for a named change; that change is made in the template, republished to every board, and logged here as a correction (§34). A board that deviates from the template is a §34 correction, not a style choice.
 
 ### The four widget shapes
 
@@ -7833,6 +7835,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | 2026-09-26 | HeyGen motion prompt on every talking-head render, both run modes. Manual: Avatar V in the app, *More expressive* on, the gesture line in *Apply custom motion*. API: `avatar_v` + `motionPrompt`, no `expressiveness` (Avatar IV only). Avatar IV fallback only when `motionPrompt` is rejected. Confirmed against the current HeyGen API schema | §22U step 13, §44 default 84, E7 | Written in |
 
 | 2026-09-26 | Generation Board: every generation of a build (both run modes) is logged on one private board per build, published from `dashboard/generation_board.html` — grouped per act (Hook 1…, Act 1…), Images then Videos, every field labelled, renders uploaded, verdicts recorded, Confirm / Fix for the reviewer; a Fix note is a §34 correction for that beat, regenerated within the §22V budget and picked up by an hourly check; the ledger's state is mirrored onto it. | §16A (new subsection), E3 | Written into §16A and E3; cut pending |
+| 2026-09-26 | Generation Board design **locked**: `dashboard/generation_board.html` is the spec; no session redesigns it; changes only on the user's named request, made in the template and republished to every board. | §16A | Written into §16A; cut pending |
 ---
 
 # OPEN DECISIONS

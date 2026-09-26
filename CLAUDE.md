@@ -14,7 +14,7 @@ Product Sheets and Build Sheets (Appendix B / C schemas) go under `products/` an
 
 ## Generation Board (standing instruction from the user, 2026-09-26)
 
-Every generation goes on the build's **Generation Board**. Both run modes, every build, no need to ask. **One board per build** (the user's team gets only their build's link), all published from the one template `dashboard/generation_board.html`. The page shows the one build its board holds; there is no build picker and no "new generation" button, so cards are only ever added by you.
+Every generation goes on the build's **Generation Board**. **The board design is locked (§16A):** never redesign, restyle or simplify `dashboard/generation_board.html`; change it only when the user asks for a specific change, then republish it to every board. Both run modes, every build, no need to ask. **One board per build** (the user's team gets only their build's link), all published from the one template `dashboard/generation_board.html`. The page shows the one build its board holds; there is no build picker and no "new generation" button, so cards are only ever added by you.
 
 | Build | Board |
 |---|---|
