@@ -1393,10 +1393,13 @@ function copyText(t,what){navigator.clipboard.writeText(t).then(()=>toast(what+"
 
 
 /* viewer: clicking an image or video shows it, nothing else */
+/* only the group the clicked card sits in: its stage card on Board, its act or group in Manual run and Plan */
+function viewScope(g){return state.view==="board"?"s:"+g.stage:"g:"+groupOf(g).key}
 function viewerList(step){
-  return groups(buildGens()).flatMap(x=>x.items).filter(g=>flow(g).includes(step));
+  const sc=state.viewer&&state.viewer.scope;
+  return groups(buildGens()).flatMap(x=>x.items).filter(g=>flow(g).includes(step)&&(!sc||viewScope(g)===sc));
 }
-function openViewer(id,step){state.viewer={id,step,ver:null,menu:false};renderViewer()}
+function openViewer(id,step){const g=state.gens.find(x=>x.id===id);state.viewer={id,step,ver:null,menu:false,scope:g?viewScope(g):null};renderViewer()}
 function closeViewer(){if(!state.viewer) return;state.viewer=null;const v=$("#viewer");v.hidden=true;v.innerHTML=""}
 function moveViewer(dir){
   const v=state.viewer; if(!v) return;
@@ -1494,7 +1497,7 @@ function renderViewer(){
       </div>
       ${panel}
     </div>
-    <div class="v-strip"><span class="v-count">${i+1} / ${list.length} ${d.label.toLowerCase()}s</span><div class="v-thumbs">${thumbs}</div></div>`;
+    <div class="v-strip"><span class="v-count">${i+1} / ${list.length} ${d.label.toLowerCase()}s · ${esc(state.view==="board"?((STAGES.find(x=>x.key===g.stage)||{}).name||""):groupOf(g).label)}</span><div class="v-thumbs">${thumbs}</div></div>`;
   const el=$("#viewer"); el.hidden=false; hydrate(el);
   const on=el.querySelector('.v-th[aria-current="true"]'); if(on) on.scrollIntoView({block:"nearest",inline:"center"});
   if(v.fix){const t=el.querySelector("#vfault");if(t){t.value=draft;t.focus()}}
