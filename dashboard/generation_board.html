@@ -278,6 +278,25 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .vload{position:absolute;left:8px;right:8px;bottom:8px;background:rgba(0,0,0,.7);color:#fff;font-size:11.5px;border-radius:6px;padding:5px 8px;text-align:center;z-index:2}
 .v-media{position:relative}
 .v-sound{position:absolute;top:10px;right:10px;z-index:2}
+.vbadge{display:inline-block;margin-left:6px;vertical-align:middle;font-family:var(--mono);font-size:10.5px;font-weight:600;padding:2px 6px;border-radius:5px;background:var(--accent-soft);color:var(--accent)}
+.v-ver{position:relative}
+.v-ver-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;border-radius:9px;padding:6px 10px;min-height:36px}
+.v-ver-btn:hover{border-color:rgba(255,255,255,.4)}
+.v-ver-btn b{font-family:var(--mono);font-size:14px}
+.vv-of{font-size:11.5px;color:rgba(255,255,255,.55)}
+.vi-cur{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#1f8a5b;color:#fff;border-radius:4px;padding:1px 5px;margin-left:6px}
+.vi-old{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#b26b00;color:#fff;border-radius:4px;padding:1px 5px}
+.v-menu{position:absolute;top:calc(100% + 6px);left:0;z-index:5;width:min(360px,calc(100vw - 32px));max-height:min(60vh,440px);overflow:auto;background:#161a22;border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:6px;box-shadow:0 12px 40px rgba(0,0,0,.5);display:flex;flex-direction:column;gap:2px}
+.v-item{display:flex;gap:10px;align-items:flex-start;text-align:left;background:transparent;border:1px solid transparent;border-radius:9px;padding:7px;color:#fff;width:100%}
+.v-item:hover{background:rgba(255,255,255,.06)}
+.v-item[aria-selected="true"]{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25)}
+.vt{width:36px;aspect-ratio:9/16;object-fit:cover;border-radius:5px;flex:none;background:#000}
+.vt-vid{display:grid;place-items:center;font-size:12px;color:rgba(255,255,255,.8);background:rgba(255,255,255,.08)}
+.vi-txt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.vi-t{font-family:var(--mono);font-weight:600;font-size:13px;display:flex;align-items:center}
+.vi-m{font-size:11.5px;color:rgba(255,255,255,.6);overflow-wrap:anywhere}
+.vi-n{font-size:11.5px;color:#f5a097}
+.v-oldbar{font-size:12.5px;background:#3a2a10;color:#f3c77a;border:1px solid #6b4a12;border-radius:8px;padding:6px 10px}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
 .box-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:14px 14px 0}
 .box-head .sn{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;background:var(--ink);color:var(--surface);flex:none}
@@ -484,7 +503,18 @@ function renderInner(){
 // in the browser into the exact original — the board never shrinks a render.
 const PART=15*1024*1024;
 function partsOf(g,k){const p=g[STEP[k].parts];return Array.isArray(p)&&p.length>1?p:null}
-function srcAttr(g,k){const p=partsOf(g,k);return p?`data-parts="${esc(p.join(","))}" data-ptype="${esc(g[STEP[k].type]||"")}"`:`src="/_blob/${esc(g[STEP[k].asset])}"`}
+function srcFrom(asset,parts,type){return Array.isArray(parts)&&parts.length>1?`data-parts="${esc(parts.join(","))}" data-ptype="${esc(type||"")}"`:`src="/_blob/${esc(asset)}"`}
+function srcAttr(g,k){const d=STEP[k];return srcFrom(g[d.asset],g[d.parts],g[d.type])}
+// Versions: every render a step has had, oldest first. The current one is the step's own fields.
+function snapshot(g,k){const d=STEP[k];return {asset:g[d.asset],parts:Array.isArray(g[d.parts])?g[d.parts]:[],type:g[d.type]||"",url:g[d.url]||"",model:g[d.model]||d.defModel||"",connector:g[d.conn]||d.defConn||"",credits:g[d.credits]??null,size:g[d.size]??null,at:g[d.at]||g.updatedAt||null,note:""}}
+function versionsOf(g,k){
+  const d=STEP[k]; const arr=(Array.isArray(g[d.vers])?g[d.vers]:[]).filter(x=>x&&x.asset).map(x=>({...x}));
+  arr.forEach((x,i)=>{if(!x.v) x.v=i+1});
+  if(g[d.asset]&&!arr.some(x=>x.asset===g[d.asset])) arr.push({...snapshot(g,k),v:arr.reduce((m,x)=>Math.max(m,x.v),0)+1});
+  return arr.sort((a,b)=>a.v-b.v);
+}
+function currentV(g,k){const c=versionsOf(g,k).find(x=>x.asset===g[STEP[k].asset]);return c?c.v:null}
+function fetchVer(ver){return Array.isArray(ver.parts)&&ver.parts.length>1?Promise.all(ver.parts.map(fetchAsset)).then(bs=>new Blob(bs,{type:ver.type||bs[0].type})):fetchAsset(ver.asset)}
 const joined={};
 function joinParts(ids,type,onProgress){
   const key=ids.join(",");
@@ -664,11 +694,11 @@ function flow(g){
 // Each step reads and writes its own fields on the generation document.
 const STEP = {
   image:{label:"Image", accept:"image/*", asset:"imageAsset", type:"imageType", prompt:"imagePrompt", model:"imageModel", defModel:"nano_banana_pro", st:"imageStatus", fault:"imageFault", regens:"imageRegens", ok:"Confirm image",
-    parts:"imageParts", conn:"imageConnector", defConn:"Higgsfield", url:"imageUrl", credits:"imageCredits", at:"imageAt", size:"imageRes"},
+    parts:"imageParts", vers:"imageVersions", conn:"imageConnector", defConn:"Higgsfield", url:"imageUrl", credits:"imageCredits", at:"imageAt", size:"imageRes"},
   video:{label:"Video", accept:"video/*", asset:"videoAsset", type:"videoType", prompt:"prompt", model:"model", defModel:"kling-video-v3_0_omni", st:"status", fault:"fault", regens:"regens", ok:"USE",
-    parts:"videoParts", conn:"videoConnector", defConn:"Kling", url:"videoUrl", credits:"credits", at:"videoAt", size:"duration"},
+    parts:"videoParts", vers:"videoVersions", conn:"videoConnector", defConn:"Kling", url:"videoUrl", credits:"credits", at:"videoAt", size:"duration"},
   file:{label:"File", accept:"*/*", asset:"videoAsset", type:"videoType", prompt:"prompt", model:"model", defModel:"", st:"status", fault:"fault", regens:"regens", ok:"USE",
-    parts:"videoParts", conn:"videoConnector", defConn:"", url:"videoUrl", credits:"credits", at:"videoAt", size:"duration"},
+    parts:"videoParts", vers:"videoVersions", conn:"videoConnector", defConn:"", url:"videoUrl", credits:"credits", at:"videoAt", size:"duration"},
 };
 function stepState(g,k){
   const d=STEP[k], v=g[d.st];
@@ -776,7 +806,7 @@ function mediaCard(g,k){
   const canAct=!state.readOnly&&!locked&&s!=="gen";
   return `<article class="mc ${cls}" id="mc-${esc(g.id)}-${k}">
     <div class="mc-head">
-      <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}</span></div>
+      <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}${versionsOf(g,k).length>1?`<span class="vbadge" title="${versionsOf(g,k).length} versions">v${currentV(g,k)}</span>`:""}</span></div>
       <div class="kv end"><span class="lbl">Status</span>${chip}</div></div>
     <div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}"`} ${asset?`data-viewm="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="View ${d.label.toLowerCase()} for ${esc(g.beat)}"`:""}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>
     <div class="kv"><span class="lbl">Shot</span><span class="mc-t">${esc(g.title||"—")}</span></div>
@@ -813,8 +843,14 @@ async function saveFile(name,blob,fallbackUrl){
   if(fallbackUrl){window.open(fallbackUrl,"_blank","noopener");toast("Opened in a new tab. Save it from there.")}
   else toast("Downloads aren't available in this view");
 }
-async function downloadOne(g,k){
+async function downloadOne(g,k,vnum){
   const id=g[STEP[k].asset]; if(!id) return;
+  const x=vnum?versionsOf(g,k).find(y=>y.v===vnum):null;
+  if(x&&x.asset!==id){
+    const name=fileName(g,k).replace(/(\.[a-z0-9]+)$/i,`_v${x.v}$1`);
+    try{await saveFile(name,await fetchVer(x),(x.parts||[]).length>1?null:"/_blob/"+x.asset)}catch(e){toast("Couldn't fetch the file. Try again.")}
+    return;
+  }
   try{await saveFile(fileName(g,k),await fetchMedia(g,k),partsOf(g,k)?null:"/_blob/"+id)}catch(e){toast("Couldn't fetch the file. Try again.")}
 }
 async function downloadZip(groupKey,step){
@@ -846,7 +882,9 @@ async function uploadTo(gid,k,file){
       const r=await state.assets.upload(file.slice(o,o+PART,file.type),{type:file.type});
       ids.push(r.id); ctype=r.contentType;
     }
-    const patch={[d.asset]:ids[0],[d.type]:ctype,[d.parts]:ids.length>1?ids:[],updatedAt:Date.now()};
+    const vers=versionsOf(g,k), nv=vers.reduce((m,x)=>Math.max(m,x.v),0)+1, now=Date.now();
+    vers.push({v:nv,asset:ids[0],parts:ids.length>1?ids:[],type:ctype,url:"",model:"",connector:"Uploaded by hand",credits:null,size:null,at:now,note:g[d.st]==="regenerate"?(g[d.fault]||""):""});
+    const patch={[d.asset]:ids[0],[d.type]:ctype,[d.parts]:ids.length>1?ids:[],[d.vers]:vers,[d.url]:"",[d.model]:"",[d.conn]:"Uploaded by hand",[d.credits]:null,[d.size]:null,[d.at]:now,updatedAt:now};
     if(k==="image"){patch.imageStatus="review"; if(["planned","ready"].includes(g.status||"planned")) patch.status="review"}
     else patch.status="review";
     await state.db.doc("generations/"+gid).update(patch);
@@ -876,28 +914,47 @@ function copyText(t,what){navigator.clipboard.writeText(t).then(()=>toast(what+"
 function viewerList(step){
   return groups(buildGens()).flatMap(x=>x.items).filter(g=>flow(g).includes(step));
 }
-function openViewer(id,step){state.viewer={id,step};renderViewer()}
+function openViewer(id,step){state.viewer={id,step,ver:null,menu:false};renderViewer()}
 function closeViewer(){if(!state.viewer) return;state.viewer=null;const v=$("#viewer");v.hidden=true;v.innerHTML=""}
 function moveViewer(dir){
   const v=state.viewer; if(!v) return;
   const list=viewerList(v.step), i=list.findIndex(g=>g.id===v.id);
-  const n=list[(i+dir+list.length)%list.length]; if(n){v.id=n.id;renderViewer()}
+  const n=list[(i+dir+list.length)%list.length]; if(n){v.id=n.id;v.ver=null;v.menu=false;renderViewer()}
 }
 function renderViewer(){
   const v=state.viewer; if(!v) return;
   const g=state.gens.find(x=>x.id===v.id); if(!g){closeViewer();return}
-  const k=v.step, d=STEP[k], asset=g[d.asset], type=g[d.type]||"";
+  const k=v.step, d=STEP[k];
+  const vers=versionsOf(g,k), cur=currentV(g,k);
+  const shown=(v.ver&&vers.find(x=>x.v===v.ver))||vers.find(x=>x.v===cur)||null;
+  const older=shown&&shown.v!==cur;
+  const asset=shown&&shown.asset, type=(shown&&shown.type)||g[d.type]||"";
   const list=viewerList(k), i=list.findIndex(x=>x.id===g.id);
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
-  const media=asset?(isVid?`<video ${srcAttr(g,k)} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`):
+  const src=shown?srcFrom(shown.asset,shown.parts,shown.type):"";
+  const media=asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
     `<div class="v-empty">${k==="video"&&stepState(g,"image")!=="ok"?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
   const s=stepState(g,k);
   const chip=s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
   const grp=groupOf(g);
+  const sizeTxt=x=>x.size==null||x.size===""?"":(k==="image"?String(x.size):`${x.size}s`);
+  const item=x=>{
+    const thumb=(x.type||"").startsWith("video/")||(k!=="image"&&!(x.type||"").startsWith("image/"))?`<span class="vt vt-vid">▶</span>`:`<img class="vt" ${srcFrom(x.asset,x.parts,x.type)} alt="">`;
+    const meta=[when(x.at),x.model,x.connector,sizeTxt(x)].filter(y=>y&&y!=="—").map(esc).join(" · ");
+    return `<button type="button" class="v-item" role="option" data-vpick="${x.v}" aria-selected="${x.v===(shown&&shown.v)}">
+      ${thumb}<span class="vi-txt"><span class="vi-t">v${x.v}${x.v===cur?`<span class="vi-cur">Current</span>`:""}</span>
+      <span class="vi-m">${meta||"—"}</span>${x.note?`<span class="vi-n">Fix: ${esc(x.note)}</span>`:""}</span></button>`;
+  };
+  const verUi=vers.length?`<div class="v-ver">
+      <button type="button" class="v-ver-btn" data-vmenu="1" aria-haspopup="listbox" aria-expanded="${!!v.menu}">
+        <span class="lbl">Version</span><b>v${shown?shown.v:"—"}</b>${older?`<span class="vi-old">Not current</span>`:`<span class="vi-cur">Current</span>`}<span class="vv-of">of ${vers.length}</span><span aria-hidden="true">▾</span></button>
+      ${v.menu?`<div class="v-menu" role="listbox" aria-label="Versions">${vers.slice().reverse().map(item).join("")}</div>`:""}
+    </div>`:"";
   $("#viewer").innerHTML=`
     <div class="v-top">
       <div class="kv"><span class="lbl">${esc(grp.label)}</span><span class="v-beat">${esc(g.beat||"")} · ${esc(g.title||"")}</span></div>
       <div class="v-tabs">${flow(g).map(x=>`<button type="button" class="tab" data-vstep="${x}" aria-selected="${x===k}">${STEP[x].label}</button>`).join("")}</div>
+      ${verUi}
       <span class="grow"></span>${chip}
       <button class="btn small" type="button" data-vclose="x" aria-label="Close">✕ Close</button></div>
     <div class="v-stage" data-vclose="">
@@ -906,24 +963,35 @@ function renderViewer(){
       ${list.length>1?`<button class="v-nav next" type="button" data-vnav="1" aria-label="Next">›</button>`:""}
     </div>
     <div class="v-bottom">
-      <span class="mono">${i+1} / ${list.length} ${d.label.toLowerCase()}s</span>
+      ${older?`<span class="v-oldbar">Viewing v${shown.v} · not the current version${shown.note?` · Fix that made it: ${esc(shown.note)}`:""}</span>
+        ${state.readOnly?"":`<button class="btn small" type="button" data-vrestore="${shown.v}">↺ Use this version</button>`}`:`<span class="mono">${i+1} / ${list.length} ${d.label.toLowerCase()}s</span>`}
       <span class="grow"></span>
       <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${g[d.prompt]?"":"disabled"}>Copy prompt</button>
-      <button class="btn small primary" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>⬇ Download</button>
+      <button class="btn small primary" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${shown?`data-ver="${shown.v}"`:"disabled"}>⬇ Download${older?` v${shown.v}`:""}</button>
     </div>`;
   const el=$("#viewer"); el.hidden=false; hydrate(el);
+}
+async function restoreVersion(g,k,vnum){
+  const d=STEP[k], vers=versionsOf(g,k), x=vers.find(y=>y.v===vnum); if(!x||!state.db) return;
+  const patch={[d.asset]:x.asset,[d.parts]:x.parts||[],[d.type]:x.type||"",[d.url]:x.url||"",[d.model]:x.model||"",[d.conn]:x.connector||"",[d.credits]:x.credits??null,[d.size]:x.size??null,[d.at]:x.at||null,[d.vers]:vers,updatedAt:Date.now()};
+  if(k==="image"){patch.imageStatus="review"; if((g.status||"planned")!=="use") patch.status="review"} else patch.status="review";
+  try{await state.db.doc("generations/"+g.id).update(patch);state.viewer.ver=null;toast(`v${vnum} is the current version again. Check it, then confirm.`)}catch(e){handleWriteError(e)}
 }
 
 /* events */
 let pickTarget=null;
 document.addEventListener("click",e=>{
-  const t=e.target.closest("[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
+  if(ds.vmenu){state.viewer.menu=!state.viewer.menu;renderViewer();return}
+  if(ds.vpick){state.viewer.ver=Number(ds.vpick);state.viewer.menu=false;renderViewer();return}
+  if(ds.vrestore){const x=state.gens.find(y=>y.id===state.viewer.id);if(x) restoreVersion(x,state.viewer.step,Number(ds.vrestore));return}
+  if(state.viewer&&state.viewer.menu&&!e.target.closest(".v-menu")){state.viewer.menu=false;renderViewer()}
   if(ds.sound){const v=document.querySelector(".viewer video");if(v){v.muted=false;v.dataset.sound="1";tryPlay(v)}t.remove();return}
   if(ds.viewm){openViewer(ds.viewm,ds.step)}
   else if(ds.vnav){moveViewer(Number(ds.vnav))}
-  else if(ds.vstep){state.viewer.step=ds.vstep;renderViewer()}
+  else if(ds.vstep){state.viewer.step=ds.vstep;state.viewer.ver=null;state.viewer.menu=false;renderViewer()}
   else if(ds.vclose!==undefined&&(ds.vclose==="x"||e.target===t)){closeViewer()}
   else if(ds.open){closeViewer();const x=state.gens.find(y=>y.id===ds.open);if(x) openDrawer(x,false)}
   else if(ds.add){openDrawer({stage:ds.add,status:"planned"},true)}
@@ -938,7 +1006,7 @@ document.addEventListener("click",e=>{
     copyText(list.map(x=>`${x.beat}\n${x[ds.field]}`).join("\n\n"),list.length+" prompts");
   }
   else if(ds.zip){downloadZip(ds.zip,ds.step)}
-  else if(ds.dl&&g){downloadOne(g,ds.step)}
+  else if(ds.dl&&g){downloadOne(g,ds.step,ds.ver?Number(ds.ver):null)}
   else if(ds.verdict&&g){
     if(ds.verdict==="ok"){state.faultOpen=null;setVerdict(g.id,ds.step,true)}
     else {state.faultOpen=g.id+":"+ds.step;render();const i=document.getElementById(`fault-${g.id}-${ds.step}`);if(i) i.focus()}
@@ -947,7 +1015,7 @@ document.addEventListener("click",e=>{
 
 });
 document.addEventListener("keydown",e=>{
-  if(state.viewer){if(e.key==="Escape") closeViewer(); else if(e.key==="ArrowRight") moveViewer(1); else if(e.key==="ArrowLeft") moveViewer(-1); return}
+  if(state.viewer){if(e.key==="Escape"){if(state.viewer.menu){state.viewer.menu=false;renderViewer()} else closeViewer()} else if(e.key==="ArrowRight") moveViewer(1); else if(e.key==="ArrowLeft") moveViewer(-1); return}
   if(e.key==="Escape"&&!$("#drawer").hidden) closeDrawer();
   const t=e.target.closest&&e.target.closest("[data-viewm]");
   if(t&&t.tagName!=="BUTTON"&&(e.key==="Enter"||e.key===" ")){e.preventDefault();t.click()}
