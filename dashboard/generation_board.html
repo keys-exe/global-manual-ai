@@ -31,6 +31,7 @@
   --shadow:0 1px 2px rgba(0,0,0,.4);
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:14px;line-height:1.45}
 .wrap{max-width:1320px;margin:0 auto;padding-inline:20px;padding-block:24px 64px;display:flex;flex-direction:column;gap:18px}
 @media (max-width:520px){.wrap{padding-inline:16px}}
@@ -209,7 +210,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .sc.ok .sc-head .sn{background:var(--use);color:#fff}
 .sc-head h3{font-size:15px;font-weight:700}
 .sc-head .grow{flex:1}
-.sc-body{display:grid;grid-template-columns:118px minmax(0,1fr);gap:12px}
+.sc-body{display:grid;grid-template-columns:132px minmax(0,1fr);gap:14px}
 @media (max-width:420px){.sc-body{grid-template-columns:96px minmax(0,1fr)}}
 .media{position:relative;aspect-ratio:9/16;max-width:100%;border:1.5px dashed var(--line);border-radius:10px;background:var(--sunk);display:grid;place-items:center;text-align:center;font-size:11.5px;color:var(--muted);padding:8px;overflow:hidden;cursor:pointer}
 .media.filled{border-style:solid;padding:0;background:var(--frame)}
@@ -228,6 +229,25 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .btn:disabled{opacity:.45;cursor:not-allowed}
 .fault{font-size:12.5px;background:var(--regen-bg);color:var(--ink);border-radius:8px;padding:7px 10px}
 .fault b{color:var(--regen)}
+.kv{display:flex;flex-direction:column;gap:4px;min-width:0}
+.kv.end{align-items:flex-end}
+.lbl{font-size:10.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+.lbl-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lbl-row .pm{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.lbl-row .pm .over{color:var(--regen)}
+.lbl-row .grow{flex:1}
+.shot-head .info{gap:8px}
+.shot-head .right{align-items:flex-end}
+.specs{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;align-content:start;padding-top:18px}
+.specs div{display:flex;flex-direction:column;gap:2px;min-width:0;border-bottom:1px solid var(--line);padding-bottom:6px}
+.specs dt{font-size:10.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+.specs dd{margin:0;font-size:12.5px;overflow-wrap:anywhere}
+.specs dd .mono{font-size:11.5px}
+.specs a{color:var(--accent)}
+.ptext{margin:0;font-family:var(--mono);font-size:11.5px;line-height:1.5;white-space:pre-wrap;word-break:break-word;background:var(--sunk);border-radius:8px;padding:9px 10px;max-height:170px;overflow:auto}
+.ptext.none{color:var(--faint);font-family:var(--body);font-style:italic}
+.media small{font-size:10.5px;opacity:.8}
+@media (max-width:560px){.shot-head{flex-wrap:wrap}.shot-head .right{flex-direction:row;flex-wrap:wrap;width:100%;justify-content:space-between;align-items:flex-end}.shot-head .right .kv.end{align-items:flex-start}}
 .fform{display:flex;gap:6px;flex-wrap:wrap}
 .fform input{flex:1;min-width:180px;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:6px 9px}
 </style>
@@ -521,9 +541,12 @@ function flow(g){
 }
 // Each step reads and writes its own fields on the generation document.
 const STEP = {
-  image:{label:"Image", accept:"image/*", asset:"imageAsset", type:"imageType", prompt:"imagePrompt", model:"imageModel", defModel:"nano_banana_pro", st:"imageStatus", fault:"imageFault", regens:"imageRegens", ok:"Confirm image"},
-  video:{label:"Video", accept:"video/*", asset:"videoAsset", type:"videoType", prompt:"prompt", model:"model", defModel:"kling-video-v3_0_omni", st:"status", fault:"fault", regens:"regens", ok:"USE"},
-  file:{label:"File", accept:"*/*", asset:"videoAsset", type:"videoType", prompt:"prompt", model:"model", defModel:"", st:"status", fault:"fault", regens:"regens", ok:"USE"},
+  image:{label:"Image", accept:"image/*", asset:"imageAsset", type:"imageType", prompt:"imagePrompt", model:"imageModel", defModel:"nano_banana_pro", st:"imageStatus", fault:"imageFault", regens:"imageRegens", ok:"Confirm image",
+    conn:"imageConnector", defConn:"Higgsfield", url:"imageUrl", credits:"imageCredits", at:"imageAt", size:"imageRes"},
+  video:{label:"Video", accept:"video/*", asset:"videoAsset", type:"videoType", prompt:"prompt", model:"model", defModel:"kling-video-v3_0_omni", st:"status", fault:"fault", regens:"regens", ok:"USE",
+    conn:"videoConnector", defConn:"Kling", url:"videoUrl", credits:"credits", at:"videoAt", size:"duration"},
+  file:{label:"File", accept:"*/*", asset:"videoAsset", type:"videoType", prompt:"prompt", model:"model", defModel:"", st:"status", fault:"fault", regens:"regens", ok:"USE",
+    conn:"videoConnector", defConn:"", url:"videoUrl", credits:"credits", at:"videoAt", size:"duration"},
 };
 function stepState(g,k){
   const d=STEP[k], v=g[d.st];
@@ -564,12 +587,17 @@ function shotCard(g){
   const f=flow(g), nx=nextStep(g), st=g.status||"planned";
   const track=f.map(k=>{const s=stepState(g,k);return `<span class="${s==="ok"?"on":k===nx?"cur":""}">${s==="ok"?"✓ ":""}${STEP[k].label}</span>`}).join("<span>›</span>");
   return `<article class="shot" id="shot-${esc(g.id)}">
-    <div class="shot-head"><span class="b">${esc(g.beat||"—")}</span>
-      <div class="info"><span class="t">${esc(g.title||"")}</span>${g.line?`<span class="l">“${esc(g.line)}”</span>`:""}</div>
-      <div class="right"><span class="pill s-${st}">${esc(STATUS_LABEL[st]||st)}</span><span class="track">${track}</span>
-        <button class="btn small" type="button" data-open="${esc(g.id)}">Edit</button></div></div>
+    <div class="shot-head">
+      <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}</span></div>
+      <div class="info"><div class="kv"><span class="lbl">Shot</span><span class="t">${esc(g.title||"Untitled")}</span></div>
+        ${g.line?`<div class="kv"><span class="lbl">Script line</span><span class="l">“${esc(g.line)}”</span></div>`:""}</div>
+      <div class="right">
+        <div class="kv end"><span class="lbl">Status</span><span class="pill s-${st}">${esc(STATUS_LABEL[st]||st)}</span></div>
+        <div class="kv end"><span class="lbl">Progress</span><span class="track">${track}</span></div>
+        <button class="btn small" type="button" data-open="${esc(g.id)}">Edit details</button></div></div>
     <div class="steps">${f.map((k,i)=>stepCard(g,k,i+1,f)).join("")}</div></article>`;
 }
+function when(ms){if(!ms) return "—";const d=new Date(ms);return isNaN(d)?"—":d.toLocaleString(undefined,{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"})}
 
 function stepCard(g,k,n,f){
   const d=STEP[k], s=stepState(g,k), ro=state.readOnly||!state.assets;
@@ -579,27 +607,43 @@ function stepCard(g,k,n,f){
   const busy=state.busy[g.id+":"+k];
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
   const media=asset?(isVid?`<video src="/_blob/${esc(asset)}" muted loop playsinline controls preload="metadata"></video>`:type.startsWith("image/")||k==="image"?`<img src="/_blob/${esc(asset)}" alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
-    `<span>${ro?"No file yet":`Drop the ${k==="file"?"file":k} here<br>or tap to upload`}</span>`;
+    `<span>${k==="file"?"No file yet":`No ${k} yet`}${ro?"":`<br><small>Drop a file or tap to upload</small>`}</span>`;
   const limit=/kling/i.test(model)&&k!=="image"?2500:null;
   const faultOpen=state.faultOpen===g.id+":"+k;
   const cls=locked?"locked":s==="ok"?"ok":s==="bad"?"bad":k===nextStep(g)?"now":"";
-  const chip=s==="ok"?`<span class="pill s-use">${k==="image"?"Confirmed":"USE"}</span>`:s==="bad"?`<span class="pill s-regenerate">Regenerate</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">${prompt?"Prompt ready":"Waiting"}</span>`;
+  const chip=s==="ok"?`<span class="pill s-use">${k==="image"?"Confirmed":"USE"}</span>`:s==="bad"?`<span class="pill s-regenerate">Regenerate</span>`:s==="review"?`<span class="pill s-review">Needs your check</span>`:`<span class="pill s-planned">${prompt?"Prompt ready":"Waiting for prompt"}</span>`;
+  const size=g[d.size]?(k==="image"?esc(g[d.size]):`${esc(g[d.size])}s`):"—";
+  const specs=[
+    ["Connector",esc(g[d.conn]||d.defConn||"—")],
+    ["Model",`<span class="mono">${esc(model||"—")}</span>`],
+    ["Aspect","9:16"],
+    [k==="image"?"Resolution":"Length",size],
+    ["Credits",g[d.credits]!=null&&g[d.credits]!==""?num(g[d.credits]):"—"],
+    ["Attempt",String(1+(Number(g[d.regens])||0))],
+    ["Generated",when(g[d.at])],
+    ["Original",g[d.url]?`<a href="${esc(g[d.url])}" target="_blank" rel="noopener">Open ↗</a>`:"—"],
+  ];
   return `<div class="sc ${cls}">
-    ${locked?`<div class="lock"><span>Confirm the image to unlock the video</span></div>`:""}
-    <div class="sc-head"><span class="sn">${s==="ok"?"✓":n}</span><h3>${d.label}</h3><span class="tag">${esc(model||"model not set")}</span><span class="grow"></span>${chip}</div>
+    ${locked?`<div class="lock"><span>Step 2 unlocks after you confirm the image</span></div>`:""}
+    <div class="sc-head"><span class="sn">${s==="ok"?"✓":n}</span>
+      <div class="kv"><span class="lbl">Step ${n}</span><h3>${d.label}</h3></div><span class="grow"></span>
+      <div class="kv end"><span class="lbl">Status</span>${chip}</div></div>
     <div class="sc-body">
-      <div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="Upload ${d.label.toLowerCase()} for ${esc(g.beat)}"`}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>
-      <div class="pbox"><pre class="${prompt?"":"none"}">${prompt?esc(prompt):"Prompt not written yet."}</pre>
-        <div class="pmeta"><span>${num(prompt.length)} chars${limit?` · limit <span class="${prompt.length>limit?"over":""}">${num(limit)}</span>`:""} · 9:16</span>
-        <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${prompt?"":"disabled"}>Copy prompt</button></div></div>
+      <div class="kv"><span class="lbl">Result</span>
+        <div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="Upload ${d.label.toLowerCase()} for ${esc(g.beat)}"`}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div></div>
+      <dl class="specs">${specs.map(([a,b])=>`<div><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
     </div>
-    ${g[d.fault]&&s==="bad"?`<div class="fault"><b>REGENERATE${g[d.regens]?` · try ${g[d.regens]}/2`:""}</b> · ${esc(g[d.fault])}</div>`:""}
+    <div class="kv"><div class="lbl-row"><span class="lbl">Prompt</span><span class="pm">${num(prompt.length)} chars${limit?` / <span class="${prompt.length>limit?"over":""}">${num(limit)}</span>`:""}</span><span class="grow"></span>
+      <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${prompt?"":"disabled"}>Copy prompt</button></div>
+      <pre class="ptext${prompt?"":" none"}">${prompt?esc(prompt):"Prompt not written yet."}</pre></div>
+    ${g[d.fault]&&s==="bad"?`<div class="fault"><b>REGENERATE · attempt ${1+(Number(g[d.regens])||0)} of 3</b> · ${esc(g[d.fault])}</div>`:""}
     ${faultOpen?`<form class="fform" data-faultform="${esc(g.id)}" data-step="${k}"><input id="fault-${esc(g.id)}-${k}" placeholder="Q3: fault → fix" aria-label="Fault and fix" required><button class="btn small bad" type="submit">Mark regenerate</button><button class="btn small" type="button" data-faultcancel="1">Cancel</button></form>`:""}
+    <div class="kv"><span class="lbl">Your call</span>
     <div class="sc-actions">
       ${state.readOnly?"":`<button class="btn small ok${s==="ok"?" solid":""}" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>✓ ${d.ok}</button>
       <button class="btn small bad" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>↻ Regenerate</button>`}
       <button class="btn small" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>⬇ Download</button>
-    </div></div>`;
+    </div></div></div>`;
 }
 
 function extFor(type,k){
