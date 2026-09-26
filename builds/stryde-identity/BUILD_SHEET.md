@@ -239,9 +239,14 @@ All five: the bottom row came **~43/57 instead of 50/50** (a `NEG-GRID` miss, no
 
 ### Narrator — `VOICE-NARR` (§22D) and §20 constraint sheet
 
-**`VOICE-NARR`** *(steers the §22U step-2 Kling clips; the clone inherits it)*
+**`VOICE-NARR`** *(locked 2026-09-26 in this compressed form — it goes verbatim into every §22U step-2 take and fits the Kling 2,500 ceiling; the clone inherits it. Narrator recast to 60 at v2)*
 ```
-A sixty-three-year-old Tyneside man, a low dry chest voice with gravel at its edges, brisk and stop-start. Placement in the chest, little nasal colour; texture dry with a faint rasp on held vowels; tempo brisk, about 185 words a minute, in short bursts; melody flat, statements falling at the end, questions barely lifting; articulation — Geordie vowels kept, final t's glottal, every other consonant clear; habit — a short breath out through the nose before a number. Age wear: breath shortening at long line ends, a thin top to the range. Stress: quieter and slower on the turn word, never louder.
+A man of sixty from Tyneside, a low dry chest voice with gravel at its edges, brisk and stop-start. Statements land flat and fall at the end; Geordie vowels, glottal t's; a short breath out through the nose before a number. Stress: quieter and slower on the turn word, never louder.
+```
+
+Full derivation, kept for reference (not sent):
+```
+A man of sixty from Tyneside, a low dry chest voice with gravel at its edges, brisk and stop-start. Placement in the chest, little nasal colour; texture dry with a faint rasp on held vowels; tempo brisk, about 185 words a minute, in short bursts; melody flat, statements falling at the end, questions barely lifting; articulation: Geordie vowels kept, final t's glottal, every other consonant clear; habit: a short breath out through the nose before a number. Age wear: breath shortening at long line ends, a thin top to the range. Stress: quieter and slower on the turn word, never louder.
 ```
 
 | Field | N — narrator |
