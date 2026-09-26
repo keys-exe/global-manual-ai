@@ -2700,6 +2700,7 @@ Both run modes (E0). **Manual:** the agent runs every step through the connector
 | 8 | **Tag the script** | Eleven v3 audio tags | From the tag library (below) |
 | 9 | **TTS** | ElevenLabs `eleven_v3`, the cloned voice ID, 4 takes | **5,000 characters maximum per request, tags and spaces included** — the budget ladder below |
 | 10 | **Pick and save the master** | — | The most realistic take (below). Saved as `<VoiceName>_master.mp3` in the build tree and logged in the ledger. Manual: the user listens. Automatic: the agent picks by the four criteria and does not stop (E0) |
+| 10a | **VO house cut** | `vo_trim.py` (E11A) | Every VO — hooks, body, each hook variant (raw hook + raw body of the same take, one pass) — trimmed in the house cut: butt joins, words kept to −38 dB, breaths cut at phrase boundaries, no speed change. Both run modes. Never on a §24I voice master |
 | 11 | **Upload the avatar image** | HeyGen asset upload → photo avatar | The step-1 image, or the matching look image for each act/location/story day (§14, §30C). One photo avatar per look |
 | 12 | **Split the master** | `ffmpeg`, cut at sentence ends by word timestamps | One audio segment per talking-head beat (§29), each cut between words. B-roll-covered lines stay in the master for the edit and are not rendered |
 | 13 | **Talking heads** | HeyGen, engine **Avatar V**, audio upload, 9:16, 1080p | **A motion prompt on every render, both run modes** — app: *Apply custom motion* + *More expressive*; API: `motionPrompt`. See the HeyGen settings below |
@@ -2736,7 +2737,19 @@ Tags are drawn from the Eleven v3 Tag Library (1,806 tags, 15 categories, stored
 
 ### Step 10 — picking the master
 
-Judge the four takes in this order: **(1) every word of the script is present and in order** — checked against a transcript, never assumed; **(2) sounds like a person, not a narrator** — uneven stress, natural pitch movement, no sing-song, no announcer lift at line ends; **(3) the tags landed** — a tagged laugh sounds like a laugh, not the word "laugh"; **(4) no artefacts** — no metallic edge, clipped words, stray breath noise or level jumps. First fail on (1) or (4) disqualifies the take. In Automatic this is AGENT-FIRST (E0); **the user hears the chosen master before step 11**, because voice is always queued for the user.
+Judge the four takes in this order: **(1) every word of the script is present and in order** — checked against a transcript, never assumed; **(2) sounds like a person, not a narrator** — uneven stress, natural pitch movement, no sing-song, no announcer lift at line ends; **(3) the tags landed** — a tagged laugh sounds like a laugh, not the word "laugh"; **(4) no artefacts** — no metallic edge, clipped words, stray breath noise or level jumps. First fail on (1) or (4) disqualifies the take; a take whose audio ends at speech level (last frame above −45 dB — the TTS cut the last word) fails (4). The chosen master is then cut in the house cut (step 10a). In Automatic this is AGENT-FIRST (E0); **the user hears the chosen master before step 11**, because voice is always queued for the user.
+
+### Step 10a — the VO house cut *(locked 2026-09-26, both run modes)*
+
+**Every §22U TTS voice-over is trimmed in the house cut before it is used** — hooks, body and each hook variant. The house cut is the user's own reference edit, measured and reproduced by `scripts/vo_trim.py` (procedure: Appendix E11A; the measured reference: `references/vo_house_cut.md` in the skill).
+
+- **Butt joins.** Every silence longer than 0.12s becomes **0.015s after a phrase end** (the script's , . ? !) and **0.01s elsewhere**. Short gaps under 0.12s inside words (stop closures) stay as they are. Target: about 1–2s of silence left per minute of VO, no gap over 0.14s.
+- **The word is never cut short.** Each word is kept until its level falls to **−38 dBFS**, then a 20 ms fade — never cut at a transcript word-end (transcripts end words early and clip the decay).
+- **No breaths.** A breath (a ≥ 0.12s quiet, noise-like, mid-band, non-voiced run) is cut — **only at a phrase boundary**, so a fricative inside a phrase ("th", "s") is never touched. No entry breath is kept: `BREATH-A` belongs to talking-head clips, not to VO.
+- **No speed or pitch change.** The house cut removes air; it never changes tempo.
+- **Hook variants:** the raw hook and the raw body **of the same take** are joined and trimmed in one pass, so the seam is a butt join like every other break. When a consistent voice across hooks and body matters (the default for hook variants), voice all hooks and the body **in one TTS request**, then split at the silences between the parts.
+- **A take whose generation ends at speech level** (last frame above −45 dB — the TTS cut the last word) fails step 10 criterion (4); the trim cannot repair it.
+- **Verify:** every word present and in order (transcript vs script), no breath left at a phrase boundary, no gap over 0.4s, the final word fading below −35 dB. **Never** on a §24I film voice master or any Seedance dialogue audio — those stay exactly as generated.
 
 ### Step 13 — HeyGen settings
 
@@ -3531,7 +3544,7 @@ A Seedance voice ingredient (§4) sets timbre, pitch, accent and pace. **It must
 1. **Seedance 2.5, ingredients mode, 720p, 9:16, `duration: 10`.** Pack: the character's face-only reference (§19) first, nothing else. Framing: a plain medium close-up against a quiet, neutral background — this clip exists for its audio.
 2. **Line:** one plain, informational sentence from the script with no emotional charge (a time, a place, a fact), inside the E6 10s budget. Never a line from the crisis or the Turn.
 3. **Delivery:** `VOICE-[CHAR]` verbatim, first (§22D), then: *level, even and unhurried; conversational volume; no emotion coloured into the words; a person reading a sentence aloud to themselves.*
-4. **Keep the audio exactly as generated.** Extract the track with a stream copy (`ffmpeg -i <clip> -vn -c:a copy`). **No trim, no dead-air or inhale cut, no speed change, no loop, no noise reduction, no normalising.** The breaths, the room and the pace are part of who the character sounds like; cutting them hands Seedance a voice that never breathes. The E11 trim pass never runs on a voice master.
+4. **Keep the audio exactly as generated.** Extract the track with a stream copy (`ffmpeg -i <clip> -vn -c:a copy`). **No trim, no dead-air or inhale cut, no speed change, no loop, no noise reduction, no normalising.** The breaths, the room and the pace are part of who the character sounds like; cutting them hands Seedance a voice that never breathes. The E11 trim pass and the VO house cut (E11A) never run on a voice master.
 5. **Check, then lock:** one speaker, every word audible, affect neutral (not sad, not bright), no music or effects. A fail is a regeneration, never an edit. The passing file is saved as `<CHAR>_voice_master.<ext>` beside the untouched clip and logged on the constraint sheet.
 6. **Use:** attached in `audios_list` on every Seedance dialogue call where the character speaks (E7), the same file every time.
 
@@ -7683,6 +7696,8 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | Seedance ingredient pack | call params vs `ING-MANIFEST` | ≤ 30 files · every file named in the manifest · composition first · no two files contradicting · sheets marked face-only | AUTO-ASSIST | Rebuild the pack in §4 order and drop order; a contradiction is removed, never resolved in prose |
 | Trim — dead air (E11, Automatic) | silence detection, −40 dB, on the trimmed clip | no silence > 0.4s except keep-list IDs; first word ≤ 0.5s; tail ends ≤ 0.3s after the last word | AUTO | Re-trim at tightened thresholds, cap 1; then HUMAN |
 | Trim — inhales (E11, Automatic) | word timestamps vs cut list, then a waveform check at each joint | no cut lands inside a word; no audible click at the joint (waveform zero-cross ± 10 ms) | AUTO-ASSIST | Widen the padding by 40 ms and re-trim; a cut inside a word is TRIM_FAIL |
+| VO house cut — joins and breaths (E11A, both modes) | `vo_trim.py` verify on the trimmed VO | no breath run at a phrase boundary; no gap > 0.4s; phrase-break silence ≈ 0.015s; last word fading below −35 dB | AUTO | Re-trim once; then HUMAN with the report |
+| VO house cut — words (E11A, both modes) | transcript (medium.en) of the trimmed VO vs the script lines | every word present, in order | AUTO | A missing word is a trim fault: re-trim with the breath cut off at that boundary; a word the TTS never spoke → regenerate the take |
 | Film voice master (§24I) | ffprobe duration + codec vs the source clip's audio stream; one-speaker listen | identical duration and codec (stream copy — no edit); neutral affect | AUTO + HUMAN | Regenerate the clip; never edit the audio |
 | Clone source (§22U steps 2–5) | `voice_source.py` report: take count, pitch median per take, duration + silencedetect on the step-5 file | ≥ 2 Kling takes; every take's pitch median within ±10% of G1 (unverified threshold); ≥ 30.0s; no silence > 0.4s; `atempo` 1.2 logged | AUTO | Mismatched take → regenerate it (two tries, then the user); re-loop; a source under 30s or with a mismatched take is never uploaded |
 | Clip verdict (§22W) | `contact_sheet.py` sheet + full frames where needed | all seven §22W questions YES | AUTO (agent) | REGENERATE with the named fix; third failure of one fault → user |
@@ -7807,7 +7822,7 @@ Computed before any cut ships: every Appendix A string has a count and the count
 
 ## E11. Trim pass — dead air and inhales *(new V7.56.0 — unverified on production clips)*
 
-**Scope:** talking-head clips, and any clip carrying dialogue. B-roll is trimmed at head and tail only — a cut inside a continuous move is a visible jump and breaks §27A. Mode 4 and Mode 5 clips are not trimmed inside the take: their silences are performance (§24I) and are cut in the edit.
+**Scope:** talking-head clips, and any clip carrying dialogue. **Audio-only §22U voice-over uses the VO house cut instead (E11A).** B-roll is trimmed at head and tail only — a cut inside a continuous move is a visible jump and breaks §27A. Mode 4 and Mode 5 clips are not trimmed inside the take: their silences are performance (§24I) and are cut in the edit.
 
 **Tools** (installed per session; the container is ephemeral):
 
@@ -7833,6 +7848,23 @@ Computed before any cut ships: every Appendix A string has a count and the count
 
 **The original is never overwritten.** The trimmed file sits beside it as `<BEAT-ID>.trim.mp4`; the untrimmed file stays in the build tree for the editor.
 
+## E11A. VO house cut — audio-only voice-over *(locked 2026-09-26, both run modes)*
+
+**Scope:** every §22U TTS voice-over (hooks, body, hook variants), Manual and Automatic. E11 (`trim.py`) stays for talking-head clips. Never on a §24I film voice master.
+
+**Why not E11 on VO:** transcript word edges end words early (the decay is clipped — the user heard hook endings cut off) and start them early (the inhale is folded into the next word and survives). The house cut takes every edge from the waveform.
+
+**Reference:** the user's own edit of a locked take (57.55s; the file and its measurements are indexed in the skill's `references/vo_house_cut.md`): 24 phrase breaks at 0.02s median silence (max 0.08s), 1.6s of silence left in total, words cut once they fall to ~−38 dB, no breaths, no speed change, hook butt-joined to the body. Measured in `references/vo_house_cut.md`.
+
+**Procedure** (`scripts/vo_trim.py <raw> --script <lines> --out <file>`):
+1. Frames every 10 ms: level, spectral centroid, flatness, share of 80–400 Hz energy.
+2. **Keep** = level above −38 dBFS.
+3. **Breaths** = runs ≥ 0.12s at −62…−34 dB, flatness ≥ 0.18, centroid 1.2–3.4 kHz, low-band share < 0.18 — removed only where the script word before them closes a phrase (, . ? !), aligned by transcript.
+4. Silences < 0.12s stay; longer ones become 0.015s after a phrase end, 0.01s elsewhere.
+5. Head 10 ms before the first word; tail 20 ms after the last kept frame, 20 ms fade; 6 ms fades at every joint.
+6. **Verify** (E1 rows *VO house cut*): transcript vs script word for word; no breath at a phrase boundary; no gap > 0.4s; last word fading below −35 dB; source end level reported (above −45 dB = the TTS cut the last word → the take fails §22U step 10 (4)).
+7. Hook variants: join the raw hook + raw body of the same take, then one pass. The original is never overwritten.
+
 ---
 # PENDING AMENDMENTS
 
@@ -7847,7 +7879,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 
 | 2026-09-26 | Generation Board: every generation of a build (both run modes) is logged on one private board per build, published from `dashboard/generation_board.html` — grouped per act (Hook 1…, Act 1…), Images then Videos, every field labelled, renders uploaded, verdicts recorded, Confirm / Fix for the reviewer; a Fix note is a §34 correction for that beat, regenerated within the §22V budget and picked up by an hourly check; the ledger's state is mirrored onto it. | §16A (new subsection), E3 | Written into §16A and E3; cut pending |
 | 2026-09-26 | Generation Board design **locked**: `dashboard/generation_board.html` is the spec; no session redesigns it; changes only on the user's named request, made in the template and republished to every board. | §16A | Written into §16A; cut pending |
-| 2026-09-26 | **VO trim by the waveform — house cut = the user's reference edit** (user: "the cuts on the hook at the end are so fast it didn't even let the word end; there are still breathing like inhales", then supplied their own cut: "this is how I would cut it, make this as an example"). For audio-only VO (§22U masters, hooks and body) the trim uses `vo_trim.py`, tuned to the measured reference (`references/vo_house_cut.md`): **butt joins** — every silence longer than 0.12s becomes 0.015s after a phrase end, 0.01s elsewhere (reference: 0.02s median at 24 phrase breaks, max 0.08s; 1.6s of silence left in 57.5s); stop closures under 0.12s inside words stay; each word is kept until it falls to −38 dBFS (the reference's measured cut level), then a 20ms fade — never cut at a transcript word-end; inhales removed (a ≥ 0.12s quiet, noise-like, mid-band, non-voiced run is cut only at a phrase boundary — the script's , . ? ! — so "th"/"s" inside a phrase stay); no entry breath (BREATH-A does not apply to VO). Hook variants: the raw hook + the raw body of the same take are joined and trimmed in one pass, so the seam is a butt join like every other. Also: one TTS request for all hooks + body when a consistent voice is wanted, split at the silences between parts; a take whose generation ends at speech level (last frame > −45 dB — the TTS cut the last word) fails §22U step 10 (4). `trim.py` stays for talking-head clips | §22U steps 9–10, E11, E1 (trim rows) | Pending — `vo_trim.py` + `references/vo_house_cut.md` in the skill |
+| 2026-09-26 | **VO trim by the waveform — house cut = the user's reference edit** (user: "the cuts on the hook at the end are so fast it didn't even let the word end; there are still breathing like inhales", then supplied their own cut: "this is how I would cut it, make this as an example"). For audio-only VO (§22U masters, hooks and body) the trim uses `vo_trim.py`, tuned to the measured reference (`references/vo_house_cut.md`): **butt joins** — every silence longer than 0.12s becomes 0.015s after a phrase end, 0.01s elsewhere (reference: 0.02s median at 24 phrase breaks, max 0.08s; 1.6s of silence left in 57.5s); stop closures under 0.12s inside words stay; each word is kept until it falls to −38 dBFS (the reference's measured cut level), then a 20ms fade — never cut at a transcript word-end; inhales removed (a ≥ 0.12s quiet, noise-like, mid-band, non-voiced run is cut only at a phrase boundary — the script's , . ? ! — so "th"/"s" inside a phrase stay); no entry breath (BREATH-A does not apply to VO). Hook variants: the raw hook + the raw body of the same take are joined and trimmed in one pass, so the seam is a butt join like every other. Also: one TTS request for all hooks + body when a consistent voice is wanted, split at the silences between parts; a take whose generation ends at speech level (last frame > −45 dB — the TTS cut the last word) fails §22U step 10 (4). `trim.py` stays for talking-head clips | §22U steps 9–10 + new step 10a, E11, new E11A, E1 (two VO house-cut rows), §24I | **Locked by the user 2026-09-26.** Written into §22U step 10a, E11A, E1; cut pending |
 ---
 
 # OPEN DECISIONS

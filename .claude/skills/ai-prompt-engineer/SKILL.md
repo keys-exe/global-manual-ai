@@ -43,6 +43,8 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Script is spoken verbatim (§22U, locked).** The ElevenLabs text is the script's spoken lines word for word — never add, remove, change or re-order a word; never send the title, headings, links or visual notes. Only audio tags may be added. Extract with `scripts/script_lines.py`, lock with `tts_budget.py --script-lines` (any difference = FAIL, not sent). A wrong-looking line is flagged, never fixed. Agent-written hooks are voiced separately, only after step-6 approval.
 
+**VO house cut (§22U step 10a, E11A — locked 2026-09-26, both run modes).** Every TTS voice-over — hooks, body, each hook variant — is trimmed with `scripts/vo_trim.py` in the house cut, the user's own reference edit (`references/vo_house_cut.md`): butt joins (0.015s at a phrase end, 0.01s elsewhere), each word kept until it falls to −38 dB then a 20 ms fade (never cut at a transcript word-end), breaths cut only at phrase boundaries, no speed change. Hook variants: raw hook + raw body of the same take joined, then one pass; for one consistent voice, voice all hooks + body in one TTS request and split at the silences. A take whose last word the TTS cut off (ends above −45 dB) fails. Never on a §24I voice master. `trim.py` (E11) stays for talking-head clips.
+
 **Image verdict (§22V). Open and judge every image yourself — the line first, then product, body, continuity, register, animatability — and ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then the user. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
 
 **Clip verdict (§22W).** Judge every video yourself from `scripts/contact_sheet.py` (true first + last frame, `--full` for zoom): the line, product in every frame, body in every frame, motion, continuity, technical, enough footage for its slot → `USE` or `REGENERATE`.
@@ -157,6 +159,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Kling source (2+ takes) → ElevenLabs clone → v3 TTS → HeyGen Avatar V)*
 - 22V. Image Verdict — the agent judges every image *(new V7.59.0)*
 - 22W. Clip Verdict — the agent judges every video *(new V7.60.0)*
+- 22U step 10a. VO house cut *(locked 2026-09-26 — `vo_trim.py`, E11A)*
 - 22E. Fixed-Mount Capture Standard *(new V7.48.7; split into MOUNT and RECORD at V7.48.10)*
 - 22F. Creator Framing Standard *(new V7.52.0 — visual check pending)*
 - 22S. Skin Realism Standard *(Mode 1 — measured this cycle)*
@@ -281,6 +284,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - E9. Build directory layout
 - E10. Doc-lint — standing §34 step at every version cut
 - E11. Trim pass — dead air and inhales *(new V7.56.0 — unverified on production clips)*
+- E11A. VO house cut — audio-only voice-over *(locked 2026-09-26, both run modes)*
 
 **PENDING AMENDMENTS**
 
