@@ -86,3 +86,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **HK1-B simplified (user: "simplify the prompt, just a simple going down the stairs B-roll"):** 417-char prompt
   (`hooks/HK1-B.i2v.v5.json`) from image v2 → board video v6, To check. Lesson: for a plain action B-roll a short prompt
   lets the model move naturally; the long product-physics blocks pinned her in place.
+- **HK1-B placement (user: "the strap placement is not correct"):** image v2's shell had rotated to the outer side of
+  the knee (wordmark off-centre, a slide on the front). Edit of v2 re-seating it per PLACE_LOCK with the locked
+  placement refs (front f5263ed7, bent 8a8979ac) → board images v10/v11, To check. New clip waits for the user's pick.
