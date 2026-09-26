@@ -343,6 +343,42 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .vi-m{font-size:11.5px;color:rgba(255,255,255,.6);overflow-wrap:anywhere}
 .vi-n{font-size:11.5px;color:#f5a097}
 .v-oldbar{font-size:12.5px;background:#3a2a10;color:#f3c77a;border:1px solid #6b4a12;border-radius:8px;padding:6px 10px}
+#planView{min-width:0}
+.plan{display:grid;grid-template-columns:230px minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:760px){.plan{grid-template-columns:1fr}}
+.p-rail{position:sticky;top:calc(12px + env(safe-area-inset-top,0px));display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px}
+@media (max-width:760px){.p-rail{position:static;flex-direction:row;flex-wrap:wrap;align-items:center}}
+.p-doc{display:flex;flex-direction:column;gap:2px;text-align:left;border:1px solid transparent;background:transparent;border-radius:10px;padding:9px 10px}
+.p-doc:hover{background:var(--sunk)}
+.p-doc[aria-current="true"]{background:var(--ink);color:var(--surface)}
+.p-doc[aria-current="true"] .p-dm{color:inherit;opacity:.7}
+.p-dt{font-weight:600;font-size:14px}
+.p-dm{font-size:11.5px;color:var(--muted)}
+.p-main{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px 20px;min-width:0;display:flex;flex-direction:column;gap:14px}
+.p-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.p-head h2{font-size:clamp(22px,2.6vw,28px);font-weight:700}
+.p-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.p-acts{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:4px 0 8px}
+.md{font-size:14px;line-height:1.6;min-width:0}
+.md>*:first-child{margin-top:0}
+.md h1,.md h2,.md h3,.md h4{font-family:var(--display);margin:18px 0 8px;line-height:1.25}
+.md h3{font-size:17px}.md h4{font-size:15px}
+.md p,.md ul,.md ol{margin:0 0 10px;max-width:78ch}
+.md code{font-family:var(--mono);font-size:12px;background:var(--sunk);border:1px solid var(--line);border-radius:5px;padding:1px 5px}
+.md pre{background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:10px;overflow:auto}
+.md pre code{border:0;padding:0;background:none}
+.md blockquote{margin:0 0 10px;border-left:3px solid var(--accent);padding:2px 0 2px 12px;color:var(--muted)}
+.md hr{border:0;border-top:1px solid var(--line);margin:16px 0}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:0 0 14px;max-width:100%}
+.md table{border-collapse:collapse;font-size:12.5px;line-height:1.45;min-width:100%}
+.md th{position:sticky;top:0;background:var(--sunk);text-align:left;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+.md td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;min-width:90px}
+.md td:first-child{white-space:nowrap;font-family:var(--mono);font-size:12px}
+.md tbody tr:nth-child(even){background:color-mix(in srgb,var(--sunk) 55%,transparent)}
+.md tbody tr:hover{background:var(--accent-soft)}
+.md tr:last-child td{border-bottom:0}
+.beatlink{border:0;background:var(--accent-soft);color:var(--accent);font-family:var(--mono);font-size:12px;font-weight:600;border-radius:5px;padding:2px 6px}
+.beatlink:hover{text-decoration:underline}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
 .box-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:14px 14px 0}
 .box-head .sn{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;background:var(--ink);color:var(--surface);flex:none}
@@ -403,6 +439,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
   <div class="tabs" role="tablist" aria-label="View">
     <button class="tab" role="tab" type="button" data-view="board" aria-selected="true">Board</button>
     <button class="tab" role="tab" type="button" data-view="manual" aria-selected="false">Manual run</button>
+    <button class="tab" role="tab" type="button" data-view="plan" aria-selected="false">Plan</button>
   </div>
 
   <div class="banner" id="banner" hidden></div>
@@ -414,6 +451,8 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
     <div class="filters" id="filters"></div>
     <main class="grid" id="grid"></main>
   </div>
+
+  <div id="planView" hidden></div>
 
   <div id="manualView" hidden style="flex-direction:column;gap:18px">
     <div class="mbar" id="mbar"></div>
@@ -428,6 +467,8 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 <div class="toast" id="toast" hidden></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
 <script>
 const STAGES = [
   {key:"absorption", name:"Absorption", folder:"01_ABSORPTION", sub:"Inspo, script, product · §42 · Visual Instruction Ledger", kind:"doc"},
@@ -473,7 +514,7 @@ const OFFLINE = {
   gens:[]
 };
 
-const state = {builds:[], gens:[], build:null, filter:"all", q:"", live:false, readOnly:false, db:null, assets:null, downloads:null, editing:null, view:"board", mstage:"all", mneeds:false, faultOpen:null, busy:{}};
+const state = {builds:[], gens:[], build:null, filter:"all", q:"", live:false, readOnly:false, db:null, assets:null, downloads:null, editing:null, view:"board", docs:[], pdoc:null, psec:0, pact:"all", mstage:"all", mneeds:false, faultOpen:null, busy:{}};
 const $ = s=>document.querySelector(s);
 const esc = s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const num = n=>Number(n||0).toLocaleString("en-US");
@@ -517,7 +558,10 @@ function renderInner(){
   document.querySelectorAll(".tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.view===state.view));
   $("#boardView").hidden=state.view!=="board";
   $("#manualView").hidden=state.view!=="manual";
+  $("#planView").hidden=state.view!=="plan";
+  $("#summary").hidden=state.view==="plan";
   if(state.view==="manual"){renderManual(gens);return}
+  if(state.view==="plan"){renderPlan(gens);return}
 
   $("#pipe").innerHTML=STAGES.map((s,i)=>{
     const sg=gens.filter(g=>g.stage===s.key), u=sg.filter(g=>g.status==="use").length;
@@ -1080,12 +1124,73 @@ async function restoreVersion(g,k,vnum){
   try{await state.db.doc("generations/"+g.id).update(patch);state.viewer.ver=null;toast(`v${vnum} is the current version again. Check it, then confirm.`)}catch(e){handleWriteError(e)}
 }
 
+
+/* plan: the build's documents — absorption, act map, wardrobe map — as written at each step */
+function mdToHtml(md){
+  if(window.marked&&window.DOMPurify) return DOMPurify.sanitize(marked.parse(String(md||""),{gfm:true,breaks:false}));
+  return `<pre class="v-prompt" style="color:inherit;background:var(--sunk)">${esc(md)}</pre>`;
+}
+const normBeat=t=>String(t||"").toUpperCase().replace(/[^A-Z0-9]/g,"");
+function renderPlan(gens){
+  const b=currentBuild();
+  const docs=state.docs.filter(d=>!d.build||!b||d.build===b.id).sort((a,c)=>(a.order||99)-(c.order||99));
+  if(!docs.length){
+    $("#planView").innerHTML=`<div class="empty" style="padding:28px">No plan documents on this board yet. They appear here as each step is written: the <b>Absorption Sheet</b> at step 1, the <b>Act map</b> and <b>Wardrobe map</b> at step 5.</div>`;
+    return;
+  }
+  if(!docs.some(d=>d.id===state.pdoc)){state.pdoc=docs[0].id;state.psec=0}
+  const doc=docs.find(d=>d.id===state.pdoc), secs=Array.isArray(doc.sections)?doc.sections:[];
+  if(state.psec>=secs.length) state.psec=0;
+  const sec=secs[state.psec]||{title:"",md:""};
+  $("#planView").innerHTML=`<div class="plan">
+    <nav class="p-rail" aria-label="Plan documents">
+      <span class="lbl">Plan</span>
+      ${docs.map(d=>`<button type="button" class="p-doc" data-pdoc="${esc(d.id)}" aria-current="${d.id===doc.id}">
+        <span class="p-dt">${esc(d.title||d.id)}</span>
+        <span class="p-dm">${esc(d.step?("Step "+d.step+" · "):"")}${(d.sections||[]).length} section${(d.sections||[]).length===1?"":"s"}</span></button>`).join("")}
+    </nav>
+    <section class="p-main">
+      <header class="p-head">
+        <div class="kv"><span class="lbl">${esc(doc.step?("Step "+doc.step):"Document")}${doc.source?` · ${esc(doc.source)}`:""}</span><h2>${esc(doc.title||doc.id)}</h2></div>
+        ${doc.updatedAt?`<span class="note">Updated ${esc(when(doc.updatedAt))}</span>`:""}
+      </header>
+      ${secs.length>1?`<div class="p-tabs" role="tablist">${secs.map((x,i)=>`<button type="button" class="chip" role="tab" data-psec="${i}" aria-pressed="${i===state.psec}">${esc(x.title||("Part "+(i+1)))}</button>`).join("")}</div>`:""}
+      <article class="md" id="pmd">${mdToHtml(sec.md)}</article>
+    </section></div>`;
+  decoratePlan(gens);
+}
+function decoratePlan(gens){
+  const root=$("#pmd"); if(!root) return;
+  const byBeat={}; gens.forEach(g=>{byBeat[normBeat(g.beat)]=g});
+  root.querySelectorAll("table").forEach(t=>{
+    const wrap=document.createElement("div"); wrap.className="tbl"; t.parentNode.insertBefore(wrap,t); wrap.appendChild(t);
+    const heads=[...t.querySelectorAll("thead th")].map(th=>th.textContent.trim().toLowerCase());
+    const rows=[...t.querySelectorAll("tbody tr")];
+    // beat ids in the first column open the card in the viewer
+    rows.forEach(r=>{const c=r.cells[0]; if(!c) return; const g=byBeat[normBeat(c.textContent)];
+      if(g){const f=flow(g).find(k=>g[STEP[k].asset])||flow(g)[0];c.innerHTML=`<button type="button" class="beatlink" data-viewm="${esc(g.id)}" data-step="${f}">${esc(c.textContent.trim())}</button>`}});
+    // a table with an Act column gets act filters
+    const ai=heads.indexOf("act");
+    if(ai>=0&&rows.length>4){
+      const acts=[...new Set(rows.map(r=>(r.cells[ai]||{}).textContent.trim()).filter(Boolean))];
+      if(state.pact!=="all"&&!acts.includes(state.pact)) state.pact="all";
+      const bar=document.createElement("div"); bar.className="p-acts";
+      bar.innerHTML=`<span class="lbl">Act</span>`+["all",...acts].map(a=>`<button type="button" class="chip" data-pact="${esc(a)}" aria-pressed="${a===state.pact}">${a==="all"?"All":esc(a)} <span class="cnt">${a==="all"?rows.length:rows.filter(r=>(r.cells[ai]||{}).textContent.trim()===a).length}</span></button>`).join("");
+      wrap.parentNode.insertBefore(bar,wrap);
+      rows.forEach(r=>{r.hidden=state.pact!=="all"&&(r.cells[ai]||{}).textContent.trim()!==state.pact});
+    }
+  });
+}
+
 /* events */
 let pickTarget=null;
 document.addEventListener("click",e=>{
-  const t=e.target.closest("[data-vgo],[data-vdet],[data-vfix],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-pdoc],[data-psec],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
+  if(ds.pdoc){state.pdoc=ds.pdoc;state.psec=0;state.pact="all";render();return}
+  if(ds.psec){state.psec=Number(ds.psec);state.pact="all";render();return}
+  if(ds.pact){state.pact=ds.pact;render();return}
   if(ds.vgo){state.viewer.id=ds.vgo;state.viewer.ver=null;state.viewer.menu=false;state.viewer.fix=false;renderViewer();return}
   if(ds.vdet){state.viewer.details=!state.viewer.details;renderViewer();return}
   if(ds.vfix){state.viewer.fix=ds.vfix==="1";renderViewer();return}
@@ -1140,8 +1245,8 @@ document.addEventListener("input",e=>{if(e.target.id==="search"){state.q=e.targe
 $("#scrim").addEventListener("click",closeDrawer);
 
 /* boot */
-state.build=/^#[A-Za-z0-9_.~-]+$/.test(location.hash)&&location.hash!=="#manual"?location.hash.slice(1):null;
-state.view=location.hash==="#manual"?"manual":(lsGet("gb.view")==="manual"?"manual":"board");
+state.build=/^#[A-Za-z0-9_.~-]+$/.test(location.hash)&&!["#manual","#plan"].includes(location.hash)?location.hash.slice(1):null;
+state.view=["#manual","#plan"].includes(location.hash)?location.hash.slice(1):(["manual","plan"].includes(lsGet("gb.view"))?lsGet("gb.view"):"board");
 function setSync(live,txt){$("#syncDot").classList.toggle("live",live);$("#syncTxt").textContent=txt}
 function offline(){
   state.builds=OFFLINE.builds;state.gens=OFFLINE.gens;state.readOnly=true;
@@ -1162,6 +1267,10 @@ render();
     }
     setSync(true,"Live");render();
   },err=>{setSync(false,"Sync stopped")});
+  db.collection("docs").onSnapshot(snap=>{
+    state.docs=snap.docs.map(d=>({id:d.id,...d.data()}));
+    if(state.view==="plan") render();
+  },()=>{});
   db.collection("generations").onSnapshot(snap=>{
     state.gens=snap.docs.map(d=>({id:d.id,...d.data()}));
     setSync(true,"Live");render();if(state.viewer) renderViewer();
