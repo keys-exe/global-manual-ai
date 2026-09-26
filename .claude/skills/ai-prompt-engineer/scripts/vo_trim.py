@@ -4,25 +4,30 @@
 Why not trim.py (transcript word edges): Whisper ends words early (clips the decay of the last
 word) and starts them early (swallows the inhale into the word). Here:
   * frames every 10 ms: level (dBFS), spectral centroid, flatness, share of energy 80–400 Hz
-  * KEEP = level above FLOOR (-60 dBFS) — every word keeps its natural decay
+  * KEEP = level above FLOOR (-38 dBFS) — every word keeps its audible body (the user's reference cut
+    ends words at ~-38/-40 dB); quieter decay and room tail go
   * BREATH = a run >= BREATH_MIN (0.12 s) of frames that are quiet (-62..-34 dB), noise-like
     (flatness >= 0.18), mid-band (centroid 1.2–3.4 kHz) and not voiced-low (80–400 Hz share < 0.18).
     Sibilants (centroid > 3.4 kHz), stop releases (< 0.12 s) and word decays (low-band share) are not
     breaths. Breaths are removed from KEEP.
   * a breath is only cut at a phrase boundary (the word before it closes a phrase with , . ? ! in the
     script): mid-phrase fricatives like the "th" of "through" match the breath profile and must stay.
-  * silences shorter than MERGE (0.08 s) stay as they are (stop closures, rhythm inside a phrase);
-    longer ones become PAUSE_SENT (0.28 s) after . ? ! , and PAUSE_WORD (0.10 s) elsewhere, never longer
-    than they were. Sentence ends are the only thing taken from the transcript.
-  * head: 10 ms before the first kept frame; tail: until the level stays under FLOOR, + 30 ms, 20 ms fade.
+  * silences shorter than MERGE (0.12 s) stay as they are (stop closures inside words);
+    longer ones become PAUSE_SENT (0.015 s) after . ? ! , and PAUSE_WORD (0.01 s) elsewhere — butt joins,
+    as in the user's reference cut. Phrase ends are the only thing taken from the transcript.
+  * head: 10 ms before the first kept frame; tail: + 20 ms after the last kept frame, 20 ms fade.
+  * Hook variants: trim the raw hook + raw body joined (one pass), so the seam is cut like every other join.
 Report + verification on the output: breaths left, tail level, gaps > 0.4 s.
 """
 import argparse, json, subprocess, sys
 import numpy as np, imageio_ffmpeg
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 SR, HOP, WIN = 16000, 160, 480
-FLOOR, BREATH_MIN, MERGE = -60.0, 0.12, 0.08
-PAUSE_SENT, PAUSE_WORD, HEAD, TAIL = 0.28, 0.10, 0.01, 0.03
+# House cut = the user's reference edit (A_MUST_FOR_vtrim, 2026-09-26): measured, not guessed —
+# 24 phrase breaks: 0.02s median silence (max 0.08), tails cut once the word falls to ~-38/-40 dB,
+# no breaths, hook butt-joined to the body; 1.6s of silence left in 57.5s.
+FLOOR, BREATH_MIN, MERGE = -38.0, 0.12, 0.12
+PAUSE_SENT, PAUSE_WORD, HEAD, TAIL = 0.015, 0.01, 0.01, 0.02
 
 def load(path, sr=SR):
     raw = subprocess.run([FF, "-v", "error", "-i", path, "-ac", "1", "-ar", str(sr), "-f", "s16le", "-"], capture_output=True).stdout
@@ -126,8 +131,8 @@ def verify(dst, script):
     quiet = db < -70
     gaps = [(round(t(a), 2), round(t(b), 2)) for a, b in runs(quiet) if t(b) - t(a) > 0.4 and a > 0 and b < len(db)]
     # the word ended by itself: level before the final fade already near the floor
-    last_kept = np.where(db > FLOOR)[0]
-    tail_ok = bool(len(last_kept)) and db[last_kept[-1]] < -45
+    last_kept = np.where(db > -60)[0]
+    tail_ok = bool(len(last_kept)) and db[last_kept[-1]] < -35
     return dict(duration_s=round(len(x) / SR, 3), breaths_left=left, gaps_over_0_4=gaps,
                 tail_last_db=round(float(db[last_kept[-1]]), 1) if len(last_kept) else None,
                 status="PASS" if not left and not gaps and tail_ok else "FAIL")
