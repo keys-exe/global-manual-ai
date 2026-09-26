@@ -39,7 +39,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Formats (§3, §3A, §3B).** Identify the build type first; if unclear, ask. Default Short VSL or UGC Ad. Long VSL, Narrated B-roll and AI Drama VSL only on explicit request.
 
-**Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs — every character's voice is cloned and voiced in Eleven v3 by the §22U pipeline. **Every voice starts as a Seedance clip, audio extracted there — never ElevenLabs Voice Design, never a library/premade voice** (§22U, V7.60.5). Talking heads: HeyGen Avatar V driven by that audio, **with a motion prompt on every render** (app: *Apply custom motion* + *More expressive*; API: `motionPrompt`, no `expressiveness`) (§22U step 13; §36/§38 are the fallback). Post: CapCut. **Connectors are strict (§5):** images → Higgsfield (out of credits → Kie AI API, same models incl. Sunburst, logged, no switch back); Kling → Kling connector; Seedance 2.5 → **Kie AI API** via `scripts/kie.py` (`KIE_API_KEY`), not the Higgsless connector. Local files get public URLs through Kie upload (temporary). Nothing else falls back.
+**Tools (§4).** Image: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst (three image models only). Video: Kling 3.0 (minified JSON, ≤2,500 chars incl. newlines, start image required), Wan 3.0, Seedance 2.5 (always 720p, ingredients mode), Veo 3.0. Voice: ElevenLabs — every character's voice is cloned and voiced in Eleven v3 by the §22U pipeline. **Every cloned voice starts as at least two Kling clips (`kling-video-v3_0_omni`, 10s, same image and `VOICE-[CHAR]`, same voice), audio extracted there, each take trimmed and sped ×1.2, joined, then looped to ≥30s — never ElevenLabs Voice Design, never a library/premade voice** (§22U, correction 2026-09-26; §24I film masters stay on Seedance). Talking heads: HeyGen Avatar V driven by that audio, **with a motion prompt on every render** (app: *Apply custom motion* + *More expressive*; API: `motionPrompt`, no `expressiveness`) (§22U step 13; §36/§38 are the fallback). Post: CapCut. **Connectors are strict (§5):** images → Higgsfield (out of credits → Kie AI API, same models incl. Sunburst, logged, no switch back); Kling → Kling connector; Seedance 2.5 → **Kie AI API** via `scripts/kie.py` (`KIE_API_KEY`), not the Higgsless connector. Local files get public URLs through Kie upload (temporary). Nothing else falls back.
 
 **Script is spoken verbatim (§22U, locked).** The ElevenLabs text is the script's spoken lines word for word — never add, remove, change or re-order a word; never send the title, headings, links or visual notes. Only audio tags may be added. Extract with `scripts/script_lines.py`, lock with `tts_budget.py --script-lines` (any difference = FAIL, not sent). A wrong-looking line is flagged, never fixed. Agent-written hooks are voiced separately, only after step-6 approval.
 
@@ -71,7 +71,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 ## Voice pipeline helpers (§22U, both modes)
 
-- `scripts/voice_source.py` — steps 3–5: trim → ×1.2 → loop to ≥30s → `<Keyword>_clone_source.mp3`
+- `scripts/voice_source.py` — steps 3–5 on two or more Kling takes: trim each → ×1.2 → same-voice gate (pitch median ±10%) → join in order → loop to ≥30s → `<Keyword>_clone_source.mp3`
 - `scripts/script_lines.py` — §22U step 8: spoken lines only, verbatim; reports every dropped line (title, headings, links, visual notes); `--visual` writes the §27F ledger's `VNxx` rows; reads `.docx` tables (two-column VO | VISUAL scripts) and cuts speaker labels (`VO:`, `SARAH:`) — never voiced
 - `scripts/tts_budget.py` — verbatim lock with `--script-lines`; steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags
 - `scripts/assemble.py` — §30H: place B-roll on its lines, close flickers and holes, render + verify the rough cut; per-B-roll `layout` (`full`, `split`, `pip`) and `punch_in` from `EDIT-[BUILD]`
@@ -84,7 +84,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 - `scripts/fetch_inspo.py` — §18B/§42 Part 1: downloads INSPO links into `builds/<BUILD>/intake/` and measures duration, aspect, shots, cuts, silences; saves two frames per shot and per-second contact sheets for the Edit Grammar (§42 Part 3A). YouTube returns 403 from the cloud — ask for the file instead
 - `references/eleven_v3_tags.json` — the full Eleven v3 tag library (1,806 tags); `TAG-PALETTE` in §22U is the default subset
 
-Setup per session: `pip install -q imageio-ffmpeg faster-whisper yt-dlp gdown python-docx pypdf cffi`. In Manual, run these on a clip the user supplies and deliver every other step as copy-ready text and settings.
+Setup per session: `pip install -q imageio-ffmpeg faster-whisper numpy yt-dlp gdown python-docx pypdf cffi`. In Manual, run these on a clip the user supplies and deliver every other step as copy-ready text and settings.
 
 ## Changing the standards (§0, §34)
 
@@ -151,7 +151,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 22B. Camera Behaviour Standard *(measured this cycle — one A/B pair)*
 - 22C. Audio Capture Standard *(new — unverified)*
 - 22D. Voice Identity Standard *(new — axis steerability unverified)*
-- 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Seedance source → ElevenLabs clone → v3 TTS → HeyGen Avatar V)*
+- 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Kling source (2+ takes) → ElevenLabs clone → v3 TTS → HeyGen Avatar V)*
 - 22V. Image Verdict — the agent judges every image *(new V7.59.0)*
 - 22W. Clip Verdict — the agent judges every video *(new V7.60.0)*
 - 22E. Fixed-Mount Capture Standard *(new V7.48.7; split into MOUNT and RECORD at V7.48.10)*
