@@ -2686,7 +2686,7 @@ Both run modes (E0). **Manual:** the agent delivers every step's prompt, text an
 | 10 | **Pick and save the master** | — | The most realistic take (below). Saved as `<VoiceName>_master.mp3` in the build tree and logged in the ledger. Manual: the user listens. Automatic: the agent picks by the four criteria and does not stop (E0) |
 | 11 | **Upload the avatar image** | HeyGen asset upload → photo avatar | The step-1 image, or the matching look image for each act/location/story day (§14, §30C). One photo avatar per look |
 | 12 | **Split the master** | `ffmpeg`, cut at sentence ends by word timestamps | One audio segment per talking-head beat (§29), each cut between words. B-roll-covered lines stay in the master for the edit and are not rendered |
-| 13 | **Talking heads** | HeyGen, engine **Avatar V**, audio upload, 9:16, 1080p | **Expressiveness on and hand gestures while talking** — see the HeyGen settings below |
+| 13 | **Talking heads** | HeyGen, engine **Avatar V**, audio upload, 9:16, 1080p | **A motion prompt on every render, both run modes** — app: *Apply custom motion* + *More expressive*; API: `motionPrompt`. See the HeyGen settings below |
 
 ### Step 8–9 — the script is spoken verbatim *(locked V7.59.2)*
 
@@ -2729,10 +2729,15 @@ Judge the four takes in this order: **(1) every word of the script is present an
 | Engine | `avatar_v` |
 | Audio | The step-12 segment, uploaded (never a HeyGen TTS voice) |
 | Aspect / resolution | `9:16` / `1080p` |
-| Hand gestures | `motionPrompt` = the beat's §28B gesture register and §28C lexicon entries, in plain words: natural hand gestures while talking, the named landings, hands never frozen |
-| Expressiveness | **On** — high |
+| Motion prompt | **Always sent, both run modes** *(correction 2026-09-26, Pending Amendments)*. The beat's §28B gesture register and §28C lexicon entries in plain words, one or two sentences: natural hand gestures while talking, the named landings, hands never frozen, eyes on camera. App: pasted into **Apply custom motion**. API: `motionPrompt`. Manual ships it as its own copy-ready block beside each talking-head beat (§16) |
+| Expressiveness | App: **More expressive** on. API: not sent on `avatar_v` (see below) |
 
-**API conflict, measured from the schema:** HeyGen's API accepts `expressiveness` on **Avatar IV only** and rejects it with `avatar_v`. And `motionPrompt` on an Avatar V photo avatar is rejected when the avatar's group has no animation reference. Resolution, in order: **(a)** in the HeyGen app (Manual), use Avatar V and switch expressiveness on if the app offers it; **(b)** via the API (Automatic), Avatar V + `motionPrompt`; **(c)** if Avatar V rejects `motionPrompt`, fall back to Avatar IV with `expressiveness: high` + `motionPrompt`, and record the fallback in the ledger. Unverified until the first render.
+**Measured from the current HeyGen API schema (2026-09-26):**
+- `motionPrompt` is **accepted on `avatar_v`**, for video avatars and for photo avatars whose group has an animation reference. With no `reference_look_id`, a photo avatar picks one from its group: digital twins first, then curated public studio looks. It is rejected only when the group has no eligible reference, and then the photo avatar renders straight from its image.
+- `expressiveness` is **Avatar IV only**, and `avatar_v` rejects it. The app's *More expressive* toggle has no Avatar V API parameter.
+- `engine.reference_look_id` is optional. If set, it must be a `digital_twin` look in the same avatar group.
+
+**Resolution, in order:** **(a)** Manual (HeyGen app): Avatar V, *More expressive* on, the motion block in *Apply custom motion*. **(b)** Automatic (API): `engine: {type: "avatar_v"}` + `motionPrompt`, no `expressiveness`. **(c)** If Avatar V rejects `motionPrompt` (no animation reference in the group): Avatar IV with `expressiveness: "high"` + `motionPrompt`, recorded in the ledger. A motion prompt is never dropped to make a render pass. Unverified until the first render: the app box's length limit (it is a beta field, so keep the motion prompt to one or two sentences), and how closely the auto-selected reference look follows the gestures.
 
 ### What this pipeline supersedes
 
@@ -5543,7 +5548,7 @@ Three tiers. Every numeric, clinical or comparative claim in a script is assigne
 
 **85. Intake → one message, then no questions (§18B).** The Intake Pack carries steps 1 and 2; `MODE` locks the mode, `RUN: AUTOMATION` is the Automatic call, and the voice route follows the mode. **`RUN: MANUAL` (or blank): the agent fetches and absorbs steps 1–2 and generates the avatars (step 3) itself, stops for the user's decision on the avatars, then continues in Manual (V7.62.0).** **Film voices (Mode 4, 5, AI Drama) are neutral Seedance masters kept exactly as generated — never trimmed, sped or looped** (§24I).
 
-**84. Talking heads → HeyGen Avatar V, driven by the §22U master (§22U steps 11–13).** Expressiveness on, hand gestures via `motionPrompt`, 9:16, 1080p. §36/§38 are the fallback. All-B-roll, narrated and film builds skip HeyGen and use the master as voiceover or audio ingredient.
+**84. Talking heads → HeyGen Avatar V, driven by the §22U master (§22U steps 11–13).** A motion prompt on every render (app: *Apply custom motion* + *More expressive* on; API: `motionPrompt`, with no `expressiveness`, which is Avatar IV only), 9:16, 1080p. §36/§38 are the fallback. All-B-roll, narrated and film builds skip HeyGen and use the master as voiceover or audio ingredient.
 
 **83. Run mode → Manual (§1, Appendix E0).** Copy-ready prompts; the user generates, the user reviews — except the avatars in a Manual Drive run, which the agent generates and the user decides on (§18B, V7.62.0). **Automatic only on explicit instruction, per build** — "we will use automation" or an equally direct call — through the `ai-prompt-engineer-auto` skill. Never inferred from a request to "check", "review" or "fix" a render, never switched on mid-build without the call, never carried into the next build. Analysing or trimming a single clip the user supplies is a Manual task, not Automatic.
 
@@ -7756,7 +7761,7 @@ Superseded B-roll rule, kept for reference: B-roll calls: 5s (the Higgsfield flo
 **Clone (ElevenLabs, §22U step 6):** Manual — Instant Voice Clone in the ElevenLabs app. Automatic — `scripts/elevenlabs_clone.py clone <Keyword>_clone_source.mp3 --name <Keyword> [--character <FirstName>]` → name checked against `GET /v1/voices` (taken = refused, §22U step 7) → `POST /v1/voices/add` (multipart, header `xi-api-key: $ELEVENLABS_API_KEY`) `{name: <keyword>, files: [<step-5 file>], remove_background_noise: true}` → `{voice_id, requires_verification: false}`; confirmed by `GET /v1/voices/{id}` (`category: "cloned"`). Preflight `GET /v1/user/subscription`: `can_use_instant_voice_cloning`, `voice_limit − voice_slots_used`. Cleanup `DELETE /v1/voices/{id}`. Measured 2026-09-25 (one test clone from a 48s source, then deleted). The connector has no clone call.
 **TTS (ElevenLabs connector, §22U step 9):** `creative_generate_speech` → `{model_id: "eleven_v3", voice_id: <clone>, prompt: <tagged script ≤ 5,000>, generations_count: 4}`; poll `creative_get_flow_run_status`. `estimate_only: true` first when the credit cap is tight.
 **Avatar (HeyGen, §22U step 11):** `create_asset_upload` → PUT bytes → `complete_asset_upload` → `create_photo_avatar {name: <VoiceName>-<look>, file: {type: "asset_id", asset_id}}`; wait for the avatar look to be ready.
-**Talking head (HeyGen, §22U step 13):** audio segment uploaded the same way → `create_video_from_avatar {avatarId: <look id>, engine: {type: "avatar_v"}, audioAssetId, aspectRatio: "9:16", resolution: "1080p", motionPrompt: <gestures>}`; poll `get_video`. Fallback: `engine: {type: "avatar_iv"}, expressiveness: "high"`.
+**Talking head (HeyGen, §22U step 13):** audio segment uploaded the same way → `create_video_from_avatar {avatarId: <look id>, engine: {type: "avatar_v"}, audioAssetId, aspectRatio: "9:16", resolution: "1080p", motionPrompt: <gestures>}`, no `expressiveness` (rejected on `avatar_v`); poll `get_video`. Fallback, only when `motionPrompt` is rejected for no animation reference: `engine: {type: "avatar_iv"}, expressiveness: "high"`, `motionPrompt` kept.
 **Connector calls (§5, V7.59.0):**
 - **Images — Higgsfield:** `generate_image` / `generate_image_batch` on the T2I templates above; `balance` before every batch.
 - **Images — Kie API fallback:** `createTask {model: "nano-banana-pro" | "nano-banana-2", input: {prompt, image_input: [<URLs>], aspect_ratio: "9:16", resolution: "2K", output_format: "png"}}`, or `{model: "gpt-image-2-5-sunburst-image-to-image", input: {prompt, input_urls: [<URLs>], aspect_ratio: "9:16", resolution: "2K"}}` (`-text-to-image` takes no references). Reference caps: Nano Banana Pro 8, Nano Banana 2 14, Sunburst 16. Wrapped in `scripts/kie.py image`.
@@ -7814,7 +7819,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 
 | Date | Correction | Section affected | Status |
 |---|---|---|---|
-| — | *(empty at V7.49.8 cut)* | — | — |
+| 2026-09-26 | HeyGen motion prompt on every talking-head render, both run modes. Manual: Avatar V in the app, *More expressive* on, the gesture line in *Apply custom motion*. API: `avatar_v` + `motionPrompt`, no `expressiveness` (Avatar IV only). Avatar IV fallback only when `motionPrompt` is rejected. Confirmed against the current HeyGen API schema | §22U step 13, §44 default 84, E7 | Written in |
 
 ---
 
