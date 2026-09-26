@@ -78,3 +78,5 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   HK1-T clip from v24: first-last on `kling-video-v3_0`, v24 → edit of v24 with the pad facing camera
   (`hooks/HK1-T.i2v.v24.json`), on the board as video v5, To check. Merged the default branch (Manual: the user checks
   every generation — no agent verdicts or regenerations in Manual; board template already live).
+- **HK1-B stairs clip (user: image v2 confirmed, "she should be going down the stairs"):** omni from image v2, two steps
+  down, camera backing down ahead of her to her hand on the rail (`hooks/HK1-B.i2v.v3.json`) → board video v4, To check.
