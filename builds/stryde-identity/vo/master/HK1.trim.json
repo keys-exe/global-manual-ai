@@ -1,0 +1,1 @@
+{"src": "master/raw_HK1+BODY.wav", "out": "master/Identity-Narrator_master_HK1.mp3", "duration_in_s": 72.33, "breaths_cut": [[57.17, 57.3], [69.0, 69.12]], "source_end_db": -54.2, "source_end_clipped": false, "verify": {"duration_s": 57.85, "breaths_left": [], "gaps_over_0_4": [], "tail_last_db": -46.5, "status": "PASS"}}

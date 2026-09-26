@@ -108,6 +108,7 @@ Per speaking character, in order. The master file's §22U table is the rule; thi
 | 7 | Name | One keyword from the script title (`Knee`); clash → add the first name (`Knee-Maria`) |
 | 8–9 | Tag + TTS | **Verbatim:** `script_lines.py <script> --out lines.txt` (spoken lines only, no title/headings/links/visuals); tag a copy from `TAG-PALETTE` (tags only, no word changes); `tts_budget.py tagged.txt --script-lines lines.txt` → must say `verbatim: PASS`, fitted ≤ 5,000 per part; `creative_generate_speech` with `eleven_v3`, the clone ID, 4 takes; poll `creative_get_flow_run_status` |
 | 10 | Pick + save | Transcribe each take (faster-whisper) and diff against the script; judge the four criteria; save `<Keyword>_master.mp3`; you pick — no stop |
+| 10a | VO house cut | `python3 .claude/skills/ai-prompt-engineer/scripts/vo_trim.py <raw> --script <lines> --out <master>` — per hook variant, the raw hook + raw body of the same take joined, one pass (§22U step 10a, E11A). Exit 2 → one re-trim, then HUMAN. Never on a §24I voice master |
 | — | **Voice-only builds** (all B-roll, narrated, Mode 4/5, AI Drama) | Stop here. The master is the VO, or the Seedance `audios_list` ingredient |
 | 11 | Avatar | HeyGen `create_asset_upload` → PUT → `complete_asset_upload` → `create_photo_avatar`, one per look |
 | 12 | Split | Cut the master at sentence ends (word timestamps) into one segment per on-screen talking-head beat |
