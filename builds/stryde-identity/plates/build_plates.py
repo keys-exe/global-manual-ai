@@ -47,12 +47,12 @@ PLATES["P0-PROP-M"] = dict(model="gpt_image_2_5 sunburst", attach="nothing",
 PLATES["P1-M-KITCHEN"] = dict(model="gpt_image_2_5 sunburst", attach="P0-PROP-M (approved)",
   body=[S("CAM-LOCK"),
    S("PROP-REF").replace("[THE CARRIED FINISHES, NAMED IN ONE CLAUSE]", CARRIED) + " " + fillp(S("PROP-SHELL")),
-   "The small galley kitchen at the back of the house, seen from the hall doorway looking in: the window over a white ceramic sink on the far wall, "
+   "The small galley kitchen at the back of the house, seen from the hall doorway looking in, exactly as it shows through the open doorway at the end of the hall in the attached property reference: the window straight ahead on the far wall, slightly right of centre, over a white ceramic sink, a white washing machine under the worktop to its left, "
    "worktops running down both sides, and a small square pine table pushed against the left-hand wall with two chairs. "
    "Named anchors, all fixed: the square pine table with a blue-and-white checked wipe-clean cloth; the cream enamel bread bin on the right-hand worktop; "
    "the wall calendar with a garden photograph and no readable writing, hanging beside the window; the potted red geranium on the windowsill. "
    "Loose on the table: a mug with a tea stain, a folded newspaper face down, a pair of reading glasses. Cupboards are 1980s oak-effect with brass handles, a little tired at the edges.",
-   S("LOC-KITCHEN-MORN") + " The kitchen is at the back of the house, facing west, so the morning light here is indirect and even, the sky through the window a flat pale grey.",
+   S("LOC-KITCHEN-MORN") + " In this view the window is straight ahead on the far wall rather than to the side, so the light comes towards the camera down the length of the kitchen. The kitchen is at the back of the house, facing west, so the morning light here is indirect and even, the sky through the window a flat pale grey.",
    S("VIEW-OUT").replace("[WHAT THE PROPERTY'S EXTERIOR SHOWS FROM THIS ROOM'S SIDE, NAMED]",
      "the narrow back garden: a strip of lawn, a wooden fence and the backs of the terrace opposite"),
    S("PHYS-FRAME-C"), S("CAP-A"), S("CAP-FILE"),

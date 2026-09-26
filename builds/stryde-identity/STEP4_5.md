@@ -2,7 +2,7 @@
 
 Built against the **locked avatars** (user, 2026-09-26): N-NARR v2 · C1 Maureen · C2 Dean · C3 Pat v2 · C4 Surgeon v2. **F2 settled:** Pat in shorts on HK3 (her knee must show). **F1 as read:** HK1 top = C4, bottom = C1. Side: **right knee**, every worn beat.
 
-**Order to run:** generate the six plates (§4, below) → send them back for my check (§22V) → I write the hook seeds (step 6). The narrator's voice route comes in the next delivery. Every B-roll `duration` stays `pending-master` until his voice master exists (E6).
+**Plates:** generated and checked, all six USE (below). **Next:** the narrator's voice route (§22U), then the hooks one by one (step 6). Every B-roll `duration` stays `pending-master` until his voice master exists (E6).
 
 ---
 
@@ -37,20 +37,20 @@ Built against the **locked avatars** (user, 2026-09-26): N-NARR v2 · C1 Maureen
 | 6 | Exterior | front: a small paved yard and low brick wall to the street; back: a narrow lawn, wooden fence, backs of the terrace opposite |
 | 7 | Standing negatives | none yet (first plate) |
 
-### Plates — copy-ready
+### Plates — generated through the connector (correction 2026-09-26: Manual generates)
 
-Every plate: **empty, no people, no product**. Generate on Higgsfield `gpt_image_2_5`, `variant: sunburst`, `quality: high`, `resolution: 2k`, `aspect_ratio: 9:16`, one generation each. Send each one back for my check before anything is built against it.
+Higgsfield `gpt_image_2_5` · `variant: sunburst` · `quality: high` · `resolution: 2k` · `9:16` · empty, no people, no product. Prompts in `plates/<ID>.prompt.txt` (assembled by `plates/build_plates.py` from Appendix A by ID), renders in `plates/<ID>_v1.jpg`.
 
-The prompts are in `plates/<ID>.prompt.txt`, assembled by `plates/build_plates.py` from the Appendix A strings by ID:
+| ID | Location | Job | Attach | Chars | Verdict (§30C/§30G plate check + §22V) |
+|---|---|---|---|---|---|
+| **P0-PROP-M** | Maureen's hall and stairs (property plate) | `2d73dae3-f9fd-478b-b6e3-be21b4012ad0` | nothing | 5,370 | **USE** — stairs rise on the left with the mahogany handrail and brass stair rods, magnolia walls, gloss skirting, four-panel doors with brass knobs, radiator, harbour print, navy raincoat, doormat; the kitchen straight ahead through the end doorway; lived-in, not a show home |
+| P1-M-KITCHEN | Maureen's kitchen | `f1f085e4-ed55-444a-83d4-3fe98580db79` | **P0** | 7,024 | **USE** — the same house (brass-knob door in the foreground, magnolia, vinyl at the threshold); window straight ahead matching P0's sightline, terrace backs outside; checked cloth on the pine table, bread bin, calendar, geranium, washing machine. The bread bin reads "BREAD" (harmless, not a claim) |
+| P2-CONSULT | consulting room | `12b4fe67-c83f-4cfb-80d9-8f2ed2c9b2a2` | nothing | 4,658 | **USE** — window left; lightbox with two knee X-rays; knee model on the desk; bookshelf; blue couch with paper roll |
+| P3-WAREHOUSE | warehouse aisle | `84a5eac9-e234-4c07-9f4a-44a844cbc914` | nothing | 4,416 | **USE** — orange-and-blue racking, yellow lines, open shutter, red pallet truck left, workbench right; no readable labels |
+| P4-YARD | loading yard | `4373e5ce-575d-476b-99f6-5d69c4f8a374` | nothing | 4,389 | **USE** — white van, rear doors open, step; yellow bollard left; corrugated wall right; pallets; no lettering |
+| P5-LAB | gait lab | `94b95274-6b78-4031-b54b-abe93e9d837c` | nothing | 4,400 | **USE** — treadmill with rails, pressure walkway, two knee-height cameras, blank whiteboard, desk right; no readable screen |
 
-| ID | Location | Attach | Chars | Gate |
-|---|---|---|---|---|
-| **P0-PROP-M** | Maureen's hall and stairs (property plate) | nothing | 5,370 | **first** — every shell element readable, one age of building, no show home |
-| P1-M-KITCHEN | Maureen's kitchen | **P0 approved** | 6,670 | after P0 |
-| P2-CONSULT | consulting room | nothing | 4,658 | anchors: lightbox with two knee X-rays, knee model, bookshelf, blue couch |
-| P3-WAREHOUSE | warehouse aisle | nothing | 4,416 | anchors: orange-and-blue racking, yellow lines, open shutter, red pallet truck, workbench |
-| P4-YARD | loading yard | nothing | 4,389 | anchors: white van with open rear doors and step, corrugated wall, pallets, yellow bollard |
-| P5-LAB | gait lab | nothing | 4,400 | anchors: treadmill, pressure walkway, two knee-height cameras, blank whiteboard — **no readable screen or numbers** (§43) |
+**Scene Registry (§30C 7a):** the six job IDs above are the plates every beat in their location attaches. **P1 geometry correction:** the kitchen window is straight ahead from the hall doorway (read off P0), not to the side, and the prompt says so.
 
 ---
 
