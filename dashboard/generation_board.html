@@ -318,7 +318,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
   .v-body{grid-template-columns:1fr}
   .v-detbtn{display:inline-flex}
   .v-panel{position:absolute;left:0;right:0;bottom:0;max-height:70%;border-left:0;border-top:1px solid #2c323e;border-radius:16px 16px 0 0;z-index:3;box-shadow:0 -10px 40px rgba(0,0,0,.6)}
-  .v-panel[data-open="false"]{display:none}
+  .v-panel[data-shown="false"]{display:none}
   .v-stage{padding:12px 52px}
   .v-nav{width:38px;height:38px}.v-nav.prev{left:6px}.v-nav.next{right:6px}
 }
@@ -748,8 +748,10 @@ function toast(msg){const t=$("#toast");t.textContent=msg;t.hidden=false;clearTi
 
 function currentBuild(){return state.builds.find(b=>b.id===state.build)||state.builds[0]||null}
 function buildGens(){const b=currentBuild();return b?state.gens.filter(g=>g.build===b.id):[]}
+// a VO take not picked for a part that already has its confirmed take: kept as a version, never counted as waiting
+function spareTake(g,gens){return g.stage==="vo"&&g.status!=="use"&&(gens||state.gens).some(o=>o.stage==="vo"&&o.id!==g.id&&o.build===g.build&&voPart(o)===voPart(g)&&o.status==="use")}
 function matches(g){
-  if(state.filter!=="all" && g.status!==state.filter) return false;
+  if(state.filter!=="all" && (g.status!==state.filter||spareTake(g))) return false;
   if(state.q){const q=state.q.toLowerCase();return [g.beat,g.title,g.line,g.model].some(v=>String(v||"").toLowerCase().includes(q))}
   return true;
 }
@@ -880,7 +882,9 @@ async function confirmTake(id,part){
   try{
     for(const o of others) await state.db.doc("generations/"+o.id).update({status:"review",updatedAt:Date.now()});
     await state.db.doc("generations/"+id).update({status:"use",updatedAt:Date.now()});
-    state.voSel[part]=id; swapVoRow(part); toast(`${part} locked on take ${takeNo(state.gens.find(g=>g.id===id)||{})}`);
+    const me=state.gens.find(g=>g.id===id); others.forEach(o=>o.status="review"); if(me) me.status="use";
+    state.voSel[part]=id; swapVoRow(part); toast(`${part} locked on take ${takeNo(me||{})}`);
+    if(me) advanceIfDone(me);
   }catch(e){handleWriteError(e)}
 }
 function render(){renderInner();hydrate()}
@@ -892,8 +896,9 @@ function renderInner(){
   ].filter(x=>x[1]).map(([k,v])=>`<span class="tag">${k} <b>${esc(v)}</b></span>`).join(""):"";
 
   const gens=buildGens();
-  const by=k=>gens.filter(g=>g.status===k).length;
-  const total=gens.length, use=by("use"), regen=by("regenerate"), review=by("review"), gen=by("generating");
+  const cg=gens.filter(g=>!spareTake(g,gens));
+  const by=k=>cg.filter(g=>g.status===k).length;
+  const total=cg.length, use=by("use"), regen=by("regenerate"), review=by("review"), gen=by("generating");
   const credits=gens.reduce((s,g)=>s+(Number(g.credits)||0),0);
   const pct=total?Math.round(use/total*100):0;
   const seg=k=>total?`<i style="width:${by(k)/total*100}%;background:var(--${k==="generating"?"gen":k==="regenerate"?"regen":k==="ready"?"ready":k})"></i>`:"";
@@ -1386,17 +1391,39 @@ async function setVerdict(gid,k,ok,fault){
     patch[d.st]="regenerate"; patch[d.fault]=fault; patch[d.regens]=(Number(g[d.regens])||0)+1;
     if(k==="image") patch.status="regenerate";
   }
-  try{await state.db.doc("generations/"+gid).update(patch);toast(ok?(k==="image"&&flow(g).includes("video")?"Image confirmed. Its video is unlocked.":"Confirmed"):"Sent back to regenerate")}
+  try{await state.db.doc("generations/"+gid).update(patch);toast(ok?(k==="image"&&flow(g).includes("video")?"Image confirmed. Its video is unlocked.":"Confirmed"):"Sent back to regenerate");
+    if(ok){Object.assign(g,patch);advanceIfDone(g)}}
   catch(e){handleWriteError(e)}
+}
+// once every card in a group is confirmed, move on to the next group that still needs work
+function groupDone(key,gens){
+  if(key==="stage-vo"){const p=voParts(gens);return p.length>0&&p.every(x=>x.use)}
+  const items=gens.filter(g=>groupOf(g).key===key); return items.length>0&&items.every(g=>!needsMe(g));
+}
+function advanceIfDone(g){
+  const gens=buildGens(), key=groupOf(g).key; if(!groupDone(key,gens)) return;
+  const gs=groups(gens), i=gs.findIndex(x=>x.key===key), next=gs.slice(i+1).find(x=>!groupDone(x.key,gens));
+  const label=gs[i]?gs[i].label:"This group";
+  if(!next){toast(`${label} done. Everything is confirmed.`);return}
+  toast(`${label} done. On to ${next.label}.`);
+  if(state.view!=="manual") return;
+  setTimeout(()=>{
+    if(state.viewer) closeViewer();
+    if(state.mstage!=="all"){state.mstage=next.key;render();window.scrollTo({top:$("#mbar").offsetTop-12,behavior:"smooth"})}
+    else{const el=document.getElementById("m-"+next.key);if(el) el.scrollIntoView({behavior:"smooth",block:"start"})}
+  },700);
 }
 function copyText(t,what){navigator.clipboard.writeText(t).then(()=>toast(what+" copied"),()=>toast("Copy was blocked. Select the text and copy it."))}
 
 
 /* viewer: clicking an image or video shows it, nothing else */
+/* only the group the clicked card sits in: its stage card on Board, its act or group in Manual run and Plan */
+function viewScope(g){return state.view==="board"?"s:"+g.stage:"g:"+groupOf(g).key}
 function viewerList(step){
-  return groups(buildGens()).flatMap(x=>x.items).filter(g=>flow(g).includes(step));
+  const sc=state.viewer&&state.viewer.scope;
+  return groups(buildGens()).flatMap(x=>x.items).filter(g=>flow(g).includes(step)&&(!sc||viewScope(g)===sc));
 }
-function openViewer(id,step){state.viewer={id,step,ver:null,menu:false};renderViewer()}
+function openViewer(id,step){const g=state.gens.find(x=>x.id===id);state.viewer={id,step,ver:null,menu:false,scope:g?viewScope(g):null};renderViewer()}
 function closeViewer(){if(!state.viewer) return;state.viewer=null;const v=$("#viewer");v.hidden=true;v.innerHTML=""}
 function moveViewer(dir){
   const v=state.viewer; if(!v) return;
@@ -1447,7 +1474,7 @@ function renderViewer(){
   ];
   const prompt=g[d.prompt]||"";
   const canAct=!state.readOnly&&!locked&&s!=="gen"&&!older&&!!asset;
-  const panel=`<aside class="v-panel" data-open="${!!v.details}" aria-label="Details">
+  const panel=`<aside class="v-panel" data-shown="${!!v.details}" aria-label="Details">
       <div class="ps"><span class="lbl">Status</span><div>${chip}${older?` <span class="pill s-planned">Viewing v${shown.v}</span>`:""}</div></div>
       ${g.line?`<div class="ps"><span class="lbl">Script line</span><div class="v-quote">“${esc(g.line)}”</div></div>`:""}
       ${older?`<div class="v-oldbar">You're looking at v${shown.v}, not the current version.${shown.note?` Fix that made it: ${esc(shown.note)}`:""}</div>`:""}
@@ -1494,7 +1521,7 @@ function renderViewer(){
       </div>
       ${panel}
     </div>
-    <div class="v-strip"><span class="v-count">${i+1} / ${list.length} ${d.label.toLowerCase()}s</span><div class="v-thumbs">${thumbs}</div></div>`;
+    <div class="v-strip"><span class="v-count">${i+1} / ${list.length} ${d.label.toLowerCase()}s · ${esc(state.view==="board"?((STAGES.find(x=>x.key===g.stage)||{}).name||""):groupOf(g).label)}</span><div class="v-thumbs">${thumbs}</div></div>`;
   const el=$("#viewer"); el.hidden=false; hydrate(el);
   const on=el.querySelector('.v-th[aria-current="true"]'); if(on) on.scrollIntoView({block:"nearest",inline:"center"});
   if(v.fix){const t=el.querySelector("#vfault");if(t){t.value=draft;t.focus()}}
