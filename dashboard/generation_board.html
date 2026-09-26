@@ -541,6 +541,40 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .arow.vo .vsel-car{margin-left:auto}
 .a-ctl .ap{min-width:0;width:100%}
 @media (max-width:760px){.arow.vo .a-ctl{grid-template-columns:minmax(0,1fr) auto 40px}.arow.vo .vsel{grid-column:1/-1}}
+.tabs{padding:4px;border-radius:12px;gap:4px}
+.tabs .tab{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;font-size:14px;border-radius:9px}
+.tabs .tab:hover{color:var(--ink);background:var(--sunk)}
+.tabs .tab[aria-selected="true"]:hover{background:var(--ink);color:var(--surface)}
+.tab-badge{min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:var(--review);color:#fff;font-size:11px;font-weight:700;display:inline-grid;place-items:center;font-variant-numeric:tabular-nums}
+.fbar{display:flex;gap:4px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:4px}
+.fchip{display:inline-flex;align-items:center;gap:8px;border:0;background:transparent;border-radius:8px;padding:7px 12px;font-size:13px;font-weight:500;color:var(--ink)}
+.fchip:hover{background:var(--sunk)}
+.fchip b{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.fchip[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
+.fchip[aria-pressed="true"] b{color:inherit;opacity:.75}
+.fchip.zero{opacity:.45}
+.fchip:disabled{cursor:default}
+.fdot{width:8px;height:8px;border-radius:50%;background:var(--st)}
+.gbar{display:flex;gap:8px;flex-wrap:wrap;flex:1;min-width:0}
+.gchip{display:flex;flex-direction:column;gap:5px;min-width:118px;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.gchip:hover{border-color:var(--faint)}
+.gchip[aria-pressed="true"]{border-color:var(--ink);box-shadow:0 0 0 1px var(--ink)}
+.g-top{display:flex;align-items:center;gap:6px}
+.g-l{font-weight:600;font-size:13px}
+.g-ok{color:var(--use);display:grid;margin-left:auto}
+.g-wait{margin-left:auto;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:var(--review);color:#fff;font-size:10.5px;font-weight:700;display:grid;place-items:center}
+.g-bar{height:4px;border-radius:2px;background:var(--sunk);overflow:hidden}
+.g-bar i{display:block;height:100%;background:var(--use)}
+.g-n{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.gchip.done{border-color:color-mix(in srgb,var(--use) 50%,var(--line))}
+.switch{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;cursor:pointer;padding:6px 4px;align-self:center}
+.switch input{position:absolute;opacity:0;width:1px;height:1px}
+.sw-track{width:34px;height:20px;border-radius:999px;background:var(--line);position:relative;transition:background .15s}
+.sw-knob{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.25);transition:left .15s}
+.switch input:checked+.sw-track{background:var(--accent)}
+.switch input:checked+.sw-track .sw-knob{left:16px}
+.switch input:focus-visible+.sw-track{outline:2px solid var(--accent);outline-offset:2px}
+.switch b{font-family:var(--mono);color:var(--muted);font-weight:600}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
 .box-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:14px 14px 0}
 .box-head .sn{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;background:var(--ink);color:var(--surface);flex:none}
@@ -599,9 +633,9 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
   </header>
 
   <div class="tabs" role="tablist" aria-label="View">
-    <button class="tab" role="tab" type="button" data-view="board" aria-selected="true">Board</button>
-    <button class="tab" role="tab" type="button" data-view="manual" aria-selected="false">Manual run</button>
-    <button class="tab" role="tab" type="button" data-view="plan" aria-selected="false">Plan</button>
+    <button class="tab" role="tab" type="button" data-view="board" aria-selected="true"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="5" height="5" rx="1.2"/><rect x="9" y="2" width="5" height="5" rx="1.2"/><rect x="2" y="9" width="5" height="5" rx="1.2"/><rect x="9" y="9" width="5" height="5" rx="1.2"/></svg><span>Board</span></button>
+    <button class="tab" role="tab" type="button" data-view="manual" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 4.5 1.5 1.5 2.5-3M2.5 11l1.5 1.5 2.5-3M9 5h4.5M9 11.5h4.5"/></svg><span>Manual run</span><span class="tab-badge" id="needsBadge" hidden></span></button>
+    <button class="tab" role="tab" type="button" data-view="plan" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 1.8h5.5l3 3v9.4H4z"/><path d="M6.5 8h4M6.5 10.8h4" stroke-linecap="round"/></svg><span>Plan</span></button>
   </div>
 
   <div class="banner" id="banner" hidden></div>
@@ -647,9 +681,9 @@ const STATUSES = [
   {key:"planned", label:"Planned"},
   {key:"ready", label:"Prompt ready"},
   {key:"generating", label:"Generating"},
-  {key:"review", label:"In review"},
-  {key:"use", label:"USE"},
-  {key:"regenerate", label:"Regenerate"},
+  {key:"review", label:"To check"},
+  {key:"use", label:"Confirmed"},
+  {key:"regenerate", label:"Fixing"},
 ];
 const STATUS_LABEL = Object.fromEntries(STATUSES.map(s=>[s.key,s.label]));
 const MODELS = ["kling-video-v3_0_omni","kling-3.0","seedance-2.5","wan-3.0","veo-3.0","nano_banana_pro","nano_banana_2","gpt_image_2_5","eleven_v3","heygen-avatar-v","capcut"];
@@ -719,7 +753,7 @@ function stageCount(s,b,gens,sg){
   if(s.key==="absorption"&&!sg.length) return planDoc("absorption")?(absDone()?"Confirmed · in Plan":"Check it · in Plan"):"—";
   if(s.key==="voice"&&voiceList(b).length){const v=voiceList(b).filter(x=>x.needed!==false);return `${v.filter(x=>["cloned","locked"].includes(x.status)).length}/${v.length} voiced`}
   if(s.key==="vo"){const p=voParts(gens);return p.length?(voLocked(b,gens)?"Locked":`${p.filter(x=>x.use).length}/${p.length} parts locked`):"—"}
-  return sg.length?`${u}/${sg.length} USE`:"—";
+  return sg.length?`${u}/${sg.length} confirmed`:"—";
 }
 function stageBar(s,b,gens,sg){
   const done=stageDone(s,b,gens,sg);
@@ -840,13 +874,14 @@ function renderInner(){
   $("#summary").innerHTML=`
     <div class="kpi"><span class="k">Generations</span><span class="v">${total}</span>
       <div class="bar">${["use","review","generating","ready","regenerate","planned"].map(seg).join("")}</div>
-      <span class="s">${pct}% locked as USE</span></div>
-    <div class="kpi"><span class="k">USE</span><span class="v" style="color:var(--use)">${use}</span><span class="s">Passed the image and clip checks</span></div>
-    <div class="kpi"><span class="k">In review</span><span class="v" style="color:var(--review)">${review}</span><span class="s">${gen} generating now</span></div>
-    <div class="kpi"><span class="k">Regenerate</span><span class="v" style="color:var(--regen)">${regen}</span><span class="s">Two tries per fault, then you</span></div>
+      <span class="s">${pct}% confirmed</span></div>
+    <div class="kpi"><span class="k">Confirmed</span><span class="v" style="color:var(--use)">${use}</span><span class="s">Passed the image and clip checks</span></div>
+    <div class="kpi"><span class="k">To check</span><span class="v" style="color:var(--review)">${review}</span><span class="s">${gen} generating now</span></div>
+    <div class="kpi"><span class="k">Fixing</span><span class="v" style="color:var(--regen)">${regen}</span><span class="s">Two tries per fault, then you</span></div>
     <div class="kpi"><span class="k">Credits spent</span><span class="v">${num(credits)}</span><span class="s">Logged on generations</span></div>`;
 
-  document.querySelectorAll(".tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.view===state.view));
+  document.querySelectorAll(".tabs .tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.view===state.view));
+  {const n=needsYouCount(gens), bd=$("#needsBadge"); bd.textContent=n; bd.hidden=!n; bd.title=`${n} waiting for you`}
   $("#boardView").hidden=state.view!=="board";
   $("#manualView").hidden=state.view!=="manual";
   $("#planView").hidden=state.view!=="plan";
@@ -867,8 +902,8 @@ function renderInner(){
       <span class="c">${stageCount(s,b,gens,sg)}</span></button>`}).join("");
 
   const counts=Object.fromEntries(STATUSES.map(s=>[s.key,by(s.key)]));
-  $("#filters").innerHTML=`<button class="chip" type="button" data-f="all" aria-pressed="${state.filter==="all"}">All <span class="cnt">${total}</span></button>`+
-    STATUSES.map(s=>`<button class="chip" type="button" data-f="${s.key}" aria-pressed="${state.filter===s.key}">${s.label} <span class="cnt">${counts[s.key]}</span></button>`).join("")+
+  $("#filters").innerHTML=`<div class="fbar" role="group" aria-label="Filter by status"><button class="fchip" type="button" data-f="all" aria-pressed="${state.filter==="all"}"><span>All</span><b>${total}</b></button>`+
+    STATUSES.map(s=>`<button class="fchip s-${s.key}${counts[s.key]?"":" zero"}" type="button" data-f="${s.key}" aria-pressed="${state.filter===s.key}" ${counts[s.key]||state.filter===s.key?"":"disabled"}><i class="fdot"></i><span>${s.label}</span><b>${counts[s.key]}</b></button>`).join("")+`</div>`+
     `<span class="grow"></span><input class="field" id="search" type="search" placeholder="Search beat, line, model" value="${esc(state.q)}" aria-label="Search">`;
 
   const folders=(b&&b.folders)||{};
@@ -1110,6 +1145,9 @@ function stepState(g,k){
 }
 function nextStep(g){return flow(g).find(k=>stepState(g,k)!=="ok")||null}
 function needsMe(g){return nextStep(g)!==null}
+function stepNeedsYou(g){return flow(g).some(k=>stepState(g,k)==="review"&&!(k==="video"&&stepState(g,"image")!=="ok"))}
+// what is waiting on the reviewer: cards to check, plus each VO part without a confirmed version
+function needsYouCount(gens){return gens.filter(g=>g.stage!=="vo"&&stepNeedsYou(g)).length+voParts(gens).filter(p=>!p.use).length}
 
 // Manual run is grouped by act: setup stages, each hook, each act, then the edit.
 function actNum(v){const m=String(v||"").match(/\d+/);return m?Number(m[0]):null}
@@ -1132,9 +1170,14 @@ function renderManual(gens){
   const gs=groups(gens);
   if(state.mstage!=="all"&&!gs.some(x=>x.key===state.mstage)) state.mstage="all";
   const open=gens.filter(needsMe).length;
-  $("#mbar").innerHTML=`<button class="chip" type="button" data-ms="all" aria-pressed="${state.mstage==="all"}">Everything <span class="cnt">${gens.length}</span></button>`+
-    gs.map(x=>`<button class="chip" type="button" data-ms="${x.key}" aria-pressed="${state.mstage===x.key}">${esc(x.label)} <span class="cnt">${x.items.filter(g=>!needsMe(g)).length}/${x.items.length}</span></button>`).join("")+
-    `<span class="grow"></span><button class="chip" type="button" data-needs="1" aria-pressed="${state.mneeds}">Only what needs me <span class="cnt">${open}</span></button>`;
+  const prog=x=>{if(x.key==="stage-vo"){const p=voParts(gens);return [p.filter(y=>y.use).length,p.length,p.filter(y=>!y.use).length]}
+    return [x.items.filter(g=>!needsMe(g)).length,x.items.length,x.items.filter(stepNeedsYou).length]};
+  const allP=gs.reduce((a,x)=>{const [d,t]=prog(x);return [a[0]+d,a[1]+t]},[0,0]);
+  const tileM=(key,label,d,t,wait)=>`<button class="gchip${d===t&&t?" done":""}" type="button" data-ms="${key}" aria-pressed="${state.mstage===key}">
+      <span class="g-top"><span class="g-l">${esc(label)}</span>${d===t&&t?`<span class="g-ok">${I.ok}</span>`:wait?`<span class="g-wait" title="${wait} waiting for you">${wait}</span>`:""}</span>
+      <span class="g-bar"><i style="width:${t?d/t*100:0}%"></i></span><span class="g-n">${d} of ${t} done</span></button>`;
+  $("#mbar").innerHTML=`<div class="gbar">${tileM("all","Everything",allP[0],allP[1],0)}${gs.map(x=>{const [d,t,w]=prog(x);return tileM(x.key,x.label,d,t,w)}).join("")}</div>
+    <label class="switch"><input type="checkbox" data-needs="1" ${state.mneeds?"checked":""}><span class="sw-track"><span class="sw-knob"></span></span><span>Only what needs me <b>${needsYouCount(gens)}</b></span></label>`;
   const html=gs.map(x=>{
     if(state.mstage!=="all"&&state.mstage!==x.key) return "";
     const steps=["image","video","file"].filter(k=>x.items.some(g=>flow(g).includes(k)));
@@ -1700,7 +1743,7 @@ document.addEventListener("click",e=>{
   else if(ds.jump){const w=$("#w-"+ds.jump);if(w) w.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}
   else if(ds.view){state.planSig=null;state.view=ds.view;lsSet("gb.view",ds.view);render()}
   else if(ds.ms){state.mstage=ds.ms;render()}
-  else if(ds.needs){state.mneeds=!state.mneeds;render()}
+  else if(ds.needs){state.mneeds=t.checked!==undefined?t.checked:!state.mneeds;render()}
   else if(ds.copy&&g){copyText(g[ds.field]||"",(g.beat||"")+" prompt")}
   else if(ds.copyall){
     const list=buildGens().filter(x=>groupOf(x).key===ds.copyall&&x[ds.field]).sort(beatSort);
