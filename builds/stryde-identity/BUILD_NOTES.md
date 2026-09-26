@@ -60,3 +60,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   then step 6: the hooks one by one (HK1 first, split layout EG01), as prompts + generations on the board.
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),
   F7 (`package_closed.jpg` missing), F8 (AVATAR-SHEET doc inconsistency), F10 (watermark omit).
+- **HK1 clips (step 6, 2026-09-26 13:00–13:25):** user confirmed HK1-T **v10b** and HK1-B v2 on the board. Kling
+  `kling-video-v3_0_omni`, 9:16, 1080p, 5s, no audio. **HK1-B:** clip v1 REGENERATE (camera orbited the leg, no step),
+  **clip v2 USE** (straight ease-back, step down, hand on the rail ~3.8s; the strap drops low late on — the split
+  crop must track it). **HK1-T:** the VN01 turn to show the pad broke the rigid shell every time — v1 curled into a ring,
+  v2 flipped upside down with an upright wordmark, v3 bent into a U-cup. Budget spent → user decides. Recommended:
+  edit v10b so the pad already faces the camera (PAD_BACK_SHOT) + a small tilt, not a rotation. Prompts:
+  `hooks/HK1-T.i2v.v1.json`, `.v2.json`, `HK1-T.i2v.json` (v3); `HK1-B.i2v.v1.json`, `HK1-B.i2v.json` (v2).
