@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.30
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.31
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -69,7 +69,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.30"
+VERSION = "7.49.31"
 
 # --------------------------------------------------------------- slots
 
@@ -507,7 +507,16 @@ ANATOMY_SAMPLES = {
     "ANAT-D": {"file": "stryde_refs/anatomy_samples/anat_D.jpg", "job_id": "55f4ea05-5303-4cb8-8064-70223cbddc23",
                "reads": "physical model on a kitchen worktop, thumb on the tendon below the patella; phone capture"},
 }
-ANATOMY_LOOK = None   # chosen by the user per build; recorded on the Build Sheet
+# V7.49.31 (user): A and B the other way round from the agent's suggestion.
+ANATOMY_LOOK = {
+    "point":      "ANAT-A",   # the spot below the kneecap, the load arriving (e.g. '17x', 'one small spot')
+    "protection": "ANAT-A",   # the pad catching the force, the spot staying calm
+    "conditions": "ANAT-B",   # bone on bone, worn cartilage, meniscus
+}
+# ANAT-A's sample spread its glow onto the tibia; every ANAT-A beat carries this.
+ANAT_A_POINT_TIGHT = (
+"The glow is one tight, bright spot on the patellar tendon just below the kneecap, sharp-edged and small, "
+"never spreading down onto the shin bone or across the joint; the bones and muscles around it stay calm.")
 
 # --- the inner pad (V7.49.23) -----------------------------------------------
 # Read off back.webp. Used on held beats and any view of the inside of the shell.
@@ -1192,6 +1201,9 @@ RULINGS = {
         "bone on bone / arthritis / cartilage / meniscus, recommended by surgeons, 200,000 wearers, "
         "sixty-day money-back guarantee, Buy 1 Get 1 Free. Numbers and terms are still post overlays "
         "(§17); 'silicone' still never enters a prompt.",
+    "anatomy_look":
+        "LOCKED V7.49.31 (user): ANAT-A full stack for the point and protection beats, ANAT-B ghost "
+        "limb for the condition beats. Every ANAT-A beat adds ANAT_A_POINT_TIGHT.",
     "held_not_locked":
         "LOCKED V7.49.23 (user): the held pose is NOT locked -- there are many right ways to hold it. "
         "Pick from HELD_GRIPS per beat and vary them across a build; product_held.jpg is one example "
@@ -1846,6 +1858,8 @@ def verify(verbose=False):
         for f in files:
             if not os.path.exists(os.path.join(here, f)):
                 fails.append("REFS_USE[%s] names a file that is not in the repo: %s" % (k, f))
+    if ANATOMY_LOOK.get("point") != "ANAT-A" or ANATOMY_LOOK.get("conditions") != "ANAT-B":
+        fails.append("ANATOMY_LOOK lost the user's choice (A point/protection, B conditions)")
     for k, v in ANATOMY_SAMPLES.items():
         if not os.path.exists(os.path.join(here, v["file"])):
             fails.append("anatomy sample %s missing" % k)
