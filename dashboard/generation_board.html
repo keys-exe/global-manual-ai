@@ -166,6 +166,70 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .danger{color:var(--regen)}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--surface);padding:8px 14px;border-radius:8px;font-size:13px;z-index:30}
 .banner{background:var(--review-bg);color:var(--ink);border-radius:10px;padding:10px 14px;font-size:13px}
+
+/* tabs */
+.tabs{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:3px;gap:2px;width:max-content;max-width:100%}
+.tab{border:0;background:transparent;border-radius:7px;padding:7px 14px;font-weight:600;font-size:13px;color:var(--muted)}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--surface)}
+
+/* board frames with a real image */
+.frame .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.frame.has-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),transparent 35%,transparent 55%,rgba(0,0,0,.75));pointer-events:none}
+.frame.has-img>*{z-index:1}
+.frame.has-img .stripe{z-index:2}
+
+/* manual view */
+.mbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.mbar .grow{flex:1}
+.mgroup{display:flex;flex-direction:column;gap:12px;scroll-margin-top:16px}
+.mg-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding-top:6px}
+.mg-head h2{font-size:20px;font-weight:700}
+.mg-head .sub{font-size:12.5px;color:var(--muted)}
+.mg-head .grow{flex:1}
+.shot{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;scroll-margin-top:16px}
+.shot-head{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.shot-head .b{font-family:var(--display);font-weight:700;font-size:22px;line-height:1;background:var(--sunk);border-radius:8px;padding:8px 10px;flex:none}
+.shot-head .info{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.shot-head .t{font-weight:600}
+.shot-head .l{font-size:13px;color:var(--muted)}
+.shot-head .right{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex:none}
+.track{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:var(--faint);text-transform:uppercase;letter-spacing:.05em}
+.track .on{color:var(--use)}
+.track .cur{color:var(--accent)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:12px;padding:14px 16px 16px}
+.sc{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:10px;position:relative;min-width:0}
+.sc.ok{border-color:var(--use)}
+.sc.bad{border-color:var(--regen)}
+.sc.now{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.sc.locked>*:not(.lock){opacity:.35;pointer-events:none}
+.sc .lock{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-size:13px;font-weight:600;color:var(--muted);padding:16px}
+.sc .lock span{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+.sc-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.sc-head .sn{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:11.5px;background:var(--sunk);flex:none}
+.sc.ok .sc-head .sn{background:var(--use);color:#fff}
+.sc-head h3{font-size:15px;font-weight:700}
+.sc-head .grow{flex:1}
+.sc-body{display:grid;grid-template-columns:118px minmax(0,1fr);gap:12px}
+@media (max-width:420px){.sc-body{grid-template-columns:96px minmax(0,1fr)}}
+.media{position:relative;aspect-ratio:9/16;max-width:100%;border:1.5px dashed var(--line);border-radius:10px;background:var(--sunk);display:grid;place-items:center;text-align:center;font-size:11.5px;color:var(--muted);padding:8px;overflow:hidden;cursor:pointer}
+.media.filled{border-style:solid;padding:0;background:var(--frame)}
+.media.drag{border-color:var(--accent);background:var(--accent-soft)}
+.media img,.media video{width:100%;height:100%;object-fit:cover;display:block}
+.media .busy{position:absolute;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.45);color:#fff;font-weight:600}
+.pbox{display:flex;flex-direction:column;gap:6px;min-width:0}
+.pbox pre{margin:0;font-family:var(--mono);font-size:11.5px;line-height:1.5;white-space:pre-wrap;word-break:break-word;background:var(--sunk);border-radius:8px;padding:9px 10px;max-height:190px;overflow:auto;flex:1}
+.pbox pre.none{color:var(--faint);font-family:var(--body);font-style:italic}
+.pmeta{display:flex;justify-content:space-between;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--muted);flex-wrap:wrap}
+.pmeta .over{color:var(--regen)}
+.sc-actions{display:flex;gap:6px;flex-wrap:wrap}
+.btn.ok{border-color:var(--use);color:var(--use)}
+.btn.ok.solid{background:var(--use);color:#fff}
+.btn.bad{border-color:var(--regen);color:var(--regen)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.fault{font-size:12.5px;background:var(--regen-bg);color:var(--ink);border-radius:8px;padding:7px 10px}
+.fault b{color:var(--regen)}
+.fform{display:flex;gap:6px;flex-wrap:wrap}
+.fform input{flex:1;min-width:180px;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:6px 9px}
 </style>
 
 <div class="wrap">
@@ -182,21 +246,33 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
     </div>
   </header>
 
+  <div class="tabs" role="tablist" aria-label="View">
+    <button class="tab" role="tab" type="button" data-view="board" aria-selected="true">Board</button>
+    <button class="tab" role="tab" type="button" data-view="manual" aria-selected="false">Manual run</button>
+  </div>
+
   <div class="banner" id="banner" hidden></div>
 
   <section class="summary" id="summary" aria-label="Summary"></section>
 
-  <nav class="pipe" id="pipe" aria-label="Build stages"></nav>
+  <div id="boardView" style="display:flex;flex-direction:column;gap:18px">
+    <nav class="pipe" id="pipe" aria-label="Build stages"></nav>
+    <div class="filters" id="filters"></div>
+    <main class="grid" id="grid"></main>
+  </div>
 
-  <div class="filters" id="filters"></div>
-
-  <main class="grid" id="grid"></main>
+  <div id="manualView" hidden style="flex-direction:column;gap:18px">
+    <div class="mbar" id="mbar"></div>
+    <div id="mlist" style="display:flex;flex-direction:column;gap:26px"></div>
+  </div>
 </div>
+<input type="file" id="picker" hidden>
 
 <div class="scrim" id="scrim" hidden></div>
 <aside class="drawer" id="drawer" hidden aria-labelledby="dTitle" role="dialog"></aside>
 <div class="toast" id="toast" hidden></div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
 const STAGES = [
   {key:"absorption", name:"Absorption", folder:"01_ABSORPTION", sub:"Inspo, script, product · §42 · Visual Instruction Ledger", kind:"doc"},
@@ -231,7 +307,7 @@ const OFFLINE = {
   gens:[]
 };
 
-const state = {builds:[], gens:[], build:null, filter:"all", q:"", live:false, readOnly:false, db:null, editing:null};
+const state = {builds:[], gens:[], build:null, filter:"all", q:"", live:false, readOnly:false, db:null, assets:null, downloads:null, editing:null, view:"board", mstage:"all", mneeds:false, faultOpen:null, busy:{}};
 const $ = s=>document.querySelector(s);
 const esc = s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const num = n=>Number(n||0).toLocaleString("en-US");
@@ -273,6 +349,11 @@ function render(){
     <div class="kpi"><span class="k">In review</span><span class="v" style="color:var(--review)">${review}</span><span class="s">${gen} generating now</span></div>
     <div class="kpi"><span class="k">Regenerate</span><span class="v" style="color:var(--regen)">${regen}</span><span class="s">Two tries per fault, then you</span></div>
     <div class="kpi"><span class="k">Credits spent</span><span class="v">${num(credits)}</span><span class="s">Logged on generations</span></div>`;
+
+  document.querySelectorAll(".tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.view===state.view));
+  $("#boardView").hidden=state.view!=="board";
+  $("#manualView").hidden=state.view!=="manual";
+  if(state.view==="manual"){renderManual(gens);return}
 
   $("#pipe").innerHTML=STAGES.map((s,i)=>{
     const sg=gens.filter(g=>g.stage===s.key), u=sg.filter(g=>g.status==="use").length;
@@ -316,8 +397,9 @@ function tile(g){
   const st=g.status||"planned", stage=STAGES.find(s=>s.key===g.stage)||STAGES[6];
   const kind=g.kind||stage.kind;
   const specs=[g.duration?`${g.duration}s`:"", g.regens?`R${g.regens}`:""].filter(Boolean);
+  const img=g.imageAsset?`<img class="bg" src="/_blob/${esc(g.imageAsset)}" alt="" loading="lazy">`:"";
   return `<button class="tile s-${st}" type="button" data-open="${esc(g.id)}" aria-label="${esc((g.beat||"")+" "+(g.title||""))}">
-    <div class="frame"><span class="stripe"></span>${ICONS[kind]||""}
+    <div class="frame${img?" has-img":""}">${img}<span class="stripe"></span>${ICONS[kind]||""}
       <div><div class="kind">${esc(kind)}</div><div class="beat">${esc(g.beat||"—")}</div></div>
       <div class="line">${esc(g.line||g.title||"")}</div>
       <div class="dur"><span>${esc(g.model?shortModel(g.model):"")}</span><span>${specs.join(" · ")}</span></div></div>
@@ -354,7 +436,9 @@ function openDrawer(g,isNew){
         <label class="f">Regenerations<input id="f-regens" type="number" min="0" max="9" value="${esc(g.regens||0)}" ${ro?"disabled":""}></label></div>
       <label class="f">Render link<input id="f-url" type="url" value="${esc(g.url)}" placeholder="https://…" ${ro?"disabled":""}></label>
       ${g.url?`<a href="${esc(g.url)}" target="_blank" rel="noopener" style="font-size:13px;color:var(--accent)">Open render ↗</a>`:""}
-      <label class="f">Prompt<textarea id="f-prompt" spellcheck="false" ${ro?"disabled":""}>${esc(g.prompt)}</textarea></label>
+      <label class="f">Image model<input id="f-imageModel" list="models" value="${esc(g.imageModel)}" placeholder="nano_banana_pro" ${ro?"disabled":""}></label>
+      <label class="f">Image prompt (step 1)<textarea id="f-imagePrompt" spellcheck="false" style="min-height:120px" ${ro?"disabled":""}>${esc(g.imagePrompt)}</textarea></label>
+      <label class="f">${flow(g).includes("video")?"Video prompt (step 2)":"Prompt"}<textarea id="f-prompt" spellcheck="false" ${ro?"disabled":""}>${esc(g.prompt)}</textarea></label>
       <div class="count"><span id="pCount"></span><button class="btn small" type="button" id="copyBtn">Copy prompt</button></div>
       <label class="f">Script line<input id="f-line" value="${esc(g.line)}" ${ro?"disabled":""}></label>
     </form>
@@ -393,7 +477,8 @@ function readForm(){
   const n=id=>{const x=v(id);return x===""?null:Number(x)};
   const prompt=$("#f-prompt").value;
   return {beat:v("beat"),title:v("title"),stage:v("stage"),status:v("status"),fault:v("fault"),model:v("model"),kind:v("kind"),
-    duration:n("duration"),credits:n("credits"),regens:n("regens")||0,url:v("url"),prompt,chars:prompt.length,line:v("line"),updatedAt:Date.now()};
+    duration:n("duration"),credits:n("credits"),regens:n("regens")||0,url:v("url"),prompt,chars:prompt.length,line:v("line"),
+    imageModel:v("imageModel"),imagePrompt:$("#f-imagePrompt").value,updatedAt:Date.now()};
 }
 async function save(){
   const e=state.editing; if(!e) return;
@@ -427,23 +512,216 @@ function handleWriteError(err){
 }
 function showBanner(t){const b=$("#banner");b.textContent=t;b.hidden=!t}
 
+/* manual run: image first, video after the image is confirmed */
+function flow(g){
+  if(g.flow) return g.flow;
+  if(["cast","locations"].includes(g.stage)) return ["image"];
+  if(["hooks","talking","broll"].includes(g.stage)) return ["image","video"];
+  return ["file"];
+}
+// Each step reads and writes its own fields on the generation document.
+const STEP = {
+  image:{label:"Image", accept:"image/*", asset:"imageAsset", type:"imageType", prompt:"imagePrompt", model:"imageModel", defModel:"nano_banana_pro", st:"imageStatus", fault:"imageFault", regens:"imageRegens", ok:"Confirm image"},
+  video:{label:"Video", accept:"video/*", asset:"videoAsset", type:"videoType", prompt:"prompt", model:"model", defModel:"kling-video-v3_0_omni", st:"status", fault:"fault", regens:"regens", ok:"USE"},
+  file:{label:"File", accept:"*/*", asset:"videoAsset", type:"videoType", prompt:"prompt", model:"model", defModel:"", st:"status", fault:"fault", regens:"regens", ok:"USE"},
+};
+function stepState(g,k){
+  const d=STEP[k], v=g[d.st];
+  if(k==="image"){return v==="confirmed"?"ok":v==="regenerate"?"bad":g[d.asset]?"review":"todo"}
+  return v==="use"?"ok":v==="regenerate"?"bad":g[d.asset]?"review":"todo";
+}
+function nextStep(g){return flow(g).find(k=>stepState(g,k)!=="ok")||null}
+function needsMe(g){return nextStep(g)!==null}
+
+function renderManual(gens){
+  const stages=STAGES.filter(s=>gens.some(g=>g.stage===s.key));
+  const open=gens.filter(needsMe).length;
+  $("#mbar").innerHTML=`<button class="chip" type="button" data-ms="all" aria-pressed="${state.mstage==="all"}">All stages <span class="cnt">${gens.length}</span></button>`+
+    stages.map(s=>{const sg=gens.filter(g=>g.stage===s.key);return `<button class="chip" type="button" data-ms="${s.key}" aria-pressed="${state.mstage===s.key}">${s.name} <span class="cnt">${sg.filter(g=>!needsMe(g)).length}/${sg.length}</span></button>`}).join("")+
+    `<span class="grow"></span><button class="chip" type="button" data-needs="1" aria-pressed="${state.mneeds}">Only what needs me <span class="cnt">${open}</span></button>`;
+  const html=STAGES.map((s,i)=>{
+    if(state.mstage!=="all"&&state.mstage!==s.key) return "";
+    const all=gens.filter(g=>g.stage===s.key).sort(beatSort);
+    if(!all.length) return "";
+    const list=state.mneeds?all.filter(needsMe):all;
+    const done=all.filter(g=>!needsMe(g)).length;
+    const files=all.reduce((n,g)=>n+(g.imageAsset?1:0)+(g.videoAsset?1:0),0);
+    return `<section class="mgroup" id="m-${s.key}">
+      <div class="mg-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
+        <div><h2>${s.name}</h2><div class="sub">${done}/${all.length} done · ${files} file${files===1?"":"s"} on the board</div></div>
+        <span class="grow"></span>
+        ${flow(all[0]).includes("image")?`<button class="btn small" type="button" data-copyall="${s.key}" data-field="imagePrompt">Copy image prompts</button>`:""}
+        ${flow(all[0]).some(k=>k!=="image")?`<button class="btn small" type="button" data-copyall="${s.key}" data-field="prompt">Copy ${flow(all[0]).includes("video")?"video ":""}prompts</button>`:""}
+        <button class="btn small primary" type="button" data-zip="${s.key}" ${files?"":"disabled"}>Download all (.zip)</button></div>
+      ${list.length?list.map(shotCard).join(""):`<div class="empty">Everything in ${s.name} is done.</div>`}</section>`;
+  }).join("");
+  const fi=document.querySelector("[data-faultform] input"), draft=fi?fi.value:"", had=fi&&document.activeElement===fi;
+  $("#mlist").innerHTML=html||`<div class="empty">No generations in this build yet.</div>`;
+  const ni=document.querySelector("[data-faultform] input"); if(ni&&draft){ni.value=draft;if(had) ni.focus()}
+}
+
+function shotCard(g){
+  const f=flow(g), nx=nextStep(g), st=g.status||"planned";
+  const track=f.map(k=>{const s=stepState(g,k);return `<span class="${s==="ok"?"on":k===nx?"cur":""}">${s==="ok"?"✓ ":""}${STEP[k].label}</span>`}).join("<span>›</span>");
+  return `<article class="shot" id="shot-${esc(g.id)}">
+    <div class="shot-head"><span class="b">${esc(g.beat||"—")}</span>
+      <div class="info"><span class="t">${esc(g.title||"")}</span>${g.line?`<span class="l">“${esc(g.line)}”</span>`:""}</div>
+      <div class="right"><span class="pill s-${st}">${esc(STATUS_LABEL[st]||st)}</span><span class="track">${track}</span>
+        <button class="btn small" type="button" data-open="${esc(g.id)}">Edit</button></div></div>
+    <div class="steps">${f.map((k,i)=>stepCard(g,k,i+1,f)).join("")}</div></article>`;
+}
+
+function stepCard(g,k,n,f){
+  const d=STEP[k], s=stepState(g,k), ro=state.readOnly||!state.assets;
+  const locked=k==="video"&&stepState(g,"image")!=="ok";
+  const asset=g[d.asset], type=g[d.type]||"";
+  const prompt=g[d.prompt]||"", model=g[d.model]||d.defModel;
+  const busy=state.busy[g.id+":"+k];
+  const isVid=type.startsWith("video/")||(k==="video"&&!type);
+  const media=asset?(isVid?`<video src="/_blob/${esc(asset)}" muted loop playsinline controls preload="metadata"></video>`:type.startsWith("image/")||k==="image"?`<img src="/_blob/${esc(asset)}" alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
+    `<span>${ro?"No file yet":`Drop the ${k==="file"?"file":k} here<br>or tap to upload`}</span>`;
+  const limit=/kling/i.test(model)&&k!=="image"?2500:null;
+  const faultOpen=state.faultOpen===g.id+":"+k;
+  const cls=locked?"locked":s==="ok"?"ok":s==="bad"?"bad":k===nextStep(g)?"now":"";
+  const chip=s==="ok"?`<span class="pill s-use">${k==="image"?"Confirmed":"USE"}</span>`:s==="bad"?`<span class="pill s-regenerate">Regenerate</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">${prompt?"Prompt ready":"Waiting"}</span>`;
+  return `<div class="sc ${cls}">
+    ${locked?`<div class="lock"><span>Confirm the image to unlock the video</span></div>`:""}
+    <div class="sc-head"><span class="sn">${s==="ok"?"✓":n}</span><h3>${d.label}</h3><span class="tag">${esc(model||"model not set")}</span><span class="grow"></span>${chip}</div>
+    <div class="sc-body">
+      <div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="Upload ${d.label.toLowerCase()} for ${esc(g.beat)}"`}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>
+      <div class="pbox"><pre class="${prompt?"":"none"}">${prompt?esc(prompt):"Prompt not written yet."}</pre>
+        <div class="pmeta"><span>${num(prompt.length)} chars${limit?` · limit <span class="${prompt.length>limit?"over":""}">${num(limit)}</span>`:""} · 9:16</span>
+        <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${prompt?"":"disabled"}>Copy prompt</button></div></div>
+    </div>
+    ${g[d.fault]&&s==="bad"?`<div class="fault"><b>REGENERATE${g[d.regens]?` · try ${g[d.regens]}/2`:""}</b> · ${esc(g[d.fault])}</div>`:""}
+    ${faultOpen?`<form class="fform" data-faultform="${esc(g.id)}" data-step="${k}"><input id="fault-${esc(g.id)}-${k}" placeholder="Q3: fault → fix" aria-label="Fault and fix" required><button class="btn small bad" type="submit">Mark regenerate</button><button class="btn small" type="button" data-faultcancel="1">Cancel</button></form>`:""}
+    <div class="sc-actions">
+      ${state.readOnly?"":`<button class="btn small ok${s==="ok"?" solid":""}" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>✓ ${d.ok}</button>
+      <button class="btn small bad" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>↻ Regenerate</button>`}
+      <button class="btn small" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>⬇ Download</button>
+    </div></div>`;
+}
+
+function extFor(type,k){
+  const m={"image/png":"png","image/jpeg":"jpg","image/webp":"webp","image/gif":"gif","video/mp4":"mp4","video/webm":"webm","video/quicktime":"mp4","application/pdf":"pdf","text/plain":"txt","application/json":"json","text/markdown":"md"};
+  return m[type]||(k==="image"?"png":"mp4");
+}
+function fileName(g,k){const b=currentBuild();return `${b?b.id:"build"}_${g.beat||g.id}_${k}.${extFor(g[STEP[k].type],k)}`}
+async function fetchAsset(id){const r=await fetch("/_blob/"+id);if(!r.ok) throw new Error("fetch "+r.status);return r.blob()}
+async function saveFile(name,blob,fallbackUrl){
+  if(state.downloads){
+    try{await state.downloads.save({filename:name,data:blob});toast("Saved "+name);return}
+    catch(e){if(e&&e.code==="declined") return; if(e&&e.code==="rate_limited"){toast("A save is already open");return}}
+  }
+  if(fallbackUrl){window.open(fallbackUrl,"_blank","noopener");toast("Opened in a new tab. Save it from there.")}
+  else toast("Downloads aren't available in this view");
+}
+async function downloadOne(g,k){
+  const id=g[STEP[k].asset]; if(!id) return;
+  try{await saveFile(fileName(g,k),await fetchAsset(id),"/_blob/"+id)}catch(e){toast("Couldn't fetch the file. Try again.")}
+}
+async function downloadZip(stageKey){
+  if(!window.JSZip){toast("Zip isn't available right now");return}
+  const b=currentBuild(), gens=buildGens().filter(g=>g.stage===stageKey).sort(beatSort);
+  const stage=STAGES.find(s=>s.key===stageKey);
+  toast("Packing "+stage.name+"…");
+  const zip=new JSZip(); let md=`# ${b.name||b.id} · ${stage.name}\n\n`;
+  for(const g of gens){
+    md+=`## ${g.beat} · ${g.title||""}\n`+(g.line?`> ${g.line}\n\n`:"\n");
+    for(const k of flow(g)){
+      const d=STEP[k];
+      if(g[d.prompt]) md+=`### ${d.label} prompt (${g[d.model]||d.defModel}, ${g[d.prompt].length} chars)\n\n\`\`\`\n${g[d.prompt]}\n\`\`\`\n\n`;
+      if(g[d.asset]){try{zip.file(`${stage.folder}/${fileName(g,k)}`,await fetchAsset(g[d.asset]))}catch(e){md+=`(${d.label} file could not be fetched)\n\n`}}
+    }
+  }
+  zip.file(`${stage.folder}/prompts.md`,md);
+  const blob=await zip.generateAsync({type:"blob"});
+  await saveFile(`${b.id}_${stage.folder}.zip`,blob,null);
+}
+async function uploadTo(gid,k,file){
+  const g=state.gens.find(x=>x.id===gid); if(!g||!file) return;
+  if(!state.assets){toast("Uploading isn't available in this view");return}
+  const d=STEP[k];
+  if(k==="image"&&!file.type.startsWith("image/")){toast("That isn't an image file");return}
+  if(k==="video"&&!file.type.startsWith("video/")){toast("That isn't a video file");return}
+  state.busy[gid+":"+k]=1;render();
+  try{
+    const r=await state.assets.upload(file);
+    const patch={[d.asset]:r.id,[d.type]:r.contentType,updatedAt:Date.now()};
+    if(k==="image"){patch.imageStatus="review"; if(["planned","ready"].includes(g.status||"planned")) patch.status="review"}
+    else patch.status="review";
+    await state.db.doc("generations/"+gid).update(patch);
+    toast(d.label+" added. Check it, then confirm.");
+  }catch(e){
+    const c=e&&e.code;
+    toast(c==="too_large"?"File is over 20 MB":c==="unsupported_type"?"That file type can't be stored":c==="quota_exceeded"?"Board storage is full":"Upload failed. Try again.");
+  }finally{delete state.busy[gid+":"+k];render()}
+}
+async function setVerdict(gid,k,ok,fault){
+  const g=state.gens.find(x=>x.id===gid); if(!g||!state.db) return;
+  const d=STEP[k], patch={updatedAt:Date.now()};
+  if(ok){
+    patch[d.st]=k==="image"?"confirmed":"use";
+    if(k==="image") patch.status=flow(g).length===1?"use":"ready";
+  } else {
+    patch[d.st]="regenerate"; patch[d.fault]=fault; patch[d.regens]=(Number(g[d.regens])||0)+1;
+    if(k==="image") patch.status="regenerate";
+  }
+  try{await state.db.doc("generations/"+gid).update(patch);toast(ok?(k==="image"&&flow(g).includes("video")?"Image confirmed. Video unlocked.":"Locked as USE"):"Marked regenerate")}
+  catch(e){handleWriteError(e)}
+}
+function copyText(t,what){navigator.clipboard.writeText(t).then(()=>toast(what+" copied"),()=>toast("Copy was blocked. Select the text and copy it."))}
+
 /* events */
+let pickTarget=null;
 document.addEventListener("click",e=>{
-  const t=e.target.closest("[data-open],[data-add],[data-f],[data-jump]");
+  const t=e.target.closest("[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
-  if(t.dataset.open){const g=state.gens.find(x=>x.id===t.dataset.open);if(g) openDrawer(g,false)}
-  else if(t.dataset.add){openDrawer({stage:t.dataset.add,status:"planned"},true)}
-  else if(t.dataset.f){state.filter=t.dataset.f;render()}
-  else if(t.dataset.jump){const w=$("#w-"+t.dataset.jump);if(w) w.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}
+  const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
+  if(ds.open){const x=state.gens.find(y=>y.id===ds.open);if(x) openDrawer(x,false)}
+  else if(ds.add){openDrawer({stage:ds.add,status:"planned"},true)}
+  else if(ds.f){state.filter=ds.f;render()}
+  else if(ds.jump){const w=$("#w-"+ds.jump);if(w) w.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}
+  else if(ds.view){state.view=ds.view;lsSet("gb.view",ds.view);render()}
+  else if(ds.ms){state.mstage=ds.ms;render()}
+  else if(ds.needs){state.mneeds=!state.mneeds;render()}
+  else if(ds.copy&&g){copyText(g[ds.field]||"",(g.beat||"")+" prompt")}
+  else if(ds.copyall){
+    const list=buildGens().filter(x=>x.stage===ds.copyall&&x[ds.field]).sort(beatSort);
+    copyText(list.map(x=>`${x.beat}\n${x[ds.field]}`).join("\n\n"),list.length+" prompts");
+  }
+  else if(ds.zip){downloadZip(ds.zip)}
+  else if(ds.dl&&g){downloadOne(g,ds.step)}
+  else if(ds.verdict&&g){
+    if(ds.verdict==="ok"){state.faultOpen=null;setVerdict(g.id,ds.step,true)}
+    else {state.faultOpen=g.id+":"+ds.step;render();const i=document.getElementById(`fault-${g.id}-${ds.step}`);if(i) i.focus()}
+  }
+  else if(ds.faultcancel){state.faultOpen=null;render()}
+  else if(ds.drop){if(e.target.closest("video")) return;pickTarget={id:ds.drop,step:ds.step};const p=$("#picker");p.accept=STEP[ds.step].accept;p.value="";p.click()}
 });
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape"&&!$("#drawer").hidden) closeDrawer();
+  const t=e.target.closest&&e.target.closest("[data-drop]");
+  if(t&&(e.key==="Enter"||e.key===" ")){e.preventDefault();t.click()}
+});
+document.addEventListener("submit",e=>{
+  const f=e.target.closest("[data-faultform]"); if(!f) return;
+  e.preventDefault();
+  const v=f.querySelector("input").value.trim(); if(!v) return;
+  state.faultOpen=null; setVerdict(f.dataset.faultform,f.dataset.step,false,v);
+});
+$("#picker").addEventListener("change",e=>{const f=e.target.files[0];if(f&&pickTarget) uploadTo(pickTarget.id,pickTarget.step,f);pickTarget=null});
+["dragover","dragenter"].forEach(ev=>document.addEventListener(ev,e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(t){e.preventDefault();t.classList.add("drag")}}));
+document.addEventListener("dragleave",e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(t) t.classList.remove("drag")});
+document.addEventListener("drop",e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(!t) return;e.preventDefault();t.classList.remove("drag");const f=e.dataTransfer.files[0];if(f) uploadTo(t.dataset.drop,t.dataset.step,f)});
 document.addEventListener("input",e=>{if(e.target.id==="search"){state.q=e.target.value;const pos=e.target.selectionStart;render();const s=$("#search");s.focus();s.setSelectionRange(pos,pos)}});
 $("#buildSel").addEventListener("change",e=>{state.build=e.target.value;lsSet("gb.build",state.build);render()});
 $("#addBtn").addEventListener("click",()=>openDrawer({stage:"broll",status:"planned"},true));
 $("#scrim").addEventListener("click",closeDrawer);
-document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#drawer").hidden) closeDrawer()});
 
 /* boot */
 state.build=lsGet("gb.build");
+state.view=location.hash==="#manual"?"manual":(lsGet("gb.view")==="manual"?"manual":"board");
 function setSync(live,txt){$("#syncDot").classList.toggle("live",live);$("#syncTxt").textContent=txt}
 function offline(){
   state.builds=OFFLINE.builds;state.gens=OFFLINE.gens;state.readOnly=true;
@@ -454,6 +732,8 @@ render();
   const db=window.claude&&window.claude.use?await window.claude.use("db").catch(()=>null):null;
   if(!db){offline();return}
   state.db=db;
+  claude.use("assets").then(a=>{state.assets=a;render()}).catch(()=>{});
+  claude.use("downloads").then(d=>{state.downloads=d}).catch(()=>{});
   db.collection("builds").onSnapshot(snap=>{
     state.builds=snap.docs.map(d=>({id:d.id,...d.data()}));
     if(!state.builds.some(b=>b.id===state.build)) state.build=state.builds[0]&&state.builds[0].id;
