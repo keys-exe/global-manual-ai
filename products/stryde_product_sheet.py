@@ -2204,6 +2204,19 @@ A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and
 **Our box** (`PACKAGE`, `PACKAGE-LOCK`, `NEG-PACKAGE`): a rigid two-piece box, matte black all over, about 28 × 16 × 8 cm. The only print is the lowercase grey stryde wordmark centred on the lid, in the same lettering and grey as the shell. Inside, a matte-black insert holds **exactly two straps** side by side, bands closed, shells up, wordmarks readable. No other items, no text, no stickers. The size is a rendering spec until the real box exists.
 
 **Box references** (`PACKAGE_REFS`, **locked V7.49.27**): `package_closed.jpg` (e8c4df4b) and `package_open.jpg` (a9409405): straps **lie flat** (the band is soft), shell face up, one piece, band folded under (V7.49.26). For box beats attach the box reference plus `front.webp` + `back.webp`.
+
+---
+
+## 17. Anatomy looks *(V7.49.30–31 — user ruling)*
+
+The mechanism beats use the Standards' anatomical register (§12A-1): knee · quadriceps, hamstrings and calf · femur, patella and tibia · target the patellar tendon · **site the patellar tendon immediately below the kneecap** (never the tibial tuberosity) · claim: protection.
+
+| Beats | Look |
+|---|---|
+| The point, the load arriving, the pad catching the force (protection) | **ANAT-A full stack**, plus `ANAT_A_POINT_TIGHT` — one tight spot on the tendon, never spreading onto the shin |
+| The conditions — bone on bone, worn cartilage, meniscus | **ANAT-B ghost limb** |
+
+Samples of all four looks on this knee (A full stack, B ghost limb, C silhouette, D physical model) are in `stryde_refs/anatomy_samples/` (`ANATOMY_SAMPLES`) — for choosing only, never attached as references.
 '''
 
 
