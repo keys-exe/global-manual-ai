@@ -2,11 +2,15 @@
 """§22W — one image per clip so the agent can judge the whole motion at once.
 
 Usage:
-  contact_sheet.py CLIP.mp4 [--frames 8] [--out SHEET.jpg] [--full]
+  contact_sheet.py CLIP.mp4 [--frames 8] [--out SHEET.jpg] [--full] [--from S --to S]
 
 Tiles N frames evenly spaced from the first frame to the last (always both) into
-one JPEG, each tile stamped with its timestamp. --full also saves every tile as its
-own full-resolution PNG next to the sheet, for zooming into hands, product and text.
+one JPEG, each tile stamped with its timestamp. --from/--to limit the sheet to the
+on-screen window (the EDL's `in` to `in + on-screen x speed`, §30H WINDOW): the
+first and last tiles are then the window's own first and last frames, and the
+frozen/black analysis covers the window only. That window is what §22W judges.
+--full also saves every tile as its own full-resolution PNG next to the sheet, for
+zooming into hands, product and text.
 Prints JSON: duration, fps, resolution, aspect, audio present, frozen-frame runs
 (freezedetect), black frames, and the files written.
 """
@@ -24,6 +28,8 @@ def main():
     ap.add_argument("--frames", type=int, default=8)
     ap.add_argument("--out")
     ap.add_argument("--full", action="store_true")
+    ap.add_argument("--from", dest="t0", type=float, help="window start (s, clip time)")
+    ap.add_argument("--to", dest="t1", type=float, help="window end (s, clip time)")
     a = ap.parse_args()
     clip = Path(a.clip)
     info = subprocess.run([FF, "-hide_banner", "-i", str(clip)], capture_output=True, text=True).stderr
@@ -31,16 +37,22 @@ def main():
     dur = int(h) * 3600 + int(m) * 60 + float(s)
     v = re.search(r"Video: .*?(\d{2,5})x(\d{2,5}).*?([\d.]+) fps", info)
     w, hh, fps = int(v.group(1)), int(v.group(2)), float(v.group(3))
+    t0 = max(0.0, a.t0 or 0.0)
+    t1 = min(dur, a.t1) if a.t1 is not None else dur
+    if t1 - t0 < 1 / fps:
+        raise SystemExit(json.dumps({"error": f"window {t0:.3f}-{t1:.3f}s is empty (clip {dur:.3f}s)"}))
+    window = a.t0 is not None or a.t1 is not None
+    tail_is_end = t1 >= dur - 1 / fps
     n = max(2, a.frames)
-    times = [round(min(dur - 1 / fps, dur * k / (n - 1)), 3) for k in range(n)]
+    times = [round(min(t1 - 1 / fps, t0 + (t1 - t0) * k / (n - 1)), 3) for k in range(n)]
     out = Path(a.out) if a.out else clip.with_suffix(".sheet.jpg")
     tiles = []
     for k, t in enumerate(times):
         tp = out.with_name(f"{clip.stem}.t{k:02d}.png")
-        if k == n - 1:  # the true last frame: read the tail and keep the final decoded frame
+        if k == n - 1 and tail_is_end:  # the true last frame: read the tail and keep the final decoded frame
             subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", "-sseof", "-0.5", "-i", str(clip),
                             "-update", "1", "-q:v", "1", str(tp)], check=True)
-            times[k] = round(dur, 3)
+            times[k] = round(t1, 3)
         else:
             subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", "-ss", str(t), "-i", str(clip),
                             "-frames:v", "1", str(tp)], check=True)
@@ -66,17 +78,20 @@ def main():
     if not a.full:
         for t in tiles:
             t.unlink()
-    an = subprocess.run([FF, "-hide_banner", "-i", str(clip), "-vf",
+    span = ["-ss", str(t0), "-t", str(t1 - t0)] if window else []
+    an = subprocess.run([FF, "-hide_banner", *span, "-i", str(clip), "-vf",
                          "freezedetect=n=0.003:d=0.5,blackdetect=d=0.1:pic_th=0.98", "-an", "-f", "null", "-"],
                         capture_output=True, text=True).stderr
     freezes = re.findall(r"freeze_start: ([\d.]+)[\s\S]*?freeze_end: ([\d.]+)", an)
     black = re.findall(r"black_start:([\d.]+) black_end:([\d.]+)", an)
+    sh = t0 if window else 0.0  # report in clip time
     print(json.dumps({
         "clip": str(clip), "duration_s": round(dur, 3), "fps": fps, "resolution": f"{w}x{hh}",
         "aspect_9x16": abs(w / hh - 9 / 16) < 0.02, "has_audio": "Audio:" in info,
+        "window_s": [round(t0, 3), round(t1, 3)] if window else None,
         "sheet": str(out), "sheet_times_s": times, "frame_files": [str(t) for t in tiles] if a.full else [],
-        "frozen_runs_s": [(float(x), float(y)) for x, y in freezes],
-        "black_runs_s": [(float(x), float(y)) for x, y in black],
+        "frozen_runs_s": [(round(float(x) + sh, 3), round(float(y) + sh, 3)) for x, y in freezes],
+        "black_runs_s": [(round(float(x) + sh, 3), round(float(y) + sh, 3)) for x, y in black],
     }, indent=2))
 
 

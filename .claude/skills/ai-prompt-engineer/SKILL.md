@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.63.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.64.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -45,9 +45,11 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Image verdict (§22V). Open and judge every image yourself — the line first, then product, body, continuity, register, animatability — and ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then the user. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
 
-**Clip verdict (§22W).** Judge every video yourself from `scripts/contact_sheet.py` (true first + last frame, `--full` for zoom): the line, product in every frame, body in every frame, motion, continuity, technical, enough footage for its slot → `USE` or `REGENERATE`.
+**Clip verdict (§22W, V7.64.0).** Judge every video yourself in two passes. First the whole clip with `scripts/contact_sheet.py` (true first + last frame, `--full` for zoom), to find the **key frame** that shows the READ and the dead parts. Then the **on-screen window** (`--from <in> --to <out>`), where the questions are answered: the line (the READ on screen and early; negation lines show the opposite state; a **blind read** by a second agent that hasn't seen the script must name the READ), product in every frame, body in every frame, motion, continuity, technical, enough live footage for its slot (window > 30% dead or at rest at the cut → regenerate with one continuous action) → `<BEAT> · window <in>–<out>s · key <t>s · USE` or `REGENERATE`.
 
-**B-roll length (E6, V7.60.6).** Every B-roll clip — mechanism and anatomy included — is as long as the script line (or §27 phrase) it covers: the span on the voice master's word timestamps + 0.5s, rounded up, Kling 3–15s. Never a fixed 5s/3s. The voice master comes before any B-roll call.
+**B-roll length (E6, V7.60.6).** Every B-roll clip — mechanism and anatomy included — is as long as the script line (or §27 phrase) it covers: the span on the voice master's word timestamps + 0.5s, rounded up, Kling 3–15s. Never a fixed 5s/3s. The voice master comes before any B-roll call. **Before any B-roll prompt, run `broll_spans.py` on the master (V7.64.0)**: span, on-screen time (pause included) and call length per beat, flags `FLASH` `SHORT` `LONG` `SPLIT` `NEGATION` `NO_READ`, each acted on in the prompt.
+
+**The READ (§30B Part 4, §27A, V7.64.0).** Every B-roll beat carries a READ (the one thing the viewer must take away), `read_kind` (`state` · `event` · `contrast`) and a negation flag, written before the subject is picked. **The script's split stands; the shot adapts to its on-screen time.** Under 1.5s the shot is a STATE with the READ in every frame (or an event already under way on frame one, READ within 0.5s). 1.5–3s gets the arc, with the completing action in the first half. Over 3s gets one continuous action lasting the span. Negation lines (`no slipping`, `without gripping`) show the opposite state; the failure goes in the negatives.
 
 **Script visual instructions are binding (§27F, V7.61.0).** Every visual note on the script (`VISUAL:`, `B-ROLL:`, `ON SCREEN:`, `SFX:`, `[brackets]`, `(parentheses)`, inline `[notes]`, the visual column of a VO | VISUAL table…) is kept out of the voice but **never dropped**: `script_lines.py --visual` lists them (`VN01`…) anchored to their spoken line, and they open the **Visual Instruction Ledger** at step 2. Step 5 assigns each row to the beat that shows it or the CapCut line that carries it (on-screen text verbatim). Follow it as written, don't substitute your own shot; a row that breaks a higher layer is flagged with the nearest compliant execution. §22V/§22W Q1 check it. Every row ends `verified` or `flagged` — none open at step 8.
 
@@ -55,7 +57,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Edit grammar (§42 Part 3A, V7.63.0, both run modes).** Copy how the inspo edits, not just how often it cuts. Read `fetch_inspo.py`'s shot frames and per-second contact sheets (a split-screen or PiP appearing over a held shot is not a scene cut) and log every device as `EGxx`: B-roll layout (`full` · `split` band + ratio · `pip` box, which is inside, corner, size · `cutout` · `card`), punch-ins, transitions, speed ramps, caption style, text overlays, SFX. Compile `EDIT-[BUILD]` (style axis — wins over house defaults, never over compliance). Step 5: every B-roll row gets its `layout` by the reference's own rule; §35: frame non-full B-roll for its crop; `assemble.py` renders `full`/`split`/`pip`/punch-ins; everything else is a CapCut line with its `EG` ID.
 
-**Placement & no holes (§30H). B-roll starts on its phrase's first word (script-aligned timing); joins are frame-exact; no talking-head flicker under 1.5s between B-rolls; voice-only builds have no uncovered frame; no B-roll under 0.8s. `scripts/assemble.py` places, fixes, renders and verifies the rough cut; CapCut finishes it.
+**Placement & no holes (§30H). B-roll starts on its phrase's first word (script-aligned timing); joins are frame-exact; no talking-head flicker under 1.5s between B-rolls; voice-only builds have no uncovered frame. **WINDOW (V7.64.0, user correction): each B-roll shows its best part, never frame 0 by default.** `assemble.py` picks the on-screen window with `best_window.py` (`"in": "auto"`): the step down the stairs, not the standing before it. You confirm it on the window sheet; a key frame off screen FAILS; the window goes in the EDL, the editor notes (§40) and the beat's board doc (`key`, `window`). **FLASH floors: state 0.8s · event 1.2s · contrast 1.8s** (unverified); a state under 0.8s is merged, flagged to the user in Manual. `scripts/assemble.py` places, fixes, renders and verifies the rough cut; CapCut finishes it.
 
 **Hook variants (§30H).** The output is **one finished video per hook**: HK1 + body, HK2 + body, HK3 + body — three when you write the hooks, else as many as the script has. Each hook voiced separately, the body voiced once and reused. `scripts/variants.py` builds every variant as one timeline (no holes across the seam), keeps the body's cuts identical in every variant, and checks each duration = hook + body.
 
@@ -76,9 +78,11 @@ Where a script line contradicts a product spec or visual standard, the render fo
 - `scripts/voice_source.py` — steps 3–5 on two or more Kling takes: trim each → ×1.2 → same-voice gate (pitch median ±10%) → join in order → loop to ≥30s → `<Keyword>_clone_source.mp3`
 - `scripts/script_lines.py` — §22U step 8: spoken lines only, verbatim; reports every dropped line (title, headings, links, visual notes); `--visual` writes the §27F ledger's `VNxx` rows; reads `.docx` tables (two-column VO | VISUAL scripts) and cuts speaker labels (`VO:`, `SARAH:`) — never voiced
 - `scripts/tts_budget.py` — verbatim lock with `--script-lines`; steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags
-- `scripts/assemble.py` — §30H: place B-roll on its lines, close flickers and holes, render + verify the rough cut; per-B-roll `layout` (`full`, `split`, `pip`) and `punch_in` from `EDIT-[BUILD]`
+- `scripts/assemble.py` — §30H: place B-roll on its lines, close flickers and holes, render + verify the rough cut; per-B-roll window (`in: auto`, `key`, `read_kind`), `layout` (`full`, `split`, `pip`) and `punch_in` from `EDIT-[BUILD]`
 - `scripts/variants.py` — §30H hook variants: `<BUILD>_HK1.mp4` … each hook + the identical body, set-checked
-- `scripts/contact_sheet.py` — §22W: one image per clip (first → last frame), frozen/black runs, `--full` for zoom
+- `scripts/contact_sheet.py` — §22W: one image per clip (first → last frame), frozen/black runs, `--full` for zoom, `--from/--to` for the on-screen window
+- `scripts/best_window.py` — §30H WINDOW: ranks every window of a clip for its slot (action, moving at the cut, key frame early), marks dead runs; `--sheet` for the window sheet
+- `scripts/broll_spans.py` — E6: times every B-roll beat on the master before any call — span, on-screen time, call length, FLASH / SHORT / LONG / SPLIT / NEGATION / NO_READ
 - `scripts/trim.py` — E11 trim pass (never on a §24I film voice master)
 - `scripts/kie.py` — Kie AI API (§5): `credit`, `upload` (public URL), `image` (fallback), `seedance` (720p, 9:16, ingredients, stated duration), `wait`
 - `scripts/fetch_drive.py` — §18B Drive intake: downloads the shared folder, sorts inspo / script / product sheet / images, extracts document text, measures the inspo
@@ -155,7 +159,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 22D. Voice Identity Standard *(new — axis steerability unverified)*
 - 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Kling source (2+ takes) → ElevenLabs clone → v3 TTS → HeyGen Avatar V)*
 - 22V. Image Verdict — the agent judges every image *(new V7.59.0)*
-- 22W. Clip Verdict — the agent judges every video *(new V7.60.0)*
+- 22W. Clip Verdict — the agent judges every video *(new V7.60.0; two passes, on-screen window, blind read V7.64.0)*
 - 22E. Fixed-Mount Capture Standard *(new V7.48.7; split into MOUNT and RECORD at V7.48.10)*
 - 22F. Creator Framing Standard *(new V7.52.0 — visual check pending)*
 - 22S. Skin Realism Standard *(Mode 1 — measured this cycle)*
@@ -177,7 +181,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 **BLOCK 6 — PERFORMANCE & MOTION**
 - 26. Video Package Rule
 - 27. B-roll Per Phrase Rule
-- 27A. B-roll Motion Arc *(exit clause measured this cycle; full arc partially verified)*
+- 27A. B-roll Motion Arc *(exit clause measured this cycle; full arc partially verified; on-screen time decides the shot V7.64.0)*
 - 27B. Coverage Ledger *(amended V7.48.2)*
 - 27C. Physical Plausibility Standard *(new — unverified, visual check)*
 - 27D. Structural Integrity Standard *(new at V7.48 — unverified, A/B pending)*
@@ -197,7 +201,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 29. Talking Head Segmentation Rule
 - 30. Talking Head Continuity Rule
 - 30A. Cross-Beat Assembly *(new — costs nothing in the JSON)*
-- 30B. B-Roll Selection Standard *(locked this cycle)*
+- 30B. B-Roll Selection Standard *(locked this cycle; Part 4 READ V7.64.0)*
 - 31. Short VSL Structure Standard (2–4 min) — Default
 - 32. Long VSL Structure (5–20 min) — On Request Only
 - 33. Beat ID Convention
@@ -206,7 +210,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 30F. Emotional Register — B-roll *(new — the §28 counterpart)*
 - 30E. B-Roll Continuity & Assembly Standard *(locked)*
 - 30G. Property Standard *(new — unverified, visual check)*
-- 30H. B-Roll Placement & Hole-Free Assembly *(new V7.60.0)*
+- 30H. B-Roll Placement & Hole-Free Assembly *(new V7.60.0; WINDOW and read floors V7.64.0)*
 
 **BLOCK 8 — FORMATS & OUTPUT**
 - 34. Correction Protocol
@@ -284,6 +288,8 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 **PENDING AMENDMENTS**
 
 **OPEN DECISIONS**
+
+**CHANGELOG — V7.63.0 → V7.64.0 *(cut authorised)***
 
 **CHANGELOG — V7.62.0 → V7.63.0 *(cut authorised)***
 

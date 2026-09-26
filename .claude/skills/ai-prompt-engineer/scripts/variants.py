@@ -7,6 +7,7 @@ Usage:
 VARIANTS.json:
 {
   "body":  {"audio": "voice/body_master.mp3", "script": "work/script.lines.txt",
+            "words": "work/body.words.json",                  # optional (assemble.py)
             "base": "th/body_th.mp4" | null,
             "broll": [ {"beat": "BR-01", "clip": "...", "phrase": "...", "layout": {...}}, ... ],
             "punch_in": [ ... ], "th_focus_y": 0.4},          # optional (assemble.py)
@@ -23,7 +24,7 @@ writes <BUILD>_<HOOK-ID>.mp4. §30H holds across the hook-to-body seam because t
 two are one timeline. Then checks the set:
   - every variant rendered and PASSED on its own
   - the body is the same in every variant: the body segment of each timeline is
-    identical once shifted by that hook's length
+    identical once shifted by that hook's length, with the same window of every clip
   - each variant's duration = its hook master + the body master (±2 frames)
 Prints one JSON report. Exit 0 = every variant PASS, 2 = any FAIL.
 """
@@ -54,6 +55,7 @@ def main():
         plan = {
             "audio": [h["audio"], body["audio"]],
             "script": [h["script"], body["script"]],
+            **({"words": [h["words"], body["words"]]} if h.get("words") and body.get("words") else {}),
             "base": [h["base"], body["base"]] if body.get("base") and h.get("base") else None,
             "broll": h.get("broll", []) + body["broll"],
             "punch_in": h.get("punch_in", []) + body.get("punch_in", []),
@@ -77,7 +79,9 @@ def main():
         expect = hook_len + body_len
         got = rep.get("render", {}).get("duration_s")
         body_beats = {b["beat"] for b in body["broll"]}
-        body_part = [(s["beat"], s.get("layout"), round(s["start"] - hook_len, 2), round(s["end"] - hook_len, 2))
+        ins = {e["beat"]: e.get("in") for e in rep.get("edl", [])}   # the chosen window, too
+        body_part = [(s["beat"], s.get("layout"), round(s["start"] - hook_len, 2), round(s["end"] - hook_len, 2),
+                      ins.get(s["beat"]))
                      for s in rep["timeline"] if s.get("beat") in body_beats]
         body_edls.append(body_part)
         ok = rep.get("status") == "PASS" and got is not None and abs(got - expect) <= 2 / 30

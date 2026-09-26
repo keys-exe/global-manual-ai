@@ -11,10 +11,19 @@ PLAN.json:
                                               # phrases are found in the SCRIPT, timed by
                                               # aligning the transcript to it (so "seventeen"
                                               # still matches when the transcript says "17")
+  "words": "work/master.words.json",         # optional: word timestamps [[start, end, word], ...]
+                                              # (one file per part for a hook variant); else
+                                              # the master is transcribed here
   "base":  "th/talking_heads.mp4" | null,     # talking-head track aligned to the master;
                                               # null = voice-only build: every frame must be B-roll
   "broll": [ {"beat": "BR-01", "clip": "renders/BR-01.mp4",
-              "phrase": "seventeen times your bodyweight", "in": 0.0,
+              "phrase": "seventeen times your bodyweight",
+              "in": "auto",                   # default: the best window (best_window.py);
+                                              # a number = a hand-picked clip time (s)
+              "key": 2.1,                     # optional: clip time of the READ frame —
+                                              # must be on screen, early in the window
+              "read": "one small spot below the kneecap takes the load",
+              "read_kind": "state",           # state | event | contrast (§30B Part 4)
               "layout": {"type": "full"}}, ... ],     # optional, default full (§42 Part 3A)
   "punch_in": [ {"phrase": "and that's when", "scale": 1.15}, ... ],   # optional
   "th_focus_y": 0.4                            # optional: face height in the TH frame (0-1)
@@ -47,7 +56,14 @@ Rules (§30H):
              (regenerate that clip at a longer duration).
   4. HOLE    in a voice-only build (base null) every uncovered moment is a hole and
              is closed the same way; an unclosable hole is a FAIL.
-  5. FLASH   a B-roll on screen for under 0.8s is a FAIL (too short to read).
+  5. WINDOW  each B-roll shows its best part, never frame 0 by default: with "in"
+             "auto" (the default) the on-screen window is picked from the whole
+             clip by best_window.py — most action, still moving at the cut, the
+             READ frame ("key") inside it and early. The dead part (standing
+             before the step, settling after it) is what gets cut. A key frame
+             that is not on screen is a FAIL (KEY_OFF_SCREEN).
+  6. FLASH   a B-roll on screen for less than its read floor is a FAIL: state 0.8s,
+             event 1.2s, contrast 1.8s (read_kind; 0.8s when not given).
 Then renders (1080x1920, 30fps, the master as the only audio) and verifies the
 render: duration equals the master, no black frames, every cut where the EDL says.
 Prints JSON (EDL, fixes, failures, verification). Exit 0 = PASS, 2 = FAIL.
@@ -61,11 +77,13 @@ import imageio_ffmpeg
 
 sys.path.insert(0, str(Path(__file__).parent))
 from trim import words, duration  # noqa: E402
+from best_window import pick_window  # noqa: E402
 
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 FPS = 30
 MIN_SLOW = 0.8
 MIN_FLASH = 0.8
+MIN_READ = {"state": 0.8, "event": 1.2, "contrast": 1.8}   # §30H FLASH floors by read kind
 W, H = 1080, 1920
 CORNER_MARGIN = 48
 
@@ -170,6 +188,25 @@ def join_media(root, spec, kind):
     return out
 
 
+def timed_words(root, plan, model):
+    """Script-aligned word timestamps for the whole master. Taken PER PART (hook alone,
+    body alone) and offset by the parts before it, so the body is timed identically
+    in every hook variant. "words" (one JSON per part) skips transcription."""
+    parts = plan["audio"] if isinstance(plan["audio"], list) else [plan["audio"]]
+    scripts = plan.get("script")
+    scripts = (scripts if isinstance(scripts, list) else [scripts]) if scripts else [None] * len(parts)
+    given = plan.get("words")
+    given = (given if isinstance(given, list) else [given]) if given else [None] * len(parts)
+    ws, offset = [], 0.0
+    for part, sc, wf in zip(parts, scripts, given):
+        pw = [tuple(x) for x in json.loads((root / wf).read_text())] if wf else words(root / part, model)
+        if sc:
+            pw = align((root / sc).read_text(encoding="utf-8").split(), pw)
+        ws += [(s0 + offset, e0 + offset, w) for s0, e0, w in pw]
+        offset += snap(duration(root / part))  # each part starts on a whole frame
+    return ws
+
+
 def snap(t):
     return round(round(t * FPS) / FPS, 4)
 
@@ -190,19 +227,8 @@ def main():
     audio = join_media(root, plan["audio"], "audio")
     base = join_media(root, plan["base"], "video") if plan.get("base") else None
     total = duration(audio)
-    # Word timings are taken PER PART (hook alone, body alone) and offset by the
-    # parts before it, so the body is timed identically in every hook variant.
-    parts = plan["audio"] if isinstance(plan["audio"], list) else [plan["audio"]]
-    scripts = plan.get("script")
-    scripts = (scripts if isinstance(scripts, list) else [scripts]) if scripts else [None] * len(parts)
-    ws, offset = [], 0.0
-    for part, sc in zip(parts, scripts):
-        pw = words(root / part, a.model)
-        if sc:
-            pw = align((root / sc).read_text(encoding="utf-8").split(), pw)
-        ws += [(s0 + offset, e0 + offset, w) for s0, e0, w in pw]
-        offset += snap(duration(root / part))  # each part starts on a whole frame
-    fails, fixes, edl = [], [], []
+    ws = timed_words(root, plan, a.model)
+    fails, fixes, edl, warnings = [], [], [], []
 
     # 1. PLACE
     cursor = 0
@@ -217,9 +243,21 @@ def main():
         lay, lerr = check_layout(b, base is not None)
         if lerr:
             fails.append({"beat": b["beat"], "fail": "LAYOUT_INVALID", "detail": lerr})
+        spec = b.get("in", "auto")
+        kind = b.get("read_kind")
+        if kind is not None and kind not in MIN_READ:
+            fails.append({"beat": b["beat"], "fail": "READ_KIND_INVALID", "detail": f"{kind!r}: state|event|contrast"})
+        if kind is None:
+            warnings.append({"beat": b["beat"], "warning": "no read_kind — FLASH floor 0.8s used"})
+        clen = duration(clip)
+        if spec != "auto" and not 0 <= float(spec) < clen:
+            fails.append({"beat": b["beat"], "fail": "IN_OUTSIDE_CLIP", "detail": f"in {spec}s, clip {clen:.2f}s"})
+            spec = 0.0
         edl.append({"beat": b["beat"], "clip": str(clip), "phrase": b["phrase"], "layout": lay,
+                    "read": b.get("read"), "read_kind": kind, "key": b.get("key"),
                     "start": snap(ws[i][0]), "line_end": snap(line_end(ws, j)),
-                    "in": b.get("in", 0.0), "clip_len": duration(clip), "speed": 1.0})
+                    "in": 0.0 if spec == "auto" else float(spec), "in_source": "auto" if spec == "auto" else "set",
+                    "clip_len": clen, "speed": 1.0})
     edl.sort(key=lambda e: e["start"])
     for n, e in enumerate(edl):
         nxt = edl[n + 1]["start"] if n + 1 < len(edl) else total
@@ -256,9 +294,44 @@ def main():
     if base is None and edl and edl[0]["start"] > 1e-3:
         fails.append({"beat": edl[0]["beat"], "fail": "HOLE_AT_START",
                       "detail": f"0.00–{edl[0]['start']:.2f}s uncovered — place a B-roll on the opening line"})
+
+    # 5. WINDOW — the best part of each clip, never frame 0 by default
     for e in edl:
-        if e["end"] - e["start"] < MIN_FLASH:
-            fails.append({"beat": e["beat"], "fail": "FLASH", "detail": f"on screen {e['end']-e['start']:.2f}s < {MIN_FLASH}s"})
+        src = (e["end"] - e["start"]) * e["speed"]
+        if e["in_source"] == "auto":
+            if e["clip_len"] - src > 1.0 / FPS:
+                r = pick_window(e["clip"], src, e["key"])
+                if r.get("pick") is None:
+                    fails.append({"beat": e["beat"], "fail": "KEY_OFF_SCREEN", "detail": r.get("fail")})
+                else:
+                    e["in"] = r["pick"]["in"]
+                    e["window_pick"] = {k: r["pick"][k] for k in ("action", "dead_share", "moving_at_cut", "key_at_s")
+                                        if k in r["pick"]}
+                    if r.get("from_frame0"):
+                        e["window_pick"]["frame0_action"] = r["from_frame0"]["action"]
+                    e["dead_runs_s"] = r["dead_runs_s"]
+                    if not r["pick"]["moving_at_cut"]:
+                        warnings.append({"beat": e["beat"], "warning": "best window is at rest at the cut (§27A) — "
+                                         "check the window sheet; §22W Q4"})
+                    if r["pick"]["dead_share"] > 0.3:
+                        warnings.append({"beat": e["beat"], "warning": f"best window is {r['pick']['dead_share']:.0%} "
+                                         "dead footage — the clip has less action than its slot; §22W Q7"})
+            else:
+                e["window_pick"] = {"note": "on-screen time uses the whole clip"}
+        e["in"] = round(min(e["in"], max(0.0, e["clip_len"] - src)), 3)
+        e["out"] = round(e["in"] + src, 3)
+        e["head_cut_s"], e["tail_cut_s"] = e["in"], round(max(e["clip_len"] - e["out"], 0.0), 3)
+        if e["key"] is not None and not e["in"] - 1e-3 <= e["key"] <= e["out"] + 1e-3:
+            if not any(f.get("beat") == e["beat"] and f["fail"] == "KEY_OFF_SCREEN" for f in fails):
+                fails.append({"beat": e["beat"], "fail": "KEY_OFF_SCREEN",
+                              "detail": f"key frame {e['key']:.2f}s is outside the on-screen window {e['in']:.2f}–{e['out']:.2f}s"})
+
+    # 6. FLASH — the read floor by read kind
+    for e in edl:
+        floor = MIN_READ.get(e["read_kind"], MIN_FLASH)
+        if e["end"] - e["start"] < floor - 1e-3:
+            fails.append({"beat": e["beat"], "fail": "FLASH",
+                          "detail": f"on screen {e['end']-e['start']:.2f}s < {floor}s ({e['read_kind'] or 'no read_kind'})"})
 
     # timeline segments
     raw, t = [], 0.0
@@ -287,7 +360,6 @@ def main():
             fails.append({"fail": "PUNCH_SCALE", "phrase": p["phrase"], "detail": "scale 1.0 or 1.05-1.5"}); continue
         pc = hit[0] + 1
         punches.append((snap(ws[hit[0]][0]), sc, p["phrase"]))
-    warnings = []
     if punches and base is None:
         fails.append({"fail": "PUNCH_NEEDS_TH", "detail": "punch-ins need a talking-head track"})
     segs = []
