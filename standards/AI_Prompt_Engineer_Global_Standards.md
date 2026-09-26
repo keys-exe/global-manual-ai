@@ -2218,6 +2218,10 @@ Professional status does not create substantiation. Any factual statement about 
 
 A fictional or generated medical-professional character must not be presented as a specific real clinician, real hospital employee, real medical organization spokesperson, or named institutional endorser unless that identity/endorsement is supplied and authorized by the advertiser. Generic professional roles are permitted.
 
+### Face register — always approachable *(correction 2026-09-26, user)*
+
+**Every doctor, surgeon or other medical professional is cast approachable, in every build and every mode.** The face is one a nervous patient is glad to see: warm, relaxed, kind and attentive — never stern, severe, cold or intimidating. Authority comes from the setting and the tools of the trade (§19), never from a hard face. §19A novelty still applies in full — face architecture, hair, build, one marker and the five-of-eight gate — but every choice is made inside the approachable register: no frowning or knitted brows, no downturned mouth, no hard or staring eyes. **`APPROACH-PRO`** (Appendix A) follows the face fill on the character's reference sheet and on every beat that shows the face; on those sheets `NEG-DEFAULT-FACE` drops its last two clauses (`no soft agreeable features throughout`, `not a face that could advertise anything`), which would fight it, and keeps the rest. `NEG-SHEET`'s `no smile` stands: the warmth is in the eyes and the resting mouth, not a posed smile. §22V checks it as a Q1 fault: a sheet that reads stern is REGENERATE.
+
 **Visual credibility is permitted, fabrication is not.** White coats, scrubs, consultation rooms, clinics, sports-medicine rooms, anatomical models, examination spaces, and profession-appropriate tools may be shown when visually relevant. Generated clinical readouts and measurement instruments remain governed by §43 because their numerals can fabricate evidence; that restriction does not extend to the professional person.
 
 ---
@@ -5899,6 +5903,11 @@ no poreless skin, no smooth skin, no smoothed cheeks, no uniform specular, no be
 fine lines fanning from the corners of both eyes, light horizontal creases across the forehead, soft nasolabial folds, slight crepe texture under the eyes, faint sun-damage freckling across the cheekbones, one or two faint broken capillaries near the nostrils
 ```
 
+**`APPROACH-PRO`** — every medical professional (§19B), directly after the face fill on the reference sheet and on every beat that shows the face. On those sheets `NEG-DEFAULT-FACE` drops its last two clauses. *(correction 2026-09-26)* *(409)*
+```
+APPROACHABLE — the face of a clinician a nervous patient is glad to see: the eyes soft and warm, the lids relaxed, fine laugh lines fanning from their corners; the brow at rest and open, never drawn together; the mouth closed but loose, its corners level or turned very slightly up, never pulled down; the jaw unclenched, the head held easily. Kind and attentive, never stern, never severe, not a posed smile.
+```
+
 **`NEG-DEFAULT-FACE`** — appended to every new character reference-sheet T2I (§19A). *(219)*
 ```
 no generically pleasant symmetrical face, no default silver swept-back hair, no catalogue-model bone structure, no stock retiree archetype, no soft agreeable features throughout, not a face that could advertise anything
@@ -7821,6 +7830,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 |---|---|---|---|
 | 2026-09-26 | §22U voice source moves from Seedance to Kling: at least two `kling-video-v3_0_omni` generations (G1 opening line, G2 the next), same image and `VOICE-[CHAR]`, same-voice gate (pitch median ±10% + the ear), each take trimmed and sped ×1.2, joined in order, the joined sequence looped to ≥ 30s. `voice_source.py` takes two or more clips. §24I film voice masters stay on Seedance | §22U lock + steps 1–5, §22D regimes/bookends, §5 routing, §44 default 7, E1, E7 | Written in |
 | 2026-09-26 | HeyGen motion prompt on every talking-head render, both run modes. Manual: Avatar V in the app, *More expressive* on, the gesture line in *Apply custom motion*. API: `avatar_v` + `motionPrompt`, no `expressiveness` (Avatar IV only). Avatar IV fallback only when `motionPrompt` is rejected. Confirmed against the current HeyGen API schema | §22U step 13, §44 default 84, E7 | Written in |
+| 2026-09-26 | Medical professionals always approachable (user): warm, relaxed, kind face — never stern or severe; §19A novelty kept inside that register. New `APPROACH-PRO` string after the face fill on sheets and face beats; `NEG-DEFAULT-FACE` drops its last two clauses on those sheets; `no smile` stands; a stern sheet is a §22V Q1 REGENERATE | §19B, Appendix A (Avatar sheet) | Written in |
 
 ---
 

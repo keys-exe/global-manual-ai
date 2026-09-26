@@ -32,8 +32,8 @@ CAST = {
    body="A white British woman. Small and wiry, narrow shoulders, lean muscular calves of someone who walks everywhere, sixty-two years old",
    ward="A fitted oatmeal knit cardigan buttoned over a white T-shirt, khaki cotton walking shorts ending just above the knee so both knees are bare, and grey running trainers",
    age="fine lines fanning from the corners of both eyes, light vertical lines above the upper lip, faint freckling across the nose and cheekbones, slight crepe under the eyes"),
- "C4-SURGEON": dict(sex="MAN", side="left", wall="pale blue-grey", floor="grey hard-wearing clinic flooring",
-   face="A broad, square, heavy-jawed face with prominent, slightly bulging grey-blue eyes, a short straight nose and a wide thin mouth. His eyebrows are heavy, still dark and nearly meet over the nose — his one marker. The jaw is a little heavier on the right",
+ "C4-SURGEON": dict(pro=True, sex="MAN", side="left", wall="pale blue-grey", floor="grey hard-wearing clinic flooring",
+   face="A broad, open, square face with full cheeks and warm grey-blue eyes that crease easily at the corners, a short straight nose and a wide mouth. His eyebrows are thick and still dark against the white hair, sitting high and relaxed — his one marker. The jaw is a little heavier on the right",
    hair="Bald across the crown and top, close-cropped white hair at the sides and back, no beard, clean-shaven, the same in every panel",
    body="A white British man. Tall and a little stooped at the shoulders, long-boned, broad hands with long fingers, seventy-one years old",
    ward="A pale blue cotton shirt with the cuffs turned back once, dark navy wool trousers and polished dark brown leather lace-up shoes",
@@ -42,6 +42,8 @@ CAST = {
 
 def build(k, c):
     sheet = S("AVATAR-SHEET")
+    if c.get("pro"):                          # §19B face register (correction 2026-09-26)
+        c = dict(c, face=c["face"] + ". " + S("APPROACH-PRO").rstrip("."))
     first, rest = sheet.split(". ", 1)          # SHEET-GRID pasted after the opening sheet sentence
     sheet = first + ". " + S("SHEET-GRID") + " " + rest
     for a, b in [("[WOMAN/MAN]", c["sex"]), ("[FACE — architecture in three or four plain sentences, the one marker, the asymmetries]", c["face"]),
@@ -51,7 +53,10 @@ def build(k, c):
         sheet = sheet.replace(a, b)
     assert "[" not in sheet, k
     skin = "IN THE FACE CLOSE-UP: " + S("SKIN-T").replace("[AGE-FEATURES]", c["age"])
-    neg = ", ".join([S("NEG-SHEET"), S("NEG-GRID"), S("NEG-FILE"), S("NEG-DEFAULT-FACE")])
+    ndf = S("NEG-DEFAULT-FACE")
+    if c.get("pro"):                          # §19B: drop the last two clauses
+        ndf = ndf.replace(", no soft agreeable features throughout, not a face that could advertise anything", "")
+    neg = ", ".join([S("NEG-SHEET"), S("NEG-GRID"), S("NEG-FILE"), ndf])
     return "\n\n".join([S("CAM-LOCK"), sheet, skin, S("CAP-SHARP"), S("CAP-FILE"), "AVOID: " + neg + "."])
 
 out = {}

@@ -206,9 +206,9 @@ Recurring subjects (≥ 2 beats on the inventory): **C1 Maureen** (HK1 bottom, P
 | C1-MAUREEN | `fb41402a-b678-4282-921b-05bdd2ce71ef` | `cast/C1-MAUREEN_v1.jpg` | **USE** — identity holds, both knees bare, white curls in all five. **Crooked little finger not legible** (hands curled) |
 | C2-DEAN | `f81be8b9-02ea-4513-bcb9-e26525e6fea6` | `cast/C2-DEAN_v1.jpg` | **USE** — identity holds, knees bare, work boots. Cauliflower ear rendered mild, on his **right** ear (prompted left) |
 | C3-PAT | `f07388cb-baed-4824-9aa2-f609a99e3a3d` | `cast/C3-PAT_v1.jpg` | **USE** — identity holds, knees bare, ears stand out, grey showing through the chestnut |
-| C4-SURGEON | `ee5a7185-324a-4fdc-a329-727d650ceace` | `cast/C4-SURGEON_v1.jpg` | **USE** — identity holds, heavy dark brows, cuffs turned back, window left |
+| C4-SURGEON | `1ba54d8d-73b3-4f34-9ea3-55e4ba056236` (v2) | `cast/C4-SURGEON_v2.jpg` | **USE** — approachable per the §19B correction: relaxed open brow, soft eyes with laugh lines, mouth resting slightly up, no posed smile; identity holds, window left. *v1 `ee5a7185…` invalidated — read stern (correction 2026-09-26)* |
 
-All five: the bottom row came **~43/57 instead of 50/50** (a `NEG-GRID` miss, not a panel-check failure — no effect on the sheet as a reference). Back views came full length on all five. Prompts: `cast/<ID>.prompt.txt`, built from Appendix A by ID in `cast/build_sheets.py` (`CAM-LOCK` → `AVATAR-SHEET` with `SHEET-GRID` → `SKIN-T` → `CAP-SHARP` → `CAP-FILE` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILE` + `NEG-DEFAULT-FACE`), 9,148–9,286 chars each. Spend: 5 Sunburst jobs, 0 rerolls.
+All five: the bottom row came **~43/57 instead of 50/50** (a `NEG-GRID` miss, not a panel-check failure — no effect on the sheet as a reference). Back views came full length on all five. Prompts: `cast/<ID>.prompt.txt`, built from Appendix A by ID in `cast/build_sheets.py` (`CAM-LOCK` → `AVATAR-SHEET` with `SHEET-GRID` → `SKIN-T` → `CAP-SHARP` → `CAP-FILE` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILE` + `NEG-DEFAULT-FACE`), 9,148–9,286 chars each. Spend: 6 Sunburst jobs — 5 sheets, plus 1 surgeon regeneration on the user's correction.
 
 ### Identity strings — read off the renders (§7)
 
@@ -218,20 +218,22 @@ All five: the bottom row came **~43/57 instead of 50/50** (a `NEG-GRID` miss, no
 | C1 | white British woman, 74, short and heavyset; broad heavy face, soft jowls, hooded brown eyes, wide nose, age spots across the forehead; short tight pure-white curls; cerise-and-orange leaf-print blouse; plum skirt a hand above the knee; navy slip-ons; heavy bare knees and calves |
 | C2 | white British man, 58, barrel-chested and heavy; round broad face, small pale-blue eyes, wide nose, ruddy cheeks, heavy forehead creases; shaved head with grey stubble, grey stubble on the jaw; right ear thickened; charcoal T-shirt; navy cargo work shorts to just above the knee; grey socks; black work boots |
 | C3 | white British woman, 62, small and wiry; narrow face, high cheekbones, small pointed chin, green-hazel eyes, ears standing out; short tousled pixie crop, chestnut with grey coming through at the temples; oatmeal cardigan over a white T-shirt; khaki shorts to just above the knee; grey trainers; lean calves |
-| C4 | white British man, 71, tall, slightly stooped; broad square heavy-jawed face, heavy dark brows nearly meeting, grey-blue eyes, deep forehead lines; bald crown, close white sides; pale blue shirt, cuffs turned back; navy trousers, black belt; dark brown lace-ups |
+| C4 | white British man, 71, tall, slightly stooped; broad open square face with full cheeks, soft grey-blue eyes with laugh lines, thick dark-grey brows relaxed and high, mouth resting slightly up — warm, kind, attentive; bald crown, close white sides; pale blue shirt, cuffs turned back; navy trousers, black belt; dark brown lace-ups |
 
 ### §19A axis tables — within-build clearance (no roster entries exist yet in this repo; `intake-1` generated none)
 
 | Axis | N | C1 | C2 | C3 | C4 |
 |---|---|---|---|---|---|
-| Face | long, narrow, deep-set | broad, jowled, hooded | round, broad, small eyes | narrow, sharp, high cheekbones | square, heavy-jawed, prominent eyes |
+| Face | long, narrow, deep-set | broad, jowled, hooded | round, broad, small eyes | narrow, sharp, high cheekbones | broad, open, full-cheeked, soft eyes (approachable, §19B) |
 | Hair | grey, thinning + ginger-grey beard | cropped white curls | shaved, stubble | grown-out chestnut dye, grey roots | bald crown, white sides |
 | Age position | 63 (mid) | 74 (far edge) | 58 (young edge) | 62 (young side) | 71 (far side) |
 | Build | tall, wiry | short, heavyset | barrel-chested | small, wiry | tall, stooped |
 | Class / wardrobe | allotment / ex-railway | faded-flamboyant | trades | active walker | professional |
-| Marker | bent nose | crooked little finger (not legible) | thickened ear | ears stand out | heavy near-joined brows |
+| Marker | bent nose | crooked little finger (not legible) | thickened ear | ears stand out | thick dark brows, set high and relaxed |
 | Voice | Tyneside (below) | non-speaking | non-speaking | non-speaking | non-speaking |
 | Environment | allotment shed | terraced house, stairs | warehouse, van | park, grandchild | consulting room, lightbox |
+
+**Correction 2026-09-26 (user, §34):** medical professionals are always approachable — written into §19B and Appendix A `APPROACH-PRO`; only C4 affected, clearance unchanged.
 
 **Pairwise clearance (of 8; the voice axis counts only for N):** every pair clears **≥ 6** — lowest N–C2 6 (both near the band's young side) and N–C4 6 (both tall). Gate is 5. ✓
 
