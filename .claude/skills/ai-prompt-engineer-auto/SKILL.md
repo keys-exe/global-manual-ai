@@ -109,7 +109,7 @@ Per speaking character, in order. The master file's §22U table is the rule; thi
 | — | **Voice-only builds** (all B-roll, narrated, Mode 4/5, AI Drama) | Stop here. The master is the VO, or the Seedance `audios_list` ingredient |
 | 11 | Avatar | HeyGen `create_asset_upload` → PUT → `complete_asset_upload` → `create_photo_avatar`, one per look |
 | 12 | Split | Cut the master at sentence ends (word timestamps) into one segment per on-screen talking-head beat |
-| 13 | Render | Upload each segment; `create_video_from_avatar` with `engine: {type: "avatar_v"}`, `audioAssetId`, `9:16`, `1080p`, `motionPrompt` = the beat's gestures. Rejected → Avatar IV + `expressiveness: "high"` + `motionPrompt`, logged. Then QA and E11 trim as normal |
+| 13 | Render | Upload each segment; `create_video_from_avatar` with `engine: {type: "avatar_v"}`, `audioAssetId`, `9:16`, `1080p`, `motionPrompt` = the beat's gestures, always, and no `expressiveness` (`avatar_v` rejects it). `motionPrompt` rejected (no animation reference) → Avatar IV + `expressiveness: "high"` + `motionPrompt`, logged. Then QA and E11 trim as normal |
 
 ## 6. Film voice masters (§24I) — Mode 4, Mode 5, AI Drama
 
