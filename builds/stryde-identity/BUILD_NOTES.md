@@ -23,8 +23,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   4 takes, each split at the silences and E11-trimmed → 16 pieces, all verbatim, all on the board (`VO-T<n>-<part>`,
   review). The first round (separate requests) was deleted from board, repo and ElevenLabs history. Details: `vo/VO.md`.
 - **Trim redone on the user's correction** (hook endings clipped, inhales left) with `vo_trim.py`; T1–T3 bodies
-  have their last word cut off by ElevenLabs. **Next, step 10 (user):** pick the take (recommended **T4**: body 62.0s, clean ending). Each variant = HKn + body of that
-  same take. Then save `Identity-Narrator_master.mp3`, take word timestamps, set E6 durations on every B-roll row,
-  and start step 6 hooks one by one (HK1–HK3, split layout EG01).
+  had their last word cut off by ElevenLabs.
+- **§22U step 10 done: T4 locked by the user.** Three masters built (HKn + 0.25s + body, 66.4–66.6s), verbatim, on the
+  board (`VO-MASTER-HK1…3`, USE), word timestamps in `vo/master/HK<n>.words.json`. Media is git-ignored — the masters
+  live on the board and in ElevenLabs history `ZzBlBJ4fBT3haBAlh0Rp`.
+- **Next:** E6 — set every B-roll row's duration from the body word timestamps (span of its line + 0.5s, Kling 3–15s),
+  then step 6: the hooks one by one (HK1 first, split layout EG01), as prompts + generations on the board.
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),
   F7 (`package_closed.jpg` missing), F8 (AVATAR-SHEET doc inconsistency), F10 (watermark omit).

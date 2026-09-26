@@ -40,3 +40,17 @@ Each variant = HKn + BODY of the **same take**.
 
 **Step 10 (Manual): the user listens and picks the take** (board → Voice, cards `VO-T<n>-<part>`). Accent and
 realism are the ear's call (unverified by instrument).
+
+## Locked master (user, 2026-09-26): T4
+
+Board cards `VO-T4-*` set to USE. Three variant masters (§30H — one finished video per hook), each = hook + 0.25s + body,
+all from T4 so the voice is one recording end to end:
+
+| Master | Length | Words | Gaps > 0.4s | Ending |
+|---|---|---|---|---|
+| `master/Identity-Narrator_master_HK1.mp3` | 66.36s | verbatim | none | −56 dB |
+| `master/Identity-Narrator_master_HK2.mp3` | 66.61s | verbatim | none | −56 dB |
+| `master/Identity-Narrator_master_HK3.mp3` | 66.60s | verbatim | none | −56 dB |
+
+Word timestamps (medium.en) per master: `master/HK<n>.words.json` — the E6 source for every B-roll duration.
+The 0.25s seam matches the in-body phrase-end pause (0.28s incl. fades). Board cards `VO-MASTER-HK1…3` (USE).
