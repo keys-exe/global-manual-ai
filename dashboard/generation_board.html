@@ -248,6 +248,11 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .ptext.none{color:var(--faint);font-family:var(--body);font-style:italic}
 .media small{font-size:10.5px;opacity:.8}
 @media (max-width:560px){.shot-head{flex-wrap:wrap}.shot-head .right{flex-direction:row;flex-wrap:wrap;width:100%;justify-content:space-between;align-items:flex-end}.shot-head .right .kv.end{align-items:flex-start}}
+.mg-head{gap:10px 24px;align-items:flex-end;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.mg-head h2.act{font-size:clamp(24px,3vw,30px);text-transform:uppercase;letter-spacing:.02em}
+.boxes{display:flex;flex-direction:column;gap:14px}
+.boxes.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));align-items:start}
+.mc-tools .btn{white-space:nowrap;font-size:12px}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
 .box-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:14px 14px 0}
 .box-head .sn{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;background:var(--ink);color:var(--surface);flex:none}
@@ -484,6 +489,7 @@ function openDrawer(g,isNew){
       <div class="row">
         <label class="f">Beat ID<input id="f-beat" value="${esc(g.beat)}" placeholder="BR01" ${ro?"disabled":""}></label>
         <label class="f">Title<input id="f-title" value="${esc(g.title)}" placeholder="Knee strap close-up" ${ro?"disabled":""}></label></div>
+      <label class="f">Act (hooks: Hook 1 · body: Act 1, Act 2…)<input id="f-act" value="${esc(g.act)}" placeholder="Act 1" ${ro?"disabled":""}></label>
       <div class="row">
         <label class="f">Stage<select id="f-stage" ${ro?"disabled":""}>${STAGES.map(s=>`<option value="${s.key}"${s.key===g.stage?" selected":""}>${s.name}</option>`).join("")}</select></label>
         <label class="f">Status<select id="f-status" ${ro?"disabled":""}>${STATUSES.map(s=>`<option value="${s.key}"${s.key===(g.status||"planned")?" selected":""}>${s.label}</option>`).join("")}</select></label></div>
@@ -537,7 +543,7 @@ function readForm(){
   const v=id=>$("#f-"+id).value.trim();
   const n=id=>{const x=v(id);return x===""?null:Number(x)};
   const prompt=$("#f-prompt").value;
-  return {beat:v("beat"),title:v("title"),stage:v("stage"),status:v("status"),fault:v("fault"),model:v("model"),kind:v("kind"),
+  return {beat:v("beat"),title:v("title"),act:v("act"),stage:v("stage"),status:v("status"),fault:v("fault"),model:v("model"),kind:v("kind"),
     duration:n("duration"),credits:n("credits"),regens:n("regens")||0,url:v("url"),prompt,chars:prompt.length,line:v("line"),
     imageModel:v("imageModel"),imagePrompt:$("#f-imagePrompt").value,updatedAt:Date.now()};
 }
@@ -597,23 +603,42 @@ function stepState(g,k){
 function nextStep(g){return flow(g).find(k=>stepState(g,k)!=="ok")||null}
 function needsMe(g){return nextStep(g)!==null}
 
+// Manual run is grouped by act: setup stages, each hook, each act, then the edit.
+function actNum(v){const m=String(v||"").match(/\d+/);return m?Number(m[0]):null}
+function groupOf(g){
+  if(g.stage==="hooks"){const n=actNum(g.act)||actNum(g.beat)||0;return {key:"hook-"+n,label:n?"Hook "+n:"Hook",kicker:"Hook",order:300+n}}
+  if(g.stage==="broll"||g.stage==="talking"){
+    const n=actNum(g.act);
+    return n?{key:"act-"+n,label:"Act "+n,kicker:"Act",order:400+n}:{key:"act-none",label:"Act not set yet",kicker:"Body",order:990,note:"These beats get their act at step 5, the act map."};
+  }
+  const st=STAGES.find(x=>x.key===g.stage)||STAGES[0];
+  const order={absorption:100,cast:110,locations:120,voice:130,edit:999}[st.key]||150;
+  return {key:"stage-"+st.key,label:st.name,kicker:"Setup",order};
+}
+function groups(gens){
+  const m=new Map();
+  for(const g of gens){const k=groupOf(g);if(!m.has(k.key)) m.set(k.key,{...k,items:[]});m.get(k.key).items.push(g)}
+  return [...m.values()].sort((a,b)=>a.order-b.order).map(x=>(x.items.sort(beatSort),x));
+}
 function renderManual(gens){
-  const stages=STAGES.filter(s=>gens.some(g=>g.stage===s.key));
+  const gs=groups(gens);
+  if(state.mstage!=="all"&&!gs.some(x=>x.key===state.mstage)) state.mstage="all";
   const open=gens.filter(needsMe).length;
-  $("#mbar").innerHTML=`<button class="chip" type="button" data-ms="all" aria-pressed="${state.mstage==="all"}">All stages <span class="cnt">${gens.length}</span></button>`+
-    stages.map(s=>{const sg=gens.filter(g=>g.stage===s.key);return `<button class="chip" type="button" data-ms="${s.key}" aria-pressed="${state.mstage===s.key}">${s.name} <span class="cnt">${sg.filter(g=>!needsMe(g)).length}/${sg.length}</span></button>`}).join("")+
+  $("#mbar").innerHTML=`<button class="chip" type="button" data-ms="all" aria-pressed="${state.mstage==="all"}">Everything <span class="cnt">${gens.length}</span></button>`+
+    gs.map(x=>`<button class="chip" type="button" data-ms="${x.key}" aria-pressed="${state.mstage===x.key}">${esc(x.label)} <span class="cnt">${x.items.filter(g=>!needsMe(g)).length}/${x.items.length}</span></button>`).join("")+
     `<span class="grow"></span><button class="chip" type="button" data-needs="1" aria-pressed="${state.mneeds}">Only what needs me <span class="cnt">${open}</span></button>`;
-  const html=STAGES.map((s,i)=>{
-    if(state.mstage!=="all"&&state.mstage!==s.key) return "";
-    const all=gens.filter(g=>g.stage===s.key).sort(beatSort);
-    if(!all.length) return "";
-    const steps=["image","video","file"].filter(k=>all.some(g=>flow(g).includes(k)));
-    const done=all.filter(g=>!needsMe(g)).length;
-    return `<section class="mgroup" id="m-${s.key}">
-      <div class="mg-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
-        <div class="kv"><span class="lbl">Stage</span><h2>${s.name}</h2></div>
-        <div class="kv"><span class="lbl">Done</span><span class="mono">${done}/${all.length}</span></div></div>
-      ${steps.map((k,j)=>stepBox(s,k,j+1,all)).join("")}</section>`;
+  const html=gs.map(x=>{
+    if(state.mstage!=="all"&&state.mstage!==x.key) return "";
+    const steps=["image","video","file"].filter(k=>x.items.some(g=>flow(g).includes(k)));
+    const done=x.items.filter(g=>!needsMe(g)).length;
+    const beats=x.items.map(g=>g.beat).filter(Boolean);
+    return `<section class="mgroup" id="m-${x.key}">
+      <div class="mg-head">
+        <div class="kv"><span class="lbl">${esc(x.kicker)}</span><h2 class="act">${esc(x.label)}</h2></div>
+        <div class="kv"><span class="lbl">Beats</span><span class="mono">${esc(beats.length>4?beats[0]+" – "+beats[beats.length-1]:beats.join(", "))}</span></div>
+        <div class="kv"><span class="lbl">Done</span><span class="mono">${done}/${x.items.length}</span></div></div>
+      ${x.note?`<p class="note" style="margin:0">${esc(x.note)}</p>`:""}
+      <div class="boxes${x.items.length<=2&&steps.length>1?" pair":""}">${steps.map(k=>stepBox(x,k,x.items)).join("")}</div></section>`;
   }).join("");
   const fi=document.querySelector("[data-faultform] textarea"), draft=fi?fi.value:"", had=fi&&document.activeElement===fi;
   $("#mlist").innerHTML=html||`<div class="empty">No generations in this build yet.</div>`;
@@ -621,7 +646,7 @@ function renderManual(gens){
 }
 
 // One box per step: every image of the stage together, every video together.
-function stepBox(stage,k,n,all){
+function stepBox(grp,k,all){
   const d=STEP[k], items=all.filter(g=>flow(g).includes(k));
   const list=state.mneeds?items.filter(g=>stepState(g,k)!=="ok"):items;
   const ok=items.filter(g=>stepState(g,k)==="ok").length;
@@ -632,15 +657,15 @@ function stepBox(stage,k,n,all){
   const note=k==="video"?"Each video unlocks when its image is confirmed.":k==="image"&&items.some(g=>flow(g).includes("video"))?"Confirm an image to unlock its video.":"";
   return `<div class="box">
     <div class="box-head">
-      <span class="sn">${n}</span>
-      <div class="kv"><span class="lbl">Step ${n}</span><h3>${plural}</h3></div>
+      <span class="sn">${k==="video"?2:1}</span>
+      <div class="kv"><span class="lbl">${esc(grp.label)} · ${k==="video"?"step 2":"step 1"}</span><h3>${plural}</h3></div>
       <div class="box-stats">
         <div class="kv"><span class="lbl">Confirmed</span><span class="mono" style="color:var(--use)">${ok}/${items.length}</span></div>
         <div class="kv"><span class="lbl">To check</span><span class="mono" style="color:var(--review)">${check}</span></div>
         <div class="kv"><span class="lbl">Fixing</span><span class="mono" style="color:var(--regen)">${fix}</span></div></div>
       <span class="grow"></span>
-      <button class="btn small" type="button" data-copyall="${stage.key}" data-field="${d.prompt}">Copy all prompts</button>
-      <button class="btn small primary" type="button" data-zip="${stage.key}" data-step="${k}" ${files?"":"disabled"}>⬇ Download all ${plural.toLowerCase()}</button>
+      <button class="btn small" type="button" data-copyall="${grp.key}" data-field="${d.prompt}">Copy all prompts</button>
+      <button class="btn small primary" type="button" data-zip="${grp.key}" data-step="${k}" ${files?"":"disabled"}>⬇ Download all ${plural.toLowerCase()}</button>
     </div>
     ${note?`<p class="note box-note">${note}</p>`:""}
     <div class="bar" style="margin:0 14px"><i style="width:${items.length?ok/items.length*100:0}%;background:var(--use)"></i></div>
@@ -695,6 +720,7 @@ function mediaCard(g,k){
     <div class="mc-tools">
       <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${prompt?"":"disabled"}>Copy prompt</button>
       <button class="btn small" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>⬇ Download</button>
+      <button class="btn small" type="button" data-open="${esc(g.id)}" style="grid-column:1/-1">Edit details</button>
     </div></article>`;
 }
 
@@ -716,12 +742,13 @@ async function downloadOne(g,k){
   const id=g[STEP[k].asset]; if(!id) return;
   try{await saveFile(fileName(g,k),await fetchAsset(id),"/_blob/"+id)}catch(e){toast("Couldn't fetch the file. Try again.")}
 }
-async function downloadZip(stageKey,step){
+async function downloadZip(groupKey,step){
   if(!window.JSZip){toast("Zip isn't available right now");return}
-  const b=currentBuild(), gens=buildGens().filter(g=>g.stage===stageKey&&flow(g).includes(step)).sort(beatSort);
-  const stage=STAGES.find(s=>s.key===stageKey), d=STEP[step];
-  toast("Packing "+stage.name+" "+d.label.toLowerCase()+"s…");
-  const zip=new JSZip(); let md=`# ${b.name||b.id} · ${stage.name} · ${d.label}s\n\n`;
+  const b=currentBuild(), gens=buildGens().filter(g=>groupOf(g).key===groupKey&&flow(g).includes(step)).sort(beatSort);
+  if(!gens.length) return;
+  const label=groupOf(gens[0]).label, d=STEP[step];
+  toast("Packing "+label+" "+d.label.toLowerCase()+"s…");
+  const zip=new JSZip(); let md=`# ${b.name||b.id} · ${label} · ${d.label}s\n\n`;
   for(const g of gens){
     md+=`## ${g.beat} · ${g.title||""}\n`+(g.line?`> ${g.line}\n\n`:"\n");
     if(g[d.prompt]) md+=`Model: ${g[d.model]||d.defModel} · ${g[d.prompt].length} chars\n\n\`\`\`\n${g[d.prompt]}\n\`\`\`\n\n`;
@@ -729,7 +756,7 @@ async function downloadZip(stageKey,step){
   }
   zip.file(`prompts.md`,md);
   const blob=await zip.generateAsync({type:"blob"});
-  await saveFile(`${b.id}_${stage.folder}_${d.label.toLowerCase()}s.zip`,blob,null);
+  await saveFile(`${b.id}_${label.replace(/\s+/g,"-")}_${d.label.toLowerCase()}s.zip`,blob,null);
 }
 async function uploadTo(gid,k,file){
   const g=state.gens.find(x=>x.id===gid); if(!g||!file) return;
@@ -780,7 +807,7 @@ document.addEventListener("click",e=>{
   else if(ds.needs){state.mneeds=!state.mneeds;render()}
   else if(ds.copy&&g){copyText(g[ds.field]||"",(g.beat||"")+" prompt")}
   else if(ds.copyall){
-    const list=buildGens().filter(x=>x.stage===ds.copyall&&x[ds.field]).sort(beatSort);
+    const list=buildGens().filter(x=>groupOf(x).key===ds.copyall&&x[ds.field]).sort(beatSort);
     copyText(list.map(x=>`${x.beat}\n${x[ds.field]}`).join("\n\n"),list.length+" prompts");
   }
   else if(ds.zip){downloadZip(ds.zip,ds.step)}
