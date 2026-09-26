@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.29
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.30
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -69,7 +69,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.29"
+VERSION = "7.49.30"
 
 # --------------------------------------------------------------- slots
 
@@ -492,6 +492,22 @@ PAD_BACK_SHOT = (
 "with no markings, no texture pattern and no second colour -- the two peaks rising along its top edge, a "
 "chrome slide at each end, the band running away from the slides behind it. No wordmark is visible from "
 "this side.")
+
+# --- anatomy look samples (V7.49.30) -----------------------------------------
+# One sample per Standards density (Appendix A ANAT-A..D) on this knee, all in the
+# ANAT-HOT state with the glow placed at [SITE]. For choosing a look -- NOT locked,
+# never attached as a reference (anatomy beats carry no product photo).
+ANATOMY_SAMPLES = {
+    "ANAT-A": {"file": "stryde_refs/anatomy_samples/anat_A.jpg", "job_id": "e2f2335f-d480-4998-a3e9-2f3eb25fba82",
+               "reads": "full stack; glow broad, spilling onto the tibia -- the point reads least sharply"},
+    "ANAT-B": {"file": "stryde_refs/anatomy_samples/anat_B.jpg", "job_id": "5dd74ef4-c1ad-4e88-a5cc-68eb16358abb",
+               "reads": "ghost limb; a tight bright spot exactly on the tendon below the patella -- the clearest point"},
+    "ANAT-C": {"file": "stryde_refs/anatomy_samples/anat_C.jpg", "job_id": "a85ccc9c-fe8a-4420-a80c-c6c062e49973",
+               "reads": "silhouette; the whole tendon lit below the patella, moody, instant read"},
+    "ANAT-D": {"file": "stryde_refs/anatomy_samples/anat_D.jpg", "job_id": "55f4ea05-5303-4cb8-8064-70223cbddc23",
+               "reads": "physical model on a kitchen worktop, thumb on the tendon below the patella; phone capture"},
+}
+ANATOMY_LOOK = None   # chosen by the user per build; recorded on the Build Sheet
 
 # --- the inner pad (V7.49.23) -----------------------------------------------
 # Read off back.webp. Used on held beats and any view of the inside of the shell.
@@ -1830,6 +1846,9 @@ def verify(verbose=False):
         for f in files:
             if not os.path.exists(os.path.join(here, f)):
                 fails.append("REFS_USE[%s] names a file that is not in the repo: %s" % (k, f))
+    for k, v in ANATOMY_SAMPLES.items():
+        if not os.path.exists(os.path.join(here, v["file"])):
+            fails.append("anatomy sample %s missing" % k)
     if not os.path.exists(os.path.join(here, HELD_EXAMPLE)):
         fails.append("HELD_EXAMPLE missing")
     used = {f for files in REFS_USE.values() for f in files}
