@@ -37,7 +37,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   cut with ffmpeg: top band from his chin, bottom band centred.
 - **HK1-T v5 (user: "strap too big"):** the two-hand grip had spread his hands and the shell grew to ~9–10 thumb-widths;
   v5 uses the open-palm grip (HELD_GRIPS), shell barely wider than his palm. Band from y=300. Preview `hooks/HK1_split_preview_v2.png`.
-  I2V updated to the palm grip (2,458 chars). **Waiting on the user to confirm both images.**
+  I2V updated to the palm grip (2,458 chars).
+- **HK1-T v6 (user: v5 "now too small"):** size anchored at ~16 cm (a hand's length, wrist crease to fingertips), 2
+  variants: v6a USE, v6b REGENERATE (webbing band + loose rings). Band from y=470. `hooks/HK1_split_preview_v3.png`.
+  **Product Sheet flag:** `SIZE_HELD` (5–6 thumb-widths ≈ 11 cm) rendered toy-sized — proposed: a hand's length (~16 cm).
+  Waiting on the user to confirm the size and both images.
 - **Then:** E6 — set every B-roll row's duration from the body word timestamps (span of its line + 0.5s, Kling 3–15s),
   then step 6: the hooks one by one (HK1 first, split layout EG01), as prompts + generations on the board.
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),
