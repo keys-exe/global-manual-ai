@@ -275,6 +275,9 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .v-empty{border:1px dashed rgba(255,255,255,.3);border-radius:12px;width:100%;height:100%;display:grid;place-items:center;color:rgba(255,255,255,.7);padding:16px;text-align:center}
 .v-nav{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font-size:24px;line-height:1;flex:none}
 @media (max-width:520px){.v-media{max-width:calc(100% - 80px)}.v-nav{width:36px;height:36px}}
+.vload{position:absolute;left:8px;right:8px;bottom:8px;background:rgba(0,0,0,.7);color:#fff;font-size:11.5px;border-radius:6px;padding:5px 8px;text-align:center;z-index:2}
+.v-media{position:relative}
+.v-sound{position:absolute;top:10px;right:10px;z-index:2}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
 .box-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:14px 14px 0}
 .box-head .sn{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;background:var(--ink);color:var(--surface);flex:none}
@@ -483,15 +486,46 @@ const PART=15*1024*1024;
 function partsOf(g,k){const p=g[STEP[k].parts];return Array.isArray(p)&&p.length>1?p:null}
 function srcAttr(g,k){const p=partsOf(g,k);return p?`data-parts="${esc(p.join(","))}" data-ptype="${esc(g[STEP[k].type]||"")}"`:`src="/_blob/${esc(g[STEP[k].asset])}"`}
 const joined={};
-function joinParts(ids,type){
+function joinParts(ids,type,onProgress){
   const key=ids.join(",");
-  if(!joined[key]) joined[key]=Promise.all(ids.map(fetchAsset)).then(bs=>URL.createObjectURL(new Blob(bs,{type:type||bs[0].type||"application/octet-stream"})));
+  if(!joined[key]){
+    let done=0;
+    joined[key]=Promise.all(ids.map(id=>fetchAsset(id).then(b=>{done++;onProgress&&onProgress(done,ids.length);return b})))
+      .then(bs=>URL.createObjectURL(new Blob(bs,{type:type||bs[0].type||"application/octet-stream"})));
+  }
   return joined[key];
 }
+// Card videos play muted while on screen; the viewer plays with controls.
+const vis=("IntersectionObserver" in window)?new IntersectionObserver(es=>es.forEach(e=>{
+  const v=e.target; if(e.isIntersecting){loadVideo(v)} else if(!v.paused) v.pause();
+}),{rootMargin:"200px"}):null;
+function tryPlay(v){v.muted=v.muted||!v.dataset.sound;const p=v.play();if(p&&p.catch) p.catch(()=>{})}
+function loadVideo(v){
+  if(v.dataset.parts&&!v.getAttribute("src")){
+    const wrap=v.parentElement, note=document.createElement("span");
+    note.className="vload";note.textContent="Loading full quality…";wrap&&wrap.appendChild(note);
+    joinParts(v.dataset.parts.split(","),v.dataset.ptype,(d,n)=>{note.textContent=`Loading full quality… ${d}/${n}`})
+      .then(u=>{v.src=u;note.remove();tryPlay(v)})
+      .catch(()=>{note.textContent="Couldn't load. Use Download."});
+  } else tryPlay(v);
+}
 function hydrate(root){
-  (root||document).querySelectorAll("[data-parts]:not([src])").forEach(el=>{
+  const r=root||document;
+  r.querySelectorAll("img[data-parts]:not([src])").forEach(el=>{
     joinParts(el.dataset.parts.split(","),el.dataset.ptype).then(u=>{el.src=u}).catch(()=>{});
   });
+  r.querySelectorAll("video").forEach(v=>{
+    if(v.dataset.bound) return; v.dataset.bound="1";
+    v.addEventListener("error",()=>{const w=v.parentElement;if(w&&!w.querySelector(".vload")){const n=document.createElement("span");n.className="vload";n.textContent="This video can't play here. Use Download.";w.appendChild(n)}diag("videoError",v.dataset.parts?"joined":"direct")});
+    v.addEventListener("playing",()=>diag("videoPlaying",v.dataset.parts?"joined":"direct"),{once:true});
+    if(v.closest(".viewer")) loadVideo(v); else if(vis) vis.observe(v); else loadVideo(v);
+  });
+}
+// Records once per page load whether videos play here, so problems can be checked without guessing.
+const diagSeen={};
+function diag(what,kind){
+  const k=what+":"+kind; if(diagSeen[k]||!state.db) return; diagSeen[k]=1;
+  state.db.doc("diag/video-"+kind).set({last:what,kind,at:Date.now(),ua:navigator.userAgent.slice(0,160)}).catch(()=>{});
 }
 async function fetchMedia(g,k){
   const p=partsOf(g,k);
@@ -723,7 +757,7 @@ function mediaCard(g,k){
   const busy=state.busy[g.id+":"+k];
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
   const imgBehind=locked&&g.imageAsset?`<img class="ghost" ${srcAttr(g,"image")} alt="">`:"";
-  const media=asset?(isVid?`<video ${srcAttr(g,k)} muted playsinline preload="metadata"></video><span class="play" aria-hidden="true">▶</span>`:type.startsWith("image/")||k==="image"?`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
+  const media=asset?(isVid?`<video ${srcAttr(g,k)} muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">⤢</span>`:type.startsWith("image/")||k==="image"?`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
     locked?`${imgBehind}<span class="lockmsg">🔒 Confirm the image first</span>`:
     `<span>${s==="bad"?"Regenerating…":prompt?"Waiting for render":"Waiting for prompt"}${ro?"":`<br><small>drop a file here to add it</small>`}</span>`;
   const limit=/kling/i.test(model)&&k!=="image"?2500:null;
@@ -855,7 +889,7 @@ function renderViewer(){
   const k=v.step, d=STEP[k], asset=g[d.asset], type=g[d.type]||"";
   const list=viewerList(k), i=list.findIndex(x=>x.id===g.id);
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
-  const media=asset?(isVid?`<video ${srcAttr(g,k)} controls autoplay loop playsinline></video>`:`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`):
+  const media=asset?(isVid?`<video ${srcAttr(g,k)} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`):
     `<div class="v-empty">${k==="video"&&stepState(g,"image")!=="ok"?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
   const s=stepState(g,k);
   const chip=s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
@@ -883,9 +917,10 @@ function renderViewer(){
 /* events */
 let pickTarget=null;
 document.addEventListener("click",e=>{
-  const t=e.target.closest("[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
+  if(ds.sound){const v=document.querySelector(".viewer video");if(v){v.muted=false;v.dataset.sound="1";tryPlay(v)}t.remove();return}
   if(ds.viewm){openViewer(ds.viewm,ds.step)}
   else if(ds.vnav){moveViewer(Number(ds.vnav))}
   else if(ds.vstep){state.viewer.step=ds.vstep;renderViewer()}
