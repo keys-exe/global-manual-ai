@@ -74,3 +74,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   fast pull-back ~2s blurs the wordmark briefly. Split preview `hooks/HK1_split_fl1.mp4` (bottom band tracks upward, so
   the strap leaves the band in the last half). New set: HK1-T v11 (T2I) + v12 (reframe edit) all REGENERATE (wrong
   product / face showing) — budget spent, user decides; HK1-B v3 not ECU, **v4a/v4b ECU USE** (edit of v3b).
+- **User picks (18:45):** HK1-B = image v2 + clip v2 (set current, `use`); HK1-T = image v24 (new set v12b, confirmed).
+  HK1-T clip from v24: first-last on `kling-video-v3_0`, v24 → edit of v24 with the pad facing camera
+  (`hooks/HK1-T.i2v.v24.json`), on the board as video v5, To check. Merged the default branch (Manual: the user checks
+  every generation — no agent verdicts or regenerations in Manual; board template already live).
