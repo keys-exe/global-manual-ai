@@ -455,7 +455,8 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .abs-dl div{background:var(--sunk);border-radius:8px;padding:8px 10px;min-width:0}
 .abs-dl dt{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .abs-dl dd{margin:2px 0 0;font-family:var(--display);font-weight:700;font-size:14px;overflow-wrap:anywhere}
-.abs-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.abs-foot{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.abs-foot .grow{flex:1}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
 .box-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:14px 14px 0}
 .box-head .sn{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;background:var(--ink);color:var(--surface);flex:none}
@@ -645,11 +646,12 @@ function renderInner(){
 
   $("#pipe").innerHTML=STAGES.map((s,i)=>{
     const sg=gens.filter(g=>g.stage===s.key), u=sg.filter(g=>g.status==="use").length;
-    const done=sg.length&&u===sg.length;
+    const absDoc=s.key==="absorption"&&!sg.length?planDoc("absorption"):null;
+    const done=(sg.length&&u===sg.length)||(absDoc&&absDone());
     return `<button class="step${done?" done":""}" type="button" data-jump="${s.key}">
       <span class="n">${String(i+1).padStart(2,"0")}${done?" ✓":""}</span><span class="t">${s.name}</span>
-      <div class="bar">${sg.length?`<i style="width:${u/sg.length*100}%;background:var(--use)"></i>`:""}</div>
-      <span class="c">${sg.length?`${u}/${sg.length} USE`:s.key==="absorption"&&planDoc("absorption")?"Written · in Plan":"—"}</span></button>`}).join("");
+      <div class="bar">${sg.length?`<i style="width:${u/sg.length*100}%;background:var(--use)"></i>`:absDoc?`<i style="width:100%;background:var(${absDone()?"--use":"--review"})"></i>`:""}</div>
+      <span class="c">${sg.length?`${u}/${sg.length} USE`:absDoc?(absDone()?"Confirmed · in Plan":"Check it · in Plan"):"—"}</span></button>`}).join("");
 
   const counts=Object.fromEntries(STATUSES.map(s=>[s.key,by(s.key)]));
   $("#filters").innerHTML=`<button class="chip" type="button" data-f="all" aria-pressed="${state.filter==="all"}">All <span class="cnt">${total}</span></button>`+
@@ -670,7 +672,7 @@ function renderInner(){
       <div class="w-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
         <div class="w-title"><h2>${s.name}</h2><span class="sub">${s.sub}</span></div>
         <div class="w-actions">${link}</div></div>
-      <div class="bar w-bar">${all.length?`<i style="width:${u/all.length*100}%;background:var(--use)"></i>`:""}</div>
+      <div class="bar w-bar">${all.length?`<i style="width:${u/all.length*100}%;background:var(--use)"></i>`:s.key==="absorption"&&planDoc("absorption")?`<i style="width:100%;background:var(${absDone()?"--use":"--review"})"></i>`:""}</div>
       <div class="w-body">${body}</div></section>`;
   }).join("");
   const bal=b&&b.balances||{};
@@ -1239,6 +1241,12 @@ function docStats(d){
   return [[(d.sections||[]).length,"sections"]];
 }
 function planDoc(id){const b=currentBuild();return state.docs.find(d=>d.id===id&&(!d.build||!b||d.build===b.id))||null}
+// Absorption is done when the sheet is confirmed, or once the build has moved on to step 5 (the act map exists).
+function absDone(){const d=planDoc("absorption");return !!d&&(!!d.confirmed||!!planDoc("actmap"))}
+async function confirmAbsorption(){
+  const d=planDoc("absorption"); if(!d||!state.db) return;
+  try{await state.db.doc("docs/"+d.id).update({confirmed:true,confirmedAt:Date.now()});toast("Absorption confirmed")}catch(e){handleWriteError(e)}
+}
 function absorptionSummary(){
   const d=planDoc("absorption");
   if(!d) return `<div class="empty">The Absorption Sheet appears here once step 1 is written. It is a document, not renders, so it lives in the <b>Plan</b> tab.</div>`;
@@ -1247,7 +1255,11 @@ function absorptionSummary(){
   const short=v=>{v=String(v||"");const cut=v.split(/[;·]/)[0].trim();return cut.length>34?cut.slice(0,32)+"…":cut};
   return `<div class="abs-sum">
     ${rows.length?`<dl class="abs-dl">${rows.map(r=>`<div><dt>${esc(r[0])}</dt><dd>${esc(short(r[1]))}</dd></div>`).join("")}</dl>`:""}
-    <div class="abs-foot"><span class="note">${(d.sections||[]).length} parts${d.updatedAt?" · updated "+esc(when(d.updatedAt)):""}</span>
+    <div class="abs-foot">
+      ${absDone()?`<span class="pill s-use">Confirmed</span>`:`<span class="pill s-review">Check it</span>`}
+      <span class="note">${(d.sections||[]).length} parts${d.updatedAt?" · updated "+esc(when(d.updatedAt)):""}</span>
+      <span class="grow"></span>
+      ${!absDone()&&!state.readOnly?`<button class="btn small ok" type="button" data-absok="1">${I.ok} Confirm</button>`:""}
       <button class="btn small primary" type="button" data-popen="absorption">Open in Plan →</button></div></div>`;
 }
 function renderPlan(gens){
@@ -1422,9 +1434,10 @@ function tocJump(i){
 /* events */
 let pickTarget=null;
 document.addEventListener("click",e=>{
-  const t=e.target.closest("[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
+  if(ds.absok){confirmAbsorption();return}
   if(ds.popen){state.view="plan";lsSet("gb.view","plan");state.pdoc=ds.popen;state.pactive=0;state.planSig=null;render();window.scrollTo({top:0});return}
   if(ds.pdoc){state.pdoc=ds.pdoc;state.pact="all";state.psubj="all";state.pactive=0;render();window.scrollTo({top:$("#planView").offsetTop-12});return}
   if(ds.pjump!==undefined){tocJump(Number(ds.pjump));return}
