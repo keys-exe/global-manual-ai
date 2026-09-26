@@ -27,7 +27,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **§22U step 10 done: T4 locked by the user**, then re-cut to the user's own reference edit (house cut:
   butt joins, words to −38 dB, no breaths). Masters HK1/HK2/HK3 = 57.85 / 57.91 / 58.08s, verbatim, on the board
   (`VO-MASTER-HK1…3`, review). Word timestamps in `vo/master/HK<n>.words.json`. Reference file: `vo/ref/`.
-- **Next:** E6 — set every B-roll row's duration from the body word timestamps (span of its line + 0.5s, Kling 3–15s),
+- **HK1 (step 6) started 2026-09-26 11:25:** E6 = 5s per band (HK1 speech 3.88s in the master). Start frames on
+  nano_banana_pro (connector reports nano_banana_2 — logged): **HK1-T v2 USE** (v1 REGENERATE: icons on the slide, fingers
+  over it), **HK1-B v1 USE**. Both on the board in review with their Kling I2V JSON (HK1-T 2,353 / HK1-B 2,497 chars,
+  `hooks/HK1-*.i2v.json`). Prompts built by `hooks/build_hk1.py` from Appendix A + the Product Sheet by ID.
+  **Waiting on the user to confirm both images** — then Kling 3.0 omni 5s, 9:16, 1080p per band, §22W, split assembly.
+- **Then:** E6 — set every B-roll row's duration from the body word timestamps (span of its line + 0.5s, Kling 3–15s),
   then step 6: the hooks one by one (HK1 first, split layout EG01), as prompts + generations on the board.
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),
   F7 (`package_closed.jpg` missing), F8 (AVATAR-SHEET doc inconsistency), F10 (watermark omit).
