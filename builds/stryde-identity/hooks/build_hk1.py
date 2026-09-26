@@ -82,10 +82,10 @@ SPLIT_I2V = "split: the action stays in the middle band of the frame, nothing th
 I2V = {}
 I2V["HK1-T"] = {
   "shot": "hk1_top_surgeon_presents_strap",
-  "subject": S("INHERIT-SUBJ") + " The strap is held up in both of his hands; his head stays where it is at the very top edge of the frame, leaning over the strap.",
+  "subject": S("INHERIT-SUBJ") + " The strap rests across his open right palm, his left fingertips at its end; his head stays at the very top edge of the frame.",
   "camera": {"movement": S("RIG-R3C"),
              "framing": "PROPPED as in the start frame, hands and strap in the middle of frame, his head staying at the top edge; " + SPLIT_I2V + "."},
-  "motion": "Already holding the strap out to the lens, he turns it once, slowly, a half turn so the plain matte-black pad faces the camera, the band swinging behind; as the clip ends he starts turning it back, not yet there. " + S("HOLD-C") + " " + P.HOLD_PC + " " + S("PHYS-MOTION-C"),
+  "motion": "Already holding the strap out on his palm, his left fingertips turn it over once, slowly, so the plain matte-black pad faces the camera, the band sliding over his hand; as the clip ends he starts turning it back, not yet there. " + S("HOLD-C") + " " + P.HOLD_PC + " " + S("PHYS-MOTION-C"),
   "lighting": S("INHERIT-CAP"),
   "style": "As in the start frame.",
   "negatives": NEGS(S("NEG-WARP-C"), "no shell bending, no peaks becoming uneven, no wordmark changing, no second strap, no hand gripping the band, no fingers across the wordmark, no head moving down into the middle of frame, no face turning to camera, no text on screen, no music"),
