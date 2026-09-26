@@ -244,3 +244,13 @@ The mechanism beats use the Standards' anatomical register (§12A-1): knee · qu
 | The conditions — bone on bone, worn cartilage, meniscus | **ANAT-B ghost limb** |
 
 Samples of all four looks on this knee (A full stack, B ghost limb, C silhouette, D physical model) are in `stryde_refs/anatomy_samples/` (`ANATOMY_SAMPLES`) — for choosing only, never attached as references.
+
+---
+
+## 18. The name on the product *(V7.49.32 — user: "sometimes the product shows no name")*
+
+A STRYDE with no wordmark reads as the cheap copy, which is defined by having none. So:
+
+1. **Prompts ask for it.** Every shot that shows the shell's front carries `WORDMARK-LOCK` (the grey lowercase stryde wordmark on the lower body, centred beneath the notch, always there, never a blank shell); every video adds `NEG-WORDMARK`. Back, side and rear shots never ask for it.
+2. **Every render is checked:** `python3 stryde_product_sheet.py --wordmark <frames>` — `--no-name` for back, side and rear. A front view with no name is **REGENERATE Q2**; a name on a back view is too. For video, run it on the contact-sheet frames (§22W).
+3. **How it checks:** a letter-shape detector (grey letters on smooth dark shell) and a match against the real wordmark cut from `front.webp`. Measured V7.49.32: all 11 reference frames with the name found, all 10 without it clear, and both frames with the name painted out failed as they should. The self-test re-runs six of these every time.
