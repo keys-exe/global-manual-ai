@@ -48,6 +48,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   back to the original short closed loop. **v8b current (USE)**, v8a alt. Preview `hooks/HK1_split_preview_v4.png`
   (band from y=470). The lightbox still sits only partly in the top band (v6a's framing kept, as asked) — offered a
   follow-up edit if the X-ray must be fully in frame. Waiting on the user to confirm HK1-T v8b and HK1-B v2.
+- **HK1-T v9/v10 (user: "re do the product", then "i need a new hk1-t"):** v8b's shell had twisted and its keepers read
+  chrome. An edit of v8b (`HK1-T.v9.edit.txt`) was interrupted by the user and is kept unjudged. New render v9
+  (`HK1-T.v9.t2i.txt`, v7 prompt + product locks): both REGENERATE (strap held upright, sideways wordmark, extra slides;
+  v9b wide with the face). v10 (`HK1-T.v10.t2i.txt`, leaner, "held HORIZONTALLY as in the second photo", subject ref
+  first): **v10a** strap horizontal and hand-sized, whole X-ray in the band (band from y=620; the raw frame has a seam
+  at ~y=600 that the band skips), thumb over the "e" of the wordmark; **v10b** product exact, lightbox low-left and partly
+  cut, strap smaller. Two-regeneration budget spent → the user picks. Recommended v10a + a small edit to lift the thumb.
+  Previews `hooks/HK1_split_preview_v10a.png` / `_v10b.png`.
 - **Then:** E6 — set every B-roll row's duration from the body word timestamps (span of its line + 0.5s, Kling 3–15s),
   then step 6: the hooks one by one (HK1 first, split layout EG01), as prompts + generations on the board.
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),
