@@ -1314,23 +1314,26 @@ function extFor(type,k){
 }
 function fileName(g,k){const b=currentBuild();return `${b?b.id:"build"}_${g.beat||g.id}_${k}.${extFor(g[STEP[k].type],k)}`}
 async function fetchAsset(id){const r=await fetch("/_blob/"+id);if(!r.ok) throw new Error("fetch "+r.status);return r.blob()}
-async function saveFile(name,blob,fallbackUrl){
+async function saveFile(name,blob){
   if(state.downloads){
     try{await state.downloads.save({filename:name,data:blob});toast("Saved "+name);return}
     catch(e){if(e&&e.code==="declined") return; if(e&&e.code==="rate_limited"){toast("A save is already open");return}}
   }
-  if(fallbackUrl){window.open(fallbackUrl,"_blank","noopener");toast("Opened in a new tab. Save it from there.")}
-  else toast("Downloads aren't available in this view");
+  const u=URL.createObjectURL(blob), a=document.createElement("a");
+  a.href=u;a.download=name;a.style.display="none";document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(u),60000);
 }
 async function downloadOne(g,k,vnum){
   const id=g[STEP[k].asset]; if(!id) return;
   const x=vnum?versionsOf(g,k).find(y=>y.v===vnum):null;
   if(x&&x.asset!==id){
     const name=fileName(g,k).replace(/(\.[a-z0-9]+)$/i,`_v${x.v}$1`);
-    try{await saveFile(name,await fetchVer(x),(x.parts||[]).length>1?null:"/_blob/"+x.asset)}catch(e){toast("Couldn't fetch the file. Try again.")}
+    toast("Preparing "+name+"…");
+    try{await saveFile(name,await fetchVer(x))}catch(e){toast("Couldn't fetch the file. Try again.")}
     return;
   }
-  try{await saveFile(fileName(g,k),await fetchMedia(g,k),partsOf(g,k)?null:"/_blob/"+id)}catch(e){toast("Couldn't fetch the file. Try again.")}
+  toast("Preparing "+fileName(g,k)+"…");
+  try{await saveFile(fileName(g,k),await fetchMedia(g,k))}catch(e){toast("Couldn't fetch the file. Try again.")}
 }
 async function downloadZip(groupKey,step){
   if(!window.JSZip){toast("Zip isn't available right now");return}
@@ -1346,7 +1349,7 @@ async function downloadZip(groupKey,step){
   }
   zip.file(`prompts.md`,md);
   const blob=await zip.generateAsync({type:"blob"});
-  await saveFile(`${b.id}_${label.replace(/\s+/g,"-")}_${d.label.toLowerCase()}s.zip`,blob,null);
+  await saveFile(`${b.id}_${label.replace(/\s+/g,"-")}_${d.label.toLowerCase()}s.zip`,blob);
 }
 async function uploadTo(gid,k,file){
   const g=state.gens.find(x=>x.id===gid); if(!g||!file) return;
