@@ -67,3 +67,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   v2 flipped upside down with an upright wordmark, v3 bent into a U-cup. Budget spent → user decides. Recommended:
   edit v10b so the pad already faces the camera (PAD_BACK_SHOT) + a small tilt, not a rotation. Prompts:
   `hooks/HK1-T.i2v.v1.json`, `.v2.json`, `HK1-T.i2v.json` (v3); `HK1-B.i2v.v1.json`, `HK1-B.i2v.json` (v2).
+- **HK1 redo (user: "the broll didnt follow the visual", then "re make the hook a new set"), 18:20–18:40:** first-last
+  frame clips on `kling-video-v3_0` (explicit `tail_image`; omni has none — logged deviation from the locked model).
+  **HK1-T fl1 USE:** first = v10b cropped at the chin, last = edit with the pad facing camera → one rigid turn to the pad.
+  **HK1-B fl1 USE:** first = ECU edit of v2, last = final frame of clip v2 (hand on the rail) → ECU eases back to the rail;
+  fast pull-back ~2s blurs the wordmark briefly. Split preview `hooks/HK1_split_fl1.mp4` (bottom band tracks upward, so
+  the strap leaves the band in the last half). New set: HK1-T v11 (T2I) + v12 (reframe edit) all REGENERATE (wrong
+  product / face showing) — budget spent, user decides; HK1-B v3 not ECU, **v4a/v4b ECU USE** (edit of v3b).
