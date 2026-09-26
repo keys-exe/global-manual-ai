@@ -591,8 +591,8 @@ const STEP = {
 };
 function stepState(g,k){
   const d=STEP[k], v=g[d.st];
-  if(k==="image"){return v==="confirmed"?"ok":v==="regenerate"?"bad":g[d.asset]?"review":"todo"}
-  return v==="use"?"ok":v==="regenerate"?"bad":g[d.asset]?"review":"todo";
+  if(k==="image"){return v==="confirmed"?"ok":v==="regenerate"?"bad":v==="generating"?"gen":g[d.asset]?"review":"todo"}
+  return v==="use"?"ok":v==="regenerate"?"bad":v==="generating"?"gen":g[d.asset]?"review":"todo";
 }
 function nextStep(g){return flow(g).find(k=>stepState(g,k)!=="ok")||null}
 function needsMe(g){return nextStep(g)!==null}
@@ -681,8 +681,8 @@ function mediaCard(g,k){
     `<span>${s==="bad"?"Regenerating…":prompt?"Waiting for render":"Waiting for prompt"}${ro?"":`<br><small>or drop a file here</small>`}</span>`;
   const limit=/kling/i.test(model)&&k!=="image"?2500:null;
   const fixing=state.faultOpen===g.id+":"+k;
-  const cls=locked?"locked":s==="ok"?"ok":s==="bad"?"bad":s==="review"?"now":"";
-  const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">${prompt?"Prompt ready":"Waiting"}</span>`;
+  const cls=locked?"locked":s==="ok"?"ok":s==="bad"||s==="gen"?"bad":s==="review"?"now":"";
+  const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="gen"?`<span class="pill s-generating">${g[d.fault]?"Regenerating":"Generating"}</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">${prompt?"Prompt ready":"Waiting"}</span>`;
   const size=g[d.size]?(k==="image"?esc(g[d.size]):`${esc(g[d.size])}s`):"—";
   const specs=[
     ["Connector",esc(g[d.conn]||d.defConn||"—")],
@@ -692,7 +692,7 @@ function mediaCard(g,k){
     ["Attempt",`${1+(Number(g[d.regens])||0)} of 3`],
     ["Generated",when(g[d.at])],
   ];
-  const canAct=!state.readOnly&&!locked;
+  const canAct=!state.readOnly&&!locked&&s!=="gen";
   return `<article class="mc ${cls}" id="mc-${esc(g.id)}-${k}">
     <div class="mc-head">
       <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}</span></div>
@@ -703,7 +703,7 @@ function mediaCard(g,k){
     <dl class="specs">${specs.map(([a,b,c])=>`<div${c?` class="${c}"`:""}><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
     <details class="pd"><summary><span class="lbl">Prompt</span><span class="pm">${num(prompt.length)} chars${limit?` / <span class="${prompt.length>limit?"over":""}">${num(limit)}</span>`:""}</span></summary>
       <pre class="ptext${prompt?"":" none"}">${prompt?esc(prompt):"Prompt not written yet."}</pre></details>
-    ${g[d.fault]&&s==="bad"?`<div class="fault"><span class="lbl" style="color:var(--regen)">To fix</span><div>${esc(g[d.fault])}</div></div>`:""}
+    ${g[d.fault]&&(s==="bad"||s==="gen")?`<div class="fault"><span class="lbl" style="color:var(--regen)">${s==="gen"?"Fixing now":"To fix"}</span><div>${esc(g[d.fault])}</div></div>`:""}
     ${fixing?`<form class="fixbox" data-faultform="${esc(g.id)}" data-step="${k}">
         <label class="lbl" for="fault-${esc(g.id)}-${k}">What should be fixed?</label>
         <textarea id="fault-${esc(g.id)}-${k}" rows="3" placeholder="e.g. The strap sits above the kneecap. Move it just below, on the soft spot." required></textarea>

@@ -1702,6 +1702,16 @@ Every generated beat is accompanied by its **full prompt text in a fenced block*
 | Generation calls and job ids | 6–8 | **Chat prose, never a widget** (§16B). Label above every call, manifest above every batch, job ids written back against their beats |
 | Reconciliation lines | 5, 8 | Chat prose, never a widget. One line, outside everything |
 
+### The Generation Board — every generation, one page per build *(pending amendment 2026-09-26)*
+
+Every generation of a build — image and video, both run modes — is logged on that build's **Generation Board**: one private web page per build, published from the repo template `dashboard/generation_board.html` and shared with the team build by build. The board's link is Build Sheet content, never Standards. The board is the review surface; generation calls and job ids stay in chat prose (§16B), explanation stays outside (§16).
+
+- **Grouped per act, in build order:** Cast, Locations, Voice, Hook 1…n, Act 1…n (from the step-5 act map, E4 `act`), Edit. Each group shows its **Images**, then its **Videos**. A video is locked until its image is confirmed.
+- **Every field is labelled:** beat, shot, script line (verbatim), status, connector, model — the model the connector reports when it differs from the one asked —, resolution or length, credits, attempt *n* of 3, time generated, the original link, and the prompt with its character count and a copy button.
+- **The agent writes the board as it works:** the card the turn the prompt is written (`ready`), the render uploaded the turn it lands (the connector's link kept as the original; the page cannot display a connector's CDN link), and its §22V / §22W verdict. Balances are read live from the connectors whenever the agent writes the board.
+- **The reviewer has two buttons, Confirm and Fix.** Fix takes a note of what should be fixed. The note is the reviewer's correction for that beat (§34): the agent regenerates with it, inside the two-regenerations-per-fault budget (§22V), and returns the card for review. A scheduled hourly check picks up Fix notes, so a teammate's Fix needs no chat message.
+- **Cards are added only by the agent:** no build picker, no "new card" control. In Automatic (E0) the agent confirms its own cards; the board stays the record.
+
 ### The four widget shapes
 
 | Shape | Structure |
@@ -7703,7 +7713,7 @@ Global rule: **two automatic rerolls per beat per failure class**, then the beat
 
 ## E3. Run ledger — the build's state file (`run_ledger.json`)
 
-One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t2i_status · t2i_qa (pass/fail per check) · i2v_prompt_path · i2v_job_id · i2v_status · i2v_qa · retries[{class, action, ts}] · attachments[{role, media_or_job_id}] · delivered (bool) · reissue_flag (standard §, reason)`. Plus build-level: `property{dwelling_id → {sheet_path, plate_job_id, plate_check}}` · `plates{location→job_id}` (every location row carrying a `dwelling_id` or an explicit null) · `subjects{S-id→job_id}` · `story_days{day→outfit_row}` · `capture_events{event_id→{story_day, location_id, beats[]}}` · `declared{side, mechanism_claim, format, mode, model_lock{beat_class → model, variant, quality}, look{sheet_path, look_string_hash}}` · `scenes{SC-id → {bible_path, master_job_id, contact_sheet_pass, transition_in, transition_out}}` · `version_built_against`. The ledger is the source for §34 global scans, reissue passes, resume-after-interruption, and the Open Decisions counts — **computed, never hand-maintained**.
+One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t2i_status · t2i_qa (pass/fail per check) · i2v_prompt_path · i2v_job_id · i2v_status · i2v_qa · retries[{class, action, ts}] · attachments[{role, media_or_job_id}] · delivered (bool) · reissue_flag (standard §, reason)`. Plus build-level: `property{dwelling_id → {sheet_path, plate_job_id, plate_check}}` · `plates{location→job_id}` (every location row carrying a `dwelling_id` or an explicit null) · `subjects{S-id→job_id}` · `story_days{day→outfit_row}` · `capture_events{event_id→{story_day, location_id, beats[]}}` · `declared{side, mechanism_claim, format, mode, model_lock{beat_class → model, variant, quality}, look{sheet_path, look_string_hash}}` · `scenes{SC-id → {bible_path, master_job_id, contact_sheet_pass, transition_in, transition_out}}` · `version_built_against`. The ledger is the source for §34 global scans, reissue passes, resume-after-interruption, and the Open Decisions counts — **computed, never hand-maintained**. Every row's state is mirrored onto the build's Generation Board (§16A) the turn it changes *(pending amendment 2026-09-26)*.
 
 ## E4. Act-map row schema
 
@@ -7822,6 +7832,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | 2026-09-26 | §22U voice source moves from Seedance to Kling: at least two `kling-video-v3_0_omni` generations (G1 opening line, G2 the next), same image and `VOICE-[CHAR]`, same-voice gate (pitch median ±10% + the ear), each take trimmed and sped ×1.2, joined in order, the joined sequence looped to ≥ 30s. `voice_source.py` takes two or more clips. §24I film voice masters stay on Seedance | §22U lock + steps 1–5, §22D regimes/bookends, §5 routing, §44 default 7, E1, E7 | Written in |
 | 2026-09-26 | HeyGen motion prompt on every talking-head render, both run modes. Manual: Avatar V in the app, *More expressive* on, the gesture line in *Apply custom motion*. API: `avatar_v` + `motionPrompt`, no `expressiveness` (Avatar IV only). Avatar IV fallback only when `motionPrompt` is rejected. Confirmed against the current HeyGen API schema | §22U step 13, §44 default 84, E7 | Written in |
 
+| 2026-09-26 | Generation Board: every generation of a build (both run modes) is logged on one private board per build, published from `dashboard/generation_board.html` — grouped per act (Hook 1…, Act 1…), Images then Videos, every field labelled, renders uploaded, verdicts recorded, Confirm / Fix for the reviewer; a Fix note is a §34 correction for that beat, regenerated within the §22V budget and picked up by an hourly check; the ledger's state is mirrored onto it. | §16A (new subsection), E3 | Written into §16A and E3; cut pending |
 ---
 
 # OPEN DECISIONS

@@ -21,6 +21,8 @@ Every generation goes on the build's **Generation Board**. Both run modes, every
 | `intake-1` (STRYDE · Identity Callout) | https://claude.ai/artifact/HVPuUcnNK1MUrCYnou9UnJ |
 | `demo-ad` (example only, placeholder media) | https://claude.ai/artifact/YK4ReHoWRnqBuXQvCMdHLT |
 
+Fix notes are picked up by the hourly Routine **Generation Board — hourly Fix check** (`trig_017sVxtpxiXnkgRcYbnEnRiB`, every hour at :32 UTC, fires into session_01YP5MM63LLBYRjh8ab8sRwP). It skips cards with `demo: true`. While a Fix is being regenerated, the step's status is `generating`.
+
 New build: copy the template to your scratchpad, set its `<title>` to the build name, publish it as a new artifact with `capabilities: {db: {}, assets: {}, downloads: true}`, seed `builds/<id>` and its `generations`, and add a row above. To change the design, edit the template and republish it to every board with `url` (keep each board's `<title>`).
 
 - One `builds/<build-id>` doc per build (name, product, mode, format, run, aspect, `folders` = Drive OUTPUT folder IDs from `drive.json`, `balances`, `balancesAt`).
