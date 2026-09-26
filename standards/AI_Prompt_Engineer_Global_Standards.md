@@ -415,7 +415,7 @@ Prompt quality is half the job. Most product drift traces to execution, not word
 |---|---|---|
 | **Images** — every T2I: seeds, cast sheets, property and location plates, start frames | **Higgsfield** | `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst per §18A |
 | **Kling video** — Kling B-roll, mechanism beats, any Kling I2V | **Kling** (Kling AI direct) | `kling-video-v3_0_omni` per §44 default 5 |
-| **Seedance 2.5** — every Seedance call, including the §22U voice source and the §24I film voice master | **Kie AI API** (`KIE_API_KEY`, `scripts/kie.py`) — not the *Higgsless* connector | `bytedance/seedance-2-5`, 720p |
+| **Seedance 2.5** — every Seedance call, including the §24I film voice master | **Kie AI API** (`KIE_API_KEY`, `scripts/kie.py`) — not the *Higgsless* connector | `bytedance/seedance-2-5`, 720p |
 | Voice | ElevenLabs (§22U) | `eleven_v3` |
 | Talking heads | HeyGen (§22U) | Avatar V |
 
@@ -2593,9 +2593,9 @@ No new JSON field. Part A + Part B + proximity append to `delivery` after the §
 
 | Regime | Voice source | Consistency | Uniqueness |
 |---|---|---|---|
-| ~~TTS (narrated, §3A)~~ *(retired V7.60.5)* | ~~ElevenLabs library voice ID~~ | — | Replaced by Cloned: narrators come from a Seedance clip like every other character (§22U) |
+| ~~TTS (narrated, §3A)~~ *(retired V7.60.5)* | ~~ElevenLabs library voice ID~~ | — | Replaced by Cloned: narrators come from the step-2 Kling clips like every other character (§22U) |
 | Generated (talking heads, §22C) | Generated with the face | Re-rolled every beat — prose is the only control | A steering problem, fought every beat |
-| **Cloned (default, §22U)** | ElevenLabs clone of the §22U step-2 source | Free — the clone's voice ID is the lock | Steered once: `VOICE-[CHAR]` goes into the step-2 Seedance clip, and the clone inherits it |
+| **Cloned (default, §22U)** | ElevenLabs clone of the §22U step-2 source | Free — the clone's voice ID is the lock | Steered once: `VOICE-[CHAR]` goes into the step-2 Kling clips, and the clone inherits it |
 
 ### New character means new voice — the §19A default, extended
 
@@ -2648,9 +2648,9 @@ The spec compresses once into `VOICE-[CHAR]` (~300–650 chars, Build Sheet cont
 
 ### Bookended builds — the casting order inverts
 
-A bookended build (§3A) has generated bookends and TTS narration — two sources, one character: the exact §22C two-voices failure, assembling late. Rule *(V7.60.5)*: **one Seedance voice source per character, one clone** — the bookends and the narration are both voiced from that clone through §22U, so there is nothing to match. No TTS audition.
+A bookended build (§3A) has generated bookends and TTS narration — two sources, one character: the exact §22C two-voices failure, assembling late. Rule *(V7.60.5)*: **one Kling voice source (two or more takes) per character, one clone** — the bookends and the narration are both voiced from that clone through §22U, so there is nothing to match. No TTS audition.
 
-**Casting gate (TTS regime)** — *retired V7.60.5.* Library voices are never auditioned or cast. The voice is cast in the §22U step-2 Seedance clip through `VOICE-[CHAR]`; a voice that fails is re-rolled there, never replaced with an ElevenLabs voice.
+**Casting gate (TTS regime)** — *retired V7.60.5.* Library voices are never auditioned or cast. The voice is cast in the §22U step-2 Kling clips through `VOICE-[CHAR]`; a voice that fails is re-rolled there, never replaced with an ElevenLabs voice.
 
 **Drift check (generated regime)** — per delivered batch: pitch median and tempo per beat, outliers flagged against the act baseline before the edit. Voice drift assembles late, like the two-voices and orientation failures; the check travels with the batch.
 
@@ -2666,7 +2666,7 @@ A bookended build (§3A) has generated bookends and TTS narration — two source
 
 **Scope:** every Mode 1, 2 and 3 build with a speaking character. **Talking-head builds run all thirteen steps. All-B-roll and narrated builds run steps 1–10 only and skip HeyGen** — the saved TTS master is the voiceover. **Film builds (Mode 4, Mode 5, AI Drama) do not use §22U** — their voices are §24I film voice masters, kept untrimmed (V7.58.0).
 
-**Every voice starts as a Seedance clip — locked V7.60.5.** A character's voice is designed in the step-2 Seedance clip, and its audio is extracted there; the clone and every TTS line inherit it. **Never ElevenLabs Voice Design** (`creative_design_voice`, text-to-voice), **never a library, premade or shared ElevenLabs voice**, in either run mode, for any character or narrator. ElevenLabs is used for two things only: cloning the step-5 source (step 6) and speaking the script in that clone (step 9). A voice that did not come from a Seedance clip is a failed delivery.
+**Every cloned voice starts as Kling clips, at least two generations (correction 2026-09-26, Pending Amendments; it was Seedance under V7.60.5).** A character's voice is designed in the step-2 Kling clips, and its audio is extracted there; the clone and every TTS line inherit it. The §24I film voice masters (Mode 4, 5, AI Drama) are not cloned and stay on Seedance. **Never ElevenLabs Voice Design** (`creative_design_voice`, text-to-voice), **never a library, premade or shared ElevenLabs voice**, in either run mode, for any character or narrator. ElevenLabs is used for two things only: cloning the step-5 source (step 6) and speaking the script in that clone (step 9). A cloned voice that did not come from the step-2 Kling clips is a failed delivery.
 
 Both run modes (E0). **Manual:** the agent delivers every step's prompt, text and settings as copy-ready blocks; the user runs them. **Automatic:** the agent runs them, except where a step is marked HUMAN.
 
@@ -2674,11 +2674,11 @@ Both run modes (E0). **Manual:** the agent delivers every step's prompt, text an
 
 | # | Step | Tool | Rule |
 |---|---|---|---|
-| 1 | **Talking-head image** | T2I per §18A (Nano Banana on any beat with a person) | The §19 character, 9:16, 2k, composed as a talking-head frame (§22F). This image is both the Seedance ingredient and the HeyGen avatar image |
-| 2 | **Voice source clip** — 10s of the character talking | Seedance 2.5, ingredients mode, 720p, 9:16, `duration: 10` | The step-1 image first in the pack. Dialogue = the script's opening line, cut to the E6 10s budget (≤20 words brisk, ≤18 unhurried). `VOICE-[CHAR]` verbatim, first in the delivery description (§22D) — **this clip is where the character's voice is designed; the clone inherits it** |
-| 3 | **Trim** dead air and inhales | E11 trim pass | Talking-head rules; no keep-list — the source must be speech only |
-| 4 | **Speed ×1.2** | `ffmpeg` `atempo=1.2` | Pitch preserved. Audio only is required |
-| 5 | **Loop to ≥ 30s** | `ffmpeg` concat | Repeat the sped clip whole until the total is **30s or more**; never cut mid-word to reach it |
+| 1 | **Talking-head image** | T2I per §18A (Nano Banana on any beat with a person) | The §19 character, 9:16, 2k, composed as a talking-head frame (§22F). This image is both the Kling start image (step 2) and the HeyGen avatar image |
+| 2 | **Voice source clips** — **at least two Kling generations**, 10s each, of the character talking | Kling connector, `kling-video-v3_0_omni`, §36 JSON, `image_1` = the step-1 image, `aspect_ratio: "9:16"`, `resolution: "1080p"`, `duration: 10`, `enable_audio: true`, `prefer_multi_shots: false`. One generation per call, never `imageCount` > 1 on one line | **G1** speaks the script's opening line, **G2** the next line (G3+ the lines after), each cut to the E6 10s budget (≤20 words brisk, ≤18 unhurried). Same image, same `VOICE-[CHAR]` verbatim first in `delivery` (§22D), same §28A delivery in every generation — **these clips are where the character's voice is designed; the clone inherits it.** **Same-voice gate:** every take must be the same person as G1 (pitch median within ±10%, `voice_source.py`, plus the ear: timbre, accent, age). A take that drifts is regenerated with the same prompt (two regenerations, then the user); it is never joined |
+| 3 | **Trim** dead air and inhales, **each take** | E11 trim pass | Talking-head rules; no keep-list — the source must be speech only |
+| 4 | **Speed ×1.2**, each take | `ffmpeg` `atempo=1.2` | Pitch preserved. Audio only is required |
+| 5 | **Join, then loop to ≥ 30s** | `ffmpeg` concat | Join the sped takes in script order (G1, G2, …), then repeat the **whole joined sequence** until the total is **30s or more**; never cut mid-word to reach it. `voice_source.py G1.mp4 G2.mp4 --name <Keyword>` runs steps 3–5 and the same-voice gate |
 | 6 | **Clone** | ElevenLabs Instant Voice Clone | **Manual: HUMAN** — the user clones in the ElevenLabs app (upload the step-5 file, remove background noise on) and gives the voice ID; the connector has no clone call. **Automatic: by API, not a stop** — E0, E7 |
 | 7 | **Name the voice** | — | **One keyword from the script title**, capitalised (title "The Knee Pain Nobody Talks About" → `Knee`). If two builds share a keyword, add the character's first name (`Knee-Maria`). **A name already on the account is never reused** — `elevenlabs_clone.py` refuses it; `--character <FirstName>` applies the suffix (V7.60.5). Recorded on the constraint sheet with the voice ID |
 | 8 | **Tag the script** | Eleven v3 audio tags | From the tag library (below) |
@@ -5450,7 +5450,7 @@ Three tiers. Every numeric, clinical or comparative claim in a script is assigne
 
 **6. Camera rig → R3 compressed on VSL talking heads, R2 on UGC talking heads, R1 on B-roll, R1-W on moving-operator beats, R1-FAST on high-energy stabs, R4 on hero product, RV on mechanism A–B, RV-FAST on mechanism C, R1 on mechanism D.** No beat type is exempt from §22B.
 
-**7. Voice source → a cloned ElevenLabs voice per character, every build (§22U, rewritten V7.57.0).** Seedance voice source clip → trim → ×1.2 → loop to ≥30s → clone, named by a script-title keyword → Eleven v3 TTS with audio tags inside 5,000 characters. The generated-voice default is retired.
+**7. Voice source → a cloned ElevenLabs voice per character, every build (§22U, rewritten V7.57.0).** two or more Kling voice source clips (same voice) → trim each → ×1.2 → join → loop to ≥30s → clone, named by a script-title keyword → Eleven v3 TTS with audio tags inside 5,000 characters. The generated-voice default is retired.
 
 **8. Real platform names → generic version generated first, named version written alongside and flagged.** Never the visual, either way (§10A).
 
@@ -7663,7 +7663,7 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | Trim — dead air (E11, Automatic) | silence detection, −40 dB, on the trimmed clip | no silence > 0.4s except keep-list IDs; first word ≤ 0.5s; tail ends ≤ 0.3s after the last word | AUTO | Re-trim at tightened thresholds, cap 1; then HUMAN |
 | Trim — inhales (E11, Automatic) | word timestamps vs cut list, then a waveform check at each joint | no cut lands inside a word; no audible click at the joint (waveform zero-cross ± 10 ms) | AUTO-ASSIST | Widen the padding by 40 ms and re-trim; a cut inside a word is TRIM_FAIL |
 | Film voice master (§24I) | ffprobe duration + codec vs the source clip's audio stream; one-speaker listen | identical duration and codec (stream copy — no edit); neutral affect | AUTO + HUMAN | Regenerate the clip; never edit the audio |
-| Clone source (§22U steps 3–5) | duration + silencedetect on the step-5 file | ≥ 30.0s; no silence > 0.4s; `atempo` 1.2 logged | AUTO | Re-loop; a source under 30s is never uploaded |
+| Clone source (§22U steps 2–5) | `voice_source.py` report: take count, pitch median per take, duration + silencedetect on the step-5 file | ≥ 2 Kling takes; every take's pitch median within ±10% of G1 (unverified threshold); ≥ 30.0s; no silence > 0.4s; `atempo` 1.2 logged | AUTO | Mismatched take → regenerate it (two tries, then the user); re-loop; a source under 30s or with a mismatched take is never uploaded |
 | Clip verdict (§22W) | `contact_sheet.py` sheet + full frames where needed | all seven §22W questions YES | AUTO (agent) | REGENERATE with the named fix; third failure of one fault → user |
 | B-roll placement (§30H) | `assemble.py` EDL vs aligned word timestamps | every B-roll starts on its phrase's first word | AUTO | Re-plan; a phrase not found is a plan error, never a guess |
 | Holes and flicker (§30H) | `assemble.py` timeline | no TH window < 1.5s between B-rolls; voice-only: no uncovered frame; no B-roll < 0.8s | AUTO | Extend → slow ≥ 0.8x → regenerate longer |
@@ -7757,7 +7757,7 @@ Superseded B-roll rule, kept for reference: B-roll calls: 5s (the Higgsfield flo
 **I2V (Seedance 2.5, ingredients — every call, unverified):** omni-reference endpoint → `{prompt: <ING-MANIFEST + prose>, images_list: [<the §4 pack, composition first>], videos_list: [<our own approved clips only>], audios_list: [<voice masters>], resolution: "720p", aspect_ratio: "9:16", duration: <E6, never "auto">}`. **30 files maximum across all three lists.** Audio is generated regardless and discarded on B-roll.
 **Seedance first-frame mode is retired** (V7.54.1). A Seedance call with a start frame and no ingredient pack is a failed generation.
 **Film voice master (Seedance, §24I):** the Seedance ingredients template with `duration: 10`, `images_list: [<face-only sheet>]`, no `audios_list`; then `ffmpeg -i <clip> -vn -c:a copy <CHAR>_voice_master.<ext>`.
-**Voice source (Seedance, §22U step 2):** the Seedance ingredients template above with `duration: 10`, the step-1 image first in `images_list`, no `audios_list`.
+**Voice source (Kling, §22U step 2):** two or more calls, one per take — `image_to_video {model: "kling-video-v3_0_omni", inputs: [{name: "image_1", url: <step-1 image>}], arguments: prompt (§36 JSON, minified, ≤ 2,500), aspect_ratio "9:16", resolution "1080p", duration "10", enable_audio "true", prefer_multi_shots "false", imageCount "1"}`; poll `query_tasks`. Then `voice_source.py G1.mp4 G2.mp4 --name <Keyword>`.
 **Clone (ElevenLabs, §22U step 6):** Manual — Instant Voice Clone in the ElevenLabs app. Automatic — `scripts/elevenlabs_clone.py clone <Keyword>_clone_source.mp3 --name <Keyword> [--character <FirstName>]` → name checked against `GET /v1/voices` (taken = refused, §22U step 7) → `POST /v1/voices/add` (multipart, header `xi-api-key: $ELEVENLABS_API_KEY`) `{name: <keyword>, files: [<step-5 file>], remove_background_noise: true}` → `{voice_id, requires_verification: false}`; confirmed by `GET /v1/voices/{id}` (`category: "cloned"`). Preflight `GET /v1/user/subscription`: `can_use_instant_voice_cloning`, `voice_limit − voice_slots_used`. Cleanup `DELETE /v1/voices/{id}`. Measured 2026-09-25 (one test clone from a 48s source, then deleted). The connector has no clone call.
 **TTS (ElevenLabs connector, §22U step 9):** `creative_generate_speech` → `{model_id: "eleven_v3", voice_id: <clone>, prompt: <tagged script ≤ 5,000>, generations_count: 4}`; poll `creative_get_flow_run_status`. `estimate_only: true` first when the credit cap is tight.
 **Avatar (HeyGen, §22U step 11):** `create_asset_upload` → PUT bytes → `complete_asset_upload` → `create_photo_avatar {name: <VoiceName>-<look>, file: {type: "asset_id", asset_id}}`; wait for the avatar look to be ready.
@@ -7819,6 +7819,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 
 | Date | Correction | Section affected | Status |
 |---|---|---|---|
+| 2026-09-26 | §22U voice source moves from Seedance to Kling: at least two `kling-video-v3_0_omni` generations (G1 opening line, G2 the next), same image and `VOICE-[CHAR]`, same-voice gate (pitch median ±10% + the ear), each take trimmed and sped ×1.2, joined in order, the joined sequence looped to ≥ 30s. `voice_source.py` takes two or more clips. §24I film voice masters stay on Seedance | §22U lock + steps 1–5, §22D regimes/bookends, §5 routing, §44 default 7, E1, E7 | Written in |
 | 2026-09-26 | HeyGen motion prompt on every talking-head render, both run modes. Manual: Avatar V in the app, *More expressive* on, the gesture line in *Apply custom motion*. API: `avatar_v` + `motionPrompt`, no `expressiveness` (Avatar IV only). Avatar IV fallback only when `motionPrompt` is rejected. Confirmed against the current HeyGen API schema | §22U step 13, §44 default 84, E7 | Written in |
 
 ---
