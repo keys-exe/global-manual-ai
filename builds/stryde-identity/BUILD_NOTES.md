@@ -83,3 +83,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **HK1-B fix (user: "going down the stair, not the same steps, normally, no other"):** omni from image v2, a normal walk
   down 3–4 stairs, camera travelling down with her at a fixed distance, no rail reveal (`hooks/HK1-B.i2v.v4.json`) →
   board video v5, To check.
+- **HK1-B simplified (user: "simplify the prompt, just a simple going down the stairs B-roll"):** 417-char prompt
+  (`hooks/HK1-B.i2v.v5.json`) from image v2 → board video v6, To check. Lesson: for a plain action B-roll a short prompt
+  lets the model move naturally; the long product-physics blocks pinned her in place.
