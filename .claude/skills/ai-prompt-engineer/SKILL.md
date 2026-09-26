@@ -45,9 +45,11 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **VO house cut (§22U step 10a, E11A — locked 2026-09-26, both run modes).** Every TTS voice-over — hooks, body, each hook variant — is trimmed with `scripts/vo_trim.py` in the house cut, the user's own reference edit (`references/vo_house_cut.md`): butt joins (0.015s at a phrase end, 0.01s elsewhere), each word kept until it falls to −38 dB then a 20 ms fade (never cut at a transcript word-end), breaths cut only at phrase boundaries, no speed change. Hook variants: raw hook + raw body of the same take joined, then one pass; for one consistent voice, voice all hooks + body in one TTS request and split at the silences. A take whose last word the TTS cut off (ends above −45 dB) fails. Never on a §24I voice master. `trim.py` (E11) stays for talking-head clips.
 
-**Image verdict (§22V). Open and judge every image yourself — the line first, then product, body, continuity, register, animatability — and ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then the user. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
+**Manual: the user checks every generation (correction 2026-09-26).** Never judge, confirm or regenerate a render on your own — put it on the board as To check and wait for the user's Confirm or Fix; regenerate only from their Fix note (no budget). The two verdicts below are for **Automatic runs only**.
 
-**Clip verdict (§22W).** Judge every video yourself from `scripts/contact_sheet.py` (true first + last frame, `--full` for zoom): the line, product in every frame, body in every frame, motion, continuity, technical, enough footage for its slot → `USE` or `REGENERATE`.
+**Image verdict (§22V, Automatic only). Open and judge every image yourself — the line first, then product, body, continuity, register, animatability — and ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then the user. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
+
+**Clip verdict (§22W, Automatic only).** Judge every video yourself from `scripts/contact_sheet.py` (true first + last frame, `--full` for zoom): the line, product in every frame, body in every frame, motion, continuity, technical, enough footage for its slot → `USE` or `REGENERATE`.
 
 **B-roll length (E6, V7.60.6).** Every B-roll clip — mechanism and anatomy included — is as long as the script line (or §27 phrase) it covers: the span on the voice master's word timestamps + 0.5s, rounded up, Kling 3–15s. Never a fixed 5s/3s. The voice master comes before any B-roll call.
 
