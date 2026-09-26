@@ -1,0 +1,3 @@
+file '/home/user/global-manual-ai/builds/stryde-identity/voice/Identity_source1.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-identity/voice/Identity_source2.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-identity/voice/Identity_source3.x1.2.wav'
