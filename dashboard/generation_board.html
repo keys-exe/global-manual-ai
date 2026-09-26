@@ -525,6 +525,14 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .vsel-item .vi-txt{display:flex;flex-direction:column;flex:1;min-width:0}
 .vsel-item .vi-txt b{font-size:13px}
 .vsel-item .vi-txt span{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.arow.vo .a-ctl{display:grid;grid-template-columns:250px minmax(0,1fr) 112px 40px;gap:10px;align-items:center}
+.a-ctl.a-grid{display:grid;grid-template-columns:minmax(0,1fr) 112px 40px;gap:10px;align-items:center}
+.a-slot{display:flex;align-items:center;min-width:0}
+.arow.vo .vsel,.arow.vo .vsel-btn{width:100%}
+.arow.vo .vsel-btn{justify-content:flex-start}
+.arow.vo .vsel-car{margin-left:auto}
+.a-ctl .ap{min-width:0;width:100%}
+@media (max-width:760px){.arow.vo .a-ctl{grid-template-columns:minmax(0,1fr) auto 40px}.arow.vo .vsel{grid-column:1/-1}}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
 .box-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:14px 14px 0}
 .box-head .sn{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;background:var(--ink);color:var(--surface);flex:none}
@@ -762,10 +770,9 @@ function audioRow(g){
   const st=g.status||"planned", ok=st==="use";
   return `<div class="arow ${ok?"ok":""}">
     <div class="a-head"><span class="a-ic" aria-hidden="true">${ICONS.audio}</span><span class="a-part">${esc(g.beat||"")}</span><span class="a-line">${esc(g.title||"")}</span></div>
-    <div class="a-ctl">${audioEl(g)}<span class="mono a-dur">${esc(secs(g.duration))}</span>
-      <span class="pill s-${st}">${esc(ok?"Confirmed":STATUS_LABEL[st]||st)}</span>
-      ${!ok&&!state.readOnly&&g.videoAsset?`<button class="btn small ok" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="file">${I.ok} Confirm</button>`:""}
-      <button class="btn small" type="button" data-dl="${esc(g.id)}" data-step="file" ${g.videoAsset?"":"disabled"} aria-label="Download ${esc(g.beat||"")}">${I.dl}</button></div></div>`;
+    <div class="a-ctl a-grid">${audioEl(g)}
+      <span class="a-slot">${ok?`<span class="pill s-use">Confirmed</span>`:!state.readOnly&&g.videoAsset?`<button class="btn small ok" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="file">${I.ok} Confirm</button>`:`<span class="pill s-${st}">${esc(STATUS_LABEL[st]||st)}</span>`}</span>
+      <span class="a-slot"><button class="btn small" type="button" data-dl="${esc(g.id)}" data-step="file" ${g.videoAsset?"":"disabled"} aria-label="Download ${esc(g.beat||"")}">${I.dl}</button></span></div></div>`;
 }
 // VO: one row per part (HK1…, BODY); the takes are that part's versions.
 function voRows(gens){return voParts(gens).map(p=>voRow(p.part,gens)).join("")}
@@ -789,8 +796,8 @@ function voRow(part,gens){
           </div>
         </div>
         ${sel?audioEl(sel):""}
-        ${sel&&sel.status==="use"?`<span class="pill s-use">Confirmed</span>`:sel&&!state.readOnly?`<button class="btn small ok" type="button" data-takeok="${esc(sel.id)}" data-part="${esc(part)}">${I.ok} Confirm</button>`:""}
-        ${sel?`<button class="btn small" type="button" data-dl="${esc(sel.id)}" data-step="file" aria-label="Download version ${takeNo(sel)}">${I.dl}</button>`:""}
+        <span class="a-slot">${sel&&sel.status==="use"?`<span class="pill s-use">Confirmed</span>`:sel&&!state.readOnly?`<button class="btn small ok" type="button" data-takeok="${esc(sel.id)}" data-part="${esc(part)}">${I.ok} Confirm</button>`:""}</span>
+        <span class="a-slot">${sel?`<button class="btn small" type="button" data-dl="${esc(sel.id)}" data-step="file" aria-label="Download version ${takeNo(sel)}">${I.dl}</button>`:""}</span>
       </div></div></div>`;
 }
 function swapVoRow(part){
