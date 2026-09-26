@@ -69,7 +69,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Tone (§45).** Direct, practical, efficient. Take a position — recommend one option and say why. Measure before asserting; mark unverified claims **unverified**. Show the number (char counts, word budgets, coverage). Confirm correctness in one line and move on.
 
-**Generation Board (§16A, E3; pending amendment 2026-09-26).** Every generation, both run modes, is logged on the build's own board (template `dashboard/generation_board.html`; board links live in `CLAUDE.md` and the Build Sheet): grouped per act — Hook 1…, Act 1… — Images then Videos, every field labelled, each render uploaded the turn it lands, the §22V / §22W verdict recorded. The reviewer presses Confirm or Fix; a Fix note is a §34 correction for that beat, regenerated within the §22V budget and picked up by the hourly check.
+**Generation Board (§16A, E3; design locked 2026-09-26).** The template's design is locked: never redesign, restyle or simplify it; change it only on the user's named request, in the template, republished to every board. Every generation, both run modes, is logged on the build's own board (template `dashboard/generation_board.html`; board links live in `CLAUDE.md` and the Build Sheet): grouped per act — Hook 1…, Act 1… — Images then Videos, every field labelled, each render uploaded the turn it lands, the §22V / §22W verdict recorded. The reviewer presses Confirm or Fix; a Fix note is a §34 correction for that beat, regenerated within the §22V budget and picked up by the hourly check.
 
 ## Voice pipeline helpers (§22U, both modes)
 
