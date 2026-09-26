@@ -42,6 +42,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   variants: v6a USE, v6b REGENERATE (webbing band + loose rings). Band from y=470. `hooks/HK1_split_preview_v3.png`.
   **Product Sheet flag:** `SIZE_HELD` (5–6 thumb-widths ≈ 11 cm) rendered toy-sized — proposed: a hand's length (~16 cm).
   Waiting on the user to confirm the size and both images.
+- **HK1-T v7/v8 (user: "strap at the normal state, not that long; X-ray too high and not full"):** v7a/b regenerated
+  the scene (kept on the board, superseded). The user then sent v6a: "just edit this and make the strap not that long
+  just the original lenght" → **v8 = edit of v6a** (`hooks/HK1-T.v8.edit.txt`, refs v6a + product front/back), band
+  back to the original short closed loop. **v8b current (USE)**, v8a alt. Preview `hooks/HK1_split_preview_v4.png`
+  (band from y=470). The lightbox still sits only partly in the top band (v6a's framing kept, as asked) — offered a
+  follow-up edit if the X-ray must be fully in frame. Waiting on the user to confirm HK1-T v8b and HK1-B v2.
 - **Then:** E6 — set every B-roll row's duration from the body word timestamps (span of its line + 0.5s, Kling 3–15s),
   then step 6: the hooks one by one (HK1 first, split layout EG01), as prompts + generations on the board.
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),
