@@ -408,10 +408,10 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .bc header{display:flex;align-items:center;gap:6px}
 .bc header .grow{flex:1}
 .bc header>strong,.bc header{font-family:var(--mono);font-weight:700;font-size:13.5px}
-.k{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;padding:2px 6px;border-radius:4px;background:var(--sunk);color:var(--muted)}
-.k-BR{background:var(--accent-soft);color:var(--accent)}
-.k-MECH{background:color-mix(in srgb,#8b3fd1 16%,transparent);color:#8b3fd1}
-.k-TH{background:var(--use-bg);color:var(--use)}
+.bc .k{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;padding:2px 6px;border-radius:4px;background:var(--sunk);color:var(--muted)}
+.bc .k-BR{background:var(--accent-soft);color:var(--accent)}
+.bc .k-MECH{background:color-mix(in srgb,#8b3fd1 16%,transparent);color:#8b3fd1}
+.bc .k-TH{background:var(--use-bg);color:var(--use)}
 .mdl{font-family:var(--mono);font-size:10.5px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:1px 5px}
 .bc-fn{font-weight:600;font-size:13.5px;text-transform:capitalize}
 .bc-fr{margin:0;font-size:13px;line-height:1.5;color:var(--ink)}
@@ -575,6 +575,32 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .switch input:checked+.sw-track .sw-knob{left:16px}
 .switch input:focus-visible+.sw-track{outline:2px solid var(--accent);outline-offset:2px}
 .switch b{font-family:var(--mono);color:var(--muted);font-weight:600}
+/* shared strip: the Board's stage strip, also used by Manual run and Plan */
+.step.cur{background:var(--sunk);box-shadow:inset 0 0 0 1px var(--ink)}
+.step .n{display:flex;align-items:center;gap:6px}
+.step .g-wait{margin-left:auto}
+@media (max-width:900px){#manualView .pipe,#planView .pipe{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mtools{display:flex;justify-content:flex-end}
+#mbar.mbar{flex-direction:column;align-items:stretch;gap:8px}
+.mgroup.widget{scroll-margin-top:16px}
+.mgroup.all-done .w-num{background:var(--use-bg);color:var(--use)}
+.mgroup .box{background:transparent;border:0;box-shadow:none;padding:0;gap:8px}
+.mgroup .box-head{padding:0}
+.mgroup .box-head .sn{width:22px;height:22px;font-size:11px}
+.mgroup .box-head h3{font-size:15px}
+.mgroup .cards,.mgroup .arows{padding:0!important}
+.mgroup .box-note{margin:0}
+.mgroup .box>.bar{margin:0!important}
+.mgroup .boxes{gap:22px}
+.mgroup .boxes:not(.pair)>.box+.box{border-top:1px solid var(--line);padding-top:18px}
+.mgroup .boxes.pair{gap:28px}
+.msec{display:flex;flex-direction:column;gap:10px}
+.msec-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.msec-h h3{font-size:15px;font-weight:700}
+.msec-h .grow{flex:1}
+.p-sec.widget{padding:0}
+.p-sec .w-head{padding-bottom:6px}
+.p-sec .w-body{padding-top:6px}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
 .box-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:14px 14px 0}
 .box-head .sn{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;background:var(--ink);color:var(--surface);flex:none}
@@ -650,9 +676,9 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 
   <div id="planView" hidden></div>
 
-  <div id="manualView" hidden style="flex-direction:column;gap:18px">
+  <div id="manualView" hidden style="flex-direction:column;gap:14px">
     <div class="mbar" id="mbar"></div>
-    <div id="mlist" style="display:flex;flex-direction:column;gap:26px"></div>
+    <div id="mlist" style="display:flex;flex-direction:column;gap:14px"></div>
   </div>
 </div>
 <input type="file" id="picker" hidden>
@@ -1173,25 +1199,30 @@ function renderManual(gens){
   const prog=x=>{if(x.key==="stage-vo"){const p=voParts(gens);return [p.filter(y=>y.use).length,p.length,p.filter(y=>!y.use).length]}
     return [x.items.filter(g=>!needsMe(g)).length,x.items.length,x.items.filter(stepNeedsYou).length]};
   const allP=gs.reduce((a,x)=>{const [d,t]=prog(x);return [a[0]+d,a[1]+t]},[0,0]);
-  const tileM=(key,label,d,t,wait)=>`<button class="gchip${d===t&&t?" done":""}" type="button" data-ms="${key}" aria-pressed="${state.mstage===key}">
-      <span class="g-top"><span class="g-l">${esc(label)}</span>${d===t&&t?`<span class="g-ok">${I.ok}</span>`:wait?`<span class="g-wait" title="${wait} waiting for you">${wait}</span>`:""}</span>
-      <span class="g-bar"><i style="width:${t?d/t*100:0}%"></i></span><span class="g-n">${d} of ${t} done</span></button>`;
-  $("#mbar").innerHTML=`<div class="gbar">${tileM("all","Everything",allP[0],allP[1],0)}${gs.map(x=>{const [d,t,w]=prog(x);return tileM(x.key,x.label,d,t,w)}).join("")}</div>
-    <label class="switch"><input type="checkbox" data-needs="1" ${state.mneeds?"checked":""}><span class="sw-track"><span class="sw-knob"></span></span><span>Only what needs me <b>${needsYouCount(gens)}</b></span></label>`;
+  const stepM=(key,n,label,d,t,wait)=>{const done=d===t&&t>0;
+    return `<button class="step${done?" done":""}${state.mstage===key?" cur":""}" type="button" data-ms="${key}" aria-pressed="${state.mstage===key}">
+      <span class="n">${n}${done?" ✓":""}${!done&&wait?`<span class="g-wait" title="${wait} waiting for you">${wait}</span>`:""}</span><span class="t">${esc(label)}</span>
+      <div class="bar"><i style="width:${t?d/t*100:0}%;background:var(--use)"></i></div>
+      <span class="c">${d} of ${t} done</span></button>`};
+  $("#mbar").innerHTML=`<nav class="pipe" style="--n:${gs.length+1}" aria-label="Groups">${stepM("all","All","Everything",allP[0],allP[1],0)}${gs.map((x,i)=>{const [d,t,w]=prog(x);return stepM(x.key,String(i+1).padStart(2,"0"),x.label,d,t,w)}).join("")}</nav>
+    <div class="mtools"><label class="switch"><input type="checkbox" data-needs="1" ${state.mneeds?"checked":""}><span class="sw-track"><span class="sw-knob"></span></span><span>Only what needs me <b>${needsYouCount(gens)}</b></span></label></div>`;
   const html=gs.map(x=>{
     if(state.mstage!=="all"&&state.mstage!==x.key) return "";
     const steps=["image","video","file"].filter(k=>x.items.some(g=>flow(g).includes(k)));
     const isVO=x.key==="stage-vo", vp=isVO?voParts(gens):null;
     const done=isVO?vp.filter(y=>y.use).length:x.items.filter(g=>!needsMe(g)).length;
     const beats=isVO?vp.map(y=>y.part):x.items.map(g=>g.beat).filter(Boolean);
-    return `<section class="mgroup" id="m-${x.key}">
-      <div class="mg-head">
-        <div class="kv"><span class="lbl">${esc(x.kicker)}</span><h2 class="act">${esc(x.label)}</h2></div>
-        <div class="kv"><span class="lbl">${isVO?"Parts":"Beats"}</span><span class="mono">${esc(!isVO&&beats.length>4?beats[0]+" – "+beats[beats.length-1]:beats.join(", "))}</span></div>
-        <div class="kv"><span class="lbl">${isVO?"Locked":"Done"}</span><span class="mono">${done}/${isVO?vp.length:x.items.length}</span></div></div>
-      ${x.note?`<p class="note" style="margin:0">${esc(x.note)}</p>`:""}
-      ${x.key==="stage-vo"?`<div class="box"><div class="box-head"><span class="sn">♪</span><div class="kv"><span class="lbl">VO · one row per part</span><h3>Takes</h3></div><span class="grow"></span>${voLocked(currentBuild(),gens)?`<span class="pill s-use">VO locked</span>`:`<span class="note">Confirm one take per part to lock the VO.</span>`}</div><div class="arows" style="padding:0 14px">${voRows(gens)}</div></div>`:
-      `<div class="boxes${x.items.length<=2&&steps.length>1?" pair":""}">${steps.map(k=>stepBox(x,k,x.items)).join("")}</div>`}</section>`;
+    const tot=isVO?vp.length:x.items.length, gi=gs.indexOf(x)+1;
+    const range=esc(!isVO&&beats.length>4?beats[0]+" – "+beats[beats.length-1]:beats.join(", "));
+    return `<section class="widget mgroup${done===tot&&tot?" all-done":""}" id="m-${x.key}">
+      <div class="w-head"><span class="w-num">${String(gi).padStart(2,"0")}</span>
+        <div class="w-title"><h2>${esc(x.label)}</h2><span class="sub">${esc(x.kicker)} · ${range} · ${done} of ${tot} ${isVO?"parts locked":"done"}</span></div>
+        <div class="w-actions">${done===tot&&tot?`<span class="pill s-use">Done</span>`:""}</div></div>
+      <div class="bar w-bar"><i style="width:${tot?done/tot*100:0}%;background:var(--use)"></i></div>
+      <div class="w-body">
+      ${x.note?`<p class="note" style="margin:0 0 10px">${esc(x.note)}</p>`:""}
+      ${x.key==="stage-vo"?`<div class="msec"><div class="msec-h"><h3>Takes</h3><span class="note">One row per part — pick a version and confirm it</span><span class="grow"></span>${voLocked(currentBuild(),gens)?`<span class="pill s-use">VO locked</span>`:""}</div><div class="arows">${voRows(gens)}</div></div>`:
+      `<div class="boxes${x.items.length<=2&&steps.length>1?" pair":""}">${steps.map(k=>stepBox(x,k,x.items)).join("")}</div>`}</div></section>`;
   }).join("");
   const fi=document.querySelector("[data-faultform] textarea"), draft=fi?fi.value:"", had=fi&&document.activeElement===fi;
   $("#mlist").innerHTML=html||`<div class="empty">No generations in this build yet.</div>`;
@@ -1548,26 +1579,26 @@ function renderPlan(gens){
   if(!docs.some(d=>d.id===state.pdoc)){state.pdoc=docs[0].id}
   const doc=docs.find(d=>d.id===state.pdoc), secs=Array.isArray(doc.sections)?doc.sections:[];
   $("#planView").innerHTML=`
-    <div class="p-docs" role="tablist" aria-label="Plan documents">
-      ${docs.map(d=>`<button type="button" role="tab" class="p-card" data-pdoc="${esc(d.id)}" aria-selected="${d.id===doc.id}">
-        <span class="p-step">${esc(d.step?("Step "+d.step):"Document")}</span>
-        <span class="p-ct">${esc(d.title||d.id)}</span>
-        <span class="p-stats">${docStats(d).map(([n,l])=>`<span><b>${esc(n)}</b> ${esc(l)}</span>`).join("")}</span>
-      </button>`).join("")}
-    </div>
+    <nav class="pipe" style="--n:${docs.length}" role="tablist" aria-label="Plan documents">
+      ${docs.map(d=>{const done=d.id==="absorption"?absDone():true;return `<button type="button" role="tab" class="step${d.id===doc.id?" cur":""}${done?" done":""}" data-pdoc="${esc(d.id)}" aria-selected="${d.id===doc.id}">
+        <span class="n">${esc(d.step?("Step "+d.step):"Document")}${done?" ✓":""}</span>
+        <span class="t">${esc(d.title||d.id)}</span>
+        <div class="bar"><i style="width:100%;background:var(${done?"--use":"--review"})"></i></div>
+        <span class="c">${docStats(d).map(([n,l])=>`${esc(n)} ${esc(l)}`).join(" · ")}</span></button>`}).join("")}
+    </nav>
     <div class="p-body">
       <nav class="p-toc" aria-label="Sections">
         <span class="lbl">On this page</span>
-        ${secs.map((x,i)=>`<button type="button" class="p-tl" data-pjump="${i}">${esc(x.title||("Part "+(i+1)))}</button>`).join("")}
+        ${secs.map((x,i)=>`<button type="button" class="p-tl" data-pjump="${i}">${esc(noRef(x.title||("Part "+(i+1))))}</button>`).join("")}
       </nav>
       <div class="p-content">
         <header class="p-head">
           <div class="kv"><span class="lbl">${esc(doc.step?("Step "+doc.step):"Document")}${doc.source?` · ${esc(noRef(doc.source))}`:""}</span><h2>${esc(doc.title||doc.id)}</h2></div>
           ${doc.updatedAt?`<span class="note">Updated ${esc(when(doc.updatedAt))}</span>`:""}
         </header>
-        ${secs.map((x,i)=>`<section class="p-sec" id="psec-${i}" data-i="${i}">
-          <div class="p-sh"><h3>${esc(x.title||("Part "+(i+1)))}</h3><span class="p-tools"></span></div>
-          <div class="md">${mdToHtml(x.md)}</div></section>`).join("")}
+        ${secs.map((x,i)=>`<section class="widget p-sec" id="psec-${i}" data-i="${i}">
+          <div class="w-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span><div class="w-title"><h2>${esc(noRef(x.title||("Part "+(i+1))))}</h2></div><span class="p-tools"></span></div>
+          <div class="w-body"><div class="md">${mdToHtml(x.md)}</div></div></section>`).join("")}
       </div>
     </div>`;
   decoratePlan(gens);
