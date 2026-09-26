@@ -80,3 +80,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   every generation — no agent verdicts or regenerations in Manual; board template already live).
 - **HK1-B stairs clip (user: image v2 confirmed, "she should be going down the stairs"):** omni from image v2, two steps
   down, camera backing down ahead of her to her hand on the rail (`hooks/HK1-B.i2v.v3.json`) → board video v4, To check.
+- **HK1-B fix (user: "going down the stair, not the same steps, normally, no other"):** omni from image v2, a normal walk
+  down 3–4 stairs, camera travelling down with her at a fixed distance, no rail reveal (`hooks/HK1-B.i2v.v4.json`) →
+  board video v5, To check.
