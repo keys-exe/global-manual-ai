@@ -202,40 +202,40 @@ Recurring subjects (≥ 2 beats on the inventory): **C1 Maureen** (HK1 bottom, P
 
 | Sheet | Job ID | File | Verdict (§19 panel check + §22V) |
 |---|---|---|---|
-| N-NARR | `75dd0c42-46af-472a-9c5b-051bc34ac3cf` | `cast/N-NARR_v1.jpg` | **USE** — one man across five panels, beard grey with faded ginger, window left in all five. Nose bend reads slight |
+| N-NARR | `366296a0-6fe1-4113-a189-b61eee326a0c` (v2) | `cast/N-NARR_v2.jpg` | **USE** — recast on the user's call: warm, open face, wavy dark-grey hair, salt-and-pepper beard, navy jumper; identity holds, window left. Chin cleft hidden by the beard. *v1 `75dd0c42…` replaced* |
 | C1-MAUREEN | `fb41402a-b678-4282-921b-05bdd2ce71ef` | `cast/C1-MAUREEN_v1.jpg` | **USE** — identity holds, both knees bare, white curls in all five. **Crooked little finger not legible** (hands curled) |
 | C2-DEAN | `f81be8b9-02ea-4513-bcb9-e26525e6fea6` | `cast/C2-DEAN_v1.jpg` | **USE** — identity holds, knees bare, work boots. Cauliflower ear rendered mild, on his **right** ear (prompted left) |
-| C3-PAT | `f07388cb-baed-4824-9aa2-f609a99e3a3d` | `cast/C3-PAT_v1.jpg` | **USE** — identity holds, knees bare, ears stand out, grey showing through the chestnut |
+| C3-PAT | `c10469d4-79c1-4e97-9afb-a1a92eb7df06` (v2) | `cast/C3-PAT_v2.jpg` | **USE** — recast on the user's call: freckled, warm grandmother, sandy-grey ponytail at one height in all five, both knees bare; window right. *v1 `f07388cb…` replaced* |
 | C4-SURGEON | `1ba54d8d-73b3-4f34-9ea3-55e4ba056236` (v2) | `cast/C4-SURGEON_v2.jpg` | **USE** — approachable per the §19B correction: relaxed open brow, soft eyes with laugh lines, mouth resting slightly up, no posed smile; identity holds, window left. *v1 `ee5a7185…` invalidated — read stern (correction 2026-09-26)* |
 
-All five: the bottom row came **~43/57 instead of 50/50** (a `NEG-GRID` miss, not a panel-check failure — no effect on the sheet as a reference). Back views came full length on all five. Prompts: `cast/<ID>.prompt.txt`, built from Appendix A by ID in `cast/build_sheets.py` (`CAM-LOCK` → `AVATAR-SHEET` with `SHEET-GRID` → `SKIN-T` → `CAP-SHARP` → `CAP-FILE` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILE` + `NEG-DEFAULT-FACE`), 9,148–9,286 chars each. Spend: 6 Sunburst jobs — 5 sheets, plus 1 surgeon regeneration on the user's correction.
+All five: the bottom row came **~43/57 instead of 50/50** (a `NEG-GRID` miss, not a panel-check failure — no effect on the sheet as a reference). Back views came full length on all five. Prompts: `cast/<ID>.prompt.txt`, built from Appendix A by ID in `cast/build_sheets.py` (`CAM-LOCK` → `AVATAR-SHEET` with `SHEET-GRID` → `SKIN-T` → `CAP-SHARP` → `CAP-FILE` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILE` + `NEG-DEFAULT-FACE`), 9,148–9,286 chars each. Spend: 8 Sunburst jobs — 5 sheets, 1 surgeon regeneration (approachable correction), 2 recasts on the user's call (narrator, Pat).
 
 ### Identity strings — read off the renders (§7)
 
 | ID | Identity string |
 |---|---|
-| N | white British man, 63, tall and wiry; long narrow face, deep-set grey eyes, heavily lined forehead, nose slightly bent at the bridge; short dishevelled grey hair thinning at the crown; close grey beard with faded ginger through the moustache and chin; olive work shirt, sleeves rolled; brown cords; brown work boots |
+| N | white British man, 60, medium height, solid, a little soft at the middle; long oval face, warm hazel eyes crinkled at the corners, strong straight nose; thick wavy dark-grey hair worn over the collar; short salt-and-pepper beard; navy crew-neck jumper over a blue gingham shirt collar; dark jeans; brown suede desert boots |
 | C1 | white British woman, 74, short and heavyset; broad heavy face, soft jowls, hooded brown eyes, wide nose, age spots across the forehead; short tight pure-white curls; cerise-and-orange leaf-print blouse; plum skirt a hand above the knee; navy slip-ons; heavy bare knees and calves |
 | C2 | white British man, 58, barrel-chested and heavy; round broad face, small pale-blue eyes, wide nose, ruddy cheeks, heavy forehead creases; shaved head with grey stubble, grey stubble on the jaw; right ear thickened; charcoal T-shirt; navy cargo work shorts to just above the knee; grey socks; black work boots |
-| C3 | white British woman, 62, small and wiry; narrow face, high cheekbones, small pointed chin, green-hazel eyes, ears standing out; short tousled pixie crop, chestnut with grey coming through at the temples; oatmeal cardigan over a white T-shirt; khaki shorts to just above the knee; grey trainers; lean calves |
+| C3 | white British woman, 66, sturdy and compact; wide heart-shaped face, apple cheeks, warm brown eyes, heavy freckles across nose, cheeks and neck; sandy hair gone mostly grey in a loose low ponytail, strands at the temples; navy quilted gilet over a navy-and-white Breton top; stone shorts to just above the knee; white canvas trainers |
 | C4 | white British man, 71, tall, slightly stooped; broad open square face with full cheeks, soft grey-blue eyes with laugh lines, thick dark-grey brows relaxed and high, mouth resting slightly up — warm, kind, attentive; bald crown, close white sides; pale blue shirt, cuffs turned back; navy trousers, black belt; dark brown lace-ups |
 
 ### §19A axis tables — within-build clearance (no roster entries exist yet in this repo; `intake-1` generated none)
 
 | Axis | N | C1 | C2 | C3 | C4 |
 |---|---|---|---|---|---|
-| Face | long, narrow, deep-set | broad, jowled, hooded | round, broad, small eyes | narrow, sharp, high cheekbones | broad, open, full-cheeked, soft eyes (approachable, §19B) |
-| Hair | grey, thinning + ginger-grey beard | cropped white curls | shaved, stubble | grown-out chestnut dye, grey roots | bald crown, white sides |
-| Age position | 63 (mid) | 74 (far edge) | 58 (young edge) | 62 (young side) | 71 (far side) |
-| Build | tall, wiry | short, heavyset | barrel-chested | small, wiry | tall, stooped |
-| Class / wardrobe | allotment / ex-railway | faded-flamboyant | trades | active walker | professional |
-| Marker | bent nose | crooked little finger (not legible) | thickened ear | ears stand out | thick dark brows, set high and relaxed |
+| Face | long oval, warm, crinkled eyes | broad, jowled, hooded | round, broad, small eyes | wide heart-shaped, apple cheeks | broad, open, full-cheeked, soft eyes (approachable, §19B) |
+| Hair | wavy dark-grey, long over the collar + salt-and-pepper beard | cropped white curls | shaved, stubble | sandy-grey low ponytail | bald crown, white sides |
+| Age position | 60 (young side) | 74 (far edge) | 58 (young edge) | 66 (mid) | 71 (far side) |
+| Build | medium, solid, soft middle | short, heavyset | barrel-chested | sturdy, compact | tall, stooped |
+| Class / wardrobe | smart-casual (jumper and jeans) | faded-flamboyant | trades | coastal-casual (gilet, Breton top) | professional |
+| Marker | cleft chin (under the beard) | crooked little finger (not legible) | thickened ear | heavy freckles | thick dark brows, set high and relaxed |
 | Voice | Tyneside (below) | non-speaking | non-speaking | non-speaking | non-speaking |
-| Environment | allotment shed | terraced house, stairs | warehouse, van | park, grandchild | consulting room, lightbox |
+| Environment | kitchen table at home | terraced house, stairs | warehouse, van | park, grandchild | consulting room, lightbox |
 
 **Correction 2026-09-26 (user, §34):** medical professionals are always approachable — written into §19B and Appendix A `APPROACH-PRO`; only C4 affected, clearance unchanged.
 
-**Pairwise clearance (of 8; the voice axis counts only for N):** every pair clears **≥ 6** — lowest N–C2 6 (both near the band's young side) and N–C4 6 (both tall). Gate is 5. ✓
+**Pairwise clearance (of 8; the voice axis counts only for N):** every pair clears the gate of 5 — lowest **N–C2 5** (age and build close) and C1–C3 6 (both solid builds); every other pair 6–7. ✓ *(re-counted after the N and C3 recast, 2026-09-26)*
 
 ### Narrator — `VOICE-NARR` (§22D) and §20 constraint sheet
 
@@ -248,14 +248,14 @@ A sixty-three-year-old Tyneside man, a low dry chest voice with gravel at its ed
 |---|---|
 | Accent | Tyneside (Geordie), placed and unforced; never RP, never Scottish, never caricature |
 | Pacing | brisk, ~185 wpm — the reference's 191 wpm, one notch down for the older audience |
-| Posture / rest / gesture / ocular / rig | voice-source clip only (§22U step 1): seated, forearms on a potting-shed bench, Economical, eyeline on lens, R2 handheld — framed at step 4–5 |
+| Posture / rest / gesture / ocular / rig | voice-source clip only (§22U step 1): seated at his kitchen table, forearms on it, Economical, eyeline on lens, R2 handheld — framed at step 4–5 |
 | Audio proximity | R2 |
 | Wardrobe never-list | suit, tie, white coat, anything clinical |
 | Physical never-list | never on screen in the ad itself; never holds or wears the product |
 | Voice spec | `VOICE-NARR` above |
 | Stress register | quieter, slower on "Not because the arthritis has gone." — never bigger |
 | Non-speech events | one short nasal exhale before a number; a dry half-laugh (once at most). Nothing else |
-| Mouth asymmetry | pulls to the right (read off the close-up) |
+| Mouth asymmetry | level at rest (read off the v2 close-up); speech pulls right |
 | Voice name (§22U step 7) | `Identity` — from the title "Identity Callout" (confirm no clash on the account at step 6) |
 
 **Unverified:** the `GEN-DEFAULT-male-60s` roster entry does not exist yet, so `VOICE-NARR`'s clearance against the generator default is argued (four axes: accent, texture, rhythm, habit), not measured.
