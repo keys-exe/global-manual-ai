@@ -471,6 +471,19 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .vop.ok{border-color:var(--use);background:var(--use-bg);color:var(--use)}
 .v-audio{display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;width:min(420px,90vw);background:#161a22;border:1px solid #2c323e;border-radius:14px;padding:22px}
 .v-audio audio{width:100%}
+.arows{display:flex;flex-direction:column;gap:8px}
+.arow{border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:8px;background:var(--surface);min-width:0}
+.arow.ok{border-color:var(--use)}
+.a-head{display:flex;align-items:center;gap:8px;min-width:0}
+.a-ic{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);flex:none}
+.a-ic .ico{position:static;width:14px;height:14px;opacity:1}
+.a-part{font-family:var(--mono);font-weight:700;font-size:13.5px;flex:none}
+.a-line{font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.a-ctl{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.a-ctl audio{height:34px;flex:1;min-width:200px;max-width:100%}
+.a-dur{font-size:12px;color:var(--muted)}
+.a-ver{display:flex;flex-direction:column;gap:2px}
+.a-ver select{background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-size:12.5px;max-width:100%}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
 .box-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:14px 14px 0}
 .box-head .sn{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;background:var(--ink);color:var(--surface);flex:none}
@@ -567,7 +580,7 @@ const STAGES = [
   {key:"cast",       name:"Cast",       folder:"02_CAST",       sub:"Avatar sheets · §19 · judged by §22V", kind:"image"},
   {key:"locations",  name:"Locations",  folder:"03_LOCATIONS",  sub:"Property & location maps · §30G", kind:"image"},
   {key:"voice",      name:"Voice",      folder:"04_VOICE",      sub:"Everyone who speaks has a voice · §22U steps 1–7", kind:"audio"},
-  {key:"vo",         name:"VO",         folder:"04_VOICE",      sub:"Voice-over takes, hooks + body · §22U steps 8–10", kind:"audio", narration:true},
+  {key:"vo",         name:"VO",         folder:"04_VOICE",      sub:"Voice-over takes, hooks + body · §22U steps 8–10", kind:"audio", narration:true, wide:true},
   {key:"talking",    name:"Talking heads", folder:"06_TALKING_HEADS", sub:"HeyGen Avatar V + motion prompt · after the VO is locked", kind:"video", narration:true},
   {key:"hooks",      name:"Hooks",      folder:"05_HOOKS",      sub:"One variant per hook · §30H", kind:"video"},
   {key:"broll",      name:"B-roll",     folder:"07_BROLL",      sub:"One clip per line · §27 · judged by §22W", kind:"video", wide:true},
@@ -607,7 +620,7 @@ const OFFLINE = {
   gens:[]
 };
 
-const state = {builds:[], gens:[], build:null, filter:"all", q:"", live:false, readOnly:false, db:null, assets:null, downloads:null, editing:null, view:"board", docs:[], pdoc:null, pact:"all", psubj:"all", pmode:{}, mstage:"all", mneeds:false, faultOpen:null, busy:{}};
+const state = {builds:[], gens:[], build:null, filter:"all", q:"", live:false, readOnly:false, db:null, assets:null, downloads:null, editing:null, view:"board", voSel:{}, docs:[], pdoc:null, pact:"all", psubj:"all", pmode:{}, mstage:"all", mneeds:false, faultOpen:null, busy:{}};
 const $ = s=>document.querySelector(s);
 const esc = s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const num = n=>Number(n||0).toLocaleString("en-US");
@@ -674,6 +687,48 @@ function voSummary(b,gens){
   return `<div class="vosum"><span class="lbl">Parts</span>${p.map(x=>`<span class="vop ${x.use?"ok":""}">${x.use?I.ok:""}<b>${esc(x.part)}</b>${x.use?` <span class="mono">${esc(String(x.use.beat||"").split("-").slice(-2,-1)[0]||"")}</span>`:` <span class="note">${x.takes} take${x.takes===1?"":"s"} to choose from</span>`}</span>`).join("")}
     ${voLocked(b,gens)?`<span class="pill s-use">Locked</span>`:`<span class="note">Confirm one take per part to lock the VO.</span>`}</div>`;
 }
+// Audio is never shown as a portrait frame: it gets a compact row with a player.
+function isAudio(g){return g.kind==="audio"||String(g.videoType||"").startsWith("audio/")||g.stage==="vo"||(g.stage==="voice"&&/-SRC$/i.test(g.beat||""))}
+const takeNo=g=>{const m=String(g.beat||"").match(/-T(\d+)-/i);return m?Number(m[1]):0};
+const wpmOf=g=>{const m=String(g.title||"").match(/~\s*(\d+)\s*wpm/i);return m?m[1]:""};
+const secs=v=>v==null||v===""?"":`${Number(v).toFixed(Number(v)<10?2:1).replace(/\.0+$/,"")}s`;
+function audioEl(g){const d=STEP.file;return g[d.asset]?`<audio controls preload="none" ${srcFrom(g[d.asset],g[d.parts],g[d.type])}></audio>`:`<span class="note">No file yet</span>`}
+function audioRow(g){
+  const st=g.status||"planned", ok=st==="use";
+  return `<div class="arow ${ok?"ok":""}">
+    <div class="a-head"><span class="a-ic" aria-hidden="true">${ICONS.audio}</span><span class="a-part">${esc(g.beat||"")}</span><span class="a-line">${esc(g.title||"")}</span></div>
+    <div class="a-ctl">${audioEl(g)}<span class="mono a-dur">${esc(secs(g.duration))}</span>
+      <span class="pill s-${st}">${esc(ok?"Confirmed":STATUS_LABEL[st]||st)}</span>
+      ${!ok&&!state.readOnly&&g.videoAsset?`<button class="btn small ok" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="file">${I.ok} Confirm</button>`:""}
+      <button class="btn small" type="button" data-dl="${esc(g.id)}" data-step="file" ${g.videoAsset?"":"disabled"} aria-label="Download ${esc(g.beat||"")}">${I.dl}</button></div></div>`;
+}
+// VO: one row per part (HK1…, BODY); the takes are that part's versions.
+function voRows(gens){
+  const vo=gens.filter(g=>g.stage==="vo");
+  return voParts(gens).map(p=>{
+    const takes=vo.filter(g=>voPart(g)===p.part).sort((a,b)=>takeNo(a)-takeNo(b));
+    const sel=takes.find(g=>g.id===state.voSel[p.part])||p.use||takes[takes.length-1];
+    const line=(sel&&sel.line||"").split("\n")[0].replace(/^["“”\s]+|["“”\s]+$/g,"");
+    return `<div class="arow vo ${p.use?"ok":""}">
+      <div class="a-head"><span class="a-part">${esc(p.part)}</span>${p.use?`<span class="pill s-use">Locked · T${takeNo(p.use)}</span>`:`<span class="pill s-review">Choose a take</span>`}<span class="a-line">${line?`“${esc(line)}”`:""}</span></div>
+      <div class="a-ctl">
+        <label class="a-ver"><span class="lbl">Version</span>
+          <select data-vtake="${esc(p.part)}" aria-label="Version of ${esc(p.part)}">${takes.map(g=>`<option value="${esc(g.id)}"${g===sel?" selected":""}>v${takeNo(g)} · take ${takeNo(g)} · ${esc(secs(g.duration))}${wpmOf(g)?` · ~${wpmOf(g)} wpm`:""}${g.status==="use"?" · ✓ confirmed":""}</option>`).join("")}</select></label>
+        ${sel?audioEl(sel):""}
+        ${sel&&sel.status==="use"?`<span class="pill s-use">Confirmed</span>`:sel&&!state.readOnly?`<button class="btn small ok" type="button" data-takeok="${esc(sel.id)}" data-part="${esc(p.part)}">${I.ok} Confirm take ${takeNo(sel)}</button>`:""}
+        ${sel?`<button class="btn small" type="button" data-dl="${esc(sel.id)}" data-step="file" aria-label="Download take ${takeNo(sel)}">${I.dl}</button>`:""}
+      </div></div>`;
+  }).join("");
+}
+async function confirmTake(id,part){
+  if(!state.db) return;
+  const others=state.gens.filter(g=>g.stage==="vo"&&voPart(g)===part&&g.id!==id&&g.status==="use");
+  try{
+    for(const o of others) await state.db.doc("generations/"+o.id).update({status:"review",updatedAt:Date.now()});
+    await state.db.doc("generations/"+id).update({status:"use",updatedAt:Date.now()});
+    state.voSel[part]=id; toast(`${part} locked on take ${takeNo(state.gens.find(g=>g.id===id)||{})}`);
+  }catch(e){handleWriteError(e)}
+}
 function render(){renderInner();hydrate()}
 function renderInner(){
   const b=currentBuild();
@@ -728,12 +783,13 @@ function renderInner(){
     const sg=all.filter(matches).sort(beatSort);
     const u=all.filter(g=>g.status==="use").length;
     const link=folders[s.folder]?`<a href="https://drive.google.com/drive/folders/${esc(folders[s.folder])}" target="_blank" rel="noopener">Drive ↗</a>`:"";
-    let body=sg.length?`<div class="tiles">${sg.map(tile).join("")}</div>`:
+    const vis=sg.filter(g=>!isAudio(g)), aud=sg.filter(isAudio);
+    let body=sg.length?(vis.length?`<div class="tiles">${vis.map(tile).join("")}</div>`:"")+(aud.length?`<div class="arows">${aud.map(audioRow).join("")}</div>`:""):
       `<div class="empty">${all.length?"Nothing matches this filter.":"No generations yet."}</div>`;
     // Absorption makes a document, not renders: show the sheet's key numbers and open it in Plan
     if(s.key==="absorption"&&!all.length) body=absorptionSummary(b);
     if(s.key==="voice") body=voiceChecklist(b)+(all.length?`<span class="lbl" style="display:block;margin:14px 0 8px">Voice building</span>`+body:voiceList(b).length?"":body);
-    if(s.key==="vo") body=voSummary(b,gens)+body;
+    if(s.key==="vo") body=all.length?`<div class="arows">${voRows(gens)}</div>`:body;
     if(s.key==="talking"&&!voLocked(b,gens)) body=`<p class="note" style="margin:0 0 10px">Talking heads start after the VO is locked.</p>`+body;
     return `<section class="widget${s.wide?" wide":""}" id="w-${s.key}">
       <div class="w-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
@@ -793,7 +849,7 @@ function loadVideo(v){
 }
 function hydrate(root){
   const r=root||document;
-  r.querySelectorAll("img[data-parts]:not([src])").forEach(el=>{
+  r.querySelectorAll("img[data-parts]:not([src]),audio[data-parts]:not([src])").forEach(el=>{
     joinParts(el.dataset.parts.split(","),el.dataset.ptype).then(u=>{el.src=u}).catch(()=>{});
   });
   r.querySelectorAll("video").forEach(v=>{
@@ -987,15 +1043,17 @@ function renderManual(gens){
   const html=gs.map(x=>{
     if(state.mstage!=="all"&&state.mstage!==x.key) return "";
     const steps=["image","video","file"].filter(k=>x.items.some(g=>flow(g).includes(k)));
-    const done=x.items.filter(g=>!needsMe(g)).length;
-    const beats=x.items.map(g=>g.beat).filter(Boolean);
+    const isVO=x.key==="stage-vo", vp=isVO?voParts(gens):null;
+    const done=isVO?vp.filter(y=>y.use).length:x.items.filter(g=>!needsMe(g)).length;
+    const beats=isVO?vp.map(y=>y.part):x.items.map(g=>g.beat).filter(Boolean);
     return `<section class="mgroup" id="m-${x.key}">
       <div class="mg-head">
         <div class="kv"><span class="lbl">${esc(x.kicker)}</span><h2 class="act">${esc(x.label)}</h2></div>
-        <div class="kv"><span class="lbl">Beats</span><span class="mono">${esc(beats.length>4?beats[0]+" – "+beats[beats.length-1]:beats.join(", "))}</span></div>
-        <div class="kv"><span class="lbl">Done</span><span class="mono">${done}/${x.items.length}</span></div></div>
+        <div class="kv"><span class="lbl">${isVO?"Parts":"Beats"}</span><span class="mono">${esc(!isVO&&beats.length>4?beats[0]+" – "+beats[beats.length-1]:beats.join(", "))}</span></div>
+        <div class="kv"><span class="lbl">${isVO?"Locked":"Done"}</span><span class="mono">${done}/${isVO?vp.length:x.items.length}</span></div></div>
       ${x.note?`<p class="note" style="margin:0">${esc(x.note)}</p>`:""}
-      <div class="boxes${x.items.length<=2&&steps.length>1?" pair":""}">${steps.map(k=>stepBox(x,k,x.items)).join("")}</div></section>`;
+      ${x.key==="stage-vo"?`<div class="box"><div class="box-head"><span class="sn">♪</span><div class="kv"><span class="lbl">VO · one row per part</span><h3>Takes</h3></div><span class="grow"></span>${voLocked(currentBuild(),gens)?`<span class="pill s-use">VO locked</span>`:`<span class="note">Confirm one take per part to lock the VO.</span>`}</div><div class="arows" style="padding:0 14px">${voRows(gens)}</div></div>`:
+      `<div class="boxes${x.items.length<=2&&steps.length>1?" pair":""}">${steps.map(k=>stepBox(x,k,x.items)).join("")}</div>`}</section>`;
   }).join("");
   const fi=document.querySelector("[data-faultform] textarea"), draft=fi?fi.value:"", had=fi&&document.activeElement===fi;
   $("#mlist").innerHTML=html||`<div class="empty">No generations in this build yet.</div>`;
@@ -1026,7 +1084,7 @@ function stepBox(grp,k,all){
     </div>
     ${note?`<p class="note box-note">${note}</p>`:""}
     <div class="bar" style="margin:0 14px"><i style="width:${items.length?ok/items.length*100:0}%;background:var(--use)"></i></div>
-    ${list.length?`<div class="cards">${list.map(g=>mediaCard(g,k)).join("")}</div>`:`<div class="empty" style="margin:14px">All ${plural.toLowerCase()} here are confirmed.</div>`}
+    ${list.length?(list.some(g=>!isAudio(g))?`<div class="cards">${list.filter(g=>!isAudio(g)).map(g=>mediaCard(g,k)).join("")}</div>`:"")+(list.some(isAudio)?`<div class="arows" style="padding:0 14px">${list.filter(isAudio).map(audioRow).join("")}</div>`:""):`<div class="empty" style="margin:14px">All ${plural.toLowerCase()} here are confirmed.</div>`}
   </div>`;
 }
 function when(ms){if(!ms) return "—";const d=new Date(ms);return isNaN(d)?"—":d.toLocaleString(undefined,{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"})}
@@ -1502,9 +1560,10 @@ function tocJump(i){
 /* events */
 let pickTarget=null;
 document.addEventListener("click",e=>{
-  const t=e.target.closest("[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
+  if(ds.takeok){confirmTake(ds.takeok,ds.part);return}
   if(ds.absok){confirmAbsorption();return}
   if(ds.popen){state.view="plan";lsSet("gb.view","plan");state.pdoc=ds.popen;state.pactive=0;state.planSig=null;render();window.scrollTo({top:0});return}
   if(ds.pdoc){state.pdoc=ds.pdoc;state.pact="all";state.psubj="all";state.pactive=0;render();window.scrollTo({top:$("#planView").offsetTop-12});return}
@@ -1562,6 +1621,7 @@ $("#picker").addEventListener("change",e=>{const f=e.target.files[0];if(f&&pickT
 ["dragover","dragenter"].forEach(ev=>document.addEventListener(ev,e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(t){e.preventDefault();t.classList.add("drag")}}));
 document.addEventListener("dragleave",e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(t) t.classList.remove("drag")});
 document.addEventListener("drop",e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(!t) return;e.preventDefault();t.classList.remove("drag");const f=e.dataTransfer.files[0];if(f) uploadTo(t.dataset.drop,t.dataset.step,f)});
+document.addEventListener("change",e=>{const sl=e.target.closest&&e.target.closest("select[data-vtake]");if(sl){state.voSel[sl.dataset.vtake]=sl.value;render()}});
 document.addEventListener("input",e=>{if(e.target.id==="search"){state.q=e.target.value;const pos=e.target.selectionStart;render();const s=$("#search");s.focus();s.setSelectionRange(pos,pos)}});
 $("#scrim").addEventListener("click",closeDrawer);
 
