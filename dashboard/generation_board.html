@@ -253,6 +253,28 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .boxes{display:flex;flex-direction:column;gap:14px}
 .boxes.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));align-items:start}
 .mc-tools .btn{white-space:nowrap;font-size:12px}
+.tile .frame{border:0;text-align:left;cursor:zoom-in;width:100%}
+.caprow{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.linkbtn{border:0;background:transparent;color:var(--accent);font-size:12px;padding:2px 0;font-weight:600}
+.mc .media.filled{cursor:zoom-in}
+.mc .media:not(.filled){cursor:default}
+.media .play{position:absolute;inset:auto auto 8px 8px;width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;display:grid;place-items:center;font-size:12px;padding-left:2px}
+.viewer{position:fixed;inset:0;z-index:40;background:rgba(8,10,14,.97);color:#fff;display:flex;flex-direction:column;padding:calc(12px + env(safe-area-inset-top,0px)) 16px calc(12px + env(safe-area-inset-bottom,0px))}
+.viewer .lbl{color:rgba(255,255,255,.55)}
+.v-top,.v-bottom{display:flex;align-items:center;gap:12px;flex-wrap:wrap;max-width:1100px;width:100%;margin:0 auto}
+.v-top .grow,.v-bottom .grow{flex:1}
+.v-beat{font-family:var(--display);font-weight:700;font-size:18px}
+.v-tabs{display:inline-flex;background:rgba(255,255,255,.08);border-radius:9px;padding:3px;gap:2px}
+.v-tabs .tab{color:rgba(255,255,255,.7)}
+.v-tabs .tab[aria-selected="true"]{background:#fff;color:#111}
+.viewer .btn{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff}
+.viewer .btn.primary{background:#fff;color:#111;border-color:#fff}
+.v-stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;gap:12px;padding-block:12px}
+.v-media{height:100%;max-height:100%;aspect-ratio:9/16;max-width:calc(100% - 100px);display:grid;place-items:center}
+.v-media img,.v-media video{max-width:100%;max-height:100%;width:auto;height:auto;border-radius:10px;display:block;background:#000}
+.v-empty{border:1px dashed rgba(255,255,255,.3);border-radius:12px;width:100%;height:100%;display:grid;place-items:center;color:rgba(255,255,255,.7);padding:16px;text-align:center}
+.v-nav{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font-size:24px;line-height:1;flex:none}
+@media (max-width:520px){.v-media{max-width:calc(100% - 80px)}.v-nav{width:36px;height:36px}}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
 .box-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:14px 14px 0}
 .box-head .sn{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;background:var(--ink);color:var(--surface);flex:none}
@@ -334,6 +356,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 
 <div class="scrim" id="scrim" hidden></div>
 <aside class="drawer" id="drawer" hidden aria-labelledby="dTitle" role="dialog"></aside>
+<div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-label="View generation" data-vclose=""></div>
 <div class="toast" id="toast" hidden></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
@@ -458,12 +481,14 @@ function tile(g){
   const kind=g.kind||stage.kind;
   const specs=[g.duration?`${g.duration}s`:"", g.regens?`R${g.regens}`:""].filter(Boolean);
   const img=g.imageAsset?`<img class="bg" src="/_blob/${esc(g.imageAsset)}" alt="" loading="lazy">`:"";
-  return `<button class="tile s-${st}" type="button" data-open="${esc(g.id)}" aria-label="${esc((g.beat||"")+" "+(g.title||""))}">
-    <div class="frame${img?" has-img":""}">${img}<span class="stripe"></span>${ICONS[kind]||""}
+  const first=flow(g).find(k=>g[STEP[k].asset])||flow(g)[0];
+  return `<div class="tile s-${st}">
+    <button class="frame${img?" has-img":""}" type="button" data-viewm="${esc(g.id)}" data-step="${first}" aria-label="View ${esc(g.beat||"")}">${img}<span class="stripe"></span>${ICONS[kind]||""}
       <div><div class="kind">${esc(kind)}</div><div class="beat">${esc(g.beat||"—")}</div></div>
       <div class="line">${esc(g.line||g.title||"")}</div>
-      <div class="dur"><span>${esc(g.model?shortModel(g.model):"")}</span><span>${specs.join(" · ")}</span></div></div>
-    <div class="cap"><span class="ttl">${esc(g.title||g.beat||"Untitled")}</span><span class="pill">${esc(STATUS_LABEL[st]||st)}</span></div></button>`;
+      <div class="dur"><span>${esc(g.model?shortModel(g.model):"")}</span><span>${specs.join(" · ")}</span></div></button>
+    <div class="cap"><span class="ttl">${esc(g.title||g.beat||"Untitled")}</span>
+      <span class="caprow"><span class="pill">${esc(STATUS_LABEL[st]||st)}</span><button class="linkbtn" type="button" data-open="${esc(g.id)}">Edit</button></span></div></div>`;
 }
 function shortModel(m){return String(m).replace("kling-video-v3_0_omni","kling 3.0 omni").replace(/_/g," ")}
 
@@ -676,9 +701,9 @@ function mediaCard(g,k){
   const busy=state.busy[g.id+":"+k];
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
   const imgBehind=locked&&g.imageAsset?`<img class="ghost" src="/_blob/${esc(g.imageAsset)}" alt="">`:"";
-  const media=asset?(isVid?`<video src="/_blob/${esc(asset)}" muted loop playsinline controls preload="metadata"></video>`:type.startsWith("image/")||k==="image"?`<img src="/_blob/${esc(asset)}" alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
+  const media=asset?(isVid?`<video src="/_blob/${esc(asset)}" muted playsinline preload="metadata"></video><span class="play" aria-hidden="true">▶</span>`:type.startsWith("image/")||k==="image"?`<img src="/_blob/${esc(asset)}" alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
     locked?`${imgBehind}<span class="lockmsg">🔒 Confirm the image first</span>`:
-    `<span>${s==="bad"?"Regenerating…":prompt?"Waiting for render":"Waiting for prompt"}${ro?"":`<br><small>or drop a file here</small>`}</span>`;
+    `<span>${s==="bad"?"Regenerating…":prompt?"Waiting for render":"Waiting for prompt"}${ro?"":`<br><small>drop a file here to add it</small>`}</span>`;
   const limit=/kling/i.test(model)&&k!=="image"?2500:null;
   const fixing=state.faultOpen===g.id+":"+k;
   const cls=locked?"locked":s==="ok"?"ok":s==="bad"||s==="gen"?"bad":s==="review"?"now":"";
@@ -697,7 +722,7 @@ function mediaCard(g,k){
     <div class="mc-head">
       <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}</span></div>
       <div class="kv end"><span class="lbl">Status</span>${chip}</div></div>
-    <div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="Upload ${d.label.toLowerCase()} for ${esc(g.beat)}"`}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>
+    <div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}"`} ${asset?`data-viewm="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="View ${d.label.toLowerCase()} for ${esc(g.beat)}"`:""}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>
     <div class="kv"><span class="lbl">Shot</span><span class="mc-t">${esc(g.title||"—")}</span></div>
     ${g.line?`<div class="kv"><span class="lbl">Script line</span><span class="mc-l">“${esc(g.line)}”</span></div>`:""}
     <dl class="specs">${specs.map(([a,b,c])=>`<div${c?` class="${c}"`:""}><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
@@ -786,13 +811,60 @@ async function setVerdict(gid,k,ok,fault){
 }
 function copyText(t,what){navigator.clipboard.writeText(t).then(()=>toast(what+" copied"),()=>toast("Copy was blocked. Select the text and copy it."))}
 
+
+/* viewer: clicking an image or video shows it, nothing else */
+function viewerList(step){
+  return groups(buildGens()).flatMap(x=>x.items).filter(g=>flow(g).includes(step));
+}
+function openViewer(id,step){state.viewer={id,step};renderViewer()}
+function closeViewer(){if(!state.viewer) return;state.viewer=null;const v=$("#viewer");v.hidden=true;v.innerHTML=""}
+function moveViewer(dir){
+  const v=state.viewer; if(!v) return;
+  const list=viewerList(v.step), i=list.findIndex(g=>g.id===v.id);
+  const n=list[(i+dir+list.length)%list.length]; if(n){v.id=n.id;renderViewer()}
+}
+function renderViewer(){
+  const v=state.viewer; if(!v) return;
+  const g=state.gens.find(x=>x.id===v.id); if(!g){closeViewer();return}
+  const k=v.step, d=STEP[k], asset=g[d.asset], type=g[d.type]||"";
+  const list=viewerList(k), i=list.findIndex(x=>x.id===g.id);
+  const isVid=type.startsWith("video/")||(k==="video"&&!type);
+  const media=asset?(isVid?`<video src="/_blob/${esc(asset)}" controls autoplay loop playsinline></video>`:`<img src="/_blob/${esc(asset)}" alt="${esc(g.beat)} ${d.label}">`):
+    `<div class="v-empty">${k==="video"&&stepState(g,"image")!=="ok"?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
+  const s=stepState(g,k);
+  const chip=s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
+  const grp=groupOf(g);
+  $("#viewer").innerHTML=`
+    <div class="v-top">
+      <div class="kv"><span class="lbl">${esc(grp.label)}</span><span class="v-beat">${esc(g.beat||"")} · ${esc(g.title||"")}</span></div>
+      <div class="v-tabs">${flow(g).map(x=>`<button type="button" class="tab" data-vstep="${x}" aria-selected="${x===k}">${STEP[x].label}</button>`).join("")}</div>
+      <span class="grow"></span>${chip}
+      <button class="btn small" type="button" data-vclose="x" aria-label="Close">✕ Close</button></div>
+    <div class="v-stage" data-vclose="">
+      ${list.length>1?`<button class="v-nav prev" type="button" data-vnav="-1" aria-label="Previous">‹</button>`:""}
+      <div class="v-media">${media}</div>
+      ${list.length>1?`<button class="v-nav next" type="button" data-vnav="1" aria-label="Next">›</button>`:""}
+    </div>
+    <div class="v-bottom">
+      <span class="mono">${i+1} / ${list.length} ${d.label.toLowerCase()}s</span>
+      <span class="grow"></span>
+      <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${g[d.prompt]?"":"disabled"}>Copy prompt</button>
+      <button class="btn small primary" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>⬇ Download</button>
+    </div>`;
+  const el=$("#viewer"); el.hidden=false;
+}
+
 /* events */
 let pickTarget=null;
 document.addEventListener("click",e=>{
-  const t=e.target.closest("[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
-  if(ds.open){const x=state.gens.find(y=>y.id===ds.open);if(x) openDrawer(x,false)}
+  if(ds.viewm){openViewer(ds.viewm,ds.step)}
+  else if(ds.vnav){moveViewer(Number(ds.vnav))}
+  else if(ds.vstep){state.viewer.step=ds.vstep;renderViewer()}
+  else if(ds.vclose!==undefined&&(ds.vclose==="x"||e.target===t)){closeViewer()}
+  else if(ds.open){closeViewer();const x=state.gens.find(y=>y.id===ds.open);if(x) openDrawer(x,false)}
   else if(ds.add){openDrawer({stage:ds.add,status:"planned"},true)}
   else if(ds.f){state.filter=ds.f;render()}
   else if(ds.jump){const w=$("#w-"+ds.jump);if(w) w.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}
@@ -811,12 +883,13 @@ document.addEventListener("click",e=>{
     else {state.faultOpen=g.id+":"+ds.step;render();const i=document.getElementById(`fault-${g.id}-${ds.step}`);if(i) i.focus()}
   }
   else if(ds.faultcancel){state.faultOpen=null;render()}
-  else if(ds.drop){if(e.target.closest("video")) return;pickTarget={id:ds.drop,step:ds.step};const p=$("#picker");p.accept=STEP[ds.step].accept;p.value="";p.click()}
+
 });
 document.addEventListener("keydown",e=>{
+  if(state.viewer){if(e.key==="Escape") closeViewer(); else if(e.key==="ArrowRight") moveViewer(1); else if(e.key==="ArrowLeft") moveViewer(-1); return}
   if(e.key==="Escape"&&!$("#drawer").hidden) closeDrawer();
-  const t=e.target.closest&&e.target.closest("[data-drop]");
-  if(t&&(e.key==="Enter"||e.key===" ")){e.preventDefault();t.click()}
+  const t=e.target.closest&&e.target.closest("[data-viewm]");
+  if(t&&t.tagName!=="BUTTON"&&(e.key==="Enter"||e.key===" ")){e.preventDefault();t.click()}
 });
 document.addEventListener("submit",e=>{
   const f=e.target.closest("[data-faultform]"); if(!f) return;
@@ -856,7 +929,7 @@ render();
   },err=>{setSync(false,"Sync stopped")});
   db.collection("generations").onSnapshot(snap=>{
     state.gens=snap.docs.map(d=>({id:d.id,...d.data()}));
-    setSync(true,"Live");render();
+    setSync(true,"Live");render();if(state.viewer) renderViewer();
     if(state.editing&&!state.editing._new&&!state.gens.some(g=>g.id===state.editing.id)) closeDrawer();
   },err=>{setSync(false,"Sync stopped")});
 })();
