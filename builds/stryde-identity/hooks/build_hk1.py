@@ -31,10 +31,11 @@ def fill(s, d):
 grip = "two-hand presentation: " + dict(P.HELD_GRIPS)["two-hand presentation"].split(" -- ")[0]
 HK1T = "\n\n".join([
   S("CAM-LOCK"),
-  "A snapshot from a phone propped against the pen pot on his desk at chest height, about a metre from him, leaning back a little and not quite level, nobody looking at its screen. "
-  "The man is an orthopaedic surgeon, seated at the desk and leaning towards it, holding the strap out to the phone in both hands; his face is cut off at the chin by the top of the frame, "
-  "so the frame shows his jaw, shirt collar, jumper, forearms and hands — big square hands with age spots and clean short nails. "
-  "Behind him the X-ray lightbox glows cool white on the back wall with two knee X-rays side by side, the bookshelf of worn textbooks beside it, both soft and out of focus. "
+  "A snapshot from a phone propped against the pen pot on his desk, about sixty centimetres from him, leaning back a little and not quite level, nobody looking at its screen. "
+  "A tight chest-level shot of an older man, an orthopaedic surgeon, sitting at the desk and holding the strap out towards the camera in both hands: "
+  "his upper body fills the frame from just under his chin down to the desk — the frame's top edge passes across the underside of his chin and the knot of his shirt collar, "
+  "so the shot is his collar, jumper, forearms and big square hands with age spots and clean short nails, with the strap held out in front of his chest. "
+  "Beside his shoulder, a knee X-ray glows cool white on the lightbox on the back wall, soft and out of focus. "
   "Nothing of anyone holding the phone is in frame. " + SPLIT_T2I,
   fill(S("SUBJ-REF"), {"[two or three named markers: hair, build, one distinctive feature]":
        "tall and slightly stooped, broad square jaw, close white hair at the sides"}) + " "
@@ -43,20 +44,21 @@ HK1T = "\n\n".join([
   fill(S("SCENE-REF"), {"[LOCATION]": "CONSULTING ROOM",
        "[the location's named anchors, stated in one clause]": "the X-ray lightbox with two knee X-rays on the back wall, the tall bookshelf of worn textbooks beside it, the desk under the left-hand window, the anatomical knee model on the desk",
        "[where the camera now sits, what it looks across, and how that differs from the reference view]": "on the desk itself at chest height, looking across the desk at the surgeon with the back wall and its lightbox directly behind him, where the reference was taken from the door"}),
-  P.REF_PROD + " held in a " + grip + ". " + P.SIZE_HELD + " The front face and the wordmark are square to the lens and readable; the hands are on the pad and the shell's lower edge only.",
+  P.REF_PROD + " held in a " + grip + ". " + P.SIZE_HELD + " The front face and the wordmark are square to the lens and readable; the hands are on the pad and the shell's lower edge only. Each chrome slide carries exactly three small engraved dotted chevrons stacked vertically and pointing up — no other marks, icons or symbols on the slides. His fingertips press on the pad behind the shell and his thumbs rest on the shell's lower edge near each end, well inside the chrome slides; both slides are fully visible and untouched.",
   "Light: cool daylight from the window on his left, the lightbox behind him glowing white and rimming the hands and the strap's peaks, the front of the hands a stop darker with soft sensor noise.",
   S("CAP-FILE"),
-  "AVOID: " + NEGS(S("NEG-FILE"), S("NEG-NOFACE"), S("NEG-SCENE"), S("NEG-SUBJ"), S("NEG-M1"), P.NEG_HELD_P, P.NEG_OBSERVED, "no second strap, no text on screen, no readable writing on the X-rays"),
+  "AVOID: " + NEGS(S("NEG-FILE"), S("NEG-NOFACE"), S("NEG-SCENE"), S("NEG-SUBJ"), S("NEG-M1"), P.NEG_HELD_P, P.NEG_OBSERVED, "no second strap, no text on screen, no readable writing on the X-rays, no mouth, no nose, no erased or cut-away head, no head fragment, no ceiling in frame, no icons or symbols on the chrome slides, no fingers on or over the chrome slides"),
 ])
 
 # ------------------------------------------------------------------ HK1-B  (C1, hall stairs, worn, bent)
 HK1B = "\n\n".join([
   S("CAM-LOCK"),
-  "A snapshot from a phone held low by someone standing two steps below her on the stairs, pointed up at her right knee, held at arm's length and tilted, not looking at the screen. "
-  "An extreme close-up of an older woman's right knee as she steps down the carpeted staircase at home: her right foot in a tartan slipper reaching down to the next stair, the knee bent and taking her weight, "
-  "the hem of her teal skirt resting a hand above the knee, the knee bare. One hand rests on the mahogany handrail at the side of the frame, just above the knee, soft. "
-  "The stairs are worn beige carpet held by brass stair rods; the magnolia wall beside them; the hall below soft and out of focus. "
-  "The edge of the phone-holder's other hand is soft at the bottom corner, too close to the lens. " + SPLIT_T2I,
+  "A snapshot from a phone held low by someone standing two steps below her on the stairs, very close to her right knee and pointed at it, tilted, not looking at the screen. "
+  "AN EXTREME CLOSE-UP OF AN OLDER WOMAN'S RIGHT KNEE WEARING THE STRAP as she steps down the carpeted staircase at home: the knee and the strap fill the width of the frame, "
+  "from just above the kneecap to the top of the shin, the knee bent mid-step as her right foot reaches down to the next stair below the bottom edge. "
+  "Only the hem of her teal skirt shows at the very top edge. Her hands, the handrail and the rest of her are out of frame. "
+  "Behind the knee, soft and out of focus, the worn beige stair carpet with a brass stair rod and a strip of magnolia wall. "
+  + SPLIT_T2I.replace("the hands, the strap and the action", "the knee and the strap"),
   fill(S("SUBJ-REF"), {"[two or three named markers: hair, build, one distinctive feature]":
        "short and heavyset, heavy bare knees and calves, age-spotted hands"}) + " "
   + fill(S("WARD-LINE"), {"[BASE]": "a mustard-and-teal paisley blouse", "[MID if present], ": "", "[OUTER if present], ": "",
@@ -69,7 +71,7 @@ HK1B = "\n\n".join([
   P.LEG_SKIN.replace("about sixty", "about seventy-four"),
   "Light: morning daylight from the front-door glass below throws a pale wash up the stair carpet and across the knee from the front and below; the wall behind falls a stop darker with soft sensor noise.",
   S("CAP-FILE"),
-  "AVOID: " + NEGS(S("NEG-FILE"), S("NEG-NOFACE"), S("NEG-SCENE"), S("NEG-PROP"), S("NEG-SUBJ"), S("NEG-M1"), side(P.NEG_PLACE), P.NEG_BENT, P.NEG_ORIENT, P.NEG_OBSERVED, "no trousers, no tights, no strap over clothing, no text on screen"),
+  "AVOID: " + NEGS(S("NEG-FILE"), S("NEG-NOFACE"), S("NEG-SCENE"), S("NEG-PROP"), S("NEG-SUBJ"), S("NEG-M1"), side(P.NEG_PLACE), P.NEG_BENT, P.NEG_ORIENT, P.NEG_OBSERVED, "no trousers, no tights, no strap over clothing, no text on screen, no hands in frame, no handrail in frame, no full leg, no feet in frame, no wide shot"),
 ])
 out = {"HK1-T": HK1T, "HK1-B": HK1B}
 for k, v in out.items():
@@ -80,13 +82,13 @@ SPLIT_I2V = "split: the action stays in the middle band of the frame, nothing th
 I2V = {}
 I2V["HK1-T"] = {
   "shot": "hk1_top_surgeon_presents_strap",
-  "subject": S("INHERIT-SUBJ") + " The strap is held in both of his hands at the shell's ends, his face above the top edge of frame.",
+  "subject": S("INHERIT-SUBJ") + " The strap is held up in both of his hands; his head stays where it is at the very top edge of the frame, leaning over the strap.",
   "camera": {"movement": S("RIG-R3C"),
-             "framing": "PROPPED as in the start frame, hands and strap in the middle of frame, face never entering; " + SPLIT_I2V + "."},
+             "framing": "PROPPED as in the start frame, hands and strap in the middle of frame, his head staying at the top edge; " + SPLIT_I2V + "."},
   "motion": "Already holding the strap out to the lens, he turns it once, slowly, a half turn so the plain matte-black pad faces the camera, the band swinging behind; as the clip ends he starts turning it back, not yet there. " + S("HOLD-C") + " " + P.HOLD_PC + " " + S("PHYS-MOTION-C"),
   "lighting": S("INHERIT-CAP"),
   "style": "As in the start frame.",
-  "negatives": NEGS(S("NEG-WARP-C"), "no shell bending, no peaks becoming uneven, no wordmark changing, no second strap, no hand gripping the band, no fingers across the wordmark, no face entering frame, no text on screen, no music"),
+  "negatives": NEGS(S("NEG-WARP-C"), "no shell bending, no peaks becoming uneven, no wordmark changing, no second strap, no hand gripping the band, no fingers across the wordmark, no head moving down into the middle of frame, no face turning to camera, no text on screen, no music"),
 }
 I2V["HK1-B"] = {
   "shot": "hk1_bottom_knee_steps_down",

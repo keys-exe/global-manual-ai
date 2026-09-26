@@ -27,11 +27,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **§22U step 10 done: T4 locked by the user**, then re-cut to the user's own reference edit (house cut:
   butt joins, words to −38 dB, no breaths). Masters HK1/HK2/HK3 = 57.85 / 57.91 / 58.08s, verbatim, on the board
   (`VO-MASTER-HK1…3`, review). Word timestamps in `vo/master/HK<n>.words.json`. Reference file: `vo/ref/`.
-- **HK1 (step 6) started 2026-09-26 11:25:** E6 = 5s per band (HK1 speech 3.88s in the master). Start frames on
-  nano_banana_pro (connector reports nano_banana_2 — logged): **HK1-T v2 USE** (v1 REGENERATE: icons on the slide, fingers
-  over it), **HK1-B v1 USE**. Both on the board in review with their Kling I2V JSON (HK1-T 2,353 / HK1-B 2,497 chars,
-  `hooks/HK1-*.i2v.json`). Prompts built by `hooks/build_hk1.py` from Appendix A + the Product Sheet by ID.
-  **Waiting on the user to confirm both images** — then Kling 3.0 omni 5s, 9:16, 1080p per band, §22W, split assembly.
+- **HK1 (step 6), 2026-09-26 11:10–11:40:** E6 = 5s per band (speech 3.88s). User restated VN01 (binding, §27F):
+  top = hands, face cropped at the chin, lightbox + knee X-ray behind; bottom = **extreme close-up** of the knee, the
+  hand on the rail revealed only as the camera eases back. **HK1-B v2 USE** (ECU, no hands; v1 was waist-to-feet with
+  hands on the rails). **HK1-T:** v1 slide icons → v2 USE on product; the chin crop failed twice on regeneration (v3
+  erased the head, v4 full face — the model composes the whole person from the subject sheet), so the two-regeneration
+  budget is spent: **v2 is kept and the split band is cut from his chin (y=372 of 2752)** — `hooks/HK1_split_preview.png`.
+  The hook split has two B-roll bands, which `assemble.py` can't build (its split needs a talking-head track) — HK1 is
+  cut with ffmpeg: top band crop=1536:1365:0:372, bottom band centred. **Waiting on the user to confirm both images.**
 - **Then:** E6 — set every B-roll row's duration from the body word timestamps (span of its line + 0.5s, Kling 3–15s),
   then step 6: the hooks one by one (HK1 first, split layout EG01), as prompts + generations on the board.
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),
