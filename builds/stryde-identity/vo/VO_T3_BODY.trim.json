@@ -1,0 +1,1 @@
+{"src": "full/H8WKX1YAAElMu9TLyHzF.BODY.mp3", "out": "VO_T3_BODY.mp3", "duration_in_s": 65.79, "breaths_cut": [[10.16, 10.32], [16.94, 17.11], [44.2, 44.33], [51.87, 52.06]], "source_end_db": -25.2, "source_end_clipped": true, "verify": {"duration_s": 60.47, "breaths_left": [], "gaps_over_0_4": [], "tail_last_db": -28.5, "status": "FAIL"}}

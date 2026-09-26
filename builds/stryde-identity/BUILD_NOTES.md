@@ -22,7 +22,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   v2 build's Carol). **VO redone in one go on the user's call (09:47 UTC):** HK1+HK2+HK3+body in one eleven_v3 request,
   4 takes, each split at the silences and E11-trimmed → 16 pieces, all verbatim, all on the board (`VO-T<n>-<part>`,
   review). The first round (separate requests) was deleted from board, repo and ElevenLabs history. Details: `vo/VO.md`.
-- **Next, step 10 (user):** pick the take (recommended **T2**: body 53.1s, ~199 wpm). Each variant = HKn + body of that
+- **Trim redone on the user's correction** (hook endings clipped, inhales left) with `vo_trim.py`; T1–T3 bodies
+  have their last word cut off by ElevenLabs. **Next, step 10 (user):** pick the take (recommended **T4**: body 62.0s, clean ending). Each variant = HKn + body of that
   same take. Then save `Identity-Narrator_master.mp3`, take word timestamps, set E6 durations on every B-roll row,
   and start step 6 hooks one by one (HK1–HK3, split layout EG01).
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),

@@ -80,6 +80,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 - `scripts/variants.py` — §30H hook variants: `<BUILD>_HK1.mp4` … each hook + the identical body, set-checked
 - `scripts/contact_sheet.py` — §22W: one image per clip (first → last frame), frozen/black runs, `--full` for zoom
 - `scripts/trim.py` — E11 trim pass (never on a §24I film voice master)
+- `scripts/vo_trim.py` — VO trim for audio-only §22U masters/hooks (Pending Amendment 2026-09-26): cuts by the waveform — word decays kept to −60 dB, inhales cut at phrase boundaries (`--script` lines), pauses 0.28s / 0.10s; flags a take whose last word the TTS cut off
 - `scripts/kie.py` — Kie AI API (§5): `credit`, `upload` (public URL), `image` (fallback), `seedance` (720p, 9:16, ingredients, stated duration), `wait`
 - `scripts/fetch_drive.py` — §18B Drive intake: downloads the shared folder, sorts inspo / script / product sheet / images, extracts document text, measures the inspo
 - `scripts/fetch_loom.py` — §18C: downloads the Loom brief, transcribes it with timestamps, saves frames → `builds/<BUILD>/intake/loom/loom.md` (`LMxx` rows)

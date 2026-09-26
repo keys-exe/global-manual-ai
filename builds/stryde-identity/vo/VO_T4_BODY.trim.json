@@ -1,0 +1,1 @@
+{"src": "full/ZzBlBJ4fBT3haBAlh0Rp.BODY.mp3", "out": "VO_T4_BODY.mp3", "duration_in_s": 67.83, "breaths_cut": [[24.47, 24.65], [52.67, 52.8], [64.5, 64.62]], "source_end_db": -54.2, "source_end_clipped": false, "verify": {"duration_s": 62.02, "breaths_left": [], "gaps_over_0_4": [], "tail_last_db": -55.9, "status": "PASS"}}

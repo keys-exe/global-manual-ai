@@ -16,22 +16,27 @@ The first round (hooks and body as separate requests) was deleted from the board
 **TTS (step 9):** ElevenLabs connector, `eleven_v3`, 4 takes, flow `tEAVkrzG6BhDg0yzhlqU` (≈ 5,416 credits).
 
 **Split** (`split_vo.py`): medium.en word timestamps on each full take → cut in the middle of the silence after
-"bone." / "work." / "anymore." → `HK1` `HK2` `HK3` `BODY`. **Trim** (E11, `trim.py`): every piece, air between words only.
+"bone." / "work." / "anymore." → `HK1` `HK2` `HK3` `BODY`.
 
-| Take | History id | Full | HK1 | HK2 | HK3 | Body (trimmed) | Words |
-|---|---|---|---|---|---|---|---|
-| T1 | `2baqdPMjT7hW66E19TDG` | 77.28s | 3.92 | 3.87 | 4.34 | 50.34s · ~210 wpm | ✓ |
-| **T2** | `3oxVQwX6A3skqRLYMczK` | 80.16s | 3.97 | 4.18 | 4.41 | **53.08s · ~199 wpm** | ✓ |
-| T3 | `H8WKX1YAAElMu9TLyHzF` | 79.28s | 3.87 | 3.79 | 4.02 | 50.96s · ~207 wpm | ✓ |
-| T4 | `ZzBlBJ4fBT3haBAlh0Rp` | 82.56s | 3.89 | 4.21 | 4.26 | 53.32s · ~198 wpm | ✓ |
+**Trim — redone 2026-09-26 on the user's correction** ("the cuts at the end of the hook are so fast the word doesn't
+end; there are still inhales"). The first trim (`trim.py`, transcript word edges + 80 ms) cut 0.13–0.2s off every hook
+ending and left the quiet inhales (~−47 dB) that Whisper folds into the next word. Replaced by
+`scripts/vo_trim.py` (Pending Amendment 2026-09-26): word decays kept to −60 dB, breaths cut at the script's phrase
+boundaries only (so "th" in "through" and "force and" stay), pauses 0.28s after a phrase end / 0.10s elsewhere.
+All 16 pieces re-checked word for word (medium.en, beam 5): **all verbatim**.
 
-Words: every take has every word in order — checked on the full take (medium.en) and again on each trimmed piece;
-the two small-model doubts (T2 "has gone", T1 "feet all day") were re-read with medium.en beam 5 and are correct.
-All 16 trims PASS E1 (entry ≤ cap, tail ≤ cap, no gap > 0.4s).
+| Take | HK1 | HK2 | HK3 | Body | Breaths cut (body) | Ending of the generation |
+|---|---|---|---|---|---|---|
+| T1 `2baq…` | 4.07 | 3.92 | 4.43 | 59.60s | 6 | ✗ cut off mid-"you" (−30 dB on the last frame) |
+| T2 `3oxV…` | 4.16 | 4.26 | 4.55 | 62.13s | 8 | ✗ cut off mid-"you" (−29 dB) |
+| T3 `H8WK…` | 4.04 | 3.88 | 4.11 | 60.47s | 4 | ✗ cut off mid-"you" (−25 dB) |
+| **T4** `ZzBl…` | 4.09 | 4.34 | 4.33 | **62.02s (~170 wpm)** | 3 | ✓ decays to −54 dB |
 
-**Recommended: T2** — pace closest to the reference's 191 wpm, and every word read cleanly by both models.
-T4 is the same pace; T1/T3 run faster (~207–210 wpm). Each variant = HKn + BODY of the **same take**, so the
-voice is identical across the seam.
+Hook endings: every hook's last word now decays to −55…−60 dB before the 20 ms fade (was cut at speech level).
+
+**Recommended: T4** — the only take whose last word is complete in the generation itself (ElevenLabs cut the
+end of T1–T3; a trim cannot restore it, §22U step 10 (4)). Its hooks pass too, so the whole set stays one voice.
+Each variant = HKn + BODY of the **same take**.
 
 **Step 10 (Manual): the user listens and picks the take** (board → Voice, cards `VO-T<n>-<part>`). Accent and
 realism are the ear's call (unverified by instrument).
