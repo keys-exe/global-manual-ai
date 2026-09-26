@@ -2,7 +2,8 @@
 """§30H — place B-roll on its lines, close every hole, render and verify a rough cut.
 
 Usage:
-  assemble.py PLAN.json [--out ROUGH.mp4] [--min-th 1.5] [--dry-run]
+  assemble.py PLAN.json [--out ROUGH.mp4] [--min-th 1.5] [--lead 0.1] [--skip 0.4] [--dry-run]
+  assemble.py PLAN.json --lengths      # before any B-roll call: the length each clip needs (E6)
 
 PLAN.json:
 {
@@ -14,7 +15,12 @@ PLAN.json:
   "base":  "th/talking_heads.mp4" | null,     # talking-head track aligned to the master;
                                               # null = voice-only build: every frame must be B-roll
   "broll": [ {"beat": "BR-01", "clip": "renders/BR-01.mp4",
-              "phrase": "seventeen times your bodyweight", "in": 0.0,
+              "phrase": "seventeen times your bodyweight",
+              "key": "bodyweight",            # optional: the word the picture shows —
+                                              # the cut lands on it instead of the phrase's first word
+              "peak": 2.1,                    # optional: second in the clip where its action
+                                              # peaks — the in-point puts it on the key word
+              "in": 0.0,                      # optional: explicit in-point (overrides skip/peak)
               "layout": {"type": "full"}}, ... ],     # optional, default full (§42 Part 3A)
   "punch_in": [ {"phrase": "and that's when", "scale": 1.15}, ... ],   # optional
   "th_focus_y": 0.4                            # optional: face height in the TH frame (0-1)
@@ -37,13 +43,18 @@ and holds until the next B-roll or the next punch-in (scale 1.0 = punch back out
 A punch-in landing under a B-roll is reported and ignored.
 
 Rules (§30H):
-  1. PLACE   each B-roll starts on the first word of its phrase (word timestamps of
-             the master) and runs until the next B-roll starts, the phrase's line
-             ends, or the clip runs out — whichever is first.
+  1. PLACE   each B-roll cuts in --lead (3 frames) before its anchor word: the
+             phrase's `key` word when given, else its first word (word timestamps
+             of the master; never before 0 or inside the previous clip's first
+             0.8s). It plays from its in-point, not frame 0: `in` if given, else
+             `peak` minus the lead-to-key time, else --skip (0.4s — the start
+             image's static opening). It runs until the next B-roll starts, the
+             phrase's line ends, or the clip runs out — whichever is first.
   2. JOIN    two B-rolls that meet are joined frame-exact: no gap, no overlap.
   3. FLICKER a talking-head window shorter than --min-th between two B-rolls is a
-             flicker. Closed by, in order: extending the earlier clip with its own
-             footage; slowing it down to no slower than 0.8x; else FAIL NEED_LONGER
+             flicker. Closed by, in order: giving back the skipped opening (a
+             skip/peak in-point moves toward 0); extending the earlier clip with its
+             own footage; slowing it down to no slower than 0.8x; else FAIL NEED_LONGER
              (regenerate that clip at a longer duration).
   4. HOLE    in a voice-only build (base null) every uncovered moment is a hole and
              is closed the same way; an unclosable hole is a FAIL.
@@ -51,6 +62,13 @@ Rules (§30H):
 Then renders (1080x1920, 30fps, the master as the only audio) and verifies the
 render: duration equals the master, no black frames, every cut where the EDL says.
 Prints JSON (EDL, fixes, failures, verification). Exit 0 = PASS, 2 = FAIL.
+
+--lengths (E6): run on the plan before the B-roll is generated (clips may be absent).
+For each B-roll: its cut, how long it will be on screen (to the next cut; in a
+talking-head build to its line end unless the gap to the next cut is a flicker),
+and the call duration = on-screen + skip + 0.5s handle, rounded up, Kling 3-15s.
+Over 15s -> SPLIT (two clips, at a word boundary). Sized this way, no clip needs
+slowing down to close a flicker or hole.
 
 Setup: pip install -q imageio-ffmpeg faster-whisper
 """
@@ -66,6 +84,8 @@ FF = imageio_ffmpeg.get_ffmpeg_exe()
 FPS = 30
 MIN_SLOW = 0.8
 MIN_FLASH = 0.8
+HANDLE = 0.5                 # E6: seconds of spare footage on every call
+KLING_MIN, KLING_MAX = 3, 15
 W, H = 1080, 1920
 CORNER_MARGIN = 48
 
@@ -181,6 +201,9 @@ def main():
     ap.add_argument("--min-th", type=float, default=1.5)
     ap.add_argument("--model", default="base.en")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--lead", type=float, default=0.1, help="cut this many seconds before the anchor word (3 frames)")
+    ap.add_argument("--skip", type=float, default=0.4, help="default in-point: skip the clip's static opening")
+    ap.add_argument("--lengths", action="store_true", help="print each B-roll's required call duration (E6) and exit")
     a = ap.parse_args()
 
     root = Path(a.plan).parent
@@ -204,7 +227,8 @@ def main():
         offset += snap(duration(root / part))  # each part starts on a whole frame
     fails, fixes, edl = [], [], []
 
-    # 1. PLACE
+    # 1. PLACE — a lead before the anchor word (the key word, else the phrase's first
+    # word); play from the in-point, not the start image's static opening
     cursor = 0
     for b in plan["broll"]:
         hit = find_phrase(ws, b["phrase"], cursor)
@@ -213,25 +237,83 @@ def main():
             continue
         i, j = hit
         cursor = i + 1
-        clip = root / b["clip"]
+        anchor = i
+        if b.get("key"):
+            k = find_phrase(ws, b["key"], i)
+            if not k or k[1] > j:
+                fails.append({"beat": b["beat"], "fail": "KEY_NOT_IN_PHRASE", "key": b["key"], "phrase": b["phrase"]})
+            else:
+                anchor = k[0]
+        word_t = ws[anchor][0]
         lay, lerr = check_layout(b, base is not None)
         if lerr:
             fails.append({"beat": b["beat"], "fail": "LAYOUT_INVALID", "detail": lerr})
-        edl.append({"beat": b["beat"], "clip": str(clip), "phrase": b["phrase"], "layout": lay,
-                    "start": snap(ws[i][0]), "line_end": snap(line_end(ws, j)),
-                    "in": b.get("in", 0.0), "clip_len": duration(clip), "speed": 1.0})
+        clip = root / b["clip"] if b.get("clip") else None
+        if clip is None and not a.lengths:
+            fails.append({"beat": b["beat"], "fail": "NO_CLIP", "detail": "no clip yet — run --lengths to size the call"})
+            continue
+        edl.append({"beat": b["beat"], "clip": str(clip) if clip else None, "phrase": b["phrase"],
+                    "key": ws[anchor][2], "layout": lay, "word_t": word_t,
+                    "start": snap(max(0.0, word_t - a.lead)), "line_end": snap(line_end(ws, j)),
+                    "in_spec": b.get("in"), "peak": b.get("peak"),
+                    "clip_len": duration(clip) if clip else None, "speed": 1.0})
     edl.sort(key=lambda e: e["start"])
     for n, e in enumerate(edl):
-        nxt = edl[n + 1]["start"] if n + 1 < len(edl) else total
+        # the lead never cuts into the previous clip's first MIN_FLASH seconds
+        if n and e["start"] < edl[n - 1]["start"] + MIN_FLASH:
+            e["start"] = snap(max(e["word_t"], edl[n - 1]["start"] + MIN_FLASH))
+        lead = e["word_t"] - e["start"]
+        if e["in_spec"] is not None:
+            e["in"], e["flex"] = float(e["in_spec"]), False
+        elif e["peak"] is not None:
+            e["in"], e["flex"] = max(0.0, float(e["peak"]) - lead), True
+        else:
+            e["in"], e["flex"] = a.skip, True
+        e["skip"] = e["in"]
+
+    if a.lengths:
+        out = []
+        for n, e in enumerate(edl):
+            nxt = edl[n + 1]["start"] if n + 1 < len(edl) else total
+            end = nxt
+            if base is not None and n + 1 < len(edl) and nxt - max(e["line_end"], e["start"]) >= a.min_th:
+                end = max(e["line_end"], e["start"])   # a deliberate return to face
+            if base is not None and n + 1 == len(edl):
+                end = max(e["line_end"], e["start"])
+            on = end - e["start"]
+            need = on + e["skip"] + HANDLE
+            call = max(KLING_MIN, int(-(-need // 1)))
+            row = {"beat": e["beat"], "cut_s": e["start"], "anchor": e["key"], "on_screen_s": round(on, 2),
+                   "skip_s": round(e["skip"], 2), "call_s": call}
+            if call > KLING_MAX:
+                row["call_s"] = KLING_MAX
+                row["flag"] = f"SPLIT — needs {need:.1f}s; split the phrase into two clips at a word boundary"
+            out.append(row)
+        print(json.dumps({"master_s": round(total, 3), "lead_s": a.lead, "skip_s": a.skip,
+                          "lengths": out, "failures": fails}, indent=2))
+        sys.exit(2 if fails else 0)
+
+    def give_back(e, need):
+        """Move a skip/peak in-point toward 0 until the clip has `need` seconds; return what it has."""
         avail = e["clip_len"] - e["in"]
-        e["end"] = snap(min(nxt, max(e["line_end"], e["start"]), e["start"] + avail))
+        if avail < need and e["flex"] and e["in"] > 0:
+            take = min(e["in"], need - avail)
+            e["in"] = round(e["in"] - take, 3)
+            fixes.append({"beat": e["beat"], "fix": f"gave back {take:.2f}s of the skipped opening (in-point {e['in']:.2f}s)"})
+        return e["clip_len"] - e["in"]
+
+    for n, e in enumerate(edl):
+        nxt = edl[n + 1]["start"] if n + 1 < len(edl) else total
+        want = min(nxt, max(e["line_end"], e["start"]))
+        avail = give_back(e, want - e["start"])
+        e["end"] = snap(min(want, e["start"] + avail))
         if e["end"] <= e["start"]:
             e["end"] = snap(min(nxt, e["start"] + avail))
 
     # 2-4. JOIN / FLICKER / HOLE
     def close(e, target, why):
         need = target - e["start"]
-        avail = e["clip_len"] - e["in"]
+        avail = give_back(e, need)
         if avail >= need - 1e-3:
             e["end"] = snap(target); fixes.append({"beat": e["beat"], "fix": f"{why}: extended with own footage to {target:.2f}s"}); return True
         speed = avail / need
