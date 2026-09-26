@@ -748,8 +748,10 @@ function toast(msg){const t=$("#toast");t.textContent=msg;t.hidden=false;clearTi
 
 function currentBuild(){return state.builds.find(b=>b.id===state.build)||state.builds[0]||null}
 function buildGens(){const b=currentBuild();return b?state.gens.filter(g=>g.build===b.id):[]}
+// a VO take not picked for a part that already has its confirmed take: kept as a version, never counted as waiting
+function spareTake(g,gens){return g.stage==="vo"&&g.status!=="use"&&(gens||state.gens).some(o=>o.stage==="vo"&&o.id!==g.id&&o.build===g.build&&voPart(o)===voPart(g)&&o.status==="use")}
 function matches(g){
-  if(state.filter!=="all" && g.status!==state.filter) return false;
+  if(state.filter!=="all" && (g.status!==state.filter||spareTake(g))) return false;
   if(state.q){const q=state.q.toLowerCase();return [g.beat,g.title,g.line,g.model].some(v=>String(v||"").toLowerCase().includes(q))}
   return true;
 }
@@ -892,8 +894,9 @@ function renderInner(){
   ].filter(x=>x[1]).map(([k,v])=>`<span class="tag">${k} <b>${esc(v)}</b></span>`).join(""):"";
 
   const gens=buildGens();
-  const by=k=>gens.filter(g=>g.status===k).length;
-  const total=gens.length, use=by("use"), regen=by("regenerate"), review=by("review"), gen=by("generating");
+  const cg=gens.filter(g=>!spareTake(g,gens));
+  const by=k=>cg.filter(g=>g.status===k).length;
+  const total=cg.length, use=by("use"), regen=by("regenerate"), review=by("review"), gen=by("generating");
   const credits=gens.reduce((s,g)=>s+(Number(g.credits)||0),0);
   const pct=total?Math.round(use/total*100):0;
   const seg=k=>total?`<i style="width:${by(k)/total*100}%;background:var(--${k==="generating"?"gen":k==="regenerate"?"regen":k==="ready"?"ready":k})"></i>`:"";
