@@ -15,3 +15,13 @@ Three clips, split at sentence ends of the body master, 3 landings each from the
 - C2 11s, body 11.00–20.36 — "Seventeen times your bodyweight" (hand drops onto the other, lean) · "Put your finger under" (index presses into palm, mimed at chest height per §28C) · "Coming down is worse" (hand steps down) — AVe3As37tzEeMAkfxmuKukVE45To7QyL4laTfoZiLhShUriT14ergh5ZNbNBmqmQdS6eeU-5 — 132 cr
 - C3 10s, body 20.36–29.02 — "your muscles lift you" (palms rise) · "catching yourself" (one hand catches the other) · "That is why" (palm up, presenting) — AT5_4OwVLGQ66moRgJsTt90qbqetiHUc_-jseH-DqATrZReIY6CXEHR9uLiNOPLanAaPLXwx — 120 cr
 Prompts: kling_el/ELTEST2_prompts.json
+
+## Round 2 results
+Joined: kling_el/ELTEST2_joined.mp4 (33.14s = 12.04 + 11.04 + 10.04). Voice: same Element voice across all three clips (judged by ear; user to confirm).
+| Clip | Words | Verbatim (faster-whisper small.en, C1 rechecked with medium.en) | Gestures on their words |
+|---|---|---|---|
+| C1 12s | 43 | FAIL — "…below your kneecap is a band…" (drops "there"), "wide" heard as "white"; speech runs to 11.98s of 12.04 (rushed) | FAIL — hands rest on thighs on all three triggers; one small open-hands move at ~6s |
+| C2 11s | 34 | PASS ("body weight" = transcriber spelling) | FAIL — hands rest through "Seventeen times your bodyweight"; from ~5s both palms raised and held (generic), not the index-into-palm press |
+| C3 10s | 32 | PASS | PARTIAL — hands rise on "your muscles lift you", one hand catches the other on "catching yourself"; "That is why" is a clasp, not a palm-up present |
+Findings: (1) word budget — 43 words in 12s rushed and dropped a word; keep a 12s clip to about 30–32 words at this voice's pace. (2) The named §28B landings were only partly followed with the Element bound; the clip with the fewest words (C3) followed them best.
+Kling credits for the test: 180 + 180 (15s round, superseded) + 396 = 756.

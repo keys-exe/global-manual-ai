@@ -1,0 +1,205 @@
+{
+  "status": "PASS",
+  "variants": [
+    {
+      "hook": "HK1",
+      "file": "edit/down-forwards-again_HK1.mp4",
+      "status": "PASS",
+      "hook_s": 11.667,
+      "body_s": 123.76,
+      "duration_s": 135.43,
+      "expected_s": 135.427,
+      "fixes": [
+        {
+          "beat": "BR01",
+          "fix": "FLICKER 0.17s: extended with own footage to 13.80s"
+        },
+        {
+          "beat": "BR03",
+          "fix": "FLICKER 0.30s: extended with own footage to 22.97s"
+        },
+        {
+          "beat": "BR06",
+          "fix": "FLICKER 0.17s: extended with own footage to 32.20s"
+        },
+        {
+          "beat": "BR07",
+          "fix": "FLICKER 0.40s: extended with own footage to 37.60s"
+        },
+        {
+          "beat": "BR09",
+          "fix": "FLICKER 0.40s: extended with own footage to 43.03s"
+        },
+        {
+          "beat": "BR11",
+          "fix": "FLICKER 0.40s: extended with own footage to 51.80s"
+        },
+        {
+          "beat": "BR13",
+          "fix": "FLICKER 0.33s: extended with own footage to 60.03s"
+        },
+        {
+          "beat": "BR14",
+          "fix": "FLICKER 0.57s: extended with own footage to 64.10s"
+        },
+        {
+          "beat": "BR17",
+          "fix": "FLICKER 0.33s: extended with own footage to 73.13s"
+        },
+        {
+          "beat": "BR18",
+          "fix": "FLICKER 0.30s: extended with own footage to 78.23s"
+        },
+        {
+          "beat": "BR19",
+          "fix": "FLICKER 0.40s: extended with own footage to 81.90s"
+        },
+        {
+          "beat": "BR21",
+          "fix": "FLICKER 0.27s: extended with own footage to 93.00s"
+        },
+        {
+          "beat": "BR28",
+          "fix": "FLICKER 0.30s: extended with own footage to 132.70s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    },
+    {
+      "hook": "HK2",
+      "file": "edit/down-forwards-again_HK2.mp4",
+      "status": "PASS",
+      "hook_s": 9.2,
+      "body_s": 123.76,
+      "duration_s": 132.96,
+      "expected_s": 132.96,
+      "fixes": [
+        {
+          "beat": "HK2-01",
+          "fix": "FLICKER 0.37s: extended with own footage to 9.20s"
+        },
+        {
+          "beat": "BR01",
+          "fix": "FLICKER 0.17s: extended with own footage to 11.33s"
+        },
+        {
+          "beat": "BR03",
+          "fix": "FLICKER 0.30s: extended with own footage to 20.50s"
+        },
+        {
+          "beat": "BR06",
+          "fix": "FLICKER 0.17s: extended with own footage to 29.73s"
+        },
+        {
+          "beat": "BR07",
+          "fix": "FLICKER 0.40s: extended with own footage to 35.13s"
+        },
+        {
+          "beat": "BR09",
+          "fix": "FLICKER 0.40s: extended with own footage to 40.57s"
+        },
+        {
+          "beat": "BR11",
+          "fix": "FLICKER 0.40s: extended with own footage to 49.33s"
+        },
+        {
+          "beat": "BR13",
+          "fix": "FLICKER 0.33s: extended with own footage to 57.57s"
+        },
+        {
+          "beat": "BR14",
+          "fix": "FLICKER 0.57s: extended with own footage to 61.63s"
+        },
+        {
+          "beat": "BR17",
+          "fix": "FLICKER 0.33s: extended with own footage to 70.67s"
+        },
+        {
+          "beat": "BR18",
+          "fix": "FLICKER 0.30s: extended with own footage to 75.77s"
+        },
+        {
+          "beat": "BR19",
+          "fix": "FLICKER 0.40s: extended with own footage to 79.43s"
+        },
+        {
+          "beat": "BR21",
+          "fix": "FLICKER 0.27s: extended with own footage to 90.53s"
+        },
+        {
+          "beat": "BR28",
+          "fix": "FLICKER 0.30s: extended with own footage to 130.23s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    },
+    {
+      "hook": "HK3",
+      "file": "edit/down-forwards-again_HK3.mp4",
+      "status": "PASS",
+      "hook_s": 8.333,
+      "body_s": 123.76,
+      "duration_s": 132.07,
+      "expected_s": 132.093,
+      "fixes": [
+        {
+          "beat": "BR01",
+          "fix": "FLICKER 0.17s: extended with own footage to 10.47s"
+        },
+        {
+          "beat": "BR03",
+          "fix": "FLICKER 0.30s: extended with own footage to 19.63s"
+        },
+        {
+          "beat": "BR06",
+          "fix": "FLICKER 0.17s: extended with own footage to 28.87s"
+        },
+        {
+          "beat": "BR07",
+          "fix": "FLICKER 0.40s: extended with own footage to 34.27s"
+        },
+        {
+          "beat": "BR09",
+          "fix": "FLICKER 0.40s: extended with own footage to 39.70s"
+        },
+        {
+          "beat": "BR11",
+          "fix": "FLICKER 0.40s: extended with own footage to 48.47s"
+        },
+        {
+          "beat": "BR13",
+          "fix": "FLICKER 0.33s: extended with own footage to 56.70s"
+        },
+        {
+          "beat": "BR14",
+          "fix": "FLICKER 0.57s: extended with own footage to 60.77s"
+        },
+        {
+          "beat": "BR17",
+          "fix": "FLICKER 0.33s: extended with own footage to 69.80s"
+        },
+        {
+          "beat": "BR18",
+          "fix": "FLICKER 0.30s: extended with own footage to 74.90s"
+        },
+        {
+          "beat": "BR19",
+          "fix": "FLICKER 0.40s: extended with own footage to 78.57s"
+        },
+        {
+          "beat": "BR21",
+          "fix": "FLICKER 0.27s: extended with own footage to 89.67s"
+        },
+        {
+          "beat": "BR28",
+          "fix": "FLICKER 0.30s: extended with own footage to 129.37s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    }
+  ],
+  "body_identical_across_variants": true
+}
