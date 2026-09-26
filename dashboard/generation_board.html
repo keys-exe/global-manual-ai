@@ -306,8 +306,6 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
       <div class="meta" id="buildMeta"></div>
     </div>
     <div class="controls">
-      <select class="field" id="buildSel" aria-label="Build"></select>
-      <button class="btn primary" id="addBtn" type="button">+ New generation</button>
       <span class="sync"><span class="dot" id="syncDot"></span><span id="syncTxt">Connecting</span></span>
     </div>
   </header>
@@ -369,7 +367,7 @@ const ICONS = {
 
 // Read-only snapshot used only when live sync is unavailable in this view.
 const OFFLINE = {
-  builds:[{id:"intake-1",name:"STRYDE · Identity Callout",product:"STRYDE",mode:"Mode 1 Realistic",format:"Voice-only B-roll ad",run:"Automation",aspect:"9:16",driveRoot:"",folders:{},balances:{},balancesAt:""}],
+  builds:[],
   gens:[]
 };
 
@@ -393,13 +391,10 @@ function beatSort(a,b){return String(a.beat||"").localeCompare(String(b.beat||""
 
 function render(){
   const b=currentBuild();
-  // build selector
-  $("#buildSel").innerHTML=state.builds.map(x=>`<option value="${esc(x.id)}"${x.id===(b&&b.id)?" selected":""}>${esc(x.name||x.id)}</option>`).join("");
   $("#buildTitle").textContent=b?(b.name||b.id):"No build yet";
   $("#buildMeta").innerHTML=b?[
     ["Build",b.id],["Mode",b.mode],["Format",b.format],["Run",b.run],["Aspect",b.aspect||"9:16"]
   ].filter(x=>x[1]).map(([k,v])=>`<span class="tag">${k} <b>${esc(v)}</b></span>`).join(""):"";
-  $("#addBtn").hidden=state.readOnly;
 
   const gens=buildGens();
   const by=k=>gens.filter(g=>g.status===k).length;
@@ -440,13 +435,12 @@ function render(){
     const sg=all.filter(matches).sort(beatSort);
     const u=all.filter(g=>g.status==="use").length;
     const link=folders[s.folder]?`<a href="https://drive.google.com/drive/folders/${esc(folders[s.folder])}" target="_blank" rel="noopener">Drive ↗</a>`:"";
-    const add=state.readOnly?"":`<button class="btn small" type="button" data-add="${s.key}" aria-label="Add to ${s.name}">+ Add</button>`;
     const body=sg.length?`<div class="tiles">${sg.map(tile).join("")}</div>`:
       `<div class="empty">${all.length?"Nothing matches this filter.":"No generations yet."}</div>`;
     return `<section class="widget${s.wide?" wide":""}" id="w-${s.key}">
       <div class="w-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
         <div class="w-title"><h2>${s.name}</h2><span class="sub">${s.sub}</span></div>
-        <div class="w-actions">${link}${add}</div></div>
+        <div class="w-actions">${link}</div></div>
       <div class="bar w-bar">${all.length?`<i style="width:${u/all.length*100}%;background:var(--use)"></i>`:""}</div>
       <div class="w-body">${body}</div></section>`;
   }).join("");
@@ -835,12 +829,10 @@ $("#picker").addEventListener("change",e=>{const f=e.target.files[0];if(f&&pickT
 document.addEventListener("dragleave",e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(t) t.classList.remove("drag")});
 document.addEventListener("drop",e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(!t) return;e.preventDefault();t.classList.remove("drag");const f=e.dataTransfer.files[0];if(f) uploadTo(t.dataset.drop,t.dataset.step,f)});
 document.addEventListener("input",e=>{if(e.target.id==="search"){state.q=e.target.value;const pos=e.target.selectionStart;render();const s=$("#search");s.focus();s.setSelectionRange(pos,pos)}});
-$("#buildSel").addEventListener("change",e=>{state.build=e.target.value;lsSet("gb.build",state.build);render()});
-$("#addBtn").addEventListener("click",()=>openDrawer({stage:"broll",status:"planned"},true));
 $("#scrim").addEventListener("click",closeDrawer);
 
 /* boot */
-state.build=lsGet("gb.build");
+state.build=/^#[A-Za-z0-9_.~-]+$/.test(location.hash)&&location.hash!=="#manual"?location.hash.slice(1):null;
 state.view=location.hash==="#manual"?"manual":(lsGet("gb.view")==="manual"?"manual":"board");
 function setSync(live,txt){$("#syncDot").classList.toggle("live",live);$("#syncTxt").textContent=txt}
 function offline(){
@@ -856,7 +848,10 @@ render();
   claude.use("downloads").then(d=>{state.downloads=d}).catch(()=>{});
   db.collection("builds").onSnapshot(snap=>{
     state.builds=snap.docs.map(d=>({id:d.id,...d.data()}));
-    if(!state.builds.some(b=>b.id===state.build)) state.build=state.builds[0]&&state.builds[0].id;
+    if(!state.builds.some(b=>b.id===state.build)){
+      const latest=[...state.builds].sort((a,b)=>(b.updatedAt||0)-(a.updatedAt||0))[0];
+      state.build=latest&&latest.id;
+    }
     setSync(true,"Live");render();
   },err=>{setSync(false,"Sync stopped")});
   db.collection("generations").onSnapshot(snap=>{

@@ -14,7 +14,14 @@ Product Sheets and Build Sheets (Appendix B / C schemas) go under `products/` an
 
 ## Generation Board (standing instruction from the user, 2026-09-26)
 
-Every generation goes on the **Generation Board**: https://claude.ai/artifact/HVPuUcnNK1MUrCYnou9UnJ (source: `dashboard/generation_board.html`). Both run modes, every build, no need to ask.
+Every generation goes on the build's **Generation Board**. Both run modes, every build, no need to ask. **One board per build** (the user's team gets only their build's link), all published from the one template `dashboard/generation_board.html`. The page shows the one build its board holds; there is no build picker and no "new generation" button, so cards are only ever added by you.
+
+| Build | Board |
+|---|---|
+| `intake-1` (STRYDE · Identity Callout) | https://claude.ai/artifact/HVPuUcnNK1MUrCYnou9UnJ |
+| `demo-ad` (example only, placeholder media) | https://claude.ai/artifact/YK4ReHoWRnqBuXQvCMdHLT |
+
+New build: copy the template to your scratchpad, set its `<title>` to the build name, publish it as a new artifact with `capabilities: {db: {}, assets: {}, downloads: true}`, seed `builds/<id>` and its `generations`, and add a row above. To change the design, edit the template and republish it to every board with `url` (keep each board's `<title>`).
 
 - One `builds/<build-id>` doc per build (name, product, mode, format, run, aspect, `folders` = Drive OUTPUT folder IDs from `drive.json`, `balances`, `balancesAt`).
 - One `generations/<build-id>__<BEAT>` doc per beat: `build`, `act` (`Hook 1`… for hooks, `Act 1`, `Act 2`… for talking heads and B-roll, set from the step-5 act map), `stage` (`absorption` `cast` `locations` `voice` `hooks` `talking` `broll` `edit`), `beat`, `title`, `line` (verbatim script line), `imagePrompt` / `imageModel` (step 1), `prompt` / `model` (step 2 video, or the only prompt), `duration`, `credits`, `status` (`planned` `ready` `generating` `review` `use` `regenerate`), `imageStatus` (`review` `confirmed` `regenerate`), `fault` / `imageFault` (`Q<n>: fault → fix`), `regens` / `imageRegens`, `imageAsset` / `imageType`, `videoAsset` / `videoType`, and per step the connector record: `imageConnector` / `videoConnector` (Higgsfield, Kling, Kie AI…), `imageUrl` / `videoUrl` (the connector's original link), `imageCredits` / `credits`, `imageRes` (e.g. 1080×1920) / `duration` (s), `imageAt` / `videoAt` (ms); `updatedAt` (ms).
