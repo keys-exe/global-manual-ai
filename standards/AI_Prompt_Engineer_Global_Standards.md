@@ -7845,6 +7845,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | 2026-09-26 | Generation Board change on the user's request: viewer redesigned — solid screen, details panel with Confirm / Fix / Download, filmstrip with status dots, drawn icons. Template republished to every board. | §16A | Written into §16A; cut pending |
 | 2026-09-26 | Generation Board change on the user's request: Plan tab — Absorption Sheet, act map, wardrobe map on the board, section tabs, act filter, beat links. Template republished to every board. | §16A | Written into §16A; cut pending |
 | 2026-09-26 | Generation Board change on the user's request: stage order Voice → VO → Talking heads; Voice checklist (everyone who speaks has a voice); VO locked per part; Talking heads removed when unused; film builds drop VO and Talking heads. | §16A | Written into §16A; cut pending |
+| 2026-09-26 | **B-roll: use the best part of the clip, not its start** (user correction, both run modes). A B-roll's on-screen window is chosen from the whole generated clip, never taken from frame 0 by default: the window that shows the line's point (e.g. the step down the stairs, not the standing before it) is the one kept, and the dead part is what gets cut. The chosen `in` point and the key-frame time are recorded in the EDL and on the board; the clip verdict judges the on-screen window, not the whole clip. | §22W Q1/Q7, §27A, §30B Part 4, §30H PLACE, E6, `assemble.py`, `contact_sheet.py` | Locked; write-in pending (V7.64.0) |
 ---
 
 # OPEN DECISIONS
