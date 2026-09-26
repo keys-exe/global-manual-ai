@@ -362,6 +362,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .p-tl:hover{color:var(--ink)}
 .p-tl[aria-current="true"]{border-left-color:var(--accent);color:var(--ink);font-weight:600}
 .p-content{display:flex;flex-direction:column;gap:14px;min-width:0}
+.p-content::after{content:"";display:block;height:55vh}
 .p-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;padding:2px 2px 8px;border-bottom:2px solid var(--ink)}
 .p-head h2{font-size:clamp(24px,3vw,32px);font-weight:700}
 .p-sec{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:16px 18px;min-width:0;scroll-margin-top:16px}
@@ -631,7 +632,10 @@ function renderInner(){
   $("#planView").hidden=state.view!=="plan";
   $("#summary").hidden=state.view==="plan";
   if(state.view==="manual"){renderManual(gens);return}
-  if(state.view==="plan"){renderPlan(gens);return}
+  if(state.view==="plan"){
+    const sig=JSON.stringify([state.pdoc,state.pmode,state.docs.map(d=>[d.id,d.updatedAt,(d.sections||[]).length]),gens.map(g=>g.id+":"+g.beat).sort()]);
+    if(sig!==state.planSig||!$("#planView").children.length){state.planSig=sig;renderPlan(gens)}
+    return}
 
   $("#pipe").innerHTML=STAGES.map((s,i)=>{
     const sg=gens.filter(g=>g.stage===s.key), u=sg.filter(g=>g.status==="use").length;
@@ -1373,13 +1377,27 @@ function decoratePlan(gens){
     if(state.psubj!=="all") filterPlan(sec,"subj",state.psubj);
   });
 }
-function spyToc(){
-  const links=[...document.querySelectorAll("#planView .p-tl")];
-  if(!links.length||!("IntersectionObserver" in window)) return;
-  if(state._spy) state._spy.disconnect();
-  state._spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const i=e.target.dataset.i;links.forEach(l=>l.setAttribute("aria-current",l.dataset.pjump===i))}}),{rootMargin:"-20% 0px -70% 0px"});
-  document.querySelectorAll("#planView .p-sec").forEach(x=>state._spy.observe(x));
-  if(links[0]) links[0].setAttribute("aria-current","true");
+// "On this page": the active item is the last section whose top has passed the top of the screen;
+// at the bottom of the page it is the last section. A click sets it at once and holds it while scrolling.
+let tocHold=0;
+function tocActive(i){document.querySelectorAll("#planView .p-tl").forEach(l=>l.setAttribute("aria-current",l.dataset.pjump===String(i)));state.pactive=Number(i)}
+function tocUpdate(){
+  if(state.view!=="plan"||Date.now()<tocHold) return;
+  const secs=[...document.querySelectorAll("#planView .p-sec")]; if(!secs.length) return;
+  const atBottom=window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-4;
+  let i=0; secs.forEach((x,k)=>{if(x.getBoundingClientRect().top<=140) i=k});
+  if(atBottom) i=secs.length-1;
+  tocActive(i);
+}
+let tocRaf=0;
+window.addEventListener("scroll",()=>{if(!tocRaf) tocRaf=requestAnimationFrame(()=>{tocRaf=0;tocUpdate()})},{passive:true});
+window.addEventListener("resize",()=>tocUpdate());
+function spyToc(){tocActive(state.pactive||0);tocUpdate()}
+function tocJump(i){
+  const x=document.getElementById("psec-"+i); if(!x) return;
+  tocActive(i); tocHold=Date.now()+900;
+  const top=x.getBoundingClientRect().top+window.scrollY-16;
+  window.scrollTo({top,behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth"});
 }
 /* events */
 let pickTarget=null;
@@ -1387,8 +1405,8 @@ document.addEventListener("click",e=>{
   const t=e.target.closest("[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
-  if(ds.pdoc){state.pdoc=ds.pdoc;state.pact="all";state.psubj="all";render();window.scrollTo({top:$("#planView").offsetTop-12});return}
-  if(ds.pjump){const x=document.getElementById("psec-"+ds.pjump);if(x) x.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"});return}
+  if(ds.pdoc){state.pdoc=ds.pdoc;state.pact="all";state.psubj="all";state.pactive=0;render();window.scrollTo({top:$("#planView").offsetTop-12});return}
+  if(ds.pjump!==undefined){tocJump(Number(ds.pjump));return}
   if(ds.pact){state.pact=ds.pact;filterPlan(t.closest(".p-sec")||document,"act",ds.pact);return}
   if(ds.psubj){state.psubj=ds.psubj;filterPlan(t.closest(".p-sec")||document,"subj",ds.psubj);return}
   if(ds.pmode){const [k,m]=ds.pmode.split(":");state.pmode[k]=m;render();return}
@@ -1408,7 +1426,7 @@ document.addEventListener("click",e=>{
   else if(ds.add){openDrawer({stage:ds.add,status:"planned"},true)}
   else if(ds.f){state.filter=ds.f;render()}
   else if(ds.jump){const w=$("#w-"+ds.jump);if(w) w.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}
-  else if(ds.view){state.view=ds.view;lsSet("gb.view",ds.view);render()}
+  else if(ds.view){state.planSig=null;state.view=ds.view;lsSet("gb.view",ds.view);render()}
   else if(ds.ms){state.mstage=ds.ms;render()}
   else if(ds.needs){state.mneeds=!state.mneeds;render()}
   else if(ds.copy&&g){copyText(g[ds.field]||"",(g.beat||"")+" prompt")}
