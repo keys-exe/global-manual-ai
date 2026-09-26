@@ -412,7 +412,8 @@ function matches(g){
 }
 function beatSort(a,b){return String(a.beat||"").localeCompare(String(b.beat||""),undefined,{numeric:true})}
 
-function render(){
+function render(){renderInner();hydrate()}
+function renderInner(){
   const b=currentBuild();
   $("#buildTitle").textContent=b?(b.name||b.id):"No build yet";
   $("#buildMeta").innerHTML=b?[
@@ -476,11 +477,32 @@ function render(){
   $("#grid").innerHTML=html;
 }
 
+// Files over the platform's per-file cap are stored as byte pieces and joined back
+// in the browser into the exact original — the board never shrinks a render.
+const PART=15*1024*1024;
+function partsOf(g,k){const p=g[STEP[k].parts];return Array.isArray(p)&&p.length>1?p:null}
+function srcAttr(g,k){const p=partsOf(g,k);return p?`data-parts="${esc(p.join(","))}" data-ptype="${esc(g[STEP[k].type]||"")}"`:`src="/_blob/${esc(g[STEP[k].asset])}"`}
+const joined={};
+function joinParts(ids,type){
+  const key=ids.join(",");
+  if(!joined[key]) joined[key]=Promise.all(ids.map(fetchAsset)).then(bs=>URL.createObjectURL(new Blob(bs,{type:type||bs[0].type||"application/octet-stream"})));
+  return joined[key];
+}
+function hydrate(root){
+  (root||document).querySelectorAll("[data-parts]:not([src])").forEach(el=>{
+    joinParts(el.dataset.parts.split(","),el.dataset.ptype).then(u=>{el.src=u}).catch(()=>{});
+  });
+}
+async function fetchMedia(g,k){
+  const p=partsOf(g,k);
+  if(p){const bs=await Promise.all(p.map(fetchAsset));return new Blob(bs,{type:g[STEP[k].type]||bs[0].type})}
+  return fetchAsset(g[STEP[k].asset]);
+}
 function tile(g){
   const st=g.status||"planned", stage=STAGES.find(s=>s.key===g.stage)||STAGES[6];
   const kind=g.kind||stage.kind;
   const specs=[g.duration?`${g.duration}s`:"", g.regens?`R${g.regens}`:""].filter(Boolean);
-  const img=g.imageAsset?`<img class="bg" src="/_blob/${esc(g.imageAsset)}" alt="" loading="lazy">`:"";
+  const img=g.imageAsset?`<img class="bg" ${srcAttr(g,"image")} alt="" loading="lazy">`:"";
   const first=flow(g).find(k=>g[STEP[k].asset])||flow(g)[0];
   return `<div class="tile s-${st}">
     <button class="frame${img?" has-img":""}" type="button" data-viewm="${esc(g.id)}" data-step="${first}" aria-label="View ${esc(g.beat||"")}">${img}<span class="stripe"></span>${ICONS[kind]||""}
@@ -608,11 +630,11 @@ function flow(g){
 // Each step reads and writes its own fields on the generation document.
 const STEP = {
   image:{label:"Image", accept:"image/*", asset:"imageAsset", type:"imageType", prompt:"imagePrompt", model:"imageModel", defModel:"nano_banana_pro", st:"imageStatus", fault:"imageFault", regens:"imageRegens", ok:"Confirm image",
-    conn:"imageConnector", defConn:"Higgsfield", url:"imageUrl", credits:"imageCredits", at:"imageAt", size:"imageRes"},
+    parts:"imageParts", conn:"imageConnector", defConn:"Higgsfield", url:"imageUrl", credits:"imageCredits", at:"imageAt", size:"imageRes"},
   video:{label:"Video", accept:"video/*", asset:"videoAsset", type:"videoType", prompt:"prompt", model:"model", defModel:"kling-video-v3_0_omni", st:"status", fault:"fault", regens:"regens", ok:"USE",
-    conn:"videoConnector", defConn:"Kling", url:"videoUrl", credits:"credits", at:"videoAt", size:"duration"},
+    parts:"videoParts", conn:"videoConnector", defConn:"Kling", url:"videoUrl", credits:"credits", at:"videoAt", size:"duration"},
   file:{label:"File", accept:"*/*", asset:"videoAsset", type:"videoType", prompt:"prompt", model:"model", defModel:"", st:"status", fault:"fault", regens:"regens", ok:"USE",
-    conn:"videoConnector", defConn:"", url:"videoUrl", credits:"credits", at:"videoAt", size:"duration"},
+    parts:"videoParts", conn:"videoConnector", defConn:"", url:"videoUrl", credits:"credits", at:"videoAt", size:"duration"},
 };
 function stepState(g,k){
   const d=STEP[k], v=g[d.st];
@@ -700,8 +722,8 @@ function mediaCard(g,k){
   const prompt=g[d.prompt]||"", model=g[d.model]||d.defModel;
   const busy=state.busy[g.id+":"+k];
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
-  const imgBehind=locked&&g.imageAsset?`<img class="ghost" src="/_blob/${esc(g.imageAsset)}" alt="">`:"";
-  const media=asset?(isVid?`<video src="/_blob/${esc(asset)}" muted playsinline preload="metadata"></video><span class="play" aria-hidden="true">▶</span>`:type.startsWith("image/")||k==="image"?`<img src="/_blob/${esc(asset)}" alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
+  const imgBehind=locked&&g.imageAsset?`<img class="ghost" ${srcAttr(g,"image")} alt="">`:"";
+  const media=asset?(isVid?`<video ${srcAttr(g,k)} muted playsinline preload="metadata"></video><span class="play" aria-hidden="true">▶</span>`:type.startsWith("image/")||k==="image"?`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
     locked?`${imgBehind}<span class="lockmsg">🔒 Confirm the image first</span>`:
     `<span>${s==="bad"?"Regenerating…":prompt?"Waiting for render":"Waiting for prompt"}${ro?"":`<br><small>drop a file here to add it</small>`}</span>`;
   const limit=/kling/i.test(model)&&k!=="image"?2500:null;
@@ -759,7 +781,7 @@ async function saveFile(name,blob,fallbackUrl){
 }
 async function downloadOne(g,k){
   const id=g[STEP[k].asset]; if(!id) return;
-  try{await saveFile(fileName(g,k),await fetchAsset(id),"/_blob/"+id)}catch(e){toast("Couldn't fetch the file. Try again.")}
+  try{await saveFile(fileName(g,k),await fetchMedia(g,k),partsOf(g,k)?null:"/_blob/"+id)}catch(e){toast("Couldn't fetch the file. Try again.")}
 }
 async function downloadZip(groupKey,step){
   if(!window.JSZip){toast("Zip isn't available right now");return}
@@ -771,7 +793,7 @@ async function downloadZip(groupKey,step){
   for(const g of gens){
     md+=`## ${g.beat} · ${g.title||""}\n`+(g.line?`> ${g.line}\n\n`:"\n");
     if(g[d.prompt]) md+=`Model: ${g[d.model]||d.defModel} · ${g[d.prompt].length} chars\n\n\`\`\`\n${g[d.prompt]}\n\`\`\`\n\n`;
-    if(g[d.asset]){try{zip.file(fileName(g,step),await fetchAsset(g[d.asset]))}catch(e){md+=`(file could not be fetched)\n\n`}}
+    if(g[d.asset]){try{zip.file(fileName(g,step),await fetchMedia(g,step))}catch(e){md+=`(file could not be fetched)\n\n`}}
   }
   zip.file(`prompts.md`,md);
   const blob=await zip.generateAsync({type:"blob"});
@@ -785,15 +807,19 @@ async function uploadTo(gid,k,file){
   if(k==="video"&&!file.type.startsWith("video/")){toast("That isn't a video file");return}
   state.busy[gid+":"+k]=1;render();
   try{
-    const r=await state.assets.upload(file);
-    const patch={[d.asset]:r.id,[d.type]:r.contentType,updatedAt:Date.now()};
+    const ids=[]; let ctype=file.type;
+    for(let o=0;o<file.size;o+=PART){
+      const r=await state.assets.upload(file.slice(o,o+PART,file.type),{type:file.type});
+      ids.push(r.id); ctype=r.contentType;
+    }
+    const patch={[d.asset]:ids[0],[d.type]:ctype,[d.parts]:ids.length>1?ids:[],updatedAt:Date.now()};
     if(k==="image"){patch.imageStatus="review"; if(["planned","ready"].includes(g.status||"planned")) patch.status="review"}
     else patch.status="review";
     await state.db.doc("generations/"+gid).update(patch);
     toast(d.label+" added. Check it, then confirm.");
   }catch(e){
     const c=e&&e.code;
-    toast(c==="too_large"?"File is over 20 MB":c==="unsupported_type"?"That file type can't be stored":c==="quota_exceeded"?"Board storage is full":"Upload failed. Try again.");
+    toast(c==="too_large"?"That file is too large to store":c==="unsupported_type"?"That file type can't be stored":c==="quota_exceeded"?"Board storage is full":"Upload failed. Try again.");
   }finally{delete state.busy[gid+":"+k];render()}
 }
 async function setVerdict(gid,k,ok,fault){
@@ -829,7 +855,7 @@ function renderViewer(){
   const k=v.step, d=STEP[k], asset=g[d.asset], type=g[d.type]||"";
   const list=viewerList(k), i=list.findIndex(x=>x.id===g.id);
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
-  const media=asset?(isVid?`<video src="/_blob/${esc(asset)}" controls autoplay loop playsinline></video>`:`<img src="/_blob/${esc(asset)}" alt="${esc(g.beat)} ${d.label}">`):
+  const media=asset?(isVid?`<video ${srcAttr(g,k)} controls autoplay loop playsinline></video>`:`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`):
     `<div class="v-empty">${k==="video"&&stepState(g,"image")!=="ok"?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
   const s=stepState(g,k);
   const chip=s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
@@ -851,7 +877,7 @@ function renderViewer(){
       <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${g[d.prompt]?"":"disabled"}>Copy prompt</button>
       <button class="btn small primary" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>⬇ Download</button>
     </div>`;
-  const el=$("#viewer"); el.hidden=false;
+  const el=$("#viewer"); el.hidden=false; hydrate(el);
 }
 
 /* events */
