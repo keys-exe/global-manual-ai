@@ -31,3 +31,14 @@ New build: copy the template to your scratchpad, set its `<title>` to the build 
 - Generations run through the connectors (§5). The page can't show a connector's CDN link directly, so every result is downloaded and uploaded to the board as an asset; the original link goes in `imageUrl` / `videoUrl`.
 - Write with the `ArtifactData` tool (batch when more than two docs). When you write a prompt, add or update its doc (`status: ready`). When a render exists, download it locally, upload it with the Artifact tool (`url` = board, `asset: true`) and store the returned id in `imageAsset` / `videoAsset`. Record the §22V / §22W verdict the same turn.
 - Manual run view is grouped by act, in order: Cast, Locations, Voice, **Hook 1, Hook 2…, Act 1, Act 2…**, Edit. Each group shows an **Images** box, then a **Videos** box (cast and locations: images only). A video unlocks once its image is `confirmed`. Each card has **Confirm** and **Fix**. Fix opens "What should be fixed?"; pressing **Confirm & regenerate** sets `imageStatus` / `status` to `regenerate` with the note in `imageFault` / `fault`. When you pick up a `regenerate` card, treat that note as the user's fix request: regenerate with it, upload the new render and set the step back to `review`. When the act map is written, set `act` on every beat.
+
+## Resuming a build in a new session
+
+Sessions end; the build doesn't. What survives: this repo (only what is committed **and** pushed), the build's Generation Board (cards, files, statuses, Fix notes), the Drive folders, and the connector accounts. What doesn't: the old session's conversation, scratchpad and downloaded files.
+
+When the user says "resume build `<id>`" (or pastes its board link):
+1. Make sure this checkout has the board work — `dashboard/generation_board.html` and this section. If the session started on a branch without them, fetch and merge the branch that has them before anything else.
+2. Read `builds/<id>/BUILD_NOTES.md` (decisions, answers, open items), the build's Build Sheet, and the board: `ArtifactData` `list` of `builds` and `generations` on that build's board. The board is the state: `planned` / `ready` / `generating` / `review` / `use` / `regenerate` per step tells you exactly where the run stopped.
+3. Say in one short message where it stands (per act: images and videos confirmed, waiting, fixing) and the next step, then continue in the same run mode.
+4. Move the hourly Fix check to this session: create a new hourly Routine with the same prompt (`get_trigger` on the old one reads it) bound to this session, then delete the old one, and update the Routine line above.
+5. Before the session ends, write what changed into `builds/<id>/BUILD_NOTES.md`, commit and push.
