@@ -259,22 +259,66 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .mc .media.filled{cursor:zoom-in}
 .mc .media:not(.filled){cursor:default}
 .media .play{position:absolute;inset:auto auto 8px 8px;width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;display:grid;place-items:center;font-size:12px;padding-left:2px}
-.viewer{position:fixed;inset:0;z-index:40;background:rgba(8,10,14,.97);color:#fff;display:flex;flex-direction:column;padding:calc(12px + env(safe-area-inset-top,0px)) 16px calc(12px + env(safe-area-inset-bottom,0px))}
-.viewer .lbl{color:rgba(255,255,255,.55)}
-.v-top,.v-bottom{display:flex;align-items:center;gap:12px;flex-wrap:wrap;max-width:1100px;width:100%;margin:0 auto}
-.v-top .grow,.v-bottom .grow{flex:1}
-.v-beat{font-family:var(--display);font-weight:700;font-size:18px}
-.v-tabs{display:inline-flex;background:rgba(255,255,255,.08);border-radius:9px;padding:3px;gap:2px}
-.v-tabs .tab{color:rgba(255,255,255,.7)}
-.v-tabs .tab[aria-selected="true"]{background:#fff;color:#111}
-.viewer .btn{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff}
-.viewer .btn.primary{background:#fff;color:#111;border-color:#fff}
-.v-stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;gap:12px;padding-block:12px}
-.v-media{height:100%;max-height:100%;aspect-ratio:9/16;max-width:calc(100% - 100px);display:grid;place-items:center}
-.v-media img,.v-media video{max-width:100%;max-height:100%;width:auto;height:auto;border-radius:10px;display:block;background:#000}
-.v-empty{border:1px dashed rgba(255,255,255,.3);border-radius:12px;width:100%;height:100%;display:grid;place-items:center;color:rgba(255,255,255,.7);padding:16px;text-align:center}
-.v-nav{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font-size:24px;line-height:1;flex:none}
-@media (max-width:520px){.v-media{max-width:calc(100% - 80px)}.v-nav{width:36px;height:36px}}
+.viewer{position:fixed;inset:0;z-index:40;background:#0b0d12;color:#e8ebf1;display:grid;grid-template-rows:auto minmax(0,1fr) auto;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.viewer .lbl{color:#7d8595}
+.viewer .btn{background:#1a1e27;border-color:#2c323e;color:#e8ebf1}
+.viewer .btn:hover{border-color:#4a5263}
+.viewer .btn.primary{background:#e8ebf1;color:#0b0d12;border-color:#e8ebf1}
+.ico16{width:16px;height:16px;flex:none}
+.v-top{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid #1f242e}
+.v-top .grow{flex:1}
+.v-title{display:flex;flex-direction:column;gap:2px;min-width:0}
+.v-beat{font-family:var(--display);font-weight:700;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.v-tabs{display:inline-flex;background:#161a22;border:1px solid #232834;border-radius:10px;padding:3px;gap:2px}
+.v-tabs .tab{color:#9aa3b2;padding:6px 14px}
+.v-tabs .tab[aria-selected="true"]{background:#e8ebf1;color:#0b0d12}
+.v-iconbtn{width:36px;height:36px;border-radius:9px;border:1px solid #2c323e;background:#1a1e27;color:#e8ebf1;display:grid;place-items:center}
+.v-iconbtn:hover{border-color:#4a5263}
+.v-detbtn{display:none}
+.v-body{display:grid;grid-template-columns:minmax(0,1fr) 340px;min-height:0}
+.v-stage{position:relative;min-height:0;display:flex;align-items:center;justify-content:center;padding:16px 64px}
+.v-media{position:relative;height:100%;max-height:100%;aspect-ratio:9/16;max-width:100%;display:grid;place-items:center}
+.v-media img,.v-media video{max-width:100%;max-height:100%;width:auto;height:auto;border-radius:12px;display:block;background:#000;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.v-empty{border:1px dashed #333a47;border-radius:12px;width:100%;height:100%;display:grid;place-items:center;color:#9aa3b2;padding:16px;text-align:center}
+.v-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid #2c323e;background:#161a22;color:#e8ebf1;display:grid;place-items:center}
+.v-nav:hover{background:#1f2430}
+.v-nav.prev{left:12px}.v-nav.next{right:12px}
+.v-panel{border-left:1px solid #1f242e;background:#11141b;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:14px}
+.v-panel .ps{display:flex;flex-direction:column;gap:6px}
+.v-quote{font-size:13.5px;line-height:1.5;border-left:3px solid #8c98ff;padding:2px 0 2px 10px;color:#d6dae3}
+.v-dl{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}
+.v-dl div{display:flex;flex-direction:column;gap:2px;min-width:0;border-bottom:1px solid #1f242e;padding-bottom:6px}
+.v-dl dt{font-size:10.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#7d8595}
+.v-dl dd{margin:0;font-size:12.5px;overflow-wrap:anywhere}
+.v-dl .wide{grid-column:1/-1}
+.v-dl a{color:#8c98ff}
+.v-prompt{margin:0;font-family:var(--mono);font-size:11.5px;line-height:1.55;white-space:pre-wrap;word-break:break-word;background:#0b0d12;border:1px solid #1f242e;border-radius:8px;padding:9px 10px;max-height:180px;overflow:auto;color:#c9ced8}
+.v-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.v-actions .btn{justify-content:center;font-weight:600;min-height:40px}
+.v-actions .full{grid-column:1/-1}
+.viewer .btn.okv{background:#1d8352;border-color:#1d8352;color:#fff}
+.viewer .btn.badv{background:transparent;border-color:#c23a2e;color:#f07166}
+.v-fault{font-size:12.5px;background:#3a1a17;border:1px solid #5c2621;border-radius:8px;padding:8px 10px;color:#f5c2bc}
+.v-fix{display:flex;flex-direction:column;gap:6px;background:#2a1513;border:1px solid #5c2621;border-radius:10px;padding:10px}
+.v-fix textarea{background:#0b0d12;border:1px solid #333a47;color:#e8ebf1;border-radius:8px;padding:8px;font-size:13px;resize:vertical;width:100%}
+.v-oldbar{font-size:12.5px;background:#3a2a10;color:#f3c77a;border:1px solid #6b4a12;border-radius:8px;padding:8px 10px}
+.v-strip{display:flex;align-items:center;gap:12px;padding:10px 16px;border-top:1px solid #1f242e;min-width:0}
+.v-count{font-family:var(--mono);font-size:12px;color:#9aa3b2;flex:none}
+.v-thumbs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:thin;padding:2px;min-width:0;flex:1}
+.v-th{position:relative;flex:none;width:44px;aspect-ratio:9/16;border-radius:7px;border:2px solid transparent;background:#161a22;padding:0;overflow:hidden;opacity:.55;color:#9aa3b2;font-family:var(--mono);font-size:9.5px}
+.v-th:hover{opacity:.85}
+.v-th[aria-current="true"]{border-color:#e8ebf1;opacity:1}
+.v-th img{width:100%;height:100%;object-fit:cover;display:block}
+.v-th .dot{position:absolute;left:3px;bottom:3px;width:7px;height:7px;border-radius:50%;background:var(--st,#8a92a1);box-shadow:0 0 0 1.5px #0b0d12}
+.v-th .pl{position:absolute;inset:0;display:grid;place-items:center;font-size:10px;color:#fff;text-shadow:0 1px 3px #000}
+@media (max-width:900px){
+  .v-body{grid-template-columns:1fr}
+  .v-detbtn{display:inline-flex}
+  .v-panel{position:absolute;left:0;right:0;bottom:0;max-height:70%;border-left:0;border-top:1px solid #2c323e;border-radius:16px 16px 0 0;z-index:3;box-shadow:0 -10px 40px rgba(0,0,0,.6)}
+  .v-panel[data-open="false"]{display:none}
+  .v-stage{padding:12px 52px}
+  .v-nav{width:38px;height:38px}.v-nav.prev{left:6px}.v-nav.next{right:6px}
+}
 .vload{position:absolute;left:8px;right:8px;bottom:8px;background:rgba(0,0,0,.7);color:#fff;font-size:11.5px;border-radius:6px;padding:5px 8px;text-align:center;z-index:2}
 .v-media{position:relative}
 .v-sound{position:absolute;top:10px;right:10px;z-index:2}
@@ -403,6 +447,17 @@ const STATUSES = [
 ];
 const STATUS_LABEL = Object.fromEntries(STATUSES.map(s=>[s.key,s.label]));
 const MODELS = ["kling-video-v3_0_omni","kling-3.0","seedance-2.5","wan-3.0","veo-3.0","nano_banana_pro","nano_banana_2","gpt_image_2_5","eleven_v3","heygen-avatar-v","capcut"];
+const I = {
+  x:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>',
+  l:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3.5 5.5 8l4.5 4.5"/></svg>',
+  r:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5 10.5 8 6 12.5"/></svg>',
+  dl:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2.5v8M4.5 7 8 10.5 11.5 7M3 13.5h10"/></svg>',
+  cp:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.5V3a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6.5a1 1 0 0 0 1 1h.5"/></svg>',
+  ok:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3.5 8.5 3 3 6-7"/></svg>',
+  fix:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M10.5 2.5l3 3-8 8H2.5v-3z"/></svg>',
+  info:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 7.2v4M8 4.8v.1" stroke-linecap="round"/></svg>',
+  back:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6.5h6a3 3 0 0 1 0 6H6M6 3.5l-3 3 3 3"/></svg>',
+};
 const ICONS = {
   video:'<svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1.5" y="3.5" width="9" height="9" rx="1.5"/><path d="M10.5 7 14.5 4.5v7L10.5 9"/></svg>',
   image:'<svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1.5" y="2.5" width="13" height="11" rx="1.5"/><circle cx="5.5" cy="6" r="1.3"/><path d="m2 12 4-4 3 3 2-2 3 3"/></svg>',
@@ -770,7 +825,7 @@ function stepBox(grp,k,all){
         <div class="kv"><span class="lbl">Fixing</span><span class="mono" style="color:var(--regen)">${fix}</span></div></div>
       <span class="grow"></span>
       <button class="btn small" type="button" data-copyall="${grp.key}" data-field="${d.prompt}">Copy all prompts</button>
-      <button class="btn small primary" type="button" data-zip="${grp.key}" data-step="${k}" ${files?"":"disabled"}>⬇ Download all ${plural.toLowerCase()}</button>
+      <button class="btn small primary" type="button" data-zip="${grp.key}" data-step="${k}" ${files?"":"disabled"}>${I.dl} Download all ${plural.toLowerCase()}</button>
     </div>
     ${note?`<p class="note box-note">${note}</p>`:""}
     <div class="bar" style="margin:0 14px"><i style="width:${items.length?ok/items.length*100:0}%;background:var(--use)"></i></div>
@@ -824,7 +879,7 @@ function mediaCard(g,k){
       <button class="btn bad" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>✎ Fix</button></div>`:""}
     <div class="mc-tools">
       <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${prompt?"":"disabled"}>Copy prompt</button>
-      <button class="btn small" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>⬇ Download</button>
+      <button class="btn small" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>${I.dl} Download</button>
       <button class="btn small" type="button" data-open="${esc(g.id)}" style="grid-column:1/-1">Edit details</button>
     </div></article>`;
 }
@@ -919,7 +974,7 @@ function closeViewer(){if(!state.viewer) return;state.viewer=null;const v=$("#vi
 function moveViewer(dir){
   const v=state.viewer; if(!v) return;
   const list=viewerList(v.step), i=list.findIndex(g=>g.id===v.id);
-  const n=list[(i+dir+list.length)%list.length]; if(n){v.id=n.id;v.ver=null;v.menu=false;renderViewer()}
+  const n=list[(i+dir+list.length)%list.length]; if(n){v.id=n.id;v.ver=null;v.menu=false;v.fix=false;renderViewer()}
 }
 function renderViewer(){
   const v=state.viewer; if(!v) return;
@@ -932,10 +987,11 @@ function renderViewer(){
   const list=viewerList(k), i=list.findIndex(x=>x.id===g.id);
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
   const src=shown?srcFrom(shown.asset,shown.parts,shown.type):"";
+  const locked=k==="video"&&stepState(g,"image")!=="ok";
   const media=asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
-    `<div class="v-empty">${k==="video"&&stepState(g,"image")!=="ok"?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
+    `<div class="v-empty">${locked?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
   const s=stepState(g,k);
-  const chip=s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
+  const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
   const grp=groupOf(g);
   const sizeTxt=x=>x.size==null||x.size===""?"":(k==="image"?String(x.size):`${x.size}s`);
   const item=x=>{
@@ -950,26 +1006,66 @@ function renderViewer(){
         <span class="lbl">Version</span><b>v${shown?shown.v:"—"}</b>${older?`<span class="vi-old">Not current</span>`:`<span class="vi-cur">Current</span>`}<span class="vv-of">of ${vers.length}</span><span aria-hidden="true">▾</span></button>
       ${v.menu?`<div class="v-menu" role="listbox" aria-label="Versions">${vers.slice().reverse().map(item).join("")}</div>`:""}
     </div>`:"";
+  // details: the shown version's own record
+  const x=shown||snapshot(g,k);
+  const rows=[
+    ["Connector",esc(x.connector||d.defConn||"—")],
+    [k==="image"?"Resolution":"Length",esc(sizeTxt(x)||"—")],
+    ["Model",`<span class="mono">${esc(x.model||g[d.model]||d.defModel||"—")}</span>`,"wide"],
+    ["Credits",x.credits!=null&&x.credits!==""?num(x.credits):"—"],
+    ["Attempt",`${1+(Number(g[d.regens])||0)} of 3`],
+    ["Generated",when(x.at)],
+    ["Original",x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">Open ↗</a>`:"—"],
+  ];
+  const prompt=g[d.prompt]||"";
+  const canAct=!state.readOnly&&!locked&&s!=="gen"&&!older&&!!asset;
+  const panel=`<aside class="v-panel" data-open="${!!v.details}" aria-label="Details">
+      <div class="ps"><span class="lbl">Status</span><div>${chip}${older?` <span class="pill s-planned">Viewing v${shown.v}</span>`:""}</div></div>
+      ${g.line?`<div class="ps"><span class="lbl">Script line</span><div class="v-quote">“${esc(g.line)}”</div></div>`:""}
+      ${older?`<div class="v-oldbar">You're looking at v${shown.v}, not the current version.${shown.note?` Fix that made it: ${esc(shown.note)}`:""}</div>`:""}
+      ${g[d.fault]&&(s==="bad"||s==="gen")&&!older?`<div class="v-fault"><span class="lbl" style="color:#f07166">${s==="gen"?"Fixing now":"To fix"}</span><div>${esc(g[d.fault])}</div></div>`:""}
+      <dl class="v-dl">${rows.map(([a,b,c])=>`<div${c?` class="${c}"`:""}><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
+      <div class="ps"><div class="lbl-row"><span class="lbl">Prompt</span><span class="pm">${num(prompt.length)} chars</span><span class="grow"></span>
+        <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${prompt?"":"disabled"}>${I.cp} Copy</button></div>
+        <pre class="v-prompt">${prompt?esc(prompt):"Prompt not written yet."}</pre></div>
+      ${v.fix&&canAct?`<form class="v-fix" data-faultform="${esc(g.id)}" data-step="${k}">
+          <label class="lbl" for="vfault" style="color:#f5c2bc">What should be fixed?</label>
+          <textarea id="vfault" rows="3" placeholder="e.g. The strap sits above the kneecap. Move it just below." required></textarea>
+          <div class="v-actions"><button class="btn badv" type="submit" style="background:#c23a2e;color:#fff">Confirm &amp; regenerate</button><button class="btn" type="button" data-vfix="0">Cancel</button></div></form>`:""}
+      <div class="v-actions">
+        ${canAct&&!v.fix?`<button class="btn okv" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}">${I.ok} Confirm</button>
+        <button class="btn badv" type="button" data-vfix="1">${I.fix} Fix</button>`:""}
+        ${older&&!state.readOnly?`<button class="btn full" type="button" data-vrestore="${shown.v}">${I.back} Use this version</button>`:""}
+        <button class="btn primary full" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${shown?`data-ver="${shown.v}"`:"disabled"}>${I.dl} Download${older?` v${shown.v}`:""}</button>
+      </div>
+    </aside>`;
+  const thumbs=list.map(y=>{
+    const hasImg=!!y.imageAsset, st=stepState(y,k);
+    const col=st==="ok"?"var(--use)":st==="bad"||st==="gen"?"var(--regen)":st==="review"?"var(--review)":"#8a92a1";
+    const im=hasImg?`<img ${srcAttr(y,"image")} alt="" loading="lazy">`:`<span class="pl">${esc(y.beat||"")}</span>`;
+    return `<button type="button" class="v-th" data-vgo="${esc(y.id)}" aria-current="${y.id===g.id}" aria-label="${esc(y.beat||"")}" title="${esc((y.beat||"")+" · "+(y.title||""))}">${im}${k==="video"&&hasImg?`<span class="pl">▶</span>`:""}<span class="dot" style="--st:${col}"></span></button>`;
+  }).join("");
+  const old=document.getElementById("vfault"), draft=old?old.value:"";
   $("#viewer").innerHTML=`
     <div class="v-top">
-      <div class="kv"><span class="lbl">${esc(grp.label)}</span><span class="v-beat">${esc(g.beat||"")} · ${esc(g.title||"")}</span></div>
-      <div class="v-tabs">${flow(g).map(x=>`<button type="button" class="tab" data-vstep="${x}" aria-selected="${x===k}">${STEP[x].label}</button>`).join("")}</div>
+      <div class="v-title"><span class="lbl">${esc(grp.label)}</span><span class="v-beat">${esc(g.beat||"")} · ${esc(g.title||"")}</span></div>
+      <div class="v-tabs">${flow(g).map(y=>`<button type="button" class="tab" data-vstep="${y}" aria-selected="${y===k}">${STEP[y].label}</button>`).join("")}</div>
       ${verUi}
-      <span class="grow"></span>${chip}
-      <button class="btn small" type="button" data-vclose="x" aria-label="Close">✕ Close</button></div>
-    <div class="v-stage" data-vclose="">
-      ${list.length>1?`<button class="v-nav prev" type="button" data-vnav="-1" aria-label="Previous">‹</button>`:""}
-      <div class="v-media">${media}</div>
-      ${list.length>1?`<button class="v-nav next" type="button" data-vnav="1" aria-label="Next">›</button>`:""}
-    </div>
-    <div class="v-bottom">
-      ${older?`<span class="v-oldbar">Viewing v${shown.v} · not the current version${shown.note?` · Fix that made it: ${esc(shown.note)}`:""}</span>
-        ${state.readOnly?"":`<button class="btn small" type="button" data-vrestore="${shown.v}">↺ Use this version</button>`}`:`<span class="mono">${i+1} / ${list.length} ${d.label.toLowerCase()}s</span>`}
       <span class="grow"></span>
-      <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${g[d.prompt]?"":"disabled"}>Copy prompt</button>
-      <button class="btn small primary" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${shown?`data-ver="${shown.v}"`:"disabled"}>⬇ Download${older?` v${shown.v}`:""}</button>
-    </div>`;
+      <button class="btn small v-detbtn" type="button" data-vdet="1" aria-expanded="${!!v.details}">${I.info} Details</button>
+      <button class="v-iconbtn" type="button" data-vclose="x" aria-label="Close">${I.x}</button></div>
+    <div class="v-body">
+      <div class="v-stage" data-vclose="">
+        ${list.length>1?`<button class="v-nav prev" type="button" data-vnav="-1" aria-label="Previous">${I.l}</button>`:""}
+        <div class="v-media">${media}</div>
+        ${list.length>1?`<button class="v-nav next" type="button" data-vnav="1" aria-label="Next">${I.r}</button>`:""}
+      </div>
+      ${panel}
+    </div>
+    <div class="v-strip"><span class="v-count">${i+1} / ${list.length} ${d.label.toLowerCase()}s</span><div class="v-thumbs">${thumbs}</div></div>`;
   const el=$("#viewer"); el.hidden=false; hydrate(el);
+  const on=el.querySelector('.v-th[aria-current="true"]'); if(on) on.scrollIntoView({block:"nearest",inline:"center"});
+  if(v.fix){const t=el.querySelector("#vfault");if(t){t.value=draft;t.focus()}}
 }
 async function restoreVersion(g,k,vnum){
   const d=STEP[k], vers=versionsOf(g,k), x=vers.find(y=>y.v===vnum); if(!x||!state.db) return;
@@ -981,9 +1077,12 @@ async function restoreVersion(g,k,vnum){
 /* events */
 let pickTarget=null;
 document.addEventListener("click",e=>{
-  const t=e.target.closest("[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-vgo],[data-vdet],[data-vfix],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
+  if(ds.vgo){state.viewer.id=ds.vgo;state.viewer.ver=null;state.viewer.menu=false;state.viewer.fix=false;renderViewer();return}
+  if(ds.vdet){state.viewer.details=!state.viewer.details;renderViewer();return}
+  if(ds.vfix){state.viewer.fix=ds.vfix==="1";renderViewer();return}
   if(ds.vmenu){state.viewer.menu=!state.viewer.menu;renderViewer();return}
   if(ds.vpick){state.viewer.ver=Number(ds.vpick);state.viewer.menu=false;renderViewer();return}
   if(ds.vrestore){const x=state.gens.find(y=>y.id===state.viewer.id);if(x) restoreVersion(x,state.viewer.step,Number(ds.vrestore));return}
@@ -1015,6 +1114,7 @@ document.addEventListener("click",e=>{
 
 });
 document.addEventListener("keydown",e=>{
+  if(state.viewer&&e.target.closest&&e.target.closest("textarea,input")){if(e.key==="Escape"){state.viewer.fix=false;renderViewer()}return}
   if(state.viewer){if(e.key==="Escape"){if(state.viewer.menu){state.viewer.menu=false;renderViewer()} else closeViewer()} else if(e.key==="ArrowRight") moveViewer(1); else if(e.key==="ArrowLeft") moveViewer(-1); return}
   if(e.key==="Escape"&&!$("#drawer").hidden) closeDrawer();
   const t=e.target.closest&&e.target.closest("[data-viewm]");
@@ -1024,7 +1124,7 @@ document.addEventListener("submit",e=>{
   const f=e.target.closest("[data-faultform]"); if(!f) return;
   e.preventDefault();
   const v=f.querySelector("textarea").value.trim(); if(!v){f.querySelector("textarea").focus();return}
-  state.faultOpen=null; setVerdict(f.dataset.faultform,f.dataset.step,false,v);
+  state.faultOpen=null; if(state.viewer) state.viewer.fix=false; setVerdict(f.dataset.faultform,f.dataset.step,false,v);
 });
 $("#picker").addEventListener("change",e=>{const f=e.target.files[0];if(f&&pickTarget) uploadTo(pickTarget.id,pickTarget.step,f);pickTarget=null});
 ["dragover","dragenter"].forEach(ev=>document.addEventListener(ev,e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(t){e.preventDefault();t.classList.add("drag")}}));
