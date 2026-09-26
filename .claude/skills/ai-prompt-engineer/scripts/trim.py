@@ -94,18 +94,30 @@ def plan(ws, total, keep, pre, post, entry_breath, quiet):
     return spans, cuts
 
 
+def has_video(src):
+    probe = subprocess.run([FFMPEG, "-hide_banner", "-i", str(src)], capture_output=True, text=True).stderr
+    return "Video:" in probe
+
+
 def render(src, dst, spans):
+    video = has_video(src)  # audio-only masters (§22U voice) have no video stream
     parts, labels = [], []
     for i, (a, b) in enumerate(spans):
-        parts.append(f"[0:v]trim={a}:{b},setpts=PTS-STARTPTS[v{i}];"
-                     f"[0:a]atrim={a}:{b},asetpts=PTS-STARTPTS,"
+        if video:
+            parts.append(f"[0:v]trim={a}:{b},setpts=PTS-STARTPTS[v{i}];")
+        parts.append(f"[0:a]atrim={a}:{b},asetpts=PTS-STARTPTS,"
                      f"afade=t=in:d=0.01,afade=t=out:st={max(0, b - a - 0.01)}:d=0.01[a{i}];")
-        labels.append(f"[v{i}][a{i}]")
-    graph = "".join(parts) + "".join(labels) + f"concat=n={len(spans)}:v=1:a=1[v][a]"
+        labels.append(f"[v{i}][a{i}]" if video else f"[a{i}]")
+    if video:
+        graph = "".join(parts) + "".join(labels) + f"concat=n={len(spans)}:v=1:a=1[v][a]"
+        maps = ["-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "16", "-preset", "medium",
+                "-c:a", "aac", "-b:a", "192k"]
+    else:
+        graph = "".join(parts) + "".join(labels) + f"concat=n={len(spans)}:v=0:a=1[a]"
+        codec = ["-c:a", "libmp3lame", "-b:a", "192k"] if str(dst).endswith(".mp3") else ["-c:a", "aac", "-b:a", "192k"]
+        maps = ["-map", "[a]"] + codec
     subprocess.run([FFMPEG, "-hide_banner", "-loglevel", "error", "-y", "-i", str(src),
-                    "-filter_complex", graph, "-map", "[v]", "-map", "[a]",
-                    "-c:v", "libx264", "-crf", "16", "-preset", "medium",
-                    "-c:a", "aac", "-b:a", "192k", str(dst)], check=True)
+                    "-filter_complex", graph] + maps + [str(dst)], check=True)
 
 
 def verify(dst, keep_count, model_name):

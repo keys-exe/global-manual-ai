@@ -18,10 +18,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   6 plates + 3 voice takes + clone source in review); moved the hourly Fix check here (`trig_01AkAtMoRj4zmTuGSkTRApUw`).
 
 ## Where it stands
-- **Stopped at §22U step 6 (HUMAN in Manual):** the user clones `Identity_clone_source` in ElevenLabs
-  (Instant Voice Clone, Remove background noise ON, name `Identity`) and sends the voice ID.
-  The file is on the board (card VO-N-SRC, MP3 stream in an MP4 container, not re-encoded). Media is git-ignored.
-- Then: step 7–9 TTS (verbatim script lines, `tts_budget.py --script-lines`), step 10 master listen (user),
-  then E6 durations for every B-roll row, then step 6 hooks one by one (HK1–HK3, split layout EG01).
+- **§22U steps 6–9 done (2026-09-26 09:30–09:45, on the user's "clone the voice and generate the VO"):** clone
+  `Identity-Narrator` = `F5vpA7jC44a7w7td6GdQ` (by API; `Identity` was taken by the v2 build's Carol). TTS eleven_v3 via
+  the connector: body 4 takes (2 pass the word check), HK1 4, HK2 4, HK3 3. Both passing body takes E11-trimmed to 59.9s.
+  All on the board (stage Voice, status review). Details: `vo/VO.md`. Media is git-ignored; ElevenLabs history keeps it.
+- **Next, step 10 (user):** pick the body master + one take per hook (measured picks: BODY T1 `gjdy` trimmed, HK1 T2,
+  HK2 T3, HK3 T1). Then save `Identity-Narrator_master.mp3`, take word timestamps, set E6 durations on every B-roll row,
+  and start step 6 hooks one by one (HK1–HK3, split layout EG01).
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),
   F7 (`package_closed.jpg` missing), F8 (AVATAR-SHEET doc inconsistency), F10 (watermark omit).

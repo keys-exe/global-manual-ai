@@ -1,0 +1,910 @@
+{
+ "7EeH5FpM6qPg9yEbGGLm": {
+  "script": "HK2",
+  "dur": 4.32,
+  "lead": 0.0,
+  "tail": 0.12,
+  "wpm": 229,
+  "max_gap": 0.0,
+  "gaps_over_0_6": 0,
+  "diff": [],
+  "pitch": 114.7,
+  "text": "why these knee straps are a must if you're on your feet all day for work."
+ },
+ "9jB1MhVM0zAzGaIdlqrd": {
+  "script": "HK2",
+  "dur": 4.88,
+  "lead": 0.0,
+  "tail": 0.12,
+  "wpm": 202,
+  "max_gap": 0.0,
+  "gaps_over_0_6": 0,
+  "diff": [],
+  "pitch": 116.8,
+  "text": "Why these knee straps are a must if you're on your feet all day for work."
+ },
+ "ACeFSBjTbyWJP2WUUQAG": {
+  "script": "BODY",
+  "dur": 80.4,
+  "lead": 0.0,
+  "tail": 0.02,
+  "wpm": 124,
+  "max_gap": 1.3,
+  "gaps_over_0_6": 14,
+  "diff": [
+   [
+    "replace",
+    [
+     "seventeen"
+    ],
+    [
+     "17"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "bodyweight"
+    ],
+    [
+     "body",
+     "weight"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "kneecapthese"
+    ],
+    [
+     "kneecap",
+     "these"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "orthopaedic"
+    ],
+    [
+     "orthopedic"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "itinside"
+    ],
+    [
+     "it",
+     "inside"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "silicone"
+    ],
+    [
+     "silicon"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "jointsports"
+    ],
+    [
+     "joint",
+     "sport"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "thirty",
+     "four",
+     "percent"
+    ],
+    [
+     "34"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "stepbuilt"
+    ],
+    [
+     "step",
+     "built"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "meniscusso"
+    ],
+    [
+     "meniscus",
+     "so"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "hurtsadjustable"
+    ],
+    [
+     "hurts",
+     "adjustable"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "downit"
+    ],
+    [
+     "down",
+     "it"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "dayrecommended"
+    ],
+    [
+     "day",
+     "recommended"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "orthopaedic"
+    ],
+    [
+     "orthopedic"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "two",
+     "hundred",
+     "thousand",
+     "peopleand"
+    ],
+    [
+     "200",
+     "000",
+     "people",
+     "and"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "todayyou"
+    ],
+    [
+     "today",
+     "you"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "sixty"
+    ],
+    [
+     "60"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "backput"
+    ],
+    [
+     "back",
+     "put"
+    ]
+   ]
+  ],
+  "pitch": 132.2,
+  "text": "because every step puts 17 times your body weight through one small spot below your kneecap. These straps took three years to build with orthopedic surgeons to sit right on that spot, unlike the cheap copies which are too small to reach it. Inside, a silicon pad catches the force and moves it off the worn part before it hits the joint. Sport scientists measured it, 34 % less strain every step. Built for bone on bone, arthritis, worn cartilage and meniscus. So you walk further and take the stairs without gripping the rail. Not because the arthritis has gone, because the force isn't landing where it hurts. Adjustable, no slipping, no sores, no rolling down. It sits flat under your trousers, light enough to wear all day, recommended by orthopedic surgeons and worn by over 200 ,000 people. And the best part? It's two for the price of one today. You get 60 days. If it doesn't change your stairs, you get your money back. Put one on and your own stairs will tell you."
+ },
+ "BDMmnnp0bBB534Lq4Uk8": {
+  "script": "HK2",
+  "dur": 4.64,
+  "lead": 0.0,
+  "tail": 0.2,
+  "wpm": 216,
+  "max_gap": 0.0,
+  "gaps_over_0_6": 0,
+  "diff": [],
+  "pitch": 118.5,
+  "text": "Why these knee straps are a must if you're on your feet all day for work."
+ },
+ "C7LZy2MhCiM3St8WFsDi": {
+  "script": "HK1",
+  "dur": 4.0,
+  "lead": 0.0,
+  "tail": 0.1,
+  "wpm": 231,
+  "max_gap": 0.0,
+  "gaps_over_0_6": 0,
+  "diff": [],
+  "pitch": 113.9,
+  "text": "Why these knee straps are a must if you've been told you're bone on bone."
+ },
+ "Fuxvhnj5Rvrjgxvn3hMi": {
+  "script": "BODY",
+  "dur": 70.72,
+  "lead": 0.0,
+  "tail": 0.06,
+  "wpm": 141,
+  "max_gap": 1.18,
+  "gaps_over_0_6": 12,
+  "diff": [
+   [
+    "replace",
+    [
+     "seventeen"
+    ],
+    [
+     "17"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "bodyweight"
+    ],
+    [
+     "body",
+     "weight"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "kneecapthese"
+    ],
+    [
+     "kneecap",
+     "these"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "orthopaedic"
+    ],
+    [
+     "orthopedic"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "itinside"
+    ],
+    [
+     "it",
+     "inside"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "jointsports"
+    ],
+    [
+     "joint",
+     "sport"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "thirty",
+     "four",
+     "percent"
+    ],
+    [
+     "34"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "stepbuilt"
+    ],
+    [
+     "step",
+     "built"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "meniscusso"
+    ],
+    [
+     "meniscus",
+     "so"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "has"
+    ],
+    [
+     "is"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "hurtsadjustable"
+    ],
+    [
+     "hurts",
+     "adjustable"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "downit"
+    ],
+    [
+     "down",
+     "it"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "dayrecommended"
+    ],
+    [
+     "day",
+     "recommended"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "orthopaedic"
+    ],
+    [
+     "orthopedic"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "two",
+     "hundred",
+     "thousand",
+     "peopleand"
+    ],
+    [
+     "200",
+     "000",
+     "people",
+     "and"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "todayyou"
+    ],
+    [
+     "today",
+     "you"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "sixty"
+    ],
+    [
+     "60"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "backput"
+    ],
+    [
+     "back",
+     "put"
+    ]
+   ]
+  ],
+  "pitch": 134.5,
+  "text": "Because every step puts 17 times your body weight through one small spot below your kneecap. These straps took three years to build with orthopedic surgeons to sit right on that spot, unlike the cheap copies which are too small to reach it. Inside, a silicone pad catches the force and moves it off the worn part before it hits the joint. Sport scientists measured it, 34 % less strain every step. Built for bone -on -bone arthritis, worn cartilage and meniscus. So you walk further and take the stairs without gripping the rail. Not because the arthritis is gone, because the force isn't landing where it hurts. Adjustable, no slipping, no sores, no rolling down. It sits flat under your trousers, light enough to wear all day. Recommended by orthopedic surgeons and worn by over 200 ,000 people. And the best part? It's two for the price of one today. You get 60 days. If it doesn't change your stairs, you get your money back. Put one on and your own stairs will tell you."
+ },
+ "ICpWhHnAd2aoF0haINno": {
+  "script": "HK1",
+  "dur": 4.0,
+  "lead": 0.0,
+  "tail": 0.16,
+  "wpm": 234,
+  "max_gap": 0.0,
+  "gaps_over_0_6": 0,
+  "diff": [],
+  "pitch": 115.1,
+  "text": "Why these knee straps are a must if you've been told you're bone on bone."
+ },
+ "OTsCTgmK7Q2FBFdnDjI0": {
+  "script": "HK3",
+  "dur": 5.04,
+  "lead": 0.0,
+  "tail": 0.3,
+  "wpm": 203,
+  "max_gap": 0.0,
+  "gaps_over_0_6": 0,
+  "diff": [],
+  "pitch": 112.7,
+  "text": "Why these knee straps are a must if you can't keep up with your grandchildren anymore."
+ },
+ "U3HVh5OjuSFrRkZPdRvx": {
+  "script": "HK2",
+  "dur": 4.32,
+  "lead": 0.0,
+  "tail": 0.2,
+  "wpm": 233,
+  "max_gap": 0.0,
+  "gaps_over_0_6": 0,
+  "diff": [],
+  "pitch": 112.7,
+  "text": "Why these knee straps are a must if you're on your feet all day for work."
+ },
+ "V30VOCrXFRAm0fSFWcu3": {
+  "script": "HK3",
+  "dur": 5.2,
+  "lead": 0.0,
+  "tail": 0.3,
+  "wpm": 196,
+  "max_gap": 0.0,
+  "gaps_over_0_6": 0,
+  "diff": [],
+  "pitch": 119.4,
+  "text": "why these knee straps are a must if you can't keep up with your grandchildren anymore."
+ },
+ "gjdymttUgM2ZythnDP1R": {
+  "script": "BODY",
+  "dur": 77.52,
+  "lead": 0.0,
+  "tail": 0.1,
+  "wpm": 129,
+  "max_gap": 1.32,
+  "gaps_over_0_6": 14,
+  "diff": [
+   [
+    "replace",
+    [
+     "seventeen"
+    ],
+    [
+     "17"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "bodyweight"
+    ],
+    [
+     "body",
+     "weight"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "kneecapthese"
+    ],
+    [
+     "kneecap",
+     "these"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "orthopaedic"
+    ],
+    [
+     "orthopedic"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "copies"
+    ],
+    [
+     "coppers"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "itinside"
+    ],
+    [
+     "it",
+     "inside"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "silicone"
+    ],
+    [
+     "silicon"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "jointsports"
+    ],
+    [
+     "joint",
+     "sports"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "thirty",
+     "four",
+     "percent"
+    ],
+    [
+     "34"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "stepbuilt"
+    ],
+    [
+     "step",
+     "built"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "meniscusso"
+    ],
+    [
+     "meniscus",
+     "so"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "hurtsadjustable"
+    ],
+    [
+     "hurts",
+     "adjustable"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "downit"
+    ],
+    [
+     "down",
+     "it"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "dayrecommended"
+    ],
+    [
+     "day",
+     "recommended"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "orthopaedic"
+    ],
+    [
+     "orthopedic"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "two",
+     "hundred",
+     "thousand",
+     "peopleand"
+    ],
+    [
+     "200",
+     "000",
+     "people",
+     "and"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "todayyou"
+    ],
+    [
+     "today",
+     "you"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "sixty"
+    ],
+    [
+     "60"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "backput"
+    ],
+    [
+     "back",
+     "put"
+    ]
+   ]
+  ],
+  "pitch": 130.1,
+  "text": "because every step puts 17 times your body weight through one small spot below your kneecap. These straps took three years to build with orthopedic surgeons to sit right on that spot, unlike the cheap coppers which are too small to reach it. Inside, a silicon pad catches the force and moves it off the worn part before it hits the joint. Sports scientists measured it, 34 % less strain every step. Built for bone -on -bone, arthritis, worn cartilage and meniscus. So you walk further and take the stairs without gripping the rail. Not because the arthritis has gone, because the force isn't landing where it hurts. Adjustable, no slipping, no sores, no rolling down. It sits flat under your trousers, light enough to wear all day, recommended by orthopedic surgeons and worn by over 200 ,000 people. And the best part? It's two for the price of one today. You get 60 days. If it doesn't change your stairs, you get your money back. Put one on and your own stairs will tell you."
+ },
+ "h2RkEm5qfTLHqSraQwT5": {
+  "script": "BODY",
+  "dur": 80.64,
+  "lead": 0.0,
+  "tail": 0.02,
+  "wpm": 124,
+  "max_gap": 1.48,
+  "gaps_over_0_6": 17,
+  "diff": [
+   [
+    "replace",
+    [
+     "seventeen"
+    ],
+    [
+     "17"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "bodyweight"
+    ],
+    [
+     "body",
+     "weight"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "kneecapthese"
+    ],
+    [
+     "kneecap",
+     "these"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "orthopaedic"
+    ],
+    [
+     "orthopedic"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "itinside"
+    ],
+    [
+     "it",
+     "inside"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "jointsports"
+    ],
+    [
+     "joint",
+     "sport"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "thirty",
+     "four",
+     "percent"
+    ],
+    [
+     "34"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "stepbuilt"
+    ],
+    [
+     "step",
+     "built"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "meniscusso"
+    ],
+    [
+     "meniscus",
+     "so"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "hurtsadjustable"
+    ],
+    [
+     "hurts",
+     "adjustable"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "downit"
+    ],
+    [
+     "down",
+     "it"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "dayrecommended"
+    ],
+    [
+     "day",
+     "recommended"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "orthopaedic"
+    ],
+    [
+     "orthopedic"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "two",
+     "hundred",
+     "thousand",
+     "peopleand"
+    ],
+    [
+     "200",
+     "000",
+     "people",
+     "and"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "todayyou"
+    ],
+    [
+     "today",
+     "you"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "sixty"
+    ],
+    [
+     "60"
+    ]
+   ],
+   [
+    "replace",
+    [
+     "backput"
+    ],
+    [
+     "back",
+     "put"
+    ]
+   ]
+  ],
+  "pitch": 131.1,
+  "text": "because every step puts 17 times your body weight through one small spot below your kneecap. These straps took three years to build with orthopedic surgeons to sit right on that spot, unlike the cheap copies which are too small to reach it. Inside, a silicone pad catches the force and moves it off the worn part before it hits the joint. Sport scientists measured it. 34 % less strain every step, built for bone -on -bone, arthritis, worn cartilage and meniscus. So you walk further and take the stairs without gripping the rail. Not because the arthritis has gone, because the force isn't landing where it hurts. Adjustable. No slipping, no sores, no rolling down. It sits flat under your trousers, light enough to wear all day, recommended by orthopedic surgeons and worn by over 200 ,000 people. And the best part? It's two for the price of one today. You get 60 days. If it doesn't change your stairs, you get your money back. Put one on and your own stairs will tell you."
+ },
+ "jV1QhjdDUg5ULEg6LB1G": {
+  "script": "HK1",
+  "dur": 3.92,
+  "lead": 0.0,
+  "tail": 0.1,
+  "wpm": 236,
+  "max_gap": 0.0,
+  "gaps_over_0_6": 0,
+  "diff": [],
+  "pitch": 114.3,
+  "text": "Why these knee straps are a must if you've been told you're bone on bone."
+ },
+ "oLiTC2sh5b4KyT5YPAV8": {
+  "script": "HK1",
+  "dur": 3.92,
+  "lead": 0.0,
+  "tail": 0.1,
+  "wpm": 236,
+  "max_gap": 0.0,
+  "gaps_over_0_6": 0,
+  "diff": [],
+  "pitch": 117.6,
+  "text": "Why these knee straps are a must if you've been told you're bone on bone."
+ },
+ "qo0fVyvtB7r45yoRPCHC": {
+  "script": "HK3",
+  "dur": 4.72,
+  "lead": 0.0,
+  "tail": 0.18,
+  "wpm": 211,
+  "max_gap": 0.0,
+  "gaps_over_0_6": 0,
+  "diff": [],
+  "pitch": 119.4,
+  "text": "Why these knee straps are a must if you can't keep up with your grandchildren anymore."
+ }
+}

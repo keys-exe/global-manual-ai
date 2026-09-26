@@ -261,7 +261,7 @@ A man of sixty from Tyneside, a low dry chest voice with gravel at its edges, br
 | Stress register | quieter, slower on "Not because the arthritis has gone." — never bigger |
 | Non-speech events | one short nasal exhale before a number; a dry half-laugh (once at most). Nothing else |
 | Mouth asymmetry | level at rest (read off the v2 close-up); speech pulls right |
-| Voice name (§22U step 7) | `Identity` — from the title "Identity Callout" (confirm no clash on the account at step 6) |
+| Voice name (§22U step 7) | `Identity-Narrator` — voice ID `F5vpA7jC44a7w7td6GdQ` (cloned 2026-09-26; `Identity` was taken on the account) |
 
 **Unverified:** the `GEN-DEFAULT-male-60s` roster entry does not exist yet, so `VOICE-NARR`'s clearance against the generator default is argued (four axes: accent, texture, rhythm, habit), not measured.
 
