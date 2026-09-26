@@ -92,3 +92,4 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **HK1-B new set (user: "an overall new image, a new set for HK1-B"):** fresh T2I `hooks/HK1-B.v6.t2i.txt` (ECU on the
   stairs, PLACE-LOCK centred front, refs: subject, hall, product front/back, placement front + bent), 4 variants →
   board images v12–v15, To check. The stairs clip (simple prompt `HK1-B.i2v.v5.json`) runs from the user's pick.
+- **HK1-B:** user picked image **v15** (confirmed); clip from it with the simple stairs prompt → board video v7, To check.
