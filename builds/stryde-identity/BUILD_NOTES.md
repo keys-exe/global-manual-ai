@@ -89,3 +89,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **HK1-B placement (user: "the strap placement is not correct"):** image v2's shell had rotated to the outer side of
   the knee (wordmark off-centre, a slide on the front). Edit of v2 re-seating it per PLACE_LOCK with the locked
   placement refs (front f5263ed7, bent 8a8979ac) → board images v10/v11, To check. New clip waits for the user's pick.
+- **HK1-B new set (user: "an overall new image, a new set for HK1-B"):** fresh T2I `hooks/HK1-B.v6.t2i.txt` (ECU on the
+  stairs, PLACE-LOCK centred front, refs: subject, hall, product front/back, placement front + bent), 4 variants →
+  board images v12–v15, To check. The stairs clip (simple prompt `HK1-B.i2v.v5.json`) runs from the user's pick.
