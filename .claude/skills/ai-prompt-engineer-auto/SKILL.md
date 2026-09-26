@@ -17,6 +17,8 @@ Grep  pattern="^## (E(0|1|2|3|7|9|11)|5|18B|22U|22V|22W|24I|30H)\."  path="stand
 
 **The user sends the Drive link with `RUN: AUTOMATION` and hears nothing until the finished videos arrive.** You are the human for every HUMAN, HG, "user approves", "queue for the user" and "stop" in the standard: judge, decide, log, continue. The only stop is the credit cap. Nothing is sent mid-run — prompts, sheets and QA tables go to Drive `OUTPUT/` and the build tree.
 
+**Generation Board (§16A, E3; pending amendment 2026-09-26).** Every generation, both run modes, is logged on the build's own board (template `dashboard/generation_board.html`; board links live in `CLAUDE.md` and the Build Sheet): grouped per act — Hook 1…, Act 1… — Images then Videos, every field labelled, each render uploaded the turn it lands, the §22V / §22W verdict recorded. The reviewer presses Confirm or Fix; a Fix note is a §34 correction for that beat, regenerated within the §22V budget and picked up by the hourly check. In Automatic the agent confirms its own cards; the board stays the record.
+
 ## 1. Start of run — before any credit is spent
 
 1. **Confirm the trigger** in one line: "Automatic run for build `<name>` — final videos only." A Drive intake or Intake Pack with `RUN: AUTOMATION` is the trigger (§18B). That line is the last message until the final delivery.

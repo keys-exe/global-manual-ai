@@ -1,0 +1,997 @@
+<title>Generation Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#ECEEF2; --surface:#FFFFFF; --sunk:#F4F5F8; --line:#DCE0E7; --ink:#141922; --muted:#5A6373; --faint:#8A92A1;
+  --accent:#3243D6; --accent-soft:#E6E9FC;
+  --frame:#1C212B; --frame-ink:#E9ECF2;
+  --planned:#8A92A1; --ready:#3243D6; --gen:#0E7C9A; --review:#B26B00; --use:#1D8352; --regen:#C23A2E;
+  --planned-bg:#EEF0F3; --ready-bg:#E6E9FC; --gen-bg:#E1F2F6; --review-bg:#FBF0DE; --use-bg:#E2F3EA; --regen-bg:#FBE6E3;
+  --shadow:0 1px 2px rgba(20,25,34,.06),0 4px 16px rgba(20,25,34,.05);
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --ground:#0E1117; --surface:#161A22; --sunk:#1B2029; --line:#272D39; --ink:#E7EAF0; --muted:#9AA3B2; --faint:#6C7584;
+  --accent:#8C98FF; --accent-soft:#232A4D; --frame:#0A0D12; --frame-ink:#DDE2EA;
+  --planned:#8C95A4; --ready:#8C98FF; --gen:#4CC0DC; --review:#E7A93D; --use:#4FC389; --regen:#F07166;
+  --planned-bg:#1F242E; --ready-bg:#232A4D; --gen-bg:#12303A; --review-bg:#352812; --use-bg:#14301F; --regen-bg:#3A1A17;
+  --shadow:0 1px 2px rgba(0,0,0,.4);
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0E1117; --surface:#161A22; --sunk:#1B2029; --line:#272D39; --ink:#E7EAF0; --muted:#9AA3B2; --faint:#6C7584;
+  --accent:#8C98FF; --accent-soft:#232A4D; --frame:#0A0D12; --frame-ink:#DDE2EA;
+  --planned:#8C95A4; --ready:#8C98FF; --gen:#4CC0DC; --review:#E7A93D; --use:#4FC389; --regen:#F07166;
+  --planned-bg:#1F242E; --ready-bg:#232A4D; --gen-bg:#12303A; --review-bg:#352812; --use-bg:#14301F; --regen-bg:#3A1A17;
+  --shadow:0 1px 2px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:14px;line-height:1.45}
+.wrap{max-width:1320px;margin:0 auto;padding-inline:20px;padding-block:24px 64px;display:flex;flex-direction:column;gap:18px}
+@media (max-width:520px){.wrap{padding-inline:16px}}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance}
+.mono{font-family:var(--mono)}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* header */
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px}
+.eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.top h1{font-size:clamp(24px,3.4vw,34px);font-weight:700;letter-spacing:-.01em;line-height:1.1;margin-top:4px}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tag{font-family:var(--mono);font-size:11.5px;padding:3px 8px;border-radius:6px;background:var(--surface);border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.tag b{color:var(--ink);font-weight:500}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+select.field,input.field{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-height:36px}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 12px;min-height:36px;font-weight:500;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{border-color:var(--faint)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn.primary{color:#0E1117}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary{color:#0E1117}}
+.btn.small{min-height:28px;padding:3px 9px;font-size:12.5px}
+.sync{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--faint)}
+.dot.live{background:var(--use)}
+
+/* summary row */
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+.kpi .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.kpi .v{font-family:var(--display);font-size:28px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}
+.kpi .s{font-size:12px;color:var(--muted)}
+.bar{height:6px;border-radius:3px;background:var(--sunk);overflow:hidden;display:flex}
+.bar i{display:block;height:100%}
+
+/* pipeline strip */
+.pipe{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px}
+@media (max-width:900px){.pipe{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.step{border:0;background:transparent;text-align:left;border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.step:hover{background:var(--sunk)}
+.step .n{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.step .t{font-weight:600;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.step .c{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.step.done .n{color:var(--use)}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 11px;font-size:12.5px;display:inline-flex;gap:6px;align-items:center}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.chip .cnt{font-family:var(--mono);font-size:11px;opacity:.7}
+.filters .grow{flex:1}
+.filters input.field{min-width:0;width:220px;max-width:100%}
+
+/* widget grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:14px;align-items:start}
+@media (max-width:520px){.grid{grid-template-columns:1fr}}
+.widget{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;scroll-margin-top:16px}
+.widget.wide{grid-column:1/-1}
+.w-head{display:flex;align-items:center;gap:10px;padding:14px 16px 10px}
+.w-num{font-family:var(--mono);font-size:12px;width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:var(--sunk);color:var(--muted);flex:none}
+.w-title{display:flex;flex-direction:column;min-width:0;flex:1}
+.w-title h2{font-size:17px;font-weight:700}
+.w-title .sub{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.w-actions{display:flex;gap:6px;align-items:center}
+.w-actions a{font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:3px 8px}
+.w-actions a:hover{color:var(--ink)}
+.w-bar{margin:0 16px}
+.w-body{padding:12px 16px 16px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:12px}
+.widget.wide .tiles{grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}
+.empty{border:1px dashed var(--line);border-radius:10px;padding:18px;color:var(--muted);font-size:13px;text-align:center}
+
+/* tile: a 9:16 frame */
+.tile{border:0;background:transparent;padding:0;text-align:left;display:flex;flex-direction:column;gap:6px;min-width:0}
+.frame{position:relative;aspect-ratio:9/16;max-width:100%;border-radius:9px;background:var(--frame);color:var(--frame-ink);overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:8px;transition:transform .15s ease}
+.tile:hover .frame{transform:translateY(-2px)}
+.frame::before{content:"";position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(255,255,255,.06),transparent 40%),
+  repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 4px);pointer-events:none}
+.frame .stripe{position:absolute;left:0;right:0;top:0;height:3px;background:var(--st)}
+.frame .kind{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.65;position:relative}
+.frame .beat{font-family:var(--display);font-weight:700;font-size:20px;line-height:1;position:relative}
+.frame .line{font-size:10.5px;line-height:1.3;opacity:.72;position:relative;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.frame .dur{font-family:var(--mono);font-size:10px;opacity:.7;position:relative;display:flex;justify-content:space-between;gap:4px}
+.frame .ico{position:absolute;right:8px;top:9px;width:14px;height:14px;opacity:.55}
+.tile .cap{display:flex;flex-direction:column;gap:3px;min-width:0}
+.tile .ttl{font-size:12px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:5px;color:var(--st);background:var(--stbg);width:max-content;max-width:100%}
+.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.s-planned{--st:var(--planned);--stbg:var(--planned-bg)}
+.s-ready{--st:var(--ready);--stbg:var(--ready-bg)}
+.s-generating{--st:var(--gen);--stbg:var(--gen-bg)}
+.s-review{--st:var(--review);--stbg:var(--review-bg)}
+.s-use{--st:var(--use);--stbg:var(--use-bg)}
+.s-regenerate{--st:var(--regen);--stbg:var(--regen-bg)}
+.s-generating .frame .stripe{animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.s-generating .frame .stripe{animation:none}.tile:hover .frame{transform:none}}
+
+/* side widgets */
+.balances{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.bal{background:var(--sunk);border-radius:10px;padding:10px 12px}
+.bal .k{font-size:12px;color:var(--muted)}
+.bal .v{font-family:var(--mono);font-size:18px;font-variant-numeric:tabular-nums}
+.note{font-size:12px;color:var(--muted)}
+
+/* drawer */
+.scrim{position:fixed;inset:0;background:rgba(10,12,16,.38);z-index:20}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(520px,100%);background:var(--surface);border-left:1px solid var(--line);z-index:21;display:flex;flex-direction:column;box-shadow:-8px 0 30px rgba(0,0,0,.15)}
+.d-head{padding:calc(14px + env(safe-area-inset-top,0px)) 18px 12px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:flex-start}
+.d-head h3{font-size:20px}
+.d-head .x{margin-left:auto}
+.d-body{padding:16px 18px;overflow:auto;display:flex;flex-direction:column;gap:14px;flex:1}
+.d-foot{padding:12px 18px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.d-foot .grow{flex:1}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media (max-width:420px){.row3{grid-template-columns:1fr 1fr}}
+label.f{display:flex;flex-direction:column;gap:4px;font-size:11.5px;font-weight:600;color:var(--muted);letter-spacing:.03em;min-width:0}
+label.f input,label.f select,label.f textarea{background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-weight:400;color:var(--ink);font-size:13.5px;width:100%;min-width:0}
+label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resize:vertical}
+.quote{background:var(--sunk);border-radius:10px;padding:10px 12px;font-size:13px;border-left:3px solid var(--accent)}
+.verdict{display:flex;gap:8px;flex-wrap:wrap}
+.vbtn{flex:1;min-width:130px;border-radius:10px;padding:10px;border:1px solid var(--line);background:var(--surface);font-weight:600;display:flex;flex-direction:column;gap:2px;align-items:flex-start}
+.vbtn small{font-weight:400;color:var(--muted);font-size:11.5px}
+.vbtn.use[aria-pressed="true"]{border-color:var(--use);background:var(--use-bg);color:var(--use)}
+.vbtn.regen[aria-pressed="true"]{border-color:var(--regen);background:var(--regen-bg);color:var(--regen)}
+.count{font-family:var(--mono);font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between}
+.count .over{color:var(--regen)}
+.danger{color:var(--regen)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--surface);padding:8px 14px;border-radius:8px;font-size:13px;z-index:30}
+.banner{background:var(--review-bg);color:var(--ink);border-radius:10px;padding:10px 14px;font-size:13px}
+
+/* tabs */
+.tabs{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:3px;gap:2px;width:max-content;max-width:100%}
+.tab{border:0;background:transparent;border-radius:7px;padding:7px 14px;font-weight:600;font-size:13px;color:var(--muted)}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--surface)}
+
+/* board frames with a real image */
+.frame .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.frame.has-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),transparent 35%,transparent 55%,rgba(0,0,0,.75));pointer-events:none}
+.frame.has-img>*{z-index:1}
+.frame.has-img .stripe{z-index:2}
+
+/* manual view */
+.mbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.mbar .grow{flex:1}
+.mgroup{display:flex;flex-direction:column;gap:12px;scroll-margin-top:16px}
+.mg-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding-top:6px}
+.mg-head h2{font-size:20px;font-weight:700}
+.mg-head .sub{font-size:12.5px;color:var(--muted)}
+.mg-head .grow{flex:1}
+.shot{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;scroll-margin-top:16px}
+.shot-head{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.shot-head .b{font-family:var(--display);font-weight:700;font-size:22px;line-height:1;background:var(--sunk);border-radius:8px;padding:8px 10px;flex:none}
+.shot-head .info{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.shot-head .t{font-weight:600}
+.shot-head .l{font-size:13px;color:var(--muted)}
+.shot-head .right{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex:none}
+.track{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:var(--faint);text-transform:uppercase;letter-spacing:.05em}
+.track .on{color:var(--use)}
+.track .cur{color:var(--accent)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:12px;padding:14px 16px 16px}
+.sc{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:10px;position:relative;min-width:0}
+.sc.ok{border-color:var(--use)}
+.sc.bad{border-color:var(--regen)}
+.sc.now{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.sc.locked>*:not(.lock){opacity:.35;pointer-events:none}
+.sc .lock{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-size:13px;font-weight:600;color:var(--muted);padding:16px}
+.sc .lock span{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+.sc-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.sc-head .sn{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:11.5px;background:var(--sunk);flex:none}
+.sc.ok .sc-head .sn{background:var(--use);color:#fff}
+.sc-head h3{font-size:15px;font-weight:700}
+.sc-head .grow{flex:1}
+.sc-body{display:grid;grid-template-columns:132px minmax(0,1fr);gap:14px}
+@media (max-width:420px){.sc-body{grid-template-columns:96px minmax(0,1fr)}}
+.media{position:relative;aspect-ratio:9/16;max-width:100%;border:1.5px dashed var(--line);border-radius:10px;background:var(--sunk);display:grid;place-items:center;text-align:center;font-size:11.5px;color:var(--muted);padding:8px;overflow:hidden;cursor:pointer}
+.media.filled{border-style:solid;padding:0;background:var(--frame)}
+.media.drag{border-color:var(--accent);background:var(--accent-soft)}
+.media img,.media video{width:100%;height:100%;object-fit:cover;display:block}
+.media .busy{position:absolute;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.45);color:#fff;font-weight:600}
+.pbox{display:flex;flex-direction:column;gap:6px;min-width:0}
+.pbox pre{margin:0;font-family:var(--mono);font-size:11.5px;line-height:1.5;white-space:pre-wrap;word-break:break-word;background:var(--sunk);border-radius:8px;padding:9px 10px;max-height:190px;overflow:auto;flex:1}
+.pbox pre.none{color:var(--faint);font-family:var(--body);font-style:italic}
+.pmeta{display:flex;justify-content:space-between;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--muted);flex-wrap:wrap}
+.pmeta .over{color:var(--regen)}
+.sc-actions{display:flex;gap:6px;flex-wrap:wrap}
+.btn.ok{border-color:var(--use);color:var(--use)}
+.btn.ok.solid{background:var(--use);color:#fff}
+.btn.bad{border-color:var(--regen);color:var(--regen)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.fault{font-size:12.5px;background:var(--regen-bg);color:var(--ink);border-radius:8px;padding:7px 10px}
+.fault b{color:var(--regen)}
+.kv{display:flex;flex-direction:column;gap:4px;min-width:0}
+.kv.end{align-items:flex-end}
+.lbl{font-size:10.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+.lbl-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lbl-row .pm{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.lbl-row .pm .over{color:var(--regen)}
+.lbl-row .grow{flex:1}
+.shot-head .info{gap:8px}
+.shot-head .right{align-items:flex-end}
+.specs{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;align-content:start;padding-top:18px}
+.specs div{display:flex;flex-direction:column;gap:2px;min-width:0;border-bottom:1px solid var(--line);padding-bottom:6px}
+.specs dt{font-size:10.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+.specs dd{margin:0;font-size:12.5px;overflow-wrap:anywhere}
+.specs dd .mono{font-size:11.5px}
+.specs a{color:var(--accent)}
+.ptext{margin:0;font-family:var(--mono);font-size:11.5px;line-height:1.5;white-space:pre-wrap;word-break:break-word;background:var(--sunk);border-radius:8px;padding:9px 10px;max-height:170px;overflow:auto}
+.ptext.none{color:var(--faint);font-family:var(--body);font-style:italic}
+.media small{font-size:10.5px;opacity:.8}
+@media (max-width:560px){.shot-head{flex-wrap:wrap}.shot-head .right{flex-direction:row;flex-wrap:wrap;width:100%;justify-content:space-between;align-items:flex-end}.shot-head .right .kv.end{align-items:flex-start}}
+.mg-head{gap:10px 24px;align-items:flex-end;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.mg-head h2.act{font-size:clamp(24px,3vw,30px);text-transform:uppercase;letter-spacing:.02em}
+.boxes{display:flex;flex-direction:column;gap:14px}
+.boxes.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));align-items:start}
+.mc-tools .btn{white-space:nowrap;font-size:12px}
+.tile .frame{border:0;text-align:left;cursor:zoom-in;width:100%}
+.caprow{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.linkbtn{border:0;background:transparent;color:var(--accent);font-size:12px;padding:2px 0;font-weight:600}
+.mc .media.filled{cursor:zoom-in}
+.mc .media:not(.filled){cursor:default}
+.media .play{position:absolute;inset:auto auto 8px 8px;width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;display:grid;place-items:center;font-size:12px;padding-left:2px}
+.viewer{position:fixed;inset:0;z-index:40;background:rgba(8,10,14,.97);color:#fff;display:flex;flex-direction:column;padding:calc(12px + env(safe-area-inset-top,0px)) 16px calc(12px + env(safe-area-inset-bottom,0px))}
+.viewer .lbl{color:rgba(255,255,255,.55)}
+.v-top,.v-bottom{display:flex;align-items:center;gap:12px;flex-wrap:wrap;max-width:1100px;width:100%;margin:0 auto}
+.v-top .grow,.v-bottom .grow{flex:1}
+.v-beat{font-family:var(--display);font-weight:700;font-size:18px}
+.v-tabs{display:inline-flex;background:rgba(255,255,255,.08);border-radius:9px;padding:3px;gap:2px}
+.v-tabs .tab{color:rgba(255,255,255,.7)}
+.v-tabs .tab[aria-selected="true"]{background:#fff;color:#111}
+.viewer .btn{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff}
+.viewer .btn.primary{background:#fff;color:#111;border-color:#fff}
+.v-stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;gap:12px;padding-block:12px}
+.v-media{height:100%;max-height:100%;aspect-ratio:9/16;max-width:calc(100% - 100px);display:grid;place-items:center}
+.v-media img,.v-media video{max-width:100%;max-height:100%;width:auto;height:auto;border-radius:10px;display:block;background:#000}
+.v-empty{border:1px dashed rgba(255,255,255,.3);border-radius:12px;width:100%;height:100%;display:grid;place-items:center;color:rgba(255,255,255,.7);padding:16px;text-align:center}
+.v-nav{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font-size:24px;line-height:1;flex:none}
+@media (max-width:520px){.v-media{max-width:calc(100% - 80px)}.v-nav{width:36px;height:36px}}
+.vload{position:absolute;left:8px;right:8px;bottom:8px;background:rgba(0,0,0,.7);color:#fff;font-size:11.5px;border-radius:6px;padding:5px 8px;text-align:center;z-index:2}
+.v-media{position:relative}
+.v-sound{position:absolute;top:10px;right:10px;z-index:2}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;padding-bottom:14px}
+.box-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:14px 14px 0}
+.box-head .sn{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;background:var(--ink);color:var(--surface);flex:none}
+.box-head h3{font-size:18px;font-weight:700}
+.box-stats{display:flex;gap:16px}
+.box-head .grow{flex:1}
+.box-note{margin:0 14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;padding:4px 14px 0}
+@media (max-width:520px){.cards{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}}
+.mc{border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:9px;min-width:0;background:var(--surface)}
+.mc.ok{border-color:var(--use)}
+.mc.bad{border-color:var(--regen)}
+.mc.now{border-color:var(--review);box-shadow:0 0 0 3px var(--review-bg)}
+.mc.locked{background:var(--sunk)}
+.mc-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.mc-head .b{font-family:var(--display);font-weight:700;font-size:18px;line-height:1}
+.mc .media{width:100%;cursor:pointer}
+.mc.locked .media{cursor:default}
+.mc .media .ghost{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.25;filter:grayscale(1)}
+.mc .media .lockmsg{position:relative;font-weight:600}
+.mc-t{font-weight:600;font-size:13px}
+.mc-l{font-size:12px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.mc .specs{padding-top:0;gap:6px 10px}
+.mc .specs div{padding-bottom:4px}
+.pd summary{display:flex;align-items:center;gap:8px;cursor:pointer;list-style:none}
+.pd summary::-webkit-details-marker{display:none}
+.pd summary::after{content:"Show";margin-left:auto;font-size:11.5px;color:var(--accent)}
+.pd[open] summary::after{content:"Hide"}
+.pd .pm{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.pd .pm .over{color:var(--regen)}
+.pd .ptext{margin-top:6px}
+.mc-verdict{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.mc-verdict .btn{justify-content:center;font-weight:600}
+.mc-tools{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.mc-tools .btn{justify-content:center}
+.mc .specs .wide{grid-column:1/-1}
+.fixbox{display:flex;flex-direction:column;gap:6px;background:var(--regen-bg);border-radius:10px;padding:10px}
+.fixbox textarea{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:13px;resize:vertical;width:100%}
+.fix-actions{display:flex;gap:6px;flex-wrap:wrap}
+.btn.solidbad{background:var(--regen);border-color:var(--regen);color:#fff}
+.fault{display:flex;flex-direction:column;gap:3px}
+.fform{display:flex;gap:6px;flex-wrap:wrap}
+.fform input{flex:1;min-width:180px;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:6px 9px}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="eyebrow">AI Prompt Engineer · Generation Board</div>
+      <h1 id="buildTitle">Loading build…</h1>
+      <div class="meta" id="buildMeta"></div>
+    </div>
+    <div class="controls">
+      <span class="sync"><span class="dot" id="syncDot"></span><span id="syncTxt">Connecting</span></span>
+    </div>
+  </header>
+
+  <div class="tabs" role="tablist" aria-label="View">
+    <button class="tab" role="tab" type="button" data-view="board" aria-selected="true">Board</button>
+    <button class="tab" role="tab" type="button" data-view="manual" aria-selected="false">Manual run</button>
+  </div>
+
+  <div class="banner" id="banner" hidden></div>
+
+  <section class="summary" id="summary" aria-label="Summary"></section>
+
+  <div id="boardView" style="display:flex;flex-direction:column;gap:18px">
+    <nav class="pipe" id="pipe" aria-label="Build stages"></nav>
+    <div class="filters" id="filters"></div>
+    <main class="grid" id="grid"></main>
+  </div>
+
+  <div id="manualView" hidden style="flex-direction:column;gap:18px">
+    <div class="mbar" id="mbar"></div>
+    <div id="mlist" style="display:flex;flex-direction:column;gap:26px"></div>
+  </div>
+</div>
+<input type="file" id="picker" hidden>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-labelledby="dTitle" role="dialog"></aside>
+<div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-label="View generation" data-vclose=""></div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+const STAGES = [
+  {key:"absorption", name:"Absorption", folder:"01_ABSORPTION", sub:"Inspo, script, product · §42 · Visual Instruction Ledger", kind:"doc"},
+  {key:"cast",       name:"Cast",       folder:"02_CAST",       sub:"Avatar sheets · §19 · judged by §22V", kind:"image"},
+  {key:"locations",  name:"Locations",  folder:"03_LOCATIONS",  sub:"Property & location maps · §30G", kind:"image"},
+  {key:"voice",      name:"Voice",      folder:"04_VOICE",      sub:"Kling source → clone → Eleven v3 · §22U", kind:"audio"},
+  {key:"hooks",      name:"Hooks",      folder:"05_HOOKS",      sub:"One variant per hook · §30H", kind:"video"},
+  {key:"talking",    name:"Talking heads", folder:"06_TALKING_HEADS", sub:"HeyGen Avatar V + motion prompt", kind:"video"},
+  {key:"broll",      name:"B-roll",     folder:"07_BROLL",      sub:"One clip per line · §27 · judged by §22W", kind:"video", wide:true},
+  {key:"edit",       name:"Edit",       folder:"08_EDIT",       sub:"Rough cut, variants, CapCut block · §30H", kind:"video"},
+];
+const STATUSES = [
+  {key:"planned", label:"Planned"},
+  {key:"ready", label:"Prompt ready"},
+  {key:"generating", label:"Generating"},
+  {key:"review", label:"In review"},
+  {key:"use", label:"USE"},
+  {key:"regenerate", label:"Regenerate"},
+];
+const STATUS_LABEL = Object.fromEntries(STATUSES.map(s=>[s.key,s.label]));
+const MODELS = ["kling-video-v3_0_omni","kling-3.0","seedance-2.5","wan-3.0","veo-3.0","nano_banana_pro","nano_banana_2","gpt_image_2_5","eleven_v3","heygen-avatar-v","capcut"];
+const ICONS = {
+  video:'<svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1.5" y="3.5" width="9" height="9" rx="1.5"/><path d="M10.5 7 14.5 4.5v7L10.5 9"/></svg>',
+  image:'<svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1.5" y="2.5" width="13" height="11" rx="1.5"/><circle cx="5.5" cy="6" r="1.3"/><path d="m2 12 4-4 3 3 2-2 3 3"/></svg>',
+  audio:'<svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h1.5M5 5v6M8 3v10M11 5.5v5M14 7.5v1"/></svg>',
+  doc:'<svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3.5 1.5h6l3 3v10h-9z"/><path d="M6 8h4M6 10.5h4"/></svg>',
+};
+
+// Read-only snapshot used only when live sync is unavailable in this view.
+const OFFLINE = {
+  builds:[],
+  gens:[]
+};
+
+const state = {builds:[], gens:[], build:null, filter:"all", q:"", live:false, readOnly:false, db:null, assets:null, downloads:null, editing:null, view:"board", mstage:"all", mneeds:false, faultOpen:null, busy:{}};
+const $ = s=>document.querySelector(s);
+const esc = s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const num = n=>Number(n||0).toLocaleString("en-US");
+function lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function lsSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+
+function toast(msg){const t=$("#toast");t.textContent=msg;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(()=>t.hidden=true,2200)}
+
+function currentBuild(){return state.builds.find(b=>b.id===state.build)||state.builds[0]||null}
+function buildGens(){const b=currentBuild();return b?state.gens.filter(g=>g.build===b.id):[]}
+function matches(g){
+  if(state.filter!=="all" && g.status!==state.filter) return false;
+  if(state.q){const q=state.q.toLowerCase();return [g.beat,g.title,g.line,g.model].some(v=>String(v||"").toLowerCase().includes(q))}
+  return true;
+}
+function beatSort(a,b){return String(a.beat||"").localeCompare(String(b.beat||""),undefined,{numeric:true})}
+
+function render(){renderInner();hydrate()}
+function renderInner(){
+  const b=currentBuild();
+  $("#buildTitle").textContent=b?(b.name||b.id):"No build yet";
+  $("#buildMeta").innerHTML=b?[
+    ["Build",b.id],["Mode",b.mode],["Format",b.format],["Run",b.run],["Aspect",b.aspect||"9:16"]
+  ].filter(x=>x[1]).map(([k,v])=>`<span class="tag">${k} <b>${esc(v)}</b></span>`).join(""):"";
+
+  const gens=buildGens();
+  const by=k=>gens.filter(g=>g.status===k).length;
+  const total=gens.length, use=by("use"), regen=by("regenerate"), review=by("review"), gen=by("generating");
+  const credits=gens.reduce((s,g)=>s+(Number(g.credits)||0),0);
+  const pct=total?Math.round(use/total*100):0;
+  const seg=k=>total?`<i style="width:${by(k)/total*100}%;background:var(--${k==="generating"?"gen":k==="regenerate"?"regen":k==="ready"?"ready":k})"></i>`:"";
+  $("#summary").innerHTML=`
+    <div class="kpi"><span class="k">Generations</span><span class="v">${total}</span>
+      <div class="bar">${["use","review","generating","ready","regenerate","planned"].map(seg).join("")}</div>
+      <span class="s">${pct}% locked as USE</span></div>
+    <div class="kpi"><span class="k">USE</span><span class="v" style="color:var(--use)">${use}</span><span class="s">Passed §22V / §22W</span></div>
+    <div class="kpi"><span class="k">In review</span><span class="v" style="color:var(--review)">${review}</span><span class="s">${gen} generating now</span></div>
+    <div class="kpi"><span class="k">Regenerate</span><span class="v" style="color:var(--regen)">${regen}</span><span class="s">Two tries per fault, then you</span></div>
+    <div class="kpi"><span class="k">Credits spent</span><span class="v">${num(credits)}</span><span class="s">Logged on generations</span></div>`;
+
+  document.querySelectorAll(".tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.view===state.view));
+  $("#boardView").hidden=state.view!=="board";
+  $("#manualView").hidden=state.view!=="manual";
+  if(state.view==="manual"){renderManual(gens);return}
+
+  $("#pipe").innerHTML=STAGES.map((s,i)=>{
+    const sg=gens.filter(g=>g.stage===s.key), u=sg.filter(g=>g.status==="use").length;
+    const done=sg.length&&u===sg.length;
+    return `<button class="step${done?" done":""}" type="button" data-jump="${s.key}">
+      <span class="n">${String(i+1).padStart(2,"0")}${done?" ✓":""}</span><span class="t">${s.name}</span>
+      <div class="bar">${sg.length?`<i style="width:${u/sg.length*100}%;background:var(--use)"></i>`:""}</div>
+      <span class="c">${sg.length?`${u}/${sg.length} USE`:"—"}</span></button>`}).join("");
+
+  const counts=Object.fromEntries(STATUSES.map(s=>[s.key,by(s.key)]));
+  $("#filters").innerHTML=`<button class="chip" type="button" data-f="all" aria-pressed="${state.filter==="all"}">All <span class="cnt">${total}</span></button>`+
+    STATUSES.map(s=>`<button class="chip" type="button" data-f="${s.key}" aria-pressed="${state.filter===s.key}">${s.label} <span class="cnt">${counts[s.key]}</span></button>`).join("")+
+    `<span class="grow"></span><input class="field" id="search" type="search" placeholder="Search beat, line, model" value="${esc(state.q)}" aria-label="Search">`;
+
+  const folders=(b&&b.folders)||{};
+  let html=STAGES.map((s,i)=>{
+    const all=gens.filter(g=>g.stage===s.key);
+    const sg=all.filter(matches).sort(beatSort);
+    const u=all.filter(g=>g.status==="use").length;
+    const link=folders[s.folder]?`<a href="https://drive.google.com/drive/folders/${esc(folders[s.folder])}" target="_blank" rel="noopener">Drive ↗</a>`:"";
+    const body=sg.length?`<div class="tiles">${sg.map(tile).join("")}</div>`:
+      `<div class="empty">${all.length?"Nothing matches this filter.":"No generations yet."}</div>`;
+    return `<section class="widget${s.wide?" wide":""}" id="w-${s.key}">
+      <div class="w-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
+        <div class="w-title"><h2>${s.name}</h2><span class="sub">${s.sub}</span></div>
+        <div class="w-actions">${link}</div></div>
+      <div class="bar w-bar">${all.length?`<i style="width:${u/all.length*100}%;background:var(--use)"></i>`:""}</div>
+      <div class="w-body">${body}</div></section>`;
+  }).join("");
+  const bal=b&&b.balances||{};
+  if(Object.keys(bal).length){
+    html+=`<section class="widget"><div class="w-head"><span class="w-num">¤</span><div class="w-title"><h2>Credit balances</h2><span class="sub">${b.balancesAt?"As of "+esc(b.balancesAt):"Last recorded"}</span></div></div>
+      <div class="w-body"><div class="balances">${Object.entries(bal).map(([k,v])=>`<div class="bal"><div class="k">${esc(k)}</div><div class="v">${num(v)}</div></div>`).join("")}</div>
+      <p class="note">Images → Higgsfield (Kie if out) · Kling → Kling · Seedance → Kie (§5).</p></div></section>`;
+  }
+  $("#grid").innerHTML=html;
+}
+
+// Files over the platform's per-file cap are stored as byte pieces and joined back
+// in the browser into the exact original — the board never shrinks a render.
+const PART=15*1024*1024;
+function partsOf(g,k){const p=g[STEP[k].parts];return Array.isArray(p)&&p.length>1?p:null}
+function srcAttr(g,k){const p=partsOf(g,k);return p?`data-parts="${esc(p.join(","))}" data-ptype="${esc(g[STEP[k].type]||"")}"`:`src="/_blob/${esc(g[STEP[k].asset])}"`}
+const joined={};
+function joinParts(ids,type,onProgress){
+  const key=ids.join(",");
+  if(!joined[key]){
+    let done=0;
+    joined[key]=Promise.all(ids.map(id=>fetchAsset(id).then(b=>{done++;onProgress&&onProgress(done,ids.length);return b})))
+      .then(bs=>URL.createObjectURL(new Blob(bs,{type:type||bs[0].type||"application/octet-stream"})));
+  }
+  return joined[key];
+}
+// Card videos play muted while on screen; the viewer plays with controls.
+const vis=("IntersectionObserver" in window)?new IntersectionObserver(es=>es.forEach(e=>{
+  const v=e.target; if(e.isIntersecting){loadVideo(v)} else if(!v.paused) v.pause();
+}),{rootMargin:"200px"}):null;
+function tryPlay(v){v.muted=v.muted||!v.dataset.sound;const p=v.play();if(p&&p.catch) p.catch(()=>{})}
+function loadVideo(v){
+  if(v.dataset.parts&&!v.getAttribute("src")){
+    const wrap=v.parentElement, note=document.createElement("span");
+    note.className="vload";note.textContent="Loading full quality…";wrap&&wrap.appendChild(note);
+    joinParts(v.dataset.parts.split(","),v.dataset.ptype,(d,n)=>{note.textContent=`Loading full quality… ${d}/${n}`})
+      .then(u=>{v.src=u;note.remove();tryPlay(v)})
+      .catch(()=>{note.textContent="Couldn't load. Use Download."});
+  } else tryPlay(v);
+}
+function hydrate(root){
+  const r=root||document;
+  r.querySelectorAll("img[data-parts]:not([src])").forEach(el=>{
+    joinParts(el.dataset.parts.split(","),el.dataset.ptype).then(u=>{el.src=u}).catch(()=>{});
+  });
+  r.querySelectorAll("video").forEach(v=>{
+    if(v.dataset.bound) return; v.dataset.bound="1";
+    v.addEventListener("error",()=>{const w=v.parentElement;if(w&&!w.querySelector(".vload")){const n=document.createElement("span");n.className="vload";n.textContent="This video can't play here. Use Download.";w.appendChild(n)}diag("videoError",v.dataset.parts?"joined":"direct")});
+    v.addEventListener("playing",()=>diag("videoPlaying",v.dataset.parts?"joined":"direct"),{once:true});
+    if(v.closest(".viewer")) loadVideo(v); else if(vis) vis.observe(v); else loadVideo(v);
+  });
+}
+// Records once per page load whether videos play here, so problems can be checked without guessing.
+const diagSeen={};
+function diag(what,kind){
+  const k=what+":"+kind; if(diagSeen[k]||!state.db) return; diagSeen[k]=1;
+  state.db.doc("diag/video-"+kind).set({last:what,kind,at:Date.now(),ua:navigator.userAgent.slice(0,160)}).catch(()=>{});
+}
+async function fetchMedia(g,k){
+  const p=partsOf(g,k);
+  if(p){const bs=await Promise.all(p.map(fetchAsset));return new Blob(bs,{type:g[STEP[k].type]||bs[0].type})}
+  return fetchAsset(g[STEP[k].asset]);
+}
+function tile(g){
+  const st=g.status||"planned", stage=STAGES.find(s=>s.key===g.stage)||STAGES[6];
+  const kind=g.kind||stage.kind;
+  const specs=[g.duration?`${g.duration}s`:"", g.regens?`R${g.regens}`:""].filter(Boolean);
+  const img=g.imageAsset?`<img class="bg" ${srcAttr(g,"image")} alt="" loading="lazy">`:"";
+  const first=flow(g).find(k=>g[STEP[k].asset])||flow(g)[0];
+  return `<div class="tile s-${st}">
+    <button class="frame${img?" has-img":""}" type="button" data-viewm="${esc(g.id)}" data-step="${first}" aria-label="View ${esc(g.beat||"")}">${img}<span class="stripe"></span>${ICONS[kind]||""}
+      <div><div class="kind">${esc(kind)}</div><div class="beat">${esc(g.beat||"—")}</div></div>
+      <div class="line">${esc(g.line||g.title||"")}</div>
+      <div class="dur"><span>${esc(g.model?shortModel(g.model):"")}</span><span>${specs.join(" · ")}</span></div></button>
+    <div class="cap"><span class="ttl">${esc(g.title||g.beat||"Untitled")}</span>
+      <span class="caprow"><span class="pill">${esc(STATUS_LABEL[st]||st)}</span><button class="linkbtn" type="button" data-open="${esc(g.id)}">Edit</button></span></div></div>`;
+}
+function shortModel(m){return String(m).replace("kling-video-v3_0_omni","kling 3.0 omni").replace(/_/g," ")}
+
+/* drawer */
+function openDrawer(g,isNew){
+  state.editing={...g,_new:!!isNew};
+  const d=$("#drawer"), ro=state.readOnly;
+  const stage=STAGES.find(s=>s.key===g.stage)||STAGES[0];
+  d.innerHTML=`
+    <div class="d-head"><div><div class="eyebrow">${esc(stage.name)} · ${esc(stage.folder)}</div><h3 id="dTitle">${isNew?"New generation":esc((g.beat||"")+" · "+(g.title||""))}</h3></div>
+      <button class="btn small x" type="button" id="dClose">Close</button></div>
+    <form class="d-body" id="dForm">
+      ${g.line?`<div class="quote"><div class="eyebrow" style="margin-bottom:4px">Script line (verbatim)</div>${esc(g.line)}</div>`:""}
+      ${isNew?"":`<div class="verdict">
+        <button type="button" class="vbtn use" data-v="use" aria-pressed="${g.status==="use"}" ${ro?"disabled":""}>USE<small>Line, product, body, continuity pass</small></button>
+        <button type="button" class="vbtn regen" data-v="regenerate" aria-pressed="${g.status==="regenerate"}" ${ro?"disabled":""}>REGENERATE<small>Name the fault and the fix</small></button></div>`}
+      <div class="row">
+        <label class="f">Beat ID<input id="f-beat" value="${esc(g.beat)}" placeholder="BR01" ${ro?"disabled":""}></label>
+        <label class="f">Title<input id="f-title" value="${esc(g.title)}" placeholder="Knee strap close-up" ${ro?"disabled":""}></label></div>
+      <label class="f">Act (hooks: Hook 1 · body: Act 1, Act 2…)<input id="f-act" value="${esc(g.act)}" placeholder="Act 1" ${ro?"disabled":""}></label>
+      <div class="row">
+        <label class="f">Stage<select id="f-stage" ${ro?"disabled":""}>${STAGES.map(s=>`<option value="${s.key}"${s.key===g.stage?" selected":""}>${s.name}</option>`).join("")}</select></label>
+        <label class="f">Status<select id="f-status" ${ro?"disabled":""}>${STATUSES.map(s=>`<option value="${s.key}"${s.key===(g.status||"planned")?" selected":""}>${s.label}</option>`).join("")}</select></label></div>
+      <label class="f">Fault → fix (REGENERATE · Q&lt;n&gt;)<input id="f-fault" value="${esc(g.fault)}" placeholder="Q3: strap sits above the kneecap → move to below-patella spot" ${ro?"disabled":""}></label>
+      <div class="row">
+        <label class="f">Model<input id="f-model" list="models" value="${esc(g.model)}" placeholder="kling-video-v3_0_omni" ${ro?"disabled":""}><datalist id="models">${MODELS.map(m=>`<option value="${m}">`).join("")}</datalist></label>
+        <label class="f">Kind<select id="f-kind" ${ro?"disabled":""}>${["video","image","audio","doc"].map(k=>`<option${k===(g.kind||stage.kind)?" selected":""}>${k}</option>`).join("")}</select></label></div>
+      <div class="row3">
+        <label class="f">Duration (s)<input id="f-duration" type="number" min="0" step="0.1" value="${esc(g.duration)}" ${ro?"disabled":""}></label>
+        <label class="f">Credits<input id="f-credits" type="number" min="0" value="${esc(g.credits)}" ${ro?"disabled":""}></label>
+        <label class="f">Regenerations<input id="f-regens" type="number" min="0" max="9" value="${esc(g.regens||0)}" ${ro?"disabled":""}></label></div>
+      <label class="f">Render link<input id="f-url" type="url" value="${esc(g.url)}" placeholder="https://…" ${ro?"disabled":""}></label>
+      ${g.url?`<a href="${esc(g.url)}" target="_blank" rel="noopener" style="font-size:13px;color:var(--accent)">Open render ↗</a>`:""}
+      <label class="f">Image model<input id="f-imageModel" list="models" value="${esc(g.imageModel)}" placeholder="nano_banana_pro" ${ro?"disabled":""}></label>
+      <label class="f">Image prompt (step 1)<textarea id="f-imagePrompt" spellcheck="false" style="min-height:120px" ${ro?"disabled":""}>${esc(g.imagePrompt)}</textarea></label>
+      <label class="f">${flow(g).includes("video")?"Video prompt (step 2)":"Prompt"}<textarea id="f-prompt" spellcheck="false" ${ro?"disabled":""}>${esc(g.prompt)}</textarea></label>
+      <div class="count"><span id="pCount"></span><button class="btn small" type="button" id="copyBtn">Copy prompt</button></div>
+      <label class="f">Script line<input id="f-line" value="${esc(g.line)}" ${ro?"disabled":""}></label>
+    </form>
+    <div class="d-foot">
+      ${!isNew&&!ro?`<button class="btn small danger" type="button" id="delBtn">Delete</button>`:""}
+      <span class="grow"></span>
+      ${ro?"":`<button class="btn primary" type="submit" form="dForm" id="saveBtn">${isNew?"Add generation":"Save"}</button>`}
+    </div>`;
+  d.hidden=false;$("#scrim").hidden=false;
+  updateCount();
+  $("#f-prompt").addEventListener("input",updateCount);
+  $("#f-model").addEventListener("input",updateCount);
+  $("#dClose").onclick=closeDrawer;
+  $("#copyBtn").onclick=()=>{const t=$("#f-prompt");navigator.clipboard.writeText(t.value).then(()=>toast("Prompt copied"),()=>{t.focus();t.select();toast("Press Ctrl+C to copy")})};
+  $("#dForm").onsubmit=e=>{e.preventDefault();save()};
+  d.querySelectorAll("[data-v]").forEach(b=>b.onclick=()=>{
+    $("#f-status").value=b.dataset.v;
+    d.querySelectorAll("[data-v]").forEach(x=>x.setAttribute("aria-pressed",x===b));
+    if(b.dataset.v==="regenerate"){ $("#f-regens").value=Number($("#f-regens").value||0)+1; $("#f-fault").focus(); }
+  });
+  const del=$("#delBtn");
+  if(del) del.onclick=()=>{
+    if(del.dataset.armed){remove()} else {del.dataset.armed="1";del.textContent="Tap again to delete";setTimeout(()=>{if(del.isConnected){delete del.dataset.armed;del.textContent="Delete"}},3000)}
+  };
+  setTimeout(()=>$("#dClose").focus(),0);
+}
+function updateCount(){
+  const p=$("#f-prompt").value, m=$("#f-model").value.toLowerCase();
+  const limit=m.includes("kling")?2500:null;
+  $("#pCount").innerHTML=`${num(p.length)} chars${limit?` · Kling limit <span class="${p.length>limit?"over":""}">${num(limit)}</span>`:""}`;
+}
+function closeDrawer(){$("#drawer").hidden=true;$("#scrim").hidden=true;state.editing=null}
+
+function readForm(){
+  const v=id=>$("#f-"+id).value.trim();
+  const n=id=>{const x=v(id);return x===""?null:Number(x)};
+  const prompt=$("#f-prompt").value;
+  return {beat:v("beat"),title:v("title"),act:v("act"),stage:v("stage"),status:v("status"),fault:v("fault"),model:v("model"),kind:v("kind"),
+    duration:n("duration"),credits:n("credits"),regens:n("regens")||0,url:v("url"),prompt,chars:prompt.length,line:v("line"),
+    imageModel:v("imageModel"),imagePrompt:$("#f-imagePrompt").value,updatedAt:Date.now()};
+}
+async function save(){
+  const e=state.editing; if(!e) return;
+  const data=readForm();
+  if(!data.beat){toast("Give it a beat ID, e.g. BR01");$("#f-beat").focus();return}
+  if(!state.db){toast("Live sync is off in this view");return}
+  const btn=$("#saveBtn"); if(btn) btn.disabled=true;
+  try{
+    if(e._new){
+      const b=currentBuild();
+      const id=(b.id+"__"+data.beat).replace(/[^A-Za-z0-9_\-.~:@+]/g,"-");
+      const ref=state.db.doc("generations/"+id);
+      const ex=await ref.get();
+      await (ex.exists?state.db.collection("generations").doc():ref).set({...data,build:b.id,createdAt:Date.now()});
+      toast("Generation added");
+    } else {
+      await state.db.doc("generations/"+e.id).update(data);
+      toast("Saved");
+    }
+    closeDrawer();
+  }catch(err){handleWriteError(err);if(btn) btn.disabled=false}
+}
+async function remove(){
+  const e=state.editing; if(!e||!state.db) return;
+  try{await state.db.doc("generations/"+e.id).delete();toast("Deleted");closeDrawer()}catch(err){handleWriteError(err)}
+}
+function handleWriteError(err){
+  if(err&&err.code==="invalid_argument"){state.readOnly=true;showBanner("You can view this board but not change it. Ask the owner for Contributor access.");render();closeDrawer();return}
+  if(err&&err.code==="quota_exceeded"){toast("Board is full. Delete old generations to add new ones.");return}
+  toast("Couldn't save. Try again in a moment.");
+}
+function showBanner(t){const b=$("#banner");b.textContent=t;b.hidden=!t}
+
+/* manual run: image first, video after the image is confirmed */
+function flow(g){
+  if(g.flow) return g.flow;
+  if(["cast","locations"].includes(g.stage)) return ["image"];
+  if(["hooks","talking","broll"].includes(g.stage)) return ["image","video"];
+  return ["file"];
+}
+// Each step reads and writes its own fields on the generation document.
+const STEP = {
+  image:{label:"Image", accept:"image/*", asset:"imageAsset", type:"imageType", prompt:"imagePrompt", model:"imageModel", defModel:"nano_banana_pro", st:"imageStatus", fault:"imageFault", regens:"imageRegens", ok:"Confirm image",
+    parts:"imageParts", conn:"imageConnector", defConn:"Higgsfield", url:"imageUrl", credits:"imageCredits", at:"imageAt", size:"imageRes"},
+  video:{label:"Video", accept:"video/*", asset:"videoAsset", type:"videoType", prompt:"prompt", model:"model", defModel:"kling-video-v3_0_omni", st:"status", fault:"fault", regens:"regens", ok:"USE",
+    parts:"videoParts", conn:"videoConnector", defConn:"Kling", url:"videoUrl", credits:"credits", at:"videoAt", size:"duration"},
+  file:{label:"File", accept:"*/*", asset:"videoAsset", type:"videoType", prompt:"prompt", model:"model", defModel:"", st:"status", fault:"fault", regens:"regens", ok:"USE",
+    parts:"videoParts", conn:"videoConnector", defConn:"", url:"videoUrl", credits:"credits", at:"videoAt", size:"duration"},
+};
+function stepState(g,k){
+  const d=STEP[k], v=g[d.st];
+  if(k==="image"){return v==="confirmed"?"ok":v==="regenerate"?"bad":v==="generating"?"gen":g[d.asset]?"review":"todo"}
+  return v==="use"?"ok":v==="regenerate"?"bad":v==="generating"?"gen":g[d.asset]?"review":"todo";
+}
+function nextStep(g){return flow(g).find(k=>stepState(g,k)!=="ok")||null}
+function needsMe(g){return nextStep(g)!==null}
+
+// Manual run is grouped by act: setup stages, each hook, each act, then the edit.
+function actNum(v){const m=String(v||"").match(/\d+/);return m?Number(m[0]):null}
+function groupOf(g){
+  if(g.stage==="hooks"){const n=actNum(g.act)||actNum(g.beat)||0;return {key:"hook-"+n,label:n?"Hook "+n:"Hook",kicker:"Hook",order:300+n}}
+  if(g.stage==="broll"||g.stage==="talking"){
+    const n=actNum(g.act);
+    return n?{key:"act-"+n,label:"Act "+n,kicker:"Act",order:400+n}:{key:"act-none",label:"Act not set yet",kicker:"Body",order:990,note:"These beats get their act at step 5, the act map."};
+  }
+  const st=STAGES.find(x=>x.key===g.stage)||STAGES[0];
+  const order={absorption:100,cast:110,locations:120,voice:130,edit:999}[st.key]||150;
+  return {key:"stage-"+st.key,label:st.name,kicker:"Setup",order};
+}
+function groups(gens){
+  const m=new Map();
+  for(const g of gens){const k=groupOf(g);if(!m.has(k.key)) m.set(k.key,{...k,items:[]});m.get(k.key).items.push(g)}
+  return [...m.values()].sort((a,b)=>a.order-b.order).map(x=>(x.items.sort(beatSort),x));
+}
+function renderManual(gens){
+  const gs=groups(gens);
+  if(state.mstage!=="all"&&!gs.some(x=>x.key===state.mstage)) state.mstage="all";
+  const open=gens.filter(needsMe).length;
+  $("#mbar").innerHTML=`<button class="chip" type="button" data-ms="all" aria-pressed="${state.mstage==="all"}">Everything <span class="cnt">${gens.length}</span></button>`+
+    gs.map(x=>`<button class="chip" type="button" data-ms="${x.key}" aria-pressed="${state.mstage===x.key}">${esc(x.label)} <span class="cnt">${x.items.filter(g=>!needsMe(g)).length}/${x.items.length}</span></button>`).join("")+
+    `<span class="grow"></span><button class="chip" type="button" data-needs="1" aria-pressed="${state.mneeds}">Only what needs me <span class="cnt">${open}</span></button>`;
+  const html=gs.map(x=>{
+    if(state.mstage!=="all"&&state.mstage!==x.key) return "";
+    const steps=["image","video","file"].filter(k=>x.items.some(g=>flow(g).includes(k)));
+    const done=x.items.filter(g=>!needsMe(g)).length;
+    const beats=x.items.map(g=>g.beat).filter(Boolean);
+    return `<section class="mgroup" id="m-${x.key}">
+      <div class="mg-head">
+        <div class="kv"><span class="lbl">${esc(x.kicker)}</span><h2 class="act">${esc(x.label)}</h2></div>
+        <div class="kv"><span class="lbl">Beats</span><span class="mono">${esc(beats.length>4?beats[0]+" – "+beats[beats.length-1]:beats.join(", "))}</span></div>
+        <div class="kv"><span class="lbl">Done</span><span class="mono">${done}/${x.items.length}</span></div></div>
+      ${x.note?`<p class="note" style="margin:0">${esc(x.note)}</p>`:""}
+      <div class="boxes${x.items.length<=2&&steps.length>1?" pair":""}">${steps.map(k=>stepBox(x,k,x.items)).join("")}</div></section>`;
+  }).join("");
+  const fi=document.querySelector("[data-faultform] textarea"), draft=fi?fi.value:"", had=fi&&document.activeElement===fi;
+  $("#mlist").innerHTML=html||`<div class="empty">No generations in this build yet.</div>`;
+  const ni=document.querySelector("[data-faultform] textarea"); if(ni&&draft){ni.value=draft;if(had) ni.focus()}
+}
+
+// One box per step: every image of the stage together, every video together.
+function stepBox(grp,k,all){
+  const d=STEP[k], items=all.filter(g=>flow(g).includes(k));
+  const list=state.mneeds?items.filter(g=>stepState(g,k)!=="ok"):items;
+  const ok=items.filter(g=>stepState(g,k)==="ok").length;
+  const fix=items.filter(g=>stepState(g,k)==="bad").length;
+  const check=items.filter(g=>stepState(g,k)==="review"&&!(k==="video"&&stepState(g,"image")!=="ok")).length;
+  const files=items.filter(g=>g[d.asset]).length;
+  const plural=k==="image"?"Images":k==="video"?"Videos":"Files";
+  const note=k==="video"?"Each video unlocks when its image is confirmed.":k==="image"&&items.some(g=>flow(g).includes("video"))?"Confirm an image to unlock its video.":"";
+  return `<div class="box">
+    <div class="box-head">
+      <span class="sn">${k==="video"?2:1}</span>
+      <div class="kv"><span class="lbl">${esc(grp.label)} · ${k==="video"?"step 2":"step 1"}</span><h3>${plural}</h3></div>
+      <div class="box-stats">
+        <div class="kv"><span class="lbl">Confirmed</span><span class="mono" style="color:var(--use)">${ok}/${items.length}</span></div>
+        <div class="kv"><span class="lbl">To check</span><span class="mono" style="color:var(--review)">${check}</span></div>
+        <div class="kv"><span class="lbl">Fixing</span><span class="mono" style="color:var(--regen)">${fix}</span></div></div>
+      <span class="grow"></span>
+      <button class="btn small" type="button" data-copyall="${grp.key}" data-field="${d.prompt}">Copy all prompts</button>
+      <button class="btn small primary" type="button" data-zip="${grp.key}" data-step="${k}" ${files?"":"disabled"}>⬇ Download all ${plural.toLowerCase()}</button>
+    </div>
+    ${note?`<p class="note box-note">${note}</p>`:""}
+    <div class="bar" style="margin:0 14px"><i style="width:${items.length?ok/items.length*100:0}%;background:var(--use)"></i></div>
+    ${list.length?`<div class="cards">${list.map(g=>mediaCard(g,k)).join("")}</div>`:`<div class="empty" style="margin:14px">All ${plural.toLowerCase()} here are confirmed.</div>`}
+  </div>`;
+}
+function when(ms){if(!ms) return "—";const d=new Date(ms);return isNaN(d)?"—":d.toLocaleString(undefined,{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"})}
+
+function mediaCard(g,k){
+  const d=STEP[k], s=stepState(g,k), ro=state.readOnly||!state.assets;
+  const locked=k==="video"&&stepState(g,"image")!=="ok";
+  const asset=g[d.asset], type=g[d.type]||"";
+  const prompt=g[d.prompt]||"", model=g[d.model]||d.defModel;
+  const busy=state.busy[g.id+":"+k];
+  const isVid=type.startsWith("video/")||(k==="video"&&!type);
+  const imgBehind=locked&&g.imageAsset?`<img class="ghost" ${srcAttr(g,"image")} alt="">`:"";
+  const media=asset?(isVid?`<video ${srcAttr(g,k)} muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">⤢</span>`:type.startsWith("image/")||k==="image"?`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
+    locked?`${imgBehind}<span class="lockmsg">🔒 Confirm the image first</span>`:
+    `<span>${s==="bad"?"Regenerating…":prompt?"Waiting for render":"Waiting for prompt"}${ro?"":`<br><small>drop a file here to add it</small>`}</span>`;
+  const limit=/kling/i.test(model)&&k!=="image"?2500:null;
+  const fixing=state.faultOpen===g.id+":"+k;
+  const cls=locked?"locked":s==="ok"?"ok":s==="bad"||s==="gen"?"bad":s==="review"?"now":"";
+  const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="gen"?`<span class="pill s-generating">${g[d.fault]?"Regenerating":"Generating"}</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">${prompt?"Prompt ready":"Waiting"}</span>`;
+  const size=g[d.size]?(k==="image"?esc(g[d.size]):`${esc(g[d.size])}s`):"—";
+  const specs=[
+    ["Connector",esc(g[d.conn]||d.defConn||"—")],
+    [k==="image"?"Resolution":"Length",size],
+    ["Model",`<span class="mono">${esc(model||"—")}</span>`,"wide"],
+    ["Credits",g[d.credits]!=null&&g[d.credits]!==""?num(g[d.credits]):"—"],
+    ["Attempt",`${1+(Number(g[d.regens])||0)} of 3`],
+    ["Generated",when(g[d.at])],
+  ];
+  const canAct=!state.readOnly&&!locked&&s!=="gen";
+  return `<article class="mc ${cls}" id="mc-${esc(g.id)}-${k}">
+    <div class="mc-head">
+      <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}</span></div>
+      <div class="kv end"><span class="lbl">Status</span>${chip}</div></div>
+    <div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}"`} ${asset?`data-viewm="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="View ${d.label.toLowerCase()} for ${esc(g.beat)}"`:""}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>
+    <div class="kv"><span class="lbl">Shot</span><span class="mc-t">${esc(g.title||"—")}</span></div>
+    ${g.line?`<div class="kv"><span class="lbl">Script line</span><span class="mc-l">“${esc(g.line)}”</span></div>`:""}
+    <dl class="specs">${specs.map(([a,b,c])=>`<div${c?` class="${c}"`:""}><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
+    <details class="pd"><summary><span class="lbl">Prompt</span><span class="pm">${num(prompt.length)} chars${limit?` / <span class="${prompt.length>limit?"over":""}">${num(limit)}</span>`:""}</span></summary>
+      <pre class="ptext${prompt?"":" none"}">${prompt?esc(prompt):"Prompt not written yet."}</pre></details>
+    ${g[d.fault]&&(s==="bad"||s==="gen")?`<div class="fault"><span class="lbl" style="color:var(--regen)">${s==="gen"?"Fixing now":"To fix"}</span><div>${esc(g[d.fault])}</div></div>`:""}
+    ${fixing?`<form class="fixbox" data-faultform="${esc(g.id)}" data-step="${k}">
+        <label class="lbl" for="fault-${esc(g.id)}-${k}">What should be fixed?</label>
+        <textarea id="fault-${esc(g.id)}-${k}" rows="3" placeholder="e.g. The strap sits above the kneecap. Move it just below, on the soft spot." required></textarea>
+        <div class="fix-actions"><button class="btn small bad solidbad" type="submit">Confirm &amp; regenerate</button><button class="btn small" type="button" data-faultcancel="1">Cancel</button></div></form>`:""}
+    ${canAct&&!fixing?`<div class="mc-verdict">
+      <button class="btn ok${s==="ok"?" solid":""}" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>✓ Confirm</button>
+      <button class="btn bad" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>✎ Fix</button></div>`:""}
+    <div class="mc-tools">
+      <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${prompt?"":"disabled"}>Copy prompt</button>
+      <button class="btn small" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>⬇ Download</button>
+      <button class="btn small" type="button" data-open="${esc(g.id)}" style="grid-column:1/-1">Edit details</button>
+    </div></article>`;
+}
+
+function extFor(type,k){
+  const m={"image/png":"png","image/jpeg":"jpg","image/webp":"webp","image/gif":"gif","video/mp4":"mp4","video/webm":"webm","video/quicktime":"mp4","application/pdf":"pdf","text/plain":"txt","application/json":"json","text/markdown":"md"};
+  return m[type]||(k==="image"?"png":"mp4");
+}
+function fileName(g,k){const b=currentBuild();return `${b?b.id:"build"}_${g.beat||g.id}_${k}.${extFor(g[STEP[k].type],k)}`}
+async function fetchAsset(id){const r=await fetch("/_blob/"+id);if(!r.ok) throw new Error("fetch "+r.status);return r.blob()}
+async function saveFile(name,blob,fallbackUrl){
+  if(state.downloads){
+    try{await state.downloads.save({filename:name,data:blob});toast("Saved "+name);return}
+    catch(e){if(e&&e.code==="declined") return; if(e&&e.code==="rate_limited"){toast("A save is already open");return}}
+  }
+  if(fallbackUrl){window.open(fallbackUrl,"_blank","noopener");toast("Opened in a new tab. Save it from there.")}
+  else toast("Downloads aren't available in this view");
+}
+async function downloadOne(g,k){
+  const id=g[STEP[k].asset]; if(!id) return;
+  try{await saveFile(fileName(g,k),await fetchMedia(g,k),partsOf(g,k)?null:"/_blob/"+id)}catch(e){toast("Couldn't fetch the file. Try again.")}
+}
+async function downloadZip(groupKey,step){
+  if(!window.JSZip){toast("Zip isn't available right now");return}
+  const b=currentBuild(), gens=buildGens().filter(g=>groupOf(g).key===groupKey&&flow(g).includes(step)).sort(beatSort);
+  if(!gens.length) return;
+  const label=groupOf(gens[0]).label, d=STEP[step];
+  toast("Packing "+label+" "+d.label.toLowerCase()+"s…");
+  const zip=new JSZip(); let md=`# ${b.name||b.id} · ${label} · ${d.label}s\n\n`;
+  for(const g of gens){
+    md+=`## ${g.beat} · ${g.title||""}\n`+(g.line?`> ${g.line}\n\n`:"\n");
+    if(g[d.prompt]) md+=`Model: ${g[d.model]||d.defModel} · ${g[d.prompt].length} chars\n\n\`\`\`\n${g[d.prompt]}\n\`\`\`\n\n`;
+    if(g[d.asset]){try{zip.file(fileName(g,step),await fetchMedia(g,step))}catch(e){md+=`(file could not be fetched)\n\n`}}
+  }
+  zip.file(`prompts.md`,md);
+  const blob=await zip.generateAsync({type:"blob"});
+  await saveFile(`${b.id}_${label.replace(/\s+/g,"-")}_${d.label.toLowerCase()}s.zip`,blob,null);
+}
+async function uploadTo(gid,k,file){
+  const g=state.gens.find(x=>x.id===gid); if(!g||!file) return;
+  if(!state.assets){toast("Uploading isn't available in this view");return}
+  const d=STEP[k];
+  if(k==="image"&&!file.type.startsWith("image/")){toast("That isn't an image file");return}
+  if(k==="video"&&!file.type.startsWith("video/")){toast("That isn't a video file");return}
+  state.busy[gid+":"+k]=1;render();
+  try{
+    const ids=[]; let ctype=file.type;
+    for(let o=0;o<file.size;o+=PART){
+      const r=await state.assets.upload(file.slice(o,o+PART,file.type),{type:file.type});
+      ids.push(r.id); ctype=r.contentType;
+    }
+    const patch={[d.asset]:ids[0],[d.type]:ctype,[d.parts]:ids.length>1?ids:[],updatedAt:Date.now()};
+    if(k==="image"){patch.imageStatus="review"; if(["planned","ready"].includes(g.status||"planned")) patch.status="review"}
+    else patch.status="review";
+    await state.db.doc("generations/"+gid).update(patch);
+    toast(d.label+" added. Check it, then confirm.");
+  }catch(e){
+    const c=e&&e.code;
+    toast(c==="too_large"?"That file is too large to store":c==="unsupported_type"?"That file type can't be stored":c==="quota_exceeded"?"Board storage is full":"Upload failed. Try again.");
+  }finally{delete state.busy[gid+":"+k];render()}
+}
+async function setVerdict(gid,k,ok,fault){
+  const g=state.gens.find(x=>x.id===gid); if(!g||!state.db) return;
+  const d=STEP[k], patch={updatedAt:Date.now()};
+  if(ok){
+    patch[d.st]=k==="image"?"confirmed":"use";
+    if(k==="image") patch.status=flow(g).length===1?"use":"ready";
+  } else {
+    patch[d.st]="regenerate"; patch[d.fault]=fault; patch[d.regens]=(Number(g[d.regens])||0)+1;
+    if(k==="image") patch.status="regenerate";
+  }
+  try{await state.db.doc("generations/"+gid).update(patch);toast(ok?(k==="image"&&flow(g).includes("video")?"Image confirmed. Its video is unlocked.":"Confirmed"):"Sent back to regenerate")}
+  catch(e){handleWriteError(e)}
+}
+function copyText(t,what){navigator.clipboard.writeText(t).then(()=>toast(what+" copied"),()=>toast("Copy was blocked. Select the text and copy it."))}
+
+
+/* viewer: clicking an image or video shows it, nothing else */
+function viewerList(step){
+  return groups(buildGens()).flatMap(x=>x.items).filter(g=>flow(g).includes(step));
+}
+function openViewer(id,step){state.viewer={id,step};renderViewer()}
+function closeViewer(){if(!state.viewer) return;state.viewer=null;const v=$("#viewer");v.hidden=true;v.innerHTML=""}
+function moveViewer(dir){
+  const v=state.viewer; if(!v) return;
+  const list=viewerList(v.step), i=list.findIndex(g=>g.id===v.id);
+  const n=list[(i+dir+list.length)%list.length]; if(n){v.id=n.id;renderViewer()}
+}
+function renderViewer(){
+  const v=state.viewer; if(!v) return;
+  const g=state.gens.find(x=>x.id===v.id); if(!g){closeViewer();return}
+  const k=v.step, d=STEP[k], asset=g[d.asset], type=g[d.type]||"";
+  const list=viewerList(k), i=list.findIndex(x=>x.id===g.id);
+  const isVid=type.startsWith("video/")||(k==="video"&&!type);
+  const media=asset?(isVid?`<video ${srcAttr(g,k)} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`):
+    `<div class="v-empty">${k==="video"&&stepState(g,"image")!=="ok"?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
+  const s=stepState(g,k);
+  const chip=s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
+  const grp=groupOf(g);
+  $("#viewer").innerHTML=`
+    <div class="v-top">
+      <div class="kv"><span class="lbl">${esc(grp.label)}</span><span class="v-beat">${esc(g.beat||"")} · ${esc(g.title||"")}</span></div>
+      <div class="v-tabs">${flow(g).map(x=>`<button type="button" class="tab" data-vstep="${x}" aria-selected="${x===k}">${STEP[x].label}</button>`).join("")}</div>
+      <span class="grow"></span>${chip}
+      <button class="btn small" type="button" data-vclose="x" aria-label="Close">✕ Close</button></div>
+    <div class="v-stage" data-vclose="">
+      ${list.length>1?`<button class="v-nav prev" type="button" data-vnav="-1" aria-label="Previous">‹</button>`:""}
+      <div class="v-media">${media}</div>
+      ${list.length>1?`<button class="v-nav next" type="button" data-vnav="1" aria-label="Next">›</button>`:""}
+    </div>
+    <div class="v-bottom">
+      <span class="mono">${i+1} / ${list.length} ${d.label.toLowerCase()}s</span>
+      <span class="grow"></span>
+      <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${g[d.prompt]?"":"disabled"}>Copy prompt</button>
+      <button class="btn small primary" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>⬇ Download</button>
+    </div>`;
+  const el=$("#viewer"); el.hidden=false; hydrate(el);
+}
+
+/* events */
+let pickTarget=null;
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  if(!t) return;
+  const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
+  if(ds.sound){const v=document.querySelector(".viewer video");if(v){v.muted=false;v.dataset.sound="1";tryPlay(v)}t.remove();return}
+  if(ds.viewm){openViewer(ds.viewm,ds.step)}
+  else if(ds.vnav){moveViewer(Number(ds.vnav))}
+  else if(ds.vstep){state.viewer.step=ds.vstep;renderViewer()}
+  else if(ds.vclose!==undefined&&(ds.vclose==="x"||e.target===t)){closeViewer()}
+  else if(ds.open){closeViewer();const x=state.gens.find(y=>y.id===ds.open);if(x) openDrawer(x,false)}
+  else if(ds.add){openDrawer({stage:ds.add,status:"planned"},true)}
+  else if(ds.f){state.filter=ds.f;render()}
+  else if(ds.jump){const w=$("#w-"+ds.jump);if(w) w.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}
+  else if(ds.view){state.view=ds.view;lsSet("gb.view",ds.view);render()}
+  else if(ds.ms){state.mstage=ds.ms;render()}
+  else if(ds.needs){state.mneeds=!state.mneeds;render()}
+  else if(ds.copy&&g){copyText(g[ds.field]||"",(g.beat||"")+" prompt")}
+  else if(ds.copyall){
+    const list=buildGens().filter(x=>groupOf(x).key===ds.copyall&&x[ds.field]).sort(beatSort);
+    copyText(list.map(x=>`${x.beat}\n${x[ds.field]}`).join("\n\n"),list.length+" prompts");
+  }
+  else if(ds.zip){downloadZip(ds.zip,ds.step)}
+  else if(ds.dl&&g){downloadOne(g,ds.step)}
+  else if(ds.verdict&&g){
+    if(ds.verdict==="ok"){state.faultOpen=null;setVerdict(g.id,ds.step,true)}
+    else {state.faultOpen=g.id+":"+ds.step;render();const i=document.getElementById(`fault-${g.id}-${ds.step}`);if(i) i.focus()}
+  }
+  else if(ds.faultcancel){state.faultOpen=null;render()}
+
+});
+document.addEventListener("keydown",e=>{
+  if(state.viewer){if(e.key==="Escape") closeViewer(); else if(e.key==="ArrowRight") moveViewer(1); else if(e.key==="ArrowLeft") moveViewer(-1); return}
+  if(e.key==="Escape"&&!$("#drawer").hidden) closeDrawer();
+  const t=e.target.closest&&e.target.closest("[data-viewm]");
+  if(t&&t.tagName!=="BUTTON"&&(e.key==="Enter"||e.key===" ")){e.preventDefault();t.click()}
+});
+document.addEventListener("submit",e=>{
+  const f=e.target.closest("[data-faultform]"); if(!f) return;
+  e.preventDefault();
+  const v=f.querySelector("textarea").value.trim(); if(!v){f.querySelector("textarea").focus();return}
+  state.faultOpen=null; setVerdict(f.dataset.faultform,f.dataset.step,false,v);
+});
+$("#picker").addEventListener("change",e=>{const f=e.target.files[0];if(f&&pickTarget) uploadTo(pickTarget.id,pickTarget.step,f);pickTarget=null});
+["dragover","dragenter"].forEach(ev=>document.addEventListener(ev,e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(t){e.preventDefault();t.classList.add("drag")}}));
+document.addEventListener("dragleave",e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(t) t.classList.remove("drag")});
+document.addEventListener("drop",e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(!t) return;e.preventDefault();t.classList.remove("drag");const f=e.dataTransfer.files[0];if(f) uploadTo(t.dataset.drop,t.dataset.step,f)});
+document.addEventListener("input",e=>{if(e.target.id==="search"){state.q=e.target.value;const pos=e.target.selectionStart;render();const s=$("#search");s.focus();s.setSelectionRange(pos,pos)}});
+$("#scrim").addEventListener("click",closeDrawer);
+
+/* boot */
+state.build=/^#[A-Za-z0-9_.~-]+$/.test(location.hash)&&location.hash!=="#manual"?location.hash.slice(1):null;
+state.view=location.hash==="#manual"?"manual":(lsGet("gb.view")==="manual"?"manual":"board");
+function setSync(live,txt){$("#syncDot").classList.toggle("live",live);$("#syncTxt").textContent=txt}
+function offline(){
+  state.builds=OFFLINE.builds;state.gens=OFFLINE.gens;state.readOnly=true;
+  setSync(false,"Offline");showBanner("Live sync isn't available in this view, so the board is read-only.");render();
+}
+render();
+(async()=>{
+  const db=window.claude&&window.claude.use?await window.claude.use("db").catch(()=>null):null;
+  if(!db){offline();return}
+  state.db=db;
+  claude.use("assets").then(a=>{state.assets=a;render()}).catch(()=>{});
+  claude.use("downloads").then(d=>{state.downloads=d}).catch(()=>{});
+  db.collection("builds").onSnapshot(snap=>{
+    state.builds=snap.docs.map(d=>({id:d.id,...d.data()}));
+    if(!state.builds.some(b=>b.id===state.build)){
+      const latest=[...state.builds].sort((a,b)=>(b.updatedAt||0)-(a.updatedAt||0))[0];
+      state.build=latest&&latest.id;
+    }
+    setSync(true,"Live");render();
+  },err=>{setSync(false,"Sync stopped")});
+  db.collection("generations").onSnapshot(snap=>{
+    state.gens=snap.docs.map(d=>({id:d.id,...d.data()}));
+    setSync(true,"Live");render();if(state.viewer) renderViewer();
+    if(state.editing&&!state.editing._new&&!state.gens.some(g=>g.id===state.editing.id)) closeDrawer();
+  },err=>{setSync(false,"Sync stopped")});
+})();
+</script>
