@@ -88,7 +88,7 @@ select.field,input.field{background:var(--surface);border:1px solid var(--line);
 .filters input.field{min-width:0;width:220px;max-width:100%}
 
 /* widget grid */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:14px;align-items:start}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:14px;align-items:stretch}
 @media (max-width:520px){.grid{grid-template-columns:1fr}}
 .widget{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;scroll-margin-top:16px}
 .widget.wide{grid-column:1/-1}
@@ -101,7 +101,8 @@ select.field,input.field{background:var(--surface);border:1px solid var(--line);
 .w-actions a{font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:3px 8px}
 .w-actions a:hover{color:var(--ink)}
 .w-bar{margin:0 16px}
-.w-body{padding:12px 16px 16px}
+.w-body{padding:12px 16px 16px;flex:1;display:flex;flex-direction:column}
+.w-body>*:only-child{flex:1}
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:12px}
 .widget.wide .tiles{grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}
 .empty{border:1px dashed var(--line);border-radius:10px;padding:18px;color:var(--muted);font-size:13px;text-align:center}
@@ -450,12 +451,14 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .au-r{font-size:12.5px;color:var(--muted);line-height:1.5}
 .beatlink{border:0;background:var(--accent-soft);color:var(--accent);font-family:var(--mono);font-size:12px;font-weight:600;border-radius:5px;padding:2px 6px}
 .beatlink:hover{text-decoration:underline}
-.abs-sum{display:flex;flex-direction:column;gap:12px}
+.abs-sum{display:flex;flex-direction:column;gap:12px;flex:1}
+.abs-sum .abs-dl{flex:1;align-content:stretch}
+.abs-sum .abs-dl div{display:flex;flex-direction:column;justify-content:flex-start;gap:2px}
 .abs-dl{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}
 .abs-dl div{background:var(--sunk);border-radius:8px;padding:8px 10px;min-width:0}
 .abs-dl dt{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .abs-dl dd{margin:2px 0 0;font-family:var(--display);font-weight:700;font-size:14px;overflow-wrap:anywhere}
-.abs-foot{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.abs-foot{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:auto}
 .abs-foot .grow{flex:1}
 .vcheck{display:flex;flex-direction:column;gap:8px}
 .vc-h{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
@@ -1464,8 +1467,8 @@ function absorptionSummary(){
   const d=planDoc("absorption");
   if(!d) return `<div class="empty">The Absorption Sheet appears here once step 1 is written. It is a document, not renders, so it lives in the <b>Plan</b> tab.</div>`;
   const m=(d.sections||[]).flatMap(x=>mdTables(x.md)).find(t=>t.head[0]==="instrument"||t.head[1]==="reading");
-  const rows=m?m.rows.slice(0,4):[];
-  const short=v=>{v=String(v||"");const cut=v.split(/[;·]/)[0].trim();return cut.length>34?cut.slice(0,32)+"…":cut};
+  const rows=m?m.rows.slice(0,8):[];
+  const short=v=>{v=String(v||"");const cut=v.split(/[;·]/)[0].trim();return cut.length>44?cut.slice(0,42)+"…":cut};
   return `<div class="abs-sum">
     ${rows.length?`<dl class="abs-dl">${rows.map(r=>`<div><dt>${esc(r[0])}</dt><dd>${esc(short(r[1]))}</dd></div>`).join("")}</dl>`:""}
     <div class="abs-foot">
