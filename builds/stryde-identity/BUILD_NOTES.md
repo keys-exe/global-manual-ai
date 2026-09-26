@@ -27,7 +27,43 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **§22U step 10 done: T4 locked by the user**, then re-cut to the user's own reference edit (house cut:
   butt joins, words to −38 dB, no breaths). Masters HK1/HK2/HK3 = 57.85 / 57.91 / 58.08s, verbatim, on the board
   (`VO-MASTER-HK1…3`, review). Word timestamps in `vo/master/HK<n>.words.json`. Reference file: `vo/ref/`.
-- **Next:** E6 — set every B-roll row's duration from the body word timestamps (span of its line + 0.5s, Kling 3–15s),
+- **HK1 (step 6), 2026-09-26 11:10–11:40:** E6 = 5s per band (speech 3.88s). User restated VN01 (binding, §27F):
+  top = hands, face cropped at the chin, lightbox + knee X-ray behind; bottom = **extreme close-up** of the knee, the
+  hand on the rail revealed only as the camera eases back. **HK1-B v2 USE** (ECU, no hands; v1 was waist-to-feet with
+  hands on the rails). **HK1-T:** v1 slide icons → v2 USE on product; the chin crop failed twice on regeneration (v3
+  erased the head, v4 full face — the model composes the whole person from the subject sheet), so the two-regeneration
+  budget is spent: **v2 is kept and the split band is cut from his chin (y=372 of 2752)** — `hooks/HK1_split_preview.png`.
+  The hook split has two B-roll bands, which `assemble.py` can't build (its split needs a talking-head track) — HK1 is
+  cut with ffmpeg: top band from his chin, bottom band centred.
+- **HK1-T v5 (user: "strap too big"):** the two-hand grip had spread his hands and the shell grew to ~9–10 thumb-widths;
+  v5 uses the open-palm grip (HELD_GRIPS), shell barely wider than his palm. Band from y=300. Preview `hooks/HK1_split_preview_v2.png`.
+  I2V updated to the palm grip (2,458 chars).
+- **HK1-T v6 (user: v5 "now too small"):** size anchored at ~16 cm (a hand's length, wrist crease to fingertips), 2
+  variants: v6a USE, v6b REGENERATE (webbing band + loose rings). Band from y=470. `hooks/HK1_split_preview_v3.png`.
+  **Product Sheet flag:** `SIZE_HELD` (5–6 thumb-widths ≈ 11 cm) rendered toy-sized — proposed: a hand's length (~16 cm).
+  Waiting on the user to confirm the size and both images.
+- **HK1-T v7/v8 (user: "strap at the normal state, not that long; X-ray too high and not full"):** v7a/b regenerated
+  the scene (kept on the board, superseded). The user then sent v6a: "just edit this and make the strap not that long
+  just the original lenght" → **v8 = edit of v6a** (`hooks/HK1-T.v8.edit.txt`, refs v6a + product front/back), band
+  back to the original short closed loop. **v8b current (USE)**, v8a alt. Preview `hooks/HK1_split_preview_v4.png`
+  (band from y=470). The lightbox still sits only partly in the top band (v6a's framing kept, as asked) — offered a
+  follow-up edit if the X-ray must be fully in frame. Waiting on the user to confirm HK1-T v8b and HK1-B v2.
+- **HK1-T v9/v10 (user: "re do the product", then "i need a new hk1-t"):** v8b's shell had twisted and its keepers read
+  chrome. An edit of v8b (`HK1-T.v9.edit.txt`) was interrupted by the user and is kept unjudged. New render v9
+  (`HK1-T.v9.t2i.txt`, v7 prompt + product locks): both REGENERATE (strap held upright, sideways wordmark, extra slides;
+  v9b wide with the face). v10 (`HK1-T.v10.t2i.txt`, leaner, "held HORIZONTALLY as in the second photo", subject ref
+  first): **v10a** strap horizontal and hand-sized, whole X-ray in the band (band from y=620; the raw frame has a seam
+  at ~y=600 that the band skips), thumb over the "e" of the wordmark; **v10b** product exact, lightbox low-left and partly
+  cut, strap smaller. Two-regeneration budget spent → the user picks. Recommended v10a + a small edit to lift the thumb.
+  Previews `hooks/HK1_split_preview_v10a.png` / `_v10b.png`.
+- **Then:** E6 — set every B-roll row's duration from the body word timestamps (span of its line + 0.5s, Kling 3–15s),
   then step 6: the hooks one by one (HK1 first, split layout EG01), as prompts + generations on the board.
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),
   F7 (`package_closed.jpg` missing), F8 (AVATAR-SHEET doc inconsistency), F10 (watermark omit).
+- **HK1 clips (step 6, 2026-09-26 13:00–13:25):** user confirmed HK1-T **v10b** and HK1-B v2 on the board. Kling
+  `kling-video-v3_0_omni`, 9:16, 1080p, 5s, no audio. **HK1-B:** clip v1 REGENERATE (camera orbited the leg, no step),
+  **clip v2 USE** (straight ease-back, step down, hand on the rail ~3.8s; the strap drops low late on — the split
+  crop must track it). **HK1-T:** the VN01 turn to show the pad broke the rigid shell every time — v1 curled into a ring,
+  v2 flipped upside down with an upright wordmark, v3 bent into a U-cup. Budget spent → user decides. Recommended:
+  edit v10b so the pad already faces the camera (PAD_BACK_SHOT) + a small tilt, not a rotation. Prompts:
+  `hooks/HK1-T.i2v.v1.json`, `.v2.json`, `HK1-T.i2v.json` (v3); `HK1-B.i2v.v1.json`, `HK1-B.i2v.json` (v2).
