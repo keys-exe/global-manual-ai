@@ -7814,7 +7814,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 
 | Date | Correction | Section affected | Status |
 |---|---|---|---|
-| — | *(empty at V7.49.8 cut)* | — | — |
+| 2026-09-26 | **Overlays: no outline, never over the face, inside the Reels safe zone.** (1) `pip` boxes carry no border — `border` stays 0; the white outline is retired. (2) A box never covers the talking head's face. The plan carries `th_face` (the face box as fractions of the TH frame, measured off the render), and while a B-roll box sits over the talking head the talking head is reframed (zoom ≤1.4×, pushed away from the box) until the face is clear by 16px; a box under 25% of the width FAILs. (3) Everything the viewer must see sits inside Meta's Facebook/Instagram Reels safe zone for 1080×1920: **top 14%, bottom 35%, 6% each side kept clear** (safe area x 64–1016, y 268–1248). `pip` boxes are placed at the safe-zone corners; `split` puts the B-roll band on top and places the face inside the safe part of the talking-head band; captions, cards and badges in the CapCut block go inside the safe zone and off the face and boxes. `assemble.py` checks every overlay (face clear, box and face inside the safe zone) and FAILs on a breach; `safe_zone` in the plan overrides the default, `null` switches it off. Measured on down-forwards-again: 26 overlays planned, 0 breaches. | §30H Layouts; §42 Part 3A; §17A (CapCut placement) | pending |
 
 ---
 

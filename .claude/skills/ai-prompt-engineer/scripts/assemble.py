@@ -68,6 +68,113 @@ MIN_SLOW = 0.8
 MIN_FLASH = 0.8
 W, H = 1080, 1920
 CORNER_MARGIN = 48
+# Facebook / Instagram Reels safe zone (Meta, 1080x1920): keep the top 14%, the bottom 35%
+# and 6% each side free of anything the viewer must see. Plan key "safe_zone" overrides;
+# null switches it off (old corner placement).
+REELS_SAFE = {"top": 0.14, "bottom": 0.35, "side": 0.06}
+FACE_GAP = 16      # px kept between an overlay and the talking head's face
+MIN_BOX = 0.25     # smallest B-roll box (share of frame width) before the layout FAILs
+
+
+def geometry(lay, safe, face):
+    """Place one non-full layout. safe = (x0, y0, x1, y1) px or None; face = the talking
+    head's face (x0, y0, x1, y1) as fractions of its own frame, or None.
+    Returns (geo, failure|None). geo holds the box, the talking head's reframe
+    (scale s, crop x/y) and the face rectangle as it lands on screen."""
+    geo = {"th": {"s": 1.0, "x": 0, "y": 0}}
+
+    def face_px(s, cx, cy, oy=0):
+        if not face:
+            return None
+        return (face[0] * W * s - cx, face[1] * H * s - cy + oy, face[2] * W * s - cx, face[3] * H * s - cy + oy)
+
+    def inside(r, z):
+        return r[0] >= z[0] - 1 and r[1] >= z[1] - 1 and r[2] <= z[2] + 1 and r[3] <= z[3] + 1
+
+    def apart(r, q):
+        return r[2] + FACE_GAP <= q[0] or q[2] + FACE_GAP <= r[0] or r[3] + FACE_GAP <= q[1] or q[3] + FACE_GAP <= r[1]
+
+    if lay["type"] == "split":
+        hb = even(H * lay["ratio"]); ht = H - hb
+        top = lay["broll_pos"] == "top"
+        band = (0, hb, W, H) if top else (0, 0, W, ht)          # where the talking head shows
+        if face:
+            fy0, fy1 = face[1] * H, face[3] * H
+            lo, hi = band[1], band[3]
+            if safe:
+                lo, hi = max(lo, safe[1]), min(hi, safe[3])
+            # crop so the face sits in the middle of the band's visible (safe) part
+            y = even(min(max((fy0 + fy1) / 2 - ((lo + hi) / 2 - band[1]), 0), H - ht))
+        else:
+            y = even(min(max(H * 0.4 - ht / 2, 0), H - ht))
+        geo.update(hb=hb, ht=ht, crop_y=y)
+        fr = face_px(1.0, 0, y, band[1])
+        geo["face"] = fr
+        if fr and safe and not inside(fr, safe):
+            return geo, "split: the talking head's face falls outside the safe zone — lower the B-roll ratio"
+        if safe:
+            bc = hb / 2 if top else ht + hb / 2                     # B-roll band centre
+            if not safe[1] <= bc <= safe[3]:
+                return geo, "split: the B-roll band's centre sits outside the safe zone — put the band on top"
+        return geo, None
+
+    # pip
+    bd = int(lay.get("border", 0))
+    bw = even(W * lay["scale"]); bh = even(bw * 16 / 9)
+    left = lay["corner"] in ("tl", "bl"); upper = lay["corner"] in ("tl", "tr")
+    if safe:
+        bh = min(bh, even(safe[3] - safe[1] - 2 * bd)); bw = even(bh * 9 / 16) if bh < even(bw * 16 / 9) else bw
+    fw, fh = bw + 2 * bd, bh + 2 * bd
+
+    def at(fw, fh):
+        if safe:
+            x = safe[0] if left else safe[2] - fw
+            y = safe[1] if upper else safe[3] - fh
+        else:
+            x = CORNER_MARGIN if left else W - fw - CORNER_MARGIN
+            y = CORNER_MARGIN * 3 if upper else H - fh - CORNER_MARGIN * 6
+        return int(x), int(y)
+
+    x, y = at(fw, fh)
+    box = (x, y, x + fw, y + fh)
+    if lay["over"] == "broll" or not face:
+        geo.update(bw=bw, bh=bh, bd=bd, x=x, y=y, box=box, face=None)
+        if safe and not inside(box, safe):
+            return geo, "pip: box outside the safe zone"
+        return geo, None
+
+    # B-roll box over the talking head: reframe the talking head (zoom, push away from
+    # the box) until the face is clear of the box and inside the safe zone; shrink the
+    # box to what fits, never below MIN_BOX.
+    fcy = (face[1] + face[3]) / 2 * H
+    best = None                     # smallest reframe that fits the full box; else the biggest box
+    for step in range(0, 9):
+        s = 1.0 + 0.05 * step
+        cx = (s - 1) * W if not left else 0                        # push the face away from the box
+        cy = min(max(fcy * s - fcy, 0), (s - 1) * H)                # keep the face at its own height
+        fr = face_px(s, cx, cy)
+        if safe and not inside(fr, safe):
+            continue
+        room = (x + fw - FACE_GAP - fr[2]) if not left else (fr[0] - FACE_GAP - x)
+        room = (safe[2] - fr[2] - FACE_GAP) if (safe and not left) else ((fr[0] - FACE_GAP - safe[0]) if safe else room)
+        w2 = even(min(bw, room - 2 * bd))
+        if w2 < W * MIN_BOX:
+            continue
+        h2 = even(w2 * 16 / 9); fw2, fh2 = w2 + 2 * bd, h2 + 2 * bd
+        x2, y2 = at(fw2, fh2)
+        b2 = (x2, y2, x2 + fw2, y2 + fh2)
+        if apart(b2, fr):
+            cand = dict(th={"s": round(s, 2), "x": even(cx), "y": even(cy)}, bw=w2, bh=h2, bd=bd,
+                        x=x2, y=y2, box=b2, face=[round(v) for v in fr])
+            if w2 >= bw:
+                geo.update(cand); return geo, None
+            if best is None or w2 > best["bw"]:
+                best = cand
+    if best:
+        geo.update(best); return geo, None
+    return geo, "pip: no reframe up to 1.4x clears the face with a box of at least 25% width inside the safe zone"
+
+
 
 
 def even(x):
@@ -305,8 +412,34 @@ def main():
         if any(s["kind"] == "BR" and s["start"] + 1e-3 < pt < s["end"] - 1e-3 for s in raw):
             warnings.append({"punch": ph, "warning": f"lands under a B-roll at {pt:.2f}s — ignored"})
 
+    sz = plan.get("safe_zone", REELS_SAFE)
+    safe = None if sz is None else (even(W * sz["side"]), even(H * sz["top"]),
+                                    even(W * (1 - sz["side"])), even(H * (1 - sz["bottom"])))
+    face = plan.get("th_face")
+    if base is not None and face is None and safe is not None:
+        warnings.append({"warning": "no th_face in the plan — overlays cannot be checked against the face"})
+    layout_checks = []
+    for s in segs:
+        if s["kind"] != "BR":
+            continue
+        e = next(x for x in edl if x["beat"] == s["beat"])
+        if e["layout"]["type"] == "full":
+            continue
+        geo, bad = geometry(e["layout"], safe, face)
+        s["geo"] = geo
+        chk = {"beat": s["beat"], "layout": e["layout"]["type"],
+               **{k: geo[k] for k in ("box", "face", "th") if k in geo}}
+        if e["layout"].get("border"):
+            warnings.append({"beat": s["beat"], "warning": "box has a border — house rule is none"})
+        if bad:
+            fails.append({"fail": "LAYOUT", "beat": s["beat"], "detail": bad}); chk["ok"] = False
+        else:
+            chk["ok"] = True
+        layout_checks.append(chk)
+
     report = {"master_s": round(total, 3), "min_th_s": a.min_th, "edl": edl,
-              "timeline": [{k: (round(v, 3) if isinstance(v, float) else v) for k, v in s.items()} for s in segs],
+              "timeline": [{k: (round(v, 3) if isinstance(v, float) else v) for k, v in s.items() if k != "geo"} for s in segs],
+              "safe_zone_px": safe, "layout_checks": layout_checks,
               "fixes": fixes, "warnings": warnings, "failures": fails}
     if fails or a.dry_run:
         report["status"] = "FAIL" if fails else "PLANNED"
@@ -331,8 +464,12 @@ def main():
             inputs.extend(["-ss", f"{start:.4f}", "-i", str(path)])
             return len(inputs) // 4 - 1
 
-        def th_chain(s0, s1):
-            return f"[{add(base, s0)}:v]trim=0:{s1 - s0},setpts=PTS-STARTPTS,{V}"
+        def th_chain(s0, s1, rf=None):
+            """The talking head, optionally reframed: scale s, then a W x H window at (x, y)."""
+            ch = f"[{add(base, s0)}:v]trim=0:{s1 - s0},setpts=PTS-STARTPTS,{V}"
+            if rf and rf["s"] != 1.0:
+                ch += (f",scale={even(W * rf['s'])}:{even(H * rf['s'])},crop={W}:{H}:{rf['x']}:{rf['y']}")
+            return ch
 
         def br_chain(e, dur, w, h):
             src_len = dur * e["speed"]
@@ -352,20 +489,17 @@ def main():
             if lay["type"] == "full":
                 parts.append(f"{br_chain(e, dur, W, H)}{END}[v]")
             elif lay["type"] == "split":
-                hb = even(H * lay["ratio"]); ht = H - hb
-                y = even(min(max(H * focus - ht / 2, 0), H - ht))
+                g = s["geo"]; hb, ht, y = g["hb"], g["ht"], g["crop_y"]
                 parts.append(f"{br_chain(e, dur, W, hb)}[b]")
                 parts.append(f"{th_chain(s['start'], s['end'])},crop={W}:{ht}:0:{y}[t]")
                 order = "[b][t]" if lay["broll_pos"] == "top" else "[t][b]"
                 parts.append(f"{order}vstack=inputs=2{END}[v]")
             else:  # pip
-                bw = even(W * lay["scale"]); bh = even(bw * 16 / 9); bd = int(lay.get("border", 0))
+                g = s["geo"]; bw, bh, bd, x, y = g["bw"], g["bh"], g["bd"], g["x"], g["y"]
                 fw, fh = bw + 2 * bd, bh + 2 * bd
-                x = CORNER_MARGIN if lay["corner"] in ("tl", "bl") else W - fw - CORNER_MARGIN
-                y = CORNER_MARGIN * 3 if lay["corner"] in ("tl", "tr") else H - fh - CORNER_MARGIN * 6
                 box = f",pad={fw}:{fh}:{bd}:{bd}:white" if bd else ""
                 if lay["over"] == "th":
-                    parts.append(f"{th_chain(s['start'], s['end'])}[g]")
+                    parts.append(f"{th_chain(s['start'], s['end'], g['th'])}[g]")
                     parts.append(f"{br_chain(e, dur, bw, bh)}{box}[f]")
                 else:
                     parts.append(f"{br_chain(e, dur, W, H)}[g]")

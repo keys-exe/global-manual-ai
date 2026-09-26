@@ -59,6 +59,9 @@ def main():
             "punch_in": h.get("punch_in", []) + body.get("punch_in", []),
             "th_focus_y": body.get("th_focus_y", 0.4),
         }
+        for k in ("th_face", "safe_zone"):              # overlay geometry (assemble.py)
+            if k in body:
+                plan[k] = body[k]
         if bool(body.get("base")) != bool(h.get("base")):
             results.append({"hook": h["id"], "status": "FAIL",
                             "detail": "hook and body must both have a talking-head track, or both be voice-only"})

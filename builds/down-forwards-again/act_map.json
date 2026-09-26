@@ -9,7 +9,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "LIVING",
@@ -43,8 +43,8 @@
    "type": "pip",
    "over": "th",
    "corner": "br",
-   "scale": 0.45,
-   "border": 6
+   "scale": 0.3,
+   "border": 0
   },
   "location_id": "CLINIC",
   "refs": [
@@ -73,8 +73,8 @@
   "kind": "mech",
   "layout": {
    "type": "split",
-   "broll_pos": "bottom",
-   "ratio": 0.45
+   "broll_pos": "top",
+   "ratio": 0.4
   },
   "location_id": null,
   "refs": [],
@@ -99,8 +99,8 @@
   "kind": "mech",
   "layout": {
    "type": "split",
-   "broll_pos": "bottom",
-   "ratio": 0.45
+   "broll_pos": "top",
+   "ratio": 0.4
   },
   "location_id": null,
   "refs": [],
@@ -127,7 +127,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "LIVING",
@@ -161,7 +161,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "STAIRS",
@@ -193,8 +193,8 @@
   "kind": "mech",
   "layout": {
    "type": "split",
-   "broll_pos": "bottom",
-   "ratio": 0.45
+   "broll_pos": "top",
+   "ratio": 0.4
   },
   "location_id": null,
   "refs": [],
@@ -221,7 +221,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "STAIRS",
@@ -255,7 +255,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "LIVING",
@@ -289,7 +289,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "STAIRS",
@@ -323,8 +323,8 @@
    "type": "pip",
    "over": "th",
    "corner": "br",
-   "scale": 0.45,
-   "border": 6
+   "scale": 0.3,
+   "border": 0
   },
   "location_id": "GARDEN",
   "refs": [
@@ -357,7 +357,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "LIVING",
@@ -391,8 +391,8 @@
    "type": "pip",
    "over": "th",
    "corner": "br",
-   "scale": 0.45,
-   "border": 6
+   "scale": 0.3,
+   "border": 0
   },
   "location_id": null,
   "refs": [],
@@ -419,8 +419,8 @@
    "type": "pip",
    "over": "th",
    "corner": "br",
-   "scale": 0.45,
-   "border": 6
+   "scale": 0.3,
+   "border": 0
   },
   "location_id": null,
   "refs": [],
@@ -447,8 +447,8 @@
    "type": "pip",
    "over": "th",
    "corner": "br",
-   "scale": 0.45,
-   "border": 6
+   "scale": 0.3,
+   "border": 0
   },
   "location_id": null,
   "refs": [],
@@ -509,7 +509,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "LIVING",
@@ -575,8 +575,8 @@
   "kind": "mech",
   "layout": {
    "type": "split",
-   "broll_pos": "bottom",
-   "ratio": 0.45
+   "broll_pos": "top",
+   "ratio": 0.4
   },
   "location_id": null,
   "refs": [
@@ -607,7 +607,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "LIVING",
@@ -645,7 +645,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "LIVING",
@@ -683,7 +683,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "PROP",
@@ -717,7 +717,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "LIVING",
@@ -755,7 +755,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "STAIRS",
@@ -791,8 +791,8 @@
    "type": "pip",
    "over": "th",
    "corner": "br",
-   "scale": 0.45,
-   "border": 6
+   "scale": 0.3,
+   "border": 0
   },
   "location_id": "CLINIC",
   "refs": [
@@ -823,7 +823,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "STAIRS",
@@ -889,8 +889,8 @@
    "type": "pip",
    "over": "th",
    "corner": "br",
-   "scale": 0.45,
-   "border": 6
+   "scale": 0.3,
+   "border": 0
   },
   "location_id": null,
   "refs": [],
@@ -917,7 +917,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "STAIRS",
@@ -953,8 +953,8 @@
    "type": "pip",
    "over": "th",
    "corner": "br",
-   "scale": 0.45,
-   "border": 6
+   "scale": 0.3,
+   "border": 0
   },
   "location_id": "STAIRS",
   "refs": [
@@ -989,8 +989,8 @@
    "type": "pip",
    "over": "th",
    "corner": "br",
-   "scale": 0.45,
-   "border": 6
+   "scale": 0.3,
+   "border": 0
   },
   "location_id": null,
   "refs": [],
@@ -1017,7 +1017,7 @@
    "type": "pip",
    "over": "broll",
    "corner": "bl",
-   "scale": 0.33,
+   "scale": 0.3,
    "border": 0
   },
   "location_id": "LIVING",
@@ -1055,8 +1055,8 @@
    "type": "pip",
    "over": "th",
    "corner": "br",
-   "scale": 0.45,
-   "border": 6
+   "scale": 0.3,
+   "border": 0
   },
   "location_id": "CLINIC",
   "refs": [
