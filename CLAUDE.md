@@ -36,7 +36,8 @@ New build: copy the template to your scratchpad, set its `<title>` to the build 
 
 Sessions end; the build doesn't. What survives: this repo (only what is committed **and** pushed), the build's Generation Board (cards, files, statuses, Fix notes), the Drive folders, and the connector accounts. What doesn't: the old session's conversation, scratchpad and downloaded files.
 
-When the user says "resume build `<id>`" (or pastes its board link):
+When the user says **"resume"** with a Drive link (or a build id, or a board link):
+0. Find the build: take the folder ID from the Drive link and match it against `builds/*/drive.json` (`task.id`, `parent`, or any `output` folder ID) and `builds/*/BUILD_NOTES.md`. The matching folder name is the build id; its board is in the table above. A Drive link that matches no build is a new build, not a resume: run the §18B intake instead. The run mode stays what the build notes say unless the user says otherwise.
 1. Make sure this checkout has the board work — `dashboard/generation_board.html` and this section. If the session started on a branch without them, fetch and merge the branch that has them before anything else.
 2. Read `builds/<id>/BUILD_NOTES.md` (decisions, answers, open items), the build's Build Sheet, and the board: `ArtifactData` `list` of `builds` and `generations` on that build's board. The board is the state: `planned` / `ready` / `generating` / `review` / `use` / `regenerate` per step tells you exactly where the run stopped.
 3. Say in one short message where it stands (per act: images and videos confirmed, waiting, fixing) and the next step, then continue in the same run mode.
