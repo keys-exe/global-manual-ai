@@ -19,9 +19,10 @@ Every generation goes on the build's **Generation Board**. **The board design is
 | Build | Board |
 |---|---|
 | `intake-1` (STRYDE · Identity Callout) | https://claude.ai/artifact/HVPuUcnNK1MUrCYnou9UnJ |
+| `stryde-identity` (STRYDE · Identity Callout, Manual — Drive `1tKlZFjNApDMf5U_q3qFPcRyGZLQsVcwE`) | https://claude.ai/artifact/GKZDjmZkh4wwm7RxtXj7Tp |
 | `demo-ad` (example only, placeholder media) | https://claude.ai/artifact/YK4ReHoWRnqBuXQvCMdHLT |
 
-Fix notes are picked up by the hourly Routine **Generation Board — hourly Fix check** (`trig_017sVxtpxiXnkgRcYbnEnRiB`, every hour at :32 UTC, fires into session_01YP5MM63LLBYRjh8ab8sRwP). It skips cards with `demo: true`. While a Fix is being regenerated, the step's status is `generating`.
+Fix notes are picked up by the hourly Routine **Generation Board — hourly Fix check** (`trig_01AkAtMoRj4zmTuGSkTRApUw`, every hour at :32 UTC, fires into session_019jyz29Da9tQzhkoLnhKTSF). It skips cards with `demo: true`. While a Fix is being regenerated, the step's status is `generating`.
 
 New build: copy the template to your scratchpad, set its `<title>` to the build name, publish it as a new artifact with `capabilities: {db: {}, assets: {}, downloads: true}`, seed `builds/<id>` and its `generations`, and add a row above. To change the design, edit the template and republish it to every board with `url` (keep each board's `<title>`).
 
