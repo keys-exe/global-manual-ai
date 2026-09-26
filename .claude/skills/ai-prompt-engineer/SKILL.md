@@ -53,6 +53,8 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **B-roll length (E6, V7.60.6; amended 2026-09-26).** Every B-roll clip — mechanism and anatomy included — is as long as its time on screen (its cut to the next B-roll's cut, from the voice master's word timestamps) + its 0.4s skipped opening + 0.5s, rounded up, Kling 3–15s — run `assemble.py <plan> --lengths` before any B-roll call, so no clip has to be slowed. Never a fixed 5s/3s. The voice master comes before any B-roll call.
 
+**Natural motion (§27G, 2026-09-26).** Most distortion is motion the model does badly, so ask for less: one action per clip at a countable pace, human motion 3–6s (longer lines → two clips), camera or subject moves never both, safe staging for stairs / turns / sitting / hands / walking at camera, start images caught mid-action, both ends pinned when the product changes angle, the product rigid in every frame, `prefer_multi_shots: false` on every Kling call. The rough cut is 24 fps (Kling's rate). The board gives the user an 8-frame strip, 0.5x and "Use only up to here" (`videoOut` → the plan's `out`).
+
 **Script visual instructions are binding (§27F, V7.61.0).** Every visual note on the script (`VISUAL:`, `B-ROLL:`, `ON SCREEN:`, `SFX:`, `[brackets]`, `(parentheses)`, inline `[notes]`, the visual column of a VO | VISUAL table…) is kept out of the voice but **never dropped**: `script_lines.py --visual` lists them (`VN01`…) anchored to their spoken line, and they open the **Visual Instruction Ledger** at step 2. Step 5 assigns each row to the beat that shows it or the CapCut line that carries it (on-screen text verbatim). Follow it as written, don't substitute your own shot; a row that breaks a higher layer is flagged with the nearest compliant execution. §22V/§22W Q1 check it. Every row ends `verified` or `flagged` — none open at step 8.
 
 **Loom brief (§18C, V7.61.0).** Optional — no Loom, no question. The `LOOM:` link comes beside `DRIVE:`. Run `scripts/fetch_loom.py <BUILD> <link>` (download, timestamped transcript, frames every 5s and at cuts → `loom.md`), read it and the frames, and log each instruction in the ledger as `LMxx`. It never changes a spoken word or overrides a higher layer. Loom vs a written note on the same line: Manual asks; Automatic follows the Loom and flags it. Private Loom → ask for the MP4 in the Drive folder (named `loom`; `fetch_drive.py` sorts it as the Loom, never as an inspo).
@@ -189,6 +191,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 27D. Structural Integrity Standard *(new at V7.48 — unverified, A/B pending)*
 - 27E. Material Failure and Consequence *(new V7.48.9 — visual check pending)*
 - 27F. Script Visual Instructions — binding *(new V7.61.0)*
+- 27G. Natural Motion — what the video model does well *(new 2026-09-26)*
 - 28. Emotional Match Rule (talking heads)
 - 28A. Delivery Field Standard *(locked)*
 - 28B. Gesture Register *(locked)*

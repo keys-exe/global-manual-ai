@@ -2,7 +2,7 @@
 """§30H — place B-roll on its lines, close every hole, render and verify a rough cut.
 
 Usage:
-  assemble.py PLAN.json [--out ROUGH.mp4] [--min-th 1.5] [--lead 0.1] [--skip 0.4] [--dry-run]
+  assemble.py PLAN.json [--out ROUGH.mp4] [--min-th 1.5] [--lead 0.1] [--skip 0.4] [--fps 24] [--dry-run]
   assemble.py PLAN.json --lengths      # before any B-roll call: the length each clip needs (E6)
 
 PLAN.json:
@@ -21,6 +21,10 @@ PLAN.json:
               "peak": 2.1,                    # optional: second in the clip where its action
                                               # peaks — the in-point puts it on the key word
               "in": 0.0,                      # optional: explicit in-point (overrides skip/peak)
+              "out": 2.4,                     # optional: the clip's clean part ends here (the
+                                              # user's "use only up to here"); nothing after it is used
+              "max": 6,                       # optional (--lengths): longest call for this row;
+                                              # default 6s — human motion distorts in longer clips
               "layout": {"type": "full"}}, ... ],     # optional, default full (§42 Part 3A)
   "punch_in": [ {"phrase": "and that's when", "scale": 1.15}, ... ],   # optional
   "th_focus_y": 0.4                            # optional: face height in the TH frame (0-1)
@@ -59,7 +63,8 @@ Rules (§30H):
   4. HOLE    in a voice-only build (base null) every uncovered moment is a hole and
              is closed the same way; an unclosable hole is a FAIL.
   5. FLASH   a B-roll on screen for under 0.8s is a FAIL (too short to read).
-Then renders (1080x1920, 30fps, the master as the only audio) and verifies the
+Then renders (1080x1920 at --fps, default 24 = Kling's native rate, so no frame
+is repeated; the master as the only audio) and verifies the
 render: duration equals the master, no black frames, every cut where the EDL says.
 Prints JSON (EDL, fixes, failures, verification). Exit 0 = PASS, 2 = FAIL.
 
@@ -67,7 +72,8 @@ Prints JSON (EDL, fixes, failures, verification). Exit 0 = PASS, 2 = FAIL.
 For each B-roll: its cut, how long it will be on screen (to the next cut; in a
 talking-head build to its line end unless the gap to the next cut is a flicker),
 and the call duration = on-screen + skip + 0.5s handle, rounded up, Kling 3-15s.
-Over 15s -> SPLIT (two clips, at a word boundary). Sized this way, no clip needs
+Over the row's `max` (default 6s, §27G: one action per clip) -> SPLIT: two clips,
+at a word boundary. Sized this way, no clip needs
 slowing down to close a flicker or hole.
 
 Setup: pip install -q imageio-ffmpeg faster-whisper
@@ -81,7 +87,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from trim import words, duration  # noqa: E402
 
 FF = imageio_ffmpeg.get_ffmpeg_exe()
-FPS = 30
+FPS = 24                     # set from --fps; Kling renders 24 fps
 MIN_SLOW = 0.8
 MIN_FLASH = 0.8
 HANDLE = 0.5                 # E6: seconds of spare footage on every call
@@ -182,7 +188,7 @@ def join_media(root, spec, kind):
                 "".join(f"[a{k}]" for k in range(n)) + f"concat=n={n}:v=0:a=1[o]"
         extra = ["-c:a", "pcm_s16le"]
     else:
-        graph = "".join(f"[{k}:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,setsar=1[v{k}];"
+        graph = "".join(f"[{k}:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps={FPS},setsar=1[v{k}];"
                         for k in range(n)) + "".join(f"[v{k}]" for k in range(n)) + f"concat=n={n}:v=1:a=0[o]"
         extra = ["-c:v", "libx264", "-crf", "16"]
     subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", *ins, "-filter_complex", graph,
@@ -204,7 +210,11 @@ def main():
     ap.add_argument("--lead", type=float, default=0.1, help="cut this many seconds before the anchor word (3 frames)")
     ap.add_argument("--skip", type=float, default=0.4, help="default in-point: skip the clip's static opening")
     ap.add_argument("--lengths", action="store_true", help="print each B-roll's required call duration (E6) and exit")
+    ap.add_argument("--fps", type=int, default=24, help="timeline frame rate; 24 = Kling's native rate (no repeated frames)")
+    ap.add_argument("--max-clip", type=float, default=6.0, help="--lengths: longest call per clip unless the row sets max (§27G)")
     a = ap.parse_args()
+    global FPS
+    FPS = a.fps
 
     root = Path(a.plan).parent
     plan = json.loads(Path(a.plan).read_text())
@@ -255,8 +265,9 @@ def main():
         edl.append({"beat": b["beat"], "clip": str(clip) if clip else None, "phrase": b["phrase"],
                     "key": ws[anchor][2], "layout": lay, "word_t": word_t,
                     "start": snap(max(0.0, word_t - a.lead)), "line_end": snap(line_end(ws, j)),
-                    "in_spec": b.get("in"), "peak": b.get("peak"),
-                    "clip_len": duration(clip) if clip else None, "speed": 1.0})
+                    "in_spec": b.get("in"), "peak": b.get("peak"), "max": b.get("max", a.max_clip),
+                    "clip_len": (min(duration(clip), float(b["out"])) if b.get("out") else duration(clip)) if clip else None,
+                    "speed": 1.0})
     edl.sort(key=lambda e: e["start"])
     for n, e in enumerate(edl):
         # the lead never cuts into the previous clip's first MIN_FLASH seconds
@@ -285,9 +296,10 @@ def main():
             call = max(KLING_MIN, int(-(-need // 1)))
             row = {"beat": e["beat"], "cut_s": e["start"], "anchor": e["key"], "on_screen_s": round(on, 2),
                    "skip_s": round(e["skip"], 2), "call_s": call}
-            if call > KLING_MAX:
-                row["call_s"] = KLING_MAX
-                row["flag"] = f"SPLIT — needs {need:.1f}s; split the phrase into two clips at a word boundary"
+            cap = min(KLING_MAX, e["max"])
+            if call > cap:
+                row["call_s"] = int(cap)
+                row["flag"] = f"SPLIT — needs {need:.1f}s, over {cap:g}s; split the phrase into two clips at a word boundary"
             out.append(row)
         print(json.dumps({"master_s": round(total, 3), "lead_s": a.lead, "skip_s": a.skip,
                           "lengths": out, "failures": fails}, indent=2))
@@ -397,7 +409,7 @@ def main():
     # render: concat of segments, master audio only
     out = Path(a.out) if a.out else root / "rough_cut.mp4"
     focus = float(plan.get("th_focus_y", 0.4))
-    V = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps=30,setsar=1"
+    V = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},setsar=1"
     END = ",setsar=1,format=yuv420p"
     inputs, parts = [], []
 
@@ -411,7 +423,7 @@ def main():
 
     def br_chain(e, dur, w, h):
         src_len = dur * e["speed"]
-        fit = f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps=30,setsar=1"
+        fit = f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps={FPS},setsar=1"
         return (f"[{add(e['clip'])}:v]trim={e['in']}:{e['in'] + src_len},setpts=(PTS-STARTPTS)/{e['speed']},"
                 f"{fit},trim=0:{dur},setpts=PTS-STARTPTS")
 
