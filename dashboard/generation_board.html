@@ -278,6 +278,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .v-detbtn{display:none}
 .v-body{display:grid;grid-template-columns:minmax(0,1fr) 340px;min-height:0}
 .v-col{display:grid;grid-template-rows:auto minmax(0,1fr) auto;min-height:0;min-width:0}
+.v-check{padding-bottom:0}
 /* frame check under a video: 8 frames first to last, half speed, the clean part */
 .v-check{display:flex;flex-direction:column;gap:8px;padding:0 16px 12px;min-width:0}
 .v-frames{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;max-width:560px;width:100%;margin:0 auto}
@@ -291,8 +292,49 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .v-ctl .btn{min-height:32px}
 .viewer .btn.on{background:#8c98ff;border-color:#8c98ff;color:#0b0d12}
 .v-clean{font-family:var(--mono);font-size:12px;background:#1d3a2c;color:#8fe0b4;border:1px solid #2c5a42;border-radius:999px;padding:4px 10px}
+/* checking an image: zoom, compare with the previous version, references beside it */
+.v-under{display:flex;flex-direction:column;gap:10px;min-width:0}
+.v-media.zoomed{aspect-ratio:auto;width:100%;min-width:0;flex:1 1 0;height:100%;overflow:auto;display:block;place-items:normal;cursor:grab;border-radius:12px;background:#000;touch-action:none;scrollbar-width:thin}
+.v-media.zoomed.drag{cursor:grabbing}
+.v-media.zoomed img{justify-self:start;max-width:none;max-height:none;width:auto;height:auto;border-radius:0;box-shadow:none;margin:0}
+.v-media img[data-vzoom]{cursor:zoom-in}
+.v-zoomtag{position:sticky;left:10px;top:10px;float:left;z-index:2;background:rgba(0,0,0,.7);color:#fff;font-family:var(--mono);font-size:11px;border-radius:6px;padding:4px 8px;pointer-events:none}
+.v-cmp{position:relative;width:100%;height:100%;--pos:50%;border-radius:12px;overflow:hidden;background:#000}
+.v-cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;border-radius:0;box-shadow:none;max-width:none;max-height:none}
+.v-cmp img.b{clip-path:inset(0 0 0 var(--pos))}
+.v-cmp .bar{position:absolute;top:0;bottom:0;left:var(--pos);width:2px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.4);pointer-events:none}
+.v-cmp .bar::after{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:30px;height:30px;border-radius:50%;background:#fff;color:#0b0d12;display:grid;place-items:center;font-size:15px;font-weight:700}
+.v-cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.v-cmp .la,.v-cmp .lb{position:absolute;top:10px;background:rgba(0,0,0,.7);color:#fff;font-family:var(--mono);font-size:11px;border-radius:6px;padding:4px 8px;pointer-events:none}
+.v-cmp .la{left:10px}.v-cmp .lb{right:10px}
+.v-media.pair{aspect-ratio:9/8}
+.v-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;height:100%}
+.v-pair figure{margin:0;position:relative;min-height:0;display:flex;flex-direction:column;gap:6px}
+.v-pair figure img{flex:1;min-height:0;width:100%;height:100%;object-fit:contain;max-width:none;max-height:none;background:#000}
+.v-pair figcaption{font-size:11.5px;color:#c9ced8;text-align:center;font-weight:600}
+.v-pair figcaption span{color:#7d8595;font-weight:500}
+.v-refs{display:flex;align-items:center;gap:10px;padding:0 16px 12px;min-width:0;justify-content:center}
+.v-refs .lbl{flex:none;color:#9aa3b2}
+.v-refs .row{display:flex;gap:8px;overflow-x:auto;scrollbar-width:thin;padding:2px;min-width:0}
+.v-ref{flex:none;width:52px;display:flex;flex-direction:column;gap:3px;align-items:center;background:none;border:0;padding:0;color:#9aa3b2;font-size:9.5px;cursor:pointer}
+.v-ref img{width:52px;height:70px;object-fit:cover;border-radius:7px;border:2px solid #2c323e;background:#161a22}
+.v-ref:hover img{border-color:#8c98ff}
+.v-ref[aria-pressed="true"] img{border-color:#e8ebf1}
+.v-ref span{max-width:60px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.viewer .v-tools .btn.small{min-height:36px}
+.v-visual{font-size:13px;line-height:1.5;border-left:3px solid #f3c77a;padding:2px 0 2px 10px;color:#e6dcc4}
+.v-visual b{font-family:var(--mono);font-size:11px;color:#f3c77a;margin-right:4px}
+.v-chk{display:flex;flex-direction:column;gap:6px}
+.v-chk-row{display:grid;grid-template-columns:minmax(0,1fr) 34px 34px;gap:6px;align-items:center;background:#161a22;border:1px solid #242a35;border-radius:9px;padding:6px 6px 6px 10px}
+.v-chk-row b{display:block;font-size:12.5px;color:#e8ebf1}
+.v-chk-row span{display:block;font-size:11px;color:#8a92a1}
+.v-chk-row button{height:30px;border-radius:7px;border:1px solid #333a47;background:#1a1e27;color:#c9ced8;font-weight:700}
+.v-chk-row button[data-on="ok"]{background:#1d8352;border-color:#1d8352;color:#fff}
+.v-chk-row button[data-on="no"]{background:#c23a2e;border-color:#c23a2e;color:#fff}
+.v-chk-all{font-size:12px;color:#8fe0b4}
+.mc-vis{font-size:12.5px;line-height:1.45;border-left:3px solid var(--review);padding:1px 0 1px 8px;color:var(--ink-2,#4a5160)}
 .v-tools{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 16px 0}
-.v-stage{position:relative;min-height:0;display:flex;align-items:center;justify-content:center;padding:14px 64px 16px}
+.v-stage{position:relative;min-height:0;min-width:0;display:flex;align-items:center;justify-content:center;padding:14px 64px 16px}
 .v-media{position:relative;height:100%;max-height:100%;aspect-ratio:9/16;max-width:100%;display:grid;place-items:center}
 .v-media img,.v-media video{max-width:100%;max-height:100%;width:auto;height:auto;border-radius:12px;display:block;background:#000;box-shadow:0 10px 40px rgba(0,0,0,.5)}
 .v-empty{border:1px dashed #333a47;border-radius:12px;width:100%;height:100%;display:grid;place-items:center;color:#9aa3b2;padding:16px;text-align:center}
@@ -1309,6 +1351,7 @@ function mediaCard(g,k){
     <div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}"`} ${asset?`data-viewm="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="View ${d.label.toLowerCase()} for ${esc(g.beat)}"`:""}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>
     <div class="kv"><span class="lbl">Shot</span><span class="mc-t">${esc(g.title||"—")}</span></div>
     ${g.line?`<div class="kv"><span class="lbl">Script line</span><span class="mc-l">“${esc(g.line)}”</span></div>`:""}
+    ${visualNotes(g).length?`<div class="kv"><span class="lbl">Visual note</span>${visualNotes(g).map(n=>`<span class="mc-vis">${n.id?`<b>${esc(n.id)}</b> `:""}${esc(n.text)}</span>`).join("")}</div>`:""}
     <dl class="specs">${specs.map(([a,b,c])=>`<div${c?` class="${c}"`:""}><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
     <details class="pd"><summary><span class="lbl">Prompt</span><span class="pm">${num(prompt.length)} chars${limit?` / <span class="${prompt.length>limit?"over":""}">${num(limit)}</span>`:""}</span></summary>
       <pre class="ptext${prompt?"":" none"}">${prompt?esc(prompt):"Prompt not written yet."}</pre></details>
@@ -1437,6 +1480,27 @@ function viewerList(step){
   const sc=state.viewer&&state.viewer.scope;
   return groups(buildGens()).flatMap(x=>x.items).filter(g=>flow(g).includes(step)&&(!sc||viewScope(g)===sc));
 }
+// what an image must match: the product photos (build.productRefs) and the approved cast / location images named in the card's refs
+function refItems(g,k){
+  const b=currentBuild()||{}, out=[];
+  (Array.isArray(b.productRefs)?b.productRefs:[]).forEach((r,n)=>{if(r&&r.asset) out.push({key:"p"+n,label:r.label||"Product",kind:"Product",asset:r.asset,type:r.type||""})});
+  (Array.isArray(g.refs)?g.refs:[]).forEach(id=>{
+    const x=state.gens.find(y=>y.id===id||y.beat===id); if(!x||!x.imageAsset||x.id===g.id) return;
+    out.push({key:"g:"+x.id,label:x.beat||"",kind:x.stage==="locations"?"Place":x.stage==="cast"?"Person":"Approved",asset:x.imageAsset,parts:x.imageParts,type:x.imageType||""});
+  });
+  if(k==="video"&&g.imageAsset) out.unshift({key:"self",label:"Its image",kind:"Start",asset:g.imageAsset,parts:g.imageParts,type:g.imageType||""});
+  return out;
+}
+// the script's visual note for this beat: a string, or [{id, text}]
+function visualNotes(g){const v=g.visual;if(!v) return [];return Array.isArray(v)?v.map(x=>typeof x==="string"?{text:x}:x).filter(x=>x&&x.text):[{text:String(v)}]}
+const CHECKS=[
+  {key:"line",t:"Shows the line",h:"The moment the script line and visual note describe",fix:"Doesn't show the line: "},
+  {key:"product",t:"Product right",h:"Shape, size, how it's worn, the wordmark",fix:"Product wrong: "},
+  {key:"body",t:"Body whole",h:"Hands, fingers, face, arms and legs",fix:"Body wrong: "},
+  {key:"match",t:"Same person and place",h:"Matches the references below the image",fix:"Doesn't match: "},
+  {key:"move",t:"Ready to move",h:"Caught mid-action, room for the motion, no garbled text",fix:"Won't animate well: "},
+];
+function resetLook(v){v.zoom=false;v.cmp=false;v.ref=null;v.checks={};v.fixDraft=null}
 // the clean part: the user's "use only up to here" for the current video version
 function cleanOut(g,k,shown){return k==="video"&&g.videoOut!=null&&shown&&(g.videoOutV==null||g.videoOutV===shown.v)?Number(g.videoOut):null}
 const frameCache={};
@@ -1473,7 +1537,7 @@ function closeViewer(){if(!state.viewer) return;state.viewer=null;const v=$("#vi
 function moveViewer(dir){
   const v=state.viewer; if(!v) return;
   const list=viewerList(v.step), i=list.findIndex(g=>g.id===v.id);
-  const n=list[(i+dir+list.length)%list.length]; if(n){v.id=n.id;v.ver=null;v.menu=false;v.fix=false;renderViewer()}
+  const n=list[(i+dir+list.length)%list.length]; if(n){v.id=n.id;v.ver=null;v.menu=false;v.fix=false;resetLook(v);renderViewer()}
 }
 function renderViewer(){
   const v=state.viewer; if(!v) return;
@@ -1492,6 +1556,25 @@ function renderViewer(){
   const isAud=type.startsWith("audio/");
   const media=asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
     `<div class="v-empty">${locked?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
+  const isImg=!!asset&&!isVid&&!isAud;
+  const prevV=shown?vers.filter(y=>y.v<shown.v&&y.asset).slice(-1)[0]:null;
+  const refs=asset?refItems(g,k):[], refSel=v.ref&&refs.find(r=>r.key===v.ref);
+  let mediaCls="v-media", stageMedia=media;
+  if(isImg&&v.cmp&&prevV){
+    stageMedia=`<div class="v-cmp"><img class="a" ${srcFrom(prevV.asset,prevV.parts,prevV.type)} alt="v${prevV.v}"><img class="b" ${src} alt="v${shown.v}"><span class="bar"></span>
+      <input type="range" min="0" max="100" value="50" data-vcmpr="1" aria-label="Slide to compare v${prevV.v} and v${shown.v}"><span class="la">v${prevV.v} · before</span><span class="lb">v${shown.v}</span></div>`;
+  } else if(asset&&refSel){
+    mediaCls+=" pair";
+    stageMedia=`<div class="v-pair"><figure>${isVid?media:`<img ${src} alt="">`}<figcaption>${esc(g.beat||"")} <span>v${shown.v}</span></figcaption></figure>
+      <figure><img ${srcFrom(refSel.asset,refSel.parts,refSel.type)} alt=""><figcaption>${esc(refSel.kind)} <span>${esc(refSel.label)}</span></figcaption></figure></div>`;
+  } else if(isImg&&v.zoom){
+    mediaCls+=" zoomed";
+    stageMedia=`<span class="v-zoomtag">100% · drag to look around · click to fit</span><img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`;
+  } else if(isImg){
+    stageMedia=`<img ${src} data-vzoom="1" alt="${esc(g.beat)} ${d.label} v${shown.v}" title="Click to see it at full size">`;
+  }
+  const refsBar=refs.length?`<div class="v-refs"><span class="lbl">Match these</span><div class="row">${refs.map(r=>`<button type="button" class="v-ref" data-vref="${esc(r.key)}" aria-pressed="${v.ref===r.key}" title="${esc(r.kind+" · "+r.label)} — show beside it"><img ${srcFrom(r.asset,r.parts,r.type)} alt="" loading="lazy"><span>${esc(r.kind==="Product"?r.label:r.kind)}</span></button>`).join("")}</div></div>`:"";
+  const lookTools=isImg?`<button class="btn small${v.zoom?" on":""}" type="button" data-vzoom="1" aria-pressed="${!!v.zoom}">🔍 Full size</button>${prevV?`<button class="btn small${v.cmp?" on":""}" type="button" data-vcmp="1" aria-pressed="${!!v.cmp}">⇆ Compare with v${prevV.v}</button>`:""}`:"";
   const s=stepState(g,k);
   const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
   const grp=groupOf(g);
@@ -1533,6 +1616,11 @@ function renderViewer(){
   const panel=`<aside class="v-panel" data-shown="${!!v.details}" aria-label="Details">
       <div class="ps"><span class="lbl">Status</span><div>${chip}${older?` <span class="pill s-planned">Viewing v${shown.v}</span>`:""}</div></div>
       ${g.line?`<div class="ps"><span class="lbl">Script line</span><div class="v-quote">“${esc(g.line)}”</div></div>`:""}
+      ${visualNotes(g).length?`<div class="ps"><span class="lbl">Visual note from the script</span>${visualNotes(g).map(n=>`<div class="v-visual">${n.id?`<b>${esc(n.id)}</b>`:""}${esc(n.text)}</div>`).join("")}</div>`:""}
+      ${canAct&&isImg?`<div class="ps"><span class="lbl">Check it</span><div class="v-chk">${CHECKS.map(c=>{const on=(v.checks||{})[c.key];return `<div class="v-chk-row"><div><b>${c.t}</b><span>${c.h}</span></div>
+          <button type="button" data-vchk="${c.key}:ok" data-on="${on===true?"ok":""}" aria-pressed="${on===true}" aria-label="${c.t}: yes">✓</button>
+          <button type="button" data-vchk="${c.key}:no" data-on="${on===false?"no":""}" aria-pressed="${on===false}" aria-label="${c.t}: no — start a Fix note">✗</button></div>`}).join("")}
+          ${CHECKS.every(c=>(v.checks||{})[c.key]===true)?`<span class="v-chk-all">All five pass — press Confirm</span>`:""}</div></div>`:""}
       ${older?`<div class="v-oldbar">You're looking at v${shown.v}, not the current version.${shown.note?` Fix that made it: ${esc(shown.note)}`:""}</div>`:""}
       ${g[d.fault]&&(s==="bad"||s==="gen")&&!older?`<div class="v-fault"><span class="lbl" style="color:#f07166">${s==="gen"?"Fixing now":"To fix"}</span><div>${esc(g[d.fault])}</div></div>`:""}
       <dl class="v-dl">${rows.map(([a,b,c])=>`<div${c?` class="${c}"`:""}><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
@@ -1568,13 +1656,14 @@ function renderViewer(){
       <div class="v-tools">
         <div class="v-tabs" role="tablist" aria-label="Image or video">${flow(g).map(y=>`<button type="button" class="tab" role="tab" data-vstep="${y}" aria-selected="${y===k}">${STEP[y].label}</button>`).join("")}</div>
         ${verUi}
+        ${lookTools}
       </div>
       <div class="v-stage" data-vclose="">
         ${list.length>1?`<button class="v-nav prev" type="button" data-vnav="-1" aria-label="Previous">${I.l}</button>`:""}
-        <div class="v-media">${media}</div>
+        <div class="${mediaCls}">${stageMedia}</div>
         ${list.length>1?`<button class="v-nav next" type="button" data-vnav="1" aria-label="Next">${I.r}</button>`:""}
       </div>
-      ${checkBar}
+      <div class="v-under">${checkBar}${refsBar}</div>
       </div>
       ${panel}
     </div>
@@ -1583,7 +1672,17 @@ function renderViewer(){
   const mv=el.querySelector(".v-media video");
   if(mv){if(v.rate) mv.playbackRate=v.rate; mv.addEventListener("loadedmetadata",()=>{if(v.rate) mv.playbackRate=v.rate;frameStrip(mv,shown,outV)},{once:true}); if(mv.readyState>=1) frameStrip(mv,shown,outV)}
   const on=el.querySelector('.v-th[aria-current="true"]'); if(on) on.scrollIntoView({block:"nearest",inline:"center"});
-  if(v.fix){const t=el.querySelector("#vfault");if(t){t.value=draft;t.focus()}}
+  if(v.fix){const t=el.querySelector("#vfault");if(t){t.value=v.fixDraft!=null?v.fixDraft:draft;v.fixDraft=null;t.focus();t.setSelectionRange(t.value.length,t.value.length)}}
+  const zm=el.querySelector(".v-media.zoomed");
+  if(zm){
+    const im=zm.querySelector("img");
+    const place=()=>{zm.scrollLeft=Math.max(0,im.naturalWidth*(v.zx??0.5)-zm.clientWidth/2);zm.scrollTop=Math.max(0,im.naturalHeight*(v.zy??0.5)-zm.clientHeight/2)};
+    if(im.complete&&im.naturalWidth) place(); else im.addEventListener("load",place,{once:true});
+    let d0=null;
+    zm.addEventListener("pointerdown",e=>{d0={x:e.clientX,y:e.clientY,l:zm.scrollLeft,t:zm.scrollTop,moved:false};zm.setPointerCapture(e.pointerId);zm.classList.add("drag")});
+    zm.addEventListener("pointermove",e=>{if(!d0) return;const dx=e.clientX-d0.x,dy=e.clientY-d0.y;if(Math.abs(dx)+Math.abs(dy)>4) d0.moved=true;zm.scrollLeft=d0.l-dx;zm.scrollTop=d0.t-dy});
+    zm.addEventListener("pointerup",()=>{const click=d0&&!d0.moved;d0=null;zm.classList.remove("drag");if(click){v.zoom=false;renderViewer()}});
+  }
 }
 async function restoreVersion(g,k,vnum){
   const d=STEP[k], vers=versionsOf(g,k), x=vers.find(y=>y.v===vnum); if(!x||!state.db) return;
@@ -1831,7 +1930,7 @@ function tocJump(i){
 let pickTarget=null;
 document.addEventListener("click",e=>{
   if(!e.target.closest(".vsel")) closeVsel();
-  const t=e.target.closest("[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vzoom],[data-vcmp],[data-vref],[data-vchk],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
   if(ds.apt!==undefined){const a=t.closest(".ap").querySelector("audio");if(a.paused){const p=a.play();if(p&&p.catch) p.catch(()=>toast("Couldn't play this file"))}else a.pause();return}
@@ -1845,20 +1944,28 @@ document.addEventListener("click",e=>{
   if(ds.pact){state.pact=ds.pact;filterPlan(t.closest(".p-sec")||document,"act",ds.pact);return}
   if(ds.psubj){state.psubj=ds.psubj;filterPlan(t.closest(".p-sec")||document,"subj",ds.psubj);return}
   if(ds.pmode){const [k,m]=ds.pmode.split(":");state.pmode[k]=m;render();return}
-  if(ds.vgo){state.viewer.id=ds.vgo;state.viewer.ver=null;state.viewer.menu=false;state.viewer.fix=false;renderViewer();return}
+  if(ds.vgo){state.viewer.id=ds.vgo;state.viewer.ver=null;state.viewer.menu=false;state.viewer.fix=false;resetLook(state.viewer);renderViewer();return}
   if(ds.vdet){state.viewer.details=!state.viewer.details;renderViewer();return}
   if(ds.vfix){state.viewer.fix=ds.vfix==="1";renderViewer();return}
   if(ds.vseek!==undefined){const mv=document.querySelector(".v-media video");if(mv&&t.dataset.t){mv.pause();mv.currentTime=Number(t.dataset.t)}return}
   if(ds.vrate){state.viewer.rate=state.viewer.rate===0.5?1:0.5;const mv=document.querySelector(".v-media video");if(mv) mv.playbackRate=state.viewer.rate;t.classList.toggle("on",state.viewer.rate===0.5);t.setAttribute("aria-pressed",String(state.viewer.rate===0.5));return}
   if(ds.vout){setCleanOut(ds.vout==="set");return}
+  if(ds.vzoom){const v=state.viewer;if(!v.zoom&&t.tagName==="IMG"){const r=t.getBoundingClientRect();v.zx=(e.clientX-r.left)/r.width;v.zy=(e.clientY-r.top)/r.height}else{v.zx=v.zy=0.5}
+    v.zoom=!v.zoom;v.cmp=false;v.ref=null;renderViewer();return}
+  if(ds.vcmp){const v=state.viewer;v.cmp=!v.cmp;v.zoom=false;v.ref=null;renderViewer();return}
+  if(ds.vref){const v=state.viewer;v.ref=v.ref===ds.vref?null:ds.vref;v.zoom=false;v.cmp=false;renderViewer();return}
+  if(ds.vchk){const v=state.viewer,[key,val]=ds.vchk.split(":");v.checks=v.checks||{};
+    if(val==="ok"){v.checks[key]=v.checks[key]===true?undefined:true;renderViewer();return}
+    v.checks[key]=false;const c=CHECKS.find(x=>x.key===key),ta=document.getElementById("vfault"),cur=ta?ta.value.trim():"";
+    v.fixDraft=cur.includes(c.fix.trim())?cur:(cur?cur+"\n":"")+c.fix;v.fix=true;renderViewer();return}
   if(ds.vmenu){state.viewer.menu=!state.viewer.menu;renderViewer();return}
-  if(ds.vpick){state.viewer.ver=Number(ds.vpick);state.viewer.menu=false;renderViewer();return}
+  if(ds.vpick){state.viewer.ver=Number(ds.vpick);state.viewer.menu=false;resetLook(state.viewer);renderViewer();return}
   if(ds.vrestore){const x=state.gens.find(y=>y.id===state.viewer.id);if(x) restoreVersion(x,state.viewer.step,Number(ds.vrestore));return}
   if(state.viewer&&state.viewer.menu&&!e.target.closest(".v-menu")){state.viewer.menu=false;renderViewer()}
   if(ds.sound){const v=document.querySelector(".viewer video");if(v){v.muted=false;v.dataset.sound="1";tryPlay(v)}t.remove();return}
   if(ds.viewm){openViewer(ds.viewm,ds.step)}
   else if(ds.vnav){moveViewer(Number(ds.vnav))}
-  else if(ds.vstep){state.viewer.step=ds.vstep;state.viewer.ver=null;state.viewer.menu=false;renderViewer()}
+  else if(ds.vstep){state.viewer.step=ds.vstep;state.viewer.ver=null;state.viewer.menu=false;resetLook(state.viewer);renderViewer()}
   else if(ds.vclose!==undefined&&(ds.vclose==="x"||e.target===t)){closeViewer()}
   else if(ds.open){closeViewer();const x=state.gens.find(y=>y.id===ds.open);if(x) openDrawer(x,false)}
   else if(ds.add){openDrawer({stage:ds.add,status:"planned"},true)}
@@ -1899,6 +2006,7 @@ $("#picker").addEventListener("change",e=>{const f=e.target.files[0];if(f&&pickT
 ["dragover","dragenter"].forEach(ev=>document.addEventListener(ev,e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(t){e.preventDefault();t.classList.add("drag")}}));
 document.addEventListener("dragleave",e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(t) t.classList.remove("drag")});
 document.addEventListener("drop",e=>{const t=e.target.closest&&e.target.closest("[data-drop]");if(!t) return;e.preventDefault();t.classList.remove("drag");const f=e.dataTransfer.files[0];if(f) uploadTo(t.dataset.drop,t.dataset.step,f)});
+document.addEventListener("input",e=>{if(e.target.dataset&&e.target.dataset.vcmpr){const c=e.target.closest(".v-cmp");if(c) c.style.setProperty("--pos",e.target.value+"%");return}});
 document.addEventListener("input",e=>{if(e.target.id==="search"){state.q=e.target.value;const pos=e.target.selectionStart;render();const s=$("#search");s.focus();s.setSelectionRange(pos,pos)}});
 $("#scrim").addEventListener("click",closeDrawer);
 
