@@ -1044,7 +1044,7 @@ Exception unchanged: mechanism beats, which run the locked register (§12A).
 
 ### Mode 4 — the grade is the build's own *(V7.54.0)*
 
-The no-grade and no-vignette rules above are Mode 1's. In Mode 4 **the grade, palette, contrast and optical fall-off are whatever the Film Look Sheet derives from the inspo and the script** (§24G) — a noir build may run low-key and dark in the corners, a romance soft and warm. Four floors never yield to the look: **one look per film**, so every scene sits in the same family and only the act colour script moves within it (§11); **darkness always has a source**, so a dark corner is falloff from a named light or a lens's optical fall-off, never an applied oval; **skin keeps its texture under the grade**; and **no generated grain**, because grain is added in post (§24G).
+The no-grade and no-vignette rules above are Mode 1's. In Mode 4 **the grade, palette, contrast and optical fall-off are whatever the Film Look Sheet derives from the inspo and the script** (§24G) — the palette and light in the prompt, **the grade in the edit only** (§40) — a noir build may run low-key and dark in the corners, a romance soft and warm. Four floors never yield to the look: **one look per film**, so every scene sits in the same family and only the act colour script moves within it (§11); **darkness always has a source**, so a dark corner is falloff from a named light or a lens's optical fall-off, never an applied oval; **skin keeps its texture under the grade**; and **no generated grain**, because grain is added in post (§24G).
 
 ---
 
@@ -2810,7 +2810,7 @@ Judge the four takes in this order: **(1) every word of the script is present an
 1. **Does it show the line?** Read the beat's phrase (§27B) and its function (§30B). The image must show *that* moment: the right action, the right object, the right emotional register (§30F), the right beat of the story. **Where the line carries a Visual Instruction Ledger row, the image shows that instruction (§27F).** A good image of the wrong moment is a REGENERATE.
 2. **Is the product right?** Shape, colour, placement, orientation, visibility per the Product Sheet (§8, §9, §9D). A wrong product is the most expensive failure in the pipeline.
 3. **Is the body whole?** One head, two arms, two legs, five fingers per visible hand; hidden parts hidden by the frame edge or an object (§27D).
-4. **Does it hold continuity?** Same person as the sheet (§19, §30E), same room as the plate (§30C, §30G), wardrobe for the story day (§14), axis and window side (§30C). **In a scene (§24H), judged in its scene, never alone:** against the master, the previous approved frame in story order and the shot's state-track row — eyes, face, hair, wardrobe state, hands, position, condition. A state that resets or appears without its cause is a REGENERATE, and a continuity fault never ships as "the best of three" (§24H, Automatic — connected).
+4. **Does it hold continuity?** Same person as the sheet (§19, §30E), same room as the plate (§30C, §30G), wardrobe for the story day (§14), axis and window side (§30C). **In a scene (§24H), judged in its scene, never alone:** against the master, the previous approved frame in story order and the shot's state-track row — eyes, face, hair, wardrobe state, hands, position, condition. A state that resets or appears without its cause, **or a colour off the scene's `COLOUR-KEY` and master (§30L, `light_check.py colour`)**, is a REGENERATE, and a continuity fault never ships as "the best of three" (§24H, Automatic — connected).
 5. **Is it the right register?** Mode and capture as locked (§18A, §22A, §22S), 9:16, framing scale (§22F), **the row's angle — height, side and foreground (§30I), not the model's eye-level default — and its focus: the named plane sharp, the depth as written (§30J), and its light: the key on the screen side the light plan gives, the act's light state, eyes catching light, none of the `NEG-LIGHT` tells (§30K)**, no garbled text (§17).
 6. **Will it animate?** It works as the start frame for the motion the beat needs (§6, §27A): room for the move, and the subject not frozen at the end state. **It is caught mid-action** (§27G rule 4): the weight already on one foot, the hand already moving, the head already turning — never a square, frozen pose. On a `pin_end` beat the end image is judged the same way and must match the start image in everything but the travel.
 
@@ -2838,7 +2838,7 @@ The fix is a named change to the prompt: a clause added, a string restated at fu
 2. **Is the product right in every frame?** It must not morph, swap sides, change size or lose its wordmark across the clip (§8, §9). Product drift that starts halfway through is the typical video failure. The first frame passing proves nothing.
 3. **Is the body whole in every frame?** No extra or merged fingers, no limbs passing through objects, no face melt (§27D).
 4. **Is the motion right?** The §27A arc runs and the clip is never at rest at the cut. Camera per §22B. Physics per §27C and §27E. No frozen run over 0.5s unless the beat is a hold. **And §27G:** one action at a real pace (no floaty slow motion, no rushed invented frames), the camera or the subject moves but not both, the product keeps its shape in every frame, and no cut or jump inside the clip. **Focus (§30J):** a focus change lands on its cue and holds, no focus pumping or breathing, faces and the product never drifting soft. **Light (§30K):** no flicker, no pumping exposure, no light or shadow changing across the clip without its cause on screen (`light_check.py clip`).
-5. **Does it hold continuity?** The subject matches the sheet, the room matches the plate, the wardrobe matches the story day, and the axis and screen direction match `GEO-LINE` (§30C, §30E). **In a scene (§24H): the join too** — this clip's true last frame against the next clip's true first frame (same state track, position, props, light), and no state appearing or vanishing inside the clip. **The voice joins too** (§24I part 13): the line sounds like the previous line of the same character unless the VOICE row gives a cause, and it matches the face. Once every clip of a scene passes, the scene is judged as one strip in cut order (`SC-xx · SCENE` verdict).
+5. **Does it hold continuity?** The subject matches the sheet, the room matches the plate, the wardrobe matches the story day, and the axis and screen direction match `GEO-LINE` (§30C, §30E). **In a scene (§24H): the join too** — this clip's true last frame against the next clip's true first frame (same state track, position, props, light), and no state appearing or vanishing inside the clip. **The colour joins too** (§30L): the clip's colours match its frame and its scene (`light_check.py colour`). **The voice joins too** (§24I part 13): the line sounds like the previous line of the same character unless the VOICE row gives a cause, and it matches the face. Once every clip of a scene passes, the scene is judged as one strip in cut order (`SC-xx · SCENE` verdict).
 6. **Is it technically clean?** 9:16, the stated duration (E6), no black frames, no garbled on-screen text, and no cut inside the clip unless the beat is MULTI-SHOT (§29).
 7. **Is there enough footage for its slot?** The clip covers its §30H slot at 1.0x, or at no slower than 0.8x. Otherwise it is REGENERATE at a longer duration.
 
@@ -3415,7 +3415,7 @@ Mode 4 has no house look. **The kind of film — its grade, palette, glass, ligh
 | 2 | **CAMERA AND GLASS** | The camera package from the §24G library (camera body and format, lens family, spherical or anamorphic), the focal length for each shot scale, the stop, and the depth-of-field policy by shot scale and where focus changes are used (§30J) | `CAM-FILM` |
 | 3 | **LIGHT** | How light is motivated, hard or soft key, key-to-fill ratio, how practicals are used, the time-of-day plan by scene, and the light arc by act (§30K) | `LIGHT-FILM` |
 | 4 | **PALETTE** | The dominant colours of the sets and wardrobe, and the colour script by act | `LOOK-[BUILD]`, §14A wardrobe |
-| 5 | **GRADE** | Shadow tint, highlight tint, saturation, contrast curve, how skin is held | `LOOK-[BUILD]` **and** the CapCut LUT |
+| 5 | **GRADE** | Shadow tint, highlight tint, saturation, contrast curve, how skin is held | **The edit only** — the CapCut LUT (§40). Never in a prompt |
 | 6 | **OPTICAL TEXTURE** | Highlight roll-off, halation, lens softness | `LOOK-[BUILD]`, `CAP-FILM` |
 | 7 | **MOTION** | Which F-rigs this film uses, how fast the moves are, the cutting rhythm (average shot length from the inspo), the camera script by act (§24K), and the angles used by act (§30I) | Scene Bibles, `RIG-F*` |
 | 8 | **PERFORMANCE** | Acting register — how big, how still, how much is said under the line | §28 settings below |
@@ -3461,11 +3461,11 @@ The camera is half of it; the other half is what is in front of it, and generato
 
 ### Finishing — the delivery master
 
-Generation stays at 720p (§4, locked, user decision — confirmed 2026-09-27: "720p cause we only gonna watch it on phones"). The feature finish happens once, in post, on the **picture-locked cut only** — never on unused clips, in three steps (user, 2026-09-27: "the 1, 2 and 4 i want that"): **1. exposure and white balance matched scene by scene → 2. the one LUT → 3. the grain pass at the Look Sheet's size, across the whole film.** **No upscale** — the film is exported at its native 720×1280, and no paid upscaler (`upscale_video`, §5) is used unless the user asks. `FILM-CAPCUT` carries the order.
+Generation stays at 720p (§4, locked, user decision — confirmed 2026-09-27: "720p cause we only gonna watch it on phones"). **The finish is an edit step — §40, colour grade in the edit only:** on the picture-locked cut, 1. match each clip to its scene master, 2. the one LUT, 3. the grain pass (user, 2026-09-27: "the 1, 2 and 4 i want that"), exported at native 720×1280 with no upscale and no paid upscaler unless the user asks.
 
 ### Prompt versus post — the split that keeps 50 clips matching
 
-A generated grade and generated grain differ in every clip. So the prompt carries only what a generator does well and post cannot fake: **lens, depth of field, light, composition, movement and performance**, plus the grade described so that the seeds and references already sit in the look. **The edit then applies one LUT and one grain pass to the whole film**, so every shot matches by construction. **Grain is never generated** (`NEG-FILM`): it would boil differently in every clip.
+A generated grade and generated grain differ in every clip. So the prompt carries only what a generator does well and post cannot fake: **lens, depth of field, light, composition, movement and performance**, and the real colours in front of the camera (`COLOUR-KEY`, §30L) in natural, neutral colour. **The grade never enters a prompt** (2026-09-27, user): **the edit applies one LUT and one grain pass to the whole film** (§40), so every shot matches by construction. **Grain is never generated** (`NEG-FILM`): it would boil differently in every clip.
 
 ### Floors that never yield to the look
 
@@ -3541,6 +3541,7 @@ A scene is a maximal run of beats in one location in continuous story time. In M
 | **Emotion map** | Per character: ENTRY state · OBJECTIVE (what they want from the other person) · TURN (the line and what causes it) · EXIT state · SUBTEXT (what they feel and do not say) — §24I |
 | **Shot list** | Master, singles, reverses and inserts, each with its beat ID, shot scale, rig, duration, and each character's emotion at that moment (EMO, read off the map); per shot also its one action and pace (§27G), the speaker's PLAYING verb and each character's business (§24I parts 10–11), and its cut cue (§24K) |
 | **Camera plan** | The rig per shot and why, read off the emotion map; the tightest scale placed on the turn (§24K) |
+| **Colour key** | The scene's colours read off its master — light colour, set, wardrobe, accent, in-camera saturation — compiled into `COLOUR-KEY` (§30L) |
 | **State track** | Per character per shot, in story order: eyes, face, hair, wardrobe state, hands, position, condition — carried until a shot shows the cause changing it (§24H, the state track) |
 | **Image list** | Every image the scene needs before any video — the inputs it reuses and the frames it generates, counted (§24H, the scene image list) |
 | **Delivery route** | Single-shot beats, or MULTI-SHOT (§29) |
@@ -3551,7 +3552,7 @@ A scene is a maximal run of beats in one location in continuous story time. In M
 1. **The master frame first.** The widest shot in the scene, with everyone placed where they will stay. **It is the source of every other shot, close-ups included** (2026-09-27): each is a new render built against it (`SCENE-KEY`), never a crop of it beyond a 1.3× punch-in, because a face that fills a tenth of a 9:16 wide goes soft blown up. So the master is locked only when it holds everything its close-ups will copy: every face readable (three-quarter or better, nothing across it), every worn detail and business prop visible in its starting state, the product unambiguous where it appears, and the light side clear on every face. It attaches the location plate (and the property plate for a dwelling), every character sheet in the scene, and the product reference if the product appears. It opens with `SCENE-MASTER`. Checked on the §5 first-frame habit plus the §24G items, then **locked as the scene's key**.
 2. **Coverage frames against the master.** Every other frame in the scene attaches the master as its first reference and opens with `SCENE-KEY`: same room, same moment, same light side, same look, same wardrobe, same prop positions, a new camera position on the same side of the action line, and the eyeline pointed at whoever is off frame.
 3. **Chained frames on continuing action.** Where a shot continues the action of the one before it (a match on action), it also attaches the approved previous frame and adds `CHAIN-FRAME`, naming only what has changed.
-4. **The contact sheet.** Before any video is generated for a scene, every frame on its image list is laid side by side in shot order and checked as one: light from the same side, same look, same wardrobe, same prop states, **every character's state track held shot to shot (no tears, flush, loose hair, rolled sleeve or held prop appearing or vanishing without its cause)**, axis held, eyelines matching across reverses, same time of day, and **every character's expression progressing along the emotion map in story order, never resetting between shots**. Any frame that fails is rerolled against the master. **Only a passed contact sheet releases the scene to video.**
+4. **The contact sheet.** Before any video is generated for a scene, every frame on its image list is laid side by side in shot order and checked as one: light from the same side, **the same colours throughout — `light_check.py colour` against the master, no flag unexplained (§30L)**, same look, same wardrobe, same prop states, **every character's state track held shot to shot (no tears, flush, loose hair, rolled sleeve or held prop appearing or vanishing without its cause)**, axis held, eyelines matching across reverses, same time of day, and **every character's expression progressing along the emotion map in story order, never resetting between shots**. Any frame that fails is rerolled against the master. **Only a passed contact sheet releases the scene to video.**
 
 ### The scene image list — every image the scene needs, before any video *(2026-09-27)*
 
@@ -3634,7 +3635,7 @@ Each single-shot beat animates its own approved frame (I2V, §6), and **no clip 
 
 ### Assembly — Mode 4 T2I
 
-`CAM-FILM` → `SCENE-MASTER` or `SCENE-KEY` (+ `CHAIN-FRAME` / `SCENE-BRIDGE` where they apply) → `FILM-FRAME` → `PROD-DEPTH` → subject, `WARD-LINE`, `BODY-WHOLE`, `EMO-SEED`, `STATE-CARRY` → the §22S stack on MEDIUM and tighter → `REF-PROD` / `PROP-REF` + `PROP-SHELL` / `SUBJ-REF` / `FACE-SEED` as they apply → `LIGHT-FILM` → `LOOK-[BUILD]` → `PHYS-FRAME-C` → `CAP-FILM` → negatives carrying `NEG-FILM` + `NEG-SCENECUT` + `NEG-BODY` + `NEG-SKIN` + `NEG-TEX` + scene, property and product negatives.
+`CAM-FILM` → `SCENE-MASTER` or `SCENE-KEY` (+ `CHAIN-FRAME` / `SCENE-BRIDGE` where they apply) → `FILM-FRAME` → `PROD-DEPTH` → subject, `WARD-LINE`, `BODY-WHOLE`, `EMO-SEED`, `STATE-CARRY` → the §22S stack on MEDIUM and tighter → `REF-PROD` / `PROP-REF` + `PROP-SHELL` / `SUBJ-REF` / `FACE-SEED` as they apply → `LIGHT-FILM` → `LOOK-[BUILD]` → `COLOUR-KEY` → `PHYS-FRAME-C` → `CAP-FILM` → negatives carrying `NEG-FILM` + `NEG-SCENECUT` + `NEG-BODY` + `NEG-SKIN` + `NEG-TEX` + scene, property and product negatives.
 
 **Absent:** `CAM-LOCK`, `CAM-FRONT`, `CAP-A`, `CAP-FILE`, `CAP-SHARP`, `NEG-M1`, `NEG-FILE`, `NEG-FINISH`, `NEG-FRAME`, `NEG-STAGED`, `BROLL-REAL`, `LIGHT-EVENT`, and every `FRAME-*` block.
 
@@ -3794,7 +3795,7 @@ The §24G sheet with three fields changed. It is derived the same way: the inspo
 | 2 | **VIRTUAL CAMERA** | The focal length for each shot scale, the depth-of-field policy, and how the camera behaves |
 | 3 | LIGHT | Motivation, key quality and colour, fill colour and ratio, time-of-day plan |
 | 4 | PALETTE | Dominant colours of sets and wardrobe, and the colour script by act |
-| 5 | GRADE | Shadow colour, highlight colour, saturation, contrast |
+| 5 | GRADE | Shadow colour, highlight colour, saturation, contrast — **applied in the edit only (§40), never in a prompt** |
 | 6 | **DESIGN AND MATERIALS** | Shape language, proportions, and how stylized skin, hair, fabric and surfaces are |
 | 7 | **MOTION AND ANIMATION STYLE** | F-rigs used and their speed, cutting rhythm, the camera script by act (§24K), and animation timing: how snappy or naturalistic, how much squash and stretch (never on the product) |
 | 8 | PERFORMANCE | How big the acting is, and how much sits under the line |
@@ -3818,7 +3819,7 @@ Unchanged from §24: animated film reads as family content. On an adult-buyer ad
 
 ### Assembly — Mode 5 T2I
 
-`CAM-ANIM` → `SCENE-MASTER` or `SCENE-KEY` (+ `CHAIN-FRAME` / `SCENE-BRIDGE`) → `FILM-FRAME` → `PROD-DEPTH` → each character's `PIX-SHAPE` fill from their sheet, `WARD-LINE`, `BODY-WHOLE`, `EMO-SEED`, `STATE-CARRY` → `PIX-EYES` → `REF-PROD` + `PIX-SPLIT` / `PROP-REF` + `PROP-SHELL` / `SUBJ-REF` as they apply → `LIGHT-ANIM` → `LOOK-[BUILD]` → `PHYS-FRAME-C` → `CAP-ANIM` → negatives carrying `NEG-PIX` + `NEG-ANIMFILM` + `NEG-SCENECUT` + `NEG-DRAMA` + `NEG-BODY` + scene, property and product negatives.
+`CAM-ANIM` → `SCENE-MASTER` or `SCENE-KEY` (+ `CHAIN-FRAME` / `SCENE-BRIDGE`) → `FILM-FRAME` → `PROD-DEPTH` → each character's `PIX-SHAPE` fill from their sheet, `WARD-LINE`, `BODY-WHOLE`, `EMO-SEED`, `STATE-CARRY` → `PIX-EYES` → `REF-PROD` + `PIX-SPLIT` / `PROP-REF` + `PROP-SHELL` / `SUBJ-REF` as they apply → `LIGHT-ANIM` → `LOOK-[BUILD]` → `COLOUR-KEY` → `PHYS-FRAME-C` → `CAP-ANIM` → negatives carrying `NEG-PIX` + `NEG-ANIMFILM` + `NEG-SCENECUT` + `NEG-DRAMA` + `NEG-BODY` + scene, property and product negatives.
 
 **Absent:** `CAM-LOCK`, `CAM-FILM`, `CAP-A`, `CAP-FILE`, `CAP-FILM`, `LIGHT-FILM`, `PIX-LIGHT` (replaced by `LIGHT-ANIM`), the §22S skin stack, every `FRAME-*` block, `NEG-M1` and `NEG-FILM`.
 
@@ -5588,6 +5589,41 @@ A rim light on everyone in a room with no window behind them · skin glowing · 
 
 ---
 
+## 30L. Scene Colour Lock — every shot of a scene the same colours *(new 2026-09-27, user: "one strict thing the colors of a scene all of them should be consistent")*
+
+**Scope: every scene, all modes** — a Mode 4/5 scene (§24H), or in Modes 1–3 a capture event (E8): one place, one continuous time. **Strict: a shot whose colours do not match its scene is never animated and never cut in.** The grade itself is not here — it is applied in the edit (§40); this section makes sure the edit receives shots that already match, so the grade does not have to rescue them.
+
+### 1. The colour key — written once per scene, pasted on every shot
+
+At step 5 each scene gets a **colour key**, read off its approved master frame (or, in Modes 1–3, the location plate and the day's outfit rows), and compiled into `COLOUR-KEY`:
+
+| Field | Content |
+|---|---|
+| **Light colour** | The key's colour and warmth in plain words (cool grey window daylight, warm tungsten lamp) — from the light plan (§30K) |
+| **Set colours** | The walls, the floor, the two or three largest objects, by name and colour (sage-green cupboards, pale oak table, white tiles) |
+| **Wardrobe colours** | Each person's outfit colours for the story day (§14A) |
+| **Accent** | The one or two colours the scene is built around, if any (a red mug, the product) |
+| **Saturation and contrast in camera** | How strong the colours are before any grade (muted, natural, rich) |
+
+`COLOUR-KEY` goes **verbatim, identical, on every T2I of the scene** — a paraphrase is a colour drift. The **master frame is the colour reference**: attached first on every coverage frame (§24H), and it is what the instrument measures against.
+
+### 2. The checks — strict, by instrument and by eye
+
+1. **Frames, before any video:** `light_check.py colour --ref <master> <frames…>` — warmth, green–magenta tint, saturation and brightness against the master. Any flag → the frame is regenerated against the master with `COLOUR-KEY` restated, **before** any video is spent on it (§22X). A flag on a frame filled by one key object (a red jumper in close-up) is read by eye against the key; if the key explains it, the reason is logged and it passes.
+2. **Clips, after generation:** the same command on each clip (averaged over one frame per second) — a clip that drifts off its frame's colours is a §22W Q5 fault.
+3. **The contact sheet** (§24H) is read for colour first: walls, wardrobe, skin and light the same colour in every shot.
+4. **In the edit, after the grade:** the same command on the scene's graded clips against the graded master shot — the grade must not have split them apart.
+
+**Manual:** the agent runs the instrument and puts any flag on the board card as a note for the user's check; it does not judge the frame itself (§16A). **Automatic:** a colour flag is `SCENE_BREAK` (E2) — never shipped as best-of-three. *(Thresholds unverified — tuned on the first build; tightened, never loosened, without the user.)*
+
+### 3. Across scenes
+
+Scenes may differ — that is the colour script by act (§11, Look Sheet field 4) and the light arc (§30K) — but **only at a scene boundary**, never inside one. A TIME CUT (§24H) is where the colour may change.
+
+**NORMATIVE — `COLOUR-KEY` — see Appendix A.**
+
+---
+
 ## 34. Correction Protocol
 
 When the user flags a problem with a specific shot:
@@ -5797,6 +5833,15 @@ After each prompt, a short editor note outside the code block. Practical and sho
 Flag: retention beats, micro-hooks, CTA positions, supplied-asset cut-ins, permitted pair-pack duplicate shots, **every pause the script calls for** (§17), **every post-only camera move the beat implies but cannot generate** (§22B), **the ambient audio bed for that location** (§22C), **the named/generic line pair on any beat naming a real platform** (§10A), **the cover point on any talking head that will be partly covered** (§31), **the tail-cut point on any escalating mechanism beat** (§12A), **any claim carrying a §43A qualification**, **the trim point after the final word on every talking-head beat** (§28G), **the build's designed-silence list by ID** (§28G), **the framing step-in on any uncovered-mouth claim line** (§28F), and **the sync triage lines — check at closure + stress word, offset-slip permitted, drift = reissue** (§28H), on any Mode 4 build **`FILM-CAPCUT`'s standing lines**, on any Mode 5 build **`ANIM-CAPCUT`'s** (V7.55.1), and on any Mode 3 build **`CLAY-CAPCUT`'s standing lines — posterize to 12fps, no stabilisation, no denoise, no frame-blend** (§24F).
 
 **Edit grammar (§42 Part 3A, V7.63.0).** Every `EDIT-[BUILD]` device on its beat: the layout (with its fields, where the user assembles by hand), punch-ins, transitions, speed ramps, caption style, text overlays and SFX, each with its `EG` ID. The block opens with `EDIT-[BUILD]` in one short list so the editor sees the reference's grammar before the beats.
+
+**Colour grade — in the edit only** *(2026-09-27, user: "the color grades should be on the edit section")*. The grade is an edit step, never a prompt: every image and clip is generated with natural, neutral colour — the set, wardrobe and light colours that really exist (`COLOUR-KEY`, §30L) — and the edit grades the whole build at once, so every shot matches by construction. The CapCut block (§18 step 8) carries it, in this order, on the picture-locked cut only:
+
+1. **Match** — each clip matched to its scene's master shot in exposure and white balance, scene by scene; one adjustment per scene applied identically to all its clips, never a shot graded on its own. Then `light_check.py colour` on the scene's matched clips (§30L).
+2. **Grade** — Modes 4 and 5: the one LUT from the Look Sheet (field 5: shadow tint, highlight tint, saturation, contrast curve, how skin is held) across the whole film; the §12A mechanism render takes a matched contrast and black-level pass, never the LUT's colour shift. Mode 1: no creative grade (§12) — the match only.
+3. **Grain** — Mode 4 only: one pass at the Look Sheet's size across the whole film. Never generated, never per clip.
+4. **Export** — native 720×1280 for Seedance builds, no upscale (§24G finishing).
+
+`FILM-CAPCUT` and `ANIM-CAPCUT` carry the lines.
 
 **Visual instructions (§27F, V7.61.0).** Every Visual Instruction Ledger row carried by the edit is a CapCut line: its ledger ID (`VNxx` / `LMxx`), the spoken line it lands on, and the instruction — on-screen text **verbatim**, SFX, music, cut, zoom, pause. The CapCut block closes with the ledger count: `§27F: n rows · n carried · n flagged · 0 open`.
 
@@ -7554,13 +7599,17 @@ no rim light without a source behind the subject, no glowing skin, no halo or bl
 ```
 no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject
 ```
+**`COLOUR-KEY`** — every T2I of a scene, all modes, verbatim and identical across the scene (§30L). Modes 4–5 after `LOOK-[BUILD]`; Modes 1–3 after the Location Profile. **Never paraphrased.** *(283)*
+```
+THE COLOURS OF THIS SCENE, exactly as in the attached master frame: the light is [LIGHT COLOUR]; [SET COLOURS]; [WHO] wears [WARDROBE COLOURS]; [ACCENT]. Colours are [SATURATION AND CONTRAST IN CAMERA], natural and ungraded. No colour in this shot differs from the rest of the scene.
+```
 **`CAM-FILM`** — opens every Mode 4 T2I. `[CAMERA AND FORMAT]`, `[LENS FAMILY]`, `[COLOUR SCIENCE]` from the §24G camera package (Look Sheet field 2); `[FOCAL]` and `[STOP]` by shot scale from the package table; `[RIG]` in plain words. Replaces `CAM-LOCK`. *(443)*
 ```
 Photographed as a single frame from a US feature film, shot on [CAMERA AND FORMAT] with [LENS FAMILY] at [FOCAL]mm and [STOP], 24 frames per second with a 180-degree shutter, in [COLOUR SCIENCE] colour, the camera on [RIG] and operated by a feature crew who framed and lit this moment on purpose. A still lifted from the finished film, not a photograph and not a phone video, composed natively for a vertical 9:16 frame with no letterbox bars.
 ```
-**`LOOK-PATTERN`** — template for `LOOK-[BUILD]`, compiled from Look Sheet fields 1, 4, 5 and 6 and pasted verbatim on every Mode 4 T2I. **Never paraphrased.** *(346)*
+**`LOOK-PATTERN`** — template for `LOOK-[BUILD]`, compiled from Look Sheet fields 1, 4 and 6 and pasted verbatim on every Mode 4 T2I. **Never paraphrased. Carries no grade** — field 5 is applied in the edit (§40). *(348)*
 ```
-THE LOOK OF THIS FILM: [GENRE AND REFERENCE, one plain sentence]. [PALETTE: the dominant colours of the sets and wardrobe]. [GRADE: shadow tint, highlight tint, saturation, contrast curve]. [OPTICAL TEXTURE: highlight roll-off, halation, lens softness]. [SKIN IN THIS GRADE: how skin tone sits]. Every frame of this film shares exactly this look.
+THE LOOK OF THIS FILM: [GENRE AND REFERENCE, one plain sentence]. [PALETTE: the dominant colours of the sets and wardrobe]. [OPTICAL TEXTURE: highlight roll-off, halation, lens softness]. Captured with natural, neutral colour and a gentle contrast, ungraded — the grade is added later in the edit. Every frame of this film shares exactly this look.
 ```
 **`CAP-FILM`** — `[HIGHLIGHT BEHAVIOUR]` from Look Sheet field 6. Replaces `CAP-A` and `CAP-FILE`. **The texture-under-the-grade sentence is never trimmed.** *(533)*
 ```
@@ -7578,9 +7627,9 @@ The frame is composed by a camera operator. The subject is placed deliberately o
 ```
 The set is dressed and layered like a feature production: [FOREGROUND ELEMENT] soft in the near foreground, [WHO] in the middle ground, and the room continuing in depth behind them, lived-in, with its own practicals lit. Real surfaces with age and use, and clothes with weave and wear. Nobody stands against a flat wall.
 ```
-**`INHERIT-FILM`** — I2V `lighting`, every Mode 4 clip. *(281)*
+**`INHERIT-FILM`** — I2V `lighting`, every Mode 4 clip. *(283)*
 ```
-The look exactly as in the start frame: same lens, same depth of field, same grade, same light direction and same optical texture. Nothing about the look changes across the clip. 24 frames per second with a 180-degree shutter, so moving hands and objects carry natural motion blur.
+The look exactly as in the start frame: same lens, same depth of field, same colours, same light direction and same optical texture. Nothing about the look changes across the clip. 24 frames per second with a 180-degree shutter, so moving hands and objects carry natural motion blur.
 ```
 **`AUD-FILM`** — replaces `AUD-A` in Mode 4 `delivery`. *(316)*
 ```
@@ -7590,25 +7639,25 @@ Audio is clean production sound from a boom microphone just out of frame above t
 ```
 SCENE [ID] MASTER FRAME: the establishing shot of this scene, and the reference every other shot in the scene is built against. [LOCATION] at [TIME OF DAY], [LIGHT STATE]. Everyone in the scene is in frame and placed where they will stay: [BLOCKING, in room terms]. The action line runs [AXIS], and the camera sits on the [SIDE] of it. Every prop is in its starting position: [PROP STATES].
 ```
-**`SCENE-KEY`** — opens every coverage frame; the scene master is attached as the first reference. **The nothing-has-changed sentence is never trimmed.** *(459)*
+**`SCENE-KEY`** — opens every coverage frame; the scene master is attached as the first reference. **The nothing-has-changed sentence is never trimmed.** *(461)*
 ```
-THE SAME SCENE as the attached scene master frame: the same room, the same moment in the story, the same light from the same side, the same grade, the same wardrobe and the same prop positions. Nothing has changed and nothing has moved. This is a [SHOT SCALE] of [WHO], taken from [CAMERA POSITION, in action-line terms], on the same side of the action line as the master. [WHO IS OFF FRAME and where they are, so this character's eyeline points toward them].
+THE SAME SCENE as the attached scene master frame: the same room, the same moment in the story, the same light from the same side, the same colours, the same wardrobe and the same prop positions. Nothing has changed and nothing has moved. This is a [SHOT SCALE] of [WHO], taken from [CAMERA POSITION, in action-line terms], on the same side of the action line as the master. [WHO IS OFF FRAME and where they are, so this character's eyeline points toward them].
 ```
 **`STATE-CARRY`** — every Mode 4 and Mode 5 frame and clip with a person in it, filled from the shot's state-track row (§24H). On a frame after `EMO-SEED`; on a clip it closes `motion`. **Never trimmed.** *(296)*
 ```
 [NAME] still carries exactly what this scene has done to them so far: [STATE: eyes, face, hair, wardrobe state, what each hand holds, where they are]. None of it resets: it is the same as in the previous shot, except [WHAT HAS VISIBLY CHANGED, and its cause, or nothing]. It holds in every frame.
 ```
-**`CHAIN-FRAME`** — added on a frame that continues the action of the one before it; the previous approved frame is attached. *(261)*
+**`CHAIN-FRAME`** — added on a frame that continues the action of the one before it; the previous approved frame is attached. *(263)*
 ```
-This frame continues directly from the attached previous frame: the same action a moment later. [WHAT HAS CHANGED]. Everything else is exactly as it was: the same light, the same grade, the same wardrobe, and the same position for everything that has not moved.
+This frame continues directly from the attached previous frame: the same action a moment later. [WHAT HAS CHANGED]. Everything else is exactly as it was: the same light, the same colours, the same wardrobe, and the same position for everything that has not moved.
 ```
 **`SCENE-BRIDGE`** — opens the first frame of a scene joined by MATCH CUT or CONTINUOUS; the last approved frame of the previous scene is attached. *(330)*
 ```
 This is the first frame of the next scene. It connects to the end of the previous scene through [TRANSITION: a matched shape, a matched action, the same object, or the same place later], so that [WHAT CARRIES ACROSS] reads straight through the cut. Since the previous scene, [WHAT HAS CHANGED: time, light, wardrobe, prop states].
 ```
-**`NEG-SCENECUT`** — every Mode 4 frame and clip inside a scene. *(531)*
+**`NEG-SCENECUT`** — every Mode 4 frame and clip inside a scene. *(548)*
 ```
-no light direction changing within the scene, no grade changing between shots, no wardrobe changing within the scene, no prop moving between shots unless shown moving, no character changing position between shots, no camera crossing the action line, no eyeline pointing the wrong way, no time of day changing within the scene, no different room, no extra people, no missing people, no tears, redness or sweat appearing or vanishing between shots, no hair or clothing state resetting between shots, no prop jumping to the other hand
+no light direction changing within the scene, no colour changing between shots, no graded look, no wardrobe changing within the scene, no prop moving between shots unless shown moving, no character changing position between shots, no camera crossing the action line, no eyeline pointing the wrong way, no time of day changing within the scene, no different room, no extra people, no missing people, no tears, redness or sweat appearing or vanishing between shots, no hair or clothing state resetting between shots, no prop jumping to the other hand
 ```
 **`RIG-F1`** — dolly push. `[DISTANCE]` 20–40 for a single, 60 or more for a reveal. **Only on a still subject** (§24K). *(396)*
 ```
@@ -7665,9 +7714,9 @@ no phone camera look, no smartphone processing, no HDR tone-mapping, no flat lif
 ```
 A single frame from a finished 3D animated feature film, rendered through a virtual camera emulating [VIRTUAL PACKAGE] with a [FOCAL]mm lens and [DEPTH OF FIELD], 24 frames per second with a 180-degree shutter, the camera placed and moved by a layout artist who framed this moment on purpose. A final render from the film, not concept art, not a storyboard, not a game and not a toy, composed natively for a vertical 9:16 frame with no letterbox bars.
 ```
-**`LOOK-ANIM-PATTERN`** — template for a Mode 5 `LOOK-[BUILD]`. **Never paraphrased.** *(365)*
+**`LOOK-ANIM-PATTERN`** — template for a Mode 5 `LOOK-[BUILD]`. **Never paraphrased. Carries no grade** (§40). *(390)*
 ```
-THE LOOK OF THIS FILM: [GENRE AND REFERENCE, one plain sentence]. [DESIGN: the shape language and proportions of the characters]. [MATERIALS: how stylized skin, hair, fabric and surfaces are]. [PALETTE: the dominant colours of the sets and wardrobe]. [GRADE: shadow colour, highlight colour, saturation, contrast]. Every frame of this film shares exactly this look.
+THE LOOK OF THIS FILM: [GENRE AND REFERENCE, one plain sentence]. [DESIGN: the shape language and proportions of the characters]. [MATERIALS: how stylized skin, hair, fabric and surfaces are]. [PALETTE: the dominant colours of the sets and wardrobe]. Rendered with natural, balanced colour, ungraded — the grade is added later in the edit. Every frame of this film shares exactly this look.
 ```
 **`CAP-ANIM`** — the render block. Replaces `CAP-FILM`. *(489)*
 ```
@@ -7708,13 +7757,13 @@ INSERT: the product alone, filling the middle of the frame, [WHERE IT IS: restin
 ```
 Without a cut, [NAME]'s [REGION] turns gently see-through, as if the film is letting us look inside: a simplified [TARGET] and [BONES], modelled in this film's own shapes and materials and softly lit from within. [THE SENSATION: the behaviour from the §12A sensation library, in warm colour at [SITE]]. The product, where it is worn, stays solid and real on the outside of the limb and visibly does its job. Clear, friendly and easy to read, never medical and never frightening.
 ```
-**`FILM-CAPCUT`** — CapCut instruction for every Mode 4 build (§40). Never a prompt. *(722)*
+**`FILM-CAPCUT`** — CapCut instruction for every Mode 4 build (§40). Never a prompt. *(850)*
 ```
-Standing film-mode lines: match exposure and white balance scene by scene first · then one LUT from the Look Sheet across every clip · one grain pass at the Look Sheet's size and strength across the whole film, never per clip · export at native 720×1280, no upscale (§24G finishing) · halation only if field 6 calls for it · the §12A render takes a matched contrast and black-level pass, never the LUT's colour shift · no stabilisation on shoulder shots · sound in layers: dialogue, one continuous room tone per scene, foley for steps, doors, cups and cloth, score only where the Scene Bible marks it, ducked under dialogue · J and L cuts on dialogue across picture cuts · time cards and captions in the film's type style.
+Standing film-mode lines (the grade lives here, never in a prompt, §40): match each clip to its scene master in exposure and white balance, one adjustment per scene, then `light_check.py colour` on the scene · then one LUT from the Look Sheet across every clip · one grain pass at the Look Sheet's size and strength across the whole film, never per clip · export at native 720×1280, no upscale (§24G finishing) · halation only if field 6 calls for it · the §12A render takes a matched contrast and black-level pass, never the LUT's colour shift · no stabilisation on shoulder shots · sound in layers: dialogue, one continuous room tone per scene, foley for steps, doors, cups and cloth, score only where the Scene Bible marks it, ducked under dialogue · J and L cuts on dialogue across picture cuts · time cards and captions in the film's type style.
 ```
-**`ANIM-CAPCUT`** — CapCut instruction for every Mode 5 build (§40). Never a prompt. *(358)*
+**`ANIM-CAPCUT`** — CapCut instruction for every Mode 5 build (§40). Never a prompt. *(467)*
 ```
-Standing Mode 5 lines: match exposure scene by scene · the Look Sheet LUT only if field 5 calls for one · no grain and no halation · sound in layers: studio dialogue, room tone per scene, foley, score only where the Scene Bible marks it, ducked under dialogue · J and L cuts on dialogue across picture cuts · time cards and captions in the film's type style.
+Standing Mode 5 lines (the grade lives here, never in a prompt, §40): match each clip to its scene master, one adjustment per scene, then `light_check.py colour` · the Look Sheet LUT only if field 5 calls for one · no grain and no halation · sound in layers: studio dialogue, room tone per scene, foley, score only where the Scene Bible marks it, ducked under dialogue · J and L cuts on dialogue across picture cuts · time cards and captions in the film's type style.
 ```
 
 ## Negatives
@@ -8257,7 +8306,7 @@ Every generated batch ships its QA table alongside the prompts — the reconcili
 | IMAGE_REGENERATE | §22V verdict | regenerate with the named fix | 2 per fault | HUMAN — three versions and the verdict history |
 | CLIP_REGENERATE | §22W verdict | diagnose (frame, prompt or motion) → fix it at the source → preflight (§22X) → **one** regeneration | **1 per shot** (two generations in all, §22X) | keep the clean part (`out`) if it covers the slot, else the `SCENE_BREAK` cover route; never a third call without the user |
 | PREFLIGHT_FAIL | `preflight.py` FAIL, a frame-readiness risk, or an unprevented risk (§22X) | fix the prompt, the frame or the staging; re-run preflight | until PASS | none — no credit is spent until it passes |
-| SCENE_BREAK | §22V Q4 / §22W Q5 in a scene (§24H): a state-track, position, prop, light or voice fault against the neighbours or at a join | regenerate with `STATE-CARRY` restated and the state reference attached → the frame as an edit of the previous approved frame → cut the shot and cover it with an approved neighbour | 2, then the edit route once | none — never shipped as best-of-three; the cut is logged in *Flags* |
+| SCENE_BREAK | §22V Q4 / §22W Q5 in a scene (§24H): a state-track, position, prop, light, colour or voice fault against the neighbours or at a join | regenerate with `STATE-CARRY` restated and the state reference attached → the frame as an edit of the previous approved frame → cut the shot and cover it with an approved neighbour | 2, then the edit route once | none — never shipped as best-of-three; the cut is logged in *Flags* |
 | NEED_LONGER | §30H: a clip cannot fill its slot at ≥ 0.8x | regenerate that clip at the duration its slot needs | 2 | HUMAN |
 | IMAGE_FALLBACK | Higgsfield balance < image batch cost | route that batch and every later image batch to Kie AI (§5) | — | none — logged, not a stop |
 
@@ -8433,6 +8482,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | 2026-09-27 | **Camera focus** (user: "camera focuses too"). New §30J: every B-roll and film row names its focus plane, depth and any focus change; always sharp: the nearest eye on a face, the product on a product beat, the hands on a hands beat; depth by mode and scale (phones deep, shallow only within ~30cm; film shallow from CU in); never shallow on WIDE/FULL or on more than two thirds of a group; focus changes as storytelling — one per clip, on a cue, still subject and camera; film pulls cleanly, Mode 1 taps to focus (clean rack stays banned); limits for moving subjects, faces, product, hands and text; `FOCUS-LINE`; checked by `angles.py`, `preflight.py`, §22V Q5, §22W Q4 | §30J (new), §22B focus hunt, §22V Q5, §22W Q4, §24G field 2, §18 step 5, §42 Part 3A, E4, Appendix A (`FOCUS-LINE` new), `scripts/angles.py`, `scripts/preflight.py`, both skills | Written; cut pending |
 | 2026-09-27 | **Lighting — light plan, continuity, story** (user: "lighting too"). New §30K: a light plan per location in room terms (sources, sun path, key by time, fill) — each shot's screen key side derived from the camera position, so varied angles (§30I) keep the window where it is; camera placed for the light (window 30–60° off axis for faces; never behind the camera on a face; backlight only with a reason); one light state per scene, time only forward, no light change inside a clip without a cause; a light arc by act inside each mode's register (Mode 1 stays daylight, never moody); eyes catch light, no glowing skin, product highlight, hands in light; generator tells banned (`NEG-LIGHT`, `NEG-LIGHT-C`); `LIGHT-SHOT`; checked by `angles.py`, `light_check.py` (new), §22V Q5, §22W Q4 | §30K (new), §22A profiles, §22V Q5, §22W Q4, §24G field 3, §18 step 5, §42 Part 3A, E4, Appendix A (`LIGHT-SHOT`, `NEG-LIGHT`, `NEG-LIGHT-C` new), `scripts/angles.py`, `scripts/light_check.py` (new), both skills | Written; cut pending |
 | 2026-09-27 | **US feature camera packages and production value** (user: "the movie styles uses cameras for movies like US movies i want the same quality"). §24G camera package library by genre (ARRI Alexa 35 / Mini LF / 65, Sony Venice 2, 35mm Kodak Vision3 on ARRICAM; Cooke S4/i, Zeiss Supreme / Master / Ultra Primes, ARRI Signature, Panavision Primo and anamorphic), focal and stop by shot scale, 24fps with a 180-degree shutter, colour science named; one package per film; `CAM-FILM` rewritten, `INHERIT-FILM` shutter; production value — layers in depth, dressed set, costume texture, blocking in depth — `PROD-DEPTH` new; the feature finish in post on the locked cut: match → LUT → grain, exported at native 720×1280 with no upscale (user: "the 1, 2 and 4 i want that"; 720p confirmed for phone viewing); Mode 5 virtual camera package (`CAM-ANIM`); first-frame check fails the TV look | §24G, §24J, Appendix A (`CAM-FILM`, `INHERIT-FILM`, `CAM-ANIM`, `FILM-CAPCUT`, `NEG-LIGHT` note, `PROD-DEPTH` new), both skills | Written; cut pending |
+| 2026-09-27 | **Grade in the edit only; strict scene colour lock** (user: "the color grades should be on the edit section and one strict thing the colors of a scene all of them should be consistent"). §40: the grade is an edit step — match to the scene master → LUT → grain → native export; never in a prompt; `LOOK-PATTERN` / `LOOK-ANIM-PATTERN` lose the grade and state neutral, ungraded colour; `INHERIT-FILM`, `SCENE-KEY`, `CHAIN-FRAME`, `NEG-SCENECUT` hold colours, not a grade. New §30L: a colour key per scene read off its master, `COLOUR-KEY` verbatim on every shot, the master as colour reference; `light_check.py colour` (new mode: warmth, tint, saturation, brightness against the master) on frames before video, on clips, and on graded clips in the edit; a colour flag is `SCENE_BREAK` in Automatic, a board note in Manual; colour changes only at a scene boundary | §40, §30L (new), §24G (field 5, prompt vs post, finishing), §24J field 5, §12, §24H (Scene Bible, contact sheet, assembly), §22V Q4, §22W Q5, E2, Appendix A (`COLOUR-KEY` new, `LOOK-PATTERN`, `LOOK-ANIM-PATTERN`, `INHERIT-FILM`, `SCENE-KEY`, `CHAIN-FRAME`, `NEG-SCENECUT`, `FILM-CAPCUT`, `ANIM-CAPCUT`), `scripts/light_check.py`, both skills | Written; cut pending |
 ---
 
 # OPEN DECISIONS

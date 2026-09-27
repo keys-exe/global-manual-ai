@@ -1,9 +1,18 @@
 #!/usr/bin/env python3
-"""§30K — light continuity by instrument.
+"""§30K / §30L — light and colour continuity by instrument.
 
 Usage:
-  light_check.py scene FRAME1.png FRAME2.png ... [--json]    # a scene's approved frames, in shot order
-  light_check.py clip CLIP.mp4 [--json]                      # one clip
+  light_check.py scene FRAME1.png FRAME2.png ... [--json]              # a scene's approved frames, in shot order
+  light_check.py colour --ref MASTER.png FRAME_OR_CLIP ... [--json]    # §30L strict scene colour lock
+  light_check.py clip CLIP.mp4 [--json]                                # one clip
+
+colour: every frame (or clip — averaged over one frame per second) against the scene's master frame:
+        warmth ±0.04, tint (green–magenta) ±0.04, saturation ±15%, luminance ±12% — any breach flags.
+        Palette distance (colour histogram, 0 = identical) is reported, never failed: a close-up legitimately
+        holds different colours from the wide master. A flag on a frame filled by one COLOUR-KEY object
+        (a red jumper in close-up) is read by eye against the key before any regeneration (§30L). Run on the approved frames before any
+        video, on each clip after generation, and on the scene's clips in the edit after the grade.
+        (Thresholds unverified — tuned on the first build; tighten, never loosen, without the user.)
 
 scene: per frame, mean luminance, warmth (R−B balance) and which half of the frame is brighter.
        Flags a frame whose luminance or warmth jumps from the scene's median — a relit shot
@@ -39,6 +48,41 @@ def stats(img):
             "bright_side": "L" if l > r * 1.08 else "R" if r > l * 1.08 else "even"}
 
 
+def colour_stats(img):
+    r, g, b = img[..., 0], img[..., 1], img[..., 2]
+    luma = 0.2126 * r + 0.7152 * g + 0.0722 * b
+    mx, mn = img.max(axis=-1), img.min(axis=-1)
+    sat = np.where(mx > 0, (mx - mn) / np.maximum(mx, 1e-3), 0)
+    q = np.clip((img * 7.999).astype(int), 0, 7)
+    hist = np.bincount((q[..., 0] * 64 + q[..., 1] * 8 + q[..., 2]).ravel(), minlength=512).astype(np.float64)
+    return {"luma": float(luma.mean()), "warmth": float(r.mean() - b.mean()),
+            "tint": float(g.mean() - (r.mean() + b.mean()) / 2), "sat": float(sat.mean()), "hist": hist / hist.sum()}
+
+
+def load_mean(path):
+    fr = frames(path, fps=1 if not path.lower().endswith((".png", ".jpg", ".jpeg", ".webp")) else None)
+    st = [colour_stats(f) for f in fr]
+    out = {k: float(np.mean([x[k] for x in st])) for k in ("luma", "warmth", "tint", "sat")}
+    out["hist"] = np.mean([x["hist"] for x in st], axis=0)
+    return out
+
+
+def colour(ref, paths):
+    R = load_mean(ref)
+    rows, flags = [], []
+    for p in paths:
+        S = load_mean(p)
+        dist = float(0.5 * np.abs(S["hist"] - R["hist"]).sum())
+        row = {"frame": p, "warmth": round(S["warmth"] - R["warmth"], 4), "tint": round(S["tint"] - R["tint"], 4),
+               "sat": round((S["sat"] - R["sat"]) / max(R["sat"], 1e-3), 3),
+               "luma": round((S["luma"] - R["luma"]) / max(R["luma"], 1e-3), 3), "palette": round(dist, 3)}
+        rows.append(row)
+        for k, lim in (("warmth", 0.04), ("tint", 0.04), ("sat", 0.15), ("luma", 0.12)):
+            if abs(row[k]) > lim:
+                flags.append({"frame": p, "flag": k.upper(), "detail": f"{row[k]:+} (limit ±{lim}) vs master"})
+    return {"ref": ref, "frames": rows, "flags": flags}
+
+
 def scene(paths):
     rows = [{"frame": p, **stats(frames(p)[0])} for p in paths]
     ml, mw = median(r["luma"] for r in rows), median(r["warmth"] for r in rows)
@@ -67,19 +111,24 @@ def clip(path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("what", choices=["scene", "clip"])
+    ap.add_argument("what", choices=["scene", "clip", "colour"])
     ap.add_argument("paths", nargs="+")
+    ap.add_argument("--ref")
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
-    res = scene(a.paths) if a.what == "scene" else clip(a.paths[0])
+    if a.what == "colour" and not a.ref:
+        ap.error("colour needs --ref <the scene's master frame>")
+    res = scene(a.paths) if a.what == "scene" else colour(a.ref, a.paths) if a.what == "colour" else clip(a.paths[0])
     if a.json:
         print(json.dumps(res, indent=1))
     else:
         for r in res.get("frames", []) if a.what == "scene" else []:
             print(f"{r['frame']}: luma {r['luma']}  warmth {r['warmth']}  brighter {r['bright_side']}")
+        for r in res.get("frames", []) if a.what == "colour" else []:
+            print(f"{r['frame']}: warmth {r['warmth']:+}  tint {r['tint']:+}  sat {r['sat']:+}  luma {r['luma']:+}  palette {r['palette']}")
         for f in res["flags"]:
             print(f"FLAG  {f['flag']:8} {f.get('frame', '')} {f['detail']}")
-        print("LIGHT PASS" if not res["flags"] else f"LIGHT FLAGS ({len(res['flags'])})")
+        print(("COLOUR" if a.what == "colour" else "LIGHT") + (" PASS" if not res["flags"] else f" FLAGS ({len(res['flags'])})"))
     sys.exit(1 if res["flags"] else 0)
 
 
