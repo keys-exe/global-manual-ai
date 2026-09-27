@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""§30I / §30J — camera angle range and focus: check an act map (or a scene's shot list).
+"""§30I / §30J / §30K — camera angle range, focus and light: check an act map (or a scene's shot list).
 
 Usage:
   angles.py ROWS.json [--json]
@@ -19,7 +19,12 @@ ROWS.json is a list of shot/beat rows in cut order (talking heads may be include
     "focus": {"plane": "eyes" | "hands" | "product" | "foreground" | "background" | "deep",
               "dof": "deep" | "medium" | "shallow",
               "rack": null | {"from": "...", "to": "...", "cue": "the word or moment", "kind": "pull" | "tap"},
-              "moving_subject": false}}               # the subject travels toward or away from the lens
+              "moving_subject": false},               # the subject travels toward or away from the lens
+    "story_day": 2,
+    "face": true,                                     # a face is a subject of the shot
+    "light": {"source": "kitchen window, east wall", "key_side": "L" | "R" | "back" | "front",
+              "time": "morning" | "midday" | "afternoon" | "evening" | "night",
+              "arc": "the act's light state", "why": "reason for a backlit or 90° key"}}
   ...]
 
 Checks (any FAIL → exit 1):
@@ -32,6 +37,8 @@ Checks (any FAIL → exit 1):
   FOCUS    (§30J) missing focus plane or depth; shallow on WIDE/FULL; a product beat not focused on the product;
            a rack with no cue, on a travelling or moving shot, or a clean pull in Mode 1 (phones tap to focus);
            shallow on a subject travelling in depth; more than two thirds of a group shallow (the blurred-everything look)
+  LIGHT    (§30K) missing light; a flat frontal key on a face; a backlit face with no `why` (never while speaking in
+           Mode 1); no light state for the act; time going backwards inside a story day
 Talking heads (TH), POV and CCTV rows are seed- or mount-locked and skipped (§30A rules 6–7, §22E).
 """
 import argparse, json, sys
@@ -94,6 +101,30 @@ def main():
             if int(r.get("mode", 1)) == 1 and rk.get("kind") != "tap":
                 fail("FOCUS", [r["beat"]], "Mode 1 focus changes are a phone tap-to-focus, never a clean pull")
 
+    ORDER = ["morning", "midday", "afternoon", "evening", "night"]
+    last_time = {}
+    for r in rows:
+        L = r.get("light")
+        if not L:
+            fail("LIGHT", [r.get("beat")], "no light")
+            continue
+        for k in ("source", "key_side", "time", "arc"):
+            if not L.get(k):
+                fail("LIGHT", [r["beat"]], f"light {k} missing")
+        if r.get("face") and L.get("key_side") == "front":
+            fail("LIGHT", [r["beat"]], "flat frontal key on a face")
+        if r.get("face") and L.get("key_side") == "back":
+            if not L.get("why"):
+                fail("LIGHT", [r["beat"]], "backlit face with no reason")
+            if int(r.get("mode", 1)) == 1 and r.get("type") in ("TH", "SHOT") and r.get("speaking"):
+                fail("LIGHT", [r["beat"]], "backlit speaking face in Mode 1")
+        day, t = r.get("story_day"), L.get("time")
+        if day is not None and t in ORDER:
+            if day in last_time and ORDER.index(t) < ORDER.index(last_time[day][0]):
+                fail("LIGHT", [last_time[day][1], r["beat"]], f"time goes back on story day {day}: {last_time[day][0]} → {t}")
+            if day not in last_time or ORDER.index(t) >= ORDER.index(last_time[day][0]):
+                last_time[day] = (t, r["beat"])
+
     groups = defaultdict(list)
     for r in rows:
         groups[r.get("group", "?")].append(r)
@@ -116,7 +147,7 @@ def main():
         for f in out:
             print(f"FAIL  {f['check']:8} {', '.join(map(str, f['beats']))}  — {f['detail']}")
         print("setups: " + ", ".join(f"{k} ×{v}" for k, v in sorted(dist.items(), key=lambda x: -x[1])))
-        print("ANGLES & FOCUS PASS" if not out else f"ANGLES & FOCUS FAIL ({len(out)})")
+        print("ANGLES, FOCUS & LIGHT PASS" if not out else f"ANGLES, FOCUS & LIGHT FAIL ({len(out)})")
     sys.exit(1 if out else 0)
 
 

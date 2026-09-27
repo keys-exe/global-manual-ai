@@ -1954,7 +1954,7 @@ Every step carries a class:
 | 2 | **Absorb script, product, Product Sheet — and lock mode and model** | DET | The `.md` + `.py` pair, created where absent. §43A claims pass — every figure tiered before anything builds against it. **The phrase inventory is built here** (§27B): a mechanical pass over the script as written. **The Visual Instruction Ledger is opened here (§27F)** — every visual note on the script and every Loom instruction (§18C), each anchored to its spoken line. **The Mode & Model Lock is written here (§18A)** — mode per act, image model per beat class, read off what the script demands. Every other lock resolved here — camera, format, tools, mechanism claim, declared side. |
 | 3 | **Cast — everyone who recurs** | DET *(render dependency)* → **HG** *(Manual)* | **Every subject with two or more beats on the step-2 inventory** — the narrator, every named side character, **and every anonymous B-roll subject who recurs** (`S-01`, `S-02`…) — gets a full §19 reference sheet — one prose generation, 9:16, no reference — passed through the §19 panel check before it is attached anywhere. Identity strings locked from what rendered, never from what was prompted (§7 applied to our own output). Ships per sheet: §19A axis table with clearance counts; **speaking characters additionally** get `VOICE-[CHAR]` roster-cleared and a full §20 constraint sheet. One-off subjects are not sheeted (§13). **Sent, then straight on** — **in Manual (V7.62.0) the agent generates and checks every sheet itself, then stops: the avatars are the user's decision, and step 4 waits for the user's go** (§18B) |
 | 4 | **Property and location maps** | DET | The §30C Location Derivation Pass over the step-2 phrase inventory, **opening with channel C0 — which locations are rooms of one dwelling.** Where two or more are, the **Property Sheet is written and its property plate generated and checked first (§30G)**, before any location plate is built against it. Five-part Location Sheets, §22A lighting profiles reconciled to the property's orientation, plates rendered for **PLATED locations only** — never for INCIDENTAL or **TRAVERSED** ones (§30C 1a), both of which still carry the property plate where they are interiors of the dwelling. Four set-level checks run. **The location set closes here.** **Sent, then straight on** |
-| 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; **every Visual Instruction Ledger row assigned to the beat or CapCut line that carries it (§27F)**; **every B-roll row given its `layout`, and every punch-in, transition and caption device its line, from `EDIT-[BUILD]` (§42 Part 3A)**; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims. **Automatic (V7.60.7): written only after every step-3 sheet and step-4 plate has passed E1**, with identity strings and plate facts read off the renders; B-roll `duration` is `pending-master` until the voice master exists (E4, E6). **Every B-roll and film row carries its `angle`, `why` and `focus`, and `angles.py` passes before the map is approved (§30I, §30J)** |
+| 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; **every Visual Instruction Ledger row assigned to the beat or CapCut line that carries it (§27F)**; **every B-roll row given its `layout`, and every punch-in, transition and caption device its line, from `EDIT-[BUILD]` (§42 Part 3A)**; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims. **Automatic (V7.60.7): written only after every step-3 sheet and step-4 plate has passed E1**, with identity strings and plate facts read off the renders; B-roll `duration` is `pending-master` until the voice master exists (E4, E6). **Every B-roll and film row carries its `angle`, `why`, `focus` and `light`, and `angles.py` passes before the map is approved (§30I–§30K)** |
 | 6 | **Hooks, one by one** | AC → **HG** | Serial: deliver → generate → first-frame check (§5/§30C/§30E) → confirm → next. Seeds built against plates that already exist. Confirmed renders feed the Scene and Subject Registries as they land. **The second gate** in Manual, after the step-3 avatar review; in Automatic the agent confirms (E0) |
 | 7 | **B-roll and body acts** | DET | Executing step 5's dispositions in the §30E assembly order — motion arc first, start frame derived, plates attached, strings by register, model routed. `TH`-carried lines get no cutaway on purpose. **A beat whose line carries a visual instruction executes that instruction (§27F).** Each act delivery ends on its §27B reconciliation line and its §27F ledger line |
 | 8 | **CapCut block** | DET | Cover points, J-cuts, designed-silence list, sync triage, motion-graphics layer, supplied-asset cut-ins, **every on-screen text, SFX, music and edit instruction from the Visual Instruction Ledger, verbatim** (§40, §27F) — last and separate. **Every `EDIT-[BUILD]` device the rough cut does not render — cutouts, cards, transitions, speed ramps, captions, overlays, SFX — on its line with its `EG` ID** (§42 Part 3A) |
@@ -2447,7 +2447,7 @@ What the camera lock removes is only the cinema *lighting* vocabulary — shaped
 
 **Daylight is the default class (V7.28).** Unless a beat's script explicitly places it at night or by a lamp, its location takes a daylight profile: whole-room coverage, open shadows, blow point at the window, no pooling. Evening profiles are written only where a practical is visibly in frame, and only once per build (§12). **Daylight is the default class for the room, never for a face (V7.49.5):** on any Mode 1 beat where a face is the subject the key is a hard directional event (§22T `LIGHT-EVENT`) regardless of the room's profile; the profile continues to govern the room's palette, blow point and continuity.
 
-**Where the location is a room of the build's dwelling, its key direction is not chosen — it follows the property's orientation (§30G field 4).** Two rooms on the same side of the house share a key direction and a time-of-day behaviour; two on opposite sides differ because they face differently. A profile written against taste rather than against the floor map puts the sun on two sides of one building, and no per-beat clause recovers it.
+**Where the location is a room of the build's dwelling, its key direction is not chosen — it follows the property's orientation (§30G field 4).** **The key is fixed in room terms by the location's light plan (§30K); the profile's *camera-left* holds only for the camera position it was written for, and every other angle takes its screen side from the plan.** Two rooms on the same side of the house share a key direction and a time-of-day behaviour; two on opposite sides differ because they face differently. A profile written against taste rather than against the floor map puts the sun on two sides of one building, and no per-beat clause recovers it.
 
 **Profile library is Build Sheet content**, written per build against its locations. Under §30C each profile is part five of the full Location Sheet — geometry, fixed dressing and anchors, loose props, palette, then the lighting profile. Seven patterns live in Appendix A as format models: `LOC-LIVING-DAY` **(the default)**, `LOC-KITCHEN-MORN`, `LOC-KITCHEN-DAY`, `LOC-EXT-SUN` *(visually confirmed)*, `LOC-EXT-OVERCAST`, `LOC-BATHROOM` *(unverified)*, and `LOC-LIVING-EVE` — the once-per-build evening exception.
 
@@ -2811,7 +2811,7 @@ Judge the four takes in this order: **(1) every word of the script is present an
 2. **Is the product right?** Shape, colour, placement, orientation, visibility per the Product Sheet (§8, §9, §9D). A wrong product is the most expensive failure in the pipeline.
 3. **Is the body whole?** One head, two arms, two legs, five fingers per visible hand; hidden parts hidden by the frame edge or an object (§27D).
 4. **Does it hold continuity?** Same person as the sheet (§19, §30E), same room as the plate (§30C, §30G), wardrobe for the story day (§14), axis and window side (§30C). **In a scene (§24H), judged in its scene, never alone:** against the master, the previous approved frame in story order and the shot's state-track row — eyes, face, hair, wardrobe state, hands, position, condition. A state that resets or appears without its cause is a REGENERATE, and a continuity fault never ships as "the best of three" (§24H, Automatic — connected).
-5. **Is it the right register?** Mode and capture as locked (§18A, §22A, §22S), 9:16, framing scale (§22F), **the row's angle — height, side and foreground (§30I), not the model's eye-level default — and its focus: the named plane sharp, the depth as written (§30J)**, no garbled text (§17).
+5. **Is it the right register?** Mode and capture as locked (§18A, §22A, §22S), 9:16, framing scale (§22F), **the row's angle — height, side and foreground (§30I), not the model's eye-level default — and its focus: the named plane sharp, the depth as written (§30J), and its light: the key on the screen side the light plan gives, the act's light state, eyes catching light, none of the `NEG-LIGHT` tells (§30K)**, no garbled text (§17).
 6. **Will it animate?** It works as the start frame for the motion the beat needs (§6, §27A): room for the move, and the subject not frozen at the end state. **It is caught mid-action** (§27G rule 4): the weight already on one foot, the hand already moving, the head already turning — never a square, frozen pose. On a `pin_end` beat the end image is judged the same way and must match the start image in everything but the travel.
 
 ### The verdict line — shipped for every image
@@ -2837,7 +2837,7 @@ The fix is a named change to the prompt: a clause added, a string restated at fu
 1. **Does it show the line?** The clip performs the beat's phrase and function (§27B, §30B), in the right emotional register (§30F), **and carries out every Visual Instruction Ledger row assigned to it (§27F)**.
 2. **Is the product right in every frame?** It must not morph, swap sides, change size or lose its wordmark across the clip (§8, §9). Product drift that starts halfway through is the typical video failure. The first frame passing proves nothing.
 3. **Is the body whole in every frame?** No extra or merged fingers, no limbs passing through objects, no face melt (§27D).
-4. **Is the motion right?** The §27A arc runs and the clip is never at rest at the cut. Camera per §22B. Physics per §27C and §27E. No frozen run over 0.5s unless the beat is a hold. **And §27G:** one action at a real pace (no floaty slow motion, no rushed invented frames), the camera or the subject moves but not both, the product keeps its shape in every frame, and no cut or jump inside the clip. **Focus (§30J):** a focus change lands on its cue and holds, no focus pumping or breathing, faces and the product never drifting soft.
+4. **Is the motion right?** The §27A arc runs and the clip is never at rest at the cut. Camera per §22B. Physics per §27C and §27E. No frozen run over 0.5s unless the beat is a hold. **And §27G:** one action at a real pace (no floaty slow motion, no rushed invented frames), the camera or the subject moves but not both, the product keeps its shape in every frame, and no cut or jump inside the clip. **Focus (§30J):** a focus change lands on its cue and holds, no focus pumping or breathing, faces and the product never drifting soft. **Light (§30K):** no flicker, no pumping exposure, no light or shadow changing across the clip without its cause on screen (`light_check.py clip`).
 5. **Does it hold continuity?** The subject matches the sheet, the room matches the plate, the wardrobe matches the story day, and the axis and screen direction match `GEO-LINE` (§30C, §30E). **In a scene (§24H): the join too** — this clip's true last frame against the next clip's true first frame (same state track, position, props, light), and no state appearing or vanishing inside the clip. **The voice joins too** (§24I part 13): the line sounds like the previous line of the same character unless the VOICE row gives a cause, and it matches the face. Once every clip of a scene passes, the scene is judged as one strip in cut order (`SC-xx · SCENE` verdict).
 6. **Is it technically clean?** 9:16, the stated duration (E6), no black frames, no garbled on-screen text, and no cut inside the clip unless the beat is MULTI-SHOT (§29).
 7. **Is there enough footage for its slot?** The clip covers its §30H slot at 1.0x, or at no slower than 0.8x. Otherwise it is REGENERATE at a longer duration.
@@ -3413,7 +3413,7 @@ Mode 4 has no house look. **The kind of film — its grade, palette, glass, ligh
 |---|---|---|---|
 | 1 | **GENRE AND REFERENCE** | What kind of film this is, in one sentence | `LOOK-[BUILD]` |
 | 2 | **CAMERA AND GLASS** | Camera body, lens family (spherical or anamorphic), the focal length for each shot scale, the stop, and the depth-of-field policy by shot scale and where focus changes are used (§30J) | `CAM-FILM` |
-| 3 | **LIGHT** | How light is motivated, hard or soft key, key-to-fill ratio, how practicals are used, and the time-of-day plan by scene | `LIGHT-FILM` |
+| 3 | **LIGHT** | How light is motivated, hard or soft key, key-to-fill ratio, how practicals are used, the time-of-day plan by scene, and the light arc by act (§30K) | `LIGHT-FILM` |
 | 4 | **PALETTE** | The dominant colours of the sets and wardrobe, and the colour script by act | `LOOK-[BUILD]`, §14A wardrobe |
 | 5 | **GRADE** | Shadow tint, highlight tint, saturation, contrast curve, how skin is held | `LOOK-[BUILD]` **and** the CapCut LUT |
 | 6 | **OPTICAL TEXTURE** | Highlight roll-off, halation, lens softness | `LOOK-[BUILD]`, `CAP-FILM` |
@@ -5476,6 +5476,74 @@ A focus change moves the viewer's attention **without moving the camera**, so it
 
 ---
 
+## 30K. Lighting — the light plan, continuity and story *(new 2026-09-27, user: "lighting too")*
+
+**Scope: every beat with a location, all modes.** The register of the light stays where it is — §12 and §22A for Mode 1 (natural, even daylight, no moody grade), §24G `LIGHT-FILM` and §24J `LIGHT-ANIM` for the films, §12A for mechanism. This section adds what those do not hold: **where the light is in the room as the camera moves, how it holds across cuts, how it moves with the story, and what a generator gets wrong.**
+
+### 1. The light plan — light belongs to the room, not to the camera
+
+Location Profiles write the key as *camera-left*. That is only true for one camera position: once the angle changes (§30I), the window has not moved but the screen side has. So each location's sheet (§30C, step 4) adds a **light plan**, fixed in **room terms**:
+
+| Field | Content |
+|---|---|
+| **Sources** | Every window (wall, size, what it looks onto), door and practical (lamp, TV, extractor light), each on the room's floor map |
+| **Sun path** | Which windows take direct sun at which time of day — from the property's orientation (§30G field 4) |
+| **Key by time** | The key source and its quality for each time of day the build uses there |
+| **Fill and bounce** | What fills the shadow side (a pale wall, a floor, a second window) |
+
+**Each shot's key side is derived, never chosen:** from the camera's position in the room (§30I side), the plan gives where the key falls **on screen** — and that is what goes into the prompt (`[SIDE]` in `LIGHT-FILM`, `LIGHT-ANIM` or `LIGHT-SHOT`). A reverse angle legitimately flips the key to the other screen side; the light has not changed, the camera has.
+
+**Pick the camera position for the light, too:**
+
+| Window relative to the camera | Result | Use |
+|---|---|---|
+| **Beside the camera, 30–60° off axis** | a lit side and a shadow side on the face | **the default for faces** |
+| **To the subject's side, 90°** | half the face in shadow | tension, a hard moment (film; Mode 1 only with open fill) |
+| **Behind the camera** | flat frontal light | never on a face (§22A) — objects only |
+| **Behind the subject, in frame** | backlit, the face dark against a blown window | a silhouette on purpose, with a `why`; never on a speaking face in Mode 1 |
+| **Film, two people facing each other** | light each from the far side of their face (the side away from camera) | the film default: shape on every face in the reverse pair |
+
+### 2. The light holds across cuts
+
+- **One light state per scene or capture event** (§24H, E8): same source, same side of the room, same time, same warmth. `NEG-SCENECUT` holds it in film; in Mode 1 the Location Profile and the plan hold it.
+- **Time moves forward, never back**, within a story day (§24H ledger), in every mode: morning → midday → afternoon → evening, keyed to the story day on the row. A Mode 1 build still keeps §12's discipline — daylight by default, one practical-lit location at most.
+- **Inside a clip the light does not change** unless a shot shows its cause (a lamp switched on, a curtain opened — then that is the clip's one action). No flicker, no exposure pumping, no sun patch sliding across the wall, no light following the subject. Shadows move with bodies and objects, and fall one way from one source.
+
+### 3. The light moves with the story — inside each mode's register
+
+| Act | Mode 1 (daylight, never moody) | Modes 4 and 5 (Look Sheet field 3) |
+|---|---|---|
+| **Before / everyday** | ordinary daylight, the room as it is | the film's base light |
+| **Problem** | overcast or the grey hour: flatter, cooler daylight, curtains half drawn — still whole-room, still no pooling | harder key, bigger shadow side (ratio up, e.g. 4:1), cooler |
+| **Turn** | the light on the moment that changes things: the window side of the face | the tightest shot (§24K) gets the clearest key |
+| **After** | sun in the room: warmer, brighter, open, windows unblocked | softer key, more fill (ratio down, e.g. 2:1), warmer |
+| **Mirror scene (§3B)** | the hook's location at a brighter, warmer time of day | the hook's setup relit by the After's light |
+
+The light arc is written on the Film Look Sheet (field 3) or, in Mode 1, on the Location Sheet's times of day, and each row carries its `light` (E4). It never breaks the mode's floors: Mode 1 never goes dark or moody; the films never lose the source.
+
+### 4. Faces, product, hands
+
+- **Eyes always catch light** — a catchlight from the key's source — and never sit in the dark under a brow from an overhead light.
+- **Skin is lit, never glowing**: no halo, no bloom, no sheen that is not sweat or water.
+- **The product** takes one clean highlight from the scene's key; its wordmark is never blown white or lost in shadow (§9D).
+- **Hands** handling something are in the light, not in their own shadow.
+
+### 5. What generators get wrong — banned by `NEG-LIGHT`
+
+A rim light on everyone in a room with no window behind them · skin glowing · light from nowhere · shadows falling two ways from one source · the subject brighter than the room around them · a default orange-and-teal grade · sunbeams, god rays or haze not in the script · lens flare · a blown white window with no view in a daylight interior where the exposure would hold it · every face lit perfectly regardless of where it stands. In clips (`NEG-LIGHT-C`): flicker, pumping exposure, light changing across the clip, shadows sliding.
+
+### 6. In the prompt and the checks
+
+- **Mode 1–3:** `LIGHT-SHOT` follows `FOCUS-LINE`, filled from the light plan in screen terms; the Location Profile still carries the room's light. **Modes 4–5:** `LIGHT-FILM` / `LIGHT-ANIM` take `[SIDE]` from the plan, and the act's arc fills `[KEY QUALITY]` and `[RATIO]`.
+- `NEG-LIGHT` joins the negatives on every T2I with a location (Mode 1 drops the clauses `NEG-M1` already carries); `NEG-LIGHT-C` on every clip.
+- **`angles.py`** checks the rows: every row has `light`, no flat frontal key on a face, no backlit speaking face in Mode 1, time never going back inside a story day, the act's light state present.
+- **`light_check.py scene <frames>`** measures a scene's approved frames in shot order — brightness and warmth against the scene, and the brighter half of each frame to read against the plan (a jump flags a relit shot); **`light_check.py clip <clip>`** flags flicker and drift inside a clip. *(Thresholds unverified — tuned on the first build.)*
+- **§22V Q5** and the user's check read the frame's light against the row and the plan; **§22W Q4** reads the clip for flicker, pumping and light that changes.
+
+**NORMATIVE — `LIGHT-SHOT`, `NEG-LIGHT`, `NEG-LIGHT-C` — see Appendix A.**
+
+---
+
 ## 34. Correction Protocol
 
 When the user flags a problem with a specific shot:
@@ -5754,6 +5822,7 @@ The reference's **style is absorbed as a locked register set, copied precisely**
 | **Text overlays** | stat callouts, labels, arrows in the edit (never in a prompt, §17), where they sit |
 | **Sound in the edit** | SFX on cuts (whoosh, pop, riser), music presence and where it drops out |
 | **Density** | B-roll run lengths, how long the face returns between runs |
+| **Light** *(2026-09-27, §30K)* | Key side and quality per shot, contrast, time of day, how the light changes across the acts |
 | **Focus** *(2026-09-27, §30J)* | Depth of field by shot scale, what is kept sharp, and every focus change (pull or tap), what it moves between and on what kind of line |
 | **Camera angles** *(2026-09-27, §30I)* | The reference's spread of heights (ground · low · eye · high · overhead), sides and foregrounds, counted over its shots, and which kind of line gets which angle — the build copies the range |
 
@@ -7429,6 +7498,18 @@ THE CAMERA ANGLE: [HEIGHT CLAUSE from §30I], seen from [SIDE] of [SUBJECT][, lo
 ```
 FOCUS: [PLANE — the nearest eye of NAME / the hands and what they hold / the product and its wordmark / the foreground / everything] is in sharp focus; [DEPTH — the room behind falls to a soft, recognisable shape | everything from near to far stays sharp]. The blur is optical: soft and round, never smeared.
 ```
+**`LIGHT-SHOT`** — Modes 1–3, every T2I with a location, after `FOCUS-LINE` (§30K). `[SCREEN SIDE]` from the light plan for this camera position; Modes 4–5 use `LIGHT-FILM` / `LIGHT-ANIM` instead. *(356)*
+```
+THE LIGHT: [SOURCE from the light plan — the window on the room's WALL, or the named practical] lights [SUBJECT] from the [SCREEN SIDE] of the frame, [TIME-OF-DAY QUALITY and the act's light state], so the face has a lit side toward [SIDE] and a softer shadow side, with a small catchlight in the eyes. The shadows fall away from that source, one way only.
+```
+**`NEG-LIGHT`** — every T2I with a location (§30K); Mode 1 drops clauses `NEG-M1` already carries. *(309)*
+```
+no rim light without a source behind the subject, no glowing skin, no halo or bloom, no light from nowhere, no shadows falling in two directions, no subject brighter than the room around them, no orange-and-teal grade, no sunbeams or god rays, no haze, no lens flare, no eyes lost in shadow, no blown wordmark
+```
+**`NEG-LIGHT-C`** — every clip (§30K). *(148)*
+```
+no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject
+```
 **`CAM-FILM`** — opens every Mode 4 T2I. `[CAMERA]`, `[LENS FAMILY]`, `[STOP]` from Look Sheet field 2; `[FOCAL]` by shot scale; `[RIG]` in plain words. Replaces `CAM-LOCK`. *(352)*
 ```
 Photographed as a single frame from a feature film, shot on [CAMERA] with [LENS FAMILY] at [FOCAL]mm and [STOP], the camera on [RIG] and operated by a camera crew who framed and lit this moment on purpose. A still lifted from the finished film, not a photograph and not a phone video, composed natively for a vertical 9:16 frame with no letterbox bars.
@@ -8152,7 +8233,7 @@ One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t
 
 **Film fields (2026-09-27, Modes 4 and 5, §24I/§24K).** Film rows also carry: `scene` (`SC-xx`), `camera` as the F-rig with its reason from the camera plan, `playing` (the speaker's transitive verb), `business` (each character's one piece of business and its pace), `cut_cue` (line · look · action · reaction), `spine` (the story-spine beat) and `state` (each character's state-track row for this shot, including VOICE, §24H), and `new` (what the shot's frame adds over the master and earlier frames — position, scale or state — or `reuse <frame>`). A film row missing any of them is not written to a prompt.
 
-**`angle` (2026-09-27, §30I).** Every B-roll and film row carries `angle` — `height` (ground · low · eye · high · overhead), `side` (front · three-quarter · profile · three-quarter-back · behind · ots) and `fg` (clean · through · reflection) — with `why` (what the angle says) and, on a payoff that repeats an earlier angle, `mirror_of`. **`focus` (§30J)** — `plane` (eyes · hands · product · foreground · background · deep), `dof` (deep · medium · shallow), `rack` (`{from, to, cue, kind: pull | tap}` or null) and `moving_subject`. `angles.py` reads these fields.
+**`angle` (2026-09-27, §30I).** Every B-roll and film row carries `angle` — `height` (ground · low · eye · high · overhead), `side` (front · three-quarter · profile · three-quarter-back · behind · ots) and `fg` (clean · through · reflection) — with `why` (what the angle says) and, on a payoff that repeats an earlier angle, `mirror_of`. **`light` (§30K)** — `source` (from the light plan), `key_side` on screen (L · R · back · front), `time`, `arc` (the act's light state) and `why` on a backlit or 90° side key. **`focus` (§30J)** — `plane` (eyes · hands · product · foreground · background · deep), `dof` (deep · medium · shallow), `rack` (`{from, to, cue, kind: pull | tap}` or null) and `moving_subject`. `angles.py` reads these fields.
 
 **`key` (amended 2026-09-26, user).** Every B-roll row names its `key`: the word in its phrase that the picture shows (the noun or action on screen, never a filler like "and" or "when"). §30H cuts the clip in 3 frames before it. Leave it empty only when the picture is the phrase's first word. In a voice-only build the opening row has no key — its clip covers 0.00s. After generation, a row may add `peak`: the second in the clip where its action peaks, so the in-point lands it on the key word.
 
@@ -8302,6 +8383,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | 2026-09-27 | **Video preflight; two generations per shot; master built for its close-ups** (user: "the master image usually all the scenes needed specially close up shots… seeddance is expensive and i want everything to be perfect in the 1st try at least and if not lastly is 2nd generation fixing the problems first before generating i want strict checking"). New §22X: every paid video call passes a four-part gate first — frame approved, frame ready to move, `preflight.py` lint, three named risks each prevented; generation 2 only after the fault is diagnosed and fixed at its source (`fix_note`), never the same prompt resent; no generation 3 without the user (Automatic: clean part or cover route). §24H: the master is the source of every close-up (a render against it, not a crop beyond 1.3×) and is locked only when it holds what they copy | §22X (new), §24H (master, video), E2 (`CLIP_REGENERATE` 1 per shot, `PREFLIGHT_FAIL` new), `scripts/preflight.py` (new), both skills | Written; cut pending |
 | 2026-09-27 | **Camera angle range** (user: "the camera angles too we need to upgrade it so we are not stuck to the same camera angle always"). New §30I: every B-roll and film row names height (ground · low · eye · high · overhead), side (front · three-quarter · profile · three-quarter-back · behind · OTS) and foreground (clean · through · reflection) with a reason; `angles.py` fails jump cuts, three-in-a-row, < 3 setups in any five shots, eye-level frontal over a third, one height across a group of four or more, and unexplained angles; the meaning table; limits for faces, motion, product, Mode 1 phone plausibility and the film axis; `ANGLE-LINE` in every T2I; the angle checked on the frame | §30I (new), §30A, §18 step 5, §22V Q5, §24G field 7, §24K, E4, Appendix A (`ANGLE-LINE` new), `scripts/angles.py` (new), both skills | Written; cut pending |
 | 2026-09-27 | **Camera focus** (user: "camera focuses too"). New §30J: every B-roll and film row names its focus plane, depth and any focus change; always sharp: the nearest eye on a face, the product on a product beat, the hands on a hands beat; depth by mode and scale (phones deep, shallow only within ~30cm; film shallow from CU in); never shallow on WIDE/FULL or on more than two thirds of a group; focus changes as storytelling — one per clip, on a cue, still subject and camera; film pulls cleanly, Mode 1 taps to focus (clean rack stays banned); limits for moving subjects, faces, product, hands and text; `FOCUS-LINE`; checked by `angles.py`, `preflight.py`, §22V Q5, §22W Q4 | §30J (new), §22B focus hunt, §22V Q5, §22W Q4, §24G field 2, §18 step 5, §42 Part 3A, E4, Appendix A (`FOCUS-LINE` new), `scripts/angles.py`, `scripts/preflight.py`, both skills | Written; cut pending |
+| 2026-09-27 | **Lighting — light plan, continuity, story** (user: "lighting too"). New §30K: a light plan per location in room terms (sources, sun path, key by time, fill) — each shot's screen key side derived from the camera position, so varied angles (§30I) keep the window where it is; camera placed for the light (window 30–60° off axis for faces; never behind the camera on a face; backlight only with a reason); one light state per scene, time only forward, no light change inside a clip without a cause; a light arc by act inside each mode's register (Mode 1 stays daylight, never moody); eyes catch light, no glowing skin, product highlight, hands in light; generator tells banned (`NEG-LIGHT`, `NEG-LIGHT-C`); `LIGHT-SHOT`; checked by `angles.py`, `light_check.py` (new), §22V Q5, §22W Q4 | §30K (new), §22A profiles, §22V Q5, §22W Q4, §24G field 3, §18 step 5, §42 Part 3A, E4, Appendix A (`LIGHT-SHOT`, `NEG-LIGHT`, `NEG-LIGHT-C` new), `scripts/angles.py`, `scripts/light_check.py` (new), both skills | Written; cut pending |
 ---
 
 # OPEN DECISIONS
