@@ -20,6 +20,7 @@ Every generation goes on the build's **Generation Board**. **The board design is
 |---|---|
 | `intake-1` (STRYDE · Identity Callout) | https://claude.ai/artifact/HVPuUcnNK1MUrCYnou9UnJ |
 | `stryde-identity` (STRYDE · Identity Callout, Manual — Drive `1tKlZFjNApDMf5U_q3qFPcRyGZLQsVcwE`) | https://claude.ai/artifact/GKZDjmZkh4wwm7RxtXj7Tp |
+| `sha0071` (Energy · Scene 1, Automatic Mode 4 — Drive `1Hs37_1PXzkRAxNmmPlCpFr_THeHM6BUi`) | https://claude.ai/artifact/NzYWYmtn5wKo97V2xfKCm1 |
 | `demo-ad` (example only, placeholder media) | https://claude.ai/artifact/YK4ReHoWRnqBuXQvCMdHLT |
 
 Fix notes are picked up by the hourly Routine **Generation Board — hourly Fix check** (`trig_015ExzFatSnixWK2PEU5hVmP`, every hour at :32 UTC, fires into session_019jyz29Da9tQzhkoLnhKTSF). It skips cards with `demo: true`. While a Fix is being regenerated, the step's status is `generating`.

@@ -1,0 +1,33 @@
+# SHA0071 — "Energy" (CA - CINE-N - ENRGY - PB - SHF-JHB - V1)
+
+- **Drive task folder:** `1Hs37_1PXzkRAxNmmPlCpFr_THeHM6BUi` (script doc + 2 inspo films; cast photos linked from the script)
+- **Board:** https://claude.ai/artifact/NzYWYmtn5wKo97V2xfKCm1
+- **Run:** Automatic (`RUN AUTOMATION`), **Mode 4 — Realistic Film**, 9:16, Seedance 720p
+- **Scope (user):** "MAKE THE FIRST 30 SECONDS OF THE SCRIPT ONLY" → Scene 1, lines 1–8, ending on Paula's "Energy." (nearest clean line to 30s). Delivered cut runs **47.5s** at film pace — see Flags.
+- **Product:** KST Collagen Peptide Serum — https://koreanskintherapy.com/products/korean-silk-collagen-ampoule-2 (not on screen in this excerpt; no Product Sheet in Drive)
+
+## Decisions
+- **Connectors (user, mid-run):** "use the higgsfield connector only for all the generations dont use the others. for this run only." → images (GPT Image 2.5 Sunburst, Nano Banana Pro→logged nano_banana_2), Seedance 2.5 (omni_reference, 720p) all on Higgsfield. Kie used only as temporary file hosting for uploads (no generation).
+- Credit cap set to **Higgsfield 2,000** for this run (600 image default + the video share that would have gone to Kie).
+- Cast from the advertiser's talent photos (authority layer 1): §19 sheets generated **with the photo attached** (§19 says prose-only; reference wins). `NEG-SHEET`'s "no makeup / no jewellery" dropped — the photos show both.
+- Film Look Sheet written by the agent (Board → Plan → Absorption). Camera package: ARRI Alexa 35 S35 + Cooke S4/i.
+- Voice masters: Seedance 10s neutral clips (§24I), stream-copied. Uploaded to Higgsfield as 320k MP3 (Higgsfield stores audio only as MP3) — format conversion only.
+- SC-01 sound: dialogue from the clips (FFT denoise + level), **no music** (script: no music intro; Higgsfield has no general music/SFX model), one continuous synthesized corridor room tone.
+- Grade in the edit only: per-clip match to master (sat/luma/warmth), one cool-fluorescent look, one grain pass; captions small, lower-centre, one line at a time.
+
+## Flags
+1. Length 47.5s vs "first 30 seconds" — the 8 lines at natural film pace; no silences cut (§24L).
+2. Kie spent 630 credits on two voice-master tasks submitted before the Higgsfield-only instruction; outputs discarded.
+3. `nano_banana_pro` requests logged as `nano_banana_2` by Higgsfield (known §5 alias) — kept, judged on merit.
+4. Insert (badge): 3 image attempts (seated read ×2, then three hands) → §24H edit route: 9:16 crop of v3 (768 px wide).
+5. SH01 + SH08 gen 1: **boom microphone in frame** — caused by `AUD-FILM`'s "boom microphone just out of frame" wording. Gen 2 kept the string (preflight enforces it) + "microphone stays outside the picture" + equipment negatives → clean. **Proposed amendment:** reword `AUD-FILM` to drop the boom-mic image.
+6. SH08 rendered at MCU not CU → 1.25× punch-in in the edit (≤1.3×, §24H).
+7. VISITOR badge text slightly garbled in the SH01 wide (unreadable at that size).
+8. No Drive OUTPUT video upload: the Drive connector takes file bytes inline only; the final MP4 is on the board and sent in chat.
+
+## Open
+- Scenes 1 (lines 9–10) through 12 not built.
+
+## Delivery (2026-09-27 09:10 UTC)
+- Final: `edit/SHA0071_SC01_HK1_final.mp4` — 720×1280, 24 fps, 47.8s, 7 Mbps, −14.6 LUFS, TP −0.9 dB, transcript 74/74 words. On the board as card `SC01-EDIT` (3 byte parts).
+- Spend: Higgsfield ≈646 of the 2,000 cap (images ≈30, Seedance 616 incl. the two 70-credit voice masters and SH01/SH08 gen 2). Kie 630 (discarded, Flag 2). Kling 0. The Higgsfield account is shared with other work, so its balance (4,795 → 3,480) also reflects other sessions.
