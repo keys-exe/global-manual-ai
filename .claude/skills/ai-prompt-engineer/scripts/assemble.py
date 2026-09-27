@@ -58,7 +58,8 @@ Rules (§30H):
   3. FLICKER a talking-head window shorter than --min-th between two B-rolls is a
              flicker. Closed by, in order: giving back the skipped opening (a
              skip/peak in-point moves toward 0); extending the earlier clip with its
-             own footage; slowing it down to no slower than 0.8x; else FAIL NEED_LONGER
+             own footage; slowing it down to no slower than 0.8x (never in a Mode 4/5
+             plan — §24L, no speed change); else FAIL NEED_LONGER
              (regenerate that clip at a longer duration).
   4. HOLE    in a voice-only build (base null) every uncovered moment is a hole and
              is closed the same way; an unclosable hole is a FAIL.
@@ -89,6 +90,7 @@ from trim import words, duration  # noqa: E402
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 FPS = 24                     # set from --fps; Kling renders 24 fps
 MIN_SLOW = 0.8
+FILM = False                 # plan "mode" 4/5: no speed change ever (§24L)
 MIN_FLASH = 0.8
 HANDLE = 0.5                 # E6: seconds of spare footage on every call
 KLING_MIN, KLING_MAX = 3, 15
@@ -220,6 +222,8 @@ def main():
     plan = json.loads(Path(a.plan).read_text())
     # A hook variant is [hook, body]: lists are joined in order into one continuous
     # master, one script and one talking-head track, so §30H holds across the seam.
+    global FILM
+    FILM = int(plan.get("mode", 1)) in (4, 5)   # §24L: film clips never change speed
     audio = join_media(root, plan["audio"], "audio")
     base = join_media(root, plan["base"], "video") if plan.get("base") else None
     total = duration(audio)
@@ -329,7 +333,7 @@ def main():
         if avail >= need - 1e-3:
             e["end"] = snap(target); fixes.append({"beat": e["beat"], "fix": f"{why}: extended with own footage to {target:.2f}s"}); return True
         speed = avail / need
-        if speed >= MIN_SLOW:
+        if speed >= MIN_SLOW and not FILM:
             e["end"] = snap(target); e["speed"] = round(speed, 3)
             fixes.append({"beat": e["beat"], "fix": f"{why}: slowed to {speed:.2f}x to reach {target:.2f}s"}); return True
         fails.append({"beat": e["beat"], "fail": "NEED_LONGER",

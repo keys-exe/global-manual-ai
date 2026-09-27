@@ -2870,7 +2870,7 @@ The preflight result (`PREFLIGHT PASS`, the three risks) is logged with the call
 
 - **Generation 1** is expected to be the one used.
 - **Generation 2 exists only to fix a diagnosed fault.** Before it, the fault is named from the render (the §22W question it failed, or the user's Fix note), traced to its source — **the frame, the prompt or the motion asked for** — and fixed there: a new or edited frame, a changed clause, a simpler action, a pinned end, a shorter duration. The call carries the diagnosis as `fix_note` (`fault → change`) and passes preflight again. **The same prompt on the same frame is never resent.**
-- **There is no generation 3 without the user.** Automatic: when generation 2 also fails, the agent keeps the clean part if it covers the slot (`videoOut` / `out`, §27G), otherwise cuts the shot and covers its moment with an approved neighbour (E2 `SCENE_BREAK` route), logged in *Flags*. Manual: before any third video call on the same shot, even from a Fix note, the agent tells the user what failed twice and proposes a restage, and waits for their go.
+- **There is no generation 3 without the user.** Automatic: when generation 2 also fails, the agent keeps the clean part if it covers the slot (`videoOut` / `out`, §27G — never on a Mode 4/5 build, §24L), otherwise cuts the shot and covers its moment with an approved neighbour (E2 `SCENE_BREAK` route), logged in *Flags*. Manual: before any third video call on the same shot, even from a Fix note, the agent tells the user what failed twice and proposes a restage, and waits for their go.
 
 Images are cheaper and stay on the §22V budget, but they are checked just as strictly — **the image is where a video is won or lost**.
 
@@ -3700,7 +3700,7 @@ Played small, for a camera close enough to see a thought. Gesture register stays
 
 ### 6. Two people talking — rhythm
 
-Every Scene Bible states the rhythm of its dialogue: who cuts in, where a line lands on silence, who holds the eye contact and who breaks it. In a MULTI-SHOT clip it lives in `MULTI-FILM`'s rhythm slot. **A silence is a shot, not an instruction.** Pauses do not generate (§17), so a held beat is built as a listener shot with no dialogue, or cut in post from the designed-silence list (§28G). Two voices overlap only where the script overlaps them.
+Every Scene Bible states the rhythm of its dialogue: who cuts in, where a line lands on silence, who holds the eye contact and who breaks it. In a MULTI-SHOT clip it lives in `MULTI-FILM`'s rhythm slot. **A silence is a shot, not an instruction.** Pauses do not generate (§17), so a held beat is built as a listener shot with no dialogue — never made by cutting or stretching a take (§24L). Two voices overlap only where the script overlaps them.
 
 ### 7. The voice master carries who, never how
 
@@ -3896,6 +3896,26 @@ A MULTI-SHOT clip (`MULTI-FILM`, §29) covers dialogue with **everyone in it sti
 **The contact sheet (§24H) adds three items:** the camera plan matches the emotion map shot by shot · the tightest scale falls on the turn · every shot has a cut cue. **§22W Q4 (Automatic)** and the user's check on the board (Manual) judge a film clip on the same motion faults as any other clip: warping during movement, the product changing shape, feet and hands melting on a walk.
 
 **NORMATIVE — `RIG-F1`–`RIG-F5` (amended 2026-09-27), `MULTI-FILM` (amended), `BUSINESS-LINE` — see Appendix A.**
+
+---
+
+## 24L. No Trimming in the Film Modes *(new 2026-09-27, user: "about trimming that should not be allowed in the movie style")*
+
+**Scope: every Mode 4 and Mode 5 build, AI Drama included, both run modes.** In a film the pauses, breaths, hesitations and the time a hand takes are the performance (§24I). Cutting them out makes actors speak like a spliced voicemail and turns a held look into a jump. **So nothing in a film is trimmed:**
+
+| Never, in Modes 4–5 | Instead |
+|---|---|
+| The E11 trim pass (`trim.py`) on any clip — no dead air, inhale or filler cut from a take | The pause is played. A shot with dead air that should not be there is a performance fault — regenerated per §22X with the duration and word budget fixed (§28H) |
+| The E11A VO house cut (`vo_trim.py`) on narration — no butt joins, no breaths removed | Narration (§3B) is used exactly as the chosen take was generated, pauses and breaths included; only the file's own digital silence before the first sound and after the last is dropped |
+| Any cut **inside** a take — a jump over a stumble, a joined half of two takes | A new generation of the shot (§22X), never a patch |
+| Any speed change — slowing to fill a gap, speeding to fit a slot, speed ramps | Clips are generated at the length their shot needs (E6, §24K), so none ever needs a speed change; `assemble.py` never changes speed on a Mode 4/5 plan |
+| Cutting silences out of dialogue in the edit | A held beat is built as its own listener shot (§24I part 6) |
+| Voice masters edited in any way (§24I part 7) | Unchanged — already locked |
+| "Use only up to here" (`videoOut`, §27G) to rescue a broken clip | A broken clip is regenerated within the §22X budget; `videoOut` is ignored on a film build |
+
+**What remains is editing, not trimming:** where one whole shot ends and the next begins. Every shot is generated to its designed length and **cut at its designed cut cue** (§24K part 4) — the only frames not shown are the generator's static lead-in before the first moving frame and anything after the cue. The cut cue is set in the shot list before generation, never found afterward by shaving the take.
+
+**Instruments refuse it:** `trim.py` and `vo_trim.py` take `--mode` and refuse 4 and 5; `assemble.py` never changes speed when the plan's `mode` is 4 or 5 (a gap is `NEED_LONGER` — regenerate longer).
 
 ---
 
@@ -4351,7 +4371,7 @@ Two options, picked per line: **generate at 3s** so the fall is short and the ev
 
 ### What the user sees *(§16A)*
 
-The board shows every video with an **8-frame strip** from first to last frame (click a frame to jump there), a **0.5x** button (warping is easy to see at half speed), and **Use only up to here**: when a clip is clean for its first seconds and breaks later, the user keeps the clean part instead of paying for a remake. The card records it as `videoOut` (seconds, for version `videoOutV`), and the rough cut uses nothing after it (`out`, §30H).
+**Film builds (Modes 4–5) never use "Use only up to here"** — a broken clip is regenerated (§24L, §22X). The board shows every video with an **8-frame strip** from first to last frame (click a frame to jump there), a **0.5x** button (warping is easy to see at half speed), and **Use only up to here**: when a clip is clean for its first seconds and breaks later, the user keeps the clean part instead of paying for a remake. The card records it as `videoOut` (seconds, for version `videoOutV`), and the rough cut uses nothing after it (`out`, §30H).
 
 ---
 
@@ -8304,7 +8324,7 @@ Every generated batch ships its QA table alongside the prompts — the reconcili
 | CREDIT_CAP | E1 credit-cap row | none — never raised by the agent | 0 | HUMAN — the user raises the cap or ends the run |
 | AGENT_UNSURE | AGENT-FIRST read with no clear pass or fail (E0) — **not used for images, which always get a verdict (§22V)** | none | 0 | HUMAN — queued with the frame, the check and the agent's note |
 | IMAGE_REGENERATE | §22V verdict | regenerate with the named fix | 2 per fault | HUMAN — three versions and the verdict history |
-| CLIP_REGENERATE | §22W verdict | diagnose (frame, prompt or motion) → fix it at the source → preflight (§22X) → **one** regeneration | **1 per shot** (two generations in all, §22X) | keep the clean part (`out`) if it covers the slot, else the `SCENE_BREAK` cover route; never a third call without the user |
+| CLIP_REGENERATE | §22W verdict | diagnose (frame, prompt or motion) → fix it at the source → preflight (§22X) → **one** regeneration | **1 per shot** (two generations in all, §22X) | keep the clean part (`out`) if it covers the slot — **never in Modes 4–5 (§24L)** — else the `SCENE_BREAK` cover route; never a third call without the user |
 | PREFLIGHT_FAIL | `preflight.py` FAIL, a frame-readiness risk, or an unprevented risk (§22X) | fix the prompt, the frame or the staging; re-run preflight | until PASS | none — no credit is spent until it passes |
 | SCENE_BREAK | §22V Q4 / §22W Q5 in a scene (§24H): a state-track, position, prop, light, colour or voice fault against the neighbours or at a join | regenerate with `STATE-CARRY` restated and the state reference attached → the frame as an edit of the previous approved frame → cut the shot and cover it with an approved neighbour | 2, then the edit route once | none — never shipped as best-of-three; the cut is logged in *Flags* |
 | NEED_LONGER | §30H: a clip cannot fill its slot at ≥ 0.8x | regenerate that clip at the duration its slot needs | 2 | HUMAN |
@@ -8406,7 +8426,7 @@ Computed before any cut ships: every Appendix A string has a count and the count
 
 ## E11. Trim pass — dead air and inhales *(new V7.56.0 — unverified on production clips)*
 
-**Scope:** talking-head clips, and any clip carrying dialogue. **Audio-only §22U voice-over uses the VO house cut instead (E11A).** B-roll is trimmed at head and tail only — a cut inside a continuous move is a visible jump and breaks §27A. Mode 4 and Mode 5 clips are not trimmed inside the take: their silences are performance (§24I) and are cut in the edit.
+**Scope:** talking-head clips, and any clip carrying dialogue. **Audio-only §22U voice-over uses the VO house cut instead (E11A).** B-roll is trimmed at head and tail only — a cut inside a continuous move is a visible jump and breaks §27A. **Mode 4 and Mode 5 are never trimmed at all (§24L, 2026-09-27)** — no trim pass, no cut inside a take, no silence cut in the edit, no speed change; `trim.py --mode 4|5` refuses.
 
 **Tools** (installed per session; the container is ephemeral):
 
@@ -8434,7 +8454,7 @@ Computed before any cut ships: every Appendix A string has a count and the count
 
 ## E11A. VO house cut — audio-only voice-over *(locked 2026-09-26, both run modes)*
 
-**Scope:** every §22U TTS voice-over (hooks, body, hook variants), Manual and Automatic. E11 (`trim.py`) stays for talking-head clips. Never on a §24I film voice master.
+**Scope:** every §22U TTS voice-over (hooks, body, hook variants), Manual and Automatic. E11 (`trim.py`) stays for talking-head clips. Never on a §24I film voice master, **and never on any Mode 4/5 audio, film narration included (§24L)** — `vo_trim.py --mode 4|5` refuses.
 
 **Why not E11 on VO:** transcript word edges end words early (the decay is clipped — the user heard hook endings cut off) and start them early (the inhale is folded into the next word and survives). The house cut takes every edge from the waveform.
 
@@ -8483,6 +8503,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | 2026-09-27 | **Lighting — light plan, continuity, story** (user: "lighting too"). New §30K: a light plan per location in room terms (sources, sun path, key by time, fill) — each shot's screen key side derived from the camera position, so varied angles (§30I) keep the window where it is; camera placed for the light (window 30–60° off axis for faces; never behind the camera on a face; backlight only with a reason); one light state per scene, time only forward, no light change inside a clip without a cause; a light arc by act inside each mode's register (Mode 1 stays daylight, never moody); eyes catch light, no glowing skin, product highlight, hands in light; generator tells banned (`NEG-LIGHT`, `NEG-LIGHT-C`); `LIGHT-SHOT`; checked by `angles.py`, `light_check.py` (new), §22V Q5, §22W Q4 | §30K (new), §22A profiles, §22V Q5, §22W Q4, §24G field 3, §18 step 5, §42 Part 3A, E4, Appendix A (`LIGHT-SHOT`, `NEG-LIGHT`, `NEG-LIGHT-C` new), `scripts/angles.py`, `scripts/light_check.py` (new), both skills | Written; cut pending |
 | 2026-09-27 | **US feature camera packages and production value** (user: "the movie styles uses cameras for movies like US movies i want the same quality"). §24G camera package library by genre (ARRI Alexa 35 / Mini LF / 65, Sony Venice 2, 35mm Kodak Vision3 on ARRICAM; Cooke S4/i, Zeiss Supreme / Master / Ultra Primes, ARRI Signature, Panavision Primo and anamorphic), focal and stop by shot scale, 24fps with a 180-degree shutter, colour science named; one package per film; `CAM-FILM` rewritten, `INHERIT-FILM` shutter; production value — layers in depth, dressed set, costume texture, blocking in depth — `PROD-DEPTH` new; the feature finish in post on the locked cut: match → LUT → grain, exported at native 720×1280 with no upscale (user: "the 1, 2 and 4 i want that"; 720p confirmed for phone viewing); Mode 5 virtual camera package (`CAM-ANIM`); first-frame check fails the TV look | §24G, §24J, Appendix A (`CAM-FILM`, `INHERIT-FILM`, `CAM-ANIM`, `FILM-CAPCUT`, `NEG-LIGHT` note, `PROD-DEPTH` new), both skills | Written; cut pending |
 | 2026-09-27 | **Grade in the edit only; strict scene colour lock** (user: "the color grades should be on the edit section and one strict thing the colors of a scene all of them should be consistent"). §40: the grade is an edit step — match to the scene master → LUT → grain → native export; never in a prompt; `LOOK-PATTERN` / `LOOK-ANIM-PATTERN` lose the grade and state neutral, ungraded colour; `INHERIT-FILM`, `SCENE-KEY`, `CHAIN-FRAME`, `NEG-SCENECUT` hold colours, not a grade. New §30L: a colour key per scene read off its master, `COLOUR-KEY` verbatim on every shot, the master as colour reference; `light_check.py colour` (new mode: warmth, tint, saturation, brightness against the master) on frames before video, on clips, and on graded clips in the edit; a colour flag is `SCENE_BREAK` in Automatic, a board note in Manual; colour changes only at a scene boundary | §40, §30L (new), §24G (field 5, prompt vs post, finishing), §24J field 5, §12, §24H (Scene Bible, contact sheet, assembly), §22V Q4, §22W Q5, E2, Appendix A (`COLOUR-KEY` new, `LOOK-PATTERN`, `LOOK-ANIM-PATTERN`, `INHERIT-FILM`, `SCENE-KEY`, `CHAIN-FRAME`, `NEG-SCENECUT`, `FILM-CAPCUT`, `ANIM-CAPCUT`), `scripts/light_check.py`, both skills | Written; cut pending |
+| 2026-09-27 | **No trimming in the film modes** (user: "about trimming that should not be allowed in the movie style"). New §24L: in Modes 4–5 no E11 trim pass, no E11A house cut (film narration used as generated), no cut inside a take, no speed change, no silences cut in the edit, no voice-master edits, no "Use only up to here" — a fault is regenerated per §22X; editing is only the cut between whole shots at their designed cut cue; `trim.py` / `vo_trim.py --mode 4|5` refuse, `assemble.py` never changes speed on a Mode 4/5 plan | §24L (new), §24I part 6, §27G, §22X, E2, E11, E11A, `scripts/trim.py`, `scripts/vo_trim.py`, `scripts/assemble.py`, both skills, CLAUDE.md | Written; cut pending |
 ---
 
 # OPEN DECISIONS

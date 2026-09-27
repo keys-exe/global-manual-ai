@@ -67,6 +67,8 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Colour — grade in the edit, scenes locked (§40, §30L, 2026-09-27, all modes).** The grade never enters a prompt: images and clips are made in natural, neutral colour, and the edit (CapCut block, step 8) does match to the scene master → the one LUT (Modes 4–5; Mode 1 match only) → grain (Mode 4) → native export. **Strict:** every scene has a `COLOUR-KEY` read off its master (light colour, set, wardrobe, accent, in-camera saturation), verbatim on every shot; the master is the colour reference; `light_check.py colour --ref <master>` on frames before video, on clips, and on the graded clips in the edit — a shot off its scene's colours is never animated or cut in. Colour changes only at a scene boundary.
 
+**No trimming in the film modes (§24L, 2026-09-27).** Modes 4–5, AI Drama included: no E11 trim, no E11A house cut (narration used as generated), no cut inside a take, no speed change, no silences cut in the edit, no "Use only up to here" — a fault is regenerated (§22X). Editing is only the cut between whole shots at their designed cut cue. `trim.py` / `vo_trim.py --mode 4|5` refuse; `assemble.py` never changes speed on a Mode 4/5 plan.
+
 **Video preflight (§22X, 2026-09-27, both run modes).** No paid video call — Seedance above all — is sent before it passes: the frame approved (Manual: the user's Confirm), the frame ready to move (mid-action, room for the motion, hands whole or out, mouth clear on a speaking shot, product unambiguous, state track matched — in Manual a risk is raised to the user, not judged), `scripts/preflight.py <call.json>` PASS, and three named risks each prevented. **Two generations per shot at most:** the second only after the fault is diagnosed and fixed at its source (frame, prompt or motion) — never the same prompt resent; no third without the user. The master is the source of every close-up (a render against it, never a crop beyond 1.3×), so it is locked only when faces, worn details, props and product all read in it.
 
 **Script visual instructions are binding (§27F, V7.61.0).** Every visual note on the script (`VISUAL:`, `B-ROLL:`, `ON SCREEN:`, `SFX:`, `[brackets]`, `(parentheses)`, inline `[notes]`, the visual column of a VO | VISUAL table…) is kept out of the voice but **never dropped**: `script_lines.py --visual` lists them (`VN01`…) anchored to their spoken line, and they open the **Visual Instruction Ledger** at step 2. Step 5 assigns each row to the beat that shows it or the CapCut line that carries it (on-screen text verbatim). Follow it as written, don't substitute your own shot; a row that breaks a higher layer is flagged with the nearest compliant execution. §22V/§22W Q1 check it. Every row ends `verified` or `flagged` — none open at step 8.
@@ -199,6 +201,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 24I. Dramatic Performance *(new V7.54.2 — Mode 4; visual check pending)*
 - 24J. Mode 5: Pixar Film *(new V7.55.0 — visual check pending)*
 - 24K. Film Motion & Camera Grammar *(new 2026-09-27 — Modes 4 and 5)*
+- 24L. No Trimming in the Film Modes *(new 2026-09-27)*
 - 25. Style Lock Rule
 
 **BLOCK 6 — PERFORMANCE & MOTION**
