@@ -14,7 +14,8 @@
   "F-INS-BADGE": [
    "a2bae3bd-2619-452f-84a9-a43cfce03253",
    "00c5cc11-9bc1-4bca-bd2f-a043987f1a4e",
-   "ab97d9fe-c747-4c75-ae42-a0852dd0eaca (+crop edit)"
+   "ab97d9fe-c747-4c75-ae42-a0852dd0eaca (+crop edit)",
+   "b5a50324-f935-4df1-a9d0-25daed655327 (v5, one hand, user Fix)"
   ],
   "F-ROBIN-LOW": [
    "a3531e11-7722-4144-ad1a-99acf23bcd56",
@@ -24,7 +25,11 @@
    "94d068e6-1d6b-406f-b3ce-afa528363460",
    "3ba98a94-4f2f-4939-8bba-637232b2260b"
   ],
-  "F-PAULA-CU": "58eb496f-b645-4e41-8ce1-d68abd8d0246"
+  "F-PAULA-CU": "58eb496f-b645-4e41-8ce1-d68abd8d0246",
+  "F-WIDE": [
+   "b96e88e9-0086-489c-8350-a60a4854ed30 (v2, glass corridor, user Fix)",
+   "e26f3c1a-a362-4a87-9ff3-74605cddd9e8 (v3, badge text fixed)"
+  ]
  },
  "voice": {
   "PAULA": "eb0bbb4f-0aa0-4530-8b63-fb15acac5c5f",
@@ -32,13 +37,16 @@
  },
  "clips": {
   "SC01-SH01": {
-   "gen1": "b62260cd-0c60-4cf6-9a3e-535348993a5a"
+   "gen1": "b62260cd-0c60-4cf6-9a3e-535348993a5a",
+   "gen2": "8e495e11-3271-4068-b14f-b0144bbc3c3a",
+   "gen3": "76a77513-2c1f-4851-bb77-7e002ca133d6 (user go)"
   },
   "SC01-SH02": {
    "gen1": "1899d975-9448-47be-a223-96053896d015"
   },
   "SC01-INS01": {
-   "gen1": "f6649417-004a-4089-a960-d7c484fd8263"
+   "gen1": "f6649417-004a-4089-a960-d7c484fd8263",
+   "gen2": "447a69f5-a8fe-42fa-bf9e-1ada6d918036"
   },
   "SC01-SH03": {
    "gen1": "51f85f83-967d-438d-8735-0a34709a419d"
@@ -47,7 +55,8 @@
    "gen1": "00e3472a-2ec4-43b2-80cc-5ea001d79c6d"
   },
   "SC01-SH05": {
-   "gen1": "146ff611-3786-49ba-ae8e-384db0d1971a"
+   "gen1": "146ff611-3786-49ba-ae8e-384db0d1971a",
+   "gen2": "9cacd0c3-706d-46e9-a4ac-78f48789d13f"
   },
   "SC01-SH06": {
    "gen1": "d97ce76a-b07a-43bc-92b0-364b2d8c4f9e"
@@ -59,10 +68,14 @@
    "gen1": "0be8f39e-aff8-4b00-b0e2-6b4f49d48706"
   },
   "SC01-SH08": {
-   "gen1": "cfc737de-39a9-41d3-afd3-f010e641ddd5"
+   "gen1": "cfc737de-39a9-41d3-afd3-f010e641ddd5",
+   "gen2": "41e9f693-d6fb-40fb-93c0-71af4801869a"
   }
  },
  "unused_spend": {
   "Kie": "630 credits \u2014 two Seedance voice tasks submitted before the Higgsfield-only instruction; outputs discarded"
+ },
+ "music": {
+  "MUS-SC01": "ElevenLabs Music, 2 tracks (g1 kept, edited)"
  }
 }

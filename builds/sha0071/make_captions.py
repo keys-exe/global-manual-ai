@@ -7,7 +7,7 @@ events=[]; t0=0.0
 for s in plan["shots"]:
     line = lines.get(s["beat"])
     if line and not s.get("silent"):
-        segs,_ = m.transcribe(f"edit/match/{s['beat']}.mp4", word_timestamps=True)
+        segs,_ = m.transcribe(f"renders/{s['beat']}.mp4", word_timestamps=True)
         ws=[w for sg in segs for w in sg.words if s["in"]-0.05 <= w.start < s["out"]]
         words=line.split()
         # chunk the verbatim script words at punctuation, ≤5 words
