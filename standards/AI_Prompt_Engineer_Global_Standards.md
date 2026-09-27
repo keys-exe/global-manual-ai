@@ -3469,6 +3469,7 @@ A scene is a maximal run of beats in one location in continuous story time. In M
 | **Emotion map** | Per character: ENTRY state · OBJECTIVE (what they want from the other person) · TURN (the line and what causes it) · EXIT state · SUBTEXT (what they feel and do not say) — §24I |
 | **Shot list** | Master, singles, reverses and inserts, each with its beat ID, shot scale, rig, duration, and each character's emotion at that moment (EMO, read off the map); per shot also its one action and pace (§27G), the speaker's PLAYING verb and each character's business (§24I parts 10–11), and its cut cue (§24K) |
 | **Camera plan** | The rig per shot and why, read off the emotion map; the tightest scale placed on the turn (§24K) |
+| **Image list** | Every image the scene needs before any video — the inputs it reuses and the frames it generates, counted (§24H, the scene image list) |
 | **Delivery route** | Single-shot beats, or MULTI-SHOT (§29) |
 | **Transition in / out** | How this scene joins the one before and the one after |
 
@@ -3477,7 +3478,37 @@ A scene is a maximal run of beats in one location in continuous story time. In M
 1. **The master frame first.** The widest shot in the scene, with everyone placed where they will stay. It attaches the location plate (and the property plate for a dwelling), every character sheet in the scene, and the product reference if the product appears. It opens with `SCENE-MASTER`. Checked on the §5 first-frame habit plus the §24G items, then **locked as the scene's key**.
 2. **Coverage frames against the master.** Every other frame in the scene attaches the master as its first reference and opens with `SCENE-KEY`: same room, same moment, same light side, same look, same wardrobe, same prop positions, a new camera position on the same side of the action line, and the eyeline pointed at whoever is off frame.
 3. **Chained frames on continuing action.** Where a shot continues the action of the one before it (a match on action), it also attaches the approved previous frame and adds `CHAIN-FRAME`, naming only what has changed.
-4. **The contact sheet.** Before any video is generated for a scene, every frame in it is laid side by side in shot order and checked as one: light from the same side, same look, same wardrobe, same prop states, axis held, eyelines matching across reverses, same time of day, and **every character's expression progressing along the emotion map in story order, never resetting between shots**. Any frame that fails is rerolled against the master. **Only a passed contact sheet releases the scene to video.**
+4. **The contact sheet.** Before any video is generated for a scene, every frame on its image list is laid side by side in shot order and checked as one: light from the same side, same look, same wardrobe, same prop states, axis held, eyelines matching across reverses, same time of day, and **every character's expression progressing along the emotion map in story order, never resetting between shots**. Any frame that fails is rerolled against the master. **Only a passed contact sheet releases the scene to video.**
+
+### The scene image list — every image the scene needs, before any video *(2026-09-27)*
+
+**Written into the Scene Bible at step 5, from the shot list, before any image is generated.** A scene is released to video only when every row on its list is approved — a shot whose start frame, end frame or prop reference is missing is never animated on a guess. The list has two parts.
+
+**A. Inputs the scene reuses** — made once for the film, attached by reference, never regenerated per scene:
+
+| Image | Made at | Used for |
+|---|---|---|
+| Location plate (+ property plate for a dwelling) | Step 4 (§30C, §30G) | The master, and every frame's room |
+| Character sheet (face-only view included) for everyone in the scene | Step 3 (§19) | Every frame with that person in it |
+| Product reference views | Product Sheet (§8) | Every frame where the product appears |
+| Business prop reference — **only when a prop recurs across scenes or is handled at CU or tighter** | Step 5, on the scene where it first appears | Every shot carrying that business (§24I part 11), so the mug is the same mug |
+| The scene's outfit, where the wardrobe map needs a reference | Step 5 (§14A, §21) | The master |
+
+**B. Frames generated for this scene**, in this order:
+
+| # | Image | Opens with | How many | Notes |
+|---|---|---|---|---|
+| 1 | **Bridge frame** — first frame of a scene joined by MATCH CUT or CONTINUOUS | `SCENE-BRIDGE` | 0 or 1 | Attaches the last approved frame of the previous scene |
+| 2 | **Master frame** | `SCENE-MASTER` | 1 | The widest shot, everyone placed; locked as the scene's key before anything else is made |
+| 3 | **Start frame for every shot** — dialogue, listener, reverse, two-shot | `SCENE-KEY` | 1 per shot | Caught mid-action on the shot's business or action (§27G rule 4), face at its EMO value (`EMO-SEED`), at the shot's scale from the camera plan (§24K) |
+| 4 | **Chained frames** on continuing action | `SCENE-KEY` + `CHAIN-FRAME` | 1 per match on action | Attaches the previous approved frame |
+| 5 | **End frame for every pinned shot** — the product changes angle, or the shot must end on an exact frame | `SCENE-KEY` + `CHAIN-FRAME` (what has changed = the end state) | 1 per pinned shot | Built against that shot's approved start frame; the shot then runs single-shot on the first-and-last-frame call (E7, §24K part 1) |
+| 6 | **Inserts** — the product reveal (`HERO-FILM`), business close-ups, a hand, an object | `SCENE-KEY` → `HERO-FILM` where it applies | 1 per insert | Mode 5 adds `PIX-SPLIT` on the product |
+| 7 | **Mechanism frames** where the scene carries one | `MECH-SCREEN` (Mode 4) · `ANIM-XRAY` start frame (Mode 5) | 1 per mechanism beat | The §12A render after a SCREEN cut is its own mechanism beat, outside the scene list |
+
+**A MULTI-SHOT clip still needs a start frame for every shot inside it** (row 3): the first shot's frame goes in as `@image1`, the others as ingredients (§24H video, §4). A walk in a locked frame (§24K) needs only its start frame, caught mid-step.
+
+**Every row is counted before generation.** The list's total is the scene's image count, and the build's image budget is the sum of the lists. One render per call (§5); each image goes on the board as its own card the turn it lands — an end frame as `<beat>-END`, a prop reference as `<SC-xx>-PROP-<name>` — in the scene's act, Images box, as To check (Manual). The contact sheet (below) is laid out from this list, in shot order, with the end frames beside their start frames.
 
 **Reference order on every coverage call, five at most, each named in prose (§5):** the scene master → the featured character's sheet → a second character's sheet if both are in frame → the product reference → the previous frame when chaining.
 
@@ -8050,6 +8081,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | 2026-09-26 | Generation Board change on the user's request: Plan tab — Absorption Sheet, act map, wardrobe map on the board, section tabs, act filter, beat links. Template republished to every board. | §16A | Written into §16A; cut pending |
 | 2026-09-26 | Generation Board change on the user's request: stage order Voice → VO → Talking heads; Voice checklist (everyone who speaks has a voice); VO locked per part; Talking heads removed when unused; film builds drop VO and Talking heads. | §16A | Written into §16A; cut pending |
 | 2026-09-27 | **Film modes upgraded — motion, camera, acting, story** (user: "upgrade the movie style" — both film modes, motion/camera and acting/story). New §24K: §27G holds in Modes 4 and 5; the F-rig is chosen by what the subject is doing (F1/F4 only on a still subject, a walk is F2 across a locked frame, F5 only where the reference edit follows a walk, waist-up, three or four steps); a camera plan per scene read off the emotion map, camera script by act on Look Sheet field 7; the tightest scale spent on the turn; a cut cue on every shot, enter late / leave early; MULTI-SHOT only when nobody moves, shots ≥ 2.5s. §24I parts 9–12: the story spine read from the script (never rewriting it), a PLAYING verb per line, one piece of business per dialogue/listener shot (`BUSINESS-LINE`) carrying the subtext tell, performance size by shot scale, generated-acting tells banned in `NEG-DRAMA` | §3B, §22B, §24G, §24H, §24I, §24J, §24K (new), §29, E4, Appendix A (`RIG-F1`, `RIG-F4`, `RIG-F5`, `MULTI-FILM`, `DRAMA-DELIVERY`, `NEG-DRAMA`, `BUSINESS-LINE` new), Open Decisions | Written; cut pending |
+| 2026-09-27 | **Scene image list** (user: "add the images needed for that scene"). Every Mode 4 / Mode 5 Scene Bible carries an image list written at step 5 from the shot list: the inputs it reuses (plates, character sheets, product views, a business prop reference only when the prop recurs or is handled at CU or tighter, outfit reference) and the frames it generates in order — bridge frame, master, one mid-action start frame per shot (MULTI-SHOT shots included), chained frames, an end frame for every pinned shot, inserts, mechanism frames — counted into the build's image budget; each on the board as its own card (`<beat>-END`, `<SC-xx>-PROP-<name>`); the scene goes to video only when every row is approved | §24H (new subsection, Scene Bible row, contact sheet) | Written; cut pending |
 ---
 
 # OPEN DECISIONS
