@@ -190,7 +190,7 @@ A scripted story with a cast, told in scenes, that sells the product through wha
 | 2–4 min | 6–10 | 35–80 |
 | 5–8 min | 10–16 | 80–140 |
 
-**Generation multiplier about 1.3×**: MULTI-SHOT clips cover several shots in one generation, and some coverage is shot and not used. Unmeasured until a drama build is timed.
+**Generation multiplier about 1.3×**: MULTI-SHOT clips cover several shots in one generation, and some coverage is shot and not used. **Automatic generates only the scene image list** (§24H) — no coverage that the cut does not use. Unmeasured until a drama build is timed.
 
 ### Beat IDs
 
@@ -2810,7 +2810,7 @@ Judge the four takes in this order: **(1) every word of the script is present an
 1. **Does it show the line?** Read the beat's phrase (§27B) and its function (§30B). The image must show *that* moment: the right action, the right object, the right emotional register (§30F), the right beat of the story. **Where the line carries a Visual Instruction Ledger row, the image shows that instruction (§27F).** A good image of the wrong moment is a REGENERATE.
 2. **Is the product right?** Shape, colour, placement, orientation, visibility per the Product Sheet (§8, §9, §9D). A wrong product is the most expensive failure in the pipeline.
 3. **Is the body whole?** One head, two arms, two legs, five fingers per visible hand; hidden parts hidden by the frame edge or an object (§27D).
-4. **Does it hold continuity?** Same person as the sheet (§19, §30E), same room as the plate (§30C, §30G), wardrobe for the story day (§14), axis and window side (§30C).
+4. **Does it hold continuity?** Same person as the sheet (§19, §30E), same room as the plate (§30C, §30G), wardrobe for the story day (§14), axis and window side (§30C). **In a scene (§24H), judged in its scene, never alone:** against the master, the previous approved frame in story order and the shot's state-track row — eyes, face, hair, wardrobe state, hands, position, condition. A state that resets or appears without its cause is a REGENERATE, and a continuity fault never ships as "the best of three" (§24H, Automatic — connected).
 5. **Is it the right register?** Mode and capture as locked (§18A, §22A, §22S), 9:16, framing scale (§22F), no garbled text (§17).
 6. **Will it animate?** It works as the start frame for the motion the beat needs (§6, §27A): room for the move, and the subject not frozen at the end state. **It is caught mid-action** (§27G rule 4): the weight already on one foot, the hand already moving, the head already turning — never a square, frozen pose. On a `pin_end` beat the end image is judged the same way and must match the start image in everything but the travel.
 
@@ -2838,7 +2838,7 @@ The fix is a named change to the prompt: a clause added, a string restated at fu
 2. **Is the product right in every frame?** It must not morph, swap sides, change size or lose its wordmark across the clip (§8, §9). Product drift that starts halfway through is the typical video failure. The first frame passing proves nothing.
 3. **Is the body whole in every frame?** No extra or merged fingers, no limbs passing through objects, no face melt (§27D).
 4. **Is the motion right?** The §27A arc runs and the clip is never at rest at the cut. Camera per §22B. Physics per §27C and §27E. No frozen run over 0.5s unless the beat is a hold. **And §27G:** one action at a real pace (no floaty slow motion, no rushed invented frames), the camera or the subject moves but not both, the product keeps its shape in every frame, and no cut or jump inside the clip.
-5. **Does it hold continuity?** The subject matches the sheet, the room matches the plate, the wardrobe matches the story day, and the axis and screen direction match `GEO-LINE` (§30C, §30E).
+5. **Does it hold continuity?** The subject matches the sheet, the room matches the plate, the wardrobe matches the story day, and the axis and screen direction match `GEO-LINE` (§30C, §30E). **In a scene (§24H): the join too** — this clip's true last frame against the next clip's true first frame (same state track, position, props, light), and no state appearing or vanishing inside the clip. Once every clip of a scene passes, the scene is judged as one strip in cut order (`SC-xx · SCENE` verdict).
 6. **Is it technically clean?** 9:16, the stated duration (E6), no black frames, no garbled on-screen text, and no cut inside the clip unless the beat is MULTI-SHOT (§29).
 7. **Is there enough footage for its slot?** The clip covers its §30H slot at 1.0x, or at no slower than 0.8x. Otherwise it is REGENERATE at a longer duration.
 
@@ -3469,6 +3469,7 @@ A scene is a maximal run of beats in one location in continuous story time. In M
 | **Emotion map** | Per character: ENTRY state · OBJECTIVE (what they want from the other person) · TURN (the line and what causes it) · EXIT state · SUBTEXT (what they feel and do not say) — §24I |
 | **Shot list** | Master, singles, reverses and inserts, each with its beat ID, shot scale, rig, duration, and each character's emotion at that moment (EMO, read off the map); per shot also its one action and pace (§27G), the speaker's PLAYING verb and each character's business (§24I parts 10–11), and its cut cue (§24K) |
 | **Camera plan** | The rig per shot and why, read off the emotion map; the tightest scale placed on the turn (§24K) |
+| **State track** | Per character per shot, in story order: eyes, face, hair, wardrobe state, hands, position, condition — carried until a shot shows the cause changing it (§24H, the state track) |
 | **Image list** | Every image the scene needs before any video — the inputs it reuses and the frames it generates, counted (§24H, the scene image list) |
 | **Delivery route** | Single-shot beats, or MULTI-SHOT (§29) |
 | **Transition in / out** | How this scene joins the one before and the one after |
@@ -3478,7 +3479,7 @@ A scene is a maximal run of beats in one location in continuous story time. In M
 1. **The master frame first.** The widest shot in the scene, with everyone placed where they will stay. It attaches the location plate (and the property plate for a dwelling), every character sheet in the scene, and the product reference if the product appears. It opens with `SCENE-MASTER`. Checked on the §5 first-frame habit plus the §24G items, then **locked as the scene's key**.
 2. **Coverage frames against the master.** Every other frame in the scene attaches the master as its first reference and opens with `SCENE-KEY`: same room, same moment, same light side, same look, same wardrobe, same prop positions, a new camera position on the same side of the action line, and the eyeline pointed at whoever is off frame.
 3. **Chained frames on continuing action.** Where a shot continues the action of the one before it (a match on action), it also attaches the approved previous frame and adds `CHAIN-FRAME`, naming only what has changed.
-4. **The contact sheet.** Before any video is generated for a scene, every frame on its image list is laid side by side in shot order and checked as one: light from the same side, same look, same wardrobe, same prop states, axis held, eyelines matching across reverses, same time of day, and **every character's expression progressing along the emotion map in story order, never resetting between shots**. Any frame that fails is rerolled against the master. **Only a passed contact sheet releases the scene to video.**
+4. **The contact sheet.** Before any video is generated for a scene, every frame on its image list is laid side by side in shot order and checked as one: light from the same side, same look, same wardrobe, same prop states, **every character's state track held shot to shot (no tears, flush, loose hair, rolled sleeve or held prop appearing or vanishing without its cause)**, axis held, eyelines matching across reverses, same time of day, and **every character's expression progressing along the emotion map in story order, never resetting between shots**. Any frame that fails is rerolled against the master. **Only a passed contact sheet releases the scene to video.**
 
 ### The scene image list — every image the scene needs, before any video *(2026-09-27)*
 
@@ -3510,7 +3511,37 @@ A scene is a maximal run of beats in one location in continuous story time. In M
 
 **Every row is counted before generation.** The list's total is the scene's image count, and the build's image budget is the sum of the lists. One render per call (§5); each image goes on the board as its own card the turn it lands — an end frame as `<beat>-END`, a prop reference as `<SC-xx>-PROP-<name>` — in the scene's act, Images box, as To check (Manual). The contact sheet (below) is laid out from this list, in shot order, with the end frames beside their start frames.
 
-**Reference order on every coverage call, five at most, each named in prose (§5):** the scene master → the featured character's sheet → a second character's sheet if both are in frame → the product reference → the previous frame when chaining.
+### The state track — nothing resets between cuts *(2026-09-27, user: "sometimes a man is crying then next cut he is not")*
+
+**Every frame is generated alone, so the model forgets what the scene has done to a person.** A man crying in one shot is dry-eyed in the reverse; a sleeve rolled up in the master is down in the close-up; the mug moves hands. The emotion map (§24I) says what a character feels; the **state track** says what their body and things visibly *carry* — and a carried state does not reset because the camera moved.
+
+**Written into the Scene Bible at step 5, one row per character per shot, in story order**, opening from the character-state ledger (§24H joins) and written back to it at the scene's end:
+
+| Track | Values (examples) |
+|---|---|
+| **EYES** | dry · wet rims · red-rimmed · one tear (only where the script calls for it, §24I) · dried tear tracks · puffy |
+| **FACE** | as sheet · flushed · pale · sweat at the hairline · a mark or smudge |
+| **HAIR** | as sheet · a strand loose · pushed back · wet · slept-on |
+| **WARDROBE STATE** | as the outfit row · sleeves rolled · top button undone · jacket off · a stain · shoes off |
+| **HANDS** | what each hand holds, which hand — the business prop (§24I part 11), the product, nothing |
+| **POSITION** | where they are in room terms and how (seated at the table's near end, standing at the sink) |
+| **CONDITION** | limp · brace · ice pack · bandage — and the product's state (absent, worn, held) |
+
+**The carry rule.** A state, once set, **persists in every later shot of the scene until a shot shows its cause changing it** — a hand wiping the eyes, a sleeve pulled down, a mug put on the table. Crying leaves red, wet eyes for the rest of the scene; they ease only across a TIME CUT (§24H joins), and then the next scene's opening row says so. A state that appears must have a cause on screen or in the line before it. Each shot's row is filled into `STATE-CARRY` on the frame and on the clip, so the prompt states it every time.
+
+**Frames are generated in story order, and each carries a state reference.** After the master, every character's frame attaches **that character's previous approved frame in the scene** as its state reference (the fifth reference slot below), whenever their state track is not "as sheet" — the model copies wet eyes, a rolled sleeve and a held mug far better from a picture than from words. A frame is never generated before the frame it continues from is approved.
+
+### Automatic — connected, and only what is needed *(2026-09-27, user: "only use images that is needed… everything should be like connected")*
+
+In an Automatic run (E0) the agent is the only check, so the scene is held to the strictest reading:
+
+1. **The image list is a ceiling, not a floor.** Automatic generates exactly the rows on the scene image list — no alternates, no spare angles, no "extra coverage in case", no second render to choose from (one render per call, §5). A shot enters the list only with a cut cue and a reason (a line, a reaction, an insert, a pinned end); a shot that has neither is removed from the shot list **before** generation, never generated and dropped. A REGENERATE replaces its row's frame; it never adds a row.
+2. **A frame is judged in its scene, never alone** (§22V Q4): against the master, the previous approved frame in story order, and the state track row — eyes, face, hair, wardrobe state, hands, position, condition, light side, axis.
+3. **A continuity or state fault never ships.** E2's "keep the best of three" does not apply to it. After two regenerations the route changes: the frame is made as an **edit of the previous approved frame** of that character — the previous frame as the only composition reference, the prompt changing only the camera position and what the state track says has changed. If that also fails, the shot is **cut from the list** and its moment is covered by an approved neighbour (the master, the listener, the previous single), logged in *Flags*. A disconnected frame is worse than one shot fewer.
+4. **The joins are checked, not just the clips** (§22W Q5): each clip's true last frame against the next clip's true first frame — same state, position, props, light — and within the clip, no state appearing or vanishing (tears that dry mid-clip are a REGENERATE).
+5. **The scene is judged as one before assembly.** Once every clip of a scene passes, the agent reads the contact sheets of the scene's clips in cut order as one strip and asks: does it play as one continuous moment? The verdict is logged as `SC-xx · SCENE · USE` or `SC-xx · SCENE · REGENERATE · <beat>: <fault> → <fix>`.
+
+**Reference order on every coverage call, five at most, each named in prose (§5):** the scene master → the featured character's sheet → a second character's sheet if both are in frame → the product reference → the previous frame when chaining, or the character's state reference (the state track, above).
 
 ### Joining scenes — the film's connective tissue
 
@@ -3524,15 +3555,15 @@ Each single-shot beat animates its own approved frame (I2V, §6). Every Seedance
 
 ### Assembly — Mode 4 T2I
 
-`CAM-FILM` → `SCENE-MASTER` or `SCENE-KEY` (+ `CHAIN-FRAME` / `SCENE-BRIDGE` where they apply) → `FILM-FRAME` → subject, `WARD-LINE`, `BODY-WHOLE`, `EMO-SEED` → the §22S stack on MEDIUM and tighter → `REF-PROD` / `PROP-REF` + `PROP-SHELL` / `SUBJ-REF` / `FACE-SEED` as they apply → `LIGHT-FILM` → `LOOK-[BUILD]` → `PHYS-FRAME-C` → `CAP-FILM` → negatives carrying `NEG-FILM` + `NEG-SCENECUT` + `NEG-BODY` + `NEG-SKIN` + `NEG-TEX` + scene, property and product negatives.
+`CAM-FILM` → `SCENE-MASTER` or `SCENE-KEY` (+ `CHAIN-FRAME` / `SCENE-BRIDGE` where they apply) → `FILM-FRAME` → subject, `WARD-LINE`, `BODY-WHOLE`, `EMO-SEED`, `STATE-CARRY` → the §22S stack on MEDIUM and tighter → `REF-PROD` / `PROP-REF` + `PROP-SHELL` / `SUBJ-REF` / `FACE-SEED` as they apply → `LIGHT-FILM` → `LOOK-[BUILD]` → `PHYS-FRAME-C` → `CAP-FILM` → negatives carrying `NEG-FILM` + `NEG-SCENECUT` + `NEG-BODY` + `NEG-SKIN` + `NEG-TEX` + scene, property and product negatives.
 
 **Absent:** `CAM-LOCK`, `CAM-FRONT`, `CAP-A`, `CAP-FILE`, `CAP-SHARP`, `NEG-M1`, `NEG-FILE`, `NEG-FINISH`, `NEG-FRAME`, `NEG-STAGED`, `BROLL-REAL`, `LIGHT-EVENT`, and every `FRAME-*` block.
 
 ### Assembly — Mode 4 I2V
 
-`INHERIT-FILM` → the §27A arc → the F-rig → `HOLD-C` + `HOLD-HC` (+ `HOLD-PC`) → `PHYS-MOTION-C` → negatives opening `NEG-WARP-C`, then the relevant `NEG-FILM` and `NEG-SCENECUT` clauses. On dialogue beats, `delivery` is `DRAMA-DELIVERY` (§24I), opening with `VOICE-OPEN` and closing with `AUD-FILM`. On dialogue and listener shots, `motion` carries `BUSINESS-LINE` (§24I part 11), then `LISTEN-LINE` on a listener. The F-rig follows §24K. `NEG-DRAMA` joins the negatives on every beat with a person in it.
+`INHERIT-FILM` → the §27A arc → the F-rig → `HOLD-C` + `HOLD-HC` (+ `HOLD-PC`) → `PHYS-MOTION-C` → negatives opening `NEG-WARP-C`, then the relevant `NEG-FILM` and `NEG-SCENECUT` clauses. On dialogue beats, `delivery` is `DRAMA-DELIVERY` (§24I), opening with `VOICE-OPEN` and closing with `AUD-FILM`. On dialogue and listener shots, `motion` carries `BUSINESS-LINE` (§24I part 11), then `LISTEN-LINE` on a listener. `STATE-CARRY` closes `motion` on every shot with a person in it. The F-rig follows §24K. `NEG-DRAMA` joins the negatives on every beat with a person in it.
 
-**NORMATIVE — `CAM-FILM`, `CAP-FILM`, `LOOK-PATTERN`, `LIGHT-FILM`, `FILM-FRAME`, `INHERIT-FILM`, `AUD-FILM`, `SCENE-MASTER`, `SCENE-KEY`, `CHAIN-FRAME`, `SCENE-BRIDGE`, `NEG-SCENECUT`, `RIG-F1`–`RIG-F5`, `MULTI-FILM`, `NEG-FILM` — see Appendix A.** Never trimmed: `SCENE-KEY`'s nothing-has-changed sentence, `LIGHT-FILM`'s source clause, and `FILM-FRAME`'s no-fill clause.
+**NORMATIVE — `CAM-FILM`, `CAP-FILM`, `LOOK-PATTERN`, `LIGHT-FILM`, `FILM-FRAME`, `INHERIT-FILM`, `AUD-FILM`, `SCENE-MASTER`, `SCENE-KEY`, `CHAIN-FRAME`, `SCENE-BRIDGE`, `STATE-CARRY`, `NEG-SCENECUT`, `RIG-F1`–`RIG-F5`, `MULTI-FILM`, `NEG-FILM` — see Appendix A.** Never trimmed: `SCENE-KEY`'s nothing-has-changed sentence, `LIGHT-FILM`'s source clause, and `FILM-FRAME`'s no-fill clause.
 
 ---
 
@@ -3695,13 +3726,13 @@ Unchanged from §24: animated film reads as family content. On an adult-buyer ad
 
 ### Assembly — Mode 5 T2I
 
-`CAM-ANIM` → `SCENE-MASTER` or `SCENE-KEY` (+ `CHAIN-FRAME` / `SCENE-BRIDGE`) → `FILM-FRAME` → each character's `PIX-SHAPE` fill from their sheet, `WARD-LINE`, `BODY-WHOLE`, `EMO-SEED` → `PIX-EYES` → `REF-PROD` + `PIX-SPLIT` / `PROP-REF` + `PROP-SHELL` / `SUBJ-REF` as they apply → `LIGHT-ANIM` → `LOOK-[BUILD]` → `PHYS-FRAME-C` → `CAP-ANIM` → negatives carrying `NEG-PIX` + `NEG-ANIMFILM` + `NEG-SCENECUT` + `NEG-DRAMA` + `NEG-BODY` + scene, property and product negatives.
+`CAM-ANIM` → `SCENE-MASTER` or `SCENE-KEY` (+ `CHAIN-FRAME` / `SCENE-BRIDGE`) → `FILM-FRAME` → each character's `PIX-SHAPE` fill from their sheet, `WARD-LINE`, `BODY-WHOLE`, `EMO-SEED`, `STATE-CARRY` → `PIX-EYES` → `REF-PROD` + `PIX-SPLIT` / `PROP-REF` + `PROP-SHELL` / `SUBJ-REF` as they apply → `LIGHT-ANIM` → `LOOK-[BUILD]` → `PHYS-FRAME-C` → `CAP-ANIM` → negatives carrying `NEG-PIX` + `NEG-ANIMFILM` + `NEG-SCENECUT` + `NEG-DRAMA` + `NEG-BODY` + scene, property and product negatives.
 
 **Absent:** `CAM-LOCK`, `CAM-FILM`, `CAP-A`, `CAP-FILE`, `CAP-FILM`, `LIGHT-FILM`, `PIX-LIGHT` (replaced by `LIGHT-ANIM`), the §22S skin stack, every `FRAME-*` block, `NEG-M1` and `NEG-FILM`.
 
 ### Assembly — Mode 5 I2V
 
-`INHERIT-ANIM` → the §27A arc → `PIX-MOTION` → `VCAM` + the F-rig → `HOLD-C` + `HOLD-HC` (+ `HOLD-PC`) → `PHYS-MOTION-C` → negatives opening `NEG-WARP-C`, then the relevant `NEG-PIX`, `NEG-ANIMFILM`, `NEG-SCENECUT` and `NEG-DRAMA` clauses. Dialogue beats take `DRAMA-DELIVERY` closing with `AUD-ANIM`; dialogue and listener shots take `BUSINESS-LINE`, then `LISTEN-LINE` on a listener. The F-rig follows §24K. Seedance calls run the §4 ingredient pack under `ING-MANIFEST`.
+`INHERIT-ANIM` → the §27A arc → `PIX-MOTION` → `VCAM` + the F-rig → `HOLD-C` + `HOLD-HC` (+ `HOLD-PC`) → `PHYS-MOTION-C` → negatives opening `NEG-WARP-C`, then the relevant `NEG-PIX`, `NEG-ANIMFILM`, `NEG-SCENECUT` and `NEG-DRAMA` clauses. Dialogue beats take `DRAMA-DELIVERY` closing with `AUD-ANIM`; dialogue and listener shots take `BUSINESS-LINE`, then `LISTEN-LINE` on a listener; `STATE-CARRY` closes `motion` on every shot with a person in it. The F-rig follows §24K. Seedance calls run the §4 ingredient pack under `ING-MANIFEST`.
 
 ### Product hero beats — Mode 5 *(V7.55.1)*
 
@@ -7258,6 +7289,10 @@ SCENE [ID] MASTER FRAME: the establishing shot of this scene, and the reference 
 ```
 THE SAME SCENE as the attached scene master frame: the same room, the same moment in the story, the same light from the same side, the same grade, the same wardrobe and the same prop positions. Nothing has changed and nothing has moved. This is a [SHOT SCALE] of [WHO], taken from [CAMERA POSITION, in action-line terms], on the same side of the action line as the master. [WHO IS OFF FRAME and where they are, so this character's eyeline points toward them].
 ```
+**`STATE-CARRY`** — every Mode 4 and Mode 5 frame and clip with a person in it, filled from the shot's state-track row (§24H). On a frame after `EMO-SEED`; on a clip it closes `motion`. **Never trimmed.** *(296)*
+```
+[NAME] still carries exactly what this scene has done to them so far: [STATE: eyes, face, hair, wardrobe state, what each hand holds, where they are]. None of it resets: it is the same as in the previous shot, except [WHAT HAS VISIBLY CHANGED, and its cause, or nothing]. It holds in every frame.
+```
 **`CHAIN-FRAME`** — added on a frame that continues the action of the one before it; the previous approved frame is attached. *(261)*
 ```
 This frame continues directly from the attached previous frame: the same action a moment later. [WHAT HAS CHANGED]. Everything else is exactly as it was: the same light, the same grade, the same wardrobe, and the same position for everything that has not moved.
@@ -7266,9 +7301,9 @@ This frame continues directly from the attached previous frame: the same action 
 ```
 This is the first frame of the next scene. It connects to the end of the previous scene through [TRANSITION: a matched shape, a matched action, the same object, or the same place later], so that [WHAT CARRIES ACROSS] reads straight through the cut. Since the previous scene, [WHAT HAS CHANGED: time, light, wardrobe, prop states].
 ```
-**`NEG-SCENECUT`** — every Mode 4 frame and clip inside a scene. *(380)*
+**`NEG-SCENECUT`** — every Mode 4 frame and clip inside a scene. *(531)*
 ```
-no light direction changing within the scene, no grade changing between shots, no wardrobe changing within the scene, no prop moving between shots unless shown moving, no character changing position between shots, no camera crossing the action line, no eyeline pointing the wrong way, no time of day changing within the scene, no different room, no extra people, no missing people
+no light direction changing within the scene, no grade changing between shots, no wardrobe changing within the scene, no prop moving between shots unless shown moving, no character changing position between shots, no camera crossing the action line, no eyeline pointing the wrong way, no time of day changing within the scene, no different room, no extra people, no missing people, no tears, redness or sweat appearing or vanishing between shots, no hair or clothing state resetting between shots, no prop jumping to the other hand
 ```
 **`RIG-F1`** — dolly push. `[DISTANCE]` 20–40 for a single, 60 or more for a reveal. **Only on a still subject** (§24K). *(396)*
 ```
@@ -7916,6 +7951,7 @@ Every generated batch ships its QA table alongside the prompts — the reconcili
 | AGENT_UNSURE | AGENT-FIRST read with no clear pass or fail (E0) — **not used for images, which always get a verdict (§22V)** | none | 0 | HUMAN — queued with the frame, the check and the agent's note |
 | IMAGE_REGENERATE | §22V verdict | regenerate with the named fix | 2 per fault | HUMAN — three versions and the verdict history |
 | CLIP_REGENERATE | §22W verdict | regenerate with the named fix | 2 per fault | HUMAN — three versions, sheets and the verdict history |
+| SCENE_BREAK | §22V Q4 / §22W Q5 in a scene (§24H): a state-track, position, prop or light fault against the neighbours or at a join | regenerate with `STATE-CARRY` restated and the state reference attached → the frame as an edit of the previous approved frame → cut the shot and cover it with an approved neighbour | 2, then the edit route once | none — never shipped as best-of-three; the cut is logged in *Flags* |
 | NEED_LONGER | §30H: a clip cannot fill its slot at ≥ 0.8x | regenerate that clip at the duration its slot needs | 2 | HUMAN |
 | IMAGE_FALLBACK | Higgsfield balance < image batch cost | route that batch and every later image batch to Kie AI (§5) | — | none — logged, not a stop |
 
@@ -7937,7 +7973,7 @@ One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t
 
 **Motion fields (2026-09-26, §27G).** Every B-roll and hook row also carries: `action` (the one thing that happens), `pace` (countable), `camera` (`sway` — moves but does not travel — or the one travelling move, only on a still subject), `staging` (the §27G hard-motion row it follows, or `none`), `pin_end` (yes when the product changes angle or the beat must end on an exact frame — the row then needs an approved end image as well as the start image) and `max` (E6, default 6s for human motion). A row missing any of them is not written to a prompt.
 
-**Film fields (2026-09-27, Modes 4 and 5, §24I/§24K).** Film rows also carry: `scene` (`SC-xx`), `camera` as the F-rig with its reason from the camera plan, `playing` (the speaker's transitive verb), `business` (each character's one piece of business and its pace), `cut_cue` (line · look · action · reaction) and `spine` (the story-spine beat). A film row missing any of them is not written to a prompt.
+**Film fields (2026-09-27, Modes 4 and 5, §24I/§24K).** Film rows also carry: `scene` (`SC-xx`), `camera` as the F-rig with its reason from the camera plan, `playing` (the speaker's transitive verb), `business` (each character's one piece of business and its pace), `cut_cue` (line · look · action · reaction), `spine` (the story-spine beat) and `state` (each character's state-track row for this shot, §24H). A film row missing any of them is not written to a prompt.
 
 **`key` (amended 2026-09-26, user).** Every B-roll row names its `key`: the word in its phrase that the picture shows (the noun or action on screen, never a filler like "and" or "when"). §30H cuts the clip in 3 frames before it. Leave it empty only when the picture is the phrase's first word. In a voice-only build the opening row has no key — its clip covers 0.00s. After generation, a row may add `peak`: the second in the clip where its action peaks, so the in-point lands it on the key word.
 
@@ -8082,6 +8118,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | 2026-09-26 | Generation Board change on the user's request: stage order Voice → VO → Talking heads; Voice checklist (everyone who speaks has a voice); VO locked per part; Talking heads removed when unused; film builds drop VO and Talking heads. | §16A | Written into §16A; cut pending |
 | 2026-09-27 | **Film modes upgraded — motion, camera, acting, story** (user: "upgrade the movie style" — both film modes, motion/camera and acting/story). New §24K: §27G holds in Modes 4 and 5; the F-rig is chosen by what the subject is doing (F1/F4 only on a still subject, a walk is F2 across a locked frame, F5 only where the reference edit follows a walk, waist-up, three or four steps); a camera plan per scene read off the emotion map, camera script by act on Look Sheet field 7; the tightest scale spent on the turn; a cut cue on every shot, enter late / leave early; MULTI-SHOT only when nobody moves, shots ≥ 2.5s. §24I parts 9–12: the story spine read from the script (never rewriting it), a PLAYING verb per line, one piece of business per dialogue/listener shot (`BUSINESS-LINE`) carrying the subtext tell, performance size by shot scale, generated-acting tells banned in `NEG-DRAMA` | §3B, §22B, §24G, §24H, §24I, §24J, §24K (new), §29, E4, Appendix A (`RIG-F1`, `RIG-F4`, `RIG-F5`, `MULTI-FILM`, `DRAMA-DELIVERY`, `NEG-DRAMA`, `BUSINESS-LINE` new), Open Decisions | Written; cut pending |
 | 2026-09-27 | **Scene image list** (user: "add the images needed for that scene"). Every Mode 4 / Mode 5 Scene Bible carries an image list written at step 5 from the shot list: the inputs it reuses (plates, character sheets, product views, a business prop reference only when the prop recurs or is handled at CU or tighter, outfit reference) and the frames it generates in order — bridge frame, master, one mid-action start frame per shot (MULTI-SHOT shots included), chained frames, an end frame for every pinned shot, inserts, mechanism frames — counted into the build's image budget; each on the board as its own card (`<beat>-END`, `<SC-xx>-PROP-<name>`); the scene goes to video only when every row is approved | §24H (new subsection, Scene Bible row, contact sheet) | Written; cut pending |
+| 2026-09-27 | **Connected scenes — the state track; Automatic makes only what is needed** (user: "in automation we need the image to be perfect and connected along the whole scene and only use images that is needed cause sometimes a man is crying then next cut he is not"). State track per character per shot (eyes, face, hair, wardrobe state, hands, position, condition), carried until a shot shows its cause; eases only across a TIME CUT; `STATE-CARRY` on every frame and clip with a person; frames generated in story order, each attaching the character's previous approved frame as state reference. Automatic: the image list is a ceiling (no alternates or spare coverage; unneeded shots cut before generation); frames judged in their scene; a continuity fault never ships as best-of-three — edit of the previous frame, else the shot is cut and covered by a neighbour; joins checked last frame → next first frame; a scene verdict before assembly | §24H (state track, Automatic — connected, reference order, contact sheet, assembly), §24J assembly, §22V Q4, §22W Q5, §3B, E4, Appendix A (`STATE-CARRY` new, `NEG-SCENECUT`), both skills | Written; cut pending |
 ---
 
 # OPEN DECISIONS
