@@ -51,6 +51,7 @@ SIG = {
     "NEG-FILM": "no phone camera look",
     "NEG-ANIMFILM": "no concept art",
     "MULTI-FILM": "within a single take",
+    "NEG-SOUND": "no music, no score, no sound effects",
 }
 RIGS = {  # rig signature → F-rig
     "F1": "Camera on a dolly", "F2": "Camera on a tripod", "F3": "Camera on an operator's shoulder",
@@ -149,6 +150,7 @@ def run(c):
         check("INHERIT string", SIG["INHERIT-FILM" if mode == 4 else "INHERIT-ANIM"] in p)
         check("NEG-SCENECUT", SIG["NEG-SCENECUT"] in p)
         check("NEG-FILM / NEG-ANIMFILM", SIG["NEG-FILM" if mode == 4 else "NEG-ANIMFILM"] in p)
+        check("NEG-SOUND (clips carry dialogue only, §24M)", SIG["NEG-SOUND"] in p)
         if kind in ("dialogue", "listener", "multi", "broll") and kind != "insert":
             check("STATE-CARRY", SIG["STATE-CARRY"] in p)
             check("NEG-DRAMA", SIG["NEG-DRAMA"] in p)

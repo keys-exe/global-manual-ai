@@ -13,6 +13,8 @@ builds/<BUILD>/intake/, then sorts every file by name and type:
   document named *script*               -> script
   document named *product* or *sheet*   -> product_sheet
   image (.jpg .jpeg .png .webp .heic)   -> product_images
+  audio named *sfx* or in an sfx folder -> sfx     (§24M sound effects, e.g. from Pixabay)
+  any other audio (.mp3 .wav .m4a …)    -> music   (§24M music tracks, e.g. from Pixabay)
   anything else                         -> unsorted (reported, never guessed)
 Documents (.txt .md .docx .pdf) are converted to .txt beside the original.
 Then runs fetch_inspo.py on the inspo videos for the §42 Part 1 measurements, and
@@ -28,6 +30,7 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 VIDEO = {".mp4", ".mov", ".webm", ".m4v"}
+AUDIO = {".mp3", ".wav", ".m4a", ".aac", ".ogg", ".flac"}
 IMAGE = {".jpg", ".jpeg", ".png", ".webp", ".heic"}
 DOC = {".txt", ".md", ".docx", ".pdf"}
 SHEET_CODE = {".py"}  # the Appendix B / E9 product_sheet.py
@@ -63,7 +66,8 @@ def main():
         sys.exit(2)
 
     files = sorted(p for p in dest.rglob("*") if p.is_file() and not p.name.endswith(".extracted.txt"))
-    sorted_ = {"loom": [], "inspo": [], "script": [], "product_sheet": [], "product_images": [], "unsorted": []}
+    sorted_ = {"loom": [], "inspo": [], "script": [], "product_sheet": [], "product_images": [],
+               "music": [], "sfx": [], "unsorted": []}
     for p in files:
         name, ext = p.stem.lower(), p.suffix.lower()
         if ext in VIDEO and "loom" in name:
@@ -72,6 +76,11 @@ def main():
             sorted_["inspo"].append(p)
         elif ext in IMAGE:
             sorted_["product_images"].append(p)
+        elif ext in AUDIO and ("sfx" in name or any(q.name.lower() in ("sfx", "sound effects", "sound-effects")
+                                                    for q in p.relative_to(dest).parents)):
+            sorted_["sfx"].append(p)
+        elif ext in AUDIO:
+            sorted_["music"].append(p)
         elif ext in DOC and "script" in name:
             sorted_["script"].append(p)
         elif ext in DOC | SHEET_CODE and ("product" in name or "sheet" in name):

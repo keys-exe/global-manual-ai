@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.64.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.64.1) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -69,6 +69,8 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **No trimming in the film modes (§24L, 2026-09-27).** Modes 4–5, AI Drama included: no E11 trim, no E11A house cut (narration used as generated), no cut inside a take, no speed change, no silences cut in the edit, no "Use only up to here" — a fault is regenerated (§22X). Editing is only the cut between whole shots at their designed cut cue. `trim.py` / `vo_trim.py --mode 4|5` refuse; `assemble.py` never changes speed on a Mode 4/5 plan.
 
+**Film sound (§24M, V7.64.1).** Film clips carry dialogue only (`NEG-SOUND`), cleaned by the ElevenLabs Voice Isolator; voice masters untouched. One music theme per film (Look Sheet field 9), varied by story part (sparse in the Problem, the theme at the Turn, full in the After). Per scene: one music cue continuous across all its clips (`MUSIC-CUE`, `eleven_music_v2`, instrumental, scene length + 2s), one looping room tone per location (`ROOM-TONE`), a film-wide SFX list — one sound per object (`SFX-LINE`, `eleven_text_to_sound_v2`) — one generation per call. `mix_scene.py` mixes each scene (music ducked under dialogue, −14 LUFS). Manual: on the board's Edit stage for the user; Automatic: mixed and delivered.
+
 **Video preflight (§22X, 2026-09-27, both run modes).** No paid video call — Seedance above all — is sent before it passes: the frame approved (Manual: the user's Confirm), the frame ready to move (Automatic: mid-action, room for the motion, hands whole or out, mouth clear on a speaking shot, product unambiguous, state track matched; Manual: the user's Confirm covers it — you do not look), `scripts/preflight.py <call.json>` PASS, and three named risks each prevented. **Two generations per shot at most:** the second only after the fault is diagnosed and fixed at its source (frame, prompt or motion) — never the same prompt resent; no third without the user. The master is the source of every close-up (a render against it, never a crop beyond 1.3×), so it is locked only when faces, worn details, props and product all read in it.
 
 **Script visual instructions are binding (§27F, V7.61.0).** Every visual note on the script (`VISUAL:`, `B-ROLL:`, `ON SCREEN:`, `SFX:`, `[brackets]`, `(parentheses)`, inline `[notes]`, the visual column of a VO | VISUAL table…) is kept out of the voice but **never dropped**: `script_lines.py --visual` lists them (`VN01`…) anchored to their spoken line, and they open the **Visual Instruction Ledger** at step 2. Step 5 assigns each row to the beat that shows it or the CapCut line that carries it (on-screen text verbatim). Follow it as written, don't substitute your own shot; a row that breaks a higher layer is flagged with the nearest compliant execution. §22V/§22W Q1 check it. Every row ends `verified` or `flagged` — none open at step 8.
@@ -102,6 +104,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 - `scripts/variants.py` — §30H hook variants: `<BUILD>_HK1.mp4` … each hook + the identical body, set-checked
 - `scripts/angles.py` — §30I/§30J: checks an act map / shot list for stuck angles (JUMP, RUN, WINDOW, DEFAULT, HEIGHT, WHY) and focus (FOCUS) and light rows (LIGHT); must pass before the act map is approved
 - `scripts/light_check.py` — §30K/§30L: `colour --ref <master> <frames|clips>` holds every shot of a scene to the master's warmth, tint, saturation and brightness (strict); `scene <frames>` compares a scene's frames' brightness, warmth and brighter half (a relit shot flags); `clip <clip>` flags flicker and drift (thresholds unverified)
+- `scripts/mix_scene.py` — §24M: mixes a film scene — isolated dialogue, looping room tone, one continuous music cue ducked under dialogue, SFX on their frames, −14 LUFS; checks the mix matches the picture length
 - `scripts/preflight.py` — §22X: lints a video call (`call.json`) before any credit is spent — required strings, slots, rig vs subject motion, verbatim dialogue and word budget, connector params, generation ≤ 2 with a `fix_note`, three prevented risks; any FAIL = not sent
 - `scripts/contact_sheet.py` — §22W: one image per clip (first → last frame), frozen/black runs, `--full` for zoom
 - `scripts/trim.py` — E11 trim pass (never on a §24I film voice master)
@@ -202,6 +205,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 24J. Mode 5: Pixar Film *(new V7.55.0 — visual check pending)*
 - 24K. Film Motion & Camera Grammar *(new 2026-09-27 — Modes 4 and 5)*
 - 24L. No Trimming in the Film Modes *(new 2026-09-27)*
+- 24M. Film Sound — music, room tone and sound effects *(new V7.64.1)*
 - 25. Style Lock Rule
 
 **BLOCK 6 — PERFORMANCE & MOTION**
@@ -321,6 +325,6 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 
 **OPEN DECISIONS**
 
-**CHANGELOG — V7.63.0 → V7.64.0 *(cut authorised)***
+**CHANGELOG — V7.64.0 → V7.64.1 *(cut authorised)***
 
-**CHANGELOG — V7.62.0 → V7.63.0 *(cut authorised)***
+**CHANGELOG — V7.63.0 → V7.64.0 *(cut authorised)***

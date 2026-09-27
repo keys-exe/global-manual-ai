@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.64.0 — supersedes all prior versions.** *(the film modes upgraded — motion and camera grammar, acting and story, the scene image list, the state track, connected scenes, voice emotion carried across cuts, US-feature camera packages and production value, no trimming, §24G–§24L; video preflight and two generations per shot, §22X; camera angle range, focus, lighting and the scene colour lock, all modes, §30I–§30L; the colour grade in the edit only, §40; who checks — Manual the user, Automatic the agent with final videos only — and `DIRECTIONS` on the intake, E0/§18B; the Edit Grammar — how the inspo presents its B-roll and cuts (full-frame, split-screen, picture-in-picture, punch-ins, transitions, captions, SFX) is read off its frames, locked as `EDIT-[BUILD]` and copied in both run modes: every B-roll row carries its layout, the prompt is framed for it, `assemble.py` renders split, picture-in-picture and punch-ins, and the rest is a CapCut line, §42 Part 3A/§18/§30H/§35/§40/E4; the Manual Drive run — a Drive link with `RUN: MANUAL` is fetched and absorbed by the agent exactly as in Automatic, the agent then generates and checks the avatars (step 3) itself and stops — the avatars are the user's decision; on the user's go, steps 4–5 follow as copy-ready prompts and the build continues in Manual, §1/§18/§18B/§31/§44/E0; intake fixes — a Loom MP4 in the Drive folder is sorted as the Loom brief, never as an inspo, §18B/§18C; `.docx` tables are read, so a two-column VO | VISUAL script is no longer extracted empty and its visual column enters the ledger row by row, §22U/§27F; speaker labels (`VO:`, `NARRATOR:`, `SARAH:`) are cut from spoken lines, never voiced, §22U; the script's visual instructions are binding — every note on the script is logged in the Visual Instruction Ledger, carried by a named beat or CapCut line, and checked in the image and clip verdicts, §27F; the Loom brief — an optional Loom link sent beside the Drive link, fetched, transcribed and framed by `scripts/fetch_loom.py`, its instructions followed like the script's own, §18C; Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.64.1 — supersedes all prior versions.** *(film sound — clips carry dialogue only, one music theme per film, one continuous music cue and room tone per scene, a film-wide SFX list, made on ElevenLabs and mixed by `mix_scene.py`, §24M; the film modes upgraded — motion and camera grammar, acting and story, the scene image list, the state track, connected scenes, voice emotion carried across cuts, US-feature camera packages and production value, no trimming, §24G–§24L; video preflight and two generations per shot, §22X; camera angle range, focus, lighting and the scene colour lock, all modes, §30I–§30L; the colour grade in the edit only, §40; who checks — Manual the user, Automatic the agent with final videos only — and `DIRECTIONS` on the intake, E0/§18B; the Edit Grammar — how the inspo presents its B-roll and cuts (full-frame, split-screen, picture-in-picture, punch-ins, transitions, captions, SFX) is read off its frames, locked as `EDIT-[BUILD]` and copied in both run modes: every B-roll row carries its layout, the prompt is framed for it, `assemble.py` renders split, picture-in-picture and punch-ins, and the rest is a CapCut line, §42 Part 3A/§18/§30H/§35/§40/E4; the Manual Drive run — a Drive link with `RUN: MANUAL` is fetched and absorbed by the agent exactly as in Automatic, the agent then generates and checks the avatars (step 3) itself and stops — the avatars are the user's decision; on the user's go, steps 4–5 follow as copy-ready prompts and the build continues in Manual, §1/§18/§18B/§31/§44/E0; intake fixes — a Loom MP4 in the Drive folder is sorted as the Loom brief, never as an inspo, §18B/§18C; `.docx` tables are read, so a two-column VO | VISUAL script is no longer extracted empty and its visual column enters the ledger row by row, §22U/§27F; speaker labels (`VO:`, `NARRATOR:`, `SARAH:`) are cut from spoken lines, never voiced, §22U; the script's visual instructions are binding — every note on the script is logged in the Visual Instruction Ledger, carried by a named beat or CapCut line, and checked in the image and clip verdicts, §27F; the Loom brief — an optional Loom link sent beside the Drive link, fetched, transcribed and framed by `scripts/fetch_loom.py`, its instructions followed like the script's own, §18C; Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -420,6 +420,7 @@ Prompt quality is half the job. Most product drift traces to execution, not word
 | **Kling video** — Kling B-roll, mechanism beats, any Kling I2V | **Kling** (Kling AI direct) | `kling-video-v3_0_omni` per §44 default 5 |
 | **Seedance 2.5** — every Seedance call, including the §24I film voice master | **Kie AI API** (`KIE_API_KEY`, `scripts/kie.py`) — not the *Higgsless* connector | `bytedance/seedance-2-5`, 720p |
 | Voice | ElevenLabs (§22U) | `eleven_v3` |
+| **Film music, room tone, sound effects, voice isolation** (§24M) | **ElevenLabs** connector | `eleven_music_v2` (instrumental) · `eleven_text_to_sound_v2` · `audio_isolation` — `generations_count` 1 |
 | Talking heads | HeyGen (§22U) | Avatar V |
 
 **Image fallback — Higgsfield out of credits.** Read the Higgsfield balance before every image batch. When it is below that batch's cost, the batch — and every image batch after it in the build — routes to the **Kie AI API**: `nano-banana-pro`, `nano-banana-2`, or `gpt-image-2-5-sunburst-text-to-image` / `-image-to-image` per the §18A lock, at 2K, 9:16. The whole arsenal exists on the Kie API, so nothing is substituted. *(Corrected V7.59.1: the Higgsless connector's catalogue lacked Sunburst; the API has it.)* The switch is recorded in the ledger with the balance that triggered it. It never switches back mid-build, so one build's images come from one platform after the switch point.
@@ -3422,7 +3423,7 @@ Mode 4 has no house look. **The kind of film — its grade, palette, glass, ligh
 | 6 | **OPTICAL TEXTURE** | Highlight roll-off, halation, lens softness | `LOOK-[BUILD]`, `CAP-FILM` |
 | 7 | **MOTION** | Which F-rigs this film uses, how fast the moves are, the cutting rhythm (average shot length from the inspo), the camera script by act (§24K), and the angles used by act (§30I) | Scene Bibles, `RIG-F*` |
 | 8 | **PERFORMANCE** | Acting register — how big, how still, how much is said under the line | §28 settings below |
-| 9 | **SOUND AND POST TEXTURE** | Production sound, room tone, foley, score, and the grain the edit adds | CapCut block |
+| 9 | **SOUND AND POST TEXTURE** | Production sound, room tone, foley, the **music theme** for the whole film (genre, instruments, tempo range, production, motif — §24M), and the grain the edit adds | CapCut block, `MUSIC-CUE` |
 
 ### The camera package — what US features are shot on *(2026-09-27, user: "the movie styles uses cameras for movies like US movies i want the same quality")*
 
@@ -3543,6 +3544,7 @@ A scene is a maximal run of beats in one location in continuous story time. In M
 | **Spine beat** | The story-spine beat this scene moves, and what is different at its end (§24I part 9) |
 | **Emotion map** | Per character: ENTRY state · OBJECTIVE (what they want from the other person) · TURN (the line and what causes it) · EXIT state · SUBTEXT (what they feel and do not say) — §24I |
 | **Shot list** | Master, singles, reverses and inserts, each with its beat ID, shot scale, rig, duration, and each character's emotion at that moment (EMO, read off the map); per shot also its one action and pace (§27G), the speaker's PLAYING verb and each character's business (§24I parts 10–11), and its cut cue (§24K) |
+| **Sound plan** | One music cue for the whole scene (`MUSIC-CUE`, with its swells and drops on cut cues or the turn), the location's room tone, and the scene's sound effects on their frames (§24M) |
 | **Camera plan** | The rig per shot and why, read off the emotion map; the tightest scale placed on the turn (§24K) |
 | **Colour key** | The scene's colours read off its master — light colour, set, wardrobe, accent, in-camera saturation — compiled into `COLOUR-KEY` (§30L) |
 | **State track** | Per character per shot, in story order: eyes, face, hair, wardrobe state, hands, position, condition — carried until a shot shows the cause changing it (§24H, the state track) |
@@ -3802,7 +3804,7 @@ The §24G sheet with three fields changed. It is derived the same way: the inspo
 | 6 | **DESIGN AND MATERIALS** | Shape language, proportions, and how stylized skin, hair, fabric and surfaces are |
 | 7 | **MOTION AND ANIMATION STYLE** | F-rigs used and their speed, cutting rhythm, the camera script by act (§24K), and animation timing: how snappy or naturalistic, how much squash and stretch (never on the product) |
 | 8 | PERFORMANCE | How big the acting is, and how much sits under the line |
-| 9 | SOUND | Studio voice style, foley, score |
+| 9 | SOUND | Studio voice style, foley, the music theme for the whole film (§24M) |
 
 Compiled into `LOOK-[BUILD]` from `LOOK-ANIM-PATTERN` and pasted verbatim on every frame.
 
@@ -3919,6 +3921,58 @@ A MULTI-SHOT clip (`MULTI-FILM`, §29) covers dialogue with **everyone in it sti
 **What remains is editing, not trimming:** where one whole shot ends and the next begins. Every shot is generated to its designed length and **cut at its designed cut cue** (§24K part 4) — the only frames not shown are the generator's static lead-in before the first moving frame and anything after the cue. The cut cue is set in the shot list before generation, never found afterward by shaving the take.
 
 **Instruments refuse it:** `trim.py` and `vo_trim.py` take `--mode` and refuse 4 and 5; `assemble.py` never changes speed when the plan's `mode` is 4 or 5 (a gap is `NEED_LONGER` — regenerate longer).
+
+---
+
+## 24M. Film Sound — music, room tone and sound effects, one plan per scene *(new 2026-09-27, user: "the background music how can we make them consistent all through out the scene cause sometimes there are multiple clips inside a scene and a bgm should depend on the mood/emotion of the story and sound effects too" · "lets use elevenlabs music and sound effects")*
+
+**Scope: every Mode 4 and Mode 5 build, both run modes.** Seedance generates sound on every clip, so a scene cut from several clips gets several different musics, rooms and effects that restart at every cut. **So generated clips carry the dialogue only, and everything else is built once per scene in the edit and laid across its cuts.**
+
+### 1. Clips carry dialogue only
+
+- Every film clip prompt asks for dialogue with no music and no sound effects (`AUD-FILM` / `AUD-ANIM`, `NEG-SOUND`); a clip with no dialogue asks for no music.
+- Each dialogue clip's audio goes through the **ElevenLabs Voice Isolator** (`audio_isolation`), which keeps the voice and drops whatever room, music or effects Seedance generated. The voice itself is not cut or re-timed (§24L) — only the background is removed. *(Unverified on Seedance audio — first build.)*
+- Voice masters (§24I part 7) are never isolated or cleaned; they stay exactly as generated.
+
+### 2. The film's music theme — one family, varied by the story
+
+Look Sheet field 9 (§24G; Mode 5 field 9) records the **music theme** for the whole film: genre, the key instruments, the tempo range, production style, and a short motif description. Like the look, **one music family per film**. Every scene's cue is a variation of it, chosen by the emotion map:
+
+| Story part (§3B) | Cue |
+|---|---|
+| Before / everyday | light and warm, the theme only hinted, sparse |
+| Problem | low and sparse — solo piano or cello, space between notes, slower |
+| Turn | the theme arrives — or the music drops to silence on the TURN word and returns after |
+| After | the full theme, warm, more instruments, a gentle lift |
+| Mirror scene (§3B) | the hook's cue, resolved into the After's version |
+| Offer & Close | the theme at its fullest, steady under the narrator |
+
+### 3. The sound plan — one per scene, in the Scene Bible
+
+| Layer | Rule |
+|---|---|
+| **Music** | **One cue per scene, continuous across every clip** — never restarting at a cut. Written as `MUSIC-CUE`: the film theme + the scene's variation + how the energy moves across the scene with times (starts at, swells at, drops out at). Swells and drops land on cut cues or the turn, never mid-line. It changes only at a scene boundary, or at the scene's turn by design. A scene may be marked *no music* — silence is a choice. |
+| **Room tone** | **One continuous background per location**, looped under the whole scene (a fridge hum, rain on a window, distant traffic) — from the light plan's world (§30K). Written as `ROOM-TONE`, generated once per location as a seamless loop and reused in every scene there. |
+| **Sound effects** | Tied to on-screen actions, shot by shot, at the frame they happen (a cup set down, a door, footsteps, a chair). **One sound per object for the whole film** — the same door always sounds like the same door: a film SFX list (`SFX-<OBJECT>-<ACTION>`), each generated once with `SFX-LINE` and reused. |
+| **Levels** | Dialogue on top; the music about 18 dB under and ducked a further ~8 dB while anyone speaks; room tone about 30 dB under; effects at their natural level. Final mix −14 LUFS integrated, true peak −1 dB (phone and social delivery). |
+
+### 4. Made once, through the ElevenLabs connector (§5)
+
+- **Music:** `eleven_music_v2`, `instrumental: true`, `duration_seconds` = the scene's locked length + 2s, **one generation per scene** (`generations_count: 1`, §5 one render per call), prompted with `MUSIC-CUE` (the sound, never the picture — the model's own guide). **Alternative to test:** the **Video-to-Music** node on the scene's locked cut, steered by the same `MUSIC-CUE` — it scores the scene's own pacing *(unverified — Open Decisions)*.
+- **Room tone:** `eleven_text_to_sound_v2`, `loop: true`, 20–30s, one per location.
+- **Sound effects:** `eleven_text_to_sound_v2`, one sound per generation (layered sounds get one generation each), default short duration, one per SFX list entry.
+- **Commercial use:** the ElevenLabs plan on the account must permit commercial use of generated music and effects — checked once per account *(unverified here)*.
+- Music supplied by the user in the Drive folder (`music/`, `sfx/` — `fetch_drive.py` sorts them) replaces the generated cue for that scene.
+
+### 5. The mix
+
+`scripts/mix_scene.py <scene.json>` builds each scene's sound on its picture-locked cut: the isolated dialogue at 0 dB, the room tone looped under the whole scene, the music cue at its level and ducked under the dialogue, every effect at its time — normalised to −14 LUFS — and checks the mix is exactly the picture's length. The picture is copied untouched. **Automatic** mixes every scene this way and joins them; **Manual** puts each scene's music, room tone and effects on the board's Edit stage for the user's check, with the `scene.json` and the CapCut lines (`FILM-CAPCUT` / `ANIM-CAPCUT`).
+
+### 6. Checks
+
+The music never restarts inside a scene; the room tone never changes at a cut; every effect sits on its action's frame; the same object sounds the same across the film; the music follows the emotion map. **Manual:** the user listens on the board. **Automatic:** the agent reads the mix's loudness at every cut (no jump in the room tone or music) and listens to the cue's description against the scene's emotion map; a restart, a jump or an effect off its frame is regenerated or re-placed.
+
+**NORMATIVE — `MUSIC-CUE`, `ROOM-TONE`, `SFX-LINE`, `NEG-SOUND` — see Appendix A.**
 
 ---
 
@@ -7626,6 +7680,22 @@ no flickering light, no exposure pumping, no light changing across the clip, no 
 ```
 THE COLOURS OF THIS SCENE, exactly as in the attached master frame: the light is [LIGHT COLOUR]; [SET COLOURS]; [WHO] wears [WARDROBE COLOURS]; [ACCENT]. Colours are [SATURATION AND CONTRAST IN CAMERA], natural and ungraded. No colour in this shot differs from the rest of the scene.
 ```
+**`MUSIC-CUE`** — one per scene, Modes 4–5 (§24M). `eleven_music_v2`, instrumental, the scene's length + 2s. Describes the sound only. *(336)*
+```
+[FILM MUSIC THEME: genre, key instruments, production style], [THIS SCENE'S VARIATION: mood and energy in sound terms], instrumental, [TEMPO: slow / moderate, in plain words]. [HOW THE ENERGY MOVES: e.g. starts sparse and quiet, builds gently from about 12 seconds, drops to near silence at about 20 seconds, returns softly to the end].
+```
+**`ROOM-TONE`** — one per location (§24M). `eleven_text_to_sound_v2`, `loop: true`, 20–30s. *(165)*
+```
+[THE ROOM'S CONSTANT SOUND: e.g. quiet kitchen room tone, soft fridge hum, faint distant traffic through a closed window], steady and even, no events, seamless loop.
+```
+**`SFX-LINE`** — one per entry on the film's SFX list (§24M). `eleven_text_to_sound_v2`, one sound per generation. *(148)*
+```
+[ONE SOUND, named concretely: e.g. ceramic mug set down on a wooden table], [TEXTURE: soft thud, light clink], [SPACE: close-mic, small quiet room].
+```
+**`NEG-SOUND`** — the audio negatives of every Mode 4–5 clip (§24M). *(101)*
+```
+no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming
+```
 **`CAM-FILM`** — opens every Mode 4 T2I. `[CAMERA AND FORMAT]`, `[LENS FAMILY]`, `[COLOUR SCIENCE]` from the §24G camera package (Look Sheet field 2); `[FOCAL]` and `[STOP]` by shot scale from the package table; `[RIG]` in plain words. Replaces `CAM-LOCK`. *(443)*
 ```
 Photographed as a single frame from a US feature film, shot on [CAMERA AND FORMAT] with [LENS FAMILY] at [FOCAL]mm and [STOP], 24 frames per second with a 180-degree shutter, in [COLOUR SCIENCE] colour, the camera on [RIG] and operated by a feature crew who framed and lit this moment on purpose. A still lifted from the finished film, not a photograph and not a phone video, composed natively for a vertical 9:16 frame with no letterbox bars.
@@ -7654,9 +7724,9 @@ The set is dressed and layered like a feature production: [FOREGROUND ELEMENT] s
 ```
 The look exactly as in the start frame: same lens, same depth of field, same colours, same light direction and same optical texture. Nothing about the look changes across the clip. 24 frames per second with a 180-degree shutter, so moving hands and objects carry natural motion blur.
 ```
-**`AUD-FILM`** — replaces `AUD-A` in Mode 4 `delivery`. *(316)*
+**`AUD-FILM`** — replaces `AUD-A` in Mode 4 `delivery`. *(355)*
 ```
-Audio is clean production sound from a boom microphone just out of frame above the speaker: close, clear and even, with a little of the room's natural tone behind the voice. Breath and mouth detail are present but never exaggerated. No phone-microphone proximity, no compression pumping, no music under the dialogue.
+Audio is clean production sound from a boom microphone just out of frame above the speaker: close, clear and even, with a little of the room's natural tone behind the voice. Breath and mouth detail are present but never exaggerated. No phone-microphone proximity, no compression pumping, no music and no sound effects anywhere in the clip — dialogue only.
 ```
 **`SCENE-MASTER`** — opens the master frame of every scene, from the Scene Bible. *(390)*
 ```
@@ -7757,9 +7827,9 @@ The look exactly as in the start frame: same design, same materials, same light 
 ```
 The camera is a virtual camera inside the animated scene, moving exactly as a real film camera on this rig would, with the same weight and the same timing:
 ```
-**`AUD-ANIM`** — replaces `AUD-FILM` in Mode 5 `delivery`. *(242)*
+**`AUD-ANIM`** — replaces `AUD-FILM` in Mode 5 `delivery`. *(277)*
 ```
-Audio is a clean studio voice performance recorded for animation: close, clear and fully acted, with breath, texture and small human sounds in it, never flat and never read out. No room echo, no phone quality, and no music under the dialogue.
+Audio is a clean studio voice performance recorded for animation: close, clear and fully acted, with breath, texture and small human sounds in it, never flat and never read out. No room echo, no phone quality, and no music or sound effects anywhere in the clip — dialogue only.
 ```
 **`NEG-ANIMFILM`** — every Mode 5 beat, alongside `NEG-PIX`. *(356)*
 ```
@@ -7780,13 +7850,13 @@ INSERT: the product alone, filling the middle of the frame, [WHERE IT IS: restin
 ```
 Without a cut, [NAME]'s [REGION] turns gently see-through, as if the film is letting us look inside: a simplified [TARGET] and [BONES], modelled in this film's own shapes and materials and softly lit from within. [THE SENSATION: the behaviour from the §12A sensation library, in warm colour at [SITE]]. The product, where it is worn, stays solid and real on the outside of the limb and visibly does its job. Clear, friendly and easy to read, never medical and never frightening.
 ```
-**`FILM-CAPCUT`** — CapCut instruction for every Mode 4 build (§40). Never a prompt. *(850)*
+**`FILM-CAPCUT`** — CapCut instruction for every Mode 4 build (§40). Never a prompt. *(940)*
 ```
-Standing film-mode lines (the grade lives here, never in a prompt, §40): match each clip to its scene master in exposure and white balance, one adjustment per scene, then `light_check.py colour` on the scene · then one LUT from the Look Sheet across every clip · one grain pass at the Look Sheet's size and strength across the whole film, never per clip · export at native 720×1280, no upscale (§24G finishing) · halation only if field 6 calls for it · the §12A render takes a matched contrast and black-level pass, never the LUT's colour shift · no stabilisation on shoulder shots · sound in layers: dialogue, one continuous room tone per scene, foley for steps, doors, cups and cloth, score only where the Scene Bible marks it, ducked under dialogue · J and L cuts on dialogue across picture cuts · time cards and captions in the film's type style.
+Standing film-mode lines (the grade lives here, never in a prompt, §40): match each clip to its scene master in exposure and white balance, one adjustment per scene, then `light_check.py colour` on the scene · then one LUT from the Look Sheet across every clip · one grain pass at the Look Sheet's size and strength across the whole film, never per clip · export at native 720×1280, no upscale (§24G finishing) · halation only if field 6 calls for it · the §12A render takes a matched contrast and black-level pass, never the LUT's colour shift · no stabilisation on shoulder shots · sound per the scene's sound plan (§24M): the isolated dialogue, the location's room tone looped under the whole scene, one music cue continuous across the scene's cuts and ducked under dialogue, the film's SFX list on their frames — `mix_scene.py`, −14 LUFS · J and L cuts on dialogue across picture cuts · time cards and captions in the film's type style.
 ```
-**`ANIM-CAPCUT`** — CapCut instruction for every Mode 5 build (§40). Never a prompt. *(467)*
+**`ANIM-CAPCUT`** — CapCut instruction for every Mode 5 build (§40). Never a prompt. *(598)*
 ```
-Standing Mode 5 lines (the grade lives here, never in a prompt, §40): match each clip to its scene master, one adjustment per scene, then `light_check.py colour` · the Look Sheet LUT only if field 5 calls for one · no grain and no halation · sound in layers: studio dialogue, room tone per scene, foley, score only where the Scene Bible marks it, ducked under dialogue · J and L cuts on dialogue across picture cuts · time cards and captions in the film's type style.
+Standing Mode 5 lines (the grade lives here, never in a prompt, §40): match each clip to its scene master, one adjustment per scene, then `light_check.py colour` · the Look Sheet LUT only if field 5 calls for one · no grain and no halation · sound per the scene's sound plan (§24M): the isolated dialogue, the location's room tone looped under the whole scene, one music cue continuous across the scene's cuts and ducked under dialogue, the film's SFX list on their frames — `mix_scene.py`, −14 LUFS · J and L cuts on dialogue across picture cuts · time cards and captions in the film's type style.
 ```
 
 ## Negatives
@@ -8413,6 +8483,7 @@ Superseded B-roll rule, kept for reference: B-roll calls: 5s (the Higgsfield flo
 - **Kling — Kling connector:** `who_am_i` once per session for the live argument spec, then `image_to_video {model: "kling-video-v3_0_omni", …}` with the start image; `query_tasks` to poll; `query_membership_and_credits` before every batch.
 - **Seedance — Kie API:** `POST https://api.kie.ai/api/v1/jobs/createTask {model: "bytedance/seedance-2-5", input: {prompt: <ING-MANIFEST + prose>, reference_image_urls: [<composition first>], reference_audio_urls: [<voice master>] on dialogue, resolution: "720p", aspect_ratio: "9:16", duration: <E6, 4–30, never -1>, generate_audio: true, output_format: "mp4"}}` → poll `GET /jobs/recordInfo?taskId=` until `state` is `success` or `fail`; the video is `resultJson.resultUrls[0]`. **Never `first_frame_url`** — it is mutually exclusive with references, and that is first-frame mode, retired at V7.54.1. Balance: `GET /chat/credit`. All of this is wrapped in `scripts/kie.py seedance`.
 - **File upload — Kie API:** `POST https://kieai.redpandaai.co/api/file-stream-upload` (multipart `file`, `uploadPath`, `fileName`) → `data.downloadUrl`.
+**Film sound (ElevenLabs connector, §24M):** music — `creative_generate_in_flow {node_type: "music", model_id: "eleven_music_v2", prompt: <MUSIC-CUE>, generations_count: 1}` with `duration_seconds` = scene length + 2 and `instrumental: true` set on the node; room tone and effects — `{node_type: "sfx", model_id: "eleven_text_to_sound_v2", prompt: <ROOM-TONE | SFX-LINE>, generations_count: 1}` (`loop: true` on room tone); isolation — a `voice-isolator` node (`audio_isolation`) fed the clip's audio; poll `creative_get_flow_run_status`. *(Node parameters verified against the workspace's node list; no render yet.)*
 **Waits:** `jobs_wait` on every T2I before its I2V; batch order never implies completion order — on every route.
 
 ## E8. Boundary definitions
@@ -8570,6 +8641,8 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 **§24K film motion and §24I parts 9–12 — visual check, first use** *(2026-09-27)*. One two-hander scene: a MULTI-SHOT clip with both characters seated and each on their business, one F1 push landing on the TURN word, and one walk as F2 across a locked frame. Judge: does anything warp during movement, does the business read as ordinary and carry the tell on its word, does the push feel motivated rather than decorative, and do the generated-acting tells (nodding, constant smile, gesture per phrase) stay out? Settles by looking.
 
+**§24M film sound — first use** *(2026-09-27)*. One scene of three or more clips: the Voice Isolator on each dialogue clip (does the voice survive clean, with no artefacts), one `MUSIC-CUE` against the Video-to-Music node on the same locked cut (which follows the scene better), the room tone looped under the cuts, and `mix_scene.py` — does the music stay continuous, does the ducking sit right by ear, and does the room never jump at a cut? Settles by listening.
+
 **V7.55.1 film-mode beats — visual check, first use.** One `HERO-FILM` reveal insert, one `MECH-SCREEN` push into the §12A render with its matched grade, and one `ANIM-XRAY` beat. Judge: does the insert read as a story moment rather than product photography, does the cut from screen to render feel motivated, and does the X-ray read as friendly and clear while the product still visibly works? Settles by looking.
 
 **Media upload to Drive (§18B).** Public URLs for Kie inputs are closed (V7.59.1: Kie file upload). Still open: putting images, video and voice files into the Drive `OUTPUT` folder. Candidate: a Google service account key as an environment secret, with folders shared to it as Editor. Unverified.
@@ -8585,6 +8658,20 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **E11 trim pass — first production run.** One talking-head beat through the full procedure. Judge: does every cut land between words, does any joint click, does the entry breath survive at 120 ms, and does the keep-list silence survive at its listed length? Then one A/B of `auto-editor` against the transcription route on the same clip. Settles by instrument plus one listen.
 
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
+
+---
+
+# CHANGELOG — V7.64.0 → V7.64.1 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **24M** *(new)* | Film Sound: clips carry dialogue only (`NEG-SOUND`, `AUD-FILM` / `AUD-ANIM`), cleaned by the ElevenLabs Voice Isolator; one music theme per film (Look Sheet field 9) varied by the story part; a sound plan per scene — one continuous music cue (`MUSIC-CUE`) that never restarts at a cut, one looping room tone per location (`ROOM-TONE`), a film-wide SFX list with one sound per object (`SFX-LINE`), levels and −14 LUFS; made on the ElevenLabs connector (`eleven_music_v2`, `eleven_text_to_sound_v2`, `audio_isolation`), one generation per call; mixed by `mix_scene.py` |
+| **5, E7** | ElevenLabs routes and call templates for film music, room tone, effects and voice isolation |
+| **24G, 24J, 24H** | Look Sheet field 9 carries the music theme; the Scene Bible gains the sound plan |
+| **Appendix A** | New: `MUSIC-CUE`, `ROOM-TONE`, `SFX-LINE`, `NEG-SOUND`. Amended: `AUD-FILM`, `AUD-ANIM`, `FILM-CAPCUT`, `ANIM-CAPCUT` |
+| Files | New: `scripts/mix_scene.py`. Amended: `scripts/preflight.py` (`NEG-SOUND` on every film clip), `scripts/fetch_drive.py` (sorts `music/` and `sfx/` audio the user supplies). Both skills and `CLAUDE.md` |
+
+**Origin:** user — "the background music how can we make them consistent all through out the scene… a bgm should depend on the mood/emotion of the story and sound effects too", then "lets use elevenlabs music and sound effects". Voice masters confirmed unchanged: generated first, neutral, one per speaking character (§24I part 7). **Unverified until the first film build:** the Voice Isolator on Seedance audio, Music vs Video-to-Music, the ducking by ear, and the account's commercial-use terms — Open Decisions.
 
 ---
 
@@ -8608,21 +8695,4 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | Files | New: `scripts/preflight.py`, `scripts/angles.py`, `scripts/light_check.py`. Amended: `scripts/trim.py`, `scripts/vo_trim.py` (`--mode` refuses 4–5), `scripts/assemble.py` (no speed change on a Mode 4/5 plan). Both skills and `CLAUDE.md` |
 
 **Origin:** user instructions, 2026-09-26 to 2026-09-27 — "upgrade the movie style", "add the images needed for that scene", "in automation we need the image to be perfect and connected along the whole scene… sometimes a man is crying then next cut he is not", "voices emotions", "seedance is expensive… strict checking", "the camera angles too", "camera focuses too", "lighting too", "cameras for movies like US movies", "720p cause we only gonna watch it on phones", "the color grades should be on the edit section… the colors of a scene all of them should be consistent", "trimming should not be allowed in the movie style", "for the manual ill be the one to check every generation… for automation you will be the one who will check everything", "the film look sheet you will be the one making that". **Unverified until the first film build:** every instrument threshold (`light_check.py`, the voice-join measures), the §24K MULTI-SHOT stillness rule, and the camera-package pull — the Open Decisions visual checks settle them.
-
----
-
-# CHANGELOG — V7.62.0 → V7.63.0 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **42** *(new Part 3A)* | The Edit Grammar: how the reference presents its B-roll (full, split, picture-in-picture, cutout, card), talking-head moves, transitions, speed, captions, overlays and SFX — read off frames, IDs `EG01…`, compiled to `EDIT-[BUILD]`, a style axis that wins over house defaults. Part 1: shot frames and per-second contact sheets; Part 2: layout column |
-| **18** | Step 1 reads the Edit Grammar; step 5 gives every B-roll row its layout; step 8 carries every device the rough cut does not render |
-| **30H** | Layouts: `split`, `pip` and punch-ins rendered by `assemble.py`; voice-only builds FAIL them; every §30H rule holds per layout |
-| **35** | A non-full B-roll is framed for its crop |
-| **40** | The CapCut block opens with `EDIT-[BUILD]` and carries every device with its `EG` ID |
-| **E4** | `layout` and `EG` IDs on the act-map row |
-| **44** | Default 87 |
-| Files | `scripts/fetch_inspo.py` (shot frames, per-second sheets), `scripts/assemble.py` (layouts, punch-ins), `scripts/variants.py` (passes them through), both skills |
-
-**Origin:** user instruction — "use the inspo video on how we do things like the edits, and how the B-rolls work, if it's an overlay — for both runs." **Measured:** scene detection does not register a split-screen or picture-in-picture appearing over a held shot, which is why the per-second sheets exist.
 
