@@ -10,3 +10,5 @@ edit/parts_music/
 sound/*.wav
 sound/*.mp3
 sound/*.mp4
+edit/parts_film/
+edit/*.mkv
