@@ -6,3 +6,7 @@ edit/*.mkv
 edit/*.mp4
 edit/parts/
 edit/parts_raw/
+edit/parts_music/
+sound/*.wav
+sound/*.mp3
+sound/*.mp4
