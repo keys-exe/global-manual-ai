@@ -25,6 +25,7 @@ CALL.json describes one paid video call exactly as it will be sent:
     "prefer_multi_shots": "false",
     "generation": 1,                   # 1 = first try, 2 = the one fix; 3+ is refused (§22X)
     "fix_note": "diagnosed fault → the change made (required on generation 2)",
+    "rack": null | {"from": "...", "to": "...", "cue": "..."},   # §30J focus change inside the clip
     "risks": [{"risk": "...", "prevented_by": "..."}]   # top three failure modes and the clause that prevents each
   }
 
@@ -128,6 +129,20 @@ def run(c):
             check("F5 framed waist-up", "waist" in p.lower())
     if kind == "multi":
         check("MULTI-SHOT only when nobody moves", sm == "still", f"subject {sm}")
+
+    # 5b. Focus (§30J)
+    rk = c.get("rack")
+    if rk:
+        check("rack: cue named", bool(rk.get("cue")))
+        check("rack: subject still", sm == "still", f"subject {sm}")
+        if film:
+            check("rack: no travelling rig", not (set(rigs) & TRAVEL_RIGS), ",".join(rigs))
+            check("rack: pull written", "focus pulls" in p or "pulls focus" in p)
+        else:
+            check("rack: Mode 1 tap-to-focus", "tap" in p.lower(), "phones tap to focus — never a clean pull (§30J)")
+        check("rack: one focus change", len(re.findall(r"focus (?:pulls|shifts|jumps)", p)) <= 1)
+    if film:
+        check("FOCUS-LINE", "FOCUS:" in p, "the shot names what is sharp (§30J)")
 
     # 6. Film strings
     if film:

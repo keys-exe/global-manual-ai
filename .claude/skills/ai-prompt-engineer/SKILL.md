@@ -59,6 +59,8 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Camera angle range (§30I, 2026-09-27, all modes).** Every B-roll and film row names its angle — height (ground · low · eye · high · overhead), side (front · three-quarter · profile · three-quarter-back · behind · OTS), foreground (clean · through · reflection) — with a reason from the meaning table (high = small/overwhelmed, low = resolve, overhead = routine/hands, ground = steps/feet, profile = distance, through = watched). `scripts/angles.py` must pass before the act map is approved: no jump cuts, no angle three in a row, ≥ 3 setups in any five shots, eye-level frontal ≤ a third, not all one height. `ANGLE-LINE` in every T2I; the inspo's angle range wins; faces, motion, product, Mode 1 phone plausibility and the film axis limit it.
 
+**Camera focus (§30J, 2026-09-27, all modes).** Every B-roll and film row names its focus — plane (nearest eye · hands · product · foreground · background · deep), depth and any focus change. Always sharp: the nearest eye on a face, the product on a product beat, the hands on a hands beat. Phones deep (shallow only within ~30cm); film shallow from CU in; never shallow on WIDE/FULL or on more than two thirds of a group. A focus change is one per clip, on a named cue, with a still subject and camera — a clean pull in Modes 4–5, a tap to focus in Mode 1 (clean rack stays banned). `FOCUS-LINE` after `ANGLE-LINE`; `angles.py` and `preflight.py` check it.
+
 **Video preflight (§22X, 2026-09-27, both run modes).** No paid video call — Seedance above all — is sent before it passes: the frame approved (Manual: the user's Confirm), the frame ready to move (mid-action, room for the motion, hands whole or out, mouth clear on a speaking shot, product unambiguous, state track matched — in Manual a risk is raised to the user, not judged), `scripts/preflight.py <call.json>` PASS, and three named risks each prevented. **Two generations per shot at most:** the second only after the fault is diagnosed and fixed at its source (frame, prompt or motion) — never the same prompt resent; no third without the user. The master is the source of every close-up (a render against it, never a crop beyond 1.3×), so it is locked only when faces, worn details, props and product all read in it.
 
 **Script visual instructions are binding (§27F, V7.61.0).** Every visual note on the script (`VISUAL:`, `B-ROLL:`, `ON SCREEN:`, `SFX:`, `[brackets]`, `(parentheses)`, inline `[notes]`, the visual column of a VO | VISUAL table…) is kept out of the voice but **never dropped**: `script_lines.py --visual` lists them (`VN01`…) anchored to their spoken line, and they open the **Visual Instruction Ledger** at step 2. Step 5 assigns each row to the beat that shows it or the CapCut line that carries it (on-screen text verbatim). Follow it as written, don't substitute your own shot; a row that breaks a higher layer is flagged with the nearest compliant execution. §22V/§22W Q1 check it. Every row ends `verified` or `flagged` — none open at step 8.
@@ -90,7 +92,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 - `scripts/tts_budget.py` — verbatim lock with `--script-lines`; steps 8–9: counts the tagged script, runs the 5,000-character ladder, flags unknown or banned tags
 - `scripts/assemble.py` — §30H: place B-roll on its lines, close flickers and holes, render + verify the rough cut; per-B-roll `layout` (`full`, `split`, `pip`) and `punch_in` from `EDIT-[BUILD]`
 - `scripts/variants.py` — §30H hook variants: `<BUILD>_HK1.mp4` … each hook + the identical body, set-checked
-- `scripts/angles.py` — §30I: checks an act map / shot list for stuck angles (JUMP, RUN, WINDOW, DEFAULT, HEIGHT, WHY); must pass before the act map is approved
+- `scripts/angles.py` — §30I/§30J: checks an act map / shot list for stuck angles (JUMP, RUN, WINDOW, DEFAULT, HEIGHT, WHY) and focus (FOCUS); must pass before the act map is approved
 - `scripts/preflight.py` — §22X: lints a video call (`call.json`) before any credit is spent — required strings, slots, rig vs subject motion, verbatim dialogue and word budget, connector params, generation ≤ 2 with a `fix_note`, three prevented risks; any FAIL = not sent
 - `scripts/contact_sheet.py` — §22W: one image per clip (first → last frame), frozen/black runs, `--full` for zoom
 - `scripts/trim.py` — E11 trim pass (never on a §24I film voice master)
@@ -227,6 +229,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 30G. Property Standard *(new — unverified, visual check)*
 - 30H. B-Roll Placement & Hole-Free Assembly *(new V7.60.0)*
 - 30I. Camera Angle Range *(new 2026-09-27)*
+- 30J. Camera Focus *(new 2026-09-27)*
 
 **BLOCK 8 — FORMATS & OUTPUT**
 - 34. Correction Protocol

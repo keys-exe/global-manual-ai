@@ -1954,7 +1954,7 @@ Every step carries a class:
 | 2 | **Absorb script, product, Product Sheet — and lock mode and model** | DET | The `.md` + `.py` pair, created where absent. §43A claims pass — every figure tiered before anything builds against it. **The phrase inventory is built here** (§27B): a mechanical pass over the script as written. **The Visual Instruction Ledger is opened here (§27F)** — every visual note on the script and every Loom instruction (§18C), each anchored to its spoken line. **The Mode & Model Lock is written here (§18A)** — mode per act, image model per beat class, read off what the script demands. Every other lock resolved here — camera, format, tools, mechanism claim, declared side. |
 | 3 | **Cast — everyone who recurs** | DET *(render dependency)* → **HG** *(Manual)* | **Every subject with two or more beats on the step-2 inventory** — the narrator, every named side character, **and every anonymous B-roll subject who recurs** (`S-01`, `S-02`…) — gets a full §19 reference sheet — one prose generation, 9:16, no reference — passed through the §19 panel check before it is attached anywhere. Identity strings locked from what rendered, never from what was prompted (§7 applied to our own output). Ships per sheet: §19A axis table with clearance counts; **speaking characters additionally** get `VOICE-[CHAR]` roster-cleared and a full §20 constraint sheet. One-off subjects are not sheeted (§13). **Sent, then straight on** — **in Manual (V7.62.0) the agent generates and checks every sheet itself, then stops: the avatars are the user's decision, and step 4 waits for the user's go** (§18B) |
 | 4 | **Property and location maps** | DET | The §30C Location Derivation Pass over the step-2 phrase inventory, **opening with channel C0 — which locations are rooms of one dwelling.** Where two or more are, the **Property Sheet is written and its property plate generated and checked first (§30G)**, before any location plate is built against it. Five-part Location Sheets, §22A lighting profiles reconciled to the property's orientation, plates rendered for **PLATED locations only** — never for INCIDENTAL or **TRAVERSED** ones (§30C 1a), both of which still carry the property plate where they are interiors of the dwelling. Four set-level checks run. **The location set closes here.** **Sent, then straight on** |
-| 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; **every Visual Instruction Ledger row assigned to the beat or CapCut line that carries it (§27F)**; **every B-roll row given its `layout`, and every punch-in, transition and caption device its line, from `EDIT-[BUILD]` (§42 Part 3A)**; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims. **Automatic (V7.60.7): written only after every step-3 sheet and step-4 plate has passed E1**, with identity strings and plate facts read off the renders; B-roll `duration` is `pending-master` until the voice master exists (E4, E6). **Every B-roll and film row carries its `angle` and `why`, and `angles.py` passes before the map is approved (§30I)** |
+| 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; **every Visual Instruction Ledger row assigned to the beat or CapCut line that carries it (§27F)**; **every B-roll row given its `layout`, and every punch-in, transition and caption device its line, from `EDIT-[BUILD]` (§42 Part 3A)**; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims. **Automatic (V7.60.7): written only after every step-3 sheet and step-4 plate has passed E1**, with identity strings and plate facts read off the renders; B-roll `duration` is `pending-master` until the voice master exists (E4, E6). **Every B-roll and film row carries its `angle`, `why` and `focus`, and `angles.py` passes before the map is approved (§30I, §30J)** |
 | 6 | **Hooks, one by one** | AC → **HG** | Serial: deliver → generate → first-frame check (§5/§30C/§30E) → confirm → next. Seeds built against plates that already exist. Confirmed renders feed the Scene and Subject Registries as they land. **The second gate** in Manual, after the step-3 avatar review; in Automatic the agent confirms (E0) |
 | 7 | **B-roll and body acts** | DET | Executing step 5's dispositions in the §30E assembly order — motion arc first, start frame derived, plates attached, strings by register, model routed. `TH`-carried lines get no cutaway on purpose. **A beat whose line carries a visual instruction executes that instruction (§27F).** Each act delivery ends on its §27B reconciliation line and its §27F ledger line |
 | 8 | **CapCut block** | DET | Cover points, J-cuts, designed-silence list, sync triage, motion-graphics layer, supplied-asset cut-ins, **every on-screen text, SFX, music and edit instruction from the Visual Instruction Ledger, verbatim** (§40, §27F) — last and separate. **Every `EDIT-[BUILD]` device the rough cut does not render — cutouts, cards, transitions, speed ramps, captions, overlays, SFX — on its line with its `EG` ID** (§42 Part 3A) |
@@ -2560,7 +2560,7 @@ There is no operator to notice drift, so the mid-clip intervention is motivated 
 
 ### Focus hunt discipline
 
-Entry hunt on R1, R1-W and R2 only, **once**. A mid-clip hunt is permitted only when subject distance actually changes inside the clip. **R1-FAST, R3, R4, RV and RV-FAST never hunt.** Two hunts in one clip reads as a broken lens.
+Entry hunt on R1, R1-W and R2 only, **once**. A Mode 1 tap to focus (§30J) is that one hunt. A mid-clip hunt is permitted only when subject distance actually changes inside the clip. **R1-FAST, R3, R4, RV and RV-FAST never hunt.** Two hunts in one clip reads as a broken lens.
 
 ### Negatives — select by rig, never paste whole
 
@@ -2811,7 +2811,7 @@ Judge the four takes in this order: **(1) every word of the script is present an
 2. **Is the product right?** Shape, colour, placement, orientation, visibility per the Product Sheet (§8, §9, §9D). A wrong product is the most expensive failure in the pipeline.
 3. **Is the body whole?** One head, two arms, two legs, five fingers per visible hand; hidden parts hidden by the frame edge or an object (§27D).
 4. **Does it hold continuity?** Same person as the sheet (§19, §30E), same room as the plate (§30C, §30G), wardrobe for the story day (§14), axis and window side (§30C). **In a scene (§24H), judged in its scene, never alone:** against the master, the previous approved frame in story order and the shot's state-track row — eyes, face, hair, wardrobe state, hands, position, condition. A state that resets or appears without its cause is a REGENERATE, and a continuity fault never ships as "the best of three" (§24H, Automatic — connected).
-5. **Is it the right register?** Mode and capture as locked (§18A, §22A, §22S), 9:16, framing scale (§22F), **the row's angle — height, side and foreground (§30I), not the model's eye-level default**, no garbled text (§17).
+5. **Is it the right register?** Mode and capture as locked (§18A, §22A, §22S), 9:16, framing scale (§22F), **the row's angle — height, side and foreground (§30I), not the model's eye-level default — and its focus: the named plane sharp, the depth as written (§30J)**, no garbled text (§17).
 6. **Will it animate?** It works as the start frame for the motion the beat needs (§6, §27A): room for the move, and the subject not frozen at the end state. **It is caught mid-action** (§27G rule 4): the weight already on one foot, the hand already moving, the head already turning — never a square, frozen pose. On a `pin_end` beat the end image is judged the same way and must match the start image in everything but the travel.
 
 ### The verdict line — shipped for every image
@@ -2837,7 +2837,7 @@ The fix is a named change to the prompt: a clause added, a string restated at fu
 1. **Does it show the line?** The clip performs the beat's phrase and function (§27B, §30B), in the right emotional register (§30F), **and carries out every Visual Instruction Ledger row assigned to it (§27F)**.
 2. **Is the product right in every frame?** It must not morph, swap sides, change size or lose its wordmark across the clip (§8, §9). Product drift that starts halfway through is the typical video failure. The first frame passing proves nothing.
 3. **Is the body whole in every frame?** No extra or merged fingers, no limbs passing through objects, no face melt (§27D).
-4. **Is the motion right?** The §27A arc runs and the clip is never at rest at the cut. Camera per §22B. Physics per §27C and §27E. No frozen run over 0.5s unless the beat is a hold. **And §27G:** one action at a real pace (no floaty slow motion, no rushed invented frames), the camera or the subject moves but not both, the product keeps its shape in every frame, and no cut or jump inside the clip.
+4. **Is the motion right?** The §27A arc runs and the clip is never at rest at the cut. Camera per §22B. Physics per §27C and §27E. No frozen run over 0.5s unless the beat is a hold. **And §27G:** one action at a real pace (no floaty slow motion, no rushed invented frames), the camera or the subject moves but not both, the product keeps its shape in every frame, and no cut or jump inside the clip. **Focus (§30J):** a focus change lands on its cue and holds, no focus pumping or breathing, faces and the product never drifting soft.
 5. **Does it hold continuity?** The subject matches the sheet, the room matches the plate, the wardrobe matches the story day, and the axis and screen direction match `GEO-LINE` (§30C, §30E). **In a scene (§24H): the join too** — this clip's true last frame against the next clip's true first frame (same state track, position, props, light), and no state appearing or vanishing inside the clip. **The voice joins too** (§24I part 13): the line sounds like the previous line of the same character unless the VOICE row gives a cause, and it matches the face. Once every clip of a scene passes, the scene is judged as one strip in cut order (`SC-xx · SCENE` verdict).
 6. **Is it technically clean?** 9:16, the stated duration (E6), no black frames, no garbled on-screen text, and no cut inside the clip unless the beat is MULTI-SHOT (§29).
 7. **Is there enough footage for its slot?** The clip covers its §30H slot at 1.0x, or at no slower than 0.8x. Otherwise it is REGENERATE at a longer duration.
@@ -3412,7 +3412,7 @@ Mode 4 has no house look. **The kind of film — its grade, palette, glass, ligh
 | # | Field | Content | Lives in |
 |---|---|---|---|
 | 1 | **GENRE AND REFERENCE** | What kind of film this is, in one sentence | `LOOK-[BUILD]` |
-| 2 | **CAMERA AND GLASS** | Camera body, lens family (spherical or anamorphic), the focal length for each shot scale, the stop, and the depth-of-field policy | `CAM-FILM` |
+| 2 | **CAMERA AND GLASS** | Camera body, lens family (spherical or anamorphic), the focal length for each shot scale, the stop, and the depth-of-field policy by shot scale and where focus changes are used (§30J) | `CAM-FILM` |
 | 3 | **LIGHT** | How light is motivated, hard or soft key, key-to-fill ratio, how practicals are used, and the time-of-day plan by scene | `LIGHT-FILM` |
 | 4 | **PALETTE** | The dominant colours of the sets and wardrobe, and the colour script by act | `LOOK-[BUILD]`, §14A wardrobe |
 | 5 | **GRADE** | Shadow tint, highlight tint, saturation, contrast curve, how skin is held | `LOOK-[BUILD]` **and** the CapCut LUT |
@@ -5423,6 +5423,59 @@ The inspo's own angles win (§42 Part 3A): its distribution of heights and sides
 
 ---
 
+## 30J. Camera Focus — where the eye goes *(new 2026-09-27, user: "camera focuses too")*
+
+**Scope: every B-roll beat and every film shot, all modes.** Focus decides what the viewer looks at before they know they are looking. Left alone a generator does one of two things on every shot: everything sharp, or a blurred background behind everything — the "AI photo" look. Like the angle (§30I), focus is chosen per shot, written on the row, stated in the prompt and checked.
+
+### 1. Every row names its focus
+
+`focus` (E4) = **plane** (what is sharp: `eyes` — the nearest eye · `hands` · `product` · `foreground` · `background` · `deep` — everything) · **depth** (`deep` · `medium` · `shallow`) · **rack** (a focus change inside the clip, or none).
+
+**Always sharp, whatever the style:** on a face shot, the nearest eye; on a product beat, the product and its wordmark (§9, §9D); on a hands beat, the hands and what they hold. A shot sharp somewhere else says why on the row.
+
+### 2. Depth by mode and shot scale
+
+| Mode | WIDE · FULL | MEDIUM · MCU | CU | ECU · INSERT |
+|---|---|---|---|---|
+| **Mode 1 — a phone** | deep: the room readable, never a blurred background | deep to medium: the background a little soft only when it is far away | medium | shallow only within about 30cm of the lens — the one distance a phone really blurs |
+| **Mode 4 — film** | deep to medium (Look Sheet field 2 sets the stop) | medium: the room recognisable, soft | shallow: the face sharp, the room a soft shape | very shallow: a few centimetres sharp |
+| **Mode 5 — animated film** | deep | medium | medium to shallow — the character's eyes always sharp, the set still readable | shallow |
+| **Mode 2, Mode 3, CCTV** | unchanged: Mode 2 render DOF (`CAM-*`), Mode 3 miniature shallow (§24F), CCTV deep (§22E) | | | |
+
+**Shallow is never used on a WIDE or FULL**, and never on more than two thirds of an act or scene: when everything is blurred behind, nothing is. **A phone never fakes portrait-mode blur on B-roll** unless the inspo uses it (§42 Part 3A). The bokeh is always optical — soft and round, never smeared, painted or ringed around the subject (`CAP-FILM`, §22A).
+
+### 3. Focus as storytelling — the change of focus
+
+A focus change moves the viewer's attention **without moving the camera**, so it is the §27G-safe way to give a still shot life and to join two things in one shot:
+
+| Change | What it does | Typical use |
+|---|---|---|
+| **From an object to a face** | the realisation | the product on the table, then the face that notices it |
+| **From the speaker to the listener** (OTS) | the line lands on someone | the reaction without a cut (§24I part 5) |
+| **From the foreground to the background** | what is waiting | a hand in front, the stairs or the door behind |
+| **From the background to the foreground** | a detail arrives | the room, then the hand on the knee |
+
+**Rules for a change:** one per clip; it names its **cue** — the word or the moment it lands on — and takes about a second, then holds; only on a still subject and a still camera (F2, R3, R1 planted — never with F1, F4, F5, R1-W or R1-FAST, and never on a subject travelling toward or away from the lens); the plane it lands on obeys part 1.
+
+- **Modes 4 and 5:** a clean, deliberate focus pull by a focus puller — the film's camera move for the moment it would otherwise push.
+- **Mode 1:** a phone never racks cleanly (§30B `clean rack focus` stays banned). The change is a **tap to focus**: the focus jumps to the new subject with a brief hunt and settles — once, and it counts as the clip's focus hunt (§22B focus hunt discipline).
+
+### 4. Limits
+
+- **Moving subjects:** a subject travelling in depth (toward or away from the lens) takes deep or medium focus — shallow focus on it makes the generator pump and pop the focus.
+- **Faces:** a face never falls soft on its own line; on a two-shot, the person whose line it is is sharp.
+- **Product:** never soft on a product beat. In a story shot it may sit soft in the background only where §9D visibility allows.
+- **Foreground angles (§30I `through`):** the foreground soft, the subject sharp — unless the shot is a background-to-foreground change.
+- **Hands and text** never sit in the falloff zone: generators smear half-sharp fingers and letters. They are sharp, or clearly soft.
+
+### 5. In the prompt and the checks
+
+`FOCUS-LINE` follows `ANGLE-LINE` on every B-roll and film T2I; a clip with a focus change adds the change to its camera clause, with its cue. The clip inherits the focus from its start frame otherwise (`INHERIT-FILM` holds the depth of field). **`angles.py` checks focus across the act map** (missing focus, shallow on a WIDE or FULL, a product beat not on the product, a change with no cue or on a moving shot, a clean pull in Mode 1, shallow on a subject travelling in depth, more than two thirds shallow). **`preflight.py` checks the call** (a `FOCUS:` line on every film clip; a change has its cue, a still subject and camera, one change only, and in Mode 1 a tap). **§22V Q5** and the user's check read the frame's focus against the row; **§22W Q4** reads the clip: the change lands on its cue, no focus pumping or breathing, the product and faces never drifting soft.
+
+**NORMATIVE — `FOCUS-LINE` — see Appendix A.**
+
+---
+
 ## 34. Correction Protocol
 
 When the user flags a problem with a specific shot:
@@ -5701,6 +5754,7 @@ The reference's **style is absorbed as a locked register set, copied precisely**
 | **Text overlays** | stat callouts, labels, arrows in the edit (never in a prompt, §17), where they sit |
 | **Sound in the edit** | SFX on cuts (whoosh, pop, riser), music presence and where it drops out |
 | **Density** | B-roll run lengths, how long the face returns between runs |
+| **Focus** *(2026-09-27, §30J)* | Depth of field by shot scale, what is kept sharp, and every focus change (pull or tap), what it moves between and on what kind of line |
 | **Camera angles** *(2026-09-27, §30I)* | The reference's spread of heights (ground · low · eye · high · overhead), sides and foregrounds, counted over its shots, and which kind of line gets which angle — the build copies the range |
 
 **It compiles to `EDIT-[BUILD]`**, recorded in the Absorption Sheet and locked at step 2 with the Style Lock. **It is a style axis, so it wins over house defaults** (Part 3 tie-break). Compliance axes never yield: a reference that uses fake platform UI or a fabricated review panel as an overlay is copied in position and replaced in method (Part 5, §10A, §43).
@@ -7371,6 +7425,10 @@ no product visible through the fabric, no product outline printing through the g
 ```
 THE CAMERA ANGLE: [HEIGHT CLAUSE from §30I], seen from [SIDE] of [SUBJECT][, looking past FOREGROUND, soft in the near foreground | , seen in REFLECTION]. This exact angle, not a straight-on eye-level view.
 ```
+**`FOCUS-LINE`** — every B-roll and film T2I, after `ANGLE-LINE` (§30J). A focus change is added to the clip's camera clause: Modes 4–5 *"On '[CUE]', the focus pulls slowly from [A] to [B] over about a second, and holds on [B]."* · Mode 1 *"On '[CUE]', the phone is tapped to focus: the focus jumps to [B] with a brief hunt and settles."* *(308)*
+```
+FOCUS: [PLANE — the nearest eye of NAME / the hands and what they hold / the product and its wordmark / the foreground / everything] is in sharp focus; [DEPTH — the room behind falls to a soft, recognisable shape | everything from near to far stays sharp]. The blur is optical: soft and round, never smeared.
+```
 **`CAM-FILM`** — opens every Mode 4 T2I. `[CAMERA]`, `[LENS FAMILY]`, `[STOP]` from Look Sheet field 2; `[FOCAL]` by shot scale; `[RIG]` in plain words. Replaces `CAM-LOCK`. *(352)*
 ```
 Photographed as a single frame from a feature film, shot on [CAMERA] with [LENS FAMILY] at [FOCAL]mm and [STOP], the camera on [RIG] and operated by a camera crew who framed and lit this moment on purpose. A still lifted from the finished film, not a photograph and not a phone video, composed natively for a vertical 9:16 frame with no letterbox bars.
@@ -8094,7 +8152,7 @@ One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t
 
 **Film fields (2026-09-27, Modes 4 and 5, §24I/§24K).** Film rows also carry: `scene` (`SC-xx`), `camera` as the F-rig with its reason from the camera plan, `playing` (the speaker's transitive verb), `business` (each character's one piece of business and its pace), `cut_cue` (line · look · action · reaction), `spine` (the story-spine beat) and `state` (each character's state-track row for this shot, including VOICE, §24H), and `new` (what the shot's frame adds over the master and earlier frames — position, scale or state — or `reuse <frame>`). A film row missing any of them is not written to a prompt.
 
-**`angle` (2026-09-27, §30I).** Every B-roll and film row carries `angle` — `height` (ground · low · eye · high · overhead), `side` (front · three-quarter · profile · three-quarter-back · behind · ots) and `fg` (clean · through · reflection) — with `why` (what the angle says) and, on a payoff that repeats an earlier angle, `mirror_of`. `angles.py` reads these fields.
+**`angle` (2026-09-27, §30I).** Every B-roll and film row carries `angle` — `height` (ground · low · eye · high · overhead), `side` (front · three-quarter · profile · three-quarter-back · behind · ots) and `fg` (clean · through · reflection) — with `why` (what the angle says) and, on a payoff that repeats an earlier angle, `mirror_of`. **`focus` (§30J)** — `plane` (eyes · hands · product · foreground · background · deep), `dof` (deep · medium · shallow), `rack` (`{from, to, cue, kind: pull | tap}` or null) and `moving_subject`. `angles.py` reads these fields.
 
 **`key` (amended 2026-09-26, user).** Every B-roll row names its `key`: the word in its phrase that the picture shows (the noun or action on screen, never a filler like "and" or "when"). §30H cuts the clip in 3 frames before it. Leave it empty only when the picture is the phrase's first word. In a voice-only build the opening row has no key — its clip covers 0.00s. After generation, a row may add `peak`: the second in the clip where its action peaks, so the in-point lands it on the key word.
 
@@ -8243,6 +8301,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | 2026-09-27 | **No duplicate images; voice emotion connected** (user: "also making images that is not needed in the scene like its already in the master image. also voices emotions"). Every image-list row names what is new (position, scale or state) or is struck; a shot at the master's position and scale animates the master frame; push-ins up to 1.3× are edit punch-ins; consecutive lines from one position share one frame. VOICE joins the state track; §24I part 13 — the voice carries the scene, matches the face, continues across cuts, `VOICE NOW` in `DRAMA-DELIVERY`, narrator tags follow the scene; joins checked by ear (Manual) or by pitch, loudness and rate against the previous line (Automatic, thresholds unverified) | §24H (image list, state track), §24I part 13 (new), §22W Q5, E2, E4, Appendix A (`DRAMA-DELIVERY`, `NEG-DRAMA`), both skills | Written; cut pending |
 | 2026-09-27 | **Video preflight; two generations per shot; master built for its close-ups** (user: "the master image usually all the scenes needed specially close up shots… seeddance is expensive and i want everything to be perfect in the 1st try at least and if not lastly is 2nd generation fixing the problems first before generating i want strict checking"). New §22X: every paid video call passes a four-part gate first — frame approved, frame ready to move, `preflight.py` lint, three named risks each prevented; generation 2 only after the fault is diagnosed and fixed at its source (`fix_note`), never the same prompt resent; no generation 3 without the user (Automatic: clean part or cover route). §24H: the master is the source of every close-up (a render against it, not a crop beyond 1.3×) and is locked only when it holds what they copy | §22X (new), §24H (master, video), E2 (`CLIP_REGENERATE` 1 per shot, `PREFLIGHT_FAIL` new), `scripts/preflight.py` (new), both skills | Written; cut pending |
 | 2026-09-27 | **Camera angle range** (user: "the camera angles too we need to upgrade it so we are not stuck to the same camera angle always"). New §30I: every B-roll and film row names height (ground · low · eye · high · overhead), side (front · three-quarter · profile · three-quarter-back · behind · OTS) and foreground (clean · through · reflection) with a reason; `angles.py` fails jump cuts, three-in-a-row, < 3 setups in any five shots, eye-level frontal over a third, one height across a group of four or more, and unexplained angles; the meaning table; limits for faces, motion, product, Mode 1 phone plausibility and the film axis; `ANGLE-LINE` in every T2I; the angle checked on the frame | §30I (new), §30A, §18 step 5, §22V Q5, §24G field 7, §24K, E4, Appendix A (`ANGLE-LINE` new), `scripts/angles.py` (new), both skills | Written; cut pending |
+| 2026-09-27 | **Camera focus** (user: "camera focuses too"). New §30J: every B-roll and film row names its focus plane, depth and any focus change; always sharp: the nearest eye on a face, the product on a product beat, the hands on a hands beat; depth by mode and scale (phones deep, shallow only within ~30cm; film shallow from CU in); never shallow on WIDE/FULL or on more than two thirds of a group; focus changes as storytelling — one per clip, on a cue, still subject and camera; film pulls cleanly, Mode 1 taps to focus (clean rack stays banned); limits for moving subjects, faces, product, hands and text; `FOCUS-LINE`; checked by `angles.py`, `preflight.py`, §22V Q5, §22W Q4 | §30J (new), §22B focus hunt, §22V Q5, §22W Q4, §24G field 2, §18 step 5, §42 Part 3A, E4, Appendix A (`FOCUS-LINE` new), `scripts/angles.py`, `scripts/preflight.py`, both skills | Written; cut pending |
 ---
 
 # OPEN DECISIONS
