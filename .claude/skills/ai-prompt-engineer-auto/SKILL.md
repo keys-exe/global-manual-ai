@@ -10,7 +10,7 @@ description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.6
 **This skill adds execution; it changes no craft.** Load `ai-prompt-engineer` first and follow it for every prompt. The master file `standards/AI_Prompt_Engineer_Global_Standards.md` wins over this summary. Before the first call, read these sections by grepping their headings:
 
 ```
-Grep  pattern="^## (E(0|1|2|3|7|9|11)|5|18B|22U|22V|22W|24I|30H)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
+Grep  pattern="^## (E(0|1|2|3|4|7|9|11)|5|18B|22U|22V|22W|24I|27G|30H)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
 ```
 
 ## 0. Hands-off (E0, V7.60.6)
@@ -51,6 +51,7 @@ For every batch, in this order:
 5. **QA per E1.**
    - **Images: you are the judge (§22V).** Open every image with Read and answer the six questions — does it show the line, product, body, continuity, register, will it animate. Ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then keep the best of the three and add it to *Flags*.
    - **Video: you are the judge (§22W).** `contact_sheet.py <clip>` → Read the sheet (true first and last frames); `--full` and Read single frames where hands, product or text need detail. Seven questions — line, product every frame, body every frame, motion, continuity, technical, enough footage for its slot → `USE` or `REGENERATE`. Silence and timing checks run on the audio (`silencedetect=noise=-40dB:d=0.4`).
+   - **Motion (§27G) is written before it is judged:** every B-roll row carries `action`, `pace`, `camera`, `staging`, `pin_end`, `max` (E4); start images caught mid-action; one action per clip; a moving subject gets a camera that sways but never travels; pinned beats run first-and-last frame (E7); `prefer_multi_shots: false`; the rough cut at 24 fps. Judge the clip against §22W Q4's §27G checks, and when only its end breaks, keep the clean part (`out`) instead of regenerating.
    - AUTO rows run by instrument. HUMAN rows are **yours**: pass → proceed; fail → E2 remedy; unsure → decide on the stricter reading and note it in *Flags*. Nothing is queued — that includes the §28F/§28H closure-sync check, voice (§22D) and Mode 4/5 performance.
 6. **Reroll per E2** — at most two automatic rerolls per beat per failure class, then keep the best attempt, log why, and add it to *Flags*. A changed prompt is saved as a new iteration; never change a prompt without logging it.
 7. **Trim (E11)** every talking-head clip that passed QA (section 4 below).
