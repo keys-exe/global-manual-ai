@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer-auto
-description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.63.0, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
+description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.64.0, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §22X, §24H, §24I, §30H, §30I–§30L). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
 ---
 
 # AI Prompt Engineer — Automatic run mode
@@ -10,7 +10,7 @@ description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.6
 **This skill adds execution; it changes no craft.** Load `ai-prompt-engineer` first and follow it for every prompt. The master file `standards/AI_Prompt_Engineer_Global_Standards.md` wins over this summary. Before the first call, read these sections by grepping their headings:
 
 ```
-Grep  pattern="^## (E(0|1|2|3|4|7|9|11)|5|18B|22U|22V|22W|24I|27G|30H)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
+Grep  pattern="^## (E(0|1|2|3|4|7|9|11)|5|18B|22U|22V|22W|22X|24H|24I|24K|24L|27G|30H|30I|30J|30K|30L)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
 ```
 
 ## 0. Hands-off (E0, V7.60.6)

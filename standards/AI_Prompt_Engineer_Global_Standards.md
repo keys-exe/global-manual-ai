@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.63.0 — supersedes all prior versions.** *(the Edit Grammar — how the inspo presents its B-roll and cuts (full-frame, split-screen, picture-in-picture, punch-ins, transitions, captions, SFX) is read off its frames, locked as `EDIT-[BUILD]` and copied in both run modes: every B-roll row carries its layout, the prompt is framed for it, `assemble.py` renders split, picture-in-picture and punch-ins, and the rest is a CapCut line, §42 Part 3A/§18/§30H/§35/§40/E4; the Manual Drive run — a Drive link with `RUN: MANUAL` is fetched and absorbed by the agent exactly as in Automatic, the agent then generates and checks the avatars (step 3) itself and stops — the avatars are the user's decision; on the user's go, steps 4–5 follow as copy-ready prompts and the build continues in Manual, §1/§18/§18B/§31/§44/E0; intake fixes — a Loom MP4 in the Drive folder is sorted as the Loom brief, never as an inspo, §18B/§18C; `.docx` tables are read, so a two-column VO | VISUAL script is no longer extracted empty and its visual column enters the ledger row by row, §22U/§27F; speaker labels (`VO:`, `NARRATOR:`, `SARAH:`) are cut from spoken lines, never voiced, §22U; the script's visual instructions are binding — every note on the script is logged in the Visual Instruction Ledger, carried by a named beat or CapCut line, and checked in the image and clip verdicts, §27F; the Loom brief — an optional Loom link sent beside the Drive link, fetched, transcribed and framed by `scripts/fetch_loom.py`, its instructions followed like the script's own, §18C; Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.64.0 — supersedes all prior versions.** *(the film modes upgraded — motion and camera grammar, acting and story, the scene image list, the state track, connected scenes, voice emotion carried across cuts, US-feature camera packages and production value, no trimming, §24G–§24L; video preflight and two generations per shot, §22X; camera angle range, focus, lighting and the scene colour lock, all modes, §30I–§30L; the colour grade in the edit only, §40; who checks — Manual the user, Automatic the agent with final videos only — and `DIRECTIONS` on the intake, E0/§18B; the Edit Grammar — how the inspo presents its B-roll and cuts (full-frame, split-screen, picture-in-picture, punch-ins, transitions, captions, SFX) is read off its frames, locked as `EDIT-[BUILD]` and copied in both run modes: every B-roll row carries its layout, the prompt is framed for it, `assemble.py` renders split, picture-in-picture and punch-ins, and the rest is a CapCut line, §42 Part 3A/§18/§30H/§35/§40/E4; the Manual Drive run — a Drive link with `RUN: MANUAL` is fetched and absorbed by the agent exactly as in Automatic, the agent then generates and checks the avatars (step 3) itself and stops — the avatars are the user's decision; on the user's go, steps 4–5 follow as copy-ready prompts and the build continues in Manual, §1/§18/§18B/§31/§44/E0; intake fixes — a Loom MP4 in the Drive folder is sorted as the Loom brief, never as an inspo, §18B/§18C; `.docx` tables are read, so a two-column VO | VISUAL script is no longer extracted empty and its visual column enters the ledger row by row, §22U/§27F; speaker labels (`VO:`, `NARRATOR:`, `SARAH:`) are cut from spoken lines, never voiced, §22U; the script's visual instructions are binding — every note on the script is logged in the Visual Instruction Ledger, carried by a named beat or CapCut line, and checked in the image and clip verdicts, §27F; the Loom brief — an optional Loom link sent beside the Drive link, fetched, transcribed and framed by `scripts/fetch_loom.py`, its instructions followed like the script's own, §18C; Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -6280,22 +6280,22 @@ Location, surface, dressing and light exactly as in the start frame. Nothing add
 
 ## Fixed mount *(§22E)*
 
-**`MOUNT-GEOM`** — the geometry. **Mandatory alongside any angle block, in all three registers. Never trimmed.** *(806)*
+**`MOUNT-GEOM`** — the geometry. **Mandatory alongside any angle block, in all three registers. Never trimmed.** *(805)*
 ```
 Because the camera is fixed high and tilted down on a wide short lens, the whole picture behaves accordingly: a little of the structure the camera is mounted on is visible across the top of frame, upright lines lean inward toward the top rather than standing square, and everything from just below the lens to the far end of the space is equally sharp with no background blur anywhere. Between half and two thirds of the frame is floor, path or worktop carrying nothing at all. Surfaces are seen from above as flat planes rather than as edges, so the tops of things are visible. Anything close below the camera reads enormous while anything far away reads very small. The frame covers the whole space, and the person is small within it, off to one side, partly cut by the frame or partly behind something.
 ```
 
-**`MOUNT-CLEAN`** — the angle-only register. **Runs with `CAP-A` and the full §22S skin stack; `CAP-CCTV` and `NEG-CCTV` are absent.** *(341)*
+**`MOUNT-CLEAN`** — the angle-only register. **Runs with `CAP-A` and the full §22S skin stack; `CAP-CCTV` and `NEG-CCTV` are absent.** *(319)*
 ```
 This is an ordinary sharp well-exposed photograph that simply happens to have been taken from a camera fixed high on the wall — a normal file, correct colour, real detail throughout, no degradation of any kind. The only unusual thing about it is where the camera is and that nobody was holding it or looking through it.
 ```
 
-**`MOUNT-PERSON`** — append where a person is the subject under any mount. *(437)*
+**`MOUNT-PERSON`** — append where a person is the subject under any mount. *(434)*
 ```
 Seen from above and in front, the person is strongly foreshortened: head and shoulders large and close to the lens, the body compressed below them, the legs short and the feet small and far away at the bottom of the frame. Walking toward the camera they grow mostly in the head and shoulders. The top of the head and the tops of the shoulders are the most visible parts of them, and the face is angled away and downward from the lens.
 ```
 
-**`NEG-MOUNT`** — merges into negatives on every MOUNT beat in every register. *(492)*
+**`NEG-MOUNT`** — merges into negatives on every MOUNT beat in every register. *(442)*
 ```
 no eye-level camera, no camera at head height, no low angle, no composed framing, no centred subject, no subject filling the frame, no headroom, no rule of thirds, no leading lines, no arranged foreground and background, no square upright lines, no shallow depth of field, no background blur, no bokeh, no camera movement, no handheld shake, no drift, no pan, no tilt, no zoom, no focus hunt, no person posing, no person looking at the camera
 ```
@@ -6304,57 +6304,57 @@ no eye-level camera, no camera at head height, no low angle, no composed framing
 
 ### The RECORD layer
 
-**`CAM-CCTV`** — opens every CCTV T2I, above everything else. **Replaces `CAM-LOCK`.** Never trimmed. *(348)*
+**`CAM-CCTV`** — opens every CCTV T2I, above everything else. **Replaces `CAM-LOCK`.** Never trimmed. *(362)*
 ```
 Still frame from a fixed security camera, recorded rather than filmed. Small sensor behind a wide short lens, everything from a metre away to the back wall equally sharp, visible barrel distortion bending the straight lines near the frame edges, real optical vignetting darkening the corners. Nobody set this camera up for this moment and nobody is operating it.
 ```
 
-**`CAP-CCTV`** — the file block. **Replaces `CAP-A`**, which it contradicts. Never trimmed. *(613)*
+**`CAP-CCTV`** — the file block. **Replaces `CAP-A`**, which it contradicts. Never trimmed. *(614)*
 ```
 This is a low-bitrate recording, not a photograph. No HDR and no shadow recovery: the camera exposes for the middle of the frame and lets the brightest window or lamp blow out to flat pure white with nothing left in it, while the far corners fall away to crushed black. Heavy compression throughout — blocky artefacting across flat surfaces like walls and floors, mosquito noise crawling around high-contrast edges, colour smearing and detail collapsing wherever anything is moving. No white balance correction, so the whole frame takes the colour of whatever is lighting the room. Fine detail is simply not there.
 ```
 
-**`CCTV-FRAME`** — composition. **Never trimmed — a well-framed CCTV shot is not CCTV.** *(461)*
+**`CCTV-FRAME`** — composition. **Never trimmed — a well-framed CCTV shot is not CCTV.** *(433)*
 ```
 The subject is not framed. Nobody composed this: the subject sits off-centre or close to the edge, is partly cut by the frame, or is partly hidden behind furniture, and a large part of the picture is empty floor, wall and ceiling that nobody would have chosen to include. No headroom, no thirds, no leading lines, no arranged foreground and background. The camera is covering a room, not a person, and the person happens to be in it.
 ```
 
-**`CCTV-CORNER`** — the default angle. *(398)*
+**`CCTV-CORNER`** — the default angle. *(387)*
 ```
 Mounted high in the corner of the room where two walls meet the ceiling, roughly two and a half metres up, angled down across the space at about forty degrees. The ceiling line runs across the top of frame and the floor fills the lower half. Furniture is seen from above and behind, foreshortened, and people read as much by the tops of their heads and their shoulders as by their faces.
 ```
 
-**`CCTV-DOOR`** — doorway mount. *(389)*
+**`CCTV-DOOR`** — doorway mount. *(375)*
 ```
 Mounted above the door frame looking back down the length of the room, roughly two metres up and angled down about thirty degrees, so the near floor fills the bottom of frame and the far wall sits small at the top. Anyone entering arrives from directly beneath the camera, appearing first as the top of a head very close to the lens before walking away from it and shrinking.
 ```
 
-**`CCTV-OVER`** — overhead. *(281)*
+**`CCTV-OVER`** — overhead. *(286)*
 ```
 Mounted directly overhead looking almost straight down at the surface below, so people read as shoulders and the tops of heads with almost no face visible, and objects read as flat shapes with almost no side to them. The surface fills the frame edge to edge and the walls barely appear.
 ```
 
-**`CCTV-EAVE`** — exterior. *(349)*
+**`CCTV-EAVE`** — exterior. *(334)*
 ```
 Mounted outside under the eave of the house, angled down across the path and the drive, roughly three metres up. The near ground fills the bottom of frame, the gate or the street sits small at the top, and the roofline cuts into one upper corner. Anyone approaching grows from small to large as they cross the frame toward the camera.
 ```
 
-**`CCTV-BELL`** — doorbell camera. The one CCTV angle with a face near the lens. *(392)*
+**`CCTV-BELL`** — doorbell camera. The one CCTV angle with a face near the lens. *(386)*
 ```
 Doorbell camera at about chest height beside the door, looking outward and slightly upward, extreme wide angle with heavy barrel distortion pulling the edges of the frame outward and pushing the face in the centre forward. The visitor is very close and very large, the path behind them falls away fast, and a hand or a parcel can enter frame enormous and out of focus in the foreground.
 ```
 
-**`CCTV-NIGHT`** — overlays any angle. *(327)*
+**`CCTV-NIGHT`** — overlays any angle. *(323)*
 ```
 Night infrared: the whole frame is monochrome, the near subject lit hot and grey-white by the camera's own emitters while everything beyond a few metres falls away to solid black, eyes catching the infrared as bright points, no colour anywhere in the picture, and the compression artefacting heavier than it is in daylight.
 ```
 
-**`RIG-R7`** — fixed security mount. **The only rig with no camera motion; the four-part arc moves onto the encoding.** *(556)*
+**`RIG-R7`** — fixed security mount. **The only rig with no camera motion; the four-part arc moves onto the encoding.** *(536)*
 ```
 The camera does not move at all: bolted high on a wall bracket, no operator, no drift, no sway, no reframe, no focus hunt, no zoom. What moves is the recording. Already stuttering on the first frame, the frame rate low and uneven throughout so movement arrives in small steps rather than smoothly and carries no motion blur at all. Once inside the clip, as something moves quickly, the compression visibly breaks down for a moment — the moving shape smearing into blocks before the picture recovers. Still stuttering on the final frame.
 ```
 
-**`NEG-CCTV`** — every CCTV beat, T2I and I2V. *(735)*
+**`NEG-CCTV`** — every CCTV beat, T2I and I2V. *(656)*
 ```
 no timestamp, no date, no time, no clock, no camera name, no channel label, no text overlay, no letters, no numbers, no recording dot, no split screen, no multiplex grid, no border, no user interface, no composed framing, no centred subject, no headroom, no rule of thirds, no cinematic lighting, no shallow depth of field, no bokeh, no background blur, no motion blur, no smooth movement, no camera movement, no handheld shake, no drift, no pan, no tilt, no zoom, no focus hunt, no HDR, no shadow recovery, no colour grading, no film grain, no clean sharp image, no high resolution detail, no readable wordmark, no readable small text, no eye-level camera
 ```
@@ -6686,7 +6686,7 @@ POV, camera at head height. Already unstable on frame one, head-on-neck motion. 
 Phone held at arm's length in one hand, pointed down or away at the subject's own body rather than the face. Wrist-borne jitter, faster and tighter than a two-handed hold. Framing drifts as the arm tires and the elbow settles, uncorrected. Free hand enters frame to indicate or adjust. Still drifting on the final frame.
 ```
 
-**`RIG-R7`** — fixed security mount, CCTV only (§22E). **The only rig with no camera motion; the arc moves onto the encoding.** *(556)*
+**`RIG-R7`** — fixed security mount, CCTV only (§22E). **The only rig with no camera motion; the arc moves onto the encoding.** *(536)*
 ```
 The camera does not move at all: bolted high on a wall bracket, no operator, no drift, no sway, no reframe, no focus hunt, no zoom. What moves is the recording. Already stuttering on the first frame, the frame rate low and uneven throughout so movement arrives in small steps rather than smoothly and carries no motion blur at all. Once inside the clip, as something moves quickly, the compression visibly breaks down for a moment — the moving shape smearing into blocks before the picture recovers. Still stuttering on the final frame.
 ```
@@ -6771,7 +6771,7 @@ Premium 3D anatomical visualisation for medical education, broadcast-quality CGI
 ```
 
 
-**`CAP-C`** — compressed capture, daylight. The production short form of `CAP-A` where the T2I is dense; `CAP-A` remains the full form and the never-trim reference. *(amended V7.51.1 to the iPhone 17 Pro Max — it was left on the 13 Pro Max's 26mm when `CAP-A`, `CAM-LOCK` and `CAP-SHARP` were amended at V7.49.6)* (264) *(262)*
+**`CAP-C`** — compressed capture, daylight. The production short form of `CAP-A` where the T2I is dense; `CAP-A` remains the full form and the never-trim reference. *(amended V7.51.1 to the iPhone 17 Pro Max — it was left on the 13 Pro Max's 26mm when `CAP-A`, `CAM-LOCK` and `CAP-SHARP` were amended at V7.49.6)* (264) *(264)*
 ```
 Capture is a phone camera file, not a lit scene: Smart HDR 5 lifting the shadows flat, slight compression softness at the frame edges from a 24mm lens, natural colour temperature straight off the phone. No colour grading, no retouched skin, no shaped or lit light.
 ```
@@ -7056,7 +7056,7 @@ no bones bending, no bones interpenetrating, no joint separating, no limb elonga
 
 ## Wardrobe *(§14A)*
 
-**`WARD-LINE`** — the wardrobe clause inside `subject`, written from the §14A ledger row. *(118 as template)*
+**`WARD-LINE`** — the wardrobe clause inside `subject`, written from the §14A ledger row. *(111 as template)*
 ```
 Wearing [BASE], [MID if present], [OUTER if present], [LOWER], [FOOT], [ACCENT if present], in [colour family].
 ```
@@ -7195,7 +7195,7 @@ COMPLETING — the drawer runs in and STOPS DEAD with its front flush against th
 no drawer travelling after it has stopped, no drawer still moving at the cut, no drawer pulled out past three quarters of its length, no drawer clear of its unit, no drawer off its runners, no drawer tipping or sagging at the front, no drawer box without a cabinet around it, no drawer hovering above the worktop, no drawer front detached from the box, no gap of empty space behind the drawer, no drawer sliding at a uniform speed, no hand travelling past the drawer front, no second drawer
 ```
 
-**`NEG-PHYS`** — merges into negatives on every beat. Select by the beat's live risks on ceiling-bound calls. **The three slow-motion clauses are never deselected** (§27C). *(513)*
+**`NEG-PHYS`** — merges into negatives on every beat. Select by the beat's live risks on ceiling-bound calls. **The three slow-motion clauses are never deselected** (§27C). *(472)*
 ```
 no slow motion, no speed ramp, no bullet time, no floating objects, no hovering fabric, no weightless motion, no uniform gliding speed, no instant stops, no instant starts from rest, no objects sliding without friction, no fabric frozen mid-air, no rigid cloth, no hair moving as one mass, no liquid defying gravity, no object hanging in the air, no slow drifting descent, no body moving without weight transfer, no limbs accelerating from nothing, no settle-free landings
 ```
@@ -7203,58 +7203,58 @@ no slow motion, no speed ramp, no bullet time, no floating objects, no hovering 
 
 ## Material failure *(§27E)*
 
-**`PHYS-FALL`** — the approach. Substitute the object and the surface. *(412 as template)*
+**`PHYS-FALL`** — the approach. Substitute the object and the surface. *(343 as template)*
 ```
 Already falling on the first frame, well below the height it left and accelerating, turning slowly as it goes so it is not level when it lands. It falls at real speed — quick, ordinary, over in a moment, never drifting and never in slow motion. It is about to land on [SURFACE], and the [NAMED PART] is the part that reaches the surface first.
 ```
 
-**`BREAK-CERAMIC`** — ceramic, porcelain, stoneware. *(587)*
+**`BREAK-CERAMIC`** — ceramic, porcelain, stoneware. *(572)*
 ```
 It does not bend, squash or bounce at all before it goes. At the instant the [NAMED PART] meets the surface, cracks run outward from that one point across the body, and immediately after — not at the same moment — it comes apart into four or five large angular pieces with straight sharp edges, along with a scatter of small chips and a little fine dust. The pieces are flat-sided and hard-edged, clearly parts of the thing it was. The handle stays in one piece. The pieces slide outward across the floor, slowing with friction, one of them still turning as the clip ends.
 ```
 
-**`BREAK-GLASS`** — thin glass. *(520)*
+**`BREAK-GLASS`** — thin glass. *(458)*
 ```
 It does not deform at all before it goes. At the instant of contact it comes apart into many small bright shards and a fine spray of fragments, far more pieces than a ceramic object gives and travelling much further across the floor, skidding and tumbling outward well past where it landed. The largest pieces are still only a few centimetres across. Light catches the edges as they move. Several are still sliding and one is still spinning as the clip ends.
 ```
 
-**`BREAK-PLASTIC`** — hard plastic. **Does not shatter.** *(398)*
+**`BREAK-PLASTIC`** — hard plastic. **Does not shatter.** *(341)*
 ```
 It does not shatter. On contact it flexes, bounces once with a short flat hop, and skitters away across the floor still in one piece, turning as it goes. It may split along a single line without separating. Whatever it does, it keeps its overall shape and springs most of the way back to it. It is still sliding and turning as the clip ends.
 ```
 
-**`BREAK-SOFT`** — soft food, fruit, anything that pulps. *(377)*
+**`BREAK-SOFT`** — soft food, fruit, anything that pulps. *(326)*
 ```
 It does not scatter. On contact it splits and pulps at the point of impact, spreading sideways and staying low, releasing its own liquid as it goes, and it sticks where it lands rather than sliding away. Nothing travels far. The split is still opening and the liquid is still spreading out from underneath it as the clip ends.
 ```
 
-**`PHYS-SPILL`** — the contents. **The half that sells it.** *(472)*
+**`PHYS-SPILL`** — the contents. **The half that sells it.** *(425)*
 ```
 The liquid leaves before the pieces come to rest, thrown ahead of the break rather than following it, and it travels further across the floor than any piece does. It spreads as an irregular sheet with an uneven leading edge, never a circle, running into the joins and low points of the surface. It darkens everything it touches and soaks in rather than beading wherever the surface takes it. It is still spreading at the cut.
 ```
 
-**`PHYS-BREAK`** — full chain, for beats assembling it in one clause. *(566 as template)*
+**`PHYS-BREAK`** — full chain, for beats assembling it in one clause. *(446 as template)*
 ```
 One event in order, never all at once: it falls accelerating and turning, the [NAMED PART] meets [SURFACE] at one point, and immediately after that contact — not on the same frame — it fails. [MATERIAL FAILURE, from the taxonomy]. The pieces then travel outward, slowing with friction across the surface, some sliding and some turning. Nothing happens before the contact and nothing is undone after it. Something is still moving as the clip ends.
 ```
 
-**`PHYS-BREAK-C`** — compressed. The 3s default. *(304 as template)*
+**`PHYS-BREAK-C`** — compressed. The 3s default. *(281 as template)*
 ```
 In order: falling and accelerating, the [NAMED PART] meets [SURFACE] at one point, and immediately after — not on the same frame — [MATERIAL FAILURE]. Pieces travel outward and slow with friction. Nothing happens before contact and nothing is undone after. Still moving at the cut.
 ```
 
-**`HOLD-BREAK`** — **replaces `HOLD-C` on a break beat. Never both.** *(479)*
+**`HOLD-BREAK`** — **replaces `HOLD-C` on a break beat. Never both.** *(458)*
 ```
 Only the [OBJECT] changes, and it changes only by breaking in the way described. Its pieces are pieces of it — they match its material, its colour and its thickness, and together they account for it. No piece appears from nowhere, no piece vanishes, nothing multiplies, and nothing reassembles. Everything else in frame keeps the exact form, proportion and count it has in the start frame: nothing else melts, merges, splits, grows or becomes something else.
 ```
 
-**`NEG-WARP-B`** — **replaces `NEG-WARP-C` on a break beat. Never both.** *(199)*
+**`NEG-WARP-B`** — **replaces `NEG-WARP-C` on a break beat. Never both.** *(169)*
 ```
 no morphing, no warping, no melting, no shape shifting, no merging, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry
 ```
 It is `NEG-WARP-C` minus `no splitting` and `no parts detaching`, which are the two clauses the beat exists to violate. Everything else holds.
 
-**`NEG-BREAK`** — every break beat. *(619)*
+**`NEG-BREAK`** — every break beat. *(521)*
 ```
 no slow motion, no bullet time, no object bouncing like rubber, no object surviving intact, no object rocking and settling undamaged, no dissolving into particles, no generic debris cloud, no dust puff, no sparks, no fire, no explosion, no shockwave, no pieces multiplying, no pieces appearing from nowhere, no pieces vanishing, no object reassembling, no second identical object, no deformation before contact, no failure on the same frame as contact, no glow, no impact flash, no motion lines, no camera shake on impact
 ```
@@ -8481,35 +8481,9 @@ Locked corrections not yet written into the document. **Empties at each version 
 
 | Date | Correction | Section affected | Status |
 |---|---|---|---|
-| 2026-09-26 | §22U voice source moves from Seedance to Kling: at least two `kling-video-v3_0_omni` generations (G1 opening line, G2 the next), same image and `VOICE-[CHAR]`, same-voice gate (pitch median ±10% + the ear), each take trimmed and sped ×1.2, joined in order, the joined sequence looped to ≥ 30s. `voice_source.py` takes two or more clips. §24I film voice masters stay on Seedance | §22U lock + steps 1–5, §22D regimes/bookends, §5 routing, §44 default 7, E1, E7 | Written in |
-| 2026-09-26 | HeyGen motion prompt on every talking-head render, both run modes. Manual: Avatar V in the app, *More expressive* on, the gesture line in *Apply custom motion*. API: `avatar_v` + `motionPrompt`, no `expressiveness` (Avatar IV only). Avatar IV fallback only when `motionPrompt` is rejected. Confirmed against the current HeyGen API schema | §22U step 13, §44 default 84, E7 | Written in |
-| 2026-09-26 | Medical professionals always approachable (user): warm, relaxed, kind face — never stern or severe; §19A novelty kept inside that register. New `APPROACH-PRO` string after the face fill on sheets and face beats; `NEG-DEFAULT-FACE` drops its last two clauses on those sheets; `no smile` stands; a stern sheet is a §22V Q1 REGENERATE | §19B, Appendix A (Avatar sheet) | Written in |
-| 2026-09-26 | **Manual generates through the connectors** (user: "in Manual we will always use connectors for generating"). The agent submits every paid generation in a Manual run — avatars, plates, voice source, TTS, hooks, B-roll, talking heads — on the §5 routes, judges each render and ships it with its prompt; the user decides at the gates (avatars, each hook, the clone — no connector call — the master listen, the final review). Automatic differs only by removing the gates | §1, §18B (Manual Drive run items 5 + paid-generation line, Manual vs Automatic), §22U, §44 default 83, E0, skill summary | Written in |
 
-| 2026-09-26 | Generation Board: every generation of a build (both run modes) is logged on one private board per build, published from `dashboard/generation_board.html` — grouped per act (Hook 1…, Act 1…), Images then Videos, every field labelled, renders uploaded, verdicts recorded, Confirm / Fix for the reviewer; a Fix note is a §34 correction for that beat, regenerated within the §22V budget and picked up by an hourly check; the ledger's state is mirrored onto it. | §16A (new subsection), E3 | Written into §16A and E3; cut pending |
-| 2026-09-26 | Generation Board design **locked**: `dashboard/generation_board.html` is the spec; no session redesigns it; changes only on the user's named request, made in the template and republished to every board. | §16A | Written into §16A; cut pending |
-| 2026-09-26 | **VO trim by the waveform — house cut = the user's reference edit** (user: "the cuts on the hook at the end are so fast it didn't even let the word end; there are still breathing like inhales", then supplied their own cut: "this is how I would cut it, make this as an example"). For audio-only VO (§22U masters, hooks and body) the trim uses `vo_trim.py`, tuned to the measured reference (`references/vo_house_cut.md`): **butt joins** — every silence longer than 0.12s becomes 0.015s after a phrase end, 0.01s elsewhere (reference: 0.02s median at 24 phrase breaks, max 0.08s; 1.6s of silence left in 57.5s); stop closures under 0.12s inside words stay; each word is kept until it falls to −38 dBFS (the reference's measured cut level), then a 20ms fade — never cut at a transcript word-end; inhales removed (a ≥ 0.12s quiet, noise-like, mid-band, non-voiced run is cut only at a phrase boundary — the script's , . ? ! — so "th"/"s" inside a phrase stay); no entry breath (BREATH-A does not apply to VO). Hook variants: the raw hook + the raw body of the same take are joined and trimmed in one pass, so the seam is a butt join like every other. Also: one TTS request for all hooks + body when a consistent voice is wanted, split at the silences between parts; a take whose generation ends at speech level (last frame > −45 dB — the TTS cut the last word) fails §22U step 10 (4). `trim.py` stays for talking-head clips | §22U steps 9–10 + new step 10a, E11, new E11A, E1 (two VO house-cut rows), §24I | **Locked by the user 2026-09-26.** Written into §22U step 10a, E11A, E1; cut pending |
-| 2026-09-26 | Generation Board change on the user's request: every step keeps its versions; version dropdown in the viewer, Use this version, `vN` badge on cards. Template republished to every board. | §16A | Written into §16A; cut pending |
-| 2026-09-26 | **Manual: the user checks every generation** (user: "in manual runs I don't want the automatic checking, I want me to be the one who checks every generation"). The agent no longer judges renders in Manual: every image, clip and audio file lands on the board as To check; only the user's Confirm or Fix moves it; the agent regenerates only from a Fix note, with no regeneration budget. §22V / §22W and their budget apply to Automatic only. | Run mode (header), §16A, §18B step 5, §22V, §22W, Appendix E0 | Written; cut pending |
-| 2026-09-26 | **B-roll placement** (user: do 1, 2 and 4): every cut lands 3 frames before its anchor word — the act-map row's `key` word the picture shows, else the phrase's first word; each clip plays from its in-point (0.4s default skip of the start image's static opening, or its `peak` on the key word, or an explicit `in`); flickers and holes give back the skipped opening before extending or slowing; E6 call duration = time on screen (cut to next cut) + skip + 0.5s, computed by `assemble.py --lengths` before any B-roll call, so clips don't need slowing. Measured on a synthetic cut: cuts at −0.1s of the key word, every cut on moving footage, 0 black frames, duration matched; short clips gave back the opening before a 0.95–0.97x slow-down. **Unverified:** production clips. | §30H rules 1 and 3, the instrument; Appendix E4 (`key`, `peak`), E6; skill summary | Written; cut pending |
-| 2026-09-26 | **One render per call** (user: "when generating are you generating 2 images at a time or 4? I don't want to waste credits"). Every image and clip call makes one render (Higgsfield `count` 1, Kling `imageCount` 1); no a/b sets or variants; a Fix gets one new render. Exceptions: the §22U voice source takes, or the user asking for more for that call. Found: the STRYDE hook images were being made in pairs (v9a/b, v10a/b, v11a/b) and one Fix made four. | §5 | Written; cut pending |
-| 2026-09-26 | **Natural motion** (user: "some movements feel distorted" — do all of A–F): new §27G — one action per clip at a named pace, human motion 3–6s (E6 `max` 6, longer lines split), camera or subject moves never both, safe staging for hard motions, start images mid-action, both ends pinned when the product changes angle, rigid-product clause; `prefer_multi_shots` false on every Kling video call; rough cut at 24 fps (measured: 18 → 3 repeated frames in 5s on a real Kling clip); board frame strip, 0.5x, Use only up to here (`videoOut` → `out`). **Unverified:** the motion rules on production clips — first test is one HK1-B render. | §27G (new), §5/§35 note, E6, E7, §30H, §16A | Written; cut pending |
-| 2026-09-27 | **§27G wired into the whole system** (user: "the broll upgrade is not just for the board, it's a whole system thing"): §22B (a moving subject gets a camera that sways but never travels; R1-W / R1-FAST only on a still subject), §35 (motion names one action and its pace, staging, rigid-product clause, pinned-end tail frame), E4 (motion fields `action`, `pace`, `camera`, `staging`, `pin_end`, `max`), E7 (first-and-last frame template), §22V Q6 (start image mid-action, end image for pinned beats), §22W Q4 (the §27G checks). **Retroactive (§34):** the STRYDE HK1-B video prompt (a handheld camera travelling down the stairs with her) and HK1-T's animated product turn break §27G rules 2 and 3 — rewritten under §27G at their next generation. | §22B, §35, E4, E7, §22V, §22W | Written; cut pending |
-| 2026-09-26 | Generation Board change on the user's request: viewer redesigned — solid screen, details panel with Confirm / Fix / Download, filmstrip with status dots, drawn icons. Template republished to every board. | §16A | Written into §16A; cut pending |
-| 2026-09-26 | Generation Board change on the user's request: Plan tab — Absorption Sheet, act map, wardrobe map on the board, section tabs, act filter, beat links. Template republished to every board. | §16A | Written into §16A; cut pending |
-| 2026-09-26 | Generation Board change on the user's request: stage order Voice → VO → Talking heads; Voice checklist (everyone who speaks has a voice); VO locked per part; Talking heads removed when unused; film builds drop VO and Talking heads. | §16A | Written into §16A; cut pending |
-| 2026-09-27 | **Film modes upgraded — motion, camera, acting, story** (user: "upgrade the movie style" — both film modes, motion/camera and acting/story). New §24K: §27G holds in Modes 4 and 5; the F-rig is chosen by what the subject is doing (F1/F4 only on a still subject, a walk is F2 across a locked frame, F5 only where the reference edit follows a walk, waist-up, three or four steps); a camera plan per scene read off the emotion map, camera script by act on Look Sheet field 7; the tightest scale spent on the turn; a cut cue on every shot, enter late / leave early; MULTI-SHOT only when nobody moves, shots ≥ 2.5s. §24I parts 9–12: the story spine read from the script (never rewriting it), a PLAYING verb per line, one piece of business per dialogue/listener shot (`BUSINESS-LINE`) carrying the subtext tell, performance size by shot scale, generated-acting tells banned in `NEG-DRAMA` | §3B, §22B, §24G, §24H, §24I, §24J, §24K (new), §29, E4, Appendix A (`RIG-F1`, `RIG-F4`, `RIG-F5`, `MULTI-FILM`, `DRAMA-DELIVERY`, `NEG-DRAMA`, `BUSINESS-LINE` new), Open Decisions | Written; cut pending |
-| 2026-09-27 | **Scene image list** (user: "add the images needed for that scene"). Every Mode 4 / Mode 5 Scene Bible carries an image list written at step 5 from the shot list: the inputs it reuses (plates, character sheets, product views, a business prop reference only when the prop recurs or is handled at CU or tighter, outfit reference) and the frames it generates in order — bridge frame, master, one mid-action start frame per shot (MULTI-SHOT shots included), chained frames, an end frame for every pinned shot, inserts, mechanism frames — counted into the build's image budget; each on the board as its own card (`<beat>-END`, `<SC-xx>-PROP-<name>`); the scene goes to video only when every row is approved | §24H (new subsection, Scene Bible row, contact sheet) | Written; cut pending |
-| 2026-09-27 | **Connected scenes — the state track; Automatic makes only what is needed** (user: "in automation we need the image to be perfect and connected along the whole scene and only use images that is needed cause sometimes a man is crying then next cut he is not"). State track per character per shot (eyes, face, hair, wardrobe state, hands, position, condition), carried until a shot shows its cause; eases only across a TIME CUT; `STATE-CARRY` on every frame and clip with a person; frames generated in story order, each attaching the character's previous approved frame as state reference. Automatic: the image list is a ceiling (no alternates or spare coverage; unneeded shots cut before generation); frames judged in their scene; a continuity fault never ships as best-of-three — edit of the previous frame, else the shot is cut and covered by a neighbour; joins checked last frame → next first frame; a scene verdict before assembly | §24H (state track, Automatic — connected, reference order, contact sheet, assembly), §24J assembly, §22V Q4, §22W Q5, §3B, E4, Appendix A (`STATE-CARRY` new, `NEG-SCENECUT`), both skills | Written; cut pending |
-| 2026-09-27 | **No duplicate images; voice emotion connected** (user: "also making images that is not needed in the scene like its already in the master image. also voices emotions"). Every image-list row names what is new (position, scale or state) or is struck; a shot at the master's position and scale animates the master frame; push-ins up to 1.3× are edit punch-ins; consecutive lines from one position share one frame. VOICE joins the state track; §24I part 13 — the voice carries the scene, matches the face, continues across cuts, `VOICE NOW` in `DRAMA-DELIVERY`, narrator tags follow the scene; joins checked by ear (Manual) or by pitch, loudness and rate against the previous line (Automatic, thresholds unverified) | §24H (image list, state track), §24I part 13 (new), §22W Q5, E2, E4, Appendix A (`DRAMA-DELIVERY`, `NEG-DRAMA`), both skills | Written; cut pending |
-| 2026-09-27 | **Video preflight; two generations per shot; master built for its close-ups** (user: "the master image usually all the scenes needed specially close up shots… seeddance is expensive and i want everything to be perfect in the 1st try at least and if not lastly is 2nd generation fixing the problems first before generating i want strict checking"). New §22X: every paid video call passes a four-part gate first — frame approved, frame ready to move, `preflight.py` lint, three named risks each prevented; generation 2 only after the fault is diagnosed and fixed at its source (`fix_note`), never the same prompt resent; no generation 3 without the user (Automatic: clean part or cover route). §24H: the master is the source of every close-up (a render against it, not a crop beyond 1.3×) and is locked only when it holds what they copy | §22X (new), §24H (master, video), E2 (`CLIP_REGENERATE` 1 per shot, `PREFLIGHT_FAIL` new), `scripts/preflight.py` (new), both skills | Written; cut pending |
-| 2026-09-27 | **Camera angle range** (user: "the camera angles too we need to upgrade it so we are not stuck to the same camera angle always"). New §30I: every B-roll and film row names height (ground · low · eye · high · overhead), side (front · three-quarter · profile · three-quarter-back · behind · OTS) and foreground (clean · through · reflection) with a reason; `angles.py` fails jump cuts, three-in-a-row, < 3 setups in any five shots, eye-level frontal over a third, one height across a group of four or more, and unexplained angles; the meaning table; limits for faces, motion, product, Mode 1 phone plausibility and the film axis; `ANGLE-LINE` in every T2I; the angle checked on the frame | §30I (new), §30A, §18 step 5, §22V Q5, §24G field 7, §24K, E4, Appendix A (`ANGLE-LINE` new), `scripts/angles.py` (new), both skills | Written; cut pending |
-| 2026-09-27 | **Camera focus** (user: "camera focuses too"). New §30J: every B-roll and film row names its focus plane, depth and any focus change; always sharp: the nearest eye on a face, the product on a product beat, the hands on a hands beat; depth by mode and scale (phones deep, shallow only within ~30cm; film shallow from CU in); never shallow on WIDE/FULL or on more than two thirds of a group; focus changes as storytelling — one per clip, on a cue, still subject and camera; film pulls cleanly, Mode 1 taps to focus (clean rack stays banned); limits for moving subjects, faces, product, hands and text; `FOCUS-LINE`; checked by `angles.py`, `preflight.py`, §22V Q5, §22W Q4 | §30J (new), §22B focus hunt, §22V Q5, §22W Q4, §24G field 2, §18 step 5, §42 Part 3A, E4, Appendix A (`FOCUS-LINE` new), `scripts/angles.py`, `scripts/preflight.py`, both skills | Written; cut pending |
-| 2026-09-27 | **Lighting — light plan, continuity, story** (user: "lighting too"). New §30K: a light plan per location in room terms (sources, sun path, key by time, fill) — each shot's screen key side derived from the camera position, so varied angles (§30I) keep the window where it is; camera placed for the light (window 30–60° off axis for faces; never behind the camera on a face; backlight only with a reason); one light state per scene, time only forward, no light change inside a clip without a cause; a light arc by act inside each mode's register (Mode 1 stays daylight, never moody); eyes catch light, no glowing skin, product highlight, hands in light; generator tells banned (`NEG-LIGHT`, `NEG-LIGHT-C`); `LIGHT-SHOT`; checked by `angles.py`, `light_check.py` (new), §22V Q5, §22W Q4 | §30K (new), §22A profiles, §22V Q5, §22W Q4, §24G field 3, §18 step 5, §42 Part 3A, E4, Appendix A (`LIGHT-SHOT`, `NEG-LIGHT`, `NEG-LIGHT-C` new), `scripts/angles.py`, `scripts/light_check.py` (new), both skills | Written; cut pending |
-| 2026-09-27 | **US feature camera packages and production value** (user: "the movie styles uses cameras for movies like US movies i want the same quality"). §24G camera package library by genre (ARRI Alexa 35 / Mini LF / 65, Sony Venice 2, 35mm Kodak Vision3 on ARRICAM; Cooke S4/i, Zeiss Supreme / Master / Ultra Primes, ARRI Signature, Panavision Primo and anamorphic), focal and stop by shot scale, 24fps with a 180-degree shutter, colour science named; one package per film; `CAM-FILM` rewritten, `INHERIT-FILM` shutter; production value — layers in depth, dressed set, costume texture, blocking in depth — `PROD-DEPTH` new; the feature finish in post on the locked cut: match → LUT → grain, exported at native 720×1280 with no upscale (user: "the 1, 2 and 4 i want that"; 720p confirmed for phone viewing); Mode 5 virtual camera package (`CAM-ANIM`); first-frame check fails the TV look | §24G, §24J, Appendix A (`CAM-FILM`, `INHERIT-FILM`, `CAM-ANIM`, `FILM-CAPCUT`, `NEG-LIGHT` note, `PROD-DEPTH` new), both skills | Written; cut pending |
-| 2026-09-27 | **Grade in the edit only; strict scene colour lock** (user: "the color grades should be on the edit section and one strict thing the colors of a scene all of them should be consistent"). §40: the grade is an edit step — match to the scene master → LUT → grain → native export; never in a prompt; `LOOK-PATTERN` / `LOOK-ANIM-PATTERN` lose the grade and state neutral, ungraded colour; `INHERIT-FILM`, `SCENE-KEY`, `CHAIN-FRAME`, `NEG-SCENECUT` hold colours, not a grade. New §30L: a colour key per scene read off its master, `COLOUR-KEY` verbatim on every shot, the master as colour reference; `light_check.py colour` (new mode: warmth, tint, saturation, brightness against the master) on frames before video, on clips, and on graded clips in the edit; a colour flag is `SCENE_BREAK` in Automatic, a board note in Manual; colour changes only at a scene boundary | §40, §30L (new), §24G (field 5, prompt vs post, finishing), §24J field 5, §12, §24H (Scene Bible, contact sheet, assembly), §22V Q4, §22W Q5, E2, Appendix A (`COLOUR-KEY` new, `LOOK-PATTERN`, `LOOK-ANIM-PATTERN`, `INHERIT-FILM`, `SCENE-KEY`, `CHAIN-FRAME`, `NEG-SCENECUT`, `FILM-CAPCUT`, `ANIM-CAPCUT`), `scripts/light_check.py`, both skills | Written; cut pending |
-| 2026-09-27 | **No trimming in the film modes** (user: "about trimming that should not be allowed in the movie style"). New §24L: in Modes 4–5 no E11 trim pass, no E11A house cut (film narration used as generated), no cut inside a take, no speed change, no silences cut in the edit, no voice-master edits, no "Use only up to here" — a fault is regenerated per §22X; editing is only the cut between whole shots at their designed cut cue; `trim.py` / `vo_trim.py --mode 4|5` refuse, `assemble.py` never changes speed on a Mode 4/5 plan | §24L (new), §24I part 6, §27G, §22X, E2, E11, E11A, `scripts/trim.py`, `scripts/vo_trim.py`, `scripts/assemble.py`, both skills, CLAUDE.md | Written; cut pending |
-| 2026-09-27 | **Who checks; mode + directions; the agent writes the Film Look Sheet** (user: "for the manual ill be the one to check every generation you will not check them, but for automation you will be the one who will check everything i want the final results only" · "on the setup ill be putting what mode to use and directions(optional). the film look sheet you will be the one making that"). Manual: the agent checks no generation — the §22X frame-readiness note, the §30L colour notes on cards, the voice-join and contact-sheet reading and the §18B avatar verdicts are the user's; the agent still lints its own prompts and plans. Automatic: the agent checks everything and delivers the final videos only. Intake: `DIRECTIONS` (optional) added; `MODE` is the user's; the agent writes the Film Look Sheet from inspo, script and directions, never asking | E0, §18B, §22X, §24G, §24H, §24I part 13, §30L, both skills | Written; cut pending |
+*(Emptied at the V7.64.0 cut — every row written in and listed in its changelog.)*
+
 ---
 
 # OPEN DECISIONS
@@ -8614,6 +8588,29 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 ---
 
+# CHANGELOG — V7.63.0 → V7.64.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **24K** *(new)* | Film Motion & Camera Grammar (Modes 4–5): §27G holds in film; the F-rig is picked by what the subject does (F1/F4 only on a still subject, a walk is F2 across a locked frame, F5 only where the reference edit follows a walk); a camera plan per scene read off the emotion map; the tightest scale spent on the turn; a cut cue on every shot, enter late / leave early; MULTI-SHOT only when nobody moves |
+| **24L** *(new)* | No trimming in the film modes: no E11 trim, no E11A house cut, no cut inside a take, no speed change, no silences cut in the edit, no "Use only up to here" — a fault is regenerated; editing is only the cut between whole shots at their cut cue |
+| **24I** | Parts 9–13: the story spine read from the script (never rewriting it), a PLAYING verb per line, business for the hands (`BUSINESS-LINE`), performance size by shot scale, generated-acting tells banned, the voice carried across cuts and matched to the face (`VOICE NOW`) |
+| **24H** | The scene image list (inputs reused, frames generated in order, no duplicates of the master, push-ins ≤ 1.3× in the edit); the state track (eyes, face, hair, wardrobe state, hands, position, condition, voice) carried until a shot shows its cause, `STATE-CARRY`; frames in story order with a state reference; the master built for its close-ups; Automatic — connected, only what is needed, a continuity fault never ships; Scene Bible gains spine beat, camera plan, colour key, state track, image list |
+| **24G** | The US-feature camera package library by genre, focal and stop by shot scale, 24fps with a 180-degree shutter, colour science named, `PROD-DEPTH` production value; the agent always writes the Film Look Sheet; the grade leaves the prompt; the finish (match → LUT → grain, native 720×1280, no upscale) moves to the edit; the TV look fails the first-frame check |
+| **24J** | The same for Mode 5: virtual camera package, `CAM-ANIM`, grade in the edit, §24K and §24I in full |
+| **22X** *(new)* | Video Preflight: every paid video call passes frame approved → frame ready to move (Automatic) → `preflight.py` → three named risks prevented; two generations per shot, the second only after a diagnosed fix at the source; no third without the user |
+| **30I–30L** *(new)* | Camera Angle Range (height · side · foreground with a reason, `angles.py`), Camera Focus (plane, depth, focus changes — film pulls, Mode 1 taps), Lighting (a light plan in room terms, each shot's screen key side derived from the camera, continuity, a light arc by act, `NEG-LIGHT`), Scene Colour Lock (`COLOUR-KEY` from the master, checked by `light_check.py colour`) |
+| **40** | The colour grade is an edit step only: match to the scene master → LUT → grain → native export |
+| **18B, E0** | Who checks: Manual — the user checks every generation, the agent none; Automatic — the agent checks everything and delivers the final videos only. `DIRECTIONS` (optional) on the intake; `MODE` is the user's |
+| **22B, 22V, 22W, 29, 3B, 30A, 42, E2, E4, E11, E11A** | F-rigs restricted by §24K; frame and clip checks read angle, focus, light, colour, state and voice; MULTI-SHOT stillness; `SCENE_BREAK`, `PREFLIGHT_FAIL`, `CLIP_REGENERATE` 1 per shot; film, angle, focus, light and state fields on the act-map row; angles, focus and light as Edit Grammar axes |
+| **Appendix A** | New: `BUSINESS-LINE`, `STATE-CARRY`, `ANGLE-LINE`, `FOCUS-LINE`, `LIGHT-SHOT`, `NEG-LIGHT`, `NEG-LIGHT-C`, `COLOUR-KEY`, `PROD-DEPTH`. Amended: `RIG-F1`, `RIG-F4`, `RIG-F5`, `MULTI-FILM`, `DRAMA-DELIVERY`, `NEG-DRAMA`, `NEG-SCENECUT`, `CAM-FILM`, `CAM-ANIM`, `INHERIT-FILM`, `SCENE-KEY`, `CHAIN-FRAME`, `LOOK-PATTERN`, `LOOK-ANIM-PATTERN`, `FILM-CAPCUT`, `ANIM-CAPCUT`. Doc-lint: 30 stale character-count labels corrected (strings unchanged) |
+| **Carried from Pending (2026-09-26)** | §22U voice source on Kling (two takes); HeyGen motion prompt on every talking head; approachable medical professionals; Manual generates through the connectors; the Generation Board (§16A — one board per build, design locked, versions, viewer, Plan tab, stage order); the VO house cut (E11A); B-roll placement on the key word (§30H); one render per call (§5); Natural Motion (§27G) wired through the system |
+| Files | New: `scripts/preflight.py`, `scripts/angles.py`, `scripts/light_check.py`. Amended: `scripts/trim.py`, `scripts/vo_trim.py` (`--mode` refuses 4–5), `scripts/assemble.py` (no speed change on a Mode 4/5 plan). Both skills and `CLAUDE.md` |
+
+**Origin:** user instructions, 2026-09-26 to 2026-09-27 — "upgrade the movie style", "add the images needed for that scene", "in automation we need the image to be perfect and connected along the whole scene… sometimes a man is crying then next cut he is not", "voices emotions", "seedance is expensive… strict checking", "the camera angles too", "camera focuses too", "lighting too", "cameras for movies like US movies", "720p cause we only gonna watch it on phones", "the color grades should be on the edit section… the colors of a scene all of them should be consistent", "trimming should not be allowed in the movie style", "for the manual ill be the one to check every generation… for automation you will be the one who will check everything", "the film look sheet you will be the one making that". **Unverified until the first film build:** every instrument threshold (`light_check.py`, the voice-join measures), the §24K MULTI-SHOT stillness rule, and the camera-package pull — the Open Decisions visual checks settle them.
+
+---
+
 # CHANGELOG — V7.62.0 → V7.63.0 *(cut authorised)*
 
 | § | Change |
@@ -8629,83 +8626,3 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 **Origin:** user instruction — "use the inspo video on how we do things like the edits, and how the B-rolls work, if it's an overlay — for both runs." **Measured:** scene detection does not register a split-screen or picture-in-picture appearing over a held shot, which is why the per-second sheets exist.
 
----
-
-# CHANGELOG — V7.61.1 → V7.62.0 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **18B** *(new sub-section)* | The Manual Drive run: `DRIVE` with `RUN: MANUAL` is fetched and absorbed by the agent exactly as in Automatic (`fetch_drive.py`, `fetch_loom.py`, steps 1–2 in full); the agent then generates and checks the avatars (step 3: §19 panel check, §22V, two regenerations per fault) and stops. The avatars are the user's decision; on the user's go, steps 4–5 follow as copy-ready prompts and the build continues in Manual. The avatars are the only paid generation the agent submits in Manual. The avatar review joins the Manual stop list |
-| **18** | Step 3 is a Manual gate (the avatar review); steps 1–3 ship as one delivery in Manual, then steps 4–5. Automatic unchanged — steps 1–5 in one pass |
-| **1**, **31**, **44** | §1 run mode, the §31 output order and defaults 55, 83 and 85 name the Manual avatar exception and gate |
-| **E0** | Manual: a Drive intake is fetched and absorbed, the avatars generated, then the run stops |
-| **18** *(fix)* | The closing Automatic paragraph still said Automatic adds a final-review stop and keeps the step-6 gate — contradicting E0 since V7.60.6. Now: one stop, the credit cap |
-| Files | `ai-prompt-engineer` skill (run mode, intake, build order), `ai-prompt-engineer-auto` skill (version), `builds/INTAKE_TEMPLATE.md`, `CLAUDE.md` (version) |
-
-**Origin:** user instruction — "I will also use the Drive link and say run manual, just like the automation; you absorb them … you will generate the avatars after absorbing them, then stop, because that is the part I'll decide for the manual."
-
----
-
-# CHANGELOG — V7.61.0 → V7.61.1 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **18B** | A video named `loom` in the Drive folder is the Loom brief, sorted before the inspo rule and read by `fetch_loom.py` — it was being measured as an inspo |
-| **22U** | Step 8: `.docx` tables read in document order (a table script was extracted empty); speaker labels cut from spoken lines (they were being voiced) |
-| **27F** | Two-column script tables: the visual column enters the ledger row by row; a note in a headerless table anchors to its own row |
-| Files | `scripts/script_lines.py` (tables, speaker labels, row anchors), `scripts/fetch_drive.py` (Loom category, tables via `docx_lines`), both skills |
-
-**Origin:** gaps found after the V7.61.0 cut — all three break a real build.
-
----
-
-# CHANGELOG — V7.60.7 → V7.61.0 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **27F** *(new)* | Script visual instructions are binding: the Visual Instruction Ledger, the anchor rule, what carries each kind of instruction, higher layers still win, nothing left open |
-| **18C** *(new)* | The Loom brief: optional, sent as `LOOM:` beside `DRIVE:`, read by `scripts/fetch_loom.py` (download, transcript, frames), its instructions logged in the §27F ledger; Loom vs script conflict — Manual asks, Automatic follows the Loom and flags it |
-| **1** | Authority layer 4 names the script's visual instructions and the Loom brief |
-| **18** | Step 2 opens the ledger; step 5 assigns each row; step 7 executes it; step 8 carries the edit rows |
-| **18B** | `LOOM` field in the Drive message and the single-message table; Loom MP4 row in the folder table |
-| **22U** | Step 8: dropped notes go to the ledger, not the bin; inline `[notes]` cut from spoken lines |
-| **22V, 22W** | Question 1 checks the line's ledger rows |
-| **30H, 40** | Edit-carried rows placed on their line; CapCut block lists them with their IDs and closes on the ledger count |
-| **44** | Default 86 |
-| **Appendix C, E1, E9** | Ledger in the Build Sheet; two QA rows; `visual_ledger.md` and `intake/loom/` in the tree |
-| Files | `scripts/fetch_loom.py` (new); `scripts/script_lines.py --visual`; both skills; intake template |
-
-**Origin:** user instruction — follow the visual instructions on the script; read and follow the Loom sent with every script.
-
----
-
-# CHANGELOG — V7.60.6 → V7.60.7 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **E0** | **Run order** row: absorb → cast sheets passed → property and location plates passed → act map + wardrobe map → hooks written → voice master → B-roll durations filled → hook beats, body → assembly and variants → final delivery |
-| **18** | Step 5 in Automatic waits for every step-3 sheet and step-4 plate to pass; B-roll durations `pending-master` |
-| **E4** | `duration`: B-roll rows `pending-master` at step 5, filled from the master before any B-roll call |
-| **E6** | Film dialogue scenes with no master over the line use the words→duration estimate, logged `estimated` — closes a V7.60.6 gap that would have blocked them |
-| Files | Automation skill run order |
-
-**Origin:** user check — the act map and wardrobe map come after all avatars and location plates are made.
-
----
-
-# CHANGELOG — V7.60.5 → V7.60.6 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **E0** | **Automatic is hands-off.** The agent is the human for every HUMAN/HG/approval/queue in the document; hooks, voice master, final review and E2 escalations no longer stop the run. The only stop is the credit cap. Prompts are saved to Drive and the build tree, not sent. The run's only message is the final delivery: the finished videos plus a short report with *Flags* |
-| **E0** | **Default credit caps per build**, never asked: Mode 1–3 Higgsfield 600 · Kling 3,000 · Kie 2,000; Mode 4/5/AI Drama Kie 25,000. `CAP` overrides. Kling per-second cost unverified — calibrated from the first build's ledger |
-| **E6** | **Every B-roll clip is as long as the script line (or §27 phrase) it covers**: span from the voice master's word timestamps + 0.5s, rounded up, Kling 3–15s; the voice master is made before any B-roll call. Replaces the fixed 5s / 3s B-roll durations |
-| 4, 12A (mechanism and anatomy), 44 default 38 | Synced to the E6 line-length rule; 3s is now the minimum, not the length |
-| 18, 18B, 22U, 30H, E1 | Manual keeps its gates; Automatic notes added |
-| Files | Automation skill; session hook adds `auto-editor` |
-
-**Origin:** user rule — the agent approves everything and gives only the final results after the Drive link; Higgsfield images, Kling B-roll, Kie Seedance; B-roll length follows the script line.
-
----
-
-*(Older changelogs pruned per the retention policy — current diff plus one prior. Full history lives in the archived version files.)*

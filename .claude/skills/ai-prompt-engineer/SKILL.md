@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.63.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.64.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -321,19 +321,6 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 
 **OPEN DECISIONS**
 
+**CHANGELOG — V7.63.0 → V7.64.0 *(cut authorised)***
+
 **CHANGELOG — V7.62.0 → V7.63.0 *(cut authorised)***
-
-**CHANGELOG — V7.61.1 → V7.62.0 *(cut authorised)***
-
-**CHANGELOG — V7.61.0 → V7.61.1 *(cut authorised)***
-
-**CHANGELOG — V7.60.7 → V7.61.0 *(cut authorised)***
-
-**CHANGELOG — V7.60.6 → V7.60.7 *(cut authorised)***
-
-**CHANGELOG — V7.60.5 → V7.60.6 *(cut authorised)***
-
-
-
-
-
