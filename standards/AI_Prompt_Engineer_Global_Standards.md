@@ -3412,7 +3412,7 @@ Mode 4 has no house look. **The kind of film — its grade, palette, glass, ligh
 | # | Field | Content | Lives in |
 |---|---|---|---|
 | 1 | **GENRE AND REFERENCE** | What kind of film this is, in one sentence | `LOOK-[BUILD]` |
-| 2 | **CAMERA AND GLASS** | Camera body, lens family (spherical or anamorphic), the focal length for each shot scale, the stop, and the depth-of-field policy by shot scale and where focus changes are used (§30J) | `CAM-FILM` |
+| 2 | **CAMERA AND GLASS** | The camera package from the §24G library (camera body and format, lens family, spherical or anamorphic), the focal length for each shot scale, the stop, and the depth-of-field policy by shot scale and where focus changes are used (§30J) | `CAM-FILM` |
 | 3 | **LIGHT** | How light is motivated, hard or soft key, key-to-fill ratio, how practicals are used, the time-of-day plan by scene, and the light arc by act (§30K) | `LIGHT-FILM` |
 | 4 | **PALETTE** | The dominant colours of the sets and wardrobe, and the colour script by act | `LOOK-[BUILD]`, §14A wardrobe |
 | 5 | **GRADE** | Shadow tint, highlight tint, saturation, contrast curve, how skin is held | `LOOK-[BUILD]` **and** the CapCut LUT |
@@ -3420,6 +3420,48 @@ Mode 4 has no house look. **The kind of film — its grade, palette, glass, ligh
 | 7 | **MOTION** | Which F-rigs this film uses, how fast the moves are, the cutting rhythm (average shot length from the inspo), the camera script by act (§24K), and the angles used by act (§30I) | Scene Bibles, `RIG-F*` |
 | 8 | **PERFORMANCE** | Acting register — how big, how still, how much is said under the line | §28 settings below |
 | 9 | **SOUND AND POST TEXTURE** | Production sound, room tone, foley, score, and the grain the edit adds | CapCut block |
+
+### The camera package — what US features are shot on *(2026-09-27, user: "the movie styles uses cameras for movies like US movies i want the same quality")*
+
+Look Sheet field 2 is filled from this library, never from a generic "cinema camera". A generator has seen thousands of stills from each of these packages, labelled; **naming the real camera, the real glass, the format and the stop pulls the frame toward that footage** — the colour science, the highlight roll-off, the way the lens renders a face. The inspo sets the package where it can be read (§42: depth of field by scale, bokeh shape, flare, skin); otherwise the genre does.
+
+| Genre (Look Sheet field 1) | Camera and format | Lens family | Character |
+|---|---|---|---|
+| **Family drama, prestige drama** — the default | ARRI Alexa 35, Super 35 · or ARRI Alexa Mini LF, large format | Cooke S4/i · Zeiss Supreme Prime | Warm, gentle skin, soft roll-off; the honest default |
+| **Emotional, intimate, romance** | ARRI Alexa Mini LF, large format | ARRI Signature Prime | Creamy falloff, very clean, flattering without beauty light |
+| **Tension, thriller, medical urgency** | Sony Venice 2, full frame | Zeiss Master Prime | Crisp, controlled, cooler, harder contrast |
+| **Nostalgic, period, memory** | 35mm film — Kodak Vision3 250D (day) / 500T (night) on an ARRICAM LT | Panavision Primo · Cooke Panchro/i Classic | Film colour and halation; grain added in post, never generated |
+| **Big, epic, sweeping** | ARRI Alexa 65 or Mini LF | Panavision anamorphic (C-series / T-series) | Oval bokeh, horizontal streak flare — **only when field 6 calls for flare** (`NEG-LIGHT` otherwise drops it) |
+| **Indie, raw, handheld realism** | ARRI Alexa Mini, Super 35 | Zeiss Ultra Prime · vintage Cooke Speed Panchro | Slightly soft edges, character, less polish |
+
+**One package per film** (a film never switches cameras between scenes, §24G one look). The package fills `CAM-FILM`'s `[CAMERA]` (body and format) and `[LENS FAMILY]`.
+
+**Focal length by shot scale** — full-frame / large-format values; on Super 35 or 35mm film multiply by about 0.7:
+
+| Scale | WIDE | FULL | MEDIUM | MCU | CU | ECU / INSERT |
+|---|---|---|---|---|---|---|
+| **Focal** | 24–32mm | 32–40mm | 40–50mm | 50–65mm | 75–85mm | 100mm macro |
+| **Stop** | T4–T5.6 | T2.8–T4 | T2.8 | T2–T2.8 | T1.8–T2 | T2.8–T4 (macro depth is already shallow) |
+
+The stop follows §30J's depth table: wides hold the room, close-ups separate the face. **Never a wide lens close to a face** (§30I part 4).
+
+**Motion cadence:** 24 frames per second with a **180-degree shutter** — the natural motion blur of feature footage (`INHERIT-FILM`). Never high frame rate, never the smooth video look.
+
+**Colour science:** the package's own (ARRI, Sony, film stock) is named in `CAM-FILM`; the look is finished in post by one LUT in the manner of a film print emulation (§24G prompt-versus-post), never by a generated grade.
+
+### Production value — what makes a US feature look expensive
+
+The camera is half of it; the other half is what is in front of it, and generators leave it out. Every Mode 4 frame carries `PROD-DEPTH`:
+
+- **Layers in depth:** something soft in the foreground (a door edge, a lamp, a shoulder), the actors in the middle ground, the room continuing behind them — never a person against a flat wall.
+- **A dressed, lived-in set:** real surfaces with age, use and clutter that belongs to the character (§30G property), practicals in frame and lit (§30K).
+- **Costume texture:** fabric weave, wear at the cuffs, clothes that have been worn (§14A).
+- **Blocking in depth:** people placed at different distances from the lens, not lined up across the frame.
+- **Atmosphere only where the look calls for it:** a faint haze in the air is a Look Sheet field 6 choice, never a default (`NEG-LIGHT`).
+
+### Finishing — the delivery master
+
+Generation stays at 720p (§4, locked, user decision). The feature finish happens once, in post, on the **picture-locked cut only** — never on unused clips: **exposure and white balance matched scene by scene → the one LUT → one upscale to 1080×1920 with a detail-preserving video upscaler → the grain pass at the Look Sheet's size, after the upscale** (grain upscaled with the picture goes to mush). The upscaler is the connector's (`upscale_video`, §5 — route unverified until its first render is looked at) or the editor's; it is credit spend, so it runs after the final review (§18), not before. `FILM-CAPCUT` carries the order.
 
 ### Prompt versus post — the split that keeps 50 clips matching
 
@@ -3469,7 +3511,7 @@ The render keeps every §12A rule. In post it takes a matched contrast and black
 
 ### First-frame check — adds five items
 
-The frame matches `LOOK-[BUILD]` · highlights behave as field 6 states · one motivated key with a visible shadow side · no letterbox bars · the person at the stated scale, with the room part of the composition. **A frame that reads as a phone photo, or as a glossy commercial, is a reroll** — Mode 4 fails in both directions.
+The frame matches `LOOK-[BUILD]` · highlights behave as field 6 states · one motivated key with a visible shadow side · no letterbox bars · the person at the stated scale, with the room part of the composition. **A frame that reads as a phone photo, or as a glossy commercial, is a reroll** — Mode 4 fails in both directions. **And a frame that reads as television rather than a feature** — flat even light, everything sharp at a close-up, a person against a bare wall, no depth — is a reroll too (§24G camera package, production value).
 
 ---
 
@@ -3592,7 +3634,7 @@ Each single-shot beat animates its own approved frame (I2V, §6), and **no clip 
 
 ### Assembly — Mode 4 T2I
 
-`CAM-FILM` → `SCENE-MASTER` or `SCENE-KEY` (+ `CHAIN-FRAME` / `SCENE-BRIDGE` where they apply) → `FILM-FRAME` → subject, `WARD-LINE`, `BODY-WHOLE`, `EMO-SEED`, `STATE-CARRY` → the §22S stack on MEDIUM and tighter → `REF-PROD` / `PROP-REF` + `PROP-SHELL` / `SUBJ-REF` / `FACE-SEED` as they apply → `LIGHT-FILM` → `LOOK-[BUILD]` → `PHYS-FRAME-C` → `CAP-FILM` → negatives carrying `NEG-FILM` + `NEG-SCENECUT` + `NEG-BODY` + `NEG-SKIN` + `NEG-TEX` + scene, property and product negatives.
+`CAM-FILM` → `SCENE-MASTER` or `SCENE-KEY` (+ `CHAIN-FRAME` / `SCENE-BRIDGE` where they apply) → `FILM-FRAME` → `PROD-DEPTH` → subject, `WARD-LINE`, `BODY-WHOLE`, `EMO-SEED`, `STATE-CARRY` → the §22S stack on MEDIUM and tighter → `REF-PROD` / `PROP-REF` + `PROP-SHELL` / `SUBJ-REF` / `FACE-SEED` as they apply → `LIGHT-FILM` → `LOOK-[BUILD]` → `PHYS-FRAME-C` → `CAP-FILM` → negatives carrying `NEG-FILM` + `NEG-SCENECUT` + `NEG-BODY` + `NEG-SKIN` + `NEG-TEX` + scene, property and product negatives.
 
 **Absent:** `CAM-LOCK`, `CAM-FRONT`, `CAP-A`, `CAP-FILE`, `CAP-SHARP`, `NEG-M1`, `NEG-FILE`, `NEG-FINISH`, `NEG-FRAME`, `NEG-STAGED`, `BROLL-REAL`, `LIGHT-EVENT`, and every `FRAME-*` block.
 
@@ -3760,6 +3802,8 @@ The §24G sheet with three fields changed. It is derived the same way: the inspo
 
 Compiled into `LOOK-[BUILD]` from `LOOK-ANIM-PATTERN` and pasted verbatim on every frame.
 
+**The virtual camera package** *(2026-09-27)*. Field 2 takes the same §24G library as a **virtual lens emulation**: the feature-animation layout camera emulates a real package (e.g. *a virtual camera emulating a large-format sensor with spherical primes*, or *emulating anamorphic glass*) with the §24G focal-by-scale table, 24fps with a 180-degree shutter, and a final path-traced feature render (`CAP-ANIM`). Production value holds in Mode 5 too — layers in depth, a dressed set, fabric with weave — carried by `PROD-DEPTH` with *"lived-in"* rendered in the film's own materials.
+
 ### Floors that never yield to the look
 
 9:16, never letterboxed · Seedance at 720p · **every character stays on model**, with the same proportions and face in every frame · the product stays real (`PIX-SPLIT`) · one look per film · every light has a source · bodies whole · no character looks into the lens, except a declared narrator · the body never fills the frame · no generated grain.
@@ -3774,7 +3818,7 @@ Unchanged from §24: animated film reads as family content. On an adult-buyer ad
 
 ### Assembly — Mode 5 T2I
 
-`CAM-ANIM` → `SCENE-MASTER` or `SCENE-KEY` (+ `CHAIN-FRAME` / `SCENE-BRIDGE`) → `FILM-FRAME` → each character's `PIX-SHAPE` fill from their sheet, `WARD-LINE`, `BODY-WHOLE`, `EMO-SEED`, `STATE-CARRY` → `PIX-EYES` → `REF-PROD` + `PIX-SPLIT` / `PROP-REF` + `PROP-SHELL` / `SUBJ-REF` as they apply → `LIGHT-ANIM` → `LOOK-[BUILD]` → `PHYS-FRAME-C` → `CAP-ANIM` → negatives carrying `NEG-PIX` + `NEG-ANIMFILM` + `NEG-SCENECUT` + `NEG-DRAMA` + `NEG-BODY` + scene, property and product negatives.
+`CAM-ANIM` → `SCENE-MASTER` or `SCENE-KEY` (+ `CHAIN-FRAME` / `SCENE-BRIDGE`) → `FILM-FRAME` → `PROD-DEPTH` → each character's `PIX-SHAPE` fill from their sheet, `WARD-LINE`, `BODY-WHOLE`, `EMO-SEED`, `STATE-CARRY` → `PIX-EYES` → `REF-PROD` + `PIX-SPLIT` / `PROP-REF` + `PROP-SHELL` / `SUBJ-REF` as they apply → `LIGHT-ANIM` → `LOOK-[BUILD]` → `PHYS-FRAME-C` → `CAP-ANIM` → negatives carrying `NEG-PIX` + `NEG-ANIMFILM` + `NEG-SCENECUT` + `NEG-DRAMA` + `NEG-BODY` + scene, property and product negatives.
 
 **Absent:** `CAM-LOCK`, `CAM-FILM`, `CAP-A`, `CAP-FILE`, `CAP-FILM`, `LIGHT-FILM`, `PIX-LIGHT` (replaced by `LIGHT-ANIM`), the §22S skin stack, every `FRAME-*` block, `NEG-M1` and `NEG-FILM`.
 
@@ -7502,7 +7546,7 @@ FOCUS: [PLANE — the nearest eye of NAME / the hands and what they hold / the p
 ```
 THE LIGHT: [SOURCE from the light plan — the window on the room's WALL, or the named practical] lights [SUBJECT] from the [SCREEN SIDE] of the frame, [TIME-OF-DAY QUALITY and the act's light state], so the face has a lit side toward [SIDE] and a softer shadow side, with a small catchlight in the eyes. The shadows fall away from that source, one way only.
 ```
-**`NEG-LIGHT`** — every T2I with a location (§30K); Mode 1 drops clauses `NEG-M1` already carries. *(309)*
+**`NEG-LIGHT`** — every T2I with a location (§30K); Mode 1 drops clauses `NEG-M1` already carries. In Modes 4–5, `no haze` drops when Look Sheet field 6 calls for atmosphere, and `no lens flare` when the camera package is anamorphic with flare called (§24G). *(309)*
 ```
 no rim light without a source behind the subject, no glowing skin, no halo or bloom, no light from nowhere, no shadows falling in two directions, no subject brighter than the room around them, no orange-and-teal grade, no sunbeams or god rays, no haze, no lens flare, no eyes lost in shadow, no blown wordmark
 ```
@@ -7510,9 +7554,9 @@ no rim light without a source behind the subject, no glowing skin, no halo or bl
 ```
 no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject
 ```
-**`CAM-FILM`** — opens every Mode 4 T2I. `[CAMERA]`, `[LENS FAMILY]`, `[STOP]` from Look Sheet field 2; `[FOCAL]` by shot scale; `[RIG]` in plain words. Replaces `CAM-LOCK`. *(352)*
+**`CAM-FILM`** — opens every Mode 4 T2I. `[CAMERA AND FORMAT]`, `[LENS FAMILY]`, `[COLOUR SCIENCE]` from the §24G camera package (Look Sheet field 2); `[FOCAL]` and `[STOP]` by shot scale from the package table; `[RIG]` in plain words. Replaces `CAM-LOCK`. *(443)*
 ```
-Photographed as a single frame from a feature film, shot on [CAMERA] with [LENS FAMILY] at [FOCAL]mm and [STOP], the camera on [RIG] and operated by a camera crew who framed and lit this moment on purpose. A still lifted from the finished film, not a photograph and not a phone video, composed natively for a vertical 9:16 frame with no letterbox bars.
+Photographed as a single frame from a US feature film, shot on [CAMERA AND FORMAT] with [LENS FAMILY] at [FOCAL]mm and [STOP], 24 frames per second with a 180-degree shutter, in [COLOUR SCIENCE] colour, the camera on [RIG] and operated by a feature crew who framed and lit this moment on purpose. A still lifted from the finished film, not a photograph and not a phone video, composed natively for a vertical 9:16 frame with no letterbox bars.
 ```
 **`LOOK-PATTERN`** — template for `LOOK-[BUILD]`, compiled from Look Sheet fields 1, 4, 5 and 6 and pasted verbatim on every Mode 4 T2I. **Never paraphrased.** *(346)*
 ```
@@ -7530,9 +7574,13 @@ THE LIGHT IS A LIT SET, MOTIVATED BY [MOTIVATION] ON [SIDE]. The key is [KEY QUA
 ```
 The frame is composed by a camera operator. The subject is placed deliberately off-centre, with looking room in the direction they face and headroom set for the shot size. The room is arranged in depth behind them, and no edge of the frame cuts the body at a joint. The person never fills the frame edge to edge: this is a [SHOT SCALE], and the person takes up [SCALE] of the frame height, with the room around them part of the composition.
 ```
-**`INHERIT-FILM`** — I2V `lighting`, every Mode 4 clip. *(254)*
+**`PROD-DEPTH`** — every Mode 4 T2I, after `FILM-FRAME` (§24G production value). *(320)*
 ```
-The look exactly as in the start frame: same lens, same depth of field, same grade, same light direction and same optical texture. Nothing about the look changes across the clip. 24 frames per second, with natural motion blur on moving hands and objects.
+The set is dressed and layered like a feature production: [FOREGROUND ELEMENT] soft in the near foreground, [WHO] in the middle ground, and the room continuing in depth behind them, lived-in, with its own practicals lit. Real surfaces with age and use, and clothes with weave and wear. Nobody stands against a flat wall.
+```
+**`INHERIT-FILM`** — I2V `lighting`, every Mode 4 clip. *(281)*
+```
+The look exactly as in the start frame: same lens, same depth of field, same grade, same light direction and same optical texture. Nothing about the look changes across the clip. 24 frames per second with a 180-degree shutter, so moving hands and objects carry natural motion blur.
 ```
 **`AUD-FILM`** — replaces `AUD-A` in Mode 4 `delivery`. *(316)*
 ```
@@ -7613,9 +7661,9 @@ no phone camera look, no smartphone processing, no HDR tone-mapping, no flat lif
 
 ## Pixar Film *(§24J)*
 
-**`CAM-ANIM`** — opens every Mode 5 T2I. `[FOCAL]` by shot scale and `[DEPTH OF FIELD]` from Look Sheet field 2. Replaces `CAM-FILM`. *(375)*
+**`CAM-ANIM`** — opens every Mode 5 T2I. `[FOCAL]` by shot scale and `[DEPTH OF FIELD]` from Look Sheet field 2. Replaces `CAM-FILM`. *(451)*
 ```
-A single frame from a finished 3D animated feature film, rendered through a virtual camera with a [FOCAL]mm lens and [DEPTH OF FIELD], the camera placed and moved by a layout artist who framed this moment on purpose. A final render from the film, not concept art, not a storyboard, not a game and not a toy, composed natively for a vertical 9:16 frame with no letterbox bars.
+A single frame from a finished 3D animated feature film, rendered through a virtual camera emulating [VIRTUAL PACKAGE] with a [FOCAL]mm lens and [DEPTH OF FIELD], 24 frames per second with a 180-degree shutter, the camera placed and moved by a layout artist who framed this moment on purpose. A final render from the film, not concept art, not a storyboard, not a game and not a toy, composed natively for a vertical 9:16 frame with no letterbox bars.
 ```
 **`LOOK-ANIM-PATTERN`** — template for a Mode 5 `LOOK-[BUILD]`. **Never paraphrased.** *(365)*
 ```
@@ -7660,9 +7708,9 @@ INSERT: the product alone, filling the middle of the frame, [WHERE IT IS: restin
 ```
 Without a cut, [NAME]'s [REGION] turns gently see-through, as if the film is letting us look inside: a simplified [TARGET] and [BONES], modelled in this film's own shapes and materials and softly lit from within. [THE SENSATION: the behaviour from the §12A sensation library, in warm colour at [SITE]]. The product, where it is worn, stays solid and real on the outside of the limb and visibly does its job. Clear, friendly and easy to read, never medical and never frightening.
 ```
-**`FILM-CAPCUT`** — CapCut instruction for every Mode 4 build (§40). Never a prompt. *(665)*
+**`FILM-CAPCUT`** — CapCut instruction for every Mode 4 build (§40). Never a prompt. *(800)*
 ```
-Standing film-mode lines: match exposure and white balance scene by scene first · then one LUT from the Look Sheet across every clip · one grain pass at the Look Sheet's size and strength across the whole film, never per clip · halation only if field 6 calls for it · the §12A render takes a matched contrast and black-level pass, never the LUT's colour shift · no stabilisation on shoulder shots · sound in layers: dialogue, one continuous room tone per scene, foley for steps, doors, cups and cloth, score only where the Scene Bible marks it, ducked under dialogue · J and L cuts on dialogue across picture cuts · time cards and captions in the film's type style.
+Standing film-mode lines: match exposure and white balance scene by scene first · then one LUT from the Look Sheet across every clip · then, on the picture-locked cut only, one upscale to 1080×1920 with a detail-preserving upscaler (§24G finishing) · one grain pass at the Look Sheet's size and strength across the whole film, after the upscale, never per clip · halation only if field 6 calls for it · the §12A render takes a matched contrast and black-level pass, never the LUT's colour shift · no stabilisation on shoulder shots · sound in layers: dialogue, one continuous room tone per scene, foley for steps, doors, cups and cloth, score only where the Scene Bible marks it, ducked under dialogue · J and L cuts on dialogue across picture cuts · time cards and captions in the film's type style.
 ```
 **`ANIM-CAPCUT`** — CapCut instruction for every Mode 5 build (§40). Never a prompt. *(358)*
 ```
@@ -8384,6 +8432,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | 2026-09-27 | **Camera angle range** (user: "the camera angles too we need to upgrade it so we are not stuck to the same camera angle always"). New §30I: every B-roll and film row names height (ground · low · eye · high · overhead), side (front · three-quarter · profile · three-quarter-back · behind · OTS) and foreground (clean · through · reflection) with a reason; `angles.py` fails jump cuts, three-in-a-row, < 3 setups in any five shots, eye-level frontal over a third, one height across a group of four or more, and unexplained angles; the meaning table; limits for faces, motion, product, Mode 1 phone plausibility and the film axis; `ANGLE-LINE` in every T2I; the angle checked on the frame | §30I (new), §30A, §18 step 5, §22V Q5, §24G field 7, §24K, E4, Appendix A (`ANGLE-LINE` new), `scripts/angles.py` (new), both skills | Written; cut pending |
 | 2026-09-27 | **Camera focus** (user: "camera focuses too"). New §30J: every B-roll and film row names its focus plane, depth and any focus change; always sharp: the nearest eye on a face, the product on a product beat, the hands on a hands beat; depth by mode and scale (phones deep, shallow only within ~30cm; film shallow from CU in); never shallow on WIDE/FULL or on more than two thirds of a group; focus changes as storytelling — one per clip, on a cue, still subject and camera; film pulls cleanly, Mode 1 taps to focus (clean rack stays banned); limits for moving subjects, faces, product, hands and text; `FOCUS-LINE`; checked by `angles.py`, `preflight.py`, §22V Q5, §22W Q4 | §30J (new), §22B focus hunt, §22V Q5, §22W Q4, §24G field 2, §18 step 5, §42 Part 3A, E4, Appendix A (`FOCUS-LINE` new), `scripts/angles.py`, `scripts/preflight.py`, both skills | Written; cut pending |
 | 2026-09-27 | **Lighting — light plan, continuity, story** (user: "lighting too"). New §30K: a light plan per location in room terms (sources, sun path, key by time, fill) — each shot's screen key side derived from the camera position, so varied angles (§30I) keep the window where it is; camera placed for the light (window 30–60° off axis for faces; never behind the camera on a face; backlight only with a reason); one light state per scene, time only forward, no light change inside a clip without a cause; a light arc by act inside each mode's register (Mode 1 stays daylight, never moody); eyes catch light, no glowing skin, product highlight, hands in light; generator tells banned (`NEG-LIGHT`, `NEG-LIGHT-C`); `LIGHT-SHOT`; checked by `angles.py`, `light_check.py` (new), §22V Q5, §22W Q4 | §30K (new), §22A profiles, §22V Q5, §22W Q4, §24G field 3, §18 step 5, §42 Part 3A, E4, Appendix A (`LIGHT-SHOT`, `NEG-LIGHT`, `NEG-LIGHT-C` new), `scripts/angles.py`, `scripts/light_check.py` (new), both skills | Written; cut pending |
+| 2026-09-27 | **US feature camera packages and production value** (user: "the movie styles uses cameras for movies like US movies i want the same quality"). §24G camera package library by genre (ARRI Alexa 35 / Mini LF / 65, Sony Venice 2, 35mm Kodak Vision3 on ARRICAM; Cooke S4/i, Zeiss Supreme / Master / Ultra Primes, ARRI Signature, Panavision Primo and anamorphic), focal and stop by shot scale, 24fps with a 180-degree shutter, colour science named; one package per film; `CAM-FILM` rewritten, `INHERIT-FILM` shutter; production value — layers in depth, dressed set, costume texture, blocking in depth — `PROD-DEPTH` new; the feature finish in post on the locked cut: match → LUT → one upscale to 1080×1920 → grain (720p generation lock unchanged); Mode 5 virtual camera package (`CAM-ANIM`); first-frame check fails the TV look | §24G, §24J, Appendix A (`CAM-FILM`, `INHERIT-FILM`, `CAM-ANIM`, `FILM-CAPCUT`, `NEG-LIGHT` note, `PROD-DEPTH` new), both skills | Written; cut pending |
 ---
 
 # OPEN DECISIONS
