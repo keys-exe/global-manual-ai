@@ -41,6 +41,7 @@ def main():
     ap.add_argument("--outdir")
     ap.add_argument("--build", default="BUILD")
     ap.add_argument("--min-th", type=float, default=1.5)
+    ap.add_argument("--fps", type=int, default=24, help="timeline frame rate, passed to assemble.py (24 = Kling native)")
     a = ap.parse_args()
     root = Path(a.variants).parent
     spec = json.loads(Path(a.variants).read_text())
@@ -67,20 +68,20 @@ def main():
         pfile.write_text(json.dumps(plan, indent=2))
         out = outdir / f"{a.build}_{h['id']}.mp4"
         r = subprocess.run([sys.executable, str(HERE / "assemble.py"), str(pfile), "--out", str(out),
-                            "--min-th", str(a.min_th)], capture_output=True, text=True)
+                            "--min-th", str(a.min_th), "--fps", str(a.fps)], capture_output=True, text=True)
         try:
             rep = json.loads(r.stdout)
         except json.JSONDecodeError:
             results.append({"hook": h["id"], "status": "FAIL", "detail": r.stderr[-500:]})
             continue
-        hook_len = round(round(duration(root / h["audio"]) * 30) / 30, 4)  # body starts on this frame
+        hook_len = round(round(duration(root / h["audio"]) * a.fps) / a.fps, 4)  # body starts on this frame
         expect = hook_len + body_len
         got = rep.get("render", {}).get("duration_s")
         body_beats = {b["beat"] for b in body["broll"]}
         body_part = [(s["beat"], s.get("layout"), round(s["start"] - hook_len, 2), round(s["end"] - hook_len, 2))
                      for s in rep["timeline"] if s.get("beat") in body_beats]
         body_edls.append(body_part)
-        ok = rep.get("status") == "PASS" and got is not None and abs(got - expect) <= 2 / 30
+        ok = rep.get("status") == "PASS" and got is not None and abs(got - expect) <= 2 / a.fps
         results.append({"hook": h["id"], "file": str(out), "status": "PASS" if ok else "FAIL",
                         "hook_s": round(hook_len, 3), "body_s": round(body_len, 3),
                         "duration_s": got, "expected_s": round(expect, 3),

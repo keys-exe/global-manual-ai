@@ -277,7 +277,20 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .v-iconbtn:hover{border-color:#4a5263}
 .v-detbtn{display:none}
 .v-body{display:grid;grid-template-columns:minmax(0,1fr) 340px;min-height:0}
-.v-col{display:grid;grid-template-rows:auto minmax(0,1fr);min-height:0;min-width:0}
+.v-col{display:grid;grid-template-rows:auto minmax(0,1fr) auto;min-height:0;min-width:0}
+/* frame check under a video: 8 frames first to last, half speed, the clean part */
+.v-check{display:flex;flex-direction:column;gap:8px;padding:0 16px 12px;min-width:0}
+.v-frames{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;max-width:560px;width:100%;margin:0 auto}
+.v-fr{position:relative;aspect-ratio:9/16;border-radius:6px;border:1px solid #2c323e;background:#161a22;padding:0;overflow:hidden;cursor:pointer}
+.v-fr:hover{border-color:#8c98ff}
+.v-fr canvas{width:100%;height:100%;display:block;object-fit:cover}
+.v-fr .t{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-family:var(--mono);font-size:9.5px;padding:8px 0 2px;text-align:center}
+.v-fr.cut{opacity:.35}
+.v-fr.cut::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 6px,rgba(240,113,102,.35) 6px 8px)}
+.v-ctl{display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap}
+.v-ctl .btn{min-height:32px}
+.viewer .btn.on{background:#8c98ff;border-color:#8c98ff;color:#0b0d12}
+.v-clean{font-family:var(--mono);font-size:12px;background:#1d3a2c;color:#8fe0b4;border:1px solid #2c5a42;border-radius:999px;padding:4px 10px}
 .v-tools{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 16px 0}
 .v-stage{position:relative;min-height:0;display:flex;align-items:center;justify-content:center;padding:14px 64px 16px}
 .v-media{position:relative;height:100%;max-height:100%;aspect-ratio:9/16;max-width:100%;display:grid;place-items:center}
@@ -1287,6 +1300,7 @@ function mediaCard(g,k){
     ["Attempt",`${1+(Number(g[d.regens])||0)} of 3`],
     ["Generated",when(g[d.at])],
   ];
+  if(k==="video"&&g.videoOut!=null&&(g.videoOutV==null||g.videoOutV===currentV(g,"video"))) specs.push(["Clean part",`0–${Number(g.videoOut).toFixed(1)}s`,"wide"]);
   const canAct=!state.readOnly&&!locked&&s!=="gen";
   return `<article class="mc ${cls}" id="mc-${esc(g.id)}-${k}">
     <div class="mc-head">
@@ -1423,6 +1437,37 @@ function viewerList(step){
   const sc=state.viewer&&state.viewer.scope;
   return groups(buildGens()).flatMap(x=>x.items).filter(g=>flow(g).includes(step)&&(!sc||viewScope(g)===sc));
 }
+// the clean part: the user's "use only up to here" for the current video version
+function cleanOut(g,k,shown){return k==="video"&&g.videoOut!=null&&shown&&(g.videoOutV==null||g.videoOutV===shown.v)?Number(g.videoOut):null}
+const frameCache={};
+async function frameStrip(mv,shown,outV){
+  const box=document.getElementById("vframes"); if(!box||!mv.currentSrc) return;
+  const key=(shown&&(shown.asset+":"+shown.v))||mv.currentSrc, dur=mv.duration; if(!isFinite(dur)||dur<=0) return;
+  const times=Array.from({length:8},(_,n)=>Math.min(dur-0.05,dur*n/7));
+  const btns=[...box.querySelectorAll(".v-fr")];
+  btns.forEach((b,n)=>{b.dataset.t=times[n];b.querySelector(".t").textContent=times[n].toFixed(1)+"s";b.classList.toggle("cut",outV!=null&&times[n]>outV+0.01)});
+  const paint=(n,src)=>{const c=btns[n]&&btns[n].querySelector("canvas");if(c&&src){const x=c.getContext("2d");x.drawImage(src,0,0,c.width,c.height)}};
+  if(frameCache[key]){frameCache[key].forEach((bm,n)=>paint(n,bm));return}
+  const tv=document.createElement("video"); tv.muted=true; tv.playsInline=true; tv.preload="auto"; tv.src=mv.currentSrc;
+  const shots=[];
+  try{
+    await new Promise((res,rej)=>{tv.onloadeddata=res;tv.onerror=rej});
+    for(let n=0;n<times.length;n++){
+      await new Promise(res=>{tv.onseeked=res;tv.currentTime=times[n]});
+      const c=document.createElement("canvas");c.width=90;c.height=160;c.getContext("2d").drawImage(tv,0,0,90,160);
+      shots.push(c); if(document.getElementById("vframes")===box) paint(n,c);
+    }
+    frameCache[key]=shots;
+  }catch(e){}
+  tv.removeAttribute("src");tv.load();
+}
+async function setCleanOut(on){
+  const v=state.viewer, g=v&&state.gens.find(x=>x.id===v.id), mv=document.querySelector(".v-media video"); if(!g||!state.db) return;
+  const t=mv?Math.round(mv.currentTime*10)/10:0;
+  if(on&&t<0.5){toast("Play or pick a frame first, then press it where the clip is still clean");return}
+  try{await state.db.doc("generations/"+g.id).update(on?{videoOut:t,videoOutV:currentV(g,"video"),updatedAt:Date.now()}:{videoOut:null,videoOutV:null,updatedAt:Date.now()});
+    toast(on?`Only 0–${t.toFixed(1)}s of this clip will be used`:"The whole clip will be used")}catch(e){handleWriteError(e)}
+}
 function openViewer(id,step){const g=state.gens.find(x=>x.id===id);state.viewer={id,step,ver:null,menu:false,scope:g?viewScope(g):null};renderViewer()}
 function closeViewer(){if(!state.viewer) return;state.viewer=null;const v=$("#viewer");v.hidden=true;v.innerHTML=""}
 function moveViewer(dir){
@@ -1440,7 +1485,9 @@ function renderViewer(){
   const asset=shown&&shown.asset, type=(shown&&shown.type)||g[d.type]||"";
   const list=viewerList(k), i=list.findIndex(x=>x.id===g.id);
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
-  const src=shown?srcFrom(shown.asset,shown.parts,shown.type):"";
+  // a video in the viewer is always loaded into memory first, so it can be seeked frame by frame
+  const vids=shown?(Array.isArray(shown.parts)&&shown.parts.length>1?shown.parts:[shown.asset]):[];
+  const src=!shown?"":isVid&&!type.startsWith("audio/")?`data-parts="${esc(vids.join(","))}" data-ptype="${esc(shown.type||"")}"`:srcFrom(shown.asset,shown.parts,shown.type);
   const locked=k==="video"&&stepState(g,"image")!=="ok";
   const isAud=type.startsWith("audio/");
   const media=asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
@@ -1448,6 +1495,15 @@ function renderViewer(){
   const s=stepState(g,k);
   const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
   const grp=groupOf(g);
+  // frame check: only for a video, on the version being shown
+  const outV=cleanOut(g,k,shown);
+  const checkBar=asset&&isVid&&k!=="file"?`<div class="v-check">
+      <div class="v-frames" id="vframes">${Array.from({length:8},(_,n)=>`<button type="button" class="v-fr" data-vseek="${n}" aria-label="Frame ${n+1} of 8"><canvas width="90" height="160"></canvas><span class="t">…</span></button>`).join("")}</div>
+      <div class="v-ctl">
+        <button class="btn small${v.rate===0.5?" on":""}" type="button" data-vrate="1" aria-pressed="${v.rate===0.5}">0.5x</button>
+        ${outV!=null?`<span class="v-clean" title="Only this part of the clip is used in the edit">Clean part 0–${outV.toFixed(1)}s</span>`:""}
+        ${!state.readOnly&&!older&&shown&&shown.v===currentV(g,k)?(outV!=null?`<button class="btn small" type="button" data-vout="clear">Use the whole clip</button>`:`<button class="btn small" type="button" data-vout="set" title="Pause where the clip is still clean, then press this">Use only up to here</button>`):""}
+      </div></div>`:"";
   const sizeTxt=x=>x.size==null||x.size===""?"":(k==="image"?String(x.size):`${x.size}s`);
   const item=x=>{
     const thumb=(x.type||"").startsWith("video/")||(k!=="image"&&!(x.type||"").startsWith("image/"))?`<span class="vt vt-vid">▶</span>`:`<img class="vt" ${srcFrom(x.asset,x.parts,x.type)} alt="">`;
@@ -1518,11 +1574,14 @@ function renderViewer(){
         <div class="v-media">${media}</div>
         ${list.length>1?`<button class="v-nav next" type="button" data-vnav="1" aria-label="Next">${I.r}</button>`:""}
       </div>
+      ${checkBar}
       </div>
       ${panel}
     </div>
     <div class="v-strip"><span class="v-count">${i+1} / ${list.length} ${d.label.toLowerCase()}s · ${esc(state.view==="board"?((STAGES.find(x=>x.key===g.stage)||{}).name||""):groupOf(g).label)}</span><div class="v-thumbs">${thumbs}</div></div>`;
   const el=$("#viewer"); el.hidden=false; hydrate(el);
+  const mv=el.querySelector(".v-media video");
+  if(mv){if(v.rate) mv.playbackRate=v.rate; mv.addEventListener("loadedmetadata",()=>{if(v.rate) mv.playbackRate=v.rate;frameStrip(mv,shown,outV)},{once:true}); if(mv.readyState>=1) frameStrip(mv,shown,outV)}
   const on=el.querySelector('.v-th[aria-current="true"]'); if(on) on.scrollIntoView({block:"nearest",inline:"center"});
   if(v.fix){const t=el.querySelector("#vfault");if(t){t.value=draft;t.focus()}}
 }
@@ -1772,7 +1831,7 @@ function tocJump(i){
 let pickTarget=null;
 document.addEventListener("click",e=>{
   if(!e.target.closest(".vsel")) closeVsel();
-  const t=e.target.closest("[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
   if(ds.apt!==undefined){const a=t.closest(".ap").querySelector("audio");if(a.paused){const p=a.play();if(p&&p.catch) p.catch(()=>toast("Couldn't play this file"))}else a.pause();return}
@@ -1789,6 +1848,9 @@ document.addEventListener("click",e=>{
   if(ds.vgo){state.viewer.id=ds.vgo;state.viewer.ver=null;state.viewer.menu=false;state.viewer.fix=false;renderViewer();return}
   if(ds.vdet){state.viewer.details=!state.viewer.details;renderViewer();return}
   if(ds.vfix){state.viewer.fix=ds.vfix==="1";renderViewer();return}
+  if(ds.vseek!==undefined){const mv=document.querySelector(".v-media video");if(mv&&t.dataset.t){mv.pause();mv.currentTime=Number(t.dataset.t)}return}
+  if(ds.vrate){state.viewer.rate=state.viewer.rate===0.5?1:0.5;const mv=document.querySelector(".v-media video");if(mv) mv.playbackRate=state.viewer.rate;t.classList.toggle("on",state.viewer.rate===0.5);t.setAttribute("aria-pressed",String(state.viewer.rate===0.5));return}
+  if(ds.vout){setCleanOut(ds.vout==="set");return}
   if(ds.vmenu){state.viewer.menu=!state.viewer.menu;renderViewer();return}
   if(ds.vpick){state.viewer.ver=Number(ds.vpick);state.viewer.menu=false;renderViewer();return}
   if(ds.vrestore){const x=state.gens.find(y=>y.id===state.viewer.id);if(x) restoreVersion(x,state.viewer.step,Number(ds.vrestore));return}
