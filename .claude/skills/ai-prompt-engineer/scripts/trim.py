@@ -144,7 +144,11 @@ def main():
     ap.add_argument("--post", type=float, default=0.08)
     ap.add_argument("--entry-breath", type=float, default=0.12)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--mode", type=int, default=1, help="§18A mode of the build; 4 and 5 are refused (§24L)")
     a = ap.parse_args()
+    if a.mode in (4, 5):
+        print(json.dumps({"status": "REFUSED", "reason": "no trimming in the film modes (§24L): Mode 4/5 clips play whole"}))
+        sys.exit(2)
 
     src = Path(a.src)
     dst = Path(a.out) if a.out else src.with_suffix(".trim.mp4")

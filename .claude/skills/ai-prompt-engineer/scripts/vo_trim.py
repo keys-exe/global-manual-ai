@@ -140,7 +140,11 @@ def verify(dst, script):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("src"); ap.add_argument("--out", required=True)
     ap.add_argument("--script", help="the part's script lines (punctuation marks the phrase boundaries)")
+    ap.add_argument("--mode", type=int, default=1, help="§18A mode of the build; 4 and 5 are refused (§24L)")
     a = ap.parse_args()
+    if a.mode in (4, 5):
+        print(json.dumps({"status": "REFUSED", "reason": "no trimming in the film modes (§24L): film narration is used as generated"}))
+        sys.exit(2)
     x = load(a.src); total = len(x) / SR
     db0 = features(x)[0]
     spans, br, sents = plan(x, a.src, a.script)

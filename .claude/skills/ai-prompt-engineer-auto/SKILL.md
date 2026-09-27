@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer-auto
-description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.63.0, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §24I, §30H). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
+description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.64.2, Appendix E0/E11, §5, §18B, §22U, §22V, §22W, §22X, §24H, §24I, §30H, §30I–§30L). Load ONLY when the user explicitly says "we will use automation", sends an Intake Pack or Drive intake with RUN: AUTOMATION, or directly instructs you to run a build automatically (generate, check, reroll and trim yourself). Never load it for ordinary prompt-writing, for "check this render", "fix this" or "trim this clip" — those are the default Manual mode (ai-prompt-engineer). Requires ai-prompt-engineer loaded too.
 ---
 
 # AI Prompt Engineer — Automatic run mode
@@ -10,12 +10,12 @@ description: AUTOMATIC run mode of the AI Prompt Engineer Global Standards (V7.6
 **This skill adds execution; it changes no craft.** Load `ai-prompt-engineer` first and follow it for every prompt. The master file `standards/AI_Prompt_Engineer_Global_Standards.md` wins over this summary. Before the first call, read these sections by grepping their headings:
 
 ```
-Grep  pattern="^## (E(0|1|2|3|4|7|9|11)|5|18B|22U|22V|22W|24I|27G|30H)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
+Grep  pattern="^## (E(0|1|2|3|4|7|9|11)|5|18B|22U|22V|22W|22X|24H|24I|24K|24L|24M|27G|30H|30I|30J|30K|30L)\."  path="standards/AI_Prompt_Engineer_Global_Standards.md"  (-n)
 ```
 
 ## 0. Hands-off (E0, V7.60.6)
 
-**The user sends the Drive link with `RUN: AUTOMATION` and hears nothing until the finished videos arrive.** You are the human for every HUMAN, HG, "user approves", "queue for the user" and "stop" in the standard: judge, decide, log, continue. The only stop is the credit cap. Nothing is sent mid-run — prompts, sheets and QA tables go to Drive `OUTPUT/` and the build tree.
+**The user sends the Drive link with `RUN: AUTOMATION` and hears nothing until the finished videos arrive.** **You check everything** (every verdict and instrument — images, clips, colour, light, joins, scenes), and write the Film Look Sheet yourself from the inspo, script and optional `DIRECTIONS` (2026-09-27). You are the human for every HUMAN, HG, "user approves", "queue for the user" and "stop" in the standard: judge, decide, log, continue. The only stop is the credit cap. Nothing is sent mid-run — prompts, sheets and QA tables go to Drive `OUTPUT/` and the build tree.
 
 **Generation Board (§16A, E3; design locked 2026-09-26).** The template's design is locked: never redesign, restyle or simplify it; change it only on the user's named request, in the template, republished to every board. Every generation, both run modes, is logged on the build's own board (template `dashboard/generation_board.html`; board links live in `CLAUDE.md` and the Build Sheet): grouped per act — Hook 1…, Act 1… — Images then Videos, every field labelled, each render uploaded the turn it lands, the §22V / §22W verdict recorded. The reviewer presses Confirm or Fix; a Fix note is a §34 correction for that beat, regenerated within the §22V budget and picked up by the hourly check. In Automatic the agent confirms its own cards; the board stays the record.
 
@@ -46,18 +46,24 @@ For every batch, in this order:
 
 1. **Write the prompts** per the Manual rules (§16, §16B) and save them to the build tree and Drive — not sent. **B-roll duration (E6):** each clip = the span of the line or phrase it covers on the master's word timestamps + 0.5s, rounded up, Kling 3–15s (span < 3s → 3s, cut in assembly; > 15s → split at a word). Never a default length; a row still `pending-master` is never submitted.
 2. **Credit check** — balance + this batch's cost ≤ cap, else stop (E2 `CREDIT_CAP`). Never raise the cap yourself.
-3. **Submit** on the E7 call templates. T2I completes before any I2V (`jobs_wait` or the platform's poll). Log every job ID in the ledger.
-4. **Fetch the result** — download the output URL to `builds/<build>/renders/<BEAT-ID>.<ext>` with `curl -sSL -o`. If the download is refused, say so; never describe a render you have not opened.
-5. **QA per E1.**
+3. **Preflight every video call (§22X)** — frame `USE` + scene contact sheet passed, frame ready to move (else REGENERATE the frame first), `preflight.py <call.json>` PASS, three risks each prevented. Nothing is sent before PASS. Two generations per shot at most: the second carries a `fix_note` (fault traced to frame, prompt or motion → the change); after a second failure keep the clean part (`out`) or cut and cover — never a third call.
+4. **Submit** on the E7 call templates. T2I completes before any I2V (`jobs_wait` or the platform's poll). Log every job ID in the ledger.
+5. **Fetch the result** — download the output URL to `builds/<build>/renders/<BEAT-ID>.<ext>` with `curl -sSL -o`. If the download is refused, say so; never describe a render you have not opened.
+6. **QA per E1.**
    - **Images: you are the judge (§22V).** Open every image with Read and answer the six questions — does it show the line, product, body, continuity, register, will it animate. Ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then keep the best of the three and add it to *Flags*.
    - **Video: you are the judge (§22W).** `contact_sheet.py <clip>` → Read the sheet (true first and last frames); `--full` and Read single frames where hands, product or text need detail. Seven questions — line, product every frame, body every frame, motion, continuity, technical, enough footage for its slot → `USE` or `REGENERATE`. Silence and timing checks run on the audio (`silencedetect=noise=-40dB:d=0.4`).
    - **Motion (§27G) is written before it is judged:** every B-roll row carries `action`, `pace`, `camera`, `staging`, `pin_end`, `max` (E4); start images caught mid-action; one action per clip; a moving subject gets a camera that sways but never travels; pinned beats run first-and-last frame (E7); `prefer_multi_shots: false`; the rough cut at 24 fps. Judge the clip against §22W Q4's §27G checks, and when only its end breaks, keep the clean part (`out`) instead of regenerating.
+   - **Colour (§30L, strict):** `COLOUR-KEY` verbatim on every shot of a scene; `light_check.py colour --ref <master>` on every frame before its video and on every clip — a flag the key does not explain is `SCENE_BREAK`. No grade in any prompt; the grade is the edit's (§40), and the scene check runs again on the graded clips.
+   - **Film sound (§24M):** isolate each dialogue clip's voice; compose one track per scene from its sectioned `MUSIC-CUE` (`music.py plan` → `compose` → `check`, two tracks at most), one `ROOM-TONE` per location (loop), each SFX-list entry once; `mix_scene.py` per scene; check no music restart or room-tone jump at any cut.
+   - **Light (§30K):** every row has `light` from the location's light plan (key side on screen for this camera position); run `light_check.py scene` on each scene's approved frames before its video and `light_check.py clip` on each clip — a flag is a REGENERATE unless the plan explains it (a reverse angle flips the screen side).
+   - **Angles and focus (§30I, §30J):** every B-roll and film row has `angle` + `why` + `focus`; judge the focus too (the named plane sharp, the change on its cue, no pumping); `angles.py` passes before the act map is used; judge each frame's angle against its row — back at eye level when the row says high is a REGENERATE.
+   - **Film scenes are connected (§24H, 2026-09-27):** generate only the rows on the scene image list — no alternates, no spare coverage; a shot with no cut cue is cut before generation. Frames in story order, each with `STATE-CARRY` and the character's previous approved frame as state reference. Judge each frame against the master, the previous frame and its state-track row (tears, flush, hair, sleeves, what each hand holds, position) — a state that resets without its cause is `SCENE_BREAK` (E2): two regenerations → an edit of the previous frame → cut the shot and cover it with a neighbour; **never ship it as best-of-three.** Strike any row that adds nothing over the master or an earlier frame (same position, scale and state → reuse it; push-in ≤ 1.3× → edit punch-in). Check every join (last frame → next first frame, and the voice: transcript, then pitch median/range, loudness and rate against the character's previous line — a jump the VOICE row doesn't cause is `SCENE_BREAK`), then the whole scene as one strip: `SC-xx · SCENE · USE`.
    - AUTO rows run by instrument. HUMAN rows are **yours**: pass → proceed; fail → E2 remedy; unsure → decide on the stricter reading and note it in *Flags*. Nothing is queued — that includes the §28F/§28H closure-sync check, voice (§22D) and Mode 4/5 performance.
-6. **Reroll per E2** — at most two automatic rerolls per beat per failure class, then keep the best attempt, log why, and add it to *Flags*. A changed prompt is saved as a new iteration; never change a prompt without logging it.
-7. **Trim (E11)** every talking-head clip that passed QA (section 4 below).
-8. **Update the ledger** and save the batch's QA table to Drive (not sent).
-9. **Assemble (§30H)** once an act's B-rolls pass: write `plan.json` (master, `script.lines.txt`, talking-head track or `null`, each B-roll with its phrase and `layout`, the `punch_in` list and `th_focus_y` from `EDIT-[BUILD]`) → `assemble.py plan.json --out builds/<build>/edit/<act>.mp4`. Every FAIL is fixed (NEED_LONGER → regenerate that clip longer) before rendering. Then `contact_sheet.py` on the render and a frame either side of each cut, and judge the edit — including against `EDIT-[BUILD]`: every layout on its line. Save rough cut + EDL + report to `08_EDIT`.
-10. **Hook variants (§30H)** once you have approved and voiced the hooks: write `variants.json` (the body plan once + one entry per hook) → `variants.py variants.json --build <BUILD> --outdir builds/<build>/edit/` → `<BUILD>_HK1.mp4`, `_HK2.mp4`, `_HK3.mp4`. The set must PASS with `body_identical_across_variants: true`. Judge each variant's hook and seam by §22W. Deliver every variant + the set report to `08_EDIT` and list them in `OUTPUT.md`.
+7. **Reroll per E2** — images: at most two automatic rerolls per beat per failure class; **video: one, after preflight (§22X)**, then keep the best attempt, log why, and add it to *Flags*. A changed prompt is saved as a new iteration; never change a prompt without logging it.
+8. **Trim (E11)** every talking-head clip that passed QA (section 4 below) — **never in Modes 4–5 (§24L)**.
+9. **Update the ledger** and save the batch's QA table to Drive (not sent).
+10. **Assemble (§30H)** once an act's B-rolls pass: write `plan.json` (master, `script.lines.txt`, talking-head track or `null`, each B-roll with its phrase and `layout`, the `punch_in` list and `th_focus_y` from `EDIT-[BUILD]`) → `assemble.py plan.json --out builds/<build>/edit/<act>.mp4`. Every FAIL is fixed (NEED_LONGER → regenerate that clip longer) before rendering. Then `contact_sheet.py` on the render and a frame either side of each cut, and judge the edit — including against `EDIT-[BUILD]`: every layout on its line. Save rough cut + EDL + report to `08_EDIT`.
+11. **Hook variants (§30H)** once you have approved and voiced the hooks: write `variants.json` (the body plan once + one entry per hook) → `variants.py variants.json --build <BUILD> --outdir builds/<build>/edit/` → `<BUILD>_HK1.mp4`, `_HK2.mp4`, `_HK3.mp4`. The set must PASS with `body_identical_across_variants: true`. Judge each variant's hook and seam by §22W. Deliver every variant + the set report to `08_EDIT` and list them in `OUTPUT.md`.
 
 ## 3. Stop points and the final delivery
 
@@ -132,6 +138,7 @@ Per speaking character, after the cast sheets pass:
 - Submit a B-roll call without a measured span (E6).
 - Raise the credit cap, or submit a batch that crosses it.
 - Pass a render you have not opened.
+- Send a video call that has not passed §22X preflight, resend the same prompt on the same frame, or make a third generation of one shot.
 - Change a prompt without logging it.
 - Overwrite an original render, or commit media to git.
-- Trim, speed up, loop or clean a film voice master.
+- Trim, speed up, loop or clean a film voice master — or trim, cut inside, re-time or `out`-rescue anything in a Mode 4/5 build (§24L): run `trim.py` / `vo_trim.py` with `--mode`, and put `mode` in every `plan.json`.
