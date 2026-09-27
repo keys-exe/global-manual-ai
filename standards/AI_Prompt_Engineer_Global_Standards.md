@@ -179,6 +179,7 @@ A scripted story with a cast, told in scenes, that sells the product through wha
 - **The narrator.** Where the story has one — usually the protagonist — their voiceover is TTS cast to match their Seedance voice master (§22D bookend rule): no mouth on screen, so no conform. The narrator is the one character who may look into the lens, and only in Offer & Close.
 - **Product presence holds** (§9). The product is absent until the Turn, and its first appearance is a reveal inside a scene (the hero insert, §24G).
 - **A character's claim is still a claim** (§43A); a doctor character follows §19B.
+- **The story spine is read before the scenes are built** (§24I part 9): want, stakes, obstacle, failed fixes, turn, payoff and plants, taken from the script as written. Every scene names the spine beat it moves.
 - **Pacing comes from the inspo.** Absent a measurement: a new scene or a time card every 20–40 seconds, no scene longer than about 45 seconds, and every scene ends on something unresolved — a look, a line left hanging — so the cut pulls forward.
 - **Coverage.** Every dialogue line and narration line is a phrase in the §27B inventory, dispositioned `SH` (spoken or acted in a scene shot) or `VO` (narration over shots).
 
@@ -2489,11 +2490,11 @@ What the camera lock removes is only the cinema *lighting* vocabulary — shaped
 | **R5** POV, first person | POV B-roll, own-body contact, tactile beats | Head-on-neck instability, **camera leads the hand**, own limbs enter from the bottom edge | `RIG-R5`, `RIG-R5C` |
 | **R2-B** Selfie, pointed away | "Showing you my own body" beats | R2 jitter and arm-fatigue drift, pointed at a body part rather than the face | `RIG-R2B` |
 | **R7** Fixed security mount | CCTV beats (§22E) | **No camera motion at all.** The four-part arc moves onto the encoding — uneven frame rate, stepped movement, one late compression breakdown | `RIG-R7` |
-| **F1** Dolly push | Mode 4 singles, reveals, emotional turns | Slow level push that eases as the line lands | `RIG-F1` |
+| **F1** Dolly push | Mode 4 singles, reveals, emotional turns — **only when the subject is still** (§24K) | Slow level push that eases as the line lands | `RIG-F1` |
 | **F2** Locked tripod | Mode 4 masters, two-shots, inserts | Framed and locked; one late partial pan or tilt | `RIG-F2` |
 | **F3** Shoulder | Mode 4 tension, arguments, a scene coming apart | Slow heavy float, reframes a beat behind the eyes | `RIG-F3` |
-| **F4** Slider | Mode 4 establishing shots, object and product beats | Constant lateral move, foreground parallax | `RIG-F4` |
-| **F5** Stabiliser follow | Mode 4 walks, hallways, arrivals | Constant-distance glide, the world sliding past | `RIG-F5` |
+| **F4** Slider | Mode 4 establishing shots, object and product beats — **only when the subject is still** (§24K) | Constant lateral move, foreground parallax | `RIG-F4` |
+| **F5** Stabiliser follow | Mode 4 walks — **only where the reference edit follows a walk**: waist-up, flat ground, three or four steps (§24K). Otherwise a walk is F2, the subject crossing a locked frame | Constant-distance glide, the world sliding past | `RIG-F5` |
 
 ### RV-DRIFT and RV are chosen by what is doing the work *(V7.10 — measured)*
 
@@ -2524,7 +2525,7 @@ Where the beat's content is **light** — a load flooding a limb, a colour cross
 
 **RV and RV-FAST replace the V6 locked-off instruction and the A–C exemption.** RV-FAST is Density C only — a fast push on a full tissue stack turns the layers to mush.
 
-**Mode 4 takes F1–F5, and never R1–R5.** Breath sway, phone jitter and arm-fatigue drift are false for a crew. The four-part arc, the camera lagging the subject and the single late correction all still apply. **Speeds are stated as distances, never adjectives** — Seedance 2.5 defaults to fast sweeps. F2 is the one rig that may hold still, while the subject and the room carry the movement. The Film Look Sheet may narrow the set: a restrained drama might never use F3.
+**Mode 4 takes F1–F5, and never R1–R5.** Breath sway, phone jitter and arm-fatigue drift are false for a crew. The four-part arc, the camera lagging the subject and the single late correction all still apply. **Speeds are stated as distances, never adjectives** — Seedance 2.5 defaults to fast sweeps. F2 is the one rig that may hold still, while the subject and the room carry the movement. The Film Look Sheet may narrow the set: a restrained drama might never use F3. **§27G applies to every F-rig** (2026-09-27): the rig is picked by what the subject is doing and what the scene's emotion is doing, never for movement's sake — §24K.
 
 **Mode 3 takes R6 and nothing else** — a bolted tabletop rig moved a fraction between exposures. It is a capture, not a render, but it is not a handheld capture: drift, sway and focus hunt are as false there as on a render rig.
 
@@ -3386,7 +3387,7 @@ Mode 4 has no house look. **The kind of film — its grade, palette, glass, ligh
 | 4 | **PALETTE** | The dominant colours of the sets and wardrobe, and the colour script by act | `LOOK-[BUILD]`, §14A wardrobe |
 | 5 | **GRADE** | Shadow tint, highlight tint, saturation, contrast curve, how skin is held | `LOOK-[BUILD]` **and** the CapCut LUT |
 | 6 | **OPTICAL TEXTURE** | Highlight roll-off, halation, lens softness | `LOOK-[BUILD]`, `CAP-FILM` |
-| 7 | **MOTION** | Which F-rigs this film uses, how fast the moves are, and the cutting rhythm | Scene Bibles, `RIG-F*` |
+| 7 | **MOTION** | Which F-rigs this film uses, how fast the moves are, the cutting rhythm (average shot length from the inspo), and the camera script by act (§24K) | Scene Bibles, `RIG-F*` |
 | 8 | **PERFORMANCE** | Acting register — how big, how still, how much is said under the line | §28 settings below |
 | 9 | **SOUND AND POST TEXTURE** | Production sound, room tone, foley, score, and the grain the edit adds | CapCut block |
 
@@ -3464,8 +3465,10 @@ A scene is a maximal run of beats in one location in continuous story time. In M
 | **Axis** | The action line and the camera's side of it (`GEO-LINE`) |
 | **Props** | Every loose prop with its state at the start and at the end |
 | **Emotional beat** | What the scene is for, and its valence (§30F) |
+| **Spine beat** | The story-spine beat this scene moves, and what is different at its end (§24I part 9) |
 | **Emotion map** | Per character: ENTRY state · OBJECTIVE (what they want from the other person) · TURN (the line and what causes it) · EXIT state · SUBTEXT (what they feel and do not say) — §24I |
-| **Shot list** | Master, singles, reverses and inserts, each with its beat ID, shot scale, rig, duration, and each character's emotion at that moment (EMO, read off the map) |
+| **Shot list** | Master, singles, reverses and inserts, each with its beat ID, shot scale, rig, duration, and each character's emotion at that moment (EMO, read off the map); per shot also its one action and pace (§27G), the speaker's PLAYING verb and each character's business (§24I parts 10–11), and its cut cue (§24K) |
+| **Camera plan** | The rig per shot and why, read off the emotion map; the tightest scale placed on the turn (§24K) |
 | **Delivery route** | Single-shot beats, or MULTI-SHOT (§29) |
 | **Transition in / out** | How this scene joins the one before and the one after |
 
@@ -3496,7 +3499,7 @@ Each single-shot beat animates its own approved frame (I2V, §6). Every Seedance
 
 ### Assembly — Mode 4 I2V
 
-`INHERIT-FILM` → the §27A arc → the F-rig → `HOLD-C` + `HOLD-HC` (+ `HOLD-PC`) → `PHYS-MOTION-C` → negatives opening `NEG-WARP-C`, then the relevant `NEG-FILM` and `NEG-SCENECUT` clauses. On dialogue beats, `delivery` is `DRAMA-DELIVERY` (§24I), opening with `VOICE-OPEN` and closing with `AUD-FILM`. On a listener shot, `motion` carries `LISTEN-LINE`. `NEG-DRAMA` joins the negatives on every beat with a person in it.
+`INHERIT-FILM` → the §27A arc → the F-rig → `HOLD-C` + `HOLD-HC` (+ `HOLD-PC`) → `PHYS-MOTION-C` → negatives opening `NEG-WARP-C`, then the relevant `NEG-FILM` and `NEG-SCENECUT` clauses. On dialogue beats, `delivery` is `DRAMA-DELIVERY` (§24I), opening with `VOICE-OPEN` and closing with `AUD-FILM`. On dialogue and listener shots, `motion` carries `BUSINESS-LINE` (§24I part 11), then `LISTEN-LINE` on a listener. The F-rig follows §24K. `NEG-DRAMA` joins the negatives on every beat with a person in it.
 
 **NORMATIVE — `CAM-FILM`, `CAP-FILM`, `LOOK-PATTERN`, `LIGHT-FILM`, `FILM-FRAME`, `INHERIT-FILM`, `AUD-FILM`, `SCENE-MASTER`, `SCENE-KEY`, `CHAIN-FRAME`, `SCENE-BRIDGE`, `NEG-SCENECUT`, `RIG-F1`–`RIG-F5`, `MULTI-FILM`, `NEG-FILM` — see Appendix A.** Never trimmed: `SCENE-KEY`'s nothing-has-changed sentence, `LIGHT-FILM`'s source clause, and `FILM-FRAME`'s no-fill clause.
 
@@ -3580,7 +3583,42 @@ A Seedance voice ingredient (§4) sets timbre, pitch, accent and pace. **It must
 - **§28F, §28H** — unchanged. Sync and word budgets are arithmetic.
 - **§28G** — the brisk default does not apply. Pace comes from Look Sheet field 8 and the scene. The entry cap still does, because a pause inside a generated clip is dead air, not drama.
 
-**NORMATIVE — `DRAMA-DELIVERY`, `LISTEN-LINE`, `EMO-SEED`, `NEG-DRAMA` — see Appendix A.** Never trimmed: `DRAMA-DELIVERY`'s UNDER THE LINE clause and `LISTEN-LINE`'s beat-after sentence.
+### 9. The story spine — read from the script, never written over it *(2026-09-27)*
+
+A film holds when every scene moves one story forward. At step 5, before the Scene Bibles, the Build Sheet records the **story spine** as the script already tells it — the script's words and order are never changed (§27B, authority layer 4):
+
+| Field | Content |
+|---|---|
+| **WANT** | What the protagonist is trying to get or keep (to walk the dog again, to keep up with the grandchildren) |
+| **STAKES** | What they lose if nothing changes — a person, a role, a part of their life, never only the pain |
+| **OBSTACLE** | What stands in the way, shown as events, not described |
+| **FAILED FIXES** | What they already tried, and how each one failed on screen |
+| **TURN** | The moment and the person that change it (§3B `TN`) |
+| **PAYOFF** | The mirror scenes (§3B) and what each one pays back |
+| **PLANTS** | Every object, line or place set up early that pays off later, with the scene it pays off in (E4 `plant/payoff`) |
+
+**Every Scene Bible names the spine beat it moves and what is different at its end.** A scene where nothing changes is flagged to the advertiser, never cut or rewritten. The spine directs the performance and the camera; it never adds a line.
+
+### 10. Playable actions — what the line does to the other person
+
+An emotion is what a character feels; an **action** is what they are doing to the other person with the line — and only the action is playable. Every dialogue line in the shot list carries one transitive verb: *reassures, pleads with, deflects, tests, confesses to, dismisses, comforts, needles, warns, apologises to*. It goes into `DRAMA-DELIVERY` as `PLAYING`. **The verb changes at the TURN** — that change is what the audience reads as the scene turning. Two lines in a row with the same verb need a reason in the Scene Bible.
+
+### 11. Business — the hands have a job
+
+**Every dialogue and listener shot carries one piece of physical business** drawn from the scene's props: pouring tea, folding a towel, rubbing a knee, turning a phone over in the hand. It is the shot's one §27G action, written at a countable pace in `BUSINESS-LINE`, and it replaces gesturing: people in films rarely talk with their hands, they talk while doing something. **The business carries the subtext** — the hand stopping mid-fold on the line that lands is the UNDER THE LINE tell. Business is continuity: its prop and state go in the props ledger (§24H) and are checked on the contact sheet. It never involves the product except on a product beat (§9), and it never uses a §27G hard motion.
+
+### 12. How big to play — by shot size
+
+| Shot scale | What carries the performance | Size |
+|---|---|---|
+| WIDE, FULL | Posture, distance between people, the business | The body reads; the face can stay private |
+| MEDIUM, MCU | Shoulders, breath, the business, the eyes | Played normally, small |
+| CU | Eyes and mouth only; the thought before the line | Smaller than feels natural — a camera this close sees a thought |
+| ECU / INSERT | The hands and the business | One change, no more |
+
+**Generated acting has its own tells, and every film beat bans them** (`NEG-DRAMA`, amended): nodding along while speaking, a constant half-smile under every line, eyebrows rising on every stressed word, a hand gesture on every phrase, a head tilt on every line, blinking in rhythm with the words. Real people hold still more than a model expects; stillness between beats is the performance.
+
+**NORMATIVE — `DRAMA-DELIVERY`, `LISTEN-LINE`, `EMO-SEED`, `NEG-DRAMA`, `BUSINESS-LINE` — see Appendix A.** Never trimmed: `DRAMA-DELIVERY`'s UNDER THE LINE clause and `LISTEN-LINE`'s beat-after sentence.
 
 ---
 
@@ -3591,7 +3629,7 @@ A Seedance voice ingredient (§4) sets timbre, pitch, accent and pace. **It must
 ### What carries over
 
 **From Mode 2:** shape language and proportion (§24A), stylized eyes (§24C), the stylized motion arc (§24D), `PIX-SPLIT` on every product beat, Nano Banana only, and no photoreal skin, pores or live-action texture.
-**From Mode 4:** the look derived per build, the Scene Bible, master-first frame order, `SCENE-KEY`, chained frames, the contact sheet, designed transitions and the five cross-scene ledgers, the shot-scale table, F1–F5 moves, MULTI-SHOT on Seedance, grade in post as one LUT, and the whole of §24I.
+**From Mode 4:** the look derived per build, the Scene Bible, master-first frame order, `SCENE-KEY`, chained frames, the contact sheet, designed transitions and the five cross-scene ledgers, the shot-scale table, F1–F5 moves, MULTI-SHOT on Seedance, grade in post as one LUT, the whole of §24I, and the whole of §24K.
 **From everything:** `BODY-WHOLE` and `NEG-BODY`, §27C physics at stylized values, §27D integrity, §30G property, §9 product rules, 9:16, and Seedance at 720p in ingredients mode.
 
 ### The Animated Film Look Sheet — nine fields
@@ -3606,7 +3644,7 @@ The §24G sheet with three fields changed. It is derived the same way: the inspo
 | 4 | PALETTE | Dominant colours of sets and wardrobe, and the colour script by act |
 | 5 | GRADE | Shadow colour, highlight colour, saturation, contrast |
 | 6 | **DESIGN AND MATERIALS** | Shape language, proportions, and how stylized skin, hair, fabric and surfaces are |
-| 7 | **MOTION AND ANIMATION STYLE** | F-rigs used and their speed, cutting rhythm, and animation timing: how snappy or naturalistic, how much squash and stretch |
+| 7 | **MOTION AND ANIMATION STYLE** | F-rigs used and their speed, cutting rhythm, the camera script by act (§24K), and animation timing: how snappy or naturalistic, how much squash and stretch (never on the product) |
 | 8 | PERFORMANCE | How big the acting is, and how much sits under the line |
 | 9 | SOUND | Studio voice style, foley, score |
 
@@ -3632,7 +3670,7 @@ Unchanged from §24: animated film reads as family content. On an adult-buyer ad
 
 ### Assembly — Mode 5 I2V
 
-`INHERIT-ANIM` → the §27A arc → `PIX-MOTION` → `VCAM` + the F-rig → `HOLD-C` + `HOLD-HC` (+ `HOLD-PC`) → `PHYS-MOTION-C` → negatives opening `NEG-WARP-C`, then the relevant `NEG-PIX`, `NEG-ANIMFILM`, `NEG-SCENECUT` and `NEG-DRAMA` clauses. Dialogue beats take `DRAMA-DELIVERY` closing with `AUD-ANIM`; listener shots take `LISTEN-LINE`. Seedance calls run the §4 ingredient pack under `ING-MANIFEST`.
+`INHERIT-ANIM` → the §27A arc → `PIX-MOTION` → `VCAM` + the F-rig → `HOLD-C` + `HOLD-HC` (+ `HOLD-PC`) → `PHYS-MOTION-C` → negatives opening `NEG-WARP-C`, then the relevant `NEG-PIX`, `NEG-ANIMFILM`, `NEG-SCENECUT` and `NEG-DRAMA` clauses. Dialogue beats take `DRAMA-DELIVERY` closing with `AUD-ANIM`; dialogue and listener shots take `BUSINESS-LINE`, then `LISTEN-LINE` on a listener. The F-rig follows §24K. Seedance calls run the §4 ingredient pack under `ING-MANIFEST`.
 
 ### Product hero beats — Mode 5 *(V7.55.1)*
 
@@ -3647,6 +3685,62 @@ A medical-broadcast render does not belong in an animated film. Mode 5 shows the
 The frame matches `LOOK-[BUILD]` · every character is on model against their sheet · the product reads as a real object in the scene · one motivated key with a shadow side · no letterbox · the character at the stated scale. **A frame that reads as concept art, a game or a toy is a reroll.**
 
 **NORMATIVE — `CAM-ANIM`, `LOOK-ANIM-PATTERN`, `CAP-ANIM`, `LIGHT-ANIM`, `INHERIT-ANIM`, `VCAM`, `AUD-ANIM`, `NEG-ANIMFILM` — see Appendix A.** Never trimmed: `INHERIT-ANIM`'s on-model sentence and `LIGHT-ANIM`'s source clause.
+
+---
+
+## 24K. Film Motion & Camera Grammar *(new 2026-09-27 — Modes 4 and 5; visual check pending)*
+
+**Scope: every Mode 4 and Mode 5 clip, single-shot and MULTI-SHOT.** §24G–§24J made the film modes look and play like a film. This section makes them **move** like one without the distortion §27G measured: in a film the camera is a storyteller, but a video model breaks the same way a phone clip does when the camera and the body move at once. So the film camera keeps §27G's limits and gets its meaning from the scene's emotion instead of from movement for its own sake.
+
+### 1. §27G holds in the film modes, unchanged
+
+One action per shot at a countable pace, human motion 3–6s, start frames caught mid-action, the product rigid, safe staging for hard motions, `prefer_multi_shots: false` on every Kling call. **A film shot is not exempt because a crew is imagined behind it.** The F-rig is chosen by what the subject is doing:
+
+| The subject… | Rigs allowed | Never |
+|---|---|---|
+| **Is still** — seated, standing, lying, talking, listening, handling something in place | Any F-rig the Look Sheet allows | — |
+| **Moves in place** — sits down, stands up, turns to look, reaches across a table | **F2** (one late partial pan or tilt), or **F3** floating without travelling | F1, F4, F5 |
+| **Travels** — walks, crosses a room, climbs stairs | **F2**: the subject walks into, across or out of a locked frame, staged per §27G rule 3. **F5** only where the reference edit follows a walk (§42 Part 3A): waist-up, flat ground, three or four steps | F1, F3, F4, and F5 on stairs, full-body or toward the lens |
+| **Turns the product, or must end on an exact frame** | Pinned both ends (§27G rule 5): a single-shot insert on the Kling first-and-last-frame call (E7), with the film strings, or a cut between two stills | Any MULTI-SHOT clip |
+
+### 2. The camera plan — every move has a story reason
+
+**A camera move is a sentence in the film, so it has to say something.** Each Scene Bible carries a **camera plan**: the rig per shot, chosen from what the scene's emotion map is doing at that moment. The Look Sheet's field 7 sets which rigs the film uses at all and the **camera script by act** (e.g. locked and patient in the Before, floating in the Problem, one slow push per Turn, wide and settled in the After).
+
+| The scene is… | Camera | Why |
+|---|---|---|
+| Ordinary life, stable, before anything goes wrong | **F2** locked, room in frame | Stillness reads as normal; it is the baseline the rest of the film departs from |
+| Pressure building toward a turn | **F1** slow push on a still subject, 20–40cm | The world closing in, without anyone saying so |
+| The turn itself | The **tightest scale** of the scene, reached by an F1 push landing on the TURN word, or by a cut to it | The one moment the film leans in |
+| Conflict, panic, a scene coming apart | **F3** float, never travelling | Unease without shake |
+| Release, relief, the After | **F2** or **F4** at MEDIUM or wider, room readable | Air returns to the frame |
+| The payoff mirror (§3B) | **The hook's rig, scale and axis**, repeated exactly | The viewer recognises the shot and feels the change |
+
+**The camera never moves more than the emotion in the shot.** A push on a neutral line reads as a trailer; a float on a calm moment reads as a mistake. When in doubt, F2 — the performance carries it.
+
+### 3. Shot scale follows intensity
+
+A scene opens at its widest (the master, §24H) and tightens toward its turn; the **tightest scale in a scene is spent on the turn, once**. Close-ups used everywhere stop meaning anything. After the turn the scene may widen again to let it land. A cold open (§3B) is the one scene allowed to start tight — and its mirror in the After starts at the same scale.
+
+### 4. Every shot has a cut point
+
+Each row of the shot list names its **cut cue**: a completed line, a look (the eye moves, cut to what it sees), an action completing (match cut, §24H), or a reaction landing on the listener. Cuts land on cues, never mid-word and never on a dead frame. **Shot length** comes from the inspo's measured average shot length (§42); absent a measurement, dialogue shots run 3–6s, listener reactions 1.5–3s, inserts 1.5–2.5s. A shot shorter than the generator's minimum is generated at the minimum and placed from its in-point (§30H).
+
+**Enter late, leave early.** Each shot starts inside its action — the start frame mid-action (§27G rule 4), the line already on its way — and cuts as soon as the cue lands. The film never waits for a character to finish walking into a room.
+
+### 5. MULTI-SHOT only when nobody moves
+
+A MULTI-SHOT clip (`MULTI-FILM`, §29) covers dialogue with **everyone in it still**: seated or standing, their one action the business in their hands (§24I part 11). Each shot inside it runs at least 2.5s. **Any shot with a walk, a sit or stand, a product turn or a travelling camera comes out of the MULTI-SHOT clip** and is generated as its own single-shot beat. *(Derived from §27G's measurements — every rejected clip failed during movement — unverified on a MULTI-SHOT clip.)*
+
+### 6. Mode 5 — the same limits, animated
+
+§24D's principles carry the motion (anticipation, overlap, the moving hold), timed by the Look Sheet's field 7. Squash and stretch never touches the product (`PIX-SPLIT` keeps it rigid and real). Poses are held in clear silhouette at the turn. Every §24K limit above applies to the virtual camera exactly as to a real one (`VCAM`).
+
+### Checks
+
+**The contact sheet (§24H) adds three items:** the camera plan matches the emotion map shot by shot · the tightest scale falls on the turn · every shot has a cut cue. **§22W Q4 (Automatic)** and the user's check on the board (Manual) judge a film clip on the same motion faults as any other clip: warping during movement, the product changing shape, feet and hands melting on a walk.
+
+**NORMATIVE — `RIG-F1`–`RIG-F5` (amended 2026-09-27), `MULTI-FILM` (amended), `BUSINESS-LINE` — see Appendix A.**
 
 ---
 
@@ -4562,7 +4656,7 @@ Each segment is its own generation with its own beat ID, `dialogue` and `deliver
 
 **Target: one to three sentences per segment. Never more than four.**
 
-**Mode 4 and Mode 5 MULTI-SHOT exception** *(V7.54.0; Mode 5 at V7.55.0)*. On Seedance 2.5, a Mode 4 or Mode 5 scene declared MULTI-SHOT in its Scene Bible may be generated as one clip covering up to four shots (`MULTI-FILM`), with time ranges and shot scales. It is the one sanctioned exception to §4's one-moment rule, and it exists because one generation holds faces, light and look across a reverse. Each shot inside it still obeys §28H's word budget for its own duration and carries its own beat ID in the call label (§16B).
+**Mode 4 and Mode 5 MULTI-SHOT exception** *(V7.54.0; Mode 5 at V7.55.0)*. On Seedance 2.5, a Mode 4 or Mode 5 scene declared MULTI-SHOT in its Scene Bible may be generated as one clip covering up to four shots (`MULTI-FILM`), with time ranges and shot scales. It is the one sanctioned exception to §4's one-moment rule, and it exists because one generation holds faces, light and look across a reverse. **Only when nobody in it moves** (2026-09-27, §24K part 5): everyone seated or standing, each shot at least 2.5s; a walk, a sit or stand, a product turn or a travelling camera is its own single-shot beat. Each shot inside it still obeys §28H's word budget for its own duration and carries its own beat ID in the call label (§16B).
 
 **Word budget per §28H is a hard gate on top of the sentence count:** 5s → 9 words (brisk) / 8 (unhurried); 10s → 20 / 18. Beats whose mouth plays uncovered on the timeline (the hook, the final CTA) cut to **one or two sentences** (§28F) — sync degrades across a take and nobody sees the drift under a cutaway.
 
@@ -7145,9 +7239,9 @@ This is the first frame of the next scene. It connects to the end of the previou
 ```
 no light direction changing within the scene, no grade changing between shots, no wardrobe changing within the scene, no prop moving between shots unless shown moving, no character changing position between shots, no camera crossing the action line, no eyeline pointing the wrong way, no time of day changing within the scene, no different room, no extra people, no missing people
 ```
-**`RIG-F1`** — dolly push. `[DISTANCE]` 20–40 for a single, 60 or more for a reveal. *(296)*
+**`RIG-F1`** — dolly push. `[DISTANCE]` 20–40 for a single, 60 or more for a reveal. **Only on a still subject** (§24K). *(396)*
 ```
-Camera on a dolly, already moving on the first frame: a slow, steady push toward the subject covering about [DISTANCE] centimetres across the whole clip, perfectly level, with no bounce and no sway. As the line lands the move eases and slows but never stops. Still creeping in on the final frame.
+Camera on a dolly, already moving on the first frame: a slow, steady push toward the subject covering about [DISTANCE] centimetres across the whole clip, perfectly level, with no bounce and no sway. As the line lands the move eases and slows but never stops. Still creeping in on the final frame. The subject stays in place — seated, standing or speaking — and never walks while the camera moves.
 ```
 **`RIG-F2`** — locked tripod. *(306)*
 ```
@@ -7157,33 +7251,37 @@ Camera on a tripod, framed and locked, with no drift, no sway and no reframe. Th
 ```
 Camera on an operator's shoulder: a slow, heavy breathing float, much slower and larger than a phone in the hand. The frame gently rises and settles, with small reframes that follow the subject's eyes and hands a beat behind. Never shaky and never jittering. Still floating at the cut.
 ```
-**`RIG-F4`** — slider. *(262)*
+**`RIG-F4`** — slider. **Only on a still subject** (§24K). *(345)*
 ```
-Camera on a slider, already travelling: a slow, constant lateral move of about [DISTANCE] centimetres across the clip. Foreground objects pass faster than the background so the depth reads clearly. Perfectly smooth and level. Still travelling on the final frame.
+Camera on a slider, already travelling: a slow, constant lateral move of about [DISTANCE] centimetres across the clip. Foreground objects pass faster than the background so the depth reads clearly. Perfectly smooth and level. Still travelling on the final frame. The subject stays in place while the camera travels; nobody walks during the move.
 ```
-**`RIG-F5`** — stabiliser follow. *(237)*
+**`RIG-F5`** — stabiliser follow. **Only where the reference edit follows a walk** (§24K): waist-up, flat ground, three or four steps; never stairs, never full-body, never toward the lens. `[PACE]` from the shot list. *(352)*
 ```
-Camera on a stabiliser following the subject as they walk, holding a constant distance and gliding with a slight float. The subject stays in the same place in the frame while the world slides past behind them. Still following at the cut.
+Camera on a stabiliser following the subject from waist height as they walk on flat ground, [PACE], for three or four steps only, holding a constant distance and gliding with a slight float. Framed waist-up: the legs are out of frame. The subject stays in the same place in the frame while the world slides past behind them. Still following at the cut.
 ```
-**`MULTI-FILM`** — Seedance 2.5 MULTI-SHOT, Mode 4 only, up to four shots. After `REF-MANIFEST`; closes with `INHERIT-FILM` + `AUD-FILM` + negatives. *(621)*
+**`MULTI-FILM`** — Seedance 2.5 MULTI-SHOT, Mode 4 only, up to four shots, **only when nobody moves** (§24K part 5), each shot at least 2.5s. After `REF-MANIFEST`; closes with `INHERIT-FILM` + `AUD-FILM` + negatives. *(734)*
 ```
-One scene covered in [N] shots within a single take, all on the same side of the action line, with the same light, look and wardrobe throughout. SHOT 1, [0s-Xs]: [shot scale], [rig], [who speaks, how they say it, and how the other reacts]. SHOT 2, [Xs-Ys]: [shot scale], [rig], [who speaks, how they say it, and how the other reacts]. [...] The lines land on each other in the rhythm this scene needs: [RHYTHM: cutting in, a beat held on the listener, overlapping only where the script overlaps]. Each cut lands on a completed line, action or reaction. The eyelines match across every reverse. Nobody looks into the lens.
+One scene covered in [N] shots within a single take, all on the same side of the action line, with the same light, look and wardrobe throughout. Everyone stays in place, seated or standing; the only movement in each shot is its business and the performance. SHOT 1, [0s-Xs]: [shot scale], [rig], [who speaks, how they say it, and how the other reacts]. SHOT 2, [Xs-Ys]: [shot scale], [rig], [who speaks, how they say it, and how the other reacts]. [...] The lines land on each other in the rhythm this scene needs: [RHYTHM: cutting in, a beat held on the listener, overlapping only where the script overlaps]. Each cut lands on a completed line, action or reaction. The eyelines match across every reverse. Nobody looks into the lens.
 ```
-**`DRAMA-DELIVERY`** — the `delivery` field of every Mode 4 dialogue beat. Fields from the scene's emotion map. **UNDER THE LINE is never trimmed.** *(638)*
+**`DRAMA-DELIVERY`** — the `delivery` field of every Mode 4 dialogue beat. Fields from the scene's emotion map; PLAYING from the shot list (§24I part 10). **UNDER THE LINE is never trimmed.** *(718)*
 ```
-[VOICE-OPEN]. [The rest of VOICE-[CHAR]]. IN THIS MOMENT: [where the character is emotionally, and what they want from the other person]. Speaking to [WHO], [how things stand between them right now]. Opens [ENTRY, as a named physical state]; turns on the exact word '[TURN WORD]', where [what visibly changes]; exits [EXIT state]. Stress on '[STRESS WORD]'. UNDER THE LINE: [what they feel but do not say], which leaks only through [one named tell: a swallow, a glance away, a held breath, a hand going still]. Played small and true, for a camera close enough to see a thought. Never theatrical, never pushed, never performed to the lens.
+[VOICE-OPEN]. [The rest of VOICE-[CHAR]]. IN THIS MOMENT: [where the character is emotionally, and what they want from the other person]. Speaking to [WHO], [how things stand between them right now]. PLAYING: [one transitive verb — reassures, pleads with, deflects, tests] [WHO]. Opens [ENTRY, as a named physical state]; turns on the exact word '[TURN WORD]', where [what visibly changes]; exits [EXIT state]. Stress on '[STRESS WORD]'. UNDER THE LINE: [what they feel but do not say], which leaks only through [one named tell: a swallow, a glance away, a held breath, a hand going still]. Played small and true, for a camera close enough to see a thought. Never theatrical, never pushed, never performed to the lens.
 ```
 **`LISTEN-LINE`** — the `motion` field on every listener shot, reverse and two-shot. **The beat-after sentence is never trimmed.** *(289)*
 ```
 [NAME] is listening, not waiting to speak. As [SPEAKER] talks, [NAME] takes it in: [what lands, on which words, and the one named physical response]. The reaction arrives a beat after the words that cause it, never before them. Mouth closed, face alive and never frozen, eyes on [SPEAKER].
 ```
+**`BUSINESS-LINE`** — the `motion` field of every Mode 4 and Mode 5 dialogue and listener shot, before `LISTEN-LINE` on a listener (§24I part 11). The shot's one §27G action; never a hard motion, never the product except on a product beat. *(317)*
+```
+While [the line is spoken / listening], [NAME] keeps doing one thing with their hands: [BUSINESS: one action with a named prop], at [PACE, countable]. It is ordinary and unhurried, and the hands never stop to gesture. [THE TELL, if this shot carries it: on the word '[WORD]' the hands stop for a beat, then carry on.]
+```
 **`EMO-SEED`** — every Mode 4 T2I with a face, after `BODY-WHOLE`. Filled from the shot's EMO value; the ENTRY state, never the TURN. *(323)*
 ```
 The face holds exactly where [NAME] is at this moment of the scene: [the emotional state from the scene's emotion map, written as physical detail: the set of the jaw, where the eyes rest, the tension in the brow and mouth, the breath]. Not a neutral face and not a posed expression, but a person in the middle of a feeling.
 ```
-**`NEG-DRAMA`** — every Mode 4 beat with a person in it. *(425)*
+**`NEG-DRAMA`** — every Mode 4 beat with a person in it. Amended 2026-09-27 with the generated-acting tells (§24I part 12). *(586)*
 ```
-no theatrical acting, no mugging, no soap-opera reactions, no exaggerated crying, no streaming tears, no glycerin tears, no frozen listener, no blank face while being spoken to, no reaction arriving before the line that causes it, no emotion resetting between shots, no two characters speaking at once unless the script overlaps them, no speech directed at the camera, no performing to the lens, no expression held for effect
+no theatrical acting, no mugging, no soap-opera reactions, no exaggerated crying, no streaming tears, no glycerin tears, no frozen listener, no blank face while being spoken to, no reaction arriving before the line that causes it, no emotion resetting between shots, no two characters speaking at once unless the script overlaps them, no speech directed at the camera, no performing to the lens, no expression held for effect, no nodding along while speaking, no constant half-smile, no eyebrows rising on every stressed word, no hand gesture on every phrase, no head tilt on every line
 ```
 **`NEG-FILM`** — every Mode 4 beat, replacing `NEG-M1`. The lens clause drops only on a declared narrator beat. *(576)*
 ```
@@ -7808,6 +7906,8 @@ One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t
 
 **Motion fields (2026-09-26, §27G).** Every B-roll and hook row also carries: `action` (the one thing that happens), `pace` (countable), `camera` (`sway` — moves but does not travel — or the one travelling move, only on a still subject), `staging` (the §27G hard-motion row it follows, or `none`), `pin_end` (yes when the product changes angle or the beat must end on an exact frame — the row then needs an approved end image as well as the start image) and `max` (E6, default 6s for human motion). A row missing any of them is not written to a prompt.
 
+**Film fields (2026-09-27, Modes 4 and 5, §24I/§24K).** Film rows also carry: `scene` (`SC-xx`), `camera` as the F-rig with its reason from the camera plan, `playing` (the speaker's transitive verb), `business` (each character's one piece of business and its pace), `cut_cue` (line · look · action · reaction) and `spine` (the story-spine beat). A film row missing any of them is not written to a prompt.
+
 **`key` (amended 2026-09-26, user).** Every B-roll row names its `key`: the word in its phrase that the picture shows (the noun or action on screen, never a filler like "and" or "when"). §30H cuts the clip in 3 frames before it. Leave it empty only when the picture is the phrase's first word. In a voice-only build the opening row has no key — its clip covers 0.00s. After generation, a row may add `peak`: the second in the clip where its action peaks, so the in-point lands it on the key word.
 
 ## E5. Slot-fill manifest
@@ -7949,6 +8049,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | 2026-09-26 | Generation Board change on the user's request: viewer redesigned — solid screen, details panel with Confirm / Fix / Download, filmstrip with status dots, drawn icons. Template republished to every board. | §16A | Written into §16A; cut pending |
 | 2026-09-26 | Generation Board change on the user's request: Plan tab — Absorption Sheet, act map, wardrobe map on the board, section tabs, act filter, beat links. Template republished to every board. | §16A | Written into §16A; cut pending |
 | 2026-09-26 | Generation Board change on the user's request: stage order Voice → VO → Talking heads; Voice checklist (everyone who speaks has a voice); VO locked per part; Talking heads removed when unused; film builds drop VO and Talking heads. | §16A | Written into §16A; cut pending |
+| 2026-09-27 | **Film modes upgraded — motion, camera, acting, story** (user: "upgrade the movie style" — both film modes, motion/camera and acting/story). New §24K: §27G holds in Modes 4 and 5; the F-rig is chosen by what the subject is doing (F1/F4 only on a still subject, a walk is F2 across a locked frame, F5 only where the reference edit follows a walk, waist-up, three or four steps); a camera plan per scene read off the emotion map, camera script by act on Look Sheet field 7; the tightest scale spent on the turn; a cut cue on every shot, enter late / leave early; MULTI-SHOT only when nobody moves, shots ≥ 2.5s. §24I parts 9–12: the story spine read from the script (never rewriting it), a PLAYING verb per line, one piece of business per dialogue/listener shot (`BUSINESS-LINE`) carrying the subtext tell, performance size by shot scale, generated-acting tells banned in `NEG-DRAMA` | §3B, §22B, §24G, §24H, §24I, §24J, §24K (new), §29, E4, Appendix A (`RIG-F1`, `RIG-F4`, `RIG-F5`, `MULTI-FILM`, `DRAMA-DELIVERY`, `NEG-DRAMA`, `BUSINESS-LINE` new), Open Decisions | Written; cut pending |
 ---
 
 # OPEN DECISIONS
@@ -8032,6 +8133,8 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **§24I dramatic performance — visual check, first use.** One two-hander: a close-up with `DRAMA-DELIVERY` and its reverse with `LISTEN-LINE`. Judge: does the subtext read through the named tell, does the listener react after the words and not before, and do the two shots feel like the same moment? Also test one line with a neutral voice master against the same line with an emotional one. Settles by looking and listening.
 
 **§24J Mode 5 — visual check, first use.** One scene: master, a reverse and a product insert, then the contact sheet and one MULTI-SHOT clip. Judge: does it read as a frame from an animated feature rather than concept art or a game, does every character stay on model across the shots, and does the product stay real? Settles by looking.
+
+**§24K film motion and §24I parts 9–12 — visual check, first use** *(2026-09-27)*. One two-hander scene: a MULTI-SHOT clip with both characters seated and each on their business, one F1 push landing on the TURN word, and one walk as F2 across a locked frame. Judge: does anything warp during movement, does the business read as ordinary and carry the tell on its word, does the push feel motivated rather than decorative, and do the generated-acting tells (nodding, constant smile, gesture per phrase) stay out? Settles by looking.
 
 **V7.55.1 film-mode beats — visual check, first use.** One `HERO-FILM` reveal insert, one `MECH-SCREEN` push into the §12A render with its matched grade, and one `ANIM-XRAY` beat. Judge: does the insert read as a story moment rather than product photography, does the cut from screen to render feel motivated, and does the X-ray read as friendly and clear while the product still visibly works? Settles by looking.
 
