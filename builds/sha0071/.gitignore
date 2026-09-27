@@ -5,3 +5,4 @@ qa/
 edit/*.mkv
 edit/*.mp4
 edit/parts/
+edit/parts_raw/

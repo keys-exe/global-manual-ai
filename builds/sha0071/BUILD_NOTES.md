@@ -31,3 +31,4 @@
 ## Delivery (2026-09-27 09:10 UTC)
 - Final: `edit/SHA0071_SC01_HK1_final.mp4` — 720×1280, 24 fps, 47.8s, 7 Mbps, −14.6 LUFS, TP −0.9 dB, transcript 74/74 words. On the board as card `SC01-EDIT` (3 byte parts).
 - Spend: Higgsfield ≈646 of the 2,000 cap (images ≈30, Seedance 616 incl. the two 70-credit voice masters and SH01/SH08 gen 2). Kie 630 (discarded, Flag 2). Kling 0. The Higgsfield account is shared with other work, so its balance (4,795 → 3,480) also reflects other sessions.
+- Raw cut (user ask): `edit/SHA0071_SC01_HK1_raw.mp4` via `build_edit_raw.py` — same cuts, SH08 punch-in and captions; no colour match/grade/grain, clip audio untouched (−19 LUFS). Board `SC01-EDIT` v2; the graded cut stays v1.
