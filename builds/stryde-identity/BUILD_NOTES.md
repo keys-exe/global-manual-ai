@@ -32,6 +32,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   keep it simple) — To check; a third needs the user's go. HK1-T: end frame made (Kie), user fix → v2 with the band
   looped in front of the pad; video v1 = first-and-last frame (rendered before the user said "don't use end frame");
   v2 = start frame only, simple text prompt — To check. User preference: simple plain-text video prompts, not JSON.
+  HK1-T final = the user's own clip (video v3, `hooks/HK1-T_video_v3_user.mp4`, board USE).
 
 ## Where it stands
 - **§22U steps 6–9 done:** clone `Identity-Narrator` = `F5vpA7jC44a7w7td6GdQ` (by API; `Identity` was taken by the
