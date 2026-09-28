@@ -83,7 +83,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   longer moves at all — stillness plus the camera's breath sway only; Kie, 69 credits, 3.04s. `preflight.py` gained `user_go`
   (a generation 3+ passes only with the user's instruction recorded and a diagnosed fix, §22X). On the board, To check.
   A fourth generation of HK2-03 would again need the user's go.
-- **Next:** the user's HK2 gate (HK2-02 v2 + HK2-03 v3 clips) → HK3 (four images first; clips on Kie).
+- **HK2 done (user confirmed all three clips: HK2-01 v1 Kling, HK2-02 v2 Kie, HK2-03 v3 Kie).**
+- **HK3 started (user: "go ahead with HK3"):** start images HK3-01 (X-ray in profile past the couch paper roll, P6),
+  HK3-02 (Ken's hands at the bus stop pushing a pill from a foil card, R2 + P3), HK3-03 (Joan in the wing chair looking
+  up to the carriage clock, R3 v2 + P4), HK3-04 (Gail's forefinger pressing 2cm under the kneecap, high, R1 + P1).
+  HK3-02: the "tablet / blister strip" wording failed twice on Higgsfield with no reason (likely a medication filter, no
+  image made) → reworded to "everyday headache pills … foil card" (`HK3-02_try1.txt` keeps the first wording). On the board, To check.
+- **Next:** the user checks the four HK3 images → HK3 clips on Kie (3s each) → the HK3 gate → Act 1.
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
 - **Next (old):** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
