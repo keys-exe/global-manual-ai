@@ -8,13 +8,13 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "BR-22 confirmed image",
- "start_approved": false,
- "fix_note": "remove the hands so nothing distorts -> frame: the closed box alone; motion: slow push in only",
+ "start_approved": true,
+ "fix_note": "image fixed: box alone, no hands -> motion: slow push in only (user's go for the third video)",
  "pinned": false,
  "end_image": null,
  "end_approved": false,
  "prefer_multi_shots": "false",
- "generation": 2,
+ "generation": 3,
  "subject_motion": "in_place",
  "pace": "named",
  "risks": [
@@ -30,5 +30,6 @@
    "risk": "the Fix-note fault repeats",
    "prevented_by": "fault fixed at source in image + motion"
   }
- ]
+ ],
+ "user_go": "user, 2026-09-28: \"fix them now then generate the confirmed images\""
 }

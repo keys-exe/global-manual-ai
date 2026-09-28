@@ -3,18 +3,18 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"busy_on_the_landing\",\"subject\":\"Maureen, burgundy tunic, denim skirt, slippers, the strap on her right knee, carrying a wicker laundry basket onto the landing.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Camera lags the subject, never anticipates, never travels with it. Still drifting at the cut.\",\"framing\":\"Medium from the landing, as in the start frame.\"},\"motion\":\"She steps up onto the landing with the basket on her hip, one easy step, then walks on past the camera at a normal pace, a small contented smile. Everything keeps the exact form, proportion and count it has in the start frame; nothing melts, merges, splits or grows. Subject fully in frame throughout. Same person every frame: same face, age, hair and wardrobe; five separate fingers on each hand; limbs keep their length and bend only at real joints. The strap keeps the start frame's exact geometry every frame: same two equal peaks, same centred notch, same chrome slides and grey stryde wordmark. The shell is hard moulded plastic and never bends, flexes, wobbles or jiggles. Mass and momentum: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly; fabric and the soft elastic band lag and settle after the body stops.\",\"lighting\":\"Capture exactly as in the start frame: same tone, noise and colour temperature, no grading change across the clip.\",\"style\":\"Ordinary everyday footage, natural daylight colour, unretouched.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no jelly wobble, no rubbery shell, no pained face, no hand on the knee, no phone, no smartphone, no mobile phone anywhere in the frame, no camera in frame, no AI face, no plastic skin, no extra fingers, no fused fingers, no deformed limbs, no CGI look, no text, no music\"}",
+ "prompt": "{\"shot\":\"busy_on_the_landing\",\"subject\":\"Maureen, burgundy tunic, denim skirt, slippers, the strap on her right knee, carrying a wicker laundry basket on the landing, held exactly as in the start frame.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Camera lags the subject, never anticipates, never travels with it. Still drifting at the cut.\",\"framing\":\"Medium from the landing, as in the start frame.\"},\"motion\":\"She steps up onto the landing and walks on at a normal pace, a small contented smile. She carries the basket EXACTLY as in the start frame the whole clip: the same arms, the same grip, the same position against her body; the grip never changes and the basket never moves to her other side. Everything keeps the exact form, proportion and count it has in the start frame; nothing melts, merges, splits or grows. Subject fully in frame throughout. Same person every frame: same face, age, hair and wardrobe; five separate fingers on each hand; limbs keep their length and bend only at real joints. The strap keeps the start frame's exact geometry every frame: same two equal peaks, same centred notch, same chrome slides and grey stryde wordmark. The shell is hard moulded plastic and never bends, flexes, wobbles or jiggles. Mass and momentum: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly; fabric and the soft elastic band lag and settle after the body stops.\",\"lighting\":\"Capture exactly as in the start frame: same tone, noise and colour temperature, no grading change across the clip.\",\"style\":\"Ordinary everyday footage, natural daylight colour, unretouched.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no jelly wobble, no rubbery shell, no change of grip, no basket switching sides, no basket moving to the hip, no basket lifted higher, no hand leaving the basket, no pained face, no hand on the knee, no phone, no smartphone, no mobile phone anywhere in the frame, no camera in frame, no AI face, no plastic skin, no extra fingers, no fused fingers, no deformed limbs, no CGI look, no text, no music\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "BR-14 confirmed image",
- "start_approved": false,
- "fix_note": "should show a productive result -> frame: carrying laundry up onto the landing",
+ "start_approved": true,
+ "fix_note": "video: keep how she carries the basket -> motion: the start frame's grip held all clip",
  "pinned": false,
  "end_image": null,
  "end_approved": false,
  "prefer_multi_shots": "false",
- "generation": 2,
+ "generation": 3,
  "subject_motion": "travels",
  "pace": "named",
  "risks": [
@@ -30,5 +30,6 @@
    "risk": "the Fix-note fault repeats",
    "prevented_by": "fault fixed at source in image + motion"
   }
- ]
+ ],
+ "user_go": "user, 2026-09-28: \"fix them now then generate the confirmed images\""
 }

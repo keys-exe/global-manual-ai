@@ -262,6 +262,45 @@ P["BR-22"] = {"shot": "box_reveal",
     "negatives": NEG_WARP + ", no hands, no fingers, no person entering, no lid opening, no box moving, no box changing "
                  "shape, no text changing, " + NEG_M1}
 
+# ── fix round 6 (user video Fix notes, 2026-09-28) ─────────────────────────────
+P["BR-06"] = photo("pad_inside_still",
+    "The surgeon's two hands holding the one stryde strap as a closed loop, its inside facing the camera: the smooth "
+    "matte-black inner pad, a chrome slide at each end, the knit band looping below.",
+    "Close-up, as in the start frame.",
+    "Almost nothing moves: the hands hold the same one strap steady the whole clip, with only a tiny slow tilt of a few "
+    "degrees so the window light slides across the smooth inner pad. The strap never leaves the hands, never jumps, "
+    "never swaps, never turns round; no other strap appears.",
+    "no second strap, no strap appearing, no strap disappearing, no teleporting, no jump cut, no strap swapping, no "
+    "strap flipping round, no front face turning to camera, no wordmark, no open band")
+P["BR-13"] = photo("climb_stairs_towels",
+    "Maureen, seventy-four, burgundy tunic, denim skirt, sheepskin slippers, the strap on her right knee, climbing the "
+    "carpeted staircase with brass stair rods, a stack of folded towels held against her chest in both arms.",
+    "Wide from the foot of the stairs looking up, as in the start frame.",
+    "She walks up the stairs easily and normally, one foot per step, alternating: her right foot goes onto the next "
+    "step, then her left foot onto the step above that, never both feet on the same step, never pausing, about one "
+    "step per second, two steps in the clip. Both arms stay round the towels; she never touches the rail. The steps "
+    "stay fixed, straight and evenly spaced.",
+    "no both feet on one step, no stepping together, no pausing between steps, no hand on the rail, no floating, no "
+    "sliding feet, no steps changing shape")
+P["BR-14"] = photo("busy_on_the_landing",
+    "Maureen, burgundy tunic, denim skirt, slippers, the strap on her right knee, carrying a wicker laundry basket on "
+    "the landing, held exactly as in the start frame.",
+    "Medium from the landing, as in the start frame.",
+    "She steps up onto the landing and walks on at a normal pace, a small contented smile. She carries the basket "
+    "EXACTLY as in the start frame the whole clip: the same arms, the same grip, the same position against her body; "
+    "the grip never changes and the basket never moves to her other side.",
+    "no change of grip, no basket switching sides, no basket moving to the hip, no basket lifted higher, no hand leaving "
+    "the basket, no pained face, no hand on the knee")
+P["BR-17"] = photo("easy_box_lift",
+    "Dean in a squat in the warehouse aisle, back straight, holding a big cardboard box close to his body, the strap on "
+    "his bent right knee.",
+    "Medium-wide from a low three-quarter angle, as in the start frame.",
+    "He stands up with the box in one smooth, easy squat-lift over about two seconds, as if it were no trouble at all: "
+    "relaxed face, a small easy smile, steady breathing, back straight, the box held close. A positive, strong, "
+    "comfortable moment; his knee feels fine.",
+    "no struggling, no strain, no grimace, no wincing, no shaking arms, no groaning face, no box floating, no box "
+    "changing size, no rounded back")
+
 FIX_NOTE = {  # user's Fix note -> where it was fixed (frame, prompt or motion, §22X)
  "MECH-01": "not the patellar tendon -> frame: front view, glow on the tendon itself",
  "MECH-10": "express the line more -> frame: bare bone on bone with spurs + red glow; motion: grind + flare",

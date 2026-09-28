@@ -171,3 +171,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   the image so that there's no distortion". Now the closed box alone on the checked cloth (`body/fix5_prompts.py`,
   `body/BR-22_fix5.png`), To check. The new video prompt is a slow push in on the box, no hands. It would be BR-22's
   third video, so under §22X it waits for the user's go after the image is confirmed.
+- (2026-09-28, 15:00 UTC) **Video fix round 6 + the last confirmed images.** User: "fix them now then generate the
+  confirmed images". That is the user's go for the third video on BR-06, BR-13, BR-14, BR-17 and BR-22 (§22X,
+  recorded as `user_go` in each `.v2.call.json`).
+  - BR-06: only the silicone pad, no teleporting strap → the hands hold still with a tiny tilt.
+  - BR-13: never both feet on one step → one foot per step, alternating.
+  - BR-14: keep her basket grip from the image the whole clip.
+  - BR-17: an easy, positive lift, no strain.
+  - First videos from the new confirmed images: BR-22 (box alone, slow push in), BR-24 (washing line), BR-25 (down
+    the stairs).
+  - All via Kie Kling, job ids in `body/kie_kling_jobs3.txt`, on the board as To check.
+  - Every body image is now confirmed.
