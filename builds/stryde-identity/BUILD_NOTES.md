@@ -71,3 +71,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   locked VO master to "Because"): HK1 4.20s, HK2 4.16s, HK3 4.52s, 1080×1920, on the board as EDIT-HK1…3 (To check).
   ffmpeg via `pip install imageio-ffmpeg` (the standard's setup). Next: the body B-roll (act map BR/MECH rows), then
   the full variants (hook + body) for the Final output tab.
+- (2026-09-28, 09:00 UTC) **Body B-roll started (user: "next make the body brolls").** E6 lengths from the body word
+  timestamps → `work/body_lengths.json` (27 beats, Seedance floor 4s: 25 × 4s, BR-03 and BR-21 5s). Start-image
+  prompts built by `body/body_prompts.py` from the act map, the wardrobe ledger and the product sheet strings
+  (SEAT_LOCK, PLACE_BENT, PAD_BACK_SHOT, FAKE_BASE + "too small", PACKAGE_LOCK, ANAT-A/B with the sheet's slots) →
+  `body/<BEAT>.t2i.txt`, `body/body_v1.json`. 27 cards on the board (stage broll, Act 1–5). Images through Kie GPT Image;
+  videos (Seedance) wait for the user's Confirm of each image. F7: no `package_closed.jpg` — BR-22 uses the open-box
+  reference plus PACKAGE text.
