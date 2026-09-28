@@ -66,6 +66,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   handwritten letter, readable: "Three things I wish I had known about my knees — 1. Nobody told me where the pain was coming
   from. 2. I protected my bad knee with my good one. 3. I stopped saying yes, and never said why." (paraphrase of the script's
   three regrets, first person; no name, no brand). Row now CU, focus the letter. v2 prompt in `HK2-02_v2.txt`.
+  Third Fix "MAKE IT A CLASSIC LETTER" → v4: cream writing paper creased from its envelope, blue-black fountain pen, dated
+  "12th September", "Dear all," … "Yours sincerely, Margaret" (invented first name only). v3 prompt in `HK2-02_v3.txt`.
 - **Next:** on the user's image Confirm → HK2 clips (3 / 3 / 3s): Kling connector while it has credits, else Kie (`kie.py kling`).
 
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
