@@ -14,7 +14,7 @@ Question (user): do longer prompts cause distortion, and what length is the swee
 | LONG (the exact BR-25 v7 prompt) | 2467 | c5d3cd8f22809087eca6c61f0174778b | `stryde-identity__AB-25-LONG` | 90 |
 
 BR-25 v7 (already on the board, same image and prompt as LONG) is a free second sample of the long arm.
-Verdict: the user's, on the board (Manual). Result: _pending_.
+Verdict (user, 2026-09-28): **"both look the same".** With the image, model and settings fixed, a 731-char prompt and a 2,467-char prompt gave clips of the same quality. At this range, prompt length does not cause the distortion (n=1 per arm, plus v7 as a second long sample).
 
 ## LEAN prompt
 ```

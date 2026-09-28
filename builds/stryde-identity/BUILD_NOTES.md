@@ -33,7 +33,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   F7 (`package_closed.jpg` missing), F8 (AVATAR-SHEET doc inconsistency), F10 (watermark omit).
 
 ## 2026-09-28: prompt-length A/B test (session_01SuuwYgAebgqT4FXLsPdQzW)
-- The user asked whether long prompts cause distortion. Test on BR-25: same image and settings, a lean prompt (731) against the
+- Result: the user saw no difference ("both look the same"). Length is not the distortion lever. Test on BR-25: same image and settings, a lean prompt (731) against the
   long v7 prompt (2,467). Both on the board under **A/B test**, To check. Details: `tests/AB_PROMPT_LENGTH.md`.
 - Kling connector is at 3 credits; Kling video is going through Kie (`kling-3.0-omni/image-to-video`, 90 credits per 5s 1080p clip).
   The user approved Kie for this test.
