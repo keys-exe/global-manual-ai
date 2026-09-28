@@ -177,5 +177,5 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   is a third generation — waits for the user's go (§22X).
 - Images To check: BR-11, BR-13, BR-14b, BR-15a (v3), BR-15c. Their videos follow on Confirm; BR-11, BR-15a, BR-15c are pinned
   (end frame needed first).
-- Next: Fix/confirm the videos → rough cut per hook (, ) → CapCut block.
+- Next: Fix/confirm the videos → rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.
 - Board storage ~960 MB used — near the 1 GB cap; old-version files may need clearing again before the last videos.
