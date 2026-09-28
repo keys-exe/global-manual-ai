@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.64.2 — supersedes all prior versions.** *(film music composed to the scene section by section and checked by the agent in both run modes, `music.py`, §24M/E0; film sound — clips carry dialogue only, one music theme per film, one continuous music cue and room tone per scene, a film-wide SFX list, made on ElevenLabs and mixed by `mix_scene.py`, §24M; the film modes upgraded — motion and camera grammar, acting and story, the scene image list, the state track, connected scenes, voice emotion carried across cuts, US-feature camera packages and production value, no trimming, §24G–§24L; video preflight and two generations per shot, §22X; camera angle range, focus, lighting and the scene colour lock, all modes, §30I–§30L; the colour grade in the edit only, §40; who checks — Manual the user, Automatic the agent with final videos only — and `DIRECTIONS` on the intake, E0/§18B; the Edit Grammar — how the inspo presents its B-roll and cuts (full-frame, split-screen, picture-in-picture, punch-ins, transitions, captions, SFX) is read off its frames, locked as `EDIT-[BUILD]` and copied in both run modes: every B-roll row carries its layout, the prompt is framed for it, `assemble.py` renders split, picture-in-picture and punch-ins, and the rest is a CapCut line, §42 Part 3A/§18/§30H/§35/§40/E4; the Manual Drive run — a Drive link with `RUN: MANUAL` is fetched and absorbed by the agent exactly as in Automatic, the agent then generates and checks the avatars (step 3) itself and stops — the avatars are the user's decision; on the user's go, steps 4–5 follow as copy-ready prompts and the build continues in Manual, §1/§18/§18B/§31/§44/E0; intake fixes — a Loom MP4 in the Drive folder is sorted as the Loom brief, never as an inspo, §18B/§18C; `.docx` tables are read, so a two-column VO | VISUAL script is no longer extracted empty and its visual column enters the ledger row by row, §22U/§27F; speaker labels (`VO:`, `NARRATOR:`, `SARAH:`) are cut from spoken lines, never voiced, §22U; the script's visual instructions are binding — every note on the script is logged in the Visual Instruction Ledger, carried by a named beat or CapCut line, and checked in the image and clip verdicts, §27F; the Loom brief — an optional Loom link sent beside the Drive link, fetched, transcribed and framed by `scripts/fetch_loom.py`, its instructions followed like the script's own, §18C; Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.64.4 — supersedes all prior versions.** *(Eleven v4 TTS with the Enhance pass before every request, §22U; the Manual voice flow — maps before voices, then voice source, clone, VO, talking heads and a natural-pace trim with no stop, §18/§22U/E0; camera settings and colour grading — the film LUT is a real file made from the Look Sheet's grade numbers, checked on skin and neutrals and applied identically in CapCut desktop and by `lut.py`, §24G/§40; white balance pinned per scene as the key light's Kelvin, §30K/§30L; Modes 2–3 matched, never graded, §12; Mode 1 phone settings — 1x or front camera only, no ultra-wide, telephoto, Portrait or Cinematic mode, flash or daylight night mode, §22A; the film camera numbers marked unverified, §24G; the film shot library — 34 shot types for Modes 4–5, from wide to inside-the-fridge, each with its setup, `SHOT-LINE` clause, meaning and limits; signature shots capped per scene and film; Dutch tilt allowed in the film modes with a reason, §24K part 7/§30I; the Generation Board's Final output tab and the board shown in both run modes, §16A; film music composed to the scene section by section and checked by the agent in both run modes, `music.py`, §24M/E0; film sound — clips carry dialogue only, one music theme per film, one continuous music cue and room tone per scene, a film-wide SFX list, made on ElevenLabs and mixed by `mix_scene.py`, §24M; the film modes upgraded — motion and camera grammar, acting and story, the scene image list, the state track, connected scenes, voice emotion carried across cuts, US-feature camera packages and production value, no trimming, §24G–§24L; video preflight and two generations per shot, §22X; camera angle range, focus, lighting and the scene colour lock, all modes, §30I–§30L; the colour grade in the edit only, §40; who checks — Manual the user, Automatic the agent with final videos only — and `DIRECTIONS` on the intake, E0/§18B; the Edit Grammar — how the inspo presents its B-roll and cuts (full-frame, split-screen, picture-in-picture, punch-ins, transitions, captions, SFX) is read off its frames, locked as `EDIT-[BUILD]` and copied in both run modes: every B-roll row carries its layout, the prompt is framed for it, `assemble.py` renders split, picture-in-picture and punch-ins, and the rest is a CapCut line, §42 Part 3A/§18/§30H/§35/§40/E4; the Manual Drive run — a Drive link with `RUN: MANUAL` is fetched and absorbed by the agent exactly as in Automatic, the agent then generates and checks the avatars (step 3) itself and stops — the avatars are the user's decision; on the user's go, steps 4–5 follow as copy-ready prompts and the build continues in Manual, §1/§18/§18B/§31/§44/E0; intake fixes — a Loom MP4 in the Drive folder is sorted as the Loom brief, never as an inspo, §18B/§18C; `.docx` tables are read, so a two-column VO | VISUAL script is no longer extracted empty and its visual column enters the ledger row by row, §22U/§27F; speaker labels (`VO:`, `NARRATOR:`, `SARAH:`) are cut from spoken lines, never voiced, §22U; the script's visual instructions are binding — every note on the script is logged in the Visual Instruction Ledger, carried by a named beat or CapCut line, and checked in the image and clip verdicts, §27F; the Loom brief — an optional Loom link sent beside the Drive link, fetched, transcribed and framed by `scripts/fetch_loom.py`, its instructions followed like the script's own, §18C; Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -1048,6 +1048,10 @@ Exception unchanged: mechanism beats, which run the locked register (§12A).
 
 The no-grade and no-vignette rules above are Mode 1's. In Mode 4 **the grade, palette, contrast and optical fall-off are whatever the Film Look Sheet derives from the inspo and the script** (§24G) — the palette and light in the prompt, **the grade in the edit only** (§40) — a noir build may run low-key and dark in the corners, a romance soft and warm. Four floors never yield to the look: **one look per film**, so every scene sits in the same family and only the act colour script moves within it (§11); **darkness always has a source**, so a dark corner is falloff from a named light or a lens's optical fall-off, never an applied oval; **skin keeps its texture under the grade**; and **no generated grain**, because grain is added in post (§24G).
 
+### Modes 2 and 3 — matched, never graded *(2026-09-28)*
+
+3D Pixar and Claymation carry their colour in the render — the stylised light of §24B and the painted clay of §24F. **No LUT, no grain, no creative grade**: the edit only matches each clip to its scene's master (§40 step 1), exactly as Mode 1. `lut.py apply` refuses Modes 1–3.
+
 ---
 
 ## 12A. Mechanism Register
@@ -1958,7 +1962,7 @@ Every step carries a class:
 | 2 | **Absorb script, product, Product Sheet — and lock mode and model** | DET | The `.md` + `.py` pair, created where absent. §43A claims pass — every figure tiered before anything builds against it. **The phrase inventory is built here** (§27B): a mechanical pass over the script as written. **The Visual Instruction Ledger is opened here (§27F)** — every visual note on the script and every Loom instruction (§18C), each anchored to its spoken line. **The Mode & Model Lock is written here (§18A)** — mode per act, image model per beat class, read off what the script demands. Every other lock resolved here — camera, format, tools, mechanism claim, declared side. |
 | 3 | **Cast — everyone who recurs** | DET *(render dependency)* → **HG** *(Manual)* | **Every subject with two or more beats on the step-2 inventory** — the narrator, every named side character, **and every anonymous B-roll subject who recurs** (`S-01`, `S-02`…) — gets a full §19 reference sheet — one prose generation, 9:16, no reference — passed through the §19 panel check before it is attached anywhere. Identity strings locked from what rendered, never from what was prompted (§7 applied to our own output). Ships per sheet: §19A axis table with clearance counts; **speaking characters additionally** get `VOICE-[CHAR]` roster-cleared and a full §20 constraint sheet. One-off subjects are not sheeted (§13). **Sent, then straight on** — **in Manual (V7.62.0) the agent generates and checks every sheet itself, then stops: the avatars are the user's decision, and step 4 waits for the user's go** (§18B) |
 | 4 | **Property and location maps** | DET | The §30C Location Derivation Pass over the step-2 phrase inventory, **opening with channel C0 — which locations are rooms of one dwelling.** Where two or more are, the **Property Sheet is written and its property plate generated and checked first (§30G)**, before any location plate is built against it. Five-part Location Sheets, §22A lighting profiles reconciled to the property's orientation, plates rendered for **PLATED locations only** — never for INCIDENTAL or **TRAVERSED** ones (§30C 1a), both of which still carry the property plate where they are interiors of the dwelling. Four set-level checks run. **The location set closes here.** **Sent, then straight on** |
-| 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; **every Visual Instruction Ledger row assigned to the beat or CapCut line that carries it (§27F)**; **every B-roll row given its `layout`, and every punch-in, transition and caption device its line, from `EDIT-[BUILD]` (§42 Part 3A)**; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims. **Automatic (V7.60.7): written only after every step-3 sheet and step-4 plate has passed E1**, with identity strings and plate facts read off the renders; B-roll `duration` is `pending-master` until the voice master exists (E4, E6). **Every B-roll and film row carries its `angle`, `why`, `focus` and `light`, and `angles.py` passes before the map is approved (§30I–§30K)** |
+| 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; **every Visual Instruction Ledger row assigned to the beat or CapCut line that carries it (§27F)**; **every B-roll row given its `layout`, and every punch-in, transition and caption device its line, from `EDIT-[BUILD]` (§42 Part 3A)**; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims. **Automatic (V7.60.7): written only after every step-3 sheet and step-4 plate has passed E1**, with identity strings and plate facts read off the renders; B-roll `duration` is `pending-master` until the voice master exists (E4, E6). **Every B-roll and film row carries its `angle`, `why`, `focus` and `light` (film rows also their `shot`, §24K part 7), and `angles.py` passes before the map is approved (§30I–§30K)** |
 | 6 | **Hooks, one by one** | AC → **HG** | Serial: deliver → generate → first-frame check (§5/§30C/§30E) → confirm → next. Seeds built against plates that already exist. Confirmed renders feed the Scene and Subject Registries as they land. **The second gate** in Manual, after the step-3 avatar review; in Automatic the agent confirms (E0) |
 | 7 | **B-roll and body acts** | DET | Executing step 5's dispositions in the §30E assembly order — motion arc first, start frame derived, plates attached, strings by register, model routed. `TH`-carried lines get no cutaway on purpose. **A beat whose line carries a visual instruction executes that instruction (§27F).** Each act delivery ends on its §27B reconciliation line and its §27F ledger line |
 | 8 | **CapCut block** | DET | Cover points, J-cuts, designed-silence list, sync triage, motion-graphics layer, supplied-asset cut-ins, **every on-screen text, SFX, music and edit instruction from the Visual Instruction Ledger, verbatim** (§40, §27F) — last and separate. **Every `EDIT-[BUILD]` device the rough cut does not render — cutouts, cards, transitions, speed ramps, captions, overlays, SFX — on its line with its `EG` ID** (§42 Part 3A) |
@@ -2445,6 +2449,22 @@ Do not paste an indoor profile into an outdoor beat. Four clauses break on the m
 - *"Sensor noise in shadow areas"* — real indoors, false in daylight
 - *"Shadow falloff under eyes, chin, nose"* — overcast flattens it
 - **The HDR clause inverts:** indoors, Smart HDR *lifts the shadows flat*; in hard sun it *visibly fights the range and flattens the mid-tones*. Write the correct one
+
+### Phone settings — lens and modes *(2026-09-28)*
+
+`CAM-LOCK` (back camera) and `CAM-FRONT` (selfie, §22F) already fix the phone and leave exposure, white balance and focus on automatic. This fixes **which lens and which camera modes** — the settings a real person leaves alone:
+
+| Setting | Rule | Why |
+|---|---|---|
+| **Lens** | **1x main (24mm)** on every back-camera shot; the front camera only for selfie framings (§22F) | What people film with. `CAP-A` names the 24mm's edge softening |
+| **0.5x ultra-wide** | Never | Stretches faces and the product at the frame edges — a tell, and a §27D/§9D fault |
+| **Telephoto (4x / 8x)** | Never | Nobody films home life from across the room; the compressed look reads as a hired camera |
+| **Portrait mode / Cinematic mode** | Off — never a synthetic background blur | The phone's fake blur leaves halo edges round hair and hands; the only focus change is a tap to focus (§30J) |
+| **Night mode** | Only where the phone would trigger it: a genuinely dark room with one practical (§12's one evening location) | In daylight it smooths skin and flattens texture |
+| **Flash** | Off | Flat frontal light — banned on a face (§22A) |
+| **White balance** | Automatic (`CAM-LOCK`) — the phone balances toward the room's key; any other source renders off it (a lamp reads amber in a daylight room) | The light's colour is written as Kelvin in the light plan (§30K) so the prompt knows what the phone is balancing |
+
+`NEG-PHONE` joins the negatives on every Mode 1 T2I.
 
 **Part A travels everywhere. The Location Profile is written per location, once, and locked.**
 
@@ -3434,7 +3454,7 @@ Mode 4 has no house look. **The kind of film — its grade, palette, glass, ligh
 | 2 | **CAMERA AND GLASS** | The camera package from the §24G library (camera body and format, lens family, spherical or anamorphic), the focal length for each shot scale, the stop, and the depth-of-field policy by shot scale and where focus changes are used (§30J) | `CAM-FILM` |
 | 3 | **LIGHT** | How light is motivated, hard or soft key, key-to-fill ratio, how practicals are used, the time-of-day plan by scene, and the light arc by act (§30K) | `LIGHT-FILM` |
 | 4 | **PALETTE** | The dominant colours of the sets and wardrobe, and the colour script by act | `LOOK-[BUILD]`, §14A wardrobe |
-| 5 | **GRADE** | Shadow tint, highlight tint, saturation, contrast curve, how skin is held | **The edit only** — the CapCut LUT (§40). Never in a prompt |
+| 5 | **GRADE** | Shadow tint, highlight tint, saturation, contrast curve, black lift, white point, how skin is held — **written in words and as numbers** (`grade.json`: `warmth`, `contrast`, `saturation`, `shadow_tint`, `highlight_tint`, `black_lift`, `white_point`, `skin_protect`), compiled into the film's one LUT file `LUT-[BUILD].cube` by `lut.py make`, which must pass `lut.py check` (skin hue ≤ 8°, skin saturation ±25%, no tone inversion) | **The edit only** — `LUT-[BUILD].cube` (§40). Never in a prompt |
 | 6 | **OPTICAL TEXTURE** | Highlight roll-off, halation, lens softness | `LOOK-[BUILD]`, `CAP-FILM` |
 | 7 | **MOTION** | Which F-rigs this film uses, how fast the moves are, the cutting rhythm (average shot length from the inspo), the camera script by act (§24K), and the angles used by act (§30I) | Scene Bibles, `RIG-F*` |
 | 8 | **PERFORMANCE** | Acting register — how big, how still, how much is said under the line | §28 settings below |
@@ -3464,9 +3484,11 @@ Look Sheet field 2 is filled from this library, never from a generic "cinema cam
 
 The stop follows §30J's depth table: wides hold the room, close-ups separate the face. **Never a wide lens close to a face** (§30I part 4).
 
-**Motion cadence:** 24 frames per second with a **180-degree shutter** — the natural motion blur of feature footage (`INHERIT-FILM`). Never high frame rate, never the smooth video look.
+*(Unverified, 2026-09-28: whether the image and video models respond to the named focal length, T-stop and shutter angle, or only to the camera and lens names and the shot scale, has not been measured. The camera package and the §30J depth wording are expected to do most of the work; the numbers stay in `CAM-FILM` because they cost little and match what the named footage was shot at. Open Decision — measured on the first film build: the same frame at two stops and two focals, compared for depth and perspective.)*
 
-**Colour science:** the package's own (ARRI, Sony, film stock) is named in `CAM-FILM`; the look is finished in post by one LUT in the manner of a film print emulation (§24G prompt-versus-post), never by a generated grade.
+**Motion cadence:** 24 frames per second with a **180-degree shutter** — the natural motion blur of feature footage (`INHERIT-FILM`). Never high frame rate, never the smooth video look. *(Unverified that Seedance or Kling honour the shutter wording; the 24 fps is the output rate either way.)*
+
+**Colour science:** the package's own (ARRI, Sony, film stock) is named in `CAM-FILM`; the look is finished in post by one LUT file (`LUT-[BUILD].cube`, Look Sheet field 5) in the manner of a film print emulation (§24G prompt-versus-post), never by a generated grade.
 
 ### Production value — what makes a US feature look expensive
 
@@ -3480,7 +3502,7 @@ The camera is half of it; the other half is what is in front of it, and generato
 
 ### Finishing — the delivery master
 
-Generation stays at 720p (§4, locked, user decision — confirmed 2026-09-27: "720p cause we only gonna watch it on phones"). **The finish is an edit step — §40, colour grade in the edit only:** on the picture-locked cut, 1. match each clip to its scene master, 2. the one LUT, 3. the grain pass (user, 2026-09-27: "the 1, 2 and 4 i want that"), exported at native 720×1280 with no upscale and no paid upscaler unless the user asks.
+Generation stays at 720p (§4, locked, user decision — confirmed 2026-09-27: "720p cause we only gonna watch it on phones"). **The finish is an edit step — §40, colour grade in the edit only:** on the picture-locked cut, 1. match each clip to its scene master, 2. the one LUT file (`LUT-[BUILD].cube`, `lut.py`), 3. the grain pass (user, 2026-09-27: "the 1, 2 and 4 i want that"), exported at native 720×1280 with no upscale and no paid upscaler unless the user asks.
 
 ### Prompt versus post — the split that keeps 50 clips matching
 
@@ -3880,7 +3902,7 @@ One action per shot at a countable pace, human motion 3–6s, start frames caugh
 
 ### 2. The camera plan — every move has a story reason
 
-**A camera move is a sentence in the film, so it has to say something.** Each Scene Bible carries a **camera plan**: the rig and the angle (§30I) per shot, chosen from what the scene's emotion map is doing at that moment. The Look Sheet's field 7 sets which rigs the film uses at all and the **camera script by act** (e.g. locked and patient in the Before, floating in the Problem, one slow push per Turn, wide and settled in the After).
+**A camera move is a sentence in the film, so it has to say something.** Each Scene Bible carries a **camera plan**: the rig, the angle (§30I) and the library shot (part 7) per shot, chosen from what the scene's emotion map is doing at that moment. The Look Sheet's field 7 sets which rigs the film uses at all and the **camera script by act** (e.g. locked and patient in the Before, floating in the Problem, one slow push per Turn, wide and settled in the After).
 
 | The scene is… | Camera | Why |
 |---|---|---|
@@ -3911,11 +3933,84 @@ A MULTI-SHOT clip (`MULTI-FILM`, §29) covers dialogue with **everyone in it sti
 
 §24D's principles carry the motion (anticipation, overlap, the moving hold), timed by the Look Sheet's field 7. Squash and stretch never touches the product (`PIX-SPLIT` keeps it rigid and real). Poses are held in clear silhouette at the turn. Every §24K limit above applies to the virtual camera exactly as to a real one (`VCAM`).
 
+### 7. The film shot library — 34 shot types *(new 2026-09-28, user: "Add this for the camera angles specially in film style")*
+
+**Scope: Modes 4 and 5 only** (Modes 1–3 keep §30I as it is). §30I gives every shot a height, a side and a foreground; this library names the **shot** a film crew would call — the 34 shot types a film uses, each with the setup that makes it, the one clause that asks for it, what it says, and the limit that keeps it clean on a video model. **Every film row (E4) names its `shot` — one library ID, or two where one sets the scale and the other the rest (e.g. `SH-CU` + `SH-OTS`) — and its `why` from the "Reads as" column.** The row's `height`, `side`, `scale` and `fg` must agree with the setup column (`angles.py` SHOT). The clause fills `SHOT-LINE` (Appendix A). Mode 5 builds every shot with the virtual camera (`VCAM`), same limits.
+
+**A — Scale**
+
+| # | Shot · ID | Setup (row fields · lens) | Clause (`SHOT-LINE`) | Reads as · use | Limits |
+|---|---|---|---|---|---|
+| 1 | **Wide** · `SH-WIDE` | scale WIDE · 24–35mm | a wide shot: the whole place and everyone in it, the people small inside it | where we are, alone in it · the scene master (§24H), the After settling | deep focus (§30J); faces never judged at this size |
+| 2 | **Medium** · `SH-MED` | scale MEDIUM · 35–50mm | a medium shot, from the waist up | with them, the business in their hands · dialogue coverage | — |
+| 3 | **Close-up** · `SH-CU` | scale CU · 50–85mm | a close-up: the face from the chin to the top of the head fills most of the frame | what they feel · the turn | the tightest scale is spent once per scene (§24K part 3) |
+| 4 | **Macro** · `SH-MACRO` | scale ECU · 100mm macro | an extreme macro close-up of [DETAIL] — its texture filling the frame | the detail that matters · a pill, a fibre, a drop, the product's texture, an eye with a tear | one detail, never a whole face; product only from a side the Product Sheet shows (§9D); still subject, locked camera |
+
+**B — Side and position**
+
+| # | Shot · ID | Setup | Clause | Reads as · use | Limits |
+|---|---|---|---|---|---|
+| 5 | **Overhead fisheye** · `SH-OVFISH` | height overhead · scale WIDE · 8–10mm fisheye | straight down from the ceiling through a fisheye lens: the whole room bends into a circle around [SUBJECT] | trapped, dizzy, the room closing in · sleepless in bed, panic | signature; face small, never a CU; no product beat; no lip-synced line |
+| 6 | **Profile** · `SH-PROFILE` | side profile | seen exactly side-on, in profile | distance, thinking, two people apart | — |
+| 7 | **Three-quarter** · `SH-34` | side three-quarter | seen from three-quarters, between the front and the side | honest, with them · the everyday coverage | one angle among several (§30I DEFAULT) |
+| 8 | **Rear** · `SH-REAR` | side behind or three-quarter-back | seen from behind [SUBJECT], looking at what they face | following them into it, what's ahead · a doorway, the stairs, the view | no lip-synced line — the mouth is unseen, so a line here is off-screen |
+| 9 | **Over-the-shoulder** · `SH-OTS` | side ots · fg through | over the near shoulder of [OTHER], soft in the near foreground, onto [SUBJECT] | connection or confrontation · a conversation, a hand-over | stays on its side of the action line (§24H) |
+| 10 | **POV** · `SH-POV` | type POV | exactly what [CHARACTER] sees, from their eyes; their own hands enter at the bottom edge | being them · reading the letter, looking down at their feet | camera sways, never travels with a walk (§27G); hands whole or out of frame |
+| 11 | **Prism reflection** · `SH-PRISM` | fg through · a glass prism just in front of the lens | a glass prism held just in front of the lens throws a refracted, rainbow-edged ghost of the scene across one edge of the frame | memory, dream, a mind splitting · a flashback, confusion | signature; the ghost never over a face or the product; locked camera |
+
+**C — Height**
+
+| # | Shot · ID | Setup | Clause | Reads as · use | Limits |
+|---|---|---|---|---|---|
+| 12 | **Eye-level** · `SH-EYE` | height eye | at [SUBJECT]'s eye height, level | neutral, equal | eye-level frontal ≤ a third (§30I DEFAULT) |
+| 13 | **Low-angle** · `SH-LOW` | height low | from below hip height, looking up at [SUBJECT] | strength, resolve · getting up, the first confident step | a face at MEDIUM or wider (§30I part 4) |
+| 14 | **High-angle** · `SH-HIGH` | height high | from above head height, looking down at [SUBJECT] | small, overwhelmed · the problem at its worst | — |
+| 15 | **Dutch angle** · `SH-DUTCH` | any height · camera rolled 10–20° | the camera is rolled about 15 degrees off level, so the horizon and the room tilt across the frame | something is wrong, unease, conflict | ≤ 1 per scene, with a `why`; locked camera only (F2), never a rolling or travelling tilt; never in the After or on a product beat |
+| 16 | **Overhead** · `SH-OVER` | height overhead | directly above, looking straight down | routine, isolation, the hands' task · a table, a bed, a sink | never a face in CU (§30I part 4) |
+| 17 | **Aerial** · `SH-AERIAL` | height overhead or high · scale WIDE | from high in the air above [PLACE], the [HOUSE / STREET / CAR] small below | scale, isolation, a new place · opens a scene or closes the film | signature; no faces, no lip-synced line; slow drift only (F3/F4 without speed), never chasing a subject; the exterior matches the approved location plate (§24H) |
+| 18 | **Ground-level** · `SH-GROUND` | height ground | the lens a few centimetres off the floor, looking along it | feet, steps, the body's weight | a walk toward it is feet only, three or four steps (§27G) |
+| 19 | **Worm's-eye view** · `SH-WORM` | height ground · looking straight up | the lens on the ground pointing up, [SUBJECT] towering above against the [CEILING / SKY] | awe, menace, a child's view, overpowered | signature; FULL or WIDE on a person, never a face CU; still subject — nobody steps over the lens |
+| 20 | **Inside a hole** · `SH-HOLE` | height ground or low · fg through | from inside [a hole / a well / a box / a drum], looking up and out: the dark round rim frames [SUBJECT] above | trapped, discovered, being looked down on | signature; the rim dark and soft; the subject at MEDIUM or wider |
+| 21 | **Hoop-level** · `SH-HOOP` | the lens level with a raised target | the lens level with [THE HOOP / THE TOP SHELF / THE TARGET], the target in the near foreground as [ACTION] arrives at it | the goal, the reach · the ball arriving, the hand reaching the top shelf | signature; the reach or arrival is the one action (§27G) |
+
+**D — Lens**
+
+| # | Shot · ID | Setup | Clause | Reads as · use | Limits |
+|---|---|---|---|---|---|
+| 22 | **Wide-angle close-up** · `SH-WACU` | scale CU or ECU · 14–18mm very close | a very wide lens close to [OBJECT / HANDS / FEET]: it looms large in front, the room stretching deep behind | energy, closeness, comic weight | signature; **never on a face or the product** (§30I part 4, §27D, §9D) |
+| 23 | **Fisheye** · `SH-FISH` | scale WIDE or FULL · 8–15mm fisheye | through a fisheye lens: straight lines bow outward around [SUBJECT] at the centre | chaos, intoxication, a party, being watched | signature; faces only near the centre, small; no product beat |
+| 24 | **Fisheye close-up** · `SH-FISHCU` | scale CU or ECU · fisheye very close | a fisheye lens right up to [OBJECT], bulging toward the lens, the room curving away behind | the object as a threat or obsession · a ringing phone, a bottle | signature; **never on a face or the product** |
+| 25 | **High-angle close-up** · `SH-HICU` | height high · scale CU · 50–85mm | a close-up from slightly above, [SUBJECT]'s face tilted up toward the lens | vulnerable, pleading, small | normal lens only |
+| 26 | **Low-angle close-up** · `SH-LOCU` | height low · scale CU · 50–85mm | a close-up from slightly below, the lens at chin height | decision, resolve | only slightly low (§30I part 4) — never up the nostrils |
+
+**E — Light, focus and optics**
+
+| # | Shot · ID | Setup | Clause | Reads as · use | Limits |
+|---|---|---|---|---|---|
+| 27 | **Selfie** · `SH-SELFIE` | height eye or slightly high · side front · the camera where the phone is | [CHARACTER] holds a phone at arm's length and films themselves; the frame is the phone's view, the arm leading out of the frame edge | confession, a video diary, talking to their own audience | signature; arm's length, never closer (the wide-lens-on-face rule); shot on the film package — no phone UI unless the script asks (§27F) |
+| 28 | **Silhouette** · `SH-SIL` | light key_side back | [SUBJECT] stands against the bright [WINDOW / DOOR / SKY], a black shape with no face detail, exposed for the brightness behind | loss, anonymity, a threshold, the end of a day | the shot is the backlight's `why` (§30K); no lip-synced line; never the product on a product beat |
+| 29 | **Foreground occlusion** · `SH-OCCL` | fg through | a [DOORFRAME / SHELF / PLANT] near the lens blocks a third of the frame, dark and soft | watched, spied on, private | never covers the face or the product on its beat |
+| 30 | **Foreground focus** · `SH-FGFOC` | fg through · focus plane foreground | [OBJECT] near the lens is sharp; [CHARACTER] behind it is soft | the object is the story · the letter, the pills, the phone buzzing | on a product beat the product is the sharp object; a change to `SH-BGFOC` is one §30J pull, on its cue |
+| 31 | **Background focus** · `SH-BGFOC` | fg through · focus plane eyes / hands / background | [OBJECT] near the lens is soft; [CHARACTER] behind it is sharp | the person is the story; the object waits | never with the product soft on a product beat |
+| 32 | **Lens flare** · `SH-FLARE` | a named light source at the frame edge | the [LOW SUN / LAMP] at the edge of the frame flares across the lens in soft streaks and ghosts | hope, warmth, dawn, memory | the source is in the light plan, where the plan puts it (§30K); streaks only on an anamorphic package (§24G); never across a face or the product |
+| 33 | **Magnifying glass** · `SH-MAGNIFY` | fg through · a magnifier held in frame | seen through a magnifying glass held in frame: inside its circle [DETAIL] is enlarged, the rest stays normal size | inspection, a clue, the small print | the glass held still by a steadied hand; locked camera; never over the product's wordmark |
+| 34 | **Inside-the-fridge** · `SH-INSIDE` | fg through · the camera inside an object | from inside the [FRIDGE / OVEN / CUPBOARD / WASHING MACHINE / CAR BOOT], shelves and items in the near foreground, as the door opens onto [CHARACTER] lit by its interior light | the everyday ritual, a late-night moment, a secret · hunger, looking for something | signature; the door opening is the one action; the character at MEDIUM; the interior light is a named practical in the light plan (§30K) |
+
+**The library's rules — checked by instrument (`angles.py` SHOT):**
+
+1. **Every film row names its shot** from this library and a `why`; the setup fields agree with it.
+2. **Signature shots** — `SH-OVFISH`, `SH-PRISM`, `SH-DUTCH`, `SH-AERIAL`, `SH-WORM`, `SH-HOLE`, `SH-HOOP`, `SH-WACU`, `SH-FISH`, `SH-FISHCU`, `SH-SELFIE`, `SH-FLARE`, `SH-MAGNIFY`, `SH-INSIDE` — are the ones that draw attention to the camera. **At most one per scene, never two in a row, never more than one in five shots across the film.** Pick one where the scene's emotion asks for it (§24K part 2), never for variety alone.
+3. **Range inside a scene:** a scene of five or more shots uses at least three different library shots (on top of §30I's WINDOW).
+4. **Faces:** `SH-WACU` and `SH-FISHCU` never on a face. **Lines:** `SH-REAR`, `SH-SIL`, `SH-AERIAL` and `SH-OVFISH` never carry a lip-synced line.
+5. **Product beats:** the product reads undistorted and whole, so a product beat never uses `SH-OVFISH`, `SH-FISH`, `SH-FISHCU`, `SH-WACU`, `SH-PRISM`, `SH-DUTCH`, `SH-AERIAL`, `SH-SIL` or `SH-MAGNIFY`.
+6. **Locked camera:** `SH-DUTCH`, `SH-PRISM`, `SH-MAGNIFY` and `SH-MACRO` never take a travelling rig (F1, F4, F5).
+7. **The inspo wins** (§42 Part 3A): a shot the reference edit uses is logged as an `EG` device and may be used more often than rule 2 allows, up to the reference's own count.
+
 ### Checks
 
-**The contact sheet (§24H) adds three items:** the camera plan matches the emotion map shot by shot · the tightest scale falls on the turn · every shot has a cut cue. **§22W Q4 (Automatic)** and the user's check on the board (Manual) judge a film clip on the same motion faults as any other clip: warping during movement, the product changing shape, feet and hands melting on a walk.
+**The contact sheet (§24H) adds four items:** the camera plan matches the emotion map shot by shot · the tightest scale falls on the turn · every shot has a cut cue · every frame came back as its named library shot (part 7) — a frame that drifted to a plain eye-level medium is a REGENERATE (§22V Q5; Manual: the user's check). **§22W Q4 (Automatic)** and the user's check on the board (Manual) judge a film clip on the same motion faults as any other clip: warping during movement, the product changing shape, feet and hands melting on a walk.
 
-**NORMATIVE — `RIG-F1`–`RIG-F5` (amended 2026-09-27), `MULTI-FILM` (amended), `BUSINESS-LINE` — see Appendix A.**
+**NORMATIVE — `RIG-F1`–`RIG-F5` (amended 2026-09-27), `MULTI-FILM` (amended), `BUSINESS-LINE`, `SHOT-LINE` (new 2026-09-28) — see Appendix A.**
 
 ---
 
@@ -5543,7 +5638,7 @@ Talking heads (seed-locked, §30), POV (R5) and fixed-mount (§22E) rows are ski
 | **Through a foreground** | watched, trapped, private | seen through a doorway, past a banister, a moment someone else notices |
 | **Reflection** | facing yourself | the mirror moment, the realisation |
 
-The inspo's own angles win (§42 Part 3A): its distribution of heights and sides is logged in `EDIT-[BUILD]` as an `EG` device, and the build copies its range. Absent a measurement, this table is the default. The **Film Look Sheet field 7** (§24G) and the **camera plan** (§24K) name which angles the film uses by act — e.g. high and profile in the Problem, low and three-quarter in the After.
+**Modes 4 and 5 also name the shot** from the 34-shot film library (§24K part 7) — wide to inside-the-fridge — and `SHOT-LINE` asks for it. The inspo's own angles win (§42 Part 3A): its distribution of heights and sides is logged in `EDIT-[BUILD]` as an `EG` device, and the build copies its range. Absent a measurement, this table is the default. The **Film Look Sheet field 7** (§24G) and the **camera plan** (§24K) name which angles the film uses by act — e.g. high and profile in the Problem, low and three-quarter in the After.
 
 ### 4. Limits that keep angles safe
 
@@ -5552,11 +5647,11 @@ The inspo's own angles win (§42 Part 3A): its distribution of heights and sides
 - **Product:** the product reads correctly from the chosen angle (§9D). An angle that hides the product on a product beat, or shows a side the Product Sheet has no reference for, is not used.
 - **Mode 1 — somebody's phone (§30B alibi, §22A):** every angle must be one a person holding or propping a phone could take: ground = propped on a step or the floor, low = held at the hip or on a low shelf, high = held above the head or from a stair above, overhead = held over the table or bed, through = past a doorframe, reflection = a mirror. No crane, no drone, no impossible position.
 - **Modes 4 and 5:** the camera stays on its side of the action line (§24H); the angle changes inside that side. Each new angle in a scene is a new position, so it is a valid image-list row (§24H, no duplicates), built against the master.
-- **Dutch tilt** only when the inspo uses it (§42 Part 3A).
+- **Dutch tilt:** Modes 1–3 only when the inspo uses it (§42 Part 3A). Modes 4–5 may use it as `SH-DUTCH` from the §24K part 7 library — with a `why`, at most once per scene, on a locked camera (amended 2026-09-28).
 
 ### 5. In the prompt and the checks
 
-`ANGLE-LINE` follows the opening camera string on every B-roll and film T2I (after `CAM-FILM` / `CAM-ANIM` in Modes 4 and 5; after the capture opener in Mode 1). The clip inherits the angle from its start frame. **§22V Q5 (Automatic)** and the user's check (Manual) read the angle against the row: a frame that came back at eye level when the row says high is a REGENERATE, because the model drifts back to its default.
+`ANGLE-LINE` follows the opening camera string on every B-roll and film T2I (after `CAM-FILM` / `CAM-ANIM` and `SHOT-LINE` in Modes 4 and 5; after the capture opener in Mode 1). The clip inherits the angle from its start frame. **§22V Q5 (Automatic)** and the user's check (Manual) read the angle against the row: a frame that came back at eye level when the row says high is a REGENERATE, because the model drifts back to its default.
 
 **NORMATIVE — `ANGLE-LINE` — see Appendix A.**
 
@@ -5629,6 +5724,9 @@ Location Profiles write the key as *camera-left*. That is only true for one came
 | **Sun path** | Which windows take direct sun at which time of day — from the property's orientation (§30G field 4) |
 | **Key by time** | The key source and its quality for each time of day the build uses there |
 | **Fill and bounce** | What fills the shadow side (a pale wall, a floor, a second window) |
+| **Colour temperature** *(2026-09-28)* | Each source's Kelvin, by time: window daylight 5600K (overcast 6500K, open shade 7000K+, low sun 3500–4300K), tungsten lamp 2700–3200K, warm LED 3000K, cool LED or fluorescent 4000–5000K (fluorescent with a green tint), a TV or phone screen 6500K+ blue. **The key's Kelvin is the scene's white balance**: the camera is balanced for it, so the key renders neutral and every other source renders warmer or cooler than it by the difference |
+
+**White balance is pinned, never left to drift** (2026-09-28). The model otherwise re-decides warmth shot by shot. Each scene's white balance is its key's Kelvin at that time of day; it goes into `COLOUR-KEY` (§30L) and into the row's `light.kelvin` (E4), and it changes only where the light plan's key or time changes — at a scene boundary. Modes 4–5: the film camera is balanced for it. Mode 1: the phone's auto white balance (`CAM-LOCK`) does the same thing; the Kelvin tells the prompt what it balanced for. Modes 2–3: the virtual camera is balanced for it.
 
 **Each shot's key side is derived, never chosen:** from the camera's position in the room (§30I side), the plan gives where the key falls **on screen** — and that is what goes into the prompt (`[SIDE]` in `LIGHT-FILM`, `LIGHT-ANIM` or `LIGHT-SHOT`). A reverse angle legitimately flips the key to the other screen side; the light has not changed, the camera has.
 
@@ -5675,7 +5773,7 @@ A rim light on everyone in a room with no window behind them · skin glowing · 
 
 - **Mode 1–3:** `LIGHT-SHOT` follows `FOCUS-LINE`, filled from the light plan in screen terms; the Location Profile still carries the room's light. **Modes 4–5:** `LIGHT-FILM` / `LIGHT-ANIM` take `[SIDE]` from the plan, and the act's arc fills `[KEY QUALITY]` and `[RATIO]`.
 - `NEG-LIGHT` joins the negatives on every T2I with a location (Mode 1 drops the clauses `NEG-M1` already carries); `NEG-LIGHT-C` on every clip.
-- **`angles.py`** checks the rows: every row has `light`, no flat frontal key on a face, no backlit speaking face in Mode 1, time never going back inside a story day, the act's light state present.
+- **`angles.py`** checks the rows: every row has `light` with its `kelvin` (1800–10000K, one white balance per scene and source), no flat frontal key on a face, no backlit speaking face in Mode 1, time never going back inside a story day, the act's light state present.
 - **`light_check.py scene <frames>`** measures a scene's approved frames in shot order — brightness and warmth against the scene, and the brighter half of each frame to read against the plan (a jump flags a relit shot); **`light_check.py clip <clip>`** flags flicker and drift inside a clip. *(Thresholds unverified — tuned on the first build.)*
 - **§22V Q5** and the user's check read the frame's light against the row and the plan; **§22W Q4** reads the clip for flicker, pumping and light that changes.
 
@@ -5693,7 +5791,7 @@ At step 5 each scene gets a **colour key**, read off its approved master frame (
 
 | Field | Content |
 |---|---|
-| **Light colour** | The key's colour and warmth in plain words (cool grey window daylight, warm tungsten lamp) — from the light plan (§30K) |
+| **Light colour** | The key's colour and warmth in plain words **and its Kelvin** (cool grey window daylight, 6500K; warm tungsten lamp, 3200K) — from the light plan (§30K); the camera is white-balanced for it |
 | **Set colours** | The walls, the floor, the two or three largest objects, by name and colour (sage-green cupboards, pale oak table, white tiles) |
 | **Wardrobe colours** | Each person's outfit colours for the story day (§14A) |
 | **Accent** | The one or two colours the scene is built around, if any (a red mug, the product) |
@@ -5931,8 +6029,8 @@ Flag: retention beats, micro-hooks, CTA positions, supplied-asset cut-ins, permi
 **Colour grade — in the edit only** *(2026-09-27, user: "the color grades should be on the edit section")*. The grade is an edit step, never a prompt: every image and clip is generated with natural, neutral colour — the set, wardrobe and light colours that really exist (`COLOUR-KEY`, §30L) — and the edit grades the whole build at once, so every shot matches by construction. The CapCut block (§18 step 8) carries it, in this order, on the picture-locked cut only:
 
 1. **Match** — each clip matched to its scene's master shot in exposure and white balance, scene by scene; one adjustment per scene applied identically to all its clips, never a shot graded on its own. Then `light_check.py colour` on the scene's matched clips (§30L).
-2. **Grade** — Modes 4 and 5: the one LUT from the Look Sheet (field 5: shadow tint, highlight tint, saturation, contrast curve, how skin is held) across the whole film; the §12A mechanism render takes a matched contrast and black-level pass, never the LUT's colour shift. Mode 1: no creative grade (§12) — the match only.
-3. **Grain** — Mode 4 only: one pass at the Look Sheet's size across the whole film. Never generated, never per clip.
+2. **Grade** — Modes 4 and 5: the one LUT **file**, `LUT-[BUILD].cube`, made from Look Sheet field 5 by `scripts/lut.py make` and passed by `lut.py check` (2026-09-28) — the same file in both run modes, so the grade never depends on rebuilding it by hand. Before it touches the cut, `lut.py preview` puts the scene master ungraded and graded side by side. **Manual:** the file goes to the build's Drive `OUTPUT` folder and the CapCut block says where to import it (Adjust → LUT → import, in CapCut desktop — the team edits on desktop only, user 2026-09-28), applied at 100% to every clip. **Automatic:** `lut.py apply LUT-[BUILD].cube <clip> --mode 4|5` on the matched cut. The §12A mechanism render takes a matched contrast and black-level pass, never the LUT's colour shift. **Modes 1, 2 and 3: no LUT and no creative grade** (§12) — the match only; `lut.py apply` refuses them.
+3. **Grain** — Mode 4 only: one pass at the Look Sheet's size across the whole film (Automatic: `lut.py apply … --grain <1–20>` in the same pass as the LUT; Manual: CapCut's grain effect at the size the CapCut block names). Never generated, never per clip.
 4. **Export** — native 720×1280 for Seedance builds, no upscale (§24G finishing).
 
 `FILM-CAPCUT` and `ANIM-CAPCUT` carry the lines.
@@ -7673,6 +7771,10 @@ no product visible through the fabric, no product outline printing through the g
 
 ## Realistic Film *(§24G–§24H)*
 
+**`SHOT-LINE`** — Modes 4–5, every film T2I, after `CAM-FILM` / `CAM-ANIM` and before `ANGLE-LINE` (§24K part 7). `[SHOT NAME]` and `[CLAUSE]` from the row's `shot`; a two-ID row joins both clauses with "; ". *(126)*
+```
+THE SHOT: [SHOT NAME] — [CLAUSE from the §24K part 7 library]. Framed exactly as this shot, not a plain eye-level medium shot.
+```
 **`ANGLE-LINE`** — every B-roll and film T2I, after the opening camera string (§30I). Filled from the row's `angle`; `[HEIGHT CLAUSE]` is the canonical clause from the §30I table. *(206)*
 ```
 THE CAMERA ANGLE: [HEIGHT CLAUSE from §30I], seen from [SIDE] of [SUBJECT][, looking past FOREGROUND, soft in the near foreground | , seen in REFLECTION]. This exact angle, not a straight-on eye-level view.
@@ -7693,9 +7795,9 @@ no rim light without a source behind the subject, no glowing skin, no halo or bl
 ```
 no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject
 ```
-**`COLOUR-KEY`** — every T2I of a scene, all modes, verbatim and identical across the scene (§30L). Modes 4–5 after `LOOK-[BUILD]`; Modes 1–3 after the Location Profile. **Never paraphrased.** *(283)*
+**`COLOUR-KEY`** — every T2I of a scene, all modes, verbatim and identical across the scene (§30L). Modes 4–5 after `LOOK-[BUILD]`; Modes 1–3 after the Location Profile. **Never paraphrased.** `[KELVIN]` is the scene's white balance from the light plan (§30K, amended 2026-09-28). *(335)*
 ```
-THE COLOURS OF THIS SCENE, exactly as in the attached master frame: the light is [LIGHT COLOUR]; [SET COLOURS]; [WHO] wears [WARDROBE COLOURS]; [ACCENT]. Colours are [SATURATION AND CONTRAST IN CAMERA], natural and ungraded. No colour in this shot differs from the rest of the scene.
+THE COLOURS OF THIS SCENE, exactly as in the attached master frame: the light is [LIGHT COLOUR], [KELVIN]K, and the camera is white-balanced for it; [SET COLOURS]; [WHO] wears [WARDROBE COLOURS]; [ACCENT]. Colours are [SATURATION AND CONTRAST IN CAMERA], natural and ungraded. No colour in this shot differs from the rest of the scene.
 ```
 **`MUSIC-CUE`** — one per scene, Modes 4–5 (§24M): the scene's cue as sections, compiled by `music.py plan` into an ElevenLabs composition plan. Describes the sound only. *(282)*
 ```
@@ -7881,6 +7983,10 @@ Standing Mode 5 lines (the grade lives here, never in a prompt, §40): match eac
 **`NEG-M1`** — Mode 1 standard. *(618)*
 ```
 no AI face, no plastic skin, no waxy skin, no over-smoothed skin, no perfect symmetrical face, no uncanny eyes, no fake teeth, no warped mouth, no robotic lip sync, no extra fingers, no fused fingers, no melted hands, no deformed limbs, no warped background, no CGI look, no fake commercial gloss, no over-saturated colors, no cartoon look, no unrealistic lighting, no floating camera, no stiff body language, no film grain, no vignette, no darkened frame edges, no darkened corners, no spotlight pool on the subject, no light falling off to black at the frame edge, no moody dark grade, no crushed blacks at the edges
+```
+**`NEG-PHONE`** — every Mode 1 T2I, after `NEG-M1` (§22A phone settings, 2026-09-28). Selfie framings drop `no ultra-wide lens stretch` only where `CAM-FRONT` names its own wide angle. *(197)*
+```
+no portrait mode blur, no fake background blur, no halo around hair or hands, no cinematic mode focus effect, no ultra-wide lens stretch, no telephoto compression, no flash, no night mode smoothing
 ```
 
 **`NEG-PIX`** — Mode 2. Replaces `NEG-M3`; `NEG-M2` and `NEG-M4` retired. *(675)*
@@ -8442,7 +8548,7 @@ One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t
 
 **Film fields (2026-09-27, Modes 4 and 5, §24I/§24K).** Film rows also carry: `scene` (`SC-xx`), `camera` as the F-rig with its reason from the camera plan, `playing` (the speaker's transitive verb), `business` (each character's one piece of business and its pace), `cut_cue` (line · look · action · reaction), `spine` (the story-spine beat) and `state` (each character's state-track row for this shot, including VOICE, §24H), and `new` (what the shot's frame adds over the master and earlier frames — position, scale or state — or `reuse <frame>`). A film row missing any of them is not written to a prompt.
 
-**`angle` (2026-09-27, §30I).** Every B-roll and film row carries `angle` — `height` (ground · low · eye · high · overhead), `side` (front · three-quarter · profile · three-quarter-back · behind · ots) and `fg` (clean · through · reflection) — with `why` (what the angle says) and, on a payoff that repeats an earlier angle, `mirror_of`. **`light` (§30K)** — `source` (from the light plan), `key_side` on screen (L · R · back · front), `time`, `arc` (the act's light state) and `why` on a backlit or 90° side key. **`focus` (§30J)** — `plane` (eyes · hands · product · foreground · background · deep), `dof` (deep · medium · shallow), `rack` (`{from, to, cue, kind: pull | tap}` or null) and `moving_subject`. `angles.py` reads these fields.
+**`angle` (2026-09-27, §30I).** Every B-roll and film row carries `angle` — `height` (ground · low · eye · high · overhead), `side` (front · three-quarter · profile · three-quarter-back · behind · ots) and `fg` (clean · through · reflection) — with `why` (what the angle says) and, on a payoff that repeats an earlier angle, `mirror_of`. **`light` (§30K)** — `source` (from the light plan), `key_side` on screen (L · R · back · front), `time`, `arc` (the act's light state), `kelvin` (the key's colour temperature — the scene's white balance, 2026-09-28) and `why` on a backlit or 90° side key. **`focus` (§30J)** — `plane` (eyes · hands · product · foreground · background · deep), `dof` (deep · medium · shallow), `rack` (`{from, to, cue, kind: pull | tap}` or null) and `moving_subject`. **`shot` (2026-09-28, §24K part 7)** — Modes 4–5: one library ID (`SH-WIDE` … `SH-INSIDE`) or a list of two; its setup agrees with `height`, `side`, `scale` and `fg`; `speaking: true` on a row that carries a lip-synced line. `angles.py` reads these fields.
 
 **`key` (amended 2026-09-26, user).** Every B-roll row names its `key`: the word in its phrase that the picture shows (the noun or action on screen, never a filler like "and" or "when"). §30H cuts the clip in 3 frames before it. Leave it empty only when the picture is the phrase's first word. In a voice-only build the opening row has no key — its clip covers 0.00s. After generation, a row may add `peak`: the second in the clip where its action peaks, so the in-point lands it on the key word.
 
@@ -8512,7 +8618,7 @@ Superseded B-roll rule, kept for reference: B-roll calls: 5s (the Higgsfield flo
 
 ## E9. Build directory layout
 
-`/build/{product_sheet.md, product_sheet.py, absorption_sheet.md, build_sheet.md, act_map.json, phrase_inventory.json, wardrobe_map.json, location_sheets/, registries/{roster,voice,scene,subject}.json, run_ledger.json, beats/{BEAT-ID}.t2i.txt, beats/{BEAT-ID}.i2v.json, capcut_block.md, visual_ledger.md, intake/loom/{loom.md, loom.json, frames/}}` — one beat, one pair of files, so §34 global corrections, coverage diffs and reissue passes run as scripts over the tree, never as memory. **The repo tree lives at `builds/<BUILD>/` and carries `drive.json`; the delivered copy lives in the task's Drive `OUTPUT` folder (§18B).**
+`/build/{product_sheet.md, product_sheet.py, absorption_sheet.md, build_sheet.md, act_map.json, phrase_inventory.json, wardrobe_map.json, location_sheets/, registries/{roster,voice,scene,subject}.json, run_ledger.json, beats/{BEAT-ID}.t2i.txt, beats/{BEAT-ID}.i2v.json, capcut_block.md, visual_ledger.md, look/{grade.json, LUT-<BUILD>.cube, lut_preview.png}, intake/loom/{loom.md, loom.json, frames/}}` — one beat, one pair of files, so §34 global corrections, coverage diffs and reissue passes run as scripts over the tree, never as memory. **The repo tree lives at `builds/<BUILD>/` and carries `drive.json`; the delivered copy lives in the task's Drive `OUTPUT` folder (§18B).**
 
 ## E10. Doc-lint — standing §34 step at every version cut
 
@@ -8573,12 +8679,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | Date | Correction | Section affected | Status |
 |---|---|---|---|
 
-| 2026-09-28 | **Eleven v4 + Enhance.** Every TTS is `eleven_v4` (10,000 characters per request, measured `GET /v1/models`) and its text goes through ElevenLabs **Enhance** first — the app's published prompt (no API), run by the agent on the verbatim lines, stored as `references/eleven_enhance_prompt.md`. Enhance picks the tags (TAG-PALETTE becomes the fallback) and may add emphasis (CAPITALS, "!", ellipses); the verbatim lock ignores case and edge punctuation but fails a changed word, an added "?", or a banned / non-voice tag. (User: "for the elevenlabs we will use the elevenlabs v4 and use the enhance feature before generating the text to speech""; "no re do just add this for next tasks" — forward only, earlier v3 VOs are not redone.) | §4, §5 (connector table), §22D, §22U (steps 8–9, lock, budget), §24I narration, §44 default 7, E1, E7 | Written in; `tts_budget.py` updated; skills in sync |
-| 2026-09-28 | **Manual voice flow.** After the locations are locked come the maps (act map, wardrobe map), then the voices. In Manual the voice stage runs without a stop: voice source → clone by API → VO → talking heads → trim. The clone and the master listen are no longer human gates; the run continues on the working take and the user checks every render on the board. Talking heads are trimmed at a natural pace — pauses kept after sentences (0.35s), commas (0.2s) and words (≤ 0.08s), `trim.py` defaults. (User: "after the locations are locked next are the maps right then after that its the voices, for vo or talking heads after you create the voice you should automatically clone it and create the vo for it and generate the talking heads and trim it, the trimming should not be too fast. this is for the manual run".) | §1, §18, §18B, §22U (steps 6, 10, 13, new 14), §44 default 83, E0, E7, E11 | Written into the sections; `trim.py` updated |
-| 2026-09-27 | The Generation Board gains a **Final output** tab beside Board, Manual run and Plan: one card per finished hook variant (or the finished film) with player, status, Confirm / Fix and Download; finished videos are Edit-stage cards with `final: true`. (User: "add a final output tab on the board, manual and plans to show the final results".) | §16A (Generation Board) | Written into §16A; template updated and republished |
-| 2026-09-27 | The build's board is shown to the user (Artifact `open`) at run start, resume and every delivery, in **both** run modes — Automatic included. (User: "always show the board panel whether it's automation or manual".) | §16A (Generation Board), E0 | Written into §16A |
-
-*(Emptied at the V7.64.0 cut — every row written in and listed in its changelog.)*
+*(Emptied at the V7.64.4 cut — every row written in and listed in its changelog.)*
 
 ---
 
@@ -8684,31 +8785,39 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
 
----
-
-# CHANGELOG — V7.64.1 → V7.64.2 *(cut authorised)*
-
-| § | Change |
-|---|---|
-| **24M** | Music is composed to the scene: the cue is written as sections on the scene's cut cues and turn, each with an energy; `music.py plan` builds the ElevenLabs composition plan (free — measured), `music.py compose` makes one track, `music.py check` listens by instrument (length, section loudness order, true silence at the turn, dropouts, splices, no vocals, tempo band); two tracks per scene at most. Commercial use confirmed by the user |
-| **E0** | The agent checks the music it composes in both run modes — the one Manual exception, at the user's word; the user still checks it on the board |
-| **5, E7** | Film music routes to the ElevenLabs API (`scripts/music.py`); the connector's `music` node is the fallback |
-| **Appendix A** | `MUSIC-CUE` rewritten as a theme plus sections |
-| Files | New: `scripts/music.py`. Both skills and `CLAUDE.md` |
-
-**Origin:** user — "I confirm that and also you will also be the one listening if you made the right music cause you can create your own music in elevenlabs". **Tested:** the plan endpoint (free, sectioned output), `music.py check` on synthetic tracks (a plan-following track passes; length, silence, dropout, splice, section order and tempo faults are caught). **Unverified:** the compose route and every threshold on real music — Open Decisions.
+**Camera numbers and the LUT — measure on the first film build (2026-09-28).** (a) Same frame, same seed: T2.0 vs T5.6 and 35mm vs 85mm in `CAM-FILM` — does depth or perspective change, or only the scale wording? (b) The shutter wording on Seedance and Kling — any motion-blur difference? (c) `COLOUR-KEY` with and without `[KELVIN]` across a five-shot scene — `light_check.py colour` warmth spread. (d) CapCut desktop vs `lut.py apply` on the same clip with the same `LUT-[BUILD].cube` — identical within ±2 levels?
 
 ---
 
-# CHANGELOG — V7.64.0 → V7.64.1 *(cut authorised)*
+# CHANGELOG — V7.64.3 → V7.64.4 *(cut authorised)*
 
 | § | Change |
 |---|---|
-| **24M** *(new)* | Film Sound: clips carry dialogue only (`NEG-SOUND`, `AUD-FILM` / `AUD-ANIM`), cleaned by the ElevenLabs Voice Isolator; one music theme per film (Look Sheet field 9) varied by the story part; a sound plan per scene — one continuous music cue (`MUSIC-CUE`) that never restarts at a cut, one looping room tone per location (`ROOM-TONE`), a film-wide SFX list with one sound per object (`SFX-LINE`), levels and −14 LUFS; made on the ElevenLabs connector (`eleven_music_v2`, `eleven_text_to_sound_v2`, `audio_isolation`), one generation per call; mixed by `mix_scene.py` |
-| **5, E7** | ElevenLabs routes and call templates for film music, room tone, effects and voice isolation |
-| **24G, 24J, 24H** | Look Sheet field 9 carries the music theme; the Scene Bible gains the sound plan |
-| **Appendix A** | New: `MUSIC-CUE`, `ROOM-TONE`, `SFX-LINE`, `NEG-SOUND`. Amended: `AUD-FILM`, `AUD-ANIM`, `FILM-CAPCUT`, `ANIM-CAPCUT` |
-| Files | New: `scripts/mix_scene.py`. Amended: `scripts/preflight.py` (`NEG-SOUND` on every film clip), `scripts/fetch_drive.py` (sorts `music/` and `sfx/` audio the user supplies). Both skills and `CLAUDE.md` |
+| **24G** | Look Sheet field 5 (grade) written in words and as numbers (`grade.json`), compiled into the film's one LUT file `LUT-[BUILD].cube` by `lut.py make`, which must pass `lut.py check`; colour science and finishing name the file. The focal, stop and shutter numbers are marked unverified on the generators |
+| **40** | Step 2 grades with the LUT file: `lut.py preview` on each scene master; Manual imports it in CapCut desktop (the team edits on desktop only), Automatic runs `lut.py apply --mode 4|5`; Modes 1–3 match only. Step 3 grain: `lut.py apply --grain` (Automatic) or CapCut's grain (Manual), Mode 4 only |
+| **12** | New: Modes 2 and 3 — matched, never graded (no LUT, no grain, no creative grade) |
+| **22A** | New: phone settings — 1x main lens or the front camera for selfies; never 0.5x ultra-wide or telephoto; Portrait and Cinematic mode off; night mode only in a genuinely dark room; flash off; white balance automatic, with the light's Kelvin written in the light plan |
+| **30K, 30L** | The light plan records every source's colour temperature in Kelvin; the key's Kelvin is the scene's white balance, pinned per scene, in `COLOUR-KEY` and the row's `light.kelvin`, changing only at a scene boundary |
+| **E4, E9** | `light.kelvin` on every row; `look/{grade.json, LUT-<BUILD>.cube, lut_preview.png}` in the build tree |
+| **Appendix A** | New: `NEG-PHONE`. Amended: `COLOUR-KEY` (`[KELVIN]K, and the camera is white-balanced for it`) |
+| **Open Decisions** | New: camera numbers and the LUT — measure on the first film build |
+| **4, 5, 22D, 22U, 24I, 44, E1, E7** | Eleven v4 + Enhance (merged from the base branch, Pending Amendment 2026-09-28): every TTS is `eleven_v4` (10,000 characters per request) and its text goes through the ElevenLabs Enhance prompt first (`references/eleven_enhance_prompt.md`), which picks the tags (`TAG-PALETTE` becomes the fallback); the verbatim lock ignores case and edge punctuation but fails a changed word, an added "?" or a banned tag. Forward only — earlier v3 VOs are not redone |
+| **1, 18, 18B, 22U, 44, E0, E7, E11** | Manual voice flow (merged from the base branch, Pending Amendment 2026-09-28): after the locations are locked come the maps, then the voices; in Manual the voice stage runs without a stop — voice source → clone by API → VO → talking heads → trim; the clone and the master listen are no longer human gates; talking heads trimmed at a natural pace (0.35s after sentences, 0.2s after commas, ≤ 0.08s between words, `trim.py` defaults) |
+| Files | New: `scripts/lut.py` (make, check, preview, apply). Amended: `scripts/angles.py` (Kelvin required, one white balance per source per scene), `scripts/trim.py` and `scripts/voice_source.py` (Manual voice flow), `scripts/tts_budget.py` (Eleven v4 + Enhance). New: `references/eleven_enhance_prompt.md`. Both skills and `CLAUDE.md` |
 
-**Origin:** user — "the background music how can we make them consistent all through out the scene… a bgm should depend on the mood/emotion of the story and sound effects too", then "lets use elevenlabs music and sound effects". Voice masters confirmed unchanged: generated first, neutral, one per speaking character (§24I part 7). **Unverified until the first film build:** the Voice Isolator on Seedance audio, Music vs Video-to-Music, the ducking by ear, and the account's commercial-use terms — Open Decisions.
+**Origin:** user — "about camera settings and color grading we need to discuss that", "go ahead with 1–5", "we uses desktop only", "cut the version". **Tested:** `lut.py` on synthetic frames and a 720×1280 clip — an identity LUT reproduces the input (max difference 1 level), a moderate drama grade passes the skin check, an extreme grade fails it, Modes 1–3 and non-Mode-4 grain are refused, output stays 720×1280 at 24 fps; `angles.py` catches a missing or changed white balance. **Unverified:** CapCut desktop vs `lut.py apply` on the same clip, and whether the generators honour the focal, stop, shutter and Kelvin wording — Open Decisions.
 
+---
+
+# CHANGELOG — V7.64.2 → V7.64.3 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **24K** | New part 7 — the film shot library, Modes 4–5: 34 shot types (wide, medium, close-up, macro, overhead fisheye, profile, three-quarter, rear, over-the-shoulder, POV, prism reflection, eye-level, low-angle, high-angle, Dutch, overhead, aerial, ground-level, worm's-eye, inside a hole, hoop-level, wide-angle close-up, fisheye, fisheye close-up, high-angle close-up, low-angle close-up, selfie, silhouette, foreground occlusion, foreground focus, background focus, lens flare, magnifying glass, inside-the-fridge), each with an ID (`SH-*`), setup, prompt clause, meaning and limits. Every film row names its `shot` and `why`; signature shots at most one per scene, never two in a row, at most one in five across the film; wide-angle and fisheye close-ups never on a face; no distorting shot on a product beat; locked-camera shots never travel; the inspo's own count wins. Camera plan names the shot per shot; contact sheet checks each frame came back as its shot |
+| **30I** | Modes 4–5 name the shot from the library; Dutch tilt allowed in the film modes as `SH-DUTCH` (with a reason, once per scene, locked camera) — Modes 1–3 unchanged; `ANGLE-LINE` follows `SHOT-LINE` in the film modes |
+| **18 step 5, E4** | Film rows carry `shot` (one or two library IDs) and `speaking` |
+| **Appendix A** | New: `SHOT-LINE` |
+| **16A** | The Generation Board's **Final output** tab (one card per finished hook variant or the film, `final: true`) and the board shown to the user at run start, resume and every delivery in both run modes (Pending Amendments 2026-09-27, written in) |
+| Files | `scripts/angles.py` — SHOT check. Both skills and `CLAUDE.md` |
+
+**Origin:** user — the list "34 shot types every AI filmmaker should know", "Add this for the camera angles specially in film style"; #27 "Selile" confirmed as selfie; "cut the version". **Tested:** `angles.py` SHOT on a passing and a failing shot list (every fault caught). **Unverified:** how reliably the image models return each shot from `SHOT-LINE` — first film build.
