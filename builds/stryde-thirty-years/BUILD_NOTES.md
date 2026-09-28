@@ -200,7 +200,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 
 ## Where it stands (2026-09-28 19:15)
 - Hooks done. VO master T2. TH-HK1/2/3-BODY v3 still To check.
-- B-roll videos To check: BR-05a v3, BR-05b v3, BR-13 v2, BR-14b v2, BR-18a v2, BR-12 v3 (rendering), plus others not yet confirmed.
+- B-roll videos To check: BR-05a v3, BR-05b v3, BR-13 v2, BR-14b v2, BR-18a v2, BR-12 v3, plus others not yet confirmed.
 - BR-02: Fix "he is pointing the patellar tendon 3x" would be its third generation — waits for the user's go.
 - BR-11-END v3 To check; BR-11's video (first-and-last frame) follows its Confirm.
 - Any further Fix on BR-05a, BR-05b or BR-12 is a fourth generation — ask first.
