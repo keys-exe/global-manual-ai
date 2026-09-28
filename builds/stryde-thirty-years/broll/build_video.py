@@ -335,6 +335,26 @@ V["BR-12"] = ("KNEE HEIGHT from the front as in the start frame, her legs from w
    [("she walks (the v1/v2 fault)", "boots planted the whole clip + no step, no walking"), ("strap slides", "product lock + HOLD_PC"),
     ("legs warp", "HOLD-C")])
 
+# ── Further tries approved by the user ("Both", 2026-09-28 ~19:25) ──────────────────────────────────────────────────────
+VFIX3["BR-02"] = ("he is pointing the patellar tendon 3x → MOTION: v2 pressed once and held; now his fingertip taps the tendon just "
+                  "under her kneecap three times, one tap a second")
+VFIX3["BR-12"] = ("slowly zoom in → CAMERA: v3's propped camera held still; now one slow steady push-in towards her strapped right "
+                  "knee across the whole clip, her feet still planted (generation 4, user go 'Both')")
+V["BR-02"] = ("CLOSE as in the start frame, his fingertip at the front of her right knee.", HANDHELD,
+   "His extended index fingertip taps the patellar tendon in the soft hollow in the centre just under her kneecap three times, one "
+   "light tap a second, lifting a few millimetres off the skin between taps and landing on the same spot each time. His other fingers "
+   "stay curled.", False,
+   "no finger on the side of the knee, no finger on the kneecap, no pressing and holding, no fourth tap, no hand gripping the knee, "
+   "no second finger touching her, no face", "in_place",
+   [("finger drifts off the tendon", "same spot each tap + negatives"), ("tap count wrong", "three taps, one a second, 4s clip + no fourth tap"),
+    ("fingers fuse with the skin", "HOLD-HC")])
+V["BR-12"] = ("KNEE HEIGHT from the front as in the start frame, ending closer on her strapped right knee.",
+   "Propped, not held. One slow, steady push-in towards her strapped right knee across the whole clip; no other camera move.",
+   "She stands still facing the camera, both boots planted flat on the carpet the whole clip; her weight settles a little onto her "
+   "right leg. The strap stays exactly where it is, just below the kneecap.", True,
+   "no step, no walking, no foot lifting, no fast zoom, no turning away, no hands on the knee, no face", "in_place",
+   [("she walks", "boots planted + no step"), ("zoom too fast", "slow, steady, whole clip + no fast zoom"), ("strap slides", "product lock")])
+
 
 def build(beat):
     framing, rig, motion, prod, extra, sm, risks = V[beat]
@@ -366,7 +386,9 @@ if __name__ == "__main__":
         if beat in VFIX:
             call["fix_note"] = VFIX[beat]
         if beat in VFIX3:
-            call.update(generation=3, fix_note=VFIX3[beat], user_go="2026-09-28: third generation approved by the user ('All three')")
+            gen = {"BR-12": 4}.get(beat, 3)
+            go = "'Both'" if beat in ("BR-02", "BR-12") else "'All three'"
+            call.update(generation=gen, fix_note=VFIX3[beat], user_go=f"2026-09-28: generation {gen} approved by the user ({go})")
         (HERE / f"video/{beat}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
         (HERE / f"video/{beat}.prompt.txt").write_text(prompt)
         print(beat.ljust(8), str(call["duration"]).rjust(2), "s", str(len(prompt)).rjust(5), "chars", img)

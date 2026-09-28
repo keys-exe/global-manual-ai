@@ -202,11 +202,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   product photo's composition (shell upright, peaks up, band loop in front with the keepers to the lens); FIX9 in `build_broll.py`;
   v3's file removed for room. BR-02's third try still waits for the user's go.
 
-## Where it stands (2026-09-28 19:15)
+  ~19:25: user "Both" → BR-02 v3 (generation 3: three light taps on the tendon under the kneecap, one a second) and BR-12 v4
+  (generation 4: same front shot, slow steady push-in on the strapped knee, feet planted); `user_go` on each call, preflight's only
+  FAIL the generation gate. Superseded BR-02 v2 and BR-12 v2/v3 files removed for room.
+
+## Where it stands (2026-09-28 19:30)
 - Hooks done. VO master T2. TH-HK1/2/3-BODY v3 still To check.
-- B-roll videos To check: BR-05a v3, BR-05b v3, BR-13 v2, BR-14b v2, BR-18a v2, BR-12 v3, plus others not yet confirmed.
-- BR-02: Fix "he is pointing the patellar tendon 3x" would be its third generation — waits for the user's go.
+- B-roll videos To check: BR-02 v3, BR-12 v4. All other B-roll videos are "use" except BR-11 (not made yet).
 - BR-11-END v4 To check; BR-11's video (first-and-last frame) follows its Confirm.
-- Any further Fix on BR-05a, BR-05b or BR-12 is a fourth generation — ask first.
+- Any further Fix on BR-02, BR-05a, BR-05b, BR-12 is past the §22X limit — ask first.
 - Board storage stays at the cap; each new render goes up after its superseded file is removed.
-- Next: Fix/confirm the videos → rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.
+- Next: once BR-11 is in, rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.
