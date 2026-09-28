@@ -52,7 +52,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **HK1 images confirmed (user); HK1 clips generated:** Kling `kling-video-v3_0_omni`, 9:16 1080p, multi-shot off, audio on,
   generation 1, `preflight.py` PASS (`hooks/HK1/*.call.json`, 2,372–2,490 chars after the §37 negatives trim). HK1-01 3.04s
   (36 cr) · HK1-02 4.04s (48 cr) · HK1-03 3.04s (36 cr). On the board, To check. **Kling balance ~367 after** — the rest of
-  the build needs ~2,900 at 12 cr/s (239s of B-roll): top-up needed before Act 1.
+  the build needs ~2,900 at 12 cr/s (239s of B-roll). **User 2026-09-28: when Kling is short, use Kie AI** — same
+  Kling 3.0 Omni via `kie.py kling` (Kie balance 239,832.8); standards §5/§44/E7 updated.
 - **Next:** the user's HK1 gate (Confirm/Fix the three clips) → HK2 (images first).
 
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
