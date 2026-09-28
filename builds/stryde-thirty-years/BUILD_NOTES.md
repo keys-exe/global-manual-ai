@@ -41,6 +41,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   prompt only with a digital twin in the group; the account has none and a generated character can't have one).
   Avatar IV renders kept as version 1 on each card. IDs in `vo/th/heygen.json` (`avatar_v_renders`).
 
+  ~11:30: user "REDO THE TALKING HEADS … ONE GO … JUST TRIM THEM" → one Avatar V render of the whole T2 house-cut
+  master (HK1 + body, 137.23s, HeyGen `cf21685a105b9d103e35639a1cac8c49`); TH-01..07 trimmed out of it at the same
+  word timestamps (`vo/th/TH-0n.v2.mp4`, x264 CRF 16) → v2 on each card; TH-FULL card holds the whole render.
+  The seven per-segment Avatar V renders sent earlier are superseded (not used). Standards updated the same day:
+  Avatar V only + one go (§22U), Kling out of credits → Kie `kling-3.0/video` (§5, `kie.py kling`).
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.

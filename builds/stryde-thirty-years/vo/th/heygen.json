@@ -92,5 +92,42 @@
   "TH-06": "290d4d853ff8f271fb7b13b1d4fbe801",
   "TH-07": "c185ad300421f3d651d28f34e28c073f"
  },
- "note_v2": "2026-09-28 user: 'IT SHOULD BE V' -> re-rendered on avatar_v without motionPrompt (no digital twin on the account; \u00a722U says motion prompt never dropped \u2014 user's call, logged)"
+ "note_v2": "2026-09-28 user: 'IT SHOULD BE V' -> re-rendered on avatar_v without motionPrompt (no digital twin on the account; \u00a722U says motion prompt never dropped \u2014 user's call, logged)",
+ "one_go": {
+  "video_id": "cf21685a105b9d103e35639a1cac8c49",
+  "audio_asset": "77bc97c8d35e411686e0b47c13cbf71d",
+  "engine": "avatar_v",
+  "duration": 137.231,
+  "trims": {
+   "TH-01": [
+    30.86,
+    35.37
+   ],
+   "TH-02": [
+    35.37,
+    38.84
+   ],
+   "TH-03": [
+    62.06,
+    66.45
+   ],
+   "TH-04": [
+    66.45,
+    71.63
+   ],
+   "TH-05": [
+    114.56,
+    119.12
+   ],
+   "TH-06": [
+    122.18,
+    127.91
+   ],
+   "TH-07": [
+    135.69,
+    137.256
+   ]
+  }
+ },
+ "avatar_v_segment_renders_superseded": true
 }
