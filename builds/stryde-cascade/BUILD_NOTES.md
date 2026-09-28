@@ -88,3 +88,4 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
 - A4-B1 — "instead of stairs it should be other activities": new frame (`work/fix6.py`, job `work/fix6_jobs.json`) — crouched in the hall lacing his walking boots, strap on the loaded right knee; clip call `calls/A4-B1.fix6.json` (`work/fix6_motion.py`) waits for the Confirm. The fix-5 frame moved to Old.
 - Kie spend this round: 180 credits (2 clips).
 - 2026-09-28 (round 7): A4-B1 clip v5 from the confirmed fix-6 frame (lacing boots), Kie 72 credits — `review`. No other Fix notes open; every other B-roll card is confirmed.
+- 2026-09-28 (round 8): A4-B1 video Fix "he should just be getting up, not tying" → clip v6 on the confirmed boot frame: he rises from the crouch on the strapped knee (`work/fix7_motion.py`, `calls/A4-B1.fix7.json`), Kie 72 credits — `review`; v5 moved to Old.
