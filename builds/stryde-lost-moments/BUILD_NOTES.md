@@ -51,6 +51,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Lessons for every hook: show the struggle; product framed like the user's placement photo, notch against the kneecap, no hands over it.
 
 ## Where it stands
-- Hook 1 confirmed. Hook 2: B-HKa, B-HKb images To check → their clips (5s, Kie kling-3.0 while Kling is short) after the Confirm.
+- Hooks 1–3 confirmed (C-HKb: frame v4 coffee mug + clip v4, 4th generation on the user's go). Hook 4: D-HKa, D-HKb frames v1 To check → their clips (5s, Kie kling-3.0 while Kling is short) after the Confirm. Then Hook 5 (E, Clifton).
+- Lessons: GPT Image 2.5 edits need `resolution: 2k` and "same crop, do not zoom out" (1k default zoomed out and moved the strap). `kie.py kling --out` is the MP4 path, not a task file — log the full output to keep the task id.
 - Put the V7.65.0 VO re-cuts (vo/trim) on the board as new versions; then `assemble.py --lengths` per variant on the chosen cut.
 - Open flags: F1, F3, F4 (claims), F11 (`package_closed.jpg`); VO V5 last word clipped on T1.
