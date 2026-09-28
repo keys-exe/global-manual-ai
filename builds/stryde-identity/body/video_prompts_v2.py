@@ -301,6 +301,32 @@ P["BR-17"] = photo("easy_box_lift",
     "no struggling, no strain, no grimace, no wincing, no shaking arms, no groaning face, no box floating, no box "
     "changing size, no rounded back")
 
+# ── fix round 7 (user video Fix notes, 2026-09-28) ─────────────────────────────
+ONE_TAKE = ("One single continuous take from the first frame to the last: no cut, no jump, no skipped moment, no change "
+            "of angle, nothing appearing or disappearing.")
+ONE_TAKE_NEG = "no cut, no jump cut, no teleporting, no skipped frames, no scene change, no second shot"
+P["BR-13"] = photo("one_step_up",
+    "Maureen on the carpeted stairs, burgundy tunic, the strap on her right knee, folded towels in both arms.",
+    "Wide from the foot of the stairs looking up, as in the start frame.",
+    "ONE step only, slowly: her lifting right foot comes down flat on the next step up and her weight moves onto it, "
+    "then her left foot starts to lift towards the step above. One foot per step: her two feet are never on the same "
+    "step. Both arms stay round the towels; she never touches the rail. " + ONE_TAKE,
+    "no two feet on one step, no hand on the rail, no steps changing shape, " + ONE_TAKE_NEG)
+P["BR-25"] = photo("one_step_down",
+    "Maureen halfway down the carpeted stairs, blue dress, the strap on her right knee, a cardigan in both hands.",
+    "Medium-wide from the foot of the stairs looking up, as in the start frame.",
+    "ONE step down only, slowly: her reaching right foot comes down flat on the next step below and her weight moves "
+    "onto it, then her left foot starts to lift towards the step below that. One foot per step: her two feet are never "
+    "on the same step. Both hands stay on the cardigan; she never touches the rail. " + ONE_TAKE,
+    "no two feet on one step, no hand on the rail, no going up, no steps changing shape, " + ONE_TAKE_NEG)
+P["BR-24"] = photo("washing_line",
+    "Maureen, seventy-four, cornflower-blue dress, navy shoes, the strap on her right knee, pegging a sheet on a washing "
+    "line in a sunny back garden.",
+    "Medium from shoulders to feet, as in the start frame.",
+    "She presses the peg onto the sheet on the line and slowly lowers her arms, one easy move over about two seconds; "
+    "the sheet sways gently. She stays standing in the same spot the whole clip. " + ONE_TAKE,
+    "no walking away, no objects appearing, no sheet flying away, " + ONE_TAKE_NEG)
+
 FIX_NOTE = {  # user's Fix note -> where it was fixed (frame, prompt or motion, §22X)
  "MECH-01": "not the patellar tendon -> frame: front view, glow on the tendon itself",
  "MECH-10": "express the line more -> frame: bare bone on bone with spurs + red glow; motion: grind + flare",

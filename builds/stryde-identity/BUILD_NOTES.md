@@ -182,3 +182,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
     the stairs).
   - All via Kie Kling, job ids in `body/kie_kling_jobs3.txt`, on the board as To check.
   - Every body image is now confirmed.
+- (2026-09-28, 15:15 UTC) **Video fix round 7** (user: "fix those"; this is the user's go for further tries):
+  - BR-13 v4 and BR-25 v3: "one foot per step, never two feet on a step" → each clip is now ONE slow step only.
+  - BR-24 v3: "a clip teleported" → she stays in one spot and does one small action.
+  - All three are told to be one single continuous take with no cut. Via Kie Kling, job ids in
+    `body/kie_kling_jobs4.txt`, on the board as To check.
+  - BR-13's note said "going down", but its image is her climbing, so the clip stays going up (flagged to the user).
