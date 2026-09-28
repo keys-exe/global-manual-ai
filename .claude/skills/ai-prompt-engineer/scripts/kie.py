@@ -10,6 +10,9 @@ Needs KIE_API_KEY in the environment (an environment secret; never pasted in cha
                gpt-image-2-5-sunburst-text-to-image | gpt-image-2-5-sunburst-image-to-image
   kie.py seedance --prompt-file P --ref-image URL ... [--ref-audio URL ...] [--ref-video URL ...]
         [--duration 10] [--no-audio] [--out FILE]
+  kie.py kling  --prompt-file P --first IMAGE [--last IMAGE] [--duration 5] [--mode pro] [--sound] [--out FILE]
+        Kling 3.0 on Kie (model kling-3.0/video) — the Kling fallback, used only when the Kling
+        connector has no credits (correction 2026-09-28). multi_shots is always false (§27G).
   kie.py wait TASK_ID [--out FILE]
 
 Fixed by the standard, never overridden here: aspect 9:16; images 2K; Seedance
@@ -108,6 +111,10 @@ def main():
     s.add_argument("--ref-video", nargs="*", default=[])
     s.add_argument("--duration", type=int, default=5); s.add_argument("--no-audio", action="store_true")
     s.add_argument("--out")
+    k = sub.add_parser("kling"); k.add_argument("--prompt-file", required=True)
+    k.add_argument("--first", required=True); k.add_argument("--last")
+    k.add_argument("--duration", type=int, default=5); k.add_argument("--mode", choices=["std", "pro"], default="pro")
+    k.add_argument("--sound", action="store_true"); k.add_argument("--out")
     w = sub.add_parser("wait"); w.add_argument("task_id"); w.add_argument("--out")
     a = ap.parse_args()
 
@@ -130,6 +137,15 @@ def main():
         if field:
             inp[field] = refs
         task = create(a.model, inp)
+    elif a.cmd == "kling":
+        if not 3 <= a.duration <= 15:
+            sys.exit(json.dumps({"error": "Kling duration must be 3-15s, stated (E6)"}))
+        if len(prompt) > 2500:
+            sys.exit(json.dumps({"error": f"Kling prompt is {len(prompt)} chars; the limit is 2,500 (§37)"}))
+        imgs = [as_url(a.first)] + ([as_url(a.last)] if a.last else [])
+        inp = {"prompt": prompt, "image_urls": imgs, "duration": str(a.duration), "aspect_ratio": "9:16",
+               "mode": a.mode, "sound": bool(a.sound), "multi_shots": False}
+        task = create("kling-3.0/video", inp)
     else:
         if not 4 <= a.duration <= 30:
             sys.exit(json.dumps({"error": "Seedance duration must be 4-30s, stated (E6)"}))
