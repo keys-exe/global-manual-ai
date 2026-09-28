@@ -79,7 +79,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **HK2-02 v5 image confirmed (user); HK2-02 clip v2 on Kie** (generation 2 of the shot: frame fault fixed at the source, new
   motion = one thumb stroke along the letter's fold), 3.04s, 1072×1928, 69 Kie credits, preflight PASS. On the board, To check.
   HK2-03 clip v2 still To check (the user's "go ahead" came with no Fix note; a third generation needs a note and their go).
-- **Next:** the user's HK2 gate (HK2-02 v2 + HK2-03 v2 clips) → HK3 (four images first; clips on Kie).
+- **HK2-03 clip generation 3 (user's go: FIX HK2-03, note "the black strap stay and the strap don't swing"):** the strap no
+  longer moves at all — stillness plus the camera's breath sway only; Kie, 69 credits, 3.04s. `preflight.py` gained `user_go`
+  (a generation 3+ passes only with the user's instruction recorded and a diagnosed fix, §22X). On the board, To check.
+  A fourth generation of HK2-03 would again need the user's go.
+- **Next:** the user's HK2 gate (HK2-02 v2 + HK2-03 v3 clips) → HK3 (four images first; clips on Kie).
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
 - **Next (old):** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
