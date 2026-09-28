@@ -15,3 +15,5 @@ builds/*/hooks/*_v*.png
 builds/**/edit/*.err
 builds/**/edit/variants_report.json
 builds/**/_plan_*.json
+builds/**/work/*.jpg
+builds/**/work/*.png
