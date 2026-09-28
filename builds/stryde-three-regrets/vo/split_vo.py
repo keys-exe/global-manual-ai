@@ -4,9 +4,13 @@ import imageio_ffmpeg
 from faster_whisper import WhisperModel
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 NUM = {"25000": "twenty five thousand", "17": "seventeen", "34": "thirty four", "60": "sixty", "200000": "two hundred thousand", "10": "ten", "2": "two", "4": "four", "1": "one", "3": "three"}
+EQ = {"body weight": "bodyweight", "post bag": "postbag", "stride": "stryde", "anymore": "any more", "2cm": "two centimetres",
+      "centimeters": "centimetres", "centimeter": "centimetre", "neighbor": "neighbour", "orthopaedic": "orthopedic",
+      "draw": "drawer", "bear": "bare"}   # spelling / homophone noise from the transcriber, not word changes
 def norm(s):
     s = s.lower().replace("%", " percent").replace("-", " ").replace("’", "'")
-    s = re.sub(r"(\d),(\d)", r"\1\2", s)
+    s = re.sub(r"(\d),(\d)", r"\1\2", s); s = re.sub(r"(\d) (\d{3})\b", r"\1\2", s)
+    for k, v in EQ.items(): s = re.sub(rf"\b{k}\b", v, s)
     for k, v in NUM.items(): s = re.sub(rf"\b{k.replace(',', '')}\b", v, s)
     return re.sub(r"[^a-z0-9' ]", " ", s).split()
 if __name__ != "__main__": pass
@@ -16,11 +20,18 @@ m = WhisperModel("medium.en", compute_type="int8")
 out = {}
 for f in sorted(glob.glob("full/*.mp3")):
     tid = os.path.basename(f)[:-4]
-    segs, info = m.transcribe(f, word_timestamps=True, language="en")
+    cache = f"full/{tid}.words.json"
+    if os.path.exists(cache):
+        raw, dur = json.load(open(cache))
+    else:
+        segs, info = m.transcribe(f, word_timestamps=True, language="en")
+        raw = [(w.word, w.start, w.end) for s in segs for w in s.words]; dur = info.duration
+        json.dump([raw, dur], open(cache, "w"))
+    class I: pass
+    info = I(); info.duration = dur
     words = []
-    for s in segs:
-        for w in s.words:
-            for t in norm(w.word): words.append((t, w.start, w.end))
+    for (ww, a, b) in raw:
+        for t in norm(ww): words.append((t, a, b))
     hyp = [w[0] for w in words]
     sm = difflib.SequenceMatcher(None, ref, hyp, autojunk=False)
     diff = [(t, " ".join(ref[a:b]), " ".join(hyp[c:d])) for t, a, b, c, d in sm.get_opcodes() if t != "equal"]

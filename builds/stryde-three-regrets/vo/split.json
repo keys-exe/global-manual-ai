@@ -1,0 +1,285 @@
+{
+ "T1": {
+  "dur": 216.4,
+  "diff": [
+   [
+    "replace",
+    "twenty five thousand",
+    "25 000"
+   ],
+   [
+    "replace",
+    "twenty five thousand",
+    "25 000"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "drawer",
+    "draw"
+   ],
+   [
+    "replace",
+    "postbag",
+    "post bag"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "bare",
+    "bear"
+   ],
+   [
+    "replace",
+    "any more",
+    "anymore"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ]
+  ],
+  "cuts": null,
+  "gaps": []
+ },
+ "T2": {
+  "dur": 206.4,
+  "diff": [
+   [
+    "replace",
+    "twenty five thousand",
+    "25 000"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "twenty five thousand",
+    "25 000"
+   ],
+   [
+    "replace",
+    "neighbour",
+    "neighbor"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "drawer",
+    "draw"
+   ],
+   [
+    "replace",
+    "postbag",
+    "post bag"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "orthopedic",
+    "orthopaedic"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "any more",
+    "anymore"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ]
+  ],
+  "cuts": null,
+  "gaps": []
+ },
+ "T3": {
+  "dur": 197.44,
+  "diff": [
+   [
+    "replace",
+    "twenty five thousand",
+    "25 000"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "twenty five thousand",
+    "25 000"
+   ],
+   [
+    "replace",
+    "neighbour",
+    "neighbor"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "drawer",
+    "draw"
+   ],
+   [
+    "replace",
+    "postbag",
+    "post bag"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "round",
+    "around"
+   ],
+   [
+    "replace",
+    "centimetre",
+    "centimeter"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "any more",
+    "anymore"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "stretched",
+    "stretch"
+   ]
+  ],
+  "cuts": null,
+  "gaps": []
+ },
+ "T4": {
+  "dur": 208.16,
+  "diff": [
+   [
+    "replace",
+    "twenty five thousand",
+    "25 000"
+   ],
+   [
+    "replace",
+    "two centimetres",
+    "2cm"
+   ],
+   [
+    "replace",
+    "twenty five thousand",
+    "25 000"
+   ],
+   [
+    "replace",
+    "two centimetres",
+    "2cm"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "drawer",
+    "draw"
+   ],
+   [
+    "replace",
+    "postbag",
+    "post bag"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "orthopedic",
+    "orthopaedic"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "any more",
+    "anymore"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ]
+  ],
+  "cuts": null,
+  "gaps": []
+ }
+}
