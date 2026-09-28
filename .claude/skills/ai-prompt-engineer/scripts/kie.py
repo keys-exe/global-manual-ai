@@ -10,6 +10,10 @@ Needs KIE_API_KEY in the environment (an environment secret; never pasted in cha
                gpt-image-2-5-sunburst-text-to-image | gpt-image-2-5-sunburst-image-to-image
   kie.py seedance --prompt-file P --ref-image URL ... [--ref-audio URL ...] [--ref-video URL ...]
         [--duration 10] [--no-audio] [--out FILE]
+  kie.py kling --prompt-file P --image URL [--duration 5] [--out FILE] [--no-wait]
+        Kling 3.0 Omni image-to-video (kling-3.0-omni/image-to-video) — the Kling route when the Kling
+        connector is out of credits (user, 2026-09-28): 1080p, aspect follows the 9:16 start image,
+        single shot (prefer_multi_shots false), no audio, duration 3-15 (E6).
   kie.py wait TASK_ID [--out FILE]
 
 Fixed by the standard, never overridden here: aspect 9:16; images 2K; Seedance
@@ -108,6 +112,8 @@ def main():
     s.add_argument("--ref-video", nargs="*", default=[])
     s.add_argument("--duration", type=int, default=5); s.add_argument("--no-audio", action="store_true")
     s.add_argument("--out")
+    k = sub.add_parser("kling"); k.add_argument("--prompt-file", required=True); k.add_argument("--image", required=True)
+    k.add_argument("--duration", type=int, default=5); k.add_argument("--out"); k.add_argument("--no-wait", action="store_true")
     w = sub.add_parser("wait"); w.add_argument("task_id"); w.add_argument("--out")
     a = ap.parse_args()
 
@@ -130,6 +136,14 @@ def main():
         if field:
             inp[field] = refs
         task = create(a.model, inp)
+    elif a.cmd == "kling":
+        if not 3 <= a.duration <= 15:
+            sys.exit(json.dumps({"error": "Kling duration must be 3-15s (E6)"}))
+        inp = {"prompt": prompt, "image_urls": [as_url(a.image)], "duration": a.duration, "resolution": "1080p",
+               "aspect_ratio": "auto", "audio": False, "prefer_multi_shots": False}
+        task = create("kling-3.0-omni/image-to-video", inp)
+        if a.no_wait:
+            print(json.dumps({"taskId": task})); return
     else:
         if not 4 <= a.duration <= 30:
             sys.exit(json.dumps({"error": "Seedance duration must be 4-30s, stated (E6)"}))

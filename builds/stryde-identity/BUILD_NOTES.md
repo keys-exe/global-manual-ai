@@ -135,3 +135,25 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   blocked by the permission check. **BR-26a-END is not on the board** (local `body/BR-26a-END_fix2.png`, link in
   `fix2_urls.txt`) — and the 19 new videos (~150 MB) will not fit. Needs the user's call on what to delete or a second
   board before the video round.
+- (2026-09-28, 14:30 UTC) **Fix round 3 + first confirmed videos.**
+  - User Fix notes on 9 fix-2 images, fixed at source in `body/fix3_prompts.py` (Higgsfield nano_banana_pro,
+    `body/<BEAT>_fix3.png`, links `body/fix3_urls.txt`):
+    - BR-03 / BR-24: strap too big → an explicit true-size clause (12 × 5 cm shell, short loop).
+    - BR-06: shell bent → natural resting shape, no force.
+    - BR-20: strap floating → it rests in the palm.
+    - BR-04: "new productive B-roll" → a man carrying a watering can across his garden, strap on the knee.
+    - BR-13 / BR-26b: no gripping the rail → both hands full (towels / a mug).
+    - BR-25: now coming DOWN the stairs, hands full.
+    - BR-26a: sits on the bottom stair itself (it had been a stool).
+    - On the board as To check.
+  - BR-16 (user): the confirmed end frame `BR-16-END` is BR-16's solo start image. No pinned tail; the new motion
+    is that he lifts his hands off the seated strap and straightens up.
+  - **The Kling connector is out of credits → user: "use kie ai for kling for now".** Added `kie.py kling`
+    (`kling-3.0-omni/image-to-video`, 1080p, aspect auto from the 9:16 start image, single shot, no audio).
+  - The 9 confirmed shots (MECH-10/15, BR-12/14/16/17/19/21/22) generated from their JSON prompts
+    (`<BEAT>.v2.i2v.json`). Kie job ids are in `body/kie_kling_jobs.txt`. Output is 1072×1928, E6 lengths,
+    54 Kie credits for 3s. On the board as To check.
+  - Storage (user: "delete old B-roll videos"): the 22 first-round video files of the 19 cards the user marked Fix
+    were deleted from the board. Their version entries, prompts and Kling links stay; the old clip no longer plays.
+  - BR-26a-END (fix 2) is on the board as its own card. It was made before the BR-26a start moved to the stair,
+    so it may not match.

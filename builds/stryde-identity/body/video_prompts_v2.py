@@ -181,6 +181,50 @@ P["BR-26b"] = photo("climb_to_camera",
     "she is still well below the landing at the cut. The steps stay fixed and evenly spaced.",
     "no reaching the top, no floating, no sliding feet, no steps changing shape")
 
+# ── fix round 3 (user, 2026-09-28) — overrides ─────────────────────────────────
+# BR-16: the user confirmed the end frame and said to use it as the solo start image (no pinned tail frame).
+P["BR-16"] = photo("strap_seated_straighten",
+    "Dean, fifty-eight, heavyset, check flannel shirt, cargo shorts, steel-toe boots, by the open van, both hands on the "
+    "strap seated below his right kneecap.",
+    "Medium from low in front, as in the start frame.",
+    "His hands lift off the seated strap and he straightens up slowly, one easy move over about two seconds, looking down "
+    "at his knee, satisfied. The strap stays exactly where it is below the kneecap; nothing is pulled or adjusted.",
+    "no strap moving, no strap sliding down, no band being pulled, no hands on the band")
+P["BR-04"] = photo("garden_watering_can",
+    "A man in his sixties, grey hair, navy T-shirt, grey shorts, canvas trainers, the strap on his right knee, carrying a "
+    "full watering can across a sunny garden lawn.",
+    "Medium at knee-to-chest height, as in the start frame.",
+    "He strides across the lawn towards the flower bed, one step per second, the watering can swinging a little with its "
+    "weight. The strap stays in place below his right kneecap.", "no objects appearing, no water spilling everywhere")
+P["BR-13"] = photo("climb_stairs_towels",
+    "Maureen, seventy-four, burgundy tunic, denim skirt, sheepskin slippers, the strap on her right knee, climbing the "
+    "carpeted staircase with brass stair rods, a stack of folded towels held against her chest in both arms.",
+    "Wide from the foot of the stairs looking up, as in the start frame.",
+    "She climbs up the stairs, one step per second, two steps in the clip, both arms round the towels the whole time, "
+    "never touching the handrail. The steps stay fixed, straight and evenly spaced.",
+    "no hand on the rail, no hand reaching for the rail, no floating, no sliding feet, no steps changing shape")
+P["BR-25"] = photo("down_last_step",
+    "Maureen, cornflower-blue dress, navy shoes, the strap on the front of her right knee, coming down the carpeted "
+    "staircase, a folded cardigan in both hands.",
+    "Medium-wide three-quarter front from the hall, as in the start frame.",
+    "She steps down off the bottom stair onto the hall carpet, one easy step down, about one second, weight settling "
+    "onto her right leg, both hands holding the cardigan, never touching the rail. The strap stays on the front of her knee.",
+    "no hand on the rail, no going up, no strap turning to the back of the knee, no steps changing shape, no floating")
+P["BR-26b"] = photo("climb_to_camera_tea",
+    "Maureen near the bottom of the carpeted staircase, cornflower-blue dress, navy shoes, the strap on her right knee, a "
+    "mug of tea held in both hands.",
+    "Wide from the landing looking down the flight, as in the start frame.",
+    "She climbs up the stairs towards the camera, one step per second, three steps in the clip, both hands round the mug, "
+    "never touching the rail; she is still well below the landing at the cut. The steps stay fixed and evenly spaced.",
+    "no hand on the rail, no reaching the top, no floating, no sliding feet, no tea spilling, no steps changing shape")
+P["BR-20"] = photo("strap_in_palm",
+    "The surgeon's fingertips letting go of the stryde strap as it rests in a patient's open palm; the soft black band "
+    "loop drapes over the patient's fingers.",
+    "Close-up over the patient's shoulder, as in the start frame.",
+    "The surgeon's fingertips lift away and the patient's fingers close gently round the shell, about two seconds. The "
+    "strap stays resting in his hand the whole time, its weight in his palm; the band settles over his fingers.",
+    "no floating strap, no strap lifting out of the hand, no strap changing size")
+
 FIX_NOTE = {  # user's Fix note -> where it was fixed (frame, prompt or motion, §22X)
  "MECH-01": "not the patellar tendon -> frame: front view, glow on the tendon itself",
  "MECH-10": "express the line more -> frame: bare bone on bone with spurs + red glow; motion: grind + flare",
@@ -191,7 +235,7 @@ FIX_NOTE = {  # user's Fix note -> where it was fixed (frame, prompt or motion, 
  "BR-12": "phone on the street -> prompt: no phone named anywhere, phone negatives",
  "BR-13": "not the stairs -> frame: on the P0 flight itself, mid-climb; motion: step per second",
  "BR-14": "should show a productive result -> frame: carrying laundry up onto the landing",
- "BR-16": "wrong placement -> frame: start low on the shin + pinned seated end frame",
+ "BR-16": "wrong placement -> user: use the confirmed seated end frame as the solo start image",
  "BR-17": "big box, wrong carry -> frame: big heavy box, safe squat lift, box hugged",
  "BR-19": "wrong product -> frame: tighter, strap large and clear, no knee pads",
  "BR-20": "strap wrong -> frame + motion: band as a soft closed loop draping",
@@ -203,7 +247,7 @@ FIX_NOTE = {  # user's Fix note -> where it was fixed (frame, prompt or motion, 
  "BR-26b": "should be going up, not at the top -> frame: near the bottom; motion: climbs, still below at the cut",
 }
 
-PINNED = {"BR-16", "BR-26a"}
+PINNED = {"BR-26a"}
 SUBJECT_MOTION = {"BR-12": "travels", "BR-13": "travels", "BR-14": "travels", "BR-21": "travels", "BR-26b": "travels"}
 
 if __name__ == "__main__":
@@ -213,7 +257,7 @@ if __name__ == "__main__":
         (HERE / f"{b}.v2.i2v.json").write_text(s + "\n")
         mech = b.startswith("MECH")
         c = {"beat": b, "connector": "kling", "mode": 1, "kind": "broll", "prompt": s, "duration": LEN[b],
-             "resolution": "1080p", "aspect_ratio": "9:16", "start_image": f"{b} fix2 image", "start_approved": False, "fix_note": FIX_NOTE[b],
+             "resolution": "1080p", "aspect_ratio": "9:16", "start_image": f"{b} confirmed image", "start_approved": False, "fix_note": FIX_NOTE[b],
              "pinned": b in PINNED, "end_image": f"{b}-END fix2 image" if b in PINNED else None,
              "end_approved": False, "prefer_multi_shots": "false", "generation": 2,
              "subject_motion": "still" if mech else SUBJECT_MOTION.get(b, "in_place"), "pace": "named",
