@@ -4,7 +4,7 @@ User: "STOP THE EDITING WE WILL CHANGE THE TALKING HEADS — Ancient Chinese / J
 Answers: rewrite as the healer · Japanese Kampo physician (Edo-era, kimono and haori, tatami clinic, medicine chest) · a new voice for him.
 
 Only the lines that belong to the rail fitter change. Everything else stays word for word, so the confirmed B-roll keeps its lines.
-**Status: DRAFT — waiting for the user's approval.** Nothing is voiced until it is approved.
+**Status: WITHDRAWN (user 2026-09-28: "WE WILL NOT CHANGE THE SCRIPT").** The script stays word for word; only the face and voice change. Kept for the record.
 
 ## Changed lines (old → new)
 
