@@ -18,9 +18,7 @@
    "phrase": "It is a weight problem, and the weight has to go somewhere.",
    "key": "weight",
    "layout": {
-    "type": "split",
-    "broll_pos": "bottom",
-    "ratio": 0.5
+    "type": "full"
    },
    "max": 6
   },
@@ -77,11 +75,7 @@
    "phrase": "Within a year or two it starts as well.",
    "key": "starts",
    "layout": {
-    "type": "pip",
-    "over": "th",
-    "corner": "br",
-    "scale": 0.5,
-    "border": 0
+    "type": "full"
    },
    "max": 6
   },
@@ -113,9 +107,7 @@
    "phrase": "Then you stop going up in the afternoon.",
    "key": "Then",
    "layout": {
-    "type": "split",
-    "broll_pos": "bottom",
-    "ratio": 0.5
+    "type": "full"
    },
    "max": 6,
    "key_orig": "afternoon"
@@ -211,11 +203,7 @@
    "phrase": "The physio helps and then stops helping.",
    "key": "physio",
    "layout": {
-    "type": "pip",
-    "over": "th",
-    "corner": "br",
-    "scale": 0.5,
-    "border": 0
+    "type": "full"
    },
    "max": 6
   },
@@ -225,11 +213,7 @@
    "phrase": "The gel sits on your skin.",
    "key": "gel",
    "layout": {
-    "type": "pip",
-    "over": "th",
-    "corner": "br",
-    "scale": 0.5,
-    "border": 0
+    "type": "full"
    },
    "max": 6
   },
@@ -253,9 +237,7 @@
    "phrase": "The sleeve squeezes the whole knee",
    "key": "sleeve",
    "layout": {
-    "type": "split",
-    "broll_pos": "bottom",
-    "ratio": 0.5
+    "type": "full"
    },
    "max": 6
   },
@@ -285,11 +267,7 @@
    "phrase": "There is a silicone pad inside",
    "key": "pad",
    "layout": {
-    "type": "pip",
-    "over": "th",
-    "corner": "br",
-    "scale": 0.5,
-    "border": 0
+    "type": "full"
    },
    "max": 6
   },
@@ -331,9 +309,7 @@
    "phrase": "I started carrying a couple",
    "key": "couple",
    "layout": {
-    "type": "split",
-    "broll_pos": "bottom",
-    "ratio": 0.5
+    "type": "full"
    },
    "max": 6
   },
@@ -383,11 +359,7 @@
    "phrase": "The copies stretch, and a stretched strap does not hold the spot.",
    "key": "stretched",
    "layout": {
-    "type": "pip",
-    "over": "th",
-    "corner": "br",
-    "scale": 0.5,
-    "border": 0
+    "type": "full"
    },
    "max": 6
   },

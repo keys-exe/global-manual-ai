@@ -64,7 +64,8 @@ Rules (§30H):
   4. HOLE    in a voice-only build (base null) every uncovered moment is a hole and
              is closed the same way; an unclosable hole is a FAIL.
   5. HOLD    every B-roll holds ~3.0s (HOLD) when the next B-roll allows it, holding over the next
-             words; under 2.0s (MIN_FLASH) is a FLASH FAIL (merge the rows) (V7.65.0).
+             words — never leaving a face window under --min-th (it holds to the next cut
+             when its footage reaches, else stops --min-th short of it); under 2.0s (MIN_FLASH) is a FLASH FAIL (merge the rows) (V7.65.0).
   6. LAYOUT  full screen is the default: split/pip on at most 1 B-roll in 5, never two in a row.
 Then renders (1080x1920 at --fps, default 24 = Kling's native rate, so no frame
 is repeated; the master as the only audio) and verifies the
@@ -300,6 +301,8 @@ def main():
             if base is not None and n + 1 == len(edl):
                 end = max(e["line_end"], e["start"])
             on = max(end - e["start"], min(HOLD, nxt - e["start"]))   # the hold (rule 5)
+            if base is not None and n + 1 < len(edl) and 1e-3 < nxt - e["start"] - on < a.min_th:
+                on = nxt - e["start"]   # a hold never leaves a face window under --min-th
             need = on + e["skip"] + HANDLE
             call = max(KLING_MIN, int(-(-need // 1)))
             row = {"beat": e["beat"], "cut_s": e["start"], "anchor": e["key"], "on_screen_s": round(on, 2),
@@ -350,6 +353,10 @@ def main():
         nxt = edl[n + 1]["start"] if n + 1 < len(edl) else total
         if e["end"] - e["start"] < HOLD - 1e-3:
             target = snap(min(nxt, e["start"] + HOLD))
+            if base is not None and n + 1 < len(edl) and 1e-3 < nxt - target < a.min_th:
+                # never hold into a face window and leave a flicker: hold to the next cut when the
+                # footage reaches it, else stop so the face keeps at least --min-th
+                target = nxt if give_back(e, nxt - e["start"]) >= nxt - e["start"] - 1e-3 else snap(nxt - a.min_th)
             if target > e["end"] + 1e-3:
                 # the hold uses the clip's own footage only — never slowed to reach it
                 avail = give_back(e, target - e["start"])

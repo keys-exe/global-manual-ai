@@ -1,0 +1,1 @@
+{"src": "raw_HK1.wav", "out": "master/HK1.wav", "duration_in_s": 10.03, "breaths_cut": [], "source_end_db": -45.9, "source_end_clipped": false, "verify": {"duration_s": 9.744, "breaths_left": [], "gaps_over_0_4": [], "tail_last_db": -42.8, "status": "PASS"}}
