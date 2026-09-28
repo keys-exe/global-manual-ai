@@ -1,5 +1,5 @@
 {
- "audio": "/home/user/global-manual-ai/builds/stryde-identity/final/edit/master_HK1.mp3",
+ "audio": "/home/user/global-manual-ai/builds/stryde-identity/final/edit/master2_HK1.mp3",
  "script": "/home/user/global-manual-ai/builds/stryde-identity/work/script.lines.txt",
  "base": null,
  "broll": [
@@ -145,7 +145,8 @@
    "beat": "BR-26b",
    "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-26b_video_v2.mp4",
    "phrase": "and your own stairs will tell you.",
-   "in": 0.3
+   "in": 0.3,
+   "key": "own"
   }
  ]
 }

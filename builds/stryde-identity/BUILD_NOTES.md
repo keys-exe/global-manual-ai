@@ -262,3 +262,19 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   on a dark rounded pill; offer card = yellow pill "Buy 1 Get 1 Free" with a pulse + dark pill with a green check
   "60-DAY MONEY-BACK GUARANTEE".
 - assemble.py re-run on all three: PASS. The Final board cards FINAL-HK1..3 are now v2 (v1 kept in `videoVersions`), To check.
+
+## 2026-09-28 — Final v3: slower VO cut + guarantee pill fix
+- User: "the trim of the vo is too fast". The house cut (butt joins 0.015/0.01s, words to −38 dB; 57.9s) is replaced
+  **for this build** by a slower cut of the same locked take T4 (raw take re-downloaded from ElevenLabs history
+  `ZzBlBJ4fBT3haBAlh0Rp` → `vo/full/`, split at 4.5 / 9.63 / 14.73s): pauses up to 0.24s after . ? !, 0.12s after a
+  comma, 0.03s between words, words kept to −42 dB, breaths still cut. `vo_trim.py` gained `--pause-sent`,
+  `--pause-comma`, `--pause-word` and `--floor` (defaults unchanged = house cut). Masters `vo/master2/` HK1/HK2/HK3 =
+  63.83 / 64.09 / 64.12s, PASS, words verbatim (transcript-only spellings: silicon, orthopedic, 200 000).
+  Word timings `vo/master2/HK<n>.words.json`. On the current board: `VO-MASTER-HK1..3` v2 (v1 house cut kept), To check.
+  (A 65.9s version — 0.32 / 0.16 / 0.05, −45 dB — was also cut; the middle pace was taken.)
+- The edit re-run on the new masters: hooks re-rendered clean from the new "Because" times (`make_hooks.py --clean
+  --master2`, no audio track so the clip length is the picture's); HK2/HK3 hooks slowed 0.98x to fill; BR-26b `key`
+  "own" (BR-26a was a 0.79s FLASH). assemble.py PASS on all three.
+- User: "the 60-day guarantee has a blank space at the end" → pill widths calibrated to the rendered text
+  (libass draws Montserrat Black at ~0.80 of the PIL estimate), all pills.
+- Final board FINAL-HK1..3 = v3 (63.87 / 64.13 / 64.16s), To check; v1 and v2 kept.

@@ -28,6 +28,7 @@ SR, HOP, WIN = 16000, 160, 480
 # no breaths, hook butt-joined to the body; 1.6s of silence left in 57.5s.
 FLOOR, BREATH_MIN, MERGE = -38.0, 0.12, 0.12
 PAUSE_SENT, PAUSE_WORD, HEAD, TAIL = 0.015, 0.01, 0.01, 0.02
+PAUSE_COMMA = PAUSE_SENT   # house cut: a comma pauses like a full stop
 
 def load(path, sr=SR):
     raw = subprocess.run([FF, "-v", "error", "-i", path, "-ac", "1", "-ar", str(sr), "-f", "s16le", "-"], capture_output=True).stdout
@@ -75,18 +76,19 @@ def boundaries(path, script):
     ws = [(w.end, w.word.strip()) for s in segs for w in s.words]
     norm = lambda s: re.sub(r"[^a-z0-9']", "", s.lower())
     if not script:
-        return [e for e, w in ws if w[-1:] in ".?!,"]
+        return [(e, w[-1]) for e, w in ws if w[-1:] in ".?!,"]
     toks = open(script).read().split()
     sm = difflib.SequenceMatcher(None, [norm(t) for t in toks], [norm(w) for _, w in ws], autojunk=False)
     ends = []
     for blk in sm.get_matching_blocks():
         for k in range(blk.size):
-            if toks[blk.a + k].rstrip('"')[-1:] in ".?!,": ends.append(ws[blk.b + k][0])
+            m = toks[blk.a + k].rstrip('"')[-1:]
+            if m in ".?!,": ends.append((ws[blk.b + k][0], m))
     return ends
 
 def at_boundary(a, b, ends):
     # a breath is only taken at a phrase boundary: a phrase-closing word ended shortly before it
-    return any(t(a) - 0.6 <= e <= t(a) + 0.1 for e in ends)
+    return any(t(a) - 0.6 <= e <= t(a) + 0.1 for e, _ in ends)
 
 def plan(x, path, script):
     db, cen, flat, low = features(x)
@@ -107,8 +109,9 @@ def render(src, dst, spans, sents, total):
         if k == 0: a = max(0.0, a - HEAD)
         if k == len(spans) - 1: b = min(total, b + TAIL)
         if prev is not None:
-            sent = any(prev - 0.4 <= s <= a + 0.05 for s in sents)
-            pieces.append(("gap", min(a - prev, PAUSE_SENT if sent else PAUSE_WORD)))
+            marks = [m for s, m in sents if prev - 0.4 <= s <= a + 0.05]
+            pause = PAUSE_WORD if not marks else PAUSE_COMMA if set(marks) == {","} else PAUSE_SENT
+            pieces.append(("gap", min(a - prev, pause)))
         pieces.append(("seg", a, b)); prev = b
     parts, labels = [], []
     for n, pc in enumerate(pieces):
@@ -141,7 +144,16 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("src"); ap.add_argument("--out", required=True)
     ap.add_argument("--script", help="the part's script lines (punctuation marks the phrase boundaries)")
     ap.add_argument("--mode", type=int, default=1, help="§18A mode of the build; 4 and 5 are refused (§24L)")
+    # pace overrides for a build whose user asks for a slower cut than the house cut (defaults = house cut)
+    ap.add_argument("--pause-sent", type=float, help="max pause after . ? ! (s); house cut 0.015")
+    ap.add_argument("--pause-comma", type=float, help="max pause after , (s); house cut = --pause-sent")
+    ap.add_argument("--pause-word", type=float, help="max pause elsewhere (s); house cut 0.01")
+    ap.add_argument("--floor", type=float, help="keep each word until it falls to this level (dBFS); house cut -38")
     a = ap.parse_args()
+    if a.pause_sent is not None: PAUSE_SENT = a.pause_sent
+    PAUSE_COMMA = a.pause_comma if a.pause_comma is not None else PAUSE_SENT
+    if a.pause_word is not None: PAUSE_WORD = a.pause_word
+    if a.floor is not None: FLOOR = a.floor
     if a.mode in (4, 5):
         print(json.dumps({"status": "REFUSED", "reason": "no trimming in the film modes (§24L): film narration is used as generated"}))
         sys.exit(2)

@@ -7,6 +7,8 @@ import imageio_ffmpeg
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 B = Path(__file__).resolve().parent.parent
 VO = Path(sys.argv[1])            # folder holding the VO master files <asset>.mp4
+MDIR = "master2" if "--master2" in sys.argv else "master"   # master2 = the slower VO cut (user, 2026-09-28)
+AUDIO = lambda hk: B / f"vo/master2/Identity-Narrator_master2_{hk}.mp3" if MDIR == "master2" else VO / f"{MASTERS[hk]}.mp4"
 CLEAN = "--clean" in sys.argv     # no caption: finish.py burns the hook caption (ad style, 2026-09-28)
 MASTERS = {"HK1": "b8db26a0d46e7635e8ef63afc04dff92", "HK2": "fa5e2defd2333a6e04b2c49559892b72", "HK3": "f67ee06f7b67c8bd10a8f5aa5a666ebb"}
 CLIPS = {  # board picks (status use), 2026-09-28
@@ -35,7 +37,7 @@ Dialogue: 0,0:00:00.00,{t},Cap,,0,0,0,,{{\\pos({W//2},{H//2})}}{text}
 """)
 
 for hk, (top, bot) in CLIPS.items():
-    words = json.loads((B / f"vo/master/{hk}.words.json").read_text())
+    words = json.loads((B / f"vo/{MDIR}/{hk}.words.json").read_text())
     dur = next(w["s"] for w in words if w["w"].startswith("Because")) - 0.02
     line = (B / f"vo/{hk}.lines.txt").read_text().strip().strip('"')
     a = B / f"final/{hk}.ass"; ass(line, dur, a)
@@ -45,8 +47,8 @@ for hk, (top, bot) in CLIPS.items():
           f"[1:v]trim=start={SKIP},setpts=PTS-STARTPTS,{half}[b];"
           + ("[t][b]vstack=inputs=2[v]" if CLEAN else f"[t][b]vstack=inputs=2,subtitles='{a}':fontsdir=/usr/share/fonts/truetype/freefont[v]"))
     cmd = [FF, "-y", "-hide_banner", "-loglevel", "error",
-           "-i", str(B / "hooks" / top), "-i", str(B / "hooks" / bot), "-i", str(VO / f"{MASTERS[hk]}.mp4"),
-           "-filter_complex", fc, "-map", "[v]", "-map", "2:a", "-t", f"{dur:.2f}",
+           "-i", str(B / "hooks" / top), "-i", str(B / "hooks" / bot), "-i", str(AUDIO(hk)),
+           "-filter_complex", fc, "-map", "[v]", *([] if CLEAN else ["-map", "2:a"]), "-t", f"{dur:.2f}",
            "-c:v", "libx264", "-crf", "16", "-preset", "slow", "-pix_fmt", "yuv420p", "-r", "24",
            "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(out)]
     subprocess.run(cmd, check=True)

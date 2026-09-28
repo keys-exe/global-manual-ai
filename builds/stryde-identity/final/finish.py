@@ -36,7 +36,9 @@ def text_w(font, size, text, spacing=0):
     f = ImageFont.truetype(str(FONTS / font), 100)
     a, d = f.getmetrics()
     f = ImageFont.truetype(str(FONTS / font), round(size * 100 / (a + d)))
-    return f.getlength(text) + spacing * len(text)
+    # calibrated on the rendered frame (2026-09-28): libass draws Montserrat Black ~0.80 of this estimate —
+    # an uncalibrated pill left a blank space after "GUARANTEE" (user)
+    return (f.getlength(text) + spacing * len(text)) * 0.80
 
 
 def rrect(w, h, r):
@@ -194,7 +196,7 @@ for hk in ONLY or ["HK1", "HK2", "HK3"]:
     run = json.loads((B / f"edit/run_{hk}.json").read_text())
     edl = {e["beat"]: e for e in run["edl"]}
     total = run["master_s"]
-    words = script_words(hk, json.loads((B.parent / f"vo/master/{hk}.words.json").read_text()))
+    words = script_words(hk, json.loads((B.parent / f"vo/master2/{hk}.words.json").read_text()))
     s = HEAD
     hook_end = edl[f"EDIT-{hk}"]["end"]
     s += captions(words, 0.0, hook_end, "Hook", f"\\an5\\pos({W//2},{H//2})")   # on the split seam (VN01–03)
