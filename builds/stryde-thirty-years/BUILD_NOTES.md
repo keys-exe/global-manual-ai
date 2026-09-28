@@ -23,10 +23,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   ledger assigned; docs locations/actmap/wardrobe on the Plan tab. §22U step 1 image C1-SEED (job 51f87b4b…, logged
   nano_banana_2) on the board as review. Kling takes G1–G3 written (`voice/C1_G*.kling.json`, ≤2,500), not sent.
 
+  ~10:10: user confirmed all locations ("CONFIRM ALL LOCATION. PROCEED") and, when asked, C1-SEED. Voice takes G1–G3 sent
+  (360 Kling credits); G3 failed the same-voice gate (+10.3%) and is excluded; `Thirty_clone_source.mp3` = G1+G2, 32.37s
+  (`voice/VOICE_SOURCE.md`). Tagged TTS text `vo/ALL.tagged.txt` locked verbatim (2,354 chars).
+
 ## Where it stands
-- **Waiting on the user's check:** the 4 plates and C1-SEED. A Fix on P0/P2 regenerates P1/P3 too.
-- **On C1-SEED Confirm:** preflight + send G1–G3 on Kling (10s, 1080p, audio), `voice_source.py` → `Thirty_clone_source.mp3`,
-  then STOP: the user clones it in ElevenLabs as `Thirty` (§22U step 6). The hourly Routine does this if the session is idle.
-- Then: tag + TTS (4 takes, hooks + body in one request), master listen (user), HeyGen talking heads, hooks one by one (step 6).
-- Open: F3 (claims), F4 (persona / dramatisation note), F11 (one maker outfit for all hooks), F12 (HK1 walking = Kling + HeyGen
-  lip-sync, unverified), F13 (the fitting in the workshop is added story).
+- **Waiting on the user: §22U step 6** — clone `voice/Thirty_clone_source.mp3` (board: VOICE-SOURCE) in ElevenLabs as
+  `Thirty`, send the voice ID. Media is gitignored: in a new session re-download G1/G2 from the board (VOICE-G1/G2
+  videoParts, join the parts) and rebuild with `voice_source.py C1_G1.mp4 C1_G2.mp4 --name Thirty`.
+- **Then:** TTS `vo/ALL.tagged.txt`, eleven_v3, 4 takes, one request → split HK1/HK2/HK3/BODY → `vo_trim.py` house cut →
+  the user's master listen (step 10) → HeyGen talking heads + hooks one by one (step 6).
+- Open: F3, F4, F11, F12, F13 (see STEP4_5.md / BUILD_SHEET.md).
