@@ -1059,8 +1059,10 @@ function joinParts(ids,type,onProgress){
   const key=ids.join(",");
   if(!joined[key]){
     let done=0;
-    joined[key]=Promise.all(ids.map(id=>fetchAsset(id).then(b=>{done++;onProgress&&onProgress(done,ids.length);return b})))
+    joined[key]=Promise.all(ids.map(id=>fetchRetry(id).then(b=>{done++;onProgress&&onProgress(done,ids.length);return b})))
       .then(bs=>URL.createObjectURL(new Blob(bs,{type:type||bs[0].type||"application/octet-stream"})));
+    // a failed join is not kept, so the next render or scroll tries again instead of staying stuck
+    joined[key].catch(()=>{delete joined[key]});
   }
   return joined[key];
 }
@@ -1071,11 +1073,14 @@ const vis=("IntersectionObserver" in window)?new IntersectionObserver(es=>es.for
 function tryPlay(v){if(v.dataset.noauto) return;v.muted=v.muted||!v.dataset.sound;const p=v.play();if(p&&p.catch) p.catch(()=>{})}
 function loadVideo(v){
   if(v.dataset.parts&&!v.getAttribute("src")){
-    const wrap=v.parentElement, note=document.createElement("span");
+    if(v.dataset.loading) return; v.dataset.loading="1";
+    const wrap=v.parentElement; if(wrap) wrap.querySelectorAll(".vload").forEach(x=>x.remove());
+    const note=document.createElement("span");
     note.className="vload";note.textContent="Loading full quality…";wrap&&wrap.appendChild(note);
     joinParts(v.dataset.parts.split(","),v.dataset.ptype,(d,n)=>{note.textContent=`Loading full quality… ${d}/${n}`})
       .then(u=>{v.src=u;note.remove();tryPlay(v)})
-      .catch(()=>{note.textContent="Couldn't load. Use Download."});
+      .catch(()=>{delete v.dataset.loading;note.textContent="Couldn't load. Tap to try again, or use Download.";note.style.cursor="pointer";
+        note.addEventListener("click",e=>{e.stopPropagation();loadVideo(v)},{once:true})});
   } else tryPlay(v);
 }
 function hydrate(root){
@@ -1395,6 +1400,8 @@ function extFor(type,k){
 }
 function fileName(g,k){const b=currentBuild();return `${b?b.id:"build"}_${g.beat||g.id}_${k}.${extFor(g[STEP[k].type],k)}`}
 async function fetchAsset(id){const r=await fetch("/_blob/"+id);if(!r.ok) throw new Error("fetch "+r.status);return r.blob()}
+// a big file is many 15 MB pieces: one dropped request is retried before the file counts as failed
+async function fetchRetry(id){for(let i=0;;i++){try{return await fetchAsset(id)}catch(e){if(i>=3) throw e;await new Promise(r=>setTimeout(r,800*2**i))}}}
 async function saveFile(name,blob){
   if(state.downloads){
     try{await state.downloads.save({filename:name,data:blob});toast("Saved "+name);return}
@@ -1718,6 +1725,10 @@ function renderFinal(gens){
       <span class="n">${String(i+1).padStart(2,"0")}${ok?" ✓":""}${st==="review"?`<span class="g-wait" title="Waiting for you">1</span>`:""}</span><span class="t">${esc(x.label)}</span>
       <div class="bar"><i style="width:${ok?100:x.g&&x.g.videoAsset?50:0}%;background:var(${ok?"--use":"--review"})"></i></div>
       <span class="c">${ok?"Confirmed":st==="review"?"Check it":st==="bad"?"Fixing":st==="gen"?"Cutting":"Not cut yet"}</span></button>`}).join("")}</nav>`:"";
+  // redraw only when a finished video changed, so an update elsewhere on the board never resets the one being watched
+  const sig=JSON.stringify([state.faultOpen,state.readOnly,slots.map(x=>[x.key,x.label,x.g])]);
+  if(sig===state.finalSig&&$("#finalView").children.length) return;
+  state.finalSig=sig;
   const fi=document.querySelector("#finalView [data-faultform] textarea"), draft=fi?fi.value:"", had=fi&&document.activeElement===fi;
   $("#finalView").innerHTML=`${strip}
     <section class="widget wide" id="w-final">
