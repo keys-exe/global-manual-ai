@@ -369,6 +369,15 @@ P["BR-25"] = photo("down_to_camera_fast",
     "foot per step, alternating. Her hands stay on the cardigan, off the rail. " + ONE_TAKE,
     "no slow motion, no slow careful steps, no pausing, no two feet on one step, no hand on the rail, " + ONE_TAKE_NEG)
 
+# ── fix round 11 (user, 2026-09-28): BR-25 "a new one where she is going up" ──
+P["BR-25"] = photo("up_to_camera_brisk",
+    "Maureen's legs coming up the stairs towards the camera, the strap on her right knee, a cardigan in her hands.",
+    "Close, waist to feet, from a few steps above, as in the start frame.",
+    "She walks up the stairs towards the camera briskly at real-time speed, never slow motion: about two steps per "
+    "second, three steps in the clip, one smooth continuous rhythm, never pausing, one foot per step, alternating. Her "
+    "hands stay on the cardigan, off the rail. The camera stays where it is; she comes closer. " + ONE_TAKE,
+    "no slow motion, no pausing, no two feet on one step, no hand on the rail, no going down, " + ONE_TAKE_NEG)
+
 FIX_NOTE = {  # user's Fix note -> where it was fixed (frame, prompt or motion, §22X)
  "MECH-01": "not the patellar tendon -> frame: front view, glow on the tendon itself",
  "MECH-10": "express the line more -> frame: bare bone on bone with spurs + red glow; motion: grind + flare",

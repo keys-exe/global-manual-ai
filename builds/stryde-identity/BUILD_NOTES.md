@@ -209,3 +209,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   at the foot of the flight, waist to feet, with her coming down towards the camera mid-stride (`body/fix10_prompts.py`,
   `body/BR-25_fix10.png`). The video is a fast real-time descent, about 2.5 steps a second (Kie Kling, job id in
   `body/kie_kling_jobs7.txt`). On the board as To check.
+- (2026-09-28, 15:40 UTC) **BR-25 image v9** (user: "a new going down the stairs, show her full body going down"):
+  - A full-figure shot, head to feet, from the hall. She is four steps up, coming down briskly, hands on the cardigan,
+    off the rail (`body/fix12_prompts.py`, `body/BR-25_fix12.png`). On the board as To check.
+  - The going-up version (`body/fix11_prompts.py`, `BR-25_fix11.png`) was dropped when the user stopped it; no video
+    was made from it.
+  - BR-25's video waits for the user's call on this image.
