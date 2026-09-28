@@ -1,0 +1,414 @@
+[
+ {
+  "beat": "HK1-B1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 8212,
+  "call_s": 4
+ },
+ {
+  "beat": "HK1-B2",
+  "model": "nano_banana_pro",
+  "refs": [
+   "dff971d2-5c32-4a5d-981a-d304f7a2b9f2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 7296,
+  "call_s": 3
+ },
+ {
+  "beat": "HK1-B3",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 8165,
+  "call_s": 3
+ },
+ {
+  "beat": "HK2-B1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "dff971d2-5c32-4a5d-981a-d304f7a2b9f2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 7291,
+  "call_s": 3
+ },
+ {
+  "beat": "HK2-B2",
+  "model": "gpt_image_2_5",
+  "refs": [
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 5918,
+  "call_s": 3
+ },
+ {
+  "beat": "HK2-B3",
+  "model": "nano_banana_pro",
+  "refs": [
+   "dff971d2-5c32-4a5d-981a-d304f7a2b9f2",
+   "b1cc1764-3e34-4b37-b8c6-0abf55cfe68e"
+  ],
+  "chars": 7040,
+  "call_s": 3
+ },
+ {
+  "beat": "HK3-B1",
+  "model": "gpt_image_2_5",
+  "refs": [
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9",
+   "719c268b-14df-47b6-afab-35f0efdb8a2b"
+  ],
+  "chars": 5888,
+  "call_s": 3
+ },
+ {
+  "beat": "HK3-B2",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9",
+   "719c268b-14df-47b6-afab-35f0efdb8a2b"
+  ],
+  "chars": 7918,
+  "call_s": 4
+ },
+ {
+  "beat": "HK3-B3",
+  "model": "gpt_image_2_5",
+  "refs": [
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 5869,
+  "call_s": 4
+ },
+ {
+  "beat": "A1-B1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 8061,
+  "call_s": 4
+ },
+ {
+  "beat": "A1-B2",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 8078,
+  "call_s": 3
+ },
+ {
+  "beat": "A1-B3",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 7971,
+  "call_s": 3
+ },
+ {
+  "beat": "A1-B4",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 8029,
+  "call_s": 3
+ },
+ {
+  "beat": "A1-B5",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 8018,
+  "call_s": 3
+ },
+ {
+  "beat": "A1-B6",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 7920,
+  "call_s": 3
+ },
+ {
+  "beat": "A1-B7",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9",
+   "719c268b-14df-47b6-afab-35f0efdb8a2b"
+  ],
+  "chars": 7863,
+  "call_s": 3
+ },
+ {
+  "beat": "A2-M1",
+  "model": "nano_banana_pro",
+  "refs": [],
+  "chars": 3501,
+  "call_s": 3
+ },
+ {
+  "beat": "A2-M2",
+  "model": "nano_banana_pro",
+  "refs": [],
+  "chars": 3496,
+  "call_s": 4
+ },
+ {
+  "beat": "A2-B1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "cd219dc4-2b30-4e18-ae35-d702e05fba56",
+   "1e46a65f-f165-4694-b5b6-1f92ea2688b3"
+  ],
+  "chars": 6630,
+  "call_s": 3
+ },
+ {
+  "beat": "A2-M3",
+  "model": "nano_banana_pro",
+  "refs": [],
+  "chars": 3457,
+  "call_s": 3
+ },
+ {
+  "beat": "A2-B2",
+  "model": "nano_banana_pro",
+  "refs": [
+   "cd219dc4-2b30-4e18-ae35-d702e05fba56",
+   "1e46a65f-f165-4694-b5b6-1f92ea2688b3"
+  ],
+  "chars": 6604,
+  "call_s": 3
+ },
+ {
+  "beat": "A2-B3",
+  "model": "nano_banana_pro",
+  "refs": [
+   "cd219dc4-2b30-4e18-ae35-d702e05fba56",
+   "1e46a65f-f165-4694-b5b6-1f92ea2688b3"
+  ],
+  "chars": 6651,
+  "call_s": 3
+ },
+ {
+  "beat": "A2-M4",
+  "model": "nano_banana_pro",
+  "refs": [],
+  "chars": 3475,
+  "call_s": 3
+ },
+ {
+  "beat": "A3-B1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9",
+   "719c268b-14df-47b6-afab-35f0efdb8a2b"
+  ],
+  "chars": 8018,
+  "call_s": 3
+ },
+ {
+  "beat": "A3-B2",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9",
+   "719c268b-14df-47b6-afab-35f0efdb8a2b"
+  ],
+  "chars": 8013,
+  "call_s": 3
+ },
+ {
+  "beat": "A3-B3",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9",
+   "719c268b-14df-47b6-afab-35f0efdb8a2b"
+  ],
+  "chars": 7944,
+  "call_s": 3
+ },
+ {
+  "beat": "A3-B4",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9",
+   "719c268b-14df-47b6-afab-35f0efdb8a2b"
+  ],
+  "chars": 7933,
+  "call_s": 5
+ },
+ {
+  "beat": "A4-P1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "dff971d2-5c32-4a5d-981a-d304f7a2b9f2",
+   "b1cc1764-3e34-4b37-b8c6-0abf55cfe68e",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "28df647e-d34a-4242-9f6e-1595857d4a45"
+  ],
+  "chars": 8381,
+  "call_s": 4
+ },
+ {
+  "beat": "A4-B1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "cd219dc4-2b30-4e18-ae35-d702e05fba56",
+   "1e46a65f-f165-4694-b5b6-1f92ea2688b3",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "0ff45502-a271-4d9a-af3c-40cb2c1ab1b1"
+  ],
+  "chars": 10762,
+  "call_s": 3
+ },
+ {
+  "beat": "A4-P2",
+  "model": "gpt_image_2_5",
+  "refs": [
+   "ba654d79-751c-4833-8780-a58cb4ef6e80",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "28df647e-d34a-4242-9f6e-1595857d4a45",
+   "97b2fd17-a972-4115-9741-8ac35c1877b9"
+  ],
+  "chars": 6677,
+  "call_s": 6
+ },
+ {
+  "beat": "A4-M1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "0ff45502-a271-4d9a-af3c-40cb2c1ab1b1"
+  ],
+  "chars": 6991,
+  "call_s": 4
+ },
+ {
+  "beat": "A4-B2",
+  "model": "nano_banana_pro",
+  "refs": [
+   "cd219dc4-2b30-4e18-ae35-d702e05fba56",
+   "1e46a65f-f165-4694-b5b6-1f92ea2688b3",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "0ff45502-a271-4d9a-af3c-40cb2c1ab1b1"
+  ],
+  "chars": 10750,
+  "call_s": 3
+ },
+ {
+  "beat": "A4-P3",
+  "model": "gpt_image_2_5",
+  "refs": [
+   "ba654d79-751c-4833-8780-a58cb4ef6e80",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "28df647e-d34a-4242-9f6e-1595857d4a45"
+  ],
+  "chars": 6637,
+  "call_s": 3
+ },
+ {
+  "beat": "A5-B1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "dff971d2-5c32-4a5d-981a-d304f7a2b9f2",
+   "b1cc1764-3e34-4b37-b8c6-0abf55cfe68e",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "28df647e-d34a-4242-9f6e-1595857d4a45"
+  ],
+  "chars": 8620,
+  "call_s": 4
+ },
+ {
+  "beat": "A5-B2",
+  "model": "nano_banana_pro",
+  "refs": [
+   "cd219dc4-2b30-4e18-ae35-d702e05fba56",
+   "1e46a65f-f165-4694-b5b6-1f92ea2688b3",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "0ff45502-a271-4d9a-af3c-40cb2c1ab1b1"
+  ],
+  "chars": 10813,
+  "call_s": 5
+ },
+ {
+  "beat": "A5-B3",
+  "model": "nano_banana_pro",
+  "refs": [
+   "cd219dc4-2b30-4e18-ae35-d702e05fba56",
+   "1e46a65f-f165-4694-b5b6-1f92ea2688b3",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "0ff45502-a271-4d9a-af3c-40cb2c1ab1b1"
+  ],
+  "chars": 10782,
+  "call_s": 4
+ },
+ {
+  "beat": "A5-B4",
+  "model": "nano_banana_pro",
+  "refs": [
+   "cd219dc4-2b30-4e18-ae35-d702e05fba56",
+   "1e46a65f-f165-4694-b5b6-1f92ea2688b3",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "0ff45502-a271-4d9a-af3c-40cb2c1ab1b1"
+  ],
+  "chars": 10744,
+  "call_s": 3
+ },
+ {
+  "beat": "A5-P1",
+  "model": "gpt_image_2_5",
+  "refs": [
+   "ba654d79-751c-4833-8780-a58cb4ef6e80",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "28df647e-d34a-4242-9f6e-1595857d4a45",
+   "e8fe3df3-29e4-4e8e-96d1-8d94245f7be9"
+  ],
+  "chars": 6635,
+  "call_s": 3
+ },
+ {
+  "beat": "A5-F1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9",
+   "719c268b-14df-47b6-afab-35f0efdb8a2b"
+  ],
+  "chars": 8266,
+  "call_s": 4
+ },
+ {
+  "beat": "A5-B5",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 7387,
+  "call_s": 4
+ }
+]

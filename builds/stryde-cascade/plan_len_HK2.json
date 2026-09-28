@@ -1,0 +1,364 @@
+{
+ "audio": [
+  "vo/master/HK2.wav",
+  "vo/master/BODY.wav"
+ ],
+ "script": [
+  "vo/HK2.lines.txt",
+  "vo/BODY.lines.txt"
+ ],
+ "base": [
+  "th/tmp/TH-HK2.mp4",
+  "th/tmp/TH-BODY.mp4"
+ ],
+ "broll": [
+  {
+   "beat": "HK2-B1",
+   "phrase": "The first one goes at the top of the stairs.",
+   "key": "top",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "HK2-B2",
+   "phrase": "The second one goes the whole way down.",
+   "key": "whole",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "HK2-B3",
+   "phrase": "I would like to stop being called back for the second one.",
+   "key": "called",
+   "layout": {
+    "type": "split",
+    "broll_pos": "bottom",
+    "ratio": 0.5
+   },
+   "max": 6
+  },
+  {
+   "beat": "A1-B1",
+   "phrase": "One knee starts hurting on the stairs.",
+   "key": "hurting",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A1-B2",
+   "phrase": "You lead with the good leg, every step.",
+   "key": "lead",
+   "layout": {
+    "type": "split",
+    "broll_pos": "bottom",
+    "ratio": 0.5
+   },
+   "max": 6
+  },
+  {
+   "beat": "A1-B3",
+   "phrase": "Within a year or two it starts as well.",
+   "key": "starts",
+   "layout": {
+    "type": "pip",
+    "over": "th",
+    "corner": "br",
+    "scale": 0.5,
+    "border": 0
+   },
+   "max": 6
+  },
+  {
+   "beat": "A1-B4",
+   "phrase": "Then a rail at the top.",
+   "key": "top",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A1-B5",
+   "phrase": "Then a rail all the way down.",
+   "key": "down",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A1-B6",
+   "phrase": "Then you stop going up in the afternoon.",
+   "key": "afternoon",
+   "layout": {
+    "type": "split",
+    "broll_pos": "bottom",
+    "ratio": 0.5
+   },
+   "max": 6
+  },
+  {
+   "beat": "A1-B7",
+   "phrase": "Then a bed comes downstairs.",
+   "key": "bed",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A2-M1",
+   "phrase": "Every step on that list is a response to weight landing in one place.",
+   "key": "weight",
+   "layout": {
+    "type": "full"
+   },
+   "max": 8
+  },
+  {
+   "beat": "A2-M2",
+   "phrase": "there is a band of tendon about as wide as your thumb.",
+   "key": "band",
+   "layout": {
+    "type": "full"
+   },
+   "max": 8
+  },
+  {
+   "beat": "A2-B1",
+   "phrase": "Every step you take lands on it.",
+   "key": "lands",
+   "layout": {
+    "type": "split",
+    "broll_pos": "bottom",
+    "ratio": 0.5
+   },
+   "max": 6
+  },
+  {
+   "beat": "A2-M3",
+   "phrase": "Seventeen times your bodyweight.",
+   "key": "Seventeen",
+   "layout": {
+    "type": "full"
+   },
+   "max": 8
+  },
+  {
+   "beat": "A2-B2",
+   "phrase": "Put your finger there and press.",
+   "key": "finger",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A2-B3",
+   "phrase": "Coming down is worse than going up.",
+   "key": "Coming",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A2-M4",
+   "phrase": "You are catching yourself, and the catch lands on that band.",
+   "key": "catch",
+   "layout": {
+    "type": "full"
+   },
+   "max": 8
+  },
+  {
+   "beat": "A3-B1",
+   "phrase": "The physio helps and then stops helping.",
+   "key": "physio",
+   "layout": {
+    "type": "pip",
+    "over": "th",
+    "corner": "br",
+    "scale": 0.5,
+    "border": 0
+   },
+   "max": 6
+  },
+  {
+   "beat": "A3-B2",
+   "phrase": "The gel sits on your skin.",
+   "key": "gel",
+   "layout": {
+    "type": "pip",
+    "over": "th",
+    "corner": "br",
+    "scale": 0.5,
+    "border": 0
+   },
+   "max": 6
+  },
+  {
+   "beat": "A3-B3",
+   "phrase": "The pills switch the alarm off.",
+   "key": "pills",
+   "layout": {
+    "type": "pip",
+    "over": "th",
+    "corner": "br",
+    "scale": 0.5,
+    "border": 0
+   },
+   "max": 6
+  },
+  {
+   "beat": "A3-B4",
+   "phrase": "The sleeve squeezes the whole knee",
+   "key": "sleeve",
+   "layout": {
+    "type": "split",
+    "broll_pos": "bottom",
+    "ratio": 0.5
+   },
+   "max": 6
+  },
+  {
+   "beat": "A4-P1",
+   "phrase": "The strap I keep in the van now is called Stryde.",
+   "key": "van",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A4-B1",
+   "phrase": "It sits two centimetres below the kneecap, on the tendon.",
+   "key": "below",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A4-P2",
+   "phrase": "There is a silicone pad inside",
+   "key": "pad",
+   "layout": {
+    "type": "pip",
+    "over": "th",
+    "corner": "br",
+    "scale": 0.5,
+    "border": 0
+   },
+   "max": 6
+  },
+  {
+   "beat": "A4-M1",
+   "phrase": "Your weight gets caught and moved off the worn part before it reaches the joint.",
+   "key": "caught",
+   "layout": {
+    "type": "full"
+   },
+   "max": 8
+  },
+  {
+   "beat": "A4-B2",
+   "phrase": "The placement is the whole thing.",
+   "key": "placement",
+   "layout": {
+    "type": "split",
+    "broll_pos": "bottom",
+    "ratio": 0.5
+   },
+   "max": 6
+  },
+  {
+   "beat": "A4-P3",
+   "phrase": "Thirty four percent less strain.",
+   "key": "Thirty",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A5-B1",
+   "phrase": "I started carrying a couple",
+   "key": "couple",
+   "layout": {
+    "type": "split",
+    "broll_pos": "bottom",
+    "ratio": 0.5
+   },
+   "max": 6
+  },
+  {
+   "beat": "A5-B2",
+   "phrase": "Because the weight is not landing on that band any more.",
+   "key": "weight",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A5-B3",
+   "phrase": "One knee only. Leave the other bare.",
+   "key": "One",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A5-B4",
+   "phrase": "Go to your own stairs and come down forwards.",
+   "key": "down",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A5-P1",
+   "phrase": "Two for one, so you do both knees,",
+   "key": "Two",
+   "layout": {
+    "type": "full"
+   },
+   "max": 6
+  },
+  {
+   "beat": "A5-F1",
+   "phrase": "The copies stretch, and a stretched strap does not hold the spot.",
+   "key": "stretched",
+   "layout": {
+    "type": "pip",
+    "over": "th",
+    "corner": "br",
+    "scale": 0.5,
+    "border": 0
+   },
+   "max": 6
+  },
+  {
+   "beat": "A5-B5",
+   "phrase": "if you know somebody whose stairs have started taking them longer,",
+   "key": "stairs",
+   "layout": {
+    "type": "split",
+    "broll_pos": "bottom",
+    "ratio": 0.5
+   },
+   "max": 6
+  }
+ ],
+ "th_focus_y": 0.3,
+ "mode": 1
+}

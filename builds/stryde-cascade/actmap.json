@@ -1,0 +1,1894 @@
+[
+ {
+  "beat": "HK1-B1",
+  "act": "Hook 1",
+  "phrase": "It is a weight problem, and the weight has to go somewhere.",
+  "key": "weight",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.5
+  },
+  "subject": "C1",
+  "location": "P1-HALL",
+  "story_day": 2,
+  "action": "C1 steps down one stair, her whole weight dropping onto her right leg as her hand grips the banister",
+  "pace": "one step, slow, about 2s",
+  "camera": "sway",
+  "staging": "STAIR-DOWN, one step, hand on the rail",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "low",
+   "side": "three-quarter",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "low on the stairs: the weight coming down onto the knee",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "hook: the problem made visible",
+   "why": ""
+  },
+  "face": false,
+  "duration": 4,
+  "note": "EG02 split — C1's knee and hand on the step",
+  "cut_s": 1.5,
+  "on_screen_s": 2.58
+ },
+ {
+  "beat": "HK1-B2",
+  "act": "Hook 1",
+  "phrase": "I fit stair rails for a living.",
+  "key": "rails",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "N-hands",
+  "location": "P1-HALL",
+  "story_day": 0,
+  "action": "N's hands drive the last screw into a brass bracket of a new handrail on C1's stair wall",
+  "pace": "one screw, 2s",
+  "camera": "sway",
+  "staging": "hands at a wall, no ladder",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "hands at work: this is his trade",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "hook: the problem made visible",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "N wears the navy fleece (cuff visible)",
+  "cut_s": 4.0833,
+  "on_screen_s": 0.79
+ },
+ {
+  "beat": "HK1-B3",
+  "act": "Hook 1",
+  "phrase": "I have watched where it goes.",
+  "key": "watched",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.5,
+   "border": 0
+  },
+  "subject": "C1",
+  "location": "P1-HALL",
+  "story_day": 2,
+  "action": "C1, seen from the foot of the stairs, lowers herself one step down, leading with her good leg, hand sliding on the rail",
+  "pace": "one step, slow",
+  "camera": "sway",
+  "staging": "STAIR-DOWN, seen from below",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "low",
+   "side": "front",
+   "scale": "FULL",
+   "fg": "through",
+   "why": "seen from where he stands: watching her come down",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "background",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "back",
+   "time": "afternoon",
+   "arc": "hook: the problem made visible",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  },
+  "face": false,
+  "duration": 3,
+  "note": "EG01 pip; seen through the banister spindles; backlit by the landing window — why: the stairhead window is behind her; face small and not speaking",
+  "cut_s": 6.9583,
+  "on_screen_s": 1.04
+ },
+ {
+  "beat": "HK2-B1",
+  "act": "Hook 2",
+  "phrase": "The first one goes at the top of the stairs.",
+  "key": "top",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "N-hands",
+  "location": "P1-HALL",
+  "story_day": 0,
+  "action": "N's hand runs along a short new oak rail fixed at the top two steps, checking it, a spirit level resting on it",
+  "pace": "one slow slide of the hand, 2s",
+  "camera": "sway",
+  "staging": "hand on rail, standing on the landing",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "high",
+   "side": "three-quarter",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "high from the landing: the top of the stairs",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "hook: the problem made visible",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "",
+  "cut_s": 3.9583,
+  "on_screen_s": 1.63
+ },
+ {
+  "beat": "HK2-B2",
+  "act": "Hook 2",
+  "phrase": "The second one goes the whole way down.",
+  "key": "whole",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "none",
+  "location": "P1-HALL",
+  "story_day": 2,
+  "action": "the empty staircase seen from the hall floor: a second rail now runs the full length of the wall side, top to bottom; the camera tilts slowly up it",
+  "pace": "slow tilt, 3s",
+  "camera": "one travelling move on a still subject: tilt up",
+  "staging": "none",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "ground",
+   "side": "front",
+   "scale": "WIDE",
+   "fg": "clean",
+   "why": "from the floor up the whole flight: the length of it",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "back",
+   "time": "afternoon",
+   "arc": "hook: the problem made visible",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  },
+  "face": false,
+  "duration": 3,
+  "note": "no person; the rail reads from bottom to top",
+  "cut_s": 5.5833,
+  "on_screen_s": 1.58
+ },
+ {
+  "beat": "HK2-B3",
+  "act": "Hook 2",
+  "phrase": "I would like to stop being called back for the second one.",
+  "key": "called",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.5
+  },
+  "subject": "N",
+  "location": "VAN",
+  "story_day": 0,
+  "action": "N sits in the open side door of his van, phone to his ear, listening, then lowers his eyes",
+  "pace": "one small nod, slow",
+  "camera": "sway",
+  "staging": "seated, still",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "eye",
+   "side": "profile",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "profile: distance, the call he doesn't want",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "N's van: overcast daylight through the open sliding side door",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "hook: the problem made visible",
+   "why": ""
+  },
+  "face": true,
+  "duration": 3,
+  "note": "silent — he listens, lips closed (no lip-sync); a plain phone, no logo",
+  "cut_s": 7.1667,
+  "on_screen_s": 1.17
+ },
+ {
+  "beat": "HK3-B1",
+  "act": "Hook 3",
+  "phrase": "When I am asked to move a bed into a front room,",
+  "key": "bed",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "none",
+  "location": "P1-FRONT",
+  "story_day": 3,
+  "action": "the front room with the single divan against the wall where the sofa was; slow push toward the bed",
+  "pace": "slow push-in, 3s",
+  "camera": "one travelling move on a still subject: push-in",
+  "staging": "none",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "WIDE",
+   "fg": "clean",
+   "why": "the room from its doorway: what the house has become",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "hook: after the cascade",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "",
+  "cut_s": 0.8333,
+  "on_screen_s": 1.12
+ },
+ {
+  "beat": "HK3-B2",
+  "act": "Hook 3",
+  "phrase": "the knee has usually been bad for about six years.",
+  "key": "knee",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.5
+  },
+  "subject": "C1",
+  "location": "P1-FRONT",
+  "story_day": 3,
+  "action": "C1 sits on the edge of the downstairs bed and rubs her right knee with both hands, slowly",
+  "pace": "one rub, slow, 3s",
+  "camera": "sway",
+  "staging": "seated, still",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "high",
+   "side": "three-quarter",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "high: small, worn down",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "hook: after the cascade",
+   "why": ""
+  },
+  "face": false,
+  "duration": 4,
+  "note": "D3 wardrobe: quilted dressing gown",
+  "cut_s": 1.9583,
+  "on_screen_s": 2.17
+ },
+ {
+  "beat": "HK3-B3",
+  "act": "Hook 3",
+  "phrase": "It arrives one small change at a time,",
+  "key": "change",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.5,
+   "border": 0
+  },
+  "subject": "none",
+  "location": "P1-HALL",
+  "story_day": 3,
+  "action": "C1's slippers left at the foot of the stairs, a walking stick leaning on the newel post; nothing moves but the light",
+  "pace": "still, 3s",
+  "camera": "sway",
+  "staging": "none",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "ground",
+   "side": "three-quarter",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "floor level: the small things left at the stairs",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "foreground",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "back",
+   "time": "afternoon",
+   "arc": "hook: after the cascade",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  },
+  "face": false,
+  "duration": 4,
+  "note": "",
+  "cut_s": 6.2083,
+  "on_screen_s": 2.33
+ },
+ {
+  "beat": "A1-B1",
+  "act": "Act 1",
+  "phrase": "One knee starts hurting on the stairs.",
+  "key": "hurting",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "C1",
+  "location": "P1-HALL",
+  "story_day": 1,
+  "action": "C1 halfway up her stairs stops on a step and presses her hand to her left knee, wincing",
+  "pace": "one stop, slow",
+  "camera": "sway",
+  "staging": "STAIR-UP paused, hand on rail",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "low",
+   "side": "three-quarter-back",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "low behind her: the climb ahead",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "Act 1: ordinary morning light, the problem starting",
+   "why": ""
+  },
+  "face": false,
+  "duration": 4,
+  "note": "D1 wardrobe: lilac cardigan, navy skirt",
+  "cut_s": 12.75,
+  "on_screen_s": 2.12
+ },
+ {
+  "beat": "A1-B2",
+  "act": "Act 1",
+  "phrase": "You lead with the good leg, every step.",
+  "key": "lead",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.5
+  },
+  "subject": "C1",
+  "location": "P1-HALL",
+  "story_day": 1,
+  "action": "C1's feet and legs climbing two steps, always lifting the right foot first and bringing the left up to meet it",
+  "pace": "two steps, one per 1.5s",
+  "camera": "sway",
+  "staging": "STAIR-UP, legs only",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "ground",
+   "side": "profile",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "ground level: the feet, step by step",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "foreground",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "Act 1: ordinary morning light, the problem starting",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "",
+  "cut_s": 14.875,
+  "on_screen_s": 1.71
+ },
+ {
+  "beat": "A1-B3",
+  "act": "Act 1",
+  "phrase": "Within a year or two it starts as well.",
+  "key": "starts",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.5,
+   "border": 0
+  },
+  "subject": "C1",
+  "location": "P1-HALL",
+  "story_day": 1,
+  "action": "C1 sitting on the second stair rubs her right knee now, her other hand on the left",
+  "pace": "one rub, slow",
+  "camera": "sway",
+  "staging": "seated on a step",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "high",
+   "side": "front",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "high: small, both knees now",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Act 1: ordinary morning light, the problem starting",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "",
+  "cut_s": 19.25,
+  "on_screen_s": 1.46
+ },
+ {
+  "beat": "A1-B4",
+  "act": "Act 1",
+  "phrase": "Then a rail at the top.",
+  "key": "top",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "C1",
+  "location": "P1-HALL",
+  "story_day": 2,
+  "action": "C1 at the top of the stairs grips the short new oak rail with her right hand before taking the first step down",
+  "pace": "one grip and lean, slow",
+  "camera": "sway",
+  "staging": "STAIR-DOWN start, hand on rail",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "high",
+   "side": "three-quarter",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "high from the landing: the drop below her",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "back",
+   "time": "afternoon",
+   "arc": "Act 1: afternoon, the rails arrive",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  },
+  "face": false,
+  "duration": 3,
+  "note": "D2 wardrobe: navy cardigan over floral blouse; backlit by the landing window — why: she stands with it behind her",
+  "cut_s": 20.7083,
+  "on_screen_s": 1.12
+ },
+ {
+  "beat": "A1-B5",
+  "act": "Act 1",
+  "phrase": "Then a rail all the way down.",
+  "key": "down",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "C1",
+  "location": "P1-HALL",
+  "story_day": 2,
+  "action": "C1 comes down the flight holding a rail with both hands, one either side, one step at a time",
+  "pace": "one step, slow",
+  "camera": "sway",
+  "staging": "STAIR-DOWN, both hands on rails",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "low",
+   "side": "front",
+   "scale": "FULL",
+   "fg": "clean",
+   "why": "low from the hall: both rails, both hands",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "background",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "back",
+   "time": "afternoon",
+   "arc": "Act 1: afternoon, the rails arrive",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  },
+  "face": false,
+  "duration": 3,
+  "note": "face small; backlit by landing window — why: the only window is at the stairhead",
+  "cut_s": 21.8333,
+  "on_screen_s": 1.5
+ },
+ {
+  "beat": "A1-B6",
+  "act": "Act 1",
+  "phrase": "Then you stop going up in the afternoon.",
+  "key": "afternoon",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.5
+  },
+  "subject": "C1",
+  "location": "P1-HALL",
+  "story_day": 2,
+  "action": "C1 at the foot of the stairs looks up the flight, then turns away from it",
+  "pace": "one look up, slow",
+  "camera": "sway",
+  "staging": "standing, still",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "eye",
+   "side": "three-quarter-back",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "over her shoulder: the stairs she won't climb",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "background",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "Act 1: afternoon, the rails arrive",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "",
+  "cut_s": 23.3333,
+  "on_screen_s": 0.88
+ },
+ {
+  "beat": "A1-B7",
+  "act": "Act 1",
+  "phrase": "Then a bed comes downstairs.",
+  "key": "bed",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "C1",
+  "location": "P1-FRONT",
+  "story_day": 3,
+  "action": "C1 in her dressing gown lowers herself to sit on the downstairs bed in the front room",
+  "pace": "one sit, slow, 3s",
+  "camera": "sway",
+  "staging": "SIT-DOWN, hand on bedside cabinet",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "FULL",
+   "fg": "clean",
+   "why": "the front room, eye level: this is where she lives now",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 1: the end of the cascade",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "",
+  "cut_s": 24.2083,
+  "on_screen_s": 0.79
+ },
+ {
+  "beat": "A2-M1",
+  "act": "Act 2",
+  "phrase": "Every step on that list is a response to weight landing in one place.",
+  "key": "weight",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "anatomy",
+  "location": "ANAT",
+  "story_day": 0,
+  "action": "a knee in side view steps down; a pulse of load travels down the thigh and lands on the patellar tendon below the kneecap, which glows",
+  "pace": "one landing, 2s",
+  "camera": "locked render camera",
+  "staging": "none",
+  "pin_end": false,
+  "max": 8,
+  "product_state": "absent",
+  "type": "MECH",
+  "angle": {
+   "height": "eye",
+   "side": "profile",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "anatomy profile: where the load lands",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "§12A anatomical register (ANAT-LIGHT)",
+   "key_side": "L",
+   "time": "n/a",
+   "arc": "Act 2: mechanism register",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "",
+  "cut_s": 29.0833,
+  "on_screen_s": 1.25
+ },
+ {
+  "beat": "A2-M2",
+  "act": "Act 2",
+  "phrase": "there is a band of tendon about as wide as your thumb.",
+  "key": "band",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "anatomy",
+  "location": "ANAT",
+  "story_day": 0,
+  "action": "front view of the knee: the patellar tendon just below the kneecap highlights as a band; slow push-in",
+  "pace": "slow push-in, 3s",
+  "camera": "one travelling move on a still subject: push-in",
+  "staging": "none",
+  "pin_end": false,
+  "max": 8,
+  "product_state": "absent",
+  "type": "MECH",
+  "angle": {
+   "height": "eye",
+   "side": "front",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "front anatomy: the band itself",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "§12A anatomical register (ANAT-LIGHT)",
+   "key_side": "L",
+   "time": "n/a",
+   "arc": "Act 2: mechanism register",
+   "why": ""
+  },
+  "face": false,
+  "duration": 4,
+  "note": "",
+  "cut_s": 32.4583,
+  "on_screen_s": 3.04
+ },
+ {
+  "beat": "A2-B1",
+  "act": "Act 2",
+  "phrase": "Every step you take lands on it.",
+  "key": "lands",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.5
+  },
+  "subject": "C2",
+  "location": "C2-HALL",
+  "story_day": 1,
+  "action": "C2's right knee in shorts as his foot lands on the next step down, the skin below the kneecap tensing",
+  "pace": "one step down, 1.5s",
+  "camera": "sway",
+  "staging": "STAIR-DOWN, legs only",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "low",
+   "side": "three-quarter",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "low and close on the landing knee",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "foreground",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "Act 2: plain morning, explanation",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "",
+  "cut_s": 35.5,
+  "on_screen_s": 0.79
+ },
+ {
+  "beat": "A2-M3",
+  "act": "Act 2",
+  "phrase": "Seventeen times your bodyweight.",
+  "key": "Seventeen",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "anatomy",
+  "location": "ANAT",
+  "story_day": 0,
+  "action": "side view: the tendon under load flares red and compresses as the body weight lands, then eases",
+  "pace": "one pulse, 2s",
+  "camera": "locked render camera",
+  "staging": "none",
+  "pin_end": false,
+  "max": 8,
+  "product_state": "absent",
+  "type": "MECH",
+  "angle": {
+   "height": "eye",
+   "side": "profile",
+   "scale": "ECU",
+   "fg": "clean",
+   "why": "anatomy close: the strain",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "§12A anatomical register (ANAT-LIGHT)",
+   "key_side": "L",
+   "time": "n/a",
+   "arc": "Act 2: mechanism register",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "EG07 overlay 17× in CapCut",
+  "cut_s": 36.2917,
+  "on_screen_s": 1.62
+ },
+ {
+  "beat": "A2-B2",
+  "act": "Act 2",
+  "phrase": "Put your finger there and press.",
+  "key": "finger",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "C2",
+  "location": "C2-HALL",
+  "story_day": 1,
+  "action": "C2 seated on his bottom stair presses one fingertip into the soft spot just below his right kneecap",
+  "pace": "one press, slow",
+  "camera": "sway",
+  "staging": "seated on the bottom step",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "high",
+   "side": "front",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "looking down at his knee as he does: his point of view",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Act 2: plain morning, explanation",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "",
+  "cut_s": 37.9167,
+  "on_screen_s": 1.96
+ },
+ {
+  "beat": "A2-B3",
+  "act": "Act 2",
+  "phrase": "Coming down is worse than going up.",
+  "key": "Coming",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "C2",
+  "location": "C2-HALL",
+  "story_day": 1,
+  "action": "C2 comes down two stairs, his right hand on the banister, knee bending under him",
+  "pace": "one step per 1.5s",
+  "camera": "sway",
+  "staging": "STAIR-DOWN, hand on rail",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "low",
+   "side": "three-quarter",
+   "scale": "FULL",
+   "fg": "clean",
+   "why": "low from the hall: the descent",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "background",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "Act 2: plain morning, explanation",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  },
+  "face": false,
+  "duration": 3,
+  "note": "backlit by landing window — why: the only window is at the stairhead; not speaking",
+  "cut_s": 39.875,
+  "on_screen_s": 1.58
+ },
+ {
+  "beat": "A2-M4",
+  "act": "Act 2",
+  "phrase": "You are catching yourself, and the catch lands on that band.",
+  "key": "catch",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "anatomy",
+  "location": "ANAT",
+  "story_day": 0,
+  "action": "side view on a descending step: the thigh muscle lengthens and the load snaps down onto the tendon below the kneecap, which flares",
+  "pace": "one catch, 2s",
+  "camera": "locked render camera",
+  "staging": "none",
+  "pin_end": false,
+  "max": 8,
+  "product_state": "absent",
+  "type": "MECH",
+  "angle": {
+   "height": "eye",
+   "side": "profile",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "anatomy profile: the catch",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "§12A anatomical register (ANAT-LIGHT)",
+   "key_side": "L",
+   "time": "n/a",
+   "arc": "Act 2: mechanism register",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "",
+  "cut_s": 45.3333,
+  "on_screen_s": 1.25
+ },
+ {
+  "beat": "A3-B1",
+  "act": "Act 3",
+  "phrase": "The physio helps and then stops helping.",
+  "key": "physio",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.5,
+   "border": 0
+  },
+  "subject": "C1",
+  "location": "P1-FRONT",
+  "story_day": 2,
+  "action": "C1 lying on the front-room carpet on a towel does a straight-leg raise, slowly, and lowers it",
+  "pace": "one raise and lower, 3s",
+  "camera": "sway",
+  "staging": "floor exercise, whole body in frame",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "high",
+   "side": "profile",
+   "scale": "FULL",
+   "fg": "clean",
+   "why": "high: small on the floor",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 3: flat afternoon, things that don't work",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "D2 wardrobe",
+  "cut_s": 55.625,
+  "on_screen_s": 1.71
+ },
+ {
+  "beat": "A3-B2",
+  "act": "Act 3",
+  "phrase": "The gel sits on your skin.",
+  "key": "gel",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.5,
+   "border": 0
+  },
+  "subject": "C1",
+  "location": "P1-FRONT",
+  "story_day": 2,
+  "action": "C1's fingers rub a blob of clear gel over the front of her knee; it shines and sits on the skin",
+  "pace": "one rub, slow",
+  "camera": "sway",
+  "staging": "seated, hands only",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "high",
+   "side": "front",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "close, looking down: the gel on the surface",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 3: flat afternoon, things that don't work",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "plain unbranded tube",
+  "cut_s": 57.3333,
+  "on_screen_s": 1.42
+ },
+ {
+  "beat": "A3-B3",
+  "act": "Act 3",
+  "phrase": "The pills switch the alarm off.",
+  "key": "pills",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.5,
+   "border": 0
+  },
+  "subject": "C1",
+  "location": "P1-FRONT",
+  "story_day": 3,
+  "action": "C1's hand presses two white tablets out of a plain silver blister pack on the bedside cabinet",
+  "pace": "one press, 2s",
+  "camera": "sway",
+  "staging": "hands only",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "overhead",
+   "side": "front",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "overhead: routine, every day",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 3: flat afternoon, things that don't work",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "plain foil, no brand",
+  "cut_s": 58.75,
+  "on_screen_s": 1.5
+ },
+ {
+  "beat": "A3-B4",
+  "act": "Act 3",
+  "phrase": "The sleeve squeezes the whole knee",
+  "key": "sleeve",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.5
+  },
+  "subject": "C1",
+  "location": "P1-FRONT",
+  "story_day": 2,
+  "action": "C1 seated pulls a plain grey knitted knee sleeve up over her knee; it squeezes the whole joint",
+  "pace": "one pull up, slow, 2s",
+  "camera": "sway",
+  "staging": "seated, hands and knee",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "close and level: the sleeve covering everything",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 3: flat afternoon, things that don't work",
+   "why": ""
+  },
+  "face": false,
+  "duration": 5,
+  "note": "generic unbranded sleeve",
+  "cut_s": 60.25,
+  "on_screen_s": 3.25
+ },
+ {
+  "beat": "A4-P1",
+  "act": "Act 4",
+  "phrase": "The strap I keep in the van now is called Stryde.",
+  "key": "van",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "N-hands",
+  "location": "VAN",
+  "story_day": 0,
+  "action": "N's hand lifts one Stryde strap out of a clear organiser box on the van shelf and turns it to face the lens, wordmark readable",
+  "pace": "one lift, slow, 2s",
+  "camera": "sway",
+  "staging": "held, HELD_GRIPS",
+  "pin_end": true,
+  "max": 6,
+  "product_state": "held",
+  "type": "BR",
+  "angle": {
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "close and level: the reveal",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "N's van: overcast daylight through the open sliding side door",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 4: overcast daylight, the answer",
+   "why": ""
+  },
+  "face": false,
+  "duration": 4,
+  "note": "product changes angle → pinned end frame, first + last frame call",
+  "cut_s": 69.5,
+  "on_screen_s": 2.42
+ },
+ {
+  "beat": "A4-B1",
+  "act": "Act 4",
+  "phrase": "It sits two centimetres below the kneecap, on the tendon.",
+  "key": "below",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "C2",
+  "location": "C2-HALL",
+  "story_day": 1,
+  "action": "C2 seated on the bottom stair, the strap already on his right knee below the kneecap; he straightens the leg slowly",
+  "pace": "one straighten, slow",
+  "camera": "sway",
+  "staging": "seated, strap worn (PLACE_LOCK)",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "worn",
+  "type": "BR",
+  "angle": {
+   "height": "low",
+   "side": "front",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "low and close on the knee: exactly where it sits",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Act 4: morning, the answer",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "",
+  "cut_s": 71.9167,
+  "on_screen_s": 1.38
+ },
+ {
+  "beat": "A4-P2",
+  "act": "Act 4",
+  "phrase": "There is a silicone pad inside",
+  "key": "pad",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.5,
+   "border": 0
+  },
+  "subject": "product",
+  "location": "WORK",
+  "story_day": 0,
+  "action": "the strap lying on N's workbench, turned to show the inside of the shell, the plain black pad; slow push-in",
+  "pace": "slow push-in, 3s",
+  "camera": "one travelling move on a still subject: push-in",
+  "staging": "none",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "object",
+  "type": "BR",
+  "angle": {
+   "height": "high",
+   "side": "three-quarter",
+   "scale": "ECU",
+   "fg": "clean",
+   "why": "close, looking in: the pad",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "N's workshop: small side window, camera-left of the TH position (south)",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "Act 4: the answer",
+   "why": ""
+  },
+  "face": false,
+  "duration": 6,
+  "note": "",
+  "cut_s": 75.2083,
+  "on_screen_s": 4.79
+ },
+ {
+  "beat": "A4-M1",
+  "act": "Act 4",
+  "phrase": "Your weight gets caught and moved off the worn part before it reaches the joint.",
+  "key": "caught",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "anatomy",
+  "location": "ANAT",
+  "story_day": 0,
+  "action": "side view: the strap's pad presses on the tendon below the kneecap; the load pulse arrives, is caught at the pad and spreads away, the tendon stays calm",
+  "pace": "one pulse, 2s",
+  "camera": "locked render camera",
+  "staging": "none",
+  "pin_end": false,
+  "max": 8,
+  "product_state": "worn",
+  "type": "MECH",
+  "angle": {
+   "height": "eye",
+   "side": "profile",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "anatomy profile: the load caught",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "§12A anatomical register (ANAT-LIGHT)",
+   "key_side": "L",
+   "time": "n/a",
+   "arc": "Act 2: mechanism register",
+   "why": ""
+  },
+  "face": false,
+  "duration": 4,
+  "note": "",
+  "cut_s": 80.0,
+  "on_screen_s": 2.79
+ },
+ {
+  "beat": "A4-B2",
+  "act": "Act 4",
+  "phrase": "The placement is the whole thing.",
+  "key": "placement",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.5
+  },
+  "subject": "C2",
+  "location": "C2-HALL",
+  "story_day": 1,
+  "action": "C2's two fingers laid flat under his kneecap mark the spot, the strap's notch already resting right there against the kneecap's lower edge",
+  "pace": "one hold, still, 2s",
+  "camera": "sway",
+  "staging": "seated, strap worn",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "worn",
+  "type": "BR",
+  "angle": {
+   "height": "high",
+   "side": "front",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "looking down: the spot",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Act 4: morning, the answer",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "",
+  "cut_s": 82.7917,
+  "on_screen_s": 1.21
+ },
+ {
+  "beat": "A4-P3",
+  "act": "Act 4",
+  "phrase": "Thirty four percent less strain.",
+  "key": "Thirty",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "product",
+  "location": "WORK",
+  "story_day": 0,
+  "action": "two Stryde straps lying side by side on N's workbench in the window light; slow push-in",
+  "pace": "slow push-in, 3s",
+  "camera": "one travelling move on a still subject: push-in",
+  "staging": "none",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "object",
+  "type": "BR",
+  "angle": {
+   "height": "high",
+   "side": "front",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "high on the bench: the pair",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "N's workshop: small side window, camera-left of the TH position (south)",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "Act 4: the answer",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "EG07 overlay 34% in CapCut",
+  "cut_s": 85.8333,
+  "on_screen_s": 1.42
+ },
+ {
+  "beat": "A5-B1",
+  "act": "Act 5",
+  "phrase": "I started carrying a couple",
+  "key": "couple",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.5
+  },
+  "subject": "N",
+  "location": "VAN",
+  "story_day": 0,
+  "action": "N drops two straps into the organiser box on the van shelf and slides the lid shut",
+  "pace": "one drop, one slide, 3s",
+  "camera": "sway",
+  "staging": "hands at shelf",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "held",
+  "type": "BR",
+  "angle": {
+   "height": "eye",
+   "side": "three-quarter-back",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "over his shoulder: his own van",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "N's van: overcast daylight through the open sliding side door",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 5: overcast daylight",
+   "why": ""
+  },
+  "face": false,
+  "duration": 4,
+  "note": "",
+  "cut_s": 93.2917,
+  "on_screen_s": 2.17
+ },
+ {
+  "beat": "A5-B2",
+  "act": "Act 5",
+  "phrase": "Because the weight is not landing on that band any more.",
+  "key": "weight",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "C2",
+  "location": "C2-HALL",
+  "story_day": 1,
+  "action": "C2 walks down his stairs wearing the strap on his right knee, steady, one hand only lightly on the rail",
+  "pace": "one step per 1.2s, steady",
+  "camera": "sway",
+  "staging": "STAIR-DOWN",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "worn",
+  "type": "BR",
+  "angle": {
+   "height": "low",
+   "side": "three-quarter",
+   "scale": "FULL",
+   "fg": "clean",
+   "why": "low from the hall: easy now",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "background",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "Act 5: morning, relief",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  },
+  "face": false,
+  "duration": 5,
+  "note": "backlit by landing window — why: the stairhead window; not speaking",
+  "cut_s": 102.1667,
+  "on_screen_s": 3.42
+ },
+ {
+  "beat": "A5-B3",
+  "act": "Act 5",
+  "phrase": "One knee only. Leave the other bare.",
+  "key": "One",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "C2",
+  "location": "C2-HALL",
+  "story_day": 1,
+  "action": "C2 standing at the top of his stairs: the strap on his right knee, left knee bare; he shifts his weight onto the right leg",
+  "pace": "one weight shift, slow",
+  "camera": "sway",
+  "staging": "standing on the landing",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "worn",
+  "type": "BR",
+  "angle": {
+   "height": "high",
+   "side": "front",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "high from the landing: one strapped, one bare",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "Act 5: morning, relief",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  },
+  "face": false,
+  "duration": 4,
+  "note": "waist-down framing",
+  "cut_s": 105.5833,
+  "on_screen_s": 2.92
+ },
+ {
+  "beat": "A5-B4",
+  "act": "Act 5",
+  "phrase": "Go to your own stairs and come down forwards.",
+  "key": "down",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "C2",
+  "location": "C2-HALL",
+  "story_day": 1,
+  "action": "C2 comes down forwards two steps without holding the rail, arms loose",
+  "pace": "one step per 1.2s",
+  "camera": "sway",
+  "staging": "STAIR-DOWN, no rail",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "worn",
+  "type": "BR",
+  "angle": {
+   "height": "eye",
+   "side": "front",
+   "scale": "FULL",
+   "fg": "clean",
+   "why": "level, facing him: forwards, no rail",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "Act 5: morning, relief",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  },
+  "face": true,
+  "duration": 3,
+  "note": "backlit by landing window — why: stairhead window; not speaking",
+  "cut_s": 108.5,
+  "on_screen_s": 1.88
+ },
+ {
+  "beat": "A5-P1",
+  "act": "Act 5",
+  "phrase": "Two for one, so you do both knees,",
+  "key": "Two",
+  "layout": {
+   "type": "full"
+  },
+  "subject": "product",
+  "location": "WORK",
+  "story_day": 0,
+  "action": "N's hands lift the lid off the matte-black Stryde box on his workbench: two straps side by side in their wells",
+  "pace": "one lift, slow, 2s",
+  "camera": "sway",
+  "staging": "hands, box on bench",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "object",
+  "type": "BR",
+  "angle": {
+   "height": "overhead",
+   "side": "front",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "overhead: the box opening",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "N's workshop: small side window, camera-left of the TH position (south)",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "Act 5: the offer",
+   "why": ""
+  },
+  "face": false,
+  "duration": 3,
+  "note": "PACKAGE; offer text in CapCut",
+  "cut_s": 110.375,
+  "on_screen_s": 2.08
+ },
+ {
+  "beat": "A5-F1",
+  "act": "Act 5",
+  "phrase": "The copies stretch, and a stretched strap does not hold the spot.",
+  "key": "stretched",
+  "layout": {
+   "type": "pip",
+   "over": "th",
+   "corner": "br",
+   "scale": 0.5,
+   "border": 0
+  },
+  "subject": "C1",
+  "location": "P1-FRONT",
+  "story_day": 2,
+  "action": "a cheap copy strap on C1's knee has slid down to her shin, its band stretched and sagging; she tugs it back up and it slips again",
+  "pace": "one tug and slip, 3s",
+  "camera": "sway",
+  "staging": "seated, hands and knee",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "fake",
+  "type": "BR",
+  "angle": {
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "CU",
+   "fg": "clean",
+   "why": "close and level: the copy failing",
+   "mirror_of": null
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 5: the offer",
+   "why": ""
+  },
+  "face": false,
+  "duration": 4,
+  "note": "FAKE_BASE + 'soft silicone' sag; no wordmark",
+  "cut_s": 116.4583,
+  "on_screen_s": 2.71
+ },
+ {
+  "beat": "A5-B5",
+  "act": "Act 5",
+  "phrase": "if you know somebody whose stairs have started taking them longer,",
+  "key": "stairs",
+  "layout": {
+   "type": "split",
+   "broll_pos": "bottom",
+   "ratio": 0.5
+  },
+  "subject": "C1",
+  "location": "P1-HALL",
+  "story_day": 2,
+  "action": "C1 climbs one stair slowly, both hands on the rails, pausing",
+  "pace": "one step, slow, 3s",
+  "camera": "sway",
+  "staging": "STAIR-UP, both hands on rails",
+  "pin_end": false,
+  "max": 6,
+  "product_state": "absent",
+  "type": "BR",
+  "angle": {
+   "height": "eye",
+   "side": "three-quarter-back",
+   "scale": "MEDIUM",
+   "fg": "clean",
+   "why": "behind her, level: someone you know",
+   "mirror_of": "A1-B1"
+  },
+  "focus": {
+   "plane": "background",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "Act 5: afternoon, the ask",
+   "why": ""
+  },
+  "face": false,
+  "duration": 4,
+  "note": "",
+  "cut_s": 119.1667,
+  "on_screen_s": 2.54
+ }
+]
