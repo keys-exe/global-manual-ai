@@ -11,7 +11,7 @@ Needs KIE_API_KEY in the environment (an environment secret; never pasted in cha
   kie.py seedance --prompt-file P --ref-image URL ... [--ref-audio URL ...]
         [--duration 10] [--no-audio] [--out FILE]
   kie.py kling  --prompt-file P --image URL --duration 3-15 [--no-audio] [--out FILE]
-        Kling 3.0 Omni image-to-video (kling-3.0-omni/image-to-video) — the Kling fallback when
+        Kling 3.0 Omni image-to-video (kling-3.0-omni/image-to-video; aspect auto = the 9:16 start image) — the Kling fallback when
         the Kling connector is short of credits (user, 2026-09-28): same model, same §35 prompt
         (≤ 2,500 kept; Kie allows 3,072), 1080p, 9:16, prefer_multi_shots false, audio on.
   kie.py wait TASK_ID [--out FILE]
@@ -142,8 +142,11 @@ def main():
         if len(prompt) > 2500:
             sys.exit(json.dumps({"error": f"prompt {len(prompt)} chars; the §35 ceiling is 2,500"}))
         inp = {"prompt": prompt, "image_urls": [as_url(a.image)], "duration": a.duration,
-               "resolution": "1080p", "aspect_ratio": "9:16", "audio": not a.no_audio,
+               "resolution": "1080p", "aspect_ratio": "auto", "audio": not a.no_audio,
                "prefer_multi_shots": False}
+        # Kie requires aspect_ratio "auto" for a single start image (measured 2026-09-28: 422
+        # "aspect_ratio must be auto for image-to-video without custom multi-shot"); the 9:16
+        # start image sets the 9:16 output.
         task = create("kling-3.0-omni/image-to-video", inp)
     else:
         if not 4 <= a.duration <= 30:

@@ -3,7 +3,7 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"hk2_drawer_strap_slide\",\"subject\":\"Gail's overfilled top drawer of blank knee supports exactly as in the start frame, nobody in frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"High as in the start frame: above head height looking down into the open drawer. FOCUS: the near edge of the drawer and the sliding strap are sharp; the photograph behind falls soft.\"},\"motion\":\"CONTINUING: the black strap is already sliding off the drawer's front edge. COMPLETING: one small slide, about two seconds — the strap's weight drags it a few more centimetres over the lip until it hangs straight down the drawer front, swinging once and settling. UNRESOLVED: the pile sits overfilled, the strap hanging. Nothing else in the drawer moves. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Worn pine, black neoprene, grey brace fabric, beige hook-and-loop; grey window light from the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no people, no hands, no pile collapsing, no strap falling to the floor, no other support moving, no readable text, no brand, no slow motion, no music\"}",
+ "prompt": "{\"shot\":\"hk2_drawer_strap_slide\",\"subject\":\"Gail's overfilled top drawer of blank knee supports exactly as in the start frame, nobody in frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"High as in the start frame: above head height looking down into the open drawer. FOCUS: the near edge of the drawer and the sliding strap are sharp; the photograph behind falls soft.\"},\"motion\":\"CONTINUING: the black strap is already sliding off the drawer's front edge. COMPLETING: one slow small slide, about two seconds — the strap creeps a few more centimetres over the lip, dragging with friction against the wood, and stops dead, hanging flat against the drawer front, completely still, no swing at all. UNRESOLVED: the pile sits overfilled, the strap motionless. Nothing else in the drawer moves. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Worn pine, black neoprene, grey brace fabric, beige hook-and-loop; grey window light from the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no people, no hands, no pile collapsing, no strap falling to the floor, no swinging, no pendulum motion, no strap bouncing, no other support moving, no readable text, no brand, no slow motion, no music\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
@@ -12,11 +12,11 @@
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "generation": 2,
  "risks": [
   {
-   "risk": "the whole pile slides or collapses",
-   "prevented_by": "nothing else in the drawer moves; negative no pile collapsing"
+   "risk": "the strap still swings or bounces",
+   "prevented_by": "motion ends stopped dead and motionless; negatives no swinging, no pendulum motion, no strap bouncing"
   },
   {
    "risk": "the strap drops to the floor",
@@ -26,5 +26,6 @@
    "risk": "supports melt into each other",
    "prevented_by": "HOLD-C + NEG-WARP-C"
   }
- ]
+ ],
+ "fix_note": "motion fault: the strap swung like a pendulum at the end (user: REMOVE SWING STRAP) → COMPLETING rewritten to a slow friction slide that stops dead against the drawer front, UNRESOLVED motionless, negatives add no swinging / no pendulum / no bouncing; same confirmed start image; routed to Kie (same Kling 3.0 Omni) as the Kling connector has 3 credits"
 }
