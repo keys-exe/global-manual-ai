@@ -380,6 +380,194 @@ B["BR-18b"] = (NBP, ["C1", "P2", "package_open", "front"], photo([
     light("WS-L", "the box"), colour("WORKSHOP")],
     P.NEG_PACKAGE + ", no face, " + NEG_HANDS))
 
+# ── Fix round 1 (user Fix notes on the board, 2026-09-28 ~17:45) — each replaces its v1 entry ─────────────────
+FIX1 = {
+ "BR-02": "point under the knee cap", "BR-05a": "make it pov style", "BR-08": "pov style, she's open the drawer",
+ "BR-11": "fix the product", "BR-12": "wrong product, wrong position", "MECH-01": "close up the patellar tendon",
+ "MECH-02": "remove the patellar tendon show the cartilage", "MECH-06": "create new broll here",
+}
+POV = ("THIS IS A FIRST-PERSON VIEW: the phone is held at the chest of the person doing it, pointing down and forward the way "
+       "their own eyes see, so their own forearms and hands come into frame from the bottom edge; no face of theirs is ever seen.")
+B["BR-02"] = (NBP, ["C1", "S1", "P2"], photo([
+    "A close snapshot from a phone held a little above her knee. Her right leg is straight out from the stool, the bare knee filling the "
+    "middle of the frame from mid-thigh to mid-shin. His right index fingertip presses into the soft hollow directly UNDER her kneecap, "
+    "on the tendon just below the kneecap's lower edge, centred on the front of the knee, the skin dimpling under the fingertip; the "
+    "kneecap's whole outline sits clear just above his fingertip. Only his hand and rolled cuff come in from the side. " + C1_HANDS +
+    " Her knee: " + SKIN_LEG,
+    "Her skirt hem and boot: " + WARD["W-D1"] + ".",
+    BENCH, angle("BR-02", "her knee"), focus("his fingertip under her kneecap"), light("WS-L", "the knee and his hand"), colour("FIT")],
+    "no finger on the side of the knee, no finger on the kneecap itself, no finger on the thigh, no finger on the shin, no strap, "
+    "no brace, no sleeve, no second hand, no finger pointing at the lens, " + NEG_HANDS))
+B["BR-05a"] = (NBP, ["C1", "P2"], photo([
+    POV + " He looks down at the scarred dark beech of his own workbench. His two hands are laying four generic knee supports out in a "
+    "row across the wood in front of him, left to right: a plain beige neoprene knee sleeve, a black hinged knee brace with steel side "
+    "bars, a grey knee support with a clear gel ring, and a rolled black elastic knee wrap — the first three already down, his right "
+    "hand setting the wrap down at the end of the row, caught mid-placement. All four plain and unbranded. The bib of his navy apron "
+    "shows at the very bottom edge. " + C1_HANDS,
+    BENCH, angle("BR-05a", "the bench"), focus("the hands and what they hold"), light("WS-L", "the bench"), colour("WORKSHOP")],
+    "no face, no camera looking down from the ceiling, no third person's view, no strap, no stryde wordmark, no brand names, no labels, "
+    "no packaging, " + NEG_HANDS))
+B["BR-08"] = (NBP, ["S1", "P1"], photo([
+    POV + " She looks down at the dark oak sideboard in front of her. Her own right hand has just pulled its long top drawer open towards "
+    "her and is still on the handle, the drawer open and full to the brim with a tangle of worn knee supports: beige and black neoprene "
+    "sleeves, a hinged brace with steel bars, elastic wraps, a gel-pad support, all unbranded and a little grubby. Her dusty-pink "
+    "polo-neck sleeve runs from the bottom edge to her hand. Real unretouched skin on the back of the hand of a woman of about seventy.",
+    LIVING + " The curtains are half drawn.", angle("BR-08", "the drawer"), focus("the foreground", deep=False),
+    light("LV-PM", "the drawer"), colour("LIV-PM")],
+    "no face, no over-the-shoulder view, no second person, no strap, no stryde wordmark, no brand names, no labels, no packaging, " + NEG_HANDS))
+B["BR-11"] = (NBP, ["front", "back", "C1", "P2"], photo([
+    "The strap in this photo is THE EXACT SAME OBJECT as the first attached product photo, the front, and the second, the back — only "
+    "the view changes. A snapshot from a phone propped at eye level on the bench. His right hand holds the strap up at chest height over "
+    "the bench, front face and wordmark square to the lens: " + dict(P.HELD_GRIPS)["bottom-edge pinch"].split(" (")[0] + ". "
+    "Nothing rises above the shell's top edge; both peaks and the notch stand clear. " + C1_HANDS,
+    PROD + " " + RIGID + " The shell is a hard, thin, curved plate like the product photos, never a soft rounded pad, never a flat "
+    "cushion. " + P.SIZE_HELD,
+    BENCH, angle("BR-11", "his hand"), focus("the product and its wordmark"), light("WS-L", "his hand"), colour("WORKSHOP")],
+    HELD_NEG + ", no soft pad, no cushion, no rounded blob shell, no thick padded shell, no flat oval, no shell without peaks, "
+    "no face, " + NEG_HANDS))
+B["BR-12"] = (NBP, ["worn_rear", "front", "back", "S1", "P0"], photo([
+    "The strap and its position are EXACTLY as in the first attached photo, the rear-worn reference: keep that strap, that band height "
+    "and that view, and change only the person, her clothes and the room. A snapshot from a phone held at knee height directly behind "
+    "her. She stands on the bottom stair facing up the flight, her weight on her right leg; the frame runs from mid-thigh to mid-calf, "
+    "the back of her right knee in the middle of the frame. The black coarse-knit band crosses the back of the leg JUST BELOW the "
+    "crease behind the knee, across the very top of the calf — never low down the calf — with the two black keeper loops together at "
+    "the centre, and at each side of the leg the edge of the rigid black shell and a brushed chrome slide stand just proud of the "
+    "outline, because the shell sits on the front of the knee. " + SKIN_LEG,
+    "Her skirt hem and boots: " + WARD["W-D2"] + ".",
+    PROD + " " + REAR, STAIRS, angle("BR-12", "the back of her right knee"),
+    focus("the product and its wordmark").replace("the product and its wordmark", "the band and its keeper loops"),
+    light("ST-R", "the back of her knee"), colour("STAIRS")],
+    "no band low on the calf, no band at the ankle, no band on the thigh, no band without shell edges at the sides, no plain wristband, "
+    "no watch strap, no loop of webbing, no shell at the back, no wordmark visible from behind, no strap on the left knee, no face, no hands"))
+B["MECH-01"] = (NB2, [], anat("MECH-01",
+    "CLOSE UP ON THE PATELLAR TENDON: the frame is tight on the front of the knee, the lower half of the kneecap at the top of the "
+    "frame and the patellar tendon filling the middle of the frame as a thick pearly band running down to the top of the shin. The "
+    "knee is carrying the body's weight. " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="framed tight on the front of the knee joint, the lower kneecap and the patellar tendon below it filling the frame"))
+B["MECH-02"] = (NB2, [], anat("MECH-02",
+    "THE CARTILAGE, NOT THE TENDON: the view looks into the knee joint from the front, the joint slightly opened, the smooth pearly "
+    "articular cartilage capping the lower end of the femur and the top of the tibia clearly shown, with the two crescent menisci "
+    "between them; the cartilage is the subject, picked out in a soft cool pearly white. No glow anywhere and no tendon shown — the "
+    "patellar tendon is left out of the model.",
+    extra_neg="no patellar tendon, no tendon in front of the joint, no glow, no hot spot, no kneecap covering the joint", look="B",
+    view="framed tight on the front of the knee joint, the kneecap lifted away out of the frame so the joint surfaces show"))
+B["MECH-06"] = (NBP, ["S1", "P1"], photo([
+    "A snapshot from a phone held low in front of her at knee height. She sits in the bottle-green wing armchair, her right leg forward, "
+    "the knee bare between her skirt hem and her slipper; the fingertips of her right hand press and rub the spot just UNDER her right "
+    "kneecap, on the tendon, the same spot as always, her mouth tight. A plain beige neoprene knee sleeve lies on the chair arm beside "
+    "her, taken off. The frame runs from her lap to her ankle, her face just out of frame at the top. " + SKIN_LEG,
+    "She is " + S1 + " Wearing " + WARD["W-D0"] + ".", LIVING + " The curtains are half drawn.",
+    angle("MECH-06", "her knee"), focus("her fingertips under her kneecap"), light("LV-PM", "her knee"), colour("LIV-PM")],
+    "no strap, no stryde wordmark, no brand name on the sleeve, no sleeve on the knee, no fingers on the kneecap itself, no sunshine, "
+    + NEG_HANDS))
+
+# MECH-02 fix: the Appendix A anatomy strings name the tendon — swap them for the cartilage (the note: "remove the patellar tendon")
+_m, _r, _p = B["MECH-02"]
+B["MECH-02"] = (_m, _r, _p.replace("the patellar tendon crisp", "the cartilage crisp").replace("sheen on the patellar tendon", "sheen on the cartilage")
+    .replace("Only femur, patella and tibia and the patellar tendon. Bones in warm ivory-gold with soft low inner luminosity; the patellar tendon in pearly ivory-white, dense, running its full length between its attachments.",
+             "Only the femur and tibia, the cartilage capping their ends and the menisci between them. Bones in warm ivory-gold with soft low inner luminosity; the cartilage smooth and pearly.")
+    .replace("no glow on the tibial tuberosity, no glow spreading down the shin, ", "").replace(", no product cracking, no product deforming", ""))
+FIX1_JOBS = {"BR-02": "bfafd47f-ce72-47c4-bcc6-55be31af8dee", "BR-05a": "852d6116-7aa7-476f-9555-2a1514af77af", "BR-08": "d3d166aa-f7c9-46f8-b42f-17f4c23912a7",
+             "BR-11": "b1d142ef-2753-4713-bd86-3f7e7e7a4308", "BR-12": "dc796778-3e19-441e-8616-b7f7f7bd206f", "MECH-01": "6793dce7-0fbe-41cc-8f32-5faa5ba96752",
+             "MECH-02": "a31b29af-069e-4085-a830-368e2bb64c4d", "MECH-06": "62022a6c-b2ea-492a-9f9f-79557e9b733e"}
+
+# ── Fix round 2 (user Fix notes, 2026-09-28 ~18:00) ──────────────────────────────────────────────────────────
+FIX2 = {"BR-14b": "wtong product", "BR-15a": "fix the product make it small", "BR-18a": "fix the size of product"}
+SMALL = ("THE STRAP IS SMALL: the shell is about 12 cm across and 5 cm tall — no wider than his hand across the knuckles, "
+         "so his fingers and thumb cover a good part of its lower edge — and the closed band is a small soft loop not much bigger "
+         "than his wrist. It is a small, light thing held easily in one hand, never a large mask-sized object.")
+NEG_SMALL = ", no oversized strap, no strap wider than his hand, no mask-sized shell, no giant product, no shell bigger than his palm"
+B["BR-14b"] = (NBP, ["front", "C1", "P2"], photo([
+    "A snapshot from a phone propped at eye level on the bench. His two hands hold one cheap copy strap and pull its band apart: "
+    "his left hand holds the copy's shell up at chest height, the shell square to the lens, and his right hand pulls the thin band "
+    "away from it, the band stretched out long and thin, pale where it is stretched, a loose thread hanging from its edge. "
+    "THE COPY IS SHAPED LIKE THE ATTACHED PRODUCT PHOTO at a glance — the same small shell with two peaks and a notch — but cheap: "
+    + P.FAKE_BASE.split(": ", 1)[1] + " The copy's shell is clearly visible and readable as a knock-off of the attached shape. " + C1_HANDS,
+    SMALL.replace("The strap", "The copy").replace("THE STRAP", "THE COPY"),
+    BENCH, angle("BR-14b", "his hands"), focus("the hands and what they hold"), light("WS-L", "his hands"), colour("WORKSHOP")],
+    P.NEG_FAKE_HERO + ", no stryde wordmark on the copy, no chrome on the copy, no matte finish on the copy, no cord, no string, "
+    "no shoelace, no thin rope, no missing shell, no face" + NEG_SMALL + ", " + NEG_HANDS))
+B["BR-15a"] = (NBP, ["front", "back", "C1", "P2"], photo([
+    "The strap in this photo is THE EXACT SAME OBJECT as the first attached product photo, the front, and the second, the back — "
+    "only the view changes. A snapshot from a phone propped at eye level on the bench, a little further back so his chest and "
+    "apron fill the frame behind. He holds the strap up towards the lens in his right hand at chest height, front face and wordmark "
+    "square to the camera: " + dict(P.HELD_GRIPS)["bottom-edge pinch"].split(" (")[0] + ". Nothing rises above the shell's top edge. "
+    "His face is just out of frame at the top. " + C1_HANDS,
+    PROD + " " + RIGID + " " + SMALL,
+    BENCH, angle("BR-15a", "the strap"), focus("the product and its wordmark"), light("WS-L", "the strap"), colour("WORKSHOP")],
+    HELD_NEG + NEG_SMALL + ", " + NEG_HANDS))
+B["BR-18a"] = (NBP, ["front", "back", "C1", "P2"], photo([
+    "Both straps in this photo are THE EXACT SAME OBJECT as the first attached product photo, the front, and the second, the back — "
+    "only the view changes. A snapshot from a phone propped at eye level on the bench, three-quarter to him, a little further back so "
+    "his chest and apron fill the frame behind. He holds two identical straps up side by side towards the lens, one in each hand, "
+    "each by the bottom-edge pinch: thumb in front on the shell's bottom edge below the wordmark, fingers behind on the pad, the "
+    "bands hanging slack round his wrists. Both front faces and wordmarks to the camera, level with each other, a hand's width apart. "
+    "Nothing rises above the shells' top edges. " + C1_HANDS,
+    PROD + " Two identical units of it, the same size. " + RIGID + " " + SMALL.replace("THE STRAP IS SMALL", "EACH STRAP IS SMALL"),
+    BENCH, angle("BR-18a", "the two straps"), focus("the product and its wordmark"), light("WS-L", "the straps"), colour("WORKSHOP")],
+    HELD_NEG.replace("no second strap, ", "") + ", no third strap, no straps of different sizes, no face" + NEG_SMALL + ", " + NEG_HANDS))
+
+# ── Fix round 3 (user Fix notes, 2026-09-28 ~18:05) ──────────────────────────────────────────────────────────
+FIX3 = {"BR-02": "pointing the patellar tendd under the kneecap", "BR-11": "fix the size of the strap", "BR-13": "change this",
+        "BR-15c": "fix the product"}
+B["BR-02"] = (NBP, ["C1", "S1", "P2"], photo([
+    "A close snapshot from a phone held at knee height directly in front of her knee. Her right leg is straight out from the stool and "
+    "the bare knee fills the middle of the frame, from just above the kneecap to mid-shin. ONLY ONE FINGERTIP TOUCHES HER: his right "
+    "index finger is extended and its tip rests exactly in the soft hollow just under the lower edge of her kneecap, on the patellar "
+    "tendon, dead centre on the front of the knee, pressing a little so the skin dimples; his other three fingers are curled into his "
+    "palm and his thumb tucked, the rest of his hand held away from her leg, coming in from the bottom right. The whole kneecap sits "
+    "clear and bare just above his fingertip. " + C1_HANDS + " Her knee: " + SKIN_LEG,
+    "Her skirt hem at the top of the frame: " + WARD["W-D1"] + ".",
+    BENCH, "THE CAMERA ANGLE: a camera at knee height, square to the front of her knee, close. This exact angle.",
+    focus("his fingertip under her kneecap"), light("WS-L", "the knee and his hand"), colour("FIT")],
+    "no hand gripping the knee, no palm on the knee, no fingers wrapped round the knee, no more than one finger touching her, "
+    "no finger on the side of the knee, no finger on the kneecap itself, no finger on the shin, no strap, no brace, no sleeve, "
+    "no second hand, " + NEG_HANDS))
+B["BR-11"] = (NBP, ["front", "back", "C1", "P2"], photo([
+    "The strap in this photo is THE EXACT SAME OBJECT as the first attached product photo, the front, and the second, the back — only "
+    "the view changes. A snapshot from a phone propped at eye level on the bench, a little further back so his chest and apron fill the "
+    "frame behind. His right hand holds the strap up at chest height over the bench, front face and wordmark square to the lens: "
+    + dict(P.HELD_GRIPS)["bottom-edge pinch"].split(" (")[0] + ". Nothing rises above the shell's top edge; both peaks and the notch "
+    "stand clear. His face is just out of frame at the top. " + C1_HANDS,
+    PROD + " " + RIGID + " The shell is a hard, thin, curved plate like the product photos, never a soft rounded pad. " + SMALL,
+    BENCH, angle("BR-11", "his hand"), focus("the product and its wordmark"), light("WS-L", "his hand"), colour("WORKSHOP")],
+    HELD_NEG + ", no soft pad, no cushion, no rounded blob shell" + NEG_SMALL + ", " + NEG_HANDS))
+B["BR-13"] = (NBP, ["worn_bent", "front", "back", "S1", "P0"], photo([
+    "The strap and how it sits on the bent knee are EXACTLY as in the first attached photo, the bent-knee worn reference. A snapshot "
+    "from a phone held at knee height in the hall, beside the flight, looking through the white spindles at her from the SIDE. The "
+    "frame runs from her waist to her boots, her legs in profile across the middle of the frame. She is stepping down one stair "
+    "forwards, caught mid-step: her left foot planted on the stair, her right foot reaching down to the step below, the strapped right "
+    "knee bent and nearest the camera, the strap on it clear and readable in side view; her hands are out of frame. Two or three white "
+    "spindles run soft and out of focus down the near foreground.",
+    "Her skirt and boots: " + WARD["W-D2"] + ". " + SKIN_LEG,
+    PROD + " " + RIGID + " " + P.PLACE_PROFILE + " " + P.SIZE_WORN, STAIRS,
+    "THE CAMERA ANGLE: a camera at knee height, seen from the side, in profile of her legs, looking past the white spindles, soft in the "
+    "near foreground. This exact angle, never a view from the front or from the bottom of the stairs.",
+    focus("the product and its wordmark"), light("ST-L", "her legs"), colour("STAIRS")],
+    WORN_NEG + ", no front view, no full-length figure, no face, no view from the foot of the stairs, " + NEG_SUP + ", " + NEG_EFF))
+B["BR-15c"] = (NBP, ["front", "back", "worn_front", "S1", "P0"], photo([
+    "The strap in this photo is THE EXACT SAME OBJECT as the first attached product photo, the front — only its place changes. A "
+    "snapshot from a phone held low in front of her. She sits on the bottom stair, her right leg straight out in front of her, and the "
+    "closed strap sits at mid-shin, well below the knee: the rigid black shell is CENTRED ON THE FRONT OF HER SHIN facing the camera, "
+    "its two peaks and notch pointing up the leg towards the kneecap, the grey stryde wordmark horizontal and readable, a chrome slide "
+    "at each side of the shin, the black band running round the back of the calf. Both her hands hold the shell by its two sides, palms "
+    "and fingertips flat on the matte shell, ready to slide it up; she looks down at it. " + SKIN_LEG,
+    S1 + " Wearing " + WARD["W-D2"] + ".",
+    PROD + " " + RIGID + " The shell is a hard, thin, curved plate exactly like the product photo, never a soft pad or a floppy band. "
+    "Its size never changes: the shell spans the front of her shin from side to side, a chrome slide at each side, about as tall as her "
+    "kneecap.", STAIRS,
+    "THE CAMERA ANGLE: a low camera in front of her, looking along her straight leg at the front of the shin. This exact angle.",
+    focus("the product and its wordmark"), light("ST-L", "her"), colour("STAIRS")],
+    P.NEG_SEAT + ", no shell on the side of the shin, no wordmark sideways, no shell facing away, no soft pad, no floppy strap, "
+    "no strap on the left leg, " + NEG_HANDS))
+
+# BR-15c: the start frame shows the strap at mid-shin, so the video-only seating negatives about resting low / two actions are dropped
+_m, _r, _p = B["BR-15c"]
+B["BR-15c"] = (_m, _r, _p.replace("no two separate actions in one clip, no product travelling past the kneecap, ", "")
+    .replace("no product coming to rest low on the shin, no product moving downward, no product coming down from above the kneecap, ", ""))
+FIX3_JOBS = {"BR-02": "1111ad81-5a82-47d1-9e22-2827d5095616", "BR-11": "56a2c1e9-d175-47eb-b7f0-fdd5325768c0",
+             "BR-13": "a938def7-9d7a-4f99-9493-a8797734d25a", "BR-15c": "4ec9787f-9cd4-4f05-8f07-3a043115c5d2"}
+
 if __name__ == "__main__":
     out = {}
     for beat, (model, refs, prompt) in B.items():
