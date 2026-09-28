@@ -26,7 +26,8 @@ ROWS.json is a list of shot/beat rows in cut order (talking heads may be include
     "face": true,                                     # a face is a subject of the shot
     "light": {"source": "kitchen window, east wall", "key_side": "L" | "R" | "back" | "front",
               "time": "morning" | "midday" | "afternoon" | "evening" | "night",
-              "arc": "the act's light state", "why": "reason for a backlit or 90° key"}}
+              "arc": "the act's light state", "why": "reason for a backlit or 90° key",
+              "kelvin": 5600}}                         # the key's colour temperature = the scene's white balance
   ...]
 
 Checks (any FAIL → exit 1):
@@ -44,7 +45,8 @@ Checks (any FAIL → exit 1):
            a scene of 5+ shots with fewer than 3 library shots, a wide-angle or fisheye close-up on a face, a
            lip-synced line on a rear/silhouette/aerial/overhead-fisheye shot, a distorting shot on a product beat,
            a Dutch/prism/magnifier/macro shot on a travelling rig (`inspo_ok: true` exempts a shot the inspo uses)
-  LIGHT    (§30K) missing light; a flat frontal key on a face; a backlit face with no `why` (never while speaking in
+  LIGHT    (§30K) missing light; missing or implausible kelvin (1800–10000K); two white balances for one
+           source inside one scene or act group; a flat frontal key on a face; a backlit face with no `why` (never while speaking in
            Mode 1); no light state for the act; time going backwards inside a story day
 Talking heads (TH), POV and CCTV rows are seed- or mount-locked and skipped (§30A rules 6–7, §22E).
 """
@@ -189,9 +191,12 @@ def main():
         if not L:
             fail("LIGHT", [r.get("beat")], "no light")
             continue
-        for k in ("source", "key_side", "time", "arc"):
+        for k in ("source", "key_side", "time", "arc", "kelvin"):
             if not L.get(k):
                 fail("LIGHT", [r["beat"]], f"light {k} missing")
+        k = L.get("kelvin")
+        if k and not (isinstance(k, (int, float)) and 1800 <= k <= 10000):
+            fail("LIGHT", [r["beat"]], f"kelvin {k} outside 1800–10000K")
         if r.get("face") and L.get("key_side") == "front":
             fail("LIGHT", [r["beat"]], "flat frontal key on a face")
         if r.get("face") and L.get("key_side") == "back":
@@ -205,6 +210,15 @@ def main():
                 fail("LIGHT", [last_time[day][1], r["beat"]], f"time goes back on story day {day}: {last_time[day][0]} → {t}")
             if day not in last_time or ORDER.index(t) >= ORDER.index(last_time[day][0]):
                 last_time[day] = (t, r["beat"])
+
+    wb = {}
+    for r in rows:
+        L = r.get("light") or {}
+        if L.get("kelvin") and L.get("source"):
+            key = (r.get("group"), L["source"], L.get("time"))
+            if key in wb and wb[key][0] != L["kelvin"]:
+                fail("LIGHT", [wb[key][1], r["beat"]], f"white balance {wb[key][0]}K → {L['kelvin']}K for one source in one scene")
+            wb.setdefault(key, (L["kelvin"], r["beat"]))
 
     groups = defaultdict(list)
     for r in rows:

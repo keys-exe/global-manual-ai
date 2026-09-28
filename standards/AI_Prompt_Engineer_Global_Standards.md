@@ -1048,6 +1048,10 @@ Exception unchanged: mechanism beats, which run the locked register (§12A).
 
 The no-grade and no-vignette rules above are Mode 1's. In Mode 4 **the grade, palette, contrast and optical fall-off are whatever the Film Look Sheet derives from the inspo and the script** (§24G) — the palette and light in the prompt, **the grade in the edit only** (§40) — a noir build may run low-key and dark in the corners, a romance soft and warm. Four floors never yield to the look: **one look per film**, so every scene sits in the same family and only the act colour script moves within it (§11); **darkness always has a source**, so a dark corner is falloff from a named light or a lens's optical fall-off, never an applied oval; **skin keeps its texture under the grade**; and **no generated grain**, because grain is added in post (§24G).
 
+### Modes 2 and 3 — matched, never graded *(2026-09-28)*
+
+3D Pixar and Claymation carry their colour in the render — the stylised light of §24B and the painted clay of §24F. **No LUT, no grain, no creative grade**: the edit only matches each clip to its scene's master (§40 step 1), exactly as Mode 1. `lut.py apply` refuses Modes 1–3.
+
 ---
 
 ## 12A. Mechanism Register
@@ -2444,6 +2448,22 @@ Do not paste an indoor profile into an outdoor beat. Four clauses break on the m
 - *"Shadow falloff under eyes, chin, nose"* — overcast flattens it
 - **The HDR clause inverts:** indoors, Smart HDR *lifts the shadows flat*; in hard sun it *visibly fights the range and flattens the mid-tones*. Write the correct one
 
+### Phone settings — lens and modes *(2026-09-28)*
+
+`CAM-LOCK` (back camera) and `CAM-FRONT` (selfie, §22F) already fix the phone and leave exposure, white balance and focus on automatic. This fixes **which lens and which camera modes** — the settings a real person leaves alone:
+
+| Setting | Rule | Why |
+|---|---|---|
+| **Lens** | **1x main (24mm)** on every back-camera shot; the front camera only for selfie framings (§22F) | What people film with. `CAP-A` names the 24mm's edge softening |
+| **0.5x ultra-wide** | Never | Stretches faces and the product at the frame edges — a tell, and a §27D/§9D fault |
+| **Telephoto (4x / 8x)** | Never | Nobody films home life from across the room; the compressed look reads as a hired camera |
+| **Portrait mode / Cinematic mode** | Off — never a synthetic background blur | The phone's fake blur leaves halo edges round hair and hands; the only focus change is a tap to focus (§30J) |
+| **Night mode** | Only where the phone would trigger it: a genuinely dark room with one practical (§12's one evening location) | In daylight it smooths skin and flattens texture |
+| **Flash** | Off | Flat frontal light — banned on a face (§22A) |
+| **White balance** | Automatic (`CAM-LOCK`) — the phone balances toward the room's key; any other source renders off it (a lamp reads amber in a daylight room) | The light's colour is written as Kelvin in the light plan (§30K) so the prompt knows what the phone is balancing |
+
+`NEG-PHONE` joins the negatives on every Mode 1 T2I.
+
 **Part A travels everywhere. The Location Profile is written per location, once, and locked.**
 
 **Both are mandatory and neither substitutes for the other.** `CAP-A` describes the file the phone wrote; the Location Profile describes the light in the room. A beat carrying `CAP-A` alone renders correctly exposed and unlit — flat, sourceless, nowhere. A beat carrying the profile alone renders as a lit scene. The two together are what produce a photograph of a real room.
@@ -3422,7 +3442,7 @@ Mode 4 has no house look. **The kind of film — its grade, palette, glass, ligh
 | 2 | **CAMERA AND GLASS** | The camera package from the §24G library (camera body and format, lens family, spherical or anamorphic), the focal length for each shot scale, the stop, and the depth-of-field policy by shot scale and where focus changes are used (§30J) | `CAM-FILM` |
 | 3 | **LIGHT** | How light is motivated, hard or soft key, key-to-fill ratio, how practicals are used, the time-of-day plan by scene, and the light arc by act (§30K) | `LIGHT-FILM` |
 | 4 | **PALETTE** | The dominant colours of the sets and wardrobe, and the colour script by act | `LOOK-[BUILD]`, §14A wardrobe |
-| 5 | **GRADE** | Shadow tint, highlight tint, saturation, contrast curve, how skin is held | **The edit only** — the CapCut LUT (§40). Never in a prompt |
+| 5 | **GRADE** | Shadow tint, highlight tint, saturation, contrast curve, black lift, white point, how skin is held — **written in words and as numbers** (`grade.json`: `warmth`, `contrast`, `saturation`, `shadow_tint`, `highlight_tint`, `black_lift`, `white_point`, `skin_protect`), compiled into the film's one LUT file `LUT-[BUILD].cube` by `lut.py make`, which must pass `lut.py check` (skin hue ≤ 8°, skin saturation ±25%, no tone inversion) | **The edit only** — `LUT-[BUILD].cube` (§40). Never in a prompt |
 | 6 | **OPTICAL TEXTURE** | Highlight roll-off, halation, lens softness | `LOOK-[BUILD]`, `CAP-FILM` |
 | 7 | **MOTION** | Which F-rigs this film uses, how fast the moves are, the cutting rhythm (average shot length from the inspo), the camera script by act (§24K), and the angles used by act (§30I) | Scene Bibles, `RIG-F*` |
 | 8 | **PERFORMANCE** | Acting register — how big, how still, how much is said under the line | §28 settings below |
@@ -3452,9 +3472,11 @@ Look Sheet field 2 is filled from this library, never from a generic "cinema cam
 
 The stop follows §30J's depth table: wides hold the room, close-ups separate the face. **Never a wide lens close to a face** (§30I part 4).
 
-**Motion cadence:** 24 frames per second with a **180-degree shutter** — the natural motion blur of feature footage (`INHERIT-FILM`). Never high frame rate, never the smooth video look.
+*(Unverified, 2026-09-28: whether the image and video models respond to the named focal length, T-stop and shutter angle, or only to the camera and lens names and the shot scale, has not been measured. The camera package and the §30J depth wording are expected to do most of the work; the numbers stay in `CAM-FILM` because they cost little and match what the named footage was shot at. Open Decision — measured on the first film build: the same frame at two stops and two focals, compared for depth and perspective.)*
 
-**Colour science:** the package's own (ARRI, Sony, film stock) is named in `CAM-FILM`; the look is finished in post by one LUT in the manner of a film print emulation (§24G prompt-versus-post), never by a generated grade.
+**Motion cadence:** 24 frames per second with a **180-degree shutter** — the natural motion blur of feature footage (`INHERIT-FILM`). Never high frame rate, never the smooth video look. *(Unverified that Seedance or Kling honour the shutter wording; the 24 fps is the output rate either way.)*
+
+**Colour science:** the package's own (ARRI, Sony, film stock) is named in `CAM-FILM`; the look is finished in post by one LUT file (`LUT-[BUILD].cube`, Look Sheet field 5) in the manner of a film print emulation (§24G prompt-versus-post), never by a generated grade.
 
 ### Production value — what makes a US feature look expensive
 
@@ -3468,7 +3490,7 @@ The camera is half of it; the other half is what is in front of it, and generato
 
 ### Finishing — the delivery master
 
-Generation stays at 720p (§4, locked, user decision — confirmed 2026-09-27: "720p cause we only gonna watch it on phones"). **The finish is an edit step — §40, colour grade in the edit only:** on the picture-locked cut, 1. match each clip to its scene master, 2. the one LUT, 3. the grain pass (user, 2026-09-27: "the 1, 2 and 4 i want that"), exported at native 720×1280 with no upscale and no paid upscaler unless the user asks.
+Generation stays at 720p (§4, locked, user decision — confirmed 2026-09-27: "720p cause we only gonna watch it on phones"). **The finish is an edit step — §40, colour grade in the edit only:** on the picture-locked cut, 1. match each clip to its scene master, 2. the one LUT file (`LUT-[BUILD].cube`, `lut.py`), 3. the grain pass (user, 2026-09-27: "the 1, 2 and 4 i want that"), exported at native 720×1280 with no upscale and no paid upscaler unless the user asks.
 
 ### Prompt versus post — the split that keeps 50 clips matching
 
@@ -5690,6 +5712,9 @@ Location Profiles write the key as *camera-left*. That is only true for one came
 | **Sun path** | Which windows take direct sun at which time of day — from the property's orientation (§30G field 4) |
 | **Key by time** | The key source and its quality for each time of day the build uses there |
 | **Fill and bounce** | What fills the shadow side (a pale wall, a floor, a second window) |
+| **Colour temperature** *(2026-09-28)* | Each source's Kelvin, by time: window daylight 5600K (overcast 6500K, open shade 7000K+, low sun 3500–4300K), tungsten lamp 2700–3200K, warm LED 3000K, cool LED or fluorescent 4000–5000K (fluorescent with a green tint), a TV or phone screen 6500K+ blue. **The key's Kelvin is the scene's white balance**: the camera is balanced for it, so the key renders neutral and every other source renders warmer or cooler than it by the difference |
+
+**White balance is pinned, never left to drift** (2026-09-28). The model otherwise re-decides warmth shot by shot. Each scene's white balance is its key's Kelvin at that time of day; it goes into `COLOUR-KEY` (§30L) and into the row's `light.kelvin` (E4), and it changes only where the light plan's key or time changes — at a scene boundary. Modes 4–5: the film camera is balanced for it. Mode 1: the phone's auto white balance (`CAM-LOCK`) does the same thing; the Kelvin tells the prompt what it balanced for. Modes 2–3: the virtual camera is balanced for it.
 
 **Each shot's key side is derived, never chosen:** from the camera's position in the room (§30I side), the plan gives where the key falls **on screen** — and that is what goes into the prompt (`[SIDE]` in `LIGHT-FILM`, `LIGHT-ANIM` or `LIGHT-SHOT`). A reverse angle legitimately flips the key to the other screen side; the light has not changed, the camera has.
 
@@ -5736,7 +5761,7 @@ A rim light on everyone in a room with no window behind them · skin glowing · 
 
 - **Mode 1–3:** `LIGHT-SHOT` follows `FOCUS-LINE`, filled from the light plan in screen terms; the Location Profile still carries the room's light. **Modes 4–5:** `LIGHT-FILM` / `LIGHT-ANIM` take `[SIDE]` from the plan, and the act's arc fills `[KEY QUALITY]` and `[RATIO]`.
 - `NEG-LIGHT` joins the negatives on every T2I with a location (Mode 1 drops the clauses `NEG-M1` already carries); `NEG-LIGHT-C` on every clip.
-- **`angles.py`** checks the rows: every row has `light`, no flat frontal key on a face, no backlit speaking face in Mode 1, time never going back inside a story day, the act's light state present.
+- **`angles.py`** checks the rows: every row has `light` with its `kelvin` (1800–10000K, one white balance per scene and source), no flat frontal key on a face, no backlit speaking face in Mode 1, time never going back inside a story day, the act's light state present.
 - **`light_check.py scene <frames>`** measures a scene's approved frames in shot order — brightness and warmth against the scene, and the brighter half of each frame to read against the plan (a jump flags a relit shot); **`light_check.py clip <clip>`** flags flicker and drift inside a clip. *(Thresholds unverified — tuned on the first build.)*
 - **§22V Q5** and the user's check read the frame's light against the row and the plan; **§22W Q4** reads the clip for flicker, pumping and light that changes.
 
@@ -5754,7 +5779,7 @@ At step 5 each scene gets a **colour key**, read off its approved master frame (
 
 | Field | Content |
 |---|---|
-| **Light colour** | The key's colour and warmth in plain words (cool grey window daylight, warm tungsten lamp) — from the light plan (§30K) |
+| **Light colour** | The key's colour and warmth in plain words **and its Kelvin** (cool grey window daylight, 6500K; warm tungsten lamp, 3200K) — from the light plan (§30K); the camera is white-balanced for it |
 | **Set colours** | The walls, the floor, the two or three largest objects, by name and colour (sage-green cupboards, pale oak table, white tiles) |
 | **Wardrobe colours** | Each person's outfit colours for the story day (§14A) |
 | **Accent** | The one or two colours the scene is built around, if any (a red mug, the product) |
@@ -5992,8 +6017,8 @@ Flag: retention beats, micro-hooks, CTA positions, supplied-asset cut-ins, permi
 **Colour grade — in the edit only** *(2026-09-27, user: "the color grades should be on the edit section")*. The grade is an edit step, never a prompt: every image and clip is generated with natural, neutral colour — the set, wardrobe and light colours that really exist (`COLOUR-KEY`, §30L) — and the edit grades the whole build at once, so every shot matches by construction. The CapCut block (§18 step 8) carries it, in this order, on the picture-locked cut only:
 
 1. **Match** — each clip matched to its scene's master shot in exposure and white balance, scene by scene; one adjustment per scene applied identically to all its clips, never a shot graded on its own. Then `light_check.py colour` on the scene's matched clips (§30L).
-2. **Grade** — Modes 4 and 5: the one LUT from the Look Sheet (field 5: shadow tint, highlight tint, saturation, contrast curve, how skin is held) across the whole film; the §12A mechanism render takes a matched contrast and black-level pass, never the LUT's colour shift. Mode 1: no creative grade (§12) — the match only.
-3. **Grain** — Mode 4 only: one pass at the Look Sheet's size across the whole film. Never generated, never per clip.
+2. **Grade** — Modes 4 and 5: the one LUT **file**, `LUT-[BUILD].cube`, made from Look Sheet field 5 by `scripts/lut.py make` and passed by `lut.py check` (2026-09-28) — the same file in both run modes, so the grade never depends on rebuilding it by hand. Before it touches the cut, `lut.py preview` puts the scene master ungraded and graded side by side. **Manual:** the file goes to the build's Drive `OUTPUT` folder and the CapCut block says where to import it (Adjust → LUT → import; CapCut desktop — mobile import unverified), applied at 100% to every clip. **Automatic:** `lut.py apply LUT-[BUILD].cube <clip> --mode 4|5` on the matched cut. The §12A mechanism render takes a matched contrast and black-level pass, never the LUT's colour shift. **Modes 1, 2 and 3: no LUT and no creative grade** (§12) — the match only; `lut.py apply` refuses them.
+3. **Grain** — Mode 4 only: one pass at the Look Sheet's size across the whole film (Automatic: `lut.py apply … --grain <1–20>` in the same pass as the LUT; Manual: CapCut's grain effect at the size the CapCut block names). Never generated, never per clip.
 4. **Export** — native 720×1280 for Seedance builds, no upscale (§24G finishing).
 
 `FILM-CAPCUT` and `ANIM-CAPCUT` carry the lines.
@@ -7758,9 +7783,9 @@ no rim light without a source behind the subject, no glowing skin, no halo or bl
 ```
 no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject
 ```
-**`COLOUR-KEY`** — every T2I of a scene, all modes, verbatim and identical across the scene (§30L). Modes 4–5 after `LOOK-[BUILD]`; Modes 1–3 after the Location Profile. **Never paraphrased.** *(283)*
+**`COLOUR-KEY`** — every T2I of a scene, all modes, verbatim and identical across the scene (§30L). Modes 4–5 after `LOOK-[BUILD]`; Modes 1–3 after the Location Profile. **Never paraphrased.** `[KELVIN]` is the scene's white balance from the light plan (§30K, amended 2026-09-28). *(335)*
 ```
-THE COLOURS OF THIS SCENE, exactly as in the attached master frame: the light is [LIGHT COLOUR]; [SET COLOURS]; [WHO] wears [WARDROBE COLOURS]; [ACCENT]. Colours are [SATURATION AND CONTRAST IN CAMERA], natural and ungraded. No colour in this shot differs from the rest of the scene.
+THE COLOURS OF THIS SCENE, exactly as in the attached master frame: the light is [LIGHT COLOUR], [KELVIN]K, and the camera is white-balanced for it; [SET COLOURS]; [WHO] wears [WARDROBE COLOURS]; [ACCENT]. Colours are [SATURATION AND CONTRAST IN CAMERA], natural and ungraded. No colour in this shot differs from the rest of the scene.
 ```
 **`MUSIC-CUE`** — one per scene, Modes 4–5 (§24M): the scene's cue as sections, compiled by `music.py plan` into an ElevenLabs composition plan. Describes the sound only. *(282)*
 ```
@@ -7946,6 +7971,10 @@ Standing Mode 5 lines (the grade lives here, never in a prompt, §40): match eac
 **`NEG-M1`** — Mode 1 standard. *(618)*
 ```
 no AI face, no plastic skin, no waxy skin, no over-smoothed skin, no perfect symmetrical face, no uncanny eyes, no fake teeth, no warped mouth, no robotic lip sync, no extra fingers, no fused fingers, no melted hands, no deformed limbs, no warped background, no CGI look, no fake commercial gloss, no over-saturated colors, no cartoon look, no unrealistic lighting, no floating camera, no stiff body language, no film grain, no vignette, no darkened frame edges, no darkened corners, no spotlight pool on the subject, no light falling off to black at the frame edge, no moody dark grade, no crushed blacks at the edges
+```
+**`NEG-PHONE`** — every Mode 1 T2I, after `NEG-M1` (§22A phone settings, 2026-09-28). Selfie framings drop `no ultra-wide lens stretch` only where `CAM-FRONT` names its own wide angle. *(197)*
+```
+no portrait mode blur, no fake background blur, no halo around hair or hands, no cinematic mode focus effect, no ultra-wide lens stretch, no telephoto compression, no flash, no night mode smoothing
 ```
 
 **`NEG-PIX`** — Mode 2. Replaces `NEG-M3`; `NEG-M2` and `NEG-M4` retired. *(675)*
@@ -8507,7 +8536,7 @@ One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t
 
 **Film fields (2026-09-27, Modes 4 and 5, §24I/§24K).** Film rows also carry: `scene` (`SC-xx`), `camera` as the F-rig with its reason from the camera plan, `playing` (the speaker's transitive verb), `business` (each character's one piece of business and its pace), `cut_cue` (line · look · action · reaction), `spine` (the story-spine beat) and `state` (each character's state-track row for this shot, including VOICE, §24H), and `new` (what the shot's frame adds over the master and earlier frames — position, scale or state — or `reuse <frame>`). A film row missing any of them is not written to a prompt.
 
-**`angle` (2026-09-27, §30I).** Every B-roll and film row carries `angle` — `height` (ground · low · eye · high · overhead), `side` (front · three-quarter · profile · three-quarter-back · behind · ots) and `fg` (clean · through · reflection) — with `why` (what the angle says) and, on a payoff that repeats an earlier angle, `mirror_of`. **`light` (§30K)** — `source` (from the light plan), `key_side` on screen (L · R · back · front), `time`, `arc` (the act's light state) and `why` on a backlit or 90° side key. **`focus` (§30J)** — `plane` (eyes · hands · product · foreground · background · deep), `dof` (deep · medium · shallow), `rack` (`{from, to, cue, kind: pull | tap}` or null) and `moving_subject`. **`shot` (2026-09-28, §24K part 7)** — Modes 4–5: one library ID (`SH-WIDE` … `SH-INSIDE`) or a list of two; its setup agrees with `height`, `side`, `scale` and `fg`; `speaking: true` on a row that carries a lip-synced line. `angles.py` reads these fields.
+**`angle` (2026-09-27, §30I).** Every B-roll and film row carries `angle` — `height` (ground · low · eye · high · overhead), `side` (front · three-quarter · profile · three-quarter-back · behind · ots) and `fg` (clean · through · reflection) — with `why` (what the angle says) and, on a payoff that repeats an earlier angle, `mirror_of`. **`light` (§30K)** — `source` (from the light plan), `key_side` on screen (L · R · back · front), `time`, `arc` (the act's light state), `kelvin` (the key's colour temperature — the scene's white balance, 2026-09-28) and `why` on a backlit or 90° side key. **`focus` (§30J)** — `plane` (eyes · hands · product · foreground · background · deep), `dof` (deep · medium · shallow), `rack` (`{from, to, cue, kind: pull | tap}` or null) and `moving_subject`. **`shot` (2026-09-28, §24K part 7)** — Modes 4–5: one library ID (`SH-WIDE` … `SH-INSIDE`) or a list of two; its setup agrees with `height`, `side`, `scale` and `fg`; `speaking: true` on a row that carries a lip-synced line. `angles.py` reads these fields.
 
 **`key` (amended 2026-09-26, user).** Every B-roll row names its `key`: the word in its phrase that the picture shows (the noun or action on screen, never a filler like "and" or "when"). §30H cuts the clip in 3 frames before it. Leave it empty only when the picture is the phrase's first word. In a voice-only build the opening row has no key — its clip covers 0.00s. After generation, a row may add `peak`: the second in the clip where its action peaks, so the in-point lands it on the key word.
 
@@ -8576,7 +8605,7 @@ Superseded B-roll rule, kept for reference: B-roll calls: 5s (the Higgsfield flo
 
 ## E9. Build directory layout
 
-`/build/{product_sheet.md, product_sheet.py, absorption_sheet.md, build_sheet.md, act_map.json, phrase_inventory.json, wardrobe_map.json, location_sheets/, registries/{roster,voice,scene,subject}.json, run_ledger.json, beats/{BEAT-ID}.t2i.txt, beats/{BEAT-ID}.i2v.json, capcut_block.md, visual_ledger.md, intake/loom/{loom.md, loom.json, frames/}}` — one beat, one pair of files, so §34 global corrections, coverage diffs and reissue passes run as scripts over the tree, never as memory. **The repo tree lives at `builds/<BUILD>/` and carries `drive.json`; the delivered copy lives in the task's Drive `OUTPUT` folder (§18B).**
+`/build/{product_sheet.md, product_sheet.py, absorption_sheet.md, build_sheet.md, act_map.json, phrase_inventory.json, wardrobe_map.json, location_sheets/, registries/{roster,voice,scene,subject}.json, run_ledger.json, beats/{BEAT-ID}.t2i.txt, beats/{BEAT-ID}.i2v.json, capcut_block.md, visual_ledger.md, look/{grade.json, LUT-<BUILD>.cube, lut_preview.png}, intake/loom/{loom.md, loom.json, frames/}}` — one beat, one pair of files, so §34 global corrections, coverage diffs and reissue passes run as scripts over the tree, never as memory. **The repo tree lives at `builds/<BUILD>/` and carries `drive.json`; the delivered copy lives in the task's Drive `OUTPUT` folder (§18B).**
 
 ## E10. Doc-lint — standing §34 step at every version cut
 
@@ -8634,6 +8663,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 
 | Date | Correction | Section affected | Status |
 |---|---|---|---|
+| 2026-09-28 | Camera settings and colour grading: the film LUT becomes a real file (`LUT-[BUILD].cube`, `lut.py make / check / preview / apply`); white balance pinned per scene as the key's Kelvin (light plan, `COLOUR-KEY`, `light.kelvin`); Modes 2–3 matched, never graded; Mode 1 phone settings — 1x lens, no 0.5x or telephoto, no Portrait/Cinematic mode, no flash, night mode only in the dark (`NEG-PHONE`); the focal, stop and shutter numbers marked unverified. (User: "go ahead with 1–5".) | §12, §22A, §24G, §30K, §30L, §40, E4, E9, Appendix A (`COLOUR-KEY`, `NEG-PHONE`), Open Decisions, `lut.py`, `angles.py` | Written in |
 
 *(Emptied at the V7.64.3 cut — every row written in and listed in its changelog.)*
 
@@ -8740,6 +8770,8 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **E11 trim pass — first production run.** One talking-head beat through the full procedure. Judge: does every cut land between words, does any joint click, does the entry breath survive at 120 ms, and does the keep-list silence survive at its listed length? Then one A/B of `auto-editor` against the transcription route on the same clip. Settles by instrument plus one listen.
 
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
+
+**Camera numbers and the LUT — measure on the first film build (2026-09-28).** (a) Same frame, same seed: T2.0 vs T5.6 and 35mm vs 85mm in `CAM-FILM` — does depth or perspective change, or only the scale wording? (b) The shutter wording on Seedance and Kling — any motion-blur difference? (c) `COLOUR-KEY` with and without `[KELVIN]` across a five-shot scene — `light_check.py colour` warmth spread. (d) `LUT-[BUILD].cube` imported in CapCut mobile, and CapCut vs `lut.py apply` on the same clip — identical within ±2 levels?
 
 ---
 
