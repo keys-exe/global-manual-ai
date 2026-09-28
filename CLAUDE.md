@@ -8,6 +8,10 @@ This repo runs under the **AI Prompt Engineer — Global Standards** (currently 
 
 **At the start of every task, invoke the `ai-prompt-engineer` skill** and follow it. Before writing any deliverable, pull the relevant sections from the master file by grepping their headings (the file is too large to read whole). If this CLAUDE.md, the skill or anything else disagrees with the master file, the master file wins.
 
+**Every update goes to the default branch (user, 2026-09-28 — "always put it in the repo the updates to everyone including my other account").** Any change to the standards, skills, scripts or the board template is merged into the repo's default branch the same turn: commit, push the session branch, open a PR into the default branch and merge it. A push to a session branch alone is not done: other accounts and new sessions start from the default branch.
+
+**A system update never touches existing builds (user, 2026-09-28 — "don't update the other works, this is an update to our system, we don't adjust them without permission to the team working on that").** A change to the standards, skills, scripts or template applies to new work only. Never re-cut, re-trim, re-render or re-publish anything in another build (its files, board or Drive) because the system changed: the team working on that build decides, and it is done only on their explicit ask.
+
 Changes to the standards follow §0 and §34: say what will change and which sections before editing; edit the master file; keep the skill's summary in sync in the same commit; bump the version and changelog on a cut.
 
 Product Sheets and Build Sheets (Appendix B / C schemas) go under `products/` and `builds/` respectively. Nothing product-, brand-, character- or location-specific goes into `standards/`.
