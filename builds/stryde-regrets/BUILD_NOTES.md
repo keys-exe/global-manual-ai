@@ -5,7 +5,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 ## Intake
 - **Drive task folder:** https://drive.google.com/drive/folders/1kvZgI49_u8VvW6rAS5YsElvJC0nH7wXF
 - **Message:** "run manual. british. mode 1" → Manual, Mode 1, British cast and narrator, hooks in script (3).
-- **Board:** https://claude.ai/artifact/1PfmPCZQeuVTPn4ND1w86t
+- **Boards (split 2026-09-28):** Current https://claude.ai/artifact/1PfmPCZQeuVTPn4ND1w86t · Old https://claude.ai/artifact/3RCZV1DR5u6RxTVLhVTEre · Final https://claude.ai/artifact/4fVdcu3F7ZbGfcx67xJKd8 · Plan https://claude.ai/artifact/5tqDJr13iyyonKB1wSnKAp (`boards` on `builds/stryde-regrets` on all four; `docs/absorption` on Plan and Current). Nothing was replaced yet, so Old and Final start empty. The hourly Fix check still reads Current only — add the Final board to its prompt from this build's session.
 - Inspo renamed from its Drive id to `intake/inspo_regrets.mp4`; frames under `intake/frames/inspo_regrets/`.
   `intake/` is git-ignored; the transcript, measurements and script text are copied to `work/` — re-run `fetch_drive.py stryde-regrets <link>` to restore them.
 

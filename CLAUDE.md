@@ -25,11 +25,11 @@ Every generation goes on the build's **Generation Board**. **The board design is
 | `six-weeks-ago` (STRYDE · Six Weeks Ago) | Current https://claude.ai/artifact/QD4ZSJz5eWVGnRAqDQDesA · Old https://claude.ai/artifact/Ah4PtHqj1ie3A93HFK2zKX · Final https://claude.ai/artifact/6kGwrA28dAEoKMkRYqx3oa · no Plan board yet (no plan docs) |
 | `stryde-lost-moments` (STRYDE · Lost Moments, Manual — Drive `1UD92i5fATH3qiiez2jqI2WFQXYxxuPLc`) | Current https://claude.ai/artifact/BahH1QuzHm4bQ9FAdxXfKj · Old https://claude.ai/artifact/PSFVrqe9KY7vY8u8F2QZs8 · Final https://claude.ai/artifact/3kXabsrrt7z92deKdgZF2d · no Plan board yet (plan docs stay on Current) |
 | `stryde-three-regrets` (STRYDE · Three Regrets, Manual — Drive `1kvZgI49_u8VvW6rAS5YsElvJC0nH7wXF`) | https://claude.ai/artifact/HMjMnUVMQwBX4WsVjkUbcK |
-| `stryde-regrets` (STRYDE · Three Regrets, Manual — Drive `1kvZgI49_u8VvW6rAS5YsElvJC0nH7wXF`) | https://claude.ai/artifact/1PfmPCZQeuVTPn4ND1w86t |
-| `stryde-thirty-years` (STRYDE · Thirty Years Making Braces, Manual — Drive `1yO_Hjayp5pbXc2AfvbAXeXZTj_jdzcpi`) | https://claude.ai/artifact/EG999Jm7UoVdq5YAY7iafV |
+| `stryde-regrets` (STRYDE · Three Regrets, Manual — Drive `1kvZgI49_u8VvW6rAS5YsElvJC0nH7wXF`) | Current https://claude.ai/artifact/1PfmPCZQeuVTPn4ND1w86t · Old https://claude.ai/artifact/3RCZV1DR5u6RxTVLhVTEre · Final https://claude.ai/artifact/4fVdcu3F7ZbGfcx67xJKd8 · Plan https://claude.ai/artifact/5tqDJr13iyyonKB1wSnKAp |
+| `stryde-thirty-years` (STRYDE · Thirty Years Making Braces, Manual — Drive `1yO_Hjayp5pbXc2AfvbAXeXZTj_jdzcpi`) | Current https://claude.ai/artifact/EG999Jm7UoVdq5YAY7iafV · Old https://claude.ai/artifact/N67EMU135kmJQY9PZk6dMQ · Final https://claude.ai/artifact/Ub5AhRXtUDFzLiC14WqNCF · Plan https://claude.ai/artifact/TkaQ4iD18RobwQJM7RL1gs |
 | `demo-ad` (example only, placeholder media) | https://claude.ai/artifact/YK4ReHoWRnqBuXQvCMdHLT |
 
-Not split yet (their boards couldn't be read from this session on 2026-09-28): `stryde-regrets` https://claude.ai/artifact/1PfmPCZQeuVTPn4ND1w86t, `stryde-thirty-years` https://claude.ai/artifact/EG999Jm7UoVdq5YAY7iafV. `intake-1` and `demo-ad` hold placeholder data only and stay single boards.
+Not split: `stryde-three-regrets` (single board), `intake-1` and `demo-ad` (placeholder data only, stay single boards). `stryde-regrets` and `stryde-thirty-years` were split on 2026-09-28; their hourly Fix-check Routines still read the Current board only — their prompts can be changed only from the build's own session, so add the Final board there.
 
 **Always show the board (user, 2026-09-27), both run modes:** open the build's board in the user's panel (Artifact `action: "open"`, `url` = board) when a run starts or resumes and at every delivery (steps 1–3, 4–5, each hook, each act, the edit, the finished videos). Automatic writes and shows it exactly like Manual.
 

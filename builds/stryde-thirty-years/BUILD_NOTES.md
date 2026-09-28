@@ -213,3 +213,16 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - Any further Fix on BR-02, BR-05a, BR-05b, BR-12 is past the §22X limit — ask first.
 - Board storage stays at the cap; each new render goes up after its superseded file is removed.
 - Next: once BR-11 is in, rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.
+
+## Board split (2026-09-28, session_015sqGqyzZXwVgR7NJa4wTKc)
+- Four boards: Current https://claude.ai/artifact/EG999Jm7UoVdq5YAY7iafV · Old https://claude.ai/artifact/N67EMU135kmJQY9PZk6dMQ ·
+  Final https://claude.ai/artifact/Ub5AhRXtUDFzLiC14WqNCF · Plan https://claude.ai/artifact/TkaQ4iD18RobwQJM7RL1gs
+  (`boards` on `builds/stryde-thirty-years` on all four). Plan holds all seven `docs/*`; Current keeps its copies.
+- Moved to Old: BR-12 image v2 (the only replaced file still on the board — the rest were already removed and marked
+  `deleted`), and the unchosen VO takes T1/T3/T4 × HK1–3 (VO locked on T2). The nine VO cards were removed from Current;
+  BR-12 v2 is marked `archived` with its `archiveAsset`. About 34 MB freed.
+- Current still holds ~1,024 MB of live renders (the cap is 1,073.7 MB). The biggest are TH-HK1/2/3-BODY v3 (~325 MB, To check)
+  and VOICE-G1–G3 (~92 MB, the clone's source takes). Four files no card points to (~41 MB, uploaded 15:51–19:56 UTC,
+  possibly in-flight work) were left in place.
+- The hourly Fix check `trig_01HjYaZr7JdTVsfKyCw1ytUD` still reads Current only; its prompt can be changed only from this
+  build's own session — add the Final board there.
