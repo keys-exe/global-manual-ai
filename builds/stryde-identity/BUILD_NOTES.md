@@ -78,3 +78,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   `body/<BEAT>.t2i.txt`, `body/body_v1.json`. 27 cards on the board (stage broll, Act 1–5). Images through Kie GPT Image;
   videos (Seedance) wait for the user's Confirm of each image. F7: no `package_closed.jpg` — BR-22 uses the open-box
   reference plus PACKAGE text.
+- (2026-09-28, 09:10 UTC) **User: "stop"**, then **"for brolls use kling and never seedance"** (standing rule for this
+  build: body B-roll videos go through the Kling connector — `kling-video-v3_0_omni`, 9:16, 1080p, imageCount 1,
+  prefer_multi_shots false, simple plain-text prompts; never Seedance). The image run was stopped part-way:
+  16 start images made and on the board as To check (MECH-01/02/07/10/11/15, BR-03/04/05/08/09/12/13/14/16/19);
+  BR-06 failed at Kie; BR-17/18/20/21/22/23 were killed mid-call (not on the board); BR-24/25/26a/26b never sent.
+  Card video model set to Kling. E6 note: Kling's floor is 3s, so re-run the lengths with 3–15s before the video calls.
+  Nothing more is sent until the user says go.
