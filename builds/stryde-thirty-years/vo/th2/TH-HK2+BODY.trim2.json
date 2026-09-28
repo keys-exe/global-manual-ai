@@ -1,0 +1,128 @@
+{
+  "src": "TH-HK2+BODY.mp4",
+  "out": "TH-HK2+BODY.trim2.mp4",
+  "duration_in_s": 133.58,
+  "cuts": [
+    [
+      3.02,
+      3.06
+    ],
+    [
+      12.8,
+      12.94
+    ],
+    [
+      15.66,
+      15.68
+    ],
+    [
+      18.02,
+      18.04
+    ],
+    [
+      22.48,
+      22.6
+    ],
+    [
+      36.88,
+      37.14
+    ],
+    [
+      37.9,
+      38.02
+    ],
+    [
+      38.62,
+      38.84
+    ],
+    [
+      58.14,
+      58.18
+    ],
+    [
+      64.5,
+      64.52
+    ],
+    [
+      67.66,
+      67.74
+    ],
+    [
+      68.82,
+      69.18
+    ],
+    [
+      72.18,
+      72.26
+    ],
+    [
+      73.74,
+      73.82
+    ],
+    [
+      74.96,
+      74.98
+    ],
+    [
+      75.5,
+      75.54
+    ],
+    [
+      87.36,
+      87.66
+    ],
+    [
+      93.88,
+      93.94
+    ],
+    [
+      95.7,
+      95.72
+    ],
+    [
+      101.92,
+      101.96
+    ],
+    [
+      104.48,
+      104.68
+    ],
+    [
+      108.54,
+      108.6
+    ],
+    [
+      114.2,
+      114.4
+    ],
+    [
+      117.04,
+      117.12
+    ],
+    [
+      124.06,
+      124.2
+    ],
+    [
+      126.8,
+      127.08
+    ],
+    [
+      131.88,
+      132.06
+    ],
+    [
+      133.4,
+      133.58
+    ]
+  ],
+  "cut_total_s": 3.4,
+  "transcript": "I have made knee braces for 30 years. I am about to talk you out of buying one. Seventeen times your body weight goes through one spot below your kneecap. Every step. Two centimetres down on the tendon, not the cartilage, not the joint, that spot. Take the load off it and you come down the stairs forwards. Out of a chair, first try. The dog as far as you used to. Leave it there and the list of things you have stopped doing keeps growing. Here is what I have watched fail for 30 years. Sleeves, hinged braces, gels, wraps. I have sold plenty of them and they are better than nothing but the pain comes back to the same spot because none of them move the load off it. A sleeve squeezes the whole knee. A hinged brace stops your knee going sideways and your knee was never going sideways. So if you have a drawer full of these, that was not you failing. You were wrapping the wrong part of your leg. You do not wrap the joint. You go under it. Three things have to be right. One, the placement. Two centimetres below the kneecap on the tendon, never over the joint. Two, the pad, silicone, holding pressure on that one spot instead of spreading it round the whole knee. Three, the band. It catches your weight coming down and moves it off the worn part before it reaches the joint. 34 % less strain measured. Most straps that look like this are copies. Thin elastic, foam pad, no tension. They stretch and a stretched strap stops holding that spot. The one I hand people is stride. Three years with orthopedic surgeons. 200 ,000 wearing one. 10 seconds on. No saws. No rolling down. Do not take my word for it. One knee only. Leave the other bear. Go down your own stairs. You will know in a minute. Not because the arthritis is gone, because the force is not landing where it hurts. Two for one. So you can do both knees. 60 days and you keep the straps from the stride site. Not a marketplace. Go and do your stairs.",
+  "duration_out_s": 130.32,
+  "verify": {
+    "first_word_s": 0.0,
+    "tail_after_last_word_s": 0.34,
+    "gaps_over_0.4s": []
+  },
+  "status": "PASS"
+}

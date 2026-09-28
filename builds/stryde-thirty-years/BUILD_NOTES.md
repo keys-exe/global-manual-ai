@@ -59,6 +59,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   NOTE for B-roll timing: the trim moved every line earlier, so E6 lengths come from the trimmed videos' own word
   timestamps (`TH-HKn+BODY.trim.json`), not from T2.ALL.
 
+  ~12:30: user "THE TRIM IS TOO FAST" → re-trimmed gently (`trim.py --pre 0.12 --post 0.28`: pauses ≤~0.4s kept):
+  HK1 134.4s, HK2 130.3s, HK3 130.7s (23–28 cuts, ~3.4s each, PASS) → `vo/th2/TH-HKn+BODY.trim2.mp4`, v3 on each card.
+  Board file storage hit its 1 GB cap: deleted the unreferenced assets of the deleted TH cards (7 Avatar IV clips,
+  7 one-go trims, 5 TH-FULL parts). NOTE: 1 GB will not hold the B-roll at this rate — store board copies at the source
+  bitrate (~4 Mb/s) or make the Drive OUTPUT folders.
+  Hooks: user — no selfie in the hooks either (override of VN01/VN02). HK1 start-image prompt `hooks/HK1_start.prompt.txt`.
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.
