@@ -59,3 +59,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   part of the visual note: HK1-B + camera eases back to her hand on the rail; HK2-B + walks off with a box on his
   shoulder (camera eases back to show it); HK3-B + camera eases back to the toddler on a scooter ahead, her keeping up;
   HK3-T holds the strap out (child's scooter against the wall behind). Seedance v2 of HK1-B / HK2-B sent with these.
+- (2026-09-28, 08:45 UTC) **All six hook videos on the board (Seedance 2.5 via Kie, 720p, 5s), To check.** HK1-T/HK2-T/HK3-T
+  take the user's HK1-T clip as @video1. HK1-B / HK2-B remade to follow the visual notes (rail reveal; box on shoulder).
+  HK3-T has two takes (v1, v2 — the call was resent while v1 sat 35 min in Kie's queue). Seedance cost 315–380 Kie
+  credits per clip. Next: the user's check of each hook clip, then the edit.
+
