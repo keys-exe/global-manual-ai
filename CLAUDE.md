@@ -27,7 +27,10 @@ Every generation goes on the build's **Generation Board**. **The board design is
 
 **Final output tab (user, 2026-09-27):** the board has four tabs — Board, Manual run, Plan, **Final output**. Every finished video (one per hook variant: hook + the same body; a film: the finished film) goes on as its own `generations/<build-id>__FINAL-HK<n>` doc the turn it is exported: `stage: "edit"`, `final: true`, `beat: "FINAL-HK<n>"` (film: `FINAL`), `hook: <n>`, `title`, `line` (the hook's opening line), `madeFrom` (e.g. "HK1 + BODY, CapCut finish"), `videoAsset` / `videoParts` / `videoType`, `duration`, `videoRes`, `videoAt`, versions as usual. Manual: `status: review` — the final review is the user's; Automatic: `status: use`.
 
-Fix notes are picked up by the hourly Routine **Generation Board — hourly Fix check (stryde-thirty-years)** (`trig_01ERbz4gRWaJ3sZ2tPVgNCWC`, every hour at :49 UTC, fires into session_01MBdnm3ZCUQQ5RgQYk55XR8; the earlier `trig_015ExzFatSnixWK2PEU5hVmP` no longer exists). It skips cards with `demo: true`. While a Fix is being regenerated, the step's status is `generating`.
+Fix notes are picked up by an hourly Routine **Generation Board — hourly Fix check**, one per live session (each skips cards with `demo: true`; while a Fix is being regenerated, the step's status is `generating`):
+- `trig_01ERbz4gRWaJ3sZ2tPVgNCWC` — stryde-thirty-years, every hour at :49 UTC, fires into session_01MBdnm3ZCUQQ5RgQYk55XR8
+- `trig_01JwbciTZag3vqU45rw5sf82` — every hour at :32 UTC, fires into session_01H75hV8rxRkMbx5zhnK11Eo
+- the earlier `trig_015ExzFatSnixWK2PEU5hVmP` no longer exists
 
 New build: copy the template to your scratchpad, set its `<title>` to the build name, publish it as a new artifact with `capabilities: {db: {}, assets: {}, downloads: true}`, seed `builds/<id>` and its `generations`, and add a row above. To change the design, edit the template and republish it to every board with `url` (keep each board's `<title>`).
 

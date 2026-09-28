@@ -1,0 +1,31 @@
+{
+ "beat": "BR-12",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "She walks briskly along the path past the green railings with long strides, towards the camera. The strap stays exactly where it is and keeps its shape; the shell is rigid and never bends. The phone stays still beside the path. No text, no music.",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "BR-12 confirmed image",
+ "start_approved": true,
+ "pinned": false,
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "subject_motion": "travels",
+ "pace": "unhurried",
+ "risks": [
+  {
+   "risk": "strap bends or slides",
+   "prevented_by": "rigid-shell clause, strap stays where it is"
+  },
+  {
+   "risk": "limbs distort from over-specified motion",
+   "prevented_by": "one plain action at a named easy pace"
+  },
+  {
+   "risk": "camera travels with the subject and warps the frame",
+   "prevented_by": "phone still / steady (§27G)"
+  }
+ ]
+}

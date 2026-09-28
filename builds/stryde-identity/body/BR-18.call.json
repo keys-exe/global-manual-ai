@@ -1,0 +1,31 @@
+{
+ "beat": "BR-18",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "Her hands let the trouser leg fall slowly down over the knee until the fabric covers the strap and lies flat. Handheld phone, steady. No text, no music.",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "BR-18 confirmed image",
+ "start_approved": true,
+ "pinned": false,
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "subject_motion": "in_place",
+ "pace": "unhurried",
+ "risks": [
+  {
+   "risk": "strap bends or slides",
+   "prevented_by": "rigid-shell clause, strap stays where it is"
+  },
+  {
+   "risk": "limbs distort from over-specified motion",
+   "prevented_by": "one plain action at a named easy pace"
+  },
+  {
+   "risk": "camera travels with the subject and warps the frame",
+   "prevented_by": "phone still / steady (§27G)"
+  }
+ ]
+}

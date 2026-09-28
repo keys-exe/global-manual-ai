@@ -1,0 +1,33 @@
+{
+ "beat": "HK1-T",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "The man holds the strap out towards the camera and slowly turns it round, from the front with the stryde wordmark to the back, ending exactly on the last frame: the plain black pad facing the camera with the woven band looped across in front of it. One smooth, slow turn; the two peaks point up the whole time. The shell is rigid and never bends. His hands stay on the ends of the strap. The phone is propped on the desk and stays still. No text, no music.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "HK1-T_v1.png",
+ "start_approved": true,
+ "pinned": true,
+ "end_image": "HK1-T_end_v2.png",
+ "end_approved": true,
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "subject_motion": "in_place",
+ "pace": "unhurried",
+ "risks": [
+  {
+   "risk": "shell curls or flips during the turn (old single-frame fault)",
+   "prevented_by": "first-and-last frame pinned + rigid shell + peaks up the whole time"
+  },
+  {
+   "risk": "band melts or doubles as it swings to the front",
+   "prevented_by": "end frame shows the band's exact place; one slow turn"
+  },
+  {
+   "risk": "camera drifts and the frame warps",
+   "prevented_by": "phone propped on the desk, still"
+  }
+ ]
+}
