@@ -274,6 +274,67 @@ V["BR-15c"] = ("CLOSE as in the start frame, her right knee and shin, her two ha
    [("strap rides up onto the kneecap", "'stays exactly where it is' + negatives + product lock"), ("fingers fuse with the shell", "HOLD-HC"),
     ("strap reshapes under the press", "HOLD_PC")])
 
+# ── Third tries, approved by the user ("All three", 2026-09-28 ~19:05) — §22X generation 3 ───────────────────────────────
+VFIX3 = {
+ "BR-05a": "arrage the product → MOTION: v2 had his hands simply leave the supports; the note asks for arranging, so his fingertips "
+           "now square the four supports into a neat row on the bench, sliding each a little, never lifting one",
+ "BR-05b": "close up the product / slowly zoom in → CAMERA: v2's locked camera kept the wide framing; now one slow steady push-in from "
+           "the start frame onto the braces at his hand, ending close on them, focus locked",
+}
+V.update({
+ "BR-05a": ("As in the start frame: looking down past his shoulder at the bench, his forearms and the row of supports.", PROPPED,
+   "His two hands arrange the four supports into a neat, straight row on the bench over about four seconds: his fingertips nudge the "
+   "rolled wrap into line at the end of the row, then square up the hinged brace beside it, each support sliding a little across the "
+   "wood, never lifted off it. The row ends tidy and even.", False,
+   "no support lifted off the bench, no support held up, no fifth support, no supports moving by themselves, no face", "in_place",
+   [("a hand picks a support up (the v1 note)", "sliding only, never lifted + negatives"), ("supports merge or change", "HOLD-C"),
+    ("fingers fuse with the supports", "HOLD-HC")]),
+ "BR-05b": ("MEDIUM as in the start frame at first, through the hanging braces, ending CLOSE on the braces at his hand.",
+   "Propped, not held. One slow, steady push-in towards the braces at his hand across the whole clip, ending close on them; focus "
+   "locked on those braces, sharp every frame; no other camera move.",
+   "His fingertips trail across the three hangers nearest his hand in one unhurried pass over about two seconds, those braces "
+   "swinging a little and still swinging after.", False,
+   "no braces falling, no hangers merging, no blur on the braces, no fast zoom, no camera moving along the rail, no face", "in_place",
+   [("braces go soft in the push-in", "focus locked on the braces + no blur"), ("zoom too fast", "slow, steady, whole clip + no fast zoom"),
+    ("hand passes through the braces", "HOLD-HC")]),
+})
+
+# ── Round 5 (user "fix those" + "generate the confirm images", 2026-09-28 ~19:10) ──────────────────────────────────────
+VFIX.update({
+ "BR-13": "she is walking down the stair confident → MOTION: v1 finished one step and then stood still; now she keeps walking down "
+          "the flight at a brisk, even, confident pace, two steps, still mid-stride at the cut",
+ "BR-14b": "he's showing the product → MOTION: v1 turned the copy up to the lens so it read as our strap on display; now his hands "
+           "stay low over the bench, the copy's shell kept down and turned away, and only the thin band is stretched out long",
+ "BR-18a": "remove the bracelet / fix the holding (image Fixes) → FRAME: the video is remade from the confirmed v4 start image "
+           "(nothing on his wrists, BR-15a's grip in both hands); motion as before",
+})
+V.update({
+ "BR-13": ("MEDIUM as in the start frame, side view through the spindles.", HANDHELD,
+   "She walks on down the stairs, confident, one step a second, already mid-step, two more steps. "
+   + STAIR + " The camera stays behind the spindles.", True,
+   "no stopping, no hand on the rail, no camera following her, no face", "travels",
+   [("she stops after one step (the v1 fault)", "two steps, still mid-flight at the cut + no stopping"),
+    ("feet blend on the stairs", "one step a second, STAIR-EASE"), ("strap slides as the knee bends", "product lock + HOLD_PC")]),
+ "BR-14b": ("CLOSE as in the start frame, his two hands and the copy strap low over the bench.", PROPPED,
+   "His hands stay low over the bench: his right hand pulls the copy's thin band a little further out over about two seconds, the band "
+   "stretching long and pale, then lets it go, the band hanging long and slack; his left hand keeps the copy's shell down, turned away "
+   "from the lens.", False,
+   "no lifting the copy up, no showing the shell to the camera, no band springing back, no copy gaining a wordmark, no second copy, "
+   "no face, " + P.NEG_FAKE_HERO, "in_place",
+   [("copy shown to the lens like the product (the v1 fault)", "hands low, shell turned away + negatives"),
+    ("band springs back", "'hanging long and slack'"), ("fingers fuse with the band", "HOLD-HC")]),
+})
+
+VFIX3["BR-12"] = ("she's walking / front angle → FRAME + MOTION: new front-view start image (v3, confirmed); she stands still at the "
+                  "foot of the stairs, boots planted the whole clip, only her weight settling onto the right leg")
+V["BR-12"] = ("KNEE HEIGHT from the front as in the start frame, her legs from waist to boots at the foot of the stairs.", PROPPED,
+   "She stands still facing the camera, both boots planted flat on the carpet the whole clip. Her weight settles onto her right leg "
+   "over about two seconds, the right knee straightening a little under the strap; the strap stays exactly where it is, just below "
+   "the kneecap.", True,
+   "no step, no walking, no foot lifting, no turning away, no hands on the knee, no face", "in_place",
+   [("she walks (the v1/v2 fault)", "boots planted the whole clip + no step, no walking"), ("strap slides", "product lock + HOLD_PC"),
+    ("legs warp", "HOLD-C")])
+
 
 def build(beat):
     framing, rig, motion, prod, extra, sm, risks = V[beat]
@@ -304,6 +365,8 @@ if __name__ == "__main__":
                 "risks": [{"risk": a, "prevented_by": b} for a, b in risks]}
         if beat in VFIX:
             call["fix_note"] = VFIX[beat]
+        if beat in VFIX3:
+            call.update(generation=3, fix_note=VFIX3[beat], user_go="2026-09-28: third generation approved by the user ('All three')")
         (HERE / f"video/{beat}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
         (HERE / f"video/{beat}.prompt.txt").write_text(prompt)
         print(beat.ljust(8), str(call["duration"]).rjust(2), "s", str(len(prompt)).rjust(5), "chars", img)

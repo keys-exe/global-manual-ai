@@ -659,6 +659,35 @@ B["BR-18a"] = (NBP, ["73cd4b03-518b-4f38-83b4-e65334a19fee", "90168a20-dade-40fe
     "no pinching fingertips, no fingers across the wordmark, no fingers over the peaks, no bracelet, no band round the wrist, "
     "no other change to the image, no third strap, " + NEG_HANDS))
 
+# ── Fix round 7 (user Fix on the BR-12 video "she's walking / front angle", third try approved 2026-09-28 ~19:05) ─────────
+# The front angle is a frame change (§22X): a new start image from the front, her standing still at the foot of the stairs.
+FIX7 = {"BR-12": "she's walking / front angle (video Fix; frame changed to a front view)"}
+B["BR-12"] = (NBP, ["worn_front", "front", "back", "S1", "P0"], photo([
+    "The strap and how it sits on the knee are EXACTLY as in the first attached photo, the front-worn reference. A snapshot from a phone "
+    "held at knee height a couple of steps in front of her in the hall. She stands still at the foot of the stairs facing the camera, "
+    "both boots planted flat on the hall carpet, weight a little more on her right leg, the stairs rising behind her. The frame runs from "
+    "her waist to her boots; her hands hang relaxed at her sides. The strap is on her RIGHT knee (on the left of the frame), the rigid "
+    "shell just below the kneecap facing the camera, the grey stryde wordmark readable, a chrome slide at each side of the knee.",
+    "Her clothes: " + WARD["W-D2"] + ". " + SKIN_LEG,
+    PROD + " " + RIGID + " " + P.PLACE_LOCK.replace("[SIDE]", "right") + " " + P.SIZE_WORN, STAIRS,
+    "THE CAMERA ANGLE: a camera at knee height in front of her, square to her knees. This exact angle, never from behind.",
+    focus("the product and its wordmark"), light("ST-L", "her legs"), colour("STAIRS")],
+    WORN_NEG + ", no walking, no foot lifted, no step, no view from behind, no face, " + NEG_SUP))
+
+# ── Fix round 8 (user Fix note, 2026-09-28 ~19:10) — BR-11-END "show the back starp": v2 showed the pad side but hid the band.
+#   Now held the way the back product photo is shot: by the shell's two ends, the closed band loop hanging towards the lens.
+FIX8 = {"BR-11-END": "show the back starp"}
+END["BR-11-END"] = (NBP, ["back", "56a2c1e9-d175-47eb-b7f0-fdd5325768c0", "front"], photo([
+    "The strap in this photo is THE EXACT SAME OBJECT, SEEN THE SAME WAY, as the FIRST attached product photo, the back of the strap. "
+    "The SECOND attached image is the scene: keep the man, his apron, the bench, the vice, the workshop, the camera position and the "
+    "light exactly as in it. The only change: he holds the strap up at chest height by the two ends of the shell, one hand each side, "
+    "turned so the BACK faces the lens exactly as in the first attached photo — the plain smooth matte-black pad side of the shell at "
+    "the top with its two peaks and notch along the top edge, a brushed chrome slide at each end, and the closed black coarse-knit "
+    "band hanging down below it towards the camera in a full loop, its two black keeper loops visible at the middle of the band. "
+    "The shell the same small size as in the second image. No wordmark is visible from this side."],
+    "no wordmark, no front face, no band hidden, no band folded away, no peaks along the bottom edge, no upside-down shell, "
+    "no second strap, no size change, no other change to the scene, " + NEG_HANDS))
+
 if __name__ == "__main__":
     out = {}
     for beat, (model, refs, prompt) in B.items():

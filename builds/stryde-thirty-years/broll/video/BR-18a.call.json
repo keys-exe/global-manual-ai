@@ -7,7 +7,7 @@
  "duration": 4,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "broll/renders/BR-18a_v2.png",
+ "start_image": "broll/renders/BR-18a_v4.png",
  "start_approved": true,
  "pinned": false,
  "end_image": null,
@@ -15,7 +15,7 @@
  "pace": "unhurried",
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "generation": 2,
  "risks": [
   {
    "risk": "the two straps morph into each other or change size",
@@ -29,5 +29,6 @@
    "risk": "his face drifts",
    "prevented_by": "HOLD-HC"
   }
- ]
+ ],
+ "fix_note": "remove the bracelet / fix the holding (image Fixes) → FRAME: the video is remade from the confirmed v4 start image (nothing on his wrists, BR-15a's grip in both hands); motion as before"
 }

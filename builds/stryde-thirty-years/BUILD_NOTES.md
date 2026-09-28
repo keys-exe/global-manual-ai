@@ -190,12 +190,19 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   confirmed v3 already has the strap seated, so the clip is a press-and-release; pin_end → no). The user's answer on the three
   third-generation Fixes (BR-05a, BR-05b, BR-12) ticked every option including "None for now" — held, asked again.
 
-## Where it stands (2026-09-28 19:00)
+  ~19:05–19:15: user answered "All three" → third tries (§22X gen 3, `user_go` on the call, preflight's only FAIL is the
+  generation gate): BR-05a v3 (fingertips square the supports into a row, sliding, never lifting), BR-05b v3 (slow push-in onto the
+  braces), BR-12 (new front-angle start image v3 — confirmed — then video v3: boots planted, weight settles). Round 5 ("fix those" +
+  "generate the confirm images"): BR-13 v2 (walks on down confidently, two steps, no stopping), BR-14b v2 (hands low, the copy's shell
+  kept down, only the band stretched — v1 read as showing our product), BR-18a v2 (remade from the confirmed v4 image), BR-11-END v3
+  ("show the back starp" → held like the back product photo, band loop and keepers towards the lens). Each superseded file removed
+  from the board to make room (user's "delete old-version files"), versions kept on the cards marked deleted.
+
+## Where it stands (2026-09-28 19:15)
 - Hooks done. VO master T2. TH-HK1/2/3-BODY v3 still To check.
-- B-roll videos To check: BR-02 v2, BR-18b v2, BR-13, BR-14b, BR-15a, BR-15c (+ earlier ones not yet confirmed).
-- Waiting on the user's go (third generation, §22X): BR-05a ("arrange the product"), BR-05b ("close up, slowly zoom in"),
-  BR-12 ("she's walking, front angle" — needs a new front-angle start image first).
-- Images To check: BR-11-END v2 (BR-11's video follows its Confirm, first-and-last frame), BR-18a v4 (its v1 video is out of
-  date; a new one follows the Confirm).
-- Board storage is at the 1 GB cap after each upload; the next round needs more old files cleared (or Drive for finals).
+- B-roll videos To check: BR-05a v3, BR-05b v3, BR-13 v2, BR-14b v2, BR-18a v2, BR-12 v3 (rendering), plus others not yet confirmed.
+- BR-02: Fix "he is pointing the patellar tendon 3x" would be its third generation — waits for the user's go.
+- BR-11-END v3 To check; BR-11's video (first-and-last frame) follows its Confirm.
+- Any further Fix on BR-05a, BR-05b or BR-12 is a fourth generation — ask first.
+- Board storage stays at the cap; each new render goes up after its superseded file is removed.
 - Next: Fix/confirm the videos → rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.
