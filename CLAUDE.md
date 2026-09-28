@@ -20,7 +20,13 @@ Every generation goes on the build's **Generation Board**. **The board design is
 |---|---|
 | `intake-1` (STRYDE · Identity Callout) | https://claude.ai/artifact/HVPuUcnNK1MUrCYnou9UnJ |
 | `stryde-identity` (STRYDE · Identity Callout, Manual — Drive `1tKlZFjNApDMf5U_q3qFPcRyGZLQsVcwE`) | Current https://claude.ai/artifact/GKZDjmZkh4wwm7RxtXj7Tp · Old https://claude.ai/artifact/463LLedeKaxFUa38SA4tEJ · Final https://claude.ai/artifact/9Y3ww3H8Bc3X6Xsp2JPVPW · Plan https://claude.ai/artifact/8BJ5uy6ejnwZdr9up5xjGk |
+| `sha0071` (SHA0071 · Energy) | Current https://claude.ai/artifact/NzYWYmtn5wKo97V2xfKCm1 · Old https://claude.ai/artifact/XDPYRn8jwpWvPFzmiMjS9g · Final https://claude.ai/artifact/XSByp23U2QCJR3uUtPHGFp · Plan https://claude.ai/artifact/LA58CqVnZs5rtQnyAeWh7S |
+| `stryde-cascade` (STRYDE · The Cascade) | Current https://claude.ai/artifact/QK6FwiCxWuZqoWWVoEx2Yd · Old https://claude.ai/artifact/6k3anNh4cNCY5BtSYZSbMf · Final https://claude.ai/artifact/Mv283Lgzqhs7qyM33Vmkwi · Plan https://claude.ai/artifact/EcHxSeHnRSbnUhwRqr1pwc |
+| `six-weeks-ago` (STRYDE · Six Weeks Ago) | Current https://claude.ai/artifact/QD4ZSJz5eWVGnRAqDQDesA · Old https://claude.ai/artifact/Ah4PtHqj1ie3A93HFK2zKX · Final https://claude.ai/artifact/6kGwrA28dAEoKMkRYqx3oa · no Plan board yet (no plan docs) |
+| `stryde-lost-moments` (STRYDE · Lost Moments) | Current https://claude.ai/artifact/BahH1QuzHm4bQ9FAdxXfKj · Old https://claude.ai/artifact/PSFVrqe9KY7vY8u8F2QZs8 · Final https://claude.ai/artifact/3kXabsrrt7z92deKdgZF2d · no Plan board yet (plan docs stay on Current) |
 | `demo-ad` (example only, placeholder media) | https://claude.ai/artifact/YK4ReHoWRnqBuXQvCMdHLT |
+
+Not split yet (their boards couldn't be read from this session on 2026-09-28): `stryde-regrets` https://claude.ai/artifact/1PfmPCZQeuVTPn4ND1w86t, `stryde-thirty-years` https://claude.ai/artifact/EG999Jm7UoVdq5YAY7iafV. `intake-1` and `demo-ad` hold placeholder data only and stay single boards.
 
 **Always show the board (user, 2026-09-27), both run modes:** open the build's board in the user's panel (Artifact `action: "open"`, `url` = board) when a run starts or resumes and at every delivery (steps 1–3, 4–5, each hook, each act, the edit, the finished videos). Automatic writes and shows it exactly like Manual.
 
