@@ -1,0 +1,26 @@
+[
+ {
+  "take": "T1",
+  "bytes": 4135332,
+  "request_id": "z2yg7iSUZthidnljclxL",
+  "secs": 48.1
+ },
+ {
+  "take": "T2",
+  "bytes": 4060726,
+  "request_id": "vRYrVNbXhKVATUxGTNzb",
+  "secs": 44.2
+ },
+ {
+  "take": "T3",
+  "bytes": 4154767,
+  "request_id": "fn8GkF7JJ6sq3t4nbLZK",
+  "secs": 50.2
+ },
+ {
+  "take": "T4",
+  "bytes": 4028125,
+  "request_id": "5DVONDDOjFOKwxgVbRVh",
+  "secs": 46.3
+ }
+]

@@ -36,9 +36,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - ~20:52 UTC: user "USE A DOCTOR CLOTHES" → D-VOICE-IMG v2 (job b17f293d): white coat + stethoscope locked in the prompt; v1 to Old; G1–G3 point at v2.
 
+- ~21:00–21:40 UTC: user "go ahead with the voice stage" (taken as approval of D-VOICE-IMG v2). G1–G3 via Kie (690 credits; first send
+  rejected free: Kie needs aspect_ratio auto). voice_source PASS → clone **Down** `lLQRuUpi2CbzE9mw4WRD` → eleven_v4 ×4 → split → house cut (16 parts +
+  whole T1 one pass 135.83s PASS) → HeyGen photo avatar `bd3f0bac…` → Avatar V one-go render `c48a6bc2…` (motionPrompt rejected: no digital twin).
+  Applied the user's 2026-09-28 corrections from the stryde-thirty-years branch (Avatar V only, one go) — that branch's §22U is not merged here yet.
+  See vo/VO.md.
+
 ## Where it stands
-- **Confirmed on the board:** D-DOC v2, P-PATIENT, P0–P2 v2, P3, W-L-FRONT/REAR/BENT.
-- **Waiting on the user:** Confirm/Fix D-VOICE-IMG (Kling credits no longer block: Kie substitute).
-- **Then straight through (§22U, no stop):** G1–G3 → voice_source.py → clone "Down" (elevenlabs_clone.py) → eleven_v4 ×4 (vo/tts_enhanced.txt)
-  → split HK1/HK2/HK3/BODY → house cut → HeyGen Avatar V TH ×8 (motion prompt each) → E11 trim. Then hooks (step 6).
-- Flags still open: F2, F4, F5 (claims, voiced as written), F8 (built left), F9 (natural pace).
+- **Voice:** cloned; 4 VO takes + whole-take cut on the board (To check); working take T1. Talking heads rendering (one go).
+- **Next:** download the render → cut into TH-HK1+BODY / TH-HK2+BODY / TH-HK3+BODY at vo/cut/T1.ALL.mp3.cuts.json → trim.py (natural pace) → board.
+  Then hooks one by one (step 6).
+- **Open:** pace — the house-cut body runs ≈255 wpm (F9, natural-pace target ~155); flags F2, F4, F5, F8 (left), F9.

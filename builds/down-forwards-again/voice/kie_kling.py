@@ -18,7 +18,7 @@ def send(call_path):
     c = json.load(open(call_path))
     assert len(c["prompt"]) <= 3072, len(c["prompt"])
     inp = {"prompt": c["prompt"], "image_urls": [kie.as_url(c["start_image"])], "duration": int(c["duration"]),
-           "resolution": c.get("resolution", "1080p"), "aspect_ratio": c.get("aspect_ratio", "9:16"),
+           "resolution": c.get("resolution", "1080p"), "aspect_ratio": "auto",  # Kie: must be auto for single-frame i2v; follows the 9:16 start image
            "audio": c.get("kind") == "dialogue" or bool(c.get("audio")), "prefer_multi_shots": False}
     return kie.create(MODEL, inp)
 if __name__ == "__main__":
