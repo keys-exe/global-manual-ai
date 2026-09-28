@@ -22,6 +22,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   the previous for a cleaner look.** HK1-T and HK1-B removed from the board; both cards (every prompt, version,
   Fix note and asset id) archived in `archive/board_2026-09-28/`. The asset files stay in the board's store,
   unreferenced, so any old render can still be restored. Hourly Fix check moved here (`trig_01JwbciTZag3vqU45rw5sf82`).
+  **New hook set (same act-map shots, all three hooks):** prompts in `hooks/` (`hooks_v1.json`, `<beat>.t2i.txt`),
+  built from last round's user-picked HK1 prompts. Six Higgsfield nano_banana_pro jobs were sent, then the user
+  switched the route: **images now go through the Kie AI API with GPT Image** (`gpt-image-2-5-sunburst-image-to-image`,
+  user, 2026-09-28) — the Higgsfield renders were not put on the board. The user asked to see one image first:
+  HK1-T v1 is on the board (review); the other five wait for the user's check of it.
 
 ## Where it stands
 - **§22U steps 6–9 done:** clone `Identity-Narrator` = `F5vpA7jC44a7w7td6GdQ` (by API; `Identity` was taken by the
