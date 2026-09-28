@@ -1,0 +1,256 @@
+{
+ "T1.mp3": {
+  "dur": 147.6,
+  "words": 650,
+  "ref_words": 651,
+  "ratio": 0.9808,
+  "diffs": [
+   [
+    "replace",
+    "ask",
+    "asked"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "round",
+    "around"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "any more",
+    "anymore"
+   ],
+   [
+    "replace",
+    "bare",
+    "bear"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "stretched",
+    "stretch"
+   ],
+   [
+    "replace",
+    "whose",
+    "who's"
+   ]
+  ],
+  "tail_db": -24.9,
+  "long_gaps": [
+   [
+    108.38,
+    0.64
+   ]
+  ],
+  "wpm": 264
+ },
+ "T2.mp3": {
+  "dur": 151.36,
+  "words": 647,
+  "ref_words": 651,
+  "ratio": 0.9676,
+  "diffs": [
+   [
+    "replace",
+    "ask",
+    "asked"
+   ],
+   [
+    "replace",
+    "i am",
+    "i'm"
+   ],
+   [
+    "replace",
+    "favour",
+    "favor"
+   ],
+   [
+    "replace",
+    "i am",
+    "i'm"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "round",
+    "around"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "i am",
+    "i'm"
+   ],
+   [
+    "replace",
+    "any more",
+    "anymore"
+   ]
+  ],
+  "tail_db": -20.8,
+  "long_gaps": [
+   [
+    115.6,
+    0.7
+   ]
+  ],
+  "wpm": 256
+ },
+ "T3.mp3": {
+  "dur": 155.12,
+  "words": 647,
+  "ref_words": 651,
+  "ratio": 0.9707,
+  "diffs": [
+   [
+    "replace",
+    "ask",
+    "asked"
+   ],
+   [
+    "replace",
+    "i am",
+    "i'm"
+   ],
+   [
+    "replace",
+    "favour",
+    "favor"
+   ],
+   [
+    "replace",
+    "i am",
+    "i'm"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "round",
+    "around"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "i am",
+    "i'm"
+   ],
+   [
+    "replace",
+    "any more",
+    "anymore"
+   ]
+  ],
+  "tail_db": -37.8,
+  "long_gaps": [],
+  "wpm": 250
+ },
+ "T4.mp3": {
+  "dur": 144.08,
+  "words": 650,
+  "ref_words": 651,
+  "ratio": 0.9869,
+  "diffs": [
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "any more",
+    "anymore"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "stretched",
+    "stretch"
+   ]
+  ],
+  "tail_db": -45.0,
+  "long_gaps": [],
+  "wpm": 271
+ }
+}

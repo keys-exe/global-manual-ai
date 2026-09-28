@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Kie AI API client (§5) — the route for Seedance 2.5 and the image fallback.
+"""Kie AI API client (§5) — the route for Seedance 2.5, the image fallback and the Kling fallback.
 
 Needs KIE_API_KEY in the environment (an environment secret; never pasted in chat).
 
@@ -10,6 +10,9 @@ Needs KIE_API_KEY in the environment (an environment secret; never pasted in cha
                gpt-image-2-5-sunburst-text-to-image | gpt-image-2-5-sunburst-image-to-image
   kie.py seedance --prompt-file P --ref-image URL ... [--ref-audio URL ...]
         [--duration 10] [--no-audio] [--out FILE]
+  kie.py kling --prompt-file P --image URL [--end-image URL] [--duration 5] [--out FILE]
+        Kling 3.0 (`kling-3.0/video`) — the Kling fallback when the Kling account is short of the
+        batch or over its cap (§5, V7.65.0): pro mode (1080x1920), 9:16, sound off, single shot.
   kie.py wait TASK_ID [--out FILE]
 
 Fixed by the standard, never overridden here: aspect 9:16; images 2K; Seedance
@@ -107,6 +110,9 @@ def main():
     s.add_argument("--ref-image", nargs="+", required=True); s.add_argument("--ref-audio", nargs="*", default=[])
     s.add_argument("--duration", type=int, default=5); s.add_argument("--no-audio", action="store_true")
     s.add_argument("--out")
+    k = sub.add_parser("kling"); k.add_argument("--prompt-file", required=True); k.add_argument("--image", required=True)
+    k.add_argument("--end-image"); k.add_argument("--duration", type=int, default=5); k.add_argument("--sound", action="store_true")
+    k.add_argument("--out")
     w = sub.add_parser("wait"); w.add_argument("task_id"); w.add_argument("--out")
     a = ap.parse_args()
 
@@ -118,6 +124,16 @@ def main():
         res, rc = wait(a.task_id, a.out); print(json.dumps(res, indent=2)); sys.exit(rc)
 
     prompt = Path(a.prompt_file).read_text(encoding="utf-8")
+    if a.cmd == "kling":
+        if not 3 <= a.duration <= 15:
+            sys.exit(json.dumps({"error": "Kling duration must be 3-15s, stated (E6)"}))
+        imgs = [as_url(a.image)] + ([as_url(a.end_image)] if a.end_image else [])
+        inp = {"prompt": prompt, "image_urls": imgs, "duration": str(a.duration), "aspect_ratio": "9:16",
+               "mode": "pro", "sound": bool(a.sound), "multi_shots": False}
+        task = create("kling-3.0/video", inp)
+        if a.out:
+            res, rc = wait(task, a.out); res["model"] = "kling-3.0/video"; print(json.dumps(res, indent=2)); sys.exit(rc)
+        print(json.dumps({"taskId": task, "model": "kling-3.0/video"})); return
     if a.cmd == "image":
         field, cap = IMAGE_MODELS[a.model]
         refs = [as_url(r) for r in a.ref]
