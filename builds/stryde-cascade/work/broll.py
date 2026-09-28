@@ -40,18 +40,20 @@ HEIGHT = {"ground": "from almost at floor level, the phone near the ground looki
           "eye": "at eye level", "high": "from above, the phone held high looking down", "overhead": "from straight overhead, looking down"}
 def angle_line(r):
     a = r["angle"]; subj = {"N-hands": "his hands", "none": "the scene", "product": "the strap", "anatomy": "the knee"}.get(r["subject"], "her" if r["subject"] == "C1" else "him")
-    t = f"THE CAMERA ANGLE: {HEIGHT[a['height']]}, seen from {'the ' + a['side'] if a['side'] not in ('behind','ots') else a['side']} of {subj}"
+    SIDEP = {"front": f"straight on to the front of {subj}", "three-quarter": f"a three-quarter angle on {subj}", "profile": f"the side, {subj} in profile",
+             "three-quarter-back": f"behind {subj} at a three-quarter angle, over the shoulder", "behind": f"directly behind {subj}", "ots": f"over the shoulder of {subj}"}
+    t = f"THE CAMERA ANGLE: {HEIGHT[a['height']]}, seen from {SIDEP[a['side']]}"
     if a["fg"] == "through": t += ", looking past the banister spindles, soft in the near foreground"
     return t + ". This exact angle, not a straight-on eye-level view."
 PLANE = {"eyes": "the nearest eye", "hands": "the hands and what they hold", "product": "the strap and its wordmark", "foreground": "the foreground", "background": "the subject further back", "deep": "everything"}
 def focus_line(r):
     f = r["focus"]; depth = "everything from near to far stays sharp" if f["dof"] == "deep" else "the room behind falls to a soft, recognisable shape"
     return f"FOCUS: {PLANE[f['plane']]} is in sharp focus; {depth}. The blur is optical: soft and round, never smeared."
-SCREEN = {"L": "left", "R": "right", "front": "front, slightly to one side", "back": "back, the window behind"}
+SCREEN = {"L": "from the left of the frame", "R": "from the right of the frame", "front": "from the front, slightly to one side", "back": "from behind the subject, the window behind them"}
 def light_line(r):
     l = r["light"]
     if r["location"] == "ANAT": return s("ANAT-LIGHT").replace("[TARGET]", SL["TARGET"])
-    return (f"THE LIGHT: {l['source']} lights the scene from the {SCREEN[l['key_side']]} of the frame, {l['time']} daylight, {l['arc']}, "
+    return (f"THE LIGHT: {l['source']} lights the scene {SCREEN[l['key_side']]}, {l['time']} daylight, {l['arc']}, "
             "so the subject has a lit side and a softer shadow side. The shadows fall away from that source, one way only.")
 def person(r):
     sub = r["subject"]
@@ -68,6 +70,7 @@ def product(r):
     if ps == "object": return " ".join([P.REF_PROD, P.WORDMARK_LOCK, P.SIZE_OBJECT])
     if ps == "fake": return P.FAKE_BASE + " Its soft band has stretched out of shape so the strap sags and slides down the shin."
     return ""
+PAIR = {"A5-B1", "A5-P1", "A4-P3"}  # two units in frame: pair-pack carve-out (product sheet NEG_HELD_P note)
 def refs(r):
     ids = []
     if r["subject"] in SHEET: ids.append(MID[SHEET[r["subject"]]])
@@ -98,10 +101,10 @@ def t2i(r, campos, scene, extra=""):
     if r["location"] in ("P1-HALL", "P1-FRONT"): neg.append(s("NEG-PROP"))
     if r["location"] in ("P1-FRONT", "C2-HALL", "WORK", "VAN"): neg.append(s("NEG-SCENE"))
     if r["product_state"] == "worn": neg += [NEGPLACE, P.NEG_WORDMARK, P.NEG_OBSERVED]
-    if r["product_state"] in ("held", "object"): neg += [P.NEG_WORDMARK, P.NEG_OBSERVED, P.NEG_HELD_P if r["product_state"]=="held" else ""]
+    if r["product_state"] in ("held", "object"): neg += [P.NEG_WORDMARK, P.NEG_OBSERVED, (P.NEG_HELD_P.replace(", no second strap", "") if r["beat"] in PAIR else P.NEG_HELD_P) if r["product_state"]=="held" else ""]
     if r["product_state"] == "fake": neg.append(P.NEG_FAKE_HERO)
     if r["product_state"] == "absent": neg.append("no knee strap, no knee brace, no product")
-    neg += [s("NEG-LIGHT"), s("NEG-M1"), "no logos, no brand names, no text, no phone in frame"]
+    neg += [s("NEG-LIGHT"), s("NEG-M1"), "no logos, no brand names, no text" + ("" if "phone" in r["action"] else ", no phone in frame")]
     return "\n\n".join(p for p in parts if p) + "\n\nAVOID: " + ", ".join(n for n in neg if n)
 RIGS = {"sway": s("RIG-R1")}
 def kling(r, motion, subject_line):
@@ -111,7 +114,7 @@ def kling(r, motion, subject_line):
     framing = "As in the start frame" + {"split": "; the action sits in the middle band of the frame, nothing that matters in the top or bottom quarter.", "pip": "; one subject, large and centred, readable at a third of the width.", "full": "."}[lay]
     prod = ""
     if r["product_state"] in ("worn", "held", "object"):
-        prod = " The strap keeps its exact shape, size and wordmark in every frame and moves only with what holds it. " + P.HOLD_PROD
+        prod = " The strap keeps its exact shape, size and wordmark in every frame and moves only with what holds it; its rigid shell never bends, flexes or changes proportion."
     body = s("HOLD-C") + ("" if r["location"] == "ANAT" else " " + s("PHYS-MOTION-C"))
     j = {"shot": r["beat"].lower().replace("-", "_"), "subject": subject_line,
          "camera": {"movement": mv, "framing": framing},
@@ -119,6 +122,6 @@ def kling(r, motion, subject_line):
          "lighting": s("INHERIT-CAP") if r["location"] != "ANAT" else "Exactly as in the start frame.",
          "style": "As in the start frame.",
          "negatives": ", ".join(x for x in [s("NEG-WARP-C"), "no bending, no curling, no folding, no melting, no flipping of the product" if r["product_state"] in ("worn","held","object") else "",
-                    P.NEG_WARP_P if r["product_state"] in ("worn","held","object") else "", NEGPLACE if r["product_state"]=="worn" else "",
-                    "no second person, no camera travelling with the subject" if r["location"]!="ANAT" else "", "no music, no speech"] if x)}
+                    "no strap sliding up or down the leg" if r["product_state"]=="worn" else "",
+                    "no second person, no camera travelling with the subject" if r["location"]!="ANAT" else "no glow inside the joint, no glow on the kneecap, no pause, no freeze", "no music, no speech"] if x)}
     return json.dumps(j, ensure_ascii=False, separators=(",", ":"))

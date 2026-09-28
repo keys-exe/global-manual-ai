@@ -28,11 +28,12 @@
    "beat": "HK1-B2",
    "clip": "renders/HK1-B2.mp4",
    "phrase": "I fit stair rails for a living.",
-   "key": "rails",
+   "key": "I",
    "layout": {
     "type": "full"
    },
-   "max": 6
+   "max": 6,
+   "key_orig": "rails"
   },
   {
    "beat": "HK1-B3",
@@ -88,43 +89,47 @@
    "beat": "A1-B4",
    "clip": "renders/A1-B4.mp4",
    "phrase": "Then a rail at the top.",
-   "key": "top",
+   "key": "Then",
    "layout": {
     "type": "full"
    },
-   "max": 6
+   "max": 6,
+   "key_orig": "top"
   },
   {
    "beat": "A1-B5",
    "clip": "renders/A1-B5.mp4",
    "phrase": "Then a rail all the way down.",
-   "key": "down",
+   "key": "Then",
    "layout": {
     "type": "full"
    },
-   "max": 6
+   "max": 6,
+   "key_orig": "down"
   },
   {
    "beat": "A1-B6",
    "clip": "renders/A1-B6.mp4",
    "phrase": "Then you stop going up in the afternoon.",
-   "key": "afternoon",
+   "key": "Then",
    "layout": {
     "type": "split",
     "broll_pos": "bottom",
     "ratio": 0.5
    },
-   "max": 6
+   "max": 6,
+   "key_orig": "afternoon"
   },
   {
    "beat": "A1-B7",
    "clip": "renders/A1-B7.mp4",
    "phrase": "Then a bed comes downstairs.",
-   "key": "bed",
+   "key": "Then",
    "layout": {
     "type": "full"
    },
-   "max": 6
+   "max": 6,
+   "key_orig": "bed"
   },
   {
    "beat": "A2-M1",
@@ -150,13 +155,14 @@
    "beat": "A2-B1",
    "clip": "renders/A2-B1.mp4",
    "phrase": "Every step you take lands on it.",
-   "key": "lands",
+   "key": "Every",
    "layout": {
     "type": "split",
     "broll_pos": "bottom",
     "ratio": 0.5
    },
-   "max": 6
+   "max": 6,
+   "key_orig": "lands"
   },
   {
    "beat": "A2-M3",
@@ -186,7 +192,8 @@
    "layout": {
     "type": "full"
    },
-   "max": 6
+   "max": 6,
+   "out": 2.1
   },
   {
    "beat": "A2-M4",

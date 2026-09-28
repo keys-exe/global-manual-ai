@@ -170,3 +170,15 @@ Fills in `work/cast.py`; prompts in `renders/<ID>_sheet.prompt.txt`.
 - **F3 — "The copies stretch…"** comparative claim not in the Product Sheet register.
 - **F4 — Hook C** run as written (the script's note asks the advertiser to decide).
 - **F5 — MODE not given** → Mode 1 from the realistic inspo (§44-31).
+- **F6 — Model logging.** Every `nano_banana_pro` render is logged by Higgsfield as `nano_banana_2` (platform label); the request named `nano_banana_pro`.
+- **F7 — Kling B-roll audio off.** B-roll clips were generated with `enable_audio: false` (their sound is replaced by the VO); only the voice-source takes carried audio.
+- **F8 — Kling spend over cap.** The connector reports 8 credits/s (and 120 for a 10s voice take) but the account is charged about 2.8× that; the cap check before the last batch used the reported cost, so Kling closed at 3,496 spent against the 3,000 cap (+496).
+- **F9 — HeyGen engine.** `avatar_v` rejected the motion prompt (no digital twin) → Avatar IV with expressiveness high + the motion prompt (E7 fallback).
+- **F10 — VO pace.** The eleven_v3 master runs fast (~270 wpm body). Verbatim PASS; no speed change applied (house cut forbids it).
+- **F11 — BODY master tail** ends at −44.8 dB, borderline to the −45 dB take gate; T4 was the only take below it and was kept.
+- **F12 — "stretched"** in the last body line not verified word-for-word by the ASR (word present in the TTS text, verbatim PASS on the input).
+- **F13 — Best-of-retries picks:** A2-M2 frame (side-on after two tries, row asked front); A3-B2 frame (third try, over-the-shoulder CU); A2-M1/M3/M4 clips (second generation after a diagnosed glow-placement fault; M3/M4 still light the front of the knee rather than a thin tendon strip); A4-M1 frame (front view, row asked profile).
+- **F14 — Kept clean part:** A2-B3 used to 2.1s (he crouches oddly after); A1-B2 camera follows the legs slightly (1.7s on screen).
+- **F15 — Continuity:** the Act 3 front-room beats in Day 2 wardrobe show the divan bed in the room (the bed "comes downstairs" in Act 1's list; the room plate carries it throughout).
+- **F16 — Act 1 list cut on "Then".** A1-B4…A1-B7 cut on each "Then" (not the row key word) so no shot falls under 0.8s; lead 3 frames.
+- **F17 — Kie balance** fell 10,010 during the run although this run only used Kie for free file uploads (no generation) — not attributable to this build; check the shared account.

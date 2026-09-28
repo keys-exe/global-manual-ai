@@ -113,7 +113,7 @@ ROWS = [
  # ---- Act 4 — the strap
  R("A4-P1","Act 4","The strap I keep in the van now is called Stryde.","van",FULL,"N-hands","VAN",0,
    "N's hand lifts one Stryde strap out of a clear organiser box on the van shelf and turns it to face the lens, wordmark readable","one lift, slow, 2s","sway","held, HELD_GRIPS",
-   "eye","three-quarter","CU","close and level: the reveal","product",key_side="front",arc="Act 4: overcast daylight, the answer",product="held",pin_end=True,note="product changes angle → pinned end frame, first + last frame call"),
+   "eye","three-quarter","CU","close and level: the reveal","product",key_side="front",arc="Act 4: overcast daylight, the answer",product="held",note="shell faces the lens throughout — no angle change, so no pinned end frame"),
  R("A4-B1","Act 4","It sits two centimetres below the kneecap, on the tendon.","below",FULL,"C2","C2-HALL",1,
    "C2 seated on the bottom stair, the strap already on his right knee below the kneecap; he straightens the leg slowly","one straighten, slow","sway","seated, strap worn (PLACE_LOCK)",
    "low","front","CU","low and close on the knee: exactly where it sits","product",key_side="L",time="morning",arc="Act 4: morning, the answer",product="worn"),
