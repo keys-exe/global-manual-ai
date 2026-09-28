@@ -26,6 +26,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   kitchen, framed through doorways. Rebuilt as a large Edwardian semi (wide hall/stairs, ~3 m ceilings, shot from inside each room, no-cramped
   negative): P0 v2 `176c5c39`, P1 v2 `d0eeaf2a`, P2 v2 `abc2c220` (both against P0 v2); v1s on the Old board. Layout unchanged, angles PASS. Higgsfield 17,879.75.
 
-- **Waiting on the user:** Confirm/Fix D-DOC v2, P-PATIENT, P0–P2 v2, P3, W-L-FRONT/REAR/BENT; flags F2, F4, F5, F8 (built as left), F9 (built as natural pace).
-- **Next (no stop, §22U):** once D-DOC and P3 are confirmed: doctor voice-source frame (NBP, D in P3) → 2 Kling 10s takes with VOICE-DOC →
-  voice_source.py → clone by API → Enhance → eleven_v4 VO (HK1–3 + body, one request) → house cut → HeyGen TH (TH rows) → E11 trim. Then hooks (step 6).
+- Same session ~20:20 UTC: user "go ahead with the voice stage" (every avatar/plate/ref was Confirmed on the board). Step 1 frame D-VOICE-IMG
+  (job edd8434b, reported nano_banana_2) → board To check. G1–G3 Kling calls written + preflighted (PASS but 'start image approved'). Enhanced VO text
+  locked (verbatim PASS, 3,180 chars). **STOP: Kling 3.0 credits** (§5 CREDIT_CAP, no reroute). See voice/VOICE_SOURCE.md.
+
+## Where it stands
+- **Confirmed on the board:** D-DOC v2, P-PATIENT, P0–P2 v2, P3, W-L-FRONT/REAR/BENT.
+- **Waiting on the user:** (1) top up Kling (~360 credits for G1–G3; the B-roll needs far more later); (2) Confirm/Fix D-VOICE-IMG.
+- **Then straight through (§22U, no stop):** G1–G3 → voice_source.py → clone "Down" (elevenlabs_clone.py) → eleven_v4 ×4 (vo/tts_enhanced.txt)
+  → split HK1/HK2/HK3/BODY → house cut → HeyGen Avatar V TH ×8 (motion prompt each) → E11 trim. Then hooks (step 6).
+- Flags still open: F2, F4, F5 (claims, voiced as written), F8 (built left), F9 (natural pace).
