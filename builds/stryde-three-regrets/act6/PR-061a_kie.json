@@ -1,0 +1,11 @@
+{
+  "taskId": "830910ab16441710608dd9b4cac3c4c4",
+  "state": "success",
+  "credits": 69.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/830910ab16441710608dd9b4cac3c4c4_1_1790637316_5137.mp4"
+  ],
+  "saved": "PR-061a_clip_v1.mp4",
+  "model": "kling-3.0-omni/image-to-video"
+}
