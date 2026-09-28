@@ -37,6 +37,8 @@ assert "[" not in STEP1, STEP1[STEP1.index("["):][:80]
 TAKES = [
  ("G1", "Three things people tell us they wish they had known about their knees.", "people", "Three", "plain and direct"),
  ("G2", "Not one of them is that they should have gone to the doctor sooner.", "them", "Not one", "a quiet correction"),
+ ("G3", "I read the messages that come in when people buy one of these.", "messages", "read", "matter-of-fact, her own job"),
+ ("G4", "Regret number one. Nobody ever told them where it was actually coming from.", "number", "Nobody", "starting the list, plainly"),
 ]
 def sel(neg, *drop):
     return ", ".join(c for c in neg.split(", ") if c not in drop)
