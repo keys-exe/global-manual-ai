@@ -1,0 +1,55 @@
+{
+  "variant": "HK3",
+  "picture_s": 567.87,
+  "mix_s": 567.87,
+  "dialogue_level_db": -19.9,
+  "music_gain_db": -18.6,
+  "cues": [
+    [
+      "HOOK3",
+      0.0
+    ],
+    [
+      "SC01-KITCHEN-SARAH",
+      14.9
+    ],
+    [
+      "SC02-NIGHT-FRANK",
+      81.8
+    ],
+    [
+      "SC03-WEDDING",
+      103.567
+    ],
+    [
+      "SC04-BARBARA-KITCHEN",
+      135.4
+    ],
+    [
+      "SC05-STAIRS-BARBARA",
+      318.867
+    ],
+    [
+      "SC06-DOCTOR",
+      367.067
+    ],
+    [
+      "SC07-HALLWAY-FRANK",
+      403.3
+    ],
+    [
+      "SC08-STAIRS-SARAH",
+      452.5
+    ],
+    [
+      "SC09-THE-DANCE",
+      502.7
+    ],
+    [
+      "SC10-CALL-JOAN",
+      527.033
+    ]
+  ],
+  "video": "/home/user/global-manual-ai/builds/six-weeks-ago/out/Six Weeks Ago HK3 - new music + room tone + sfx.mp4",
+  "video_s": 567.87
+}

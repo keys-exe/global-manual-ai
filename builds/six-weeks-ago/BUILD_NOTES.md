@@ -20,6 +20,10 @@
 - HK3 part40 began with a `<` byte and was refused as markup; that byte was moved to the end of part39 (15,000,001 / 14,999,999 bytes). The joined file's MD5 matches the render.
 - All three finals: status `review`, waiting on the user's check.
 
-## Open
-- 21 HK2 pieces (315 MB) uploaded to the main board before it filled are unreferenced; they stay until the user asks to delete them. Same for the refused-then-replaced original HK3 part39 on the Hook 3 board (15 MB).
-- Old SFX/room tone went with the old music (isolator keeps voice only). Add room tone/SFX per §24M if the user wants them back.
+## v2 — room tone and sound effects back (user, 2026-09-28: "add the room tone and sound effects back")
+- The isolator had removed Seedance's room sound and effects with the music; they cannot be split back out of the old mix, so they were rebuilt per §24M: `sound/sound_plan.json` (7 location room tones, 9 SFX objects, 22 placed events), made by `sound/fx.py` (ElevenLabs `eleven_text_to_sound_v2`, one call each, tones looped), mixed by `sound/mix_film.py` (`ambience()`: tone per scene/hook location, changed only at cuts; room tone ~30 dB under dialogue, wedding hall and station +8/+9 dB; SFX on their frames).
+- Actions pinned from a 1 fps contact sheet of the whole film plus 10 fps strips at the key moments (HK3 plate smash 1.3s, fall on the 5.6s cut; HK2 sneaker steps 9.45/10.05; slipper step 336.45; strap 285.5…).
+- Checks: tones steady (p95−p50 ≤ 5 dB), no words; SFX-CHAIR-SIT flagged 2 words by whisper on a 1s noise file (likely false; noted on its card). Levels per scene: tone −30 dB vs dialogue (wedding −22). Finals −14.1/−14.2 LUFS, peak ≤ −0.4 dBFS; body identical across variants (corr ≥ 0.9998).
+- Board: 16 sound cards on the main board (TONE-*, SFX-*), status review. v2 finals on three new overflow boards (Hook 1 RL8KTniZLFyLxFPtfoFBgN · Hook 2 RkjU4VbYoV5nnkoJaKhms5 · Hook 3 BzZEiQFZYtVYKWQXFomiif), each card keeping v1 as version 1 (link) and v2 as version 2; main-board FINAL cards link v2 via `videoUrl`. v1 kept on its boards.
+- With the user's OK, the 24 unreferenced HK2 pieces (360 MB) on the main board were deleted to make room (checked against every live card first).
+

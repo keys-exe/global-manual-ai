@@ -20,7 +20,7 @@ Every generation goes on the build's **Generation Board**. **The board design is
 |---|---|
 | `intake-1` (STRYDE · Identity Callout) | https://claude.ai/artifact/HVPuUcnNK1MUrCYnou9UnJ |
 | `stryde-identity` (STRYDE · Identity Callout, Manual — Drive `1tKlZFjNApDMf5U_q3qFPcRyGZLQsVcwE`) | https://claude.ai/artifact/GKZDjmZkh4wwm7RxtXj7Tp |
-| `six-weeks-ago` (STRYDE · Six Weeks Ago, AI Drama — music replaced; Drive `13RSuqtkClewZFp9YzV_kSLj6e7l_kdgd`) | https://claude.ai/artifact/QD4ZSJz5eWVGnRAqDQDesA (overflow for finished videos past the 1 GB store: Hook 2 https://claude.ai/artifact/R56ud78WXoJJ5KqsUNWf3W · Hook 3 https://claude.ai/artifact/3NhxkJc513PzEWBmu11sK1) |
+| `six-weeks-ago` (STRYDE · Six Weeks Ago, AI Drama — music replaced; Drive `13RSuqtkClewZFp9YzV_kSLj6e7l_kdgd`) | https://claude.ai/artifact/QD4ZSJz5eWVGnRAqDQDesA (overflow for finished videos past the 1 GB store — v1: Hook 2 https://claude.ai/artifact/R56ud78WXoJJ5KqsUNWf3W · Hook 3 https://claude.ai/artifact/3NhxkJc513PzEWBmu11sK1; v2 with room tone + SFX: Hook 1 https://claude.ai/artifact/RL8KTniZLFyLxFPtfoFBgN · Hook 2 https://claude.ai/artifact/RkjU4VbYoV5nnkoJaKhms5 · Hook 3 https://claude.ai/artifact/BzZEiQFZYtVYKWQXFomiif) |
 | `demo-ad` (example only, placeholder media) | https://claude.ai/artifact/YK4ReHoWRnqBuXQvCMdHLT |
 
 **Always show the board (user, 2026-09-27), both run modes:** open the build's board in the user's panel (Artifact `action: "open"`, `url` = board) when a run starts or resumes and at every delivery (steps 1–3, 4–5, each hook, each act, the edit, the finished videos). Automatic writes and shows it exactly like Manual.

@@ -12,6 +12,8 @@ Builds one continuous timeline for the variant:
               every cue levelled to one loudness (+ its "scene_gain_db"), then section gain automation
               from each section's "mix_gain_db" (ramps 0.5s),
               music at -18 dB under dialogue (loudness), ducked a further 8 dB while anyone speaks
+  ambience  = one looping room tone per location and the film's SFX list on their frames (sound_plan.json,
+              files in fx/ made by fx.py), when the plan exists
 Then normalises to -14 LUFS / -1 dBTP and muxes onto the untouched picture (video stream copied).
 """
 import json, subprocess, sys
@@ -33,6 +35,7 @@ BODY = ["SC01-KITCHEN-SARAH", "SC02-NIGHT-FRANK", "SC03-WEDDING", "SC04-BARBARA-
         "SC06-DOCTOR", "SC07-HALLWAY-FRANK", "SC08-STAIRS-SARAH", "SC09-THE-DANCE", "SC10-CALL-JOAN"]
 MUSIC_UNDER_DB, DUCK_DB = -18.0, 8.0
 CUE_REF_DB = -20.0                                   # each cue's audible level before section gains
+ROOM_UNDER_DB, SFX_UNDER_DB = -30.0, -10.0           # §24M: room tone ~30 dB under dialogue, effects near natural
 
 
 def load(path, ch):
@@ -93,6 +96,64 @@ def cue_track(name, dest_len, at):
     return out, cue
 
 
+def ambience(hk, N, shift, d_lvl):
+    """Room tone per location and SFX on their frames, from sound_plan.json (§24M).
+
+    Room tone: the hook's location from 0 to the seam, then each body scene's location from its cut —
+    looped (0.5s crossfade at the loop point), changed only at a cut (0.3s crossfade), a location
+    reused across scenes is the same file. Level: ROOM_UNDER_DB under the dialogue.
+    SFX: body events are in HK1 time (moved by the variant's shift); hook events carry "in": "HK<n>"
+    and play only in that variant, in its own time. Level: SFX_UNDER_DB under the dialogue + gain_db.
+    """
+    plan = json.loads((HERE / "sound_plan.json").read_text())
+    out = np.zeros((N, 2), np.float32)
+
+    segs = [(0.0, plan["hook_tone"][hk])]
+    for name in BODY:
+        cue = json.loads((HERE / f"{name}.cue.json").read_text())
+        segs.append((cue["timeline_at_HK1_s"] - shift, plan["scene_tone"][name]))
+    cache = {}
+    for i, (a, loc) in enumerate(segs):
+        b = segs[i + 1][0] if i + 1 < len(segs) else N / SR
+        if loc is None:
+            continue
+        if loc not in cache:
+            y = load(HERE / "fx" / f"{loc}.mp3", 2)
+            y *= 10 ** ((d_lvl + ROOM_UNDER_DB + plan["tones"][loc].get("gain_db", 0.0) - active_level(y.mean(1))) / 20)
+            cache[loc] = y
+        y = cache[loc]
+        xf = int(0.5 * SR)
+        need = int((b - a + 0.6) * SR)
+        loop = y.copy()
+        while len(loop) < need:                      # loop with a 0.5s crossfade at each join
+            f = np.linspace(0, 1, xf, dtype=np.float32)[:, None]
+            loop = np.concatenate([loop[:-xf], loop[-xf:] * (1 - f) + y[:xf] * f, y[xf:]])
+        s0, s1 = int(a * SR), min(N, int((b + 0.3) * SR))
+        seg = loop[:s1 - s0].copy()
+        ramp = int(0.3 * SR)
+        if i > 0:
+            seg[:ramp] *= np.linspace(0, 1, ramp, dtype=np.float32)[:, None]
+        if s1 < N:
+            seg[-ramp:] *= np.linspace(1, 0, ramp, dtype=np.float32)[:, None]
+        out[s0:s1] += seg
+
+    fx = {}
+    for ev in plan["events"]:
+        if "in" in ev and ev["in"] != hk:
+            continue
+        at = ev["at"] if "in" in ev else ev["at"] - shift
+        if at < 0 or ("in" not in ev and at < SEAM[hk] - 0.05):
+            continue
+        if ev["id"] not in fx:
+            y = load(HERE / "fx" / f"{ev['id']}.mp3", 2)
+            fx[ev["id"]] = y * 10 ** ((d_lvl + SFX_UNDER_DB - active_level(y.mean(1))) / 20)
+        y = fx[ev["id"]] * 10 ** (ev.get("gain_db", 0.0) / 20)
+        a = int(at * SR)
+        n = min(len(y), N - a)
+        out[a:a + n] += y[:n]
+    return out
+
+
 def main():
     hk = sys.argv[1]
     mux = "--no-mux" not in sys.argv
@@ -134,8 +195,11 @@ def main():
             tr[a:a + int(0.03 * SR)] *= np.linspace(0, 1, int(0.03 * SR), dtype=np.float32)[:, None]
         mus += tr
 
+    d_lvl = active_level(dia)
+    amb = ambience(hk, N, shift, d_lvl) if (HERE / "sound_plan.json").exists() else np.zeros((N, 2), np.float32)
+
     # levels: music -18 dB under the dialogue, ducked 8 dB under speech
-    d_lvl, m_lvl = active_level(dia), active_level(mus.mean(1))
+    m_lvl = active_level(mus.mean(1))
     mus *= 10 ** ((d_lvl + MUSIC_UNDER_DB - m_lvl) / 20)
     w = int(0.02 * SR)
     frames = np.array([rms_db(dia[k:k + w]) for k in range(0, N, w)])
@@ -151,7 +215,7 @@ def main():
     duck = 10 ** (-DUCK_DB * np.repeat(g, w)[:N] / 20)
     mus *= duck[:, None].astype(np.float32)
 
-    mix = mus + dia[:, None]
+    mix = mus + amb + dia[:, None]
     OUT.mkdir(exist_ok=True)
     raw = OUT / f"{hk}.mix.raw.wav"
     import wave
@@ -171,7 +235,7 @@ def main():
            "dialogue_level_db": round(d_lvl, 1), "music_gain_db": round(d_lvl + MUSIC_UNDER_DB - m_lvl, 1),
            "cues": [[n, round(a, 3)] for n, a in starts]}
     if mux:
-        mp4 = OUT / f"Six Weeks Ago {hk} - new music.mp4"
+        mp4 = OUT / f"Six Weeks Ago {hk} - new music + room tone + sfx.mp4"
         subprocess.run([FF, "-v", "error", "-y", "-i", str(video), "-i", str(wav), "-map", "0:v:0", "-map", "1:a:0",
                         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart",
                         str(mp4)], check=True)
