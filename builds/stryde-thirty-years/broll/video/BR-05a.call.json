@@ -3,29 +3,32 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"br_05a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Phone held at arm's length in one hand, pointed down or away at the subject's own body rather than the face. Wrist-borne jitter, faster and tighter than a two-handed hold. Framing drifts as the arm tires and the elbow settles, uncorrected. Free hand enters frame to indicate or adjust. Still drifting on the final frame.\",\"framing\":\"POV as in the start frame: his own view down at the bench, his forearms coming in from the bottom edge.\"},\"motion\":\"His right hand sets the rolled wrap down at the end of the row in one slow move over about two seconds, lets go of it and draws back a little, the four supports now in a row. The other hand rests on the wood. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no supports moving by themselves, no fifth support, no face, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no music, no voice, no text, no captions\"}",
+ "prompt": "{\"shot\":\"br_05a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"As in the start frame: looking down past his shoulder at the bench, his forearms and the row of supports.\"},\"motion\":\"On the first frame his hand lets go of the rolled wrap; both hands lift a little off the supports and come to rest flat and empty on the bare wood beside the row over about two seconds, and stay there. The four supports lie still in their row. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no hand holding anything, no support lifted, no support moved, no fifth support, no face, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no music, no voice, no text, no captions\"}",
  "duration": 5,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "broll/renders/BR-05a_v2.png",
  "start_approved": true,
  "pinned": false,
+ "end_image": null,
+ "end_approved": false,
  "pace": "unhurried",
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "generation": 2,
  "risks": [
   {
+   "risk": "a hand picks a support up again",
+   "prevented_by": "hands let go on frame one + no hand holding anything"
+  },
+  {
    "risk": "supports merge or change",
-   "prevented_by": "HOLD-C + one placement only"
+   "prevented_by": "HOLD-C + nothing moved"
   },
   {
-   "risk": "fingers fuse around the wrap",
-   "prevented_by": "HOLD-HC + finger negatives"
-  },
-  {
-   "risk": "POV turns into a third-person view",
-   "prevented_by": "POV framing + no face"
+   "risk": "a free hand enters",
+   "prevented_by": "propped rig, no arm's-length rig"
   }
- ]
+ ],
+ "fix_note": "he's holding the product → MOTION + RIG: the start frame has his hand on the rolled wrap and the prompt told him to set it down, and the arm's-length rig invited a 'free hand' in; now the hands let go on frame one and rest empty on the bare wood, nothing is held or moved, propped rig"
 }

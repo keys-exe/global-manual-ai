@@ -144,6 +144,80 @@ V = {
    [("load reaches the tendon", "NEG-PROT"), ("anatomy warps under load", "HOLD-ANAT + NEG-WARP-A"), ("strap moves", "product lock")]),
 }
 
+# ── Second batch (user "generate the confirm images", 2026-09-28 ~18:40): images confirmed after the first 18 ──────────
+POV_STILL = ("Phone held at her own eye line in her other hand, out of frame, pointing down. Only a small breath sway, the framing "
+             "holding where it is; no second hand ever comes into frame.")
+V.update({
+ "BR-02": ("CLOSE as in the start frame, his fingertip at the front of her right knee.", HANDHELD,
+   "His extended index fingertip presses once into the soft spot just under her kneecap, over about one second, the skin dimpling a "
+   "little, holds it there for one second, then eases off a few millimetres, still touching. His other fingers stay curled.", False,
+   "no hand gripping the knee, no second finger touching her, no finger sliding onto the kneecap, no face", "in_place",
+   [("finger slides onto the kneecap", "the spot under the kneecap named + negative"), ("hand grips the knee", "one fingertip only + negatives"),
+    ("fingers fuse with the skin", "HOLD-HC")]),
+ "MECH-01": ("MEDIUM as in the start frame, the whole knee from the front.", "The render camera holds still; no move, no zoom.",
+   "The glow at the one spot just under the kneecap pulses brighter and fades back once a second, a walking rhythm, eight even "
+   "pulses, never spreading beyond that spot; the bones and muscles stay completely still. " + HOLD_ANAT, False,
+   NEG_ANAT + ", no glow spreading, no second glow, no knee bending", "in_place",
+   [("glow spreads over the knee", "one spot named + no glow spreading"), ("anatomy drifts", "HOLD-ANAT + everything else still"),
+    ("camera orbits", "render camera holds still")]),
+ "BR-18a": ("CLOSE as in the start frame, him at the bench holding the two straps up to the lens.", HANDHELD,
+   "He brings both straps a few centimetres closer to the lens in one small lift over about two seconds, both front faces staying "
+   "square to the camera and level with each other the whole time; his face stays calm, eyes on the lens.", True,
+   "no third strap, no straps turning, no straps of different sizes, no face changing", "in_place",
+   [("the two straps morph into each other or change size", "HOLD_PC + no straps of different sizes"),
+    ("a strap turns and shows another face", "faces stay square the whole lift (no angle change, so no end frame needed)"),
+    ("his face drifts", "HOLD-HC")]),
+ "BR-18b": ("CLOSE as in the start frame, down onto the box on the bench.", PROPPED,
+   "His hands lift the lid straight up off the box in one unhurried move over about three seconds and set it down flat on the bench "
+   "beside the box, ending exactly as in the end frame; the two straps lying in the insert do not move.", False,
+   "no straps moving in the box, no third strap, no lid flipping over, no face, " + P.NEG_PACKAGE, "in_place",
+   [("straps in the insert morph or move", "pinned end frame + 'do not move'"), ("lid passes through the box", "one lift, set down beside"),
+    ("fingers fuse with the lid", "HOLD-HC")]),
+})
+PIN_END = {"BR-18b": "broll/renders/BR-18b-END_v1.png"}
+
+# ── Video Fix round 1 (user Fix notes on the videos, 2026-09-28 ~18:40) — §22X: diagnosed, fixed at the source ────────
+VFIX = {
+ "BR-05a": "he's holding the product → MOTION + RIG: the start frame has his hand on the rolled wrap and the prompt told him to set it "
+           "down, and the arm's-length rig invited a 'free hand' in; now the hands let go on frame one and rest empty on the bare wood, "
+           "nothing is held or moved, propped rig",
+ "BR-05b": "focus the product → CAMERA: the handheld rig's focus hunt and drift carried the camera past the braces and softened them; "
+           "now a propped camera, focus locked on the braces at his hand, sharp every frame, the pass shortened",
+ "BR-08": "she's putting the product in the drawer → RIG + MOTION: the arm's-length rig's 'free hand enters frame' brought her other "
+          "hand into the drawer; now one hand only, on the handle, the phone at her eye line, nothing goes in or comes out",
+ "BR-12": "she's walking forward → MOTION: 'readies to step up' read as a step; now both boots stay planted flat on the hall floor, "
+          "only her weight settles onto the right leg, no step",
+}
+V.update({
+ "BR-05a": ("As in the start frame: looking down past his shoulder at the bench, his forearms and the row of supports.", PROPPED,
+   "On the first frame his hand lets go of the rolled wrap; both hands lift a little off the supports and come to rest flat and empty "
+   "on the bare wood beside the row over about two seconds, and stay there. The four supports lie still in their row.", False,
+   "no hand holding anything, no support lifted, no support moved, no fifth support, no face", "in_place",
+   [("a hand picks a support up again", "hands let go on frame one + no hand holding anything"),
+    ("supports merge or change", "HOLD-C + nothing moved"), ("a free hand enters", "propped rig, no arm's-length rig")]),
+ "BR-05b": ("MEDIUM as in the start frame, through the hanging braces, the braces at his hand sharp.",
+   "Propped, not held. The camera stays exactly where it is; focus locked on the braces at his hand, sharp every frame, no focus "
+   "hunt, no drift, no zoom.",
+   "His fingertips trail across the three hangers nearest his hand in one unhurried pass over about two seconds, those braces "
+   "swinging a little and still swinging after; the braces stay sharp.", False,
+   "no braces falling, no hangers merging, no focus change, no blur on the braces, no camera moving along the rail, no face", "in_place",
+   [("braces go soft", "locked focus on the braces + no blur"), ("camera travels along the rail", "propped, no drift"),
+    ("hand passes through the braces", "fingertips trail across, HOLD-HC")]),
+ "BR-08": ("POV as in the start frame: her own view down into the drawer, her one hand on the handle from the bottom edge.", POV_STILL,
+   "Her one hand draws the drawer the last few centimetres open by its front in one pull over about two seconds and stays on the "
+   "front; the supports inside shift a little with the pull and settle. Nothing goes into the drawer and nothing comes out.", False,
+   "no second hand, no hand reaching into the drawer, nothing put in the drawer, nothing taken out, no face, no second person", "in_place",
+   [("second hand reaches in", "one hand only, POV_STILL rig without a free hand + negatives"), ("contents morph", "HOLD-C"),
+    ("POV becomes third-person", "POV framing")]),
+ "BR-12": ("CLOSE as in the start frame, from behind at floor level, her legs at the foot of the stairs.", PROPPED,
+   "She stands still at the foot of the stairs; both boots stay planted flat on the floor the whole clip. Her weight settles onto her "
+   "right leg over about two seconds, the right calf firming under the band; the band stays flat and level just below the crease of "
+   "the knee.", True,
+   "no step, no walking, no foot lifting, no shell at the back of the knee, no band sliding down the calf, "
+   "no face, no hands", "in_place",
+   [("she steps or walks", "boots planted + no step, no walking"), ("band slides down the calf", "product lock"), ("leg warps", "HOLD-C")]),
+})
+
 
 def build(beat):
     framing, rig, motion, prod, extra, sm, risks = V[beat]
@@ -168,9 +242,12 @@ if __name__ == "__main__":
         img = json.loads((HERE / "video/_confirmed.json").read_text())[beat]
         call = {"beat": beat, "connector": "kling", "mode": 1, "kind": "broll", "prompt": prompt,
                 "duration": LEN[beat]["call_s"], "resolution": "1080p", "aspect_ratio": "9:16",
-                "start_image": img, "start_approved": True, "pinned": False, "pace": "unhurried", "subject_motion": sm,
-                "prefer_multi_shots": "false", "generation": 1,
+                "start_image": img, "start_approved": True, "pinned": beat in PIN_END, "end_image": PIN_END.get(beat),
+                "end_approved": beat in PIN_END, "pace": "unhurried", "subject_motion": sm,
+                "prefer_multi_shots": "false", "generation": 2 if beat in VFIX else 1,
                 "risks": [{"risk": a, "prevented_by": b} for a, b in risks]}
+        if beat in VFIX:
+            call["fix_note"] = VFIX[beat]
         (HERE / f"video/{beat}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
         (HERE / f"video/{beat}.prompt.txt").write_text(prompt)
         print(beat.ljust(8), str(call["duration"]).rjust(2), "s", str(len(prompt)).rjust(5), "chars", img)

@@ -568,6 +568,29 @@ B["BR-15c"] = (_m, _r, _p.replace("no two separate actions in one clip, no produ
 FIX3_JOBS = {"BR-02": "1111ad81-5a82-47d1-9e22-2827d5095616", "BR-11": "56a2c1e9-d175-47eb-b7f0-fdd5325768c0",
              "BR-13": "a938def7-9d7a-4f99-9493-a8797734d25a", "BR-15c": "4ec9787f-9cd4-4f05-8f07-3a043115c5d2"}
 
+# ── Fix round 4 (user Fix note, 2026-09-28 ~18:40) ──────────────────────────────────────────────────────────
+# BR-15a still read big after FIX2: the frame was tight on the strap, so the model scaled it up to fill it, and the closed band
+# hung as a large loop. Fixed at the source: a wider frame (waist up, the strap a small thing in it), the band folded away in his
+# palm, the shell compared to his own hand, and the worn-on-the-knee photo attached as the size anchor.
+FIX4 = {"BR-15a": "make it small the product / fix the size"}
+B["BR-15a"] = (NBP, ["front", "back", "worn_front", "C1", "P2"], photo([
+    "The strap in this photo is THE EXACT SAME OBJECT as the first attached product photo, the front, and the second, the back — "
+    "only the view changes. The third attached photo shows it worn on a knee: THAT IS ITS TRUE SIZE, about as wide as a kneecap. "
+    "A snapshot from a phone propped at eye level on the bench, well back from him: the frame runs from his collar to his belt, his "
+    "chest and apron filling it, his face just out of frame at the top. He holds the strap up in front of his chest in his right hand, "
+    "front face and wordmark square to the camera: " + dict(P.HELD_GRIPS)["bottom-edge pinch"].split(" (")[0] + ". The black band is "
+    "folded up and tucked into his palm behind the shell, out of sight — no loop hangs down. Nothing rises above the shell's top edge. "
+    + C1_HANDS,
+    PROD + " " + RIGID + " " + SMALL + " In the frame the shell takes up only about a fifth of the frame's width, clearly narrower "
+    "than his hand across the knuckles and much smaller than his chest; his big workman's hand dwarfs it.",
+    BENCH, angle("BR-15a", "the strap"), focus("the product and its wordmark"), light("WS-L", "the strap"), colour("WORKSHOP")],
+    HELD_NEG + NEG_SMALL + ", no hanging loop, no band dangling, no close-up of the strap, no strap filling the frame, "
+    "no strap as wide as his chest, " + NEG_HANDS))
+
+_m, _r, _p = B["BR-15a"]
+B["BR-15a"] = (_m, _r, _p.replace(" spanning the whole front of the knee", "").replace(", band slack round the wrist", "")
+    .replace(" — and the closed band is a small soft loop not much bigger than his wrist", ""))
+
 if __name__ == "__main__":
     out = {}
     for beat, (model, refs, prompt) in B.items():

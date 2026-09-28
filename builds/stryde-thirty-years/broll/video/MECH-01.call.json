@@ -1,0 +1,33 @@
+{
+ "beat": "MECH-01",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"mech_01\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"The render camera holds still; no move, no zoom.\",\"framing\":\"MEDIUM as in the start frame, the whole knee from the front.\"},\"motion\":\"The glow at the one spot just under the kneecap pulses brighter and fades back once a second, a walking rhythm, eight even pulses, never spreading beyond that spot; the bones and muscles stay completely still. Bones keep their shape, length and spacing, joints never separate or pass through each other, muscle keeps its volume and the layer order holds. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bones bending, no joint separating, no rubbery deformation, no structures inflating, no anatomy sliding through the outer contour, no glow spreading, no second glow, no knee bending, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no music, no voice, no text, no captions\"}",
+ "duration": 8,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "broll/renders/MECH-01_v2.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "glow spreads over the knee",
+   "prevented_by": "one spot named + no glow spreading"
+  },
+  {
+   "risk": "anatomy drifts",
+   "prevented_by": "HOLD-ANAT + everything else still"
+  },
+  {
+   "risk": "camera orbits",
+   "prevented_by": "render camera holds still"
+  }
+ ]
+}

@@ -162,10 +162,20 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   Board storage hit 1 GB again: user chose to delete old-version files — 28 files (222 MB) removed, each version kept on its card
   marked deleted with prompt and connector link.
 
-## Where it stands (2026-09-28 18:20)
+  ~18:40: user "fix those" + "generate the confirm images". Video Fixes (generation 2, §22X, `VFIX` in `broll/build_video.py`,
+  preflight PASS): BR-05a (he held the wrap → hands let go on frame one, rest empty, propped rig), BR-05b (focus → propped, focus
+  locked on the braces), BR-08 (her other hand went into the drawer → one hand only, POV rig with no free hand), BR-12 (she walked
+  → boots planted, weight shift only). Root cause for BR-05a/BR-08: RIG-R2B's "free hand enters frame" line — not used for POV
+  shots with a hand already in frame from now on. Image Fix BR-15a v3 (FIX4 in `build_broll.py`: wider frame, band tucked in his
+  palm, worn photo as size anchor, "spanning the whole front of the knee" removed from its product line). New videos from confirmed
+  images: BR-02, MECH-01, BR-18a (pin_end set to no — faces stay square, no angle change), BR-18b (first-and-last frame to
+  BR-18b-END). 8 Kie calls, 684.0 credits. All on the board as review.
+
+## Where it stands (2026-09-28 18:35)
 - Hooks done. VO master T2. TH-HK1/2/3-BODY v3 still To check.
-- B-roll: 18 videos To check; images To check: BR-02, BR-11, BR-13, BR-14b, BR-15a, BR-15c, BR-18a, MECH-01, BR-18b-END;
-  still to make after their image is confirmed: those nine (+ BR-18b once its end frame is confirmed, first-and-last-frame call).
-- Next: Fix/confirm the videos → rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.
-- Board storage ~870 MB used after the clean-up; the next ~9 videos fit, the final hook variants may not — plan Drive for finals.
-- Open: F3, F4, F11, F12, F13.
+- B-roll videos: 22 made (18 + BR-02, MECH-01, BR-18a, BR-18b); BR-05a/05b/08/12 v2 fixes To check. Next Fix on any of those four
+  is a third generation — waits for the user's go (§22X).
+- Images To check: BR-11, BR-13, BR-14b, BR-15a (v3), BR-15c. Their videos follow on Confirm; BR-11, BR-15a, BR-15c are pinned
+  (end frame needed first).
+- Next: Fix/confirm the videos → rough cut per hook (, ) → CapCut block.
+- Board storage ~960 MB used — near the 1 GB cap; old-version files may need clearing again before the last videos.
