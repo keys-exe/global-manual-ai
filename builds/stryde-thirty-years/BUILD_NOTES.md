@@ -101,6 +101,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   ~15:02: user confirmed the new walk ("redo the Hook 1 walk with voice") → HeyGen lip-sync (precision, voice muxed in first)
   → HK1 video v4 on the board as review. HK1-TH frame v2 = last frame of the new walk → review.
 
+  ~15:10: user confirmed the voiced walk + HK1-TH frame → HeyGen photo avatar a92f6e9d… from the frame, Avatar V (no
+  motionPrompt) with HK1 audio 3.77–10.39s → HK1-TH v1 (6.62s, video c35c56a5…) on the board as review.
+  HK1 is then complete pending review: walk 0.4–4.17s + HK1-TH. Next: HK2, HK3 videos.
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.
