@@ -115,3 +115,23 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   multi-shot, no audio. 760 Kling credits. All 27 downloaded and on the board as To check (BR-12 and BR-21 split into
   15 MB parts). Links in `body/kling_urls.txt`, job ids in `body/kling_jobs.txt`. Next: the user's check, then the edit
   (hook + body per variant → Final output tab).
+- (2026-09-28, 13:45 UTC) **User rules (standing, this build): "never put a phone on every broll" and "use the json
+  prompt for kling".** No phone in any B-roll: no phone in frame, and no phone named anywhere in a prompt (the old
+  plain-text Kling lines "the phone stays still…" put phones on the path in BR-12/BR-21); every image and video prompt
+  carries phone negatives. Kling video prompts are §35 JSON again (minified, ≤2,500), superseding the plain-text rule
+  for Kling. Seedance hooks are unaffected.
+- (2026-09-28, 13:45 UTC) **Fix round 2 — the 19 cards the user marked Fix** (MECH-01/10/15, BR-03/04/06/12/13/14/16/17/
+  19/20/21/22/24/25/26a/26b), images redone too (user: "re do their images too"). Each Fix note fixed at source
+  (`body/fix2_prompts.py`, table `FIX_NOTE` in `body/video_prompts_v2.py`): tendon glow on the patellar tendon (MECH-01),
+  bone on bone with spurs + red glow (MECH-10), dim cyan / no white (MECH-15), the band as a soft closed loop that hangs
+  (BR-03/06/20/24), fingertip on the tendon + firm leg (BR-04), whole closed-loop strap from inside for the pad (BR-06),
+  the P0 flight itself (BR-13/25/26b), productive result — laundry up to the landing (BR-14), big box + safe squat lift
+  (BR-17), tighter framing, no knee pads (BR-19), hands only feel the closed lid (BR-22), closer shot + the real black box
+  (BR-24), strap starts low on the shin + a **pinned end frame** for the seat move (BR-16/BR-26a, §27G rule 5, new cards
+  `BR-16-END`). 21 images on Higgsfield (nano_banana_pro realistic, nano_banana_2 anatomy), `body/<BEAT>_fix2.png`,
+  links `body/fix2_urls.txt`. On the board as To check; cards' video step `ready` with the new JSON prompt
+  (`<BEAT>.v2.i2v.json`; preflight passes except "start image approved" — the user's Confirm).
+  **Board storage full again:** 3 orphan images (no card referenced them) deleted to fit BR-26b; a 4th delete was
+  blocked by the permission check. **BR-26a-END is not on the board** (local `body/BR-26a-END_fix2.png`, link in
+  `fix2_urls.txt`) — and the 19 new videos (~150 MB) will not fit. Needs the user's call on what to delete or a second
+  board before the video round.

@@ -1,0 +1,34 @@
+{
+ "beat": "MECH-15",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"pad_carries_load\",\"subject\":\"Translucent anatomical knee with the matte-black strap on the patellar tendon, a dim pale-cyan glow on the pad.\",\"camera\":{\"movement\":\"Virtual camera already drifting on frame one: a slow steady lateral drift, constant unhurried speed, mechanically smooth, no orbit, no sway. Still drifting at the cut.\",\"framing\":\"as in the start frame\"},\"motion\":\"The whole clip stays dark and calm from the very first frame. The dim pale-cyan glow on the pad breathes softly once, a little brighter then back, slow; the tendon and joint stay calm, no hot spot. The anatomy keeps its structure every frame: bones hold shape and spacing, joints never separate, muscle keeps its volume, layer order holds.\",\"lighting\":\"exactly as in the start frame, no change in brightness\",\"style\":\"Premium 3D anatomical render exactly as in the start frame, deep near-black field.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no flickering geometry, no text, no labels, no arrows, no flash, no white frame, no strobe, no camera shake, no white, no white glow, no white flash, no bright start, no fade from white, no overexposure, no bloom\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "MECH-15 fix2 image",
+ "start_approved": false,
+ "fix_note": "white at first -> frame: dim cyan, no white; prompt: dark from frame one, no flash",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "subject_motion": "still",
+ "pace": "named",
+ "risks": [
+  {
+   "risk": "phone appears in frame",
+   "prevented_by": "no phone named anywhere; phone negatives"
+  },
+  {
+   "risk": "product bends or wobbles",
+   "prevented_by": "HOLD-PC rigid-shell clause + product negatives"
+  },
+  {
+   "risk": "the Fix-note fault repeats",
+   "prevented_by": "fault fixed at source in image + motion"
+  }
+ ]
+}
