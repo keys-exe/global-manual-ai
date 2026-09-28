@@ -24,7 +24,7 @@ SIDE_W = {"front": "the front", "three-quarter": "a three-quarter angle", "profi
 
 # Confirmed plates and sheets (Higgsfield job ids = reference media)
 JOB = {"N": "5d4f7598-14d9-4e53-8173-bb48b516e54a", "C1": "cf777e26-5d0f-4fae-9063-116f20e27ffd", "C2": "61ff6760-6aba-4054-aaf5-31b7a67c6cd9",
-       "P0": "237b6320-5f42-434a-826b-ce58c49024d2", "P1": "2cc80516-284f-4355-92df-61e009c28d4d", "P2": "2d997177-d22f-4743-b215-7fafbd6e06be"}
+       "P0": "237b6320-5f42-434a-826b-ce58c49024d2", "P5": "2b888662-9dc3-4a44-a0c4-4a909cef79e5", "P1": "2cc80516-284f-4355-92df-61e009c28d4d", "P2": "2d997177-d22f-4743-b215-7fafbd6e06be"}
 PROP_N_CARRIED = ("warm greige walls, plain white baseboards, white six-panel doors with round brass knobs, honey-coloured oak floors, "
                   "the worn beige stair runner, white balusters under a dark-stained oak handrail with a square dark newel, and the stair wall "
                   "hung with black-and-white and sepia family portraits in dark wooden frames")
@@ -115,6 +115,41 @@ def hk_02a():
     refs = [("C2 sheet", JOB["C2"]), ("P1-LANDING plate v3", JOB["P1"]), ("P0-PROP-N plate", JOB["P0"])]
     return dict(model="nano_banana_2", refs=refs, body=body)
 BEATS["HK-02a"] = hk_02a
+
+def hk_01b():
+    r = ROWS["HK-01b"]; n = SUBJ["N"]
+    body = [S("CAM-LOCK"),
+     angle_line(r, "the woman climbing the church steps"), focus_line(r, "her"),
+     "THE FRONT OF THE CHURCH exactly as in the attached location photo: the red-brick Baptist church, the flight of wide concrete steps with the black iron handrail up the middle, the white doors under the white-columned portico, boxwood bushes either side — seen from the sidewalk at the foot of the steps, a little to one side.",
+     S("SUBJ-REF").replace("[two or three named markers: hair, build, one distinctive feature]", n["markers"]),
+     "Caught mid-climb on a Sunday afternoon after service: she is halfway up the church steps, taking them briskly — her right foot planted on the step above, her weight already moving up onto it, her left heel lifting off the step below, "
+     "her right hand free, not touching the rail, head up, a small proud smile. Beside her, on the same steps, two younger women in their forties in Sunday dresses are taking the steps slowly, one with a hand on the iron rail, one pausing with a hand on her own knee — "
+     "she is drawing level with them and about to pass. All three whole in the frame.",
+     "She is wearing " + WARD["N-D4"] + ", and a matching emerald wide-brim church hat. The two younger women (one-off extras, Black American, forties) wear a navy dress and a lilac dress with low heels.",
+     "Real unretouched skin: " + n["skin"] + ".",
+     light_line(r, "the three women and the church steps", "Sunday afternoon sun, warm and clear — the after state, never moody"),
+     *tail("no fourth person, no product visible, no knee strap visible, no walking stick, no running, no one coming down the steps, no different church from the location photo, no readable sign, no text")]
+    refs = [("N sheet", JOB["N"]), ("P5-CHURCH plate", JOB["P5"])]
+    return dict(model="nano_banana_2", refs=refs, body=body)
+BEATS["HK-01b"] = hk_01b
+
+def hk_02b():
+    r = ROWS["HK-02b"]; n, d = SUBJ["N"], SUBJ["C2"]
+    body = [S("CAM-LOCK"),
+     angle_line(r, "the mother and daughter on the stairs"), focus_line(r, "the mother"),
+     S("PROP-REF").replace("[THE CARRIED FINISHES, NAMED IN ONE CLAUSE]", PROP_N_CARRIED) + " " + fillp(S("PROP-SHELL"), PROP_N_SHELL),
+     "THE STAIRS of the attached property reference, seen side-on from the hall at the height of the middle of the flight, looking through the open side of the staircase: the white balusters and the dark oak handrail run diagonally across the frame, soft in the near foreground, "
+     "the worn beige runner on the treads, and behind the two women the greige photo wall with its black-and-white and sepia family portraits in dark wooden frames rising with the stairs.",
+     "TWO PEOPLE, each exactly as in their attached reference sheet. THE MOTHER, ahead and higher: " + n["markers"] + ". THE DAUGHTER, one step behind and below her: " + d["markers"] + ". Unchanged in face, age and build.",
+     "Caught mid-climb, in profile through the balusters: the mother is climbing briskly, her front foot planted on the next step and her weight moving onto it, one hand only brushing the rail, face in profile, a small smile. "
+     "One step behind, the daughter reaches forward for the rail, her body leaning into the climb, her face turned up toward her mother, eyebrows raised in surprise. Waist-up to knees, both women whole in the frame between the balusters.",
+     "THE MOTHER is wearing " + WARD["N-D4"] + ". THE DAUGHTER is wearing " + WARD["C2"] + ".",
+     "Real unretouched skin: the mother " + n["skin"] + "; the daughter " + d["skin"] + ".",
+     light_line(r, "the two women and the stairs", "Sunday afternoon sun through the front door's sidelights, warm and clear — the after state, never moody"),
+     *tail("no third person, no product visible, no knee strap visible, no walking stick, no stairlift, no different staircase from the property reference, no enclosed stairwell, no turn in the stairs, no photo wall on the open side")]
+    refs = [("N sheet", JOB["N"]), ("C2 sheet", JOB["C2"]), ("P0-PROP-N plate", JOB["P0"])]
+    return dict(model="nano_banana_2", refs=refs, body=body)
+BEATS["HK-02b"] = hk_02b
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)

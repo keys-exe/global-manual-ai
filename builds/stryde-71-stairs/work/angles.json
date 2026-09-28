@@ -90,6 +90,66 @@
   }
  },
  {
+  "beat": "HK-01b",
+  "group": "Hook 2",
+  "type": "BR",
+  "subject": "N + one-offs",
+  "height": "low",
+  "side": "three-quarter",
+  "fg": "clean",
+  "scale": "MEDIUM",
+  "why": "low = resolve; she's the strong one",
+  "mirror_of": null,
+  "mode": 1,
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "N-D4",
+  "face": true,
+  "light": {
+   "source": "open sky, afternoon sun",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "after: Sunday sun",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "HK-02b",
+  "group": "Hook 2",
+  "type": "BR",
+  "subject": "N + C2",
+  "height": "eye",
+  "side": "profile",
+  "fg": "through",
+  "scale": "MEDIUM",
+  "why": "through the balusters = we watch them climb, the daughter can't keep up",
+  "mirror_of": null,
+  "mode": 1,
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "N-D4",
+  "face": true,
+  "light": {
+   "source": "front-door sidelights, west wall",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: Sunday sun",
+   "kelvin": 5600
+  }
+ },
+ {
   "beat": "P-01a",
   "group": "Act 1",
   "type": "BR",

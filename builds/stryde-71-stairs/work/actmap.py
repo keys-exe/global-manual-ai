@@ -57,6 +57,17 @@ R("HK-02a", A, "Last Sunday, my daughter walked behind me the whole way up", "da
   "one last step up and a look up", "one step, about a second", "stairs: camera at the top, subject coming up, 1 step", "absent", "—", "NB2",
   "high", FR, "clean", "MCU", "high = from N's place at the top: she's arrived first", "eyes", "medium", *STAIR_PM, "afternoon", "after: Sunday sun", True)
 TH("TH-01", A, "and said, \"Mama, when did that happen?\"")
+# ---------------- Hook 2 — same lines, different visuals (user 2026-09-28: "2 versions same script different visual")
+A = "Hook 2"
+R("HK-01b", A, "I'm 71, and I take the stairs faster than women half my age.", "stairs", "hook — the result (version B)", "N + one-offs", "L-CHURCH", "N-D4",
+  "MEDIUM from the sidewalk: N climbs the church's front steps briskly in her Sunday dress and hat, passing two younger women taking the steps slowly",
+  "two brisk steps up, drawing level with the two women", "one step per second, brisk", "stairs: camera at the bottom, subject 2 steps, camera still", "worn (under the dress)", "HIDDEN", "NB2",
+  "low", TQ, "clean", "MEDIUM", "low = resolve; she's the strong one", "deep", "deep", *SUN, "afternoon", "after: Sunday sun", True, ledger="VN08")
+R("HK-02b", A, "Last Sunday, my daughter walked behind me the whole way up", "daughter", "hook — the witness (version B)", "N + C2", "L-N-STAIRS", "N-D4",
+  "MEDIUM side-on through the balusters at eye level: N mid-flight climbing, C2 one step behind reaching for the rail, looking up at her mother",
+  "one step up each, the daughter a beat behind", "one step per second", "stairs: side, waist-up, camera still", "worn (under the dress)", "HIDDEN", "NB2",
+  "eye", PR, "through", "MEDIUM", "through the balusters = we watch them climb, the daughter can't keep up", "deep", "deep", *STAIR_PM, "afternoon", "after: Sunday sun", True)
+
 
 # ---------------- Act 1 — the problem (six weeks ago, N-D1)
 A = "Act 1"

@@ -55,9 +55,17 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   → §22U fallback (c): Avatar IV + expressiveness high + motionPrompt, 16/16 rendered (`vo/th/heygen.json`), `trim.py` PASS ×16.
   Board: N-VOICE-G3, VOICE-SOURCE-N, VO-T1-FULL (4 takes), TH-01…16 (untrimmed v1 + trimmed v2). Audio as mp3-in-mp4 (board refuses .mp3).
 
+- 20:55–21:10 UTC: user "CONFIRMED PROCEED TO HOOK VIDEOS but do 2 versions same script different visual" → HK-01a/HK-02a images
+  confirmed = **Hook 1 (version A)**. Kling on Kie (pro 1080p, multi_shots off, §22X preflight PASS, start frame = confirmed image):
+  HK-01a 5s (Kie fbb62285, 90 cr), HK-02a 4s (Kie 6b771158, 72 cr) → board `review`.
+  **Hook 2 (version B)** = same VO lines, new visuals: rows HK-01b (N on the church steps, L-CHURCH, low/three-quarter/MEDIUM; refs N + P5;
+  job ae039237) and HK-02b (N + C2 on the home stairs in profile, eye/profile/MEDIUM; refs N + C2 + P0; job 86af8fdd) added to
+  `work/actmap.py` (77 rows, `angles.py` PASS). Images on the board as `review` — their videos wait on the user's Confirm (§22X).
+  Note: `vo/th_split.py` dedupes only consecutive duplicate lines — skip HK-0xb rows (they reuse HK-0xa times) if it's rerun.
+
 ## Where it stands
 - **Voice stage done** (no stop, Manual 2026-09-28): everything on the board To check. A confirmed different VO take → re-cut + regenerate the THs.
-- **Step 6 — Hook 1 images on the board (the hook gate):** HK-01a (N + daughter climbing, refs N + C2 + P0; job a7a09cb6) and HK-02a
-  (daughter near the top from the landing, refs C2 + P1 v3 + P0; job af12fdf3), nano_banana_2 (Higgsfield logs nano_banana_flash).
-  Beat times from `vo/cut/VO_T1.beats.json`: HK-01a 0.00–3.84s, HK-02a 4.04–7.00s, TH-01 7.00–8.94s.
-- **Next on the user's Confirm:** Hook 1 videos (Kling on Kie, §22X preflight, §27G) → the hook approved → Acts 1–7 B-roll.
+- **Step 6 — hooks (the hook gate):** Hook 1 videos HK-01a/HK-02a To check; Hook 2 images HK-01b/HK-02b To check.
+  Beat times from `vo/cut/VO_T1.beats.json`: HK-01a 0.00–3.84s, HK-02a 4.04–7.00s, TH-01 7.00–8.94s (Hook 2 uses the same times).
+- **Next on the user's Confirm:** Hook 2 videos (add HK-01b/HK-02b to `hooks/build_calls.py`, preflight, Kie) → both hooks approved → Acts 1–7 B-roll.
+  Finals: FINAL-HK1 (Hook 1 + body), FINAL-HK2 (Hook 2 + body) on the Final board.
