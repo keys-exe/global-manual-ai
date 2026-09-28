@@ -106,14 +106,16 @@ ROWS["BR-03"] = (["C4", "P2", "front", "back"], photo(
     "turned to the window. " + P.SIZE_HELD,
     "cool daylight from the window on the left, the lightbox glowing softly behind.", HELD_NEG, skin=""))
 ROWS["BR-04"] = (["P2", "front", "back", "worn_front"], photo(
-    "An extreme close-up from a low angle beside the examination couch, looking along the couch: a patient's right knee lies straight "
-    "on the blue couch with its white paper roll, the strap seated on it; the surgeon's index fingertip rests on the skin just beside "
-    "the notch, pointing to where it sits. Only the knee, the top of the shin, the hem of grey running shorts and one fingertip in frame. "
-    "The consulting room from the first attached image behind, far out of focus.",
-    "The patient is a man in his sixties, knee only: grey running shorts, pale hairy leg. The surgeon's hand: broad, long-fingered, a "
+    "A close-up from a low angle at the foot of the examination couch, looking up along it: a patient lies on his back on the blue "
+    "couch with its white paper roll, his right leg straight, the strap seated on the knee in the foreground; the surgeon's index "
+    "fingertip rests on the skin just beside the notch, pointing to where it sits. THE WHOLE PATIENT IS THERE: behind the knee, softly "
+    "out of focus, his thigh runs up into grey running shorts, then his hips, his stomach and chest in a navy T-shirt lying along the "
+    "couch, his head resting at the far end on the couch's pillow, turned away; his left leg lies beside the right. The consulting room "
+    "from the first attached image behind, far out of focus.",
+    "The patient is a man in his sixties, his whole body lying on the couch: navy T-shirt, grey running shorts, pale hairy legs. The surgeon's hand: broad, long-fingered, a "
     "white shirt cuff.",
     PRODUCT + " " + WORN + " Seated exactly as in the last attached worn reference.",
-    "cool window daylight from the left, soft.", WORN_NEG + ", no face, no second hand gripping the strap"))
+    "cool window daylight from the left, soft.", WORN_NEG + ", no cut-off body, no leg ending at the shorts, no missing torso, no floating leg, no second hand gripping the strap"))
 ROWS["BR-05"] = (["front", "back"], photo(
     "A close-up from overhead at a slight angle onto a pale wooden kitchen table in an ordinary home: two straps lie side by side, "
     "shells face up. Two hands in oatmeal long-sleeve cuffs rest at the table edge, the right index finger touching the smaller one.",
@@ -195,11 +197,15 @@ ROWS["BR-17"] = (["C2", "P3", "front", "back", "worn_bent"], photo(
     PRODUCT + " " + P.PLACE_BENT + " Worn exactly as in the last attached bent reference.", "high-bay LED light, daylight from the open shutter.",
     WORN_NEG))
 ROWS["BR-18"] = (["C1", "P0", "front", "back", "worn_front"], photo(
-    "A close-up at knee height in the hall: Maureen's hands lowering the wide leg of her navy trousers down over her right knee, the "
-    "fabric half down — the strap still visible below the kneecap, the trouser leg about to cover it and lie flat. The stairs' "
+    "A close-up at knee height in the hall: Maureen's hands letting the wide leg of her navy trousers fall back DOWN over her right "
+    "knee — the hem already below the kneecap on its way down, the strap still visible below the kneecap for a moment before the fabric "
+    "covers it and lies flat. Her hands are releasing the fabric downward, never rolling it up. The stairs' "
     "bottom step and beige carpet from the second attached image behind.",
     C1 + " Wearing a cream roll-neck, a camel open draped cardigan, wide-leg navy trousers, brown loafers.",
-    PRODUCT + " " + WORN, "soft east morning daylight from the front door.", WORN_NEG.replace(", no strap over clothing", "") + ", no face"))
+    PRODUCT + " It is a RIGID MOULDED PLASTIC SHELL with a hard edge, not fabric: two peaks rising either side of the notch, the "
+    "chrome slides fixed to the shell's two ends. " + WORN, "soft east morning daylight from the front door.",
+    WORN_NEG.replace(", no strap over clothing", "") + ", no face, no fabric pad, no neoprene pad, no padded strap, no stitched edge, "
+    "no rectangular pad, no flat oval pad, no velcro, no trousers being rolled up, no hands pulling the fabric upward"))
 ROWS["BR-19"] = (["C2", "P3", "front", "back", "worn_front"], photo(
     "A medium-wide at eye level, three-quarter front: Dean leaning back against the workbench in the warehouse aisle, a mug of tea in "
     "his hand, relaxed, the strap still in place on his right knee. THE SAME WAREHOUSE AISLE exactly as in the second attached image.",
@@ -230,19 +236,25 @@ ROWS["BR-23"] = (["C1", "P1", "package_open", "front"], photo(
     "A close-up from overhead on the kitchen table with its checked cloth: the box open, the lid set aside, the two straps lying flat "
     "in the insert exactly as in the third attached image; Maureen's fingertips at the box's front edge.",
     "Maureen's fingertips, cornflower-blue sleeve.", P.PACKAGE_LOCK, "soft indirect west window light.", P.NEG_PACKAGE, skin=""))
-ROWS["BR-24"] = (["C1", "P1", "front", "back"], photo(
+ROWS["BR-24"] = (["C1", "P1", "package_open", "front", "back"], photo(
     "A medium close-up at eye level by the kitchen window: Maureen lifts one strap out of the open box on the table and turns it in "
-    "the window light, looking at it, the open box with the second strap in front of her. THE SAME KITCHEN exactly as in the second "
-    "attached image.",
+    "the window light, looking at it, the open box with the second strap on the table in front of her. THE SAME KITCHEN exactly as in "
+    "the second attached image. THE BOX exactly as in the third attached image: " + P.PACKAGE_LOCK.replace("holds exactly two identical "
+    "straps, one in each well", "holds one strap in one well — the other well now empty because she has lifted that strap out") + ".",
     C1 + " Wearing a cornflower-blue cotton dress ending a hand above the knee.",
     PRODUCT + " She holds it by the shell's bottom edge, thumb in front below the wordmark, fingers behind on the pad, the band slack "
-    "round her wrist. " + P.SIZE_HELD, "soft indirect west window light.", HELD_NEG.replace("no second strap, ", ""), skin=""))
+    "round her wrist. " + P.SIZE_HELD, "soft indirect west window light.", HELD_NEG.replace("no second strap, ", "") + ", no cardboard "
+    "box, no brown box, no kraft box, no white box, no box flaps, no loose band beside the strap in the box, no shell separate from its "
+    "band", skin=""))
 ROWS["BR-25"] = (["C1", "P0", "front", "back", "worn_front"], photo(
-    "A medium-wide from behind her and a little to the side, at eye level in the hall: Maureen at the foot of the stairs, looking up, "
-    "her right foot on the first step, the strap on her right knee. The stairs rise on the LEFT of frame. THE SAME HALL AND STAIRS "
+    "A medium-wide at knee-to-waist height from the side and a little in FRONT of her, three-quarter front, in the hall: Maureen at the "
+    "foot of the stairs, looking up them, her right foot lifted onto the first step, the FRONT of her right knee turned towards the camera "
+    "with the strap on it. The stairs rise on the LEFT of frame. THE SAME HALL AND STAIRS "
     "exactly as in the second attached image.",
     C1 + " Wearing a cornflower-blue cotton dress ending a hand above the knee, navy slip-on shoes.",
-    PRODUCT + " " + WORN, "soft east morning daylight through the front-door glass.", WORN_NEG))
+    PRODUCT + " " + WORN + " Seen from the front three-quarter: the shell and its wordmark on the FRONT of the knee, only the black "
+    "band passing round the back.", "soft east morning daylight through the front-door glass.", WORN_NEG + ", no strap on the back of "
+    "the knee, no shell behind the knee, no view from behind"))
 ROWS["BR-26a"] = (["C1", "P0", "front", "back", "worn_front"], photo(
     "A medium close-up from low and in front: Maureen sits on the bottom stair, her right leg straight out, bending forward with "
     "both hands on the strap on her shin. The hall from the second attached image behind.",

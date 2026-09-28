@@ -98,3 +98,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   same prompts and refs, refs imported to Higgsfield from the Kie URLs) — on the board as To check, earlier Kie renders
   kept as older versions. MECH ×6 unchanged (Higgsfield NB2). This supersedes the earlier "GPT Image for realistic"
   rule for this build's body B-roll: realistic B-roll images = Higgsfield nano banana pro.
+- (2026-09-28, 10:15 UTC) **User Fix notes on BR-04 / BR-18 / BR-24 / BR-25** (cut-off body · wrong product · wrong box ·
+  wrong placement). Diagnosed and fixed at the prompt (`body/body_prompts.py`): BR-04 the whole patient lying on the
+  couch; BR-18 the rigid moulded shell (not a fabric pad), trouser leg coming DOWN; BR-24 our black box via
+  `package_open.jpg` + PACKAGE_LOCK; BR-25 three-quarter front so the shell reads on the front of the knee.
+  Remade on Higgsfield nano banana pro (`body/<BEAT>_fix1.png`, links in `body/fix1_urls.txt`), sent in chat.
+  **Board asset storage is full (1 GB platform cap)** — the four could not be uploaded; cards set to imageStatus
+  `generating` with the Fix note in `imageFault`. Waiting on the user: delete the 52 assets used only by the archived
+  old HK1 cards (~300 MB) or start a second board. (User asked to raise the limit to 20 GB — not possible from here.)
