@@ -10,7 +10,7 @@ audio-only VO trim (hooks, bodies, variant masters). `scripts/vo_trim.py` defaul
 | Silence between other words | removed to ~0.01s | `PAUSE_WORD` 0.01s |
 | Short gaps inside words (stop closures) | kept, 20–60ms, max 0.14s | `MERGE` 0.12s: shorter silences untouched |
 | Silence left in total | 1.61s in 57.55s (40 runs ≥ 20ms) | 1.1–1.3s in ~58s |
-| Where a word is cut | once it falls to about −38 dBFS (median of 24 breaks) — the audible word is whole, the quiet decay goes | `FLOOR` −38 dBFS, 20ms fade |
+| Where a word is cut | once it falls to about −38 dBFS (median of 24 breaks) — the audible word is whole, the quiet decay goes | **retired 2026-09-28** ("I don't like tight cuts on the VO"): `FLOOR` −50 dBFS + 80 ms release, 60 ms fade |
 | Breaths | none left | breaths cut at phrase boundaries |
 | Hook → body | butt-joined like any phrase break | raw hook + raw body trimmed in one pass |
 | Speed / pitch | unchanged (F0 126 vs 127 Hz source; no tempo change) | no speed change |
