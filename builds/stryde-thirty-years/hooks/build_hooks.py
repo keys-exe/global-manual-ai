@@ -86,14 +86,14 @@ HK3_BR2 = "\n\n".join([
  S("FRAME-SCALE").replace("[SCALE]", "about three quarters") + " " + S("FRAME-PROPPED"),
  ANG("an eye-level camera", "three-quarter, from his left,", ", looking past the half of the knee sleeve he holds up close to the lens, soft in the near foreground"),
  FOC("the foreground", "the room behind falls to a soft, recognisable shape"),
- ID + " Nobody is holding the phone: it is propped against the tin of rivets on the bench, a metre in front of him at chest height. "
- "He sits on the tall stool at the bench, angled to it, and holds up in his right hand, close to the phone, one half of " + SLEEVE + ". The half fills the lower left of the frame and is the sharpest thing in it, the cut edge towards the lens; "
+ ID + " The picture is what a phone propped on the bench a metre in front of him at chest height sees; that phone is the camera and is never seen — there is no phone anywhere in the frame (user Fix 2026-09-28). "
+ "He sits on the tall stool at the bench, angled to it, and holds up in his right hand, close to the lens, one half of " + SLEEVE + ". The half fills the lower left of the frame and is the sharpest thing in it, the cut edge towards the lens; "
  "behind it his face is soft but recognisable, eyes on the lens, mouth closed, still. The other half lies on the bench in front of him beside the shears. Chest-up, the bench edge across the bottom of the frame. " + BENCH,
  LIGHT_L("his face"),
  *SKIN(),
  COLOUR,
  S("CAP-A"), S("CAP-FILE"),
- NEGS([S("NEG-HAND")]),
+ NEGS([S("NEG-HAND")]) + ", no phone anywhere in the frame, no phone on the bench or propped in a tin",
 ])
 
 HK3_TH = "\n\n".join([
