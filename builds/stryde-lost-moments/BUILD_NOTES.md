@@ -39,13 +39,18 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Kling takes G1/G2 re-fitted to the v6 chest-up frame (hands rest on the table, small nod on the stress word instead of a hand lift;
   audio only is used), `preflight.py` PASS both (`voice/N_G*.call.json`). **Blocked: Kling balance 3.0 credits** — not sent.
 
+- 16:20–19:50 UTC (session_01QFtjcJsQcS8p957wEAS4kb): **voice** — Kling had 3 credits → user: "use kie ai if not enough credits in kling" (now §5, V7.65.0).
+  G1/G2 on Kie `kling-3.0/video` (pro, sound) → `voice_source.py` PASS (202.5 Hz both, 33.2s) → ElevenLabs clone **`Lost` `D20hb4HQVPwtiDd89W7m`**.
+  VO: all five variants in one eleven_v3 request (4,802 chars, verbatim PASS), 4 takes; T1 split per variant; user confirmed VO-T1-HK1…HK5
+  (old butt-join cut). Merged **V7.65.0** (blissful-brown): house cut with natural pauses — T1–T4 re-cut to `vo/trim/` (144–151 wpm, cap 179);
+  not yet on the board. T1 V5 ends clipped (last word cut by the TTS) — user confirmed it anyway; flag.
+  **Hook 1 done** (user confirmed both clips): A-HKa = from the foot of the stairs, down backwards holding both rails (user reference
+  clip `hooks/ref_stairs_user.mp4`); A-HKb = strap snug under the kneecap, 3/4 side view like the user's photo `hooks/ref_strap_placement_user.jpg`
+  (v7: strap lifted by hand + GPT Image 2.5 seam cleanup — Nano Banana edits kept lowering it). A-HKb took 4 video generations (user's go).
+  Hook 2 started: B-HKa (struggling onto the bench) and B-HKb (placement like the user's photo) images on the board, To check.
+  Lessons for every hook: show the struggle; product framed like the user's placement photo, notch against the kneecap, no hands over it.
+
 ## Where it stands
-- **Blocked:** Kling has 3.0 credits — the two 10s voice takes (1080p, audio) can't run until it's topped up. Kling has no fallback (§5).
-- **Waiting on the user's check:** Hook 1 images A-HKa, A-HKb. Narrator = option A (from "PROCEED TO VOICE"); N2 option B dropped unless the user says otherwise.
-- **Confirmed:** all 7 avatars, 10 plates, DOG-BRAMBLE, GK1-AMARA, GK2-TOBI.
-- **Next on the voice frame's Confirm:** §22U step 2 — two Kling takes (`voice/N_G1.kling.json`, `voice/N_G2.kling.json`,
-  ≤2,500 chars, same image, VOICE-NARR first in delivery), then `voice_source.py` → clone source for the user to clone
-  in ElevenLabs (name `LostMoments-Narrator`, or `Lost` if free).
-- Then: five voice masters in one TTS request (all hooks + all bodies), house cut, `assemble.py --lengths` for durations,
-  then step 6 hooks one by one (Hook 1 = A first).
-- Open flags: F1, F3, F4 (claims), F11 (`package_closed.jpg`).
+- Hook 1 confirmed. Hook 2: B-HKa, B-HKb images To check → their clips (5s, Kie kling-3.0 while Kling is short) after the Confirm.
+- Put the V7.65.0 VO re-cuts (vo/trim) on the board as new versions; then `assemble.py --lengths` per variant on the chosen cut.
+- Open flags: F1, F3, F4 (claims), F11 (`package_closed.jpg`); VO V5 last word clipped on T1.
