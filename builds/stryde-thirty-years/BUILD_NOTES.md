@@ -105,11 +105,22 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   motionPrompt) with HK1 audio 3.77–10.39s → HK1-TH v1 (6.62s, video c35c56a5…) on the board as review.
   HK1 is then complete pending review: walk 0.4–4.17s + HK1-TH. Next: HK2, HK3 videos.
 
-## Where it stands
-- **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
-  and the check of TH-01..07.
-- **Next:** hooks one by one (step 6): HK1 (walking selfie, Kling + HeyGen lip-sync, F12), HK2 (seed with the brace in
-  the vice, VN02), HK3 (sleeve insert + pull-back + TH). Then B-roll (E6 lengths from the T2 word timestamps first).
-- TH-04 was planned with the strap held low in frame; C1-SEED has no strap, so TH-04 renders without it (product first
-  seen at BR-11/BR-15a). Say if you want a TH-04 seed with the strap.
+  Later (from commits, not written here at the time): HK1-FULL card — v1 join of HK1 v4 + HK1-TH v1; v2 one take (Kie
+  kling-3.0/video 12s walk + stand + full HK1 line → HeyGen lip-sync); v3 Seedance 2.5 on Kie, ingredients (HK1 image v2,
+  P3 plate, C1 sheet, TH-IMAGE, @audio1 = the talking-head voice's HK1 line), 15s 720p, native audio — user: "use the
+  talking heads voice as voice clip … seedance 2.5 — hook only". All three on the board as review.
+
+- session_018X2U8ag6qVk4WFeKKTMfRd (2026-09-28 16:00–): resumed. Merged `claude/vibrant-allen-sj2pso` into
+  `claude/wonderful-dijkstra-np80sq` (conflicts in §22U/SKILL.md resolved keeping both 2026-09-28 corrections: one-go
+  Avatar V + step 14 natural-pace trim). Hourly Fix check moved: `trig_01HjYaZr7JdTVsfKyCw1ytUD` (:49 UTC) bound here,
+  `trig_01ERbz4gRWaJ3sZ2tPVgNCWC` deleted.
+
+## Where it stands (2026-09-28 16:00)
+- **Board:** cast, locations, voice source, hook images (v2 face fix) all confirmed. VO-T4 cards read `use`, T1–T3 `review`;
+  the talking heads were built on T2 — confirm which take is the master (T4 would re-cut the THs).
+- **Waiting on the user (review):** HK1-FULL v1/v2/v3 (pick the HK1 route — v3 Seedance is the voice-lock test),
+  HK1 v4 walk, HK1-TH v1, TH-HK1/2/3-BODY v3 (gentle trim).
+- **Next:** HK2 and HK3 videos on the route the user picks for HK1 (HK2 image, HK3-BR/BR2/TH images confirmed; HK2 and
+  HK3-TH video `ready`, HK3-BR/BR2 `planned`). Then B-roll (E6 lengths from `TH-HKn+BODY.trim2` word timestamps).
+- Board storage near its 1 GB cap (~560 MB free at 12:55, less now) — upload at source bitrate; Drive if it fills.
 - Open: F3, F4, F11, F12, F13.
