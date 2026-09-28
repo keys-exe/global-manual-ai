@@ -1,0 +1,297 @@
+{
+ "body": {
+  "audio": "/home/user/global-manual-ai/builds/stryde-thirty-years/edit/body/BODY.mp3",
+  "script": "/home/user/global-manual-ai/builds/stryde-thirty-years/vo/BODY.lines.txt",
+  "base": "/home/user/global-manual-ai/builds/stryde-thirty-years/edit/body/BODY_th.mp4",
+  "broll": [
+   {
+    "beat": "MECH-01",
+    "phrase": "Seventeen times your bodyweight goes through one spot below your kneecap. Every step",
+    "layout": {
+     "type": "full"
+    },
+    "key": "Seventeen",
+    "max": 10,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/MECH-01_v1.mp4"
+   },
+   {
+    "beat": "BR-02",
+    "phrase": "Two centimetres down, on the tendon",
+    "layout": {
+     "type": "full"
+    },
+    "key": "centimetres",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-02_v3.mp4"
+   },
+   {
+    "beat": "MECH-02",
+    "phrase": "Not the cartilage. Not the joint. That spot",
+    "layout": {
+     "type": "full"
+    },
+    "key": "cartilage",
+    "max": 10,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/MECH-02_v1.mp4"
+   },
+   {
+    "beat": "BR-03a",
+    "phrase": "Take the load off it and you come down the stairs forwards",
+    "layout": {
+     "type": "full"
+    },
+    "key": "stairs",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-03a_v1.mp4"
+   },
+   {
+    "beat": "BR-03b",
+    "phrase": "Out of a chair first try",
+    "layout": {
+     "type": "full"
+    },
+    "key": "chair",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-03b_v1.mp4"
+   },
+   {
+    "beat": "BR-03c",
+    "phrase": "The dog as far as you used to",
+    "layout": {
+     "type": "full"
+    },
+    "key": "dog",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-03c_v1.mp4"
+   },
+   {
+    "beat": "BR-05a",
+    "phrase": "Sleeves. Hinged braces. Gels. Wraps",
+    "layout": {
+     "type": "full"
+    },
+    "key": "Sleeves",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-05a_v3.mp4"
+   },
+   {
+    "beat": "BR-05b",
+    "phrase": "I have sold plenty of them, and they are better than nothing",
+    "layout": {
+     "type": "full"
+    },
+    "key": "sold",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-05b_v3.mp4"
+   },
+   {
+    "beat": "MECH-06",
+    "phrase": "But the pain comes back to the same spot, because none of them move the load off it",
+    "layout": {
+     "type": "full"
+    },
+    "key": "same spot",
+    "max": 10,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/MECH-06_v1.mp4"
+   },
+   {
+    "beat": "BR-07a",
+    "phrase": "A sleeve squeezes the whole knee",
+    "layout": {
+     "type": "full"
+    },
+    "key": "sleeve",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-07a_v1.mp4"
+   },
+   {
+    "beat": "BR-07b",
+    "phrase": "A hinged brace stops your knee going sideways",
+    "layout": {
+     "type": "full"
+    },
+    "key": "sideways",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-07b_v1.mp4"
+   },
+   {
+    "beat": "BR-08",
+    "phrase": "So if you have a drawer full of these",
+    "layout": {
+     "type": "full"
+    },
+    "key": "drawer",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-08_v2.mp4"
+   },
+   {
+    "beat": "BR-10a",
+    "phrase": "One, the placement",
+    "layout": {
+     "type": "full"
+    },
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-10a_v1.mp4"
+   },
+   {
+    "beat": "BR-10b",
+    "phrase": "Two centimetres below the kneecap, on the tendon, never over the joint",
+    "layout": {
+     "type": "full"
+    },
+    "max": 6,
+    "key": "kneecap",
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-10b_v1.mp4"
+   },
+   {
+    "beat": "BR-11",
+    "phrase": "Two, the pad. Silicone",
+    "layout": {
+     "type": "full"
+    },
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-11_v3.mp4"
+   },
+   {
+    "beat": "MECH-11",
+    "phrase": "holding pressure on that one spot",
+    "layout": {
+     "type": "full"
+    },
+    "key": "one spot",
+    "max": 10,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/MECH-11_v1.mp4"
+   },
+   {
+    "beat": "BR-12",
+    "phrase": "Three, the band",
+    "layout": {
+     "type": "full"
+    },
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-12_v4.mp4"
+   },
+   {
+    "beat": "MECH-12",
+    "phrase": "It catches your weight coming down",
+    "layout": {
+     "type": "full"
+    },
+    "key": "catches",
+    "max": 10,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/MECH-12_v1.mp4"
+   },
+   {
+    "beat": "BR-13",
+    "phrase": "Thirty four percent less strain. Measured",
+    "layout": {
+     "type": "full"
+    },
+    "key": "Thirty",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-13_v2.mp4"
+   },
+   {
+    "beat": "BR-14a",
+    "phrase": "Most straps that look like this are copies",
+    "layout": {
+     "type": "full"
+    },
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-14a_v1.mp4"
+   },
+   {
+    "beat": "BR-14b",
+    "phrase": "Thin elastic, foam pad, no tension. They stretch",
+    "layout": {
+     "type": "full"
+    },
+    "key": "stretch",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-14b_v2.mp4"
+   },
+   {
+    "beat": "BR-15a",
+    "phrase": "The one I hand people is Stryde",
+    "layout": {
+     "type": "full"
+    },
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-15a_v1.mp4"
+   },
+   {
+    "beat": "BR-15b",
+    "phrase": "Three years with orthopedic surgeons. Two hundred thousand wearing one",
+    "layout": {
+     "type": "full"
+    },
+    "key": "surgeons",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-15b_v1.mp4"
+   },
+   {
+    "beat": "BR-15c",
+    "phrase": "Ten seconds on, no sores, no rolling down",
+    "layout": {
+     "type": "full"
+    },
+    "key": "Ten",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-15c_v1.mp4"
+   },
+   {
+    "beat": "BR-16",
+    "phrase": "Go down your own stairs. You will know in a minute",
+    "layout": {
+     "type": "full"
+    },
+    "key": "stairs",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-16_v1.mp4"
+   },
+   {
+    "beat": "BR-18a",
+    "phrase": "Two for one, so you can do both knees",
+    "layout": {
+     "type": "full"
+    },
+    "key": "Two",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-18a_v2.mp4"
+   },
+   {
+    "beat": "BR-18b",
+    "phrase": "Sixty days, and you keep the straps. From the Stryde site, not a marketplace",
+    "layout": {
+     "type": "full"
+    },
+    "key": "Sixty",
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-18b_v2.mp4"
+   }
+  ]
+ },
+ "hooks": [
+  {
+   "id": "HK1",
+   "audio": "/home/user/global-manual-ai/builds/stryde-thirty-years/edit/hooks/HK1.wav",
+   "script": "/home/user/global-manual-ai/builds/stryde-thirty-years/vo/HK1.lines.txt",
+   "base": "/home/user/global-manual-ai/builds/stryde-thirty-years/edit/hooks/HK1-FULL_v3.mp4",
+   "broll": []
+  },
+  {
+   "id": "HK2",
+   "audio": "/home/user/global-manual-ai/builds/stryde-thirty-years/edit/hooks/HK2.wav",
+   "script": "/home/user/global-manual-ai/builds/stryde-thirty-years/vo/HK2.lines.txt",
+   "base": "/home/user/global-manual-ai/builds/stryde-thirty-years/edit/hooks/HK2-FULL_v1.mp4",
+   "broll": []
+  },
+  {
+   "id": "HK3",
+   "audio": "/home/user/global-manual-ai/builds/stryde-thirty-years/edit/hooks/HK3.wav",
+   "script": "/home/user/global-manual-ai/builds/stryde-thirty-years/vo/HK3.lines.txt",
+   "base": "/home/user/global-manual-ai/builds/stryde-thirty-years/edit/hooks/HK3-FULL_v3.mp4",
+   "broll": []
+  }
+ ]
+}

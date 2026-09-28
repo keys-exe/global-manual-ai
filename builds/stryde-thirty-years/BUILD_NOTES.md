@@ -222,9 +222,18 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   BR-11 v3: no turn, no end frame (pin dropped, PIN_END removed for BR-11), he brings the strap a little closer, wordmark to the lens.
   v2's file removed for room.
 
-## Where it stands (2026-09-28 20:00)
-- Hooks done. VO master T2. TH-HK1/2/3-BODY v3 still To check.
-- B-roll: every video confirmed ("use") except BR-11 v3 (To check) — the last B-roll clip.
-- Any further Fix on BR-02, BR-05a, BR-05b, BR-11, BR-12 is past the §22X limit — ask first.
-- Board storage at the cap; each new render goes up after its superseded file is removed.
-- Next: once BR-11 is confirmed, rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.
+  ~20:10–21:00: BR-11 v3 confirmed. User "proceed to editing" → step 8. `edit/variants.json`: body = TH-HK1+BODY.trim2 cut at
+  10.36s ("Seventeen" starts at 10.50) → `edit/body/BODY_th.mp4` + `BODY.mp3`, one body for all three; hooks = HK1-FULL v3 /
+  HK2-FULL v1 / HK3-FULL v3 (audio as WAV, MP3 padding broke the length check); 27 B-roll rows from `plan_HK1.json` with the
+  current confirmed version of each clip. BR-11's phrase extended to "Two, the pad. Silicone" (0.79s < 0.8s FLASH). variants.py:
+  13 flicker fixes, 0 failures, body identical across variants, body sync checked by cross-correlation (≤0.05s); the reported
+  length FAIL on HK1/HK3 is the body MP3's padding (0.13s), not missing picture. Rough cuts `edit/rough/STRYDE-30Y_HKn.mp4`
+  (1080×1920, 24 fps, ~105 MB each; too big for the chat's 30 MB limit and the full board) → 720p review copies sent in chat.
+  CapCut block `edit/CAPCUT_BLOCK.md` sent and on the board (Plan tab, docs/capcut).
+
+## Where it stands (2026-09-28 21:00)
+- All generation done: hooks, VO, talking heads (TH-HK1/2/3-BODY v3 still To check), 27 B-roll clips confirmed.
+- Step 8: rough cuts rendered (`edit/rough/`), review copies sent, CapCut block written (`edit/CAPCUT_BLOCK.md`).
+- Open: F4 (dramatisation note or not) · TH body check · where the finished videos go (board is full: ~0.7 MB free; each final
+  ~105 MB = 7 × 15 MB parts) — Drive `08_EDIT` or free board space.
+- Next: the user reviews the rough cuts → CapCut finish (captions, EG01 cards, number overlays, colour match) → FINAL-HKn.
