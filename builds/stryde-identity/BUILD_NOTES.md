@@ -93,3 +93,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   `nano_banana_2` (connector reports `nano_banana_flash`), BR ×21 on Kie GPT Image — on the board as To check (earlier
   renders kept as older versions). Next: the user's Confirm/Fix per image, then Kling videos (simple text prompts,
   E6 lengths re-run with Kling's 3–15s).
+- (2026-09-28, 09:55 UTC) **User: "use nano banana pro in higgsfield to all the brolls, re do them except the anatomy."**
+  The 21 BR start images remade on Higgsfield `nano_banana_pro` (the connector's job status reports `nano_banana_2`;
+  same prompts and refs, refs imported to Higgsfield from the Kie URLs) — on the board as To check, earlier Kie renders
+  kept as older versions. MECH ×6 unchanged (Higgsfield NB2). This supersedes the earlier "GPT Image for realistic"
+  rule for this build's body B-roll: realistic B-roll images = Higgsfield nano banana pro.
