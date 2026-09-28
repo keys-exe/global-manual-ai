@@ -720,6 +720,19 @@ B["BR-11"] = (NBP, ["90168a20-dade-40fe-96db-2ffae7f4f02b", "front", "back", "C1
     BENCH, angle("BR-11", "his hand"), focus("the product and its wordmark"), light("WS-L", "his hand"), colour("WORKSHOP")],
     HELD_NEG + NEG_SMALL + ", no hanging loop, no close-up of the strap, no strap filling the frame, " + NEG_HANDS))
 
+# ── BR-11 end frame at the new size (user: "Make it and go straight on", 2026-09-28 ~20:00) ─────────────────────────────
+# Edit of the confirmed BR-11 v4 (job ref first): same scene and small size, the strap turned to show its back composed like
+# the back product photo (the look of END v4).
+END["BR-11-END"] = (NBP, ["87a9630a-eecf-492a-a007-5ee8caa80db5", "back", "front"], photo([
+    "EDIT OF THE FIRST ATTACHED IMAGE: the same photo a moment later. Keep the man, his hands, the bench, the workshop, the camera "
+    "position, the light and the strap's SMALL SIZE exactly as in it. The only change: he has turned the strap round so its BACK faces "
+    "the lens, looking exactly like the SECOND attached product photo, the back of the strap — held upright at chest height, one hand "
+    "on each chrome slide: the smooth plain matte-black pad side of the shell standing at the back with its two peaks and the notch "
+    "pointing UP, and the closed black coarse-knit band loop coming forward from the slides towards the camera, curving round in front "
+    "of the shell and lower than it, its two black keeper loops centred and facing the lens. No wordmark is visible from this side."],
+    "no wordmark, no front face, no peaks pointing down, no shell tipped over, no band hanging underneath, no strap growing, "
+    "no size change, no second strap, no other change to the image, " + NEG_HANDS))
+
 if __name__ == "__main__":
     out = {}
     for beat, (model, refs, prompt) in B.items():

@@ -214,10 +214,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   BR-11 v4 (FIX10 in `build_broll.py`): the confirmed BR-15a v3 leads as size and framing reference. v3's file removed for room.
   The BR-11 v1 video and END v4 were made at the old size — a new end frame (then the video) follows the v4 Confirm.
 
-## Where it stands (2026-09-28 19:55)
+  ~20:00: BR-11 v4 confirmed; user chose "Make it and go straight on" → BR-11-END v5 (edit of v4, back of the strap, same small
+  size) and BR-11 video v2 (first-and-last frame, 3s) straight away; end frame recorded on BR-11's card as `endFrame`. Old-size
+  BR-11 v1 video and END v4 files removed for room.
+
+## Where it stands (2026-09-28 20:00)
 - Hooks done. VO master T2. TH-HK1/2/3-BODY v3 still To check.
-- B-roll: every video confirmed ("use") except BR-11. BR-11 image v4 (smaller strap) To check → then a new end frame at that
-  size (back of the strap, as END v4 was composed) → BR-11 video (first-and-last frame).
+- B-roll: every video confirmed ("use") except BR-11 v2 (To check) — the last B-roll clip.
 - Any further Fix on BR-02, BR-05a, BR-05b, BR-12 is past the §22X limit — ask first.
 - Board storage at the cap; each new render goes up after its superseded file is removed.
 - Next: once BR-11 is confirmed, rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.

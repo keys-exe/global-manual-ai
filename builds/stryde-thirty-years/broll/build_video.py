@@ -364,6 +364,16 @@ V["BR-11"] = ("CLOSE as in the start frame, him at the bench holding the strap a
    [("the strap morphs mid-turn", "pinned end frame + HOLD_PC"), ("turns too far or back again", "one turn, ends on the end frame"),
     ("fingers fuse with the strap", "HOLD-HC")])
 
+# BR-11 remade at the smaller size (image v4 confirmed; end frame v5 made from it, user: "Make it and go straight on").
+PIN_END["BR-11"] = "broll/renders/BR-11-END_v5.png"
+V["BR-11"] = ("MEDIUM as in the start frame, him at the bench holding the small strap at chest height.", PROPPED,
+   "His other hand comes up to the strap and his two hands turn it round in one slow, even turn over about two seconds so its back "
+   "comes to face the lens, the band loop swinging forward, ending exactly as in the end frame; the shell stays the same small size "
+   "and shape throughout.", True,
+   "no strap flipping twice, no second strap, no strap growing, no band tangling, no face changing", "in_place",
+   [("the strap grows or morphs mid-turn", "pinned end frame at the same small size + HOLD_PC + no strap growing"),
+    ("turns too far or back again", "one turn, ends on the end frame"), ("fingers fuse with the strap", "HOLD-HC")])
+
 
 def build(beat):
     framing, rig, motion, prod, extra, sm, risks = V[beat]
