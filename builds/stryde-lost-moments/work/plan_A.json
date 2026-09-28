@@ -1,0 +1,180 @@
+{
+ "audio": "../vo/trim/VO_T1_V1.mp3",
+ "script": "../vo/V1.lines.txt",
+ "base": null,
+ "broll": [
+  {
+   "beat": "A-HKa",
+   "clip": null,
+   "phrase": "Too bad you can't go down the stairs forwards.",
+   "max": 6
+  },
+  {
+   "beat": "A-HKb",
+   "clip": null,
+   "phrase": "Thanks to these life-changing knee straps, not for much longer.",
+   "max": 6,
+   "key": "straps"
+  },
+  {
+   "beat": "SH-01",
+   "clip": null,
+   "phrase": "Built over three years with orthopaedic surgeons,",
+   "max": 6,
+   "key": "surgeons"
+  },
+  {
+   "beat": "SH-02",
+   "clip": null,
+   "phrase": "to do what sleeves and braces never could.",
+   "max": 6,
+   "key": "sleeves"
+  },
+  {
+   "beat": "SH-03",
+   "clip": null,
+   "phrase": "Perfect for bone on bone, arthritis, worn cartilage and meniscus pain.",
+   "max": 6,
+   "key": "bone"
+  },
+  {
+   "beat": "A-01",
+   "clip": null,
+   "phrase": "On every step down,",
+   "max": 6,
+   "key": "step"
+  },
+  {
+   "beat": "MECH-01",
+   "clip": null,
+   "phrase": "seventeen times your bodyweight goes through one small spot below your kneecap.",
+   "max": 6,
+   "key": "seventeen"
+  },
+  {
+   "beat": "A-02",
+   "clip": null,
+   "phrase": "That's why you turn sideways.",
+   "max": 6,
+   "key": "sideways"
+  },
+  {
+   "beat": "A-03",
+   "clip": null,
+   "phrase": "That's why you grip the railing.",
+   "max": 6,
+   "key": "railing"
+  },
+  {
+   "beat": "MECH-02",
+   "clip": null,
+   "phrase": "This strap redirects the load away from the worn spot.",
+   "max": 6,
+   "key": "strap"
+  },
+  {
+   "beat": "A-04",
+   "clip": null,
+   "phrase": "And the pain just lifts.",
+   "max": 6,
+   "key": "lifts"
+  },
+  {
+   "beat": "A-05",
+   "clip": null,
+   "phrase": "So you come down facing forwards.",
+   "max": 6,
+   "key": "forwards"
+  },
+  {
+   "beat": "A-06",
+   "clip": null,
+   "phrase": "One foot per step.",
+   "max": 6,
+   "key": "foot"
+  },
+  {
+   "beat": "A-07",
+   "clip": null,
+   "phrase": "Like a normal person again.",
+   "max": 6,
+   "key": "normal"
+  },
+  {
+   "beat": "NS-03a",
+   "clip": null,
+   "phrase": "Adjustable, breathable,",
+   "max": 6,
+   "key": "Adjustable"
+  },
+  {
+   "beat": "NS-03b",
+   "clip": null,
+   "phrase": "with a silicone pad that locks the pressure right where you need it.",
+   "max": 6,
+   "key": "pad"
+  },
+  {
+   "beat": "SH-04a",
+   "clip": null,
+   "phrase": "No slipping.",
+   "max": 6,
+   "key": "slipping"
+  },
+  {
+   "beat": "SH-04b",
+   "clip": null,
+   "phrase": "No sores.",
+   "max": 6,
+   "key": "sores"
+  },
+  {
+   "beat": "SH-04c",
+   "clip": null,
+   "phrase": "No rolling down.",
+   "max": 6,
+   "key": "rolling"
+  },
+  {
+   "beat": "NS-05",
+   "clip": null,
+   "phrase": "Recommended by orthopaedic surgeons for lasting relief.",
+   "max": 6,
+   "key": "Recommended"
+  },
+  {
+   "beat": "SH-05",
+   "clip": null,
+   "phrase": "Buy one, get one free today at getstryde.co.",
+   "max": 6,
+   "key": "Buy"
+  },
+  {
+   "beat": "SH-06",
+   "clip": null,
+   "phrase": "Sixty-day money-back guarantee.",
+   "max": 6,
+   "key": "guarantee"
+  },
+  {
+   "beat": "A-08",
+   "clip": null,
+   "phrase": "Put one on.",
+   "max": 6
+  },
+  {
+   "beat": "A-09",
+   "clip": null,
+   "phrase": "Go to your own stairs.",
+   "max": 6,
+   "key": "stairs"
+  },
+  {
+   "beat": "A-10",
+   "clip": null,
+   "phrase": "Nothing to lose but the pain.",
+   "max": 6,
+   "key": "pain"
+  }
+ ]
+}

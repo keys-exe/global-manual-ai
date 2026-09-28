@@ -1,0 +1,586 @@
+{
+ "MECH-01": {
+  "model": "nano_banana_2",
+  "refs": [],
+  "prompt": "Premium 3D anatomical visualisation for medical education, broadcast-quality CGI render, cinematic and clean. Vertical composition. A stylised anatomical model of a single knee viewed from the front and slightly to the side, the knee joint sitting centre frame and dominating the frame, the limb falling away out of frame at both ends. Deep near-black background with a faint cool blue tint. The outer body contour is a very faint translucent glass-like shell, barely visible, so the silhouette reads clearly as human. Rich, premium, cinematic. Three-source render lighting, never flat ambient: a cool pale-cyan key raking across the form from upper camera-left, a low warm amber bounce from beneath picking out the underside of the bone, and a bright cool rim tracing the translucent silhouette. The limb is fully and evenly lit along its whole visible length, every structure readable end to end. Shallow depth of field, the patellar tendon crisp. Light scatters volumetrically through the translucent tissue. Clean satin specular sheen on the patellar tendon and the bone surfaces. The near-black field carries very faint drifting particulate at depth and a subtle tonal gradient across frame. Never a flat empty black. Inside the model, the full muscle groups — quadriceps, hamstrings and calf — in natural anatomical colour: warm red, deep rose and muted brick, semi-transparent and layered so deeper structures remain visible, soft inner glow at the thinner edges, broad directional grain along each belly, never individual fibres. femur, patella and tibia sit deepest, warm ivory-gold with soft low inner luminosity. Viewed from the FRONT and slightly to the side, so the patellar tendon reads plainly: the thick pearly band running straight down from the lower tip of the kneecap to the bump at the top of the shin, in front of the joint. STATE — THE LOAD IS ARRIVING. The foot is planted and the limb carries the body's weight, quadriceps, hamstrings and calf braced, the patellar tendon drawn taut. The glow sits ON THE PATELLAR TENDON ITSELF, on the band between the kneecap and the shin, a near-white spot on the tendon's front surface just below the kneecap, clearly the brightest thing in frame; a faint wave of warm light runs down the thigh toward it. The glow is one tight, bright spot on the patellar tendon just below the kneecap, sharp-edged and small, never spreading down onto the shin bone or across the joint; the bones and muscles around it stay calm. AVOID: no text, no labels, no arrows, no diagram lines, no glow on the tibial tuberosity, no glow spreading down the shin, no skin, no clothing, no real person, no blood, no gore, no second limb, no textbook flat illustration, no white background, no glow on the side of the joint, no glow between the femur and tibia, no glow on the meniscus, no glow on the kneecap, no glow behind the knee, no strap",
+  "medias": []
+ },
+ "MECH-10": {
+  "model": "nano_banana_2",
+  "refs": [],
+  "prompt": "Premium 3D anatomical visualisation for medical education, broadcast-quality CGI render, cinematic and clean. Vertical composition. A stylised anatomical model of a single knee viewed from a low three-quarter angle, foreshortened, the knee joint sitting slightly off-centre and dominating the frame, the limb falling away out of frame at both ends. Deep near-black background with a faint cool blue tint. The outer body contour is a very faint translucent glass-like shell, barely visible, so the silhouette reads clearly as human. Rich, premium, cinematic. Three-source render lighting, never flat ambient: a cool pale-cyan key raking across the form from upper camera-left, a low warm amber bounce from beneath picking out the underside of the bone, and a bright cool rim tracing the translucent silhouette. The limb is fully and evenly lit along its whole visible length, every structure readable end to end. Shallow depth of field, the patellar tendon crisp. Light scatters volumetrically through the translucent tissue. Clean satin specular sheen on the patellar tendon and the bone surfaces. The near-black field carries very faint drifting particulate at depth and a subtle tonal gradient across frame. Never a flat empty black. Inside the model, no muscle layer — the interior is soft empty translucency. Only femur, patella and tibia and the patellar tendon. Bones in warm ivory-gold with soft low inner luminosity; the patellar tendon in pearly ivory-white, dense, running its full length between its attachments. Clean and uncluttered. CONDITION — BONE ON BONE, ARTHRITIS, made unmistakable. Inside the knee joint the cartilage is completely worn away: the rounded end of the femur rests DIRECTLY on the flat top of the tibia, bare bone pressing on bare bone with no gap and no cushion between them. The bone ends are rough and pitted, with small jagged bony spurs growing from their edges. At the point where they grind together a hot, angry red-orange glow burns, clearly the brightest thing in frame, a little heat haze around it; the rest of the joint stays cool ivory. AVOID: no text, no labels, no arrows, no diagram lines, no glow on the tibial tuberosity, no glow spreading down the shin, no skin, no clothing, no real person, no blood, no gore, no second limb, no textbook flat illustration, no white background, no healthy joint space, no smooth cartilage, no strap",
+  "medias": []
+ },
+ "MECH-15": {
+  "model": "nano_banana_2",
+  "refs": [
+   "front",
+   "back"
+  ],
+  "prompt": "Premium 3D anatomical visualisation for medical education, broadcast-quality CGI render, cinematic and clean. Vertical composition. A stylised anatomical model of a single knee viewed from a low three-quarter angle, foreshortened, the knee joint sitting slightly off-centre and dominating the frame, the limb falling away out of frame at both ends. Deep near-black background with a faint cool blue tint. The outer body contour is a very faint translucent glass-like shell, barely visible, so the silhouette reads clearly as human. Rich, premium, cinematic. Three-source render lighting, never flat ambient: a cool pale-cyan key raking across the form from upper camera-left, a low warm amber bounce from beneath picking out the underside of the bone, and a bright cool rim tracing the translucent silhouette. The limb is fully and evenly lit along its whole visible length, every structure readable end to end. Shallow depth of field, the patellar tendon crisp. Light scatters volumetrically through the translucent tissue. Clean satin specular sheen on the patellar tendon and the bone surfaces. The near-black field carries very faint drifting particulate at depth and a subtle tonal gradient across frame. Never a flat empty black. Inside the model, the full muscle groups — quadriceps, hamstrings and calf — in natural anatomical colour: warm red, deep rose and muted brick, semi-transparent and layered so deeper structures remain visible, soft inner glow at the thinner edges, broad directional grain along each belly, never individual fibres. femur, patella and tibia sit deepest, warm ivory-gold with soft low inner luminosity. PROTECTION — THE SITE CALM. The strap is worn on the model exactly as in the attached product photos, its matte-black shell on the patellar tendon immediately below the kneecap. A soft, low, steady pale-cyan glow lies across the pad — dim, never white, never bright, never flaring — carrying the load; the tendon beneath and the whole joint are calm, no hot spot anywhere. The frame is evenly dark and settled from the start. AVOID: no text, no labels, no arrows, no diagram lines, no glow on the tibial tuberosity, no glow spreading down the shin, no skin, no clothing, no real person, no blood, no gore, no second limb, no textbook flat illustration, no white background, no white glow, no white flash, no bright white light, no overexposed area, no bloom, no hot glow on the tendon, no strap on the thigh",
+  "medias": [
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-03": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C4",
+   "P2",
+   "front",
+   "back"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA medium close-up across the desk from eye level, three-quarter front: the surgeon sits at his desk beside the plastic knee model and holds the strap up in the window light, looking at it. His face is in frame, calm. THE SAME CONSULTING ROOM exactly as in the second attached image — window on the left, the lightbox and bookshelf behind, softly out of focus.\n\nTHE SAME MAN exactly as in the attached character sheet — the orthopaedic surgeon, seventy-one, tall and slightly stooped, broad square jaw, close white hair at the sides, broad hands with long fingers — unchanged in face, age and build. Wearing a white button-down shirt under a charcoal knitted waistcoat, charcoal trousers, a clinic lanyard with a blank card.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. He holds it by the shell's bottom edge in one hand, thumb in front below the wordmark, fingers behind on the pad, the front face turned to the window. The band is a CLOSED LOOP of soft black coarse-knit elastic joined to the shell's two chrome slides, exactly as in the attached back-view product photo: when the strap is held, the loop hangs slack and soft under its own weight below the shell, bending and sagging like fabric, never stiff, never straight, never standing out flat to the sides. Its size never changes: the shell is about five to six of the holder's thumb-widths across, overhanging the pinching hand at both ends, and about as tall as the thumb is long from its tip to its base knuckle; the band is a little wider than the thumb.\n\nLight: cool daylight from the window on the left, the lightbox glowing softly behind.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no fingers on the chrome slides, no fingers across the wordmark, no hands on the band, no twisted shell, no bent shell, no strap held upright on its end, no second strap, no buckles, no velcro, no band being pulled tight, no band ends being tugged, no band tail being pulled, no fingers pulling the band through the slides, no band being threaded through a slide, no band being unthreaded, no hands working the chrome slides, no tightening motion, no loosening motion, no strap being opened, no strap being wrapped around the leg, no strap being closed, no velcro, no buckle, no band tail hanging loose, no stiff band, no band sticking straight out, no flat bar-shaped strap, no open-ended band, no band tails, no shell without its band, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "b055a260-6dde-43d3-a148-0be4da237ebe",
+    "role": "image_references"
+   },
+   {
+    "value": "c839311c-6655-4c8c-86c9-2bfdcddb3270",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-04": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "P2",
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA close-up from a low angle at the foot of the examination couch, looking up along it: a patient lies on his back on the blue couch with its white paper roll, his right leg straight, the strap seated on the knee in the foreground. The surgeon's index fingertip touches the bare skin of the patellar tendon in the small space between the lower tip of the kneecap and the strap's centre notch — pointing straight at that one spot, from above, the fingertip resting on it. THE WHOLE PATIENT IS THERE: behind the knee, softly out of focus, his thigh runs up into grey running shorts, his hips, stomach and chest in a navy T-shirt along the couch, his head on the couch's pillow at the far end; his left leg lies beside the right. The consulting room from the first attached image behind, far out of focus.\n\nThe patient is a man in his sixties, his whole body lying on the couch: navy T-shirt, grey running shorts, pale hairy legs, firm real leg muscle. The surgeon's hand: broad, long-fingered, a white shirt cuff.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. The strap is worn on the RIGHT leg ON THE PATELLAR TENDON, directly BELOW the kneecap, centred on the FRONT of the knee: the concave notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face bare above, a chrome slide at each outer side of the leg, the band running round behind the knee, snug and flat on bare skin, the wordmark horizontal and readable. Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a quarter of the leg's width at the top of the calf. Seated exactly as in the last attached worn reference. The shell is hard moulded plastic.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: cool window daylight from the left, soft.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no strap on the left knee, no second strap, no shell on the thigh, no shell on the kneecap, no shell low on the shin, no shell rotated to the side, no slide on the front of the knee, no strap over clothing, no loose band tail, no finger at the side of the knee, no finger on the strap's end, no finger on the kneecap's face, no cut-off body, no missing torso, no floating leg, no second hand, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "c839311c-6655-4c8c-86c9-2bfdcddb3270",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-06": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C4",
+   "P2",
+   "back",
+   "front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA close-up from chest height across the desk: only the surgeon's two hands and the strap in frame, held up in front of his charcoal waistcoat, the strap turned so its INSIDE faces the camera, exactly as in the first attached product photo (the back view). The consulting room behind, far out of focus.\n\nThe surgeon's hands exactly as in the attached character sheet: broad, long fingers, white shirt cuffs under a charcoal knitted waistcoat.\n\nThe whole strap exactly as in the attached back-view product photo: a CLOSED LOOP — the rigid matte-black shell at the top of the loop with its two rounded peaks and centre notch, a brushed chrome slide at each end of the shell, and the black coarse-knit elastic band running from both slides down and round in a closed loop with its two small keeper loops at the bottom. Seen from inside the loop: the inner face of the shell is the smooth matte-black pad that sits against the skin, filling the upper middle of the frame. The strap turned round so the back of the shell faces the camera: the inside of the shell, the pad that sits against the skin, fills the frame. He holds the loop open with one hand on each chrome-slide end of the shell, fingers behind the shell, thumbs on its lower edge, the band loop hanging softly below. Its size never changes: the shell is about five to six of the holder's thumb-widths across, overhanging the pinching hand at both ends, and about as tall as the thumb is long from its tip to its base knuckle; the band is a little wider than the thumb.\n\nLight: cool window daylight from the left.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no hands on the band, no twisted shell, no bent shell, no strap held upright on its end, no second strap, no buckles, no velcro, no band being pulled tight, no band ends being tugged, no band tail being pulled, no fingers pulling the band through the slides, no band being threaded through a slide, no band being unthreaded, no hands working the chrome slides, no tightening motion, no loosening motion, no strap being opened, no strap being wrapped around the leg, no strap being closed, no velcro, no buckle, no band tail hanging loose, no wordmark visible, no flat panel without a band, no shell on its own, no open-ended band, no stiff band, no band sticking straight out, no flat bar-shaped strap, no open-ended band, no band tails, no shell without its band, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "b055a260-6dde-43d3-a148-0be4da237ebe",
+    "role": "image_references"
+   },
+   {
+    "value": "c839311c-6655-4c8c-86c9-2bfdcddb3270",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-12": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C3",
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA medium-wide from a low angle beside the park path, three-quarter front: Pat walking briskly along the tarmac path past the green-painted park railings, a long stride, full figure from head to trainers, sunlit grass and trees behind. The path is clear and empty in front of her.\n\nTHE SAME WOMAN exactly as in the attached character sheet — Pat, sixty-six, sturdy and compact, strong shoulders — unchanged in face, age and build. Wearing a navy-and-cream Breton long-sleeve top, a rust quilted gilet, khaki shorts ending just above the knee, white canvas trainers. Both hands empty, swinging.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. The strap is worn on the RIGHT leg ON THE PATELLAR TENDON, directly BELOW the kneecap, centred on the FRONT of the knee: the concave notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face bare above, a chrome slide at each outer side of the leg, the band running round behind the knee, snug and flat on bare skin, the wordmark horizontal and readable. Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a quarter of the leg's width at the top of the calf. At this distance the strap reads small but clear on her right knee.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: bright sun, soft shadows under the trees.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no strap on the left knee, no second strap, no shell on the thigh, no shell on the kneecap, no shell low on the shin, no shell rotated to the side, no slide on the front of the knee, no strap over clothing, no loose band tail, no objects on the path, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "265e4775-20c1-4799-85da-7d204469c229",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-13": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C1",
+   "P0",
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA medium-wide from the hall floor beside the newel post, low three-quarter angle looking up the flight: Maureen is ON THE STAIRS, climbing, her left foot on the third step and her right foot lifting onto the fourth, her whole body on the flight, her right hand lifted clear of the mahogany handrail, not holding it. THE SAME HALL AND STAIRCASE exactly as in the second attached image: a straight single flight of carpeted stairs in beige carpet with a thin brass stair rod across the back of every tread, the dark mahogany handrail on a white panelled balustrade with a square white newel post at the bottom, the flight rising away from the hall on the LEFT of frame. Every step is clearly readable as a step.\n\nTHE SAME WOMAN exactly as in the attached character sheet — Maureen, seventy-four, soft-featured, silver hair — unchanged in face, age and build. Wearing a burgundy long-sleeve jersey tunic, a denim skirt ending a hand above the knee, sheepskin slippers.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. The strap is worn on the RIGHT leg ON THE PATELLAR TENDON, directly BELOW the kneecap, centred on the FRONT of the knee: the concave notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face bare above, a chrome slide at each outer side of the leg, the band running round behind the knee, snug and flat on bare skin, the wordmark horizontal and readable. Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a quarter of the leg's width at the top of the calf. The strap on her right knee faces the camera as she climbs.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: soft east morning daylight through the front-door glass.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no strap on the left knee, no second strap, no shell on the thigh, no shell on the kneecap, no shell low on the shin, no shell rotated to the side, no slide on the front of the knee, no strap over clothing, no loose band tail, no hand gripping the rail, no spiral stairs, no open-tread stairs, no different staircase, no ramp, no floor where the steps should be, no missing brass rods, no woman standing in the hall, no woman on the landing, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "1d353e88-0042-4021-9a6c-e7b8f93d5baa",
+    "role": "image_references"
+   },
+   {
+    "value": "8bebe73c-ca40-4bc9-8c16-c5210738431e",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-14": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C1",
+   "P0",
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA medium shot from the landing at eye level, three-quarter front: Maureen arriving at the top of the stairs carrying a full wicker laundry basket against her hip in both hands, stepping up onto the landing easily, a small contented smile — busy, getting on with her day. The top of the mahogany handrail and the stairs dropping away behind her. THE SAME HALL AND STAIRCASE exactly as in the second attached image: a straight single flight of carpeted stairs in beige carpet with a thin brass stair rod across the back of every tread, the dark mahogany handrail on a white panelled balustrade with a square white newel post at the bottom, seen from the top. Every step is clearly readable as a step.\n\nTHE SAME WOMAN exactly as in the attached character sheet — Maureen, seventy-four, soft-featured, silver hair — unchanged in face, age and build. Wearing a burgundy long-sleeve jersey tunic, a denim skirt ending a hand above the knee, sheepskin slippers.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. The strap is worn on the RIGHT leg ON THE PATELLAR TENDON, directly BELOW the kneecap, centred on the FRONT of the knee: the concave notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face bare above, a chrome slide at each outer side of the leg, the band running round behind the knee, snug and flat on bare skin, the wordmark horizontal and readable. Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a quarter of the leg's width at the top of the calf.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: soft daylight from the landing window.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no strap on the left knee, no second strap, no shell on the thigh, no shell on the kneecap, no shell low on the shin, no shell rotated to the side, no slide on the front of the knee, no strap over clothing, no loose band tail, no pained face, no hand on the knee, no hand on the rail, no spiral stairs, no open-tread stairs, no different staircase, no ramp, no floor where the steps should be, no missing brass rods, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "1d353e88-0042-4021-9a6c-e7b8f93d5baa",
+    "role": "image_references"
+   },
+   {
+    "value": "8bebe73c-ca40-4bc9-8c16-c5210738431e",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-16": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C2",
+   "P4",
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA medium close-up from low and in front: Dean sits on the rear step of the white van in the loading yard, right leg straight out in front, bending forward with both hands on the strap on his shin. THE SAME YARD AND VAN exactly as in the second attached image.\n\nTHE SAME MAN exactly as in the attached character sheet — Dean, fifty-eight, barrel-chested and heavyset, thick forearms — unchanged in face, age and build. Wearing a green-and-black check flannel shirt with the sleeves rolled, khaki cargo shorts, black steel-toe boots, a watch.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. START OF THE SEATING MOVE: the strap is already closed and formed, sitting LOW on the front of his right shin, about a hand's width below the kneecap — clearly off position, the kneecap and the tendon below it bare above it. Both hands hold the shell by its two ends, palms and fingertips flat on the matte shell, ready to slide it straight up.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: flat overcast daylight.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no product being threaded, no product being fastened, no band being opened, no band being closed, no velcro being pulled, no buckle being worked, no product being removed, no product half-on, no twisted band, no open band, no deformed shell, no stretched shell, no product changing shape, no product changing size, no hands passing through the product, no hands passing through the body, no additional hands, no second person, no two separate actions in one clip, no product travelling past the kneecap, no product climbing onto the kneecap, no shell riding up over the kneecap, no product coming to rest low on the shin, no product moving downward, no product coming down from above the kneecap, no band being pulled tight, no band ends being tugged, no fingers pulling the band through the slides, no hands gripping the band, no strap on the kneecap, no strap above the kneecap, no strap on the left leg, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "486a2651-f372-4671-9cce-b208d84b54ef",
+    "role": "image_references"
+   },
+   {
+    "value": "f37c1477-2764-4915-bc29-db7fe65d9743",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-16-END": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C2",
+   "P4",
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nThe SAME moment one second later, the same framing: a medium close-up from low and in front, Dean on the rear step of the white van, right leg straight out, bending forward. THE SAME YARD AND VAN exactly as in the second attached image.\n\nTHE SAME MAN exactly as in the attached character sheet — Dean, fifty-eight, barrel-chested and heavyset, thick forearms — unchanged in face, age and build. Wearing a green-and-black check flannel shirt with the sleeves rolled, khaki cargo shorts, black steel-toe boots, a watch.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. END OF THE SEATING MOVE: the strap has just been slid up and now sits seated ON THE PATELLAR TENDON directly below the kneecap — the concave notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face bare above, a chrome slide at each outer side of the leg, the band running round behind the knee, snug and flat on bare skin, the wordmark horizontal and readable. Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a quarter of the leg's width at the top of the calf. Both hands are just lifting away from the shell's two ends, fingertips still touching. Seated exactly as in the last attached worn reference.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: flat overcast daylight.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no strap on the left knee, no second strap, no shell on the thigh, no shell on the kneecap, no shell low on the shin, no shell rotated to the side, no slide on the front of the knee, no strap over clothing, no loose band tail, no strap on the kneecap, no strap low on the shin, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "486a2651-f372-4671-9cce-b208d84b54ef",
+    "role": "image_references"
+   },
+   {
+    "value": "f37c1477-2764-4915-bc29-db7fe65d9743",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-17": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C2",
+   "P3",
+   "front",
+   "back",
+   "worn_bent"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA medium-wide from a low three-quarter angle in the warehouse aisle: Dean mid-lift of a BIG, HEAVY cardboard box — a large double-wall box about 60cm wide and 50cm tall, taped shut, clearly heavy. Correct safe lifting: feet planted shoulder-width either side of the box, knees deeply bent in a squat, back straight and upright, chest up, the box pulled in tight against his body, both hands gripping underneath its two bottom corners, arms straight, his legs doing the work as he begins to stand. The strap on his bent right knee. THE SAME WAREHOUSE AISLE exactly as in the second attached image, racking behind.\n\nTHE SAME MAN exactly as in the attached character sheet — Dean, fifty-eight, barrel-chested and heavyset, thick forearms — unchanged in face, age and build. Wearing a green-and-black check flannel shirt with the sleeves rolled, khaki cargo shorts, black steel-toe boots.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. With the knee bent the kneecap stands out as a distinct bulge and the shell sits HIGH, pushed well up the leg and tight against it: the shell's top edge sits level with the kneecap's lower pole, the concave notch pressed firmly up into the underside of the kneecap along its whole curve, the flesh of the kneecap filling it with no gap of bare skin anywhere between them, and the two matching peaks rising either side to flank the lower half of the kneecap's sides -- up to but never past its middle and never covering any of its face. The kneecap's own face stays completely uncovered above the shell, its outline reading in full. The shell's lower body reaches only just onto the top of the shin, never down the shin. A brushed chrome slide sits at each outer margin of the leg with the black coarse-knit band running back from it. The shell never rotates with the joint -- the notch stays under the kneecap through every angle of flexion. Worn exactly as in the last attached bent reference.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: high-bay LED light, daylight from the open shutter.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no strap on the left knee, no second strap, no shell on the thigh, no shell on the kneecap, no shell low on the shin, no shell rotated to the side, no slide on the front of the knee, no strap over clothing, no loose band tail, no small box, no box held at arm's length, no rounded back, no bending at the waist, no one-handed lift, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "486a2651-f372-4671-9cce-b208d84b54ef",
+    "role": "image_references"
+   },
+   {
+    "value": "2ead204b-15b9-423d-b1c8-60e137f8df87",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "fd03b356-8aec-462d-bdeb-a7d7ee2f6406",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-19": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C2",
+   "P3",
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA medium shot at hip height, three-quarter front, framed from his chest down to his boots so the knee and strap are large and clear: Dean leaning back against the wooden workbench in the warehouse aisle, a mug of tea in his right hand at chest height, relaxed, weight on his left leg, the strap on his right knee in the middle of the frame. THE SAME WAREHOUSE AISLE exactly as in the second attached image, soft behind.\n\nTHE SAME MAN exactly as in the attached character sheet — Dean, fifty-eight, barrel-chested and heavyset, thick forearms — unchanged in face, age and build. Wearing a green-and-black check flannel shirt with the sleeves rolled, khaki cargo shorts, black steel-toe boots, a watch.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. The strap is worn on the RIGHT leg ON THE PATELLAR TENDON, directly BELOW the kneecap, centred on the FRONT of the knee: the concave notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face bare above, a chrome slide at each outer side of the leg, the band running round behind the knee, snug and flat on bare skin, the wordmark horizontal and readable. Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a quarter of the leg's width at the top of the calf. Exactly as in the last attached worn reference: the matte-black shell with its two peaks and the grey stryde wordmark, one strap on the right knee only.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: high-bay LED light, late daylight from the open shutter.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no strap on the left knee, no second strap, no shell on the thigh, no shell on the kneecap, no shell low on the shin, no shell rotated to the side, no slide on the front of the knee, no strap over clothing, no loose band tail, no knee pads, no kneepad, no padded knee guard, no knee sleeve, no strap on the left knee, no readable mug text, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "486a2651-f372-4671-9cce-b208d84b54ef",
+    "role": "image_references"
+   },
+   {
+    "value": "2ead204b-15b9-423d-b1c8-60e137f8df87",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-20": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C4",
+   "P2",
+   "back",
+   "front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA close-up across the desk from a slightly high angle over the patient's shoulder: the surgeon's hand passes the strap across the desk into the patient's open hand, both hands in frame. THE SAME CONSULTING ROOM exactly as in the second attached image behind.\n\nThe surgeon's hand exactly as in the attached character sheet, a pale pink shirt cuff and a steel watch. The patient's hand: a man in his sixties, grey long-sleeve tee cuff, palm open and cupped.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. The surgeon holds it by the shell's bottom edge, the front face and wordmark up. The band is a CLOSED LOOP of soft black coarse-knit elastic joined to the shell's two chrome slides, exactly as in the attached back-view product photo: when the strap is held, the loop hangs slack and soft under its own weight below the shell, bending and sagging like fabric, never stiff, never straight, never standing out flat to the sides. Its size never changes: the shell is about five to six of the holder's thumb-widths across, overhanging the pinching hand at both ends, and about as tall as the thumb is long from its tip to its base knuckle; the band is a little wider than the thumb.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: cool window daylight from the left.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no fingers on the chrome slides, no fingers across the wordmark, no hands on the band, no twisted shell, no bent shell, no strap held upright on its end, no second strap, no buckles, no velcro, no band being pulled tight, no band ends being tugged, no band tail being pulled, no fingers pulling the band through the slides, no band being threaded through a slide, no band being unthreaded, no hands working the chrome slides, no tightening motion, no loosening motion, no strap being opened, no strap being wrapped around the leg, no strap being closed, no velcro, no buckle, no band tail hanging loose, no stiff band, no band sticking straight out, no flat bar-shaped strap, no open-ended band, no band tails, no shell without its band, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "b055a260-6dde-43d3-a148-0be4da237ebe",
+    "role": "image_references"
+   },
+   {
+    "value": "c839311c-6655-4c8c-86c9-2bfdcddb3270",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-21": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA medium-wide from a low angle beside the park path: a small group of four older walkers in their sixties and seventies passing the green-painted park railings, walking towards the camera, chatting; the nearest walker wears the strap on his right knee. The path in front of them is clear and empty.\n\nThe nearest walker: a man in his late sixties, sage-green T-shirt, navy walking shorts ending above the knee, walking boots, a cap. The others in ordinary walking clothes. All hands empty or on backpack straps.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. The strap is worn on the RIGHT leg ON THE PATELLAR TENDON, directly BELOW the kneecap, centred on the FRONT of the knee: the concave notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face bare above, a chrome slide at each outer side of the leg, the band running round behind the knee, snug and flat on bare skin, the wordmark horizontal and readable. Only the nearest walker wears one.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: bright sun through the trees.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no strap on the left knee, no strap on the other walkers, no shell on the thigh, no shell on the kneecap, no shell low on the shin, no shell rotated to the side, no slide on the front of the knee, no strap over clothing, no loose band tail, no objects on the path, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-22": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C1",
+   "P1",
+   "package_open",
+   "front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA close-up from a slightly high angle on the kitchen table with its checked cloth: the closed matte-black box sits on the table, lid firmly on; Maureen's two hands rest flat on top of the lid, fingertips gently feeling the smooth surface — she is not opening it. THE SAME KITCHEN exactly as in the second attached image, soft behind.\n\nMaureen's hands exactly as in the attached character sheet, cornflower-blue sleeves of her cotton dress.\n\nA rigid two-piece box, a lid over a base, matte black all over, about 28 cm wide, 16 cm deep and 8 cm tall -- sized to hold two straps side by side. The lowercase grey stryde wordmark centred on the lid, in the same bold rounded lettering and the same grey as the wordmark on the shell; nothing else printed anywhere on the box. The lid is fully closed and flush all round.\n\nLight: soft indirect west window light.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no text on the box except the stryde wordmark, no offer text, no price, no badge, no sticker, no barcode, no white box, no coloured box, no glossy box, no window in the lid, no third strap, no single strap in the box, no loose strap outside the insert, no extra items in the box, no shell separate from its band, no shell resting on top of a loop of band, no strap standing upright as a stiff ring, no strap turned on its side, no open box, no lifted lid, no gap under the lid, no fingers under the lid edge, no straps visible, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "1d353e88-0042-4021-9a6c-e7b8f93d5baa",
+    "role": "image_references"
+   },
+   {
+    "value": "a45c1f15-8798-4387-9881-549f39195163",
+    "role": "image_references"
+   },
+   {
+    "value": "fc6b25cb-8d85-4d1b-83e4-abfafa55ff73",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-24": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C1",
+   "P1",
+   "package_open",
+   "front",
+   "back"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA medium close-up at chest height by the kitchen table, three-quarter front, framed from her shoulders to the table top so the strap and the box are large and clear: Maureen holds one strap up in front of her in the window light, looking at it, pleased; on the table in front of her sits the open box exactly as in the third attached image — the matte-black box, the lid with the grey stryde wordmark set beside it, the black insert with two shaped wells, one strap still lying in its well and the other well empty. THE SAME KITCHEN exactly as in the second attached image, soft behind.\n\nTHE SAME WOMAN exactly as in the attached character sheet — Maureen, seventy-four, soft-featured, silver hair — unchanged in face, age and build. Wearing a cornflower-blue cotton dress.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. She holds it by the shell's bottom edge, thumb in front below the wordmark, fingers behind on the pad, front face to the camera. The band is a CLOSED LOOP of soft black coarse-knit elastic joined to the shell's two chrome slides, exactly as in the attached back-view product photo: when the strap is held, the loop hangs slack and soft under its own weight below the shell, bending and sagging like fabric, never stiff, never straight, never standing out flat to the sides. Its size never changes: the shell is about five to six of the holder's thumb-widths across, overhanging the pinching hand at both ends, and about as tall as the thumb is long from its tip to its base knuckle; the band is a little wider than the thumb.\n\nLight: soft indirect west window light.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no fingers on the chrome slides, no fingers across the wordmark, no hands on the band, no twisted shell, no bent shell, no strap held upright on its end, no buckles, no velcro, no band being pulled tight, no band ends being tugged, no band tail being pulled, no fingers pulling the band through the slides, no band being threaded through a slide, no band being unthreaded, no hands working the chrome slides, no tightening motion, no loosening motion, no strap being opened, no strap being wrapped around the leg, no strap being closed, no velcro, no buckle, no band tail hanging loose, no stiff band, no band sticking straight out, no flat bar-shaped strap, no open-ended band, no band tails, no shell without its band, no cardboard box, no brown box, no kraft box, no white box, no box flaps, no shoebox, no loose band beside the strap in the box, no shell separate from its band, no woman far from camera, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "1d353e88-0042-4021-9a6c-e7b8f93d5baa",
+    "role": "image_references"
+   },
+   {
+    "value": "a45c1f15-8798-4387-9881-549f39195163",
+    "role": "image_references"
+   },
+   {
+    "value": "fc6b25cb-8d85-4d1b-83e4-abfafa55ff73",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-25": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C1",
+   "P0",
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA medium-wide at knee-to-waist height from the hall, a little in FRONT of her and to the side, three-quarter front: Maureen at the foot of the stairs beside the white newel post, looking up the flight, her right foot lifted onto the first carpeted step with its brass stair rod, the FRONT of her right knee turned towards the camera with the strap on it. THE SAME HALL AND STAIRCASE exactly as in the second attached image: a straight single flight of carpeted stairs in beige carpet with a thin brass stair rod across the back of every tread, the dark mahogany handrail on a white panelled balustrade with a square white newel post at the bottom, the flight rising away from the hall on the LEFT of frame. Every step is clearly readable as a step.\n\nTHE SAME WOMAN exactly as in the attached character sheet — Maureen, seventy-four, soft-featured, silver hair — unchanged in face, age and build. Wearing a cornflower-blue cotton dress ending a hand above the knee, navy slip-on shoes.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. The strap is worn on the RIGHT leg ON THE PATELLAR TENDON, directly BELOW the kneecap, centred on the FRONT of the knee: the concave notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face bare above, a chrome slide at each outer side of the leg, the band running round behind the knee, snug and flat on bare skin, the wordmark horizontal and readable. Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a quarter of the leg's width at the top of the calf. Seen from the front three-quarter: the shell and its wordmark on the FRONT of the knee, facing the camera, only the black band passing round the back, exactly as in the last attached worn reference.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: soft east morning daylight through the front-door glass.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no strap on the left knee, no second strap, no shell on the thigh, no shell on the kneecap, no shell low on the shin, no shell rotated to the side, no slide on the front of the knee, no strap over clothing, no loose band tail, no strap on the back of the knee, no shell behind the knee, no view from behind, no view from the side, no spiral stairs, no open-tread stairs, no different staircase, no ramp, no floor where the steps should be, no missing brass rods, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "1d353e88-0042-4021-9a6c-e7b8f93d5baa",
+    "role": "image_references"
+   },
+   {
+    "value": "8bebe73c-ca40-4bc9-8c16-c5210738431e",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-26a": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C1",
+   "P0",
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA medium close-up from low and in front: Maureen sits on the bottom stair of the carpeted flight, her right leg straight out, bending forward with both hands on the strap on her shin. The hall and stairs from the second attached image behind.\n\nTHE SAME WOMAN exactly as in the attached character sheet — Maureen, seventy-four, soft-featured, silver hair — unchanged in face, age and build. Wearing a cornflower-blue cotton dress ending a hand above the knee, navy slip-on shoes.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. START OF THE SEATING MOVE: the strap is already closed and formed, sitting LOW on the front of her right shin, about a hand's width below the kneecap — clearly off position, the kneecap and the tendon below it bare above it. Both hands hold the shell by its two ends, palms and fingertips flat on the matte shell, ready to slide it straight up.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: soft east morning daylight.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no product being threaded, no product being fastened, no band being opened, no band being closed, no velcro being pulled, no buckle being worked, no product being removed, no product half-on, no twisted band, no open band, no deformed shell, no stretched shell, no product changing shape, no product changing size, no hands passing through the product, no hands passing through the body, no additional hands, no second person, no two separate actions in one clip, no product travelling past the kneecap, no product climbing onto the kneecap, no shell riding up over the kneecap, no product coming to rest low on the shin, no product moving downward, no product coming down from above the kneecap, no band being pulled tight, no band ends being tugged, no fingers pulling the band through the slides, no hands gripping the band, no strap on the kneecap, no strap above the kneecap, no strap on the left leg, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "1d353e88-0042-4021-9a6c-e7b8f93d5baa",
+    "role": "image_references"
+   },
+   {
+    "value": "8bebe73c-ca40-4bc9-8c16-c5210738431e",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-26a-END": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C1",
+   "P0",
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nThe SAME moment one second later, the same framing: a medium close-up from low and in front, Maureen on the bottom stair, right leg straight out, bending forward. The hall and stairs from the second attached image behind.\n\nTHE SAME WOMAN exactly as in the attached character sheet — Maureen, seventy-four, soft-featured, silver hair — unchanged in face, age and build. Wearing a cornflower-blue cotton dress ending a hand above the knee, navy slip-on shoes.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. END OF THE SEATING MOVE: the strap has just been slid up and now sits seated ON THE PATELLAR TENDON directly below the kneecap — the concave notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face bare above, a chrome slide at each outer side of the leg, the band running round behind the knee, snug and flat on bare skin, the wordmark horizontal and readable. Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a quarter of the leg's width at the top of the calf. Both hands are just lifting away from the shell's two ends, fingertips still touching. Seated exactly as in the last attached worn reference.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: soft east morning daylight.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no strap on the left knee, no second strap, no shell on the thigh, no shell on the kneecap, no shell low on the shin, no shell rotated to the side, no slide on the front of the knee, no strap over clothing, no loose band tail, no strap on the kneecap, no strap low on the shin, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "1d353e88-0042-4021-9a6c-e7b8f93d5baa",
+    "role": "image_references"
+   },
+   {
+    "value": "8bebe73c-ca40-4bc9-8c16-c5210738431e",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ },
+ "BR-26b": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C1",
+   "P0",
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA wide shot from the landing looking straight down the whole flight, high angle: Maureen is near the BOTTOM of the stairs, on the second step, just starting to climb up towards the camera, mid-step, her right knee lifting, her hand off the rail; most of the flight of empty steps stretches between her and the camera. THE SAME HALL AND STAIRCASE exactly as in the second attached image: a straight single flight of carpeted stairs in beige carpet with a thin brass stair rod across the back of every tread, the dark mahogany handrail on a white panelled balustrade with a square white newel post at the bottom, seen from the top, the hall floor visible at the bottom. Every step is clearly readable as a step.\n\nTHE SAME WOMAN exactly as in the attached character sheet — Maureen, seventy-four, soft-featured, silver hair — unchanged in face, age and build. Wearing a cornflower-blue cotton dress ending a hand above the knee, navy slip-on shoes.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. The strap is worn on the RIGHT leg ON THE PATELLAR TENDON, directly BELOW the kneecap, centred on the FRONT of the knee: the concave notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face bare above, a chrome slide at each outer side of the leg, the band running round behind the knee, snug and flat on bare skin, the wordmark horizontal and readable. Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a quarter of the leg's width at the top of the calf.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: soft east morning daylight from the front-door glass below.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no strap on the left knee, no second strap, no shell on the thigh, no shell on the kneecap, no shell low on the shin, no shell rotated to the side, no slide on the front of the knee, no strap over clothing, no loose band tail, no hand gripping the rail, no woman near the top of the stairs, no woman on the landing, no spiral stairs, no open-tread stairs, no different staircase, no ramp, no floor where the steps should be, no missing brass rods, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "1d353e88-0042-4021-9a6c-e7b8f93d5baa",
+    "role": "image_references"
+   },
+   {
+    "value": "8bebe73c-ca40-4bc9-8c16-c5210738431e",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ }
+}

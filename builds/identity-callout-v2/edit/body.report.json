@@ -1,0 +1,528 @@
+{
+  "master_s": 77.09,
+  "min_th_s": 1.5,
+  "edl": [
+    {
+      "beat": "B01",
+      "clip": "renders/B01.mp4",
+      "phrase": "Because every step",
+      "start": 0.0,
+      "line_end": 6.4,
+      "in": 0.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "end": 1.1333
+    },
+    {
+      "beat": "B02",
+      "clip": "renders/B02.mp4",
+      "phrase": "puts seventeen times your bodyweight",
+      "start": 1.1333,
+      "line_end": 6.4,
+      "in": 0.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "end": 3.3667
+    },
+    {
+      "beat": "B03",
+      "clip": "renders/B03.mp4",
+      "phrase": "through one small spot below your kneecap.",
+      "start": 3.3667,
+      "line_end": 6.4,
+      "in": 0.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "end": 6.8333
+    },
+    {
+      "beat": "B04",
+      "clip": "renders/B04.mp4",
+      "phrase": "These straps took three years to build with orthopaedic surgeons,",
+      "start": 6.8333,
+      "line_end": 13.1667,
+      "in": 0.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "end": 11.0667
+    },
+    {
+      "beat": "B05",
+      "clip": "renders/B05.mp4",
+      "phrase": "to sit right on that spot.",
+      "start": 11.0667,
+      "line_end": 13.1667,
+      "in": 0.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "end": 13.3667
+    },
+    {
+      "beat": "B06",
+      "clip": "renders/B06.mp4",
+      "phrase": "Unlike the cheap copies, which are too small to reach it.",
+      "start": 13.3667,
+      "line_end": 16.7667,
+      "in": 0.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "end": 17.3667
+    },
+    {
+      "beat": "B07",
+      "clip": "renders/B07.mp4",
+      "phrase": "Inside, a silicone pad",
+      "start": 17.3667,
+      "line_end": 24.5667,
+      "in": 0.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "end": 19.4667
+    },
+    {
+      "beat": "B08",
+      "clip": "renders/B08.mp4",
+      "phrase": "catches the force and moves it off the worn part, before it hits the joint.",
+      "start": 19.4667,
+      "line_end": 24.5667,
+      "in": 0.0,
+      "clip_len": 6.04,
+      "speed": 1.0,
+      "end": 25.0333
+    },
+    {
+      "beat": "B09",
+      "clip": "renders/B09.mp4",
+      "phrase": "Sports scientists measured it.",
+      "start": 25.0333,
+      "line_end": 27.1333,
+      "in": 0.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "end": 27.1333
+    },
+    {
+      "beat": "B10",
+      "clip": "renders/B10.mp4",
+      "phrase": "Thirty-four percent less strain, every step.",
+      "start": 27.1333,
+      "line_end": 30.9667,
+      "in": 0.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "end": 31.4
+    },
+    {
+      "beat": "B11",
+      "clip": "renders/B11.mp4",
+      "phrase": "Built for bone on bone, arthritis,",
+      "start": 31.4,
+      "line_end": 37.3,
+      "in": 0.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "end": 35.0667
+    },
+    {
+      "beat": "B12",
+      "clip": "renders/B12.mp4",
+      "phrase": "worn cartilage and meniscus.",
+      "start": 35.0667,
+      "line_end": 37.3,
+      "in": 0.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "end": 37.7
+    },
+    {
+      "beat": "B13",
+      "clip": "renders/B13.mp4",
+      "phrase": "So you walk further,",
+      "start": 37.7,
+      "line_end": 41.6333,
+      "in": 0.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "end": 38.8333
+    },
+    {
+      "beat": "B14",
+      "clip": "renders/B14.mp4",
+      "phrase": "and take the stairs without gripping the rail.",
+      "start": 38.8333,
+      "line_end": 41.6333,
+      "in": 0.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "end": 42.0333
+    },
+    {
+      "beat": "B15",
+      "clip": "renders/B15.mp4",
+      "phrase": "Not because the arthritis has gone.",
+      "start": 42.0333,
+      "line_end": 43.9333,
+      "in": 0.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "end": 44.5333
+    },
+    {
+      "beat": "B16",
+      "clip": "renders/B16.mp4",
+      "phrase": "Because the force isn't landing where it hurts.",
+      "start": 44.5333,
+      "line_end": 47.4667,
+      "in": 0.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "end": 48.3667
+    },
+    {
+      "beat": "B17",
+      "clip": "renders/B17.mp4",
+      "phrase": "Adjustable.",
+      "start": 48.3667,
+      "line_end": 49.0,
+      "in": 0.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "end": 49.3333
+    },
+    {
+      "beat": "B18",
+      "clip": "renders/B18.mp4",
+      "phrase": "No slipping. No sores. No rolling down.",
+      "start": 49.3333,
+      "line_end": 52.3333,
+      "in": 0.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "end": 53.0333
+    },
+    {
+      "beat": "B19",
+      "clip": "renders/B19.mp4",
+      "phrase": "It sits flat under your trousers, light enough to wear all day.",
+      "start": 53.0333,
+      "line_end": 57.3333,
+      "in": 0.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "end": 57.8667
+    },
+    {
+      "beat": "B20",
+      "clip": "renders/B20.mp4",
+      "phrase": "Recommended by orthopaedic surgeons,",
+      "start": 57.8667,
+      "line_end": 63.7333,
+      "in": 0.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "end": 59.7
+    },
+    {
+      "beat": "B21",
+      "clip": "renders/B21.mp4",
+      "phrase": "and worn by over two hundred thousand people.",
+      "start": 59.7,
+      "line_end": 63.7333,
+      "in": 0.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "end": 64.3667
+    },
+    {
+      "beat": "B22",
+      "clip": "renders/B22.mp4",
+      "phrase": "And the best part? It's two for the price of one today.",
+      "start": 64.3667,
+      "line_end": 67.9333,
+      "in": 0.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "end": 68.7333
+    },
+    {
+      "beat": "B23",
+      "clip": "renders/B23.mp4",
+      "phrase": "You get sixty days.",
+      "start": 68.7333,
+      "line_end": 69.8333,
+      "in": 0.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "end": 70.3667
+    },
+    {
+      "beat": "B24",
+      "clip": "renders/B24.mp4",
+      "phrase": "If it doesn't change your stairs, you get your money back.",
+      "start": 70.3667,
+      "line_end": 73.3667,
+      "in": 0.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "end": 73.9
+    },
+    {
+      "beat": "B25",
+      "clip": "renders/B25.mp4",
+      "phrase": "Put one on,",
+      "start": 73.9,
+      "line_end": 76.9333,
+      "in": 0.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "end": 75.4667
+    },
+    {
+      "beat": "B26",
+      "clip": "renders/B26.mp4",
+      "phrase": "stairs will tell you.",
+      "start": 75.4667,
+      "line_end": 76.9333,
+      "in": 0.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "end": 77.1
+    }
+  ],
+  "timeline": [
+    {
+      "kind": "BR",
+      "beat": "B01",
+      "start": 0.0,
+      "end": 1.133
+    },
+    {
+      "kind": "BR",
+      "beat": "B02",
+      "start": 1.133,
+      "end": 3.367
+    },
+    {
+      "kind": "BR",
+      "beat": "B03",
+      "start": 3.367,
+      "end": 6.833
+    },
+    {
+      "kind": "BR",
+      "beat": "B04",
+      "start": 6.833,
+      "end": 11.067
+    },
+    {
+      "kind": "BR",
+      "beat": "B05",
+      "start": 11.067,
+      "end": 13.367
+    },
+    {
+      "kind": "BR",
+      "beat": "B06",
+      "start": 13.367,
+      "end": 17.367
+    },
+    {
+      "kind": "BR",
+      "beat": "B07",
+      "start": 17.367,
+      "end": 19.467
+    },
+    {
+      "kind": "BR",
+      "beat": "B08",
+      "start": 19.467,
+      "end": 25.033
+    },
+    {
+      "kind": "BR",
+      "beat": "B09",
+      "start": 25.033,
+      "end": 27.133
+    },
+    {
+      "kind": "BR",
+      "beat": "B10",
+      "start": 27.133,
+      "end": 31.4
+    },
+    {
+      "kind": "BR",
+      "beat": "B11",
+      "start": 31.4,
+      "end": 35.067
+    },
+    {
+      "kind": "BR",
+      "beat": "B12",
+      "start": 35.067,
+      "end": 37.7
+    },
+    {
+      "kind": "BR",
+      "beat": "B13",
+      "start": 37.7,
+      "end": 38.833
+    },
+    {
+      "kind": "BR",
+      "beat": "B14",
+      "start": 38.833,
+      "end": 42.033
+    },
+    {
+      "kind": "BR",
+      "beat": "B15",
+      "start": 42.033,
+      "end": 44.533
+    },
+    {
+      "kind": "BR",
+      "beat": "B16",
+      "start": 44.533,
+      "end": 48.367
+    },
+    {
+      "kind": "BR",
+      "beat": "B17",
+      "start": 48.367,
+      "end": 49.333
+    },
+    {
+      "kind": "BR",
+      "beat": "B18",
+      "start": 49.333,
+      "end": 53.033
+    },
+    {
+      "kind": "BR",
+      "beat": "B19",
+      "start": 53.033,
+      "end": 57.867
+    },
+    {
+      "kind": "BR",
+      "beat": "B20",
+      "start": 57.867,
+      "end": 59.7
+    },
+    {
+      "kind": "BR",
+      "beat": "B21",
+      "start": 59.7,
+      "end": 64.367
+    },
+    {
+      "kind": "BR",
+      "beat": "B22",
+      "start": 64.367,
+      "end": 68.733
+    },
+    {
+      "kind": "BR",
+      "beat": "B23",
+      "start": 68.733,
+      "end": 70.367
+    },
+    {
+      "kind": "BR",
+      "beat": "B24",
+      "start": 70.367,
+      "end": 73.9
+    },
+    {
+      "kind": "BR",
+      "beat": "B25",
+      "start": 73.9,
+      "end": 75.467
+    },
+    {
+      "kind": "BR",
+      "beat": "B26",
+      "start": 75.467,
+      "end": 77.1
+    }
+  ],
+  "fixes": [
+    {
+      "beat": "B03",
+      "fix": "HOLE: extended with own footage to 6.83s"
+    },
+    {
+      "beat": "B05",
+      "fix": "HOLE: extended with own footage to 13.37s"
+    },
+    {
+      "beat": "B06",
+      "fix": "HOLE: extended with own footage to 17.37s"
+    },
+    {
+      "beat": "B08",
+      "fix": "HOLE: extended with own footage to 25.03s"
+    },
+    {
+      "beat": "B10",
+      "fix": "HOLE: extended with own footage to 31.40s"
+    },
+    {
+      "beat": "B12",
+      "fix": "HOLE: extended with own footage to 37.70s"
+    },
+    {
+      "beat": "B14",
+      "fix": "HOLE: extended with own footage to 42.03s"
+    },
+    {
+      "beat": "B15",
+      "fix": "HOLE: extended with own footage to 44.53s"
+    },
+    {
+      "beat": "B16",
+      "fix": "HOLE: extended with own footage to 48.37s"
+    },
+    {
+      "beat": "B17",
+      "fix": "HOLE: extended with own footage to 49.33s"
+    },
+    {
+      "beat": "B18",
+      "fix": "HOLE: extended with own footage to 53.03s"
+    },
+    {
+      "beat": "B19",
+      "fix": "HOLE: extended with own footage to 57.87s"
+    },
+    {
+      "beat": "B21",
+      "fix": "HOLE: extended with own footage to 64.37s"
+    },
+    {
+      "beat": "B22",
+      "fix": "HOLE: extended with own footage to 68.73s"
+    },
+    {
+      "beat": "B23",
+      "fix": "HOLE: extended with own footage to 70.37s"
+    },
+    {
+      "beat": "B24",
+      "fix": "HOLE: extended with own footage to 73.90s"
+    },
+    {
+      "beat": "B26",
+      "fix": "HOLE: extended with own footage to 77.09s"
+    }
+  ],
+  "failures": [],
+  "render": {
+    "file": "edit/body.mp4",
+    "duration_s": 77.05,
+    "duration_matches_master": true,
+    "black_frames": []
+  },
+  "status": "PASS"
+}

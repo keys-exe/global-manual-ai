@@ -1,0 +1,1162 @@
+[
+ {
+  "beat": "HK1-B1",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "C1",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "low on the stairs: the weight coming down onto the knee",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "hook: the problem made visible",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK1-B2",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "N-hands",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "hands at work: this is his trade",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "hook: the problem made visible",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK1-B3",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "C1",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "through",
+  "why": "seen from where he stands: watching her come down",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "background",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "back",
+   "time": "afternoon",
+   "arc": "hook: the problem made visible",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  }
+ },
+ {
+  "beat": "HK2-B1",
+  "group": "Hook 2",
+  "type": "BR",
+  "subject": "N-hands",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high from the landing: the top of the stairs",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "hook: the problem made visible",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK2-B2",
+  "group": "Hook 2",
+  "type": "BR",
+  "subject": "none",
+  "height": "ground",
+  "side": "front",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "from the floor up the whole flight: the length of it",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "back",
+   "time": "afternoon",
+   "arc": "hook: the problem made visible",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  }
+ },
+ {
+  "beat": "HK2-B3",
+  "group": "Hook 2",
+  "type": "BR",
+  "subject": "N",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "profile: distance, the call he doesn't want",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": true,
+  "light": {
+   "source": "N's van: overcast daylight through the open sliding side door",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "hook: the problem made visible",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK3-B1",
+  "group": "Hook 3",
+  "type": "BR",
+  "subject": "none",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "the room from its doorway: what the house has become",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "face": false,
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "hook: after the cascade",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK3-B2",
+  "group": "Hook 3",
+  "type": "BR",
+  "subject": "C1",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high: small, worn down",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "face": false,
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "hook: after the cascade",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK3-B3",
+  "group": "Hook 3",
+  "type": "BR",
+  "subject": "none",
+  "height": "ground",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "floor level: the small things left at the stairs",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "back",
+   "time": "afternoon",
+   "arc": "hook: after the cascade",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  }
+ },
+ {
+  "beat": "A1-B1",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "C1",
+  "height": "low",
+  "side": "three-quarter-back",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "low behind her: the climb ahead",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "Act 1: ordinary morning light, the problem starting",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A1-B2",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "C1",
+  "height": "ground",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "ground level: the feet, step by step",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "Act 1: ordinary morning light, the problem starting",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A1-B3",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "C1",
+  "height": "high",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high: small, both knees now",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Act 1: ordinary morning light, the problem starting",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A1-B4",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "C1",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high from the landing: the drop below her",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "back",
+   "time": "afternoon",
+   "arc": "Act 1: afternoon, the rails arrive",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  }
+ },
+ {
+  "beat": "A1-B5",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "C1",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low from the hall: both rails, both hands",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "background",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "back",
+   "time": "afternoon",
+   "arc": "Act 1: afternoon, the rails arrive",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  }
+ },
+ {
+  "beat": "A1-B6",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter-back",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "over her shoulder: the stairs she won't climb",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "background",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "Act 1: afternoon, the rails arrive",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A1-B7",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "the front room, eye level: this is where she lives now",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "face": false,
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 1: the end of the cascade",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A2-M1",
+  "group": "Act 2",
+  "type": "MECH",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "anatomy profile: where the load lands",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": false,
+  "light": {
+   "source": "\u00a712A anatomical register (ANAT-LIGHT)",
+   "key_side": "L",
+   "time": "n/a",
+   "arc": "Act 2: mechanism register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A2-M2",
+  "group": "Act 2",
+  "type": "MECH",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "front anatomy: the band itself",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": false,
+  "light": {
+   "source": "\u00a712A anatomical register (ANAT-LIGHT)",
+   "key_side": "L",
+   "time": "n/a",
+   "arc": "Act 2: mechanism register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A2-B1",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "C2",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low and close on the landing knee",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "face": false,
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "Act 2: plain morning, explanation",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A2-M3",
+  "group": "Act 2",
+  "type": "MECH",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "profile",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "anatomy close: the strain",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": false,
+  "light": {
+   "source": "\u00a712A anatomical register (ANAT-LIGHT)",
+   "key_side": "L",
+   "time": "n/a",
+   "arc": "Act 2: mechanism register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A2-B2",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "C2",
+  "height": "high",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "looking down at his knee as he does: his point of view",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "face": false,
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Act 2: plain morning, explanation",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A2-B3",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "C2",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low from the hall: the descent",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "background",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "face": false,
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "Act 2: plain morning, explanation",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  }
+ },
+ {
+  "beat": "A2-M4",
+  "group": "Act 2",
+  "type": "MECH",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "anatomy profile: the catch",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": false,
+  "light": {
+   "source": "\u00a712A anatomical register (ANAT-LIGHT)",
+   "key_side": "L",
+   "time": "n/a",
+   "arc": "Act 2: mechanism register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A3-B1",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "C1",
+  "height": "high",
+  "side": "profile",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "high: small on the floor",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "face": false,
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 3: flat afternoon, things that don't work",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A3-B2",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "C1",
+  "height": "high",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "close, looking down: the gel on the surface",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "face": false,
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 3: flat afternoon, things that don't work",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A3-B3",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "C1",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead: routine, every day",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "face": false,
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 3: flat afternoon, things that don't work",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A3-B4",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "close and level: the sleeve covering everything",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "face": false,
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 3: flat afternoon, things that don't work",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A4-P1",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "N-hands",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "close and level: the reveal",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": false,
+  "light": {
+   "source": "N's van: overcast daylight through the open sliding side door",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 4: overcast daylight, the answer",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A4-B1",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "C2",
+  "height": "low",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low and close on the knee: exactly where it sits",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "face": false,
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Act 4: morning, the answer",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A4-P2",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "product",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "close, looking in: the pad",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": false,
+  "light": {
+   "source": "N's workshop: small side window, camera-left of the TH position (south)",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "Act 4: the answer",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A4-M1",
+  "group": "Act 4",
+  "type": "MECH",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "anatomy profile: the load caught",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": false,
+  "light": {
+   "source": "\u00a712A anatomical register (ANAT-LIGHT)",
+   "key_side": "L",
+   "time": "n/a",
+   "arc": "Act 2: mechanism register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A4-B2",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "C2",
+  "height": "high",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "looking down: the spot",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "face": false,
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Act 4: morning, the answer",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A4-P3",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "product",
+  "height": "high",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high on the bench: the pair",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": false,
+  "light": {
+   "source": "N's workshop: small side window, camera-left of the TH position (south)",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "Act 4: the answer",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A5-B1",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter-back",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "over his shoulder: his own van",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": false,
+  "light": {
+   "source": "N's van: overcast daylight through the open sliding side door",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 5: overcast daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A5-B2",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "C2",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low from the hall: easy now",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "background",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "face": false,
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "Act 5: morning, relief",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  }
+ },
+ {
+  "beat": "A5-B3",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "C2",
+  "height": "high",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high from the landing: one strapped, one bare",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "face": false,
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "Act 5: morning, relief",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  }
+ },
+ {
+  "beat": "A5-B4",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "C2",
+  "height": "eye",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "level, facing him: forwards, no rail",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "face": true,
+  "light": {
+   "source": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "Act 5: morning, relief",
+   "why": "the only window is at the stairhead behind the subject; face small and not speaking"
+  }
+ },
+ {
+  "beat": "A5-P1",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "product",
+  "height": "overhead",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "overhead: the box opening",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 0,
+  "face": false,
+  "light": {
+   "source": "N's workshop: small side window, camera-left of the TH position (south)",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "Act 5: the offer",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A5-F1",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "close and level: the copy failing",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "face": false,
+  "light": {
+   "source": "C1's front room: bay window on the far wall (west, street)",
+   "key_side": "front",
+   "time": "afternoon",
+   "arc": "Act 5: the offer",
+   "why": ""
+  }
+ },
+ {
+  "beat": "A5-B5",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter-back",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "behind her, level: someone you know",
+  "mirror_of": "A1-B1",
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "background",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "face": false,
+  "light": {
+   "source": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "Act 5: afternoon, the ask",
+   "why": ""
+  }
+ }
+]

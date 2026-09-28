@@ -1,0 +1,11 @@
+{
+  "taskId": "86e027fc325ff42300c59225dcecaa84",
+  "state": "success",
+  "credits": 90.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/86e027fc325ff42300c59225dcecaa84_1_1790614239_8480.mp4"
+  ],
+  "saved": "renders/fix/A4-M1_vid_v2.mp4",
+  "model": "kling-3.0/video"
+}

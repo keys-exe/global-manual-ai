@@ -1,0 +1,37 @@
+{
+ "beat": "SC01-INS01",
+ "connector": "seedance",
+ "mode": 4,
+ "kind": "insert",
+ "prompt": "INGREDIENTS. @image1 is the opening composition: the clip opens on exactly this framing, light and camera position, and nothing in it is re-composed. @image2 is this scene: the scene master, and it sets the room, the light side, the blocking and every prop's position. @image3 is Paula: face, age, hair and build only, with the wardrobe taken from the scene frames and never from this face reference. These references set what things ARE; the prose below sets what HAPPENS, and nothing in them is a shot to cut to. The look exactly as in the start frame: same lens, same depth of field, same colours, same light direction and same optical texture. Nothing about the look changes across the clip. 24 frames per second with a 180-degree shutter, so moving hands and objects carry natural motion blur. INSERT. The clip opens on Paula's hands already holding the tipped folder. Her right thumb slides slowly across the white VISITOR badge on the folder's corner, once, and comes to rest on the red band. Nothing else moves. No one speaks in this clip. Camera on a tripod, framed and locked, with no drift, no sway and no reframe. The only camera life is one small operator pan or tilt of a few degrees to keep the subject in frame as they shift. It arrives a beat late and corrects only part of the way. The subject and the room carry all the other movement. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly \u2014 motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.  PAULA still carries exactly what this scene has done to her so far: eyes dry, hair in its low bun with the loose wisps at the temples, blazer open, the buff manila folder held against her waist in both hands with the white VISITOR badge clipped to its top corner, standing a step out from the meeting-room glass facing Robin. None of it resets: it is the same as in the previous shot, except her eyes have dropped to the folder and she has tipped it toward her. It holds in every frame. FOCUS: the hands and the badge they hold is in sharp focus; the room behind falls to a soft, recognisable shape. The blur is optical: soft and round, never smeared. NEGATIVES: no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no phone camera look, no smartphone processing, no HDR tone-mapping, no flat lifted shadows, no over-sharpening halos, no selfie framing, no front-camera distortion, no handheld phone jitter, no digital video look, no CGI look, no plastic skin, no beauty retouch, no diffusion filter glow on skin, no soft-focus beauty lighting, no flat frontal key, no unmotivated light, no applied vignette oval, no letterbox bars, no generated film grain, no slow motion, no speed ramp, no stock footage look, no commercial gloss, no perfect symmetrical face, no actor looking into the lens, no light direction changing within the scene, no colour changing between shots, no graded look, no wardrobe changing within the scene, no prop moving between shots unless shown moving, no character changing position between shots, no camera crossing the action line, no eyeline pointing the wrong way, no time of day changing within the scene, no different room, no extra people, no missing people, no tears, redness or sweat appearing or vanishing between shots, no hair or clothing state resetting between shots, no prop jumping to the other hand, no theatrical acting, no mugging, no soap-opera reactions, no exaggerated crying, no streaming tears, no glycerin tears, no frozen listener, no blank face while being spoken to, no reaction arriving before the line that causes it, no emotion resetting between shots, no two characters speaking at once unless the script overlaps them, no speech directed at the camera, no performing to the lens, no expression held for effect, no nodding along while speaking, no constant half-smile, no eyebrows rising on every stressed word, no hand gesture on every phrase, no head tilt on every line, no voice steadier or brighter than the face, no voice resetting between lines, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject, no speech, no mouth, no face in frame",
+ "duration": 4,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": "F-INS-BADGE",
+ "start_approved": true,
+ "pinned": false,
+ "files": [
+  "frame",
+  "master",
+  "faces"
+ ],
+ "audios": [],
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "Extra hand/finger appears",
+   "prevented_by": "Frame edited to two hands; HOLD-HC five fingers"
+  },
+  {
+   "risk": "Badge text re-writes itself",
+   "prevented_by": "HOLD-C; one thumb move only"
+  },
+  {
+   "risk": "Face or speech appears",
+   "prevented_by": "no face, no speech negatives; generate_audio audio discarded"
+  }
+ ]
+}

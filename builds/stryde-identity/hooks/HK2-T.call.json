@@ -1,0 +1,33 @@
+{
+ "beat": "HK2-T",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "The man holds the strap out towards the camera in his gloved hands and slowly turns it round to show the back of it. One smooth, slow turn; the two peaks point up the whole time. The shell is rigid and never bends. The phone is held still. No text, no music.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "HK2-T_v1.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "subject_motion": "in_place",
+ "pace": "unhurried",
+ "risks": [
+  {
+   "risk": "shell bends, curls or flips",
+   "prevented_by": "rigid shell clause; one slow action"
+  },
+  {
+   "risk": "hands/legs distort from over-specified motion",
+   "prevented_by": "one plain action at a named easy pace (user: simple text prompts)"
+  },
+  {
+   "risk": "camera drift warps the frame",
+   "prevented_by": "phone held still / steady"
+  }
+ ]
+}

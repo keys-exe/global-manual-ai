@@ -1,0 +1,50 @@
+{
+  "positive_global_styles": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif",
+    "tense suspenseful underscore",
+    "low sustained cello drone",
+    "uneasy slow pulse",
+    "instrumental",
+    "slow tempo"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "Station stairs",
+      "positive_local_styles": [
+        "tense low cello drone",
+        "restless slow piano pulse",
+        "busy unease"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 10233,
+      "lines": []
+    },
+    {
+      "section_name": "Hold before the story",
+      "positive_local_styles": [
+        "sustained low piano note",
+        "fading, unresolved"
+      ],
+      "negative_local_styles": [
+        "strings swell"
+      ],
+      "duration_ms": 7234,
+      "lines": []
+    }
+  ]
+}

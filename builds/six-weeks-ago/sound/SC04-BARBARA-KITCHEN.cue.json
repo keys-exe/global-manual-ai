@@ -1,0 +1,71 @@
+{
+  "scene": "SC04-BARBARA-KITCHEN",
+  "story_part": "Before the turn",
+  "length_s": 183.467,
+  "theme": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif"
+  ],
+  "avoid": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals"
+  ],
+  "tempo": "slow",
+  "sections": [
+    {
+      "name": "Doubt",
+      "start": 0.0,
+      "end": 68.133,
+      "energy": "low",
+      "styles": [
+        "light curious piano",
+        "soft and warm but hesitant",
+        "conversational, unobtrusive"
+      ]
+    },
+    {
+      "name": "The tendon",
+      "start": 68.133,
+      "end": 134.833,
+      "energy": "mid",
+      "styles": [
+        "curious pizzicato strings",
+        "piano motif returns",
+        "a quiet sense of discovery and hope building"
+      ]
+    },
+    {
+      "name": "Nothing to slip",
+      "start": 134.833,
+      "end": 163.8,
+      "energy": "mid",
+      "styles": [
+        "steady reassuring piano and strings",
+        "warm, grounded, confident"
+      ]
+    },
+    {
+      "name": "Hopes up",
+      "start": 163.8,
+      "end": 183.467,
+      "energy": "low",
+      "styles": [
+        "fragile solo piano",
+        "vulnerable, hesitant",
+        "holding back"
+      ],
+      "avoid": [
+        "strings swell"
+      ]
+    }
+  ],
+  "timeline_at_HK1_s": 138.0333
+}

@@ -1,0 +1,51 @@
+{
+  "scene": "SC10-CALL-JOAN",
+  "story_part": "Offer & Close",
+  "length_s": 40.853,
+  "theme": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif"
+  ],
+  "avoid": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals"
+  ],
+  "tempo": "moderate",
+  "sections": [
+    {
+      "name": "Joan, it's me",
+      "start": 0.0,
+      "end": 4.567,
+      "energy": "low",
+      "styles": [
+        "warm soft piano",
+        "friendly, intimate"
+      ]
+    },
+    {
+      "name": "Walking up my stairs",
+      "start": 4.567,
+      "end": 40.853,
+      "energy": "mid",
+      "mix_gain_db": 2,
+      "styles": [
+        "the full theme, warm and steady",
+        "piano motif with string quartet",
+        "hopeful, confident, uplifting"
+      ],
+      "avoid": [
+        "percussion"
+      ]
+    }
+  ],
+  "timeline_at_HK1_s": 529.6667,
+  "scene_gain_db": 1
+}

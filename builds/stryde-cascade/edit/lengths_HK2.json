@@ -1,0 +1,280 @@
+{
+  "master_s": 122.17,
+  "lead_s": 0.1,
+  "skip_s": 0.4,
+  "lengths": [
+    {
+      "beat": "HK2-B1",
+      "cut_s": 3.9583,
+      "anchor": "top",
+      "on_screen_s": 1.63,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "HK2-B2",
+      "cut_s": 5.5833,
+      "anchor": "whole",
+      "on_screen_s": 1.58,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "HK2-B3",
+      "cut_s": 7.1667,
+      "anchor": "called",
+      "on_screen_s": 1.17,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A1-B1",
+      "cut_s": 11.4583,
+      "anchor": "hurting",
+      "on_screen_s": 2.12,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "A1-B2",
+      "cut_s": 13.5833,
+      "anchor": "lead",
+      "on_screen_s": 1.71,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A1-B3",
+      "cut_s": 17.9583,
+      "anchor": "starts",
+      "on_screen_s": 1.46,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A1-B4",
+      "cut_s": 19.4167,
+      "anchor": "top.",
+      "on_screen_s": 1.12,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A1-B5",
+      "cut_s": 20.5417,
+      "anchor": "down.",
+      "on_screen_s": 1.5,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A1-B6",
+      "cut_s": 22.0417,
+      "anchor": "afternoon.",
+      "on_screen_s": 0.88,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A1-B7",
+      "cut_s": 22.9167,
+      "anchor": "bed",
+      "on_screen_s": 0.79,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A2-M1",
+      "cut_s": 27.7917,
+      "anchor": "weight",
+      "on_screen_s": 1.25,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A2-M2",
+      "cut_s": 31.1667,
+      "anchor": "band",
+      "on_screen_s": 3.04,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "A2-B1",
+      "cut_s": 34.2083,
+      "anchor": "lands",
+      "on_screen_s": 0.79,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A2-M3",
+      "cut_s": 35.0,
+      "anchor": "Seventeen",
+      "on_screen_s": 1.62,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A2-B2",
+      "cut_s": 36.625,
+      "anchor": "finger",
+      "on_screen_s": 1.96,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A2-B3",
+      "cut_s": 38.5833,
+      "anchor": "Coming",
+      "on_screen_s": 1.58,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A2-M4",
+      "cut_s": 44.0417,
+      "anchor": "catch",
+      "on_screen_s": 1.25,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A3-B1",
+      "cut_s": 54.3333,
+      "anchor": "physio",
+      "on_screen_s": 1.71,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A3-B2",
+      "cut_s": 56.0417,
+      "anchor": "gel",
+      "on_screen_s": 1.42,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A3-B3",
+      "cut_s": 57.4583,
+      "anchor": "pills",
+      "on_screen_s": 1.5,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A3-B4",
+      "cut_s": 58.9583,
+      "anchor": "sleeve",
+      "on_screen_s": 3.25,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "A4-P1",
+      "cut_s": 68.2083,
+      "anchor": "van",
+      "on_screen_s": 2.42,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "A4-B1",
+      "cut_s": 70.625,
+      "anchor": "below",
+      "on_screen_s": 1.38,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A4-P2",
+      "cut_s": 73.9167,
+      "anchor": "pad",
+      "on_screen_s": 4.79,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "A4-M1",
+      "cut_s": 78.7083,
+      "anchor": "caught",
+      "on_screen_s": 2.79,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "A4-B2",
+      "cut_s": 81.5,
+      "anchor": "placement",
+      "on_screen_s": 1.21,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A4-P3",
+      "cut_s": 84.5417,
+      "anchor": "Thirty",
+      "on_screen_s": 1.42,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A5-B1",
+      "cut_s": 92.0,
+      "anchor": "couple",
+      "on_screen_s": 2.17,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "A5-B2",
+      "cut_s": 100.875,
+      "anchor": "weight",
+      "on_screen_s": 3.42,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "A5-B3",
+      "cut_s": 104.2917,
+      "anchor": "One",
+      "on_screen_s": 2.92,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "A5-B4",
+      "cut_s": 107.2083,
+      "anchor": "down",
+      "on_screen_s": 1.88,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A5-P1",
+      "cut_s": 109.0833,
+      "anchor": "Two",
+      "on_screen_s": 2.08,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A5-F1",
+      "cut_s": 115.1667,
+      "anchor": "stretched",
+      "on_screen_s": 2.71,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "A5-B5",
+      "cut_s": 117.875,
+      "anchor": "stairs",
+      "on_screen_s": 2.54,
+      "skip_s": 0.4,
+      "call_s": 4
+    }
+  ],
+  "failures": []
+}

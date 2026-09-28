@@ -1,0 +1,14 @@
+# Media stays out of git (board + Drive hold it)
+cast/
+voice/
+qa/
+edit/*.mkv
+edit/*.mp4
+edit/parts/
+edit/parts_raw/
+edit/parts_music/
+sound/*.wav
+sound/*.mp3
+sound/*.mp4
+edit/parts_film/
+edit/*.mkv

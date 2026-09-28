@@ -1,0 +1,31 @@
+{
+ "beat": "MECH-01",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "The knee takes a step's weight: the load arrives from above and the small glow on the tendon just below the kneecap brightens once, then holds. Slow, steady camera drift. Stylised 3D anatomy render, slow and smooth. The anatomy keeps its exact form; nothing melts or changes shape. No text, no labels, no music.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "MECH-01 confirmed image",
+ "start_approved": true,
+ "pinned": false,
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "subject_motion": "still",
+ "pace": "unhurried",
+ "risks": [
+  {
+   "risk": "anatomy melts or morphs",
+   "prevented_by": "slow motion, 'keeps its exact form'"
+  },
+  {
+   "risk": "text or labels appear",
+   "prevented_by": "'no text, no labels'"
+  },
+  {
+   "risk": "camera move too fast warps the render",
+   "prevented_by": "slow steady drift/push only"
+  }
+ ]
+}

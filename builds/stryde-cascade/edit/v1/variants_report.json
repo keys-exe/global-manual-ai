@@ -1,0 +1,273 @@
+{
+  "status": "FAIL",
+  "variants": [
+    {
+      "hook": "HK1",
+      "file": "edit/STRYDE-CASCADE_HK1.mp4",
+      "status": "PASS",
+      "hook_s": 9.75,
+      "body_s": 113.71,
+      "duration_s": 123.44,
+      "expected_s": 123.46,
+      "fixes": [
+        {
+          "beat": "HK1-B1",
+          "fix": "FLICKER 0.17s: extended with own footage to 3.58s"
+        },
+        {
+          "beat": "A1-B1",
+          "fix": "FLICKER 1.12s: extended with own footage to 14.88s"
+        },
+        {
+          "beat": "A1-B3",
+          "fix": "FLICKER 0.21s: extended with own footage to 20.17s"
+        },
+        {
+          "beat": "A1-B4",
+          "fix": "FLICKER 0.04s: extended with own footage to 21.08s"
+        },
+        {
+          "beat": "A1-B5",
+          "fix": "FLICKER 0.12s: extended with own footage to 22.33s"
+        },
+        {
+          "beat": "A1-B6",
+          "fix": "FLICKER 0.46s: extended with own footage to 24.12s"
+        },
+        {
+          "beat": "A2-M2",
+          "fix": "FLICKER 0.12s: extended with own footage to 34.62s"
+        },
+        {
+          "beat": "A2-M3",
+          "fix": "FLICKER 0.08s: extended with own footage to 37.92s"
+        },
+        {
+          "beat": "A2-B2",
+          "fix": "FLICKER 1.00s: extended with own footage to 39.88s"
+        },
+        {
+          "beat": "A3-B1",
+          "fix": "FLICKER 0.12s: extended with own footage to 57.33s"
+        },
+        {
+          "beat": "A3-B2",
+          "fix": "FLICKER 0.25s: extended with own footage to 58.75s"
+        },
+        {
+          "beat": "A3-B3",
+          "fix": "FLICKER 0.04s: extended with own footage to 60.25s"
+        },
+        {
+          "beat": "A4-P1",
+          "fix": "FLICKER 1.04s: extended with own footage to 71.92s"
+        },
+        {
+          "beat": "A4-P2",
+          "fix": "FLICKER 0.54s: extended with own footage to 80.00s"
+        },
+        {
+          "beat": "A4-M1",
+          "fix": "FLICKER 0.08s: extended with own footage to 82.79s"
+        },
+        {
+          "beat": "A5-B2",
+          "fix": "FLICKER 1.17s: extended with own footage to 105.58s"
+        },
+        {
+          "beat": "A5-B3",
+          "fix": "FLICKER 1.00s: extended with own footage to 108.50s"
+        },
+        {
+          "beat": "A5-B4",
+          "fix": "FLICKER 1.25s: extended with own footage to 110.38s"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "FLICKER 1.04s: extended with own footage to 119.17s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    },
+    {
+      "hook": "HK2",
+      "file": "edit/STRYDE-CASCADE_HK2.mp4",
+      "status": "PASS",
+      "hook_s": 8.458,
+      "body_s": 113.71,
+      "duration_s": 122.18,
+      "expected_s": 122.168,
+      "fixes": [
+        {
+          "beat": "HK2-B1",
+          "fix": "FLICKER 0.96s: extended with own footage to 5.58s"
+        },
+        {
+          "beat": "HK2-B2",
+          "fix": "FLICKER 0.92s: extended with own footage to 7.17s"
+        },
+        {
+          "beat": "A1-B1",
+          "fix": "FLICKER 1.12s: extended with own footage to 13.58s"
+        },
+        {
+          "beat": "A1-B3",
+          "fix": "FLICKER 0.21s: extended with own footage to 18.88s"
+        },
+        {
+          "beat": "A1-B4",
+          "fix": "FLICKER 0.04s: extended with own footage to 19.79s"
+        },
+        {
+          "beat": "A1-B5",
+          "fix": "FLICKER 0.12s: extended with own footage to 21.04s"
+        },
+        {
+          "beat": "A1-B6",
+          "fix": "FLICKER 0.46s: extended with own footage to 22.83s"
+        },
+        {
+          "beat": "A2-M2",
+          "fix": "FLICKER 0.12s: extended with own footage to 33.33s"
+        },
+        {
+          "beat": "A2-M3",
+          "fix": "FLICKER 0.08s: extended with own footage to 36.62s"
+        },
+        {
+          "beat": "A2-B2",
+          "fix": "FLICKER 1.00s: extended with own footage to 38.58s"
+        },
+        {
+          "beat": "A3-B1",
+          "fix": "FLICKER 0.12s: extended with own footage to 56.04s"
+        },
+        {
+          "beat": "A3-B2",
+          "fix": "FLICKER 0.25s: extended with own footage to 57.46s"
+        },
+        {
+          "beat": "A3-B3",
+          "fix": "FLICKER 0.04s: extended with own footage to 58.96s"
+        },
+        {
+          "beat": "A4-P1",
+          "fix": "FLICKER 1.04s: extended with own footage to 70.62s"
+        },
+        {
+          "beat": "A4-P2",
+          "fix": "FLICKER 0.54s: extended with own footage to 78.71s"
+        },
+        {
+          "beat": "A4-M1",
+          "fix": "FLICKER 0.08s: extended with own footage to 81.50s"
+        },
+        {
+          "beat": "A5-B2",
+          "fix": "FLICKER 1.17s: extended with own footage to 104.29s"
+        },
+        {
+          "beat": "A5-B3",
+          "fix": "FLICKER 1.00s: extended with own footage to 107.21s"
+        },
+        {
+          "beat": "A5-B4",
+          "fix": "FLICKER 1.25s: extended with own footage to 109.08s"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "FLICKER 1.04s: extended with own footage to 117.88s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    },
+    {
+      "hook": "HK3",
+      "file": "edit/STRYDE-CASCADE_HK3.mp4",
+      "status": "PASS",
+      "hook_s": 8.667,
+      "body_s": 113.71,
+      "duration_s": 122.36,
+      "expected_s": 122.377,
+      "fixes": [
+        {
+          "beat": "A1-B1",
+          "fix": "FLICKER 1.12s: extended with own footage to 13.79s"
+        },
+        {
+          "beat": "A1-B3",
+          "fix": "FLICKER 0.21s: extended with own footage to 19.08s"
+        },
+        {
+          "beat": "A1-B4",
+          "fix": "FLICKER 0.04s: extended with own footage to 20.00s"
+        },
+        {
+          "beat": "A1-B5",
+          "fix": "FLICKER 0.12s: extended with own footage to 21.25s"
+        },
+        {
+          "beat": "A1-B6",
+          "fix": "FLICKER 0.46s: extended with own footage to 23.04s"
+        },
+        {
+          "beat": "A2-M2",
+          "fix": "FLICKER 0.12s: extended with own footage to 33.54s"
+        },
+        {
+          "beat": "A2-M3",
+          "fix": "FLICKER 0.08s: extended with own footage to 36.83s"
+        },
+        {
+          "beat": "A2-B2",
+          "fix": "FLICKER 1.00s: extended with own footage to 38.79s"
+        },
+        {
+          "beat": "A3-B1",
+          "fix": "FLICKER 0.12s: extended with own footage to 56.25s"
+        },
+        {
+          "beat": "A3-B2",
+          "fix": "FLICKER 0.25s: extended with own footage to 57.67s"
+        },
+        {
+          "beat": "A3-B3",
+          "fix": "FLICKER 0.04s: extended with own footage to 59.17s"
+        },
+        {
+          "beat": "A4-P1",
+          "fix": "FLICKER 1.04s: extended with own footage to 70.83s"
+        },
+        {
+          "beat": "A4-P2",
+          "fix": "FLICKER 0.54s: extended with own footage to 78.92s"
+        },
+        {
+          "beat": "A4-M1",
+          "fix": "FLICKER 0.08s: extended with own footage to 81.71s"
+        },
+        {
+          "beat": "A5-B2",
+          "fix": "FLICKER 1.17s: extended with own footage to 104.50s"
+        },
+        {
+          "beat": "A5-B3",
+          "fix": "FLICKER 1.00s: extended with own footage to 107.42s"
+        },
+        {
+          "beat": "A5-B4",
+          "fix": "FLICKER 1.25s: extended with own footage to 109.29s"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "FLICKER 1.04s: extended with own footage to 118.08s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    }
+  ],
+  "body_identical_across_variants": false
+}

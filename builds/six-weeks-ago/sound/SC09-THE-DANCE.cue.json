@@ -1,0 +1,50 @@
+{
+  "scene": "SC09-THE-DANCE",
+  "story_part": "After",
+  "length_s": 24.333,
+  "theme": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif"
+  ],
+  "avoid": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals"
+  ],
+  "tempo": "moderate",
+  "sections": [
+    {
+      "name": "You still owe me a dance",
+      "start": 0.0,
+      "end": 7.4,
+      "energy": "low",
+      "styles": [
+        "playful light piano",
+        "gentle anticipation"
+      ]
+    },
+    {
+      "name": "I always keep my promises",
+      "start": 7.4,
+      "end": 24.333,
+      "energy": "high",
+      "mix_gain_db": 0,
+      "styles": [
+        "joyful warm waltz lift",
+        "full strings and piano motif",
+        "heartfelt happiness"
+      ],
+      "avoid": [
+        "percussion"
+      ]
+    }
+  ],
+  "timeline_at_HK1_s": 505.3333
+}

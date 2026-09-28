@@ -1,0 +1,110 @@
+[
+{
+"op": "set",
+"collection": "builds",
+"doc_id": "sha0071",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/builds__sha0071.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__SHEET-PAULA",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__SHEET-PAULA.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__SHEET-ROBIN",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__SHEET-ROBIN.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__LOC-CORRIDOR",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__LOC-CORRIDOR.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__VOICE-PAULA",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__VOICE-PAULA.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__VOICE-ROBIN",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__VOICE-ROBIN.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__SC01-SH01",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__SC01-SH01.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__SC01-SH02",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__SC01-SH02.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__SC01-INS01",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__SC01-INS01.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__SC01-SH03",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__SC01-SH03.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__SC01-SH04",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__SC01-SH04.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__SC01-SH05",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__SC01-SH05.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__SC01-SH06",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__SC01-SH06.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__SC01-SH07A",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__SC01-SH07A.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__SC01-SH07B",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__SC01-SH07B.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "sha0071__SC01-SH08",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/generations__sha0071__SC01-SH08.json"
+},
+{
+"op": "set",
+"collection": "docs",
+"doc_id": "absorption",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/docs__absorption.json"
+},
+{
+"op": "set",
+"collection": "docs",
+"doc_id": "actmap",
+"file_path": "/home/user/global-manual-ai/builds/sha0071/board/docs__actmap.json"
+}
+]

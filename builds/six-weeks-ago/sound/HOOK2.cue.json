@@ -1,0 +1,51 @@
+{
+  "scene": "HOOK2",
+  "story_part": "Hook",
+  "length_s": 15.467,
+  "theme": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif",
+    "tense suspenseful underscore",
+    "low sustained cello drone",
+    "uneasy slow pulse"
+  ],
+  "avoid": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals"
+  ],
+  "tempo": "slow",
+  "sections": [
+    {
+      "name": "Station stairs",
+      "start": 0,
+      "end": 10.233,
+      "energy": "mid",
+      "styles": [
+        "tense low cello drone",
+        "restless slow piano pulse",
+        "busy unease"
+      ]
+    },
+    {
+      "name": "Hold before the story",
+      "start": 10.233,
+      "end": 15.467,
+      "energy": "low",
+      "styles": [
+        "sustained low piano note",
+        "fading, unresolved"
+      ],
+      "avoid": [
+        "strings swell"
+      ]
+    }
+  ]
+}
