@@ -64,3 +64,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   HK3-T has two takes (v1, v2 — the call was resent while v1 sat 35 min in Kie's queue). Seedance cost 315–380 Kie
   credits per clip. Next: the user's check of each hook clip, then the edit.
 
+- (2026-09-28, 08:50 UTC) User confirmed all hook clips ("confirmed everything in the boards … give me the final
+  hook"). Board picks: HK1-T v4 (Seedance), HK1-B v2 (Kling), HK2-T v2, HK2-B v3, HK3-T v2, HK3-B v1 (Seedance).
+  **Final hooks** rendered by `final/make_hooks.py` (EG01 split 50/50, middle half of each clip from 0.4s, VO line
+  as caption on the split per VN01–03 — the script's visual note outranks the Build Sheet's "no captions"; audio =
+  locked VO master to "Because"): HK1 4.20s, HK2 4.16s, HK3 4.52s, 1080×1920, on the board as EDIT-HK1…3 (To check).
+  ffmpeg via `pip install imageio-ffmpeg` (the standard's setup). Next: the body B-roll (act map BR/MECH rows), then
+  the full variants (hook + body) for the Final output tab.
