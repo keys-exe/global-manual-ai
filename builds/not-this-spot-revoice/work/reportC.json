@@ -1,0 +1,785 @@
+[
+ {
+  "u": 0,
+  "t": 0.07,
+  "tempo": 1.195,
+  "len": 4.11,
+  "orig": 4.22,
+  "src": ".s110.mp3",
+  "text": "This is a seventy-one-year-old woman with bone-on-"
+ },
+ {
+  "u": 1,
+  "t": 4.23,
+  "tempo": 0.92,
+  "len": 2.0,
+  "orig": 1.96,
+  "src": ".s110.mp3",
+  "text": "Backwards, one step at a time."
+ },
+ {
+  "u": 2,
+  "t": 6.29,
+  "tempo": 1.225,
+  "len": 0.89,
+  "orig": 1.04,
+  "src": "C_c00.mp3",
+  "text": "Her daughter sent it to me."
+ },
+ {
+  "u": 3,
+  "t": 7.23,
+  "tempo": 1.074,
+  "len": 4.61,
+  "orig": 4.76,
+  "src": ".s110.mp3",
+  "text": "If your knee hurts most coming down the stairs, if"
+ },
+ {
+  "u": 4,
+  "t": 11.89,
+  "tempo": 0.938,
+  "len": 4.37,
+  "orig": 4.44,
+  "src": "C_c01.mp3",
+  "text": "if your knee gives way without warning, or it ache"
+ },
+ {
+  "u": 5,
+  "t": 16.31,
+  "tempo": 1.132,
+  "len": 1.52,
+  "orig": 1.48,
+  "src": "C_c01.mp3",
+  "text": "You've probably been told what it is."
+ },
+ {
+  "u": 6,
+  "t": 17.89,
+  "tempo": 1.09,
+  "len": 3.34,
+  "orig": 3.3,
+  "src": "C_c01.mp3",
+  "text": "Bone on bone, arthritis, worn cartilage, meniscus."
+ },
+ {
+  "u": 7,
+  "t": 21.29,
+  "tempo": 0.99,
+  "len": 3.0,
+  "orig": 3.1,
+  "src": "C_c01.mp3",
+  "text": "Four different names, but they all hurt for the sa"
+ },
+ {
+  "u": 8,
+  "t": 24.37,
+  "tempo": 0.978,
+  "len": 4.5,
+  "orig": 4.46,
+  "src": "C_c02.mp3",
+  "text": "There's one small spot just below your kneecap whe"
+ },
+ {
+  "u": 9,
+  "t": 29.09,
+  "tempo": 1.117,
+  "len": 2.31,
+  "orig": 2.34,
+  "src": "C_c02.mp3",
+  "text": "Seventeen times your body weight goes through it."
+ },
+ {
+  "u": 10,
+  "t": 31.45,
+  "tempo": 0.993,
+  "len": 2.93,
+  "orig": 2.94,
+  "src": "C_c02.mp3",
+  "text": "Every stride, into a knee with no padding left."
+ },
+ {
+  "u": 11,
+  "t": 34.45,
+  "tempo": 1.114,
+  "len": 1.75,
+  "orig": 1.71,
+  "src": "C_c02.mp3",
+  "text": "Coming down the stairs, it's worse."
+ },
+ {
+  "u": 12,
+  "t": 36.29,
+  "tempo": 1.017,
+  "len": 1.75,
+  "orig": 1.8,
+  "src": "C_c02.mp3",
+  "text": "That's why going up, you just do it."
+ },
+ {
+  "u": 13,
+  "t": 38.09,
+  "tempo": 0.901,
+  "len": 2.32,
+  "orig": 2.28,
+  "src": ".s110.mp3",
+  "text": "Going down, you have to think about it first."
+ },
+ {
+  "u": 14,
+  "t": 40.51,
+  "tempo": 1.019,
+  "len": 3.62,
+  "orig": 3.58,
+  "src": ".s110.mp3",
+  "text": "So it isn't just your age, it's the force going th"
+ },
+ {
+  "u": 15,
+  "t": 44.21,
+  "tempo": 1.053,
+  "len": 3.93,
+  "orig": 3.94,
+  "src": "C_c03.mp3",
+  "text": "Now, a man once wrote under a video like this one,"
+ },
+ {
+  "u": 16,
+  "t": 48.19,
+  "tempo": 1.062,
+  "len": 0.64,
+  "orig": 0.6,
+  "src": ".s110.mp3",
+  "text": "He's right."
+ },
+ {
+  "u": 17,
+  "t": 48.91,
+  "tempo": 0.976,
+  "len": 2.05,
+  "orig": 2.1,
+  "src": ".s110.mp3",
+  "text": "You can't grow that cartilage back."
+ },
+ {
+  "u": 18,
+  "t": 51.01,
+  "tempo": 0.952,
+  "len": 2.69,
+  "orig": 2.82,
+  "src": ".s110.mp3",
+  "text": "Not with a pill, not with a cream, and not with a "
+ },
+ {
+  "u": 19,
+  "t": 53.75,
+  "tempo": 0.87,
+  "len": 2.59,
+  "orig": 2.94,
+  "src": ".s110.mp3",
+  "text": "Anyone who tells you otherwise is lying to you."
+ },
+ {
+  "u": 20,
+  "t": 56.85,
+  "tempo": 0.968,
+  "len": 3.46,
+  "orig": 3.42,
+  "src": "C_c04.mp3",
+  "text": "Can you take the weight off the worn part without "
+ },
+ {
+  "u": 21,
+  "t": 60.41,
+  "tempo": 0.936,
+  "len": 0.47,
+  "orig": 0.43,
+  "src": ".s110.mp3",
+  "text": "Yes."
+ },
+ {
+  "u": 22,
+  "t": 60.97,
+  "tempo": 0.891,
+  "len": 1.93,
+  "orig": 1.96,
+  "src": ".s110.mp3",
+  "text": "You don't need new cartilage for that."
+ },
+ {
+  "u": 23,
+  "t": 62.95,
+  "tempo": 0.87,
+  "len": 2.71,
+  "orig": 2.91,
+  "src": ".s110.mp3",
+  "text": "You need to move the force before it gets there."
+ },
+ {
+  "u": 24,
+  "t": 65.99,
+  "tempo": 0.924,
+  "len": 1.19,
+  "orig": 1.15,
+  "src": "C_c05.mp3",
+  "text": "Why hasn't anything worked?"
+ },
+ {
+  "u": 25,
+  "t": 67.26,
+  "tempo": 1.089,
+  "len": 0.9,
+  "orig": 0.93,
+  "src": ".s110.mp3",
+  "text": "I'm a sports doctor."
+ },
+ {
+  "u": 26,
+  "t": 68.21,
+  "tempo": 0.943,
+  "len": 2.45,
+  "orig": 2.43,
+  "src": "C_c05.mp3",
+  "text": "I've given more cortisone injections than I can co"
+ },
+ {
+  "u": 27,
+  "t": 70.71,
+  "tempo": 0.967,
+  "len": 2.42,
+  "orig": 2.4,
+  "src": ".s110.mp3",
+  "text": "They buy you a few weeks, maybe a few months."
+ },
+ {
+  "u": 28,
+  "t": 73.18,
+  "tempo": 1.1,
+  "len": 2.5,
+  "orig": 2.46,
+  "src": ".s110.mp3",
+  "text": "Then the pain comes back, and so do my patients."
+ },
+ {
+  "u": 29,
+  "t": 75.89,
+  "tempo": 0.87,
+  "len": 3.7,
+  "orig": 4.14,
+  "src": "C_c06.mp3",
+  "text": "Pills, gels, sleeves, braces, they all work on the"
+ },
+ {
+  "u": 30,
+  "t": 79.93,
+  "tempo": 0.87,
+  "len": 2.29,
+  "orig": 2.46,
+  "src": "C_c06.mp3",
+  "text": "If nothing's worked, it isn't your fault."
+ },
+ {
+  "u": 31,
+  "t": 82.41,
+  "tempo": 0.87,
+  "len": 1.85,
+  "orig": 2.38,
+  "src": "C_c06.mp3",
+  "text": "It was all aimed at the wrong spot."
+ },
+ {
+  "u": 32,
+  "t": 84.89,
+  "tempo": 1.056,
+  "len": 4.13,
+  "orig": 4.28,
+  "src": "C_c06.mp3",
+  "text": "That's why a company called Stryde spent three yea"
+ },
+ {
+  "u": 33,
+  "t": 89.07,
+  "tempo": 0.87,
+  "len": 3.32,
+  "orig": 3.32,
+  "src": "C_c07.mp3",
+  "text": "building something that goes on that spot and nowh"
+ },
+ {
+  "u": 34,
+  "t": 92.51,
+  "tempo": 0.87,
+  "len": 2.24,
+  "orig": 2.3,
+  "src": "C_c07.mp3",
+  "text": "This is it, the Stryde Precision Strap."
+ },
+ {
+  "u": 35,
+  "t": 94.93,
+  "tempo": 1.059,
+  "len": 2.86,
+  "orig": 2.84,
+  "src": "C_c07.mp3",
+  "text": "I know, it looks too small to work on knees like y"
+ },
+ {
+  "u": 36,
+  "t": 97.84,
+  "tempo": 0.965,
+  "len": 2.83,
+  "orig": 2.79,
+  "src": "C_c07.mp3",
+  "text": "It's small because it only has to cover one spot."
+ },
+ {
+  "u": 37,
+  "t": 100.73,
+  "tempo": 1.026,
+  "len": 3.11,
+  "orig": 3.18,
+  "src": ".s110.mp3",
+  "text": "It sits two centimetres below your kneecap, on the"
+ },
+ {
+  "u": 38,
+  "t": 103.89,
+  "tempo": 0.936,
+  "len": 2.03,
+  "orig": 2.01,
+  "src": "C_c08.mp3",
+  "text": "It doesn't go around the joint at all."
+ },
+ {
+  "u": 39,
+  "t": 105.97,
+  "tempo": 1.164,
+  "len": 1.65,
+  "orig": 1.8,
+  "src": ".s110.mp3",
+  "text": "Inside, there's a silicone pad."
+ },
+ {
+  "u": 40,
+  "t": 107.67,
+  "tempo": 0.961,
+  "len": 4.39,
+  "orig": 4.35,
+  "src": ".s110.mp3",
+  "text": "It holds the pressure on that one spot, instead of"
+ },
+ {
+  "u": 41,
+  "t": 112.25,
+  "tempo": 1.148,
+  "len": 2.29,
+  "orig": 2.44,
+  "src": "C_c09.mp3",
+  "text": "When your foot lands, the strap catches the force,"
+ },
+ {
+  "u": 42,
+  "t": 114.59,
+  "tempo": 0.885,
+  "len": 3.47,
+  "orig": 3.43,
+  "src": "C_c09.mp3",
+  "text": "and moves it off the worn part before it reaches t"
+ },
+ {
+  "u": 43,
+  "t": 118.39,
+  "tempo": 1.134,
+  "len": 1.42,
+  "orig": 1.38,
+  "src": "C_c09.mp3",
+  "text": "Sports scientists measured it."
+ },
+ {
+  "u": 44,
+  "t": 119.87,
+  "tempo": 0.897,
+  "len": 3.31,
+  "orig": 3.32,
+  "src": "C_c09.mp3",
+  "text": "Thirty-four percent less strain on the knee, every"
+ },
+ {
+  "u": 45,
+  "t": 123.23,
+  "tempo": 0.96,
+  "len": 1.01,
+  "orig": 1.0,
+  "src": "C_c09.mp3",
+  "text": "It isn't a sleeve."
+ },
+ {
+  "u": 46,
+  "t": 124.29,
+  "tempo": 0.97,
+  "len": 2.96,
+  "orig": 2.92,
+  "src": ".s110.mp3",
+  "text": "A sleeve squeezes the whole joint, and it stretche"
+ },
+ {
+  "u": 47,
+  "t": 127.46,
+  "tempo": 0.929,
+  "len": 0.85,
+  "orig": 0.81,
+  "src": "C_c10.mp3",
+  "text": "It isn't a brace."
+ },
+ {
+  "u": 48,
+  "t": 128.39,
+  "tempo": 1.124,
+  "len": 2.34,
+  "orig": 2.3,
+  "src": ".s110.mp3",
+  "text": "A brace only stops your knee moving sideways."
+ },
+ {
+  "u": 49,
+  "t": 131.05,
+  "tempo": 0.87,
+  "len": 2.3,
+  "orig": 2.4,
+  "src": ".s110.mp3",
+  "text": "This does one job, on one spot."
+ },
+ {
+  "u": 50,
+  "t": 133.45,
+  "tempo": 1.172,
+  "len": 1.92,
+  "orig": 2.07,
+  "src": "C_c10.mp3",
+  "text": "So you take the stairs without gripping the rail."
+ },
+ {
+  "u": 51,
+  "t": 135.42,
+  "tempo": 0.961,
+  "len": 1.78,
+  "orig": 1.79,
+  "src": ".s110.mp3",
+  "text": "Not because the arthritis has gone,"
+ },
+ {
+  "u": 52,
+  "t": 137.25,
+  "tempo": 0.907,
+  "len": 2.68,
+  "orig": 2.64,
+  "src": ".s110.mp3",
+  "text": "because the force isn't landing where it hurts."
+ },
+ {
+  "u": 53,
+  "t": 140.05,
+  "tempo": 1.053,
+  "len": 2.81,
+  "orig": 2.78,
+  "src": ".s110.mp3",
+  "text": "No slipping, no sores, no rolling down."
+ },
+ {
+  "u": 54,
+  "t": 142.91,
+  "tempo": 1.127,
+  "len": 1.57,
+  "orig": 1.72,
+  "src": ".s110.mp3",
+  "text": "It sits flat under your trousers,"
+ },
+ {
+  "u": 55,
+  "t": 144.53,
+  "tempo": 1.132,
+  "len": 2.27,
+  "orig": 2.28,
+  "src": ".s110.mp3",
+  "text": "and it takes about ten seconds to put on."
+ },
+ {
+  "u": 56,
+  "t": 146.85,
+  "tempo": 1.052,
+  "len": 1.15,
+  "orig": 1.11,
+  "src": "C_c11.mp3",
+  "text": "Let me show you where it goes."
+ },
+ {
+  "u": 57,
+  "t": 148.08,
+  "tempo": 1.005,
+  "len": 2.12,
+  "orig": 2.07,
+  "src": ".s110.mp3",
+  "text": "Put your finger on the bottom edge of your kneecap"
+ },
+ {
+  "u": 58,
+  "t": 150.29,
+  "tempo": 1.019,
+  "len": 2.15,
+  "orig": 2.14,
+  "src": "C_c12.mp3",
+  "text": "Now slide it down two centimetres."
+ },
+ {
+  "u": 59,
+  "t": 152.49,
+  "tempo": 1.25,
+  "len": 1.38,
+  "orig": 1.3,
+  "src": ".s110.mp3",
+  "text": "That's just under an inch."
+ },
+ {
+  "u": 60,
+  "t": 153.94,
+  "tempo": 0.899,
+  "len": 0.79,
+  "orig": 0.75,
+  "src": "C_c12.mp3",
+  "text": "Press gently."
+ },
+ {
+  "u": 61,
+  "t": 154.89,
+  "tempo": 0.884,
+  "len": 1.46,
+  "orig": 1.42,
+  "src": "C_c12.mp3",
+  "text": "You'll feel a firm band."
+ },
+ {
+  "u": 62,
+  "t": 156.41,
+  "tempo": 1.024,
+  "len": 0.84,
+  "orig": 0.8,
+  "src": ".s110.mp3",
+  "text": "That's the tendon."
+ },
+ {
+  "u": 63,
+  "t": 157.31,
+  "tempo": 1.019,
+  "len": 2.14,
+  "orig": 2.1,
+  "src": ".s110.mp3",
+  "text": "Every step you take goes through there."
+ },
+ {
+  "u": 64,
+  "t": 159.57,
+  "tempo": 0.891,
+  "len": 1.47,
+  "orig": 1.43,
+  "src": ".s110.mp3",
+  "text": "That's where the strap sits."
+ },
+ {
+  "u": 65,
+  "t": 161.16,
+  "tempo": 1.052,
+  "len": 2.12,
+  "orig": 2.25,
+  "src": ".s110.mp3",
+  "text": "Put it on there, pull it snug, then walk."
+ },
+ {
+  "u": 66,
+  "t": 163.33,
+  "tempo": 0.888,
+  "len": 2.86,
+  "orig": 2.82,
+  "src": ".s110.mp3",
+  "text": "Over two hundred thousand people wear one now."
+ },
+ {
+  "u": 67,
+  "t": 166.25,
+  "tempo": 0.885,
+  "len": 1.22,
+  "orig": 1.18,
+  "src": ".s110.mp3",
+  "text": "Here's what two of them wrote."
+ },
+ {
+  "u": 68,
+  "t": 167.55,
+  "tempo": 1.0,
+  "len": 1.92,
+  "orig": 1.88,
+  "src": ".s110.mp3",
+  "text": "\"It actually works on one of my knees."
+ },
+ {
+  "u": 69,
+  "t": 169.61,
+  "tempo": 0.99,
+  "len": 1.94,
+  "orig": 1.9,
+  "src": ".s110.mp3",
+  "text": "No pain in that knee when I'm wearing it.\""
+ },
+ {
+  "u": 70,
+  "t": 171.68,
+  "tempo": 0.888,
+  "len": 3.21,
+  "orig": 3.17,
+  "src": "C_c13.mp3",
+  "text": "\"Forty-eight hours of wearing this, and my knee no"
+ },
+ {
+  "u": 71,
+  "t": 174.99,
+  "tempo": 1.098,
+  "len": 2.55,
+  "orig": 2.54,
+  "src": "C_c14.mp3",
+  "text": "I left it off for forty-eight hours and the pain c"
+ },
+ {
+  "u": 72,
+  "t": 177.59,
+  "tempo": 0.983,
+  "len": 1.76,
+  "orig": 1.72,
+  "src": "C_c14.mp3",
+  "text": "I can only tell it as it happens.\""
+ },
+ {
+  "u": 73,
+  "t": 179.51,
+  "tempo": 0.891,
+  "len": 3.21,
+  "orig": 3.24,
+  "src": ".s110.mp3",
+  "text": "One warning, only buy it from the official Stryde "
+ },
+ {
+  "u": 74,
+  "t": 182.77,
+  "tempo": 1.083,
+  "len": 1.69,
+  "orig": 1.72,
+  "src": ".s110.mp3",
+  "text": "The copies look the same in a photo,"
+ },
+ {
+  "u": 75,
+  "t": 184.51,
+  "tempo": 0.884,
+  "len": 2.58,
+  "orig": 2.54,
+  "src": ".s110.mp3",
+  "text": "but they're too small to sit below the kneecap."
+ },
+ {
+  "u": 76,
+  "t": 187.18,
+  "tempo": 0.87,
+  "len": 1.49,
+  "orig": 1.49,
+  "src": ".s110.mp3",
+  "text": "It won't work for everyone."
+ },
+ {
+  "u": 77,
+  "t": 188.81,
+  "tempo": 1.302,
+  "len": 0.53,
+  "orig": 0.68,
+  "src": ".s110.mp3",
+  "text": "Nothing does."
+ },
+ {
+  "u": 78,
+  "t": 189.39,
+  "tempo": 0.946,
+  "len": 1.48,
+  "orig": 1.44,
+  "src": ".s110.mp3",
+  "text": "They've made it easy to try."
+ },
+ {
+  "u": 79,
+  "t": 190.97,
+  "tempo": 1.149,
+  "len": 1.94,
+  "orig": 1.9,
+  "src": ".s110.mp3",
+  "text": "It's two for the price of one right now."
+ },
+ {
+  "u": 80,
+  "t": 193.01,
+  "tempo": 1.031,
+  "len": 2.26,
+  "orig": 2.22,
+  "src": ".s110.mp3",
+  "text": "One for each knee, and delivery is free."
+ },
+ {
+  "u": 81,
+  "t": 195.33,
+  "tempo": 0.882,
+  "len": 1.27,
+  "orig": 1.23,
+  "src": "C_c15.mp3",
+  "text": "You get sixty days."
+ },
+ {
+  "u": 82,
+  "t": 196.7,
+  "tempo": 0.986,
+  "len": 1.47,
+  "orig": 1.43,
+  "src": ".s110.mp3",
+  "text": "If it doesn't change your stairs,"
+ },
+ {
+  "u": 83,
+  "t": 198.29,
+  "tempo": 1.005,
+  "len": 2.11,
+  "orig": 2.06,
+  "src": ".s110.mp3",
+  "text": "you get your money back, and you keep the straps."
+ },
+ {
+  "u": 84,
+  "t": 200.55,
+  "tempo": 1.011,
+  "len": 1.76,
+  "orig": 1.72,
+  "src": "C_c16.mp3",
+  "text": "So tonight, find that spot."
+ },
+ {
+  "u": 85,
+  "t": 202.39,
+  "tempo": 1.044,
+  "len": 3.18,
+  "orig": 3.14,
+  "src": "C_c16.mp3",
+  "text": "Tomorrow morning, put it on, and walk down your ow"
+ },
+ {
+  "u": 86,
+  "t": 205.67,
+  "tempo": 0.98,
+  "len": 2.56,
+  "orig": 2.52,
+  "src": "C_c16.mp3",
+  "text": "hand resting on the rail, not hanging off it."
+ }
+]
