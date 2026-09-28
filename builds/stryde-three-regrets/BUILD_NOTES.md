@@ -13,6 +13,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 ## Sessions
 - session_01MAYQjyE5N1bFxgJyHNqXtE (2026-09-28): intake, steps 1–3. 4 avatar sheets generated on Higgsfield
   (Sunburst, 25 credits, balance 19,937.5), all on the board as To check. Absorption on the Plan tab.
+  Later the same session: steps 4–5, narrator voice source, clone, 4 TTS takes, split + house cut → 16 VO parts on the board.
+- session_01BfH1hvnfxx8tkrGD5vKT2W (2026-09-28 11:30, resume): merged `claude/happy-mayer-ea7ofb`; hourly Fix check
+  for this board created here (`trig_01QRM4rP2QW3k3wK73dHNt1s`, :30 UTC). Waiting on the master listen.
 
 ## Run-mode overrides (user, 2026-09-28)
 - **"you will be the one to clone and create the talking heads"**: in this build the agent clones the voice over the API
@@ -27,6 +30,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **Flags still unanswered:** F1 (built as recommended: TH in the body, hooks VO), F3, F5.
 - **Voice:** N cloned as `Regrets` = `OxNH6H9HajjAxTXIVONJ` (clone source v2, G1+G2+G4, 38.09s; G3 failed the gate at −11.9%).
   TTS: 4 takes of HK1+HK2+HK3+body in one eleven_v3 request (flow `O1rxzq3NBuTTEQlgN7gg`).
+- **Now (2026-09-28 11:30):** 16 VO parts (T1–T4 × HK1/HK2/HK3/BODY) on the board as To check — **§22U step 10, the master listen, is the user's.**
+  On their pick: build each variant master (raw HKn + raw BODY of that take, one `vo_trim.py` pass), word timestamps,
+  E6 B-roll lengths (`assemble.py --lengths`), HeyGen talking heads TH-01…06 from the master, then step 6 hooks one by one.
+- Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
+  `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
 - **Next (old):** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
   `voice_source.py`, user clones `Regrets` in the ElevenLabs app), then TTS HK1–3 + body in one request, house cut, master listen;
   then hooks one by one (step 6).
