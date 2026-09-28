@@ -221,3 +221,22 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - (2026-09-28, 15:50 UTC) **BR-25 video v7** from the user-confirmed v10 image (top of the stairs, full body): a fast
   real-time descent, 5s so she has time to come down the flight. Kie Kling, job id in `body/kie_kling_jobs9.txt`.
   On the board as To check.
+- (2026-09-28, 16:15 UTC) **THE EDIT — three finished ads on the Final output tab** (user: "all passes, proceed with the
+  editing and give me the final output").
+  - Source: every body card's confirmed clip, the EDIT-HK1…3 split hooks and the locked T4 masters, all taken from the
+    board (`final/src_map.json`, `final/src/`).
+  - `assemble.py` per variant (`final/edit/plan_HK<n>.json`):
+    - Voice-only build, hook first (in 0), then the 27 body B-rolls on that master's own word timings (medium.en).
+    - Lead 3 frames (0.125s at 24 fps), skip 0.4s.
+    - BR-17 anchored on "slipping." (HK1/HK2) or "sores." (HK3), so "Adjustable." (BR-16) holds ≥ 0.8s. BR-26b in-point
+      0.3s.
+    - All three PASS: no holes, no flashes, duration = master, no black frames (`final/edit/run_HK<n>.json`).
+  - Tool fix: `assemble.py` no longer counts a sub-frame remainder after the last frame as a hole. At 24 fps it can't be
+    filled, and it failed HK1 on 0.01s.
+  - `final/finish.py` adds the post overlays (§17): "17× YOUR BODYWEIGHT" (MECH-01), "34% LESS STRAIN" (BR-09),
+    "200,000+ PEOPLE WEAR ONE" (BR-21), and the EG04 offer card from BR-22 to the end ("• Buy 1 Get 1 Free" /
+    "60-DAY MONEY-BACK GUARANTEE"). Master audio is copied untouched.
+  - Output: `final/STRYDE_Identity_HK1/2/3_final.mp4`, 1080×1920 24 fps, 57.9 / 57.9 / 58.1s. Each is stored on the
+    board in 5 × 15 MB parts, as cards `FINAL-HK1…3` (stage edit, final, status review: the final review is the
+    user's).
+  - Open: EG04's URL box is left out because no STRYDE URL is on file; EG05 watermark is omitted (F10).

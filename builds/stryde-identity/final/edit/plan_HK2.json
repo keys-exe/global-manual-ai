@@ -1,0 +1,150 @@
+{
+ "audio": "/home/user/global-manual-ai/builds/stryde-identity/final/edit/master_HK2.mp3",
+ "script": "/home/user/global-manual-ai/builds/stryde-identity/work/script.lines.txt",
+ "base": null,
+ "broll": [
+  {
+   "beat": "EDIT-HK2",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/a6b91156631e060d53ed72a0a425f31e.mp4",
+   "phrase": "Why these knee straps are a must if you're on your feet all day for work.",
+   "in": 0.0
+  },
+  {
+   "beat": "MECH-01",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/MECH-01_video_v2.mp4",
+   "phrase": "Because every step puts seventeen times your bodyweight"
+  },
+  {
+   "beat": "MECH-02",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/c881ba79fb59c2fa1fbd69da1a8db942.mp4",
+   "phrase": "through one small spot below your kneecap."
+  },
+  {
+   "beat": "BR-03",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-03_video_v2.mp4",
+   "phrase": "These straps took three years to build with orthopaedic surgeons,"
+  },
+  {
+   "beat": "BR-04",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-04_video_v2.mp4",
+   "phrase": "to sit right on that spot."
+  },
+  {
+   "beat": "BR-05",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/3a47bc7482ae1d15ceee4005ee8ebe15.mp4",
+   "phrase": "Unlike the cheap copies, which are too small to reach it."
+  },
+  {
+   "beat": "BR-06",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-06_video_v3.mp4",
+   "phrase": "Inside, a silicone pad catches the force"
+  },
+  {
+   "beat": "MECH-07",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/e04d52634c06f7edfae09dfeb51053b7.mp4",
+   "phrase": "and moves it off the worn part, before it hits the joint."
+  },
+  {
+   "beat": "BR-08",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/2f1896f039f888e27cdcb01e871a6855.mp4",
+   "phrase": "Sports scientists measured it."
+  },
+  {
+   "beat": "BR-09",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/f77bcca8a5e85b4dbc0400be7091e24a.mp4",
+   "phrase": "Thirty-four percent less strain, every step."
+  },
+  {
+   "beat": "MECH-10",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/MECH-10_video_v2.mp4",
+   "phrase": "Built for bone on bone, arthritis,"
+  },
+  {
+   "beat": "MECH-11",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/3e217867d83f7b995aea722f5eda9976.mp4",
+   "phrase": "worn cartilage and meniscus."
+  },
+  {
+   "beat": "BR-12",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-12_video_v2.mp4",
+   "phrase": "So you walk further,"
+  },
+  {
+   "beat": "BR-13",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-13_video_v6.mp4",
+   "phrase": "and take the stairs without gripping the rail."
+  },
+  {
+   "beat": "BR-14",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-14_video_v3.mp4",
+   "phrase": "Not because the arthritis has gone."
+  },
+  {
+   "beat": "MECH-15",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/MECH-15_video_v2.mp4",
+   "phrase": "Because the force isn't landing where it hurts."
+  },
+  {
+   "beat": "BR-16",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-16_video_v2.mp4",
+   "phrase": "Adjustable."
+  },
+  {
+   "beat": "BR-17",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-17_video_v3.mp4",
+   "phrase": "No slipping. No sores. No rolling down.",
+   "key": "slipping."
+  },
+  {
+   "beat": "BR-18",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/fa3cc84b4f686515b61b82af38ca39ea.mp4",
+   "phrase": "It sits flat under your trousers,"
+  },
+  {
+   "beat": "BR-19",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-19_video_v2.mp4",
+   "phrase": "light enough to wear all day."
+  },
+  {
+   "beat": "BR-20",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-20_video_v2.mp4",
+   "phrase": "Recommended by orthopaedic surgeons,"
+  },
+  {
+   "beat": "BR-21",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-21_video_v2.mp4",
+   "phrase": "and worn by over two hundred thousand people."
+  },
+  {
+   "beat": "BR-22",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-22_video_v3.mp4",
+   "phrase": "And the best part?"
+  },
+  {
+   "beat": "BR-23",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/8deabadfdf7f329af3343b0992baab46.mp4",
+   "phrase": "It's two for the price of one today."
+  },
+  {
+   "beat": "BR-24",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-24_video_v4.mp4",
+   "phrase": "You get sixty days."
+  },
+  {
+   "beat": "BR-25",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-25_video_v9.mp4",
+   "phrase": "If it doesn't change your stairs, you get your money back."
+  },
+  {
+   "beat": "BR-26a",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-26a_video_v2.mp4",
+   "phrase": "Put one on,"
+  },
+  {
+   "beat": "BR-26b",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-26b_video_v2.mp4",
+   "phrase": "and your own stairs will tell you.",
+   "in": 0.3
+  }
+ ]
+}

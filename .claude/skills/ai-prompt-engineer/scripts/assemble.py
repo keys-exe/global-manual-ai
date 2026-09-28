@@ -365,7 +365,7 @@ def main():
             raw.append({"kind": "TH" if base else "HOLE", "start": t, "end": e["start"]})
         raw.append({"kind": "BR", "beat": e["beat"], "layout": e["layout"]["type"], "start": e["start"], "end": e["end"]})
         t = e["end"]
-    if total - t > 1e-3:
+    if total - t > 1.0 / FPS - 1e-3:   # a sub-frame remainder after the last frame is not a hole
         raw.append({"kind": "TH" if base else "HOLE", "start": t, "end": total})
     for s in raw:
         if s["kind"] == "TH" and s["end"] - s["start"] < a.min_th and 0 < s["start"] and s["end"] < total:
