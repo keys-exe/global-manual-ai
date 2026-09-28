@@ -1538,7 +1538,7 @@ async function setCleanOut(on){
   try{await state.db.doc("generations/"+g.id).update(on?{videoOut:t,videoOutV:currentV(g,"video"),updatedAt:Date.now()}:{videoOut:null,videoOutV:null,updatedAt:Date.now()});
     toast(on?`Only 0–${t.toFixed(1)}s of this clip will be used`:"The whole clip will be used")}catch(e){handleWriteError(e)}
 }
-function openViewer(id,step){const g=state.gens.find(x=>x.id===id);state.viewer={id,step,ver:null,menu:false,scope:g?viewScope(g):null};renderViewer()}
+function openViewer(id,step){const g=state.gens.find(x=>x.id===id);state.viewer={id,step,ver:null,menu:false,scope:g?viewScope(g):null};state.viewerSig=JSON.stringify(g||null);renderViewer()}
 function closeViewer(){if(!state.viewer) return;state.viewer=null;const v=$("#viewer");v.hidden=true;v.innerHTML=""}
 function moveViewer(dir){
   const v=state.viewer; if(!v) return;
@@ -2081,7 +2081,9 @@ render();
   },()=>{});
   db.collection("generations").onSnapshot(snap=>{
     state.gens=snap.docs.map(d=>{const g={id:d.id,...d.data()};if(g.stage==="voice"&&/^VO-T/i.test(g.beat||"")) g.stage="vo";return g});
-    setSync(true,"Live");render();if(state.viewer) renderViewer();
+    setSync(true,"Live");render();
+    // the open viewer is redrawn only when the shown generation changed, so a video playing in it keeps playing
+    if(state.viewer){const vs=JSON.stringify(state.gens.find(x=>x.id===state.viewer.id)||null);if(vs!==state.viewerSig){state.viewerSig=vs;renderViewer()}}
     if(state.jumpAsset){const id=state.jumpAsset;for(const g of state.gens) for(const k of flow(g)){const x=versionsOf(g,k).find(v=>v.asset===id);if(x){state.jumpAsset=null;openViewer(g.id,k);state.viewer.ver=x.v;renderViewer();break}}}
     if(state.editing&&!state.editing._new&&!state.gens.some(g=>g.id===state.editing.id)) closeDrawer();
   },err=>{setSync(false,"Sync stopped")});
