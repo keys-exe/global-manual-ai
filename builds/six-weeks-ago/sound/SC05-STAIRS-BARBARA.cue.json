@@ -1,0 +1,77 @@
+{
+  "scene": "SC05-STAIRS-BARBARA",
+  "story_part": "Turn",
+  "length_s": 48.2,
+  "theme": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif"
+  ],
+  "avoid": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals"
+  ],
+  "tempo": "slow",
+  "sections": [
+    {
+      "name": "I can't",
+      "start": 0.0,
+      "end": 14.067,
+      "energy": "low",
+      "styles": [
+        "fragile tense piano",
+        "held breath",
+        "quiet suspense"
+      ]
+    },
+    {
+      "name": "One step",
+      "start": 14.067,
+      "end": 17.867,
+      "energy": "silent",
+      "mix_gain_db": -60,
+      "styles": [
+        "near silence",
+        "a single very soft fading piano note"
+      ],
+      "avoid": [
+        "melody",
+        "strings"
+      ]
+    },
+    {
+      "name": "Weight going somewhere else",
+      "start": 17.867,
+      "end": 34.133,
+      "energy": "mid",
+      "styles": [
+        "the piano motif arrives",
+        "cello enters warmly",
+        "hope rising gently"
+      ]
+    },
+    {
+      "name": "I can't believe it",
+      "start": 34.133,
+      "end": 48.2,
+      "energy": "high",
+      "mix_gain_db": 3,
+      "styles": [
+        "full warm string quartet with piano",
+        "emotional swell, tearful joy",
+        "release"
+      ],
+      "avoid": [
+        "percussion"
+      ]
+    }
+  ],
+  "timeline_at_HK1_s": 321.5
+}

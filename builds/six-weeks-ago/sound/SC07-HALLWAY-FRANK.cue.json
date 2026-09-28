@@ -1,0 +1,46 @@
+{
+  "scene": "SC07-HALLWAY-FRANK",
+  "story_part": "After",
+  "length_s": 49.2,
+  "theme": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif"
+  ],
+  "avoid": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals"
+  ],
+  "tempo": "slow",
+  "sections": [
+    {
+      "name": "Two miles into town",
+      "start": 0.0,
+      "end": 31.133,
+      "energy": "low",
+      "styles": [
+        "warm light piano",
+        "gentle surprise and affection"
+      ]
+    },
+    {
+      "name": "All those nights",
+      "start": 31.133,
+      "end": 49.2,
+      "energy": "mid",
+      "styles": [
+        "tender cello melody",
+        "piano motif",
+        "deep love and relief, tearful"
+      ]
+    }
+  ],
+  "timeline_at_HK1_s": 405.9333
+}

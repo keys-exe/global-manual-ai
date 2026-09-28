@@ -1,0 +1,104 @@
+[
+{
+"op": "set",
+"collection": "builds",
+"doc_id": "six-weeks-ago",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/00_six-weeks-ago.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-HOOK1",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/01_six-weeks-ago__MUS-HOOK1.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-HOOK2",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/02_six-weeks-ago__MUS-HOOK2.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-HOOK3",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/03_six-weeks-ago__MUS-HOOK3.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-SC01-KITCHEN-SARAH",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/04_six-weeks-ago__MUS-SC01-KITCHEN-SARAH.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-SC02-NIGHT-FRANK",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/05_six-weeks-ago__MUS-SC02-NIGHT-FRANK.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-SC03-WEDDING",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/06_six-weeks-ago__MUS-SC03-WEDDING.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-SC04-BARBARA-KITCHEN",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/07_six-weeks-ago__MUS-SC04-BARBARA-KITCHEN.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-SC05-STAIRS-BARBARA",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/08_six-weeks-ago__MUS-SC05-STAIRS-BARBARA.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-SC06-DOCTOR",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/09_six-weeks-ago__MUS-SC06-DOCTOR.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-SC07-HALLWAY-FRANK",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/10_six-weeks-ago__MUS-SC07-HALLWAY-FRANK.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-SC08-STAIRS-SARAH",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/11_six-weeks-ago__MUS-SC08-STAIRS-SARAH.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-SC09-THE-DANCE",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/12_six-weeks-ago__MUS-SC09-THE-DANCE.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__MUS-SC10-CALL-JOAN",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/13_six-weeks-ago__MUS-SC10-CALL-JOAN.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__FINAL-HK1",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/14_six-weeks-ago__FINAL-HK1.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__FINAL-HK2",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/15_six-weeks-ago__FINAL-HK2.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "six-weeks-ago__FINAL-HK3",
+"file_path": "/home/user/global-manual-ai/builds/six-weeks-ago/board/16_six-weeks-ago__FINAL-HK3.json"
+}
+]
