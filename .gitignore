@@ -7,3 +7,4 @@ builds/**/trim/
 *.mp3
 __pycache__/
 builds/*/intake/
+*.flac
