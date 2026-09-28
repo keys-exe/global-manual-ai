@@ -127,9 +127,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   seen + negative). Image v2 = Higgsfield edit of HK3-BR2 v2 (job 2e1c583a…, logged nano_banana_2) → review; the HK3 video
   waits for its Confirm, then Seedance generation 2 from it (same prompt, voice ref, 13s).
 
+  ~16:35: user confirmed the no-phone image, "regenerate the HK3 video" → Seedance generation 2 (task 437f5ac8…, 819 credits,
+  13.06s) → HK3-FULL video v2 on the board as review. A third HK3 video needs the user's go (§22X).
+
 ## Where it stands (2026-09-28 16:20)
 - VO master **T2** (confirmed). HK1-FULL v3 confirmed.
-- **Waiting on the user (review):** HK2-FULL v1, HK3-FULL image v2 (no phone; video regenerates on Confirm); TH-HK1/2/3-BODY v3 (gentle trim).
+- **Waiting on the user (review):** HK2-FULL v1, HK3-FULL video v2 (from the no-phone image); TH-HK1/2/3-BODY v3 (gentle trim).
 - **Next:** after the hooks are confirmed → B-roll (step 7): E6 lengths from `TH-HKn+BODY.trim2` word timestamps first.
 - Board storage near its 1 GB cap — upload at source bitrate; Drive if it fills.
 - Open: F3, F4, F11, F12, F13.
