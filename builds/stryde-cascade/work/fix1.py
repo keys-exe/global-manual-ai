@@ -44,11 +44,11 @@ if __name__ == "__main__":
             p = p.replace(broll.WARD["N"], "Wearing a grey crew-neck T-shirt, a faded navy half-zip work fleece with no logo, grey cotton work shorts ending just above the knee with both knees bare, grey work socks, scuffed tan leather work boots, in navy and grey.")
         refs = broll.refs(r)
         model = "nano_banana_pro"
-        (broll.PR / "frames" / f"{b}.v2.txt").write_text(p)
+        (broll.PR / "frames" / f"{b}.fix1.txt").write_text(p)
         man.append({"beat": b, "model": model, "refs": refs, "chars": len(p)})
     for b, scene in ANATFX.items():
         r = broll.ROWS[b]; p = broll.t2i(r, "", scene)
-        (broll.PR / "frames" / f"{b}.v2.txt").write_text(p)
+        (broll.PR / "frames" / f"{b}.fix1.txt").write_text(p)
         man.append({"beat": b, "model": "nano_banana_pro", "refs": broll.refs(r), "chars": len(p)})
     json.dump(man, open(broll.PR / "frames/manifest_fix1.json", "w"), indent=1)
     for m in man: print(m["beat"], m["chars"], len(m["refs"]))
