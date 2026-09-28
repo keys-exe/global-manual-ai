@@ -73,7 +73,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   HK2 (seated at the vice, half-built generic brace clamped beside him), HK3-BR (overhead, halves, hand mid-lift),
   HK3-BR2 (restaged for no selfie: sleeve half held up to the propped phone, he lowers it, focus taps to his eyes — still camera),
   HK3-TH (bench, sleeve half in hand). All on the board as review. Board file storage FULL (1 GB, every asset referenced):
-  HK3-BR image not uploaded — card carries the Higgsfield link only. Needs the user's call on what to free.
+  User chose to free space: removed TH-HK1/2/3-BODY v1 (untrimmed) + v2 (tight trim) files and the TH-ONEGO file
+  (42 assets, ~571 MB; versions kept on the cards marked `deleted`, ONEGO stays on HeyGen). HK3-BR image then uploaded.
+  NOTE for B-roll: ~560 MB free now; upload clips at source size, and plan Drive if the board fills again.
 
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
