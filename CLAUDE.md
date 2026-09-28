@@ -25,6 +25,7 @@ Every generation goes on the build's **Generation Board**. **The board design is
 | `six-weeks-ago` (STRYDE · Six Weeks Ago) | Current https://claude.ai/artifact/QD4ZSJz5eWVGnRAqDQDesA · Old https://claude.ai/artifact/Ah4PtHqj1ie3A93HFK2zKX · Final https://claude.ai/artifact/6kGwrA28dAEoKMkRYqx3oa · no Plan board yet (no plan docs) |
 | `stryde-lost-moments` (STRYDE · Lost Moments, Manual — Drive `1UD92i5fATH3qiiez2jqI2WFQXYxxuPLc`) | Current https://claude.ai/artifact/BahH1QuzHm4bQ9FAdxXfKj · Old https://claude.ai/artifact/PSFVrqe9KY7vY8u8F2QZs8 · Final https://claude.ai/artifact/3kXabsrrt7z92deKdgZF2d · no Plan board yet (plan docs stay on Current) |
 | `stryde-three-regrets` (STRYDE · Three Regrets, Manual — Drive `1kvZgI49_u8VvW6rAS5YsElvJC0nH7wXF`) | https://claude.ai/artifact/HMjMnUVMQwBX4WsVjkUbcK |
+| `stryde-regrets` (STRYDE · Three Regrets, Manual — Drive `1kvZgI49_u8VvW6rAS5YsElvJC0nH7wXF`) | https://claude.ai/artifact/1PfmPCZQeuVTPn4ND1w86t |
 | `demo-ad` (example only, placeholder media) | https://claude.ai/artifact/YK4ReHoWRnqBuXQvCMdHLT |
 
 Not split yet (their boards couldn't be read from this session on 2026-09-28): `stryde-regrets` https://claude.ai/artifact/1PfmPCZQeuVTPn4ND1w86t, `stryde-thirty-years` https://claude.ai/artifact/EG999Jm7UoVdq5YAY7iafV. `intake-1` and `demo-ad` hold placeholder data only and stay single boards.
