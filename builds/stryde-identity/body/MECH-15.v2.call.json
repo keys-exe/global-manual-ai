@@ -8,7 +8,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "MECH-15 confirmed image",
- "start_approved": true,
+ "start_approved": false,
  "fix_note": "white at first -> frame: dim cyan, no white; prompt: dark from frame one, no flash",
  "pinned": false,
  "end_image": null,

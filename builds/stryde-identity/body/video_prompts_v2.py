@@ -225,6 +225,30 @@ P["BR-20"] = photo("strap_in_palm",
     "strap stays resting in his hand the whole time, its weight in his palm; the band settles over his fingers.",
     "no floating strap, no strap lifting out of the hand, no strap changing size")
 
+# ── fix round 4 (user, 2026-09-28) — overrides ─────────────────────────────────
+# BR-26a: the user said to use the confirmed end frame (BR-26a-END) as the image and NOT the start frame — solo start.
+P["BR-26a"] = photo("strap_seated_sit_up",
+    "Maureen on the bottom stair, cornflower-blue dress, navy shoes, both hands on the strap seated below her right "
+    "kneecap.",
+    "Medium close-up from low in front, as in the start frame.",
+    "Her hands lift off the seated strap and she sits back up slowly, one easy move over about two seconds, looking at "
+    "her knee, pleased. The strap stays exactly where it is below the kneecap; nothing is pulled or adjusted.",
+    "no strap moving, no strap sliding down, no band being pulled, no hands on the band")
+P["BR-24"] = photo("washing_line",
+    "Maureen, seventy-four, cornflower-blue dress, navy shoes, the strap on her right knee, pegging a sheet on a washing "
+    "line in a sunny back garden.",
+    "Medium from shoulders to feet, as in the start frame.",
+    "She reaches up and pegs the sheet on the line, one easy reach over about two seconds, then lowers her arms; the "
+    "sheet sways gently in the breeze. Her weight stays on her right leg; the strap stays in place below the kneecap.",
+    "no objects appearing, no sheet flying away")
+P["BR-25"] = photo("down_the_stairs",
+    "Maureen halfway down the carpeted staircase, cornflower-blue dress, navy shoes, the strap on the front of her right "
+    "knee, a folded cardigan in both hands.",
+    "Medium-wide from the foot of the stairs looking up, as in the start frame.",
+    "She comes down the stairs towards the camera, one step per second, two steps in the clip, both hands on the "
+    "cardigan, never touching the rail; she is still on the stairs at the cut. The steps stay fixed and evenly spaced.",
+    "no hand on the rail, no reaching the bottom, no going up, no floating, no sliding feet, no steps changing shape")
+
 FIX_NOTE = {  # user's Fix note -> where it was fixed (frame, prompt or motion, §22X)
  "MECH-01": "not the patellar tendon -> frame: front view, glow on the tendon itself",
  "MECH-10": "express the line more -> frame: bare bone on bone with spurs + red glow; motion: grind + flare",
@@ -241,13 +265,13 @@ FIX_NOTE = {  # user's Fix note -> where it was fixed (frame, prompt or motion, 
  "BR-20": "strap wrong -> frame + motion: band as a soft closed loop draping",
  "BR-21": "phone on the street -> prompt: no phone named anywhere, phone negatives",
  "BR-22": "feel the box, not open it -> frame + motion: hands glide on the closed lid",
- "BR-24": "wrong product and box -> frame: closer, the real open black box, one strap held",
- "BR-25": "wrong stairs and placement -> frame: the P0 flight, strap on the front of the knee",
- "BR-26a": "wrong placement -> frame: start low on the shin + pinned seated end frame",
+ "BR-24": "wrong product -> user: a productive B-roll -> frame: hanging washing in the garden, strap on the knee",
+ "BR-25": "wrong stairs / going down, not already down -> frame: halfway down the P0 flight, hands full",
+ "BR-26a": "wrong placement -> user: use the confirmed seated end frame BR-26a-END as the solo image, not the start frame",
  "BR-26b": "should be going up, not at the top -> frame: near the bottom; motion: climbs, still below at the cut",
 }
 
-PINNED = {"BR-26a"}
+PINNED = set()
 SUBJECT_MOTION = {"BR-12": "travels", "BR-13": "travels", "BR-14": "travels", "BR-21": "travels", "BR-26b": "travels"}
 
 if __name__ == "__main__":

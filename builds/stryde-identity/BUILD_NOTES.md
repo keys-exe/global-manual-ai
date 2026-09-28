@@ -157,3 +157,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
     were deleted from the board. Their version entries, prompts and Kling links stay; the old clip no longer plays.
   - BR-26a-END (fix 2) is on the board as its own card. It was made before the BR-26a start moved to the stair,
     so it may not match.
+- (2026-09-28, 14:50 UTC) **Fix round 4 + the rest of the confirmed videos.**
+  - BR-24 (user: "should be a productive broll"): Maureen pegging washing in her garden, with the strap on.
+  - BR-25 (user: "going down the stairs, not already down"): halfway down the P0 flight, hands full.
+  - Both in `body/fix4_prompts.py`, images `body/<BEAT>_fix4.png`, on the board as To check.
+  - BR-26a (user): the confirmed end frame `BR-26a-END` is BR-26a's only image, not the start frame. Its video: she
+    lifts her hands off the seated strap and sits up.
+  - Videos via Kie Kling (`kling-3.0-omni/image-to-video`, JSON prompts) for MECH-01, BR-03, BR-04, BR-06, BR-13,
+    BR-20, BR-26a and BR-26b. Job ids in `body/kie_kling_jobs2.txt`. On the board as To check.
+  - Storage (user: "delete old B-roll images"): 34 of the oldest replaced body image versions were deleted from the
+    board. Their version entries and links stay.

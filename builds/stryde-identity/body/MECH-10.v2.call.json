@@ -8,7 +8,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "MECH-10 confirmed image",
- "start_approved": true,
+ "start_approved": false,
  "fix_note": "express the line more -> frame: bare bone on bone with spurs + red glow; motion: grind + flare",
  "pinned": false,
  "end_image": null,

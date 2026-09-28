@@ -8,7 +8,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "BR-22 confirmed image",
- "start_approved": true,
+ "start_approved": false,
  "fix_note": "feel the box, not open it -> frame + motion: hands glide on the closed lid",
  "pinned": false,
  "end_image": null,

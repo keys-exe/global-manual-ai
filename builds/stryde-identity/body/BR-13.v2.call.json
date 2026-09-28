@@ -8,7 +8,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "BR-13 confirmed image",
- "start_approved": false,
+ "start_approved": true,
  "fix_note": "not the stairs -> frame: on the P0 flight itself, mid-climb; motion: step per second",
  "pinned": false,
  "end_image": null,

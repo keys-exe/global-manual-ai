@@ -8,7 +8,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "BR-17 confirmed image",
- "start_approved": true,
+ "start_approved": false,
  "fix_note": "big box, wrong carry -> frame: big heavy box, safe squat lift, box hugged",
  "pinned": false,
  "end_image": null,
