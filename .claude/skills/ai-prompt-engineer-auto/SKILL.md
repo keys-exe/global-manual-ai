@@ -86,7 +86,8 @@ python3 .claude/skills/ai-prompt-engineer/scripts/trim.py builds/<build>/renders
 ```
 
 - Cuts dead air and inhales using word timestamps (`faster-whisper`, default `base.en`) plus measured silence, keeps a 120 ms entry breath (`BREATH-A`), and keeps every designed silence from the §28G list passed as `--keep`.
-- Never overwrites the original. Prints a JSON report (cut list, transcript, E1 verification). Exit 0 = PASS, 2 = `TRIM_FAIL` → one re-trim with adjusted `--pre/--post`, then HUMAN with the cut list sent as a CapCut line.
+- Never overwrites the original. Prints a JSON report (cut list, transcript, E1 verification). Exit 0 = PASS, 2 = `TRIM_FAIL` → one re-trim with adjusted `--pre/--post` (never tighter than the defaults — no tight cuts, 2026-09-28), then HUMAN with the cut list sent as a CapCut line.
+- **No tight cuts (2026-09-28):** every word keeps 120 ms before / 250 ms after, air is only audio below −50 dB, pauses 0.45s sentence / 0.25s comma / ≤ 0.3s inside a phrase, 40 ms fade-out on every cut.
 - `--dry-run` prints the cut list without rendering.
 - Talking heads only. B-roll: head and tail only. Mode 4/5: no cuts inside the take.
 - **Unverified on production clips** — tested on a synthetic clip only (17.4s → 9.5s, all gaps closed; the tiny model left ~0.3s of entry breath). The first real run is the E11 open decision; report its numbers.
@@ -95,7 +96,7 @@ python3 .claude/skills/ai-prompt-engineer/scripts/trim.py builds/<build>/renders
 
 | Tool | Use |
 |---|---|
-| `auto-editor <in> --margin 0.08s` | Fast loudness-only dead-air cut; no inhale detection |
+| `auto-editor <in> --margin 0.25s` | Fast loudness-only dead-air cut; no inhale detection |
 | HeyGen `create_filler_word_removal` | Filler words ("um", "uh") on the platform |
 | ElevenLabs `creative_transcribe_audio` | Word timestamps on the platform, if local whisper is unavailable |
 | Higgsfield `upscale_video`, `reframe` | Upscale or reframe a finished clip — never to change 9:16 |
@@ -115,7 +116,7 @@ Per speaking character, in order. The master file's §22U table is the rule; thi
 | 7 | Name | One keyword from the script title (`Knee`); clash → add the first name (`Knee-Maria`) |
 | 8–9 | Enhance + TTS | **Verbatim:** `script_lines.py <script> --out lines.txt` (spoken lines only, no title/headings/links/visuals); **Enhance** a copy with `references/eleven_enhance_prompt.md` (tags and emphasis only, no word changes, no added "?"; `TAG-PALETTE` only as fallback); **pace (V7.65.0): `[slowly]` per paragraph, `[pause]` per sentence end** on top of the Enhance tags; `tts_budget.py enhanced.txt --script-lines lines.txt` → must say `verbatim: PASS`, fitted ≤ 10,000 per part; then `tts_api.py enhanced.txt --voice <id> --out-prefix vo/T --takes 4 --speed 0.7–1.0 --script lines.txt` (`eleven_v4`; the connector has no speed setting); target ≤ 210 wpm on each finished variant after the house cut |
 | 10 | Pick + save | Transcribe each take (faster-whisper) and diff against the script; judge the four criteria; save `<Keyword>_master.mp3`; you pick — no stop |
-| 10a | VO house cut | `python3 .claude/skills/ai-prompt-engineer/scripts/vo_trim.py <raw> --script <lines> --out <master>` — natural pauses (0.45s sentence, 0.20s comma), pace gate ≤ 210 wpm (hooks gated with their body) (§22U step 10a, E11A, V7.65.0). Too fast → re-voice slower; exit 2 otherwise → one re-trim, then HUMAN. Never on a §24I voice master |
+| 10a | VO house cut | `python3 .claude/skills/ai-prompt-engineer/scripts/vo_trim.py <raw> --script <lines> --out <master>` — natural pauses (0.45s sentence, 0.20s comma, mid-phrase as voiced), every word rings out to −50 dB + 80 ms with a 60 ms fade (no tight cuts, 2026-09-28), pace gate ≤ 210 wpm (hooks gated with their body) (§22U step 10a, E11A, V7.65.0). Too fast → re-voice slower; exit 2 otherwise → one re-trim, then HUMAN. Never on a §24I voice master |
 | — | **Voice-only builds** (all B-roll, narrated, Mode 4/5, AI Drama) | Stop here. The master is the VO, or the Seedance `audios_list` ingredient |
 | 11 | Avatar | HeyGen `create_asset_upload` → PUT → `complete_asset_upload` → `create_photo_avatar`, one per look |
 | 12 | One go | The whole take (all hooks + body, one TTS request, house-cut in one pass) stays one file — never split into per-beat segments first; `cut_points.py` gives the HK1|HK2|HK3|BODY boundaries for cutting the render afterwards (Pending Amendment 2026-09-28) |
