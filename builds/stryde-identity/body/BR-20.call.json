@@ -1,0 +1,31 @@
+{
+ "beat": "BR-20",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "The surgeon's hand passes the strap slowly across the desk into the patient's open hand, which closes gently round it. The strap keeps its shape; the shell is rigid and never bends. The phone stays still. No text, no music.",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "BR-20 confirmed image",
+ "start_approved": true,
+ "pinned": false,
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "subject_motion": "in_place",
+ "pace": "unhurried",
+ "risks": [
+  {
+   "risk": "strap bends or slides",
+   "prevented_by": "rigid-shell clause, strap stays where it is"
+  },
+  {
+   "risk": "limbs distort from over-specified motion",
+   "prevented_by": "one plain action at a named easy pace"
+  },
+  {
+   "risk": "camera travels with the subject and warps the frame",
+   "prevented_by": "phone still / steady (§27G)"
+  }
+ ]
+}

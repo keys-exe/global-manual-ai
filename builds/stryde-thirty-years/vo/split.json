@@ -1,0 +1,238 @@
+{
+ "T1": {
+  "dur": 150.0,
+  "diff": [
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "silicone",
+    "silicon"
+   ],
+   [
+    "replace",
+    "round",
+    "around"
+   ],
+   [
+    "replace",
+    "stretched",
+    "stretch"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ]
+  ],
+  "cuts": [
+   9.79,
+   15.55,
+   23.2
+  ],
+  "gaps": [
+   [
+    9.68,
+    9.9
+   ],
+   [
+    15.38,
+    15.72
+   ],
+   [
+    22.76,
+    23.64
+   ]
+  ]
+ },
+ "T2": {
+  "dur": 166.32,
+  "diff": [
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "silicone",
+    "silicon"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ]
+  ],
+  "cuts": [
+   10.84,
+   17.76,
+   25.48
+  ],
+  "gaps": [
+   [
+    10.68,
+    11.0
+   ],
+   [
+    17.6,
+    17.92
+   ],
+   [
+    25.08,
+    25.88
+   ]
+  ]
+ },
+ "T3": {
+  "dur": 145.04,
+  "diff": [
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "replace",
+    "centimetres",
+    "centimeters"
+   ],
+   [
+    "delete",
+    "straps that look like this are",
+    ""
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ]
+  ],
+  "cuts": [
+   9.42,
+   14.92,
+   22.5
+  ],
+  "gaps": [
+   [
+    9.26,
+    9.58
+   ],
+   [
+    14.78,
+    15.06
+   ],
+   [
+    22.1,
+    22.9
+   ]
+  ]
+ },
+ "T4": {
+  "dur": 156.8,
+  "diff": [
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ],
+   [
+    "replace",
+    "orthopedic",
+    "orthopaedic"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "stryde",
+    "stride"
+   ]
+  ],
+  "cuts": [
+   10.14,
+   15.74,
+   23.0
+  ],
+  "gaps": [
+   [
+    9.94,
+    10.34
+   ],
+   [
+    15.54,
+    15.94
+   ],
+   [
+    22.66,
+    23.34
+   ]
+  ]
+ }
+}
