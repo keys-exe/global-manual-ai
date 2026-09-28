@@ -8,7 +8,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_184020_9f236d71-63cf-4fcf-9f32-b0bcc44ef33b.png",
- "start_approved": false,
+ "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,
@@ -29,6 +29,6 @@
    "prevented_by": "start frame caught mid-slide, one slide in about a second, HOLD-C + NEG-WARP-C"
   }
  ],
- "approved_by": "user: CONFIRM HOOK 1 (2026-09-28)",
+ "approved_by": "user Confirm on the board (A-HKb v2 frame)",
  "fix_note": "Fault in the frame (user Fix: FIX THE PRODUCT): v1 frame showed a flat pad, not the strap \u2192 v2 frame edited with the product refs; motion shortened to one final press and release (the strap starts seated), no prompt resent"
 }
