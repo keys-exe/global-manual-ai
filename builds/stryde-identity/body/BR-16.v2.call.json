@@ -1,0 +1,34 @@
+{
+ "beat": "BR-16",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"strap_seated_straighten\",\"subject\":\"Dean, fifty-eight, heavyset, check flannel shirt, cargo shorts, steel-toe boots, by the open van, both hands on the strap seated below his right kneecap.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Camera lags the subject, never anticipates, never travels with it. Still drifting at the cut.\",\"framing\":\"Medium from low in front, as in the start frame.\"},\"motion\":\"His hands lift off the seated strap and he straightens up slowly, one easy move over about two seconds, looking down at his knee, satisfied. The strap stays exactly where it is below the kneecap; nothing is pulled or adjusted. Everything keeps the exact form, proportion and count it has in the start frame; nothing melts, merges, splits or grows. Subject fully in frame throughout. Same person every frame: same face, age, hair and wardrobe; five separate fingers on each hand; limbs keep their length and bend only at real joints. The strap keeps the start frame's exact geometry every frame: same two equal peaks, same centred notch, same chrome slides and grey stryde wordmark. The shell is hard moulded plastic and never bends, flexes, wobbles or jiggles. Mass and momentum: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly; fabric and the soft elastic band lag and settle after the body stops.\",\"lighting\":\"Capture exactly as in the start frame: same tone, noise and colour temperature, no grading change across the clip.\",\"style\":\"Ordinary everyday footage, natural daylight colour, unretouched.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no jelly wobble, no rubbery shell, no strap moving, no strap sliding down, no band being pulled, no hands on the band, no phone, no smartphone, no mobile phone anywhere in the frame, no camera in frame, no AI face, no plastic skin, no extra fingers, no fused fingers, no deformed limbs, no CGI look, no text, no music\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "BR-16 confirmed image",
+ "start_approved": false,
+ "fix_note": "wrong placement -> user: use the confirmed seated end frame as the solo start image",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "subject_motion": "in_place",
+ "pace": "named",
+ "risks": [
+  {
+   "risk": "phone appears in frame",
+   "prevented_by": "no phone named anywhere; phone negatives"
+  },
+  {
+   "risk": "product bends or wobbles",
+   "prevented_by": "HOLD-PC rigid-shell clause + product negatives"
+  },
+  {
+   "risk": "the Fix-note fault repeats",
+   "prevented_by": "fault fixed at source in image + motion"
+  }
+ ]
+}

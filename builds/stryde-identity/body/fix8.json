@@ -1,0 +1,35 @@
+{
+ "BR-13": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "C1",
+   "P0",
+   "front",
+   "back",
+   "worn_front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA close shot from a low side angle at step height on the staircase, three-quarter front, framed from her hips down to her feet: Maureen is walking UP the carpeted stairs mid-stride — her right foot planted flat on the tread above, right knee bent and taking her weight with the strap on it facing the camera, her left foot pushing off from the step below, her heel lifting. Her right hand hangs relaxed and empty beside her hip, clearly NOT touching the mahogany handrail just above it. The beige carpet treads with thin brass stair rods run across the frame; the white balustrade and the handrail cross the top of the frame. THE SAME STAIRCASE as in the second attached image.\n\nTHE SAME WOMAN exactly as in the attached character sheet — Maureen, seventy-four. Wearing a burgundy long-sleeve jersey tunic, a denim skirt ending a hand above the knee, sheepskin slippers.\n\nThe strap exactly as in the two attached product photos: a rigid matte-black shell, its top edge rising into two matching rounded peaks either side of a concave notch, the lowercase grey stryde wordmark horizontal beneath the notch, a brushed chrome slide with three dotted chevrons at each end, and a black coarse-knit elastic band about half the shell's height with two small matte-black keeper loops. The strap is worn on the RIGHT leg ON THE PATELLAR TENDON, directly BELOW the kneecap, centred on the FRONT of the knee: the concave notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face bare above, a chrome slide at each outer side of the leg, the band running round behind the knee, snug and flat on bare skin, the wordmark horizontal and readable. Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a quarter of the leg's width at the top of the calf. Seated exactly as in the last attached worn reference.\n\nReal unretouched skin: age spots, fine creases, fine hairs, visible pores, the band pressing a shallow dent into the flesh.\n\nLight: soft east morning daylight through the front-door glass.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no strap on the left knee, no second strap, no shell on the thigh, no shell on the kneecap, no shell low on the shin, no shell rotated to the side, no slide on the front of the knee, no strap over clothing, no loose band tail, no hand on the rail, no hand gripping the rail, no hand touching the banister, no hand on the balustrade, no both feet on one step, no face in frame, no spiral stairs, no open-tread stairs, no different staircase, no ramp, no floor where the steps should be, no missing brass rods, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "1d353e88-0042-4021-9a6c-e7b8f93d5baa",
+    "role": "image_references"
+   },
+   {
+    "value": "8bebe73c-ca40-4bc9-8c16-c5210738431e",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   },
+   {
+    "value": "c4213a99-5f07-4eb8-92e7-0b03c1bd297b",
+    "role": "image_references"
+   },
+   {
+    "value": "c993bd6d-53ab-4b71-9bbe-261b7961eea6",
+    "role": "image_references"
+   }
+  ]
+ }
+}

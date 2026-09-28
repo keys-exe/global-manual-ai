@@ -1,0 +1,34 @@
+{
+ "beat": "HK1-B",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "Start from 图片1. The woman walks down the stairs at a normal, easy pace, one step after another. The strap stays exactly where it is on her right knee and keeps its shape. Handheld phone, steady. No text, no music.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "HK1-B_v1.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "subject_motion": "travels",
+ "pace": "unhurried",
+ "risks": [
+  {
+   "risk": "legs/knee distort from over-specified motion",
+   "prevented_by": "one plain action at a named easy pace, nothing else asked"
+  },
+  {
+   "risk": "strap slides or bends on the knee",
+   "prevented_by": "'stays exactly where it is … keeps its shape'"
+  },
+  {
+   "risk": "camera swings round the leg (old v1 fault)",
+   "prevented_by": "'handheld phone, steady' — no camera move asked"
+  }
+ ],
+ "fix_note": "User: v1 distorted, JSON too complex → plain simple text prompt, one action (walk down at an easy pace), no camera tilt or step-toward-lens staging"
+}

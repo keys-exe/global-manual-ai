@@ -1,0 +1,38 @@
+{
+ "beat": "HK2-B",
+ "connector": "seedance",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "@image1 is the opening frame: the clip opens on exactly this framing, light and camera position. @image2 and @image3 are the strap, one object seen from the front and from behind, exactly as shown: a rigid matte-black shell with two peaks on top, a chrome slide at each end, a black woven band. @image4 is the man: his age, build and work clothes.\n\nExtreme close-up of his knee in work shorts wearing the strap as he steps down off the back of the van onto the yard, then walks off with a cardboard box on his shoulder. As he walks off, the camera eases back so the box on his shoulder comes into view. The strap stays exactly where it is on his right knee and keeps its shape; the shell is rigid and never bends. No text, no music, no speech.\n",
+ "duration": 5,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": "HK2-B_v5.png",
+ "start_approved": true,
+ "pinned": false,
+ "files": [
+  "x",
+  "x",
+  "x",
+  "x"
+ ],
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "subject_motion": "travels",
+ "pace": "unhurried",
+ "risks": [
+  {
+   "risk": "strap bends or changes shape",
+   "prevented_by": "product refs @image2/@image3 + rigid shell clause"
+  },
+  {
+   "risk": "opening re-composed / different person or place",
+   "prevented_by": "@image1 as the opening frame"
+  },
+  {
+   "risk": "over-specified motion distorts",
+   "prevented_by": "one plain action at an easy pace (user: simple prompts)"
+  }
+ ],
+ "fix_note": "User: follow the visual (VN02 bottom) → added walking off with a box on his shoulder, camera eases back to show it; @image4 = C2"
+}

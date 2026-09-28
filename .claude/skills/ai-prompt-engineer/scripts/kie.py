@@ -8,7 +8,7 @@ Needs KIE_API_KEY in the environment (an environment secret; never pasted in cha
   kie.py image  MODEL --prompt-file P [--ref URL ...] [--out FILE]
         MODEL: nano-banana-pro | nano-banana-2 |
                gpt-image-2-5-sunburst-text-to-image | gpt-image-2-5-sunburst-image-to-image
-  kie.py seedance --prompt-file P --ref-image URL ... [--ref-audio URL ...]
+  kie.py seedance --prompt-file P --ref-image URL ... [--ref-audio URL ...] [--ref-video URL ...]
         [--duration 10] [--no-audio] [--out FILE]
   kie.py kling --prompt-file P --image URL [--end-image URL] [--duration 5] [--out FILE]
         Kling 3.0 (`kling-3.0/video`) — the Kling fallback when the Kling account is short of the
@@ -108,6 +108,7 @@ def main():
     i.add_argument("--out")
     s = sub.add_parser("seedance"); s.add_argument("--prompt-file", required=True)
     s.add_argument("--ref-image", nargs="+", required=True); s.add_argument("--ref-audio", nargs="*", default=[])
+    s.add_argument("--ref-video", nargs="*", default=[])
     s.add_argument("--duration", type=int, default=5); s.add_argument("--no-audio", action="store_true")
     s.add_argument("--out")
     k = sub.add_parser("kling"); k.add_argument("--prompt-file", required=True); k.add_argument("--image", required=True)
@@ -150,13 +151,16 @@ def main():
             sys.exit(json.dumps({"error": "Seedance duration must be 4-30s, stated (E6)"}))
         imgs = [as_url(r) for r in a.ref_image]
         auds = [as_url(r) for r in a.ref_audio]
-        if len(imgs) > 30 or len(auds) > 10:
-            sys.exit(json.dumps({"error": "Seedance takes at most 30 images and 10 audio references"}))
+        vids = [as_url(r) for r in a.ref_video]
+        if len(imgs) > 30 or len(auds) > 10 or len(vids) > 10:
+            sys.exit(json.dumps({"error": "Seedance takes at most 30 images, 10 audio and 10 video references"}))
         inp = {"prompt": prompt, "reference_image_urls": imgs, "resolution": "720p",
                "aspect_ratio": "9:16", "duration": a.duration,
                "generate_audio": not a.no_audio, "output_format": "mp4"}
         if auds:
             inp["reference_audio_urls"] = auds
+        if vids:
+            inp["reference_video_urls"] = vids
         task = create("bytedance/seedance-2-5", inp)
     res, rc = wait(task, a.out)
     print(json.dumps(res, indent=2)); sys.exit(rc)
