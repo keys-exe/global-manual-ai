@@ -54,6 +54,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   `vo/th2/TH-HK1+BODY.mp4` (137.6s), `TH-HK2+BODY.mp4` (133.6s), `TH-HK3+BODY.mp4` (134.2s), 4 Mb/s like the source.
   Board: TH-HK1-BODY, TH-HK2-BODY, TH-HK3-BODY, TH-ONEGO (review). Standards §22U step 12 updated to this.
 
+  ~12:10: user "TRIM THE TALKING HEADS" → trim.py (E11) on the three hook+body videos: HK1 137.6→122.0s, HK2 133.6→117.6s,
+  HK3 134.2→119.8s (52–62 cuts each, all PASS, every word kept) → `vo/th2/TH-HKn+BODY.trim.mp4`, v2 on each card.
+  NOTE for B-roll timing: the trim moved every line earlier, so E6 lengths come from the trimmed videos' own word
+  timestamps (`TH-HKn+BODY.trim.json`), not from T2.ALL.
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.
