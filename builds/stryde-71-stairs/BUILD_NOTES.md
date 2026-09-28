@@ -47,10 +47,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   G1 (Kie ae8336fc, 190.5 Hz) ✓. G2 (Kie 773d0b83) 210.5 Hz = +10.5% → same-voice gate FAIL; cause in my prompt (quote "lighter,
   a little higher") → G2 v2 (Kie 4ea2119b, quote in her own voice) 222.2 Hz = +16.6% → FAIL again. Kie spend 810 credits.
 
+- 20:10–20:50 UTC: user "USE THE NEXT LINE" → G3 "Six weeks ago… One step at a time." (Kie 58f49e8d) 205.1 Hz, +7.7% → gate PASS.
+  `voice_source.py G1 G3` → 31.5s → **cloned `Stairs` = fjMYIJcXAxAnyO48q9x3**. `eleven_v4` ×4 (one request each, Enhance text)
+  → house cut: T1 168.4s PASS (**working take**), T2 FAIL (breath 91.6s), T3 170.6s PASS, T4 172.5s PASS.
+  `vo/th_split.py` cut TH-01…16 from T1 between words (595/613 words aligned) → Kie public URLs → HeyGen photo avatar
+  `f9ceab51c06ef232a9d1ebc53c5d40f2` (N-VOICE-IMG v2). **Avatar V rejected motionPrompt (no animation reference in the group)**
+  → §22U fallback (c): Avatar IV + expressiveness high + motionPrompt, 16/16 rendered (`vo/th/heygen.json`), `trim.py` PASS ×16.
+  Board: N-VOICE-G3, VOICE-SOURCE-N, VO-T1-FULL (4 takes), TH-01…16 (untrimmed v1 + trimmed v2). Audio as mp3-in-mp4 (board refuses .mp3).
+
 ## Where it stands
-- **Voice stage stopped (§22X / §22U step 2):** two G2 generations failed the same-voice gate. A third needs the user's go.
-  Recommendation: make the second take the next script line with no quoted speech — "Six weeks ago, I was going down my stairs
-  backwards. One step at a time." (G3 rule) — the quote is what keeps lifting her pitch.
-- **Locked:** 3 avatars, 8 plates, N-VOICE-IMG v2 (propped, nano_banana_pro).
-- **Next on the go:** second take → `voice_source.py` → `elevenlabs_clone.py clone Stairs_clone_source.mp3 --name Stairs`
-  → `eleven_v4` TTS ×4 from `vo/ALL.enhanced.fitted.txt` → house cut → HeyGen Avatar V TH-01…TH-16 → `trim.py`.
+- **Voice stage done** (no stop, Manual 2026-09-28): everything on the board To check. A confirmed different VO take → re-cut + regenerate the THs.
+- **Next:** `assemble.py --lengths` from `vo/cut/VO_T1.beats.json` → B-roll durations; step 6 Hook 1 images (HK-01a, HK-02a) → the hook gate.
