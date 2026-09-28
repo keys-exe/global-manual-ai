@@ -1,0 +1,47 @@
+{
+  "positive_global_styles": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif",
+    "instrumental",
+    "moderate tempo"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "Joan, it's me",
+      "positive_local_styles": [
+        "warm soft piano",
+        "friendly, intimate"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 4567,
+      "lines": []
+    },
+    {
+      "section_name": "Walking up my stairs",
+      "positive_local_styles": [
+        "the full theme, warm and steady",
+        "piano motif with string quartet",
+        "hopeful, confident, uplifting"
+      ],
+      "negative_local_styles": [
+        "percussion"
+      ],
+      "duration_ms": 38286,
+      "lines": []
+    }
+  ]
+}

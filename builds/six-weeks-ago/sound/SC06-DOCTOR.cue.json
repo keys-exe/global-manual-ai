@@ -1,0 +1,47 @@
+{
+  "scene": "SC06-DOCTOR",
+  "story_part": "After",
+  "length_s": 36.233,
+  "theme": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif"
+  ],
+  "avoid": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals"
+  ],
+  "tempo": "slow",
+  "sections": [
+    {
+      "name": "Same X-ray",
+      "start": 0.0,
+      "end": 15.7,
+      "energy": "low",
+      "styles": [
+        "light quizzical piano",
+        "gentle curiosity",
+        "sparse"
+      ]
+    },
+    {
+      "name": "Keep wearing it",
+      "start": 15.7,
+      "end": 36.233,
+      "energy": "mid",
+      "mix_gain_db": 1.5,
+      "styles": [
+        "warm piano motif with soft strings",
+        "quiet triumph, gentle smile"
+      ]
+    }
+  ],
+  "timeline_at_HK1_s": 369.7
+}
