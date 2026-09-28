@@ -49,7 +49,7 @@
   },
   "story_day": 2,
   "light": {
-   "source": "front-door stained glass (east) + landing skylight",
+   "source": "front-door stained glass (east) + tall landing window",
    "key_side": "R",
    "time": "morning",
    "arc": "after: sun in the house, warmer and open",
@@ -397,7 +397,7 @@
   },
   "story_day": 1,
   "light": {
-   "source": "front-door stained glass (east) + landing skylight",
+   "source": "front-door stained glass (east) + tall landing window",
    "key_side": "R",
    "time": "morning",
    "arc": "problem: grey overcast morning, flat and cool",
@@ -426,7 +426,7 @@
   },
   "story_day": 1,
   "light": {
-   "source": "front-door stained glass (east) + landing skylight",
+   "source": "front-door stained glass (east) + tall landing window",
    "key_side": "R",
    "time": "morning",
    "arc": "problem: grey overcast morning, flat and cool",
@@ -513,7 +513,7 @@
   },
   "story_day": 1,
   "light": {
-   "source": "front-door stained glass (east) + landing skylight",
+   "source": "front-door stained glass (east) + tall landing window",
    "key_side": "R",
    "time": "morning",
    "arc": "problem: grey overcast morning, flat and cool",
@@ -571,7 +571,7 @@
   },
   "story_day": 1,
   "light": {
-   "source": "front-door stained glass (east) + landing skylight",
+   "source": "front-door stained glass (east) + tall landing window",
    "key_side": "R",
    "time": "morning",
    "arc": "problem: grey overcast morning, flat and cool",
@@ -600,7 +600,7 @@
   },
   "story_day": 1,
   "light": {
-   "source": "front-door stained glass (east) + landing skylight",
+   "source": "front-door stained glass (east) + tall landing window",
    "key_side": "L",
    "time": "morning",
    "arc": "problem: grey overcast morning, flat and cool",
@@ -1035,7 +1035,7 @@
   },
   "story_day": 2,
   "light": {
-   "source": "front-door stained glass (east) + landing skylight",
+   "source": "front-door stained glass (east) + tall landing window",
    "key_side": "R",
    "time": "morning",
    "arc": "after: sun in the house, warmer and open",
@@ -1064,7 +1064,7 @@
   },
   "story_day": 2,
   "light": {
-   "source": "front-door stained glass (east) + landing skylight",
+   "source": "front-door stained glass (east) + tall landing window",
    "key_side": "R",
    "time": "morning",
    "arc": "after: sun in the house, warmer and open",
@@ -1093,7 +1093,7 @@
   },
   "story_day": 2,
   "light": {
-   "source": "front-door stained glass (east) + landing skylight",
+   "source": "front-door stained glass (east) + tall landing window",
    "key_side": "R",
    "time": "morning",
    "arc": "after: sun in the house, warmer and open",
@@ -1122,7 +1122,7 @@
   },
   "story_day": 2,
   "light": {
-   "source": "front-door stained glass (east) + landing skylight",
+   "source": "front-door stained glass (east) + tall landing window",
    "key_side": "R",
    "time": "morning",
    "arc": "after: sun in the house, warmer and open",
@@ -1267,7 +1267,7 @@
   },
   "story_day": 2,
   "light": {
-   "source": "front-door stained glass (east) + landing skylight",
+   "source": "front-door stained glass (east) + tall landing window",
    "key_side": "R",
    "time": "morning",
    "arc": "after: sun in the house, warmer and open",

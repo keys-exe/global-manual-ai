@@ -22,8 +22,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   plates P0 hall/stairs, P1 front room, P2 kitchen (both with P0 attached), P3 consulting room; LEFT-knee worn refs W-L-FRONT/REAR/BENT
   (sent as nano_banana_pro, Higgsfield job record says nano_banana_2 — flagged on the cards); act map 44 rows (8 TH, 4 MECH),
   angles.py PASS; wardrobe map; 51 cards on Current; docs locations/actmap/wardrobe on Plan + Current. Higgsfield 17,894 after.
+- Same session ~20:10 UTC: user "THE HOUSE LOOKS SMALL AND COMPRESSED" → cause: v1 prompts asked for a narrow Victorian terrace hall + galley
+  kitchen, framed through doorways. Rebuilt as a large Edwardian semi (wide hall/stairs, ~3 m ceilings, shot from inside each room, no-cramped
+  negative): P0 v2 `176c5c39`, P1 v2 `d0eeaf2a`, P2 v2 `abc2c220` (both against P0 v2); v1s on the Old board. Layout unchanged, angles PASS. Higgsfield 17,879.75.
 
-## Where it stands
-- **Waiting on the user:** Confirm/Fix D-DOC v2, P-PATIENT, P0–P3, W-L-FRONT/REAR/BENT; flags F2, F4, F5, F8 (built as left), F9 (built as natural pace).
+- **Waiting on the user:** Confirm/Fix D-DOC v2, P-PATIENT, P0–P2 v2, P3, W-L-FRONT/REAR/BENT; flags F2, F4, F5, F8 (built as left), F9 (built as natural pace).
 - **Next (no stop, §22U):** once D-DOC and P3 are confirmed: doctor voice-source frame (NBP, D in P3) → 2 Kling 10s takes with VOICE-DOC →
   voice_source.py → clone by API → Enhance → eleven_v4 VO (HK1–3 + body, one request) → house cut → HeyGen TH (TH rows) → E11 trim. Then hooks (step 6).

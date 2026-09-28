@@ -12,7 +12,7 @@ for l in (HERE.parent / "BUILD_SHEET.md").read_text().split("\n"):
         if len(c) > 3 and (c[1][:2] in ("HK", "B-")) and c[1] != "Beat": PH[c[1]] = c[2]
 
 LOC = {
- "L-P-HALL":  dict(plate="P0-PROP-P", tier="TRAVERSED", src="front-door stained glass (east) + landing skylight"),
+ "L-P-HALL":  dict(plate="P0-PROP-P", tier="TRAVERSED", src="front-door stained glass (east) + tall landing window"),
  "L-P-FRONT": dict(plate="P1-P-FRONTROOM", tier="PLATED", src="bay window, east wall, net curtains"),
  "L-P-KITCH": dict(plate="P2-P-KITCHEN", tier="PLATED", src="window over the sink, west wall"),
  "L-P-DOOR":  dict(plate="P0-PROP-P (exterior: the red-brick front, the step)", tier="INCIDENTAL", src="open sky over the street, east"),

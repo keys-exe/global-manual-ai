@@ -12,7 +12,7 @@ Built on the user's go (2026-09-28, "go ahead with steps 4–5"). **The avatars 
 
 | ID | Location | Channel | Owner | Beats | Tier | Plate |
 |---|---|---|---|---|---|---|
-| **PROP-P** | her house, a Victorian red-brick mid-terrace | **C0**: hall/stairs, front room and kitchen are rooms of one dwelling | P | — | **Property Sheet + plate P0** | P0-PROP-P |
+| **PROP-P** | her house, a large Edwardian red-brick semi-detached | **C0**: hall/stairs, front room and kitchen are rooms of one dwelling | P | — | **Property Sheet + plate P0** | P0-PROP-P |
 | L-P-HALL | hall and stairs | C1 (coming down vs going up, backwards, the test, the payoff) | P | HK1-01a, BR-05a, BR-05b, BR-06, BR-08, BR-09a, BR-17a, BR-17b, BR-19a, BR-19b, BR-23 | **TRAVERSED** + property plate · landmark: the dark turned banister on the right, the patterned runner with brass rods | P0 |
 | L-P-FRONT | front room, the armchair | C1 ("the chair took three tries") | P | BR-04, BR-07, BR-10, BR-13 | **PLATED** | P1-P-FRONTROOM (P0 attached) |
 | L-P-KITCH | kitchen, the dresser drawer, the garden window | C1 ("one more brace going in the drawer", "the garden") | P | HK1-02a, BR-01, BR-09b, BR-11a–c, PR-12, PR-22a, BR-22b | **PLATED** | P2-P-KITCHEN (P0 attached) |
@@ -27,21 +27,21 @@ Built on the user's go (2026-09-28, "go ahead with steps 4–5"). **The avatars 
 
 | # | Field | Content |
 |---|---|---|
-| 1 | Type and era | Victorian red-brick mid-terrace, redecorated in the 1990s and kept since |
+| 1 | Type and era | large, roomy Edwardian red-brick semi-detached (≈3 m ceilings), redecorated in the 1990s and kept since · **v2 (user Fix: "the house looks small and compressed")** — v1 was a narrow Victorian mid-terrace with a galley kitchen |
 | 2 | Shell | magnolia above a dark-stained dado rail, cream anaglypta below · tall moulded skirting, white gloss gone yellow · white-gloss architraves · stripped pine four-panel doors, brass knobs · high white ceiling, plain cornice, frosted pendant · burgundy-and-cream patterned runner with brass rods over dark floorboards → red-and-black quarry tiles at the kitchen · white cast-iron column radiators · white switches, one brass dimmer |
-| 3 | Floor map | front door → narrow hall; a single steep straight flight rises away from the door along the **left-hand** wall, banister on the open right; the front room through the doorway on the **right**; the galley kitchen at the back of the hall |
+| 3 | Floor map | front door → a wide hall (~2.5 m); a wide straight flight (>1 m) rises away from the door along the **left-hand** wall, banister on the open right; the front room through the doorway on the **right**; the large square kitchen-diner at the back of the hall |
 | 4 | Orientation | front (door glass, bay window) faces **east**: morning light; back (kitchen, garden) faces **west** |
 | 5 | Carried elements | the patterned runner and brass rods · the dark turned banister · the walking boots by the door · the telephone table · the harbour watercolour |
-| 6 | Exterior | red-brick terrace front, a low brick wall and privet hedge, the terrace opposite across a narrow street |
+| 6 | Exterior | red-brick semi front, a low brick wall and privet hedge, the semis opposite across a wide tree-lined street |
 | 7 | Standing negatives | none yet (first plate) |
 
 ### Light plans (§30K) — in room terms
 
 | Location | Sources | Key by day | Kelvin (white balance) | Fill |
 |---|---|---|---|---|
-| L-P-HALL | front-door stained glass (east, behind a camera at the door) + landing skylight | P-D1 grey morning: pale wash down the runner · P-D2: sun through the door glass, a warm patch on the stairs | P-D1 6500K · P-D2 5600K | magnolia walls |
+| L-P-HALL | front-door stained glass (east, behind a camera at the door) + tall landing window | P-D1 grey morning: pale wash down the runner · P-D2: sun through the door glass, a warm patch on the stairs | P-D1 6500K · P-D2 5600K | magnolia walls |
 | L-P-FRONT | bay window, east wall, net curtains | P-D1 grey, even · P-D2 bright through the nets | 6500K · 5600K | magnolia walls |
-| L-P-KITCH | window over the sink, west wall | P-D1 flat overcast down the galley · P-D2 brighter, still indirect (morning, west window) | 6500K · 5600K | cream cupboards |
+| L-P-KITCH | window over the sink, west wall | P-D1 flat overcast across the room · P-D2 brighter, still indirect (morning, west window) | 6500K · 5600K | cream cupboards |
 | L-D-CONS | the window camera-left (north), blinds open | D-D1 steady overcast, ~45° from camera-left on his face | 6500K | pale grey walls |
 | L-ORTHO / L-TOWPATH | side window / open sky | X-D1 neutral daylight | 5600K | — |
 
@@ -60,6 +60,8 @@ Plates: Higgsfield `gpt_image_2_5` · `variant: sunburst` · `quality: high` · 
 | W-L-FRONT | 793ca329-e4b3-49fd-943c-5e97bae5366d | front.webp, product_tq_left.jpg | 4,650 | nano_banana_pro requested · Higgsfield reported nano_banana_2 | To check |
 | W-L-REAR | c3e6103f-de8b-42e2-8929-281c4ea1e18d | back.webp, front.webp | 4,427 | nano_banana_pro requested · Higgsfield reported nano_banana_2 | To check |
 | W-L-BENT | 2730a819-cf08-49a6-b5cd-01a086777dad | product_tq_left.jpg, front.webp | 5,264 | nano_banana_pro requested · Higgsfield reported nano_banana_2 | To check |
+
+**Fix 2026-09-28 (user: "the house looks small and compressed"):** cause — the v1 prompts asked for a narrow terraced hall and a galley kitchen, framed tight through doorways with the door leaf in shot. Fixed at the source: a large Edwardian semi, wide hall and stairs, ~3 m ceilings, every room shot from standing inside it with nothing near the lens, plus a no-cramped-rooms negative on the house plates. P0 v2 `176c5c39`, then P1 v2 / P2 v2 against it; the three v1 plates are on the Old board. The layout the act map relies on (stairs on the left wall, banister right, front room right, kitchen at the back, east front / west back) is unchanged.
 
 **Model note:** the three W-L references were sent as `nano_banana_pro`; Higgsfield's job record reports `nano_banana_2`. Recorded as reported — your check decides whether they stand. **Spend:** Higgsfield 17,933.25 (after the recast) → 17,894 after these 7 (the balance moved 39.25; per-job cost not itemised).
 
