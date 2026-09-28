@@ -32,5 +32,8 @@
    "risk": "a studio narrator voice, not a person",
    "prevented_by": "AUD-A + VOICE-DOC 'Never a newsreader, never a salesman'"
   }
- ]
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "route": "kie"
 }

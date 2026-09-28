@@ -167,6 +167,7 @@ Held in the Product Sheet register (user-confirmed V7.49.29): 17× bodyweight th
 | Volume B-roll with a person, no readable wordmark | `nano_banana_2` | volume |
 | Anatomy (EG07) | `nano_banana_2` | §12A |
 | Video (B-roll) | Kling 3.0 (`kling-video-v3_0_omni`), start image, `prefer_multi_shots: false` | §4, §27G |
+| **Video route override (user, 2026-09-28: "USE KEI AI AS SUBSTITUTE FOR NOW")** | Kling connector at 3 credits → every Kling call (voice-source takes, B-roll, mechanism) goes through **Kie AI**, model `kling-3.0-omni/image-to-video` (the same Kling 3.0 Omni), same §36/§35 JSON as the prompt (Kie limit 3,072 chars), 1 start image, 1080p, 9:16, `audio` on dialogue, `prefer_multi_shots: false`; `voice/kie_kling.py` refuses to send without a preflight PASS | **ADJUST — overrides §5 "Nothing else falls back" for this build only, until you say Kling is topped up.** Logged per call as `connector: Kie AI` |
 | Voice | §22U: Kling source takes (2+) → ElevenLabs clone (API) → Enhance → `eleven_v4` → house cut | §22U |
 | Talking heads | HeyGen Avatar V driven by the VO, motion prompt on every render | §22U step 13 |
 

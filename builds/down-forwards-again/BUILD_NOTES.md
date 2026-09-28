@@ -30,9 +30,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   (job edd8434b, reported nano_banana_2) → board To check. G1–G3 Kling calls written + preflighted (PASS but 'start image approved'). Enhanced VO text
   locked (verbatim PASS, 3,180 chars). **STOP: Kling 3.0 credits** (§5 CREDIT_CAP, no reroute). See voice/VOICE_SOURCE.md.
 
+- ~20:30 UTC: user "USE KEI AI AS SUBSTITUTE FOR NOW" → ADJUST recorded in BUILD_SHEET (Mode & Model Lock): every Kling call routes through
+  Kie `kling-3.0-omni/image-to-video` (same Kling 3.0 Omni, prompt ≤3,072) via `voice/kie_kling.py` (refuses without preflight PASS), until Kling
+  is topped up. Kie 186,607.8 credits. G1–G3 preflight: only 'start image approved' left (D-VOICE-IMG still To check).
+
 ## Where it stands
 - **Confirmed on the board:** D-DOC v2, P-PATIENT, P0–P2 v2, P3, W-L-FRONT/REAR/BENT.
-- **Waiting on the user:** (1) top up Kling (~360 credits for G1–G3; the B-roll needs far more later); (2) Confirm/Fix D-VOICE-IMG.
+- **Waiting on the user:** Confirm/Fix D-VOICE-IMG (Kling credits no longer block: Kie substitute).
 - **Then straight through (§22U, no stop):** G1–G3 → voice_source.py → clone "Down" (elevenlabs_clone.py) → eleven_v4 ×4 (vo/tts_enhanced.txt)
   → split HK1/HK2/HK3/BODY → house cut → HeyGen Avatar V TH ×8 (motion prompt each) → E11 trim. Then hooks (step 6).
 - Flags still open: F2, F4, F5 (claims, voiced as written), F8 (built left), F9 (natural pace).
