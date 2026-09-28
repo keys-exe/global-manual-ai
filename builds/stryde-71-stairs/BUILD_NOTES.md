@@ -16,7 +16,18 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Mode & Model Lock; 3 avatar sheets (N-NARR, C1-LORETTA, C2-DAUGHTER) on Higgsfield (Sunburst, high, 2k, one each) → board
   To check; `docs/absorption` on Plan + Current. Higgsfield 18,072.75 credits before the cast.
 
+- same session, 2026-09-28 19:00–19:15 UTC: user "CONFIRMED ALL" → the 3 avatars and the absorption confirmed on the board;
+  flags closed on the recommendations (F1/F2/F4 voiced as written, F5 Amazon voiced never pictured, F9 1 hook, F11 verbatim, F12 natural pace).
+  Steps 4–5: 8 plates (Sunburst, one each) → board To check; act map (75 rows: 59 B-roll + 16 TH, `work/actmap.py`, all 613 words
+  covered in order, `angles.py` PASS) + wardrobe map + locations → `STEP4_5.md`, docs/actmap, docs/wardrobe, docs/locations on Plan + Current;
+  75 planned cards on Current. §22U step 1: N-VOICE-IMG (selfie on the landing, nano_banana_pro requested, Higgsfield logs nano_banana_2)
+  → board To check. Voice takes `voice/N_G1.call.json`, `N_G2.call.json` built; preflight PASS except "start image approved".
+  Higgsfield 17,998.5 · Kling 3.0 · Kie 215,672.8.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the 3 avatars; answer F1, F2, F4 (claims), F9 (1 hook?), F11 (dialect verbatim), F12 (pace).
-- **Next on the go:** steps 4–5 — property (her house: stairs, landing, kitchen) + plates (reception, store/checkout, church steps,
-  street, PT room, clinic), one-off casting, act map + wardrobe map, `angles.py`; then the voice stage (§22U) straight through.
+- **Waiting on the user:** Confirm/Fix the 8 plates and N-VOICE-IMG.
+- **Blocked:** Kling has 3.0 credits. The two 10s voice takes (and every B-roll clip after) need Kling; §5 forbids a silent reroute to Kie.
+  Top up Kling, or say "use Kie for Kling" to route through the Kie API (as stryde-lost-moments did).
+- **Next on the frame's Confirm + credits:** G1/G2 → `voice_source.py` → `elevenlabs_clone.py` (name `Stairs`) → Enhance + `eleven_v4`
+  (4 takes, one request) → house cut → HeyGen Avatar V talking heads TH-01…TH-16 → `trim.py` — no stop. Then `assemble.py --lengths`,
+  hook images (HK-01a, HK-02a) → Hook 1 gate.
