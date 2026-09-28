@@ -57,4 +57,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 ## Where it stands
 - **Voice stage done** (no stop, Manual 2026-09-28): everything on the board To check. A confirmed different VO take → re-cut + regenerate the THs.
-- **Next:** `assemble.py --lengths` from `vo/cut/VO_T1.beats.json` → B-roll durations; step 6 Hook 1 images (HK-01a, HK-02a) → the hook gate.
+- **Step 6 — Hook 1 images on the board (the hook gate):** HK-01a (N + daughter climbing, refs N + C2 + P0; job a7a09cb6) and HK-02a
+  (daughter near the top from the landing, refs C2 + P1 v3 + P0; job af12fdf3), nano_banana_2 (Higgsfield logs nano_banana_flash).
+  Beat times from `vo/cut/VO_T1.beats.json`: HK-01a 0.00–3.84s, HK-02a 4.04–7.00s, TH-01 7.00–8.94s.
+- **Next on the user's Confirm:** Hook 1 videos (Kling on Kie, §22X preflight, §27G) → the hook approved → Acts 1–7 B-roll.
