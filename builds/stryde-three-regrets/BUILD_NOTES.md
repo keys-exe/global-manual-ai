@@ -68,7 +68,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   three regrets, first person; no name, no brand). Row now CU, focus the letter. v2 prompt in `HK2-02_v2.txt`.
   Third Fix "MAKE IT A CLASSIC LETTER" → v4: cream writing paper creased from its envelope, blue-black fountain pen, dated
   "12th September", "Dear all," … "Yours sincerely, Margaret" (invented first name only). v3 prompt in `HK2-02_v3.txt`.
-- **Next:** on the user's image Confirm → HK2 clips (3 / 3 / 3s): Kling connector while it has credits, else Kie (`kie.py kling`).
+- **HK2 images all confirmed (user; HK2-02 = v4). HK2 clips generated** on Kling (`kling-video-v3_0_omni`, 1080p, 9:16,
+  multi-shot off, gen 1, preflight PASS, `hooks/HK2/*.call.json`): HK2-01 / 02 / 03 each 3.04s, 36 cr — on the board, To check.
+  HK2-02's call holds the letter's handwriting unchanged. **Kling now at 3 credits → HK3 and later clips go to Kie (`kie.py kling`).**
+- **Next:** the user's HK2 gate (Confirm/Fix the three clips) → HK3 (images first).
 
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
