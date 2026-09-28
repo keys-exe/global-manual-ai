@@ -108,3 +108,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   stairs, PLACE-LOCK centred front, refs: subject, hall, product front/back, placement front + bent), 4 variants →
   board images v12–v15, To check. The stairs clip (simple prompt `HK1-B.i2v.v5.json`) runs from the user's pick.
 - **HK1-B:** user picked image **v15** (confirmed); clip from it with the simple stairs prompt → board video v7, To check.
+## 2026-09-28: prompt-length A/B test (session_01SuuwYgAebgqT4FXLsPdQzW)
+- Result: the user saw no difference ("both look the same"). Length is not the distortion lever. Test on BR-25: same image and settings, a lean prompt (731) against the
+  long v7 prompt (2,467). Both on the board under **A/B test**, To check. Details: `tests/AB_PROMPT_LENGTH.md`.
+- Kling connector is at 3 credits; Kling video is going through Kie (`kling-3.0-omni/image-to-video`, 90 credits per 5s 1080p clip).
+  The user approved Kie for this test.
+- The board is further along than "Where it stands" above says: every hook and B-roll video is on `use`. Rewrite that section at the next resume.
