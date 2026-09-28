@@ -69,6 +69,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   ~12:40: TH-HK1/2/3-BODY v3 (gentle trim) written to the board as `review` — the user's earlier Confirm was on the tight v2.
   HK1 start image v1 generated (Higgsfield job 996705d3…, logged nano_banana_2) → board card `HK1`, image To check.
 
+  ~12:55: user approved HK1 image ("proceed HK2 and HK3"). Start images, no selfie, all PROPPED/overhead at P2 bench:
+  HK2 (seated at the vice, half-built generic brace clamped beside him), HK3-BR (overhead, halves, hand mid-lift),
+  HK3-BR2 (restaged for no selfie: sleeve half held up to the propped phone, he lowers it, focus taps to his eyes — still camera),
+  HK3-TH (bench, sleeve half in hand). All on the board as review. Board file storage FULL (1 GB, every asset referenced):
+  HK3-BR image not uploaded — card carries the Higgsfield link only. Needs the user's call on what to free.
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.
