@@ -106,3 +106,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   **Board asset storage is full (1 GB platform cap)** — the four could not be uploaded; cards set to imageStatus
   `generating` with the Fix note in `imageFault`. Waiting on the user: delete the 52 assets used only by the archived
   old HK1 cards (~300 MB) or start a second board. (User asked to raise the limit to 20 GB — not possible from here.)
+- (2026-09-28, 10:30 UTC) User: "delete those" — the 52 board assets used only by the archived old HK1 cards were
+  deleted (their prompts/settings stay in `archive/board_2026-09-28/`). BR-04/18/24/25 fixes uploaded and on the board
+  as To check. Note: the board's asset store caps at 1 GB — watch it before the Kling video round (≈27 × 10 MB).
