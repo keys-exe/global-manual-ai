@@ -50,3 +50,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   then step 6: the hooks one by one (HK1 first, split layout EG01), as prompts + generations on the board.
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),
   F7 (`package_closed.jpg` missing), F8 (AVATAR-SHEET doc inconsistency), F10 (watermark omit).
+- (2026-09-28, later) **Hook videos switched to Seedance 2.5 (user: "re do all of them, use seedance instead of kling").**
+  Via Kie (`kie.py seedance`, 720p, 5s, no audio, ingredients: @image1 = confirmed start image, @image2–3 = front/back).
+  Top shots take the user's HK1-T clip as @video1, the movement to copy (user: "use the hk1t i sent for inspo in all
+  the hk t"); `kie.py` gained `--ref-video` for it. HK1-T itself stays the user's clip. The Kling HK2 videos are kept as v1.
+
