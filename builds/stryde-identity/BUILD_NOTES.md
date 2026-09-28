@@ -85,3 +85,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   BR-06 failed at Kie; BR-17/18/20/21/22/23 were killed mid-call (not on the board); BR-24/25/26a/26b never sent.
   Card video model set to Kling. E6 note: Kling's floor is 3s, so re-run the lengths with 3–15s before the video calls.
   Nothing more is sent until the user says go.
+- (2026-09-28) **Strict image-route rule (user): anatomy / mechanism images → Higgsfield `nano_banana_pro` or
+  `nano_banana_2` only. Kie GPT Image (`gpt-image-2-5-sunburst-image-to-image`) only for realistic (Mode 1 photo) images.**
+  So MECH-01/02/07/10/11/15 v1 (made with Kie GPT Image before this rule) are the wrong route — kept on their cards as
+  history, to be remade on Higgsfield (act map: NB2 for mechanism) when the user says go.
