@@ -16,6 +16,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Mode & Model Lock; 2 avatar sheets (D-DOC, P-PATIENT) on Higgsfield (Sunburst, high, 2k, one each) → board To check;
   `docs/absorption` on Plan + Current. Higgsfield 17,998.5 credits before the cast.
 
+- Same session 19:48 UTC: user "USE BRITISH ETNICITY" → D-DOC recast white British (v2 `71b20c5a`), v1 moved to Old; VOICE-DOC → light Yorkshire. Hourly check 19:41 found no Fixes.
+
 ## Where it stands
 - **Waiting on the user:** Confirm/Fix the 2 avatars; answer F2, F4, F5 (claims), F8 (left knee?), F9 (pace).
 - **Next on the go:** steps 4–5 — consulting-room plate (doctor TH), her house (stairs, kitchen, armchair, garden window),

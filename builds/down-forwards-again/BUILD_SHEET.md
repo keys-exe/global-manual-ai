@@ -180,43 +180,43 @@ Everyone with two or more beats gets a sheet. **Two:** **D-DOC** the doctor (nar
 
 | Sheet | Job ID | File | Board |
 |---|---|---|---|
-| D-DOC | `4623967d-f33a-41a3-82f4-e849032b8405` | `cast/D-DOC_v1.png` (1520×2688) | To check |
+| D-DOC | v2 `71b20c5a-f8ef-48d8-8645-f5685a4a92b6` (v1 `4623967d…` → Old board) | `cast/D-DOC_v2.png` (1520×2688) | To check |
 | P-PATIENT | `02333782-0c9a-4696-b3f1-fcc7480fe8db` | `cast/P-PATIENT_v1.png` (1520×2688) | To check |
 
-Manual run: the sheets are **not checked by me** (§18B step 3) — Confirm or Fix each on the board. Prompts: `cast/<ID>.prompt.txt`, built from Appendix A by ID in `cast/build_sheets.py` (`CAM-LOCK` → `AVATAR-SHEET` + `SHEET-GRID` → face fill (+ `APPROACH-PRO` for D, §19B) → `SKIN-T` → `CAP-SHARP` → `CAP-FILE` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILE` + `NEG-DEFAULT-FACE` (D: last two clauses dropped, §19B)), 9,962 / 9,466 chars. Spend: 2 Sunburst jobs, one render each (Higgsfield 17,998.5 before).
+Manual run: the sheets are **not checked by me** (§18B step 3) — Confirm or Fix each on the board. Prompts: `cast/<ID>.prompt.txt`, built from Appendix A by ID in `cast/build_sheets.py` (`CAM-LOCK` → `AVATAR-SHEET` + `SHEET-GRID` → face fill (+ `APPROACH-PRO` for D, §19B) → `SKIN-T` → `CAP-SHARP` → `CAP-FILE` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILE` + `NEG-DEFAULT-FACE` (D: last two clauses dropped, §19B)), 9,983 (v2) / 9,466 chars. Spend: 3 Sunburst jobs (D-DOC v1 + v2, P), one render each (Higgsfield 17,998.5 before).
 
 ### Identity strings — read off the renders (§7)
 
 | ID | Identity string |
 |---|---|
-| D | British South Asian man, 56, tall and broad-shouldered, a little thick at the middle; long face, broad forehead, warm dark-brown eyes under thick level brows, long straight nose; short grey-and-black beard close on the jaw; thick black hair heavily greyed, short at the sides, swept back on top; white knee-length coat open over a pale blue shirt (open collar, no tie), black stethoscope round the neck, charcoal trousers, brown leather lace-ups |
+| D | white British man, 54, medium height, stocky and broad through the chest; broad square face, light blue-grey eyes, short nose, fair ruddy freckled skin; short sandy-red hair greying at the sides, side parting, clean-shaven; white knee-length coat open over a pale blue shirt (open collar, no tie), black stethoscope round the neck, charcoal trousers, brown leather lace-ups |
 | P | white British woman, 69, short and petite, slight stoop; small fine-boned oval face, pale grey-blue eyes, small straight nose, thin upper lip, a small mole above the right corner of the upper lip; chin-length layered hair dyed chestnut brown with silver roots at the parting, tucked behind the ears; duck-egg blue crew-neck jumper, knee-length navy-and-cream check wool skirt, flesh tights, dark brown suede ankle boots |
 
 ### §19A axis tables
 
 | Axis | D | P |
 |---|---|---|
-| Face | long, broad forehead, level brows | small, fine-boned oval, pointed chin |
-| Hair | black heavily greyed, short, swept back; short beard | chestnut dye, silver roots, chin-length layers |
-| Age position | 56 | 69 |
-| Build | tall, broad, thick middle | short, petite, stooped |
+| Face | broad square, wide-set blue-grey eyes, snub nose | small, fine-boned oval, pointed chin |
+| Hair | sandy-red greying, short, side parting; clean-shaven | chestnut dye, silver roots, chin-length layers |
+| Age position | 54 | 69 |
+| Build | medium height, stocky, broad chest | short, petite, stooped |
 | Class / wardrobe | clinician: white coat, shirt, stethoscope | home: knit jumper, check skirt, tights |
-| Marker | small scar on the left upper lip | mole above the right upper lip |
+| Marker | flat brown mole high on the right cheekbone | mole above the right upper lip |
 | Voice | British, measured GP (below) | none (no lines) |
 | Environment | consulting room | her house — stairs, kitchen, armchair |
 
-**Clearance:** D–P differ on 8 axes ✓. Against the roster (stryde-identity, stryde-lost-moments, stryde-regrets, stryde-three-regrets, stryde-71-stairs): **no South Asian character anywhere** — D shares no face architecture with any sheet; P's nearest is regrets N (white British woman, 62, slim) — different face (long narrow vs small oval), hair (silver bob vs chestnut dye with roots), build (tall upright vs petite stooped), wardrobe, marker ✓. D is §19B approachable (`APPROACH-PRO`, the sheet's no-smile kept).
+**Clearance:** D–P differ on 8 axes ✓. Against the roster (stryde-identity, stryde-lost-moments, stryde-regrets, stryde-three-regrets, stryde-71-stairs): the white British men on file (identity N 60 long oval face, wavy dark-grey hair and beard; identity C2 58 round face, shaved head; regrets C1 67 long lean face; regrets C3 72 round, white hair) share no face architecture, hair or build with D (square face, sandy-red hair, clean-shaven, stocky); P's nearest is regrets N (white British woman, 62, slim) — different face (long narrow vs small oval), hair (silver bob vs chestnut dye with roots), build (tall upright vs petite stooped), wardrobe, marker ✓. D is §19B approachable (`APPROACH-PRO`, the sheet's no-smile kept).
 
 ### Doctor — `VOICE-DOC` (§22D) and §20 constraint sheet
 
 **`VOICE-DOC`** (goes verbatim into every §22U step-2 take, inside Kling's 2,500 limit)
 ```
-A British South Asian man in his mid-fifties, a family doctor raised in the English Midlands: a warm, clear, mid-low voice with a light Midlands English accent and no put-on polish. Speaks the way he talks to one patient across his desk — unhurried, plain, certain, a little dry; short sentences land and stop. Statements fall at the end, never up. Stress comes by slowing down and dropping lower, never by getting louder. Never a newsreader, never a salesman.
+A white British man in his mid-fifties, a family doctor from the north of England: a warm, clear, mid-low voice with a light Yorkshire accent and no put-on polish. Speaks the way he talks to one patient across his desk — unhurried, plain, certain, a little dry; short sentences land and stop. Statements fall at the end, never up. Stress comes by slowing down and dropping lower, never by getting louder. Never a newsreader, never a salesman.
 ```
 
 | Field | D — the doctor |
 |---|---|
-| Accent | light Midlands English (British Asian, born in the UK); never RP newsreader, never an Indian-English accent put on for effect |
+| Accent | light Yorkshire English; never RP newsreader, never a broad comedy accent |
 | Pacing | measured, ~150–160 wpm before the house cut (the reference runs 209) |
 | Posture / rest / gesture / ocular / rig | **seated** at his consulting-room desk, phone on a small tripod across the desk at eye level, chest-up (EG spine); hands resting on the desk edge, free for one Economical gesture a line; eyeline on the lens; framed at steps 4–5 |
 | Audio proximity | R1 (phone ~1 m across a desk) |
@@ -229,6 +229,8 @@ A British South Asian man in his mid-fifties, a family doctor raised in the Engl
 | Voice name (§22U step 7) | `DownForwards-Doctor` (proposed) |
 
 ---
+
+**Recast 2026-09-28 (user: "USE BRITISH ETNICITY"):** D-DOC v1 (British South Asian) → v2 white British man, 54; v1 kept on the Old board. P was already white British. §34: `VOICE-DOC` and the identity string updated; nothing else built on D yet.
 
 ## Flags (decisions for the user — nothing below was changed silently)
 
