@@ -27,6 +27,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **§22U step 10 done: T4 locked by the user**, then re-cut to the user's own reference edit (house cut:
   butt joins, words to −38 dB, no breaths). Masters HK1/HK2/HK3 = 57.85 / 57.91 / 58.08s, verbatim, on the board
   (`VO-MASTER-HK1…3`, review). Word timestamps in `vo/master/HK<n>.words.json`. Reference file: `vo/ref/`.
+- **VO stays on eleven_v3 (user, 2026-09-28):** the Eleven v4 + Enhance rule (§22U step 8) is forward only — "no re do
+  just add this for next tasks". The locked T4 masters are not redone; any new VO on a later build uses v4 + Enhance.
 - **Next:** E6 — set every B-roll row's duration from the body word timestamps (span of its line + 0.5s, Kling 3–15s),
   then step 6: the hooks one by one (HK1 first, split layout EG01), as prompts + generations on the board.
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),
