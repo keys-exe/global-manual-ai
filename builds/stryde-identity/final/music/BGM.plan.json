@@ -1,0 +1,87 @@
+{
+  "positive_global_styles": [
+    "warm hopeful modern acoustic ad underscore",
+    "soft felt piano",
+    "light plucked acoustic guitar",
+    "gentle pulsing rhythm",
+    "clean, simple, unobtrusive under a voice-over",
+    "consistent key and instrumentation throughout",
+    "instrumental",
+    "moderate tempo"
+  ],
+  "negative_global_styles": [
+    "vocals",
+    "heavy drums",
+    "EDM drop",
+    "dark or sad mood",
+    "dramatic trailer hits",
+    "busy melody",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "Hook",
+      "positive_local_styles": [
+        "solo soft felt piano motif",
+        "sparse, curious"
+      ],
+      "negative_local_styles": [
+        "percussion",
+        "guitar"
+      ],
+      "duration_ms": 4800,
+      "lines": []
+    },
+    {
+      "section_name": "Problem and how it works",
+      "positive_local_styles": [
+        "piano with soft plucked guitar",
+        "sparse and gentle",
+        "no percussion yet"
+      ],
+      "negative_local_styles": [
+        "percussion",
+        "drums"
+      ],
+      "duration_ms": 19600,
+      "lines": []
+    },
+    {
+      "section_name": "Proof and everyday life",
+      "positive_local_styles": [
+        "light percussion and soft bass enter",
+        "clearly fuller than before",
+        "warm, confident, uplifting"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 25000,
+      "lines": []
+    },
+    {
+      "section_name": "Social proof and offer",
+      "positive_local_styles": [
+        "fullest arrangement, bright and positive",
+        "clearly the biggest part of the track",
+        "soft claps and strings added"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 12400,
+      "lines": []
+    },
+    {
+      "section_name": "Close",
+      "positive_local_styles": [
+        "settles to piano and guitar playing the motif",
+        "keeps playing to the very last second, final chord still ringing at the end"
+      ],
+      "negative_local_styles": [
+        "fade out",
+        "silence",
+        "early ending"
+      ],
+      "duration_ms": 4400,
+      "lines": []
+    }
+  ]
+}

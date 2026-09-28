@@ -8,7 +8,7 @@ SCENE.json:
   {"scene": "SC-03",
    "picture": "SC-03.cut.mp4",            # the scene's picture-locked cut (whole shots, §24L)
    "dialogue": "SC-03.dialogue.wav",      # the scene's dialogue, isolated (Voice Isolator), aligned to the cut
-   "room_tone": "LOC-KITCHEN.tone.mp3",   # the location's looping room tone (§24M) — looped under the whole scene
+   "room_tone": "LOC-KITCHEN.tone.mp3",   # the location's looping room tone (§24M) — looped under the whole scene (or null)
    "music": "SC-03.music.mp3",            # the scene's one cue, generated at the scene's length (or null)
    "music_in": 0.0,                        # where the cue starts in the scene (s)
    "sfx": [{"id": "SFX-CUP-DOWN", "file": "sfx/SFX-CUP-DOWN.mp3", "at": 3.42, "gain_db": -6}],
@@ -50,11 +50,14 @@ def main():
     T = duration(pic)
     out = a.out or str(root / f"{sc['scene']}.mix.mp4")
 
-    inputs = ["-i", pic, "-i", R(sc["dialogue"]), "-stream_loop", "-1", "-i", R(sc["room_tone"])]
-    n = 3
-    filt = [f"[1:a]aresample=48000,apad,atrim=0:{T},asplit=2[dlg][key]",
-            f"[2:a]aresample=48000,atrim=0:{T},volume={lv['room_tone_db']}dB[tone]"]
-    mix = ["[dlg]", "[tone]"]
+    inputs = ["-i", pic, "-i", R(sc["dialogue"])]
+    n = 2
+    filt = [f"[1:a]aresample=48000,apad,atrim=0:{T},asplit=2[dlg][key]"]
+    mix = ["[dlg]"]
+    if sc.get("room_tone"):   # optional: a narration ad (voice-over + music) has no room tone
+        inputs += ["-stream_loop", "-1", "-i", R(sc["room_tone"])]
+        filt.append(f"[{n}:a]aresample=48000,atrim=0:{T},volume={lv['room_tone_db']}dB[tone]")
+        mix.append("[tone]"); n += 1
     if sc.get("music"):
         inputs += ["-i", R(sc["music"])]
         mi = sc.get("music_in", 0.0)

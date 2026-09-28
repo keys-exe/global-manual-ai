@@ -278,3 +278,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - User: "the 60-day guarantee has a blank space at the end" → pill widths calibrated to the rendered text
   (libass draws Montserrat Black at ~0.80 of the PIL estimate), all pills.
 - Final board FINAL-HK1..3 = v3 (63.87 / 64.13 / 64.16s), To check; v1 and v2 kept.
+
+## 2026-09-28 — Final v4: background music (user: "ADD A BGM")
+- One instrumental track for all three ads, composed on ElevenLabs Music from a section plan (`final/music/BGM.cue.json`
+  → `BGM.plan.json`, `music.py`): soft piano hook → piano + guitar through the problem → light percussion on the proof →
+  fullest on the social proof and offer → final chord ringing under the last line. Moderate tempo, no vocals.
+- Take 1 failed `music.py check` (ended 0.5s before "…will tell you", flat build) → take 2 (the second and last allowed):
+  sparser start, clearer build, chord held. Take 2 check notes: the energy steps are 1–2 dB (the check wants 2 dB) and
+  its close "drop-out" is the chord ringing out past the ad; its 0.5s silent start was trimmed (`BGM_v2_ad.mp3`).
+- Mixed with `mix_scene.py` (room tone now optional for narration ads): voice master at 0 dB, music -18 dB and ducked
+  ~8 dB under the voice, 0.5s fades; then a two-pass loudnorm → -14.3 LUFS, -1.0 dBTP. Picture untouched.
+- Final board: FINAL-HK1..3 v4 (63.88 / 64.17 / 64.17s), To check; music alone on card MUS-BGM (To check).
