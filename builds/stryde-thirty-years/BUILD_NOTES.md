@@ -37,6 +37,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   **Avatar V refused motionPrompt** (no digital twin in the group) → §22U fallback (c): Avatar IV, expressiveness high,
   motionPrompt kept (`vo/th/heygen.json`). All 7 rendered and on the board as review (~20 HeyGen credits).
 
+  ~11:20: user "IT SHOULD BE V" → TH-01..07 re-rendered on **Avatar V without motionPrompt** (Avatar V takes a motion
+  prompt only with a digital twin in the group; the account has none and a generated character can't have one).
+  Avatar IV renders kept as version 1 on each card. IDs in `vo/th/heygen.json` (`avatar_v_renders`).
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.
