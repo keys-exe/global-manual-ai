@@ -1,0 +1,36 @@
+{
+ "beat": "D-G1",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "dialogue",
+ "prompt": "{\"shot\":\"Voice take G1.\",\"dialogue\":\"In six weeks, this woman stopped coming down her own stairs backwards.\",\"delivery\":\"A white British man in his mid-fifties, a family doctor from the north of England: a warm, clear, mid-low voice with a light Yorkshire accent and no put-on polish. Speaks the way he talks to one patient across his desk — unhurried, plain, certain, a little dry; short sentences land and stop. Statements fall at the end, never up. Stress comes by slowing down and dropping lower, never by getting louder. Never a newsreader, never a salesman. Across the desk, a plain fact, quietly pleased; stress on 'six weeks'. Audio must sound like a phone microphone recording in a room, not a studio voice track: audible breath before the first word and between phrases, mouth and lip noise, sibilance present and un-de-essed, plosives on hard consonants, level drifting slightly across the take rather than sitting compressed and even. No studio compression, no noise gate, no reverb plate, no post EQ. Phone a metre away.\",\"subject\":\"As in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Take one small quick inhale and begin speaking as it finishes — the first word lands within the first half second of the clip, no settle, no glance, no held beat before speech. Right hand lifts off the desk on 'six weeks', settles; eyes on lens. Jaw-carried speech, visibly dropping on open vowels, lips shaping over it. Lips fully close on the exact word 'woman', pulling slightly to the right corner. After the final word the lips close and the jaw settles. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no proportions changing, no background bending, no static camera, no camera coming to rest, no flickering light, no exposure pumping, no light changing across the clip, no music, no second voice\"}",
+ "duration": 10,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_201924_edd8434b-4ebe-463a-bb3d-ea88efbb129e.png",
+ "start_approved": false,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "dialogue": "In six weeks, this woman stopped coming down her own stairs backwards.",
+ "script_line": "In six weeks, this woman stopped coming down her own stairs backwards.",
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "a different voice between takes",
+   "prevented_by": "VOICE-DOC verbatim first in delivery, same start frame"
+  },
+  {
+   "risk": "lip-sync drift or a mouth that melts",
+   "prevented_by": "MOUTH-C closure word + NEG-WARP-C"
+  },
+  {
+   "risk": "a studio narrator voice, not a person",
+   "prevented_by": "AUD-A + VOICE-DOC 'Never a newsreader, never a salesman'"
+  }
+ ]
+}
