@@ -32,3 +32,13 @@
 
 ## Files
 Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · job ids `work/jobs.json`, `work/kling_jobs.json` · board cards `work/board/`. Media stays out of git (`renders/`, `th/`, `vo/`, `edit/*.mp4`).
+
+## Fix round 1 (2026-09-28, user Fix notes on 19 B-roll videos)
+- Diagnosed per §22X; prompts `prompts/frames/<b>.fix1.txt`, `prompts/clips/<b>.v2.kling.json`, calls `calls/<b>.v2.json` (all preflight PASS), scripts `work/fix1*.py`.
+- Motion-only fixes (old frame kept): A1-B2 (step-to, both feet on each step), A1-B4, A1-B5 (visible struggle), A4-P1 (band swings with weight). Rendered and on the main board as To check (video v2).
+- New frames (Higgsfield nano_banana_pro, 2k) + new clips: A2-B1, A2-B2, A3-B2, A4-B1, A4-B2, A4-M1, A4-P2, A4-P3, A5-B1 (N in work shorts lifting a toolbox), A5-B2, A5-B3, A5-B4, A5-B5, A5-F1. Clips rendered; job ids `work/fix1_jobs.json`, `work/fix1_kie/`.
+- All 18 clips on Kie Kling 3.0 (`kling-3.0/video`, pro 1080p) — Kling account at 591 (§5 fallback). Kie spend 1,296 credits (230,736 → 224,010).
+- A2-M4 not regenerated: it would be the third video generation (§22X) — waiting for the user's go.
+- A4-P1 v2 flagged: the shell reads as lost mid-clip as the band swings; a third try needs the user.
+- **Blocker:** the main board's asset store is full (1 GB). Fixes board https://claude.ai/artifact/VxngRxNy7t4faxWgNbGJkt created, 14 new frames uploaded there; uploading the 14 new clips was blocked by the session's permission check — waiting on the user. The 14 main-board cards stay `generating` until then. Orphan assets on the main board (~116 MB, unreferenced by any card) were found but not deleted.
+- Local renders are not in git (`renders/fix/`); they are lost when this container ends — upload or re-fetch from the Kie URLs (valid ~24h–3 days) in `work/fix1_kie/`.
