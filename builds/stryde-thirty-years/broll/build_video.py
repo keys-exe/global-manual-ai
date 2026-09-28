@@ -218,6 +218,62 @@ V.update({
    [("she steps or walks", "boots planted + no step, no walking"), ("band slides down the calf", "product lock"), ("leg warps", "HOLD-C")]),
 })
 
+# ── Round 3 (user "fix those" + "generate the confirm images", 2026-09-28 ~18:50) ─────────────────────────────────────
+VFIX.update({
+ "BR-02": "he's pointing the knee → MOTION: the start frame's fingertip sits beside the knee and 'presses once' read as pointing "
+          "at it; now the fingertip moves in to the soft hollow in the centre just under the kneecap and presses into the tendon, "
+          "the skin dimpling, and holds",
+ "BR-18b": "slowly zoom in → CAMERA: add a slow steady push-in across the whole clip; the pinned end frame is now the confirmed end "
+           "frame cropped tighter on the box (BR-18b-END v2, no new generation), so the zoom and the end frame agree",
+})
+PIN_END["BR-18b"] = "broll/renders/BR-18b-END_v2.png"
+V.update({
+ "BR-02": ("CLOSE as in the start frame, his fingertip at the front of her right knee.", HANDHELD,
+   "His extended index fingertip moves a few centimetres in to the soft hollow in the centre of the knee just under the kneecap, "
+   "over about one second, and presses into the tendon there, the skin dimpling under it; he holds the press for two seconds, still "
+   "touching. His other fingers stay curled.", False,
+   "no finger on the side of the knee, no finger on the kneecap, no pointing from a distance, no hand gripping the knee, "
+   "no second finger touching her, no face", "in_place",
+   [("fingertip stays beside the knee, pointing", "motion ends pressing in the centre under the kneecap + negatives"),
+    ("finger slides onto the kneecap", "'just under the kneecap' + no finger on the kneecap"), ("fingers fuse with the skin", "HOLD-HC")]),
+ "BR-18b": ("CLOSE as in the start frame, down onto the box on the bench, ending tighter on the open box.",
+   "Propped, not held. One slow, steady push-in towards the box across the whole clip, ending closer on the open box exactly as in "
+   "the end frame; no other camera move.",
+   "His hands lift the lid straight up off the box in one unhurried move over about three seconds and set it down flat on the bench "
+   "beside the box; the two straps lying in the insert do not move.", False,
+   "no straps moving in the box, no third strap, no lid flipping over, no fast zoom, no face, " + P.NEG_PACKAGE, "in_place",
+   [("straps in the insert morph or move", "pinned end frame + 'do not move'"), ("zoom fights the end frame", "end frame cropped to the zoom's end"),
+    ("fingers fuse with the lid", "HOLD-HC")]),
+ "BR-13": ("MEDIUM as in the start frame, from the side through the white spindles, her legs on the stairs.", HANDHELD,
+   "She completes the one step down she is in: her right foot lands on the step below over about two seconds, the strapped right "
+   "knee bending as it takes her weight and; she stays upright, hands out of frame. The camera "
+   "stays where it is behind the spindles.", True,
+   "no second step, no hand on the rail, no camera following her, no face", "in_place",
+   [("feet blend on the stairs", "one step only, already mid-step"), ("strap slides as the knee bends", "product lock + HOLD_PC"),
+    ("camera travels", "camera stays behind the spindles")]),
+ "BR-14b": ("CLOSE as in the start frame, his two hands and the copy strap at the bench.", PROPPED,
+   "His right hand pulls the copy's thin band a little further out over about two seconds, the band stretching long and pale, then "
+   "lets it go: the band stays long and slack, hanging limp, never springing back.", False,
+   "no band snapping back, no band breaking, no copy gaining a wordmark, no second copy, no face, " + P.NEG_FAKE_HERO, "in_place",
+   [("band springs back (the opposite of the line)", "'stays long and slack, never springing back'"), ("copy turns into the real strap", "NEG_FAKE_HERO"),
+    ("fingers fuse with the band", "HOLD-HC")]),
+ "BR-15a": ("MEDIUM as in the start frame, his chest and apron, the strap held up in his right hand.", HANDHELD,
+   "He brings the strap a few centimetres closer to the lens in one small lift over about two seconds, its front face and wordmark "
+   "staying square to the camera the whole time, then holds it there.", True,
+   "no strap turning, no second strap, no band unfolding, no strap growing, no face changing", "in_place",
+   [("strap grows as it nears the lens", "a few centimetres only + no strap growing + HOLD_PC"),
+    ("strap turns and shows another face", "face stays square (no angle change, so no end frame needed)"), ("fingers fuse", "HOLD-HC")]),
+})
+
+# BR-15c: the confirmed v3 frame already has the strap seated just below the kneecap, so the slide-up is done; the clip is her hands
+# pressing it snug and letting go — no angle or place change, so no end frame (act map pin_end → no).
+V["BR-15c"] = ("CLOSE as in the start frame, her right knee and shin, her two hands on the strap.", PROPPED,
+   "Her two hands press the shell snug against her leg just below the kneecap in one small press over about two seconds, then let "
+   "go and move out to her sides; the strap stays exactly where it is, level and centred.", True,
+   "no strap sliding, no strap moving up onto the kneecap, no hands pulling the band, no face", "in_place",
+   [("strap rides up onto the kneecap", "'stays exactly where it is' + negatives + product lock"), ("fingers fuse with the shell", "HOLD-HC"),
+    ("strap reshapes under the press", "HOLD_PC")])
+
 
 def build(beat):
     framing, rig, motion, prod, extra, sm, risks = V[beat]

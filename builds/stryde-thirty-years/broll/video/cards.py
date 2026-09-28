@@ -8,7 +8,8 @@ A = json.loads((H / "_assets.json").read_text()) if (H / "_assets.json").exists(
 w = []
 for arg in sys.argv[1:]:
     bv, a = arg.split("="); b, n = (bv.split(":") + ["1"])[:2]; n = int(n); A[f"{b}_v{n}"] = a
-    k = json.loads((H / f"{b}_v{n}.kie.json").read_text())
+    t = (H / f"{b}_v{n}.kie.json").read_text()
+    k = json.loads(t[t.index("{\n"):])  # skip the one-line taskId notice if stderr was captured too
     out = subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-i", str(H / f"{b}_v{n}.mp4")], capture_output=True, text=True).stderr
     dur = re.search(r"Duration: (\d+):(\d+):([\d.]+)", out).groups(); dur = round(int(dur[1]) * 60 + float(dur[2]), 2)
     res = "×".join(re.search(r"Video:.*?(\d{3,4})x(\d{3,4})", out).groups())

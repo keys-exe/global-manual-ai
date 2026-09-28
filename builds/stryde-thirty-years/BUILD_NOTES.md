@@ -171,11 +171,31 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   images: BR-02, MECH-01, BR-18a (pin_end set to no — faces stay square, no angle change), BR-18b (first-and-last frame to
   BR-18b-END). 8 Kie calls, 684.0 credits. All on the board as review.
 
-## Where it stands (2026-09-28 18:35)
+  ~18:50: user "fix those" + "generate the confirm images" (round 3). Video Fixes gen 2: BR-02 ("he's pointing the knee" →
+  fingertip moves in and presses the tendon in the centre under the kneecap), BR-18b ("slowly zoom in" → slow push-in; its pinned
+  end frame is now BR-18b-END v2 = the confirmed v1 cropped ~80% on the box, no new generation). Image Fixes: BR-15c v3 ("wrong
+  product" → close frame on the shin so the shell renders as the product), BR-18a v3 ("remove the bracelet" → edit of v2 with the
+  bands tucked into his palms; its v1 video is now out of date, a new one follows the Confirm). BR-11-END v1 made (the strap turns
+  over, so BR-11 is pinned). New videos: BR-13, BR-14b, BR-15a (pin_end set to no — the lift keeps the face square). FIX5/END in
+  `build_broll.py`, "Round 3" in `build_video.py`, preflight PASS. Third-generation Fixes on BR-05a ("arrage the product"),
+  BR-05b ("close up the product, slowly zoom in") and BR-12 ("she's walking, front angle") wait for the user's go (§22X).
+
+  Round 3 results: BR-02 v2, BR-18b v2 (two 15 MB parts), BR-13, BR-14b, BR-15a on the board as review (522 Kie credits with
+  BR-15c below; BR-13's first submission was lost when the polling connection reset — no task id kept, ~90 credits gone, resent once;
+  `kie.py` now logs the task id at creation and retries dropped polls/downloads). Board full again: user chose "delete old-version
+  files" — BR-05a/05b/08/12 v1 videos, BR-15a/15c/18a v2 images, BR-18b-END v1 removed (~60 MB), then BR-18a v3 and BR-11-END v1
+  (superseded this round), each version kept on its card marked deleted.
+  ~19:00 round 4 (user "fix those" + "generate the confirm images"): BR-11-END v2 ("wrong product" → back product photo leads,
+  PAD_BACK_SHOT), BR-18a v4 ("fix the holding" → BR-15a v3's grip in both hands), FIX6 in `build_broll.py`. BR-15c video v1 (its
+  confirmed v3 already has the strap seated, so the clip is a press-and-release; pin_end → no). The user's answer on the three
+  third-generation Fixes (BR-05a, BR-05b, BR-12) ticked every option including "None for now" — held, asked again.
+
+## Where it stands (2026-09-28 19:00)
 - Hooks done. VO master T2. TH-HK1/2/3-BODY v3 still To check.
-- B-roll videos: 22 made (18 + BR-02, MECH-01, BR-18a, BR-18b); BR-05a/05b/08/12 v2 fixes To check. Next Fix on any of those four
-  is a third generation — waits for the user's go (§22X).
-- Images To check: BR-11, BR-13, BR-14b, BR-15a (v3), BR-15c. Their videos follow on Confirm; BR-11, BR-15a, BR-15c are pinned
-  (end frame needed first).
+- B-roll videos To check: BR-02 v2, BR-18b v2, BR-13, BR-14b, BR-15a, BR-15c (+ earlier ones not yet confirmed).
+- Waiting on the user's go (third generation, §22X): BR-05a ("arrange the product"), BR-05b ("close up, slowly zoom in"),
+  BR-12 ("she's walking, front angle" — needs a new front-angle start image first).
+- Images To check: BR-11-END v2 (BR-11's video follows its Confirm, first-and-last frame), BR-18a v4 (its v1 video is out of
+  date; a new one follows the Confirm).
+- Board storage is at the 1 GB cap after each upload; the next round needs more old files cleared (or Drive for finals).
 - Next: Fix/confirm the videos → rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.
-- Board storage ~960 MB used — near the 1 GB cap; old-version files may need clearing again before the last videos.

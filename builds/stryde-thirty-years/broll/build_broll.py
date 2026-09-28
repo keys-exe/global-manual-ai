@@ -591,6 +591,74 @@ _m, _r, _p = B["BR-15a"]
 B["BR-15a"] = (_m, _r, _p.replace(" spanning the whole front of the knee", "").replace(", band slack round the wrist", "")
     .replace(" — and the closed band is a small soft loop not much bigger than his wrist", ""))
 
+# ── Fix round 5 (user Fix notes, 2026-09-28 ~18:50) ──────────────────────────────────────────────────────────
+# BR-15c "wrong product": the frame was her whole seated figure, so the strap was a few dozen pixels and came out as a thin band.
+#   Fixed at the source: a close frame on her right shin and knee and her hands, so the shell renders large enough to be the product.
+# BR-18a "remove the bracelet": the slack bands round his wrists read as bracelets. An edit of the confirmed-look v2 render
+#   (job ref first) that only tucks the bands into his palms; everything else unchanged.
+FIX5 = {"BR-15c": "wrong product", "BR-18a": "remove the bracelet"}
+FIX5_EDIT_REF = {"BR-18a": "98cbf149-c29e-410c-a7cb-05cefbbfd7f5"}
+B["BR-15c"] = (NBP, ["front", "worn_front", "back", "S1", "P0"], photo([
+    "The strap in this photo is THE EXACT SAME OBJECT as the first attached product photo, the front; the second attached photo shows "
+    "how it looks on a leg. A close snapshot from a phone held low in front of her as she sits on the bottom stair: the frame runs from "
+    "just above her right knee down to her ankle, her right leg straight out towards the camera and filling the frame, her two hands "
+    "on the strap. The closed strap sits at mid-shin, a hand's width below the kneecap: the rigid matte-black shell is CENTRED ON THE "
+    "FRONT OF HER SHIN facing the camera, its two matching peaks and the notch between them pointing up the leg towards the kneecap, "
+    "the grey stryde wordmark horizontal and readable under the notch, a brushed chrome slide at each end of the shell, the black "
+    "band running round the back of the calf. Her thumbs and fingertips hold the two ends of the shell, flat on the matte shell, ready "
+    "to slide it up. " + SKIN_LEG,
+    "Her skirt hem at the top edge and her tan boots at the bottom: " + WARD["W-D2"] + ".",
+    PROD + " " + RIGID + " The shell is as wide as the front of her shin and about as tall as her kneecap, large and clear in this "
+    "close frame.", STAIRS,
+    "THE CAMERA ANGLE: a low camera close in front of her, looking along her straight right leg at the front of the shin. This exact angle.",
+    focus("the product and its wordmark"), light("ST-L", "her shin"), colour("STAIRS")],
+    P.NEG_SEAT + ", no thin band without a shell, no plain black strap, no shell on the side of the shin, no wordmark sideways, "
+    "no shell facing away, no soft pad, no floppy strap, no strap on the left leg, no face, no whole figure, " + NEG_HANDS))
+B["BR-18a"] = (NBP, ["front", "C1"], photo([
+    "EDIT OF THE FIRST ATTACHED IMAGE. Keep everything in it exactly as it is — the man, his face, his pose, his hands, the two straps, "
+    "their size and position, the bench, the vice, the workshop and the light — and change only this: there is NOTHING ON HIS WRISTS. "
+    "The two straps' black bands are folded and tucked into his palms behind the shells, out of sight, so no band loops round either "
+    "wrist and no bracelet, watch or band of any kind is on his wrists or forearms; his bare wrists and the rolled cuffs of his check "
+    "shirt show."],
+    "no bracelet, no wristband, no watch, no band round the wrist, no loop hanging from his hands, no other change to the image, "
+    "no third strap, " + NEG_HANDS))
+
+_m, _r, _p = B["BR-15c"]
+B["BR-15c"] = (_m, _r, _p.replace("no two separate actions in one clip, no product travelling past the kneecap, ", "")
+    .replace("no product coming to rest low on the shin, no product moving downward, no product coming down from above the kneecap, ", "")
+    .replace(" spanning the whole front of the knee", ""))
+
+# ── Pinned end frame for BR-11 (§27G: the strap turns over, so the video runs to an approved end frame) ─────────────
+END = {"BR-11-END": (NBP, ["56a2c1e9-d175-47eb-b7f0-fdd5325768c0", "back", "front"], photo([
+    "EDIT OF THE FIRST ATTACHED IMAGE: the same photo a moment later. Keep the man, his hands, the bench, the workshop, the camera "
+    "position and the light exactly as they are. The only change: his hand has turned the strap over, so it now shows its BACK to "
+    "the lens exactly as in the second attached product photo, the back — the soft pad side of the shell facing the camera, the "
+    "wordmark now facing away from the camera, the shell the same small size, held the same way at chest height."],
+    "no wordmark visible, no second strap, no size change, no other change to the image, " + NEG_HANDS))}
+
+# ── Fix round 6 (user Fix notes, 2026-09-28 ~19:00) ──────────────────────────────────────────────────────────
+# BR-11-END "wrong product": v1 kept the front's geometry and only erased the wordmark. Fixed at the source: the back product photo
+#   is the FIRST reference and P.PAD_BACK_SHOT describes the pad side; the confirmed BR-11 frame is only the scene reference.
+# BR-18a "fix the holding": v3's grips were awkward pinches. Fixed with the grip from the confirmed BR-15a v3 (job ref) named for
+#   both hands: thumb in front on the shell's bottom edge, fingers behind, band tucked in the palm.
+FIX6 = {"BR-11-END": "wrong product", "BR-18a": "fix the holding"}
+END["BR-11-END"] = (NBP, ["back", "56a2c1e9-d175-47eb-b7f0-fdd5325768c0", "front"], photo([
+    "The strap in this photo is THE EXACT SAME OBJECT as the FIRST attached product photo, the back of the strap, seen from that same "
+    "side. The SECOND attached image is the scene: keep the man, his apron, the bench, the vice, the workshop, the camera position and "
+    "the light exactly as in it. The only change from the second image: his hands have turned the strap round so its BACK faces the "
+    "lens, held at chest height the same way. " + P.PAD_BACK_SHOT.replace(", fills the frame", "") + " The two peaks and the notch between them are along the TOP edge, "
+    "exactly as in the first attached photo; the shell the same small size as in the second image."],
+    "no wordmark, no front face, no peaks along the bottom edge, no upside-down shell, no second strap, no size change, "
+    "no other change to the scene, " + NEG_HANDS))
+B["BR-18a"] = (NBP, ["73cd4b03-518b-4f38-83b4-e65334a19fee", "90168a20-dade-40fe-96db-2ffae7f4f02b", "front"], photo([
+    "EDIT OF THE FIRST ATTACHED IMAGE. Keep everything in it exactly as it is — the man, his face, his pose, the two straps, their size "
+    "and position side by side, nothing on his wrists, the bench, the vice, the workshop and the light — and change only HOW HE HOLDS "
+    "THEM: each hand holds its strap exactly the way he holds the strap in the SECOND attached image — thumb in front on the shell's "
+    "bottom edge below the wordmark, the fingers behind the shell, the band folded and tucked into the palm out of sight. A relaxed, "
+    "natural grip, the hands low on the shells so both wordmarks, both peaks and both notches stand clear."],
+    "no pinching fingertips, no fingers across the wordmark, no fingers over the peaks, no bracelet, no band round the wrist, "
+    "no other change to the image, no third strap, " + NEG_HANDS))
+
 if __name__ == "__main__":
     out = {}
     for beat, (model, refs, prompt) in B.items():
@@ -598,6 +666,8 @@ if __name__ == "__main__":
         r = ROWS[beat]
         out[beat] = {"model": model, "refs": refs, "prompt": prompt, "act": r["act"], "phrase": r["phrase"],
                      "call_s": LEN[beat]["call_s"], "chars": len(prompt)}
+    for beat, (model, refs, prompt) in END.items():
+        (HERE / f"{beat}.t2i.txt").write_text(prompt + "\n")
     (HERE / "broll_v1.json").write_text(json.dumps(out, indent=1, ensure_ascii=False))
     for b, v in out.items():
         print(b.ljust(8), v["model"].ljust(16), str(v["chars"]).rjust(5), ",".join(v["refs"]))
