@@ -205,3 +205,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
     check.
   - Storage: 7 more replaced body images deleted (under the user's earlier "delete old B-roll images" OK).
   - The user has removed the BR-16-END, BR-26a-END and VO-T1–T3 cards from the board.
+- (2026-09-28, 15:30 UTC) **Fix round 10 — BR-25** (user: "i need new here" / "go down fast"): a new close, low setup
+  at the foot of the flight, waist to feet, with her coming down towards the camera mid-stride (`body/fix10_prompts.py`,
+  `body/BR-25_fix10.png`). The video is a fast real-time descent, about 2.5 steps a second (Kie Kling, job id in
+  `body/kie_kling_jobs7.txt`). On the board as To check.
