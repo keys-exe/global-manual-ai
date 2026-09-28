@@ -249,6 +249,19 @@ P["BR-25"] = photo("down_the_stairs",
     "cardigan, never touching the rail; she is still on the stairs at the cut. The steps stay fixed and evenly spaced.",
     "no hand on the rail, no reaching the bottom, no going up, no floating, no sliding feet, no steps changing shape")
 
+# ── fix round 5 (user, 2026-09-28): BR-22 image has no hands now — the box alone, the camera does the moving ──
+P["BR-22"] = {"shot": "box_reveal",
+    "subject": "The closed matte-black stryde box alone on the checked tablecloth, grey stryde wordmark on the lid.",
+    "camera": {"movement": "A slow, steady push in towards the box, one direction, constant unhurried speed, a faint "
+                           "handheld breath sway on top. Still moving at the cut.",
+               "framing": "Close-up from slightly above, as in the start frame; the box stays centred."},
+    "motion": "Nothing in the scene moves except soft window light sliding slowly across the matte lid. The lid stays "
+              "closed; the box stays exactly where it is and keeps its exact shape and wordmark every frame. "
+              + HOLD,
+    "lighting": INHERIT, "style": STYLE,
+    "negatives": NEG_WARP + ", no hands, no fingers, no person entering, no lid opening, no box moving, no box changing "
+                 "shape, no text changing, " + NEG_M1}
+
 FIX_NOTE = {  # user's Fix note -> where it was fixed (frame, prompt or motion, §22X)
  "MECH-01": "not the patellar tendon -> frame: front view, glow on the tendon itself",
  "MECH-10": "express the line more -> frame: bare bone on bone with spurs + red glow; motion: grind + flare",
@@ -264,7 +277,7 @@ FIX_NOTE = {  # user's Fix note -> where it was fixed (frame, prompt or motion, 
  "BR-19": "wrong product -> frame: tighter, strap large and clear, no knee pads",
  "BR-20": "strap wrong -> frame + motion: band as a soft closed loop draping",
  "BR-21": "phone on the street -> prompt: no phone named anywhere, phone negatives",
- "BR-22": "feel the box, not open it -> frame + motion: hands glide on the closed lid",
+ "BR-22": "remove the hands so nothing distorts -> frame: the closed box alone; motion: slow push in only",
  "BR-24": "wrong product -> user: a productive B-roll -> frame: hanging washing in the garden, strap on the knee",
  "BR-25": "wrong stairs / going down, not already down -> frame: halfway down the P0 flight, hands full",
  "BR-26a": "wrong placement -> user: use the confirmed seated end frame BR-26a-END as the solo image, not the start frame",

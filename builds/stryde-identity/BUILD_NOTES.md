@@ -167,3 +167,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
     BR-20, BR-26a and BR-26b. Job ids in `body/kie_kling_jobs2.txt`. On the board as To check.
   - Storage (user: "delete old B-roll images"): 34 of the oldest replaced body image versions were deleted from the
     board. Their version entries and links stay.
+- (2026-09-28, 14:40 UTC, hourly Fix check) **BR-22 image v4:** user note "remove the hands off the stryde box first in
+  the image so that there's no distortion". Now the closed box alone on the checked cloth (`body/fix5_prompts.py`,
+  `body/BR-22_fix5.png`), To check. The new video prompt is a slow push in on the box, no hands. It would be BR-22's
+  third video, so under §22X it waits for the user's go after the image is confirmed.
