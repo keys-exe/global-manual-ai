@@ -58,6 +58,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **HK2 started (user: "go ahead with HK2"):** start images HK2-01 (N's hands lifting letters, overhead), HK2-02 (N pinning a
   card, three-quarter-back, pinboard sharp), HK2-03 (Gail's overfilled drawer, strap sliding, high) — `nano_banana_2`, refs
   N-NARR sheet + P2 plate / P1 plate; prompts `hooks/HK2/*.txt` (2,751–2,895 chars). On the board, images To check.
+- **HK2 Fixes (user, board notes):** HK2-01 "SHOW LOTS OF written letters" → v2: trays overflowing, handwritten letters and
+  cards drifting across the desk, a thicker stack. HK2-02 "SHOW Three things come up more than anything else" → v2: the board
+  sorted into three big clusters (red / yellow / blue pins and ribbons), no readable text (the EG01 banner carries the words).
+  HK2-03 confirmed. v1 kept in `imageVersions` and `hooks/HK2/*_v1.txt`.
 - **Next:** on the user's image Confirm → HK2 clips (3 / 3 / 3s): Kling connector while it has credits, else Kie (`kie.py kling`).
 
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
