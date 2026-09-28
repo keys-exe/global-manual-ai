@@ -733,6 +733,49 @@ END["BR-11-END"] = (NBP, ["87a9630a-eecf-492a-a007-5ee8caa80db5", "back", "front
     "no wordmark, no front face, no peaks pointing down, no shell tipped over, no band hanging underneath, no strap growing, "
     "no size change, no second strap, no other change to the image, " + NEG_HANDS))
 
+# ── New beats over TH-03 / TH-04 (user: "create brolls here", 2026-09-28 ~22:00) ────────────────────────────────────
+NEW_0928 = ["BR-08b", "BR-08c", "BR-09a", "BR-09b"]
+B["BR-08b"] = (NBP, ["S1", "P1"], photo([
+    "A snapshot from a phone held at her eye level a little way off, three-quarter to her. She sits back in the bottle-green wing "
+    "armchair, a plain beige neoprene knee sleeve pulled over her right knee, caught just as she lets out a long breath: her shoulders "
+    "coming down, her hands settling loosely in her lap, her eyes lowered to the sleeve on her knee, a small tired softening at the mouth. "
+    "The dark oak sideboard stands behind her with its top drawer still a little open. " + S1 + " Wearing " + WARD["W-D0"] + ".",
+    LIVING + " The curtains are half drawn.", angle("BR-08b", "her"), focus("the nearest eye of the woman", deep=False),
+    light("LV-PM", "her"), colour("LIV-PM")],
+    "no crying, no tears, no hand on the face, no strap, no stryde wordmark, no brand names, no labels, no second person, " + NEG_HANDS))
+B["BR-08c"] = (NBP, ["S1", "P1"], photo([
+    "A close snapshot from a phone held at knee height beside her, seeing her right knee from the side, in profile. She sits in the "
+    "bottle-green wing armchair, her right leg bent a little, and a plain beige neoprene knee sleeve is pulled up over the knee so it "
+    "sits squarely over the kneecap and the joint itself, the kneecap's bump rounding the fabric. The fingertips of both her hands press "
+    "the sleeve flat over the kneecap, smoothing it. Her heather-grey skirt hem at the top of the frame, her bare shin below the sleeve. "
+    "Real unretouched skin on the hands and shin of a woman of about seventy.",
+    LIVING + " The curtains are half drawn; the room is soft behind the knee.", angle("BR-08c", "her knee"),
+    focus("the hands and what they hold"), light("LV-PM", "her knee and hands"), colour("LIV-PM")],
+    "no face, no strap, no stryde wordmark, no brand names, no labels, no hinged brace, no second sleeve, no sleeve below the knee, "
+    + NEG_HANDS))
+B["BR-09a"] = (NBP, ["C1", "S1", "P2"], photo([
+    "A close snapshot from a phone held low, below her knee, looking up the front of her right leg from three-quarter. She sits on the "
+    "workshop stool with her right leg out straight, the bare knee large in frame, the kneecap's round outline clear. His right index "
+    "fingertip rests on the middle of her bare kneecap, the finger extended, his other fingers curled into his palm, his hand coming in "
+    "from the side. Just below the kneecap's lower edge the soft hollow over the tendon is plainly visible, where the finger will go. "
+    + C1_HANDS + " Her knee: " + SKIN_LEG,
+    "Her skirt hem at the top of the frame: " + WARD["W-D1"] + ".",
+    BENCH, angle("BR-09a", "her knee"), focus("his fingertip and her kneecap"), light("WS-L", "the knee and his hand"), colour("FIT")],
+    "no hand gripping the knee, no more than one finger touching her, no strap, no brace, no sleeve, no second hand, "
+    "no finger on the side of the knee, " + NEG_HANDS))
+B["BR-09b"] = (NBP, ["90168a20-dade-40fe-96db-2ffae7f4f02b", "front", "back", "C1", "P2"], photo([
+    "The strap in this photo is THE EXACT SAME OBJECT as the second attached product photo, the front, AT THE SAME SMALL SIZE as in "
+    "the first attached image. An overhead snapshot from a phone held straight above the bench. His right hand is just setting the "
+    "strap down flat on the scarred dark beech, front face up, the grey stryde wordmark readable, both peaks and the notch pointing to "
+    "the top of the frame, the closed black band lying flat round it; his fingertips are on the shell's two ends, about to let go. "
+    "Around it on the wood: a few leather offcuts and a steel rule, nothing else. " + C1_HANDS,
+    PROD.replace(" spanning the whole front of the knee", "") + " " + RIGID + " " + SMALL.replace(
+        " — and the closed band is a small soft loop not much bigger than his wrist", "").replace("his fingers and thumb cover a good part "
+        "of its lower edge", "his hand is clearly bigger than it"),
+    BENCH, angle("BR-09b", "the strap"), focus("the product and its wordmark"), light("WS-L", "the strap"), colour("WORKSHOP")],
+    "no second strap, no strap worn, no band stretched, no fingers over the wordmark, no fingers over the peaks or the notch, "
+    "no oversized strap, no strap wider than his hand, " + NEG_HANDS))
+
 if __name__ == "__main__":
     out = {}
     for beat, (model, refs, prompt) in B.items():

@@ -231,9 +231,16 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   (1080×1920, 24 fps, ~105 MB each; too big for the chat's 30 MB limit and the full board) → 720p review copies sent in chat.
   CapCut block `edit/CAPCUT_BLOCK.md` sent and on the board (Plan tab, docs/capcut).
 
-## Where it stands (2026-09-28 21:00)
-- All generation done: hooks, VO, talking heads (TH-HK1/2/3-BODY v3 still To check), 27 B-roll clips confirmed.
-- Step 8: rough cuts rendered (`edit/rough/`), review copies sent, CapCut block written (`edit/CAPCUT_BLOCK.md`).
-- Open: F4 (dramatisation note or not) · TH body check · where the finished videos go (board is full: ~0.7 MB free; each final
-  ~105 MB = 7 × 15 MB parts) — Drive `08_EDIT` or free board space.
-- Next: the user reviews the rough cuts → CapCut finish (captions, EG01 cards, number overlays, colour match) → FINAL-HKn.
+  ~21:10: user asked for the full talking heads, then "WITHOUT CUT" → 720p copies of `vo/th2/TH-HKn+BODY.trim2.mp4` and of the
+  untrimmed `TH-HKn+BODY.mp4` sent in chat (`edit/review/`).
+  ~22:10: user "create brolls here" on P-008 "…that was not you failing. You were wrapping the wrong part of your leg." and P-009
+  "You do not wrap the joint. You go under it. Three things have to be right." (both TH until now) → 4 new act-map rows (angles.py
+  PASS): BR-08b (her in the armchair, breath out, eye/three-quarter), BR-08c (sleeve over the kneecap, profile CU), BR-09a (his
+  fingertip from kneecap down onto the tendon, low/three-quarter), BR-09b (strap set down, overhead, BR-15a v3 as size ref); E6
+  lengths added (3/4/5/3s). Images v1 on Higgsfield → board as review. Room made by removing BR-12 image v2, HK3-FULL image v1 and
+  the orphaned BR-18b-END v2 / BR-11-END v5 files. Videos follow the Confirms; then the rough cuts are re-rendered with them.
+
+## Where it stands (2026-09-28 22:15)
+- Images To check: BR-08b, BR-08c, BR-09a, BR-09b (new B-roll over TH-03/TH-04 lines). Their videos next, then re-render the rough cuts.
+- Rough cuts v1 in `edit/rough/` (without the four new beats), CapCut block `edit/CAPCUT_BLOCK.md`.
+- Open: F4 · TH body check · where the finished videos go (board full).
