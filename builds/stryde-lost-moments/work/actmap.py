@@ -103,7 +103,7 @@ SH04 = ["SH-04a", "SH-04b", "SH-04c"]
 # ------------------------------------------------------------------ A — Forwards (Gloria)
 V = "A"
 R("A-HKa", HOOK[V], "Too bad you can't go down the stairs forwards.", "", "hook — the loss (EGN01)", "C1", "L-G-STAIRS", "G-D1",
-  "from the side, waist-down: she comes down sideways, both hands on the rail", "one sideways step down",
+  "from the side, waist-down: she comes down backwards, facing up the flight, both hands on the rail", "one step down backwards",
   "one step, about a second and a half", STILL, "stairs: side, waist-down, camera still, hands on the rail visible", "no", "absent", "—", "NB2",
   EVE, PRO, "through", "MEDIUM", "through the spindles: we watch her struggle", "deep", "deep", "landing window, south wall", "L", "morning", "problem: grey", False, ledger="VN02", eg="EGN01")
 R("A-HKb", HOOK[V], "Thanks to these life-changing knee straps, not for much longer.", "straps", "hook — the fix (EGN01)", "C1", "L-G-STAIRS", "G-D1",

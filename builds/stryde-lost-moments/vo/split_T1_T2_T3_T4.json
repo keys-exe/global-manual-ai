@@ -1,0 +1,528 @@
+{
+ "T1": {
+  "dur": 341.36,
+  "whole_diff": [
+   [
+    "replace",
+    "orthopaedic",
+    "orthopedic"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "silicone",
+    "silicon"
+   ],
+   [
+    "replace",
+    "orthopaedic",
+    "orthopedic"
+   ],
+   [
+    "replace",
+    "get stryde dot",
+    "getstried"
+   ],
+   [
+    "replace",
+    "orthopaedic",
+    "orthopedic"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "get stryde dot",
+    "getstried"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "get stryde dot",
+    "getstried"
+   ],
+   [
+    "replace",
+    "a round",
+    "around"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ],
+   [
+    "replace",
+    "get stryde dot",
+    "getstried"
+   ],
+   [
+    "replace",
+    "orthopaedic",
+    "orthopedic"
+   ],
+   [
+    "replace",
+    "bodyweight",
+    "body weight"
+   ],
+   [
+    "replace",
+    "orthopaedic",
+    "orthopedic"
+   ],
+   [
+    "replace",
+    "get stryde dot",
+    "getstried"
+   ]
+  ],
+  "cuts": [
+   66.8,
+   134.73,
+   202.93,
+   272.59
+  ],
+  "parts": {
+   "V1": {
+    "raw_s": 66.8,
+    "trim_s": 64.29,
+    "verbatim": false,
+    "diff": [
+     [
+      "replace",
+      "orthopaedic",
+      "orthopedic"
+     ],
+     [
+      "replace",
+      "bodyweight",
+      "body weight"
+     ],
+     [
+      "replace",
+      "silicone",
+      "silicon"
+     ],
+     [
+      "replace",
+      "orthopaedic",
+      "orthopedic"
+     ],
+     [
+      "replace",
+      "get stryde dot",
+      "getstried"
+     ]
+    ],
+    "trim": {
+     "src": "full/T1.V1.raw.mp3",
+     "out": "trim/VO_T1_V1.mp3",
+     "duration_in_s": 66.8,
+     "breaths_cut": [
+      [
+       2.17,
+       2.55
+      ],
+      [
+       6.12,
+       6.36
+      ],
+      [
+       9.22,
+       9.42
+      ],
+      [
+       12.34,
+       12.46
+      ],
+      [
+       14.34,
+       14.51
+      ],
+      [
+       15.4,
+       15.54
+      ],
+      [
+       19.93,
+       20.06
+      ],
+      [
+       38.55,
+       38.71
+      ],
+      [
+       42.5,
+       42.71
+      ],
+      [
+       44.33,
+       44.49
+      ]
+     ],
+     "source_end_db": -84.4,
+     "source_end_clipped": false,
+     "verify": {
+      "duration_s": 64.29,
+      "wpm": 146,
+      "max_wpm": 179,
+      "too_fast": false,
+      "breaths_left": [],
+      "gaps_over_limit": [],
+      "tail_last_db": -58.9,
+      "status": "PASS"
+     }
+    }
+   },
+   "V2": {
+    "raw_s": 67.93,
+    "trim_s": 63.2,
+    "verbatim": false,
+    "diff": [
+     [
+      "replace",
+      "orthopaedic",
+      "orthopedic"
+     ],
+     [
+      "replace",
+      "bodyweight",
+      "body weight"
+     ],
+     [
+      "replace",
+      "two hundred thousand",
+      "200 000"
+     ],
+     [
+      "replace",
+      "get stryde dot",
+      "getstride"
+     ]
+    ],
+    "trim": {
+     "src": "full/T1.V2.raw.mp3",
+     "out": "trim/VO_T1_V2.mp3",
+     "duration_in_s": 67.93,
+     "breaths_cut": [
+      [
+       3.31,
+       3.59
+      ],
+      [
+       7.61,
+       7.82
+      ],
+      [
+       10.79,
+       10.94
+      ],
+      [
+       13.91,
+       14.12
+      ],
+      [
+       15.98,
+       16.13
+      ],
+      [
+       17.06,
+       17.21
+      ],
+      [
+       20.07,
+       20.27
+      ],
+      [
+       27.7,
+       27.88
+      ],
+      [
+       31.24,
+       31.45
+      ],
+      [
+       41.76,
+       41.91
+      ],
+      [
+       46.18,
+       46.42
+      ],
+      [
+       48.06,
+       48.2
+      ],
+      [
+       54.25,
+       54.44
+      ],
+      [
+       57.72,
+       57.91
+      ]
+     ],
+     "source_end_db": -84.7,
+     "source_end_clipped": false,
+     "verify": {
+      "duration_s": 63.2,
+      "wpm": 151,
+      "max_wpm": 179,
+      "too_fast": false,
+      "breaths_left": [],
+      "gaps_over_limit": [],
+      "tail_last_db": -54.3,
+      "status": "PASS"
+     }
+    }
+   },
+   "V3": {
+    "raw_s": 68.2,
+    "trim_s": 63.56,
+    "verbatim": false,
+    "diff": [
+     [
+      "replace",
+      "orthopaedic",
+      "orthopedic"
+     ],
+     [
+      "replace",
+      "bodyweight",
+      "body weight"
+     ],
+     [
+      "replace",
+      "orthopaedic",
+      "orthopedic"
+     ],
+     [
+      "replace",
+      "get stryde dot",
+      "getstride"
+     ]
+    ],
+    "trim": {
+     "src": "full/T1.V3.raw.mp3",
+     "out": "trim/VO_T1_V3.mp3",
+     "duration_in_s": 68.2,
+     "breaths_cut": [
+      [
+       2.93,
+       3.15
+      ],
+      [
+       7.17,
+       7.36
+      ],
+      [
+       10.26,
+       10.44
+      ],
+      [
+       13.57,
+       13.76
+      ],
+      [
+       15.66,
+       15.81
+      ],
+      [
+       16.74,
+       16.88
+      ],
+      [
+       23.51,
+       23.7
+      ],
+      [
+       39.05,
+       39.24
+      ],
+      [
+       43.62,
+       43.81
+      ],
+      [
+       51.65,
+       51.85
+      ],
+      [
+       54.04,
+       54.22
+      ],
+      [
+       57.99,
+       58.15
+      ]
+     ],
+     "source_end_db": -84.6,
+     "source_end_clipped": false,
+     "verify": {
+      "duration_s": 63.56,
+      "wpm": 144,
+      "max_wpm": 179,
+      "too_fast": false,
+      "breaths_left": [
+       [
+        18.28,
+        18.42
+       ],
+       [
+        32.43,
+        32.6
+       ]
+      ],
+      "gaps_over_limit": [],
+      "tail_last_db": -59.3,
+      "status": "FAIL"
+     }
+    }
+   },
+   "V4": {
+    "raw_s": 69.66,
+    "trim_s": 64.24,
+    "verbatim": false,
+    "diff": [
+     [
+      "replace",
+      "a round",
+      "around"
+     ],
+     [
+      "replace",
+      "bodyweight",
+      "body weight"
+     ],
+     [
+      "replace",
+      "two hundred thousand",
+      "200 000"
+     ],
+     [
+      "replace",
+      "get stryde dot",
+      "getstride"
+     ]
+    ],
+    "trim": {
+     "src": "full/T1.V4.raw.mp3",
+     "out": "trim/VO_T1_V4.mp3",
+     "duration_in_s": 69.66,
+     "breaths_cut": [
+      [
+       3.14,
+       3.29
+      ],
+      [
+       7.26,
+       7.46
+      ],
+      [
+       10.32,
+       10.49
+      ],
+      [
+       13.56,
+       13.71
+      ],
+      [
+       15.72,
+       15.87
+      ],
+      [
+       16.81,
+       16.95
+      ],
+      [
+       40.71,
+       40.88
+      ]
+     ],
+     "source_end_db": -86.6,
+     "source_end_clipped": false,
+     "verify": {
+      "duration_s": 64.24,
+      "wpm": 146,
+      "max_wpm": 179,
+      "too_fast": false,
+      "breaths_left": [],
+      "gaps_over_limit": [],
+      "tail_last_db": -51.9,
+      "status": "PASS"
+     }
+    }
+   },
+   "V5": {
+    "raw_s": 68.77,
+    "trim_s": 63.35,
+    "verbatim": false,
+    "diff": [
+     [
+      "replace",
+      "bodyweight",
+      "body weight"
+     ],
+     [
+      "replace",
+      "get stryde dot",
+      "getstride"
+     ]
+    ],
+    "trim": {
+     "src": "full/T1.V5.raw.mp3",
+     "out": "trim/VO_T1_V5.mp3",
+     "duration_in_s": 68.77,
+     "breaths_cut": [
+      [
+       6.02,
+       6.16
+      ],
+      [
+       16.84,
+       17.0
+      ],
+      [
+       17.96,
+       18.09
+      ]
+     ],
+     "source_end_db": -32.4,
+     "source_end_clipped": true,
+     "verify": {
+      "duration_s": 63.35,
+      "wpm": 150,
+      "max_wpm": 179,
+      "too_fast": false,
+      "breaths_left": [],
+      "gaps_over_limit": [],
+      "tail_last_db": -35.1,
+      "status": "PASS"
+     }
+    }
+   }
+  }
+ }
+}

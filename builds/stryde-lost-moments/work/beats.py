@@ -82,7 +82,7 @@ def a_hka():
      S("PROP-REF").replace("[THE CARRIED FINISHES, NAMED IN ONE CLAUSE]", PROP_G_CARRIED) + " " + fillp(S("PROP-SHELL"), PROP_G_SHELL),
      "THE HALL AND STAIRS of the attached property reference, seen from the hall floor beside the foot of the staircase, looking at the stairs side-on through the open spindle side: the flight rises from right to left across the frame along the left-hand wall, the white spindles and the dark mahogany handrail running diagonally across the upper part of the frame, the deep-red runner on the treads.",
      S("SUBJ-REF").replace("[two or three named markers: hair, build, one distinctive feature]", s["markers"]),
-     "Seen from the side and waist-down: she is coming DOWN the stairs SIDEWAYS, her body turned side-on to the flight, her right foot already lowered onto the next step down and taking her weight, her left foot still on the step above, knees stiff and slightly bent. "
+     "Seen from the side and waist-down: she is coming DOWN the stairs BACKWARDS, facing UP the flight with her back to the bottom of the stairs, the way people with bad knees get down: her left foot already reaching back and down onto the next step below, toes touching the tread, her right foot still on the step above carrying her weight, knees stiff and slightly bent, her body leaning in toward the stairs. "
      "BOTH HANDS clamp the mahogany handrail at hip height, knuckles pale, arms taking her weight. Her bare knees show below the hem of the skirt. Nothing on either knee. "
      "The frame is cropped at her waist; her face is not in the frame.",
      "Wearing " + WARD["G-D1"] + ".",
@@ -90,7 +90,7 @@ def a_hka():
      light_line(r, "her legs and the stairs", "grey morning light, soft and indirect from above — the problem state, flat and cool, never moody"),
      S("BROLL-REAL"), S("PHYS-FRAME-C"), S("CAP-A"), S("CAP-FILE"),
      "AVOID: " + ", ".join([S("NEG-SUBJ"), S("NEG-PROP"), S("NEG-LIGHT"), S("NEG-M1"), S("NEG-FILE"),
-       "no face in frame, no product anywhere, no knee strap, no knee support, no walking stick, no stairlift, no person facing down the stairs, no second person"])]
+       "no face in frame, no product anywhere, no knee strap, no knee support, no walking stick, no stairlift, no person facing down the stairs, no person sideways on the stairs, no one walking down forwards, no second person"])]
     return dict(model="nano_banana_2", refs=[("C1 sheet", s["sheet_job"]), ("P0-PROP-G plate", "faf039cb-e64f-4a3c-9772-85b0cb5c26f1")],
                 face="NOFACE", body=body)
 BEATS["A-HKa"] = a_hka
