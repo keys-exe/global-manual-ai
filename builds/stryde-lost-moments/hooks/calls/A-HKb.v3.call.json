@@ -8,7 +8,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_185835_9ad2b3c5-225c-45bf-916b-b126cec0a543.png",
- "start_approved": false,
+ "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,
@@ -29,6 +29,7 @@
    "prevented_by": "start frame caught mid-slide, one slide in about a second, HOLD-C + NEG-WARP-C"
   }
  ],
- "approved_by": "user Confirm on the board (A-HKb v2 frame)",
- "fix_note": "Fault in the frame (user Fix: MAKE THE PRODUCT VISIBLE): v2 frame showed the strap side-on under her hands \u2192 v3 frame shot square to the knee, whole shell visible; motion = fingertips press the band once and lift away, strap never moves; no prompt resent. THIRD video generation of this shot \u2014 waits for the user's go (\u00a722X)"
+ "approved_by": "user: CONFIRM HOOK 1 (2026-09-28)",
+ "fix_note": "Fault in the frame (user Fix: MAKE THE PRODUCT VISIBLE): v2 frame showed the strap side-on under her hands \u2192 v3 frame shot square to the knee, whole shell visible; motion = fingertips press the band once and lift away, strap never moves; no prompt resent. THIRD video generation of this shot \u2014 waits for the user's go (\u00a722X)",
+ "user_go": "user: CONFIRM HOOK 1 (2026-09-28) \u2014 go for the 3rd generation"
 }
