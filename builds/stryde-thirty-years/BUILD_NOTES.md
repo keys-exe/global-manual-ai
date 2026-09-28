@@ -136,9 +136,24 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   Prompt: sleeve lowered on "this morning" in ~1s, line straight through. HK3-FULL v3 (10.08s, 630 credits, task
   8235dfb1…) on the board as review. No more HK3 video generations without the user.
 
-## Where it stands (2026-09-28 16:20)
-- VO master **T2** (confirmed). HK1-FULL v3 confirmed.
-- **Waiting on the user (review):** HK2-FULL v1, HK3-FULL video v3 (10s); TH-HK1/2/3-BODY v3 (gentle trim).
-- **Next:** after the hooks are confirmed → B-roll (step 7): E6 lengths from `TH-HKn+BODY.trim2` word timestamps first.
-- Board storage near its 1 GB cap — upload at source bitrate; Drive if it fills.
+  ~16:50: user confirmed HK2-FULL and HK3-FULL v3 ("confirmed, proceed to B-roll"). Step 7 started:
+  - E6 lengths: `work/broll/plan_HK1.json` (HK1+BODY trim2 audio + TH track) → `assemble.py --lengths` PASS, no failures
+    (`work/broll/lengths_HK1.json`); MECH rows max 10s (no human motion); keys that sat on a phrase's last word dropped
+    (BR-10/11/12/14a/15a); **BR-10 split into BR-10a ("One, the placement.", high front, fingertip trace) and BR-10b
+    ("Two centimetres below the kneecap…", eye profile, still)** — 6.6s > 6s. Act map updated (39 rows), angles.py PASS.
+  - Prompts: `broll/build_broll.py` → `broll/<BEAT>.t2i.txt`, `broll/broll_v1.json` (§22T seed + ANGLE/FOCUS/LIGHT/COLOUR
+    lines, product strings from the STRYDE module, ANAT-A/B for MECH). Route as the user set for STRYDE builds: realistic
+    B-roll → Higgsfield nano_banana_pro, anatomy → nano_banana_2. Product refs imported to Higgsfield (`broll/ref_ids.json`).
+  - 27 start images (21 BR + 5 MECH + BR-10 split), one render each, jobs `broll/jobs_v1.json` (MECH-12's first job failed
+    at Higgsfield and was resent unchanged). All on the board as To check (stage broll, video `planned`, Kling 3.0 omni,
+    duration = E6 call length). Renders in `broll/renders/` (gitignored; board + Higgsfield URLs hold them).
+  - Old HK3-BR / HK3-BR2 / HK3-TH cards are superseded by the HK3-FULL one take (left as they are).
+
+## Where it stands (2026-09-28 17:10)
+- Hooks done: HK1/HK2/HK3-FULL confirmed. VO master T2. TH-HK1/2/3-BODY v3 (gentle trim) still To check.
+- **Waiting on the user:** the 27 B-roll start images (Confirm / Fix on the board).
+- **Next:** for each confirmed image, the Kling 3.0 omni video at its E6 length (§27G one action, `preflight.py` PASS,
+  `prefer_multi_shots` false; pinned beats BR-11, BR-15a, BR-15c, BR-18a, BR-18b need an approved end image first). Then the
+  rough cut (`assemble.py`) and the hook variants (`variants.py`), then the CapCut block.
+- Board storage: ~230 MB of B-roll images added — check headroom before the videos; Drive if it fills.
 - Open: F3, F4, F11, F12, F13.
