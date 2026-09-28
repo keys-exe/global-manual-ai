@@ -61,7 +61,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **HK2 Fixes (user, board notes):** HK2-01 "SHOW LOTS OF written letters" → v2: trays overflowing, handwritten letters and
   cards drifting across the desk, a thicker stack. HK2-02 "SHOW Three things come up more than anything else" → v2: the board
   sorted into three big clusters (red / yellow / blue pins and ribbons), no readable text (the EG01 banner carries the words).
-  HK2-03 confirmed. v1 kept in `imageVersions` and `hooks/HK2/*_v1.txt`.
+  HK2-03 confirmed; HK2-01 v2 confirmed. v1 kept in `imageVersions` and `hooks/HK2/*_v1.txt`.
+  HK2-02 second Fix "SHOW THE LETTER THAT HAVE THE 3 REGRETS ABOUT THERE KNEES" → v3: closer over-the-shoulder, N pinning one
+  handwritten letter, readable: "Three things I wish I had known about my knees — 1. Nobody told me where the pain was coming
+  from. 2. I protected my bad knee with my good one. 3. I stopped saying yes, and never said why." (paraphrase of the script's
+  three regrets, first person; no name, no brand). Row now CU, focus the letter. v2 prompt in `HK2-02_v2.txt`.
 - **Next:** on the user's image Confirm → HK2 clips (3 / 3 / 3s): Kling connector while it has credits, else Kie (`kie.py kling`).
 
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
