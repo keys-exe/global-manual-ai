@@ -66,6 +66,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   bitrate (~4 Mb/s) or make the Drive OUTPUT folders.
   Hooks: user — no selfie in the hooks either (override of VN01/VN02). HK1 start-image prompt `hooks/HK1_start.prompt.txt`.
 
+  ~12:40: TH-HK1/2/3-BODY v3 (gentle trim) written to the board as `review` — the user's earlier Confirm was on the tight v2.
+  HK1 start image v1 generated (Higgsfield job 996705d3…, logged nano_banana_2) → board card `HK1`, image To check.
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.
