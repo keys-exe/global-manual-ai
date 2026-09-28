@@ -1023,7 +1023,7 @@ function renderInner(){
     return `<section class="widget${s.wide?" wide":""}" id="w-${s.key}">
       <div class="w-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
         <div class="w-title"><h2>${s.name}</h2><span class="sub">${s.sub}</span></div>
-        <div class="w-actions">${link}</div></div>
+        <div class="w-actions">${s.key==="broll"&&BOARD_ROLE!=="old"?bankBtn(gens):""}${link}</div></div>
       <div class="bar w-bar">${stageBar(s,b,gens,all)}</div>
       <div class="w-body">${body}</div></section>`;
   }).join("");
@@ -1290,7 +1290,7 @@ function renderManual(gens){
       <div class="bar"><i style="width:${t?d/t*100:0}%;background:var(--use)"></i></div>
       <span class="c">${d} of ${t} done</span></button>`};
   $("#mbar").innerHTML=`<nav class="pipe" style="--n:${gs.length+1}" aria-label="Groups">${stepM("all","All","Everything",allP[0],allP[1],0)}${gs.map((x,i)=>{const [d,t,w]=prog(x);return stepM(x.key,String(i+1).padStart(2,"0"),x.label,d,t,w)}).join("")}</nav>
-    <div class="mtools"${BOARD_ROLE==="old"?" hidden":""}><label class="switch"><input type="checkbox" data-needs="1" ${state.mneeds?"checked":""}><span class="sw-track"><span class="sw-knob"></span></span><span>Only what needs me <b>${needsYouCount(gens)}</b></span></label>${(n=>`<button class="btn small primary" type="button" data-zip="brollbank" data-step="video" ${n?"":"disabled"} title="Every confirmed hook and B-roll video, full quality, for the B-roll bank">${I.dl} Download all B-rolls <b>${n}</b></button>`)(brollBank(gens).length)}</div>`;
+    <div class="mtools"${BOARD_ROLE==="old"?" hidden":""}><label class="switch"><input type="checkbox" data-needs="1" ${state.mneeds?"checked":""}><span class="sw-track"><span class="sw-knob"></span></span><span>Only what needs me <b>${needsYouCount(gens)}</b></span></label>${bankBtn(gens)}</div>`;
   const html=gs.map(x=>{
     if(state.mstage!=="all"&&state.mstage!==x.key) return "";
     const steps=["image","video","file"].filter(k=>x.items.some(g=>flow(g).includes(k)));
@@ -1426,6 +1426,7 @@ async function downloadOne(g,k,vnum){
 }
 // the B-roll bank: every confirmed hook and B-roll video, its current version at full quality
 function brollBank(gens){return gens.filter(g=>["broll","hooks"].includes(g.stage)&&!isAudio(g)&&flow(g).includes("video")&&stepState(g,"video")==="ok"&&g.videoAsset)}
+function bankBtn(gens){const n=brollBank(gens).length;return `<button class="btn small primary" type="button" data-zip="brollbank" data-step="video" ${n?"":"disabled"} title="Every confirmed hook and B-roll video, full quality, for the B-roll bank">${I.dl} Download all B-rolls <b>${n}</b></button>`}
 async function downloadBank(){
   const b=currentBuild(), gens=brollBank(buildGens()).sort((x,y)=>groupOf(x).order-groupOf(y).order||beatSort(x,y)), d=STEP.video;
   if(!gens.length) return;
