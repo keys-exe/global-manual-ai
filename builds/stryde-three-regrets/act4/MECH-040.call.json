@@ -3,7 +3,7 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"act4_pad_catches\",\"subject\":\"The same anatomical knee model as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Virtual camera already orbiting on frame one. Slow unbroken lateral orbit with a gentle push, constant rate, mechanically smooth, no handheld physics. Narrow arc, target centred. Still moving at the cut.\",\"framing\":\"MCU as in the start frame, lateral. FOCUS: the strap and tendon are sharp.\"},\"motion\":\"CONTINUING: the strap sits on the tendon below the kneecap, the whole leg held completely still. COMPLETING: one glow, about three seconds — the shell's pad lights up cool pale blue in place, the tendon beneath staying cool and unlit; nothing in the leg moves. UNRESOLVED: the cool glow holds, the leg still.The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle. The anatomy is frozen still every frame: no muscle moves, contracts, bulges or twitches; the tendon and the knee hold exactly as in the start frame; only the glow and the camera move. The anatomy keeps its structure every frame: bones hold shape, length and spacing, joints never separate or pass through each other, muscle keeps constant volume, and the layer order holds — bone deepest, muscle over it, translucent contour outermost.\",\"lighting\":\"Render exactly as in the start frame, same rim light and colour. No grading change across the clip.\",\"style\":\"Premium 3D anatomical visualisation for medical education, clean broadcast-quality render, as in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no flowing energy, no river of light, no glow moving along the limb away from the site, no emission migrating, no fog, no mist, no crossfade, no arrows, no lasers, no energy bolts, no projectiles, no fire, no flames, no sparks, no beams, no external energy attacking the body, no shattering, no fragments, no cracks, no shockwave, no explosion, no orange glow at the site, no strap sliding, no strap on the kneecap, no shell bending, no muscle moving, no muscle contracting, no twitching, no knee flexing\"}",
+ "prompt": "{\"shot\":\"act4_pad_catches\",\"subject\":\"The same anatomical knee model as in the start frame, seen from the same side; the quadriceps above the kneecap identical in shape, size and fibre direction every frame.\",\"camera\":{\"movement\":\"Virtual camera already drifting on the first frame, never static at entry. A slow steady lateral travel across the subject, single direction, constant unhurried speed, mechanically smooth — no rotation, no orbit, no push, no sway, no handheld physics. Total travel roughly a tenth of frame width. Still drifting on the final frame.\",\"framing\":\"MCU as in the start frame, lateral, held on this one side view for the whole clip. FOCUS: the strap and tendon are sharp.\"},\"motion\":\"CONTINUING: the strap sits on the tendon below the kneecap, the leg held completely still. COMPLETING: one glow, about three seconds — the shell's pad lights cool pale blue in place, the tendon beneath staying cool and unlit. UNRESOLVED: the cool glow holds. The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks, same notch, band, hardware and wordmark. The rigid shell never bends. The anatomy is frozen every frame: no muscle moves; the quadriceps, tendon and knee hold exactly as in the start frame; bones keep shape and spacing; layer order holds — bone, muscle, translucent contour; nothing new appears. Only the glow and the camera move.\",\"lighting\":\"Render exactly as in the start frame, same rim light and colour. No grading change across the clip.\",\"style\":\"Premium 3D anatomical visualisation for medical education, clean broadcast-quality render, as in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no texture swimming, no flickering geometry, no exposure pumping, no flowing energy, no glow moving along the limb, no emission migrating, no arrows, no lasers, no beams, no orange glow at the site, no strap sliding, no strap on the kneecap, no shell bending, no muscle moving, no knee flexing, no orbit, no front view, no quadriceps changing, no second product, no plate, no new parts\"}",
  "duration": 5,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
@@ -12,20 +12,21 @@
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 2,
+ "generation": 3,
  "risks": [
   {
-   "risk": "the muscle moves",
-   "prevented_by": "anatomy frozen; only glow and camera move; no muscle moving, no knee flexing"
+   "risk": "the orbit reveals unseen sides and the model invents them (quadriceps redrawn, phantom plate)",
+   "prevented_by": "RIG-RVD lateral drift, one side view held; no orbit, no front view, no second product, no new parts"
   },
   {
-   "risk": "the strap slides through the joint",
-   "prevented_by": "holds station; no strap sliding"
+   "risk": "the muscle moves",
+   "prevented_by": "anatomy frozen; no muscle moving, no knee flexing"
   },
   {
    "risk": "product morphs",
    "prevented_by": "HOLD-PC; NEG-WARP-P"
   }
  ],
- "fix_note": "user: 'THE MUSCLE MUST NOT MOVE' — v1 flexed the knee and moved the muscle (PHYS_A contraction line) → the leg is frozen; only the pad's glow and the orbit move"
+ "fix_note": "user: 'THE QUADRICEPS MUSCLE MUST BE THE SAME' — v2 root cause: the RVC orbit swung to a front view, so the model redrew the quadriceps and invented a second plate → camera RIG-RVD (lateral drift, no rotation), one side view held, guards against new parts",
+ "user_go": "user: 'FIX MECH-040' (2026-09-28) — go for gen 3, §22X"
 }
