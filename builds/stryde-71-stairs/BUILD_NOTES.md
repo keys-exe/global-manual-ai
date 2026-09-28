@@ -24,6 +24,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   → board To check. Voice takes `voice/N_G1.call.json`, `N_G2.call.json` built; preflight PASS except "start image approved".
   Higgsfield 17,998.5 · Kling 3.0 · Kie 215,672.8.
 
+- 19:20 UTC: user "FIX THOSE" → board Fixes: P1-LANDING ("THE PICTURES NOT THE SAME AS THE P0") regenerated with P0-PROP-N attached
+  as reference, the photo wall written as P0's (v2, job a53b6e6b); P4-STORE ("FIX THE DISTORTIONS") regenerated as an empty store with
+  straight-line geometry, no people, PHYS-FRAME-C body clause dropped (v2, job 751cd1e7). v1s moved to the Old board. N-VOICE-IMG was built
+  against P1 v1 — if you want its photo wall to match too, press Fix on it.
+
 ## Where it stands
 - **Waiting on the user:** Confirm/Fix the 8 plates and N-VOICE-IMG.
 - **Blocked:** Kling has 3.0 credits. The two 10s voice takes (and every B-roll clip after) need Kling; §5 forbids a silent reroute to Kie.
