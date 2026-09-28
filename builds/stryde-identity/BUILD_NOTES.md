@@ -55,3 +55,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   Top shots take the user's HK1-T clip as @video1, the movement to copy (user: "use the hk1t i sent for inspo in all
   the hk t"); `kie.py` gained `--ref-video` for it. HK1-T itself stays the user's clip. The Kling HK2 videos are kept as v1.
 
+- (2026-09-28) **User: "please follow the visual"** (VN01–VN03 pasted again). Simple prompts must still carry every
+  part of the visual note: HK1-B + camera eases back to her hand on the rail; HK2-B + walks off with a box on his
+  shoulder (camera eases back to show it); HK3-B + camera eases back to the toddler on a scooter ahead, her keeping up;
+  HK3-T holds the strap out (child's scooter against the wall behind). Seedance v2 of HK1-B / HK2-B sent with these.
