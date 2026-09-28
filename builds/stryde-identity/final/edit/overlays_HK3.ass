@@ -3,21 +3,222 @@ ScriptType: v4.00+
 PlayResX: 1080
 PlayResY: 1920
 WrapStyle: 0
+ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Big,FreeSans,190,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,9,0,5,40,40,0,1
-Style: Sub,FreeSans,70,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,6,0,5,40,40,0,1
-Style: Offer,FreeSans,76,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,-1,0,0,100,100,0,0,1,7,0,5,40,40,0,1
-Style: Urg,FreeSans,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,1,0,1,5,0,5,40,40,0,1
+Style: Cap,Montserrat Black,76,&H00FFFFFF,&H00FFFFFF,&H00000000,&H99000000,0,0,0,0,100,100,1,0,1,8,4,2,150,190,640,1
+Style: Hook,Montserrat Black,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H99000000,0,0,0,0,100,100,1,0,1,9,4,5,110,110,0,1
+Style: Num,Anton,230,&H0000D4FF,&H0000D4FF,&H00000000,&H99000000,0,0,0,0,100,100,2,0,1,9,6,5,0,0,0,1
+Style: Lbl,Montserrat Black,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,3,0,1,0,0,5,0,0,0,1
+Style: Box,Montserrat Black,10,&H00FFFFFF,&H00FFFFFF,&H00000000,&H99000000,0,0,0,0,100,100,0,0,1,0,5,5,0,0,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:04.72,0:00:07.33,Big,,0,0,0,,{\pos(540,576)\fad(120,120)}17×
-Dialogue: 0,0:00:04.72,0:00:07.33,Sub,,0,0,0,,{\pos(540,716)\fad(120,120)}YOUR BODYWEIGHT
-Dialogue: 0,0:00:24.32,0:00:26.50,Big,,0,0,0,,{\pos(540,576)\fad(120,120)}34%
-Dialogue: 0,0:00:24.32,0:00:26.50,Sub,,0,0,0,,{\pos(540,716)\fad(120,120)}LESS STRAIN
-Dialogue: 0,0:00:46.62,0:00:49.33,Big,,0,0,0,,{\pos(540,576)\fad(120,120)}200,000+
-Dialogue: 0,0:00:46.62,0:00:49.33,Sub,,0,0,0,,{\pos(540,716)\fad(120,120)}PEOPLE WEAR ONE
-Dialogue: 0,0:00:49.33,0:00:58.12,Offer,,0,0,0,,{\pos(540,1305)\fad(120,120)}• Buy 1 Get 1 Free
-Dialogue: 0,0:00:49.33,0:00:58.12,Urg,,0,0,0,,{\pos(540,1405)\fad(120,120)}60-DAY MONEY-BACK GUARANTEE
+Dialogue: 5,0:00:00.00,0:00:00.26,Hook,,0,0,0,,{\an5\pos(540,960)\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}WHY{\c&H00FFFFFF&} THESE KNEE
+Dialogue: 5,0:00:00.26,0:00:00.54,Hook,,0,0,0,,{\an5\pos(540,960)}WHY {\c&H0000D4FF&}THESE{\c&H00FFFFFF&} KNEE
+Dialogue: 5,0:00:00.54,0:00:00.78,Hook,,0,0,0,,{\an5\pos(540,960)}WHY THESE {\c&H0000D4FF&}KNEE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:00.78,0:00:01.08,Hook,,0,0,0,,{\an5\pos(540,960)\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}STRAPS{\c&H00FFFFFF&} ARE A
+Dialogue: 5,0:00:01.08,0:00:01.38,Hook,,0,0,0,,{\an5\pos(540,960)}STRAPS {\c&H0000D4FF&}ARE{\c&H00FFFFFF&} A
+Dialogue: 5,0:00:01.38,0:00:01.64,Hook,,0,0,0,,{\an5\pos(540,960)}STRAPS ARE {\c&H0000D4FF&}A{\c&H00FFFFFF&}
+Dialogue: 5,0:00:01.64,0:00:01.88,Hook,,0,0,0,,{\an5\pos(540,960)\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}MUST{\c&H00FFFFFF&} IF YOU
+Dialogue: 5,0:00:01.88,0:00:02.22,Hook,,0,0,0,,{\an5\pos(540,960)}MUST {\c&H0000D4FF&}IF{\c&H00FFFFFF&} YOU
+Dialogue: 5,0:00:02.22,0:00:02.36,Hook,,0,0,0,,{\an5\pos(540,960)}MUST IF {\c&H0000D4FF&}YOU{\c&H00FFFFFF&}
+Dialogue: 5,0:00:02.36,0:00:02.62,Hook,,0,0,0,,{\an5\pos(540,960)\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}CAN'T{\c&H00FFFFFF&} KEEP UP
+Dialogue: 5,0:00:02.62,0:00:02.76,Hook,,0,0,0,,{\an5\pos(540,960)}CAN'T {\c&H0000D4FF&}KEEP{\c&H00FFFFFF&} UP
+Dialogue: 5,0:00:02.76,0:00:02.94,Hook,,0,0,0,,{\an5\pos(540,960)}CAN'T KEEP {\c&H0000D4FF&}UP{\c&H00FFFFFF&}
+Dialogue: 5,0:00:02.94,0:00:03.06,Hook,,0,0,0,,{\an5\pos(540,960)\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}WITH{\c&H00FFFFFF&} YOUR
+Dialogue: 5,0:00:03.06,0:00:03.22,Hook,,0,0,0,,{\an5\pos(540,960)}WITH {\c&H0000D4FF&}YOUR{\c&H00FFFFFF&}
+Dialogue: 5,0:00:03.22,0:00:03.68,Hook,,0,0,0,,{\an5\pos(540,960)\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}GRANDCHILDREN{\c&H00FFFFFF&}
+Dialogue: 5,0:00:03.68,0:00:04.42,Hook,,0,0,0,,{\an5\pos(540,960)\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}ANYMORE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:04.54,0:00:04.70,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}BECAUSE{\c&H00FFFFFF&} EVERY
+Dialogue: 5,0:00:04.70,0:00:05.10,Cap,,0,0,0,,{}BECAUSE {\c&H0000D4FF&}EVERY{\c&H00FFFFFF&}
+Dialogue: 5,0:00:05.10,0:00:05.44,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}STEP{\c&H00FFFFFF&} PUTS
+Dialogue: 5,0:00:05.44,0:00:05.72,Cap,,0,0,0,,{}STEP {\c&H0000D4FF&}PUTS{\c&H00FFFFFF&}
+Dialogue: 5,0:00:05.72,0:00:06.48,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}SEVENTEEN{\c&H00FFFFFF&} TIMES
+Dialogue: 5,0:00:06.48,0:00:06.86,Cap,,0,0,0,,{}SEVENTEEN {\c&H0000D4FF&}TIMES{\c&H00FFFFFF&}
+Dialogue: 5,0:00:06.86,0:00:07.04,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}YOUR{\c&H00FFFFFF&} BODYWEIGHT
+Dialogue: 5,0:00:07.04,0:00:07.46,Cap,,0,0,0,,{}YOUR {\c&H0000D4FF&}BODYWEIGHT{\c&H00FFFFFF&}
+Dialogue: 5,0:00:07.46,0:00:07.66,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}THROUGH{\c&H00FFFFFF&} ONE SMALL
+Dialogue: 5,0:00:07.66,0:00:08.06,Cap,,0,0,0,,{}THROUGH {\c&H0000D4FF&}ONE{\c&H00FFFFFF&} SMALL
+Dialogue: 5,0:00:08.06,0:00:08.56,Cap,,0,0,0,,{}THROUGH ONE {\c&H0000D4FF&}SMALL{\c&H00FFFFFF&}
+Dialogue: 5,0:00:08.56,0:00:08.98,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}SPOT{\c&H00FFFFFF&} BELOW YOUR
+Dialogue: 5,0:00:08.98,0:00:09.24,Cap,,0,0,0,,{}SPOT {\c&H0000D4FF&}BELOW{\c&H00FFFFFF&} YOUR
+Dialogue: 5,0:00:09.24,0:00:09.46,Cap,,0,0,0,,{}SPOT BELOW {\c&H0000D4FF&}YOUR{\c&H00FFFFFF&}
+Dialogue: 5,0:00:09.46,0:00:09.88,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}KNEECAP{\c&H00FFFFFF&}
+Dialogue: 5,0:00:09.88,0:00:10.02,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}THESE{\c&H00FFFFFF&} STRAPS TOOK
+Dialogue: 5,0:00:10.02,0:00:10.40,Cap,,0,0,0,,{}THESE {\c&H0000D4FF&}STRAPS{\c&H00FFFFFF&} TOOK
+Dialogue: 5,0:00:10.40,0:00:10.70,Cap,,0,0,0,,{}THESE STRAPS {\c&H0000D4FF&}TOOK{\c&H00FFFFFF&}
+Dialogue: 5,0:00:10.70,0:00:11.00,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}THREE{\c&H00FFFFFF&} YEARS TO
+Dialogue: 5,0:00:11.00,0:00:11.36,Cap,,0,0,0,,{}THREE {\c&H0000D4FF&}YEARS{\c&H00FFFFFF&} TO
+Dialogue: 5,0:00:11.36,0:00:11.62,Cap,,0,0,0,,{}THREE YEARS {\c&H0000D4FF&}TO{\c&H00FFFFFF&}
+Dialogue: 5,0:00:11.62,0:00:11.86,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}BUILD{\c&H00FFFFFF&} WITH
+Dialogue: 5,0:00:11.86,0:00:12.04,Cap,,0,0,0,,{}BUILD {\c&H0000D4FF&}WITH{\c&H00FFFFFF&}
+Dialogue: 5,0:00:12.04,0:00:12.58,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}ORTHOPAEDIC{\c&H00FFFFFF&} SURGEONS
+Dialogue: 5,0:00:12.58,0:00:13.02,Cap,,0,0,0,,{}ORTHOPAEDIC {\c&H0000D4FF&}SURGEONS{\c&H00FFFFFF&}
+Dialogue: 5,0:00:13.02,0:00:13.36,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}TO{\c&H00FFFFFF&} SIT RIGHT
+Dialogue: 5,0:00:13.36,0:00:13.62,Cap,,0,0,0,,{}TO {\c&H0000D4FF&}SIT{\c&H00FFFFFF&} RIGHT
+Dialogue: 5,0:00:13.62,0:00:13.94,Cap,,0,0,0,,{}TO SIT {\c&H0000D4FF&}RIGHT{\c&H00FFFFFF&}
+Dialogue: 5,0:00:13.94,0:00:14.24,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}ON{\c&H00FFFFFF&} THAT SPOT
+Dialogue: 5,0:00:14.24,0:00:14.44,Cap,,0,0,0,,{}ON {\c&H0000D4FF&}THAT{\c&H00FFFFFF&} SPOT
+Dialogue: 5,0:00:14.44,0:00:14.82,Cap,,0,0,0,,{}ON THAT {\c&H0000D4FF&}SPOT{\c&H00FFFFFF&}
+Dialogue: 5,0:00:14.82,0:00:15.12,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}UNLIKE{\c&H00FFFFFF&} THE CHEAP
+Dialogue: 5,0:00:15.12,0:00:15.32,Cap,,0,0,0,,{}UNLIKE {\c&H0000D4FF&}THE{\c&H00FFFFFF&} CHEAP
+Dialogue: 5,0:00:15.32,0:00:15.52,Cap,,0,0,0,,{}UNLIKE THE {\c&H0000D4FF&}CHEAP{\c&H00FFFFFF&}
+Dialogue: 5,0:00:15.52,0:00:15.90,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}COPIES{\c&H00FFFFFF&}
+Dialogue: 5,0:00:15.90,0:00:16.14,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}WHICH{\c&H00FFFFFF&} ARE TOO
+Dialogue: 5,0:00:16.14,0:00:16.26,Cap,,0,0,0,,{}WHICH {\c&H0000D4FF&}ARE{\c&H00FFFFFF&} TOO
+Dialogue: 5,0:00:16.26,0:00:16.42,Cap,,0,0,0,,{}WHICH ARE {\c&H0000D4FF&}TOO{\c&H00FFFFFF&}
+Dialogue: 5,0:00:16.42,0:00:16.74,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}SMALL{\c&H00FFFFFF&} TO REACH IT
+Dialogue: 5,0:00:16.74,0:00:16.94,Cap,,0,0,0,,{}SMALL {\c&H0000D4FF&}TO{\c&H00FFFFFF&} REACH IT
+Dialogue: 5,0:00:16.94,0:00:17.14,Cap,,0,0,0,,{}SMALL TO {\c&H0000D4FF&}REACH{\c&H00FFFFFF&} IT
+Dialogue: 5,0:00:17.14,0:00:17.48,Cap,,0,0,0,,{}SMALL TO REACH {\c&H0000D4FF&}IT{\c&H00FFFFFF&}
+Dialogue: 5,0:00:17.48,0:00:18.10,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}INSIDE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:18.10,0:00:18.22,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}A{\c&H00FFFFFF&} SILICONE PAD
+Dialogue: 5,0:00:18.22,0:00:18.52,Cap,,0,0,0,,{}A {\c&H0000D4FF&}SILICONE{\c&H00FFFFFF&} PAD
+Dialogue: 5,0:00:18.52,0:00:18.94,Cap,,0,0,0,,{}A SILICONE {\c&H0000D4FF&}PAD{\c&H00FFFFFF&}
+Dialogue: 5,0:00:18.94,0:00:19.38,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}CATCHES{\c&H00FFFFFF&} THE FORCE
+Dialogue: 5,0:00:19.38,0:00:19.62,Cap,,0,0,0,,{}CATCHES {\c&H0000D4FF&}THE{\c&H00FFFFFF&} FORCE
+Dialogue: 5,0:00:19.62,0:00:19.90,Cap,,0,0,0,,{}CATCHES THE {\c&H0000D4FF&}FORCE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:19.90,0:00:20.16,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}AND{\c&H00FFFFFF&} MOVES IT
+Dialogue: 5,0:00:20.16,0:00:20.34,Cap,,0,0,0,,{}AND {\c&H0000D4FF&}MOVES{\c&H00FFFFFF&} IT
+Dialogue: 5,0:00:20.34,0:00:20.52,Cap,,0,0,0,,{}AND MOVES {\c&H0000D4FF&}IT{\c&H00FFFFFF&}
+Dialogue: 5,0:00:20.52,0:00:20.70,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}OFF{\c&H00FFFFFF&} THE WORN PART
+Dialogue: 5,0:00:20.70,0:00:20.90,Cap,,0,0,0,,{}OFF {\c&H0000D4FF&}THE{\c&H00FFFFFF&} WORN PART
+Dialogue: 5,0:00:20.90,0:00:21.08,Cap,,0,0,0,,{}OFF THE {\c&H0000D4FF&}WORN{\c&H00FFFFFF&} PART
+Dialogue: 5,0:00:21.08,0:00:21.48,Cap,,0,0,0,,{}OFF THE WORN {\c&H0000D4FF&}PART{\c&H00FFFFFF&}
+Dialogue: 5,0:00:21.48,0:00:21.88,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}BEFORE{\c&H00FFFFFF&} IT HITS
+Dialogue: 5,0:00:21.88,0:00:22.14,Cap,,0,0,0,,{}BEFORE {\c&H0000D4FF&}IT{\c&H00FFFFFF&} HITS
+Dialogue: 5,0:00:22.14,0:00:22.30,Cap,,0,0,0,,{}BEFORE IT {\c&H0000D4FF&}HITS{\c&H00FFFFFF&}
+Dialogue: 5,0:00:22.30,0:00:22.50,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}THE{\c&H00FFFFFF&} JOINT
+Dialogue: 5,0:00:22.50,0:00:23.06,Cap,,0,0,0,,{}THE {\c&H0000D4FF&}JOINT{\c&H00FFFFFF&}
+Dialogue: 5,0:00:23.06,0:00:23.26,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}SPORTS{\c&H00FFFFFF&} SCIENTISTS
+Dialogue: 5,0:00:23.26,0:00:23.56,Cap,,0,0,0,,{}SPORTS {\c&H0000D4FF&}SCIENTISTS{\c&H00FFFFFF&}
+Dialogue: 5,0:00:23.56,0:00:24.00,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}MEASURED{\c&H00FFFFFF&} IT
+Dialogue: 5,0:00:24.00,0:00:24.24,Cap,,0,0,0,,{}MEASURED {\c&H0000D4FF&}IT{\c&H00FFFFFF&}
+Dialogue: 5,0:00:24.24,0:00:24.77,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}THIRTY-FOUR{\c&H00FFFFFF&}
+Dialogue: 5,0:00:24.77,0:00:25.16,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}PERCENT{\c&H00FFFFFF&} LESS STRAIN
+Dialogue: 5,0:00:25.16,0:00:25.44,Cap,,0,0,0,,{}PERCENT {\c&H0000D4FF&}LESS{\c&H00FFFFFF&} STRAIN
+Dialogue: 5,0:00:25.44,0:00:25.84,Cap,,0,0,0,,{}PERCENT LESS {\c&H0000D4FF&}STRAIN{\c&H00FFFFFF&}
+Dialogue: 5,0:00:25.84,0:00:26.24,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}EVERY{\c&H00FFFFFF&} STEP
+Dialogue: 5,0:00:26.24,0:00:26.62,Cap,,0,0,0,,{}EVERY {\c&H0000D4FF&}STEP{\c&H00FFFFFF&}
+Dialogue: 5,0:00:26.62,0:00:26.90,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}BUILT{\c&H00FFFFFF&} FOR BONE
+Dialogue: 5,0:00:26.90,0:00:27.24,Cap,,0,0,0,,{}BUILT {\c&H0000D4FF&}FOR{\c&H00FFFFFF&} BONE
+Dialogue: 5,0:00:27.24,0:00:27.44,Cap,,0,0,0,,{}BUILT FOR {\c&H0000D4FF&}BONE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:27.44,0:00:27.62,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}ON{\c&H00FFFFFF&} BONE
+Dialogue: 5,0:00:27.62,0:00:28.14,Cap,,0,0,0,,{}ON {\c&H0000D4FF&}BONE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:28.14,0:00:29.10,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}ARTHRITIS{\c&H00FFFFFF&}
+Dialogue: 5,0:00:29.14,0:00:29.28,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}WORN{\c&H00FFFFFF&} CARTILAGE
+Dialogue: 5,0:00:29.28,0:00:29.92,Cap,,0,0,0,,{}WORN {\c&H0000D4FF&}CARTILAGE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:29.92,0:00:30.20,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}AND{\c&H00FFFFFF&} MENISCUS
+Dialogue: 5,0:00:30.20,0:00:31.02,Cap,,0,0,0,,{}AND {\c&H0000D4FF&}MENISCUS{\c&H00FFFFFF&}
+Dialogue: 5,0:00:31.02,0:00:31.06,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}SO{\c&H00FFFFFF&} YOU WALK FURTHER
+Dialogue: 5,0:00:31.06,0:00:31.22,Cap,,0,0,0,,{}SO {\c&H0000D4FF&}YOU{\c&H00FFFFFF&} WALK FURTHER
+Dialogue: 5,0:00:31.22,0:00:31.44,Cap,,0,0,0,,{}SO YOU {\c&H0000D4FF&}WALK{\c&H00FFFFFF&} FURTHER
+Dialogue: 5,0:00:31.44,0:00:31.82,Cap,,0,0,0,,{}SO YOU WALK {\c&H0000D4FF&}FURTHER{\c&H00FFFFFF&}
+Dialogue: 5,0:00:31.82,0:00:32.04,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}AND{\c&H00FFFFFF&} TAKE THE
+Dialogue: 5,0:00:32.04,0:00:32.20,Cap,,0,0,0,,{}AND {\c&H0000D4FF&}TAKE{\c&H00FFFFFF&} THE
+Dialogue: 5,0:00:32.20,0:00:32.38,Cap,,0,0,0,,{}AND TAKE {\c&H0000D4FF&}THE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:32.38,0:00:32.78,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}STAIRS{\c&H00FFFFFF&} WITHOUT
+Dialogue: 5,0:00:32.78,0:00:33.08,Cap,,0,0,0,,{}STAIRS {\c&H0000D4FF&}WITHOUT{\c&H00FFFFFF&}
+Dialogue: 5,0:00:33.08,0:00:33.40,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}GRIPPING{\c&H00FFFFFF&} THE RAIL
+Dialogue: 5,0:00:33.40,0:00:33.66,Cap,,0,0,0,,{}GRIPPING {\c&H0000D4FF&}THE{\c&H00FFFFFF&} RAIL
+Dialogue: 5,0:00:33.66,0:00:34.02,Cap,,0,0,0,,{}GRIPPING THE {\c&H0000D4FF&}RAIL{\c&H00FFFFFF&}
+Dialogue: 5,0:00:34.02,0:00:34.10,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}NOT{\c&H00FFFFFF&} BECAUSE THE
+Dialogue: 5,0:00:34.10,0:00:34.36,Cap,,0,0,0,,{}NOT {\c&H0000D4FF&}BECAUSE{\c&H00FFFFFF&} THE
+Dialogue: 5,0:00:34.36,0:00:34.52,Cap,,0,0,0,,{}NOT BECAUSE {\c&H0000D4FF&}THE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:34.52,0:00:34.94,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}ARTHRITIS{\c&H00FFFFFF&} HAS GONE
+Dialogue: 5,0:00:34.94,0:00:35.20,Cap,,0,0,0,,{}ARTHRITIS {\c&H0000D4FF&}HAS{\c&H00FFFFFF&} GONE
+Dialogue: 5,0:00:35.20,0:00:35.56,Cap,,0,0,0,,{}ARTHRITIS HAS {\c&H0000D4FF&}GONE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:35.56,0:00:35.76,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}BECAUSE{\c&H00FFFFFF&} THE FORCE
+Dialogue: 5,0:00:35.76,0:00:35.98,Cap,,0,0,0,,{}BECAUSE {\c&H0000D4FF&}THE{\c&H00FFFFFF&} FORCE
+Dialogue: 5,0:00:35.98,0:00:36.38,Cap,,0,0,0,,{}BECAUSE THE {\c&H0000D4FF&}FORCE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:36.38,0:00:36.82,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}ISN'T{\c&H00FFFFFF&} LANDING
+Dialogue: 5,0:00:36.82,0:00:37.16,Cap,,0,0,0,,{}ISN'T {\c&H0000D4FF&}LANDING{\c&H00FFFFFF&}
+Dialogue: 5,0:00:37.16,0:00:37.40,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}WHERE{\c&H00FFFFFF&} IT HURTS
+Dialogue: 5,0:00:37.40,0:00:37.60,Cap,,0,0,0,,{}WHERE {\c&H0000D4FF&}IT{\c&H00FFFFFF&} HURTS
+Dialogue: 5,0:00:37.60,0:00:38.30,Cap,,0,0,0,,{}WHERE IT {\c&H0000D4FF&}HURTS{\c&H00FFFFFF&}
+Dialogue: 5,0:00:38.30,0:00:38.94,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}ADJUSTABLE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:38.94,0:00:39.06,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}NO{\c&H00FFFFFF&} SLIPPING
+Dialogue: 5,0:00:39.06,0:00:39.76,Cap,,0,0,0,,{}NO {\c&H0000D4FF&}SLIPPING{\c&H00FFFFFF&}
+Dialogue: 5,0:00:39.76,0:00:39.88,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}NO{\c&H00FFFFFF&} SORES
+Dialogue: 5,0:00:39.88,0:00:40.50,Cap,,0,0,0,,{}NO {\c&H0000D4FF&}SORES{\c&H00FFFFFF&}
+Dialogue: 5,0:00:40.50,0:00:40.64,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}NO{\c&H00FFFFFF&} ROLLING DOWN
+Dialogue: 5,0:00:40.64,0:00:40.96,Cap,,0,0,0,,{}NO {\c&H0000D4FF&}ROLLING{\c&H00FFFFFF&} DOWN
+Dialogue: 5,0:00:40.96,0:00:41.50,Cap,,0,0,0,,{}NO ROLLING {\c&H0000D4FF&}DOWN{\c&H00FFFFFF&}
+Dialogue: 5,0:00:41.50,0:00:41.60,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}IT{\c&H00FFFFFF&} SITS FLAT
+Dialogue: 5,0:00:41.60,0:00:41.82,Cap,,0,0,0,,{}IT {\c&H0000D4FF&}SITS{\c&H00FFFFFF&} FLAT
+Dialogue: 5,0:00:41.82,0:00:42.18,Cap,,0,0,0,,{}IT SITS {\c&H0000D4FF&}FLAT{\c&H00FFFFFF&}
+Dialogue: 5,0:00:42.18,0:00:42.46,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}UNDER{\c&H00FFFFFF&} YOUR TROUSERS
+Dialogue: 5,0:00:42.46,0:00:42.64,Cap,,0,0,0,,{}UNDER {\c&H0000D4FF&}YOUR{\c&H00FFFFFF&} TROUSERS
+Dialogue: 5,0:00:42.64,0:00:43.20,Cap,,0,0,0,,{}UNDER YOUR {\c&H0000D4FF&}TROUSERS{\c&H00FFFFFF&}
+Dialogue: 5,0:00:43.20,0:00:43.40,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}LIGHT{\c&H00FFFFFF&} ENOUGH TO
+Dialogue: 5,0:00:43.40,0:00:43.64,Cap,,0,0,0,,{}LIGHT {\c&H0000D4FF&}ENOUGH{\c&H00FFFFFF&} TO
+Dialogue: 5,0:00:43.64,0:00:43.88,Cap,,0,0,0,,{}LIGHT ENOUGH {\c&H0000D4FF&}TO{\c&H00FFFFFF&}
+Dialogue: 5,0:00:43.88,0:00:44.02,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}WEAR{\c&H00FFFFFF&} ALL DAY
+Dialogue: 5,0:00:44.02,0:00:44.34,Cap,,0,0,0,,{}WEAR {\c&H0000D4FF&}ALL{\c&H00FFFFFF&} DAY
+Dialogue: 5,0:00:44.34,0:00:44.90,Cap,,0,0,0,,{}WEAR ALL {\c&H0000D4FF&}DAY{\c&H00FFFFFF&}
+Dialogue: 5,0:00:44.90,0:00:45.14,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}RECOMMENDED{\c&H00FFFFFF&} BY
+Dialogue: 5,0:00:45.14,0:00:45.54,Cap,,0,0,0,,{}RECOMMENDED {\c&H0000D4FF&}BY{\c&H00FFFFFF&}
+Dialogue: 5,0:00:45.54,0:00:46.14,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}ORTHOPAEDIC{\c&H00FFFFFF&} SURGEONS
+Dialogue: 5,0:00:46.14,0:00:46.56,Cap,,0,0,0,,{}ORTHOPAEDIC {\c&H0000D4FF&}SURGEONS{\c&H00FFFFFF&}
+Dialogue: 5,0:00:46.56,0:00:46.96,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}AND{\c&H00FFFFFF&} WORN BY
+Dialogue: 5,0:00:46.96,0:00:47.22,Cap,,0,0,0,,{}AND {\c&H0000D4FF&}WORN{\c&H00FFFFFF&} BY
+Dialogue: 5,0:00:47.22,0:00:47.48,Cap,,0,0,0,,{}AND WORN {\c&H0000D4FF&}BY{\c&H00FFFFFF&}
+Dialogue: 5,0:00:47.48,0:00:47.74,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}OVER{\c&H00FFFFFF&} TWO HUNDRED
+Dialogue: 5,0:00:47.74,0:00:47.97,Cap,,0,0,0,,{}OVER {\c&H0000D4FF&}TWO{\c&H00FFFFFF&} HUNDRED
+Dialogue: 5,0:00:47.97,0:00:48.43,Cap,,0,0,0,,{}OVER TWO {\c&H0000D4FF&}HUNDRED{\c&H00FFFFFF&}
+Dialogue: 5,0:00:48.43,0:00:48.94,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}THOUSAND{\c&H00FFFFFF&} PEOPLE
+Dialogue: 5,0:00:48.94,0:00:49.46,Cap,,0,0,0,,{}THOUSAND {\c&H0000D4FF&}PEOPLE{\c&H00FFFFFF&}
+Dialogue: 5,0:00:49.46,0:00:49.52,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}AND{\c&H00FFFFFF&} THE BEST PART?
+Dialogue: 5,0:00:49.52,0:00:49.62,Cap,,0,0,0,,{}AND {\c&H0000D4FF&}THE{\c&H00FFFFFF&} BEST PART?
+Dialogue: 5,0:00:49.62,0:00:49.78,Cap,,0,0,0,,{}AND THE {\c&H0000D4FF&}BEST{\c&H00FFFFFF&} PART?
+Dialogue: 5,0:00:49.78,0:00:50.24,Cap,,0,0,0,,{}AND THE BEST {\c&H0000D4FF&}PART?{\c&H00FFFFFF&}
+Dialogue: 5,0:00:50.24,0:00:50.50,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}IT'S{\c&H00FFFFFF&} TWO FOR
+Dialogue: 5,0:00:50.50,0:00:50.66,Cap,,0,0,0,,{}IT'S {\c&H0000D4FF&}TWO{\c&H00FFFFFF&} FOR
+Dialogue: 5,0:00:50.66,0:00:50.82,Cap,,0,0,0,,{}IT'S TWO {\c&H0000D4FF&}FOR{\c&H00FFFFFF&}
+Dialogue: 5,0:00:50.82,0:00:50.96,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}THE{\c&H00FFFFFF&} PRICE OF
+Dialogue: 5,0:00:50.96,0:00:51.14,Cap,,0,0,0,,{}THE {\c&H0000D4FF&}PRICE{\c&H00FFFFFF&} OF
+Dialogue: 5,0:00:51.14,0:00:51.34,Cap,,0,0,0,,{}THE PRICE {\c&H0000D4FF&}OF{\c&H00FFFFFF&}
+Dialogue: 5,0:00:51.34,0:00:51.54,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}ONE{\c&H00FFFFFF&} TODAY
+Dialogue: 5,0:00:51.54,0:00:52.06,Cap,,0,0,0,,{}ONE {\c&H0000D4FF&}TODAY{\c&H00FFFFFF&}
+Dialogue: 5,0:00:52.06,0:00:52.16,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}YOU{\c&H00FFFFFF&} GET SIXTY DAYS
+Dialogue: 5,0:00:52.16,0:00:52.34,Cap,,0,0,0,,{}YOU {\c&H0000D4FF&}GET{\c&H00FFFFFF&} SIXTY DAYS
+Dialogue: 5,0:00:52.34,0:00:52.78,Cap,,0,0,0,,{}YOU GET {\c&H0000D4FF&}SIXTY{\c&H00FFFFFF&} DAYS
+Dialogue: 5,0:00:52.78,0:00:53.38,Cap,,0,0,0,,{}YOU GET SIXTY {\c&H0000D4FF&}DAYS{\c&H00FFFFFF&}
+Dialogue: 5,0:00:53.38,0:00:53.50,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}IF{\c&H00FFFFFF&} IT DOESN'T
+Dialogue: 5,0:00:53.50,0:00:53.62,Cap,,0,0,0,,{}IF {\c&H0000D4FF&}IT{\c&H00FFFFFF&} DOESN'T
+Dialogue: 5,0:00:53.62,0:00:53.82,Cap,,0,0,0,,{}IF IT {\c&H0000D4FF&}DOESN'T{\c&H00FFFFFF&}
+Dialogue: 5,0:00:53.82,0:00:54.08,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}CHANGE{\c&H00FFFFFF&} YOUR STAIRS
+Dialogue: 5,0:00:54.08,0:00:54.24,Cap,,0,0,0,,{}CHANGE {\c&H0000D4FF&}YOUR{\c&H00FFFFFF&} STAIRS
+Dialogue: 5,0:00:54.24,0:00:54.82,Cap,,0,0,0,,{}CHANGE YOUR {\c&H0000D4FF&}STAIRS{\c&H00FFFFFF&}
+Dialogue: 5,0:00:54.82,0:00:54.92,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}YOU{\c&H00FFFFFF&} GET YOUR
+Dialogue: 5,0:00:54.92,0:00:55.06,Cap,,0,0,0,,{}YOU {\c&H0000D4FF&}GET{\c&H00FFFFFF&} YOUR
+Dialogue: 5,0:00:55.06,0:00:55.22,Cap,,0,0,0,,{}YOU GET {\c&H0000D4FF&}YOUR{\c&H00FFFFFF&}
+Dialogue: 5,0:00:55.22,0:00:55.38,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}MONEY{\c&H00FFFFFF&} BACK
+Dialogue: 5,0:00:55.38,0:00:55.66,Cap,,0,0,0,,{}MONEY {\c&H0000D4FF&}BACK{\c&H00FFFFFF&}
+Dialogue: 5,0:00:55.66,0:00:55.90,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}PUT{\c&H00FFFFFF&} ONE ON
+Dialogue: 5,0:00:55.90,0:00:56.12,Cap,,0,0,0,,{}PUT {\c&H0000D4FF&}ONE{\c&H00FFFFFF&} ON
+Dialogue: 5,0:00:56.12,0:00:56.40,Cap,,0,0,0,,{}PUT ONE {\c&H0000D4FF&}ON{\c&H00FFFFFF&}
+Dialogue: 5,0:00:56.40,0:00:56.68,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}AND{\c&H00FFFFFF&} YOUR OWN
+Dialogue: 5,0:00:56.68,0:00:56.82,Cap,,0,0,0,,{}AND {\c&H0000D4FF&}YOUR{\c&H00FFFFFF&} OWN
+Dialogue: 5,0:00:56.82,0:00:57.00,Cap,,0,0,0,,{}AND YOUR {\c&H0000D4FF&}OWN{\c&H00FFFFFF&}
+Dialogue: 5,0:00:57.00,0:00:57.40,Cap,,0,0,0,,{\fscx86\fscy86\t(0,90,\fscx100\fscy100)}{\c&H0000D4FF&}STAIRS{\c&H00FFFFFF&} WILL TELL YOU
+Dialogue: 5,0:00:57.40,0:00:57.64,Cap,,0,0,0,,{}STAIRS {\c&H0000D4FF&}WILL{\c&H00FFFFFF&} TELL YOU
+Dialogue: 5,0:00:57.64,0:00:57.80,Cap,,0,0,0,,{}STAIRS WILL {\c&H0000D4FF&}TELL{\c&H00FFFFFF&} YOU
+Dialogue: 5,0:00:57.80,0:00:58.12,Cap,,0,0,0,,{}STAIRS WILL TELL {\c&H0000D4FF&}YOU{\c&H00FFFFFF&}
+Dialogue: 3,0:00:04.67,0:00:07.33,Num,,0,0,0,,{\an5\pos(540,470)\fad(0,150)\fscx30\fscy30\t(0,170,\fscx114\fscy114)\t(170,280,\fscx100\fscy100)}17X
+Dialogue: 1,0:00:04.85,0:00:07.33,Box,,0,0,0,,{\an5\pos(540,660)\c&H1A111111&\bord0\fad(150,150)\p1}m 48 0 l 567 0 b 615 0 615 0 615 48 l 615 48 b 615 96 615 96 567 96 l 48 96 b 0 96 0 96 0 48 l 0 48 b 0 0 0 0 48 0{\p0}
+Dialogue: 2,0:00:04.85,0:00:07.33,Lbl,,0,0,0,,{\an5\pos(540,662)\fad(150,150)}YOUR BODYWEIGHT
+Dialogue: 3,0:00:24.32,0:00:26.50,Num,,0,0,0,,{\an5\pos(540,470)\fad(0,150)\fscx30\fscy30\t(0,170,\fscx114\fscy114)\t(170,280,\fscx100\fscy100)}34%
+Dialogue: 1,0:00:24.50,0:00:26.50,Box,,0,0,0,,{\an5\pos(540,660)\c&H1A111111&\bord0\fad(150,150)\p1}m 48 0 l 379 0 b 427 0 427 0 427 48 l 427 48 b 427 96 427 96 379 96 l 48 96 b 0 96 0 96 0 48 l 0 48 b 0 0 0 0 48 0{\p0}
+Dialogue: 2,0:00:24.50,0:00:26.50,Lbl,,0,0,0,,{\an5\pos(540,662)\fad(150,150)}LESS STRAIN
+Dialogue: 3,0:00:46.62,0:00:49.33,Num,,0,0,0,,{\an5\pos(540,470)\fad(0,150)\fscx30\fscy30\t(0,170,\fscx114\fscy114)\t(170,280,\fscx100\fscy100)}200,000+
+Dialogue: 1,0:00:46.80,0:00:49.33,Box,,0,0,0,,{\an5\pos(540,660)\c&H1A111111&\bord0\fad(150,150)\p1}m 48 0 l 554 0 b 602 0 602 0 602 48 l 602 48 b 602 96 602 96 554 96 l 48 96 b 0 96 0 96 0 48 l 0 48 b 0 0 0 0 48 0{\p0}
+Dialogue: 2,0:00:46.80,0:00:49.33,Lbl,,0,0,0,,{\an5\pos(540,662)\fad(150,150)}PEOPLE WEAR ONE
+Dialogue: 1,0:00:49.33,0:00:58.12,Box,,0,0,0,,{\an5\pos(540,470)\c&H0000D4FF&\bord0\fad(0,200)\fscx40\fscy40\t(0,180,\fscx108\fscy108)\t(180,280,\fscx100\fscy100)\t(900,1200,\fscx106\fscy106)\t(1200,1500,\fscx100\fscy100)\t(2700,3000,\fscx106\fscy106)\t(3000,3300,\fscx100\fscy100)\t(4500,4800,\fscx106\fscy106)\t(4800,5100,\fscx100\fscy100)\t(6300,6600,\fscx106\fscy106)\t(6600,6900,\fscx100\fscy100)\t(8100,8400,\fscx106\fscy106)\t(8400,8700,\fscx100\fscy100)\p1}m 68 0 l 606 0 b 674 0 674 0 674 68 l 674 68 b 674 136 674 136 606 136 l 68 136 b 0 136 0 136 0 68 l 0 68 b 0 0 0 0 68 0{\p0}
+Dialogue: 2,0:00:49.33,0:00:58.12,Lbl,,0,0,0,,{\an5\pos(540,473)\fs80\fsp1\c&H00000000&\fad(0,200)\fscx40\fscy40\t(0,180,\fscx108\fscy108)\t(180,280,\fscx100\fscy100)\t(900,1200,\fscx106\fscy106)\t(1200,1500,\fscx100\fscy100)\t(2700,3000,\fscx106\fscy106)\t(3000,3300,\fscx100\fscy100)\t(4500,4800,\fscx106\fscy106)\t(4800,5100,\fscx100\fscy100)\t(6300,6600,\fscx106\fscy106)\t(6600,6900,\fscx100\fscy100)\t(8100,8400,\fscx106\fscy106)\t(8400,8700,\fscx100\fscy100)}Buy 1 Get 1 Free
+Dialogue: 1,0:00:49.58,0:00:58.12,Box,,0,0,0,,{\an5\pos(540,630)\c&H1A111111&\bord0\fad(180,200)\p1}m 45 0 l 833 0 b 878 0 878 0 878 45 l 878 45 b 878 90 878 90 833 90 l 45 90 b 0 90 0 90 0 45 l 0 45 b 0 0 0 0 45 0{\p0}
+Dialogue: 2,0:00:49.58,0:00:58.12,Box,,0,0,0,,{\an5\pos(163,630)\c&H005EC522&\bord0\shad0\fad(180,200)\p1}m 23 0 l 23 0 b 46 0 46 0 46 23 l 46 23 b 46 46 46 46 23 46 l 23 46 b 0 46 0 46 0 23 l 0 23 b 0 0 0 0 23 0{\p0}
+Dialogue: 3,0:00:49.58,0:00:58.12,Box,,0,0,0,,{\an7\pos(151,618)\c&H00FFFFFF&\bord0\shad0\fad(180,200)\p1}m 3 12 l 9 18 l 22 4 l 25 7 l 9 24 l 0 15{\p0}
+Dialogue: 2,0:00:49.58,0:00:58.12,Lbl,,0,0,0,,{\an4\pos(203,632)\fs44\fsp2\fad(180,200)}60-DAY MONEY-BACK GUARANTEE

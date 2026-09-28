@@ -5,7 +5,7 @@
  "broll": [
   {
    "beat": "EDIT-HK1",
-   "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/271b7b308eaf62e251524563890ba5cc.mp4",
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/HK1_hook_clean.mp4",
    "phrase": "Why these knee straps are a must if you've been told you're bone on bone.",
    "in": 0.0
   },
@@ -36,8 +36,9 @@
   },
   {
    "beat": "BR-06",
-   "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-06_video_v3.mp4",
-   "phrase": "Inside, a silicone pad catches the force"
+   "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/BR-06_slow_of.mp4",
+   "phrase": "Inside, a silicone pad catches the force",
+   "in": 0.0
   },
   {
    "beat": "MECH-07",

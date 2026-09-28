@@ -7,6 +7,7 @@ import imageio_ffmpeg
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 B = Path(__file__).resolve().parent.parent
 VO = Path(sys.argv[1])            # folder holding the VO master files <asset>.mp4
+CLEAN = "--clean" in sys.argv     # no caption: finish.py burns the hook caption (ad style, 2026-09-28)
 MASTERS = {"HK1": "b8db26a0d46e7635e8ef63afc04dff92", "HK2": "fa5e2defd2333a6e04b2c49559892b72", "HK3": "f67ee06f7b67c8bd10a8f5aa5a666ebb"}
 CLIPS = {  # board picks (status use), 2026-09-28
     "HK1": ("HK1-T_video_sd1.mp4", "HK1-B_video_v2.mp4"),
@@ -38,11 +39,11 @@ for hk, (top, bot) in CLIPS.items():
     dur = next(w["s"] for w in words if w["w"].startswith("Because")) - 0.02
     line = (B / f"vo/{hk}.lines.txt").read_text().strip().strip('"')
     a = B / f"final/{hk}.ass"; ass(line, dur, a)
-    out = B / f"final/{hk}_final_hook.mp4"
+    out = B / f"final/{hk}_{'hook_clean' if CLEAN else 'final_hook'}.mp4"
     half = f"scale={W}:-2,crop={W}:{H//2}:(iw-{W})/2:(ih-{H//2})/2,setsar=1,fps=24"
     fc = (f"[0:v]trim=start={SKIP},setpts=PTS-STARTPTS,{half}[t];"
           f"[1:v]trim=start={SKIP},setpts=PTS-STARTPTS,{half}[b];"
-          f"[t][b]vstack=inputs=2,subtitles='{a}':fontsdir=/usr/share/fonts/truetype/freefont[v]")
+          + ("[t][b]vstack=inputs=2[v]" if CLEAN else f"[t][b]vstack=inputs=2,subtitles='{a}':fontsdir=/usr/share/fonts/truetype/freefont[v]"))
     cmd = [FF, "-y", "-hide_banner", "-loglevel", "error",
            "-i", str(B / "hooks" / top), "-i", str(B / "hooks" / bot), "-i", str(VO / f"{MASTERS[hk]}.mp4"),
            "-filter_complex", fc, "-map", "[v]", "-map", "2:a", "-t", f"{dur:.2f}",

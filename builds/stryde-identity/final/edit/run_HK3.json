@@ -4,7 +4,7 @@
   "edl": [
     {
       "beat": "EDIT-HK3",
-      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/732b683df888fbd674b1f4eee62ebf45.mp4",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/HK3_hook_clean.mp4",
       "phrase": "Why these knee straps are a must if you can't keep up with your grandchildren anymore.",
       "key": "\"Why",
       "layout": {
@@ -130,7 +130,7 @@
     },
     {
       "beat": "BR-06",
-      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-06_video_v3.mp4",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/BR-06_slow_of.mp4",
       "phrase": "Inside, a silicone pad catches the force",
       "key": "Inside,",
       "layout": {
@@ -139,14 +139,14 @@
       "word_t": 17.48,
       "start": 17.375,
       "line_end": 22.8333,
-      "in_spec": null,
+      "in_spec": 0.0,
       "peak": null,
       "max": 6.0,
-      "clip_len": 4.04,
+      "clip_len": 2.58,
       "speed": 1.0,
-      "in": 0.4,
-      "flex": true,
-      "skip": 0.4,
+      "in": 0.0,
+      "flex": false,
+      "skip": 0.0,
       "end": 19.7917
     },
     {

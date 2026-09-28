@@ -248,3 +248,17 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - Uploaded the 15 parts (5 per ad) to the Final board and wrote `generations/stryde-identity__FINAL-HK1..3` there
   (stage edit, final, status review). **Finals for this build always go on the Final board.**
 - The duplicate FINAL docs + parts on the current board (GKZD…) are still there; delete only with the user's OK.
+
+## 2026-09-28 — Final v2 (user: BR-06 name cut + slow-mo, captions in the safe zone, ad-style overlays)
+- BR-06: the stryde wordmark turns into view at 2.2s of `BR-06_video_v3.mp4`. The edit now uses 0.4–2.125s only,
+  slowed to ~0.63x with optical-flow interpolation (ffmpeg `minterpolate` mci/aobmc, 24 fps) → `final/src/BR-06_slow_of.mp4`
+  (2.58s, fills the 2.42–2.46s slot, `in` 0). The user asked for the slow-down explicitly (edit only, nothing regenerated).
+- Captions (user's explicit ask; the Build Sheet's "no captions" from the reference is overridden): the script's own words
+  (`vo/master/<HK>+BODY.lines.txt`, verbatim, spelled numbers kept) timed from the transcript. Up to 3 words per chunk,
+  the word being spoken in yellow, Montserrat Black (`final/fonts/`, OFL). Body captions sit at the bottom of the safe zone
+  (text bottom y 1280, margins L150/R190). The hook caption is on the split seam in the same style: hooks re-rendered clean
+  with `make_hooks.py --clean`, and the caption is burned in `finish.py`.
+- Overlays restyled for ads in the top safe band: stat number pops in (Anton, yellow; 17X / 34% / 200,000+) with a label
+  on a dark rounded pill; offer card = yellow pill "Buy 1 Get 1 Free" with a pulse + dark pill with a green check
+  "60-DAY MONEY-BACK GUARANTEE".
+- assemble.py re-run on all three: PASS. The Final board cards FINAL-HK1..3 are now v2 (v1 kept in `videoVersions`), To check.
