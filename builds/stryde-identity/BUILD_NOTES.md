@@ -33,6 +33,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   looped in front of the pad; video v1 = first-and-last frame (rendered before the user said "don't use end frame");
   v2 = start frame only, simple text prompt — To check. User preference: simple plain-text video prompts, not JSON.
   HK1-T final = the user's own clip (video v3, `hooks/HK1-T_video_v3_user.mp4`, board USE).
+  HK2-T v1 and HK2-B v1 made (Kie GPT Image, same prompts/refs as hooks_v1.json) — on the board, To check.
 
 ## Where it stands
 - **§22U steps 6–9 done:** clone `Identity-Narrator` = `F5vpA7jC44a7w7td6GdQ` (by API; `Identity` was taken by the
