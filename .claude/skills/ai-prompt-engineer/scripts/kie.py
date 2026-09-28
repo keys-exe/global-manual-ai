@@ -71,6 +71,9 @@ def create(model, inp):
     d = call("POST", f"{API}/jobs/createTask", {"model": model, "input": inp})
     if d.get("code") != 200:
         sys.exit(json.dumps({"error": "createTask failed", "response": d}))
+    # Say the task id before polling, so a dropped poll can be resumed with `kie.py wait <id>`
+    # instead of paying for the render again.
+    print(json.dumps({"taskId": d["data"]["taskId"]}), file=sys.stderr, flush=True)
     return d["data"]["taskId"]
 
 
