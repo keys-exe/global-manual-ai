@@ -1,0 +1,1 @@
+{"src": "full/T2.mp3", "out": "variants/T2.ALL.mp3", "duration_in_s": 166.32, "breaths_cut": [[21.29, 21.41], [67.52, 67.74], [70.02, 70.15], [90.26, 90.44], [99.49, 99.64], [100.95, 101.13], [122.32, 122.47]], "source_end_db": -80.2, "source_end_clipped": false, "verify": {"duration_s": 151.031, "breaths_left": [], "gaps_over_0_4": [], "tail_last_db": -50.2, "status": "PASS"}}

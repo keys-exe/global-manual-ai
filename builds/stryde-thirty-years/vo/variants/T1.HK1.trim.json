@@ -1,0 +1,1 @@
+{"src": "variants/T1.HK1.raw.mp3", "out": "variants/T1.HK1.mp3", "duration_in_s": 136.59, "breaths_cut": [[46.65, 46.77], [54.94, 55.11], [97.66, 97.87], [100.85, 101.02], [104.01, 104.15]], "source_end_db": -25.3, "source_end_clipped": true, "verify": {"duration_s": 128.636, "breaths_left": [], "gaps_over_0_4": [], "tail_last_db": -29.0, "status": "FAIL"}}
