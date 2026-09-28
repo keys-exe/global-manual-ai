@@ -16,6 +16,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   re-downloaded G1–G3 from Kling (links expire ~2026-09-27 09:10 UTC) and rebuilt `Identity_clone_source.mp3`
   with `voice_source.py` — identical figures; created the board and loaded 16 cards (5 cast confirmed,
   6 plates + 3 voice takes + clone source in review); moved the hourly Fix check here (`trig_01AkAtMoRj4zmTuGSkTRApUw`).
+- (2026-09-26, later sessions, not written here at the time): step 6 started on HK1 — HK1-T reached image v25 /
+  video v5, HK1-B image v15 / video v7, all on the board.
+- session_01H75hV8rxRkMbx5zhnK11Eo (2026-09-28, resume): **the user asked for new sets of hook B-rolls and to delete
+  the previous for a cleaner look.** HK1-T and HK1-B removed from the board; both cards (every prompt, version,
+  Fix note and asset id) archived in `archive/board_2026-09-28/`. The asset files stay in the board's store,
+  unreferenced, so any old render can still be restored. Hourly Fix check moved here (`trig_01JwbciTZag3vqU45rw5sf82`).
 
 ## Where it stands
 - **§22U steps 6–9 done:** clone `Identity-Narrator` = `F5vpA7jC44a7w7td6GdQ` (by API; `Identity` was taken by the
