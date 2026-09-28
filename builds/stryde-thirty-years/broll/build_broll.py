@@ -776,6 +776,17 @@ B["BR-09b"] = (NBP, ["90168a20-dade-40fe-96db-2ffae7f4f02b", "front", "back", "C
     "no second strap, no strap worn, no band stretched, no fingers over the wordmark, no fingers over the peaks or the notch, "
     "no oversized strap, no strap wider than his hand, " + NEG_HANDS))
 
+# BR-09a image Fix (user: "pointing the patellar tendon under the kneecap", 2026-09-28 ~22:45): v1 had the fingertip on the
+# kneecap itself; the start frame now shows it already on the tendon in the hollow just under the kneecap (edit of v1).
+B["BR-09a"] = (NBP, ["1e5c6dc9-0aa4-45b2-9083-eb10bcc7b862", "C1", "S1"], photo([
+    "EDIT OF THE FIRST ATTACHED IMAGE. Keep everything exactly as it is — her bare right knee, the low three-quarter camera, his hand, "
+    "the workshop and the light — and change only WHERE HIS FINGERTIP IS: his extended right index fingertip now points into and rests "
+    "on the soft hollow directly UNDER the lower edge of her kneecap, on the patellar tendon, centred on the front of the knee, pressing "
+    "a little so the skin dimples; the whole kneecap sits bare and clear just above the fingertip. His other fingers stay curled into his "
+    "palm."],
+    "no finger on the kneecap itself, no finger on the side of the knee, no finger on the shin, no more than one finger touching her, "
+    "no hand gripping the knee, no other change to the image, " + NEG_HANDS))
+
 if __name__ == "__main__":
     out = {}
     for beat, (model, refs, prompt) in B.items():

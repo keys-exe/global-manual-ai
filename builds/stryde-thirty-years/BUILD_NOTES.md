@@ -240,7 +240,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   lengths added (3/4/5/3s). Images v1 on Higgsfield → board as review. Room made by removing BR-12 image v2, HK3-FULL image v1 and
   the orphaned BR-18b-END v2 / BR-11-END v5 files. Videos follow the Confirms; then the rough cuts are re-rendered with them.
 
-## Where it stands (2026-09-28 22:15)
-- Images To check: BR-08b, BR-08c, BR-09a, BR-09b (new B-roll over TH-03/TH-04 lines). Their videos next, then re-render the rough cuts.
-- Rough cuts v1 in `edit/rough/` (without the four new beats), CapCut block `edit/CAPCUT_BLOCK.md`.
+  ~22:20–22:55: user "proceed" → the four images confirmed (chat, then on the board) → Kling videos BR-08b/08c/09a/09b v1
+  (3/4/5/3s, 270 Kie credits, preflight PASS) on the board. Rough cuts v2 re-rendered with them (`edit/rough/`, v1 moved to
+  `edit/rough_v1/`): 0 failures, body identical, the length flag is the body MP3 padding as before; 720p review copies sent.
+  Then a Fix on the BR-09a image ("pointing the patellar tendon under the kneecap") → image v2 (edit of v1, fingertip on the
+  tendon under the kneecap) on the board as review; its v1 video (made from image v1) removed for room. The rough cuts still
+  carry BR-09a v1 until its new video exists.
+
+## Where it stands (2026-09-28 22:55)
+- BR-09a image v2 To check → then its video → re-render the rough cuts once more.
+- BR-08b, BR-08c, BR-09b videos To check. Rough cuts v2 sent (review copies).
 - Open: F4 · TH body check · where the finished videos go (board full).

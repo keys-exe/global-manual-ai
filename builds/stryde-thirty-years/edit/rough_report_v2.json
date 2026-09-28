@@ -1,0 +1,249 @@
+{
+  "status": "FAIL",
+  "variants": [
+    {
+      "hook": "HK1",
+      "file": "edit/rough/STRYDE-30Y_HK1.mp4",
+      "status": "FAIL",
+      "hook_s": 15.083,
+      "body_s": 124.13,
+      "duration_s": 139.08,
+      "expected_s": 139.213,
+      "fixes": [
+        {
+          "beat": "BR-11",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "MECH-01",
+          "fix": "FLICKER 0.42s: extended with own footage to 21.62s"
+        },
+        {
+          "beat": "BR-02",
+          "fix": "FLICKER 0.67s: extended with own footage to 24.58s"
+        },
+        {
+          "beat": "BR-03a",
+          "fix": "FLICKER 0.75s: extended with own footage to 31.42s"
+        },
+        {
+          "beat": "BR-03b",
+          "fix": "FLICKER 0.33s: extended with own footage to 33.08s"
+        },
+        {
+          "beat": "BR-05a",
+          "fix": "FLICKER 0.17s: extended with own footage to 46.83s"
+        },
+        {
+          "beat": "MECH-06",
+          "fix": "FLICKER 0.12s: extended with own footage to 54.96s"
+        },
+        {
+          "beat": "BR-07b",
+          "fix": "FLICKER 0.92s: extended with own footage to 64.21s"
+        },
+        {
+          "beat": "BR-08b",
+          "fix": "FLICKER 0.33s: extended with own footage to 67.38s"
+        },
+        {
+          "beat": "BR-08c",
+          "fix": "FLICKER 0.17s: extended with own footage to 70.00s"
+        },
+        {
+          "beat": "BR-09a",
+          "fix": "FLICKER 0.08s: extended with own footage to 73.21s"
+        },
+        {
+          "beat": "BR-09b",
+          "fix": "FLICKER 0.29s: extended with own footage to 75.08s"
+        },
+        {
+          "beat": "BR-10b",
+          "fix": "FLICKER 0.38s: extended with own footage to 80.88s"
+        },
+        {
+          "beat": "MECH-11",
+          "fix": "FLICKER 0.21s: extended with own footage to 87.12s"
+        },
+        {
+          "beat": "BR-12",
+          "fix": "FLICKER 0.33s: extended with own footage to 88.33s"
+        },
+        {
+          "beat": "BR-13",
+          "fix": "FLICKER 0.17s: extended with own footage to 97.04s"
+        },
+        {
+          "beat": "BR-14b",
+          "fix": "FLICKER 0.29s: extended with own footage to 106.12s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    },
+    {
+      "hook": "HK2",
+      "file": "edit/rough/STRYDE-30Y_HK2.mp4",
+      "status": "PASS",
+      "hook_s": 9.958,
+      "body_s": 124.13,
+      "duration_s": 134.05,
+      "expected_s": 134.088,
+      "fixes": [
+        {
+          "beat": "BR-11",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "MECH-01",
+          "fix": "FLICKER 0.42s: extended with own footage to 16.50s"
+        },
+        {
+          "beat": "BR-02",
+          "fix": "FLICKER 0.67s: extended with own footage to 19.46s"
+        },
+        {
+          "beat": "BR-03a",
+          "fix": "FLICKER 0.75s: extended with own footage to 26.29s"
+        },
+        {
+          "beat": "BR-03b",
+          "fix": "FLICKER 0.33s: extended with own footage to 27.96s"
+        },
+        {
+          "beat": "BR-05a",
+          "fix": "FLICKER 0.17s: extended with own footage to 41.71s"
+        },
+        {
+          "beat": "MECH-06",
+          "fix": "FLICKER 0.12s: extended with own footage to 49.83s"
+        },
+        {
+          "beat": "BR-07b",
+          "fix": "FLICKER 0.92s: extended with own footage to 59.08s"
+        },
+        {
+          "beat": "BR-08b",
+          "fix": "FLICKER 0.33s: extended with own footage to 62.25s"
+        },
+        {
+          "beat": "BR-08c",
+          "fix": "FLICKER 0.17s: extended with own footage to 64.88s"
+        },
+        {
+          "beat": "BR-09a",
+          "fix": "FLICKER 0.08s: extended with own footage to 68.08s"
+        },
+        {
+          "beat": "BR-09b",
+          "fix": "FLICKER 0.29s: extended with own footage to 69.96s"
+        },
+        {
+          "beat": "BR-10b",
+          "fix": "FLICKER 0.38s: extended with own footage to 75.75s"
+        },
+        {
+          "beat": "MECH-11",
+          "fix": "FLICKER 0.21s: extended with own footage to 82.00s"
+        },
+        {
+          "beat": "BR-12",
+          "fix": "FLICKER 0.33s: extended with own footage to 83.21s"
+        },
+        {
+          "beat": "BR-13",
+          "fix": "FLICKER 0.17s: extended with own footage to 91.92s"
+        },
+        {
+          "beat": "BR-14b",
+          "fix": "FLICKER 0.29s: extended with own footage to 101.00s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    },
+    {
+      "hook": "HK3",
+      "file": "edit/rough/STRYDE-30Y_HK3.mp4",
+      "status": "FAIL",
+      "hook_s": 10.083,
+      "body_s": 124.13,
+      "duration_s": 134.08,
+      "expected_s": 134.213,
+      "fixes": [
+        {
+          "beat": "BR-11",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "MECH-01",
+          "fix": "FLICKER 0.42s: extended with own footage to 16.62s"
+        },
+        {
+          "beat": "BR-02",
+          "fix": "FLICKER 0.67s: extended with own footage to 19.58s"
+        },
+        {
+          "beat": "BR-03a",
+          "fix": "FLICKER 0.75s: extended with own footage to 26.42s"
+        },
+        {
+          "beat": "BR-03b",
+          "fix": "FLICKER 0.33s: extended with own footage to 28.08s"
+        },
+        {
+          "beat": "BR-05a",
+          "fix": "FLICKER 0.17s: extended with own footage to 41.83s"
+        },
+        {
+          "beat": "MECH-06",
+          "fix": "FLICKER 0.12s: extended with own footage to 49.96s"
+        },
+        {
+          "beat": "BR-07b",
+          "fix": "FLICKER 0.92s: extended with own footage to 59.21s"
+        },
+        {
+          "beat": "BR-08b",
+          "fix": "FLICKER 0.33s: extended with own footage to 62.38s"
+        },
+        {
+          "beat": "BR-08c",
+          "fix": "FLICKER 0.17s: extended with own footage to 65.00s"
+        },
+        {
+          "beat": "BR-09a",
+          "fix": "FLICKER 0.08s: extended with own footage to 68.21s"
+        },
+        {
+          "beat": "BR-09b",
+          "fix": "FLICKER 0.29s: extended with own footage to 70.08s"
+        },
+        {
+          "beat": "BR-10b",
+          "fix": "FLICKER 0.38s: extended with own footage to 75.88s"
+        },
+        {
+          "beat": "MECH-11",
+          "fix": "FLICKER 0.21s: extended with own footage to 82.12s"
+        },
+        {
+          "beat": "BR-12",
+          "fix": "FLICKER 0.33s: extended with own footage to 83.33s"
+        },
+        {
+          "beat": "BR-13",
+          "fix": "FLICKER 0.17s: extended with own footage to 92.04s"
+        },
+        {
+          "beat": "BR-14b",
+          "fix": "FLICKER 0.29s: extended with own footage to 101.12s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    }
+  ],
+  "body_identical_across_variants": true
+}

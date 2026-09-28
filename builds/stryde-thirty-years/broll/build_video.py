@@ -385,6 +385,34 @@ V["BR-11"] = ("MEDIUM as in the start frame, him at the bench holding the small 
    [("he turns it round (the v2 fault)", "no turn + no back of the strap"), ("strap grows as it nears the lens", "a few centimetres + HOLD_PC"),
     ("fingers fuse", "HOLD-HC")])
 
+# ── New beats over the P-008 / P-009 talking-head lines (user "create brolls here" → "proceed", 2026-09-28 ~22:20) ────────
+V.update({
+ "BR-08b": ("MEDIUM as in the start frame, eye level, three-quarter to her in the green armchair.", HANDHELD,
+   "She lets out one long, slow breath over about two seconds, her shoulders coming down and her hands settling loosely in her lap, "
+   "her eyes staying on the sleeve on her knee; then she is still.", False,
+   "no crying, no tears, no hand to the face, no standing up, no speaking, no mouth moving as if talking", "in_place",
+   [("face drifts from the sheet", "HOLD-HC, face never reshapes"), ("she mouths words (a speaking face on a VO line)", "no speaking negatives"),
+    ("hands fuse in her lap", "HOLD-HC")]),
+ "BR-08c": ("CLOSE as in the start frame, her right knee in profile with the beige sleeve over the kneecap.", PROPPED,
+   "Her fingertips smooth the sleeve flat over the kneecap in one slow stroke over about two seconds, from the top of the kneecap "
+   "down its front, then rest on it.", False,
+   "no sleeve moving down the leg, no sleeve changing colour, no second sleeve, no strap, no face", "in_place",
+   [("sleeve and fingers merge", "HOLD-HC + finger negatives"), ("sleeve slides off the kneecap (the point of the shot)", "no sleeve moving down"),
+    ("camera moves", "propped rig")]),
+ "BR-09a": ("CLOSE as in the start frame, low, three-quarter, her bare right knee with his fingertip on the kneecap.", PROPPED,
+   "His fingertip slides straight down off the lower edge of her kneecap onto the soft hollow over the tendon just under it, in one "
+   "slow slide over about two seconds, presses in a little so the skin dimples, and stays there.", False,
+   "no finger on the side of the knee, no second finger touching her, no hand gripping the knee, no strap, no face", "in_place",
+   [("finger stops on the kneecap or overshoots down the shin", "'just under it' + 'stays there'"), ("fingers fuse with the skin", "HOLD-HC"),
+    ("knee reshapes under the press", "HOLD-C")]),
+ "BR-09b": ("OVERHEAD as in the start frame, straight down onto the bench and the strap.", PROPPED,
+   "His hand lets go of the strap, which is already lying flat on the bench, and draws back out of the top of the frame over about "
+   "two seconds; the strap stays exactly where it lies, wordmark up.", True,
+   "no strap sliding, no strap flipping over, no second strap, no band moving by itself, no face", "in_place",
+   [("strap slides or flips when released", "'stays exactly where it lies' + product lock"), ("strap grows or reshapes", "HOLD_PC"),
+    ("hand leaves and returns", "one draw-back, out of frame")]),
+})
+
 
 def build(beat):
     framing, rig, motion, prod, extra, sm, risks = V[beat]

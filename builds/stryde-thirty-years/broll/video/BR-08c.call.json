@@ -1,0 +1,33 @@
+{
+ "beat": "BR-08c",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"br_08c\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"CLOSE as in the start frame, her right knee in profile with the beige sleeve over the kneecap.\"},\"motion\":\"Her fingertips smooth the sleeve flat over the kneecap in one slow stroke over about two seconds, from the top of the kneecap down its front, then rest on it. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no sleeve moving down the leg, no sleeve changing colour, no second sleeve, no strap, no face, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no music, no voice, no text, no captions\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "broll/renders/BR-08c_v1.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "sleeve and fingers merge",
+   "prevented_by": "HOLD-HC + finger negatives"
+  },
+  {
+   "risk": "sleeve slides off the kneecap (the point of the shot)",
+   "prevented_by": "no sleeve moving down"
+  },
+  {
+   "risk": "camera moves",
+   "prevented_by": "propped rig"
+  }
+ ]
+}

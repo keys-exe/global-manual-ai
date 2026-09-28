@@ -125,6 +125,42 @@
     "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-08_v2.mp4"
    },
    {
+    "beat": "BR-08b",
+    "phrase": "that was not you failing",
+    "layout": {
+     "type": "full"
+    },
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-08b_v1.mp4"
+   },
+   {
+    "beat": "BR-08c",
+    "phrase": "You were wrapping the wrong part of your leg",
+    "layout": {
+     "type": "full"
+    },
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-08c_v1.mp4"
+   },
+   {
+    "beat": "BR-09a",
+    "phrase": "You do not wrap the joint. You go under it",
+    "layout": {
+     "type": "full"
+    },
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-09a_v1.mp4"
+   },
+   {
+    "beat": "BR-09b",
+    "phrase": "Three things have to be right",
+    "layout": {
+     "type": "full"
+    },
+    "max": 6,
+    "clip": "/home/user/global-manual-ai/builds/stryde-thirty-years/broll/video/BR-09b_v1.mp4"
+   },
+   {
     "beat": "BR-10a",
     "phrase": "One, the placement",
     "layout": {
