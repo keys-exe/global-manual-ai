@@ -63,3 +63,13 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
 - Video Fixes on confirmed frames (`work/fix3_motion.py`, generation 3, `user_go`): A4-M1 the strap glows blue and absorbs the whole load wave, nothing passes below it; A4-P3 the strap is only set down, never stripped; A5-B2 hands held off the handrail — on the board as `review`, the replaced v2s on the Old board.
 - New frames (`work/fix3.py`, Higgsfield jobs `work/fix3_jobs.json`, URLs `work/fix3_urls.txt`): A2-B2 fingertip on the midline below the kneecap (not the side); A4-P1 held by the lower edge so the real two-peak shell reads (the fix-2 frame drew a rounded clip); A4-P2 back of the shell with a smooth unbroken pad (the thumb press drew holes). `imageStatus: review`, `status: ready`; their clip calls `calls/<b>.fix3.json` pass preflight except the start-image gate. The hourly check sends each once its frame is confirmed. A2-B2's old frame and its video moved to Old.
 - Kie spend this round: 432 credits (6 clips).
+
+## Fix round 4 (2026-09-28, user: "fix those and generate the other confirmed")
+- Videos from confirmed frames: A2-B2 (v3, fix-3 frame), A2-M4 (v3, fix-2 frame), A5-F1 (v3, fix-2 frame) — `review`.
+- A4-B1 video v4 (motion Fix, confirmed frame): climbs the stairs with the basket high and clear of the banister; he had walked into the hall with the basket against the rail and the strap lost shape — `review`.
+- New frames (`work/fix4.py`, jobs `work/fix4_jobs.json`, URLs `work/fix4_urls.txt`), `imageStatus: review`, clip calls `calls/<b>.fix4.json` ready for the user's Confirm:
+  - A4-M1 — user asked for a new picture with the strap protecting the tendon: blue shield over the tendon, the load wave stops at it (strict profile; the base mechanism prompt's three-quarter view removed).
+  - A4-P1 — one hand at the lower edge; the second hand at the top of the shell removed.
+  - A4-P3 — new straps: two whole straps on the bench, no hands; the clip moves only the light and camera.
+  - A5-B2, A5-B3 — his hand kept grabbing the rail because the frame hung it beside the rail (A5-B2 three times): new frames on the wall side of the flight, car keys in the rail-side hand.
+- Kie spend this round: 288 credits (4 clips).
