@@ -1,0 +1,13 @@
+[
+ {
+  "beat": "A4-B1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "cd219dc4-2b30-4e18-ae35-d702e05fba56",
+   "1e46a65f-f165-4694-b5b6-1f92ea2688b3",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "0ff45502-a271-4d9a-af3c-40cb2c1ab1b1"
+  ],
+  "chars": 11272
+ }
+]

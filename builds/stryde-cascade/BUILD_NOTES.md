@@ -82,3 +82,8 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
   - A4-P3 — "fix the strap, don't cut it": the bands drew as cut open straps; each band is now one closed loop slide to slide.
 - The hourly check (step 2b) must also look for `calls/<b>.fix5.json` — updated.
 - Kie spend this round: 306 credits (4 clips).
+
+## Fix round 6 (2026-09-28, user: "fix those and generate the confirmed ones")
+- Clips from confirmed fix-5 frames: A4-P2 (back of the strap on the bench, camera and light only), A4-P3 (two straps, closed bands) — `review`.
+- A4-B1 — "instead of stairs it should be other activities": new frame (`work/fix6.py`, job `work/fix6_jobs.json`) — crouched in the hall lacing his walking boots, strap on the loaded right knee; clip call `calls/A4-B1.fix6.json` (`work/fix6_motion.py`) waits for the Confirm. The fix-5 frame moved to Old.
+- Kie spend this round: 180 credits (2 clips).
