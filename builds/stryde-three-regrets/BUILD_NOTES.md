@@ -98,7 +98,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   On the board, To check.
 - **HK3 confirmed (2026-09-28).** All three hooks done.
 - **Act 1 images v1 (2026-09-28):** 14 start images on Higgsfield nano_banana_2, 2k, 9:16, one per call — BR-003…009, BR-012, BR-015, BR-016 (Gail beats refs R1+P1; BR-009/015 ref P6) and MECH-010/011/013/014 (§12A, no refs). Prompts `act1/<beat>.txt`, Higgsfield result names `act1/jobs.json`, JPEG copies `act1/<beat>_v1.jpg`. All on the board as To check.
-- **Next:** the user's Act 1 image gate (Confirm/Fix) → Act 1 clips on Kie (`kie.py kling`, §35 calls, preflight; MECH clips on the RV rigs).
+- **Act 1 image gate (2026-09-28):** 12 confirmed. Fix BR-009 "THE MONITOR MUST BE IN THE WALL" → v2 lightbox recessed flush into the wall, no stand. Fix BR-012 "THE FINGER MUST BE THE SAME PERSON" → v2 over-the-shoulder angle, her own right arm in the lilac sleeve. v1 prompts kept as `<beat>_v1.txt`; both v2 on the board as To check.
+- **Next:** the user's BR-009 / BR-012 v2 check (Confirm/Fix) → Act 1 clips on Kie (`kie.py kling`, §35 calls, preflight; MECH clips on the RV rigs).
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
 - **Next (old):** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
