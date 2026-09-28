@@ -14,6 +14,12 @@
 3. `music.py check`: every flag was a lead-in silence, the natural tail or a piano-note attack — except energy order (SC03, SC05, SC06, SC09, SC10) and SC05's silent turn not silent. Fixed in the mix with section gain automation (`mix_gain_db`), not recomposed. Turn silence measured −85 dB for 3.8 s.
 4. `sound/mix_film.py HK1|HK2|HK3`: every cue levelled, music −18 dB under dialogue, ducked 8 dB under speech, cues start on scene cuts (outgoing faded 0.8 s), −14 LUFS / −1 dBTP, picture stream copied untouched. Results: −14.2 / −14.1 / −14.1 LUFS; body audio identical across variants (corr 1.0).
 
+## Delivery
+- Main board (music cards + FINAL-HK1): https://claude.ai/artifact/QD4ZSJz5eWVGnRAqDQDesA
+- A board's file store holds 1 GB. User chose overflow boards (2026-09-28): FINAL-HK2 → https://claude.ai/artifact/R56ud78WXoJJ5KqsUNWf3W · FINAL-HK3 → https://claude.ai/artifact/3NhxkJc513PzEWBmu11sK1 (same template; the main board's HK2/HK3 cards link there via `videoUrl`).
+- HK3 part40 began with a `<` byte and was refused as markup; that byte was moved to the end of part39 (15,000,001 / 14,999,999 bytes). The joined file's MD5 matches the render.
+- All three finals: status `review`, waiting on the user's check.
+
 ## Open
-- Board file store is capped at 1 GB: FINAL-HK1 (703 MB, 47 parts) + music are on the board. HK2 and HK3 (~700 MB each) rendered but not on the board — 21 HK2 parts (315 MB) uploaded before the cap hit are orphans. Delivery route for HK2/HK3 is the user's call.
+- 21 HK2 pieces (315 MB) uploaded to the main board before it filled are unreferenced; they stay until the user asks to delete them. Same for the refused-then-replaced original HK3 part39 on the Hook 3 board (15 MB).
 - Old SFX/room tone went with the old music (isolator keeps voice only). Add room tone/SFX per §24M if the user wants them back.
