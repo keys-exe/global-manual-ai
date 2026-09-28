@@ -29,7 +29,19 @@ duplicate objects, flickering geometry; from `NEG-LIGHT-C`: sun patch moving), a
 
 ## Steps 3–5 — `voice_source.py N_G1.mp4 N_G2.mp4 --name Regrets` → PASS
 Same-voice gate PASS (0% pitch difference). Joined 6.14s, looped ×5 → **`Regrets_clone_source.mp3`, 30.75s**, no gap over 0.4s.
-**Note:** 6.14s of unique speech is thin for a clone (the last build had 13.74s from three takes). §22U allows G3+ (the next lines);
+**v1 (superseded by v2, kept):** 6.14s of unique speech is thin for a clone (the last build had 13.74s from three takes). §22U allows G3+ (the next lines);
 one or two more takes (P-001, P-002) would roughly double the unique speech for 240 more Kling credits. Offered, not sent.
 **Unverified by ear:** the accent (West Yorkshire) and texture. The agent measures pitch; you hear the placement.
 ## Step 6 — HUMAN: you clone `Regrets_clone_source.mp3` in the ElevenLabs app (Instant Voice Clone, Remove background noise ON), name **Regrets**
+
+## Extra takes (user: "proceed" on the recommendation, 2026-09-28)
+| Take | Kling generation | Line | Speech after trim | Pitch median | Gate |
+|---|---|---|---|---|---|
+| G3 | `AfObLPplL4KUADgUYwydzjwwVF6PgSgqHxfICvZ6eLMCqzchszz9oxHs30o0N_2Cbd2ENv_6` | "I read the messages that come in when people buy one of these." | 3.38s | 158.4 Hz (−11.9%) | **FAIL**, left out |
+| G4 | `AWSdkjvqUy-CFus6hTAb7G-4AWM_jTDgHzM2bxrUlQThL5VkNHn3oVOGiNMPWRxfJZYmhEQ5` | "Regret number one. Nobody ever told them where it was actually coming from." | 4.03s | 181.8 Hz (+1.1%) | PASS |
+
+G4 was first built as P-002–P-004 (19 words); 2,554 chars went over the ceiling, so it was cut to P-003–P-004 (13 words, 2,492).
+240 Kling credits; Kling balance 1,839.
+
+**Clone source v2:** `voice_source.py N_G1.mp4 N_G2.mp4 N_G4.mp4 --name Regrets` → PASS, joined 9.51s, looped ×4 → **38.09s**, no gap over 0.4s.
+v1 (G1+G2, 30.72s) was confirmed on the board before v2 existed; it is kept as version 1. The user picks which to clone.
