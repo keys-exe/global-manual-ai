@@ -57,3 +57,9 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
 - Videos: `work/fix2_motion.py` → `prompts/clips/<b>.fix2.kling.json`, `calls/<b>.fix2.json`; all preflight PASS except the start-image gate, which clears on the user's Confirm. Cards sit at `status: ready` with no video; the hourly check (step 2b) sends each on Kie Kling 3.0 once its frame is confirmed. A1-B3 is generation 2; the other six are generation 3 with the user's go recorded as `user_go`.
 - `preflight.py`: a third or later generation now passes only with `user_go` (the user's words + date) and a diagnosed fix — the §22X "no third without the user" rule had no way to record the go.
 - Hourly Fix check `trig_01R8nk1N86GQE63WkUuE6hEL` now also sends confirmed fix-2 frames' videos.
+
+## Fix round 3 (2026-09-28, user: "fix those" after checking the board)
+- Videos sent from confirmed fix-2 frames (Kie Kling 3.0, `work/fix_send.sh fix2`): A1-B3 (v2), A4-B1 (v3), A5-B3 (v3) — on the board as `review`.
+- Video Fixes on confirmed frames (`work/fix3_motion.py`, generation 3, `user_go`): A4-M1 the strap glows blue and absorbs the whole load wave, nothing passes below it; A4-P3 the strap is only set down, never stripped; A5-B2 hands held off the handrail — on the board as `review`, the replaced v2s on the Old board.
+- New frames (`work/fix3.py`, Higgsfield jobs `work/fix3_jobs.json`, URLs `work/fix3_urls.txt`): A2-B2 fingertip on the midline below the kneecap (not the side); A4-P1 held by the lower edge so the real two-peak shell reads (the fix-2 frame drew a rounded clip); A4-P2 back of the shell with a smooth unbroken pad (the thumb press drew holes). `imageStatus: review`, `status: ready`; their clip calls `calls/<b>.fix3.json` pass preflight except the start-image gate. The hourly check sends each once its frame is confirmed. A2-B2's old frame and its video moved to Old.
+- Kie spend this round: 432 credits (6 clips).
