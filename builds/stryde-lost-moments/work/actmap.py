@@ -303,8 +303,8 @@ R("D-09", ACT[V], "Sports doctors recommend it.", "doctors", "recommendation (F4
   "one look up, about a second", STILL, "none", "no", "held", "—", "NBP",
   EVE, THR, "clean", "MCU", "", "eyes", "medium", "clinic window, west", "L", "afternoon", "authority: even daylight", True, ledger="F4")
 R("D-10", ACT[V], "One for each knee.", "each", "product (F12)", "C4", "L-COURSE", "Gr-D3",
-  "ECU seated on the course bench: a strap on each knee", "he rests both hands on his thighs",
-  "one settle, about a second", STILL, "none", "no", "worn ×2", "VISIBLE", "NBP",
+  "CU seated on the course bench: the strap on his right knee, and in his hand beside it the second strap from the pair, held up by the pad", "he lifts the second strap a few centimetres into the light",
+  "one small lift, about a second", STILL, "hands: one movement; the held strap does not turn", "no", "worn + held (the pair) — never both knees (SIDE_RULE 3)", "VISIBLE", "NBP",
   EVE, FRO, "clean", "ECU", "", "product", "medium", "sun, south-west", "R", "afternoon", "after: sun", False, ledger="F12")
 R("D-11", ACT[V], "Book the tee time.", "tee", "close — callback", "C4", "L-GARAGE", "Gr-D3",
   "MEDIUM: he swings the uncovered golf bag onto his shoulder in the open garage door", "the bag settles on his shoulder",
