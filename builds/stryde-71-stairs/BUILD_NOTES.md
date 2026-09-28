@@ -28,6 +28,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   as reference, the photo wall written as P0's (v2, job a53b6e6b); P4-STORE ("FIX THE DISTORTIONS") regenerated as an empty store with
   straight-line geometry, no people, PHYS-FRAME-C body clause dropped (v2, job 751cd1e7). v1s moved to the Old board. N-VOICE-IMG was built
   against P1 v1 — if you want its photo wall to match too, press Fix on it.
+- 19:30 UTC: user "FIX THE LOCATIONS FIRST" → second board Fixes: P1-LANDING v3 ("WRONG STAIRS": now P0's own straight open flight
+  seen from the top — photo wall left, balusters + dark rail right, hall and front door at the bottom, P0 attached; job 2cc80516);
+  P4-STORE v3 ("WRONG COUNTERS NOT REAL": a standard US checkout stand — belt, divider, register screen, scanner, card terminal on a post,
+  bag carousel, impulse rack, lane light; job 87a0c23e). v2s moved to Old. Other 6 plates confirmed by the user. Voice waits on the
+  locations (user's order) and on Kling credits.
 
 ## Where it stands
 - **Waiting on the user:** Confirm/Fix the 8 plates and N-VOICE-IMG.
