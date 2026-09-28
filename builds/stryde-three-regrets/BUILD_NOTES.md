@@ -117,6 +117,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **Act 2 done (2026-09-28):** all clips confirmed.
 - **Act 3 images v1 (2026-09-28):** BR-024…030 (Joan; lounge beats refs R3 v2 + P4, steps beats R3 v2 + P5 `f947f98d-3e33-4f28-ad55-71758c81b9b1`), one per call, all on the board as To check. Prompts `act3/<beat>.txt`, results `act3/jobs.json`. My look (user judges): BR-028 she smiles up into the lens rather than looking up the steps; BR-030 staging is off — two adult women and the boy stand at the pavement level in the foreground with Joan on the lower steps between them and the door, instead of the daughter and boy at the top and Joan leaving down the pavement.
 - **Act 3 images confirmed; clips v1 (2026-09-28):** 7 clips on Kie (`act3/make_act3_calls.py`, all preflight PASS), Kie 529, all on the board as To check.
+- **BR-024 clip Fix (gen 2, 2026-09-28):** "TELEPHONE MUST STAY PUT" — v1 moved the phone to show it ringing → ringing heard not seen, phone locked still; bans on the phone moving/shaking/lifting. Kie 69. v1 call kept as `BR-024_v1.call.json`.
 - **Next:** the user's Act 3 clip check → Act 4. (Confirm/Fix) → Act 1 clips on Kie (`kie.py kling`, §35 calls, preflight; MECH clips on the RV rigs).
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
