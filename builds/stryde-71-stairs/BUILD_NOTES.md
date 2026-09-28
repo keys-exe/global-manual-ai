@@ -33,9 +33,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   P4-STORE v3 ("WRONG COUNTERS NOT REAL": a standard US checkout stand — belt, divider, register screen, scanner, card terminal on a post,
   bag carousel, impulse rack, lane light; job 87a0c23e). v2s moved to Old. Other 6 plates confirmed by the user. Voice waits on the
   locations (user's order) and on Kling credits.
+- 19:45 UTC: user "LOCKED LOCATIONS FOR TH IMAGE DONT USE SELFIE STYLE" → all 8 plates confirmed (locked). §34 correction for this build:
+  talking heads are **propped, never selfie** — TH-01…TH-16, C-06a and N-VOICE-IMG (act map, STEP4_5, Build Sheet EG02/§20, Kling
+  voice calls: camera "Propped", hands at the waist). N-VOICE-IMG v2: standing at the top of her stairs, phone propped at chest height,
+  waist-up; refs N sheet + P1 v3 + P0 (nano_banana_pro requested, logged nano_banana_2; job 6ceca5c9). v1 moved to Old.
+  `angles.py` PASS.
 
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the 8 plates and N-VOICE-IMG.
+- **Waiting on the user:** Confirm/Fix N-VOICE-IMG v2 (the 8 plates are locked).
 - **Blocked:** Kling has 3.0 credits. The two 10s voice takes (and every B-roll clip after) need Kling; §5 forbids a silent reroute to Kie.
   Top up Kling, or say "use Kie for Kling" to route through the Kie API (as stryde-lost-moments did).
 - **Next on the frame's Confirm + credits:** G1/G2 → `voice_source.py` → `elevenlabs_clone.py` (name `Stairs`) → Enhance + `eleven_v4`

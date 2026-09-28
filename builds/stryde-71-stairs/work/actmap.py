@@ -27,10 +27,10 @@ def R(beat, act, line, key, fn, subj, loc, day, framing, action, pace, staging, 
 
 def TH(beat, act, line, note=""):
     ROWS.append(dict(beat=beat, act=act, type="TH", line=line, key="", function="talking head (EG02)", subject="N",
-        location="L-N-LANDING", story_day="N-TODAY", framing="selfie, front camera at arm's length, chest-up, banister and family photos behind",
-        action=note or "speaks the line to the lens", pace="natural", camera="handheld selfie (R1)", staging="none", pin_end="no", max=6,
+        location="L-N-LANDING", story_day="N-TODAY", framing="propped phone at chest height, ~1.25 m, waist-up, standing at the top of her stairs — photo wall behind left, dark rail and newel right (no selfie — user 2026-09-28)",
+        action=note or "speaks the line to the lens", pace="natural", camera="propped (R2), not held", staging="none", pin_end="no", max=6,
         product="absent", visibility="—", model="HeyGen Avatar V", layout="full", eg="EG02", ledger="", duration="pending-master",
-        angle=dict(height="eye", side="front", fg="clean", scale="MCU", why="selfie"), mirror_of=None,
+        angle=dict(height="eye", side="front", fg="clean", scale="MCU", why="propped talking head"), mirror_of=None,
         focus=dict(plane="eyes", dof="deep", rack=None, moving_subject=False),
         light=dict(source="landing window, south wall", key_side="L", time="midday", arc="today", kelvin=5600), face=True, speaking=True))
 
@@ -301,7 +301,7 @@ R("C-05a", A, "Not them cheap knock-offs they be selling on Amazon and them fake
   "a finger flicks the curled tab", "one flick, about a second", "hands: one movement", "absent (fakes, §10)", "—", "NB2",
   "high", TQ, "clean", "CU", "high = looked down on", "foreground", "medium", *KIT, "morning", "objection", False, ledger="F5")
 R("C-06a", A, "The link's right down below. Two straps for the price of one right now.", "Two", "offer (EG06)", "N", "L-N-LANDING", "N-TODAY",
-  "MCU on the landing (phone propped): N holds up two straps toward the lens, one in each hand",
+  "MCU on the landing, phone propped as in the talking heads: N holds up two straps toward the lens, one in each hand",
   "lifts both straps a little higher", "one lift, about a second", "hands: product rigid in both hands", "held, two units", "VISIBLE", "NBP",
   "eye", FR, "clean", "MCU", "", "product", "medium", "landing window, south wall", 5600, "midday", "offer: bright daylight", True, eg="EG06 · offer overlay")
 R("C-07a", A, "Sixty days to send them back if they don't work.", "Sixty", "guarantee", "—", "L-N-KITCHEN", "N-D5",

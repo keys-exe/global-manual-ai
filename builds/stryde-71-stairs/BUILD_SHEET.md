@@ -63,7 +63,7 @@ Boards: Current https://claude.ai/artifact/Ev166tkWbX9QaE1P7VLjti · Old https:/
 | ID | Device (original) | Where | Our build |
 |---|---|---|---|
 | EG01 | **boxed captions**: lowercase-ish black text on white boxes, one or two short lines, centred at ~72% height; follows the voice phrase by phrase | whole ad | **kept** (CapCut) |
-| EG02 | **selfie talking head** as the spine: she returns to camera between B-roll runs, never more than ~3s at a time | whole ad | **kept** (HeyGen, §22U step 13) |
+| EG02 | **selfie talking head** as the spine: she returns to camera between B-roll runs, never more than ~3s at a time | whole ad | **kept as the spine, but propped, not selfie** (user 2026-09-28 — §34 correction: TH-01…TH-16, C-06a, N-VOICE-IMG) |
 | EG03 | **comparison card**: two X-ray legs side by side, "FULL NEOPRENE SLEEVE: uniform diffuse pressure" vs "STRYDE STRAP: precise redirection point", header labels | 76.0–77.9 | **kept as a layout, restyled**: the Product Sheet's anatomy look (§12A), sleeve vs strap; labels added in the edit, never generated (§17). Label wording flagged (F3) |
 | EG04 | **CGI anatomy run**: glowing X-ray knees, red hotspot on the spot below the kneecap, then blue relief lines when the strap goes on | 77.9–92.3, 132.8–135.6 | **kept**, red = pain, blue = relief (§11), `ANATOMY_LOOK` |
 | EG05 | **rapid montage**: 5–6 shots of 0.4–0.5s, different people putting the strap on | 92.3–94.5 ("Over 200,000…") | **kept** (all distinct one-offs, mixed ages) |
@@ -174,7 +174,7 @@ Held in the Product Sheet register (user-confirmed V7.49.29): three years with o
 |---|---|---|
 | Mode | **Mode 1 Realistic**, iPhone 17 Pro Max, 9:16 | realistic reference; UGC |
 | Avatar sheets | `gpt_image_2_5` · `variant: sunburst` · `quality: high` · `resolution: 2k` | §19 measured route (**used this delivery**) |
-| Talking-head seed (N selfie on the landing) | `nano_banana_pro` | talking-head seed class |
+| Talking-head seed (N on the landing, propped — never selfie) | `nano_banana_pro` | talking-head seed class |
 | Wordmark with hands or a body (held, worn, seating, offer hold-up) | `nano_banana_pro` + `WORDMARK-LOCK` | rule 7 |
 | Wordmark, no person (strap by the mug, box) | `nano_banana_pro` | wordmark |
 | Volume B-roll with a person, no readable wordmark | `nano_banana_2` | volume |
@@ -183,7 +183,7 @@ Held in the Product Sheet register (user-confirmed V7.49.29): three years with o
 | Voice | §22U: Kling source takes (2+) → ElevenLabs clone (API) → Enhance → `eleven_v4` → house cut | §22U |
 | Talking heads | HeyGen Avatar V driven by the VO, motion prompt on every render | §22U step 13 |
 
-**Other locks:** format **selfie talking heads + B-roll** (the original's); **side: right knee** ("an ice pack on my right knee" → `SIDE_RULE`); mechanism claim: **protection**; edit: `EDIT-STRYDE-71`; hooks: **1, in script → 1 finished video**.
+**Other locks:** format **propped talking heads + B-roll** (the original's selfie TH changed to propped by the user, 2026-09-28); **side: right knee** ("an ice pack on my right knee" → `SIDE_RULE`); mechanism claim: **protection**; edit: `EDIT-STRYDE-71`; hooks: **1, in script → 1 finished video**.
 
 ---
 
@@ -233,8 +233,8 @@ A Black American woman of seventy-one from the South, a warm, low, slightly husk
 |---|---|
 | Accent | light Southern Black American (e.g. Georgia / the Carolinas), placed and unforced; never General American newsreader, never a stage drawl |
 | Pacing | conversational, ~165–175 wpm before the house cut (the original is 231 wpm) |
-| Posture / rest / gesture / ocular / rig | selfie on her upstairs landing (EG02): front camera at arm's length, chest-up, banister and family photos behind; phone held in her right hand; free left hand in Economical gestures; eyeline on the lens; framed at steps 4–5 |
-| Audio proximity | R1 (phone at arm's length) |
+| Posture / rest / gesture / ocular / rig | standing at the top of her stairs (EG02), phone **propped** at chest height ~1.25 m, waist-up — never selfie (user 2026-09-28); hands resting at the waist, Economical gestures; eyeline on the lens |
+| Audio proximity | R2 (propped phone) |
 | Wardrobe never-list | anything clinical; nothing that hides the right knee on a worn beat |
 | Physical never-list | never both knees strapped; never the brace and the strap together |
 | Voice spec | `VOICE-NARR` above |
