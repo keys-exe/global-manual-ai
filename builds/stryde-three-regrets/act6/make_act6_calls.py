@@ -11,12 +11,13 @@ CAP = "Capture characteristics exactly as in the start frame — same tone-mappi
 NEGW = "no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping"
 HPC = " " + ps.HOLD_PC
 B = [
- dict(beat="BR-057", shot="act6_unfold", cam=R1C, subject="THE SAME HANDS AND LETTER as in the start frame; unchanged in every respect.",
+ dict(beat="BR-057", shot="act6_smooth_letter", cam=R1C, subject="THE SAME HANDS AND FLAT LETTER as in the start frame; unchanged in every respect.",
   framing="CU as in the start frame: directly above the desk. FOCUS: her hands and the letter are sharp.",
-  motion="CONTINUING: her hands are already unfolding the printed letter on the desk. COMPLETING: one unfold, about two seconds — the top fold opens down flat and her fingers smooth it once across the page. UNRESOLVED: her hands rest on the open letter.",
+  motion="CONTINUING: both her hands rest on the desk at the lower corners of the flat, unfolded letter. COMPLETING: one slow smoothing slide, about two seconds — both hands glide a little up along the two sides of the sheet, pressing it flat, then settle. UNRESOLVED: her hands rest on the flat letter.",
   style="Unremarkable phone clip, soft warm morning window light on the desk, no grade.",
-  negs="no readable text, no words forming, no paper tearing, no second letter moving, no face, no talking, no music",
-  risks=[{"risk":"text appears readable or morphs","prevented_by":"no readable text, no words forming"},{"risk":"fingers fuse with the paper","prevented_by":"HOLD-HC"},{"risk":"other letters slide about","prevented_by":"no second letter moving; HOLD-C"}], sm="in_place"),
+  negs="no folding, no crease appearing, no lifting the sheet, no readable text, no words forming, no second sheet, no face, no talking, no music",
+  risks=[{"risk":"the sheet folds or creases","prevented_by":"flat and unfolded; no folding, no crease appearing, no lifting the sheet"},{"risk":"text turns readable or morphs","prevented_by":"no readable text, no words forming"},{"risk":"fingers fuse with the paper","prevented_by":"HOLD-HC"}], sm="in_place", gen=2,
+  fix="Image Fixes (back to back → fold in the middle → don't fold): new start frame v4 is one flat unfolded sheet, so the unfold action is gone; motion is now one smoothing slide of both hands."),
  dict(beat="BR-058", shot="act6_finger_line", cam=R1C, subject="THE SAME HAND AND CARD as in the start frame; unchanged in every respect.",
   framing="ECU as in the start frame: eye height, three-quarter to the pinboard. FOCUS: her fingertip and the line of ink are sharp.",
   motion="CONTINUING: her forefinger rests under one handwritten line on the card. COMPLETING: one slow small trace, about two seconds — the fingertip moves a finger's width along under the line and stops. UNRESOLVED: her finger rests there, still.",
@@ -55,7 +56,9 @@ B = [
   risks=[{"risk":"she stumbles or the steps warp","prevented_by":"two easy steps, feet landing and taking the weight; NEG warp"},{"risk":"the strap slides as the knee bends","prevented_by":"HOLD-PC; no strap sliding"},{"risk":"the camera travels with her","prevented_by":"locked-off camera"}], sm="travels", hc=False),
 ]
 C = sys.argv[1]
+ONLY = sys.argv[2].split(",") if len(sys.argv) > 2 else None
 for b in B:
+    if ONLY and b["beat"] not in ONLY: continue
     card = json.load(open(C + f"stryde-three-regrets__{b['beat']}.json"))
     prompt = json.dumps({"shot": b["shot"], "subject": b["subject"], "camera": {"movement": b["cam"], "framing": b["framing"]},
                          "motion": b["motion"] + " " + HOLD_C + (" " + HOLD_HC if b.get("hc", True) else "") + " " + PHYS, "lighting": CAP,
@@ -63,7 +66,8 @@ for b in B:
     call = {"beat": b["beat"], "connector": "kling", "mode": 1, "kind": "broll", "prompt": prompt,
             "duration": card["duration"], "resolution": "1080p", "aspect_ratio": "9:16",
             "start_image": card["imageUrl"], "start_approved": card["imageStatus"] == "confirmed",
-            "pinned": False, "subject_motion": b["sm"], "prefer_multi_shots": "false", "generation": 1, "risks": b["risks"]}
+            "pinned": False, "subject_motion": b["sm"], "prefer_multi_shots": "false", "generation": b.get("gen", 1), "risks": b["risks"]}
+    if b.get("fix"): call["fix_note"] = b["fix"]
     json.dump(call, open(D + f"{b['beat']}.call.json", "w"), ensure_ascii=False, indent=1)
     open(D + f"{b['beat']}.kie_prompt.txt", "w").write(prompt)
     print(b["beat"], card["duration"], len(prompt))
