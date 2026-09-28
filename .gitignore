@@ -7,3 +7,6 @@ builds/**/trim/
 *.mp3
 __pycache__/
 builds/*/intake/
+
+# Full-size cast renders live on the build board; the repo keeps the JPEG copies
+builds/*/cast/*.png
