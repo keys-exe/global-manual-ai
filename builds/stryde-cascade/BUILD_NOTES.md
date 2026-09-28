@@ -14,6 +14,12 @@
 - Assembly: `variants.json` → `variants.py` (hook + identical body). Act 1 "Then…" list cut on each "Then" (F16); A2-B3 `out` 2.1s.
 - Finishing: `edit/CAPCUT.md` (captions, banners, 17× / 34% / 200,000 overlays, offer card).
 
+## Delivered (2026-09-28)
+- Finals: `edit/STRYDE-CASCADE_HK1/2/3.mp4` (2:03.4 / 2:02.2 / 2:02.4, 1080×1920, 24 fps) — each variant PASS; body identical to the frame (F18).
+- Where: full-quality finals page https://claude.ai/artifact/3uDVLnVKanAFsfna7pxvSb (board storage full, Drive connector inline-only — F19). Board FINAL-HK1..3 cards link it.
+- Drive 08_EDIT: `OUTPUT.md` (1kiCvVa7wmuPa_H1AHrin3sal2yiV-zBe), `CAPCUT.md` (1X5bJ7U--vksuYpLdORqkccUd5RV3_C89).
+- Talking heads for the edit: `th/TH-*.pad.mp4` (held last frame; hooks cut to the VO frame count).
+
 ## Spend (start → end balance)
 - Higgsfield 20,185.5 → 19,730.25 = **455** of 600.
 - Kling 4,087 → 591 = **3,496** of 3,000 — over by 496 (F8: connector under-reports the charge ~2.8×).
