@@ -39,10 +39,18 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   waist-up; refs N sheet + P1 v3 + P0 (nano_banana_pro requested, logged nano_banana_2; job 6ceca5c9). v1 moved to Old.
   `angles.py` PASS.
 
+- 19:50–20:05 UTC: user "USE KIE FOR KLING" (Kling connector 3.0 credits) → Kling voice takes run on Kie `kling-3.0/video`
+  (pro 1080p, 10s, sound; `kie.py kling` brought in from claude/amazing-bohr-tsowwg). User "USE GPT IMAGE FOR THIS TH IMAGE" →
+  N-VOICE-IMG v3 on gpt_image_2_5 Sunburst (§18A rule 7 overridden on the user's word), then "USE NANO BANANA PRO MUCH BETTER"
+  → **v2 (nano_banana_pro) chosen and confirmed**; v1 + v3 on the Old board. Enhance pass written (`vo/ALL.enhanced.txt`,
+  `tts_budget.py` verbatim PASS, 3,525 chars, 1 request). ElevenLabs check PASS (519 free slots).
+  G1 (Kie ae8336fc, 190.5 Hz) ✓. G2 (Kie 773d0b83) 210.5 Hz = +10.5% → same-voice gate FAIL; cause in my prompt (quote "lighter,
+  a little higher") → G2 v2 (Kie 4ea2119b, quote in her own voice) 222.2 Hz = +16.6% → FAIL again. Kie spend 810 credits.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix N-VOICE-IMG v2 (the 8 plates are locked).
-- **Blocked:** Kling has 3.0 credits. The two 10s voice takes (and every B-roll clip after) need Kling; §5 forbids a silent reroute to Kie.
-  Top up Kling, or say "use Kie for Kling" to route through the Kie API (as stryde-lost-moments did).
-- **Next on the frame's Confirm + credits:** G1/G2 → `voice_source.py` → `elevenlabs_clone.py` (name `Stairs`) → Enhance + `eleven_v4`
-  (4 takes, one request) → house cut → HeyGen Avatar V talking heads TH-01…TH-16 → `trim.py` — no stop. Then `assemble.py --lengths`,
-  hook images (HK-01a, HK-02a) → Hook 1 gate.
+- **Voice stage stopped (§22X / §22U step 2):** two G2 generations failed the same-voice gate. A third needs the user's go.
+  Recommendation: make the second take the next script line with no quoted speech — "Six weeks ago, I was going down my stairs
+  backwards. One step at a time." (G3 rule) — the quote is what keeps lifting her pitch.
+- **Locked:** 3 avatars, 8 plates, N-VOICE-IMG v2 (propped, nano_banana_pro).
+- **Next on the go:** second take → `voice_source.py` → `elevenlabs_clone.py clone Stairs_clone_source.mp3 --name Stairs`
+  → `eleven_v4` TTS ×4 from `vo/ALL.enhanced.fitted.txt` → house cut → HeyGen Avatar V TH-01…TH-16 → `trim.py`.
