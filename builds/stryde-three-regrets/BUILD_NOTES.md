@@ -15,7 +15,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   (Sunburst, 25 credits, balance 19,937.5), all on the board as To check. Absorption on the Plan tab.
   Later the same session: steps 4–5, narrator voice source, clone, 4 TTS takes, split + house cut → 16 VO parts on the board.
 - session_01BfH1hvnfxx8tkrGD5vKT2W (2026-09-28 11:30, resume): merged `claude/happy-mayer-ea7ofb`; hourly Fix check
-  for this board created here (`trig_01QRM4rP2QW3k3wK73dHNt1s`, :30 UTC). Waiting on the master listen.
+  for this board created here (`trig_01QRM4rP2QW3k3wK73dHNt1s`, :30 UTC). User locked T4; masters, THs and E6 lengths done.
 
 ## Run-mode overrides (user, 2026-09-28)
 - **"you will be the one to clone and create the talking heads"**: in this build the agent clones the voice over the API
@@ -30,9 +30,20 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **Flags still unanswered:** F1 (built as recommended: TH in the body, hooks VO), F3, F5.
 - **Voice:** N cloned as `Regrets` = `OxNH6H9HajjAxTXIVONJ` (clone source v2, G1+G2+G4, 38.09s; G3 failed the gate at −11.9%).
   TTS: 4 takes of HK1+HK2+HK3+body in one eleven_v3 request (flow `O1rxzq3NBuTTEQlgN7gg`).
-- **Now (2026-09-28 11:30):** 16 VO parts (T1–T4 × HK1/HK2/HK3/BODY) on the board as To check — **§22U step 10, the master listen, is the user's.**
-  On their pick: build each variant master (raw HKn + raw BODY of that take, one `vo_trim.py` pass), word timestamps,
-  E6 B-roll lengths (`assemble.py --lengths`), HeyGen talking heads TH-01…06 from the master, then step 6 hooks one by one.
+- **VO locked (user, 2026-09-28 ~11:35): T4 confirmed for every part.** Masters `vo/master/HK<n>.wav` (house cut, one
+  `vo_trim.py` pass over the HKn + BODY seam, built from the board's T4 parts because the raw take is not reachable on
+  ElevenLabs any more): 159.16 / 160.26 / 161.44s, verify PASS; on the board as `VO-MASTER-HK1…3` (review). Word timestamps:
+  `vo/master/HK1.words.json`. **Flag:** T4's generation ended at speech level (−39.8 dB) — the final "stairs" is clipped
+  (§22U step 10 crit. 4); raised with the user, their pick stands unless they say otherwise.
+- **Talking heads (§22U 11–13, one go, Avatar V only — standards commit cherry-picked from `claude/vibrant-allen-sj2pso`):**
+  HeyGen photo avatar `fe08c0023a9df55731bb1ee4952381ff` from the confirmed N-G1 frame; whole master HK1 uploaded
+  (asset `df304cc6d8e744aba3a355e3dfee50f7`), one Avatar V render `2c89cada448fcee1d5d950bb4e654e2b` (159.14s; motionPrompt
+  refused — no digital twin — so none). TH-01…06 cut out between words (`work/th_cut.py`, `th/segments.json`), on the board
+  (review). The body is identical in every variant, so these serve HK1/HK2/HK3.
+- **E6 done:** `work/e6_plans.py` → `edit/plan_HK<n>.json`, `assemble.py --lengths` → `edit/lengths_HK<n>.json`, no failures;
+  rows that share one script line are split at their key words. Every B-roll card has its `duration` (body rows = the
+  longest of the three variants; 239s of calls in all).
+- **Next:** step 6 — HK1 first (HK1-01…03: start images, then Kling), one hook at a time, each gated by the user.
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
 - **Next (old):** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
