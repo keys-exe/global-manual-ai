@@ -688,6 +688,21 @@ END["BR-11-END"] = (NBP, ["back", "56a2c1e9-d175-47eb-b7f0-fdd5325768c0", "front
     "no wordmark, no front face, no band hidden, no band folded away, no peaks along the bottom edge, no upside-down shell, "
     "no second strap, no size change, no other change to the scene, " + NEG_HANDS))
 
+# ── Fix round 9 (hourly Fix check, 2026-09-28 ~19:20) — BR-11-END "show the back strap" again on v3: the shell was tipped
+#   over, peaks down, the band dangling underneath. Now the exact composition of the back product photo: shell upright, peaks UP,
+#   the band loop in FRONT of it towards the lens with the two keepers centred, held in his two hands.
+FIX9 = {"BR-11-END": "show the back strap"}
+END["BR-11-END"] = (NBP, ["back", "56a2c1e9-d175-47eb-b7f0-fdd5325768c0", "front"], photo([
+    "The strap in this photo looks EXACTLY LIKE THE FIRST ATTACHED PRODUCT PHOTO, the back of the strap — the same object, the same "
+    "view, the same composition — only smaller and held in his two hands in the workshop of the SECOND attached image (keep the man, "
+    "his apron, the bench, the vice, the camera position and the light exactly as in it). He holds it upright at chest height, one "
+    "hand on each chrome slide: the shell stands UPRIGHT at the back with its smooth plain matte-black pad side facing the lens and "
+    "its two peaks and the notch pointing UP; the closed black coarse-knit band loop comes forward from the slides TOWARDS THE CAMERA "
+    "and curves round in front of the shell, lower than it, the band's outer face with its two black keeper loops centred and facing "
+    "the lens. The shell the same small size as in the second image. No wordmark is visible from this side."],
+    "no wordmark, no front face, no peaks pointing down, no shell tipped over, no shell lying flat, no band hanging underneath, "
+    "no band hidden, no second strap, no size change, no other change to the scene, " + NEG_HANDS))
+
 if __name__ == "__main__":
     out = {}
     for beat, (model, refs, prompt) in B.items():
