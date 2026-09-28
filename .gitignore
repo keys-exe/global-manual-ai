@@ -13,3 +13,7 @@ builds/*/cast/*.png
 builds/*/voice/*.png
 builds/*/hooks/**/*.png
 builds/*/hooks/**/*.mp4
+builds/*/act*/**/*.png
+builds/*/act*/**/*.mp4
+builds/*/act*/*.png
+builds/*/act*/*.mp4

@@ -96,7 +96,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   PASS, `hooks/HK3/*.call.json`): HK3-01 surgeons' small instrument move · HK3-02 the pill drops into Ken's palm · HK3-03 Joan's
   look to the clock · HK3-04 Gail's fingertip press 2cm under the kneecap — 3.04s each, 1072×1928, 69 Kie credits each (276).
   On the board, To check.
-- **Next:** the user's HK3 gate → all hooks done → Act 1 (B-roll BR-003…BR-016 + MECH-010/011/013/014; clips on Kie).
+- **HK3 confirmed (2026-09-28).** All three hooks done.
+- **Act 1 images v1 (2026-09-28):** 14 start images on Higgsfield nano_banana_2, 2k, 9:16, one per call — BR-003…009, BR-012, BR-015, BR-016 (Gail beats refs R1+P1; BR-009/015 ref P6) and MECH-010/011/013/014 (§12A, no refs). Prompts `act1/<beat>.txt`, Higgsfield result names `act1/jobs.json`, JPEG copies `act1/<beat>_v1.jpg`. All on the board as To check.
+- **Next:** the user's Act 1 image gate (Confirm/Fix) → Act 1 clips on Kie (`kie.py kling`, §35 calls, preflight; MECH clips on the RV rigs).
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
 - **Next (old):** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
