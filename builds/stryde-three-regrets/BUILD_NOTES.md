@@ -54,7 +54,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   (36 cr) · HK1-02 4.04s (48 cr) · HK1-03 3.04s (36 cr). On the board, To check. **Kling balance ~367 after** — the rest of
   the build needs ~2,900 at 12 cr/s (239s of B-roll). **User 2026-09-28: when Kling is short, use Kie AI** — same
   Kling 3.0 Omni via `kie.py kling` (Kie balance 239,832.8); standards §5/§44/E7 updated.
-- **Next:** the user's HK1 gate (Confirm/Fix the three clips) → HK2 (images first).
+- **HK1 clips confirmed (user) — Hook 1 done.**
+- **HK2 started (user: "go ahead with HK2"):** start images HK2-01 (N's hands lifting letters, overhead), HK2-02 (N pinning a
+  card, three-quarter-back, pinboard sharp), HK2-03 (Gail's overfilled drawer, strap sliding, high) — `nano_banana_2`, refs
+  N-NARR sheet + P2 plate / P1 plate; prompts `hooks/HK2/*.txt` (2,751–2,895 chars). On the board, images To check.
+- **Next:** on the user's image Confirm → HK2 clips (3 / 3 / 3s): Kling connector while it has credits, else Kie (`kie.py kling`).
 
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
