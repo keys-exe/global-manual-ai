@@ -1,0 +1,352 @@
+{
+ "audio": "/home/user/global-manual-ai/builds/stryde-three-regrets/vo/master/HK1.wav",
+ "script": "/home/user/global-manual-ai/builds/stryde-three-regrets/vo/master/HK1.script.txt",
+ "base": "/home/user/global-manual-ai/builds/stryde-three-regrets/th/TH-HK1.mp4",
+ "broll": [
+  {
+   "beat": "HK1-01",
+   "clip": null,
+   "phrase": "Three things people tell us they wish they had known about their knees.",
+   "key": "knees"
+  },
+  {
+   "beat": "HK1-02",
+   "clip": null,
+   "phrase": "Not one",
+   "key": "one"
+  },
+  {
+   "beat": "HK1-03",
+   "clip": null,
+   "phrase": "of them is that they should have gone to the doctor sooner.",
+   "key": "doctor"
+  },
+  {
+   "beat": "BR-003",
+   "clip": null,
+   "phrase": "Regret number one.",
+   "key": "Regret"
+  },
+  {
+   "beat": "BR-004",
+   "clip": null,
+   "phrase": "Nobody ever told them where it was actually coming from.",
+   "key": "coming"
+  },
+  {
+   "beat": "BR-005",
+   "clip": null,
+   "phrase": "They bought the stretchy sleeve.",
+   "key": "sleeve"
+  },
+  {
+   "beat": "BR-006",
+   "clip": null,
+   "phrase": "Then the one with the metal sides.",
+   "key": "metal"
+  },
+  {
+   "beat": "BR-007",
+   "clip": null,
+   "phrase": "Then the wrap, then the gel, then the one their neighbour swore by.",
+   "key": "wrap"
+  },
+  {
+   "beat": "BR-008",
+   "clip": null,
+   "phrase": "And why would they not."
+  },
+  {
+   "beat": "BR-009",
+   "clip": null,
+   "phrase": "The joint is where it hurts, and the joint is what the scan shows.",
+   "key": "scan"
+  },
+  {
+   "beat": "MECH-010",
+   "clip": null,
+   "phrase": "But two centimetres below your kneecap there is a band of tendon about as wide as your thumb, and every step you take lands on it.",
+   "key": "band"
+  },
+  {
+   "beat": "MECH-011",
+   "clip": null,
+   "phrase": "Seventeen times your bodyweight.",
+   "key": "Seventeen"
+  },
+  {
+   "beat": "BR-012",
+   "clip": null,
+   "phrase": "Put your finger under your kneecap and press.",
+   "key": "finger"
+  },
+  {
+   "beat": "MECH-013",
+   "clip": null,
+   "phrase": "That band is the one taking it.",
+   "key": "band"
+  },
+  {
+   "beat": "MECH-014",
+   "clip": null,
+   "phrase": "A sleeve squeezes the whole knee and leaves that band carrying everything.",
+   "key": "sleeve"
+  },
+  {
+   "beat": "BR-015",
+   "clip": null,
+   "phrase": "A hinged brace stops the knee going sideways, and the knee was never going sideways.",
+   "key": "hinged"
+  },
+  {
+   "beat": "BR-016",
+   "clip": null,
+   "phrase": "So the drawer fills up, the years go by, and not one of them was ever aimed at the spot.",
+   "key": "drawer"
+  },
+  {
+   "beat": "BR-017",
+   "clip": null,
+   "phrase": "Regret number two.",
+   "key": "Regret"
+  },
+  {
+   "beat": "BR-018",
+   "clip": null,
+   "phrase": "They protected the bad knee with the good one.",
+   "key": "bad"
+  },
+  {
+   "beat": "BR-019",
+   "clip": null,
+   "phrase": "Nobody decides to do this."
+  },
+  {
+   "beat": "BR-020",
+   "clip": null,
+   "phrase": "You lead with the good leg because it hurts less, and after a while you stop noticing.",
+   "key": "good"
+  },
+  {
+   "beat": "MECH-021",
+   "clip": null,
+   "phrase": "But the good leg is now doing the work of two, and the band on that side is taking a load it was never meant to take.",
+   "key": "work"
+  },
+  {
+   "beat": "BR-022",
+   "clip": null,
+   "phrase": "That is why the second knee goes.",
+   "key": "second"
+  },
+  {
+   "beat": "BR-024",
+   "clip": null,
+   "phrase": "Regret number three.",
+   "key": "Regret"
+  },
+  {
+   "beat": "BR-025",
+   "clip": null,
+   "phrase": "They stopped saying yes, and they never said why.",
+   "key": "yes"
+  },
+  {
+   "beat": "BR-026",
+   "clip": null,
+   "phrase": "No to the long walk.",
+   "key": "long"
+  },
+  {
+   "beat": "BR-027",
+   "clip": null,
+   "phrase": "No to the day out.",
+   "key": "day"
+  },
+  {
+   "beat": "BR-028",
+   "clip": null,
+   "phrase": "No to the house with the steps up to the front door.",
+   "key": "steps"
+  },
+  {
+   "beat": "BR-029",
+   "clip": null,
+   "phrase": "Not a decision, just easier than explaining."
+  },
+  {
+   "beat": "BR-030",
+   "clip": null,
+   "phrase": "And the people around them thought they had gone off it.",
+   "key": "people"
+  },
+  {
+   "beat": "BR-032",
+   "clip": null,
+   "phrase": "Coming down is worse than going up.",
+   "key": "Coming"
+  },
+  {
+   "beat": "BR-033",
+   "clip": null,
+   "phrase": "Going up, your muscles lift you.",
+   "key": "Going"
+  },
+  {
+   "beat": "MECH-034",
+   "clip": null,
+   "phrase": "Coming down, you are catching yourself, and the catch lands on that band.",
+   "key": "catch"
+  },
+  {
+   "beat": "BR-035",
+   "clip": null,
+   "phrase": "So you do not wrap the joint.",
+   "key": "wrap"
+  },
+  {
+   "beat": "MECH-036",
+   "clip": null,
+   "phrase": "You go underneath it.",
+   "key": "underneath"
+  },
+  {
+   "beat": "PR-037",
+   "clip": null,
+   "phrase": "This one is called Stryde.",
+   "key": "Stryde"
+  },
+  {
+   "beat": "BR-038",
+   "clip": null,
+   "phrase": "It sits two centimetres below the kneecap, on the tendon, and never crosses the joint.",
+   "key": "below"
+  },
+  {
+   "beat": "BR-039",
+   "clip": null,
+   "phrase": "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee.",
+   "key": "pad"
+  },
+  {
+   "beat": "MECH-040",
+   "clip": null,
+   "phrase": "The weight gets caught and moved off the worn part before it reaches the joint.",
+   "key": "caught"
+  },
+  {
+   "beat": "BR-041",
+   "clip": null,
+   "phrase": "The placement is the whole thing.",
+   "key": "placement"
+  },
+  {
+   "beat": "BR-042",
+   "clip": null,
+   "phrase": "A centimetre too high and it is a sleeve again.",
+   "key": "centimetre"
+  },
+  {
+   "beat": "BR-043",
+   "clip": null,
+   "phrase": "Thirty four percent less strain. Measured.",
+   "key": "Thirty"
+  },
+  {
+   "beat": "PR-045",
+   "clip": null,
+   "phrase": "Three years with orthopedic surgeons.",
+   "key": "orthopedic"
+  },
+  {
+   "beat": "BR-046",
+   "clip": null,
+   "phrase": "Two hundred thousand people wearing one.",
+   "key": "Two"
+  },
+  {
+   "beat": "BR-047",
+   "clip": null,
+   "phrase": "Ten seconds to put on.",
+   "key": "Ten"
+  },
+  {
+   "beat": "BR-048",
+   "clip": null,
+   "phrase": "No sores, no rolling down, and nobody can see it.",
+   "key": "nobody"
+  },
+  {
+   "beat": "BR-050",
+   "clip": null,
+   "phrase": "One knee only. Leave the other bare.",
+   "key": "One"
+  },
+  {
+   "beat": "BR-052",
+   "clip": null,
+   "phrase": "Go to your own stairs and come down forwards.",
+   "key": "come"
+  },
+  {
+   "beat": "BR-053",
+   "clip": null,
+   "phrase": "You will know in a minute.",
+   "key": "know"
+  },
+  {
+   "beat": "MECH-056",
+   "clip": null,
+   "phrase": "Because the weight is not landing on that band any more.",
+   "key": "weight"
+  },
+  {
+   "beat": "BR-057",
+   "clip": null,
+   "phrase": "Most of those messages end the same way.",
+   "key": "messages"
+  },
+  {
+   "beat": "BR-058",
+   "clip": null,
+   "phrase": "I wish somebody had told me this four years ago.",
+   "key": "wish"
+  },
+  {
+   "beat": "PR-061a",
+   "clip": null,
+   "phrase": "Two for one,",
+   "key": "Two"
+  },
+  {
+   "beat": "BR-061b",
+   "clip": null,
+   "phrase": "so you do both knees, which after regret number two is the point.",
+   "key": "both"
+  },
+  {
+   "beat": "PR-062",
+   "clip": null,
+   "phrase": "Sixty days, and you keep the straps.",
+   "key": "keep"
+  },
+  {
+   "beat": "CARD-063",
+   "clip": null,
+   "phrase": "From the Stryde site.",
+   "key": "From"
+  },
+  {
+   "beat": "BR-064",
+   "clip": null,
+   "phrase": "The copies stretch, and a stretched strap stops holding it.",
+   "key": "stretch"
+  },
+  {
+   "beat": "BR-065",
+   "clip": null,
+   "phrase": "Go and do your stairs.",
+   "key": "stairs"
+  }
+ ]
+}

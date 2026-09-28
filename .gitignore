@@ -24,3 +24,9 @@ builds/*/voice/*.png
 *.flac
 *.pyc
 builds/*/broll/renders/
+builds/*/hooks/**/*.png
+builds/*/hooks/**/*.mp4
+builds/*/act*/**/*.png
+builds/*/act*/**/*.mp4
+builds/*/act*/*.png
+builds/*/act*/*.mp4

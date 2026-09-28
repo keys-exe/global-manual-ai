@@ -1,0 +1,30 @@
+{
+ "beat": "BR-015",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"act1_brace_tilt\",\"subject\":\"THE SAME MAN'S HAND as in the start frame, navy shirt cuff, holding the same plain grey hinged knee brace upright over the desk; exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CU as in the start frame: low, looking past the desk to the lightbox. FOCUS: the brace and hand are sharp; the room falls soft.\"},\"motion\":\"CONTINUING: his hand is already holding the brace upright by its lower cuff. COMPLETING: one slow tilt, about three seconds — he tilts the whole brace to one side and back, the metal side bars and hinge staying rigid and never folding sideways. UNRESOLVED: he holds the brace upright again, still. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, grey flat daylight from the consulting-room window on the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no brace bending sideways, no hinge folding, no brace floating, no brand, no logo, no face, no talking, no slow motion, no music\"}",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_153440_e5116fa0-0f79-441a-9a5d-0cc08f0683ab.png",
+ "start_approved": true,
+ "pinned": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the hinge folds sideways, contradicting the line",
+   "prevented_by": "bars and hinge rigid; no hinge folding; no brace bending sideways"
+  },
+  {
+   "risk": "the brace floats out of the hand",
+   "prevented_by": "held by its lower cuff; no brace floating"
+  },
+  {
+   "risk": "6s clip over-animates",
+   "prevented_by": "one slow tilt then UNRESOLVED hold; HOLD-C"
+  }
+ ]
+}
