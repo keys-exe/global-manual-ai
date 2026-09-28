@@ -1,0 +1,34 @@
+{
+ "beat": "A5-B5",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (Kling account short, §5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"a5_b5\",\"subject\":\"an older woman in a navy cardigan climbing a straight carpeted flight, a hand on each rail, seen from behind\",\"camera\":{\"movement\":\"Camera already drifting on the first frame, never static at entry. Continuous low-amplitude breath sway throughout, roughly one cycle per two seconds, mostly vertical with a slight roll. Focus soft for a moment at entry, then settles. One deliberate reframe in the back half as the operator notices the subject sitting off-centre — corrects part of the way, not fully. Camera lags behind the subject, never anticipates it and never moves with it. Still drifting on the final frame.\",\"framing\":\"As in the start frame; the action sits in the middle band of the frame, nothing that matters in the top or bottom quarter.\"},\"motion\":\"Already mid-step on the first frame: she pulls herself up onto the next step with both hands on the rails, slowly, about three seconds for the one step; the stairs, the banister and the wall rail stay perfectly straight and still. Her back foot is lifting at the cut. The camera stays where it is. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no second person, no camera travelling with the subject, no music, no speech\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_101823_2631b113-da71-4d30-a15a-5fd0bcfd181c.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "fix_note": "user Fix 'distorted stairs' — frame: stair geometry distorted → straight even flight, parallel rails, new frame",
+ "risks": [
+  {
+   "risk": "feet or legs warp on the step",
+   "prevented_by": "one step at a countable pace, start frame caught mid-step, HOLD-C + NEG-WARP-C"
+  },
+  {
+   "risk": "camera travels with the moving subject",
+   "prevented_by": "RIG-R1 sways but lags, never moves with the subject; 'no camera travelling with the subject'"
+  },
+  {
+   "risk": "subject changes identity or wardrobe",
+   "prevented_by": "subject line names wardrobe; start frame carries the sheet identity; HOLD-C"
+  }
+ ]
+}
