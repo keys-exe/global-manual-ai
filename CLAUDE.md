@@ -31,6 +31,8 @@ Every generation goes on the build's **Generation Board**. **The board design is
 
 Not split yet (their boards couldn't be read from this session on 2026-09-28): `stryde-regrets` https://claude.ai/artifact/1PfmPCZQeuVTPn4ND1w86t, `stryde-thirty-years` https://claude.ai/artifact/EG999Jm7UoVdq5YAY7iafV. `intake-1` and `demo-ad` hold placeholder data only and stay single boards.
 
+Template republished 2026-09-28 (Download all B-rolls / hooks, generating panel, four-board support, viewer fixes) to `stryde-thirty-years`, `stryde-three-regrets` and `stryde-regrets`. The other boards in the table belong to a claude.ai account that the 2026-09-28 session (`brave-volta`) couldn't reach, so they still run an older template: republish them from a session on that account.
+
 **Always show the board (user, 2026-09-27), both run modes:** open the build's board in the user's panel (Artifact `action: "open"`, `url` = board) when a run starts or resumes and at every delivery (steps 1–3, 4–5, each hook, each act, the edit, the finished videos). Automatic writes and shows it exactly like Manual.
 
 **Final output tab (user, 2026-09-27):** the board has four tabs — Board, Manual run, Plan, **Final output**. Every finished video (one per hook variant: hook + the same body; a film: the finished film) goes on as its own `generations/<build-id>__FINAL-HK<n>` doc the turn it is exported: `stage: "edit"`, `final: true`, `beat: "FINAL-HK<n>"` (film: `FINAL`), `hook: <n>`, `title`, `line` (the hook's opening line), `madeFrom` (e.g. "HK1 + BODY, CapCut finish"), `videoAsset` / `videoParts` / `videoType`, `duration`, `videoRes`, `videoAt`, versions as usual. Manual: `status: review` — the final review is the user's; Automatic: `status: use`.
