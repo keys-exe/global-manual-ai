@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""§22U step 9 — fit a tagged Eleven v3 script inside the 5,000-character limit.
+"""§22U step 9 — fit an enhanced (tagged) script inside the Eleven v4 10,000-character limit.
 
 Usage:
-  tts_budget.py SCRIPT.txt [--limit 5000] [--out FITTED.txt]
+  tts_budget.py SCRIPT.txt [--limit 10000] [--out FITTED.txt]
 
 Counts the full request string (tags, spaces and newlines included) and applies
 the budget ladder in order until it fits:
@@ -11,12 +11,16 @@ the budget ladder in order until it fits:
      (act-opening tags — the first tag of each paragraph — are kept)
   3. strip every tag
   4. split untagged text at paragraph ends into requests <= limit
-Also flags any tag not in the library or in a banned category.
+Lists tags not in the v3 library (Enhance writes its own — allowed); a tag in a
+banned category or one the Enhance prompt forbids (not the voice) is a FAIL.
 
 VERBATIM LOCK (--script-lines LINES.txt, from script_lines.py): with every tag
 removed, the fitted text must be the script's spoken lines word for word — no
 word added, removed or changed, nothing re-ordered. Any difference is a FAIL
-(exit 2) and the text is never sent to ElevenLabs.
+(exit 2) and the text is never sent to ElevenLabs. The ElevenLabs Enhance pass
+(§22U step 8) may add emphasis: CAPITALS, "!" and ellipses are accepted and
+listed under "emphasis"; a "?" added to a word the script does not end with "?"
+changes the line's meaning and is a FAIL (remove it, then re-run).
 Prints a JSON report; writes the fitted text (parts joined by a line of '=====').
 """
 import argparse, json, re
@@ -24,12 +28,25 @@ from pathlib import Path
 
 LIB = Path(__file__).parent.parent / "references" / "eleven_v3_tags.json"
 BANNED = {"Sound Effects", "Effects", "Environment", "Genre", "Accents", "Humor"}
+# tags the Enhance prompt itself forbids — not the voice (§22U step 8)
+NOT_VOICE = {"[standing]", "[grinning]", "[pacing]", "[music]"}
 TAG = re.compile(r"\[[^\[\]]+\]")
 
 
 def library():
     data = json.loads(LIB.read_text(encoding="utf-8"))
     return {t["tag"].lower().replace("‑", "-"): t["category"] for t in data["tags"]}
+
+
+def words(text):
+    """(key, raw) per spoken word: key ignores case and edge punctuation, so the
+    Enhance emphasis (CAPITALS, !, ?, ellipses) never counts as a changed word."""
+    out = []
+    for raw in re.sub(r"\.\.\.|…", " ", text).split():
+        key = raw.strip(".,!?;:\"“”‘’()").lower().replace("’", "'")
+        if key:
+            out.append((key, raw))
+    return out
 
 
 def tidy(text):
@@ -69,7 +86,7 @@ def split(text, limit):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("script")
-    ap.add_argument("--limit", type=int, default=5000)
+    ap.add_argument("--limit", type=int, default=10000)  # eleven_v4, GET /v1/models 2026-09-28
     ap.add_argument("--out")
     ap.add_argument("--script-lines", help="spoken lines from script_lines.py; enables the verbatim lock")
     a = ap.parse_args()
@@ -78,7 +95,7 @@ def main():
     text = Path(a.script).read_text(encoding="utf-8").strip()
     used = TAG.findall(text)
     unknown = sorted({t for t in used if t.lower() not in lib})
-    banned = sorted({t for t in used if lib.get(t.lower()) in BANNED})
+    banned = sorted({t for t in used if lib.get(t.lower()) in BANNED or t.lower() in NOT_VOICE})
 
     rungs = [
         ("1 full tagging", text),
@@ -103,14 +120,26 @@ def main():
     out.write_text("\n=====\n".join(fitted), encoding="utf-8")
     report["out"] = str(out)
     if a.script_lines:
-        want = Path(a.script_lines).read_text(encoding="utf-8").split()
-        got = tidy(TAG.sub("", " ".join(fitted))).split()
-        report["verbatim"] = "PASS" if got == want else "FAIL"
-        if got != want:
+        want = words(Path(a.script_lines).read_text(encoding="utf-8"))
+        got = words(tidy(TAG.sub("", " ".join(fitted))))
+        same = [w for w, _ in want] == [g for g, _ in got]
+        report["verbatim"] = "PASS" if same else "FAIL"
+        if not same:
             import difflib
-            report["verbatim_diff"] = [d for d in difflib.ndiff(want, got) if d[:1] in "+-"][:40]
+            report["verbatim_diff"] = [d for d in difflib.ndiff([r for _, r in want], [r for _, r in got])
+                                       if d[:1] in "+-"][:40]
+        else:
+            emph = [f"{w} -> {g}" for (_, w), (_, g) in zip(want, got) if w != g]
+            asked = [g for (_, w), (_, g) in zip(want, got) if "?" in g and "?" not in w]
+            if emph:
+                report["emphasis"] = emph[:60]
+            if asked:
+                report["verbatim"] = "FAIL"
+                report["question_added"] = asked
     print(json.dumps(report, indent=2))
-    if report.get("verbatim") == "FAIL":
+    if banned:
+        report["banned"] = "FAIL — remove these tags, then re-run"
+    if report.get("verbatim") == "FAIL" or banned:
         raise SystemExit(2)
 
 
