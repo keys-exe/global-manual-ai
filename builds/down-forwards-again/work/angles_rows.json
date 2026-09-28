@@ -1,0 +1,1278 @@
+[
+ {
+  "beat": "TH-HK1",
+  "group": "Hook 1",
+  "type": "TH",
+  "subject": "D",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK1-01a",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "P",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = the stairs she now owns",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "front-door stained glass (east) + landing skylight",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK1-02a",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "P hand",
+  "height": "high",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = looking down into the pile",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "window over the sink, west wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "TH-HK2",
+  "group": "Hook 2",
+  "type": "TH",
+  "subject": "D",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK2-02a",
+  "group": "Hook 2",
+  "type": "BR",
+  "subject": "D hand",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = his desk from his own side",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK3-01a",
+  "group": "Hook 3",
+  "type": "BR",
+  "subject": "D",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "profile + through = the scan between him and us",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "background",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": "backlit by the window: the scan / the garden is the subject, the face is not speaking"
+  }
+ },
+ {
+  "beat": "TH-HK3",
+  "group": "Hook 3",
+  "type": "TH",
+  "subject": "D",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "TH-A1",
+  "group": "Act 1",
+  "type": "TH",
+  "subject": "D",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-01",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "P",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "window over the sink, west wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-01",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-02",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "D hands",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = the scan looms over us",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": "backlit by the window: the scan / the garden is the subject, the face is not speaking"
+  }
+ },
+ {
+  "beat": "MECH-03",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile = the band's side view under the kneecap",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-04",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "P hand",
+  "height": "high",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "high = the viewer's own look down at their knee",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bay window, east wall, net curtains",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-05a",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "P",
+  "height": "eye",
+  "side": "behind",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "behind = going up is the easy way, she leaves us",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "front-door stained glass (east) + landing skylight",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-05b",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "P",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = the stair looms; coming down is the hard way",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "front-door stained glass (east) + landing skylight",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-05",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "low = the weight arriving",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "TH-A2",
+  "group": "Act 2",
+  "type": "TH",
+  "subject": "D",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-06",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "P",
+  "height": "high",
+  "side": "three-quarter-back",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "high + three-quarter-back = small, careful, from the landing",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "front-door stained glass (east) + landing skylight",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-07",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "P",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "profile = the effort side-on",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bay window, east wall, net curtains",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-08",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "P legs",
+  "height": "ground",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "ground = the leg she leads with",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "front-door stained glass (east) + landing skylight",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-09a",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "object",
+  "height": "low",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = the boots, left waiting",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "front-door stained glass (east) + landing skylight",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-09b",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "P",
+  "height": "eye",
+  "side": "three-quarter-back",
+  "scale": "MEDIUM",
+  "fg": "through",
+  "why": "three-quarter-back + through = the garden past her, out of reach",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "background",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "window over the sink, west wall",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": "backlit by the window: the scan / the garden is the subject, the face is not speaking"
+  }
+ },
+ {
+  "beat": "BR-09c",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "family (one-offs FM-01 daughter, FM-02 grandson) + P",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "OTS = from inside, the family comes to her",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "open sky over the street, east",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-10",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "P",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high = how hard she tried",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bay window, east wall, net curtains",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "TH-A3",
+  "group": "Act 3",
+  "type": "TH",
+  "subject": "D",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-11a",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "object",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "window over the sink, west wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-11b",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "object",
+  "height": "low",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low + profile = the hinge's sideways travel",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "window over the sink, west wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-11c",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "P hand",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = sits on the skin, from above",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "window over the sink, west wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "PR-12",
+  "group": "Act 3",
+  "type": "SHOT",
+  "subject": "P hand",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "window over the sink, west wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-13",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "P",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "bay window, east wall, net curtains",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-14",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "low = the catch holds",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-15",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "D hand",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "high = the placement from above",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "TH-A4",
+  "group": "Act 4",
+  "type": "TH",
+  "subject": "D",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-16a",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "surgeon (one-off SG-01, \u00a719B approachable)",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 4,
+  "light": {
+   "source": "clinic window, side light",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "everyday: neutral daylight",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-16b",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "walkers (one-offs WK-01)",
+  "height": "ground",
+  "side": "profile",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "ground = the steps of many",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 4,
+  "light": {
+   "source": "open sky over the canal",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "everyday: neutral daylight",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-17a",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "P",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = quick and easy",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "front-door stained glass (east) + landing skylight",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-17b",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "P",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = the flat line of the trouser",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "front-door stained glass (east) + landing skylight",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-19a",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "P",
+  "height": "high",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high = the drop of the stairs below her",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "front-door stained glass (east) + landing skylight",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-19b",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "P",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = the mirror of BR-05b, now easy",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "front-door stained glass (east) + landing skylight",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-20",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "D",
+  "height": "eye",
+  "side": "three-quarter-back",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "three-quarter-back + through = we read both scans over his shoulder",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "background",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": "backlit by the window: the scan / the garden is the subject, the face is not speaking"
+  }
+ },
+ {
+  "beat": "TH-A5",
+  "group": "Act 5",
+  "type": "TH",
+  "subject": "D",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "consulting-room window, camera-left (north)",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "the doctor's room: steady overcast north light",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "PR-22a",
+  "group": "Act 5",
+  "type": "SHOT",
+  "subject": "object",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = what's in the box",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "window over the sink, west wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-22b",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "copy (one-off CP-01 leg)",
+  "height": "low",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low + profile = the sag",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "window over the sink, west wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-23",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "P",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = the mirror of BR-06's high angle: now she owns the stairs",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "front-door stained glass (east) + landing skylight",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ }
+]

@@ -1,0 +1,72 @@
+{
+ "P0-PROP-P": {
+  "job": "05091655-5fe3-468d-ad97-c6eec5bd7e0c",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_195756_05091655-5fe3-468d-ad97-c6eec5bd7e0c.png",
+  "asset": "7c50fa3cced1188ef36071d24733fe8f",
+  "size": 6681787,
+  "res": "1520\u00d72688",
+  "model": "gpt_image_2_5 sunburst",
+  "at": 1790625500000,
+  "note": "To check \u2014 your Confirm or Fix."
+ },
+ "P3-D-CONSULT": {
+  "job": "757817ea-6840-487c-879c-1b0310e137b2",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_195755_757817ea-6840-487c-879c-1b0310e137b2.png",
+  "asset": "d7de088c31c2eb6d52b332680a773913",
+  "size": 4824215,
+  "res": "1520\u00d72688",
+  "model": "gpt_image_2_5 sunburst",
+  "at": 1790625500000,
+  "note": "To check \u2014 your Confirm or Fix."
+ },
+ "W-L-FRONT": {
+  "job": "793ca329-e4b3-49fd-943c-5e97bae5366d",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_195756_793ca329-e4b3-49fd-943c-5e97bae5366d.png",
+  "asset": "182c9d8f79d9e675e2f5b8644a927020",
+  "size": 6085452,
+  "res": "1536\u00d72752",
+  "model": "nano_banana_pro requested \u00b7 Higgsfield reported nano_banana_2",
+  "at": 1790625500000,
+  "note": "To check \u2014 your Confirm or Fix. LEFT-knee worn reference (F8), for every worn beat. Note: I asked Higgsfield for nano_banana_pro; its job record says nano_banana_2."
+ },
+ "W-L-REAR": {
+  "job": "c3e6103f-de8b-42e2-8929-281c4ea1e18d",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_195756_c3e6103f-de8b-42e2-8929-281c4ea1e18d.png",
+  "asset": "e2d4ed628b7500519cad615f850f7f19",
+  "size": 7604248,
+  "res": "1536\u00d72752",
+  "model": "nano_banana_pro requested \u00b7 Higgsfield reported nano_banana_2",
+  "at": 1790625500000,
+  "note": "To check \u2014 your Confirm or Fix. LEFT-knee worn reference (F8), for every worn beat. Note: I asked Higgsfield for nano_banana_pro; its job record says nano_banana_2."
+ },
+ "W-L-BENT": {
+  "job": "2730a819-cf08-49a6-b5cd-01a086777dad",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_195756_2730a819-cf08-49a6-b5cd-01a086777dad.png",
+  "asset": "da64a8570dd2cca956fe09e77eb9997a",
+  "size": 7978321,
+  "res": "1536\u00d72752",
+  "model": "nano_banana_pro requested \u00b7 Higgsfield reported nano_banana_2",
+  "at": 1790625500000,
+  "note": "To check \u2014 your Confirm or Fix. LEFT-knee worn reference (F8), for every worn beat. Note: I asked Higgsfield for nano_banana_pro; its job record says nano_banana_2."
+ },
+ "P1-P-FRONTROOM": {
+  "job": "fbf0668c-2650-411e-a540-fd991fecaaa8",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_200044_fbf0668c-2650-411e-a540-fd991fecaaa8.png",
+  "asset": "3bdb29e7017ee14dc6c1b6b69b049453",
+  "size": 7235829,
+  "res": "1520\u00d72688",
+  "model": "gpt_image_2_5 sunburst",
+  "at": 1790625500000,
+  "note": "To check \u2014 your Confirm or Fix. Made with P0 attached \u2014 if P0 goes to Fix, this is redone against the new P0."
+ },
+ "P2-P-KITCHEN": {
+  "job": "5534feb1-63c4-45fb-82ef-72cf39f32734",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_200044_5534feb1-63c4-45fb-82ef-72cf39f32734.png",
+  "asset": "7f96c0791bd39c6b0846ccd2f9879ffd",
+  "size": 5988130,
+  "res": "1520\u00d72688",
+  "model": "gpt_image_2_5 sunburst",
+  "at": 1790625500000,
+  "note": "To check \u2014 your Confirm or Fix. Made with P0 attached \u2014 if P0 goes to Fix, this is redone against the new P0."
+ }
+}
