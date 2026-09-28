@@ -76,7 +76,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   "REMOVE SWING STRAP" → generation 2 (§22X: motion fault → the strap creeps and stops dead, no swing), sent to **Kie**
   (`kie.py kling`, first Kie Kling call, 69 Kie credits). Kie needs `aspect_ratio: auto` on single-image I2V (422 otherwise;
   kie.py fixed) → output 1072×1928, a hair off 1080×1920, reframed in the edit. A third HK2-03 clip needs the user's go.
-- **Next:** the user checks HK2-02 v5 (image) and HK2-03 v2 (clip) → HK2-02 clip on Kie → HK2 gate → HK3.
+- **HK2-02 v5 image confirmed (user); HK2-02 clip v2 on Kie** (generation 2 of the shot: frame fault fixed at the source, new
+  motion = one thumb stroke along the letter's fold), 3.04s, 1072×1928, 69 Kie credits, preflight PASS. On the board, To check.
+  HK2-03 clip v2 still To check (the user's "go ahead" came with no Fix note; a third generation needs a note and their go).
+- **Next:** the user's HK2 gate (HK2-02 v2 + HK2-03 v2 clips) → HK3 (four images first; clips on Kie).
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
 - **Next (old):** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
