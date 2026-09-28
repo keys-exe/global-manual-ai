@@ -1,7 +1,7 @@
 {
  "audio": "/home/user/global-manual-ai/builds/stryde-three-regrets/vo/master/HK3.wav",
  "script": "/home/user/global-manual-ai/builds/stryde-three-regrets/vo/master/HK3.script.txt",
- "base": "/home/user/global-manual-ai/builds/stryde-three-regrets/th/N_TH.mp4",
+ "base": "/home/user/global-manual-ai/builds/stryde-three-regrets/th/TH-HK3.mp4",
  "broll": [
   {
    "beat": "HK3-01",

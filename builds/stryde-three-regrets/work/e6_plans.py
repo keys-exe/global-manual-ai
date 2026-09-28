@@ -24,7 +24,7 @@ for n in (1, 2, 3):
                 end = starts[n_ + 1] if n_ + 1 < len(starts) else len(words)
                 r["line"] = " ".join(words[starts[n_]:end])
         i = j + 1
-    plan = {"audio": f"/home/user/global-manual-ai/builds/stryde-three-regrets/vo/master/HK{n}.wav", "script": f"/home/user/global-manual-ai/builds/stryde-three-regrets/vo/master/HK{n}.script.txt", "base": "/home/user/global-manual-ai/builds/stryde-three-regrets/th/N_TH.mp4",
+    plan = {"audio": f"/home/user/global-manual-ai/builds/stryde-three-regrets/vo/master/HK{n}.wav", "script": f"/home/user/global-manual-ai/builds/stryde-three-regrets/vo/master/HK{n}.script.txt", "base": f"/home/user/global-manual-ai/builds/stryde-three-regrets/th/TH-HK{n}.mp4",
             "broll": [{"beat": r["beat"], "clip": None, "phrase": r["line"], **({"key": r["key"]} if r.get("key") else {}),
                        **({"max": r["max"]} if r.get("max") else {})} for r in br]}
     json.dump(plan, open(f"edit/plan_HK{n}.json", "w"), indent=1)

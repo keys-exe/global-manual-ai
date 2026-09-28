@@ -35,11 +35,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   ElevenLabs any more): 159.16 / 160.26 / 161.44s, verify PASS; on the board as `VO-MASTER-HK1…3` (review). Word timestamps:
   `vo/master/HK1.words.json`. **Flag:** T4's generation ended at speech level (−39.8 dB) — the final "stairs" is clipped
   (§22U step 10 crit. 4); raised with the user, their pick stands unless they say otherwise.
-- **Talking heads (§22U 11–13, one go, Avatar V only — standards commit cherry-picked from `claude/vibrant-allen-sj2pso`):**
-  HeyGen photo avatar `fe08c0023a9df55731bb1ee4952381ff` from the confirmed N-G1 frame; whole master HK1 uploaded
-  (asset `df304cc6d8e744aba3a355e3dfee50f7`), one Avatar V render `2c89cada448fcee1d5d950bb4e654e2b` (159.14s; motionPrompt
-  refused — no digital twin — so none). TH-01…06 cut out between words (`work/th_cut.py`, `th/segments.json`), on the board
-  (review). The body is identical in every variant, so these serve HK1/HK2/HK3.
+- **Talking heads — one go per variant (user, 2026-09-28: "delete all the TH … one go … H1+BODY H2+BODY H3+BODY"):**
+  the six per-beat TH-01…06 cards and files were deleted. HeyGen photo avatar `fe08c0023a9df55731bb1ee4952381ff` (confirmed
+  N-G1 frame), Avatar V, whole master per variant, no motionPrompt (refused without a digital twin):
+  `TH-HK1` = `2c89cada448fcee1d5d950bb4e654e2b` (159.14s) · `TH-HK2` = `639153e3bfea0813c0d29609e17af59b` (160.24s) ·
+  `TH-HK3` = `1fb7f7aa73d8b36f1a0b01b579b604bc` (161.41s). On the board whole (15 MB parts), review. Each is the base track
+  of its variant's edit (`edit/plan_HK<n>.json`); the B-roll goes over it. Standards §22U 12 / §44 #84 / E7 updated to match.
 - **E6 done:** `work/e6_plans.py` → `edit/plan_HK<n>.json`, `assemble.py --lengths` → `edit/lengths_HK<n>.json`, no failures;
   rows that share one script line are split at their key words. Every B-roll card has its `duration` (body rows = the
   longest of the three variants; 239s of calls in all).
