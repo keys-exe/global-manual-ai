@@ -94,6 +94,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   sent shortened (the builder files hold the full lists). HK1 walk + lip-sync kept as versions but must be remade from the
   new HK1 image after its Confirm; HK1-TH frame superseded.
 
+  ~14:55: user confirmed all hook images v2, asked to redo the HK1 walk. Kling connector down to 3 credits → Kie AI
+  kling-3.0/video pro 5s (90 Kie credits; 237,913 left), same motion prompt (preflight PASS, generation 2) → HK1 video v3
+  (1072×1928) on the board as review.
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.
