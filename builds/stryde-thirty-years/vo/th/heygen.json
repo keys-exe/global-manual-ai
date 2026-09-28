@@ -129,5 +129,31 @@
    ]
   }
  },
- "avatar_v_segment_renders_superseded": true
+ "avatar_v_segment_renders_superseded": true,
+ "onego_propped": {
+  "avatar": "764d5cd1bc5b74f51ed0639353e85448",
+  "image_asset": "e884360d6bd743219055ccc2dd2fc42f",
+  "audio_asset": "9bf38e4bf9b541d9be008a1a1e2ff1d7",
+  "video_id": "22d3374e6bf08e105e7016feb1f21d6a",
+  "duration": 151.006,
+  "cuts": {
+   "HK1": [
+    0.0,
+    10.41
+   ],
+   "HK2": [
+    10.41,
+    16.86
+   ],
+   "HK3": [
+    16.86,
+    23.89
+   ],
+   "BODY": [
+    23.89,
+    151.031
+   ]
+  }
+ },
+ "earlier_th_cards_deleted": "2026-09-28 user: delete all TH"
 }

@@ -47,6 +47,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   The seven per-segment Avatar V renders sent earlier are superseded (not used). Standards updated the same day:
   Avatar V only + one go (§22U), Kling out of credits → Kie `kling-3.0/video` (§5, `kie.py kling`).
 
+  ~11:40: user "CHANGE THE TALKING HEADS IMAGE, DON'T USE THE SELFIE STYLE, DELETE ALL THE TH, ONE GO, H1+BODY H2+BODY
+  H3+BODY" → all TH cards deleted; new image TH-IMAGE (PROPPED, `voice/C1_TH_propped_v1.png`, job c3137e88…, confirmed by the
+  user); whole T2 take house-cut in one pass (`vo/variants/T2.ALL.mp3`, 151.0s, PASS); HeyGen avatar `764d5cd1…`, one Avatar V
+  render `22d3374e…` (151.0s); cut at `T2.ALL.mp3.cuts.json` (HK1 0–10.41, HK2 –16.86, HK3 –23.89, BODY –151.03) into
+  `vo/th2/TH-HK1+BODY.mp4` (137.6s), `TH-HK2+BODY.mp4` (133.6s), `TH-HK3+BODY.mp4` (134.2s), 4 Mb/s like the source.
+  Board: TH-HK1-BODY, TH-HK2-BODY, TH-HK3-BODY, TH-ONEGO (review). Standards §22U step 12 updated to this.
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.

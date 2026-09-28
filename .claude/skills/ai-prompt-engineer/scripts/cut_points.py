@@ -1,4 +1,7 @@
-"""Find HK1|HK2|HK3|BODY boundaries in one house-cut take by word timestamps (cut mid-gap)."""
+"""§22U step 12 — find the HK1|HK2|HK3|BODY boundaries in one house-cut take by word timestamps (cut mid-gap).
+
+Usage (run in the build's vo/ folder, next to HK1.lines.txt … BODY.lines.txt): cut_points.py TAKE.mp3 -> TAKE.mp3.cuts.json
+"""
 import json, re, sys, difflib
 from faster_whisper import WhisperModel
 SRC = sys.argv[1]
