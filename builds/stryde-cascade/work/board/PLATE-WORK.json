@@ -1,0 +1,42 @@
+{
+ "build": "stryde-cascade",
+ "beat": "PLATE-WORK",
+ "imageVersions": [
+  {
+   "v": 1,
+   "asset": "c6d2dabf5fb1ba3fc5cd79dc6af97ec9",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_083853_93e9c5c8-1ad3-44e0-8485-80f1f40f2cdd.png",
+   "model": "gpt_image_2_5 (sunburst)",
+   "connector": "Higgsfield",
+   "at": 1790584959000,
+   "note": "REGENERATE Q2: branded-looking drill"
+  },
+  {
+   "v": 2,
+   "asset": "44afe5ce87f2fcba90c6cd524346f373",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_084101_ba654d79-751c-4833-8780-a58cb4ef6e80.png",
+   "model": "nano_banana_2 (edit; requested nano_banana_pro)",
+   "connector": "Higgsfield",
+   "at": 1790584959000,
+   "note": "Edit: plain grey unbranded drill. USE"
+  }
+ ],
+ "stage": "locations",
+ "act": "Locations",
+ "title": "N's garage workshop (talking-head location)",
+ "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic — exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone. An empty single-car garage converted into a joiner's workshop, seen chest-high from about a metre and a half away, as a phone propped on a bench would see it: the back wall is a pegboard of hand tools hanging on hooks — tenon saws, a spirit level, squares, a claw hammer, chisels in a canvas roll — above a long scarred workbench. ANCHORS: offcut lengths of varnished oak and pale pine handrail standing on end in the corner to the right, a row of brass and chrome handrail brackets in a plastic tray on the bench, a battered yellow cordless drill on its charger, a fluorescent tube light switched off. A plain wooden stool stands in the middle of the frame in front of the bench, empty, where a person would sit. Sawdust in the corners of the grey painted concrete floor. THE LIGHT: one small side window to camera-left at about forty-five degrees, low afternoon daylight coming in across the stool and the bench, the right side of the garage falling a stop under into warm brown shadow, the window edge blowing to white, no overhead light on. Ambient palette warm brown timber and grey, the only cool note the daylight on the pegboard. Weight and support everywhere: body load visibly on one foot or braced hand, fabric hanging from contact points and creasing at joints, every object resting on something with a tight contact shadow, soft deforming under hard, liquids level with gravity, nothing floating. Capture must look like a phone camera file, not a lit scene: Smart HDR 5 tone-mapping lifting the shadows so they read flat rather than deep, highlight clipping at the brightest edge of frame, natural warm-neutral colour temperature straight out of the phone, subtle lens distortion and softening at the frame edges consistent with a 24mm phone lens. No colour grading, no retouched skin, no shaped or lit light on the subject. THIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part. \n\nNegative: no AI face, no plastic skin, no waxy skin, no over-smoothed skin, no perfect symmetrical face, no uncanny eyes, no fake teeth, no warped mouth, no robotic lip sync, no extra fingers, no fused fingers, no melted hands, no deformed limbs, no warped background, no CGI look, no fake commercial gloss, no over-saturated colors, no cartoon look, no unrealistic lighting, no floating camera, no stiff body language, no film grain, no vignette, no darkened frame edges, no darkened corners, no spotlight pool on the subject, no light falling off to black at the frame edge, no moody dark grade, no crushed blacks at the edges, no people, no product, no logos, no brand names on tools, no text, no posters, no clean showroom workshop",
+ "imageModel": "gpt_image_2_5 (sunburst) → edit nano_banana_2",
+ "imageConnector": "Higgsfield",
+ "imageStatus": "confirmed",
+ "status": "use",
+ "imageRegens": 1,
+ "imageFault": "Q2: yellow/black drill reads as a real brand's trade dress → edit to a plain grey drill",
+ "updatedAt": 1790584959298,
+ "imageAsset": "44afe5ce87f2fcba90c6cd524346f373",
+ "imageType": "image/png",
+ "imageRes": "1536×2752",
+ "imageAt": 1790584959000,
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_084101_ba654d79-751c-4833-8780-a58cb4ef6e80.png"
+}

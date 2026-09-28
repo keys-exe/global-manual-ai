@@ -1,6 +1,6 @@
 # global-manual-ai
 
-This repo runs under the **AI Prompt Engineer — Global Standards** (currently V7.64.4).
+This repo runs under the **AI Prompt Engineer — Global Standards** (currently V7.65.0).
 
 - Master file (the only standard): `standards/AI_Prompt_Engineer_Global_Standards.md`
 - Project skill that loads it: `.claude/skills/ai-prompt-engineer/SKILL.md` — the **Manual** run mode, always the default
@@ -21,7 +21,7 @@ Every generation goes on the build's **Generation Board**. **The board design is
 | `intake-1` (STRYDE · Identity Callout) | https://claude.ai/artifact/HVPuUcnNK1MUrCYnou9UnJ |
 | `stryde-identity` (STRYDE · Identity Callout, Manual — Drive `1tKlZFjNApDMf5U_q3qFPcRyGZLQsVcwE`) | Current https://claude.ai/artifact/GKZDjmZkh4wwm7RxtXj7Tp · Old https://claude.ai/artifact/463LLedeKaxFUa38SA4tEJ · Final https://claude.ai/artifact/9Y3ww3H8Bc3X6Xsp2JPVPW · Plan https://claude.ai/artifact/8BJ5uy6ejnwZdr9up5xjGk |
 | `sha0071` (SHA0071 · Energy) | Current https://claude.ai/artifact/NzYWYmtn5wKo97V2xfKCm1 · Old https://claude.ai/artifact/XDPYRn8jwpWvPFzmiMjS9g · Final https://claude.ai/artifact/XSByp23U2QCJR3uUtPHGFp · Plan https://claude.ai/artifact/LA58CqVnZs5rtQnyAeWh7S |
-| `stryde-cascade` (STRYDE · The Cascade) | Current https://claude.ai/artifact/QK6FwiCxWuZqoWWVoEx2Yd · Old https://claude.ai/artifact/6k3anNh4cNCY5BtSYZSbMf · Final https://claude.ai/artifact/Mv283Lgzqhs7qyM33Vmkwi · Plan https://claude.ai/artifact/EcHxSeHnRSbnUhwRqr1pwc |
+| `stryde-cascade` (STRYDE · The Cascade / Four Hundred Houses, Automatic — Drive `1nOldjHSuTw6koTHeChJ5BDvZ1MtNBfld`) | Current https://claude.ai/artifact/QK6FwiCxWuZqoWWVoEx2Yd · Old https://claude.ai/artifact/6k3anNh4cNCY5BtSYZSbMf · Final https://claude.ai/artifact/Mv283Lgzqhs7qyM33Vmkwi · Plan https://claude.ai/artifact/EcHxSeHnRSbnUhwRqr1pwc |
 | `six-weeks-ago` (STRYDE · Six Weeks Ago) | Current https://claude.ai/artifact/QD4ZSJz5eWVGnRAqDQDesA · Old https://claude.ai/artifact/Ah4PtHqj1ie3A93HFK2zKX · Final https://claude.ai/artifact/6kGwrA28dAEoKMkRYqx3oa · no Plan board yet (no plan docs) |
 | `stryde-lost-moments` (STRYDE · Lost Moments) | Current https://claude.ai/artifact/BahH1QuzHm4bQ9FAdxXfKj · Old https://claude.ai/artifact/PSFVrqe9KY7vY8u8F2QZs8 · Final https://claude.ai/artifact/3kXabsrrt7z92deKdgZF2d · no Plan board yet (plan docs stay on Current) |
 | `demo-ad` (example only, placeholder media) | https://claude.ai/artifact/YK4ReHoWRnqBuXQvCMdHLT |
@@ -32,7 +32,7 @@ Not split yet (their boards couldn't be read from this session on 2026-09-28): `
 
 **Final output tab (user, 2026-09-27):** the board has four tabs — Board, Manual run, Plan, **Final output**. Every finished video (one per hook variant: hook + the same body; a film: the finished film) goes on as its own `generations/<build-id>__FINAL-HK<n>` doc the turn it is exported: `stage: "edit"`, `final: true`, `beat: "FINAL-HK<n>"` (film: `FINAL`), `hook: <n>`, `title`, `line` (the hook's opening line), `madeFrom` (e.g. "HK1 + BODY, CapCut finish"), `videoAsset` / `videoParts` / `videoType`, `duration`, `videoRes`, `videoAt`, versions as usual. Manual: `status: review` — the final review is the user's; Automatic: `status: use`.
 
-Fix notes are picked up by the hourly Routine **Generation Board — hourly Fix check** (`trig_015ExzFatSnixWK2PEU5hVmP`, every hour at :32 UTC, fires into session_019jyz29Da9tQzhkoLnhKTSF). It skips cards with `demo: true`. While a Fix is being regenerated, the step's status is `generating`.
+Fix notes are picked up by the hourly Routines **Generation Board — hourly Fix check** (`trig_01JwbciTZag3vqU45rw5sf82`, :32 UTC, session_01H75hV8rxRkMbx5zhnK11Eo) and, for `stryde-cascade`, **Generation Board — hourly Fix check (stryde-cascade)** (`trig_01N8qwCCCFT9S55QL3zasmbh`, hourly, fires into session_01XyVmRtQqCbrULWxujVtka1). It skips cards with `demo: true`. While a Fix is being regenerated, the step's status is `generating`.
 
 **Four boards per build (user, 2026-09-28 — "this will help the storage limit"; each artifact has its own 1 GB file store).** All four come from the one template; only the `BOARD_ROLE` line and the `<title>` differ:
 - **Current** (`BOARD_ROLE = "current"`) — only the confirmed renders and the ones to check (plus Fixing/Generating). Tabs: Board, Manual run; Plan / Final output / Old versions show as links (↗) to the other boards.
