@@ -89,6 +89,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   up to the carriage clock, R3 v2 + P4), HK3-04 (Gail's forefinger pressing 2cm under the kneecap, high, R1 + P1).
   HK3-02: the "tablet / blister strip" wording failed twice on Higgsfield with no reason (likely a medication filter, no
   image made) → reworded to "everyday headache pills … foil card" (`HK3-02_try1.txt` keeps the first wording). On the board, To check.
+- **HK3-01 Fix (user): "SHOW PATIENT DOING SURGERY IN HER KNEES"** → v2: a knee operation in an NHS theatre (new incidental
+  location, no reference), the patient under drapes with only the iodine-prepped knee showing, two surgeons' gloved hands
+  at the joint, the incision hidden, no blood; table height, profile, past a soft drip stand. v1 prompt in `HK3-01_v1.txt`.
 - **Next:** the user checks the four HK3 images → HK3 clips on Kie (3s each) → the HK3 gate → Act 1.
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
