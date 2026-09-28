@@ -136,6 +136,21 @@ a.tab{text-decoration:none}
 .s-generating .frame .stripe{animation:pulse 1.4s ease-in-out infinite}
 @keyframes pulse{50%{opacity:.35}}
 @media (prefers-reduced-motion:reduce){.s-generating .frame .stripe{animation:none}.tile:hover .frame{transform:none}}
+/* generating / regenerating: the old render is hidden behind a dark moving gradient until the new one lands (user, 2026-09-28) */
+.genph{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:8px;background:#07080b;color:#e8ebf1;overflow:hidden;border-radius:inherit;text-align:center;padding:10px}
+.genph::before{content:"";position:absolute;inset:-40%;background:radial-gradient(40% 35% at 30% 30%,rgba(120,110,255,.55),transparent 70%),radial-gradient(35% 30% at 70% 65%,rgba(40,200,220,.40),transparent 70%),radial-gradient(30% 30% at 45% 80%,rgba(230,90,200,.30),transparent 70%);filter:blur(18px);animation:genmove 5s ease-in-out infinite alternate}
+.genph::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.07) 50%,transparent 70%);background-size:250% 100%;animation:genshine 2.2s linear infinite}
+.genph>*{position:relative;z-index:1}
+.genph b{font-size:12.5px;font-weight:600;letter-spacing:.02em}
+.genph small{font-size:10.5px;opacity:.7}
+.genph .gdot{width:18px;height:18px;border-radius:50%;border:2px solid rgba(255,255,255,.25);border-top-color:#fff;animation:genspin .9s linear infinite}
+@keyframes genmove{0%{transform:translate(-8%,-6%) rotate(0deg)}100%{transform:translate(8%,6%) rotate(25deg)}}
+@keyframes genshine{0%{background-position:150% 0}100%{background-position:-100% 0}}
+@keyframes genspin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.genph::before,.genph::after,.genph .gdot{animation:none}}
+.frame.gen>*:not(.genph):not(.stripe){z-index:1}
+.v-media .genph{position:relative;width:100%;height:100%;border-radius:12px}
+.v-th .genph{padding:0}
 
 /* side widgets */
 .balances{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
@@ -1091,10 +1106,11 @@ function tile(g){
   const st=g.status||"planned", stage=STAGES.find(s=>s.key===g.stage)||STAGES[6];
   const kind=g.kind||(isAudio(g)?"audio":String(g.videoType||"").startsWith("video/")?"video":stage.kind);
   const specs=[g.duration?`${g.duration}s`:"", g.regens?`R${g.regens}`:""].filter(Boolean);
-  const img=g.imageAsset?`<img class="bg" ${srcAttr(g,"image")} alt="" loading="lazy">`:"";
+  const pk=flow(g).find(k=>pending(g,k));
+  const img=!pk&&g.imageAsset?`<img class="bg" ${srcAttr(g,"image")} alt="" loading="lazy">`:"";
   const first=flow(g).find(k=>g[STEP[k].asset])||flow(g)[0];
   return `<div class="tile s-${st}">
-    <button class="frame${img?" has-img":""}" type="button" data-viewm="${esc(g.id)}" data-step="${first}" aria-label="View ${esc(g.beat||"")}">${img}<span class="stripe"></span>${ICONS[kind]||""}
+    <button class="frame${img?" has-img":""}${pk?" gen":""}" type="button" data-viewm="${esc(g.id)}" data-step="${pk||first}" aria-label="View ${esc(g.beat||"")}">${pk?genPanel(g,pk,true):img}<span class="stripe"></span>${ICONS[kind]||""}
       <div><div class="kind">${esc(kind)}</div><div class="beat">${esc(g.beat||"—")}</div></div>
       <div class="line">${esc(g.line||g.title||"")}</div>
       <div class="dur"><span>${esc(g.model?shortModel(g.model):"")}</span><span>${specs.join(" · ")}</span></div></button>
@@ -1216,6 +1232,9 @@ function flow(g){
   if(["hooks","talking","broll"].includes(g.stage)) return ["image","video"];
   return ["file"];
 }
+// A step being generated or regenerated shows the generating panel, never its old render (Current and Final boards).
+function pending(g,k){return BOARD_ROLE!=="old"&&["bad","gen"].includes(stepState(g,k))}
+function genPanel(g,k,small){const re=versionsOf(g,k).length>0||stepState(g,k)==="bad";return `<div class="genph" role="status" aria-label="${re?"Regenerating":"Generating"}"><span class="gdot" aria-hidden="true"></span>${small?"":`<b>${re?"Regenerating":"Generating"}…</b><small>The new ${STEP[k].label.toLowerCase()} appears here</small>`}</div>`}
 // Each step reads and writes its own fields on the generation document.
 const STEP = {
   image:{label:"Image", accept:"image/*", asset:"imageAsset", type:"imageType", prompt:"imagePrompt", model:"imageModel", defModel:"nano_banana_pro", st:"imageStatus", fault:"imageFault", regens:"imageRegens", ok:"Confirm image",
@@ -1326,8 +1345,8 @@ function mediaCard(g,k){
   const prompt=g[d.prompt]||"", model=g[d.model]||d.defModel;
   const busy=state.busy[g.id+":"+k];
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
-  const imgBehind=locked&&g.imageAsset?`<img class="ghost" ${srcAttr(g,"image")} alt="">`:"";
-  const media=asset?(isVid?`<video ${srcAttr(g,k)} muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">⤢</span>`:type.startsWith("image/")||k==="image"?`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
+  const imgBehind=locked&&g.imageAsset&&!pending(g,"image")?`<img class="ghost" ${srcAttr(g,"image")} alt="">`:"";
+  const media=pending(g,k)?genPanel(g,k):asset?(isVid?`<video ${srcAttr(g,k)} muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">⤢</span>`:type.startsWith("image/")||k==="image"?`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
     locked?`${imgBehind}<span class="lockmsg">🔒 Confirm the image first</span>`:
     `<span>${s==="bad"?"Regenerating…":prompt?"Waiting for render":"Waiting for prompt"}${ro?"":`<br><small>drop a file here to add it</small>`}</span>`;
   const limit=/kling/i.test(model)&&k!=="image"?2500:null;
@@ -1344,7 +1363,7 @@ function mediaCard(g,k){
     ["Generated",when(g[d.at])],
   ];
   if(k==="video"&&g.videoOut!=null&&(g.videoOutV==null||g.videoOutV===currentV(g,"video"))) specs.push(["Clean part",`0–${Number(g.videoOut).toFixed(1)}s`,"wide"]);
-  const canAct=!state.readOnly&&!locked&&s!=="gen";
+  const canAct=!state.readOnly&&!locked&&!pending(g,k);
   return `<article class="mc ${cls}" id="mc-${esc(g.id)}-${k}">
     <div class="mc-head">
       <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}${versionsOf(g,k).length>1?`<span class="vbadge" title="${versionsOf(g,k).length} versions">v${currentV(g,k)}</span>`:""}</span></div>
@@ -1535,7 +1554,7 @@ function renderViewer(){
   const src=!shown?"":isVid&&!type.startsWith("audio/")?`data-parts="${esc(vids.join(","))}" data-ptype="${esc(shown.type||"")}"`:srcFrom(shown.asset,shown.parts,shown.type);
   const locked=k==="video"&&stepState(g,"image")!=="ok";
   const isAud=type.startsWith("audio/");
-  const media=asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
+  const media=pending(g,k)&&!older?genPanel(g,k):asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
     moved?`<div class="v-empty"><div style="display:grid;gap:12px;justify-items:center">${I.box}<span>v${shown.v} is on the Old versions board, kept at full quality. Nothing was shrunk or deleted.</span>${archiveLink(shown)?`<a class="btn" href="${esc(archiveLink(shown))}" target="_blank" rel="noopener">Open in Old versions ↗</a>`:""}</div></div>`:
     `<div class="v-empty">${locked?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
   const s=stepState(g,k);
@@ -1543,7 +1562,7 @@ function renderViewer(){
   const grp=groupOf(g);
   // frame check: only for a video, on the version being shown
   const outV=cleanOut(g,k,shown);
-  const checkBar=asset&&isVid&&k!=="file"?`<div class="v-check">
+  const checkBar=asset&&isVid&&k!=="file"&&!(pending(g,k)&&!older)?`<div class="v-check">
       <div class="v-frames" id="vframes">${Array.from({length:8},(_,n)=>`<button type="button" class="v-fr" data-vseek="${n}" aria-label="Frame ${n+1} of 8"><canvas width="90" height="160"></canvas><span class="t">…</span></button>`).join("")}</div>
       <div class="v-ctl">
         <button class="btn small${v.rate===0.5?" on":""}" type="button" data-vrate="1" aria-pressed="${v.rate===0.5}">0.5x</button>
@@ -1575,7 +1594,7 @@ function renderViewer(){
     ["Original",x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">Open ↗</a>`:"—"],
   ];
   const prompt=g[d.prompt]||"";
-  const canAct=!state.readOnly&&!locked&&s!=="gen"&&!older&&!!asset;
+  const canAct=!state.readOnly&&!locked&&!pending(g,k)&&!older&&!!asset;
   const panel=`<aside class="v-panel" data-shown="${!!v.details}" aria-label="Details">
       <div class="ps"><span class="lbl">Status</span><div>${chip}${older?` <span class="pill s-planned">Viewing v${shown.v}</span>`:""}</div></div>
       ${g.line?`<div class="ps"><span class="lbl">Script line</span><div class="v-quote">“${esc(g.line)}”</div></div>`:""}
@@ -1599,7 +1618,7 @@ function renderViewer(){
   const thumbs=list.map(y=>{
     const hasImg=!!y.imageAsset, st=stepState(y,k);
     const col=st==="ok"?"var(--use)":st==="bad"||st==="gen"?"var(--regen)":st==="review"?"var(--review)":"#8a92a1";
-    const im=hasImg?`<img ${srcAttr(y,"image")} alt="" loading="lazy">`:`<span class="pl">${esc(y.beat||"")}</span>`;
+    const im=pending(y,"image")?genPanel(y,"image",true):hasImg?`<img ${srcAttr(y,"image")} alt="" loading="lazy">`:`<span class="pl">${esc(y.beat||"")}</span>`;
     return `<button type="button" class="v-th" data-vgo="${esc(y.id)}" aria-current="${y.id===g.id}" aria-label="${esc(y.beat||"")}" title="${esc((y.beat||"")+" · "+(y.title||""))}">${im}${k==="video"&&hasImg?`<span class="pl">▶</span>`:""}<span class="dot" style="--st:${col}"></span></button>`;
   }).join("");
   const old=document.getElementById("vfault"), draft=old?old.value:"";
@@ -1663,10 +1682,10 @@ function finalCard(x){
     <div class="media"><span>Appears here when the edit is done</span></div></article>`;
   const k="file", s=stepState(g,k), asset=g.videoAsset, type=g.videoType||"";
   const isVid=!type||type.startsWith("video/");
-  const fixing=state.faultOpen===g.id+":"+k, canAct=!state.readOnly&&s!=="gen";
+  const fixing=state.faultOpen===g.id+":"+k, canAct=!state.readOnly&&!pending(g,k);
   const cls=s==="ok"?"ok":s==="bad"||s==="gen"?"bad":s==="review"?"now":"";
   const chip=s==="gen"?`<span class="pill s-generating">${g.fault?"Re-cutting":"Cutting"}</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Not cut yet</span>`;
-  const media=asset?(isVid?`<video ${srcAttr(g,k)} controls playsinline preload="metadata" data-noauto="1"></video>`:`<span>${esc(type)}</span>`):`<span>${s==="bad"?"Re-cutting…":"Appears here when the edit is done"}</span>`;
+  const media=pending(g,k)?genPanel(g,k):asset?(isVid?`<video ${srcAttr(g,k)} controls playsinline preload="metadata" data-noauto="1"></video>`:`<span>${esc(type)}</span>`):`<span>${s==="bad"?"Re-cutting…":"Appears here when the edit is done"}</span>`;
   const specs=[
     ["Length",g.duration?secs(g.duration):"—"],
     ["Size",esc(g.videoRes||g.imageRes||"—")],
