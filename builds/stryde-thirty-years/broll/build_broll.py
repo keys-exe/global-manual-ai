@@ -333,7 +333,7 @@ B["BR-14b"] = (NBP, ["C1", "P2"], photo([
 # ── Act 4 ───────────────────────────────────────────────────────────────────────
 B["BR-15a"] = (NBP, ["C1", "TH", "P2", "front", "back"], photo([
     "A snapshot from a phone propped at eye level on the bench. He holds the strap up towards the lens in his right hand, front face and "
-    "wordmark square to the camera: " + dict(P.HELD_GRIPS)["bottom-edge pinch"] + ". Nothing rises above the shell's top edge. Behind "
+    "wordmark square to the camera: " + dict(P.HELD_GRIPS)["bottom-edge pinch"].split(" (")[0] + ". Nothing rises above the shell's top edge. Behind "
     "the strap his check shirt and navy apron are soft; his face is just out of frame at the top.",
     C1_HANDS, PROD + " " + RIGID + " " + P.SIZE_HELD,
     BENCH, angle("BR-15a", "the strap"), focus("the product and its wordmark"), light("WS-L", "the strap"), colour("WORKSHOP")],
