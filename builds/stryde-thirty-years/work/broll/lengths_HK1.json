@@ -1,0 +1,224 @@
+{
+  "master_s": 134.47,
+  "lead_s": 0.1,
+  "skip_s": 0.4,
+  "lengths": [
+    {
+      "beat": "MECH-01",
+      "cut_s": 10.6667,
+      "anchor": "Seventeen",
+      "on_screen_s": 6.25,
+      "skip_s": 0.4,
+      "call_s": 8
+    },
+    {
+      "beat": "BR-02",
+      "cut_s": 16.9167,
+      "anchor": "centimetres",
+      "on_screen_s": 2.96,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "MECH-02",
+      "cut_s": 19.875,
+      "anchor": "cartilage.",
+      "on_screen_s": 2.75,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-03a",
+      "cut_s": 25.125,
+      "anchor": "stairs",
+      "on_screen_s": 1.54,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-03b",
+      "cut_s": 26.6667,
+      "anchor": "chair",
+      "on_screen_s": 1.71,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-03c",
+      "cut_s": 28.375,
+      "anchor": "dog",
+      "on_screen_s": 2.08,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-05a",
+      "cut_s": 38.5833,
+      "anchor": "Sleeves.",
+      "on_screen_s": 3.5,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "BR-05b",
+      "cut_s": 42.0833,
+      "anchor": "sold",
+      "on_screen_s": 2.88,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "MECH-06",
+      "cut_s": 46.7083,
+      "anchor": "same",
+      "on_screen_s": 3.54,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "BR-07a",
+      "cut_s": 50.25,
+      "anchor": "sleeve",
+      "on_screen_s": 2.33,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-07b",
+      "cut_s": 55.2917,
+      "anchor": "sideways,",
+      "on_screen_s": 4.17,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "BR-08",
+      "cut_s": 59.4583,
+      "anchor": "drawer",
+      "on_screen_s": 2.88,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-10a",
+      "cut_s": 70.4167,
+      "anchor": "One,",
+      "on_screen_s": 0.88,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-10b",
+      "cut_s": 72.8333,
+      "anchor": "kneecap,",
+      "on_screen_s": 3.29,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "BR-11",
+      "cut_s": 76.125,
+      "anchor": "Two,",
+      "on_screen_s": 0.83,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-11",
+      "cut_s": 78.875,
+      "anchor": "one",
+      "on_screen_s": 3.5,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "BR-12",
+      "cut_s": 82.375,
+      "anchor": "Three,",
+      "on_screen_s": 1.25,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-12",
+      "cut_s": 83.625,
+      "anchor": "catches",
+      "on_screen_s": 5.5,
+      "skip_s": 0.4,
+      "call_s": 7
+    },
+    {
+      "beat": "BR-13",
+      "cut_s": 89.125,
+      "anchor": "Thirty",
+      "on_screen_s": 3.29,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "BR-14a",
+      "cut_s": 92.4167,
+      "anchor": "Most",
+      "on_screen_s": 2.17,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-14b",
+      "cut_s": 97.5,
+      "anchor": "stretch,",
+      "on_screen_s": 3.92,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "BR-15a",
+      "cut_s": 101.4167,
+      "anchor": "The",
+      "on_screen_s": 2.33,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-15b",
+      "cut_s": 105.5,
+      "anchor": "surgeons.",
+      "on_screen_s": 2.88,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-15c",
+      "cut_s": 108.375,
+      "anchor": "Ten",
+      "on_screen_s": 3.75,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "BR-16",
+      "cut_s": 117.5417,
+      "anchor": "stairs.",
+      "on_screen_s": 1.96,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-18a",
+      "cut_s": 125.4167,
+      "anchor": "Two",
+      "on_screen_s": 2.12,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-18b",
+      "cut_s": 127.5417,
+      "anchor": "Sixty",
+      "on_screen_s": 5.04,
+      "skip_s": 0.4,
+      "call_s": 6
+    }
+  ],
+  "failures": []
+}

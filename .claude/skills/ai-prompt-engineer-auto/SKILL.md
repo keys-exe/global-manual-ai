@@ -118,8 +118,8 @@ Per speaking character, in order. The master file's §22U table is the rule; thi
 | 10a | VO house cut | `python3 .claude/skills/ai-prompt-engineer/scripts/vo_trim.py <raw> --script <lines> --out <master>` — natural pauses (0.45s sentence, 0.20s comma), pace gate ≤ 210 wpm (hooks gated with their body) (§22U step 10a, E11A, V7.65.0). Too fast → re-voice slower; exit 2 otherwise → one re-trim, then HUMAN. Never on a §24I voice master |
 | — | **Voice-only builds** (all B-roll, narrated, Mode 4/5, AI Drama) | Stop here. The master is the VO, or the Seedance `audios_list` ingredient |
 | 11 | Avatar | HeyGen `create_asset_upload` → PUT → `complete_asset_upload` → `create_photo_avatar`, one per look |
-| 12 | Split | Cut the master at sentence ends (word timestamps) into one segment per on-screen talking-head beat |
-| 13 | Render | Upload each segment; `create_video_from_avatar` with `engine: {type: "avatar_v"}`, `audioAssetId`, `9:16`, `1080p`, `motionPrompt` = the beat's gestures, always, and no `expressiveness` (`avatar_v` rejects it). `motionPrompt` rejected (no animation reference) → Avatar IV + `expressiveness: "high"` + `motionPrompt`, logged. Then QA and E11 trim as normal |
+| 12 | One go | The whole take (all hooks + body, one TTS request, house-cut in one pass) stays one file — never split into per-beat segments first; `cut_points.py` gives the HK1|HK2|HK3|BODY boundaries for cutting the render afterwards (Pending Amendment 2026-09-28) |
+| 13 | Render | Upload the whole take once; `create_video_from_avatar` with `engine: {type: "avatar_v"}` — **Avatar V only, never Avatar IV or III** — `audioAssetId`, `9:16`, `1080p`, `motionPrompt` = the gestures where Avatar V accepts it, and no `expressiveness`. `motionPrompt` rejected (photo avatar with no digital twin) → render on Avatar V without it; the engine never changes. Then cut into HK1 + body, HK2 + body, HK3 + body (Pending Amendment 2026-09-28) |
 
 ## 6. Film voice masters (§24I) — Mode 4, Mode 5, AI Drama
 

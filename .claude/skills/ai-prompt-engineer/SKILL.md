@@ -112,7 +112,8 @@ Where a script line contradicts a product spec or visual standard, the render fo
 - `scripts/trim.py` — E11 trim pass for talking heads, both run modes (§22U step 14), **natural pace, never too fast**: keeps 0.35s after sentences, 0.2s after commas, ≤ 0.08s between words (`--sentence-pause`, `--comma-pause`, `--word-pause`); never on a §24I film voice master
 - `scripts/tts_api.py` — §22U step 9 by API: Eleven v4 with `speed` 0.7–1.0 (pace control the connector lacks), one call per take, reports wpm per take
 - `scripts/vo_trim.py` — VO trim for audio-only §22U masters/hooks, in the **house cut** (V7.65.0): natural pauses (0.45s sentence, 0.20s comma), pace gate ≤ 210 wpm (`--max-wpm`), words kept to −38 dB, inhales cut at phrase boundaries (`--script` lines); hook variants = raw hook + raw body trimmed in one pass; flags a take whose last word the TTS cut off
-- `scripts/kie.py` — Kie AI API (§5): `credit`, `upload` (public URL), `image` (fallback), `seedance` (720p, 9:16, ingredients, stated duration), `wait`
+- `scripts/kie.py` — Kie AI API (§5): `credit`, `upload` (public URL), `image` (fallback), `kling` (Kling 3.0 fallback when Kling is short or over its cap), `seedance` (720p, 9:16, ingredients, stated duration), `wait`
+- `scripts/cut_points.py` — §22U step 12: the HK1|HK2|HK3|BODY boundaries in one house-cut take (word timestamps, mid-gap), for cutting the one-go talking head into each hook + body
 - `scripts/fetch_drive.py` — §18B Drive intake: downloads the shared folder, sorts inspo / script / product sheet / images, extracts document text, measures the inspo
 - `scripts/fetch_loom.py` — §18C: downloads the Loom brief, transcribes it with timestamps, saves frames → `builds/<BUILD>/intake/loom/loom.md` (`LMxx` rows)
 - `scripts/fetch_inspo.py` — §18B/§42 Part 1: downloads INSPO links into `builds/<BUILD>/intake/` and measures duration, aspect, shots, cuts, silences; saves two frames per shot and per-second contact sheets for the Edit Grammar (§42 Part 3A). YouTube returns 403 from the cloud — ask for the file instead
@@ -186,7 +187,7 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 22B. Camera Behaviour Standard *(measured this cycle — one A/B pair)*
 - 22C. Audio Capture Standard *(new — unverified)*
 - 22D. Voice Identity Standard *(new — axis steerability unverified)*
-- 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Kling source (2+ takes) → ElevenLabs clone → Enhance → v4 TTS → HeyGen Avatar V)*
+- 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Kling source (2+ takes) → ElevenLabs clone → Enhance → v4 TTS → HeyGen Avatar V)* — **Avatar V only, never IV or III; the whole take rendered in one go, then cut into each hook + body** (Pending Amendments 2026-09-28)
 - 22V. Image Verdict — the agent judges every image *(new V7.59.0)*
 - 22W. Clip Verdict — the agent judges every video *(new V7.60.0)*
 - 22X. Video Preflight — right on the first generation *(new 2026-09-27)*

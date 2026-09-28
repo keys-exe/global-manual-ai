@@ -1,0 +1,35 @@
+{
+ "beat": "BR-12",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"br_12\",\"subject\":\"Exactly as in the start frame, unchanged in every respect. The strap keeps its exact shape, size and wordmark in every frame and moves only with the body it sits on; The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle.\",\"camera\":{\"movement\":\"Propped, not held. One slow, steady push-in towards her strapped right knee across the whole clip; no other camera move.\",\"framing\":\"KNEE HEIGHT from the front as in the start frame, ending closer on her strapped right knee.\"},\"motion\":\"She stands still facing the camera, both boots planted flat on the carpet the whole clip; her weight settles a little onto her right leg. The strap stays exactly where it is, just below the kneecap. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no step, no walking, no foot lifting, no fast zoom, no turning away, no hands on the knee, no face, no bending, no curling, no folding, no melting, no flipping of the product, no shell rotating on the leg, no strap sliding, no second strap, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no music, no voice, no text, no captions\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "broll/renders/BR-12_v3.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 4,
+ "risks": [
+  {
+   "risk": "she walks",
+   "prevented_by": "boots planted + no step"
+  },
+  {
+   "risk": "zoom too fast",
+   "prevented_by": "slow, steady, whole clip + no fast zoom"
+  },
+  {
+   "risk": "strap slides",
+   "prevented_by": "product lock"
+  }
+ ],
+ "fix_note": "slowly zoom in → CAMERA: v3's propped camera held still; now one slow steady push-in towards her strapped right knee across the whole clip, her feet still planted (generation 4, user go 'Both')",
+ "user_go": "2026-09-28: generation 4 approved by the user ('Both')"
+}

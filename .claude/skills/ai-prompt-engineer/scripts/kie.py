@@ -75,8 +75,15 @@ def create(model, inp):
 
 def wait(task_id, out=None, timeout=900):
     t0 = time.time()
+    print(json.dumps({"taskId": task_id, "created": True}), file=sys.stderr, flush=True)
     while True:
-        d = call("GET", f"{API}/jobs/recordInfo?taskId={task_id}")
+        try:
+            d = call("GET", f"{API}/jobs/recordInfo?taskId={task_id}")
+        except OSError as e:  # a dropped connection while polling must not lose the (already paid) task
+            if time.time() - t0 > timeout:
+                return {"taskId": task_id, "error": f"polling failed: {e}"}, 1
+            time.sleep(8)
+            continue
         if d.get("code") != 200:
             return {"taskId": task_id, "error": d.get("msg"), "code": d.get("code")}, 1
         data = d.get("data") or {}
@@ -93,7 +100,12 @@ def wait(task_id, out=None, timeout=900):
         res["urls"] = rj.get("resultUrls", [])
         if out and res["urls"]:
             Path(out).parent.mkdir(parents=True, exist_ok=True)
-            urllib.request.urlretrieve(res["urls"][0], out)
+            for i in range(4):
+                try:
+                    urllib.request.urlretrieve(res["urls"][0], out); break
+                except OSError:
+                    if i == 3: raise
+                    time.sleep(4 * (i + 1))
             res["saved"] = out
     return res, 0 if state == "success" else 2
 

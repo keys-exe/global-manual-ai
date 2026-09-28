@@ -1,0 +1,61 @@
+{
+ "src": "variants/T2.HK1.mp3",
+ "segments": {
+  "TH-01": {
+   "line": "Leave it there and the list of things you have stopped doing keeps growing.",
+   "heard": "leave it there and the list of things you have stopped doing keeps growing",
+   "match": 1.0,
+   "start": 30.86,
+   "end": 35.37,
+   "dur": 4.51
+  },
+  "TH-02": {
+   "line": "Here is what I have watched fail for thirty years.",
+   "heard": "here is what i have watched fail for thirty years",
+   "match": 1.0,
+   "start": 35.37,
+   "end": 38.84,
+   "dur": 3.47
+  },
+  "TH-03": {
+   "line": "that was not you failing. You were wrapping the wrong part of your leg.",
+   "heard": "that was not you failing you were wrapping the wrong part of your leg",
+   "match": 1.0,
+   "start": 62.06,
+   "end": 66.45,
+   "dur": 4.39
+  },
+  "TH-04": {
+   "line": "You do not wrap the joint. You go under it. Three things have to be right.",
+   "heard": "you do not wrap the joint you go under it three things have to be right",
+   "match": 1.0,
+   "start": 66.45,
+   "end": 71.63,
+   "dur": 5.18
+  },
+  "TH-05": {
+   "line": "Do not take my word for it. One knee only. Leave the other bare.",
+   "heard": "do not take my word for it one knee only leave the other bare",
+   "match": 1.0,
+   "start": 114.56,
+   "end": 119.12,
+   "dur": 4.56
+  },
+  "TH-06": {
+   "line": "Not because the arthritis is gone. Because the force is not landing where it hurts.",
+   "heard": "not because the arthritis is gone because the force is not landing where it hurts",
+   "match": 1.0,
+   "start": 122.18,
+   "end": 127.91,
+   "dur": 5.73
+  },
+  "TH-07": {
+   "line": "Go and do your stairs.",
+   "heard": "go and do your stairs",
+   "match": 1.0,
+   "start": 135.69,
+   "end": 137.256,
+   "dur": 1.57
+  }
+ }
+}
