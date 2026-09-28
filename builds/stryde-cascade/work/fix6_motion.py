@@ -4,7 +4,7 @@ import broll, calls
 from fix6 import FX as FX5
 LEN = {x["beat"]: x["call_s"] for x in json.load(open(broll.B / "edit/lengths_v2_HK1.json"))["lengths"]}
 GO = "user, 2026-09-28: pressed Fix on the card and said \"fix those\""
-SP = "/tmp/claude-0/-home-user-global-manual-ai/0821f8b4-c061-556b-9536-6cf806123315/scratchpad/cur11/generations/"
+SP = "/tmp/claude-0/-home-user-global-manual-ai/0821f8b4-c061-556b-9536-6cf806123315/scratchpad/cur12/generations/"
 SLIDE = "one travelling move on a still subject: slow slide along the bench"
 MF = {
  "A4-B1": ("an older man crouched in his hall lacing his walking boots, a black knee strap on his right knee",
