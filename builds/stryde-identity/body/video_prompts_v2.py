@@ -327,6 +327,22 @@ P["BR-24"] = photo("washing_line",
     "the sheet sways gently. She stays standing in the same spot the whole clip. " + ONE_TAKE,
     "no walking away, no objects appearing, no sheet flying away, " + ONE_TAKE_NEG)
 
+# ── fix round 8 (user, 2026-09-28) ─────────────────────────────────────────────
+P["BR-25"] = photo("down_the_stairs_brisk",
+    "Maureen halfway down the carpeted stairs, blue dress, the strap on her right knee, a cardigan in both hands.",
+    "Medium-wide from the foot of the stairs looking up, as in the start frame.",
+    "She walks down the stairs quickly in one smooth continuous rhythm, about two steps per second, never pausing: "
+    "one foot per step, alternating, never two feet on one step. Both hands stay on the cardigan, off the rail. "
+    + ONE_TAKE,
+    "no slow motion, no pausing, no two feet on one step, no hand on the rail, no going up, " + ONE_TAKE_NEG)
+P["BR-13"] = photo("climb_close_brisk",
+    "Maureen's legs walking up the carpeted stairs, the strap on her right knee, her empty hand by the rail.",
+    "Close, hips to feet, as in the start frame.",
+    "She walks up the stairs at a brisk normal pace in one smooth continuous rhythm, about two steps per second, never "
+    "pausing: one foot per step, alternating, never two feet on one step. Her right hand swings loosely and never "
+    "touches the rail. " + ONE_TAKE,
+    "no slow motion, no pausing, no two feet on one step, no hand on the rail, " + ONE_TAKE_NEG)
+
 FIX_NOTE = {  # user's Fix note -> where it was fixed (frame, prompt or motion, §22X)
  "MECH-01": "not the patellar tendon -> frame: front view, glow on the tendon itself",
  "MECH-10": "express the line more -> frame: bare bone on bone with spurs + red glow; motion: grind + flare",

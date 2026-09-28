@@ -188,3 +188,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   - All three are told to be one single continuous take with no cut. Via Kie Kling, job ids in
     `body/kie_kling_jobs4.txt`, on the board as To check.
   - BR-13's note said "going down", but its image is her climbing, so the clip stays going up (flagged to the user).
+- (2026-09-28, 15:10 UTC) **Fix round 8** (user: "fix those"):
+  - BR-13: "give me a new set up, new image and new video".
+    - New setup: a low side-on close shot, hips to feet, her free hand beside the untouched rail
+      (`body/fix8_prompts.py`, `body/BR-13_fix8.png`). The user asked for the image and video together, so the video
+      was made before the image's Confirm.
+    - The video is a brisk continuous climb, one foot per step, 15.1 MB, stored in 2 parts.
+  - BR-25: "should go down fast, not stopping every step" → brisk continuous rhythm, about two steps a second.
+  - Both via Kie Kling, job ids in `body/kie_kling_jobs5.txt`, on the board as To check.
