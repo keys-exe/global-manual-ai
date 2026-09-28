@@ -89,3 +89,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   `nano_banana_2` only. Kie GPT Image (`gpt-image-2-5-sunburst-image-to-image`) only for realistic (Mode 1 photo) images.**
   So MECH-01/02/07/10/11/15 v1 (made with Kie GPT Image before this rule) are the wrong route — kept on their cards as
   history, to be remade on Higgsfield (act map: NB2 for mechanism) when the user says go.
+- (2026-09-28, 09:20 UTC) **Body images redone (user: "re do the brolls").** All 27 new: MECH ×6 on Higgsfield
+  `nano_banana_2` (connector reports `nano_banana_flash`), BR ×21 on Kie GPT Image — on the board as To check (earlier
+  renders kept as older versions). Next: the user's Confirm/Fix per image, then Kling videos (simple text prompts,
+  E6 lengths re-run with Kling's 3–15s).
