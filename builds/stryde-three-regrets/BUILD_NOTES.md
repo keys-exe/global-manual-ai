@@ -44,7 +44,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **E6 done:** `work/e6_plans.py` → `edit/plan_HK<n>.json`, `assemble.py --lengths` → `edit/lengths_HK<n>.json`, no failures;
   rows that share one script line are split at their key words. Every B-roll card has its `duration` (body rows = the
   longest of the three variants; 239s of calls in all).
-- **Next:** step 6 — HK1 first (HK1-01…03: start images, then Kling), one hook at a time, each gated by the user.
+- **Talking heads confirmed (user, 2026-09-28): TH-HK1/2/3 → use.**
+- **Step 6, HK1 started (user: "go ahead with HK1"):** start images HK1-01 (Gail, bed edge, P1 + R1 sheet), HK1-02 (Ken, kerb
+  step-down, ground angle, P3 + R2 sheet), HK1-03 (X-ray past the brace, P6) on `nano_banana_2` 2k 9:16 (Higgsfield logs
+  `nano_banana_flash`), one render each; prompts in `hooks/HK1/*.txt` (§22T seeds, 2,754–3,016 chars). On the board, images To
+  check. Higgsfield 19,700.25 after.
+- **Next:** on the user's image Confirm → the three Kling clips (3 / 4 / 3s, §35 + §27G, `preflight.py`), then HK1 is the
+  user's gate before HK2.
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
 - **Next (old):** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
