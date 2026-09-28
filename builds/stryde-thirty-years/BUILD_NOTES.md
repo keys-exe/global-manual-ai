@@ -98,6 +98,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   kling-3.0/video pro 5s (90 Kie credits; 237,913 left), same motion prompt (preflight PASS, generation 2) → HK1 video v3
   (1072×1928) on the board as review.
 
+  ~15:02: user confirmed the new walk ("redo the Hook 1 walk with voice") → HeyGen lip-sync (precision, voice muxed in first)
+  → HK1 video v4 on the board as review. HK1-TH frame v2 = last frame of the new walk → review.
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.
