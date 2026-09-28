@@ -22,3 +22,4 @@ builds/**/work/*.png
 builds/*/cast/*.png
 builds/*/voice/*.png
 *.flac
+*.pyc
