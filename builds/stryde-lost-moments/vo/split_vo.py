@@ -41,7 +41,7 @@ for f in takes:
         for n in range(5):
             raw = f"full/{tid}.V{n+1}.raw.mp3"; tr = f"trim/VO_{tid}_V{n+1}.mp3"
             subprocess.run([FF, "-v", "error", "-y", "-i", f, "-ss", str(edges[n]), "-to", str(edges[n+1]), "-c:a", "libmp3lame", "-b:a", "192k", raw], check=True)
-            r = subprocess.run([sys.executable, VT, raw, "--out", tr, "--script", f"V{n+1}.lines.txt"], capture_output=True, text=True)
+            r = subprocess.run([sys.executable, VT, raw, "--out", tr, "--script", f"V{n+1}.lines.txt", "--max-wpm", "179"], capture_output=True, text=True)
             try: rep = json.loads(r.stdout)
             except Exception: rep = {"raw": r.stdout[-800:], "err": r.stderr[-800:]}
             w2, d2 = words_of(tr); _, dd = diff(parts[n], [x[0] for x in w2])
