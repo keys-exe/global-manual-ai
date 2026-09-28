@@ -8,7 +8,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Script (legacy `.dot`) read out word for word → `intake/script.txt`; per-variant `work/script_<A–E>.txt` and `.lines.txt`.
 - Product Sheet V7.49.32 (wordmark lock) came with the folder → now `products/stryde/`.
 - **Board:** https://claude.ai/artifact/BahH1QuzHm4bQ9FAdxXfKj
-- **Hourly Fix check:** `trig_01G3hn1iQuLVknpWifsZ4Hcp` (:47 UTC, bound to session_01H4ZN9xQDenS8RsLkEHVFiq, this board only).
+- **Hourly Fix check:** `trig_014cgd2iBMe2YGBTHFEEGFrY` (:47 UTC, bound to session_01QFtjcJsQcS8p957wEAS4kb, this board only; replaced `trig_01G3hn1iQuLVknpWifsZ4Hcp` on resume 2026-09-28 16:02 UTC).
 
 ## Sessions
 - session_01H4ZN9xQDenS8RsLkEHVFiq (2026-09-28 13:00–13:20 UTC): steps 1–3. Absorption, ledger, phrase inventory,
@@ -27,8 +27,17 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   uploaded to Higgsfield: `work/higgsfield_media.json`. D-10 revised: never both knees (SIDE_RULE 3) → worn right + second strap held.
   Higgsfield logs NB2 as nano_banana_flash and NBP as nano_banana_2 (routing labels; recorded on the cards).
 
+- 14:50–16:05 UTC (same session): narrator talking-head frame (N-VOICE-IMG) redone on the user's chat notes — v2 redo,
+  v3 rebuilt around the script (own stairs, strap worn), v4 kitchen, v5 facing the camera, v6 straight-on eye-level chest-up.
+  User asked for another option → N2-VOICE-IMG option B (Black British man, 66, south London), text-only person, To check.
+  Board: DOG-BRAMBLE, GK1-AMARA, GK2-TOBI confirmed by the user (15:12).
+
+- session_01QFtjcJsQcS8p957wEAS4kb (2026-09-28 16:00 UTC): resumed from the Drive link; merged `claude/vigilant-cannon-wre8v5`
+  into `claude/amazing-bohr-tsowwg`; hourly Fix check moved here.
+
 ## Where it stands
-- **Waiting on the user's check:** N-VOICE-IMG (narrator voice-source frame), DOG-BRAMBLE, GK1-AMARA, GK2-TOBI, A-HKa and A-HKb images. Plates: all 10 confirmed.
+- **Waiting on the user's check:** narrator talking-head frame — option A (N-VOICE-IMG v6) or option B (N2-VOICE-IMG v1); confirm one, the other is dropped. Hook 1 images A-HKa, A-HKb.
+- **Confirmed:** all 7 avatars, 10 plates, DOG-BRAMBLE, GK1-AMARA, GK2-TOBI.
 - **Next on the voice frame's Confirm:** §22U step 2 — two Kling takes (`voice/N_G1.kling.json`, `voice/N_G2.kling.json`,
   ≤2,500 chars, same image, VOICE-NARR first in delivery), then `voice_source.py` → clone source for the user to clone
   in ElevenLabs (name `LostMoments-Narrator`, or `Lost` if free).
