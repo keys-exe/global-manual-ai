@@ -63,9 +63,20 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   `work/actmap.py` (77 rows, `angles.py` PASS). Images on the board as `review` — their videos wait on the user's Confirm (§22X).
   Note: `vo/th_split.py` dedupes only consecutive duplicate lines — skip HK-0xb rows (they reuse HK-0xa times) if it's rerun.
 
+- 21:15–21:30 UTC: user "fix those and hook 2 should be not at home it should be at the mall". Board Fix on HK-01a video: "re do this make
+  the woman in gray at the back of the woman in green". §22X diagnosis: **frame fault**. The start image had the daughter on the hall floor
+  beside the newel, so Kling walked her up the outside of the banister. Fix at the source: HK-01a image v2 has the daughter already on the
+  flight, two steps directly behind her mother, inside the rail (job a9b2dd72). The video waits for the frame's Confirm. The next video is
+  gen 2, and it needs a fix_note.
+  Hook 2 moved to the mall. New location L-MALL, plate **P8-MALL** (Sunburst, job 8b47c878): an open terrazzo staircase beside the up
+  escalator. HK-01b v2: she climbs the mall stairs, passing two younger women riding the escalator (refs N + P8, job 0a335321).
+  HK-02b v2: side-on, the daughter one step behind with shopping bags (refs N + C2 + P8, job 0d4a602a). `actmap.py` rows updated,
+  `angles.py` PASS. The v1 images went to the Old board, and their files were deleted from Current. All new renders are on `review`.
+
 ## Where it stands
 - **Voice stage done** (no stop, Manual 2026-09-28): everything on the board To check. A confirmed different VO take → re-cut + regenerate the THs.
-- **Step 6 — hooks (the hook gate):** Hook 1 videos HK-01a/HK-02a To check; Hook 2 images HK-01b/HK-02b To check.
+- **Step 6 — hooks (the hook gate):** Hook 1: HK-02a video confirmed (use); HK-01a new frame v2 To check (then its video, gen 2).
+  Hook 2 (mall): P8-MALL plate + HK-01b/HK-02b v2 images To check → then their videos on Kie.
   Beat times from `vo/cut/VO_T1.beats.json`: HK-01a 0.00–3.84s, HK-02a 4.04–7.00s, TH-01 7.00–8.94s (Hook 2 uses the same times).
-- **Next on the user's Confirm:** Hook 2 videos (add HK-01b/HK-02b to `hooks/build_calls.py`, preflight, Kie) → both hooks approved → Acts 1–7 B-roll.
+- **Next on the user's Confirm:** HK-01a video gen 2 + Hook 2 videos (add to `hooks/build_calls.py`, preflight, Kie) → both hooks approved → Acts 1–7 B-roll.
   Finals: FINAL-HK1 (Hook 1 + body), FINAL-HK2 (Hook 2 + body) on the Final board.

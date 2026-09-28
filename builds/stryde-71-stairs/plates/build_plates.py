@@ -87,6 +87,14 @@ P["P7-CLINIC"] = dict(loc="L-CLINIC", body=[S("CAM-LOCK"),
   "a sharps container and glove boxes on a wall shelf, a framed anatomy poster with no readable labels. Speckled grey vinyl floor, pale blue-grey walls.",
   "Soft daylight through the half-open blind on the left-hand wall as the key, falling across the treatment table and fading towards the door, a flat overhead panel light on and doing little. The window side a stop brighter, highlights clipping on the blind slats, mild sensor noise in the far corner. The window faces west."] + TAIL("NEG-SCENE"))
 
+P["P8-MALL"] = dict(loc="L-MALL", body=[S("CAM-LOCK"),
+  "A single photograph inside an ordinary two-level American suburban shopping mall outside Atlanta on a Sunday afternoon, taken at head height from the ground-floor concourse at the foot of the central staircase: "
+  "a wide straight open staircase of about twenty pale terrazzo steps with brushed-steel handrails and glass balustrade panels rising to the upper-level walkway, "
+  "an up escalator running right beside it on its left, the upper walkway with a glass railing crossing the frame above, shopfronts on both levels with plain coloured panels where the signs are and no readable lettering, "
+  "a potted ficus in a planter at the foot of the stairs, a bench, pale speckled terrazzo floor. Empty for a moment.",
+  "Soft daylight from a long skylight in the atrium roof above the staircase as the key, falling on the steps and the escalator from above and slightly behind the camera, the shopfronts lit by their own warm-white downlights, "
+  "highlights on the steel handrails and the terrazzo clipping, the far end of the concourse a stop darker with mild sensor noise."] + TAIL("NEG-SCENE"))
+
 if __name__ == "__main__":
     out = {}
     for k, v in P.items():

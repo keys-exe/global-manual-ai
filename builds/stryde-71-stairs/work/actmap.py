@@ -45,11 +45,12 @@ SUN = ("open sky, afternoon sun", 5600)
 CLIN = ("exam-room window, blind half open, west wall", 5600)
 BED = ("bedroom window, east wall", 5600)
 LIV = ("living-room window, front wall", 5600)
+MALL = ("atrium skylight above the mall staircase", 5600)
 
 # ---------------- Hook 1 (Last Sunday, N-D4)
 A = "Hook 1"
 R("HK-01a", A, "I'm 71, and I take the stairs faster than women half my age.", "stairs", "hook — the result", "N + C2", "L-N-STAIRS", "N-D4",
-  "MEDIUM from the hall floor: N climbs her family-photo staircase briskly, hand only brushing the rail; C2 two steps behind, working to keep up",
+  "MEDIUM from the hall floor: N climbs her family-photo staircase briskly, hand only brushing the rail; C2 on the same flight two steps directly behind her, inside the rail, working to keep up (Fix 2026-09-28: C2 at the back of N)",
   "two steps up, N pulling ahead", "one step per second, brisk", "stairs: side-on, waist-up, camera still", "worn (under the dress)", "HIDDEN", "NB2",
   "low", TQB, "clean", "MEDIUM", "low = resolve; she's the strong one", "deep", "deep", *STAIR_PM, "afternoon", "after: Sunday sun", True, ledger="VN04")
 R("HK-02a", A, "Last Sunday, my daughter walked behind me the whole way up", "daughter", "hook — the witness", "C2", "L-N-STAIRS", "N-D4",
@@ -59,14 +60,14 @@ R("HK-02a", A, "Last Sunday, my daughter walked behind me the whole way up", "da
 TH("TH-01", A, "and said, \"Mama, when did that happen?\"")
 # ---------------- Hook 2 — same lines, different visuals (user 2026-09-28: "2 versions same script different visual")
 A = "Hook 2"
-R("HK-01b", A, "I'm 71, and I take the stairs faster than women half my age.", "stairs", "hook — the result (version B)", "N + one-offs", "L-CHURCH", "N-D4",
-  "MEDIUM from the sidewalk: N climbs the church's front steps briskly in her Sunday dress and hat, passing two younger women taking the steps slowly",
-  "two brisk steps up, drawing level with the two women", "one step per second, brisk", "stairs: camera at the bottom, subject 2 steps, camera still", "worn (under the dress)", "HIDDEN", "NB2",
-  "low", TQ, "clean", "MEDIUM", "low = resolve; she's the strong one", "deep", "deep", *SUN, "afternoon", "after: Sunday sun", True, ledger="VN08")
-R("HK-02b", A, "Last Sunday, my daughter walked behind me the whole way up", "daughter", "hook — the witness (version B)", "N + C2", "L-N-STAIRS", "N-D4",
-  "MEDIUM side-on through the balusters at eye level: N mid-flight climbing, C2 one step behind reaching for the rail, looking up at her mother",
+R("HK-01b", A, "I'm 71, and I take the stairs faster than women half my age.", "stairs", "hook — the result (version B, mall)", "N + one-offs", "L-MALL", "N-D4",
+  "MEDIUM from the concourse: N climbs the mall's open staircase briskly, drawing level with two younger women standing still on the up escalator beside the stairs",
+  "two brisk steps up, drawing level with the escalator riders", "one step per second, brisk", "stairs: camera at the bottom, subject 2 steps, camera still", "worn (under the dress)", "HIDDEN", "NB2",
+  "low", TQ, "clean", "MEDIUM", "low = resolve; she beats the escalator", "deep", "deep", *MALL, "afternoon", "after: Sunday sun", True, ledger="VN04")
+R("HK-02b", A, "Last Sunday, my daughter walked behind me the whole way up", "daughter", "hook — the witness (version B, mall)", "N + C2", "L-MALL", "N-D4",
+  "MEDIUM side-on from the concourse: N mid-flight on the mall staircase, C2 one step directly behind her with shopping bags, looking up at her mother",
   "one step up each, the daughter a beat behind", "one step per second", "stairs: side, waist-up, camera still", "worn (under the dress)", "HIDDEN", "NB2",
-  "eye", PR, "through", "MEDIUM", "through the balusters = we watch them climb, the daughter can't keep up", "deep", "deep", *STAIR_PM, "afternoon", "after: Sunday sun", True)
+  "eye", PR, "clean", "MEDIUM", "side-on = we watch the gap between them", "deep", "deep", *MALL, "afternoon", "after: Sunday sun", True)
 
 
 # ---------------- Act 1 — the problem (six weeks ago, N-D1)

@@ -19,6 +19,7 @@ Built against the **confirmed avatars** (user, 2026-09-28 "CONFIRMED ALL"): N-NA
 | L-RECEPTION | the wedding reception, line dance — VN05 | C1 | C1 / GENERIC | T-01a/b, T-02a/b | **PLATED** | P3-RECEPTION |
 | L-STORE | grocery checkout line — VN07 | C1 | N | L-02a | **PLATED** | P4-STORE |
 | L-CHURCH | church front steps — VN08 | C1 | N | C-02a | **PLATED** | P5-CHURCH |
+| L-MALL | two-level suburban mall, open terrazzo staircase beside the up escalator (Hook 2, user 2026-09-28) | — | N, C2 | HK-01b, HK-02b | **PLATED** | P8-MALL |
 | L-STREET | her street, sidewalk and front porch | C1 | N | L-01a/b, L-02b | **TRAVERSED** · landmark: her porch with two rocking chairs | P6-STREET |
 | L-CLINIC | clinic exam room (PT, shot, sports doctor, surgeon) | C4 (shared by four beats) | GENERIC | P-04a/c, M-01a, PR-02a, C-04a | **PLATED** | P7-CLINIC |
 | L-GOLF · L-TRACK · L-MONT-1…4 | golf course · running track · the four montage places | C4 | GENERIC | PR-03a, PR-04a, PR-01a–d | **INCIDENTAL**, written with the beat | — |
