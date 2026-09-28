@@ -14,13 +14,20 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - session_01MAYQjyE5N1bFxgJyHNqXtE (2026-09-28): intake, steps 1–3. 4 avatar sheets generated on Higgsfield
   (Sunburst, 25 credits, balance 19,937.5), all on the board as To check. Absorption on the Plan tab.
 
+## Run-mode overrides (user, 2026-09-28)
+- **"you will be the one to clone and create the talking heads"**: in this build the agent clones the voice over the API
+  (`elevenlabs_clone.py`, normally Automatic only, §22U step 6) and renders the talking heads through the HeyGen connector
+  (§22U steps 11–13). Every render still goes on the board as To check; the master listen (step 10) and the other Manual gates stay.
+
 ## Where it stands
 - **Avatars locked (user, 2026-09-28):** N v1, R1 Gail v1, R2 Ken v1, R3 Joan v2 (Fix: "friendly and natural").
 - **Steps 4–5 delivered (2026-09-28):** 7 plates on Higgsfield (P1 bedroom built against P0 hall) → board, To check.
   Act map 71 rows (10 hook shots, 6 TH, 9 MECH), `angles.py` PASS; wardrobe per story day; 71 planned cards on the board;
   docs/locations, docs/actmap, docs/wardrobe on the Plan tab. Higgsfield balance 19,787.25.
 - **Flags still unanswered:** F1 (built as recommended: TH in the body, hooks VO), F3, F5.
-- **Next:** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
+- **Voice:** N cloned as `Regrets` = `OxNH6H9HajjAxTXIVONJ` (clone source v2, G1+G2+G4, 38.09s; G3 failed the gate at −11.9%).
+  TTS: 4 takes of HK1+HK2+HK3+body in one eleven_v3 request (flow `O1rxzq3NBuTTEQlgN7gg`).
+- **Next (old):** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
   `voice_source.py`, user clones `Regrets` in the ElevenLabs app), then TTS HK1–3 + body in one request, house cut, master listen;
   then hooks one by one (step 6).
 - Cast and plate PNG originals are on the board (asset ids in the generation docs); the repo keeps JPEG copies.
