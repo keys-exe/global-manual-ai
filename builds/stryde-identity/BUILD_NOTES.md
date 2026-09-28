@@ -196,3 +196,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
     - The video is a brisk continuous climb, one foot per step, 15.1 MB, stored in 2 parts.
   - BR-25: "should go down fast, not stopping every step" → brisk continuous rhythm, about two steps a second.
   - Both via Kie Kling, job ids in `body/kie_kling_jobs5.txt`, on the board as To check.
+- (2026-09-28, 15:20 UTC) **Fix round 9** (user: "fix those"; new image and new video on both):
+  - BR-13 ("hands off the rail, never touch it"): she climbs on the wall side, far from the rail, both hands on a
+    folded towel. The video is a real-time brisk climb.
+  - BR-25 ("new image and video, go down fast"): caught mid-stride coming down fast. The video is a real-time fast
+    descent, about 2.5 steps a second, no pauses.
+  - Files: `body/fix9_prompts.py`, `body/<BEAT>_fix9.png`, job ids in `body/kie_kling_jobs6.txt`. On the board as To
+    check.
+  - Storage: 7 more replaced body images deleted (under the user's earlier "delete old B-roll images" OK).
+  - The user has removed the BR-16-END, BR-26a-END and VO-T1–T3 cards from the board.
