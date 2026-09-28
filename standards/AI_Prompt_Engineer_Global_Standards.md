@@ -5841,7 +5841,7 @@ When the user flags a problem with a specific shot:
 
 **Every update reaches the default branch (2026-09-28, user: "always put it in the repo the updates to everyone including my other account").** A change to the standards, a skill, a script or the board template is not done when it sits on a session branch: the same turn, open a pull request into the repo's default branch and merge it, so every account and every new session starts from it. Build files (`builds/<id>/`) follow the same path when the user wants them shared.
 
-**A system update never touches existing builds (2026-09-28, user: — "don't update the other works, this is an update to our system, we don't adjust them without permission to the team working on that").** A change to the standards, skills, scripts or template applies to new work only. Never re-cut, re-trim, re-render or re-publish anything in another build (its files, board or Drive) because the system changed: the team working on that build decides, and it is done only on their explicit ask.
+**A system update never touches existing builds (2026-09-28, user: "don't update the other works, this is an update to our system, we don't adjust them without permission to the team working on that").** A change to the standards, skills, scripts or template applies to new work only. Never re-cut, re-trim, re-render or re-publish anything in another build (its files, board or Drive) because the system changed: the team working on that build decides, and it is done only on their explicit ask.
 
 **Reissues run once.** Where multiple sections invalidate the same beats, hold the reissue until all of them are resolved and run **one pass, not two.**
 
