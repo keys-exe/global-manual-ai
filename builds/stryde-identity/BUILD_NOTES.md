@@ -289,3 +289,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - Mixed with `mix_scene.py` (room tone now optional for narration ads): voice master at 0 dB, music -18 dB and ducked
   ~8 dB under the voice, 0.5s fades; then a two-pass loudnorm → -14.3 LUFS, -1.0 dBTP. Picture untouched.
 - Final board: FINAL-HK1..3 v4 (63.88 / 64.17 / 64.17s), To check; music alone on card MUS-BGM (To check).
+
+## 2026-09-28 — Final v5: investigation-style BGM (user: "IT SHOULD BE ONE INVESTIGATIONS STYLE BGM")
+- New cue `final/music/INV.cue.json` (ElevenLabs Music, one track for all three ads): investigative documentary /
+  true-crime underscore — ticking pulse, low synth bass, muted plucked strings, soft piano stabs, one groove and key
+  throughout. `music.py check`: no vocals; its "CLICK" flags are the track's own stabs and ticks (musical hits, not splices);
+  the first 28s were ~12 dB under the rest → levelled to one steady bed with `final/music/level_bed.py` (3 s envelope,
+  gain toward -24 dBFS, boost ≤ +14 dB, gain smoothed over 2 s — no pumping): every 3 s within ~4 dB.
+- Mixed with `mix_scene.py` (music -9 dB → same bed level as v4, ducked ~8 dB under the voice) + two-pass loudnorm:
+  -14.3 / -14.3 / -14.4 LUFS, -1 dBTP. The upbeat v4 music (MUS-BGM) is replaced.
+- Final board: FINAL-HK1 and HK2 = v5, To check. **HK3 v5 not uploaded: the Final board's 1 GB asset store is full**
+  — waiting for the user's OK to delete old versions.

@@ -1,0 +1,11 @@
+{"scene": "STRYDE-BGM-INVESTIGATION", "length_s": 64.2,
+ "theme": ["investigative documentary underscore", "true-crime investigation style", "steady ticking clock-like pulse", "low pulsing synth bass", "muted plucked strings and soft piano stabs", "curious, suspenseful, uncovering the truth", "one consistent groove, key and instrumentation from start to end", "sits under a voice-over"],
+ "avoid": ["vocals", "horror", "jump scares", "big trailer hits", "EDM drop", "happy upbeat pop", "busy melody", "sudden silence"],
+ "tempo": "moderate",
+ "sections": [
+  {"name": "The question", "start": 0, "end": 4.8, "energy": "low", "styles": ["ticking pulse and low synth drone start at once", "intriguing"]},
+  {"name": "The investigation", "start": 4.8, "end": 24.4, "energy": "low", "styles": ["same ticking pulse", "muted plucked strings join", "tension quietly building"]},
+  {"name": "The evidence", "start": 24.4, "end": 49.4, "energy": "mid", "styles": ["same groove", "soft piano stabs and a low bass pulse", "the case coming together"]},
+  {"name": "The verdict", "start": 49.4, "end": 61.8, "energy": "high", "styles": ["same groove at its fullest", "confident resolve, the truth revealed", "still restrained under the voice"]},
+  {"name": "Case closed", "start": 61.8, "end": 64.2, "energy": "mid", "styles": ["the pulse keeps going to the very last second", "a final low note still ringing at the end"], "avoid": ["fade out", "silence", "early ending"]}
+ ]}
