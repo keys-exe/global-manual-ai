@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.31
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.32
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -23,6 +23,7 @@ product; it carries everything that step needs.
     the box and the offer ....... PACKAGE, OFFER, package_prompts() (V7.49.24)
     the cheap copy .............. FAKE_BASE, FAKE_ARCHETYPES, NEG_FAKE_HERO (V7.49.28)
     the back of the pad ......... PAD_BACK_SHOT (V7.49.28)
+    the name on the product ..... WORDMARK_LOCK, NEG_WORDMARK, wordmark_check() (V7.49.32)
     the V7.49.4 pattern fills ... HOLD_PC, HOLD_PROD, NEG_WARP_P, WEAR_*,
                                   REAR_VIEW_SPEC, DEMONSTRATION_TABLE, ...
                                   (content moved OUT of the Standards)
@@ -35,6 +36,7 @@ USE
     python3 stryde_product_sheet.py --refs       score the supplied product photos
     python3 stryde_product_sheet.py --worn-refs  print the three worn-reference T2I prompts
     python3 stryde_product_sheet.py --product-set print the five product-set T2I prompts
+    python3 stryde_product_sheet.py --wordmark f... is the stryde name on the product? (--no-name for back/side views)
 
     from stryde_product_sheet import PLACE_LOCK, fill
     fill(PLACE_LOCK, side="right")
@@ -69,7 +71,7 @@ WHAT THE CHECKER CANNOT SEE, and these stay human checks:
 It measures proportion only. A frame that passes here can still be wrong.
 """
 
-VERSION = "7.49.31"
+VERSION = "7.49.32"
 
 # --------------------------------------------------------------- slots
 
@@ -482,6 +484,25 @@ NEG_FAKE_HERO = (
 "background, no copy in a shop, no damage on the hero strap, no crack in the hero shell, no fraying on the "
 "hero band")
 
+# --- the name on the product (V7.49.32, user: "sometimes the product shows no
+# name") ----------------------------------------------------------------------
+# A STRYDE with no wordmark reads as the cheap copy (FAKE_BASE has none). Every
+# prompt whose shot shows the shell's front carries WORDMARK_LOCK; every I2V adds
+# NEG_WORDMARK; every render of such a shot passes wordmark_check() or is
+# REGENERATE Q2. Back, side and rear views never show the name.
+WORDMARK_LOCK = (
+"The lowercase grey stryde wordmark is printed on the shell's broad lower body, centred beneath the notch, "
+"in bold rounded lettering, sharp and readable -- always there, in every frame; the shell is never blank.")
+NEG_WORDMARK = (
+"no blank shell, no missing wordmark, no wordmark fading, no wordmark smearing, no misspelled wordmark, no "
+"extra letters, no wordmark on the band, no wordmark on the back of the shell")
+# Shots that show the shell's front (name expected) and those that never do.
+WORDMARK_EXPECTED = {
+    "front": True, "tq_left": True, "tq_right": True, "held": True, "macro": False, "side": False,
+    "back": False, "worn_front": True, "worn_bent": True, "worn_rear": False, "seating": True,
+    "package_closed": True, "package_open": True, "pad_back": False,
+}
+
 # --- the back of the pad (V7.49.28, user: "inside a silicone pad -- it should be
 # the back of the silicone pad") ------------------------------------------------
 # The script line about the pad is covered by the BACK of the shell -- the inner
@@ -860,11 +881,13 @@ def product_set_prompts(anchor=False):
         lead = PRODUCT_SET_ANCHOR + " " + lead
     out = {}
     for k, view in PRODUCT_SET_VIEWS.items():
+        name = (WORDMARK_LOCK,) if WORDMARK_EXPECTED.get({"front_view": "front", "back_view": "back",
+                                                           "side_view": "side"}.get(k, k), False) else ()
         out[k] = " ".join((PRODUCT_SET_STUDIO, lead + " a single unit.", PRODUCT_SET_RING, view, PRODUCT_SET_GEOM,
-                           SIZE_OBJECT))
+                           SIZE_OBJECT) + name)
     out["held"] = " ".join((PRODUCT_SET_HELD, lead + " a single unit.", PRODUCT_SET_RING.replace(
         "standing open as a round ring as if around an invisible leg", "hanging as a closed loop"),
-        PRODUCT_SET_GEOM, SIZE_HELD, INNER_PAD, CAP_A, BODY_WHOLE))
+        PRODUCT_SET_GEOM, SIZE_HELD, WORDMARK_LOCK, INNER_PAD, CAP_A, BODY_WHOLE))
     return out
 
 
@@ -881,6 +904,8 @@ def worn_ref_prompts(side="right"):
     out = {}
     for k, scene in WORN_REF_SCENES.items():
         extra = (WORN_REF_SHAPE,) if k == "bent" else ()
+        if k in ("front", "bent"):
+            extra = extra + (WORDMARK_LOCK,)
         out[k] = " ".join((scene, lead + worn, body[k]) + extra + (FIT_SNUG, SIZE_WORN, LEG_SKIN, CAP_A, BODY_WHOLE))
     return out
 
@@ -1101,6 +1126,7 @@ S = {
     "NEG-ADJUST": NEG_ADJUST,
     # V7.49.23
     "NEG-HELD-P": NEG_HELD_P, "NEG-OBSERVED": NEG_OBSERVED,
+    "WORDMARK-LOCK": WORDMARK_LOCK, "NEG-WORDMARK": NEG_WORDMARK,
     "FAKE-BASE": FAKE_BASE, "NEG-FAKE-HERO": NEG_FAKE_HERO, "PAD-BACK-SHOT": PAD_BACK_SHOT,
     "PACKAGE-LOCK": PACKAGE_LOCK, "NEG-PACKAGE": NEG_PACKAGE,
 }
@@ -1204,6 +1230,11 @@ RULINGS = {
     "anatomy_look":
         "LOCKED V7.49.31 (user): ANAT-A full stack for the point and protection beats, ANAT-B ghost "
         "limb for the condition beats. Every ANAT-A beat adds ANAT_A_POINT_TIGHT.",
+    "name_always_on_front":
+        "LOCKED V7.49.32 (user: 'sometimes the product shows no name'). Any shot showing the shell's "
+        "front carries WORDMARK_LOCK (+ NEG_WORDMARK on I2V) and its render must pass "
+        "wordmark_check(); a nameless STRYDE is REGENERATE Q2 -- it reads as the fake. Back, side "
+        "and rear shots must NOT show a name.",
     "held_not_locked":
         "LOCKED V7.49.23 (user): the held pose is NOT locked -- there are many right ways to hold it. "
         "Pick from HELD_GRIPS per beat and vary them across a build; product_held.jpg is one example "
@@ -1427,6 +1458,8 @@ CHECKLIST = [
     "chrome slides catching hard specular, inset flush into the shell ends",
     "band a coarse knit with a visible textured weave, two black keeper loops on its outer face -- and narrower than a fake's wide thick strap",
     "wordmark readable, on the lower body, centred beneath the notch",
+    "wordmark PRESENT on every view that shows the shell's front -- run --wordmark; a blank "
+    "shell is REGENERATE (it reads as the fake); none on back, side or rear views",
     "correct declared side",
     "product at the site, not on the landmark",
     "no second unit unless a sanctioned pair-pack beat",
@@ -1933,6 +1966,30 @@ def verify(verbose=False):
         if clause not in NEG_FAKE_HERO:
             fails.append("NEG_FAKE_HERO missing: %s" % clause)
 
+    # 8h the name on the product (V7.49.32)
+    for k, v in worn_ref_prompts("right").items():
+        if (k in ("front", "bent")) != (WORDMARK_LOCK in v):
+            fails.append("worn ref %s: WORDMARK_LOCK must be on front/bent only" % k)
+    ps2 = product_set_prompts()
+    for k in ("tq_left", "tq_right", "front_view", "held"):
+        if WORDMARK_LOCK not in ps2[k]:
+            fails.append("product set %s missing WORDMARK_LOCK" % k)
+    for k in ("back_view", "side_view"):
+        if WORDMARK_LOCK in ps2[k]:
+            fails.append("product set %s must not ask for a wordmark" % k)
+    try:
+        import cv2 as _c, numpy as _n  # noqa: F401
+        have_cv = True
+    except ImportError:
+        have_cv = False
+    if have_cv:
+        here2 = os.path.dirname(os.path.abspath(__file__))
+        for f, want in (("stryde_refs/front.webp", True), ("stryde_refs/worn_front.jpg", True),
+                        ("stryde_refs/worn_bent.jpg", True), ("stryde_refs/back.webp", False),
+                        ("stryde_refs/worn_rear.jpg", False), ("stryde_refs/product_side.jpg", False)):
+            if wordmark_check(os.path.join(here2, f))["present"] != want:
+                fails.append("wordmark_check wrong on %s (want %s)" % (f, want))
+
     # 9 one mechanism claim, and it is not the retired one
     if MECHANISM_CLAIM != "protection":
         fails.append("mechanism claim is not the locked one")
@@ -2217,6 +2274,16 @@ The mechanism beats use the Standards' anatomical register (§12A-1): knee · qu
 | The conditions — bone on bone, worn cartilage, meniscus | **ANAT-B ghost limb** |
 
 Samples of all four looks on this knee (A full stack, B ghost limb, C silhouette, D physical model) are in `stryde_refs/anatomy_samples/` (`ANATOMY_SAMPLES`) — for choosing only, never attached as references.
+
+---
+
+## 18. The name on the product *(V7.49.32 — user: "sometimes the product shows no name")*
+
+A STRYDE with no wordmark reads as the cheap copy, which is defined by having none. So:
+
+1. **Prompts ask for it.** Every shot that shows the shell's front carries `WORDMARK-LOCK` (the grey lowercase stryde wordmark on the lower body, centred beneath the notch, always there, never a blank shell); every video adds `NEG-WORDMARK`. Back, side and rear shots never ask for it.
+2. **Every render is checked:** `python3 stryde_product_sheet.py --wordmark <frames>` — `--no-name` for back, side and rear. A front view with no name is **REGENERATE Q2**; a name on a back view is too. For video, run it on the contact-sheet frames (§22W).
+3. **How it checks:** a letter-shape detector (grey letters on smooth dark shell) and a match against the real wordmark cut from `front.webp`. Measured V7.49.32: all 11 reference frames with the name found, all 10 without it clear, and both frames with the name painted out failed as they should. The self-test re-runs six of these every time.
 '''
 
 
@@ -2321,6 +2388,129 @@ def _wordmark(gray, shell):
         if best is None or a > best[0]:
             best = (a, cen[i])
     return None if best is None else best[1]
+
+
+# ---------------------------------------------------------- wordmark check
+# V7.49.32. Two detectors, either one counts:
+#   1. letter shapes -- a row of 4-8 grey letter blobs on a smooth dark surface
+#      (tophat contrast + an isolation band that keeps the knit texture out);
+#   2. the real wordmark -- the 'stryde' lettering cut from front.webp, matched at
+#      any size 2.5-10% of frame height and +/-25 degrees: >= 0.70, or >= 0.60
+#      where the match sits on dark shell (surround median grey < 110).
+# Measured V7.49.32 on the reference set: 11/11 frames with the name found,
+# 10/10 frames without it clear (back, side, macro, rear, anatomy samples).
+WORDMARK_TEMPLATE_SRC = ("front.webp", (488, 584, 713, 668))   # box at 1200 px on the long side
+_WM_T = None
+
+
+def _wm_prep(img):
+    H, W = img.shape[:2]
+    s = 1200.0 / max(H, W)
+    img = cv2.resize(img, (int(W * s), int(H * s)))
+    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+    g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    k = max(9, int(img.shape[0] * 0.03)) | 1
+    th = cv2.morphologyEx(g, cv2.MORPH_TOPHAT, cv2.getStructuringElement(cv2.MORPH_RECT, (k, k)))
+    return img, g, hsv, th
+
+
+def _wm_letters(g, hsv, th):
+    H = g.shape[0]
+    bg = cv2.medianBlur(g, max(21, int(H * 0.05)) | 1)
+    cand = ((th > 22) & (hsv[:, :, 1] < 70) & (g < 215) & (bg < 125)).astype(np.uint8)
+    n, lab, st, cen = cv2.connectedComponentsWithStats(cand, 8)
+    comps = []
+    for i in range(1, n):
+        x, y, w, h, a = st[i]
+        if h < H * 0.008 or h > H * 0.07 or a < 10 or w > h * 2.5 or h > w * 6:
+            continue
+        if not 0.12 <= a / float(w * h) <= 0.9:
+            continue
+        comps.append((x, y, w, h, cen[i]))
+    comps.sort(key=lambda c: c[0])
+    used = [False] * len(comps)
+    for i, c in enumerate(comps):
+        if used[i]:
+            continue
+        grp = [c]
+        used[i] = True
+        for j in range(i + 1, len(comps)):
+            if used[j]:
+                continue
+            d, last = comps[j], grp[-1]
+            hm = float(np.median([q[3] for q in grp]))
+            cy = np.mean([q[4][1] for q in grp])
+            if abs(d[4][1] - cy) < 0.7 * hm and d[0] - (last[0] + last[2]) < 1.3 * hm and 0.45 < d[3] / hm < 2.2:
+                grp.append(d)
+                used[j] = True
+        if 4 <= len(grp) <= 8:
+            x0 = min(q[0] for q in grp); x1 = max(q[0] + q[2] for q in grp)
+            y0 = min(q[1] for q in grp); y1 = max(q[1] + q[3] for q in grp)
+            if not 1.8 < (x1 - x0) / max(1, y1 - y0) < 10:
+                continue
+            m = max(3, int(0.6 * (y1 - y0)))
+            above = cand[max(0, y0 - m):y0, x0:x1]
+            below = cand[y1:min(H, y1 + m), x0:x1]
+            inside = cand[y0:y1, x0:x1]
+            ring = (above.sum() + below.sum()) / float(max(1, above.size + below.size))
+            dens = inside.sum() / float(max(1, inside.size))
+            if dens > 0 and ring / dens < 0.35:
+                return True
+    return False
+
+
+def _wm_template():
+    global _WM_T
+    if _WM_T is None:
+        f, (x0, y0, x1, y1) = WORDMARK_TEMPLATE_SRC
+        img = cv2.imread(os.path.join(os.path.dirname(os.path.abspath(__file__)), PRODUCT_PHOTOS_DIR, f))
+        _, g, hsv, th = _wm_prep(img)
+        t = ((th > 22) & (hsv[:, :, 1] < 70) & (g < 215)).astype(np.float32)[y0:y1, x0:x1]
+        ys, xs = np.nonzero(t)
+        _WM_T = cv2.GaussianBlur(t[ys.min():ys.max() + 1, xs.min():xs.max() + 1], (3, 3), 0)
+    return _WM_T
+
+
+def _wm_match(g, hsv, th):
+    T = _wm_template()
+    H, W = g.shape[:2]
+    m = cv2.GaussianBlur(((th > 22) & (hsv[:, :, 1] < 70) & (g < 215)).astype(np.float32), (3, 3), 0)
+    best, where = -1.0, None
+    for hf in np.linspace(0.025, 0.10, 16):
+        h = int(H * hf); w = int(T.shape[1] * h / float(T.shape[0]))
+        if w < 10 or w >= W or h >= H:
+            continue
+        t0 = cv2.resize(T, (w, h))
+        for ang in (-25, -15, -8, 0, 8, 15, 25):
+            M = cv2.getRotationMatrix2D((w / 2.0, h / 2.0), ang, 1.0)
+            c, s_ = abs(M[0, 0]), abs(M[0, 1])
+            nw, nh = int(h * s_ + w * c) + 2, int(h * c + w * s_) + 2
+            M[0, 2] += nw / 2.0 - w / 2.0; M[1, 2] += nh / 2.0 - h / 2.0
+            t = cv2.warpAffine(t0, M, (nw, nh))
+            if t.shape[0] >= H or t.shape[1] >= W or t.std() < 1e-3:
+                continue
+            _, mx, _, loc = cv2.minMaxLoc(cv2.matchTemplate(m, t, cv2.TM_CCOEFF_NORMED))
+            if mx > best:
+                best, where = mx, (loc, h, w)
+    surround = 255
+    if where:
+        (x, y), h, w = where
+        surround = int(np.median(g[max(0, y - h):min(H, y + 2 * h), max(0, x - h):min(W, x + w + h)]))
+    return best, surround
+
+
+def wordmark_check(path):
+    """Is the stryde name on the product in this frame? Returns a dict with 'present'."""
+    _lazy()
+    img = cv2.imread(path)
+    if img is None:
+        return {"present": None, "error": "unreadable"}
+    _, g, hsv, th = _wm_prep(img)
+    letters = _wm_letters(g, hsv, th)
+    score, surround = _wm_match(g, hsv, th)
+    present = letters or score >= 0.70 or (score >= 0.60 and surround < 110)
+    return {"present": bool(present), "letters": bool(letters), "match": round(float(score), 3),
+            "surround": surround}
 
 
 # --------------------------------------------------------------- measure
@@ -2537,6 +2727,24 @@ if __name__ == "__main__":
             print(v)
             print()
         sys.exit(0)
+
+    if a[0] == "--wordmark":
+        want = "--no-name" not in a
+        paths = [x for x in a[1:] if not x.startswith("--")]
+        if not paths:
+            sys.exit("no frames given")
+        bad = 0
+        for p_ in paths:
+            r = wordmark_check(p_)
+            ok = r.get("present") == want
+            bad += not ok
+            print("  %s  %-40s name %s (letters %s, match %s)" % (
+                " ok " if ok else "FAIL", os.path.basename(p_), "FOUND" if r.get("present") else "NONE",
+                r.get("letters"), r.get("match")))
+        if bad:
+            print("\n  %d frame(s) failed: %s -- REGENERATE Q2" % (
+                bad, "a STRYDE with no name reads as the fake" if want else "a name on a back/side view"))
+        sys.exit(1 if bad else 0)
 
     if a[0] == "--product-set":
         for k, v in product_set_prompts().items():
