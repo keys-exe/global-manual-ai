@@ -8,8 +8,8 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_205936_e055c1e8-6a34-4bca-ae30-bf889d7b7c50.png",
- "start_approved": false,
- "approved_by": "user: CONFIRM HOOK 3 (2026-09-28)",
+ "start_approved": true,
+ "approved_by": "user: CONFIRM HOOK 3 (2026-09-28, v3 frame)",
  "pinned": false,
  "end_image": null,
  "end_approved": false,
@@ -31,5 +31,5 @@
   }
  ],
  "fix_note": "Fault in the frame (user Fix: HAND ON THE LAP AND STAND CONFIDENTLY): hands added on his lap in frame v3 \u2192 same confident stand-up motion; 3rd video generation \u2192 needs the user's go (\u00a722X)",
- "user_go": null
+ "user_go": "user: CONFIRM HOOK 3 (2026-09-28) \u2014 go for the 3rd generation"
 }
