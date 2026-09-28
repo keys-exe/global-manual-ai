@@ -218,3 +218,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - (2026-09-28, 15:45 UTC) **BR-25 image v10** (user: "she should be at the top of the stairs going down"): a full-body
   shot from the hall looking up the whole flight, with her at the top just stepping down, hands on the cardigan, off the
   rail (`body/fix13_prompts.py`, `body/BR-25_fix13.png`). On the board as To check; the video waits for the user's call.
+- (2026-09-28, 15:50 UTC) **BR-25 video v7** from the user-confirmed v10 image (top of the stairs, full body): a fast
+  real-time descent, 5s so she has time to come down the flight. Kie Kling, job id in `body/kie_kling_jobs9.txt`.
+  On the board as To check.
