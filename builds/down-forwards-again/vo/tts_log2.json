@@ -1,0 +1,23 @@
+[
+ {
+  "take": "T1",
+  "bytes": 4366045,
+  "request_id": "9YIXeRTsx8aoqNw1WZl5"
+ },
+ {
+  "take": "T2",
+  "bytes": 4314009,
+  "request_id": "Y885UacdpIrJyP9x3FGY"
+ },
+ {
+  "take": "T3",
+  "bytes": 4312129,
+  "request_id": "MBPWMiS7tQG4tuCBDJ2O"
+ },
+ {
+  "take": "T4",
+  "bytes": 4327175,
+  "request_id": "2Wthj7RumXjawFdOYMJJ",
+  "note": "retry after a dropped connection"
+ }
+]

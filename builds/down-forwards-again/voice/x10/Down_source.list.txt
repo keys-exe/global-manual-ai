@@ -1,0 +1,3 @@
+file '/home/user/global-manual-ai/builds/down-forwards-again/voice/x10/Down_source1.x1.0.wav'
+file '/home/user/global-manual-ai/builds/down-forwards-again/voice/x10/Down_source2.x1.0.wav'
+file '/home/user/global-manual-ai/builds/down-forwards-again/voice/x10/Down_source3.x1.0.wav'

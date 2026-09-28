@@ -42,8 +42,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Applied the user's 2026-09-28 corrections from the stryde-thirty-years branch (Avatar V only, one go) — that branch's §22U is not merged here yet.
   See vo/VO.md.
 
+- ~22:00 UTC: user "the vo feels so fast the trims i dont like that" + "its trimmed even though she is not done talking".
+  Measured: raw takes speak ~235 wpm speech-only (clone learned from the §22U ×1.2 source); the house cut left parts ending at −29…−38 dB
+  (last word clipped); the HK3/body split clipped HK3 too. eleven_v4 ignores voice_settings.speed (0.85 and 0.7 both 12.32s on HK1).
+  Fix in progress: re-cloned from the SAME takes at ×1.0 → **Down-Doctor** `a0lv6tcMVlFOFYq3VUob` (HK1 167 wpm vs 181); 4 new takes `vo/full2/`
+  (T1, T4 verbatim by transcript; T2, T3 contractions); split with cuts snapped to the quietest point in each gap (`split_vo2.py`, `split2.json`).
+  Planned cut: `trim.py` natural pace (0.35s sentence / 0.2s comma kept) with `--post 0.4` so every part ends in silence (test: −87 dB), not the house cut.
+  **PAUSED on the user's word: "ill make a pr wait for it".** The HeyGen render `c48a6bc2…` (fast T1.ALL audio) is superseded once the new VO is cut.
+
 ## Where it stands
-- **Voice:** cloned; 4 VO takes + whole-take cut on the board (To check); working take T1. Talking heads rendering (one go).
-- **Next:** download the render → cut into TH-HK1+BODY / TH-HK2+BODY / TH-HK3+BODY at vo/cut/T1.ALL.mp3.cuts.json → trim.py (natural pace) → board.
-  Then hooks one by one (step 6).
-- **Open:** pace — the house-cut body runs ≈255 wpm (F9, natural-pace target ~155); flags F2, F4, F5, F8 (left), F9.
+- **Waiting on the user's PR.** Then: natural-pace cut of the new takes → board → HeyGen one-go render from the new whole take → cut per hook → board.
