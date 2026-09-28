@@ -1,22 +1,32 @@
 {
   "audio": [
-    "vo/master/HK1.wav",
+    "vo/master/HK3.wav",
     "vo/master/BODY.wav"
   ],
   "script": [
-    "vo/HK1.lines.txt",
+    "vo/HK3.lines.txt",
     "vo/BODY.lines.txt"
   ],
   "base": [
-    "th/TH-HK1.pad.mp4",
-    "th/TH-BODY.pad.mp4"
+    "th/TH-HK3.mp4",
+    "th/TH-BODY.mp4"
   ],
   "broll": [
     {
-      "beat": "HK1-B1",
-      "clip": "renders/HK1-B1.mp4",
-      "phrase": "It is a weight problem, and the weight has to go somewhere.",
-      "key": "weight",
+      "beat": "HK3-B1",
+      "clip": "renders/HK3-B1.mp4",
+      "phrase": "When I am asked to move a bed into a front room,",
+      "key": "bed",
+      "layout": {
+        "type": "full"
+      },
+      "max": 6
+    },
+    {
+      "beat": "HK3-B2",
+      "clip": "renders/HK3-B2.mp4",
+      "phrase": "the knee has usually been bad for about six years.",
+      "key": "knee",
       "layout": {
         "type": "split",
         "broll_pos": "bottom",
@@ -25,21 +35,10 @@
       "max": 6
     },
     {
-      "beat": "HK1-B2",
-      "clip": "renders/HK1-B2.mp4",
-      "phrase": "I fit stair rails for a living.",
-      "key": "I",
-      "layout": {
-        "type": "full"
-      },
-      "max": 6,
-      "key_orig": "rails"
-    },
-    {
-      "beat": "HK1-B3",
-      "clip": "renders/HK1-B3.mp4",
-      "phrase": "I have watched where it goes.",
-      "key": "watched",
+      "beat": "HK3-B3",
+      "clip": "renders/HK3-B3.mp4",
+      "phrase": "It arrives one small change at a time,",
+      "key": "change",
       "layout": {
         "type": "pip",
         "over": "th",

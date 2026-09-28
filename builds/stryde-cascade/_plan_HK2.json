@@ -1,51 +1,46 @@
 {
   "audio": [
-    "vo/master/HK1.wav",
+    "vo/master/HK2.wav",
     "vo/master/BODY.wav"
   ],
   "script": [
-    "vo/HK1.lines.txt",
+    "vo/HK2.lines.txt",
     "vo/BODY.lines.txt"
   ],
   "base": [
-    "th/TH-HK1.pad.mp4",
-    "th/TH-BODY.pad.mp4"
+    "th/TH-HK2.mp4",
+    "th/TH-BODY.mp4"
   ],
   "broll": [
     {
-      "beat": "HK1-B1",
-      "clip": "renders/HK1-B1.mp4",
-      "phrase": "It is a weight problem, and the weight has to go somewhere.",
-      "key": "weight",
+      "beat": "HK2-B1",
+      "clip": "renders/HK2-B1.mp4",
+      "phrase": "The first one goes at the top of the stairs.",
+      "key": "top",
       "layout": {
-        "type": "split",
-        "broll_pos": "bottom",
-        "ratio": 0.5
+        "type": "full"
       },
       "max": 6
     },
     {
-      "beat": "HK1-B2",
-      "clip": "renders/HK1-B2.mp4",
-      "phrase": "I fit stair rails for a living.",
-      "key": "I",
+      "beat": "HK2-B2",
+      "clip": "renders/HK2-B2.mp4",
+      "phrase": "The second one goes the whole way down.",
+      "key": "whole",
       "layout": {
         "type": "full"
       },
-      "max": 6,
-      "key_orig": "rails"
+      "max": 6
     },
     {
-      "beat": "HK1-B3",
-      "clip": "renders/HK1-B3.mp4",
-      "phrase": "I have watched where it goes.",
-      "key": "watched",
+      "beat": "HK2-B3",
+      "clip": "renders/HK2-B3.mp4",
+      "phrase": "I would like to stop being called back for the second one.",
+      "key": "called",
       "layout": {
-        "type": "pip",
-        "over": "th",
-        "corner": "br",
-        "scale": 0.5,
-        "border": 0
+        "type": "split",
+        "broll_pos": "bottom",
+        "ratio": 0.5
       },
       "max": 6
     },
