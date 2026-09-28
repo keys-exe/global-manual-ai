@@ -240,3 +240,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
     board in 5 × 15 MB parts, as cards `FINAL-HK1…3` (stage edit, final, status review: the final review is the
     user's).
   - Open: EG04's URL box is left out because no STRYDE URL is on file; EG05 watermark is omitted (F10).
+
+## 2026-09-28 — Final output moved to the Final board
+- User: "final output not showing the videos". Cause: this build has a separate Final board
+  (https://claude.ai/artifact/9Y3ww3H8Bc3X6Xsp2JPVPW, `boards.final` on the build doc), and the current board hides its
+  Final view when `boards.final` is set — the FINAL cards had been written to the current board only.
+- Uploaded the 15 parts (5 per ad) to the Final board and wrote `generations/stryde-identity__FINAL-HK1..3` there
+  (stage edit, final, status review). **Finals for this build always go on the Final board.**
+- The duplicate FINAL docs + parts on the current board (GKZD…) are still there; delete only with the user's OK.

@@ -20,6 +20,7 @@ Every generation goes on the build's **Generation Board**. **The board design is
 |---|---|
 | `intake-1` (STRYDE · Identity Callout) | https://claude.ai/artifact/HVPuUcnNK1MUrCYnou9UnJ |
 | `stryde-identity` (STRYDE · Identity Callout, Manual — Drive `1tKlZFjNApDMf5U_q3qFPcRyGZLQsVcwE`) | https://claude.ai/artifact/GKZDjmZkh4wwm7RxtXj7Tp |
+| `stryde-identity` · Final output board (finished videos go here, not on the current board) | https://claude.ai/artifact/9Y3ww3H8Bc3X6Xsp2JPVPW |
 | `demo-ad` (example only, placeholder media) | https://claude.ai/artifact/YK4ReHoWRnqBuXQvCMdHLT |
 
 **Always show the board (user, 2026-09-27), both run modes:** open the build's board in the user's panel (Artifact `action: "open"`, `url` = board) when a run starts or resumes and at every delivery (steps 1–3, 4–5, each hook, each act, the edit, the finished videos). Automatic writes and shows it exactly like Manual.
