@@ -35,8 +35,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - session_01QFtjcJsQcS8p957wEAS4kb (2026-09-28 16:00 UTC): resumed from the Drive link; merged `claude/vigilant-cannon-wre8v5`
   into `claude/amazing-bohr-tsowwg`; hourly Fix check moved here.
 
+- 16:20 UTC: user "PROCEED TO VOICE" → narrator = option A (N-VOICE-IMG v6, the one the user kept refining after B was offered).
+  Kling takes G1/G2 re-fitted to the v6 chest-up frame (hands rest on the table, small nod on the stress word instead of a hand lift;
+  audio only is used), `preflight.py` PASS both (`voice/N_G*.call.json`). **Blocked: Kling balance 3.0 credits** — not sent.
+
 ## Where it stands
-- **Waiting on the user's check:** narrator talking-head frame — option A (N-VOICE-IMG v6) or option B (N2-VOICE-IMG v1); confirm one, the other is dropped. Hook 1 images A-HKa, A-HKb.
+- **Blocked:** Kling has 3.0 credits — the two 10s voice takes (1080p, audio) can't run until it's topped up. Kling has no fallback (§5).
+- **Waiting on the user's check:** Hook 1 images A-HKa, A-HKb. Narrator = option A (from "PROCEED TO VOICE"); N2 option B dropped unless the user says otherwise.
 - **Confirmed:** all 7 avatars, 10 plates, DOG-BRAMBLE, GK1-AMARA, GK2-TOBI.
 - **Next on the voice frame's Confirm:** §22U step 2 — two Kling takes (`voice/N_G1.kling.json`, `voice/N_G2.kling.json`,
   ≤2,500 chars, same image, VOICE-NARR first in delivery), then `voice_source.py` → clone source for the user to clone
