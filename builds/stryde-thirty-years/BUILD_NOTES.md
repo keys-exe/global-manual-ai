@@ -130,9 +130,15 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   ~16:35: user confirmed the no-phone image, "regenerate the HK3 video" → Seedance generation 2 (task 437f5ac8…, 819 credits,
   13.06s) → HK3-FULL video v2 on the board as review. A third HK3 video needs the user's go (§22X).
 
+  ~16:45: user Fix on HK3 video: "make it 10 seconds". v2 had a 3.3s dead pause after "I want to show you" (the slow
+  sleeve-lowering was tied to that phrase; 13s was too long for a 7s line). User chose a 10s regeneration over cutting
+  the take, approving generation 3 and the §28H budget override (25 words / 20) — recorded in the call file (`user_go`).
+  Prompt: sleeve lowered on "this morning" in ~1s, line straight through. HK3-FULL v3 (10.08s, 630 credits, task
+  8235dfb1…) on the board as review. No more HK3 video generations without the user.
+
 ## Where it stands (2026-09-28 16:20)
 - VO master **T2** (confirmed). HK1-FULL v3 confirmed.
-- **Waiting on the user (review):** HK2-FULL v1, HK3-FULL video v2 (from the no-phone image); TH-HK1/2/3-BODY v3 (gentle trim).
+- **Waiting on the user (review):** HK2-FULL v1, HK3-FULL video v3 (10s); TH-HK1/2/3-BODY v3 (gentle trim).
 - **Next:** after the hooks are confirmed → B-roll (step 7): E6 lengths from `TH-HKn+BODY.trim2` word timestamps first.
 - Board storage near its 1 GB cap — upload at source bitrate; Drive if it fills.
 - Open: F3, F4, F11, F12, F13.
