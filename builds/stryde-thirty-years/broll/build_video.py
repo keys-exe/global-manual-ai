@@ -374,6 +374,17 @@ V["BR-11"] = ("MEDIUM as in the start frame, him at the bench holding the small 
    [("the strap grows or morphs mid-turn", "pinned end frame at the same small size + HOLD_PC + no strap growing"),
     ("turns too far or back again", "one turn, ends on the end frame"), ("fingers fuse with the strap", "HOLD-HC")])
 
+# BR-11 third try (user Fix "showing the stryde" → chose "Keep the Stryde front", 2026-09-28 ~20:10): no turn, no end frame.
+PIN_END.pop("BR-11", None)
+VFIX3["BR-11"] = ("showing the stryde → MOTION: v2 turned the strap round to its back; the user wants the stryde front kept, so no turn "
+                  "and no end frame — he brings the strap a little closer, wordmark square to the lens the whole clip")
+V["BR-11"] = ("MEDIUM as in the start frame, him at the bench holding the small strap at chest height.", PROPPED,
+   "He brings the strap a few centimetres closer to the lens in one small lift over about two seconds, its front face and stryde "
+   "wordmark square to the camera the whole time, then holds it there; the shell stays the same small size.", True,
+   "no strap turning, no back of the strap, no other hand, no second strap, no strap growing, no face changing", "in_place",
+   [("he turns it round (the v2 fault)", "no turn + no back of the strap"), ("strap grows as it nears the lens", "a few centimetres + HOLD_PC"),
+    ("fingers fuse", "HOLD-HC")])
+
 
 def build(beat):
     framing, rig, motion, prod, extra, sm, risks = V[beat]
@@ -406,7 +417,7 @@ if __name__ == "__main__":
             call["fix_note"] = VFIX[beat]
         if beat in VFIX3:
             gen = {"BR-12": 4}.get(beat, 3)
-            go = "'Both'" if beat in ("BR-02", "BR-12") else "'All three'"
+            go = {"BR-02": "'Both'", "BR-12": "'Both'", "BR-11": "'Keep the Stryde front'"}.get(beat, "'All three'")
             call.update(generation=gen, fix_note=VFIX3[beat], user_go=f"2026-09-28: generation {gen} approved by the user ({go})")
         (HERE / f"video/{beat}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
         (HERE / f"video/{beat}.prompt.txt").write_text(prompt)

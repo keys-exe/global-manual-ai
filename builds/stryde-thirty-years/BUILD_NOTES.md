@@ -218,9 +218,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   size) and BR-11 video v2 (first-and-last frame, 3s) straight away; end frame recorded on BR-11's card as `endFrame`. Old-size
   BR-11 v1 video and END v4 files removed for room.
 
+  ~20:10: user Fix on BR-11 v2 "showing the stryde" → asked; user chose "Keep the Stryde front" (also the go for generation 3).
+  BR-11 v3: no turn, no end frame (pin dropped, PIN_END removed for BR-11), he brings the strap a little closer, wordmark to the lens.
+  v2's file removed for room.
+
 ## Where it stands (2026-09-28 20:00)
 - Hooks done. VO master T2. TH-HK1/2/3-BODY v3 still To check.
-- B-roll: every video confirmed ("use") except BR-11 v2 (To check) — the last B-roll clip.
-- Any further Fix on BR-02, BR-05a, BR-05b, BR-12 is past the §22X limit — ask first.
+- B-roll: every video confirmed ("use") except BR-11 v3 (To check) — the last B-roll clip.
+- Any further Fix on BR-02, BR-05a, BR-05b, BR-11, BR-12 is past the §22X limit — ask first.
 - Board storage at the cap; each new render goes up after its superseded file is removed.
 - Next: once BR-11 is confirmed, rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.

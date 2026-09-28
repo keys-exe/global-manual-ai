@@ -3,33 +3,33 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"br_11\",\"subject\":\"Exactly as in the start frame, unchanged in every respect. The strap keeps its exact shape, size and wordmark in every frame and moves only with the body it sits on; The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"MEDIUM as in the start frame, him at the bench holding the small strap at chest height.\"},\"motion\":\"His other hand comes up to the strap and his two hands turn it round in one slow, even turn over about two seconds so its back comes to face the lens, the band loop swinging forward, ending exactly as in the end frame; the shell stays the same small size and shape throughout. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no strap flipping twice, no second strap, no strap growing, no band tangling, no face changing, no bending, no curling, no folding, no melting, no flipping of the product, no shell rotating on the leg, no strap sliding, no second strap, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no music, no voice, no text, no captions\"}",
+ "prompt": "{\"shot\":\"br_11\",\"subject\":\"Exactly as in the start frame, unchanged in every respect. The strap keeps its exact shape, size and wordmark in every frame and moves only with the body it sits on; The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"MEDIUM as in the start frame, him at the bench holding the small strap at chest height.\"},\"motion\":\"He brings the strap a few centimetres closer to the lens in one small lift over about two seconds, its front face and stryde wordmark square to the camera the whole time, then holds it there; the shell stays the same small size. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no strap turning, no back of the strap, no other hand, no second strap, no strap growing, no face changing, no bending, no curling, no folding, no melting, no flipping of the product, no shell rotating on the leg, no strap sliding, no second strap, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no music, no voice, no text, no captions\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "broll/renders/BR-11_v4.png",
  "start_approved": true,
- "pinned": true,
- "end_image": "broll/renders/BR-11-END_v5.png",
- "end_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
  "pace": "unhurried",
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 2,
+ "generation": 3,
  "risks": [
   {
-   "risk": "the strap grows or morphs mid-turn",
-   "prevented_by": "pinned end frame at the same small size + HOLD_PC + no strap growing"
+   "risk": "he turns it round (the v2 fault)",
+   "prevented_by": "no turn + no back of the strap"
   },
   {
-   "risk": "turns too far or back again",
-   "prevented_by": "one turn, ends on the end frame"
+   "risk": "strap grows as it nears the lens",
+   "prevented_by": "a few centimetres + HOLD_PC"
   },
   {
-   "risk": "fingers fuse with the strap",
+   "risk": "fingers fuse",
    "prevented_by": "HOLD-HC"
   }
  ],
- "fix_note": "make it small (image Fix) \u2192 FRAME: start image v4 at the true small size and a new end frame v5 made from it; the v1 video (old size) is replaced",
- "end_note": "BR-11-END v5, used straight away on the user's word ('Make it and go straight on')"
+ "fix_note": "showing the stryde → MOTION: v2 turned the strap round to its back; the user wants the stryde front kept, so no turn and no end frame — he brings the strap a little closer, wordmark square to the lens the whole clip",
+ "user_go": "2026-09-28: generation 3 approved by the user ('Keep the Stryde front')"
 }
