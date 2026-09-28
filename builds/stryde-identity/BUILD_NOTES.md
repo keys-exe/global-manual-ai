@@ -215,3 +215,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   - The going-up version (`body/fix11_prompts.py`, `BR-25_fix11.png`) was dropped when the user stopped it; no video
     was made from it.
   - BR-25's video waits for the user's call on this image.
+- (2026-09-28, 15:45 UTC) **BR-25 image v10** (user: "she should be at the top of the stairs going down"): a full-body
+  shot from the hall looking up the whole flight, with her at the top just stepping down, hands on the cardigan, off the
+  rail (`body/fix13_prompts.py`, `body/BR-25_fix13.png`). On the board as To check; the video waits for the user's call.
