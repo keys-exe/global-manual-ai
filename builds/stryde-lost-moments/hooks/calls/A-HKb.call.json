@@ -8,7 +8,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_141056_989e5106-7f19-493c-a6e5-49e342fda655.png",
- "start_approved": false,
+ "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,
@@ -28,5 +28,6 @@
    "risk": "hands and fingers warp on the small object",
    "prevented_by": "start frame caught mid-slide, one slide in about a second, HOLD-C + NEG-WARP-C"
   }
- ]
+ ],
+ "approved_by": "user: CONFIRM HOOK 1 (2026-09-28)"
 }

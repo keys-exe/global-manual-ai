@@ -8,7 +8,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_141051_ac70cd16-7ab5-40ff-9368-75951db1ab25.png",
- "start_approved": false,
+ "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,
@@ -28,5 +28,6 @@
    "risk": "she turns to face forwards (the after-state) or a strap appears",
    "prevented_by": "'coming down sideways' in subject; 'no facing forwards, no knee strap'"
   }
- ]
+ ],
+ "approved_by": "user: CONFIRM HOOK 1 (2026-09-28)"
 }
