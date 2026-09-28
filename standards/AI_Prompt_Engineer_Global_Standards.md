@@ -203,7 +203,7 @@ A scripted story with a cast, told in scenes, that sells the product through wha
 **Image:** Nano Banana Pro, Nano Banana 2, GPT Image 2.5 **Sunburst** (Mode 1 only; GPT Image 2 as fallback), Seedream 4.5. **Three image models, and no others** — `nano_banana_flash` and GPT Image 2.5 Flare are both retired (§18A)
 **Video:** Kling 3.0, Wan 3.0, Seedance 2.5, Veo 3.0
 **Platforms:** Higgsfield, Kling AI (direct), Kie AI
-**Voice:** ElevenLabs — Instant Voice Clone + Eleven v3 TTS, on every build (§22U)
+**Voice:** ElevenLabs — Instant Voice Clone + **Eleven v4** TTS (`eleven_v4`), the script run through ElevenLabs **Enhance** first, on every build (§22U; correction 2026-09-28)
 **Talking heads:** HeyGen **Avatar V**, driven by the ElevenLabs audio (§22U)
 **Post:** CapCut
 
@@ -419,7 +419,7 @@ Prompt quality is half the job. Most product drift traces to execution, not word
 | **Images** — every T2I: seeds, cast sheets, property and location plates, start frames | **Higgsfield** | `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst per §18A |
 | **Kling video** — Kling B-roll, mechanism beats, any Kling I2V | **Kling** (Kling AI direct) | `kling-video-v3_0_omni` per §44 default 5 |
 | **Seedance 2.5** — every Seedance call, including the §24I film voice master | **Kie AI API** (`KIE_API_KEY`, `scripts/kie.py`) — not the *Higgsless* connector | `bytedance/seedance-2-5`, 720p |
-| Voice | ElevenLabs (§22U) | `eleven_v3` |
+| Voice | ElevenLabs (§22U) | `eleven_v4`, after the Enhance pass (step 8) |
 | **Film music** (§24M) | **ElevenLabs API** (`ELEVENLABS_API_KEY`, `scripts/music.py` — composition plan, one track); fallback the ElevenLabs connector's `music` node | `eleven_music_v2`, instrumental |
 | **Film room tone, sound effects, voice isolation** (§24M) | **ElevenLabs** connector | `eleven_text_to_sound_v2` · `audio_isolation` — `generations_count` 1 |
 | Talking heads | HeyGen (§22U) | Avatar V |
@@ -2588,7 +2588,7 @@ Drop `no push in` on R4. Drop `no repeated reframing` on R3 — there is no firs
 
 ### Voice source — one voice per character *(rewritten V7.57.0)*
 
-**Position: every character's voice is a cloned ElevenLabs voice, built once per character by the §22U pipeline, and every line that character speaks in the build is Eleven v3 TTS in that voice.** Talking heads are HeyGen Avatar V renders lip-synced to that audio (§22U steps 11–13). Lip-sync is solved by driving the face from the audio, so there is one voice per character across every beat, by construction.
+**Position: every character's voice is a cloned ElevenLabs voice, built once per character by the §22U pipeline, and every line that character speaks in the build is Eleven v4 TTS in that voice.** Talking heads are HeyGen Avatar V renders lip-synced to that audio (§22U steps 11–13). Lip-sync is solved by driving the face from the audio, so there is one voice per character across every beat, by construction.
 
 **Mixing sources is still the failure** — a character heard in a generated voice on one beat and the clone on another is two voices for one character. On this route no talking head carries generated audio into the edit.
 
@@ -2663,7 +2663,7 @@ Plus two fields that carry the character under pressure:
 
 ### Non-speech vocal events
 
-Sighs, laughs, tuts, the sharp exhale — disproportionately characterful and the fastest one-second identity break. The constraint sheet names the two or three this character makes and what they sound like; everything else is excluded. On TTS builds these are the v3 audio tags, cast once.
+Sighs, laughs, tuts, the sharp exhale — disproportionately characterful and the fastest one-second identity break. The constraint sheet names the two or three this character makes and what they sound like; everything else is excluded. On TTS builds these are the audio tags, cast once (the Enhance pass keeps to them, §22U step 8).
 
 ### Derivation — the claim picks the life, the life picks the voice
 
@@ -2725,8 +2725,8 @@ Both run modes (E0). **Manual:** the agent runs every step and delivers each ste
 | 5 | **Join, then loop to ≥ 30s** | `ffmpeg` concat | Join the sped takes in script order (G1, G2, …), then repeat the **whole joined sequence** until the total is **30s or more**; never cut mid-word to reach it. `voice_source.py G1.mp4 G2.mp4 --name <Keyword>` runs steps 3–5 and the same-voice gate |
 | 6 | **Clone** | ElevenLabs Instant Voice Clone, by API | **Both run modes: by API, not a stop** (Manual since 2026-09-28) — `elevenlabs_clone.py clone <Keyword>_clone_source.mp3 --name <Keyword>` straight after step 5 (E7); the connector has no clone call. The voice ID is logged on the constraint sheet and the board's `voices` row (`cloned`). A failed `check` (no key, no free slot) is the only stop, reported with the reason |
 | 7 | **Name the voice** | — | **One keyword from the script title**, capitalised (title "The Knee Pain Nobody Talks About" → `Knee`). If two builds share a keyword, add the character's first name (`Knee-Maria`). **A name already on the account is never reused** — `elevenlabs_clone.py` refuses it; `--character <FirstName>` applies the suffix (V7.60.5). Recorded on the constraint sheet with the voice ID |
-| 8 | **Tag the script** | Eleven v3 audio tags | From the tag library (below) |
-| 9 | **TTS** | ElevenLabs `eleven_v3`, the cloned voice ID, 4 takes | **5,000 characters maximum per request, tags and spaces included** — the budget ladder below |
+| 8 | **Enhance the script** | ElevenLabs **Enhance** (the app's prompt, run on the verbatim lines) | Audio tags and emphasis added, no word changed — below. Both run modes *(correction 2026-09-28)* |
+| 9 | **TTS** | ElevenLabs **`eleven_v4`**, the cloned voice ID, the enhanced text, 4 takes | **10,000 characters maximum per request, tags and spaces included** (measured `GET /v1/models`, 2026-09-28) — the budget ladder below |
 | 10 | **Pick and save the master** | — | The most realistic take (below). Saved as `<VoiceName>_master.mp3` in the build tree and logged in the ledger. **Manual (2026-09-28): no stop** — every take goes on the board as To check; the run continues on the **working take**: T1, or the next take when T1 fails the house-cut verify (last word cut off, a word missing). The agent does not judge the takes. When the user confirms a different take, that part's VO is re-cut and its talking heads are regenerated from it. Automatic: the agent picks by the four criteria and does not stop (E0) |
 | 10a | **VO house cut** | `vo_trim.py` (E11A) | Every VO — hooks, body, each hook variant (raw hook + raw body of the same take, one pass) — trimmed in the house cut: butt joins, words kept to −38 dB, breaths cut at phrase boundaries, no speed change. Both run modes. Never on a §24I voice master |
 | 11 | **Upload the avatar image** | HeyGen asset upload → photo avatar | The step-1 image, or the matching look image for each act/location/story day (§14, §30C). One photo avatar per look |
@@ -2736,19 +2736,28 @@ Both run modes (E0). **Manual:** the agent runs every step and delivers each ste
 
 ### Step 8–9 — the script is spoken verbatim *(locked V7.59.2)*
 
-**The text sent to ElevenLabs is the script's spoken lines, word for word.** No word is added, removed, changed, re-ordered, abbreviated or spelled out differently: "Thirty-four percent" stays "Thirty-four percent". **Never sent:** the title, section headings (Hooks, Body…), reference links, and visual, editor or on-screen notes. The only additions allowed are Eleven v3 audio tags in square brackets, which are not spoken as words.
+**The text sent to ElevenLabs is the script's spoken lines, word for word.** No word is added, removed, changed, re-ordered, abbreviated or spelled out differently: "Thirty-four percent" stays "Thirty-four percent". **Never sent:** the title, section headings (Hooks, Body…), reference links, and visual, editor or on-screen notes. The only additions allowed are what the step-8 Enhance pass adds: audio tags in square brackets, which are not spoken as words, and emphasis on the script's own words — CAPITALS, "!" and ellipses (never a "?" on a line the script does not ask).
 
 - **Extract:** `scripts/script_lines.py <script>` keeps the spoken lines and reports every dropped line with its reason (title, heading, reference/link, visual note, bracketed direction), so nothing leaves the script silently. **A dropped note is not discarded**: it is kept out of the voice and goes into the Visual Instruction Ledger (§27F). Inline `[bracketed]` notes inside a spoken line are cut out of it the same way, and the rest of the line stays verbatim. **Speaker labels** at the start of a line (`VO:`, `V.O.:`, `NARRATOR:`, `SARAH:`, `DR. LEE (V.O.):`) are cut off and reported, never voiced. **`.docx` tables are read in document order** (V7.61.1): before that, a script written in a table was extracted as empty.
-- **Lock:** `scripts/tts_budget.py <tagged> --script-lines <lines>` removes the tags and compares word for word. **Any difference is a FAIL, and the text is not sent.**
+- **Lock:** `scripts/tts_budget.py <enhanced> --script-lines <lines>` removes the tags and compares word for word (case and edge punctuation aside, so Enhance emphasis passes and is listed). **Any word difference, an added "?", or a banned or non-voice tag is a FAIL, and the text is not sent** — the agent removes the offending change and re-runs; it never re-words.
 - **A script line that looks wrong is flagged to the user, never fixed** (§1 order of authority). That covers a typo, a claim problem (§43A) or a contradiction with the Product Sheet.
 - **Hooks the agent writes are not script.** They are voiced only after they are approved at step 6 — by the user in Manual, by the agent in Automatic — as separate files. They are never merged into the body text.
 - **The budget ladder never touches words.** It removes tags, and as a last step it splits at paragraph ends. It never shortens a line.
 
-### Step 8–9 — tags and the 5,000-character budget
+### Step 8 — ElevenLabs Enhance *(correction 2026-09-28, both run modes)*
 
-Tags are drawn from the Eleven v3 Tag Library (1,806 tags, 15 categories, stored in the skill as `references/eleven_v3_tags.json`). **Realistic ad speech uses only tags a person would actually do while talking to a phone.** Categories `Sound Effects`, `Effects`, `Environment`, `Genre` and `Accents` are never used (the accent is the clone's), and `Humor` gags never are.
+**Every TTS text is enhanced before it is voiced** (user: "for the elevenlabs we will use the elevenlabs v4 and use the enhance feature before generating the text to speech"). Enhance is the ElevenLabs app's button that has an LLM add audio tags and emphasis to the text while keeping every word. **ElevenLabs has no API for it** (checked 2026-09-28), so the agent runs **the same prompt** — ElevenLabs' published Enhance prompt, kept verbatim in the skill as `references/eleven_enhance_prompt.md` — on the step-8 verbatim spoken lines (`script_lines.py`), exactly as the app would, and takes its output as the TTS text. Hooks and body in one request are enhanced together, so the tags read the whole arc.
 
-**`TAG-PALETTE` — the default set** (every tag confirmed present in the library):
+- **Enhance picks the tags.** It replaces hand-tagging from `TAG-PALETTE`; the palette and density rules below stay as the fallback when Enhance output fails the lock twice, and as the reference for a Fix note that names a tag.
+- **Its emphasis is kept:** CAPITALS on a word, "!" and ellipses. An added "?" on a line the script writes as a statement changes its meaning and is removed.
+- **The §22U bans still hold:** no tag from a banned category (below), none of the non-voice tags the Enhance prompt itself forbids (`[standing]`, `[grinning]`, `[pacing]`, `[music]`), no sound effects. `tts_budget.py` fails them.
+- **Then the lock** (above): `tts_budget.py <enhanced> --script-lines <lines>` must say `verbatim: PASS`. The enhanced text is logged in the build (`vo/<part>.enhanced.txt`) and on the VO card's `prompt` on the board.
+
+### Step 8–9 — tags and the 10,000-character budget
+
+Tags are drawn from the Eleven v3 Tag Library (1,806 tags, 15 categories, stored in the skill as `references/eleven_v3_tags.json`), which Eleven v4 reads too; Enhance may write tags outside it (reported, allowed). **Realistic ad speech uses only tags a person would actually do while talking to a phone.** Categories `Sound Effects`, `Effects`, `Environment`, `Genre` and `Accents` are never used (the accent is the clone's), and `Humor` gags never are.
+
+**`TAG-PALETTE` — the fallback set** (every tag confirmed present in the library; Enhance picks first, step 8):
 - **Emotion:** `[sincere]` `[hopeful]` `[confident]` `[caring]` `[determined]` `[relieved]` `[frustrated]` `[excited]` `[curious]` `[surprised]` `[serious]` `[skeptical]` `[embarrassed]` `[tired]` `[sad]` `[nervous]` `[proud]` `[satisfied]` `[thoughtful]` `[honest]` `[gentle]` `[amused]` `[annoyed]` `[happy]`
 - **Delivery:** `[conversational]` `[casual]` `[relaxed]` `[warm]` `[measured]` `[fast]` `[rushed]` `[breathless]` `[deadpan]` `[sarcastic]` `[interview style]`
 - **Dialogue moves:** `[hesitates]` `[corrects self]` `[insists]` `[firm affirmation]` `[confirming tone]` `[real surprise]` `[building anticipation]`
@@ -2759,10 +2768,10 @@ Tags are drawn from the Eleven v3 Tag Library (1,806 tags, 15 categories, stored
 **Density:** one tag at the start of each act, then only where the emotional register turns (§28), roughly one per 2–3 sentences. Never two tags in a row; never a tag the line's words already carry.
 
 **Budget ladder** — count the full request string (tags, spaces and newlines included) before submitting:
-1. **≤ 5,000 with full tagging** → submit.
+1. **≤ 10,000 with full tagging** → submit.
 2. **Over** → strip Rhythm and Reactions tags first, then Dialogue moves, keeping act-opening Emotion tags.
 3. **Still over** → no tags at all.
-4. **Still over untagged** → split the script at paragraph ends into ≤ 5,000-character requests, same voice, same settings, and join the masters in order. *(Agent addition, not in the user's workflow — a Short VSL of 2–4 minutes fits one request; a Long VSL does not.)*
+4. **Still over untagged** → split the script at paragraph ends into ≤ 10,000-character requests, same voice, same settings, and join the masters in order. *(Agent addition, not in the user's workflow — a Short VSL of 2–4 minutes fits one request; a Long VSL does not.)*
 
 ### Step 10 — picking the master
 
@@ -3779,7 +3788,7 @@ The neutral voice master (part 7) fixes **who** the character sounds like; the e
 - **The voice matches the face in the same shot.** Wet eyes with a steady, bright voice, or a breaking voice on a calm face, is a continuity fault like a missing tear.
 - **It is written into `DRAMA-DELIVERY` as `VOICE NOW`**, stated as sound, never as an adjective: *thick and a little lower, words coming slower, a catch before the stressed word* — never "sad voice".
 - **Across a cut**, the next line starts where the last line ended: the same level, the same breath, the same thickness, unless the scene gives a cause. The listener's breath and small sounds on a listener shot carry it too.
-- **Narration over a scene** (§3B, §22U): the narrator's Eleven v3 audio tags follow the emotion map of the scene the line plays over; the words stay verbatim (§22U) — only tags change.
+- **Narration over a scene** (§3B, §22U): the narrator's audio tags (the step-8 Enhance pass, checked against it) follow the emotion map of the scene the line plays over; the words stay verbatim (§22U) — only tags change.
 - **Checked at every join** (§22W Q5): Manual by the user alone, on the board — the agent does not check; Automatic by the agent — transcript intact, then the line's pitch median, pitch range, loudness and speaking rate against the previous line of the same character in the scene. A jump with no cause on the VOICE row, or a delivery that contradicts the row, is `SCENE_BREAK` (E2). *(Thresholds unverified — set on the first drama build.)*
 
 **NORMATIVE — `DRAMA-DELIVERY`, `LISTEN-LINE`, `EMO-SEED`, `NEG-DRAMA`, `BUSINESS-LINE` — see Appendix A.** Never trimmed: `DRAMA-DELIVERY`'s UNDER THE LINE clause and `LISTEN-LINE`'s beat-after sentence.
@@ -6101,7 +6110,7 @@ Three tiers. Every numeric, clinical or comparative claim in a script is assigne
 
 **6. Camera rig → R3 compressed on VSL talking heads, R2 on UGC talking heads, R1 on B-roll, R1-W on moving-operator beats, R1-FAST on high-energy stabs, R4 on hero product, RV on mechanism A–B, RV-FAST on mechanism C, R1 on mechanism D.** No beat type is exempt from §22B.
 
-**7. Voice source → a cloned ElevenLabs voice per character, every build (§22U, rewritten V7.57.0).** two or more Kling voice source clips (same voice) → trim each → ×1.2 → join → loop to ≥30s → clone, named by a script-title keyword → Eleven v3 TTS with audio tags inside 5,000 characters. The generated-voice default is retired.
+**7. Voice source → a cloned ElevenLabs voice per character, every build (§22U, rewritten V7.57.0).** two or more Kling voice source clips (same voice) → trim each → ×1.2 → join → loop to ≥30s → clone, named by a script-title keyword → Enhance (the ElevenLabs Enhance prompt, words locked) → Eleven v4 TTS inside 10,000 characters (correction 2026-09-28). The generated-voice default is retired.
 
 **8. Real platform names → generic version generated first, named version written alongside and flagged.** Never the visual, either way (§10A).
 
@@ -8382,7 +8391,7 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 | Hook variants (§30H) | `variants.py` set report | one video per hook; every variant PASS; body cuts identical across variants; duration = hook + body ± 2 frames | AUTO | Fix the failing variant; a body mismatch is a plan error — rebuild from one body plan |
 | Rough-cut render (§30H) | duration + blackdetect on the render | duration = master ± 2 frames; 0 black frames | AUTO | Re-render; a second failure → HUMAN |
 | TTS verbatim (§22U step 8) | `tts_budget.py --script-lines`: tags stripped, word-for-word compare against `script_lines.py` output | identical word sequence; title, headings, links and notes absent | AUTO | Rebuild the tagged text from the extracted lines; never send a FAIL |
-| TTS request length (§22U step 9) | character count of the full request, tags included | ≤ 5,000 | AUTO | Budget ladder, in order; never truncate the script |
+| TTS request length (§22U step 9) | character count of the full request, tags included | ≤ 10,000 (`eleven_v4`) | AUTO | Budget ladder, in order; never truncate the script |
 | TTS master (§22U step 10) | transcript vs script diff; the four-criterion read | every word present, in order; human, not narrator; no artefacts | AUTO-ASSIST + HUMAN | Next take; all four fail → regenerate with fewer tags |
 | HeyGen call (§22U step 13) | call params | engine `avatar_v` (or the logged fallback), `9:16`, `1080p`, uploaded audio, `motionPrompt` present | AUTO | Resubmit with the params fixed |
 | Visual instructions (§27F) | Visual Instruction Ledger vs `script_lines.py --visual` output + `loom.md` | every note and Loom instruction has a row; every row `verified` or `flagged`; 0 open at step 8 | AUTO | Carry the open row on its beat or CapCut line; a row missing from the ledger is a plan error |
@@ -8482,7 +8491,8 @@ Superseded B-roll rule, kept for reference: B-roll calls: 5s (the Higgsfield flo
 **Film voice master (Seedance, §24I):** the Seedance ingredients template with `duration: 10`, `images_list: [<face-only sheet>]`, no `audios_list`; then `ffmpeg -i <clip> -vn -c:a copy <CHAR>_voice_master.<ext>`.
 **Voice source (Kling, §22U step 2):** two or more calls, one per take — `image_to_video {model: "kling-video-v3_0_omni", inputs: [{name: "image_1", url: <step-1 image>}], arguments: prompt (§36 JSON, minified, ≤ 2,500), aspect_ratio "9:16", resolution "1080p", duration "10", enable_audio "true", prefer_multi_shots "false", imageCount "1"}`; poll `query_tasks`. Then `voice_source.py G1.mp4 G2.mp4 --name <Keyword>`.
 **Clone (ElevenLabs, §22U step 6):** both run modes (Manual since 2026-09-28; before that Manual cloned in the ElevenLabs app) — `scripts/elevenlabs_clone.py clone <Keyword>_clone_source.mp3 --name <Keyword> [--character <FirstName>]` → name checked against `GET /v1/voices` (taken = refused, §22U step 7) → `POST /v1/voices/add` (multipart, header `xi-api-key: $ELEVENLABS_API_KEY`) `{name: <keyword>, files: [<step-5 file>], remove_background_noise: true}` → `{voice_id, requires_verification: false}`; confirmed by `GET /v1/voices/{id}` (`category: "cloned"`). Preflight `GET /v1/user/subscription`: `can_use_instant_voice_cloning`, `voice_limit − voice_slots_used`. Cleanup `DELETE /v1/voices/{id}`. Measured 2026-09-25 (one test clone from a 48s source, then deleted). The connector has no clone call.
-**TTS (ElevenLabs connector, §22U step 9):** `creative_generate_speech` → `{model_id: "eleven_v3", voice_id: <clone>, prompt: <tagged script ≤ 5,000>, generations_count: 4}`; poll `creative_get_flow_run_status`. `estimate_only: true` first when the credit cap is tight.
+**Enhance (§22U step 8):** no API — the agent runs `references/eleven_enhance_prompt.md` on the verbatim lines, then `tts_budget.py <enhanced> --script-lines <lines>` → `verbatim: PASS`.
+**TTS (ElevenLabs connector, §22U step 9):** `creative_generate_speech` → `{model_id: "eleven_v4", voice_id: <clone>, prompt: <enhanced script ≤ 10,000>, generations_count: 4}`; poll `creative_get_flow_run_status`. `estimate_only: true` first when the credit cap is tight.
 **Avatar (HeyGen, §22U step 11):** `create_asset_upload` → PUT bytes → `complete_asset_upload` → `create_photo_avatar {name: <VoiceName>-<look>, file: {type: "asset_id", asset_id}}`; wait for the avatar look to be ready.
 **Talking head (HeyGen, §22U step 13):** audio segment uploaded the same way → `create_video_from_avatar {avatarId: <look id>, engine: {type: "avatar_v"}, audioAssetId, aspectRatio: "9:16", resolution: "1080p", motionPrompt: <gestures>}`, no `expressiveness` (rejected on `avatar_v`); poll `get_video`. Fallback, only when `motionPrompt` is rejected for no animation reference: `engine: {type: "avatar_iv"}, expressiveness: "high"`, `motionPrompt` kept.
 **Connector calls (§5, V7.59.0):**
@@ -8563,6 +8573,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | Date | Correction | Section affected | Status |
 |---|---|---|---|
 
+| 2026-09-28 | **Eleven v4 + Enhance.** Every TTS is `eleven_v4` (10,000 characters per request, measured `GET /v1/models`) and its text goes through ElevenLabs **Enhance** first — the app's published prompt (no API), run by the agent on the verbatim lines, stored as `references/eleven_enhance_prompt.md`. Enhance picks the tags (TAG-PALETTE becomes the fallback) and may add emphasis (CAPITALS, "!", ellipses); the verbatim lock ignores case and edge punctuation but fails a changed word, an added "?", or a banned / non-voice tag. (User: "for the elevenlabs we will use the elevenlabs v4 and use the enhance feature before generating the text to speech".) | §4, §5 (connector table), §22D, §22U (steps 8–9, lock, budget), §24I narration, §44 default 7, E1, E7 | Written in; `tts_budget.py` updated; skills in sync |
 | 2026-09-28 | **Manual voice flow.** After the locations are locked come the maps (act map, wardrobe map), then the voices. In Manual the voice stage runs without a stop: voice source → clone by API → VO → talking heads → trim. The clone and the master listen are no longer human gates; the run continues on the working take and the user checks every render on the board. Talking heads are trimmed at a natural pace — pauses kept after sentences (0.35s), commas (0.2s) and words (≤ 0.08s), `trim.py` defaults. (User: "after the locations are locked next are the maps right then after that its the voices, for vo or talking heads after you create the voice you should automatically clone it and create the vo for it and generate the talking heads and trim it, the trimming should not be too fast. this is for the manual run".) | §1, §18, §18B, §22U (steps 6, 10, 13, new 14), §44 default 83, E0, E7, E11 | Written into the sections; `trim.py` updated |
 | 2026-09-27 | The Generation Board gains a **Final output** tab beside Board, Manual run and Plan: one card per finished hook variant (or the finished film) with player, status, Confirm / Fix and Download; finished videos are Edit-stage cards with `final: true`. (User: "add a final output tab on the board, manual and plans to show the final results".) | §16A (Generation Board) | Written into §16A; template updated and republished |
 | 2026-09-27 | The build's board is shown to the user (Artifact `open`) at run start, resume and every delivery, in **both** run modes — Automatic included. (User: "always show the board panel whether it's automation or manual".) | §16A (Generation Board), E0 | Written into §16A |
