@@ -1,0 +1,14 @@
+{
+ "model": "nano_banana_2",
+ "face": "NOFACE",
+ "refs": [
+  [
+   "C1 sheet",
+   "ded1fa0c-1546-421d-adb5-94c1baee2800"
+  ],
+  [
+   "P0-PROP-G plate",
+   "faf039cb-e64f-4a3c-9772-85b0cb5c26f1"
+  ]
+ ]
+}

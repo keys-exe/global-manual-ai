@@ -247,17 +247,10 @@ Samples of all four looks on this knee (A full stack, B ghost limb, C silhouette
 
 ---
 
-## Intake note — stryde-identity, 2026-09-26
+## 18. The name on the product *(V7.49.32 — user: "sometimes the product shows no name")*
 
-Supplied as `stryde_product_sheet_V7.49.31.py` in the build's Drive folder; stored here unchanged as the Appendix B pair (`.py` + this `.md`, emitted from `SHEET_MD`). Reference photos from the same folder are in `stryde_refs/` (layer 1).
+A STRYDE with no wordmark reads as the cheap copy, which is defined by having none. So:
 
-**Appendix B items the supplied sheet points to but the Drive folder did not include** (the `.py` self-test reports them missing):
-
-| Item | Used for | Effect |
-|---|---|---|
-| `package_closed.jpg` (locked V7.49.27) | closed-box beats | closed-box beats cannot attach their locked reference until supplied |
-| `stryde_refs/anatomy_samples/ANAT-A…D` | choosing the anatomy look only — never attached | none on prompts; the look choice (A for the point/load/pad, B for the conditions) is already locked in `ANATOMY_LOOK` |
-| `product_held.jpg` (`HELD_EXAMPLE`) | optional example of one grip, not locked | none |
-| true shell width-to-height (§10 open item) | geometry | still open, unchanged |
-
-**Claim not in the register (§9 table):** "Unlike the cheap copies, which are too small to reach it" — the comparative is unverified; see the build's flags.
+1. **Prompts ask for it.** Every shot that shows the shell's front carries `WORDMARK-LOCK` (the grey lowercase stryde wordmark on the lower body, centred beneath the notch, always there, never a blank shell); every video adds `NEG-WORDMARK`. Back, side and rear shots never ask for it.
+2. **Every render is checked:** `python3 stryde_product_sheet.py --wordmark <frames>` — `--no-name` for back, side and rear. A front view with no name is **REGENERATE Q2**; a name on a back view is too. For video, run it on the contact-sheet frames (§22W).
+3. **How it checks:** a letter-shape detector (grey letters on smooth dark shell) and a match against the real wordmark cut from `front.webp`. Measured V7.49.32: all 11 reference frames with the name found, all 10 without it clear, and both frames with the name painted out failed as they should. The self-test re-runs six of these every time.
