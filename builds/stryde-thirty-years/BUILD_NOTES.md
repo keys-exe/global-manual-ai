@@ -82,6 +82,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   walk part 0–3.77s ("…coming from."), talk part 3.77–10.39s → `hooks/hk1/`. On Confirm: HeyGen create_lipsync (walk + walk audio),
   then Avatar V from the walk clip's last frame with the talk audio.
 
+  ~14:05: user confirmed the walk → HeyGen create_lipsync (precision). LEARNED: HeyGen lip-sync needs speech in the source
+  video's own audio track — no track → "audio missing"; a silent track → "audio track is silent". Working recipe: mux the
+  target VO into the clip (video stream-copied), then lip-sync with the same VO. HK1 v2 (lip-synced walk, 5.04s) on the board
+  as review; HK1-TH frame (walk's last frame) on the board as review.
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.
