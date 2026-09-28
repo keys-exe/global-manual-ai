@@ -27,7 +27,8 @@
 
 ## Open items
 - Flags F1–F3 (claims/disclosure) are the advertiser's call before publishing.
-- The hourly Fix-check Routine was not moved to this build (Automatic run; no Fix notes expected).
+- v2 re-edit (F20, BUILD_SHEET): slower VO (master v2 T2, 199–203 wpm), ~3s B-roll holds, 6/34 split/pip.
+- **Resumed 2026-09-28 (session_01XyVmRtQqCbrULWxujVtka1):** the user is checking the B-rolls on the board and will leave Fix notes. Their Fixes are regenerated (no agent verdict), put back as To check; once confirmed, the three finals are re-assembled from the plans. Hourly Fix check `trig_01N8qwCCCFT9S55QL3zasmbh`. Media is not in git — a regenerate/re-assembly pulls clips, VO and heads back from the board assets. A2-M1, A2-M3, A2-M4 already have two video generations: a third waits for the user's go (§22X).
 
 ## Files
 Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · job ids `work/jobs.json`, `work/kling_jobs.json` · board cards `work/board/`. Media stays out of git (`renders/`, `th/`, `vo/`, `edit/*.mp4`).
