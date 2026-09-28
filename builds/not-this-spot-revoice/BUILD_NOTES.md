@@ -39,7 +39,15 @@ Read this first when resuming.
      - A: `23e0c2de67cf4258aabe31628fb4c04c`
      - B: `a762d6d36ccd49f3817379732fd8a0d5`
      - C: `573416da45ed4a9f8fa5685f4d1173a3`
-   - `splice.py` puts the lip-synced frames back over the original frames and re-encodes with x265 at CRF 17.
+   - HeyGen returned 3–4 fewer frames than it was sent: the frames match 1:1 and only the tail is missing, so the last lip-synced frame is held for those (`tpad`).
+   - `splice.py` puts the lip-synced frames back over the original frames and re-encodes with x265 at CRF 17 and the source pixel format.
+   - The overlay must be done in 10-bit (`overlay=format=yuv420p10`): the 8-bit overlay darkened the doctor shots by ~2 levels.
+8. **Check (`check.py`):**
+   - Frame counts are identical to the originals: A 6192, B 6202, C 6250.
+   - B-roll frames differ from the originals by ~0.2 (encode noise only).
+   - Doctor frames differ from the HeyGen output by ~0.7.
+9. **Outputs** (scratchpad `out/`): `Hook A - new VO.mp4`, `Hook B - new VO.mp4`, `Hook C - new VO.mp4`, plus the audio-only `listen/*.mp3`.
+   - The user reviews them (Manual). They are not on a Generation Board yet: this fix has no board.
 
 ## Files not in git (scratchpad; regenerate with the scripts above)
 - The drive videos, demucs stems, TTS chunks (`gen/`) and mixes.
