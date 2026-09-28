@@ -1,0 +1,14 @@
+{
+ "scene": "SC-01",
+ "picture": "../edit/film_picture.mkv",
+ "dialogue": "SC01.dialogue.film.wav",
+ "room_tone": "silence.wav",
+ "music": "SC01.music.edit.wav",
+ "music_in": 0.0,
+ "sfx": [],
+ "levels": {
+  "room_tone_db": -60,
+  "music_db": -15,
+  "duck_db": 6
+ }
+}
