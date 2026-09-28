@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "voice_name": "CascadeHarukoB",
+  "clone_source": "voice/K/CascadeHarukoB_clone_source.mp3",
+  "takes": [
+    {
+      "take": 1,
+      "src": "renders/voiceK/K_G1.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 4.55,
+      "after_speed_s": 3.8,
+      "pitch_median_hz": 192.8,
+      "transcript": "A bad knee is not a knee problem. It is a weight problem.",
+      "pitch_diff": 0.0
+    },
+    {
+      "take": 2,
+      "src": "renders/voiceK/K_G2.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 5.18,
+      "after_speed_s": 4.34,
+      "pitch_median_hz": 190.5,
+      "transcript": "I have been in about 400 houses and I have watched where it goes.",
+      "pitch_diff": 0.012
+    },
+    {
+      "take": 3,
+      "src": "renders/voiceK/K_G3.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 4.84,
+      "after_speed_s": 4.06,
+      "pitch_median_hz": 192.8,
+      "transcript": "I need you to take this seriously. Here is the sequence, and it is almost always the same.",
+      "pitch_diff": 0.0
+    },
+    {
+      "take": 4,
+      "src": "renders/voiceK/K_G4.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 5.89,
+      "after_speed_s": 4.91,
+      "pitch_median_hz": 197.5,
+      "transcript": "One knee starts hurting on the stairs, so you favor it, you lead with the good leg every step.",
+      "pitch_diff": 0.024
+    },
+    {
+      "take": 5,
+      "src": "renders/voiceK/K_G5.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 4.98,
+      "after_speed_s": 4.17,
+      "pitch_median_hz": 190.5,
+      "transcript": "The good leg is now doing the work of two. Within a year or two, it starts as well.",
+      "pitch_diff": 0.012
+    },
+    {
+      "take": 6,
+      "src": "renders/voiceK/K_G6.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 5.73,
+      "after_speed_s": 4.79,
+      "pitch_median_hz": 192.8,
+      "transcript": "You have been told it is your age, or your weight, or that the muscle is weak.",
+      "pitch_diff": 0.0
+    }
+  ],
+  "voice_mismatch_takes": [],
+  "joined_s": 26.07,
+  "repeats": 2,
+  "total_s": 52.19,
+  "gaps_over_0.4s": []
+}
