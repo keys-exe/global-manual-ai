@@ -32,6 +32,16 @@ for f in sorted(glob.glob("full/*.mp3")):
     words = []
     for (ww, a, b) in raw:
         for t in norm(ww): words.append((t, a, b))
+    PAIRS = {("25", "000"): ["twenty", "five", "thousand"], ("200", "000"): ["two", "hundred", "thousand"],
+             ("body", "weight"): ["bodyweight"], ("post", "bag"): ["postbag"]}
+    merged, i = [], 0
+    while i < len(words):
+        if i + 1 < len(words) and (words[i][0], words[i + 1][0]) in PAIRS:
+            for t in PAIRS[(words[i][0], words[i + 1][0])]: merged.append((t, words[i][1], words[i + 1][2]))
+            i += 2
+        else:
+            merged.append(words[i]); i += 1
+    words = merged
     hyp = [w[0] for w in words]
     sm = difflib.SequenceMatcher(None, ref, hyp, autojunk=False)
     diff = [(t, " ".join(ref[a:b]), " ".join(hyp[c:d])) for t, a, b, c, d in sm.get_opcodes() if t != "equal"]

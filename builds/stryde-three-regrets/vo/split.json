@@ -1,186 +1,53 @@
 {
  "T1": {
   "dur": 216.4,
-  "diff": [
-   [
-    "replace",
-    "twenty five thousand",
-    "25 000"
-   ],
-   [
-    "replace",
-    "twenty five thousand",
-    "25 000"
-   ],
-   [
-    "replace",
-    "bodyweight",
-    "body weight"
-   ],
-   [
-    "replace",
-    "drawer",
-    "draw"
-   ],
-   [
-    "replace",
-    "postbag",
-    "post bag"
-   ],
-   [
-    "replace",
-    "stryde",
-    "stride"
-   ],
-   [
-    "replace",
-    "two hundred thousand",
-    "200 000"
-   ],
-   [
-    "replace",
-    "bare",
-    "bear"
-   ],
-   [
-    "replace",
-    "any more",
-    "anymore"
-   ],
-   [
-    "replace",
-    "stryde",
-    "stride"
-   ]
+  "diff": [],
+  "cuts": [
+   7.27,
+   15.77,
+   25.16
   ],
-  "cuts": null,
-  "gaps": []
+  "gaps": [
+   [
+    6.84,
+    7.7
+   ],
+   [
+    15.42,
+    16.12
+   ],
+   [
+    24.78,
+    25.54
+   ]
+  ]
  },
  "T2": {
   "dur": 206.4,
-  "diff": [
-   [
-    "replace",
-    "twenty five thousand",
-    "25 000"
-   ],
-   [
-    "replace",
-    "centimetres",
-    "centimeters"
-   ],
-   [
-    "replace",
-    "twenty five thousand",
-    "25 000"
-   ],
-   [
-    "replace",
-    "neighbour",
-    "neighbor"
-   ],
-   [
-    "replace",
-    "centimetres",
-    "centimeters"
-   ],
-   [
-    "replace",
-    "bodyweight",
-    "body weight"
-   ],
-   [
-    "replace",
-    "drawer",
-    "draw"
-   ],
-   [
-    "replace",
-    "postbag",
-    "post bag"
-   ],
-   [
-    "replace",
-    "stryde",
-    "stride"
-   ],
-   [
-    "replace",
-    "orthopedic",
-    "orthopaedic"
-   ],
-   [
-    "replace",
-    "two hundred thousand",
-    "200 000"
-   ],
-   [
-    "replace",
-    "any more",
-    "anymore"
-   ],
-   [
-    "replace",
-    "stryde",
-    "stride"
-   ]
+  "diff": [],
+  "cuts": [
+   7.23,
+   15.57,
+   25.02
   ],
-  "cuts": null,
-  "gaps": []
+  "gaps": [
+   [
+    6.84,
+    7.62
+   ],
+   [
+    15.32,
+    15.82
+   ],
+   [
+    24.64,
+    25.4
+   ]
+  ]
  },
  "T3": {
   "dur": 197.44,
   "diff": [
-   [
-    "replace",
-    "twenty five thousand",
-    "25 000"
-   ],
-   [
-    "replace",
-    "centimetres",
-    "centimeters"
-   ],
-   [
-    "replace",
-    "twenty five thousand",
-    "25 000"
-   ],
-   [
-    "replace",
-    "neighbour",
-    "neighbor"
-   ],
-   [
-    "replace",
-    "centimetres",
-    "centimeters"
-   ],
-   [
-    "replace",
-    "bodyweight",
-    "body weight"
-   ],
-   [
-    "replace",
-    "drawer",
-    "draw"
-   ],
-   [
-    "replace",
-    "postbag",
-    "post bag"
-   ],
-   [
-    "replace",
-    "stryde",
-    "stride"
-   ],
-   [
-    "replace",
-    "centimetres",
-    "centimeters"
-   ],
    [
     "replace",
     "round",
@@ -188,98 +55,51 @@
    ],
    [
     "replace",
-    "centimetre",
-    "centimeter"
-   ],
-   [
-    "replace",
-    "two hundred thousand",
-    "200 000"
-   ],
-   [
-    "replace",
-    "any more",
-    "anymore"
-   ],
-   [
-    "replace",
-    "stryde",
-    "stride"
-   ],
-   [
-    "replace",
     "stretched",
     "stretch"
    ]
   ],
-  "cuts": null,
-  "gaps": []
+  "cuts": [
+   7.0,
+   14.64,
+   23.69
+  ],
+  "gaps": [
+   [
+    6.74,
+    7.26
+   ],
+   [
+    14.42,
+    14.86
+   ],
+   [
+    23.36,
+    24.02
+   ]
+  ]
  },
  "T4": {
   "dur": 208.16,
-  "diff": [
-   [
-    "replace",
-    "twenty five thousand",
-    "25 000"
-   ],
-   [
-    "replace",
-    "two centimetres",
-    "2cm"
-   ],
-   [
-    "replace",
-    "twenty five thousand",
-    "25 000"
-   ],
-   [
-    "replace",
-    "two centimetres",
-    "2cm"
-   ],
-   [
-    "replace",
-    "bodyweight",
-    "body weight"
-   ],
-   [
-    "replace",
-    "drawer",
-    "draw"
-   ],
-   [
-    "replace",
-    "postbag",
-    "post bag"
-   ],
-   [
-    "replace",
-    "stryde",
-    "stride"
-   ],
-   [
-    "replace",
-    "orthopedic",
-    "orthopaedic"
-   ],
-   [
-    "replace",
-    "two hundred thousand",
-    "200 000"
-   ],
-   [
-    "replace",
-    "any more",
-    "anymore"
-   ],
-   [
-    "replace",
-    "stryde",
-    "stride"
-   ]
+  "diff": [],
+  "cuts": [
+   7.12,
+   15.29,
+   24.7
   ],
-  "cuts": null,
-  "gaps": []
+  "gaps": [
+   [
+    6.78,
+    7.46
+   ],
+   [
+    14.94,
+    15.64
+   ],
+   [
+    24.38,
+    25.02
+   ]
+  ]
  }
 }
