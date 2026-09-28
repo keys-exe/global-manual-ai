@@ -18,7 +18,7 @@ GRADE.json — Look Sheet field 5 as numbers (every field optional; the default 
    "skin_protect": 0.7}                 # 0…1       how much of the tint and saturation change skin is spared
 
 make:    writes a 3D LUT (.cube, R fastest) — the same file CapCut imports (Manual: Adjust → LUT → import;
-         desktop confirmed, mobile unverified) and `apply` uses (Automatic), so both run modes grade identically.
+         CapCut desktop — the team edits on desktop only) and `apply` uses (Automatic), so both run modes grade identically.
 check:   FAIL if the neutral grey ramp is not monotonic (a tone inversion), a reference skin tone's hue moves
          more than 8° or its saturation more than ±25%, or any value leaves 0–1. Reports the grey ramp's tint.
 preview: before | after, side by side — shown with the LUT on the board's Plan tab (Manual) or read by the
