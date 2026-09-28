@@ -3,7 +3,13 @@
 
 Usage:
   trim.py IN.mp4 [--out OUT.mp4] [--keep START:END ...] [--model base.en]
-          [--pre 0.06] [--post 0.08] [--entry-breath 0.12] [--dry-run]
+          [--pre 0.06] [--post 0.08] [--entry-breath 0.12]
+          [--sentence-pause 0.35] [--comma-pause 0.2] [--word-pause 0.08] [--dry-run]
+
+Natural pace (E11, 2026-09-28 — "the trimming should not be too fast"): after the
+cut, each sentence end keeps --sentence-pause, each comma/colon/semicolon/dash
+--comma-pause, and every other word gap up to --word-pause (or the original gap,
+if shorter). No speed change.
 
 Writes <IN>.trim.mp4 (never overwrites the input) and prints a JSON report:
 cut list, keep-spans and the E1 verification result. Exit code 0 = pass,
@@ -74,7 +80,20 @@ def subtract(spans, holes):
     return out
 
 
-def plan(ws, total, keep, pre, post, entry_breath, quiet):
+SENTENCE_END = (".", "?", "!")
+CLAUSE_END = (",", ";", ":", "-", "\u2014", "\u2013")
+
+
+def pause_after(word, pace):
+    w = word.rstrip("\"')\u201d\u2019")
+    if w.endswith(SENTENCE_END):
+        return pace["sentence"]
+    if w.endswith(CLAUSE_END):
+        return pace["comma"]
+    return pace["word"]
+
+
+def plan(ws, total, keep, pre, post, entry_breath, quiet, pace=None):
     spans = [(max(0.0, a - pre), min(total, b + post)) for a, b, _ in ws]
     # §28G ENTRY CAP / BREATH-A: keep the last slice of the entry inhale
     spans[0] = (max(0.0, ws[0][0] - entry_breath), spans[0][1])
@@ -83,6 +102,12 @@ def plan(ws, total, keep, pre, post, entry_breath, quiet):
     # silence from inside the word spans, leaving the padding either side.
     holes = [(s + post, e - pre) for s, e in quiet if e - pre - (s + post) > 0.05]
     spans = [(a, b) for a, b in subtract(spans, holes) if b - a > 0.05]
+    if pace:  # E11 natural pace: give each word its pause back, never more than the gap
+        for (_, end, w), nxt in zip(ws, ws[1:]):  # none after the last word (E1 tail cap)
+            limit = nxt[0] - pre
+            p = pause_after(w, pace)
+            if limit > end and p > 0:
+                spans.append((end, min(end + p, limit)))
     spans = merge(spans + keep)  # §28G designed-silence list survives the trim
     cuts, cursor = [], 0.0
     for a, b in spans:
@@ -143,6 +168,9 @@ def main():
     ap.add_argument("--pre", type=float, default=0.06)
     ap.add_argument("--post", type=float, default=0.08)
     ap.add_argument("--entry-breath", type=float, default=0.12)
+    ap.add_argument("--sentence-pause", type=float, default=0.35, help="pause kept after . ? ! (E11 natural pace)")
+    ap.add_argument("--comma-pause", type=float, default=0.2, help="pause kept after , ; : dash")
+    ap.add_argument("--word-pause", type=float, default=0.08, help="max pause kept between other words")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--mode", type=int, default=1, help="§18A mode of the build; 4 and 5 are refused (§24L)")
     a = ap.parse_args()
@@ -162,9 +190,10 @@ def main():
         sys.exit(2)
     total = duration(src)
     quiet = silences(src, min_dur=0.15)
-    spans, cuts = plan(ws, total, keep, a.pre, a.post, a.entry_breath, quiet)
+    pace = {"sentence": a.sentence_pause, "comma": a.comma_pause, "word": a.word_pause}
+    spans, cuts = plan(ws, total, keep, a.pre, a.post, a.entry_breath, quiet, pace)
     result = {"src": str(src), "out": str(dst), "duration_in_s": round(total, 3),
-              "cuts": cuts, "cut_total_s": round(sum(b - x for x, b in cuts), 3),
+              "pace": pace, "cuts": cuts, "cut_total_s": round(sum(b - x for x, b in cuts), 3),
               "transcript": " ".join(w for _, _, w in ws)}
     if a.dry_run:
         print(json.dumps(result, indent=2))
