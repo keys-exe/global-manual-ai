@@ -149,11 +149,23 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
     duration = E6 call length). Renders in `broll/renders/` (gitignored; board + Higgsfield URLs hold them).
   - Old HK3-BR / HK3-BR2 / HK3-TH cards are superseded by the HK3-FULL one take (left as they are).
 
-## Where it stands (2026-09-28 17:10)
-- Hooks done: HK1/HK2/HK3-FULL confirmed. VO master T2. TH-HK1/2/3-BODY v3 (gentle trim) still To check.
-- **Waiting on the user:** the 27 B-roll start images (Confirm / Fix on the board).
-- **Next:** for each confirmed image, the Kling 3.0 omni video at its E6 length (§27G one action, `preflight.py` PASS,
-  `prefer_multi_shots` false; pinned beats BR-11, BR-15a, BR-15c, BR-18a, BR-18b need an approved end image first). Then the
-  rough cut (`assemble.py`) and the hook variants (`variants.py`), then the CapCut block.
-- Board storage: ~230 MB of B-roll images added — check headroom before the videos; Drive if it fills.
+  ~17:50–18:15: user Fix notes on B-roll images, three rounds (15 fixes), all regenerated on Higgsfield from the note, fixed at the
+  prompt in `broll/build_broll.py` (FIX1/FIX2/FIX3 blocks): BR-02 (one fingertip under the kneecap, front on), BR-05a/BR-08 (POV),
+  BR-11/BR-15a/BR-18a (product at its real small size, product photos attached first as the anchor), BR-12 (rear-worn ref first,
+  band just below the knee crease), BR-13 (true side view through the spindles), BR-14b (copy with a visible knock-off shell),
+  BR-15c (shell centred on the front of the shin), MECH-01 (tendon close-up), MECH-02 (cartilage, no tendon), **MECH-06 replaced by a
+  real B-roll** (her rubbing the spot under her bare kneecap in the armchair — act map row updated, angles.py PASS).
+  User "generate the confirm images": 18 confirmed images → §35 Kling JSON (`broll/build_video.py`, ≤2,500, preflight PASS all) →
+  Kling 3.0 on Kie (`kling-3.0/video`, pro; the Kling connector is out of credits since HK1, no switch back), E6 lengths, one render
+  each, 1,476 Kie credits. All 18 on the board as review (BR-07b in two 15 MB parts). BR-18b is pinned: end frame BR-18b-END made
+  (Higgsfield edit of its start frame) and on the board as review — its video waits for that Confirm.
+  Board storage hit 1 GB again: user chose to delete old-version files — 28 files (222 MB) removed, each version kept on its card
+  marked deleted with prompt and connector link.
+
+## Where it stands (2026-09-28 18:20)
+- Hooks done. VO master T2. TH-HK1/2/3-BODY v3 still To check.
+- B-roll: 18 videos To check; images To check: BR-02, BR-11, BR-13, BR-14b, BR-15a, BR-15c, BR-18a, MECH-01, BR-18b-END;
+  still to make after their image is confirmed: those nine (+ BR-18b once its end frame is confirmed, first-and-last-frame call).
+- Next: Fix/confirm the videos → rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.
+- Board storage ~870 MB used after the clean-up; the next ~9 videos fit, the final hook variants may not — plan Drive for finals.
 - Open: F3, F4, F11, F12, F13.
