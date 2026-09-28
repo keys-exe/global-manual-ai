@@ -87,6 +87,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   target VO into the clip (video stream-copied), then lip-sync with the same VO. HK1 v2 (lip-synced walk, 5.04s) on the board
   as review; HK1-TH frame (walk's last frame) on the board as review.
 
+  ~14:48: user "REDO ALL IMAGE FOR HOOKS" (asked: all incl. HK1; fault = his face/look). Diagnosed: the hook ID block had
+  drifted from the C1 sheet (no crooked broken nose, no higher left mouth corner, "thick" moustache). Fixed in
+  hooks/build_hooks.py (FACE from the sheet verbatim + face negatives; TH-IMAGE job c3137e88 attached as a second face ref;
+  SKIN-B1/B3, EYES-A, HAIR-A on HK2/HK3-BR2/HK3-TH). Five new images (v2) → board review. Negatives on HK3-BR/BR2/TH were
+  sent shortened (the builder files hold the full lists). HK1 walk + lip-sync kept as versions but must be remade from the
+  new HK1 image after its Confirm; HK1-TH frame superseded.
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.

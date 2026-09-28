@@ -6,9 +6,17 @@ T = MASTER.read_text()
 def S(i):
     m = re.search(r"\*\*`%s`\*\*[^\n]*\n+```\n(.*?)\n```" % re.escape(i), T, re.S)
     return m.group(1).strip()
-ID = ("THE SAME MAN exactly as in the attached reference sheet — narrow hollow-cheeked face, long jaw, deep-set pale grey eyes, long hooked nose, "
-      "thick grey moustache, thin grey hair combed straight back with the scalp showing, short and wiry — unchanged in face, age and build. "
+FACE = ("narrow, hollow-cheeked face with a long jaw, deep-set pale grey eyes under a low brow, and a neat grey moustache, no beard. "
+        "His one marker: a hooked nose broken once and set crooked, a hard bump on the bridge and the tip bent clearly to his left. "
+        "The left side of the mouth sits a little higher than the right. Thin grey hair combed straight back, the pink scalp showing through across the crown, grey at the temples. "
+        "A white British man, sixty-two, short and wiry, narrow shoulders, sinewy forearms, big-knuckled working hands")
+ID = ("THE SAME MAN as the attached reference sheet and the attached talking-head photo — the same face exactly, the face the viewer already knows from the talking head: a " + FACE + ". "
+      "The crooked nose with its tip bent to his left and the higher left corner of the mouth must be visible and identical to the references; never a straightened nose, never a symmetrical mouth, never a thicker moustache, never a different or more handsome face. "
       "Wearing his green-and-brown check flannel shirt with the sleeves rolled to the elbow under the faded navy canvas work apron, grey work trousers and brown leather work boots.")
+AGE = "deep vertical lines between the brows, crow's feet cut deep at both eyes, hollows under the cheekbones, deep horizontal forehead creases, sun spots on the temples"
+SKIN = lambda: [S("SKIN-B1"), S("SKIN-B3").replace("[FOREHEAD-LINES]", "deep horizontal creases").replace("[AGE-FEATURES]", AGE), S("EYES-A"),
+                S("HAIR-A").replace("[HAIR-SPEC]", "thin grey hair combed straight back, the scalp showing through at the crown, a neat grey moustache")]
+FACE_NEG = ", no straightened nose, no symmetrical nose, no symmetrical mouth, no thick or bushy moustache, no beard, no different face from the references, no younger face, no handsome face, no glasses"
 COLOUR = (S("COLOUR-KEY").replace("[LIGHT COLOUR]", "pale east morning daylight, clean and slightly cool")
           .replace("[SET COLOURS]", "whitewashed grey-white brick, grey concrete floor, dark oiled beech, the blue cast-iron vice, black and beige neoprene braces on the steel rail")
           .replace("[WHO]", "he").replace("[WARDROBE COLOURS]", "a green-and-brown check shirt, a faded navy apron and grey trousers")
@@ -28,7 +36,7 @@ HK1 = "\n\n".join([
    .replace("[SUBJECT]", "him").replace("[SCREEN SIDE]", "right").replace("[TIME-OF-DAY QUALITY and the act's light state]", "pale, clean early-morning light").replace("[SIDE]", "the right"),
  COLOUR,
  S("CAP-A"), S("CAP-FILE"),
- "AVOID: " + ", ".join([S("NEG-FRAME"), S("NEG-M1"), S("NEG-FILE"), S("NEG-LIGHT"), S("NEG-SCENE")]) + ", no selfie, no phone in his hand, no arm reaching towards the camera, no readable text, labels or logos, no brand names on the braces",
+ "AVOID: " + ", ".join([S("NEG-FRAME"), S("NEG-M1"), S("NEG-FILE"), S("NEG-LIGHT"), S("NEG-SCENE")]) + ", no selfie, no phone in his hand, no arm reaching towards the camera, no readable text, labels or logos, no brand names on the braces" + FACE_NEG,
 ])
 
 LIGHT_L = lambda subj: (S("LIGHT-SHOT").replace("[SOURCE from the light plan — the window on the room's WALL, or the named practical]", "the low morning sun through the east factory windows along the bench wall")
@@ -41,7 +49,7 @@ def FOC(plane, depth):
             .replace("[DEPTH — the room behind falls to a soft, recognisable shape | everything from near to far stays sharp]", depth))
 BENCH = ("THE SAME WORKSHOP as the attached location plate: the long scarred beech workbench, the blue cast-iron vice bolted to its end, the pegboard of shears, punches and rivet setters on the whitewashed brick, "
          "one of the tall iron-framed factory windows to the left blowing to white, rolls of neoprene on the shelf under the bench, the timber trusses above.")
-NEGS = lambda extra: "AVOID: " + ", ".join([S("NEG-FRAME"), S("NEG-M1"), S("NEG-FILE"), S("NEG-LIGHT"), S("NEG-SCENE")] + extra) + ", no selfie, no phone in his hand, no arm reaching towards the camera, no readable text, labels or logos, no brand names on the braces"
+NEGS = lambda extra: "AVOID: " + ", ".join([S("NEG-FRAME"), S("NEG-M1"), S("NEG-FILE"), S("NEG-LIGHT"), S("NEG-SCENE")] + extra) + ", no selfie, no phone in his hand, no arm reaching towards the camera, no readable text, labels or logos, no brand names on the braces" + FACE_NEG
 SLEEVE = "a plain unbranded beige neoprene knee sleeve cut clean in half across its middle with shears, the two halves curling slightly at the cut edge, the cut showing the neoprene's layered cross-section"
 
 HK2 = "\n\n".join([
@@ -54,6 +62,7 @@ HK2 = "\n\n".join([
  "Clamped in the vice beside him, between him and the lens and to one side so it never covers his face, a half-built generic hinged knee brace: two steel side bars with a round hinge at the knee, one black strap riveted on, the other strap loose and unriveted, the pad not yet fitted — plain, unbranded, unfinished. He does not touch it. "
  "Chest-up, the bench edge across the bottom of the frame, a clear band of brick above his head. " + BENCH,
  LIGHT_L("his face"),
+ *SKIN(),
  COLOUR,
  S("CAP-A"), S("CAP-FILE"),
  NEGS([S("NEG-HAND")]),
@@ -64,7 +73,7 @@ HK3_BR = "\n\n".join([
  ANG("an overhead camera looking straight down", "directly above,", "").replace("of him", "of his hands on the bench"),
  FOC("the hands and what they hold", "the room behind falls to a soft, recognisable shape"),
  "Nobody else is in the frame and no face is seen. He holds the phone flat above the bench in his left hand, looking straight down at the scarred dark beech bench top. On the wood lie " + SLEEVE + ". "
- "His right hand — an old maker's hand, weathered, knuckles thick, nails short with glue under them, the rolled cuff of a green-and-brown check flannel shirt at the wrist — is already lifting one half a few centimetres off the wood, caught mid-lift, thumb and two fingers pinching the cut edge, the half sagging softly under its own weight; the other half still lies on the wood. "
+ "His right hand — the same sixty-two-year-old maker's hand as the attached references — big-knuckled, sinewy, weathered, sun spots on the back of the hand, nails short with glue under them, the rolled cuff of a green-and-brown check flannel shirt at the wrist — is already lifting one half a few centimetres off the wood, caught mid-lift, thumb and two fingers pinching the cut edge, the half sagging softly under its own weight; the other half still lies on the wood. "
  "Around them on the bench, loose and unarranged: a pair of heavy shears lying open, a few neoprene offcuts, a pencil, the edge of the blue cast-iron vice just in one corner. " + BENCH.replace("THE SAME WORKSHOP as the attached location plate: ", "THE SAME BENCH as the attached location plate — ").split(", the pegboard")[0] + ".",
  LIGHT_L("the bench top and his hand").replace(", so the face has a lit side toward the left and a softer shadow side, with a small catchlight in the eyes", ", so the hand and the sleeve halves have a lit side toward the left and a softer shadow side"),
  COLOUR.replace("he wears a green-and-brown check shirt, a faded navy apron and grey trousers", "his shirt cuff is green-and-brown check"),
@@ -81,6 +90,7 @@ HK3_BR2 = "\n\n".join([
  "He sits on the tall stool at the bench, angled to it, and holds up in his right hand, close to the phone, one half of " + SLEEVE + ". The half fills the lower left of the frame and is the sharpest thing in it, the cut edge towards the lens; "
  "behind it his face is soft but recognisable, eyes on the lens, mouth closed, still. The other half lies on the bench in front of him beside the shears. Chest-up, the bench edge across the bottom of the frame. " + BENCH,
  LIGHT_L("his face"),
+ *SKIN(),
  COLOUR,
  S("CAP-A"), S("CAP-FILE"),
  NEGS([S("NEG-HAND")]),
@@ -95,6 +105,7 @@ HK3_TH = "\n\n".join([
  "He sits on the tall stool at the bench, angled to it, turned to the phone, and holds loosely in his right hand, low in the frame and resting on the bench edge, one half of " + SLEEVE + "; the other half lies on the bench beside the shears. "
  "Eyes on the lens, mouth slightly open, about to speak. Chest-up, the bench edge across the bottom of the frame, a clear band of brick above his head. " + BENCH,
  LIGHT_L("his face"),
+ *SKIN(),
  COLOUR,
  S("CAP-A"), S("CAP-FILE"),
  NEGS([S("NEG-HAND")]),
