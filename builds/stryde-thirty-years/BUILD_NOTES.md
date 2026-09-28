@@ -105,6 +105,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   motionPrompt) with HK1 audio 3.77–10.39s → HK1-TH v1 (6.62s, video c35c56a5…) on the board as review.
   HK1 is then complete pending review: walk 0.4–4.17s + HK1-TH. Next: HK2, HK3 videos.
 
+  ~16:00: user "make it 1 video" → Kie kling-3.0 12s one take (walk, stop at the table, talk; 216 Kie cr) + HeyGen lip-sync of
+  the full HK1 line → HK1-FULL v2. User: "use the talking heads voice as voice clip … use seedance 2.5 — hook only" →
+  Seedance 2.5 on Kie, ingredients (HK1 v2 image, P3, C1 sheet, TH-IMAGE, @audio1 = the T2 take's HK1 line), 15s 720p
+  (§28H word budget: 29 words needed 15s brisk), 945 Kie cr → HK1-FULL v3. Body talking heads unchanged (HeyGen).
+  RULE (user): hooks = Seedance 2.5 with the talking-head voice as @audio1; body TH stays HeyGen.
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.
