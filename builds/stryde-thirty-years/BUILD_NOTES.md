@@ -157,7 +157,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   real B-roll** (her rubbing the spot under her bare kneecap in the armchair — act map row updated, angles.py PASS).
   User "generate the confirm images": 18 confirmed images → §35 Kling JSON (`broll/build_video.py`, ≤2,500, preflight PASS all) →
   Kling 3.0 on Kie (`kling-3.0/video`, pro; the Kling connector is out of credits since HK1, no switch back), E6 lengths, one render
-  each, 1,476 Kie credits. All 18 on the board as review (BR-07b in two 15 MB parts). BR-18b is pinned: end frame BR-18b-END made
+  each, 1,350 Kie credits. All 18 on the board as review (BR-07b in two 15 MB parts). BR-18b is pinned: end frame BR-18b-END made
   (Higgsfield edit of its start frame) and on the board as review — its video waits for that Confirm.
   Board storage hit 1 GB again: user chose to delete old-version files — 28 files (222 MB) removed, each version kept on its card
   marked deleted with prompt and connector link.
