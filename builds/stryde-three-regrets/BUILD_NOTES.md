@@ -92,7 +92,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **HK3-01 Fix (user): "SHOW PATIENT DOING SURGERY IN HER KNEES"** → v2: a knee operation in an NHS theatre (new incidental
   location, no reference), the patient under drapes with only the iodine-prepped knee showing, two surgeons' gloved hands
   at the joint, the incision hidden, no blood; table height, profile, past a soft drip stand. v1 prompt in `HK3-01_v1.txt`.
-- **Next:** the user checks the four HK3 images → HK3 clips on Kie (3s each) → the HK3 gate → Act 1.
+- **HK3 images all confirmed (user; HK3-01 = v2 surgery). HK3 clips generated on Kie** (Kling 3.0 Omni, gen 1, preflight
+  PASS, `hooks/HK3/*.call.json`): HK3-01 surgeons' small instrument move · HK3-02 the pill drops into Ken's palm · HK3-03 Joan's
+  look to the clock · HK3-04 Gail's fingertip press 2cm under the kneecap — 3.04s each, 1072×1928, 69 Kie credits each (276).
+  On the board, To check.
+- **Next:** the user's HK3 gate → all hooks done → Act 1 (B-roll BR-003…BR-016 + MECH-010/011/013/014; clips on Kie).
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
 - **Next (old):** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
