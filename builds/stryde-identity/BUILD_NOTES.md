@@ -298,5 +298,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   gain toward -24 dBFS, boost ≤ +14 dB, gain smoothed over 2 s — no pumping): every 3 s within ~4 dB.
 - Mixed with `mix_scene.py` (music -9 dB → same bed level as v4, ducked ~8 dB under the voice) + two-pass loudnorm:
   -14.3 / -14.3 / -14.4 LUFS, -1 dBTP. The upbeat v4 music (MUS-BGM) is replaced.
-- Final board: FINAL-HK1 and HK2 = v5, To check. **HK3 v5 not uploaded: the Final board's 1 GB asset store is full**
-  — waiting for the user's OK to delete old versions.
+- Final board: FINAL-HK1..3 = v5 (63.88 / 64.17 / 64.17s), To check; MUS-BGM v3 = the investigation bed alone.
+  The Final board's 1 GB asset store filled on HK3 → with the user's OK ("Delete v1 + v2") the video files of v1 and v2
+  of all three ads were deleted (30 assets); their version entries stay, marked `deleted`. v3 (no music), v4 (upbeat
+  music) and v5 are kept.
