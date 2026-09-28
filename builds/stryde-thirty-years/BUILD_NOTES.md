@@ -115,12 +115,16 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   Avatar V + step 14 natural-pace trim). Hourly Fix check moved: `trig_01HjYaZr7JdTVsfKyCw1ytUD` (:49 UTC) bound here,
   `trig_01ERbz4gRWaJ3sZ2tPVgNCWC` deleted.
 
-## Where it stands (2026-09-28 16:00)
-- **Board:** cast, locations, voice source, hook images (v2 face fix) all confirmed. VO-T4 cards read `use`, T1–T3 `review`;
-  the talking heads were built on T2 — confirm which take is the master (T4 would re-cut the THs).
-- **Waiting on the user (review):** HK1-FULL v1/v2/v3 (pick the HK1 route — v3 Seedance is the voice-lock test),
-  HK1 v4 walk, HK1-TH v1, TH-HK1/2/3-BODY v3 (gentle trim).
-- **Next:** HK2 and HK3 videos on the route the user picks for HK1 (HK2 image, HK3-BR/BR2/TH images confirmed; HK2 and
-  HK3-TH video `ready`, HK3-BR/BR2 `planned`). Then B-roll (E6 lengths from `TH-HKn+BODY.trim2` word timestamps).
-- Board storage near its 1 GB cap (~560 MB free at 12:55, less now) — upload at source bitrate; Drive if it fills.
+  ~16:05: user "T2, use v3 for HK2 and HK3" → VO-T2 cards `use`, VO-T4 back to review; HK1-FULL `use` (v3). HK2-FULL
+  and HK3-FULL: one Seedance 2.5 take each on Kie (ingredients: start image v2, P2 plate, C1 sheet, TH-IMAGE, @audio1 = the
+  T2 take's own hook line cut from `T2.ALL.mp3` at the cut points), preflight PASS. HK2 10s from HK2 v2 (630 credits,
+  task d5fa3e99…); HK3 13s from HK3-BR2 v2 — sleeve half held to the lens, lowered on "I want to show you", focus taps to
+  his eyes (819 credits, task d04e663b…). Both on the board as review. HK3-BR (overhead halves) unused by the one take —
+  available as an insert over "cut in half" in the edit.
+
+## Where it stands (2026-09-28 16:20)
+- VO master **T2** (confirmed). HK1-FULL v3 confirmed.
+- **Waiting on the user (review):** HK2-FULL v1, HK3-FULL v1; TH-HK1/2/3-BODY v3 (gentle trim).
+- **Next:** after the hooks are confirmed → B-roll (step 7): E6 lengths from `TH-HKn+BODY.trim2` word timestamps first.
+- Board storage near its 1 GB cap — upload at source bitrate; Drive if it fills.
 - Open: F3, F4, F11, F12, F13.
