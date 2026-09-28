@@ -16,10 +16,11 @@ STEP1 = "\n\n".join([
  S("FRAME-SCALE").replace("[SCALE]", "about three quarters") + " " + S("FRAME-PROPPED"),
  "THE SAME MAN exactly as in the attached reference sheet — a white British man of fifty-four, broad square face, light blue-grey eyes set wide apart, a short snub nose, fair ruddy freckled skin, "
  "short sandy-red hair going grey at the sides with a left side parting, clean-shaven, a small flat brown mole high on his right cheekbone, stocky and broad through the chest — unchanged in face, age and build. "
+ "HE IS DRESSED AS A DOCTOR AT WORK, and this is the most important thing in the picture after his face: a crisp white knee-length doctor's lab coat worn ON, open at the front, its white lapels and shoulders clearly visible over a pale blue button-down shirt with the top button undone and no tie, and a black stethoscope hung round his neck over the coat collar, its two tubes and silver chest-piece resting on the front of the coat. "
  "IN THE SAME ROOM as the attached consulting-room photograph: the pale grey wall, the cork noticeboard of leaflets and the blood-pressure unit behind him, soft and out of focus, the examination couch at the right edge. "
  "He sits in his black swivel chair square to the phone, which is propped on the light-wood desk in front of him, forearms resting on the desk edge, hands loosely together, the white knee model at the left edge of the desk, eyes on the lens, about to speak. " +
  S("APPROACH-PRO") + " "
- "Wearing a white knee-length doctor's coat open over a pale blue button-down shirt with the top button undone and no tie, a black stethoscope round his neck, in white and pale blue.",
+ "In white and pale blue: the white coat and the stethoscope are in frame.",
  S("LIGHT-SHOT").replace("[SOURCE from the light plan — the window on the room's WALL, or the named practical]", "The consulting-room window on the room's north wall")
    .replace("[SUBJECT]", "him").replace("[SCREEN SIDE]", "left").replace("[TIME-OF-DAY QUALITY and the act's light state]", "steady overcast morning daylight").replace("[SIDE]", "the left"),
  S("SKIN-B1"),
@@ -28,7 +29,7 @@ STEP1 = "\n\n".join([
  S("HAIR-A").replace("[HAIR-SPEC]", "short sandy-red hair going grey through the sides, the ginger still showing on top, side-parted on the left"),
  S("NECK-A"), S("TEETH-A"),
  S("CAP-A"), S("CAP-FILE"),
- "AVOID: " + ", ".join([S("NEG-FRAME"), S("NEG-SKIN"), S("NEG-TEX"), S("NEG-FINISH"), S("NEG-M1"), S("NEG-LIGHT")]),
+ "AVOID: no doctor in a shirt only, no missing white coat, no coat taken off or hung on the chair, no missing stethoscope, no scrubs, no suit jacket, no jumper over the shirt, " + ", ".join([S("NEG-FRAME"), S("NEG-SKIN"), S("NEG-TEX"), S("NEG-FINISH"), S("NEG-M1"), S("NEG-LIGHT")]),
 ])
 assert "[" not in STEP1, STEP1[STEP1.index("["):][:80]
 

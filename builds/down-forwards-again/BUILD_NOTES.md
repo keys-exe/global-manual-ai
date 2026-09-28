@@ -34,6 +34,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Kie `kling-3.0-omni/image-to-video` (same Kling 3.0 Omni, prompt ≤3,072) via `voice/kie_kling.py` (refuses without preflight PASS), until Kling
   is topped up. Kie 186,607.8 credits. G1–G3 preflight: only 'start image approved' left (D-VOICE-IMG still To check).
 
+- ~20:52 UTC: user "USE A DOCTOR CLOTHES" → D-VOICE-IMG v2 (job b17f293d): white coat + stethoscope locked in the prompt; v1 to Old; G1–G3 point at v2.
+
 ## Where it stands
 - **Confirmed on the board:** D-DOC v2, P-PATIENT, P0–P2 v2, P3, W-L-FRONT/REAR/BENT.
 - **Waiting on the user:** Confirm/Fix D-VOICE-IMG (Kling credits no longer block: Kie substitute).

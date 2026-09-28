@@ -6,6 +6,7 @@
   `CAP-A`, `CAP-FILE`, negatives incl. `NEG-LIGHT`). Attached: D-DOC v2 (`71b20c5a…`) and P3 (`757817ea…`), both confirmed.
 - Render: job `edd8434b-4ebe-463a-bb3d-ea88efbb129e`, 1536×2752, `D_step1_v1.png` (board asset `da9e90d5d31d61c330afe1d96b6b9fc4`).
   **Routing note:** requested `nano_banana_pro`; the job reports `nano_banana_2` (same mismatch as the W-L refs). Recorded, not rerolled. The check is yours.
+- **v2 (user Fix "USE A DOCTOR CLOTHES"):** v1 lost the white coat and stethoscope (shirt only). The wardrobe now sits as a lock straight after the identity line, plus negatives for a shirt-only doctor / missing stethoscope. Job `b17f293d-306f-406c-b145-029402a1c074`, `D_step1_v2.png` (asset `e45fa7fd8800647179e9a721b28b9dc0`), reported `nano_banana_2` again. v1 on the Old board. G1–G3 now start from v2.
 - This frame is also the HeyGen avatar image (§22U step 11). **Rig note:** TH is `FRAME-PROPPED` / `RIG-R3C` (the §22U default for VSL talking heads) — the phone propped on his desk, not a tripod.
 
 ## Step 2 — Kling takes (written, preflighted, NOT SENT — Kling has 3 credits)
