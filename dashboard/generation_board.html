@@ -51,6 +51,8 @@ button{cursor:pointer}
 .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 select.field,input.field{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-height:36px}
 .btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 12px;min-height:36px;font-weight:500;display:inline-flex;align-items:center;gap:6px}
+a.btn{text-decoration:none;color:inherit}
+a.tab{text-decoration:none}
 .btn:hover{border-color:var(--faint)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
 :root[data-theme="dark"] .btn.primary{color:#0E1117}
@@ -134,6 +136,21 @@ select.field,input.field{background:var(--surface);border:1px solid var(--line);
 .s-generating .frame .stripe{animation:pulse 1.4s ease-in-out infinite}
 @keyframes pulse{50%{opacity:.35}}
 @media (prefers-reduced-motion:reduce){.s-generating .frame .stripe{animation:none}.tile:hover .frame{transform:none}}
+/* generating / regenerating: the old render is hidden behind a dark moving gradient until the new one lands (user, 2026-09-28) */
+.genph{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:8px;background:#07080b;color:#e8ebf1;overflow:hidden;border-radius:inherit;text-align:center;padding:10px}
+.genph::before{content:"";position:absolute;inset:-40%;background:radial-gradient(40% 35% at 30% 30%,rgba(120,110,255,.55),transparent 70%),radial-gradient(35% 30% at 70% 65%,rgba(40,200,220,.40),transparent 70%),radial-gradient(30% 30% at 45% 80%,rgba(230,90,200,.30),transparent 70%);filter:blur(18px);animation:genmove 5s ease-in-out infinite alternate}
+.genph::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.07) 50%,transparent 70%);background-size:250% 100%;animation:genshine 2.2s linear infinite}
+.genph>*{position:relative;z-index:1}
+.genph b{font-size:12.5px;font-weight:600;letter-spacing:.02em}
+.genph small{font-size:10.5px;opacity:.7}
+.genph .gdot{width:18px;height:18px;border-radius:50%;border:2px solid rgba(255,255,255,.25);border-top-color:#fff;animation:genspin .9s linear infinite}
+@keyframes genmove{0%{transform:translate(-8%,-6%) rotate(0deg)}100%{transform:translate(8%,6%) rotate(25deg)}}
+@keyframes genshine{0%{background-position:150% 0}100%{background-position:-100% 0}}
+@keyframes genspin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.genph::before,.genph::after,.genph .gdot{animation:none}}
+.frame.gen>*:not(.genph):not(.stripe){z-index:1}
+.v-media .genph{position:relative;width:100%;height:100%;border-radius:12px}
+.v-th .genph{padding:0}
 
 /* side widgets */
 .balances{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
@@ -670,7 +687,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 <div class="wrap">
   <header class="top">
     <div>
-      <div class="eyebrow">AI Prompt Engineer · Generation Board</div>
+      <div class="eyebrow" id="eyebrow">AI Prompt Engineer · Generation Board</div>
       <h1 id="buildTitle">Loading build…</h1>
       <div class="meta" id="buildMeta"></div>
     </div>
@@ -684,6 +701,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
     <button class="tab" role="tab" type="button" data-view="manual" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 4.5 1.5 1.5 2.5-3M2.5 11l1.5 1.5 2.5-3M9 5h4.5M9 11.5h4.5"/></svg><span>Manual run</span><span class="tab-badge" id="needsBadge" hidden></span></button>
     <button class="tab" role="tab" type="button" data-view="plan" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 1.8h5.5l3 3v9.4H4z"/><path d="M6.5 8h4M6.5 10.8h4" stroke-linecap="round"/></svg><span>Plan</span></button>
     <button class="tab" role="tab" type="button" data-view="final" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="1.8" width="10" height="12.4" rx="1.8"/><path d="M6.8 5.6v4.8L10.6 8z" fill="currentColor"/></svg><span>Final output</span><span class="tab-badge" id="finalBadge" hidden></span></button>
+    <span id="boardLinks" style="display:contents"></span>
   </div>
 
   <div class="banner" id="banner" hidden></div>
@@ -716,6 +734,15 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
 <script>
+// One template, four boards per build (user, 2026-09-28): each published copy sets its role here.
+//   current — the confirmed renders and the ones to check (Board, Manual run)
+//   old     — every version that was replaced by a Fix or not chosen, read-only
+//   final   — the finished videos (Final output)
+//   plans   — the absorption, act map, wardrobe map and other step documents (Plan)
+// The build doc's `boards` {current, old, final, plans} links the four; a board without it shows all tabs as before.
+const BOARD_ROLE = "current";
+const ROLE_VIEWS = {current:["board","manual","plan","final"], old:["board","manual"], final:["final"], plans:["plan"]};
+const BOARD_NAMES = {current:"Current", old:"Old versions", final:"Final output", plans:"Plan"};
 const STAGES = [
   {key:"absorption", name:"Absorption", folder:"01_ABSORPTION", sub:"What the reference ad does, in plain words", kind:"doc"},
   {key:"cast",       name:"Cast",       folder:"02_CAST",       sub:"Character sheets, checked image by image", kind:"image"},
@@ -746,6 +773,10 @@ const I = {
   ok:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3.5 8.5 3 3 6-7"/></svg>',
   fix:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M10.5 2.5l3 3-8 8H2.5v-3z"/></svg>',
   info:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 7.2v4M8 4.8v.1" stroke-linecap="round"/></svg>',
+  grid:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="5" height="5" rx="1.2"/><rect x="9" y="2" width="5" height="5" rx="1.2"/><rect x="2" y="9" width="5" height="5" rx="1.2"/><rect x="9" y="9" width="5" height="5" rx="1.2"/></svg>',
+  play:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="1.8" width="10" height="12.4" rx="1.8"/><path d="M6.8 5.6v4.8L10.6 8z" fill="currentColor"/></svg>',
+  doc:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 1.8h5.5l3 3v9.4H4z"/><path d="M6.5 8h4M6.5 10.8h4" stroke-linecap="round"/></svg>',
+  box:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4.5h11v2h-11zM3.5 6.5v6h9v-6M6.5 9h3"/></svg>',
   back:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6.5h6a3 3 0 0 1 0 6H6M6 3.5l-3 3 3 3"/></svg>',
 };
 const ICONS = {
@@ -771,6 +802,13 @@ function lsSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
 function toast(msg){const t=$("#toast");t.textContent=msg;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(()=>t.hidden=true,2200)}
 
 function currentBuild(){return state.builds.find(b=>b.id===state.build)||state.builds[0]||null}
+function boardsOf(b){return (b&&b.boards)||(b&&b.archiveUrl?{old:b.archiveUrl}:{})}
+// Views this board shows itself: on the current board, Plan and Final output move to their own boards once linked
+function views(){const b=currentBuild(), l=boardsOf(b);return (ROLE_VIEWS[BOARD_ROLE]||ROLE_VIEWS.current).filter(v=>BOARD_ROLE!=="current"||!(v==="plan"&&l.plans||v==="final"&&l.final))}
+function boardLinks(){
+  const l=boardsOf(currentBuild()), ic={current:I.grid,old:I.box,final:I.play,plans:I.doc};
+  return ["current","plans","final","old"].filter(r=>r!==BOARD_ROLE&&l[r]).map(r=>`<a class="tab" href="${esc(l[r])}" target="_blank" rel="noopener">${ic[r]||""}<span>${BOARD_NAMES[r]} ↗</span></a>`).join("");
+}
 function buildGens(){const b=currentBuild();return b?state.gens.filter(g=>g.build===b.id):[]}
 // a VO take not picked for a part that already has its confirmed take: kept as a version, never counted as waiting
 function spareTake(g,gens){return g.stage==="vo"&&g.status!=="use"&&(gens||state.gens).some(o=>o.stage==="vo"&&o.id!==g.id&&o.build===g.build&&voPart(o)===voPart(g)&&o.status==="use")}
@@ -935,13 +973,17 @@ function renderInner(){
     <div class="kpi"><span class="k">Fixing</span><span class="v" style="color:var(--regen)">${regen}</span><span class="s">Two tries per fault, then you</span></div>
     <div class="kpi"><span class="k">Credits spent</span><span class="v">${num(credits)}</span><span class="s">Logged on generations</span></div>`;
 
-  document.querySelectorAll(".tabs .tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.view===state.view));
-  {const n=needsYouCount(gens), bd=$("#needsBadge"); bd.textContent=n; bd.hidden=!n; bd.title=`${n} waiting for you`}
+  const vs=views(); if(!vs.includes(state.view)) state.view=vs[0];
+  $("#eyebrow").textContent=BOARD_ROLE==="current"&&!Object.keys(boardsOf(b)).length?"AI Prompt Engineer · Generation Board":"Generation Board · "+BOARD_NAMES[BOARD_ROLE];
+  document.querySelectorAll(".tabs button.tab").forEach(t=>{t.hidden=!vs.includes(t.dataset.view);t.setAttribute("aria-selected",t.dataset.view===state.view)});
+  {const h=boardLinks(); if($("#boardLinks").innerHTML!==h) $("#boardLinks").innerHTML=h}
+  if(BOARD_ROLE==="old") showBanner("Old versions: every render that a Fix replaced or that wasn't chosen, kept at full quality. Nothing here needs checking. The confirmed ones and the ones to check are on the Current board.");
+  {const n=BOARD_ROLE==="old"?0:needsYouCount(gens), bd=$("#needsBadge"); bd.textContent=n; bd.hidden=!n; bd.title=`${n} waiting for you`}
   $("#boardView").hidden=state.view!=="board";
   $("#manualView").hidden=state.view!=="manual";
   $("#planView").hidden=state.view!=="plan";
   $("#finalView").hidden=state.view!=="final";
-  $("#summary").hidden=state.view==="plan"||state.view==="final";
+  $("#summary").hidden=state.view==="plan"||state.view==="final"||BOARD_ROLE==="old";
   {const n=gens.filter(g=>isFinal(g)&&stepState(g,"file")==="review").length, bd=$("#finalBadge"); bd.textContent=n; bd.hidden=!n; bd.title=`${n} finished video${n===1?"":"s"} to check`}
   if(state.view==="manual"){renderManual(gens);return}
   if(state.view==="final"){renderFinal(gens);return}
@@ -950,7 +992,7 @@ function renderInner(){
     if(sig!==state.planSig||!$("#planView").children.length){state.planSig=sig;renderPlan(gens)}
     return}
 
-  const ST=stagesFor(b,gens);
+  const ST=stagesFor(b,gens).filter(s=>BOARD_ROLE!=="old"||gens.some(g=>g.stage===s.key));
   $("#pipe").style.setProperty("--n",ST.length);
   $("#pipe").innerHTML=ST.map((s,i)=>{
     const sg=gens.filter(g=>g.stage===s.key), done=stageDone(s,b,gens,sg);
@@ -986,7 +1028,7 @@ function renderInner(){
       <div class="w-body">${body}</div></section>`;
   }).join("");
   const bal=b&&b.balances||{};
-  if(Object.keys(bal).length){
+  if(Object.keys(bal).length&&BOARD_ROLE==="current"){
     html+=`<section class="widget"><div class="w-head"><span class="w-num">¤</span><div class="w-title"><h2>Credit balances</h2><span class="sub">${b.balancesAt?"As of "+esc(b.balancesAt):"Last recorded"}</span></div></div>
       <div class="w-body"><div class="balances">${Object.entries(bal).map(([k,v])=>`<div class="bal"><div class="k">${esc(k)}</div><div class="v">${num(v)}</div></div>`).join("")}</div>
       <p class="note">Images → Higgsfield (Kie if out) · Kling → Kling · Seedance → Kie.</p></div></section>`;
@@ -1008,6 +1050,8 @@ function versionsOf(g,k){
   if(g[d.asset]&&!arr.some(x=>x.asset===g[d.asset])) arr.push({...snapshot(g,k),v:arr.reduce((m,x)=>Math.max(m,x.v),0)+1});
   return arr.sort((a,b)=>a.v-b.v);
 }
+// A version moved to the build's Old versions board to free space: its file lives there, the entry stays here.
+function archiveLink(x){const u=boardsOf(currentBuild()).old;return u?u+(x&&x.archiveAsset?"#"+x.archiveAsset:""):""}
 function currentV(g,k){const c=versionsOf(g,k).find(x=>x.asset===g[STEP[k].asset]);return c?c.v:null}
 function fetchVer(ver){return Array.isArray(ver.parts)&&ver.parts.length>1?Promise.all(ver.parts.map(fetchAsset)).then(bs=>new Blob(bs,{type:ver.type||bs[0].type})):fetchAsset(ver.asset)}
 const joined={};
@@ -1015,8 +1059,10 @@ function joinParts(ids,type,onProgress){
   const key=ids.join(",");
   if(!joined[key]){
     let done=0;
-    joined[key]=Promise.all(ids.map(id=>fetchAsset(id).then(b=>{done++;onProgress&&onProgress(done,ids.length);return b})))
+    joined[key]=Promise.all(ids.map(id=>fetchRetry(id).then(b=>{done++;onProgress&&onProgress(done,ids.length);return b})))
       .then(bs=>URL.createObjectURL(new Blob(bs,{type:type||bs[0].type||"application/octet-stream"})));
+    // a failed join is not kept, so the next render or scroll tries again instead of staying stuck
+    joined[key].catch(()=>{delete joined[key]});
   }
   return joined[key];
 }
@@ -1027,11 +1073,14 @@ const vis=("IntersectionObserver" in window)?new IntersectionObserver(es=>es.for
 function tryPlay(v){if(v.dataset.noauto) return;v.muted=v.muted||!v.dataset.sound;const p=v.play();if(p&&p.catch) p.catch(()=>{})}
 function loadVideo(v){
   if(v.dataset.parts&&!v.getAttribute("src")){
-    const wrap=v.parentElement, note=document.createElement("span");
+    if(v.dataset.loading) return; v.dataset.loading="1";
+    const wrap=v.parentElement; if(wrap) wrap.querySelectorAll(".vload").forEach(x=>x.remove());
+    const note=document.createElement("span");
     note.className="vload";note.textContent="Loading full quality…";wrap&&wrap.appendChild(note);
     joinParts(v.dataset.parts.split(","),v.dataset.ptype,(d,n)=>{note.textContent=`Loading full quality… ${d}/${n}`})
       .then(u=>{v.src=u;note.remove();tryPlay(v)})
-      .catch(()=>{note.textContent="Couldn't load. Use Download."});
+      .catch(()=>{delete v.dataset.loading;note.textContent="Couldn't load. Tap to try again, or use Download.";note.style.cursor="pointer";
+        note.addEventListener("click",e=>{e.stopPropagation();loadVideo(v)},{once:true})});
   } else tryPlay(v);
 }
 function hydrate(root){
@@ -1062,10 +1111,11 @@ function tile(g){
   const st=g.status||"planned", stage=STAGES.find(s=>s.key===g.stage)||STAGES[6];
   const kind=g.kind||(isAudio(g)?"audio":String(g.videoType||"").startsWith("video/")?"video":stage.kind);
   const specs=[g.duration?`${g.duration}s`:"", g.regens?`R${g.regens}`:""].filter(Boolean);
-  const img=g.imageAsset?`<img class="bg" ${srcAttr(g,"image")} alt="" loading="lazy">`:"";
+  const pk=flow(g).find(k=>pending(g,k));
+  const img=!pk&&g.imageAsset?`<img class="bg" ${srcAttr(g,"image")} alt="" loading="lazy">`:"";
   const first=flow(g).find(k=>g[STEP[k].asset])||flow(g)[0];
   return `<div class="tile s-${st}">
-    <button class="frame${img?" has-img":""}" type="button" data-viewm="${esc(g.id)}" data-step="${first}" aria-label="View ${esc(g.beat||"")}">${img}<span class="stripe"></span>${ICONS[kind]||""}
+    <button class="frame${img?" has-img":""}${pk?" gen":""}" type="button" data-viewm="${esc(g.id)}" data-step="${pk||first}" aria-label="View ${esc(g.beat||"")}">${pk?genPanel(g,pk,true):img}<span class="stripe"></span>${ICONS[kind]||""}
       <div><div class="kind">${esc(kind)}</div><div class="beat">${esc(g.beat||"—")}</div></div>
       <div class="line">${esc(g.line||g.title||"")}</div>
       <div class="dur"><span>${esc(g.model?shortModel(g.model):"")}</span><span>${specs.join(" · ")}</span></div></button>
@@ -1187,6 +1237,9 @@ function flow(g){
   if(["hooks","talking","broll"].includes(g.stage)) return ["image","video"];
   return ["file"];
 }
+// A step being generated or regenerated shows the generating panel, never its old render (Current and Final boards).
+function pending(g,k){return BOARD_ROLE!=="old"&&["bad","gen"].includes(stepState(g,k))}
+function genPanel(g,k,small){const re=versionsOf(g,k).length>0||stepState(g,k)==="bad";return `<div class="genph" role="status" aria-label="${re?"Regenerating":"Generating"}"><span class="gdot" aria-hidden="true"></span>${small?"":`<b>${re?"Regenerating":"Generating"}…</b><small>The new ${STEP[k].label.toLowerCase()} appears here</small>`}</div>`}
 // Each step reads and writes its own fields on the generation document.
 const STEP = {
   image:{label:"Image", accept:"image/*", asset:"imageAsset", type:"imageType", prompt:"imagePrompt", model:"imageModel", defModel:"nano_banana_pro", st:"imageStatus", fault:"imageFault", regens:"imageRegens", ok:"Confirm image",
@@ -1237,7 +1290,7 @@ function renderManual(gens){
       <div class="bar"><i style="width:${t?d/t*100:0}%;background:var(--use)"></i></div>
       <span class="c">${d} of ${t} done</span></button>`};
   $("#mbar").innerHTML=`<nav class="pipe" style="--n:${gs.length+1}" aria-label="Groups">${stepM("all","All","Everything",allP[0],allP[1],0)}${gs.map((x,i)=>{const [d,t,w]=prog(x);return stepM(x.key,String(i+1).padStart(2,"0"),x.label,d,t,w)}).join("")}</nav>
-    <div class="mtools"><label class="switch"><input type="checkbox" data-needs="1" ${state.mneeds?"checked":""}><span class="sw-track"><span class="sw-knob"></span></span><span>Only what needs me <b>${needsYouCount(gens)}</b></span></label></div>`;
+    <div class="mtools"${BOARD_ROLE==="old"?" hidden":""}><label class="switch"><input type="checkbox" data-needs="1" ${state.mneeds?"checked":""}><span class="sw-track"><span class="sw-knob"></span></span><span>Only what needs me <b>${needsYouCount(gens)}</b></span></label></div>`;
   const html=gs.map(x=>{
     if(state.mstage!=="all"&&state.mstage!==x.key) return "";
     const steps=["image","video","file"].filter(k=>x.items.some(g=>flow(g).includes(k)));
@@ -1292,19 +1345,19 @@ function when(ms){if(!ms) return "—";const d=new Date(ms);return isNaN(d)?"—
 
 function mediaCard(g,k){
   const d=STEP[k], s=stepState(g,k), ro=state.readOnly||!state.assets;
-  const locked=k==="video"&&stepState(g,"image")!=="ok";
+  const locked=BOARD_ROLE!=="old"&&k==="video"&&stepState(g,"image")!=="ok";
   const asset=g[d.asset], type=g[d.type]||"";
   const prompt=g[d.prompt]||"", model=g[d.model]||d.defModel;
   const busy=state.busy[g.id+":"+k];
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
-  const imgBehind=locked&&g.imageAsset?`<img class="ghost" ${srcAttr(g,"image")} alt="">`:"";
-  const media=asset?(isVid?`<video ${srcAttr(g,k)} muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">⤢</span>`:type.startsWith("image/")||k==="image"?`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
+  const imgBehind=locked&&g.imageAsset&&!pending(g,"image")?`<img class="ghost" ${srcAttr(g,"image")} alt="">`:"";
+  const media=pending(g,k)?genPanel(g,k):asset?(isVid?`<video ${srcAttr(g,k)} muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">⤢</span>`:type.startsWith("image/")||k==="image"?`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
     locked?`${imgBehind}<span class="lockmsg">🔒 Confirm the image first</span>`:
     `<span>${s==="bad"?"Regenerating…":prompt?"Waiting for render":"Waiting for prompt"}${ro?"":`<br><small>drop a file here to add it</small>`}</span>`;
   const limit=/kling/i.test(model)&&k!=="image"?2500:null;
   const fixing=state.faultOpen===g.id+":"+k;
   const cls=locked?"locked":s==="ok"?"ok":s==="bad"||s==="gen"?"bad":s==="review"?"now":"";
-  const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="gen"?`<span class="pill s-generating">${g[d.fault]?"Regenerating":"Generating"}</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">${prompt?"Prompt ready":"Waiting"}</span>`;
+  const chip=BOARD_ROLE==="old"?`<span class="pill s-regenerate">Not used</span>`:locked?`<span class="pill s-planned">Locked</span>`:s==="gen"?`<span class="pill s-generating">${g[d.fault]?"Regenerating":"Generating"}</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">${prompt?"Prompt ready":"Waiting"}</span>`;
   const size=g[d.size]?(k==="image"?esc(g[d.size]):`${esc(g[d.size])}s`):"—";
   const specs=[
     ["Connector",esc(g[d.conn]||d.defConn||"—")],
@@ -1315,7 +1368,7 @@ function mediaCard(g,k){
     ["Generated",when(g[d.at])],
   ];
   if(k==="video"&&g.videoOut!=null&&(g.videoOutV==null||g.videoOutV===currentV(g,"video"))) specs.push(["Clean part",`0–${Number(g.videoOut).toFixed(1)}s`,"wide"]);
-  const canAct=!state.readOnly&&!locked&&s!=="gen";
+  const canAct=!state.readOnly&&!locked&&!pending(g,k);
   return `<article class="mc ${cls}" id="mc-${esc(g.id)}-${k}">
     <div class="mc-head">
       <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}${versionsOf(g,k).length>1?`<span class="vbadge" title="${versionsOf(g,k).length} versions">v${currentV(g,k)}</span>`:""}</span></div>
@@ -1347,6 +1400,8 @@ function extFor(type,k){
 }
 function fileName(g,k){const b=currentBuild();return `${b?b.id:"build"}_${g.beat||g.id}_${k}.${extFor(g[STEP[k].type],k)}`}
 async function fetchAsset(id){const r=await fetch("/_blob/"+id);if(!r.ok) throw new Error("fetch "+r.status);return r.blob()}
+// a big file is many 15 MB pieces: one dropped request is retried before the file counts as failed
+async function fetchRetry(id){for(let i=0;;i++){try{return await fetchAsset(id)}catch(e){if(i>=3) throw e;await new Promise(r=>setTimeout(r,800*2**i))}}}
 async function saveFile(name,blob){
   if(state.downloads){
     try{await state.downloads.save({filename:name,data:blob});toast("Saved "+name);return}
@@ -1359,6 +1414,7 @@ async function saveFile(name,blob){
 async function downloadOne(g,k,vnum){
   const id=g[STEP[k].asset]; if(!id) return;
   const x=vnum?versionsOf(g,k).find(y=>y.v===vnum):null;
+  if(x&&x.archived){toast("v"+x.v+" is on the Old versions board. Open it there to download.");return}
   if(x&&x.asset!==id){
     const name=fileName(g,k).replace(/(\.[a-z0-9]+)$/i,`_v${x.v}$1`);
     toast("Preparing "+name+"…");
@@ -1482,7 +1538,7 @@ async function setCleanOut(on){
   try{await state.db.doc("generations/"+g.id).update(on?{videoOut:t,videoOutV:currentV(g,"video"),updatedAt:Date.now()}:{videoOut:null,videoOutV:null,updatedAt:Date.now()});
     toast(on?`Only 0–${t.toFixed(1)}s of this clip will be used`:"The whole clip will be used")}catch(e){handleWriteError(e)}
 }
-function openViewer(id,step){const g=state.gens.find(x=>x.id===id);state.viewer={id,step,ver:null,menu:false,scope:g?viewScope(g):null};renderViewer()}
+function openViewer(id,step){const g=state.gens.find(x=>x.id===id);state.viewer={id,step,ver:null,menu:false,scope:g?viewScope(g):null};state.viewerSig=JSON.stringify(g||null);renderViewer()}
 function closeViewer(){if(!state.viewer) return;state.viewer=null;const v=$("#viewer");v.hidden=true;v.innerHTML=""}
 function moveViewer(dir){
   const v=state.viewer; if(!v) return;
@@ -1496,7 +1552,8 @@ function renderViewer(){
   const vers=versionsOf(g,k), cur=currentV(g,k);
   const shown=(v.ver&&vers.find(x=>x.v===v.ver))||vers.find(x=>x.v===cur)||null;
   const older=shown&&shown.v!==cur;
-  const asset=shown&&shown.asset, type=(shown&&shown.type)||g[d.type]||"";
+  const moved=!!(shown&&shown.archived);
+  const asset=shown&&!moved&&shown.asset, type=(shown&&shown.type)||g[d.type]||"";
   const list=viewerList(k), i=list.findIndex(x=>x.id===g.id);
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
   // a video in the viewer is always loaded into memory first, so it can be seeked frame by frame
@@ -1504,14 +1561,15 @@ function renderViewer(){
   const src=!shown?"":isVid&&!type.startsWith("audio/")?`data-parts="${esc(vids.join(","))}" data-ptype="${esc(shown.type||"")}"`:srcFrom(shown.asset,shown.parts,shown.type);
   const locked=k==="video"&&stepState(g,"image")!=="ok";
   const isAud=type.startsWith("audio/");
-  const media=asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
+  const media=pending(g,k)&&!older?genPanel(g,k):asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
+    moved?`<div class="v-empty"><div style="display:grid;gap:12px;justify-items:center">${I.box}<span>v${shown.v} is on the Old versions board, kept at full quality. Nothing was shrunk or deleted.</span>${archiveLink(shown)?`<a class="btn" href="${esc(archiveLink(shown))}" target="_blank" rel="noopener">Open in Old versions ↗</a>`:""}</div></div>`:
     `<div class="v-empty">${locked?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
   const s=stepState(g,k);
   const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
   const grp=groupOf(g);
   // frame check: only for a video, on the version being shown
   const outV=cleanOut(g,k,shown);
-  const checkBar=asset&&isVid&&k!=="file"?`<div class="v-check">
+  const checkBar=asset&&isVid&&k!=="file"&&!(pending(g,k)&&!older)?`<div class="v-check">
       <div class="v-frames" id="vframes">${Array.from({length:8},(_,n)=>`<button type="button" class="v-fr" data-vseek="${n}" aria-label="Frame ${n+1} of 8"><canvas width="90" height="160"></canvas><span class="t">…</span></button>`).join("")}</div>
       <div class="v-ctl">
         <button class="btn small${v.rate===0.5?" on":""}" type="button" data-vrate="1" aria-pressed="${v.rate===0.5}">0.5x</button>
@@ -1520,11 +1578,11 @@ function renderViewer(){
       </div></div>`:"";
   const sizeTxt=x=>x.size==null||x.size===""?"":(k==="image"?String(x.size):`${x.size}s`);
   const item=x=>{
-    const thumb=(x.type||"").startsWith("video/")||(k!=="image"&&!(x.type||"").startsWith("image/"))?`<span class="vt vt-vid">▶</span>`:`<img class="vt" ${srcFrom(x.asset,x.parts,x.type)} alt="">`;
+    const thumb=x.archived?`<span class="vt vt-vid" title="On the Old versions board">${I.box}</span>`:(x.type||"").startsWith("video/")||(k!=="image"&&!(x.type||"").startsWith("image/"))?`<span class="vt vt-vid">▶</span>`:`<img class="vt" ${srcFrom(x.asset,x.parts,x.type)} alt="">`;
     const meta=[when(x.at),x.model,x.connector,sizeTxt(x)].filter(y=>y&&y!=="—").map(esc).join(" · ");
     return `<button type="button" class="v-item" role="option" data-vpick="${x.v}" aria-selected="${x.v===(shown&&shown.v)}">
       ${thumb}<span class="vi-txt"><span class="vi-t">v${x.v}${x.v===cur?`<span class="vi-cur">Current</span>`:""}</span>
-      <span class="vi-m">${meta||"—"}</span>${x.note?`<span class="vi-n">Fix: ${esc(x.note)}</span>`:""}</span></button>`;
+      <span class="vi-m">${meta||"—"}${x.archived?" · In Old versions":""}</span>${x.note?`<span class="vi-n">Fix: ${esc(x.note)}</span>`:""}</span></button>`;
   };
   const verUi=vers.length?`<div class="v-ver">
       <button type="button" class="v-ver-btn" data-vmenu="1" aria-haspopup="listbox" aria-expanded="${!!v.menu}">
@@ -1543,7 +1601,7 @@ function renderViewer(){
     ["Original",x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">Open ↗</a>`:"—"],
   ];
   const prompt=g[d.prompt]||"";
-  const canAct=!state.readOnly&&!locked&&s!=="gen"&&!older&&!!asset;
+  const canAct=!state.readOnly&&!locked&&!pending(g,k)&&!older&&!!asset;
   const panel=`<aside class="v-panel" data-shown="${!!v.details}" aria-label="Details">
       <div class="ps"><span class="lbl">Status</span><div>${chip}${older?` <span class="pill s-planned">Viewing v${shown.v}</span>`:""}</div></div>
       ${g.line?`<div class="ps"><span class="lbl">Script line</span><div class="v-quote">“${esc(g.line)}”</div></div>`:""}
@@ -1560,14 +1618,14 @@ function renderViewer(){
       <div class="v-actions">
         ${canAct&&!v.fix?`<button class="btn okv" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}">${I.ok} Confirm</button>
         <button class="btn badv" type="button" data-vfix="1">${I.fix} Fix</button>`:""}
-        ${older&&!state.readOnly?`<button class="btn full" type="button" data-vrestore="${shown.v}">${I.back} Use this version</button>`:""}
-        <button class="btn primary full" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${shown?`data-ver="${shown.v}"`:"disabled"}>${I.dl} Download${older?` v${shown.v}`:""}</button>
+        ${older&&!moved&&!state.readOnly?`<button class="btn full" type="button" data-vrestore="${shown.v}">${I.back} Use this version</button>`:""}
+        ${moved?(archiveLink(shown)?`<a class="btn primary full" href="${esc(archiveLink(shown))}" target="_blank" rel="noopener">${I.box} Open v${shown.v} in Old versions</a>`:""):`<button class="btn primary full" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${shown?`data-ver="${shown.v}"`:"disabled"}>${I.dl} Download${older?` v${shown.v}`:""}</button>`}
       </div>
     </aside>`;
   const thumbs=list.map(y=>{
     const hasImg=!!y.imageAsset, st=stepState(y,k);
     const col=st==="ok"?"var(--use)":st==="bad"||st==="gen"?"var(--regen)":st==="review"?"var(--review)":"#8a92a1";
-    const im=hasImg?`<img ${srcAttr(y,"image")} alt="" loading="lazy">`:`<span class="pl">${esc(y.beat||"")}</span>`;
+    const im=pending(y,"image")?genPanel(y,"image",true):hasImg?`<img ${srcAttr(y,"image")} alt="" loading="lazy">`:`<span class="pl">${esc(y.beat||"")}</span>`;
     return `<button type="button" class="v-th" data-vgo="${esc(y.id)}" aria-current="${y.id===g.id}" aria-label="${esc(y.beat||"")}" title="${esc((y.beat||"")+" · "+(y.title||""))}">${im}${k==="video"&&hasImg?`<span class="pl">▶</span>`:""}<span class="dot" style="--st:${col}"></span></button>`;
   }).join("");
   const old=document.getElementById("vfault"), draft=old?old.value:"";
@@ -1631,10 +1689,10 @@ function finalCard(x){
     <div class="media"><span>Appears here when the edit is done</span></div></article>`;
   const k="file", s=stepState(g,k), asset=g.videoAsset, type=g.videoType||"";
   const isVid=!type||type.startsWith("video/");
-  const fixing=state.faultOpen===g.id+":"+k, canAct=!state.readOnly&&s!=="gen";
+  const fixing=state.faultOpen===g.id+":"+k, canAct=!state.readOnly&&!pending(g,k);
   const cls=s==="ok"?"ok":s==="bad"||s==="gen"?"bad":s==="review"?"now":"";
   const chip=s==="gen"?`<span class="pill s-generating">${g.fault?"Re-cutting":"Cutting"}</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Not cut yet</span>`;
-  const media=asset?(isVid?`<video ${srcAttr(g,k)} controls playsinline preload="metadata" data-noauto="1"></video>`:`<span>${esc(type)}</span>`):`<span>${s==="bad"?"Re-cutting…":"Appears here when the edit is done"}</span>`;
+  const media=pending(g,k)?genPanel(g,k):asset?(isVid?`<video ${srcAttr(g,k)} controls playsinline preload="metadata" data-noauto="1"></video>`:`<span>${esc(type)}</span>`):`<span>${s==="bad"?"Re-cutting…":"Appears here when the edit is done"}</span>`;
   const specs=[
     ["Length",g.duration?secs(g.duration):"—"],
     ["Size",esc(g.videoRes||g.imageRes||"—")],
@@ -1667,6 +1725,10 @@ function renderFinal(gens){
       <span class="n">${String(i+1).padStart(2,"0")}${ok?" ✓":""}${st==="review"?`<span class="g-wait" title="Waiting for you">1</span>`:""}</span><span class="t">${esc(x.label)}</span>
       <div class="bar"><i style="width:${ok?100:x.g&&x.g.videoAsset?50:0}%;background:var(${ok?"--use":"--review"})"></i></div>
       <span class="c">${ok?"Confirmed":st==="review"?"Check it":st==="bad"?"Fixing":st==="gen"?"Cutting":"Not cut yet"}</span></button>`}).join("")}</nav>`:"";
+  // redraw only when a finished video changed, so an update elsewhere on the board never resets the one being watched
+  const sig=JSON.stringify([state.faultOpen,state.readOnly,slots.map(x=>[x.key,x.label,x.g])]);
+  if(sig===state.finalSig&&$("#finalView").children.length) return;
+  state.finalSig=sig;
   const fi=document.querySelector("#finalView [data-faultform] textarea"), draft=fi?fi.value:"", had=fi&&document.activeElement===fi;
   $("#finalView").innerHTML=`${strip}
     <section class="widget wide" id="w-final">
@@ -1739,8 +1801,8 @@ function absorptionSummary(){
     <div class="abs-foot">
       ${absDone()?`<span class="pill s-use">Confirmed</span>`:`<span class="pill s-review">Check it</span>`}
       <span class="grow"></span>
-      ${!absDone()&&!state.readOnly?`<button class="btn small ok" type="button" data-absok="1">${I.ok} Confirm</button>`:""}
-      <button class="btn small primary" type="button" data-popen="absorption">Full sheet in Plan →</button></div></div>`;
+      ${boardsOf(currentBuild()).plans&&BOARD_ROLE!=="plans"?`<a class="btn small primary" href="${esc(boardsOf(currentBuild()).plans)}" target="_blank" rel="noopener">Full sheet in Plan ↗</a></div></div>`:`${!absDone()&&!state.readOnly?`<button class="btn small ok" type="button" data-absok="1">${I.ok} Confirm</button>`:""}
+      <button class="btn small primary" type="button" data-popen="absorption">Full sheet in Plan →</button></div></div>`}`;
 }
 const noRef=t=>String(t||"").replace(/\s*\((?:[^()]*§[^()]*)\)/g,"").replace(/\s*§\s*[\w.–-]+/g,"").replace(/\s{2,}/g," ").trim();
 function renderPlan(gens){
@@ -1990,6 +2052,8 @@ $("#scrim").addEventListener("click",closeDrawer);
 
 /* boot */
 state.build=/^#[A-Za-z0-9_.~-]+$/.test(location.hash)&&!["#manual","#plan","#final"].includes(location.hash)?location.hash.slice(1):null;
+if(/^[0-9a-f]{32}$/.test(state.build||"")){state.jumpAsset=state.build;state.build=null}
+if(BOARD_ROLE==="old") state.readOnly=true;
 state.view=["#manual","#plan","#final"].includes(location.hash)?location.hash.slice(1):(["manual","plan","final"].includes(lsGet("gb.view"))?lsGet("gb.view"):"board");
 function setSync(live,txt){$("#syncDot").classList.toggle("live",live);$("#syncTxt").textContent=txt}
 function offline(){
@@ -2017,7 +2081,10 @@ render();
   },()=>{});
   db.collection("generations").onSnapshot(snap=>{
     state.gens=snap.docs.map(d=>{const g={id:d.id,...d.data()};if(g.stage==="voice"&&/^VO-T/i.test(g.beat||"")) g.stage="vo";return g});
-    setSync(true,"Live");render();if(state.viewer) renderViewer();
+    setSync(true,"Live");render();
+    // the open viewer is redrawn only when the shown generation changed, so a video playing in it keeps playing
+    if(state.viewer){const vs=JSON.stringify(state.gens.find(x=>x.id===state.viewer.id)||null);if(vs!==state.viewerSig){state.viewerSig=vs;renderViewer()}}
+    if(state.jumpAsset){const id=state.jumpAsset;for(const g of state.gens) for(const k of flow(g)){const x=versionsOf(g,k).find(v=>v.asset===id);if(x){state.jumpAsset=null;openViewer(g.id,k);state.viewer.ver=x.v;renderViewer();break}}}
     if(state.editing&&!state.editing._new&&!state.gens.some(g=>g.id===state.editing.id)) closeDrawer();
   },err=>{setSync(false,"Sync stopped")});
 })();

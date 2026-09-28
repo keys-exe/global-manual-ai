@@ -12,3 +12,6 @@ builds/*/cast/*_v*.png
 builds/*/plates/*_v*.png
 builds/*/voice/*_v*.png
 builds/*/hooks/*_v*.png
+builds/**/edit/*.err
+builds/**/edit/variants_report.json
+builds/**/_plan_*.json

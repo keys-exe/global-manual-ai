@@ -13,8 +13,13 @@ word) and starts them early (swallows the inhale into the word). Here:
   * a breath is only cut at a phrase boundary (the word before it closes a phrase with , . ? ! in the
     script): mid-phrase fricatives like the "th" of "through" match the breath profile and must stay.
   * silences shorter than MERGE (0.12 s) stay as they are (stop closures inside words);
-    longer ones become PAUSE_SENT (0.015 s) after . ? ! , and PAUSE_WORD (0.01 s) elsewhere — butt joins,
-    as in the user's reference cut. Phrase ends are the only thing taken from the transcript.
+    longer ones become PAUSE_STOP (0.45 s) after . ? !, PAUSE_COMMA (0.20 s) after , ; : and
+    PAUSE_WORD (0.01 s) elsewhere — never longer than the silence the take had there. Natural pauses
+    are kept (correction 2026-09-28, user: "the trim is too fast"); the 2026-09-26 butt-join cut is retired.
+    Phrase ends are the only thing taken from the transcript.
+  * pace: words / duration of the result is reported as `wpm`; above --max-wpm (default 210) it FAILS —
+    the take is re-voiced slower (§22U step 9), never sped up or slowed down here. A part under 30s
+    (a hook) is gated together with its body, so its own reading is reported, not failed.
   * head: 10 ms before the first kept frame; tail: + 20 ms after the last kept frame, 20 ms fade.
   * Hook variants: trim the raw hook + raw body joined (one pass), so the seam is cut like every other join.
 Report + verification on the output: breaths left, tail level, gaps > 0.4 s.
@@ -23,11 +28,11 @@ import argparse, json, subprocess, sys
 import numpy as np, imageio_ffmpeg
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 SR, HOP, WIN = 16000, 160, 480
-# House cut = the user's reference edit (A_MUST_FOR_vtrim, 2026-09-26): measured, not guessed —
-# 24 phrase breaks: 0.02s median silence (max 0.08), tails cut once the word falls to ~-38/-40 dB,
-# no breaths, hook butt-joined to the body; 1.6s of silence left in 57.5s.
+# House cut (V7.65.0, correction 2026-09-28): word edges and breaths as the user's 2026-09-26 reference
+# edit (tails to ~-38 dB, no breaths); pauses restored — sentence 0.45 s, comma 0.20 s.
 FLOOR, BREATH_MIN, MERGE = -38.0, 0.12, 0.12
-PAUSE_SENT, PAUSE_WORD, HEAD, TAIL = 0.015, 0.01, 0.01, 0.02
+PAUSE_STOP, PAUSE_COMMA, PAUSE_WORD, HEAD, TAIL = 0.45, 0.20, 0.01, 0.01, 0.02
+MAX_WPM = 210
 
 def load(path, sr=SR):
     raw = subprocess.run([FF, "-v", "error", "-i", path, "-ac", "1", "-ar", str(sr), "-f", "s16le", "-"], capture_output=True).stdout
@@ -66,7 +71,8 @@ def breaths(db, cen, flat, low, min_len=BREATH_MIN):
 
 _MODEL = None
 def boundaries(path, script):
-    """Ends of words that close a phrase (, . ? ! in the SCRIPT, aligned to the transcript)."""
+    """Ends of words that close a phrase (, ; : . ? ! in the SCRIPT, aligned to the transcript), as (end, kind)
+    with kind "stop" for . ? ! and "comma" for , ; :"""
     import difflib, re
     from faster_whisper import WhisperModel
     global _MODEL
@@ -75,18 +81,19 @@ def boundaries(path, script):
     ws = [(w.end, w.word.strip()) for s in segs for w in s.words]
     norm = lambda s: re.sub(r"[^a-z0-9']", "", s.lower())
     if not script:
-        return [e for e, w in ws if w[-1:] in ".?!,"]
+        return [(e, "stop" if w[-1:] in ".?!" else "comma") for e, w in ws if w[-1:] in ".?!,;:"]
     toks = open(script).read().split()
     sm = difflib.SequenceMatcher(None, [norm(t) for t in toks], [norm(w) for _, w in ws], autojunk=False)
     ends = []
     for blk in sm.get_matching_blocks():
         for k in range(blk.size):
-            if toks[blk.a + k].rstrip('"')[-1:] in ".?!,": ends.append(ws[blk.b + k][0])
+            c = toks[blk.a + k].rstrip('"\u201d')[-1:]
+            if c in ".?!,;:": ends.append((ws[blk.b + k][0], "stop" if c in ".?!" else "comma"))
     return ends
 
 def at_boundary(a, b, ends):
     # a breath is only taken at a phrase boundary: a phrase-closing word ended shortly before it
-    return any(t(a) - 0.6 <= e <= t(a) + 0.1 for e in ends)
+    return any(t(a) - 0.6 <= e <= t(a) + 0.1 for e, _ in ends)
 
 def plan(x, path, script):
     db, cen, flat, low = features(x)
@@ -107,8 +114,9 @@ def render(src, dst, spans, sents, total):
         if k == 0: a = max(0.0, a - HEAD)
         if k == len(spans) - 1: b = min(total, b + TAIL)
         if prev is not None:
-            sent = any(prev - 0.4 <= s <= a + 0.05 for s in sents)
-            pieces.append(("gap", min(a - prev, PAUSE_SENT if sent else PAUSE_WORD)))
+            kinds = [k for e, k in sents if prev - 0.4 <= e <= a + 0.05]
+            want = PAUSE_STOP if "stop" in kinds else PAUSE_COMMA if kinds else PAUSE_WORD
+            pieces.append(("gap", min(a - prev, want)))
         pieces.append(("seg", a, b)); prev = b
     parts, labels = [], []
     for n, pc in enumerate(pieces):
@@ -129,19 +137,27 @@ def verify(dst, script):
     ends = boundaries(dst, script)
     left = [(round(t(a), 2), round(t(b), 2)) for a, b in breaths(db, cen, flat, low, BREATH_MIN + 0.02) if at_boundary(a, b, ends)]
     quiet = db < -70
-    gaps = [(round(t(a), 2), round(t(b), 2)) for a, b in runs(quiet) if t(b) - t(a) > 0.4 and a > 0 and b < len(db)]
+    gaps = [(round(t(a), 2), round(t(b), 2)) for a, b in runs(quiet) if t(b) - t(a) > PAUSE_STOP + 0.15 and a > 0 and b < len(db)]
     # the word ended by itself: level before the final fade already near the floor
     last_kept = np.where(db > -60)[0]
     tail_ok = bool(len(last_kept)) and db[last_kept[-1]] < -35
-    return dict(duration_s=round(len(x) / SR, 3), breaths_left=left, gaps_over_0_4=gaps,
-                tail_last_db=round(float(db[last_kept[-1]]), 1) if len(last_kept) else None,
-                status="PASS" if not left and not gaps and tail_ok else "FAIL")
+    dur = len(x) / SR
+    words = len(open(script).read().split()) if script else None
+    wpm = round(words / dur * 60) if words else None
+    # the pace gate is on the finished VO; a part under 30s (a hook) is measured with its body, so
+    # its own reading is reported only (§22U step 9, V7.65.0)
+    fast = bool(wpm and wpm > MAX_WPM and dur >= 30)
+    return dict(duration_s=round(dur, 3), wpm=wpm, max_wpm=MAX_WPM, too_fast=fast, breaths_left=left,
+                gaps_over_limit=gaps, tail_last_db=round(float(db[last_kept[-1]]), 1) if len(last_kept) else None,
+                status="PASS" if not left and not gaps and tail_ok and not fast else "FAIL")
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("src"); ap.add_argument("--out", required=True)
     ap.add_argument("--script", help="the part's script lines (punctuation marks the phrase boundaries)")
     ap.add_argument("--mode", type=int, default=1, help="§18A mode of the build; 4 and 5 are refused (§24L)")
+    ap.add_argument("--max-wpm", type=int, default=MAX_WPM, help="pace ceiling: the inspo's measured rate, never above 210 (§22U step 9)")
     a = ap.parse_args()
+    MAX_WPM = a.max_wpm
     if a.mode in (4, 5):
         print(json.dumps({"status": "REFUSED", "reason": "no trimming in the film modes (§24L): film narration is used as generated"}))
         sys.exit(2)
