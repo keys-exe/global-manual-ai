@@ -109,3 +109,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - (2026-09-28, 10:30 UTC) User: "delete those" — the 52 board assets used only by the archived old HK1 cards were
   deleted (their prompts/settings stay in `archive/board_2026-09-28/`). BR-04/18/24/25 fixes uploaded and on the board
   as To check. Note: the board's asset store caps at 1 GB — watch it before the Kling video round (≈27 × 10 MB).
+- (2026-09-28, 10:45 UTC) **User confirmed all 27 body images → Kling videos.** E6 re-run for Kling's 3–15s floor
+  (`work/body_lengths.json`: 3–5s). Plain-text one-action prompts by `body/video_prompts.py` (`<BEAT>.i2v.txt`, all
+  preflight PASS), `kling-video-v3_0_omni`, image_1 = the confirmed Higgsfield image URL, 1080p, imageCount 1, no
+  multi-shot, no audio. 760 Kling credits. All 27 downloaded and on the board as To check (BR-12 and BR-21 split into
+  15 MB parts). Links in `body/kling_urls.txt`, job ids in `body/kling_jobs.txt`. Next: the user's check, then the edit
+  (hook + body per variant → Final output tab).
