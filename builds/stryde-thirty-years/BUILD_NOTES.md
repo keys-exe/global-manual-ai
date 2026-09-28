@@ -77,6 +77,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   (42 assets, ~571 MB; versions kept on the cards marked `deleted`, ONEGO stays on HeyGen). HK3-BR image then uploaded.
   NOTE for B-roll: ~560 MB free now; upload clips at source size, and plan Drive if the board fills again.
 
+  ~13:18: HK1 video step 1 — Kling omni 5s walk clip (40 credits, Kling 135 left) from the confirmed HK1 image, propped camera,
+  four slow steps towards the lens, no audio → board HK1 `review`. HK1 audio split at the phrase end (Whisper on the v3 trim):
+  walk part 0–3.77s ("…coming from."), talk part 3.77–10.39s → `hooks/hk1/`. On Confirm: HeyGen create_lipsync (walk + walk audio),
+  then Avatar V from the walk clip's last frame with the talk audio.
+
 ## Where it stands
 - **Waiting on the user:** the master listen (VO cards; T2 working master, say "T4" to switch — the THs are then re-cut),
   and the check of TH-01..07.
