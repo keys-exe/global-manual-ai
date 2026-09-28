@@ -73,3 +73,12 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
   - A4-P3 — new straps: two whole straps on the bench, no hands; the clip moves only the light and camera.
   - A5-B2, A5-B3 — his hand kept grabbing the rail because the frame hung it beside the rail (A5-B2 three times): new frames on the wall side of the flight, car keys in the rail-side hand.
 - Kie spend this round: 288 credits (4 clips).
+
+## Fix round 5 (2026-09-28, user: "FIX THOSE")
+- Clips from confirmed fix-4 frames (Kie Kling 3.0): A4-M1 (blue shield), A4-P1 (one hand), A5-B2 (wall side, keys), A5-B3 (wall side, keys, face) — `review`.
+- New frames (`work/fix5.py`, jobs `work/fix5_jobs.json`, URLs `work/fix5_urls.txt`), `imageStatus: review`; clip calls `calls/<b>.fix5.json` (`work/fix5_motion.py`) wait for the user's Confirm:
+  - A4-B1 — basket on his right hip, away from the banister (user: "move the basket he is carrying to his right side"); the v4 clip and the fix-2 frame moved to Old.
+  - A4-P2 — "just use the back of the STRYDE, this is the wrong product": the fix-3 frame drew a rectangular watch-style pad; now the strap lies back-up on the bench from the back reference alone (two-peak outline), no hands; the clip moves only light and camera.
+  - A4-P3 — "fix the strap, don't cut it": the bands drew as cut open straps; each band is now one closed loop slide to slide.
+- The hourly check (step 2b) must also look for `calls/<b>.fix5.json` — updated.
+- Kie spend this round: 306 credits (4 clips).

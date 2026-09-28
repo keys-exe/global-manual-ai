@@ -1,0 +1,35 @@
+{
+ "beat": "A4-P3",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (Kling account short, §5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"a4_p3\",\"subject\":\"two black knee straps lying on a workbench\",\"camera\":{\"movement\":\"Camera already drifting on the first frame, never static at entry. Continuous low-amplitude breath sway throughout, roughly one cycle per two seconds, mostly vertical with a slight roll. Focus soft for a moment at entry, then settles. Slow slide along the bench, slow and continuous, the only move in the clip. Still drifting on the final frame.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already drifting on the first frame: the camera eases very slowly along the two straps lying still on the bench, the window light sliding across their shells and chrome slides, about four seconds. Nothing in the frame moves except the light; no hands appear. Still easing along at the cut. The strap keeps its exact shape and size in every frame and its wordmark stays readable. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no second person, no camera travelling with the subject, no music, no speech, no hands, no straps moving, no cut bands\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_184324_ed76507b-6db2-4450-bca5-a8be7783184b.png",
+ "start_approved": false,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 4,
+ "fix_note": "frame: the bands drew as cut open straps → each band one closed loop slide to slide",
+ "risks": [
+  {
+   "risk": "room redraws during the move",
+   "prevented_by": "nothing in the scene moves; one slow camera move only; HOLD-C"
+  },
+  {
+   "risk": "objects appear or vanish",
+   "prevented_by": "HOLD-C: exact count kept; NEG-WARP-C"
+  },
+  {
+   "risk": "move too fast or resolves",
+   "prevented_by": "slow continuous move, still moving on the final frame"
+  }
+ ],
+ "user_go": "user, 2026-09-28: pressed Fix on the card and said \"fix those\""
+}
