@@ -302,3 +302,5 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   The Final board's 1 GB asset store filled on HK3 → with the user's OK ("Delete v1 + v2") the video files of v1 and v2
   of all three ads were deleted (30 assets); their version entries stay, marked `deleted`. v3 (no music), v4 (upbeat
   music) and v5 are kept.
+- (v6) User: "make the music a bit louder" → the investigation bed +4 dB (`mixinv_HK*.json` music_db -9 → -5, still ducked
+  ~8 dB under the voice), re-mixed and loudnormed (-14.3 / -14.3 / -14.4 LUFS, -1 dBTP). Final board FINAL-HK1..3 = v6, To check.
