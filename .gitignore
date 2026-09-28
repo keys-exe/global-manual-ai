@@ -7,3 +7,11 @@ builds/**/trim/
 *.mp3
 __pycache__/
 builds/*/intake/
+# Full-size cast originals live on the Generation Board; the repo keeps the JPG copies
+builds/*/cast/*_v*.png
+builds/*/plates/*_v*.png
+builds/*/voice/*_v*.png
+builds/*/hooks/*_v*.png
+builds/**/edit/*.err
+builds/**/edit/variants_report.json
+builds/**/_plan_*.json

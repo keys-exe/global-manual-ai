@@ -1,0 +1,32 @@
+{
+ "beat": "HK2-B1",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"hk2_b1\",\"subject\":\"a man's weathered hand sliding along a short new oak rail at the top of a staircase, a small spirit level on the rail\",\"camera\":{\"movement\":\"Camera already drifting on the first frame, never static at entry. Continuous low-amplitude breath sway throughout, roughly one cycle per two seconds, mostly vertical with a slight roll. Focus soft for a moment at entry, then settles. One deliberate reframe in the back half as the operator notices the subject sitting off-centre \u2014 corrects part of the way, not fully. Camera lags behind the subject, never anticipates it and never moves with it. Still drifting on the final frame.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: his hand slides slowly along the rail toward the lower bracket, about ten centimetres a second, the spirit level staying where it rests. The hand is still sliding at the cut. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly \u2014 motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no second person, no camera travelling with the subject, no music, no speech\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_093639_3f2f29aa-9d76-4a83-8ec9-8b7c8e1eaa59.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "fingers fuse or multiply",
+   "prevented_by": "one small hand action at a named pace, HOLD-C, NEG-WARP-C"
+  },
+  {
+   "risk": "object in hand morphs",
+   "prevented_by": "HOLD-C: exact form and count kept; product clause where a strap is held"
+  },
+  {
+   "risk": "camera drifts off the action",
+   "prevented_by": "RIG-R1 low-amplitude sway only"
+  }
+ ]
+}

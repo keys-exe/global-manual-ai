@@ -1,0 +1,727 @@
+[
+ {
+  "beat": "C-HKa",
+  "group": "C",
+  "type": "BR",
+  "subject": "C3",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MEDIUM",
+  "fg": "through",
+  "why": "over his shoulder: we watch with him",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "background",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "W-D1",
+  "face": false,
+  "light": {
+   "source": "bay window, south-east",
+   "key_side": "back",
+   "time": "morning",
+   "arc": "problem: grey",
+   "why": "backlit on purpose: he watches through the window; his face not in frame"
+  }
+ },
+ {
+  "beat": "C-HKb",
+  "group": "C",
+  "type": "BR",
+  "subject": "C3",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = his own view of his knee",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "W-D1",
+  "face": false,
+  "light": {
+   "source": "bay window, south-east",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "turn",
+   "why": ""
+  }
+ },
+ {
+  "beat": "SH-01",
+  "group": "C",
+  "type": "BR",
+  "subject": "C6",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "S6-D1",
+  "face": true,
+  "light": {
+   "source": "blind window, west wall",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "authority: even daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "SH-02",
+  "group": "C",
+  "type": "BR",
+  "subject": "G-01",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = done with them, put away",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "G-01",
+  "face": false,
+  "light": {
+   "source": "sink window, north wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday",
+   "why": ""
+  }
+ },
+ {
+  "beat": "SH-03",
+  "group": "C",
+  "type": "BR",
+  "subject": "C6",
+  "height": "low",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low makes the joint big and important",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "S6-D1",
+  "face": false,
+  "light": {
+   "source": "blind window, west wall",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "authority: even daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "C-01",
+  "group": "C",
+  "type": "BR",
+  "subject": "C3",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "W-D1",
+  "face": true,
+  "light": {
+   "source": "overcast sky",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey",
+   "why": ""
+  }
+ },
+ {
+  "beat": "C-02",
+  "group": "C",
+  "type": "BR",
+  "subject": "C3",
+  "height": "ground",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "ground = strides",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "W-D1",
+  "face": false,
+  "light": {
+   "source": "overcast sky",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-01",
+  "group": "C",
+  "type": "MECH",
+  "subject": "\u2014",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile shows the load path down the leg",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "\u2014",
+  "face": false,
+  "light": {
+   "source": "anatomical register (\u00a712A)",
+   "key_side": "L",
+   "time": "\u2014",
+   "arc": "mechanism",
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-02",
+  "group": "C",
+  "type": "MECH",
+  "subject": "\u2014",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = the fix, resolve",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "\u2014",
+  "face": false,
+  "light": {
+   "source": "anatomical register (\u00a712A)",
+   "key_side": "L",
+   "time": "\u2014",
+   "arc": "mechanism",
+   "why": ""
+  }
+ },
+ {
+  "beat": "C-03",
+  "group": "C",
+  "type": "BR",
+  "subject": "C3",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "W-D2",
+  "face": true,
+  "light": {
+   "source": "sun, south",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "turn: the window side of the face",
+   "why": ""
+  }
+ },
+ {
+  "beat": "C-04",
+  "group": "C",
+  "type": "BR",
+  "subject": "C3",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile: the handover across the frame",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "W-D2",
+  "face": false,
+  "light": {
+   "source": "sun, south",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "why": ""
+  }
+ },
+ {
+  "beat": "C-05",
+  "group": "C",
+  "type": "BR",
+  "subject": "C3",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "W-D2",
+  "face": true,
+  "light": {
+   "source": "sun, south",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "why": ""
+  }
+ },
+ {
+  "beat": "C-06",
+  "group": "C",
+  "type": "BR",
+  "subject": "C3",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "high = the whole field open to them",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "W-D2",
+  "face": false,
+  "light": {
+   "source": "sun, south",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "why": ""
+  }
+ },
+ {
+  "beat": "C-07",
+  "group": "C",
+  "type": "BR",
+  "subject": "C3",
+  "height": "low",
+  "side": "three-quarter-back",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "low and behind: the path ahead, resolve",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "W-D2",
+  "face": false,
+  "light": {
+   "source": "sun, south",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "why": ""
+  }
+ },
+ {
+  "beat": "NS-03a",
+  "group": "C",
+  "type": "BR",
+  "subject": "G-06",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = his own view of his knee",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "G-06",
+  "face": false,
+  "light": {
+   "source": "bedroom window, east wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: fresh daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "NS-03b",
+  "group": "C",
+  "type": "BR",
+  "subject": "G-06",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "G-06",
+  "face": false,
+  "light": {
+   "source": "bedroom window, east wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: fresh daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "SH-04a",
+  "group": "C",
+  "type": "BR",
+  "subject": "G-02",
+  "height": "low",
+  "side": "profile",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "low on the working knee",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "G-02",
+  "face": false,
+  "light": {
+   "source": "open sky, afternoon sun",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "why": ""
+  }
+ },
+ {
+  "beat": "SH-04b",
+  "group": "C",
+  "type": "BR",
+  "subject": "G-03",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = looking down at her own knee",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "G-03",
+  "face": false,
+  "light": {
+   "source": "living-room window, south wall",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "why": ""
+  }
+ },
+ {
+  "beat": "SH-04c",
+  "group": "C",
+  "type": "BR",
+  "subject": "G-04",
+  "height": "ground",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "ground = steps and legs",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "G-04",
+  "face": false,
+  "light": {
+   "source": "open sky, afternoon sun",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "why": ""
+  }
+ },
+ {
+  "beat": "NS-06",
+  "group": "C",
+  "type": "BR",
+  "subject": "G-09",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile shows the flat line of the trouser",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "G-09",
+  "face": false,
+  "light": {
+   "source": "hall door glass, north wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "after: fresh daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "NS-05",
+  "group": "C",
+  "type": "BR",
+  "subject": "C6",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over the shoulder puts us in the patient's chair",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "S6-D1",
+  "face": true,
+  "light": {
+   "source": "blind window, west wall",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "authority: even daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "SH-05",
+  "group": "C",
+  "type": "BR",
+  "subject": "G-05",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = the everyday table, the reveal",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "G-05",
+  "face": false,
+  "light": {
+   "source": "sink window, north wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "offer: bright daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "SH-06",
+  "group": "C",
+  "type": "BR",
+  "subject": "G-05",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "G-05",
+  "face": true,
+  "light": {
+   "source": "sink window, north wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "offer: bright daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "C-08",
+  "group": "C",
+  "type": "BR",
+  "subject": "C3",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = the dog's-eye view, ready",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "W-D2",
+  "face": false,
+  "light": {
+   "source": "front-door glass, south-east",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "why": ""
+  }
+ },
+ {
+  "beat": "C-09",
+  "group": "C",
+  "type": "BR",
+  "subject": "C3",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "W-D2",
+  "face": true,
+  "light": {
+   "source": "sun, south",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "why": ""
+  }
+ }
+]

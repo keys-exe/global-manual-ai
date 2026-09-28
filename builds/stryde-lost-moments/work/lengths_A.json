@@ -1,0 +1,209 @@
+{
+  "master_s": 56.01,
+  "lead_s": 0.1,
+  "skip_s": 0.4,
+  "lengths": [
+    {
+      "beat": "A-HKa",
+      "cut_s": 0.0,
+      "anchor": "Too",
+      "on_screen_s": 3.38,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "A-HKb",
+      "cut_s": 3.375,
+      "anchor": "straps,",
+      "on_screen_s": 3.71,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "SH-01",
+      "cut_s": 7.0833,
+      "anchor": "surgeons,",
+      "on_screen_s": 1.25,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "SH-02",
+      "cut_s": 8.3333,
+      "anchor": "sleeves",
+      "on_screen_s": 2.96,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "SH-03",
+      "cut_s": 11.2917,
+      "anchor": "bone",
+      "on_screen_s": 4.62,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "A-01",
+      "cut_s": 15.9167,
+      "anchor": "step",
+      "on_screen_s": 0.83,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-01",
+      "cut_s": 16.75,
+      "anchor": "seventeen",
+      "on_screen_s": 6.25,
+      "skip_s": 0.4,
+      "call_s": 6,
+      "flag": "SPLIT \u2014 needs 7.2s, over 6s; split the phrase into two clips at a word boundary"
+    },
+    {
+      "beat": "A-02",
+      "cut_s": 23.0,
+      "anchor": "sideways.",
+      "on_screen_s": 1.92,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A-03",
+      "cut_s": 24.9167,
+      "anchor": "railing.",
+      "on_screen_s": 0.92,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-02",
+      "cut_s": 25.8333,
+      "anchor": "strap",
+      "on_screen_s": 4.12,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "A-04",
+      "cut_s": 29.9583,
+      "anchor": "lifts.",
+      "on_screen_s": 2.17,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "A-05",
+      "cut_s": 32.125,
+      "anchor": "forwards.",
+      "on_screen_s": 1.04,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A-06",
+      "cut_s": 33.1667,
+      "anchor": "foot",
+      "on_screen_s": 1.38,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A-07",
+      "cut_s": 34.5417,
+      "anchor": "normal",
+      "on_screen_s": 1.46,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "NS-03a",
+      "cut_s": 36.0,
+      "anchor": "Adjustable,",
+      "on_screen_s": 1.83,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "NS-03b",
+      "cut_s": 37.8333,
+      "anchor": "pad",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "SH-04a",
+      "cut_s": 40.8333,
+      "anchor": "slipping.",
+      "on_screen_s": 0.83,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "SH-04b",
+      "cut_s": 41.6667,
+      "anchor": "sores.",
+      "on_screen_s": 0.92,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "SH-04c",
+      "cut_s": 42.5833,
+      "anchor": "rolling",
+      "on_screen_s": 1.17,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "NS-05",
+      "cut_s": 43.75,
+      "anchor": "Recommended",
+      "on_screen_s": 3.54,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "SH-05",
+      "cut_s": 47.2917,
+      "anchor": "Buy",
+      "on_screen_s": 4.33,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "SH-06",
+      "cut_s": 51.625,
+      "anchor": "guarantee.",
+      "on_screen_s": 0.88,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A-08",
+      "cut_s": 52.5,
+      "anchor": "Put",
+      "on_screen_s": 1.25,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A-09",
+      "cut_s": 53.75,
+      "anchor": "stairs.",
+      "on_screen_s": 1.58,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "A-10",
+      "cut_s": 55.3333,
+      "anchor": "pain.",
+      "on_screen_s": 0.68,
+      "skip_s": 0.4,
+      "call_s": 3
+    }
+  ],
+  "failures": []
+}

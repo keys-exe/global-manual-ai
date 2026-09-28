@@ -1,0 +1,1 @@
+{"src": "vo/v2/parts/raw_HK3.wav", "out": "vo/v2/master/HK3.mp3", "duration_in_s": 12.9, "breaths_cut": [], "source_end_db": -86.4, "source_end_clipped": false, "verify": {"duration_s": 10.84, "wpm": 232, "max_wpm": 210, "too_fast": false, "breaths_left": [], "gaps_over_limit": [], "tail_last_db": -53.1, "status": "PASS"}}

@@ -23,7 +23,8 @@ CALL.json describes one paid video call exactly as it will be sent:
     "pace": "unhurried" | "brisk",
     "subject_motion": "still" | "in_place" | "travels",
     "prefer_multi_shots": "false",
-    "generation": 1,                   # 1 = first try, 2 = the one fix; 3+ is refused (§22X)
+    "generation": 1,                   # 1 = first try, 2 = the one fix; 3+ only with user_go (§22X)
+    "user_go": null | "the user's words giving the go for a 3rd+ generation, and the date",
     "fix_note": "diagnosed fault → the change made (required on generation 2)",
     "rack": null | {"from": "...", "to": "...", "cue": "..."},   # §30J focus change inside the clip
     "risks": [{"risk": "...", "prevented_by": "..."}]   # top three failure modes and the clause that prevents each
@@ -87,8 +88,9 @@ def run(c):
     gen = int(c.get("generation", 1))
 
     # 1. Generation budget
-    check("generation ≤ 2", gen <= 2, f"generation {gen}; a third call on the same shot needs the user (§22X)")
-    if gen == 2:
+    go = (c.get("user_go") or "").strip()
+    check("generation ≤ 2, or the user's go", gen <= 2 or bool(go), f"generation {gen}; a third call on the same shot needs the user (§22X)")
+    if gen >= 2:
         fn = c.get("fix_note", "")
         check("gen 2 has a diagnosed fix", "→" in fn or "->" in fn, fn or "missing fix_note")
 

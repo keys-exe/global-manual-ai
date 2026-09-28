@@ -1,0 +1,72 @@
+[
+ {
+  "beat": "A1-B3",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  ],
+  "chars": 8413
+ },
+ {
+  "beat": "A4-B1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "cd219dc4-2b30-4e18-ae35-d702e05fba56",
+   "1e46a65f-f165-4694-b5b6-1f92ea2688b3",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "0ff45502-a271-4d9a-af3c-40cb2c1ab1b1"
+  ],
+  "chars": 11122
+ },
+ {
+  "beat": "A4-P1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "dff971d2-5c32-4a5d-981a-d304f7a2b9f2",
+   "b1cc1764-3e34-4b37-b8c6-0abf55cfe68e",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "28df647e-d34a-4242-9f6e-1595857d4a45"
+  ],
+  "chars": 8717
+ },
+ {
+  "beat": "A4-P2",
+  "model": "nano_banana_pro",
+  "refs": [
+   "dff971d2-5c32-4a5d-981a-d304f7a2b9f2",
+   "ba654d79-751c-4833-8780-a58cb4ef6e80",
+   "28df647e-d34a-4242-9f6e-1595857d4a45",
+   "97b2fd17-a972-4115-9741-8ac35c1877b9"
+  ],
+  "chars": 8897
+ },
+ {
+  "beat": "A5-B3",
+  "model": "nano_banana_pro",
+  "refs": [
+   "cd219dc4-2b30-4e18-ae35-d702e05fba56",
+   "1e46a65f-f165-4694-b5b6-1f92ea2688b3",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "0ff45502-a271-4d9a-af3c-40cb2c1ab1b1"
+  ],
+  "chars": 11381
+ },
+ {
+  "beat": "A5-F1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2",
+   "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9",
+   "719c268b-14df-47b6-afab-35f0efdb8a2b",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5"
+  ],
+  "chars": 8117
+ },
+ {
+  "beat": "A2-M4",
+  "model": "nano_banana_pro",
+  "refs": [],
+  "chars": 3800
+ }
+]
