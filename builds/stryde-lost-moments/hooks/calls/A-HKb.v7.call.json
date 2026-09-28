@@ -8,7 +8,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_193329_477e36cd-a674-42c0-be8a-fc18a8ef38fa.png",
- "start_approved": false,
+ "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,
@@ -29,7 +29,7 @@
    "prevented_by": "RIG-R3C propped; 'the camera stays where it is'"
   }
  ],
- "approved_by": "user: CONFIRM HOOK 1 (2026-09-28)",
+ "approved_by": "user: CONFIRM HOOK 1 (2026-09-28, v7 frame)",
  "fix_note": "Fault in the frame (user Fixes: product position, too low): v6 strap ~70px low \u2192 v7 frame with the strap raised to sit against the kneecap; same leg-ease motion. 4th video generation of this shot \u2192 needs the user's go (\u00a722X)",
- "user_go": null
+ "user_go": "user: CONFIRM HOOK 1 (2026-09-28) \u2014 go for the 4th generation"
 }
