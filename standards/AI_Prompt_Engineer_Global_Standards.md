@@ -1958,7 +1958,7 @@ Every step carries a class:
 | 2 | **Absorb script, product, Product Sheet — and lock mode and model** | DET | The `.md` + `.py` pair, created where absent. §43A claims pass — every figure tiered before anything builds against it. **The phrase inventory is built here** (§27B): a mechanical pass over the script as written. **The Visual Instruction Ledger is opened here (§27F)** — every visual note on the script and every Loom instruction (§18C), each anchored to its spoken line. **The Mode & Model Lock is written here (§18A)** — mode per act, image model per beat class, read off what the script demands. Every other lock resolved here — camera, format, tools, mechanism claim, declared side. |
 | 3 | **Cast — everyone who recurs** | DET *(render dependency)* → **HG** *(Manual)* | **Every subject with two or more beats on the step-2 inventory** — the narrator, every named side character, **and every anonymous B-roll subject who recurs** (`S-01`, `S-02`…) — gets a full §19 reference sheet — one prose generation, 9:16, no reference — passed through the §19 panel check before it is attached anywhere. Identity strings locked from what rendered, never from what was prompted (§7 applied to our own output). Ships per sheet: §19A axis table with clearance counts; **speaking characters additionally** get `VOICE-[CHAR]` roster-cleared and a full §20 constraint sheet. One-off subjects are not sheeted (§13). **Sent, then straight on** — **in Manual (V7.62.0) the agent generates and checks every sheet itself, then stops: the avatars are the user's decision, and step 4 waits for the user's go** (§18B) |
 | 4 | **Property and location maps** | DET | The §30C Location Derivation Pass over the step-2 phrase inventory, **opening with channel C0 — which locations are rooms of one dwelling.** Where two or more are, the **Property Sheet is written and its property plate generated and checked first (§30G)**, before any location plate is built against it. Five-part Location Sheets, §22A lighting profiles reconciled to the property's orientation, plates rendered for **PLATED locations only** — never for INCIDENTAL or **TRAVERSED** ones (§30C 1a), both of which still carry the property plate where they are interiors of the dwelling. Four set-level checks run. **The location set closes here.** **Sent, then straight on** |
-| 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; **every Visual Instruction Ledger row assigned to the beat or CapCut line that carries it (§27F)**; **every B-roll row given its `layout`, and every punch-in, transition and caption device its line, from `EDIT-[BUILD]` (§42 Part 3A)**; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims. **Automatic (V7.60.7): written only after every step-3 sheet and step-4 plate has passed E1**, with identity strings and plate facts read off the renders; B-roll `duration` is `pending-master` until the voice master exists (E4, E6). **Every B-roll and film row carries its `angle`, `why`, `focus` and `light`, and `angles.py` passes before the map is approved (§30I–§30K)** |
+| 5 | **Act map and wardrobe map, together** | DET | Coverage ledger keyed to the step-2 inventory; **every Visual Instruction Ledger row assigned to the beat or CapCut line that carries it (§27F)**; **every B-roll row given its `layout`, and every punch-in, transition and caption device its line, from `EDIT-[BUILD]` (§42 Part 3A)**; the §14A story-day derivation pass; wardrobe written per story day as beats land. Frame side, framing step, energy, valence, **story day, capture-event id**, six-slot rows, `GEO-LINE`s, recurring-subject IDs, product first appearance, claims. **Automatic (V7.60.7): written only after every step-3 sheet and step-4 plate has passed E1**, with identity strings and plate facts read off the renders; B-roll `duration` is `pending-master` until the voice master exists (E4, E6). **Every B-roll and film row carries its `angle`, `why`, `focus` and `light` (film rows also their `shot`, §24K part 7), and `angles.py` passes before the map is approved (§30I–§30K)** |
 | 6 | **Hooks, one by one** | AC → **HG** | Serial: deliver → generate → first-frame check (§5/§30C/§30E) → confirm → next. Seeds built against plates that already exist. Confirmed renders feed the Scene and Subject Registries as they land. **The second gate** in Manual, after the step-3 avatar review; in Automatic the agent confirms (E0) |
 | 7 | **B-roll and body acts** | DET | Executing step 5's dispositions in the §30E assembly order — motion arc first, start frame derived, plates attached, strings by register, model routed. `TH`-carried lines get no cutaway on purpose. **A beat whose line carries a visual instruction executes that instruction (§27F).** Each act delivery ends on its §27B reconciliation line and its §27F ledger line |
 | 8 | **CapCut block** | DET | Cover points, J-cuts, designed-silence list, sync triage, motion-graphics layer, supplied-asset cut-ins, **every on-screen text, SFX, music and edit instruction from the Visual Instruction Ledger, verbatim** (§40, §27F) — last and separate. **Every `EDIT-[BUILD]` device the rough cut does not render — cutouts, cards, transitions, speed ramps, captions, overlays, SFX — on its line with its `EG` ID** (§42 Part 3A) |
@@ -3868,7 +3868,7 @@ One action per shot at a countable pace, human motion 3–6s, start frames caugh
 
 ### 2. The camera plan — every move has a story reason
 
-**A camera move is a sentence in the film, so it has to say something.** Each Scene Bible carries a **camera plan**: the rig and the angle (§30I) per shot, chosen from what the scene's emotion map is doing at that moment. The Look Sheet's field 7 sets which rigs the film uses at all and the **camera script by act** (e.g. locked and patient in the Before, floating in the Problem, one slow push per Turn, wide and settled in the After).
+**A camera move is a sentence in the film, so it has to say something.** Each Scene Bible carries a **camera plan**: the rig, the angle (§30I) and the library shot (part 7) per shot, chosen from what the scene's emotion map is doing at that moment. The Look Sheet's field 7 sets which rigs the film uses at all and the **camera script by act** (e.g. locked and patient in the Before, floating in the Problem, one slow push per Turn, wide and settled in the After).
 
 | The scene is… | Camera | Why |
 |---|---|---|
@@ -3899,11 +3899,84 @@ A MULTI-SHOT clip (`MULTI-FILM`, §29) covers dialogue with **everyone in it sti
 
 §24D's principles carry the motion (anticipation, overlap, the moving hold), timed by the Look Sheet's field 7. Squash and stretch never touches the product (`PIX-SPLIT` keeps it rigid and real). Poses are held in clear silhouette at the turn. Every §24K limit above applies to the virtual camera exactly as to a real one (`VCAM`).
 
+### 7. The film shot library — 34 shot types *(new 2026-09-28, user: "Add this for the camera angles specially in film style")*
+
+**Scope: Modes 4 and 5 only** (Modes 1–3 keep §30I as it is). §30I gives every shot a height, a side and a foreground; this library names the **shot** a film crew would call — the 34 shot types a film uses, each with the setup that makes it, the one clause that asks for it, what it says, and the limit that keeps it clean on a video model. **Every film row (E4) names its `shot` — one library ID, or two where one sets the scale and the other the rest (e.g. `SH-CU` + `SH-OTS`) — and its `why` from the "Reads as" column.** The row's `height`, `side`, `scale` and `fg` must agree with the setup column (`angles.py` SHOT). The clause fills `SHOT-LINE` (Appendix A). Mode 5 builds every shot with the virtual camera (`VCAM`), same limits.
+
+**A — Scale**
+
+| # | Shot · ID | Setup (row fields · lens) | Clause (`SHOT-LINE`) | Reads as · use | Limits |
+|---|---|---|---|---|---|
+| 1 | **Wide** · `SH-WIDE` | scale WIDE · 24–35mm | a wide shot: the whole place and everyone in it, the people small inside it | where we are, alone in it · the scene master (§24H), the After settling | deep focus (§30J); faces never judged at this size |
+| 2 | **Medium** · `SH-MED` | scale MEDIUM · 35–50mm | a medium shot, from the waist up | with them, the business in their hands · dialogue coverage | — |
+| 3 | **Close-up** · `SH-CU` | scale CU · 50–85mm | a close-up: the face from the chin to the top of the head fills most of the frame | what they feel · the turn | the tightest scale is spent once per scene (§24K part 3) |
+| 4 | **Macro** · `SH-MACRO` | scale ECU · 100mm macro | an extreme macro close-up of [DETAIL] — its texture filling the frame | the detail that matters · a pill, a fibre, a drop, the product's texture, an eye with a tear | one detail, never a whole face; product only from a side the Product Sheet shows (§9D); still subject, locked camera |
+
+**B — Side and position**
+
+| # | Shot · ID | Setup | Clause | Reads as · use | Limits |
+|---|---|---|---|---|---|
+| 5 | **Overhead fisheye** · `SH-OVFISH` | height overhead · scale WIDE · 8–10mm fisheye | straight down from the ceiling through a fisheye lens: the whole room bends into a circle around [SUBJECT] | trapped, dizzy, the room closing in · sleepless in bed, panic | signature; face small, never a CU; no product beat; no lip-synced line |
+| 6 | **Profile** · `SH-PROFILE` | side profile | seen exactly side-on, in profile | distance, thinking, two people apart | — |
+| 7 | **Three-quarter** · `SH-34` | side three-quarter | seen from three-quarters, between the front and the side | honest, with them · the everyday coverage | one angle among several (§30I DEFAULT) |
+| 8 | **Rear** · `SH-REAR` | side behind or three-quarter-back | seen from behind [SUBJECT], looking at what they face | following them into it, what's ahead · a doorway, the stairs, the view | no lip-synced line — the mouth is unseen, so a line here is off-screen |
+| 9 | **Over-the-shoulder** · `SH-OTS` | side ots · fg through | over the near shoulder of [OTHER], soft in the near foreground, onto [SUBJECT] | connection or confrontation · a conversation, a hand-over | stays on its side of the action line (§24H) |
+| 10 | **POV** · `SH-POV` | type POV | exactly what [CHARACTER] sees, from their eyes; their own hands enter at the bottom edge | being them · reading the letter, looking down at their feet | camera sways, never travels with a walk (§27G); hands whole or out of frame |
+| 11 | **Prism reflection** · `SH-PRISM` | fg through · a glass prism just in front of the lens | a glass prism held just in front of the lens throws a refracted, rainbow-edged ghost of the scene across one edge of the frame | memory, dream, a mind splitting · a flashback, confusion | signature; the ghost never over a face or the product; locked camera |
+
+**C — Height**
+
+| # | Shot · ID | Setup | Clause | Reads as · use | Limits |
+|---|---|---|---|---|---|
+| 12 | **Eye-level** · `SH-EYE` | height eye | at [SUBJECT]'s eye height, level | neutral, equal | eye-level frontal ≤ a third (§30I DEFAULT) |
+| 13 | **Low-angle** · `SH-LOW` | height low | from below hip height, looking up at [SUBJECT] | strength, resolve · getting up, the first confident step | a face at MEDIUM or wider (§30I part 4) |
+| 14 | **High-angle** · `SH-HIGH` | height high | from above head height, looking down at [SUBJECT] | small, overwhelmed · the problem at its worst | — |
+| 15 | **Dutch angle** · `SH-DUTCH` | any height · camera rolled 10–20° | the camera is rolled about 15 degrees off level, so the horizon and the room tilt across the frame | something is wrong, unease, conflict | ≤ 1 per scene, with a `why`; locked camera only (F2), never a rolling or travelling tilt; never in the After or on a product beat |
+| 16 | **Overhead** · `SH-OVER` | height overhead | directly above, looking straight down | routine, isolation, the hands' task · a table, a bed, a sink | never a face in CU (§30I part 4) |
+| 17 | **Aerial** · `SH-AERIAL` | height overhead or high · scale WIDE | from high in the air above [PLACE], the [HOUSE / STREET / CAR] small below | scale, isolation, a new place · opens a scene or closes the film | signature; no faces, no lip-synced line; slow drift only (F3/F4 without speed), never chasing a subject; the exterior matches the approved location plate (§24H) |
+| 18 | **Ground-level** · `SH-GROUND` | height ground | the lens a few centimetres off the floor, looking along it | feet, steps, the body's weight | a walk toward it is feet only, three or four steps (§27G) |
+| 19 | **Worm's-eye view** · `SH-WORM` | height ground · looking straight up | the lens on the ground pointing up, [SUBJECT] towering above against the [CEILING / SKY] | awe, menace, a child's view, overpowered | signature; FULL or WIDE on a person, never a face CU; still subject — nobody steps over the lens |
+| 20 | **Inside a hole** · `SH-HOLE` | height ground or low · fg through | from inside [a hole / a well / a box / a drum], looking up and out: the dark round rim frames [SUBJECT] above | trapped, discovered, being looked down on | signature; the rim dark and soft; the subject at MEDIUM or wider |
+| 21 | **Hoop-level** · `SH-HOOP` | the lens level with a raised target | the lens level with [THE HOOP / THE TOP SHELF / THE TARGET], the target in the near foreground as [ACTION] arrives at it | the goal, the reach · the ball arriving, the hand reaching the top shelf | signature; the reach or arrival is the one action (§27G) |
+
+**D — Lens**
+
+| # | Shot · ID | Setup | Clause | Reads as · use | Limits |
+|---|---|---|---|---|---|
+| 22 | **Wide-angle close-up** · `SH-WACU` | scale CU or ECU · 14–18mm very close | a very wide lens close to [OBJECT / HANDS / FEET]: it looms large in front, the room stretching deep behind | energy, closeness, comic weight | signature; **never on a face or the product** (§30I part 4, §27D, §9D) |
+| 23 | **Fisheye** · `SH-FISH` | scale WIDE or FULL · 8–15mm fisheye | through a fisheye lens: straight lines bow outward around [SUBJECT] at the centre | chaos, intoxication, a party, being watched | signature; faces only near the centre, small; no product beat |
+| 24 | **Fisheye close-up** · `SH-FISHCU` | scale CU or ECU · fisheye very close | a fisheye lens right up to [OBJECT], bulging toward the lens, the room curving away behind | the object as a threat or obsession · a ringing phone, a bottle | signature; **never on a face or the product** |
+| 25 | **High-angle close-up** · `SH-HICU` | height high · scale CU · 50–85mm | a close-up from slightly above, [SUBJECT]'s face tilted up toward the lens | vulnerable, pleading, small | normal lens only |
+| 26 | **Low-angle close-up** · `SH-LOCU` | height low · scale CU · 50–85mm | a close-up from slightly below, the lens at chin height | decision, resolve | only slightly low (§30I part 4) — never up the nostrils |
+
+**E — Light, focus and optics**
+
+| # | Shot · ID | Setup | Clause | Reads as · use | Limits |
+|---|---|---|---|---|---|
+| 27 | **Selfie** · `SH-SELFIE` *(listed as "Selile" — read as selfie; flag if another shot was meant)* | height eye or slightly high · side front · the camera where the phone is | [CHARACTER] holds a phone at arm's length and films themselves; the frame is the phone's view, the arm leading out of the frame edge | confession, a video diary, talking to their own audience | signature; arm's length, never closer (the wide-lens-on-face rule); shot on the film package — no phone UI unless the script asks (§27F) |
+| 28 | **Silhouette** · `SH-SIL` | light key_side back | [SUBJECT] stands against the bright [WINDOW / DOOR / SKY], a black shape with no face detail, exposed for the brightness behind | loss, anonymity, a threshold, the end of a day | the shot is the backlight's `why` (§30K); no lip-synced line; never the product on a product beat |
+| 29 | **Foreground occlusion** · `SH-OCCL` | fg through | a [DOORFRAME / SHELF / PLANT] near the lens blocks a third of the frame, dark and soft | watched, spied on, private | never covers the face or the product on its beat |
+| 30 | **Foreground focus** · `SH-FGFOC` | fg through · focus plane foreground | [OBJECT] near the lens is sharp; [CHARACTER] behind it is soft | the object is the story · the letter, the pills, the phone buzzing | on a product beat the product is the sharp object; a change to `SH-BGFOC` is one §30J pull, on its cue |
+| 31 | **Background focus** · `SH-BGFOC` | fg through · focus plane eyes / hands / background | [OBJECT] near the lens is soft; [CHARACTER] behind it is sharp | the person is the story; the object waits | never with the product soft on a product beat |
+| 32 | **Lens flare** · `SH-FLARE` | a named light source at the frame edge | the [LOW SUN / LAMP] at the edge of the frame flares across the lens in soft streaks and ghosts | hope, warmth, dawn, memory | the source is in the light plan, where the plan puts it (§30K); streaks only on an anamorphic package (§24G); never across a face or the product |
+| 33 | **Magnifying glass** · `SH-MAGNIFY` | fg through · a magnifier held in frame | seen through a magnifying glass held in frame: inside its circle [DETAIL] is enlarged, the rest stays normal size | inspection, a clue, the small print | the glass held still by a steadied hand; locked camera; never over the product's wordmark |
+| 34 | **Inside-the-fridge** · `SH-INSIDE` | fg through · the camera inside an object | from inside the [FRIDGE / OVEN / CUPBOARD / WASHING MACHINE / CAR BOOT], shelves and items in the near foreground, as the door opens onto [CHARACTER] lit by its interior light | the everyday ritual, a late-night moment, a secret · hunger, looking for something | signature; the door opening is the one action; the character at MEDIUM; the interior light is a named practical in the light plan (§30K) |
+
+**The library's rules — checked by instrument (`angles.py` SHOT):**
+
+1. **Every film row names its shot** from this library and a `why`; the setup fields agree with it.
+2. **Signature shots** — `SH-OVFISH`, `SH-PRISM`, `SH-DUTCH`, `SH-AERIAL`, `SH-WORM`, `SH-HOLE`, `SH-HOOP`, `SH-WACU`, `SH-FISH`, `SH-FISHCU`, `SH-SELFIE`, `SH-FLARE`, `SH-MAGNIFY`, `SH-INSIDE` — are the ones that draw attention to the camera. **At most one per scene, never two in a row, never more than one in five shots across the film.** Pick one where the scene's emotion asks for it (§24K part 2), never for variety alone.
+3. **Range inside a scene:** a scene of five or more shots uses at least three different library shots (on top of §30I's WINDOW).
+4. **Faces:** `SH-WACU` and `SH-FISHCU` never on a face. **Lines:** `SH-REAR`, `SH-SIL`, `SH-AERIAL` and `SH-OVFISH` never carry a lip-synced line.
+5. **Product beats:** the product reads undistorted and whole, so a product beat never uses `SH-OVFISH`, `SH-FISH`, `SH-FISHCU`, `SH-WACU`, `SH-PRISM`, `SH-DUTCH`, `SH-AERIAL`, `SH-SIL` or `SH-MAGNIFY`.
+6. **Locked camera:** `SH-DUTCH`, `SH-PRISM`, `SH-MAGNIFY` and `SH-MACRO` never take a travelling rig (F1, F4, F5).
+7. **The inspo wins** (§42 Part 3A): a shot the reference edit uses is logged as an `EG` device and may be used more often than rule 2 allows, up to the reference's own count.
+
 ### Checks
 
-**The contact sheet (§24H) adds three items:** the camera plan matches the emotion map shot by shot · the tightest scale falls on the turn · every shot has a cut cue. **§22W Q4 (Automatic)** and the user's check on the board (Manual) judge a film clip on the same motion faults as any other clip: warping during movement, the product changing shape, feet and hands melting on a walk.
+**The contact sheet (§24H) adds four items:** the camera plan matches the emotion map shot by shot · the tightest scale falls on the turn · every shot has a cut cue · every frame came back as its named library shot (part 7) — a frame that drifted to a plain eye-level medium is a REGENERATE (§22V Q5; Manual: the user's check). **§22W Q4 (Automatic)** and the user's check on the board (Manual) judge a film clip on the same motion faults as any other clip: warping during movement, the product changing shape, feet and hands melting on a walk.
 
-**NORMATIVE — `RIG-F1`–`RIG-F5` (amended 2026-09-27), `MULTI-FILM` (amended), `BUSINESS-LINE` — see Appendix A.**
+**NORMATIVE — `RIG-F1`–`RIG-F5` (amended 2026-09-27), `MULTI-FILM` (amended), `BUSINESS-LINE`, `SHOT-LINE` (new 2026-09-28) — see Appendix A.**
 
 ---
 
@@ -5531,7 +5604,7 @@ Talking heads (seed-locked, §30), POV (R5) and fixed-mount (§22E) rows are ski
 | **Through a foreground** | watched, trapped, private | seen through a doorway, past a banister, a moment someone else notices |
 | **Reflection** | facing yourself | the mirror moment, the realisation |
 
-The inspo's own angles win (§42 Part 3A): its distribution of heights and sides is logged in `EDIT-[BUILD]` as an `EG` device, and the build copies its range. Absent a measurement, this table is the default. The **Film Look Sheet field 7** (§24G) and the **camera plan** (§24K) name which angles the film uses by act — e.g. high and profile in the Problem, low and three-quarter in the After.
+**Modes 4 and 5 also name the shot** from the 34-shot film library (§24K part 7) — wide to inside-the-fridge — and `SHOT-LINE` asks for it. The inspo's own angles win (§42 Part 3A): its distribution of heights and sides is logged in `EDIT-[BUILD]` as an `EG` device, and the build copies its range. Absent a measurement, this table is the default. The **Film Look Sheet field 7** (§24G) and the **camera plan** (§24K) name which angles the film uses by act — e.g. high and profile in the Problem, low and three-quarter in the After.
 
 ### 4. Limits that keep angles safe
 
@@ -5540,11 +5613,11 @@ The inspo's own angles win (§42 Part 3A): its distribution of heights and sides
 - **Product:** the product reads correctly from the chosen angle (§9D). An angle that hides the product on a product beat, or shows a side the Product Sheet has no reference for, is not used.
 - **Mode 1 — somebody's phone (§30B alibi, §22A):** every angle must be one a person holding or propping a phone could take: ground = propped on a step or the floor, low = held at the hip or on a low shelf, high = held above the head or from a stair above, overhead = held over the table or bed, through = past a doorframe, reflection = a mirror. No crane, no drone, no impossible position.
 - **Modes 4 and 5:** the camera stays on its side of the action line (§24H); the angle changes inside that side. Each new angle in a scene is a new position, so it is a valid image-list row (§24H, no duplicates), built against the master.
-- **Dutch tilt** only when the inspo uses it (§42 Part 3A).
+- **Dutch tilt:** Modes 1–3 only when the inspo uses it (§42 Part 3A). Modes 4–5 may use it as `SH-DUTCH` from the §24K part 7 library — with a `why`, at most once per scene, on a locked camera (amended 2026-09-28).
 
 ### 5. In the prompt and the checks
 
-`ANGLE-LINE` follows the opening camera string on every B-roll and film T2I (after `CAM-FILM` / `CAM-ANIM` in Modes 4 and 5; after the capture opener in Mode 1). The clip inherits the angle from its start frame. **§22V Q5 (Automatic)** and the user's check (Manual) read the angle against the row: a frame that came back at eye level when the row says high is a REGENERATE, because the model drifts back to its default.
+`ANGLE-LINE` follows the opening camera string on every B-roll and film T2I (after `CAM-FILM` / `CAM-ANIM` and `SHOT-LINE` in Modes 4 and 5; after the capture opener in Mode 1). The clip inherits the angle from its start frame. **§22V Q5 (Automatic)** and the user's check (Manual) read the angle against the row: a frame that came back at eye level when the row says high is a REGENERATE, because the model drifts back to its default.
 
 **NORMATIVE — `ANGLE-LINE` — see Appendix A.**
 
@@ -7661,6 +7734,10 @@ no product visible through the fabric, no product outline printing through the g
 
 ## Realistic Film *(§24G–§24H)*
 
+**`SHOT-LINE`** — Modes 4–5, every film T2I, after `CAM-FILM` / `CAM-ANIM` and before `ANGLE-LINE` (§24K part 7). `[SHOT NAME]` and `[CLAUSE]` from the row's `shot`; a two-ID row joins both clauses with "; ". *(126)*
+```
+THE SHOT: [SHOT NAME] — [CLAUSE from the §24K part 7 library]. Framed exactly as this shot, not a plain eye-level medium shot.
+```
 **`ANGLE-LINE`** — every B-roll and film T2I, after the opening camera string (§30I). Filled from the row's `angle`; `[HEIGHT CLAUSE]` is the canonical clause from the §30I table. *(206)*
 ```
 THE CAMERA ANGLE: [HEIGHT CLAUSE from §30I], seen from [SIDE] of [SUBJECT][, looking past FOREGROUND, soft in the near foreground | , seen in REFLECTION]. This exact angle, not a straight-on eye-level view.
@@ -8430,7 +8507,7 @@ One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t
 
 **Film fields (2026-09-27, Modes 4 and 5, §24I/§24K).** Film rows also carry: `scene` (`SC-xx`), `camera` as the F-rig with its reason from the camera plan, `playing` (the speaker's transitive verb), `business` (each character's one piece of business and its pace), `cut_cue` (line · look · action · reaction), `spine` (the story-spine beat) and `state` (each character's state-track row for this shot, including VOICE, §24H), and `new` (what the shot's frame adds over the master and earlier frames — position, scale or state — or `reuse <frame>`). A film row missing any of them is not written to a prompt.
 
-**`angle` (2026-09-27, §30I).** Every B-roll and film row carries `angle` — `height` (ground · low · eye · high · overhead), `side` (front · three-quarter · profile · three-quarter-back · behind · ots) and `fg` (clean · through · reflection) — with `why` (what the angle says) and, on a payoff that repeats an earlier angle, `mirror_of`. **`light` (§30K)** — `source` (from the light plan), `key_side` on screen (L · R · back · front), `time`, `arc` (the act's light state) and `why` on a backlit or 90° side key. **`focus` (§30J)** — `plane` (eyes · hands · product · foreground · background · deep), `dof` (deep · medium · shallow), `rack` (`{from, to, cue, kind: pull | tap}` or null) and `moving_subject`. `angles.py` reads these fields.
+**`angle` (2026-09-27, §30I).** Every B-roll and film row carries `angle` — `height` (ground · low · eye · high · overhead), `side` (front · three-quarter · profile · three-quarter-back · behind · ots) and `fg` (clean · through · reflection) — with `why` (what the angle says) and, on a payoff that repeats an earlier angle, `mirror_of`. **`light` (§30K)** — `source` (from the light plan), `key_side` on screen (L · R · back · front), `time`, `arc` (the act's light state) and `why` on a backlit or 90° side key. **`focus` (§30J)** — `plane` (eyes · hands · product · foreground · background · deep), `dof` (deep · medium · shallow), `rack` (`{from, to, cue, kind: pull | tap}` or null) and `moving_subject`. **`shot` (2026-09-28, §24K part 7)** — Modes 4–5: one library ID (`SH-WIDE` … `SH-INSIDE`) or a list of two; its setup agrees with `height`, `side`, `scale` and `fg`; `speaking: true` on a row that carries a lip-synced line. `angles.py` reads these fields.
 
 **`key` (amended 2026-09-26, user).** Every B-roll row names its `key`: the word in its phrase that the picture shows (the noun or action on screen, never a filler like "and" or "when"). §30H cuts the clip in 3 frames before it. Leave it empty only when the picture is the phrase's first word. In a voice-only build the opening row has no key — its clip covers 0.00s. After generation, a row may add `peak`: the second in the clip where its action peaks, so the in-point lands it on the key word.
 
@@ -8558,6 +8635,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 | Date | Correction | Section affected | Status |
 |---|---|---|---|
 
+| 2026-09-28 | Film shot library: the 34 shot types (wide … inside-the-fridge) for Modes 4–5, each with setup, `SHOT-LINE` clause, meaning and limits; film rows carry `shot`; signature shots ≤ 1 per scene; Dutch tilt allowed in the film modes with a reason. (User: "Add this for the camera angles specially in film style".) | §24K part 7 (new), §30I parts 3–5, §18 step 5, E4, Appendix A (`SHOT-LINE`), `angles.py` | Written in |
 | 2026-09-27 | The Generation Board gains a **Final output** tab beside Board, Manual run and Plan: one card per finished hook variant (or the finished film) with player, status, Confirm / Fix and Download; finished videos are Edit-stage cards with `final: true`. (User: "add a final output tab on the board, manual and plans to show the final results".) | §16A (Generation Board) | Written into §16A; template updated and republished |
 | 2026-09-27 | The build's board is shown to the user (Artifact `open`) at run start, resume and every delivery, in **both** run modes — Automatic included. (User: "always show the board panel whether it's automation or manual".) | §16A (Generation Board), E0 | Written into §16A |
 
