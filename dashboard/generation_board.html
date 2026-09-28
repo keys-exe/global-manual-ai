@@ -656,6 +656,14 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .btn.solidbad{background:var(--regen);border-color:var(--regen);color:#fff}
 .fault{display:flex;flex-direction:column;gap:3px}
 .fform{display:flex;gap:6px;flex-wrap:wrap}
+/* Final output */
+#finalView:not([hidden]){display:flex}
+@media (max-width:560px){.tabs{display:grid;grid-template-columns:1fr 1fr;width:100%}.tabs .tab{justify-content:center}}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:14px}
+.fc .media{width:100%;cursor:default;border-style:solid;background:var(--frame)}
+.fc.locked .media{background:var(--sunk);border-style:dashed}
+.fc .media video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000}
+.fc-open{position:absolute;top:8px;right:8px;z-index:2;background:rgba(0,0,0,.55);color:#fff;border-color:transparent}
 .fform input{flex:1;min-width:180px;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:6px 9px}
 </style>
 
@@ -675,6 +683,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
     <button class="tab" role="tab" type="button" data-view="board" aria-selected="true"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="5" height="5" rx="1.2"/><rect x="9" y="2" width="5" height="5" rx="1.2"/><rect x="2" y="9" width="5" height="5" rx="1.2"/><rect x="9" y="9" width="5" height="5" rx="1.2"/></svg><span>Board</span></button>
     <button class="tab" role="tab" type="button" data-view="manual" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 4.5 1.5 1.5 2.5-3M2.5 11l1.5 1.5 2.5-3M9 5h4.5M9 11.5h4.5"/></svg><span>Manual run</span><span class="tab-badge" id="needsBadge" hidden></span></button>
     <button class="tab" role="tab" type="button" data-view="plan" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 1.8h5.5l3 3v9.4H4z"/><path d="M6.5 8h4M6.5 10.8h4" stroke-linecap="round"/></svg><span>Plan</span></button>
+    <button class="tab" role="tab" type="button" data-view="final" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="1.8" width="10" height="12.4" rx="1.8"/><path d="M6.8 5.6v4.8L10.6 8z" fill="currentColor"/></svg><span>Final output</span><span class="tab-badge" id="finalBadge" hidden></span></button>
   </div>
 
   <div class="banner" id="banner" hidden></div>
@@ -688,6 +697,8 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
   </div>
 
   <div id="planView" hidden></div>
+
+  <div id="finalView" hidden style="flex-direction:column;gap:14px"></div>
 
   <div id="manualView" hidden style="flex-direction:column;gap:14px">
     <div class="mbar" id="mbar"></div>
@@ -929,8 +940,11 @@ function renderInner(){
   $("#boardView").hidden=state.view!=="board";
   $("#manualView").hidden=state.view!=="manual";
   $("#planView").hidden=state.view!=="plan";
-  $("#summary").hidden=state.view==="plan";
+  $("#finalView").hidden=state.view!=="final";
+  $("#summary").hidden=state.view==="plan"||state.view==="final";
+  {const n=gens.filter(g=>isFinal(g)&&stepState(g,"file")==="review").length, bd=$("#finalBadge"); bd.textContent=n; bd.hidden=!n; bd.title=`${n} finished video${n===1?"":"s"} to check`}
   if(state.view==="manual"){renderManual(gens);return}
+  if(state.view==="final"){renderFinal(gens);return}
   if(state.view==="plan"){
     const sig=JSON.stringify([state.pdoc,state.pmode,state.docs.map(d=>[d.id,d.updatedAt,(d.sections||[]).length]),gens.map(g=>g.id+":"+g.beat).sort()]);
     if(sig!==state.planSig||!$("#planView").children.length){state.planSig=sig;renderPlan(gens)}
@@ -1010,7 +1024,7 @@ function joinParts(ids,type,onProgress){
 const vis=("IntersectionObserver" in window)?new IntersectionObserver(es=>es.forEach(e=>{
   const v=e.target; if(e.isIntersecting){loadVideo(v)} else if(!v.paused) v.pause();
 }),{rootMargin:"200px"}):null;
-function tryPlay(v){v.muted=v.muted||!v.dataset.sound;const p=v.play();if(p&&p.catch) p.catch(()=>{})}
+function tryPlay(v){if(v.dataset.noauto) return;v.muted=v.muted||!v.dataset.sound;const p=v.play();if(p&&p.catch) p.catch(()=>{})}
 function loadVideo(v){
   if(v.dataset.parts&&!v.getAttribute("src")){
     const wrap=v.parentElement, note=document.createElement("span");
@@ -1356,9 +1370,9 @@ async function downloadOne(g,k,vnum){
 }
 async function downloadZip(groupKey,step){
   if(!window.JSZip){toast("Zip isn't available right now");return}
-  const b=currentBuild(), gens=buildGens().filter(g=>groupOf(g).key===groupKey&&flow(g).includes(step)).sort(beatSort);
+  const b=currentBuild(), gens=buildGens().filter(g=>(groupKey==="final"?isFinal(g)&&g.videoAsset:groupOf(g).key===groupKey)&&flow(g).includes(step)).sort(beatSort);
   if(!gens.length) return;
-  const label=groupOf(gens[0]).label, d=STEP[step];
+  const label=groupKey==="final"?"Final output":groupOf(gens[0]).label, d=STEP[step];
   toast("Packing "+label+" "+d.label.toLowerCase()+"s…");
   const zip=new JSZip(); let md=`# ${b.name||b.id} · ${label} · ${d.label}s\n\n`;
   for(const g of gens){
@@ -1432,7 +1446,7 @@ function copyText(t,what){navigator.clipboard.writeText(t).then(()=>toast(what+"
 
 /* viewer: clicking an image or video shows it, nothing else */
 /* only the group the clicked card sits in: its stage card on Board, its act or group in Manual run and Plan */
-function viewScope(g){return state.view==="board"?"s:"+g.stage:"g:"+groupOf(g).key}
+function viewScope(g){return state.view==="final"?(isFinal(g)?"final":"x"):state.view==="board"?"s:"+g.stage:"g:"+groupOf(g).key}
 function viewerList(step){
   const sc=state.viewer&&state.viewer.scope;
   return groups(buildGens()).flatMap(x=>x.items).filter(g=>flow(g).includes(step)&&(!sc||viewScope(g)===sc));
@@ -1594,6 +1608,77 @@ async function restoreVersion(g,k,vnum){
 
 
 /* plan: the build's documents — absorption, act map, wardrobe map — as written at each step */
+/* Final output: the finished videos — one per hook (each hook + the same body), or the finished film */
+function isFinal(g){return g.final===true||/^FINAL(\b|-)/i.test(String(g.beat||""))}
+function finalHook(g){if(g.hook!=null&&g.hook!=="") return actNum(g.hook);const m=String(g.beat||"").match(/HK\s*(\d+)/i);return m?Number(m[1]):null}
+function finalSlots(b,gens){
+  const fins=gens.filter(isFinal).sort(beatSort);
+  const hooks=new Set();
+  if(!isFilm(b)){
+    gens.filter(g=>g.stage==="hooks").forEach(g=>{const n=actNum(g.act)||actNum(g.beat);if(n) hooks.add(n)});
+    voParts(gens).forEach(p=>{const m=p.part.match(/^HK(\d+)$/);if(m) hooks.add(Number(m[1]))});
+  }
+  fins.forEach(g=>{const n=finalHook(g);if(n) hooks.add(n)});
+  const slots=[...hooks].sort((a,c)=>a-c).map(n=>({key:"hk"+n,label:`Hook ${n} + body`,hook:n,g:fins.find(g=>finalHook(g)===n)||null}));
+  fins.filter(g=>!finalHook(g)).forEach(g=>slots.push({key:"f-"+g.id,label:g.title||(isFilm(b)?"The finished film":"Finished video"),hook:null,g}));
+  if(!slots.length&&isFilm(b)) slots.push({key:"film",label:"The finished film",hook:null,g:null});
+  return slots;
+}
+function finalCard(x){
+  const g=x.g;
+  if(!g) return `<article class="mc fc locked" id="fc-${esc(x.key)}">
+    <div class="mc-head"><div class="kv"><span class="lbl">Finished video</span><span class="b">${esc(x.label)}</span></div><div class="kv end"><span class="lbl">Status</span><span class="pill s-planned">Not cut yet</span></div></div>
+    <div class="media"><span>Appears here when the edit is done</span></div></article>`;
+  const k="file", s=stepState(g,k), asset=g.videoAsset, type=g.videoType||"";
+  const isVid=!type||type.startsWith("video/");
+  const fixing=state.faultOpen===g.id+":"+k, canAct=!state.readOnly&&s!=="gen";
+  const cls=s==="ok"?"ok":s==="bad"||s==="gen"?"bad":s==="review"?"now":"";
+  const chip=s==="gen"?`<span class="pill s-generating">${g.fault?"Re-cutting":"Cutting"}</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Not cut yet</span>`;
+  const media=asset?(isVid?`<video ${srcAttr(g,k)} controls playsinline preload="metadata" data-noauto="1"></video>`:`<span>${esc(type)}</span>`):`<span>${s==="bad"?"Re-cutting…":"Appears here when the edit is done"}</span>`;
+  const specs=[
+    ["Length",g.duration?secs(g.duration):"—"],
+    ["Size",esc(g.videoRes||g.imageRes||"—")],
+    ["Hook",x.hook?`Hook ${x.hook}`:"—"],
+    ["Finished",when(g.videoAt||g.updatedAt)],
+  ];
+  if(g.madeFrom) specs.push(["Made from",esc(g.madeFrom),"wide"]);
+  return `<article class="mc fc ${cls}" id="fc-${esc(x.key)}">
+    <div class="mc-head">
+      <div class="kv"><span class="lbl">Finished video</span><span class="b">${esc(x.label)}${versionsOf(g,k).length>1?`<span class="vbadge" title="${versionsOf(g,k).length} versions">v${currentV(g,k)}</span>`:""}</span></div>
+      <div class="kv end"><span class="lbl">Status</span>${chip}</div></div>
+    <div class="media${asset?" filled":""}">${media}${asset&&isVid?`<button class="btn small fc-open" type="button" data-viewm="${esc(g.id)}" data-step="${k}" aria-label="Open ${esc(x.label)} in the viewer">⤢</button>`:""}</div>
+    ${g.line?`<div class="kv"><span class="lbl">Opens with</span><span class="mc-l">“${esc(g.line)}”</span></div>`:""}
+    <dl class="specs">${specs.map(([a,b,c])=>`<div${c?` class="${c}"`:""}><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
+    ${g.fault&&(s==="bad"||s==="gen")?`<div class="fault"><span class="lbl" style="color:var(--regen)">${s==="gen"?"Fixing now":"To fix"}</span><div>${esc(g.fault)}</div></div>`:""}
+    ${fixing?`<form class="fixbox" data-faultform="${esc(g.id)}" data-step="${k}">
+        <label class="lbl" for="fault-${esc(g.id)}-${k}">What should be fixed?</label>
+        <textarea id="fault-${esc(g.id)}-${k}" rows="3" placeholder="e.g. The B-roll at 0:12 comes in late. Cut it in on the word “knee”." required></textarea>
+        <div class="fix-actions"><button class="btn small bad solidbad" type="submit">Confirm &amp; regenerate</button><button class="btn small" type="button" data-faultcancel="1">Cancel</button></div></form>`:""}
+    ${canAct&&!fixing?`<div class="mc-verdict">
+      <button class="btn ok${s==="ok"?" solid":""}" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>✓ Confirm</button>
+      <button class="btn bad" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>✎ Fix</button></div>`:""}
+    <div class="mc-tools"><button class="btn small primary" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"} style="grid-column:1/-1">${I.dl} Download</button></div></article>`;
+}
+function renderFinal(gens){
+  const b=currentBuild(), slots=finalSlots(b,gens), film=isFilm(b);
+  const done=slots.filter(x=>x.g&&stepState(x.g,"file")==="ok").length, have=slots.filter(x=>x.g&&x.g.videoAsset).length;
+  const strip=slots.length?`<nav class="pipe" style="--n:${slots.length}" aria-label="Finished videos">${slots.map((x,i)=>{const st=x.g?stepState(x.g,"file"):"todo", ok=st==="ok";
+    return `<button type="button" class="step${ok?" done":""}" data-fjump="${esc(x.key)}">
+      <span class="n">${String(i+1).padStart(2,"0")}${ok?" ✓":""}${st==="review"?`<span class="g-wait" title="Waiting for you">1</span>`:""}</span><span class="t">${esc(x.label)}</span>
+      <div class="bar"><i style="width:${ok?100:x.g&&x.g.videoAsset?50:0}%;background:var(${ok?"--use":"--review"})"></i></div>
+      <span class="c">${ok?"Confirmed":st==="review"?"Check it":st==="bad"?"Fixing":st==="gen"?"Cutting":"Not cut yet"}</span></button>`}).join("")}</nav>`:"";
+  const fi=document.querySelector("#finalView [data-faultform] textarea"), draft=fi?fi.value:"", had=fi&&document.activeElement===fi;
+  $("#finalView").innerHTML=`${strip}
+    <section class="widget wide" id="w-final">
+      <div class="w-head"><span class="w-num">${done===slots.length&&slots.length?"✓":"01"}</span>
+        <div class="w-title"><h2>${film?"Finished film":"Finished videos"}</h2><span class="sub">${film?"The film as it ships, cut from the confirmed scenes":"One finished video per hook — each hook with the same body"} · ${done} of ${slots.length} confirmed</span></div>
+        <div class="w-actions"><button class="btn small primary" type="button" data-zip="final" data-step="file" ${have?"":"disabled"}>${I.dl} Download all</button></div></div>
+      <div class="bar w-bar"><i style="width:${slots.length?done/slots.length*100:0}%;background:var(--use)"></i></div>
+      <div class="w-body">${slots.length?`<div class="fgrid">${slots.map(finalCard).join("")}</div>`:
+        `<div class="empty">The finished videos appear here once the edit is done — one for each hook, each with the same body. Until then, the work in progress is on the Board and in Manual run.</div>`}</div></section>`;
+  const ni=document.querySelector("#finalView [data-faultform] textarea"); if(ni&&draft){ni.value=draft;if(had) ni.focus()}
+}
+
 function mdToHtml(md){
   if(window.marked&&window.DOMPurify) return DOMPurify.sanitize(marked.parse(String(md||""),{gfm:true,breaks:false}));
   return `<pre class="v-prompt" style="color:inherit;background:var(--sunk)">${esc(md)}</pre>`;
@@ -1831,9 +1916,10 @@ function tocJump(i){
 let pickTarget=null;
 document.addEventListener("click",e=>{
   if(!e.target.closest(".vsel")) closeVsel();
-  const t=e.target.closest("[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-fjump],[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
+  if(ds.fjump){const el=document.getElementById("fc-"+ds.fjump);if(el) el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"});return}
   if(ds.apt!==undefined){const a=t.closest(".ap").querySelector("audio");if(a.paused){const p=a.play();if(p&&p.catch) p.catch(()=>toast("Couldn't play this file"))}else a.pause();return}
   if(ds.vsopen){const m=t.nextElementSibling;const open=m.hidden;closeVsel();m.hidden=!open;t.setAttribute("aria-expanded",String(open));return}
   if(ds.vspick){state.voSel[ds.part]=ds.vspick;swapVoRow(ds.part);return}
@@ -1903,8 +1989,8 @@ document.addEventListener("input",e=>{if(e.target.id==="search"){state.q=e.targe
 $("#scrim").addEventListener("click",closeDrawer);
 
 /* boot */
-state.build=/^#[A-Za-z0-9_.~-]+$/.test(location.hash)&&!["#manual","#plan"].includes(location.hash)?location.hash.slice(1):null;
-state.view=["#manual","#plan"].includes(location.hash)?location.hash.slice(1):(["manual","plan"].includes(lsGet("gb.view"))?lsGet("gb.view"):"board");
+state.build=/^#[A-Za-z0-9_.~-]+$/.test(location.hash)&&!["#manual","#plan","#final"].includes(location.hash)?location.hash.slice(1):null;
+state.view=["#manual","#plan","#final"].includes(location.hash)?location.hash.slice(1):(["manual","plan","final"].includes(lsGet("gb.view"))?lsGet("gb.view"):"board");
 function setSync(live,txt){$("#syncDot").classList.toggle("live",live);$("#syncTxt").textContent=txt}
 function offline(){
   state.builds=OFFLINE.builds;state.gens=OFFLINE.gens;state.readOnly=true;
