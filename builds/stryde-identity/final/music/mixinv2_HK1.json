@@ -1,0 +1,4 @@
+{"scene": "STRYDE_Identity_HK1_final_inv3", "picture": "../STRYDE_Identity_HK1_final.mp4",
+ "dialogue": "../../vo/master2/Identity-Narrator_master2_HK1.mp3", "room_tone": null,
+ "music": "INV2_v1_ad.wav", "music_in": 0.0, "sfx": [],
+ "levels": {"music_db": -5, "duck_db": 8}}

@@ -304,3 +304,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   music) and v5 are kept.
 - (v6) User: "make the music a bit louder" → the investigation bed +4 dB (`mixinv_HK*.json` music_db -9 → -5, still ducked
   ~8 dB under the voice), re-mixed and loudnormed (-14.3 / -14.3 / -14.4 LUFS, -1 dBTP). Final board FINAL-HK1..3 = v6, To check.
+
+## 2026-09-28 — Final v7: investigation BGM, not sad (user: "IT SOUND SO SAD")
+- New cue `final/music/INV2.cue.json` (ElevenLabs Music): modern investigative explainer — confident detective groove,
+  ticking hi-hat, punchy low kick, pizzicato strings, muted synth arpeggio; negatives: sad, melancholic, mournful, slow sad
+  piano, somber strings, minor-key ballad, dark drone. Steady by design (sections mid/mid/mid/high/mid); measured far
+  brighter than the first investigation track (spectral centroid ~1,350–1,780 Hz vs ~400). `music.py check` flags are the
+  drum hits (CLICK) and a half-time tempo read (60 = 120 BPM); no vocals. 0.2s silent start trimmed, levelled
+  (`level_bed.py`, gain −7.5…+2 dB), mixed at the louder setting (music −5 dB, ducked ~8 dB), −14.3 LUFS / −1 dBTP.
+- Storage: with the user's OK ("Delete v3 + v4") the v3 and v4 video files of all three ads were deleted (33 assets).
+- Final board FINAL-HK1..3 = v7, To check (v5/v6 = the first, sad investigation track, kept); MUS-BGM v4 = the new bed alone.

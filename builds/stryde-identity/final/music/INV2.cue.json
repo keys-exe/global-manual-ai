@@ -1,0 +1,11 @@
+{"scene": "STRYDE-BGM-INVESTIGATION-2", "length_s": 64.2,
+ "theme": ["modern investigative explainer underscore, like a confident documentary reveal", "curious and intriguing, NOT sad", "upbeat detective groove", "tight ticking hi-hat pulse and punchy low kick", "plucky pizzicato strings and clean muted synth arpeggio", "confident, positive, forward momentum, the mystery is being solved", "one consistent groove, key and instrumentation from start to end", "sits under a voice-over"],
+ "avoid": ["sad", "melancholic", "mournful", "slow sad piano", "somber strings", "minor-key ballad", "horror", "dark ambient drone", "vocals", "EDM drop", "big trailer hits", "busy melody"],
+ "tempo": "moderate",
+ "sections": [
+  {"name": "The question", "start": 0, "end": 4.8, "energy": "mid", "styles": ["groove starts immediately at full pulse", "intriguing hook"]},
+  {"name": "The investigation", "start": 4.8, "end": 24.4, "energy": "mid", "styles": ["same groove", "pizzicato and arpeggio driving forward", "curious, confident"]},
+  {"name": "The evidence", "start": 24.4, "end": 49.4, "energy": "mid", "styles": ["same groove", "a little brighter", "positive momentum"]},
+  {"name": "The verdict", "start": 49.4, "end": 61.8, "energy": "high", "styles": ["same groove at its fullest", "bright, confident, satisfying reveal", "still restrained under the voice"]},
+  {"name": "Case closed", "start": 61.8, "end": 64.2, "energy": "mid", "styles": ["the groove keeps going to the very last second", "ends on a bright confident hit, still ringing"], "avoid": ["fade out", "silence", "early ending"]}
+ ]}

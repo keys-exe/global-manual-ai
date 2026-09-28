@@ -1,0 +1,89 @@
+{
+  "positive_global_styles": [
+    "modern investigative explainer underscore, like a confident documentary reveal",
+    "curious and intriguing, NOT sad",
+    "upbeat detective groove",
+    "tight ticking hi-hat pulse and punchy low kick",
+    "plucky pizzicato strings and clean muted synth arpeggio",
+    "confident, positive, forward momentum, the mystery is being solved",
+    "one consistent groove, key and instrumentation from start to end",
+    "sits under a voice-over",
+    "instrumental",
+    "moderate tempo"
+  ],
+  "negative_global_styles": [
+    "sad",
+    "melancholic",
+    "mournful",
+    "slow sad piano",
+    "somber strings",
+    "minor-key ballad",
+    "horror",
+    "dark ambient drone",
+    "vocals",
+    "EDM drop",
+    "big trailer hits",
+    "busy melody",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The question",
+      "positive_local_styles": [
+        "groove starts immediately at full pulse",
+        "intriguing hook"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 4800,
+      "lines": []
+    },
+    {
+      "section_name": "The investigation",
+      "positive_local_styles": [
+        "same groove",
+        "pizzicato and arpeggio driving forward",
+        "curious, confident"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 19600,
+      "lines": []
+    },
+    {
+      "section_name": "The evidence",
+      "positive_local_styles": [
+        "same groove",
+        "a little brighter",
+        "positive momentum"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 25000,
+      "lines": []
+    },
+    {
+      "section_name": "The verdict",
+      "positive_local_styles": [
+        "same groove at its fullest",
+        "bright, confident, satisfying reveal",
+        "still restrained under the voice"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 12400,
+      "lines": []
+    },
+    {
+      "section_name": "Case closed",
+      "positive_local_styles": [
+        "the groove keeps going to the very last second",
+        "ends on a bright confident hit, still ringing"
+      ],
+      "negative_local_styles": [
+        "fade out",
+        "silence",
+        "early ending"
+      ],
+      "duration_ms": 4400,
+      "lines": []
+    }
+  ]
+}
