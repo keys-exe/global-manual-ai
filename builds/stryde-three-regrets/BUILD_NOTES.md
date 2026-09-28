@@ -71,8 +71,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - **HK2 images all confirmed (user; HK2-02 = v4). HK2 clips generated** on Kling (`kling-video-v3_0_omni`, 1080p, 9:16,
   multi-shot off, gen 1, preflight PASS, `hooks/HK2/*.call.json`): HK2-01 / 02 / 03 each 3.04s, 36 cr — on the board, To check.
   HK2-02's call holds the letter's handwriting unchanged. **Kling now at 3 credits → HK3 and later clips go to Kie (`kie.py kling`).**
-- **Next:** the user's HK2 gate (Confirm/Fix the three clips) → HK3 (images first).
-
+- **HK2 clip Fixes (user):** HK2-01 clip confirmed. HK2-02 back to the image ("REMOVE THE BOARD") → start image v5: she reads
+  the classic letter at her desk, no pinboard (v4 clip kept in `videoVersions`; new clip after the v5 Confirm). HK2-03 clip
+  "REMOVE SWING STRAP" → generation 2 (§22X: motion fault → the strap creeps and stops dead, no swing), sent to **Kie**
+  (`kie.py kling`, first Kie Kling call, 69 Kie credits). Kie needs `aspect_ratio: auto` on single-image I2V (422 otherwise;
+  kie.py fixed) → output 1072×1928, a hair off 1080×1920, reframed in the edit. A third HK2-03 clip needs the user's go.
+- **Next:** the user checks HK2-02 v5 (image) and HK2-03 v2 (clip) → HK2-02 clip on Kie → HK2 gate → HK3.
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
 - **Next (old):** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
