@@ -12,3 +12,4 @@ builds/*/intake/
 builds/*/cast/*.png
 builds/*/voice/*.png
 builds/*/hooks/**/*.png
+builds/*/hooks/**/*.mp4

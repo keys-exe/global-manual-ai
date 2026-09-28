@@ -49,8 +49,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   step-down, ground angle, P3 + R2 sheet), HK1-03 (X-ray past the brace, P6) on `nano_banana_2` 2k 9:16 (Higgsfield logs
   `nano_banana_flash`), one render each; prompts in `hooks/HK1/*.txt` (§22T seeds, 2,754–3,016 chars). On the board, images To
   check. Higgsfield 19,700.25 after.
-- **Next:** on the user's image Confirm → the three Kling clips (3 / 4 / 3s, §35 + §27G, `preflight.py`), then HK1 is the
-  user's gate before HK2.
+- **HK1 images confirmed (user); HK1 clips generated:** Kling `kling-video-v3_0_omni`, 9:16 1080p, multi-shot off, audio on,
+  generation 1, `preflight.py` PASS (`hooks/HK1/*.call.json`, 2,372–2,490 chars after the §37 negatives trim). HK1-01 3.04s
+  (36 cr) · HK1-02 4.04s (48 cr) · HK1-03 3.04s (36 cr). On the board, To check. **Kling balance ~367 after** — the rest of
+  the build needs ~2,900 at 12 cr/s (239s of B-roll): top-up needed before Act 1.
+- **Next:** the user's HK1 gate (Confirm/Fix the three clips) → HK2 (images first).
+
 - Note: `stryde-regrets` (branch `claude/practical-archimedes-4akvfm`, board 1PfmPCZQeuVTPn4ND1w86t, routine
   `trig_01Nih4e78WMcUjbtd8dRqS2g`) is an earlier start on the same Drive folder — superseded by this build.
 - **Next (old):** after the plate check → §22U for N (voice-source image in P2 workroom, 2 Kling takes with VOICE-NARR,
