@@ -89,3 +89,8 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
 - Kie spend this round: 180 credits (2 clips).
 - 2026-09-28 (round 7): A4-B1 clip v5 from the confirmed fix-6 frame (lacing boots), Kie 72 credits — `review`. No other Fix notes open; every other B-roll card is confirmed.
 - 2026-09-28 (round 8): A4-B1 video Fix "he should just be getting up, not tying" → clip v6 on the confirmed boot frame: he rises from the crouch on the strapped knee (`work/fix7_motion.py`, `calls/A4-B1.fix7.json`), Kie 72 credits — `review`; v5 moved to Old.
+
+## 2026-09-28 — edit stopped; narrator becomes a Japanese Kampo physician
+- User: "ALL CONFIRMED PROCEED TO EDITING WITH CAPTIONS AND BGM", then stopped it: "STOP THE EDITING WE WILL CHANGE THE TALKING HEADS — Ancient Chinese / Japanese medical authority". Answers: rewrite as the healer · Japanese Kampo physician (Edo-era) · new voice.
+- Found: the v2 finals never rendered (variants_report FAIL, ffmpeg SIGKILL/OOM — the one-graph concat of 49 inputs); FINAL-HK1..3 on the Final board are still v1. The v2 inputs are fetchable: VO v2 masters (`work/vo_urls_v2.txt`), HeyGen v2 heads (TH-HK1 ede4ba16…, TH-HK2 7dd3f3be…, TH-HK3 9a00c2c3…, TH-BODY 5c14d398…), and all 40 confirmed B-roll from each card's `videoUrl` (sizes verified).
+- Script v3 draft: `script_v3_kampo.md` (7 changed lines, 3 B-roll to redo, flag F21). Waiting for the user's approval.
