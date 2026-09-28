@@ -30,12 +30,15 @@ CAST = {
    face="A small, round, soft face with plump cheeks, small bright hazel eyes set close, a small button nose and a small chin, a gentle rosebud mouth. A thin white scar running up through her right eyebrow, splitting it in two, her one marker. The left cheek is a little fuller than the right",
    hair="Thick pure-white hair cut short in a tidy pixie crop, full at the crown, the same white and the same height in every panel",
    body="A white British woman. Small and slight, narrow shoulders, a slight forward lean from the upper back, seventy-nine years old",
+   warm="FRIENDLY AND NATURAL — a kind, easy face you would stop to chat with at the bus stop: the eyes bright and soft, the lids relaxed, crow's feet fanning from the corners as if she has just been told something nice; the brow at rest and open; the mouth closed but soft, its corners turned very slightly up, never pulled down; the jaw loose, the head tilted a touch, the shoulders dropped and easy, standing the way she would stand in her own hallway — relaxed, not posed, not stiff, not stern, not a posed smile",
    ward="A mustard-yellow cable-knit cardigan buttoned over a teal-and-cream floral cotton dress ending just above the knee, bare legs, and navy slip-on canvas shoes",
    age="fine lines all over the face, deep crow's feet, soft hollows at the temples, thin papery skin on the backs of the hands with raised blue veins"),
 }
 
 def build(k, c):
     sheet = S("AVATAR-SHEET")
+    if c.get("warm"):                         # Fix note 2026-09-28 (user): "make it look friendly and natural"
+        c = dict(c, face=c["face"] + ". " + c["warm"])
     if c.get("pro"):                          # §19B face register (correction 2026-09-26)
         c = dict(c, face=c["face"] + ". " + S("APPROACH-PRO").rstrip("."))
     first, rest = sheet.split(". ", 1)          # SHEET-GRID pasted after the opening sheet sentence
@@ -48,7 +51,7 @@ def build(k, c):
     assert "[" not in sheet, k
     skin = "IN THE FACE CLOSE-UP: " + S("SKIN-T").replace("[AGE-FEATURES]", c["age"])
     ndf = S("NEG-DEFAULT-FACE")
-    if c.get("pro"):                          # §19B: drop the last two clauses
+    if c.get("pro") or c.get("warm"):         # §19B: drop the last two clauses (they fight a friendly face)
         ndf = ndf.replace(", no soft agreeable features throughout, not a face that could advertise anything", "")
     neg = ", ".join([S("NEG-SHEET"), S("NEG-GRID"), S("NEG-FILE"), ndf])
     return "\n\n".join([S("CAM-LOCK"), sheet, skin, S("CAP-SHARP"), S("CAP-FILE"), "AVOID: " + neg + "."])

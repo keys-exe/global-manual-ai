@@ -15,7 +15,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   (Sunburst, 25 credits, balance 19,937.5), all on the board as To check. Absorption on the Plan tab.
 
 ## Where it stands
-- **Waiting on the user:** the avatar check (N, R1 Gail, R2 Ken, R3 Joan) and flags F1–F3 and F5 in the Build Sheet.
+- **Avatars:** N, R1 Gail, R2 Ken confirmed by the user. R3 Joan Fix ("make it look friendly and natural") → v2 on the board as To check.
+- **Waiting on the user:** Joan v2, and flags F1–F3 and F5 in the Build Sheet.
 - **Next on the go:** steps 4–5: property and location maps with plates, act map + wardrobe map (`angles.py`), then §22U for N
   (clone name `Regrets`).
 - Cast PNG originals are on the board (asset ids in the generation docs); the repo keeps JPEG copies.

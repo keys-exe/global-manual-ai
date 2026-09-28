@@ -247,12 +247,12 @@ Recurring subjects (≥ 2 beats): **N narrator** (TH P-001, P-031, P-049, P-054�
 
 | Sheet | Job ID | File | Board |
 |---|---|---|---|
-| N-NARR | `4bb1467d-f843-4329-affe-b50470add366` | `cast/N-NARR_v1.png` | To check |
-| R1-GAIL | `39306d36-3fbe-43ab-a8a8-43fc3d63b61c` | `cast/R1-GAIL_v1.png` | To check |
-| R2-KEN | `4fe46b58-adec-4baf-bbf8-61f70a909fca` | `cast/R2-KEN_v1.png` | To check |
-| R3-JOAN | `f885e719-7cf3-4417-baf1-eb6c8c228c70` | `cast/R3-JOAN_v1.png` | To check |
+| N-NARR | `4bb1467d-f843-4329-affe-b50470add366` | `cast/N-NARR_v1.png` | **Confirmed** (user, 2026-09-28) |
+| R1-GAIL | `39306d36-3fbe-43ab-a8a8-43fc3d63b61c` | `cast/R1-GAIL_v1.png` | **Confirmed** (user, 2026-09-28) |
+| R2-KEN | `4fe46b58-adec-4baf-bbf8-61f70a909fca` | `cast/R2-KEN_v1.png` | **Confirmed** (user, 2026-09-28) |
+| R3-JOAN | `5684782d-e205-428b-a5f1-00a73d31f126` (v2) | `cast/R3-JOAN_v2.png` | To check. *v1 `f885e719…` sent to Fix: "make it look friendly and natural". v2 adds a FRIENDLY AND NATURAL register after her face fill (warm eyes, relaxed lids, mouth corners very slightly up, loose jaw, easy stance, not a posed smile) and drops `NEG-DEFAULT-FACE`'s last two clauses, as §19B does for clinicians. Face, hair, marker and wardrobe unchanged. Prompt `cast/R3-JOAN.v2.prompt.txt` (9,656 chars)* |
 
-All four are 1520×2688, one render per call, 6.25 credits each (25 total; Higgsfield balance 19,937.5). Prompts: `cast/<ID>.prompt.txt`, built from Appendix A by ID in `cast/build_sheets.py` (`CAM-LOCK` → `AVATAR-SHEET` with `SHEET-GRID` → `SKIN-T` → `CAP-SHARP` → `CAP-FILE` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILE` + `NEG-DEFAULT-FACE`), 9,211–9,302 chars each. R1's first marker (a port-wine mark) was swapped for bunions before sending, because `NEG-SHEET` bans birthmarks.
+All are 1520×2688, one render per call, 6.25 credits each (31.25 total with the Joan Fix). Prompts: `cast/<ID>.prompt.txt`, built from Appendix A by ID in `cast/build_sheets.py` (`CAM-LOCK` → `AVATAR-SHEET` with `SHEET-GRID` → `SKIN-T` → `CAP-SHARP` → `CAP-FILE` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILE` + `NEG-DEFAULT-FACE`), 9,211–9,302 chars each. R1's first marker (a port-wine mark) was swapped for bunions before sending, because `NEG-SHEET` bans birthmarks.
 
 ### Identity strings — read off the renders (§7), descriptive only (the check is yours)
 
