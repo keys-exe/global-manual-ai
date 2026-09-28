@@ -703,6 +703,23 @@ END["BR-11-END"] = (NBP, ["back", "56a2c1e9-d175-47eb-b7f0-fdd5325768c0", "front
     "no wordmark, no front face, no peaks pointing down, no shell tipped over, no shell lying flat, no band hanging underneath, "
     "no band hidden, no second strap, no size change, no other change to the scene, " + NEG_HANDS))
 
+# ── Fix round 10 (user Fix on the BR-11 image "make it small", 2026-09-28 ~19:40) ─────────────────────────────────────
+# The confirmed BR-15a v3 already has the strap at its true small size in this bench set-up, so it leads as the size and framing
+# reference (job ref first); BR-11's own composition (held up, wordmark to the lens) otherwise stays.
+FIX10 = {"BR-11": "make it small"}
+B["BR-11"] = (NBP, ["90168a20-dade-40fe-96db-2ffae7f4f02b", "front", "back", "C1", "P2"], photo([
+    "THE FIRST ATTACHED IMAGE SETS THE SIZE AND THE FRAMING: the same man at the same bench, the camera the same distance back "
+    "(collar to belt), and the strap EXACTLY THAT SMALL in his hand — the shell clearly narrower than his hand across the knuckles, "
+    "about a fifth of the frame's width. The strap is THE EXACT SAME OBJECT as the second attached product photo, the front. He holds "
+    "it up at chest height in his right hand, front face and wordmark square to the lens: "
+    + dict(P.HELD_GRIPS)["bottom-edge pinch"].split(" (")[0].replace(", band slack round the wrist", "")
+    + ", the band folded and tucked into his palm behind the shell. Both peaks and the notch stand clear. His face is just out of "
+    "frame at the top. " + C1_HANDS,
+    PROD.replace(" spanning the whole front of the knee", "") + " " + RIGID + " " + SMALL.replace(
+        " — and the closed band is a small soft loop not much bigger than his wrist", ""),
+    BENCH, angle("BR-11", "his hand"), focus("the product and its wordmark"), light("WS-L", "his hand"), colour("WORKSHOP")],
+    HELD_NEG + NEG_SMALL + ", no hanging loop, no close-up of the strap, no strap filling the frame, " + NEG_HANDS))
+
 if __name__ == "__main__":
     out = {}
     for beat, (model, refs, prompt) in B.items():
