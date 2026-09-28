@@ -355,6 +355,15 @@ V["BR-12"] = ("KNEE HEIGHT from the front as in the start frame, ending closer o
    "no step, no walking, no foot lifting, no fast zoom, no turning away, no hands on the knee, no face", "in_place",
    [("she walks", "boots planted + no step"), ("zoom too fast", "slow, steady, whole clip + no fast zoom"), ("strap slides", "product lock")])
 
+# BR-11 (user: "Use END v4 as end frame", 2026-09-28 ~19:35): he turns the strap over, so it runs first-and-last frame to BR-11-END v4.
+PIN_END["BR-11"] = "broll/renders/BR-11-END_v4.png"
+V["BR-11"] = ("CLOSE as in the start frame, him at the bench holding the strap at chest height.", PROPPED,
+   "His hands turn the strap over in one slow, even turn over about two seconds, rotating it round its long axis so its back comes to "
+   "face the lens, ending exactly as in the end frame; the shell stays the same small size and shape throughout.", True,
+   "no strap flipping twice, no second strap, no strap growing, no band tangling, no face changing", "in_place",
+   [("the strap morphs mid-turn", "pinned end frame + HOLD_PC"), ("turns too far or back again", "one turn, ends on the end frame"),
+    ("fingers fuse with the strap", "HOLD-HC")])
+
 
 def build(beat):
     framing, rig, motion, prod, extra, sm, risks = V[beat]

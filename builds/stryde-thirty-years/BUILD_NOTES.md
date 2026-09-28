@@ -206,10 +206,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   (generation 4: same front shot, slow steady push-in on the strapped knee, feet planted); `user_go` on each call, preflight's only
   FAIL the generation gate. Superseded BR-02 v2 and BR-12 v2/v3 files removed for room.
 
-## Where it stands (2026-09-28 19:30)
+  ~19:35: user "BR-11 generate this confirm image" → asked; user chose "Use END v4 as end frame" (BR-11-END v4 treated as
+  confirmed on their word; its board card was gone by then, so the end frame is recorded on BR-11's card as `endFrame`). BR-11 v1:
+  first-and-last frame, 3s, 54 Kie credits, on the board as review. BR-02 v3 and BR-12 v4 confirmed by the user.
+
+## Where it stands (2026-09-28 19:35)
 - Hooks done. VO master T2. TH-HK1/2/3-BODY v3 still To check.
-- B-roll videos To check: BR-02 v3, BR-12 v4. All other B-roll videos are "use" except BR-11 (not made yet).
-- BR-11-END v4 To check; BR-11's video (first-and-last frame) follows its Confirm.
+- B-roll: every video confirmed ("use") except BR-11 v1 (To check) — the last B-roll clip.
 - Any further Fix on BR-02, BR-05a, BR-05b, BR-12 is past the §22X limit — ask first.
-- Board storage stays at the cap; each new render goes up after its superseded file is removed.
-- Next: once BR-11 is in, rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.
+- Board storage at the cap; each new render goes up after its superseded file is removed.
+- Next: once BR-11 is confirmed, rough cut per hook (`assemble.py`, `variants.py`) → CapCut block.
