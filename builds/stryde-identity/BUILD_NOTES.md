@@ -31,3 +31,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   then step 6: the hooks one by one (HK1 first, split layout EG01), as prompts + generations on the board.
 - Open flags from the Build Sheet: F2 (Pat's cropped trousers vs strap visibility), F4 (comparative claim P-005),
   F7 (`package_closed.jpg` missing), F8 (AVATAR-SHEET doc inconsistency), F10 (watermark omit).
+
+- (2026-09-28, 15:05 UTC) **Board split into four (user: separate Final output, Plan and Old versions boards, for storage).**
+  Current https://claude.ai/artifact/GKZDjmZkh4wwm7RxtXj7Tp · Old https://claude.ai/artifact/463LLedeKaxFUa38SA4tEJ (the earlier
+  "archive" page, now the Old versions board) · Final https://claude.ai/artifact/9Y3ww3H8Bc3X6Xsp2JPVPW · Plan https://claude.ai/artifact/8BJ5uy6ejnwZdr9up5xjGk.
+  50 old files copied to Old (plus the 57 already there); 44 Old cards written; the 12 unchosen VO takes (T1–T3) moved off Current.
+  Current's version entries marked `archived` + `archiveAsset`. 7 of the 73 moved files deleted from Current; the other 66 wait for
+  the user's go-ahead (the permission check stopped the deletes). 22 old files deleted earlier can't be moved.

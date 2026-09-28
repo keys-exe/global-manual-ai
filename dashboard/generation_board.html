@@ -51,6 +51,8 @@ button{cursor:pointer}
 .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 select.field,input.field{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-height:36px}
 .btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 12px;min-height:36px;font-weight:500;display:inline-flex;align-items:center;gap:6px}
+a.btn{text-decoration:none;color:inherit}
+a.tab{text-decoration:none}
 .btn:hover{border-color:var(--faint)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
 :root[data-theme="dark"] .btn.primary{color:#0E1117}
@@ -670,7 +672,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 <div class="wrap">
   <header class="top">
     <div>
-      <div class="eyebrow">AI Prompt Engineer · Generation Board</div>
+      <div class="eyebrow" id="eyebrow">AI Prompt Engineer · Generation Board</div>
       <h1 id="buildTitle">Loading build…</h1>
       <div class="meta" id="buildMeta"></div>
     </div>
@@ -684,6 +686,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
     <button class="tab" role="tab" type="button" data-view="manual" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 4.5 1.5 1.5 2.5-3M2.5 11l1.5 1.5 2.5-3M9 5h4.5M9 11.5h4.5"/></svg><span>Manual run</span><span class="tab-badge" id="needsBadge" hidden></span></button>
     <button class="tab" role="tab" type="button" data-view="plan" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 1.8h5.5l3 3v9.4H4z"/><path d="M6.5 8h4M6.5 10.8h4" stroke-linecap="round"/></svg><span>Plan</span></button>
     <button class="tab" role="tab" type="button" data-view="final" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="1.8" width="10" height="12.4" rx="1.8"/><path d="M6.8 5.6v4.8L10.6 8z" fill="currentColor"/></svg><span>Final output</span><span class="tab-badge" id="finalBadge" hidden></span></button>
+    <span id="boardLinks" style="display:contents"></span>
   </div>
 
   <div class="banner" id="banner" hidden></div>
@@ -716,6 +719,15 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
 <script>
+// One template, four boards per build (user, 2026-09-28): each published copy sets its role here.
+//   current — the confirmed renders and the ones to check (Board, Manual run)
+//   old     — every version that was replaced by a Fix or not chosen, read-only
+//   final   — the finished videos (Final output)
+//   plans   — the absorption, act map, wardrobe map and other step documents (Plan)
+// The build doc's `boards` {current, old, final, plans} links the four; a board without it shows all tabs as before.
+const BOARD_ROLE = "current";
+const ROLE_VIEWS = {current:["board","manual","plan","final"], old:["board","manual"], final:["final"], plans:["plan"]};
+const BOARD_NAMES = {current:"Current", old:"Old versions", final:"Final output", plans:"Plan"};
 const STAGES = [
   {key:"absorption", name:"Absorption", folder:"01_ABSORPTION", sub:"What the reference ad does, in plain words", kind:"doc"},
   {key:"cast",       name:"Cast",       folder:"02_CAST",       sub:"Character sheets, checked image by image", kind:"image"},
@@ -746,6 +758,10 @@ const I = {
   ok:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3.5 8.5 3 3 6-7"/></svg>',
   fix:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M10.5 2.5l3 3-8 8H2.5v-3z"/></svg>',
   info:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 7.2v4M8 4.8v.1" stroke-linecap="round"/></svg>',
+  grid:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="5" height="5" rx="1.2"/><rect x="9" y="2" width="5" height="5" rx="1.2"/><rect x="2" y="9" width="5" height="5" rx="1.2"/><rect x="9" y="9" width="5" height="5" rx="1.2"/></svg>',
+  play:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="1.8" width="10" height="12.4" rx="1.8"/><path d="M6.8 5.6v4.8L10.6 8z" fill="currentColor"/></svg>',
+  doc:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 1.8h5.5l3 3v9.4H4z"/><path d="M6.5 8h4M6.5 10.8h4" stroke-linecap="round"/></svg>',
+  box:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4.5h11v2h-11zM3.5 6.5v6h9v-6M6.5 9h3"/></svg>',
   back:'<svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6.5h6a3 3 0 0 1 0 6H6M6 3.5l-3 3 3 3"/></svg>',
 };
 const ICONS = {
@@ -771,6 +787,13 @@ function lsSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
 function toast(msg){const t=$("#toast");t.textContent=msg;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(()=>t.hidden=true,2200)}
 
 function currentBuild(){return state.builds.find(b=>b.id===state.build)||state.builds[0]||null}
+function boardsOf(b){return (b&&b.boards)||(b&&b.archiveUrl?{old:b.archiveUrl}:{})}
+// Views this board shows itself: on the current board, Plan and Final output move to their own boards once linked
+function views(){const b=currentBuild(), l=boardsOf(b);return (ROLE_VIEWS[BOARD_ROLE]||ROLE_VIEWS.current).filter(v=>BOARD_ROLE!=="current"||!(v==="plan"&&l.plans||v==="final"&&l.final))}
+function boardLinks(){
+  const l=boardsOf(currentBuild()), ic={current:I.grid,old:I.box,final:I.play,plans:I.doc};
+  return ["current","plans","final","old"].filter(r=>r!==BOARD_ROLE&&l[r]).map(r=>`<a class="tab" href="${esc(l[r])}" target="_blank" rel="noopener">${ic[r]||""}<span>${BOARD_NAMES[r]} ↗</span></a>`).join("");
+}
 function buildGens(){const b=currentBuild();return b?state.gens.filter(g=>g.build===b.id):[]}
 // a VO take not picked for a part that already has its confirmed take: kept as a version, never counted as waiting
 function spareTake(g,gens){return g.stage==="vo"&&g.status!=="use"&&(gens||state.gens).some(o=>o.stage==="vo"&&o.id!==g.id&&o.build===g.build&&voPart(o)===voPart(g)&&o.status==="use")}
@@ -935,13 +958,17 @@ function renderInner(){
     <div class="kpi"><span class="k">Fixing</span><span class="v" style="color:var(--regen)">${regen}</span><span class="s">Two tries per fault, then you</span></div>
     <div class="kpi"><span class="k">Credits spent</span><span class="v">${num(credits)}</span><span class="s">Logged on generations</span></div>`;
 
-  document.querySelectorAll(".tabs .tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.view===state.view));
-  {const n=needsYouCount(gens), bd=$("#needsBadge"); bd.textContent=n; bd.hidden=!n; bd.title=`${n} waiting for you`}
+  const vs=views(); if(!vs.includes(state.view)) state.view=vs[0];
+  $("#eyebrow").textContent=BOARD_ROLE==="current"&&!Object.keys(boardsOf(b)).length?"AI Prompt Engineer · Generation Board":"Generation Board · "+BOARD_NAMES[BOARD_ROLE];
+  document.querySelectorAll(".tabs button.tab").forEach(t=>{t.hidden=!vs.includes(t.dataset.view);t.setAttribute("aria-selected",t.dataset.view===state.view)});
+  {const h=boardLinks(); if($("#boardLinks").innerHTML!==h) $("#boardLinks").innerHTML=h}
+  if(BOARD_ROLE==="old") showBanner("Old versions: every render that a Fix replaced or that wasn't chosen, kept at full quality. Nothing here needs checking. The confirmed ones and the ones to check are on the Current board.");
+  {const n=BOARD_ROLE==="old"?0:needsYouCount(gens), bd=$("#needsBadge"); bd.textContent=n; bd.hidden=!n; bd.title=`${n} waiting for you`}
   $("#boardView").hidden=state.view!=="board";
   $("#manualView").hidden=state.view!=="manual";
   $("#planView").hidden=state.view!=="plan";
   $("#finalView").hidden=state.view!=="final";
-  $("#summary").hidden=state.view==="plan"||state.view==="final";
+  $("#summary").hidden=state.view==="plan"||state.view==="final"||BOARD_ROLE==="old";
   {const n=gens.filter(g=>isFinal(g)&&stepState(g,"file")==="review").length, bd=$("#finalBadge"); bd.textContent=n; bd.hidden=!n; bd.title=`${n} finished video${n===1?"":"s"} to check`}
   if(state.view==="manual"){renderManual(gens);return}
   if(state.view==="final"){renderFinal(gens);return}
@@ -950,7 +977,7 @@ function renderInner(){
     if(sig!==state.planSig||!$("#planView").children.length){state.planSig=sig;renderPlan(gens)}
     return}
 
-  const ST=stagesFor(b,gens);
+  const ST=stagesFor(b,gens).filter(s=>BOARD_ROLE!=="old"||gens.some(g=>g.stage===s.key));
   $("#pipe").style.setProperty("--n",ST.length);
   $("#pipe").innerHTML=ST.map((s,i)=>{
     const sg=gens.filter(g=>g.stage===s.key), done=stageDone(s,b,gens,sg);
@@ -986,7 +1013,7 @@ function renderInner(){
       <div class="w-body">${body}</div></section>`;
   }).join("");
   const bal=b&&b.balances||{};
-  if(Object.keys(bal).length){
+  if(Object.keys(bal).length&&BOARD_ROLE==="current"){
     html+=`<section class="widget"><div class="w-head"><span class="w-num">¤</span><div class="w-title"><h2>Credit balances</h2><span class="sub">${b.balancesAt?"As of "+esc(b.balancesAt):"Last recorded"}</span></div></div>
       <div class="w-body"><div class="balances">${Object.entries(bal).map(([k,v])=>`<div class="bal"><div class="k">${esc(k)}</div><div class="v">${num(v)}</div></div>`).join("")}</div>
       <p class="note">Images → Higgsfield (Kie if out) · Kling → Kling · Seedance → Kie.</p></div></section>`;
@@ -1008,6 +1035,8 @@ function versionsOf(g,k){
   if(g[d.asset]&&!arr.some(x=>x.asset===g[d.asset])) arr.push({...snapshot(g,k),v:arr.reduce((m,x)=>Math.max(m,x.v),0)+1});
   return arr.sort((a,b)=>a.v-b.v);
 }
+// A version moved to the build's Old versions board to free space: its file lives there, the entry stays here.
+function archiveLink(x){const u=boardsOf(currentBuild()).old;return u?u+(x&&x.archiveAsset?"#"+x.archiveAsset:""):""}
 function currentV(g,k){const c=versionsOf(g,k).find(x=>x.asset===g[STEP[k].asset]);return c?c.v:null}
 function fetchVer(ver){return Array.isArray(ver.parts)&&ver.parts.length>1?Promise.all(ver.parts.map(fetchAsset)).then(bs=>new Blob(bs,{type:ver.type||bs[0].type})):fetchAsset(ver.asset)}
 const joined={};
@@ -1237,7 +1266,7 @@ function renderManual(gens){
       <div class="bar"><i style="width:${t?d/t*100:0}%;background:var(--use)"></i></div>
       <span class="c">${d} of ${t} done</span></button>`};
   $("#mbar").innerHTML=`<nav class="pipe" style="--n:${gs.length+1}" aria-label="Groups">${stepM("all","All","Everything",allP[0],allP[1],0)}${gs.map((x,i)=>{const [d,t,w]=prog(x);return stepM(x.key,String(i+1).padStart(2,"0"),x.label,d,t,w)}).join("")}</nav>
-    <div class="mtools"><label class="switch"><input type="checkbox" data-needs="1" ${state.mneeds?"checked":""}><span class="sw-track"><span class="sw-knob"></span></span><span>Only what needs me <b>${needsYouCount(gens)}</b></span></label></div>`;
+    <div class="mtools"${BOARD_ROLE==="old"?" hidden":""}><label class="switch"><input type="checkbox" data-needs="1" ${state.mneeds?"checked":""}><span class="sw-track"><span class="sw-knob"></span></span><span>Only what needs me <b>${needsYouCount(gens)}</b></span></label></div>`;
   const html=gs.map(x=>{
     if(state.mstage!=="all"&&state.mstage!==x.key) return "";
     const steps=["image","video","file"].filter(k=>x.items.some(g=>flow(g).includes(k)));
@@ -1292,7 +1321,7 @@ function when(ms){if(!ms) return "—";const d=new Date(ms);return isNaN(d)?"—
 
 function mediaCard(g,k){
   const d=STEP[k], s=stepState(g,k), ro=state.readOnly||!state.assets;
-  const locked=k==="video"&&stepState(g,"image")!=="ok";
+  const locked=BOARD_ROLE!=="old"&&k==="video"&&stepState(g,"image")!=="ok";
   const asset=g[d.asset], type=g[d.type]||"";
   const prompt=g[d.prompt]||"", model=g[d.model]||d.defModel;
   const busy=state.busy[g.id+":"+k];
@@ -1304,7 +1333,7 @@ function mediaCard(g,k){
   const limit=/kling/i.test(model)&&k!=="image"?2500:null;
   const fixing=state.faultOpen===g.id+":"+k;
   const cls=locked?"locked":s==="ok"?"ok":s==="bad"||s==="gen"?"bad":s==="review"?"now":"";
-  const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="gen"?`<span class="pill s-generating">${g[d.fault]?"Regenerating":"Generating"}</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">${prompt?"Prompt ready":"Waiting"}</span>`;
+  const chip=BOARD_ROLE==="old"?`<span class="pill s-regenerate">Not used</span>`:locked?`<span class="pill s-planned">Locked</span>`:s==="gen"?`<span class="pill s-generating">${g[d.fault]?"Regenerating":"Generating"}</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">${prompt?"Prompt ready":"Waiting"}</span>`;
   const size=g[d.size]?(k==="image"?esc(g[d.size]):`${esc(g[d.size])}s`):"—";
   const specs=[
     ["Connector",esc(g[d.conn]||d.defConn||"—")],
@@ -1359,6 +1388,7 @@ async function saveFile(name,blob){
 async function downloadOne(g,k,vnum){
   const id=g[STEP[k].asset]; if(!id) return;
   const x=vnum?versionsOf(g,k).find(y=>y.v===vnum):null;
+  if(x&&x.archived){toast("v"+x.v+" is on the Old versions board. Open it there to download.");return}
   if(x&&x.asset!==id){
     const name=fileName(g,k).replace(/(\.[a-z0-9]+)$/i,`_v${x.v}$1`);
     toast("Preparing "+name+"…");
@@ -1496,7 +1526,8 @@ function renderViewer(){
   const vers=versionsOf(g,k), cur=currentV(g,k);
   const shown=(v.ver&&vers.find(x=>x.v===v.ver))||vers.find(x=>x.v===cur)||null;
   const older=shown&&shown.v!==cur;
-  const asset=shown&&shown.asset, type=(shown&&shown.type)||g[d.type]||"";
+  const moved=!!(shown&&shown.archived);
+  const asset=shown&&!moved&&shown.asset, type=(shown&&shown.type)||g[d.type]||"";
   const list=viewerList(k), i=list.findIndex(x=>x.id===g.id);
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
   // a video in the viewer is always loaded into memory first, so it can be seeked frame by frame
@@ -1505,6 +1536,7 @@ function renderViewer(){
   const locked=k==="video"&&stepState(g,"image")!=="ok";
   const isAud=type.startsWith("audio/");
   const media=asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
+    moved?`<div class="v-empty"><div style="display:grid;gap:12px;justify-items:center">${I.box}<span>v${shown.v} is on the Old versions board, kept at full quality. Nothing was shrunk or deleted.</span>${archiveLink(shown)?`<a class="btn" href="${esc(archiveLink(shown))}" target="_blank" rel="noopener">Open in Old versions ↗</a>`:""}</div></div>`:
     `<div class="v-empty">${locked?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
   const s=stepState(g,k);
   const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
@@ -1520,11 +1552,11 @@ function renderViewer(){
       </div></div>`:"";
   const sizeTxt=x=>x.size==null||x.size===""?"":(k==="image"?String(x.size):`${x.size}s`);
   const item=x=>{
-    const thumb=(x.type||"").startsWith("video/")||(k!=="image"&&!(x.type||"").startsWith("image/"))?`<span class="vt vt-vid">▶</span>`:`<img class="vt" ${srcFrom(x.asset,x.parts,x.type)} alt="">`;
+    const thumb=x.archived?`<span class="vt vt-vid" title="On the Old versions board">${I.box}</span>`:(x.type||"").startsWith("video/")||(k!=="image"&&!(x.type||"").startsWith("image/"))?`<span class="vt vt-vid">▶</span>`:`<img class="vt" ${srcFrom(x.asset,x.parts,x.type)} alt="">`;
     const meta=[when(x.at),x.model,x.connector,sizeTxt(x)].filter(y=>y&&y!=="—").map(esc).join(" · ");
     return `<button type="button" class="v-item" role="option" data-vpick="${x.v}" aria-selected="${x.v===(shown&&shown.v)}">
       ${thumb}<span class="vi-txt"><span class="vi-t">v${x.v}${x.v===cur?`<span class="vi-cur">Current</span>`:""}</span>
-      <span class="vi-m">${meta||"—"}</span>${x.note?`<span class="vi-n">Fix: ${esc(x.note)}</span>`:""}</span></button>`;
+      <span class="vi-m">${meta||"—"}${x.archived?" · In Old versions":""}</span>${x.note?`<span class="vi-n">Fix: ${esc(x.note)}</span>`:""}</span></button>`;
   };
   const verUi=vers.length?`<div class="v-ver">
       <button type="button" class="v-ver-btn" data-vmenu="1" aria-haspopup="listbox" aria-expanded="${!!v.menu}">
@@ -1560,8 +1592,8 @@ function renderViewer(){
       <div class="v-actions">
         ${canAct&&!v.fix?`<button class="btn okv" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}">${I.ok} Confirm</button>
         <button class="btn badv" type="button" data-vfix="1">${I.fix} Fix</button>`:""}
-        ${older&&!state.readOnly?`<button class="btn full" type="button" data-vrestore="${shown.v}">${I.back} Use this version</button>`:""}
-        <button class="btn primary full" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${shown?`data-ver="${shown.v}"`:"disabled"}>${I.dl} Download${older?` v${shown.v}`:""}</button>
+        ${older&&!moved&&!state.readOnly?`<button class="btn full" type="button" data-vrestore="${shown.v}">${I.back} Use this version</button>`:""}
+        ${moved?(archiveLink(shown)?`<a class="btn primary full" href="${esc(archiveLink(shown))}" target="_blank" rel="noopener">${I.box} Open v${shown.v} in Old versions</a>`:""):`<button class="btn primary full" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${shown?`data-ver="${shown.v}"`:"disabled"}>${I.dl} Download${older?` v${shown.v}`:""}</button>`}
       </div>
     </aside>`;
   const thumbs=list.map(y=>{
@@ -1739,8 +1771,8 @@ function absorptionSummary(){
     <div class="abs-foot">
       ${absDone()?`<span class="pill s-use">Confirmed</span>`:`<span class="pill s-review">Check it</span>`}
       <span class="grow"></span>
-      ${!absDone()&&!state.readOnly?`<button class="btn small ok" type="button" data-absok="1">${I.ok} Confirm</button>`:""}
-      <button class="btn small primary" type="button" data-popen="absorption">Full sheet in Plan →</button></div></div>`;
+      ${boardsOf(currentBuild()).plans&&BOARD_ROLE!=="plans"?`<a class="btn small primary" href="${esc(boardsOf(currentBuild()).plans)}" target="_blank" rel="noopener">Full sheet in Plan ↗</a></div></div>`:`${!absDone()&&!state.readOnly?`<button class="btn small ok" type="button" data-absok="1">${I.ok} Confirm</button>`:""}
+      <button class="btn small primary" type="button" data-popen="absorption">Full sheet in Plan →</button></div></div>`}`;
 }
 const noRef=t=>String(t||"").replace(/\s*\((?:[^()]*§[^()]*)\)/g,"").replace(/\s*§\s*[\w.–-]+/g,"").replace(/\s{2,}/g," ").trim();
 function renderPlan(gens){
@@ -1990,6 +2022,8 @@ $("#scrim").addEventListener("click",closeDrawer);
 
 /* boot */
 state.build=/^#[A-Za-z0-9_.~-]+$/.test(location.hash)&&!["#manual","#plan","#final"].includes(location.hash)?location.hash.slice(1):null;
+if(/^[0-9a-f]{32}$/.test(state.build||"")){state.jumpAsset=state.build;state.build=null}
+if(BOARD_ROLE==="old") state.readOnly=true;
 state.view=["#manual","#plan","#final"].includes(location.hash)?location.hash.slice(1):(["manual","plan","final"].includes(lsGet("gb.view"))?lsGet("gb.view"):"board");
 function setSync(live,txt){$("#syncDot").classList.toggle("live",live);$("#syncTxt").textContent=txt}
 function offline(){
@@ -2018,6 +2052,7 @@ render();
   db.collection("generations").onSnapshot(snap=>{
     state.gens=snap.docs.map(d=>{const g={id:d.id,...d.data()};if(g.stage==="voice"&&/^VO-T/i.test(g.beat||"")) g.stage="vo";return g});
     setSync(true,"Live");render();if(state.viewer) renderViewer();
+    if(state.jumpAsset){const id=state.jumpAsset;for(const g of state.gens) for(const k of flow(g)){const x=versionsOf(g,k).find(v=>v.asset===id);if(x){state.jumpAsset=null;openViewer(g.id,k);state.viewer.ver=x.v;renderViewer();break}}}
     if(state.editing&&!state.editing._new&&!state.gens.some(g=>g.id===state.editing.id)) closeDrawer();
   },err=>{setSync(false,"Sync stopped")});
 })();
