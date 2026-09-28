@@ -82,9 +82,11 @@ def main():
     for n, src in enumerate(srcs, 1):
         trimmed = out / f"{a.name}_source{n}.trim.mp4"
         sped = out / f"{a.name}_source{n}.x{a.speed}.wav"
-        # Step 3 — trim dead air and inhales (E11)
+        # Step 3 — trim dead air and inhales (E11); the clone source is speech only,
+        # so the talking-head natural-pace pauses are off here
         r = subprocess.run([sys.executable, str(HERE / "trim.py"), str(src), "--out", str(trimmed),
-                            "--model", a.model], capture_output=True, text=True)
+                            "--model", a.model, "--sentence-pause", "0", "--comma-pause", "0",
+                            "--word-pause", "0"], capture_output=True, text=True)
         rep = json.loads(r.stdout) if r.stdout.strip() else {"error": r.stderr[-500:]}
         if r.returncode != 0:
             print(json.dumps({"status": "FAIL", "step": 3, "take": n, "src": str(src), "trim": rep}, indent=2))
