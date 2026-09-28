@@ -1,0 +1,17 @@
+{
+  "act": "Voice",
+  "beat": "N-CLONE-SRC",
+  "build": "stryde-three-regrets",
+  "duration": 30.72,
+  "kind": "audio",
+  "line": "Three things people tell us they wish they had known about their knees. Not one of them is that they should have gone to the doctor sooner.",
+  "model": "voice_source.py (same-voice gate PASS, 0% pitch difference)",
+  "note": "Audio-only mp4 wrapper of Regrets_clone_source.mp3 (the board does not take .mp3; the mp3 was sent in chat). Joined speech 6.14s, looped ×5. Next: you clone it in the ElevenLabs app as 'Regrets'.",
+  "stage": "voice",
+  "status": "use",
+  "title": "Regrets clone source (§22U steps 3–5): G1 + G2 trimmed, ×1.2, joined, looped ×5",
+  "updatedAt": 1790591105371,
+  "videoAsset": "54c65a1398b5aff99b202e2477ae8d03",
+  "videoAt": 1790591300000,
+  "videoType": "video/mp4"
+}
