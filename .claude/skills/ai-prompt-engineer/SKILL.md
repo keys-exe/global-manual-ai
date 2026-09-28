@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.65.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.66.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -127,7 +127,8 @@ Setup per session: `pip install -q imageio-ffmpeg faster-whisper numpy yt-dlp gd
 - **State the change before making it**: name the proposed change and every section it affects. No silent edits.
 - Edit `standards/AI_Prompt_Engineer_Global_Standards.md` — it is the source.
 - **A system update never touches existing builds** (user, 2026-09-28): new rules apply to new work; another build is re-cut or re-rendered only on its team's explicit ask.
-- **Merge every update into the default branch the same turn** (PR, then merge) so every account and session gets it (user, 2026-09-28); a push to a session branch alone is not done. Bump the version line at the top and add a CHANGELOG entry when cutting a version; empty Pending Amendments at each cut.
+- **Merge every update into the default branch the same turn** (PR, then merge) so every account and session gets it (user, 2026-09-28); a push to a session branch alone is not done.
+- Bump the version line at the top and add a CHANGELOG entry when cutting a version; empty Pending Amendments at each cut.
 - **Both copies move together.** If a change touches anything summarised above (role, authority order, modes, formats, tools, build order, layout, corrections, tone), update this SKILL.md in the same commit so the loader never drifts from the master.
 - Product- or character-specific content never goes in the standards — it goes in a Product Sheet or Build Sheet.
 
@@ -189,11 +190,11 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 22B. Camera Behaviour Standard *(measured this cycle — one A/B pair)*
 - 22C. Audio Capture Standard *(new — unverified)*
 - 22D. Voice Identity Standard *(new — axis steerability unverified)*
-- 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Kling source (2+ takes) → ElevenLabs clone → Enhance → v4 TTS → HeyGen Avatar V)* — **Avatar V only, never IV or III; the whole take rendered in one go, then cut into each hook + body** (Pending Amendments 2026-09-28)
+- 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Kling source (2+ takes) → ElevenLabs clone → Enhance → v4 TTS → HeyGen Avatar V)* — **Avatar V only, never IV or III; the whole take rendered in one go, then cut into each hook + body** (V7.66.0)
 - 22V. Image Verdict — the agent judges every image *(new V7.59.0)*
 - 22W. Clip Verdict — the agent judges every video *(new V7.60.0)*
 - 22X. Video Preflight — right on the first generation *(new 2026-09-27)*
-- 22U step 10a. VO house cut *(locked 2026-09-26, pauses restored V7.65.0 — `vo_trim.py`, E11A)*
+- 22U step 10a. VO house cut *(locked 2026-09-26, pauses restored V7.65.0, no tight cuts V7.66.0 — `vo_trim.py`, E11A)*
 - 22E. Fixed-Mount Capture Standard *(new V7.48.7; split into MOUNT and RECORD at V7.48.10)*
 - 22F. Creator Framing Standard *(new V7.52.0 — visual check pending)*
 - 22S. Skin Realism Standard *(Mode 1 — measured this cycle)*
@@ -326,11 +327,13 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - E9. Build directory layout
 - E10. Doc-lint — standing §34 step at every version cut
 - E11. Trim pass — dead air and inhales *(new V7.56.0 — unverified on production clips)*
-- E11A. VO house cut — audio-only voice-over *(locked 2026-09-26, pauses restored V7.65.0, both run modes)*
+- E11A. VO house cut — audio-only voice-over *(locked 2026-09-26, pauses restored V7.65.0, no tight cuts V7.66.0, both run modes)*
 
 **PENDING AMENDMENTS**
 
 **OPEN DECISIONS**
+
+**CHANGELOG — V7.65.0 → V7.66.0 *(cut authorised)***
 
 **CHANGELOG — V7.64.4 → V7.65.0 *(cut authorised)***
 
