@@ -20,13 +20,14 @@ Every generation goes on the build's **Generation Board**. **The board design is
 |---|---|
 | `intake-1` (STRYDE · Identity Callout) | https://claude.ai/artifact/HVPuUcnNK1MUrCYnou9UnJ |
 | `stryde-identity` (STRYDE · Identity Callout, Manual — Drive `1tKlZFjNApDMf5U_q3qFPcRyGZLQsVcwE`) | https://claude.ai/artifact/GKZDjmZkh4wwm7RxtXj7Tp |
+| `stryde-regrets` (STRYDE · Three Regrets, Manual — Drive `1kvZgI49_u8VvW6rAS5YsElvJC0nH7wXF`) | https://claude.ai/artifact/1PfmPCZQeuVTPn4ND1w86t |
 | `demo-ad` (example only, placeholder media) | https://claude.ai/artifact/YK4ReHoWRnqBuXQvCMdHLT |
 
 **Always show the board (user, 2026-09-27), both run modes:** open the build's board in the user's panel (Artifact `action: "open"`, `url` = board) when a run starts or resumes and at every delivery (steps 1–3, 4–5, each hook, each act, the edit, the finished videos). Automatic writes and shows it exactly like Manual.
 
 **Final output tab (user, 2026-09-27):** the board has four tabs — Board, Manual run, Plan, **Final output**. Every finished video (one per hook variant: hook + the same body; a film: the finished film) goes on as its own `generations/<build-id>__FINAL-HK<n>` doc the turn it is exported: `stage: "edit"`, `final: true`, `beat: "FINAL-HK<n>"` (film: `FINAL`), `hook: <n>`, `title`, `line` (the hook's opening line), `madeFrom` (e.g. "HK1 + BODY, CapCut finish"), `videoAsset` / `videoParts` / `videoType`, `duration`, `videoRes`, `videoAt`, versions as usual. Manual: `status: review` — the final review is the user's; Automatic: `status: use`.
 
-Fix notes are picked up by the hourly Routine **Generation Board — hourly Fix check** (`trig_015ExzFatSnixWK2PEU5hVmP`, every hour at :32 UTC, fires into session_019jyz29Da9tQzhkoLnhKTSF). It skips cards with `demo: true`. While a Fix is being regenerated, the step's status is `generating`.
+Fix notes are picked up by the hourly Routine **Generation Board — hourly Fix check (stryde-regrets)** (`trig_01Nih4e78WMcUjbtd8dRqS2g`, every hour at :21 UTC, fires into session_01PtQZa8ckoK5wzdQy6BXFqZ; the older `trig_015ExzFatSnixWK2PEU5hVmP` no longer exists). It skips cards with `demo: true`. While a Fix is being regenerated, the step's status is `generating`.
 
 New build: copy the template to your scratchpad, set its `<title>` to the build name, publish it as a new artifact with `capabilities: {db: {}, assets: {}, downloads: true}`, seed `builds/<id>` and its `generations`, and add a row above. To change the design, edit the template and republish it to every board with `url` (keep each board's `<title>`).
 
