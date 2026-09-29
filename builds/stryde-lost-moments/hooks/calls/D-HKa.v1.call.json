@@ -1,0 +1,33 @@
+{
+ "beat": "D-HKa",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\": \"d_hka\", \"subject\": \"A white British man of sixty-four in a grey marl sweatshirt, navy shorts and white trainers, bent forward in his garage clutching his right knee, looking toward his golf bag against the right-hand wall. Exactly as in the start frame.\", \"camera\": {\"movement\": \"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\", \"framing\": \"PROPPED as in the start frame.\"}, \"motion\": \"Already moving on the first frame: he struggles to straighten up \u2014 he presses his right hand hard on his right knee and pushes slowly, his right knee stiff, his weight shifting onto his left leg, shoulders tight, getting only halfway upright in about two seconds, then he stops and stays bent, his head still turned toward the golf bag. The camera stays where it is. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly \u2014 motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\", \"lighting\": \"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\", \"style\": \"As in the start frame.\", \"negatives\": \"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no man turning to camera, no face in frame, no knee strap, no easy standing, no confident posture, no walking, no golf bag moving, no clubs changing, no readable lettering, no music, no speech, no slow motion\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_224634_11a618eb-7a0e-4593-931f-93509e985843.png",
+ "start_approved": true,
+ "approved_by": "user: CONFIRM HOOK 4 (2026-09-28, frame v2)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the man turns to camera or his face appears",
+   "prevented_by": "head stays turned toward the golf bag; 'no man turning to camera, no face in frame'"
+  },
+  {
+   "risk": "reads as easy movement, not struggle",
+   "prevented_by": "'gets only halfway upright \u2026 stops and stays bent'; 'no easy standing, no confident posture'"
+  },
+  {
+   "risk": "legs or golf bag warp",
+   "prevented_by": "one small movement at a countable pace; HOLD-C + NEG-WARP-C; 'no golf bag moving'"
+  }
+ ]
+}

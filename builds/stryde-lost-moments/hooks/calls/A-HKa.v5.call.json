@@ -1,0 +1,34 @@
+{
+ "beat": "A-HKa",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"a_hka\",\"subject\":\"A Black British woman of seventy-three, seen waist-down through the white banister spindles, square to the handrail and hunched over it, both hands gripping it hard, coming down her stairs sideways in pain: lilac knitted cardigan, navy-and-green floral cotton skirt to a hand's width above the knee, bare knees, flat burgundy house slippers. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame.\"},\"motion\":\"Already mid-step on the first frame: facing the rail, both hands gripping it, her arms take her weight as she eases her lower foot down onto the next step, one slow, shaky side-step in about two seconds, knees stiff. Her weight settles onto that foot with a small wince in the shoulders; the other foot is just lifting at the cut. The camera stays where it is. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly \u2014 motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no second person, no camera travelling with the subject, no turning to face down the stairs, no walking forwards, no hand leaving the rail, no face in frame, no knee strap, no knee brace, no music, no speech, no slow motion\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_185824_26f08861-6ba8-48e8-9653-fae1ac15fc5d.png",
+ "start_approved": false,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "legs or feet warp on the stair",
+   "prevented_by": "one sideways step at a countable pace, start frame caught mid-step, HOLD-C + NEG-WARP-C"
+  },
+  {
+   "risk": "camera travels with the moving subject",
+   "prevented_by": "RIG-R3C propped camera, 'the camera stays where it is', 'no camera travelling with the subject'"
+  },
+  {
+   "risk": "she turns away from the rail or lets go",
+   "prevented_by": "'facing the rail, both hands gripping it'; 'no turning to face down the stairs, no hand leaving the rail'"
+  }
+ ],
+ "approved_by": "user: CONFIRM HOOK 1 (2026-09-28)",
+ "fix_note": "Fault in the frame (user Fixes: backwards \u2192 facing the rail with both hands \u2192 struggling): v5 frame edited for the struggling posture; motion = one slow shaky side-step facing the rail; no prompt resent"
+}

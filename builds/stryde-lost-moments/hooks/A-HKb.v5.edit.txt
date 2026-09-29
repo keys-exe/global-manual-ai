@@ -1,0 +1,2 @@
+Higgsfield nano_banana_pro edit of v4 with a red guide line at the lower edge of the kneecap (A-HKb_v4_marked.png, media 4943b5fe…) + worn_front.jpg · job 956590b0-3e6e-45db-9220-2238b242eefe
+Fix (user): ADJUST THE POSITION OF THE STRYDE STRAP UPPER EXACT BELLOW THE KNEE CAP → strap moved up until the notch touches the line (~150px at full size), line removed (0 pure-red pixels left).
