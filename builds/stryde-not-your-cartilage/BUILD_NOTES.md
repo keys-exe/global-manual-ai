@@ -27,6 +27,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: N-VOICE-IMG v2 sent to Fix ("REMOVE THE PHONE AND BELONGINGS IN THE TABLE"). Diagnosed: FRAME-PROPPED's "phone leaned against something on the table in front of them" kept drawing props. Fixed at the prompt: FRAME-PROPPED replaced by a tripod out of shot, no table — she sits on a kitchen chair, hands in her lap — foreground/belongings negatives; the take motion now lifts her hand "off her lap" → v3 (job 535077f9…), To check; v2 on Old. Take calls point at v3.
 
+- 2026-09-29 (hourly check): N-VOICE-IMG v3 confirmed by the user → voice straight through (§22U). Kie `kling-3.0` takes G1–G3 (10s, sound on, 270 credits each; tasks a0816530…, 9008a950…, fadb474f…) on the board as N-G1…G3, To check.
+  `voice_source.py`: same-voice gate PASS (197.5 / 195.1 / 205.1 Hz), joined 14.6s → looped 43.8s → `voice/NotYourCartilage_clone_source.mp3`. Cloned by API: **NotYourCartilage `HM4T2DuqaA2XtRHcA7us`**.
+  `tts_api.py` eleven_v4 speed 0.85, `vo/ALL.enhanced.fitted.txt` (HK1+HK2+HK3+BODY one request): 4 takes, 71–72s, ~156 wpm; `cut_points.py` split each (all words present); `vo_trim.py` house cut per part → 16 pieces `VO-T<n>-<PART>`, all on the board To check.
+  House-cut verify: T2 PASS on all four parts → **working take T2**; T1-HK1, T3-HK1 (a breath left at the hook's tail) and T4-BODY (a breath left at 17.5s) FAIL. Variants on T2: HK1+BODY 61.95s 156 wpm · HK2+BODY 62.21s 155 · HK3+BODY 62.72s 156 (≤ 180, the reference's rate).
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the narrator frame N-VOICE-IMG v3 (paid video waits on it, §22X); script flags F2, F5, F6, F7.
-- **Next, no stop once the frame is confirmed:** Kie Kling takes G1–G3 → `voice_source.py` (medium trim, ×1.2, gate, loop ≥30s) → `elevenlabs_clone.py` `NotYourCartilage` → `tts_api.py` eleven_v4 speed ~0.85, takes on the board → `vo_trim.py` house cut per variant. Then hooks HK1-01, HK2-01, HK3-01 (step 6).
+- **Waiting on the user:** check the VO takes (Confirm one take per part locks the VO; the run continues on T2) and the three voice-source takes; script flags F2, F5, F6, F7.
+- **Next:** `assemble.py --lengths` on the T2 master for every B-roll length (E6), then the hooks one by one (step 6): HK1-01, HK2-01, HK3-01 — image, then video, each approved by the user.
