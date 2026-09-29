@@ -1,0 +1,66 @@
+{
+ "src": "T3.mp3",
+ "duration": 254.0,
+ "cuts": [
+  10.54,
+  26.04,
+  42.12
+ ],
+ "ranges": {
+  "HK1": [
+   0.0,
+   10.54
+  ],
+  "HK2": [
+   10.54,
+   26.04
+  ],
+  "HK3": [
+   26.04,
+   42.12
+  ],
+  "BODY": [
+   42.12,
+   254.0
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "patellar",
+   "patella"
+  ],
+  [
+   "replace",
+   "two centimetres",
+   "cm"
+  ],
+  [
+   "replace",
+   "that is",
+   "that's"
+  ],
+  [
+   "replace",
+   "stryde",
+   "stride"
+  ],
+  [
+   "replace",
+   "sores",
+   "saws"
+  ],
+  [
+   "replace",
+   "stryde",
+   "stride"
+  ]
+ ],
+ "possible_missing_or_changed": [
+  [
+   "replace",
+   "that is",
+   "that's"
+  ]
+ ]
+}
