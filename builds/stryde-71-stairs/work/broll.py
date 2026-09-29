@@ -155,10 +155,312 @@ def p_05a():
       [("N sheet", REF["N"]), ("P2-KITCHEN plate", REF["P2"]), ("P0-PROP-N plate", REF["P0"])], through="the white casing of the open kitchen doorway")
 BEATS["P-05a"] = p_05a
 
+
+# ---------------------------------------------------------------- shared: wardrobe, cast, product, anatomy
+import sys as _sys
+_sys.path.insert(0, str(B.parents[1] / "products/stryde"))
+import stryde_product_sheet as PS
+WARD.update({
+ "N-D3": "a rose-pink short-sleeve blouse, a knee-length denim skirt and tan house slippers",
+ "N-D4": "an emerald-green church dress falling to mid-calf, a matching wide-brim hat and low black pumps",
+ "N-D5": "a pale-yellow cotton nightgown falling to the knee",
+ "N-D6": "a coral windbreaker over a white T-shirt, light-blue straight jeans and white walking sneakers",
+ "N-TODAY": "a cream open cardigan over a coral top and small gold stud earrings",
+ "C1-D2": "a royal-blue satin dress to the knee and white slip-on sneakers for dancing",
+ "C1-D3": "a plum-coloured blouse with a small collar, loose khaki cotton trousers and white canvas slip-on sneakers",
+})
+C1 = dict(markers="a short silver-white natural curly crop, a long oval face with high sharp cheekbones, a thin pale scar through the middle of her right eyebrow, tall and lean and straight-backed",
+          skin="a Black American woman of seventy-four, medium-brown skin, long creases on the cheeks, a scatter of dark spots along the cheekbones")
+REF.update({"PF": B.parents[1] / "products/stryde/stryde_refs/front.webp", "PB": B.parents[1] / "products/stryde/stryde_refs/back.webp",
+            "WORN": "job:f5263ed7-0667-4ebd-977e-9bfd835d5036", "BENT": "job:8a8979ac-9eb1-4398-b41b-eea793a99a26",
+            "BOX": B.parents[1] / "products/stryde/stryde_refs/package_open.jpg"})
+PR_REFS = {"worn": [("STRYDE front", "PF"), ("STRYDE back", "PB"), ("STRYDE worn (front)", "WORN")],
+           "bent": [("STRYDE front", "PF"), ("STRYDE back", "PB"), ("STRYDE worn (bent)", "BENT")],
+           "held": [("STRYDE front", "PF"), ("STRYDE back", "PB")],
+           "box":  [("STRYDE front", "PF"), ("STRYDE box open", "BOX")]}
+def R(*keys): return [(k, REF[v]) for k, v in keys]
+REF_PROD = PS.fill(PS.REF_PROD, "right").rstrip(" —")
+PNEG = ("no strap on the left knee, no strap over the kneecap, no strap low on the shin, no blank shell, no misplaced wordmark, no velcro, no buckle, "
+        "no silicone look, no glossy shell, no second strap unless stated, no product changing shape")
+def prod(kind):
+    if kind == "worn":   return REF_PROD + ". " + PS.fill(PS.PLACE_LOCK_C, "right")
+    if kind == "bent":   return REF_PROD + ". " + PS.fill(PS.PLACE_BENT, "right") + " " + PS.fill(PS.WORDMARK_LOCK, "right")
+    if kind == "held":   return REF_PROD + ". " + PS.fill(PS.SIZE_HELD, "right") + " " + PS.fill(PS.WORDMARK_LOCK, "right")
+    if kind == "hidden": return "She wears the strap on her right knee under her clothes; it is completely hidden and nothing of it shows."
+MID = "a clear spring afternoon — warm, bright daylight, the after days, never moody"
+MORN = "a bright, fresh morning — clean daylight, the after days"
+STAIRS_SUN = "Sunday-style afternoon sun through the front door's sidelights, warm and clear — the after state, never moody"
+
+def anat(beat, state, extra, prod_in=False, neg=""):
+    r = ROWS[beat]
+    sl = dict(PS.SLOTS)
+    f = lambda t: (t.replace("[REGION]", "right knee, from mid-thigh to mid-shin, the leg upright").replace("[TARGET JOINT]", sl["TARGET_JOINT"])
+                    .replace("[STACK]", sl["STACK"]).replace("[BONES]", "The " + sl["BONES"]).replace("[TARGET]", sl["TARGET"]).replace("[SITE]", sl["SITE"]))
+    body = [f(S("ANAT-BASE")), f(S("ANAT-LIGHT")), S("ANAT-FIELD"), f(S("ANAT-A")), f(state), extra]
+    refs = []
+    if prod_in:
+        body.append(REF_PROD + ". " + S("ANAT-PROD"))
+        refs = R(*PR_REFS["worn"])
+    ang = r["angle"]
+    body.append("Seen from a " + {"eye": "level", "low": "low", "high": "high"}.get(ang["height"], "level") + " " + {"profile": "side-on profile", "three-quarter": "three-quarter", "front": "front"}.get(ang["side"], "three-quarter") + " angle.")
+    body.append("AVOID: " + f(S("ANAT-NEG")).replace("no sleeve, ", "" if "sleeve" in extra else "no sleeve, ") + (", " + neg if neg else ""))
+    return dict(model=MODEL[r["model"]], refs=refs, body=body)
+HOT = lambda col: "STATE — the patellar tendon just below the kneecap is under load and already glowing " + col + " at one tight spot. " + PS.ANAT_A_POINT_TIGHT
+CALM = "STATE — " + S("ANAT-REST")
+
+# ---------------------------------------------------------------- Act 2 — the wedding (N-D2, evening, tungsten)
+RECEP = "the same reception hall as the attached reception photo — round tables in white cloths, gold chairs, string lights and crystal chandeliers, a parquet dance floor, a gold balloon arch"
+PARTY = "warm tungsten party light from the string lights and chandeliers, evening"
+def t_01a(): return seed("T-01a", "the bride", "the bride", [
+    "At a Black American wedding reception in June, " + RECEP + ". The bride — a young Black woman in her twenties in a white dress, her hair up — sits at a reception table with guests around her, "
+    "caught mid-laugh, her head thrown back, one hand on the arm of the woman beside her; glasses, a half-eaten slice of cake, a phone face-down on the cloth. Nobody looks at the camera."],
+    "the bride and the guests", PARTY, "no posing, no looking at the camera, no professional wedding photography look, no flash, no knee strap, no product, no readable text",
+    R(("P3-RECEPTION plate", "P3")), house=False)
+BEATS["T-01a"] = t_01a
+def t_01b(): return seed("T-01b", "Loretta", "Loretta", [
+    "At the same reception, " + RECEP + ". Loretta — " + C1["markers"] + ", exactly as in her attached reference sheet — stands at the edge of the dance floor in " + WARD["C1-D2"] + ", "
+    "caught mid-clap on the beat, both hands meeting in front of her chest, grinning, her eyes on the dancers off-frame; guests blurred behind her. " + C1["skin"].capitalize() + "."],
+    "Loretta", PARTY, "no looking at the camera, no knee strap visible, no product, no flash, no readable text",
+    R(("C1 sheet", "C1"), ("P3-RECEPTION plate", "P3")), house=False)
+BEATS["T-01b"] = t_01b
+def t_02a(): return seed("T-02a", "the line of dancers", "everything", [
+    "The dance floor at the same reception, " + RECEP + ", seen past the backs of two chairs. A line of about eight guests — Black Americans of every age in their wedding clothes — is doing a line dance in step, "
+    "and Loretta — " + C1["markers"] + ", exactly as in her attached reference sheet, in " + WARD["C1-D2"] + " — is in the middle of the line, caught mid side-step with the others, arms loose, laughing. Her knees are covered by her dress."],
+    "the dancers", PARTY, "no posed group, no looking at the camera, no knee strap visible, no product, no flash, no readable text",
+    R(("C1 sheet", "C1"), ("P3-RECEPTION plate", "P3")), house=False, through="the backs of two gold chairs")
+BEATS["T-02a"] = t_02a
+def t_02b(): return seed("T-02b", "the dancing feet", "the feet", [
+    "Close to the parquet dance floor of the same reception, the lens a few centimetres above the floor: a row of dancing feet — heels, loafers, dress shoes, and Loretta's white slip-on sneakers among them — "
+    "caught mid-step as the whole line steps back together, hems and trouser cuffs swinging, string lights soft in the background."],
+    "the feet", PARTY, "no faces, no bare feet, no knee strap, no product, no readable text",
+    R(("P3-RECEPTION plate", "P3")), house=False)
+BEATS["T-02b"] = t_02b
+def t_03a(): return anat("T-03a", HOT("a hot red"),
+    "The joint surfaces inside the knee are worn thin — bone close to bone, the cartilage almost gone, rough and pale at the contact — and the tight red spot sits on the tendon just below the kneecap, pulsing once.")
+BEATS["T-03a"] = t_03a
+
+# ---------------------------------------------------------------- Act 3 — Loretta's visit and the first stairs (N-D3a / N-D3)
+def r_01a(): return seed("R-01a", "Loretta at the front door", "Loretta", [
+    "Her hall, exactly as in the attached hall photo, seen from inside looking at the open front door. Loretta — " + C1["markers"] + ", exactly as in her attached reference sheet — in " + WARD["C1-D3"] + ", "
+    "is stepping in over the threshold with a small overnight bag in one hand, caught mid-step, one foot on the hall floor, smiling at someone inside; afternoon light behind her through the door."],
+    "Loretta", "afternoon daylight through the open door and the sidelights, warm and clear", "no looking at the camera, no suitcase on wheels, no knee strap visible, no product",
+    R(("C1 sheet", "C1"), ("P0-PROP-N plate", "P0")))
+BEATS["R-01a"] = r_01a
+MORN_K = "a plain weekday morning — even daylight through the sink window"
+def r_02a(): return seed("R-02a", "the kitchen table", "her hands", [
+    "Looking straight down at her kitchen table, " + KITCH + ": two white tablets beside a glass of water, a plain unbranded white tube of pain-relief gel. Her hands — deep brown skin, a plain wedding band — "
+    "squeeze a line of clear gel from the tube onto two fingertips, caught mid-squeeze."],
+    "her hands and the table", MORN_K, "no face, no readable labels, no brand names, no text, no knee strap, no product",
+    R(("N sheet", "N"), ("P2-KITCHEN plate", "P2")))
+BEATS["R-02a"] = r_02a
+def r_02b(): return seed("R-02b", "her right knee", "her hands", [
+    "Close on her lap at the kitchen table, " + KITCH + ", looking down the way she sees it herself. Her right knee under the hem of her knee-length denim skirt wears the black hinged brace, "
+    "and both hands press a blue gel ice pack down onto it, caught as she presses. Deep brown skin, a plain wedding band."],
+    "her knee and hands", MORN_K, "no face, no logo on the brace, no readable text, no knee strap, no product",
+    R(("N sheet", "N"), ("P2-KITCHEN plate", "P2")))
+BEATS["R-02b"] = r_02b
+def r_03a(): return seed("R-03a", "Loretta across the table", "the strap", [
+    "Across her kitchen table, " + KITCH + ". Loretta — " + C1["markers"] + ", exactly as in her attached reference sheet — sits in " + WARD["C1-D3"] + ", "
+    "caught mid-roll as she pushes her right khaki trouser leg up past the knee, revealing the strap on her right knee, a knowing half-smile toward someone across the table. " + prod("bent")],
+    "Loretta", "the morning light through the sink window", PNEG + ", no looking at the camera",
+    R(("C1 sheet", "C1"), ("P2-KITCHEN plate", "P2"), *PR_REFS["bent"]))
+BEATS["R-03a"] = r_03a
+def r_04a(): return seed("R-04a", "her right knee", "the strap and its wordmark", [
+    "Very close on Loretta's right knee as she sits at the kitchen table, her khaki trouser leg rolled above it, medium-brown skin. Her index finger taps the strap once, caught as it touches the shell. " + prod("bent")],
+    "the knee and the strap", "the morning light through the sink window", PNEG + ", no face",
+    R(("C1 sheet", "C1"), *PR_REFS["bent"]), house=False)
+BEATS["R-04a"] = r_04a
+def r_05a(): return seed("R-05a", "her open palms", "the strap", [
+    "Looking down at her own hands above the kitchen table, " + KITCH + ": one strap lies across her two open palms, small against her hands, the front of the shell up. Caught as she turns her hands a little to look at it. " + prod("held")],
+    "her hands and the strap", "the morning light through the sink window", PNEG + ", no face, no second strap",
+    R(("N sheet", "N"), *PR_REFS["held"]))
+BEATS["R-05a"] = r_05a
+def r_06a(): return seed("R-06a", "her right shin", "the strap", [
+    "Close on her right leg as she sits at the kitchen table, the hem of her denim skirt above the knee. " + PS.fill(PS.SEAT_LOCK, "right") + " Caught in the last few centimetres of the slide, just before contact."],
+    "her hands and the strap", "the morning light through the sink window", PNEG + ", " + PS.fill(PS.NEG_SEAT, "right")[:500] + ", no face",
+    R(("N sheet", "N"), *PR_REFS["worn"]))
+BEATS["R-06a"] = r_06a
+def r_07a(): return seed("R-07a", "her at the top of the stairs", "the strap", [
+    "Her staircase, exactly as in the attached hall photo, seen from the hall floor looking up the straight flight. She — " + N["markers"] + ", exactly as in her attached reference sheet — in " + WARD["N-D3"] + ", "
+    "is at the top of the stairs taking her first step down FACING FORWARDS, hands at her sides, not touching the rail, caught with one foot on the step below. The strap is on her right knee, visible below her skirt. " + prod("worn")],
+    "her and the stairs", STAIRS_SUN, PNEG + ", no hands on the rail, no going down backwards, no one else on the stairs",
+    R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]))
+BEATS["R-07a"] = r_07a
+def r_07b(): return seed("R-07b", "her feet on the stairs", "the strap", [
+    "Close on the stairs from the side at step height: the worn beige runner, white risers, a white baluster. Her feet in tan house slippers come down the stairs facing forwards, one foot per step, "
+    "caught mid-step; the strap on her right knee is at the top of the frame, below the hem of her denim skirt. " + prod("worn")],
+    "her feet and the steps", STAIRS_SUN, PNEG + ", no going down backwards, no face",
+    R(("P0-PROP-N plate", "P0"), *PR_REFS["worn"]))
+BEATS["R-07b"] = r_07b
+def r_07c(): return seed("R-07c", "her stepping off the stairs", "the strap", [
+    "Her hall, exactly as in the attached hall photo, seen from the side through the white balusters: she — " + N["markers"] + ", exactly as in her attached reference sheet — in " + WARD["N-D3"] + ", "
+    "steps off the last stair onto the hall floor facing forwards, caught mid-step, one foot on the oak floor, a small surprised smile. The strap on her right knee. " + prod("worn")],
+    "her", STAIRS_SUN, PNEG + ", no hands on the rail, no one else",
+    R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]), through="the white balusters")
+BEATS["R-07c"] = r_07c
+
+# ---------------------------------------------------------------- Act 4 — mechanism (Loretta's words)
+def m_01a(): return seed("M-01a", "her on the treatment table", "her", [
+    "In the physical therapy exam room, " + CLINIC + ". Seen from above: she lies back on the padded table — " + N["markers"] + ", exactly as in her attached reference sheet — in " + WARD["N-D1"] + ", "
+    "a heat pad over her right knee, eyes closed, caught as she settles her head back on the paper pillow, resigned."],
+    "her", "even afternoon daylight through the half-open blind, clinical and plain", "no smiling, no second person, no machines, no readable text, no knee strap, no product",
+    R(("N sheet", "N"), ("P7-CLINIC plate", "P7")), house=False)
+BEATS["M-01a"] = m_01a
+def m_01b(): return anat("M-01b", HOT("a hot red, a little wider than before"), "The red at the spot on the tendon has spread a little further into the tissue around it, the worn joint behind it rough and pale.")
+BEATS["M-01b"] = m_01b
+def m_02a():
+    r = anat("M-02a", CALM, "TWO RIGHT KNEES SIDE BY SIDE in the same anatomical world, the same size and angle. LEFT: a plain full-length knee sleeve covers the whole knee, the pressure spread evenly everywhere as a faint orange haze, nothing focused. "
+             "RIGHT: the strap seated on the patellar tendon just below the kneecap, and one soft calm-blue glow settling on exactly that spot.", prod_in=True, neg="no text, no labels")
+    return r
+BEATS["M-02a"] = m_02a
+def m_03a(): return anat("M-03a", HOT("a hot red"), "The tight red point on the patellar tendon just under the kneecap pulses with a walking cadence, one pulse per step.")
+BEATS["M-03a"] = m_03a
+def m_04a(): return seed("M-04a", "the kitchen table", "everything", [
+    "Looking straight down at her kitchen table, " + KITCH + ": the heap of knee braces and sleeves — black hinged brace, beige and blue elastic sleeves, a padded wrap — beside the three orange pill bottles, the blister pack and a cold coffee. Nobody in frame."],
+    "the table", GREY, "no people, no hands, no readable labels, no brand names, no text, no knee strap, no product",
+    R(("P2-KITCHEN plate", "P2")))
+BEATS["M-04a"] = m_04a
+def m_04b(): return anat("M-04b", HOT("a hot red"), "A generic elastic knee sleeve is drawn around the whole knee as a faint translucent layer, and under it the tight red point below the kneecap keeps glowing, untouched by it.")
+BEATS["M-04b"] = m_04b
+def m_05a(): return anat("M-05a", HOT("a hot red"), "Pressure runs down the thigh as faint warm bands through the muscle and gathers into the tight red point just under the kneecap. " + S("ANAT-LOAD").replace("[STACK]", "the quadriceps").replace("[TARGET]", "the patellar tendon"))
+BEATS["M-05a"] = m_05a
+def m_05b(): return anat("M-05b", "STATE — the strap's pad sits on the spot and has taken the load: the glow at the spot has cooled from red to a calm, soft blue.", "The strap seated on the patellar tendon just below the kneecap, the pad pressing on the spot.", prod_in=True)
+BEATS["M-05b"] = m_05b
+def m_06a(): return seed("M-06a", "her foot on the top step", "the strap", [
+    "Close on the top of her staircase from one step below, the lens at step height: the worn beige runner. Her foot in a tan house slipper settles flat on the top step, caught as it lands, "
+    "and above it her right knee with the strap on it, the hem of her denim skirt. " + prod("worn")],
+    "her foot and knee", STAIRS_SUN, PNEG + ", no face",
+    R(("P0-PROP-N plate", "P0"), *PR_REFS["worn"]))
+BEATS["M-06a"] = m_06a
+
+# ---------------------------------------------------------------- Act 5 — proof
+def mont(beat, who, place, action, light_q, kind="bent"):
+    return seed(beat, "his or her right knee", "the strap", [
+        place + ". " + who + " " + action + " " + (PS.fill(PS.SEAT_LOCK, "right") if kind == "seat" else prod(kind))],
+        "the knee and the strap", light_q, PNEG + ", no face in focus, " + PS.fill(PS.NEG_SEAT, "right")[:300],
+        R(*PR_REFS["worn" if kind == "seat" else kind]), house=False)
+BEATS["PR-01a"] = lambda: mont("PR-01a", "A Black man in his sixties in shorts sits on the step,", "Close on a wooden front-porch step of an ordinary house in the afternoon sun",
+    "his right leg out; caught in the last centimetres as both hands seat the strap on his right knee.", MID, "seat")
+BEATS["PR-01b"] = lambda: mont("PR-01b", "A white woman in her fifties in a sleep shirt sits on the edge of her bed,", "Close on a bedroom, an unmade bed, a window with light curtains",
+    "her right leg straight; caught in the last centimetres as both hands slide the strap up her shin to seat it.", "soft afternoon daylight through the bedroom window", "seat")
+BEATS["PR-01c"] = lambda: mont("PR-01c", "A Latino man in his seventies in work trousers rolled up has one foot up on a low stool,", "Close in an open garage, a workbench and tools behind",
+    "caught as his hand presses the strap flat under his right kneecap.", MID, "bent")
+BEATS["PR-01d"] = lambda: mont("PR-01d", "A Black woman in her forties in gym shorts sits on a bench,", "Close at a small neighbourhood gym, a rack of dumbbells soft behind",
+    "caught in the last centimetres as both hands seat the strap under her right kneecap.", "daylight from the gym's big front windows", "seat")
+def pr_02a(): return seed("PR-02a", "the doctor", "the strap", [
+    "In a sports-medicine clinic office, " + CLINIC + ". A sports-medicine doctor — a Black man in his fifties in a navy polo shirt, short greying beard — sits at his desk beside a life-size knee model, "
+    "holding the strap up in a bottom-edge pinch, caught as he turns it toward a patient across the desk, explaining. " + prod("held")],
+    "the doctor", "even afternoon daylight through the half-open blind", PNEG + ", no looking at the camera, no white coat, no readable text",
+    R(*PR_REFS["held"], ("P7-CLINIC plate", "P7")), house=False)
+BEATS["PR-02a"] = pr_02a
+def pr_03a(): return seed("PR-03a", "the golfer", "the strap", [
+    "On a golf course fairway in the afternoon. Loretta's husband — a Black man of seventy-six, lean, a white moustache, a navy golf polo, khaki shorts and golf shoes, a white cap — "
+    "is caught holding his follow-through after a drive, club over his shoulder, weight on his front foot, watching the ball. The strap on his right knee, visible below his shorts. " + prod("worn")],
+    "the golfer", "open afternoon sun, clear sky", PNEG + ", no looking at the camera, no logos on clothes",
+    R(*PR_REFS["worn"]), house=False)
+BEATS["PR-03a"] = pr_03a
+def pr_04a(): return seed("PR-04a", "the runner", "the strap", [
+    "On a red running track in the afternoon. Loretta's niece — a young Black woman of twenty-two, natural hair in a high puff, a sports top and running shorts — jogs past, caught mid-stride, "
+    "right foot pushing off; the strap on her right knee. " + prod("worn")],
+    "the runner", "open afternoon sun, clear sky", PNEG + ", no looking at the camera, no logos on clothes, no race bib",
+    R(*PR_REFS["worn"]), house=False)
+BEATS["PR-04a"] = pr_04a
+def pr_05a(): return seed("PR-05a", "her right knee", "the strap", [
+    "Close on her right leg as she sits on the edge of her bed in the morning, " + WARD["N-D5"] + " hitched above the knee; greige walls, a white six-panel door soft behind. " + PS.fill(PS.SEAT_LOCK, "right") + " Caught in the last few centimetres of the slide."],
+    "her knee and the strap", MORN, PNEG + ", no face, " + PS.fill(PS.NEG_SEAT, "right")[:300],
+    R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]))
+BEATS["PR-05a"] = pr_05a
+def pr_05b(): return seed("PR-05b", "her right leg", "the trouser leg", [
+    "Close from the side on her right leg as she stands by her bed in the morning: the leg of her navy trousers is caught falling down over the strap on her right knee, half covering it, the shell's edge still showing at the hem; greige wall and oak floor behind."],
+    "her leg", MORN, "no face, no strap on the left knee, no bare legs, no second strap",
+    R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]))
+BEATS["PR-05b"] = pr_05b
+def pr_06a(): return seed("PR-06a", "the kitchen table", "the strap", [
+    "Looking straight down at her kitchen table in the morning, " + KITCH + ": the table cleared — no pills, no gel, no braces — just a white coffee mug with a wisp of steam and one strap lying beside it, the front of the shell up. " + REF_PROD + ". " + PS.fill(PS.WORDMARK_LOCK, "right")],
+    "the table", "morning sun through the sink window", PNEG + ", no people, no pill bottles, no braces",
+    R(("P2-KITCHEN plate", "P2"), *PR_REFS["held"]))
+BEATS["PR-06a"] = pr_06a
+
+# ---------------------------------------------------------------- Act 6 — life back (N-D6, afternoon)
+STREET = "her street exactly as in the attached street photo — a quiet tree-lined street of 1960s brick houses, a concrete sidewalk, big old oaks, her red-brick colonial with the white porch and two rocking chairs"
+def l_01a(): return seed("L-01a", "her walking away", "everything", [
+    "On " + STREET + ". Seen from behind: she — " + N["markers"] + ", exactly as in her attached reference sheet — walks away along the sidewalk in " + WARD["N-D6"] + ", a canvas tote on her shoulder, caught mid-stride, upright and brisk."],
+    "her and the street", MID, "no looking at the camera, no walking stick, no knee strap visible, no product",
+    R(("N sheet", "N"), ("P6-STREET plate", "P6")), house=False)
+BEATS["L-01a"] = l_01a
+def l_01b(): return seed("L-01b", "her passing three women", "her", [
+    "On " + STREET + ". She — " + N["markers"] + ", exactly as in her attached reference sheet — in " + WARD["N-D6"] + ", a canvas tote on her shoulder, is caught drawing level with and passing three women in their thirties "
+    "strolling slowly side by side with coffee cups, chatting; she is striding briskly past them on the outside, a small proud smile."],
+    "her", MID, "no looking at the camera, no walking stick, no running, no knee strap visible, no product",
+    R(("N sheet", "N"), ("P6-STREET plate", "P6")), house=False)
+BEATS["L-01b"] = l_01b
+def l_02a(): return seed("L-02a", "her in the checkout line", "her", [
+    "In the grocery store, exactly as in the attached store photo — the checkout lane, the black conveyor belt, the card terminal on its post. She — " + N["markers"] + ", exactly as in her attached reference sheet — in " + WARD["N-D6"] + ", "
+    "stands square in the checkout line holding a full shopping basket, two shoppers ahead of her, caught as she moves the basket to her other hand, feet planted."],
+    "her", "flat cool-white overhead store light", "no looking at the camera, no leaning, no readable text or signs, no knee strap visible, no product",
+    R(("N sheet", "N"), ("P4-STORE plate", "P4")), house=False)
+BEATS["L-02a"] = l_02a
+def l_02b(): return seed("L-02b", "her going up the path", "everything", [
+    "On " + STREET + ". Seen from behind and to one side: she walks up the straight concrete path to her porch, a full brown paper grocery bag in each hand, caught mid-stride, in " + WARD["N-D6"] + "."],
+    "her and the porch", MID, "no looking at the camera, no one helping, no knee strap visible, no product",
+    R(("N sheet", "N"), ("P6-STREET plate", "P6")), house=False)
+BEATS["L-02b"] = l_02b
+def l_03a(): return seed("L-03a", "her husband in his recliner", "him", [
+    "In her living room — greige walls, white six-panel doors, honey oak floor, a brown recliner by the front window. Her husband — a Black man in his late seventies, bald with a grey moustache, reading glasses, a cardigan over a plaid shirt — "
+    "sits in the recliner and is caught lowering his newspaper, looking up toward the door with raised eyebrows."],
+    "him", "afternoon sun through the front window", "no looking at the camera, no readable newspaper text, no knee strap, no product",
+    R(("P0-PROP-N plate", "P0")))
+BEATS["L-03a"] = l_03a
+
+# ---------------------------------------------------------------- Act 7 — result and offer
+def c_01a(): return seed("C-01a", "her right knee", "the strap", [
+    "Close on her right knee as she sits on the edge of her bed in the morning in " + WARD["N-D5"] + ", the hem above the knee; her hand resting beside the strap, caught as it pats her knee once. " + prod("bent")],
+    "her knee and hand", MORN, PNEG + ", no face",
+    R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["bent"]))
+BEATS["C-01a"] = c_01a
+def c_02a(): return seed("C-02a", "her on the church steps", "everything", [
+    "The church, exactly as in the attached church photo — red-brick front, white columns, the wide front steps with a metal handrail. She — " + N["markers"] + ", exactly as in her attached reference sheet — in " + WARD["N-D4"] + ", "
+    "comes down the church steps facing forwards, hands free, caught mid-step; three ladies in Sunday hats and dresses stand to one side at the foot of the steps watching her, one with a hand on her chest."],
+    "her and the ladies", "Sunday afternoon sun, clear", "no hands on the rail, no looking at the camera, no knee strap visible, no product, no readable text",
+    R(("N sheet", "N"), ("P5-CHURCH plate", "P5")), house=False)
+BEATS["C-02a"] = c_02a
+def c_03a(): return anat("C-03a", "STATE — calm: the strap on the spot, the glow at the patellar tendon a soft steady blue.", "The strap seated on the patellar tendon just below the kneecap, a slow soft glow at the pad.", prod_in=True)
+BEATS["C-03a"] = c_03a
+def c_04a(): return seed("C-04a", "the surgeon and the patient", "the strap", [
+    "In the exam room, " + CLINIC + ". Over the shoulder of an orthopedic surgeon in navy scrubs: a seated patient — a Black woman in her sixties, trouser leg rolled up — rests her right leg out, "
+    "and the surgeon's hands press the strap flat under her kneecap, caught at the moment of contact. " + prod("bent")],
+    "the patient's knee", "even afternoon daylight through the half-open blind", PNEG + ", no looking at the camera, no readable text",
+    R(("P7-CLINIC plate", "P7"), *PR_REFS["bent"]), house=False)
+BEATS["C-04a"] = c_04a
+def c_05a(): return seed("C-05a", "two cheap straps", "the curled tab", [
+    "Close on her kitchen table, " + KITCH + ": two cheap generic knee straps lie side by side. " + PS.FAKE_BASE + " One of them has " + PS.FAKE_ARCHETYPES[2][1] + ". "
+    "A fingertip flicks the curled velcro tab, caught mid-flick."],
+    "the straps", MORN_K, "no wordmark, no brand, no logo, no packaging, no screen, no readable text, no chrome slides, no hero product",
+    R(("P2-KITCHEN plate", "P2")))
+BEATS["C-05a"] = c_05a
+def c_06a(): return seed("C-06a", "her on the landing", "the straps", [
+    "Her upstairs landing, exactly as in the attached landing photo — the photo wall behind her, the dark oak rail and newel. She — " + N["markers"] + ", exactly as in her attached reference sheet — in " + WARD["N-TODAY"] + ", "
+    "stands waist-up to a propped phone and holds up two straps toward the lens, one in each hand in a bottom-edge pinch, caught lifting them a little higher, smiling. " + prod("held")],
+    "her", "midday light from the landing window, bright and soft", PNEG.replace(", no second strap unless stated", "") + ", no third strap, no selfie arm",
+    R(("N sheet", "N"), ("P1-LANDING plate", "P1"), *PR_REFS["held"]))
+BEATS["C-06a"] = c_06a
+def c_07a(): return seed("C-07a", "the open box", "everything", [
+    "Looking straight down at her kitchen table in the morning, " + KITCH + ": the open box. " + PS.PACKAGE_LOCK + " Her hand sets the lid down beside the box, caught as it lands."],
+    "the box", "bright morning daylight through the sink window", "no third strap, no single strap, no other items in the box, no offer text, no stickers, no readable text except the wordmark",
+    R(("P2-KITCHEN plate", "P2"), *PR_REFS["box"]))
+BEATS["C-07a"] = c_07a
+def c_09a(): return seed("C-09a", "her hand and the box", "her hand and the card", [
+    "Close on her kitchen table, " + KITCH + ": the closed matte-black box with the lowercase grey stryde wordmark centred on the lid, and a small white card lying on it. Her hand — deep brown skin, a plain wedding band — "
+    "writes on the card with a pen, caught mid-stroke; the writing is a short handwritten name, loose and not readable."],
+    "her hand", MORN_K, "no readable handwriting, no other text, no offer text, no stickers",
+    R(("N sheet", "N"), ("P2-KITCHEN plate", "P2"), *PR_REFS["box"]))
+BEATS["C-09a"] = c_09a
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or BEATS:
         dd = BEATS[b](); p = "\n\n".join(dd["body"])
         (out / f"{b}.t2i.txt").write_text(p)
-        (out / f"{b}.refs.json").write_text(json.dumps(dict(model=dd["model"], refs=[(k, str(v.relative_to(B))) for k, v in dd["refs"]]), indent=1))
+        rr = [(k, v if isinstance(v, str) else (str(v.relative_to(B)) if B in v.parents else str(v.relative_to(B.parents[1])))) for k, v in dd["refs"]]
+        (out / f"{b}.refs.json").write_text(json.dumps(dict(model=dd["model"], refs=rr), indent=1))
         print(b, dd["model"], len(p), "chars", [k for k, _ in dd["refs"]])

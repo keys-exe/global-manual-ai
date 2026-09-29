@@ -1,0 +1,17 @@
+{
+ "model": "nano_banana_pro",
+ "refs": [
+  [
+   "STRYDE front",
+   "products/stryde/stryde_refs/front.webp"
+  ],
+  [
+   "STRYDE back",
+   "products/stryde/stryde_refs/back.webp"
+  ],
+  [
+   "P7-CLINIC plate",
+   "plates/P7-CLINIC_v2.png"
+  ]
+ ]
+}

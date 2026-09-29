@@ -1,0 +1,17 @@
+{
+ "model": "nano_banana_pro",
+ "refs": [
+  [
+   "P2-KITCHEN plate",
+   "plates/P2-KITCHEN_v2.png"
+  ],
+  [
+   "STRYDE front",
+   "products/stryde/stryde_refs/front.webp"
+  ],
+  [
+   "STRYDE back",
+   "products/stryde/stryde_refs/back.webp"
+  ]
+ ]
+}

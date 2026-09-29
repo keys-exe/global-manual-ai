@@ -1,0 +1,21 @@
+{
+ "model": "nano_banana_pro",
+ "refs": [
+  [
+   "C1 sheet",
+   "cast/C1-LORETTA_v1.png"
+  ],
+  [
+   "STRYDE front",
+   "products/stryde/stryde_refs/front.webp"
+  ],
+  [
+   "STRYDE back",
+   "products/stryde/stryde_refs/back.webp"
+  ],
+  [
+   "STRYDE worn (bent)",
+   "job:8a8979ac-9eb1-4398-b41b-eea793a99a26"
+  ]
+ ]
+}

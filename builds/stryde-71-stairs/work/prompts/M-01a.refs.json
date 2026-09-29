@@ -1,0 +1,13 @@
+{
+ "model": "nano_banana_2",
+ "refs": [
+  [
+   "N sheet",
+   "cast/N-NARR_v1.png"
+  ],
+  [
+   "P7-CLINIC plate",
+   "plates/P7-CLINIC_v2.png"
+  ]
+ ]
+}
