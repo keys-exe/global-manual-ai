@@ -177,7 +177,13 @@ B["MECH-S2"] = (NB2, [], anat(
 # v2 Fix "FIX THIS IMAGE": v1 broke the legs (a third leg raised with the foot at the top of frame, the knee unreadable) and the finger
 # pressed the shin, not the spot under the kneecap. Fixed at the prompt: both legs placed and counted, the left out of frame, the right
 # heel on the rug, the fingertip on the tendon a thumb's width under the kneecap; extra-limb negatives.
-B["B1-02"] = (NB2, ["R1-DENISE", "P2-D-LOUNGE"], photo([
+# v3 Fix "CHANGE THIS IMAGE": v2 still put the fingertip halfway down the shin and brought her face in. Fixed: nano_banana_pro, an
+# extreme close-up that holds only the one knee (kneecap upper third, fingertip dead centre just under it), no face, no feet.
+B["B1-02"] = (NBP, ["R1-DENISE", "P2-D-LOUNGE"], photo([
+    "AN EXTREME CLOSE-UP of one knee and nothing else: the frame holds only her bare right knee, from the lower thigh at the top edge to "
+    "the upper shin at the bottom edge. The rounded kneecap sits in the upper third of the frame; directly beneath its lower edge, dead "
+    "centre, the tip of her right forefinger presses into the soft hollow of the patellar tendon, the skin dimpling a little round it. "
+    "No face, no feet, no second leg in the frame; the teal sofa and the kilim rug show only as soft colour at the edges. "
     "A snapshot from a phone held high, her own view down at her right knee. She sits on the edge of the teal sofa. Her RIGHT leg is "
     "straight out in front of her, the heel resting on the rug, the knee and shin running up the frame from the bottom, the whole right "
     "kneecap clearly visible in the middle of the frame; her left leg is bent with its foot flat on the rug, mostly out of frame at the "
@@ -187,8 +193,9 @@ B["B1-02"] = (NB2, ["R1-DENISE", "P2-D-LOUNGE"], photo([
     "her hand; her face is out of frame. " + SKIN["dark"],
     "She is " + DENISE + " Wearing " + WARD["D-D1"] + ".", LOUNGE,
     angle("B1-02", "her right knee"), focus("the hands and what they hold"), light("LOUNGE", "her knee", face=False), colour("LOUNGE", "she")],
-    "no strap, no brace, no sleeve on the knee, no second hand on the knee, no fingernail digging in, no face, no third leg, no extra "
-    "limb, no leg raised in the air, no foot above the knee, no crossed legs, no finger on the shin, no finger on the kneecap, " + NEG_HANDS))
+    "no strap, no brace, no sleeve on the knee, no second hand on the knee, no fingernail digging in, no face, no head, no hair, no earring, "
+    "no feet, no whole leg, no third leg, no extra limb, no leg raised in the air, no foot above the knee, no crossed legs, no finger on the "
+    "shin, no finger low on the leg, no finger on the kneecap, " + NEG_HANDS))
 B["MECH-02"] = (NB2, [], anat(
     "Heel strike: the foot has just landed and the body's weight is coming down the thigh. " + S("ANAT-LOAD") + " " + S("ANAT-HOT") + " "
     + P.ANAT_A_POINT_TIGHT, extra_neg="no glow in the joint space, no glow on the cartilage, no strap, no brace", view=LOW_VIEW))
@@ -311,14 +318,16 @@ B["CARD-12b"] = (GPT, ["front", "back", "P2-D-LOUNGE"], "\n\n".join([
     "Leave the top third and the bottom fifth of the frame clear — plain tabletop and soft room only (text is added in the edit).",
     "AVOID: no text, no offer text, no price, no badge, no numbers, no logos other than the stryde wordmark, no box, no third strap, "
     "no hands, no people, no other objects on the table, no floating straps, no dark studio background, no packshot, " + BLOCK_NEG]))
-B["B1-13a"] = (NBP, ["front", "back", "R4-FIONA", "P5-PROP-F", "worn_front"], photo([
-    SAME + " A snapshot from a phone held high at the top of the stairs in front of her, looking down at her and the flight "
-    "falling away below. " + S("STAIR-DOWN") + " She stands on the small landing at the top, looking down the flight, one easy breath, relaxed, the strap on her bare right knee, the trouser "
-    "legs rolled above both knees. The whole of her is in frame.",
+# v2 Fix "CHANGE THIS": the user took the strap off B1-13b, the next shot; v1 still wore it, so the two stair shots broke continuity.
+# Fixed as B1-13b v2: no strap, bare knees, product blocks and refs out.
+B["B1-13a"] = (NBP, ["R4-FIONA", "P5-PROP-F"], photo([
+    "A snapshot from a phone held high at the top of the stairs in front of her, looking down at her and the flight "
+    "falling away below. " + S("STAIR-DOWN") + " She stands on the small landing at the top, looking down the flight, one easy breath, relaxed, the trouser "
+    "legs rolled above both knees, both knees bare with nothing on them. The whole of her is in frame.",
     FIONA + " Wearing " + WARD["F-D1"] + ".", HALL,
-    PROD + " " + RIGID + " " + worn("her") + " Seated exactly as in the attached front worn reference.",
     angle("B1-13a", "her"), focus("the nearest eye of Fiona"), light("HALL", "her"), colour("HALL", "she")],
-    WORN_NEG + ", " + NEG_SUP + ", no worried face, no hand on the banister"))
+    "no strap, no knee strap, no brace, no sleeve, no support on either knee, no black band on the leg, no stryde wordmark, " + NEG_SUP
+    + ", no worried face, no hand on the banister"))
 # v2 Fix "REMOVE THE STRAP": the user's call — the shot carries no strap. The product blocks and refs come out, the knees stay bare.
 B["B1-13b"] = (NBP, ["R4-FIONA", "P5-PROP-F"], photo([
     SAME + " A snapshot from a phone held low at the foot of the stairs, three-quarter to her, tilted up the flight. She is coming DOWN "
@@ -334,16 +343,20 @@ B["B1-13b"] = (NBP, ["R4-FIONA", "P5-PROP-F"], photo([
 # ── Body 1: a live-action B-roll for every line (user, 2026-09-29 — "Create a B-roll for every line") ──────────────────
 # B1-02a on "They're small on purpose", B1-03a on "Seventeen times your bodyweight…", B1-07a on "Perfect for bone on bone, arthritis…";
 # the anatomy renders keep the second half of B1-03 and B1-07.
+# v2 Fix "CHANG THIS": v1 read as the strap being put on low on the shin (the band round the leg, side-on) — B1-04b again — and the
+# room drifted off the plate. Fixed: three-quarter front, the strap held up IN FRONT of the bare knee, a hand's width towards the lens,
+# front face to camera, so its small size reads against the knee behind it; never touching the leg; the plate restated.
 B["B1-02a"] = (NBP, ["front", "back", "R1-DENISE", "P2-D-LOUNGE"], photo([
-    SAME + " A snapshot from a phone at knee height beside the sofa, in profile to her right leg. She sits on the sofa edge, her bare right "
-    "leg bent at an easy angle, foot flat on the rug, and holds the strap up level beside the front of her knee, just below the kneecap and "
-    "a few centimetres clear of the skin, front face and wordmark to the lens: " + PINCH + ". Side by side like this the shell is only as "
-    "wide as the front of her knee. Only her hand, forearm and legs are in frame. " + SKIN["dark"],
+    SAME + " A snapshot from a phone at knee height, three-quarter in front of her. She sits on the edge of the teal velvet sofa, her bare "
+    "right knee bent at an easy angle, foot flat on the kilim rug, and holds the strap up IN FRONT of the knee — a hand's width towards the "
+    "camera, NOT touching the leg — level with the soft spot just under her kneecap, the whole front face and the wordmark square to the "
+    "lens: " + PINCH + ". The band hangs slack below her fingers, not round the leg. Seen like this the shell is only as wide as the knee "
+    "behind it: small on purpose. Her knee is soft behind the sharp strap. Only her hand, forearm and knees are in frame. " + SKIN["dark"],
     "Her hand and legs: " + DENISE.split(" — ")[0] + " — dark brown skin. Wearing " + WARD["D-D1"] + ".", LOUNGE,
     PROD + " " + RIGID + " " + P.WORDMARK_LOCK + " " + P.SIZE_HELD,
     angle("B1-02a", "her hand and her right knee"), focus("the product and its wordmark"), light("LOUNGE", "her knee", face=False), colour("LOUNGE", "she")],
-    P.NEG_HELD_P + ", " + P.NEG_WORDMARK + ", " + BLOCK_NEG + ", no strap worn, no strap touching the knee, no second strap, no face, "
-    "no third leg, no extra limb, " + NEG_HANDS))
+    P.NEG_HELD_P + ", " + P.NEG_WORDMARK + ", " + BLOCK_NEG + ", no strap worn, no strap touching the knee, no strap on the shin, no band round the leg, no strap being put on, "
+    "no side-on strap, no second strap, no face, no fireplace, no white room, no third leg, no extra limb, " + NEG_HANDS))
 B["B1-03a"] = (NBP, ["R2-ALAN", "P0-A-KITCHEN"], photo([
     "A snapshot from a phone held low near the kitchen floor, three-quarter to him. He steps down the single low step from the hall doorway "
     "onto the kitchen floor, caught mid-step: his left foot still on the step, his right foot just landing flat on the floor tiles, his "

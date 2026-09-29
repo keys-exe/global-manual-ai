@@ -49,6 +49,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Three lines had no live-action picture of their own → **B1-02a** (Denise holds the strap beside her bare knee — "They're small on purpose"), **B1-03a** (Alan steps down one low step in his kitchen — "Seventeen times your bodyweight…"; MECH-02 moves to "centimetres"), **B1-07a** (Alan rubs his knee at the kitchen table — "Perfect for bone on bone, arthritis…"; MECH-05 moves to "cartilage"). B1-02's anchor moved to "one", B1-07a's is "bone", so every hold is ≥ 2.0s.
   Not split: "No slipping. No sores. No rolling down." (2.6s) and "Too small to work? Try it on your own stairs. Nothing to lose but the pain." — per-sentence shots there would be under 1s, below the 2.0s floor (§30H).
   Act map (`work/actmap.py`, STEP4_5.md): Video 1 now 23 shots, 32 unique beats; `angles.py` PASS both videos. The three start images made on Kie (one each) and on the Current board as To check.
+- 2026-09-29 ~17:00 UTC: user confirmed B1-01a-END, B1-03a, B1-04b v2, B1-06 v2, B1-07a, CARD-12b v2, MECH-02, MECH-03 v2, MECH-05 v2; Fix on three, then "FIX THOSE":
+  B1-02 v3 "CHANGE THIS IMAGE" (v2's fingertip still mid-shin, face in frame → nano-banana-pro, an extreme close-up of the one knee, fingertip dead centre under the kneecap, no face/feet) ·
+  B1-02a v2 "CHANG THIS" (v1 read as the strap being put on low on the shin, room off the plate → held IN FRONT of the knee, three-quarter, not touching, band slack; act map side profile → three-quarter, `angles.py` PASS) ·
+  B1-13a v2 "CHANGE THIS" (still wore the strap the user took off B1-13b, the next shot → no strap, bare knees).
+  All three on Kie, To check; replaced versions moved to the Old board.
+- **Act 1 images now: 19 of 23 confirmed (+ B1-01a-END)** — waiting on B1-02 v3, B1-02a v2, B1-13a v2 and B1-13b v2.
 
 ## Where it stands
 - **Hooks, 2026-09-29:** HK1-01 (v2 image, HK1-01-END end frame, pinned clip v1, Kie task 800927cb…) and HK2-01 (image + clip v1, Kie task b080e98e…) all confirmed by the user.
