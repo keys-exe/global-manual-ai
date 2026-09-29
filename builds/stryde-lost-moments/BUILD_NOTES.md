@@ -85,3 +85,4 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   C-HKb: "MAKE IT HE WALKING WITH THE DOG HAPPY" → new frame f91a9b21… (side-on full body, right→left with Bramble on the red lead, smile, day-2 outfit, outside his house).
   E-HKb frame (real product) confirmed → clip v2 (Kie 0192fd30…, 90 cr): he finishes the lift and holds her, both laughing; preflight PASS → To check.
   Replaced frames/clips → Old. Walking clips (B, C) will use §27G: 3–4 steps across a locked frame.
+- 12:51 UTC (hourly check): user confirmed the A-HKb rail-free frame, B-HKb walking frame, C-HKb dog-walk frame → clips A-HKb v10 (2930a670…), B-HKb v4 (8809278b…), C-HKb v7 (58c3447f…), 90 cr each, preflight PASS; walks = 3 steps across a locked frame (§27G) → To check.

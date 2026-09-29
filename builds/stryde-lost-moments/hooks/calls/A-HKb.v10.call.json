@@ -1,0 +1,35 @@
+{
+ "beat": "A-HKb",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"a_hkb\",\"subject\":\"Side view through white banister spindles, knee height, waist-down: a Black British woman of seventy-three in a coral blouse, navy linen skirt above the knee and burgundy slippers, walking down a red-runnered staircase facing forwards, the black knee strap snug just under her right kneecap. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame.\"},\"motion\":\"Already stepping on the first frame: she takes two steps down, one foot per step, left then right, about one step per second, a brisk even rhythm with no pause on any step, torso upright, hands free and swinging a little at her sides, never lifting toward the rail. Weight rolls through each step and commits without hesitation. Still mid-flight at the cut, the next step already underway. Her legs and the strapped right knee stay in frame the whole time. The camera stays where it is. The strap keeps its exact shape, size and wordmark in every frame, moves only with the leg and stays exactly under the kneecap; its rigid shell never bends. Everything in frame keeps the exact form, proportion and count it has in the start frame \u2014 nothing melts, merges, splits or grows. Mass and momentum: weight transfers first, feet land and settle, fabric lags.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no merging, no extra legs, no feet merging, no spindles bending, no stairs bending, no camera travelling with her, no bending, no curling, no flipping of the product, no strap sliding on the leg, no product covering the kneecap, no hand on the rail, no hand touching the rail, no hand hovering near the rail, no hand on the wall, no rail on the wall, no limping, no wincing, no hesitation, no pause on a step, no both feet meeting on one step, no step-to gait, no slow cautious movement, no wobble, no stumble, no arrival at the bottom, no music, no speech\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_124144_f1d7edd9-45a2-42a4-bd8c-3b770ce383fe.png",
+ "start_approved": true,
+ "approved_by": "user: Confirm on the board of the rail-free frame (2026-09-29)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 10,
+ "user_go": "user: Fix 'JUST WALK DOWNSTAIR WITHOUT TOUCHING THE HANDRAIL', Confirm of the fixed frame (2026-09-29)",
+ "fix_note": "Fault in the frame (user Fix: JUST WALK DOWNSTAIR WITHOUT TOUCHING THE HANDRAIL): a wall rail at her far hand's height drew the hand onto it \u2192 rail removed from the frame (confirmed); same motion, 'no rail on the wall' added",
+ "risks": [
+  {
+   "risk": "legs and steps blend as she walks",
+   "prevented_by": "\u00a727G staging: side, waist-down, two steps, camera still; 'no extra legs, no feet merging, no stairs bending'"
+  },
+  {
+   "risk": "a hand drifts to the rail",
+   "prevented_by": "'hands free \u2026 never lifting toward the rail'; NEG-SUPPORT clauses"
+  },
+  {
+   "risk": "strap slides or bends while the knee flexes",
+   "prevented_by": "rigid-product clause; 'no strap sliding on the leg, no bending, no flipping of the product'"
+  }
+ ]
+}
