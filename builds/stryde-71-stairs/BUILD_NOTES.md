@@ -140,6 +140,27 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Kie GPT Image 2 (`kie.py image gpt-image-2-text-to-image --plate`, 2K 16:9; `gpt-image-2-image-to-image` when references are needed —
   both models added to kie.py). P8-MALL remade on it: v3 (task 5b55c74e, 2048×1152, 10 credits) To check; v2 (Higgsfield) moved to Old.
 
+- 2026-09-29 ~10:50 UTC: user "re do all the location plates and use the 16:9 settings" → P0–P7 remade on Kie GPT Image 2 at 16:9
+  (2K, 2048×1152, 10 credits each): P0 v2, P2 v2, P3 v2, P5 v2, P6 v2, P7 v2 text-to-image from their prompts; P4 v4 from the confirmed
+  v3 prompt; P1 v4 image-to-image from the v3 prompt with the new P0 v2 as its reference (same house, same stairs). All To check; every
+  replaced version moved to the Old board. P8-MALL was already 16:9 on GPT Image 2 (v3). Task ids in `plates/jobs.json` (`*.16x9`).
+  Images already confirmed from the old plates (cast, N-VOICE-IMG) are left as they are.
+
+- 2026-09-29 12:20 UTC (hourly Fix check): three board Fixes on Kie GPT Image 2, 16:9 —
+  **P0** "remove the floor mat" → v3, image-to-image edit of v2 with the rug taken out (prompt `P0-PROP-N.v3.prompt.txt`; the rug also
+  removed from `build_plates.py`). **P1** "use the p0 as reference" → v5 from P0 v3; the v3 prompt's own photo-wall description
+  (black-and-white/sepia only, "no colour graduation portraits") fought P0's wall, so v5 takes the photo wall and every shared finish from
+  the reference instead of describing it (`P1-LANDING.v5.prompt.txt`). **P8** "it feels so empty" → v4 with a normal Sunday crowd in the
+  middle distance (walkway, concourse, bench, kiosk, open lit shops), the staircase itself clear (`build_plates.py` TAIL now takes a
+  people clause). All To check; replaced versions on the Old board.
+
+- 2026-09-29 ~12:40 UTC: user confirmed the location plates, then chose "Confirm all 4, go" for the outfit cards (marked confirmed on
+  their word). **HK-A-SD v1** made on Seedance 2.5 via Kie (task fa158cc0, 11 s 720p, 693 credits; ingredients N sheet, C2 sheet,
+  P1 v5, P0 v3, INFO-WARD-A-N, INFO-WARD-A-C2; no audio ingredient) → To check. Whisper: the only speech is the daughter's
+  "Mama, when did that happen?" 7.62–10.42 s. Cut 7.35–10.95 s → `hooks/sd/daughter_voice_HKA_v1.mp4` = card **VOICE-C2-HKA**
+  (To check), the @audio1 ingredient of HK-B-SD. Hook B runs once HK-A-SD and VOICE-C2-HKA are confirmed (call: `hooks/sd/HK-B.call.json`).
+  preflight.py on the default branch already checks Seedance calls by `ingredients_approved` (V7.68.0); mine was dropped in favour of it.
+
 ## Where it stands
 - **Voice stage done** (2026-09-29): VO T2 locked (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`), TH-01…16 (Avatar V render of T2) confirmed.
 - **Step 6 — hooks (Seedance, V7.68 ingredients):** waiting on the user's Confirm of the 4 outfit info cards. Then: Seedance Hook A on Kie

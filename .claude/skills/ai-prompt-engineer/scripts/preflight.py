@@ -135,7 +135,7 @@ def run(c):
     # 5. Motion (§27G / §24K)
     rigs = [r for r, s in RIGS.items() if s in p]
     sm = c.get("subject_motion") or ("travels" if WALK.search(p) else "still")
-    series = film and mode == 4 and conn == "seedance" or bool(c.get("series"))
+    series = film and mode == 4 and conn == "seedance"   # ads stay phone style (§24N, V7.69.1)
     if film or series:
         check("one F-rig", len(rigs) == 1, ",".join(rigs) or "none found")
         bad = [r for r in rigs if (sm == "in_place" and r in NOT_IN_PLACE) or (sm == "travels" and r in NOT_TRAVELS)]
@@ -148,6 +148,9 @@ def run(c):
             check("F6–F10 on Seedance only (§24N)", conn == "seedance", conn)
     if series:
         check("SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] in p)
+    if not film:
+        check("ads stay phone style: no SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] not in p)
+        check("ads stay phone style: no F6–F10 (§24N)", not any(sig in p for r, sig in RIGS.items() if r in SEEDANCE_ONLY))
     if kind == "multi":
         check("MULTI-SHOT only when nobody moves", sm == "still", f"subject {sm}")
 
