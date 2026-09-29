@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.33
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.34
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -14,7 +14,7 @@ product; it carries everything that step needs.
     the geometry checker ........ check(), was stryde_frame_check.py
     the fit / "adjustable" rule . ADJUSTABLE_RULE, NEG_ADJUST (V7.49.14)
     one size fits all ........... FIT_SNUG, worn_ref_prompts() (V7.49.15)
-    the size lock ............... SIZE_LOCK, SIZE_WORN, SIZE_HELD, SIZE_OBJECT (V7.49.21)
+    the size lock ............... SIZE_LOCK, SIZE_WORN, SIZE_HELD, SIZE_OBJECT, SIZE_REF (V7.49.21; resized V7.49.34)
     how it is worn .............. WEAR_GUIDE (V7.49.21)
     which images to attach ...... REFS_USE, refs_for(shot) (V7.49.23)
     held beats .................. HELD_GRIPS, NEG_HELD_P (V7.49.23)
@@ -324,9 +324,9 @@ FIT_SNUG = (
 # ~5 cm tall, knee ~10-11 cm across the front) -- not advertiser-held. Replace
 # with supplied dimensions the moment they exist.
 SIZE_LOCK = {
-    "shell_width_cm":   12.0,   # slide to slide, along the curve
-    "shell_height_cm":  5.0,    # peak tips to the lowest point of the bottom edge
-    "band_width_cm":    2.5,    # band height, edge to edge
+    "shell_width_cm":   15.0,   # slide to slide, along the curve (V7.49.34, was 12.0)
+    "shell_height_cm":  6.0,    # peak tips to the lowest point of the bottom edge (was 5.0)
+    "band_width_cm":    3.0,    # band height, edge to edge (was 2.5)
     "shell_aspect":     (2.3, 2.6),   # width / height, measured straight-on
     "band_over_shell_h": (0.45, 0.60),  # edge-to-edge by eye, confirmed on back.webp V7.49.22
                                         # (band ~175 px vs shell ~310 px head-on). The --check
@@ -336,23 +336,30 @@ SIZE_LOCK = {
     "notch_rise_over_w": (0.15, 0.21),  # front.webp 0.18
     "peak_span_over_w":  (0.55, 0.66),  # front.webp 0.60
     "worn_band_over_leg": (0.20, 0.28), # band height / leg width at the calf, from behind
-    "held_shell_in_thumbs": (5.0, 6.0), # shell width / the holder's thumb width
-    "source": "front.webp measured V7.49.21; anatomy Tier 3; NOT advertiser-held",
+    "held_shell_in_thumbs": (6.5, 7.5), # shell width / the holder's thumb width (V7.49.34, inner_face.jpg)
+    "source": ("V7.49.34 (user: 'use the image that will be our reference for the size'): absolute size "
+               "read off inner_face.jpg against the holder's thumb (~2.1 cm, Tier 3) -- slide to slide "
+               "~7.3 thumb-widths, shell ~2.6 tall, band ~1.4; +-15% (hand-held, curved, foreshortened). "
+               "Proportions still front.webp V7.49.21. NOT advertiser-held -- a ruler reading replaces it."),
 }
+# V7.49.34: the one size reference. Attach it on every held beat and cite it
+# whenever the product's size is being judged. Was 12 x 5 cm (V7.49.21, Tier-3
+# anatomy only), about 20 percent small against the real strap in a hand.
+SIZE_REF = "stryde_refs/inner_face.jpg"
 
 # The same size said three ways -- one per context. Positive wording (T2I).
 SIZE_OBJECT = (
-"Its size never changes: a rigid shell about 12 cm across from slide to slide and about 5 cm tall at the "
-"peaks, so it is roughly two and a half times as wide as it is tall, with a band about 2.5 cm wide -- the band "
-"about half as tall as the shell.")
+"Its size never changes: a rigid shell about 15 cm across from slide to slide and about 6 cm tall at the "
+"peaks, so it is roughly two and a half times as wide as it is tall, with a band about 3 cm wide -- the band "
+"about half as tall as the shell -- a strap that fills an adult's open hand and overhangs it at both ends.")
 SIZE_WORN = (
 "Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome "
 "slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a "
 "quarter of the leg's width at the top of the calf.")
 SIZE_HELD = (
-"Its size never changes: the shell is about five to six of the holder's thumb-widths across, overhanging the "
-"pinching hand at both ends, and about as tall as the thumb is long from its tip to its base knuckle; the "
-"band is a little wider than the thumb.")
+"Its size never changes: the shell is about seven of the holder's thumb-widths across from slide to slide, "
+"longer than the whole hand is wide and overhanging it at both ends, and a little taller than the thumb is "
+"long from its tip to its base knuckle; the band is about one and a half thumb-widths wide.")
 
 # --- which knee (V7.49.24, user: "depends on the script") -----------------------
 # The side is read from the script, never chosen for looks. Declared once at the
@@ -511,9 +518,10 @@ WORDMARK_EXPECTED = {
 PAD_BACK_SHOT = (
 "The strap turned round so the back of the shell faces the camera: the inside of the shell, the pad that "
 "sits against the skin, fills the frame -- a mid-grey soft-touch pad insert filling the shell's two-peaked "
-"outline inside a thin matte-black rim, its surface covered in fine shallow parallel grooves that sweep in "
-"curved rows across it, and rising from it one smooth ungrooved raised ridge, a long rounded crescent that "
-"follows the curve of the notch on the inside, thickest in its middle and tapering to each end -- the two "
+"outline inside a thin matte-black rim, one smooth ungrooved raised ridge running through it like the midrib "
+"of a leaf -- a long rounded comma, narrow just below one peak, running diagonally down beneath the notch and "
+"swelling into a broad low bulb above the bottom edge -- with fine shallow grooves fanning out from it on both "
+"sides in curved rows like leaf veins -- the two "
 "peaks rising along its top edge, a chrome slide at each end, the band running away from the slides behind "
 "it. No wordmark is visible from this side.")
 
@@ -548,19 +556,22 @@ ANAT_A_POINT_TIGHT = (
 # inner_face_clip.mp4 (layer 1). They outrank back.webp, whose inside reads
 # plain black. Used on held beats and any view of the inside of the shell.
 # Never the word "silicone" (it renders the soft glossy fake, §10).
-# UNVERIFIED: the ridge's exact ends and how far it runs toward each peak --
-# the photo is hand-held and partly covered by a thumb; a flat-on photo of the
-# inside would lock it.
+# V7.49.34: the ridge re-read frame by frame -- a comma / leaf midrib (narrow
+# under one peak, bulb above the bottom edge), NOT the V7.49.33 crescent along
+# the notch. UNVERIFIED: which peak (seen from the front) the narrow end sits
+# under -- the photo is hand-held; a flat-on photo of the inside would lock it.
 INNER_PAD = (
 "The inside of the shell is a mid-grey soft-touch pad insert that fills the shell's two-peaked outline inside "
-"a thin matte-black rim. Its surface is covered in fine shallow parallel grooves sweeping in curved rows "
-"across it, and one smooth ungrooved raised ridge rises from it: a long rounded crescent following the curve "
-"of the notch on the inside, thickest in its middle and tapering to each end. No markings and no wordmark on "
-"this side.")
+"a thin matte-black rim. One smooth ungrooved raised ridge runs through it like the midrib of a leaf: a long "
+"rounded comma that starts narrow just below one peak, runs diagonally down beneath the notch and swells into "
+"a broad, low rounded bulb above the bottom edge. The rest of the pad is covered in fine shallow parallel "
+"grooves fanning out from the ridge on both sides in curved rows, like the veins of a leaf. No markings and no "
+"wordmark on this side.")
 
 # I2V / T2I negatives for any view of the inside (V7.49.33).
 NEG_INNER_PAD = (
 "no plain featureless black inside, no smooth ungrooved pad, no pad without its raised ridge, no second ridge, "
+"no ridge running straight across the shell, no crescent ridge hugging the notch, "
 "no blue or coloured gel, no glossy wet-look pad, no pad spilling past the shell's rim, no text or logo on the "
 "inside")
 
@@ -751,7 +762,7 @@ PRODUCT_SET_VIEWS = {
     "back_view": ("Seen exactly straight-on from the back, level with the product, no turn and no tilt, as in "
                   "the attached back product photo: the band crossing the front of the frame with its two black "
                   "keeper loops side by side at the centre, the shell's inner face behind it -- the mid-grey grooved "
-                  "pad insert with its raised crescent ridge inside a thin black rim -- with both peaks "
+                  "pad insert with its raised comma-shaped ridge inside a thin black rim -- with both peaks "
                   "rising above the band, a chrome slide at each end, no wordmark visible."),
     "side_view": ("Seen exactly from the side at ninety degrees, level with the product, looking straight at "
                   "one end: that end's chrome slide faces the camera flat with its three dotted chevrons and the "
@@ -851,7 +862,7 @@ REFS_RETIRED = (
 )
 _SHOT_EXTRA = {
     "front": (), "back": (), "tq_left": ("tq_left",), "tq_right": ("tq_right",),
-    "side": ("side",), "macro": ("macro",), "held": (),
+    "side": ("side",), "macro": ("macro",), "held": ("inner",),  # V7.49.34: size ref
     "worn_front": ("worn_front",), "worn_bent": ("worn_bent",), "worn_rear": ("worn_rear",),
     "seating": ("worn_front",),
     "package_closed": ("package_closed",), "package_open": ("package_open",),
@@ -886,7 +897,7 @@ PRODUCT_SET_ATTACH = {
     "tq_left":  ("front.webp", "back.webp", "three_quarter_b.jpg"),
     "tq_right": ("front.webp", "back.webp", "three_quarter_b.jpg"),
     "profile":  ("front.webp", "back.webp", "three_quarter_b.jpg"),
-    "held":     ("front.webp", "back.webp"),
+    "held":     ("front.webp", "back.webp", "inner_face.jpg"),   # V7.49.34 size reference
     "front_view": ("front.webp", "back.webp"),
     "back_view":  ("back.webp", "front.webp", "inner_face.jpg"),
     "side_view":  ("front.webp", "back.webp"),
@@ -1190,7 +1201,7 @@ INFO_RATIOS = {
     # denominators, and conflating them puts a wrong ratio on every frame.
     # Single sample, upscaled video, so it is informational not gated.
     # V7.49.21: target (0.20, 0.28) = SIZE_LOCK['worn_band_over_leg'] (2.5 cm band on a
-    # 10-11 cm calf). The old 0.28-0.36 came off an upscaled V7.48 frame and
+    # 10-11 cm calf; V7.49.34: 3 cm band on an 11-13 cm calf reads 0.23-0.27, still inside). The old 0.28-0.36 came off an upscaled V7.48 frame and
     # rendered the band ~3.5 cm (worn_rear.jpg reads 0.33 -- flagged, locked by user).
     "BAND_HEIGHT_TO_LIMB_WIDTH": (0.20, 0.28),
     # V7.49.12. Shell width (slide to slide) / greatest height, read off the
@@ -1294,11 +1305,12 @@ UNSETTLED = {
         "knit band with both keeper loops, accepted by the user.",
     "inner_face_script_RESOLVED_7_49_33":
         "RESOLVED V7.49.33 by the user's photo and clip of the real strap (inner_face.jpg, "
-        "inner_face_clip.mp4): the inside is a mid-grey pad insert with fine curved grooves and one "
-        "raised crescent ridge following the notch, in a thin black rim (INNER_PAD, NEG_INNER_PAD). "
+        "inner_face_clip.mp4): the inside is a mid-grey pad insert in a thin black rim, one raised "
+        "comma-shaped ridge like a leaf's midrib (V7.49.34 -- the V7.49.33 'crescent along the notch' "
+        "was a misread) with fine grooves fanning from it (INNER_PAD, NEG_INNER_PAD). "
         "Was: V7.49.23 plain matte black, read off back.webp -- wrong for the inside. Prompts still say "
-        "'the pad' and never 'silicone' (the word renders the soft glossy fake shell). Open: the "
-        "ridge's exact ends (hand-held photo, thumb over part of it).",
+        "'the pad' and never 'silicone' (the word renders the soft glossy fake shell). Open: which "
+        "peak the ridge's narrow end sits under, seen from the front (hand-held photo).",
     "band_faces_RESOLVED_7_49_11":
         "RESOLVED by the supplied product images (CANONICAL_REFERENCES). The OUTER "
         "face carries TWO black moulded keeper loops side by side at the rear; the "
@@ -1389,9 +1401,10 @@ PRODUCT_PHOTOS = {
                   "peaks rising behind. Its inside reads plain black -- SUPERSEDED V7.49.33 by "
                   "inner_face.jpg for the inside only; everything else in it stands"),
     "inner_face.jpg": ("V7.49.33, the user's photo of the real strap: the inside of the shell -- a mid-grey "
-                       "pad insert in a thin black rim, fine curved parallel grooves, one smooth raised "
-                       "crescent ridge following the notch; black band ends through the chrome slides. "
-                       "The authority for the inside (INNER_PAD)"),
+                       "pad insert in a thin black rim, one smooth raised comma-shaped ridge like a leaf's "
+                       "midrib with fine grooves fanning from it; black band ends through the chrome slides. "
+                       "The authority for the inside (INNER_PAD) and, from V7.49.34, THE SIZE REFERENCE: "
+                       "the strap in an adult hand (SIZE_LOCK, SIZE_REF)"),
     "inner_face_clip.mp4": ("V7.49.33, the user's 3.5s clip turning the strap in the hand: the same inside "
                             "from several angles. For reading only, never attached to a call"),
     "three_quarter_a.jpg": "three-quarter, floating: wordmark reads left of the notch in this view (yaw)",
@@ -1527,8 +1540,8 @@ CHECKLIST = [
     "seating beats: end position matches the front worn-placement reference",
     "size (SIZE_LOCK): shell about two and a half times as wide as tall; band about half "
     "the shell's height; worn -- shell spans the leg's front width and stands about as tall "
-    "as the kneecap, band about a quarter of the calf's width; held -- shell five to six "
-    "thumb-widths across",
+    "as the kneecap, band about a quarter of the calf's width; held -- shell about seven "
+    "thumb-widths across, against inner_face.jpg (SIZE_REF, V7.49.34)",
 ]
 
 # back-compat for callers that imported the bare name
@@ -2068,7 +2081,7 @@ def counts():
 # ==================================================================
 SHEET_MD = r'''# Product Sheet — Stryde Precision Strap
 
-**V7.49.33.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
+**V7.49.34.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
 
 The geometry ratios were measured off the five V7.48 canonical renders (63, 64, 65, 66, 68) with a roll correction applied. **Since V7.49.11 the supplied product photos (`stryde_refs/`) are the product** (layer 1) and outrank those renders wherever they disagree. Where a figure is external it is marked Tier 3 and is not advertiser-held.
 
@@ -2086,7 +2099,7 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 
 **1 — Primary form.** A rigid moulded polymer shell spanning the whole front of the knee from one side of the leg to the other, its top edge waving up into two matching pointed peaks of equal height either side of a crisp concave notch, waisted off-centre, closed behind the leg by a flat matte-black woven elastic band.
 
-**2 — Material and finish.** Shell: matte polymer, satin not gloss, holding a soft broad highlight along the crown of each peak and down the waist. Band: black elastic band in a coarse knit with a visible textured weave and straight edges (supplied photos). Hardware: brushed chrome slides carrying three engraved dotted chevrons, the only specular element on the object. Keeper loops: moulded matte black, on the band's outer face. **Inside of the shell (V7.49.33):** a mid-grey soft-touch pad insert in a thin matte-black rim, fine curved parallel grooves, one smooth raised crescent ridge following the notch (§15, `INNER_PAD`).
+**2 — Material and finish.** Shell: matte polymer, satin not gloss, holding a soft broad highlight along the crown of each peak and down the waist. Band: black elastic band in a coarse knit with a visible textured weave and straight edges (supplied photos). Hardware: brushed chrome slides carrying three engraved dotted chevrons, the only specular element on the object. Keeper loops: moulded matte black, on the band's outer face. **Inside of the shell (V7.49.33):** a mid-grey soft-touch pad insert in a thin matte-black rim, fine curved parallel grooves, one smooth raised comma-shaped ridge like a leaf's midrib (§15, `INNER_PAD`).
 
 **3 — Distinguishing asymmetries.** *The most important field, and every item here is normalised out if unstated.*
 
@@ -2150,8 +2163,8 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 | Worn — straight, bent, rear | + `worn_front.jpg`, `worn_bent.jpg` or `worn_rear.jpg` |
 | Putting it on | + `worn_front.jpg` (the end position) |
 | Box — closed / open | + `package_closed.jpg` or `package_open.jpg` (locked V7.49.27) |
-| Inside of the shell to the lens (`pad_back`, `back_view`) | + `inner_face.jpg` (V7.49.33 — your photo of the real strap; its inside outranks `back.webp`'s plain black) |
-| Held | the two originals only; `product_held.jpg` is an optional example of one grip, **not locked** — pick a grip from `HELD_GRIPS` |
+| Inside of the shell to the lens (`pad_back`, `back_view`) | + `inner_face.jpg` (V7.49.33 — your photo of the real strap; its inside outranks `back.webp`'s plain black; from V7.49.34 also the size reference) |
+| Held | + `inner_face.jpg` — **the size reference** (V7.49.34); `product_held.jpg` is an optional example of one grip, **not locked** — pick a grip from `HELD_GRIPS` |
 
 Never more than the two originals plus one. **Retired:** `product_front.jpg`, `product_back.jpg`, `product_profile.jpg`, `three_quarter_a.jpg`, `three_quarter_b.jpg`, and the never-stored composite `STRYDE_reference_v7_49_11.png`. Image plus names is the pair; either alone leaks.
 
@@ -2196,7 +2209,7 @@ British, roughly 55–80. Cast to the buyer, balanced across men and women, with
 | Claim | Tier | Status |
 |---|---|---|
 | **One size fits all** | Advertiser (user-stated V7.49.15) | Rendered as `FIT_SNUG` on worn frames and covered per §12 on fit lines. No size chart, size label or S/M/L is ever shown. The V7.49.13 competitor sizing figures (25–44 cm, 15–46 cm) are retired — this product has no sizes |
-| Rendering size: shell ~12 cm × ~5 cm, band ~2.5 cm (`SIZE_LOCK`) | Derived | Proportions measured on `front.webp` (V7.49.21); absolute size from Tier-3 anatomy. Not advertiser-held — replace with supplied dimensions. Never stated on screen. (The V7.49.13 "band about 2 inches" category figure is retired.) |
+| Rendering size: shell ~15 cm × ~6 cm, band ~3 cm (`SIZE_LOCK`, V7.49.34) | Derived | Proportions measured on `front.webp` (V7.49.21); absolute size read off `inner_face.jpg` against the holder's thumb (V7.49.34, ±15%). Not advertiser-held — replace with supplied dimensions. Never stated on screen. (The V7.49.13 "band about 2 inches" category figure is retired.) |
 | Adult patella about 4–5 cm wide; tendon 4–5 cm from inferior pole to tibial tuberosity | 3 | Anatomical anchor, used for scale reasoning only, never as a claim |
 | Clinical placement "just below the kneecap"; one manufacturer specifies about 2 inches below | 3 | Third-party guidance. Compatible with the contact phrasing — the top edge touches the pole while the body covers the upper tendon |
 | Every step puts **17× bodyweight** through the spot below the kneecap | **User-confirmed V7.49.29** | Advertiser-held. The number is a post overlay, never generated (§17) |
@@ -2250,15 +2263,17 @@ The global Standards are product-agnostic from V7.49.4. Everything below used to
 
 ---
 
-## 13. Size — always the same *(V7.49.21 — user ruling)*
+## 13. Size — always the same *(V7.49.21 — user ruling; resized V7.49.34)*
 
-**One unit, one size, every frame.** Proportions measured straight-on on `front.webp`: the shell is **about 2.5× as wide as it is tall** (2.50; `product_front.jpg` 2.32), the band is **about half the shell's height**, the notch rises 0.18 of the width, the peaks span 0.60 of it. Rendering size: **shell ~12 cm across × ~5 cm tall, band ~2.5 cm** — derived, not advertiser-held.
+**One unit, one size, every frame.** Proportions measured straight-on on `front.webp`: the shell is **about 2.5× as wide as it is tall** (2.50; `product_front.jpg` 2.32), the band is **about half the shell's height**, the notch rises 0.18 of the width, the peaks span 0.60 of it. Rendering size: **shell ~15 cm across × ~6 cm tall, band ~3 cm** — derived, not advertiser-held.
+
+**The size reference is `stryde_refs/inner_face.jpg` (V7.49.34, user: "use the image that will be our reference for the size").** The real strap in an adult hand: slide to slide about **seven thumb-widths** — longer than the hand is wide, overhanging it at both ends — the shell a little taller than the thumb is long, the band about one and a half thumb-widths. Read against a ~2.1 cm thumb (Tier 3), ±15% (hand-held, curved, foreshortened): **15 × 6 cm, band 3 cm** (`SIZE_LOCK`, `SIZE_REF`). The V7.49.21 figure (12 × 5 cm, band 2.5 cm, five to six thumbs) came from anatomy alone and was about 20% small. Every held beat attaches `inner_face.jpg`; any size check reads against it. A ruler measurement of the real strap replaces these numbers.
 
 | Context | Size anchor (string) |
 |---|---|
-| Product only | ~12 × 5 cm shell, band half the shell's height (`SIZE_OBJECT`) |
+| Product only | ~15 × 6 cm shell, band half the shell's height, fills an open adult hand (`SIZE_OBJECT`) |
 | Worn | shell spans the leg's whole front width, about as tall as the kneecap; band about a quarter of the calf's width (`SIZE_WORN`) |
-| Held | shell five to six thumb-widths across, as tall as the thumb is long; band a little wider than the thumb (`SIZE_HELD`) |
+| Held | shell about seven thumb-widths across, longer than the hand is wide, a little taller than the thumb is long; band about one and a half thumb-widths (`SIZE_HELD`, attach `inner_face.jpg`) |
 
 A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and fixed V7.49.22: `worn_rear.jpg` band 0.33 of the leg → re-rolled to ~0.27 (edit, everything else unchanged); `product_front.jpg` failed three `--check` shape gates → re-rolled level and now passes them all. The `--check` gates stay in their own units: its band reading under-reads the knit (0.351 on `front.webp` for a band that is about half the shell's height edge to edge, confirmed on `back.webp`).
 
@@ -2285,7 +2300,7 @@ A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and
 
 **Held is not locked** (user): there are many right ways to hold it. Choose from `HELD_GRIPS` per beat — bottom-edge pinch, open palm, fingertips behind, turned through the light, two-hand presentation — and vary them across a build. Fixed rules: on the pad or the shell's edge; never on the band, never on the slides, never across the wordmark; peaks and notch visible. I2V negatives: `NEG-HELD-P`.
 
-**The inner pad** (the user's "silicone pad") — **redrawn V7.49.33** from the user's photo and clip of the real strap (`stryde_refs/inner_face.jpg`, `inner_face_clip.mp4`): a **mid-grey soft-touch pad insert** filling the shell's two-peaked outline inside a **thin matte-black rim**; its surface covered in **fine shallow parallel grooves** sweeping in curved rows; and **one smooth, ungrooved raised ridge** — a long rounded crescent following the curve of the notch on the inside, thickest in its middle, tapering to each end. No markings, no wordmark on this side (`INNER_PAD`, negatives `NEG_INNER_PAD`). The V7.49.23 reading — plain smooth matte black, off `back.webp` — is retired: `back.webp` stays the reference for the band, loops and slides, but not for the inside. Any shot with the inside to the lens attaches `inner_face.jpg` (`refs_for("pad_back")`). Prompts say "the pad", never "silicone". *Unverified:* the ridge's exact ends (the photo is hand-held, a thumb covers part of it) — a flat-on photo of the inside would lock it.
+**The inner pad** (the user's "silicone pad") — **redrawn V7.49.33** from the user's photo and clip of the real strap (`stryde_refs/inner_face.jpg`, `inner_face_clip.mp4`): a **mid-grey soft-touch pad insert** filling the shell's two-peaked outline inside a **thin matte-black rim**; **one smooth, ungrooved raised ridge** running through it like the midrib of a leaf — a long rounded comma, narrow just below one peak, running diagonally down beneath the notch and swelling into a broad, low bulb above the bottom edge (V7.49.34; the V7.49.33 "crescent along the notch" was a misread); and **fine shallow grooves** fanning out from the ridge on both sides in curved rows, like leaf veins. No markings, no wordmark on this side (`INNER_PAD`, negatives `NEG_INNER_PAD`). The V7.49.23 reading — plain smooth matte black, off `back.webp` — is retired: `back.webp` stays the reference for the band, loops and slides, but not for the inside. Any shot with the inside to the lens attaches `inner_face.jpg` (`refs_for("pad_back")`). Prompts say "the pad", never "silicone". *Unverified:* which peak (seen from the front) the ridge's narrow end sits under — a flat-on photo of the inside would lock it.
 
 **Standing negatives from observed failures** (`NEG-OBSERVED`, dated in `NEG_OBSERVED_LOG`): V-shaped notch · crown or horn peaks · deep U or slab shell · slide on the face or on the band · invented slide frame · sideways chevrons · band out of the shell's bottom edge · product tipped · watch-strap band · buckle-shaped keeper. I2V only.
 
