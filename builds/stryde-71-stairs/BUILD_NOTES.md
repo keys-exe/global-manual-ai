@@ -191,8 +191,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   `broll/images/*_v1.png`, not put on the board; re-sent at `resolution: 2k` (jobs in `broll/images/jobs_act1.json`). Higgsfield then
   asked to be signed in again before the 2K jobs could be collected — collect them once it is reconnected.
 
+- 2026-09-29 ~14:55 UTC: Higgsfield reconnected (user). Act 1's ten B-roll images collected at 2K (1536×2752) and on the board To check;
+  P-01b's first 2K job failed on Higgsfield and was re-sent once (job 551fef92). Next: the user's Confirm / Fix on Act 1, then
+  `assemble.py --lengths` on the T2 beats (E6) and the Act 1 videos on Kling (§27G, preflight).
+
 ## Where it stands
 - Voice done: VO T2 locked, TH-01…16 confirmed. Locations P0–P8 confirmed (16:9, Kie GPT Image 2). Outfit cards confirmed.
 - **Hooks:** Hook 1 = HK-A-SD v3 confirmed. Hook 2 = HK-B-SD v2 To check (the mother with bags). In the edit the daughter's on-camera line replaces the
   mother reading "Mama, when did that happen?" in VO T2 (TH-01, 7.36–9.93 s).
+- **B-roll:** Act 1 images (10) To check.
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
