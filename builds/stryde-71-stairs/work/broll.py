@@ -116,12 +116,12 @@ BEATS["P-03a"] = p_03a
 def p_03b():
     return seed("P-03b", "her right ankle", "the brace around her ankle", [
       "Close to the floor of her kitchen, " + KITCH + ", the lens a few centimetres above the cream vinyl tile under the table. "
-      "Her right foot in a pink terry slipper, and above it the same black hinged knee brace has slid all the way down her leg and sits bunched around her ankle, twisted, its velcro straps hanging loose. "
+      "Her right foot in a pink terry slipper, and above it the SAME black hinged knee brace as in the attached brace photo — identical: the same black fabric, the same metal side hinges, the same velcro straps, the same size and shape — has slid all the way down her leg and sits bunched around her ankle, twisted, its velcro straps hanging loose. "
       "The hem of her faded blue floral house dress and her bare calf in frame. Caught as she shifts her foot a little on the tile. Evening: the light is low and fading."],
       "her foot and ankle", "the last low daylight of the evening, dimmer and warmer than the morning, still plain",
-      "no face, no logo on the brace, no readable text, no knee strap, no product, no injury, no swelling",
-      [("N sheet", REF["N"]), ("P2-KITCHEN plate", REF["P2"])])
-BEATS["P-03b"] = p_03b
+      "no face, no different brace from the brace photo, no sleeve instead of the brace, no logo on the brace, no readable text, no knee strap, no product, no injury, no swelling",
+      [("N sheet", REF["N"]), ("P2-KITCHEN plate", REF["P2"]), ("P-03a brace photo (confirmed)", "job:5948917d-e509-41ad-a4f4-a524887d3a9e")])
+BEATS["P-03b"] = p_03b   # Fix 2026-09-29: "this should be the same as the brace of the p03a"
 
 def p_04a():
     return seed("P-04a", "her on the treatment table", "the therapist's hands on her knee", [
