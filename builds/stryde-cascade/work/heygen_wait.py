@@ -1,4 +1,4 @@
-"""Wait for HeyGen videos and download them: heygen_wait.py NAME=VIDEO_ID ... -> th/v3/NAME.mp4"""
+"""Wait for HeyGen videos and download them: heygen_wait.py NAME=VIDEO_ID ... -> th/v4/NAME.mp4"""
 import json, os, sys, time, urllib.request
 K = os.environ["HEYGEN_API_KEY"]
 todo = dict(a.split("=") for a in sys.argv[1:])
@@ -10,7 +10,7 @@ while todo:
         except Exception as e:
             print(name, "poll error", e, flush=True); continue
         if d["status"] == "completed":
-            urllib.request.urlretrieve(d["video_url"], f"th/v3/{name}.mp4")
+            urllib.request.urlretrieve(d["video_url"], f"th/v4/{name}.mp4")
             print(name, "done", d.get("duration"), d["video_url"][:80], flush=True); todo.pop(name)
         elif d["status"] == "failed":
             print(name, "FAILED", d.get("error"), flush=True); todo.pop(name)
