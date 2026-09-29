@@ -238,18 +238,33 @@ B["B01a"] = (NB2, [], anat(
     view="viewed from eye level, three-quarter front, the knee joint large in the middle of the frame with the lower thigh above and the "
          "upper shin below", stack="ANAT-B", slots={"[STACK]": "the surrounding soft tissue"}))
 
-# B01b — "It sits two centimetres below your kneecap … every step you take lands on it." Desmond, ECU profile, stepping down.
+# B01b v2 — user "PUT DIFFERENT BROLLS HERE": the line split in two. First half — where it is: the ridge under the skin, front on.
 B["B01b"] = (NB2, ["R2", "P2"], photo([
-    "A snapshot from a phone held at knee height beside the stairs, side-on. He is coming DOWN his stairs, caught mid-step: his right foot "
-    "planted flat on the tread and taking his weight, his bare right knee bending under the load, his left foot lowering towards the tread "
-    "below. Very close: the frame holds only his bare right knee and shin in side profile, the hem of his shorts, his trainer and the "
-    "tread — nothing above the lower thigh.",
-    R2_BODY + " Wearing " + WARD["D-D1"] + ".",
+    "A snapshot from a phone held at knee height just in front of him. He stands in his hall with his weight on his right leg, the bare "
+    "right knee straight and nearest the lens. Very close, straight on to the front of the knee: the kneecap in the upper part of the frame "
+    "and, just below it, the band of the tendon standing out under the skin as a firm vertical ridge running down to the top of the shin, "
+    "catching the light along its edge. The frame holds only the knee from the bottom of the shorts hem to the upper shin.",
+    R2_BODY + " Wearing dark grey jogging shorts ending just above the knee.",
     D_STAIRS,
-    angle("B01b", "his bare right knee on the stair"),
-    focus("his right knee", deep=False).replace("the room behind", "the hall behind"),
-    light("D-GREY-L", "his knee and the tread"), colour("D-STAIRS-AM")],
-    NO_FACE + ", no torso, no product anywhere, no knee strap, no knee support, no second person, " + PLAIN_SHOES + ", no wrong number of legs"))
+    angle("B01b", "his bare right knee"),
+    focus("the ridge just below his kneecap", deep=False).replace("the room behind", "the hall behind"),
+    light("D-GREY-L", "his knee"), colour("D-STAIRS-AM")],
+    NO_FACE + ", no torso, no hands, no product anywhere, no knee strap, no knee support, no marks drawn on the skin, no ruler, "
+    "no tape measure, no second person, no wrong number of legs"))
+
+# B01c — second half: "and every step you take lands on it." Maureen stepping down off a kerb, ground level, side-on.
+B["B01c"] = (NB2, ["R1", "P3"], photo([
+    "A snapshot from a phone lying on the road surface at the kerb, side-on. She is stepping down off the pavement kerb onto the road, "
+    "caught at the landing: her right plimsoll just landed flat on the tarmac, the right knee bending as it takes her weight, her left "
+    "foot still up on the kerb behind. The frame holds her feet, shins and bare knees and the skirt hem — nothing above the hem — with "
+    "the grey kerb stone, the pavement slabs and the road surface.",
+    R1_BODY + " " + R1_LEGS + " Wearing a navy cotton A-line skirt ending just above the knee and white canvas plimsolls, plain, no logo.",
+    STREET,
+    angle("B01c", "her feet stepping down off the kerb"),
+    focus("her landing plimsoll", deep=False).replace("the room behind", "the street behind"),
+    light("STREET-AM-L", "her legs and the kerb"), colour("STREET-AM")],
+    NO_FACE + ", no torso, no product anywhere, no knee strap, no walking stick, no second person, no cars moving, no road markings with "
+    "text, no number plates, no logos on the plimsolls, no wrong number of legs"))
 
 # B02 — "That is the one." Maureen on her bottom stair, fingertip just below her kneecap.
 B["B02"] = (NB2, ["R1", "P1"], photo([
