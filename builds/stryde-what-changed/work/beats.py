@@ -308,14 +308,14 @@ B["B04a"] = (NB2, ["R2", "P2"], photo([
     "no crying, no screaming, no falling, no looking at the camera, no product anywhere, no knee strap, no walking stick, no second person, "
     + PLAIN_SHOES + ", no going down the stairs"))
 
-# B04b v3 — user Fix "SHE'S GOING DOWN THE STAIR, NOT YET AT THE LAST STEP" (v2 near the bottom); v2 — user Fix "GOING DOWN WHILE HOLDING THE BANISTER, CHANGE THE BROLL": Maureen coming down towards the lens, gripping the rail.
+# B04b v4 — user Fix "HIGHER LAYER IN STAIR, STRUGGLING A LITTLE BIT" (v3 halfway); v3 — user Fix "SHE'S GOING DOWN THE STAIR, NOT YET AT THE LAST STEP" (v2 near the bottom); v2 — user Fix "GOING DOWN WHILE HOLDING THE BANISTER, CHANGE THE BROLL": Maureen coming down towards the lens, gripping the rail.
 B["B04b"] = (NB2, ["R1", "P1"], photo([
-    "A snapshot from a phone held low at the foot of the stairs, looking up the flight. She is coming DOWN her stairs towards the lens, "
-    "HALFWAY DOWN THE FLIGHT — six or seven treads above the hall floor, with the lower stairs still stretching down between her and the "
-    "lens, nowhere near the last step — caught mid-step: her right hand gripping the honey oak handrail tightly, her weight held back, her "
-    "right foot lowering carefully onto the next tread down while the left knee bends to take her, her eyes on the step below, "
-    "concentrating. The whole of her from head to plimsolls, the empty lower treads below her, the flight rising behind her to the "
-    "half-landing window.",
+    "A snapshot from a phone held on the lower stairs, looking up the flight. She is NEAR THE TOP OF HER STAIRS, just a few treads below "
+    "the half-landing, coming DOWN towards the lens, struggling a little: her right hand gripping the honey oak handrail tightly, her left "
+    "hand braced flat against the wall for support, her weight held back, her right foot lowering carefully onto the next tread while the "
+    "left knee bends to take her, her face showing a small tired wince of effort — uncomfortable, not in agony. Most of the flight lies "
+    "empty below her between her and the lens; the half-landing window is just above and behind her. The whole of her from head to "
+    "plimsolls.",
     R1 + " Wearing " + WARD["M-D1"] + ".",
     M_STAIRS,
     angle("B04b", "her coming down the stairs"),
@@ -324,13 +324,18 @@ B["B04b"] = (NB2, ["R1", "P1"], photo([
     "no falling, no wincing in agony, no looking at the camera, no product anywhere, no knee strap, no walking stick, no stairlift, "
     "no second person, no logos on the plimsolls, no going up the stairs, no standing on the bottom step, no standing on the hall floor"))
 
-# B04c — "so coming down puts more through that band than going up does." ANAT-C silhouette, only the tendon legible.
+# B04c v2 — user Fix "WALKING DOWN THE STAIR": the silhouette figure, waist-down, walking down a visible flight of steps.
 B["B04c"] = (NB2, [], anat(
-    "Seen from a high three-quarter angle: the knee bent under a downward step, the foot just landing on a step below, the whole leg a dark "
-    "translucent silhouette with only the patellar tendon legible inside it, glowing where the landing loads it. "
-    + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
-    view="viewed from a high three-quarter angle, the bent knee in the middle of the frame, the shin angled down to the landing foot on "
-         "a faint step below", stack="ANAT-C", slots={"[STACK]": "the surrounding soft tissue"}))
+    "Seen from a high three-quarter angle: a translucent anatomical figure from the waist down WALKING DOWN A SHORT FLIGHT OF STAIRS — "
+    "four or five simple dark translucent steps descending across the frame, faintly edge-lit so each step reads clearly. The figure is "
+    "caught mid-stride going down: the trailing foot on the upper step, the leading foot just landing flat on the step below, that knee "
+    "bent to catch the body's weight; both legs are dark translucent silhouettes with only the patellar tendon legible inside the leading "
+    "knee, glowing where the landing loads it. " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from a high three-quarter angle, a figure from the waist down walking down a short flight of steps, both legs in frame, "
+         "the leading knee in the middle of the frame", stack="ANAT-C", slots={"[STACK]": "the surrounding soft tissue"})
+    .replace("A stylised anatomical model of a single knee", "A stylised anatomical model of a figure from the waist down")
+    .replace("no second limb, ", "").replace("no people, ", "")
+    .replace(", the limb falling away out of frame at both ends", ", the feet on the steps"))
 
 # B05 — cartilage thins. ANAT-B ghost limb, the joint cut away, target = the cartilage. No glow — a condition beat.
 B["B05"] = (NB2, [], anat(
@@ -341,13 +346,18 @@ B["B05"] = (NB2, [], anat(
          "is visible", stack="ANAT-B",
     slots={"[TARGET]": "the cartilage lining the joint surfaces"}).replace("the patellar tendon crisp", "the cartilage crisp"))
 
-# B06 — pip (host cut-out bottom-left): the thinner joint, load still arriving at the same spot. Knee upper right.
+# B06 v2 — user Fix 'ANATOMY "MORE DETAILS"' — the detailed joint; pip (host cut-out bottom-left): knee upper right.
 B["B06"] = (NB2, [], anat(
-    "Seen from a low three-quarter angle: the knee under load, the cartilage between the bones visibly thin, the load still arriving at "
-    "the same spot below the kneecap. THE KNEE SITS IN THE UPPER RIGHT OF THE FRAME; the lower-left third of the frame is calm near-black "
-    "field with nothing in it (a person will be placed there later). " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    "Seen from a low three-quarter angle, in rich anatomical detail: the thigh muscles with fine directional fibre grain, the quadriceps "
+    "tendon sweeping over the kneecap, the kneecap with its textured bony surface, the patellar tendon as a banded, fibrous ribbon, the "
+    "infrapatellar fat pad behind it, the two crescent menisci and the collateral ligaments at the sides of the joint, the cruciate "
+    "ligaments crossing deep inside, the bone ends with fine porous texture — and the cartilage between the bones visibly THIN and worn, a "
+    "narrow pale line where it should be thick. The load is still arriving at the same spot below the kneecap. THE KNEE SITS IN THE UPPER "
+    "RIGHT OF THE FRAME; the lower-left third of the frame is calm near-black field with nothing in it (a person will be placed there "
+    "later). " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
     view="viewed from a low three-quarter angle, foreshortened, the knee joint in the upper right of the frame, the lower-left third "
-         "empty field"))
+         "empty field").replace("no individual muscle fibres, ", "").replace("never fine striation and never individual fibres", "fine striation readable")
+    )
 
 # B07 — "That is why it feels like it arrived overnight." Maureen at the top of her stairs, looks down and stops. Face in frame.
 B["B07"] = (NB2, ["R1", "P1"], photo([
