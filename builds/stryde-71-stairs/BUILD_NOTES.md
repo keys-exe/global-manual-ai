@@ -132,6 +132,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   from the generated Hook A clip. Also dropped "no American vowel colouring" from the default voice negative for these prompts — it
   contradicts the daughter's Georgia accent. HK-A-SD / HK-B-SD cards updated.
 
+- 2026-09-29 ~10:35 UTC: user "the mall theres no escalator beside the stairs in malls" → P8-MALL plate rewritten with the staircase
+  standing on its own (no escalator in view) and regenerated at 16:9 (gpt_image_2_5 high 2k, job e4d9c771) → v2 To check; v1 moved to
+  the Old board. Hook B Seedance prompt: escalator removed from the place and the shot, "no escalator" added to its negative.
+
 ## Where it stands
 - **Voice stage done** (2026-09-29): VO T2 locked (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`), TH-01…16 (Avatar V render of T2) confirmed.
 - **Step 6 — hooks (Seedance, V7.68 ingredients):** waiting on the user's Confirm of the 4 outfit info cards. Then: Seedance Hook A on Kie

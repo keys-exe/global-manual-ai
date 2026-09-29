@@ -16,7 +16,7 @@ def MAN(k, aud2):
     # aud2: Hook B only — the daughter's line cut from the Hook A clip
     place = ("@image3 is the place: her house's upstairs landing and straight open staircase, the photo wall of black-and-white and sepia family portraits, white balusters under a dark oak handrail, the worn beige runner and the front door with glass sidelights at the bottom, exactly as shown; @image4 is the same house's hall and the foot of those stairs, its finishes exactly as shown. "
              if k == "A" else
-             "@image3 is the place: the two-level suburban mall's wide open terrazzo staircase with brushed-steel handrails and glass balustrade panels, the escalator right beside it, the shopfronts and the atrium skylight, exactly as shown. ")
+             "@image3 is the place: the two-level suburban mall's wide open terrazzo staircase with brushed-steel handrails and glass balustrade panels standing on its own (no escalator), the shopfronts and the atrium skylight, exactly as shown. ")
     n = 5 if k == "A" else 4
     return ("INGREDIENTS. @image1 is THE MOTHER: face, age, hair and build only, with the wardrobe as written below and never from this sheet. "
       "@image2 is THE DAUGHTER: face, age, hair and build only, with the wardrobe as written below and never from this sheet. "
@@ -27,7 +27,7 @@ def MAN(k, aud2):
       "These references set who, where and what things ARE; the prose below sets the shot and what HAPPENS, and nothing in them is a shot to cut to.")
 TAIL = ("The phone is propped and still apart from the tiniest drift; it never moves, pans or follows anyone. One continuous shot, no cut. "
         "Mass and momentum in all movement: weight transfers first, hands arrive last, clothes and braids lag and settle; nothing melts, merges or changes shape; both women keep their faces, builds and clothes from the first frame to the last. ")
-NEG = ("Negative: " + S("NEG-DEFAULT-VOICE").replace(" no American vowel colouring,", "") + ", the mother never speaks, no second line, no narration, no music, no subtitles, no text on screen, no cut to another shot, "
+NEG = ("Negative: " + S("NEG-DEFAULT-VOICE").replace(" no American vowel colouring,", "") + ", the mother never speaks, no second line, no narration, no music, no subtitles, no text on screen, no cut to another shot, no escalator, "
        "no camera travelling with anyone, no running, no one falling or stumbling, no knee strap visible, no third person close to camera, no morphing, no warping, no face swap.")
 HOOKS = {
  "A": dict(dur=11, room="Small hallway and carpeted stairs, the photo wall and runner deadening it, short dull tail; her voice about a metre and a half below the phone, a little room in the signal, no boom.",
@@ -38,7 +38,7 @@ HOOKS = {
           "Three steps behind her the daughter, in her burgundy sweater, dark jeans and white trainers, keeps climbing, slower, gripping the rail and a little out of breath; she stops two steps from the top, one hand on the rail, "
           "looks up past the lens to where her mother went, and — in the last three seconds — says, surprised and out of breath: \"" + LINE + "\" Her voice: " + VOICE_C2)),
  "B": dict(dur=11, room="Big open mall atrium, hard terrazzo and glass, a long bright tail and a soft wash of distant shoppers; her voice about two metres from the phone, room in the signal, no boom.",
-   prose=("A phone propped at hip height on the concourse at the foot of the mall stairs, looking up the flight, 24mm, 9:16, the whole flight in frame with the escalator on the left and the skylight above; "
+   prose=("A phone propped at hip height on the concourse at the foot of the mall stairs, looking up the flight, 24mm, 9:16, the whole flight in frame with the skylight above; "
           "soft daylight from the atrium skylight, warm and clear, faces lit from the right of frame, pale terrazzo bouncing light up. "
           "Opening mid-descent: the daughter, in her light denim jacket, black top and black leggings, comes down the mall stairs carefully with two big shopping bags, one hand on the rail. "
           "Behind her the mother, in her mustard cardigan, cream blouse and navy wide-leg trousers, comes down briskly and quickly, facing forwards, one small bag in her hand, head up — she overtakes her daughter on the open side, "
