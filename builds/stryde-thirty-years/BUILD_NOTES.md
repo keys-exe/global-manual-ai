@@ -264,8 +264,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   edge. Video v3 (Kling 3.0 pro on Kie, 4s, 72 credits, task 0c3596a5…). Preflight: only the generation gate failed, which the
   user's go covers. The strap now holds its shape. For room, the BR-15b video v2 and image v1 files were marked deleted and removed.
 
-## Where it stands (2026-09-29 12:15)
-- BR-15b video v3 To check → then it goes into the rough cuts.
+  ~12:30 (user "FIX THOSE"): BR-15b video Fix "HE'S GIVING THE PRODUCT". v3 held the strap still, so nothing was given. The user
+  chose "He pushes it into her hand" for the 4th try. MOTION: his hand pushes the strap a few cm forward into her open fingers, they
+  close round it, and he keeps hold (no full hand-over, which warped it in v2). Video v4 (Kling 3.0 pro on Kie, 4s, 72 credits,
+  task 01064c46…). Preflight: only the generation gate failed, which the user's go covers. The strap holds its shape.
+
+## Where it stands (2026-09-29 12:30)
+- BR-15b video v4 To check → then it goes into the rough cuts.
 - BR-09a image v2 To check → then its video → re-render the rough cuts once more.
 - BR-08b, BR-08c, BR-09b videos To check. Rough cuts v2 sent (review copies).
 - Open: F4 · TH body check · where the finished videos go (board full).

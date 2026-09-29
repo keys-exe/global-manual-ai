@@ -441,6 +441,19 @@ V["BR-15b"] = ("MEDIUM over her shoulder as in the start frame, him across the b
     ("strap turns or flips", "no strap turning + his hand does not move"), ("fingers fuse with the strap", "HOLD-HC")])
 
 
+# BR-15b fourth try (user video Fix "HE'S GIVING THE PRODUCT" → chose "He pushes it into her hand", 2026-09-29): v3 held the strap
+# still, so it read as him showing it rather than giving it. MOTION: his hand moves the strap a few centimetres forward into her open
+# fingers and they close round it; he keeps hold (no full hand-over, which warped the strap in v2).
+VFIX3["BR-15b"] = ("HE'S GIVING THE PRODUCT → MOTION: v3 held the strap still, so nothing was given; now his hand pushes the strap a few "
+                   "centimetres forward into her open fingers and they close round it, he keeps hold, the strap never turns")
+V["BR-15b"] = ("MEDIUM over her shoulder as in the start frame, him across the bench holding the small strap out to her.", HANDHELD,
+   "In one move over about two seconds his hand pushes the strap a few centimetres forward into her open fingers and her fingers "
+   "close round it; he keeps hold. The strap moves only forward with his hand, same way up as in the start frame.", True,
+   "no strap turning, no strap flipping, no strap dropping, no second strap, no face changing", "in_place",
+   [("strap warps as it moves (the v2 fault)", "a few centimetres only, he keeps hold + HOLD_PC"),
+    ("strap turns or flips", "same way up + no strap turning"), ("fingers fuse with the strap", "HOLD-HC")])
+
+
 def build(beat):
     framing, rig, motion, prod, extra, sm, risks = V[beat]
     r = ROWS[beat]
@@ -471,9 +484,9 @@ if __name__ == "__main__":
         if beat in VFIX:
             call["fix_note"] = VFIX[beat]
         if beat in VFIX3:
-            gen = {"BR-12": 4}.get(beat, 3)
+            gen = {"BR-12": 4, "BR-15b": 4}.get(beat, 3)
             go = {"BR-02": "'Both'", "BR-12": "'Both'", "BR-11": "'Keep the Stryde front'",
-                  "BR-15b": "'Same image, video only'"}.get(beat, "'All three'")
+                  "BR-15b": "'He pushes it into her hand'"}.get(beat, "'All three'")
             day = "2026-09-29" if beat == "BR-15b" else "2026-09-28"
             call.update(generation=gen, fix_note=VFIX3[beat], user_go=f"{day}: generation {gen} approved by the user ({go})")
         (HERE / f"video/{beat}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
