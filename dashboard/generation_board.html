@@ -663,7 +663,12 @@ button.ing .im{cursor:zoom-in}
 .ing .il{font-size:11px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ing .ir{font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ing .dot{position:absolute;right:5px;top:5px;width:8px;height:8px;border-radius:50%;background:var(--st,#8a92a1);box-shadow:0 0 0 1.5px var(--surface);z-index:1}
+.ing .in{position:absolute;left:4px;top:4px;z-index:1;min-width:16px;height:16px;padding:0 4px;border-radius:5px;background:rgba(0,0,0,.62);color:#fff;font-family:var(--mono);font-size:9.5px;display:grid;place-items:center}
 .ing-row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin}
+.v-panel .ing-row .ing{width:56px}
+.v-panel .ing .im{border-color:#2c323e;background:#161a22}
+.v-panel .ing .il{color:#c9ced8}
+.a-refs{display:flex;flex-direction:column;gap:4px;margin:6px 0}
 .ing-row .ing{flex:none;width:44px}
 .ing-row .ing .il{font-size:9.5px;font-weight:500}
 .v-ing{width:100%;height:100%;overflow:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));align-content:start;gap:12px;padding:4px}
@@ -845,7 +850,7 @@ function beatSort(a,b){return String(a.beat||"").localeCompare(String(b.beat||""
 // talking heads; a narration build shows Talking heads only when it uses them.
 function isFilm(b){return !!b&&(b.kind==="film"||(b.kind!=="narration"&&/mode\s*[45]\b|film|drama/i.test(`${b.mode||""} ${b.format||""}`)))}
 function needsTalking(b,gens){if(!b||isFilm(b)) return false; if(b.talkingHeads===true) return true; if(b.talkingHeads===false) return false; return gens.some(g=>g.stage==="talking")}
-function stagesFor(b,gens){return STAGES.filter(s=>!(s.narration&&isFilm(b))&&!(s.key==="talking"&&!needsTalking(b,gens)))}
+function stagesFor(b,gens){return STAGES.filter(s=>!(s.narration&&isFilm(b))&&!(s.key==="talking"&&!needsTalking(b,gens))).map(s=>s.key==="broll"&&isFilm(b)?{...s,name:"Scenes",sub:"Each scene: its images, then its clips"}:s)}
 // Voice: done when every character who needs a voice has one (the build's voices list).
 function voiceList(b){return Array.isArray(b&&b.voices)?b.voices:[]}
 function voicesDone(b){const v=voiceList(b).filter(x=>x.needed!==false);return v.length>0&&v.every(x=>["cloned","locked"].includes(x.status))}
@@ -920,10 +925,13 @@ function apBind(root){
     tr.addEventListener("keydown",e=>{if(!a.duration) return;if(e.key==="ArrowRight"){a.currentTime=Math.min(a.duration,a.currentTime+1);e.preventDefault()}if(e.key==="ArrowLeft"){a.currentTime=Math.max(0,a.currentTime-1);e.preventDefault()}});
   });
 }
+// audio made in Seedance (a voice master, a VO take) lists the reference images its clip was made from
+function audioRefs(g){const l=ingOf(g);return l.length?`<div class="a-refs"><span class="lbl">Made in Seedance from</span><div class="ing-row">${l.map(x=>ingTile(g,x,"row","file")).join("")}</div></div>`:""}
 function audioRow(g){
   const st=g.status||"planned", ok=st==="use";
   return `<div class="arow ${ok?"ok":""}">
     <div class="a-head"><span class="a-ic" aria-hidden="true">${ICONS.audio}</span><span class="a-part">${esc(g.beat||"")}</span><span class="a-line">${esc(g.title||"")}</span></div>
+    ${audioRefs(g)}
     <div class="a-ctl a-grid">${audioEl(g)}
       <span class="a-slot">${ok?`<span class="pill s-use">Confirmed</span>`:!state.readOnly&&g.videoAsset?`<button class="btn small ok" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="file">${I.ok} Confirm</button>`:`<span class="pill s-${st}">${esc(STATUS_LABEL[st]||st)}</span>`}</span>
       <span class="a-slot"><button class="btn small" type="button" data-dl="${esc(g.id)}" data-step="file" ${g.videoAsset?"":"disabled"} aria-label="Download ${esc(g.beat||"")}">${I.dl}</button></span></div></div>`;
@@ -940,6 +948,7 @@ function voRow(part,gens){
     <div class="vo-l"><span class="a-part">${esc(part)}</span>${p.use?`<span class="pill s-use">Locked · version ${takeNo(p.use)}</span>`:`<span class="pill s-review">Choose a version</span>`}<span class="note">${takes.length} version${takes.length===1?"":"s"}</span></div>
     <div class="vo-r">
       ${line?`<div class="a-line">“${esc(line)}”</div>`:""}
+      ${sel?audioRefs(sel):""}
       <div class="a-ctl">
         <div class="vsel">
           <button type="button" class="vsel-btn" data-vsopen="${esc(part)}" aria-haspopup="listbox" aria-expanded="false">
@@ -1263,26 +1272,29 @@ function flow(g){
 // ingredients: [{label, role, ref}] — ref = the generation doc (id or beat) whose image is used; or {label, role, asset, parts, type} for a file with no card of its own.
 // a Seedance card that already has its own start image (older builds) keeps the image → video flow
 function isSeed(g){return Array.isArray(g.ingredients)&&g.ingredients.length>0||/seedance/i.test(String(g.model||""))&&!g.imageAsset&&!g.imagePrompt}
-function ingOf(g){
-  return (Array.isArray(g.ingredients)?g.ingredients:[]).map((x,i)=>{
+function ingOf(g,field){
+  return (Array.isArray(g[field||"ingredients"])?g[field||"ingredients"]:[]).map((x,i)=>{
     const r=x.ref?state.gens.find(y=>y.id===x.ref||(y.build===g.build&&y.beat===x.ref)):null;
     return r?{i,label:x.label||r.title||r.beat,role:x.role||r.beat||"",ref:r,asset:r.imageAsset,parts:r.imageParts,type:r.imageType,st:pending(r,"image")?"gen":stepState(r,"image")}
       :{i,label:x.label||"Ingredient "+(i+1),role:x.role||"",ref:null,asset:x.asset,parts:x.parts,type:x.type,st:x.asset?"ok":"todo"};
   });
 }
+// the reference images a step was made from: an image's imageRefs, a Seedance video's (or audio's) ingredients
+function refsOf(g,k){return ingOf(g,k==="image"?"imageRefs":"ingredients")}
 function ingReady(g){const l=ingOf(g);return l.length>0&&l.every(x=>x.st==="ok")}
 // a video unlocks when its image is confirmed — a Seedance video when every ingredient is
 function videoLocked(g){return isSeed(g)?!ingReady(g):stepState(g,"image")!=="ok"}
 // the picture that stands for a beat: its image, or a Seedance beat's first ingredient
 function coverOf(g){if(g.imageAsset) return {asset:g.imageAsset,parts:g.imageParts,type:g.imageType};const x=isSeed(g)&&ingOf(g).find(y=>y.asset);return x?{asset:x.asset,parts:x.parts,type:x.type}:null}
 function ingColor(st){return st==="ok"?"var(--use)":st==="bad"||st==="gen"?"var(--regen)":st==="review"?"var(--review)":"#8a92a1"}
-function ingTile(g,x,where){
+function ingTile(g,x,where,k){
+  const inV=where==="viewer"||where==="vrow", compact=where==="row"||where==="vrow";
   const cls=x.st==="ok"?"ok":x.st==="bad"||x.st==="gen"?"bad":x.st==="review"?"now":"";
   const im=x.ref&&pending(x.ref,"image")?genPanel(x.ref,"image",true):x.asset?`<img ${srcFrom(x.asset,x.parts,x.type)} alt="${esc(x.label)}" loading="lazy">`:`<span>${x.ref?"No image yet":"Missing"}</span>`;
-  const act=x.ref?`data-viewm="${esc(x.ref.id)}" data-step="image"`:x.asset?`data-ving="${where==="viewer"?x.i:esc(g.id)+":"+x.i}"`:"";
+  const act=x.ref?`data-viewm="${esc(x.ref.id)}" data-step="image"`:x.asset?`data-ving="${inV?x.i:esc(g.id)+":"+x.i+":"+(k||"video")}"`:"";
   const tag=act?"button":"div";
   const tip=x.st==="ok"?"Confirmed":x.st==="review"?"Check it":x.st==="bad"?"Fixing":x.st==="gen"?"Generating":"Waiting";
-  return `<${tag} ${tag==="button"?'type="button" ':""}class="ing ${cls}" ${act} title="${esc(x.label+(x.role?" · "+x.role:"")+" · "+tip)}"><span class="dot" style="--st:${ingColor(x.st)}"></span><span class="im">${im}</span><span class="il">${esc(x.label)}</span>${where==="row"?"":`<span class="ir">${esc(x.role||tip)}</span>`}</${tag}>`;
+  return `<${tag} ${tag==="button"?'type="button" ':""}class="ing ${cls}" ${act} title="${esc(x.label+(x.role?" · "+x.role:"")+" · "+tip)}"><span class="dot" style="--st:${ingColor(x.st)}"></span><span class="in">${x.i+1}</span><span class="im">${im}</span><span class="il">${esc(x.label)}</span>${compact?"":`<span class="ir">${esc(x.role||tip)}</span>`}</${tag}>`;
 }
 // A step being generated or regenerated shows the generating panel, never its old render (Current and Final boards).
 function pending(g,k){return BOARD_ROLE!=="old"&&["bad","gen"].includes(stepState(g,k))}
@@ -1309,7 +1321,10 @@ function needsYouCount(gens){return gens.filter(g=>g.stage!=="vo"&&stepNeedsYou(
 
 // Manual run is grouped by act: setup stages, each hook, each act, then the edit.
 function actNum(v){const m=String(v||"").match(/\d+/);return m?Number(m[0]):null}
+// a film shot (or any shot given a scene) groups by scene: Scene 1's images, then its clips, then Scene 2…
+function sceneNum(g){if(g.scene!=null&&g.scene!=="") return actNum(g.scene);return /scene/i.test(String(g.act||""))?actNum(g.act):null}
 function groupOf(g){
+  if(["hooks","broll","talking"].includes(g.stage)){const n=sceneNum(g);if(n) return {key:"scene-"+n,label:"Scene "+n,kicker:"Scene",order:400+n}}
   if(g.stage==="hooks"){const n=actNum(g.act)||actNum(g.beat)||0;return {key:"hook-"+n,label:n?"Hook "+n:"Hook",kicker:"Hook",order:300+n}}
   if(g.stage==="broll"){
     const n=actNum(g.act);
@@ -1370,7 +1385,7 @@ function stepBox(grp,k,all){
   const fix=items.filter(g=>stepState(g,k)==="bad").length;
   const check=items.filter(g=>stepState(g,k)==="review"&&!(k==="video"&&videoLocked(g))).length;
   const files=items.filter(g=>g[d.asset]).length;
-  const plural=k==="image"?"Images":k==="video"?"Videos":"Files";
+  const plural=k==="image"?"Images":k==="video"?(grp.kicker==="Scene"?"Clips":"Videos"):"Files";
   const sd=k==="video"?items.filter(isSeed).length:0;
   const note=k==="video"?(sd===items.length?"Each Seedance video unlocks when all its ingredients are confirmed.":sd?"Each video unlocks when its image is confirmed — a Seedance video when all its ingredients are.":"Each video unlocks when its image is confirmed."):k==="image"&&items.some(g=>flow(g).includes("video"))?"Confirm an image to unlock its video.":"";
   return `<div class="box">
@@ -1399,7 +1414,7 @@ function ingBox(grp,all){
     const chip=ready?`<span class="pill s-use">All confirmed</span>`:l.length?`<span class="pill s-review">${done} of ${l.length} confirmed</span>`:`<span class="pill s-planned">None listed</span>`;
     return `<article class="mc ${ready?"ok":l.some(x=>x.st==="review")?"now":""}" id="mc-${esc(g.id)}-ingredients">
       <div class="mc-head"><div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}</span></div><div class="kv end"><span class="lbl">Ingredients</span>${chip}</div></div>
-      ${l.length?`<div class="ing-grid">${l.map(x=>ingTile(g,x,"box")).join("")}</div>`:`<div class="media"><span>Ingredients not listed yet</span></div>`}
+      ${l.length?`<div class="ing-grid">${l.map(x=>ingTile(g,x,"box","video")).join("")}</div>`:`<div class="media"><span>Ingredients not listed yet</span></div>`}
       <div class="kv"><span class="lbl">Shot</span><span class="mc-t">${esc(g.title||"—")}</span></div>
       ${g.line?`<div class="kv"><span class="lbl">Script line</span><span class="mc-l">“${esc(g.line)}”</span></div>`:""}
       <p class="note" style="margin:0">Confirm or fix each ingredient on its own card — the video unlocks when all are confirmed.</p></article>`};
@@ -1422,7 +1437,7 @@ function when(ms){if(!ms) return "—";const d=new Date(ms);return isNaN(d)?"—
 
 function mediaCard(g,k){
   const d=STEP[k], s=stepState(g,k), ro=state.readOnly||!state.assets;
-  const locked=BOARD_ROLE!=="old"&&k==="video"&&videoLocked(g), seed=k==="video"&&isSeed(g);
+  const locked=BOARD_ROLE!=="old"&&k==="video"&&videoLocked(g), seed=k==="video"&&isSeed(g), refs=refsOf(g,k);
   const asset=g[d.asset], type=g[d.type]||"";
   const prompt=g[d.prompt]||"", model=g[d.model]||d.defModel;
   const busy=state.busy[g.id+":"+k];
@@ -1451,7 +1466,8 @@ function mediaCard(g,k){
       <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}${versionsOf(g,k).length>1?`<span class="vbadge" title="${versionsOf(g,k).length} versions">v${currentV(g,k)}</span>`:""}</span></div>
       <div class="kv end"><span class="lbl">Status</span>${chip}</div></div>
     <div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}"`} ${asset?`data-viewm="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="View ${d.label.toLowerCase()} for ${esc(g.beat)}"`:""}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>
-    ${seed?`<div class="kv"><span class="lbl">Ingredients · ${ingOf(g).filter(x=>x.st==="ok").length}/${ingOf(g).length} confirmed</span><div class="ing-row">${ingOf(g).map(x=>ingTile(g,x,"row")).join("")||`<span class="mc-l">None listed yet</span>`}</div></div>`:""}
+    ${seed?`<div class="kv"><span class="lbl">Ingredients · ${refs.filter(x=>x.st==="ok").length}/${refs.length} confirmed</span><div class="ing-row">${refs.map(x=>ingTile(g,x,"row",k)).join("")||`<span class="mc-l">None listed yet</span>`}</div></div>`:
+      refs.length?`<div class="kv"><span class="lbl">Reference images used · ${refs.length}</span><div class="ing-row">${refs.map(x=>ingTile(g,x,"row",k)).join("")}</div></div>`:""}
     <div class="kv"><span class="lbl">Shot</span><span class="mc-t">${esc(g.title||"—")}</span></div>
     ${g.line?`<div class="kv"><span class="lbl">Script line</span><span class="mc-l">“${esc(g.line)}”</span></div>`:""}
     <dl class="specs">${specs.map(([a,b,c])=>`<div${c?` class="${c}"`:""}><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
@@ -1679,9 +1695,9 @@ function renderViewer(){
   const src=!shown?"":isVid&&!type.startsWith("audio/")?`data-parts="${esc(vids.join(","))}" data-ptype="${esc(shown.type||"")}"`:srcFrom(shown.asset,shown.parts,shown.type);
   const locked=k==="video"&&videoLocked(g), seed=k==="video"&&isSeed(g);
   // Seedance: the Ingredients tab shows every reference image the video is made from
-  const ings=seed?ingOf(g):[], ingV=seed&&v.ing!=null, one=ingV&&v.ing!=="all"?ings[Number(v.ing)]:null;
+  const ings=refsOf(g,k), ingV=ings.length>0&&v.ing!=null, one=ingV&&v.ing!=="all"?ings[Number(v.ing)]:null;
   const isAud=type.startsWith("audio/");
-  const media=ingV?(one&&one.asset?`<div class="v-ing1"><img ${srcFrom(one.asset,one.parts,one.type)} alt="${esc(one.label)}"><button class="btn small" type="button" data-ving="all">${I.l} All ingredients · ${esc(one.label)}</button></div>`:
+  const media=ingV?(one&&one.asset?`<div class="v-ing1"><img ${srcFrom(one.asset,one.parts,one.type)} alt="${esc(one.label)}"><button class="btn small" type="button" ${seed?`data-ving="all"`:`data-vstep="${k}"`}>${I.l} ${seed?"All ingredients":"Back to the "+d.label.toLowerCase()} · ${esc(one.label)}</button></div>`:
       ings.length?`<div class="v-ing">${ings.map(x=>ingTile(g,x,"viewer")).join("")}</div>`:`<div class="v-empty">No ingredients listed yet</div>`):
     pending(g,k)&&!older?genPanel(g,k):asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
     moved?`<div class="v-empty"><div style="display:grid;gap:12px;justify-items:center">${I.box}<span>v${shown.v} is on the Old versions board, kept at full quality. Nothing was shrunk or deleted.</span>${archiveLink(shown)?`<a class="btn" href="${esc(archiveLink(shown))}" target="_blank" rel="noopener">Open in Old versions ↗</a>`:""}</div></div>`:
@@ -1727,6 +1743,7 @@ function renderViewer(){
   const panel=`<aside class="v-panel" data-shown="${!!v.details}" aria-label="Details">
       <div class="ps"><span class="lbl">Status</span><div>${chip}${older?` <span class="pill s-planned">Viewing v${shown.v}</span>`:""}</div></div>
       ${g.line?`<div class="ps"><span class="lbl">Script line</span><div class="v-quote">“${esc(g.line)}”</div></div>`:""}
+      ${ings.length?`<div class="ps"><span class="lbl">${seed?"Ingredients":"Reference images used"} · ${ings.length}</span><div class="ing-row">${ings.map(x=>ingTile(g,x,"vrow",k)).join("")}</div></div>`:""}
       ${older?`<div class="v-oldbar">You're looking at v${shown.v}, not the current version.${shown.note?` Fix that made it: ${esc(shown.note)}`:""}</div>`:""}
       ${g[d.fault]&&(s==="bad"||s==="gen")&&!older?`<div class="v-fault"><span class="lbl" style="color:#f07166">${s==="gen"?"Fixing now":"To fix"}</span><div>${esc(g[d.fault])}</div></div>`:""}
       <dl class="v-dl">${rows.map(([a,b,c])=>`<div${c?` class="${c}"`:""}><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
@@ -2115,7 +2132,7 @@ document.addEventListener("click",e=>{
   if(ds.pact){state.pact=ds.pact;filterPlan(t.closest(".p-sec")||document,"act",ds.pact);return}
   if(ds.psubj){state.psubj=ds.psubj;filterPlan(t.closest(".p-sec")||document,"subj",ds.psubj);return}
   if(ds.pmode){const [k,m]=ds.pmode.split(":");state.pmode[k]=m;render();return}
-  if(ds.ving!==undefined){const [gid,n]=ds.ving.includes(":")?ds.ving.split(":"):[null,ds.ving];if(gid){openViewer(gid,"video");state.viewer.ing=n}else state.viewer.ing=n;state.viewer.menu=false;state.viewer.fix=false;renderViewer();return}
+  if(ds.ving!==undefined){const [gid,n,sk]=ds.ving.includes(":")?ds.ving.split(":"):[null,ds.ving];if(gid){openViewer(gid,sk||"video");state.viewer.ing=n}else state.viewer.ing=n;state.viewer.menu=false;state.viewer.fix=false;renderViewer();return}
   if(ds.vgo){state.viewer.id=ds.vgo;state.viewer.ver=null;state.viewer.menu=false;state.viewer.fix=false;renderViewer();return}
   if(ds.vdet){state.viewer.details=!state.viewer.details;renderViewer();return}
   if(ds.vfix){state.viewer.fix=ds.vfix==="1";renderViewer();return}
