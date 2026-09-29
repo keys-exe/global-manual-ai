@@ -1,0 +1,44 @@
+{
+ "beat": "A4-B1b",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"It never crosses the joint.\": front-on, close on the man's right knee as he sits and bends it: the strap sits centred on the tendon right under the kneecap, the kneecap's lower edge in its notch, the bend happening above the strap. The strap is exactly the product in the attached front photo — the strap is small — a rigid black shell about 12 × 5 cm, no longer than a palm, on a black knit band — worn as in the attached worn frame, his shorts and leg as there. The hall from the attached plate soft behind. Hands off the knee. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "It never crosses the joint.",
+ "face": false,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "STRYDE front photo",
+   "kind": "product",
+   "id": "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5"
+  },
+  {
+   "label": "A4-B1 confirmed (C2 wearing the strap)",
+   "kind": "frame",
+   "id": "6c8f404b-135e-4b02-b48a-3ef1f2cea15a"
+  },
+  {
+   "label": "PLATE-C2-HALL",
+   "kind": "location",
+   "id": "1e46a65f-f165-4694-b5b6-1f92ea2688b3"
+  }
+ ],
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP07",
+  "HT06"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "sitting, he bends his right knee to a right angle and back; the strap stays below the kneecap, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render — this board has no A/B view"
+}

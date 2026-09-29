@@ -1,0 +1,48 @@
+{
+ "beat": "A5-P1",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Two for one, so you do both knees, which is the point.\": on the oak workbench the fitter's hands lift the lid off the small matte-black Stryde box, showing two straps side by side in their wells. Each strap exactly the product in the attached front photo — the strap is small — a rigid black shell about 12 × 5 cm, no longer than a palm, on a black knit band; the box only a little bigger than the two straps, like the attached box frame. His hands and navy fleece cuffs as in the attached talking-head frame, clear of the straps. Overhead, close, the straps sharp; the workbench from the attached workshop plate. Exactly two straps. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "Two for one, so you do both knees, which is the point.",
+ "face": false,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "STRYDE front photo",
+   "kind": "product",
+   "id": "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5"
+  },
+  {
+   "label": "A5-P1 v1 (the Stryde box, two straps)",
+   "kind": "frame",
+   "id": "b45f9d2e-6b61-46d2-a59d-9db19e83232e"
+  },
+  {
+   "label": "C-TH-FRAME (his workwear, his hands)",
+   "kind": "frame",
+   "id": "af785dc9-5a0d-4e5e-8952-752be522bf08"
+  },
+  {
+   "label": "PLATE-WORK",
+   "kind": "location",
+   "id": "ba654d79-751c-4833-8780-a58cb4ef6e80"
+  }
+ ],
+ "taste": [
+  "FP09",
+  "FP02",
+  "HT06",
+  "HT07"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "his hands lift the lid off the small box, revealing the two straps side by side, one slow lift, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render — this board has no A/B view"
+}
