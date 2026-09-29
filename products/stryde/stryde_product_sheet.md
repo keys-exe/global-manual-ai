@@ -1,6 +1,6 @@
 # Product Sheet — Stryde Precision Strap
 
-**V7.49.36.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
+**V7.49.37.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
 
 The geometry ratios were measured off the five V7.48 canonical renders (63, 64, 65, 66, 68) with a roll correction applied. **Since V7.49.11 the supplied product photos (`stryde_refs/`) are the product** (layer 1) and outrank those renders wherever they disagree. Where a figure is external it is marked Tier 3 and is not advertiser-held.
 
@@ -82,8 +82,8 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 | Worn — straight, bent, rear | + `worn_front.jpg`, `worn_bent.jpg` or `worn_rear.jpg` |
 | Putting it on | + `worn_front.jpg` (the end position) |
 | Box — closed / open | + `package_closed.jpg` or `package_open.jpg` (locked V7.49.27) |
-| Inside of the shell to the lens (`pad_back`, `back_view`) | + `inner_face.jpg` (V7.49.33 — your photo of the real strap; its inside outranks `back.webp`'s plain black; from V7.49.34 also the size reference) |
-| Held | + `inner_face.jpg` — **the size reference** (V7.49.34); `product_held.jpg` is an optional example of one grip, **not locked** — pick a grip from `HELD_GRIPS` |
+| Inside of the shell to the lens (`pad_back`, `back_view`) | + `inner_face.jpg` (V7.49.33 — your photo of the real strap; its inside outranks `back.webp`'s plain black) |
+| Held | the two originals only; `product_held.jpg` is an optional example of one grip, **not locked** — pick a grip from `HELD_GRIPS` |
 
 Never more than the two originals plus one. **Retired:** `product_front.jpg`, `product_back.jpg`, `product_profile.jpg`, `three_quarter_a.jpg`, `three_quarter_b.jpg`, and the never-stored composite `STRYDE_reference_v7_49_11.png`. Image plus names is the pair; either alone leaks.
 
@@ -128,7 +128,7 @@ British, roughly 55–80. Cast to the buyer, balanced across men and women, with
 | Claim | Tier | Status |
 |---|---|---|
 | **One size fits all** | Advertiser (user-stated V7.49.15) | Rendered as `FIT_SNUG` on worn frames and covered per §12 on fit lines. No size chart, size label or S/M/L is ever shown. The V7.49.13 competitor sizing figures (25–44 cm, 15–46 cm) are retired — this product has no sizes |
-| Rendering size: shell ~12 cm × ~5 cm, band ~2.5 cm (`SIZE_LOCK`) | Derived | Proportions measured on `front.webp` (V7.49.21); absolute size from Tier-3 anatomy. V7.49.34's 15 × 6 cm reading off the hand photo withdrawn V7.49.35 (user: too big). Not advertiser-held — replace with supplied dimensions. Never stated on screen. (The V7.49.13 "band about 2 inches" category figure is retired.) |
+| Rendering size: shell ~12 cm × ~5 cm, band ~2.5 cm (`SIZE_LOCK`) | Derived | Proportions measured on `front.webp` (V7.49.21); absolute size from Tier-3 anatomy. Not advertiser-held — replace with supplied dimensions. Never stated on screen. (The V7.49.13 "band about 2 inches" category figure is retired.) |
 | Adult patella about 4–5 cm wide; tendon 4–5 cm from inferior pole to tibial tuberosity | 3 | Anatomical anchor, used for scale reasoning only, never as a claim |
 | Clinical placement "just below the kneecap"; one manufacturer specifies about 2 inches below | 3 | Third-party guidance. Compatible with the contact phrasing — the top edge touches the pole while the body covers the upper tendon |
 | Every step puts **17× bodyweight** through the spot below the kneecap | **User-confirmed V7.49.29** | Advertiser-held. The number is a post overlay, never generated (§17) |
@@ -182,19 +182,15 @@ The global Standards are product-agnostic from V7.49.4. Everything below used to
 
 ---
 
-## 13. Size — always the same *(V7.49.21 — user ruling; V7.49.34 resize withdrawn V7.49.35)*
+## 13. Size — always the same *(V7.49.21 — user ruling)*
 
 **One unit, one size, every frame.** Proportions measured straight-on on `front.webp`: the shell is **about 2.5× as wide as it is tall** (2.50; `product_front.jpg` 2.32), the band is **about half the shell's height**, the notch rises 0.18 of the width, the peaks span 0.60 of it. Rendering size: **shell ~12 cm across × ~5 cm tall, band ~2.5 cm** — derived, not advertiser-held.
-
-**The size reference is `stryde_refs/inner_face.jpg`** (V7.49.34, user: "use the image that will be our reference for the size"). The size in a hand is exactly what that photo shows — attach it and ask for the same size against the hand; never translate it into centimetres or thumb counts. **Withdrawn V7.49.35:** the V7.49.34 reading off it (15 × 6 cm, band 3 cm, seven thumbs) rendered the strap too big (user: "these are too big and does not look like the one I sent"). A ruler measurement of the real strap replaces the numbers above.
-
-**Worn size (V7.49.36):** the user's brand photos `brand_worn_walker.jpg` and `brand_worn_hiker.jpg` (cropped clear of its text) are the worn size reference (`SIZE_REF_WORN`): the shell spans the front of the knee and stands about half as tall as it is wide, shorter than the kneecap. The locked worn references already match them (measured 1.9–2.0 on the brand photos, 1.96 on `worn_front.jpg`), so they are not remade.
 
 | Context | Size anchor (string) |
 |---|---|
 | Product only | ~12 × 5 cm shell, band half the shell's height (`SIZE_OBJECT`) |
 | Worn | shell spans the leg's whole front width, about as tall as the kneecap; band about a quarter of the calf's width (`SIZE_WORN`) |
-| Held | exactly the size it is in `inner_face.jpg` against the hand (`SIZE_HELD`, attach `inner_face.jpg`) |
+| Held | shell five to six thumb-widths across, as tall as the thumb is long; band a little wider than the thumb (`SIZE_HELD`) |
 
 A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and fixed V7.49.22: `worn_rear.jpg` band 0.33 of the leg → re-rolled to ~0.27 (edit, everything else unchanged); `product_front.jpg` failed three `--check` shape gates → re-rolled level and now passes them all. The `--check` gates stay in their own units: its band reading under-reads the knit (0.351 on `front.webp` for a band that is about half the shell's height edge to edge, confirmed on `back.webp`).
 
@@ -221,7 +217,7 @@ A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and
 
 **Held is not locked** (user): there are many right ways to hold it. Choose from `HELD_GRIPS` per beat — bottom-edge pinch, open palm, fingertips behind, turned through the light, two-hand presentation — and vary them across a build. Fixed rules: on the pad or the shell's edge; never on the band, never on the slides, never across the wordmark; peaks and notch visible. I2V negatives: `NEG-HELD-P`.
 
-**The inner pad** (the user's "silicone pad") — **redrawn V7.49.33** from the user's photo and clip of the real strap (`stryde_refs/inner_face.jpg`, `inner_face_clip.mp4`): a **mid-grey soft-touch pad insert** filling the shell's two-peaked outline inside a **thin matte-black rim**; **one smooth, ungrooved raised ridge** running through it like the midrib of a leaf — a long rounded comma, narrow just below one peak, running diagonally down beneath the notch and swelling into a broad, low bulb above the bottom edge (V7.49.34; the V7.49.33 "crescent along the notch" was a misread); and **fine shallow grooves** fanning out from the ridge on both sides in curved rows, like leaf veins. No markings, no wordmark on this side (`INNER_PAD`, negatives `NEG_INNER_PAD`). The V7.49.23 reading — plain smooth matte black, off `back.webp` — is retired: `back.webp` stays the reference for the band, loops and slides, but not for the inside. Any shot with the inside to the lens attaches `inner_face.jpg` (`refs_for("pad_back")`). Prompts say "the pad", never "silicone". *Unverified:* which peak (seen from the front) the ridge's narrow end sits under — a flat-on photo of the inside would lock it.
+**The inner pad** (the user's "silicone pad") — **redrawn V7.49.33** from the user's photo and clip of the real strap (`stryde_refs/inner_face.jpg`, `inner_face_clip.mp4`): a **mid-grey soft-touch pad insert** filling the shell's two-peaked outline inside a **thin matte-black rim**; **one smooth, ungrooved raised ridge** running through it like the midrib of a leaf — a long rounded comma, narrow just below one peak, running diagonally down beneath the notch and swelling into a broad, low bulb above the bottom edge; and **fine shallow grooves** fanning out from the ridge on both sides in curved rows, like leaf veins. No markings, no wordmark on this side (`INNER_PAD`, negatives `NEG_INNER_PAD`). The V7.49.23 reading — plain smooth matte black, off `back.webp` — is retired: `back.webp` stays the reference for the band, loops and slides, but not for the inside. Any shot with the inside to the lens attaches `inner_face.jpg` (`refs_for("pad_back")`). Prompts say "the pad", never "silicone". *Unverified:* which peak (seen from the front) the ridge's narrow end sits under.
 
 **Standing negatives from observed failures** (`NEG-OBSERVED`, dated in `NEG_OBSERVED_LOG`): V-shaped notch · crown or horn peaks · deep U or slab shell · slide on the face or on the band · invented slide frame · sideways chevrons · band out of the shell's bottom edge · product tipped · watch-strap band · buckle-shaped keeper. I2V only.
 
