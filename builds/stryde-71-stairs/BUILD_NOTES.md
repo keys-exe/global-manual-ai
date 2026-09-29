@@ -126,6 +126,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   (INFO-WARD-A-N, -A-C2, -B-N, -B-C2) To check. HK-A-SD / HK-B-SD cards now carry `ingredients` (no image step); each video unlocks
   once all its ingredients are confirmed. Board template republished to all four 71 Stairs boards (Current, Old, Final, Plan).
 
+- 2026-09-29 ~10:30 UTC: user "the mom voice is just the voice over the one who will only talk is the daughter and the voice clip she will
+  use is the one from hook a after generating" → the mother's voice is no longer a Seedance ingredient (it is only the VO, laid over the
+  clip in the edit). Hook A: no voice ingredient (the daughter's voice is written in the prompt). Hook B: @audio1 = the daughter's line cut
+  from the generated Hook A clip. Also dropped "no American vowel colouring" from the default voice negative for these prompts — it
+  contradicts the daughter's Georgia accent. HK-A-SD / HK-B-SD cards updated.
+
 ## Where it stands
 - **Voice stage done** (2026-09-29): VO T2 locked (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`), TH-01…16 (Avatar V render of T2) confirmed.
 - **Step 6 — hooks (Seedance, V7.68 ingredients):** waiting on the user's Confirm of the 4 outfit info cards. Then: Seedance Hook A on Kie

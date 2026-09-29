@@ -1,6 +1,7 @@
-"""Seedance 2.5 hooks (user 2026-09-29): one continuous clip per hook; the VO plays over it in the edit and the daughter says
-"Mama, when did that happen?" on camera. @audio1 = her mother's voice (VO T2, locked); Hook B also gets @audio2 = the daughter's line
-cut from the Hook A clip (the first Seedance generation), so her voice matches across both hooks."""
+"""Seedance 2.5 hooks (user 2026-09-29): one continuous clip per hook; the mother's voice is only the VO,
+laid over the clip in the edit (never an ingredient, she never speaks on camera). Only the daughter talks: "Mama, when did that happen?".
+Hook A has no voice ingredient (her voice is written); Hook B gets @audio1 = the daughter's line cut from the generated Hook A clip,
+so her voice matches across both hooks (user 2026-09-29)."""
 import re, json, sys, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 T = (ROOT / "standards/AI_Prompt_Engineer_Global_Standards.md").read_text()
@@ -12,21 +13,21 @@ VOICE_C2 = ("A Black American woman in her mid-forties from the Atlanta suburbs,
             "Real, unperformed surprise, a little out of breath from the stairs, the question rising at the end, half a laugh of disbelief in the breath before it, never shouted.")
 # V7.68.0: ingredients are information, never frames — sheets, voice clips, the plate(s), info cards; the prose writes the shot.
 def MAN(k, aud2):
+    # aud2: Hook B only — the daughter's line cut from the Hook A clip
     place = ("@image3 is the place: her house's upstairs landing and straight open staircase, the photo wall of black-and-white and sepia family portraits, white balusters under a dark oak handrail, the worn beige runner and the front door with glass sidelights at the bottom, exactly as shown; @image4 is the same house's hall and the foot of those stairs, its finishes exactly as shown. "
              if k == "A" else
              "@image3 is the place: the two-level suburban mall's wide open terrazzo staircase with brushed-steel handrails and glass balustrade panels, the escalator right beside it, the shopfronts and the atrium skylight, exactly as shown. ")
     n = 5 if k == "A" else 4
     return ("INGREDIENTS. @image1 is THE MOTHER: face, age, hair and build only, with the wardrobe as written below and never from this sheet. "
       "@image2 is THE DAUGHTER: face, age, hair and build only, with the wardrobe as written below and never from this sheet. "
-      "@audio1 is THE MOTHER's voice, its timbre, pitch, accent and pace — she does not speak in this clip; it sets who she sounds like for any breath or sound she makes. "
-      + ("@audio2 is THE DAUGHTER's voice, its timbre, pitch, accent and pace, for the line THE DAUGHTER speaks; it sets who she sounds like, never how she feels in this shot. " if aud2 else "")
+      + ("@audio1 is THE DAUGHTER's voice, its timbre, pitch, accent and pace, for the line THE DAUGHTER speaks; it sets who she sounds like, never how she feels in this shot. " if aud2 else "")
       + place
       + f"@image{n} is an info card: THE MOTHER's outfit in this scene, exactly as shown and captioned; follow it exactly, and its caption never appears in the clip. "
       + f"@image{n+1} is an info card: THE DAUGHTER's outfit in this scene, exactly as shown and captioned; follow it exactly, and its caption never appears in the clip. "
       "These references set who, where and what things ARE; the prose below sets the shot and what HAPPENS, and nothing in them is a shot to cut to.")
 TAIL = ("The phone is propped and still apart from the tiniest drift; it never moves, pans or follows anyone. One continuous shot, no cut. "
         "Mass and momentum in all movement: weight transfers first, hands arrive last, clothes and braids lag and settle; nothing melts, merges or changes shape; both women keep their faces, builds and clothes from the first frame to the last. ")
-NEG = ("Negative: " + S("NEG-DEFAULT-VOICE") + ", the mother never speaks, no second line, no narration, no music, no subtitles, no text on screen, no cut to another shot, "
+NEG = ("Negative: " + S("NEG-DEFAULT-VOICE").replace(" no American vowel colouring,", "") + ", the mother never speaks, no second line, no narration, no music, no subtitles, no text on screen, no cut to another shot, "
        "no camera travelling with anyone, no running, no one falling or stumbling, no knee strap visible, no third person close to camera, no morphing, no warping, no face swap.")
 HOOKS = {
  "A": dict(dur=11, room="Small hallway and carpeted stairs, the photo wall and runner deadening it, short dull tail; her voice about a metre and a half below the phone, a little room in the signal, no boom.",
