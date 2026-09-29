@@ -195,4 +195,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   knee-height close-up, the tip on the front of the knee right under the centre of the kneecap (`refs/BR-04_point_ref2.png`, Higgsfield media
   `8227e906-5c92-428a-b483-c699d956d55f`). v9 edits that photo (framing + tip spot kept; her own right hand, rust jersey, camel corduroy skirt,
   mustard armchair). `acts/build_fix_r7.py`. v8 moved to Old.
+- **2026-09-29 ~19:05 UTC: user "all confirmed"** → all 32 body images confirmed. **Act 1 videos:** word times for TH-A1…A5
+  (`acts/plan/words.py` → `acts/plan/words.json`, faster-whisper medium.en), lengths `acts/plan/lengths.py` → `lengths.json` (each B-roll from its
+  own span's first word to the next B-roll's; Kling = ceil, 3–15 s). `acts/build_act1_videos.py` → §35 JSON (B-roll: RIG-R1C, HOLD-C,
+  PHYS-MOTION-C, INHERIT-CAP/ENV, PiP framing; MECH: RIG-RVF entry push, HOLD-C + HOLD-AC, NEG-CAM-RV + selected ANAT-NEG), preflight PASS ×8 →
+  Kie kling-3.0-omni (tasks in `acts/video/act1_tasks.txt`; 648 Kie credits) → board To check, generation 1 each: BR-01 4 s, MECH-01 3, BR-02 3,
+  MECH-03 10 (split in 2 parts), BR-04 5, BR-05a 5 (2 parts), BR-05b 3, MECH-05 3.
+  **Open for later acts:** A4 aligns poorly (ratio 0.74; BR-17b came out 11 s) — check the A4 act-map lines against the heard words before its
+  videos. A5 still has the BR-22a3 row ("From the Stryde site.") with no card.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

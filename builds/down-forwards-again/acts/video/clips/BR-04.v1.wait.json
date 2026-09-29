@@ -1,1 +1,11 @@
 {"taskId": "5a1171a1afbb29005a2ba50125920bee", "created": true}
+{
+ "taskId": "5a1171a1afbb29005a2ba50125920bee",
+ "state": "success",
+ "credits": 90.0,
+ "failMsg": null,
+ "urls": [
+  "https://tempfile.aiquickdraw.com/k/5a1171a1afbb29005a2ba50125920bee_1_1790709098_2846.mp4"
+ ],
+ "saved": "acts/video/clips/BR-04.v1.mp4"
+}
