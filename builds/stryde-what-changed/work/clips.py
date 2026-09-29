@@ -282,7 +282,42 @@ B["B01a"] = clip("B01a",
            {"risk": "the model rotates or warps", "prevented_by": "'the model itself does not move', locked-off camera, HOLD-C + NEG-WARP-C"},
            {"risk": "a second spot appears", "prevented_by": "'no second glowing spot'"}])
 
-START = {"B01a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_185450_3c452d7b-23e8-414a-bcad-4435a876272c.png",
+# B07-BRa image v1 (user CONFIRM GO): ANAT-B front-on, the cartilage cushion worn thin. "The cushion gets thinner." ≈ 1.4 s → 3 s.
+B["B07-BRa"] = clip("B07-BRa",
+    "A premium 3D anatomical model of a single knee seen straight from the front on a near-black field, a faint glass-like body shell, "
+    "ivory bones: the end of the thigh bone above, the top of the shin bone below, the kneecap in front, and between the bones a thin, "
+    "pearly, worn cartilage cushion.",
+    "The model stays still. Over the clip the pale cushion between the bones slowly wears a little thinner — its edges fray and it "
+    "shrinks in height — and the two bone ends settle a fraction closer together. One slow, steady change, no glow.",
+    "no bones moving apart, no model rotating, no glow, no emission, no cracking, no breaking, no second limb, no arrows, no text, "
+    "no labels, no product, no camera orbit, no zoom, no slow motion",
+    1.4, hi=5, anat=True,
+    risks=[{"risk": "the model rotates or the bones warp", "prevented_by": "'the model stays still', locked-off camera, HOLD-C + NEG-WARP-C, 'no model rotating'"},
+           {"risk": "a glow appears on a condition beat", "prevented_by": "'no glow, no emission' in motion and negatives"},
+           {"risk": "the cushion shatters instead of thinning", "prevented_by": "one slow steady change, 'no cracking, no breaking'"}])
+_load = S("ANAT-LOAD")
+for _k, _v in ANAT_SLOTS.items():
+    _load = _load.replace(_k, _v)
+B["B07-BRa"][0]["motion"] = B["B07-BRa"][0]["motion"].replace(" " + _load, "")  # a condition beat: no muscle layer, no load pulse
+
+# B07-BRb image v1 (user CONFIRM GO): Maureen, waist-down from the front, low at the foot of her stairs, laundry basket on her hip.
+# "The weight stays exactly the same." ≈ 1.8 s → 3 s.
+B["B07-BRb"] = clip("B07-BRb",
+    "A white British woman of sixty-nine seen from the front, low, cropped below her chin, coming DOWN her carpeted stairs towards the "
+    "lens: a dusty-pink cardigan over a navy-and-white striped top, a navy skirt ending above the knee, bare pale legs, white canvas "
+    "plimsolls; a full white laundry basket of towels on her hip at the left of the frame, her other hand on the oak handrail at the right.",
+    "Already mid-step on the first frame: her front foot comes down and lands flat on the tread nearest the lens, her knee bends under "
+    "her whole weight and the basket as it lands, and she settles onto it — one careful step down in about a second and a half, real time.",
+    "no face in frame, no falling, no stumbling, no dropping the basket, no towels falling, no second person, no knee strap, no walking "
+    "stick, no going up, no extra legs, no extra hands",
+    1.8, hi=6,
+    risks=[{"risk": "legs or feet warp on the tread", "prevented_by": "one step at a countable pace, start frame mid-step, HOLD-C + NEG-WARP-C"},
+           {"risk": "her face comes into frame", "prevented_by": "cropped below the chin, 'no face in frame', locked-off camera"},
+           {"risk": "the basket or towels fall", "prevented_by": "'no dropping the basket, no towels falling'"}])
+
+START = {"B07-BRa": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_220935_8b097287-2a0e-4aa7-8dde-2b2d9ea7f463.png",
+         "B07-BRb": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_220935_39e2cddd-d187-4527-85ab-16bd1b581a42.png",
+         "B01a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_185450_3c452d7b-23e8-414a-bcad-4435a876272c.png",
          "HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
          "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
          "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_173257_512cb5a0-c05b-4ab8-af5f-723322275d70.png",
