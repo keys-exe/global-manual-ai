@@ -296,6 +296,22 @@ B["B1-13b"] = (NBP, ["front", "back", "R4-FIONA", "P5-PROP-F", "worn_bent"], pho
     angle("B1-13b", "her"), focus("the whole figure", deep=True), light("HALL", "her"), colour("HALL", "she")],
     WORN_NEG + ", " + NEG_SUP + ", " + NEG_EFF))
 
+# ── pinned end frames (act map pin_end, §27G rule 5; E7 first-and-last-frame call) ─────────────────────────────────────
+# B1-01a-END — "yes — product placed": the confirmed v1 start frame a second later, the shell now seated on the model's tendon.
+END = {}
+END["B1-01a-END"] = (NBP, ["B1-01a_v1", "front", "back"], photo([
+    "This photo is THE SAME MOMENT AND THE SAME SCENE as the FIRST attached image, a second later — keep the consultant, his face, his "
+    "clothes, the desk, the ivory anatomical knee model on its stand, the room behind, the camera position and the light exactly as in it. "
+    "The strap is THE EXACT SAME OBJECT as the second attached product photo, the front. The only change: his hands have brought the strap "
+    "the last few centimetres in and the shell now rests seated on the model's patellar tendon, directly below the model's kneecap — the "
+    "notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face "
+    "bare above, the wordmark horizontal and facing the camera. His right hand holds it there by its two ends, fingertips on the pad behind, "
+    "one small press; the black band still hangs loose below, not yet fastened.",
+    RIGID + " " + P.WORDMARK_LOCK],
+    "no other change to the scene, no size change, no shell over the kneecap, no shell low on the shin, no shell on the thigh, no shell "
+    "turned side-on, no pad side showing, no band fastened round the model, no second strap, no strap on a person, no white coat, "
+    + BLOCK_NEG + ", " + P.NEG_WORDMARK + ", " + NEG_HANDS))
+
 if __name__ == "__main__":
     act = sys.argv[1] if len(sys.argv) > 1 else "Act 1"
     out = {}
@@ -308,5 +324,12 @@ if __name__ == "__main__":
         out[beat] = {"model": model, "refs": refs, "prompt": prompt, "act": r["act"], "line": r["phrase"], "chars": len(prompt)}
         print(beat.ljust(9), model.ljust(16), str(len(prompt)).rjust(5), ",".join(refs))
     want = {b for b, r in ROWS.items() if r["act"] == act}
-    assert set(out) == want, sorted(want ^ set(out))
+    assert {b for b in out if not b.endswith("-END")} == want, sorted(want ^ set(out))
+    for beat, (model, refs, prompt) in END.items():
+        if ROWS[beat[:-4]]["act"] != act:
+            continue
+        assert "[" not in prompt, beat
+        (HERE / f"{beat}.t2i.txt").write_text(prompt + "\n")
+        out[beat] = {"model": model, "refs": refs, "prompt": prompt, "act": act, "line": ROWS[beat[:-4]]["phrase"], "chars": len(prompt)}
+        print(beat.ljust(9), model.ljust(16), str(len(prompt)).rjust(5), ",".join(refs))
     (HERE / "broll.json").write_text(json.dumps(out, indent=1, ensure_ascii=False))

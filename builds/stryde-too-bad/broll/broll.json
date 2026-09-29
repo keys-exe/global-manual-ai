@@ -232,5 +232,17 @@
   "act": "Act 1",
   "line": "B1-13",
   "chars": 6257
+ },
+ "B1-01a-END": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "B1-01a_v1",
+   "front",
+   "back"
+  ],
+  "prompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic — exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nThis photo is THE SAME MOMENT AND THE SAME SCENE as the FIRST attached image, a second later — keep the consultant, his face, his clothes, the desk, the ivory anatomical knee model on its stand, the room behind, the camera position and the light exactly as in it. The strap is THE EXACT SAME OBJECT as the second attached product photo, the front. The only change: his hands have brought the strap the last few centimetres in and the shell now rests seated on the model's patellar tendon, directly below the model's kneecap — the notch cups the kneecap's lower border with no gap, the two peaks no higher than the base of the kneecap's sides, the kneecap's face bare above, the wordmark horizontal and facing the camera. His right hand holds it there by its two ends, fingertips on the pad behind, one small press; the black band still hangs loose below, not yet fastened.\n\nIt is a RIGID MOULDED shell with a hard edge, never fabric, never neoprene, never a padded pad: a hard, thin, curved plate shaped like a wide shallow W across its top, never a rectangle, never a box. The lowercase grey stryde wordmark is printed on the shell's broad lower body, centred beneath the notch, in bold rounded lettering, sharp and readable -- always there, in every frame; the shell is never blank.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no other change to the scene, no size change, no shell over the kneecap, no shell low on the shin, no shell on the thigh, no shell turned side-on, no pad side showing, no band fastened round the model, no second strap, no strap on a person, no white coat, no rectangular block, no flat straight top edge, no U-shaped slot notch, no square shell, no box shape, no shell without peaks, no blank shell, no missing wordmark, no wordmark fading, no wordmark smearing, no misspelled wordmark, no extra letters, no wordmark on the band, no wordmark on the back of the shell, no wrong finger count, no malformed hands, no hands merging into objects, no readable text, no logos other than the stryde wordmark, no AI face, no plastic skin, no extra fingers, no fused fingers, no polished render, no advertising image, no studio lighting, no vignette, no glowing skin, no light from nowhere, no shadows falling in two directions, no lens flare",
+  "act": "Act 1",
+  "line": "B1-01",
+  "chars": 3231
  }
 }
