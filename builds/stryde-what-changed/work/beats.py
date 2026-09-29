@@ -210,12 +210,25 @@ B["HK3-a"] = (NB2, ["R1", "P3"], photo([
     "no face in frame, no head, no torso above the waist, no product anywhere, no knee strap, no knee support, no walking stick, no dog, "
     "no second person, no house numbers, no readable signs, no number plates, no logos on the plimsolls, no wrong number of legs"))
 
-B["HK3-b"] = (NB2, [], anat(
-    "Seen from a high three-quarter angle, the whole leg from the hip to the foot standing on the ground and carrying the body's weight, "
-    "the thigh, the knee and the long shin all readable end to end, the knee in the middle of the frame and small — one long load path "
-    "from the hip down to the heel with a single small spot on it. " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
-    view="viewed from a high three-quarter angle, the whole leg from the hip to the foot filling the frame top to bottom, the knee "
-         "joint small in the middle of the frame").replace(", the limb falling away out of frame at both ends", ", the foot resting on a faint ground plane").replace("model of a single knee", "model of a single leg"))
+# HK3-b v2 — user Fix "GIVE ME BETTER DIFFERENT BROLL" (was a whole-leg anatomy render): forty years of steps shown as wear —
+# one pale worn spot at the centre of every tread; her plimsoll landing on it.
+B["HK3-b"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone held high on the landing, looking down the straight flight past her. She is coming DOWN her stairs, seen from "
+    "above and a little behind, caught mid-step: her right plimsoll just landing flat on the next tread down, her left foot still on the "
+    "tread above, her left hand on the oak handrail. THE FRAME IS CROPPED JUST ABOVE HER KNEES — only her skirt hem, the backs of her bare "
+    "knees and calves, her plimsolls and her hand on the rail are in frame; her body above the skirt hem, her head and face are not in the "
+    "picture. The stairs run away below her down to the hall floor. THE CARPET TELLS THE STORY: on every tread the oatmeal wool carpet is "
+    "worn thin and pale in one oval patch at its centre, exactly where a foot lands, the pile flattened and the weave showing through, "
+    "the edges of each tread still thick and unworn — the same one worn spot repeated on every step down the flight, forty years of "
+    "footsteps. Her plimsoll lands squarely on the worn patch of its tread.",
+    R1_BODY + " " + R1_LEGS + " Wearing a navy cotton A-line skirt ending just above the knee and white canvas plimsolls, plain, no logo.",
+    M_STAIRS,
+    angle("HK3-b", "her feet and the worn treads below her"),
+    focus("her landing plimsoll and the worn patch under it", deep=False).replace("the room behind", "the flight below"),
+    light("M-GREY-L", "her legs and the treads"), colour("M-STAIRS-AM")],
+    "no face in frame, no head, no torso, no product anywhere, no knee strap, no knee support, no walking stick, no stairlift, "
+    "no second person, no holes in the carpet, no stains, no dirt, no rips, no worn patch at the tread edges, no text, no logos on the plimsolls, "
+    "no person going up the stairs, no wrong number of legs"))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)

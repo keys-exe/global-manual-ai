@@ -1,12 +1,12 @@
-{"taskId": "2d1677aa2e2c774f33d6b9c1aed80ed2", "created": true}
+{"taskId": "023bd1e695a6327b3a01437269195eb4", "created": true}
 {
-  "taskId": "2d1677aa2e2c774f33d6b9c1aed80ed2",
+  "taskId": "023bd1e695a6327b3a01437269195eb4",
   "state": "success",
   "credits": 108.0,
   "failMsg": null,
   "urls": [
-    "https://tempfile.aiquickdraw.com/k/2d1677aa2e2c774f33d6b9c1aed80ed2_1_1790705240_6262.mp4"
+    "https://tempfile.aiquickdraw.com/k/023bd1e695a6327b3a01437269195eb4_1_1790706252_2803.mp4"
   ],
-  "saved": "HK3-a_v1.mp4",
+  "saved": "HK3-a_v2.mp4",
   "model": "kling-3.0/video"
 }
