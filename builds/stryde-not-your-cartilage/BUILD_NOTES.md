@@ -48,6 +48,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: user "CONFIRMED PROCEED" — HK3-01 image confirmed. HK3-01 video (`hooks/HK3-01.call.json`: RIG-R1, one slow fingertip trace along the gap, 2,354 chars) preflight PASS → Kie `kling-3.0` 6s (task 5ea8028d…, 108 credits) → To check.
 
+- 2026-09-29: user "CONFIRMED PROCEED" — HK3-01 video confirmed: **all three hooks done**. Step 7: `body/build_body.py` (act map + STEP4_5 light/wardrobe + product-sheet locked strings) → 22 body start images (21 shots + MECH-S2, the split's lower half), all on Kie (NBP for worn/held/box beats, NB2 for volume and anatomy, Sunburst image-to-image for CARD-13b), 334 Kie credits, all on the board To check. Anatomy beats use ANAT-A + fine detail (HK1-01's "MAKE MORE DETAILS" applied to every anatomy beat, §34).
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the HK3-01 video (hook 3 gate); script flags F2, F5, F6, F7.
-- **Next:** the body B-roll (step 7), 21 shots (`work/actmap.json`, lengths `edit/call_lengths.json`): images first on the §18A lock (NBP for wordmark/worn beats, NB2 volume via Kie while Higgsfield logs flash), each To check, then the videos on Kie `kling-3.0`.
+- **Waiting on the user:** Confirm/Fix the 22 body images; script flags F2, F5, F6, F7.
+- **Next:** each confirmed image → its video on Kie `kling-3.0` at its `edit/call_lengths.json` length (§27G one action, `preflight.py`); then `assemble.py` rough cuts and `variants.py` (HK1/2/3 + BODY), CapCut block (step 8), finals on the Final board.
