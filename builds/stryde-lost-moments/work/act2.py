@@ -47,33 +47,37 @@ def head(day, strap=False):
     return "Attached images, in order: " + "; ".join(n) + "."
 
 B = {}
-B["A-01"] = (1, False, "THE CAMERA ANGLE: from above, three-quarter on to her, so the drop of the stairs in front of her looks long and she looks small.\nFOCUS: sharp on her nearest eye; the stairs below fall soft.",
-  "Medium close-up at the TOP of the stairs on the landing: she stands at the edge of the first step looking down the flight, her right hand on the mahogany handrail, caught mid-breath before the first step, lips slightly parted, brow tight with dread. Her face fully visible. A real, particular face — not a catalogue face.",
-  GREY, "no smile, " + NOSTRAP)
-B["A-02"] = (1, False, "THE CAMERA ANGLE: the lens a few centimetres off the stair, three-quarter on to her feet.\nFOCUS: sharp on the nearest slipper; everything beyond falls soft.",
-  "Extreme close-up of her feet on the stairs: both burgundy slippers turned SIDEWAYS across the deep-red runner, her right foot caught mid-slide sideways down onto the next step, her left foot still on the step above taking the weight, the brass stair rod gleaming, her bare ankles and the hem of the floral skirt at the top edge of the frame. Only feet, ankles and shins in frame.",
-  GREY, "no face in frame, no feet facing forwards, " + NOSTRAP)
-B["A-03"] = (1, False, "THE CAMERA ANGLE: at eye height, from the side, in profile, so the handrail runs across the frame.\nFOCUS: sharp on her hand; the stairs behind fall soft.",
-  "Close-up of her right hand clamped hard on the dark mahogany handrail, white-knuckled, the tendons standing out, caught as her weight comes down onto it, the lilac cardigan cuff at the edge of the frame, the white spindles below. Only the hand, wrist and rail in frame.",
-  GREY, "no face in frame, no relaxed grip, no gloves")
-B["A-04"] = (2, False, "THE CAMERA ANGLE: at eye height, three-quarter on to her.\nFOCUS: sharp on her nearest eye; the landing behind falls soft.",
-  "Medium close-up on the landing at the top of the stairs: her face easing, eyes closing for a moment, shoulders caught dropping as she breathes out, the first real relief in months, a hint of a smile coming. Framed from mid-chest up; her knees are below the frame. Her face fully visible. A real, particular face — not a catalogue face.",
-  "THE LIGHT: soft afternoon light from the landing window on the left of frame — the turn, the window side of her face lit.", "no strap in frame, no grin, no hands on the face")
-B["A-05"] = (2, True, "THE CAMERA ANGLE: at eye height, from the side, in profile, the camera still — like image 3.\nFOCUS: sharp on the strap and its wordmark; everything else stays clear.",
-  "From the side and waist-down, framed like image 3: she comes down the stairs FACING FORWARDS, caught mid-step, her left foot reaching down onto the next step, her right foot on the step above, the strap on her right knee, one hand resting lightly on the mahogany handrail, knees bending easily, balanced and confident. Her face is above the frame.",
-  SUN, "no gripping, no sideways, no backwards, " + STRAPNEG)
-B["A-06"] = (2, True, "THE CAMERA ANGLE: the lens on the hall tiles at the foot of the stairs, looking up the last steps from the front.\nFOCUS: sharp on the bottom step; the steps above fall slightly soft.",
-  "Extreme close-up from the hall floor: her feet in burgundy slippers coming down the last two steps TOWARD the lens, one foot per step, her right foot caught landing on the bottom step, her left foot lifting off the step above, the deep-red runner and brass rods, the red-and-cream tiles in the near foreground. Her right knee with the strap on it just visible at the top edge of the frame, the wordmark readable.",
-  SUN, "no face in frame, no sideways feet, " + STRAPNEG)
-B["A-07"] = (2, False, "THE CAMERA ANGLE: at eye height, directly behind her, the camera still.\nFOCUS: everything sharp from near to far.",
-  "Medium shot from behind, waist-up: she walks away from the lens down the hall toward the bright kitchen doorway at the far end, caught mid-stride, arms swinging loosely, shoulders straight, an easy pace. The hall tiles and the foot of the stairs at the side of the frame.",
-  "THE LIGHT: bright afternoon light spilling from the kitchen doorway ahead — after, open and warm.", "no face in frame, no stick, no hand on the wall")
-B["A-09"] = (1, True, "THE CAMERA ANGLE: low, at hip height, three-quarter on to her, looking up the flight past her.\nFOCUS: sharp on her nearest eye; the stairs above stay clear.",
-  "Medium shot from the hall: she stands at the foot of the stairs, her hand on the turned newel post, caught as she lifts her eyes up the flight, chin up, ready, the strap on her right knee below the hem of her floral skirt. Her face fully visible, calm resolve. A real, particular face — not a catalogue face.",
-  "THE LIGHT: morning daylight through the front-door glass from the right — the turn, the window side, soft and clean.", STRAPNEG)
-B["A-10"] = (2, False, "THE CAMERA ANGLE: from above, three-quarter on to her, the stairs below her.\nFOCUS: sharp on her nearest eye.",
-  "Medium close-up on the landing at the top of the stairs: she is caught as a small, private smile starts, looking down the flight she has beaten, one hand resting lightly on the handrail, about to step down. Framed from the waist up. Her face fully visible. A real, particular face — not a catalogue face.",
-  "THE LIGHT: warm afternoon sun from the landing window on the left of frame — after, bright.", "no big grin, no looking at the camera")
+# v2 (user Fix 2026-09-29: "shots don't match script") — every frame now shows exactly what its line says.
+B["A-01"] = (1, False, "THE CAMERA ANGLE: at knee height, from the side, in profile, the camera still, so her leg and the step are large in frame and her face is visible above.\nFOCUS: sharp on her right knee and her face.",
+  "ON EVERY STEP DOWN — the pain: from the side, she is caught mid-step coming DOWN her stairs, her right foot lowering onto the next step, her right knee bending under her full weight, and her face screwed up in a sharp wince of knee pain, eyes squeezed, lips pressed, one hand on the mahogany handrail. Framed from her head to her feet, the stair runner and white spindles behind her. Her face visible. A real, particular face — not a catalogue face.",
+  GREY, "no smile, no relaxed face, " + NOSTRAP)
+B["A-02"] = (1, False, "THE CAMERA ANGLE: at eye height, from the foot of the stairs, looking up the flight at her, the camera still.\nFOCUS: sharp on her; the stairs above fall slightly soft.",
+  "THAT'S WHY YOU TURN SIDEWAYS: on her stairs she is coming down SIDEWAYS — her whole body turned side-on to the flight, her shoulder pointing down the stairs, both feet placed sideways across the same tread, one foot reaching sideways down to the step below, knees stiff, both hands on the mahogany handrail beside her. Unmistakably sideways, the awkward way people with bad knees get down. Full body in frame, head to feet. Her face in profile, concentrating. A real, particular face — not a catalogue face.",
+  GREY, "no facing forwards, no facing down the stairs, no backwards, " + NOSTRAP)
+B["A-03"] = (1, False, "THE CAMERA ANGLE: at eye height, three-quarter on to her, the camera still.\nFOCUS: sharp on her hands on the rail; her face stays clear.",
+  "THAT'S WHY YOU GRIP THE RAILING: halfway down her stairs she clutches the dark mahogany handrail with BOTH HANDS, one over the other, knuckles pale, arms locked, leaning her weight onto the rail as she lowers herself one step, face tense. Framed from the waist up, the rail running diagonally across the frame, the white spindles below. Her face visible. A real, particular face — not a catalogue face.",
+  GREY, "no one-handed grip, no relaxed hands, " + NOSTRAP)
+B["A-04"] = (2, True, "THE CAMERA ANGLE: at eye height, three-quarter on to her, the camera still.\nFOCUS: sharp on her nearest eye.",
+  "AND THE PAIN JUST LIFTS: on her stairs, one step down from the landing, the strap on her right knee, she has just stepped down and stopped — and it doesn't hurt. Surprise and relief on her face: eyebrows lifting, mouth opening into a disbelieving smile, one hand resting lightly on the rail. Framed from head to knees so the strap on her knee shows. Her face fully visible. A real, particular face — not a catalogue face.",
+  "THE LIGHT: soft afternoon light from the landing window on the left of frame — the turn, the window side of her face lit.", "no grin to camera, " + STRAPNEG)
+B["A-05"] = (2, True, "THE CAMERA ANGLE: from the hall at the foot of the stairs, at eye height, looking straight UP the flight at her as she comes down toward the lens, the camera still.\nFOCUS: sharp on her face and the strap.",
+  "SO YOU COME DOWN FACING FORWARDS: seen from the front, from the bottom of the stairs, she walks down the middle of the flight FACING FORWARDS toward the lens, caught mid-step, one foot on the step below, the other lifting, hands free at her sides, head up, a relaxed confident smile. Full body, head to feet, the strap visible on her right knee below the skirt hem. Her face fully visible. A real, particular face — not a catalogue face.",
+  SUN, "no sideways, no backwards, no gripping the rail, " + STRAPNEG)
+B["A-06"] = (2, True, "THE CAMERA ANGLE: low, a few centimetres above the stair treads, from the front, looking up the steps at her feet and knees coming down, the camera still.\nFOCUS: sharp on her feet and the strap.",
+  "ONE FOOT PER STEP: close on her feet and lower legs coming down the stairs normally, one foot per step — her left foot landing on one step while her right foot is already lifting toward the next step below, alternating like anyone walking downstairs, the deep-red runner and brass rods under her burgundy slippers, the strap on her right knee in the upper part of the frame, the wordmark readable. Framed from the knees down; no face.",
+  SUN, "no two feet on the same step, no sideways feet, no face, " + STRAPNEG)
+B["A-07"] = (2, True, "THE CAMERA ANGLE: at eye height from the hall, three-quarter on to her, the camera still.\nFOCUS: sharp on her.",
+  "LIKE A NORMAL PERSON AGAIN: she comes down her stairs at an ordinary easy pace, carrying a small laundry basket on her hip with one hand, not holding the rail at all, chatting over her shoulder toward the kitchen with a laugh — an ordinary busy moment, the stairs no longer a problem. Caught mid-step near the bottom of the flight. Full body in frame, the strap on her right knee. Her face fully visible. A real, particular face — not a catalogue face.",
+  SUN, "no holding the rail, no careful steps, " + STRAPNEG)
+B["A-08"] = (2, True, "THE CAMERA ANGLE: from above, three-quarter on, looking down at her right knee as she sees it, the camera still.\nFOCUS: sharp on the strap and her hands.",
+  "PUT ONE ON: she sits on the bottom stair of her staircase, her right leg bent, and fits the strap: both hands hold the strap by the band ends and it is sitting snug just below her right kneecap, fingertips beside the chrome slides, the wordmark readable. The deep-red runner under her, the turned newel post and white spindles beside her, the red-and-cream tiles at her feet. Framed on her knee, hands and lap; her face out of frame above.",
+  "THE LIGHT: morning daylight through the front-door glass from the right — the turn, soft and clean.", "no face, no hand covering the wordmark, " + STRAPNEG)
+B["A-09"] = (2, True, "THE CAMERA ANGLE: from the hall at the foot of the stairs, at hip height, looking up the flight past her, the camera still.\nFOCUS: sharp on her.",
+  "GO TO YOUR OWN STAIRS: she walks UP her stairs with ease, caught mid-step two steps up from the bottom, her back three-quarter to the lens, one hand brushing the handrail without holding it, looking up the flight, the strap on her right knee visible from behind-side. Full body in frame.",
+  SUN, "no struggling, no gripping, " + STRAPNEG)
+B["A-10"] = (2, False, "THE CAMERA ANGLE: at eye height on the landing, three-quarter on to her, the camera still.\nFOCUS: sharp on her nearest eye.",
+  "NOTHING TO LOSE BUT THE PAIN: at the top of her stairs, she looks back over her shoulder toward the lens with a warm, knowing, confident smile, one hand light on the newel at the top, about to go down the stairs without a care. Framed from the waist up, the flight falling away beside her. Her face fully visible. A real, particular face — not a catalogue face.",
+  "THE LIGHT: warm afternoon sun from the landing window — after, bright.", "no big grin, no strap in frame")
 
 def build(b):
     day, strap, cam, frame, light, neg = B[b]
