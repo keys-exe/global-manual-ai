@@ -169,32 +169,49 @@ B["MECH-S2"] = (NB2, [], anat(
     "from mid-thigh to mid-shin, drawn as a faint translucent shell so the anatomy shows through it. Under it the knee joint glows hot "
     "red-orange, the heat pooled in the joint and at [SITE]; the brace does nothing to it.",
     extra_neg="no strap, no rigid black shell, no wordmark, no blue glow", view=TQ_VIEW))
+# v2 Fix "FIX THIS IMAGE": v1 broke the legs (a third leg raised with the foot at the top of frame, the knee unreadable) and the finger
+# pressed the shin, not the spot under the kneecap. Fixed at the prompt: both legs placed and counted, the left out of frame, the right
+# heel on the rug, the fingertip on the tendon a thumb's width under the kneecap; extra-limb negatives.
 B["B1-02"] = (NB2, ["R1-DENISE", "P2-D-LOUNGE"], photo([
-    "A snapshot from a phone held high, her own view down at her knee. She sits on the edge of the teal sofa, her right leg straight out "
-    "in front, and presses her right forefinger into the soft spot just under her right kneecap, the fingertip whole and resting on the "
-    "skin, the skin dimpling a little under it, her other hand on her thigh. The frame is tight on the knee and her hand; her face is out "
-    "of frame. " + SKIN["dark"],
+    "A snapshot from a phone held high, her own view down at her right knee. She sits on the edge of the teal sofa. Her RIGHT leg is "
+    "straight out in front of her, the heel resting on the rug, the knee and shin running up the frame from the bottom, the whole right "
+    "kneecap clearly visible in the middle of the frame; her left leg is bent with its foot flat on the rug, mostly out of frame at the "
+    "left edge. Exactly two legs, one right knee in view. Her right forefinger presses into the soft spot on the patellar tendon, about a "
+    "thumb's width directly below the lower edge of the kneecap — not on the shin, not on the kneecap — the fingertip whole and resting "
+    "on the skin, the skin dimpling a little under it; her left hand rests on her left thigh. The frame is tight on the right knee and "
+    "her hand; her face is out of frame. " + SKIN["dark"],
     "She is " + DENISE + " Wearing " + WARD["D-D1"] + ".", LOUNGE,
     angle("B1-02", "her right knee"), focus("the hands and what they hold"), light("LOUNGE", "her knee", face=False), colour("LOUNGE", "she")],
-    "no strap, no brace, no sleeve on the knee, no second hand on the knee, no fingernail digging in, no face, " + NEG_HANDS))
+    "no strap, no brace, no sleeve on the knee, no second hand on the knee, no fingernail digging in, no face, no third leg, no extra "
+    "limb, no leg raised in the air, no foot above the knee, no crossed legs, no finger on the shin, no finger on the kneecap, " + NEG_HANDS))
 B["MECH-02"] = (NB2, [], anat(
     "Heel strike: the foot has just landed and the body's weight is coming down the thigh. " + S("ANAT-LOAD") + " " + S("ANAT-HOT") + " "
     + P.ANAT_A_POINT_TIGHT, extra_neg="no glow in the joint space, no glow on the cartilage, no strap, no brace", view=LOW_VIEW))
-B["MECH-03"] = (NB2, [], anat(
+# v2 Fix "CREATE NEW ANATOMY": v1 drew the whole side of the leg up to the hip from a high view, off the confirmed anatomy look.
+# New render against the confirmed MECH-S1 as the style and framing reference: the knee from the front filling the frame, muscle over
+# bone, the brace translucent, the glow a tight point on the tendon below the kneecap.
+B["MECH-03"] = (NB2, ["MECH-S1_v1"], "THE SAME RENDERING STYLE, FRAMING AND SCALE exactly as the attached anatomy image — the same "
+    "translucent skin outline, red muscle over ivory bone, the same dark background — with the strap replaced by the brace below.\n\n" + anat(
     "A big generic wraparound knee brace, plain grey, no brand, with two steel hinged side bars and three wide straps, wraps the whole knee "
     "from mid-thigh to mid-shin, drawn as a faint translucent shell squeezing evenly all round; beneath it the single tight red-hot glow "
     "on [SITE] stays exactly as bright as before, untouched. " + P.ANAT_A_POINT_TIGHT,
-    extra_neg="no strap, no rigid black shell, no wordmark", view=HIGH_VIEW))
-B["B1-04b"] = (NBP, ["front", "back", "R1-DENISE", "P2-D-LOUNGE"], photo([
-    SAME + " A snapshot from a phone held at knee height beside the sofa, in profile to her right leg. She sits on the sofa edge, her right "
+    extra_neg="no strap, no rigid black shell, no wordmark, no hip, no buttock, no whole leg, no side view", view=FRONT_VIEW))
+# v2 Fix "WRONG PRODUCT": v1 drew a neoprene band with a sewn chevron patch and a printed wordmark, not the moulded shell. Fixed as
+# HK1-01 v2: the product photo stated as THE EXACT SAME OBJECT, the W outline spelled out, the front worn reference attached, fabric,
+# neoprene and chevron-patch negatives.
+B["B1-04b"] = (NBP, ["front", "back", "worn_front", "R1-DENISE", "P2-D-LOUNGE"], photo([
+    SAME + " The third attached photo shows how it looks closed round a leg. A snapshot from a phone held at knee height beside the sofa, in profile to her right leg. She sits on the sofa edge, her right "
     "leg out straight, foot on the rug. The strap is already closed round her shin, sitting low at mid-shin, and both her hands have it: "
     "palms and fingertips flat on the two sides of the shell, just beginning to slide it UP her shin towards the knee, caught mid-slide. "
     "The kneecap stands bare above it. Only her hands, forearms and legs are in frame. " + SKIN["dark"],
     "Her hands and legs: " + DENISE.split(" — ")[0] + " — dark brown skin. Wearing " + WARD["D-D1"] + ".", LOUNGE,
-    PROD + " " + RIGID + " " + P.WORDMARK_LOCK + " " + P.SIZE_WORN.split(";")[0] + ".",
+    PROD + " " + RIGID + " The shell is a hard, thin, curved plate shaped like a wide shallow W across its top — two pointed peaks with "
+    "the concave notch between them — exactly the outline of the product photos; the knit band is separate and only runs round the back "
+    "of the leg from the chrome slides. " + P.WORDMARK_LOCK + " " + P.SIZE_WORN.split(";")[0] + ".",
     angle("B1-04b", "her right leg"), focus("the product and its wordmark"), light("LOUNGE", "her leg", face=False), colour("LOUNGE", "she")],
     "no strap over the kneecap, no strap on the left leg, no second strap, no band open, no velcro, no buckle, no hand gripping the band, "
-    + BLOCK_NEG + ", no face, " + NEG_HANDS))
+    "no neoprene band, no fabric strap with a patch, no sewn chevron patch, no printed wordmark on fabric, no straight-edged band, no "
+    "sports tape, " + BLOCK_NEG + ", " + P.NEG_WORDMARK + ", no face, " + NEG_HANDS))
 B["MECH-04"] = (NB2, ["front", "back"], anat(
     "The strap is worn on the model exactly as in the attached product photos, its rigid matte-black shell on [SITE]. " + S("ANAT-PROD")
     + " The load arrives down the thigh and the shell takes it: the shell's edges glow a cool electric blue and the spot on [SITE] beneath "
@@ -209,18 +226,25 @@ B["B1-05b"] = (NBP, ["front", "back", "R1-DENISE", "P2-D-LOUNGE", "worn_bent"], 
     angle("B1-05b", "her"), focus("the nearest eye of Denise"), light("LOUNGE", "her"), colour("LOUNGE", "she")],
     WORN_NEG + ", no hands on the sofa arm, no pushing up, no wincing, " + NEG_EFF))
 B["B1-06"] = (NBP, ["front", "back", "R1-DENISE", "P2-D-LOUNGE"], photo([
-    SAME + " A snapshot from a phone at eye level. She holds the strap up at chest height in front of the bay window, front face and "
-    "wordmark to the lens: " + PINCH + ". Nothing rises above the shell's top edge; both peaks and the notch stand clear against the "
+    # v2 Fix "MAKE IT SMALL": v1 held the strap a hand's length from the lens so it filled half the frame. Fixed at the prompt: held
+    # at arm's length, small in the frame (a fifth of its width), the real size in cm, the room large around it.
+    SAME + " A snapshot from a phone at eye level, a couple of metres back. She holds the strap up at arm's length at chest height in front "
+    "of the bay window, well away from the camera, so the strap is SMALL in the frame — only about a fifth of the frame's width, the "
+    "room large around it — front face and wordmark to the lens: " + PINCH + ". Nothing rises above the shell's top edge; both peaks and the notch stand clear against the "
     "bright window behind, which falls soft. Only her hand and forearm come in from the right. Her hand is a sixty-four-year-old Black "
     "woman's hand: dark brown skin, deeper creases over the knuckles, short unpainted nails, the mustard-yellow sleeve at the elbow.",
     LOUNGE.replace("THE SAME LOUNGE", "THE SAME LOUNGE, the bay window behind her hand,"),
-    PROD + " " + RIGID + " " + P.WORDMARK_LOCK + " " + P.SIZE_HELD,
+    PROD + " " + RIGID + " " + P.WORDMARK_LOCK + " " + P.SIZE_HELD + " " + P.SIZE_OBJECT.replace("Its size never changes: ", "It is "),
     angle("B1-06", "her hand and the strap"), focus("the product and its wordmark"), light("LOUNGE", "the strap", face=False), colour("LOUNGE", "she")],
-    P.NEG_HELD_P + ", " + P.NEG_WORDMARK + ", " + BLOCK_NEG + ", no face, no silhouette, no backlit black shape, " + NEG_HANDS))
-B["MECH-05"] = (NB2, [], anat(
-    "CONDITIONS: the cartilage lining the joint surfaces is worn thin and patchy, the femur and tibia sitting close, bone nearly on bone, "
+    P.NEG_HELD_P + ", " + P.NEG_WORDMARK + ", " + BLOCK_NEG + ", no face, no silhouette, no backlit black shape, no strap close to the lens, no strap filling the frame, no oversized strap, no giant product, " + NEG_HANDS))
+# v2 Fix "ADD A MUSCLE": v1 was the ANAT-B bone-only ghost limb. Now look A (muscle over bone) against the confirmed MECH-04 as the
+# style reference: the quadriceps, hamstrings and calf muscles drawn round the joint, parted just enough to show the worn surfaces.
+B["MECH-05"] = (NB2, ["MECH-04_v1"], "THE SAME RENDERING STYLE, FRAMING AND SCALE exactly as the attached anatomy image — the same "
+    "translucent skin outline, red muscle over ivory bone, the same dark background — without the strap.\n\n" + anat(
+    "The muscles are all there: the quadriceps above the knee, the hamstrings behind it and the calf below, red and fibrous, wrapping "
+    "the joint, parted just enough at the front of the joint to show the bone surfaces inside. CONDITIONS: the cartilage lining the joint surfaces is worn thin and patchy, the femur and tibia sitting close, bone nearly on bone, "
     "and the edge of the meniscus between them is torn and frayed; a dull red glow sits in the narrowed joint space and along the torn "
-    "meniscus edge, the rest calm.", look="B", extra_neg="no strap, no brace, no glow on the tendon", view=TQ_VIEW))
+    "meniscus edge, the rest calm.", look="A", extra_neg="no strap, no brace, no glow on the tendon, no bone-only leg, no missing muscles", view=TQ_VIEW))
 B["B1-08"] = (NBP, ["front", "back", "R1-DENISE", "worn_front"], photo([
     SAME + " A snapshot from a phone held at waist height on the path, looking a little up. She walks along the park path towards the "
     "camera, caught mid-stride: her left foot planted, the right foot swinging forward, arms swinging easily, eyes ahead, the green "
@@ -269,15 +293,19 @@ B["B1-12a"] = (NBP, ["package_open", "front", "R1-DENISE", "P2-D-LOUNGE"], photo
     LOUNGE.replace("THE SAME LOUNGE", "THE SAME LOUNGE, seen from directly above the coffee table,"),
     angle("B1-12a", "the open box"), focus("the product and its wordmark"), light("LOUNGE", "the box", face=False), colour("LOUNGE", "she")],
     P.NEG_PACKAGE + ", " + BLOCK_NEG + ", no face, " + NEG_HANDS))
-B["CARD-12b"] = (GPT, ["front", "back"], "\n\n".join([
-    "A clean product still on a plain background, vertical 9:16. Two identical straps float side by side in the middle of the frame, a "
-    "little apart, both front face and wordmark to the camera, level, against a smooth dark navy-black background with a soft light from "
-    "above that falls off gently towards the bottom of the frame and a faint soft shadow under each.",
+# v2 Fix "Show two straps placed on the table": v1 floated them on a dark card. Now the two straps lie side by side on the lounge's
+# oak coffee table (the confirmed lounge plate), a phone snapshot from above; the clear bands for the edit's offer text stay.
+B["CARD-12b"] = (GPT, ["front", "back", "P2-D-LOUNGE"], "\n\n".join([
+    "A phone snapshot looking down at a low angle onto the low oak coffee table in THE SAME LOUNGE exactly as in the third attached "
+    "location plate, vertical 9:16. Two identical straps lie flat side by side on the bare oak tabletop in the middle band of the frame, "
+    "a hand's width apart, shells face up, both front faces and wordmarks to the camera, the knit bands resting in closed loops behind "
+    "them on the wood, each casting a soft natural shadow. Morning daylight from the bay window; the kilim rug and the teal sofa soft "
+    "and out of focus beyond the table's edge.",
     "Each strap is THE EXACT SAME OBJECT as the first attached product photo — " + PROD.split(" — ", 1)[-1] + " " + RIGID + " "
     + P.WORDMARK_LOCK + " The black band of each is a closed loop behind its shell, joined at both chrome slides.",
-    "Leave the top third and the bottom fifth of the frame clear, plain background only (text is added in the edit).",
+    "Leave the top third and the bottom fifth of the frame clear — plain tabletop and soft room only (text is added in the edit).",
     "AVOID: no text, no offer text, no price, no badge, no numbers, no logos other than the stryde wordmark, no box, no third strap, "
-    "no hands, no people, no props, no reflections on a floor, no gradient bands, " + BLOCK_NEG]))
+    "no hands, no people, no other objects on the table, no floating straps, no dark studio background, no packshot, " + BLOCK_NEG]))
 B["B1-13a"] = (NBP, ["front", "back", "R4-FIONA", "P5-PROP-F", "worn_front"], photo([
     SAME + " A snapshot from a phone held high at the top of the stairs in front of her, looking down at her and the flight "
     "falling away below. " + S("STAIR-DOWN") + " She stands on the small landing at the top, looking down the flight, one easy breath, relaxed, the strap on her bare right knee, the trouser "
@@ -286,15 +314,17 @@ B["B1-13a"] = (NBP, ["front", "back", "R4-FIONA", "P5-PROP-F", "worn_front"], ph
     PROD + " " + RIGID + " " + worn("her") + " Seated exactly as in the attached front worn reference.",
     angle("B1-13a", "her"), focus("the nearest eye of Fiona"), light("HALL", "her"), colour("HALL", "she")],
     WORN_NEG + ", " + NEG_SUP + ", no worried face, no hand on the banister"))
-B["B1-13b"] = (NBP, ["front", "back", "R4-FIONA", "P5-PROP-F", "worn_bent"], photo([
+# v2 Fix "REMOVE THE STRAP": the user's call — the shot carries no strap. The product blocks and refs come out, the knees stay bare.
+B["B1-13b"] = (NBP, ["R4-FIONA", "P5-PROP-F"], photo([
     SAME + " A snapshot from a phone held low at the foot of the stairs, three-quarter to her, tilted up the flight. She is coming DOWN "
     "the stairs forwards towards the camera, caught mid-step: her left foot planted on the fourth stair from the bottom, the strapped "
     "right foot reaching down to the next step, her hands free at her sides and off the rail, eyes ahead. The whole of her is in frame "
     "from her hair to her sandals. " + S("AFTER-EASE"),
     FIONA + " Wearing " + WARD["F-D1"] + ".", HALL,
-    PROD + " " + RIGID + " " + P.PLACE_BENT + " Worn exactly as in the attached bent-knee reference, on her RIGHT knee only.",
+    "Both knees are bare below the rolled trouser legs — nothing on either knee.",
     angle("B1-13b", "her"), focus("the whole figure", deep=True), light("HALL", "her"), colour("HALL", "she")],
-    WORN_NEG + ", " + NEG_SUP + ", " + NEG_EFF))
+    "no strap, no knee strap, no brace, no sleeve, no support on either knee, no black band on the leg, no stryde wordmark, no trousers "
+    "rolled down over the knees, " + NEG_SUP + ", " + NEG_EFF))
 
 # ── pinned end frames (act map pin_end, §27G rule 5; E7 first-and-last-frame call) ─────────────────────────────────────
 # B1-01a-END — "yes — product placed": the confirmed v1 start frame a second later, the shell now seated on the model's tendon.

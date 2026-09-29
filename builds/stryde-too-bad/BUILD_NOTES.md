@@ -37,10 +37,17 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29 ~16:15 UTC, resumed in session_01HJGJHPXbrGqt1pRRPaR5y2: board read — Act 1 has B1-01a confirmed, the other 19 images To check, no Fix notes; Act 2 not started. Hourly Fix check moved here.
   B1-01a is a pinned beat (product placed): its end-frame prompt `broll/B1-01a-END.t2i.txt` (refs: B1-01a v1 job 3c9bea78…, product front, back) is written in `build_broll.py` (END dict).
-  **Blocked: Higgsfield no longer lists `nano_banana_pro`, `nano_banana_2` or `gpt_image_2_5`** ("unknown model"; balance 15,854.5, so this is not the §5 out-of-credits case). Kie AI has all three (`kie.py image`). Asked the user whether to switch the build's images to Kie (§5: once switched, no switch back).
+  **Higgsfield no longer lists `nano_banana_pro`, `nano_banana_2` or `gpt_image_2_5`** ("unknown model"; balance 15,854.5 — not the §5 out-of-credits case).
+- 2026-09-29 ~16:25 UTC: user reviewed Act 1 on the board — confirmed B1-05b, B1-08, B1-09a, B1-09b, B1-10, B1-11, B1-12a, B1-13a, MECH-04, MECH-S1, MECH-S2 (with B1-01a: 12 of 20);
+  Fix notes on 7, then "FIX THOSE". Fixed at the prompt (`build_broll.py`, a `# v2 Fix` note on each):
+  B1-02 "FIX THIS IMAGE" (third leg, finger on the shin → two legs counted, fingertip under the kneecap) · B1-04b "WRONG PRODUCT" (neoprene band with a chevron patch → exact-object lock, W outline, worn_front ref) ·
+  B1-06 "MAKE IT SMALL" (held at the lens → arm's length, a fifth of the frame, cm size) · B1-13b "REMOVE THE STRAP" (no strap, product refs out) ·
+  CARD-12b "Show two straps placed on the table" (floating card → lying on the lounge's oak table, lounge plate ref) ·
+  MECH-03 "CREATE NEW ANATOMY" (side view to the hip → the confirmed MECH-S1 look, front, knee filling the frame) · MECH-05 "ADD A MUSCLE" (bone-only ANAT-B → ANAT-A muscle over bone, MECH-04 style ref).
+  **Images now go through Kie AI** (`broll/run_kie_fix.py`, same models: nano-banana-pro / nano-banana-2 / gpt-image-2-5-sunburst-image-to-image, 2K; results `broll/kie_fix.json`) — the user's Fix could only run there. All 7 v2 renders + **B1-01a-END v1** on the Current board as To check; the 7 v1s moved to the Old board (copied, archived on Current, deleted from Current).
 
 ## Where it stands
 - **Hooks, 2026-09-29:** HK1-01 (v2 image, HK1-01-END end frame, pinned clip v1, Kie task 800927cb…) and HK2-01 (image + clip v1, Kie task b080e98e…) all confirmed by the user.
 - **Act 1 B-roll images, 2026-09-29 (user "CONFIRMED PROCEED"):** 20 start images made with `broll/build_broll.py "Act 1"` (Higgsfield, one render each: 12 nano_banana_pro, 7 nano_banana_2, CARD-12b gpt_image_2_5 sunburst 2k), all on the board as To check. Job ids `broll/jobs_act1.json`, CDN links `broll/urls_act1.json`, board assets `broll/assets_act1.json`. Product refs: hooks/refs.json + the STRYDE worn/package reference media (`broll/refs.json`). The nano_banana_2 renders come back at 768×1376 (the jobs report nano_banana_flash). Pin-end beats in Act 1 (B1-01a product placed, B1-04b ends seated, B1-06 product turns) need an end frame each once their start images are confirmed.
-- **Waiting on the user:** Confirm/Fix the 20 Act 1 images; script flags F2, F4, F5, F7, F8, F9.
+- **Waiting on the user:** Confirm/Fix the 7 Act 1 v2 images, B1-01a-END and MECH-02 (still unreviewed); script flags F2, F4, F5, F7, F8, F9.
 - **Next:** Act 1 end frames (B1-01a, B1-04b, B1-06) and clips for the confirmed images (Kling 3.0 on Kie, E6 lengths, preflight); then Act 2 (9 beats).
