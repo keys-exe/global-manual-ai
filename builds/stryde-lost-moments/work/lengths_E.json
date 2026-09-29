@@ -1,27 +1,28 @@
 {
-  "master_s": 66.25,
+  "master_s": 66.59,
   "lead_s": 0.1,
   "skip_s": 0.4,
   "lengths": [
     {
-      "beat": "A-HKa",
+      "beat": "E-HKa",
       "cut_s": 0.0,
       "anchor": "Too",
-      "on_screen_s": 3.92,
-      "skip_s": 0.4,
-      "call_s": 5
-    },
-    {
-      "beat": "A-HKb",
-      "cut_s": 3.9167,
-      "anchor": "straps,",
-      "on_screen_s": 4.33,
+      "on_screen_s": 4.88,
       "skip_s": 0.4,
       "call_s": 6
     },
     {
+      "beat": "E-HKb",
+      "cut_s": 4.875,
+      "anchor": "straps,",
+      "on_screen_s": 5.38,
+      "skip_s": 0.4,
+      "call_s": 6,
+      "flag": "SPLIT \u2014 needs 6.3s, over 6s; split the phrase into two clips at a word boundary"
+    },
+    {
       "beat": "SH-01",
-      "cut_s": 8.25,
+      "cut_s": 10.25,
       "anchor": "surgeons,",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
@@ -29,113 +30,113 @@
     },
     {
       "beat": "SH-02",
-      "cut_s": 10.25,
+      "cut_s": 12.25,
       "anchor": "sleeves",
-      "on_screen_s": 2.83,
+      "on_screen_s": 2.62,
       "skip_s": 0.4,
       "call_s": 4
     },
     {
       "beat": "SH-03",
-      "cut_s": 13.0833,
+      "cut_s": 14.875,
       "anchor": "bone",
-      "on_screen_s": 5.54,
+      "on_screen_s": 5.83,
       "skip_s": 0.4,
       "call_s": 6,
-      "flag": "SPLIT \u2014 needs 6.4s, over 6s; split the phrase into two clips at a word boundary"
+      "flag": "SPLIT \u2014 needs 6.7s, over 6s; split the phrase into two clips at a word boundary"
     },
     {
-      "beat": "A-01",
-      "cut_s": 18.625,
-      "anchor": "step",
+      "beat": "E-01",
+      "cut_s": 20.7083,
+      "anchor": "down",
+      "on_screen_s": 2.29,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "E-02",
+      "cut_s": 23.0,
+      "anchor": "up.",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
       "beat": "MECH-01",
-      "cut_s": 20.625,
-      "anchor": "seventeen",
-      "on_screen_s": 5.58,
+      "cut_s": 25.0,
+      "anchor": "Seventeen",
+      "on_screen_s": 4.38,
       "skip_s": 0.4,
-      "call_s": 6,
-      "flag": "SPLIT \u2014 needs 6.5s, over 6s; split the phrase into two clips at a word boundary"
-    },
-    {
-      "beat": "A-02",
-      "cut_s": 26.2083,
-      "anchor": "sideways.",
-      "on_screen_s": 2.25,
-      "skip_s": 0.4,
-      "call_s": 4
-    },
-    {
-      "beat": "A-03",
-      "cut_s": 28.4583,
-      "anchor": "railing.",
-      "on_screen_s": 2.0,
-      "skip_s": 0.4,
-      "call_s": 3
+      "call_s": 6
     },
     {
       "beat": "MECH-02",
-      "cut_s": 30.4583,
+      "cut_s": 29.375,
       "anchor": "strap",
-      "on_screen_s": 4.04,
+      "on_screen_s": 4.54,
       "skip_s": 0.4,
-      "call_s": 5
+      "call_s": 6
     },
     {
-      "beat": "A-04",
-      "cut_s": 34.5,
+      "beat": "E-03",
+      "cut_s": 33.9167,
       "anchor": "lifts.",
-      "on_screen_s": 2.96,
+      "on_screen_s": 2.58,
       "skip_s": 0.4,
       "call_s": 4
     },
     {
-      "beat": "A-05",
-      "cut_s": 37.4583,
-      "anchor": "forwards.",
+      "beat": "E-04",
+      "cut_s": 36.5,
+      "anchor": "toys.",
+      "on_screen_s": 2.21,
+      "skip_s": 0.4,
+      "call_s": 3,
+      "flag": "SPLIT \u2014 needs 3.1s, over 3s; split the phrase into two clips at a word boundary"
+    },
+    {
+      "beat": "E-05",
+      "cut_s": 38.7083,
+      "anchor": "own.",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
-      "beat": "A-06",
-      "cut_s": 39.4583,
-      "anchor": "foot",
+      "beat": "E-06",
+      "cut_s": 40.7083,
+      "anchor": "hand",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
-      "beat": "A-07",
-      "cut_s": 41.4583,
-      "anchor": "normal",
+      "beat": "E-07",
+      "cut_s": 42.7083,
+      "anchor": "Nobody",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
       "beat": "NS-03a",
-      "cut_s": 43.4583,
+      "cut_s": 44.7083,
       "anchor": "Adjustable,",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
-      "beat": "NS-03b",
-      "cut_s": 45.4583,
-      "anchor": "pad",
-      "on_screen_s": 2.62,
+      "beat": "NS-04b",
+      "cut_s": 46.7083,
+      "anchor": "forget",
+      "on_screen_s": 2.0,
       "skip_s": 0.4,
-      "call_s": 4
+      "call_s": 3
     },
     {
       "beat": "SH-04a",
-      "cut_s": 48.0833,
+      "cut_s": 48.7083,
       "anchor": "slipping.",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
@@ -143,7 +144,7 @@
     },
     {
       "beat": "SH-04b",
-      "cut_s": 50.0833,
+      "cut_s": 50.7083,
       "anchor": "sores.",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
@@ -151,7 +152,7 @@
     },
     {
       "beat": "SH-04c",
-      "cut_s": 52.0833,
+      "cut_s": 52.7083,
       "anchor": "rolling",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
@@ -159,7 +160,7 @@
     },
     {
       "beat": "NS-05",
-      "cut_s": 54.0833,
+      "cut_s": 54.7083,
       "anchor": "Recommended",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
@@ -167,41 +168,33 @@
     },
     {
       "beat": "SH-05",
-      "cut_s": 56.0833,
+      "cut_s": 56.7083,
       "anchor": "Buy",
-      "on_screen_s": 4.67,
+      "on_screen_s": 4.62,
       "skip_s": 0.4,
       "call_s": 6
     },
     {
       "beat": "SH-06",
-      "cut_s": 60.75,
+      "cut_s": 61.3333,
       "anchor": "guarantee.",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
-      "beat": "A-08",
-      "cut_s": 62.75,
-      "anchor": "Put",
-      "on_screen_s": 2.0,
+      "beat": "E-08",
+      "cut_s": 63.3333,
+      "anchor": "little",
+      "on_screen_s": 2.54,
       "skip_s": 0.4,
-      "call_s": 3
+      "call_s": 4
     },
     {
-      "beat": "A-09",
-      "cut_s": 64.75,
-      "anchor": "stairs.",
-      "on_screen_s": 2.0,
-      "skip_s": 0.4,
-      "call_s": 3
-    },
-    {
-      "beat": "A-10",
-      "cut_s": 66.75,
+      "beat": "E-09",
+      "cut_s": 65.875,
       "anchor": "pain.",
-      "on_screen_s": -0.5,
+      "on_screen_s": 0.72,
       "skip_s": 0.4,
       "call_s": 3
     }

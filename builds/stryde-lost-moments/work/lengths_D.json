@@ -1,0 +1,218 @@
+{
+  "master_s": 67.94,
+  "lead_s": 0.1,
+  "skip_s": 0.4,
+  "lengths": [
+    {
+      "beat": "D-HKa",
+      "cut_s": 0.0,
+      "anchor": "Too",
+      "on_screen_s": 4.21,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "D-HKb",
+      "cut_s": 4.2083,
+      "anchor": "straps,",
+      "on_screen_s": 4.5,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "SH-01",
+      "cut_s": 8.7083,
+      "anchor": "surgeons,",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "SH-02",
+      "cut_s": 10.7083,
+      "anchor": "sleeves",
+      "on_screen_s": 2.83,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "SH-03",
+      "cut_s": 13.5417,
+      "anchor": "bone",
+      "on_screen_s": 6.04,
+      "skip_s": 0.4,
+      "call_s": 6,
+      "flag": "SPLIT \u2014 needs 6.9s, over 6s; split the phrase into two clips at a word boundary"
+    },
+    {
+      "beat": "D-01",
+      "cut_s": 19.5833,
+      "anchor": "hours",
+      "on_screen_s": 2.21,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "D-02",
+      "cut_s": 21.7917,
+      "anchor": "stride,",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-01",
+      "cut_s": 23.7917,
+      "anchor": "seventeen",
+      "on_screen_s": 7.04,
+      "skip_s": 0.4,
+      "call_s": 6,
+      "flag": "SPLIT \u2014 needs 7.9s, over 6s; split the phrase into two clips at a word boundary"
+    },
+    {
+      "beat": "D-03",
+      "cut_s": 30.8333,
+      "anchor": "finished.",
+      "on_screen_s": 3.83,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "D-04",
+      "cut_s": 34.6667,
+      "anchor": "kneecap",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-02",
+      "cut_s": 36.6667,
+      "anchor": "takes",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "D-05",
+      "cut_s": 38.6667,
+      "anchor": "lifts.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "D-06",
+      "cut_s": 40.6667,
+      "anchor": "walk",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "D-07",
+      "cut_s": 42.6667,
+      "anchor": "eighteen.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "D-08",
+      "cut_s": 44.6667,
+      "anchor": "buggy.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "NS-06",
+      "cut_s": 46.6667,
+      "anchor": "trousers.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "SH-04a",
+      "cut_s": 48.6667,
+      "anchor": "slipping.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "SH-04b",
+      "cut_s": 50.6667,
+      "anchor": "sores.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "SH-04c",
+      "cut_s": 52.6667,
+      "anchor": "rolling",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "D-09",
+      "cut_s": 54.6667,
+      "anchor": "doctors",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "NS-07",
+      "cut_s": 56.6667,
+      "anchor": "people",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "SH-05",
+      "cut_s": 58.6667,
+      "anchor": "Buy",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "D-10",
+      "cut_s": 60.6667,
+      "anchor": "each",
+      "on_screen_s": 2.33,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "SH-06",
+      "cut_s": 63.0,
+      "anchor": "guarantee.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "D-11",
+      "cut_s": 65.0,
+      "anchor": "tee",
+      "on_screen_s": 2.08,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "D-12",
+      "cut_s": 67.0833,
+      "anchor": "pain.",
+      "on_screen_s": 0.86,
+      "skip_s": 0.4,
+      "call_s": 3
+    }
+  ],
+  "failures": []
+}

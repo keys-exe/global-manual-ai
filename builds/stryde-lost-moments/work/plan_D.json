@@ -1,0 +1,188 @@
+{
+ "audio": "../vo/trim/VO_T1_V4.mp3",
+ "script": "../vo/V4.lines.txt",
+ "base": null,
+ "broll": [
+  {
+   "beat": "D-HKa",
+   "clip": null,
+   "phrase": "Too bad your golf clubs are still in the garage.",
+   "max": 6
+  },
+  {
+   "beat": "D-HKb",
+   "clip": null,
+   "phrase": "Thanks to these life-changing knee straps, not for much longer.",
+   "max": 6,
+   "key": "straps"
+  },
+  {
+   "beat": "SH-01",
+   "clip": null,
+   "phrase": "Built over three years with orthopaedic surgeons,",
+   "max": 6,
+   "key": "surgeons"
+  },
+  {
+   "beat": "SH-02",
+   "clip": null,
+   "phrase": "to do what sleeves and braces never could.",
+   "max": 6,
+   "key": "sleeves"
+  },
+  {
+   "beat": "SH-03",
+   "clip": null,
+   "phrase": "Perfect for bone on bone, arthritis, worn cartilage and meniscus pain.",
+   "max": 6,
+   "key": "bone"
+  },
+  {
+   "beat": "D-01",
+   "clip": null,
+   "phrase": "A round is hours on your feet.",
+   "max": 6,
+   "key": "hours"
+  },
+  {
+   "beat": "D-02",
+   "clip": null,
+   "phrase": "Every stride,",
+   "max": 6,
+   "key": "stride"
+  },
+  {
+   "beat": "MECH-01",
+   "clip": null,
+   "phrase": "seventeen times your bodyweight goes through one small spot below your kneecap.",
+   "max": 6,
+   "key": "seventeen"
+  },
+  {
+   "beat": "D-03",
+   "clip": null,
+   "phrase": "By the back nine, that spot is finished.",
+   "max": 6,
+   "key": "finished"
+  },
+  {
+   "beat": "D-04",
+   "clip": null,
+   "phrase": "This strap sits two centimetres below the kneecap",
+   "max": 6,
+   "key": "kneecap"
+  },
+  {
+   "beat": "MECH-02",
+   "clip": null,
+   "phrase": "takes the weight off it.",
+   "max": 6,
+   "key": "takes"
+  },
+  {
+   "beat": "D-05",
+   "clip": null,
+   "phrase": "And the pain just lifts.",
+   "max": 6,
+   "key": "lifts"
+  },
+  {
+   "beat": "D-06",
+   "clip": null,
+   "phrase": "So you walk the course instead of watching it.",
+   "max": 6,
+   "key": "walk"
+  },
+  {
+   "beat": "D-07",
+   "clip": null,
+   "phrase": "All eighteen.",
+   "max": 6,
+   "key": "eighteen"
+  },
+  {
+   "beat": "D-08",
+   "clip": null,
+   "phrase": "No buggy.",
+   "max": 6,
+   "key": "buggy"
+  },
+  {
+   "beat": "NS-06",
+   "clip": null,
+   "phrase": "Sits flat under your trousers.",
+   "max": 6,
+   "key": "trousers"
+  },
+  {
+   "beat": "SH-04a",
+   "clip": null,
+   "phrase": "No slipping.",
+   "max": 6,
+   "key": "slipping"
+  },
+  {
+   "beat": "SH-04b",
+   "clip": null,
+   "phrase": "No sores.",
+   "max": 6,
+   "key": "sores"
+  },
+  {
+   "beat": "SH-04c",
+   "clip": null,
+   "phrase": "No rolling down.",
+   "max": 6,
+   "key": "rolling"
+  },
+  {
+   "beat": "D-09",
+   "clip": null,
+   "phrase": "Sports doctors recommend it.",
+   "max": 6,
+   "key": "doctors"
+  },
+  {
+   "beat": "NS-07",
+   "clip": null,
+   "phrase": "Over two hundred thousand people wear one now.",
+   "max": 6,
+   "key": "people"
+  },
+  {
+   "beat": "SH-05",
+   "clip": null,
+   "phrase": "Buy one, get one free today at getstryde.co.",
+   "max": 6,
+   "key": "Buy"
+  },
+  {
+   "beat": "D-10",
+   "clip": null,
+   "phrase": "One for each knee.",
+   "max": 6,
+   "key": "each"
+  },
+  {
+   "beat": "SH-06",
+   "clip": null,
+   "phrase": "Sixty-day money-back guarantee.",
+   "max": 6,
+   "key": "guarantee"
+  },
+  {
+   "beat": "D-11",
+   "clip": null,
+   "phrase": "Book the tee time.",
+   "max": 6,
+   "key": "tee"
+  },
+  {
+   "beat": "D-12",
+   "clip": null,
+   "phrase": "Nothing to lose but the pain.",
+   "max": 6,
+   "key": "pain"
+  }
+ ]
+}

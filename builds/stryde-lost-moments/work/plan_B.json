@@ -1,0 +1,181 @@
+{
+ "audio": "../vo/trim/VO_T1_V2.mp3",
+ "script": "../vo/V2.lines.txt",
+ "base": null,
+ "broll": [
+  {
+   "beat": "B-HKa",
+   "clip": null,
+   "phrase": "Too bad you can't walk far without stopping anymore.",
+   "max": 3
+  },
+  {
+   "beat": "B-HKb",
+   "clip": null,
+   "phrase": "Thanks to these life-changing knee straps, that's about to change.",
+   "max": 6,
+   "key": "straps"
+  },
+  {
+   "beat": "SH-01",
+   "clip": null,
+   "phrase": "Built over three years with orthopaedic surgeons,",
+   "max": 6,
+   "key": "surgeons"
+  },
+  {
+   "beat": "SH-02",
+   "clip": null,
+   "phrase": "to do what sleeves and braces never could.",
+   "max": 6,
+   "key": "sleeves"
+  },
+  {
+   "beat": "SH-03",
+   "clip": null,
+   "phrase": "Perfect for bone on bone, arthritis, worn cartilage and meniscus pain.",
+   "max": 6,
+   "key": "bone"
+  },
+  {
+   "beat": "B-01",
+   "clip": null,
+   "phrase": "Every stride puts",
+   "max": 6,
+   "key": "stride"
+  },
+  {
+   "beat": "MECH-01",
+   "clip": null,
+   "phrase": "seventeen times your bodyweight through one small spot below your kneecap.",
+   "max": 6,
+   "key": "seventeen"
+  },
+  {
+   "beat": "B-02",
+   "clip": null,
+   "phrase": "By the end of the road, that spot has had enough.",
+   "max": 6,
+   "key": "end"
+  },
+  {
+   "beat": "B-03",
+   "clip": null,
+   "phrase": "So you stop.",
+   "max": 6,
+   "key": "stop"
+  },
+  {
+   "beat": "MECH-02",
+   "clip": null,
+   "phrase": "This strap catches the weight before it hits the knee.",
+   "max": 6,
+   "key": "strap"
+  },
+  {
+   "beat": "B-04",
+   "clip": null,
+   "phrase": "The pain is pressure. Nothing more.",
+   "max": 6,
+   "key": "pressure"
+  },
+  {
+   "beat": "B-05",
+   "clip": null,
+   "phrase": "Take the pressure off, and you keep going.",
+   "max": 3,
+   "key": "going"
+  },
+  {
+   "beat": "B-06",
+   "clip": null,
+   "phrase": "To the shops and back.",
+   "max": 6,
+   "key": "shops"
+  },
+  {
+   "beat": "B-07",
+   "clip": null,
+   "phrase": "Round the park, the long way.",
+   "max": 6,
+   "key": "park"
+  },
+  {
+   "beat": "B-08",
+   "clip": null,
+   "phrase": "Two miles, if you fancy it.",
+   "max": 6,
+   "key": "miles"
+  },
+  {
+   "beat": "NS-03a",
+   "clip": null,
+   "phrase": "Adjustable, breathable,",
+   "max": 6,
+   "key": "Adjustable"
+  },
+  {
+   "beat": "NS-04b",
+   "clip": null,
+   "phrase": "light enough you forget it's there.",
+   "max": 6,
+   "key": "forget"
+  },
+  {
+   "beat": "SH-04a",
+   "clip": null,
+   "phrase": "No slipping.",
+   "max": 6,
+   "key": "slipping"
+  },
+  {
+   "beat": "SH-04b",
+   "clip": null,
+   "phrase": "No sores.",
+   "max": 6,
+   "key": "sores"
+  },
+  {
+   "beat": "SH-04c",
+   "clip": null,
+   "phrase": "No rolling down.",
+   "max": 6,
+   "key": "rolling"
+  },
+  {
+   "beat": "NS-07",
+   "clip": null,
+   "phrase": "Over two hundred thousand people wear one now.",
+   "max": 6,
+   "key": "people"
+  },
+  {
+   "beat": "SH-05",
+   "clip": null,
+   "phrase": "Buy one, get one free today at getstryde.co.",
+   "max": 6,
+   "key": "Buy"
+  },
+  {
+   "beat": "SH-06",
+   "clip": null,
+   "phrase": "Sixty-day money-back guarantee.",
+   "max": 6,
+   "key": "guarantee"
+  },
+  {
+   "beat": "B-09",
+   "clip": null,
+   "phrase": "Go the long way round.",
+   "max": 6,
+   "key": "long"
+  },
+  {
+   "beat": "B-10",
+   "clip": null,
+   "phrase": "Nothing to lose but the pain.",
+   "max": 6,
+   "key": "pain"
+  }
+ ]
+}

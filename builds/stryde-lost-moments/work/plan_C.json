@@ -1,0 +1,181 @@
+{
+ "audio": "../vo/trim/VO_T1_V3.mp3",
+ "script": "../vo/V3.lines.txt",
+ "base": null,
+ "broll": [
+  {
+   "beat": "C-HKa",
+   "clip": null,
+   "phrase": "Too bad someone else walks your dog now.",
+   "max": 6
+  },
+  {
+   "beat": "C-HKb",
+   "clip": null,
+   "phrase": "Thanks to these life-changing knee straps, not for much longer.",
+   "max": 6,
+   "key": "straps"
+  },
+  {
+   "beat": "SH-01",
+   "clip": null,
+   "phrase": "Built over three years with orthopaedic surgeons,",
+   "max": 6,
+   "key": "surgeons"
+  },
+  {
+   "beat": "SH-02",
+   "clip": null,
+   "phrase": "to do what sleeves and braces never could.",
+   "max": 6,
+   "key": "sleeves"
+  },
+  {
+   "beat": "SH-03",
+   "clip": null,
+   "phrase": "Perfect for bone on bone, arthritis, worn cartilage and meniscus pain.",
+   "max": 6,
+   "key": "bone"
+  },
+  {
+   "beat": "C-01",
+   "clip": null,
+   "phrase": "Here's why the walks got shorter.",
+   "max": 6,
+   "key": "shorter"
+  },
+  {
+   "beat": "C-02",
+   "clip": null,
+   "phrase": "Every stride,",
+   "max": 6,
+   "key": "stride"
+  },
+  {
+   "beat": "MECH-01",
+   "clip": null,
+   "phrase": "seventeen times your bodyweight goes through one small spot below your kneecap.",
+   "max": 6,
+   "key": "seventeen"
+  },
+  {
+   "beat": "MECH-02",
+   "clip": null,
+   "phrase": "This strap redirects the load away from the worn spot.",
+   "max": 6,
+   "key": "strap"
+  },
+  {
+   "beat": "C-03",
+   "clip": null,
+   "phrase": "And the pain just lifts.",
+   "max": 6,
+   "key": "lifts"
+  },
+  {
+   "beat": "C-04",
+   "clip": null,
+   "phrase": "So you take the lead back.",
+   "max": 6,
+   "key": "lead"
+  },
+  {
+   "beat": "C-05",
+   "clip": null,
+   "phrase": "Round the block first.",
+   "max": 6,
+   "key": "block"
+  },
+  {
+   "beat": "C-06",
+   "clip": null,
+   "phrase": "Then the field.",
+   "max": 6,
+   "key": "field"
+  },
+  {
+   "beat": "C-07",
+   "clip": null,
+   "phrase": "Then the long loop you both miss.",
+   "max": 6,
+   "key": "loop"
+  },
+  {
+   "beat": "NS-03a",
+   "clip": null,
+   "phrase": "Adjustable, breathable,",
+   "max": 6,
+   "key": "Adjustable"
+  },
+  {
+   "beat": "NS-03b",
+   "clip": null,
+   "phrase": "with a silicone pad that locks the pressure right where you need it.",
+   "max": 6,
+   "key": "pad"
+  },
+  {
+   "beat": "SH-04a",
+   "clip": null,
+   "phrase": "No slipping.",
+   "max": 6,
+   "key": "slipping"
+  },
+  {
+   "beat": "SH-04b",
+   "clip": null,
+   "phrase": "No sores.",
+   "max": 6,
+   "key": "sores"
+  },
+  {
+   "beat": "SH-04c",
+   "clip": null,
+   "phrase": "No rolling down.",
+   "max": 6,
+   "key": "rolling"
+  },
+  {
+   "beat": "NS-06",
+   "clip": null,
+   "phrase": "Sits flat under your trousers.",
+   "max": 6,
+   "key": "trousers"
+  },
+  {
+   "beat": "NS-05",
+   "clip": null,
+   "phrase": "Recommended by orthopaedic surgeons for lasting relief.",
+   "max": 6,
+   "key": "Recommended"
+  },
+  {
+   "beat": "SH-05",
+   "clip": null,
+   "phrase": "Buy one, get one free today at getstryde.co.",
+   "max": 6,
+   "key": "Buy"
+  },
+  {
+   "beat": "SH-06",
+   "clip": null,
+   "phrase": "Sixty-day money-back guarantee.",
+   "max": 6,
+   "key": "guarantee"
+  },
+  {
+   "beat": "C-08",
+   "clip": null,
+   "phrase": "Get the lead.",
+   "max": 6,
+   "key": "lead"
+  },
+  {
+   "beat": "C-09",
+   "clip": null,
+   "phrase": "Nothing to lose but the pain.",
+   "max": 6,
+   "key": "pain"
+  }
+ ]
+}

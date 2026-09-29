@@ -1,27 +1,27 @@
 {
-  "master_s": 66.25,
+  "master_s": 66.3,
   "lead_s": 0.1,
   "skip_s": 0.4,
   "lengths": [
     {
-      "beat": "A-HKa",
+      "beat": "C-HKa",
       "cut_s": 0.0,
       "anchor": "Too",
-      "on_screen_s": 3.92,
+      "on_screen_s": 4.08,
       "skip_s": 0.4,
       "call_s": 5
     },
     {
-      "beat": "A-HKb",
-      "cut_s": 3.9167,
+      "beat": "C-HKb",
+      "cut_s": 4.0833,
       "anchor": "straps,",
-      "on_screen_s": 4.33,
+      "on_screen_s": 4.58,
       "skip_s": 0.4,
       "call_s": 6
     },
     {
       "beat": "SH-01",
-      "cut_s": 8.25,
+      "cut_s": 8.6667,
       "anchor": "surgeons,",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
@@ -29,7 +29,7 @@
     },
     {
       "beat": "SH-02",
-      "cut_s": 10.25,
+      "cut_s": 10.6667,
       "anchor": "sleeves",
       "on_screen_s": 2.83,
       "skip_s": 0.4,
@@ -37,89 +37,88 @@
     },
     {
       "beat": "SH-03",
-      "cut_s": 13.0833,
+      "cut_s": 13.5,
       "anchor": "bone",
-      "on_screen_s": 5.54,
+      "on_screen_s": 6.62,
       "skip_s": 0.4,
       "call_s": 6,
-      "flag": "SPLIT \u2014 needs 6.4s, over 6s; split the phrase into two clips at a word boundary"
+      "flag": "SPLIT \u2014 needs 7.5s, over 6s; split the phrase into two clips at a word boundary"
     },
     {
-      "beat": "A-01",
-      "cut_s": 18.625,
-      "anchor": "step",
+      "beat": "C-01",
+      "cut_s": 20.125,
+      "anchor": "shorter.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "C-02",
+      "cut_s": 22.125,
+      "anchor": "stride,",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
       "beat": "MECH-01",
-      "cut_s": 20.625,
+      "cut_s": 24.125,
       "anchor": "seventeen",
-      "on_screen_s": 5.58,
+      "on_screen_s": 3.96,
       "skip_s": 0.4,
-      "call_s": 6,
-      "flag": "SPLIT \u2014 needs 6.5s, over 6s; split the phrase into two clips at a word boundary"
-    },
-    {
-      "beat": "A-02",
-      "cut_s": 26.2083,
-      "anchor": "sideways.",
-      "on_screen_s": 2.25,
-      "skip_s": 0.4,
-      "call_s": 4
-    },
-    {
-      "beat": "A-03",
-      "cut_s": 28.4583,
-      "anchor": "railing.",
-      "on_screen_s": 2.0,
-      "skip_s": 0.4,
-      "call_s": 3
+      "call_s": 5
     },
     {
       "beat": "MECH-02",
-      "cut_s": 30.4583,
+      "cut_s": 28.0833,
       "anchor": "strap",
       "on_screen_s": 4.04,
       "skip_s": 0.4,
       "call_s": 5
     },
     {
-      "beat": "A-04",
-      "cut_s": 34.5,
+      "beat": "C-03",
+      "cut_s": 32.125,
       "anchor": "lifts.",
-      "on_screen_s": 2.96,
+      "on_screen_s": 2.21,
       "skip_s": 0.4,
       "call_s": 4
     },
     {
-      "beat": "A-05",
-      "cut_s": 37.4583,
-      "anchor": "forwards.",
+      "beat": "C-04",
+      "cut_s": 34.3333,
+      "anchor": "lead",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
-      "beat": "A-06",
-      "cut_s": 39.4583,
-      "anchor": "foot",
+      "beat": "C-05",
+      "cut_s": 36.3333,
+      "anchor": "block",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
-      "beat": "A-07",
-      "cut_s": 41.4583,
-      "anchor": "normal",
+      "beat": "C-06",
+      "cut_s": 38.3333,
+      "anchor": "field.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "C-07",
+      "cut_s": 40.3333,
+      "anchor": "loop",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
       "beat": "NS-03a",
-      "cut_s": 43.4583,
+      "cut_s": 42.3333,
       "anchor": "Adjustable,",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
@@ -127,15 +126,15 @@
     },
     {
       "beat": "NS-03b",
-      "cut_s": 45.4583,
+      "cut_s": 44.3333,
       "anchor": "pad",
-      "on_screen_s": 2.62,
+      "on_screen_s": 2.12,
       "skip_s": 0.4,
       "call_s": 4
     },
     {
       "beat": "SH-04a",
-      "cut_s": 48.0833,
+      "cut_s": 46.4583,
       "anchor": "slipping.",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
@@ -143,7 +142,7 @@
     },
     {
       "beat": "SH-04b",
-      "cut_s": 50.0833,
+      "cut_s": 48.4583,
       "anchor": "sores.",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
@@ -151,15 +150,23 @@
     },
     {
       "beat": "SH-04c",
-      "cut_s": 52.0833,
+      "cut_s": 50.4583,
       "anchor": "rolling",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
+      "beat": "NS-06",
+      "cut_s": 52.4583,
+      "anchor": "trousers.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
       "beat": "NS-05",
-      "cut_s": 54.0833,
+      "cut_s": 54.4583,
       "anchor": "Recommended",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
@@ -167,41 +174,34 @@
     },
     {
       "beat": "SH-05",
-      "cut_s": 56.0833,
+      "cut_s": 56.4583,
       "anchor": "Buy",
-      "on_screen_s": 4.67,
+      "on_screen_s": 5.5,
       "skip_s": 0.4,
-      "call_s": 6
+      "call_s": 6,
+      "flag": "SPLIT \u2014 needs 6.4s, over 6s; split the phrase into two clips at a word boundary"
     },
     {
       "beat": "SH-06",
-      "cut_s": 60.75,
+      "cut_s": 61.9583,
       "anchor": "guarantee.",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
-      "beat": "A-08",
-      "cut_s": 62.75,
-      "anchor": "Put",
+      "beat": "C-08",
+      "cut_s": 63.9583,
+      "anchor": "lead.",
       "on_screen_s": 2.0,
       "skip_s": 0.4,
       "call_s": 3
     },
     {
-      "beat": "A-09",
-      "cut_s": 64.75,
-      "anchor": "stairs.",
-      "on_screen_s": 2.0,
-      "skip_s": 0.4,
-      "call_s": 3
-    },
-    {
-      "beat": "A-10",
-      "cut_s": 66.75,
+      "beat": "C-09",
+      "cut_s": 65.9583,
       "anchor": "pain.",
-      "on_screen_s": -0.5,
+      "on_screen_s": 0.34,
       "skip_s": 0.4,
       "call_s": 3
     }
