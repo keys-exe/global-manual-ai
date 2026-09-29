@@ -199,5 +199,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Voice done: VO T2 locked, TH-01…16 confirmed. Locations P0–P8 confirmed (16:9, Kie GPT Image 2). Outfit cards confirmed.
 - **Hooks:** Hook 1 = HK-A-SD v3 confirmed. Hook 2 = HK-B-SD v2 To check (the mother with bags). In the edit the daughter's on-camera line replaces the
   mother reading "Mama, when did that happen?" in VO T2 (TH-01, 7.36–9.93 s).
-- **B-roll:** Act 1 images (10) To check.
+- **Hooks:** both confirmed ("confirmed hookjs").
+- **B-roll images (2026-09-29):** all 57 on the board To check, on Kie AI (nano-banana-2 / nano-banana-pro, 2K 1536×2752).
+  The user flagged that the wardrobe was the same on every day. Fix: the wardrobe map in STEP4_5.md now gives every day and event its own outfit.
+  - The problem days are split: D1 stairs + brace (house dress), D1b physical therapy (burgundy tracksuit), D1c pills (mustard sweater), D1d cortisone (striped blouse + navy skirt), D1e braces evening (olive knit top).
+  - N-D7 box/card is a lilac top.
+  - Every prompt names the day's clothes and takes only face, hair and build from the cast sheet ("not the clothes she wears on the sheet").
+  - Act 1 fixes applied: P-01a (facing up the stairs, both hands on the rails, struggling backwards), P-01b (mid-flight, both feet onto the same step), P-02a (camera at her back, she looks down the stairs and turns away), P-03b (same brace as P-03a, ref = P-03a v1), P-03a ("fix the p03a too": grey cardigan + pink slippers, same brace).
+  - Act 1 v1s were moved to the Old board.
+  - Asset ids are in broll/images/board_assets_2026-09-29.txt; Kie logs are in the scratchpad (URLs on the cards).
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.

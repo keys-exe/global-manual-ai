@@ -107,10 +107,11 @@ def p_03a():
       "Close on her lap at the kitchen table, " + KITCH + ", looking down the way she sees it herself. "
       "Her right knee is bare, the hem of her faded blue floral house dress pushed up above it. A black hinged knee brace with metal side hinges and velcro straps, an ordinary unbranded one, "
       "has slid down her leg and sags below the kneecap. Caught mid-pull: both her hands grip the top of the brace and are hauling it back up, the fabric bunching and the straps twisted, the brace already starting to slip again. "
-      "Deep brown skin on her knee and hands, fine creases, a plain wedding band."],
+      "Deep brown skin on her knee and hands, fine creases, a plain wedding band. The day's clothes all show: the grey cardigan sleeves pushed to her forearms, the faded blue floral house dress, "
+      "and her feet in pink terry slippers on the cream tile. The brace is the SAME black hinged knee brace as in the attached brace photo — identical fabric, hinges, straps, size and shape."],
       "her knee and hands", GREY,
-      "no face, no logo on the brace, no brand name, no readable text, no knee strap, no product, no bandage, no swelling, no injury, no hands inside the brace",
-      [("N sheet", REF["N"]), ("P2-KITCHEN plate", REF["P2"])])
+      "no face, no bare feet, no missing cardigan, no different brace from the brace photo, no logo on the brace, no brand name, no readable text, no knee strap, no product, no bandage, no swelling, no injury, no hands inside the brace",
+      [("N sheet", REF["N"]), ("P2-KITCHEN plate", REF["P2"]), ("P-03a brace photo (v1)", "job:5948917d-e509-41ad-a4f4-a524887d3a9e")])   # Fix 2026-09-29 (user: "fix the p03a too"): the day's full outfit, same brace
 BEATS["P-03a"] = p_03a
 
 def p_03b():
