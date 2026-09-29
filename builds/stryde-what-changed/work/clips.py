@@ -113,12 +113,38 @@ B["HK3-b"] = clip("HK3-b",   # v3 image (user Fixes → anatomy, low front three
            {"risk": "the model swims over 8 s", "prevented_by": "HOLD-C + NEG-WARP-C, locked-off, one small repeating bend"},
            {"risk": "numbers or a counter appear (the 70 million is a post overlay)", "prevented_by": "'no text, no numbers, no counter'"}])
 
+# Body — one B-roll at a time (user). E6 from the trimmed variant's word timings (body words sit after the hook):
+# B01b "It sits … of the joint," 3.78 s → 5 s; B01c "and every step you take lands on it." ≈ 2.4 s (est.) → 4 s (§30H hold ≥ 3 s).
+B["B01b"] = clip("B01b",
+    "A Black British man's bare right knee seen very close from the front in his hall: dark brown older skin, the kneecap in the upper "
+    "part of the frame and the band of the tendon standing out as a firm ridge just below it, dark grey shorts hem at the top edge.",
+    "Already standing on the first frame: he straightens the knee a touch as he settles his weight onto it, the ridge below the kneecap "
+    "firming and catching the light, then holds still — one small movement in about a second.",
+    "no face in frame, no hands, no knee strap, no knee brace, no marks on the skin, no ruler, no second person, no extra legs, no walking",
+    3.78, hi=5,
+    risks=[{"risk": "the knee warps or the skin swims", "prevented_by": "one small straighten, HOLD-C + NEG-WARP-C, locked-off camera"},
+           {"risk": "a hand or a strap appears on the knee", "prevented_by": "'no hands, no knee strap, no knee brace'"},
+           {"risk": "the camera drifts along the leg", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"}])
+B["B01c"] = clip("B01c",
+    "An older white woman's feet and shins seen side-on from a camera at ground level at the kerb: plain white canvas plimsolls, bare "
+    "pale shins, a navy skirt hem, the grey kerb stone and the road.",
+    "Already at the landing on the first frame: her right plimsoll settles flat on the tarmac and the right knee bends a little as it takes "
+    "her weight, then her left foot comes down off the kerb beside it — one step down at an ordinary pace, about a second.",
+    "no face in frame, no torso, no second person, no cars moving, no knee strap, no walking stick, no running, no slow motion, "
+    "no logos, no number plates, no extra legs",
+    2.4, hi=4,
+    risks=[{"risk": "feet or shins warp stepping down", "prevented_by": "one step at a countable pace, start frame caught at the landing, HOLD-C + NEG-WARP-C"},
+           {"risk": "camera travels with her feet", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"},
+           {"risk": "the step reads as slow motion", "prevented_by": "'an ordinary pace', 'no slow motion'"}])
+
 START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
          "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
          "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_173257_512cb5a0-c05b-4ab8-af5f-723322275d70.png",
          "HK2-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_174627_a9e02dbb-2d91-4a3d-a960-2a053cdfef10.png",
          "HK3-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_175116_4eefcbcd-8107-4478-bc49-7de4c9de2bb4.png",
-         "HK3-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_183345_15bd1d26-4f28-4cc9-9e05-a4a65495715d.png"}
+         "HK3-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_183345_15bd1d26-4f28-4cc9-9e05-a4a65495715d.png",
+         "B01b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_194456_c2453c7e-9832-4f3f-9b00-9c7dbad21a16.png",
+         "B01c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_194456_656ef52d-b5ca-473e-a831-c1dbaed4c5b6.png"}
 
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
