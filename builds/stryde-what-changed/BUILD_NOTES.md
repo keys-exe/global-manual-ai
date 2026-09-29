@@ -139,4 +139,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Kie 7356567f… 54 cr → To check. B03 line ("It is not a big thing … since you were a teenager.") "BROLL HERE" → B03-BR image:
   overhead on the kitchen table, Maureen's hand at the page of a photo album, a faded 1970s snapshot of a teenage girl mid-stride on a
   seaside promenade (refs R1 + P4; no thumb shown, F2); job 62aeddb0 → To check. `beats.py` gains KITCHEN / KITCH-L/R / KITCH-AM.
-- **Where it stands:** waiting on the user's check of the B01b clip, B01c v2 clip, B02 clip, B03-BR image and B01a image.
+- B01b + B01c clips confirmed on the board (`use`).
+- User on the B03 line: "PUT DIFFERENT BROLLS HERE" → split in three (act map 78 rows / 61 B-roll, angles.py PASS): B03a "It is not a big
+  thing. It is about as wide as your thumb," = ANAT-A low front, the big thigh muscle narrowing to the small band (F2: no thumb; job
+  fabbd7d4); B03b "…taking your whole bodyweight, multiplied," = Maureen in the kitchen lifting a heavy cast-iron pot from a low
+  cupboard, knees bent (job 46596a96); B03c "since you were a teenager." = the photo-album image (was B03-BR; card and file renamed).
+  All three → To check.
+- **Where it stands:** waiting on the user's check of the B02 clip, the B03a / B03b / B03c images and the B01a image.

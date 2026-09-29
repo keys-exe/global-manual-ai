@@ -280,10 +280,21 @@ BB("B01-BR", A1, "Put your finger there now and press.", "press", "the self-test
    "R2", "L-D-STAIRS", "D-D1", "CU seated on his bottom stair: Desmond's fingertip slides down over his kneecap and stops in the soft spot below it", "fingertip slides down and stops",
    "one slide, about two seconds", STILL, "seated, knee-down, face out of frame, camera still", "no", "absent", "—", "NB2",
    LOW, THR, "clean", "CU", "low = his own finger finding it", "hands", "shallow", L(D_GREY, "R"), False, notes="covers B01-TH")
-BB("B03-BR", A1, "It is not a big thing. It is about as wide as your thumb, and it has been quietly taking your whole bodyweight, multiplied, since you were a teenager.", "teenager", "the long load, shown as a life",
-   "hands", "L-KITCHEN", "K-D1", "overhead on the oak table: a photo album open at a faded 1970s snapshot of a teenage girl mid-stride on a seaside promenade; Maureen's hand turns the page", "one page turned",
+BB("B03a", A1, "It is not a big thing. It is about as wide as your thumb,", "big", "how small it is",
+   "ANAT", "—", "—", "ANAT-A low front MS: the big thigh muscle filling the top of the frame and narrowing down into the one small band under the kneecap, glowing", "the small band's glow pulses once",
+   "one pulse, about a second", STILL, "none", "no", "absent", "—", "NB2",
+   LOW, FRO, "clean", "MEDIUM", "low front = the big muscle above, the small band below", "deep", "deep", L(ANAT, "L"), False, ledger="F2", eg="EG05",
+   notes="user 2026-09-29 'PUT DIFFERENT BROLLS HERE' — B03 line split in three; no thumb against anything (F2)")
+BB("B03b", A1, "and it has been quietly taking your whole bodyweight, multiplied,", "multiplied", "everyday load",
+   "R1", "L-KITCHEN", "M-D1", "MEDIUM in the kitchen: Maureen bends at the knees to lift a heavy cast-iron casserole pot from a low cupboard, her knees taking the load", "she rises with the pot",
+   "one lift, about two seconds", STILL, "kitchen: three-quarter, camera still, her face turned to the cupboard", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "MEDIUM", "three-quarter = an ordinary moment, the knees working", "deep", "deep", L(KITCH, "L"), False,
+   notes="user 2026-09-29 'PUT DIFFERENT BROLLS HERE' — B03 line split in three")
+BB("B03c", A1, "since you were a teenager.", "teenager", "since you were a teenager",
+   "hands", "L-KITCHEN", "K-D1", "overhead on the oak table: a photo album open at a faded 1970s snapshot of a teenage girl mid-stride on a seaside promenade; Maureen's hand at the page", "one page turned",
    "one turn, about two seconds", STILL, "hands only, camera still", "no", "absent", "—", "NB2",
-   OVER, FRO, "clean", "CU", "overhead = the album laid open, looked back on", "hands", "medium", L(KITCH, "L"), False, ledger="F2", notes="covers B03-TH; no thumb shown against anything (F2); photo has no readable text")
+   OVER, FRO, "clean", "CU", "overhead = the album laid open, looked back on", "hands", "medium", L(KITCH, "L"), False, ledger="F2",
+   notes="was B03-BR (the album) — now the third part of the B03 line")
 BB("B06-BR", A1, "That part is ordinary. It happens to everybody. But here is what nobody explains. The load does not thin with it.", "everybody", "it happens to everybody",
    "extras", "L-STREET", "M-D1", "side-on, waist-down: three older passers-by walk past along the pavement one after another", "they walk through the frame",
    "an ordinary walking pace", STILL, "street: side-on, waist-down, camera still, nobody faces the lens", "no", "absent", "—", "NB2",
@@ -334,7 +345,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03-BR', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06', 'B07-TH', 'B07-BR', 'B07', 'B08-TH', 'B08-BR', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06', 'B07-TH', 'B07-BR', 'B07', 'B08-TH', 'B08-BR', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []

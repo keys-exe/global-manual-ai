@@ -398,7 +398,7 @@ B["B08c"] = (NB2, ["R2", "P2"], photo([
     "no wincing, no pain face, no product anywhere, no knee strap, no second person, " + PLAIN_SHOES + ", no looking at the camera"))
 
 # B03-BR — covers B03-TH "It is not a big thing … since you were a teenager." (user: "BROLL HERE"). F2: no thumb shown against anything.
-B["B03-BR"] = (NB2, ["R1", "P4"], photo([
+B["B03c"] = (NB2, ["R1", "P4"], photo([   # was B03-BR; now the third part of the B03 line
     "A snapshot from a phone held straight above the kitchen table, looking down. A family photo album lies open on the pale-oak table, "
     "its thick card pages yellowed, a few old colour photographs held in by corner mounts. The main photograph, faded to warm oranges and "
     "soft blues the way 1970s prints fade: a teenage girl of about fifteen with white-blonde hair mid-stride along a seaside promenade in "
@@ -407,11 +407,35 @@ B["B03-BR"] = (NB2, ["R1", "P4"], photo([
     "Her hand: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, thin skin over the knuckles, a "
     "plain gold wedding ring, the dusty-pink cardigan cuff at the wrist.",
     KITCHEN,
-    angle("B03-BR", "the open album"),
+    angle("B03c", "the open album"),
     focus("the teenage girl's photograph", deep=False).replace("the room behind", "the table around it"),
     light("KITCH-L", "the album and her hand"), colour("KITCH-AM")],
     "no thumb held against anything, no measuring, no readable text, no handwriting, no captions, no dates, no names, no logos, no face of "
     "the older woman, no second hand, no extra fingers, no product anywhere, no knee strap"))
+
+# B03a — "It is not a big thing. It is about as wide as your thumb," (user: "PUT DIFFERENT BROLLS HERE"): how small the band is
+# next to the thigh muscle above it. F2: no thumb, nothing held against it.
+B["B03a"] = (NB2, [], anat(
+    "Seen from a low front angle, standing: the big quadriceps muscle of the thigh fills the upper half of the frame, broad and heavy, and "
+    "narrows down over the kneecap into the one small band of the patellar tendon below it — the size difference is the picture: the huge "
+    "muscle above, the slim band below carrying what it sends down. No thumb, no hand, no ruler, nothing held against it for scale. "
+    + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from a low front angle looking up the standing leg, the whole thigh above and the knee in the lower middle of the frame, "
+         "the upper shin at the bottom edge"))
+
+# B03b — "and it has been quietly taking your whole bodyweight, multiplied," Maureen lifting a heavy pot from a low cupboard.
+B["B03b"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone at eye height in the kitchen, three-quarter on to her. She is bending at the knees in front of a low sage-green "
+    "cupboard, caught as she starts to rise with a heavy orange cast-iron casserole pot held in both hands, her knees deeply bent and "
+    "pushed forward and taking the load, her back fairly straight, her face turned down towards the pot in three-quarter profile. Medium "
+    "shot, the whole of her from head to plimsolls, the open cupboard door beside her.",
+    R1 + " Wearing " + WARD["M-D1"] + ".",
+    KITCHEN,
+    angle("B03b", "her lifting the pot"),
+    focus("everything", deep=True),
+    light("KITCH-L", "her and the cupboard"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan, navy-and-white stripes and a navy skirt").replace("the faded orange of the old photograph", "the orange cast-iron pot")],
+    "no looking at the camera, no wincing, no pain face, no product anywhere, no knee strap, no second person, no brand name on the pot, "
+    "no readable text, no logos, no extra hands"))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
