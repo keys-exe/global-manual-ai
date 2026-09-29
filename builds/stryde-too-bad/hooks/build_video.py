@@ -17,6 +17,7 @@ NEG_TAIL = "no music, no voice, no text, no captions"
 ON = {"HK1-01": 3.01, "HK2-01": 2.61}
 START = {"HK1-01": "hooks/HK1-01_v2.png", "HK2-01": "hooks/HK2-01_v1.png"}
 PIN_END = {"HK1-01": "hooks/HK1-01-END_v1.png"}   # act map pin_end: the product turns (§27G rule 5)
+END_OK = {"HK1-01"}   # HK1-01-END v1 confirmed by the user ("CONFIRMED PROCEED", 2026-09-29)
 sys.path.insert(0, str(ROOT / "products/stryde")); import stryde_product_sheet as P  # noqa: E402
 PRODUCT = "The strap keeps its exact shape, size and wordmark in every frame and moves only with the hand that holds it; " + P.HOLD_PC
 NEG_PROD = "no bending, no curling, no folding, no melting, no flipping of the product, no shell turning side-on, no second strap"
@@ -56,7 +57,7 @@ if __name__ == "__main__":
         dur = max(3, math.ceil(ON[beat] + 0.4 + 0.5))
         call = {"beat": beat, "connector": "kling", "route": "Kling 3.0 on Kie (kie.py kling), Kling connector out of credits",
                 "mode": 1, "kind": "broll", "prompt": prompt, "duration": dur, "resolution": "1080p", "aspect_ratio": "9:16",
-                "start_image": START[beat], "start_approved": True, "pinned": beat in PIN_END, "end_image": PIN_END.get(beat), "end_approved": False,
+                "start_image": START[beat], "start_approved": True, "pinned": beat in PIN_END, "end_image": PIN_END.get(beat), "end_approved": beat in END_OK,
                 "pace": "unhurried", "subject_motion": sm, "prefer_multi_shots": "false", "generation": 1,
                 "risks": [{"risk": a, "prevented_by": b} for a, b in risks]}
         (HERE / f"video/{beat}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
