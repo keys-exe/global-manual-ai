@@ -188,3 +188,4 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - 2026-09-29 — B06-BR2 image Fix "FOCUS ON KNEE" → v2: close-up of Desmond's right knee, side-on at knee height, shorts hem to mid-shin (act map framing → ECU; angles PASS). A small scab-like mark shows on the knee. v1 moved to the Old board. To check.
 - 2026-09-29 — B07-BRa video Fix "THINNER" → v2 (gen 2, Kie 4 s, 72 cr): the cushion wears away to almost nothing, bones close together, no red dot. v1 moved to the Old board. To check.
 - 2026-09-29 — B07 image v2 confirmed → clip v1 (Kie 4 s, 72 cr): she rubs her knee and looks down at it, puzzled; foot still up on the chair seat as in the image. To check.
+- 2026-09-29 23:08 hourly Fix check — no Fix notes on the Current or Final board. B08-BR image had been confirmed on the board → clip v1 (Kie 5 s, 90 cr): she walks away down the hall to the front door, never turns; clean. To check.
