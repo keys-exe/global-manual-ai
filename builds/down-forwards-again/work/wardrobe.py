@@ -26,7 +26,7 @@ DAYS = {
           "She wears a dusky-pink blouse with a rounded collar under a heather-grey v-neck jumper, charcoal straight trousers, brown suede slippers, and " + SIG + "."),
  "P-B8": ("Act 2", ["BR-09c"], "bottle-green fine roll-neck", "long charcoal open draped cardigan", "black straight trousers", "black flat shoes", "—", "green family", "absent",
           "She wears a bottle-green fine roll-neck under a long charcoal open draped cardigan, black straight trousers and black flat shoes."),
- "P-B9": ("Act 2", ["BR-10"], "raspberry polo shirt", "grey zip fleece, open", "grey jogging bottoms", "white trainers", "—", "red family", "absent",
+ "P-B9": ("Act 2", ["BR-10", "BR-10b", "BR-10c"], "raspberry polo shirt", "grey zip fleece, open", "grey jogging bottoms", "white trainers", "—", "red family", "absent",
           "She wears a raspberry-red polo shirt under an open grey zip fleece, grey jogging bottoms and white trainers."),
  "P-A1": ("Act 3", ["BR-11a", "BR-11b", "BR-11c", "PR-12"], "cornflower-blue linen button-down shirt, sleeves rolled to the forearm", "—", "wide-leg cream cotton trousers", "tan leather sandals", SIG, "navy/denim", "VISIBLE on BR-11c (trouser leg rolled for the gel), absent otherwise",
           "She wears a cornflower-blue linen button-down shirt with the sleeves rolled to the forearm, wide-leg cream cotton trousers, tan leather sandals, and " + SIG + "."),

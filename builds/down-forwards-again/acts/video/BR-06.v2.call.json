@@ -1,0 +1,42 @@
+{
+ "beat": "BR-06",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_164555_aab0d0bc-3d67-4315-8bce-8594012f2743.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "That is why she came down backwards. Backwards takes the catch out.",
+ "pace": "unhurried",
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "she reaches the bottom and turns (the user's fault)",
+   "prevented_by": "still in the middle of the flight on the last frame; no reaching the bottom, no turning round"
+  },
+  {
+   "risk": "a foot melts into the step",
+   "prevented_by": "one step at a slow countable pace; NEG-WARP-C"
+  },
+  {
+   "risk": "the camera climbs the stairs",
+   "prevented_by": "RIG-R1C: the phone stays at the foot"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
+ "audio": false,
+ "prompt": "{\"shot\":\"br_06\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"WIDE, as in the start frame: the hall and the whole flight, her whole body on the stairs, facing the steps. \"},\"motion\":\"Halfway down the flight and facing the stairs, she keeps coming down backwards: her left foot reaches back and down for the next tread and her weight follows, then her right foot joins it, slowly, over about two and a half seconds; she reaches back with her left foot again for the next one; still facing the stairs, still in the middle of the flight, both hands on the rail, on the last frame. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject, no music, no voice, no text appearing, no reaching the bottom of the stairs, no stepping off onto the hall floor, no turning round, no turning to face the hall, no walking forwards, no stumbling, no falling, no feet sliding over the steps, no extra steps appearing, no hands leaving the rail\"}",
+ "fix_note": "v1 ran her all the way to the foot of the stairs and turned her to face the hall → she stays in the middle of the flight, facing the steps, going down backwards for the whole clip; negatives for reaching the bottom and turning round",
+ "user_fault": "she should be halfway down the stairs tos how the going backwards"
+}

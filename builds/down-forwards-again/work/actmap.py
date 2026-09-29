@@ -130,6 +130,12 @@ row("BR-09c","Act 2",["B-09"],"BR","family (one-offs FM-01 daughter, FM-02 grand
     "sway","standing (§27G: no step)","no","eye","ots","MEDIUM","clean","OTS = from inside, the family comes to her","medium","eyes","L","family",layout=CUT,face=True)
 row("BR-10","Act 2",["B-10"],"BR","P","L-P-FRONT","P-D1","seated in the armchair, pulls a blank physio band against her foot, carefully","one pull, 3s",
     "sway","sitting · hands","no","high","three-quarter","MEDIUM","clean","high = how hard she tried","medium","hands","L","tried",layout=CUT)
+# the user, 2026-09-29 (video Fix on BR-10): "this should be 3 separate brolls" → B-10 split: BR-10 (how hard she tried — keeps its image),
+# BR-10b (never a weak muscle — her hand on her thigh as the muscle tightens hard), BR-10c (where the load was landing — the knee as the foot lands a step down)
+row("BR-10b","Act 2",["B-10"],"BR","P legs","L-P-FRONT","P-D1","her leg held straight out from the armchair, her hand flat on her thigh as the thigh muscle tightens hard under it","one squeeze, 2s",
+    "sway","sitting · hands","no","low","profile","CU","clean","low + profile = the strong muscle's shape","medium","hands","L","muscle",layout=CUT)
+row("BR-10c","Act 2",["B-10"],"BR","P legs","L-P-HALL","P-D1","her left foot lands on the hall floor off the bottom stair, the left knee bending to take the weight","one step down, 2s",
+    "locked-off sway","stairs descending (§27G: one step, camera low at the foot)","no","ground","three-quarter","CU","clean","ground = where the weight lands","deep","deep","R","landing",layout=CUT,eg="EG06 red arrow")
 
 # ---- ACT 3 — the failed fixes, Stryde, placement (B-11–B-15) --------------------------------------------------
 TH("TH-A3", "Act 3", ["B-11","B-12","B-13","B-14","B-15"], "counts the three on his fingers; lifts the strap from the desk into frame on 'This does'")
@@ -214,6 +220,7 @@ BLINE = {
  "MECH-03": "Every step you take lands on it.", "MECH-03d": "Seventeen times your bodyweight.",
  "BR-05": "Coming down is worse than going up.", "BR-05a": "Going up, your muscles lift you.", "BR-05b": "Coming down, you are catching yourself,",
  "MECH-05": "and the catch lands on that band.",
+ "BR-10": "It was never how hard she tried.", "BR-10b": "It was never a weak muscle.", "BR-10c": "It was where the load was landing.",
  "BR-09a": "And the list of things she said no to got longer every year. The long walk.", "BR-09b": "The garden.", "BR-09c": "Her family coming to her instead.",
  "BR-11a": "A sleeve squeezes the whole knee.", "BR-11b": "A hinged brace stops it going sideways, and her knee was never going sideways.",
  "BR-11c": "A gel sits on the skin. None of them move the load.",

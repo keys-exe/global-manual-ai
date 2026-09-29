@@ -114,10 +114,10 @@
  "BR-10": {
   "act": "Act 2",
   "in": 19.38,
-  "out": 25.04,
-  "span": 5.66,
-  "kling": 6,
-  "line": "It was never how hard she tried. It was never a weak muscle. It was where the load was landing."
+  "out": 21.42,
+  "span": 2.04,
+  "kling": 3,
+  "line": "It was never how hard she tried."
  },
  "BR-11a": {
   "act": "Act 3",
@@ -310,5 +310,21 @@
   "span": 2.32,
   "kling": 3,
   "line": "Coming down is worse than going up."
+ },
+ "BR-10b": {
+  "act": "Act 2",
+  "in": 21.42,
+  "out": 23.14,
+  "span": 1.72,
+  "kling": 3,
+  "line": "It was never a weak muscle."
+ },
+ "BR-10c": {
+  "act": "Act 2",
+  "in": 23.14,
+  "out": 25.04,
+  "span": 1.9,
+  "kling": 3,
+  "line": "It was where the load was landing."
  }
 }

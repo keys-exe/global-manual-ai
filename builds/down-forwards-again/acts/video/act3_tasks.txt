@@ -1,0 +1,15 @@
+BR-05 {"taskId": "77cf54706fc5a2a636773f78df386828", "model": "kling-3.0-omni/image-to-video"}
+MECH-03a {"taskId": "6aed00688b126d8e846d63754528c937", "model": "kling-3.0-omni/image-to-video"}
+MECH-03d {"taskId": "9da56caa48d318399085c5e1da66102d", "model": "kling-3.0-omni/image-to-video"}
+MECH-05 {"taskId": "4c00fdf6240d8effd431d20e541b9b45", "model": "kling-3.0-omni/image-to-video"}
+BR-11a {"taskId": "4de75a3f0e6a6313df8fd9e64aa81da8", "model": "kling-3.0-omni/image-to-video"}
+BR-11b {"taskId": "f47de8d245e1c95adefb243dbd8a034e", "model": "kling-3.0-omni/image-to-video"}
+BR-11c {"taskId": "f7f9bf69733170dd26a32a4b79aff29c", "model": "kling-3.0-omni/image-to-video"}
+PR-12 {"taskId": "aaa974b3bb22563cbbe65e42f3e9bdfc", "model": "kling-3.0-omni/image-to-video"}
+BR-13 {"taskId": "84955b21a79ad6f56b0b88985214d6a7", "model": "kling-3.0-omni/image-to-video"}
+MECH-14 {"taskId": "b2dfa36ebd26d8475843e7a4a7530299", "model": "kling-3.0-omni/image-to-video"}
+BR-14b {"taskId": "e963a74b65fb93d2dfb71b657828ddc6", "model": "kling-3.0-omni/image-to-video"}
+BR-15 {"taskId": "1bd7115b178edef0d28a36beac2aed97", "model": "kling-3.0-omni/image-to-video"}
+BR-06.v2 {"taskId": "8e2e00c09bf0c766cf3df733d41ec7a1", "model": "kling-3.0-omni/image-to-video"}
+BR-10.v2 {"taskId": "b5926337608677b9172e6bdb732eed5d", "model": "kling-3.0-omni/image-to-video"}
+MECH-03.v3 {"taskId": "94b0cdcae02ce05be2c81e7b3750a90e", "model": "kling-3.0-omni/image-to-video"}
