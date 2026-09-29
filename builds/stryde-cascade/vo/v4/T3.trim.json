@@ -1,0 +1,1 @@
+{"src": "vo/v4/T3.mp3", "out": "vo/v4/T3.cut.mp3", "duration_in_s": 203.92, "breaths_cut": [[32.6, 32.75], [90.63, 90.78], [93.33, 93.5]], "source_end_db": -90.4, "source_end_clipped": false, "verify": {"duration_s": 203.07, "wpm": 192, "max_wpm": 210, "too_fast": false, "breaths_left": [], "gaps_over_limit": [], "tail_last_db": -55.8, "status": "PASS"}}

@@ -28,4 +28,5 @@ builds/*/voice/*.png
 *.flac
 *.pyc
 builds/*/broll/renders/
+builds/**/edit/**/.*_caps/
 builds/*/broll/v*/*.png

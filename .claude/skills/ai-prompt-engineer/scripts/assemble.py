@@ -494,65 +494,81 @@ def main():
         report["status"] = "FAIL" if fails else "PLANNED"
         print(json.dumps(report, indent=2)); sys.exit(2 if fails else 0)
 
-    # render: concat of segments, master audio only
+    # render: one ffmpeg pass per segment (only that segment's inputs, the talking head seeked on
+    # input), then the concat demuxer and the master as the only audio. One filter graph over every
+    # segment held all inputs open at once and was killed for memory on a 49-segment variant (2026-09-28).
     out = Path(a.out) if a.out else root / "rough_cut.mp4"
     focus = float(plan.get("th_focus_y", 0.4))
     V = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},setsar=1"
     END = ",setsar=1,format=yuv420p"
-    inputs, parts = [], []
-
-    def add(path):
-        """Register an input file; return its ffmpeg input index."""
-        inputs.extend(["-i", str(path)])
-        return len(inputs) // 2 - 1
-
-    def th_chain(idx, s0, s1):
-        return f"[{idx}:v]trim={s0}:{s1},setpts=PTS-STARTPTS,{V}"
-
-    def br_chain(e, dur, w, h):
-        src_len = dur * e["speed"]
-        fit = f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps={FPS},setsar=1"
-        return (f"[{add(e['clip'])}:v]trim={e['in']}:{e['in'] + src_len},setpts=(PTS-STARTPTS)/{e['speed']},"
-                f"{fit},trim=0:{dur},setpts=PTS-STARTPTS")
+    segdir = out.parent / f".{out.stem}_segs"
+    segdir.mkdir(parents=True, exist_ok=True)
+    seg_files = []
 
     for n, s in enumerate(segs):
+        inputs, parts = [], []
+
+        def add(path, ss=None):
+            """Register an input file (seeked to ss when given); return its ffmpeg input index."""
+            idx = sum(1 for x in inputs if x == "-i")
+            inputs.extend((["-ss", f"{ss:.4f}"] if ss is not None else []) + ["-i", str(path)])
+            return idx
+
+        def th_chain(s0, s1):
+            return f"[{add(base, s0)}:v]trim=0:{s1 - s0},setpts=PTS-STARTPTS,{V}"
+
+        def br_chain(e, dur, w, h):
+            src_len = dur * e["speed"]
+            fit = f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps={FPS},setsar=1"
+            return (f"[{add(e['clip'])}:v]trim={e['in']}:{e['in'] + src_len},setpts=(PTS-STARTPTS)/{e['speed']},"
+                    f"{fit},trim=0:{dur},setpts=PTS-STARTPTS")
+
         dur = s["end"] - s["start"]
         if s["kind"] == "TH":
             z = s.get("zoom", 1.0)
             zoom = "" if z == 1.0 else (f",scale=trunc(iw*{z}/2)*2:trunc(ih*{z}/2)*2,"
                                         f"crop={W}:{H}:(in_w-{W})/2:(in_h-{H})*{focus}")  # the face point holds still
-            parts.append(f"{th_chain(add(base), s['start'], s['end'])}{zoom}{END}[s{n}]")
-            continue
-        e = next(x for x in edl if x["beat"] == s["beat"])
-        lay = e["layout"]
-        if lay["type"] == "full":
-            parts.append(f"{br_chain(e, dur, W, H)}{END}[s{n}]")
-        elif lay["type"] == "split":
-            hb = even(H * lay["ratio"]); ht = H - hb
-            y = even(min(max(H * focus - ht / 2, 0), H - ht))
-            parts.append(f"{br_chain(e, dur, W, hb)}[b{n}]")
-            parts.append(f"{th_chain(add(base), s['start'], s['end'])},crop={W}:{ht}:0:{y}[t{n}]")
-            order = f"[b{n}][t{n}]" if lay["broll_pos"] == "top" else f"[t{n}][b{n}]"
-            parts.append(f"{order}vstack=inputs=2{END}[s{n}]")
-        else:  # pip
-            bw = even(W * lay["scale"]); bh = even(bw * 16 / 9); bd = int(lay.get("border", 0))
-            fw, fh = bw + 2 * bd, bh + 2 * bd
-            x = CORNER_MARGIN if lay["corner"] in ("tl", "bl") else W - fw - CORNER_MARGIN
-            y = CORNER_MARGIN * 3 if lay["corner"] in ("tl", "tr") else H - fh - CORNER_MARGIN * 6
-            box = f",pad={fw}:{fh}:{bd}:{bd}:white" if bd else ""
-            if lay["over"] == "th":
-                parts.append(f"{th_chain(add(base), s['start'], s['end'])}[g{n}]")
-                parts.append(f"{br_chain(e, dur, bw, bh)}{box}[f{n}]")
-            else:
-                parts.append(f"{br_chain(e, dur, W, H)}[g{n}]")
-                th_box = f"scale={bw}:{bh}:force_original_aspect_ratio=increase,crop={bw}:{bh}"
-                parts.append(f"{th_chain(add(base), s['start'], s['end'])},{th_box}{box}[f{n}]")
-            parts.append(f"[g{n}][f{n}]overlay={x}:{y}:shortest=1{END}[s{n}]")
-    aidx = add(audio)
-    graph = ";".join(parts) + ";" + "".join(f"[s{n}]" for n in range(len(segs))) + f"concat=n={len(segs)}:v=1:a=0[v]"
-    subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", *inputs, "-filter_complex", graph,
-                    "-map", "[v]", "-map", f"{aidx}:a", "-c:v", "libx264", "-crf", "18",
+            parts.append(f"{th_chain(s['start'], s['end'])}{zoom}{END}[v]")
+        else:
+            e = next(x for x in edl if x["beat"] == s["beat"])
+            lay = e["layout"]
+            if lay["type"] == "full":
+                parts.append(f"{br_chain(e, dur, W, H)}{END}[v]")
+            elif lay["type"] == "split":
+                hb = even(H * lay["ratio"]); ht = H - hb
+                y = even(min(max(H * focus - ht / 2, 0), H - ht))
+                parts.append(f"{br_chain(e, dur, W, hb)}[b]")
+                parts.append(f"{th_chain(s['start'], s['end'])},crop={W}:{ht}:0:{y}[t]")
+                order = "[b][t]" if lay["broll_pos"] == "top" else "[t][b]"
+                parts.append(f"{order}vstack=inputs=2{END}[v]")
+            else:  # pip
+                bw = even(W * lay["scale"]); bh = even(bw * 16 / 9); bd = int(lay.get("border", 0))
+                fw, fh = bw + 2 * bd, bh + 2 * bd
+                x = CORNER_MARGIN if lay["corner"] in ("tl", "bl") else W - fw - CORNER_MARGIN
+                y = CORNER_MARGIN * 3 if lay["corner"] in ("tl", "tr") else H - fh - CORNER_MARGIN * 6
+                box = f",pad={fw}:{fh}:{bd}:{bd}:white" if bd else ""
+                if lay["over"] == "th":
+                    parts.append(f"{th_chain(s['start'], s['end'])}[g]")
+                    parts.append(f"{br_chain(e, dur, bw, bh)}{box}[f]")
+                else:
+                    parts.append(f"{br_chain(e, dur, W, H)}[g]")
+                    th_box = f"scale={bw}:{bh}:force_original_aspect_ratio=increase,crop={bw}:{bh}"
+                    parts.append(f"{th_chain(s['start'], s['end'])},{th_box}{box}[f]")
+                parts.append(f"[g][f]overlay={x}:{y}:shortest=1{END}[v]")
+        nfr = round(s["end"] * FPS) - round(s["start"] * FPS)   # frames on the whole-frame grid: no drift
+        sf = segdir / f"s{n:03d}.mp4"
+        subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", *inputs, "-filter_complex", ";".join(parts),
+                        "-map", "[v]", "-frames:v", str(nfr), "-r", str(FPS), "-c:v", "libx264", "-crf", "18",
+                        "-preset", "medium", "-pix_fmt", "yuv420p", "-an", str(sf)], check=True)
+        seg_files.append(sf)
+    lst = segdir / "list.txt"
+    lst.write_text("".join(f"file '{f.resolve()}'\n" for f in seg_files))
+    subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst),
+                    "-i", str(audio), "-map", "0:v", "-map", "1:a", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "192k", "-shortest", str(out)], check=True)
+    for f in seg_files:
+        f.unlink()
+    lst.unlink(); segdir.rmdir()
 
     # verify
     err = subprocess.run([FF, "-hide_banner", "-i", str(out), "-vf", "blackdetect=d=0.03:pic_th=0.98",
