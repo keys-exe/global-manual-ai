@@ -267,11 +267,68 @@ BB("B23b", A4, "Go and do it forwards.", "forwards", "close — callback",
    "one step, about a second and a half", STILL, "stairs: facing forwards, waist-up, camera still at the foot", "no", "worn (out of frame)", "—", "NB2",
    LOW, FRO, "clean", "MEDIUM", "low from the foot = resolve", "eyes", "medium", L(M_SUN, "L"), True, notes="callback to HK1")
 
+
+# ============================================================ B-roll on every line (user, 2026-09-29: "BROLL FOR EVERY LINE")
+# One B-roll per host line: the talking head stays as audio and on the timeline, the B-roll covers its line.
+BB("B01-BR", A1, "Put your finger there now and press.", "press", "the self-test, shown",
+   "R2", "L-D-STAIRS", "D-D1", "CU seated on his bottom stair: Desmond's fingertip slides down over his kneecap and stops in the soft spot below it", "fingertip slides down and stops",
+   "one slide, about two seconds", STILL, "seated, knee-down, face out of frame, camera still", "no", "absent", "—", "NB2",
+   LOW, THR, "clean", "CU", "low = his own finger finding it", "hands", "shallow", L(D_GREY, "R"), False, notes="covers B01-TH")
+BB("B03-BR", A1, "It is not a big thing. It is about as wide as your thumb, and it has been quietly taking your whole bodyweight, multiplied, since you were a teenager.", "teenager", "the long load, shown as a life",
+   "hands", "L-KITCHEN", "K-D1", "overhead on the oak table: a photo album open at a faded 1970s snapshot of a teenage girl mid-stride on a seaside promenade; Maureen's hand turns the page", "one page turned",
+   "one turn, about two seconds", STILL, "hands only, camera still", "no", "absent", "—", "NB2",
+   OVER, FRO, "clean", "CU", "overhead = the album laid open, looked back on", "hands", "medium", L(KITCH, "L"), False, ledger="F2", notes="covers B03-TH; no thumb shown against anything (F2); photo has no readable text")
+BB("B06-BR", A1, "That part is ordinary. It happens to everybody. But here is what nobody explains. The load does not thin with it.", "everybody", "it happens to everybody",
+   "extras", "L-STREET", "M-D1", "side-on, waist-down: three older passers-by walk past along the pavement one after another", "they walk through the frame",
+   "an ordinary walking pace", STILL, "street: side-on, waist-down, camera still, nobody faces the lens", "no", "absent", "—", "NB2",
+   EYE, PRO, "clean", "MEDIUM", "side-on = everyone passing, no one singled out", "deep", "deep", L(STREET_AM, "L"), False, notes="covers B06-TH")
+BB("B07-BR", A1, "The cushion gets thinner. The weight stays exactly the same.", "thinner", "the cushion wears, the load does not",
+   "R1", "L-M-STAIRS", "M-D1", "overhead on the hall floor by the front door: an old white plimsoll, its heel worn thin and flat; her bare foot slides into it", "her foot slides into the worn shoe",
+   "one slide in, about two seconds", STILL, "hall floor, feet only, camera still", "no", "absent", "—", "NB2",
+   OVER, FRO, "clean", "CU", "overhead = the worn sole laid bare", "foreground", "medium", L(M_GREY, "L"), False, notes="covers B07-TH; the worn sole = the thinning cushion")
+BB("B08-BR", A1, "Nothing about the way you walk changed, so you assume nothing changed. And here is the part that catches people out. You do not have to have done anything to your knees for this to happen.", "changed", "ordinary walking",
+   "R1", "L-M-STAIRS", "M-D1", "MEDIUM from behind: Maureen walks down her hall towards the front door, ordinary and unhurried", "four ordinary steps away from the lens",
+   "an ordinary walking pace", STILL, "hall: from behind, full figure small in frame, camera still", "no", "absent", "—", "NB2",
+   EYE, BEH, "clean", "MEDIUM", "from behind = her ordinary day, unobserved", "deep", "deep", L(M_GREY, "R"), False, notes="covers B08-TH")
+BB("B08-BR2", A1, "It makes almost no difference, because the load is not coming from what you did.", "difference", "what you did doesn't matter",
+   "R2", "L-D-STAIRS", "D-D1", "CU Desmond's hand sets a pair of old black football boots, dried mud on the studs, down on the shoe rack by his front door", "the boots set down on the rack",
+   "one set-down, about a second", STILL, "hall by the door, hand and boots only, camera still", "no", "absent", "—", "NB2",
+   HIGH, THR, "clean", "CU", "high = the old boots looked down on, put away", "hands", "shallow", L(D_GREY, "L"), False, notes="covers B08-TH2; no logos on the boots")
+BB("B09-BR", A2, "Which is why most of what gets sold for this cannot work.", "sold", "the pile of things that didn't work",
+   "hands", "L-KITCHEN", "K-D1", "on the oak table: a grey knit knee sleeve, a black hinged brace, a plain white gel tube and a blister pack of tablets laid out together; a hand sets the last one down", "the last item set down",
+   "one set-down, about a second", STILL, "table top, hands only, camera still", "no", "absent", "—", "NB2",
+   HIGH, THR, "clean", "MEDIUM", "high = everything tried, laid out", "hands", "deep", L(KITCH, "L"), False, ledger="F6", notes="covers B09-TH; all unbranded, no print")
+BB("B11-BR", A2, "None of them are aimed at the spot.", "spot", "the sleeve misses the spot",
+   "ANAT", "—", "—", "ANAT-C: the knee as a dark silhouette wrapped in a faint grey knit sleeve over the whole joint, the one spot below the kneecap still glowing untouched", "the spot pulses once, the sleeve does nothing",
+   "one pulse", STILL, "none", "no", "absent", "—", "NB2",
+   EYE, FRO, "clean", "CU", "front = the sleeve round everything, the spot still lit", "deep", "deep", L(ANAT, "L"), False, eg="EG05", notes="covers B11-TH; generic unbranded sleeve")
+BB("B15-BR", A3, "The placement is the whole thing.", "placement", "placement, measured",
+   "R1", "L-M-STAIRS", "M-D2", "ECU seated on her bottom stair: two fingers laid flat just below her kneecap, measuring the spot, the strap held ready in her other hand", "the strap's pad lowers onto the measured spot",
+   "one placement, about two seconds", STILL, "seated, knee and hands only, camera still", "no", "held", "the pad and shell", "NBP",
+   HIGH, THR, "clean", "ECU", "high = her own view, measuring", "hands", "shallow", L(M_SUN, "R"), False, notes="covers B15-TH; PLACE-LOCK")
+BB("B18-BR", A4, "The thing people write to us about most is not the pain.", "write", "the letters",
+   "hands", "L-KITCHEN", "K-D1", "overhead on the oak table: a small pile of handwritten cards and letters, the handwriting too soft to read; a hand spreads them out", "the letters spread out",
+   "one spread, about two seconds", STILL, "table top, hands only, camera still", "no", "absent", "—", "NB2",
+   OVER, FRO, "clean", "CU", "overhead = the letters laid out, read", "hands", "medium", L(KITCH, "R"), False, notes="covers B18-TH; no readable handwriting")
+BB("B19-BR", A4, "And you do not have to take my word for any of it.", "word", "try it yourself",
+   "R1", "L-M-STAIRS", "M-D2", "MEDIUM from behind at the foot of her stairs: Maureen holds one strap in her hand and looks up the flight", "she lifts her eyes up the stairs",
+   "one look up, about two seconds", STILL, "hall: from behind, the strap in her hand, camera still", "no", "held", "the strap in her hand", "NBP",
+   EYE, BEH, "clean", "MEDIUM", "from behind = her test, her stairs", "deep", "deep", L(M_SUN, "L"), False, notes="covers B19-TH")
+BB("B19-BR2", A4, "You will know in a minute. Not because the arthritis has gone. It is still there, and nothing here changes that.", "minute", "coming down with ease",
+   "R1", "L-M-STAIRS", "M-D2", "CU side-on: her hand lets go of the oak handrail as she comes down the stairs steadily", "her hand lifts off the rail mid-step",
+   "one step, about a second and a half", STILL, "stairs: side-on, hand and rail, camera still", "no", "absent", "—", "NB2",
+   EYE, PRO, "clean", "CU", "profile = the hand leaving the rail", "hands", "shallow", L(M_SUN, "L"), False, ledger="F9", notes="covers B19-TH2; no claim shown beyond ease")
+BB("B21-BR", A4, "So here is the choice. Keep aiming at the joint, which is where it hurts but not where the load is.", "joint", "aiming at the joint",
+   "R2", "L-D-STAIRS", "D-D1", "CU seated on his bottom stair: Desmond's hand rubs clear gel in slow circles over his whole kneecap", "two slow circles of the hand",
+   "two circles, about two seconds", STILL, "seated, knee and hand only, camera still", "no", "absent", "—", "NB2",
+   HIGH, THR, "clean", "CU", "high = his own view, rubbing the wrong place", "hands", "shallow", L(D_GREY, "R"), False, ledger="F6", notes="covers B21-TH; plain unbranded gel")
+BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "Sixty", "the offer, delivered",
+   "R1", "L-M-STAIRS", "M-D2", "CU on her doormat: the STRYDE box, just delivered; Maureen's hand picks it up", "the box lifted off the mat",
+   "one lift, about a second", STILL, "hall doormat, hand and box only, camera still", "no", "box", "the box and wordmark", "NBP",
+   HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
+
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ["B01a", "B01b", "B01-TH", "B02", "B03-TH", "B04a", "B04b", "B04c", "B05", "B06-TH", "B06", "B07-TH", "B07", "B08-TH", "B08a", "B08b", "B08-TH2", "B08c",
-        "B09-TH", "B10a", "B10b", "B10c", "B10d", "B11-TH", "B12",
-        "B13", "B14a", "B14b", "B14c", "B15-TH", "B15", "B16a", "B16b", "B16c", "B17a", "B17b", "B17c",
-        "B18-TH", "B18a", "B18b", "B19-TH", "B19a", "B19b", "B19-TH2", "B20", "B21-TH", "B21", "B22a", "B22-TH", "B22c", "B23a", "B23b"]
+BODY = ['B01a', 'B01b', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03-BR', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06', 'B07-TH', 'B07-BR', 'B07', 'B08-TH', 'B08-BR', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []
