@@ -13,6 +13,7 @@ builds/*/plates/*_v*.png
 builds/*/voice/*_v*.png
 builds/*/hooks/*_v*.png
 builds/*/cast/full/
+builds/*/plates/full/
 builds/**/edit/*.err
 builds/**/edit/variants_report.json
 builds/**/_plan_*.json
