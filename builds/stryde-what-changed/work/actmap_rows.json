@@ -167,11 +167,11 @@
   "subject": "R2",
   "location": "L-D-STAIRS",
   "story_day": "D-D1",
-  "framing": "MS Desmond in his hall rising out of a deep squat with a heavy cardboard box of old football kit, knees taking the load",
+  "framing": "MS side-on, waist-down: Desmond lifting a heavy box off his hall floor from a deep squat, knees taking the load",
   "action": "one lift up out of the squat",
   "pace": "one lift, about two seconds",
   "camera": "locked off",
-  "staging": "hall floor by the foot of the stairs, cropped at the chest, face out of frame, camera still",
+  "staging": "hall floor by the foot of the stairs, cropped at the waist, side-on, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "absent",
@@ -180,14 +180,14 @@
   "layout": "full",
   "eg": "",
   "ledger": "VN01",
-  "notes": "user Fix 2026-09-29 'GIVE ME DIFFERENT BROLL HERE' (was one step up onto the stair)",
+  "notes": "user Fixes 2026-09-29 'GIVE ME DIFFERENT BROLL HERE' (was one step up onto the stair), 'FIX THIS', 'FIX THE BROLL' (face kept creeping in front-on → side-on, waist-down)",
   "duration": "pending-master",
   "angle": {
    "height": "low",
-   "side": "front",
+   "side": "profile",
    "fg": "clean",
    "scale": "MS",
-   "why": "low = strength"
+   "why": "low profile = the bent knee and the load read at once"
   },
   "focus": {
    "plane": "foreground",
