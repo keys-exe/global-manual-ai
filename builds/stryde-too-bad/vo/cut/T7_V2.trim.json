@@ -1,0 +1,1 @@
+{"src": "cut/T7_V2.raw.mp3", "out": "cut/T7_V2.mp3", "duration_in_s": 56.54, "breaths_cut": [[2.8, 2.99], [9.76, 9.89], [28.9, 29.04], [36.31, 36.44]], "source_end_db": -87.1, "source_end_clipped": false, "verify": {"duration_s": 56.52, "wpm": 167, "max_wpm": 210, "too_fast": false, "breaths_left": [], "gaps_over_limit": [], "tail_last_db": -58.5, "status": "PASS"}}

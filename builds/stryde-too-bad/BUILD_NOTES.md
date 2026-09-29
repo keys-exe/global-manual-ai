@@ -29,6 +29,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: N-VOICE-IMG v2 sent to Fix ("USE MY AVATAR NARRATOR"). Diagnosed: v2 ignored the sheet (younger, brown hair) and drew a camera-app screen. Fixed: the sheet's face close-up cropped (`voice/N_face_ref.png`, Higgsfield media 4a0599ba…) attached as image 2 beside the sheet, identity restated, camera-UI negatives → v3 (job 847461ac…), To check; v2 on Old. Every job still reports nano_banana_2 though nano_banana_pro is requested.
 
+- 2026-09-29: user "CONFIRMED PROCEED" (N-VOICE-IMG v3). §22U straight through: 3 Kie Kling takes (G3 resent once after Kie "Internal Error") → `voice_source.py` PASS (13.57s, 40.75s looped; lead-ins of G2/G3 cut first, whisper stretched the first word) → clone **TooBad `5Iu9piJEpm2ewCIAa3Wm`** → TTS: T1–T4 (v1 text, pace tags) finish 154–161 wpm; **`speed` has no effect on eleven_v4 (measured)**; T5–T8 (v3 text, Enhance tags only) 166–172 wpm, 55–57s per video → house cut per video, every one PASS. Working take T5. Records: `voice/VOICE_SOURCE.md`, `vo/VO.md`.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the narrator frame N-VOICE-IMG v3 (paid video waits on it, §22X); script flags F2, F4, F5, F7, F8, F9.
-- **Next, no stop:** Kie Kling takes G1–G3 → `voice_source.py` (medium trim, ×1.2, gate, loop ≥30s) → `elevenlabs_clone.py` `TooBad` → `tts_api.py` eleven_v4 speed ~0.85, takes on the board → `vo_trim.py` house cut per variant. Then hooks HK1-01, HK2-01 (step 6).
+- **Waiting on the user:** Confirm one VO take per part (HK1, BODY1, HK2, BODY2) on the board (the run continues on T5); script flags F2, F4, F5, F7, F8, F9.
+- **Next:** hooks one by one (step 6): HK1-01, HK2-01 image prompts → Higgsfield → board.

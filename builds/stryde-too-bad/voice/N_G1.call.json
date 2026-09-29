@@ -8,7 +8,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_124957_847461ac-b45e-40ff-9fb8-538945181735.png",
- "start_approved": false,
+ "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,
@@ -33,5 +33,6 @@
    "prevented_by": "AUD-A + 'Not a narrator, not an advert.'"
   }
  ],
- "route": "Kie AI kling-3.0 (§5 fallback: Kling connector at 3 credits)"
+ "route": "Kie AI kling-3.0 (§5 fallback: Kling connector at 3 credits)",
+ "start_approved_by": "user, 2026-09-29 \"CONFIRMED PROCEED\" (N-VOICE-IMG v3)"
 }

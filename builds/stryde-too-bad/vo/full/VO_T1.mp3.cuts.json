@@ -1,0 +1,59 @@
+{
+ "src": "full/VO_T1.mp3",
+ "duration": 119.2,
+ "cuts": [
+  3.71,
+  60.39,
+  63.58
+ ],
+ "ranges": {
+  "HK1": [
+   0.0,
+   3.71
+  ],
+  "BODY1": [
+   3.71,
+   60.39
+  ],
+  "HK2": [
+   60.39,
+   63.58
+  ],
+  "BODY2": [
+   63.58,
+   119.2
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "delete",
+   "two hundred thousand",
+   ""
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstried"
+  ],
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "delete",
+   "two hundred thousand",
+   ""
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstried"
+  ]
+ ]
+}
