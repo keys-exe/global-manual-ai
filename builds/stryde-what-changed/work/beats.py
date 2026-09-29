@@ -154,12 +154,22 @@ B["HK1-b"] = (NB2, [], anat(
     view="viewed from the side, in profile, the whole knee joint in the middle of the frame with the thigh above and the shin below"))
 
 # ── Hook 2 ──────────────────────────────────────────────────────────────────────────
-B["HK2-a"] = (NB2, [], anat(
-    "Seen from the front, the knee straight and standing, the kneecap in the upper middle of the frame and the patellar tendon running down "
-    "from its lower edge to the top of the shin. Only the tendon glows; the rest of the joint stays calm, lit but not glowing. No thumb, no hand, "
-    "no ruler, nothing held against it for scale. " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
-    view="viewed from the front from a slightly low camera looking up, the kneecap and the tendon below it filling the middle of the frame, "
-         "the lower thigh above and the upper shin below"))
+# HK2-a v2 — user Fix "GIVE ME DIFFERENT BROLL": was an ANAT-A front view (too close to HK1-b); now a real knee on Desmond's stairs.
+B["HK2-a"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held at standing height just in front of him, looking down. He is sitting on the bottom stair of his hall, "
+    "leaning forward over his knees, tying the lace of his right trainer: his right foot flat on the hall floor close to the stair, the "
+    "right knee bent high and nearest the lens, both hands down at the trainer pulling the two lace loops. The bare bent knee fills the "
+    "middle of the frame — the kneecap, and below it the firm band of the tendon standing out under the skin down to the top of the shin. "
+    "The frame is cropped at his chest — his face is not in the frame; it holds the top of his zip-neck, his forearms and hands, his "
+    "shorts, both bare knees, his trainers, the bottom stairs and the hall floor.",
+    R2 + " Wearing " + WARD["D-D1"] + ". His legs and hands: dark brown older skin, strong calves, a few grey hairs on the shins, ashy "
+    "knees with soft creases, thick knuckles, real unretouched skin.",
+    D_STAIRS,
+    angle("HK2-a", "his bent right knee and his hands at the trainer"),
+    focus("his right knee", deep=False),
+    light("D-GREY-L", "his knees and hands"), colour("D-STAIRS-AM")],
+    "no face in frame, no product anywhere, no knee strap, no knee support, no thumb held against the knee, no measuring, no pointing, "
+    "no walking stick, no second person, no standing, no wrong number of legs, no extra hands"))
 
 B["HK2-b"] = (NB2, ["R2", "P2"], photo([
     "A snapshot from a phone held low near the hall floor at the foot of the stairs, three-quarter on to the bottom stair. He is starting UP "
