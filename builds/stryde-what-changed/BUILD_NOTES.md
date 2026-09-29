@@ -102,5 +102,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   steps a second, five or six steps, slow-motion negatives) — NOT SENT: a third video generation of one shot waits for the user's go
   (§22X); card left on `regenerate`. HK3-b "ANATOMY BROLL HERE" → anatomy again, a fourth look: low front three-quarter, knee bent under
   a landing, spot hot (act map + `beats.py`, angles.py PASS), v3 job 15bd1d26 → To check; v2 (worn stairs) moved to Old.
-- **Where it stands:** waiting on the user's go for the HK3-a third clip and their check of the HK3-b v3 image; then the HK3-b clip,
-  then step 7 body B-roll, Act 1 images (12 beats).
+- User "FIX" in reply to the go request → the user's go for the third HK3-a clip (recorded as `user_go`): brisk real-time walk,
+  Kie b8350fd2… 108 cr, 16.8 MB → 2 board parts → To check; v2 moved to Old. HK3-b v3 image confirmed on the board → clip (the knee
+  takes a landing once a second, the spot flares brighter each time; 8 s, preflight PASS), Kie 3125c088… 144 cr → To check.
+- **Where it stands:** waiting on the user's check of the HK3-a v3 and HK3-b clips; then step 7 body B-roll, Act 1 images (12 beats).

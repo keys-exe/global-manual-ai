@@ -100,16 +100,17 @@ B["HK3-a"] = clip("HK3-a",   # v3 — user Fixes: "FIX BROLL, WALKING/ STEPPING 
     4.14, risks=[{"risk": "the walk reads as slow motion again", "prevented_by": "'in real time', about two steps a second named, 'no slow motion, no slow walking'"},
                  {"risk": "brisk walk tips into a jog", "prevented_by": "'a quick purposeful everyday walk', 'no running, no jogging'"},
                  {"risk": "legs warp at the faster pace", "prevented_by": "start frame caught mid-stride, HOLD-C + NEG-WARP-C, locked-off camera"}])
-B["HK3-b"] = clip("HK3-b",
-    "A premium 3D anatomical model of a whole leg from hip to foot, seen from a high three-quarter angle on a near-black field, one small "
-    "tight spot glowing on the patellar tendon just below the kneecap.",
-    "Already under load on the first frame: the leg carries a step's load once a second, and with each pulse the spot at [SITE] glows a "
-    "little warmer and brighter than the last — six steady pulses stacking up — the glow staying one tight spot the whole time.",
+B["HK3-b"] = clip("HK3-b",   # v3 image (user Fixes → anatomy, low front three-quarter, knee bent under a landing)
+    "A premium 3D anatomical model of a knee seen close from a low front three-quarter angle on a near-black field, the knee bent under a "
+    "landing step, one tight spot glowing on the patellar tendon just below the kneecap.",
+    "Already under load on the first frame: the leg takes a landing once a second — the knee bends a little deeper as each step's load "
+    "arrives and eases back — and with each landing the spot at [SITE] flares a little brighter and warmer than the last, the landings "
+    "stacking up, the glow staying one tight spot the whole time.",
     "no arrows, no text, no labels, no numbers, no counter, no glow on the shin bone, no glow spreading along the leg, no second limb, "
     "no product, no camera orbit, no zoom",
     6.14, hi=8, anat=True,
-    risks=[{"risk": "the glow spreads along the leg as it builds", "prevented_by": "'one tight spot the whole time', negatives on spread and shin"},
-           {"risk": "the model swims over 8 s", "prevented_by": "HOLD-C + NEG-WARP-C, locked-off, a single repeating pulse"},
+    risks=[{"risk": "the glow spreads across the joint as it builds", "prevented_by": "'one tight spot the whole time', negatives on spread and shin"},
+           {"risk": "the model swims over 8 s", "prevented_by": "HOLD-C + NEG-WARP-C, locked-off, one small repeating bend"},
            {"risk": "numbers or a counter appear (the 70 million is a post overlay)", "prevented_by": "'no text, no numbers, no counter'"}])
 
 START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
@@ -117,7 +118,7 @@ START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUy
          "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_173257_512cb5a0-c05b-4ab8-af5f-723322275d70.png",
          "HK2-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_174627_a9e02dbb-2d91-4a3d-a960-2a053cdfef10.png",
          "HK3-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_175116_4eefcbcd-8107-4478-bc49-7de4c9de2bb4.png",
-         "HK3-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_175113_a1ea8928-b9b9-4391-b844-e9d8140173aa.png"}
+         "HK3-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_183345_15bd1d26-4f28-4cc9-9e05-a4a65495715d.png"}
 
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
