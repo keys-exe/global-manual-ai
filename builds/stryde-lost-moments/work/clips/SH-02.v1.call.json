@@ -1,0 +1,33 @@
+{
+ "beat": "SH-02",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"sh_02\",\"subject\":\"Close-up looking down into an open wooden dresser drawer holding a grey knee sleeve and a black hinged brace, a woman's hand on the drawer front. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame.\"},\"motion\":\"Already moving on the first frame: her hand pushes the drawer shut in one firm push, about a second, the sleeve and the brace sliding out of sight as it closes; the drawer front meets the dresser and her hand rests on it. The camera stays where it is. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. Mass and momentum: weight transfers first, hands arrive last, fabric lags and settles.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no camera travelling with the subject, no slow motion, no music, no speech, no extra fingers, no fused fingers, no melted hands, no drawer bouncing open, no items flying, no face in frame\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_131218_40004983-1de9-4bba-aea4-0a11c59f5652.png",
+ "start_approved": true,
+ "approved_by": "user: 'I'VE CONFIRM PROCEED' (2026-09-29) on the Act 1 images",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "drawer or items warp as it closes",
+   "prevented_by": "one push, about a second; HOLD clause; 'no items flying'"
+  },
+  {
+   "risk": "hand fuses with the drawer",
+   "prevented_by": "hand large in frame, one movement; 'no melted hands'"
+  },
+  {
+   "risk": "camera follows the drawer",
+   "prevented_by": "camera propped, stays where it is"
+  }
+ ]
+}

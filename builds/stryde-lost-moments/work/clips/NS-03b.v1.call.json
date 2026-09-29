@@ -1,0 +1,33 @@
+{
+ "beat": "NS-03b",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"ns_03b\",\"subject\":\"Close-up of two hands holding the knee strap up toward the lens with its smooth inner pad facing the camera. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame.\"},\"motion\":\"The hands hold the strap still toward the lens; only a small natural settle of the hands in the first second, then stillness. The strap does not turn or rotate \u2014 the pad stays facing the camera the whole time. The strap keeps its exact shape, size and wordmark in every frame and moves only with the body it sits on; its rigid shell never bends. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. Mass and momentum: weight transfers first, hands arrive last, fabric lags and settles.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no camera travelling with the subject, no slow motion, no music, no speech, no bending, no curling, no folding, no melting, no flipping of the product, no strap sliding on the leg, no product covering the kneecap, no second unit, no extra fingers, no fused fingers, no melted hands, no strap rotating, no turning the strap, no wordmark appearing on the pad, no second strap\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_131257_822a2cd9-483a-40ec-8da2-540c498262af.png",
+ "start_approved": true,
+ "approved_by": "user: 'I'VE CONFIRM PROCEED' (2026-09-29) on the Act 1 images",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the strap turns and changes shape",
+   "prevented_by": "\u00a727G: don't animate the turn \u2014 the frame is already turned; 'no strap rotating'"
+  },
+  {
+   "risk": "fingers merge with the band",
+   "prevented_by": "hands still; hand negatives"
+  },
+  {
+   "risk": "pad gains texture or text",
+   "prevented_by": "'no wordmark appearing on the pad'"
+  }
+ ]
+}

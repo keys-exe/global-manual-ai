@@ -1,0 +1,33 @@
+{
+ "beat": "SH-04a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"sh_04a\",\"subject\":\"Extreme close-up from the side of a man's right leg stepping up a York-stone garden step, the black knee strap snug just under his kneecap. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame.\"},\"motion\":\"Already stepping on the first frame: he steps up onto the next stone step, one step in about a second, weight rolling onto the right leg, the knee straightening under it with no hesitation; the left foot follows past the lens. The strap keeps its exact shape, size and wordmark in every frame and moves only with the body it sits on; its rigid shell never bends. The movement is completely unthinking \u2014 brisk even rhythm, upright, weight flowing through it, hands free and never reaching for anything, the action so ordinary it earns no attention from the person doing it. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. Mass and momentum: weight transfers first, hands arrive last, fabric lags and settles.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no camera travelling with the subject, no slow motion, no music, no speech, no bending, no curling, no folding, no melting, no flipping of the product, no strap sliding on the leg, no product covering the kneecap, no second unit, no limping, no favouring one leg, no wincing, no grimacing, no gritted teeth, no laboured movement, no visible effort, no strain, no hesitation, no pause on a step, no both feet meeting on one step, no step-to gait, no slow cautious movement, no eyes fixed on the feet, no wobble, no struggle, no second attempt, no starting mid-flight, no arrival completed inside the clip, no stumble, no slipping foot, no hand on anything\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_131216_bb821ff5-c3ba-4bde-aa46-3abede5e45a7.png",
+ "start_approved": true,
+ "approved_by": "user: 'I'VE CONFIRM PROCEED' (2026-09-29) on the Act 1 images",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "legs blend mid-step",
+   "prevented_by": "\u00a727G stairs staging: side, one step, camera still; HOLD clause"
+  },
+  {
+   "risk": "strap slides as the knee straightens",
+   "prevented_by": "rigid clause; 'no strap sliding on the leg'"
+  },
+  {
+   "risk": "step reads as effort",
+   "prevented_by": "AFTER-EASE; NEG-EFFORT"
+  }
+ ]
+}

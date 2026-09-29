@@ -1,0 +1,33 @@
+{
+ "beat": "SH-04b",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"sh_04b\",\"subject\":\"Close-up looking down at a woman's right knee as she sits on a sofa, the black knee strap snug under her kneecap, her fingertips at the skin below its lower edge. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame.\"},\"motion\":\"Already moving on the first frame: her fingertips slide once along the smooth skin just below the strap's lower edge, one slow slide in about a second, then rest. Fingertips touch only skin, never the strap. The strap keeps its exact shape, size and wordmark in every frame and moves only with the body it sits on; its rigid shell never bends. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. Mass and momentum: weight transfers first, hands arrive last, fabric lags and settles.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no camera travelling with the subject, no slow motion, no music, no speech, no bending, no curling, no folding, no melting, no flipping of the product, no strap sliding on the leg, no product covering the kneecap, no second unit, no extra fingers, no fused fingers, no melted hands, no redness appearing, no marks on the skin, no fingers on the strap, no face in frame\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_131214_3fc00a27-9a03-40f8-b9ff-40f9e964eb9f.png",
+ "start_approved": true,
+ "approved_by": "user: 'I'VE CONFIRM PROCEED' (2026-09-29) on the Act 1 images",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "fingers merge with the strap",
+   "prevented_by": "'fingertips touch only skin, never the strap'; hand negatives"
+  },
+  {
+   "risk": "skin changes colour",
+   "prevented_by": "'no redness appearing, no marks'"
+  },
+  {
+   "risk": "strap shifts",
+   "prevented_by": "rigid clause; product negatives"
+  }
+ ]
+}
