@@ -130,6 +130,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   HK3 'somebody'); ADJUST (build-local, `hooks/plan/assemble_local.py`): minimum hold 1.5 s instead of 2.0 s for this build — the shared assemble.py is
   unchanged. Re-cut v2: every cut-in 0.1 s before its first word; all PASS. v1 cuts to the Old board.
 
+- 2026-09-29 ~14:25 UTC: user "the broll ends even though the script line hasnt finish yet" → diagnosed: the 0.1 s lead cut each B-roll into the previous
+  line's ringing last word, HK3's scans cut back exactly on 'cartilage' (word end 4.9) and HK2 flashed 0.14 s of doctor at the end. Fix (build-local
+  ADJUST in `hooks/plan/assemble_local.py`): --lead 0 (cut on the next line's first word) and a longer hold (DFA_HOLD: HK1 3.0, HK2 5, HK3 4.69 → ends
+  exactly on 'I have started', 5.48 s). v3 cuts PASS (length = master, no black) → board; v2 to the Old board.
+
 ## Where it stands
 - **Waiting on the user:** the three hook rough cuts (HK1-CUT, HK2-CUT, HK3-CUT) — the step-6 hooks gate.
 - **Then:** step 7 — body B-roll act by act (images → the user's Confirm → videos), then the finished variants (variants.py: HKn + the body), CapCut block.

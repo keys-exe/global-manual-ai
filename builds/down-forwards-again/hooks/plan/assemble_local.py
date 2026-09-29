@@ -6,6 +6,10 @@ import sys, runpy, pathlib
 S = pathlib.Path(__file__).resolve().parents[4] / ".claude/skills/ai-prompt-engineer/scripts"
 sys.path.insert(0, str(S))
 g = runpy.run_path(str(S / "assemble.py"), run_name="assemble_lib")
-g["MIN_FLASH"] = 1.5
-g["main"].__globals__["MIN_FLASH"] = 1.5
+import os
+G = g["main"].__globals__
+G["MIN_FLASH"] = 1.5
+# ADJUST 2026-09-29, user: "the broll ends even though the script line hasnt finish yet": B-roll holds past its line's last word
+# (DFA_HOLD seconds on screen when the footage and the next cut allow); cuts land on the next line's first word (--lead 0).
+if os.environ.get("DFA_HOLD"): G["HOLD"] = float(os.environ["DFA_HOLD"])
 g["main"]()
