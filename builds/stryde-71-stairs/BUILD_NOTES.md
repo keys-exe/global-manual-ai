@@ -85,8 +85,15 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   superseded by the V7.66.0 Avatar-V-only rule and were not put on the board. TH-01 begins on the tail of "up" (connected speech,
   no gap in the take). New beat times: HK-01a/b 0–~4.1 s, HK-02a/b ~4.1–7.98 s, TH-01 7.98–10.68 s (see beats.json).
 
+- 2026-09-29 ~07:30 UTC: user "REMOVE THE LAUGH AND SIGH" → `[laughs]`, `[chuckles]` ×2, `[sighs]` removed from the Enhance text
+  (`vo/ALL.enhanced.v2.fitted.txt`, tts_budget verbatim PASS, 3,486 chars, 15 tags left) → 4 new eleven_v4 takes (`tts_api.py`,
+  `vo/full/v2/`) → V7.66.0 house cut (`vo/cut/v3/`): T1 205.9 s FAIL (breath 166.75 s), **T2 209.95 s 175 wpm PASS = working take**,
+  T3 208.5 s FAIL (breath 168.8 s), T4 211.6 s FAIL (breath 156.4 s). One Avatar V render of T2 (HeyGen 8978513a…, 209.9 s, no
+  motionPrompt) → TH cut points `vo/cut/v3/VO_T2.beats.json` → 16 THs `trim.py` PASS → board. The T1-based THs + VO cuts + one-go
+  render moved to the Old board.
+
 ## Where it stands
-- **Voice stage redone to V7.66.0** (2026-09-29): VO T1–T4 (new cut) + TH-ALL-T1 + TH-01…16 v3 on the board To check. Working take T1; a confirmed different take → one new Avatar V render + re-cut.
+- **Voice stage redone to V7.66.0, no laugh/sigh** (2026-09-29): VO takes (text v2) + TH-ALL-T1 (now T2) + TH-01…16 on the board To check. Working take **T2** (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`); a confirmed different take → one new Avatar V render + re-cut.
 - **Step 6 — hooks (the hook gate):** Hook 1: HK-02a video confirmed (use); HK-01a new frame v2 To check (then its video, gen 2).
   Hook 2 (mall): P8-MALL plate + HK-01b/HK-02b v2 images To check → then their videos on Kie.
   Beat times from `vo/cut/VO_T1.beats.json`: HK-01a 0.00–3.84s, HK-02a 4.04–7.00s, TH-01 7.00–8.94s (Hook 2 uses the same times).
