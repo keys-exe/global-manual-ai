@@ -54,15 +54,15 @@ TH("TH-HK1", "Hook 1", ["HK1-01", "HK1-02", "HK1-03"], "straight to lens, level;
 row("HK1-01a","Hook 1",["HK1-01"],"BR","P","L-TUBE","P-D2","runs lightly DOWN the entrance stairs of an Underground station, forwards, both hands free (never on the rail)","one stride, 2s",
     "locked-off sway","stairs descending (§27G: one stride, arms free, camera at the foot)","no","low","front","FULL","clean",
     "low = the stairs she now owns, out in the world","deep","deep","R","stairs",product="worn · CONCEALED under trousers (§9D)",layout=FULL,face=True)
-row("HK1-02a","Hook 1",["HK1-02"],"BR","P","L-HOSP","P-D1","the surgeon holds a total knee replacement implant above her bare LEFT knee","one lowering, 2s",
-    "sway","hands (§27G: one action)","no","high","three-quarter","CU","clean","high = small on the bed, the knee replacement she nearly had",
-    "medium","hands","L","operation",layout=FULL)
-row("HK1-02b","Hook 1",["HK1-02"],"BR","P","L-PHYSIO","P-D1","NHS physio class: a slow step-down on a low step, the physio watching her knee","one step-down, 3s",
-    "sway","stepping down (§27G: one step, hand on the bar)","no","eye","three-quarter","FULL","clean","eye/three-quarter = with her, one of a class",
+row("HK1-02a","Hook 1",["HK1-02"],"BR","P","L-ORTHO","P-D1","over the surgeon's shoulder: he holds a knee replacement implant out to her across the desk; her worried face","held, 2s",
+    "sway","seated (§27G: still, one small lean back)","no","eye","ots","MCU","through","ots = the surgeon's proposal, pressed on her",
+    "medium","eyes","L","operation",layout=FULL,face=True)
+row("HK1-02b","Hook 1",["HK1-02"],"BR","P","L-PHYSIO","P-D1","busy NHS physio class: she strains through a step-up between the parallel bars, the physio spotting her knee","one step-up, 3s",
+    "sway","stepping up (§27G: one step, both hands on the bars)","no","ground","three-quarter","FULL","through","ground = the step that hurts; through the bars = trapped in it",
     "medium","eyes","L","physio",layout=FULL,face=True)
-row("HK1-02c","Hook 1",["HK1-02"],"BR","P hands","L-P-KITCH","P-D1","holds the STRYDE strap up to the lens, the overflowing brace drawer soft behind","held still, a small turn, 2s",
-    "sway","hands (§27G: one action, HELD_GRIPS)","no","eye","front","CU","clean","eye/front = the answer held up against the pile",
-    "shallow","product","R","drawer",product="held (HELD_GRIPS fingertips behind) · focus on the strap only",layout=CUT,model="NBP")
+row("HK1-02c","Hook 1",["HK1-02"],"BR","P hand","L-P-KITCH","P-D1","from inside the drawer, past the old braces: her hand lifts the STRYDE strap out","one lift, 2s",
+    "sway","hands (§27G: one action, HELD_GRIPS bottom-edge pinch)","no","ground","front","CU","through","ground/through = from among the old braces, the one that works",
+    "shallow","product","R","drawer",product="held (HELD_GRIPS bottom-edge pinch) · focus on the strap only",layout=CUT,model="NBP")
 # ---- HOOK 2 — against his own interest ------------------------------------------------------------------
 TH("TH-HK2", "Hook 2", ["HK2-01", "HK2-02"], "leans in a touch on 'before you come and see me'; one flat hand down on the desk on 'not a prescription'")
 # §34 2026-09-29 board Fix: "THE TEN SECONDS IT MEANS TEN SECONDS TO PUT ON THE STRYDE STRAP" → seating beat (§9B), product's first appearance

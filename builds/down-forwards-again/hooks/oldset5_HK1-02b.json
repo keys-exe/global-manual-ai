@@ -1,0 +1,46 @@
+{
+ "act": "Hook 1",
+ "beat": "HK1-02b",
+ "build": "down-forwards-again",
+ "flow": [
+  "image"
+ ],
+ "imageAsset": "db42ad08578b3030cb143643a8c1a892",
+ "imageAt": 1790686100000,
+ "imageConnector": "Higgsfield",
+ "imageFault": "its too simple and the caemra angle i dont like",
+ "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic \u2014 exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nTHE CAMERA ANGLE: the lens at the subject's eye height, level, seen from a three-quarter angle of her on the exercise step. This exact angle, not a straight-on eye-level view.\n\nFOCUS: the nearest eye of the woman is in sharp focus; the room behind falls to a soft, recognisable shape. The blur is optical: soft and round, never smeared.\n\nAn NHS hospital physiotherapy gym on a weekday morning, a knee class in progress: a long room with a sprung blue floor, parallel bars along one wall, wall bars and a rack of coloured resistance bands, a row of plastic chairs, and three or four other older patients in their own clothes doing the same exercise on their own low steps behind her, soft. No posters with readable words, no logos.\n\nA snapshot from a phone held at eye height by someone standing across the room, not looking at the screen. THE SAME WOMAN exactly as in the attached reference sheet \u2014 a white British woman of sixty-nine, short and petite with a slight stoop, a small fine-boned oval face, pale grey-blue eyes, a small straight nose, a thin upper lip with a small mole above its right corner, chin-length layered hair dyed chestnut brown with silver roots at the parting, tucked behind the ears \u2014 unchanged in face, age and build; only her clothes are different today. She wears a cream fine-knit roll-neck under an oatmeal cable-knit cardigan buttoned once, a knee-length plum wool skirt with bare legs, and reading glasses on a cord round her neck. She is doing a step-down exercise on a low grey aerobic step, one hand on the parallel bar beside her for balance, caught mid-movement: her weight on her right leg on the step, her LEFT foot lowering slowly towards the floor, her left knee trembling, her jaw set, her brow creased with the effort, eyes on her foot, mouth shut. A physiotherapist in a navy NHS-style tunic and trousers crouches beside her with one hand hovering near her left knee, watching it, a clipboard tucked under her arm with no readable writing.\n\nTHE LIGHT: The tall windows along the gym's far wall lights her from the left of the frame, grey even daylight, the problem days, with the gym's ceiling panels on, so the face has a lit side toward the left and a softer shadow side, with a small catchlight in the eyes. The shadows fall away from that source, one way only.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no AI face, no plastic skin, no extra fingers, no fused fingers, no melted hands, no CGI look, no fake commercial gloss, no moody dark grade, no glowing skin, no shadows falling in two directions, no lens flare, no home, no living room, no front room, no smiling, no strap product, no brace, no readable words anywhere, no NHS logo, no gym brand, no feet cut off, no crowd blocking her, no readable text, logos, brand names or labels anywhere",
+ "imageRes": "1536\u00d72752",
+ "imageStatus": "regenerate",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122455_96983a1e-6e9c-4dcc-bfab-0dae5394ef76.png",
+ "imageVersions": [
+  {
+   "asset": "00f6133bcb3bde2774cd5ba799921050",
+   "at": 1790680600000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "first render \u2014 DONT JUST SHOW 1 BROLL HERE SHOW ALL OF THOSE",
+   "size": 10279230,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_101529_caaf587d-99b8-4882-91b6-3ccf859f3d90.png",
+   "v": 1
+  },
+  {
+   "asset": "db42ad08578b3030cb143643a8c1a892",
+   "at": 1790686100000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "should be a COURSE not at  home",
+   "size": 8398628,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122455_96983a1e-6e9c-4dcc-bfab-0dae5394ef76.png",
+   "v": 2
+  }
+ ],
+ "line": "Without another course of physio.",
+ "stage": "hooks",
+ "status": "regenerate",
+ "title": "HK1-02b \u00b7 old versions",
+ "updatedAt": 1790687400000
+}

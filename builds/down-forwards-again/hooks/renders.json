@@ -102,5 +102,17 @@
  "HK1-02c_v2": {
   "job": "183c767a-1d7e-436d-8be6-a49ab09bb629",
   "asset": "9d78e9663f7a6a689aa72fde933497e4"
+ },
+ "HK1-02a_v5": {
+  "job": "b6817ac4-bb3e-4664-929d-c9bbff5f4c92",
+  "asset": "1cae1980e86c8d227c51a1209a9bd710"
+ },
+ "HK1-02b_v3": {
+  "job": "cac8d27e-8831-4308-ae56-9baa5701182b",
+  "asset": "8b0bfd57fa3841b05e7a3348239ca28b"
+ },
+ "HK1-02c_v3": {
+  "job": "11e82707-e797-4344-9f15-ded96a1bf821",
+  "asset": "cf3b23d29a8fd43690799b03a2baff49"
  }
 }

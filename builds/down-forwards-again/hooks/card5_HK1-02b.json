@@ -1,0 +1,51 @@
+{
+ "imageStatus": "review",
+ "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic \u2014 exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nTHE CAMERA ANGLE: the lens a few centimetres off the floor, looking along it and slightly up, seen from a three-quarter angle of her between the parallel bars, looking past the upright of the near parallel bar, soft in the near foreground. This exact angle, not a straight-on eye-level view.\n\nFOCUS: the nearest eye of the woman is in sharp focus; the room behind falls to a soft, recognisable shape. The blur is optical: soft and round, never smeared.\n\nA busy NHS hospital physiotherapy gym mid-morning, a knee class in full swing: a sprung blue floor, two long wooden parallel bars running away from the camera, wall bars, a rack of coloured resistance bands, exercise balls and low steps, and behind her a row of five or six other older patients in their own clothes all doing the same step-up at their own steps, a physio at the front of the class calling the count with one hand raised, soft. No posters with readable words, no logos.\n\nA snapshot from a phone held down on the floor by someone kneeling at the end of the parallel bars, not looking at the screen. THE SAME WOMAN exactly as in the attached reference sheet \u2014 a white British woman of sixty-nine, short and petite with a slight stoop, a small fine-boned oval face, pale grey-blue eyes, a small straight nose, a thin upper lip with a small mole above its right corner, chin-length layered hair dyed chestnut brown with silver roots at the parting, tucked behind the ears \u2014 unchanged in face, age and build; only her clothes are different today. She wears a cream fine-knit roll-neck under an oatmeal cable-knit cardigan buttoned once, a knee-length plum wool skirt with bare legs, and reading glasses on a cord round her neck. She stands between the parallel bars gripping both bars hard, knuckles white, caught in the middle of stepping up onto a low grey step with her LEFT foot, the left knee bent and shaking under the load, her whole weight hanging on her arms, her face screwed up with the effort, a sheen of sweat on her forehead, eyes on her knee, mouth shut. A physiotherapist in a navy tunic crouches at her side with both hands hovering either side of her left knee, spotting it. Her feet, the step and the floor are big and close in the lower frame.\n\nTHE LIGHT: The tall windows along the gym's far wall lights her from the left of the frame, grey daylight with the gym's ceiling panels on, the problem days, so the face has a lit side toward the left and a softer shadow side, with a small catchlight in the eyes. The shadows fall away from that source, one way only.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no AI face, no plastic skin, no extra fingers, no fused fingers, no melted hands, no CGI look, no fake commercial gloss, no moody dark grade, no glowing skin, no shadows falling in two directions, no lens flare, no home, no living room, no smiling, no strap product, no brace, no readable words anywhere, no NHS logo, no gym brand, no crowd blocking her, no eye-level camera, no readable text, logos, brand names or labels anywhere",
+ "imageModel": "nano_banana_2",
+ "imageAsset": "8b0bfd57fa3841b05e7a3348239ca28b",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_123623_cac8d27e-8831-4308-ae56-9baa5701182b.png",
+ "imageAt": 1790687400000,
+ "imageRes": "1536\u00d72752",
+ "updatedAt": 1790687400000,
+ "imageVersions": [
+  {
+   "archiveAsset": "00f6133bcb3bde2774cd5ba799921050",
+   "archived": true,
+   "asset": "70c8af4337931cc25b1da2ab85bebd8d",
+   "at": 1790680600000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "first render \u2014 DONT JUST SHOW 1 BROLL HERE SHOW ALL OF THOSE",
+   "size": 10279230,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_101529_caaf587d-99b8-4882-91b6-3ccf859f3d90.png",
+   "v": 1
+  },
+  {
+   "asset": "090654e23894b06374a9ecd8ccae6ac4",
+   "at": 1790686100000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "should be a COURSE not at  home",
+   "size": 8398628,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122455_96983a1e-6e9c-4dcc-bfab-0dae5394ef76.png",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "db42ad08578b3030cb143643a8c1a892"
+  },
+  {
+   "v": 3,
+   "asset": "8b0bfd57fa3841b05e7a3348239ca28b",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_123623_cac8d27e-8831-4308-ae56-9baa5701182b.png",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "connector": "Higgsfield",
+   "size": 8207535,
+   "at": 1790687400000,
+   "note": "its too simple and the caemra angle i dont like"
+  }
+ ],
+ "imageNote": "v3 \u2014 your Fix: its too simple and the caemra angle i dont like"
+}

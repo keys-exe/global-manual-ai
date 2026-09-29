@@ -92,7 +92,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   drawer soft behind. HK2-02a (strap put on) and HK3-01a confirmed by the user. `hooks/build_hooks_v4.py`; jobs 76034f69, b03e5124, 96983a1e, 183c767a.
   Replaced versions moved to the Old board. Act map + STEP4_5 + docs/actmap updated; angles.py PASS. Higgsfield 17,445.25.
 
+- 2026-09-29 ~12:35 UTC: user "fiix those" → board Fix notes (§34); HK1-01a v4 confirmed. HK1-02a "not an operation immediately — the doctor proposing a knee
+  replacement" → v5 consultation (L-ORTHO): over the surgeon's shoulder, implant held out across the desk, her worried face (SKIN-T); HK1-02b "too simple,
+  camera angle" → v3 busy NHS physio class, ground level through the parallel bars, straining step-up, physio spotting; HK1-02c "create a new one" → v3 from
+  inside the drawer past the old braces, her hand lifts the STRYDE strap out (HELD_GRIPS bottom-edge pinch, focus on the strap). `hooks/build_hooks_v5.py`;
+  jobs b6817ac4, cac8d27e, 11e82707. Replaced versions to the Old board. Act map + STEP4_5 + docs/actmap updated; angles.py PASS. Higgsfield 17,398.25.
+
 ## Where it stands
-- **Waiting on the user:** HK1-01a v4, HK1-02a v4, HK1-02b v2, HK1-02c v2 on the board — Confirm or Fix. HK2-02a v3 and HK3-01a confirmed (images).
+- **Waiting on the user:** HK1-02a v5, HK1-02b v3, HK1-02c v3 on the board — Confirm or Fix. Confirmed images: HK1-01a v4, HK2-02a v3, HK3-01a v2.
 - **Then:** each confirmed frame → its Kling 3.0 Omni video via Kie (§22X preflight, §27G, length from `assemble.py --lengths` on the locked VO);
   HK2-02a is a pinned seating clip (end frame: the strap seated, W-L-FRONT placement). Then B-roll acts (step 7), CapCut block.

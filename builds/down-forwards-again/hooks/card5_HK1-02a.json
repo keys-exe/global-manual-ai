@@ -1,0 +1,77 @@
+{
+ "imageStatus": "review",
+ "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic \u2014 exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nTHE CAMERA ANGLE: the lens at the surgeon's shoulder height, looking over his near shoulder across the desk at her. This exact angle, not a straight-on eye-level view.\n\nFOCUS: the nearest eye of the woman is in sharp focus; the room behind falls to a soft, recognisable shape. The blur is optical: soft and round, never smeared.\n\nAn NHS orthopaedic outpatient consulting room: a plain desk between them, a computer screen turned away showing nothing readable, a lightbox on the wall behind her with a knee X-ray clipped to it, soft, a pale green wall, a window to the left.\n\nA snapshot from a phone held at shoulder height just behind the surgeon's chair, not looking at the screen. In the near foreground, soft and out of focus, the back of the surgeon's head and his right shoulder in a navy suit jacket, his forearm reaching across the desk: his hand holds out a TOTAL KNEE REPLACEMENT IMPLANT towards her \u2014 a polished chrome-cobalt femoral component curved like a knuckle on a grey-white plastic spacer and a metal tibial tray with a short stem, mirror-bright \u2014 the implant sharp in the middle of the frame. Across the desk, sharp: THE SAME WOMAN exactly as in the attached reference sheet \u2014 a white British woman of sixty-nine, short and petite with a slight stoop, a small fine-boned oval face, pale grey-blue eyes, a small straight nose, a thin upper lip with a small mole above its right corner, chin-length layered hair dyed chestnut brown with silver roots at the parting, tucked behind the ears \u2014 unchanged in face, age and build; only her clothes are different today. She wears a cream fine-knit roll-neck under an oatmeal cable-knit cardigan buttoned once, a knee-length plum wool skirt with bare legs, and reading glasses on a cord round her neck. She sits on the patient's chair with her handbag on her lap and both hands clenched on its handle, leaning back slightly away from the implant, looking at it, her brow drawn together, her lips pressed tight, the worried face of someone being told she needs a new knee, mouth shut.\n\nTHE LIGHT: The window on the room's left wall lights her face from the left of the frame, flat grey daylight, the problem days, so the face has a lit side toward the left and a softer shadow side, with a small catchlight in the eyes. The shadows fall away from that source, one way only.\n\nFOREHEAD \u2014 greasy, and the light on it does not make one smooth sheen: the sebum highlight is broken into hundreds of separate pinpoint glints with dark pits between them, three deep horizontal creases and a fine crosshatch of smaller ones, individually resolved enlarged pores across the whole brow. NOSE \u2014 the roughest zone, pores wide open and clearly individual across the tip and both sides, a patch of dry flaking beside one nostril, two or three broken capillaries, the bridge highlight broken up rather than sweeping. CHEEKS \u2014 matte, rough and mottled, the surface visibly uneven with real relief in it, blotchy capillary redness under fine age spots and faint thread veins, every fine hair casting its own small shadow, crepe gathering into slack folds under the eyes. Fine vertical lines around the lips, the lips dry. Along the terminator across the near cheek every pit and groove throws a shadow. Neck looser and more creped than the face. No area of the face is one flat colour and no area of it is smooth. Bare skin, no makeup, unflattering.\n\nTHE PHONE'S PROCESSING HAS MADE THE SKIN WORSE, NOT BETTER. The iPhone 17's pipeline has over-sharpened the face the way it does in directional light: every pore, hair and line crunched into crisp micro-contrast with a faint bright halo along the jaw and the hairline where the sharpening overshoots, Smart HDR 5 flattening the big contrast so the lit and shadow sides both hold detail, and the noise reduction smearing the fine texture into a faint watercolour smoothness only in the deepest shadow while the lit skin stays harshly detailed. The skin reads as terrain, not a surface.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no smooth sheen sweeping across the forehead, no unbroken highlight on the nose, no unbroken highlight on the cheek, no smooth gradient between features, no even frontal light, no soft window light filling the face, no shadowless face, no everything-in-focus, no clean noiseless shadows, no clean white window with detail in it, no finished image, no considered composition, no polished render, no advertising image, no editorial portrait, no beauty close-up, no studio portrait, no AI face, no plastic skin, no extra fingers, no fused fingers, no melted hands, no CGI look, no fake commercial gloss, no moody dark grade, no glowing skin, no shadows falling in two directions, no lens flare, no hospital bed, no gown, no surgery, no blood, no scar, no marker arrow, no strap product, no brace, no surgeon's face, no second implant, no plastic toy, no readable writing on the screen, the X-ray or the walls, no smiling, no readable text, logos, brand names or labels anywhere",
+ "imageModel": "nano_banana_2",
+ "imageAsset": "1cae1980e86c8d227c51a1209a9bd710",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_123622_b6817ac4-bb3e-4664-929d-c9bbff5f4c92.png",
+ "imageAt": 1790687400000,
+ "imageRes": "1536\u00d72752",
+ "updatedAt": 1790687400000,
+ "imageVersions": [
+  {
+   "archiveAsset": "4a2888e5517f48bf4e499fbbd4f14efe",
+   "archived": true,
+   "asset": "9b6bff627f776aa45f03181c0446bc68",
+   "at": 1790674000000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "first render",
+   "size": 9102684,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_084137_e46ab752-3e0f-4589-b76b-aa7b65a8d1cf.png",
+   "v": 1
+  },
+  {
+   "archiveAsset": "1531df887279d14d5511439a02434f94",
+   "archived": true,
+   "asset": "b4e3ae0388ac334685084cc03f807c88",
+   "at": 1790676200000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "I WANT A HOOK THAT WILL SELL I DONT WANT THIS NORMAL LOOKING HOOKS \u2014 redesigned as a scroll-stopping hook picture \u00b7 carried to HK1-02c (the drawer), still in use there",
+   "size": 8701836,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_091945_fd67eaff-29d4-41ce-8e4e-5503295b0379.png",
+   "v": 2
+  },
+  {
+   "archiveAsset": "593b3ea1cb73bd4ae8128d4b9ae24d99",
+   "archived": true,
+   "asset": "006a95b7a757448582252086aab94dc5",
+   "at": 1790680600000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "DONT JUST SHOW 1 BROLL HERE SHOW ALL OF THOSE \u2192 the operation",
+   "size": 9403911,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_101529_21b325d8-1268-4bc2-9ea2-df86157172fb.png",
+   "v": 3
+  },
+  {
+   "asset": "77a6776c1175ad26f063e8a0bf959384",
+   "at": 1790686100000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "the operation is a knee replacement",
+   "size": 8800536,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122458_b03e5124-a8b2-437d-807c-8bced68e745d.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "ba6fa3d7a75f0bba1a09fd92c0771fc9"
+  },
+  {
+   "v": 5,
+   "asset": "1cae1980e86c8d227c51a1209a9bd710",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_123622_b6817ac4-bb3e-4664-929d-c9bbff5f4c92.png",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "connector": "Higgsfield",
+   "size": 7268353,
+   "at": 1790687400000,
+   "note": "it should not be an operation immedietlyi it should be like the doctor proposing a knee replacement"
+  }
+ ],
+ "imageNote": "v5 \u2014 your Fix: it should not be an operation immedietlyi it should be like the doctor proposing a knee replacement"
+}
