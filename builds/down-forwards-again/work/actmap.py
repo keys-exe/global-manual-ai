@@ -86,17 +86,31 @@ row("MECH-01","Act 1",["B-01"],"MECH","anatomy","—","MECH","ANAT: the LEFT kne
 row("BR-02","Act 1",["B-02"],"BR","D hands","L-D-CONS","D-D1","clips her knee X-ray onto the window glass","one clip, 2s",
     "sway","hands","no","low","three-quarter","CU","clean","low = the scan looms over us","medium","foreground","back","scan",layout=PIP,
     )
+# the user, 2026-09-29 (video Fix on MECH-03): "this should be cut into 4 brolls" → B-03 split: MECH-03a (where), BR-03b (how wide, her own thumb),
+# MECH-03 (every step — keeps its confirmed image), MECH-03d (seventeen times)
+row("MECH-03a","Act 1",["B-03"],"MECH","anatomy","—","MECH","ANAT-A front view: the kneecap, and a thumb's width below it one small spot on the tendon lights","one push in, 2s",
+    "RV render","none","no","eye","front","CU","clean","front = where it is on your own knee","deep","deep","L","below",layout=PIP,eg="EG07")
+row("BR-03b","Act 1",["B-03"],"BR","P hand","L-P-FRONT","P-D1","her thumb laid flat across the band under her LEFT kneecap, as wide as it","one lay-down, 2s",
+    "sway","hands","no","eye","three-quarter","ECU","clean","eye + three-quarter = the band's width against her own thumb","medium","hands","L","thumb",layout=PIP)
 row("MECH-03","Act 1",["B-03"],"MECH","anatomy","—","MECH","ANAT-A: the patellar tendon below the kneecap lights red as one band, one step lands on it","one step, 3s",
-    "RV render","none","no","eye","profile","CU","clean","profile = the band's side view under the kneecap","deep","deep","L","tendon",layout=SPL,eg="EG07 · 17× card")
+    "RV render","none","no","eye","profile","CU","clean","profile = the band's side view under the kneecap","deep","deep","L","tendon",layout=SPL,eg="EG07")
+row("MECH-03d","Act 1",["B-03"],"MECH","anatomy","—","MECH","ANAT-A load: the body's whole weight pressed down the bent leg into the band, the band blazing near-white","one press of load, 2s",
+    "RV render","none","no","low","three-quarter","MEDIUM","clean","low = the weight bearing down on it","deep","deep","L","Seventeen",layout=SPL,eg="EG07 · 17× card")
 row("BR-04","Act 1",["B-04"],"BR","P hand","L-P-FRONT","P-D1","her forefinger presses into the soft spot just under her LEFT kneecap, the skirt hem lifted clear of the knee","one press, 2s",
     "sway","hands","no","high","front","ECU","clean","high = the viewer's own look down at their knee","medium","hands","L","press",layout=PIP,eg="EG06 red arrow")
+# the user, 2026-09-29 (video Fix on BR-05a): "this should be 2 brolls" → BR-05 carries "Coming down is worse than going up."; BR-05a keeps its image for the rest
+row("BR-05","Act 1",["B-05"],"BR","P","L-P-HALL","P-D1","at the top of the flight she stops and looks down it, both hands on the banister, and hesitates","one held breath, 2s",
+    "sway","stairs at the top (§27G: no step taken, hands on the rail)","no","high","three-quarter-back","FULL","clean",
+    "high + behind her = the drop she has to take","deep","deep","R","worse",layout=CUT)
 row("BR-05a","Act 1",["B-05"],"BR","P","L-P-HALL","P-D1","climbs one stair away from camera, steady, hand on the banister","one step, 2s",
     "sway","stairs ascending (§27G: one step)","no","eye","behind","FULL","clean","behind = going up is the easy way, she leaves us","deep","deep","R","up",layout=CUT)
 row("BR-05b","Act 1",["B-05"],"BR","P","L-P-HALL","P-D1","comes down one stair, both hands on the banister, the LEFT knee braced as it catches","one step, 2s",
     "locked-off sway","stairs descending (§27G: camera at the foot, hand on rail)","no","low","three-quarter","FULL","clean",
     "low = the stair looms; coming down is the hard way","deep","deep","R","Coming",layout=CUT,face=True)
-row("MECH-05","Act 1",["B-05"],"MECH","anatomy","—","MECH","ANAT-A step-down: the thigh lengthens to catch, the catch lands on the band, a red flash","one catch, 3s",
-    "RV render","none","no","low","three-quarter","MCU","clean","low = the weight arriving","deep","deep","L","catch",layout=SPL,eg="EG07")
+# the user, 2026-09-29 (video Fix on MECH-05): "new image and mechanism here" → close on the knee as the foot lands on the step: the catch drives down through
+# the kneecap into the band, which flares at the landing (was: the whole leg, the flash hard to read)
+row("MECH-05","Act 1",["B-05"],"MECH","anatomy","—","MECH","ANAT-A step-down, close: the foot lands on the step, the knee bends to catch, the band under the kneecap flares at the landing","one catch, 3s",
+    "RV render","none","no","low","three-quarter","CU","clean","low + close = the catch arriving on the band","deep","deep","L","catch",layout=SPL,eg="EG07")
 
 # ---- ACT 2 — that is why ×3, the list, never / never / always (B-06–B-10) ------------------------------------
 TH("TH-A2", "Act 2", ["B-06","B-07","B-08","B-09","B-10"], "quieter on the list; slower and lower on 'where the load was landing' (stress register)")
@@ -196,7 +210,9 @@ for r in R: r["line"] = " ".join(PH.get(p, "?") for p in r["phrases"])
 # showing the script line for that broll only"). Verbatim spans, in order; together they rebuild the whole phrase (asserted below).
 BLINE = {
  "BR-01": "A patient of mine. Nine years of knee pain.", "MECH-01": "Bone on bone on the left, the right one following it.",
- "BR-05a": "Coming down is worse than going up. Going up, your muscles lift you.", "BR-05b": "Coming down, you are catching yourself,",
+ "MECH-03a": "Two centimetres below your kneecap", "BR-03b": "there is a band of tendon about as wide as your thumb.",
+ "MECH-03": "Every step you take lands on it.", "MECH-03d": "Seventeen times your bodyweight.",
+ "BR-05": "Coming down is worse than going up.", "BR-05a": "Going up, your muscles lift you.", "BR-05b": "Coming down, you are catching yourself,",
  "MECH-05": "and the catch lands on that band.",
  "BR-09a": "And the list of things she said no to got longer every year. The long walk.", "BR-09b": "The garden.", "BR-09c": "Her family coming to her instead.",
  "BR-11a": "A sleeve squeezes the whole knee.", "BR-11b": "A hinged brace stops it going sideways, and her knee was never going sideways.",

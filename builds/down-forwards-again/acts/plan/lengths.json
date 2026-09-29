@@ -25,11 +25,11 @@
  },
  "MECH-03": {
   "act": "Act 1",
-  "in": 9.04,
-  "out": 18.78,
-  "span": 9.74,
-  "kling": 10,
-  "line": "Two centimetres below your kneecap there is a band of tendon about as wide as your thumb. Every step you take lands on it. Seventeen times your bodyweight."
+  "in": 14.2,
+  "out": 16.58,
+  "span": 2.38,
+  "kling": 3,
+  "line": "Every step you take lands on it."
  },
  "BR-04": {
   "act": "Act 1",
@@ -41,11 +41,11 @@
  },
  "BR-05a": {
   "act": "Act 1",
-  "in": 23.42,
+  "in": 25.74,
   "out": 27.76,
-  "span": 4.34,
-  "kling": 5,
-  "line": "Coming down is worse than going up. Going up, your muscles lift you."
+  "span": 2.02,
+  "kling": 3,
+  "line": "Going up, your muscles lift you."
  },
  "BR-05b": {
   "act": "Act 1",
@@ -278,5 +278,37 @@
   "span": 2.94,
   "kling": 3,
   "line": "Nothing to lose but the pain. Go and do your stairs."
+ },
+ "MECH-03a": {
+  "act": "Act 1",
+  "in": 9.04,
+  "out": 10.88,
+  "span": 1.84,
+  "kling": 3,
+  "line": "Two centimetres below your kneecap"
+ },
+ "BR-03b": {
+  "act": "Act 1",
+  "in": 10.88,
+  "out": 14.2,
+  "span": 3.32,
+  "kling": 4,
+  "line": "there is a band of tendon about as wide as your thumb."
+ },
+ "MECH-03d": {
+  "act": "Act 1",
+  "in": 16.58,
+  "out": 18.78,
+  "span": 2.2,
+  "kling": 3,
+  "line": "Seventeen times your bodyweight."
+ },
+ "BR-05": {
+  "act": "Act 1",
+  "in": 23.42,
+  "out": 25.74,
+  "span": 2.32,
+  "kling": 3,
+  "line": "Coming down is worse than going up."
  }
 }

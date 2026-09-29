@@ -1,0 +1,40 @@
+{
+ "beat": "BR-07",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_154310_57eb9215-bf07-4fbc-9eb9-e146822b8f87.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "That is why the chair took three tries.",
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "she stands up easily (reads as recovery)",
+   "prevented_by": "rises a hand's width, then sinks back; no standing fully up"
+  },
+  {
+   "risk": "hand and chair arm fuse",
+   "prevented_by": "one push and sink; NEG-WARP-C; HOLD-C"
+  },
+  {
+   "risk": "the chair slides",
+   "prevented_by": "no chair moving"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
+ "audio": false,
+ "prompt": "{\"shot\":\"br_07\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"MEDIUM, as in the start frame: her side-on at the armchair, head to feet. Framed for its crop: one subject, large and centred, readable at a third of the width.\"},\"motion\":\"She pushes down on the chair arm and rises a hand's width more, her knees trembling, then her strength gives and she sinks back onto the edge of the seat, over about two seconds; she stays there, breathing out, her hand still on the arm, on the last frame. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject, no music, no voice, no text appearing, no standing fully up, no falling, no chair moving, no speaking, no mouth moving, no smiling\"}"
+}

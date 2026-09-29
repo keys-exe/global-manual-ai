@@ -1,0 +1,33 @@
+{
+ "BR-05": {
+  "v": 1,
+  "job": "fc4bf6ac-46f2-40d1-aa38-1da630a2032b",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_192316_fc4bf6ac-46f2-40d1-aa38-1da630a2032b.png",
+  "file": "img/BR-05.v1.png"
+ },
+ "MECH-03a": {
+  "v": 1,
+  "job": "1b75d875-de9f-442e-be09-04da6a7c9a32",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_192317_1b75d875-de9f-442e-be09-04da6a7c9a32.png",
+  "file": "img/MECH-03a.v1.png"
+ },
+ "MECH-03d": {
+  "v": 1,
+  "job": "1e55d687-a0da-4350-90c2-1d86de950baf",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_192316_1e55d687-a0da-4350-90c2-1d86de950baf.png",
+  "file": "img/MECH-03d.v1.png"
+ },
+ "MECH-05": {
+  "v": 2,
+  "job": "776ee6ae-4050-456c-a63e-c6cb6b845292",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_192316_776ee6ae-4050-456c-a63e-c6cb6b845292.png",
+  "file": "img/MECH-05.v2.png"
+ },
+ "BR-03b": {
+  "v": 1,
+  "job": "ac363447-0926-42df-b16b-d6ad4fb4faff",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_192618_ac363447-0926-42df-b16b-d6ad4fb4faff.png",
+  "file": "img/BR-03b.v1.png",
+  "note": "first send 68058c82 blocked by the content filter (nsfw); resent once with the skirt resting above the knee"
+ }
+}

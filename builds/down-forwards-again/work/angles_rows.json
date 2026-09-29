@@ -377,6 +377,64 @@
   }
  },
  {
+  "beat": "MECH-03a",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "front = where it is on your own knee",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-03b",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "P hand",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "eye + three-quarter = the band's width against her own thumb",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bay window, east wall, net curtains",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
   "beat": "MECH-03",
   "group": "Act 1",
   "type": "BR",
@@ -386,6 +444,35 @@
   "scale": "CU",
   "fg": "clean",
   "why": "profile = the band's side view under the kneecap",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-03d",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "low = the weight bearing down on it",
   "mode": 1,
   "product_beat": false,
   "face": false,
@@ -428,6 +515,35 @@
   "light": {
    "source": "bay window, east wall, net curtains",
    "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-05",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "P",
+  "height": "high",
+  "side": "three-quarter-back",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "high + behind her = the drop she has to take",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "front-door stained glass (east) + tall landing window",
+   "key_side": "R",
    "time": "morning",
    "arc": "problem: grey overcast morning, flat and cool",
    "kelvin": 6500,
@@ -499,9 +615,9 @@
   "subject": "anatomy",
   "height": "low",
   "side": "three-quarter",
-  "scale": "MCU",
+  "scale": "CU",
   "fg": "clean",
-  "why": "low = the weight arriving",
+  "why": "low + close = the catch arriving on the band",
   "mode": 1,
   "product_beat": false,
   "face": false,

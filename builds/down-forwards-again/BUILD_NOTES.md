@@ -201,6 +201,17 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   PHYS-MOTION-C, INHERIT-CAP/ENV, PiP framing; MECH: RIG-RVF entry push, HOLD-C + HOLD-AC, NEG-CAM-RV + selected ANAT-NEG), preflight PASS ×8 →
   Kie kling-3.0-omni (tasks in `acts/video/act1_tasks.txt`; 648 Kie credits) → board To check, generation 1 each: BR-01 4 s, MECH-01 3, BR-02 3,
   MECH-03 10 (split in 2 parts), BR-04 5, BR-05a 5 (2 parts), BR-05b 3, MECH-05 3.
+- **2026-09-29 ~19:30 UTC: user "fix those and generate the act 2 videos".** Video Fix notes: BR-05a "this should be 2 brolls", MECH-03 "this
+  should be cut into 4 brolls", MECH-05 "new image and mechanism here" (BR-01, MECH-01, BR-02, BR-04, BR-05b confirmed). Act map: B-03 → MECH-03a
+  ("Two centimetres below your kneecap", front view, one spot marked) · BR-03b ("there is a band of tendon about as wide as your thumb.", her thumb
+  across the band, P-B2) · MECH-03 ("Every step you take lands on it.", keeps its image) · MECH-03d ("Seventeen times your bodyweight.", peak load);
+  B-05 → BR-05 NEW ("Coming down is worse than going up.", top of the flight, hesitating, P-B3) · BR-05a (keeps its image, "Going up, your muscles
+  lift you."); MECH-05 row = close on the knee at the catch. angles.py PASS, wardrobe PASS, STEP4_5 + docs/actmap + docs/wardrobe synced.
+  New images (`acts/build_fix_r8.py`, nano_banana_pro): BR-05, BR-03b (first send blocked by the content filter as nsfw → resent once with the skirt
+  resting above the knee, r8b), MECH-03a, MECH-03d, MECH-05 v2 → board To check; MECH-05 image v1 + video v1 to Old. Videos (`acts/build_act2_videos.py`):
+  BR-05a v2 + MECH-03 v2 (gen 2, 3 s each for their new spans; v1s to Old) and Act 2 gen 1 — BR-06 5 s, BR-07 3, BR-08 6, BR-09a 5, BR-09b 3, BR-09c 3,
+  BR-10 6 (tasks `acts/video/act2_tasks.txt`, 666 Kie credits) → board To check. Next: videos for BR-05, BR-03b, MECH-03a, MECH-03d, MECH-05 once
+  their images are confirmed.
   **Open for later acts:** A4 aligns poorly (ratio 0.74; BR-17b came out 11 s) — check the A4 act-map lines against the heard words before its
   videos. A5 still has the BR-22a3 row ("From the Stryde site.") with no card.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

@@ -12,9 +12,9 @@ SIG = "reading glasses on a thin beaded cord round her neck"
 DAYS = {
  "P-B1": ("Act 1", ["BR-01"], "pale blue cotton button-down shirt, collar out", "grey marl crew-neck jumper", "knee-length charcoal wool A-line skirt, bare legs", "sheepskin moccasin slippers", SIG, "cool neutral", "absent",
           "She wears a pale blue cotton button-down shirt with its collar out over a grey marl crew-neck jumper, a knee-length charcoal wool A-line skirt with bare legs, sheepskin moccasin slippers, and " + SIG + "."),
- "P-B2": ("Act 1", ["BR-04"], "rust long-sleeve jersey top", "—", "knee-length camel corduroy skirt, bare legs", "bare feet", "a plain gold wedding band", "earth", "absent",
+ "P-B2": ("Act 1", ["BR-03b", "BR-04"], "rust long-sleeve jersey top", "—", "knee-length camel corduroy skirt, bare legs", "bare feet", "a plain gold wedding band", "earth", "absent",
           "She wears a rust-coloured long-sleeve jersey top, a knee-length camel corduroy skirt with bare legs, and bare feet."),
- "P-B3": ("Act 1", ["BR-05a", "BR-05b"], "cream blouse with a small dusky-rose floral print", "bottle-green buttoned cardigan", "dark grey slim ankle trousers", "navy felt slippers", SIG, "pattern-led", "absent",
+ "P-B3": ("Act 1", ["BR-05", "BR-05a", "BR-05b"], "cream blouse with a small dusky-rose floral print", "bottle-green buttoned cardigan", "dark grey slim ankle trousers", "navy felt slippers", SIG, "pattern-led", "absent",
           "She wears a cream blouse with a small dusky-rose floral print under a bottle-green buttoned cardigan, dark grey slim ankle-length trousers, navy felt slippers, and " + SIG + "."),
  "P-B4": ("Act 2", ["BR-06"], "lilac long-sleeve cotton tee", "navy quilted gilet", "navy elasticated-waist trousers", "grey knitted slipper boots", "—", "navy/denim", "absent",
           "She wears a lilac long-sleeve cotton tee under a navy quilted gilet, navy elasticated-waist trousers and grey knitted slipper boots."),
