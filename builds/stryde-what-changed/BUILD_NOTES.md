@@ -44,8 +44,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Board: user chose the 4 Mbps re-encode (trim.py output ~320 MB each); TH-ALL-T1 untrimmed (133 MB, parts) + TH-HK1…3 (~112 MB).
   Hook 1 images HK1-a (Maureen's legs on her stairs, NB2 → logged nano_banana_flash) + HK1-b (ANAT-A hot spot) → To check.
 
+- 15:07 hourly check: user confirmed VO parts on the board — **HK1 + HK2 = T4, HK3 + BODY = T2** (VO locked, `voLocked`).
+  §22U step 10 → talking heads regenerated: `vo/VO_LOCK.mp3` (T4 HK1 + T4 HK2 + T2 HK3 + T2 BODY, untrimmed, cuts 10.44 / 25.76 / 41.39 s)
+  → HeyGen Avatar V in one go (video 2de76968…, 249.4 s, no motionPrompt) → cut + `trim.py` natural: HK1 3:30 185 wpm, HK2 3:34 188,
+  HK3 3:36 183, all PASS → 4 Mbps board encode (`vo/th/lock/`). T1 talking heads (4 cards) + the 12 unchosen VO parts moved to the
+  Old board, their files deleted from Current. One upload part began with '<' and was refused as markup → boundary moved one byte
+  (TH-ALL-LOCK parts: 14,999,999 + 7,500,001 + 7,500,000 + …; the join is byte-exact).
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the voice cards (G1, G2, clone source, VO T1–T4 per part), TH-ALL-T1, TH-HK1…3, and Hook 1's
-  images HK1-a, HK1-b. Their clips (Kie Kling 3.0 while Kling is short) follow each image's Confirm; E6 lengths from the T1 cuts.
+- **Waiting on the user:** Confirm/Fix the talking heads (TH-ALL-T1 = the locked-VO render, TH-HK1…3) and Hook 1's images HK1-a, HK1-b. Their clips (Kie Kling 3.0 while Kling is short) follow each image's Confirm; E6 lengths from the T1 cuts.
 - Board storage: Current ≈ 0.65 GB used of 1 GB after the talking heads — B-roll clips will need the Final/Old split or a second store.
 - Open flags: F2, F3, F5, F6, F8, F9, F11 (claims).
