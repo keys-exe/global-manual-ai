@@ -1,0 +1,442 @@
+{
+  "master_s": 210.0,
+  "lead_s": 0.1,
+  "skip_s": 0.4,
+  "lengths": [
+    {
+      "beat": "P-01a",
+      "cut_s": 12.4583,
+      "anchor": "backwards.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "P-01b",
+      "cut_s": 14.4583,
+      "anchor": "step",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "P-02a",
+      "cut_s": 19.0417,
+      "anchor": "upstairs.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "P-03a",
+      "cut_s": 21.0417,
+      "anchor": "brace",
+      "on_screen_s": 3.62,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "P-03b",
+      "cut_s": 24.6667,
+      "anchor": "ankle.",
+      "on_screen_s": 3.17,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "P-04a",
+      "cut_s": 27.8333,
+      "anchor": "therapy.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "P-04b",
+      "cut_s": 29.8333,
+      "anchor": "pills.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "P-04c",
+      "cut_s": 31.8333,
+      "anchor": "shots.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "P-04d",
+      "cut_s": 33.8333,
+      "anchor": "brace",
+      "on_screen_s": 2.83,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "P-05a",
+      "cut_s": 36.6667,
+      "anchor": "life",
+      "on_screen_s": 2.54,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "T-01a",
+      "cut_s": 39.2083,
+      "anchor": "married",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "T-01b",
+      "cut_s": 41.2083,
+      "anchor": "Loretta",
+      "on_screen_s": 3.25,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "T-02a",
+      "cut_s": 44.4583,
+      "anchor": "floor",
+      "on_screen_s": 2.08,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "T-02b",
+      "cut_s": 46.5417,
+      "anchor": "Slide,",
+      "on_screen_s": 3.46,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "T-03a",
+      "cut_s": 50.0,
+      "anchor": "bone",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "R-01a",
+      "cut_s": 57.3333,
+      "anchor": "stay",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "R-02a",
+      "cut_s": 63.625,
+      "anchor": "gel,",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "R-02b",
+      "cut_s": 65.625,
+      "anchor": "ice",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "R-03a",
+      "cut_s": 71.3333,
+      "anchor": "leg.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "R-04a",
+      "cut_s": 73.3333,
+      "anchor": "strap,",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "R-05a",
+      "cut_s": 79.2083,
+      "anchor": "small.",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "R-06a",
+      "cut_s": 86.6667,
+      "anchor": "stairs.\"",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "R-07a",
+      "cut_s": 96.9167,
+      "anchor": "Forwards.",
+      "on_screen_s": 4.12,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "M-01a",
+      "cut_s": 101.0417,
+      "anchor": "comfortable",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "M-01b",
+      "cut_s": 103.0417,
+      "anchor": "worse.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "M-02a",
+      "cut_s": 105.0417,
+      "anchor": "fixes",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "M-03a",
+      "cut_s": 107.0417,
+      "anchor": "spot",
+      "on_screen_s": 6.71,
+      "skip_s": 0.4,
+      "call_s": 6,
+      "flag": "SPLIT \u2014 needs 7.6s, over 6s; split the phrase into two clips at a word boundary"
+    },
+    {
+      "beat": "M-04a",
+      "cut_s": 113.75,
+      "anchor": "whole",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "M-04b",
+      "cut_s": 115.75,
+      "anchor": "spot.",
+      "on_screen_s": 2.5,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "M-05a",
+      "cut_s": 118.25,
+      "anchor": "pressure.",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "M-05b",
+      "cut_s": 122.7917,
+      "anchor": "weight",
+      "on_screen_s": 2.21,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "M-06a",
+      "cut_s": 125.0,
+      "anchor": "gone.",
+      "on_screen_s": 3.46,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "PR-01a",
+      "cut_s": 128.4583,
+      "anchor": "people",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "PR-02a",
+      "cut_s": 130.4583,
+      "anchor": "doctors",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "PR-03a",
+      "cut_s": 136.9167,
+      "anchor": "golf",
+      "on_screen_s": 2.79,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "PR-04a",
+      "cut_s": 139.7083,
+      "anchor": "track.",
+      "on_screen_s": 2.17,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "PR-05a",
+      "cut_s": 141.875,
+      "anchor": "worn",
+      "on_screen_s": 2.75,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "PR-05b",
+      "cut_s": 144.625,
+      "anchor": "clothes.",
+      "on_screen_s": 2.17,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "PR-06a",
+      "cut_s": 146.7917,
+      "anchor": "pills.",
+      "on_screen_s": 3.79,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "L-01a",
+      "cut_s": 152.5833,
+      "anchor": "store.",
+      "on_screen_s": 2.67,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "L-01b",
+      "cut_s": 155.25,
+      "anchor": "Passed",
+      "on_screen_s": 3.33,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "L-02a",
+      "cut_s": 158.5833,
+      "anchor": "checkout",
+      "on_screen_s": 3.71,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "L-02b",
+      "cut_s": 162.2917,
+      "anchor": "bags",
+      "on_screen_s": 4.04,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "L-03a",
+      "cut_s": 166.3333,
+      "anchor": "husband",
+      "on_screen_s": 6.04,
+      "skip_s": 0.4,
+      "call_s": 6,
+      "flag": "SPLIT \u2014 needs 6.9s, over 6s; split the phrase into two clips at a word boundary"
+    },
+    {
+      "beat": "C-01a",
+      "cut_s": 172.375,
+      "anchor": "strap.",
+      "on_screen_s": 2.54,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "C-02a",
+      "cut_s": 174.9167,
+      "anchor": "church",
+      "on_screen_s": 3.29,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "C-03a",
+      "cut_s": 180.9167,
+      "anchor": "Stryde",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "C-04a",
+      "cut_s": 186.125,
+      "anchor": "surgeons.",
+      "on_screen_s": 2.79,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "C-05a",
+      "cut_s": 188.9167,
+      "anchor": "knock-offs",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "C-06a",
+      "cut_s": 194.0833,
+      "anchor": "Two",
+      "on_screen_s": 2.25,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "C-07a",
+      "cut_s": 196.3333,
+      "anchor": "Sixty",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "C-09a",
+      "cut_s": 204.2917,
+      "anchor": "sister",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    }
+  ],
+  "failures": [
+    {
+      "beat": "PR-01b",
+      "fail": "PHRASE_NOT_FOUND",
+      "phrase": "Over 200,000 people wear one now"
+    },
+    {
+      "beat": "PR-01c",
+      "fail": "PHRASE_NOT_FOUND",
+      "phrase": "Over 200,000 people wear one now"
+    },
+    {
+      "beat": "PR-01d",
+      "fail": "PHRASE_NOT_FOUND",
+      "phrase": "Over 200,000 people wear one now"
+    }
+  ]
+}
