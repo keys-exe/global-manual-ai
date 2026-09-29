@@ -340,3 +340,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   resting in the palm as in the user's real footage (`BR-06.v5.i2v.json`, preflight PASS). To check.
   **Product note:** the real strap gives a little in the hand (real footage) — the "rigid shell, never bends" rule reads
   as stiff on held shots; flag for the Product Sheet if the user wants it changed everywhere.
+- BR-06 video v6 **confirmed** (use). User: "we will re do all the hooks too" → the three hook TOP shots, like BR-06:
+  new start images = Higgsfield edits of each confirmed HK*-T_v1 (same person, room, split framing) with the strap in ONE
+  hand at real size, the inside up from the real photo, band closed (`hooks/HK*-T.v2edit.t2i.txt`, `HK*-T_v2.png`). To
+  check; videos follow each Confirm (still hand, soft strap, as BR-06 v6). The bottom shots stay as confirmed.
