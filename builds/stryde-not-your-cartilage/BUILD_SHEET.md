@@ -1,6 +1,6 @@
 # Build Sheet — stryde-not-your-cartilage
 
-**STRYDE Precision Strap · "A - VID | Short VSL | TOF | Rediagnosis | New | Not Your Cartilage"** · Standards V7.69.0 · **RUN: MANUAL** · 2026-09-29
+**STRYDE Precision Strap · "A - VID | Short VSL | TOF | Rediagnosis | New | Not Your Cartilage"** · Standards V7.69.1 · **RUN: MANUAL** · 2026-09-29
 
 Steps 1–3 of §18. **Stopped at the avatar review (§18B, V7.62.0)**: steps 4–5 wait for the user's go.
 Boards: Current https://claude.ai/artifact/DUsxw9aB6Q4PE7uTa9FFLE · Old https://claude.ai/artifact/7qQDVB81c5s5JtejBqJZw1 · Final https://claude.ai/artifact/7bejwknnCQGFtV6AUN3Nxc · Plan https://claude.ai/artifact/7ntxnK1H2VmA62SndFADqW
