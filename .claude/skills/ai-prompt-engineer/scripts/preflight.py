@@ -41,7 +41,8 @@ Beat images (§6A, V7.70.0) — a B-roll or hook start/end frame — are linted 
     "body": true,                      # a person or body part shows
     "refs": [{"label": "...", "kind": "product|character|location|frame|info"}],   # in attach order
     "anatomy": false,                  # an anatomy / mechanism beat (Nano Banana)
-    "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = NB Pro + NB2
+    "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = two NB Pro
+    "alt_reason": null | "why nano_banana_2 runs instead of Pro (the alternative, V7.72.1)"
   }
 
 Beat videos (§35A, V7.71.0) — a Kling B-roll or hook clip in Modes 1–3 — add:
@@ -106,6 +107,7 @@ IMG_NEG_MAX = 5         # §6A: at most five "no …" / "never …" items
 NEG_WORD = re.compile(r"\b(?:no|never|without|avoid)\b", re.I)
 SIZE_ANCHOR = re.compile(r"\d+(?:\.\d+)?\s*(?:×|x|by)?\s*\d*\s*(?:cm|mm|centimet|millimet)|\bthe size of\b|\bas (?:small|big|large) as\b", re.I)
 NANO = {"nano_banana_pro", "nano_banana_2", "nano-banana-pro", "nano-banana-2"}
+PRO = {"nano_banana_pro", "nano-banana-pro"}
 SUNBURST = {"gpt_image_2_5", "gpt_image_2_5_sunburst", "gpt-image-2-5-sunburst-image-to-image", "gpt-image-2-5-sunburst-text-to-image"}
 
 
@@ -141,7 +143,9 @@ def run_image(c):
     check("A/B pair: two renders (§5)", len(pair) == 2, f"pair {pair}")
     if anatomy or mode in (2, 3, 5):
         why = "anatomy" if anatomy else f"Mode {mode}"
-        check(f"Nano Banana Pro + 2 ({why}, §18A)", sorted(pair) in (sorted(["nano_banana_pro", "nano_banana_2"]), sorted(["nano-banana-pro", "nano-banana-2"])), f"pair {pair}")
+        alt = (c.get("alt_reason") or "").strip()
+        ok = all(m in PRO for m in pair) or (alt and all(m in NANO for m in pair))
+        check(f"Nano Banana Pro ({why}, §18A V7.72.1)", len(pair) == 2 and ok, f"pair {pair}" + ("" if alt else "; nano_banana_2 only with alt_reason"))
     else:
         check(f"Sunburst on realistic work (Mode {mode}, §18A V7.72.0)", len(pair) == 2 and all(m in SUNBURST for m in pair), f"pair {pair}")
     return res
