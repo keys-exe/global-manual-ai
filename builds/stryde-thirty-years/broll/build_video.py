@@ -427,6 +427,20 @@ V["BR-15b"] = ("MEDIUM over her shoulder as in the start frame, him across the b
     ("strap grows or reshapes", "HOLD_PC + no strap growing"), ("his face drifts from the reference", "HOLD-HC, face never reshapes")])
 
 
+# BR-15b third try (user video Fix "FIX THE PRODUCT" → chose "Same image, video only", 2026-09-29): v2's hand-over carried the
+# sideways-held strap between two hands and it warped mid-transit (peaks and wordmark lost, came back flipped). MOTION: no hand-over —
+# the strap stays still in his hand the whole clip; only her fingertips come up and rest on its lower edge.
+VFIX3["BR-15b"] = ("FIX THE PRODUCT → MOTION: v2's hand-over moved the strap between two hands and it warped and flipped mid-transit; "
+                   "now the strap never moves — it stays exactly still in his hand, upright on its side as in the start frame, and "
+                   "only her fingertips come up and rest on its lower edge")
+V["BR-15b"] = ("MEDIUM over her shoulder as in the start frame, him across the bench holding the small strap out to her.", HANDHELD,
+   "Her fingertips come up and rest lightly on the strap's lower edge in one small move over about two seconds, then stay there. "
+   "The strap stays exactly still in his hand the whole clip, as in the start frame; his hand does not move.", True,
+   "no hand-over, no strap moving, no strap turning, no second strap, no face changing", "in_place",
+   [("strap warps in a hand-over (the v2 fault)", "no hand-over + strap exactly still + HOLD_PC"),
+    ("strap turns or flips", "no strap turning + his hand does not move"), ("fingers fuse with the strap", "HOLD-HC")])
+
+
 def build(beat):
     framing, rig, motion, prod, extra, sm, risks = V[beat]
     r = ROWS[beat]
@@ -458,8 +472,10 @@ if __name__ == "__main__":
             call["fix_note"] = VFIX[beat]
         if beat in VFIX3:
             gen = {"BR-12": 4}.get(beat, 3)
-            go = {"BR-02": "'Both'", "BR-12": "'Both'", "BR-11": "'Keep the Stryde front'"}.get(beat, "'All three'")
-            call.update(generation=gen, fix_note=VFIX3[beat], user_go=f"2026-09-28: generation {gen} approved by the user ({go})")
+            go = {"BR-02": "'Both'", "BR-12": "'Both'", "BR-11": "'Keep the Stryde front'",
+                  "BR-15b": "'Same image, video only'"}.get(beat, "'All three'")
+            day = "2026-09-29" if beat == "BR-15b" else "2026-09-28"
+            call.update(generation=gen, fix_note=VFIX3[beat], user_go=f"{day}: generation {gen} approved by the user ({go})")
         (HERE / f"video/{beat}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
         (HERE / f"video/{beat}.prompt.txt").write_text(prompt)
         print(beat.ljust(8), str(call["duration"]).rjust(2), "s", str(len(prompt)).rjust(5), "chars", img)

@@ -258,8 +258,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   full, so the superseded BR-15b video v1 file was marked deleted and removed. ffmpeg was missing after a container reset;
   it is now imageio-ffmpeg's binary, linked to /usr/local/bin/ffmpeg (no ffprobe: use `ffmpeg -i`).
 
-## Where it stands (2026-09-29 12:00)
-- BR-15b video v2 To check → then it goes into the rough cuts.
+  ~12:15 (user "FIX THOSE"): BR-15b video Fix "FIX THE PRODUCT". Diagnosis: v2's hand-over carried the sideways-held strap
+  between two hands, and it warped mid-transit (peaks and wordmark lost, came back flipped). The user chose "Same image, video
+  only" for the 3rd try. MOTION fix: no hand-over; the strap stays still in his hand and only her fingertips rest on its lower
+  edge. Video v3 (Kling 3.0 pro on Kie, 4s, 72 credits, task 0c3596a5…). Preflight: only the generation gate failed, which the
+  user's go covers. The strap now holds its shape. For room, the BR-15b video v2 and image v1 files were marked deleted and removed.
+
+## Where it stands (2026-09-29 12:15)
+- BR-15b video v3 To check → then it goes into the rough cuts.
 - BR-09a image v2 To check → then its video → re-render the rough cuts once more.
 - BR-08b, BR-08c, BR-09b videos To check. Rough cuts v2 sent (review copies).
 - Open: F4 · TH body check · where the finished videos go (board full).
