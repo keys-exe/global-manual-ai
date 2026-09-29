@@ -174,9 +174,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   to her mother with a small natural reaction; negatives against posing/overacting. **HK-A-SD v3** (3rd generation on the user's go,
   preflight PASS, task 71da4e8d, 693 credits) → To check; her line 8.10–10.56 s → **VOICE-C2-HKA v3** (7.85–10.95 s). v2 on Old.
 
+- 2026-09-29 ~13:50 UTC: user confirmed Hook 1 (HK-A-SD v3), chose "Go up the mall stairs" for Hook B (matches the VO "the whole way up",
+  no re-voice) and "Yes, use it" for the voice clip (VOICE-C2-HKA v3 confirmed on their word). Hook B rewritten: phone on the upper walkway
+  looking down the flight, the daughter climbing with bags, the mother overtaking her on the open side going up, hands never on the rail,
+  the daughter candid, never to camera. **HK-B-SD v1** (task 416c4189, 693 credits; ingredients N, C2, P8 v4, INFO-WARD-B-N/B-C2,
+  @audio1 `hooks/sd/daughter_voice_HKA_v3.mp3`) → To check. Whisper: only her line, 7.98–10.58 s.
+
 ## Where it stands
-- **Voice stage done** (2026-09-29): VO T2 locked (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`), TH-01…16 (Avatar V render of T2) confirmed.
-- **Step 6 — hooks (Seedance, V7.68 ingredients):** waiting on the user's Confirm of the 4 outfit info cards. Then: Seedance Hook A on Kie
-  (`kie.py seedance`, 11 s, 720p, 9:16) → cut the daughter's line → @audio2 → Hook B → both to HK-A-SD / HK-B-SD as `review`.
-  In the edit the daughter's on-camera line replaces the mother reading "Mama, when did that happen?" in VO T2 (TH-01, 7.36–9.93 s).
-- **Then:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
+- Voice done: VO T2 locked, TH-01…16 confirmed. Locations P0–P8 confirmed (16:9, Kie GPT Image 2). Outfit cards confirmed.
+- **Hooks:** Hook 1 = HK-A-SD v3 confirmed. Hook 2 = HK-B-SD v1 To check. In the edit the daughter's on-camera line replaces the
+  mother reading "Mama, when did that happen?" in VO T2 (TH-01, 7.36–9.93 s).
+- **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.

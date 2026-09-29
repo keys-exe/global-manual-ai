@@ -38,13 +38,13 @@ HOOKS = {
           "Two steps behind her, in frame from the first second, the daughter, in her burgundy sweater, dark jeans and white trainers, climbs too, slower, one hand on the rail, a little out of breath, falling behind. "
           "She never looks at the camera and never stops to perform: still climbing, her eyes on her mother as her mother pulls away above her, she says it to her — in the last three seconds, only these words and nothing else: \"" + LINE + "\" "
           "Her face stays natural — a small, real reaction, brows lifting slightly, no big expression, nothing played to the lens; the moment is caught, not staged. Her voice: " + VOICE_C2)),
- "B": dict(dur=11, room="Big open mall atrium, hard terrazzo and glass, a long bright tail and a soft wash of distant shoppers; her voice about two metres from the phone, room in the signal, no boom.",
-   prose=("A phone propped at hip height on the concourse at the foot of the mall stairs, looking up the flight, 24mm, 9:16, the whole flight in frame with the skylight above; "
-          "soft daylight from the atrium skylight, warm and clear, faces lit from the right of frame, pale terrazzo bouncing light up. "
-          "Opening mid-descent: the daughter, in her light denim jacket, black top and black leggings, comes down the mall stairs carefully with two big shopping bags, one hand on the rail. "
-          "Behind her the mother, in her mustard cardigan, cream blouse and navy wide-leg trousers, comes down briskly and quickly, facing forwards, one small bag in one hand, the other arm swinging free, her hands never touching the handrail, head up — she overtakes her daughter on the open side, "
-          "passes her with a small proud smile, reaches the bottom and walks past the camera on its left and out of frame. "
-          "The daughter never looks at the camera and never stops to perform: still coming down, slower, her eyes following her mother as she passes, she says it to her — in the last three seconds, only these words and nothing else: \"" + LINE + "\" "
+ "B": dict(dur=11, room="Big open mall atrium, hard terrazzo and glass, a long bright tail and a soft wash of distant shoppers; her voice about two metres below the phone, room in the signal, no boom.",
+   prose=("A phone propped at head height on the upper walkway at the top of the mall stairs, looking straight down the flight, 24mm, 9:16, the whole flight in frame and the busy ground-floor concourse below; "
+          "soft daylight from the atrium skylight above, warm and clear, faces lit from the left of frame, pale terrazzo bouncing light up. "
+          "Opening mid-climb: the daughter, in her light denim jacket, black top and black leggings, is halfway up the mall stairs, climbing carefully with two big shopping bags, one hand on the rail, a little out of breath. "
+          "Right behind her the mother, in her mustard cardigan, cream blouse and navy wide-leg trousers, comes up the stairs briskly, facing forwards, one small bag in one hand, the other arm swinging free, her hands never touching the handrail, head up — "
+          "she overtakes her daughter on the open side, passes her with a small proud smile, climbs the last steps toward the camera and walks past it on its right and out of frame at the top. "
+          "The daughter never looks at the camera and never stops to perform: still climbing, slower, her eyes on her mother as her mother pulls away above her, she says it to her — in the last three seconds, only these words and nothing else: \"" + LINE + "\" "
           "Her face stays natural — a small, real reaction, brows lifting slightly, no big expression, nothing played to the lens; the moment is caught, not staged. Her voice: " + VOICE_C2)),
 }
 def build(k, aud2=False):
