@@ -152,7 +152,7 @@
     {
       "beat": "BR-007",
       "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-007.mp4",
-      "phrase": "Then the wrap, then the gel, then the one their neighbour swore by.",
+      "phrase": "Then the wrap, then the gel,",
       "key": "wrap,",
       "layout": {
         "type": "full"
@@ -171,6 +171,27 @@
       "end": 21.9167
     },
     {
+      "beat": "BR-007b",
+      "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-007b.mp4",
+      "phrase": "then the one their neighbour swore by.",
+      "key": "neighbour",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 19.38,
+      "start": 21.9167,
+      "line_end": 20.25,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 23.9167
+    },
+    {
       "beat": "BR-008",
       "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-008.mp4",
       "phrase": "And why would they not.",
@@ -179,7 +200,7 @@
         "type": "full"
       },
       "word_t": 20.54,
-      "start": 21.9167,
+      "start": 23.9167,
       "line_end": 21.2083,
       "in_spec": null,
       "peak": null,
@@ -189,7 +210,7 @@
       "in": 0.4,
       "flex": true,
       "skip": 0.4,
-      "end": 23.9167
+      "end": 25.9167
     },
     {
       "beat": "BR-009",
@@ -200,17 +221,17 @@
         "type": "full"
       },
       "word_t": 23.8,
-      "start": 23.9167,
+      "start": 25.9167,
       "line_end": 24.4583,
       "in_spec": null,
       "peak": null,
       "max": 6.0,
       "clip_len": 3.04,
       "speed": 1.0,
-      "in": 0.165,
+      "in": 0.4,
       "flex": true,
       "skip": 0.4,
-      "end": 26.7917
+      "end": 27.9167
     },
     {
       "beat": "MECH-010",
@@ -221,7 +242,7 @@
         "type": "full"
       },
       "word_t": 26.9,
-      "start": 26.7917,
+      "start": 27.9167,
       "line_end": 31.375,
       "in_spec": null,
       "peak": null,
@@ -530,44 +551,23 @@
     {
       "beat": "BR-026",
       "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-026.mp4",
-      "phrase": "No to the long walk.",
+      "phrase": "No to the long walk. No to the day out.",
       "key": "long",
       "layout": {
         "type": "full"
       },
       "word_t": 75.28,
       "start": 75.1667,
-      "line_end": 75.7083,
-      "in_spec": null,
-      "peak": null,
-      "max": 6.0,
-      "clip_len": 3.04,
-      "speed": 1.0,
-      "in": 0.4,
-      "flex": true,
-      "skip": 0.4,
-      "end": 77.1667
-    },
-    {
-      "beat": "BR-027",
-      "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-027.mp4",
-      "phrase": "No to the day out.",
-      "key": "day",
-      "layout": {
-        "type": "full"
-      },
-      "word_t": 76.46,
-      "start": 77.1667,
       "line_end": 76.8333,
       "in_spec": null,
       "peak": null,
       "max": 6.0,
       "clip_len": 3.04,
       "speed": 1.0,
-      "in": 0.4,
+      "in": 0.207,
       "flex": true,
       "skip": 0.4,
-      "end": 79.1667
+      "end": 78.0
     },
     {
       "beat": "BR-028",
@@ -578,7 +578,7 @@
         "type": "full"
       },
       "word_t": 78.1,
-      "start": 79.1667,
+      "start": 78.0,
       "line_end": 79.25,
       "in_spec": null,
       "peak": null,
@@ -588,7 +588,7 @@
       "in": 0.4,
       "flex": true,
       "skip": 0.4,
-      "end": 81.1667
+      "end": 80.0
     },
     {
       "beat": "BR-029",
@@ -599,7 +599,7 @@
         "type": "full"
       },
       "word_t": 79.56,
-      "start": 81.1667,
+      "start": 80.0,
       "line_end": 81.4167,
       "in_spec": null,
       "peak": null,
@@ -609,7 +609,7 @@
       "in": 0.4,
       "flex": true,
       "skip": 0.4,
-      "end": 83.1667
+      "end": 82.0
     },
     {
       "beat": "BR-030",
@@ -620,17 +620,17 @@
         "type": "full"
       },
       "word_t": 82.12,
-      "start": 83.1667,
+      "start": 82.0,
       "line_end": 84.0,
       "in_spec": null,
       "peak": null,
       "max": 6.0,
-      "clip_len": 3.04,
-      "speed": 0.89,
+      "clip_len": 2.2,
+      "speed": 1.0,
       "in": 0.0,
       "flex": true,
       "skip": 0.4,
-      "end": 86.5833
+      "end": 84.2083
     },
     {
       "beat": "BR-032",
@@ -1265,23 +1265,30 @@
     },
     {
       "kind": "BR",
-      "beat": "BR-008",
+      "beat": "BR-007b",
       "layout": "full",
       "start": 21.917,
       "end": 23.917
     },
     {
       "kind": "BR",
-      "beat": "BR-009",
+      "beat": "BR-008",
       "layout": "full",
       "start": 23.917,
-      "end": 26.792
+      "end": 25.917
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-009",
+      "layout": "full",
+      "start": 25.917,
+      "end": 27.917
     },
     {
       "kind": "BR",
       "beat": "MECH-010",
       "layout": "full",
-      "start": 26.792,
+      "start": 27.917,
       "end": 31.25
     },
     {
@@ -1393,35 +1400,34 @@
       "beat": "BR-026",
       "layout": "full",
       "start": 75.167,
-      "end": 77.167
-    },
-    {
-      "kind": "BR",
-      "beat": "BR-027",
-      "layout": "full",
-      "start": 77.167,
-      "end": 79.167
+      "end": 78.0
     },
     {
       "kind": "BR",
       "beat": "BR-028",
       "layout": "full",
-      "start": 79.167,
-      "end": 81.167
+      "start": 78.0,
+      "end": 80.0
     },
     {
       "kind": "BR",
       "beat": "BR-029",
       "layout": "full",
-      "start": 81.167,
-      "end": 83.167
+      "start": 80.0,
+      "end": 82.0
     },
     {
       "kind": "BR",
       "beat": "BR-030",
       "layout": "full",
-      "start": 83.167,
-      "end": 86.583
+      "start": 82.0,
+      "end": 84.208
+    },
+    {
+      "kind": "TH",
+      "start": 84.208,
+      "end": 86.583,
+      "zoom": 1.0
     },
     {
       "kind": "BR",
@@ -1621,6 +1627,10 @@
   ],
   "fixes": [
     {
+      "beat": "BR-030",
+      "fix": "gave back 0.20s of the skipped opening (in-point 0.20s)"
+    },
+    {
       "beat": "HK1-01",
       "fix": "HOLD: held to 2.62s on screen"
     },
@@ -1651,14 +1661,6 @@
     {
       "beat": "BR-007",
       "fix": "HOLD: held to 2.00s on screen"
-    },
-    {
-      "beat": "BR-009",
-      "fix": "gave back 0.23s of the skipped opening (in-point 0.17s)"
-    },
-    {
-      "beat": "BR-009",
-      "fix": "HOLD: held to 2.88s on screen"
     },
     {
       "beat": "MECH-011",
@@ -1706,7 +1708,11 @@
     },
     {
       "beat": "BR-026",
-      "fix": "HOLD: held to 2.00s on screen"
+      "fix": "gave back 0.19s of the skipped opening (in-point 0.21s)"
+    },
+    {
+      "beat": "BR-026",
+      "fix": "HOLD: held to 2.83s on screen"
     },
     {
       "beat": "BR-028",
@@ -1718,15 +1724,11 @@
     },
     {
       "beat": "BR-030",
-      "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+      "fix": "gave back 0.20s of the skipped opening (in-point 0.00s)"
     },
     {
       "beat": "BR-030",
-      "fix": "HOLD: held to 1.92s on screen"
-    },
-    {
-      "beat": "BR-030",
-      "fix": "HOLD: extended with own footage to 85.17s"
+      "fix": "HOLD: held to 2.21s on screen"
     },
     {
       "beat": "BR-032",
@@ -1867,10 +1869,6 @@
     {
       "beat": "MECH-021",
       "fix": "FLICKER 0.67s: extended with own footage to 65.75s"
-    },
-    {
-      "beat": "BR-030",
-      "fix": "FLICKER 1.42s: slowed to 0.89x to reach 86.58s"
     },
     {
       "beat": "BR-033",

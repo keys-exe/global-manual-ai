@@ -53,8 +53,14 @@
   {
    "beat": "BR-007",
    "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-007.mp4",
-   "phrase": "Then the wrap, then the gel, then the one their neighbour swore by.",
+   "phrase": "Then the wrap, then the gel,",
    "key": "wrap"
+  },
+  {
+   "beat": "BR-007b",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-007b.mp4",
+   "phrase": "then the one their neighbour swore by.",
+   "key": "neighbour"
   },
   {
    "beat": "BR-008",
@@ -159,14 +165,8 @@
   {
    "beat": "BR-026",
    "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-026.mp4",
-   "phrase": "No to the long walk.",
+   "phrase": "No to the long walk. No to the day out.",
    "key": "long"
-  },
-  {
-   "beat": "BR-027",
-   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-027.mp4",
-   "phrase": "No to the day out.",
-   "key": "day"
   },
   {
    "beat": "BR-028",
@@ -183,7 +183,8 @@
    "beat": "BR-030",
    "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-030.mp4",
    "phrase": "And the people around them thought they had gone off it.",
-   "key": "people"
+   "key": "people",
+   "out": 2.2
   },
   {
    "beat": "BR-032",
