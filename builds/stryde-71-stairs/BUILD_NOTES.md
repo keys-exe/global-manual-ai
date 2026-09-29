@@ -250,6 +250,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - **Redo from scratch (2026-09-29), M-06a v7 and R-07a v7.**
     - M-06a: a close side view at step height, no face. Her slipper lands on the first step, the strap shows, and her free hand swings clear of the rail.
     - R-07a: the P0 view from the foot of the stairs. She stands upstairs on the landing before the first step, hands empty at her sides.
+  - R-07a v8: "the strap is too big". This was an edit of v7 (prompt work/prompts/R-07a.edit.txt, refs v7 + worn_front + front): only the strap was shrunk, everything else kept.
   - **R-07a/b/c merged into ONE B-roll going down the stairs** (user). R-07a carries all three lines; R-07b and R-07c were moved to the Old board and removed from Current and the act map.
   - P-03b uses the new P-03a v3 as its brace reference. T-02a uses T-01b as its reference for Loretta's dress.
   - **P1-LANDING removed from the build (user 2026-09-29: "lets just remove it the p1").** All 7 versions are on the Old board, and the card and file are gone from Current. P-02a and C-06a now use P0 only (their current renders were made with P1 v5; regenerate only if the user asks). The confirmed hooks, TH and voice cards are untouched.
