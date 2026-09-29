@@ -1,0 +1,57 @@
+{
+ "act": "Hook 1",
+ "beat": "HK1-02c",
+ "build": "down-forwards-again",
+ "flow": [
+  "image"
+ ],
+ "imageAsset": "efe31afd07ce3b76f7ea9d7a68b95b0b",
+ "imageAt": 1790687400000,
+ "imageConnector": "Higgsfield",
+ "imageFault": "she should never put that strap on that drawer",
+ "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic \u2014 exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nTHE CAMERA ANGLE: the lens down inside the open drawer, among the old knee supports, looking up and out of the drawer at her hand and the kitchen ceiling beyond. This exact angle, not a straight-on eye-level view.\n\nFOCUS: the product and its wordmark is in sharp focus; the room behind falls to a soft, recognisable shape. The blur is optical: soft and round, never smeared.\n\nThis room is part of THE SAME HOUSE as the attached property reference image \u2014 magnolia walls over a dark-stained dado rail with cream anaglypta below, tall white-gloss Victorian skirting, stripped pine four-panel doors with brass knobs, the burgundy-and-cream patterned runner \u2014 the same finishes throughout, seen here in a different room of that same house, with nothing redecorated and nothing newer than the rest. The kitchen of the attached kitchen photograph, seen from inside the old pine Welsh dresser's top drawer: the drawer's pine sides rising at the edges of the frame, the kitchen ceiling and pendant light above, soft.\n\nA snapshot from a phone lying in the drawer, face up, among the clutter. In the near foreground, filling the bottom third of the frame and softly out of focus: a heap of old knee supports \u2014 black stretchy sleeves, beige wraps with loose velcro tabs, a grey hinged brace with metal side bars \u2014 all worn, blank and plain. Above them, sharp and in the middle of the frame, a woman's hand \u2014 sixty-nine, thin skin, a plain gold wedding band, the cuff of an oatmeal cable-knit cardigan \u2014 is caught lifting her knee strap up out of the drawer. The product exactly as in the attached reference image \u2014 a matte-black polymer shell spanning the whole front of the knee, its top edge waving up into two matching pointed peaks of equal height either side of a crisp concave notch that occupies only the middle three fifths of its width, waisted off-centre, a black elastic band in a coarse knit with a visible textured weave carrying two black keeper loops on its outer face, a brushed chrome slide inset flush into each end of the shell carrying three engraved dotted chevrons, and a lowercase grey stryde wordmark centred on the lower body directly beneath the notch, horizontal and readable, never to one side of the notch \u2014 held by the thumb in front on the shell's bottom edge below the wordmark, fingers behind on the pad, band slack round the wrist, its front face turned down towards the lens, the wordmark readable. The strap is the only sharp thing in the picture; the old braces below and the kitchen above are soft.\n\nTHE LIGHT: The window over the sink on the room's west wall lights the strap and her hand from the right of the frame, flat overcast daylight falling into the drawer, so it has a lit side toward the right and a softer shadow side. The shadows fall away from that source, one way only.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no hand gripping the band, no fingers on the chrome slides, no fingers across the wordmark, no fingers over the peaks or the notch, no flat palm pressed on the front face, no strap swinging by its band alone, no band being stretched, no band being threaded, no product changing hands, no second strap, no strap worn while held, no AI face, no plastic skin, no extra fingers, no fused fingers, no melted hands, no CGI look, no fake commercial gloss, no moody dark grade, no glowing skin, no shadows falling in two directions, no lens flare, no face in frame, no second hand, no strap worn on a leg, no brace in her hand, no sharp braces, no packaging, no readable text, logos, brand names or labels anywhere except the stryde wordmark on the strap",
+ "imageRes": "1536\u00d72752",
+ "imageStatus": "regenerate",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_123624_11e82707-e797-4344-9f15-ded96a1bf821.png",
+ "imageVersions": [
+  {
+   "asset": "1531df887279d14d5511439a02434f94",
+   "at": 1790676200000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "carried from HK1-02a v2",
+   "size": 8701836,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_091945_fd67eaff-29d4-41ce-8e4e-5503295b0379.png",
+   "v": 1
+  },
+  {
+   "asset": "9555c64bbe3be035367b2cba1510cfc4",
+   "at": 1790686100000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_pro requested \u00b7 Higgsfield reported nano_banana_2",
+   "note": "this should be holding the stryde strap with her hands and at the back is the braces and the vamera focus only of the stryde",
+   "size": 5111633,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122457_183c767a-1d7e-436d-8be6-a49ab09bb629.png",
+   "v": 2
+  },
+  {
+   "asset": "efe31afd07ce3b76f7ea9d7a68b95b0b",
+   "at": 1790687400000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_pro requested \u00b7 Higgsfield reported nano_banana_2",
+   "note": "i dont like this create a new one",
+   "size": 7324361,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_123624_11e82707-e797-4344-9f15-ded96a1bf821.png",
+   "v": 3
+  }
+ ],
+ "line": "Without one more brace going in the drawer.",
+ "stage": "hooks",
+ "status": "regenerate",
+ "title": "HK1-02c \u00b7 old versions",
+ "updatedAt": 1790688000000
+}

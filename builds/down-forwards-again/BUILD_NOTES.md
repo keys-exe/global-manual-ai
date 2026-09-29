@@ -98,7 +98,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   inside the drawer past the old braces, her hand lifts the STRYDE strap out (HELD_GRIPS bottom-edge pinch, focus on the strap). `hooks/build_hooks_v5.py`;
   jobs b6817ac4, cac8d27e, 11e82707. Replaced versions to the Old board. Act map + STEP4_5 + docs/actmap updated; angles.py PASS. Higgsfield 17,398.25.
 
+- 2026-09-29 ~12:50 UTC: user "fix those" → HK1-02a v5 and HK1-02b v3 confirmed; HK1-02c "she should never put that strap on that drawer" → v4: the strap lies
+  apart on the kitchen table, sharp in the foreground (§15A object beat); behind, soft, she tips the whole drawer of old braces into a black bin bag
+  (`hooks/build_hooks_v6.py`, job 31dd56c8, nano_banana_pro requested / Higgsfield reports nano_banana_2). v3 to the Old board. Act map updated, angles.py PASS.
+
 ## Where it stands
-- **Waiting on the user:** HK1-02a v5, HK1-02b v3, HK1-02c v3 on the board — Confirm or Fix. Confirmed images: HK1-01a v4, HK2-02a v3, HK3-01a v2.
+- **Waiting on the user:** HK1-02c v4 on the board — Confirm or Fix. Confirmed images: HK1-01a v4, HK1-02a v5, HK1-02b v3, HK2-02a v3, HK3-01a v2.
 - **Then:** each confirmed frame → its Kling 3.0 Omni video via Kie (§22X preflight, §27G, length from `assemble.py --lengths` on the locked VO);
   HK2-02a is a pinned seating clip (end frame: the strap seated, W-L-FRONT placement). Then B-roll acts (step 7), CapCut block.

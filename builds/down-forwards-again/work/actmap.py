@@ -60,9 +60,9 @@ row("HK1-02a","Hook 1",["HK1-02"],"BR","P","L-ORTHO","P-D1","over the surgeon's 
 row("HK1-02b","Hook 1",["HK1-02"],"BR","P","L-PHYSIO","P-D1","busy NHS physio class: she strains through a step-up between the parallel bars, the physio spotting her knee","one step-up, 3s",
     "sway","stepping up (§27G: one step, both hands on the bars)","no","ground","three-quarter","FULL","through","ground = the step that hurts; through the bars = trapped in it",
     "medium","eyes","L","physio",layout=FULL,face=True)
-row("HK1-02c","Hook 1",["HK1-02"],"BR","P hand","L-P-KITCH","P-D1","from inside the drawer, past the old braces: her hand lifts the STRYDE strap out","one lift, 2s",
-    "sway","hands (§27G: one action, HELD_GRIPS bottom-edge pinch)","no","ground","front","CU","through","ground/through = from among the old braces, the one that works",
-    "shallow","product","R","drawer",product="held (HELD_GRIPS bottom-edge pinch) · focus on the strap only",layout=CUT,model="NBP")
+row("HK1-02c","Hook 1",["HK1-02"],"BR","P","L-P-KITCH","P-D1","the STRYDE strap lies apart on the table, sharp; behind, soft, she tips the whole drawer of old braces into a bin bag","one tip, 2s",
+    "sway","standing at the dresser (§27G: one action, the strap never moves)","no","low","front","CU","clean","low = the strap big in the foreground, the old braces going out behind it",
+    "shallow","product","R","drawer",product="object on the table (§15A) · never in the drawer, never in the bag",layout=CUT,model="NBP",face=True)
 # ---- HOOK 2 — against his own interest ------------------------------------------------------------------
 TH("TH-HK2", "Hook 2", ["HK2-01", "HK2-02"], "leans in a touch on 'before you come and see me'; one flat hand down on the desk on 'not a prescription'")
 # §34 2026-09-29 board Fix: "THE TEN SECONDS IT MEANS TEN SECONDS TO PUT ON THE STRYDE STRAP" → seating beat (§9B), product's first appearance
