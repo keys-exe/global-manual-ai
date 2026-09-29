@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "voice_name": "Stairs",
+  "voice_id": "fjMYIJcXAxAnyO48q9x3",
+  "category": "cloned",
+  "requires_verification": false,
+  "source": "Stairs_clone_source.mp3",
+  "source_s": 31.5,
+  "remove_background_noise": true
+}
