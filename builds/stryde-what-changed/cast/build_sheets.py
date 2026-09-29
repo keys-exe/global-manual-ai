@@ -9,11 +9,11 @@ def S(i):
 
 CAST = {
  "H-HOST": dict(host=True, sex="WOMAN", side="left", wall="exposed London stock brick", floor="dark stained floorboards",
-   face="A striking, well-proportioned oval face with high defined cheekbones, large dark brown almond eyes with long lashes under softly arched full brows, a straight slim nose, full shapely lips and a neat, gently rounded chin — a naturally attractive, warm face. A single streak of grey running back from her left temple through the dark hair — her one marker. The left brow sits a touch higher than the right. WARM AND LIKEABLE — the face of a presenter people are glad to listen to: the eyes bright, warm and engaged, the lids relaxed, faint laugh lines at their corners; the brow at rest and open; the mouth closed but soft, its corners turned very slightly up as if about to smile; the head held easily, relaxed and confident. Friendly and self-assured, never stern, never cold, not a posed smile",
-   hair="Glossy dark brown-black hair falling in loose soft waves to just below the shoulders, parted slightly off-centre to the right, healthy and full, the grey streak from the left temple visible in every panel, the same length and the same tone in every panel",
-   body="A British woman of Indian heritage. Medium height, slim and graceful with straight shoulders and good posture, forty-four years old",
-   ward="A forest-green fine-knit crew-neck jumper, dark indigo straight jeans and tan suede ankle boots",
-   age="faint fine lines at the outer eyes, soft shallow folds from the nose to the corners of the mouth, a faint crease across the forehead, a few grey hairs at the parting"),
+   face="A soft heart-shaped face with round apple cheeks, wide-set bright hazel-green eyes that crinkle easily at the corners, gently arched light-brown brows, a small straight nose with a slightly upturned tip, a wide generous mouth with full lips and a small rounded chin — an open, friendly, naturally pretty face. A light scatter of freckles across the nose and cheeks, and one small dark beauty mark high on the left cheekbone — her one marker. The right eye crinkles a touch more than the left. WARM AND LIKEABLE — the face of a presenter people are glad to listen to: the eyes bright, kind and engaged, the lids relaxed, fine laugh lines at their corners; the brow at rest and open; the mouth closed but soft, its corners turned slightly up as if she has just heard something that amused her; the head held easily, relaxed and confident. Friendly, down-to-earth and self-assured, never stern, never cold, not a posed smile",
+   hair="Honey-blonde hair with darker roots, a soft shoulder-length cut with loose natural waves and a little volume, tucked behind the right ear, the same length and the same tone in every panel",
+   body="A white British woman. Medium height, softly athletic with a natural healthy figure, relaxed open posture, forty-one years old",
+   ward="A soft oatmeal-cream chunky cable-knit jumper, mid-blue straight jeans and dark brown leather Chelsea boots",
+   age="fine laugh lines at the outer eyes, faint soft folds from the nose to the corners of the mouth, a faint crease across the forehead, a light scatter of freckles"),
  "R1-MAUREEN": dict(sex="WOMAN", side="right", wall="pale sage green", floor="a worn beige hall carpet",
    face="A heart-shaped face with a broad forehead narrowing to a small pointed chin, round light-blue eyes, a short straight nose and thin lips with a pronounced cupid's bow. A small raised brown mole just above the right corner of her upper lip — her one marker. The right eye sits a little lower than the left",
    hair="Soft white hair cut in a short layered crop with a little lift at the crown, the same white and the same shape in every panel",
@@ -26,6 +26,12 @@ CAST = {
    body="A Black British man of Jamaican heritage. Tall and still athletic, broad shoulders, a thickened middle, strong thighs, sixty-six years old",
    ward="A navy zip-neck sports top over a white T-shirt, dark grey jogging shorts ending just above the knee so both knees are bare, white trainers with navy trim",
    age="deep lines across the forehead, heavy creases at the outer eyes, folds from the nose to the mouth, grey in the brows, darker skin over the knuckles and the knees"),
+ "S1-SURGEON": dict(pro=True, sex="MAN", side="right", wall="pale blue-grey", floor="grey hard-wearing clinic flooring",
+   face="A broad, open face with a high forehead, warm deep-set brown eyes, a wide nose and a generous mouth with a neat trimmed dark beard going grey at the chin. A thin pale scar breaking the outer end of his right eyebrow — his one marker. The left side of his mouth sits a touch higher than the right",
+   hair="Short black hair, grey at the temples, neatly cut and combed back, the same in every panel",
+   body="A British man of Pakistani heritage. Medium height, solid build, upright, fifty-eight years old",
+   ward="Navy surgical scrubs with a short-sleeved tunic and straight trousers, a plain grey fleece gilet over the tunic, and black clinic trainers",
+   age="fine lines at the outer eyes, soft creases across the forehead, grey in the beard and brows, faint darkening under the eyes"),
 }
 
 def build(k, c):

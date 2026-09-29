@@ -7,8 +7,8 @@ def S(i):
     m = re.search(r"\*\*`%s`\*\*[^\n]*\n+```\n(.*?)\n```" % re.escape(i), T, re.S)
     return m.group(1).strip()
 NEGS = lambda *ids: ", ".join(S(i) for i in ids)
-TAIL = lambda *ids: [S("PHYS-FRAME-C"), S("CAP-A"), S("CAP-FILE"),
-                     "AVOID: " + NEGS(*ids, "NEG-M1", "NEG-FILE") + ", no people, no product, no staged objects, no readable text or signage"]
+TAIL = lambda *ids, people="no people": [S("PHYS-FRAME-C"), S("CAP-A"), S("CAP-FILE"),
+                     "AVOID: " + NEGS(*ids, "NEG-M1", "NEG-FILE") + f", {people}, no product, no staged objects, no readable text or signage"]
 def fill(s, d):
     for k, v in d.items(): s = s.replace(k, v)
     assert "[" not in s, s[:200]; return s
@@ -42,7 +42,7 @@ P = {}
 P["P0-PROP-N"] = dict(loc="L-N-STAIRS", body=[S("CAM-LOCK"), fill(S("PLATE-PROP"), PROP_N).replace("colonial-style house,", "colonial-style house in a tree-lined suburb of Atlanta, Georgia,") +
   " The straight staircase rises along the right-hand wall of the hall to an upstairs landing, open on its left side with white-painted balusters and a dark-stained oak handrail ending in a square newel post at the bottom step; "
   + PHOTOS + ". At the far end of the hall an open doorway on the left leads into the kitchen, its window bright. Near the door: a small console table with a bowl for keys and a folded church bulletin, "
-  "a coat tree with a navy raincoat and a straw sun hat, a braided rag rug on the oak floor.",
+  "a coat tree with a navy raincoat and a straw sun hat. The oak floor is bare all the way down the hall: no rug, no mat, no runner on the floor.",
   "Daylight only: the front door's narrow glass sidelights behind the camera throw a soft wash down the hall floor, a window on the upstairs landing lights the top of the stairs from above, "
   "and the middle of the hall sits a stop darker with soft sensor noise on the far wall. The front faces west, so the afternoon sun comes in through the sidelights; on a morning the hall is lit indirectly from the landing window."] + TAIL("NEG-PROP"))
 
@@ -91,9 +91,9 @@ P["P8-MALL"] = dict(loc="L-MALL", body=[S("CAM-LOCK"),
   "A single photograph inside an ordinary two-level American suburban shopping mall outside Atlanta on a Sunday afternoon, taken at head height from the ground-floor concourse at the foot of the central staircase: "
   "a wide straight open staircase of about twenty pale terrazzo steps with brushed-steel handrails and glass balustrade panels rising to the upper-level walkway, "
   "the upper walkway with a glass railing crossing the frame above, open terrazzo floor on both sides of the staircase, shopfronts on both levels with plain coloured panels where the signs are and no readable lettering, "
-  "a potted ficus in a planter at the foot of the stairs, a bench, pale speckled terrazzo floor. The staircase stands on its own: there is no escalator anywhere in view. Empty for a moment.",
+  "a potted ficus in a planter at the foot of the stairs, a bench, pale speckled terrazzo floor. The staircase stands on its own: there is no escalator anywhere in view. A normal busy Sunday afternoon: shoppers walking along the upper walkway behind the glass railing and across the ground-floor concourse on both sides, a couple sitting on the bench with shopping bags, a family pushing a stroller past a shopfront, a teenager looking at a phone by the planter — all small and in the middle distance, caught mid-step, none of them posing; the shops open and lived-in, lit window displays of clothes and shoes, a pretzel kiosk with a short queue further along the concourse, a few shopping bags in people's hands. The staircase itself is clear, nobody on the steps.",
   "Soft daylight from a long skylight in the atrium roof above the staircase as the key, falling on the steps from above and slightly behind the camera, the shopfronts lit by their own warm-white downlights, "
-  "highlights on the steel handrails and the terrazzo clipping, the far end of the concourse a stop darker with mild sensor noise."] + TAIL("NEG-SCENE"))
+  "highlights on the steel handrails and the terrazzo clipping, the far end of the concourse a stop darker with mild sensor noise."] + TAIL("NEG-SCENE", people="no one on the staircase, no one close to the camera, no crowd blocking the stairs, no faces in focus, no posing"))
 
 if __name__ == "__main__":
     out = {}

@@ -13,5 +13,16 @@
  "P4-STORE.v3": "87a0c23e-8788-46e5-8c9a-8cfc94d1b4bb",
  "P8-MALL": "8b47c878-021a-4f21-b887-9ca63b1b1379",
  "P8-MALL.v2": "e4d9c771-b625-408a-9df0-d81b1956b180",
- "P8-MALL.v3": "kie:5b55c74e855deafc98770c0ea2105923"
+ "P8-MALL.v3": "kie:5b55c74e855deafc98770c0ea2105923",
+ "P0-PROP-N.16x9": "kie:9487dcea37c44dbf08df99ea3b8dcf5b",
+ "P1-LANDING.16x9": "kie:ae6d0342bc9be83dffabd1fcd1e2e402",
+ "P2-KITCHEN.16x9": "kie:d5a9c2366c9fca3d1b6b7a7f5ff1e553",
+ "P3-RECEPTION.16x9": "kie:ea2f1a8a0c1bdcb741826387ba8afc1d",
+ "P4-STORE.16x9": "kie:e174ba54b3ec18a1b93cccf0ae91f1e6",
+ "P5-CHURCH.16x9": "kie:8b92178ef14a33c9ccc9f3c44c22411f",
+ "P6-STREET.16x9": "kie:0180fe7e58a273a34c0e4ded3865a983",
+ "P7-CLINIC.16x9": "kie:26bcf0a749e787386af9780de9b255a0",
+ "P0-PROP-N.v3": "kie:ddc1d0365404ef88ba82cbdcb7ddbfda",
+ "P1-LANDING.v5": "kie:6f7e920172bb85d41a39dc1b86af566c",
+ "P8-MALL.v4": "kie:dcb8eb5a994d1ab678bfe5d2bda65ae3"
 }
