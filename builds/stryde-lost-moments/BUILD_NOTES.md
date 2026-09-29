@@ -7,8 +7,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - User message: "run manual. british" → RUN: MANUAL, VOICE: British. MODE blank → Mode 1. HOOKS → 5 in script.
 - Script (legacy `.dot`) read out word for word → `intake/script.txt`; per-variant `work/script_<A–E>.txt` and `.lines.txt`.
 - Product Sheet V7.49.32 (wordmark lock) came with the folder → now `products/stryde/`.
-- **Board:** https://claude.ai/artifact/BahH1QuzHm4bQ9FAdxXfKj
-- **Hourly Fix check:** `trig_014cgd2iBMe2YGBTHFEEGFrY` (:47 UTC, bound to session_01QFtjcJsQcS8p957wEAS4kb, this board only; replaced `trig_01G3hn1iQuLVknpWifsZ4Hcp` on resume 2026-09-28 16:02 UTC).
+- **Boards (since 2026-09-29, account iamnotkeysi@gmail.com):** Current https://claude.ai/artifact/HuZVrvs1M47vyzGNWmY1qU · Old https://claude.ai/artifact/4YwhNR2SEyter4U7XvfzJo · Final https://claude.ai/artifact/LHHTb3VdrPK6jf6usYXU5G · Plan https://claude.ai/artifact/3HLCjbPj6rHkMZ6gVxfFX9
+- First board (other account, not readable from this one): https://claude.ai/artifact/BahH1QuzHm4bQ9FAdxXfKj
+- **Hourly Fix check:** `trig_01QpbwhQm7KT5WJc8zDfvTip` (:47 UTC, session_01LDF4chVVFx9eyVTx6g8W8j, new boards). Old one on the other account: `trig_014cgd2iBMe2YGBTHFEEGFrY` (:47 UTC, bound to session_01QFtjcJsQcS8p957wEAS4kb, this board only; replaced `trig_01G3hn1iQuLVknpWifsZ4Hcp` on resume 2026-09-28 16:02 UTC).
 
 ## Sessions
 - session_01H4ZN9xQDenS8RsLkEHVFiq (2026-09-28 13:00–13:20 UTC): steps 1–3. Absorption, ledger, phrase inventory,
@@ -55,3 +56,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Lessons: GPT Image 2.5 edits need `resolution: 2k` and "same crop, do not zoom out" (1k default zoomed out and moved the strap). `kie.py kling --out` is the MP4 path, not a task file — log the full output to keep the task id.
 - Put the V7.65.0 VO re-cuts (vo/trim) on the board as new versions; then `assemble.py --lengths` per variant on the chosen cut.
 - Open flags: F1, F3, F4 (claims), F11 (`package_closed.jpg`); VO V5 last word clipped on T1.
+
+- session_01LDF4chVVFx9eyVTx6g8W8j (2026-09-29 09:00 UTC, account iamnotkeysi@gmail.com): resumed; the first board set and sessions
+  belong to the user's other account and can't be read here → user: "NEW BOARD". Four new boards from the template. Rebuilt from
+  the repo + connectors: 9 cast, 11 plates/dog, narrator frame v6 (Higgsfield job URLs), hook frames + clips (Higgsfield / Kie task
+  URLs), 66 planned B-roll cards from `work/actmap_rows.json`, plan docs. Only current versions moved (old versions stay on the first
+  Old board). Take 1 re-downloaded from ElevenLabs history (AGEjLCNEsKA4hCC0ADOI), split at `split_T1.json` cuts, house cut →
+  VO-T1-HK1…5 To check (V3: breath at 18.79s kept; V4: breath 32.14s + long pause 28.11–28.75s; V5: last word clipped by the TTS).
+  **C-HKb clip v4 not recovered** (its Kie task id was never logged) — the user downloads it from the old board.
+  D-HKa image Fix (user): "MAKE IT STRUGGLING ON HIS KNEE PAIN" → v5 nano_banana_pro edit of v4 (job 93103d12-eb4e-444a-b035-84ebaf026a33).
