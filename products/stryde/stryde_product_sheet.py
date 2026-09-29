@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.34
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.35
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -324,9 +324,9 @@ FIT_SNUG = (
 # ~5 cm tall, knee ~10-11 cm across the front) -- not advertiser-held. Replace
 # with supplied dimensions the moment they exist.
 SIZE_LOCK = {
-    "shell_width_cm":   15.0,   # slide to slide, along the curve (V7.49.34, was 12.0)
-    "shell_height_cm":  6.0,    # peak tips to the lowest point of the bottom edge (was 5.0)
-    "band_width_cm":    3.0,    # band height, edge to edge (was 2.5)
+    "shell_width_cm":   12.0,   # slide to slide, along the curve (V7.49.35: 15.0 of V7.49.34 withdrawn -- user: "too big")
+    "shell_height_cm":  5.0,    # peak tips to the lowest point of the bottom edge
+    "band_width_cm":    2.5,    # band height, edge to edge
     "shell_aspect":     (2.3, 2.6),   # width / height, measured straight-on
     "band_over_shell_h": (0.45, 0.60),  # edge-to-edge by eye, confirmed on back.webp V7.49.22
                                         # (band ~175 px vs shell ~310 px head-on). The --check
@@ -336,11 +336,12 @@ SIZE_LOCK = {
     "notch_rise_over_w": (0.15, 0.21),  # front.webp 0.18
     "peak_span_over_w":  (0.55, 0.66),  # front.webp 0.60
     "worn_band_over_leg": (0.20, 0.28), # band height / leg width at the calf, from behind
-    "held_shell_in_thumbs": (6.5, 7.5), # shell width / the holder's thumb width (V7.49.34, inner_face.jpg)
-    "source": ("V7.49.34 (user: 'use the image that will be our reference for the size'): absolute size "
-               "read off inner_face.jpg against the holder's thumb (~2.1 cm, Tier 3) -- slide to slide "
-               "~7.3 thumb-widths, shell ~2.6 tall, band ~1.4; +-15% (hand-held, curved, foreshortened). "
-               "Proportions still front.webp V7.49.21. NOT advertiser-held -- a ruler reading replaces it."),
+    "held_shell_in_thumbs": (5.0, 6.0), # shell width / the holder's thumb width (V7.49.34's 6.5-7.5 withdrawn)
+    "source": ("V7.49.35: the V7.49.34 reading off inner_face.jpg (15 x 6 cm, seven thumbs) is WITHDRAWN "
+               "-- the user: 'these are too big'. Back to the V7.49.21 rendering size (front.webp proportions, "
+               "Tier-3 anatomy). The size in a hand is whatever inner_face.jpg shows (SIZE_REF): attach it, "
+               "never translate it into centimetres or thumb counts. NOT advertiser-held -- a ruler reading "
+               "of the real strap replaces it."),
 }
 # V7.49.34: the one size reference. Attach it on every held beat and cite it
 # whenever the product's size is being judged. Was 12 x 5 cm (V7.49.21, Tier-3
@@ -349,17 +350,16 @@ SIZE_REF = "stryde_refs/inner_face.jpg"
 
 # The same size said three ways -- one per context. Positive wording (T2I).
 SIZE_OBJECT = (
-"Its size never changes: a rigid shell about 15 cm across from slide to slide and about 6 cm tall at the "
-"peaks, so it is roughly two and a half times as wide as it is tall, with a band about 3 cm wide -- the band "
-"about half as tall as the shell -- a strap that fills an adult's open hand and overhangs it at both ends.")
+"Its size never changes: a rigid shell about 12 cm across from slide to slide and about 5 cm tall at the "
+"peaks, so it is roughly two and a half times as wide as it is tall, with a band about 2.5 cm wide -- the band "
+"about half as tall as the shell.")
 SIZE_WORN = (
 "Its size never changes: the shell spans the leg's whole front width at the patellar tendon with a chrome "
 "slide at each side of the leg, it stands about as tall as the kneecap itself, and the band is about a "
 "quarter of the leg's width at the top of the calf.")
 SIZE_HELD = (
-"Its size never changes: the shell is about seven of the holder's thumb-widths across from slide to slide, "
-"longer than the whole hand is wide and overhanging it at both ends, and a little taller than the thumb is "
-"long from its tip to its base knuckle; the band is about one and a half thumb-widths wide.")
+"Its size never changes: exactly the size it is in the attached real photo of the strap in a hand -- the "
+"same size against the fingers and thumb as there, never larger.")
 
 # --- which knee (V7.49.24, user: "depends on the script") -----------------------
 # The side is read from the script, never chosen for looks. Declared once at the
@@ -1540,8 +1540,8 @@ CHECKLIST = [
     "seating beats: end position matches the front worn-placement reference",
     "size (SIZE_LOCK): shell about two and a half times as wide as tall; band about half "
     "the shell's height; worn -- shell spans the leg's front width and stands about as tall "
-    "as the kneecap, band about a quarter of the calf's width; held -- shell about seven "
-    "thumb-widths across, against inner_face.jpg (SIZE_REF, V7.49.34)",
+    "as the kneecap, band about a quarter of the calf's width; held -- the same size "
+    "against the hand as in inner_face.jpg (SIZE_REF, V7.49.35)",
 ]
 
 # back-compat for callers that imported the bare name
@@ -2081,7 +2081,7 @@ def counts():
 # ==================================================================
 SHEET_MD = r'''# Product Sheet — Stryde Precision Strap
 
-**V7.49.34.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
+**V7.49.35.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
 
 The geometry ratios were measured off the five V7.48 canonical renders (63, 64, 65, 66, 68) with a roll correction applied. **Since V7.49.11 the supplied product photos (`stryde_refs/`) are the product** (layer 1) and outrank those renders wherever they disagree. Where a figure is external it is marked Tier 3 and is not advertiser-held.
 
@@ -2209,7 +2209,7 @@ British, roughly 55–80. Cast to the buyer, balanced across men and women, with
 | Claim | Tier | Status |
 |---|---|---|
 | **One size fits all** | Advertiser (user-stated V7.49.15) | Rendered as `FIT_SNUG` on worn frames and covered per §12 on fit lines. No size chart, size label or S/M/L is ever shown. The V7.49.13 competitor sizing figures (25–44 cm, 15–46 cm) are retired — this product has no sizes |
-| Rendering size: shell ~15 cm × ~6 cm, band ~3 cm (`SIZE_LOCK`, V7.49.34) | Derived | Proportions measured on `front.webp` (V7.49.21); absolute size read off `inner_face.jpg` against the holder's thumb (V7.49.34, ±15%). Not advertiser-held — replace with supplied dimensions. Never stated on screen. (The V7.49.13 "band about 2 inches" category figure is retired.) |
+| Rendering size: shell ~12 cm × ~5 cm, band ~2.5 cm (`SIZE_LOCK`) | Derived | Proportions measured on `front.webp` (V7.49.21); absolute size from Tier-3 anatomy. V7.49.34's 15 × 6 cm reading off the hand photo withdrawn V7.49.35 (user: too big). Not advertiser-held — replace with supplied dimensions. Never stated on screen. (The V7.49.13 "band about 2 inches" category figure is retired.) |
 | Adult patella about 4–5 cm wide; tendon 4–5 cm from inferior pole to tibial tuberosity | 3 | Anatomical anchor, used for scale reasoning only, never as a claim |
 | Clinical placement "just below the kneecap"; one manufacturer specifies about 2 inches below | 3 | Third-party guidance. Compatible with the contact phrasing — the top edge touches the pole while the body covers the upper tendon |
 | Every step puts **17× bodyweight** through the spot below the kneecap | **User-confirmed V7.49.29** | Advertiser-held. The number is a post overlay, never generated (§17) |
@@ -2263,17 +2263,17 @@ The global Standards are product-agnostic from V7.49.4. Everything below used to
 
 ---
 
-## 13. Size — always the same *(V7.49.21 — user ruling; resized V7.49.34)*
+## 13. Size — always the same *(V7.49.21 — user ruling; V7.49.34 resize withdrawn V7.49.35)*
 
-**One unit, one size, every frame.** Proportions measured straight-on on `front.webp`: the shell is **about 2.5× as wide as it is tall** (2.50; `product_front.jpg` 2.32), the band is **about half the shell's height**, the notch rises 0.18 of the width, the peaks span 0.60 of it. Rendering size: **shell ~15 cm across × ~6 cm tall, band ~3 cm** — derived, not advertiser-held.
+**One unit, one size, every frame.** Proportions measured straight-on on `front.webp`: the shell is **about 2.5× as wide as it is tall** (2.50; `product_front.jpg` 2.32), the band is **about half the shell's height**, the notch rises 0.18 of the width, the peaks span 0.60 of it. Rendering size: **shell ~12 cm across × ~5 cm tall, band ~2.5 cm** — derived, not advertiser-held.
 
-**The size reference is `stryde_refs/inner_face.jpg` (V7.49.34, user: "use the image that will be our reference for the size").** The real strap in an adult hand: slide to slide about **seven thumb-widths** — longer than the hand is wide, overhanging it at both ends — the shell a little taller than the thumb is long, the band about one and a half thumb-widths. Read against a ~2.1 cm thumb (Tier 3), ±15% (hand-held, curved, foreshortened): **15 × 6 cm, band 3 cm** (`SIZE_LOCK`, `SIZE_REF`). The V7.49.21 figure (12 × 5 cm, band 2.5 cm, five to six thumbs) came from anatomy alone and was about 20% small. Every held beat attaches `inner_face.jpg`; any size check reads against it. A ruler measurement of the real strap replaces these numbers.
+**The size reference is `stryde_refs/inner_face.jpg`** (V7.49.34, user: "use the image that will be our reference for the size"). The size in a hand is exactly what that photo shows — attach it and ask for the same size against the hand; never translate it into centimetres or thumb counts. **Withdrawn V7.49.35:** the V7.49.34 reading off it (15 × 6 cm, band 3 cm, seven thumbs) rendered the strap too big (user: "these are too big and does not look like the one I sent"). A ruler measurement of the real strap replaces the numbers above.
 
 | Context | Size anchor (string) |
 |---|---|
-| Product only | ~15 × 6 cm shell, band half the shell's height, fills an open adult hand (`SIZE_OBJECT`) |
+| Product only | ~12 × 5 cm shell, band half the shell's height (`SIZE_OBJECT`) |
 | Worn | shell spans the leg's whole front width, about as tall as the kneecap; band about a quarter of the calf's width (`SIZE_WORN`) |
-| Held | shell about seven thumb-widths across, longer than the hand is wide, a little taller than the thumb is long; band about one and a half thumb-widths (`SIZE_HELD`, attach `inner_face.jpg`) |
+| Held | exactly the size it is in `inner_face.jpg` against the hand (`SIZE_HELD`, attach `inner_face.jpg`) |
 
 A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and fixed V7.49.22: `worn_rear.jpg` band 0.33 of the leg → re-rolled to ~0.27 (edit, everything else unchanged); `product_front.jpg` failed three `--check` shape gates → re-rolled level and now passes them all. The `--check` gates stay in their own units: its band reading under-reads the knit (0.351 on `front.webp` for a band that is about half the shell's height edge to edge, confirmed on `back.webp`).
 
