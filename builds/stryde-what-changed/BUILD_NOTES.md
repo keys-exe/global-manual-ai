@@ -135,4 +135,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - B02 Fix "SHOW THE FRONT OF THE KNEE POINTING THE 'BELOW KNEECAP/ KNEE TENDON'" (v2 was side-on, the finger on the side of the
   knee) → act map B02 now eye/front CU (angles.py PASS); v3 front-on, kneecap centred, fingertip on the midline tendon just under it;
   job 5d3a123f → To check; v2 moved to Old.
-- **Where it stands:** waiting on the user's check of the B01b clip, the B01c v2 clip, the B02 v3 image and the B01a image.
+- User: B02 image "CONFIRM, GO" → clip (fingertip presses once on the tendon and holds; 3 s floor, line ≈ 1 s; preflight PASS),
+  Kie 7356567f… 54 cr → To check. B03 line ("It is not a big thing … since you were a teenager.") "BROLL HERE" → B03-BR image:
+  overhead on the kitchen table, Maureen's hand at the page of a photo album, a faded 1970s snapshot of a teenage girl mid-stride on a
+  seaside promenade (refs R1 + P4; no thumb shown, F2); job 62aeddb0 → To check. `beats.py` gains KITCHEN / KITCH-L/R / KITCH-AM.
+- **Where it stands:** waiting on the user's check of the B01b clip, B01c v2 clip, B02 clip, B03-BR image and B01a image.

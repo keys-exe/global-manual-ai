@@ -49,9 +49,14 @@ D_STAIRS = ("THE SAME HALL AND STAIRS as the attached house plate: warm mid-grey
 STREET = ("THE SAME STREET as the attached location plate: a long grey paving-slab pavement, cracked and patched, low front-garden walls and privet "
           "hedges on one side, parked cars along the kerb, a row of 1930s semis with bay windows going away.")
 
+KITCHEN = ("THE SAME KITCHEN as the attached location plate: a lived-in 1990s British family kitchen, a square pale-oak table with a linen "
+           "runner and a jug of garden flowers, sage-green shaker units and a speckled grey worktop, a window over the sink, an open shelf of "
+           "mugs and jars.")
 LIGHT = {  # source, screen side, quality
     "M-GREY-L": ("the half-landing window at the top of the flight", "left", "grey morning light, soft and indirect from above — the problem state, flat and cool, never moody"),
     "STREET-AM-L": ("the broad overcast morning sky", "left", "flat, grey, cool morning light"),
+    "KITCH-L": ("the kitchen window over the sink", "left", "cool overcast daylight, flat and broad"),
+    "KITCH-R": ("the kitchen window over the sink", "right", "cool overcast daylight, flat and broad"),
     "M-GREY-R": ("the half-landing window at the top of the flight", "right", "grey morning light, soft and indirect from above — the problem state, flat and cool, never moody"),
     "D-GREY-R": ("the landing window at the top of the flight", "right", "grey morning light, soft and indirect from above — the problem state, flat and cool, never moody"),
     "D-GREY-L": ("the landing window at the top of the flight", "left", "grey morning light, soft and indirect from above — the problem state, flat and cool, never moody"),
@@ -64,7 +69,9 @@ COLOUR = {
     "D-STAIRS-AM": ("soft grey morning daylight, cool-neutral", "warm mid-grey walls, charcoal carpet with white nosing stripes, white spindles and skirting",
                     "a navy zip-neck top, dark grey shorts and white trainers with navy trim", "the white nosing stripes", "true to life, slightly muted"),
 }
-KELVIN = {"M-STAIRS-AM": 6500, "STREET-AM": 6500, "D-STAIRS-AM": 6500}
+COLOUR["KITCH-AM"] = ("cool overcast daylight", "pale oak table, linen runner, sage-green units, speckled grey worktop",
+                       "a dusty-pink cardigan cuff and a yellowed photo album", "the faded orange of the old photograph", "slightly flat, true to life")
+KELVIN = {"KITCH-AM": 6500, "M-STAIRS-AM": 6500, "STREET-AM": 6500, "D-STAIRS-AM": 6500}
 
 
 def light(key, subj):
@@ -133,7 +140,8 @@ def anat(state, view=None, stack="ANAT-A", slots=None):
 NBP, NB2 = "nano_banana_pro", "nano_banana_2"
 REFS = {"R1": ("R1-MAUREEN sheet", "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"), "R2": ("R2-DESMOND sheet", "9f0903d2-b148-4273-93b6-e4227a87d9f6"),
         "P1": ("P1-PROP-M plate", "520de2e7-e577-4afe-b18c-b79dbed0acf0"), "P2": ("P2-PROP-D plate", "68ddef76-e5b0-4947-966f-cda7e00335c2"),
-        "P3": ("P3-STREET plate", "c19e14a9-5146-4444-8b83-e765dfdc3f8f")}
+        "P3": ("P3-STREET plate", "c19e14a9-5146-4444-8b83-e765dfdc3f8f"),
+        "P4": ("P4-KITCHEN plate", "0bedfad5-bf20-4ebd-a862-fed90b55601a")}
 B = {}  # beat -> (model, [ref keys], prompt)
 
 # ── Hook 1 ──────────────────────────────────────────────────────────────────────────
@@ -388,6 +396,22 @@ B["B08c"] = (NB2, ["R2", "P2"], photo([
     focus("everything", deep=True),
     light("D-GREY-L", "him and the stairs"), colour("D-STAIRS-AM")],
     "no wincing, no pain face, no product anywhere, no knee strap, no second person, " + PLAIN_SHOES + ", no looking at the camera"))
+
+# B03-BR — covers B03-TH "It is not a big thing … since you were a teenager." (user: "BROLL HERE"). F2: no thumb shown against anything.
+B["B03-BR"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone held straight above the kitchen table, looking down. A family photo album lies open on the pale-oak table, "
+    "its thick card pages yellowed, a few old colour photographs held in by corner mounts. The main photograph, faded to warm oranges and "
+    "soft blues the way 1970s prints fade: a teenage girl of about fifteen with white-blonde hair mid-stride along a seaside promenade in "
+    "summer, laughing, bare legs, sandals, the sea wall and railings behind her. An older woman's hand rests on the edge of the page, "
+    "about to turn it. Close: the frame holds the open album, the photographs and her hand — nothing else of her.",
+    "Her hand: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, thin skin over the knuckles, a "
+    "plain gold wedding ring, the dusty-pink cardigan cuff at the wrist.",
+    KITCHEN,
+    angle("B03-BR", "the open album"),
+    focus("the teenage girl's photograph", deep=False).replace("the room behind", "the table around it"),
+    light("KITCH-L", "the album and her hand"), colour("KITCH-AM")],
+    "no thumb held against anything, no measuring, no readable text, no handwriting, no captions, no dates, no names, no logos, no face of "
+    "the older woman, no second hand, no extra fingers, no product anywhere, no knee strap"))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)

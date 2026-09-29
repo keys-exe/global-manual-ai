@@ -138,6 +138,19 @@ B["B01c"] = clip("B01c",   # v2 — user Fix "WALKING SINCE THE SCRIPT LINE IS '
            {"risk": "camera travels with her feet", "prevented_by": "locked-off tripod clause, she walks out of frame, 'no camera travelling with the subject'"},
            {"risk": "the walk reads as slow motion or stops", "prevented_by": "'in real time', about two steps a second, 'no stopping, no slow motion'"}])
 
+# B02 "That is the one." ≈ 1 s on screen → 3 s floor (§30H hold ≥ 3 s).
+B["B02"] = clip("B02",
+    "The front of an older white woman's bare bent knee seen straight on as she sits on her bottom stair: the kneecap centred, her index "
+    "fingertip resting on the tendon just below it, a plain gold ring on her hand, a navy skirt hem at the top edge.",
+    "Already touching on the first frame: her fingertip presses gently into the tendon just below the kneecap once, the skin dimpling "
+    "slightly under it, and holds there — one small press in about a second.",
+    "no face in frame, no finger moving onto the kneecap, no finger sliding to the side of the knee, no second hand, no knee strap, "
+    "no extra fingers, no walking, no standing up",
+    1.0, hi=4,
+    risks=[{"risk": "the finger drifts onto the kneecap or to the side", "prevented_by": "one press that holds, negatives on the finger moving"},
+           {"risk": "fingers warp or multiply", "prevented_by": "HOLD-C + NEG-WARP-C, one small movement, 'no extra fingers'"},
+           {"risk": "camera drifts", "prevented_by": "locked-off tripod clause"}])
+
 START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
          "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
          "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_173257_512cb5a0-c05b-4ab8-af5f-723322275d70.png",
@@ -145,7 +158,8 @@ START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUy
          "HK3-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_175116_4eefcbcd-8107-4478-bc49-7de4c9de2bb4.png",
          "HK3-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_183345_15bd1d26-4f28-4cc9-9e05-a4a65495715d.png",
          "B01b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_194456_c2453c7e-9832-4f3f-9b00-9c7dbad21a16.png",
-         "B01c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_194456_656ef52d-b5ca-473e-a831-c1dbaed4c5b6.png"}
+         "B01c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_194456_656ef52d-b5ca-473e-a831-c1dbaed4c5b6.png",
+         "B02": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_200235_5d3a123f-a2c4-4faa-8af7-b1513056106b.png"}
 
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
