@@ -217,6 +217,19 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - (c) The montage showed people putting the strap on. PR-01a/b/c are now productive: mulch up the porch steps, a wheelbarrow in the garden, a stepladder in the garage. C-07a is her heading out the door.
     - (d) M-01a's overhead camera is replaced by a companion's-chair eye-level view.
     - (e) M-05a now points at the patellar tendon, not the kneecap.
+  - **Fix round 4 (2026-09-29), 12 images.** The model kept inventing its own knee gear. The seed now:
+    - puts the product photos first in the refs;
+    - opens with PROD_COPY ("copy it EXACTLY … NOT a brace/sleeve/pad/shield … on bare skin below the kneecap");
+    - adds PROD_NEG.
+
+    The beats changed:
+    - PR-01b: the strap is hidden under long trousers.
+    - PR-05a: her hands are off the strap.
+    - PR-05b: no strap shown.
+    - C-06a: made from a TH-09 frame (broll/images/TH-frame_ref.png), so her face and the landing match the talking heads.
+    - L-02a: the tote comes from the L-01a render.
+    - R-07a: starts from the very top step.
+    - R-04a: the knee is bare under the rolled trouser.
   - **R-07a/b/c merged into ONE B-roll going down the stairs** (user). R-07a carries all three lines; R-07b and R-07c were moved to the Old board and removed from Current and the act map.
   - P-03b uses the new P-03a v3 as its brace reference. T-02a uses T-01b as its reference for Loretta's dress.
   - **P1-LANDING removed from the build (user 2026-09-29: "lets just remove it the p1").** All 7 versions are on the Old board, and the card and file are gone from Current. P-02a and C-06a now use P0 only (their current renders were made with P1 v5; regenerate only if the user asks). The confirmed hooks, TH and voice cards are untouched.
