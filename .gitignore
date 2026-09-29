@@ -28,3 +28,4 @@ builds/*/voice/*.png
 *.flac
 *.pyc
 builds/*/broll/renders/
+builds/*/broll/v*/*.png
