@@ -16,6 +16,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Cast on Higgsfield Sunburst 2k, one each: N-NARR (voice only), R1-FOLAKE, R2-DEREK, R3-HASSAN, R4-ELAINE. First R1 (Patrice) and R3 (Kwame) withdrawn by me before review — too close to stryde-failed-alternatives R1 Patricia / R3 Emmanuel — recast; the withdrawn renders are on the Old board. 7 Sunburst jobs; Higgsfield 17,384 credits before the cast.
   Four boards made; build doc on all four, cast on Current, docs/absorption on Plan + Current.
 
+- 2026-09-29: user "I'VE CONFIRM PROCEED" — the five cast sheets confirmed on the board from the message; docs/absorption confirmed.
+  Steps 4–5 (`STEP4_5.md`): seven 16:9 plates on Higgsfield Sunburst (P0-PROP-FO, P1-F-LOUNGE with P0 attached, P2-D-TOWPATH, P3-PROP-H, P4-H-KITCHEN with P3 attached, P5-E-BEDROOM, P6-CONSULT), To check;
+  act map `work/actmap.py` (25 unique beats, 22 shots per video, `angles.py` PASS all three), wardrobe ledger; board: plates + 25 planned beats, docs locations/actmap/wardrobe on Plan + Current.
+  §22U step 1: `voice/N_step1_v1.jpg` (job 001cafe9…, nano_banana_pro requested, job reports nano_banana_2), sheet + face crop (`voice/N_face_ref.jpg`, Higgsfield media 2d6c030f…) attached, on the board as N-VOICE-IMG, To check.
+  Step 2 ready: `voice/N_G1..G3.call.json` (2,465–2,489 chars), preflight PASS except the frame's approval. **Kling connector has 3 credits → takes go via Kie `kling-3.0` (§5 fallback)**; Kie 169,864.8 credits.
+  Step 8: `vo/ALL.enhanced.txt` (HK1+HK2+HK3+BODY, one request) verbatim PASS, 1,417 chars.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the five cast sheets on the Current board; answer the bold flags F2 (woman narrator), F5 (hook claim), F6 (written-off knees / surgery claim), F7 (stays put / no sores).
-- **Next on their go:** steps 4–5 (16:9 plates, act map + wardrobe map for 3 videos, `angles.py`), then the voice straight through (§22U).
+- **Waiting on the user:** Confirm/Fix the seven plates and the narrator frame N-VOICE-IMG (paid video waits on it, §22X); script flags F2, F5, F6, F7.
+- **Next, no stop once the frame is confirmed:** Kie Kling takes G1–G3 → `voice_source.py` (medium trim, ×1.2, gate, loop ≥30s) → `elevenlabs_clone.py` `NotYourCartilage` → `tts_api.py` eleven_v4 speed ~0.85, takes on the board → `vo_trim.py` house cut per variant. Then hooks HK1-01, HK2-01, HK3-01 (step 6).

@@ -1,0 +1,212 @@
+[
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__P0-PROP-FO",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/P0-PROP-FO.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__P1-F-LOUNGE",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/P1-F-LOUNGE.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__P2-D-TOWPATH",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/P2-D-TOWPATH.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__P3-PROP-H",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/P3-PROP-H.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__P4-H-KITCHEN",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/P4-H-KITCHEN.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__P5-E-BEDROOM",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/P5-E-BEDROOM.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__P6-CONSULT",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/P6-CONSULT.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__HK1-01",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_HK1-01.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__HK2-01",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_HK2-01.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__HK3-01",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_HK3-01.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-01a",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-01a.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__MECH-S1",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_MECH-S1.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__MECH-S2",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_MECH-S2.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__MECH-01",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_MECH-01.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-02b",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-02b.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-03a",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-03a.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-03b",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-03b.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-03c",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-03c.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-04",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-04.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__MECH-02",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_MECH-02.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-06",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-06.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-07",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-07.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-08",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-08.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-09a",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-09a.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-09b",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-09b.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-10",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-10.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-11a",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-11a.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-11b",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-11b.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-12",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-12.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-13a",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-13a.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__CARD-13b",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_CARD-13b.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-not-your-cartilage__B-14",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/beat_B-14.json"
+},
+{
+"op": "set",
+"collection": "docs",
+"doc_id": "locations",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/doc_locations.json"
+},
+{
+"op": "set",
+"collection": "docs",
+"doc_id": "actmap",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/doc_actmap.json"
+},
+{
+"op": "set",
+"collection": "docs",
+"doc_id": "wardrobe",
+"file_path": "/home/user/global-manual-ai/builds/stryde-not-your-cartilage/board/doc_wardrobe.json"
+}
+]
