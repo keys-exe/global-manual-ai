@@ -1,0 +1,33 @@
+{
+ "beat": "B06",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b06\",\"subject\":\"A premium 3D anatomical model of a single knee on a near-black field, seen from a low three-quarter angle in the upper right of the frame, mid-step under load: detailed translucent thigh muscles, the kneecap, the patellar tendon, worn thin cartilage; four glowing white-to-amber force arrows run down the thigh onto the spot just below the kneecap, one larger white pointer arrow in the dark field points at that spot, which glows as one tight bright point on the patellar tendon. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already under load on the first frame: the leg stays where it is and the arrows stay fixed in place. Once a second a soft pulse of light runs DOWN along the four force arrows and arrives at the one spot below the kneecap, and each time it arrives the spot flares brighter and eases back and the thigh muscles tense slightly — the same pulse, the same place, every second, unchanged. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens and straightens along its length, and the whole structure compresses a few degrees. The anatomy takes the weight — it is not a still model with light played over it.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no arrows moving, no arrows changing shape, no new arrows, no arrows fading away, no glow spreading down the shin, no second glowing spot, no text, no labels, no numbers, no product, no camera orbit, no zoom, no slow motion, nothing entering the empty lower-left third of the frame, no music, no speech, no slow motion\"}",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_215836_f898adbd-fc7c-47b3-9528-088a1df6aa36.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the arrows drift, multiply or morph",
+   "prevented_by": "'the arrows stay fixed in place', only light travels along them, 'no arrows moving, no new arrows'"
+  },
+  {
+   "risk": "the glow spreads down the shin",
+   "prevented_by": "one tight spot named, ANAT-LOAD, 'no glow spreading down the shin, no second glowing spot'"
+  },
+  {
+   "risk": "something enters the pip's empty lower-left",
+   "prevented_by": "leg stays where it is, locked-off camera, lower-left named empty in negatives"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}

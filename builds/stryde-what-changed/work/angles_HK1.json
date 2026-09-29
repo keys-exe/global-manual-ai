@@ -510,21 +510,51 @@
   "subject": "H"
  },
  {
-  "beat": "B07-BR",
+  "beat": "B07-BRa",
   "group": "Act 1",
   "type": "BR",
-  "subject": "R1",
-  "height": "overhead",
+  "subject": "ANAT",
+  "height": "eye",
   "side": "front",
   "scale": "CU",
   "fg": "clean",
-  "why": "overhead = the worn sole laid bare",
+  "why": "front = the gap between the bones seen straight on, the cushion's thickness readable",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "\u2014",
+  "face": false,
+  "light": {
+   "source": "anatomical register (\u00a712A)",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "mechanism",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "B07-BRb",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R1",
+  "height": "low",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "low front = the weight coming straight down at the lens",
   "mirror_of": null,
   "mode": 1,
   "product_beat": false,
   "focus": {
    "plane": "foreground",
-   "dof": "medium",
+   "dof": "shallow",
    "rack": null,
    "moving_subject": false
   },

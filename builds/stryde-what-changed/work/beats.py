@@ -370,6 +370,34 @@ B["B06"] = (NB2, [], anat(
     .replace("no individual muscle fibres, ", "").replace("no surface veins, ", "")
     .replace("never fine striation and never individual fibres", "fine striation readable"))
 
+# B07-BRa — user "The cushion gets thinner. (CUSHION IN KNEE GETS THINNER)". ANAT-B, front-on and closer than B05 (profile cutaway):
+# the cartilage cushion in the joint gap, visibly thin. No glow — a condition beat.
+B["B07-BRa"] = (NB2, [], anat(
+    "Seen straight from the front, close in on the gap between the thigh bone and the shin bone: the rounded ends of the femur above and "
+    "the flat top of the tibia below, and between them THE CUSHION — the smooth, pearly, slightly translucent cartilage pad lining both bone "
+    "ends and the two crescent menisci at its edges. The cushion is visibly THIN and worn: a narrow pale band, frayed and slightly rough at "
+    "its surface, patchy where it has worn furthest, so the two bone ends sit close together with only a sliver of cushion between them. "
+    "The joint gap and the thin cushion fill the middle of the frame. Calm, no glow, no emission; the thinning reads by thickness alone.",
+    view="viewed straight from the front, close in, the knee joint gap large in the middle of the frame, cut away cleanly so the cushion "
+         "between the bones is visible", stack="ANAT-B",
+    slots={"[TARGET]": "the cartilage cushion between the bones"}).replace("the patellar tendon crisp", "the cartilage cushion crisp"))
+
+# B07-BRb — user "The weight stays exactly the same. MAKE ME A BROLL HERE". Maureen, faceless, low front at the foot of her stairs,
+# coming down with a full laundry basket on her hip: the whole weight landing on the knee. Replaces the planned worn-plimsoll shot.
+B["B07-BRb"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone held low at the foot of her stairs, pointing up the flight, from the front. She is coming DOWN her stairs "
+    "towards the lens carrying a full plastic laundry basket of folded towels on her left hip, her right hand on the oak handrail, caught "
+    "mid-step: her right foot landing flat on the tread nearest the lens and taking her whole weight, the right knee bending under it, her "
+    "left foot still on the tread above. THE FRAME IS CROPPED AT HER WAIST — her face and head are above the frame and not in the picture. "
+    "It holds the bottom of the basket at her hip, her skirt hem, both bare knees and shins, her plimsolls and the treads.",
+    R1_BODY + " " + R1_LEGS + " Wearing " + WARD["M-D1"] + ".",
+    M_STAIRS,
+    angle("B07-BRb", "her knees and feet coming down the stairs"),
+    focus("her landing right foot and knee", deep=False).replace("the room behind", "the stairs behind"),
+    light("M-GREY-L", "her legs and the stairs"), colour("M-STAIRS-AM")],
+    "no face in frame, no head, no product anywhere, no knee strap, no knee support, no walking stick, no stairlift, no second person, "
+    "no going up the stairs, no falling, no readable labels on the basket, " + PLAIN_SHOES + ", no wrong number of legs, no extra hands"))
+
 # B07 — "That is why it feels like it arrived overnight." Maureen at the top of her stairs, looks down and stops. Face in frame.
 B["B07"] = (NB2, ["R1", "P1"], photo([
     "A snapshot from a phone held a little above her, on the landing, three-quarter on. She stands at the top of her stairs, her left hand "

@@ -244,6 +244,23 @@ B["B06-BR"] = clip("B06-BR",
            {"risk": "the runner's legs warp mid-limp", "prevented_by": "two short steps only, start frame mid-stride"},
            {"risk": "camera travels with the runner", "prevented_by": "locked-off tripod clause"}])
 
+# B06 image v4 (user CONFIRM): force arrows down the thigh onto the one tendon spot + pointer arrow; pip (host bottom-left).
+# "Seventeen times your bodyweight is still arriving, every step, in exactly the same place." ≈ 4.6 s → 6 s.
+B["B06"] = clip("B06",
+    "A premium 3D anatomical model of a single knee on a near-black field, seen from a low three-quarter angle in the upper right of the "
+    "frame, mid-step under load: detailed translucent thigh muscles, the kneecap, the patellar tendon, worn thin cartilage; four glowing "
+    "white-to-amber force arrows run down the thigh onto the spot just below the kneecap, one larger white pointer arrow in the dark field "
+    "points at that spot, which glows as one tight bright point on the patellar tendon.",
+    "Already under load on the first frame: the leg stays where it is and the arrows stay fixed in place. Once a second a soft pulse of "
+    "light runs DOWN along the four force arrows and arrives at the one spot below the kneecap, and each time it arrives the spot flares "
+    "brighter and eases back and the thigh muscles tense slightly — the same pulse, the same place, every second, unchanged.",
+    "no arrows moving, no arrows changing shape, no new arrows, no arrows fading away, no glow spreading down the shin, no second glowing "
+    "spot, no text, no labels, no numbers, no product, no camera orbit, no zoom, no slow motion, nothing entering the empty lower-left third of the frame",
+    4.6, hi=8, anat=True,
+    risks=[{"risk": "the arrows drift, multiply or morph", "prevented_by": "'the arrows stay fixed in place', only light travels along them, 'no arrows moving, no new arrows'"},
+           {"risk": "the glow spreads down the shin", "prevented_by": "one tight spot named, ANAT-LOAD, 'no glow spreading down the shin, no second glowing spot'"},
+           {"risk": "something enters the pip's empty lower-left", "prevented_by": "leg stays where it is, locked-off camera, lower-left named empty in negatives"}])
+
 START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
          "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
          "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_173257_512cb5a0-c05b-4ab8-af5f-723322275d70.png",
@@ -259,6 +276,7 @@ START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUy
          "B04c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_211843_6ae8e4ac-2507-4735-9b38-7f1edc3a2b07.png",
          "B04b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_211843_dc076019-ac3b-475f-a315-f311f4d298f0.png",
          "B04a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_205729_cf751279-1d57-43d5-9b56-f8b0adbb16f5.png",
+         "B06": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_215836_f898adbd-fc7c-47b3-9528-088a1df6aa36.png",
          "B06-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_215145_b3e86d93-f337-4226-9feb-1ae2a35a886e.png"}
 
 if __name__ == "__main__":
