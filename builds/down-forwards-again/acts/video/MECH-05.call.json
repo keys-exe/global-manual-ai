@@ -1,0 +1,40 @@
+{
+ "beat": "MECH-05",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_145606_54d936e8-fbab-4f15-8645-dfc2101a1535.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "and the catch lands on that band.",
+ "pace": "brisk",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "the leg distorts through the step",
+   "prevented_by": "one step down; HOLD-AC; no foot sliding through the step"
+  },
+  {
+   "risk": "the flash lands before the catch",
+   "prevented_by": "the flash comes at the catch, once, and stays hot"
+  },
+  {
+   "risk": "the camera wanders off the knee",
+   "prevented_by": "RIG-RVF push toward the target; NEG-CAM-RV"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
+ "audio": false,
+ "prompt": "{\"shot\":\"mech_05\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Virtual camera already moving fast on the first frame. Rapid push toward the target structure, short and hard, with a slight lateral arc across it. Mechanically smooth at speed — no sway, no bounce, no handheld physics, no whip. Still travelling on the final frame, the cut landing mid-move.\",\"framing\":\"MEDIUM-CLOSE, as in the start frame: the whole leg stepping down, the knee in the middle. Framed for a picture-in-picture crop: one subject, large and centred, readable at a third of the width.\"},\"motion\":\"The leg steps down: the foot lands on the step below and the thigh muscle lengthens to catch the weight; at the catch the band of tendon under the kneecap flashes bright red once, hard, and stays hot as the weight settles; the bones keep their shape. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. The anatomy keeps its structure every frame: bones hold shape, length and spacing, joints never separate or pass through each other, muscle keeps constant volume, and the layer order holds — bone deepest, muscle over it, translucent contour outermost.\",\"lighting\":\"As in the start frame.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no static camera, no locked-off camera, no tripod, no camera coming to rest, no handheld shake, no breath sway, no focus hunt, no reframe, no gimbal glide, no whip pan, no orbit completing a full revolution, no camera crossing behind the target, no crossfade, no glow fading in place, no gradual onset, no static anatomy, no arrows, no motion lines, no text overlays, no labels, no numbers, no individual muscle fibres, no second limb, no clothing, no hands, no people, no x-ray look, no flat illustration, no cartoon look, no vignette, no second step, no foot sliding through the step\"}"
+}

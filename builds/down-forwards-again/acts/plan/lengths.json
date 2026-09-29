@@ -1,0 +1,282 @@
+{
+ "BR-01": {
+  "act": "Act 1",
+  "in": 0.0,
+  "out": 3.5,
+  "span": 3.5,
+  "kling": 4,
+  "line": "A patient of mine. Nine years of knee pain."
+ },
+ "MECH-01": {
+  "act": "Act 1",
+  "in": 3.5,
+  "out": 6.5,
+  "span": 3.0,
+  "kling": 3,
+  "line": "Bone on bone on the left, the right one following it."
+ },
+ "BR-02": {
+  "act": "Act 1",
+  "in": 6.5,
+  "out": 9.04,
+  "span": 2.54,
+  "kling": 3,
+  "line": "Here is what her scan does not show you."
+ },
+ "MECH-03": {
+  "act": "Act 1",
+  "in": 9.04,
+  "out": 18.78,
+  "span": 9.74,
+  "kling": 10,
+  "line": "Two centimetres below your kneecap there is a band of tendon about as wide as your thumb. Every step you take lands on it. Seventeen times your bodyweight."
+ },
+ "BR-04": {
+  "act": "Act 1",
+  "in": 18.78,
+  "out": 23.42,
+  "span": 4.64,
+  "kling": 5,
+  "line": "Put your finger under your kneecap and press. That band is the one taking it."
+ },
+ "BR-05a": {
+  "act": "Act 1",
+  "in": 23.42,
+  "out": 27.76,
+  "span": 4.34,
+  "kling": 5,
+  "line": "Coming down is worse than going up. Going up, your muscles lift you."
+ },
+ "BR-05b": {
+  "act": "Act 1",
+  "in": 27.76,
+  "out": 29.72,
+  "span": 1.96,
+  "kling": 3,
+  "line": "Coming down, you are catching yourself,"
+ },
+ "MECH-05": {
+  "act": "Act 1",
+  "in": 29.72,
+  "out": 31.8,
+  "span": 2.08,
+  "kling": 3,
+  "line": "and the catch lands on that band."
+ },
+ "BR-06": {
+  "act": "Act 2",
+  "in": 0.0,
+  "out": 4.28,
+  "span": 4.28,
+  "kling": 5,
+  "line": "That is why she came down backwards. Backwards takes the catch out."
+ },
+ "BR-07": {
+  "act": "Act 2",
+  "in": 4.28,
+  "out": 6.78,
+  "span": 2.5,
+  "kling": 3,
+  "line": "That is why the chair took three tries."
+ },
+ "BR-08": {
+  "act": "Act 2",
+  "in": 6.78,
+  "out": 11.84,
+  "span": 5.06,
+  "kling": 6,
+  "line": "That is why the good knee started going the same way. She had been leading with it for years."
+ },
+ "BR-09a": {
+  "act": "Act 2",
+  "in": 11.84,
+  "out": 16.54,
+  "span": 4.7,
+  "kling": 5,
+  "line": "And the list of things she said no to got longer every year. The long walk."
+ },
+ "BR-09b": {
+  "act": "Act 2",
+  "in": 16.54,
+  "out": 17.3,
+  "span": 0.76,
+  "kling": 3,
+  "line": "The garden."
+ },
+ "BR-09c": {
+  "act": "Act 2",
+  "in": 17.3,
+  "out": 19.38,
+  "span": 2.08,
+  "kling": 3,
+  "line": "Her family coming to her instead."
+ },
+ "BR-10": {
+  "act": "Act 2",
+  "in": 19.38,
+  "out": 25.04,
+  "span": 5.66,
+  "kling": 6,
+  "line": "It was never how hard she tried. It was never a weak muscle. It was where the load was landing."
+ },
+ "BR-11a": {
+  "act": "Act 3",
+  "in": 0.0,
+  "out": 2.42,
+  "span": 2.42,
+  "kling": 3,
+  "line": "A sleeve squeezes the whole knee."
+ },
+ "BR-11b": {
+  "act": "Act 3",
+  "in": 2.42,
+  "out": 6.56,
+  "span": 4.14,
+  "kling": 5,
+  "line": "A hinged brace stops it going sideways, and her knee was never going sideways."
+ },
+ "BR-11c": {
+  "act": "Act 3",
+  "in": 6.56,
+  "out": 10.22,
+  "span": 3.66,
+  "kling": 4,
+  "line": "A gel sits on the skin. None of them move the load."
+ },
+ "PR-12": {
+  "act": "Act 3",
+  "in": 10.22,
+  "out": 12.82,
+  "span": 2.6,
+  "kling": 3,
+  "line": "This does. It is called Stryde."
+ },
+ "BR-13": {
+  "act": "Act 3",
+  "in": 12.82,
+  "out": 18.06,
+  "span": 5.24,
+  "kling": 6,
+  "line": "It sits two centimetres below the kneecap, on the tendon. It never crosses the joint."
+ },
+ "MECH-14": {
+  "act": "Act 3",
+  "in": 18.06,
+  "out": 23.86,
+  "span": 5.8,
+  "kling": 6,
+  "line": "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee."
+ },
+ "BR-14b": {
+  "act": "Act 3",
+  "in": 23.86,
+  "out": 28.1,
+  "span": 4.24,
+  "kling": 5,
+  "line": "The weight gets caught and moved off the worn part before it reaches the joint."
+ },
+ "BR-15": {
+  "act": "Act 3",
+  "in": 28.1,
+  "out": 32.9,
+  "span": 4.8,
+  "kling": 5,
+  "line": "The placement is the whole thing. A centimetre too high and it is a sleeve again."
+ },
+ "BR-16a": {
+  "act": "Act 4",
+  "in": 1.16,
+  "out": 6.32,
+  "span": 5.16,
+  "kling": 6,
+  "line": "Thirty four percent less strain. Measured. Three years with orthopedic surgeons."
+ },
+ "BR-16b": {
+  "act": "Act 4",
+  "in": 6.32,
+  "out": 7.82,
+  "span": 1.5,
+  "kling": 3,
+  "line": "Two hundred thousand people wearing one."
+ },
+ "BR-17a": {
+  "act": "Act 4",
+  "in": 7.82,
+  "out": 10.76,
+  "span": 2.94,
+  "kling": 3,
+  "line": "Ten seconds to put on. No sores, no rolling down,"
+ },
+ "BR-17b": {
+  "act": "Act 4",
+  "in": 10.76,
+  "out": 21.76,
+  "span": 11.0,
+  "kling": 11,
+  "line": "and nobody can see it."
+ },
+ "BR-19a": {
+  "act": "Act 4",
+  "in": 21.76,
+  "out": 26.3,
+  "span": 4.54,
+  "kling": 5,
+  "line": "You do not have to take my word for it. One knee only. Leave the other bare."
+ },
+ "BR-19b": {
+  "act": "Act 4",
+  "in": 26.3,
+  "out": 30.5,
+  "span": 4.2,
+  "kling": 5,
+  "line": "Go to your own stairs and come down forwards. You will know in a minute."
+ },
+ "BR-20": {
+  "act": "Act 4",
+  "in": 30.5,
+  "out": 39.58,
+  "span": 9.08,
+  "kling": 10,
+  "line": "Not because the arthritis has gone. Her scan looks exactly the same as it did in March. I have both of them. Because the load is not landing on that band any more."
+ },
+ "PR-22a": {
+  "act": "Act 5",
+  "in": 4.8,
+  "out": 8.04,
+  "span": 3.24,
+  "kling": 4,
+  "line": "Two for one, so you do both knees, which is what she needed."
+ },
+ "BR-22a2": {
+  "act": "Act 5",
+  "in": 8.04,
+  "out": 10.3,
+  "span": 2.26,
+  "kling": 3,
+  "line": "Sixty days, and you keep the straps."
+ },
+ "BR-22a3": {
+  "act": "Act 5",
+  "in": 10.3,
+  "out": 11.62,
+  "span": 1.32,
+  "kling": 3,
+  "line": "From the Stryde site."
+ },
+ "BR-22b": {
+  "act": "Act 5",
+  "in": 11.62,
+  "out": 15.52,
+  "span": 3.9,
+  "kling": 4,
+  "line": "The copies stretch, and a stretched strap stops holding the spot."
+ },
+ "BR-23": {
+  "act": "Act 5",
+  "in": 15.52,
+  "out": 18.46,
+  "span": 2.94,
+  "kling": 3,
+  "line": "Nothing to lose but the pain. Go and do your stairs."
+ }
+}

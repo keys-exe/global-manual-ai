@@ -1,0 +1,40 @@
+{
+ "beat": "MECH-03",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 10,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_160352_3c5a033f-cfb1-4ece-ac7e-28fb9a762936.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Two centimetres below your kneecap there is a band of tendon about as wide as your thumb. Every step you take lands on it. Seventeen times your bodyweight.",
+ "pace": "brisk",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "the red spreads over the whole knee",
+   "prevented_by": "the band of tendon under the kneecap flashes as one band; no red spreading"
+  },
+  {
+   "risk": "the leg bends too far and the anatomy breaks",
+   "prevented_by": "the knee gives a little; HOLD-AC"
+  },
+  {
+   "risk": "the glow fades in gently",
+   "prevented_by": "flashes at the moment of load; no gradual onset"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
+ "audio": false,
+ "prompt": "{\"shot\":\"mech_03\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Virtual camera already moving fast on the first frame. Rapid push toward the target structure, short and hard, with a slight lateral arc across it. Mechanically smooth at speed — no sway, no bounce, no handheld physics, no whip. Still travelling on the final frame, the cut landing mid-move.\",\"framing\":\"CLOSE, as in the start frame: the knee, the kneecap and the band of tendon below it. Framed for a picture-in-picture crop: one subject, large and centred, readable at a third of the width.\"},\"motion\":\"The leg takes one step's load: the thigh muscle tightens and the knee gives a little, and at that moment the band of tendon under the kneecap flashes bright red along its whole length, as one band; the red holds hot while the load stays on; the kneecap and shin bone keep their places. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. The anatomy keeps its structure every frame: bones hold shape, length and spacing, joints never separate or pass through each other, muscle keeps constant volume, and the layer order holds — bone deepest, muscle over it, translucent contour outermost.\",\"lighting\":\"As in the start frame.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no static camera, no locked-off camera, no tripod, no camera coming to rest, no handheld shake, no breath sway, no focus hunt, no reframe, no gimbal glide, no whip pan, no orbit completing a full revolution, no camera crossing behind the target, no crossfade, no glow fading in place, no gradual onset, no static anatomy, no arrows, no motion lines, no text overlays, no labels, no numbers, no individual muscle fibres, no second limb, no clothing, no hands, no people, no x-ray look, no flat illustration, no cartoon look, no vignette, no red spreading over the whole knee, no second band\"}"
+}
