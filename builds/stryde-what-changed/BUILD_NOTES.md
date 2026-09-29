@@ -164,4 +164,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   is redone after this image is confirmed. B06 'ANATOMY "MORE DETAILS"' → v2 detailed joint (thin worn cartilage, menisci, collateral +
   cruciate ligaments, fat pad, fibrous tendon, muscle striation, bone texture), pip layout kept (job 32b9a21d). angles.py PASS; replaced
   versions on Old, deleted from Current. All → To check.
-- **Where it stands:** waiting on the user's check of the B02 clip, B03a–c clips, B04a clip, B04b v4 / B04c v2 / B06 v2 images and B01a.
+- User: B04b v4 + B04c v2 images CONFIRM → clips (preflight PASS): B04b two careful steps down, 6 s, Kie 6cb6e900… 108 cr; B04c the
+  silhouette figure walks two steps down the visible stairs, the spot flaring at each landing, 5 s (new shot from image v2), Kie aefb1da6…
+  90 cr. Both → To check.
+- **Where it stands:** waiting on the user's check of the B02, B03a–c, B04a, B04b, B04c clips and the B06 v2 and B01a images.
