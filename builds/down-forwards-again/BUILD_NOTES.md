@@ -161,4 +161,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   BR-05a v3 (glasses on her nose; hauling herself up, struggling), BR-06 v3 (the plate's one straight flight, seen from the hall), BR-09b v3 (one woman only),
   MECH-03 v2 (glow on the tendon below the kneecap, kneecap unlit) — `acts/build_fix_r1.py`, one render each, back on the board as To check; replaced
   versions moved to Old. Confirmed so far: BR-01, BR-05b, BR-07, BR-08, BR-09a, MECH-01, MECH-05.
+- **Fix round 2 (board notes ~16:40 UTC + the user's photo of the pad's inside):** BR-04 v4 (lens in front at knee height), BR-06 v4 (no feet at the bottom,
+  phone at chest height), BR-11c v3 (her whole seated body side-on, one continuous leg), BR-16a v2 + PR-12 v3 (strap small in frame, ~10 cm, palm-wide),
+  BR-17a v3 (sitting on the second tread, stairs under and behind her), MECH-14 v2 (strap in its real shape, shell cut away to show the pad) —
+  `acts/build_fix_r2.py`. **Pad inside, from the user's photo (overrides the Product Sheet's INNER_PAD "plain smooth black"):** a mid-grey silicone pad set
+  into the black shell back, same outline, fine raised curved parallel ridges over its surface, one smooth raised bar down its centre; chrome slide each end.
+  The photo reached the chat only (no file in the container / Drive), so it is described in words; the Product Sheet itself is not changed yet (shared file).
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
