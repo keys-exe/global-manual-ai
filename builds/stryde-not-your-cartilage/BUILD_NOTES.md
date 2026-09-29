@@ -50,6 +50,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: user "CONFIRMED PROCEED" — HK3-01 video confirmed: **all three hooks done**. Step 7: `body/build_body.py` (act map + STEP4_5 light/wardrobe + product-sheet locked strings) → 22 body start images (21 shots + MECH-S2, the split's lower half), all on Kie (NBP for worn/held/box beats, NB2 for volume and anatomy, Sunburst image-to-image for CARD-13b), 334 Kie credits, all on the board To check. Anatomy beats use ANAT-A + fine detail (HK1-01's "MAKE MORE DETAILS" applied to every anatomy beat, §34).
 
+- 2026-09-29: B-08 sent to Fix ("change the product"). Diagnosed: v1 was shot in profile, which hides the shell's front shape — the model drew a generic wrap with the wordmark on the side of the leg. Fixed at the source: angle eye/profile → eye/three-quarter (act map; `angles.py` PASS all three), the shell, peaks, notch and wordmark to the phone, `product_tq_left.jpg` attached, wrap/side-wordmark negatives → v2 (Kie NBP, task d5e65c41…, 18 credits) To check; v1 on Old.
+
 ## Where it stands
 - **Waiting on the user:** Confirm/Fix the 22 body images; script flags F2, F5, F6, F7.
 - **Next:** each confirmed image → its video on Kie `kling-3.0` at its `edit/call_lengths.json` length (§27G one action, `preflight.py`); then `assemble.py` rough cuts and `variants.py` (HK1/2/3 + BODY), CapCut block (step 8), finals on the Final board.
