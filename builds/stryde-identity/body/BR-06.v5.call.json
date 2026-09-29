@@ -1,0 +1,35 @@
+{
+ "beat": "BR-06",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"pad_inside_one_hand_still\",\"subject\":\"One hand holding the one stryde strap resting across its open palm and fingers, inside turned up: the mid-grey grooved pad with its smooth comma-shaped raised bump, a chrome slide at each end, the black band running out through both slides into one short closed loop behind the hand, the thumb resting below the strap.\",\"camera\":{\"movement\":\"Handheld and almost still: only a faint breath sway, no push, no roll.\",\"framing\":\"Close-up, exactly as in the start frame, the whole strap in frame throughout.\"},\"motion\":\"The hand stays still the whole clip, only the faintest natural micro-movement of a person holding still; it does not turn, tilt or lift the strap, and the strap keeps facing the camera exactly as in the start frame. The strap is soft, flexible rubber, as in real life: it rests naturally in the palm, gently following the curve of the hand with a slight soft give where the fingers support it, never stiff or board-like. It keeps its exact outline, size and details; nothing morphs, melts or grows. The band stays one continuous closed loop behind the hand; no end comes loose. The thumb stays below the strap. One hand only, five separate fingers.\",\"lighting\":\"Exactly as in the start frame: same tone, noise and colour temperature, no grading change.\",\"style\":\"Ordinary everyday phone footage, natural daylight colour, unretouched.\",\"negatives\":\"no turning the strap, no tilting, no strap going edge-on, no rotating, no lifting, no big hand movement, no stiff board-like strap, no rigid plank, no cut band, no loose band end, no flapping tail, no open strap, no second hand, no thumb on the pad, no finger over the strap, no morphing, no warping, no melting, no shape shifting, no duplicate objects, no texture swimming, no flickering grooves, no second strap, no teleporting, no jump cut, no front face turning to camera, no wordmark, no bigger strap, no phone, no camera in frame, no plastic skin, no extra fingers, no fused fingers, no deformed hand, no CGI look, no text, no music\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "BR-06_fix19.png",
+ "start_approved": true,
+ "fix_note": "Q4 (motion): v5 turned the strap edge-on and it moved like a rigid board (the rigid-shell clause) \u2192 hand still, no turn/tilt, soft flexible strap resting naturally as in the user's real footage",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "subject_motion": "in_place",
+ "pace": "near-still",
+ "risks": [
+  {
+   "risk": "hand turns the strap again",
+   "prevented_by": "'does not turn, tilt or lift' + near-still camera + turn/tilt negatives"
+  },
+  {
+   "risk": "strap looks stiff",
+   "prevented_by": "soft flexible rubber resting in the palm, as in the real footage; rigid clause removed"
+  },
+  {
+   "risk": "soft strap melts or morphs",
+   "prevented_by": "keeps exact outline, size and details + morph negatives"
+  }
+ ],
+ "user_go": "user 2026-09-29: 'the strap looks stiff also dont move it too much'"
+}

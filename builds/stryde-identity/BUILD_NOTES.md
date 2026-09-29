@@ -335,3 +335,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - BR-06 video v4 Fix (user: "the strap it cutted make a way to fix that"): the band stopped at the slides in the frame →
   image v10 = edit with the band closed into a loop behind the hand (**confirmed**) → video v5 (Kie Kling, 4s,
   `BR-06.v4.i2v.json`, preflight PASS), To check.
+- BR-06 video v5 (user: "the strap looks stiff also dont move it too much"): the hand turned the strap edge-on and the
+  rigid-shell clause made it move like a board → v6: hand still (no turn/tilt), strap described as soft flexible rubber
+  resting in the palm as in the user's real footage (`BR-06.v5.i2v.json`, preflight PASS). To check.
+  **Product note:** the real strap gives a little in the hand (real footage) — the "rigid shell, never bends" rule reads
+  as stiff on held shots; flag for the Product Sheet if the user wants it changed everywhere.
