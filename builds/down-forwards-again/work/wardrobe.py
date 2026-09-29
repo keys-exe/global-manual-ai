@@ -30,7 +30,7 @@ DAYS = {
           "She wears a raspberry-red polo shirt under an open grey zip fleece, grey jogging bottoms and white trainers."),
  "P-A1": ("Act 3", ["BR-11a", "BR-11b", "BR-11c", "PR-12"], "cornflower-blue linen button-down shirt, sleeves rolled to the forearm", "—", "wide-leg cream cotton trousers", "tan leather sandals", SIG, "navy/denim", "VISIBLE on BR-11c (trouser leg rolled for the gel), absent otherwise",
           "She wears a cornflower-blue linen button-down shirt with the sleeves rolled to the forearm, wide-leg cream cotton trousers, tan leather sandals, and " + SIG + "."),
- "P-A2": ("Act 3", ["BR-13", "MECH-14", "BR-14b"], "jade-green short-sleeved blouse", "—", "knee-length stone cotton skirt, bare legs", "white canvas plimsolls", "small pearl stud earrings", "green family", "VISIBLE (the skirt sits above the knee as she sits)",
+ "P-A2": ("Act 3", ["BR-13", "MECH-14", "BR-14b", "BR-15"], "jade-green short-sleeved blouse", "—", "knee-length stone cotton skirt, bare legs", "white canvas plimsolls", "small pearl stud earrings", "green family", "VISIBLE (the skirt sits above the knee as she sits)",
           "She wears a jade-green short-sleeved blouse, a knee-length stone-coloured cotton skirt with bare legs, white canvas plimsolls and small pearl stud earrings."),
  "P-A3": ("Act 4", ["BR-17a", "BR-17b"], "raspberry-and-white Breton striped long-sleeve top", "—", "wide-leg mid-blue denim trousers", "white leather trainers", "a navy cross-body bag strap", "red family", "REVEAL → CONCEALED (the left leg rolled to put it on, let fall to go out)",
           "She wears a raspberry-and-white Breton striped long-sleeve top, wide-leg mid-blue denim trousers, white leather trainers, and a navy cross-body bag."),

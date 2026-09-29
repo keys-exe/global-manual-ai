@@ -24,16 +24,24 @@ for a in (sys.argv[1:] or ["A1", "A2", "A3", "A4", "A5"]):
     s2h = {}
     for blk in sm.get_matching_blocks():
         for k in range(blk.size): s2h[blk.a + k] = blk.b + k
-    first = []
+    first, last, firsti, lasti = [], [], [], []
     for i in range(len(br)):
         idx = [j for j, o in enumerate(owner) if o == i]
-        hit = next((s2h[j] for j in idx if j in s2h), None)
-        assert hit is not None, (br[i]["beat"], "no heard word matched")
-        # the span starts at its first word: back off by the unmatched leading words (rare)
-        first.append(heard[hit][1])
+        hits = [s2h[j] for j in idx if j in s2h]
+        assert hits, (br[i]["beat"], "no heard word matched")
+        # the first B-roll of an act opens on the act's first word (a numeral heard as "34" would otherwise start it late)
+        h0 = min(hits); matched = set(s2h.values())
+        back = 0  # up to 3 unmatched heard words just before (a numeral heard as "200 ,000") belong to this span
+        numeric = lambda k: any(ch.isdigit() for ch in W[a]["words"][k][0]) or W[a]["words"][k][0].strip() in ("%", ",000")
+        while back < 3 and h0 - back - 1 >= 0 and (h0 - back - 1) not in matched and numeric(h0 - back - 1): back += 1
+        h0 = 0 if i == 0 and h0 - back <= 3 else h0 - back
+        first.append(heard[h0][1]); last.append(heard[max(hits)][2]); firsti.append(h0); lasti.append(max(hits))
     end = heard[-1][2]
     for i, r in enumerate(br):
         t0, t1 = first[i], (first[i + 1] if i + 1 < len(br) else end)
+        # a talking-head-only stretch after this span (the doctor to camera, no B-roll written for it): end 0.4 s after the span's own last word
+        gap_words = (firsti[i + 1] if i + 1 < len(br) else len(heard)) - lasti[i] - 1
+        if gap_words >= 5: t1 = round(last[i] + 0.4, 2)
         span = round(t1 - t0, 2)
         out[r["beat"]] = {"act": act, "in": t0, "out": t1, "span": span, "kling": min(15, max(3, math.ceil(span))), "line": r["line"]}
         print(f"{r['beat']:8s} {t0:6.2f} → {t1:6.2f}  {span:5.2f}s  kling {out[r['beat']]['kling']}s  | {r['line'][:70]}")

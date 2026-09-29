@@ -156,8 +156,11 @@ row("MECH-14","Act 3",["B-14"],"PRODUCT","P hand","L-P-FRONT","P-D2","turns the 
 row("BR-14b","Act 3",["B-14"],"BR","P legs","L-P-HALL","P-D2","steps down one stair, strap on the LEFT knee: the foot lands and the knee bends easily under her weight","one step down, 2s",
     "locked-off sway","stairs descending (§27G: one step, camera at the foot)","no","low","three-quarter","CU","clean","low = the catch, at the knee","medium","product","R","caught",
     product="worn · VISIBLE",model="NBP")
-row("BR-15","Act 3",["B-15"],"BR","D hand","L-D-CONS","D-D1","his fingertip sets on the tendon just under the kneecap of the desk knee model, then lifts a centimetre","one tap, 2s",
-    "sway","hands","no","high","three-quarter","ECU","clean","high = the placement from above","medium","hands","L","placement",layout=PIP)
+# the user, 2026-09-29 (image Fix on BR-15): "generate a new image for this different concept" → her own knee, the strap on it, her fingertip resting on the
+# notch where it meets the kneecap's lower edge: the placement checked on her, not on a desk model (was: the doctor's finger on a knee model)
+row("BR-15","Act 3",["B-15"],"BR","P hand","L-P-FRONT","P-D2","her fingertip rests on the strap's notch where it meets the lower edge of her kneecap — right on the tendon, not a centimetre higher","one light touch, 2s",
+    "sway","sitting · hands","no","high","three-quarter","ECU","clean","high = her own look down at the placement","medium","hands","L","placement",
+    product="worn · VISIBLE",layout=PIP)
 
 # ---- ACT 4 — proof, ten seconds, the doctor's word, the test, the scan (B-16–B-20) ------------------------------
 TH("TH-A4", "Act 4", ["B-16","B-17","B-18","B-19","B-20"], "hands flat on the desk on 'I do not sell these'; eyebrows up on 'You will know in a minute'")

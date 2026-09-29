@@ -1,0 +1,40 @@
+{
+ "beat": "BR-16a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170655_dcbe34d5-89bf-4289-b539-08e24cf0eb7a.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Thirty four percent less strain. Measured. Three years with orthopedic surgeons.",
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "the shell bends or the wordmark smears as it turns",
+   "prevented_by": "a quarter turn only; product-constancy line; product negatives"
+  },
+  {
+   "risk": "he speaks under the VO",
+   "prevented_by": "no speaking, no mouth moving"
+  },
+  {
+   "risk": "the knee model moves",
+   "prevented_by": "the knee model stays still; no model moving"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
+ "audio": false,
+ "prompt": "{\"shot\":\"br_16a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"MEDIUM-CLOSE, as in the start frame: the surgeon at his desk, the strap in his hand, the knee model beside it. Framed for a picture-in-picture crop: one subject, large and centred, readable at a third of the width. \"},\"motion\":\"He turns the strap a slow quarter turn in his hand beside the knee model, over about two seconds, looking at it, then holds it still with its front face to the lens, the wordmark readable; the knee model stays still on the desk. The strap keeps its exact shape, size and wordmark in every frame and moves only with the body it sits on. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject, no music, no voice, no text appearing, no bending, no curling, no folding, no melting, no flipping of the product, no second strap, no fingers across the wordmark, no band opening, no model moving, no speaking, no mouth moving\"}"
+}

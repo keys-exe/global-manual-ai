@@ -223,6 +223,16 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   step; third generation on the user's go = their "fix and generate" on the card's Fix note). 1,080 Kie credits. Replaced videos to Old.
   **Honest flag:** BR-06 v2's last frame still has her at the bottom of the stairs walking away — the start frame puts her high on the flight and the
   model finishes the descent; a third try should start from a new frame with her halfway down, backwards (needs the user's go).
+- **2026-09-29 ~20:10 UTC: user "fix and generate the act 4 videos".** Fix notes: BR-06 image "she should be half way down so we can emphasize the
+  going down backwards", BR-15 image "generate a new image for this different concept", PR-12 image "this is too big the product", MECH-03 video
+  "make a new image", BR-14b video "dont show any hesitation she should be walking normally no stopping". New images (`acts/build_fix_r10.py`):
+  BR-06 v5 (halfway down), BR-15 v2 (NEW CONCEPT: her fingertip on the strap's notch at the kneecap's lower edge — act-map row now P hand ·
+  L-P-FRONT · P-D2, wardrobe P-A2), PR-12 v4 (waist-up at the kitchen window so her body sets the strap's scale), MECH-03 v3 (the whole leg, one
+  ordinary walking step) → board To check; their old images and the videos made from them moved to Old. **lengths.py fix:** a B-roll followed by
+  a talking-head-only stretch (≥5 unmatched words) now ends 0.4 s after its own last word, and up to 3 unmatched numerals just before a span
+  ("200 ,000", "34 %") belong to it — Acts 1–3 unchanged; A4 BR-17b 11 s → 3 s (the doctor's "I do not sell these…" stays on the doctor).
+  Videos (`acts/build_act4_videos.py`): Act 4 gen 1 (BR-16a 6 s, BR-16b 3, BR-17a 4, BR-17b 3, BR-19a 5, BR-19b 5, BR-20 10), BR-10b + BR-10c 3 s
+  each, BR-14b v2 (three even steps, no pause) → board To check; 846 Kie credits. Act map + docs synced.
   **Open for later acts:** A4 aligns poorly (ratio 0.74; BR-17b came out 11 s) — check the A4 act-map lines against the heard words before its
   videos. A5 still has the BR-22a3 row ("From the Stryde site.") with no card.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

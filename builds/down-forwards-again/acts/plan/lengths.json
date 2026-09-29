@@ -185,34 +185,34 @@
  },
  "BR-16a": {
   "act": "Act 4",
-  "in": 1.16,
-  "out": 6.32,
-  "span": 5.16,
+  "in": 0.0,
+  "out": 5.18,
+  "span": 5.18,
   "kling": 6,
   "line": "Thirty four percent less strain. Measured. Three years with orthopedic surgeons."
  },
  "BR-16b": {
   "act": "Act 4",
-  "in": 6.32,
-  "out": 7.82,
-  "span": 1.5,
+  "in": 5.18,
+  "out": 7.64,
+  "span": 2.46,
   "kling": 3,
   "line": "Two hundred thousand people wearing one."
  },
  "BR-17a": {
   "act": "Act 4",
-  "in": 7.82,
+  "in": 7.64,
   "out": 10.76,
-  "span": 2.94,
-  "kling": 3,
+  "span": 3.12,
+  "kling": 4,
   "line": "Ten seconds to put on. No sores, no rolling down,"
  },
  "BR-17b": {
   "act": "Act 4",
   "in": 10.76,
-  "out": 21.76,
-  "span": 11.0,
-  "kling": 11,
+  "out": 12.54,
+  "span": 1.78,
+  "kling": 3,
   "line": "and nobody can see it."
  },
  "BR-19a": {

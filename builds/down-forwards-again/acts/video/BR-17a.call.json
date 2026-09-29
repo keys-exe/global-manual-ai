@@ -1,0 +1,40 @@
+{
+ "beat": "BR-17a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_164556_dc25c5b4-0b8f-462f-9fd2-be6de4873b39.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Ten seconds to put on. No sores, no rolling down,",
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "the strap climbs onto the kneecap or stops low",
+   "prevented_by": "seat point named; no strap travelling past or onto the kneecap"
+  },
+  {
+   "risk": "the band opens or is tugged",
+   "prevented_by": "the band stays closed and is never pulled; product negatives"
+  },
+  {
+   "risk": "hands pass through the strap",
+   "prevented_by": "hands flat on the shell's sides; no hands passing through the strap"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
+ "audio": false,
+ "prompt": "{\"shot\":\"br_17a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CLOSE, as in the start frame: her sitting on the bottom stair, her left leg and the strap. Framed for a split crop: the action sits in the middle band of the frame, nothing that matters in the top or bottom quarter. \"},\"motion\":\"Both hands, flat on the two sides of the shell, slide the closed strap up the last finger's width of her shin and seat it on the tendon just below the kneecap, over about two seconds: the notch cups the kneecap's lower border and stops; her fingers lift away. The band stays closed and is never pulled; the strap keeps its exact shape, size and wordmark in every frame. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject, no music, no voice, no text appearing, no bending, no curling, no folding, no melting, no flipping of the product, no second strap, no band being opened, no strap travelling past or onto the kneecap, no strap moving downward\"}"
+}

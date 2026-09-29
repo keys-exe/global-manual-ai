@@ -1,0 +1,10 @@
+BR-10b {"taskId": "bc2c6e1ebbf064047f615c8363b2f9d5", "model": "kling-3.0-omni/image-to-video"}
+BR-10c {"taskId": "69b497b3dfc8715c2a69e260be3cc2a9", "model": "kling-3.0-omni/image-to-video"}
+BR-16a {"taskId": "92bc7f1bed310ca17be729a891985d57", "model": "kling-3.0-omni/image-to-video"}
+BR-16b {"taskId": "a8b6abb96cbc728e6792968d9d650338", "model": "kling-3.0-omni/image-to-video"}
+BR-17a {"taskId": "916b4d714947e8a1f2712e050a76e7fd", "model": "kling-3.0-omni/image-to-video"}
+BR-17b {"taskId": "403014483a4bc8b86b395d7bac1c509d", "model": "kling-3.0-omni/image-to-video"}
+BR-19a {"taskId": "a0307edec565d2d3a38726923ee059fc", "model": "kling-3.0-omni/image-to-video"}
+BR-19b {"taskId": "386aebb30085e4f416b25a322fa56e6b", "model": "kling-3.0-omni/image-to-video"}
+BR-20 {"taskId": "8df2795e661dbcb2954f90e498f55519", "model": "kling-3.0-omni/image-to-video"}
+BR-14b.v2 {"taskId": "91a207a55745347eda972347e0a77a5b", "model": "kling-3.0-omni/image-to-video"}

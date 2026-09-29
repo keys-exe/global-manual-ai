@@ -17,7 +17,7 @@ Built on the user's go (2026-09-28, "go ahead with steps 4–5"). **The avatars 
 | L-P-FRONT | front room, the armchair | C1 ("the chair took three tries") | P | BR-04, BR-07, BR-10, BR-13 | **PLATED** | P1-P-FRONTROOM (P0 attached) |
 | L-P-KITCH | kitchen, the dresser drawer, the garden window | C1 ("one more brace going in the drawer", "the garden") | P | HK1-02a, BR-01, BR-09b, BR-11a–c, PR-12, PR-22a, BR-22b | **PLATED** | P2-P-KITCHEN (P0 attached) |
 | L-P-DOOR | her front step | C1 ("her family coming to her") | P | BR-09c | **INCIDENTAL** (the red-brick front, written with the beat) | — |
-| L-D-CONS | the doctor's consulting room | C5 (the presenter, every TH) · C1 ("her scan") | D | TH-HK1…TH-A5, HK2-02a, HK3-01a, BR-02, BR-15, BR-20 | **PLATED** | P3-D-CONSULT |
+| L-D-CONS | the doctor's consulting room | C5 (the presenter, every TH) · C1 ("her scan") | D | TH-HK1…TH-A5, HK2-02a, HK3-01a, BR-02, BR-20 | **PLATED** | P3-D-CONSULT |
 | L-ORTHO | an orthopaedic clinic | C4 ("three years with orthopedic surgeons") | GENERIC | BR-16a | **INCIDENTAL** | — |
 | L-TOWPATH | canal towpath | C4 (200,000 wearers) | GENERIC | BR-16b | **INCIDENTAL** | — |
 
@@ -155,7 +155,7 @@ Columns condensed from E4. `duration` = `pending-master` on every B-roll row (E6
 | BR-13 | B-13 | BR | P | L-P-FRONT | P-D2 | sits on the armchair edge, LEFT leg straight, strap seated under the kneecap · still, one breath, 2s | sway · sitting · no | eye · three-quarter · CU · clean | product, medium | L · 5600K | below | worn · VISIBLE (W-L-FRONT) | split 60/40 · EG03 · EG01 | NBP | — |
 | MECH-14 | B-14 | PRODUCT | P hand | L-P-FRONT | P-D2 | turns the strap over in her hand: the grey ridged silicone pad inside, its smooth central bar · a slow half turn, 2s | sway · hands · yes — product turns | high · three-quarter · CU · clean — high = looking down into her palm at the pad | product, medium | L · 5600K | pad | held, back of the shell (PAD_BACK_SHOT, the user's pad photo) | split 60/40 · EG03 · EG01 | NBP | — |
 | BR-14b | B-14 | BR | P legs | L-P-HALL | P-D2 | steps down one stair, strap on the LEFT knee: the foot lands and the knee bends easily under her weight · one step down, 2s | locked-off sway · stairs descending (§27G: one step, camera at the foot) · no | low · three-quarter · CU · clean — low = the catch, at the knee | product, medium | R · 5600K | caught | worn · VISIBLE | cutout · EG04 · EG01 | NBP | — |
-| BR-15 | B-15 | BR | D hand | L-D-CONS | D-D1 | his fingertip sets on the tendon just under the kneecap of the desk knee model, then lifts a centimetre · one tap, 2s | sway · hands · no | high · three-quarter · ECU · clean — high = the placement from above | hands, medium | L · 6500K | placement | absent | pip · EG02 · EG01 | NB2 | — |
+| BR-15 | B-15 | BR | P hand | L-P-FRONT | P-D2 | her fingertip rests on the strap's notch where it meets the lower edge of her kneecap — right on the tendon, not a centimetre higher · one light touch, 2s | sway · sitting · hands · no | high · three-quarter · ECU · clean — high = her own look down at the placement | hands, medium | L · 5600K | placement | worn · VISIBLE | pip · EG02 · EG01 | NB2 | — |
 
 #### Act 4
 
@@ -197,7 +197,7 @@ Columns condensed from E4. `duration` = `pending-master` on every B-roll row (E6
 
 | Day | Subject | BASE | MID / OUTER | LOWER | FOOT | ACCENT | Colour family | Visibility (§9D) | Beats |
 |---|---|---|---|---|---|---|---|---|---|
-| D-D1 | D | pale blue button-down shirt, open collar, no tie | white knee-length doctor's coat, open; black stethoscope *(sheet: TH wardrobe lock)* | charcoal wool trousers | brown leather lace-ups | a plain steel watch | white / pale blue / charcoal | (one session) | TH-HK1…TH-A5, HK2-02a, HK3-01a, BR-02, BR-15, BR-20 |
+| D-D1 | D | pale blue button-down shirt, open collar, no tie | white knee-length doctor's coat, open; black stethoscope *(sheet: TH wardrobe lock)* | charcoal wool trousers | brown leather lace-ups | a plain steel watch | white / pale blue / charcoal | (one session) | TH-HK1…TH-A5, HK2-02a, HK3-01a, BR-02, BR-20 |
 | P-D1 *(hooks only)* | P | cream fine-knit roll-neck | oatmeal cable-knit cardigan, buttoned once | knee-length plum wool skirt, bare legs | burgundy fleece-lined slippers | reading glasses on a cord | plum / oatmeal / cream | — | HK1-02a, HK1-02c, HK2-02a (confirmed hook renders, unchanged) |
 | P-D2 *(hooks only)* | P | white cotton shirt, sleeves turned back | coral lightweight cardigan, open | wide-leg navy linen trousers | tan leather flat loafers | small gold hoop earrings | navy / coral / white | CONCEALED | HK1-01a (confirmed hook render, unchanged) |
 | P-B1 | P · Act 1 | pale blue cotton button-down shirt, collar out | grey marl crew-neck jumper | knee-length charcoal wool A-line skirt, bare legs | sheepskin moccasin slippers | reading glasses on a thin beaded cord round her neck | cool neutral | absent | BR-01 |
@@ -210,7 +210,7 @@ Columns condensed from E4. `duration` = `pending-master` on every B-roll row (E6
 | P-B8 | P · Act 2 | bottle-green fine roll-neck | long charcoal open draped cardigan | black straight trousers | black flat shoes | — | green family | absent | BR-09c |
 | P-B9 | P · Act 2 | raspberry polo shirt | grey zip fleece, open | grey jogging bottoms | white trainers | — | red family | absent | BR-10, BR-10b, BR-10c |
 | P-A1 | P · Act 3 | cornflower-blue linen button-down shirt, sleeves rolled to the forearm | — | wide-leg cream cotton trousers | tan leather sandals | reading glasses on a thin beaded cord round her neck | navy/denim | VISIBLE on BR-11c (trouser leg rolled for the gel), absent otherwise | BR-11a, BR-11b, BR-11c, PR-12 |
-| P-A2 | P · Act 3 | jade-green short-sleeved blouse | — | knee-length stone cotton skirt, bare legs | white canvas plimsolls | small pearl stud earrings | green family | VISIBLE (the skirt sits above the knee as she sits) | BR-13, MECH-14, BR-14b |
+| P-A2 | P · Act 3 | jade-green short-sleeved blouse | — | knee-length stone cotton skirt, bare legs | white canvas plimsolls | small pearl stud earrings | green family | VISIBLE (the skirt sits above the knee as she sits) | BR-13, MECH-14, BR-14b, BR-15 |
 | P-A3 | P · Act 4 | raspberry-and-white Breton striped long-sleeve top | — | wide-leg mid-blue denim trousers | white leather trainers | a navy cross-body bag strap | red family | REVEAL → CONCEALED (the left leg rolled to put it on, let fall to go out) | BR-17a, BR-17b |
 | P-A4 | P · Act 4 | white cotton crew-neck t-shirt | light denim overshirt, open | knee-length mustard-yellow A-line skirt, bare legs | navy canvas plimsolls | reading glasses on a thin beaded cord round her neck | earth (mustard) | VISIBLE, one knee only | BR-19a, BR-19b |
 | P-A5 | P · Act 5 | lilac cotton button-down shirt | — | (out of frame) | (out of frame) | a plain gold wedding band | cool (lilac) | absent (box) | PR-22a |
