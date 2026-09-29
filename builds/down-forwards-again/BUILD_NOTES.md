@@ -116,7 +116,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Current (image kept on the Old board as HK2-02a-END, unchosen). `hooks/build_hk2_video.py` → start frame only, SEAT_LOCK slide compressed, preflight PASS
   → Kie task c54cdc14 (72 credits) → board To check.
 
+- 2026-09-29 ~13:45 UTC (hourly check): HK1-01a, HK1-02a, HK1-02b, HK1-02c, HK3-01a videos confirmed (`use`). HK2-02a video Fix "she should just be moving it up
+  to fit the patellar tendon" → §22X gen 2: diagnosed from the v1 contact sheet (hands wrapped/pulled the band — the start frame leaves little travel, so the
+  model filled 4 s with handling) → motion = ONE straight slide up, hands flat on the shell, then hold still; band-handling negatives; preflight PASS →
+  Kie ed8a6e35 (72 credits) → board To check. v1 to the Old board. A third generation of HK2-02a needs the user's go.
+
 ## Where it stands
-- **Waiting on the user:** all six hook videos (HK1-01a, HK1-02a, HK1-02b, HK1-02c, HK2-02a, HK3-01a — generation 1) — Confirm or Fix.
+- **Waiting on the user:** HK2-02a video v2 — Confirm or Fix (a third generation needs their go). The other five hook videos are confirmed.
 - **Then:** hook variants assembled (assemble.py + variants.py with the TH hooks); then B-roll acts (step 7), CapCut block.
-  A second generation of any shot follows §22X (diagnose, fix at source); a third waits for the user.

@@ -1,0 +1,40 @@
+{
+ "beat": "HK2-02a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"hk2_02a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CLOSE, as in the start frame: her left leg and the strap, her face soft at the top.\"},\"motion\":\"ONE MOVEMENT ONLY: her two hands stay flat on the two sides of the matte shell the whole time and push the closed strap straight UP her left shin, gliding a hand's length in one smooth slide over the first second and a half, and it stops on the tendon just below the kneecap, the notch cupping the kneecap's lower border. Then everything holds still: hands resting on the shell, strap seated, to the end of the clip. Her fingers never grip, pull, wrap or adjust the band; the band stays closed round the leg; the strap keeps its exact shape, size and wordmark in every frame. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no band being opened, no band being pulled tight, no fingers on the chrome slides, no strap changing shape or size, no second strap, no strap travelling past or onto the kneecap, no strap coming to rest low on the shin, no strap moving downward, no hands passing through the strap, no bending, no curling, no folding, no melting, no flipping of the product, no hands wrapping the band round the leg, no fingers pinching or pulling the band, no fiddling with the strap, no strap being taken off or put back on, no hands moving to the back of the knee, no speaking, no music, no text appearing\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_101530_dd2add6c-2681-4176-8877-4d9cbd5eb04c.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "It takes ten seconds and it is not a prescription.",
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "rack": null,
+ "audio": false,
+ "route": "kie",
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "adjust": "user 2026-09-29: no end frame on HK2-02a (not pinned)",
+ "risks": [
+  {
+   "risk": "the strap climbs onto the kneecap or stops low",
+   "prevented_by": "seat point named (notch cups the lower border), no travelling past/onto the kneecap, no resting low"
+  },
+  {
+   "risk": "the strap deforms or the band opens while sliding",
+   "prevented_by": "travels as one piece, band closed; product negatives + NEG-WARP-C"
+  },
+  {
+   "risk": "hands fiddle with or wrap the band (v1 fault)",
+   "prevented_by": "hands flat on the shell the whole time, one slide then hold still; no wrapping/pulling/fiddling negatives"
+  }
+ ],
+ "fix_note": "user Fix 'she should just be moving it up to fit the patellar tendon'; diagnosed from the v1 frames: the strap starts near the knee so the model filled 4 s with hands wrapping/pulling the band → motion rewritten as ONE straight slide up with hands flat on the shell, then a still hold; band-handling negatives added"
+}
