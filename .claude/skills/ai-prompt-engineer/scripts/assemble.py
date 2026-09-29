@@ -460,20 +460,34 @@ def main():
     def th_chain(idx, s0, s1):
         return f"[{idx}:v]trim={s0}:{s1},setpts=PTS-STARTPTS,{V}"
 
+    def render_seg(n, dur):
+        """Render segment n alone, exactly round(dur*FPS) frames, same codec settings."""
+        f = tmp / f"seg_{n:03d}.mp4"
+        subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", *inputs, "-filter_complex", ";".join(parts),
+                        "-map", f"[s{n}]", "-frames:v", str(max(1, round(dur * FPS))), "-c:v", "libx264", "-crf", "18",
+                        "-pix_fmt", "yuv420p", "-r", str(FPS), "-video_track_timescale", str(FPS * 512), str(f)], check=True)
+        return f
+
     def br_chain(e, dur, w, h):
         src_len = dur * e["speed"]
         fit = f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps={FPS},setsar=1"
         return (f"[{add(e['clip'])}:v]trim={e['in']}:{e['in'] + src_len},setpts=(PTS-STARTPTS)/{e['speed']},"
                 f"{fit},trim=0:{dur},setpts=PTS-STARTPTS")
 
+    # Each segment renders on its own (a few inputs at a time), then the pieces are joined
+    # losslessly: one 60-input filter graph decodes every clip at once and runs out of memory
+    # on a full-length cut (measured 2026-09-29: SIGKILL at ~60 inputs).
+    tmp = out.parent / (out.stem + "_segs"); tmp.mkdir(parents=True, exist_ok=True)
+    seg_files = []
     for n, s in enumerate(segs):
+        inputs.clear(); parts.clear()
         dur = s["end"] - s["start"]
         if s["kind"] == "TH":
             z = s.get("zoom", 1.0)
             zoom = "" if z == 1.0 else (f",scale=trunc(iw*{z}/2)*2:trunc(ih*{z}/2)*2,"
                                         f"crop={W}:{H}:(in_w-{W})/2:(in_h-{H})*{focus}")  # the face point holds still
             parts.append(f"{th_chain(add(base), s['start'], s['end'])}{zoom}{END}[s{n}]")
-            continue
+            seg_files.append(render_seg(n, dur)); continue
         e = next(x for x in edl if x["beat"] == s["beat"])
         lay = e["layout"]
         if lay["type"] == "full":
@@ -499,10 +513,11 @@ def main():
                 th_box = f"scale={bw}:{bh}:force_original_aspect_ratio=increase,crop={bw}:{bh}"
                 parts.append(f"{th_chain(add(base), s['start'], s['end'])},{th_box}{box}[f{n}]")
             parts.append(f"[g{n}][f{n}]overlay={x}:{y}:shortest=1{END}[s{n}]")
-    aidx = add(audio)
-    graph = ";".join(parts) + ";" + "".join(f"[s{n}]" for n in range(len(segs))) + f"concat=n={len(segs)}:v=1:a=0[v]"
-    subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", *inputs, "-filter_complex", graph,
-                    "-map", "[v]", "-map", f"{aidx}:a", "-c:v", "libx264", "-crf", "18",
+        seg_files.append(render_seg(n, dur))
+    lst = tmp / "list.txt"
+    lst.write_text("".join(f"file '{f.resolve()}'\n" for f in seg_files))
+    subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst),
+                    "-i", str(audio), "-map", "0:v", "-map", "1:a", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "192k", "-shortest", str(out)], check=True)
 
     # verify
