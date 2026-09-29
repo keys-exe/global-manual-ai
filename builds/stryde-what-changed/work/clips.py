@@ -88,18 +88,18 @@ B["HK2-b"] = clip("HK2-b",   # v4 image (user Fixes) — side-on, cropped at the
                  {"risk": "camera travels with the moving subject", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"}])
 
 # Hook 3 — E6 from the trimmed HK3 variant: HK3-a 0–4.14 s ("That" at 4.14), HK3-b 4.14–10.28 s (talking head from "Here")
-B["HK3-a"] = clip("HK3-a",   # v2 — user Fix "FIX BROLL, WALKING/ STEPPING FAST": v1 read as a brisk walk; §22X fault = motion pace
+B["HK3-a"] = clip("HK3-a",   # v3 — user Fixes: "FIX BROLL, WALKING/ STEPPING FAST" was a request FOR a fast walk (misread in v2);
+    # v2 read as slow motion → "FASTER WALKING, NOT SLOW MO". Brisk real-time walk, more steps.
     "An older white woman's legs seen from a camera at ground level on a grey paving-slab pavement, cropped at the waist: a navy A-line skirt "
-    "ending above the knee, bare knees and shins, plain white canvas plimsolls, walking slowly straight towards the lens along the pavement.",
-    "Already mid-stride on the first frame: she walks on towards the lens slowly and steadily, the unhurried walk of a sixty-nine-year-old "
-    "woman — just two steps in the whole clip, each one taking about two seconds from lift to landing, each foot set down flat and carefully "
-    "on the slab before the next lifts — and she comes only a little closer, still cropped at the waist.",
-    "no fast walking, no brisk pace, no striding, no hurrying, no more than two steps, no face in frame, no head entering the frame, "
-    "no second person, no dog, no knee strap, no knee brace, no walking stick, no running, no stepping over the camera, no logos, "
-    "no readable signs, no extra legs, no slow motion",
-    4.14, risks=[{"risk": "the walk reads fast again", "prevented_by": "two steps only, about two seconds each, 'no fast walking, no brisk pace, no striding'"},
-                 {"risk": "slow pace read as slow motion", "prevented_by": "'the unhurried walk of a sixty-nine-year-old', 'no slow motion' — real-time, just a slow walker"},
-                 {"risk": "camera travels with the walker", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"}])
+    "ending above the knee, bare knees and shins, plain white canvas plimsolls, walking briskly straight towards the lens along the pavement.",
+    "Already mid-stride on the first frame: she walks briskly towards the lens in real time, a quick purposeful everyday walk — about two "
+    "steps every second, five or six quick steps in the clip, her skirt hem swinging with each step, each foot landing and pushing off "
+    "without pause — and she comes closer to the lens, still cropped at the waist, passing just to one side of it at the end.",
+    "no slow motion, no slow walking, no careful steps, no pausing, no face in frame, no head entering the frame, no second person, no dog, "
+    "no knee strap, no knee brace, no walking stick, no running, no jogging, no stepping on the camera, no logos, no readable signs, no extra legs",
+    4.14, risks=[{"risk": "the walk reads as slow motion again", "prevented_by": "'in real time', about two steps a second named, 'no slow motion, no slow walking'"},
+                 {"risk": "brisk walk tips into a jog", "prevented_by": "'a quick purposeful everyday walk', 'no running, no jogging'"},
+                 {"risk": "legs warp at the faster pace", "prevented_by": "start frame caught mid-stride, HOLD-C + NEG-WARP-C, locked-off camera"}])
 B["HK3-b"] = clip("HK3-b",
     "A premium 3D anatomical model of a whole leg from hip to foot, seen from a high three-quarter angle on a near-black field, one small "
     "tight spot glowing on the patellar tendon just below the kneecap.",

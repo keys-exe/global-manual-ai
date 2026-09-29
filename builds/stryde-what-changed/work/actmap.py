@@ -84,10 +84,11 @@ BB("HK3-a", HOOK[3], "Five thousand steps a day. Forty years.", "Five", "hook �
    "one step per second, normal walking speed", STILL, "walking toward camera: feet/knee only, 3 steps", "no", "absent", "—", "NB2",
    GROUND, FRO, "clean", "CU", "ground = steps", "deep", "deep", L(STREET_AM, "L"), False, ledger="VN01", eg="EG03 · captions '5,000 a day' '40 years'")
 BB("HK3-b", HOOK[3], "That is about seventy million times your full bodyweight has gone through one spot below your kneecap.", "seventy", "hook — the arithmetic (VN01, F4)",
-   "R1", "L-M-STAIRS", "M-D1", "high, looking down the flight past her shins: Maureen's plimsoll landing on a stair tread worn pale in one spot at its centre, every tread below worn the same", "one step down onto the worn spot",
-   "one step, about a second and a half", STILL, "stairs: from above and behind, knee-down, camera still", "no", "absent", "—", "NB2",
-   HIGH, TQB, "clean", "MEDIUM", "high = forty years of wear, looked down on", "foreground", "medium", L(M_GREY, "L"), False, ledger="VN01 · F4",
-   eg="EG03 · '70,000,000' overlay (post)", notes="user Fix 2026-09-29 'GIVE ME BETTER DIFFERENT BROLL' (was a whole-leg anatomy render) — the one worn spot on every tread = the one spot below the kneecap")
+   "ANAT", "—", "—", "ANAT-A: low front three-quarter, the knee bent mid-step as the foot lands, the one spot below the kneecap burning brighter with each landing", "the spot flares with each landing",
+   "one landing a second", STILL, "none", "no", "absent", "—", "NB2",
+   LOW, THR, "clean", "CU", "low = the weight coming down onto the one spot", "deep", "deep", L(ANAT, "R"), False, ledger="VN01 · F4",
+   eg="EG05 · '70,000,000' overlay (post)",
+   notes="user Fixes 2026-09-29: 'GIVE ME BETTER DIFFERENT BROLL' (whole leg) → worn stairs → 'ANATOMY BROLL HERE'; a fourth anatomy look: low, knee bent under a landing (HK1-b profile, HK2-a band ECU are the others)")
 TH("HK3-TH", HOOK[3], "Here is what happens when that spot stops being able to take it.")
 
 # ============================================================ ACT 1 — why it happens (shared body)
