@@ -38,6 +38,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: HK1-01 image sent to Fix ("MAKE MORE DETAILS"). Diagnosed: ANAT-B (ghost limb) is empty inside by design. Fixed at the prompt: ANAT-A full stack + named fine detail (tendons, ligaments, menisci, bone grain), still calm, no emission; model `nano_banana_pro` (mechanism class allows it, §18A) on Kie (task 16cedf8c…, 18 credits) → v2 To check; v1 on Old.
 
+- 2026-09-29: user "CONFIRMED PROCEED" — HK1-01 image v2 confirmed. HK1-01 video: `hooks/HK1-01.call.json` (RIG-RVD small lateral drift, the joint stays calm, 1,926 chars) preflight PASS → Kie `kling-3.0` 5s (task 0bc64313…, 90 credits) → on the board To check.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix HK1-01's image v2 (step 6 gate; its 5s video waits on it); script flags F2, F5, F6, F7.
-- **Next:** HK1-01 video (Kling, 5s, slow orbit, `preflight.py`), then HK2-01 and HK3-01 the same way, one by one; then the body B-roll (step 7). **Nano Banana 2 beats go through Kie `nano-banana-2`** while Higgsfield keeps logging flash.
+- **Waiting on the user:** Confirm/Fix the HK1-01 video (hook 1 gate); script flags F2, F5, F6, F7.
+- **Next:** HK2-01 (Folake in her armchair, a bad-knee morning; image on Kie `nano-banana-2` with the R1 sheet + P1 lounge plate), then HK3-01 (the consultant's finger on the X-ray, P6), one by one; then the body B-roll (step 7). Kling connector at 3 credits → videos on Kie `kling-3.0`; NB2 images on Kie while Higgsfield logs flash.
