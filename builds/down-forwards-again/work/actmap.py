@@ -168,12 +168,15 @@ row("PR-22a","Act 5",["B-22"],"PRODUCT","object","L-P-KITCH","P-D2","the open bo
     "sway","none","no","overhead","front","CU","clean","overhead = what's in the box","medium","product","R","Two",product="box open, two units (OFFER)",
     model="GPT Sunburst",layout=PIP)
 # the user, 2026-09-29: "this should be 2 brolls the 2 strap is done but the 60 days need one too and the from stryde is th[e site]" → three B-rolls on B-22's first half
-row("BR-22a2","Act 5",["B-22"],"PRODUCT","object","L-P-FRONT","P-D2","weeks later: the two straps kept on the side table by her armchair, a wall calendar soft behind with most days crossed off","still, 2s",
-    "slow sway","none","no","eye","three-quarter","CU","clean","","medium","product","L","Sixty",product="two units, kept (worn-in, not new)",model="NBP",layout=PIP,eg="EG06 60-day seal")
+# the user, 2026-09-29 (Fix): "brolls of showing the results of using the strap" → the result, not the object: her, weeks on, going out again
+row("BR-22a2","Act 5",["B-22"],"BR","P","L-P-DOOR","P-D2","weeks on, going out again: she steps down her front step onto the path, shopping bag on her arm, the strapped LEFT leg straight","one step down, 2s",
+    "sway","front step descending (§27G: camera on the path, no rail, hands free)","no","hip","three-quarter","FULL","clean",
+    "hip + three-quarter = the result: out of the house, the knee doing the step","medium","subject","L","Sixty",product="worn · VISIBLE",model="NBP",layout=PIP,face=True,eg="EG06 60-day seal")
 row("BR-22a3","Act 5",["B-22"],"PRODUCT","P hand","L-P-KITCH","P-D2","her phone in her hand on the Stryde site: the strap's product photo on screen (real site screen added in the edit)","one thumb scroll, 2s",
     "sway","hands","no","high","three-quarter","CU","clean","high = over her shoulder onto the screen","medium","hands","R","site",product="on screen (the edit overlays the real site)",model="NBP",layout=PIP,eg="EG06 site URL")
-row("BR-22b","Act 5",["B-22"],"BR","copy (one-off CP-01 leg)","L-P-KITCH","P-D2","a stretched grey near-copy strap sags down a shin","one slow sag, 2s",
-    "sway","none; blank near-copy (FAKE_BASE)","no","low","profile","CU","clean","low + profile = the sag","medium","foreground","R","stretch",
+# the user, 2026-09-29 (Fix): "show the cheap COPIES" → the copies themselves, stretched, on the kitchen table
+row("BR-22b","Act 5",["B-22"],"PRODUCT","object (near-copies)","L-P-KITCH","P-D2","three cheap copy straps tipped out of a plastic bag on the kitchen table, their bands stretched long and limp","still; one limp band slides off the edge, 2s",
+    "sway","none; blank near-copies (FAKE_BASE)","no","high","three-quarter","CU","clean","high = looking down on what she gave up on","medium","product","R","stretch",
     product="near-copy (FAKE_BASE)",model="NBP",layout=PIP,ledger="F7")
 row("BR-23","Act 5",["B-23"],"BR","P","L-P-HALL","P-D2","comes down her stairs forwards, hands free, a small smile, strap on the LEFT knee","two steps, 3s",
     "locked-off sway","stairs descending (§27G: camera at the foot, hand near the rail)","no","low","three-quarter","FULL","clean",

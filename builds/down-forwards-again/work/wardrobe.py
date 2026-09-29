@@ -38,6 +38,9 @@ DAYS = {
           "She wears a white cotton crew-neck t-shirt under an open light denim overshirt, a knee-length mustard-yellow A-line skirt with bare legs, navy canvas plimsolls, and " + SIG + "."),
  "P-A5": ("Act 5", ["PR-22a", "BR-22a3"], "lilac cotton button-down shirt", "—", "(out of frame)", "(out of frame)", "a plain gold wedding band", "cool (lilac)", "absent (box)",
           "She wears a lilac cotton button-down shirt."),
+ # the user, 2026-09-29 (BR-22a2 Fix): "brolls of showing the results of using the strap" → BR-22a2 becomes her, weeks on, going out again: its own day
+ "P-A5b": ("Act 5", ["BR-22a2"], "coral linen short-sleeved top", "—", "knee-length navy cotton skirt, bare legs", "navy leather loafers", SIG, "warm (coral)", "VISIBLE",
+          "She wears a coral linen short-sleeved top, a knee-length navy cotton skirt with bare legs, navy leather loafers, and reading glasses on a thin beaded cord round her neck."),
  "P-A6": ("Act 5", ["BR-23"], "cornflower-and-white floral knee-length tea dress, short sleeves (replaces BASE + LOWER)", "pale-yellow open cardigan", "(the dress), bare legs", "tan leather sandals", "small gold studs", "pattern-led", "VISIBLE",
           "She wears a cornflower-and-white floral knee-length tea dress with short sleeves under an open pale-yellow cardigan, bare legs, tan leather sandals and small gold stud earrings."),
 }

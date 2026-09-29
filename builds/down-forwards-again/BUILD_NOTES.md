@@ -179,4 +179,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   LEFT knee slipped a finger's width), MECH-14 v4 (strap flat in her palm, back up; pad described shape by shape — hourglass/peanut outline with a deep curve
   on one side, contour grooves, dog-bone rib), BR-22a2 v2 (product close-up of the two straps, no clutter). `acts/build_fix_r4.py`. Replaced versions moved
   to Old. **BR-22a3 ("From the Stryde site.") was deleted from the board (by the user) — not recreated; the line has no card until the user says where it goes.**
+- **Round 5 (2026-09-29 ~18:25 UTC), nano_banana_pro:** the user sent two photos, now kept as files and uploaded to Higgsfield as references —
+  the pad's inside `products/stryde/stryde_refs/inner_pad_user.png` (media `dca6d9b5-4931-4114-b093-f6fd7f8930c8`) and the BR-04 point
+  `refs/BR-04_point_ref.png` (media `6a2715d9-de51-420d-844b-99abba716adb`; a pose/spot reference only — the finger points UP from below into the dip
+  right under the kneecap, camera a little above the knee in front). MECH-14 v5 and BR-04 v7 attach them. New board Fix notes: BR-22a2 "brolls of showing
+  the results of using the strap" → v3 is the result: her, weeks on, stepping down her front step to go out, strapped left leg straight (own story day
+  **P-A5b** in `work/wardrobe.py`; act-map row now BR · L-P-DOOR · hip/three-quarter); BR-22b "show the cheap COPIES" → v4 is three stretched near-copies
+  tipped out on the kitchen table (row now PRODUCT; CP-01 copy leg retired). STEP4_5 tables + docs/actmap + docs/wardrobe (Plan + Current) synced;
+  angles.py PASS; wardrobe audits PASS. `acts/build_fix_r5.py`. Replaced versions moved to Old. The Product Sheet's INNER_PAD ("plain smooth black")
+  still disagrees with the user's photo — not edited (shared file); the photo is in stryde_refs for any build to attach.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
