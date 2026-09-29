@@ -176,13 +176,15 @@ add("B-07", "nano-banana-pro", PR(FRONT, "stryde_refs/worn_front.jpg") + [SHEET[
   light("the front-door glass behind the camera and the landing window above", "her", "right", "soft bright morning daylight, the after"),
   colour("soft bright morning daylight", 5600, "magnolia walls, the deep red stair carpet, the white handrail", "she", "yellow, green and navy", "the black strap on her knee", "natural, warm"), S("SKIN-B1")],
   NEG_WORN + ", no walking stick, no looking at the camera, " + NEG_HANDS, scale="about three quarters"))
-add("B-08", "nano-banana-pro", PR(FRONT, "stryde_refs/worn_front.jpg") + [SHEET["R3"], LOC["P4"][0]], photo([
-  "A snapshot from the side: he stands at the kitchen sink filling the white kettle under the tap, easy on both feet, the strap on his right knee, the ordinary morning back. " +
+# v2 (Fix "change the product"): v1 in profile hid the shell and the model drew a generic wrap -> three-quarter front, shell and wordmark to the phone, tq photo attached
+add("B-08", "nano-banana-pro", PR(FRONT, "stryde_refs/product_tq_left.jpg", "stryde_refs/worn_front.jpg") + [SHEET["R3"], LOC["P4"][0]], photo([
+  "A snapshot from three-quarter front, the phone at waist height a couple of metres away: he stands at the kitchen sink filling the white kettle under the tap, his body turned a little towards the camera, "
+  "easy on both feet, the strap on his right knee with the front of its shell, its two peaks and notch and its grey wordmark facing the phone, the ordinary morning back. " +
   HASSAN[0].upper() + HASSAN[1:] + ". He wears " + WARD["H-D2"] + ". " + WORN,
   plate("P4", LOC["P4"][1], LOC["P4"][2]), angle("B-08", "him at the sink"), focus("the nearest eye of Hassan"),
   light("the window over the sink on the kitchen's far wall", "him", "left", "bright morning sun along the worktop"),
   colour("bright morning sun", 5600, "cream units, the dark speckled worktop, white tiles", "he", "maroon and charcoal", "the white kettle", "natural, warm"), S("SKIN-B1")],
-  NEG_WORN + ", no looking at the camera, no water splashing everywhere, " + NEG_HANDS))
+  NEG_WORN + ", no fabric knee wrap, no sleeve, no generic brace, no strap seen only from the side, no wordmark on the side of the leg, no looking at the camera, no water splashing everywhere, " + NEG_HANDS))
 add("B-09a", "nano-banana-pro", PR(FRONT, BACK) + [SHEET["R4"], LOC["P5"][0]], photo([
   "A close snapshot from the side at knee height: she sits on the edge of her bed, her right leg straight out, the olive trouser rolled above the knee. The strap is closed and sits at mid-shin, well below the knee, "
   "and both her hands are flat on the two sides of the shell, about to slide it up. " + ELAINE[0].upper() + ELAINE[1:] + " — only her hands, forearms and leg in frame, her striped sleeves at the wrists. " +
