@@ -154,36 +154,32 @@ B["HK1-b"] = (NB2, [], anat(
     view="viewed from the side, in profile, the whole knee joint in the middle of the frame with the thigh above and the shin below"))
 
 # ── Hook 2 ──────────────────────────────────────────────────────────────────────────
-# HK2-a v2 — user Fix "GIVE ME DIFFERENT BROLL": was an ANAT-A front view (too close to HK1-b); now a real knee on Desmond's stairs.
-B["HK2-a"] = (NB2, ["R2", "P2"], photo([
-    "A snapshot from a phone held at standing height just in front of him, looking down. He is sitting on the bottom stair of his hall, "
-    "leaning forward over his knees, tying the lace of his right trainer: his right foot flat on the hall floor close to the stair, the "
-    "right knee bent high and nearest the lens, both hands down at the trainer pulling the two lace loops. The bare bent knee fills the "
-    "middle of the frame — the kneecap, and below it the firm band of the tendon standing out under the skin down to the top of the shin. "
-    "The frame is cropped at his chest — his face is not in the frame; it holds the top of his zip-neck, his forearms and hands, his "
-    "shorts, both bare knees, his trainers, the bottom stairs and the hall floor.",
-    R2 + " Wearing " + WARD["D-D1"] + ". His legs and hands: dark brown older skin, strong calves, a few grey hairs on the shins, ashy "
-    "knees with soft creases, thick knuckles, real unretouched skin.",
-    D_STAIRS,
-    angle("HK2-a", "his bent right knee and his hands at the trainer"),
-    focus("his right knee", deep=False),
-    light("D-GREY-L", "his knees and hands"), colour("D-STAIRS-AM")],
-    "no face in frame, no product anywhere, no knee strap, no knee support, no thumb held against the knee, no measuring, no pointing, "
-    "no walking stick, no second person, no standing, no wrong number of legs, no extra hands"))
+# HK2-a v3 — user Fixes "GIVE ME DIFFERENT BROLL" then "I WANT ANATOMY B ROLL HERE": anatomy again, but an ECU of the tendon
+# itself as a band (HK1-b is the whole knee in profile with the spot); the glow stays ANAT_A_POINT_TIGHT.
+B["HK2-a"] = (NB2, [], anat(
+    "Seen from a high three-quarter angle, close in: the lower edge of the kneecap at the top of the frame and, running down from it to "
+    "the top of the shin, the patellar tendon laid out as one thick, flat, satin-white band of tissue about the width of the kneecap's "
+    "lower edge, its long fibres visible as broad grain running along it, clearly separate from the bone behind it — the band is the "
+    "subject and fills the middle of the frame. No thumb, no hand, no ruler, nothing held against it for scale. "
+    + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed close from a high three-quarter angle looking down along the front of the knee, the lower kneecap and the tendon below it "
+         "filling the frame, the upper shin at the bottom edge"))
 
+# HK2-b v2 — user Fix "GIVE ME DIFFERENT BROLL HERE" (was one step up onto the bottom stair): strength — rising out of a deep squat with a load.
 B["HK2-b"] = (NB2, ["R2", "P2"], photo([
-    "A snapshot from a phone held low near the hall floor at the foot of the stairs, three-quarter on to the bottom stair. He is starting UP "
-    "his stairs, caught mid-step: his right foot has just planted flat on the bottom stair and his bare right knee is bending as it takes "
-    "his weight, his left foot still on the hall floor behind, heel lifting. The frame is cropped at mid-thigh — his face and body are not "
-    "in the frame; it holds his shorts hem, his bare right knee and shin, both trainers, the bottom stairs and the hall floor.",
-    R2 + " Wearing " + WARD["D-D1"] + ". His legs: dark brown older skin, strong calves, a few grey hairs on the shins, ashy knees with soft "
-    "creases, real unretouched skin.",
-    D_STAIRS,
-    angle("HK2-b", "his right knee and shin on the bottom stair"),
+    "A snapshot from a phone held low near the hall floor, square on to him. He is in his hall by the foot of the stairs, caught mid-lift: "
+    "rising out of a deep squat with a heavy cardboard box of old football kit gripped in both hands low between his knees, both bare "
+    "knees deeply bent either side of it, pushed forward over his trainers and clear of the box, taking the weight, his feet flat and hip-width apart on the floor. The frame is "
+    "cropped at his chest — his face is not in the frame; it holds the box, his forearms and hands, his shorts, both bare knees and shins, "
+    "his trainers, the bottom stairs behind him and the hall floor.",
+    R2 + " Wearing " + WARD["D-D1"] + ". His legs and hands: dark brown older skin, strong thighs and calves, a few grey hairs on the "
+    "shins, ashy knees with soft creases, thick knuckles, real unretouched skin.",
+    D_STAIRS + " A plain brown cardboard box, its flaps open, the sleeve of a faded football shirt and a pair of old boots showing at the top.",
+    angle("HK2-b", "his bent knees and the box"),
     focus("his right knee", deep=False),
-    light("D-GREY-L", "his legs and the bottom stairs"), colour("D-STAIRS-AM")],
-    "no face in frame, no product anywhere, no knee strap, no knee support, no walking stick, no handrail grab, no second person, "
-    "no person coming down the stairs, no wrong number of legs"))
+    light("D-GREY-L", "his knees and the box"), colour("D-STAIRS-AM")],
+    "no face in frame, no product anywhere, no knee strap, no knee support, no readable writing on the box, no logos or crests on the kit, "
+    "no second person, no standing upright, no bent back without bent knees, no wrong number of legs, no extra hands"))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
