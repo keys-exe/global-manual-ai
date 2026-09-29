@@ -302,10 +302,16 @@ BB("B06-BR", A1, "That part is ordinary. It happens to everybody. But here is wh
    "an ordinary, slightly slow pace", STILL, "street: three-quarter on to the bus stop, camera still, nobody looks at the lens", "no", "absent", "—", "NB2",
    EYE, THR, "clean", "MEDIUM", "three-quarter = several people, one ordinary street, the same trouble", "deep", "deep", L(STREET_AM, "L"), True,
    notes="user 2026-09-29 'It happens to everybody. (2 OR 3 PEOPLE HAVING PROBLEM IN THEIR KNEE) BROLL HERE' + 'NOT SAME AGE'; one-off extras, no sheets (§19B)")
-BB("B07-BR", A1, "The cushion gets thinner. The weight stays exactly the same.", "thinner", "the cushion wears, the load does not",
-   "R1", "L-M-STAIRS", "M-D1", "overhead on the hall floor by the front door: an old white plimsoll, its heel worn thin and flat; her bare foot slides into it", "her foot slides into the worn shoe",
-   "one slide in, about two seconds", STILL, "hall floor, feet only, camera still", "no", "absent", "—", "NB2",
-   OVER, FRO, "clean", "CU", "overhead = the worn sole laid bare", "foreground", "medium", L(M_GREY, "L"), False, notes="covers B07-TH; the worn sole = the thinning cushion")
+BB("B07-BRa", A1, "The cushion gets thinner.", "thinner", "the cushion in the knee wears thin",
+   "ANAT", "—", "—", "ANAT-B front-on close-up of the joint gap: the pale cartilage cushion between thigh bone and shin bone, visibly thin and worn, the bones sitting close", "the cushion thins a little further",
+   "one slow change over three seconds", STILL, "none", "no", "absent", "—", "NB2",
+   EYE, FRO, "clean", "CU", "front = the gap between the bones seen straight on, the cushion's thickness readable", "deep", "deep", L(ANAT, "R"), False,
+   notes="user 2026-09-29 'The cushion gets thinner. (CUSHION IN KNEE GETS THINNER)'; B05 is the profile cutaway, this is front-on and closer")
+BB("B07-BRb", A1, "The weight stays exactly the same.", "same", "the load does not change",
+   "R1", "L-M-STAIRS", "M-D1", "waist-down from the front, low at the foot of her stairs: Maureen comes down carrying a full laundry basket on her hip, one foot landing on the tread nearest the lens, the knee bending under her whole weight", "one step down onto the tread",
+   "one step, about a second and a half", STILL, "stairs: front, waist-down, basket at her hip, camera still", "no", "absent", "—", "NB2",
+   LOW, FRO, "clean", "MCU", "low front = the weight coming straight down at the lens", "foreground", "shallow", L(M_GREY, "L"), False,
+   notes="user 2026-09-29 'The weight stays exactly the same. MAKE ME A BROLL HERE'; replaces the planned worn-plimsoll B07-BR")
 BB("B08-BR", A1, "Nothing about the way you walk changed, so you assume nothing changed. And here is the part that catches people out. You do not have to have done anything to your knees for this to happen.", "changed", "ordinary walking",
    "R1", "L-M-STAIRS", "M-D1", "MEDIUM from behind: Maureen walks down her hall towards the front door, ordinary and unhurried", "four ordinary steps away from the lens",
    "an ordinary walking pace", STILL, "hall: from behind, full figure small in frame, camera still", "no", "absent", "—", "NB2",
@@ -348,7 +354,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06', 'B07-TH', 'B07-BR', 'B07', 'B08-TH', 'B08-BR', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []
