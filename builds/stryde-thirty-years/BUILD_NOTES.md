@@ -253,8 +253,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   as review. It shows the real strap at the right size, but he holds it long side vertical, not level as the prompt asked. The
   user decides. The card's video goes back to planned: its old v1 was made from image v1, and the new video follows the Confirm.
 
-## Where it stands (2026-09-29 11:50)
-- BR-15b image v2 To check (the strap is held turned sideways). Its video follows the Confirm, then the rough cuts are re-rendered.
+  ~12:00 (user "generate the confirm image"): BR-15b image v2 confirmed → video v2 (generation 2, Kling 3.0 pro on Kie, 4s,
+  72 credits, task fa3a3f34…, preflight PASS). The strap changes hands without turning, so there is no end frame. The board was
+  full, so the superseded BR-15b video v1 file was marked deleted and removed. ffmpeg was missing after a container reset;
+  it is now imageio-ffmpeg's binary, linked to /usr/local/bin/ffmpeg (no ffprobe: use `ffmpeg -i`).
+
+## Where it stands (2026-09-29 12:00)
+- BR-15b video v2 To check → then it goes into the rough cuts.
 - BR-09a image v2 To check → then its video → re-render the rough cuts once more.
 - BR-08b, BR-08c, BR-09b videos To check. Rough cuts v2 sent (review copies).
 - Open: F4 · TH body check · where the finished videos go (board full).

@@ -414,6 +414,19 @@ V.update({
 })
 
 
+# BR-15b from its new start image (user image Fix "wrong product" → image v2 confirmed, "generate the confirm image", 2026-09-29):
+# generation 2 of the shot. FRAME: v1 was made from the wrong-product image; the new frame has the real small strap held upright on
+# its side. The hand-over keeps it exactly that way up — no turn, so no end frame (§27G).
+VFIX["BR-15b"] = ("wrong product → FRAME: new start image v2 with the real small strap (front photo first reference); the strap "
+                  "changes hands without turning, held upright on its side exactly as in the start frame")
+V["BR-15b"] = ("MEDIUM over her shoulder as in the start frame, him across the bench holding the small strap out to her.", HANDHELD,
+   "The hand-over completes in one move over about two seconds: her fingers close round the strap and she takes it from his hand, "
+   "his hand letting go and drawing back; the strap stays upright on its side as in the start frame, never turning.", True,
+   "no strap dropping, no strap turning, no second strap, no face changing", "in_place",
+   [("strap passes through a hand", "HOLD-HC + one hand-over"), ("strap turns or rotates in the hand-over", "never turning + no strap rotating"),
+    ("strap grows or reshapes", "HOLD_PC + no strap growing"), ("his face drifts from the reference", "HOLD-HC, face never reshapes")])
+
+
 def build(beat):
     framing, rig, motion, prod, extra, sm, risks = V[beat]
     r = ROWS[beat]
