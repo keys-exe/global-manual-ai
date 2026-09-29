@@ -251,6 +251,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - M-06a: a close side view at step height, no face. Her slipper lands on the first step, the strap shows, and her free hand swings clear of the rail.
     - R-07a: the P0 view from the foot of the stairs. She stands upstairs on the landing before the first step, hands empty at her sides.
   - R-07a v8: "the strap is too big". This was an edit of v7 (prompt work/prompts/R-07a.edit.txt, refs v7 + worn_front + front): only the strap was shrunk, everything else kept.
+  - R-07a v9: "wrong product and too low". This was an edit of v8 (work/prompts/R-07a.edit2.txt): the exact product, placed higher under the kneecap. nano-banana-pro failed twice on Kie ("create task failed", no charge), so it was sent on nano-banana-2.
+  - **Act 1 videos v1 (2026-09-29)**, all 10 on the board To check.
+    - Lengths: E6 from VO T2 (work/plan_T2.json → work/lengths_T2.json; P-01a…P-05a 3–5 s). PR-01b/c/d share one phrase and are PHRASE_NOT_FOUND — to be split before Act 5.
+    - Calls: work/video_act1.py → broll/video/<beat>.call.json + prompt.txt, preflight PASS ×10.
+    - Route: Kling 3.0 on Kie (`kling-3.0/video`, pro, 1072×1928, sound off), because the Kling connector has 3 credits (§5 fallback). 666 Kie credits.
   - **R-07a/b/c merged into ONE B-roll going down the stairs** (user). R-07a carries all three lines; R-07b and R-07c were moved to the Old board and removed from Current and the act map.
   - P-03b uses the new P-03a v3 as its brace reference. T-02a uses T-01b as its reference for Loretta's dress.
   - **P1-LANDING removed from the build (user 2026-09-29: "lets just remove it the p1").** All 7 versions are on the Old board, and the card and file are gone from Current. P-02a and C-06a now use P0 only (their current renders were made with P1 v5; regenerate only if the user asks). The confirmed hooks, TH and voice cards are untouched.
