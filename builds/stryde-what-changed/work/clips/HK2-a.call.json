@@ -3,11 +3,11 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"hk2_a\",\"subject\":\"A premium 3D anatomical model of a single knee seen from the front, near-black field, the patellar tendon below the kneecap glowing as one tight bright spot. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already under load on the first frame: the glow at the patellar tendon immediately below the kneecap swells once, slowly, over about two seconds and settles back, the glow staying one tight spot on the tendon; the rest of the joint stays calm. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens and straightens along its length, and the whole structure compresses a few degrees. The anatomy takes the weight — it is not a still model with light played over it.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no arrows, no text, no labels, no numbers, no thumb, no hand, no ruler, no glow on the shin bone, no glow spreading down the leg, no second limb, no product, no camera orbit, no music, no speech, no slow motion\"}",
+ "prompt": "{\"shot\":\"hk2_a\",\"subject\":\"A premium 3D anatomical model of a knee seen close from a high three-quarter angle, near-black field: the lower edge of the kneecap at the top and the patellar tendon running down from it as one thick satin band to the top of the shin, a tight bright spot glowing at its top. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already under load on the first frame: the band draws taut once as the knee joint takes a step's load — it straightens and firms along its length over about a second — and the spot at the patellar tendon immediately below the kneecap brightens once and eases back as the load passes; the band stays in place. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens and straightens along its length, and the whole structure compresses a few degrees. The anatomy takes the weight — it is not a still model with light played over it.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no arrows, no text, no labels, no numbers, no thumb, no hand, no ruler, no glow on the shin bone, no glow spreading down the band, no second limb, no product, no camera orbit, no zoom, no music, no speech, no slow motion\"}",
  "duration": 5,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170900_e16327a8-a3fc-4ffe-afc1-379e8a47c699.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_173257_512cb5a0-c05b-4ab8-af5f-723322275d70.png",
  "start_approved": true,
  "pinned": false,
  "end_image": null,
@@ -17,12 +17,12 @@
  "generation": 1,
  "risks": [
   {
-   "risk": "the glow spreads down the shin or across the joint",
-   "prevented_by": "'one tight spot' in subject + motion, negatives on shin and spread"
+   "risk": "the glow spreads down the band onto the shin",
+   "prevented_by": "tight spot in subject + motion, negatives on spread and shin"
   },
   {
-   "risk": "the model swims or melts",
-   "prevented_by": "HOLD-C + NEG-WARP-C, one swell only"
+   "risk": "the model swims or the band warps",
+   "prevented_by": "HOLD-C + NEG-WARP-C, one tightening only, 'the band stays in place'"
   },
   {
    "risk": "a thumb or scale object appears (F2)",

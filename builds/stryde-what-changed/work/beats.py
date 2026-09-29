@@ -167,19 +167,26 @@ B["HK2-a"] = (NB2, [], anat(
 
 # HK2-b v2 — user Fix "GIVE ME DIFFERENT BROLL HERE" (was one step up onto the bottom stair): strength — rising out of a deep squat with a load.
 B["HK2-b"] = (NB2, ["R2", "P2"], photo([
-    "A snapshot from a phone held low near the hall floor, square on to him. He is in his hall by the foot of the stairs, caught mid-lift: "
-    "rising out of a deep squat with a heavy cardboard box of old football kit gripped in both hands low between his knees, both bare "
-    "knees deeply bent either side of it, pushed forward over his trainers and clear of the box, taking the weight, his feet flat and hip-width apart on the floor. The frame is "
-    "cropped at his chest — his face is not in the frame; it holds the box, his forearms and hands, his shorts, both bare knees and shins, "
-    "his trainers, the bottom stairs behind him and the hall floor.",
-    R2 + " Wearing " + WARD["D-D1"] + ". His legs and hands: dark brown older skin, strong thighs and calves, a few grey hairs on the "
-    "shins, ashy knees with soft creases, thick knuckles, real unretouched skin.",
-    D_STAIRS + " A plain brown cardboard box, its flaps open, the sleeve of a faded football shirt and a pair of old boots showing at the top.",
+    "A snapshot from a phone held low near the hall floor, square on to him, about two metres back. He is in his hall by the foot of the "
+    "stairs, caught at the bottom of a deep squat just as he starts to rise: his thighs almost level with the floor, both bare knees bent "
+    "hard and pushed forward over his toes, his feet flat and wide apart, and a heavy plain cardboard box held in both hands low BETWEEN "
+    "his knees, just above the floor, so both knees and shins are fully visible either side of it. THE TOP EDGE OF THE FRAME CROSSES HIS "
+    "CHEST just below the collar of his zip-neck — his chin, mouth, beard and face are above the frame and not in the picture at all. "
+    "The frame holds his chest, forearms and hands, the box, his shorts, both bare knees and shins, his trainers, the bottom stairs behind "
+    "him and the hall floor.",
+    R2 + " Wearing a navy zip-neck sports top over a white T-shirt, dark grey jogging shorts ending just above the knee so both knees are "
+    "bare, and PLAIN white leather trainers with navy laces and a plain navy heel tab — no logo, no stripe, no swoosh, no brand mark of any "
+    "kind on them. His legs and hands: dark brown older skin, strong thighs and calves, a few grey hairs on the shins, ashy knees with soft "
+    "creases, thick knuckles, real unretouched skin.",
+    D_STAIRS + " A plain unmarked brown cardboard box, no writing, no labels, no marker pen on any side, its flaps open with the sleeve of "
+    "a faded plain football shirt showing at the top.",
     angle("HK2-b", "his bent knees and the box"),
     focus("his right knee", deep=False),
     light("D-GREY-L", "his knees and the box"), colour("D-STAIRS-AM")],
-    "no face in frame, no product anywhere, no knee strap, no knee support, no readable writing on the box, no logos or crests on the kit, "
-    "no second person, no standing upright, no bent back without bent knees, no wrong number of legs, no extra hands"))
+    "no face in frame, no chin, no beard, no mouth in frame, no head in frame, no product anywhere, no knee strap, no knee support, "
+    "no writing on the box, no words, no letters, no marker pen, no logos on the trainers, no Nike swoosh, no brand marks, no stripes on "
+    "the trainers, no logos or crests on the kit, no box in front of the knees, no knees hidden, no half squat, no standing upright, "
+    "no second person, no wrong number of legs, no extra hands, no blurred floor filling the bottom of the frame"))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)

@@ -65,15 +65,16 @@ B["HK1-b"] = clip("HK1-b",
            {"risk": "text or arrows appear", "prevented_by": "'no arrows, no text, no labels, no numbers'"}])
 
 # Hook 2 — E6 from the trimmed HK2 variant: HK2-a 0–3.36 s ("and" at 3.36), HK2-b 3.36–6.80 s ("it" at 6.80)
-B["HK2-a"] = clip("HK2-a",
-    "A premium 3D anatomical model of a single knee seen from the front, near-black field, the patellar tendon below the kneecap glowing as one tight bright spot.",
-    "Already under load on the first frame: the glow at [SITE] swells once, slowly, over about two seconds and settles back, "
-    "the glow staying one tight spot on the tendon; the rest of the joint stays calm.",
-    "no arrows, no text, no labels, no numbers, no thumb, no hand, no ruler, no glow on the shin bone, no glow spreading down the leg, "
-    "no second limb, no product, no camera orbit",
+B["HK2-a"] = clip("HK2-a",   # v3 image (user Fixes: different B-roll, then anatomy) — the tendon as a band, high three-quarter ECU
+    "A premium 3D anatomical model of a knee seen close from a high three-quarter angle, near-black field: the lower edge of the kneecap at "
+    "the top and the patellar tendon running down from it as one thick satin band to the top of the shin, a tight bright spot glowing at its top.",
+    "Already under load on the first frame: the band draws taut once as [TARGET JOINT] takes a step's load — it straightens and firms "
+    "along its length over about a second — and the spot at [SITE] brightens once and eases back as the load passes; the band stays in place.",
+    "no arrows, no text, no labels, no numbers, no thumb, no hand, no ruler, no glow on the shin bone, no glow spreading down the band, "
+    "no second limb, no product, no camera orbit, no zoom",
     3.36, hi=5, anat=True,
-    risks=[{"risk": "the glow spreads down the shin or across the joint", "prevented_by": "'one tight spot' in subject + motion, negatives on shin and spread"},
-           {"risk": "the model swims or melts", "prevented_by": "HOLD-C + NEG-WARP-C, one swell only"},
+    risks=[{"risk": "the glow spreads down the band onto the shin", "prevented_by": "tight spot in subject + motion, negatives on spread and shin"},
+           {"risk": "the model swims or the band warps", "prevented_by": "HOLD-C + NEG-WARP-C, one tightening only, 'the band stays in place'"},
            {"risk": "a thumb or scale object appears (F2)", "prevented_by": "'no thumb, no hand, no ruler'"}])
 B["HK2-b"] = clip("HK2-b",
     "A Black British man of sixty-six seen low and three-quarter on at the foot of his stairs, cropped at mid-thigh: dark grey jogging shorts, "
@@ -87,7 +88,7 @@ B["HK2-b"] = clip("HK2-b",
 
 START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
          "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
-         "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170900_e16327a8-a3fc-4ffe-afc1-379e8a47c699.png",
+         "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_173257_512cb5a0-c05b-4ab8-af5f-723322275d70.png",
          "HK2-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170901_a7ba052b-dfcc-44eb-b45a-4a595aef8928.png"}
 
 if __name__ == "__main__":
