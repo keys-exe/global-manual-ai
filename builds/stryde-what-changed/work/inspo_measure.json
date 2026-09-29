@@ -1,0 +1,1069 @@
+[
+  {
+    "link": "builds/stryde-what-changed/intake/inspo video - Podcast why now what changed.mp4",
+    "role": "primary",
+    "status": "OK",
+    "file": "builds/stryde-what-changed/intake/inspo video - Podcast why now what changed.mp4",
+    "duration_s": 195.54,
+    "resolution": "720x1280",
+    "aspect": "9:16",
+    "fps": 29.97,
+    "has_audio": true,
+    "shot_count": 115,
+    "mean_shot_s": 1.7,
+    "cut_times_s": [
+      1.63,
+      3.14,
+      6.11,
+      7.77,
+      10.18,
+      11.54,
+      12.85,
+      14.35,
+      15.88,
+      16.98,
+      18.18,
+      20.15,
+      21.32,
+      22.42,
+      24.52,
+      25.13,
+      27.26,
+      28.6,
+      30.53,
+      32.23,
+      34.47,
+      36.14,
+      38.44,
+      40.01,
+      41.51,
+      42.34,
+      43.98,
+      45.01,
+      47.75,
+      49.65,
+      50.58,
+      51.89,
+      53.49,
+      54.59,
+      55.99,
+      57.29,
+      57.86,
+      59.13,
+      60.29,
+      61.8,
+      63.4,
+      65.3,
+      66.9,
+      67.87,
+      69.57,
+      71.27,
+      74.11,
+      76.21,
+      77.31,
+      81.38,
+      83.68,
+      85.39,
+      87.49,
+      89.12,
+      92.09,
+      95.16,
+      96.9,
+      97.83,
+      99.03,
+      100.3,
+      100.6,
+      102.37,
+      103.97,
+      106.27,
+      107.27,
+      109.48,
+      111.18,
+      113.61,
+      115.88,
+      117.25,
+      119.59,
+      120.85,
+      122.29,
+      123.66,
+      125.03,
+      127.89,
+      129.76,
+      131.66,
+      132.67,
+      134.4,
+      136.54,
+      138.17,
+      141.54,
+      142.64,
+      144.04,
+      145.01,
+      146.05,
+      148.75,
+      150.12,
+      152.49,
+      154.65,
+      155.86,
+      156.92,
+      158.26,
+      161.26,
+      162.2,
+      163.63,
+      165.43,
+      167.4,
+      168.77,
+      170.17,
+      171.44,
+      174.04,
+      175.08,
+      176.21,
+      177.11,
+      178.71,
+      181.41,
+      183.55,
+      186.55,
+      188.96,
+      189.69,
+      191.56,
+      193.43
+    ],
+    "silences_-40dB": [],
+    "silences_-30dB": [
+      [
+        195.12,
+        195.44
+      ]
+    ],
+    "shots": [
+      {
+        "shot": "S01",
+        "t_in": 0.0,
+        "t_out": 1.63,
+        "len_s": 1.63,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S01_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S01_mid.jpg"
+      },
+      {
+        "shot": "S02",
+        "t_in": 1.63,
+        "t_out": 3.14,
+        "len_s": 1.51,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S02_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S02_mid.jpg"
+      },
+      {
+        "shot": "S03",
+        "t_in": 3.14,
+        "t_out": 6.11,
+        "len_s": 2.97,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S03_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S03_mid.jpg"
+      },
+      {
+        "shot": "S04",
+        "t_in": 6.11,
+        "t_out": 7.77,
+        "len_s": 1.66,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S04_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S04_mid.jpg"
+      },
+      {
+        "shot": "S05",
+        "t_in": 7.77,
+        "t_out": 10.18,
+        "len_s": 2.41,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S05_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S05_mid.jpg"
+      },
+      {
+        "shot": "S06",
+        "t_in": 10.18,
+        "t_out": 11.54,
+        "len_s": 1.36,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S06_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S06_mid.jpg"
+      },
+      {
+        "shot": "S07",
+        "t_in": 11.54,
+        "t_out": 12.85,
+        "len_s": 1.31,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S07_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S07_mid.jpg"
+      },
+      {
+        "shot": "S08",
+        "t_in": 12.85,
+        "t_out": 14.35,
+        "len_s": 1.5,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S08_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S08_mid.jpg"
+      },
+      {
+        "shot": "S09",
+        "t_in": 14.35,
+        "t_out": 15.88,
+        "len_s": 1.53,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S09_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S09_mid.jpg"
+      },
+      {
+        "shot": "S10",
+        "t_in": 15.88,
+        "t_out": 16.98,
+        "len_s": 1.1,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S10_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S10_mid.jpg"
+      },
+      {
+        "shot": "S11",
+        "t_in": 16.98,
+        "t_out": 18.18,
+        "len_s": 1.2,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S11_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S11_mid.jpg"
+      },
+      {
+        "shot": "S12",
+        "t_in": 18.18,
+        "t_out": 20.15,
+        "len_s": 1.97,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S12_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S12_mid.jpg"
+      },
+      {
+        "shot": "S13",
+        "t_in": 20.15,
+        "t_out": 21.32,
+        "len_s": 1.17,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S13_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S13_mid.jpg"
+      },
+      {
+        "shot": "S14",
+        "t_in": 21.32,
+        "t_out": 22.42,
+        "len_s": 1.1,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S14_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S14_mid.jpg"
+      },
+      {
+        "shot": "S15",
+        "t_in": 22.42,
+        "t_out": 24.52,
+        "len_s": 2.1,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S15_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S15_mid.jpg"
+      },
+      {
+        "shot": "S16",
+        "t_in": 24.52,
+        "t_out": 25.13,
+        "len_s": 0.61,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S16_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S16_mid.jpg"
+      },
+      {
+        "shot": "S17",
+        "t_in": 25.13,
+        "t_out": 27.26,
+        "len_s": 2.13,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S17_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S17_mid.jpg"
+      },
+      {
+        "shot": "S18",
+        "t_in": 27.26,
+        "t_out": 28.6,
+        "len_s": 1.34,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S18_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S18_mid.jpg"
+      },
+      {
+        "shot": "S19",
+        "t_in": 28.6,
+        "t_out": 30.53,
+        "len_s": 1.93,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S19_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S19_mid.jpg"
+      },
+      {
+        "shot": "S20",
+        "t_in": 30.53,
+        "t_out": 32.23,
+        "len_s": 1.7,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S20_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S20_mid.jpg"
+      },
+      {
+        "shot": "S21",
+        "t_in": 32.23,
+        "t_out": 34.47,
+        "len_s": 2.24,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S21_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S21_mid.jpg"
+      },
+      {
+        "shot": "S22",
+        "t_in": 34.47,
+        "t_out": 36.14,
+        "len_s": 1.67,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S22_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S22_mid.jpg"
+      },
+      {
+        "shot": "S23",
+        "t_in": 36.14,
+        "t_out": 38.44,
+        "len_s": 2.3,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S23_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S23_mid.jpg"
+      },
+      {
+        "shot": "S24",
+        "t_in": 38.44,
+        "t_out": 40.01,
+        "len_s": 1.57,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S24_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S24_mid.jpg"
+      },
+      {
+        "shot": "S25",
+        "t_in": 40.01,
+        "t_out": 41.51,
+        "len_s": 1.5,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S25_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S25_mid.jpg"
+      },
+      {
+        "shot": "S26",
+        "t_in": 41.51,
+        "t_out": 42.34,
+        "len_s": 0.83,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S26_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S26_mid.jpg"
+      },
+      {
+        "shot": "S27",
+        "t_in": 42.34,
+        "t_out": 43.98,
+        "len_s": 1.64,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S27_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S27_mid.jpg"
+      },
+      {
+        "shot": "S28",
+        "t_in": 43.98,
+        "t_out": 45.01,
+        "len_s": 1.03,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S28_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S28_mid.jpg"
+      },
+      {
+        "shot": "S29",
+        "t_in": 45.01,
+        "t_out": 47.75,
+        "len_s": 2.74,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S29_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S29_mid.jpg"
+      },
+      {
+        "shot": "S30",
+        "t_in": 47.75,
+        "t_out": 49.65,
+        "len_s": 1.9,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S30_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S30_mid.jpg"
+      },
+      {
+        "shot": "S31",
+        "t_in": 49.65,
+        "t_out": 50.58,
+        "len_s": 0.93,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S31_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S31_mid.jpg"
+      },
+      {
+        "shot": "S32",
+        "t_in": 50.58,
+        "t_out": 51.89,
+        "len_s": 1.31,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S32_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S32_mid.jpg"
+      },
+      {
+        "shot": "S33",
+        "t_in": 51.89,
+        "t_out": 53.49,
+        "len_s": 1.6,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S33_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S33_mid.jpg"
+      },
+      {
+        "shot": "S34",
+        "t_in": 53.49,
+        "t_out": 54.59,
+        "len_s": 1.1,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S34_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S34_mid.jpg"
+      },
+      {
+        "shot": "S35",
+        "t_in": 54.59,
+        "t_out": 55.99,
+        "len_s": 1.4,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S35_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S35_mid.jpg"
+      },
+      {
+        "shot": "S36",
+        "t_in": 55.99,
+        "t_out": 57.29,
+        "len_s": 1.3,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S36_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S36_mid.jpg"
+      },
+      {
+        "shot": "S37",
+        "t_in": 57.29,
+        "t_out": 57.86,
+        "len_s": 0.57,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S37_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S37_mid.jpg"
+      },
+      {
+        "shot": "S38",
+        "t_in": 57.86,
+        "t_out": 59.13,
+        "len_s": 1.27,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S38_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S38_mid.jpg"
+      },
+      {
+        "shot": "S39",
+        "t_in": 59.13,
+        "t_out": 60.29,
+        "len_s": 1.16,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S39_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S39_mid.jpg"
+      },
+      {
+        "shot": "S40",
+        "t_in": 60.29,
+        "t_out": 61.8,
+        "len_s": 1.51,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S40_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S40_mid.jpg"
+      },
+      {
+        "shot": "S41",
+        "t_in": 61.8,
+        "t_out": 63.4,
+        "len_s": 1.6,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S41_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S41_mid.jpg"
+      },
+      {
+        "shot": "S42",
+        "t_in": 63.4,
+        "t_out": 65.3,
+        "len_s": 1.9,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S42_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S42_mid.jpg"
+      },
+      {
+        "shot": "S43",
+        "t_in": 65.3,
+        "t_out": 66.9,
+        "len_s": 1.6,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S43_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S43_mid.jpg"
+      },
+      {
+        "shot": "S44",
+        "t_in": 66.9,
+        "t_out": 67.87,
+        "len_s": 0.97,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S44_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S44_mid.jpg"
+      },
+      {
+        "shot": "S45",
+        "t_in": 67.87,
+        "t_out": 69.57,
+        "len_s": 1.7,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S45_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S45_mid.jpg"
+      },
+      {
+        "shot": "S46",
+        "t_in": 69.57,
+        "t_out": 71.27,
+        "len_s": 1.7,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S46_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S46_mid.jpg"
+      },
+      {
+        "shot": "S47",
+        "t_in": 71.27,
+        "t_out": 74.11,
+        "len_s": 2.84,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S47_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S47_mid.jpg"
+      },
+      {
+        "shot": "S48",
+        "t_in": 74.11,
+        "t_out": 76.21,
+        "len_s": 2.1,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S48_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S48_mid.jpg"
+      },
+      {
+        "shot": "S49",
+        "t_in": 76.21,
+        "t_out": 77.31,
+        "len_s": 1.1,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S49_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S49_mid.jpg"
+      },
+      {
+        "shot": "S50",
+        "t_in": 77.31,
+        "t_out": 81.38,
+        "len_s": 4.07,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S50_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S50_mid.jpg"
+      },
+      {
+        "shot": "S51",
+        "t_in": 81.38,
+        "t_out": 83.68,
+        "len_s": 2.3,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S51_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S51_mid.jpg"
+      },
+      {
+        "shot": "S52",
+        "t_in": 83.68,
+        "t_out": 85.39,
+        "len_s": 1.71,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S52_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S52_mid.jpg"
+      },
+      {
+        "shot": "S53",
+        "t_in": 85.39,
+        "t_out": 87.49,
+        "len_s": 2.1,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S53_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S53_mid.jpg"
+      },
+      {
+        "shot": "S54",
+        "t_in": 87.49,
+        "t_out": 89.12,
+        "len_s": 1.63,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S54_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S54_mid.jpg"
+      },
+      {
+        "shot": "S55",
+        "t_in": 89.12,
+        "t_out": 92.09,
+        "len_s": 2.97,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S55_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S55_mid.jpg"
+      },
+      {
+        "shot": "S56",
+        "t_in": 92.09,
+        "t_out": 95.16,
+        "len_s": 3.07,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S56_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S56_mid.jpg"
+      },
+      {
+        "shot": "S57",
+        "t_in": 95.16,
+        "t_out": 96.9,
+        "len_s": 1.74,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S57_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S57_mid.jpg"
+      },
+      {
+        "shot": "S58",
+        "t_in": 96.9,
+        "t_out": 97.83,
+        "len_s": 0.93,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S58_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S58_mid.jpg"
+      },
+      {
+        "shot": "S59",
+        "t_in": 97.83,
+        "t_out": 99.03,
+        "len_s": 1.2,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S59_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S59_mid.jpg"
+      },
+      {
+        "shot": "S60",
+        "t_in": 99.03,
+        "t_out": 100.3,
+        "len_s": 1.27,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S60_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S60_mid.jpg"
+      },
+      {
+        "shot": "S61",
+        "t_in": 100.3,
+        "t_out": 100.6,
+        "len_s": 0.3,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S61_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S61_mid.jpg"
+      },
+      {
+        "shot": "S62",
+        "t_in": 100.6,
+        "t_out": 102.37,
+        "len_s": 1.77,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S62_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S62_mid.jpg"
+      },
+      {
+        "shot": "S63",
+        "t_in": 102.37,
+        "t_out": 103.97,
+        "len_s": 1.6,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S63_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S63_mid.jpg"
+      },
+      {
+        "shot": "S64",
+        "t_in": 103.97,
+        "t_out": 106.27,
+        "len_s": 2.3,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S64_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S64_mid.jpg"
+      },
+      {
+        "shot": "S65",
+        "t_in": 106.27,
+        "t_out": 107.27,
+        "len_s": 1.0,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S65_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S65_mid.jpg"
+      },
+      {
+        "shot": "S66",
+        "t_in": 107.27,
+        "t_out": 109.48,
+        "len_s": 2.21,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S66_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S66_mid.jpg"
+      },
+      {
+        "shot": "S67",
+        "t_in": 109.48,
+        "t_out": 111.18,
+        "len_s": 1.7,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S67_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S67_mid.jpg"
+      },
+      {
+        "shot": "S68",
+        "t_in": 111.18,
+        "t_out": 113.61,
+        "len_s": 2.43,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S68_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S68_mid.jpg"
+      },
+      {
+        "shot": "S69",
+        "t_in": 113.61,
+        "t_out": 115.88,
+        "len_s": 2.27,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S69_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S69_mid.jpg"
+      },
+      {
+        "shot": "S70",
+        "t_in": 115.88,
+        "t_out": 117.25,
+        "len_s": 1.37,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S70_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S70_mid.jpg"
+      },
+      {
+        "shot": "S71",
+        "t_in": 117.25,
+        "t_out": 119.59,
+        "len_s": 2.34,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S71_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S71_mid.jpg"
+      },
+      {
+        "shot": "S72",
+        "t_in": 119.59,
+        "t_out": 120.85,
+        "len_s": 1.26,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S72_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S72_mid.jpg"
+      },
+      {
+        "shot": "S73",
+        "t_in": 120.85,
+        "t_out": 122.29,
+        "len_s": 1.44,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S73_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S73_mid.jpg"
+      },
+      {
+        "shot": "S74",
+        "t_in": 122.29,
+        "t_out": 123.66,
+        "len_s": 1.37,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S74_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S74_mid.jpg"
+      },
+      {
+        "shot": "S75",
+        "t_in": 123.66,
+        "t_out": 125.03,
+        "len_s": 1.37,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S75_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S75_mid.jpg"
+      },
+      {
+        "shot": "S76",
+        "t_in": 125.03,
+        "t_out": 127.89,
+        "len_s": 2.86,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S76_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S76_mid.jpg"
+      },
+      {
+        "shot": "S77",
+        "t_in": 127.89,
+        "t_out": 129.76,
+        "len_s": 1.87,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S77_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S77_mid.jpg"
+      },
+      {
+        "shot": "S78",
+        "t_in": 129.76,
+        "t_out": 131.66,
+        "len_s": 1.9,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S78_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S78_mid.jpg"
+      },
+      {
+        "shot": "S79",
+        "t_in": 131.66,
+        "t_out": 132.67,
+        "len_s": 1.01,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S79_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S79_mid.jpg"
+      },
+      {
+        "shot": "S80",
+        "t_in": 132.67,
+        "t_out": 134.4,
+        "len_s": 1.73,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S80_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S80_mid.jpg"
+      },
+      {
+        "shot": "S81",
+        "t_in": 134.4,
+        "t_out": 136.54,
+        "len_s": 2.14,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S81_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S81_mid.jpg"
+      },
+      {
+        "shot": "S82",
+        "t_in": 136.54,
+        "t_out": 138.17,
+        "len_s": 1.63,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S82_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S82_mid.jpg"
+      },
+      {
+        "shot": "S83",
+        "t_in": 138.17,
+        "t_out": 141.54,
+        "len_s": 3.37,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S83_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S83_mid.jpg"
+      },
+      {
+        "shot": "S84",
+        "t_in": 141.54,
+        "t_out": 142.64,
+        "len_s": 1.1,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S84_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S84_mid.jpg"
+      },
+      {
+        "shot": "S85",
+        "t_in": 142.64,
+        "t_out": 144.04,
+        "len_s": 1.4,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S85_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S85_mid.jpg"
+      },
+      {
+        "shot": "S86",
+        "t_in": 144.04,
+        "t_out": 145.01,
+        "len_s": 0.97,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S86_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S86_mid.jpg"
+      },
+      {
+        "shot": "S87",
+        "t_in": 145.01,
+        "t_out": 146.05,
+        "len_s": 1.04,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S87_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S87_mid.jpg"
+      },
+      {
+        "shot": "S88",
+        "t_in": 146.05,
+        "t_out": 148.75,
+        "len_s": 2.7,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S88_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S88_mid.jpg"
+      },
+      {
+        "shot": "S89",
+        "t_in": 148.75,
+        "t_out": 150.12,
+        "len_s": 1.37,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S89_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S89_mid.jpg"
+      },
+      {
+        "shot": "S90",
+        "t_in": 150.12,
+        "t_out": 152.49,
+        "len_s": 2.37,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S90_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S90_mid.jpg"
+      },
+      {
+        "shot": "S91",
+        "t_in": 152.49,
+        "t_out": 154.65,
+        "len_s": 2.16,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S91_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S91_mid.jpg"
+      },
+      {
+        "shot": "S92",
+        "t_in": 154.65,
+        "t_out": 155.86,
+        "len_s": 1.21,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S92_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S92_mid.jpg"
+      },
+      {
+        "shot": "S93",
+        "t_in": 155.86,
+        "t_out": 156.92,
+        "len_s": 1.06,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S93_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S93_mid.jpg"
+      },
+      {
+        "shot": "S94",
+        "t_in": 156.92,
+        "t_out": 158.26,
+        "len_s": 1.34,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S94_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S94_mid.jpg"
+      },
+      {
+        "shot": "S95",
+        "t_in": 158.26,
+        "t_out": 161.26,
+        "len_s": 3.0,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S95_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S95_mid.jpg"
+      },
+      {
+        "shot": "S96",
+        "t_in": 161.26,
+        "t_out": 162.2,
+        "len_s": 0.94,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S96_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S96_mid.jpg"
+      },
+      {
+        "shot": "S97",
+        "t_in": 162.2,
+        "t_out": 163.63,
+        "len_s": 1.43,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S97_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S97_mid.jpg"
+      },
+      {
+        "shot": "S98",
+        "t_in": 163.63,
+        "t_out": 165.43,
+        "len_s": 1.8,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S98_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S98_mid.jpg"
+      },
+      {
+        "shot": "S99",
+        "t_in": 165.43,
+        "t_out": 167.4,
+        "len_s": 1.97,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S99_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S99_mid.jpg"
+      },
+      {
+        "shot": "S100",
+        "t_in": 167.4,
+        "t_out": 168.77,
+        "len_s": 1.37,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S100_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S100_mid.jpg"
+      },
+      {
+        "shot": "S101",
+        "t_in": 168.77,
+        "t_out": 170.17,
+        "len_s": 1.4,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S101_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S101_mid.jpg"
+      },
+      {
+        "shot": "S102",
+        "t_in": 170.17,
+        "t_out": 171.44,
+        "len_s": 1.27,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S102_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S102_mid.jpg"
+      },
+      {
+        "shot": "S103",
+        "t_in": 171.44,
+        "t_out": 174.04,
+        "len_s": 2.6,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S103_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S103_mid.jpg"
+      },
+      {
+        "shot": "S104",
+        "t_in": 174.04,
+        "t_out": 175.08,
+        "len_s": 1.04,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S104_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S104_mid.jpg"
+      },
+      {
+        "shot": "S105",
+        "t_in": 175.08,
+        "t_out": 176.21,
+        "len_s": 1.13,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S105_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S105_mid.jpg"
+      },
+      {
+        "shot": "S106",
+        "t_in": 176.21,
+        "t_out": 177.11,
+        "len_s": 0.9,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S106_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S106_mid.jpg"
+      },
+      {
+        "shot": "S107",
+        "t_in": 177.11,
+        "t_out": 178.71,
+        "len_s": 1.6,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S107_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S107_mid.jpg"
+      },
+      {
+        "shot": "S108",
+        "t_in": 178.71,
+        "t_out": 181.41,
+        "len_s": 2.7,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S108_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S108_mid.jpg"
+      },
+      {
+        "shot": "S109",
+        "t_in": 181.41,
+        "t_out": 183.55,
+        "len_s": 2.14,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S109_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S109_mid.jpg"
+      },
+      {
+        "shot": "S110",
+        "t_in": 183.55,
+        "t_out": 186.55,
+        "len_s": 3.0,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S110_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S110_mid.jpg"
+      },
+      {
+        "shot": "S111",
+        "t_in": 186.55,
+        "t_out": 188.96,
+        "len_s": 2.41,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S111_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S111_mid.jpg"
+      },
+      {
+        "shot": "S112",
+        "t_in": 188.96,
+        "t_out": 189.69,
+        "len_s": 0.73,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S112_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S112_mid.jpg"
+      },
+      {
+        "shot": "S113",
+        "t_in": 189.69,
+        "t_out": 191.56,
+        "len_s": 1.87,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S113_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S113_mid.jpg"
+      },
+      {
+        "shot": "S114",
+        "t_in": 191.56,
+        "t_out": 193.43,
+        "len_s": 1.87,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S114_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S114_mid.jpg"
+      },
+      {
+        "shot": "S115",
+        "t_in": 193.43,
+        "t_out": 195.54,
+        "len_s": 2.11,
+        "frame_in": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S115_in.jpg",
+        "frame_mid": "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/S115_mid.jpg"
+      }
+    ],
+    "second_sheets": [
+      "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/sheet_01.jpg",
+      "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/sheet_02.jpg",
+      "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/sheet_03.jpg",
+      "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/sheet_04.jpg",
+      "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/sheet_05.jpg",
+      "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/sheet_06.jpg",
+      "builds/stryde-what-changed/intake/frames/inspo video - Podcast why now what changed/sheet_07.jpg"
+    ]
+  }
+]
