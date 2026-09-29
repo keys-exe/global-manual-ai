@@ -157,6 +157,50 @@ def hk_02b():
     return dict(model="nano_banana_2", refs=refs, body=body)
 BEATS["HK-02b"] = hk_02b
 
+# ---- Seedance hooks (user 2026-09-29): one continuous clip per hook, VO over, the daughter says "Mama, when did that happen?" on camera;
+# new outfits for both hooks, different from each other and from the earlier green-dress look.
+WARD_HK = {
+ "A-N": "a royal-blue church skirt suit, the skirt falling to mid-calf so her knees are covered, a cream blouse and low navy pumps",
+ "A-C2": "a burgundy knit sweater, dark-wash jeans and white trainers",
+ "B-N": "a mustard-yellow knit cardigan over a cream blouse, navy wide-leg trousers to the ankle and flat tan loafers",
+ "B-C2": "a light-wash denim jacket over a plain black top, black leggings and white trainers",
+}
+def hk_a_sd():
+    r = ROWS["HK-02a"]; n, d = SUBJ["N"], SUBJ["C2"]
+    body = [S("CAM-LOCK"),
+     angle_line(r, "the two women on the stairs"), focus_line(r, "the mother"),
+     S("PROP-REF").replace("[THE CARRIED FINISHES, NAMED IN ONE CLAUSE]", PROP_N_CARRIED),
+     "THE TOP OF THE STAIRS exactly as in the attached landing photo: seen from the upstairs landing looking straight down the straight open flight — the photo wall on the left running down with the flight, "
+     "the white balusters and dark oak handrail on the right, the hall's oak floor and the front door with its glass sidelights at the bottom.",
+     "TWO PEOPLE, each exactly as in their attached reference sheet. THE MOTHER, nearer the top: " + n["markers"] + ". THE DAUGHTER, lower down the same flight: " + d["markers"] + ". Unchanged in face, age and build.",
+     "Caught mid-climb, both coming up toward the camera: the mother is four steps from the top, taking the stairs briskly and quickly — her right foot planted on the next step up and her weight already moving onto it, her right hand only brushing the handrail, "
+     "head up, a small proud smile, eyes ahead. Three steps below her, directly behind her on the same carpet runner and inside the rail, the daughter is working to keep up: one hand gripping the rail, leaning into the climb, looking up after her mother, a little out of breath. "
+     "Both women whole in the frame, the mother larger and nearer the lens, the daughter smaller behind her.",
+     "THE MOTHER is wearing " + WARD_HK["A-N"] + ". THE DAUGHTER is wearing " + WARD_HK["A-C2"] + ".",
+     "Real unretouched skin: the mother " + n["skin"] + "; the daughter " + d["skin"] + ".",
+     light_line(r, "the two women and the stairs", "Sunday afternoon sun through the front door's sidelights at the bottom of the flight and soft daylight from the landing window behind the camera — the after state, warm and clear"),
+     *tail("no third person, no product visible, no knee strap visible, no walking stick, no stairlift, no emerald-green dress, no heather-grey sweatshirt, no enclosed stairwell, no turn in the stairs, no different staircase from the landing photo, no daughter ahead of her mother")]
+    refs = [("N sheet", JOB["N"]), ("C2 sheet", JOB["C2"]), ("P1-LANDING plate v3", JOB["P1"]), ("P0-PROP-N plate", JOB["P0"])]
+    return dict(model="nano_banana_2", refs=refs, body=body)
+BEATS["HK-A-SD"] = hk_a_sd
+
+def hk_b_sd():
+    r = ROWS["HK-01b"]; n, d = SUBJ["N"], SUBJ["C2"]
+    body = [S("CAM-LOCK"),
+     angle_line(r, "the two women coming down the mall staircase"), focus_line(r, "the mother"),
+     MALL_PLATE + " — seen from the ground-floor concourse at the foot of the stairs, looking up the flight.",
+     "TWO PEOPLE, each exactly as in their attached reference sheet. THE DAUGHTER, lower down the stairs and nearer the camera: " + d["markers"] + ". THE MOTHER, a few steps above and behind her: " + n["markers"] + ". Unchanged in face, age and build.",
+     "Caught mid-descent, both coming down the stairs toward the camera, facing forwards: the daughter is a third of the way down, stepping carefully with two big shopping bags, one hand on the steel handrail, eyes on her feet. "
+     "Two steps above and just behind her, on the open side away from the rail, the mother is coming down briskly and quickly, hands free apart from one small shopping bag, head up, a small proud smile, "
+     "her front foot planted on the step below and her weight already moving onto it — she is about to overtake her daughter. Both women whole in the frame.",
+     "THE MOTHER is wearing " + WARD_HK["B-N"] + ". THE DAUGHTER is wearing " + WARD_HK["B-C2"] + ".",
+     "Real unretouched skin: the mother " + n["skin"] + "; the daughter " + d["skin"] + ".",
+     light_line(r, "the two women and the staircase", MALL_Q),
+     *tail("no third person close to camera, no crowd, no product visible, no knee strap visible, no walking stick, no running, no one climbing up the stairs, no one going down backwards, no emerald-green dress, no heather-grey sweatshirt, no different mall from the location photo, no readable sign, no text, no logos")]
+    refs = [("N sheet", JOB["N"]), ("C2 sheet", JOB["C2"]), ("P8-MALL plate", JOB["P8"])]
+    return dict(model="nano_banana_2", refs=refs, body=body)
+BEATS["HK-B-SD"] = hk_b_sd
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or BEATS:

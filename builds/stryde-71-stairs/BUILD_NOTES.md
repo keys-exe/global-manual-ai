@@ -101,6 +101,17 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   `angles.py` PASS; v2 (climbing) moved to the Old board. Note: the HK-02 line says "walked behind me the whole way up" — the picture
   now goes down, on the user's call.
 
+- 2026-09-29 ~09:15 UTC: user "THE HOOKB THE MAIN CHARACTER SHOULD BE RUSHING DOWN OVER TAKING THE DAUGHTER AND THE DAUGHTER JUST SAID WHEN DID
+  THAT HAPPENDED, USE SEEDANCE FOR BOTH HOOK A AND HOOK B SO RE DO THEM, BE SURE THAT THE CLOTHES ARE NOT THE SAME …" + answers: the daughter
+  says "Mama, when did that happen?" on camera in BOTH hooks; VO over the clip (mother doesn't speak); new outfits for both hooks.
+  → One continuous Seedance 2.5 clip per hook (11 s) replaces HK-01x + HK-02x + TH-01 in that hook. New start images (nano_banana_2):
+  **HK-A-SD** (from the landing: mother in a royal-blue skirt suit climbs fast toward the lens, daughter in a burgundy sweater behind; job 4fa1da0d)
+  and **HK-B-SD** (mall, from the foot of the stairs: daughter in a denim jacket coming down with bags, mother in a mustard cardigan about to
+  overtake her; job 652b9992). Prompts: `work/beats.py` (HK-A-SD/HK-B-SD), clips `hooks/seedance_hooks.py` → `hooks/sd/HK-A|B.seedance.txt`.
+  Voices: @audio1 = mother, `hooks/sd/mother_voice_T2_0-7.3.mp3` (VO T2 hook lines); Hook A first — its daughter line is cut out and becomes
+  @audio2 for Hook B. Edit: the daughter's on-camera line replaces the mother reading it in the VO. The old Kling hook cards (HK-01a/02a/01b/02b)
+  stay on Current until the Seedance hooks are confirmed, then move to Old.
+
 ## Where it stands
 - **Voice stage redone to V7.66.0, no laugh/sigh** (2026-09-29): VO takes (text v2) + TH-ALL-T1 (now T2) + TH-01…16 on the board To check. Working take **T2** (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`); a confirmed different take → one new Avatar V render + re-cut.
 - **Step 6 — hooks (the hook gate):** Hook 1: HK-02a video confirmed (use); HK-01a new frame v2 To check (then its video, gen 2).
