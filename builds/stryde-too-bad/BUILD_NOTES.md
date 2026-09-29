@@ -17,9 +17,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Cast on Higgsfield Sunburst 2k, one each: N-NARR (voice only), R1-GRACE, R2-ALAN, R3-KOFI, R4-FIONA. Higgsfield 17,527 credits before the cast.
   Four boards made; build doc on all four, cast on Current, docs/absorption on Plan + Current.
 
+- 2026-09-29: user confirmed R1 Denise and said proceed. Steps 4–5 (`STEP4_5.md`): six 16:9 plates on Higgsfield (P0 kitchen, P1 garden with P0 attached, P2 lounge, P3 shop, P4 consult, P5 PROP-F hall/stairs), To check;
+  act map `work/actmap.py` (29 unique beats, 20 shots per video, `angles.py` PASS both), wardrobe ledger; board: plates + 29 planned beats, docs locations/actmap/wardrobe on Plan + Current.
+
 ## Where it stands
-- 2026-09-29: user confirmed N, R2 Alan, R4 Fiona; R1 Grace and R3 Kofi sent back "CHANGE THIS AVATAR" → recast as **R1 Beverley** (Black British, 71) and **R3 Clive** (Black British, 67), one render each; Grace and Kofi moved to the Old board.
-- 2026-09-29: user confirmed R3 Clive; R1 Beverley sent back "CHANGE TO AMERICAN WOMAN" → recast as **R1 Denise** (African-American, 64); Beverley moved to the Old board.
-- **Waiting on the user:** Confirm/Fix R1 Denise, and the absorption; answer F2, F4, F5, F7, F8, F9.
-- Next (on the go): steps 4–5 — location plates (16:9) for R1 park + hall stairs, R2 garden, R3 workplace, R4 stairs + coastal path, a clinic (surgeon one-off);
-  act map + wardrobe map for both videos (`angles.py`, ~50% Black per video, ≤ 1 boxed B-roll in 5); then voice straight through (§22U, N).
+- **Waiting on the user:** Confirm/Fix the six plates; the script flags F2, F4, F5, F7, F8, F9 (voiced as written until answered).
+- **Next (no stop, §22U):** N voice-source image → two Kling 10s takes with `VOICE-NARR` → `voice_source.py` → clone by API `TooBad-Narrator` → Enhance → Eleven v4 one request (HK1+BODY1+HK2+BODY2) → VO takes on the board → house cut. Then hooks (step 6).
