@@ -1522,6 +1522,7 @@ function mediaCard(g,k){
       refs.length?`<div class="kv"><span class="lbl">Reference images used · ${refs.length}</span><div class="ing-row">${refs.map(x=>ingTile(g,x,"row",k)).join("")}</div></div>`:""}
     <div class="kv"><span class="lbl">Shot</span><span class="mc-t">${esc(g.title||"—")}</span></div>
     ${g.line?`<div class="kv"><span class="lbl">Script line</span><span class="mc-l">“${esc(g.line)}”</span></div>`:""}
+    ${k==="image"&&g.motionPlan&&flow(g).includes("video")?`<div class="kv"><span class="lbl">Video will show</span><span class="mc-l">${esc(g.motionPlan)}</span></div>`:""}
     <dl class="specs">${specs.map(([a,b,c])=>`<div${c?` class="${c}"`:""}><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
     <details class="pd"><summary><span class="lbl">Prompt</span><span class="pm">${num(prompt.length)} chars${limit?` / <span class="${prompt.length>limit?"over":""}">${num(limit)}</span>`:""}</span></summary>
       <pre class="ptext${prompt?"":" none"}">${prompt?esc(prompt):"Prompt not written yet."}</pre></details>
@@ -1799,6 +1800,7 @@ function renderViewer(){
   const panel=`<aside class="v-panel" data-shown="${!!v.details}" aria-label="Details">
       <div class="ps"><span class="lbl">Status</span><div>${pl>=0?`<span class="pill s-review">Pick one</span> <span class="pill s-planned">Option ${"AB"[pl]}</span>`:chip}${older?` <span class="pill s-planned">Viewing v${shown.v}</span>`:""}</div></div>
       ${g.line?`<div class="ps"><span class="lbl">Script line</span><div class="v-quote">“${esc(g.line)}”</div></div>`:""}
+      ${g.motionPlan&&flow(g).includes("video")?`<div class="ps"><span class="lbl">Video will show</span><div class="v-quote">${esc(g.motionPlan)}</div></div>`:""}
       ${ings.length?`<div class="ps"><span class="lbl">${seed?"Ingredients":"Reference images used"} · ${ings.length}</span><div class="ing-row">${ings.map(x=>ingTile(g,x,"vrow",k)).join("")}</div></div>`:""}
       ${older?`<div class="v-oldbar">You're looking at v${shown.v}, not the current version.${shown.note?` Fix that made it: ${esc(shown.note)}`:""}</div>`:""}
       ${g[d.fault]&&(s==="bad"||s==="gen")&&!older?`<div class="v-fault"><span class="lbl" style="color:#f07166">${s==="gen"?"Fixing now":"To fix"}</span><div>${esc(g[d.fault])}</div></div>`:""}
