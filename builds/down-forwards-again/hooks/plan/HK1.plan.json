@@ -1,0 +1,43 @@
+{
+ "audio": "/home/user/global-manual-ai/builds/down-forwards-again/th/TH-HK1.trim.mp4",
+ "script": "/home/user/global-manual-ai/builds/down-forwards-again/vo/HK1.lines.txt",
+ "base": "/home/user/global-manual-ai/builds/down-forwards-again/th/TH-HK1.trim.mp4",
+ "broll": [
+  {
+   "beat": "HK1-01a",
+   "clip": null,
+   "phrase": "In six weeks, this woman stopped coming down her own stairs backwards",
+   "key": "stairs",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "HK1-02a",
+   "clip": null,
+   "phrase": "Without an operation",
+   "key": "operation",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "HK1-02b",
+   "clip": null,
+   "phrase": "Without another course of physio",
+   "key": "physio",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "HK1-02c",
+   "clip": null,
+   "phrase": "Without one more brace going in the drawer",
+   "key": "brace",
+   "layout": {
+    "type": "full"
+   }
+  }
+ ]
+}

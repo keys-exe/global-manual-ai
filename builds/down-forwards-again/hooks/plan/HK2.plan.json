@@ -1,0 +1,16 @@
+{
+ "audio": "/home/user/global-manual-ai/builds/down-forwards-again/th/TH-HK2.trim.mp4",
+ "script": "/home/user/global-manual-ai/builds/down-forwards-again/vo/HK2.lines.txt",
+ "base": "/home/user/global-manual-ai/builds/down-forwards-again/th/TH-HK2.trim.mp4",
+ "broll": [
+  {
+   "beat": "HK2-02a",
+   "clip": null,
+   "phrase": "It takes ten seconds and it is not a prescription",
+   "key": "ten",
+   "layout": {
+    "type": "full"
+   }
+  }
+ ]
+}

@@ -106,7 +106,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   same frame as v4, she puts one brace into the bin bag by hand (bag held open with the other hand), the rest still in the drawer, nothing in mid-air
   (`hooks/build_hooks_v7.py`, job 08be9db1). v4 to the Old board.
 
+- 2026-09-29 ~13:25 UTC: user "confirmed all" → all hook images confirmed. Lengths from `assemble.py --lengths` (hooks/plan/*.plan.json, on the trimmed
+  TH-HKn audio): HK1-01a/02a/02b 3 s, HK1-02c 4 s, HK2-02a 4 s, HK3-01a 5 s. `hooks/build_hook_videos.py` → §35 JSON (RIG-R1C, one action + pace, HOLD-C,
+  PHYS-MOTION-C, NEG-WARP-C + NEG-LIGHT-C, audio off), preflight PASS ×5 → Kie kling-3.0-omni (tasks 4c31f723, 0580e273, 9805c9fe, e3c78916, 885279cc;
+  324 Kie credits) → board To check (generation 1 each). HK2-02a is pinned (§27G rule 5): its END frame (strap seated, hands lifting off,
+  `hooks/build_hk2_end.py`, job 74bff83d) is on the board as card HK2-02a-END for the user's Confirm before its video. Kie 168,280.8.
+
 ## Where it stands
-- **Waiting on the user:** HK1-02c v5 on the board — Confirm or Fix. Confirmed images: HK1-01a v4, HK1-02a v5, HK1-02b v3, HK2-02a v3, HK3-01a v2.
-- **Then:** each confirmed frame → its Kling 3.0 Omni video via Kie (§22X preflight, §27G, length from `assemble.py --lengths` on the locked VO);
-  HK2-02a is a pinned seating clip (end frame: the strap seated, W-L-FRONT placement). Then B-roll acts (step 7), CapCut block.
+- **Waiting on the user:** hook videos HK1-01a, HK1-02a, HK1-02b, HK1-02c, HK3-01a (generation 1) and the HK2-02a END frame — Confirm or Fix.
+- **Then:** HK2-02a video (first-and-last frame, 4 s) once its end frame is confirmed; hook variants assembled; then B-roll acts (step 7), CapCut block.
+  A second generation of any shot follows §22X (diagnose, fix at source); a third waits for the user.

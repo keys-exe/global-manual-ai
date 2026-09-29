@@ -1,0 +1,16 @@
+{
+ "audio": "/home/user/global-manual-ai/builds/down-forwards-again/th/TH-HK3.trim.mp4",
+ "script": "/home/user/global-manual-ai/builds/down-forwards-again/vo/HK3.lines.txt",
+ "base": "/home/user/global-manual-ai/builds/down-forwards-again/th/TH-HK3.trim.mp4",
+ "broll": [
+  {
+   "beat": "HK3-01a",
+   "clip": null,
+   "phrase": "Every week somebody brings me a scan of a knee and asks what can be done about the cartilage",
+   "key": "scan",
+   "layout": {
+    "type": "full"
+   }
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "beat": "HK1-02a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"hk1_02a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"OTS, as in the start frame: over the surgeon's shoulder, soft in the near foreground, the implant sharp, her face across the desk.\"},\"motion\":\"The surgeon's hand turns the knee replacement implant slowly a quarter turn towards her so the chrome catches the window, over about two seconds, and holds it there; she leans back a finger's width and swallows, her hands tightening on the bag handle; she keeps looking at the implant, not at us. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject, no music, no voice, no text appearing, no second implant, no implant changing shape, no surgeon's face, no speaking, no mouth moving, no smiling\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_123622_b6817ac4-bb3e-4664-929d-c9bbff5f4c92.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Without an operation.",
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "the implant morphs or duplicates",
+   "prevented_by": "one quarter turn over two seconds, HOLD-C, no implant changing shape, no duplicate objects"
+  },
+  {
+   "risk": "her mouth moves as if speaking under the VO",
+   "prevented_by": "no speaking, no mouth moving; the action is a swallow"
+  },
+  {
+   "risk": "a face appears on the surgeon",
+   "prevented_by": "no surgeon's face; framing keeps his shoulder soft in the foreground"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('confirmed all')",
+ "audio": false
+}

@@ -1,0 +1,40 @@
+{
+ "beat": "HK1-01a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"hk1_01a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"WIDE, as in the start frame: her whole body from hair to shoes in frame, steps below her to land on.\"},\"motion\":\"She keeps jogging down the station stairs facing forwards: two more light steps, one step every half second, landing on the balls of her feet, both arms swinging free at her sides and never reaching for the rail, the bag bouncing at her hip, a small smile; still moving down on the last frame. The wide trousers swing and crease as linen does; both legs stay ordinary covered legs. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject, no music, no voice, no text appearing, no hand on the handrail, no hand touching the rail or the wall, no stumbling, no falling, no missed step, no feet sliding over the steps, no extra steps appearing, no product visible through the fabric, no bulge at the knee, no rolled trouser leg\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122456_76034f69-2d2a-4c44-8eb6-6f5cdf19df84.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "In six weeks, this woman stopped coming down her own stairs backwards.",
+ "pace": "brisk",
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "a foot misses or melts into a step",
+   "prevented_by": "two steps only at a countable pace (one per half second), NEG-WARP-C, no missed step"
+  },
+  {
+   "risk": "a hand drifts onto the rail (the user's fix)",
+   "prevented_by": "arms swinging free, 'never reaching for the rail' + 'no hand on the handrail'"
+  },
+  {
+   "risk": "the camera travels with her",
+   "prevented_by": "RIG-R1C: camera lags the subject, never anticipates; the phone stays at the foot of the stairs"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('confirmed all')",
+ "audio": false
+}

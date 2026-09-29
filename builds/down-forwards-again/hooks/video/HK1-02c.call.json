@@ -1,0 +1,40 @@
+{
+ "beat": "HK1-02c",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"hk1_02c\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CLOSE on the strap, as in the start frame: the strap sharp in the lower middle, her soft behind it.\"},\"motion\":\"In the soft background she lowers the grey hinged brace the rest of the way into the black bin bag and lets go of it, over about two seconds, then reaches back towards the open drawer for the next one; the bag rustles and sags with the weight. In the sharp foreground the knee strap lies still on the table the whole time: it keeps its exact shape, size and wordmark in every frame and does not move at all. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject, no music, no voice, no text appearing, no braces flying or falling through the air, no braces in mid-air, no drawer tipped up, no strap moving, no strap in her hands, no second strap, no strap sliding on the table, no bending, no curling, no folding, no melting, no flipping of the product\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_132241_08be9db1-47ba-4f30-b21d-ef207e3261eb.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Without one more brace going in the drawer.",
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "braces fly into the bag by themselves (the user's fix)",
+   "prevented_by": "her hand lowers the brace and lets go; no braces in mid-air"
+  },
+  {
+   "risk": "the strap moves or warps",
+   "prevented_by": "strap lies still, keeps its exact shape, size and wordmark; product negatives"
+  },
+  {
+   "risk": "focus jumps to her",
+   "prevented_by": "framing: the strap sharp, her soft; INHERIT-CAP"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('confirmed all')",
+ "audio": false
+}
