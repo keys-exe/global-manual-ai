@@ -17,7 +17,7 @@ STEP1 = "\n\n".join([
  S("FRAME-SCALE").replace("[SCALE]", "about three quarters") + " " + S("FRAME-PROPPED"),
  "THE SAME WOMAN as in the two attached reference images — the face close-up (image 2) is her face exactly, and the five-panel sheet (image 1) is her body and clothes; copy that face, do not invent a new one. A white British woman of sixty-one — round soft face with full cheeks dropping a little at the jaw, deep-set dark brown eyes under low heavy brows, a short upturned nose, a small full mouth, the short pale scar across the tip of her nose, dark brown hair threaded with grey pulled back in a low loose bun, short and solid — her real age showing, unchanged in face, age, hair colour and build. "
  "In her own kitchen-diner at home: a pale painted wall behind her with a dresser of blue-and-white plates and a wall calendar with no readable writing, soft and out of focus. "
- "She sits at a round wooden table, turned three-quarters towards the camera, forearms resting on the bare table top, hands loosely together, eyes on the lens, about to speak. An ordinary photograph of the room: no phone, camera screen, on-screen buttons or device appears anywhere, and nothing stands on the table between her and the lens. "
+ "She sits at a round wooden table facing the camera straight on — shoulders, body and face square to the lens, not turned to either side — forearms resting on the bare table top, hands loosely together, both eyes looking straight into the lens, about to speak. An ordinary photograph of the room: no phone, camera screen, on-screen buttons or device appears anywhere, and nothing stands on the table between her and the lens. "
  "Wearing a mustard-yellow cardigan buttoned over a navy-and-white striped Breton top, in mustard, navy and white.",
  S("LIGHT-SHOT").replace("[SOURCE from the light plan — the window on the room's WALL, or the named practical]", "The window on the kitchen-diner's west wall")
    .replace("[SUBJECT]", "her").replace("[SCREEN SIDE]", "left").replace("[TIME-OF-DAY QUALITY and the act's light state]", "soft ordinary afternoon daylight").replace("[SIDE]", "the left"),
@@ -27,7 +27,7 @@ STEP1 = "\n\n".join([
  S("HAIR-A").replace("[HAIR-SPEC]", "dark brown hair threaded with grey, pulled back into a low loose bun at the nape with a few strands escaping at the temples"),
  S("NECK-A"), S("TEETH-A"),
  S("CAP-A"), S("CAP-FILE"),
- "AVOID: " + ", ".join([S("NEG-FRAME"), S("NEG-SKIN"), S("NEG-TEX"), S("NEG-FINISH"), S("NEG-M1"), S("NEG-LIGHT"), "no phone in frame, no phone in her hand, no second phone, no screen or device, no object between her and the camera, no cup or pens in the foreground, no newspaper, no mug of tea, no readable text, no camera app interface, no on-screen buttons or labels, no shutter button, no viewfinder overlay, no screenshot, no younger woman, no silver or blonde hair, no hair worn loose, no different face from the reference"]),
+ "AVOID: " + ", ".join([S("NEG-FRAME"), S("NEG-SKIN"), S("NEG-TEX"), S("NEG-FINISH"), S("NEG-M1"), S("NEG-LIGHT"), "no phone in frame, no phone in her hand, no second phone, no screen or device, no object between her and the camera, no cup or pens in the foreground, no newspaper, no mug of tea, no readable text, no camera app interface, no on-screen buttons or labels, no shutter button, no viewfinder overlay, no screenshot, no body turned to the side, no three-quarter view, no head turned away, no eyes looking off-camera, no younger woman, no silver or blonde hair, no hair worn loose, no different face from the reference"]),
 ])
 assert "[" not in STEP1, STEP1[STEP1.index("["):][:80]
 
@@ -57,7 +57,7 @@ def take(tid, line, closure, stress, intent):
     }
     return json.dumps(d, ensure_ascii=False, separators=(",", ":"))
 
-pathlib.Path("N_step1_image.prompt.txt").write_text(STEP1)  # v1 built with the stryde-too-bad lessons (face crop attached as image 2, bare table, no device) — v3 (Fix "USE MY AVATAR NARRATOR": v2 ignored the sheet — younger woman, brown hair — and drew a camera-app screen; face crop attached as image 2, identity restated, UI negatives) · v2 (Fix "fix this": v1 drew a second phone, pen mug and newspaper in front of her)
+pathlib.Path("N_step1_image.prompt.txt").write_text(STEP1)  # v2 (Fix "make it face in camera": v1 turned her three-quarters — the prompt asked for it; now square to the lens, turn negatives) · v1 built with the stryde-too-bad lessons (face crop attached as image 2, bare table, no device) — v3 (Fix "USE MY AVATAR NARRATOR": v2 ignored the sheet — younger woman, brown hair — and drew a camera-app screen; face crop attached as image 2, identity restated, UI negatives) · v2 (Fix "fix this": v1 drew a second phone, pen mug and newspaper in front of her)
 print("step1", len(STEP1))
 out = {}
 for t in TAKES:
