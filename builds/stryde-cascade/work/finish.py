@@ -5,7 +5,7 @@ usage: finish.py VARIANT.mp4 HOOK_ID --bgm edit/v4/bgm_v2.mp3 --hook-slot 16.5 -
 - Word timings per part (hook alone, body alone), aligned to the verbatim script lines and offset by the
   hook's length on the 24 fps grid, exactly as assemble.py times the B-roll — so captions sit on the words.
 - Cards: 1–3 words, broken at punctuation; white rounded box, black bold sans, centred at ~65% height;
-  the C1 keywords get a red box with white type. Captions are the script's words, verbatim.
+  no keyword boxes (user 2026-09-29: plain captions only). Captions are the script's words, verbatim.
 - Music: the BGM track is laid so its body sections start where the body starts (the track's hook slot is
   --hook-slot seconds, so a shorter hook starts the music that much later into the track). It is ducked under
   the VO (sidechain), faded out over the last 2 s, and the mix is normalised to −14 LUFS, true peak −1 dB (C9).
@@ -65,6 +65,7 @@ def cards(ws):
 
 
 def keyflags(tokens):
+    return [False] * len(tokens)   # user 2026-09-29: "remove the red caption stay normal caption"
     n = [norm(t) for t in tokens]
     flags = [x in KEY1 for x in n]
     for i in range(len(n) - 1):

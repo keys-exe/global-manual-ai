@@ -174,14 +174,19 @@
     "clip": "renders/A3-B3.mp4",
     "phrase": "The pills switch the alarm off.",
     "layout": {
+     "type": "split",
+     "broll_pos": "bottom",
+     "ratio": 0.5
+    },
+    "max": 6,
+    "key_orig": "pills",
+    "layout_orig": {
      "type": "pip",
      "over": "th",
      "corner": "br",
      "scale": 0.5,
      "border": 0
-    },
-    "max": 6,
-    "key_orig": "pills"
+    }
    },
    {
     "beat": "A3-B4",
@@ -362,14 +367,19 @@
      "clip": "renders/HK1-B3.mp4",
      "phrase": "I have watched where it goes.",
      "layout": {
+      "type": "split",
+      "broll_pos": "bottom",
+      "ratio": 0.5
+     },
+     "max": 6,
+     "key_orig": "watched",
+     "layout_orig": {
       "type": "pip",
       "over": "th",
       "corner": "br",
       "scale": 0.5,
       "border": 0
-     },
-     "max": 6,
-     "key_orig": "watched"
+     }
     }
    ]
   },
