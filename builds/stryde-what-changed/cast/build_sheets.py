@@ -8,12 +8,12 @@ def S(i):
     return m.group(1).strip()
 
 CAST = {
- "H-HOST": dict(sex="WOMAN", side="left", wall="exposed London stock brick", floor="dark stained floorboards",
-   face="An oval face with a long straight nose, dark brown almond eyes under straight thick brows, a wide mouth with a fuller lower lip and a firm, slightly squared chin — an open, level, capable face. A single streak of grey running back from her left temple through the dark hair — her one marker. The left brow sits a touch higher than the right",
-   hair="Dark brown-black hair with loose waves to just below the shoulders, parted slightly off-centre to the right, the grey streak from the left temple visible in every panel, the same length and the same tone in every panel",
-   body="A British woman of Indian heritage. Medium height, slim with straight shoulders, forty-eight years old",
+ "H-HOST": dict(host=True, sex="WOMAN", side="left", wall="exposed London stock brick", floor="dark stained floorboards",
+   face="A striking, well-proportioned oval face with high defined cheekbones, large dark brown almond eyes with long lashes under softly arched full brows, a straight slim nose, full shapely lips and a neat, gently rounded chin — a naturally attractive, warm face. A single streak of grey running back from her left temple through the dark hair — her one marker. The left brow sits a touch higher than the right. WARM AND LIKEABLE — the face of a presenter people are glad to listen to: the eyes bright, warm and engaged, the lids relaxed, faint laugh lines at their corners; the brow at rest and open; the mouth closed but soft, its corners turned very slightly up as if about to smile; the head held easily, relaxed and confident. Friendly and self-assured, never stern, never cold, not a posed smile",
+   hair="Glossy dark brown-black hair falling in loose soft waves to just below the shoulders, parted slightly off-centre to the right, healthy and full, the grey streak from the left temple visible in every panel, the same length and the same tone in every panel",
+   body="A British woman of Indian heritage. Medium height, slim and graceful with straight shoulders and good posture, forty-four years old",
    ward="A forest-green fine-knit crew-neck jumper, dark indigo straight jeans and tan suede ankle boots",
-   age="fine lines fanning from the outer eyes, soft folds from the nose to the corners of the mouth, faint creasing across the forehead, slight darkening under the eyes, a few grey hairs at the parting"),
+   age="faint fine lines at the outer eyes, soft shallow folds from the nose to the corners of the mouth, a faint crease across the forehead, a few grey hairs at the parting"),
  "R1-MAUREEN": dict(sex="WOMAN", side="right", wall="pale sage green", floor="a worn beige hall carpet",
    face="A heart-shaped face with a broad forehead narrowing to a small pointed chin, round light-blue eyes, a short straight nose and thin lips with a pronounced cupid's bow. A small raised brown mole just above the right corner of her upper lip — her one marker. The right eye sits a little lower than the left",
    hair="Soft white hair cut in a short layered crop with a little lift at the crown, the same white and the same shape in every panel",
@@ -41,7 +41,11 @@ def build(k, c):
         sheet = sheet.replace(a, b)
     assert "[" not in sheet, k
     skin = "IN THE FACE CLOSE-UP: " + S("SKIN-T").replace("[AGE-FEATURES]", c["age"])
+    if c.get("host"):                         # same Fix: realistic skin kept, the "unflattering" instruction dropped
+        skin = skin.replace(" Bare skin, no makeup, unflattering.", " Bare skin, no makeup.")
     ndf = S("NEG-DEFAULT-FACE")
+    if c.get("host"):                         # user Fix 2026-09-29 (§34, H-HOST only): "more attractive / pleasing personality"
+        ndf = ndf.replace(", no catalogue-model bone structure", "").replace(", no soft agreeable features throughout, not a face that could advertise anything", "")
     if c.get("pro"):                          # §19B: drop the last two clauses
         ndf = ndf.replace(", no soft agreeable features throughout, not a face that could advertise anything", "")
     neg = ", ".join([S("NEG-SHEET"), S("NEG-GRID"), S("NEG-FILE"), ndf])
