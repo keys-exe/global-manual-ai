@@ -64,8 +64,31 @@ B["HK1-b"] = clip("HK1-b",
            {"risk": "the model swims or melts", "prevented_by": "HOLD-C + NEG-WARP-C, one pulse only"},
            {"risk": "text or arrows appear", "prevented_by": "'no arrows, no text, no labels, no numbers'"}])
 
+# Hook 2 — E6 from the trimmed HK2 variant: HK2-a 0–3.36 s ("and" at 3.36), HK2-b 3.36–6.80 s ("it" at 6.80)
+B["HK2-a"] = clip("HK2-a",
+    "A premium 3D anatomical model of a single knee seen from the front, near-black field, the patellar tendon below the kneecap glowing as one tight bright spot.",
+    "Already under load on the first frame: the glow at [SITE] swells once, slowly, over about two seconds and settles back, "
+    "the glow staying one tight spot on the tendon; the rest of the joint stays calm.",
+    "no arrows, no text, no labels, no numbers, no thumb, no hand, no ruler, no glow on the shin bone, no glow spreading down the leg, "
+    "no second limb, no product, no camera orbit",
+    3.36, hi=5, anat=True,
+    risks=[{"risk": "the glow spreads down the shin or across the joint", "prevented_by": "'one tight spot' in subject + motion, negatives on shin and spread"},
+           {"risk": "the model swims or melts", "prevented_by": "HOLD-C + NEG-WARP-C, one swell only"},
+           {"risk": "a thumb or scale object appears (F2)", "prevented_by": "'no thumb, no hand, no ruler'"}])
+B["HK2-b"] = clip("HK2-b",
+    "A Black British man of sixty-six seen low and three-quarter on at the foot of his stairs, cropped at mid-thigh: dark grey jogging shorts, "
+    "a bare right knee and shin, white trainers with navy trim, his right foot planted on the bottom stair of a charcoal stair carpet.",
+    "Already mid-step on the first frame: his right knee bends a little further as it takes his weight and straightens as he rises onto the "
+    "bottom stair, his left foot lifting off the hall floor — one step up in about a second — then his weight settles.",
+    "no second person, no face in frame, no knee strap, no knee brace, no walking stick, no going down the stairs, no turning sideways, no extra legs",
+    3.44, risks=[{"risk": "legs or feet warp on the stair", "prevented_by": "one step at a countable pace, start frame caught mid-step, HOLD-C + NEG-WARP-C"},
+                 {"risk": "camera travels with the moving subject", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"},
+                 {"risk": "a strap or brace appears on the bare knee (the before state)", "prevented_by": "'no knee strap, no knee brace' + bare knee in subject"}])
+
 START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
-         "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png"}
+         "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
+         "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170900_e16327a8-a3fc-4ffe-afc1-379e8a47c699.png",
+         "HK2-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170901_a7ba052b-dfcc-44eb-b45a-4a595aef8928.png"}
 
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
@@ -76,6 +99,6 @@ if __name__ == "__main__":
         call = {"beat": b, "connector": "kling", "mode": 1, "kind": "broll", "prompt": s, "duration": dur, "resolution": "1080p", "aspect_ratio": "9:16",
                 "start_image": START[b], "start_approved": True, "pinned": False, "end_image": None, "end_approved": False,
                 "subject_motion": "in_place" if "ANAT" in d["subject"] or "anatomical" in d["subject"] else "travels",
-                "prefer_multi_shots": "false", "generation": 1, "risks": risks, "approved_by": "user: board Confirm + 'confirm' (2026-09-29)"}
+                "prefer_multi_shots": "false", "generation": 1, "risks": risks, "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"}
         (out / f"{b}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
         print(b, dur, "s", len(s), "chars")

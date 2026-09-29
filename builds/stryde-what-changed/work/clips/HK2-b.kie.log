@@ -1,0 +1,12 @@
+{"taskId": "f2445f70c070b8730755e30cf0648fb2", "created": true}
+{
+  "taskId": "f2445f70c070b8730755e30cf0648fb2",
+  "state": "success",
+  "credits": 90.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/f2445f70c070b8730755e30cf0648fb2_1_1790702249_4243.mp4"
+  ],
+  "saved": "HK2-b_v1.mp4",
+  "model": "kling-3.0/video"
+}
