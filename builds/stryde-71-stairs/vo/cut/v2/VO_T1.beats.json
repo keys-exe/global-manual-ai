@@ -1,0 +1,512 @@
+{
+ "HK-01a": {
+  "type": "BR",
+  "start": 0.0,
+  "end": 3.94,
+  "line": "I'm 71, and I take the stairs faster than women half my age."
+ },
+ "HK-02a": {
+  "type": "BR",
+  "start": 4.7,
+  "end": 7.98,
+  "line": "Last Sunday, my daughter walked behind me the whole way up"
+ },
+ "TH-01": {
+  "type": "TH",
+  "start": 7.98,
+  "end": 10.4,
+  "line": "and said, \"Mama, when did that happen?\"",
+  "cut_in": 7.98,
+  "cut_out": 10.68,
+  "heard": "and said, mama, when did that happen?"
+ },
+ "HK-01b": {
+  "type": "BR",
+  "start": 0.0,
+  "end": 3.94,
+  "line": "I'm 71, and I take the stairs faster than women half my age."
+ },
+ "HK-02b": {
+  "type": "BR",
+  "start": 4.7,
+  "end": 7.98,
+  "line": "Last Sunday, my daughter walked behind me the whole way up"
+ },
+ "P-01a": {
+  "type": "BR",
+  "start": 10.96,
+  "end": 13.86,
+  "line": "Six weeks ago, I was going down my stairs backwards."
+ },
+ "P-01b": {
+  "type": "BR",
+  "start": 14.62,
+  "end": 15.78,
+  "line": "One step at a time."
+ },
+ "TH-02": {
+  "type": "TH",
+  "start": 16.62,
+  "end": 20.14,
+  "line": "I ain't gonna lie, some days I wasn't going down them at all.",
+  "cut_in": 16.2,
+  "cut_out": 20.38,
+  "heard": "I ain't gonna lie. Some days, I wasn't going down them at all."
+ },
+ "P-02a": {
+  "type": "BR",
+  "start": 20.62,
+  "end": 21.34,
+  "line": "I'd just stay upstairs."
+ },
+ "P-03a": {
+  "type": "BR",
+  "start": 22.44,
+  "end": 25.14,
+  "line": "That big knee brace I bought slid right down my leg."
+ },
+ "P-03b": {
+  "type": "BR",
+  "start": 25.54,
+  "end": 27.36,
+  "line": "By evening, it was around my ankle."
+ },
+ "TH-03": {
+  "type": "TH",
+  "start": 27.78,
+  "end": 29.16,
+  "line": "I done tried everything.",
+  "cut_in": 27.57,
+  "cut_out": 29.53,
+  "heard": "I done tried everything."
+ },
+ "P-04a": {
+  "type": "BR",
+  "start": 29.9,
+  "end": 30.54,
+  "line": "Physical therapy."
+ },
+ "P-04b": {
+  "type": "BR",
+  "start": 31.14,
+  "end": 31.88,
+  "line": "Pain pills."
+ },
+ "P-04c": {
+  "type": "BR",
+  "start": 32.22,
+  "end": 33.18,
+  "line": "Cortisone shots."
+ },
+ "P-04d": {
+  "type": "BR",
+  "start": 33.78,
+  "end": 35.32,
+  "line": "Every brace and sleeve they make."
+ },
+ "TH-04": {
+  "type": "TH",
+  "start": 35.88,
+  "end": 37.84,
+  "line": "Nothing worked. Nothing lasted.",
+  "cut_in": 35.6,
+  "cut_out": 38.21,
+  "heard": "Nothing worked, nothing lasted."
+ },
+ "P-05a": {
+  "type": "BR",
+  "start": 38.58,
+  "end": 40.0,
+  "line": "Nothing gave me my life back."
+ },
+ "T-01a": {
+  "type": "BR",
+  "start": 40.6,
+  "end": 42.48,
+  "line": "Then my grandbaby got married in June."
+ },
+ "T-01b": {
+  "type": "BR",
+  "start": 43.02,
+  "end": 44.14,
+  "line": "My cousin Loretta was there."
+ },
+ "TH-05": {
+  "type": "TH",
+  "start": 44.54,
+  "end": 45.2,
+  "line": "She's 74,",
+  "cut_in": 44.34,
+  "cut_out": 45.2,
+  "heard": "She's 74,"
+ },
+ "T-02a": {
+  "type": "BR",
+  "start": 45.2,
+  "end": 48.22,
+  "line": "and she was out on that dance floor all night."
+ },
+ "T-02b": {
+  "type": "BR",
+  "start": 49.04,
+  "end": 51.62,
+  "line": "Electric Slide, Cupid Shuffle, all of it."
+ },
+ "T-03a": {
+  "type": "BR",
+  "start": 52.0,
+  "end": 53.76,
+  "line": "Both her knees was bone on bone too."
+ },
+ "TH-06": {
+  "type": "TH",
+  "start": 54.2,
+  "end": 58.68,
+  "line": "I always figured hers wasn't as bad as mine. I always figured mine was past fixing.",
+  "cut_in": 53.98,
+  "cut_out": 59.06,
+  "heard": "I always figured hers wasn't as bad as mine. I always figured mine was past fixing."
+ },
+ "R-01a": {
+  "type": "BR",
+  "start": 59.44,
+  "end": 61.04,
+  "line": "Loretta came to stay the week after."
+ },
+ "TH-07": {
+  "type": "TH",
+  "start": 61.54,
+  "end": 64.18,
+  "line": "She watched me at the kitchen table, going through my morning routine.",
+  "cut_in": 61.29,
+  "cut_out": 64.51,
+  "heard": "She watched me at the kitchen table going through my morning routine."
+ },
+ "R-02a": {
+  "type": "BR",
+  "start": 64.84,
+  "end": 66.78,
+  "line": "Two anti-inflammatories, the gel,"
+ },
+ "R-02b": {
+  "type": "BR",
+  "start": 67.18,
+  "end": 69.18,
+  "line": "the brace, an ice pack on my right knee."
+ },
+ "TH-08": {
+  "type": "TH",
+  "start": 69.64,
+  "end": 72.62,
+  "line": "After a minute she said, \"Baby, can I show you something?\"",
+  "cut_in": 69.41,
+  "cut_out": 72.99,
+  "heard": "After a minute, she said, baby, can I show you something?"
+ },
+ "R-03a": {
+  "type": "BR",
+  "start": 73.36,
+  "end": 74.46,
+  "line": "She pulled up her pant leg."
+ },
+ "R-04a": {
+  "type": "BR",
+  "start": 75.04,
+  "end": 77.72,
+  "line": "She had on a little black strap, right under her kneecap. Stryde."
+ },
+ "R-05a": {
+  "type": "BR",
+  "start": 79.32,
+  "end": 82.7,
+  "line": "She handed me one. It looked ridiculous. Too small."
+ },
+ "TH-09": {
+  "type": "TH",
+  "start": 83.28,
+  "end": 86.76,
+  "line": "I said, \"Loretta, you know good and well this ain't gonna work on knees like mine.\"",
+  "cut_in": 82.99,
+  "cut_out": 87.11,
+  "heard": "I said, Loretta, you know, good and well, this ain't gonna work on knees like mine."
+ },
+ "R-06a": {
+  "type": "BR",
+  "start": 87.46,
+  "end": 90.2,
+  "line": "She said, \"Just put it on and walk down them stairs.\""
+ },
+ "R-07a": {
+  "type": "BR",
+  "start": 91.08,
+  "end": 95.14,
+  "line": "I did. Chile, the first step, I didn't even have to hold the rail."
+ },
+ "R-07b": {
+  "type": "BR",
+  "start": 95.62,
+  "end": 97.36,
+  "line": "Not the second. Not the third."
+ },
+ "R-07c": {
+  "type": "BR",
+  "start": 97.88,
+  "end": 100.7,
+  "line": "All the way down. Both feet. Forwards."
+ },
+ "M-01a": {
+  "type": "BR",
+  "start": 101.5,
+  "end": 104.6,
+  "line": "She said, \"Everything else you tried was made to keep you comfortable"
+ },
+ "M-01b": {
+  "type": "BR",
+  "start": 104.6,
+  "end": 105.76,
+  "line": "while your knee got worse."
+ },
+ "M-02a": {
+  "type": "BR",
+  "start": 106.5,
+  "end": 108.22,
+  "line": "This one fixes why it hurts.\""
+ },
+ "M-03a": {
+  "type": "BR",
+  "start": 108.8,
+  "end": 112.38,
+  "line": "She said, \"There's one spot under the kneecap where every step lands.\""
+ },
+ "M-04a": {
+  "type": "BR",
+  "start": 112.96,
+  "end": 117.42,
+  "line": "\"Every brace, every shot, every pill you ever tried treated the whole knee."
+ },
+ "M-04b": {
+  "type": "BR",
+  "start": 117.82,
+  "end": 120.22,
+  "line": "Not that spot. That's why ain't nothing worked."
+ },
+ "M-05a": {
+  "type": "BR",
+  "start": 120.76,
+  "end": 123.22,
+  "line": "\"The pain is pressure. That's all it is."
+ },
+ "M-05b": {
+  "type": "BR",
+  "start": 123.62,
+  "end": 126.5,
+  "line": "This strap sits right on that spot and takes the weight off.\""
+ },
+ "M-06a": {
+  "type": "BR",
+  "start": 127.0,
+  "end": 129.78,
+  "line": "First step. Pain gone. Just like that."
+ },
+ "PR-01a": {
+  "type": "BR",
+  "start": 130.26,
+  "end": 132.74,
+  "line": "Over 200,000 people wear one now."
+ },
+ "PR-01b": {
+  "type": "BR",
+  "start": 130.26,
+  "end": 132.74,
+  "line": "Over 200,000 people wear one now."
+ },
+ "PR-01c": {
+  "type": "BR",
+  "start": 130.26,
+  "end": 132.74,
+  "line": "Over 200,000 people wear one now."
+ },
+ "PR-01d": {
+  "type": "BR",
+  "start": 130.26,
+  "end": 132.74,
+  "line": "Over 200,000 people wear one now."
+ },
+ "PR-02a": {
+  "type": "BR",
+  "start": 133.04,
+  "end": 134.44,
+  "line": "Sports doctors recommend it."
+ },
+ "TH-10": {
+  "type": "TH",
+  "start": 134.84,
+  "end": 136.88,
+  "line": "Not the pharma companies. Sports doctors.",
+  "cut_in": 134.64,
+  "cut_out": 137.16,
+  "heard": "Not the pharma companies, sports doctors."
+ },
+ "PR-03a": {
+  "type": "BR",
+  "start": 137.44,
+  "end": 141.42,
+  "line": "Loretta's husband wears one. He's 76, and he plays golf twice a week."
+ },
+ "PR-04a": {
+  "type": "BR",
+  "start": 141.8,
+  "end": 144.46,
+  "line": "Her niece wears one when she runs track. She's 22."
+ },
+ "PR-05a": {
+  "type": "BR",
+  "start": 145.28,
+  "end": 147.58,
+  "line": "I've worn mine every day for six weeks."
+ },
+ "TH-11": {
+  "type": "TH",
+  "start": 147.98,
+  "end": 150.58,
+  "line": "Under my clothes. Don't nobody know it's there.",
+  "cut_in": 147.78,
+  "cut_out": 150.81,
+  "heard": "under my clothes. Don't nobody know it's there."
+ },
+ "PR-05b": {
+  "type": "BR",
+  "start": 147.98,
+  "end": 150.58,
+  "line": "Under my clothes. Don't nobody know it's there."
+ },
+ "PR-06a": {
+  "type": "BR",
+  "start": 151.04,
+  "end": 154.88,
+  "line": "No pills. No gel. No brace around my ankle by lunchtime."
+ },
+ "L-01a": {
+  "type": "BR",
+  "start": 155.26,
+  "end": 159.52,
+  "line": "Yesterday I walked to the store. Two miles there. Two miles back."
+ },
+ "L-01b": {
+  "type": "BR",
+  "start": 160.12,
+  "end": 161.76,
+  "line": "Passed three women half my age."
+ },
+ "L-02a": {
+  "type": "BR",
+  "start": 162.14,
+  "end": 165.26,
+  "line": "Stood in that checkout line ten minutes without shifting my weight."
+ },
+ "L-02b": {
+  "type": "BR",
+  "start": 165.62,
+  "end": 168.4,
+  "line": "Carried two bags home. Didn't nobody help me."
+ },
+ "L-03a": {
+  "type": "BR",
+  "start": 168.88,
+  "end": 172.22,
+  "line": "When I got home, my husband said, \"You was gone a long time.\""
+ },
+ "TH-12": {
+  "type": "TH",
+  "start": 172.78,
+  "end": 173.88,
+  "line": "I said, \"I know.\"",
+  "cut_in": 172.5,
+  "cut_out": 174.12,
+  "heard": "I said, I know."
+ },
+ "C-01a": {
+  "type": "BR",
+  "start": 174.36,
+  "end": 177.34,
+  "line": "That was six weeks of wearing the strap. Nothing else."
+ },
+ "C-02a": {
+  "type": "BR",
+  "start": 177.94,
+  "end": 181.76,
+  "line": "Three ladies from church already ordered one after they watched me come down the church steps."
+ },
+ "TH-13": {
+  "type": "TH",
+  "start": 182.3,
+  "end": 183.78,
+  "line": "So I'ma just say it right here.",
+  "cut_in": 182.03,
+  "cut_out": 183.98,
+  "heard": "So I'ma just say it right here."
+ },
+ "C-03a": {
+  "type": "BR",
+  "start": 184.18,
+  "end": 186.52,
+  "line": "It's called Stryde Patellar Force Redirection."
+ },
+ "C-04a": {
+  "type": "BR",
+  "start": 187.14,
+  "end": 189.76,
+  "line": "They spent three years designing it with orthopedic surgeons."
+ },
+ "TH-14": {
+  "type": "TH",
+  "start": 190.38,
+  "end": 191.4,
+  "line": "It's the real thing.",
+  "cut_in": 190.07,
+  "cut_out": 191.63,
+  "heard": "It's the real thing."
+ },
+ "C-05a": {
+  "type": "BR",
+  "start": 191.86,
+  "end": 195.06,
+  "line": "Not them cheap knock-offs they be selling on Amazon and them fake websites."
+ },
+ "C-06a": {
+  "type": "BR",
+  "start": 195.9,
+  "end": 199.82,
+  "line": "The link's right down below. Two straps for the price of one right now."
+ },
+ "C-07a": {
+  "type": "BR",
+  "start": 200.46,
+  "end": 202.2,
+  "line": "Sixty days to send them back if they don't work."
+ },
+ "TH-15": {
+  "type": "TH",
+  "start": 202.68,
+  "end": 206.54,
+  "line": "Eleven years of knee pain. Gone the first step I took with it on.",
+  "cut_in": 202.44,
+  "cut_out": 206.85,
+  "heard": "11 years of knee pain. Gone the first step I took with it on."
+ },
+ "C-09a": {
+  "type": "BR",
+  "start": 207.16,
+  "end": 208.92,
+  "line": "I bought my sister a pair that same week."
+ },
+ "TH-16": {
+  "type": "TH",
+  "start": 209.28,
+  "end": 212.64,
+  "line": "She coming Sunday. She gon' walk up my stairs on her own.",
+  "cut_in": 209.1,
+  "cut_out": 212.94,
+  "heard": "She come in Sunday. She gonna walk up my stairs on her own."
+ }
+}

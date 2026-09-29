@@ -73,8 +73,20 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   HK-02b v2: side-on, the daughter one step behind with shopping bags (refs N + C2 + P8, job 0d4a602a). `actmap.py` rows updated,
   `angles.py` PASS. The v1 images went to the Old board, and their files were deleted from Current. All new renders are on `review`.
 
+- 2026-09-28 21:35 → 2026-09-29 06:10 UTC: user "the th is too quick the trim" → "the vo is what i mean" → "its trimmed even though she is
+  not done talking" → "ill make a pr wait for it" → (V7.66.0 merged into the default branch) "Ive added the new trim. Proceed with the vo again".
+  Merged the default branch (V7.66.0) into this branch (CLAUDE.md board table conflict resolved, both sides kept).
+  **VO re-cut, V7.66.0 house cut** (`vo_trim.py`: every word to −50 dB + 80 ms release, pauses 0.45/0.20 s, ≤210 wpm) → `vo/cut/v2/`:
+  T1 212.95 s 173 wpm PASS (**working take**), T2 208.1 s FAIL (breath 156.45 s), T3 211.2 s FAIL (breath 141.8 s), T4 211.7 s PASS.
+  **Talking heads per §22U step 13 (V7.66.0): one HeyGen Avatar V render of the whole T1 cut** (video 4f39b935…, 212.9 s, no
+  motionPrompt — Avatar V refuses it for this photo avatar; never Avatar IV) → `vo/th_split_v3.py` cut points on the new cut
+  (`vo/cut/v2/VO_T1.beats.json`) → 16 segments → `trim.py` (V7.66.0 defaults) PASS ×16 → board v3. The Avatar IV THs (v1/v2) and the
+  168 s house-cut takes moved to the Old board. The intermediate Avatar IV re-renders from 21:40 (`vo/th/v2/`, natural-pace audio) are
+  superseded by the V7.66.0 Avatar-V-only rule and were not put on the board. TH-01 begins on the tail of "up" (connected speech,
+  no gap in the take). New beat times: HK-01a/b 0–~4.1 s, HK-02a/b ~4.1–7.98 s, TH-01 7.98–10.68 s (see beats.json).
+
 ## Where it stands
-- **Voice stage done** (no stop, Manual 2026-09-28): everything on the board To check. A confirmed different VO take → re-cut + regenerate the THs.
+- **Voice stage redone to V7.66.0** (2026-09-29): VO T1–T4 (new cut) + TH-ALL-T1 + TH-01…16 v3 on the board To check. Working take T1; a confirmed different take → one new Avatar V render + re-cut.
 - **Step 6 — hooks (the hook gate):** Hook 1: HK-02a video confirmed (use); HK-01a new frame v2 To check (then its video, gen 2).
   Hook 2 (mall): P8-MALL plate + HK-01b/HK-02b v2 images To check → then their videos on Kie.
   Beat times from `vo/cut/VO_T1.beats.json`: HK-01a 0.00–3.84s, HK-02a 4.04–7.00s, TH-01 7.00–8.94s (Hook 2 uses the same times).
