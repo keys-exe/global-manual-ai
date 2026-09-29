@@ -1,0 +1,34 @@
+{
+ "beat": "MECH-02",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"mech_02\",\"subject\":\"A stylised anatomical knee from a low three-quarter angle against a near-black field, the strap seated below the kneecap taking the load. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Completely locked off: no drift, no orbit, no push-in, no zoom, no pan, no cut \u2014 one continuous shot from one fixed viewpoint.\",\"framing\":\"Exactly as in the start frame, first frame to last.\"},\"motion\":\"Already cycling on the first frame: a small load pulse arrives down the thigh once per second \u2014 the femur presses down a few millimetres onto the knee and releases, the muscles thicken slightly on each press and relax between. The strap meets each press first: its rigid shell holds still and the knit band stretches a fraction and eases back. Beneath it the tendon barely moves and the faint warmth at the spot below the kneecap stays dim. The product keeps the exact geometry of the start frame on every frame: same silhouette, same shell shape, same two matching peaks of equal height, same notch depth and width, same band width, same hardware position, same wordmark position and spelling. The rigid shell never bends, flexes, stretches, tapers or changes proportion under any movement or from any camera angle. Only the band's own elastic stretch is permitted, and it returns to its resting form. The last frame returns exactly to the start frame. Nothing else moves.\",\"lighting\":\"As in the start frame: three-source render lighting, near-black field, no change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no camera movement, no orbit, no zoom, no cut, no second shot, no angle change, no hands, no skeleton hands, no second limb, no extra bones, no people, no flat band replacing the shell, no strap changing shape, no strap sliding, no strap rotating, no missing peaks, no missing chrome slides, no misspelled wordmark, no emission crossing the product line, no labels, no arrows, no text, no lasers, no fire, no sparks, no external energy, no x-ray look, no cartoon look\"}",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_131257_0b1fb7fa-097a-47e4-b1a0-5df9969160ef.png",
+ "start_approved": true,
+ "approved_by": "user: 'I'VE CONFIRM PROCEED' (2026-09-29) on the Act 1 images",
+ "pinned": true,
+ "end_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_131257_0b1fb7fa-097a-47e4-b1a0-5df9969160ef.png",
+ "end_approved": true,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "the strap slides or rotates under load",
+   "prevented_by": "'the product holds station under every arrival'; NEG-PROT"
+  },
+  {
+   "risk": "glow crosses the product line",
+   "prevented_by": "NEG-PROT; ember stays dim"
+  },
+  {
+   "risk": "labels or arrows appear",
+   "prevented_by": "ANAT-NEG"
+  }
+ ],
+ "fix_note": "Fault in the motion/camera (user Fix: FIX THIS ERROR DONT CHANGE THE PRODOCT MAKE IT CONSISTENT): v1 orbited and cut to new angles, the shell turned into a flat band and a skeleton hand appeared \u2192 camera fully locked, one-pulse-per-second motion, HOLD_PROD, both ends pinned to the confirmed frame (\u00a727G rule 5)"
+}

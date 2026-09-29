@@ -96,3 +96,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - 13:50 UTC (hourly check): user Fix on NS-03a image "REMOVE THE CAMERA PHONE STYLE" — the render had the iPhone camera-app interface drawn over it (icon bar, PHOTO/VIDEO bar, shutter). GPT Image 2.5 edit 66e995eb… removed it, scene continued, same crop → To check; v1 image + its clip → Old; clip re-made after Confirm.
   Lesson for every condensed T2I from here: add "no camera app interface, no on-screen buttons, no icons, no text overlays" to AVOID (the short "Shot on an iPhone" line without CAP-FILE invites the UI).
 - 13:57 UTC: user Fixes — NS-03b "USE THE PRODUCT REFERENCE" (v1 drew an open flat band) → GPT Image 2.5 edit fb3c20d8… with back.webp + front: the product as one closed loop, pad side to camera. NS-06 "NO STRYDE STRAP ON THISE SCENE" → edit d6d87309…: chino leg rolled fully down, no strap anywhere. Both To check; v1 images + clips → Old; clips re-made after Confirm.
+- 14:08 UTC: user Fixes/Confirms — Act 1 clips confirmed: SH-02, SH-03, SH-04a/b/c, SH-05, SH-06, NS-04b, NS-07 (+ MECH-01 earlier state). Fixes:
+  MECH-02 clip "FIX THIS ERROR DONT CHANGE THE PRODOCT MAKE IT CONSISTENT" → diagnosed: v1 orbited/cut to new angles, shell became a flat band, a skeleton hand appeared → v2 pinned first+last frame to the confirmed image (§27G rule 5), camera fully locked, one pulse/s, HOLD_PROD (Kie 4d8d1660…).
+  SH-01 clip "FIX THE PROPER EXPRESSION" → v1 blank stare off to the side → v2 looks up to the patient, warm confident smile (Kie 7e7df09f…).
+  NS-05 image "FIX THE PRODUCT USE THE PRODUCT SHEET" → floppy open strap → GPT edit 2a4c78bd… real product, closed loop.
+  NS-06 frame confirmed → clip v2 (weight shift, fabric flat, no strap) (Kie 8e8ea911…).
+  Still To check: NS-03a, NS-03b, NS-05 images (clips after Confirm).
