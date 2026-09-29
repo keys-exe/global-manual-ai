@@ -139,3 +139,16 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
 - Final board storage: v5 finals were copied to the Plan board's store (sha256 matched) and removed from Final; v6 uploaded. The Final board now holds 981 MB of 1 GB: Kampo v3 HK2/HK3 (20 pieces), v4 duplicates (the 2 refused HK1 pieces + all 18 HK2/HK3 pieces, copies on the Plan board), and v6. The next re-cut needs those v4 duplicates removed first.
 - User: "the brolls stays even though the script line is done". Cause: assemble.py's §30H hold (HOLD 3 s, MIN_FLASH 2 s): 24 of 34 B-rolls ran 0.3–1.8 s past their line. The FLICKER fill (face window under --min-th 1.5 s) also ran A5-B2 over "You do not have to believe me.". Fix, **this build only** (no system change, §34): `work/linecut/assemble.py` and `work/linecut/variants.py` wrap the standard scripts with HOLD 0 and MIN_FLASH 1.0; run with `--min-th 0.8`. Checked on HK1: every B-roll now leaves on its line's last word, or in the silent pause before the next B-roll (≤0.7 s). Shortest shot 1.25 s. Finals **v7**: PASS, 166.67 / 164.63 / 163.58 s, −14.5/−14.6/−14.5 LUFS, 48 kHz.
 - Storage: Current (1.0 GB) and Plan (~0.8 GB: finals v4, v5) are nearly full, and Old is full. Added **Old Versions 2** https://claude.ai/artifact/Rztec28Gf1VxW59pXrgRyn (same template, BOARD_ROLE "old", db/assets/downloads; build doc with `boards.old2`). v6 finals were copied there (sha256 matched) and FINAL-HK1..3 docs added; v6 and all v4 duplicates except the 2 refused pieces were removed from the Final board. The Final board holds v7 plus Kampo v3 HK2/HK3 and the 2 v4 pieces.
+- User: "the broll placements are so bad not timed on the right start and end of the script line, make the brolls all full screen and not split screen". Diagnosis:
+  - base.en word timings (used by assemble.py and finish.py) ended words 0.1–0.4 s early and missed some line starts by 0.4–0.7 s (A2-M3, A4-P1, A5-P1, A5-B1), checked against medium.en.
+  - Some B-rolls were anchored mid-sentence (e.g. A2-M2 "there is a band…").
+
+  Fix, this build only:
+  - `work/linecut/assemble.py` now uses medium.en and moves each word's end to where its audio falls under −38 dBFS (capped at the next word).
+  - Every B-roll phrase in `variants.json` is widened to its whole sentence (`phrase_orig` kept); HK3-B1/B2 keep their clause split of one sentence.
+  - All 40 layouts are `full` (`layout_orig` kept).
+  - HK1-B3, A2-M1 and A2-M2 were too short for their sentence, so slowed copies are in `renders/linecut/*.slow.mp4` (1.24/1.32/1.17× longer, frame-blend).
+  - `finish.py` captions use medium.en.
+
+  Checked on the HK1 render: every cut lands 0.08–0.12 s before the sentence's first word; the out-cut is on the sentence's last word, or holds through the silent pause (≤0.6 s) into the next B-roll. Finals **v8**: PASS, −14.5/−14.6/−14.5 LUFS, 48 kHz.
+- Board: v7 copied to Old Versions 2 (sha256 matched) and removed from Final; v8 on Final; Old Versions 2 docs hold v6 and v7.

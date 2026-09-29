@@ -11,76 +11,84 @@
       "expected_s": 166.658,
       "fixes": [
         {
-          "beat": "A2-M1",
-          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
-        },
-        {
-          "beat": "A2-M3",
-          "fix": "gave back 0.03s of the skipped opening (in-point 0.37s)"
-        },
-        {
           "beat": "A2-B3",
           "fix": "gave back 0.26s of the skipped opening (in-point 0.14s)"
         },
         {
-          "beat": "A5-P1",
-          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+          "beat": "A5-B5",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
         },
         {
           "beat": "HK1-B1",
-          "fix": "FLICKER 0.71s: extended with own footage to 6.58s"
-        },
-        {
-          "beat": "A1-B3",
-          "fix": "FLICKER 0.71s: extended with own footage to 28.88s"
-        },
-        {
-          "beat": "A1-B4",
-          "fix": "FLICKER 0.46s: extended with own footage to 30.38s"
-        },
-        {
-          "beat": "A1-B5",
-          "fix": "FLICKER 0.42s: extended with own footage to 32.33s"
-        },
-        {
-          "beat": "A1-B6",
-          "fix": "FLICKER 0.67s: extended with own footage to 34.75s"
-        },
-        {
-          "beat": "A2-M2",
-          "fix": "FLICKER 0.33s: extended with own footage to 47.71s"
-        },
-        {
-          "beat": "A3-B1",
-          "fix": "FLICKER 0.42s: extended with own footage to 80.17s"
-        },
-        {
-          "beat": "A3-B2",
-          "fix": "FLICKER 0.42s: extended with own footage to 82.00s"
-        },
-        {
-          "beat": "A3-B3",
-          "fix": "FLICKER 0.42s: extended with own footage to 83.96s"
-        },
-        {
-          "beat": "A4-P2",
-          "fix": "gave back 0.32s of the skipped opening (in-point 0.08s)"
-        },
-        {
-          "beat": "A4-P2",
-          "fix": "FLICKER 0.38s: extended with own footage to 108.92s"
-        },
-        {
-          "beat": "A4-M1",
-          "fix": "FLICKER 0.46s: extended with own footage to 113.25s"
-        },
-        {
-          "beat": "A5-F1",
           "fix": "gave back 0.15s of the skipped opening (in-point 0.25s)"
         },
         {
+          "beat": "HK1-B1",
+          "fix": "FLICKER 0.62s: extended with own footage to 6.67s"
+        },
+        {
+          "beat": "HK1-B2",
+          "fix": "FLICKER 0.42s: extended with own footage to 8.62s"
+        },
+        {
+          "beat": "A1-B3",
+          "fix": "FLICKER 0.33s: extended with own footage to 28.71s"
+        },
+        {
+          "beat": "A1-B4",
+          "fix": "FLICKER 0.33s: extended with own footage to 30.38s"
+        },
+        {
+          "beat": "A1-B5",
+          "fix": "FLICKER 0.33s: extended with own footage to 32.42s"
+        },
+        {
+          "beat": "A1-B6",
+          "fix": "FLICKER 0.33s: extended with own footage to 34.75s"
+        },
+        {
+          "beat": "A2-M2",
+          "fix": "FLICKER 0.46s: slowed to 0.92x to reach 47.92s"
+        },
+        {
+          "beat": "A2-B1",
+          "fix": "FLICKER 0.29s: extended with own footage to 50.21s"
+        },
+        {
+          "beat": "A3-B1",
+          "fix": "FLICKER 0.29s: extended with own footage to 80.21s"
+        },
+        {
+          "beat": "A3-B2",
+          "fix": "FLICKER 0.29s: extended with own footage to 82.00s"
+        },
+        {
+          "beat": "A3-B3",
+          "fix": "FLICKER 0.25s: extended with own footage to 83.96s"
+        },
+        {
+          "beat": "A4-P2",
+          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
+        },
+        {
+          "beat": "A4-P2",
+          "fix": "FLICKER 0.38s: extended with own footage to 109.04s"
+        },
+        {
+          "beat": "A4-M1",
+          "fix": "FLICKER 0.29s: extended with own footage to 113.25s"
+        },
+        {
+          "beat": "A5-B3",
+          "fix": "FLICKER 0.29s: extended with own footage to 146.54s"
+        },
+        {
           "beat": "A5-F1",
-          "fix": "FLICKER 0.46s: extended with own footage to 160.88s"
+          "fix": "gave back 0.11s of the skipped opening (in-point 0.29s)"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "FLICKER 0.38s: extended with own footage to 160.92s"
         }
       ],
       "failures": [],
@@ -97,87 +105,79 @@
       "fixes": [
         {
           "beat": "HK2-B3",
-          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
-        },
-        {
-          "beat": "A2-M1",
-          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
-        },
-        {
-          "beat": "A2-M3",
-          "fix": "gave back 0.03s of the skipped opening (in-point 0.37s)"
+          "fix": "gave back 0.15s of the skipped opening (in-point 0.25s)"
         },
         {
           "beat": "A2-B3",
           "fix": "gave back 0.26s of the skipped opening (in-point 0.14s)"
         },
         {
-          "beat": "A5-P1",
-          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+          "beat": "A5-B5",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
         },
         {
           "beat": "HK2-B1",
-          "fix": "FLICKER 0.46s: extended with own footage to 7.00s"
-        },
-        {
-          "beat": "HK2-B2",
-          "fix": "gave back 0.03s of the skipped opening (in-point 0.37s)"
-        },
-        {
-          "beat": "HK2-B2",
-          "fix": "FLICKER 0.67s: extended with own footage to 9.67s"
+          "fix": "FLICKER 0.42s: extended with own footage to 7.12s"
         },
         {
           "beat": "A1-B3",
-          "fix": "FLICKER 0.71s: extended with own footage to 26.83s"
+          "fix": "FLICKER 0.33s: extended with own footage to 26.67s"
         },
         {
           "beat": "A1-B4",
-          "fix": "FLICKER 0.46s: extended with own footage to 28.33s"
+          "fix": "FLICKER 0.33s: extended with own footage to 28.33s"
         },
         {
           "beat": "A1-B5",
-          "fix": "FLICKER 0.42s: extended with own footage to 30.29s"
+          "fix": "FLICKER 0.33s: extended with own footage to 30.38s"
         },
         {
           "beat": "A1-B6",
-          "fix": "FLICKER 0.67s: extended with own footage to 32.71s"
+          "fix": "FLICKER 0.33s: extended with own footage to 32.71s"
         },
         {
           "beat": "A2-M2",
-          "fix": "FLICKER 0.33s: extended with own footage to 45.67s"
+          "fix": "FLICKER 0.46s: slowed to 0.92x to reach 45.88s"
+        },
+        {
+          "beat": "A2-B1",
+          "fix": "FLICKER 0.29s: extended with own footage to 48.17s"
         },
         {
           "beat": "A3-B1",
-          "fix": "FLICKER 0.42s: extended with own footage to 78.12s"
+          "fix": "FLICKER 0.29s: extended with own footage to 78.17s"
         },
         {
           "beat": "A3-B2",
-          "fix": "FLICKER 0.42s: extended with own footage to 79.96s"
+          "fix": "FLICKER 0.29s: extended with own footage to 79.96s"
         },
         {
           "beat": "A3-B3",
-          "fix": "FLICKER 0.42s: extended with own footage to 81.92s"
+          "fix": "FLICKER 0.25s: extended with own footage to 81.92s"
         },
         {
           "beat": "A4-P2",
-          "fix": "gave back 0.32s of the skipped opening (in-point 0.08s)"
+          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
         },
         {
           "beat": "A4-P2",
-          "fix": "FLICKER 0.38s: extended with own footage to 106.88s"
+          "fix": "FLICKER 0.38s: extended with own footage to 107.00s"
         },
         {
           "beat": "A4-M1",
-          "fix": "FLICKER 0.46s: extended with own footage to 111.21s"
+          "fix": "FLICKER 0.29s: extended with own footage to 111.21s"
+        },
+        {
+          "beat": "A5-B3",
+          "fix": "FLICKER 0.29s: extended with own footage to 144.50s"
         },
         {
           "beat": "A5-F1",
-          "fix": "gave back 0.15s of the skipped opening (in-point 0.25s)"
+          "fix": "gave back 0.11s of the skipped opening (in-point 0.29s)"
         },
         {
           "beat": "A5-F1",
-          "fix": "FLICKER 0.46s: extended with own footage to 158.83s"
+          "fix": "FLICKER 0.38s: extended with own footage to 158.88s"
         }
       ],
       "failures": [],
@@ -201,72 +201,72 @@
           "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
         },
         {
-          "beat": "A2-M1",
-          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
-        },
-        {
-          "beat": "A2-M3",
-          "fix": "gave back 0.03s of the skipped opening (in-point 0.37s)"
-        },
-        {
           "beat": "A2-B3",
           "fix": "gave back 0.26s of the skipped opening (in-point 0.14s)"
         },
         {
-          "beat": "A5-P1",
-          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+          "beat": "A5-B5",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
         },
         {
           "beat": "A1-B3",
-          "fix": "FLICKER 0.71s: extended with own footage to 25.79s"
+          "fix": "FLICKER 0.33s: extended with own footage to 25.62s"
         },
         {
           "beat": "A1-B4",
-          "fix": "FLICKER 0.46s: extended with own footage to 27.29s"
+          "fix": "FLICKER 0.33s: extended with own footage to 27.29s"
         },
         {
           "beat": "A1-B5",
-          "fix": "FLICKER 0.42s: extended with own footage to 29.25s"
+          "fix": "FLICKER 0.33s: extended with own footage to 29.33s"
         },
         {
           "beat": "A1-B6",
-          "fix": "FLICKER 0.67s: extended with own footage to 31.67s"
+          "fix": "FLICKER 0.33s: extended with own footage to 31.67s"
         },
         {
           "beat": "A2-M2",
-          "fix": "FLICKER 0.33s: extended with own footage to 44.62s"
+          "fix": "FLICKER 0.46s: slowed to 0.92x to reach 44.83s"
+        },
+        {
+          "beat": "A2-B1",
+          "fix": "FLICKER 0.29s: extended with own footage to 47.12s"
         },
         {
           "beat": "A3-B1",
-          "fix": "FLICKER 0.42s: extended with own footage to 77.08s"
+          "fix": "FLICKER 0.29s: extended with own footage to 77.12s"
         },
         {
           "beat": "A3-B2",
-          "fix": "FLICKER 0.42s: extended with own footage to 78.92s"
+          "fix": "FLICKER 0.29s: extended with own footage to 78.92s"
         },
         {
           "beat": "A3-B3",
-          "fix": "FLICKER 0.42s: extended with own footage to 80.88s"
+          "fix": "FLICKER 0.25s: extended with own footage to 80.88s"
         },
         {
           "beat": "A4-P2",
-          "fix": "gave back 0.32s of the skipped opening (in-point 0.08s)"
+          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
         },
         {
           "beat": "A4-P2",
-          "fix": "FLICKER 0.38s: extended with own footage to 105.83s"
+          "fix": "FLICKER 0.38s: extended with own footage to 105.96s"
         },
         {
           "beat": "A4-M1",
-          "fix": "FLICKER 0.46s: extended with own footage to 110.17s"
+          "fix": "FLICKER 0.29s: extended with own footage to 110.17s"
+        },
+        {
+          "beat": "A5-B3",
+          "fix": "FLICKER 0.29s: extended with own footage to 143.46s"
         },
         {
           "beat": "A5-F1",
-          "fix": "gave back 0.15s of the skipped opening (in-point 0.25s)"
+          "fix": "gave back 0.11s of the skipped opening (in-point 0.29s)"
         },
         {
           "beat": "A5-F1",
-          "fix": "FLICKER 0.46s: extended with own footage to 157.79s"
+          "fix": "FLICKER 0.38s: extended with own footage to 157.83s"
         }
       ],
       "failures": [],

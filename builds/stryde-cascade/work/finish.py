@@ -39,7 +39,7 @@ def timed_words(hook):
     for part in (hook, "BODY"):
         audio = B / f"vo/master/{part}.wav"
         sw = (B / f"vo/{part}.lines.txt").read_text(encoding="utf-8").split()
-        for s, e, w in align(sw, words(audio, "base.en")):
+        for s, e, w in align(sw, words(audio, "medium.en")):   # base.en was 0.1-0.7 s off (user 2026-09-29)
             out.append((s + off, e + off, w))
         off += snap(duration(audio))
     return out
