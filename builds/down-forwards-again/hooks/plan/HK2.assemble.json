@@ -1,0 +1,57 @@
+{
+  "master_s": 8.64,
+  "min_th_s": 1.5,
+  "edl": [
+    {
+      "beat": "HK2-02a",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK2-02a.v2.mp4",
+      "phrase": "It takes ten seconds and it is not a prescription",
+      "key": "ten",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 5.82,
+      "start": 5.7083,
+      "line_end": 8.2917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 8.625
+    }
+  ],
+  "timeline": [
+    {
+      "kind": "TH",
+      "start": 0.0,
+      "end": 5.708,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "HK2-02a",
+      "layout": "full",
+      "start": 5.708,
+      "end": 8.625
+    }
+  ],
+  "fixes": [
+    {
+      "beat": "HK2-02a",
+      "fix": "HOLD: held to 2.92s on screen"
+    }
+  ],
+  "warnings": [],
+  "failures": [],
+  "render": {
+    "file": "hooks/plan/HK2.rough.mp4",
+    "duration_s": 8.6,
+    "duration_matches_master": true,
+    "black_frames": []
+  },
+  "status": "PASS"
+}

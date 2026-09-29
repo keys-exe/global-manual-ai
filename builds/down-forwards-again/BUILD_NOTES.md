@@ -121,6 +121,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   model filled 4 s with handling) → motion = ONE straight slide up, hands flat on the shell, then hold still; band-handling negatives; preflight PASS →
   Kie ed8a6e35 (72 credits) → board To check. v1 to the Old board. A third generation of HK2-02a needs the user's go.
 
+- 2026-09-29 ~13:50 UTC: user "confirmed" → HK2-02a v2 use; all six hook videos confirmed. Hook rough cuts `assemble.py hooks/plan/HKn.plan.json`
+  (TH-HKn trimmed + the hook clips, full layout) → all PASS (length = master, no black): HK1 12.18 s (cut-ins 3.0/5.0/7.0/9.0–12.0; the 2 s holds put
+  'physio' 0.2 s and 'brace' 0.7 s ahead of their pictures; 0.2 s of doctor at the end), HK2 8.6 s, HK3 7.64 s → board HK1-CUT, HK2-CUT, HK3-CUT To check.
+
 ## Where it stands
-- **Waiting on the user:** HK2-02a video v2 — Confirm or Fix (a third generation needs their go). The other five hook videos are confirmed.
-- **Then:** hook variants assembled (assemble.py + variants.py with the TH hooks); then B-roll acts (step 7), CapCut block.
+- **Waiting on the user:** the three hook rough cuts (HK1-CUT, HK2-CUT, HK3-CUT) — the step-6 hooks gate.
+- **Then:** step 7 — body B-roll act by act (images → the user's Confirm → videos), then the finished variants (variants.py: HKn + the body), CapCut block.
