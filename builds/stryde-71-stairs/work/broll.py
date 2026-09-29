@@ -93,14 +93,14 @@ BEATS["P-01b"] = p_01b
 
 def p_02a():   # Fix 2026-09-29: "camera angle at her back and she just looking at the stairs then just leaves cause she dont want to go down"
     return seed("P-02a", "her at the top of the stairs", "everything", [
-      "Her staircase, exactly as in the attached landing and hall photos. Seen from behind her on the top landing: she — " + N["markers"] + ", exactly as in her attached reference sheet — "
+      "Her staircase, exactly as in the attached hall photo. Seen from behind her on the top landing: she — " + N["markers"] + ", exactly as in her attached reference sheet — "
       "stands at the head of the stairs with her back to the camera, the whole straight flight dropping away below her: the full-width oatmeal-beige stair carpet with its brass stair rods, the dark oak handrail, the photo wall of family portraits running down on the left, "
       "the front door closed at the bottom and the hall below dim. She has been looking down the stairs and has given up: caught just as she turns away from them, "
       "her shoulders sagging, her weight shifting back onto the landing, one hand letting go of the newel post, her head still half toward the drop. Her feet stay on the landing; she does not step down. "
       "She is wearing " + WARD["N-D1"] + ". A strip of grey light from the landing window lies across the top steps."],
       "her and the staircase", GREY,
-      "no face to camera, no stepping down, no one else, no open door, no bright sunlight, no different staircase from the landing and hall photos, no turn in the stairs, no knee brace, no product",
-      [("N sheet", REF["N"]), ("P1-LANDING plate", REF["P1"]), ("P0-PROP-N plate", REF["P0"])])
+      "no face to camera, no stepping down, no one else, no open door, no bright sunlight, no different staircase from the hall photo, no turn in the stairs, no knee brace, no product",
+      [("N sheet", REF["N"]), ("P0-PROP-N plate", REF["P0"])])   # P1 removed (user 2026-09-29)
 BEATS["P-02a"] = p_02a
 
 def p_03a():
@@ -461,10 +461,10 @@ def c_05a(): return seed("C-05a", "two cheap straps", "the curled tab", [
     R(("P2-KITCHEN plate", "P2")))
 BEATS["C-05a"] = c_05a
 def c_06a(): return seed("C-06a", "her on the landing", "the straps", [
-    "Her upstairs landing, exactly as in the attached landing photo — the photo wall behind her, the dark oak rail and newel. She — " + N["markers"] + ", exactly as in her attached reference sheet — in " + WARD["N-TODAY"] + ", "
+    "At the top of her stairs, the same staircase as in the attached hall photo — the photo wall of small framed family portraits behind her, the dark oak handrail and white balusters beside her. She — " + N["markers"] + ", exactly as in her attached reference sheet — in " + WARD["N-TODAY"] + ", "
     "stands waist-up to a propped phone and holds up two straps toward the lens, one in each hand in a bottom-edge pinch, caught lifting them a little higher, smiling. " + prod("held")],
     "her", "midday light from the landing window, bright and soft", PNEG.replace(", no second strap unless stated", "") + ", no third strap, no selfie arm",
-    R(("N sheet", "N"), ("P1-LANDING plate", "P1"), *PR_REFS["held"]))
+    R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["held"]))   # P1 removed (user 2026-09-29)
 BEATS["C-06a"] = c_06a
 def c_07a(): return seed("C-07a", "the open box", "everything", [
     "Looking straight down at her kitchen table in the morning, " + KITCH + ": the open box. " + PS.PACKAGE_LOCK + " Her hand, the cuff of her lilac long-sleeve cotton top at the wrist, sets the lid down beside the box, caught as it lands."],

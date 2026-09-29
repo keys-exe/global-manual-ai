@@ -211,6 +211,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - P1-LANDING v6 (Kie GPT Image 2 i2i from P0) was rebuilt to match P0: full-width carpet with brass stair rods, small dark frames with black-and-white/sepia portraits, the console table, the coat stand and the front door below.
   - House wording everywhere is now "full-width oatmeal-beige stair carpet with brass stair rods", not "runner".
   - P1 v7 (Fix: "still not the same as the p0 stairs"): P0 layout mirrored for the view from the top (photo wall left, balusters right, coat stand in the hall beyond the balusters, front door and console bottom right, no corridor ahead); the P0 photo-wall crop (plates/P0-photowall_crop.png) is a 2nd reference.
-  - Once P1 is confirmed, point REF["P1"] in work/broll.py at it; P-02a and C-06a use P1 as a reference.
+  - **P1-LANDING removed from the build (user 2026-09-29: "lets just remove it the p1").** All 7 versions are on the Old board, and the card and file are gone from Current. P-02a and C-06a now use P0 only (their current renders were made with P1 v5; regenerate only if the user asks). The confirmed hooks, TH and voice cards are untouched.
   - Asset ids are in broll/images/board_assets_2026-09-29.txt; Kie logs are in the scratchpad (URLs on the cards).
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
