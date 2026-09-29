@@ -2,6 +2,10 @@
 
 Manual run: the rough cuts `ROUGH-HK1/2/3` (1080×1920, 24 fps, the T4 house-cut master as the only audio) are the picture-locked base. Import each into CapCut **desktop** as its own project and add the lines below. Nothing here changes a cut, a spoken word or the pace.
 
+## Applied (2026-09-29)
+
+The user confirmed the rough cuts and asked for the finish. Every line below was applied by `edit/finish.py`, burnt into `STRYDE_THREE_REGRETS_HK1..3.mp4`, and is on the Final board as v2. The offer and end-card wordmark were moved to the top of frame (y ≈ 300) so they don't cover the box lid, the product or a face. The end card is the wordmark only until the site address arrives. To finish by hand in CapCut instead, use the rough cuts (v1) and this block.
+
 ## EDIT-STRYDE-THREE-REGRETS (the reference's grammar)
 
 - **EG01** headline banner — hook only: two lines, bold white, thin black stroke, centred at the top ~6–10% of height.
