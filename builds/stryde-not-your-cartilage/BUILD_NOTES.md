@@ -25,6 +25,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: all seven plates confirmed on the board. N-VOICE-IMG sent to Fix ("make it face in camera"). Diagnosed: my prompt turned her three-quarters to the camera. Fixed at the prompt (square to the lens, both eyes on it, turn negatives) → v2 (job 8f9d205f…), To check; v1 moved to Old. Take calls now point at v2.
 
+- 2026-09-29: N-VOICE-IMG v2 sent to Fix ("REMOVE THE PHONE AND BELONGINGS IN THE TABLE"). Diagnosed: FRAME-PROPPED's "phone leaned against something on the table in front of them" kept drawing props. Fixed at the prompt: FRAME-PROPPED replaced by a tripod out of shot, no table — she sits on a kitchen chair, hands in her lap — foreground/belongings negatives; the take motion now lifts her hand "off her lap" → v3 (job 535077f9…), To check; v2 on Old. Take calls point at v3.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the narrator frame N-VOICE-IMG v2 (paid video waits on it, §22X); script flags F2, F5, F6, F7.
+- **Waiting on the user:** Confirm/Fix the narrator frame N-VOICE-IMG v3 (paid video waits on it, §22X); script flags F2, F5, F6, F7.
 - **Next, no stop once the frame is confirmed:** Kie Kling takes G1–G3 → `voice_source.py` (medium trim, ×1.2, gate, loop ≥30s) → `elevenlabs_clone.py` `NotYourCartilage` → `tts_api.py` eleven_v4 speed ~0.85, takes on the board → `vo_trim.py` house cut per variant. Then hooks HK1-01, HK2-01, HK3-01 (step 6).
