@@ -112,7 +112,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   324 Kie credits) → board To check (generation 1 each). HK2-02a is pinned (§27G rule 5): its END frame (strap seated, hands lifting off,
   `hooks/build_hk2_end.py`, job 74bff83d) is on the board as card HK2-02a-END for the user's Confirm before its video. Kie 168,280.8.
 
+- 2026-09-29 ~13:40 UTC: user "hk2 02a should not need an end frame remove it" → ADJUST: HK2-02a not pinned (act map pin_end no). END frame card removed from
+  Current (image kept on the Old board as HK2-02a-END, unchosen). `hooks/build_hk2_video.py` → start frame only, SEAT_LOCK slide compressed, preflight PASS
+  → Kie task c54cdc14 (72 credits) → board To check.
+
 ## Where it stands
-- **Waiting on the user:** hook videos HK1-01a, HK1-02a, HK1-02b, HK1-02c, HK3-01a (generation 1) and the HK2-02a END frame — Confirm or Fix.
-- **Then:** HK2-02a video (first-and-last frame, 4 s) once its end frame is confirmed; hook variants assembled; then B-roll acts (step 7), CapCut block.
+- **Waiting on the user:** all six hook videos (HK1-01a, HK1-02a, HK1-02b, HK1-02c, HK2-02a, HK3-01a — generation 1) — Confirm or Fix.
+- **Then:** hook variants assembled (assemble.py + variants.py with the TH hooks); then B-roll acts (step 7), CapCut block.
   A second generation of any shot follows §22X (diagnose, fix at source); a third waits for the user.

@@ -101,7 +101,7 @@ Columns condensed from E4. `duration` = `pending-master` on every B-roll row (E6
 | Beat | Phrase | Type | Subject | Location | Day | Action · pace | Camera · staging · pin | Angle (height · side · scale · fg) — why | Focus | Light key | Key word | Product | Layout · EG | Model | Ledger |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | TH-HK2 | HK2-01, HK2-02 | TH | D | L-D-CONS | D-D1 | leans in a touch on 'before you come and see me'; one flat hand down on the desk on 'not a prescription' · ~155 wpm | phone on a small tripod across the desk, locked off · seated at his desk · no | eye · front · MCU · clean | eyes, medium | L · 6500K |  | absent | spine (under every B-roll) · EG01 | HeyGen Avatar V | — |
-| HK2-02a | HK2-02 | BR | P | L-P-FRONT | P-D1 | slides the closed strap up her LEFT shin and seats it under the kneecap (SEAT_LOCK) · one slide, 3s | sway · seated on the chair edge (§27G: one action, both hands on the shell) · yes | low · three-quarter · MEDIUM · clean — low = capable: ten seconds, done | product, medium | R · 6500K | ten | worn · VISIBLE (skirt, seated) · SEATING (§9B) · first appearance | pip · EG02 · EG01 | NBP | — |
+| HK2-02a | HK2-02 | BR | P | L-P-FRONT | P-D1 | slides the closed strap up her LEFT shin and seats it under the kneecap (SEAT_LOCK) · one slide, 3s | sway · seated on the chair edge (§27G: one action, both hands on the shell) · no | low · three-quarter · MEDIUM · clean — low = capable: ten seconds, done | product, medium | R · 6500K | ten | worn · VISIBLE (skirt, seated) · SEATING (§9B) · first appearance | pip · EG02 · EG01 | NBP | — |
 
 #### Hook 3
 

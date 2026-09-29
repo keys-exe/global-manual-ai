@@ -65,9 +65,10 @@ row("HK1-02c","Hook 1",["HK1-02"],"BR","P","L-P-KITCH","P-D1","the STRYDE strap 
     "shallow","product","R","drawer",product="object on the table (§15A) · never in the drawer, never in the bag",layout=CUT,model="NBP",face=True)
 # ---- HOOK 2 — against his own interest ------------------------------------------------------------------
 TH("TH-HK2", "Hook 2", ["HK2-01", "HK2-02"], "leans in a touch on 'before you come and see me'; one flat hand down on the desk on 'not a prescription'")
+# ADJUST 2026-09-29 (user: "hk2 02a should not need an end frame remove it"): pin_end no.
 # §34 2026-09-29 board Fix: "THE TEN SECONDS IT MEANS TEN SECONDS TO PUT ON THE STRYDE STRAP" → seating beat (§9B), product's first appearance
 row("HK2-02a","Hook 2",["HK2-02"],"BR","P","L-P-FRONT","P-D1","slides the closed strap up her LEFT shin and seats it under the kneecap (SEAT_LOCK)","one slide, 3s",
-    "sway","seated on the chair edge (§27G: one action, both hands on the shell)","yes","low","three-quarter","MEDIUM","clean","low = capable: ten seconds, done",
+    "sway","seated on the chair edge (§27G: one action, both hands on the shell)","no","low","three-quarter","MEDIUM","clean","low = capable: ten seconds, done",
     "medium","product","R","ten",product="worn · VISIBLE (skirt, seated) · SEATING (§9B) · first appearance",layout=PIP,model="NBP")
 # ---- HOOK 3 — the scan ------------------------------------------------------------------------------------
 row("HK3-01a","Hook 3",["HK3-01"],"BR","D hand","L-D-CONS","D-D1","drops one more knee X-ray onto the heap of scans burying his desk","one drop, 2s",
