@@ -261,7 +261,22 @@ B["B06"] = clip("B06",
            {"risk": "the glow spreads down the shin", "prevented_by": "one tight spot named, ANAT-LOAD, 'no glow spreading down the shin, no second glowing spot'"},
            {"risk": "something enters the pip's empty lower-left", "prevented_by": "leg stays where it is, locked-off camera, lower-left named empty in negatives"}])
 
-START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
+# B01a image v1 (user Confirm on the board): ANAT-B, the tendon band front-on, the spot glowing. "That band is the patellar tendon." ≈ 1.8 s → 3 s.
+B["B01a"] = clip("B01a",
+    "A premium 3D anatomical model of a single knee seen straight from the front on a near-black field, a faint glass-like body shell, "
+    "ivory bones, the kneecap at the centre and the patellar tendon running down from it to the shin as one pale band, a soft spot "
+    "glowing on the tendon just below the kneecap.",
+    "Already glowing on the first frame: a soft light traces slowly DOWN the patellar tendon band from the kneecap to the top of the shin, "
+    "once, and the spot below the kneecap swells a little brighter and settles — the model itself does not move.",
+    "no model moving, no bones moving, no glow spreading onto the shin bone, no second glowing spot, no arrows, no text, no labels, "
+    "no numbers, no product, no camera orbit, no zoom, no slow motion",
+    1.8, hi=5, anat=True,
+    risks=[{"risk": "the glow spreads down the shin", "prevented_by": "the light traces the band only, 'no glow spreading onto the shin bone'"},
+           {"risk": "the model rotates or warps", "prevented_by": "'the model itself does not move', locked-off camera, HOLD-C + NEG-WARP-C"},
+           {"risk": "a second spot appears", "prevented_by": "'no second glowing spot'"}])
+
+START = {"B01a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_185450_3c452d7b-23e8-414a-bcad-4435a876272c.png",
+         "HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
          "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
          "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_173257_512cb5a0-c05b-4ab8-af5f-723322275d70.png",
          "HK2-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_174627_a9e02dbb-2d91-4a3d-a960-2a053cdfef10.png",
