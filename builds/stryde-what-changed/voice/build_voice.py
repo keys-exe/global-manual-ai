@@ -19,12 +19,12 @@ AGE = "fine laugh lines at the outer eyes, faint soft folds from the nose to the
 STEP1 = "\n\n".join([
  S("CAM-LOCK"),
  S("FRAME-SCALE").replace("[SCALE]", "about three quarters") + " " +
- "Podcast framing: the phone on a small tripod in front of the sofa at her seated eye height, about a metre and a half away, pointing straight at her, locked off. "
- "She is framed from the middle of her thighs up, sitting in the middle of the frame with a clear band of brick wall above her head, the sofa's buttoned back and rolled arm readable on both sides of her. "
- "Her face takes about a sixth of the frame height and both eyes sit level in the upper third.",
+ "MEDIUM SHOT, NOT WIDE (user Fix 2026-09-29): the phone on a small tripod in front of the sofa at her seated eye height, about a metre away, pointing straight at her, locked off. "
+ "She is framed from the waist up — the bottom edge of the frame crosses her at the waist, her hands resting together in her lap just at the bottom of the frame — a clear band of brick wall above her head, "
+ "a little of the sofa's buttoned back and rolled arm on both sides of her. Her face takes about a quarter of the frame height and both eyes sit level in the upper third.",
  "THE SAME WOMAN exactly as in the attached reference sheet — the FACE CLOSE-UP panel of the sheet is how her face must look here: shoulder-length honey-blonde waves with darker roots tucked behind the right ear, "
  "a soft heart-shaped face with round apple cheeks, hazel-green eyes, freckles across the nose and cheeks, the small dark beauty mark high on her left cheekbone — unchanged in face, age and build. "
- "She sits on the worn cognac leather chesterfield sofa of the attached studio reference image, relaxed, one knee crossed over the other, her hands resting loosely together in her lap, "
+ "She sits on the worn cognac leather chesterfield sofa of the attached studio reference image, relaxed, her hands resting loosely together in her lap, "
  "FULL FACE TO THE CAMERA: her nose pointing straight at the lens, both eyes looking directly into the lens, shoulders square and level. Mouth closed, about to speak, a warm open look with the corners of her mouth turned very slightly up — "
  "a friendly host about to tell a guest something they'll be glad to know. Wearing the oatmeal-cream chunky cable-knit jumper and mid-blue jeans from her sheet. "
  "The black podcast microphone on its black boom arm reaches in from the right side of the frame and stops beside her chin on her left side, about a hand's width from her face, never in front of her mouth. "
@@ -38,7 +38,7 @@ STEP1 = "\n\n".join([
  "the brick behind her a stop darker, shadows open. No studio lights, the floor lamp off.",
  S("CAP-A"), S("CAP-FILE"),
  "AVOID: " + ", ".join([S("NEG-FRAME"), S("NEG-SKIN"), S("NEG-TEX"), S("NEG-FINISH"), S("NEG-M1"),
-   "no microphone in front of the mouth, no headphones, no product in frame, no text, no different woman from the reference sheet, no three-quarter view, no head turned, no eyes looking off-camera"]),
+   "no wide shot, no knees or legs in frame, no full sofa in frame, no microphone in front of the mouth, no headphones, no product in frame, no text, no different woman from the reference sheet, no three-quarter view, no head turned, no eyes looking off-camera"]),
 ])
 
 TAKES = [
