@@ -344,3 +344,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   new start images = Higgsfield edits of each confirmed HK*-T_v1 (same person, room, split framing) with the strap in ONE
   hand at real size, the inside up from the real photo, band closed (`hooks/HK*-T.v2edit.t2i.txt`, `HK*-T_v2.png`). To
   check; videos follow each Confirm (still hand, soft strap, as BR-06 v6). The bottom shots stay as confirmed.
+- Hook top images v2 **confirmed** ("confirmed all 3") → videos sd5: Seedance 2.5 via Kie, 6s, @image1 = the confirmed
+  one-hand frame, @image2 = back_real.jpg, no @video1 (the old turn-the-strap motion); hand still, soft strap
+  (`hooks/HK*-T.seedance.v4.txt`, preflight PASS). 378 Kie credits each. To check. The edit is pre-wired:
+  `final/make_hooks.py` tops → sd5, plans' BR-06 → `body/BR-06_video_v6.mp4` (confirmed). Rebuild after the user's check.

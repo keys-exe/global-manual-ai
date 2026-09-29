@@ -11,10 +11,10 @@ MDIR = "master2" if "--master2" in sys.argv else "master"   # master2 = the slow
 AUDIO = lambda hk: B / f"vo/master2/Identity-Narrator_master2_{hk}.mp3" if MDIR == "master2" else VO / f"{MASTERS[hk]}.mp4"
 CLEAN = "--clean" in sys.argv     # no caption: finish.py burns the hook caption (ad style, 2026-09-28)
 MASTERS = {"HK1": "b8db26a0d46e7635e8ef63afc04dff92", "HK2": "fa5e2defd2333a6e04b2c49559892b72", "HK3": "f67ee06f7b67c8bd10a8f5aa5a666ebb"}
-CLIPS = {  # board picks (status use), 2026-09-28
-    "HK1": ("HK1-T_video_sd1.mp4", "HK1-B_video_v2.mp4"),
-    "HK2": ("HK2-T_video_sd1.mp4", "HK2-B_video_sd2.mp4"),
-    "HK3": ("HK3-T_video_sd1b.mp4", "HK3-B_video_sd1.mp4"),
+CLIPS = {  # board picks; tops = sd5 (2026-09-29 redo, one hand, real inside)
+    "HK1": ("HK1-T_video_sd5.mp4", "HK1-B_video_v2.mp4"),
+    "HK2": ("HK2-T_video_sd5.mp4", "HK2-B_video_sd2.mp4"),
+    "HK3": ("HK3-T_video_sd5.mp4", "HK3-B_video_sd1.mp4"),
 }
 SKIP = 0.4   # §30H: the start image's static opening
 W, H = 1080, 1920

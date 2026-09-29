@@ -1,0 +1,39 @@
+{
+ "beat": "HK2-T",
+ "connector": "seedance",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "@image1 is the opening frame: the clip opens on exactly this framing, light and camera position, and keeps it. @image2 is a real photo of the inside of the strap: a mid-grey grooved pad with one smooth comma-shaped raised bump, exactly as shown.\n\nThe man, in his work gloves, holds the strap out to the camera in one hand, resting across the open palm, the inside facing the camera the whole clip. The hand stays almost completely still, only the faint natural micro-movement of someone holding still: no turning, no tilting, no lifting. The strap is soft rubber and rests naturally in the hand with a slight give; the band stays one closed loop behind the hand. The thumb stays off the pad. The face stays cropped at the chin. The camera is handheld and nearly still. No text, no music, no speech.",
+ "duration": 6,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": "HK2-T_v2.png",
+ "start_approved": true,
+ "pinned": false,
+ "files": [
+  "x",
+  "x",
+  "x",
+  "x"
+ ],
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "subject_motion": "in_place",
+ "pace": "near-still",
+ "risks": [
+  {
+   "risk": "hand turns the strap",
+   "prevented_by": "no motion reference + 'no turning, no tilting'"
+  },
+  {
+   "risk": "pad looks wrong (plain / straight ridge)",
+   "prevented_by": "@image2 = real photo of the inside"
+  },
+  {
+   "risk": "strap looks stiff or morphs",
+   "prevented_by": "soft rubber resting naturally, keeps the start frame's details"
+  }
+ ],
+ "fix_note": "Q4 (motion/frame): the old top shots turned the strap two-handed from a front-on frame \u2192 new confirmed one-hand frame showing the inside (real photo) + near-still motion, no @video1 turn reference",
+ "user_go": "user 2026-09-29: 'we will re do all the hooks too' \u2192 top shots like BR-06; 'confirmed all 3' (images v2)"
+}
