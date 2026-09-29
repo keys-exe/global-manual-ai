@@ -1,0 +1,12 @@
+{"taskId": "800927cbd9cc713c2c5e29feef2252e8", "created": true}
+{
+  "taskId": "800927cbd9cc713c2c5e29feef2252e8",
+  "state": "success",
+  "credits": 72.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/800927cbd9cc713c2c5e29feef2252e8_1_1790695881_2763.mp4"
+  ],
+  "saved": "hooks/video/HK1-01_v1.mp4",
+  "model": "kling-3.0/video"
+}

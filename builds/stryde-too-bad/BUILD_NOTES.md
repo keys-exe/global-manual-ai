@@ -36,6 +36,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - 2026-09-29: user "CONFIRMED PROCEED" — **VO locked on T8** for HK1, BODY1, HK2, BODY2 (`vo/cut/T8_V1.mp3`, `T8_V2.mp3` are the masters; 55.38s / 54.69s). Step 6: hook start images HK1-01 (NBP, refs front+back product photos, Denise sheet, lounge plate) and HK2-01 (NB2, Alan sheet, kitchen plate) — `hooks/build_hooks.py`, refs `hooks/refs.json` — on the board To check. Jobs report nano_banana_2 / nano_banana_flash.
 
 ## Where it stands
-- **Hooks, 2026-09-29:** HK2-01 image and clip v1 confirmed (Kling 3.0 on Kie task b080e98e…, 4.04 s, 72 credits). HK1-01 v2 image confirmed (after the "WRONG PRODUCT" Fix: EXACT SAME OBJECT line, bottom-edge pinch, block negatives). HK1-01 is a pin_end beat (act map: product turns, §27G rule 5) → end frame HK1-01-END v1 made (Higgsfield job 5674b038…, the v2 frame with the wrist turned ~20°), on the board to check. The HK1-01 clip call (`hooks/video/HK1-01.call.json`, 4 s, 2,483 chars) passes preflight except "end image approved" — it goes the turn the end frame is confirmed.
-- **Waiting on the user:** Confirm/Fix HK1-01-END; script flags F2, F4, F5, F7, F8, F9.
-- **Next:** HK1-01 clip (pinned start + end); then the body B-roll (29 beats).
+- **Hooks, 2026-09-29:** HK2-01 image and clip v1 confirmed (Kie task b080e98e…, 4.04 s, 72 credits). HK1-01 v2 image confirmed (after the "WRONG PRODUCT" Fix: EXACT SAME OBJECT line, bottom-edge pinch, block negatives). HK1-01 is pin_end (act map: product turns, §27G rule 5): end frame HK1-01-END v1 (Higgsfield job 5674b038…) confirmed by the user ("CONFIRMED PROCEED"); pinned clip v1 made (Kie task 800927cb…, 4.04 s, 72 credits, preflight PASS), on the board to check.
+- **Waiting on the user:** Confirm/Fix the HK1-01 clip; script flags F2, F4, F5, F7, F8, F9.
+- **Next:** the body B-roll, Act 1 first (20 beats in Act 1, 9 in Act 2: start images, then clips; MECH renders; CARD-12b).

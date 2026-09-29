@@ -12,7 +12,7 @@
  "start_approved": true,
  "pinned": true,
  "end_image": "hooks/HK1-01-END_v1.png",
- "end_approved": false,
+ "end_approved": true,
  "pace": "unhurried",
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
