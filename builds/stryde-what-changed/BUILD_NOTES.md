@@ -97,5 +97,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   from above and behind on Maureen's stairs, her plimsoll landing on the one worn pale patch at the centre of a tread, every tread
   worn the same — forty years of steps (refs R1 + P1), job 1206e3e7 → To check. Replaced versions (HK3-a v1 clip; HK3-b v1 image + clip)
   moved to the Old board, deleted from Current.
-- **Where it stands:** waiting on the user's check of the HK3-a v2 clip and the HK3-b v2 image; then the HK3-b clip (one step down onto
-  the worn spot), then step 7 body B-roll, Act 1 images (12 beats).
+- User Fixes again: HK3-a "FASTER WALKING, NOT SLOW MO" (on the image field; the image is fine) → the first note "WALKING/ STEPPING
+  FAST" was a request FOR a fast walk, misread as too fast in v2. v3 clip prompt written (`clips.py`: brisk real-time walk, about two
+  steps a second, five or six steps, slow-motion negatives) — NOT SENT: a third video generation of one shot waits for the user's go
+  (§22X); card left on `regenerate`. HK3-b "ANATOMY BROLL HERE" → anatomy again, a fourth look: low front three-quarter, knee bent under
+  a landing, spot hot (act map + `beats.py`, angles.py PASS), v3 job 15bd1d26 → To check; v2 (worn stairs) moved to Old.
+- **Where it stands:** waiting on the user's go for the HK3-a third clip and their check of the HK3-b v3 image; then the HK3-b clip,
+  then step 7 body B-roll, Act 1 images (12 beats).

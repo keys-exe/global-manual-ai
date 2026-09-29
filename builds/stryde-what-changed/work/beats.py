@@ -210,25 +210,14 @@ B["HK3-a"] = (NB2, ["R1", "P3"], photo([
     "no face in frame, no head, no torso above the waist, no product anywhere, no knee strap, no knee support, no walking stick, no dog, "
     "no second person, no house numbers, no readable signs, no number plates, no logos on the plimsolls, no wrong number of legs"))
 
-# HK3-b v2 — user Fix "GIVE ME BETTER DIFFERENT BROLL" (was a whole-leg anatomy render): forty years of steps shown as wear —
-# one pale worn spot at the centre of every tread; her plimsoll landing on it.
-B["HK3-b"] = (NB2, ["R1", "P1"], photo([
-    "A snapshot from a phone held high on the landing, looking down the straight flight past her. She is coming DOWN her stairs, seen from "
-    "above and a little behind, caught mid-step: her right plimsoll just landing flat on the next tread down, her left foot still on the "
-    "tread above, her left hand on the oak handrail. THE FRAME IS CROPPED JUST ABOVE HER KNEES — only her skirt hem, the backs of her bare "
-    "knees and calves, her plimsolls and her hand on the rail are in frame; her body above the skirt hem, her head and face are not in the "
-    "picture. The stairs run away below her down to the hall floor. THE CARPET TELLS THE STORY: on every tread the oatmeal wool carpet is "
-    "worn thin and pale in one oval patch at its centre, exactly where a foot lands, the pile flattened and the weave showing through, "
-    "the edges of each tread still thick and unworn — the same one worn spot repeated on every step down the flight, forty years of "
-    "footsteps. Her plimsoll lands squarely on the worn patch of its tread.",
-    R1_BODY + " " + R1_LEGS + " Wearing a navy cotton A-line skirt ending just above the knee and white canvas plimsolls, plain, no logo.",
-    M_STAIRS,
-    angle("HK3-b", "her feet and the worn treads below her"),
-    focus("her landing plimsoll and the worn patch under it", deep=False).replace("the room behind", "the flight below"),
-    light("M-GREY-L", "her legs and the treads"), colour("M-STAIRS-AM")],
-    "no face in frame, no head, no torso, no product anywhere, no knee strap, no knee support, no walking stick, no stairlift, "
-    "no second person, no holes in the carpet, no stains, no dirt, no rips, no worn patch at the tread edges, no text, no logos on the plimsolls, "
-    "no person going up the stairs, no wrong number of legs"))
+# HK3-b v3 — user Fix "ANATOMY BROLL HERE" (after the worn-stairs v2): anatomy, a look not used yet — low front three-quarter,
+# the knee bent mid-step as the foot lands, the one spot hot.
+B["HK3-b"] = (NB2, [], anat(
+    "Seen from a low front three-quarter angle, close: the knee bent under a landing step, the foot below it just striking the ground out of frame and the "
+    "thigh above angled forward, the whole weight of the body coming down through the joint. The kneecap sits in the upper middle of the "
+    "frame and the spot just below it is the hottest point in the picture. " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from a low front three-quarter angle looking up at the bent knee, the joint large in the middle of the frame, the lower "
+         "thigh above and the shin angling down towards the landing foot"))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
