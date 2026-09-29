@@ -146,6 +146,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   replaced version moved to the Old board. P8-MALL was already 16:9 on GPT Image 2 (v3). Task ids in `plates/jobs.json` (`*.16x9`).
   Images already confirmed from the old plates (cast, N-VOICE-IMG) are left as they are.
 
+- 2026-09-29 12:20 UTC (hourly Fix check): three board Fixes on Kie GPT Image 2, 16:9 —
+  **P0** "remove the floor mat" → v3, image-to-image edit of v2 with the rug taken out (prompt `P0-PROP-N.v3.prompt.txt`; the rug also
+  removed from `build_plates.py`). **P1** "use the p0 as reference" → v5 from P0 v3; the v3 prompt's own photo-wall description
+  (black-and-white/sepia only, "no colour graduation portraits") fought P0's wall, so v5 takes the photo wall and every shared finish from
+  the reference instead of describing it (`P1-LANDING.v5.prompt.txt`). **P8** "it feels so empty" → v4 with a normal Sunday crowd in the
+  middle distance (walkway, concourse, bench, kiosk, open lit shops), the staircase itself clear (`build_plates.py` TAIL now takes a
+  people clause). All To check; replaced versions on the Old board.
+
 ## Where it stands
 - **Voice stage done** (2026-09-29): VO T2 locked (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`), TH-01…16 (Avatar V render of T2) confirmed.
 - **Step 6 — hooks (Seedance, V7.68 ingredients):** waiting on the user's Confirm of the 4 outfit info cards. Then: Seedance Hook A on Kie

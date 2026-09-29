@@ -21,5 +21,8 @@
  "P4-STORE.16x9": "kie:e174ba54b3ec18a1b93cccf0ae91f1e6",
  "P5-CHURCH.16x9": "kie:8b92178ef14a33c9ccc9f3c44c22411f",
  "P6-STREET.16x9": "kie:0180fe7e58a273a34c0e4ded3865a983",
- "P7-CLINIC.16x9": "kie:26bcf0a749e787386af9780de9b255a0"
+ "P7-CLINIC.16x9": "kie:26bcf0a749e787386af9780de9b255a0",
+ "P0-PROP-N.v3": "kie:ddc1d0365404ef88ba82cbdcb7ddbfda",
+ "P1-LANDING.v5": "kie:6f7e920172bb85d41a39dc1b86af566c",
+ "P8-MALL.v4": "kie:dcb8eb5a994d1ab678bfe5d2bda65ae3"
 }
