@@ -211,6 +211,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - P1-LANDING v6 (Kie GPT Image 2 i2i from P0) was rebuilt to match P0: full-width carpet with brass stair rods, small dark frames with black-and-white/sepia portraits, the console table, the coat stand and the front door below.
   - House wording everywhere is now "full-width oatmeal-beige stair carpet with brass stair rods", not "runner".
   - P1 v7 (Fix: "still not the same as the p0 stairs"): P0 layout mirrored for the view from the top (photo wall left, balusters right, coat stand in the hall beyond the balusters, front door and console bottom right, no corridor ahead); the P0 photo-wall crop (plates/P0-photowall_crop.png) is a 2nd reference.
+  - **Fix round 3 (2026-09-29), 27 images on nano-banana-pro (Kie).** Root causes found:
+    - (a) broll.py used only her face markers and never "a Black American woman … deep brown skin". Now NID/C1ID carry the skin line; the seed adds a skin line and "no white woman" on every N beat.
+    - (b) The product size was never stated on worn shots. PS.SIZE_WORN is now added; the held shots state the size against the hand; the box shot states it against the forearm.
+    - (c) The montage showed people putting the strap on. PR-01a/b/c are now productive: mulch up the porch steps, a wheelbarrow in the garden, a stepladder in the garage. C-07a is her heading out the door.
+    - (d) M-01a's overhead camera is replaced by a companion's-chair eye-level view.
+    - (e) M-05a now points at the patellar tendon, not the kneecap.
+  - **R-07a/b/c merged into ONE B-roll going down the stairs** (user). R-07a carries all three lines; R-07b and R-07c were moved to the Old board and removed from Current and the act map.
+  - P-03b uses the new P-03a v3 as its brace reference. T-02a uses T-01b as its reference for Loretta's dress.
   - **P1-LANDING removed from the build (user 2026-09-29: "lets just remove it the p1").** All 7 versions are on the Old board, and the card and file are gone from Current. P-02a and C-06a now use P0 only (their current renders were made with P1 v5; regenerate only if the user asks). The confirmed hooks, TH and voice cards are untouched.
   - Asset ids are in broll/images/board_assets_2026-09-29.txt; Kie logs are in the scratchpad (URLs on the cards).
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
