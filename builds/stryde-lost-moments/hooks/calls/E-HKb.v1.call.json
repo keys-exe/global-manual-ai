@@ -1,0 +1,33 @@
+{
+ "beat": "E-HKb",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"e_hkb\",\"subject\":\"Knee-height three-quarter view from the outer side of the bent right knee of a Black British man of seventy sitting on the front of a brown patterned sofa, grey shorts, navy slipper, the black knee strap snug just under his kneecap, the red rug and wooden train track soft behind. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame.\"},\"motion\":\"Already moving on the first frame: he slides forward off the sofa edge and lowers himself easily down onto his LEFT knee on the rug in one smooth movement, about two seconds; his strapped right knee bends deeply, foot flat on the rug, and stays in frame the whole time, then he settles, steady and pain-free, down at the children's level. The camera stays where it is. The strap keeps its exact shape, size and wordmark in every frame, moves only with the leg and stays exactly under the kneecap; its rigid shell never bends. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly \u2014 motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no camera travelling with the subject, no flipping of the product, no strap sliding on the leg, no product covering the kneecap, no second unit, no hands on the strap, no wince, no hesitation, no wobble, no strapped knee touching the floor, no knee leaving the frame, no fall, no extra legs, no feet merging, no music, no speech\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_070752_9f85693a-3d62-4312-aeae-58d8ae40a29e.png",
+ "start_approved": true,
+ "approved_by": "user: Confirm on the board + 'CONFIRM HOOK 5' (2026-09-29)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "legs warp or merge as he lowers down",
+   "prevented_by": "one movement at a countable pace (about two seconds); 'no extra legs, no feet merging'; HOLD clause"
+  },
+  {
+   "risk": "the strap slides, bends or hits the floor",
+   "prevented_by": "rigid-product clause; 'onto his LEFT knee'; 'no strapped knee touching the floor, no strap sliding on the leg'"
+  },
+  {
+   "risk": "reads as a fall or struggle, not ease",
+   "prevented_by": "'easily \u2026 smooth \u2026 steady and pain-free'; 'no wince, no hesitation, no wobble, no fall'"
+  }
+ ]
+}

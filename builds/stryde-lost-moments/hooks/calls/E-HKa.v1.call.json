@@ -1,0 +1,33 @@
+{
+ "beat": "E-HKa",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"e_hka\",\"subject\":\"Seen from above, three-quarter from the front-left: a Black British man of seventy, heavyset, burgundy cardigan, grey shorts, perched on the front edge of a brown patterned sofa in a terracotta living room, both hands clamped on his knees; his granddaughter (six, yellow T-shirt) and grandson (four, striped T-shirt) kneel at a wooden train track on the red rug below him. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame.\"},\"motion\":\"Already moving on the first frame: he leans forward to get down to the floor with the children and gets only a little way \u2014 his right knee stops him; he winces, grips both knees harder and sinks slowly back onto the sofa edge, shoulders dropping, looking down at them. About two seconds for the lean and the stop, then he holds still, defeated. The children keep playing with the train below, small movements only, never looking up. The camera stays where it is. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly \u2014 motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no camera travelling with the subject, no man reaching the floor, no man kneeling, no man standing up, no smiling man, no knee strap, no children looking up, no children leaving the rug, no extra children, no adult with the children, no train track moving by itself, no extra fingers, no merged hands, no music, no speech\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_070753_27963c08-22a2-42cd-a1c5-460bdfb761cc.png",
+ "start_approved": true,
+ "approved_by": "user: Confirm on the board + 'CONFIRM HOOK 5' (2026-09-29)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "he reaches the floor or stands, losing the 'can't' beat",
+   "prevented_by": "'gets only a little way \u2026 sinks slowly back'; 'no man reaching the floor, no man kneeling, no man standing up'"
+  },
+  {
+   "risk": "the children warp, multiply or look up",
+   "prevented_by": "'small movements only, never looking up'; 'no extra children, no children looking up'; HOLD clause"
+  },
+  {
+   "risk": "hands fuse on the knees",
+   "prevented_by": "hands stay on the knees the whole time; 'no extra fingers, no merged hands'"
+  }
+ ]
+}
