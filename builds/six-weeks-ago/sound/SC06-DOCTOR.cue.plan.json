@@ -1,0 +1,45 @@
+{
+  "positive_global_styles": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif",
+    "instrumental",
+    "slow tempo"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "Same X-ray",
+      "positive_local_styles": [
+        "light quizzical piano",
+        "gentle curiosity",
+        "sparse"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 15700,
+      "lines": []
+    },
+    {
+      "section_name": "Keep wearing it",
+      "positive_local_styles": [
+        "warm piano motif with soft strings",
+        "quiet triumph, gentle smile"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 22533,
+      "lines": []
+    }
+  ]
+}

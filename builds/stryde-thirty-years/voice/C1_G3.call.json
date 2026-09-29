@@ -1,0 +1,33 @@
+{
+ "beat": "VOICE-G3",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "dialogue",
+ "prompt": "{\"shot\":\"G3.\",\"dialogue\":\"Seventeen times your bodyweight goes through one spot below your kneecap. Every step.\",\"delivery\":\"A man of sixty-two from the Black Country, Walsall, a dry, flat, slightly nasal voice, level and unhurried but never slow. Statements fall and stop dead, no lift at the end; Black Country vowels, \\\"I\\\" close to \\\"oi\\\", dropped h's, glottal t's. A short dry sniff of a laugh before a put-down. Stress: slower and flatter on the turn, never louder. To camera, a plain fact, said often; stress on 'Seventeen'. Audio must sound like a phone microphone recording in a room, not a studio voice track: audible breath before the first word and between phrases, mouth and lip noise, sibilance present and un-de-essed, plosives on hard consonants, level drifting slightly across the take rather than sitting compressed and even. No studio compression, no noise gate, no reverb plate, no post EQ.\",\"subject\":\"As in the start frame.\",\"camera\":{\"movement\":\"Phone held at arm's length in one hand. Faster, tighter jitter than a two-handed hold, carried in the wrist. Subject scale changes very slightly across the take as the elbow settles. Frame drifts gradually downward, uncorrected. Still drifting on the final frame.\",\"framing\":\"SELFIE as in the start frame.\"},\"motion\":\"Take one small quick inhale and begin speaking as it finishes — the first word lands within the first half second of the clip, no settle, no glance, no held beat before speech. Eyes on lens. Jaw-carried speech, visibly dropping on open vowels, lips shaping over it. Lips fully close on the exact word 'step', pulling slightly to the right corner. After the final word the lips close and the jaw settles. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no static camera, no camera coming to rest, no music, no second voice\"}",
+ "duration": 10,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://s15-kling.klingai.com/kimg/EMXN1y8qTAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoyYWdlbnRfdXBsb2FkLzE3OTA1OTAwMjYvQnpOM2phOG52cy9jMV9zdGVwMV92MS5wbmc.origin?x-kcdn-pid=112372",
+ "start_approved": true,
+ "pinned": false,
+ "dialogue": "Seventeen times your bodyweight goes through one spot below your kneecap. Every step.",
+ "script_line": "Seventeen times your bodyweight goes through one spot below your kneecap. Every step.",
+ "pace": "brisk",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "voice drifts from VOICE-MAKER (accent, age)",
+   "prevented_by": "VOICE-MAKER verbatim first in delivery; same image and string in all three takes; same-voice gate in voice_source.py"
+  },
+  {
+   "risk": "mouth warps or teeth slab",
+   "prevented_by": "MOUTH-C with closure word; TEETH-A in the start frame; NEG-WARP-C"
+  },
+  {
+   "risk": "a settled static camera reads as fake, or the frame changes",
+   "prevented_by": "RIG-R2 selfie drift + NEG-CAM-TH; HOLD-C; INHERIT-CAP"
+  }
+ ]
+}

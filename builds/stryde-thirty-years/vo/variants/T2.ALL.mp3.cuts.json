@@ -1,0 +1,64 @@
+{
+ "src": "variants/T2.ALL.mp3",
+ "duration": 151.031,
+ "cuts": [
+  10.41,
+  16.86,
+  23.89
+ ],
+ "ranges": {
+  "HK1": [
+   0.0,
+   10.41
+  ],
+  "HK2": [
+   10.41,
+   16.86
+  ],
+  "HK3": [
+   16.86,
+   23.89
+  ],
+  "BODY": [
+   23.89,
+   151.031
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "centimetres",
+   "centimeters"
+  ],
+  [
+   "replace",
+   "centimetres",
+   "centimeters"
+  ],
+  [
+   "replace",
+   "silicone",
+   "silicon"
+  ],
+  [
+   "replace",
+   "stryde",
+   "stride"
+  ],
+  [
+   "delete",
+   "two hundred thousand",
+   ""
+  ],
+  [
+   "replace",
+   "stryde",
+   "stride"
+  ]
+ ]
+}

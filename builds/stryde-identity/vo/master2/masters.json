@@ -1,0 +1,57 @@
+{
+ "HK1": {
+  "duration_s": 63.83,
+  "words": [
+   [
+    "replace",
+    "silicone",
+    "silicon"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ]
+  ]
+ },
+ "HK2": {
+  "duration_s": 64.09,
+  "words": [
+   [
+    "replace",
+    "orthopaedic",
+    "orthopedic"
+   ],
+   [
+    "replace",
+    "silicone",
+    "silicon"
+   ],
+   [
+    "replace",
+    "orthopaedic",
+    "orthopedic"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ]
+  ]
+ },
+ "HK3": {
+  "duration_s": 64.12,
+  "words": [
+   [
+    "replace",
+    "silicone",
+    "silicon"
+   ],
+   [
+    "replace",
+    "two hundred thousand",
+    "200 000"
+   ]
+  ]
+ }
+}

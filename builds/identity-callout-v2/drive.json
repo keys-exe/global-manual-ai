@@ -1,0 +1,16 @@
+{
+  "parent": "1XQFkRALaITCh1p2v3Dt8Oc--KIf4Y3kM",
+  "brand": {"name": "STRYDE", "id": "1MG81pjTPpj6qSJsJzKVQzcNcuyik8Nkc"},
+  "task": {"title": "C - VID | AI VO | TOF | Identity Callout | New | A Must For V2", "id": "1tKlZFjNApDMf5U_q3qFPcRyGZLQsVcwE"},
+  "output": {
+    "root": "1zHOeWnm8wycirO80fuulx-Oy_ZqzHbSE",
+    "01_ABSORPTION": "1OMiFpfomdfbBv-h1Sk8zrwSzwgvqIMTC",
+    "02_CAST": "1a2G3EO4D4dp_2qWQpAPhZNX5t0DxkBBs",
+    "03_LOCATIONS": "1qCClneVV5vk7qlBhRiJlRlMFEBK_MAqg",
+    "04_VOICE": "1wCHVeuyiz5OnJcFlXqh3TW__qyys1HJt",
+    "05_HOOKS": "1bXf-CCH57KqQYDpBisJ3zIh9wDoSkFk9",
+    "06_TALKING_HEADS": "1w7JOJR-HqgTgs_jv-9BXOOUy6gnzyxYm",
+    "07_BROLL": "1O5TuiW3EmjIBy0Q91Ub-8uUGPYgp3HNa",
+    "08_EDIT": "1qOeB-mvWPHnxe-tCF3mrVycJ4tL-gVRX"
+  }
+}

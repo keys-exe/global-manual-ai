@@ -4,8 +4,9 @@
 Why not trim.py (transcript word edges): Whisper ends words early (clips the decay of the last
 word) and starts them early (swallows the inhale into the word). Here:
   * frames every 10 ms: level (dBFS), spectral centroid, flatness, share of energy 80–400 Hz
-  * KEEP = level above FLOOR (-38 dBFS) — every word keeps its audible body (the user's reference cut
-    ends words at ~-38/-40 dB); quieter decay and room tail go
+  * KEEP = level above FLOOR (-50 dBFS) — every word is kept until it has finished: its whole decay rings
+    out, then RELEASE (80 ms) more and a FADE (60 ms) fade-out (correction 2026-09-28, user: "let it finish
+    what she is saying, don't cut the word"; the old -38 dB edge with a 6 ms fade clipped word endings)
   * BREATH = a run >= BREATH_MIN (0.12 s) of frames that are quiet (-62..-34 dB), noise-like
     (flatness >= 0.18), mid-band (centroid 1.2–3.4 kHz) and not voiced-low (80–400 Hz share < 0.18).
     Sibilants (centroid > 3.4 kHz), stop releases (< 0.12 s) and word decays (low-band share) are not
@@ -14,13 +15,15 @@ word) and starts them early (swallows the inhale into the word). Here:
     script): mid-phrase fricatives like the "th" of "through" match the breath profile and must stay.
   * silences shorter than MERGE (0.12 s) stay as they are (stop closures inside words);
     longer ones become PAUSE_STOP (0.45 s) after . ? !, PAUSE_COMMA (0.20 s) after , ; : and
-    PAUSE_WORD (0.01 s) elsewhere — never longer than the silence the take had there. Natural pauses
+    PAUSE_WORD (0.6 s) elsewhere — never longer than the silence the take had there, so a pause inside a
+    phrase (the speaker not done talking) is never shortened, only dead air over 0.6 s. Natural pauses
     are kept (correction 2026-09-28, user: "the trim is too fast"); the 2026-09-26 butt-join cut is retired.
     Phrase ends are the only thing taken from the transcript.
   * pace: words / duration of the result is reported as `wpm`; above --max-wpm (default 210) it FAILS —
     the take is re-voiced slower (§22U step 9), never sped up or slowed down here. A part under 30s
     (a hook) is gated together with its body, so its own reading is reported, not failed.
-  * head: 10 ms before the first kept frame; tail: + 20 ms after the last kept frame, 20 ms fade.
+  * head: 10 ms before the first kept frame; every word: + RELEASE after its last kept frame, FADE fade-out
+    (never into the next word); the final word: + TAIL (150 ms), 100 ms fade.
   * Hook variants: trim the raw hook + raw body joined (one pass), so the seam is cut like every other join.
 Report + verification on the output: breaths left, tail level, gaps > 0.4 s.
 """
@@ -28,10 +31,11 @@ import argparse, json, subprocess, sys
 import numpy as np, imageio_ffmpeg
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 SR, HOP, WIN = 16000, 160, 480
-# House cut (V7.65.0, correction 2026-09-28): word edges and breaths as the user's 2026-09-26 reference
-# edit (tails to ~-38 dB, no breaths); pauses restored — sentence 0.45 s, comma 0.20 s.
-FLOOR, BREATH_MIN, MERGE = -38.0, 0.12, 0.12
-PAUSE_STOP, PAUSE_COMMA, PAUSE_WORD, HEAD, TAIL = 0.45, 0.20, 0.01, 0.01, 0.02
+# House cut (V7.65.0, corrections 2026-09-28): no breaths; pauses restored — sentence 0.45 s, comma 0.20 s,
+# inside a phrase as voiced; no tight cuts — every word rings out to -50 dB + 80 ms, 60 ms fade.
+FLOOR, BREATH_MIN, MERGE = -50.0, 0.12, 0.12
+PAUSE_STOP, PAUSE_COMMA, PAUSE_WORD, HEAD, TAIL = 0.45, 0.20, 0.60, 0.01, 0.15
+RELEASE, FADE, FADE_IN, FADE_LAST = 0.08, 0.06, 0.01, 0.10
 MAX_WPM = 210
 
 def load(path, sr=SR):
@@ -112,7 +116,8 @@ def render(src, dst, spans, sents, total):
     pieces, prev = [], None
     for k, (a, b) in enumerate(spans):
         if k == 0: a = max(0.0, a - HEAD)
-        if k == len(spans) - 1: b = min(total, b + TAIL)
+        # let the word finish: its release is kept, never running into the next word
+        b = min(total, b + TAIL) if k == len(spans) - 1 else min(b + RELEASE, spans[k + 1][0])
         if prev is not None:
             kinds = [k for e, k in sents if prev - 0.4 <= e <= a + 0.05]
             want = PAUSE_STOP if "stop" in kinds else PAUSE_COMMA if kinds else PAUSE_WORD
@@ -123,8 +128,9 @@ def render(src, dst, spans, sents, total):
         if pc[0] == "seg":
             a, b = pc[1], pc[2]; d = b - a
             last = n == len(pieces) - 1
-            fade_out = f",afade=t=out:st={max(0, d - 0.02):.4f}:d=0.02" if last else f",afade=t=out:st={max(0, d - 0.006):.4f}:d=0.006"
-            parts.append(f"[0:a]atrim={a:.4f}:{b:.4f},asetpts=PTS-STARTPTS,aresample=44100,aformat=channel_layouts=mono,afade=t=in:d=0.006{fade_out}[s{n}];")
+            f = min(FADE_LAST if last else FADE, d / 2)
+            fade_out = f",afade=t=out:st={max(0, d - f):.4f}:d={f:.4f}"
+            parts.append(f"[0:a]atrim={a:.4f}:{b:.4f},asetpts=PTS-STARTPTS,aresample=44100,aformat=channel_layouts=mono,afade=t=in:d={min(FADE_IN, d / 2):.4f}{fade_out}[s{n}];")
         else:
             parts.append(f"anullsrc=r=44100:cl=mono,atrim=0:{max(0.001, pc[1]):.4f}[s{n}];")
         labels.append(f"[s{n}]")

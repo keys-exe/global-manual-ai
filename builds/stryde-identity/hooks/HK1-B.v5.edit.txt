@@ -1,0 +1,1 @@
+(placement fix, edit of HK1-B image v2 b0f89672; refs: placement front f5263ed7, bent 8a8979ac, product front eac4d58d) — see board imagePrompt

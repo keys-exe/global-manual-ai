@@ -1,0 +1,25 @@
+{
+ "BR-22": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "P1",
+   "package_open",
+   "front"
+  ],
+  "prompt": "The look of the iPhone 17 Pro Max main camera at 24mm equivalent, handheld, everything on automatic: an ordinary, candid snapshot. The camera itself is never in the picture.\n\nA close-up from a slightly high angle on the kitchen table with its checked cloth: the closed matte-black stryde box sits alone on the table, lid firmly on, centred in the frame, soft window light gliding across its matte lid. No one is touching it. THE SAME KITCHEN exactly as in the first attached image, soft behind.\n\nA rigid two-piece box, a lid over a base, matte black all over, about 28 cm wide, 16 cm deep and 8 cm tall -- sized to hold two straps side by side. The lowercase grey stryde wordmark centred on the lid, in the same bold rounded lettering and the same grey as the wordmark on the shell; nothing else printed anywhere on the box, exactly as on the lid in the second attached image. The lid is fully closed and flush all round.\n\nLight: soft indirect west window light.\n\nAn unremarkable everyday snapshot: nobody lit it or arranged it, sharpness uneven across the frame, soft edges, faint compression in the shadows, no grading, no retouching.\n\nAVOID: no text on the box except the stryde wordmark, no offer text, no price, no badge, no sticker, no barcode, no white box, no coloured box, no glossy box, no window in the lid, no third strap, no single strap in the box, no loose strap outside the insert, no extra items in the box, no shell separate from its band, no shell resting on top of a loop of band, no strap standing upright as a stiff ring, no strap turned on its side, no hands, no fingers, no arms, no person, no open box, no lifted lid, no gap under the lid, no straps visible, no phone, no smartphone, no mobile phone anywhere in the frame, no phone on the ground, no phone on a table, no phone in a hand, no camera in frame, no text on screen, no captions, no logos other than the stryde wordmark, no extra fingers, no fused fingers, no AI face, no plastic skin, no polished render, no advertising image, no studio lighting, no vignette",
+  "medias": [
+   {
+    "value": "a45c1f15-8798-4387-9881-549f39195163",
+    "role": "image_references"
+   },
+   {
+    "value": "fc6b25cb-8d85-4d1b-83e4-abfafa55ff73",
+    "role": "image_references"
+   },
+   {
+    "value": "69584572-60fd-44a3-a2e0-ef49d4b1b0d2",
+    "role": "image_references"
+   }
+  ]
+ }
+}

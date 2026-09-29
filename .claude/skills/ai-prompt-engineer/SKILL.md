@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.65.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.66.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -43,7 +43,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Script is spoken verbatim (§22U, locked).** The ElevenLabs text is the script's spoken lines word for word — never add, remove, change or re-order a word; never send the title, headings, links or visual notes. Only what the **Enhance** pass adds (§22U step 8 — ElevenLabs' published Enhance prompt, `references/eleven_enhance_prompt.md`, run by you since there is no API): audio tags, and emphasis as CAPITALS, "!" or ellipses — never an added "?", never a banned or non-voice tag. Extract with `scripts/script_lines.py`, enhance, lock with `tts_budget.py --script-lines` (a changed word, an added "?" or a banned tag = FAIL, not sent). A wrong-looking line is flagged, never fixed. Agent-written hooks are voiced separately, only after step-6 approval.
 
-**VO pace and house cut (§22U steps 9–10a, E11A — pauses restored V7.65.0, user 2026-09-28: "the trim is too fast"; both run modes).** The finished VO runs at the inspo's rate and **never above 210 wpm** (per finished variant, hook + body): tag each paragraph `[slowly]` and each sentence end `[pause]` (tags only, verbatim still gated) and voice by API at `speed` 0.7–1.0 with `scripts/tts_api.py` (`eleven_v4`; the connector has no speed setting; `speed` on v4 unverified). Every TTS voice-over is then trimmed with `scripts/vo_trim.py` in the house cut: **natural pauses kept — 0.45s at a sentence end, 0.20s at a comma, never longer than the take had** (the old 0.015s butt joins are retired), each word kept until it falls to −38 dB then a 20 ms fade (never cut at a transcript word-end), breaths cut only at phrase boundaries, no speed change, pace gate ≤ 210 wpm (too fast → re-voice slower, never stretch). Hook parts are gated with their body; for one consistent voice, voice all hooks + body in one TTS request and split at the silences. A take whose last word the TTS cut off (ends above −45 dB) fails. Never on a §24I voice master. `trim.py` (E11) stays for talking-head clips.
+**VO pace and house cut (§22U steps 9–10a, E11A — pauses restored V7.65.0, user 2026-09-28: "the trim is too fast"; both run modes).** The finished VO runs at the inspo's rate and **never above 210 wpm** (per finished variant, hook + body): tag each paragraph `[slowly]` and each sentence end `[pause]` (tags only, verbatim still gated) and voice by API at `speed` 0.7–1.0 with `scripts/tts_api.py` (`eleven_v4`; the connector has no speed setting; `speed` on v4 unverified). Every TTS voice-over is then trimmed with `scripts/vo_trim.py` in the house cut: **natural pauses kept — 0.45s at a sentence end, 0.20s at a comma, never longer than the take had** (the old 0.015s butt joins are retired), **no tight cuts (2026-09-28): every word finishes — kept to −50 dB, then 80 ms of release and a 60 ms fade, and a pause inside a phrase is never shortened** (never cut at a transcript word-end), breaths cut only at phrase boundaries, no speed change, pace gate ≤ 210 wpm (too fast → re-voice slower, never stretch). Hook parts are gated with their body; for one consistent voice, voice all hooks + body in one TTS request and split at the silences. A take whose last word the TTS cut off (ends above −45 dB) fails. Never on a §24I voice master. `trim.py` (E11) stays for talking-head clips, with the same no-tight-cuts rule (words padded 120/250 ms, air only below −50 dB, 0.45s / 0.25s / ≤ 0.3s pauses, 40 ms fade-out).
 
 **Manual: the user checks every generation (correction 2026-09-26; reaffirmed 2026-09-27 — "you will not check them").** No verdict, no instrument, no note on any render — images, clips, audio, colour, joins, contact sheets are all the user's. You still lint your own prompts and plans before spending (`preflight.py`, `angles.py`). **Automatic: you check everything and deliver the final videos only.** Never judge, confirm or regenerate a render on your own — put it on the board as To check and wait for the user's Confirm or Fix; regenerate only from their Fix note (no budget — except a third video generation of one shot, which waits for the user's go, §22X). The two verdicts below are for **Automatic runs only**.
 
@@ -93,7 +93,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Tone (§45).** Direct, practical, efficient. Take a position — recommend one option and say why. Measure before asserting; mark unverified claims **unverified**. Show the number (char counts, word budgets, coverage). Confirm correctness in one line and move on.
 
-**Generation Board (§16A, E3; design locked 2026-09-26).** The template's design is locked: never redesign, restyle or simplify it; change it only on the user's named request, in the template, republished to every board. Every generation, both run modes, is logged on the build's own board (template `dashboard/generation_board.html`; board links live in `CLAUDE.md` and the Build Sheet): grouped per act — Hook 1…, Act 1… — Images then Videos, every field labelled, each render uploaded the turn it lands, the §22V / §22W verdict recorded. The reviewer presses Confirm or Fix; a Fix note is a §34 correction for that beat, regenerated within the §22V budget and picked up by the hourly check. **Always shown, both run modes (2026-09-27):** open the build's board in the user's panel (Artifact `open`) when a run starts or resumes and at every delivery — Automatic too. **Final output tab (2026-09-27):** beside Board, Manual run and Plan; each finished video goes on the board the turn it is exported as an Edit-stage card with `final: true` (beat `FINAL-HK<n>`, `hook`, `madeFrom`; the film: `FINAL`) — Manual: To check for the final review; Automatic: confirmed, the delivered videos. **Four boards per build (2026-09-28, storage):** Current (confirmed + to check), Old versions (every replaced or unchosen render, read-only, moved the turn a Fix replaces it), Final output, Plan — one template, `BOARD_ROLE` per copy, linked through `boards` on the build doc (CLAUDE.md has the procedure).
+**Generation Board (§16A, E3; design locked 2026-09-26).** The template's design is locked: never redesign, restyle or simplify it; change it only on the user's named request, in the template, republished to every board. Every generation, both run modes, is logged on the build's own board (template `dashboard/generation_board.html`; board links live in `CLAUDE.md` and the Build Sheet): grouped per act — Hook 1…, Act 1… — Images then Videos, every field labelled, each render uploaded the turn it lands, the §22V / §22W verdict recorded. The reviewer presses Confirm or Fix; a Fix note is a §34 correction for that beat, regenerated within the §22V budget and picked up by the hourly check. **Always shown, both run modes (2026-09-27):** open the build's board in the user's panel (Artifact `open`) when a run starts or resumes and at every delivery — Automatic too. **Final output tab (2026-09-27):** beside Board, Manual run and Plan; each finished video goes on the board the turn it is exported as an Edit-stage card with `final: true` (beat `FINAL-HK<n>`, `hook`, `madeFrom`; the film: `FINAL`) — Manual: To check for the final review; Automatic: confirmed, the delivered videos. **Four boards per build (2026-09-28, storage):** Current (confirmed + to check), Old versions (every replaced or unchosen render, read-only, moved the turn a Fix replaces it), Final output, Plan — one template, `BOARD_ROLE` per copy, linked through `boards` on the build doc (CLAUDE.md has the procedure). **Confirmed B-rolls are never deleted (2026-09-28):** every confirmed hook and B-roll video stays on its board at full quality — only replaced or unchosen versions ever leave Current; **Download all B-rolls** (Board tab's B-roll card and Manual run) and **Download all hooks** (Hooks card) zips them all (folder per act, `broll_bank.md`) for the B-roll bank.
 
 ## Voice pipeline helpers (§22U, both modes)
 
@@ -109,10 +109,11 @@ Where a script line contradicts a product spec or visual standard, the render fo
 - `scripts/mix_scene.py` — §24M: mixes a film scene — isolated dialogue, looping room tone, one continuous music cue ducked under dialogue, SFX on their frames, −14 LUFS; checks the mix matches the picture length
 - `scripts/preflight.py` — §22X: lints a video call (`call.json`) before any credit is spent — required strings, slots, rig vs subject motion, verbatim dialogue and word budget, connector params, generation ≤ 2 with a `fix_note` (a third or later only with the user's go recorded as `user_go`), three prevented risks; any FAIL = not sent
 - `scripts/contact_sheet.py` — §22W: one image per clip (first → last frame), frozen/black runs, `--full` for zoom
-- `scripts/trim.py` — E11 trim pass for talking heads, both run modes (§22U step 14), **natural pace, never too fast**: keeps 0.35s after sentences, 0.2s after commas, ≤ 0.08s between words (`--sentence-pause`, `--comma-pause`, `--word-pause`); never on a §24I film voice master
+- `scripts/trim.py` — E11 trim pass for talking heads, both run modes (§22U step 14), **natural pace, never too fast, no tight cuts**: keeps 0.45s after sentences, 0.25s after commas, ≤ 0.3s inside a phrase (`--sentence-pause`, `--comma-pause`, `--word-pause`); words padded 120/250 ms (`--pre`, `--post`), air only below −50 dB, 40 ms fade-out on every cut; never on a §24I film voice master
 - `scripts/tts_api.py` — §22U step 9 by API: Eleven v4 with `speed` 0.7–1.0 (pace control the connector lacks), one call per take, reports wpm per take
-- `scripts/vo_trim.py` — VO trim for audio-only §22U masters/hooks, in the **house cut** (V7.65.0): natural pauses (0.45s sentence, 0.20s comma), pace gate ≤ 210 wpm (`--max-wpm`), words kept to −38 dB, inhales cut at phrase boundaries (`--script` lines); hook variants = raw hook + raw body trimmed in one pass; flags a take whose last word the TTS cut off
-- `scripts/kie.py` — Kie AI API (§5): `credit`, `upload` (public URL), `image` (fallback), `seedance` (720p, 9:16, ingredients, stated duration), `wait`
+- `scripts/vo_trim.py` — VO trim for audio-only §22U masters/hooks, in the **house cut** (V7.65.0): natural pauses (0.45s sentence, 0.20s comma, mid-phrase as voiced), words ring out to −50 dB + 80 ms with a 60 ms fade, pace gate ≤ 210 wpm (`--max-wpm`), inhales cut at phrase boundaries (`--script` lines); hook variants = raw hook + raw body trimmed in one pass; flags a take whose last word the TTS cut off
+- `scripts/kie.py` — Kie AI API (§5): `credit`, `upload` (public URL), `image` (fallback), `kling` (Kling 3.0 fallback when Kling is short or over its cap), `seedance` (720p, 9:16, ingredients, stated duration), `wait`
+- `scripts/cut_points.py` — §22U step 12: the HK1|HK2|HK3|BODY boundaries in one house-cut take (word timestamps, mid-gap), for cutting the one-go talking head into each hook + body
 - `scripts/fetch_drive.py` — §18B Drive intake: downloads the shared folder, sorts inspo / script / product sheet / images, extracts document text, measures the inspo
 - `scripts/fetch_loom.py` — §18C: downloads the Loom brief, transcribes it with timestamps, saves frames → `builds/<BUILD>/intake/loom/loom.md` (`LMxx` rows)
 - `scripts/fetch_inspo.py` — §18B/§42 Part 1: downloads INSPO links into `builds/<BUILD>/intake/` and measures duration, aspect, shots, cuts, silences; saves two frames per shot and per-second contact sheets for the Edit Grammar (§42 Part 3A). YouTube returns 403 from the cloud — ask for the file instead
@@ -124,7 +125,10 @@ Setup per session: `pip install -q imageio-ffmpeg faster-whisper numpy yt-dlp gd
 ## Changing the standards (§0, §34)
 
 - **State the change before making it**: name the proposed change and every section it affects. No silent edits.
-- Edit `standards/AI_Prompt_Engineer_Global_Standards.md` — it is the source. Bump the version line at the top and add a CHANGELOG entry when cutting a version; empty Pending Amendments at each cut.
+- Edit `standards/AI_Prompt_Engineer_Global_Standards.md` — it is the source.
+- **A system update never touches existing builds** (user, 2026-09-28): new rules apply to new work; another build is re-cut or re-rendered only on its team's explicit ask.
+- **Merge every update into the default branch the same turn** (PR, then merge) so every account and session gets it (user, 2026-09-28); a push to a session branch alone is not done.
+- Bump the version line at the top and add a CHANGELOG entry when cutting a version; empty Pending Amendments at each cut.
 - **Both copies move together.** If a change touches anything summarised above (role, authority order, modes, formats, tools, build order, layout, corrections, tone), update this SKILL.md in the same commit so the loader never drifts from the master.
 - Product- or character-specific content never goes in the standards — it goes in a Product Sheet or Build Sheet.
 
@@ -186,11 +190,11 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - 22B. Camera Behaviour Standard *(measured this cycle — one A/B pair)*
 - 22C. Audio Capture Standard *(new — unverified)*
 - 22D. Voice Identity Standard *(new — axis steerability unverified)*
-- 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Kling source (2+ takes) → ElevenLabs clone → Enhance → v4 TTS → HeyGen Avatar V)*
+- 22U. Voice & Talking-Head Pipeline *(new V7.57.0 — Kling source (2+ takes) → ElevenLabs clone → Enhance → v4 TTS → HeyGen Avatar V)* — **Avatar V only, never IV or III; the whole take rendered in one go, then cut into each hook + body** (V7.66.0)
 - 22V. Image Verdict — the agent judges every image *(new V7.59.0)*
 - 22W. Clip Verdict — the agent judges every video *(new V7.60.0)*
 - 22X. Video Preflight — right on the first generation *(new 2026-09-27)*
-- 22U step 10a. VO house cut *(locked 2026-09-26, pauses restored V7.65.0 — `vo_trim.py`, E11A)*
+- 22U step 10a. VO house cut *(locked 2026-09-26, pauses restored V7.65.0, no tight cuts V7.66.0 — `vo_trim.py`, E11A)*
 - 22E. Fixed-Mount Capture Standard *(new V7.48.7; split into MOUNT and RECORD at V7.48.10)*
 - 22F. Creator Framing Standard *(new V7.52.0 — visual check pending)*
 - 22S. Skin Realism Standard *(Mode 1 — measured this cycle)*
@@ -323,11 +327,13 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 - E9. Build directory layout
 - E10. Doc-lint — standing §34 step at every version cut
 - E11. Trim pass — dead air and inhales *(new V7.56.0 — unverified on production clips)*
-- E11A. VO house cut — audio-only voice-over *(locked 2026-09-26, pauses restored V7.65.0, both run modes)*
+- E11A. VO house cut — audio-only voice-over *(locked 2026-09-26, pauses restored V7.65.0, no tight cuts V7.66.0, both run modes)*
 
 **PENDING AMENDMENTS**
 
 **OPEN DECISIONS**
+
+**CHANGELOG — V7.65.0 → V7.66.0 *(cut authorised)***
 
 **CHANGELOG — V7.64.4 → V7.65.0 *(cut authorised)***
 

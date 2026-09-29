@@ -1,0 +1,36 @@
+{
+ "beat": "N-G4",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "dialogue",
+ "prompt": "{\"shot\":\"Voice take G4.\",\"dialogue\":\"Regret number one. Nobody ever told them where it was actually coming from.\",\"delivery\":\"A woman of fifty-seven from West Yorkshire, a low dry alto, level and unhurried but brisk. Flat Yorkshire vowels, short \\\"u\\\", t's clipped; statements land and stop, no lift. A small breath before a number. Stress: slower and quieter on the turn word, never louder. To one person across the desk, starting the list, plainly; stress on 'Nobody'. Not a narrator, not an advert. Audio must sound like a phone microphone recording in a room, not a studio voice track: audible breath before the first word and between phrases, mouth and lip noise, sibilance present and un-de-essed, plosives on hard consonants, level drifting slightly across the take rather than sitting compressed and even. No studio compression, no noise gate, no reverb plate, no post EQ. Small brick room, phone a metre away.\",\"subject\":\"As in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Take one small quick inhale and begin speaking as it finishes \u2014 the first word lands within the first half second of the clip, no settle, no glance, no held beat before speech. Right hand lifts off the desk on 'Nobody', settles; eyes on lens. Jaw-carried speech, visibly dropping on open vowels, lips shaping over it. Lips fully close on the exact word 'number', pulling slightly to the left corner. After the final word the lips close and the jaw settles. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no proportions changing, no background bending, no texture swimming, no smearing, no static camera, no camera coming to rest, no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no light following the subject, no music, no second voice\"}",
+ "duration": 10,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_100926_9378efcb-3e27-47ab-99d1-18e9ee05c803.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "dialogue": "Regret number one. Nobody ever told them where it was actually coming from.",
+ "script_line": "Regret number one. Nobody ever told them where it was actually coming from.",
+ "pace": "brisk",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "a different voice between takes",
+   "prevented_by": "VOICE-NARR verbatim first in delivery, same start frame"
+  },
+  {
+   "risk": "lip-sync drift or a mouth that melts",
+   "prevented_by": "MOUTH-C closure word + NEG-WARP-C"
+  },
+  {
+   "risk": "a studio narrator voice, not a person",
+   "prevented_by": "AUD-A + 'Not a narrator, not an advert.'"
+  }
+ ]
+}

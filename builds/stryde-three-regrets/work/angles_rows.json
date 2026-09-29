@@ -1,0 +1,1962 @@
+[
+ {
+  "beat": "HK1-01",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK1-02",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "R2 Ken",
+  "height": "ground",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "ground = steps and feet: the leg he leads with",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "overcast sky, brighter to the south",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: overcast, cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK1-03",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "object",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "through",
+  "why": "through = the doctor's room, seen past the brace",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "background",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "consulting-room window, right-hand wall",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "everyday: neutral daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK2-01",
+  "group": "Hook 2",
+  "type": "BR",
+  "subject": "N hands",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = routine, the daily postbag",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 7,
+  "light": {
+   "source": "sash window, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: soft east morning light",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK2-02",
+  "group": "Hook 2",
+  "type": "BR",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter-back",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "three-quarter-back = we read over her shoulder, the board is the subject",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "background",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 7,
+  "light": {
+   "source": "sash window, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: soft east morning light",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK2-03",
+  "group": "Hook 2",
+  "type": "BR",
+  "subject": "object",
+  "height": "high",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = looking down into the pile",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK3-01",
+  "group": "Hook 3",
+  "type": "BR",
+  "subject": "object",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "through",
+  "why": "profile + through = the clinic at arm's length",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "background",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "consulting-room window, right-hand wall",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "everyday: neutral daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK3-02",
+  "group": "Hook 3",
+  "type": "BR",
+  "subject": "R2 Ken hands",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = small daily habit",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "overcast sky, brighter to the south",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: overcast, cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK3-03",
+  "group": "Hook 3",
+  "type": "BR",
+  "subject": "R3 Joan",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "lounge window, west wall, net curtains",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "problem: grey afternoon through net curtains",
+   "why": ""
+  }
+ },
+ {
+  "beat": "HK3-04",
+  "group": "Hook 3",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "high",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "high = her own view down at her knee",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "TH-01",
+  "group": "Act 1",
+  "type": "TH",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 7,
+  "light": {
+   "source": "sash window, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: soft east morning light",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-003",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "eye",
+  "side": "three-quarter-back",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "three-quarter-back = over her shoulder into the drawer",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-004",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "high = small against the problem",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-005",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile = the sleeve's shape over the joint",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-006",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = the bars, big and heavy",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-007",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R1 Gail hands",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = the pile growing",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-008",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-009",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "clinician hand (one-off CL-01)",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "background",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "consulting-room window, right-hand wall",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "everyday: neutral daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-010",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile = the band's side view under the kneecap",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-011",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "low = the force, heavy",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-012",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "high = the viewer's own look down at their knee",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-013",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-014",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "high = the whole knee wrapped, seen from above",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-015",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "clinician hand (one-off CL-01)",
+  "height": "low",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low + profile = the hinge's sideways travel",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "consulting-room window, right-hand wall",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "everyday: neutral daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-016",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "eye",
+  "side": "behind",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "behind = alone with it",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-017",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "R2 Ken",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "overcast sky, brighter to the south",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: overcast, cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-018",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "R2 Ken",
+  "height": "low",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = the legs, the load on one side",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "overcast sky, brighter to the south",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: overcast, cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-019",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "R2 Ken",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile = distance, he does not notice",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "overcast sky, brighter to the south",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: overcast, cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-020",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "R2 Ken",
+  "height": "ground",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "ground = the step and the leading foot",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "overcast sky, brighter to the south",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: overcast, cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-021",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-022",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "R2 Ken",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "high = worn down",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "overcast sky, brighter to the south",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: overcast, cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "TH-02",
+  "group": "Act 2",
+  "type": "TH",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 7,
+  "light": {
+   "source": "sash window, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: soft east morning light",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-024",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "R3 Joan",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "lounge window, west wall, net curtains",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "problem: grey afternoon through net curtains",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-025",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "R3 Joan",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile = she keeps it to herself",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "lounge window, west wall, net curtains",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "problem: grey afternoon through net curtains",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-026",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "R3 Joan + walkers (one-off WK-01)",
+  "height": "eye",
+  "side": "three-quarter-back",
+  "scale": "MEDIUM",
+  "fg": "through",
+  "why": "through = watching life from behind the curtain",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "background",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "lounge window, west wall, net curtains",
+   "key_side": "back",
+   "time": "afternoon",
+   "arc": "problem: grey afternoon through net curtains",
+   "why": "backlit through the net curtain: she watches from inside"
+  }
+ },
+ {
+  "beat": "BR-027",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "R3 Joan hands",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = the small act of saying no",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "lounge window, west wall, net curtains",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "problem: grey afternoon through net curtains",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-028",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "R3 Joan",
+  "height": "high",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "high = small against the steps",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "open sky over the street",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "problem: grey afternoon through net curtains",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-029",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "R3 Joan",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "open sky over the street",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "problem: grey afternoon through net curtains",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-030",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "daughter + grandson (one-offs DT-01, GS-01) + R3 Joan",
+  "height": "high",
+  "side": "ots",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "OTS = from the family's side, she leaves",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "open sky over the street",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "problem: grey afternoon through net curtains",
+   "why": ""
+  }
+ },
+ {
+  "beat": "TH-03",
+  "group": "Act 4",
+  "type": "TH",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 7,
+  "light": {
+   "source": "sash window, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: soft east morning light",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-032",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = the stair looms; coming down is the hard way",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "front-door glass (south) + landing window",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-033",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "eye",
+  "side": "behind",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "behind = going up is easy, she leaves us",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "front-door glass (south) + landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-034",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile = the step-down's side view",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-035",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey late-morning light, flat and cool",
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-036",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "low",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = underneath",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "PR-037",
+  "group": "Act 4",
+  "type": "SHOT",
+  "subject": "R1 Gail hand",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: sun in the room, warmer and open",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-038",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: sun in the room, warmer and open",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-039",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "R1 Gail hands",
+  "height": "high",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = looking into it",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: sun in the room, warmer and open",
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-040",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "low = the catch holds",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-041",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile = the height, the notch meets the kneecap",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: sun in the room, warmer and open",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-042",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "high = the placement from above",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "bedroom window, south wall",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: sun in the room, warmer and open",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-043",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = strength in the stride",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": 2,
+  "light": {
+   "source": "midday sun, south",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "after: sun in the room, warmer and open",
+   "why": ""
+  }
+ },
+ {
+  "beat": "PR-045",
+  "group": "Act 5",
+  "type": "SHOT",
+  "subject": "surgeon (one-off SG-01, \u00a719B approachable)",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "consulting-room window, right-hand wall",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "everyday: neutral daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-046",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "walkers (one-offs WK-02)",
+  "height": "ground",
+  "side": "profile",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "ground = the steps of many",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "afternoon sun over the canal",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "everyday: neutral daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-047",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = quick and easy",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "front-door glass (south) + landing window",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: sun in the room, warmer and open",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-048",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = the flat line of the trouser",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "front-door glass (south) + landing window",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: sun in the room, warmer and open",
+   "why": ""
+  }
+ },
+ {
+  "beat": "TH-04",
+  "group": "Act 5",
+  "type": "TH",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 7,
+  "light": {
+   "source": "sash window, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: soft east morning light",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-050",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "high",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high = the drop of the stairs below her",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "front-door glass (south) + landing window",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: sun in the room, warmer and open",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-052",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = the mirror of BR-032, now easy",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "front-door glass (south) + landing window",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "after: sun in the room, warmer and open",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-053",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "R1 Gail",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "front-door glass (south) + landing window",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: sun in the room, warmer and open",
+   "why": ""
+  }
+ },
+ {
+  "beat": "TH-05",
+  "group": "Act 5",
+  "type": "TH",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 7,
+  "light": {
+   "source": "sash window, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: soft east morning light",
+   "why": ""
+  }
+ },
+ {
+  "beat": "MECH-056",
+  "group": "Act 5",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile = the same side view as MECH-010, now calm",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "light": {
+   "source": "\u00a712A render light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "\u00a712A anatomical register",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-057",
+  "group": "Act 6",
+  "type": "BR",
+  "subject": "N hands",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = one of thousands",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 7,
+  "light": {
+   "source": "sash window, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: soft east morning light",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-058",
+  "group": "Act 6",
+  "type": "BR",
+  "subject": "N hand",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 7,
+  "light": {
+   "source": "sash window, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: soft east morning light",
+   "why": ""
+  }
+ },
+ {
+  "beat": "TH-06",
+  "group": "Act 6",
+  "type": "TH",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 7,
+  "light": {
+   "source": "sash window, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: soft east morning light",
+   "why": ""
+  }
+ },
+ {
+  "beat": "PR-061a",
+  "group": "Act 6",
+  "type": "SHOT",
+  "subject": "object",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = what's in the box",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "kitchen window, side light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "everyday: neutral daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-061b",
+  "group": "Act 6",
+  "type": "BR",
+  "subject": "R2 Ken",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = strong again, both legs",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 4,
+  "light": {
+   "source": "overcast sky, brighter to the south",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: bright broken cloud, warmer",
+   "why": ""
+  }
+ },
+ {
+  "beat": "PR-062",
+  "group": "Act 6",
+  "type": "SHOT",
+  "subject": "R2 Ken hands",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 4,
+  "light": {
+   "source": "overcast sky, brighter to the south",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: bright broken cloud, warmer",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-064",
+  "group": "Act 6",
+  "type": "BR",
+  "subject": "copy hands (one-off CP-01)",
+  "height": "low",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low + profile = the sag",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "kitchen window, side light",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "everyday: neutral daylight",
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-065",
+  "group": "Act 6",
+  "type": "BR",
+  "subject": "R3 Joan",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = the mirror of BR-028's high angle: now she owns the steps",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 6,
+  "light": {
+   "source": "open sky over the street",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: low warm sun on the street",
+   "why": ""
+  }
+ }
+]

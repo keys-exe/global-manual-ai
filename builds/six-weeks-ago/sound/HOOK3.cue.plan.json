@@ -1,0 +1,50 @@
+{
+  "positive_global_styles": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif",
+    "tense suspenseful underscore",
+    "low sustained cello drone",
+    "uneasy slow pulse",
+    "instrumental",
+    "slow tempo"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "Kitchen fall",
+      "positive_local_styles": [
+        "tense dramatic low strings",
+        "urgent uneasy piano pulse",
+        "shock"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 12767,
+      "lines": []
+    },
+    {
+      "section_name": "Six weeks ago card",
+      "positive_local_styles": [
+        "single sustained piano note",
+        "fading, suspended, unresolved"
+      ],
+      "negative_local_styles": [
+        "strings swell"
+      ],
+      "duration_ms": 4133,
+      "lines": []
+    }
+  ]
+}

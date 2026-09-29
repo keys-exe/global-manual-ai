@@ -1,0 +1,44 @@
+{
+ "beat": "HK1-SEEDANCE",
+ "connector": "seedance",
+ "mode": 1,
+ "kind": "dialogue",
+ "prompt": "INGREDIENTS. @image1 is the opening composition: the clip opens on exactly this framing, light and camera position, and nothing in it is re-composed. @image2 is the room: the same brick workshop seen from the same end, the rail of braces down the left, the bench, vice and windows on the right. @image3 and @image4 are the maker: face, age, hair and build only — the crooked broken nose bent to his left, the higher left corner of the mouth, the neat grey moustache — with the wardrobe taken from @image1 and never from these references. @audio1 is the maker's voice, its timbre, pitch, accent and pace, for every word he speaks; it sets who he sounds like, never how he feels in this shot. These references set what things ARE; the prose below sets what HAPPENS, and nothing in them is a shot to cut to.\n\nOne continuous take, no cuts, from a phone propped on the cutting table at waist height; the camera never moves. The maker, sixty-two, is already mid-stride coming down the aisle towards the phone, his right hand trailing loosely along the hangers of finished knee braces, the hangers swaying a little as his fingers pass. He takes four unhurried steps, a little under one a second, and stops at the far edge of the cutting table about a metre from the lens, his right hand coming to rest on the table edge, and stands there to the end, knees-up in frame. He is talking from the first frame, straight to the lens, dry and certain: \"Here is where your knee pain is actually coming from. And if you do not believe me, I have spent thirty years making knee braces. Load is my job.\" Opens flat and matter-of-fact while walking; turns on 'thirty years' — he has stopped, the chin comes up a fraction and the eyes hold the lens; exits still and flat on 'Load is my job', lips closing and staying closed. Stress on 'thirty years'. A man of sixty-two from the Black Country, Walsall, a dry, flat, slightly nasal voice, level and unhurried but never slow. Statements fall and stop dead, no lift at the end; Black Country vowels, \"I\" close to \"oi\", dropped h's, glottal t's. A short dry sniff of a laugh before a put-down. Stress: slower and flatter on the turn, never louder. Never theatrical or salesy. The voice sounds like a phone microphone in a brick room: audible breath before the first word and between phrases, a little footstep noise on the concrete while he walks, level drifting slightly, no studio compression, no music. Morning light through the tall factory windows on the right of the frame lights his face from that side; the colours stay natural and ungraded, exactly as in @image1. Everything keeps its exact form, proportion and count from first frame to last; five fingers on each hand; his face never reshapes. Avoid: no cuts, no second shot, no camera movement, no zoom, no legs blending, no feet sliding, no walking past the table, no sitting, no slow motion, no morphing, no warping, no braces melting or merging, no duplicate person, no different face, no straightened nose, no symmetrical mouth, no music, no second voice, no subtitles, no text.",
+ "duration": 15,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": "hooks/HK1_start_v2.png (confirmed) as @image1",
+ "start_approved": true,
+ "pinned": false,
+ "files": [
+  "HK1_start_v2.png",
+  "P3-WORKSHOP-RAIL_v1.png",
+  "C1-MAKER_v1.png",
+  "C1_TH_propped_v1.png",
+  "HK1_voice_ref.mp3"
+ ],
+ "audios": [
+  "HK1_voice_ref.mp3"
+ ],
+ "dialogue": "Here is where your knee pain is actually coming from. And if you do not believe me, I have spent thirty years making knee braces. Load is my job.",
+ "script_line": "Here is where your knee pain is actually coming from. And if you do not believe me, I have spent thirty years making knee braces. Load is my job.",
+ "pace": "brisk",
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "voice drifts from the talking heads",
+   "prevented_by": "@audio1 = the talking-head take's own HK1 line (the cloned voice), named in ING-MANIFEST as timbre/accent/pace; VOICE-MAKER in the prose"
+  },
+  {
+   "risk": "face blends away from the maker",
+   "prevented_by": "@image3 sheet + @image4 confirmed TH photo, face-only clause with the crooked nose and mouth markers; @image1 is the confirmed face-fixed frame"
+  },
+  {
+   "risk": "cut inside the clip or walk distortion",
+   "prevented_by": "'one continuous take, no cuts', one moment, four steps then stop at a named place, locked camera, negatives for blending/sliding"
+  }
+ ],
+ "note": "User 2026-09-28: 'use the talking heads voice as voice clip to create consistent voice, use seedance 2.5 — this is for the hook only'. Kie bytedance/seedance-2-5, ingredients mode, 720p, 12s (E6: 10.39+0.4+0.5→12), generate_audio true. Duration raised to 15s, pace brisk: §28H budget (29 words); the tail after 'Load is my job' is trimmed in the edit."
+}

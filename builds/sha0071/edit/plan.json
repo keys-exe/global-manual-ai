@@ -1,0 +1,59 @@
+{
+ "mode": 4,
+ "scene": "SC-01",
+ "out": "edit/SHA0071_SC01_HK1.mp4",
+ "shots": [
+  {
+   "beat": "SC01-SH01",
+   "in": 0.0,
+   "out": 4.9
+  },
+  {
+   "beat": "SC01-SH02",
+   "in": 0.0,
+   "out": 2.9
+  },
+  {
+   "beat": "SC01-INS01",
+   "in": 0.4,
+   "out": 2.2,
+   "silent": true
+  },
+  {
+   "beat": "SC01-SH03",
+   "in": 0.0,
+   "out": 3.7
+  },
+  {
+   "beat": "SC01-SH04",
+   "in": 1.3,
+   "out": 3.7
+  },
+  {
+   "beat": "SC01-SH05",
+   "in": 0.4,
+   "out": 7.95
+  },
+  {
+   "beat": "SC01-SH06",
+   "in": 0.0,
+   "out": 2.4
+  },
+  {
+   "beat": "SC01-SH07A",
+   "in": 1.3,
+   "out": 8.8
+  },
+  {
+   "beat": "SC01-SH07B",
+   "in": 0.3,
+   "out": 11.0
+  },
+  {
+   "beat": "SC01-SH08",
+   "in": 0.0,
+   "out": 3.6,
+   "punch_in": 1.25
+  }
+ ]
+}

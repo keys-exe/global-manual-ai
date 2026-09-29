@@ -1,0 +1,35 @@
+{
+ "beat": "BR-22",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"box_reveal\",\"subject\":\"The closed matte-black stryde box alone on the checked tablecloth, grey stryde wordmark on the lid.\",\"camera\":{\"movement\":\"A slow, steady push in towards the box, one direction, constant unhurried speed, a faint handheld breath sway on top. Still moving at the cut.\",\"framing\":\"Close-up from slightly above, as in the start frame; the box stays centred.\"},\"motion\":\"Nothing in the scene moves except soft window light sliding slowly across the matte lid. The lid stays closed; the box stays exactly where it is and keeps its exact shape and wordmark every frame. Everything keeps the exact form, proportion and count it has in the start frame; nothing melts, merges, splits or grows. Subject fully in frame throughout.\",\"lighting\":\"Capture exactly as in the start frame: same tone, noise and colour temperature, no grading change across the clip.\",\"style\":\"Ordinary everyday footage, natural daylight colour, unretouched.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no flickering geometry, no hands, no fingers, no person entering, no lid opening, no box moving, no box changing shape, no text changing, no phone, no smartphone, no mobile phone anywhere in the frame, no camera in frame, no AI face, no plastic skin, no extra fingers, no fused fingers, no deformed limbs, no CGI look, no text, no music\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "BR-22 confirmed image",
+ "start_approved": true,
+ "fix_note": "image fixed: box alone, no hands -> motion: slow push in only (user's go for the third video)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "prefer_multi_shots": "false",
+ "generation": 3,
+ "subject_motion": "in_place",
+ "pace": "named",
+ "risks": [
+  {
+   "risk": "phone appears in frame",
+   "prevented_by": "no phone named anywhere; phone negatives"
+  },
+  {
+   "risk": "product bends or wobbles",
+   "prevented_by": "HOLD-PC rigid-shell clause + product negatives"
+  },
+  {
+   "risk": "the Fix-note fault repeats",
+   "prevented_by": "fault fixed at source in image + motion"
+  }
+ ],
+ "user_go": "user, 2026-09-28: \"fix them now then generate the confirmed images\""
+}

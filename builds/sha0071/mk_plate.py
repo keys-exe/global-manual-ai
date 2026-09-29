@@ -1,0 +1,13 @@
+from strings import *
+LIGHT = lambda motivation, side, ratio="3:1": (f"THE LIGHT IS A LIT SET, MOTIVATED BY {motivation} ON {side}. The key is soft, overcast daylight coming through the glass wall of the meeting room, raised slightly above the eye line, at a key-to-fill ratio of about {ratio}, so every face has a lit side and a shadow side and the transition between them falls across the near cheek. "
+ "A fill from the opposite side holds detail in the shadow. A faint edge light from behind separates the head and shoulders from the background. The background is lit only by its own practicals and spill. Every light in frame has a source you could point to.")
+ROOM = ("A long corridor on an upper floor of a mid-size American corporate office building, the same building throughout the film. On the LEFT runs the glass wall of a meeting room — clear glass panels in brushed aluminium frames with a frosted privacy band at waist height, the room's pale vertical blinds half drawn, overcast daylight from the room's own exterior windows coming through the glass into the corridor. "
+ "On the RIGHT a solid off-white wall, scuffed at trolley height, with two pale oak-veneer office doors with brushed steel lever handles, a small unreadable room sign beside each, a framed abstract print, and a water cooler with a stack of paper cups. "
+ "Mid-grey carpet tiles with a faint worn path down the middle, a grey suspended ceiling grid with square fluorescent light panels every few metres, cool-white and even, one tube a touch dimmer than the rest. At the far end of the corridor, the brushed-steel doors of a lift lobby.")
+p = (CAM(25, "T4", "a locked tripod at standing eye height") + " " +
+ "LOCATION PLATE: the empty corridor, the room every shot of Scene 1 is built against, seen from standing eye height near the meeting-room glass, looking a little across and down the corridor so the right-hand wall, its two doors and the far lift lobby all read in depth. Nobody is in frame. " + ROOM + " " +
+ PROD_DEPTH("the aluminium edge of the meeting-room glass wall", "the empty corridor floor") + " " +
+ "The hard overhead fluorescent panels give the corridor a flat, cool top light; the stronger, directional light is the soft overcast daylight falling through the meeting-room glass from the left, laying a pale wash across the carpet and the right-hand wall. " +
+ LIGHT("THE OVERCAST DAYLIGHT THROUGH THE MEETING-ROOM GLASS", "FRAME LEFT") + " " + LOOK + " " + PHYS_FRAME + " " + CAP +
+ " NEGATIVES: no people, no person, no figures, no readable text on any sign, no logos, " + NEG_FILM + ", " + NEG_LIGHT)
+open("beats/LOC-CORRIDOR.t2i.txt","w").write(p); print(len(p))
