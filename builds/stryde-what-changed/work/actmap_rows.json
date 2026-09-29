@@ -560,15 +560,15 @@
   "act": "Act 1",
   "line": "Going up the stairs, your muscles lift you.",
   "key": "up",
-  "function": "mechanism — up",
+  "function": "the climb is hard work (problem state)",
   "subject": "R2",
   "location": "L-D-STAIRS",
   "story_day": "D-D1",
-  "framing": "from behind and below: Desmond climbs two stairs, thigh muscles working, hand on the rail",
-  "action": "two steps up",
-  "pace": "one step a second",
+  "framing": "MEDIUM three-quarter on the stairs: Desmond struggling up, one hand gripping the handrail, the other pushing down on his thigh to lever himself up the next step, his face set with effort",
+  "action": "he levers himself up one step",
+  "pace": "one slow, effortful step, about two seconds",
   "camera": "locked off",
-  "staging": "stairs: from behind, camera still, 2 steps",
+  "staging": "stairs: three-quarter from the hall, full figure from head to the treads below, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "absent",
@@ -577,14 +577,14 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "",
+  "notes": "user Fix 2026-09-29 'NEGATIVE BROLL, STRUGGLING TO Going up the stairs.' (was from behind, climbing easily)",
   "duration": "pending-master",
   "angle": {
-   "height": "low",
-   "side": "behind",
+   "height": "eye",
+   "side": "three-quarter",
    "fg": "clean",
    "scale": "MEDIUM",
-   "why": "behind and low = the climb, the muscles doing the lifting"
+   "why": "three-quarter = his effort and his face together"
   },
   "focus": {
    "plane": "deep",
@@ -599,7 +599,7 @@
    "arc": "problem: grey",
    "kelvin": 6500
   },
-  "face": false
+  "face": true
  },
  {
   "beat": "B04b",
@@ -607,15 +607,15 @@
   "act": "Act 1",
   "line": "Going down, nothing lifts you. You are catching yourself on every step,",
   "key": "catching",
-  "function": "mechanism — down",
-  "subject": "R2",
-  "location": "L-D-STAIRS",
-  "story_day": "D-D1",
-  "framing": "from the side, waist-down: Desmond comes down one stair, the knee bending and taking the landing, hand on the rail",
-  "action": "one step down, the knee absorbing it",
-  "pace": "one step, about a second and a half",
+  "function": "the careful descent",
+  "subject": "R1",
+  "location": "L-M-STAIRS",
+  "story_day": "M-D1",
+  "framing": "MEDIUM low front: Maureen coming down her stairs towards the lens, gripping the oak handrail, placing each foot carefully, her weight held back",
+  "action": "one careful step down, holding the rail",
+  "pace": "one careful step, about two seconds",
   "camera": "locked off",
-  "staging": "stairs: side, waist-down, camera still, hand on the rail visible",
+  "staging": "stairs: from the foot of the flight looking up, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "absent",
@@ -624,14 +624,14 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "",
+  "notes": "user Fix 2026-09-29 'GOING DOWN WHILE HOLDING THE BANISTER, CHANGE THE BROLL' (was Desmond stepping down through the spindles)",
   "duration": "pending-master",
   "angle": {
-   "height": "eye",
-   "side": "profile",
-   "fg": "through",
+   "height": "low",
+   "side": "front",
+   "fg": "clean",
    "scale": "MEDIUM",
-   "why": "through the spindles: the step watched closely"
+   "why": "low front = her coming down to us, every step a catch"
   },
   "focus": {
    "plane": "deep",
@@ -640,13 +640,13 @@
    "moving_subject": false
   },
   "light": {
-   "source": "Desmond's stair window, grey morning",
+   "source": "Maureen's landing window, grey morning",
    "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 6500
   },
-  "face": false
+  "face": true
  },
  {
   "beat": "B04c",

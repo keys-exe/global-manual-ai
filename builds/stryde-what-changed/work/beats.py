@@ -294,30 +294,33 @@ B["B02"] = (NB2, ["R1", "P1"], photo([   # v3 — user Fixes: v1 finger above th
     "thigh, no finger on the kneecap, no product anywhere, no knee strap, no knee support, no second person, no extra fingers, "
     "no wrong number of hands"))
 
-# B04a — "Going up the stairs, your muscles lift you." Desmond from behind and below, climbing.
+# B04a v2 — user Fix "NEGATIVE BROLL, STRUGGLING TO Going up the stairs.": Desmond struggling up, face in frame.
 B["B04a"] = (NB2, ["R2", "P2"], photo([
-    "A snapshot from a phone held low at the foot of the stairs, looking up the flight from behind him. He is climbing his stairs, caught "
-    "mid-step: his right foot planted two treads up and his right thigh driving him upwards, the back of the thigh and calf working, "
-    "his left heel lifting off the tread below, his right hand on the dark handrail. The frame is cropped at his waist — his back, "
-    "shoulders and head are above the frame.",
-    R2_BODY + " Wearing " + WARD["D-D1"] + ".",
+    "A snapshot from a phone at eye height in the hall, three-quarter on to the stairs. He is part-way up his stairs, struggling: his "
+    "right hand gripping the dark handrail hard, his left hand pressed flat on his left thigh pushing down to lever himself up onto the "
+    "next tread, his body leaning forward over the bent knee, his mouth set and his brow drawn with effort — tired, not in agony. "
+    "Medium shot, the whole of him from head to the treads below his feet.",
+    R2 + " Wearing " + WARD["D-D1"] + ".",
     D_STAIRS,
-    angle("B04a", "his legs climbing the stairs"),
-    focus("everything", deep=True),
-    light("D-GREY-R", "his legs and the flight"), colour("D-STAIRS-AM")],
-    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no second person, " + PLAIN_SHOES + ", no going down the stairs, no wrong number of legs"))
+    angle("B04a", "him struggling up the stairs"),
+    focus("his nearest eye", deep=False).replace("the room behind", "the stair wall behind"),
+    light("D-GREY-R", "him and the stairs"), colour("D-STAIRS-AM")],
+    "no crying, no screaming, no falling, no looking at the camera, no product anywhere, no knee strap, no walking stick, no second person, "
+    + PLAIN_SHOES + ", no going down the stairs"))
 
-# B04b — "Going down, nothing lifts you. You are catching yourself on every step," Desmond side-on through the spindles, stepping down.
-B["B04b"] = (NB2, ["R2", "P2"], photo([
-    "A snapshot from a phone held at hip height beside the stairs, looking side-on at the flight through the white spindles. He is coming "
-    "DOWN, caught at the landing of a step: his right foot just landed on the tread below, the right knee bending deeply to catch his "
-    "weight, his left leg still on the tread above, his left hand sliding on the dark handrail. The frame is cropped at his waist.",
-    R2_BODY + " Wearing " + WARD["D-D1"] + ".",
-    D_STAIRS,
-    angle("B04b", "his legs coming down the stairs", ", looking past the white spindles, soft in the near foreground"),
-    focus("everything", deep=True),
-    light("D-GREY-L", "his legs and the stairs"), colour("D-STAIRS-AM")],
-    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no second person, " + PLAIN_SHOES + ", no going up the stairs, no wrong number of legs"))
+# B04b v2 — user Fix "GOING DOWN WHILE HOLDING THE BANISTER, CHANGE THE BROLL": Maureen coming down towards the lens, gripping the rail.
+B["B04b"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone held low at the foot of the stairs, looking up the flight. She is coming DOWN her stairs towards the lens, "
+    "caught mid-step: her right hand gripping the honey oak handrail tightly, her weight held back, her right foot lowering carefully onto "
+    "the next tread down while the left knee bends to take her, her eyes on the step below, concentrating. Medium shot, the whole of her "
+    "from head to plimsolls, the flight rising behind her to the half-landing window.",
+    R1 + " Wearing " + WARD["M-D1"] + ".",
+    M_STAIRS,
+    angle("B04b", "her coming down the stairs"),
+    focus("her face and her hand on the rail", deep=False).replace("the room behind", "the stairs behind"),
+    light("M-GREY-L", "her and the stairs"), colour("M-STAIRS-AM")],
+    "no falling, no wincing in agony, no looking at the camera, no product anywhere, no knee strap, no walking stick, no stairlift, "
+    "no second person, no logos on the plimsolls, no going up the stairs"))
 
 # B04c — "so coming down puts more through that band than going up does." ANAT-C silhouette, only the tendon legible.
 B["B04c"] = (NB2, [], anat(

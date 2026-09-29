@@ -112,14 +112,16 @@ BB("B02", A1, "That is the one.", "one", "participation",
    "one press, about a second", STILL, "hands: large in frame, one movement", "no", "absent", "—", "NB2",
    EYE, FRO, "clean", "CU", "front-on = the tendon below the kneecap shown straight on", "hands", "shallow", L(M_GREY, "R"), False)
 TH("B03-TH", A1, "It is not a big thing. It is about as wide as your thumb, and it has been quietly taking your whole bodyweight, multiplied, since you were a teenager.")
-BB("B04a", A1, "Going up the stairs, your muscles lift you.", "up", "mechanism — up",
-   "R2", "L-D-STAIRS", "D-D1", "from behind and below: Desmond climbs two stairs, thigh muscles working, hand on the rail", "two steps up",
-   "one step a second", STILL, "stairs: from behind, camera still, 2 steps", "no", "absent", "—", "NB2",
-   LOW, BEH, "clean", "MEDIUM", "behind and low = the climb, the muscles doing the lifting", "deep", "deep", L(D_GREY, "R"), False)
-BB("B04b", A1, "Going down, nothing lifts you. You are catching yourself on every step,", "catching", "mechanism — down",
-   "R2", "L-D-STAIRS", "D-D1", "from the side, waist-down: Desmond comes down one stair, the knee bending and taking the landing, hand on the rail", "one step down, the knee absorbing it",
-   "one step, about a second and a half", STILL, "stairs: side, waist-down, camera still, hand on the rail visible", "no", "absent", "—", "NB2",
-   EYE, PRO, "through", "MEDIUM", "through the spindles: the step watched closely", "deep", "deep", L(D_GREY, "L"), False)
+BB("B04a", A1, "Going up the stairs, your muscles lift you.", "up", "the climb is hard work (problem state)",
+   "R2", "L-D-STAIRS", "D-D1", "MEDIUM three-quarter on the stairs: Desmond struggling up, one hand gripping the handrail, the other pushing down on his thigh to lever himself up the next step, his face set with effort", "he levers himself up one step",
+   "one slow, effortful step, about two seconds", STILL, "stairs: three-quarter from the hall, full figure from head to the treads below, camera still", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "MEDIUM", "three-quarter = his effort and his face together", "deep", "deep", L(D_GREY, "R"), True,
+   notes="user Fix 2026-09-29 'NEGATIVE BROLL, STRUGGLING TO Going up the stairs.' (was from behind, climbing easily)")
+BB("B04b", A1, "Going down, nothing lifts you. You are catching yourself on every step,", "catching", "the careful descent",
+   "R1", "L-M-STAIRS", "M-D1", "MEDIUM low front: Maureen coming down her stairs towards the lens, gripping the oak handrail, placing each foot carefully, her weight held back", "one careful step down, holding the rail",
+   "one careful step, about two seconds", STILL, "stairs: from the foot of the flight looking up, camera still", "no", "absent", "—", "NB2",
+   LOW, FRO, "clean", "MEDIUM", "low front = her coming down to us, every step a catch", "deep", "deep", L(M_GREY, "L"), True,
+   notes="user Fix 2026-09-29 'GOING DOWN WHILE HOLDING THE BANISTER, CHANGE THE BROLL' (was Desmond stepping down through the spindles)")
 BB("B04c", A1, "so coming down puts more through that band than going up does.", "more", "mechanism (F5)",
    "ANAT", "—", "—", "ANAT-A: the knee on a down step, the tendon glowing stronger as the foot lands", "one landing pulse, stronger than the last",
    "one pulse, about a second", STILL, "none", "no", "absent", "—", "NB2",
