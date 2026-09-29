@@ -66,4 +66,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Video connector: Kie AI `kling-3.0/video` (Kling account 3 credits) — told the user.
 - User "CONFIRM": HK2-a / HK2-b images confirmed. Hook 2 clips (`work/clips.py`, §27G locked-off, `preflight.py` PASS), E6 from the trimmed HK2
   variant (HK2-a 0–3.36 s → 5 s; HK2-b 3.36–6.80 s → 5 s). Kie kling-3.0: HK2-a 1cbc2673… (90 cr), HK2-b f2445f70… (90 cr) → To check.
-- **Where it stands:** waiting on the user's check of the HK2-a / HK2-b clips; then Hook 3 images.
+- User Fix on HK2-a image: "GIVE ME DIFFERENT BROLL" → HK2-a re-planned (act map + `beats.py`): no longer ANAT-A (too close to HK1-b) —
+  MCU Desmond seated on his bottom stair tying his right trainer, bent bare knee nearest the lens, high three-quarter (angles.py PASS).
+  v2 job f20c462e (refs R2 + P2) → To check. v1 image + v1 clip moved to the Old board, deleted from Current. HK2-a clip in
+  `clips.py` still describes the anatomy swell — rewrite it (one lace tug) once v2 is confirmed. HK2-b clip still waiting on the user's check.
+- **Where it stands:** waiting on the user's check of HK2-a v2 image and HK2-b clip; then HK2-a clip, then Hook 3 images.

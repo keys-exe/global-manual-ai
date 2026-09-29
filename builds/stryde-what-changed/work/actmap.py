@@ -67,9 +67,10 @@ BB("HK1-b", HOOK[1], "for forty years, and you never felt a thing.", "never", "h
 TH("HK1-TH", HOOK[1], "Here is what changed.")
 
 BB("HK2-a", HOOK[2], "There is a band under your kneecap about as wide as your thumb,", "band", "hook — the flattering fact (VN01)",
-   "ANAT", "—", "—", "ANAT-A: the knee from the front, the patellar tendon under the kneecap lit, the rest of the joint quiet", "the tendon's light swells once",
-   "one swell, about two seconds", STILL, "none", "no", "absent", "—", "NB2",
-   LOW, FRO, "clean", "CU", "low = the tendon made big and important", "deep", "deep", L(ANAT, "R"), False, ledger="VN01 · F2", eg="EG03 · EG05", notes="no thumb shown against it (F2)")
+   "R2", "L-D-STAIRS", "D-D1", "MCU Desmond sitting on his bottom stair tying his right trainer, the bent bare right knee nearest the lens", "one tug of the lace tight",
+   "one tug, about a second", STILL, "stairs: seated on the bottom step, shoulders down, face out of frame, camera still", "no", "absent", "—", "NB2",
+   HIGH, THR, "clean", "MCU", "high = looking down at the bent knee as he does", "foreground", "medium", L(D_GREY, "L"), False,
+   ledger="VN01 · F2", notes="user Fix 2026-09-29 'GIVE ME DIFFERENT BROLL' (was ANAT-A front); no thumb shown against the knee (F2)")
 BB("HK2-b", HOOK[2], "and for its size it is one of the strongest things in your body.", "strongest", "hook — the flattering fact (VN01)",
    "R2", "L-D-STAIRS", "D-D1", "CU Desmond's bare right knee and shin as he plants his foot on the bottom stair and takes his weight", "one step up onto the stair",
    "one step, about a second", STILL, "stairs: side, knee-down, camera still", "no", "absent", "—", "NB2",
