@@ -243,12 +243,12 @@
   "beat": "P-02a",
   "group": "Act 1",
   "type": "BR",
-  "subject": "\u2014",
+  "subject": "N",
   "height": "high",
-  "side": "front",
-  "fg": "through",
-  "scale": "WIDE",
-  "why": "high, through the banister = trapped up here",
+  "side": "behind",
+  "fg": "clean",
+  "scale": "MEDIUM",
+  "why": "high, behind her = the drop she won't take",
   "mirror_of": null,
   "mode": 1,
   "speaking": false,
@@ -439,7 +439,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": "N-D1b",
+  "story_day": "N-D1d",
   "face": false,
   "light": {
    "source": "exam-room window, blind half open, west wall",
@@ -469,7 +469,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": "N-D1c",
+  "story_day": "N-D1e",
   "face": false,
   "light": {
    "source": "window over the sink, south wall",
@@ -529,7 +529,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": "N-D1c",
+  "story_day": "N-D1e",
   "face": true,
   "light": {
    "source": "window over the sink, south wall",
@@ -2209,7 +2209,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": "N-D5",
+  "story_day": "N-D7",
   "face": false,
   "light": {
    "source": "window over the sink, south wall",
@@ -2269,7 +2269,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": "N-D5",
+  "story_day": "N-D7",
   "face": false,
   "light": {
    "source": "window over the sink, south wall",

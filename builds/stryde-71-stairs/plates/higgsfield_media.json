@@ -3,5 +3,13 @@
  "P0-PROP-N plate": "c6348882-f336-4324-b9fd-87833503a277",
  "P1-LANDING plate": "4b9881ad-2c46-4680-a9a1-052dfb5006ed",
  "P2-KITCHEN plate": "57009490-0204-483d-b7aa-96a86a2a58e4",
- "P7-CLINIC plate": "e1a05f29-8628-482f-8f4f-f7531d1c7849"
+ "P7-CLINIC plate": "e1a05f29-8628-482f-8f4f-f7531d1c7849",
+ "P3-RECEPTION plate": "fa530963-6fdb-4b95-8ac0-70ecc82e2ef2",
+ "P4-STORE plate": "16bae9c4-24aa-499f-83dc-7787b0b3c048",
+ "P5-CHURCH plate": "e8a82aa8-aacc-4b6d-ba72-4c99da24d1c2",
+ "P6-STREET plate": "53dbc5fb-4151-4a0b-8792-2c60ae6ebfbf",
+ "P8-MALL plate": "ddc8406c-24f2-422b-8f07-896679e92d37",
+ "STRYDE front": "d02d16ff-56dc-46b1-a217-53fe60e8d564",
+ "STRYDE back": "ec6d7888-00c0-469e-acbb-d184e2dd8a62",
+ "STRYDE box open": "66864b1e-4cf1-45cc-9bfe-f5c45d589ad5"
 }

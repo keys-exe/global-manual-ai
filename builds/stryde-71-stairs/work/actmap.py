@@ -77,14 +77,14 @@ R("P-01a", A, "Six weeks ago, I was going down my stairs backwards.", "backwards
   "one careful step down backwards", "one step, about two seconds", "stairs: camera at the top, subject below, slow single step", "absent", "—", "NB2",
   "high", BH, "clean", "MEDIUM", "high = small against the drop, overwhelmed", "deep", "deep", *STAIR_AM, "morning", "problem: grey", False, ledger="VN04")
 R("P-01b", A, "One step at a time.", "step", "problem", "N", "L-N-STAIRS", "N-D1",
-  "CU from the side at step height: her slipper lowers onto the next step down, the other foot joins it",
+  "CU from the side at step height, mid-flight (steps above and below in frame): her slipper lowers onto the next step down and the other foot joins it on the same step (Fix, user 2026-09-29)",
   "one foot down, the other joins", "about two seconds", "stairs: feet only, side", "absent", "—", "NB2",
   "ground", PR, "clean", "CU", "ground = the steps themselves", "foreground", "medium", *STAIR_AM, "morning", "problem: grey", False)
 TH("TH-02", A, "I ain't gonna lie, some days I wasn't going down them at all.")
-R("P-02a", A, "I'd just stay upstairs.", "upstairs", "problem", "—", "L-N-STAIRS", "N-D1",
-  "WIDE from the top landing looking down the empty staircase to the closed front door, the hall below dim",
-  "none — the light shifts faintly on the runner", "held, about two seconds", "none", "absent", "—", "NB2",
-  "high", FR, "through", "WIDE", "high, through the banister = trapped up here", "deep", "deep", *STAIR_AM, "morning", "problem: grey", False)
+R("P-02a", A, "I'd just stay upstairs.", "upstairs", "problem", "N", "L-N-STAIRS", "N-D1",
+  "MEDIUM-WIDE from behind her on the top landing: she stands at the head of the stairs looking down the flight to the closed front door, then turns away (Fix, user 2026-09-29)",
+  "looks down the stairs, then turns away from them", "about two seconds", "stairs: camera behind her on the landing, she never steps down", "absent", "—", "NB2",
+  "high", BH, "clean", "MEDIUM", "high, behind her = the drop she won't take", "deep", "deep", *STAIR_AM, "morning", "problem: grey", False)
 R("P-03a", A, "That big knee brace I bought slid right down my leg.", "brace", "failed fix", "N", "L-N-KITCHEN", "N-D1",
   "CU seated at the kitchen table: a black hinged knee brace over her bare right knee, sagging below the kneecap, her hand hauling it up",
   "her hand pulls the brace up once and it slips back", "one pull, about two seconds", "hands: large in frame, one movement", "absent (generic brace, §10)", "—", "NB2",
@@ -102,16 +102,16 @@ R("P-04b", A, "Pain pills.", "pills", "failed fix", "N hand", "L-N-KITCHEN", "N-
   "overhead on the table: orange pill bottles, a blister pack, a coffee mug; her hand taps two tablets into her palm",
   "two tablets tip into her palm", "one tip, about a second", "hands: large in frame", "absent", "—", "NB2",
   "overhead", FR, "clean", "CU", "overhead = routine", "hands", "deep", *KIT, "morning", "problem: grey", False, ledger="VN06")
-R("P-04c", A, "Cortisone shots.", "shots", "failed fix", "N + one-off doctor", "L-CLINIC", "N-D1b",
+R("P-04c", A, "Cortisone shots.", "shots", "failed fix", "N + one-off doctor", "L-CLINIC", "N-D1d",
   "CU: gloved hands hold a syringe to the side of her right knee, the skin swabbed",
   "the needle goes in slowly", "one slow push, about two seconds", "hands: large in frame, one movement", "absent", "—", "NB2",
   "eye", PR, "clean", "CU", "profile runs the needle across the frame", "hands", "shallow", *CLIN, "afternoon", "problem: clinical", False)
-R("P-04d", A, "Every brace and sleeve they make.", "brace", "failed fix", "N hand", "L-N-KITCHEN", "N-D1c",
+R("P-04d", A, "Every brace and sleeve they make.", "brace", "failed fix", "N hand", "L-N-KITCHEN", "N-D1e",
   "high CU: a heap of knee braces and sleeves on the table, her hand drops one more on the pile",
   "one brace dropped on the pile", "one drop, about a second", "hands: one movement", "absent (generic, §10)", "—", "NB2",
   "high", TQ, "clean", "CU", "high = the pile is beneath her, done with it", "hands", "deep", *KIT, "morning", "problem: grey", False)
 TH("TH-04", A, "Nothing worked. Nothing lasted.")
-R("P-05a", A, "Nothing gave me my life back.", "life", "low", "N", "L-N-KITCHEN", "N-D1c",
+R("P-05a", A, "Nothing gave me my life back.", "life", "low", "N", "L-N-KITCHEN", "N-D1e",
   "MEDIUM: N at the kitchen table among the bottles and braces, a cold coffee, looking at nothing",
   "she lets out one breath, shoulders drop", "one breath, about two seconds", "none", "absent", "—", "NB2",
   "eye", PR, "through", "MEDIUM", "profile through the doorway = watched, alone", "eyes", "deep", *KIT, "morning", "problem: grey", True)
@@ -316,12 +316,12 @@ R("C-06a", A, "The link's right down below. Two straps for the price of one righ
   "MCU on the landing, phone propped as in the talking heads: N holds up two straps toward the lens, one in each hand",
   "lifts both straps a little higher", "one lift, about a second", "hands: product rigid in both hands", "held, two units", "VISIBLE", "NBP",
   "eye", FR, "clean", "MCU", "", "product", "medium", "landing window, south wall", 5600, "midday", "offer: bright daylight", True, eg="EG06 · offer overlay")
-R("C-07a", A, "Sixty days to send them back if they don't work.", "Sixty", "guarantee", "—", "L-N-KITCHEN", "N-D5",
+R("C-07a", A, "Sixty days to send them back if they don't work.", "Sixty", "guarantee", "—", "L-N-KITCHEN", "N-D7",
   "overhead on the kitchen table: the open box with two straps side by side",
   "her hand sets the lid beside the box", "one movement, about a second", "hands: straps do not move", "box open, two units", "VISIBLE", "NBP",
   "overhead", FR, "clean", "CU", "overhead = the table, the reveal", "product", "deep", *KIT, "morning", "offer: bright daylight", False, eg="60-day overlay")
 TH("TH-15", A, "Eleven years of knee pain. Gone the first step I took with it on.")
-R("C-09a", A, "I bought my sister a pair that same week.", "sister", "close", "N hands", "L-N-KITCHEN", "N-D5",
+R("C-09a", A, "I bought my sister a pair that same week.", "sister", "close", "N hands", "L-N-KITCHEN", "N-D7",
   "CU: she writes her sister's name on a card and lays it on the closed box",
   "a few pen strokes", "about two seconds", "hands: large in frame", "box closed", "—", "NBP",
   "high", TQ, "clean", "CU", "high = her own view", "hands", "medium", *KIT, "morning", "after", False)

@@ -19,9 +19,15 @@ REF = {
  "P6": B / "plates/P6-STREET_v2.png", "P7": B / "plates/P7-CLINIC_v2.png", "P8": B / "plates/P8-MALL_v4.png",
 }
 MODEL = {"NB2": "nano_banana_2", "NBP": "nano_banana_pro", "GPT": "gpt_image_2_5"}
-WARD = {
- "N-D1": "a faded blue floral house dress falling to the knee, a grey cardigan and pink terry slippers",
+WARD = {   # one outfit per story day / event (wardrobe map, STEP4_5.md) — no two days share a top or a dress
+ "N-D1":  "a faded blue floral house dress falling to the knee, a grey cardigan and pink terry slippers",
+ "N-D1b": "a burgundy velour zip-up tracksuit jacket with matching trousers and white sneakers",
+ "N-D1c": "a mustard-yellow long-sleeve cable-knit sweater, black stretch trousers and brown moccasin slippers",
+ "N-D1d": "a navy-and-white striped button-up blouse, a knee-length navy skirt and black flats",
+ "N-D1e": "an olive-green long-sleeve knit top, charcoal stretch trousers and brown moccasin slippers",
+ "N-D7":  "a lilac long-sleeve cotton top",
 }
+SHEET_DAYS = {"N-TODAY", "C1-D3"}   # the days the cast sheet's own outfit is worn
 N = SUBJ["N"]
 M1 = ("no AI face, no plastic skin, no waxy skin, no extra fingers, no fused fingers, no melted hands, no deformed limbs, "
       "no warped background, no CGI look, no fake commercial gloss, no over-saturated colors, no vignette, no moody dark grade")
@@ -42,7 +48,15 @@ def seed(beat, subject_word, focus_name, prose, light_subject, quality, neg, ref
         lt = lt.replace(", so the face has a lit side toward " + {"L": "left", "R": "right", "back": "back", "front": "front"}[r["light"]["key_side"]] + " and a softer shadow side, with a small catchlight in the eyes", "")
     body = [S("CAM-LOCK"), a, focus_line(r, focus_name)]
     if house: body.append(prop_ref())
-    body += prose
+    day, subj = r["story_day"], r["subject"]
+    txt = " ".join(prose)
+    if subj.startswith("N") and day in WARD and WARD[day] not in txt:
+        txt += (" Her clothes today: " + WARD[day] + " — only as much of them as the frame shows.")
+    if day not in SHEET_DAYS:   # face and hair from the sheet, never its clothes (user 2026-09-29: same wardrobe on every day)
+        txt = txt.replace("exactly as in her attached reference sheet", "her face, hair and build exactly as in her attached reference sheet, but not the clothes she wears on the sheet")
+        if "reference sheet" in txt:
+            neg += ", no outfit copied from the reference sheet, no cream open cardigan over a coral top, no plum blouse with khaki trousers"
+    body.append(txt)
     body += [lt, S("CAP-FILE"),
              "AVOID: " + ", ".join([S("NEG-FILE"), M1, neg])]
     return dict(model=MODEL[r["model"]], refs=refs, body=body)
@@ -50,36 +64,42 @@ def seed(beat, subject_word, focus_name, prose, light_subject, quality, neg, ref
 BEATS = {}
 
 # ---------------------------------------------------------------- Act 1 — the problem days (N-D1, grey mornings)
-def p_01a():
+def p_01a():   # Fix 2026-09-29: "she should facing up the stairs both hands on the rails. struggling to go down and stepping backwards"
     return seed("P-01a", "her on the stairs", "her", [
       "Her staircase, exactly as in the attached hall photo: the straight open flight with the worn beige runner, the white balusters and dark oak handrail, the photo wall of framed family portraits. "
       "Seen from the top of the stairs looking down the flight. A woman of seventy-one — " + N["markers"] + ", exactly as in her attached reference sheet — is three steps down, "
-      "going down her own stairs backwards: facing up the stairs toward the landing, both hands gripping the dark oak handrail, head bowed to watch her feet, her face mostly hidden. "
-      "Caught mid-step: her right foot already lowered onto the step below and taking her weight, her left foot still on the step above, knees bent, careful and slow. "
+      "going down her own stairs BACKWARDS: her back to the hall below, her body and face turned UP the stairs toward the landing and the camera, "
+      "BOTH hands clamped on the rails — one on the dark oak handrail, the other flat on the wall-side rail — her arms taking her weight. "
+      "She is struggling: knees stiff, shoulders hunched, jaw set, head bowed to watch her feet. Caught mid-step backwards: her right foot feeling blindly behind her for the step below, "
+      "toes just touching its edge, all her weight still on her left foot and her two hands. "
       "She is wearing " + WARD["N-D1"] + ". The hall below is dim; nothing tidied."],
       "her and the stairs", GREY,
-      "no fast movement, no stumbling, no fall, no one else on the stairs, no stairlift, no walking stick, no knee brace, no product, no smiling, no different staircase from the hall photo, no turn in the stairs",
+      "no facing down the stairs, no walking forwards, no hand off the rails, no fast movement, no stumbling, no fall, no one else on the stairs, no stairlift, no walking stick, no knee brace, no product, no smiling, no different staircase from the hall photo, no turn in the stairs",
       [("N sheet", REF["N"]), ("P0-PROP-N plate", REF["P0"])], side="front")
 BEATS["P-01a"] = p_01a
 
-def p_01b():
+def p_01b():   # Fix 2026-09-29: "should not be already down and should show both feet stepping on the same stair steps slowly"
     return seed("P-01b", "her feet on the stairs", "her feet", [
-      "Close on the stairs from the side, the lens at the height of the steps: two carpeted treads of the worn beige runner with their white-painted risers, a white baluster and the dark oak handrail post at the edge of the frame. "
-      "Her feet in pink terry slippers, bare ankles, the hem of a faded blue floral house dress just in frame: she is going down backwards, her heels toward the bottom of the stairs. "
-      "Caught mid-step: her left slipper is lowering onto the next step down, toes still on the edge of the step above, her right foot planted, both feet flat and careful. Only her feet and ankles in frame."],
+      "Close on the stairs from the side, the lens at the height of the steps, halfway up the flight: several carpeted treads of the worn beige runner with their white-painted risers climbing out of frame above her "
+      "and more steps going on down below her, a white baluster and the dark oak handrail at the edge of the frame. She is in the MIDDLE of the staircase, nowhere near the bottom — no hall floor in frame. "
+      "Her feet in pink terry slippers, bare ankles, the hem of a faded blue floral house dress just in frame: she is going down backwards, her heels toward the bottom of the stairs, one step at a time. "
+      "Caught slowly bringing both feet together on the SAME step: her right slipper already planted flat on the tread, her left slipper lowering to land beside it on that same tread, "
+      "a few centimetres above it, toes still over the edge of the step above. Both feet in frame. Only her feet and ankles in frame."],
       "her feet and the steps", GREY,
-      "no full body, no face, no fast movement, no stumbling, no bare feet, no shoes, no knee brace, no product, no different carpet from the hall photo",
+      "no full body, no face, no hall floor, no bottom of the stairs, no feet on different steps at the end, no fast movement, no stumbling, no bare feet, no shoes, no knee brace, no product, no different carpet from the hall photo",
       [("P0-PROP-N plate", REF["P0"])])
 BEATS["P-01b"] = p_01b
 
-def p_02a():
-    return seed("P-02a", "the empty staircase", "everything", [
-      "Her staircase, exactly as in the attached landing and hall photos, seen from the top landing looking down the whole straight flight through the white balusters: "
-      "the worn beige runner, the dark oak handrail, the photo wall of family portraits running down on the left, the front door closed at the bottom. "
-      "Nobody on the stairs. The hall below is dim and still, a cardigan over the newel post; a strip of grey light from the landing window lies across the top steps."],
-      "the staircase", GREY,
-      "no people, no person on the stairs, no open door, no bright sunlight, no different staircase from the landing and hall photos, no turn in the stairs",
-      [("P1-LANDING plate", REF["P1"]), ("P0-PROP-N plate", REF["P0"])])
+def p_02a():   # Fix 2026-09-29: "camera angle at her back and she just looking at the stairs then just leaves cause she dont want to go down"
+    return seed("P-02a", "her at the top of the stairs", "everything", [
+      "Her staircase, exactly as in the attached landing and hall photos. Seen from behind her on the top landing: she — " + N["markers"] + ", exactly as in her attached reference sheet — "
+      "stands at the head of the stairs with her back to the camera, the whole straight flight dropping away below her: the worn beige runner, the dark oak handrail, the photo wall of family portraits running down on the left, "
+      "the front door closed at the bottom and the hall below dim. She has been looking down the stairs and has given up: caught just as she turns away from them, "
+      "her shoulders sagging, her weight shifting back onto the landing, one hand letting go of the newel post, her head still half toward the drop. Her feet stay on the landing; she does not step down. "
+      "She is wearing " + WARD["N-D1"] + ". A strip of grey light from the landing window lies across the top steps."],
+      "her and the staircase", GREY,
+      "no face to camera, no stepping down, no one else, no open door, no bright sunlight, no different staircase from the landing and hall photos, no turn in the stairs, no knee brace, no product",
+      [("N sheet", REF["N"]), ("P1-LANDING plate", REF["P1"]), ("P0-PROP-N plate", REF["P0"])])
 BEATS["P-02a"] = p_02a
 
 def p_03a():
@@ -106,7 +126,7 @@ BEATS["P-03b"] = p_03b
 def p_04a():
     return seed("P-04a", "her on the treatment table", "the therapist's hands on her knee", [
       "In a physical therapy exam room, " + CLINIC + ". She lies on her back on the padded table — " + N["markers"] + ", exactly as in her attached reference sheet — "
-      "in her faded blue floral house dress hitched above the knee, her head on the paper-covered pillow, looking at the ceiling, patient and tired. "
+      "in " + WARD["N-D1b"] + ", the right trouser leg rolled up above the knee, her head on the paper-covered pillow, looking at the ceiling, patient and tired. "
       "A physical therapist in navy scrubs, only his forearms and hands and the side of his torso in frame, holds her right leg: one hand under her calf, one on the front of her bare knee. "
       "Caught mid-bend: her right knee is bent to about ninety degrees and he is easing it a little further."],
       "her and the therapist's hands", "even afternoon daylight through the half-open blind, clinical and plain",
@@ -117,7 +137,7 @@ BEATS["P-04a"] = p_04a
 def p_04b():
     return seed("P-04b", "the kitchen table", "her hand and the pills", [
       "Looking straight down at her kitchen table, " + KITCH + ": three orange prescription pill bottles with white caps and plain white labels with no readable writing, a silver blister pack half used, "
-      "a white coffee mug with a ring of cold coffee, reading glasses, the worn wood of the table. Her left hand — deep brown skin, a plain wedding band — is cupped open and her right hand tips one bottle over it: "
+      "a white coffee mug with a ring of cold coffee, reading glasses, the worn wood of the table. Her left hand — deep brown skin, a plain wedding band, the ribbed cuff of her mustard-yellow cable-knit sweater at the wrist — is cupped open and her right hand tips one bottle over it: "
       "caught as two small white tablets drop into her palm."],
       "her hands and the table", GREY,
       "no face, no readable labels, no brand names, no text, no knee strap, no product, no spilled pills everywhere",
@@ -126,7 +146,7 @@ BEATS["P-04b"] = p_04b
 
 def p_04c():
     return seed("P-04c", "her right knee and the doctor's hands", "the needle and the gloved hands", [
-      "Close on her bare right knee from the side, on the paper-covered exam table of " + CLINIC + ". Her skin deep brown, the hem of her faded blue floral house dress pushed up, a fresh wipe of antiseptic shining on the outer side of the knee. "
+      "Close on her bare right knee from the side, on the paper-covered exam table of " + CLINIC + ". Her skin deep brown, the hem of her knee-length navy skirt pushed up above the knee, the striped blouse cuff of her resting hand just in frame, a fresh wipe of antiseptic shining on the outer side of the knee. "
       "A doctor's hands in blue nitrile gloves hold a small syringe with a clear barrel horizontally against the side of her knee; the other gloved hand steadies the joint. "
       "Caught as the needle tip meets the skin, the plunger not yet pressed. The room behind is soft."],
       "her knee and the gloved hands", "even afternoon daylight through the half-open blind, clinical and plain",
@@ -138,7 +158,7 @@ def p_04d():
     return seed("P-04d", "the pile of braces", "her hand and the pile", [
       "From above at a three-quarter angle, a corner of her kitchen table, " + KITCH + ": a heap of knee braces and sleeves she has given up on — a black hinged brace, two beige elastic sleeves, "
       "a blue neoprene sleeve with a hole for the kneecap, a padded wrap with velcro — all ordinary and unbranded, tangled together. "
-      "Her hand, deep brown skin with a plain wedding band, has just let go of one more grey elastic sleeve: caught mid-drop, a few centimetres above the pile."],
+      "Her hand, deep brown skin with a plain wedding band, the cuff of her olive-green long-sleeve knit top at the wrist, has just let go of one more grey elastic sleeve: caught mid-drop, a few centimetres above the pile."],
       "her hand and the pile", GREY,
       "no face, no logos, no brand names, no readable text or labels, no knee strap, no product, no new-looking packaging",
       [("N sheet", REF["N"]), ("P2-KITCHEN plate", REF["P2"])])
@@ -147,7 +167,7 @@ BEATS["P-04d"] = p_04d
 def p_05a():
     return seed("P-05a", "her at the kitchen table", "her", [
       "Seen from the next room through the open kitchen doorway, the white casing soft at the edge of the frame: " + KITCH + ". "
-      "She sits alone at the table in profile — " + N["markers"] + ", exactly as in her attached reference sheet — in her faded blue floral house dress and grey cardigan, "
+      "She sits alone at the table in profile — " + N["markers"] + ", exactly as in her attached reference sheet — in " + WARD["N-D1e"] + ", "
       "among orange pill bottles, a heap of knee braces and sleeves and a mug of cold coffee, her hands in her lap, looking at nothing out of the window. "
       "Caught mid-breath: a long breath out, her shoulders dropping."],
       "her", GREY,
@@ -301,7 +321,7 @@ BEATS["R-07c"] = r_07c
 
 # ---------------------------------------------------------------- Act 4 — mechanism (Loretta's words)
 def m_01a(): return seed("M-01a", "her on the treatment table", "her", [
-    "In the physical therapy exam room, " + CLINIC + ". Seen from above: she lies back on the padded table — " + N["markers"] + ", exactly as in her attached reference sheet — in " + WARD["N-D1"] + ", "
+    "In the physical therapy exam room, " + CLINIC + ". Seen from above: she lies back on the padded table — " + N["markers"] + ", exactly as in her attached reference sheet — in " + WARD["N-D1b"] + ", the right trouser leg rolled above the knee, "
     "a heat pad over her right knee, eyes closed, caught as she settles her head back on the paper pillow, resigned."],
     "her", "even afternoon daylight through the half-open blind, clinical and plain", "no smiling, no second person, no machines, no readable text, no knee strap, no product",
     R(("N sheet", "N"), ("P7-CLINIC plate", "P7")), house=False)
@@ -445,12 +465,12 @@ def c_06a(): return seed("C-06a", "her on the landing", "the straps", [
     R(("N sheet", "N"), ("P1-LANDING plate", "P1"), *PR_REFS["held"]))
 BEATS["C-06a"] = c_06a
 def c_07a(): return seed("C-07a", "the open box", "everything", [
-    "Looking straight down at her kitchen table in the morning, " + KITCH + ": the open box. " + PS.PACKAGE_LOCK + " Her hand sets the lid down beside the box, caught as it lands."],
+    "Looking straight down at her kitchen table in the morning, " + KITCH + ": the open box. " + PS.PACKAGE_LOCK + " Her hand, the cuff of her lilac long-sleeve cotton top at the wrist, sets the lid down beside the box, caught as it lands."],
     "the box", "bright morning daylight through the sink window", "no third strap, no single strap, no other items in the box, no offer text, no stickers, no readable text except the wordmark",
     R(("P2-KITCHEN plate", "P2"), *PR_REFS["box"]))
 BEATS["C-07a"] = c_07a
 def c_09a(): return seed("C-09a", "her hand and the box", "her hand and the card", [
-    "Close on her kitchen table, " + KITCH + ": the closed matte-black box with the lowercase grey stryde wordmark centred on the lid, and a small white card lying on it. Her hand — deep brown skin, a plain wedding band — "
+    "Close on her kitchen table, " + KITCH + ": the closed matte-black box with the lowercase grey stryde wordmark centred on the lid, and a small white card lying on it. Her hand — deep brown skin, a plain wedding band, the cuff of her lilac long-sleeve cotton top at the wrist — "
     "writes on the card with a pen, caught mid-stroke; the writing is a short handwritten name, loose and not readable."],
     "her hand", MORN_K, "no readable handwriting, no other text, no offer text, no stickers",
     R(("N sheet", "N"), ("P2-KITCHEN plate", "P2"), *PR_REFS["box"]))

@@ -193,15 +193,20 @@ Higgsfield `gpt_image_2_5` · `variant: sunburst` · `quality: high` · `resolut
 
 | Day | When (script) | N | C1 Loretta | C2 Daughter |
 |---|---|---|---|---|
-| N-D1 / D1b / D1c | "Six weeks ago" — the problem days | faded blue floral knee-length house dress, grey cardigan, pink terry slippers; bare right knee (brace beats) | — | — |
+| N-D1 | "Six weeks ago" — the stairs morning and that evening's brace (P-01a–P-03b) | faded blue floral knee-length house dress, grey cardigan, pink terry slippers; bare right knee (brace beats) | — | — |
+| N-D1b | physical therapy session (P-04a, M-01a) | burgundy velour zip-up tracksuit, white sneakers; right trouser leg rolled above the knee | — | — |
+| N-D1c | the pills morning (P-04b, hands) | mustard-yellow cable-knit sweater (cuff at the wrist), black stretch trousers, brown moccasin slippers | — | — |
+| N-D1d | the cortisone shot at the doctor's (P-04c) | navy-and-white striped button-up blouse, knee-length navy skirt (pushed above the knee), black flats | — | — |
+| N-D1e | the evening she gives up — braces pile and the table (P-04d, P-05a) | olive-green long-sleeve knit top, charcoal stretch trousers, brown moccasin slippers | — | — |
 | N-D2 | the wedding, June (evening) | lavender chiffon dress to mid-calf, pearl stud earrings, low silver heels | royal-blue satin dress to the knee, white slip-on sneakers for dancing (strap hidden under the hem) | — |
 | N-D3a / N-D3 | Loretta's visit — arrival, then the next morning and the first stairs | rose-pink short-sleeve blouse, knee-length denim skirt (right knee free for the brace, ice pack and strap), tan house slippers | **sheet outfit**: plum blouse, khaki trousers (rolled up on R-03a), white canvas slip-ons | — |
 | N-D4 | "Last Sunday" — hook stairs and the church steps | emerald-green church dress to mid-calf, matching wide-brim hat (church only), low black pumps; strap **hidden** under the hem | — | **sheet outfit**: heather-grey sweatshirt, jeans, white trainers |
 | N-D5 | "every day for six weeks" — bedroom, table, box | pale-yellow cotton nightgown to the knee (PR-05a, C-01a) → navy trousers pulled over (PR-05b); the table beats hands-only | — | — |
 | N-D6 | "Yesterday" — the store walk | coral windbreaker over a white T-shirt, light-blue straight jeans (strap hidden), white walking sneakers, canvas tote | — | — |
+| N-D7 | "that same week" — the box and the card for her sister (C-07a, C-09a, hands) | lilac long-sleeve cotton top (cuff at the wrist) | — | — |
 | N-TODAY | the selfie talking heads and the offer hold-up | **sheet outfit**: cream open cardigan over the coral top, small gold studs | — | — |
 
-**§14A novelty:** no two days share a top or a dress; the church day and the hook are the same Sunday (one outfit, by the script's timing).
+**§14A novelty:** no two days or events share a top or a dress (user 2026-09-29: the problem days were split — therapy, pills, shot and the braces evening each get their own outfit; every prompt names the day's clothes and takes only face, hair and build from the cast sheet, never its outfit); the church day and the hook are the same Sunday (one outfit, by the script's timing).
 
 ### Visual Instruction Ledger — assigned (§27F)
 
