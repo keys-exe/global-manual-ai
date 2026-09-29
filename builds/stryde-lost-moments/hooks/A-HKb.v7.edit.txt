@@ -1,0 +1,4 @@
+A-HKb v7 — Fix (user): TO LOW MAKE LITTLE BIT HIGER
+1. A-HKb_v7_shift.png: the strap lifted 72px by hand from v6 (mask of the strap, uncovered strip filled from the skin below) — right height, rough seam.
+2. Nano Banana Pro cleanup (job 34693a56-9e30-48ea-8f84-984e76c4e857) moved the strap back down (rows 827-1100) — not used.
+3. GPT Image 2.5 high (job 477e36cd-a674-42c0-be8a-fc18a8ef38fa), refs: the composite + v6: seam repaired, height kept (strap rows 750-1019 vs v6 816-1088) → A-HKb_v7g.png, 1520x2688.

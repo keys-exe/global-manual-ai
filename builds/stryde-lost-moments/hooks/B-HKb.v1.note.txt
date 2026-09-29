@@ -1,0 +1,1 @@
+B-HKb v1 — the prompt sent is the builder text (work/prompts/B-HKb.t2i.txt) condensed, with the image order stated: 1 placement reference (user photo, media 245be41b…), 2 front.webp, 3 C2 sheet, 4 P1-HIGHST plate. job ae29d959-5eda-4bdd-9f6c-bf1cb389e0a1

@@ -120,6 +120,52 @@ def a_hkb():
     return dict(model="nano_banana_pro", refs=refs, face="NOFACE", body=body)
 BEATS["A-HKb"] = a_hkb
 
+SUBJ["C2"] = dict(sheet_job="93f2ff6f-c34b-4e1f-af22-12eea57d8a87", name="Sheila",
+            markers="a broad square face with a heavy jaw, small pale-blue eyes, a short upturned nose, a flat brown mole on the chin left of centre, a short cropped grey pixie cut, short and stocky",
+            skin="a white British woman of sixty-eight, fair freckled skin going pink in the cold, soft creased skin over the knees, faint thread veins on the shins")
+WARD["S2-D1"] = "a grey marl T-shirt under an open teal rain jacket, khaki walking shorts ending above the knee so both knees are bare, and grey trainers"
+HIGHST_ANCHORS = "the green metal bench bolted to the paving slabs, the black cast-iron lamppost beside it, the greengrocer's green awning and fruit crates across the pavement, plain unlettered shop signs"
+
+def b_hka():
+    r = ROWS["B-HKa"]; s = SUBJ["C2"]
+    body = [S("CAM-LOCK"),
+     angle_line(r, "her"), focus_line(r, "Sheila"),
+     S("SCENE-REF").replace("[LOCATION]", "HIGH STREET").replace("[the location's named anchors, stated in one clause]", HIGHST_ANCHORS)
+       .replace("[where the camera now sits, what it looks across, and how that differs from the reference view]", "the camera stands on the pavement a few metres from the bench at her eye height, three-quarter on to her as she sits, the shopfronts behind her instead of running away down the street"),
+     S("SUBJ-REF").replace("[two or three named markers: hair, build, one distinctive feature]", s["markers"]),
+     S("FACE-SEED").replace("[the character's named markers]", "the heavy jaw, the pale-blue eyes and the mole on the chin"),
+     "Caught mid-action: she is SINKING DOWN onto the bench in pain, hips already dropping, one hand gripping the bench's armrest and the other pressed flat just below her right kneecap, her right knee stiff, weight coming off it, shoulders hunched and tense. Her face shows the pain plainly — brows drawn together, eyes half closed, lips pressed tight — a woman who has had to stop because her knee won't carry her any further. A full shopping bag of vegetables slumped at her feet on the paving. Nothing on either knee.",
+     "Wearing " + WARD["S2-D1"] + ".",
+     "Real unretouched skin: " + s["skin"] + ".", S("SKIN-B1"),
+     light_line(r, "her", "grey overcast morning, soft and flat — the problem state, cool and muted, never moody"),
+     S("BROLL-REAL"), S("PHYS-FRAME-C"), S("CAP-A"), S("CAP-FILE"),
+     "AVOID: " + ", ".join([S("NEG-SUBJ"), S("NEG-SCENE"), S("NEG-LIGHT"), S("NEG-M1"), S("NEG-FILE"),
+       "no smiling, no relaxed face, no product anywhere, no knee strap, no knee support, no walking stick, no second person in focus, no readable lettering"])]
+    return dict(model="nano_banana_2", refs=[("C2 sheet", s["sheet_job"]), ("P1-HIGHST plate", "c3dba824-7767-44b1-b9cf-0c05730558f8")], face="FACE", body=body)
+BEATS["B-HKa"] = b_hka
+
+def b_hkb():
+    r = ROWS["B-HKb"]; s = SUBJ["C2"]
+    body = [S("CAM-LOCK"),
+     "COMPOSITION AND PRODUCT PLACEMENT exactly like the attached placement reference photo (user, 2026-09-28): the camera at knee height, a three-quarter view from the outer side of her RIGHT knee as she sits, the knee bent at about ninety degrees, thigh toward the camera at the top of the frame, shin down to the paving; knee and shin fill the frame.",
+     focus_line(r, "Sheila"),
+     S("SCENE-REF").replace("[LOCATION]", "HIGH STREET").replace("[the location's named anchors, stated in one clause]", HIGHST_ANCHORS)
+       .replace("[where the camera now sits, what it looks across, and how that differs from the reference view]", "the camera is low beside the bench at knee height, looking at her right knee with the paving slabs and the bench's green slats behind and below, the shopfronts only a soft blur"),
+     S("SUBJ-REF").replace("[two or three named markers: hair, build, one distinctive feature]", s["markers"]),
+     PS.REF_PROD + " a single unit. The strap sits EXACTLY as in the placement reference: snug on the patellar tendon directly under the kneecap, the concave notch hugging the lower edge of the kneecap with no gap, the two peaks rising either side of the base of the kneecap, the kneecap itself fully uncovered, the brushed-chrome slide with its three chevrons at the outer end, the black knit band wrapping round the back of the calf. No hands on the strap — her hands rest on her thigh at the top edge of the frame.",
+     PS.WORDMARK_LOCK, PS.SIZE_WORN,
+     "Her face is out of frame above; the frame holds her right knee and shin, the hem of her khaki shorts, the bench slats and a grey trainer at the bottom.",
+     "Wearing " + WARD["S2-D1"] + ".",
+     "Real unretouched skin: " + s["skin"] + ".",
+     light_line(r, "her knee", "grey overcast morning, soft and even — the turn"),
+     S("BROLL-REAL"), S("PHYS-FRAME-C"), S("CAP-A"), S("CAP-FILE"),
+     "AVOID: " + ", ".join([S("NEG-SUBJ"), S("NEG-SCENE"), S("NEG-LIGHT"), S("NEG-M1"), S("NEG-FILE"), PS.NEG_WORDMARK,
+       "no gap between the strap and the kneecap, no strap low on the shin, no strap over the kneecap, no hands covering the strap, no flat pad, no sleeve, no wrap, no strap on the left knee, no second strap, no man, no hairy legs, no sofa, no carpet, no face in frame"])]
+    refs = [("placement reference (user)", "245be41b-3d1a-4f2d-b86a-2bd65f941f62"), ("front.webp", "20bc8be5-8526-48b6-a6e0-acbcb17b7c56"),
+            ("C2 sheet", s["sheet_job"]), ("P1-HIGHST plate", "c3dba824-7767-44b1-b9cf-0c05730558f8")]
+    return dict(model="nano_banana_pro", refs=refs, face="NOFACE", body=body)
+BEATS["B-HKb"] = b_hkb
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or BEATS:
