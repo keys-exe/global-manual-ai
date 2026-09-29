@@ -1,0 +1,35 @@
+{
+ "beat": "SH-01",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\": \"sh_01\", \"subject\": \"Medium close-up of a white British woman surgeon of fifty-six in navy scrubs at her desk, holding the knee strap still at chest height in both hands. Exactly as in the start frame.\", \"camera\": {\"movement\": \"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\", \"framing\": \"PROPPED as in the start frame.\"}, \"motion\": \"Already facing the patient across the desk on the first frame: she keeps her eyes on the patient and her warm, attentive half-smile widens a little into a confident, reassuring smile, with one small slow nod, about two seconds, then she holds the smile, eyes bright and engaged. Her hands and the strap stay still. The strap keeps its exact shape, size and wordmark in every frame; its rigid shell never bends. Everything in frame keeps the exact form, proportion and count it has in the start frame. Mass and momentum: the head moves first, the smile settles.\", \"lighting\": \"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\", \"style\": \"As in the start frame.\", \"negatives\": \"no morphing, no warping, no melting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no camera travelling with the subject, no slow motion, no music, no speech, no extra fingers, no fused fingers, no melted hands, no white coat, no speaking, no talking, no blank stare, no looking away to the side, no stern face, no exaggerated grin, no teeth-baring\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_141448_7f12291f-4ad1-4252-9ee4-9134fc3796aa.png",
+ "start_approved": true,
+ "approved_by": "user: Confirm on the board (SH-01 image v2, 2026-09-29)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 3,
+ "risks": [
+  {
+   "risk": "face drifts or changes",
+   "prevented_by": "one small eye-line change only; HOLD clause; 'no speaking'"
+  },
+  {
+   "risk": "strap bends in her hands",
+   "prevented_by": "hands and strap stay still; rigid clause; product negatives"
+  },
+  {
+   "risk": "fingers fuse on the shell",
+   "prevented_by": "hands do not move; 'no fused fingers'"
+  }
+ ],
+ "fix_note": "Frame fault (user Fix: MAKE THE DOCTOR FACING ON THE CLIENT): she was turned away in the frame \u2192 new confirmed frame faces the patient; motion keeps her eyes on the patient, smile + small nod",
+ "user_go": "user: Confirm on the new frame + 'FIX THOSE' (2026-09-29)"
+}

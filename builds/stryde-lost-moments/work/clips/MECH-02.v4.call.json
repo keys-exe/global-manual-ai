@@ -1,0 +1,35 @@
+{
+ "beat": "MECH-02",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\": \"mech_02\", \"subject\": \"A stylised anatomical knee from a low three-quarter angle against a near-black field, the strap seated below the kneecap taking the load. Exactly as in the start frame.\", \"camera\": {\"movement\": \"Completely locked off: no drift, no orbit, no push-in, no zoom, no pan, no cut \u2014 one continuous shot from one fixed viewpoint.\", \"framing\": \"Exactly as in the start frame, first frame to last.\"}, \"motion\": \"Almost a still image. The bones, muscles, the patellar tendon and the strap stay exactly where they are in the start frame on every frame, like a sculpture: the pale patellar tendon below the strap keeps its exact shape, position, width and length, never slides, never bends, never fades and never merges into the shin bone. The only movement: a soft cool rim light glides very slowly down the outer glass-like shell of the leg, top to bottom, once across the clip, and the faint warmth under the pad dims gently. The rigid shell never bends, flexes or changes proportion; same peaks, same wordmark position and spelling. The whole shot keeps the start frame's framing, scale and position the entire time.\", \"lighting\": \"As in the start frame: three-source render lighting, near-black field, no change across the clip.\", \"style\": \"As in the start frame.\", \"negatives\": \"no camera movement, no orbit, no zoom, no cut, no second shot, no angle change, no hands, no moving tendon, no tendon sliding, no tendon disappearing, no tendon merging with bone, no bone shifting, no muscle movement, no knee bending, no skeleton hands, no second limb, no extra bones, no people, no flat band replacing the shell, no strap changing shape, no strap sliding, no strap rotating, no missing peaks, no missing chrome slides, no misspelled wordmark, no emission crossing the product line, no labels, no arrows, no text, no lasers, no fire, no sparks, no external energy, no x-ray look, no cartoon look, no zooming in or out, no jumping between framings, no stutter, no looping back, no scale change\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_131257_0b1fb7fa-097a-47e4-b1a0-5df9969160ef.png",
+ "start_approved": true,
+ "approved_by": "user: 'I'VE CONFIRM PROCEED' (2026-09-29) on the Act 1 images",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 4,
+ "risks": [
+  {
+   "risk": "the strap slides or rotates under load",
+   "prevented_by": "'the product holds station under every arrival'; NEG-PROT"
+  },
+  {
+   "risk": "glow crosses the product line",
+   "prevented_by": "NEG-PROT; ember stays dim"
+  },
+  {
+   "risk": "labels or arrows appear",
+   "prevented_by": "ANAT-NEG"
+  }
+ ],
+ "fix_note": "Fault in the motion (user Fix: DONT MOVE THE TENDON): v3's load pulse made the tendon below the strap slide and merge into the shin bone from ~2.4s (contact sheet) \u2192 no load pulse at all; anatomy held like a sculpture, only a slow rim-light glide; tendon negatives added; 3s",
+ "user_go": "user: Fix 'DONT MOVE THE TENDON' on v3 + 'FIX THOSE' (2026-09-29)"
+}
