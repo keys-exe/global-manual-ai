@@ -1,0 +1,11 @@
+{"taskId": "c0bf00d6ee61d3ad580215e9063cce62", "created": true}
+{
+  "taskId": "c0bf00d6ee61d3ad580215e9063cce62",
+  "state": "success",
+  "credits": 18.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1790700054642-fqbl3487u4c.png"
+  ],
+  "saved": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/act2/A-01.png"
+}

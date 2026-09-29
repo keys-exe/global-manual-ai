@@ -1,0 +1,11 @@
+{"taskId": "1c991c1387eb2337711b4e7121b3fffc", "created": true}
+{
+  "taskId": "1c991c1387eb2337711b4e7121b3fffc",
+  "state": "success",
+  "credits": 18.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/workers/images/image_e68bc27c053c026693b459baa5fb86b4.png"
+  ],
+  "saved": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/act2/A-06.png"
+}
