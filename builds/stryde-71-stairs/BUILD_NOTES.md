@@ -92,6 +92,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   motionPrompt) → TH cut points `vo/cut/v3/VO_T2.beats.json` → 16 THs `trim.py` PASS → board. The T1-based THs + VO cuts + one-go
   render moved to the Old board.
 
+- 2026-09-29: user "CONFIRM THE TH LETS MOVE TO THE HOOKS" → TH-01…16 + TH-ALL-T1 `use`, VO T2 locked (`voLocked`). Asked about the
+  unconfirmed hook frames (HK-01a v2, P8-MALL, HK-01b/HK-02b v2): user will check them on the board first — no hook video until then.
+
 ## Where it stands
 - **Voice stage redone to V7.66.0, no laugh/sigh** (2026-09-29): VO takes (text v2) + TH-ALL-T1 (now T2) + TH-01…16 on the board To check. Working take **T2** (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`); a confirmed different take → one new Avatar V render + re-cut.
 - **Step 6 — hooks (the hook gate):** Hook 1: HK-02a video confirmed (use); HK-01a new frame v2 To check (then its video, gen 2).
