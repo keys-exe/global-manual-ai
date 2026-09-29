@@ -247,7 +247,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   tendon under the kneecap) on the board as review; its v1 video (made from image v1) removed for room. The rough cuts still
   carry BR-09a v1 until its new video exists.
 
-## Where it stands (2026-09-28 22:55)
+  2026-09-29 ~11:45 (user "FIX THOSE"): BR-15b image Fix "wrong product". v1 had rendered a tall shin-guard pad (no peaks, notch,
+  chrome or wordmark). Fix at the source (FIX11 in `build_broll.py`): the front product photo is the first reference, the
+  confirmed small BR-15a v3 frame sets size and grip, and the TH and back refs are added. Image v2 (job 50fd0612…) is on the board
+  as review. It shows the real strap at the right size, but he holds it long side vertical, not level as the prompt asked. The
+  user decides. The card's video goes back to planned: its old v1 was made from image v1, and the new video follows the Confirm.
+
+## Where it stands (2026-09-29 11:50)
+- BR-15b image v2 To check (the strap is held turned sideways). Its video follows the Confirm, then the rough cuts are re-rendered.
 - BR-09a image v2 To check → then its video → re-render the rough cuts once more.
 - BR-08b, BR-08c, BR-09b videos To check. Rough cuts v2 sent (review copies).
 - Open: F4 · TH body check · where the finished videos go (board full).

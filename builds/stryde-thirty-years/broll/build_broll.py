@@ -787,6 +787,28 @@ B["BR-09a"] = (NBP, ["1e5c6dc9-0aa4-45b2-9083-eb10bcc7b862", "C1", "S1"], photo(
     "no finger on the kneecap itself, no finger on the side of the knee, no finger on the shin, no more than one finger touching her, "
     "no hand gripping the knee, no other change to the image, " + NEG_HANDS))
 
+# BR-15b image Fix (user: "wrong product", 2026-09-29 ~11:00): v1 rendered a tall shin-guard pad with no peaks, notch, chrome or
+# wordmark, held long-side up. Fixed at the source: the front product photo is the FIRST reference, the confirmed small BR-15a v3
+# frame (job ref) sets its size and grip, and the shell is held LEVEL (long side horizontal) so the peaks, notch and wordmark read.
+FIX11 = {"BR-15b": "wrong product"}
+B["BR-15b"] = (NBP, ["front", "90168a20-dade-40fe-96db-2ffae7f4f02b", "C1", "TH", "S1", "P2", "back"], photo([
+    "The strap in this photo is THE EXACT SAME OBJECT as the FIRST attached product photo, the front — same shape, same parts — and "
+    "EXACTLY AS SMALL as the strap in the SECOND attached image, held the same way. A snapshot from a phone held over her shoulder as "
+    "she sits at the workbench. Across the bench he hands her the strap: his right hand holds it level and upright, long side "
+    "horizontal, by the shell's bottom edge with his thumb in front below the wordmark and his fingers behind, the band folded and "
+    "tucked into his palm; the front face with its two matching peaks, the notch between them and the grey stryde wordmark faces her "
+    "and the camera. Her right hand comes up from below with the palm open, her fingertips just touching the shell's lower edge, "
+    "caught mid-hand-over. His face is in frame across the bench, looking at the strap, calm; her shoulder and cardigan sleeve are "
+    "soft in the near foreground.",
+    C1 + " Wearing " + WARD["M-D1"] + ". She is " + S1.replace("THE SAME WOMAN", "the same woman") + " Wearing " + WARD["W-D1"] + ".",
+    PROD.replace(" spanning the whole front of the knee", "") + " " + RIGID + " " + SMALL.replace(
+        " — and the closed band is a small soft loop not much bigger than his wrist", ""),
+    BENCH, angle("BR-15b", "him", ", looking past her shoulder, soft in the near foreground"), focus("the hands and what they hold", deep=False),
+    light("WS-L", "him"), colour("FIT")],
+    HELD_NEG.replace("no product changing hands, ", "") + NEG_SMALL + ", no shin guard, no tall pad, no elongated shell, "
+    "no strap held long side up, no plain shell without peaks, no missing wordmark, no missing chrome slides, no hanging loop, "
+    "no straightened nose, no symmetrical mouth, " + NEG_HANDS))
+
 if __name__ == "__main__":
     out = {}
     for beat, (model, refs, prompt) in B.items():
