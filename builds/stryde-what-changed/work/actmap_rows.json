@@ -500,7 +500,7 @@
   "subject": "R1",
   "location": "L-M-STAIRS",
   "story_day": "M-D1",
-  "framing": "CU sitting on the bottom stair, her fingertip pressing just below her right kneecap",
+  "framing": "CU front-on: seated on her bottom stair, the front of her bare right knee square to the lens, her fingertip on the tendon straight below the kneecap",
   "action": "her fingertip presses in once and holds",
   "pace": "one press, about a second",
   "camera": "locked off",
@@ -516,11 +516,11 @@
   "notes": "",
   "duration": "pending-master",
   "angle": {
-   "height": "high",
-   "side": "three-quarter",
+   "height": "eye",
+   "side": "front",
    "fg": "clean",
    "scale": "CU",
-   "why": "high = her own view of her knee"
+   "why": "front-on = the tendon below the kneecap shown straight on"
   },
   "focus": {
    "plane": "hands",
