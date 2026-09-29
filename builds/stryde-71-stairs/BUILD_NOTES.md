@@ -185,6 +185,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   **HK-B-SD v2** (gen 2, preflight PASS, task 036eb3e4, 693 credits) → To check; only speech her line 8.10–10.56 s. v1 on Old.
   The confirmed Hook A prompt is kept as `hooks/sd/HK-A_v3.prompt.txt` (the shared negative now also has "no empty-handed mother").
 
+- 2026-09-29 ~14:15 UTC: user confirmed both hooks → step 7, B-roll. `work/broll.py` writes the Mode 1 candid seeds (§22T) with the
+  §30I–§30K angle / focus / light lines from the act map; Act 1's ten prompts (P-01a…P-05a) on the board as Prompt ready.
+  Plates imported to Higgsfield (`plates/higgsfield_media.json`). First batch came back 768×1376 (no `resolution` param) — kept in
+  `broll/images/*_v1.png`, not put on the board; re-sent at `resolution: 2k` (jobs in `broll/images/jobs_act1.json`). Higgsfield then
+  asked to be signed in again before the 2K jobs could be collected — collect them once it is reconnected.
+
 ## Where it stands
 - Voice done: VO T2 locked, TH-01…16 confirmed. Locations P0–P8 confirmed (16:9, Kie GPT Image 2). Outfit cards confirmed.
 - **Hooks:** Hook 1 = HK-A-SD v3 confirmed. Hook 2 = HK-B-SD v2 To check (the mother with bags). In the edit the daughter's on-camera line replaces the
