@@ -42,7 +42,7 @@ STEP1 = "\n\n".join([
 ])
 
 TAKES = [
- ("G1", "Your knees have been taking seventeen times your bodyweight on every step for forty years, and you never felt a thing.", "thing", "never",
+ ("G1", "Your knees have been taking seventeen times your bodyweight on every step for forty years", "years", "seventeen",
   "letting a guest in on something surprising"),
  ("G2", "That band is the patellar tendon. It sits two centimetres below your kneecap, on the front of the joint.", "joint", "tendon",
   "a plain fact, explained kindly"),
@@ -56,7 +56,7 @@ def take(tid, line, closure, stress, intent):
      "delivery": VOICE_HOST + f" To one guest on a podcast, {intent}; stress on '{stress}'. Not a narrator, not an advert. " + S("AUD-A") + " Small studio room.",
      "subject": "As in the start frame.",
      "camera": {"movement": S("RIG-R3C"), "framing": "As in the start frame."},
-     "motion": S("BREATH-A") + f" Hands lift slightly from her lap on '{stress}', settle; eyes on lens. " + mouth + " " + S("HOLD-C"),
+     "motion": S("BREATH-A") + f" Hands stay resting in her lap; a small nod on '{stress}'; eyes on lens. " + mouth + " " + S("HOLD-C"),
      "lighting": S("INHERIT-CAP"),
      "style": "As in the start frame.",
      "negatives": ", ".join([S("NEG-WARP-C"), S("NEG-CAM-TH"), "no music, no second voice"]),
