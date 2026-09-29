@@ -161,6 +161,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   (To check), the @audio1 ingredient of HK-B-SD. Hook B runs once HK-A-SD and VOICE-C2-HKA are confirmed (call: `hooks/sd/HK-B.call.json`).
   preflight.py on the default branch already checks Seedance calls by `ingredients_approved` (V7.68.0); mine was dropped in favour of it.
 
+- 2026-09-29 ~12:57 UTC: user Fix on Hook A — "Mama, when did that happen?" is the daughter's only line, no laugh, she should be shocked;
+  the mother's hands never on the handrail going up. Source of the fault: the prompt's voice note had "half a laugh of disbelief" and the
+  mother "her hand only brushing the rail". Fixed in `hooks/seedance_hooks.py` (both hooks): shocked face and gasp, only her one line,
+  the mother's arms swinging free and hands never touching the rail or wall, negatives added. **HK-A-SD v2** (gen 2, preflight PASS,
+  task 40365bb4, 693 credits) → To check; her line 9.28–10.62 s → **VOICE-C2-HKA v2** (9.00–11.00 s). v1 video + voice on Old.
+  A third Hook A generation needs the user's go (§22X).
+
 ## Where it stands
 - **Voice stage done** (2026-09-29): VO T2 locked (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`), TH-01…16 (Avatar V render of T2) confirmed.
 - **Step 6 — hooks (Seedance, V7.68 ingredients):** waiting on the user's Confirm of the 4 outfit info cards. Then: Seedance Hook A on Kie
