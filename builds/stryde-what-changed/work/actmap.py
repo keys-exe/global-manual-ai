@@ -138,9 +138,10 @@ BB("B06", A1, "Seventeen times your bodyweight is still arriving, every step, in
    layout="pip", eg="EG02 host cut-out bottom-left · EG04 red box 'Seventeen times' · 17× overlay")
 TH("B07-TH", A1, "The cushion gets thinner. The weight stays exactly the same.", framing="punch")
 BB("B07", A1, "That is why it feels like it arrived overnight.", "overnight", "problem — the feeling",
-   "R1", "L-M-STAIRS", "M-D1", "MCU at the top of her stairs, hand on the rail, she looks down the flight and stops", "she draws one breath and doesn't step",
-   "one breath, about a second", STILL, "none", "no", "absent", "—", "NB2",
-   HIGH, THR, "clean", "MCU", "high = the drop in front of her, small", "eyes", "medium", L(M_GREY, "R"), True)
+   "R1", "L-KITCHEN", "M-D1", "MCU in her kitchen first thing in the morning: Maureen half-risen from her chair at the oak table, a cup of tea in front of her, she stops and puts a hand to her knee, a small surprised frown", "she straightens, stops, hand to her knee",
+   "one slow rise, about two seconds", STILL, "kitchen: three-quarter at the table, camera still", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "MCU", "eye-level three-quarter = the small surprise on her face", "eyes", "medium", L(KITCH, "L"), True,
+   notes="v2 — user Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: top of her stairs, stopping)")
 TH("B08-TH", A1, "Nothing about the way you walk changed, so you assume nothing changed. And here is the part that catches people out. You do not have to have done anything to your knees for this to happen.")
 BB("B08a", A1, "Some of the people it happens to have never run a mile in their life.", "mile", "not what you did",
    "R1", "L-M-STAIRS", "M-D1", "MEDIUM in her hall: Maureen picks her keys out of the bowl on the half-moon table", "lifts the keys from the bowl",
@@ -317,10 +318,14 @@ BB("B07-BRb", A1, "The weight stays exactly the same.", "same", "the load does n
    "one step, about a second and a half", STILL, "stairs: front, waist-down, basket at her hip, camera still", "no", "absent", "—", "NB2",
    LOW, FRO, "clean", "MCU", "low front = the weight coming straight down at the lens", "foreground", "shallow", L(M_GREY, "L"), False,
    notes="user 2026-09-29 'The weight stays exactly the same. MAKE ME A BROLL HERE'; replaces the planned worn-plimsoll B07-BR")
-BB("B08-BR", A1, "Nothing about the way you walk changed, so you assume nothing changed. And here is the part that catches people out. You do not have to have done anything to your knees for this to happen.", "changed", "ordinary walking",
+BB("B08-BR", A1, "Nothing about the way you walk changed, so you assume nothing changed.", "changed", "ordinary walking",
    "R1", "L-M-STAIRS", "M-D1", "MEDIUM from behind: Maureen walks down her hall towards the front door, ordinary and unhurried", "four ordinary steps away from the lens",
    "an ordinary walking pace", STILL, "hall: from behind, full figure small in frame, camera still", "no", "absent", "—", "NB2",
-   EYE, BEH, "clean", "MEDIUM", "from behind = her ordinary day, unobserved", "deep", "deep", L(M_GREY, "R"), False, notes="covers B08-TH")
+   EYE, BEH, "clean", "MEDIUM", "from behind = her ordinary day, unobserved", "deep", "deep", L(M_GREY, "R"), False, notes="first sentence of B08-TH (user Fix 2026-09-29)")
+BB("B08-BRb", A1, "And here is the part that catches people out. You do not have to have done anything to your knees for this to happen.", "anything", "nothing you did",
+   "R1", "L-M-STAIRS", "M-D1", "CU on her hall floor by the front door: her plimsolls set neatly side by side on the mat, clean and ordinary; her hand sets them down", "her hand sets the pair down",
+   "one set-down, about a second", STILL, "hall floor, hand and shoes only, camera still", "no", "absent", "—", "NB2",
+   HIGH, FRO, "clean", "CU", "high = looking down at an ordinary pair of shoes", "hands", "medium", L(M_GREY, "L"), False, notes="rest of B08-TH (planned)")
 BB("B08-BR2", A1, "It makes almost no difference, because the load is not coming from what you did.", "difference", "what you did doesn't matter",
    "R2", "L-D-STAIRS", "D-D1", "CU Desmond's hand sets a pair of old black football boots, dried mud on the studs, down on the shoe rack by his front door", "the boots set down on the rack",
    "one set-down, about a second", STILL, "hall by the door, hand and boots only, camera still", "no", "absent", "—", "NB2",
@@ -359,7 +364,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []
