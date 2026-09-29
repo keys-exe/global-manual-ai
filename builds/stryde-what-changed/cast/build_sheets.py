@@ -26,6 +26,12 @@ CAST = {
    body="A Black British man of Jamaican heritage. Tall and still athletic, broad shoulders, a thickened middle, strong thighs, sixty-six years old",
    ward="A navy zip-neck sports top over a white T-shirt, dark grey jogging shorts ending just above the knee so both knees are bare, white trainers with navy trim",
    age="deep lines across the forehead, heavy creases at the outer eyes, folds from the nose to the mouth, grey in the brows, darker skin over the knuckles and the knees"),
+ "S1-SURGEON": dict(pro=True, sex="MAN", side="right", wall="pale blue-grey", floor="grey hard-wearing clinic flooring",
+   face="A broad, open face with a high forehead, warm deep-set brown eyes, a wide nose and a generous mouth with a neat trimmed dark beard going grey at the chin. A thin pale scar breaking the outer end of his right eyebrow — his one marker. The left side of his mouth sits a touch higher than the right",
+   hair="Short black hair, grey at the temples, neatly cut and combed back, the same in every panel",
+   body="A British man of Pakistani heritage. Medium height, solid build, upright, fifty-eight years old",
+   ward="Navy surgical scrubs with a short-sleeved tunic and straight trousers, a plain grey fleece gilet over the tunic, and black clinic trainers",
+   age="fine lines at the outer eyes, soft creases across the forehead, grey in the beard and brows, faint darkening under the eyes"),
 }
 
 def build(k, c):
