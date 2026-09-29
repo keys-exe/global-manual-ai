@@ -339,13 +339,13 @@ def r_06a(): return seed("R-06a", "her right shin", "the strap", [   # Fix 2026-
     "her leg and the strap", "the morning light through the sink window", PNEG + ", " + PS.fill(PS.NEG_SEAT, "right")[:500] + ", no face, no standing, no hands on the shell, no fingers over the wordmark, no hand covering the strap",
     R(("N sheet", "N"), ("P2-KITCHEN plate", "P2"), *PR_REFS["worn"]))
 BEATS["R-06a"] = r_06a
-def r_07a(): return seed("R-07a", "her upstairs, about to go down", "her", [   # Fix 2026-09-29: "she should be at the 2nd floor before the stairs and she will not hold the hand rail"
-    "UPSTAIRS, on the carpeted second-floor landing at the head of her stairs — EXACTLY the spot in the attached talking-head frame: beige carpet, the white balusters and dark oak handrail beside her, "
-    "the top of the straight flight dropping away down to the hall, a framed family photo on the greige wall, the window at the end of the landing. She — " + NID + " — " + N_BUILD + " In " + WARD["N-D3"] + ", "
-    "she stands on the landing right at the top of the stairs, BEFORE the first step, about to go down: caught as she steps forward toward the edge of the top step, looking down the flight with a small, surprised smile — the whole flight still below her. "
-    + N_HANDS + " The strap on her right knee, visible below the hem of her denim skirt. " + prod("worn")],
-    "her on the landing", STAIRS_SUN, PNEG + ", no hands on the rail, no hand touching the handrail, no her on the stairs already, no her downstairs, no slim woman, no narrow face, no different woman, no one else",
-    R(("N face close-up", "NFACE"), ("Talking-head frame (landing)", "THF"), ("N sheet", "N"), *PR_REFS["worn"]), house=False, height="eye", side="three-quarter")
+def r_07a(): return seed("R-07a", "her at the top of the stairs", "her", [   # REDO from scratch 2026-09-29 (user: "brand new")
+    "EXACTLY THE VIEW OF THE ATTACHED HALL PHOTO: from the hall floor by the front door, looking up the whole straight flight — the full-width oatmeal-beige carpet with its brass stair rods, the white balusters and dark oak handrail on one side, the photo wall on the other, and at the top the upstairs landing. "
+    "She — " + NID + " — " + N_BUILD + " In " + WARD["N-D3"] + ", she stands UPSTAIRS on the landing at the very top, BEFORE the first step, the whole empty flight below her, "
+    "about to come down facing forwards: looking down the stairs with a small, determined smile, both arms hanging relaxed at her sides, hands open and empty, well away from the handrail. "
+    "The strap on her right knee, visible below the hem of her denim skirt. " + prod("worn")],
+    "her and the stairs", STAIRS_SUN, PNEG + ", no hands on the rail, no hand touching the handrail, no mug, no towel, no her on the steps, no her halfway down, no her near the bottom, no slim woman, no different woman, no different staircase, no one else",
+    R(("N face close-up", "NFACE"), ("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]), height="low", side="front")
 BEATS["R-07a"] = r_07a
 
 # ---------------------------------------------------------------- Act 4 — mechanism (Loretta's words)
@@ -376,12 +376,13 @@ def m_05a(): return anat("M-05a", HOT("a hot red"), neg="no glow on the kneecap,
 BEATS["M-05a"] = m_05a
 def m_05b(): return anat("M-05b", "STATE — the strap's pad sits on the spot and has taken the load: the glow at the spot has cooled from red to a calm, soft blue.", "The strap seated on the patellar tendon just below the kneecap, the pad pressing on the spot.", prod_in=True)
 BEATS["M-05b"] = m_05b
-def m_06a(): return seed("M-06a", "her first step down", "her", [   # Fix 2026-09-29: "wrong character and should never hold the hand rail"
-    "Her staircase, exactly as in the attached hall photo. Seen from three steps below her, the lens at her knee height looking up the flight: she — " + NID + " — " + N_BUILD + " In " + WARD["N-D3"] + ", "
-    "she stands at the top of the stairs and takes her FIRST step down, FORWARDS, facing the camera: her right foot in a tan house slipper landing flat on the first step, her knee bending easily over it, "
-    "her face breaking into a relieved, surprised smile — no pain. " + N_HANDS + " The strap on her right knee just below the hem of her denim skirt. " + prod("worn")],
-    "her and the stairs", STAIRS_SUN, PNEG + ", no hands on the rail, no hand touching the handrail, no slim woman, no narrow face, no different woman, no going down backwards, no sandals, no bare feet",
-    R(("N face close-up", "NFACE"), ("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]), height="low", side="front")
+def m_06a(): return seed("M-06a", "her right leg taking the first step down", "the strap", [   # REDO from scratch 2026-09-29 (user: "brand new")
+    "Her staircase, exactly as in the attached hall photo, at the very top of the flight. A close side view at step height, across the top two steps: "
+    "her right leg is taking the FIRST step down, FORWARDS — her foot in a tan suede house slipper landing flat on the first step below the landing, her knee bending easily over it, "
+    "the hem of her knee-length denim skirt just above the knee. Full-figured, deep brown skin on her knee and calf. Her right hand swings free at her side in frame, relaxed and open, "
+    "a good arm's length from the dark oak handrail, which runs untouched along the edge of the frame. The strap on her right knee, clear and sharp. " + prod("worn")],
+    "her leg and the strap", STAIRS_SUN, PNEG + ", no face, no hand on the handrail, no hand touching the rail, no mug, no towel, no going down backwards, no sandals, no bare feet, no slim leg",
+    R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]), height="low", side="profile")
 BEATS["M-06a"] = m_06a
 
 # ---------------------------------------------------------------- Act 5 — proof
