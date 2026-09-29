@@ -91,21 +91,21 @@ Columns condensed from E4. `duration` = `pending-master` on every B-roll row (E6
 | Beat | Phrase | Type | Subject | Location | Day | Action · pace | Camera · staging · pin | Angle (height · side · scale · fg) — why | Focus | Light key | Key word | Product | Layout · EG | Model | Ledger |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | TH-HK1 | HK1-01, HK1-02, HK1-03 | TH | D | L-D-CONS | D-D1 | straight to lens, level; a small open hand on 'here is how' · ~155 wpm | phone on a small tripod across the desk, locked off · seated at his desk · no | eye · front · MCU · clean | eyes, medium | L · 6500K |  | absent | spine (under every B-roll) · EG01 | HeyGen Avatar V | — |
-| HK1-01a | HK1-01 | BR | P | L-P-HALL | P-D2 | comes down one stair facing forwards, hand light on the banister, trousers · one step, 2s | locked-off sway · stairs descending (§27G: one step, hand on rail, camera at the foot) · no | low · front · FULL · clean — low = the stairs she now owns | deep, deep | R · 5600K | stairs | worn · CONCEALED under trousers (§9D) | pip · EG02 · EG01 | NB2 | — |
-| HK1-02a | HK1-02 | BR | P hand | L-P-KITCH | P-D1 | pushes one more hinged brace into the overfull dresser drawer · one push, 2s | sway · hands (§27G: hands whole, one action) · no | high · front · CU · clean — high = looking down into the pile | hands, medium | R · 6500K | drawer | absent | cutout · EG04 · EG01 | NB2 | — |
+| HK1-01a | HK1-01 | BR | P | L-P-HALL | P-D1 | home security camera high in the hall corner (§22E CCTV-FULL): she comes down her stairs BACKWARDS, both hands clamped on the banister · one step back, 2s | fixed mount, no movement · stairs descending backwards (§27G: one step, both hands on rail) · no | high · behind · FULL · clean — high corner cam = found footage, the strange thing the line names; she is small in it | deep, deep | back · 6500K | backwards | absent | full · EG05 · EG01 | NB2 | — |
+| HK1-02a | HK1-02 | BR | P hand | L-P-KITCH | P-D1 | shoves one more brace into the drawer and the overfull pile spills out onto the tiles · one shove, 2s | sway · hands (§27G: hands whole, one action) · no | high · front · CU · clean — high = looking down into the pile that won't fit | hands, medium | R · 6500K | drawer | absent | cutout · EG04 · EG01 | NB2 | — |
 
 #### Hook 2
 
 | Beat | Phrase | Type | Subject | Location | Day | Action · pace | Camera · staging · pin | Angle (height · side · scale · fg) — why | Focus | Light key | Key word | Product | Layout · EG | Model | Ledger |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | TH-HK2 | HK2-01, HK2-02 | TH | D | L-D-CONS | D-D1 | leans in a touch on 'before you come and see me'; one flat hand down on the desk on 'not a prescription' · ~155 wpm | phone on a small tripod across the desk, locked off · seated at his desk · no | eye · front · MCU · clean | eyes, medium | L · 6500K |  | absent | spine (under every B-roll) · EG01 | HeyGen Avatar V | — |
-| HK2-02a | HK2-02 | BR | D hand | L-D-CONS | D-D1 | slides the prescription pad away across the desk and lets go · one slide, 2s | sway · hands · no | high · three-quarter · CU · clean — high = his desk from his own side | hands, medium | L · 6500K | prescription | absent | pip · EG02 · EG01 | NB2 | — |
+| HK2-02a | HK2-02 | BR | D hand | L-D-CONS | D-D1 | tears the blank top sheet off the prescription pad and crumples it · one tear, 2s | sway · hands · no | high · three-quarter · CU · clean — high = his desk from his own side | hands, medium | L · 6500K | prescription | absent | pip · EG02 · EG01 | NB2 | — |
 
 #### Hook 3
 
 | Beat | Phrase | Type | Subject | Location | Day | Action · pace | Camera · staging · pin | Angle (height · side · scale · fg) — why | Focus | Light key | Key word | Product | Layout · EG | Model | Ledger |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| HK3-01a | HK3-01 | BR | D | L-D-CONS | D-D1 | holds a knee X-ray up to the window light, reading it · still, a small tilt, 2s | sway · standing at the window (§27G: no travel) · no | eye · profile · MCU · through — profile + through = the scan between him and us | background, medium | back · 6500K | scan | absent | split 60/40 · EG03 · EG01 | NB2 | — |
+| HK3-01a | HK3-01 | BR | D hand | L-D-CONS | D-D1 | drops one more knee X-ray onto the heap of scans burying his desk · one drop, 2s | sway · hands (§27G: one action, the film falls) · no | overhead · front · MEDIUM · clean — overhead = routine: every week, another one | deep, deep | L · 6500K | scan | absent | full · EG05 · EG01 | NB2 | — |
 | TH-HK3 | HK3-01, HK3-02 | TH | D | L-D-CONS | D-D1 | lowers the X-ray to the desk; a small shake of the head on 'a different question' · ~155 wpm | phone on a small tripod across the desk, locked off · seated at his desk · no | eye · front · MCU · clean | eyes, medium | L · 6500K |  | absent | spine (under every B-roll) · EG01 | HeyGen Avatar V | — |
 
 #### Act 1

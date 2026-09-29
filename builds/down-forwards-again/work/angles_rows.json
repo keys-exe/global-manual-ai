@@ -33,28 +33,28 @@
   "group": "Hook 1",
   "type": "BR",
   "subject": "P",
-  "height": "low",
-  "side": "front",
+  "height": "high",
+  "side": "behind",
   "scale": "FULL",
   "fg": "clean",
-  "why": "low = the stairs she now owns",
+  "why": "high corner cam = found footage, the strange thing the line names; she is small in it",
   "mode": 1,
   "product_beat": false,
-  "face": true,
+  "face": false,
   "focus": {
    "plane": "deep",
    "dof": "deep",
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 2,
+  "story_day": 1,
   "light": {
    "source": "front-door stained glass (east) + tall landing window",
-   "key_side": "R",
+   "key_side": "back",
    "time": "morning",
-   "arc": "after: sun in the house, warmer and open",
-   "kelvin": 5600,
-   "why": ""
+   "arc": "problem: grey overcast morning, flat and cool",
+   "kelvin": 6500,
+   "why": "backlit by the window: the scan / the garden is the subject, the face is not speaking"
   }
  },
  {
@@ -66,7 +66,7 @@
   "side": "front",
   "scale": "CU",
   "fg": "clean",
-  "why": "high = looking down into the pile",
+  "why": "high = looking down into the pile that won't fit",
   "mode": 1,
   "product_beat": false,
   "face": false,
@@ -148,29 +148,29 @@
   "beat": "HK3-01a",
   "group": "Hook 3",
   "type": "BR",
-  "subject": "D",
-  "height": "eye",
-  "side": "profile",
-  "scale": "MCU",
-  "fg": "through",
-  "why": "profile + through = the scan between him and us",
+  "subject": "D hand",
+  "height": "overhead",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "overhead = routine: every week, another one",
   "mode": 1,
   "product_beat": false,
-  "face": true,
+  "face": false,
   "focus": {
-   "plane": "background",
-   "dof": "medium",
+   "plane": "deep",
+   "dof": "deep",
    "rack": null,
    "moving_subject": false
   },
   "story_day": 3,
   "light": {
    "source": "consulting-room window, camera-left (north)",
-   "key_side": "back",
+   "key_side": "L",
    "time": "morning",
    "arc": "the doctor's room: steady overcast north light",
    "kelvin": 6500,
-   "why": "backlit by the window: the scan / the garden is the subject, the face is not speaking"
+   "why": ""
   }
  },
  {

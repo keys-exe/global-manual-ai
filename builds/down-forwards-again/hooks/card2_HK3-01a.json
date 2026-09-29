@@ -1,0 +1,36 @@
+{
+ "imageStatus": "review",
+ "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic \u2014 exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nTHE CAMERA ANGLE: the lens directly above the desk, looking straight down at it, seen from over the doctor's side of the desk. This exact angle, not a straight-on eye-level view.\n\nFOCUS: the heap of scans and the falling film is in sharp focus; everything from near to far stays sharp. The blur is optical: soft and round, never smeared.\n\nIN THE SAME ROOM as the attached consulting-room photograph, looking straight down onto its light-wood desk.\n\nA snapshot from a phone held straight out over the desk by someone standing beside it, not looking at the screen. The whole desktop is buried under a heap of knee scans: dozens of grey-and-black X-ray films of knees, the pale bones and the thin dark joint gaps showing through them, fanned and overlapping, some half out of plain brown hospital scan envelopes, the heap spilling over the desk edges; the corner of the closed laptop and the white plastic knee model just visible under it. From the top of the frame the doctor's right hand \u2014 a stocky freckled hand, a plain steel watch, the white cuff of his doctor's coat over a pale blue shirt cuff \u2014 has just let go of one more knee X-ray film, caught in mid-air a hand's width above the heap, tilted as it drops, its shadow on the films below.\n\nTHE LIGHT: The consulting-room window on the room's north wall lights the desk from the left of the frame, steady overcast daylight, the films catching it as dull grey sheen, so it has a lit side toward the left and a softer shadow side. The shadows fall away from that source, one way only.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no AI face, no plastic skin, no extra fingers, no fused fingers, no melted hands, no CGI look, no fake commercial gloss, no moody dark grade, no glowing skin, no shadows falling in two directions, no lens flare, no face, no lightbox, no glowing screen, no X-rays of hands, chests or skulls, no writing, names or labels on films or envelopes, no hand cut off at the wrist, no coat missing, no tidy stack, no readable text, logos, brand names or labels anywhere",
+ "imageAsset": "69374261ab9d819f1c8d6a32b17baef9",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_091945_f282b14c-a926-43ab-9ff2-676a6d6e25ce.png",
+ "imageAt": 1790676200000,
+ "imageRes": "1536\u00d72752",
+ "updatedAt": 1790676200000,
+ "imageNote": "v2 \u2014 your Fix: redesigned to sell. Refs: P3-D-CONSULT, D-VOICE-IMG v2. 3011 chars.",
+ "imageVersions": [
+  {
+   "v": 1,
+   "asset": "936519b97d978355ee3555f93bedd7b3",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_084137_b38467ec-0541-4182-83ec-aca7e04d2eb6.png",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "connector": "Higgsfield",
+   "size": 7512956,
+   "at": 1790674000000,
+   "note": "first render",
+   "archived": true,
+   "archiveAsset": "65f9deb802c98917f557ee075e3786e5"
+  },
+  {
+   "v": 2,
+   "asset": "69374261ab9d819f1c8d6a32b17baef9",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_091945_f282b14c-a926-43ab-9ff2-676a6d6e25ce.png",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "connector": "Higgsfield",
+   "size": 7525540,
+   "at": 1790676200000,
+   "note": "I WANT A HOOK THAT WILL SELL I DONT WANT THIS NORMAL LOOKING HOOKS \u2014 redesigned as a scroll-stopping hook picture"
+  }
+ ]
+}

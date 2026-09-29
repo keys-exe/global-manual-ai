@@ -45,20 +45,21 @@ PIP, SPL, CUT, FULL = "pip · EG02", "split 60/40 · EG03", "cutout · EG04", "f
 
 # ---- HOOK 1 — VN01: result first, triple without (the reference's 0–8.4s) ----------------------------
 TH("TH-HK1", "Hook 1", ["HK1-01", "HK1-02", "HK1-03"], "straight to lens, level; a small open hand on 'here is how'")
-row("HK1-01a","Hook 1",["HK1-01"],"BR","P","L-P-HALL","P-D2","comes down one stair facing forwards, hand light on the banister, trousers","one step, 2s",
-    "locked-off sway","stairs descending (§27G: one step, hand on rail, camera at the foot)","no","low","front","FULL","clean",
-    "low = the stairs she now owns","deep","deep","R","stairs",product="worn · CONCEALED under trousers (§9D)",layout=PIP,face=True)
-row("HK1-02a","Hook 1",["HK1-02"],"BR","P hand","L-P-KITCH","P-D1","pushes one more hinged brace into the overfull dresser drawer","one push, 2s",
-    "sway","hands (§27G: hands whole, one action)","no","high","front","CU","clean","high = looking down into the pile",
+# §34 2026-09-29 (user: "I WANT A HOOK THAT WILL SELL I DONT WANT THIS NORMAL LOOKING HOOKS"): hook pictures redesigned as pattern interrupts (§31, §22E)
+row("HK1-01a","Hook 1",["HK1-01"],"BR","P","L-P-HALL","P-D1","home security camera high in the hall corner (§22E CCTV-FULL): she comes down her stairs BACKWARDS, both hands clamped on the banister","one step back, 2s",
+    "fixed mount, no movement","stairs descending backwards (§27G: one step, both hands on rail)","no","high","behind","FULL","clean",
+    "high corner cam = found footage, the strange thing the line names; she is small in it","deep","deep","back","backwards",layout=FULL,face=False)
+row("HK1-02a","Hook 1",["HK1-02"],"BR","P hand","L-P-KITCH","P-D1","shoves one more brace into the drawer and the overfull pile spills out onto the tiles","one shove, 2s",
+    "sway","hands (§27G: hands whole, one action)","no","high","front","CU","clean","high = looking down into the pile that won't fit",
     "medium","hands","R","drawer",layout=CUT)
 # ---- HOOK 2 — against his own interest ------------------------------------------------------------------
 TH("TH-HK2", "Hook 2", ["HK2-01", "HK2-02"], "leans in a touch on 'before you come and see me'; one flat hand down on the desk on 'not a prescription'")
-row("HK2-02a","Hook 2",["HK2-02"],"BR","D hand","L-D-CONS","D-D1","slides the prescription pad away across the desk and lets go","one slide, 2s",
+row("HK2-02a","Hook 2",["HK2-02"],"BR","D hand","L-D-CONS","D-D1","tears the blank top sheet off the prescription pad and crumples it","one tear, 2s",
     "sway","hands","no","high","three-quarter","CU","clean","high = his desk from his own side","medium","hands","L","prescription",layout=PIP)
 # ---- HOOK 3 — the scan ------------------------------------------------------------------------------------
-row("HK3-01a","Hook 3",["HK3-01"],"BR","D","L-D-CONS","D-D1","holds a knee X-ray up to the window light, reading it","still, a small tilt, 2s",
-    "sway","standing at the window (§27G: no travel)","no","eye","profile","MCU","through",
-    "profile + through = the scan between him and us","medium","background","back","scan",layout=SPL,face=True)
+row("HK3-01a","Hook 3",["HK3-01"],"BR","D hand","L-D-CONS","D-D1","drops one more knee X-ray onto the heap of scans burying his desk","one drop, 2s",
+    "sway","hands (§27G: one action, the film falls)","no","overhead","front","MEDIUM","clean",
+    "overhead = routine: every week, another one","deep","deep","L","scan",layout=FULL)
 TH("TH-HK3", "Hook 3", ["HK3-01", "HK3-02"], "lowers the X-ray to the desk; a small shake of the head on 'a different question'")
 
 # ---- ACT 1 — the patient, the band (B-01–B-05) ------------------------------------------------------------

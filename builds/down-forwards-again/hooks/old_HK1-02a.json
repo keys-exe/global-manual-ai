@@ -1,0 +1,36 @@
+{
+ "build": "down-forwards-again",
+ "act": "Hook 1",
+ "stage": "hooks",
+ "beat": "HK1-02a",
+ "title": "HK1-02a \u00b7 old versions",
+ "line": "Without an operation. Without another course of physio. Without one more brace going in the drawer.",
+ "flow": [
+  "image"
+ ],
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "imageModel": "nano_banana_2",
+ "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic \u2014 exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nTHE CAMERA ANGLE: the lens above head height, looking down at the subject, seen from the front of the open dresser drawer and her hand. This exact angle, not a straight-on eye-level view.\n\nFOCUS: the hands and what they hold is in sharp focus; the room behind falls to a soft, recognisable shape. The blur is optical: soft and round, never smeared.\n\nThis room is part of THE SAME HOUSE as the attached property reference image \u2014 magnolia walls over a dark-stained dado rail with cream anaglypta below, tall white-gloss Victorian skirting, stripped pine four-panel doors with brass knobs, the burgundy-and-cream patterned runner \u2014 the same finishes throughout, seen here in a different room of that same house, with nothing redecorated and nothing newer than the rest. The kitchen of the attached kitchen photograph: the old pine Welsh dresser beside the pine table, its top drawer pulled half open.\n\nA snapshot from a phone held above the drawer by someone standing beside the dresser, looking down into it, not looking at the screen. In the drawer, crammed so full the pile rises above the drawer's sides: old knee supports tangled together \u2014 a black stretchy sleeve, a beige wrap with loose velcro tabs, a grey neoprene sleeve, a white tubular bandage, all worn, blank and plain, no brand, no writing. Her right hand \u2014 the hand of a woman of sixty-nine, thin skin, soft lines across the knuckles, a plain gold wedding band, short unpainted nails, the cuff of an oatmeal cable-knit cardigan over a cream roll-neck at the wrist \u2014 is caught in the middle of pushing one more grey hinged knee brace with metal side bars down onto the top of the pile: the brace half in the drawer, its end still above the drawer's front edge, her palm flat on it pressing down, all five fingers whole and visible. The drawer, the pile and the whole hand sit in the middle of the frame with a clear margin of dresser wood all round.\n\nTHE LIGHT: The window over the sink on the room's west wall lights the drawer and her hand from the right of the frame, flat overcast daylight, the grey, cooler light of the problem days, so it has a lit side toward the right and a softer shadow side. The shadows fall away from that source, one way only.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no AI face, no plastic skin, no extra fingers, no fused fingers, no melted hands, no CGI look, no fake commercial gloss, no moody dark grade, no glowing skin, no shadows falling in two directions, no lens flare, no face, no strap product, no small padded strap, no knee strap with a silicone pad, no new or packaged supports, no hand cut off at the frame edge, no more than one hand, no drawer closed, no tidy folded pile, no readable text, logos, brand names or labels anywhere",
+ "imageAsset": "4a2888e5517f48bf4e499fbbd4f14efe",
+ "imageType": "image/png",
+ "imageConnector": "Higgsfield",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_084137_e46ab752-3e0f-4589-b76b-aa7b65a8d1cf.png",
+ "imageRes": "1536\u00d72752",
+ "imageAt": 1790674000000,
+ "imageFault": "I WANT A HOOK THAT WILL SELL I DONT WANT THIS NORMAL LOOKING HOOKS",
+ "imageVersions": [
+  {
+   "v": 1,
+   "asset": "4a2888e5517f48bf4e499fbbd4f14efe",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_084137_e46ab752-3e0f-4589-b76b-aa7b65a8d1cf.png",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "connector": "Higgsfield",
+   "size": 9102684,
+   "at": 1790674000000,
+   "note": "first render"
+  }
+ ],
+ "updatedAt": 1790676200000
+}

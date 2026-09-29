@@ -69,7 +69,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Note: the act map's hook layouts (HK1-01a pip then HK1-02a cutout) predate the V7.65.0 layout limit (≤1 boxed in 5, never two in a row) —
   settle at assembly (`assemble.py` LAYOUT_MIX); frames are composed full-frame so either layout crops.
 
+- 2026-09-29 ~09:15 UTC: user "I WANT A HOOK THAT WILL SELL I DONT WANT THIS NORMAL LOOKING HOOKS" → §34 correction on all four hook pictures
+  (spoken lines unchanged, verbatim): HK1-01a → home-camera footage (§22E CCTV-FULL, hall corner), P-D1, coming down BACKWARDS with both hands on the
+  banister, layout full; HK1-02a → the overfull drawer spilling onto the tiles; HK2-02a → tears the blank top sheet off the prescription pad (F12);
+  HK3-01a → overhead, desk buried under knee scans, one more dropped on the heap, layout full. `work/actmap.py` rows + STEP4_5 + docs/actmap (Plan + Current)
+  updated; angles.py PASS. `hooks/build_hooks_v2.py` → nano_banana_2 v2 renders (jobs 49b86e44, fd67eaff, 00f46dd9, f282b14c) → board To check;
+  v1 frames moved to the Old board (copies confirmed, then deleted from Current). CapCut: HK1-01a gets a home-camera timestamp overlay in post (§22E, §17).
+
 ## Where it stands
-- **Waiting on the user:** the four hook frames (HK1-01a, HK1-02a, HK2-02a, HK3-01a) on the board — Confirm or Fix.
+- **Waiting on the user:** the four v2 hook frames (HK1-01a, HK1-02a, HK2-02a, HK3-01a) on the board — Confirm or Fix.
 - **Then:** each confirmed frame → its Kling 3.0 Omni video via Kie (§22X preflight, §27G, length from `assemble.py --lengths` on the locked VO) → board.
   Hooks gate (step 6), then B-roll acts (step 7), CapCut block; finished videos = TH-HKn (+ hook B-roll) + TH-A1…A5 (+ B-roll).

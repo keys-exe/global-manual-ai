@@ -248,6 +248,7 @@ A white British man in his mid-fifties, a family doctor from the north of Englan
 | F9 | Length | 576 words. At a natural doctor's pace and the house cut each video lands around **3:25–3:45** (hook ~12–15s + body ~3:15), vs the reference's 2:22 at 209 wpm | Keep the natural pace (my recommendation for a 60+ audience); or say "match the reference's speed" |
 | F10 | Hooks | HK1 is the reference's construction; HK2, HK3 new | 3 finished videos, one per hook |
 | F11 | `package_closed.jpg` | still missing | open box only |
+| F12 | HK2-02a (2026-09-29) | the doctor tearing a blank prescription sheet could be read as "don't take your medication" (§43A) | blank sheet, no drug names; the line says only "it is not a prescription" — your call to keep |
 
 ## Next — on your go (§18B step 5)
 
