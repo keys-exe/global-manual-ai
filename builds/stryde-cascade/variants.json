@@ -215,7 +215,7 @@
    },
    {
     "beat": "A4-P2",
-    "clip": "renders/A4-P2.mp4",
+    "clip": "renders/A4-P2.fix8.mp4",
     "phrase": "There is a silicone pad inside",
     "layout": {
      "type": "full"
