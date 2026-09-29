@@ -255,7 +255,7 @@ A British woman of sixty-one from Bristol, a warm mid-low voice with a soft West
 | Audio proximity | close, dry, studio-quiet |
 | Stress register | the "Too bad…" openers sympathetic, a touch rueful; "A cover is not a fix.", "It's not you.", "There's nothing to wear off." slower and lower, never bigger |
 | Non-speech events | one short in-breath before a number; nothing else |
-| Voice name (§22U step 7) | `FailedAlternatives-Narrator` (proposed) |
+| Voice name (§22U step 7) | **`Alternatives`** — voice ID `uh69ybRPQgahYncj0lYN` (cloned 2026-09-29 from three Kling takes) |
 
 ---
 

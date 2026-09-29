@@ -26,5 +26,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Step 2 ready: `voice/N_G1..G3.call.json` (2,452 / 2,458 / 2,483 chars; §37 TH ladder step 4: "Not a narrator, not an advert." dropped from all three to fit G3), preflight PASS but the frame's approval (§22X).
   **Kling connector has 3 credits → takes go via Kie `kling-3.0` (§5 fallback)**; Kie 171,214.8 credits. ElevenLabs clone `check` PASS (513 free slots).
   Step 8: `vo/ALL.enhanced.txt` (HK1+BODY1+HK2+BODY2+HK3+BODY3, one request) verbatim PASS, 3,687 chars.
-- **Waiting on the user:** Confirm/Fix N-VOICE-IMG (the paid takes wait on it, §22X); the six plates; the absorption; answers to F2, F4, F5, F6, F7, F9.
-- **Next, no stop once the frame is confirmed:** set `start_approved: true` in the three call files → preflight → Kie `kling-3.0` takes G1–G3 (`kie.py kling --prompt-file voice/N_G<n>.kling.json --image <frame url> --duration 10 --sound`), every take on the board → `voice_source.py` (medium trim, ×1.2, same-voice gate, loop ≥ 30s) → `elevenlabs_clone.py clone … --name FailedAlternatives` (name refused if taken → `--character` suffix) → `tts_api.py` eleven_v4 speed ~0.85 on `vo/ALL.enhanced.fitted.txt`, takes on the board → split at the silences into HK1/BODY1/HK2/BODY2/HK3/BODY3 → `vo_trim.py` house cut per variant (≤ 210 wpm). Then hooks one by one (HK1-01, HK2-01, HK3-01 + HK-BR).
+- 2026-09-29: user confirmed the frame (and, on the board, all six plates) — "go ahead". §22U straight through:
+  step 2: three Kie `kling-3.0` takes (10s, sound on, 270 credits each; tasks 219fde2a…, 96d8c736…, b905bc5c…) → board N-G1..G3 (split into 15 MB parts).
+  steps 3–5: `voice_source.py` → `voice/Alternatives_clone_source.mp3` 40.23s; same-voice gate PASS (200.0 / 202.5 / 203.8 Hz), transcripts verbatim → board N-SRC.
+  steps 6–7: clone by API, name **`Alternatives`** (one keyword from the title, §22U step 7), **voice ID `uh69ybRPQgahYncj0lYN`**.
+  step 9: `tts_api.py` eleven_v4, speed 0.85, 4 takes of `vo/ALL.enhanced.fitted.txt` (186–188s, 152–154 wpm raw); every word present in every take.
+  split: `vo/split_parts.py` (build-local; `cut_points.py` only knows HK1|HK2|HK3|BODY) → 24 part files → board VO-T<n>-<PART> (one row per part, takes as versions), all To check.
+  step 10a: house cut on the working take T1, raw hook + raw body per variant, `vo_trim.py --max-wpm 180` (the inspo's rate): **V1 61.51s 154 wpm · V2 59.16s 157 wpm · V3 64.66s 152 wpm**, all verify PASS → `vo/VO_T1_V<n>.mp3`, board VO-CUT-T1-V<n> (stage edit, To check).
+  Board audio goes up as AAC in .mp4 (the asset store refuses .mp3). Kie 168,280.8 credits after.
+- **Waiting on the user:** check the VO takes (confirm one take per part; a different take than T1 → that variant is re-cut); the absorption; answers to F2, F4, F5, F6, F7, F9.
+- **Next (step 6, a Manual gate):** the hooks one by one — HK1-01 (Bernadette slams the drawer) → HK-BR (the clinic strap-on) first; then HK2-01, HK3-01. Before any B-roll call, `assemble.py <plan> --lengths` from the house-cut VO (E6).
