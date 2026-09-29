@@ -850,7 +850,19 @@ function beatSort(a,b){return String(a.beat||"").localeCompare(String(b.beat||""
 // talking heads; a narration build shows Talking heads only when it uses them.
 function isFilm(b){return !!b&&(b.kind==="film"||(b.kind!=="narration"&&/mode\s*[45]\b|film|drama/i.test(`${b.mode||""} ${b.format||""}`)))}
 function needsTalking(b,gens){if(!b||isFilm(b)) return false; if(b.talkingHeads===true) return true; if(b.talkingHeads===false) return false; return gens.some(g=>g.stage==="talking")}
-function stagesFor(b,gens){return STAGES.filter(s=>!(s.narration&&isFilm(b))&&!(s.key==="talking"&&!needsTalking(b,gens))).map(s=>s.key==="broll"&&isFilm(b)?{...s,name:"Scenes",sub:"Each scene: its images, then its clips"}:s)}
+// every scene is its own stage (Scene 1, Scene 2…), placed where the B-roll stage sits; a film with no scenes yet shows "Scenes"
+function stagesFor(b,gens){
+  const base=STAGES.filter(s=>!(s.narration&&isFilm(b))&&!(s.key==="talking"&&!needsTalking(b,gens)));
+  const nums=[...new Set(gens.filter(g=>["hooks","broll","talking"].includes(g.stage)).map(sceneNum).filter(Boolean))].sort((x,y)=>x-y);
+  const scenes=nums.map(n=>({key:"scene-"+n,scene:n,name:"Scene "+n,folder:"07_BROLL",sub:"Its images, then its clips",kind:"video",wide:true}));
+  return base.flatMap(s=>{
+    if(s.key!=="broll") return [s];
+    const loose=gens.some(g=>g.stage==="broll"&&!sceneNum(g));
+    const br=isFilm(b)?{...s,name:"Scenes",sub:"Each scene: its images, then its clips"}:s;
+    return [...(loose||!scenes.length?[br]:[]),...scenes];
+  });
+}
+function stageGens(s,gens){return s.scene?gens.filter(g=>["hooks","broll","talking"].includes(g.stage)&&sceneNum(g)===s.scene):gens.filter(g=>g.stage===s.key&&!(["hooks","broll","talking"].includes(g.stage)&&sceneNum(g)))}
 // Voice: done when every character who needs a voice has one (the build's voices list).
 function voiceList(b){return Array.isArray(b&&b.voices)?b.voices:[]}
 function voicesDone(b){const v=voiceList(b).filter(x=>x.needed!==false);return v.length>0&&v.every(x=>["cloned","locked"].includes(x.status))}
@@ -1026,7 +1038,7 @@ function renderInner(){
   const ST=stagesFor(b,gens).filter(s=>BOARD_ROLE!=="old"||gens.some(g=>g.stage===s.key));
   $("#pipe").style.setProperty("--n",ST.length);
   $("#pipe").innerHTML=ST.map((s,i)=>{
-    const sg=gens.filter(g=>g.stage===s.key), done=stageDone(s,b,gens,sg);
+    const sg=stageGens(s,gens), done=stageDone(s,b,gens,sg);
     return `<button class="step${done?" done":""}" type="button" data-jump="${s.key}">
       <span class="n">${String(i+1).padStart(2,"0")}${done?" ✓":""}</span><span class="t">${s.name}</span>
       <div class="bar">${stageBar(s,b,gens,sg)}</div>
@@ -1039,7 +1051,7 @@ function renderInner(){
 
   const folders=(b&&b.folders)||{};
   let html=ST.map((s,i)=>{
-    const all=gens.filter(g=>g.stage===s.key);
+    const all=stageGens(s,gens);
     const sg=all.filter(matches).sort(beatSort);
     const u=all.filter(g=>g.status==="use").length;
     const link=folders[s.folder]?`<a href="https://drive.google.com/drive/folders/${esc(folders[s.folder])}" target="_blank" rel="noopener">Drive ↗</a>`:"";
@@ -1050,6 +1062,9 @@ function renderInner(){
     if(s.key==="absorption"&&!all.length) body=absorptionSummary(b);
     if(s.key==="voice"&&voiceList(b).length) body=`<div class="vgrid"><div>${voiceChecklist(b)}</div>${all.length?`<div class="vbuild"><span class="lbl">Voice building</span>${body}</div>`:""}</div>`;
     if(s.key==="vo") body=all.length?`<div class="arows">${voRows(gens)}</div>`:body;
+    // a scene: its images first, then its clips
+    if(s.scene&&vis.length){const im=vis.filter(g=>!flow(g).includes("video")), cl=vis.filter(g=>flow(g).includes("video"));
+      body=`<div style="display:grid;gap:18px">`+[["Images",im,"The scene's master, frames and inserts"],["Clips",cl,"Each clip with the images it was made from"]].filter(x=>x[1].length).map(([h,l,n],i)=>`<div class="msec"><div class="msec-h"><h3>${i+1} · ${h}</h3><span class="note">${n}</span></div><div class="tiles">${l.map(tile).join("")}</div></div>`).join("")+`</div>`+(aud.length?`<div class="arows">${aud.map(audioRow).join("")}</div>`:"")}
     if(s.key==="talking"&&!voLocked(b,gens)) body=`<p class="note" style="margin:0 0 10px">Talking heads start after the VO is locked.</p>`+body;
     return `<section class="widget${s.wide?" wide":""}" id="w-${s.key}">
       <div class="w-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
@@ -1140,7 +1155,7 @@ async function fetchMedia(g,k){
 }
 function tile(g){
   const st=g.status||"planned", stage=STAGES.find(s=>s.key===g.stage)||STAGES[6];
-  const kind=g.kind||(isAudio(g)?"audio":String(g.videoType||"").startsWith("video/")?"video":stage.kind);
+  const kind=g.kind||(isAudio(g)?"audio":String(g.videoType||"").startsWith("video/")?"video":g.flow&&!g.flow.includes("video")&&g.flow.includes("image")?"image":stage.kind);
   const specs=[g.duration?`${g.duration}s`:"", g.regens?`R${g.regens}`:""].filter(Boolean);
   const pk=flow(g).find(k=>pending(g,k));
   const cv=coverOf(g), img=!pk&&cv?`<img class="bg" ${srcFrom(cv.asset,cv.parts,cv.type)} alt="" loading="lazy">`:"";
@@ -1636,7 +1651,7 @@ function copyText(t,what){navigator.clipboard.writeText(t).then(()=>toast(what+"
 
 /* viewer: clicking an image or video shows it, nothing else */
 /* only the group the clicked card sits in: its stage card on Board, its act or group in Manual run and Plan */
-function viewScope(g){return state.view==="final"?(isFinal(g)?"final":"x"):state.view==="board"?"s:"+g.stage:"g:"+groupOf(g).key}
+function viewScope(g){return state.view==="final"?(isFinal(g)?"final":"x"):state.view==="board"?(sceneNum(g)&&["hooks","broll","talking"].includes(g.stage)?"sc:"+sceneNum(g):"s:"+g.stage):"g:"+groupOf(g).key}
 function viewerList(step){
   const sc=state.viewer&&state.viewer.scope;
   return groups(buildGens()).flatMap(x=>x.items).filter(g=>flow(g).includes(step)&&(!sc||viewScope(g)===sc));
@@ -1789,7 +1804,7 @@ function renderViewer(){
       </div>
       ${panel}
     </div>
-    <div class="v-strip"><span class="v-count">${i+1} / ${list.length} ${d.label.toLowerCase()}s · ${esc(state.view==="board"?((STAGES.find(x=>x.key===g.stage)||{}).name||""):groupOf(g).label)}</span><div class="v-thumbs">${thumbs}</div></div>`;
+    <div class="v-strip"><span class="v-count">${i+1} / ${list.length} ${d.label.toLowerCase()}s · ${esc(state.view==="board"&&!sceneNum(g)?((STAGES.find(x=>x.key===g.stage)||{}).name||""):groupOf(g).label)}</span><div class="v-thumbs">${thumbs}</div></div>`;
   const el=$("#viewer"); el.hidden=false; hydrate(el);
   const mv=el.querySelector(".v-media video");
   if(mv){if(v.rate) mv.playbackRate=v.rate; mv.addEventListener("loadedmetadata",()=>{if(v.rate) mv.playbackRate=v.rate;frameStrip(mv,shown,outV)},{once:true}); if(mv.readyState>=1) frameStrip(mv,shown,outV)}
