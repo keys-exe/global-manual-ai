@@ -194,5 +194,33 @@
   "v": 2,
   "kieModel": "nano-banana-pro",
   "rc": 0
+ },
+ "B1-02_v4": {
+  "taskId": "f0a0786bae0b5256a9935400d80db006",
+  "state": "success",
+  "credits": 18.0,
+  "failMsg": null,
+  "urls": [
+   "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1790701468422-m44uaqgbbnp.png"
+  ],
+  "saved": "/home/user/global-manual-ai/builds/stryde-too-bad/broll/v2/B1-02_v4.png",
+  "beat": "B1-02",
+  "v": 4,
+  "kieModel": "nano-banana-pro",
+  "rc": 0
+ },
+ "B1-02a_v3": {
+  "taskId": "28025a6af4e94abcbb2ef6343777476a",
+  "state": "success",
+  "credits": 18.0,
+  "failMsg": null,
+  "urls": [
+   "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1790701809900-sunyu1ufjnc.png"
+  ],
+  "saved": "/home/user/global-manual-ai/builds/stryde-too-bad/broll/v2/B1-02a_v3.png",
+  "beat": "B1-02a",
+  "v": 3,
+  "kieModel": "nano-banana-pro",
+  "rc": 0
  }
 }

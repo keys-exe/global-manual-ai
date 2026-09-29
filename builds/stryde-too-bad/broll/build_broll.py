@@ -179,7 +179,14 @@ B["MECH-S2"] = (NB2, [], anat(
 # heel on the rug, the fingertip on the tendon a thumb's width under the kneecap; extra-limb negatives.
 # v3 Fix "CHANGE THIS IMAGE": v2 still put the fingertip halfway down the shin and brought her face in. Fixed: nano_banana_pro, an
 # extreme close-up that holds only the one knee (kneecap upper third, fingertip dead centre just under it), no face, no feet.
-B["B1-02"] = (NBP, ["R1-DENISE", "P2-D-LOUNGE"], photo([
+# v4 Fix "POINT THE PATELLAR TENDON": v3 pointed at the inner side of the knee beside the kneecap. Fixed: the front-worn product
+# photo attached as a placement map only (the fingertip goes where the shell's notch sits: the leg's midline, directly under the
+# kneecap's lower tip), the knee seen straight from the front, the finger coming up from below; no strap drawn.
+B["B1-02"] = (NBP, ["R1-DENISE", "P2-D-LOUNGE", "worn_front"], photo([
+    "PLACEMENT MAP: the third attached photo is ONLY a map of where to point — do not draw its strap. Her fingertip touches exactly the "
+    "spot where that photo's shell has its curved notch: ON THE CENTRE LINE OF THE LEG, directly below the lowest tip of the kneecap, "
+    "on the patellar tendon — not beside the kneecap, not on its inner or outer side, not on the shin. The knee faces the camera "
+    "straight on, the kneecap centred left to right; her forefinger comes up from below and its tip rests dead centre under the kneecap. "
     "AN EXTREME CLOSE-UP of one knee and nothing else: the frame holds only her bare right knee, from the lower thigh at the top edge to "
     "the upper shin at the bottom edge. The rounded kneecap sits in the upper third of the frame; directly beneath its lower edge, dead "
     "centre, the tip of her right forefinger presses into the soft hollow of the patellar tendon, the skin dimpling a little round it. "
@@ -195,7 +202,8 @@ B["B1-02"] = (NBP, ["R1-DENISE", "P2-D-LOUNGE"], photo([
     angle("B1-02", "her right knee"), focus("the hands and what they hold"), light("LOUNGE", "her knee", face=False), colour("LOUNGE", "she")],
     "no strap, no brace, no sleeve on the knee, no second hand on the knee, no fingernail digging in, no face, no head, no hair, no earring, "
     "no feet, no whole leg, no third leg, no extra limb, no leg raised in the air, no foot above the knee, no crossed legs, no finger on the "
-    "shin, no finger low on the leg, no finger on the kneecap, " + NEG_HANDS))
+    "shin, no finger low on the leg, no finger on the kneecap, no finger beside the kneecap, no finger on the side of the knee, no "
+    "finger on the inner knee, no strap, no black shell, no stryde wordmark, " + NEG_HANDS))
 B["MECH-02"] = (NB2, [], anat(
     "Heel strike: the foot has just landed and the body's weight is coming down the thigh. " + S("ANAT-LOAD") + " " + S("ANAT-HOT") + " "
     + P.ANAT_A_POINT_TIGHT, extra_neg="no glow in the joint space, no glow on the cartilage, no strap, no brace", view=LOW_VIEW))
@@ -346,7 +354,11 @@ B["B1-13b"] = (NBP, ["R4-FIONA", "P5-PROP-F"], photo([
 # v2 Fix "CHANG THIS": v1 read as the strap being put on low on the shin (the band round the leg, side-on) — B1-04b again — and the
 # room drifted off the plate. Fixed: three-quarter front, the strap held up IN FRONT of the bare knee, a hand's width towards the lens,
 # front face to camera, so its small size reads against the knee behind it; never touching the leg; the plate restated.
+# v3 Fix "CLOSE UP / REMOVE THE BRACELET": v2 was framed too wide and put a bracelet on her wrist. Fixed: an extreme close-up
+# (the strap, her fingers and the knee behind fill the frame), a bare wrist, jewellery banned.
 B["B1-02a"] = (NBP, ["front", "back", "R1-DENISE", "P2-D-LOUNGE"], photo([
+    "A CLOSE-UP: the strap, her pinching fingers and her bare knee just behind it fill the whole frame — the strap across the middle, "
+    "the kneecap soft behind it, nothing of the room but soft colour at the edges. Her wrist is BARE: no bracelet, no bangle, no watch. " +
     SAME + " A snapshot from a phone at knee height, three-quarter in front of her. She sits on the edge of the teal velvet sofa, her bare "
     "right knee bent at an easy angle, foot flat on the kilim rug, and holds the strap up IN FRONT of the knee — a hand's width towards the "
     "camera, NOT touching the leg — level with the soft spot just under her kneecap, the whole front face and the wordmark square to the "
@@ -356,7 +368,8 @@ B["B1-02a"] = (NBP, ["front", "back", "R1-DENISE", "P2-D-LOUNGE"], photo([
     PROD + " " + RIGID + " " + P.WORDMARK_LOCK + " " + P.SIZE_HELD,
     angle("B1-02a", "her hand and her right knee"), focus("the product and its wordmark"), light("LOUNGE", "her knee", face=False), colour("LOUNGE", "she")],
     P.NEG_HELD_P + ", " + P.NEG_WORDMARK + ", " + BLOCK_NEG + ", no strap worn, no strap touching the knee, no strap on the shin, no band round the leg, no strap being put on, "
-    "no side-on strap, no second strap, no face, no fireplace, no white room, no third leg, no extra limb, " + NEG_HANDS))
+    "no side-on strap, no second strap, no face, no fireplace, no white room, no third leg, no extra limb, no bracelet, no bangle, no "
+    "watch, no jewellery on the wrist or hand, no rings, no wide shot, no whole leg, no feet, " + NEG_HANDS))
 B["B1-03a"] = (NBP, ["R2-ALAN", "P0-A-KITCHEN"], photo([
     "A snapshot from a phone held low near the kitchen floor, three-quarter to him. He steps down the single low step from the hall doorway "
     "onto the kitchen floor, caught mid-step: his left foot still on the step, his right foot just landing flat on the floor tiles, his "
