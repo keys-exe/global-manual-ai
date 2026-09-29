@@ -55,6 +55,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   B1-13a v2 "CHANGE THIS" (still wore the strap the user took off B1-13b, the next shot → no strap, bare knees).
   All three on Kie, To check; replaced versions moved to the Old board.
 - **Act 1 images now: 19 of 23 confirmed (+ B1-01a-END)** — waiting on B1-02 v3, B1-02a v2, B1-13a v2 and B1-13b v2.
+- 2026-09-29 ~17:05 UTC: user Fix notes → B1-02 v4 ("POINT THE PATELLAR TENDON": v3 pointed beside the kneecap → front-worn photo attached as a placement map only, fingertip on the leg's midline under the kneecap's tip) and B1-02a v3 ("CLOSE UP / REMOVE THE BRACELET": extreme close-up, bare wrist; act map ECU). Both on Kie, To check; replaced versions on the Old board.
+- 2026-09-29 ~17:15 UTC: user "generate the confirm images" (the clips for the confirmed images). E6 lengths from `assemble.py --lengths` on both videos (`edit/lengths_plan.py` → `edit/plan_V1.json`, `plan_V2.json`, `lengths_V1.json`, `lengths_V2.json`; masters = the T8 hook + body part cards joined); a shared beat takes the longer call. Clip builder `broll/build_video.py` (§35, §27G), 18 calls in `broll/video/` (start images `broll/video/_confirmed.json`), **`preflight.py` PASS on all 18** (72s in total, ~1,300 Kie credits est.). **Not sent — the user interrupted the turn just before submission; waiting for their go.** B1-04b and B1-06 are pinned beats with no end frame yet (need END images before their clips).
+  Timing notes from `--lengths`: V1 B1-02 1.38s and V2 B1-04b 1.50s on screen — under the 2.0s floor; the assembly will hold/merge them (§30H) — to settle in the edit. B1-02's anchor differs per video (V1 "one", V2 on its own phrase).
 
 ## Where it stands
 - **Hooks, 2026-09-29:** HK1-01 (v2 image, HK1-01-END end frame, pinned clip v1, Kie task 800927cb…) and HK2-01 (image + clip v1, Kie task b080e98e…) all confirmed by the user.

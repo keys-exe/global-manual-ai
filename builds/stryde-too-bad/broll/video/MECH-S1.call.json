@@ -1,0 +1,34 @@
+{
+ "beat": "MECH-S1",
+ "connector": "kling",
+ "route": "Kling 3.0 on Kie (kie.py kling), Kling connector out of credits",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"mech_s1\",\"subject\":\"Exactly as in the start frame, unchanged in every respect. The strap keeps its exact shape, size and wordmark in every frame and moves only with the body or hand it is on; The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle.\",\"camera\":{\"movement\":\"The render camera holds still; no move, no zoom.\",\"framing\":\"MCU as in the start frame, the knee from the front with the strap on it.\"},\"motion\":\"The strap's shell and band glow a cool electric blue along their edges, the glow rising slowly and evenly over about two seconds and holding; the whole knee beneath stays calm, washed in faint clear blue. Bones keep their shape, length and spacing, joints never separate or pass through each other, muscle keeps its volume and the layer order holds. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bones bending, no joint separating, no rubbery deformation, no structures inflating, no anatomy sliding through the outer contour, no red glow, no glow spreading onto the shin, no second glow, no flicker, no bending, no curling, no folding, no melting, no flipping of the product, no shell rotating on the leg, no strap sliding, no second strap, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no music, no voice, no text, no captions\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_153901_9296f550-3bf4-40ce-8140-5987882d8745.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "anatomy deforms",
+   "prevented_by": "HOLD-ANAT + NEG_ANAT"
+  },
+  {
+   "risk": "the strap moves on the tendon",
+   "prevented_by": "product lock"
+  },
+  {
+   "risk": "camera orbits",
+   "prevented_by": "render camera holds still"
+  }
+ ]
+}
