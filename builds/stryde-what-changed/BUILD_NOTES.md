@@ -75,4 +75,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   box of old football kit in his hall, low front, v2 job fd0fae7c (refs R2 + P2). Act map rows updated, angles.py PASS. Replaced
   versions (HK2-a v2 image; HK2-b v1 image + v1 clip) moved to the Old board, deleted from Current. Both clips in `clips.py` need
   rewriting to the new shots once the images are confirmed (HK2-a: the band draws taut once; HK2-b: one lift out of the squat).
-- **Where it stands:** waiting on the user's check of HK2-a v3 and HK2-b v2 images; then both Hook 2 clips, then Hook 3 images.
+- HK2-a v3 image confirmed on the board → clip rewritten to the band shot (`clips.py`: the band draws taut once, spot brightens once;
+  preflight PASS), Kie kling-3.0 497adfd7… (90 cr), 5 s → To check (video v2; v1 was the old front-view shot, already on Old).
+- HK2-b Fix "FIX THIS" (no detail) → read off v2: face partly in frame, Nike logos on the trainers, "OLD KIT" on the box, shallow squat with
+  the box in front of the knees. v3 prompt fixes all four (top edge across the chest, plain unbranded trainers, unmarked box, deep squat with
+  the box between the knees), job ec0b55bb → To check. v2 image moved to Old, deleted from Current.
+- **Where it stands:** waiting on the user's check of the HK2-a clip and the HK2-b v3 image; then the HK2-b clip (one lift out of the squat),
+  then Hook 3 images.
