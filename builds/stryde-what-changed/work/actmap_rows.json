@@ -278,7 +278,7 @@
   "subject": "ANAT",
   "location": "—",
   "story_day": "—",
-  "framing": "ANAT-A: the knee from the side, the one spot below the kneecap glowing warmer as the pulses stack up",
+  "framing": "ANAT-A: the whole leg from hip to foot, the one small spot below the kneecap glowing warmer as the pulses stack up",
   "action": "the spot warms with each pulse",
   "pace": "one pulse a second",
   "camera": "locked off",
@@ -291,14 +291,14 @@
   "layout": "full",
   "eg": "EG05 · '70,000,000' overlay (post)",
   "ledger": "VN01 · F4",
-  "notes": "",
+  "notes": "whole leg (MS), not HK2-a's ECU band or HK1-b's knee profile — three anatomy looks, no repeats",
   "duration": "pending-master",
   "angle": {
    "height": "high",
    "side": "three-quarter",
    "fg": "clean",
-   "scale": "CU",
-   "why": "high = the one spot, looked down on"
+   "scale": "MS",
+   "why": "high, whole leg = one small spot on a long load path"
   },
   "focus": {
    "plane": "deep",

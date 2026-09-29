@@ -3,11 +3,11 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"hk2_b\",\"subject\":\"A Black British man of sixty-six seen low and three-quarter on at the foot of his stairs, cropped at mid-thigh: dark grey jogging shorts, a bare right knee and shin, white trainers with navy trim, his right foot planted on the bottom stair of a charcoal stair carpet. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already mid-step on the first frame: his right knee bends a little further as it takes his weight and straightens as he rises onto the bottom stair, his left foot lifting off the hall floor — one step up in about a second — then his weight settles. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no second person, no face in frame, no knee strap, no knee brace, no walking stick, no going down the stairs, no turning sideways, no extra legs, no music, no speech, no slow motion\"}",
+ "prompt": "{\"shot\":\"hk2_b\",\"subject\":\"A Black British man of sixty-six seen side-on from low, cropped at the waist: dark grey jogging shorts, a bare bent right knee in side profile nearest the lens, both hands under the bottom corners of a plain taped cardboard box just off the hall floor, plain white trainers. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already at the bottom of the squat on the first frame: his knees straighten and he rises steadily, lifting the box up in front of his shins to thigh height — one smooth lift in about two seconds, feet staying flat — then he holds, standing with the box. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no face in frame, no head entering the frame, no second person, no knee strap, no knee brace, no writing on the box, no logos, no dropping the box, no box floating, no extra legs, no extra hands, no music, no speech, no slow motion\"}",
  "duration": 5,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170901_a7ba052b-dfcc-44eb-b45a-4a595aef8928.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_174627_a9e02dbb-2d91-4a3d-a960-2a053cdfef10.png",
  "start_approved": true,
  "pinned": false,
  "end_image": null,
@@ -17,16 +17,16 @@
  "generation": 1,
  "risks": [
   {
-   "risk": "legs or feet warp on the stair",
-   "prevented_by": "one step at a countable pace, start frame caught mid-step, HOLD-C + NEG-WARP-C"
+   "risk": "hands or box warp during the lift",
+   "prevented_by": "one lift at a countable pace, start frame caught mid-lift, HOLD-C + NEG-WARP-C"
+  },
+  {
+   "risk": "his head rises into the frame as he stands",
+   "prevented_by": "rise only to thigh height with the box, 'no head entering the frame', locked-off tripod"
   },
   {
    "risk": "camera travels with the moving subject",
    "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"
-  },
-  {
-   "risk": "a strap or brace appears on the bare knee (the before state)",
-   "prevented_by": "'no knee strap, no knee brace' + bare knee in subject"
   }
  ],
  "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
