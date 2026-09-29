@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.32
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.33
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -22,7 +22,8 @@ product; it carries everything that step needs.
     which knee .................. SIDE_RULE, side_from_script() (V7.49.24)
     the box and the offer ....... PACKAGE, OFFER, package_prompts() (V7.49.24)
     the cheap copy .............. FAKE_BASE, FAKE_ARCHETYPES, NEG_FAKE_HERO (V7.49.28)
-    the back of the pad ......... PAD_BACK_SHOT (V7.49.28)
+    the back of the pad ......... PAD_BACK_SHOT (V7.49.28, redrawn V7.49.33)
+    the inner pad ............... INNER_PAD, NEG_INNER_PAD (V7.49.33: grey ridged insert, photographed)
     the name on the product ..... WORDMARK_LOCK, NEG_WORDMARK, wordmark_check() (V7.49.32)
     the V7.49.4 pattern fills ... HOLD_PC, HOLD_PROD, NEG_WARP_P, WEAR_*,
                                   REAR_VIEW_SPEC, DEMONSTRATION_TABLE, ...
@@ -509,10 +510,12 @@ WORDMARK_EXPECTED = {
 # pad turned to the lens -- never by the front. Then the mechanism shot.
 PAD_BACK_SHOT = (
 "The strap turned round so the back of the shell faces the camera: the inside of the shell, the pad that "
-"sits against the skin, fills the frame -- a plain, smooth, matte-black pad following the shell's curve, "
-"with no markings, no texture pattern and no second colour -- the two peaks rising along its top edge, a "
-"chrome slide at each end, the band running away from the slides behind it. No wordmark is visible from "
-"this side.")
+"sits against the skin, fills the frame -- a mid-grey soft-touch pad insert filling the shell's two-peaked "
+"outline inside a thin matte-black rim, its surface covered in fine shallow parallel grooves that sweep in "
+"curved rows across it, and rising from it one smooth ungrooved raised ridge, a long rounded crescent that "
+"follows the curve of the notch on the inside, thickest in its middle and tapering to each end -- the two "
+"peaks rising along its top edge, a chrome slide at each end, the band running away from the slides behind "
+"it. No wordmark is visible from this side.")
 
 # --- anatomy look samples (V7.49.30) -----------------------------------------
 # One sample per Standards density (Appendix A ANAT-A..D) on this knee, all in the
@@ -539,12 +542,27 @@ ANAT_A_POINT_TIGHT = (
 "The glow is one tight, bright spot on the patellar tendon just below the kneecap, sharp-edged and small, "
 "never spreading down onto the shin bone or across the joint; the bones and muscles around it stay calm.")
 
-# --- the inner pad (V7.49.23) -----------------------------------------------
-# Read off back.webp. Used on held beats and any view of the inside of the shell.
+# --- the inner pad (V7.49.23, redrawn V7.49.33) ------------------------------
+# V7.49.33 (user, 2026-09-29: "this is the inside of the strap"): read off the
+# user's photo and clip of the real strap, stryde_refs/inner_face.jpg and
+# inner_face_clip.mp4 (layer 1). They outrank back.webp, whose inside reads
+# plain black. Used on held beats and any view of the inside of the shell.
 # Never the word "silicone" (it renders the soft glossy fake, §10).
+# UNVERIFIED: the ridge's exact ends and how far it runs toward each peak --
+# the photo is hand-held and partly covered by a thumb; a flat-on photo of the
+# inside would lock it.
 INNER_PAD = (
-"The inside of the shell is a plain, smooth, matte-black pad following the shell's curve, with no markings, "
-"no texture pattern and no second colour.")
+"The inside of the shell is a mid-grey soft-touch pad insert that fills the shell's two-peaked outline inside "
+"a thin matte-black rim. Its surface is covered in fine shallow parallel grooves sweeping in curved rows "
+"across it, and one smooth ungrooved raised ridge rises from it: a long rounded crescent following the curve "
+"of the notch on the inside, thickest in its middle and tapering to each end. No markings and no wordmark on "
+"this side.")
+
+# I2V / T2I negatives for any view of the inside (V7.49.33).
+NEG_INNER_PAD = (
+"no plain featureless black inside, no smooth ungrooved pad, no pad without its raised ridge, no second ridge, "
+"no blue or coloured gel, no glossy wet-look pad, no pad spilling past the shell's rim, no text or logo on the "
+"inside")
 
 # --- held beats (V7.49.23, user: "there are so many ways to hold it") -------
 # NOT a locked pose. Any of these grips, chosen per beat and varied across a
@@ -732,7 +750,8 @@ PRODUCT_SET_VIEWS = {
                    "just visible leaving each slide."),
     "back_view": ("Seen exactly straight-on from the back, level with the product, no turn and no tilt, as in "
                   "the attached back product photo: the band crossing the front of the frame with its two black "
-                  "keeper loops side by side at the centre, the shell's plain inner face behind it with both peaks "
+                  "keeper loops side by side at the centre, the shell's inner face behind it -- the mid-grey grooved "
+                  "pad insert with its raised crescent ridge inside a thin black rim -- with both peaks "
                   "rising above the band, a chrome slide at each end, no wordmark visible."),
     "side_view": ("Seen exactly from the side at ninety degrees, level with the product, looking straight at "
                   "one end: that end's chrome slide faces the camera flat with its three dotted chevrons and the "
@@ -819,6 +838,7 @@ REFS_USE = {
     "worn_rear":  ("stryde_refs/worn_rear.jpg",),
     "package_closed": ("stryde_refs/package_closed.jpg",),   # V7.49.27, locked
     "package_open":   ("stryde_refs/package_open.jpg",),
+    "inner":          ("stryde_refs/inner_face.jpg",),       # V7.49.33, the inside of the shell
 }
 REFS_USE_STATUS = "LOCKED V7.49.23 by the user"
 HELD_EXAMPLE = "stryde_refs/product_held.jpg"   # an example of grip 1 only -- never locked, optional
@@ -835,6 +855,7 @@ _SHOT_EXTRA = {
     "worn_front": ("worn_front",), "worn_bent": ("worn_bent",), "worn_rear": ("worn_rear",),
     "seating": ("worn_front",),
     "package_closed": ("package_closed",), "package_open": ("package_open",),
+    "pad_back": ("inner",),   # V7.49.33: any shot where the inside of the shell faces the lens
 }
 
 
@@ -867,7 +888,7 @@ PRODUCT_SET_ATTACH = {
     "profile":  ("front.webp", "back.webp", "three_quarter_b.jpg"),
     "held":     ("front.webp", "back.webp"),
     "front_view": ("front.webp", "back.webp"),
-    "back_view":  ("back.webp", "front.webp"),
+    "back_view":  ("back.webp", "front.webp", "inner_face.jpg"),
     "side_view":  ("front.webp", "back.webp"),
     "macro":    ("front.webp", "back.webp"),
 }
@@ -1271,11 +1292,13 @@ UNSETTLED = {
         "for PLACEMENT ONLY on rear and turning beats, with ORIENT_LOCK + NEG_ORIENT_PRODUCT_TAIL "
         "stated in full. RESOLVED BY: one regenerated rear worn frame, right knee, straight-edged "
         "knit band with both keeper loops, accepted by the user.",
-    "inner_face_script_RESOLVED_7_49_23":
-        "RESOLVED V7.49.23 for rendering by back.webp: the inside of the shell is a plain, smooth, "
-        "matte-black pad with no markings (INNER_PAD). The user calls it the silicone pad; the "
-        "material stays advertiser-stated (Six Weeks Ago script), so prompts say 'the pad' and never "
-        "'silicone'. Was: OPEN V7.49.12, unphotographed.",
+    "inner_face_script_RESOLVED_7_49_33":
+        "RESOLVED V7.49.33 by the user's photo and clip of the real strap (inner_face.jpg, "
+        "inner_face_clip.mp4): the inside is a mid-grey pad insert with fine curved grooves and one "
+        "raised crescent ridge following the notch, in a thin black rim (INNER_PAD, NEG_INNER_PAD). "
+        "Was: V7.49.23 plain matte black, read off back.webp -- wrong for the inside. Prompts still say "
+        "'the pad' and never 'silicone' (the word renders the soft glossy fake shell). Open: the "
+        "ridge's exact ends (hand-held photo, thumb over part of it).",
     "band_faces_RESOLVED_7_49_11":
         "RESOLVED by the supplied product images (CANONICAL_REFERENCES). The OUTER "
         "face carries TWO black moulded keeper loops side by side at the rear; the "
@@ -1363,7 +1386,14 @@ PRODUCT_PHOTOS = {
                    "engraved dotted chevrons, coarse-knit band with straight edges each side"),
     "back.webp": ("rear view: the band doubled through the slides and running round the back, two "
                   "black moulded keeper loops side by side at the centre of the band's outer face, the "
-                  "shell's inner face plain matte black, the peaks rising behind"),
+                  "peaks rising behind. Its inside reads plain black -- SUPERSEDED V7.49.33 by "
+                  "inner_face.jpg for the inside only; everything else in it stands"),
+    "inner_face.jpg": ("V7.49.33, the user's photo of the real strap: the inside of the shell -- a mid-grey "
+                       "pad insert in a thin black rim, fine curved parallel grooves, one smooth raised "
+                       "crescent ridge following the notch; black band ends through the chrome slides. "
+                       "The authority for the inside (INNER_PAD)"),
+    "inner_face_clip.mp4": ("V7.49.33, the user's 3.5s clip turning the strap in the hand: the same inside "
+                            "from several angles. For reading only, never attached to a call"),
     "three_quarter_a.jpg": "three-quarter, floating: wordmark reads left of the notch in this view (yaw)",
     "three_quarter_b.jpg": "three-quarter, floating: the wrap reads, slide and band tail at the near end",
 }
@@ -1920,8 +1950,16 @@ def verify(verbose=False):
             fails.append("NEG_HELD_P missing: %s" % clause)
     if len(NEG_OBSERVED_LOG) < 9 or "no V-shaped notch" not in NEG_OBSERVED:
         fails.append("NEG_OBSERVED lost its logged failures")
-    if "silicone" in INNER_PAD.lower():
-        fails.append("INNER_PAD names silicone")
+    if "silicone" in INNER_PAD.lower() or "silicone" in PAD_BACK_SHOT.lower():
+        fails.append("INNER_PAD / PAD_BACK_SHOT names silicone")
+    for txt, name in ((INNER_PAD, "INNER_PAD"), (PAD_BACK_SHOT, "PAD_BACK_SHOT")):
+        low = txt.lower()
+        if "grey" not in low or "ridge" not in low or "groove" not in low or "plain, smooth, matte-black" in low:
+            fails.append("%s lost the photographed inside (grey, grooves, ridge -- V7.49.33)" % name)
+    if "no plain featureless black inside" not in NEG_INNER_PAD:
+        fails.append("NEG_INNER_PAD lost the plain-black clause")
+    if not os.path.exists(os.path.join(here, REFS_USE["inner"][0])):
+        fails.append("inner_face.jpg missing")
     if "composite" in SEAT_REFERENCES:
         fails.append("SEAT_REFERENCES names the missing composite")
 
@@ -2030,7 +2068,7 @@ def counts():
 # ==================================================================
 SHEET_MD = r'''# Product Sheet — Stryde Precision Strap
 
-**V7.49.23.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
+**V7.49.33.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
 
 The geometry ratios were measured off the five V7.48 canonical renders (63, 64, 65, 66, 68) with a roll correction applied. **Since V7.49.11 the supplied product photos (`stryde_refs/`) are the product** (layer 1) and outrank those renders wherever they disagree. Where a figure is external it is marked Tier 3 and is not advertiser-held.
 
@@ -2040,7 +2078,7 @@ The geometry ratios were measured off the five V7.48 canonical renders (63, 64, 
 
 Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior shell on a closed elastic knit band, **one size fits all**, worn on one knee, sitting under the kneecap and over the upper patellar tendon.
 
-**Market note.** Multiple marketplace sellers list a "Stryde Precision Strap" built around a soft silicone lock-point pad. Our hero is rigid matte polymer with brushed chrome hardware, which is the opposite construction. Two consequences: the cheap-silicone villain archetype (§10) is the literal market reality and the anti-knock-off angle is stronger than it looked; and the name question is the advertiser's counsel's, not this sheet's.
+**Market note.** Multiple marketplace sellers list a "Stryde Precision Strap" built around a soft silicone lock-point pad. Our hero is rigid matte polymer with brushed chrome hardware, which is the opposite construction — its pad is on the inside only, a grey grooved insert with one raised ridge (§15, V7.49.33), never the whole strap. Two consequences: the cheap-silicone villain archetype (§10) is the literal market reality and the anti-knock-off angle is stronger than it looked; and the name question is the advertiser's counsel's, not this sheet's.
 
 ---
 
@@ -2048,7 +2086,7 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 
 **1 — Primary form.** A rigid moulded polymer shell spanning the whole front of the knee from one side of the leg to the other, its top edge waving up into two matching pointed peaks of equal height either side of a crisp concave notch, waisted off-centre, closed behind the leg by a flat matte-black woven elastic band.
 
-**2 — Material and finish.** Shell: matte polymer, satin not gloss, holding a soft broad highlight along the crown of each peak and down the waist. Band: black elastic band in a coarse knit with a visible textured weave and straight edges (supplied photos). Hardware: brushed chrome slides carrying three engraved dotted chevrons, the only specular element on the object. Keeper loops: moulded matte black, on the band's outer face.
+**2 — Material and finish.** Shell: matte polymer, satin not gloss, holding a soft broad highlight along the crown of each peak and down the waist. Band: black elastic band in a coarse knit with a visible textured weave and straight edges (supplied photos). Hardware: brushed chrome slides carrying three engraved dotted chevrons, the only specular element on the object. Keeper loops: moulded matte black, on the band's outer face. **Inside of the shell (V7.49.33):** a mid-grey soft-touch pad insert in a thin matte-black rim, fine curved parallel grooves, one smooth raised crescent ridge following the notch (§15, `INNER_PAD`).
 
 **3 — Distinguishing asymmetries.** *The most important field, and every item here is normalised out if unstated.*
 
@@ -2112,6 +2150,7 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 | Worn — straight, bent, rear | + `worn_front.jpg`, `worn_bent.jpg` or `worn_rear.jpg` |
 | Putting it on | + `worn_front.jpg` (the end position) |
 | Box — closed / open | + `package_closed.jpg` or `package_open.jpg` (locked V7.49.27) |
+| Inside of the shell to the lens (`pad_back`, `back_view`) | + `inner_face.jpg` (V7.49.33 — your photo of the real strap; its inside outranks `back.webp`'s plain black) |
 | Held | the two originals only; `product_held.jpg` is an optional example of one grip, **not locked** — pick a grip from `HELD_GRIPS` |
 
 Never more than the two originals plus one. **Retired:** `product_front.jpg`, `product_back.jpg`, `product_profile.jpg`, `three_quarter_a.jpg`, `three_quarter_b.jpg`, and the never-stored composite `STRYDE_reference_v7_49_11.png`. Image plus names is the pair; either alone leaks.
@@ -2162,7 +2201,7 @@ British, roughly 55–80. Cast to the buyer, balanced across men and women, with
 | Clinical placement "just below the kneecap"; one manufacturer specifies about 2 inches below | 3 | Third-party guidance. Compatible with the contact phrasing — the top edge touches the pole while the body covers the upper tendon |
 | Every step puts **17× bodyweight** through the spot below the kneecap | **User-confirmed V7.49.29** | Advertiser-held. The number is a post overlay, never generated (§17) |
 | **Three years to build with orthopaedic surgeons** | **User-confirmed V7.49.29** | Advertiser-held. Surgeon cast per §19B |
-| Inside, a **silicone pad** catches the force | **User-confirmed V7.49.29** | The material is now advertiser-held. Rendering rule unchanged: prompts say "the pad", never "silicone", because the word renders the soft glossy fake (§10, `RULINGS['held_on_pad']`) |
+| Inside, a **silicone pad** catches the force | **User-confirmed V7.49.29** | The material is now advertiser-held. Rendering rule unchanged: prompts say "the pad", never "silicone", because the word renders the soft glossy fake (§10, `RULINGS['held_on_pad']`). Shown by `PAD_BACK_SHOT` — the grey grooved pad with its raised ridge, photographed V7.49.33 |
 | **Sports scientists measured 34% less strain** every step | **User-confirmed V7.49.29** | Advertiser-held. 34% is a post overlay; no screen with numerals is generated (§10) |
 | Built for bone on bone, arthritis, worn cartilage, meniscus | **User-confirmed V7.49.29** | Advertiser-held |
 | **Recommended by orthopaedic surgeons** | **User-confirmed V7.49.29** | Advertiser-held. Surgeon cast per §19B |
@@ -2246,7 +2285,7 @@ A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and
 
 **Held is not locked** (user): there are many right ways to hold it. Choose from `HELD_GRIPS` per beat — bottom-edge pinch, open palm, fingertips behind, turned through the light, two-hand presentation — and vary them across a build. Fixed rules: on the pad or the shell's edge; never on the band, never on the slides, never across the wordmark; peaks and notch visible. I2V negatives: `NEG-HELD-P`.
 
-**The inner pad** (the user's "silicone pad"): plain, smooth, matte black, no markings (`INNER_PAD`, read off `back.webp`). Prompts say "the pad", never "silicone".
+**The inner pad** (the user's "silicone pad") — **redrawn V7.49.33** from the user's photo and clip of the real strap (`stryde_refs/inner_face.jpg`, `inner_face_clip.mp4`): a **mid-grey soft-touch pad insert** filling the shell's two-peaked outline inside a **thin matte-black rim**; its surface covered in **fine shallow parallel grooves** sweeping in curved rows; and **one smooth, ungrooved raised ridge** — a long rounded crescent following the curve of the notch on the inside, thickest in its middle, tapering to each end. No markings, no wordmark on this side (`INNER_PAD`, negatives `NEG_INNER_PAD`). The V7.49.23 reading — plain smooth matte black, off `back.webp` — is retired: `back.webp` stays the reference for the band, loops and slides, but not for the inside. Any shot with the inside to the lens attaches `inner_face.jpg` (`refs_for("pad_back")`). Prompts say "the pad", never "silicone". *Unverified:* the ridge's exact ends (the photo is hand-held, a thumb covers part of it) — a flat-on photo of the inside would lock it.
 
 **Standing negatives from observed failures** (`NEG-OBSERVED`, dated in `NEG_OBSERVED_LOG`): V-shaped notch · crown or horn peaks · deep U or slab shell · slide on the face or on the band · invented slide frame · sideways chevrons · band out of the shell's bottom edge · product tipped · watch-strap band · buckle-shaped keeper. I2V only.
 

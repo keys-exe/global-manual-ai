@@ -1,6 +1,6 @@
 # Product Sheet — Stryde Precision Strap
 
-**V7.49.23.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
+**V7.49.33.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
 
 The geometry ratios were measured off the five V7.48 canonical renders (63, 64, 65, 66, 68) with a roll correction applied. **Since V7.49.11 the supplied product photos (`stryde_refs/`) are the product** (layer 1) and outrank those renders wherever they disagree. Where a figure is external it is marked Tier 3 and is not advertiser-held.
 
@@ -10,7 +10,7 @@ The geometry ratios were measured off the five V7.48 canonical renders (63, 64, 
 
 Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior shell on a closed elastic knit band, **one size fits all**, worn on one knee, sitting under the kneecap and over the upper patellar tendon.
 
-**Market note.** Multiple marketplace sellers list a "Stryde Precision Strap" built around a soft silicone lock-point pad. Our hero is rigid matte polymer with brushed chrome hardware, which is the opposite construction. Two consequences: the cheap-silicone villain archetype (§10) is the literal market reality and the anti-knock-off angle is stronger than it looked; and the name question is the advertiser's counsel's, not this sheet's.
+**Market note.** Multiple marketplace sellers list a "Stryde Precision Strap" built around a soft silicone lock-point pad. Our hero is rigid matte polymer with brushed chrome hardware, which is the opposite construction — its pad is on the inside only, a grey grooved insert with one raised ridge (§15, V7.49.33), never the whole strap. Two consequences: the cheap-silicone villain archetype (§10) is the literal market reality and the anti-knock-off angle is stronger than it looked; and the name question is the advertiser's counsel's, not this sheet's.
 
 ---
 
@@ -18,7 +18,7 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 
 **1 — Primary form.** A rigid moulded polymer shell spanning the whole front of the knee from one side of the leg to the other, its top edge waving up into two matching pointed peaks of equal height either side of a crisp concave notch, waisted off-centre, closed behind the leg by a flat matte-black woven elastic band.
 
-**2 — Material and finish.** Shell: matte polymer, satin not gloss, holding a soft broad highlight along the crown of each peak and down the waist. Band: black elastic band in a coarse knit with a visible textured weave and straight edges (supplied photos). Hardware: brushed chrome slides carrying three engraved dotted chevrons, the only specular element on the object. Keeper loops: moulded matte black, on the band's outer face.
+**2 — Material and finish.** Shell: matte polymer, satin not gloss, holding a soft broad highlight along the crown of each peak and down the waist. Band: black elastic band in a coarse knit with a visible textured weave and straight edges (supplied photos). Hardware: brushed chrome slides carrying three engraved dotted chevrons, the only specular element on the object. Keeper loops: moulded matte black, on the band's outer face. **Inside of the shell (V7.49.33):** a mid-grey soft-touch pad insert in a thin matte-black rim, fine curved parallel grooves, one smooth raised crescent ridge following the notch (§15, `INNER_PAD`).
 
 **3 — Distinguishing asymmetries.** *The most important field, and every item here is normalised out if unstated.*
 
@@ -82,6 +82,7 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 | Worn — straight, bent, rear | + `worn_front.jpg`, `worn_bent.jpg` or `worn_rear.jpg` |
 | Putting it on | + `worn_front.jpg` (the end position) |
 | Box — closed / open | + `package_closed.jpg` or `package_open.jpg` (locked V7.49.27) |
+| Inside of the shell to the lens (`pad_back`, `back_view`) | + `inner_face.jpg` (V7.49.33 — your photo of the real strap; its inside outranks `back.webp`'s plain black) |
 | Held | the two originals only; `product_held.jpg` is an optional example of one grip, **not locked** — pick a grip from `HELD_GRIPS` |
 
 Never more than the two originals plus one. **Retired:** `product_front.jpg`, `product_back.jpg`, `product_profile.jpg`, `three_quarter_a.jpg`, `three_quarter_b.jpg`, and the never-stored composite `STRYDE_reference_v7_49_11.png`. Image plus names is the pair; either alone leaks.
@@ -132,7 +133,7 @@ British, roughly 55–80. Cast to the buyer, balanced across men and women, with
 | Clinical placement "just below the kneecap"; one manufacturer specifies about 2 inches below | 3 | Third-party guidance. Compatible with the contact phrasing — the top edge touches the pole while the body covers the upper tendon |
 | Every step puts **17× bodyweight** through the spot below the kneecap | **User-confirmed V7.49.29** | Advertiser-held. The number is a post overlay, never generated (§17) |
 | **Three years to build with orthopaedic surgeons** | **User-confirmed V7.49.29** | Advertiser-held. Surgeon cast per §19B |
-| Inside, a **silicone pad** catches the force | **User-confirmed V7.49.29** | The material is now advertiser-held. Rendering rule unchanged: prompts say "the pad", never "silicone", because the word renders the soft glossy fake (§10, `RULINGS['held_on_pad']`) |
+| Inside, a **silicone pad** catches the force | **User-confirmed V7.49.29** | The material is now advertiser-held. Rendering rule unchanged: prompts say "the pad", never "silicone", because the word renders the soft glossy fake (§10, `RULINGS['held_on_pad']`). Shown by `PAD_BACK_SHOT` — the grey grooved pad with its raised ridge, photographed V7.49.33 |
 | **Sports scientists measured 34% less strain** every step | **User-confirmed V7.49.29** | Advertiser-held. 34% is a post overlay; no screen with numerals is generated (§10) |
 | Built for bone on bone, arthritis, worn cartilage, meniscus | **User-confirmed V7.49.29** | Advertiser-held |
 | **Recommended by orthopaedic surgeons** | **User-confirmed V7.49.29** | Advertiser-held. Surgeon cast per §19B |
@@ -216,7 +217,7 @@ A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and
 
 **Held is not locked** (user): there are many right ways to hold it. Choose from `HELD_GRIPS` per beat — bottom-edge pinch, open palm, fingertips behind, turned through the light, two-hand presentation — and vary them across a build. Fixed rules: on the pad or the shell's edge; never on the band, never on the slides, never across the wordmark; peaks and notch visible. I2V negatives: `NEG-HELD-P`.
 
-**The inner pad** (the user's "silicone pad"): plain, smooth, matte black, no markings (`INNER_PAD`, read off `back.webp`). Prompts say "the pad", never "silicone".
+**The inner pad** (the user's "silicone pad") — **redrawn V7.49.33** from the user's photo and clip of the real strap (`stryde_refs/inner_face.jpg`, `inner_face_clip.mp4`): a **mid-grey soft-touch pad insert** filling the shell's two-peaked outline inside a **thin matte-black rim**; its surface covered in **fine shallow parallel grooves** sweeping in curved rows; and **one smooth, ungrooved raised ridge** — a long rounded crescent following the curve of the notch on the inside, thickest in its middle, tapering to each end. No markings, no wordmark on this side (`INNER_PAD`, negatives `NEG_INNER_PAD`). The V7.49.23 reading — plain smooth matte black, off `back.webp` — is retired: `back.webp` stays the reference for the band, loops and slides, but not for the inside. Any shot with the inside to the lens attaches `inner_face.jpg` (`refs_for("pad_back")`). Prompts say "the pad", never "silicone". *Unverified:* the ridge's exact ends (the photo is hand-held, a thumb covers part of it) — a flat-on photo of the inside would lock it.
 
 **Standing negatives from observed failures** (`NEG-OBSERVED`, dated in `NEG_OBSERVED_LOG`): V-shaped notch · crown or horn peaks · deep U or slab shell · slide on the face or on the band · invented slide frame · sideways chevrons · band out of the shell's bottom edge · product tipped · watch-strap band · buckle-shaped keeper. I2V only.
 
