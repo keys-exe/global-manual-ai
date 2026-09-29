@@ -52,14 +52,17 @@ STREET = ("THE SAME STREET as the attached location plate: a long grey paving-sl
 LIGHT = {  # source, screen side, quality
     "M-GREY-L": ("the half-landing window at the top of the flight", "left", "grey morning light, soft and indirect from above — the problem state, flat and cool, never moody"),
     "STREET-AM-L": ("the broad overcast morning sky", "left", "flat, grey, cool morning light"),
+    "D-GREY-L": ("the landing window at the top of the flight", "left", "grey morning light, soft and indirect from above — the problem state, flat and cool, never moody"),
 }
 COLOUR = {
     "M-STAIRS-AM": ("soft grey morning daylight, cool-neutral", "pale duck-egg blue walls, oatmeal carpet, white spindles and skirting, honey oak handrail",
                     "a dusty-pink cardigan, navy-and-white stripes and a navy skirt", "the honey oak handrail", "true to life, slightly muted"),
     "STREET-AM": ("flat overcast morning daylight, cool", "grey paving, green privet, pebble-dash and brick semis", "navy skirt and white plimsolls",
                   "the green privet", "muted"),
+    "D-STAIRS-AM": ("soft grey morning daylight, cool-neutral", "warm mid-grey walls, charcoal carpet with white nosing stripes, white spindles and skirting",
+                    "a navy zip-neck top, dark grey shorts and white trainers with navy trim", "the white nosing stripes", "true to life, slightly muted"),
 }
-KELVIN = {"M-STAIRS-AM": 6500, "STREET-AM": 6500}
+KELVIN = {"M-STAIRS-AM": 6500, "STREET-AM": 6500, "D-STAIRS-AM": 6500}
 
 
 def light(key, subj):
@@ -149,6 +152,28 @@ B["HK1-b"] = (NB2, [], anat(
     "Seen from the side, in profile, the knee mid-stride with the foot planted and the limb carrying the body's weight. "
     + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
     view="viewed from the side, in profile, the whole knee joint in the middle of the frame with the thigh above and the shin below"))
+
+# ── Hook 2 ──────────────────────────────────────────────────────────────────────────
+B["HK2-a"] = (NB2, [], anat(
+    "Seen from the front, the knee straight and standing, the kneecap in the upper middle of the frame and the patellar tendon running down "
+    "from its lower edge to the top of the shin. Only the tendon glows; the rest of the joint stays calm, lit but not glowing. No thumb, no hand, "
+    "no ruler, nothing held against it for scale. " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from the front from a slightly low camera looking up, the kneecap and the tendon below it filling the middle of the frame, "
+         "the lower thigh above and the upper shin below"))
+
+B["HK2-b"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held low near the hall floor at the foot of the stairs, three-quarter on to the bottom stair. He is starting UP "
+    "his stairs, caught mid-step: his right foot has just planted flat on the bottom stair and his bare right knee is bending as it takes "
+    "his weight, his left foot still on the hall floor behind, heel lifting. The frame is cropped at mid-thigh — his face and body are not "
+    "in the frame; it holds his shorts hem, his bare right knee and shin, both trainers, the bottom stairs and the hall floor.",
+    R2 + " Wearing " + WARD["D-D1"] + ". His legs: dark brown older skin, strong calves, a few grey hairs on the shins, ashy knees with soft "
+    "creases, real unretouched skin.",
+    D_STAIRS,
+    angle("HK2-b", "his right knee and shin on the bottom stair"),
+    focus("his right knee", deep=False),
+    light("D-GREY-L", "his legs and the bottom stairs"), colour("D-STAIRS-AM")],
+    "no face in frame, no product anywhere, no knee strap, no knee support, no walking stick, no handrail grab, no second person, "
+    "no person coming down the stairs, no wrong number of legs"))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
