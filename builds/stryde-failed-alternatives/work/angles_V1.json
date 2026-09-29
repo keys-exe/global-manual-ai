@@ -1,0 +1,582 @@
+[
+ {
+  "beat": "HK1-01",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "R1 Bernadette",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = looking down into the drawer: all that money",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "stained-glass front-door panel, east, plus the landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem \u2192 after: bright morning wash down the hall",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "HK-BR",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "SG-01 hands + R3 Delroy",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile = the height: the notch meets the kneecap",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "consulting-room window, left-hand wall",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "everyday: bright overcast daylight",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B1-01a",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "SG-01",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 11,
+  "light": {
+   "source": "consulting-room window, left-hand wall",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "everyday: bright overcast daylight",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "MECH-S1",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B1-02a",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "R4 Sian",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile = the whole knee swallowed by the sleeve",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 9,
+  "light": {
+   "source": "small kitchen window over the sink, far wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: soft overcast morning",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B1-02b",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "R1 Bernadette",
+  "height": "high",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "high = her own view down at her knee",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "stained-glass front-door panel, east, plus the landing window",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem \u2192 after: bright morning wash down the hall",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "MECH-02",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "low = the force, heavy",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "MECH-03",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "high = the whole knee wrapped, seen from above",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B1-05a",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "R1 Bernadette",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = the strap meeting the spot, from below",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "stained-glass front-door panel, east, plus the landing window",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem \u2192 after: bright morning wash down the hall",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "MECH-04",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile = the tendon's side view, now calm",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B2-06",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "R2 Gordon",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "low = strength as he rises",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 6,
+  "light": {
+   "source": "kitchen window over the sink, far wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem \u2192 turn: flat grey overcast morning",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "MECH-05",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B3-07",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "R4 Sian",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = the stairs no longer loom",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": 9,
+  "light": {
+   "source": "the window at the top of the stairs, plus the front-door pane",
+   "key_side": "L",
+   "time": "late morning",
+   "arc": "turn \u2192 after: sun down the treads",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B1-08",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "R3 Delroy",
+  "height": "ground",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "ground = the bent knee, the strap still in place",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "open sky, midday sun high to the left",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "after: bright midday sun",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B1-09",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "R2 Gordon",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = strength in the stride",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": 7,
+  "light": {
+   "source": "open sky, the sun high behind the camera's right",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: bright, sun on the brick",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B1-10",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "SG-01 + R3 Delroy",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "OTS = over the surgeon's shoulder: her approval",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "consulting-room window, left-hand wall",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "everyday: bright overcast daylight",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B1-11a",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "object",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = what's in the box",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "stained-glass front-door panel, east, plus the landing window",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem \u2192 after: bright morning wash down the hall",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "CARD-11b",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "two straps on dark",
+  "height": "eye",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "rendered: dark card, soft top light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "offer card",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B1-12a",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "R1 Bernadette",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = the same drawer as the hook, now calm",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "stained-glass front-door panel, east, plus the landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem \u2192 after: bright morning wash down the hall",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B1-12b",
+  "group": "Video 1",
+  "type": "BR",
+  "subject": "R1 Bernadette",
+  "height": "eye",
+  "side": "behind",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "behind = she's off out, the day ahead",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": 1,
+  "light": {
+   "source": "stained-glass front-door panel, east, plus the landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem \u2192 after: bright morning wash down the hall",
+   "why": "",
+   "kelvin": 5600
+  }
+ }
+]
