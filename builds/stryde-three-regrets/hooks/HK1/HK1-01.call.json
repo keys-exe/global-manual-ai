@@ -3,25 +3,26 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"hk1_01_struggle\",\"subject\":\"THE SAME WOMAN AND BEDROOM as in the start frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"MEDIUM as in the start frame: eye height from the doorway, three-quarter, the room around her. FOCUS: her face and hands on the knee are sharp.\"},\"motion\":\"CONTINUING: she sits on the bed edge, both hands clamped round her right knee, wincing. COMPLETING: one slow painful rock forward, about two seconds — she leans over the knee, the wince tightening, then eases a little back. UNRESOLVED: she stays bent over the knee, still hurting. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, grey flat late-morning window light from the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no standing up, no letting go of the knee, no crying, no talking, no face to the lens, no furniture moving, no music\"}",
+ "prompt": "{\"shot\":\"hk1_01_struggle\",\"subject\":\"THE SAME WOMAN, CLOTHES AND BEDROOM as in the start frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"MEDIUM as in the start frame: eye height from the doorway, three-quarter, the room around her. FOCUS: her face and hands on the knee are sharp.\"},\"motion\":\"CONTINUING: she sits on the bed edge, both hands clamped round her right knee, wincing. COMPLETING: one slow painful rock forward, about two seconds — she leans over the knee, the wince tightening, then eases a little back. UNRESOLVED: she stays bent over the knee, still hurting. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, grey flat late-morning window light from the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no standing up, no letting go of the knee, no clothes changing, no crying, no talking, no face to the lens, no furniture moving, no music\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_193752_d163c373-a8fe-4578-87ab-64f020c880ea.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_204225_69bf0596-516f-4829-863b-d86a399b3dc0.png",
  "start_approved": true,
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 2,
- "fix_note": "frame fault: v1 did not look like struggling, then the room drifted from P1 (user Fixes 1-2) → new start frame v3 in the P1 bedroom, wincing, confirmed by the user; motion kept to one slow painful rock",
+ "generation": 3,
+ "user_go": "user 2026-09-29: \"MAKE CLIP FOR HK1-01\" (after image v4, told it would be the 3rd generation)",
+ "fix_note": "frame fault: gen 2 was from v3 in the dressing gown (user Fix: CHANGE CLOTHES) → new start image v4, the hook's own outfit, confirmed by the user; same single painful rock",
  "risks": [
   {
    "risk": "she stands up or lets go",
    "prevented_by": "one rock, stays seated; no standing up, no letting go of the knee"
   },
   {
-   "risk": "the room warps or furniture moves",
-   "prevented_by": "HOLD-C; no furniture moving"
+   "risk": "the outfit changes mid-clip",
+   "prevented_by": "subject unchanged; no clothes changing"
   },
   {
    "risk": "hands fuse with the knee",
