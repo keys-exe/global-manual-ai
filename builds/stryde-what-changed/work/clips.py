@@ -187,16 +187,30 @@ B["B03c"] = clip("B03c",
            {"risk": "text appears on the page", "prevented_by": "'no text appearing'"}])
 
 # B04c "so coming down puts more through that band than going up does." ≈ 3.5 s (est.) → 5 s.
-B["B04c"] = clip("B04c",
-    "A premium 3D anatomical model of a knee as a dark translucent silhouette on a near-black field, seen from a high three-quarter angle, "
-    "bent under a downward step, only the patellar tendon legible inside it with a tight spot glowing on it.",
-    "Already under load on the first frame: the foot lands on the step below and the knee bends a little deeper to catch the weight — the "
-    "spot at [SITE] flares brighter as it lands, then eases back, staying one tight spot; one landing in about two seconds.",
-    "no arrows, no text, no labels, no numbers, no glow spreading down the shin, no second limb, no product, no camera orbit, no zoom",
+B["B04c"] = clip("B04c",   # v2 — user Fix "GOING DOWN THE STAIR" (v1: the spot flared but the leg barely moved)
+    "A premium 3D anatomical model of a leg as a dark translucent silhouette on a near-black field, seen from a high three-quarter angle, "
+    "the knee bent above a step, the foot about to land on the step below, only the patellar tendon legible inside it.",
+    "Already stepping down on the first frame: the leg comes DOWN the stair — the foot lowers from the upper step and lands flat on the "
+    "step below while the knee bends deeper to catch the body's weight, the whole leg visibly travelling downward within the frame; as "
+    "the foot lands the spot at [SITE] flares brighter, then eases back, staying one tight spot. One step down in about two seconds.",
+    "no stepping up, no leg staying still, no arrows, no text, no labels, no numbers, no glow spreading down the shin, no second limb, "
+    "no product, no camera orbit, no camera following the leg, no zoom",
     3.5, hi=5, anat=True,
-    risks=[{"risk": "the glow spreads down the leg", "prevented_by": "'staying one tight spot', negatives on spread"},
-           {"risk": "the silhouette swims or warps", "prevented_by": "HOLD-C + NEG-WARP-C, one landing only"},
-           {"risk": "labels or numbers appear", "prevented_by": "'no text, no labels, no numbers'"}])
+    risks=[{"risk": "the leg does not visibly step down again", "prevented_by": "the descent named twice — foot lowers and lands, the leg travels down — 'no leg staying still'"},
+           {"risk": "the camera follows the leg down", "prevented_by": "locked-off tripod clause, 'no camera following the leg'"},
+           {"risk": "the glow spreads or the silhouette warps", "prevented_by": "'one tight spot', HOLD-C + NEG-WARP-C"}])
+# B04a v2 image (user confirmed): Desmond struggling up. "Going up the stairs, your muscles lift you." ≈ 2.2 s → 4 s.
+B["B04a"] = clip("B04a",
+    "A Black British man of sixty-six part-way up his stairs, three-quarter on, one hand gripping the dark handrail, the other pressed on "
+    "his thigh, leaning forward over his bent knee, face set with effort.",
+    "Already mid-effort on the first frame: he pushes down on his thigh and pulls on the rail and levers himself up onto the next tread, "
+    "slowly and with effort, then pauses there to breathe — one heavy step up in about two seconds, real time.",
+    "no falling, no crying, no looking at the camera, no second person, no knee strap, no walking stick, no going down, no slow motion, "
+    "no extra hands",
+    2.2, hi=4,
+    risks=[{"risk": "hands or legs warp on the step", "prevented_by": "one step at a countable pace, start frame caught mid-effort, HOLD-C + NEG-WARP-C"},
+           {"risk": "his face drifts off the sheet", "prevented_by": "short 4 s clip, three-quarter, face stays set"},
+           {"risk": "camera travels with him up the stairs", "prevented_by": "locked-off tripod clause"}])
 
 START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
          "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
@@ -210,7 +224,8 @@ START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUy
          "B03a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_202127_fabbd7d4-506d-47ae-ac06-d559f3c40e63.png",
          "B03b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_202128_46596a96-c9cc-487c-a63d-ba91a8d96c67.png",
          "B03c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_200831_62aeddb0-e97c-4589-9d43-6d675499545c.png",
-         "B04c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_185451_498649e3-bc92-4382-b6ca-3c62cf7ba813.png"}
+         "B04c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_185451_498649e3-bc92-4382-b6ca-3c62cf7ba813.png",
+         "B04a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_205729_cf751279-1d57-43d5-9b56-f8b0adbb16f5.png"}
 
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)

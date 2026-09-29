@@ -308,19 +308,21 @@ B["B04a"] = (NB2, ["R2", "P2"], photo([
     "no crying, no screaming, no falling, no looking at the camera, no product anywhere, no knee strap, no walking stick, no second person, "
     + PLAIN_SHOES + ", no going down the stairs"))
 
-# B04b v2 — user Fix "GOING DOWN WHILE HOLDING THE BANISTER, CHANGE THE BROLL": Maureen coming down towards the lens, gripping the rail.
+# B04b v3 — user Fix "SHE'S GOING DOWN THE STAIR, NOT YET AT THE LAST STEP" (v2 near the bottom); v2 — user Fix "GOING DOWN WHILE HOLDING THE BANISTER, CHANGE THE BROLL": Maureen coming down towards the lens, gripping the rail.
 B["B04b"] = (NB2, ["R1", "P1"], photo([
     "A snapshot from a phone held low at the foot of the stairs, looking up the flight. She is coming DOWN her stairs towards the lens, "
-    "caught mid-step: her right hand gripping the honey oak handrail tightly, her weight held back, her right foot lowering carefully onto "
-    "the next tread down while the left knee bends to take her, her eyes on the step below, concentrating. Medium shot, the whole of her "
-    "from head to plimsolls, the flight rising behind her to the half-landing window.",
+    "HALFWAY DOWN THE FLIGHT — six or seven treads above the hall floor, with the lower stairs still stretching down between her and the "
+    "lens, nowhere near the last step — caught mid-step: her right hand gripping the honey oak handrail tightly, her weight held back, her "
+    "right foot lowering carefully onto the next tread down while the left knee bends to take her, her eyes on the step below, "
+    "concentrating. The whole of her from head to plimsolls, the empty lower treads below her, the flight rising behind her to the "
+    "half-landing window.",
     R1 + " Wearing " + WARD["M-D1"] + ".",
     M_STAIRS,
     angle("B04b", "her coming down the stairs"),
     focus("her face and her hand on the rail", deep=False).replace("the room behind", "the stairs behind"),
     light("M-GREY-L", "her and the stairs"), colour("M-STAIRS-AM")],
     "no falling, no wincing in agony, no looking at the camera, no product anywhere, no knee strap, no walking stick, no stairlift, "
-    "no second person, no logos on the plimsolls, no going up the stairs"))
+    "no second person, no logos on the plimsolls, no going up the stairs, no standing on the bottom step, no standing on the hall floor"))
 
 # B04c — "so coming down puts more through that band than going up does." ANAT-C silhouette, only the tendon legible.
 B["B04c"] = (NB2, [], anat(
