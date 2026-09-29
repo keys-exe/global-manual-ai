@@ -8975,6 +8975,8 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | Appendix D | The V7.53.0 "GPT Image off every beat with a body" rule retired |
 | Files | `preflight.py` (pair routing by mode and anatomy), skill summaries, CLAUDE.md |
 
+**Scope (user, 2026-09-29: "we will use this in the new sessions, the image models update, not on the current ones"):** V7.72.0–V7.72.1 routing applies to builds started from V7.72 on. A build already running keeps its step-2 model lock (§18A rule 4); a session resuming or fixing it never switches its images to the new routing.
+
 **V7.72.1 (same day):** anatomy / mechanism and Modes 2, 3, 5 run on `nano_banana_pro` alone — the pair is two Pro renders; `nano_banana_2` is only the alternative when Pro can't run (user: "just use Nano Banana Pro and not 2; Nano Banana 2 is just an alternative").
 
 **Origin:** user, 2026-09-29 — "with the new prompts GPT Image will be the best bet and I'll just change that if ever; all realistic Mode 1 and Mode 4 on GPT Image, no Nano Banana Pro in realistic; Nano Banana Pro just stays at anatomy and Pixar". Risk recorded in Open Decisions. Existing builds are not changed (§34).
