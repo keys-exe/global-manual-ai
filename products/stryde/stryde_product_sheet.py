@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.35
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.36
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -347,6 +347,10 @@ SIZE_LOCK = {
 # whenever the product's size is being judged. Was 12 x 5 cm (V7.49.21, Tier-3
 # anatomy only), about 20 percent small against the real strap in a hand.
 SIZE_REF = "stryde_refs/inner_face.jpg"
+# V7.49.36: the worn size, from the user's brand photos. The locked worn
+# references (worn_front/bent/rear) already match them (shell ~1.96 wide to tall
+# on the knee), so they stand. Attach one of these when a worn render drifts in size.
+SIZE_REF_WORN = ("stryde_refs/brand_worn_walker.jpg", "stryde_refs/brand_worn_hiker.jpg")
 
 # The same size said three ways -- one per context. Positive wording (T2I).
 SIZE_OBJECT = (
@@ -1405,6 +1409,14 @@ PRODUCT_PHOTOS = {
                        "midrib with fine grooves fanning from it; black band ends through the chrome slides. "
                        "The authority for the inside (INNER_PAD) and, from V7.49.34, THE SIZE REFERENCE: "
                        "the strap in an adult hand (SIZE_LOCK, SIZE_REF)"),
+    "brand_worn_walker.jpg": ("V7.49.36, the user's brand photo (no text): a woman walking a hill path, the "
+                              "strap on her right knee from the front. THE WORN SIZE REFERENCE with "
+                              "brand_worn_hiker.jpg: the shell spans the knee's front, about half as tall "
+                              "as it is wide (1.9-2.0 on the knee), shorter than the kneecap"),
+    "brand_worn_hiker.jpg": ("V7.49.36, the user's brand photo, cropped above its stat text and caption: a "
+                             "hiker on a rocky path, the strap on his right knee from the front. Worn size "
+                             "reference with brand_worn_walker.jpg. The uncropped original carries headline "
+                             "type and is never attached"),
     "inner_face_clip.mp4": ("V7.49.33, the user's 3.5s clip turning the strap in the hand: the same inside "
                             "from several angles. For reading only, never attached to a call"),
     "three_quarter_a.jpg": "three-quarter, floating: wordmark reads left of the notch in this view (yaw)",
@@ -2081,7 +2093,7 @@ def counts():
 # ==================================================================
 SHEET_MD = r'''# Product Sheet — Stryde Precision Strap
 
-**V7.49.35.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
+**V7.49.36.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
 
 The geometry ratios were measured off the five V7.48 canonical renders (63, 64, 65, 66, 68) with a roll correction applied. **Since V7.49.11 the supplied product photos (`stryde_refs/`) are the product** (layer 1) and outrank those renders wherever they disagree. Where a figure is external it is marked Tier 3 and is not advertiser-held.
 
@@ -2268,6 +2280,8 @@ The global Standards are product-agnostic from V7.49.4. Everything below used to
 **One unit, one size, every frame.** Proportions measured straight-on on `front.webp`: the shell is **about 2.5× as wide as it is tall** (2.50; `product_front.jpg` 2.32), the band is **about half the shell's height**, the notch rises 0.18 of the width, the peaks span 0.60 of it. Rendering size: **shell ~12 cm across × ~5 cm tall, band ~2.5 cm** — derived, not advertiser-held.
 
 **The size reference is `stryde_refs/inner_face.jpg`** (V7.49.34, user: "use the image that will be our reference for the size"). The size in a hand is exactly what that photo shows — attach it and ask for the same size against the hand; never translate it into centimetres or thumb counts. **Withdrawn V7.49.35:** the V7.49.34 reading off it (15 × 6 cm, band 3 cm, seven thumbs) rendered the strap too big (user: "these are too big and does not look like the one I sent"). A ruler measurement of the real strap replaces the numbers above.
+
+**Worn size (V7.49.36):** the user's brand photos `brand_worn_walker.jpg` and `brand_worn_hiker.jpg` (cropped clear of its text) are the worn size reference (`SIZE_REF_WORN`): the shell spans the front of the knee and stands about half as tall as it is wide, shorter than the kneecap. The locked worn references already match them (measured 1.9–2.0 on the brand photos, 1.96 on `worn_front.jpg`), so they are not remade.
 
 | Context | Size anchor (string) |
 |---|---|
