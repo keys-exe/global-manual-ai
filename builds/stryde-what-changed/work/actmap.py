@@ -302,6 +302,11 @@ BB("B06-BR", A1, "That part is ordinary. It happens to everybody. But here is wh
    "an ordinary, slightly slow pace", STILL, "street: three-quarter on to the bus stop, camera still, nobody looks at the lens", "no", "absent", "—", "NB2",
    EYE, THR, "clean", "MEDIUM", "three-quarter = several people, one ordinary street, the same trouble", "deep", "deep", L(STREET_AM, "L"), True,
    notes="user 2026-09-29 'It happens to everybody. (2 OR 3 PEOPLE HAVING PROBLEM IN THEIR KNEE) BROLL HERE' + 'NOT SAME AGE'; one-off extras, no sheets (§19B)")
+BB("B06-BR2", A1, "The load does not thin with it.", "load", "the load stays full",
+   "R2", "L-STREET", "D-D1", "CU knee-height, side-on on the pavement: Desmond mid-stride, his right heel striking the paving slab, the knee taking his whole weight as it lands, the thigh firming", "one heavy step lands",
+   "one step, about a second, ordinary walking pace", STILL, "street: side-on, knee-height, legs only, camera still, he walks through the frame", "no", "absent", "—", "NB2",
+   LOW, PRO, "clean", "CU", "low profile = the full weight landing on the knee", "foreground", "shallow", L(STREET_AM, "L"), False,
+   notes="user 2026-09-29 'The load does not thin with it — BROLL HERE'")
 BB("B07-BRa", A1, "The cushion gets thinner.", "thinner", "the cushion in the knee wears thin",
    "ANAT", "—", "—", "ANAT-B front-on close-up of the joint gap: the pale cartilage cushion between thigh bone and shin bone, visibly thin and worn, the bones sitting close", "the cushion thins a little further",
    "one slow change over three seconds", STILL, "none", "no", "absent", "—", "NB2",
@@ -354,7 +359,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []
