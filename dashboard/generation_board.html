@@ -651,6 +651,28 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .mc.locked .media{cursor:default}
 .mc .media .ghost{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.25;filter:grayscale(1)}
 .mc .media .lockmsg{position:relative;font-weight:600}
+/* Seedance ingredients: several reference images feed one video */
+.ing-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:8px}
+.ing{position:relative;display:flex;flex-direction:column;gap:4px;min-width:0;border:0;background:transparent;padding:0;text-align:left;color:inherit;font:inherit}
+.ing .im{position:relative;aspect-ratio:3/4;border-radius:8px;border:1.5px solid var(--line);background:var(--sunk);overflow:hidden;display:grid;place-items:center;font-size:10.5px;color:var(--muted);text-align:center;padding:0}
+.ing .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.ing.ok .im{border-color:var(--use)}
+.ing.now .im{border-color:var(--review)}
+.ing.bad .im{border-color:var(--regen)}
+button.ing .im{cursor:zoom-in}
+.ing .il{font-size:11px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ing .ir{font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ing .dot{position:absolute;right:5px;top:5px;width:8px;height:8px;border-radius:50%;background:var(--st,#8a92a1);box-shadow:0 0 0 1.5px var(--surface);z-index:1}
+.ing-row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin}
+.ing-row .ing{flex:none;width:44px}
+.ing-row .ing .il{font-size:9.5px;font-weight:500}
+.v-ing{width:100%;height:100%;overflow:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));align-content:start;gap:12px;padding:4px}
+.v-ing .ing .im{border-color:#2c323e;background:#161a22}
+.v-ing .ing .il{color:#e8ebf1}
+.v-ing .ing .ir{color:#9aa3b2}
+.v-ing1{position:relative;width:100%;height:100%}
+.v-ing1 .btn{position:absolute;left:10px;top:10px;z-index:1}
+.v-media .v-ing1 img{width:100%;height:100%;max-height:none;min-height:0;border-radius:12px;background:#000;object-fit:contain}
 .mc-t{font-weight:600;font-size:13px}
 .mc-l{font-size:12px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .mc .specs{padding-top:0;gap:6px 10px}
@@ -1043,7 +1065,7 @@ function partsOf(g,k){const p=g[STEP[k].parts];return Array.isArray(p)&&p.length
 function srcFrom(asset,parts,type){return Array.isArray(parts)&&parts.length>1?`data-parts="${esc(parts.join(","))}" data-ptype="${esc(type||"")}"`:`src="/_blob/${esc(asset)}"`}
 function srcAttr(g,k){const d=STEP[k];return srcFrom(g[d.asset],g[d.parts],g[d.type])}
 // Versions: every render a step has had, oldest first. The current one is the step's own fields.
-function snapshot(g,k){const d=STEP[k];return {asset:g[d.asset],parts:Array.isArray(g[d.parts])?g[d.parts]:[],type:g[d.type]||"",url:g[d.url]||"",model:g[d.model]||d.defModel||"",connector:g[d.conn]||d.defConn||"",credits:g[d.credits]??null,size:g[d.size]??null,at:g[d.at]||g.updatedAt||null,note:""}}
+function snapshot(g,k){const d=STEP[k];return {asset:g[d.asset],parts:Array.isArray(g[d.parts])?g[d.parts]:[],type:g[d.type]||"",url:g[d.url]||"",model:g[d.model]||d.defModel||"",connector:g[d.conn]||(k==="video"&&isSeed(g)?"Kie AI":d.defConn)||"",credits:g[d.credits]??null,size:g[d.size]??null,at:g[d.at]||g.updatedAt||null,note:""}}
 function versionsOf(g,k){
   const d=STEP[k]; const arr=(Array.isArray(g[d.vers])?g[d.vers]:[]).filter(x=>x&&x.asset).map(x=>({...x}));
   arr.forEach((x,i)=>{if(!x.v) x.v=i+1});
@@ -1112,7 +1134,7 @@ function tile(g){
   const kind=g.kind||(isAudio(g)?"audio":String(g.videoType||"").startsWith("video/")?"video":stage.kind);
   const specs=[g.duration?`${g.duration}s`:"", g.regens?`R${g.regens}`:""].filter(Boolean);
   const pk=flow(g).find(k=>pending(g,k));
-  const img=!pk&&g.imageAsset?`<img class="bg" ${srcAttr(g,"image")} alt="" loading="lazy">`:"";
+  const cv=coverOf(g), img=!pk&&cv?`<img class="bg" ${srcFrom(cv.asset,cv.parts,cv.type)} alt="" loading="lazy">`:"";
   const first=flow(g).find(k=>g[STEP[k].asset])||flow(g)[0];
   return `<div class="tile s-${st}">
     <button class="frame${img?" has-img":""}${pk?" gen":""}" type="button" data-viewm="${esc(g.id)}" data-step="${pk||first}" aria-label="View ${esc(g.beat||"")}">${pk?genPanel(g,pk,true):img}<span class="stripe"></span>${ICONS[kind]||""}
@@ -1234,8 +1256,33 @@ function showBanner(t){const b=$("#banner");b.textContent=t;b.hidden=!t}
 function flow(g){
   if(g.flow) return g.flow;
   if(["cast","locations"].includes(g.stage)) return ["image"];
-  if(["hooks","talking","broll"].includes(g.stage)) return ["image","video"];
+  if(["hooks","talking","broll"].includes(g.stage)) return isSeed(g)?["video"]:["image","video"];
   return ["file"];
+}
+// Seedance (ingredients mode): several reference images feed one video — shown as the ingredients, then the video, never one start image.
+// ingredients: [{label, role, ref}] — ref = the generation doc (id or beat) whose image is used; or {label, role, asset, parts, type} for a file with no card of its own.
+// a Seedance card that already has its own start image (older builds) keeps the image → video flow
+function isSeed(g){return Array.isArray(g.ingredients)&&g.ingredients.length>0||/seedance/i.test(String(g.model||""))&&!g.imageAsset&&!g.imagePrompt}
+function ingOf(g){
+  return (Array.isArray(g.ingredients)?g.ingredients:[]).map((x,i)=>{
+    const r=x.ref?state.gens.find(y=>y.id===x.ref||(y.build===g.build&&y.beat===x.ref)):null;
+    return r?{i,label:x.label||r.title||r.beat,role:x.role||r.beat||"",ref:r,asset:r.imageAsset,parts:r.imageParts,type:r.imageType,st:pending(r,"image")?"gen":stepState(r,"image")}
+      :{i,label:x.label||"Ingredient "+(i+1),role:x.role||"",ref:null,asset:x.asset,parts:x.parts,type:x.type,st:x.asset?"ok":"todo"};
+  });
+}
+function ingReady(g){const l=ingOf(g);return l.length>0&&l.every(x=>x.st==="ok")}
+// a video unlocks when its image is confirmed — a Seedance video when every ingredient is
+function videoLocked(g){return isSeed(g)?!ingReady(g):stepState(g,"image")!=="ok"}
+// the picture that stands for a beat: its image, or a Seedance beat's first ingredient
+function coverOf(g){if(g.imageAsset) return {asset:g.imageAsset,parts:g.imageParts,type:g.imageType};const x=isSeed(g)&&ingOf(g).find(y=>y.asset);return x?{asset:x.asset,parts:x.parts,type:x.type}:null}
+function ingColor(st){return st==="ok"?"var(--use)":st==="bad"||st==="gen"?"var(--regen)":st==="review"?"var(--review)":"#8a92a1"}
+function ingTile(g,x,where){
+  const cls=x.st==="ok"?"ok":x.st==="bad"||x.st==="gen"?"bad":x.st==="review"?"now":"";
+  const im=x.ref&&pending(x.ref,"image")?genPanel(x.ref,"image",true):x.asset?`<img ${srcFrom(x.asset,x.parts,x.type)} alt="${esc(x.label)}" loading="lazy">`:`<span>${x.ref?"No image yet":"Missing"}</span>`;
+  const act=x.ref?`data-viewm="${esc(x.ref.id)}" data-step="image"`:x.asset?`data-ving="${where==="viewer"?x.i:esc(g.id)+":"+x.i}"`:"";
+  const tag=act?"button":"div";
+  const tip=x.st==="ok"?"Confirmed":x.st==="review"?"Check it":x.st==="bad"?"Fixing":x.st==="gen"?"Generating":"Waiting";
+  return `<${tag} ${tag==="button"?'type="button" ':""}class="ing ${cls}" ${act} title="${esc(x.label+(x.role?" · "+x.role:"")+" · "+tip)}"><span class="dot" style="--st:${ingColor(x.st)}"></span><span class="im">${im}</span><span class="il">${esc(x.label)}</span>${where==="row"?"":`<span class="ir">${esc(x.role||tip)}</span>`}</${tag}>`;
 }
 // A step being generated or regenerated shows the generating panel, never its old render (Current and Final boards).
 function pending(g,k){return BOARD_ROLE!=="old"&&["bad","gen"].includes(stepState(g,k))}
@@ -1256,7 +1303,7 @@ function stepState(g,k){
 }
 function nextStep(g){return flow(g).find(k=>stepState(g,k)!=="ok")||null}
 function needsMe(g){return nextStep(g)!==null}
-function stepNeedsYou(g){return flow(g).some(k=>stepState(g,k)==="review"&&!(k==="video"&&stepState(g,"image")!=="ok"))}
+function stepNeedsYou(g){return flow(g).some(k=>stepState(g,k)==="review"&&!(k==="video"&&videoLocked(g)))}
 // what is waiting on the reviewer: cards to check, plus each VO part without a confirmed version
 function needsYouCount(gens){return gens.filter(g=>g.stage!=="vo"&&stepNeedsYou(g)).length+voParts(gens).filter(p=>!p.use).length}
 
@@ -1294,6 +1341,7 @@ function renderManual(gens){
   const html=gs.map(x=>{
     if(state.mstage!=="all"&&state.mstage!==x.key) return "";
     const steps=["image","video","file"].filter(k=>x.items.some(g=>flow(g).includes(k)));
+    if(x.items.some(g=>flow(g).includes("video")&&isSeed(g))) steps.splice(steps.indexOf("video"),0,"ingredients");
     const isVO=x.key==="stage-vo", vp=isVO?voParts(gens):null;
     const done=isVO?vp.filter(y=>y.use).length:x.items.filter(g=>!needsMe(g)).length;
     const beats=isVO?vp.map(y=>y.part):x.items.map(g=>g.beat).filter(Boolean);
@@ -1307,7 +1355,7 @@ function renderManual(gens){
       <div class="w-body">
       ${x.note?`<p class="note" style="margin:0 0 10px">${esc(x.note)}</p>`:""}
       ${x.key==="stage-vo"?`<div class="msec"><div class="msec-h"><h3>Takes</h3><span class="note">One row per part — pick a version and confirm it</span><span class="grow"></span>${voLocked(currentBuild(),gens)?`<span class="pill s-use">VO locked</span>`:""}</div><div class="arows">${voRows(gens)}</div></div>`:
-      `<div class="boxes${x.items.length<=2&&steps.length>1?" pair":""}">${steps.map(k=>stepBox(x,k,x.items)).join("")}</div>`}</div></section>`;
+      `<div class="boxes${x.items.length<=2&&steps.length>1?" pair":""}">${steps.map(k=>k==="ingredients"?ingBox(x,x.items):stepBox(x,k,x.items)).join("")}</div>`}</div></section>`;
   }).join("");
   const fi=document.querySelector("[data-faultform] textarea"), draft=fi?fi.value:"", had=fi&&document.activeElement===fi;
   $("#mlist").innerHTML=html||`<div class="empty">No generations in this build yet.</div>`;
@@ -1320,10 +1368,11 @@ function stepBox(grp,k,all){
   const list=state.mneeds?items.filter(g=>stepState(g,k)!=="ok"):items;
   const ok=items.filter(g=>stepState(g,k)==="ok").length;
   const fix=items.filter(g=>stepState(g,k)==="bad").length;
-  const check=items.filter(g=>stepState(g,k)==="review"&&!(k==="video"&&stepState(g,"image")!=="ok")).length;
+  const check=items.filter(g=>stepState(g,k)==="review"&&!(k==="video"&&videoLocked(g))).length;
   const files=items.filter(g=>g[d.asset]).length;
   const plural=k==="image"?"Images":k==="video"?"Videos":"Files";
-  const note=k==="video"?"Each video unlocks when its image is confirmed.":k==="image"&&items.some(g=>flow(g).includes("video"))?"Confirm an image to unlock its video.":"";
+  const sd=k==="video"?items.filter(isSeed).length:0;
+  const note=k==="video"?(sd===items.length?"Each Seedance video unlocks when all its ingredients are confirmed.":sd?"Each video unlocks when its image is confirmed — a Seedance video when all its ingredients are.":"Each video unlocks when its image is confirmed."):k==="image"&&items.some(g=>flow(g).includes("video"))?"Confirm an image to unlock its video.":"";
   return `<div class="box">
     <div class="box-head">
       <span class="sn">${k==="video"?2:1}</span>
@@ -1341,18 +1390,46 @@ function stepBox(grp,k,all){
     ${list.length?(list.some(g=>!isAudio(g))?`<div class="cards">${list.filter(g=>!isAudio(g)).map(g=>mediaCard(g,k)).join("")}</div>`:"")+(list.some(isAudio)?`<div class="arows" style="padding:0 14px">${list.filter(isAudio).map(audioRow).join("")}</div>`:""):`<div class="empty" style="margin:14px">All ${plural.toLowerCase()} here are confirmed.</div>`}
   </div>`;
 }
+// Seedance beats: every ingredient image a video is made from, per beat, before the Videos box
+function ingBox(grp,all){
+  const items=all.filter(g=>flow(g).includes("video")&&isSeed(g));
+  const list=state.mneeds?items.filter(g=>!ingReady(g)):items;
+  const ok=items.filter(ingReady).length, n=items.reduce((a,g)=>a+ingOf(g).length,0);
+  const card=g=>{const l=ingOf(g), done=l.filter(x=>x.st==="ok").length, ready=ingReady(g);
+    const chip=ready?`<span class="pill s-use">All confirmed</span>`:l.length?`<span class="pill s-review">${done} of ${l.length} confirmed</span>`:`<span class="pill s-planned">None listed</span>`;
+    return `<article class="mc ${ready?"ok":l.some(x=>x.st==="review")?"now":""}" id="mc-${esc(g.id)}-ingredients">
+      <div class="mc-head"><div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}</span></div><div class="kv end"><span class="lbl">Ingredients</span>${chip}</div></div>
+      ${l.length?`<div class="ing-grid">${l.map(x=>ingTile(g,x,"box")).join("")}</div>`:`<div class="media"><span>Ingredients not listed yet</span></div>`}
+      <div class="kv"><span class="lbl">Shot</span><span class="mc-t">${esc(g.title||"—")}</span></div>
+      ${g.line?`<div class="kv"><span class="lbl">Script line</span><span class="mc-l">“${esc(g.line)}”</span></div>`:""}
+      <p class="note" style="margin:0">Confirm or fix each ingredient on its own card — the video unlocks when all are confirmed.</p></article>`};
+  return `<div class="box">
+    <div class="box-head">
+      <span class="sn">1</span>
+      <div class="kv"><span class="lbl">${esc(grp.label)} · step 1 · Seedance</span><h3>Ingredients</h3></div>
+      <div class="box-stats">
+        <div class="kv"><span class="lbl">Ready</span><span class="mono" style="color:var(--use)">${ok}/${items.length}</span></div>
+        <div class="kv"><span class="lbl">Images</span><span class="mono">${n}</span></div></div>
+      <span class="grow"></span>
+      <button class="btn small primary" type="button" data-zip="${grp.key}" data-step="ingredients" ${n?"":"disabled"}>${I.dl} Download all ingredients</button>
+    </div>
+    <p class="note box-note">Seedance makes each video from several reference images — they show here, then the video.</p>
+    <div class="bar" style="margin:0 14px"><i style="width:${items.length?ok/items.length*100:0}%;background:var(--use)"></i></div>
+    ${list.length?`<div class="cards">${list.map(card).join("")}</div>`:`<div class="empty" style="margin:14px">All ingredients here are confirmed.</div>`}
+  </div>`;
+}
 function when(ms){if(!ms) return "—";const d=new Date(ms);return isNaN(d)?"—":d.toLocaleString(undefined,{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"})}
 
 function mediaCard(g,k){
   const d=STEP[k], s=stepState(g,k), ro=state.readOnly||!state.assets;
-  const locked=BOARD_ROLE!=="old"&&k==="video"&&stepState(g,"image")!=="ok";
+  const locked=BOARD_ROLE!=="old"&&k==="video"&&videoLocked(g), seed=k==="video"&&isSeed(g);
   const asset=g[d.asset], type=g[d.type]||"";
   const prompt=g[d.prompt]||"", model=g[d.model]||d.defModel;
   const busy=state.busy[g.id+":"+k];
   const isVid=type.startsWith("video/")||(k==="video"&&!type);
-  const imgBehind=locked&&g.imageAsset&&!pending(g,"image")?`<img class="ghost" ${srcAttr(g,"image")} alt="">`:"";
+  const cov=locked&&coverOf(g), imgBehind=cov&&!pending(g,"image")?`<img class="ghost" ${srcFrom(cov.asset,cov.parts,cov.type)} alt="">`:"";
   const media=pending(g,k)?genPanel(g,k):asset?(isVid?`<video ${srcAttr(g,k)} muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">⤢</span>`:type.startsWith("image/")||k==="image"?`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
-    locked?`${imgBehind}<span class="lockmsg">🔒 Confirm the image first</span>`:
+    locked?`${imgBehind}<span class="lockmsg">🔒 Confirm the ${seed?"ingredients":"image"} first</span>`:
     `<span>${s==="bad"?"Regenerating…":prompt?"Waiting for render":"Waiting for prompt"}${ro?"":`<br><small>drop a file here to add it</small>`}</span>`;
   const limit=/kling/i.test(model)&&k!=="image"?2500:null;
   const fixing=state.faultOpen===g.id+":"+k;
@@ -1360,7 +1437,7 @@ function mediaCard(g,k){
   const chip=BOARD_ROLE==="old"?`<span class="pill s-regenerate">Not used</span>`:locked?`<span class="pill s-planned">Locked</span>`:s==="gen"?`<span class="pill s-generating">${g[d.fault]?"Regenerating":"Generating"}</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">${prompt?"Prompt ready":"Waiting"}</span>`;
   const size=g[d.size]?(k==="image"?esc(g[d.size]):`${esc(g[d.size])}s`):"—";
   const specs=[
-    ["Connector",esc(g[d.conn]||d.defConn||"—")],
+    ["Connector",esc(g[d.conn]||(seed?"Kie AI":d.defConn)||"—")],
     [k==="image"?"Resolution":"Length",size],
     ["Model",`<span class="mono">${esc(model||"—")}</span>`,"wide"],
     ["Credits",g[d.credits]!=null&&g[d.credits]!==""?num(g[d.credits]):"—"],
@@ -1374,6 +1451,7 @@ function mediaCard(g,k){
       <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}${versionsOf(g,k).length>1?`<span class="vbadge" title="${versionsOf(g,k).length} versions">v${currentV(g,k)}</span>`:""}</span></div>
       <div class="kv end"><span class="lbl">Status</span>${chip}</div></div>
     <div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}"`} ${asset?`data-viewm="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="View ${d.label.toLowerCase()} for ${esc(g.beat)}"`:""}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>
+    ${seed?`<div class="kv"><span class="lbl">Ingredients · ${ingOf(g).filter(x=>x.st==="ok").length}/${ingOf(g).length} confirmed</span><div class="ing-row">${ingOf(g).map(x=>ingTile(g,x,"row")).join("")||`<span class="mc-l">None listed yet</span>`}</div></div>`:""}
     <div class="kv"><span class="lbl">Shot</span><span class="mc-t">${esc(g.title||"—")}</span></div>
     ${g.line?`<div class="kv"><span class="lbl">Script line</span><span class="mc-l">“${esc(g.line)}”</span></div>`:""}
     <dl class="specs">${specs.map(([a,b,c])=>`<div${c?` class="${c}"`:""}><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
@@ -1447,6 +1525,7 @@ async function downloadZip(groupKey,step){
   if(!window.JSZip){toast("Zip isn't available right now");return}
   if(groupKey==="brollbank") return downloadBank();
   if(groupKey==="hookbank") return downloadBank("hooks");
+  if(step==="ingredients") return downloadIng(groupKey);
   const b=currentBuild(), gens=buildGens().filter(g=>(groupKey==="final"?isFinal(g)&&g.videoAsset:groupOf(g).key===groupKey)&&flow(g).includes(step)).sort(beatSort);
   if(!gens.length) return;
   const label=groupKey==="final"?"Final output":groupOf(gens[0]).label, d=STEP[step];
@@ -1460,6 +1539,24 @@ async function downloadZip(groupKey,step){
   zip.file(`prompts.md`,md);
   const blob=await zip.generateAsync({type:"blob"});
   await saveFile(`${b.id}_${label.replace(/\s+/g,"-")}_${d.label.toLowerCase()}s.zip`,blob);
+}
+async function fetchIng(x){const p=Array.isArray(x.parts)&&x.parts.length>1?x.parts:null;if(p){const bs=await Promise.all(p.map(fetchRetry));return new Blob(bs,{type:x.type||bs[0].type})}return fetchRetry(x.asset)}
+async function downloadIng(groupKey){
+  const b=currentBuild(), gens=buildGens().filter(g=>groupOf(g).key===groupKey&&flow(g).includes("video")&&isSeed(g)).sort(beatSort);
+  if(!gens.length) return;
+  const label=groupOf(gens[0]).label; toast("Packing "+label+" ingredients…");
+  const zip=new JSZip(); let md=`# ${b.name||b.id} · ${label} · Seedance ingredients\n\n`;
+  for(const g of gens){
+    md+=`## ${g.beat} · ${g.title||""}\n`+(g.line?`> ${g.line}\n\n`:"\n");
+    for(const x of ingOf(g)){
+      const name=`${g.beat||g.id}/${String(x.i+1).padStart(2,"0")}_${String(x.label).replace(/[^\w.-]+/g,"-")}.${extFor(x.type,"image")}`;
+      md+=`- ${x.label}${x.role?" · "+x.role:""}${x.ref?" (from "+x.ref.beat+")":""}\n`;
+      if(x.asset){try{zip.file(name,await fetchIng(x))}catch(e){md+=`  (file could not be fetched)\n`}}
+    }
+    md+="\n";
+  }
+  zip.file("ingredients.md",md);
+  await saveFile(`${b.id}_${label.replace(/\s+/g,"-")}_ingredients.zip`,await zip.generateAsync({type:"blob"}));
 }
 async function uploadTo(gid,k,file){
   const g=state.gens.find(x=>x.id===gid); if(!g||!file) return;
@@ -1580,17 +1677,21 @@ function renderViewer(){
   // a video in the viewer is always loaded into memory first, so it can be seeked frame by frame
   const vids=shown?(Array.isArray(shown.parts)&&shown.parts.length>1?shown.parts:[shown.asset]):[];
   const src=!shown?"":isVid&&!type.startsWith("audio/")?`data-parts="${esc(vids.join(","))}" data-ptype="${esc(shown.type||"")}"`:srcFrom(shown.asset,shown.parts,shown.type);
-  const locked=k==="video"&&stepState(g,"image")!=="ok";
+  const locked=k==="video"&&videoLocked(g), seed=k==="video"&&isSeed(g);
+  // Seedance: the Ingredients tab shows every reference image the video is made from
+  const ings=seed?ingOf(g):[], ingV=seed&&v.ing!=null, one=ingV&&v.ing!=="all"?ings[Number(v.ing)]:null;
   const isAud=type.startsWith("audio/");
-  const media=pending(g,k)&&!older?genPanel(g,k):asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
+  const media=ingV?(one&&one.asset?`<div class="v-ing1"><img ${srcFrom(one.asset,one.parts,one.type)} alt="${esc(one.label)}"><button class="btn small" type="button" data-ving="all">${I.l} All ingredients · ${esc(one.label)}</button></div>`:
+      ings.length?`<div class="v-ing">${ings.map(x=>ingTile(g,x,"viewer")).join("")}</div>`:`<div class="v-empty">No ingredients listed yet</div>`):
+    pending(g,k)&&!older?genPanel(g,k):asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
     moved?`<div class="v-empty"><div style="display:grid;gap:12px;justify-items:center">${I.box}<span>v${shown.v} is on the Old versions board, kept at full quality. Nothing was shrunk or deleted.</span>${archiveLink(shown)?`<a class="btn" href="${esc(archiveLink(shown))}" target="_blank" rel="noopener">Open in Old versions ↗</a>`:""}</div></div>`:
-    `<div class="v-empty">${locked?"🔒 Confirm the image first":`No ${d.label.toLowerCase()} yet`}</div>`;
+    `<div class="v-empty">${locked?`🔒 Confirm the ${seed?"ingredients":"image"} first`:`No ${d.label.toLowerCase()} yet`}</div>`;
   const s=stepState(g,k);
   const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
   const grp=groupOf(g);
   // frame check: only for a video, on the version being shown
   const outV=cleanOut(g,k,shown);
-  const checkBar=asset&&isVid&&k!=="file"&&!(pending(g,k)&&!older)?`<div class="v-check">
+  const checkBar=!ingV&&asset&&isVid&&k!=="file"&&!(pending(g,k)&&!older)?`<div class="v-check">
       <div class="v-frames" id="vframes">${Array.from({length:8},(_,n)=>`<button type="button" class="v-fr" data-vseek="${n}" aria-label="Frame ${n+1} of 8"><canvas width="90" height="160"></canvas><span class="t">…</span></button>`).join("")}</div>
       <div class="v-ctl">
         <button class="btn small${v.rate===0.5?" on":""}" type="button" data-vrate="1" aria-pressed="${v.rate===0.5}">0.5x</button>
@@ -1613,7 +1714,7 @@ function renderViewer(){
   // details: the shown version's own record
   const x=shown||snapshot(g,k);
   const rows=[
-    ["Connector",esc(x.connector||d.defConn||"—")],
+    ["Connector",esc(x.connector||(seed?"Kie AI":d.defConn)||"—")],
     [k==="image"?"Resolution":"Length",esc(sizeTxt(x)||"—")],
     ["Model",`<span class="mono">${esc(x.model||g[d.model]||d.defModel||"—")}</span>`,"wide"],
     ["Credits",x.credits!=null&&x.credits!==""?num(x.credits):"—"],
@@ -1622,7 +1723,7 @@ function renderViewer(){
     ["Original",x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">Open ↗</a>`:"—"],
   ];
   const prompt=g[d.prompt]||"";
-  const canAct=!state.readOnly&&!locked&&!pending(g,k)&&!older&&!!asset;
+  const canAct=!state.readOnly&&!locked&&!ingV&&!pending(g,k)&&!older&&!!asset;
   const panel=`<aside class="v-panel" data-shown="${!!v.details}" aria-label="Details">
       <div class="ps"><span class="lbl">Status</span><div>${chip}${older?` <span class="pill s-planned">Viewing v${shown.v}</span>`:""}</div></div>
       ${g.line?`<div class="ps"><span class="lbl">Script line</span><div class="v-quote">“${esc(g.line)}”</div></div>`:""}
@@ -1644,9 +1745,9 @@ function renderViewer(){
       </div>
     </aside>`;
   const thumbs=list.map(y=>{
-    const hasImg=!!y.imageAsset, st=stepState(y,k);
+    const cv=coverOf(y), hasImg=!!cv, st=stepState(y,k);
     const col=st==="ok"?"var(--use)":st==="bad"||st==="gen"?"var(--regen)":st==="review"?"var(--review)":"#8a92a1";
-    const im=pending(y,"image")?genPanel(y,"image",true):hasImg?`<img ${srcAttr(y,"image")} alt="" loading="lazy">`:`<span class="pl">${esc(y.beat||"")}</span>`;
+    const im=pending(y,"image")?genPanel(y,"image",true):hasImg?`<img ${srcFrom(cv.asset,cv.parts,cv.type)} alt="" loading="lazy">`:`<span class="pl">${esc(y.beat||"")}</span>`;
     return `<button type="button" class="v-th" data-vgo="${esc(y.id)}" aria-current="${y.id===g.id}" aria-label="${esc(y.beat||"")}" title="${esc((y.beat||"")+" · "+(y.title||""))}">${im}${k==="video"&&hasImg?`<span class="pl">▶</span>`:""}<span class="dot" style="--st:${col}"></span></button>`;
   }).join("");
   const old=document.getElementById("vfault"), draft=old?old.value:"";
@@ -1659,7 +1760,7 @@ function renderViewer(){
     <div class="v-body">
       <div class="v-col">
       <div class="v-tools">
-        <div class="v-tabs" role="tablist" aria-label="Image or video">${flow(g).map(y=>`<button type="button" class="tab" role="tab" data-vstep="${y}" aria-selected="${y===k}">${STEP[y].label}</button>`).join("")}</div>
+        <div class="v-tabs" role="tablist" aria-label="Image or video">${seed?`<button type="button" class="tab" role="tab" data-ving="all" aria-selected="${ingV}">Ingredients ${ings.length}</button>`:""}${flow(g).map(y=>`<button type="button" class="tab" role="tab" data-vstep="${y}" aria-selected="${y===k&&!ingV}">${STEP[y].label}</button>`).join("")}</div>
         ${verUi}
       </div>
       <div class="v-stage" data-vclose="">
@@ -1999,7 +2100,7 @@ function tocJump(i){
 let pickTarget=null;
 document.addEventListener("click",e=>{
   if(!e.target.closest(".vsel")) closeVsel();
-  const t=e.target.closest("[data-fjump],[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-fjump],[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-ving],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
   if(ds.fjump){const el=document.getElementById("fc-"+ds.fjump);if(el) el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"});return}
@@ -2014,6 +2115,7 @@ document.addEventListener("click",e=>{
   if(ds.pact){state.pact=ds.pact;filterPlan(t.closest(".p-sec")||document,"act",ds.pact);return}
   if(ds.psubj){state.psubj=ds.psubj;filterPlan(t.closest(".p-sec")||document,"subj",ds.psubj);return}
   if(ds.pmode){const [k,m]=ds.pmode.split(":");state.pmode[k]=m;render();return}
+  if(ds.ving!==undefined){const [gid,n]=ds.ving.includes(":")?ds.ving.split(":"):[null,ds.ving];if(gid){openViewer(gid,"video");state.viewer.ing=n}else state.viewer.ing=n;state.viewer.menu=false;state.viewer.fix=false;renderViewer();return}
   if(ds.vgo){state.viewer.id=ds.vgo;state.viewer.ver=null;state.viewer.menu=false;state.viewer.fix=false;renderViewer();return}
   if(ds.vdet){state.viewer.details=!state.viewer.details;renderViewer();return}
   if(ds.vfix){state.viewer.fix=ds.vfix==="1";renderViewer();return}
@@ -2027,7 +2129,7 @@ document.addEventListener("click",e=>{
   if(ds.sound){const v=document.querySelector(".viewer video");if(v){v.muted=false;v.dataset.sound="1";tryPlay(v)}t.remove();return}
   if(ds.viewm){openViewer(ds.viewm,ds.step)}
   else if(ds.vnav){moveViewer(Number(ds.vnav))}
-  else if(ds.vstep){state.viewer.step=ds.vstep;state.viewer.ver=null;state.viewer.menu=false;renderViewer()}
+  else if(ds.vstep){state.viewer.step=ds.vstep;state.viewer.ing=null;state.viewer.ver=null;state.viewer.menu=false;renderViewer()}
   else if(ds.vclose!==undefined&&(ds.vclose==="x"||e.target===t)){closeViewer()}
   else if(ds.open){closeViewer();const x=state.gens.find(y=>y.id===ds.open);if(x) openDrawer(x,false)}
   else if(ds.add){openDrawer({stage:ds.add,status:"planned"},true)}
