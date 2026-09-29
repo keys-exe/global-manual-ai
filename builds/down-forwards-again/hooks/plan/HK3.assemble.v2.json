@@ -1,0 +1,58 @@
+{
+  "master_s": 7.64,
+  "min_th_s": 1.5,
+  "edl": [
+    {
+      "beat": "HK3-01a",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK3-01a.v1.mp4",
+      "phrase": "Every week somebody brings me a scan of a knee and asks what can be done about the cartilage",
+      "key": "somebody",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 0.78,
+      "start": 0.6667,
+      "line_end": 4.9167,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 4.9167
+    }
+  ],
+  "timeline": [
+    {
+      "kind": "TH",
+      "start": 0.0,
+      "end": 0.667,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "HK3-01a",
+      "layout": "full",
+      "start": 0.667,
+      "end": 4.917
+    },
+    {
+      "kind": "TH",
+      "start": 4.917,
+      "end": 7.64,
+      "zoom": 1.0
+    }
+  ],
+  "fixes": [],
+  "warnings": [],
+  "failures": [],
+  "render": {
+    "file": "hooks/plan/HK3.rough.v2.mp4",
+    "duration_s": 7.64,
+    "duration_matches_master": true,
+    "black_frames": []
+  },
+  "status": "PASS"
+}

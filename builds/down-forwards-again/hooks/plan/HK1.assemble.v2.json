@@ -1,0 +1,159 @@
+{
+  "master_s": 12.2,
+  "min_th_s": 1.5,
+  "edl": [
+    {
+      "beat": "HK1-01a",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK1-01a.v1.mp4",
+      "phrase": "In six weeks, this woman stopped coming down her own stairs backwards",
+      "key": "woman",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 1.36,
+      "start": 1.25,
+      "line_end": 4.0417,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.332,
+      "flex": true,
+      "skip": 0.4,
+      "end": 3.9583
+    },
+    {
+      "beat": "HK1-02a",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK1-02a.v1.mp4",
+      "phrase": "Without an operation",
+      "key": "Without",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 4.06,
+      "start": 3.9583,
+      "line_end": 5.2917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 5.5417
+    },
+    {
+      "beat": "HK1-02b",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK1-02b.v1.mp4",
+      "phrase": "Without another course of physio",
+      "key": "Without",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 5.66,
+      "start": 5.5417,
+      "line_end": 7.2083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 7.375
+    },
+    {
+      "beat": "HK1-02c",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK1-02c.v1.mp4",
+      "phrase": "Without one more brace going in the drawer",
+      "key": "Without",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 7.46,
+      "start": 7.375,
+      "line_end": 9.4583,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 10.375
+    }
+  ],
+  "timeline": [
+    {
+      "kind": "TH",
+      "start": 0.0,
+      "end": 1.25,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "HK1-01a",
+      "layout": "full",
+      "start": 1.25,
+      "end": 3.958
+    },
+    {
+      "kind": "BR",
+      "beat": "HK1-02a",
+      "layout": "full",
+      "start": 3.958,
+      "end": 5.542
+    },
+    {
+      "kind": "BR",
+      "beat": "HK1-02b",
+      "layout": "full",
+      "start": 5.542,
+      "end": 7.375
+    },
+    {
+      "kind": "BR",
+      "beat": "HK1-02c",
+      "layout": "full",
+      "start": 7.375,
+      "end": 10.375
+    },
+    {
+      "kind": "TH",
+      "start": 10.375,
+      "end": 12.2,
+      "zoom": 1.0
+    }
+  ],
+  "fixes": [
+    {
+      "beat": "HK1-01a",
+      "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+    },
+    {
+      "beat": "HK1-02a",
+      "fix": "HOLD: held to 1.58s on screen"
+    },
+    {
+      "beat": "HK1-02b",
+      "fix": "HOLD: held to 1.83s on screen"
+    },
+    {
+      "beat": "HK1-02c",
+      "fix": "HOLD: held to 3.00s on screen"
+    }
+  ],
+  "warnings": [],
+  "failures": [],
+  "render": {
+    "file": "hooks/plan/HK1.rough.v2.mp4",
+    "duration_s": 12.18,
+    "duration_matches_master": true,
+    "black_frames": []
+  },
+  "status": "PASS"
+}

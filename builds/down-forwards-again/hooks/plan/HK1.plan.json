@@ -7,7 +7,7 @@
    "beat": "HK1-01a",
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK1-01a.v1.mp4",
    "phrase": "In six weeks, this woman stopped coming down her own stairs backwards",
-   "key": "stairs",
+   "key": "woman",
    "layout": {
     "type": "full"
    }
@@ -16,7 +16,6 @@
    "beat": "HK1-02a",
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK1-02a.v1.mp4",
    "phrase": "Without an operation",
-   "key": "operation",
    "layout": {
     "type": "full"
    }
@@ -25,7 +24,6 @@
    "beat": "HK1-02b",
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK1-02b.v1.mp4",
    "phrase": "Without another course of physio",
-   "key": "physio",
    "layout": {
     "type": "full"
    }
@@ -34,7 +32,6 @@
    "beat": "HK1-02c",
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK1-02c.v1.mp4",
    "phrase": "Without one more brace going in the drawer",
-   "key": "brace",
    "layout": {
     "type": "full"
    }

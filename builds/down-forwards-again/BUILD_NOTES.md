@@ -125,6 +125,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   (TH-HKn trimmed + the hook clips, full layout) → all PASS (length = master, no black): HK1 12.18 s (cut-ins 3.0/5.0/7.0/9.0–12.0; the 2 s holds put
   'physio' 0.2 s and 'brace' 0.7 s ahead of their pictures; 0.2 s of doctor at the end), HK2 8.6 s, HK3 7.64 s → board HK1-CUT, HK2-CUT, HK3-CUT To check.
 
+- 2026-09-29 ~14:05 UTC: user "the broll are late" → diagnosed: cuts anchored on late key words (stairs, operation, physio, brace, ten, scan) + the 2.0 s minimum
+  hold pushed HK1's 'withouts' (lines ~1.7 s apart) after their words. Fix: anchors moved to the line starts (HK1-01a 'woman', 'Without' ×3, HK2 'It',
+  HK3 'somebody'); ADJUST (build-local, `hooks/plan/assemble_local.py`): minimum hold 1.5 s instead of 2.0 s for this build — the shared assemble.py is
+  unchanged. Re-cut v2: every cut-in 0.1 s before its first word; all PASS. v1 cuts to the Old board.
+
 ## Where it stands
 - **Waiting on the user:** the three hook rough cuts (HK1-CUT, HK2-CUT, HK3-CUT) — the step-6 hooks gate.
 - **Then:** step 7 — body B-roll act by act (images → the user's Confirm → videos), then the finished variants (variants.py: HKn + the body), CapCut block.
