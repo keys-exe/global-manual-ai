@@ -3,28 +3,29 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"hk1_02_struggle\",\"subject\":\"THE SAME MAN AND BUS SHELTER as in the start frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Locked off on a steady surface, only a faint breath of sway. The camera never pans or travels. Still at the cut.\",\"framing\":\"FULL as in the start frame: low at his knee height, three-quarter front, the bench and the street around. FOCUS: deep.\"},\"motion\":\"CONTINUING: he is half up off the red bench, hands pushing hard on his knees, grimacing. COMPLETING: one slow hard push, about three seconds — he pushes on his knees and straightens part way, the right knee stiff and slow, his face strained, a small wobble as his weight comes over his feet. UNRESOLVED: he is nearly upright, still bent a little, catching his breath. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, flat grey overcast late-morning daylight from the street on the left, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no sitting back down, no falling, no walking away, no stepping off the kerb, no quick easy stand, no talking, no face to the lens, no music\"}",
+ "prompt": "{\"shot\":\"hk1_02_bench_push\",\"subject\":\"THE SAME MAN, BENCH AND BUS STOP as in the start frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Locked off on a steady surface, only a faint breath of sway. The camera never pans or travels. Still at the cut.\",\"framing\":\"MEDIUM-FULL as in the start frame: low at his knee height, three-quarter, him on the left, the street running away on the right. FOCUS: his face and hands are sharp.\"},\"motion\":\"CONTINUING: he sits on the red bench, hands gripping the seat edge, grimacing, gathering himself. COMPLETING: one slow hard push up, about three seconds — he leans forward, pushes down on the seat edge and rises part way off the bench, the right knee stiff and slow, his face strained, a small wobble as his weight comes over his feet. UNRESOLVED: he is half up, still bent forward, one hand still on the seat edge, catching his breath. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, flat grey overcast daylight, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no quick easy stand, no standing fully upright, no sitting back down, no falling, no walking away, no talking, no face to the lens, no music\"}",
  "duration": 4,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_194359_c572bebd-0eae-4091-a315-134173c88c69.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_200407_4aa6d8d9-4817-4752-8c52-ed96cedc8edf.png",
  "start_approved": true,
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 2,
- "fix_note": "frame fault: v1 was a kerb step, then half-perched through glass, then a calm face (user Fixes 1-3) → new start frame v4, half up off the bench, grimacing, confirmed by the user; motion rewritten as one slow hard push toward standing, camera locked",
+ "generation": 3,
+ "user_go": "user 2026-09-29: \"MAKE CLIP FOR HK1-02\" (after image v7, told it would be the 3rd generation)",
+ "fix_note": "frame fault: gen 2 started half-standing and the user asked for him seated, the P3 street and a new angle (image Fixes 4-6) → new start image v7, seated on the bench, low and close, confirmed by the user; motion is one slow hard push to half up, camera locked",
  "risks": [
   {
-   "risk": "he stands up too easily",
-   "prevented_by": "one slow hard push, nearly upright; no quick easy stand"
+   "risk": "he stands too easily",
+   "prevented_by": "one slow hard push to half up; no quick easy stand, no standing fully upright"
   },
   {
    "risk": "he falls or sits back",
    "prevented_by": "no falling, no sitting back down"
   },
   {
-   "risk": "the camera travels with him",
+   "risk": "the camera follows him up",
    "prevented_by": "locked-off camera"
   }
  ]
