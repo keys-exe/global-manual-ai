@@ -64,4 +64,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Hook 1 images and clips confirmed (board `use`). Hook 2 start images generated (`work/beats.py HK2-a HK2-b`, nano_banana_2 2k 9:16, one render each; HK2-b refs R2 sheet + P2 plate; new light `D-GREY-L`, colour `D-STAIRS-AM` 6500K). Jobs e16327a8 (HK2-a), a7ba052b (HK2-b); on the board as To check (`hooks/HK2-*_v1.png`).
 - HK2-a shows no thumb against the tendon (F2 unanswered).
 - Video connector: Kie AI `kling-3.0/video` (Kling account 3 credits) — told the user.
-- **Where it stands:** waiting on the user's check of HK2-a / HK2-b images; then Hook 2 clips (`work/clips.py`), then Hook 3.
+- User "CONFIRM": HK2-a / HK2-b images confirmed. Hook 2 clips (`work/clips.py`, §27G locked-off, `preflight.py` PASS), E6 from the trimmed HK2
+  variant (HK2-a 0–3.36 s → 5 s; HK2-b 3.36–6.80 s → 5 s). Kie kling-3.0: HK2-a 1cbc2673… (90 cr), HK2-b f2445f70… (90 cr) → To check.
+- **Where it stands:** waiting on the user's check of the HK2-a / HK2-b clips; then Hook 3 images.
