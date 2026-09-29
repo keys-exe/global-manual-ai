@@ -110,5 +110,47 @@
   "v": 1,
   "kieModel": "nano-banana-pro",
   "rc": 0
+ },
+ "B1-02a_v1": {
+  "taskId": "593d0aa83a29d83e67e93132111189cc",
+  "state": "success",
+  "credits": 18.0,
+  "failMsg": null,
+  "urls": [
+   "https://tempfile.aiquickdraw.com/workers/images/image_721c507bba8bfb159ab3acb4be2350f4.png"
+  ],
+  "saved": "/home/user/global-manual-ai/builds/stryde-too-bad/broll/v2/B1-02a_v1.png",
+  "beat": "B1-02a",
+  "v": 1,
+  "kieModel": "nano-banana-pro",
+  "rc": 0
+ },
+ "B1-03a_v1": {
+  "taskId": "81dbea579890d203034bceb0f548f1c2",
+  "state": "success",
+  "credits": 18.0,
+  "failMsg": null,
+  "urls": [
+   "https://tempfile.aiquickdraw.com/workers/images/image_e71d99f86f55c92980d6504dc442c4e0.png"
+  ],
+  "saved": "/home/user/global-manual-ai/builds/stryde-too-bad/broll/v2/B1-03a_v1.png",
+  "beat": "B1-03a",
+  "v": 1,
+  "kieModel": "nano-banana-pro",
+  "rc": 0
+ },
+ "B1-07a_v1": {
+  "taskId": "75cc20891df314a225249991e1b39add",
+  "state": "success",
+  "credits": 12.0,
+  "failMsg": null,
+  "urls": [
+   "https://tempfile.aiquickdraw.com/models/nano-banana-2/1790699900850-x5easwisdba.png"
+  ],
+  "saved": "/home/user/global-manual-ai/builds/stryde-too-bad/broll/v2/B1-07a_v1.png",
+  "beat": "B1-07a",
+  "v": 1,
+  "kieModel": "nano-banana-2",
+  "rc": 0
  }
 }

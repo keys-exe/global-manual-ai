@@ -34,6 +34,7 @@ SURGEON = ("An orthopaedic consultant of about fifty-five, a white British man: 
 WARD = {
     "D-D1": "a mustard-yellow short-sleeved linen shirt, olive cotton shorts ending above the knee so both knees are bare, barefoot, small gold hoop earrings",
     "D-D2": "a white T-shirt under an open lavender lightweight zip jacket, navy cotton shorts ending above the knee so both knees are bare, white trainers",
+    "A-D1": "a sage-green polo shirt under a navy V-neck cardigan, grey trousers, brown slippers",
     "A-D2": "a pale blue denim shirt with the sleeves rolled, stone cotton trousers, brown garden boots",
     "C-D1": "a grey T-shirt under a dark green shop apron, charcoal work shorts ending above the knee so both knees are bare, black trainers, a pencil behind his ear",
     "F-D1": "a white linen shirt with the sleeves rolled, cropped blue linen trousers rolled up above the knee so both knees are bare, tan leather sandals",
@@ -49,6 +50,8 @@ CONSULT = ("THE SAME CONSULTING ROOM exactly as in the attached location plate �
            "the right-hand wall, the examination couch behind.")
 PARK = ("A London park on a bright morning: a grey tarmac path curving across open mown grass, plane trees, a green-painted Victorian "
         "bandstand with a white fretwork canopy beside the path a little behind her, a few far-off figures, soft and small.")
+KITCHEN = ("THE SAME KITCHEN exactly as in the attached location plate — the cream shaker units with brushed steel bar handles, the light "
+           "oak-effect laminate worktop, the terracotta-effect floor tiles, the pale butter-yellow walls, the window over the sink.")
 GARDEN = ("THE SAME BACK GARDEN exactly as in the attached location plate — the lawn, the raised vegetable bed, the wooden bench, the "
           "back of the brick house with its kitchen window and white back door.")
 SHOP = ("THE SAME HARDWARE SHOP exactly as in the attached location plate — the long aisle of metal shelving stacked with paint tins, "
@@ -64,6 +67,7 @@ LIGHT = {  # source, screen side, quality — STEP4_5.md light plans
     "PARK": ("the open sky, broken cloud, the sun behind the camera on the left", "left", "bright morning daylight"),
     "GARDEN": ("the late-morning sun from the south over the left-hand fence", "left", "bright raking late-morning sun, the sky cleared"),
     "SHOP": ("the shop windows at the far end and the fluorescent strips above", "right", "even midday working light"),
+    "KITCHEN": ("the window over the sink on the kitchen's east wall", "left", "flat grey-white morning daylight"),
     "COAST": ("the high midday sun over the sea on the left", "left", "bright, clean midday light"),
     "HALL": ("the landing window and the front-door glass, both facing south", "right", "bright morning sun falling on the stair carpet"),
 }
@@ -72,6 +76,7 @@ COLOUR = {  # light colour, kelvin, set colours, wardrobe colours, accent, satur
     "CONSULT": ("soft overcast daylight", 6500, "pale grey walls, light wood, white", "pale blue", "the black strap", "true to life, slightly cool"),
     "PARK": ("bright morning daylight", 5600, "green grass, grey tarmac, the green bandstand", "white, lavender and navy", "the lavender jacket", "true to life"),
     "GARDEN": ("bright late-morning sun", 5600, "green lawn, red brick, dark soil in the bed", "pale denim blue and stone", "a green watering can", "true to life, bright"),
+    "KITCHEN": ("flat grey-white morning daylight", 5600, "cream units, light oak laminate, terracotta floor, butter-yellow walls", "navy, sage green and grey", "the navy cardigan", "muted, slightly cool"),
     "SHOP": ("even daylight and fluorescent working light", 5000, "grey metal shelving, coloured paint tins, grey vinyl", "grey and dark green with charcoal", "the paint tins", "true to life"),
     "COAST": ("bright clean midday light", 5600, "blue sea, green gorse, a pale earth path", "red, grey and black", "the red waterproof", "clear and fresh"),
     "HALL": ("bright morning sun", 5600, "sage-green walls, white woodwork, oatmeal carpet", "white and blue linen", "the blue trousers", "true to life"),
@@ -325,6 +330,37 @@ B["B1-13b"] = (NBP, ["R4-FIONA", "P5-PROP-F"], photo([
     angle("B1-13b", "her"), focus("the whole figure", deep=True), light("HALL", "her"), colour("HALL", "she")],
     "no strap, no knee strap, no brace, no sleeve, no support on either knee, no black band on the leg, no stryde wordmark, no trousers "
     "rolled down over the knees, " + NEG_SUP + ", " + NEG_EFF))
+
+# ── Body 1: a live-action B-roll for every line (user, 2026-09-29 — "Create a B-roll for every line") ──────────────────
+# B1-02a on "They're small on purpose", B1-03a on "Seventeen times your bodyweight…", B1-07a on "Perfect for bone on bone, arthritis…";
+# the anatomy renders keep the second half of B1-03 and B1-07.
+B["B1-02a"] = (NBP, ["front", "back", "R1-DENISE", "P2-D-LOUNGE"], photo([
+    SAME + " A snapshot from a phone at knee height beside the sofa, in profile to her right leg. She sits on the sofa edge, her bare right "
+    "leg bent at an easy angle, foot flat on the rug, and holds the strap up level beside the front of her knee, just below the kneecap and "
+    "a few centimetres clear of the skin, front face and wordmark to the lens: " + PINCH + ". Side by side like this the shell is only as "
+    "wide as the front of her knee. Only her hand, forearm and legs are in frame. " + SKIN["dark"],
+    "Her hand and legs: " + DENISE.split(" — ")[0] + " — dark brown skin. Wearing " + WARD["D-D1"] + ".", LOUNGE,
+    PROD + " " + RIGID + " " + P.WORDMARK_LOCK + " " + P.SIZE_HELD,
+    angle("B1-02a", "her hand and her right knee"), focus("the product and its wordmark"), light("LOUNGE", "her knee", face=False), colour("LOUNGE", "she")],
+    P.NEG_HELD_P + ", " + P.NEG_WORDMARK + ", " + BLOCK_NEG + ", no strap worn, no strap touching the knee, no second strap, no face, "
+    "no third leg, no extra limb, " + NEG_HANDS))
+B["B1-03a"] = (NBP, ["R2-ALAN", "P0-A-KITCHEN"], photo([
+    "A snapshot from a phone held low near the kitchen floor, three-quarter to him. He steps down the single low step from the hall doorway "
+    "onto the kitchen floor, caught mid-step: his left foot still on the step, his right foot just landing flat on the floor tiles, his "
+    "right knee bending as it takes his whole weight, his hands free at his sides. The whole of him is in frame, from his hair to his slippers, "
+    "his face calm and ordinary, a little careful.",
+    "He is " + ALAN + " Wearing " + WARD["A-D1"] + ".", KITCHEN + " The hall doorway with its one low step is on the right of the room.",
+    angle("B1-03a", "him"), focus("the whole figure", deep=True), light("KITCHEN", "him"), colour("KITCHEN", "he")],
+    "no strap, no brace, no sleeve, no support on either knee, no stryde wordmark, no stairs, no second step, no hand on the wall, no hand "
+    "on the door frame, no hand on the worktop, no falling, no stumble, no wincing, no grimace"))
+B["B1-07a"] = (NB2, ["R2-ALAN", "P0-A-KITCHEN"], photo([
+    "A snapshot from a phone held high, looking down at him. He sits on a wooden chair at the kitchen table, turned a little away from it, "
+    "and slowly rubs the inside and outside of his right knee through his grey trousers with both hands, fingers spread round the joint, "
+    "his head bowed a little towards it, a tired, patient look. Framed from his shoulders to his feet, his face partly visible from above.",
+    "He is " + ALAN + " Wearing " + WARD["A-D1"] + ".", KITCHEN,
+    angle("B1-07a", "him"), focus("the hands and what they hold"), light("KITCHEN", "him"), colour("KITCHEN", "he")],
+    "no strap, no brace, no sleeve, no support on either knee, no stryde wordmark, no trousers rolled up, no wincing, no grimace, no "
+    "crying, " + NEG_HANDS))
 
 # ── pinned end frames (act map pin_end, §27G rule 5; E7 first-and-last-frame call) ─────────────────────────────────────
 # B1-01a-END — "yes — product placed": the confirmed v1 start frame a second later, the shell now seated on the model's tendon.
