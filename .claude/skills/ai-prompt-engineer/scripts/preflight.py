@@ -40,6 +40,7 @@ Beat images (§6A, V7.70.0) — a B-roll or hook start/end frame — are linted 
     "product": false,                  # the product shows (product photo attached first)
     "body": true,                      # a person or body part shows
     "refs": [{"label": "...", "kind": "product|character|location|frame|info"}],   # in attach order
+    "taste": ["HT03", "FP02"],         # House Taste / product fix-pattern rules applied (§34A)
     "anatomy": false,                  # an anatomy / mechanism beat (Nano Banana)
     "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = two NB Pro
     "alt_reason": null | "why nano_banana_2 runs instead of Pro (the alternative, V7.72.1)"
@@ -129,6 +130,7 @@ def run_image(c):
     negs = NEG_WORD.findall(p)
     check(f"≤ {IMG_NEG_MAX} negatives (§6A)", len(negs) <= IMG_NEG_MAX, f"{len(negs)} no/never/without/avoid")
     check("no unfilled slot", not PLACEHOLDER.search(p), (PLACEHOLDER.search(p) or [""])[0])
+    check("House Taste read (§34A)", isinstance(c.get("taste"), list), "list the HT / FP rules applied on the call as \"taste\" (may be empty)")
     if c.get("face") is False:
         hit = re.search(r"character sheet|the same (?:woman|man|person|girl|boy)\b", p, re.I)
         check("no face block on a no-face shot (§6A)", not hit and "character" not in kinds, hit.group(0) if hit else ("character ref attached" if "character" in kinds else ""))
@@ -167,6 +169,7 @@ def run_beat_video(c, p, check):
     check("the spoken line is in the prompt (§35A)", bool(sl) and norm(sl) in norm(p), "script_line missing" if not sl else "")
     mp = c.get("motion_plan")
     check("the confirmed motion plan is the prompt's action (§35A)", bool(mp) and norm(mp) in norm(p), "motion_plan missing" if not mp else "")
+    check("House Taste read (§34A)", isinstance(c.get("taste"), list), "list the HT / FP rules applied on the call as \"taste\" (may be empty)")
     check("motion confirmed at the image (§22X)", c.get("motion_confirmed") is True, "the user's pick of the image with its 'Video will show' line")
     negs = NEG_WORD.findall(p)
     check(f"≤ {IMG_NEG_MAX} negatives (§35A)", len(negs) <= IMG_NEG_MAX, f"{len(negs)} no/never/without/avoid")
