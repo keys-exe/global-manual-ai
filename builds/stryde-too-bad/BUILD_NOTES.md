@@ -31,6 +31,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: user "CONFIRMED PROCEED" (N-VOICE-IMG v3). §22U straight through: 3 Kie Kling takes (G3 resent once after Kie "Internal Error") → `voice_source.py` PASS (13.57s, 40.75s looped; lead-ins of G2/G3 cut first, whisper stretched the first word) → clone **TooBad `5Iu9piJEpm2ewCIAa3Wm`** → TTS: T1–T4 (v1 text, pace tags) finish 154–161 wpm; **`speed` has no effect on eleven_v4 (measured)**; T5–T8 (v3 text, Enhance tags only) 166–172 wpm, 55–57s per video → house cut per video, every one PASS. Working take T5. Records: `voice/VOICE_SOURCE.md`, `vo/VO.md`.
 
+- 2026-09-29: board outage (HTTP 503) held the VO cards; after it cleared all 32 VO part cards (T1–T8 × HK1/BODY1/HK2/BODY2) went on the board (`vo/assets.json`). User "VOICE ID: PROCEED" → narrator voice TooBad marked **locked**.
+
 ## Where it stands
-- **Waiting on the user:** Confirm one VO take per part (HK1, BODY1, HK2, BODY2) on the board (the run continues on T5); script flags F2, F4, F5, F7, F8, F9.
+- **Waiting on the user:** Confirm one VO take per part (HK1, BODY1, HK2, BODY2) — the run continues on T5 until then; script flags F2, F4, F5, F7, F8, F9.
 - **Next:** hooks one by one (step 6): HK1-01, HK2-01 image prompts → Higgsfield → board.
