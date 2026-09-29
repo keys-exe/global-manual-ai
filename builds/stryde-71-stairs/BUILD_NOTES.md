@@ -243,6 +243,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - PROD_COPY now states the strap's size against the kneecap: about as wide as the kneecap plus a thumb on each side, about as tall as the kneecap.
     - It also requires no bare skin between the kneecap and the strap.
     - R-07a uses the P0 viewpoint, with her face taken from the TH-09 frame.
+  - **Fix round 7 (2026-09-29): M-06a v6, R-07a v6.**
+    - The N_BUILD line (full-figured, heavy-set, wide round face) and a face crop from the cast sheet (broll/images/N-face_crop.png) went in, because she kept rendering slim.
+    - N_HANDS gives her a mug and a dish towel, so her hands never touch the rail.
+    - R-07a: she's upstairs on the landing (the TH frame spot), before the first step.
   - **R-07a/b/c merged into ONE B-roll going down the stairs** (user). R-07a carries all three lines; R-07b and R-07c were moved to the Old board and removed from Current and the act map.
   - P-03b uses the new P-03a v3 as its brace reference. T-02a uses T-01b as its reference for Loretta's dress.
   - **P1-LANDING removed from the build (user 2026-09-29: "lets just remove it the p1").** All 7 versions are on the Old board, and the card and file are gone from Current. P-02a and C-06a now use P0 only (their current renders were made with P1 v5; regenerate only if the user asks). The confirmed hooks, TH and voice cards are untouched.
