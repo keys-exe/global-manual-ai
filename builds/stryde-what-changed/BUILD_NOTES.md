@@ -80,5 +80,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - HK2-b Fix "FIX THIS" (no detail) → read off v2: face partly in frame, Nike logos on the trainers, "OLD KIT" on the box, shallow squat with
   the box in front of the knees. v3 prompt fixes all four (top edge across the chest, plain unbranded trainers, unmarked box, deep squat with
   the box between the knees), job ec0b55bb → To check. v2 image moved to Old, deleted from Current.
-- **Where it stands:** waiting on the user's check of the HK2-a clip and the HK2-b v3 image; then the HK2-b clip (one lift out of the squat),
-  then Hook 3 images.
+- HK2-b Fix "FIX THE BROLL" → v3 still had the face in frame and the box floating between the legs with the hands on the knees.
+  Front-on keeps pulling the face in → re-planned side-on, cropped at the waist (act map LOW/PRO, angles.py PASS), both hands under the
+  box's bottom corners, no face identity text in the prompt. v4 job a9e02dbb → To check; v3 moved to Old, deleted from Current.
+- **Where it stands:** waiting on the user's check of the HK2-a clip and the HK2-b v4 image; then the HK2-b clip (one lift out of the
+  squat), then Hook 3 images.

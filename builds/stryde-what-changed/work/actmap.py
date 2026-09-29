@@ -73,10 +73,10 @@ BB("HK2-a", HOOK[2], "There is a band under your kneecap about as wide as your t
    ledger="VN01 · F2", eg="EG03 · EG05",
    notes="user Fixes 2026-09-29: 'GIVE ME DIFFERENT BROLL' then 'I WANT ANATOMY B ROLL HERE' — anatomy, but a band not HK1-b's spot; no thumb shown (F2)")
 BB("HK2-b", HOOK[2], "and for its size it is one of the strongest things in your body.", "strongest", "hook — the flattering fact (VN01)",
-   "R2", "L-D-STAIRS", "D-D1", "MS Desmond in his hall rising out of a deep squat with a heavy cardboard box of old football kit, knees taking the load", "one lift up out of the squat",
-   "one lift, about two seconds", STILL, "hall floor by the foot of the stairs, cropped at the chest, face out of frame, camera still", "no", "absent", "—", "NB2",
-   LOW, FRO, "clean", "MS", "low = strength", "foreground", "medium", L(D_GREY, "L"), False, ledger="VN01",
-   notes="user Fix 2026-09-29 'GIVE ME DIFFERENT BROLL HERE' (was one step up onto the stair)")
+   "R2", "L-D-STAIRS", "D-D1", "MS side-on, waist-down: Desmond lifting a heavy box off his hall floor from a deep squat, knees taking the load", "one lift up out of the squat",
+   "one lift, about two seconds", STILL, "hall floor by the foot of the stairs, cropped at the waist, side-on, camera still", "no", "absent", "—", "NB2",
+   LOW, PRO, "clean", "MS", "low profile = the bent knee and the load read at once", "foreground", "medium", L(D_GREY, "L"), False, ledger="VN01",
+   notes="user Fixes 2026-09-29 'GIVE ME DIFFERENT BROLL HERE' (was one step up onto the stair), 'FIX THIS', 'FIX THE BROLL' (face kept creeping in front-on → side-on, waist-down)")
 TH("HK2-TH", HOOK[2], "It is so good at its job that nobody ever thinks to check it. Not even the person who read your scan.")
 
 BB("HK3-a", HOOK[3], "Five thousand steps a day. Forty years.", "Five", "hook — the arithmetic (VN01)",
