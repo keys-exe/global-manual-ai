@@ -175,3 +175,5 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **Where it stands:** waiting on the user's check of the B02, B03a–c, B04a, B04b, B04c v4 clips and the B06 v3 and B01a images.
 
 - 2026-09-29 — B06-BR ("It happens to everybody."): user asked for 2–3 people with knee trouble, then "NOT SAME AGE". Act map row rewritten (three people, a man in his seventies on the bus-stop bench rubbing his knee, a woman in her forties at the shelter post easing her knee, a man of about 25 in running kit limping past); angles PASS. Image v1 (nano_banana_2, ref P3) on the Current board as To check.
+- 2026-09-29 — B06-BR image confirmed ("GO CONFIRM") → clip v1 (Kie kling-3.0, 3 s, 54 cr): the runner limps towards camera, the older man rubs his knee, the woman eases her knee at the post. On the board as To check.
+- 2026-09-29 — B06 image Fix "MORE ARROWS, MORE DETAILS" → v4: several force arrows pour down the thigh onto the one tendon spot + one pointer arrow, more anatomy (quad heads, bursa, capsule, blood vessels). v3 moved to the Old board. To check.
