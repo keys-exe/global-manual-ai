@@ -1,0 +1,58 @@
+{
+ "act": "Hook 1",
+ "beat": "HK1-01a",
+ "build": "down-forwards-again",
+ "flow": [
+  "image"
+ ],
+ "imageAsset": "25bb69bf4cd7035c63d8fcf7fb3d75bb",
+ "imageAt": 1790680600000,
+ "imageConnector": "Higgsfield",
+ "imageFault": "her hands should never hold the hand rail",
+ "imageModel": "nano_banana_2",
+ "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic \u2014 exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nTHE CAMERA ANGLE: the lens at hip height, looking up at the subject, seen from the front of the woman coming down the stairs. This exact angle, not a straight-on eye-level view.\n\nFOCUS: everything is in sharp focus; everything from near to far stays sharp. The blur is optical: soft and round, never smeared.\n\nThe entrance stairs of a London Underground station on a busy morning: a wide flight of worn concrete steps with steel nosings and a steel handrail down the right-hand wall, cream-and-maroon glazed tiles on the walls, the street and a strip of pale sky bright at the top of the stairs behind her, a couple of commuters in coats further up, soft and small. No signs, no logos, no roundels, no readable text anywhere.\n\nA snapshot from a phone held at hip height by someone standing at the bottom of the stairs, not looking at the screen, tilted a touch. THE SAME WOMAN exactly as in the attached reference sheet \u2014 a white British woman of sixty-nine, short and petite with a slight stoop, a small fine-boned oval face, pale grey-blue eyes, a small straight nose, a thin upper lip with a small mole above its right corner, chin-length layered hair dyed chestnut brown with silver roots at the parting, tucked behind the ears \u2014 unchanged in face, age and build; only her clothes are different today. Today she wears a white cotton shirt with the sleeves turned back, an open coral lightweight cardigan, wide-leg navy linen trousers down to the ankle, and tan leather flat loafers; small gold hoop earrings. She is RUNNING DOWN the station stairs FACING FORWARDS, light and quick, a woman in a hurry for her train and loving it: caught mid-stride on the lower third of the flight, her weight landing on her left foot on one step, her right foot already off the step above and swinging down, her right hand skimming the handrail without gripping it, her left arm swinging, her handbag bouncing at her hip, a small real smile, eyes on the steps ahead. The wide trousers swing loose and crease at the knees as linen does, both legs reading as ordinary covered legs. Her whole body from hair to shoes is in frame, with steps below her to land on.\n\nTHE LIGHT: The open street entrance at the top of the stairs behind her lights her from the right of the frame, bright morning daylight pouring down the stairs, with the station's overhead strip lights filling the lower steps, so the face has a lit side toward the right and a softer shadow side, with a small catchlight in the eyes. The shadows fall away from that source, one way only.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no product visible through the fabric, no product outline printing through the garment, no bulge at the joint, no rolled trouser leg or sleeve, no hitched hem, no lifted cuff, no hem held up, no product edge showing past a hem or cuff, no fabric moulded to a shape underneath, no AI face, no plastic skin, no extra fingers, no fused fingers, no melted hands, no CGI look, no fake commercial gloss, no moody dark grade, no glowing skin, no shadows falling in two directions, no lens flare, no walking backwards, no clutching the handrail, no stick, no stumbling, no falling, no pain on her face, no skirt, no bare knees, no feet cut off, no motion blur smearing her, no crowd blocking her, no Underground roundel, no station name, no signs, no readable text, logos, brand names or labels anywhere",
+ "imageRes": "1536\u00d72752",
+ "imageStatus": "regenerate",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_101529_dc061b02-cb28-456d-8096-179db3d5dce9.png",
+ "imageVersions": [
+  {
+   "asset": "4aa776e19165f0dbaab2a6c7ee034767",
+   "at": 1790674000000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "first render",
+   "size": 8946377,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_084137_11d544d2-d246-451f-9815-8e8a5cfd50b7.png",
+   "v": 1
+  },
+  {
+   "asset": "03dc0f733e02524490b476092582f6d1",
+   "at": 1790676200000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "I WANT A HOOK THAT WILL SELL\u2026 (home camera, backwards)",
+   "size": 6422682,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_091944_49b86e44-cd72-4547-9394-82eee330f1bf.png",
+   "v": 2
+  },
+  {
+   "asset": "25bb69bf4cd7035c63d8fcf7fb3d75bb",
+   "at": 1790680600000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "SHOULD SHOW HER GOING DOWN THE STAIRS AT THE SUBWAY STATTION RUNNING DOWN NOT JUST AT HOME",
+   "size": 9157448,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_101529_dc061b02-cb28-456d-8096-179db3d5dce9.png",
+   "v": 3
+  }
+ ],
+ "line": "In six weeks, this woman stopped coming down her own stairs backwards.",
+ "stage": "hooks",
+ "status": "regenerate",
+ "title": "HK1-01a \u00b7 old versions",
+ "updatedAt": 1790686100000
+}

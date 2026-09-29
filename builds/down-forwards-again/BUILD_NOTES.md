@@ -85,7 +85,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Higgsfield reports nano_banana_2). Replaced v2s (HK1-01a, HK2-02a) moved to the Old board. Act map rows + STEP4_5 + docs/actmap updated; angles.py PASS.
   Note: three B-rolls on the HK1-02 line (~6 s) sit near the 2.0 s minimum hold (§30H) — checked at assembly. Higgsfield 17,548.
 
+- 2026-09-29 ~12:25 UTC: user "fix those" → board Fix notes (§34): HK1-01a "her hands should never hold the hand rail" → v4 both hands free, rail far off;
+  HK1-02a "the operation is a knee replacement" → v4 a surgeon holds a total knee replacement implant above her bare left knee; HK1-02b "should be a COURSE
+  not at home" → v2 NHS physio class (new INCIDENTAL L-PHYSIO), step-down with the physio watching; HK1-02c "holding the stryde strap … braces at the back,
+  focus only on the stryde" → v2 held beat (§9A, HELD_GRIPS fingertips behind, nano_banana_pro requested / Higgsfield reports nano_banana_2), the overflowing
+  drawer soft behind. HK2-02a (strap put on) and HK3-01a confirmed by the user. `hooks/build_hooks_v4.py`; jobs 76034f69, b03e5124, 96983a1e, 183c767a.
+  Replaced versions moved to the Old board. Act map + STEP4_5 + docs/actmap updated; angles.py PASS. Higgsfield 17,445.25.
+
 ## Where it stands
-- **Waiting on the user:** HK1-01a v3, HK1-02a v3, HK1-02b v1, HK1-02c (drawer), HK2-02a v3 on the board — Confirm or Fix. HK3-01a image confirmed.
+- **Waiting on the user:** HK1-01a v4, HK1-02a v4, HK1-02b v2, HK1-02c v2 on the board — Confirm or Fix. HK2-02a v3 and HK3-01a confirmed (images).
 - **Then:** each confirmed frame → its Kling 3.0 Omni video via Kie (§22X preflight, §27G, length from `assemble.py --lengths` on the locked VO);
-  HK2-02a is a pinned seating clip (needs an approved end frame: the strap seated, W-L-FRONT placement). Then B-roll acts (step 7), CapCut block.
+  HK2-02a is a pinned seating clip (end frame: the strap seated, W-L-FRONT placement). Then B-roll acts (step 7), CapCut block.

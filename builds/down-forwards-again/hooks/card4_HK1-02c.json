@@ -1,0 +1,40 @@
+{
+ "imageStatus": "review",
+ "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic \u2014 exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nTHE CAMERA ANGLE: the lens at the subject's eye height, level, seen from the front of the strap in her hands. This exact angle, not a straight-on eye-level view.\n\nFOCUS: the product and its wordmark is in sharp focus; the room behind falls to a soft, recognisable shape. The blur is optical: soft and round, never smeared.\n\nThis room is part of THE SAME HOUSE as the attached property reference image \u2014 magnolia walls over a dark-stained dado rail with cream anaglypta below, tall white-gloss Victorian skirting, stripped pine four-panel doors with brass knobs, the burgundy-and-cream patterned runner \u2014 the same finishes throughout, seen here in a different room of that same house, with nothing redecorated and nothing newer than the rest. The kitchen of the attached kitchen photograph: behind her hands, soft and out of focus, the old pine Welsh dresser with its top drawer hanging open and overflowing with old knee supports \u2014 black sleeves, beige wraps, a grey hinged brace with metal side bars \u2014 spilling over the drawer front, all blank and plain, blurred into soft shapes.\n\nA snapshot from a phone held at chest height close in front of her hands, not looking at the screen. Her two hands \u2014 a woman of sixty-nine, thin skin, soft lines across the knuckles, a plain gold wedding band, the cuffs of an oatmeal cable-knit cardigan over a cream roll-neck \u2014 hold her knee strap up towards the camera at chest height, square to the lens, filling the middle of the frame. The product exactly as in the attached reference image \u2014 a matte-black polymer shell spanning the whole front of the knee, its top edge waving up into two matching pointed peaks of equal height either side of a crisp concave notch that occupies only the middle three fifths of its width, waisted off-centre, a black elastic band in a coarse knit with a visible textured weave carrying two black keeper loops on its outer face, a brushed chrome slide inset flush into each end of the shell carrying three engraved dotted chevrons, and a lowercase grey stryde wordmark centred on the lower body directly beneath the notch, horizontal and readable, never to one side of the notch \u2014 held up by the fingertips pressed flat on the pad behind the shell, the thumb at one lower corner of the shell, the front face square to the lens, the band hanging below, both hands the same way, one near each end of the shell, never on the band, never on the chrome slides, never across the wordmark, the peaks and the notch fully visible. The strap is the only sharp thing in the picture: every weave of the band, the chevrons on the slides and the grey wordmark crisp, and everything behind it \u2014 the dresser, the drawer, the heap of old braces \u2014 falls away to soft, round blur.\n\nTHE LIGHT: The window over the sink on the room's west wall lights the strap and her hands from the right of the frame, flat overcast daylight, so it has a lit side toward the right and a softer shadow side. The shadows fall away from that source, one way only.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no hand gripping the band, no fingers on the chrome slides, no fingers across the wordmark, no fingers over the peaks or the notch, no flat palm pressed on the front face, no strap swinging by its band alone, no band being stretched, no band being threaded, no product changing hands, no second strap, no strap worn while held, no AI face, no plastic skin, no extra fingers, no fused fingers, no melted hands, no CGI look, no fake commercial gloss, no moody dark grade, no glowing skin, no shadows falling in two directions, no lens flare, no face in frame, no strap worn on a leg, no brace in her hands, no sharp background, no drawer in focus, no deep focus, no packaging, no readable text, logos, brand names or labels anywhere except the stryde wordmark on the strap",
+ "imageModel": "nano_banana_pro",
+ "imageAsset": "9d78e9663f7a6a689aa72fde933497e4",
+ "imageType": "image/png",
+ "imageConnector": "Higgsfield",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122457_183c767a-1d7e-436d-8be6-a49ab09bb629.png",
+ "imageAt": 1790686100000,
+ "imageRes": "1536\u00d72752",
+ "updatedAt": 1790686100000,
+ "imageVersions": [
+  {
+   "asset": "b4e3ae0388ac334685084cc03f807c88",
+   "at": 1790676200000,
+   "connector": "Higgsfield",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "note": "carried from HK1-02a v2",
+   "size": 8701836,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_091945_fd67eaff-29d4-41ce-8e4e-5503295b0379.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "1531df887279d14d5511439a02434f94"
+  },
+  {
+   "v": 2,
+   "asset": "9d78e9663f7a6a689aa72fde933497e4",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122457_183c767a-1d7e-436d-8be6-a49ab09bb629.png",
+   "model": "nano_banana_pro requested \u00b7 Higgsfield reported nano_banana_2",
+   "connector": "Higgsfield",
+   "size": 5111633,
+   "at": 1790686100000,
+   "note": "this should be holding the stryde strap with her hands and at the back is the braces and the vamera focus only of the stryde"
+  }
+ ],
+ "imageFault": "this should be holding the stryde strap with her hands and at the back is the braces and the vamera focus only of the stryde",
+ "imageNote": "v2 \u2014 your Fix: this should be holding the stryde strap with her hands and at the back is the braces and the vamera focus only of the stryde"
+}
