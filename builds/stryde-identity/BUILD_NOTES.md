@@ -351,4 +351,4 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - Hook top videos sd5 **confirmed** (use). Final v8 built: hooks re-rendered (`make_hooks.py --clean --master2`, tops =
   sd5), assemble.py PASS ×3 (63.83 / 64.08 / 64.12s), finish.py (captions + overlays), mix = INV2 bed at -5 dB ducked
   (`music/mixv8_HK*.json`) + loudnorm → -14.3 / -14.3 / -14.4 LUFS, -1 dBTP → `STRYDE_Identity_HK*_final_v8.mp4`.
-  Upload to the Final board pending (its asset store was unavailable on the first try).
+  Uploaded (after the store came back): Final board FINAL-HK1..3 = v8, To check (~914 MB of 1 GB used).
