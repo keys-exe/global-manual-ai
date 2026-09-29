@@ -38,9 +38,10 @@ CLINIC = "the same exam room as the attached clinic photo — the padded table w
 def prop_ref():
     return S("PROP-REF").replace("[THE CARRIED FINISHES, NAMED IN ONE CLAUSE]", PROP_N_CARRIED)
 
-def seed(beat, subject_word, focus_name, prose, light_subject, quality, neg, refs, house=True, side=None, through=None):
+def seed(beat, subject_word, focus_name, prose, light_subject, quality, neg, refs, house=True, side=None, through=None, height=None):
     r = dict(ROWS[beat]); r["angle"] = dict(r["angle"])
     if side: r["angle"]["side"] = side          # the act-map side word, corrected where it contradicts the staging
+    if height: r["angle"]["height"] = height
     a = angle_line(r, subject_word)
     if through: a = a.replace("looking past the white balusters", "looking past " + through)
     lt = light_line(r, light_subject, quality)
@@ -64,36 +65,36 @@ def seed(beat, subject_word, focus_name, prose, light_subject, quality, neg, ref
 BEATS = {}
 
 # ---------------------------------------------------------------- Act 1 — the problem days (N-D1, grey mornings)
-def p_01a():   # Fix 2026-09-29: "she should facing up the stairs both hands on the rails. struggling to go down and stepping backwards"
+def p_01a():   # Fix 2 2026-09-29: "she should be looking up the stairs and both her hands at the railing stepping down backwards slowly and struggling"
     return seed("P-01a", "her on the stairs", "her", [
-      "Her staircase, exactly as in the attached hall photo: the straight open flight with the worn beige runner, the white balusters and dark oak handrail, the photo wall of framed family portraits. "
-      "Seen from the top of the stairs looking down the flight. A woman of seventy-one — " + N["markers"] + ", exactly as in her attached reference sheet — is three steps down, "
-      "going down her own stairs BACKWARDS: her back to the hall below, her body and face turned UP the stairs toward the landing and the camera, "
-      "BOTH hands clamped on the rails — one on the dark oak handrail, the other flat on the wall-side rail — her arms taking her weight. "
-      "She is struggling: knees stiff, shoulders hunched, jaw set, head bowed to watch her feet. Caught mid-step backwards: her right foot feeling blindly behind her for the step below, "
-      "toes just touching its edge, all her weight still on her left foot and her two hands. "
-      "She is wearing " + WARD["N-D1"] + ". The hall below is dim; nothing tidied."],
+      "Her staircase, exactly as in the attached hall photo: the straight open flight with the full-width oatmeal-beige stair carpet and its brass stair rods, the white balusters and dark oak handrail, the photo wall of small dark-framed family portraits. "
+      "Seen from the hall floor near the foot of the stairs, from the side and a little behind her, the way the hall photo sees the flight. A woman of seventy-one — " + N["markers"] + ", exactly as in her attached reference sheet — is four steps up, "
+      "going DOWN her stairs BACKWARDS, the way people do when the knees can't take it: her whole body faces UP the stairs toward the landing — chest, knees and the toes of both slippers pointing UP the flight, her back and her heels toward the hall below. "
+      "She is LOOKING UP THE STAIRS, her face in profile turned toward the top of the flight. BOTH her hands grip the dark oak handrail beside her, one hand a little above the other, knuckles tight, her arms taking her weight. "
+      "Caught mid-step, slow and struggling: her right leg reaching DOWN BEHIND her, the heel of that slipper feeling for the step below, toes still pointing up the stairs; her left foot flat on the step above carrying her, that knee bent and stiff, "
+      "her shoulders hunched, her jaw set. "
+      "She is wearing " + WARD["N-D1"] + ". The hall is dim; nothing tidied."],
       "her and the stairs", GREY,
-      "no facing down the stairs, no walking forwards, no hand off the rails, no fast movement, no stumbling, no fall, no one else on the stairs, no stairlift, no walking stick, no knee brace, no product, no smiling, no different staircase from the hall photo, no turn in the stairs",
-      [("N sheet", REF["N"]), ("P0-PROP-N plate", REF["P0"])], side="front")
+      "no facing down the stairs, no walking forwards down the stairs, no toes pointing down the stairs, no looking down the stairs toward the camera, no hand off the handrail, no hands at her sides, no fast movement, no stumbling, no fall, no one else on the stairs, no stairlift, no walking stick, no knee brace, no product, no smiling, no different staircase from the hall photo, no turn in the stairs, no narrow runner",
+      [("N sheet", REF["N"]), ("P0-PROP-N plate", REF["P0"])], side="three-quarter-back", height="eye")
 BEATS["P-01a"] = p_01a
 
-def p_01b():   # Fix 2026-09-29: "should not be already down and should show both feet stepping on the same stair steps slowly"
+def p_01b():   # Fix 2 2026-09-29: "she should show one step at a time same step both feet"
     return seed("P-01b", "her feet on the stairs", "her feet", [
-      "Close on the stairs from the side, the lens at the height of the steps, halfway up the flight: several carpeted treads of the worn beige runner with their white-painted risers climbing out of frame above her "
-      "and more steps going on down below her, a white baluster and the dark oak handrail at the edge of the frame. She is in the MIDDLE of the staircase, nowhere near the bottom — no hall floor in frame. "
-      "Her feet in pink terry slippers, bare ankles, the hem of a faded blue floral house dress just in frame: she is going down backwards, her heels toward the bottom of the stairs, one step at a time. "
-      "Caught slowly bringing both feet together on the SAME step: her right slipper already planted flat on the tread, her left slipper lowering to land beside it on that same tread, "
-      "a few centimetres above it, toes still over the edge of the step above. Both feet in frame. Only her feet and ankles in frame."],
+      "Close on the stairs from the side, the lens at the height of the steps, halfway up the flight: the full-width oatmeal-beige stair carpet with its brass stair rods, several steps above her and more steps below her, "
+      "a white baluster and the dark oak handrail at the edge of the frame. She is in the MIDDLE of the staircase, nowhere near the bottom — no hall floor in frame. "
+      "She is going down backwards, one step at a time: BOTH her feet stand TOGETHER, side by side, on ONE AND THE SAME step — both pink terry slippers on the same tread, touching each other, "
+      "their toes pointing UP the stairs and their heels at the front edge of the tread, toward the drop below. The step below them is empty, the step above them is empty. "
+      "Bare brown ankles, the hem of a faded blue floral house dress just in frame above them. Caught in the pause between steps, her weight settling on both feet. Only her feet, ankles and the hem in frame."],
       "her feet and the steps", GREY,
-      "no full body, no face, no hall floor, no bottom of the stairs, no feet on different steps at the end, no fast movement, no stumbling, no bare feet, no shoes, no knee brace, no product, no different carpet from the hall photo",
+      "no feet on two different steps, no one foot higher than the other, no mid-stride, no toes pointing down the stairs, no full body, no face, no hall floor, no bottom of the stairs, no fast movement, no stumbling, no bare feet, no shoes, no knee brace, no product, no narrow runner, no different carpet from the hall photo",
       [("P0-PROP-N plate", REF["P0"])])
 BEATS["P-01b"] = p_01b
 
 def p_02a():   # Fix 2026-09-29: "camera angle at her back and she just looking at the stairs then just leaves cause she dont want to go down"
     return seed("P-02a", "her at the top of the stairs", "everything", [
       "Her staircase, exactly as in the attached landing and hall photos. Seen from behind her on the top landing: she — " + N["markers"] + ", exactly as in her attached reference sheet — "
-      "stands at the head of the stairs with her back to the camera, the whole straight flight dropping away below her: the worn beige runner, the dark oak handrail, the photo wall of family portraits running down on the left, "
+      "stands at the head of the stairs with her back to the camera, the whole straight flight dropping away below her: the full-width oatmeal-beige stair carpet with its brass stair rods, the dark oak handrail, the photo wall of family portraits running down on the left, "
       "the front door closed at the bottom and the hall below dim. She has been looking down the stairs and has given up: caught just as she turns away from them, "
       "her shoulders sagging, her weight shifting back onto the landing, one hand letting go of the newel post, her head still half toward the drop. Her feet stay on the landing; she does not step down. "
       "She is wearing " + WARD["N-D1"] + ". A strip of grey light from the landing window lies across the top steps."],
@@ -308,7 +309,7 @@ def r_07a(): return seed("R-07a", "her at the top of the stairs", "the strap", [
     R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]))
 BEATS["R-07a"] = r_07a
 def r_07b(): return seed("R-07b", "her feet on the stairs", "the strap", [
-    "Close on the stairs from the side at step height: the worn beige runner, white risers, a white baluster. Her feet in tan house slippers come down the stairs facing forwards, one foot per step, "
+    "Close on the stairs from the side at step height: the full-width oatmeal-beige stair carpet with its brass stair rods, white risers, a white baluster. Her feet in tan house slippers come down the stairs facing forwards, one foot per step, "
     "caught mid-step; the strap on her right knee is at the top of the frame, below the hem of her denim skirt. " + prod("worn")],
     "her feet and the steps", STAIRS_SUN, PNEG + ", no going down backwards, no face",
     R(("P0-PROP-N plate", "P0"), *PR_REFS["worn"]))
@@ -348,7 +349,7 @@ BEATS["M-05a"] = m_05a
 def m_05b(): return anat("M-05b", "STATE — the strap's pad sits on the spot and has taken the load: the glow at the spot has cooled from red to a calm, soft blue.", "The strap seated on the patellar tendon just below the kneecap, the pad pressing on the spot.", prod_in=True)
 BEATS["M-05b"] = m_05b
 def m_06a(): return seed("M-06a", "her foot on the top step", "the strap", [
-    "Close on the top of her staircase from one step below, the lens at step height: the worn beige runner. Her foot in a tan house slipper settles flat on the top step, caught as it lands, "
+    "Close on the top of her staircase from one step below, the lens at step height: the full-width oatmeal-beige stair carpet with its brass stair rods. Her foot in a tan house slipper settles flat on the top step, caught as it lands, "
     "and above it her right knee with the strap on it, the hem of her denim skirt. " + prod("worn")],
     "her foot and knee", STAIRS_SUN, PNEG + ", no face",
     R(("P0-PROP-N plate", "P0"), *PR_REFS["worn"]))

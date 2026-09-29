@@ -27,7 +27,7 @@ JOB = {"N": "5d4f7598-14d9-4e53-8173-bb48b516e54a", "C1": "cf777e26-5d0f-4fae-90
        "P0": "237b6320-5f42-434a-826b-ce58c49024d2", "P5": "2b888662-9dc3-4a44-a0c4-4a909cef79e5", "P1": "2cc80516-284f-4355-92df-61e009c28d4d", "P2": "2d997177-d22f-4743-b215-7fafbd6e06be",
        "P8": "8b47c878-021a-4f21-b887-9ca63b1b1379"}
 PROP_N_CARRIED = ("warm greige walls, plain white baseboards, white six-panel doors with round brass knobs, honey-coloured oak floors, "
-                  "the worn beige stair runner, white balusters under a dark-stained oak handrail with a square dark newel, and the stair wall "
+                  "the full-width oatmeal-beige stair carpet held by thin brass stair rods, white balusters under a dark-stained oak handrail with a square dark newel, and the stair wall "
                   "hung with black-and-white and sepia family portraits in dark wooden frames")
 PROP_N_SHELL = {
  "[WALL FINISH AND COLOUR]": "painted drywall in a warm greige, scuffed at hip height along the stairs",

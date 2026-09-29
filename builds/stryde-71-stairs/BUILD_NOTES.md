@@ -207,5 +207,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - Every prompt names the day's clothes and takes only face, hair and build from the cast sheet ("not the clothes she wears on the sheet").
   - Act 1 fixes applied: P-01a (facing up the stairs, both hands on the rails, struggling backwards), P-01b (mid-flight, both feet onto the same step), P-02a (camera at her back, she looks down the stairs and turns away), P-03b (same brace as P-03a, ref = P-03a v1), P-03a ("fix the p03a too": grey cardigan + pink slippers, same brace).
   - Act 1 v1s were moved to the Old board.
+  - **Fix round 2 (2026-09-29):** P-01a v3 and P-01b v3 were remade on nano-banana-pro. P-01a is filmed from the hall, side-behind: she faces up the stairs, both hands on the handrail, and reaches one foot down behind her. P-01b has both feet together on the same step, toes up the stairs.
+  - P1-LANDING v6 (Kie GPT Image 2 i2i from P0) was rebuilt to match P0: full-width carpet with brass stair rods, small dark frames with black-and-white/sepia portraits, the console table, the coat stand and the front door below.
+  - House wording everywhere is now "full-width oatmeal-beige stair carpet with brass stair rods", not "runner".
+  - Once P1 v6 is confirmed, point REF["P1"] in work/broll.py at it; P-02a and C-06a use P1 as a reference.
   - Asset ids are in broll/images/board_assets_2026-09-29.txt; Kie logs are in the scratchpad (URLs on the cards).
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
