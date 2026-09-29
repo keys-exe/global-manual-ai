@@ -90,18 +90,17 @@ N_HANDS = 'BOTH her hands are full and NEVER touch the handrail: her right hand 
 BEATS = {}
 
 # ---------------------------------------------------------------- Act 1 — the problem days (N-D1, grey mornings)
-def p_01a():   # Fix 2 2026-09-29: "she should be looking up the stairs and both her hands at the railing stepping down backwards slowly and struggling"
-    return seed("P-01a", "her on the stairs", "her", [
+def p_01a():   # Fix 2026-09-29 (video note): "new image cause we should be looking at her back cause she is walking down backwards same step both feet as always"
+    return seed("P-01a", "her back as she comes down the stairs backwards", "her", [
       "Her staircase, exactly as in the attached hall photo: the straight open flight with the full-width oatmeal-beige stair carpet and its brass stair rods, the white balusters and dark oak handrail, the photo wall of small dark-framed family portraits. "
-      "Seen from the hall floor at the foot of the stairs looking UP the flight, from the side and a little behind her, the way the hall photo sees the flight; the whole empty lower flight between the camera and her. A woman of seventy-one — " + NID + ", exactly as in her attached reference sheet — is HIGH ON THE FLIGHT, about ten steps up and only three steps below the top landing — nowhere near the bottom, most of the stairs still below her — "
-      "going DOWN her stairs BACKWARDS, the way people do when the knees can't take it: her whole body faces UP the stairs toward the landing — chest, knees and the toes of both slippers pointing UP the flight, her back and her heels toward the hall below. "
-      "She is LOOKING UP THE STAIRS, her face in profile turned toward the top of the flight. BOTH her hands grip the dark oak handrail beside her, one hand a little above the other, knuckles tight, her arms taking her weight. "
-      "Caught mid-step, slow and struggling: her right leg reaching DOWN BEHIND her, the heel of that slipper feeling for the step below, toes still pointing up the stairs; her left foot flat on the step above carrying her, that knee bent and stiff, "
-      "her shoulders hunched, her jaw set. "
-      "She is wearing " + WARD["N-D1"] + ". The hall is dim; nothing tidied."],
+      "Seen from the hall floor at the foot of the stairs, looking straight UP the flight at HER BACK. A woman of seventy-one — " + NID + " — " + N_BUILD + " — is about halfway up the flight, "
+      "coming DOWN the stairs BACKWARDS: she faces UP the stairs toward the landing, so the camera sees her back, the back of her head and her heels. "
+      "BOTH her hands grip the dark oak handrail beside her, one a little above the other, her elbows bent, her weight on her arms. "
+      "BOTH her feet stand TOGETHER, side by side on the SAME step, heels at the front edge of the tread — the way she always goes down, one step at a time, both feet on each step before the next. "
+      "Her shoulders hunched, her head bowed toward her feet. She is wearing " + WARD["N-D1"] + ". The hall below is dim; nothing tidied."],
       "her and the stairs", GREY,
-      "no her at the bottom of the stairs, no her on the lowest steps, no facing down the stairs, no walking forwards down the stairs, no toes pointing down the stairs, no looking down the stairs toward the camera, no hand off the handrail, no hands at her sides, no fast movement, no stumbling, no fall, no one else on the stairs, no stairlift, no walking stick, no knee brace, no product, no smiling, no different staircase from the hall photo, no turn in the stairs, no narrow runner",
-      [("N sheet", REF["N"]), ("P0-PROP-N plate", REF["P0"])], side="three-quarter-back", height="eye")
+      "no face to camera, no facing down the stairs, no walking forwards, no feet on different steps, no hand off the handrail, no stumbling, no fall, no one else on the stairs, no stairlift, no walking stick, no knee brace, no product, no different staircase from the hall photo, no turn in the stairs, no narrow runner, no slim woman",
+      [("N sheet", REF["N"]), ("P0-PROP-N plate", REF["P0"])], side="behind", height="low")
 BEATS["P-01a"] = p_01a
 
 def p_01b():   # Fix 3 2026-09-29: "i want a overall new one" — new framing, same beat: one step at a time, both feet on the same step
