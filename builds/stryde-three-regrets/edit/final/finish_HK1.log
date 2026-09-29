@@ -1,0 +1,14 @@
+{
+ "variant": 1,
+ "caption_groups": 109,
+ "file": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/STRYDE_THREE_REGRETS_HK1.mp4",
+ "duration_s": 160.37,
+ "master_s": 160.37,
+ "duration_ok": true,
+ "lufs_i": -14.2,
+ "true_peak_dbtp": -1.4,
+ "loudness_ok": true,
+ "black_frames": [],
+ "size_bytes": 156458840,
+ "status": "PASS"
+}
