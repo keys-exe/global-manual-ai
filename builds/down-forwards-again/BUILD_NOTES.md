@@ -155,4 +155,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - All 32 body images are To check on the Current board (Act 1: 8, Act 2: 7, Act 3: 7, Act 4: 7, Act 5: 3). Jobs, urls and asset ids: `acts/renders.json`,
     `acts/acts2_5_v1_renders.json`, `acts/v2_renders.json`; prompts `acts/<beat>.image[.v2].prompt.txt` from `acts/build_act1.py` / `acts/build_acts2_5.py`.
   - BR-07's first v2 job failed on Higgsfield's side (no render); resent once, same prompt.
+- **Script lines (the user, 2026-09-29: "fix the script line cause its not showing the script line for that broll only"):** where B-rolls share
+  a phrase, each card now carries only its own verbatim span (`BLINE` in `work/actmap.py`, asserted to rebuild the phrase; full phrase kept as `phraseLine`).
+- **Fix round 1 (the user's board notes):** BR-02 v2 (film clipped flat on a wall viewer, not floating), BR-04 v3 (knee bent, fingertip on the tendon under the kneecap),
+  BR-05a v3 (glasses on her nose; hauling herself up, struggling), BR-06 v3 (the plate's one straight flight, seen from the hall), BR-09b v3 (one woman only),
+  MECH-03 v2 (glow on the tendon below the kneecap, kneecap unlit) — `acts/build_fix_r1.py`, one render each, back on the board as To check; replaced
+  versions moved to Old. Confirmed so far: BR-01, BR-05b, BR-07, BR-08, BR-09a, MECH-01, MECH-05.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
