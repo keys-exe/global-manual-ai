@@ -474,6 +474,36 @@
   }
  },
  {
+  "beat": "B06-BR2",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R2",
+  "height": "low",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low profile = the full weight landing on the knee",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D-D1",
+  "face": false,
+  "light": {
+   "source": "open overcast sky, morning",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
   "beat": "B06",
   "group": "Act 1",
   "type": "BR",

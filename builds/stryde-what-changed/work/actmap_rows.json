@@ -2639,6 +2639,53 @@
   "face": true
  },
  {
+  "beat": "B06-BR2",
+  "type": "BR",
+  "act": "Act 1",
+  "line": "The load does not thin with it.",
+  "key": "load",
+  "function": "the load stays full",
+  "subject": "R2",
+  "location": "L-STREET",
+  "story_day": "D-D1",
+  "framing": "CU knee-height, side-on on the pavement: Desmond mid-stride, his right heel striking the paving slab, the knee taking his whole weight as it lands, the thigh firming",
+  "action": "one heavy step lands",
+  "pace": "one step, about a second, ordinary walking pace",
+  "camera": "locked off",
+  "staging": "street: side-on, knee-height, legs only, camera still, he walks through the frame",
+  "pin_end": "no",
+  "max": 6,
+  "product": "absent",
+  "visibility": "—",
+  "model": "NB2",
+  "layout": "full",
+  "eg": "",
+  "ledger": "",
+  "notes": "user 2026-09-29 'The load does not thin with it — BROLL HERE'",
+  "duration": "pending-master",
+  "angle": {
+   "height": "low",
+   "side": "profile",
+   "fg": "clean",
+   "scale": "CU",
+   "why": "low profile = the full weight landing on the knee"
+  },
+  "focus": {
+   "plane": "foreground",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "open overcast sky, morning",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 6500
+  },
+  "face": false
+ },
+ {
   "beat": "B07-BRa",
   "type": "BR",
   "act": "Act 1",
