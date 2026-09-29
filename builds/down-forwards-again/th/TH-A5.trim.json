@@ -1,0 +1,37 @@
+{
+  "src": "TH-A5.cut.mp4",
+  "out": "TH-A5.trim.mp4",
+  "duration_in_s": 18.85,
+  "pace": {
+    "sentence": 0.45,
+    "comma": 0.25,
+    "word": 0.3
+  },
+  "cuts": [
+    [
+      8.27,
+      8.36
+    ],
+    [
+      10.55,
+      10.58
+    ],
+    [
+      17.59,
+      17.62
+    ],
+    [
+      18.65,
+      18.85
+    ]
+  ],
+  "cut_total_s": 0.35,
+  "transcript": "You cannot strengthen your way out of a load problem. You have to move the load. Two for one. So you do both knees, which is what she needed. 60 days and you keep the straps. From the stride site. The copy stretch and a stretch strap stops holding the spot. Nothing to lose but the pain. Go and do your stairs.",
+  "duration_out_s": 18.52,
+  "verify": {
+    "first_word_s": 0.0,
+    "tail_after_last_word_s": 0.3,
+    "gaps_over_0.6s": []
+  },
+  "status": "PASS"
+}

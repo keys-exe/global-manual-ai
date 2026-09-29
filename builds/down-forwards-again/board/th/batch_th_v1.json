@@ -1,0 +1,290 @@
+[
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "down-forwards-again__TH-HK1",
+  "if_version": 2,
+  "data": {
+   "status": "review",
+   "videoAsset": "0309dd015d0df2c59835b71f3f80f2ab",
+   "videoType": "video/mp4",
+   "videoConnector": "HeyGen",
+   "videoUrl": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+   "duration": 12.2,
+   "videoRes": "1080\u00d71920",
+   "videoAt": 1790670000000,
+   "updatedAt": 1790670000000,
+   "note": "Cut 0\u201312.66s from the one-go Avatar V render f3fed911 (VO-T7 locked audio); trim.py V7.66.0: 0.53s removed, 12.68\u219212.2s, first word 0.0s, tail 0.28s, no gap >0.6s \u2192 PASS.",
+   "model": "HeyGen Avatar V \u00b7 one go \u00b7 audio VO-T7 (Down-Doctor T3) \u00b7 trim.py V7.66.0",
+   "videoVersions": [
+    {
+     "v": 1,
+     "asset": "0309dd015d0df2c59835b71f3f80f2ab",
+     "type": "video/mp4",
+     "url": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+     "model": "HeyGen Avatar V (photo avatar bd3f0bac, no motionPrompt)",
+     "connector": "HeyGen",
+     "size": 8864710,
+     "at": 1790670000000,
+     "note": "first render \u2014 one go from the locked VO"
+    }
+   ]
+  }
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "down-forwards-again__TH-HK2",
+  "if_version": 2,
+  "data": {
+   "status": "review",
+   "videoAsset": "28f554c06491f8638b5134096288b1d7",
+   "videoType": "video/mp4",
+   "videoConnector": "HeyGen",
+   "videoUrl": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+   "duration": 8.64,
+   "videoRes": "1080\u00d71920",
+   "videoAt": 1790670000000,
+   "updatedAt": 1790670000000,
+   "note": "Cut 12.66\u201321.57s from the one-go Avatar V render f3fed911 (VO-T7 locked audio); trim.py V7.66.0: 0.29s removed, 8.92\u21928.64s, first word 0.0s, tail 0.34s, no gap >0.6s \u2192 PASS.",
+   "model": "HeyGen Avatar V \u00b7 one go \u00b7 audio VO-T7 (Down-Doctor T3) \u00b7 trim.py V7.66.0",
+   "videoVersions": [
+    {
+     "v": 1,
+     "asset": "28f554c06491f8638b5134096288b1d7",
+     "type": "video/mp4",
+     "url": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+     "model": "HeyGen Avatar V (photo avatar bd3f0bac, no motionPrompt)",
+     "connector": "HeyGen",
+     "size": 6695466,
+     "at": 1790670000000,
+     "note": "first render \u2014 one go from the locked VO"
+    }
+   ]
+  }
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "down-forwards-again__TH-HK3",
+  "if_version": 2,
+  "data": {
+   "status": "review",
+   "videoAsset": "102104234627dcbbd5f14dfd76c64f92",
+   "videoType": "video/mp4",
+   "videoConnector": "HeyGen",
+   "videoUrl": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+   "duration": 7.64,
+   "videoRes": "1080\u00d71920",
+   "videoAt": 1790670000000,
+   "updatedAt": 1790670000000,
+   "note": "Cut 21.57\u201329.3s from the one-go Avatar V render f3fed911 (VO-T7 locked audio); trim.py V7.66.0: 0.11s removed, 7.76\u21927.64s, first word 0.0s, tail 0.14s, no gap >0.6s \u2192 PASS.",
+   "model": "HeyGen Avatar V \u00b7 one go \u00b7 audio VO-T7 (Down-Doctor T3) \u00b7 trim.py V7.66.0",
+   "videoVersions": [
+    {
+     "v": 1,
+     "asset": "102104234627dcbbd5f14dfd76c64f92",
+     "type": "video/mp4",
+     "url": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+     "model": "HeyGen Avatar V (photo avatar bd3f0bac, no motionPrompt)",
+     "connector": "HeyGen",
+     "size": 4659320,
+     "at": 1790670000000,
+     "note": "first render \u2014 one go from the locked VO"
+    }
+   ]
+  }
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "down-forwards-again__TH-A1",
+  "if_version": 2,
+  "data": {
+   "status": "review",
+   "videoAsset": "b74995be4d12b5c143ea3dcc96d64f74",
+   "videoType": "video/mp4",
+   "videoConnector": "HeyGen",
+   "videoUrl": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+   "duration": 31.92,
+   "videoRes": "1080\u00d71920",
+   "videoAt": 1790670000000,
+   "updatedAt": 1790670000000,
+   "note": "Cut 29.3\u201361.45s from the one-go Avatar V render f3fed911 (VO-T7 locked audio); trim.py V7.66.0: 0.26s removed, 32.16\u219231.92s, first word 0.0s, tail 0.3s, no gap >0.6s \u2192 PASS.",
+   "model": "HeyGen Avatar V \u00b7 one go \u00b7 audio VO-T7 (Down-Doctor T3) \u00b7 trim.py V7.66.0",
+   "videoVersions": [
+    {
+     "v": 1,
+     "asset": "b74995be4d12b5c143ea3dcc96d64f74",
+     "type": "video/mp4",
+     "url": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+     "model": "HeyGen Avatar V (photo avatar bd3f0bac, no motionPrompt)",
+     "connector": "HeyGen",
+     "size": 23508638,
+     "at": 1790670000000,
+     "note": "first render \u2014 one go from the locked VO",
+     "parts": [
+      "b74995be4d12b5c143ea3dcc96d64f74",
+      "61cf1234d69b383ff499d43ec17ea876"
+     ]
+    }
+   ],
+   "videoParts": [
+    "b74995be4d12b5c143ea3dcc96d64f74",
+    "61cf1234d69b383ff499d43ec17ea876"
+   ]
+  }
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "down-forwards-again__TH-A2",
+  "if_version": 2,
+  "data": {
+   "status": "review",
+   "videoAsset": "daeb8eb05cad3b26d63e9f37e5720e1b",
+   "videoType": "video/mp4",
+   "videoConnector": "HeyGen",
+   "videoUrl": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+   "duration": 25.08,
+   "videoRes": "1080\u00d71920",
+   "videoAt": 1790670000000,
+   "updatedAt": 1790670000000,
+   "note": "Cut 61.45\u201387.02s from the one-go Avatar V render f3fed911 (VO-T7 locked audio); trim.py V7.66.0: 0.59s removed, 25.6\u219225.08s, first word 0.0s, tail 0.34s, no gap >0.6s \u2192 PASS. CHECK 'That is why the good knee\u2026' (~7.8s in): two transcribers hear 'the good me' \u2014 the VO take may slur 'knee'.",
+   "model": "HeyGen Avatar V \u00b7 one go \u00b7 audio VO-T7 (Down-Doctor T3) \u00b7 trim.py V7.66.0",
+   "videoVersions": [
+    {
+     "v": 1,
+     "asset": "daeb8eb05cad3b26d63e9f37e5720e1b",
+     "type": "video/mp4",
+     "url": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+     "model": "HeyGen Avatar V (photo avatar bd3f0bac, no motionPrompt)",
+     "connector": "HeyGen",
+     "size": 17501063,
+     "at": 1790670000000,
+     "note": "first render \u2014 one go from the locked VO",
+     "parts": [
+      "daeb8eb05cad3b26d63e9f37e5720e1b",
+      "0ff9cc3789d7b672dd9a9e22f151a8a1"
+     ]
+    }
+   ],
+   "videoParts": [
+    "daeb8eb05cad3b26d63e9f37e5720e1b",
+    "0ff9cc3789d7b672dd9a9e22f151a8a1"
+   ]
+  }
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "down-forwards-again__TH-A3",
+  "if_version": 2,
+  "data": {
+   "status": "review",
+   "videoAsset": "917d70644ceaeee6a9074dee505204a4",
+   "videoType": "video/mp4",
+   "videoConnector": "HeyGen",
+   "videoUrl": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+   "duration": 33.01,
+   "videoRes": "1080\u00d71920",
+   "videoAt": 1790670000000,
+   "updatedAt": 1790670000000,
+   "note": "Cut 87.02\u2013120.57s from the one-go Avatar V render f3fed911 (VO-T7 locked audio); trim.py V7.66.0: 0.65s removed, 33.56\u219233.01s, first word 0.0s, tail 0.21s, no gap >0.6s \u2192 PASS.",
+   "model": "HeyGen Avatar V \u00b7 one go \u00b7 audio VO-T7 (Down-Doctor T3) \u00b7 trim.py V7.66.0",
+   "videoVersions": [
+    {
+     "v": 1,
+     "asset": "917d70644ceaeee6a9074dee505204a4",
+     "type": "video/mp4",
+     "url": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+     "model": "HeyGen Avatar V (photo avatar bd3f0bac, no motionPrompt)",
+     "connector": "HeyGen",
+     "size": 24169083,
+     "at": 1790670000000,
+     "note": "first render \u2014 one go from the locked VO",
+     "parts": [
+      "917d70644ceaeee6a9074dee505204a4",
+      "b87891dd0a095a800e76f4b425fa9914"
+     ]
+    }
+   ],
+   "videoParts": [
+    "917d70644ceaeee6a9074dee505204a4",
+    "b87891dd0a095a800e76f4b425fa9914"
+   ]
+  }
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "down-forwards-again__TH-A4",
+  "if_version": 2,
+  "data": {
+   "status": "review",
+   "videoAsset": "2e30d822c264d314bb82d30b6104fc14",
+   "videoType": "video/mp4",
+   "videoConnector": "HeyGen",
+   "videoUrl": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+   "duration": 39.74,
+   "videoRes": "1080\u00d71920",
+   "videoAt": 1790670000000,
+   "updatedAt": 1790670000000,
+   "note": "Cut 120.57\u2013160.67s from the one-go Avatar V render f3fed911 (VO-T7 locked audio); trim.py V7.66.0: 0.45s removed, 40.12\u219239.74s, first word 0.0s, tail 0.26s, no gap >0.6s \u2192 PASS.",
+   "model": "HeyGen Avatar V \u00b7 one go \u00b7 audio VO-T7 (Down-Doctor T3) \u00b7 trim.py V7.66.0",
+   "videoVersions": [
+    {
+     "v": 1,
+     "asset": "2e30d822c264d314bb82d30b6104fc14",
+     "type": "video/mp4",
+     "url": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+     "model": "HeyGen Avatar V (photo avatar bd3f0bac, no motionPrompt)",
+     "connector": "HeyGen",
+     "size": 28409345,
+     "at": 1790670000000,
+     "note": "first render \u2014 one go from the locked VO",
+     "parts": [
+      "2e30d822c264d314bb82d30b6104fc14",
+      "7e8a6ef277f31029436b209f2b766303"
+     ]
+    }
+   ],
+   "videoParts": [
+    "2e30d822c264d314bb82d30b6104fc14",
+    "7e8a6ef277f31029436b209f2b766303"
+   ]
+  }
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "down-forwards-again__TH-A5",
+  "if_version": 2,
+  "data": {
+   "status": "review",
+   "videoAsset": "806efe3f11b91820c04468033574a0f0",
+   "videoType": "video/mp4",
+   "videoConnector": "HeyGen",
+   "videoUrl": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+   "duration": 18.52,
+   "videoRes": "1080\u00d71920",
+   "videoAt": 1790670000000,
+   "updatedAt": 1790670000000,
+   "note": "Cut 160.67\u2013179.541s from the one-go Avatar V render f3fed911 (VO-T7 locked audio); trim.py V7.66.0: 0.35s removed, 18.85\u219218.52s, first word 0.0s, tail 0.3s, no gap >0.6s \u2192 PASS.",
+   "model": "HeyGen Avatar V \u00b7 one go \u00b7 audio VO-T7 (Down-Doctor T3) \u00b7 trim.py V7.66.0",
+   "videoVersions": [
+    {
+     "v": 1,
+     "asset": "806efe3f11b91820c04468033574a0f0",
+     "type": "video/mp4",
+     "url": "https://app.heygen.com/videos/f3fed9116b971e93d10e105279df52ae",
+     "model": "HeyGen Avatar V (photo avatar bd3f0bac, no motionPrompt)",
+     "connector": "HeyGen",
+     "size": 12940782,
+     "at": 1790670000000,
+     "note": "first render \u2014 one go from the locked VO"
+    }
+   ]
+  }
+ }
+]

@@ -56,7 +56,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Down-Doctor T1–T4 = 190/192/192/192 wpm, all others PASS, every tail −54…−59 dB. Board: VO-T1…T4-ALL (Down), VO-T5…T8-ALL (Down-Doctor), To check;
   the 16 old house-cut part cards + old T1.ALL moved to the Old board.
 
+- 2026-09-29 ~08:05 UTC: user "CONFIRMED VO" — confirmed **VO-T7 (Down-Doctor take 3, ×1.0 clone, V7.66.0 cut, 192 wpm)** on the board → VO locked
+  (the ×1.0 source is the user's call, off §22U step 4). Audio → HeyGen asset `bace0e73…` → Avatar V one go (photo avatar `bd3f0bac…`, 9:16 1080p, no
+  motionPrompt) → video `f3fed9116b971e93d10e105279df52ae` (179.5 s). `vo/cut_points.py` now cuts at every hook AND act (A1–A5 lines from the act map;
+  A1..A5 = BODY verified) → `th/TH-<k>.cut.mp4` → trim.py V7.66.0 → all 8 PASS (0.11–0.65 s removed each) → board TH-HK1/2/3 + TH-A1…A5 To check.
+  Flag: at 69.2 s (TH-A2 ~7.8 s) both transcribers hear "the good **me**" for "the good knee" — told the user.
+
 ## Where it stands
-- **Waiting on the user:** which voice to lock — Down (×1.2, standard) or Down-Doctor (×1.0, slower, not in §22U) — and which take.
-- **Then:** HeyGen Avatar V one go from the chosen whole take → cut into TH-HK1/2/3+BODY → trim.py (V7.66.0) → board. Then hooks (step 6).
+- **Waiting on the user:** check the 8 talking-head clips (TH-HK1/2/3, TH-A1…A5) on the board — Confirm or Fix. Listen to TH-A2 "the good knee".
+- **Then:** hooks one by one (step 6), B-roll (step 7), CapCut block; finished videos = TH-HKn + TH-A1…A5 (+ B-roll).
 - Old HeyGen render `c48a6bc2…` (old fast cut) is superseded, not used.
