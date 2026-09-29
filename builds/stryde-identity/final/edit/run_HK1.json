@@ -130,7 +130,7 @@
     },
     {
       "beat": "BR-06",
-      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/BR-06_slow_of.mp4",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-06_video_v6.mp4",
       "phrase": "Inside, a silicone pad catches the force",
       "key": "Inside,",
       "layout": {
@@ -139,14 +139,14 @@
       "word_t": 18.52,
       "start": 18.375,
       "line_end": 24.2083,
-      "in_spec": 0.0,
+      "in_spec": null,
       "peak": null,
       "max": 6.0,
-      "clip_len": 2.58,
+      "clip_len": 4.04,
       "speed": 1.0,
-      "in": 0.0,
-      "flex": false,
-      "skip": 0.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
       "end": 20.875
     },
     {

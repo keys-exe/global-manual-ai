@@ -16,8 +16,8 @@
       "in_spec": 0.0,
       "peak": null,
       "max": 6.0,
-      "clip_len": 4.63,
-      "speed": 0.983,
+      "clip_len": 4.79,
+      "speed": 1.0,
       "in": 0.0,
       "flex": false,
       "skip": 0.0,
@@ -130,7 +130,7 @@
     },
     {
       "beat": "BR-06",
-      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/BR-06_slow_of.mp4",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-06_video_v6.mp4",
       "phrase": "Inside, a silicone pad catches the force",
       "key": "Inside,",
       "layout": {
@@ -139,14 +139,14 @@
       "word_t": 18.76,
       "start": 18.625,
       "line_end": 24.375,
-      "in_spec": 0.0,
+      "in_spec": null,
       "peak": null,
       "max": 6.0,
-      "clip_len": 2.58,
+      "clip_len": 4.04,
       "speed": 1.0,
-      "in": 0.0,
-      "flex": false,
-      "skip": 0.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
       "end": 21.0833
     },
     {
@@ -793,10 +793,6 @@
     {
       "beat": "MECH-10",
       "fix": "gave back 0.19s of the skipped opening (in-point 0.21s)"
-    },
-    {
-      "beat": "EDIT-HK2",
-      "fix": "HOLE: slowed to 0.98x to reach 4.71s"
     },
     {
       "beat": "MECH-02",
