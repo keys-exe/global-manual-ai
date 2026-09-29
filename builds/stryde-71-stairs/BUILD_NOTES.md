@@ -230,6 +230,15 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - L-02a: the tote comes from the L-01a render.
     - R-07a: starts from the very top step.
     - R-04a: the knee is bare under the rolled trouser.
+  - **Fix round 5 (2026-09-29), 8 images.**
+    - The worn photo now leads the refs, and PROD_COPY names the two peaks and the high placement right under the kneecap.
+    - C-06a: the straps are held horizontally, each no longer than her hand.
+    - L-02a: the tote is copied from a crop of L-01a (broll/images/L-01a_tote_crop.png).
+    - M-06a: a new concept, her first step down facing the camera, hands free.
+    - PR-03a: one strap, right knee, high.
+    - PR-05a: made productive — she waters the flower bed.
+    - R-07a: shot from the landing beside her, the very top step, a mug in her hand so she never touches the rail.
+    - R-04a hit Kie's false "unsafe" flag once (no charge); the retry went through.
   - **R-07a/b/c merged into ONE B-roll going down the stairs** (user). R-07a carries all three lines; R-07b and R-07c were moved to the Old board and removed from Current and the act map.
   - P-03b uses the new P-03a v3 as its brace reference. T-02a uses T-01b as its reference for Loretta's dress.
   - **P1-LANDING removed from the build (user 2026-09-29: "lets just remove it the p1").** All 7 versions are on the Old board, and the card and file are gone from Current. P-02a and C-06a now use P0 only (their current renders were made with P1 v5; regenerate only if the user asks). The confirmed hooks, TH and voice cards are untouched.
