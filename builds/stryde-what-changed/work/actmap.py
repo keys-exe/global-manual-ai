@@ -304,10 +304,10 @@ BB("B06-BR", A1, "That part is ordinary. It happens to everybody. But here is wh
    EYE, THR, "clean", "MEDIUM", "three-quarter = several people, one ordinary street, the same trouble", "deep", "deep", L(STREET_AM, "L"), True,
    notes="user 2026-09-29 'It happens to everybody. (2 OR 3 PEOPLE HAVING PROBLEM IN THEIR KNEE) BROLL HERE' + 'NOT SAME AGE'; one-off extras, no sheets (§19B)")
 BB("B06-BR2", A1, "The load does not thin with it.", "load", "the load stays full",
-   "R2", "L-STREET", "D-D1", "CU knee-height, side-on on the pavement: Desmond mid-stride, his right heel striking the paving slab, the knee taking his whole weight as it lands, the thigh firming", "one heavy step lands",
+   "R2", "L-STREET", "D-D1", "ECU knee-height, side-on on the pavement: Desmond's right knee fills the frame as his foot lands, the knee bending under his whole weight, the tendon standing out below the kneecap", "one heavy step lands",
    "one step, about a second, ordinary walking pace", STILL, "street: side-on, knee-height, legs only, camera still, he walks through the frame", "no", "absent", "—", "NB2",
-   LOW, PRO, "clean", "CU", "low profile = the full weight landing on the knee", "foreground", "shallow", L(STREET_AM, "L"), False,
-   notes="user 2026-09-29 'The load does not thin with it — BROLL HERE'")
+   LOW, PRO, "clean", "ECU", "low profile, close = the full weight landing on the knee", "foreground", "shallow", L(STREET_AM, "L"), False,
+   notes="user 2026-09-29 'The load does not thin with it — BROLL HERE'; v2 Fix 'FOCUS ON KNEE'")
 BB("B07-BRa", A1, "The cushion gets thinner.", "thinner", "the cushion in the knee wears thin",
    "ANAT", "—", "—", "ANAT-B front-on close-up of the joint gap: the pale cartilage cushion between thigh bone and shin bone, visibly thin and worn, the bones sitting close", "the cushion thins a little further",
    "one slow change over three seconds", STILL, "none", "no", "absent", "—", "NB2",
