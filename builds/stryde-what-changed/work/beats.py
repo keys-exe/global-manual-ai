@@ -52,6 +52,8 @@ STREET = ("THE SAME STREET as the attached location plate: a long grey paving-sl
 LIGHT = {  # source, screen side, quality
     "M-GREY-L": ("the half-landing window at the top of the flight", "left", "grey morning light, soft and indirect from above — the problem state, flat and cool, never moody"),
     "STREET-AM-L": ("the broad overcast morning sky", "left", "flat, grey, cool morning light"),
+    "M-GREY-R": ("the half-landing window at the top of the flight", "right", "grey morning light, soft and indirect from above — the problem state, flat and cool, never moody"),
+    "D-GREY-R": ("the landing window at the top of the flight", "right", "grey morning light, soft and indirect from above — the problem state, flat and cool, never moody"),
     "D-GREY-L": ("the landing window at the top of the flight", "left", "grey morning light, soft and indirect from above — the problem state, flat and cool, never moody"),
 }
 COLOUR = {
@@ -91,7 +93,8 @@ SIDE = {"front": "the front", "three-quarter": "three-quarter", "profile": "the 
 def angle(beat, subj, fg=""):
     a = ROWS[beat]["angle"]
     return (S("ANGLE-LINE").replace("[HEIGHT CLAUSE from §30I]", HEIGHT[a["height"]]).replace("[SIDE]", SIDE[a["side"]]).replace("[SUBJECT]", subj)
-            .replace("[, looking past FOREGROUND, soft in the near foreground | , seen in REFLECTION]", fg))
+            .replace("[, looking past FOREGROUND, soft in the near foreground | , seen in REFLECTION]", fg)
+            .replace(", not a straight-on eye-level view", "" if a["height"] == "eye" else ", not a straight-on eye-level view"))
 
 
 def focus(plane, deep=True):
@@ -117,12 +120,12 @@ ANAT_NEG_T2I = ("no arrows, no force arrows, no motion lines, no diagram marking
                 "illustration, no cartoon look, no vignette, no darkened frame corners, no limb falling off into darkness, no product")
 
 
-def anat(state, view=None):
+def anat(state, view=None, stack="ANAT-A", slots=None):
     base = S("ANAT-BASE")
     if view:
         base = base.replace("viewed from a low three-quarter angle, foreshortened, [TARGET JOINT] sitting slightly off-centre and dominating the frame", view)
-    t = "\n\n".join([base, S("ANAT-LIGHT"), S("ANAT-FIELD"), S("ANAT-A"), state, "AVOID: " + ANAT_NEG_T2I + ", " + S("NEG-EXTERNAL")])
-    for k, v in ANAT_SLOTS.items():
+    t = "\n\n".join([base, S("ANAT-LIGHT"), S("ANAT-FIELD"), S(stack), state, "AVOID: " + ANAT_NEG_T2I + ", " + S("NEG-EXTERNAL")])
+    for k, v in dict(ANAT_SLOTS, **(slots or {})).items():
         t = t.replace(k, v)
     return t
 
@@ -218,6 +221,152 @@ B["HK3-b"] = (NB2, [], anat(
     "frame and the spot just below it is the hottest point in the picture. " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
     view="viewed from a low front three-quarter angle looking up at the bent knee, the joint large in the middle of the frame, the lower "
          "thigh above and the shin angling down towards the landing foot"))
+
+# ── Act 1 (step 7 body B-roll) ─────────────────────────────────────────────────────────
+# Faceless beats carry no face identity text; beats that show the face carry R1 / R2 in full. Plain trainers, no writing.
+R2_BODY = ("THE SAME MAN as in the attached character sheet of him — the same dark brown skin, the same tall broad build and strong thighs, "
+           "sixty-six years old. His legs: dark brown older skin, strong calves, a few grey hairs on the shins, ashy knees with soft creases, "
+           "real unretouched skin.")
+PLAIN_SHOES = "no logos on the shoes, no swoosh, no stripes, no brand marks"
+NO_FACE = "no face in frame, no head"
+
+# B01a — "That band is the patellar tendon." ANAT-B ghost limb: bones and the tendon only (a look no hook used).
+B["B01a"] = (NB2, [], anat(
+    "Seen from eye level, three-quarter front, close: the knee straight and standing, the kneecap in the upper third and the patellar "
+    "tendon running down from its lower edge to the top of the shin as one clear pearly band — the one structure the eye goes to. "
+    + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from eye level, three-quarter front, the knee joint large in the middle of the frame with the lower thigh above and the "
+         "upper shin below", stack="ANAT-B", slots={"[STACK]": "the surrounding soft tissue"}))
+
+# B01b — "It sits two centimetres below your kneecap … every step you take lands on it." Desmond, ECU profile, stepping down.
+B["B01b"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held at knee height beside the stairs, side-on. He is coming DOWN his stairs, caught mid-step: his right foot "
+    "planted flat on the tread and taking his weight, his bare right knee bending under the load, his left foot lowering towards the tread "
+    "below. Very close: the frame holds only his bare right knee and shin in side profile, the hem of his shorts, his trainer and the "
+    "tread — nothing above the lower thigh.",
+    R2_BODY + " Wearing " + WARD["D-D1"] + ".",
+    D_STAIRS,
+    angle("B01b", "his bare right knee on the stair"),
+    focus("his right knee", deep=False).replace("the room behind", "the hall behind"),
+    light("D-GREY-L", "his knee and the tread"), colour("D-STAIRS-AM")],
+    NO_FACE + ", no torso, no product anywhere, no knee strap, no knee support, no second person, " + PLAIN_SHOES + ", no wrong number of legs"))
+
+# B02 — "That is the one." Maureen on her bottom stair, fingertip just below her kneecap.
+B["B02"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone held above and a little to the side, looking down. She is sitting on the bottom stair of her hall, her right "
+    "knee bent in front of her, and she presses the tip of her right index finger into the soft spot just below her right kneecap, "
+    "finding it. Close: the frame holds her bare right knee, her hand and finger on it, the navy skirt hem and a little of the stair "
+    "carpet — her face is not in the frame.",
+    R1_BODY + " Her hands: slim older hands, thin skin over the knuckles, a plain gold wedding ring. " + R1_LEGS
+    + " Wearing a navy cotton A-line skirt ending just above the knee.",
+    M_STAIRS,
+    angle("B02", "her finger on the spot below her kneecap"),
+    focus("her fingertip and the spot below her kneecap", deep=False).replace("the room behind", "the stairs behind"),
+    light("M-GREY-R", "her knee and hand"), colour("M-STAIRS-AM")],
+    NO_FACE + ", no product anywhere, no knee strap, no knee support, no second person, no extra fingers, no wrong number of hands"))
+
+# B04a — "Going up the stairs, your muscles lift you." Desmond from behind and below, climbing.
+B["B04a"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held low at the foot of the stairs, looking up the flight from behind him. He is climbing his stairs, caught "
+    "mid-step: his right foot planted two treads up and his right thigh driving him upwards, the back of the thigh and calf working, "
+    "his left heel lifting off the tread below, his right hand on the dark handrail. The frame is cropped at his waist — his back, "
+    "shoulders and head are above the frame.",
+    R2_BODY + " Wearing " + WARD["D-D1"] + ".",
+    D_STAIRS,
+    angle("B04a", "his legs climbing the stairs"),
+    focus("everything", deep=True),
+    light("D-GREY-R", "his legs and the flight"), colour("D-STAIRS-AM")],
+    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no second person, " + PLAIN_SHOES + ", no going down the stairs, no wrong number of legs"))
+
+# B04b — "Going down, nothing lifts you. You are catching yourself on every step," Desmond side-on through the spindles, stepping down.
+B["B04b"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held at hip height beside the stairs, looking side-on at the flight through the white spindles. He is coming "
+    "DOWN, caught at the landing of a step: his right foot just landed on the tread below, the right knee bending deeply to catch his "
+    "weight, his left leg still on the tread above, his left hand sliding on the dark handrail. The frame is cropped at his waist.",
+    R2_BODY + " Wearing " + WARD["D-D1"] + ".",
+    D_STAIRS,
+    angle("B04b", "his legs coming down the stairs", ", looking past the white spindles, soft in the near foreground"),
+    focus("everything", deep=True),
+    light("D-GREY-L", "his legs and the stairs"), colour("D-STAIRS-AM")],
+    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no second person, " + PLAIN_SHOES + ", no going up the stairs, no wrong number of legs"))
+
+# B04c — "so coming down puts more through that band than going up does." ANAT-C silhouette, only the tendon legible.
+B["B04c"] = (NB2, [], anat(
+    "Seen from a high three-quarter angle: the knee bent under a downward step, the foot just landing on a step below, the whole leg a dark "
+    "translucent silhouette with only the patellar tendon legible inside it, glowing where the landing loads it. "
+    + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from a high three-quarter angle, the bent knee in the middle of the frame, the shin angled down to the landing foot on "
+         "a faint step below", stack="ANAT-C", slots={"[STACK]": "the surrounding soft tissue"}))
+
+# B05 — cartilage thins. ANAT-B ghost limb, the joint cut away, target = the cartilage. No glow — a condition beat.
+B["B05"] = (NB2, [], anat(
+    "Seen from the side, in profile, the joint opened in a clean cutaway: the rounded end of the femur above, the flat top of the tibia "
+    "below, and between them the smooth pale cartilage layer lining both bone ends — pearly, slightly translucent, visibly thinner at the "
+    "front of the joint where the load lands than at the back. Calm, no glow, no emission; the thinning reads by thickness alone.",
+    view="viewed from the side, in profile, the knee joint large in the middle of the frame, cut away cleanly so the inside of the joint "
+         "is visible", stack="ANAT-B",
+    slots={"[TARGET]": "the cartilage lining the joint surfaces"}).replace("the patellar tendon crisp", "the cartilage crisp"))
+
+# B06 — pip (host cut-out bottom-left): the thinner joint, load still arriving at the same spot. Knee upper right.
+B["B06"] = (NB2, [], anat(
+    "Seen from a low three-quarter angle: the knee under load, the cartilage between the bones visibly thin, the load still arriving at "
+    "the same spot below the kneecap. THE KNEE SITS IN THE UPPER RIGHT OF THE FRAME; the lower-left third of the frame is calm near-black "
+    "field with nothing in it (a person will be placed there later). " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from a low three-quarter angle, foreshortened, the knee joint in the upper right of the frame, the lower-left third "
+         "empty field"))
+
+# B07 — "That is why it feels like it arrived overnight." Maureen at the top of her stairs, looks down and stops. Face in frame.
+B["B07"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone held a little above her, on the landing, three-quarter on. She stands at the top of her stairs, her left hand "
+    "on the oak handrail, about to go down, and has stopped: she looks down the flight, her mouth closed, a small hesitation — not "
+    "pain, just pausing to think about the first step. Medium close-up: head, shoulders and hands, the top of the flight falling away "
+    "below her.",
+    R1 + " Wearing " + WARD["M-D1"] + ".",
+    M_STAIRS,
+    angle("B07", "her at the top of the stairs"),
+    focus("her nearest eye", deep=False).replace("the room behind", "the stairs below"),
+    light("M-GREY-R", "her face and hands"), colour("M-STAIRS-AM")],
+    "no crying, no wincing, no hand on her knee, no product anywhere, no knee strap, no walking stick, no stairlift, no second person, "
+    "no looking at the camera"))
+
+# B08a — "Some of the people it happens to have never run a mile in their life." Maureen picks up her keys. Face in frame.
+B["B08a"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone at eye height in her hall, three-quarter on. She stands at the small half-moon hall table by the front door and "
+    "lifts her keys out of the blue-and-white china bowl on it, about to go out, a straw sunhat and a navy raincoat on the coat stand "
+    "behind. Medium shot from the knees up, her face three-quarter to the camera, looking down at the keys.",
+    R1 + " Wearing " + WARD["M-D1"] + ".",
+    M_STAIRS + " The half-moon hall table with a key bowl and a blue-and-white vase of dried lavender stands just inside the front door.",
+    angle("B08a", "her at the hall table"),
+    focus("her nearest eye", deep=False).replace("the room behind", "the hall behind"),
+    light("M-GREY-L", "her face and hands"), colour("M-STAIRS-AM")],
+    "no product anywhere, no knee strap, no running gear, no second person, no looking at the camera, no readable text"))
+
+# B08b — "Others played sport for thirty years." Over Desmond's shoulder: he straightens a team photo. Back of head only.
+B["B08b"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone just behind his right shoulder, at eye height. He is on the lower stairs straightening one of the black-framed "
+    "football team photographs on the stair wall, the fingertips of his right hand levelling its bottom corner. Close: the soft edge of "
+    "his shoulder and the back of his close-cropped grey-white head in the near foreground, his hand and the frame sharp beyond. In the "
+    "photograph, a young amateur team in two rows — the players too small and soft to make out, no readable writing.",
+    "THE SAME MAN as in the attached character sheet of him, seen only from behind: close-cropped grey-white hair, dark brown skin, the "
+    "navy zip-neck sports top. His hand: dark brown older skin, thick knuckles, real unretouched skin.",
+    D_STAIRS,
+    angle("B08b", "his hand on the team photo", ", looking past his shoulder, soft in the near foreground"),
+    focus("his hand and the frame", deep=False).replace("the room behind", "the wall around it"),
+    light("D-GREY-R", "his hand and the photo"), colour("D-STAIRS-AM")],
+    "no face, no profile of the face, no product anywhere, no readable text, no names, no trophies, no second person, no extra fingers"))
+
+# B08c — "It is coming from standing up and walking." Desmond seated on the bottom stair, rising. Face in frame.
+B["B08c"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held low in the hall, three-quarter on. He is getting up off the bottom stair where he has just tied his "
+    "trainers, caught just as he starts to rise: his weight coming forward over his feet, both hands pushing off his knees, his bare knees "
+    "bent and starting to straighten, his face three-quarter to the camera, looking ahead, matter-of-fact. Medium shot, the whole of him "
+    "from head to trainers.",
+    R2 + " Wearing " + WARD["D-D1"] + ".",
+    D_STAIRS,
+    angle("B08c", "him rising off the bottom stair"),
+    focus("everything", deep=True),
+    light("D-GREY-L", "him and the stairs"), colour("D-STAIRS-AM")],
+    "no wincing, no pain face, no product anywhere, no knee strap, no second person, " + PLAIN_SHOES + ", no looking at the camera"))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
