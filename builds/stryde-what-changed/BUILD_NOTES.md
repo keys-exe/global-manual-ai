@@ -16,6 +16,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Cast: H-HOST, R1-MAUREEN, R2-DESMOND (landed 11:50, board To check) on Higgsfield (Sunburst, 2k, one each; R2's first call returned 503 before starting, sent once more).
   Higgsfield 17,537 credits before the cast. Four boards made; docs/absorption on Plan + Current.
 
+- 12:08 UTC hourly Fix check: H-HOST Fix "change host avatar to more attractive or have pleasing personality" → v2 (job b9242d45…, Sunburst):
+  attractive/warm face fill, 44, `NEG-DEFAULT-FACE` without "catalogue-model bone structure" and its last two clauses, "unflattering" dropped
+  from `SKIN-T` (H only; §34 correction for this sheet, `cast/build_sheets.py` `host=True`). v1 moved to Old (asset 10c81baa…), deleted from Current.
+
 ## Where it stands
 - **Waiting on the user:** Confirm/Fix the three avatars; answer F2, F3, F5, F6, F8, F9, F11.
 - Next (on the go): steps 4–5 — podcast set plate (16:9) + host talking-head seed, R1 stairs/hall, R2 house; act map + wardrobe map

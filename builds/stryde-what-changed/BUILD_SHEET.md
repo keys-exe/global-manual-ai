@@ -184,7 +184,7 @@ Held in the Product Sheet register (V7.49.37): 17× bodyweight · three years wi
 
 | Sheet | Job ID | File | Board |
 |---|---|---|---|
-| H-HOST | `79f9d508-7991-48cd-80eb-ba97608aae90` | `cast/H-HOST_v1.png` | To check |
+| H-HOST | v1 `79f9d508-7991-48cd-80eb-ba97608aae90` (Old board) · **v2 `b9242d45-8e90-49c3-bd5c-68757c9a9b4e`** | `cast/H-HOST_v2.png` | To check (v2) |
 | R1-MAUREEN | `fd75b478-6a1b-4a8f-ba80-d20f272f65b0` | `cast/R1-MAUREEN_v1.png` | To check |
 | R2-DESMOND | `9f0903d2-b148-4273-93b6-e4227a87d9f6` | `cast/R2-DESMOND_v1.png` | To check |
 
@@ -194,7 +194,7 @@ Manual run: **I don't check the sheets** (§18B step 3). Confirm or Fix each on 
 
 | ID | Identity string |
 |---|---|
-| H | British Indian woman, 48, medium height, slim; oval face, long straight nose, dark brown almond eyes under straight thick brows, wide mouth; one streak of grey back from the left temple through long, loose, dark brown-black waves past the shoulders; forest-green fine-knit crew-neck jumper, dark indigo straight jeans, tan suede ankle boots |
+| H | British Indian woman, 44, medium height, slim, good posture; oval face, high cheekbones, dark brown almond eyes under arched brows, straight slim nose, full lips; one streak of grey back from the left temple through long, glossy, dark brown-black waves past the shoulders; forest-green fine-knit crew-neck jumper, dark indigo straight jeans, tan suede ankle boots *(v2, from your Fix)* |
 | R1 | white British woman, 69, short and slight, a little rounded at the upper back; heart-shaped face, round light-blue eyes, short straight nose, thin lips; a small dark mole at the left corner of her mouth; short layered white crop lifted at the crown; dusty-pink cardigan over a navy-and-white Breton top, navy A-line skirt above the knee, white canvas plimsolls; bare knees |
 | R2 | Black British man, 66, tall, broad-shouldered, thickened middle, strong legs; long square-jawed face, deep-set dark eyes, broad straight nose; close-cropped grey-white hair and a short grey-white beard; navy half-zip sports top over a white T-shirt, dark grey jogging shorts above the knee, white trainers with navy trim |
 
@@ -204,7 +204,7 @@ Manual run: **I don't check the sheets** (§18B step 3). Confirm or Fix each on 
 |---|---|---|---|
 | Face | oval, long straight nose | heart-shaped, pointed chin | long, square jaw |
 | Hair | long dark waves + grey streak | short white layered crop | cropped grey-white + beard |
-| Age position | 48 (below the band: the presenter) | 69 (mid) | 66 (mid) |
+| Age position | 44 (below the band: the presenter) | 69 (mid) | 66 (mid) |
 | Build | medium, slim | short, slight | tall, broad, athletic gone soft |
 | Class / wardrobe | smart-casual presenter | neat retired, Breton stripes | sporty, zip-neck |
 | Marker | grey streak | mole at the mouth | scar across the nose |
@@ -217,7 +217,7 @@ Manual run: **I don't check the sheets** (§18B step 3). Confirm or Fix each on 
 
 **`VOICE-HOST`** (goes verbatim into every §22U step-2 take)
 ```
-A British woman of forty-eight from the south-east of England, a clear mid-range voice with a little warmth underneath, plain and confiding, as if explaining something to a friend across a table. Soft modern southern English vowels, never RP, never estuary caricature, never American. Statements fall at the end; the turn lines slower and lower, never louder. Brisk and even, about one hundred and seventy words a minute.
+A British woman of forty-four from the south-east of England, a clear mid-range voice with a little warmth underneath, plain and confiding, as if explaining something to a friend across a table. Soft modern southern English vowels, never RP, never estuary caricature, never American. Statements fall at the end; the turn lines slower and lower, never louder. Brisk and even, about one hundred and seventy words a minute.
 ```
 
 | Field | H — host |
