@@ -1,0 +1,35 @@
+{
+ "beat": "NS-03a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\": \"ns_03a\", \"subject\": \"Close-up of a man's right knee as he stands by the bed, the knee strap already seated just below the kneecap, his fingertips on the band beside each steel buckle. Exactly as in the start frame.\", \"camera\": {\"movement\": \"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\", \"framing\": \"PROPPED as in the start frame.\"}, \"motion\": \"Already moving on the first frame: his fingertips press the band ends once, snugging the strap in place, about half a second, then both hands lift slowly away from the leg and out of frame to the sides, about a second; the strap stays seated below the kneecap, wordmark readable. The strap keeps its exact shape, size and wordmark in every frame and moves only with the body it sits on; its rigid shell never bends. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. Mass and momentum: the hands lead, fabric settles.\", \"lighting\": \"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\", \"style\": \"As in the start frame.\", \"negatives\": \"no morphing, no warping, no melting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no camera travelling with the subject, no slow motion, no music, no speech, no bending, no curling, no folding, no melting, no flipping of the product, no strap sliding on the leg, no product covering the kneecap, no second unit, no extra fingers, no fused fingers, no melted hands, no band ends being tugged, no band tail being pulled, no fingers pulling the band through the slides, no band being threaded through a slide, no band being unthreaded, no hands working the chrome slides, no tightening motion, no loosening motion, no strap being opened, no strap being wrapped around the leg, no strap being closed, no velcro, no buckle, no band tail hanging loose, no strap passing over the kneecap, no face in frame, no camera app interface, no on-screen buttons, no icons, no text overlays, no hands covering the shell\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_145628_cac019ab-273a-4857-a67c-0472a13296ca.png",
+ "start_approved": true,
+ "approved_by": "user: Confirm on the board (new frame, 2026-09-29)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 3,
+ "risks": [
+  {
+   "risk": "strap overshoots onto the kneecap",
+   "prevented_by": "'stop at contact \u2026 snug directly under the kneecap'; 'no strap passing over the kneecap'"
+  },
+  {
+   "risk": "hands fuse with the strap",
+   "prevented_by": "hands on the shell's edges, one movement; hand negatives"
+  },
+  {
+   "risk": "reads as adjusting",
+   "prevented_by": "NEG_ADJUST"
+  }
+ ],
+ "fix_note": "Frame fault (user Fix: MAKE THE PRODUCT VISBLE): the hands hid the shell \u2192 new confirmed frame with the whole strap seated and readable; motion changed to snug-and-release so the hands leave the shell visible",
+ "user_go": "user: Confirm + 'FIX THOSE' (2026-09-29)"
+}

@@ -1,0 +1,36 @@
+{
+ "beat": "MECH-02",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\": \"mech_02\", \"subject\": \"A stylised anatomical knee from a low three-quarter angle against a near-black field, the strap seated below the kneecap, the pale patellar tendon visible below the strap. Exactly as in the start frame.\", \"camera\": {\"movement\": \"Completely locked off: no drift, no orbit, no push-in, no zoom, no pan, no cut \u2014 one continuous shot from one fixed viewpoint.\", \"framing\": \"Exactly as in the start frame, first frame to last.\"}, \"motion\": \"One slow knee bend, like stepping down a stair: from the start frame the knee flexes smoothly into the bent pose of the end frame over about three seconds, then holds. The thigh stays in place; only the knee joint bends and the shin swings back beneath it. The strap stays seated below the kneecap and moves only with the leg; its rigid shell never bends, same peaks, same wordmark position and spelling. The pale patellar tendon below the strap stays one clear band from under the kneecap to the top of the shin bone the whole time, moving only with the bend, never sliding, fading or merging into the bone. The faint warmth under the strap dims. One single leg. Everything keeps the exact form, proportion and count it has in the start frame.\", \"lighting\": \"As in the start frame: three-source render lighting, near-black field, no change across the clip.\", \"style\": \"As in the start frame.\", \"negatives\": \"no camera movement, no orbit, no zoom, no cut, no second shot, no walking, no stepping forward, no second leg, no hands, no skeleton hands, no extra bones, no people, no tendon sliding, no tendon disappearing, no tendon merging with bone, no glow moving off the tendon, no glow on the kneecap, no glow outside the body, no morphing, no melting, no labels, no arrows, no text, no lasers, no fire, no sparks, no x-ray look, no cartoon look, no stutter, no looping back, no strap changing shape, no strap sliding, no strap rotating, no misspelled wordmark\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_131257_0b1fb7fa-097a-47e4-b1a0-5df9969160ef.png",
+ "start_approved": true,
+ "approved_by": "user: 'I'VE CONFIRM PROCEED' (2026-09-29) on the Act 1 images",
+ "pinned": true,
+ "end_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_151257_2bc799b3-c9d7-45b7-8cbe-79ef942e45ed.png",
+ "end_approved": true,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 6,
+ "risks": [
+  {
+   "risk": "the strap slides or rotates under load",
+   "prevented_by": "'the product holds station under every arrival'; NEG-PROT"
+  },
+  {
+   "risk": "glow crosses the product line",
+   "prevented_by": "NEG-PROT; ember stays dim"
+  },
+  {
+   "risk": "labels or arrows appear",
+   "prevented_by": "ANAT-NEG"
+  }
+ ],
+ "fix_note": "Fault in the motion (user Fixes: MAKE THE TENDON FIX DON'T MOVE, then BEND THE LEGS): unpinned Kling redrew the tendon into the tibia; the still-motion v5 had no bend \u2192 pinned start (confirmed frame) + end (GPT edit 2bc799b3, knee bent ~30\u00b0, tendon clear below the strap): one slow bend between them, camera locked",
+ "user_go": "user: Fix on the board + 'FIX THOSE' (2026-09-29)",
+ "end_approved_by": "Claude check against the confirmed start frame (same render, knee bent, glow/tendon unchanged) \u2014 made for the user's Fix asking for the bend; the user checks it in the clip"
+}

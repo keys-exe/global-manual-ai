@@ -1,0 +1,36 @@
+{
+ "beat": "MECH-01",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\": \"mech_01\", \"subject\": \"A stylised anatomical knee in true lateral profile against a near-black field, a tight glowing spot on the patellar tendon just below the kneecap. Exactly as in the start frame.\", \"camera\": {\"movement\": \"Completely locked off: no drift, no orbit, no push-in, no zoom, no pan, no cut \u2014 one continuous shot from one fixed viewpoint.\", \"framing\": \"Exactly as in the start frame, first frame to last.\"}, \"motion\": \"One slow knee bend, like stepping down a stair: from the straight leg of the start frame the knee flexes smoothly forward into the bent pose of the end frame over about four seconds, then holds. The thigh stays in place; only the knee joint bends and the shin swings back beneath it. The glowing spot stays fixed on the patellar tendon just below the kneecap the whole time, moving only with the tendon, and brightens gently as the knee bends. One single leg. Everything keeps the exact form, proportion and count it has in the start frame \u2014 nothing melts, merges, splits or becomes something else.\", \"lighting\": \"As in the start frame: three-source render lighting, near-black field, no change across the clip.\", \"style\": \"As in the start frame.\", \"negatives\": \"no camera movement, no orbit, no zoom, no cut, no second shot, no walking, no stepping forward, no second leg, no hands, no skeleton hands, no extra bones, no people, no tendon sliding, no tendon disappearing, no tendon merging with bone, no glow moving off the tendon, no glow on the kneecap, no glow outside the body, no morphing, no melting, no labels, no arrows, no text, no lasers, no fire, no sparks, no x-ray look, no cartoon look, no stutter, no looping back, no product\"}",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_141448_da67b705-9c54-4908-bb06-a3d9b7071d0f.png",
+ "start_approved": true,
+ "approved_by": "user: Confirm on the board (MECH-01 image v2, 2026-09-29)",
+ "pinned": true,
+ "end_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_151257_d92ae3f8-0b5c-45b2-99cd-c1b8eaf8c6f1.png",
+ "end_approved": true,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 4,
+ "risks": [
+  {
+   "risk": "glow spreads or floats outside the body",
+   "prevented_by": "ANAT-STRESS-P holds heat inside the tissue; NEG-EXTERNAL"
+  },
+  {
+   "risk": "the limb holds still like a diagram",
+   "prevented_by": "load cycles one per second, the structure compresses and recovers"
+  },
+  {
+   "risk": "labels or arrows appear",
+   "prevented_by": "ANAT-NEG"
+  }
+ ],
+ "fix_note": "Fault in the motion (user Fixes: MAKE THE POINT ON THE TENDON CONSISTENCY, then MAKE BENDENG THE LEGS): Kling v2 invented walking, cuts and hands; the still-motion v3 had no bend \u2192 pinned start (confirmed straight frame) + end (GPT edit d92ae3f8, knee bent ~35\u00b0, glow on the tendon): one slow bend between them, camera locked",
+ "end_approved_by": "Claude check against the confirmed start frame (same render, knee bent, glow/tendon unchanged) \u2014 made for the user's Fix asking for the bend; the user checks it in the clip",
+ "user_go": "user: Fix on the board + 'FIX THOSE' (2026-09-29)"
+}
