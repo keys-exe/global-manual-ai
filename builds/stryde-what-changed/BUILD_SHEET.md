@@ -196,7 +196,7 @@ Manual run: **I don't check the sheets** (§18B step 3). Confirm or Fix each on 
 |---|---|
 | H | British Indian woman, 48, medium height, slim; oval face, long straight nose, dark brown almond eyes under straight thick brows, wide mouth; one streak of grey back from the left temple through long, loose, dark brown-black waves past the shoulders; forest-green fine-knit crew-neck jumper, dark indigo straight jeans, tan suede ankle boots |
 | R1 | white British woman, 69, short and slight, a little rounded at the upper back; heart-shaped face, round light-blue eyes, short straight nose, thin lips; a small dark mole at the left corner of her mouth; short layered white crop lifted at the crown; dusty-pink cardigan over a navy-and-white Breton top, navy A-line skirt above the knee, white canvas plimsolls; bare knees |
-| R2 | Black British man, 66, tall, broad-shouldered, thickened middle; long square-jawed face, deep-set dark eyes, broad straight nose; short pale scar across the bridge of the nose; close-cropped grey-white hair with a line-up and a short salt-and-pepper beard; navy zip-neck sports top over a white T-shirt, dark grey jogging shorts above the knee, white trainers with navy trim *(from the prompt; read off the render once it lands)* |
+| R2 | Black British man, 66, tall, broad-shouldered, thickened middle, strong legs; long square-jawed face, deep-set dark eyes, broad straight nose; close-cropped grey-white hair and a short grey-white beard; navy half-zip sports top over a white T-shirt, dark grey jogging shorts above the knee, white trainers with navy trim |
 
 ### §19A axis tables
 
