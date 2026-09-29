@@ -78,11 +78,30 @@ B["HK2-01"] = ("nano_banana_2", ["R2-ALAN", "P0-A-KITCHEN"], photo([
     colour("flat grey-white morning daylight", 5600, "cream units, light oak laminate, terracotta floor", "he", "a navy cardigan cuff",
            "the blue gel wrap", "muted, slightly cool")],
     "no stryde strap, no stryde wordmark, no black moulded shell with peaks, no brand names, no packaging text, no face, " + NEG_HANDS))
+# HK1-01-END — pinned end frame (act map pin_end: "product turns", §27G rule 5): the confirmed v2 start frame with the wrist
+# turned a little so the shell faces slightly further to her left and the near chrome slide catches the window light.
+END = {}
+END["HK1-01-END"] = ("nano_banana_pro", ["HK1-01_v2", "front", "back"], photo([
+    "This photo is THE SAME MOMENT AND THE SAME SCENE as the FIRST attached image, a second later — keep her hand, her mustard sleeve, "
+    "the grey hinged brace, the coffee table, the books, the clementines, the kilim, the teal sofa, the camera position and the light "
+    "exactly as in it. The strap is THE EXACT SAME OBJECT as the second attached product photo, the front. The only change: her wrist "
+    "has turned a little, about twenty degrees, so the shell now faces slightly further to the left of the frame and the near brushed "
+    "chrome slide on the right end catches a bright hard highlight from the window. Same grip, " + dict(P.HELD_GRIPS)["bottom-edge pinch"].split(" (")[0]
+    + ". The front face and the lowercase grey stryde wordmark stay readable, both peaks and the notch stand clear, the shell the same "
+    "small size beside the big brace.",
+    RIGID + " " + P.WORDMARK_LOCK],
+    "no other change to the scene, no size change, no shell turned side-on, no pad side showing, no rectangular block, no flat straight "
+    "top edge, no second strap, no strap worn, no face, " + P.NEG_WORDMARK + ", " + NEG_HANDS))
 if __name__ == "__main__":
     out = {}
     for beat, (model, refs, prompt) in B.items():
         assert "[" not in prompt, (beat, prompt[prompt.index("["):][:80])
         (HERE / f"{beat}.t2i.txt").write_text(prompt + "\n")
         out[beat] = {"model": model, "refs": refs, "prompt": prompt, "line": ROWS[beat]["phrase"], "chars": len(prompt)}
+        print(beat, model, len(prompt), refs)
+    for beat, (model, refs, prompt) in END.items():
+        assert "[" not in prompt, beat
+        (HERE / f"{beat}.t2i.txt").write_text(prompt + "\n")
+        out[beat] = {"model": model, "refs": refs, "prompt": prompt, "line": ROWS[beat[:-4]]["phrase"], "chars": len(prompt)}
         print(beat, model, len(prompt), refs)
     (HERE / "hooks.json").write_text(json.dumps(out, indent=1, ensure_ascii=False))
