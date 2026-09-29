@@ -1,0 +1,50 @@
+{
+ "BR-01": {
+  "job": "f4cd0726-f746-4836-a025-9966174c7ec2",
+  "asset": "c3c7000f453af4ad37890fe2eeb7873a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_145343_f4cd0726-f746-4836-a025-9966174c7ec2.png",
+  "file": "img/BR-01.v1.png"
+ },
+ "BR-02": {
+  "job": "e96597f2-6390-4d43-8751-c7e7b258e42f",
+  "asset": "0c7616a99bb781f9c10141b6bf489963",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_145343_e96597f2-6390-4d43-8751-c7e7b258e42f.png",
+  "file": "img/BR-02.v1.png"
+ },
+ "BR-04": {
+  "job": "c0137663-4706-418e-8ea5-b4b23b7531e8",
+  "asset": "ffe919b110b41ce8bf1d09045d619d08",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_145343_c0137663-4706-418e-8ea5-b4b23b7531e8.png",
+  "file": "img/BR-04.v1.png"
+ },
+ "BR-05a": {
+  "job": "87943760-aca6-4e02-a277-ce3afe5dda15",
+  "asset": "92023e17f6b01bf2ae7279196a6f4835",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_145343_87943760-aca6-4e02-a277-ce3afe5dda15.png",
+  "file": "img/BR-05a.v1.png"
+ },
+ "BR-05b": {
+  "job": "225814cd-7acc-4808-9b71-3272c0004338",
+  "asset": "430a93e25731b2dc262e1820baf0f737",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_145606_225814cd-7acc-4808-9b71-3272c0004338.png",
+  "file": "img/BR-05b.v1.png"
+ },
+ "MECH-01": {
+  "job": "a1f58ac4-2f47-4d79-9733-f1ae7dab5521",
+  "asset": "4e43bb55750e73dd58dad0b92e7a1aea",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_145606_a1f58ac4-2f47-4d79-9733-f1ae7dab5521.png",
+  "file": "img/MECH-01.v1.png"
+ },
+ "MECH-03": {
+  "job": "e69d6417-7612-456b-af0e-d2f7080dd85a",
+  "asset": "6458222204291b703f8df5191fcd6f8e",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_145606_e69d6417-7612-456b-af0e-d2f7080dd85a.png",
+  "file": "img/MECH-03.v1.png"
+ },
+ "MECH-05": {
+  "job": "54d936e8-fbab-4f15-8645-dfc2101a1535",
+  "asset": "2930a4b8fbdaf9bb002bd00237899dc8",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_145606_54d936e8-fbab-4f15-8645-dfc2101a1535.png",
+  "file": "img/MECH-05.v1.png"
+ }
+}

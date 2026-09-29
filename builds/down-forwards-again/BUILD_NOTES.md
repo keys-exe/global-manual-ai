@@ -142,6 +142,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   (0.93×, §30H allows ≥0.8×), doctor on 'I have'. All = master length, no black. v3 cuts to the Old board.
 
 ## Where it stands
-- **Waiting on the user:** hook cuts v4 (HK1-CUT, HK2-CUT, HK3-CUT) — the step-6 hooks gate.
-- **Then:** step 7 — body B-roll act by act (images → the user's Confirm → videos); cuts placed by hand from word + loudness timings (the user's
+- Hooks done: images, videos and cuts v4 confirmed by the user (2026-09-29 "all confirmed").
+- **Step 7, Act 1 images — waiting on the user (2026-09-29 ~15:00 UTC):** `acts/build_act1.py` → 8 frames, one render each on Higgsfield
+  (nano_banana_2, 9:16, 2k): BR-01, BR-02, BR-04, BR-05a, BR-05b (refs: house plates + P-PATIENT), MECH-01 (ANAT-B, both knees, the
+  condition), MECH-03 (ANAT-A lateral, the tendon hot spot), MECH-05 (ANAT-A stepping down, rest). All on the Current board as To check
+  (v1, jobs + board asset ids in `acts/renders.json`; PNGs stay out of git, the board holds them).
+- **Then:** Act 1 videos after the user's Confirm; Acts 2–5 the same way; cuts placed by hand from word + loudness timings (the user's
   timing notes, 2026-09-29); finished variants (HKn + the body); CapCut block.
