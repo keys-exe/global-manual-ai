@@ -56,7 +56,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: user confirmed B-08 v3, B-12 v2, MECH-S1, MECH-S2, MECH-01 — all 21 body images confirmed (CARD-13b stays a still). Step 7 videos: `body/build_videos.py` (§27G one action at a named pace, RIG-R1 on people / RIG-RVD on anatomy, rigid-product clause, HOLD-C + PHYS-MOTION-C, NEG-WARP-C; B-09a allows the strap to slide *up* only; MECH-S1/S2 share B-01's 4s) → 21 `body/<BEAT>.call.json`, `preflight.py` PASS all (B-01a, B-09a, B-14, B-08, B-12 trimmed under 2,500 chars; B-09a's SEAT-LOCK sentence dropped — it left a [SITE] slot and contradicts a slide-up shot) → Kie `kling-3.0` pro 9:16, no sound (`body/run_videos.sh`), cards set Generating.
 
+- 2026-09-29: all 21 body videos rendered on Kie `kling-3.0` (1,566 credits; B-01a and B-14 over 15 MB → split into 2 parts each, not shrunk) → on the Current board To check (v1 each, `board/video_<BEAT>.json`).
+
 ## Where it stands
-- **Rendering:** the 21 body videos on Kie `kling-3.0` → board To check.
-- **Waiting on the user:** Confirm/Fix the body videos; script flags F2, F5, F6, F7.
+- **Waiting on the user:** Confirm/Fix the 21 body videos; script flags F2, F5, F6, F7.
 - **Next:** `assemble.py` rough cuts and `variants.py` (HK1/2/3 + BODY), CapCut block (step 8), finals on the Final board.
