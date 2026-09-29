@@ -14,7 +14,8 @@ CALL.json describes one paid video call exactly as it will be sent:
     "duration": 8,
     "resolution": "720p", "aspect_ratio": "9:16",
     "start_image": "<approved url or path>",
-    "start_approved": true,            # Manual: the user's Confirm; Automatic: §22V USE + scene contact sheet
+    "start_approved": true,            # Manual: the user's Confirm; Automatic: §22V USE + scene contact sheet (Kling only)
+    "ingredients_approved": true,      # Seedance (V7.68.0): no start frame; every ingredient card confirmed
     "pinned": false, "end_image": null, "end_approved": false,
     "files": ["..."],                  # Seedance ingredients (images + videos + audios), each named in the manifest
     "audios": ["..."],                 # voice masters (dialogue)
@@ -94,8 +95,12 @@ def run(c):
         fn = c.get("fix_note", "")
         check("gen 2 has a diagnosed fix", "→" in fn or "->" in fn, fn or "missing fix_note")
 
-    # 2. Frames
-    check("start image approved", bool(c.get("start_image")) and c.get("start_approved") is True)
+    # 2. Frames — a Seedance shot has no start frame (V7.68.0): every ingredient approved instead
+    if conn == "seedance":
+        check("every ingredient approved", c.get("ingredients_approved") is True, "set ingredients_approved once each ingredient card is confirmed")
+        check("no start frame on Seedance (V7.68.0)", not c.get("start_image"), "Seedance takes ingredients, never a frame")
+    else:
+        check("start image approved", bool(c.get("start_image")) and c.get("start_approved") is True)
     if c.get("pinned"):
         check("pinned: end image approved", bool(c.get("end_image")) and c.get("end_approved") is True)
         check("pinned: runs on Kling first-and-last frame", conn == "kling", "pinned shots never run on Seedance (§24K)")

@@ -154,6 +154,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   middle distance (walkway, concourse, bench, kiosk, open lit shops), the staircase itself clear (`build_plates.py` TAIL now takes a
   people clause). All To check; replaced versions on the Old board.
 
+- 2026-09-29 ~12:40 UTC: user confirmed the location plates, then chose "Confirm all 4, go" for the outfit cards (marked confirmed on
+  their word). **HK-A-SD v1** made on Seedance 2.5 via Kie (task fa158cc0, 11 s 720p, 693 credits; ingredients N sheet, C2 sheet,
+  P1 v5, P0 v3, INFO-WARD-A-N, INFO-WARD-A-C2; no audio ingredient) → To check. Whisper: the only speech is the daughter's
+  "Mama, when did that happen?" 7.62–10.42 s. Cut 7.35–10.95 s → `hooks/sd/daughter_voice_HKA_v1.mp4` = card **VOICE-C2-HKA**
+  (To check), the @audio1 ingredient of HK-B-SD. Hook B runs once HK-A-SD and VOICE-C2-HKA are confirmed (call: `hooks/sd/HK-B.call.json`).
+  preflight.py fixed for V7.68.0: a Seedance call needs `ingredients_approved`, never a start frame (merged to the default branch).
+
 ## Where it stands
 - **Voice stage done** (2026-09-29): VO T2 locked (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`), TH-01…16 (Avatar V render of T2) confirmed.
 - **Step 6 — hooks (Seedance, V7.68 ingredients):** waiting on the user's Confirm of the 4 outfit info cards. Then: Seedance Hook A on Kie
