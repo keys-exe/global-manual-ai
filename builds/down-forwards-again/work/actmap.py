@@ -179,6 +179,29 @@ def angles_row(r):
             why="backlit by the window: the scan / the garden is the subject, the face is not speaking" if r["key_side"] == "back" else ""))
 (HERE / "angles_rows.json").write_text(json.dumps([angles_row(r) for r in R], indent=1))
 for r in R: r["line"] = " ".join(PH.get(p, "?") for p in r["phrases"])
+# Where several B-rolls share one phrase, each card carries only the words it covers (the user, 2026-09-29: "fix the script line cause its not
+# showing the script line for that broll only"). Verbatim spans, in order; together they rebuild the whole phrase (asserted below).
+BLINE = {
+ "BR-01": "A patient of mine. Nine years of knee pain.", "MECH-01": "Bone on bone on the left, the right one following it.",
+ "BR-05a": "Coming down is worse than going up. Going up, your muscles lift you.", "BR-05b": "Coming down, you are catching yourself,",
+ "MECH-05": "and the catch lands on that band.",
+ "BR-09a": "And the list of things she said no to got longer every year. The long walk.", "BR-09b": "The garden.", "BR-09c": "Her family coming to her instead.",
+ "BR-11a": "A sleeve squeezes the whole knee.", "BR-11b": "A hinged brace stops it going sideways, and her knee was never going sideways.",
+ "BR-11c": "A gel sits on the skin. None of them move the load.",
+ "BR-16a": "Thirty four percent less strain. Measured. Three years with orthopedic surgeons.", "BR-16b": "Two hundred thousand people wearing one.",
+ "BR-17a": "Ten seconds to put on. No sores, no rolling down,", "BR-17b": "and nobody can see it.",
+ "BR-19a": "You do not have to take my word for it. One knee only. Leave the other bare.", "BR-19b": "Go to your own stairs and come down forwards. You will know in a minute.",
+ "PR-22a": "Two for one, so you do both knees, which is what she needed. Sixty days, and you keep the straps. From the Stryde site.",
+ "BR-22b": "The copies stretch, and a stretched strap stops holding the spot.",
+}
+for r in R:
+    if r["beat"] in BLINE:
+        r["phrase_line"] = r["line"]; assert BLINE[r["beat"]] in r["line"], r["beat"]; r["line"] = BLINE[r["beat"]]
+_groups = {}
+for r in R:
+    if r["beat"] in BLINE and r["type"] != "TH": _groups.setdefault(r["phrases"][0], []).append(r)
+for ph, rs in _groups.items():
+    assert " ".join(x["line"] for x in rs) == rs[0]["phrase_line"], ("spans do not rebuild", ph)
 (HERE / "actmap.json").write_text(json.dumps(R, indent=1, ensure_ascii=False))
 # markdown tables per act
 cols = "| Beat | Phrase | Type | Subject | Location | Day | Action · pace | Camera · staging · pin | Angle (height · side · scale · fg) — why | Focus | Light key | Key word | Product | Layout · EG | Model | Ledger |"

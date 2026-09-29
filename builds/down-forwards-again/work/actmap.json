@@ -346,7 +346,8 @@
   "model": "NB2",
   "ledger": "—",
   "face": true,
-  "line": "A patient of mine. Nine years of knee pain. Bone on bone on the left, the right one following it."
+  "line": "A patient of mine. Nine years of knee pain.",
+  "phrase_line": "A patient of mine. Nine years of knee pain. Bone on bone on the left, the right one following it."
  },
  {
   "beat": "MECH-01",
@@ -377,7 +378,8 @@
   "model": "NB2",
   "ledger": "—",
   "face": false,
-  "line": "A patient of mine. Nine years of knee pain. Bone on bone on the left, the right one following it."
+  "line": "Bone on bone on the left, the right one following it.",
+  "phrase_line": "A patient of mine. Nine years of knee pain. Bone on bone on the left, the right one following it."
  },
  {
   "beat": "BR-02",
@@ -501,7 +503,8 @@
   "model": "NB2",
   "ledger": "—",
   "face": false,
-  "line": "Coming down is worse than going up. Going up, your muscles lift you. Coming down, you are catching yourself, and the catch lands on that band."
+  "line": "Coming down is worse than going up. Going up, your muscles lift you.",
+  "phrase_line": "Coming down is worse than going up. Going up, your muscles lift you. Coming down, you are catching yourself, and the catch lands on that band."
  },
  {
   "beat": "BR-05b",
@@ -532,7 +535,8 @@
   "model": "NB2",
   "ledger": "—",
   "face": true,
-  "line": "Coming down is worse than going up. Going up, your muscles lift you. Coming down, you are catching yourself, and the catch lands on that band."
+  "line": "Coming down, you are catching yourself,",
+  "phrase_line": "Coming down is worse than going up. Going up, your muscles lift you. Coming down, you are catching yourself, and the catch lands on that band."
  },
  {
   "beat": "MECH-05",
@@ -563,7 +567,8 @@
   "model": "NB2",
   "ledger": "—",
   "face": false,
-  "line": "Coming down is worse than going up. Going up, your muscles lift you. Coming down, you are catching yourself, and the catch lands on that band."
+  "line": "and the catch lands on that band.",
+  "phrase_line": "Coming down is worse than going up. Going up, your muscles lift you. Coming down, you are catching yourself, and the catch lands on that band."
  },
  {
   "beat": "TH-A2",
@@ -722,7 +727,8 @@
   "model": "NB2",
   "ledger": "—",
   "face": false,
-  "line": "And the list of things she said no to got longer every year. The long walk. The garden. Her family coming to her instead."
+  "line": "And the list of things she said no to got longer every year. The long walk.",
+  "phrase_line": "And the list of things she said no to got longer every year. The long walk. The garden. Her family coming to her instead."
  },
  {
   "beat": "BR-09b",
@@ -753,7 +759,8 @@
   "model": "NB2",
   "ledger": "—",
   "face": false,
-  "line": "And the list of things she said no to got longer every year. The long walk. The garden. Her family coming to her instead."
+  "line": "The garden.",
+  "phrase_line": "And the list of things she said no to got longer every year. The long walk. The garden. Her family coming to her instead."
  },
  {
   "beat": "BR-09c",
@@ -784,7 +791,8 @@
   "model": "NB2",
   "ledger": "—",
   "face": true,
-  "line": "And the list of things she said no to got longer every year. The long walk. The garden. Her family coming to her instead."
+  "line": "Her family coming to her instead.",
+  "phrase_line": "And the list of things she said no to got longer every year. The long walk. The garden. Her family coming to her instead."
  },
  {
   "beat": "BR-10",
@@ -881,7 +889,8 @@
   "model": "NB2",
   "ledger": "—",
   "face": false,
-  "line": "A sleeve squeezes the whole knee. A hinged brace stops it going sideways, and her knee was never going sideways. A gel sits on the skin. None of them move the load."
+  "line": "A sleeve squeezes the whole knee.",
+  "phrase_line": "A sleeve squeezes the whole knee. A hinged brace stops it going sideways, and her knee was never going sideways. A gel sits on the skin. None of them move the load."
  },
  {
   "beat": "BR-11b",
@@ -912,7 +921,8 @@
   "model": "NB2",
   "ledger": "—",
   "face": false,
-  "line": "A sleeve squeezes the whole knee. A hinged brace stops it going sideways, and her knee was never going sideways. A gel sits on the skin. None of them move the load."
+  "line": "A hinged brace stops it going sideways, and her knee was never going sideways.",
+  "phrase_line": "A sleeve squeezes the whole knee. A hinged brace stops it going sideways, and her knee was never going sideways. A gel sits on the skin. None of them move the load."
  },
  {
   "beat": "BR-11c",
@@ -943,7 +953,8 @@
   "model": "NB2",
   "ledger": "—",
   "face": false,
-  "line": "A sleeve squeezes the whole knee. A hinged brace stops it going sideways, and her knee was never going sideways. A gel sits on the skin. None of them move the load."
+  "line": "A gel sits on the skin. None of them move the load.",
+  "phrase_line": "A sleeve squeezes the whole knee. A hinged brace stops it going sideways, and her knee was never going sideways. A gel sits on the skin. None of them move the load."
  },
  {
   "beat": "PR-12",
@@ -1133,7 +1144,8 @@
   "model": "NBP",
   "ledger": "—",
   "face": true,
-  "line": "Thirty four percent less strain. Measured. Three years with orthopedic surgeons. Two hundred thousand people wearing one."
+  "line": "Thirty four percent less strain. Measured. Three years with orthopedic surgeons.",
+  "phrase_line": "Thirty four percent less strain. Measured. Three years with orthopedic surgeons. Two hundred thousand people wearing one."
  },
  {
   "beat": "BR-16b",
@@ -1164,7 +1176,8 @@
   "model": "NBP",
   "ledger": "—",
   "face": false,
-  "line": "Thirty four percent less strain. Measured. Three years with orthopedic surgeons. Two hundred thousand people wearing one."
+  "line": "Two hundred thousand people wearing one.",
+  "phrase_line": "Thirty four percent less strain. Measured. Three years with orthopedic surgeons. Two hundred thousand people wearing one."
  },
  {
   "beat": "BR-17a",
@@ -1195,7 +1208,8 @@
   "model": "NBP",
   "ledger": "F6",
   "face": false,
-  "line": "Ten seconds to put on. No sores, no rolling down, and nobody can see it."
+  "line": "Ten seconds to put on. No sores, no rolling down,",
+  "phrase_line": "Ten seconds to put on. No sores, no rolling down, and nobody can see it."
  },
  {
   "beat": "BR-17b",
@@ -1226,7 +1240,8 @@
   "model": "NBP",
   "ledger": "F6",
   "face": false,
-  "line": "Ten seconds to put on. No sores, no rolling down, and nobody can see it."
+  "line": "and nobody can see it.",
+  "phrase_line": "Ten seconds to put on. No sores, no rolling down, and nobody can see it."
  },
  {
   "beat": "BR-19a",
@@ -1257,7 +1272,8 @@
   "model": "NBP",
   "ledger": "F4",
   "face": false,
-  "line": "You do not have to take my word for it. One knee only. Leave the other bare. Go to your own stairs and come down forwards. You will know in a minute."
+  "line": "You do not have to take my word for it. One knee only. Leave the other bare.",
+  "phrase_line": "You do not have to take my word for it. One knee only. Leave the other bare. Go to your own stairs and come down forwards. You will know in a minute."
  },
  {
   "beat": "BR-19b",
@@ -1288,7 +1304,8 @@
   "model": "NBP",
   "ledger": "F4",
   "face": true,
-  "line": "You do not have to take my word for it. One knee only. Leave the other bare. Go to your own stairs and come down forwards. You will know in a minute."
+  "line": "Go to your own stairs and come down forwards. You will know in a minute.",
+  "phrase_line": "You do not have to take my word for it. One knee only. Leave the other bare. Go to your own stairs and come down forwards. You will know in a minute."
  },
  {
   "beat": "BR-20",
@@ -1383,7 +1400,8 @@
   "model": "GPT Sunburst",
   "ledger": "—",
   "face": false,
-  "line": "Two for one, so you do both knees, which is what she needed. Sixty days, and you keep the straps. From the Stryde site. The copies stretch, and a stretched strap stops holding the spot."
+  "line": "Two for one, so you do both knees, which is what she needed. Sixty days, and you keep the straps. From the Stryde site.",
+  "phrase_line": "Two for one, so you do both knees, which is what she needed. Sixty days, and you keep the straps. From the Stryde site. The copies stretch, and a stretched strap stops holding the spot."
  },
  {
   "beat": "BR-22b",
@@ -1414,7 +1432,8 @@
   "model": "NBP",
   "ledger": "F7",
   "face": false,
-  "line": "Two for one, so you do both knees, which is what she needed. Sixty days, and you keep the straps. From the Stryde site. The copies stretch, and a stretched strap stops holding the spot."
+  "line": "The copies stretch, and a stretched strap stops holding the spot.",
+  "phrase_line": "Two for one, so you do both knees, which is what she needed. Sixty days, and you keep the straps. From the Stryde site. The copies stretch, and a stretched strap stops holding the spot."
  },
  {
   "beat": "BR-23",
