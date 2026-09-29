@@ -346,23 +346,28 @@ B["B05"] = (NB2, [], anat(
          "is visible", stack="ANAT-B",
     slots={"[TARGET]": "the cartilage lining the joint surfaces"}).replace("the patellar tendon crisp", "the cartilage crisp"))
 
-# B06 v3 — user Fix 'PUT SOME ARROW POINTING THE patellar tendon, PUT SOME MOVEMENT, MORE DETAILED' (the user's call overrides the
-# no-arrow house default for this beat: one clean arrow, no text). Pip (host cut-out bottom-left): knee upper right.
+# B06 v4 — user Fix 'MORE ARROWS, MORE DETAILS' on "Seventeen times your bodyweight is still arriving, every step, in exactly the
+# same place." (v3: one pointer arrow). Several force arrows now carry the bodyweight down the thigh and converge on the one tendon spot,
+# plus the pointer; more anatomical detail. Still no text. Pip (host cut-out bottom-left): knee upper right.
 B["B06"] = (NB2, [], anat(
     "Seen from a low three-quarter angle, CAUGHT MID-STEP: the leg bending under a landing, the foot just striking the ground below the "
     "frame, the thigh muscles visibly tensed and bulging with the load, the knee flexed — the body's weight coming down through it. In "
-    "rich, high anatomical detail: the thigh muscles with fine fibre striation, the quadriceps tendon sweeping over the kneecap, the "
-    "kneecap with its textured bony surface, the patellar tendon as a banded, fibrous ribbon drawn taut, the infrapatellar fat pad behind "
-    "it, the two crescent menisci and the collateral ligaments at the sides, the cruciate ligaments crossing deep inside, the bone ends "
-    "with fine porous texture — and the cartilage between the bones visibly THIN and worn. ONE CLEAN GRAPHIC ARROW: a single smooth, "
-    "slightly glowing white arrow floats just outside the leg in the dark field and points precisely at the patellar tendon just below the "
-    "kneecap — a crisp medical-illustration pointer, no text, no label, no number on it. THE KNEE SITS IN THE UPPER RIGHT OF THE FRAME; "
-    "the lower-left third of the frame is calm near-black field with nothing in it (a person will be placed there later). "
+    "very rich, high anatomical detail: the four heads of the quadriceps each distinct with fine fibre striation and pearly tendon sheaths, "
+    "the quadriceps tendon sweeping over the kneecap, the kneecap with its textured bony surface and its smooth cartilage underside, the "
+    "patellar tendon as a banded, fibrous ribbon drawn taut with its long fibres visible, the infrapatellar fat pad and the small bursa "
+    "behind it, the joint capsule as a thin translucent sleeve, the two crescent menisci, the collateral ligaments at the sides, the "
+    "cruciate ligaments crossing deep inside, fine blood vessels threading over the bone, the bone ends with porous trabecular texture — "
+    "and the cartilage between the bones visibly THIN and worn. SEVERAL FORCE ARROWS: five or six smooth, slightly glowing white-to-amber "
+    "arrows run DOWN the front and sides of the thigh from the top of the frame, following the line of the leg like the body's weight "
+    "pouring down, all CONVERGING on the one same spot on the patellar tendon just below the kneecap; plus one larger clean white pointer "
+    "arrow outside the leg in the dark field pointing precisely at that spot. The arrows are crisp medical-illustration graphics, no "
+    "text, no label, no number on any of them. THE KNEE SITS IN THE UPPER RIGHT OF THE FRAME; the lower-left third of the frame is calm "
+    "near-black field with nothing in it (a person will be placed there later). "
     + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
     view="viewed from a low three-quarter angle, foreshortened, the knee joint in the upper right of the frame, the lower-left third "
          "empty field")
-    .replace("no arrows, no force arrows, ", "no more than one arrow, no force arrows, ").replace("no diagram markings, ", "").replace("no annotations, ", "")
-    .replace("no individual muscle fibres, ", "")
+    .replace("no arrows, no force arrows, ", "no arrows pointing anywhere but the tendon spot, ").replace("no diagram markings, ", "").replace("no annotations, ", "")
+    .replace("no individual muscle fibres, ", "").replace("no surface veins, ", "")
     .replace("never fine striation and never individual fibres", "fine striation readable"))
 
 # B07 — "That is why it feels like it arrived overnight." Maureen at the top of her stairs, looks down and stops. Face in frame.

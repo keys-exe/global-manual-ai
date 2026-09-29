@@ -229,6 +229,21 @@ B["B04b"] = clip("B04b",
            {"risk": "her face drifts off the sheet", "prevented_by": "face small in a full-figure shot, the wince held, 6 s cap"},
            {"risk": "camera travels with her", "prevented_by": "locked-off tripod clause"}])
 
+# B06-BR image v1 (user "GO CONFIRM"): bus stop, three people of different ages with knee trouble. "It happens to everybody." ≈ 1.4 s → 3 s.
+B["B06-BR"] = clip("B06-BR",
+    "A bus stop on a grey British residential street: a white-haired man in his seventies in a grey anorak sits on the shelter bench with "
+    "his hand on his knee; a Black British woman in her forties in a camel coat with a work bag leans one hand on the shelter post; a young "
+    "South Asian British man in a pale running jacket, black tights and shorts walks along the pavement in the foreground, a hand on his thigh.",
+    "Already moving on the first frame, all three at once and small: the young runner takes two short, uneven steps forward along the "
+    "pavement, favouring his right knee with a slight limp, his hand pressing his thigh; the older man rubs his knee slowly with his hand, "
+    "once; the woman shifts her weight off her left knee onto the post and lets that foot rest. Real time, about three seconds.",
+    "no fourth person, no bus arriving, no one looking at the camera, no falling, no crying, no walking stick, no knee strap, no knee brace, "
+    "no readable signs, no extra legs, no extra hands, no one walking out of frame",
+    1.4, hi=6,
+    risks=[{"risk": "three people moving at once warp or merge", "prevented_by": "one small action each at a countable pace, 3 s, HOLD-C + NEG-WARP-C"},
+           {"risk": "the runner's legs warp mid-limp", "prevented_by": "two short steps only, start frame mid-stride"},
+           {"risk": "camera travels with the runner", "prevented_by": "locked-off tripod clause"}])
+
 START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
          "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
          "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_173257_512cb5a0-c05b-4ab8-af5f-723322275d70.png",
@@ -243,7 +258,8 @@ START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUy
          "B03c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_200831_62aeddb0-e97c-4589-9d43-6d675499545c.png",
          "B04c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_211843_6ae8e4ac-2507-4735-9b38-7f1edc3a2b07.png",
          "B04b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_211843_dc076019-ac3b-475f-a315-f311f4d298f0.png",
-         "B04a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_205729_cf751279-1d57-43d5-9b56-f8b0adbb16f5.png"}
+         "B04a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_205729_cf751279-1d57-43d5-9b56-f8b0adbb16f5.png",
+         "B06-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_215145_b3e86d93-f337-4226-9feb-1ae2a35a886e.png"}
 
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
