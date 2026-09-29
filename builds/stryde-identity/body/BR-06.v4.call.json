@@ -1,0 +1,39 @@
+{
+ "beat": "BR-06",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"pad_inside_one_hand\",\"subject\":\"One hand holding the one stryde strap resting across its open palm and fingers, inside turned up: the mid-grey grooved pad with its smooth comma-shaped raised bump, a chrome slide at each end, the black band running out through both slides into one short closed loop behind the hand, the thumb resting below the strap.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, slight roll. Never travels with the hand. Still drifting at the cut.\",\"framing\":\"Close-up, as in the start frame.\"},\"motion\":\"Almost nothing moves: the one hand holds the same strap steady for the whole clip, with only a tiny slow tilt of a few degrees towards the window so the daylight slides across the pad's grooves and the raised bump. The thumb stays below the strap; no finger moves onto the pad. The band stays one continuous closed loop behind the hand the whole clip; it never opens and no end ever comes loose. The strap never leaves the hand, never jumps, never turns round. Everything keeps the exact form, size and count it has in the start frame; nothing melts, merges or grows. One hand only, five separate fingers. The shell is hard moulded plastic and never bends, flexes or wobbles. Heavy starts and settles slow; nothing stops instantly.\",\"lighting\":\"Exactly as in the start frame: same tone, noise and colour temperature, no grading change.\",\"style\":\"Ordinary everyday phone footage, natural daylight colour, unretouched.\",\"negatives\":\"no cut band, no band ending at the slides, no loose band end, no flapping tail, no open strap, no second hand, no extra hand, no thumb on the pad, no finger over the strap, no morphing, no warping, no melting, no shape shifting, no duplicate objects, no texture swimming, no flickering grooves, no bending, no flipping of the product, no jelly wobble, no rubbery shell, no second strap, no strap appearing, no teleporting, no jump cut, no front face turning to camera, no wordmark, no bigger strap, no phone, no smartphone, no camera in frame, no plastic skin, no extra fingers, no fused fingers, no deformed hand, no CGI look, no text, no music\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "BR-06_fix19.png",
+ "start_approved": true,
+ "fix_note": "Q2 (frame): the strap read as a cut-off piece \u2014 the band stopped at the slides and an end flapped \u2192 new start frame with the band closed into a loop behind the hand (v10, confirmed) + 'band stays a closed loop' in motion + cut-band negatives",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "subject_motion": "in_place",
+ "pace": "named",
+ "risks": [
+  {
+   "risk": "band opens or a cut end flaps",
+   "prevented_by": "closed-loop start frame + motion clause + negatives"
+  },
+  {
+   "risk": "pad grooves swim or the bump morphs",
+   "prevented_by": "tiny tilt only + texture/morph negatives"
+  },
+  {
+   "risk": "product bends or wobbles",
+   "prevented_by": "rigid-shell clause + product negatives"
+  },
+  {
+   "risk": "phone appears in frame",
+   "prevented_by": "no phone named; phone negatives"
+  }
+ ],
+ "user_go": "user 2026-09-29: 'fix those' (video Fix) then 'confirm' (image v10)"
+}

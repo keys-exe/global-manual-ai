@@ -332,3 +332,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
 - Board storage: the old duplicate FINAL-HK1..3 files on the current board were deleted (user OK); the finished ads
   stay on the Final output board.
 - **Next:** the user checks BR-06 v4 and HK1/2/3-T sd4; then the edit is re-run with them (plans, hooks, captions, BGM).
+- BR-06 video v4 Fix (user: "the strap it cutted make a way to fix that"): the band stopped at the slides in the frame →
+  image v10 = edit with the band closed into a loop behind the hand (**confirmed**) → video v5 (Kie Kling, 4s,
+  `BR-06.v4.i2v.json`, preflight PASS), To check.
