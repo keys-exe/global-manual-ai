@@ -140,6 +140,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Kie GPT Image 2 (`kie.py image gpt-image-2-text-to-image --plate`, 2K 16:9; `gpt-image-2-image-to-image` when references are needed —
   both models added to kie.py). P8-MALL remade on it: v3 (task 5b55c74e, 2048×1152, 10 credits) To check; v2 (Higgsfield) moved to Old.
 
+- 2026-09-29 ~10:50 UTC: user "re do all the location plates and use the 16:9 settings" → P0–P7 remade on Kie GPT Image 2 at 16:9
+  (2K, 2048×1152, 10 credits each): P0 v2, P2 v2, P3 v2, P5 v2, P6 v2, P7 v2 text-to-image from their prompts; P4 v4 from the confirmed
+  v3 prompt; P1 v4 image-to-image from the v3 prompt with the new P0 v2 as its reference (same house, same stairs). All To check; every
+  replaced version moved to the Old board. P8-MALL was already 16:9 on GPT Image 2 (v3). Task ids in `plates/jobs.json` (`*.16x9`).
+  Images already confirmed from the old plates (cast, N-VOICE-IMG) are left as they are.
+
 ## Where it stands
 - **Voice stage done** (2026-09-29): VO T2 locked (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`), TH-01…16 (Avatar V render of T2) confirmed.
 - **Step 6 — hooks (Seedance, V7.68 ingredients):** waiting on the user's Confirm of the 4 outfit info cards. Then: Seedance Hook A on Kie
