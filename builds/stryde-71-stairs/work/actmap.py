@@ -61,12 +61,12 @@ TH("TH-01", A, "and said, \"Mama, when did that happen?\"")
 # ---------------- Hook 2 — same lines, different visuals (user 2026-09-28: "2 versions same script different visual")
 A = "Hook 2"
 R("HK-01b", A, "I'm 71, and I take the stairs faster than women half my age.", "stairs", "hook — the result (version B, mall)", "N + one-offs", "L-MALL", "N-D4",
-  "MEDIUM from the concourse: N climbs the mall's open staircase briskly, drawing level with two younger women standing still on the up escalator beside the stairs",
-  "two brisk steps up, drawing level with the escalator riders", "one step per second, brisk", "stairs: camera at the bottom, subject 2 steps, camera still", "worn (under the dress)", "HIDDEN", "NB2",
-  "low", TQ, "clean", "MEDIUM", "low = resolve; she beats the escalator", "deep", "deep", *MALL, "afternoon", "after: Sunday sun", True, ledger="VN04")
+  "MEDIUM from the concourse at the foot of the stairs: N comes DOWN the mall's open staircase facing forwards, briskly, hands free, passing two younger women standing still on the down escalator beside the stairs (user 2026-09-29: Hook 2 goes down the stairs)",
+  "two brisk steps down, facing forwards, drawing level with the escalator riders", "one step per second, brisk", "stairs: camera at the bottom, subject coming down 2 steps, camera still", "worn (under the dress)", "HIDDEN", "NB2",
+  "low", TQ, "clean", "MEDIUM", "low = resolve; she beats the escalator going down", "deep", "deep", *MALL, "afternoon", "after: Sunday sun", True, ledger="VN04")
 R("HK-02b", A, "Last Sunday, my daughter walked behind me the whole way up", "daughter", "hook — the witness (version B, mall)", "N + C2", "L-MALL", "N-D4",
-  "MEDIUM side-on from the concourse: N mid-flight on the mall staircase, C2 one step directly behind her with shopping bags, looking up at her mother",
-  "one step up each, the daughter a beat behind", "one step per second", "stairs: side, waist-up, camera still", "worn (under the dress)", "HIDDEN", "NB2",
+  "MEDIUM side-on from the concourse: N mid-flight coming DOWN the mall staircase facing forwards, C2 one step directly behind (above) her with shopping bags, watching her mother (user 2026-09-29: Hook 2 goes down the stairs)",
+  "one step down each, the daughter a beat behind", "one step per second", "stairs: side, waist-up, camera still", "worn (under the dress)", "HIDDEN", "NB2",
   "eye", PR, "clean", "MEDIUM", "side-on = we watch the gap between them", "deep", "deep", *MALL, "afternoon", "after: Sunday sun", True)
 
 

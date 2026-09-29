@@ -120,22 +120,22 @@ def hk_02a():
 BEATS["HK-02a"] = hk_02a
 
 MALL_PLATE = ("THE MALL STAIRCASE exactly as in the attached location photo: the wide straight open staircase of pale terrazzo steps with brushed-steel handrails and glass balustrade panels "
-              "rising to the upper-level walkway, the up escalator running right beside it, shopfronts on both levels with plain coloured panels and no readable lettering, the atrium skylight above")
+              "rising to the upper-level walkway, the escalator running right beside it (running down in this shot), shopfronts on both levels with plain coloured panels and no readable lettering, the atrium skylight above")
 MALL_Q = "soft Sunday-afternoon daylight from the atrium skylight, warm and clear — the after state, never moody"
 
 def hk_01b():
     r = ROWS["HK-01b"]; n = SUBJ["N"]
     body = [S("CAM-LOCK"),
-     angle_line(r, "the woman climbing the mall staircase"), focus_line(r, "her"),
+     angle_line(r, "the woman coming down the mall staircase"), focus_line(r, "her"),
      MALL_PLATE + " — seen from the ground-floor concourse at the foot of the stairs, a little to the escalator side.",
      S("SUBJ-REF").replace("[two or three named markers: hair, build, one distinctive feature]", n["markers"]),
-     "Caught mid-climb on a Sunday afternoon after church: she is halfway up the mall staircase, taking the stairs briskly — her right foot planted on the step above, her weight already moving up onto it, her left heel lifting off the step below, "
-     "her right hand free above the steel handrail, not touching it, a small shopping bag in her left hand, head up, a small proud smile. Right beside the stairs, on the up escalator, two younger women in their thirties are standing still, riding it, "
-     "one holding the escalator's rubber handrail and looking at her phone — the woman on the stairs is drawing level with them and about to pass them. All three whole in the frame.",
+     "Caught mid-descent on a Sunday afternoon after church: she is halfway DOWN the mall staircase, coming down towards the camera facing forwards, taking the stairs briskly — her right foot planted on the step below, her weight already moving down onto it, "
+     "her left foot lifting off the step above, her right hand free above the steel handrail, not touching it, a small shopping bag in her left hand, head up, eyes ahead, a small proud smile. Right beside the stairs, on the down escalator, two younger women in their thirties are standing still, riding it down, "
+     "one holding the escalator's rubber handrail and looking at her phone — the woman on the stairs is drawing level with them and about to pass them on the way down. All three whole in the frame.",
      "She is wearing " + WARD["N-D4"] + ". The two younger women (one-off extras, thirties) wear casual weekend clothes — jeans, a denim jacket, a cream knit top — and trainers.",
      "Real unretouched skin: " + n["skin"] + ".",
      light_line(r, "the three women and the staircase", MALL_Q),
-     *tail("no fourth person close to camera, no crowd, no product visible, no knee strap visible, no walking stick, no running, no one coming down the stairs, no different mall from the location photo, no readable sign, no text, no logos, no church hat")]
+     *tail("no fourth person close to camera, no crowd, no product visible, no knee strap visible, no walking stick, no running, no one climbing up the stairs, no one going down backwards, no different mall from the location photo, no readable sign, no text, no logos, no church hat")]
     refs = [("N sheet", JOB["N"]), ("P8-MALL plate", JOB["P8"])]
     return dict(model="nano_banana_2", refs=refs, body=body)
 BEATS["HK-01b"] = hk_01b
@@ -145,14 +145,14 @@ def hk_02b():
     body = [S("CAM-LOCK"),
      angle_line(r, "the mother and daughter on the mall staircase"), focus_line(r, "the mother"),
      MALL_PLATE + " — seen side-on from the ground-floor concourse at the height of the middle of the flight, the staircase running diagonally across the frame, the glass balustrade clean in front of them.",
-     "TWO PEOPLE, each exactly as in their attached reference sheet. THE MOTHER, ahead and higher: " + n["markers"] + ". THE DAUGHTER, one step directly behind and below her on the same stairs: " + d["markers"] + ". Unchanged in face, age and build.",
-     "Caught mid-climb, in profile: the mother is climbing briskly, her front foot planted on the next step and her weight moving onto it, one hand only brushing the steel handrail, a small shopping bag in the other, face in profile, a small smile. "
-     "Directly behind her, one step lower, the daughter follows with two big shopping bags, one hand reaching for the handrail, her body leaning into the climb, her face turned up toward her mother, eyebrows raised in surprise, a little out of breath. "
-     "Waist-up to knees, both women whole in the frame, one behind the other.",
+     "TWO PEOPLE, each exactly as in their attached reference sheet. THE MOTHER, ahead and lower: " + n["markers"] + ". THE DAUGHTER, one step directly behind and above her on the same stairs: " + d["markers"] + ". Unchanged in face, age and build.",
+     "Caught mid-descent, in profile: the mother is coming DOWN the stairs facing forwards, briskly, her front foot planted on the step below and her weight moving down onto it, one hand only brushing the steel handrail, a small shopping bag in the other, face in profile, a small smile. "
+     "Directly behind her, one step higher, the daughter follows her down with two big shopping bags, one hand on the handrail, stepping carefully, her face turned toward her mother, eyebrows raised in surprise. "
+     "Waist-up to knees, both women whole in the frame, one behind the other, both facing down the stairs.",
      "THE MOTHER is wearing " + WARD["N-D4"] + ". THE DAUGHTER is wearing " + WARD["C2"] + ".",
      "Real unretouched skin: the mother " + n["skin"] + "; the daughter " + d["skin"] + ".",
      light_line(r, "the two women and the staircase", MALL_Q),
-     *tail("no third person close to camera, no crowd, no product visible, no knee strap visible, no walking stick, no daughter beside or ahead of her mother, no different mall from the location photo, no readable sign, no text, no logos, no home staircase")]
+     *tail("no third person close to camera, no crowd, no product visible, no knee strap visible, no walking stick, no daughter beside or ahead of her mother, no one climbing up, no one facing up the stairs, no one going down backwards, no different mall from the location photo, no readable sign, no text, no logos, no home staircase")]
     refs = [("N sheet", JOB["N"]), ("C2 sheet", JOB["C2"]), ("P8-MALL plate", JOB["P8"])]
     return dict(model="nano_banana_2", refs=refs, body=body)
 BEATS["HK-02b"] = hk_02b
