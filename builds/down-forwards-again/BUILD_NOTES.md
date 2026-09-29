@@ -50,5 +50,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Planned cut: `trim.py` natural pace (0.35s sentence / 0.2s comma kept) with `--post 0.4` so every part ends in silence (test: −87 dB), not the house cut.
   **PAUSED on the user's word: "ill make a pr wait for it".** The HeyGen render `c48a6bc2…` (fast T1.ALL audio) is superseded once the new VO is cut.
 
+- 2026-09-29 ~05:30 UTC: user "Ive added the new trim. Proceed with the vo again". Merged the default branch (V7.66.0, PR #36: no tight cuts —
+  vo_trim −50 dB + 80 ms release, 60 ms fade, natural pauses 0.45/0.20s kept, pace gate ≤210 wpm). §22U step 4 still says ×1.2, so the ×1.0
+  re-clone is NOT standard → the user picks. Re-cut all 8 whole takes (vo/cut766/): Down T1–T4 = 201/204/200/206 wpm (T4 FAIL: a breath left),
+  Down-Doctor T1–T4 = 190/192/192/192 wpm, all others PASS, every tail −54…−59 dB. Board: VO-T1…T4-ALL (Down), VO-T5…T8-ALL (Down-Doctor), To check;
+  the 16 old house-cut part cards + old T1.ALL moved to the Old board.
+
 ## Where it stands
-- **Waiting on the user's PR.** Then: natural-pace cut of the new takes → board → HeyGen one-go render from the new whole take → cut per hook → board.
+- **Waiting on the user:** which voice to lock — Down (×1.2, standard) or Down-Doctor (×1.0, slower, not in §22U) — and which take.
+- **Then:** HeyGen Avatar V one go from the chosen whole take → cut into TH-HK1/2/3+BODY → trim.py (V7.66.0) → board. Then hooks (step 6).
+- Old HeyGen render `c48a6bc2…` (old fast cut) is superseded, not used.
