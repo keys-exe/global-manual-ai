@@ -8,6 +8,7 @@ Needs KIE_API_KEY in the environment (an environment secret; never pasted in cha
   kie.py image  MODEL --prompt-file P [--ref URL ...] [--plate] [--out FILE]
         --plate: a location or property plate, made at 16:9 (V7.68.1); everything else 9:16
         MODEL: nano-banana-pro | nano-banana-2 |
+               gpt-image-2-text-to-image | gpt-image-2-image-to-image (GPT Image 2) |
                gpt-image-2-5-sunburst-text-to-image | gpt-image-2-5-sunburst-image-to-image
   kie.py seedance --prompt-file P --ref-image URL ... [--ref-audio URL ...] [--ref-video URL ...]
         [--duration 10] [--no-audio] [--out FILE]
@@ -30,6 +31,8 @@ UPLOAD = "https://kieai.redpandaai.co/api/file-stream-upload"
 IMAGE_MODELS = {
     "nano-banana-pro": ("image_input", 8),
     "nano-banana-2": ("image_input", 14),
+    "gpt-image-2-text-to-image": (None, 0),
+    "gpt-image-2-image-to-image": ("input_urls", 16),
     "gpt-image-2-5-sunburst-text-to-image": (None, 0),
     "gpt-image-2-5-sunburst-image-to-image": ("input_urls", 16),
 }
