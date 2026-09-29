@@ -486,12 +486,20 @@ NEG_FAKE_HERO = (
 # the back of the silicone pad") ------------------------------------------------
 # The script line about the pad is covered by the BACK of the shell -- the inner
 # pad turned to the lens -- never by the front. Then the mechanism shot.
+# V7.49.32 (user, 2026-09-29): the inside is NOT plain black. Real photo + footage of the inside:
+# stryde_refs/back_real.jpg, back_real_footage.mp4 (the truth); back_pad.webp (a render the user sent first) is
+# retired — its straight centre ridge is wrong. back_real.jpg replaces back.webp for every view of the inside.
+INNER_PAD = (
+"The inside of the shell carries a mid-grey pad inset in the shell's own peaked outline, a thin rim of the "
+"black shell showing round it: fine parallel grooves run in curved rows across the whole pad, and one smooth, "
+"rounded raised bump rises out of the middle of the pad — a curved, comma-like shape that starts under the "
+"centre notch and curves down towards the lower edge, about a thumb's width across — exactly as in the attached "
+"real photo of the inside (back_real). A chrome slide sits at each end of the shell. No wordmark on this side.")
+
 PAD_BACK_SHOT = (
 "The strap turned round so the back of the shell faces the camera: the inside of the shell, the pad that "
-"sits against the skin, fills the frame -- a plain, smooth, matte-black pad following the shell's curve, "
-"with no markings, no texture pattern and no second colour -- the two peaks rising along its top edge, a "
-"chrome slide at each end, the band running away from the slides behind it. No wordmark is visible from "
-"this side.")
+"sits against the skin, fills the frame: " + INNER_PAD[0].lower() + INNER_PAD[1:] + " The two peaks rise "
+"along its top edge and the band runs away from the slides behind it.")
 
 # --- anatomy look samples (V7.49.30) -----------------------------------------
 # One sample per Standards density (Appendix A ANAT-A..D) on this knee, all in the
@@ -519,12 +527,8 @@ ANAT_A_POINT_TIGHT = (
 "never spreading down onto the shin bone or across the joint; the bones and muscles around it stay calm.")
 
 # --- the inner pad (V7.49.23) -----------------------------------------------
-# Read off back.webp. Used on held beats and any view of the inside of the shell.
+# Read off back_pad.webp. Used on held beats and any view of the inside of the shell.
 # Never the word "silicone" (it renders the soft glossy fake, §10).
-INNER_PAD = (
-"The inside of the shell is a plain, smooth, matte-black pad following the shell's curve, with no markings, "
-"no texture pattern and no second colour.")
-
 # --- held beats (V7.49.23, user: "there are so many ways to hold it") -------
 # NOT a locked pose. Any of these grips, chosen per beat and varied across a
 # build; every one keeps the three fixed rules: the hand is on the pad or the

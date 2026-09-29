@@ -216,7 +216,7 @@ A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and
 
 **Held is not locked** (user): there are many right ways to hold it. Choose from `HELD_GRIPS` per beat — bottom-edge pinch, open palm, fingertips behind, turned through the light, two-hand presentation — and vary them across a build. Fixed rules: on the pad or the shell's edge; never on the band, never on the slides, never across the wordmark; peaks and notch visible. I2V negatives: `NEG-HELD-P`.
 
-**The inner pad** (the user's "silicone pad"): plain, smooth, matte black, no markings (`INNER_PAD`, read off `back.webp`). Prompts say "the pad", never "silicone".
+**The inner pad** (the user's "silicone pad"): **corrected V7.49.32 (user, 2026-09-29, real photo and footage `stryde_refs/back_real.jpg`, `back_real_footage.mp4`)** — a mid-grey pad inset in the shell's peaked outline with a thin black rim, fine parallel grooves in curved rows across it, and one smooth raised comma-shaped bump from under the centre notch curving down towards the lower edge (`INNER_PAD`, read off `back_real.jpg`). The old "plain, smooth, matte black" reading of `back.webp` and the render `back_pad.webp` (straight ridge) are retired. Every view of the inside attaches `back_real.jpg`. Prompts say "the pad", never "silicone".
 
 **Standing negatives from observed failures** (`NEG-OBSERVED`, dated in `NEG_OBSERVED_LOG`): V-shaped notch · crown or horn peaks · deep U or slab shell · slide on the face or on the band · invented slide frame · sideways chevrons · band out of the shell's bottom edge · product tipped · watch-strap band · buckle-shaped keeper. I2V only.
 

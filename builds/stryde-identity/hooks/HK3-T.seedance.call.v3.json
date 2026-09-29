@@ -1,0 +1,43 @@
+{
+ "beat": "HK3-T",
+ "connector": "seedance",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "@image1 is the opening frame: the clip opens on exactly this framing, light and camera position. @image2 and @image3 are the strap, one object seen from the front and from behind, exactly as shown: a rigid matte-black shell with two peaks on top, a chrome slide at each end, a black woven band. The back of the shell, facing the skin, is a mid-grey pad with fine grooves in curved rows and one smooth, raised, comma-shaped bump in its middle, exactly as in @image3, a real photo of the inside. @video1 is the movement to copy: the same hand movement, pace and camera as in @video1.\n\nThe grandmother's hands, with her rings and cardigan cuffs, hold the strap out to the camera, with the same hand movement as in @video1. Her face stays cropped at the chin. The child's scooter stays leaning on the wall behind her. The shell is rigid and never bends. No text, no music, no speech.\n",
+ "duration": 5,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": "HK3-T_v1.png",
+ "start_approved": true,
+ "pinned": false,
+ "files": [
+  "x",
+  "x",
+  "x",
+  "x"
+ ],
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "subject_motion": "in_place",
+ "pace": "unhurried",
+ "risks": [
+  {
+   "risk": "strap bends or changes shape",
+   "prevented_by": "product refs @image2/@image3 + rigid shell clause"
+  },
+  {
+   "risk": "opening re-composed / different person or place",
+   "prevented_by": "@image1 as the opening frame"
+  },
+  {
+   "risk": "over-specified motion distorts",
+   "prevented_by": "one plain action at an easy pace (user: simple prompts)"
+  },
+  {
+   "risk": "back renders plain black (old reference)",
+   "prevented_by": "@image3 = back_pad.webp + pad described in the prompt"
+  }
+ ],
+ "fix_note": "Q1 (reference): the pad's raised part came from a render with a straight ridge \u2192 @image3 = back_real.jpg, the user's real photo (comma-shaped bump), and the pad described from it",
+ "user_go": "user 2026-09-29: real photo/footage of the inside \u2014 'Use as the reference' (regenerate BR-06 and the hook top videos)"
+}

@@ -1,0 +1,43 @@
+{
+ "beat": "HK2-T",
+ "connector": "seedance",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "@image1 is the opening frame: the clip opens on exactly this framing, light and camera position. @image2 and @image3 are the strap, one object seen from the front and from behind, exactly as shown: a rigid matte-black shell with two peaks on top, a chrome slide at each end, a black woven band. The back of the shell, facing the skin, is a mid-grey pad with fine curved ridges and a smooth raised ridge along its middle, exactly as in @image3. @video1 is the movement to copy: the same hand movement, pace and camera as in @video1.\n\nThe man holds the strap out towards the camera in his gloved hands and turns it round to show the back of it, just as in @video1. The shell is rigid and never bends. No text, no music, no speech.\n",
+ "duration": 5,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": "HK2-T_v1.png",
+ "start_approved": true,
+ "pinned": false,
+ "files": [
+  "x",
+  "x",
+  "x",
+  "x"
+ ],
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "subject_motion": "in_place",
+ "pace": "unhurried",
+ "risks": [
+  {
+   "risk": "strap bends or changes shape",
+   "prevented_by": "product refs @image2/@image3 + rigid shell clause"
+  },
+  {
+   "risk": "opening re-composed / different person or place",
+   "prevented_by": "@image1 as the opening frame"
+  },
+  {
+   "risk": "over-specified motion distorts",
+   "prevented_by": "one plain action at an easy pace (user: simple prompts)"
+  },
+  {
+   "risk": "back renders plain black (old reference)",
+   "prevented_by": "@image3 = back_pad.webp + pad described in the prompt"
+  }
+ ],
+ "fix_note": "Q1 (reference): the back renders plain black because @image3 was the old back.webp \u2192 @image3 = back_pad.webp (grey ridged pad, user 2026-09-29) and the pad named in the prompt",
+ "user_go": "user: 'can we redo the parts that has the inner of the strap'"
+}

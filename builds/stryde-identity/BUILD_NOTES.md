@@ -314,3 +314,21 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3) · `S
   (`level_bed.py`, gain −7.5…+2 dB), mixed at the louder setting (music −5 dB, ducked ~8 dB), −14.3 LUFS / −1 dBTP.
 - Storage: with the user's OK ("Delete v3 + v4") the v3 and v4 video files of all three ads were deleted (33 assets).
 - Final board FINAL-HK1..3 = v7, To check (v5/v6 = the first, sad investigation track, kept); MUS-BGM v4 = the new bed alone.
+
+## 2026-09-29 — The inside of the strap (user: new back photo, then real photo + footage)
+- User: "this is the back of the strap, can we redo the parts that have the inner of the strap" (a render,
+  `products/stryde/stryde_refs/back_pad.webp`), then "this is the real life footage" (`back_real.jpg`,
+  `back_real_footage.mp4`) → chose "use as the reference". The inside is a **mid-grey grooved pad with one smooth
+  comma-shaped raised bump** (not plain black, not a straight ridge). Product Sheet `INNER_PAD` / `PAD_BACK_SHOT` and §15
+  corrected (V7.49.32); `back_real.jpg` is the back reference for every view of the inside (Higgsfield media 22b9a20f).
+- Beats that show the inside: **BR-06** and the hook top shots **HK1-T / HK2-T / HK3-T** (they turn the strap round).
+  The anatomy beats show the knee from the front (no inner face).
+- BR-06 image: fix14 (render ref) → fix15 (real ref; user: "too big") → fix16 (one hand, as in the real photo; user:
+  "remove that extra hand and don't cover the strap") → fix17 edit (one hand) → fix18 edit (thumb below the strap) —
+  **confirmed by the user** ("that is good confirmed that proceed"). Video v4: Kie Kling 3.0 omni, 4s, §35 JSON
+  (`BR-06.v3.i2v.json`, preflight PASS) → board, To check.
+- Hook top videos, Seedance 2.5 via Kie (same setup, @video1 = the user's HK1-T clip): sd3 with the render back ref
+  (superseded), sd4 with `back_real.jpg` (current) — all on the board, To check. ~2,300 Kie credits for the six.
+- Board storage: the old duplicate FINAL-HK1..3 files on the current board were deleted (user OK); the finished ads
+  stay on the Final output board.
+- **Next:** the user checks BR-06 v4 and HK1/2/3-T sd4; then the edit is re-run with them (plans, hooks, captions, BGM).
