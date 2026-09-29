@@ -174,4 +174,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   hands free). Act map + STEP4_5 tables + docs/actmap (Plan + Current) updated; angles.py PASS; wardrobe audits PASS. Fixes: BR-04 v5 (finger on the midline,
   right under the kneecap), BR-16a v3 (strap held low by the knee model, waist-up), BR-19b v2 + BR-23 v2 (at the top of the flight stepping down, hands free),
   BR-22b v2 (undistorted copy). `acts/build_fix_r3.py`. Replaced versions moved to Old.
+- **Round 4 (2026-09-29 ~18:10 UTC), all on nano_banana_pro:** BR-04 v6 (head-on close-up, finger straight down onto the tendon midline), BR-14b v2 (slim
+  strap, ~3 cm tall), BR-19b v3 (strapped LEFT leg straight on the top step, RIGHT foot stepping down), BR-22b v3 (front view of her legs, the copy on the
+  LEFT knee slipped a finger's width), MECH-14 v4 (strap flat in her palm, back up; pad described shape by shape — hourglass/peanut outline with a deep curve
+  on one side, contour grooves, dog-bone rib), BR-22a2 v2 (product close-up of the two straps, no clutter). `acts/build_fix_r4.py`. Replaced versions moved
+  to Old. **BR-22a3 ("From the Stryde site.") was deleted from the board (by the user) — not recreated; the line has no card until the user says where it goes.**
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
