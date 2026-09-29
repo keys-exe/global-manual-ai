@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.68.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.68.1) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -35,7 +35,7 @@ Where a script line contradicts a product spec or visual standard, the render fo
 
 **Three artefacts.** Standards (global, product-agnostic) · Product Sheet (one per product, Appendix B) · Build Sheet (one per build, Appendix C). **Nothing that names a product, brand, body region, character or location enters the Standards.** Sheets fill slots the Standards define; they never invent or override a rule.
 
-**Modes (§1–§2, §18A).** Five registers, never mixed in one shot: Mode 1 Photorealistic (iPhone 17 Pro Max, always — 1x main lens or the front camera for selfies; never 0.5x, telephoto, Portrait/Cinematic mode, flash, or night mode in daylight: §22A phone settings, `NEG-PHONE`) · Mode 2 3D Pixar · Mode 3 Claymation · Mode 4 Realistic Film (explicit instruction only) · Mode 5 Pixar Film (explicit instruction only). Mode is locked at §18 step 2 in the Mode & Model Lock. **9:16 vertical is locked for every mode and every build.**
+**Modes (§1–§2, §18A).** Five registers, never mixed in one shot: Mode 1 Photorealistic (iPhone 17 Pro Max, always — 1x main lens or the front camera for selfies; never 0.5x, telephoto, Portrait/Cinematic mode, flash, or night mode in daylight: §22A phone settings, `NEG-PHONE`) · Mode 2 3D Pixar · Mode 3 Claymation · Mode 4 Realistic Film (explicit instruction only) · Mode 5 Pixar Film (explicit instruction only). Mode is locked at §18 step 2 in the Mode & Model Lock. **9:16 vertical is locked for every mode and every build — except location and property plates, generated at 16:9** (V7.68.1: a plate is a wide reference of the whole room; everything made against it stays 9:16; Kie fallback `kie.py image --plate`).
 
 **Formats (§3, §3A, §3B).** Identify the build type first; if unclear, ask. Default Short VSL or UGC Ad. Long VSL, Narrated B-roll and AI Drama VSL only on explicit request.
 
@@ -332,6 +332,8 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 **PENDING AMENDMENTS**
 
 **OPEN DECISIONS**
+
+**CHANGELOG — V7.68.0 → V7.68.1 *(cut authorised)***
 
 **CHANGELOG — V7.67.0 → V7.68.0 *(cut authorised)***
 
