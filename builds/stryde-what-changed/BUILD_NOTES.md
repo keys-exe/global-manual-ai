@@ -112,4 +112,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   thinning (no glow), B06 ANAT-A pip (knee upper right, lower-left clear for the host cut-out), B07 Maureen pausing at the top of the stairs,
   B08a Maureen picking up her keys, B08b over Desmond's shoulder straightening a team photo, B08c Desmond rising off the bottom stair.
   Anatomy helper now takes the stack (ANAT-A/B/C) and slot overrides; eye-level angle lines drop the "not eye-level" clause.
-- **Where it stands:** waiting on the user's check of the 12 Act 1 images; then their clips (E6 from the BODY cuts), then Act 2.
+- User (2026-09-29): "LET'S DO IT ONE BROLL AT A TIME, AND PUT BROLL FOR NEEDED SCRIPT LINE. BROLL FOR EVERY LINE."
+  → (1) from now on one B-roll at a time, in cut order: its image → the user's check → its clip → the user's check → the next beat.
+  The 12 Act 1 images already made stay on the board and are checked in that order. (2) Every script line gets its own B-roll:
+  the 14 body talking-head lines each get a `-BR` shot (B01-BR, B03-BR, B06-BR, B07-BR, B08-BR, B08-BR2, B09-BR, B11-BR, B15-BR,
+  B18-BR, B19-BR, B19-BR2, B21-BR, B22-BR), placed right after their line in `BODY`; the host's take stays on the timeline
+  under it. Act map now 75 rows, 58 B-roll; angles.py PASS on all three variants; `docs/actmap` updated on the Plan and Current
+  boards; 14 planned cards added. Hooks unchanged (VN01: the host on camera for each hook's last line — the script's own note).
+  Build-specific, not a system change.
+- **Where it stands:** B01a image (first body shot) waiting on the user's check; then its clip; then B01b, and so on in cut order.

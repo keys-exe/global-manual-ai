@@ -132,6 +132,36 @@
   "subject": "H"
  },
  {
+  "beat": "B01-BR",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R2",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = his own finger finding it",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D-D1",
+  "face": false,
+  "light": {
+   "source": "Desmond's stair window, grey morning",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
   "beat": "B02",
   "group": "Act 1",
   "type": "BR",
@@ -166,6 +196,36 @@
   "group": "Act 1",
   "type": "TH",
   "subject": "H"
+ },
+ {
+  "beat": "B03-BR",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "hands",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = the album laid open, looked back on",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "K-D1",
+  "face": false,
+  "light": {
+   "source": "kitchen window over the sink",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: cool daylight",
+   "kelvin": 6500,
+   "why": ""
+  }
  },
  {
   "beat": "B04a",
@@ -294,6 +354,36 @@
   "subject": "H"
  },
  {
+  "beat": "B06-BR",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "extras",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "side-on = everyone passing, no one singled out",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "M-D1",
+  "face": false,
+  "light": {
+   "source": "open overcast sky, morning",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
   "beat": "B06",
   "group": "Act 1",
   "type": "BR",
@@ -330,6 +420,36 @@
   "subject": "H"
  },
  {
+  "beat": "B07-BR",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R1",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = the worn sole laid bare",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "M-D1",
+  "face": false,
+  "light": {
+   "source": "Maureen's landing window, grey morning",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
   "beat": "B07",
   "group": "Act 1",
   "type": "BR",
@@ -364,6 +484,36 @@
   "group": "Act 1",
   "type": "TH",
   "subject": "H"
+ },
+ {
+  "beat": "B08-BR",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R1",
+  "height": "eye",
+  "side": "behind",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "from behind = her ordinary day, unobserved",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "M-D1",
+  "face": false,
+  "light": {
+   "source": "Maureen's landing window, grey morning",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 6500,
+   "why": ""
+  }
  },
  {
   "beat": "B08a",
@@ -432,6 +582,36 @@
   "subject": "H"
  },
  {
+  "beat": "B08-BR2",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R2",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = the old boots looked down on, put away",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D-D1",
+  "face": false,
+  "light": {
+   "source": "Desmond's stair window, grey morning",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
   "beat": "B08c",
   "group": "Act 1",
   "type": "BR",
@@ -466,6 +646,36 @@
   "group": "Act 2",
   "type": "TH",
   "subject": "H"
+ },
+ {
+  "beat": "B09-BR",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "hands",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high = everything tried, laid out",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "K-D1",
+  "face": false,
+  "light": {
+   "source": "kitchen window over the sink",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: cool daylight",
+   "kelvin": 6500,
+   "why": ""
+  }
  },
  {
   "beat": "B10a",
@@ -592,6 +802,36 @@
   "group": "Act 2",
   "type": "TH",
   "subject": "H"
+ },
+ {
+  "beat": "B11-BR",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "ANAT",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "front = the sleeve round everything, the spot still lit",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "\u2014",
+  "face": false,
+  "light": {
+   "source": "anatomical register (\u00a712A)",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "mechanism",
+   "kelvin": 5600,
+   "why": ""
+  }
  },
  {
   "beat": "B12",
@@ -748,6 +988,36 @@
   "group": "Act 3",
   "type": "TH",
   "subject": "H"
+ },
+ {
+  "beat": "B15-BR",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "R1",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "high = her own view, measuring",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "M-D2",
+  "face": false,
+  "light": {
+   "source": "Maureen's front-door glass, afternoon sun",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "kelvin": 5600,
+   "why": ""
+  }
  },
  {
   "beat": "B15",
@@ -966,6 +1236,36 @@
   "subject": "H"
  },
  {
+  "beat": "B18-BR",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "hands",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = the letters laid out, read",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "K-D1",
+  "face": false,
+  "light": {
+   "source": "kitchen window over the sink",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "everyday: cool daylight",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
   "beat": "B18a",
   "group": "Act 4",
   "type": "BR",
@@ -1030,6 +1330,36 @@
   "group": "Act 4",
   "type": "TH",
   "subject": "H"
+ },
+ {
+  "beat": "B19-BR",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "R1",
+  "height": "eye",
+  "side": "behind",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "from behind = her test, her stairs",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "M-D2",
+  "face": false,
+  "light": {
+   "source": "Maureen's front-door glass, afternoon sun",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "kelvin": 5600,
+   "why": ""
+  }
  },
  {
   "beat": "B19a",
@@ -1098,6 +1428,36 @@
   "subject": "H"
  },
  {
+  "beat": "B19-BR2",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "R1",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile = the hand leaving the rail",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "M-D2",
+  "face": false,
+  "light": {
+   "source": "Maureen's front-door glass, afternoon sun",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
   "beat": "B20",
   "group": "Act 4",
   "type": "BR",
@@ -1132,6 +1492,36 @@
   "group": "Act 4",
   "type": "TH",
   "subject": "H"
+ },
+ {
+  "beat": "B21-BR",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "R2",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = his own view, rubbing the wrong place",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D-D1",
+  "face": false,
+  "light": {
+   "source": "Desmond's stair window, grey morning",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 6500,
+   "why": ""
+  }
  },
  {
   "beat": "B21",
@@ -1198,6 +1588,36 @@
   "group": "Act 4",
   "type": "TH",
   "subject": "H"
+ },
+ {
+  "beat": "B22-BR",
+  "group": "Act 4",
+  "type": "BR",
+  "subject": "R1",
+  "height": "high",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = looking down at what arrived",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "M-D2",
+  "face": false,
+  "light": {
+   "source": "Maureen's front-door glass, afternoon sun",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "kelvin": 5600,
+   "why": ""
+  }
  },
  {
   "beat": "B22c",
