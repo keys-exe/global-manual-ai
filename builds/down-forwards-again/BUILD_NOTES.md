@@ -143,9 +143,16 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 ## Where it stands
 - Hooks done: images, videos and cuts v4 confirmed by the user (2026-09-29 "all confirmed").
-- **Step 7, Act 1 images — waiting on the user (2026-09-29 ~15:00 UTC):** `acts/build_act1.py` → 8 frames, one render each on Higgsfield
-  (nano_banana_2, 9:16, 2k): BR-01, BR-02, BR-04, BR-05a, BR-05b (refs: house plates + P-PATIENT), MECH-01 (ANAT-B, both knees, the
-  condition), MECH-03 (ANAT-A lateral, the tendon hot spot), MECH-05 (ANAT-A stepping down, rest). All on the Current board as To check
-  (v1, jobs + board asset ids in `acts/renders.json`; PNGs stay out of git, the board holds them).
-- **Then:** Act 1 videos after the user's Confirm; Acts 2–5 the same way; cuts placed by hand from word + loudness timings (the user's
-  timing notes, 2026-09-29); finished variants (HKn + the body); CapCut block.
+- **Step 7 — all body images on the board, waiting on the user (2026-09-29 ~15:50 UTC).** The user: "generate all the images so i can check all of them",
+  then, mid-run: "fix all the images cause the wardrobe map is just the same wardrobe all over even though its a different day/event".
+  - **Wardrobe v2** (`work/wardrobe.py`, STEP4_5.md §Wardrobe map, `docs/wardrobe` on Plan + Current): one outfit per story day — 15 body days for P
+    (P-B1…P-B9 problem, P-A1…P-A6 after), §14A audits PASS, signature item = her reading glasses on a beaded cord. Hooks keep P-D1/P-D2 (confirmed renders,
+    untouched); the doctor keeps D-D1. `act` map `day` = light state only.
+  - Every beat that shows her clothes was re-rendered with its day's outfit (one render each, Higgsfield nano_banana_2 / nano_banana_pro, gpt_image_2_5 for PR-22a).
+    Act 1 BR-01/04/05a/05b and Acts 2–3 BR-06…BR-17b had an old-wardrobe v1 → moved to the Old board (Act 1 copies server-side then deleted from Current;
+    the 13 Acts 2–3 v1s went straight to Old — they were replaced before review). BR-19a/b, PR-22a, BR-23 were first rendered with v2 wardrobe.
+    Unchanged beats (no wardrobe): BR-02, MECH-01/03/05, BR-09a, MECH-14, BR-15, BR-16a/b, BR-20, BR-22b.
+  - All 32 body images are To check on the Current board (Act 1: 8, Act 2: 7, Act 3: 7, Act 4: 7, Act 5: 3). Jobs, urls and asset ids: `acts/renders.json`,
+    `acts/acts2_5_v1_renders.json`, `acts/v2_renders.json`; prompts `acts/<beat>.image[.v2].prompt.txt` from `acts/build_act1.py` / `acts/build_acts2_5.py`.
+  - BR-07's first v2 job failed on Higgsfield's side (no render); resent once, same prompt.
+- **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

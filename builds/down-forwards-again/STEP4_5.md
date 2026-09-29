@@ -185,16 +185,33 @@ Columns condensed from E4. `duration` = `pending-master` on every B-roll row (E6
 | VN04 reference link | `EDIT-DFA` layouts on every row | assigned |
 | EG06 overlays (§17) | 17× (MECH-03), red arrow (BR-04), crossed-out list (BR-11a–c), 34% + 200,000 (BR-16a/b), 60-day seal (PR-22a) | assigned (CapCut) |
 
-### Wardrobe map (§21, §14A) — one outfit per story day
+### Wardrobe map (§21, §14A) — one outfit per story day · **v2, 2026-09-29**
 
-| Day | Subject | BASE | MID / OUTER | LOWER | FOOT | ACCENT | Colour family | Beats |
-|---|---|---|---|---|---|---|---|---|
-| D-D1 | D | pale blue button-down shirt, open collar, no tie | white knee-length doctor's coat, open; black stethoscope *(sheet: TH wardrobe lock)* | charcoal wool trousers | brown leather lace-ups | a plain steel watch | white / pale blue / charcoal | TH-HK1…TH-A5, HK2-02a, HK3-01a, BR-02, BR-15, BR-20 |
-| P-D1 | P | cream fine-knit roll-neck | oatmeal cable-knit cardigan, buttoned once | knee-length plum wool skirt, bare legs | burgundy fleece-lined slippers | reading glasses on a cord round her neck | plum / oatmeal / cream | HK1-02a, BR-01, BR-04, BR-05a/b, BR-06–BR-10, BR-09c |
-| P-D2 | P | white cotton shirt, sleeves turned back | coral lightweight cardigan, open | wide-leg navy linen trousers (rolled above both knees on the worn beats, down on HK1-01a and BR-17b) | tan leather flat loafers | small gold hoop earrings | navy / coral / white | HK1-01a, BR-11a–c, PR-12, BR-13, BR-17a/b, BR-19a/b, PR-22a, BR-23 |
-| one-offs | SG-01 surgeon (§19B approachable, navy scrubs) · WK-01 walkers (outdoor shorts, bare knees) · FM-01 daughter (40s, rain jacket), FM-02 grandson (8, school jumper) · CP-01 copy leg | each its own single day (D5) | | | | | | BR-16a, BR-16b, BR-09c, BR-22b |
+**Why v2 (the user, 2026-09-29):** "the wardrobe map is just the same wardrobe all over even though its a different day/event". v1 put every problem beat in P-D1 and every after beat in P-D2 — two outfits for 21 beats across nine years and six weeks. v2 derives a story day per event (§14A D1–D4) and gives each its own outfit. Source of truth: `work/wardrobe.py` (the prompt builders read it; its audits must PASS).
 
-**Novelty (§14A):** no outfit repeats across days, and P never wears her sheet outfit (duck-egg jumper, check skirt). The strap is worn on bare skin on every worn beat.
+| Day | Subject | BASE | MID / OUTER | LOWER | FOOT | ACCENT | Colour family | Visibility (§9D) | Beats |
+|---|---|---|---|---|---|---|---|---|---|
+| D-D1 | D | pale blue button-down shirt, open collar, no tie | white knee-length doctor's coat, open; black stethoscope *(sheet: TH wardrobe lock)* | charcoal wool trousers | brown leather lace-ups | a plain steel watch | white / pale blue / charcoal | (one session) | TH-HK1…TH-A5, HK2-02a, HK3-01a, BR-02, BR-15, BR-20 |
+| P-D1 *(hooks only)* | P | cream fine-knit roll-neck | oatmeal cable-knit cardigan, buttoned once | knee-length plum wool skirt, bare legs | burgundy fleece-lined slippers | reading glasses on a cord | plum / oatmeal / cream | — | HK1-02a, HK1-02c, HK2-02a (confirmed hook renders, unchanged) |
+| P-D2 *(hooks only)* | P | white cotton shirt, sleeves turned back | coral lightweight cardigan, open | wide-leg navy linen trousers | tan leather flat loafers | small gold hoop earrings | navy / coral / white | CONCEALED | HK1-01a (confirmed hook render, unchanged) |
+| P-B1 | P · Act 1 | pale blue cotton button-down shirt, collar out | grey marl crew-neck jumper | knee-length charcoal wool A-line skirt, bare legs | sheepskin moccasin slippers | reading glasses on a thin beaded cord round her neck | cool neutral | absent | BR-01 |
+| P-B2 | P · Act 1 | rust long-sleeve jersey top | — | knee-length camel corduroy skirt, bare legs | bare feet | a plain gold wedding band | earth | absent | BR-04 |
+| P-B3 | P · Act 1 | cream blouse with a small dusky-rose floral print | bottle-green buttoned cardigan | dark grey slim ankle trousers | navy felt slippers | reading glasses on a thin beaded cord round her neck | pattern-led | absent | BR-05a, BR-05b |
+| P-B4 | P · Act 2 | lilac long-sleeve cotton tee | navy quilted gilet | navy elasticated-waist trousers | grey knitted slipper boots | — | navy/denim | absent | BR-06 |
+| P-B5 | P · Act 2 | teal jersey tunic | — | black leggings | black suede slippers | a soft grey-and-teal patterned scarf | green family | absent | BR-07 |
+| P-B6 | P · Act 2 | blue-and-white check flannel shirt | — | knee-length faded denim skirt, bare legs | red tartan slippers | — | navy/denim | absent | BR-08 |
+| P-B7 | P · Act 2 | dusky-pink blouse with a rounded collar | heather-grey v-neck jumper | charcoal straight trousers | brown suede slippers | reading glasses on a thin beaded cord round her neck | red family | absent | BR-09b |
+| P-B8 | P · Act 2 | bottle-green fine roll-neck | long charcoal open draped cardigan | black straight trousers | black flat shoes | — | green family | absent | BR-09c |
+| P-B9 | P · Act 2 | raspberry polo shirt | grey zip fleece, open | grey jogging bottoms | white trainers | — | red family | absent | BR-10 |
+| P-A1 | P · Act 3 | cornflower-blue linen button-down shirt, sleeves rolled to the forearm | — | wide-leg cream cotton trousers | tan leather sandals | reading glasses on a thin beaded cord round her neck | navy/denim | VISIBLE on BR-11c (trouser leg rolled for the gel), absent otherwise | BR-11a, BR-11b, BR-11c, PR-12 |
+| P-A2 | P · Act 3 | jade-green short-sleeved blouse | — | knee-length stone cotton skirt, bare legs | white canvas plimsolls | small pearl stud earrings | green family | VISIBLE (the skirt sits above the knee as she sits) | BR-13 |
+| P-A3 | P · Act 4 | raspberry-and-white Breton striped long-sleeve top | — | wide-leg mid-blue denim trousers | white leather trainers | a navy cross-body bag strap | red family | REVEAL → CONCEALED (the left leg rolled to put it on, let fall to go out) | BR-17a, BR-17b |
+| P-A4 | P · Act 4 | white cotton crew-neck t-shirt | light denim overshirt, open | knee-length mustard-yellow A-line skirt, bare legs | navy canvas plimsolls | reading glasses on a thin beaded cord round her neck | earth (mustard) | VISIBLE, one knee only | BR-19a, BR-19b |
+| P-A5 | P · Act 5 | lilac cotton button-down shirt | — | (out of frame) | (out of frame) | a plain gold wedding band | cool (lilac) | absent (box) | PR-22a |
+| P-A6 | P · Act 5 | cornflower-and-white floral knee-length tea dress, short sleeves (replaces BASE + LOWER) | pale-yellow open cardigan | (the dress), bare legs | tan leather sandals | small gold studs | pattern-led | VISIBLE | BR-23 |
+| one-offs | SG-01 surgeon (§19B approachable, navy scrubs) · WK-01 walkers (outdoor shorts, bare knees) · FM-01 daughter (40s, navy rain jacket), FM-02 grandson (8, maroon school jumper) · CP-01 copy leg (grey sock, trainer) | each its own single day (D5) | | | | | | | BR-16a, BR-16b, BR-09c, BR-22b |
+
+**Novelty (§14A):** 15 body story days for P. Consecutive days change ≥2 layers including BASE; no BASE class twice in an act; no exact garment twice; colour family rotates (audited in `work/wardrobe.py`). Signature item (declared, §14A): her reading glasses on a thin beaded cord round her neck. Problem days (Acts 1–2) muted, cool-season indoors; after days (Acts 3–5) carry colour, late spring (§30F). Never her sheet outfit (duck-egg jumper, check skirt). The LOWER layer decides the product's visibility and is never modified to expose it — the one roll (BR-17a) is her rolling the trouser leg to put the strap on, and it falls in BR-17b. The strap is worn on bare skin on every worn beat. Hooks keep P-D1 / P-D2 (their renders are confirmed); the doctor keeps D-D1 (one consulting-room session, TH-locked).
 
 ## Next
 

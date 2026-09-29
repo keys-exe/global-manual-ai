@@ -8,6 +8,7 @@ import re, json, pathlib, importlib.util
 here = pathlib.Path(__file__).parent
 hk = here.parent / "hooks" / "build_hooks.py"
 src = hk.read_text()
+import sys; sys.path.insert(0, str(here.parent / "work")); from wardrobe import wear, DAY  # wardrobe v2 (the user, 2026-09-29)
 exec(compile(src[:src.index("\nB = {}")].replace("__file__", repr(str(hk))), str(hk), "exec"))
 spec = importlib.util.spec_from_file_location("ps", ROOT / "products/stryde/stryde_product_sheet.py"); ps = importlib.util.module_from_spec(spec)
 try: spec.loader.exec_module(ps)
@@ -28,7 +29,7 @@ B["BR-01"] = dict(refs=["P2-P-KITCHEN v2", "P-PATIENT"], body=[S("CAM-LOCK"),
   angle("eye", "a three-quarter angle", "the woman at the table"),
   focus("the nearest eye of the woman", "the room behind falls to a soft, recognisable shape"),
   PROPREF + " The kitchen of the attached kitchen photograph: the pine farmhouse table, the spindle-back chairs, the dresser soft behind.",
-  "A snapshot from a phone held at eye height by someone sitting across the corner of the table, not looking at the screen. " + P_FACE + " " + P_D1 +
+  "A snapshot from a phone held at eye height by someone sitting across the corner of the table, not looking at the screen. " + P_FACE + " " + wear("BR-01") +
   " She sits at the pine table, both hands round a mug of tea, a morning newspaper folded by her elbow, and her left hand has just left the mug and come down "
   "onto her LEFT knee under the table edge, caught in the middle of one slow rub across the knee through the skirt, her face tight with the familiar ache, "
   "eyes down, mouth shut. Head, shoulders, both hands and the left knee are in frame.",
@@ -51,8 +52,8 @@ B["BR-04"] = dict(refs=["P1-P-FRONTROOM v2", "P-PATIENT"], body=[S("CAM-LOCK"),
   focus("the hands and what they hold", "the room behind falls to a soft, recognisable shape"),
   PROPREF + " The front room of the attached front-room photograph, seen from above: the mustard armchair seat and the patterned rug soft around the knee.",
   "A snapshot from a phone held above her lap by someone looking straight down at her knee, not looking at the screen. She sits in the mustard armchair, "
-  "the hem of her plum wool skirt pushed back above her LEFT knee with her left hand, the bare knee filling the middle of the frame: pale skin, a little swollen, "
-  "fine creases, a few faint thread veins. Her right forefinger — a woman of sixty-nine, thin skin, a plain gold wedding band, the cuff of an oatmeal cardigan — "
+  "the hem of her camel corduroy skirt pushed back above her LEFT knee with her left hand, the bare knee filling the middle of the frame: pale skin, a little swollen, "
+  "fine creases, a few faint thread veins. Her right forefinger — a woman of sixty-nine, thin skin, a plain gold wedding band, the cuff of a rust jersey sleeve — "
   "is caught pressing into the soft spot just below her LEFT kneecap, two centimetres under its lower edge, the skin dimpling round the fingertip. "
   "The kneecap's outline reads clearly above the finger.",
   light("The bay window on the room's east wall", "her knee and hand", "left", "grey even daylight through the net curtains", "the left", face=False),
@@ -63,7 +64,7 @@ B["BR-05a"] = dict(refs=["P0-PROP-P v2", "P-PATIENT"], body=[S("CAM-LOCK"),
   focus("everything", "everything from near to far stays sharp"),
   PROPREF + " The hall and the wide straight staircase of the attached property photograph: the stairs rise away along the left-hand wall, the dark turned banister on the open right side, the patterned runner with brass rods on every tread.",
   "A snapshot from a phone held at eye height by someone standing in the hall at the foot of the stairs, behind her, not looking at the screen. "
-  "The woman of sixty-nine from the attached reference sheet — chestnut-dyed chin-length hair with silver roots — seen from behind. " + P_D1 +
+  "The woman of sixty-nine from the attached reference sheet — chestnut-dyed chin-length hair with silver roots — seen from behind. " + wear("BR-05a") +
   " She is going UP her stairs away from the camera, two steps from the bottom, caught in the middle of one steady step: her right foot planted on the next tread, "
   "her left foot just lifting off the one below, her right hand sliding up the banister rail, her body upright and easy. Her whole body from hair to slippers is in frame, stairs above her.",
   light("The tall landing window at the top of the stairs", "her", "right", "a grey morning, the landing window a soft bright source, the hall a stop darker", "the right", face=False),
@@ -73,7 +74,7 @@ B["BR-05b"] = dict(refs=["P0-PROP-P v2", "P-PATIENT"], body=[S("CAM-LOCK"),
   angle("low", "a three-quarter angle", "the woman coming down the stairs"),
   focus("everything", "everything from near to far stays sharp"),
   PROPREF + " The hall and the wide straight staircase of the attached property photograph, the dark turned banister on the open right side, the patterned runner with brass rods.",
-  "A snapshot from a phone held at hip height by someone standing at the foot of the stairs, off to one side, not looking at the screen. " + P_FACE + " " + P_D1 +
+  "A snapshot from a phone held at hip height by someone standing at the foot of the stairs, off to one side, not looking at the screen. " + P_FACE + " " + wear("BR-05b") +
   " She is coming DOWN her stairs facing forwards, four steps from the bottom, slowly and carefully, both hands gripping the banister rail, "
   "caught in the moment her LEFT foot lands on the tread below: the LEFT knee bent and braced as it takes her weight, her right foot still on the step above, "
   "her body leaning back a little towards the rail, her face tight and wary, eyes on the tread, mouth shut. Her whole body from hair to slippers is in frame.",
@@ -103,8 +104,8 @@ out = {}
 for k, b in B.items():
     txt = "\n\n".join(b["body"]); assert "[" not in txt, (k, txt[txt.index("["):txt.index("[") + 80])
     out[k] = dict(model="nano_banana_2", refs=b["refs"], ref_jobs=[REF[r] for r in b["refs"]], chars=len(txt), prompt=txt)
-    (here / f"{k}.image.prompt.txt").write_text(txt); print(f"{k:8s} {len(txt):5d}  refs: {', '.join(b['refs']) or '—'}")
-json.dump(out, open(here / "act1.json", "w"), indent=1)
+    (here / (f"{k}.image.v2.prompt.txt" if k in DAY else f"{k}.image.prompt.txt")).write_text(txt); print(f"{k:8s} {len(txt):5d}  refs: {', '.join(b['refs']) or '—'}")
+json.dump(out, open(here / "act1_v2.json", "w"), indent=1)
 json.dump([{"index": i, "params": {"model": v["model"], "aspect_ratio": "9:16", "resolution": "2k", "count": 1, "use_unlim": False,
             "medias": [{"role": "image_references", "value": j} for j in v["ref_jobs"]], "prompt": v["prompt"]}} for i, v in enumerate(out.values())],
-          open(here / "act1_batch.json", "w"), indent=1)
+          open(here / "act1_v2_batch.json", "w"), indent=1)

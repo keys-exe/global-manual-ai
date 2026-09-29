@@ -25,6 +25,7 @@ LOC = {
  "—":         dict(plate="—", tier="—", src="§12A render light"),
 }
 DAY = {  # story day -> (int, time, act light state, kelvin)
+# P-D1 / P-D2 here are the LIGHT states (problem / after). Wardrobe v2 (2026-09-29) keys each body beat to its own story day in work/wardrobe.py.
  "P-D1": (1, "morning", "problem: grey overcast morning, flat and cool", 6500),
  "P-D2": (2, "morning", "after: sun in the house, warmer and open", 5600),
  "D-D1": (3, "morning", "the doctor's room: steady overcast north light", 6500),
