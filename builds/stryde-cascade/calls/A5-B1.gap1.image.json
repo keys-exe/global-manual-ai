@@ -1,0 +1,47 @@
+{
+ "beat": "A5-B1",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"I started carrying a couple because I was tired of fitting the second rail.\": inside the open back of his van the fitter drops two straps into a clear organiser box on the shelf, a spare length of oak handrail strapped to the wall beside him. Eye level, three-quarter, medium shot, his face and hands visible. Each strap is exactly the product in the attached front photo — the strap is small — a rigid black shell about 12 × 5 cm, no longer than a palm, on a black knit band. He is the same man as the attached cast sheet, in the navy fleece from the attached talking-head frame. The van exactly as in the attached van plate. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "I started carrying a couple because I was tired of fitting the second rail.",
+ "face": true,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "STRYDE front photo",
+   "kind": "product",
+   "id": "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5"
+  },
+  {
+   "label": "N-CHINESE cast sheet",
+   "kind": "character",
+   "id": "8cc4a583-5d7d-4f39-9ef7-7fe7899d298b"
+  },
+  {
+   "label": "C-TH-FRAME (his workwear, his hands)",
+   "kind": "frame",
+   "id": "af785dc9-5a0d-4e5e-8952-752be522bf08"
+  },
+  {
+   "label": "PLATE-VAN",
+   "kind": "location",
+   "id": "b1cc1764-3e34-4b37-b8c6-0abf55cfe68e"
+  }
+ ],
+ "taste": [
+  "FP01",
+  "FP02",
+  "HT06"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "he drops two straps into the organiser box on the van shelf and slides the lid shut, one drop, one slide, 3s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render — this board has no A/B view"
+}

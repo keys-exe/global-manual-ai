@@ -1,0 +1,41 @@
+{
+ "beat": "A3-B0",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"You have been told it is your age. Or your weight. Or that the muscle is weak.\": the older woman sits in her armchair with the phone to her ear, listening, a folded hospital letter on her lap, her face patient and unconvinced. Eye level, three-quarter, medium shot, her face sharp. She is the same woman as the attached cast sheet, in the same outfit as the attached day-two frame. The front room exactly as in the attached plate. Window light from the side. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "You have been told it is your age. Or your weight. Or that the muscle is weak.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "C1 cast sheet",
+   "kind": "character",
+   "id": "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2"
+  },
+  {
+   "label": "A3-B1 confirmed (C1, day 2, front room)",
+   "kind": "frame",
+   "id": "cc76ef4c-a2a6-40d1-a009-d5064e250995"
+  },
+  {
+   "label": "PLATE-P1-FRONT (C1's front room)",
+   "kind": "location",
+   "id": "719c268b-14df-47b6-afab-35f0efdb8a2b"
+  }
+ ],
+ "taste": [
+  "HT08",
+  "HT09"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "in her armchair, phone at her ear, she listens and gives one small tired nod, 3s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render — this board has no A/B view"
+}
