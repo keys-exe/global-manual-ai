@@ -112,6 +112,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   @audio2 for Hook B. Edit: the daughter's on-camera line replaces the mother reading it in the VO. The old Kling hook cards (HK-01a/02a/01b/02b)
   stay on Current until the Seedance hooks are confirmed, then move to Old.
 
+- 2026-09-29: user "DELETE THE PREVIOUS HOOKS" → the Kling-era hook cards HK-01a, HK-02a, HK-01b, HK-02b (all their images and the two
+  Kling videos) removed from the Current board; every version kept on the Old board (§16A never lose a version). Hooks on Current now:
+  HK-A-SD and HK-B-SD only.
+
 ## Where it stands
 - **Voice stage redone to V7.66.0, no laugh/sigh** (2026-09-29): VO takes (text v2) + TH-ALL-T1 (now T2) + TH-01…16 on the board To check. Working take **T2** (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`); a confirmed different take → one new Avatar V render + re-cut.
 - **Step 6 — hooks (the hook gate):** Hook 1: HK-02a video confirmed (use); HK-01a new frame v2 To check (then its video, gen 2).
