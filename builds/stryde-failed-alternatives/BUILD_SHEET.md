@@ -203,42 +203,42 @@ Held in the Product Sheet register (V7.49.38): 17× bodyweight · just below the
 
 ## 3. Cast (step 3): generated, on the board for your check
 
-**Casting to the Product Sheet (British, 55–80, balanced men/women) and the script's instruction (about half Black):** four recurring wearers carry the B-roll across the three videos, two Black (R1 Patricia, R3 Emmanuel) and two white, two women and two men. **N, the narrator, is never on screen**: her sheet exists only to make the two Kling clips her voice is cloned from (§22U). One-offs (the clinician on the bridge shot, the surgeon on the surgeons line, hands, extras) come at steps 4–5, balanced to keep about half Black. All five are new faces (§19A: reuse only on request).
+**Casting to the Product Sheet (British, 55–80, balanced men/women) and the script's instruction (about half Black):** four recurring wearers carry the B-roll across the three videos, two Black (R1 Bernadette, R3 Delroy — recast at your Fix) and two white, two women and two men. **N, the narrator, is never on screen**: her sheet exists only to make the two Kling clips her voice is cloned from (§22U). One-offs (the clinician on the bridge shot, the surgeon on the surgeons line, hands, extras) come at steps 4–5, balanced to keep about half Black. All five are new faces (§19A: reuse only on request).
 
 | Sheet | Who | Job ID | File | Board |
 |---|---|---|---|---|
-| N-NARR | the narrator (voice only) | `994041a5-3e6f-47fb-947f-91a4c450237c` | `cast/N-NARR_v1.jpg` | To check |
-| R1-PATRICIA | wearer · the drawer (HK1), her hall stairs | `c2fbda60-ad97-4f07-b89a-a61f2f3069f2` | `cast/R1-PATRICIA_v1.jpg` | To check |
-| R2-GORDON | wearer · the cabinet (HK2), walking | `4e0242ec-2b22-44cd-af29-4582ecb3bacb` | `cast/R2-GORDON_v1.jpg` | To check |
-| R3-EMMANUEL | wearer · bowls club, park path | `7788eff3-4614-4e02-8295-76f76ca5765b` | `cast/R3-EMMANUEL_v1.jpg` | To check |
-| R4-SIAN | wearer · the injection plaster (HK3), her stairs, a hill path | `df90c511-adee-4c35-8bd8-e2ea0c9f53b5` | `cast/R4-SIAN_v1.jpg` | To check |
+| N-NARR | the narrator (voice only) | `994041a5-3e6f-47fb-947f-91a4c450237c` | `cast/N-NARR_v1.jpg` | **Confirmed** (user, 2026-09-29) |
+| R1-BERNADETTE | wearer · the drawer (HK1), her hall stairs | `83478915-af9c-4d15-a24c-127f41ef944c` | `cast/R1-BERNADETTE_v1.jpg` | To check (replaced R1-PATRICIA, "change this avatar"; Patricia on the Old board) |
+| R2-GORDON | wearer · the cabinet (HK2), walking | `4e0242ec-2b22-44cd-af29-4582ecb3bacb` | `cast/R2-GORDON_v1.jpg` | **Confirmed** (user, 2026-09-29) |
+| R3-DELROY | wearer · bowls club, park path | `69175fd1-c1c8-4ae9-b3da-3b8ac3a797f2` | `cast/R3-DELROY_v1.jpg` | To check (replaced R3-EMMANUEL, "change this avatar"; Emmanuel on the Old board) |
+| R4-SIAN | wearer · the injection plaster (HK3), her stairs, a hill path | `df90c511-adee-4c35-8bd8-e2ea0c9f53b5` | `cast/R4-SIAN_v1.jpg` | **Confirmed** (user, 2026-09-29) |
 
-Manual run: **I don't check the sheets** (§18B step 3). Confirm or Fix each on the board. Prompts: `cast/<ID>.prompt.txt`, assembled from Appendix A by ID in `cast/build_sheets.py` (`CAM-LOCK` → `AVATAR-SHEET` + `SHEET-GRID` → `SKIN-T` → `CAP-SHARP` → `CAP-FILE` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILE` + `NEG-DEFAULT-FACE`), 9,168–9,286 chars each. Spend: 5 Sunburst jobs, one render each. Higgsfield 17,448 credits before the cast.
+Manual run: **I don't check the sheets** (§18B step 3). Confirm or Fix each on the board. Prompts: `cast/<ID>.prompt.txt`, assembled from Appendix A by ID in `cast/build_sheets.py` (`CAM-LOCK` → `AVATAR-SHEET` + `SHEET-GRID` → `SKIN-T` → `CAP-SHARP` → `CAP-FILE` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILE` + `NEG-DEFAULT-FACE`), 9,168–9,286 chars each. Spend: 5 Sunburst jobs, one render each, + 2 for the Fix recasts. Higgsfield 17,448 credits before the cast.
 
 ### Identity strings (from the prompts; read off the renders once you confirm them, §7)
 
 | ID | Identity string |
 |---|---|
 | N | white British woman, 61, short and heavyset; broad round face, full soft cheeks, heavy-lidded pale blue eyes, short snub nose, wide mouth with a fuller lower lip; small round pitted chickenpox scar mid-forehead; short white spiky crop; bottle-green cardigan over a navy-and-white Breton top, dark jeans, navy canvas slip-ons |
-| R1 | Black British woman (Jamaican heritage), 74, tall and big-hipped, upright; long oval face, high rounded forehead, wide-set dark brown eyes, broad nose, full lips; left eye turns slightly outward; short silver-grey hair in soft rollered waves; cerise-pink cardigan over a cream blouse, navy A-line skirt above the knee, black low-heeled lace-ups |
+| R1 | Black British woman (Nigerian heritage), 69, small and slight, narrow shoulders; wide face, broad flat forehead, round full cheeks, small deep-set dark eyes, short broad nose, small neat mouth; three small dark moles in a row along the left jawline; grey-and-black short locs to the jaw; rust-orange roll-neck under an olive quilted gilet, charcoal jersey skirt above the knee, burgundy suede trainers |
 | R2 | white British man, 63, medium height, pot belly, heavy shoulders, thin legs; broad flat face, heavy jowls, small dark eyes, one thick dark eyebrow unbroken across the nose, short wide nose, thin mouth; thick salt-and-pepper hair brushed forward; navy Harrington jacket over a grey marl T-shirt, black football shorts above the knee, scuffed white trainers |
-| R3 | Black British man (Ghanaian heritage), 78, short and stocky, wide-shouldered; round face, heavy jowls, broad flat nose, large dark eyes, wide full mouth; V-shaped notch in the top of the left ear; short white cropped hair, short neat white beard; mustard knitted cardigan over a white shirt, tan shorts above the knee, brown leather sandals |
+| R3 | Black British man (Jamaican heritage), 60, tall and heavy, broad chest, big belly; long rectangular face, heavy brow ridge, deep-set dark eyes, wide nose, broad mouth, clean-shaven; thick raised scar down the outside of the right forearm; salt-and-pepper flat-top, sides faded; royal-blue tracksuit top over a white T-shirt, grey jersey shorts above the knee, black-and-white trainers |
 | R4 | white British woman (Welsh heritage), 57, tall and very thin; angular face, narrow grey eyes, long straight nose, slight overbite, sharp narrow chin; pale burn scar across the back of the left hand; long grey-blonde hair in a single plait; purple waterproof jacket over a black base layer, black running shorts above the knee, grey trail shoes |
 
 ### §19A axis tables
 
 | Axis | N | R1 | R2 | R3 | R4 |
 |---|---|---|---|---|---|
-| Face | broad round, soft cheeks, snub nose | long oval, high forehead | broad flat, jowly | round, jowly, broad nose | angular, narrow chin, overbite |
-| Hair | white spiky crop | silver rollered waves | salt-and-pepper, forward fringe | white crop + white beard | long grey-blonde plait |
-| Age | 61 | 74 (far side) | 63 | 78 (far edge) | 57 (young edge) |
-| Build | short, heavyset | tall, big-hipped | medium, pot belly | short, stocky | tall, very thin |
-| Wardrobe | green cardigan + Breton | pink cardigan + skirt | Harrington + football shorts | mustard cardigan + shorts | purple waterproof + running shorts |
-| Marker | forehead pock scar | outward-turning left eye | unbroken single brow | notched left ear | burn scar, left hand |
+| Face | broad round, soft cheeks, snub nose | wide, flat forehead, round cheeks | broad flat, jowly | long rectangular, heavy brow | angular, narrow chin, overbite |
+| Hair | white spiky crop | grey-black short locs | salt-and-pepper, forward fringe | salt-and-pepper flat-top | long grey-blonde plait |
+| Age | 61 | 69 | 63 | 60 (young side) | 57 (young edge) |
+| Build | short, heavyset | small, slight | medium, pot belly | tall, heavy, big belly | tall, very thin |
+| Wardrobe | green cardigan + Breton | rust roll-neck + olive gilet + skirt | Harrington + football shorts | blue tracksuit top + jersey shorts | purple waterproof + running shorts |
+| Marker | forehead pock scar | three moles along the jaw | unbroken single brow | forearm scar | burn scar, left hand |
 | Voice | British, West Country (below) | non-speaking | non-speaking | non-speaking | non-speaking |
 | Environment | — (voice only) | her hall, drawer, stairs | bathroom cabinet, streets | bowls club, park | stairs, hill path with a dog |
 
-**Clearance within the build:** every pair differs on ≥ 6 axes. **Against the roster** (every Build Sheet's §19A table, incl. `stryde-too-bad` N, Denise, Alan, Clive, Fiona): every new face differs on ≥ 5 axes; the closest are R3 vs the 58-year-old barrel-chested shaved man (face, hair, age, marker, wardrobe, environment differ: 6) and N vs the 72-year-old short round man (hair, age, sex, marker, wardrobe, voice, environment: 7). No marker repeats a roster marker. ✓
+**Clearance within the build:** every pair differs on ≥ 6 axes. **Against the roster** (every Build Sheet's §19A table, incl. `stryde-too-bad` N, Denise, Alan, Clive, Fiona): every new face differs on ≥ 5 axes; the replaced R1 Patricia and R3 Emmanuel are cleared too (R1: face, hair, age, build, wardrobe, marker, environment; R3: face, hair, age, build, wardrobe, marker: ≥ 6); the closest roster entry is N vs the 72-year-old short round man (hair, age, sex, marker, wardrobe, voice, environment: 7). No marker repeats a roster marker. ✓
 
 ### Narrator: `VOICE-NARR` (§22D) and §20 constraint sheet
 

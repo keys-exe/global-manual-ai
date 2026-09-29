@@ -18,6 +18,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Four boards made; build doc on all four, cast on Current, docs/absorption on Plan + Current.
 
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the five avatars and the absorption; answer F2, F4 (existing clinic footage vs ours), F5 ("doesn't stretch" vs elastic band), F6 (94%), F7 (comparative/injection claims), F9.
-- Next (on the go): steps 4–5 — location plates (16:9): R1 hall with drawer + stairs, R2 bathroom + street, R3 bowls club + park, R4 stairs + kitchen + hill path, clinic (bridge shot + surgeon);
+- 2026-09-29: user confirmed N, R2 Gordon, R4 Sian; R1 Patricia and R3 Emmanuel sent back "change this avatar" → recast as **R1 Bernadette** (Black British, Nigerian, 69) and **R3 Delroy** (Black British, Jamaican, 60), one render each (card doc ids keep the old slot names `__R1-PATRICIA` / `__R3-EMMANUEL`, v2); Patricia and Emmanuel moved to the Old board.
+- **Waiting on the user:** Confirm/Fix R1 Bernadette and R3 Delroy, and the absorption; answer F2, F4 (existing clinic footage vs ours), F5 ("doesn't stretch" vs elastic band), F6 (94%), F7 (comparative/injection claims), F9.
+- Next (on the go): steps 4–5 — location plates (16:9): R1 Bernadette's hall with drawer + stairs, R2 bathroom + street, R3 Delroy's bowls club + park, R4 stairs + kitchen + hill path, clinic (bridge shot + surgeon);
   act map + wardrobe map for all three videos (`angles.py`, ~50% Black per video, ≤ 1 boxed B-roll in 5); then voice straight through (§22U, N).
