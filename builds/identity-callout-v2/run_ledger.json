@@ -1,0 +1,569 @@
+{
+ "build": "identity-callout-v2",
+ "version_built_against": "7.60.7",
+ "run_mode": "AUTOMATIC",
+ "beats": {
+  "S1-CAROL": {
+   "beat_id": "S1-CAROL",
+   "retries": [],
+   "t2i_prompt_path": "beats/S1-CAROL.sheet.t2i.txt",
+   "t2i_job_id": "eb7df593-3e7b-4a51-bf35-47145e1c8099",
+   "model": "gpt_image_2_5 sunburst high 2k",
+   "platform": "higgsfield",
+   "cost": 2.75,
+   "t2i_status": "completed",
+   "t2i_qa": "USE (panel check pass)",
+   "render": "renders/S1-CAROL.sheet.png"
+  },
+  "S2-HARGREAVES": {
+   "beat_id": "S2-HARGREAVES",
+   "retries": [],
+   "t2i_prompt_path": "beats/S2-HARGREAVES.sheet.t2i.txt",
+   "t2i_job_id": "4e222748-573d-49c2-bb6b-ee6318d987b0",
+   "model": "gpt_image_2_5 sunburst high 2k",
+   "platform": "higgsfield",
+   "cost": 2.75,
+   "t2i_status": "completed",
+   "t2i_qa": "USE (panel check pass)",
+   "render": "renders/S2-HARGREAVES.sheet.png"
+  },
+  "S3-HANNAH": {
+   "beat_id": "S3-HANNAH",
+   "retries": [],
+   "t2i_prompt_path": "beats/S3-HANNAH.sheet.t2i.txt",
+   "t2i_job_id": "7e2be586-9861-485b-b379-27e5a218bc9d",
+   "model": "gpt_image_2_5 sunburst high 2k",
+   "platform": "higgsfield",
+   "cost": 2.75,
+   "t2i_status": "completed",
+   "t2i_qa": "USE (panel check pass)",
+   "render": "renders/S3-HANNAH.sheet.png"
+  },
+  "PLATE-PROPERTY": {
+   "beat_id": "PLATE-PROPERTY",
+   "retries": [],
+   "t2i_job_id": "116151c8-3d0e-4043-8f2d-08ada7f7fe2f",
+   "t2i_qa": "USE",
+   "render": "renders/PLATE-PROPERTY.png",
+   "cost": 2.75,
+   "note": "balustrade renders boxed-in panelling, dark handrail; read off render"
+  },
+  "PLATE-CLINIC": {
+   "beat_id": "PLATE-CLINIC",
+   "retries": [],
+   "t2i_job_id": "42ebfdc0-1e31-4f3e-a8e6-20a9d438bcd5",
+   "t2i_qa": "USE",
+   "render": "renders/PLATE-CLINIC.png",
+   "cost": 2.75,
+   "note": "window on far wall left of centre, couch right, desk + knee model centre-left, blue curtain right-centre, sink far right; read off render"
+  },
+  "PLATE-LIVING": {
+   "beat_id": "PLATE-LIVING",
+   "retries": [],
+   "t2i_job_id": "2affc53a-0b0e-4e2d-b608-577f6c995890",
+   "t2i_qa": "USE",
+   "render": "renders/PLATE-LIVING.png",
+   "cost": 2.75,
+   "note": "door on left (hinge side), sofa left with blanket + side table + mug, bay window far wall, standard lamp left of bay, fireplace right wall with carriage clock, beige curtains; read off render"
+  },
+  "VO-01": {
+   "beat_id": "VO-01",
+   "retries": [
+    {
+     "class": "IMAGE_REGENERATE",
+     "action": "iteration 2: phone on footstool 80cm, roots+plimsolls restated",
+     "ts": "2026-09-25"
+    }
+   ],
+   "t2i_prompt_path": "beats/VO-01.t2i.txt",
+   "t2i_job_id": "ea3966b7-d2df-4592-ac85-d6ce4f3e4afb",
+   "model": "nano_banana_pro 2k",
+   "platform": "higgsfield",
+   "attachments": [
+    "S1-CAROL",
+    "PLATE-LIVING",
+    "PLATE-PROPERTY"
+   ],
+   "t2i_qa": "USE after crop: v2 fixed Q4/Q5; a prop phone rendered in the foreground -> cropped 9:16 top-left 70% (frame is a voice-source ingredient only, picture never reaches the timeline)",
+   "logged_model": "nano_banana_2 (ALIAS_MISMATCH)",
+   "render": "renders/VO-01.v2.crop.png"
+  },
+  "VO-SRC": {
+   "beat_id": "VO-SRC",
+   "retries": [],
+   "i2v_prompt_path": "beats/VO-SRC.seedance.txt",
+   "i2v_job_id": "d1641850a57aede33244e76d64103246",
+   "platform": "kie seedance-2-5 720p 10s",
+   "cost_kie": 630,
+   "render": "renders/S1-CAROL_voice10.mp4"
+  },
+  "HK1-01": {
+   "beat_id": "HK1-01",
+   "retries": [],
+   "t2i_job_id": "b2b030ee-edb4-40a3-ac0e-b88ce08445cc",
+   "t2i_prompt_path": "beats/HK1-01.t2i.txt",
+   "model": "nano_banana_pro (call)",
+   "note_flash_discarded": true,
+   "t2i_qa": "USE",
+   "render": "renders/HK1-01.png",
+   "i2v_job_id": "ATexXUCo1gKphcBRLULQbtg4UxRrDw4-zobDjQM0dW6WwcF4-T6mulm42dS3eSBDHzuLPpP2",
+   "i2v_prompt_path": "beats/HK1-01.i2v.json",
+   "i2v_model": "kling-video-v3_0 1080p audio",
+   "duration": 6,
+   "cost_kling": 72,
+   "i2v_qa": "USE (\u00a722W 7/7)",
+   "clip": "renders/HK1-01.mp4"
+  },
+  "HK2-01": {
+   "beat_id": "HK2-01",
+   "retries": [],
+   "t2i_job_id": "0e6b8f2a-623c-467d-a665-f73a0a64a191",
+   "t2i_prompt_path": "beats/HK2-01.t2i.txt",
+   "model": "nano_banana_pro (call)",
+   "note_flash_discarded": true,
+   "t2i_qa": "USE after crop (phone UI removed)",
+   "render": "renders/HK2-01.crop.png",
+   "i2v_job_id": "AYrycuTk_7R5AHaqWvWYoc7uVxKSc4NtaBx9RDey_ZMDiJDdvrsLDx7szdoQw_sLJ9fVpwsl",
+   "i2v_prompt_path": "beats/HK2-01.i2v.json",
+   "i2v_model": "kling-video-v3_0 1080p audio",
+   "duration": 4,
+   "cost_kling": 48,
+   "i2v_qa": "USE (\u00a722W 7/7)",
+   "clip": "renders/HK2-01.mp4"
+  },
+  "HK3-01": {
+   "beat_id": "HK3-01",
+   "retries": [],
+   "t2i_job_id": "16de19dc-52b4-42b9-9fbb-38964fd117fa",
+   "t2i_prompt_path": "beats/HK3-01.t2i.txt",
+   "model": "nano_banana_pro (call)",
+   "note_flash_discarded": true,
+   "t2i_qa": "USE",
+   "render": "renders/HK3-01.png",
+   "i2v_job_id": "AZHSN-Xlu4_XcTw8Wm1tsdxoMuUD5gdYl3bYV_DAEiv5J11dfmMFsUbQDM4LrSQP1qQxz4NR",
+   "i2v_prompt_path": "beats/HK3-01.i2v.json",
+   "i2v_model": "kling-video-v3_0 1080p audio",
+   "duration": 6,
+   "cost_kling": 72,
+   "i2v_qa": "USE (\u00a722W 7/7)",
+   "clip": "renders/HK3-01.mp4"
+  },
+  "B01": {
+   "beat_id": "B01",
+   "retries": [],
+   "t2i_job_id": "16040f33-ad11-4421-8e66-7cf5d03291e6",
+   "t2i_prompt_path": "beats/B01.t2i.txt",
+   "model": "nano_banana_pro (call)",
+   "note_flash_discarded": true,
+   "t2i_qa": "USE",
+   "render": "renders/B01.png",
+   "i2v_job_id": "AXBOaZkR6oot_qO2XNdBreux8s3fabXPwgv0h52TSZfTg3Ek1jwX1aCzmx8wCRkabcuRUW2q",
+   "i2v_prompt_path": "beats/B01.i2v.json",
+   "duration": 3,
+   "cost_kling": 36,
+   "i2v_qa": "USE",
+   "clip": "renders/B01.mp4"
+  },
+  "B02": {
+   "beat_id": "B02",
+   "retries": [],
+   "t2i_job_id": "e59310cb-475d-4c02-9a3b-c6958393b233",
+   "t2i_prompt_path": "beats/B02.t2i.txt",
+   "model": "nano_banana_pro (call)",
+   "note_flash_discarded": true,
+   "t2i_qa": "USE",
+   "render": "renders/B02.png",
+   "i2v_job_id": "Afj4EphrFbUxDwxBDY6S0BE57Rjgl2kBF57DuNuphfjyYQLwkPLcPGygoYp__I04uJD676yi",
+   "i2v_prompt_path": "beats/B02.i2v.json",
+   "duration": 3,
+   "cost_kling": 36,
+   "i2v_qa": "REGENERATE Q3/Q4 anatomy morph (muscles appear, patella becomes a ring) -> v2 no orbit, structure lock restated",
+   "i2v_job_id_v2": "AX86UI-19okjUQWOKKWUjk0xEGO1vGi3kkleeYF1CxZFeqrUVZOli6nEXLo8FJxS9aQni79W",
+   "cost_kling_v2": 36,
+   "clip_v2": "REGENERATE Q5: metal disc/screw appears at 2.2s and bone shape shifts -> reduced load motion, hardware negatives (v3, final regen)",
+   "kling_v2": "AX86UI-19ok...",
+   "kling_job": "ARdAp0IO1N1blB-2udARYXuXdQDSVuyT-QnUIZDDqmBlm2N3j-rXsmLEfHblLsY2TuDebNB_",
+   "clip": "USE (best of 3; final regen) - no hardware, mild kneecap wobble ~1.6s",
+   "kling": "ARdAp0IO..."
+  },
+  "B03": {
+   "beat_id": "B03",
+   "retries": [],
+   "t2i_job_id": "d75dfa87-2949-482c-a174-4de0de60894b",
+   "t2i_prompt_path": "beats/B03.t2i.txt",
+   "model": "nano_banana_pro (call)",
+   "note_flash_discarded": true,
+   "t2i_qa": "USE",
+   "render": "renders/B03.png",
+   "i2v_job_id": "ARedbKdBq0x_5WPNipOKy5i9IqhpcR3NO43B-g2Sk5vrxTsfd8fG9CKIEc3LHGhdSy2ofg1M",
+   "i2v_prompt_path": "beats/B03.i2v.json",
+   "duration": 4,
+   "cost_kling": 48,
+   "i2v_qa": "USE",
+   "clip": "renders/B03.mp4"
+  },
+  "B04": {
+   "beat_id": "B04",
+   "retries": [],
+   "t2i_job_id": "1eca0840-da17-40d4-a538-b2428acf5461",
+   "t2i_qa": "USE",
+   "render": "renders/B04.png",
+   "i2v_job_id": "AcuZt-yHyZoPpC7WlXQ7XIU4LMHndWkIJWbw3MKzgaLC9Lh8qiPvyqJd8M1BTGSesZuGJu2d",
+   "i2v_prompt_path": "beats/B04.i2v.json",
+   "duration": 5,
+   "cost_kling": 60,
+   "i2v_qa": "USE",
+   "clip": "renders/B04.mp4"
+  },
+  "B08": {
+   "beat_id": "B08",
+   "retries": [],
+   "t2i_job_id": "52e3fae2-0409-4e5e-bd9d-b652c23e4bab",
+   "t2i_qa": "USE",
+   "render": "renders/B08.png",
+   "i2v_job_id": "AY1D4Dao90ytR5-UZRcRG-Mbje8gCUIzr-iSz9ZXKW3mo6RJ_DJ3GCzI-IUbRsKc2VuXoPsm",
+   "i2v_prompt_path": "beats/B08.i2v.json",
+   "duration": 6,
+   "cost_kling": 72,
+   "i2v_qa": "REGENERATE Q2 shell vanishes mid-orbit -> v2 slow push-in, no orbit",
+   "i2v_job_id_v2": "ARrIQ283rxuq4x71XF3Bl9mh7kMSValqHxxinkfqszLrFuesMo0mNa3RYlasnaPFXJm25uo9",
+   "cost_kling_v2": 72,
+   "clip": "USE",
+   "kling": "ARrIQ283...",
+   "clip_verdict": "USE: strap on front of knee every frame, wordmark stable, push-in, no morph"
+  },
+  "B05": {
+   "beat_id": "B05",
+   "retries": [],
+   "t2i_job_id": "7cca661b-08e3-43ca-a323-b9205fd96dce",
+   "t2i_qa": "USE (v2)",
+   "t2i_job_id_v2": "504b05c6-59b0-4659-9950-9ebf38db627b",
+   "t2i_prompt_path_v2": "beats/B05.t2i.v2.txt",
+   "render": "renders/B05.png",
+   "i2v_job_id": "AdwMfe4QJXpwPUqMO9MAqQL5A85_J5B4w7EfPikW73ApbEIZYDYTtwcqP_32bVbf_XxKD-jX",
+   "i2v_prompt_path": "beats/B05.i2v.json",
+   "duration": 4,
+   "cost_kling": 48,
+   "i2v_qa": "USE",
+   "clip": "renders/B05.mp4"
+  },
+  "B06": {
+   "beat_id": "B06",
+   "retries": [],
+   "t2i_job_id": "d6a4038c-b247-4054-9bb6-45b45ae6fe83",
+   "t2i_qa": "USE (v2)",
+   "t2i_job_id_v2": "2d665c39-508c-4909-8eca-35f29cead777",
+   "t2i_prompt_path_v2": "beats/B06.t2i.v2.txt",
+   "render": "renders/B06.png",
+   "i2v_job_id": "AYiym22uB63sCfV_prTu3xOAei0YFq58ttZyur5auHoNjiVVBmKI2NQbdCjeLodPXAtg2nnR",
+   "i2v_prompt_path": "beats/B06.i2v.json",
+   "duration": 5,
+   "cost_kling": 60,
+   "i2v_qa": "USE",
+   "clip": "renders/B06.mp4"
+  },
+  "B07": {
+   "beat_id": "B07",
+   "retries": [],
+   "t2i_job_id": "4407d4c6-50cf-48b8-a025-10b2c8663f9e",
+   "t2i_qa": "USE (v2; strap held upright, wordmark correct relative to shell)",
+   "t2i_job_id_v2": "d27b3cab-fbe7-4112-9e1c-3b6767f600af",
+   "t2i_prompt_path_v2": "beats/B07.t2i.v2.txt",
+   "render": "renders/B07.png",
+   "i2v_job_id": "AcdincZ7xkDVSjJ1XtnW06p1xjDwU9LyvT3G9EdCet0Q0-XB_t4yOSJrNlpS4AplcsPoBV1F",
+   "i2v_prompt_path": "beats/B07.i2v.json",
+   "duration": 3,
+   "cost_kling": 36,
+   "i2v_qa": "USE",
+   "clip": "renders/B07.mp4"
+  },
+  "B09": {
+   "beat_id": "B09",
+   "retries": [],
+   "t2i_job_id": "2b721194-eae0-4fcb-b61f-48969198153d",
+   "t2i_qa": "USE",
+   "render": "renders/B09.png",
+   "i2v_job_id": "AQkKmraXwBIZh60t6rbqzE4J_sPmTVIeycW2UVE32hQbicAO_ZKkKh5k2DJ_JTL2wz7jFrb0",
+   "i2v_prompt_path": "beats/B09.i2v.json",
+   "duration": 3,
+   "cost_kling": 36,
+   "i2v_qa": "USE",
+   "clip": "renders/B09.mp4"
+  },
+  "B10": {
+   "beat_id": "B10",
+   "retries": [],
+   "t2i_job_id": "2146030b-3f6d-4e90-88f2-a5051bbfb91d",
+   "t2i_qa": "v2 FAILED on platform (699c5332) -> resubmit",
+   "image_verdict": "USE",
+   "kling_job": "AQGMj4D7135T8N-hvN6Txvc-ETI_bF6YWxvKjmKaL2sKRD-cNDKSS_yM1gZcWYbj_trp2gly",
+   "clip": "USE"
+  },
+  "B11": {
+   "beat_id": "B11",
+   "retries": [],
+   "t2i_job_id": "12da9499-35b9-4cbf-9f47-f17352880d90",
+   "t2i_qa": "USE (v2; mid-rise standing, flagged)",
+   "t2i_job_id_v2": "2c8e2585-1e65-4e3e-8594-f94526e631c6",
+   "render": "renders/B11.png",
+   "kling_job": "AcSpt4zm...",
+   "i2v": "v2 motion matched to mid-rise frame",
+   "clip": "USE"
+  },
+  "B12": {
+   "beat_id": "B12",
+   "retries": [],
+   "t2i_job_id": "abe13ed2-f942-4c78-818a-fe6f30d7b2eb",
+   "t2i_qa": "USE (v2)",
+   "t2i_job_id_v2": "1f12da4d-6f10-4a3f-95fb-0cd29aada6de",
+   "render": "renders/B12.png",
+   "kling_job": "AVAK-6-I...",
+   "i2v": "v2 motion matched to kneeling frame",
+   "clip": "USE"
+  },
+  "B13": {
+   "beat_id": "B13",
+   "retries": [],
+   "t2i_job_id": "d3934bd0-c11d-4e68-b822-40e7aad23ed6",
+   "t2i_prompt_path": "beats/B13.t2i.txt",
+   "t2i_qa": "USE",
+   "render": "renders/B13.png",
+   "kling_job": "AYAB1q8L...",
+   "clip": "USE (strap leg ambiguous late in clip; slot uses first 1.2s only)"
+  },
+  "B14": {
+   "beat_id": "B14",
+   "retries": [],
+   "t2i_job_id": "4749abd2-81d2-4764-8577-ffe59cf91e6f",
+   "t2i_prompt_path": "beats/B14.t2i.txt",
+   "t2i_qa": "REGENERATE Q4 stair geometry mirrored -> v2 rail screen-left restated",
+   "t2i_job_id_v2": "ef2a02ff-8700-402a-99b7-78b3bafe91fa",
+   "image_verdict": "USE",
+   "kling_job": "ASKEUWiGlIMnP-5_LeyyitKbHxWpqhclFvmGdX3CgCN4yu_0lew60ga6EHC_vY4EOsNqVehd",
+   "clip": "USE"
+  },
+  "B15": {
+   "beat_id": "B15",
+   "retries": [],
+   "t2i_job_id": "367b62be-d639-4d57-bae1-81ac87eebe9a",
+   "t2i_prompt_path": "beats/B15.t2i.txt",
+   "t2i_qa": "REGENERATE Q2 product rendered as wrap brace with patella hole -> v2 front-on, slim strap restated, PLACE-PROFILE dropped",
+   "t2i_job_id_v2": "3be42914-6127-4e54-83b5-e17a9d592208",
+   "image_verdict": "USE",
+   "kling_job": "AQdhyhc9Lmlzhhp-67GEKpkO4xPks8ER0BlEg_PxOPmC9SGjo-j7O0VaknJVMx0Myd-GNGDg",
+   "clip": "USE"
+  },
+  "B16": {
+   "beat_id": "B16",
+   "retries": [],
+   "image_verdict": "USE",
+   "kling_job": "AWsi1cevaBqLx38egEup6frYiNO9YoOU1loVXOqqPbY272QNwZmyr06r7YBZp4yM1W2C23m9",
+   "clip_v1": "REGENERATE Q5: ghost second leg/kneecap appears at 0.8s and 2.4s -> single-leg lock, reduced motion (v2)",
+   "clip_v2": "USE"
+  },
+  "B17": {
+   "beat_id": "B17",
+   "retries": [],
+   "image_verdict": "USE",
+   "kling_job": "AfiCVGPs2Fv7iOjF5KyBq7N1ufdcIcnibywiODxK9O1xxYYTg7Lt4_jg60hMWmbuQfGhznY8",
+   "clip": "USE"
+  },
+  "B18": {
+   "beat_id": "B18",
+   "retries": [],
+   "t2i_job": "8bd872fa-3ab7-4cb9-94e1-37a648b5a981",
+   "model": "nano_banana_pro",
+   "image_verdict": "USE",
+   "kling_job": "AfYRIFij5U_ON-4AtNLWR_1sMc2wspZgPJhFSZ_njOHzbk3ibttPY4xuj2WSeMWkSHAXN5Ai",
+   "clip": "USE (step-up small but strap holds)"
+  },
+  "B19": {
+   "beat_id": "B19",
+   "retries": [],
+   "t2i_job": "78556f9a-cd4a-4635-8694-339d8244240d",
+   "model": "nano_banana_pro",
+   "image_verdict": "REGENERATE Q5: prop phone in frame, face not visible -> friend-held vantage, walking toward lens (v2)",
+   "image_verdict_v2": "USE",
+   "kling_job": "Ab99ZEoK...",
+   "clip": "USE"
+  },
+  "B20": {
+   "beat_id": "B20",
+   "retries": [],
+   "t2i_job": "deebcf30-8ce5-48aa-8fc9-5d1502c2d525",
+   "model": "nano_banana_pro",
+   "image_verdict": "USE (product small in frame; S2 sleeves not rolled)",
+   "kling_job": "AfWPkz_QBQI0J2OsoLSRnvpXw9iG89FFpGtqAl9_T4c7mwylB0D_neEBCq11Lqz26D8hdG8y",
+   "clip": "USE"
+  },
+  "B21": {
+   "beat_id": "B21",
+   "retries": [],
+   "t2i_job": "f79c3b87-c0f3-4e07-9cfb-787055a55886",
+   "model": "nano_banana_pro",
+   "image_verdict": "REGENERATE Q2: product reads as two-band hinged brace -> single-band clause + negatives (v2)",
+   "image_verdict_v2": "REGENERATE Q1: wrong subject/scene (woman gardening), product above knee -> reroll same v2 prompt (v3, final)",
+   "t2i_job_v3": "293bee71-4cfe-4a59-8286-c65065d95eaa",
+   "image_verdict_v3": "REGENERATE Q2 again: open-patella sleeve brace + readable signs. Budget spent -> keep v1 (product small, two-band read) as best-of; flagged",
+   "kling_job": "AeEJ5Z6z...",
+   "clip": "USE best-of (product reads as two-band brace; image budget spent) - flagged"
+  },
+  "B22": {
+   "beat_id": "B22",
+   "retries": [],
+   "t2i_job": "5877e966-633a-4d9d-b713-2cbd6dfd99c9",
+   "model": "nano_banana_pro",
+   "image_verdict": "USE",
+   "kling_job": "AQrq6D8ARdUwKeBk7xTsxbCLizpRxOqIOkdH0WcBg4oSV90QhtKFXIw9IuJGmUD9BIO_P6A0",
+   "clip_v1": "REGENERATE Q2/Q3: straps turn edge-on at 3s, second person arm enters at 3.6s -> hold-facing motion + negatives (v2)",
+   "kling_job_v2": "ASDtOsBO...",
+   "clip_v2": "USE"
+  },
+  "B25": {
+   "beat_id": "B25",
+   "retries": [],
+   "t2i_job": "3d5472b6-2ee6-4b32-988e-46bfacfe12b8",
+   "model": "nano_banana_pro",
+   "image_verdict": "REGENERATE Q1: strap already at kneecap, no slide-up possible -> hand-width gap clause (v2)",
+   "image_verdict_v2": "BEST-OF: strap again rendered at seated position under kneecap (2nd attempt same fault) -> keep v2, I2V motion changed from slide-up to press-and-snug in place; flagged",
+   "kling_job": "AbPYG5ws...",
+   "clip": "USE"
+  },
+  "B23": {
+   "beat_id": "B23",
+   "retries": [],
+   "t2i_job": "da32cdf9-cd78-405f-ae0b-008e861511dd",
+   "model": "nano_banana_pro",
+   "image_verdict": "USE",
+   "kling_job": "ATWu-lp7jjiOcZNSesWTH1OGDQ2RIfPKaVi3gkKsduVlXBQBFBTMa0wtPSKEJgGHO5gGYAP2",
+   "clip": "USE"
+  },
+  "B24": {
+   "beat_id": "B24",
+   "retries": [],
+   "t2i_job": "310e8c05-b06a-4262-8e52-883ca0b84acd",
+   "model": "nano_banana_pro",
+   "image_verdict": "BLOCKED nsfw false positive on platform -> resubmit",
+   "image_verdict_v2": "USE (resubmit after platform nsfw false positive; glasses on Carol - minor continuity flag)",
+   "kling_job": "AVHPH8dO...",
+   "clip": "USE"
+  },
+  "B26": {
+   "beat_id": "B26",
+   "retries": [],
+   "t2i_job": "b3cef59b-f3b7-4afe-a974-15b655097b2c",
+   "model": "nano_banana_pro",
+   "image_verdict": "REGENERATE Q4/Q1: rail mirrored vs B14 (screen-right) and hand gripping rail -> B14 frame as stair ref, hands free clause (v2)",
+   "image_verdict_v2": "USE",
+   "kling_job": "AdHMtL-b...",
+   "clip": "USE"
+  }
+ },
+ "spend": {
+  "kling": 192,
+  "kie": 630,
+  "higgsfield_est": "~2.75x6 + 2x~20"
+ },
+ "events": [
+  {
+   "ts": "2026-09-25T10:43:58Z",
+   "msg": "Run start. Balances: Higgsfield 23686.92, Kling 13197, Kie 126822.8. Caps (E0 Mode 1 default): Higgsfield 600, Kling 3000, Kie 2000. ElevenLabs check PASS (533 free slots)."
+  },
+  {
+   "ts": "2026-09-25T10:43:58Z",
+   "msg": "ADJUST: British ethnicity for all avatars -> every cast member written White British, UK settings; overrides nothing above layer 5."
+  },
+  {
+   "ts": "2026-09-25T10:45:34Z",
+   "msg": "S1 marker (left eyelid droop) faint; S3 marker (crooked nose) did not render -> identity markers read off the render per \u00a719: S3 = dense freckles, right brow higher. Not a panel failure, no reroll (\u00a719 never reroll for taste)."
+  },
+  {
+   "ts": "2026-09-25T10:47:20Z",
+   "msg": "PLATE-LIVING anchors revised before submission: sofa beige fabric + wooden side table, read off the property plate's sight-line into the living room (\u00a730G sight-line consistency)."
+  },
+  {
+   "ts": "2026-09-25T11:01:35Z",
+   "msg": "Voice: clone Identity = bZKwARZ93x98MmNw9MTG from Seedance source d1641850 (630 Kie credits). Source median F0 198 Hz; accent read not instrument-verifiable -> flagged."
+  },
+  {
+   "ts": "2026-09-25T11:06:24Z",
+   "msg": "TTS body v1 (4 takes, flow G4HwJ2h0568RZ1ldDW1V): every word present in all 4; E1 TTS-gaps FAIL (17-24 gaps >0.4s, 75-84s). Re-render once as one paragraph (v2)."
+  },
+  {
+   "ts": "2026-09-25T11:12:55Z",
+   "msg": "Voice master: Identity_master.mp3 = BODY_a (v1 take kp5aECTSaoSqnNTiwmtj) with 17 silences >0.30s at -40dB shortened to 0.30s (5.1s removed, no voiced audio touched) after the one re-render (v2) also failed E1 TTS gaps; 77.05s; every word present. Hooks: HK1_a MusMLBoMTGd33VSvsg15, HK2_d O7nY9k0PRBEkYNnwinST, HK3_c iVHcHtHhrz91vjD68M5b."
+  },
+  {
+   "ts": "2026-09-25T11:15:53Z",
+   "msg": "ALIAS_MISMATCH: Higgsfield connector logged nano_banana_flash for every nano_banana_2 call (HK1-01 75845202, HK2-01 36a82c7b, HK3-01 521689a5, B01 82743baf, B02 811182c7, B03 e2181507). Per \u00a75/E1 flash = failed generation: discarded unjudged. Resubmitted as nano_banana_pro, which the connector logs as nano_banana_2 (arsenal; = the \u00a718A lock for volume/mechanism). All remaining Nano Banana beats route as nano_banana_pro."
+  },
+  {
+   "ts": "2026-09-25T11:19:10Z",
+   "msg": "\u00a734 global correction: prop-phone wording in SEED-CANDID made the model draw a phone with camera UI (VO-01 v2, HK2-01). Added 'no phone in frame, no second phone, no phone screen, no camera app interface, no recording icon' to every person-seed negative from B04 on. HK2-01 cropped 9:16 (top 87.5%) to remove the phone; HK1-01, B03 USE."
+  },
+  {
+   "ts": "2026-09-25T11:24:55Z",
+   "msg": "I2V route: kling-video-v3_0 (first_image start frame, prefer_multi_shots false, 1080p, enable_audio true). kling-video-v3_0_omni on this connector takes reference images only (no first-frame input), so v3_0 is used to honour the \u00a74 start-image requirement. Measured cost 12 credits/s."
+  },
+  {
+   "ts": "2026-09-25T11:33:23Z",
+   "msg": "\u00a737 I2V trims (Kling-direct 2,500 ceiling): worn beats carry PLACE-LOCK-C/PLACE-BENT first clause (full form in the T2I seed), selected NEG-PLACE/NEG-ORIENT/NEG-WARP-P/NEG-SEAT clauses; B08/B16 drop HOLD-AC and ANAT-MOD6-S's product-tone sentence (four load-bearing clauses, NEG-EXTERNAL, NEG-FLOW and exit kept); ORIENT-C omitted in I2V (rear never in shot) - budget-forced, flagged."
+  },
+  {
+   "ts": "2026-09-25T11:35:39Z",
+   "msg": "B14/B26 camera moved to the top landing (climbing toward camera) so the shell faces the lens; STAIR_GEO_DOWN recorded as the ascent geography (\u00a730D ascent/descent invert the geography)."
+  },
+  {
+   "ts": "2026-09-25T11:42:29Z",
+   "msg": "\u00a734 global: RIG-RVC lateral orbit morphs anatomy/product on Kling v3 (B02, B08). Mechanism beats B02/B08/B16 use a slow push-in, no orbit."
+  },
+  {
+   "ts": "2026-09-25T11:48:10Z",
+   "msg": "Higgsfield submit: B10 v2 resubmit b4532a48-f5eb-40ec-a5e0-87bf2f00458a, B16 919262fa-abf1-4474-949a-3749ff1e6c5f, B17 034a31e1-878d-478a-8cc9-0cf44670009d"
+  },
+  {
+   "ts": "2026-09-25T11:50:43Z",
+   "msg": "Kling spend now 1056/3000 (B02v3 36, B10 60, B14 48, B15 36, B16 48, B17 36)"
+  },
+  {
+   "ts": "2026-09-25T12:01:23Z",
+   "msg": "Kling spend now 1284/3000"
+  },
+  {
+   "ts": "2026-09-25T12:04:12Z",
+   "msg": "I2V iterations: B19 v2 (motion/framing matched to v2 frame), B26 v2 (mid-flight), B25 v2 (press-and-snug in place), B16 v2, B02 v3"
+  },
+  {
+   "ts": "2026-09-25T12:05:15Z",
+   "msg": "Kling spend now 1416/3000"
+  },
+  {
+   "ts": "2026-09-25T12:06:36Z",
+   "msg": "Kling spend now 1536/3000"
+  },
+  {
+   "ts": "2026-09-25T12:08:35Z",
+   "msg": "Kling spend now 1704/3000"
+  },
+  {
+   "ts": "2026-09-25T12:10:24Z",
+   "msg": "Assembly dry-run: B25 FLASH 0.53s on \"Put one on,\" -> B26 phrase re-split to \"stairs will tell you.\" so B25 covers \"Put one on, and your own\" (\u00a730H flash fix)"
+  },
+  {
+   "ts": "2026-09-25T12:21:10Z",
+   "msg": "Variants run 1: HK1/HK3 FAIL duration 2-3 frames off, body_identical False (hook masters not whole-frame). Fix: HK1/HK3 masters padded with tail silence to 5.10s/5.30s WAV (no words changed); rerun."
+  },
+  {
+   "ts": "2026-09-25T12:24:08Z",
+   "msg": "Variants run 2: body identical True, HK1/HK3 1-frame HOLE_REMAINS at tail (body master 77.09s not whole-frame). Fix: all masters as WAV padded to whole frames (body 77.10, HK1 5.10, HK2 3.70, HK3 5.30); rerun."
+  },
+  {
+   "ts": "2026-09-25T12:29:00Z",
+   "msg": "Variants run 3: HK3 FAIL B17 FLASH 0.80s (float edge on \"Adjustable.\"). Fix: B18 phrase re-split to \"No sores. No rolling down.\" so B17 covers \"Adjustable. No slipping.\"; rerun."
+  },
+  {
+   "ts": "2026-09-25T12:38:04Z",
+   "msg": "Final: variants PASS (HK1 82.2s, HK2 80.8s, HK3 82.4s, body identical). Links on Kie temp host. Spend by balance: Higgsfield 204/600, Kling 1788/3000, Kie 630/2000 logged (account fell 8568 - not this build). OUTPUT.md + REPORT.md in Drive."
+  }
+ ]
+}

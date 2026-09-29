@@ -1,0 +1,35 @@
+{
+ "beat": "A4-M1",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (Kling account short, §5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"a4_m1\",\"subject\":\"a medical animation of a knee in side view, a strap shielding the tendon with a blue glow\",\"camera\":{\"movement\":\"Virtual camera already drifting on the first frame, never static at entry. A slow steady lateral travel across the subject, single direction, constant unhurried speed, mechanically smooth — no rotation around the subject, no orbit, no push, no sway, no handheld physics, no focus hunt, no reaction to anything in the scene. Total travel stays small, roughly a tenth of frame width across the clip. Still drifting on the final frame, the move never completing and never coming to rest.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already cycling on the first frame: a warm orange pulse of load travels down the thigh muscle and reaches the blue glow around the strap, where it is stopped and absorbed, fading into the blue; the blue shield brightens as it takes the hit, then settles, and the tendon inside it stays calm and pale. One pulse over about two seconds. The next pulse is travelling down the thigh at the cut. The strap keeps its exact shape, size and wordmark in every frame and moves only with what holds it; its rigid shell never bends, flexes or changes proportion. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Exactly as in the start frame.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no strap sliding up or down the leg, no glow inside the joint, no glow on the kneecap, no pause, no freeze, no music, no speech, no orange below the strap, no glow inside the joint, no second leg\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_182932_fc400c13-25a4-409a-b275-0ccf9d5a18a4.png",
+ "start_approved": false,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 4,
+ "fix_note": "frame: user asked for a new picture where the strap protects the tendon → blue shield frame; motion: the wave stops at the shield",
+ "risks": [
+  {
+   "risk": "anatomy melts or loses structure",
+   "prevented_by": "HOLD-C + NEG-WARP-C, one load pulse only"
+  },
+  {
+   "risk": "labels or text appear",
+   "prevented_by": "T2I ANAT-NEG bans labels; start frame has none"
+  },
+  {
+   "risk": "camera orbits away from the tendon",
+   "prevented_by": "RIG-RVD small lateral drift only"
+  }
+ ],
+ "user_go": "user, 2026-09-28: pressed Fix on the card and said \"fix those\""
+}

@@ -1,0 +1,1 @@
+{"src": "raw_BODY.wav", "out": "master/BODY.wav", "duration_in_s": 116.53, "breaths_cut": [], "source_end_db": -44.8, "source_end_clipped": true, "verify": {"duration_s": 113.711, "breaths_left": [], "gaps_over_0_4": [], "tail_last_db": -49.8, "status": "PASS"}}

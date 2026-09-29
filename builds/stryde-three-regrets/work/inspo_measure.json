@@ -1,0 +1,469 @@
+[
+  {
+    "link": "builds/stryde-three-regrets/intake/inspo.mp4",
+    "role": "primary",
+    "status": "OK",
+    "file": "builds/stryde-three-regrets/intake/inspo.mp4",
+    "duration_s": 169.95,
+    "resolution": "360x640",
+    "aspect": "9:16",
+    "fps": 30.0,
+    "has_audio": true,
+    "shot_count": 49,
+    "mean_shot_s": 3.47,
+    "cut_times_s": [
+      2.7,
+      5.03,
+      8.23,
+      11.1,
+      14.6,
+      15.87,
+      18.37,
+      20.53,
+      22.13,
+      33.67,
+      36.03,
+      38.8,
+      42.0,
+      47.17,
+      49.37,
+      58.6,
+      60.03,
+      61.3,
+      63.2,
+      65.67,
+      68.97,
+      76.63,
+      81.13,
+      82.43,
+      83.8,
+      86.43,
+      89.23,
+      93.17,
+      96.17,
+      99.07,
+      103.47,
+      105.4,
+      108.67,
+      111.77,
+      114.57,
+      119.4,
+      121.53,
+      121.57,
+      125.33,
+      131.5,
+      135.8,
+      135.83,
+      139.53,
+      145.7,
+      148.2,
+      150.97,
+      152.03,
+      156.63
+    ],
+    "silences_-40dB": [],
+    "silences_-30dB": [],
+    "shots": [
+      {
+        "shot": "S01",
+        "t_in": 0.0,
+        "t_out": 2.7,
+        "len_s": 2.7,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S01_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S01_mid.jpg"
+      },
+      {
+        "shot": "S02",
+        "t_in": 2.7,
+        "t_out": 5.03,
+        "len_s": 2.33,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S02_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S02_mid.jpg"
+      },
+      {
+        "shot": "S03",
+        "t_in": 5.03,
+        "t_out": 8.23,
+        "len_s": 3.2,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S03_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S03_mid.jpg"
+      },
+      {
+        "shot": "S04",
+        "t_in": 8.23,
+        "t_out": 11.1,
+        "len_s": 2.87,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S04_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S04_mid.jpg"
+      },
+      {
+        "shot": "S05",
+        "t_in": 11.1,
+        "t_out": 14.6,
+        "len_s": 3.5,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S05_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S05_mid.jpg"
+      },
+      {
+        "shot": "S06",
+        "t_in": 14.6,
+        "t_out": 15.87,
+        "len_s": 1.27,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S06_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S06_mid.jpg"
+      },
+      {
+        "shot": "S07",
+        "t_in": 15.87,
+        "t_out": 18.37,
+        "len_s": 2.5,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S07_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S07_mid.jpg"
+      },
+      {
+        "shot": "S08",
+        "t_in": 18.37,
+        "t_out": 20.53,
+        "len_s": 2.16,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S08_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S08_mid.jpg"
+      },
+      {
+        "shot": "S09",
+        "t_in": 20.53,
+        "t_out": 22.13,
+        "len_s": 1.6,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S09_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S09_mid.jpg"
+      },
+      {
+        "shot": "S10",
+        "t_in": 22.13,
+        "t_out": 33.67,
+        "len_s": 11.54,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S10_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S10_mid.jpg"
+      },
+      {
+        "shot": "S11",
+        "t_in": 33.67,
+        "t_out": 36.03,
+        "len_s": 2.36,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S11_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S11_mid.jpg"
+      },
+      {
+        "shot": "S12",
+        "t_in": 36.03,
+        "t_out": 38.8,
+        "len_s": 2.77,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S12_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S12_mid.jpg"
+      },
+      {
+        "shot": "S13",
+        "t_in": 38.8,
+        "t_out": 42.0,
+        "len_s": 3.2,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S13_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S13_mid.jpg"
+      },
+      {
+        "shot": "S14",
+        "t_in": 42.0,
+        "t_out": 47.17,
+        "len_s": 5.17,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S14_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S14_mid.jpg"
+      },
+      {
+        "shot": "S15",
+        "t_in": 47.17,
+        "t_out": 49.37,
+        "len_s": 2.2,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S15_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S15_mid.jpg"
+      },
+      {
+        "shot": "S16",
+        "t_in": 49.37,
+        "t_out": 58.6,
+        "len_s": 9.23,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S16_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S16_mid.jpg"
+      },
+      {
+        "shot": "S17",
+        "t_in": 58.6,
+        "t_out": 60.03,
+        "len_s": 1.43,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S17_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S17_mid.jpg"
+      },
+      {
+        "shot": "S18",
+        "t_in": 60.03,
+        "t_out": 61.3,
+        "len_s": 1.27,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S18_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S18_mid.jpg"
+      },
+      {
+        "shot": "S19",
+        "t_in": 61.3,
+        "t_out": 63.2,
+        "len_s": 1.9,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S19_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S19_mid.jpg"
+      },
+      {
+        "shot": "S20",
+        "t_in": 63.2,
+        "t_out": 65.67,
+        "len_s": 2.47,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S20_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S20_mid.jpg"
+      },
+      {
+        "shot": "S21",
+        "t_in": 65.67,
+        "t_out": 68.97,
+        "len_s": 3.3,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S21_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S21_mid.jpg"
+      },
+      {
+        "shot": "S22",
+        "t_in": 68.97,
+        "t_out": 76.63,
+        "len_s": 7.66,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S22_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S22_mid.jpg"
+      },
+      {
+        "shot": "S23",
+        "t_in": 76.63,
+        "t_out": 81.13,
+        "len_s": 4.5,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S23_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S23_mid.jpg"
+      },
+      {
+        "shot": "S24",
+        "t_in": 81.13,
+        "t_out": 82.43,
+        "len_s": 1.3,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S24_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S24_mid.jpg"
+      },
+      {
+        "shot": "S25",
+        "t_in": 82.43,
+        "t_out": 83.8,
+        "len_s": 1.37,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S25_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S25_mid.jpg"
+      },
+      {
+        "shot": "S26",
+        "t_in": 83.8,
+        "t_out": 86.43,
+        "len_s": 2.63,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S26_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S26_mid.jpg"
+      },
+      {
+        "shot": "S27",
+        "t_in": 86.43,
+        "t_out": 89.23,
+        "len_s": 2.8,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S27_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S27_mid.jpg"
+      },
+      {
+        "shot": "S28",
+        "t_in": 89.23,
+        "t_out": 93.17,
+        "len_s": 3.94,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S28_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S28_mid.jpg"
+      },
+      {
+        "shot": "S29",
+        "t_in": 93.17,
+        "t_out": 96.17,
+        "len_s": 3.0,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S29_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S29_mid.jpg"
+      },
+      {
+        "shot": "S30",
+        "t_in": 96.17,
+        "t_out": 99.07,
+        "len_s": 2.9,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S30_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S30_mid.jpg"
+      },
+      {
+        "shot": "S31",
+        "t_in": 99.07,
+        "t_out": 103.47,
+        "len_s": 4.4,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S31_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S31_mid.jpg"
+      },
+      {
+        "shot": "S32",
+        "t_in": 103.47,
+        "t_out": 105.4,
+        "len_s": 1.93,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S32_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S32_mid.jpg"
+      },
+      {
+        "shot": "S33",
+        "t_in": 105.4,
+        "t_out": 108.67,
+        "len_s": 3.27,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S33_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S33_mid.jpg"
+      },
+      {
+        "shot": "S34",
+        "t_in": 108.67,
+        "t_out": 111.77,
+        "len_s": 3.1,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S34_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S34_mid.jpg"
+      },
+      {
+        "shot": "S35",
+        "t_in": 111.77,
+        "t_out": 114.57,
+        "len_s": 2.8,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S35_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S35_mid.jpg"
+      },
+      {
+        "shot": "S36",
+        "t_in": 114.57,
+        "t_out": 119.4,
+        "len_s": 4.83,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S36_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S36_mid.jpg"
+      },
+      {
+        "shot": "S37",
+        "t_in": 119.4,
+        "t_out": 121.53,
+        "len_s": 2.13,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S37_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S37_mid.jpg"
+      },
+      {
+        "shot": "S38",
+        "t_in": 121.53,
+        "t_out": 121.57,
+        "len_s": 0.04,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S38_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S38_mid.jpg"
+      },
+      {
+        "shot": "S39",
+        "t_in": 121.57,
+        "t_out": 125.33,
+        "len_s": 3.76,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S39_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S39_mid.jpg"
+      },
+      {
+        "shot": "S40",
+        "t_in": 125.33,
+        "t_out": 131.5,
+        "len_s": 6.17,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S40_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S40_mid.jpg"
+      },
+      {
+        "shot": "S41",
+        "t_in": 131.5,
+        "t_out": 135.8,
+        "len_s": 4.3,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S41_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S41_mid.jpg"
+      },
+      {
+        "shot": "S42",
+        "t_in": 135.8,
+        "t_out": 135.83,
+        "len_s": 0.03,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S42_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S42_mid.jpg"
+      },
+      {
+        "shot": "S43",
+        "t_in": 135.83,
+        "t_out": 139.53,
+        "len_s": 3.7,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S43_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S43_mid.jpg"
+      },
+      {
+        "shot": "S44",
+        "t_in": 139.53,
+        "t_out": 145.7,
+        "len_s": 6.17,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S44_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S44_mid.jpg"
+      },
+      {
+        "shot": "S45",
+        "t_in": 145.7,
+        "t_out": 148.2,
+        "len_s": 2.5,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S45_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S45_mid.jpg"
+      },
+      {
+        "shot": "S46",
+        "t_in": 148.2,
+        "t_out": 150.97,
+        "len_s": 2.77,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S46_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S46_mid.jpg"
+      },
+      {
+        "shot": "S47",
+        "t_in": 150.97,
+        "t_out": 152.03,
+        "len_s": 1.06,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S47_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S47_mid.jpg"
+      },
+      {
+        "shot": "S48",
+        "t_in": 152.03,
+        "t_out": 156.63,
+        "len_s": 4.6,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S48_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S48_mid.jpg"
+      },
+      {
+        "shot": "S49",
+        "t_in": 156.63,
+        "t_out": 169.95,
+        "len_s": 13.32,
+        "frame_in": "builds/stryde-three-regrets/intake/frames/inspo/S49_in.jpg",
+        "frame_mid": "builds/stryde-three-regrets/intake/frames/inspo/S49_mid.jpg"
+      }
+    ],
+    "second_sheets": [
+      "builds/stryde-three-regrets/intake/frames/inspo/sheet_01.jpg",
+      "builds/stryde-three-regrets/intake/frames/inspo/sheet_02.jpg",
+      "builds/stryde-three-regrets/intake/frames/inspo/sheet_03.jpg",
+      "builds/stryde-three-regrets/intake/frames/inspo/sheet_04.jpg",
+      "builds/stryde-three-regrets/intake/frames/inspo/sheet_05.jpg",
+      "builds/stryde-three-regrets/intake/frames/inspo/sheet_06.jpg"
+    ]
+  }
+]

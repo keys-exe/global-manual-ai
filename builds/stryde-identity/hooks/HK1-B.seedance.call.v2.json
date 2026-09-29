@@ -1,0 +1,38 @@
+{
+ "beat": "HK1-B",
+ "connector": "seedance",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "@image1 is the opening frame: the clip opens on exactly this framing, light and camera position. @image2 and @image3 are the strap, one object seen from the front and from behind, exactly as shown: a rigid matte-black shell with two peaks on top, a chrome slide at each end, a black woven band. @image4 is the woman: her age, build, hands and clothes.\n\nExtreme close-up of her knee wearing the strap as she steps down the carpeted staircase at home, one slow step. Then the camera eases back to show her hand resting on the stair rail. The strap stays exactly where it is on her right knee and keeps its shape; the shell is rigid and never bends. Her face stays out of frame. No text, no music, no speech.\n",
+ "duration": 5,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": "HK1-B_v1.png",
+ "start_approved": true,
+ "pinned": false,
+ "files": [
+  "x",
+  "x",
+  "x",
+  "x"
+ ],
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "subject_motion": "travels",
+ "pace": "unhurried",
+ "risks": [
+  {
+   "risk": "strap bends or changes shape",
+   "prevented_by": "product refs @image2/@image3 + rigid shell clause"
+  },
+  {
+   "risk": "opening re-composed / different person or place",
+   "prevented_by": "@image1 as the opening frame"
+  },
+  {
+   "risk": "over-specified motion distorts",
+   "prevented_by": "one plain action at an easy pace (user: simple prompts)"
+  }
+ ],
+ "fix_note": "User: follow the visual (VN01 bottom) → added the camera easing back to her hand on the rail; @image4 = C1 for the reveal"
+}

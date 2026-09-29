@@ -1,0 +1,42 @@
+{
+  "scene": "SC02-NIGHT-FRANK",
+  "story_part": "Problem",
+  "length_s": 21.767,
+  "theme": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif"
+  ],
+  "avoid": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals"
+  ],
+  "tempo": "slow",
+  "sections": [
+    {
+      "name": "Lying awake",
+      "start": 0.0,
+      "end": 21.767,
+      "energy": "low",
+      "styles": [
+        "very sparse solo piano, single notes",
+        "cold night stillness",
+        "fear and loneliness",
+        "lots of silence between notes"
+      ],
+      "avoid": [
+        "strings",
+        "warmth"
+      ]
+    }
+  ],
+  "timeline_at_HK1_s": 84.4333,
+  "scene_gain_db": -2
+}

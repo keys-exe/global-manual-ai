@@ -1,0 +1,168 @@
+"""Step 5 — act map (E4) for stryde-cascade. Writes ../actmap.json, ../angles_rows.json, ../ACTMAP.md."""
+import json, pathlib
+HERE = pathlib.Path(__file__).parent; B = HERE.parent
+# light plans (§30K), room terms
+LIGHT = {
+ "P1-HALL": "C1's hall: front-door frosted glass (west, street side) + landing window at the stairhead (west)",
+ "P1-FRONT": "C1's front room: bay window on the far wall (west, street)",
+ "C2-HALL": "C2's hall: tall landing window at the stairhead (south) + front-door glass",
+ "WORK": "N's workshop: small side window, camera-left of the TH position (south)",
+ "VAN": "N's van: overcast daylight through the open sliding side door",
+ "ANAT": "§12A anatomical register (ANAT-LIGHT)",
+}
+def R(beat, act, phrase, key, layout, subj, loc, day, action, pace, camera, staging, height, side, scale, why,
+      plane, dof="deep", fg="clean", key_side="L", time="afternoon", arc="", pin_end=False, max_=6, product="absent", kind="BR", face=False, note="", mirror_of=None):
+    return dict(beat=beat, act=act, phrase=phrase, key=key, layout=layout, subject=subj, location=loc, story_day=day,
+      action=action, pace=pace, camera=camera, staging=staging, pin_end=pin_end, max=max_, product_state=product, type=kind,
+      angle=dict(height=height, side=side, scale=scale, fg=fg, why=why, mirror_of=mirror_of),
+      focus=dict(plane=plane, dof=dof, rack=None, moving_subject=False),
+      light=dict(source=LIGHT[loc], key_side=key_side, time=time, arc=arc, why=("the only window is at the stairhead behind the subject; face small and not speaking" if key_side=="back" else "")), face=face, duration="pending-master", note=note)
+FULL = {"type": "full"}; SPLIT = {"type": "split", "broll_pos": "bottom", "ratio": 0.5}
+PIP = {"type": "pip", "over": "th", "corner": "br", "scale": 0.5, "border": 0}
+A_H = "hook: the problem made visible"
+ROWS = [
+ # ---- Hook 1 (Door A)
+ R("HK1-B1","Hook 1","It is a weight problem, and the weight has to go somewhere.","weight",SPLIT,"C1","P1-HALL",2,
+   "C1 steps down one stair, her whole weight dropping onto her right leg as her hand grips the banister","one step, slow, about 2s","sway","STAIR-DOWN, one step, hand on the rail",
+   "low","three-quarter","MEDIUM","low on the stairs: the weight coming down onto the knee","hands",dof="deep",key_side="R",arc=A_H,note="EG02 split — C1's knee and hand on the step"),
+ R("HK1-B2","Hook 1","I fit stair rails for a living.","rails",FULL,"N-hands","P1-HALL",0,
+   "N's hands drive the last screw into a brass bracket of a new handrail on C1's stair wall","one screw, 2s","sway","hands at a wall, no ladder",
+   "eye","three-quarter","CU","hands at work: this is his trade","hands",key_side="L",arc=A_H,note="N wears the navy fleece (cuff visible)"),
+ R("HK1-B3","Hook 1","I have watched where it goes.","watched",PIP,"C1","P1-HALL",2,
+   "C1, seen from the foot of the stairs, lowers herself one step down, leading with her good leg, hand sliding on the rail","one step, slow","sway","STAIR-DOWN, seen from below",
+   "low","front","FULL","seen from where he stands: watching her come down","background",fg="through",key_side="back",arc=A_H,
+   note="EG01 pip; seen through the banister spindles; backlit by the landing window — why: the stairhead window is behind her; face small and not speaking"),
+ # ---- Hook 2 (Door B)
+ R("HK2-B1","Hook 2","The first one goes at the top of the stairs.","top",FULL,"N-hands","P1-HALL",0,
+   "N's hand runs along a short new oak rail fixed at the top two steps, checking it, a spirit level resting on it","one slow slide of the hand, 2s","sway","hand on rail, standing on the landing",
+   "high","three-quarter","MEDIUM","high from the landing: the top of the stairs","hands",key_side="R",arc=A_H),
+ R("HK2-B2","Hook 2","The second one goes the whole way down.","whole",FULL,"none","P1-HALL",2,
+   "the empty staircase seen from the hall floor: a second rail now runs the full length of the wall side, top to bottom; the camera tilts slowly up it","slow tilt, 3s","one travelling move on a still subject: tilt up","none",
+   "ground","front","WIDE","from the floor up the whole flight: the length of it","deep",key_side="back",arc=A_H,max_=6,note="no person; the rail reads from bottom to top"),
+ R("HK2-B3","Hook 2","I would like to stop being called back for the second one.","called",SPLIT,"N","VAN",0,
+   "N sits in the open side door of his van, phone to his ear, listening, then lowers his eyes","one small nod, slow","sway","seated, still",
+   "eye","profile","MEDIUM","profile: distance, the call he doesn't want","eyes",dof="medium",key_side="R",arc=A_H,face=True,
+   note="silent — he listens, lips closed (no lip-sync); a plain phone, no logo"),
+ # ---- Hook 3 (Door C)
+ R("HK3-B1","Hook 3","When I am asked to move a bed into a front room,","bed",FULL,"none","P1-FRONT",3,
+   "the front room with the single divan against the wall where the sofa was; slow push toward the bed","slow push-in, 3s","one travelling move on a still subject: push-in","none",
+   "eye","three-quarter","WIDE","the room from its doorway: what the house has become","deep",key_side="front",arc="hook: after the cascade",max_=6),
+ R("HK3-B2","Hook 3","the knee has usually been bad for about six years.","knee",SPLIT,"C1","P1-FRONT",3,
+   "C1 sits on the edge of the downstairs bed and rubs her right knee with both hands, slowly","one rub, slow, 3s","sway","seated, still",
+   "high","three-quarter","MEDIUM","high: small, worn down","hands",key_side="L",arc="hook: after the cascade",note="D3 wardrobe: quilted dressing gown"),
+ R("HK3-B3","Hook 3","It arrives one small change at a time,","change",PIP,"none","P1-HALL",3,
+   "C1's slippers left at the foot of the stairs, a walking stick leaning on the newel post; nothing moves but the light","still, 3s","sway","none",
+   "ground","three-quarter","CU","floor level: the small things left at the stairs","foreground",fg="clean",key_side="back",arc="hook: after the cascade",max_=6),
+ # ---- Act 1 — the sequence
+ R("A1-B1","Act 1","One knee starts hurting on the stairs.","hurting",FULL,"C1","P1-HALL",1,
+   "C1 halfway up her stairs stops on a step and presses her hand to her left knee, wincing","one stop, slow","sway","STAIR-UP paused, hand on rail",
+   "low","three-quarter-back","MEDIUM","low behind her: the climb ahead","hands",key_side="R",time="morning",arc="Act 1: ordinary morning light, the problem starting",note="D1 wardrobe: lilac cardigan, navy skirt"),
+ R("A1-B2","Act 1","You lead with the good leg, every step.","lead",SPLIT,"C1","P1-HALL",1,
+   "C1's feet and legs climbing two steps, always lifting the right foot first and bringing the left up to meet it","two steps, one per 1.5s","sway","STAIR-UP, legs only",
+   "ground","profile","CU","ground level: the feet, step by step","foreground",key_side="R",time="morning",arc="Act 1: ordinary morning light, the problem starting"),
+ R("A1-B3","Act 1","Within a year or two it starts as well.","starts",PIP,"C1","P1-HALL",1,
+   "C1 sitting on the second stair rubs her right knee now, her other hand on the left","one rub, slow","sway","seated on a step",
+   "high","front","MEDIUM","high: small, both knees now","hands",key_side="L",time="morning",arc="Act 1: ordinary morning light, the problem starting"),
+ R("A1-B4","Act 1","Then a rail at the top.","top",FULL,"C1","P1-HALL",2,
+   "C1 at the top of the stairs grips the short new oak rail with her right hand before taking the first step down","one grip and lean, slow","sway","STAIR-DOWN start, hand on rail",
+   "high","three-quarter","MEDIUM","high from the landing: the drop below her","hands",key_side="back",arc="Act 1: afternoon, the rails arrive",note="D2 wardrobe: navy cardigan over floral blouse; backlit by the landing window — why: she stands with it behind her"),
+ R("A1-B5","Act 1","Then a rail all the way down.","down",FULL,"C1","P1-HALL",2,
+   "C1 comes down the flight holding a rail with both hands, one either side, one step at a time","one step, slow","sway","STAIR-DOWN, both hands on rails",
+   "low","front","FULL","low from the hall: both rails, both hands","background",key_side="back",arc="Act 1: afternoon, the rails arrive",note="face small; backlit by landing window — why: the only window is at the stairhead"),
+ R("A1-B6","Act 1","Then you stop going up in the afternoon.","afternoon",SPLIT,"C1","P1-HALL",2,
+   "C1 at the foot of the stairs looks up the flight, then turns away from it","one look up, slow","sway","standing, still",
+   "eye","three-quarter-back","MEDIUM","over her shoulder: the stairs she won't climb","background",dof="medium",key_side="L",arc="Act 1: afternoon, the rails arrive"),
+ R("A1-B7","Act 1","Then a bed comes downstairs.","bed",FULL,"C1","P1-FRONT",3,
+   "C1 in her dressing gown lowers herself to sit on the downstairs bed in the front room","one sit, slow, 3s","sway","SIT-DOWN, hand on bedside cabinet",
+   "eye","three-quarter","FULL","the front room, eye level: this is where she lives now","deep",key_side="front",arc="Act 1: the end of the cascade"),
+ # ---- Act 2 — mechanism
+ R("A2-M1","Act 2","Every step on that list is a response to weight landing in one place.","weight",FULL,"anatomy","ANAT",0,
+   "a knee in side view steps down; a pulse of load travels down the thigh and lands on the patellar tendon below the kneecap, which glows","one landing, 2s","locked render camera","none",
+   "eye","profile","CU","anatomy profile: where the load lands","deep",key_side="L",time="n/a",arc="Act 2: mechanism register",kind="MECH",max_=8),
+ R("A2-M2","Act 2","there is a band of tendon about as wide as your thumb.","band",FULL,"anatomy","ANAT",0,
+   "front view of the knee: the patellar tendon just below the kneecap highlights as a band; slow push-in","slow push-in, 3s","one travelling move on a still subject: push-in","none",
+   "eye","front","CU","front anatomy: the band itself","deep",key_side="L",time="n/a",arc="Act 2: mechanism register",kind="MECH",max_=8),
+ R("A2-B1","Act 2","Every step you take lands on it.","lands",SPLIT,"C2","C2-HALL",1,
+   "C2's right knee in shorts as his foot lands on the next step down, the skin below the kneecap tensing","one step down, 1.5s","sway","STAIR-DOWN, legs only",
+   "low","three-quarter","CU","low and close on the landing knee","foreground",key_side="R",time="morning",arc="Act 2: plain morning, explanation"),
+ R("A2-M3","Act 2","Seventeen times your bodyweight.","Seventeen",FULL,"anatomy","ANAT",0,
+   "side view: the tendon under load flares red and compresses as the body weight lands, then eases","one pulse, 2s","locked render camera","none",
+   "eye","profile","ECU","anatomy close: the strain","deep",key_side="L",time="n/a",arc="Act 2: mechanism register",kind="MECH",max_=8,note="EG07 overlay 17× in CapCut"),
+ R("A2-B2","Act 2","Put your finger there and press.","finger",FULL,"C2","C2-HALL",1,
+   "C2 seated on his bottom stair presses one fingertip into the soft spot just below his right kneecap","one press, slow","sway","seated on the bottom step",
+   "high","front","CU","looking down at his knee as he does: his point of view","hands",key_side="L",time="morning",arc="Act 2: plain morning, explanation"),
+ R("A2-B3","Act 2","Coming down is worse than going up.","Coming",FULL,"C2","C2-HALL",1,
+   "C2 comes down two stairs, his right hand on the banister, knee bending under him","one step per 1.5s","sway","STAIR-DOWN, hand on rail",
+   "low","three-quarter","FULL","low from the hall: the descent","background",key_side="back",time="morning",arc="Act 2: plain morning, explanation",note="backlit by landing window — why: the only window is at the stairhead; not speaking"),
+ R("A2-M4","Act 2","You are catching yourself, and the catch lands on that band.","catch",FULL,"anatomy","ANAT",0,
+   "side view on a descending step: the thigh muscle lengthens and the load snaps down onto the tendon below the kneecap, which flares","one catch, 2s","locked render camera","none",
+   "eye","profile","CU","anatomy profile: the catch","deep",key_side="L",time="n/a",arc="Act 2: mechanism register",kind="MECH",max_=8),
+ # ---- Act 3 — what doesn't fix it
+ R("A3-B1","Act 3","The physio helps and then stops helping.","physio",PIP,"C1","P1-FRONT",2,
+   "C1 lying on the front-room carpet on a towel does a straight-leg raise, slowly, and lowers it","one raise and lower, 3s","sway","floor exercise, whole body in frame",
+   "high","profile","FULL","high: small on the floor","deep",key_side="front",arc="Act 3: flat afternoon, things that don't work",note="D2 wardrobe"),
+ R("A3-B2","Act 3","The gel sits on your skin.","gel",PIP,"C1","P1-FRONT",2,
+   "C1's fingers rub a blob of clear gel over the front of her knee; it shines and sits on the skin","one rub, slow","sway","seated, hands only",
+   "high","front","CU","close, looking down: the gel on the surface","hands",key_side="front",arc="Act 3: flat afternoon, things that don't work",note="plain unbranded tube"),
+ R("A3-B3","Act 3","The pills switch the alarm off.","pills",PIP,"C1","P1-FRONT",3,
+   "C1's hand presses two white tablets out of a plain silver blister pack on the bedside cabinet","one press, 2s","sway","hands only",
+   "overhead","front","CU","overhead: routine, every day","hands",key_side="front",arc="Act 3: flat afternoon, things that don't work",note="plain foil, no brand"),
+ R("A3-B4","Act 3","The sleeve squeezes the whole knee","sleeve",SPLIT,"C1","P1-FRONT",2,
+   "C1 seated pulls a plain grey knitted knee sleeve up over her knee; it squeezes the whole joint","one pull up, slow, 2s","sway","seated, hands and knee",
+   "eye","three-quarter","CU","close and level: the sleeve covering everything","hands",key_side="front",arc="Act 3: flat afternoon, things that don't work",note="generic unbranded sleeve"),
+ # ---- Act 4 — the strap
+ R("A4-P1","Act 4","The strap I keep in the van now is called Stryde.","van",FULL,"N-hands","VAN",0,
+   "N's hand lifts one Stryde strap out of a clear organiser box on the van shelf and turns it to face the lens, wordmark readable","one lift, slow, 2s","sway","held, HELD_GRIPS",
+   "eye","three-quarter","CU","close and level: the reveal","product",key_side="front",arc="Act 4: overcast daylight, the answer",product="held",note="shell faces the lens throughout — no angle change, so no pinned end frame"),
+ R("A4-B1","Act 4","It sits two centimetres below the kneecap, on the tendon.","below",FULL,"C2","C2-HALL",1,
+   "C2 seated on the bottom stair, the strap already on his right knee below the kneecap; he straightens the leg slowly","one straighten, slow","sway","seated, strap worn (PLACE_LOCK)",
+   "low","front","CU","low and close on the knee: exactly where it sits","product",key_side="L",time="morning",arc="Act 4: morning, the answer",product="worn"),
+ R("A4-P2","Act 4","There is a silicone pad inside","pad",PIP,"product","WORK",0,
+   "the strap lying on N's workbench, turned to show the inside of the shell, the plain black pad; slow push-in","slow push-in, 3s","one travelling move on a still subject: push-in","none",
+   "high","three-quarter","ECU","close, looking in: the pad","product",dof="medium",key_side="L",arc="Act 4: the answer",product="object",max_=6),
+ R("A4-M1","Act 4","Your weight gets caught and moved off the worn part before it reaches the joint.","caught",FULL,"anatomy","ANAT",0,
+   "side view: the strap's pad presses on the tendon below the kneecap; the load pulse arrives, is caught at the pad and spreads away, the tendon stays calm","one pulse, 2s","locked render camera","none",
+   "eye","profile","CU","anatomy profile: the load caught","deep",key_side="L",time="n/a",arc="Act 2: mechanism register",kind="MECH",max_=8,product="worn"),
+ R("A4-B2","Act 4","The placement is the whole thing.","placement",SPLIT,"C2","C2-HALL",1,
+   "C2's two fingers laid flat under his kneecap mark the spot, the strap's notch already resting right there against the kneecap's lower edge","one hold, still, 2s","sway","seated, strap worn",
+   "high","front","CU","looking down: the spot","product",key_side="L",time="morning",arc="Act 4: morning, the answer",product="worn"),
+ R("A4-P3","Act 4","Thirty four percent less strain.","Thirty",FULL,"product","WORK",0,
+   "two Stryde straps lying side by side on N's workbench in the window light; slow push-in","slow push-in, 3s","one travelling move on a still subject: push-in","none",
+   "high","front","MEDIUM","high on the bench: the pair","product",dof="medium",key_side="L",arc="Act 4: the answer",product="object",max_=6,note="EG07 overlay 34% in CapCut"),
+ # ---- Act 5 — proof, test, offer, share
+ R("A5-B1","Act 5","I started carrying a couple","couple",SPLIT,"N","VAN",0,
+   "N drops two straps into the organiser box on the van shelf and slides the lid shut","one drop, one slide, 3s","sway","hands at shelf",
+   "eye","three-quarter-back","MEDIUM","over his shoulder: his own van","hands",key_side="front",arc="Act 5: overcast daylight",product="held"),
+ R("A5-B2","Act 5","Because the weight is not landing on that band any more.","weight",FULL,"C2","C2-HALL",1,
+   "C2 walks down his stairs wearing the strap on his right knee, steady, one hand only lightly on the rail","one step per 1.2s, steady","sway","STAIR-DOWN",
+   "low","three-quarter","FULL","low from the hall: easy now","background",key_side="back",time="morning",arc="Act 5: morning, relief",product="worn",note="backlit by landing window — why: the stairhead window; not speaking"),
+ R("A5-B3","Act 5","One knee only. Leave the other bare.","One",FULL,"C2","C2-HALL",1,
+   "C2 standing at the top of his stairs: the strap on his right knee, left knee bare; he shifts his weight onto the right leg","one weight shift, slow","sway","standing on the landing",
+   "high","front","MEDIUM","high from the landing: one strapped, one bare","product",key_side="back",time="morning",arc="Act 5: morning, relief",product="worn",note="waist-down framing"),
+ R("A5-B4","Act 5","Go to your own stairs and come down forwards.","down",FULL,"C2","C2-HALL",1,
+   "C2 comes down forwards two steps without holding the rail, arms loose","one step per 1.2s","sway","STAIR-DOWN, no rail",
+   "eye","front","FULL","level, facing him: forwards, no rail","eyes",dof="medium",key_side="back",time="morning",arc="Act 5: morning, relief",product="worn",face=True,
+   note="backlit by landing window — why: stairhead window; not speaking"),
+ R("A5-P1","Act 5","Two for one, so you do both knees,","Two",FULL,"product","WORK",0,
+   "N's hands lift the lid off the matte-black Stryde box on his workbench: two straps side by side in their wells","one lift, slow, 2s","sway","hands, box on bench",
+   "overhead","front","MEDIUM","overhead: the box opening","product",key_side="L",arc="Act 5: the offer",product="object",note="PACKAGE; offer text in CapCut"),
+ R("A5-F1","Act 5","The copies stretch, and a stretched strap does not hold the spot.","stretched",PIP,"C1","P1-FRONT",2,
+   "a cheap copy strap on C1's knee has slid down to her shin, its band stretched and sagging; she tugs it back up and it slips again","one tug and slip, 3s","sway","seated, hands and knee",
+   "eye","three-quarter","CU","close and level: the copy failing","hands",key_side="front",arc="Act 5: the offer",product="fake",note="FAKE_BASE + 'soft silicone' sag; no wordmark"),
+ R("A5-B5","Act 5","if you know somebody whose stairs have started taking them longer,","stairs",SPLIT,"C1","P1-HALL",2,
+   "C1 climbs one stair slowly, both hands on the rails, pausing","one step, slow, 3s","sway","STAIR-UP, both hands on rails",
+   "eye","three-quarter-back","MEDIUM","behind her, level: someone you know","background",dof="medium",key_side="R",arc="Act 5: afternoon, the ask",mirror_of="A1-B1"),
+]
+if __name__ == "__main__":
+    (B/"actmap.json").write_text(json.dumps(ROWS, indent=1, ensure_ascii=False))
+    ang=[]
+    for r in ROWS:
+        a=r["angle"]; ang.append({"beat":r["beat"],"group":r["act"],"type":r["type"],"subject":r["subject"],"height":a["height"],"side":a["side"],"scale":a["scale"],"fg":a["fg"],"why":a["why"],"mirror_of":a["mirror_of"],"mode":1,
+          "product_beat":r["product_state"] in("held","object","worn") and r["focus"]["plane"]=="product","focus":r["focus"],"story_day":r["story_day"],"face":r["face"],"light":r["light"]})
+    (B/"angles_rows.json").write_text(json.dumps(ang,indent=1))
+    md=["# Act map — stryde-cascade (§18 step 5, E4)","","B-roll durations are `pending-master` until the voice master exists (E6).","",
+        "| Beat | Act | Phrase (verbatim) | Key | Layout | Subject | Location · day | Action · pace | Camera | Staging | Angle | Focus | Light | Product |","|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+    for r in ROWS:
+        a=r["angle"];f=r["focus"];l=r["light"]
+        md.append(f"| {r['beat']} | {r['act']} | {r['phrase']} | {r['key']} | {r['layout']['type']} | {r['subject']} | {r['location']} · D{r['story_day']} | {r['action']} · {r['pace']} | {r['camera']} | {r['staging']} | {a['height']}/{a['side']}/{a['scale']}/{a['fg']} — {a['why']} | {f['plane']}/{f['dof']} | {l['key_side']} · {l['time']} | {r['product_state']}{' · pin' if r['pin_end'] else ''} |")
+    (B/"ACTMAP.md").write_text("\n".join(md)+"\n"); print(len(ROWS),"rows")

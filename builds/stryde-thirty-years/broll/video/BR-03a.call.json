@@ -1,0 +1,31 @@
+{
+ "beat": "BR-03a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"br_03a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect. The strap keeps its exact shape, size and wordmark in every frame and moves only with the body it sits on; The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"WIDE as in the start frame, low at the foot of the stairs.\"},\"motion\":\"She comes down the stairs forwards towards the camera, one step a second, already mid-step on the first frame, three steps. One foot per step, alternating, a brisk even rhythm, torso upright, eyes ahead, hands free and never reaching for the rail; still mid-flight at the cut. The camera never moves with her. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no hand on the rail, no camera following her, no bending, no curling, no folding, no melting, no flipping of the product, no shell rotating on the leg, no strap sliding, no second strap, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no music, no voice, no text, no captions\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "broll/renders/BR-03a_v1.png",
+ "start_approved": true,
+ "pinned": false,
+ "pace": "unhurried",
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "feet blend or slide on the stairs (§27G hard motion)",
+   "prevented_by": "three steps at one a second, STAIR-EASE staging, start frame mid-step"
+  },
+  {
+   "risk": "camera travels with her, adding a second motion",
+   "prevented_by": "handheld sway in place, 'never moves with her', no camera following negative"
+  },
+  {
+   "risk": "the strap slides or reshapes as the knee bends",
+   "prevented_by": "product lock + HOLD_PC + product negatives"
+  }
+ ]
+}

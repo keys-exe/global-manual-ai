@@ -1,0 +1,39 @@
+{
+  "positive_global_styles": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif",
+    "instrumental",
+    "slow tempo"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "Lying awake",
+      "positive_local_styles": [
+        "very sparse solo piano, single notes",
+        "cold night stillness",
+        "fear and loneliness",
+        "lots of silence between notes"
+      ],
+      "negative_local_styles": [
+        "strings",
+        "warmth"
+      ],
+      "duration_ms": 23767,
+      "lines": []
+    }
+  ]
+}

@@ -78,7 +78,9 @@ def main():
         expect = hook_len + body_len
         got = rep.get("render", {}).get("duration_s")
         body_beats = {b["beat"] for b in body["broll"]}
-        body_part = [(s["beat"], s.get("layout"), round(s["start"] - hook_len, 2), round(s["end"] - hook_len, 2))
+        # compared in whole frames: exact frame times like 5.125s round either way at 0.01s
+        hf = round(hook_len * a.fps)
+        body_part = [(s["beat"], s.get("layout"), round(s["start"] * a.fps) - hf, round(s["end"] * a.fps) - hf)
                      for s in rep["timeline"] if s.get("beat") in body_beats]
         body_edls.append(body_part)
         ok = rep.get("status") == "PASS" and got is not None and abs(got - expect) <= 2 / a.fps

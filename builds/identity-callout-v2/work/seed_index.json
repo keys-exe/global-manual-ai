@@ -1,0 +1,242 @@
+{
+ "VO-01": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-LIVING",
+   "PLATE-PROPERTY"
+  ]
+ },
+ "HK1-01": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-PROPERTY"
+  ]
+ },
+ "HK2-01": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-LIVING",
+   "PLATE-PROPERTY"
+  ]
+ },
+ "HK3-01": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-PROPERTY"
+  ]
+ },
+ "B01": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-PROPERTY"
+  ]
+ },
+ "B02": {
+  "model": "nano_banana_pro",
+  "refs": []
+ },
+ "B03": {
+  "model": "nano_banana_pro",
+  "refs": []
+ },
+ "B04": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S2-HARGREAVES",
+   "PLATE-CLINIC",
+   "front",
+   "side"
+  ]
+ },
+ "B05": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-LIVING",
+   "front",
+   "worn_bent"
+  ]
+ },
+ "B06": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-LIVING",
+   "front",
+   "side"
+  ]
+ },
+ "B07": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-LIVING",
+   "front",
+   "side"
+  ]
+ },
+ "B08": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "front",
+   "worn_front"
+  ]
+ },
+ "B09": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S3-HANNAH",
+   "S1-CAROL",
+   "front",
+   "worn_front"
+  ]
+ },
+ "B10": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "front",
+   "worn_front"
+  ]
+ },
+ "B11": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-LIVING",
+   "PLATE-PROPERTY"
+  ]
+ },
+ "B12": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL"
+  ]
+ },
+ "B13": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "front",
+   "worn_front"
+  ]
+ },
+ "B14": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-PROPERTY",
+   "front",
+   "worn_bent"
+  ]
+ },
+ "B15": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-PROPERTY",
+   "front",
+   "worn_bent"
+  ]
+ },
+ "B16": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "front",
+   "worn_bent"
+  ]
+ },
+ "B17": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-LIVING",
+   "front",
+   "side"
+  ]
+ },
+ "B18": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "front",
+   "worn_bent"
+  ]
+ },
+ "B19": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-PROPERTY"
+  ]
+ },
+ "B20": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S2-HARGREAVES",
+   "S1-CAROL",
+   "PLATE-CLINIC",
+   "front",
+   "worn_front"
+  ]
+ },
+ "B21": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "front",
+   "worn_front"
+  ]
+ },
+ "B22": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-LIVING",
+   "front",
+   "side"
+  ]
+ },
+ "B23": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-LIVING",
+   "PLATE-PROPERTY",
+   "front",
+   "worn_bent"
+  ]
+ },
+ "B24": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-PROPERTY",
+   "front",
+   "worn_bent"
+  ]
+ },
+ "B25": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-LIVING",
+   "front",
+   "worn_bent"
+  ]
+ },
+ "B26": {
+  "model": "nano_banana_pro",
+  "refs": [
+   "S1-CAROL",
+   "PLATE-PROPERTY",
+   "front",
+   "worn_bent",
+   "B14-FRAME"
+  ]
+ }
+}

@@ -1,0 +1,72 @@
+{
+  "positive_global_styles": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif",
+    "instrumental",
+    "slow tempo"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "I can't",
+      "positive_local_styles": [
+        "fragile tense piano",
+        "held breath",
+        "quiet suspense"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 14067,
+      "lines": []
+    },
+    {
+      "section_name": "One step",
+      "positive_local_styles": [
+        "near silence",
+        "a single very soft fading piano note"
+      ],
+      "negative_local_styles": [
+        "melody",
+        "strings"
+      ],
+      "duration_ms": 3800,
+      "lines": []
+    },
+    {
+      "section_name": "Weight going somewhere else",
+      "positive_local_styles": [
+        "the piano motif arrives",
+        "cello enters warmly",
+        "hope rising gently"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 16266,
+      "lines": []
+    },
+    {
+      "section_name": "I can't believe it",
+      "positive_local_styles": [
+        "full warm string quartet with piano",
+        "emotional swell, tearful joy",
+        "release"
+      ],
+      "negative_local_styles": [
+        "percussion"
+      ],
+      "duration_ms": 16067,
+      "lines": []
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+[
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-thirty-years__P0-PROP-S",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-thirty-years/work/board/P0-PROP-S.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-thirty-years__P1-S-LIVING",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-thirty-years/work/board/P1-S-LIVING.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-thirty-years__P2-WORKSHOP-BENCH",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-thirty-years/work/board/P2-WORKSHOP-BENCH.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-thirty-years__P3-WORKSHOP-RAIL",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-thirty-years/work/board/P3-WORKSHOP-RAIL.json"
+ },
+ {
+  "op": "set",
+  "collection": "docs",
+  "doc_id": "locations",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-thirty-years/work/board/doc_locations.json"
+ },
+ {
+  "op": "set",
+  "collection": "docs",
+  "doc_id": "actmap",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-thirty-years/work/board/doc_actmap.json"
+ },
+ {
+  "op": "set",
+  "collection": "docs",
+  "doc_id": "wardrobe",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-thirty-years/work/board/doc_wardrobe.json"
+ }
+]

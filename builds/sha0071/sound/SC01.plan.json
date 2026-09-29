@@ -1,0 +1,104 @@
+{
+  "positive_global_styles": [
+    "restrained emotional drama film score",
+    "intimate felt piano",
+    "solo cello",
+    "soft string ensemble",
+    "melancholic and tender",
+    "minor key",
+    "slow tempo",
+    "warm analog recording, close and quiet",
+    "instrumental"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic beats",
+    "vocals",
+    "choir",
+    "brass",
+    "cinematic hits",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The corridor",
+      "positive_local_styles": [
+        "begins softly, fading in from silence",
+        "sparse felt piano",
+        "single soft notes with long space between them",
+        "hushed, uneasy"
+      ],
+      "negative_local_styles": [
+        "strings",
+        "melody"
+      ],
+      "duration_ms": 9600,
+      "lines": []
+    },
+    {
+      "section_name": "Three no's",
+      "positive_local_styles": [
+        "the same sparse piano",
+        "a low sustained cello note underneath",
+        "weary"
+      ],
+      "negative_local_styles": [
+        "full strings"
+      ],
+      "duration_ms": 6100,
+      "lines": []
+    },
+    {
+      "section_name": "Robin confides",
+      "positive_local_styles": [
+        "solo cello carries a slow, tender melody",
+        "soft piano chords under it",
+        "warm, sympathetic, restrained, even dynamics"
+      ],
+      "negative_local_styles": [
+        "loud piano hits",
+        "strings",
+        "accents"
+      ],
+      "duration_ms": 17450,
+      "lines": []
+    },
+    {
+      "section_name": "The note",
+      "positive_local_styles": [
+        "the loudest and fullest part of the piece",
+        "string ensemble swells to its peak beneath the cello",
+        "rising, aching, unresolved",
+        "the swell is cut off abruptly at the very end of this section, no decay"
+      ],
+      "negative_local_styles": [
+        "percussion",
+        "resolution"
+      ],
+      "duration_ms": 10700,
+      "lines": []
+    },
+    {
+      "section_name": "Energy.",
+      "positive_local_styles": [
+        "complete silence",
+        "a rest",
+        "no instruments playing",
+        "only the faintest single low piano note, very quiet, far away"
+      ],
+      "negative_local_styles": [
+        "strings",
+        "cello",
+        "chords",
+        "melody",
+        "reverb tail",
+        "sustain from the previous section"
+      ],
+      "duration_ms": 5900,
+      "lines": []
+    }
+  ]
+}

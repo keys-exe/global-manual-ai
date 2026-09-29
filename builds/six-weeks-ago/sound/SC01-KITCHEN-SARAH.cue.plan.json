@@ -1,0 +1,59 @@
+{
+  "positive_global_styles": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif",
+    "instrumental",
+    "slow tempo"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "Stairlift argument",
+      "positive_local_styles": [
+        "tense quiet cello",
+        "hesitant sparse piano",
+        "restrained frustration"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 36767,
+      "lines": []
+    },
+    {
+      "section_name": "Everything tried",
+      "positive_local_styles": [
+        "cello and viola rise",
+        "frustration and weariness",
+        "piano motif hinted"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 14966,
+      "lines": []
+    },
+    {
+      "section_name": "How it starts",
+      "positive_local_styles": [
+        "sparse sad piano",
+        "long space between notes",
+        "quiet dread"
+      ],
+      "negative_local_styles": [
+        "full strings"
+      ],
+      "duration_ms": 17167,
+      "lines": []
+    }
+  ]
+}

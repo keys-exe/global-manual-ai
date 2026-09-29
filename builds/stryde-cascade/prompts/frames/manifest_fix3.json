@@ -1,0 +1,32 @@
+[
+ {
+  "beat": "A2-B2",
+  "model": "nano_banana_pro",
+  "refs": [
+   "cd219dc4-2b30-4e18-ae35-d702e05fba56",
+   "1e46a65f-f165-4694-b5b6-1f92ea2688b3"
+  ],
+  "chars": 7188
+ },
+ {
+  "beat": "A4-P1",
+  "model": "nano_banana_pro",
+  "refs": [
+   "dff971d2-5c32-4a5d-981a-d304f7a2b9f2",
+   "b1cc1764-3e34-4b37-b8c6-0abf55cfe68e",
+   "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5",
+   "b8e3d7d5-a1ab-4a62-a55e-aa16b00325e3"
+  ],
+  "chars": 9129
+ },
+ {
+  "beat": "A4-P2",
+  "model": "nano_banana_pro",
+  "refs": [
+   "dff971d2-5c32-4a5d-981a-d304f7a2b9f2",
+   "ba654d79-751c-4833-8780-a58cb4ef6e80",
+   "28df647e-d34a-4242-9f6e-1595857d4a45"
+  ],
+  "chars": 8648
+ }
+]

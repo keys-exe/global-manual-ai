@@ -1,0 +1,57 @@
+{
+  "act": "Act 4",
+  "beat": "BR-18b",
+  "build": "stryde-thirty-years",
+  "credits": 108,
+  "duration": 6,
+  "fault": "slowly zoom in",
+  "imageAsset": "13a8ad80b232c667c58efc0908514751",
+  "imageAt": 1790615125124,
+  "imageConnector": "Higgsfield",
+  "imageModel": "nano_banana_pro · 2k · 9:16 · refs C1, P2, package_open, front",
+  "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic — exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nA snapshot from a phone held straight above the bench, looking down. His two hands lift the matte-black lid off the box, the lid tilted up and away at the far edge, caught mid-lift, the inside already showing: A rigid two-piece gift box, a lid over a base, matte black all over, about 28 cm wide, 16 cm deep and 8 cm tall. The only thing printed on it is the lowercase grey stryde wordmark centred on the lid, in the same bold rounded lettering and grey as the wordmark on the strap's shell. Inside, a matte-black insert with two shaped wells side by side holds exactly two identical straps, one in each well. Each strap is ONE piece lying FLAT in its well, because the band is soft elastic, not rigid: the shell lies face up at the front of the well, its peaks and notch pointing toward the back of the box, its grey wordmark horizontal and readable from the front; the soft knit band leaves the chrome slide at each end of the shell and lies flat and relaxed behind it as a flattened closed loop, joined to the shell at both slides. The box exactly as in the attached open-box reference. His hands, the same sixty-two-year-old maker's hands as the attached references: big-knuckled, sinewy, weathered, sun spots on the backs, nails short with dried glue under them, the rolled cuffs of a green-and-brown check flannel shirt at the forearms and the faded navy canvas apron behind.\n\nTHE SAME WORKSHOP as the attached location plate: seen from above: the long scarred dark-beech workbench, the blue cast-iron vice at its end, the pegboard of shears, punches and rivet setters on the whitewashed brick, the tall iron-framed east factory windows along the bench wall.\n\nTHE CAMERA ANGLE: an overhead camera looking straight down, seen from the front of the box. This exact angle, not a straight-on eye-level view.\n\nFOCUS: the product and its wordmark is in sharp focus; everything from near to far stays sharp. The blur is optical: soft and round, never smeared.\n\nTHE LIGHT: the low morning sun through the tall east factory windows along the bench wall lights the box from the left of the frame, pale, clean early-morning light, so it has a lit side toward the left and a softer shadow side. The shadows fall away from that source, one way only.\n\nTHE COLOURS OF THIS SCENE: the light is pale east morning daylight, clean and slightly cool; whitewashed grey-white brick, grey concrete, dark oiled beech, the blue cast-iron vice, black neoprene; the wardrobe is a green-and-brown check shirt and a faded navy apron; the accent is the blue vice and the black strap. Colours are slightly muted, natural and ungraded. No colour in this shot differs from the rest of the scene.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no text on the box except the stryde wordmark, no offer text, no price, no badge, no sticker, no barcode, no white box, no coloured box, no glossy box, no window in the lid, no third strap, no single strap in the box, no loose strap outside the insert, no extra items in the box, no shell separate from its band, no shell resting on top of a loop of band, no strap standing upright as a stiff ring, no strap turned on its side, no face, no wrong finger count, no malformed hands, no hands merging into objects, no readable text, no logos other than the stryde wordmark, no AI face, no plastic skin, no extra fingers, no fused fingers, no polished render, no advertising image, no studio lighting, no vignette, no glowing skin, no light from nowhere, no shadows falling in two directions, no lens flare",
+  "imageStatus": "confirmed",
+  "imageType": "image/png",
+  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_170207_8625669c-9873-40ca-b332-303bcbbbbd62.png",
+  "imageVersions": [
+    {
+      "asset": "13a8ad80b232c667c58efc0908514751",
+      "at": 1790615125124,
+      "connector": "Higgsfield",
+      "model": "nano_banana_pro",
+      "note": "first render (job 8625669c…)",
+      "type": "image/png",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_170207_8625669c-9873-40ca-b332-303bcbbbbd62.png",
+      "v": 1
+    }
+  ],
+  "line": "Sixty days, and you keep the straps. From the Stryde site, not a marketplace.",
+  "model": "Kling 3.0 on Kie (pro), first-and-last frame (end: BR-18b-END v1)",
+  "note": "Step 7 start image. On screen 5.04s; video 6s (E6). Angle overhead/front; action: his hands lift the lid off the box: two straps lying flat in the insert · one lift in 2s.",
+  "prompt": "{\"shot\":\"br_18b\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"CLOSE as in the start frame, down onto the box on the bench.\"},\"motion\":\"His hands lift the lid straight up off the box in one unhurried move over about three seconds and set it down flat on the bench beside the box, ending exactly as in the end frame; the two straps lying in the insert do not move. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no straps moving in the box, no third strap, no lid flipping over, no face, no text on the box except the stryde wordmark, no offer text, no price, no badge, no sticker, no barcode, no white box, no coloured box, no glossy box, no window in the lid, no third strap, no single strap in the box, no loose strap outside the insert, no extra items in the box, no shell separate from its band, no shell resting on top of a loop of band, no strap standing upright as a stiff ring, no strap turned on its side, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no music, no voice, no text, no captions\"}",
+  "regens": 1,
+  "stage": "broll",
+  "status": "generating",
+  "title": "His hands lift the lid off the box: two straps lying flat in the insert",
+  "updatedAt": 1790620721092,
+  "videoAsset": "fdc856348a451f065e4a3e9cbf7f6bd2",
+  "videoAt": 1790620347694,
+  "videoConnector": "Kie AI",
+  "videoRes": "1072×1928",
+  "videoType": "video/mp4",
+  "videoUrl": "https://tempfile.aiquickdraw.com/k/5b647a9d9f9aef744a81203df1acb401_1_1790620319_3572.mp4",
+  "videoVersions": [
+    {
+      "asset": "fdc856348a451f065e4a3e9cbf7f6bd2",
+      "at": 1790620347694,
+      "connector": "Kie AI",
+      "credits": 108,
+      "model": "Kling 3.0 (kling-3.0/video) on Kie, pro",
+      "note": "first render, pinned from the confirmed start image to the confirmed BR-18b-END frame",
+      "size": "6.04s",
+      "type": "video/mp4",
+      "url": "https://tempfile.aiquickdraw.com/k/5b647a9d9f9aef744a81203df1acb401_1_1790620319_3572.mp4",
+      "v": 1
+    }
+  ]
+}

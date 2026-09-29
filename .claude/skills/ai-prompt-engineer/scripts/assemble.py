@@ -50,7 +50,7 @@ Rules (§30H):
   1. PLACE   each B-roll cuts in --lead (3 frames) before its anchor word: the
              phrase's `key` word when given, else its first word (word timestamps
              of the master; never before 0 or inside the previous clip's first
-             0.8s). It plays from its in-point, not frame 0: `in` if given, else
+             2.0s). It plays from its in-point, not frame 0: `in` if given, else
              `peak` minus the lead-to-key time, else --skip (0.4s — the start
              image's static opening). It runs until the next B-roll starts, the
              phrase's line ends, or the clip runs out — whichever is first.
@@ -63,7 +63,10 @@ Rules (§30H):
              (regenerate that clip at a longer duration).
   4. HOLE    in a voice-only build (base null) every uncovered moment is a hole and
              is closed the same way; an unclosable hole is a FAIL.
-  5. FLASH   a B-roll on screen for under 0.8s is a FAIL (too short to read).
+  5. HOLD    every B-roll holds ~3.0s (HOLD) when the next B-roll allows it, holding over the next
+             words — never leaving a face window under --min-th (it holds to the next cut
+             when its footage reaches, else stops --min-th short of it); under 2.0s (MIN_FLASH) is a FLASH FAIL (merge the rows) (V7.65.0).
+  6. LAYOUT  full screen is the default: split/pip on at most 1 B-roll in 5, never two in a row.
 Then renders (1080x1920 at --fps, default 24 = Kling's native rate, so no frame
 is repeated; the master as the only audio) and verifies the
 render: duration equals the master, no black frames, every cut where the EDL says.
@@ -91,7 +94,9 @@ FF = imageio_ffmpeg.get_ffmpeg_exe()
 FPS = 24                     # set from --fps; Kling renders 24 fps
 MIN_SLOW = 0.8
 FILM = False                 # plan "mode" 4/5: no speed change ever (§24L)
-MIN_FLASH = 0.8
+MIN_FLASH = 2.0                # §30H rule 5 (V7.65.0): every B-roll holds >= 2.0s on screen (was 0.8s)
+HOLD = 3.0                     # §30H rule 5 (V7.65.0): a B-roll holds about 3s when the next one allows it
+MAX_SPLIT_SHARE = 0.2          # §30H layouts (V7.65.0): full is the default; split/pip at most 1 in 5, never two in a row
 HANDLE = 0.5                 # E6: seconds of spare footage on every call
 KLING_MIN, KLING_MAX = 3, 15
 W, H = 1080, 1920
@@ -295,7 +300,9 @@ def main():
                 end = max(e["line_end"], e["start"])   # a deliberate return to face
             if base is not None and n + 1 == len(edl):
                 end = max(e["line_end"], e["start"])
-            on = end - e["start"]
+            on = max(end - e["start"], min(HOLD, nxt - e["start"]))   # the hold (rule 5)
+            if base is not None and n + 1 < len(edl) and 1e-3 < nxt - e["start"] - on < a.min_th:
+                on = nxt - e["start"]   # a hold never leaves a face window under --min-th
             need = on + e["skip"] + HANDLE
             call = max(KLING_MIN, int(-(-need // 1)))
             row = {"beat": e["beat"], "cut_s": e["start"], "anchor": e["key"], "on_screen_s": round(on, 2),
@@ -340,6 +347,26 @@ def main():
                       "detail": f"{why}: needs {need:.2f}s of footage, has {avail:.2f}s — regenerate longer"})
         return False
 
+    # 5. HOLD — a B-roll whose line is shorter than MIN_FLASH holds over the next words
+    # (up to the next B-roll) so it can be read (V7.65.0)
+    for n, e in enumerate(edl):
+        nxt = edl[n + 1]["start"] if n + 1 < len(edl) else total
+        if e["end"] - e["start"] < HOLD - 1e-3:
+            target = snap(min(nxt, e["start"] + HOLD))
+            if base is not None and n + 1 < len(edl) and 1e-3 < nxt - target < a.min_th:
+                # never hold into a face window and leave a flicker: hold to the next cut when the
+                # footage reaches it, else stop so the face keeps at least --min-th
+                target = nxt if give_back(e, nxt - e["start"]) >= nxt - e["start"] - 1e-3 else snap(nxt - a.min_th)
+            if target > e["end"] + 1e-3:
+                # the hold uses the clip's own footage only — never slowed to reach it
+                avail = give_back(e, target - e["start"])
+                reach = snap(min(target, e["start"] + avail))
+                if reach > e["end"] + 1e-3:
+                    e["end"] = reach
+                    fixes.append({"beat": e["beat"], "fix": f"HOLD: held to {reach - e['start']:.2f}s on screen"})
+                if e["end"] - e["start"] < MIN_FLASH - 1e-3:   # still unreadable: slow (>= 0.8x) or FAIL
+                    close(e, snap(min(nxt, e["start"] + MIN_FLASH)), "HOLD")
+
     for n, e in enumerate(edl):
         nxt = edl[n + 1]["start"] if n + 1 < len(edl) else None
         gap_to = nxt if nxt is not None else total
@@ -355,8 +382,16 @@ def main():
         fails.append({"beat": edl[0]["beat"], "fail": "HOLE_AT_START",
                       "detail": f"0.00–{edl[0]['start']:.2f}s uncovered — place a B-roll on the opening line"})
     for e in edl:
-        if e["end"] - e["start"] < MIN_FLASH:
-            fails.append({"beat": e["beat"], "fail": "FLASH", "detail": f"on screen {e['end']-e['start']:.2f}s < {MIN_FLASH}s"})
+        if e["end"] - e["start"] < MIN_FLASH - 1e-3:
+            fails.append({"beat": e["beat"], "fail": "FLASH", "detail": f"on screen {e['end']-e['start']:.2f}s < {MIN_FLASH}s — merge the row with its neighbour or give it a longer line"})
+    # layout mix: full screen is the default; split/pip sparingly (V7.65.0, user 2026-09-28)
+    if base is not None and edl:
+        boxed = [e for e in edl if e["layout"]["type"] != "full"]
+        if len(boxed) > MAX_SPLIT_SHARE * len(edl) + 1e-9:
+            fails.append({"fail": "LAYOUT_MIX", "detail": f"{len(boxed)} of {len(edl)} B-rolls are split/pip — at most {int(MAX_SPLIT_SHARE * 100)}%"})
+        for p0, p1 in zip(edl, edl[1:]):
+            if p0["layout"]["type"] != "full" and p1["layout"]["type"] != "full":
+                fails.append({"fail": "LAYOUT_MIX", "detail": f"{p0['beat']} and {p1['beat']} are both split/pip — never two in a row"})
 
     # timeline segments
     raw, t = [], 0.0
@@ -365,7 +400,7 @@ def main():
             raw.append({"kind": "TH" if base else "HOLE", "start": t, "end": e["start"]})
         raw.append({"kind": "BR", "beat": e["beat"], "layout": e["layout"]["type"], "start": e["start"], "end": e["end"]})
         t = e["end"]
-    if total - t > 1e-3:
+    if total - t > 1.0 / FPS - 1e-3:   # a sub-frame remainder after the last frame is not a hole
         raw.append({"kind": "TH" if base else "HOLE", "start": t, "end": total})
     for s in raw:
         if s["kind"] == "TH" and s["end"] - s["start"] < a.min_th and 0 < s["start"] and s["end"] < total:
