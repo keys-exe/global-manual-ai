@@ -11,6 +11,10 @@
       "expected_s": 166.658,
       "fixes": [
         {
+          "beat": "A2-M1",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
           "beat": "A2-B3",
           "fix": "gave back 0.26s of the skipped opening (in-point 0.14s)"
         },
@@ -20,7 +24,7 @@
         },
         {
           "beat": "HK1-B1",
-          "fix": "HOLD: held to 3.38s on screen"
+          "fix": "HOLD: held to 3.63s on screen"
         },
         {
           "beat": "HK1-B2",
@@ -28,7 +32,7 @@
         },
         {
           "beat": "HK1-B2",
-          "fix": "HOLD: held to 2.96s on screen"
+          "fix": "HOLD: held to 2.71s on screen"
         },
         {
           "beat": "HK1-B3",
@@ -40,7 +44,7 @@
         },
         {
           "beat": "A1-B1",
-          "fix": "HOLD: held to 2.67s on screen"
+          "fix": "HOLD: held to 3.25s on screen"
         },
         {
           "beat": "A1-B2",
@@ -48,7 +52,7 @@
         },
         {
           "beat": "A1-B3",
-          "fix": "HOLD: held to 2.00s on screen"
+          "fix": "HOLD: held to 2.50s on screen"
         },
         {
           "beat": "A1-B4",
@@ -64,39 +68,23 @@
         },
         {
           "beat": "A1-B7",
-          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
-        },
-        {
-          "beat": "A1-B7",
-          "fix": "HOLD: held to 3.00s on screen"
-        },
-        {
-          "beat": "A2-M1",
           "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
         },
         {
-          "beat": "A2-M1",
-          "fix": "HOLD: held to 2.62s on screen"
+          "beat": "A1-B7",
+          "fix": "HOLD: held to 2.50s on screen"
         },
         {
           "beat": "A2-M2",
-          "fix": "HOLD: held to 2.50s on screen"
+          "fix": "HOLD: held to 2.75s on screen"
         },
         {
           "beat": "A2-B1",
           "fix": "HOLD: held to 2.00s on screen"
         },
         {
-          "beat": "A2-M3",
-          "fix": "gave back 0.11s of the skipped opening (in-point 0.29s)"
-        },
-        {
-          "beat": "A2-M3",
-          "fix": "HOLD: held to 2.75s on screen"
-        },
-        {
           "beat": "A2-B2",
-          "fix": "HOLD: held to 2.92s on screen"
+          "fix": "HOLD: held to 3.17s on screen"
         },
         {
           "beat": "A2-B3",
@@ -105,10 +93,6 @@
         {
           "beat": "A2-B3",
           "fix": "HOLD: held to 2.08s on screen"
-        },
-        {
-          "beat": "A2-M4",
-          "fix": "HOLD: held to 3.00s on screen"
         },
         {
           "beat": "A3-B1",
@@ -123,10 +107,6 @@
           "fix": "HOLD: held to 2.00s on screen"
         },
         {
-          "beat": "A4-P1",
-          "fix": "HOLD: held to 2.75s on screen"
-        },
-        {
           "beat": "A4-B1",
           "fix": "HOLD: held to 3.00s on screen"
         },
@@ -136,59 +116,43 @@
         },
         {
           "beat": "A4-B2",
-          "fix": "HOLD: held to 2.67s on screen"
+          "fix": "HOLD: held to 2.71s on screen"
         },
         {
           "beat": "A4-P3",
           "fix": "HOLD: held to 3.00s on screen"
         },
         {
-          "beat": "A5-B1",
-          "fix": "HOLD: held to 3.00s on screen"
-        },
-        {
           "beat": "A5-B2",
-          "fix": "gave back 0.32s of the skipped opening (in-point 0.08s)"
-        },
-        {
-          "beat": "A5-B2",
-          "fix": "gave back 0.00s of the skipped opening (in-point 0.08s)"
-        },
-        {
-          "beat": "A5-B2",
-          "fix": "HOLD: held to 3.96s on screen"
-        },
-        {
-          "beat": "A5-B3",
-          "fix": "gave back 0.03s of the skipped opening (in-point 0.37s)"
-        },
-        {
-          "beat": "A5-B3",
-          "fix": "HOLD: held to 3.67s on screen"
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
         },
         {
           "beat": "A5-B4",
-          "fix": "HOLD: held to 2.21s on screen"
-        },
-        {
-          "beat": "A5-F1",
-          "fix": "HOLD: held to 3.38s on screen"
-        },
-        {
-          "beat": "A5-B5",
-          "fix": "HOLD: held to 3.00s on screen"
+          "fix": "HOLD: held to 3.46s on screen"
         },
         {
           "beat": "A4-P2",
-          "fix": "gave back 0.28s of the skipped opening (in-point 0.12s)"
+          "fix": "gave back 0.32s of the skipped opening (in-point 0.08s)"
         },
         {
           "beat": "A4-P2",
-          "fix": "FLICKER 0.96s: extended with own footage to 109.50s"
+          "fix": "FLICKER 0.38s: extended with own footage to 108.92s"
         },
         {
           "beat": "A4-M1",
-          "fix": "FLICKER 0.50s: extended with own footage to 113.29s"
+          "fix": "FLICKER 0.46s: extended with own footage to 113.25s"
+        },
+        {
+          "beat": "A5-B2",
+          "fix": "FLICKER 1.38s: slowed to 0.93x to reach 144.12s"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "gave back 0.15s of the skipped opening (in-point 0.25s)"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "FLICKER 0.46s: extended with own footage to 160.88s"
         }
       ],
       "failures": [],
@@ -204,6 +168,14 @@
       "expected_s": 164.617,
       "fixes": [
         {
+          "beat": "HK2-B3",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A2-M1",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
           "beat": "A2-B3",
           "fix": "gave back 0.26s of the skipped opening (in-point 0.14s)"
         },
@@ -213,31 +185,19 @@
         },
         {
           "beat": "HK2-B1",
-          "fix": "HOLD: held to 2.42s on screen"
+          "fix": "HOLD: held to 2.25s on screen"
         },
         {
           "beat": "HK2-B2",
-          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+          "fix": "gave back 0.03s of the skipped opening (in-point 0.37s)"
         },
         {
           "beat": "HK2-B2",
-          "fix": "HOLD: held to 1.75s on screen"
-        },
-        {
-          "beat": "HK2-B2",
-          "fix": "HOLD: extended with own footage to 10.21s"
-        },
-        {
-          "beat": "HK2-B3",
-          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
-        },
-        {
-          "beat": "HK2-B3",
-          "fix": "HOLD: held to 3.00s on screen"
+          "fix": "HOLD: held to 2.67s on screen"
         },
         {
           "beat": "A1-B1",
-          "fix": "HOLD: held to 2.67s on screen"
+          "fix": "HOLD: held to 3.25s on screen"
         },
         {
           "beat": "A1-B2",
@@ -245,7 +205,7 @@
         },
         {
           "beat": "A1-B3",
-          "fix": "HOLD: held to 2.00s on screen"
+          "fix": "HOLD: held to 2.50s on screen"
         },
         {
           "beat": "A1-B4",
@@ -261,39 +221,23 @@
         },
         {
           "beat": "A1-B7",
-          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
-        },
-        {
-          "beat": "A1-B7",
-          "fix": "HOLD: held to 3.00s on screen"
-        },
-        {
-          "beat": "A2-M1",
           "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
         },
         {
-          "beat": "A2-M1",
-          "fix": "HOLD: held to 2.62s on screen"
+          "beat": "A1-B7",
+          "fix": "HOLD: held to 2.50s on screen"
         },
         {
           "beat": "A2-M2",
-          "fix": "HOLD: held to 2.50s on screen"
+          "fix": "HOLD: held to 2.75s on screen"
         },
         {
           "beat": "A2-B1",
           "fix": "HOLD: held to 2.00s on screen"
         },
         {
-          "beat": "A2-M3",
-          "fix": "gave back 0.11s of the skipped opening (in-point 0.29s)"
-        },
-        {
-          "beat": "A2-M3",
-          "fix": "HOLD: held to 2.75s on screen"
-        },
-        {
           "beat": "A2-B2",
-          "fix": "HOLD: held to 2.92s on screen"
+          "fix": "HOLD: held to 3.17s on screen"
         },
         {
           "beat": "A2-B3",
@@ -302,10 +246,6 @@
         {
           "beat": "A2-B3",
           "fix": "HOLD: held to 2.08s on screen"
-        },
-        {
-          "beat": "A2-M4",
-          "fix": "HOLD: held to 3.00s on screen"
         },
         {
           "beat": "A3-B1",
@@ -320,10 +260,6 @@
           "fix": "HOLD: held to 2.00s on screen"
         },
         {
-          "beat": "A4-P1",
-          "fix": "HOLD: held to 2.75s on screen"
-        },
-        {
           "beat": "A4-B1",
           "fix": "HOLD: held to 3.00s on screen"
         },
@@ -333,63 +269,43 @@
         },
         {
           "beat": "A4-B2",
-          "fix": "HOLD: held to 2.67s on screen"
+          "fix": "HOLD: held to 2.71s on screen"
         },
         {
           "beat": "A4-P3",
           "fix": "HOLD: held to 3.00s on screen"
         },
         {
-          "beat": "A5-B1",
-          "fix": "HOLD: held to 3.00s on screen"
-        },
-        {
           "beat": "A5-B2",
-          "fix": "gave back 0.32s of the skipped opening (in-point 0.08s)"
-        },
-        {
-          "beat": "A5-B2",
-          "fix": "gave back 0.00s of the skipped opening (in-point 0.08s)"
-        },
-        {
-          "beat": "A5-B2",
-          "fix": "HOLD: held to 3.96s on screen"
-        },
-        {
-          "beat": "A5-B3",
-          "fix": "gave back 0.03s of the skipped opening (in-point 0.37s)"
-        },
-        {
-          "beat": "A5-B3",
-          "fix": "HOLD: held to 3.67s on screen"
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
         },
         {
           "beat": "A5-B4",
-          "fix": "HOLD: held to 2.21s on screen"
-        },
-        {
-          "beat": "A5-F1",
-          "fix": "HOLD: held to 3.38s on screen"
-        },
-        {
-          "beat": "A5-B5",
-          "fix": "HOLD: held to 3.00s on screen"
-        },
-        {
-          "beat": "HK2-B2",
-          "fix": "FLICKER 1.25s: slowed to 0.94x to reach 11.46s"
+          "fix": "HOLD: held to 3.46s on screen"
         },
         {
           "beat": "A4-P2",
-          "fix": "gave back 0.28s of the skipped opening (in-point 0.12s)"
+          "fix": "gave back 0.32s of the skipped opening (in-point 0.08s)"
         },
         {
           "beat": "A4-P2",
-          "fix": "FLICKER 0.96s: extended with own footage to 107.46s"
+          "fix": "FLICKER 0.38s: extended with own footage to 106.88s"
         },
         {
           "beat": "A4-M1",
-          "fix": "FLICKER 0.50s: extended with own footage to 111.25s"
+          "fix": "FLICKER 0.46s: extended with own footage to 111.21s"
+        },
+        {
+          "beat": "A5-B2",
+          "fix": "FLICKER 1.38s: slowed to 0.93x to reach 142.08s"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "gave back 0.15s of the skipped opening (in-point 0.25s)"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "FLICKER 0.46s: extended with own footage to 158.83s"
         }
       ],
       "failures": [],
@@ -405,6 +321,18 @@
       "expected_s": 163.575,
       "fixes": [
         {
+          "beat": "HK3-B1",
+          "fix": "gave back 0.28s of the skipped opening (in-point 0.12s)"
+        },
+        {
+          "beat": "HK3-B3",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A2-M1",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
           "beat": "A2-B3",
           "fix": "gave back 0.26s of the skipped opening (in-point 0.14s)"
         },
@@ -414,15 +342,15 @@
         },
         {
           "beat": "HK3-B2",
-          "fix": "HOLD: held to 3.00s on screen"
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
         },
         {
-          "beat": "HK3-B3",
-          "fix": "HOLD: held to 3.00s on screen"
+          "beat": "HK3-B2",
+          "fix": "HOLD: held to 2.96s on screen"
         },
         {
           "beat": "A1-B1",
-          "fix": "HOLD: held to 2.67s on screen"
+          "fix": "HOLD: held to 3.25s on screen"
         },
         {
           "beat": "A1-B2",
@@ -430,7 +358,7 @@
         },
         {
           "beat": "A1-B3",
-          "fix": "HOLD: held to 2.00s on screen"
+          "fix": "HOLD: held to 2.50s on screen"
         },
         {
           "beat": "A1-B4",
@@ -446,39 +374,23 @@
         },
         {
           "beat": "A1-B7",
-          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
-        },
-        {
-          "beat": "A1-B7",
-          "fix": "HOLD: held to 3.00s on screen"
-        },
-        {
-          "beat": "A2-M1",
           "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
         },
         {
-          "beat": "A2-M1",
-          "fix": "HOLD: held to 2.62s on screen"
+          "beat": "A1-B7",
+          "fix": "HOLD: held to 2.50s on screen"
         },
         {
           "beat": "A2-M2",
-          "fix": "HOLD: held to 2.50s on screen"
+          "fix": "HOLD: held to 2.75s on screen"
         },
         {
           "beat": "A2-B1",
           "fix": "HOLD: held to 2.00s on screen"
         },
         {
-          "beat": "A2-M3",
-          "fix": "gave back 0.11s of the skipped opening (in-point 0.29s)"
-        },
-        {
-          "beat": "A2-M3",
-          "fix": "HOLD: held to 2.75s on screen"
-        },
-        {
           "beat": "A2-B2",
-          "fix": "HOLD: held to 2.92s on screen"
+          "fix": "HOLD: held to 3.17s on screen"
         },
         {
           "beat": "A2-B3",
@@ -487,10 +399,6 @@
         {
           "beat": "A2-B3",
           "fix": "HOLD: held to 2.08s on screen"
-        },
-        {
-          "beat": "A2-M4",
-          "fix": "HOLD: held to 3.00s on screen"
         },
         {
           "beat": "A3-B1",
@@ -505,10 +413,6 @@
           "fix": "HOLD: held to 2.00s on screen"
         },
         {
-          "beat": "A4-P1",
-          "fix": "HOLD: held to 2.75s on screen"
-        },
-        {
           "beat": "A4-B1",
           "fix": "HOLD: held to 3.00s on screen"
         },
@@ -518,59 +422,43 @@
         },
         {
           "beat": "A4-B2",
-          "fix": "HOLD: held to 2.67s on screen"
+          "fix": "HOLD: held to 2.71s on screen"
         },
         {
           "beat": "A4-P3",
           "fix": "HOLD: held to 3.00s on screen"
         },
         {
-          "beat": "A5-B1",
-          "fix": "HOLD: held to 3.00s on screen"
-        },
-        {
           "beat": "A5-B2",
-          "fix": "gave back 0.32s of the skipped opening (in-point 0.08s)"
-        },
-        {
-          "beat": "A5-B2",
-          "fix": "gave back 0.00s of the skipped opening (in-point 0.08s)"
-        },
-        {
-          "beat": "A5-B2",
-          "fix": "HOLD: held to 3.96s on screen"
-        },
-        {
-          "beat": "A5-B3",
-          "fix": "gave back 0.03s of the skipped opening (in-point 0.37s)"
-        },
-        {
-          "beat": "A5-B3",
-          "fix": "HOLD: held to 3.67s on screen"
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
         },
         {
           "beat": "A5-B4",
-          "fix": "HOLD: held to 2.21s on screen"
-        },
-        {
-          "beat": "A5-F1",
-          "fix": "HOLD: held to 3.38s on screen"
-        },
-        {
-          "beat": "A5-B5",
-          "fix": "HOLD: held to 3.00s on screen"
+          "fix": "HOLD: held to 3.46s on screen"
         },
         {
           "beat": "A4-P2",
-          "fix": "gave back 0.28s of the skipped opening (in-point 0.12s)"
+          "fix": "gave back 0.32s of the skipped opening (in-point 0.08s)"
         },
         {
           "beat": "A4-P2",
-          "fix": "FLICKER 0.96s: extended with own footage to 106.42s"
+          "fix": "FLICKER 0.38s: extended with own footage to 105.83s"
         },
         {
           "beat": "A4-M1",
-          "fix": "FLICKER 0.50s: extended with own footage to 110.21s"
+          "fix": "FLICKER 0.46s: extended with own footage to 110.17s"
+        },
+        {
+          "beat": "A5-B2",
+          "fix": "FLICKER 1.38s: slowed to 0.93x to reach 141.04s"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "gave back 0.15s of the skipped opening (in-point 0.25s)"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "FLICKER 0.46s: extended with own footage to 157.79s"
         }
       ],
       "failures": [],
