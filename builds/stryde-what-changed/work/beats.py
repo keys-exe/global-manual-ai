@@ -346,18 +346,24 @@ B["B05"] = (NB2, [], anat(
          "is visible", stack="ANAT-B",
     slots={"[TARGET]": "the cartilage lining the joint surfaces"}).replace("the patellar tendon crisp", "the cartilage crisp"))
 
-# B06 v2 — user Fix 'ANATOMY "MORE DETAILS"' — the detailed joint; pip (host cut-out bottom-left): knee upper right.
+# B06 v3 — user Fix 'PUT SOME ARROW POINTING THE patellar tendon, PUT SOME MOVEMENT, MORE DETAILED' (the user's call overrides the
+# no-arrow house default for this beat: one clean arrow, no text). Pip (host cut-out bottom-left): knee upper right.
 B["B06"] = (NB2, [], anat(
-    "Seen from a low three-quarter angle, in rich anatomical detail: the thigh muscles with fine directional fibre grain, the quadriceps "
-    "tendon sweeping over the kneecap, the kneecap with its textured bony surface, the patellar tendon as a banded, fibrous ribbon, the "
-    "infrapatellar fat pad behind it, the two crescent menisci and the collateral ligaments at the sides of the joint, the cruciate "
-    "ligaments crossing deep inside, the bone ends with fine porous texture — and the cartilage between the bones visibly THIN and worn, a "
-    "narrow pale line where it should be thick. The load is still arriving at the same spot below the kneecap. THE KNEE SITS IN THE UPPER "
-    "RIGHT OF THE FRAME; the lower-left third of the frame is calm near-black field with nothing in it (a person will be placed there "
-    "later). " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    "Seen from a low three-quarter angle, CAUGHT MID-STEP: the leg bending under a landing, the foot just striking the ground below the "
+    "frame, the thigh muscles visibly tensed and bulging with the load, the knee flexed — the body's weight coming down through it. In "
+    "rich, high anatomical detail: the thigh muscles with fine fibre striation, the quadriceps tendon sweeping over the kneecap, the "
+    "kneecap with its textured bony surface, the patellar tendon as a banded, fibrous ribbon drawn taut, the infrapatellar fat pad behind "
+    "it, the two crescent menisci and the collateral ligaments at the sides, the cruciate ligaments crossing deep inside, the bone ends "
+    "with fine porous texture — and the cartilage between the bones visibly THIN and worn. ONE CLEAN GRAPHIC ARROW: a single smooth, "
+    "slightly glowing white arrow floats just outside the leg in the dark field and points precisely at the patellar tendon just below the "
+    "kneecap — a crisp medical-illustration pointer, no text, no label, no number on it. THE KNEE SITS IN THE UPPER RIGHT OF THE FRAME; "
+    "the lower-left third of the frame is calm near-black field with nothing in it (a person will be placed there later). "
+    + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
     view="viewed from a low three-quarter angle, foreshortened, the knee joint in the upper right of the frame, the lower-left third "
-         "empty field").replace("no individual muscle fibres, ", "").replace("never fine striation and never individual fibres", "fine striation readable")
-    )
+         "empty field")
+    .replace("no arrows, no force arrows, ", "no more than one arrow, no force arrows, ").replace("no diagram markings, ", "").replace("no annotations, ", "")
+    .replace("no individual muscle fibres, ", "")
+    .replace("never fine striation and never individual fibres", "fine striation readable"))
 
 # B07 — "That is why it feels like it arrived overnight." Maureen at the top of her stairs, looks down and stops. Face in frame.
 B["B07"] = (NB2, ["R1", "P1"], photo([
