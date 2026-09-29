@@ -151,6 +151,41 @@ B["B02"] = clip("B02",
            {"risk": "fingers warp or multiply", "prevented_by": "HOLD-C + NEG-WARP-C, one small movement, 'no extra fingers'"},
            {"risk": "camera drifts", "prevented_by": "locked-off tripod clause"}])
 
+# B03 line, split in three (user). Screen times estimated from the line lengths at the locked VO pace (~2.8 words/s):
+# B03a ≈ 3.5 s → 5 s; B03b ≈ 3.2 s → 5 s; B03c ≈ 1.5 s → 3 s floor.
+B["B03a"] = clip("B03a",
+    "A premium 3D anatomical model of a standing leg seen from a low front angle on a near-black field: the big quadriceps muscle filling "
+    "the upper frame and narrowing down over the kneecap into one small band below it, a tight spot glowing on that band.",
+    "Already under load on the first frame: the thigh muscle tightens once as the leg takes a step's weight, and the load runs down into "
+    "the small band — the spot at [SITE] brightens once and eases back, staying one tight spot; the big muscle stays calm after.",
+    "no arrows, no text, no labels, no numbers, no thumb, no hand, no ruler, no glow on the thigh, no glow spreading down the shin, "
+    "no second limb, no product, no camera orbit, no zoom",
+    3.5, hi=5, anat=True,
+    risks=[{"risk": "the glow spreads onto the thigh or shin", "prevented_by": "'staying one tight spot', negatives on thigh and shin glow"},
+           {"risk": "the model swims", "prevented_by": "HOLD-C + NEG-WARP-C, one tightening only"},
+           {"risk": "a thumb or scale object appears (F2)", "prevented_by": "'no thumb, no hand, no ruler'"}])
+B["B03b"] = clip("B03b",
+    "A white British woman of sixty-nine in a kitchen, three-quarter on, in a dusty-pink cardigan and navy skirt, bending at the knees in "
+    "front of a low sage-green cupboard with a heavy orange cast-iron pot in both hands.",
+    "Already at the bottom of the bend on the first frame: she rises steadily with the heavy pot, her knees straightening under the "
+    "weight, and stands upright holding it at her waist — one careful lift in about two seconds, real time.",
+    "no dropping the pot, no looking at the camera, no wincing, no second person, no knee strap, no extra hands, no slow motion, "
+    "no walking out of frame",
+    3.2, hi=5,
+    risks=[{"risk": "hands or pot warp during the lift", "prevented_by": "one lift at a countable pace, start frame caught mid-bend, HOLD-C + NEG-WARP-C"},
+           {"risk": "her face drifts off the sheet", "prevented_by": "three-quarter, face turned to the pot, short 5 s clip"},
+           {"risk": "camera travels with her", "prevented_by": "locked-off tripod clause"}])
+B["B03c"] = clip("B03c",
+    "Seen from straight above: an old family photo album open on a pale-oak kitchen table, a faded 1970s snapshot of a teenage girl on a "
+    "seaside promenade, an older woman's hand resting at the edge of the page.",
+    "Already touching the page on the first frame: her hand lifts the edge of the page slightly and holds it, about to turn it — one small "
+    "movement in about a second; the photograph stays still and flat.",
+    "no page turning fully, no text appearing, no second hand, no extra fingers, no photograph moving, no camera movement",
+    1.5, hi=3,
+    risks=[{"risk": "the photograph warps or animates", "prevented_by": "'the photograph stays still and flat', HOLD-C + NEG-WARP-C"},
+           {"risk": "the hand multiplies or warps", "prevented_by": "one small lift, 'no second hand, no extra fingers'"},
+           {"risk": "text appears on the page", "prevented_by": "'no text appearing'"}])
+
 START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
          "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
          "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_173257_512cb5a0-c05b-4ab8-af5f-723322275d70.png",
@@ -159,7 +194,10 @@ START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUy
          "HK3-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_183345_15bd1d26-4f28-4cc9-9e05-a4a65495715d.png",
          "B01b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_194456_c2453c7e-9832-4f3f-9b00-9c7dbad21a16.png",
          "B01c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_194456_656ef52d-b5ca-473e-a831-c1dbaed4c5b6.png",
-         "B02": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_200235_5d3a123f-a2c4-4faa-8af7-b1513056106b.png"}
+         "B02": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_200235_5d3a123f-a2c4-4faa-8af7-b1513056106b.png",
+         "B03a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_202127_fabbd7d4-506d-47ae-ac06-d559f3c40e63.png",
+         "B03b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_202128_46596a96-c9cc-487c-a63d-ba91a8d96c67.png",
+         "B03c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_200831_62aeddb0-e97c-4589-9d43-6d675499545c.png"}
 
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)

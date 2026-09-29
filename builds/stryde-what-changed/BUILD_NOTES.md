@@ -145,4 +145,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   fabbd7d4); B03b "…taking your whole bodyweight, multiplied," = Maureen in the kitchen lifting a heavy cast-iron pot from a low
   cupboard, knees bent (job 46596a96); B03c "since you were a teenager." = the photo-album image (was B03-BR; card and file renamed).
   All three → To check.
-- **Where it stands:** waiting on the user's check of the B02 clip, the B03a / B03b / B03c images and the B01a image.
+- User: B03a / B03b / B03c "CONFIRM GO" → clips (`clips.py`, preflight PASS; screen times estimated at the locked VO pace):
+  B03a the thigh muscle tightens, the load runs into the band, the spot brightens once (5 s, Kie 85f4f3a2… 90 cr); B03b she rises with
+  the heavy pot (5 s, Kie c6f4e987… 90 cr); B03c her hand lifts the page edge (3 s — first Kie job 8a80c318 failed "Internal Error",
+  0 credits, resubmitted once: Kie 3624872a… 54 cr). All → To check.
+- **Where it stands:** waiting on the user's check of the B02 clip, the B03a / B03b / B03c clips and the B01a image.

@@ -1,0 +1,33 @@
+{
+ "beat": "B03c",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b03c\",\"subject\":\"Seen from straight above: an old family photo album open on a pale-oak kitchen table, a faded 1970s snapshot of a teenage girl on a seaside promenade, an older woman's hand resting at the edge of the page. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already touching the page on the first frame: her hand lifts the edge of the page slightly and holds it, about to turn it — one small movement in about a second; the photograph stays still and flat. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no page turning fully, no text appearing, no second hand, no extra fingers, no photograph moving, no camera movement, no music, no speech, no slow motion\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_200831_62aeddb0-e97c-4589-9d43-6d675499545c.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the photograph warps or animates",
+   "prevented_by": "'the photograph stays still and flat', HOLD-C + NEG-WARP-C"
+  },
+  {
+   "risk": "the hand multiplies or warps",
+   "prevented_by": "one small lift, 'no second hand, no extra fingers'"
+  },
+  {
+   "risk": "text appears on the page",
+   "prevented_by": "'no text appearing'"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}
