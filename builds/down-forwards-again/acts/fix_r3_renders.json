@@ -1,0 +1,56 @@
+{
+ "BR-04": {
+  "job": "01c76075-6260-4fda-8b01-2726aecb5824",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170655_01c76075-6260-4fda-8b01-2726aecb5824.png",
+  "file": "img/BR-04.v5.png",
+  "v": 5
+ },
+ "BR-16a": {
+  "job": "dcbe34d5-89bf-4289-b539-08e24cf0eb7a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170655_dcbe34d5-89bf-4289-b539-08e24cf0eb7a.png",
+  "file": "img/BR-16a.v3.png",
+  "v": 3
+ },
+ "BR-19b": {
+  "job": "54332bcc-6a83-44a5-911c-6517770b5904",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170658_54332bcc-6a83-44a5-911c-6517770b5904.png",
+  "file": "img/BR-19b.v2.png",
+  "v": 2
+ },
+ "BR-22b": {
+  "job": "42f16521-5037-4e96-8cd7-9fe38aac7190",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170656_42f16521-5037-4e96-8cd7-9fe38aac7190.png",
+  "file": "img/BR-22b.v2.png",
+  "v": 2
+ },
+ "BR-23": {
+  "job": "75cc01d9-d616-477a-9d0e-51fc89823ad0",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170655_75cc01d9-d616-477a-9d0e-51fc89823ad0.png",
+  "file": "img/BR-23.v2.png",
+  "v": 2
+ },
+ "MECH-14": {
+  "job": "b16fa61b-0410-47df-aa5d-626d827b8c7c",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170754_b16fa61b-0410-47df-aa5d-626d827b8c7c.png",
+  "file": "img/MECH-14.v3.png",
+  "v": 3
+ },
+ "BR-14b": {
+  "job": "36ae26e1-a18d-44d3-a6c0-2ac6d61b4912",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170755_36ae26e1-a18d-44d3-a6c0-2ac6d61b4912.png",
+  "file": "img/BR-14b.v1.png",
+  "v": 1
+ },
+ "BR-22a2": {
+  "job": "ba427881-6e19-4e4a-ab5a-c44214131575",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170754_ba427881-6e19-4e4a-ab5a-c44214131575.png",
+  "file": "img/BR-22a2.v1.png",
+  "v": 1
+ },
+ "BR-22a3": {
+  "job": "425ab7a3-9e8a-4c36-a24a-13fbf0e2bf7e",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_170755_425ab7a3-9e8a-4c36-a24a-13fbf0e2bf7e.png",
+  "file": "img/BR-22a3.v1.png",
+  "v": 1
+ }
+}

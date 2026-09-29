@@ -167,4 +167,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   `acts/build_fix_r2.py`. **Pad inside, from the user's photo (overrides the Product Sheet's INNER_PAD "plain smooth black"):** a mid-grey silicone pad set
   into the black shell back, same outline, fine raised curved parallel ridges over its surface, one smooth raised bar down its centre; chrome slide each end.
   The photo reached the chat only (no file in the container / Drive), so it is described in words; the Product Sheet itself is not changed yet (shared file).
+- **Round 3 (2026-09-29 ~17:10 UTC):** the user split two script lines into more B-rolls — B-22's first half is now PR-22a (two straps) + **BR-22a2**
+  ("Sixty days, and you keep the straps." — the two straps kept by her armchair, a calendar crossed off; 60-day seal in the edit) + **BR-22a3** ("From the
+  Stryde site." — her phone on a shop page, the real site laid over in the edit). B-14: **MECH-14** is no longer anatomy (the user: "no need an anatomy here") —
+  it is the strap turned over in her hand showing the grey ridged pad; **BR-14b** carries "The weight gets caught…" (her strapped knee stepping down a stair,
+  hands free). Act map + STEP4_5 tables + docs/actmap (Plan + Current) updated; angles.py PASS; wardrobe audits PASS. Fixes: BR-04 v5 (finger on the midline,
+  right under the kneecap), BR-16a v3 (strap held low by the knee model, waist-up), BR-19b v2 + BR-23 v2 (at the top of the flight stepping down, hands free),
+  BR-22b v2 (undistorted copy). `acts/build_fix_r3.py`. Replaced versions moved to Old.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

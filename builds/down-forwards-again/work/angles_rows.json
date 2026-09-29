@@ -930,28 +930,57 @@
  {
   "beat": "MECH-14",
   "group": "Act 3",
-  "type": "BR",
-  "subject": "anatomy",
-  "height": "low",
+  "type": "SHOT",
+  "subject": "P hand",
+  "height": "high",
   "side": "three-quarter",
-  "scale": "MCU",
+  "scale": "CU",
   "fg": "clean",
-  "why": "low = the catch holds",
+  "why": "high = looking down into her palm at the pad",
   "mode": 1,
-  "product_beat": false,
+  "product_beat": true,
   "face": false,
   "focus": {
-   "plane": "deep",
-   "dof": "deep",
+   "plane": "product",
+   "dof": "medium",
    "rack": null,
    "moving_subject": false
   },
-  "story_day": null,
+  "story_day": 2,
   "light": {
-   "source": "\u00a712A render light",
+   "source": "bay window, east wall, net curtains",
    "key_side": "L",
-   "time": "midday",
-   "arc": "\u00a712A anatomical register",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-14b",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "P legs",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = the catch, at the knee",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "front-door stained glass (east) + tall landing window",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
    "kelvin": 5600,
    "why": ""
   }
@@ -1261,6 +1290,64 @@
   "face": false,
   "focus": {
    "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "window over the sink, west wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-22a2",
+  "group": "Act 5",
+  "type": "SHOT",
+  "subject": "object",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 2,
+  "light": {
+   "source": "bay window, east wall, net curtains",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "after: sun in the house, warmer and open",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "BR-22a3",
+  "group": "Act 5",
+  "type": "SHOT",
+  "subject": "P hand",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = over her shoulder onto the screen",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
    "dof": "medium",
    "rack": null,
    "moving_subject": false

@@ -129,8 +129,13 @@ row("PR-12","Act 3",["B-12"],"PRODUCT","P hand","L-P-KITCH","P-D2","holds the st
     "sway","hands","yes — product turns","eye","front","CU","clean","","medium","product","R","Stryde",product="held (HELD_GRIPS) · first appearance",layout=FULL,model="NBP")
 row("BR-13","Act 3",["B-13"],"BR","P","L-P-FRONT","P-D2","sits on the armchair edge, LEFT leg straight, strap seated under the kneecap","still, one breath, 2s",
     "sway","sitting","no","eye","three-quarter","CU","clean","","medium","product","L","below",product="worn · VISIBLE (W-L-FRONT)",layout=SPL,model="NBP")
-row("MECH-14","Act 3",["B-14"],"MECH","anatomy","—","MECH","ANAT-A relief: the pad holds the one band, the red on the tendon cools to blue","one step, 3s",
-    "RV render","none","no","low","three-quarter","MCU","clean","low = the catch holds","deep","deep","L","pad",layout=SPL,eg="EG07")
+# MECH-14 — the user, 2026-09-29: "no need an anatomy here you can just show the inside  also this should not be 1 broll that script line is way too
+# loing for 1 broll only" → MECH-14 keeps its id (version history) but becomes the product close-up of the pad's inside; BR-14b carries the second sentence.
+row("MECH-14","Act 3",["B-14"],"PRODUCT","P hand","L-P-FRONT","P-D2","turns the strap over in her hand: the grey ridged silicone pad inside, its smooth central bar","a slow half turn, 2s",
+    "sway","hands","yes — product turns","high","three-quarter","CU","clean","high = looking down into her palm at the pad","medium","product","L","pad",product="held, back of the shell (PAD_BACK_SHOT, the user's pad photo)",layout=SPL,model="NBP")
+row("BR-14b","Act 3",["B-14"],"BR","P legs","L-P-HALL","P-D2","steps down one stair, strap on the LEFT knee: the foot lands and the knee bends easily under her weight","one step down, 2s",
+    "locked-off sway","stairs descending (§27G: one step, camera at the foot)","no","low","three-quarter","CU","clean","low = the catch, at the knee","medium","product","R","caught",
+    product="worn · VISIBLE",model="NBP")
 row("BR-15","Act 3",["B-15"],"BR","D hand","L-D-CONS","D-D1","his fingertip sets on the tendon just under the kneecap of the desk knee model, then lifts a centimetre","one tap, 2s",
     "sway","hands","no","high","three-quarter","ECU","clean","high = the placement from above","medium","hands","L","placement",layout=PIP)
 
@@ -161,7 +166,12 @@ row("BR-20","Act 4",["B-20"],"BR","D","L-D-CONS","D-D1","holds two identical kne
 TH("TH-A5", "Act 5", ["B-21","B-22","B-23"], "slow and certain on 'move the load'; the last line straight to lens, a small nod")
 row("PR-22a","Act 5",["B-22"],"PRODUCT","object","L-P-KITCH","P-D2","the open box on the kitchen table: two straps side by side in the insert (package_open)","still; a hand settles the lid, 2s",
     "sway","none","no","overhead","front","CU","clean","overhead = what's in the box","medium","product","R","Two",product="box open, two units (OFFER)",
-    model="GPT Sunburst",layout=PIP,eg="EG06 60-day seal")
+    model="GPT Sunburst",layout=PIP)
+# the user, 2026-09-29: "this should be 2 brolls the 2 strap is done but the 60 days need one too and the from stryde is th[e site]" → three B-rolls on B-22's first half
+row("BR-22a2","Act 5",["B-22"],"PRODUCT","object","L-P-FRONT","P-D2","weeks later: the two straps kept on the side table by her armchair, a wall calendar soft behind with most days crossed off","still, 2s",
+    "slow sway","none","no","eye","three-quarter","CU","clean","","medium","product","L","Sixty",product="two units, kept (worn-in, not new)",model="NBP",layout=PIP,eg="EG06 60-day seal")
+row("BR-22a3","Act 5",["B-22"],"PRODUCT","P hand","L-P-KITCH","P-D2","her phone in her hand on the Stryde site: the strap's product photo on screen (real site screen added in the edit)","one thumb scroll, 2s",
+    "sway","hands","no","high","three-quarter","CU","clean","high = over her shoulder onto the screen","medium","hands","R","site",product="on screen (the edit overlays the real site)",model="NBP",layout=PIP,eg="EG06 site URL")
 row("BR-22b","Act 5",["B-22"],"BR","copy (one-off CP-01 leg)","L-P-KITCH","P-D2","a stretched grey near-copy strap sags down a shin","one slow sag, 2s",
     "sway","none; blank near-copy (FAKE_BASE)","no","low","profile","CU","clean","low + profile = the sag","medium","foreground","R","stretch",
     product="near-copy (FAKE_BASE)",model="NBP",layout=PIP,ledger="F7")
@@ -191,7 +201,9 @@ BLINE = {
  "BR-16a": "Thirty four percent less strain. Measured. Three years with orthopedic surgeons.", "BR-16b": "Two hundred thousand people wearing one.",
  "BR-17a": "Ten seconds to put on. No sores, no rolling down,", "BR-17b": "and nobody can see it.",
  "BR-19a": "You do not have to take my word for it. One knee only. Leave the other bare.", "BR-19b": "Go to your own stairs and come down forwards. You will know in a minute.",
- "PR-22a": "Two for one, so you do both knees, which is what she needed. Sixty days, and you keep the straps. From the Stryde site.",
+ "PR-22a": "Two for one, so you do both knees, which is what she needed.", "BR-22a2": "Sixty days, and you keep the straps.", "BR-22a3": "From the Stryde site.",
+ "MECH-14": "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee.",
+ "BR-14b": "The weight gets caught and moved off the worn part before it reaches the joint.",
  "BR-22b": "The copies stretch, and a stretched strap stops holding the spot.",
 }
 for r in R:
