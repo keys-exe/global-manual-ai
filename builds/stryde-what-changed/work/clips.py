@@ -246,20 +246,27 @@ B["B06-BR"] = clip("B06-BR",
 
 # B06 image v4 (user CONFIRM): force arrows down the thigh onto the one tendon spot + pointer arrow; pip (host bottom-left).
 # "Seventeen times your bodyweight is still arriving, every step, in exactly the same place." ≈ 4.6 s → 6 s.
+# Video v2 — user Fix 'MOVING ALL ARROW, DETAILED FOCUS ON THE TENDON' (v1: arrows held still, locked camera, only light ran along
+# them; the pointer drifted). Now every arrow travels in onto the spot, and the camera pushes in slowly onto the tendon (the model
+# stays in place, so the camera never travels with a moving subject, §27G).
 B["B06"] = clip("B06",
-    "A premium 3D anatomical model of a single knee on a near-black field, seen from a low three-quarter angle in the upper right of the "
-    "frame, mid-step under load: detailed translucent thigh muscles, the kneecap, the patellar tendon, worn thin cartilage; four glowing "
-    "white-to-amber force arrows run down the thigh onto the spot just below the kneecap, one larger white pointer arrow in the dark field "
-    "points at that spot, which glows as one tight bright point on the patellar tendon.",
-    "Already under load on the first frame: the leg stays where it is and the arrows stay fixed in place. Once a second a soft pulse of "
-    "light runs DOWN along the four force arrows and arrives at the one spot below the kneecap, and each time it arrives the spot flares "
-    "brighter and eases back and the thigh muscles tense slightly — the same pulse, the same place, every second, unchanged.",
-    "no arrows moving, no arrows changing shape, no new arrows, no arrows fading away, no glow spreading down the shin, no second glowing "
-    "spot, no text, no labels, no numbers, no product, no camera orbit, no zoom, no slow motion, nothing entering the empty lower-left third of the frame",
+    "A premium 3D anatomical model of a single knee on a near-black field, low three-quarter, under load: "
+    "four glowing force arrows on the thigh and one white pointer arrow, all aimed at one glowing spot on the patellar tendon below the kneecap.",
+    "Already under load on the first frame, the leg itself stays where it is. ALL FIVE ARROWS MOVE: the four force arrows slide DOWN "
+    "along the thigh and the pointer arrow slides IN from the dark field, all five travelling onto the one spot below the kneecap and "
+    "arriving together; as they arrive the spot flares brighter and the thigh tenses slightly, then the arrows ease back a little and "
+    "travel in again — about once a second, same spot. The arrows keep their shape and count. As "
+    "they arrive, the view closes in slowly on the patellar tendon until it fills much of the frame: its long fibres, its banded grain "
+    "and the glowing spot on it in crisp detail.",
+    "no arrows changing shape, no new arrows, no arrows disappearing, no glow down the shin, no second spot, no leg moving, "
+    "no second limb, no text, no camera orbit, no rotation, no slow motion",
     4.6, hi=8, anat=True,
-    risks=[{"risk": "the arrows drift, multiply or morph", "prevented_by": "'the arrows stay fixed in place', only light travels along them, 'no arrows moving, no new arrows'"},
-           {"risk": "the glow spreads down the shin", "prevented_by": "one tight spot named, ANAT-LOAD, 'no glow spreading down the shin, no second glowing spot'"},
-           {"risk": "something enters the pip's empty lower-left", "prevented_by": "leg stays where it is, locked-off camera, lower-left named empty in negatives"}])
+    risks=[{"risk": "the arrows morph, multiply or vanish as they move", "prevented_by": "count and shape named fixed ('ALL FIVE', 'keep their shape and count'), one simple slide in, 'no new arrows, no arrows disappearing'"},
+           {"risk": "the push-in turns into an orbit or the leg moves", "prevented_by": "slow push-in only, 'no camera orbit, no rotation', 'the leg itself stays where it is', 'no leg moving'"},
+           {"risk": "a second limb edge appears (seen in v1)", "prevented_by": "'no second limb' + the push-in crops the frame edges away"}])
+B["B06"][0]["camera"] = {"movement": "A slow, steady push-in straight towards the patellar tendon over the whole clip, no pan, no tilt, no orbit.",
+                         "framing": "Starts as in the start frame, ends close on the patellar tendon and the glowing spot."}
+B["B06"][0]["negatives"] = B["B06"][0]["negatives"].replace(", no camera movement, no zoom", "")
 
 # B01a image v1 (user Confirm on the board): ANAT-B, the tendon band front-on, the spot glowing. "That band is the patellar tendon." ≈ 1.8 s → 3 s.
 B["B01a"] = clip("B01a",
