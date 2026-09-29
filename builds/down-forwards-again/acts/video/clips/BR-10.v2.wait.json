@@ -1,1 +1,11 @@
 {"taskId": "b5926337608677b9172e6bdb732eed5d", "created": true}
+{
+ "taskId": "b5926337608677b9172e6bdb732eed5d",
+ "state": "success",
+ "credits": 54.0,
+ "failMsg": null,
+ "urls": [
+  "https://tempfile.aiquickdraw.com/k/b5926337608677b9172e6bdb732eed5d_1_1790712126_1787.mp4"
+ ],
+ "saved": "acts/video/clips/BR-10.v2.mp4"
+}

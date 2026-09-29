@@ -1,1 +1,11 @@
 {"taskId": "1bd7115b178edef0d28a36beac2aed97", "created": true}
+{
+ "taskId": "1bd7115b178edef0d28a36beac2aed97",
+ "state": "success",
+ "credits": 90.0,
+ "failMsg": null,
+ "urls": [
+  "https://tempfile.aiquickdraw.com/k/1bd7115b178edef0d28a36beac2aed97_1_1790712130_4432.mp4"
+ ],
+ "saved": "acts/video/clips/BR-15.v1.mp4"
+}

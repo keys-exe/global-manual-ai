@@ -1,1 +1,11 @@
 {"taskId": "94b0cdcae02ce05be2c81e7b3750a90e", "created": true}
+{
+ "taskId": "94b0cdcae02ce05be2c81e7b3750a90e",
+ "state": "success",
+ "credits": 54.0,
+ "failMsg": null,
+ "urls": [
+  "https://tempfile.aiquickdraw.com/k/94b0cdcae02ce05be2c81e7b3750a90e_1_1790712113_9815.mp4"
+ ],
+ "saved": "acts/video/clips/MECH-03.v3.mp4"
+}

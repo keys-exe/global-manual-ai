@@ -1,1 +1,11 @@
 {"taskId": "b2dfa36ebd26d8475843e7a4a7530299", "created": true}
+{
+ "taskId": "b2dfa36ebd26d8475843e7a4a7530299",
+ "state": "success",
+ "credits": 108.0,
+ "failMsg": null,
+ "urls": [
+  "https://tempfile.aiquickdraw.com/k/b2dfa36ebd26d8475843e7a4a7530299_1_1790712171_8794.mp4"
+ ],
+ "saved": "acts/video/clips/MECH-14.v1.mp4"
+}

@@ -212,6 +212,17 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   BR-05a v2 + MECH-03 v2 (gen 2, 3 s each for their new spans; v1s to Old) and Act 2 gen 1 — BR-06 5 s, BR-07 3, BR-08 6, BR-09a 5, BR-09b 3, BR-09c 3,
   BR-10 6 (tasks `acts/video/act2_tasks.txt`, 666 Kie credits) → board To check. Next: videos for BR-05, BR-03b, MECH-03a, MECH-03d, MECH-05 once
   their images are confirmed.
+- **2026-09-29 ~19:50 UTC: user "fix and generate the act 3 videos".** Board: BR-03b card deleted by the user (not recreated; its span "there is a
+  band of tendon about as wide as your thumb." now shows the doctor unless the user says otherwise). Fix notes: BR-06 video "she should be halfway
+  down the stairs to show the going backwards", BR-10 video "this should be 3 separate brolls", MECH-03 video "normal walk only".
+  B-10 split → BR-10 (keeps its image) · BR-10b ("It was never a weak muscle.", hand on the tightening thigh, P-B9) · BR-10c ("It was where the load
+  was landing.", the left foot landing off the bottom stair, P-B9); act map + angles PASS + wardrobe PASS + STEP4_5 + docs synced. New images
+  (`acts/build_fix_r9.py`) → board To check. Videos (`acts/build_act3_videos.py`, crop sentence now per layout per §35): Act 3 gen 1 (BR-11a 3 s,
+  BR-11b 5, BR-11c 4, PR-12 3, BR-13 6, MECH-14 6, BR-14b 5, BR-15 5), Act 1 new images gen 1 (BR-05, MECH-03a, MECH-03d 3 s each; MECH-05 3 s on
+  its new image, video v2), fixes BR-06 v2 (stay mid-flight, facing the steps), BR-10 v2 (3 s, its own span), MECH-03 v3 (one ordinary walking
+  step; third generation on the user's go = their "fix and generate" on the card's Fix note). 1,080 Kie credits. Replaced videos to Old.
+  **Honest flag:** BR-06 v2's last frame still has her at the bottom of the stairs walking away — the start frame puts her high on the flight and the
+  model finishes the descent; a third try should start from a new frame with her halfway down, backwards (needs the user's go).
   **Open for later acts:** A4 aligns poorly (ratio 0.74; BR-17b came out 11 s) — check the A4 act-map lines against the heard words before its
   videos. A5 still has the BR-22a3 row ("From the Stryde site.") with no card.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

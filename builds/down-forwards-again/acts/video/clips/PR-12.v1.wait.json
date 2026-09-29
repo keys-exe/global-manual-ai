@@ -1,1 +1,11 @@
 {"taskId": "aaa974b3bb22563cbbe65e42f3e9bdfc", "created": true}
+{
+ "taskId": "aaa974b3bb22563cbbe65e42f3e9bdfc",
+ "state": "success",
+ "credits": 54.0,
+ "failMsg": null,
+ "urls": [
+  "https://tempfile.aiquickdraw.com/k/aaa974b3bb22563cbbe65e42f3e9bdfc_1_1790712113_7938.mp4"
+ ],
+ "saved": "acts/video/clips/PR-12.v1.mp4"
+}

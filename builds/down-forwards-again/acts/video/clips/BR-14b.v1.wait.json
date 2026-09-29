@@ -1,1 +1,11 @@
 {"taskId": "e963a74b65fb93d2dfb71b657828ddc6", "created": true}
+{
+ "taskId": "e963a74b65fb93d2dfb71b657828ddc6",
+ "state": "success",
+ "credits": 90.0,
+ "failMsg": null,
+ "urls": [
+  "https://tempfile.aiquickdraw.com/k/e963a74b65fb93d2dfb71b657828ddc6_1_1790712141_4493.mp4"
+ ],
+ "saved": "acts/video/clips/BR-14b.v1.mp4"
+}
