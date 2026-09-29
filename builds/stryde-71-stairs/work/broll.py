@@ -79,9 +79,11 @@ PROD_COPY = ("THE STRAP — copy it EXACTLY from the first attached photos (the 
   "about as tall as the kneecap — with two small rounded peaks and a shallow notch between them along its top edge, the lowercase grey stryde wordmark on its face, "
   "a small brushed-chrome slide at each end, and a thin black knit elastic band running from the slides around the back of the leg. It is NOT a knee brace, NOT a sleeve, NOT a pad and NOT a shield. "
   "Its top edge has TWO SMALL ROUNDED PEAKS with a notch between them that cups the bottom of the kneecap — never a flat straight band. "
-  "When worn it sits HIGH, on BARE SKIN directly under the kneecap, the notch touching the kneecap's lower edge, the kneecap fully uncovered above it — never down on the shin, never over clothing.")
+  "When worn it sits HIGH, on BARE SKIN on the patellar tendon: its top edge TOUCHES the bottom edge of the kneecap, with NO bare skin showing between kneecap and strap; the whole strap fits inside the short "
+  "space between the bottom of the kneecap and the bump at the top of the shin bone, the kneecap fully uncovered above it — never down on the shin, never over clothing. "
+  "Its size against the knee: the shell is only about as wide as the kneecap plus a thumb's width on each side, and only about as tall as the kneecap — a small, slim strap, never wider than the front of the knee.")
 PROD_NEG = ("no knee brace, no hinged brace, no metal side hinges, no brace with a hole for the kneecap, no knee sleeve, no wraparound pad, no tall shield, "
-  "no strap over the kneecap, no strap low on the shin, no flat straight band, no strap without its two peaks, no strap over trousers or fabric, no velcro panel, no strap without its knit band, no different product from the product photos")
+  "no strap over the kneecap, no strap low on the shin, no gap of skin between kneecap and strap, no oversized shell, no shell wider than the knee, no flat straight band, no strap without its two peaks, no strap over trousers or fabric, no velcro panel, no strap without its knit band, no different product from the product photos")
 
 BEATS = {}
 
@@ -334,13 +336,14 @@ def r_06a(): return seed("R-06a", "her right shin", "the strap", [   # Fix 2026-
     "her leg and the strap", "the morning light through the sink window", PNEG + ", " + PS.fill(PS.NEG_SEAT, "right")[:500] + ", no face, no standing, no hands on the shell, no fingers over the wordmark, no hand covering the strap",
     R(("N sheet", "N"), ("P2-KITCHEN plate", "P2"), *PR_REFS["worn"]))
 BEATS["R-06a"] = r_06a
-def r_07a(): return seed("R-07a", "her coming down from the top of the stairs", "her", [   # Fix 2026-09-29: very top, hands never touch the rail
-    "Her staircase, exactly as in the attached hall photo, seen from the top landing beside her, a little ahead of her, looking across and down the whole flight to the hall below. She — " + NID + ", exactly as in her attached reference sheet — in " + WARD["N-D3"] + ", "
-    "is at the VERY TOP of the stairs taking her FIRST step down FORWARDS off the landing, facing down the stairs: her left foot in a tan house slipper landing on the top step, the whole empty flight below her. "
-    "Her hands NEVER touch the handrail: her right hand holds a white coffee mug in front of her, her left arm swings freely at her side on the wall side, both hands well clear of the rail. "
-    "Steady and easy, a small surprised smile. The strap on her right knee, visible below the hem of her denim skirt. " + prod("worn")],
-    "her and the stairs", STAIRS_SUN, PNEG + ", no hands on the rail, no hand touching the handrail, no going down backwards, no one else on the stairs, no her halfway down, no her near the bottom",
-    R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]), height="eye", side="three-quarter")
+def r_07a(): return seed("R-07a", "her coming down the stairs", "her", [   # Fix 2026-09-29 x3: very top, coming down, hands off the rail, her face, her staircase
+    "THE SAME STAIRCASE AND THE SAME VIEWPOINT AS THE ATTACHED HALL PHOTO: taken from exactly where that photo was taken, in the hall by the front door, the straight flight rising away with the photo wall on its right and the white balusters and dark oak handrail on its left; "
+    "the full-width oatmeal-beige carpet with its brass stair rods. She — " + NID + ", THE SAME WOMAN as in the attached talking-head frame and her reference sheet, the same face — in " + WARD["N-D3"] + ", "
+    "is at the VERY TOP of that flight, on the top step, coming DOWN toward the camera, FACING FORWARDS: caught taking her first step down, one tan house slipper landing on the step below the top, the whole empty flight between her and the camera. "
+    "Her hands NEVER touch the handrail: her right hand holds a white coffee mug in front of her, her left arm hangs free on the wall side, both hands well clear of the rail. Steady and easy, a small surprised smile. "
+    "The strap on her right knee, visible below the hem of her denim skirt. " + prod("worn")],
+    "her and the stairs", STAIRS_SUN, PNEG + ", no hands on the rail, no hand touching the handrail, no going down backwards, no one else on the stairs, no her halfway down, no her near the bottom, no different staircase, no different woman",
+    R(("N sheet", "N"), ("Talking-head frame (her face)", "THF"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]), height="eye", side="front")
 BEATS["R-07a"] = r_07a
 
 # ---------------------------------------------------------------- Act 4 — mechanism (Loretta's words)
