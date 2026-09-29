@@ -13,7 +13,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 ## Sessions
 - session_01F5f9WBysAi6Tgspjop271s (2026-09-29 11:20 UTC): steps 1–3. Inspo measured (195.5s, 115 shots, 176 wpm, host ~55% on camera,
   cut-out PiP on most B-roll), absorption, ledger (VN01 = hook line 1 as VO over B-roll), phrase inventory, claims (F2–F11), Mode & Model Lock.
-  Cast: H-HOST, R1-MAUREEN, R2-DESMOND on Higgsfield (Sunburst, 2k, one each; R2's first call returned 503 before starting, sent once more).
+  Cast: H-HOST, R1-MAUREEN, R2-DESMOND (landed 11:50, board To check) on Higgsfield (Sunburst, 2k, one each; R2's first call returned 503 before starting, sent once more).
   Higgsfield 17,537 credits before the cast. Four boards made; docs/absorption on Plan + Current.
 
 ## Where it stands
