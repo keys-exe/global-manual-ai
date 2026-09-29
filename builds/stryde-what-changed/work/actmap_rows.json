@@ -831,13 +831,13 @@
   "key": "overnight",
   "function": "problem — the feeling",
   "subject": "R1",
-  "location": "L-M-STAIRS",
+  "location": "L-KITCHEN",
   "story_day": "M-D1",
-  "framing": "MCU at the top of her stairs, hand on the rail, she looks down the flight and stops",
-  "action": "she draws one breath and doesn't step",
-  "pace": "one breath, about a second",
+  "framing": "MCU in her kitchen first thing in the morning: Maureen half-risen from her chair at the oak table, a cup of tea in front of her, she stops and puts a hand to her knee, a small surprised frown",
+  "action": "she straightens, stops, hand to her knee",
+  "pace": "one slow rise, about two seconds",
   "camera": "locked off",
-  "staging": "none",
+  "staging": "kitchen: three-quarter at the table, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "absent",
@@ -846,14 +846,14 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "",
+  "notes": "v2 — user Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: top of her stairs, stopping)",
   "duration": "pending-master",
   "angle": {
-   "height": "high",
+   "height": "eye",
    "side": "three-quarter",
    "fg": "clean",
    "scale": "MCU",
-   "why": "high = the drop in front of her, small"
+   "why": "eye-level three-quarter = the small surprise on her face"
   },
   "focus": {
    "plane": "eyes",
@@ -862,10 +862,10 @@
    "moving_subject": false
   },
   "light": {
-   "source": "Maureen's landing window, grey morning",
-   "key_side": "R",
+   "source": "kitchen window over the sink",
+   "key_side": "L",
    "time": "morning",
-   "arc": "problem: grey",
+   "arc": "everyday: cool daylight",
    "kelvin": 6500
   },
   "face": true
@@ -2783,7 +2783,7 @@
   "beat": "B08-BR",
   "type": "BR",
   "act": "Act 1",
-  "line": "Nothing about the way you walk changed, so you assume nothing changed. And here is the part that catches people out. You do not have to have done anything to your knees for this to happen.",
+  "line": "Nothing about the way you walk changed, so you assume nothing changed.",
   "key": "changed",
   "function": "ordinary walking",
   "subject": "R1",
@@ -2802,7 +2802,7 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "covers B08-TH",
+  "notes": "first sentence of B08-TH (user Fix 2026-09-29)",
   "duration": "pending-master",
   "angle": {
    "height": "eye",
@@ -2820,6 +2820,53 @@
   "light": {
    "source": "Maureen's landing window, grey morning",
    "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 6500
+  },
+  "face": false
+ },
+ {
+  "beat": "B08-BRb",
+  "type": "BR",
+  "act": "Act 1",
+  "line": "And here is the part that catches people out. You do not have to have done anything to your knees for this to happen.",
+  "key": "anything",
+  "function": "nothing you did",
+  "subject": "R1",
+  "location": "L-M-STAIRS",
+  "story_day": "M-D1",
+  "framing": "CU on her hall floor by the front door: her plimsolls set neatly side by side on the mat, clean and ordinary; her hand sets them down",
+  "action": "her hand sets the pair down",
+  "pace": "one set-down, about a second",
+  "camera": "locked off",
+  "staging": "hall floor, hand and shoes only, camera still",
+  "pin_end": "no",
+  "max": 6,
+  "product": "absent",
+  "visibility": "—",
+  "model": "NB2",
+  "layout": "full",
+  "eg": "",
+  "ledger": "",
+  "notes": "rest of B08-TH (planned)",
+  "duration": "pending-master",
+  "angle": {
+   "height": "high",
+   "side": "front",
+   "fg": "clean",
+   "scale": "CU",
+   "why": "high = looking down at an ordinary pair of shoes"
+  },
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "Maureen's landing window, grey morning",
+   "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 6500

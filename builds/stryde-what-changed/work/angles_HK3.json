@@ -604,11 +604,11 @@
   "group": "Act 1",
   "type": "BR",
   "subject": "R1",
-  "height": "high",
+  "height": "eye",
   "side": "three-quarter",
   "scale": "MCU",
   "fg": "clean",
-  "why": "high = the drop in front of her, small",
+  "why": "eye-level three-quarter = the small surprise on her face",
   "mirror_of": null,
   "mode": 1,
   "product_beat": false,
@@ -621,10 +621,10 @@
   "story_day": "M-D1",
   "face": true,
   "light": {
-   "source": "Maureen's landing window, grey morning",
-   "key_side": "R",
+   "source": "kitchen window over the sink",
+   "key_side": "L",
    "time": "morning",
-   "arc": "problem: grey",
+   "arc": "everyday: cool daylight",
    "kelvin": 6500,
    "why": ""
   }
@@ -659,6 +659,36 @@
   "light": {
    "source": "Maureen's landing window, grey morning",
    "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "B08-BRb",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "R1",
+  "height": "high",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = looking down at an ordinary pair of shoes",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "M-D1",
+  "face": false,
+  "light": {
+   "source": "Maureen's landing window, grey morning",
+   "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 6500,

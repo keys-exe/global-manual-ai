@@ -387,6 +387,21 @@ B["B06-BR2"] = (NB2, ["R2", "P3"], photo([
     NO_FACE + ", no torso, no hands, no product anywhere, no knee strap, no knee support, no walking stick, no limp, no second person, "
     "no dog, no number plates, no readable signs, " + PLAIN_SHOES + ", no wrong number of legs"))
 
+# B08-BR — first sentence of B08-TH: "Nothing about the way you walk changed, so you assume nothing changed." (user Fix: B-roll here).
+# Maureen from behind, walking down her hall towards the front door, ordinary and unhurried.
+B["B08-BR"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone at eye height at the foot of her stairs, looking down her hall towards the front door. She is walking away "
+    "from the lens down the hall at an ordinary, unhurried pace, caught mid-stride: her right foot planted, her left heel lifting behind. "
+    "Medium shot from behind, her whole figure small in the frame, the front door with its glass panel at the end of the hall, the half-moon "
+    "hall table beside it. Her face is not visible — only the back of her head and her soft white hair.",
+    R1_BODY + " " + R1_LEGS + " Wearing " + WARD["M-D1"] + ".",
+    M_STAIRS + " The half-moon hall table with a key bowl and a blue-and-white vase of dried lavender stands just inside the front door.",
+    angle("B08-BR", "her walking down the hall"),
+    focus("everything"),
+    light("M-GREY-R", "her and the hall"), colour("M-STAIRS-AM")],
+    "no face visible, no turning round, no looking back, no limp, no walking stick, no product anywhere, no knee strap, no second person, "
+    "no readable text, no wrong number of legs"))
+
 # B07-BRa — user "The cushion gets thinner. (CUSHION IN KNEE GETS THINNER)". ANAT-B, front-on and closer than B05 (profile cutaway):
 # the cartilage cushion in the joint gap, visibly thin. No glow — a condition beat.
 B["B07-BRa"] = (NB2, [], anat(
@@ -415,19 +430,21 @@ B["B07-BRb"] = (NB2, ["R1", "P1"], photo([
     "no face in frame, no head, no product anywhere, no knee strap, no knee support, no walking stick, no stairlift, no second person, "
     "no going up the stairs, no falling, no readable labels on the basket, " + PLAIN_SHOES + ", no wrong number of legs, no extra hands"))
 
-# B07 — "That is why it feels like it arrived overnight." Maureen at the top of her stairs, looks down and stops. Face in frame.
-B["B07"] = (NB2, ["R1", "P1"], photo([
-    "A snapshot from a phone held a little above her, on the landing, three-quarter on. She stands at the top of her stairs, her left hand "
-    "on the oak handrail, about to go down, and has stopped: she looks down the flight, her mouth closed, a small hesitation — not "
-    "pain, just pausing to think about the first step. Medium close-up: head, shoulders and hands, the top of the flight falling away "
-    "below her.",
+# B07 v2 — "That is why it feels like it arrived overnight." User Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: top of her stairs, stopping).
+# First thing in the morning in her kitchen: she half-rises from the table and stops, hand to her knee, a small surprised frown.
+B["B07"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone at eye height across her kitchen table, three-quarter on, first thing in the morning. She is half-risen from "
+    "her chair at the pale-oak table, a cup of tea and a plate with a slice of toast in front of her, and has stopped partway up: one hand "
+    "on the table edge, the other pressed to the front of her right knee, looking down at it with a small puzzled frown — not pain, just "
+    "surprise, as if it was fine yesterday. Medium close-up from the waist up with her hand on her knee in frame at the bottom edge.",
     R1 + " Wearing " + WARD["M-D1"] + ".",
-    M_STAIRS,
-    angle("B07", "her at the top of the stairs"),
-    focus("her nearest eye", deep=False).replace("the room behind", "the stairs below"),
-    light("M-GREY-R", "her face and hands"), colour("M-STAIRS-AM")],
-    "no crying, no wincing, no hand on her knee, no product anywhere, no knee strap, no walking stick, no stairlift, no second person, "
-    "no looking at the camera"))
+    KITCHEN,
+    angle("B07", "her at the kitchen table"),
+    focus("her nearest eye", deep=False).replace("the room behind", "the kitchen behind"),
+    light("KITCH-L", "her face and hands"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan and a navy-and-white striped top")
+    .replace("the faded orange of the old photograph", "the jug of garden flowers")],
+    "no crying, no wincing, no grimace, no product anywhere, no knee strap, no walking stick, no second person, no looking at the camera, "
+    "no readable text, no logos on the mug"))
 
 # B08a — "Some of the people it happens to have never run a mile in their life." Maureen picks up her keys. Face in frame.
 B["B08a"] = (NB2, ["R1", "P1"], photo([
