@@ -116,7 +116,7 @@ def main():
             if len({setup(x) for x in w}) < 3:
                 fail("WINDOW", [x["beat"] for x in w], f"{len({setup(x) for x in w})} setups in five shots")
 
-    TRAVEL_RIGS = {"F1", "F4", "F5", "R1-W", "R1-FAST"}
+    TRAVEL_RIGS = {"F1", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "R1-W", "R1-FAST"}
     for r in rows:
         f = r.get("focus")
         if not f:
@@ -164,7 +164,10 @@ def main():
                 fail("SHOT", [r["beat"]], f"{sid} on a travelling rig {r.get('rig')}")
             if sid in SIGNATURE and not r.get("why"):
                 fail("SHOT", [r["beat"]], f"signature shot {sid} with no why")
-    sig = lambda r: bool(SIGNATURE & set(shots(r))) and not r.get("inspo_ok")
+    sig = lambda r: (bool(SIGNATURE & set(shots(r))) or r.get("rig") == "F10") and not r.get("inspo_ok")   # F10 dolly zoom is a signature move (§24N)
+    dz = [r["beat"] for r in film if r.get("rig") == "F10"]
+    if len(dz) > 1:
+        fail("SHOT", dz, f"{len(dz)} dolly zooms (F10) — at most one per film (§24N)")
     for i in range(1, len(film)):
         if sig(film[i - 1]) and sig(film[i]):
             fail("SHOT", [film[i - 1]["beat"], film[i]["beat"]], "two signature shots in a row")

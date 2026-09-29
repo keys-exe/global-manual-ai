@@ -53,12 +53,19 @@ SIG = {
     "NEG-ANIMFILM": "no concept art",
     "MULTI-FILM": "within a single take",
     "NEG-SOUND": "no music, no score, no sound effects",
+    "SERIES-LOOK": "The look of a high-end live-action drama series",
 }
-RIGS = {  # rig signature → F-rig
-    "F1": "Camera on a dolly", "F2": "Camera on a tripod", "F3": "Camera on an operator's shoulder",
+RIGS = {  # rig signature → F-rig (F6–F10: the Seedance move library, §24N)
+    "F1": "steady push toward the subject", "F2": "Camera on a tripod", "F3": "Camera on an operator's shoulder",
     "F4": "Camera on a slider", "F5": "Camera on a stabiliser",
+    "F6": "Camera pulling back on a dolly", "F7": "Camera arcing", "F8": "Camera on a crane",
+    "F9": "Camera tracking alongside", "F10": "Camera performing a slow dolly zoom",
 }
-TRAVEL_RIGS = {"F1", "F4", "F5"}
+TRAVEL_RIGS = {"F1", "F4", "F5", "F6", "F7", "F8", "F9", "F10"}   # the camera moves through space
+NOT_IN_PLACE = {"F1", "F4", "F5", "F6", "F7", "F9", "F10"}         # subject sits, stands, turns, reaches (§24K/§24N)
+NOT_TRAVELS = {"F1", "F3", "F4", "F6", "F7", "F8", "F10"}          # subject walks: only F2, F5, F9
+SEEDANCE_ONLY = {"F6", "F7", "F8", "F9", "F10"}
+STREAMERS = re.compile(r"\b(netflix|hbo|max original|prime video|amazon original|apple tv|disney\+?|hulu|paramount\+?|peacock)\b", re.I)
 WALK = re.compile(r"\b(walks?|walking|steps? (?:toward|into|across|down|up)|crosses|climbs?|stairs|runs?|running)\b", re.I)
 PLACEHOLDER = re.compile(r"\[(?:[A-Z][A-Z0-9 ,:/'’\-]{2,}|NAME|WHO|WORD|STATE|PACE|SIDE|FOCAL)[^\]]*\]")
 BANNED = re.compile(r"\bcinematic\b", re.I)
@@ -94,8 +101,12 @@ def run(c):
         fn = c.get("fix_note", "")
         check("gen 2 has a diagnosed fix", "→" in fn or "->" in fn, fn or "missing fix_note")
 
-    # 2. Frames
-    check("start image approved", bool(c.get("start_image")) and c.get("start_approved") is True)
+    # 2. Frames — on Seedance, ingredients: information, never frames (§4, V7.68.0)
+    if conn == "seedance":
+        check("every ingredient approved", c.get("ingredients_approved") is True, "Manual: the user's Confirm on every ingredient card")
+        check("no frame in the pack", not c.get("start_image"), "a Seedance call carries no start, master or scene frame")
+    else:
+        check("start image approved", bool(c.get("start_image")) and c.get("start_approved") is True)
     if c.get("pinned"):
         check("pinned: end image approved", bool(c.get("end_image")) and c.get("end_approved") is True)
         check("pinned: runs on Kling first-and-last frame", conn == "kling", "pinned shots never run on Seedance (§24K)")
@@ -119,17 +130,24 @@ def run(c):
     ph = PLACEHOLDER.findall(p)
     check("no unfilled [SLOTS]", not ph, ", ".join(sorted(set(ph)))[:300])
     check("no banned word 'cinematic'", not BANNED.search(p))
+    check("no streamer, series or studio name (§24N, §10A)", not STREAMERS.search(p), ",".join(sorted(set(m.group(0) for m in STREAMERS.finditer(p)))))
 
     # 5. Motion (§27G / §24K)
     rigs = [r for r, s in RIGS.items() if s in p]
     sm = c.get("subject_motion") or ("travels" if WALK.search(p) else "still")
-    if film:
+    series = film and mode == 4 and conn == "seedance" or bool(c.get("series"))
+    if film or series:
         check("one F-rig", len(rigs) == 1, ",".join(rigs) or "none found")
-        if sm != "still":
-            bad = [r for r in rigs if r in TRAVEL_RIGS and not (r == "F5" and sm == "travels")]
-            check("camera or subject moves, never both (§24K)", not bad, f"subject {sm}, rig {','.join(rigs)}")
+        bad = [r for r in rigs if (sm == "in_place" and r in NOT_IN_PLACE) or (sm == "travels" and r in NOT_TRAVELS)]
+        check("camera or subject moves, never both — except F5/F9 on a walk (§24K, §24N)", not bad, f"subject {sm}, rig {','.join(rigs)}")
         if "F5" in rigs:
             check("F5 framed waist-up", "waist" in p.lower())
+        if "F9" in rigs:
+            check("F9: a walk in profile", sm == "travels" and "profile" in p.lower(), f"subject {sm}")
+        if set(rigs) & SEEDANCE_ONLY:
+            check("F6–F10 on Seedance only (§24N)", conn == "seedance", conn)
+    if series:
+        check("SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] in p)
     if kind == "multi":
         check("MULTI-SHOT only when nobody moves", sm == "still", f"subject {sm}")
 
