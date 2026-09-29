@@ -1,0 +1,33 @@
+{
+ "beat": "HK3-a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"hk3_a\",\"subject\":\"An older white woman's legs seen from a camera at ground level on a grey paving-slab pavement, cropped at the waist: a navy A-line skirt ending above the knee, bare knees and shins, plain white canvas plimsolls, walking straight towards the lens along the pavement. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already mid-stride on the first frame: she keeps walking towards the lens at an ordinary pace — three steps, about one a second, each foot landing flat on the slabs — and comes a little closer to the lens, still cropped at the waist. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no face in frame, no head entering the frame, no second person, no dog, no knee strap, no knee brace, no walking stick, no running, no stepping over the camera, no logos, no readable signs, no extra legs, no music, no speech, no slow motion\"}",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_175116_4eefcbcd-8107-4478-bc49-7de4c9de2bb4.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "legs or feet warp mid-stride",
+   "prevented_by": "three steps at a countable pace, start frame caught mid-stride, HOLD-C + NEG-WARP-C"
+  },
+  {
+   "risk": "camera travels with the walker",
+   "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"
+  },
+  {
+   "risk": "she walks into or over the lens",
+   "prevented_by": "three steps only, 'no stepping over the camera', starts about two metres away"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}

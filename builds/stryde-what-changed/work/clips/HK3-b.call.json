@@ -1,0 +1,33 @@
+{
+ "beat": "HK3-b",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"hk3_b\",\"subject\":\"A premium 3D anatomical model of a whole leg from hip to foot, seen from a high three-quarter angle on a near-black field, one small tight spot glowing on the patellar tendon just below the kneecap. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already under load on the first frame: the leg carries a step's load once a second, and with each pulse the spot at the patellar tendon immediately below the kneecap glows a little warmer and brighter than the last — six steady pulses stacking up — the glow staying one tight spot the whole time. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens and straightens along its length, and the whole structure compresses a few degrees. The anatomy takes the weight — it is not a still model with light played over it.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no arrows, no text, no labels, no numbers, no counter, no glow on the shin bone, no glow spreading along the leg, no second limb, no product, no camera orbit, no zoom, no music, no speech, no slow motion\"}",
+ "duration": 8,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_175113_a1ea8928-b9b9-4391-b844-e9d8140173aa.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the glow spreads along the leg as it builds",
+   "prevented_by": "'one tight spot the whole time', negatives on spread and shin"
+  },
+  {
+   "risk": "the model swims over 8 s",
+   "prevented_by": "HOLD-C + NEG-WARP-C, locked-off, a single repeating pulse"
+  },
+  {
+   "risk": "numbers or a counter appear (the 70 million is a post overlay)",
+   "prevented_by": "'no text, no numbers, no counter'"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}

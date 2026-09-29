@@ -87,10 +87,35 @@ B["HK2-b"] = clip("HK2-b",   # v4 image (user Fixes) — side-on, cropped at the
                  {"risk": "his head rises into the frame as he stands", "prevented_by": "rise only to thigh height with the box, 'no head entering the frame', locked-off tripod"},
                  {"risk": "camera travels with the moving subject", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"}])
 
+# Hook 3 — E6 from the trimmed HK3 variant: HK3-a 0–4.14 s ("That" at 4.14), HK3-b 4.14–10.28 s (talking head from "Here")
+B["HK3-a"] = clip("HK3-a",
+    "An older white woman's legs seen from a camera at ground level on a grey paving-slab pavement, cropped at the waist: a navy A-line skirt "
+    "ending above the knee, bare knees and shins, plain white canvas plimsolls, walking straight towards the lens along the pavement.",
+    "Already mid-stride on the first frame: she keeps walking towards the lens at an ordinary pace — three steps, about one a second, each "
+    "foot landing flat on the slabs — and comes a little closer to the lens, still cropped at the waist.",
+    "no face in frame, no head entering the frame, no second person, no dog, no knee strap, no knee brace, no walking stick, no running, "
+    "no stepping over the camera, no logos, no readable signs, no extra legs",
+    4.14, risks=[{"risk": "legs or feet warp mid-stride", "prevented_by": "three steps at a countable pace, start frame caught mid-stride, HOLD-C + NEG-WARP-C"},
+                 {"risk": "camera travels with the walker", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"},
+                 {"risk": "she walks into or over the lens", "prevented_by": "three steps only, 'no stepping over the camera', starts about two metres away"}])
+B["HK3-b"] = clip("HK3-b",
+    "A premium 3D anatomical model of a whole leg from hip to foot, seen from a high three-quarter angle on a near-black field, one small "
+    "tight spot glowing on the patellar tendon just below the kneecap.",
+    "Already under load on the first frame: the leg carries a step's load once a second, and with each pulse the spot at [SITE] glows a "
+    "little warmer and brighter than the last — six steady pulses stacking up — the glow staying one tight spot the whole time.",
+    "no arrows, no text, no labels, no numbers, no counter, no glow on the shin bone, no glow spreading along the leg, no second limb, "
+    "no product, no camera orbit, no zoom",
+    6.14, hi=8, anat=True,
+    risks=[{"risk": "the glow spreads along the leg as it builds", "prevented_by": "'one tight spot the whole time', negatives on spread and shin"},
+           {"risk": "the model swims over 8 s", "prevented_by": "HOLD-C + NEG-WARP-C, locked-off, a single repeating pulse"},
+           {"risk": "numbers or a counter appear (the 70 million is a post overlay)", "prevented_by": "'no text, no numbers, no counter'"}])
+
 START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
          "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
          "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_173257_512cb5a0-c05b-4ab8-af5f-723322275d70.png",
-         "HK2-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_174627_a9e02dbb-2d91-4a3d-a960-2a053cdfef10.png"}
+         "HK2-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_174627_a9e02dbb-2d91-4a3d-a960-2a053cdfef10.png",
+         "HK3-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_175116_4eefcbcd-8107-4478-bc49-7de4c9de2bb4.png",
+         "HK3-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_175113_a1ea8928-b9b9-4391-b844-e9d8140173aa.png"}
 
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
