@@ -118,5 +118,9 @@
  "HK1-02c_v4": {
   "job": "31dd56c8-524f-488c-80e8-a696fae81f3f",
   "asset": "34ce45fad5a81f3d2c15df62b3b919e2"
+ },
+ "HK1-02c_v5": {
+  "job": "08be9db1-47ba-4f30-b21d-ef207e3261eb",
+  "asset": "9f1ca01709d3d28b35bc012dd89197a1"
  }
 }

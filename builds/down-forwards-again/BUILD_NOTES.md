@@ -102,7 +102,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   apart on the kitchen table, sharp in the foreground (§15A object beat); behind, soft, she tips the whole drawer of old braces into a black bin bag
   (`hooks/build_hooks_v6.py`, job 31dd56c8, nano_banana_pro requested / Higgsfield reports nano_banana_2). v3 to the Old board. Act map updated, angles.py PASS.
 
+- 2026-09-29 ~13:20 UTC: user "that is good but dont make the braces magically going to the trash bag she should be putting them there" → HK1-02c v5:
+  same frame as v4, she puts one brace into the bin bag by hand (bag held open with the other hand), the rest still in the drawer, nothing in mid-air
+  (`hooks/build_hooks_v7.py`, job 08be9db1). v4 to the Old board.
+
 ## Where it stands
-- **Waiting on the user:** HK1-02c v4 on the board — Confirm or Fix. Confirmed images: HK1-01a v4, HK1-02a v5, HK1-02b v3, HK2-02a v3, HK3-01a v2.
+- **Waiting on the user:** HK1-02c v5 on the board — Confirm or Fix. Confirmed images: HK1-01a v4, HK1-02a v5, HK1-02b v3, HK2-02a v3, HK3-01a v2.
 - **Then:** each confirmed frame → its Kling 3.0 Omni video via Kie (§22X preflight, §27G, length from `assemble.py --lengths` on the locked VO);
   HK2-02a is a pinned seating clip (end frame: the strap seated, W-L-FRONT placement). Then B-roll acts (step 7), CapCut block.
