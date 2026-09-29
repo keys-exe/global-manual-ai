@@ -70,5 +70,21 @@
   "res": "1536\u00d72752",
   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
   "at": 1790676200000
+ },
+ "HK1-01a_v3": {
+  "job": "dc061b02-cb28-456d-8096-179db3d5dce9",
+  "asset": "25017f95c537d33632e45aa787726fb2"
+ },
+ "HK1-02a_v3": {
+  "job": "21b325d8-1268-4bc2-9ea2-df86157172fb",
+  "asset": "006a95b7a757448582252086aab94dc5"
+ },
+ "HK1-02b_v1": {
+  "job": "caaf587d-99b8-4882-91b6-3ccf859f3d90",
+  "asset": "70c8af4337931cc25b1da2ab85bebd8d"
+ },
+ "HK2-02a_v3": {
+  "job": "dd2add6c-2681-4176-8877-4d9cbd5eb04c",
+  "asset": "b3bb9849ce17a1797ac810f15789808f"
  }
 }

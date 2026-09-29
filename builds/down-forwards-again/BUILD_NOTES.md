@@ -76,7 +76,16 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   updated; angles.py PASS. `hooks/build_hooks_v2.py` → nano_banana_2 v2 renders (jobs 49b86e44, fd67eaff, 00f46dd9, f282b14c) → board To check;
   v1 frames moved to the Old board (copies confirmed, then deleted from Current). CapCut: HK1-01a gets a home-camera timestamp overlay in post (§22E, §17).
 
+- 2026-09-29 ~10:15 UTC: user "FIX THOSE" → the board Fix notes (§34): HK1-01a "…RUNNING DOWN THE STAIRS AT THE SUBWAY STATION, NOT JUST AT HOME" →
+  v3: she runs down Underground entrance stairs, forwards, P-D2, CONCEALED (new INCIDENTAL location L-TUBE); HK1-02a "SHOW ALL OF THOSE" → split into
+  HK1-02a the operation (pre-op marker arrow on her left knee, L-HOSP) · HK1-02b the physio (resistance band, front-room floor, overhead) · HK1-02c the
+  drawer (the v2 spill render carried over, no new call); HK2-02a "TEN SECONDS TO PUT ON THE STRYDE STRAP" → seating beat (§9B, SEAT_LOCK start frame:
+  closed strap at mid-shin, both hands on the shell; NEG_SEAT kept for the clip, pin_end yes) — the product now first appears in Hook 2 (was PR-12).
+  HK3-01a confirmed by the user. `hooks/build_hooks_v3.py`; jobs dc061b02, 21b325d8, caaf587d, dd2add6c (HK2-02a: nano_banana_pro requested,
+  Higgsfield reports nano_banana_2). Replaced v2s (HK1-01a, HK2-02a) moved to the Old board. Act map rows + STEP4_5 + docs/actmap updated; angles.py PASS.
+  Note: three B-rolls on the HK1-02 line (~6 s) sit near the 2.0 s minimum hold (§30H) — checked at assembly. Higgsfield 17,548.
+
 ## Where it stands
-- **Waiting on the user:** the four v2 hook frames (HK1-01a, HK1-02a, HK2-02a, HK3-01a) on the board — Confirm or Fix.
-- **Then:** each confirmed frame → its Kling 3.0 Omni video via Kie (§22X preflight, §27G, length from `assemble.py --lengths` on the locked VO) → board.
-  Hooks gate (step 6), then B-roll acts (step 7), CapCut block; finished videos = TH-HKn (+ hook B-roll) + TH-A1…A5 (+ B-roll).
+- **Waiting on the user:** HK1-01a v3, HK1-02a v3, HK1-02b v1, HK1-02c (drawer), HK2-02a v3 on the board — Confirm or Fix. HK3-01a image confirmed.
+- **Then:** each confirmed frame → its Kling 3.0 Omni video via Kie (§22X preflight, §27G, length from `assemble.py --lengths` on the locked VO);
+  HK2-02a is a pinned seating clip (needs an approved end frame: the strap seated, W-L-FRONT placement). Then B-roll acts (step 7), CapCut block.

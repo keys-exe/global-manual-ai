@@ -18,6 +18,8 @@ LOC = {
  "L-P-DOOR":  dict(plate="P0-PROP-P (exterior: the red-brick front, the step)", tier="INCIDENTAL", src="open sky over the street, east"),
  "L-D-CONS":  dict(plate="P3-D-CONSULT", tier="PLATED", src="consulting-room window, camera-left (north)"),
  "L-ORTHO":   dict(plate="—", tier="INCIDENTAL", src="clinic window, side light"),
+ "L-TUBE":    dict(plate="—", tier="INCIDENTAL", src="the street entrance at the top of the stairs (daylight) + station strip lights"),
+ "L-HOSP":    dict(plate="—", tier="INCIDENTAL", src="the bay window past the curtain + ward ceiling light"),
  "L-TOWPATH": dict(plate="—", tier="INCIDENTAL", src="open sky over the canal"),
  "—":         dict(plate="—", tier="—", src="§12A render light"),
 }
@@ -46,16 +48,26 @@ PIP, SPL, CUT, FULL = "pip · EG02", "split 60/40 · EG03", "cutout · EG04", "f
 # ---- HOOK 1 — VN01: result first, triple without (the reference's 0–8.4s) ----------------------------
 TH("TH-HK1", "Hook 1", ["HK1-01", "HK1-02", "HK1-03"], "straight to lens, level; a small open hand on 'here is how'")
 # §34 2026-09-29 (user: "I WANT A HOOK THAT WILL SELL I DONT WANT THIS NORMAL LOOKING HOOKS"): hook pictures redesigned as pattern interrupts (§31, §22E)
-row("HK1-01a","Hook 1",["HK1-01"],"BR","P","L-P-HALL","P-D1","home security camera high in the hall corner (§22E CCTV-FULL): she comes down her stairs BACKWARDS, both hands clamped on the banister","one step back, 2s",
-    "fixed mount, no movement","stairs descending backwards (§27G: one step, both hands on rail)","no","high","behind","FULL","clean",
-    "high corner cam = found footage, the strange thing the line names; she is small in it","deep","deep","back","backwards",layout=FULL,face=False)
-row("HK1-02a","Hook 1",["HK1-02"],"BR","P hand","L-P-KITCH","P-D1","shoves one more brace into the drawer and the overfull pile spills out onto the tiles","one shove, 2s",
+# §34 2026-09-29 board Fix notes: HK1-01a "SHOULD SHOW HER GOING DOWN THE STAIRS AT THE SUBWAY STATION RUNNING DOWN NOT JUST AT HOME";
+# HK1-02 "DONT JUST SHOW 1 BROLL HERE SHOW ALL OF THOSE" → one B-roll per "without" (§30B triplet, escalating)
+row("HK1-01a","Hook 1",["HK1-01"],"BR","P","L-TUBE","P-D2","runs lightly DOWN the entrance stairs of an Underground station, forwards, hand skimming the rail","one stride, 2s",
+    "locked-off sway","stairs descending (§27G: one stride, hand near the rail, camera at the foot)","no","low","front","FULL","clean",
+    "low = the stairs she now owns, out in the world","deep","deep","R","stairs",product="worn · CONCEALED under trousers (§9D)",layout=FULL,face=True)
+row("HK1-02a","Hook 1",["HK1-02"],"BR","P","L-HOSP","P-D1","a nurse's gloved hand draws a pre-op marker arrow above her LEFT knee","one stroke, 2s",
+    "sway","hands (§27G: one action)","no","high","three-quarter","CU","clean","high = small on the bed, the operation she nearly had",
+    "medium","hands","L","operation",layout=FULL)
+row("HK1-02b","Hook 1",["HK1-02"],"BR","P","L-P-FRONT","P-D1","on her back on the floor, pulls a physio band round her raised LEFT foot","one pull, 2s",
+    "sway","lying (§27G: one action)","no","overhead","behind","MEDIUM","clean","overhead = routine: another course",
+    "deep","deep","L","physio",layout=FULL,face=True)
+row("HK1-02c","Hook 1",["HK1-02"],"BR","P hand","L-P-KITCH","P-D1","shoves one more brace into the drawer and the overfull pile spills out onto the tiles","one shove, 2s",
     "sway","hands (§27G: hands whole, one action)","no","high","front","CU","clean","high = looking down into the pile that won't fit",
     "medium","hands","R","drawer",layout=CUT)
 # ---- HOOK 2 — against his own interest ------------------------------------------------------------------
 TH("TH-HK2", "Hook 2", ["HK2-01", "HK2-02"], "leans in a touch on 'before you come and see me'; one flat hand down on the desk on 'not a prescription'")
-row("HK2-02a","Hook 2",["HK2-02"],"BR","D hand","L-D-CONS","D-D1","tears the blank top sheet off the prescription pad and crumples it","one tear, 2s",
-    "sway","hands","no","high","three-quarter","CU","clean","high = his desk from his own side","medium","hands","L","prescription",layout=PIP)
+# §34 2026-09-29 board Fix: "THE TEN SECONDS IT MEANS TEN SECONDS TO PUT ON THE STRYDE STRAP" → seating beat (§9B), product's first appearance
+row("HK2-02a","Hook 2",["HK2-02"],"BR","P","L-P-FRONT","P-D1","slides the closed strap up her LEFT shin and seats it under the kneecap (SEAT_LOCK)","one slide, 3s",
+    "sway","seated on the chair edge (§27G: one action, both hands on the shell)","yes","low","three-quarter","MEDIUM","clean","low = capable: ten seconds, done",
+    "medium","product","R","ten",product="worn · VISIBLE (skirt, seated) · SEATING (§9B) · first appearance",layout=PIP,model="NBP")
 # ---- HOOK 3 — the scan ------------------------------------------------------------------------------------
 row("HK3-01a","Hook 3",["HK3-01"],"BR","D hand","L-D-CONS","D-D1","drops one more knee X-ray onto the heap of scans burying his desk","one drop, 2s",
     "sway","hands (§27G: one action, the film falls)","no","overhead","front","MEDIUM","clean",
