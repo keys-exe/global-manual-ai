@@ -77,3 +77,5 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   E-HKa clip confirmed (user).
   E-HKb: "CHANGE THE SCENCE MAKE IT HE LIFTING HER GRANDCHILD HAPPY TOGETHER" → new scene (a798d588…): Clifton mid-lift of Amara on the rug, both laughing, hip height 3/4 from his right, day-2 outfits, strap uncovered. Old frame + clip → Old.
   Both frames To check; their clips (§27G staging: A two steps down reciprocal gait; E finishes the lift) after the Confirm.
+- 12:28 UTC: A-HKb stairs frame confirmed (user) → clip v9 (Kie ddd7e120…, 90 cr): two steps down, reciprocal gait, hands free, side waist-down, camera still (§27G, STAIR-EASE/NEG-SUPPORT/NEG-EFFORT), preflight PASS → To check.
+  E-HKb Fix "FIX THE PRODUCT" (the lifting frame had a flat fabric band) → GPT Image 2.5 edit 93a5c907… with product refs + placement photo: real strap under the kneecap; previous frame → Old. To check.
