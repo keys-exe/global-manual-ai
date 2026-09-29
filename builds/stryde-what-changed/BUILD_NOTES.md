@@ -29,8 +29,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   (61 rows: 44 B-roll + 17 TH; pip on B06, B12, B20; `angles.py` PASS HK1–HK3), wardrobe map, `STEP4_5.md`; docs/locations,
   docs/actmap, docs/wardrobe on Plan + Current; 44 planned beat cards. Kling takes G1/G2 built (`voice/H_G*.kling.json`, 2,441 / 2,417).
 
+- 13:00 UTC user "fix those": board → all 6 plates + S1-SURGEON confirmed; H-VOICE-IMG Fix "medium shot only, not too wide" →
+  v2 (job bccb1cd0…, waist-up, face ~¼ frame height, no knees/legs; nano_banana_pro requested, logged nano_banana_2). v1 to Old (asset 0b58b0a8…).
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the 6 plates, S1-SURGEON and **H-VOICE-IMG** (the voice starts on its Confirm, §22X).
+- **Waiting on the user:** Confirm/Fix **H-VOICE-IMG v2** (the voice starts on its Confirm, §22X). Plates and S1 confirmed.
 - Next: Kling G1/G2 (`preflight.py` first) → `voice_source.py` → `elevenlabs_clone.py` (name `Changed`) → Enhance → one v4 request
   HK1+HK2+HK3+BODY (`tts_api.py`) → HeyGen Avatar V on the untrimmed take → `cut_points.py` + `trim.py`. Then Hook 1 images.
 - Open flags: F2, F3, F5, F6, F8, F9, F11 (claims).
