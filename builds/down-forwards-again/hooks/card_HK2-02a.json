@@ -1,0 +1,26 @@
+{
+ "imageStatus": "review",
+ "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic \u2014 exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nTHE CAMERA ANGLE: the lens above head height, looking down at the subject, seen from a three-quarter angle of his hand and the pad on the desk. This exact angle, not a straight-on eye-level view.\n\nFOCUS: the hands and what they hold is in sharp focus; the room behind falls to a soft, recognisable shape. The blur is optical: soft and round, never smeared.\n\nIN THE SAME ROOM as the attached consulting-room photograph: the light-wood desk, the closed laptop to one side, the white plastic knee model, the pale grey wall soft behind.\n\nA snapshot from a phone held at his shoulder by someone standing beside his chair on his side of the desk, looking down at the desktop, not looking at the screen. On the desk a small plain white prescription pad, blank, nothing written or printed on it, a cheap blue biro lying beside it. The doctor's right hand \u2014 a stocky man's hand of fifty-four, fair freckled skin with reddish hairs on the back, short clean nails, the plain steel watch on the wrist, the white cuff of his doctor's coat over the pale blue shirt cuff \u2014 is caught in the middle of sliding the pad away from himself across the desk, fingers flat on top of it, the pad already a hand's width from where it lay, clear desk ahead of it for it to travel. The whole hand and the pad sit well inside the frame.\n\nTHE LIGHT: The consulting-room window on the room's north wall lights the desk and his hand from the left of the frame, steady overcast daylight, so it has a lit side toward the left and a softer shadow side. The shadows fall away from that source, one way only.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no AI face, no plastic skin, no extra fingers, no fused fingers, no melted hands, no CGI look, no fake commercial gloss, no moody dark grade, no glowing skin, no shadows falling in two directions, no lens flare, no face, no writing on the pad, no printed form, no pharmacy logo, no pills, no pen in the hand, no hand cut off at the frame edge, no second hand on the pad, no bare forearm, no coat missing, no readable text, logos, brand names or labels anywhere",
+ "imageModel": "nano_banana_2",
+ "imageAsset": "1ab550eab216c333c2536ed1dff9d724",
+ "imageType": "image/png",
+ "imageConnector": "Higgsfield",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_084138_82a43e53-11ec-4905-ad19-ee17089748aa.png",
+ "imageRes": "1536\u00d72752",
+ "imageAt": 1790674000000,
+ "updatedAt": 1790674000000,
+ "imageNote": "To check \u2014 your Confirm or Fix. Refs attached: P3-D-CONSULT, D-VOICE-IMG v2. 3046 chars. Higgsfield's job record names the model nano_banana_flash.",
+ "imageVersions": [
+  {
+   "v": 1,
+   "asset": "1ab550eab216c333c2536ed1dff9d724",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_084138_82a43e53-11ec-4905-ad19-ee17089748aa.png",
+   "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+   "connector": "Higgsfield",
+   "size": 4750148,
+   "at": 1790674000000,
+   "note": "first render"
+  }
+ ]
+}

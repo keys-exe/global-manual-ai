@@ -1,0 +1,38 @@
+{
+ "HK1-01a": {
+  "job": "11d544d2-d246-451f-9815-8e8a5cfd50b7",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_084137_11d544d2-d246-451f-9815-8e8a5cfd50b7.png",
+  "asset": "fb06cd7125cacf0e537cd44c9737969c",
+  "size": 8946377,
+  "res": "1536\u00d72752",
+  "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+  "at": 1790674000000
+ },
+ "HK1-02a": {
+  "job": "e46ab752-3e0f-4589-b76b-aa7b65a8d1cf",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_084137_e46ab752-3e0f-4589-b76b-aa7b65a8d1cf.png",
+  "asset": "9b6bff627f776aa45f03181c0446bc68",
+  "size": 9102684,
+  "res": "1536\u00d72752",
+  "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+  "at": 1790674000000
+ },
+ "HK2-02a": {
+  "job": "82a43e53-11ec-4905-ad19-ee17089748aa",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_084138_82a43e53-11ec-4905-ad19-ee17089748aa.png",
+  "asset": "1ab550eab216c333c2536ed1dff9d724",
+  "size": 4750148,
+  "res": "1536\u00d72752",
+  "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+  "at": 1790674000000
+ },
+ "HK3-01a": {
+  "job": "b38467ec-0541-4182-83ec-aca7e04d2eb6",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_084137_b38467ec-0541-4182-83ec-aca7e04d2eb6.png",
+  "asset": "936519b97d978355ee3555f93bedd7b3",
+  "size": 7512956,
+  "res": "1536\u00d72752",
+  "model": "nano_banana_2 requested \u00b7 Higgsfield reported nano_banana_flash",
+  "at": 1790674000000
+ }
+}

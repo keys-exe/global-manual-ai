@@ -62,7 +62,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   A1..A5 = BODY verified) → `th/TH-<k>.cut.mp4` → trim.py V7.66.0 → all 8 PASS (0.11–0.65 s removed each) → board TH-HK1/2/3 + TH-A1…A5 To check.
   Flag: at 69.2 s (TH-A2 ~7.8 s) both transcribers hear "the good **me**" for "the good knee" — told the user.
 
+- 2026-09-29 ~08:40 UTC: user "CONFIRM PROCEEDS" → TH-HK1/2/3 + TH-A1…A5 set `use`. Step 6 hooks: `hooks/build_hooks.py` writes the four hook
+  frames (§22T order + ANGLE-LINE / FOCUS-LINE / LIGHT-SHOT, start frame caught in the action, HK1-01a CONCEALED + NEG-CONCEAL, HK3-01a SKIN-T + CAP-SHARP),
+  refs by Higgsfield job id → nano_banana_2 9:16 2k, one each (jobs 11d544d2, e46ab752, 82a43e53, b38467ec; Higgsfield reports `nano_banana_flash`)
+  → board HK1-01a, HK1-02a, HK2-02a, HK3-01a images To check. Higgsfield 17,584 credits.
+  Note: the act map's hook layouts (HK1-01a pip then HK1-02a cutout) predate the V7.65.0 layout limit (≤1 boxed in 5, never two in a row) —
+  settle at assembly (`assemble.py` LAYOUT_MIX); frames are composed full-frame so either layout crops.
+
 ## Where it stands
-- **Waiting on the user:** check the 8 talking-head clips (TH-HK1/2/3, TH-A1…A5) on the board — Confirm or Fix. Listen to TH-A2 "the good knee".
-- **Then:** hooks one by one (step 6), B-roll (step 7), CapCut block; finished videos = TH-HKn + TH-A1…A5 (+ B-roll).
-- Old HeyGen render `c48a6bc2…` (old fast cut) is superseded, not used.
+- **Waiting on the user:** the four hook frames (HK1-01a, HK1-02a, HK2-02a, HK3-01a) on the board — Confirm or Fix.
+- **Then:** each confirmed frame → its Kling 3.0 Omni video via Kie (§22X preflight, §27G, length from `assemble.py --lengths` on the locked VO) → board.
+  Hooks gate (step 6), then B-roll acts (step 7), CapCut block; finished videos = TH-HKn (+ hook B-roll) + TH-A1…A5 (+ B-roll).
