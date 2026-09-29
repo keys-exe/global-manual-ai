@@ -1,0 +1,22 @@
+{
+ "model": "nano_banana_pro",
+ "face": "FACE",
+ "refs": [
+  [
+   "P2-PARK plate",
+   "d2317697-54c8-4b8f-ad57-9082eadc9f50"
+  ],
+  [
+   "placement reference (user)",
+   "245be41b-3d1a-4f2d-b86a-2bd65f941f62"
+  ],
+  [
+   "front.webp",
+   "20bc8be5-8526-48b6-a6e0-acbcb17b7c56"
+  ],
+  [
+   "worn_front.jpg",
+   "2290ef3b-75a4-4c39-8ea2-b9c4b60e6637"
+  ]
+ ]
+}

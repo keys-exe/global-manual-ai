@@ -1,0 +1,14 @@
+{
+ "model": "nano_banana_2",
+ "face": "NOFACE",
+ "refs": [
+  [
+   "P8-CONSULT plate",
+   "0408c3e9-506c-47cb-a819-8c6bb6ead2c8"
+  ],
+  [
+   "C6 sheet",
+   "4d32b455-fed9-47eb-a620-40a7cb1cbb1f"
+  ]
+ ]
+}

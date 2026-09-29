@@ -1,0 +1,14 @@
+{
+ "model": "nano_banana_pro",
+ "face": "FACE",
+ "refs": [
+  [
+   "package open (locked V7.49.27)",
+   "a9409405-2d78-4802-bdf0-01c7266b18a1"
+  ],
+  [
+   "P9-KITCHEN plate",
+   "b7bb1bd0-b1cc-410a-9966-1955f7fbb750"
+  ]
+ ]
+}
