@@ -9,7 +9,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Inspo came as `INSPO VIDEO` (no extension) → `intake/inspo.mp4`; script `Untitled document.docx` → `intake/script.docx`; spoken parts `work/script_{HK1,BODY1,HK2,BODY2}.txt`.
 - Product Sheet in the folder is V7.49.29; the repo's V7.49.37 is used.
 - **Boards (account iamnotkeysi@gmail.com):** Current https://claude.ai/artifact/DW6GGWmvHtVhDJrWaxT1JZ · Old https://claude.ai/artifact/GFL3d6zEr8E4bPENfKkyTq · Final https://claude.ai/artifact/3phx9ujBsxcHiEcsgm3xPN · Plan https://claude.ai/artifact/D5erRJZXiEc2YeMYMyo829
-- **Hourly Fix check:** `trig_01HgUSKGTLcAkdqfwiatEx76` (:57 UTC) → session_01Ch2ZePb5MrH51Vk5hxbwTx
+- **Hourly Fix check:** `trig_01EXxSghcfLknvjrcVydXT8E` (:57 UTC) → session_01HJGJHPXbrGqt1pRRPaR5y2 (moved 2026-09-29 16:15 UTC; old `trig_01HgUSKGTLcAkdqfwiatEx76` deleted)
 
 ## Sessions
 - session_01Ch2ZePb5MrH51Vk5hxbwTx (2026-09-29 ~11:45 UTC): steps 1–3. Inspo measured (51.96s, 33 shots, mean 1.57s, ~180 wpm, male voice 132 Hz, no talking heads),
@@ -34,6 +34,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - 2026-09-29: board outage (HTTP 503) held the VO cards; after it cleared all 32 VO part cards (T1–T8 × HK1/BODY1/HK2/BODY2) went on the board (`vo/assets.json`). User "VOICE ID: PROCEED" → narrator voice TooBad marked **locked**.
 
 - 2026-09-29: user "CONFIRMED PROCEED" — **VO locked on T8** for HK1, BODY1, HK2, BODY2 (`vo/cut/T8_V1.mp3`, `T8_V2.mp3` are the masters; 55.38s / 54.69s). Step 6: hook start images HK1-01 (NBP, refs front+back product photos, Denise sheet, lounge plate) and HK2-01 (NB2, Alan sheet, kitchen plate) — `hooks/build_hooks.py`, refs `hooks/refs.json` — on the board To check. Jobs report nano_banana_2 / nano_banana_flash.
+
+- 2026-09-29 ~16:15 UTC, resumed in session_01HJGJHPXbrGqt1pRRPaR5y2: board read — Act 1 has B1-01a confirmed, the other 19 images To check, no Fix notes; Act 2 not started. Hourly Fix check moved here.
+  B1-01a is a pinned beat (product placed): its end-frame prompt `broll/B1-01a-END.t2i.txt` (refs: B1-01a v1 job 3c9bea78…, product front, back) is written in `build_broll.py` (END dict).
+  **Blocked: Higgsfield no longer lists `nano_banana_pro`, `nano_banana_2` or `gpt_image_2_5`** ("unknown model"; balance 15,854.5, so this is not the §5 out-of-credits case). Kie AI has all three (`kie.py image`). Asked the user whether to switch the build's images to Kie (§5: once switched, no switch back).
 
 ## Where it stands
 - **Hooks, 2026-09-29:** HK1-01 (v2 image, HK1-01-END end frame, pinned clip v1, Kie task 800927cb…) and HK2-01 (image + clip v1, Kie task b080e98e…) all confirmed by the user.
