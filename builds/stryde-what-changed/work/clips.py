@@ -186,6 +186,18 @@ B["B03c"] = clip("B03c",
            {"risk": "the hand multiplies or warps", "prevented_by": "one small lift, 'no second hand, no extra fingers'"},
            {"risk": "text appears on the page", "prevented_by": "'no text appearing'"}])
 
+# B04c "so coming down puts more through that band than going up does." ≈ 3.5 s (est.) → 5 s.
+B["B04c"] = clip("B04c",
+    "A premium 3D anatomical model of a knee as a dark translucent silhouette on a near-black field, seen from a high three-quarter angle, "
+    "bent under a downward step, only the patellar tendon legible inside it with a tight spot glowing on it.",
+    "Already under load on the first frame: the foot lands on the step below and the knee bends a little deeper to catch the weight — the "
+    "spot at [SITE] flares brighter as it lands, then eases back, staying one tight spot; one landing in about two seconds.",
+    "no arrows, no text, no labels, no numbers, no glow spreading down the shin, no second limb, no product, no camera orbit, no zoom",
+    3.5, hi=5, anat=True,
+    risks=[{"risk": "the glow spreads down the leg", "prevented_by": "'staying one tight spot', negatives on spread"},
+           {"risk": "the silhouette swims or warps", "prevented_by": "HOLD-C + NEG-WARP-C, one landing only"},
+           {"risk": "labels or numbers appear", "prevented_by": "'no text, no labels, no numbers'"}])
+
 START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
          "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
          "HK2-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_173257_512cb5a0-c05b-4ab8-af5f-723322275d70.png",
@@ -197,7 +209,8 @@ START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUy
          "B02": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_200235_5d3a123f-a2c4-4faa-8af7-b1513056106b.png",
          "B03a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_202127_fabbd7d4-506d-47ae-ac06-d559f3c40e63.png",
          "B03b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_202128_46596a96-c9cc-487c-a63d-ba91a8d96c67.png",
-         "B03c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_200831_62aeddb0-e97c-4589-9d43-6d675499545c.png"}
+         "B03c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_200831_62aeddb0-e97c-4589-9d43-6d675499545c.png",
+         "B04c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_185451_498649e3-bc92-4382-b6ca-3c62cf7ba813.png"}
 
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)

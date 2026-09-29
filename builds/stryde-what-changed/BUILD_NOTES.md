@@ -149,4 +149,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   B03a the thigh muscle tightens, the load runs into the band, the spot brightens once (5 s, Kie 85f4f3a2… 90 cr); B03b she rises with
   the heavy pot (5 s, Kie c6f4e987… 90 cr); B03c her hand lifts the page edge (3 s — first Kie job 8a80c318 failed "Internal Error",
   0 credits, resubmitted once: Kie 3624872a… 54 cr). All → To check.
-- **Where it stands:** waiting on the user's check of the B02 clip, the B03a / B03b / B03c clips and the B01a image.
+- User: B04a Fix "NEGATIVE BROLL, STRUGGLING TO Going up the stairs." → v2 Desmond struggling up, one hand gripping the rail, the other
+  pushing on his thigh, face set with effort (eye/three-quarter MEDIUM, face in frame; job cf751279). B04b Fix "GOING DOWN WHILE HOLDING THE
+  BANISTER, CHANGE THE BROLL" → v2 Maureen coming down towards a low front lens gripping the oak handrail, stepping carefully (job 7286093e).
+  Act map rows updated, angles.py PASS; v1s moved to Old. B04c image "CONFIRM" → clip (the landing flares the spot once; 5 s, Kie
+  441653e6… 90 cr). All → To check.
+- **Where it stands:** waiting on the user's check of the B02 clip, the B03a–c clips, the B04a / B04b v2 images, the B04c clip and B01a.
