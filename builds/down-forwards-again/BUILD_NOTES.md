@@ -191,4 +191,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **Round 6 (hourly Fix check, 2026-09-29 18:45 UTC):** BR-04 "the patellar tendon is below the center of the knee cap. will never be at the side fix this"
   → v8 is an edit of the user's own pointing photo (its framing and fingertip spot kept, the person/clothes/room swapped). `acts/build_fix_r6.py`.
   v7 moved to Old. Balances: Higgsfield 14,178.65; Kling 3.0.
+- **Round 7 (2026-09-29 ~19:05 UTC):** the user sent a second BR-04 photo — "this is the point she should be pressuring her finger": a head-on,
+  knee-height close-up, the tip on the front of the knee right under the centre of the kneecap (`refs/BR-04_point_ref2.png`, Higgsfield media
+  `8227e906-5c92-428a-b483-c699d956d55f`). v9 edits that photo (framing + tip spot kept; her own right hand, rust jersey, camel corduroy skirt,
+  mustard armchair). `acts/build_fix_r7.py`. v8 moved to Old.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
