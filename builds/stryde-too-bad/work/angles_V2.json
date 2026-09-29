@@ -1,0 +1,582 @@
+[
+ {
+  "beat": "HK2-01",
+  "group": "Hook 2",
+  "type": "BR",
+  "subject": "R2 Alan hand",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = the pile of things that didn't work",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "kitchen window over the sink, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: flat grey-white morning",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B1-01a",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "surgeon SG-01 (one-off, \u00a719B)",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 11,
+  "light": {
+   "source": "consulting-room window, right-hand wall",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "everyday: overcast daylight",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "MECH-S1",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 10,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B2-02",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "R2 Alan",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "kitchen window over the sink, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: flat grey-white morning",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "MECH-06",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "low",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = underneath: the mechanism",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 10,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "MECH-02",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "low = the force, heavy",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 10,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B1-02",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "R1 Denise",
+  "height": "high",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "high = her own view down at her knee",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 6,
+  "light": {
+   "source": "bay window, south wall of Denise's lounge",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "turn \u2192 after: bright morning daylight, warm on the sofa",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "MECH-04",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile = the tendon's side view, now calm",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 10,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B2-06a",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "R3 Clive",
+  "height": "low",
+  "side": "profile",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low + profile = the knee's full bend and straightening",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "shop-front windows, north wall, plus the overhead strip lights",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: even, bright working light",
+   "why": "",
+   "kelvin": 5000
+  }
+ },
+ {
+  "beat": "B1-05b",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "R1 Denise",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "low = strength as she rises",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 6,
+  "light": {
+   "source": "bay window, south wall of Denise's lounge",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "turn \u2192 after: bright morning daylight, warm on the sofa",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "MECH-05",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 10,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B1-11",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "R4 Fiona",
+  "height": "eye",
+  "side": "behind",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "behind = she's off, the path ahead",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": 9,
+  "light": {
+   "source": "open sky over the sea, sun high to the left",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "after: bright, clean coastal light",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B1-04b",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "R1 Denise",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile = the height: the notch meets the kneecap",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 6,
+  "light": {
+   "source": "bay window, south wall of Denise's lounge",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "turn \u2192 after: bright morning daylight, warm on the sofa",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B2-09b",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "R1 Denise hands",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = looking into it",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 6,
+  "light": {
+   "source": "bay window, south wall of Denise's lounge",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "turn \u2192 after: bright morning daylight, warm on the sofa",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B1-10",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "R3 Clive",
+  "height": "ground",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "ground = the steps: nothing slips",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": 3,
+  "light": {
+   "source": "shop-front windows, north wall, plus the overhead strip lights",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: even, bright working light",
+   "why": "",
+   "kelvin": 5000
+  }
+ },
+ {
+  "beat": "B2-11",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "surgeon SG-01 + R3 Clive",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "OTS = over the surgeon's shoulder: his approval",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 4,
+  "light": {
+   "source": "consulting-room window, right-hand wall",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "everyday: overcast daylight",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B2-12",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "object",
+  "height": "low",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low + profile = the crack and the fray",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "kitchen window over the sink, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: flat grey-white morning",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B1-12a",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "object",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = what's in the box",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 6,
+  "light": {
+   "source": "bay window, south wall of Denise's lounge",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "turn \u2192 after: bright morning daylight, warm on the sofa",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B2-14",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "R2 Alan",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = strong, the after",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": 2,
+  "light": {
+   "source": "open sky, late-morning sun from the south over the left-hand fence",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "after: bright sun, the sky cleared",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B1-13b",
+  "group": "Video 2",
+  "type": "BR",
+  "subject": "R4 Fiona",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = the stairs no longer loom",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": 8,
+  "light": {
+   "source": "front-door glass and the landing window, both south",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "after: sun on the stair carpet",
+   "why": "",
+   "kelvin": 5600
+  }
+ }
+]
