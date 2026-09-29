@@ -40,7 +40,8 @@ Beat images (§6A, V7.70.0) — a B-roll or hook start/end frame — are linted 
     "product": false,                  # the product shows (product photo attached first)
     "body": true,                      # a person or body part shows
     "refs": [{"label": "...", "kind": "product|character|location|frame|info"}],   # in attach order
-    "pair": ["nano_banana_pro", "nano_banana_2"]   # the two models of the A/B pair (§5)
+    "anatomy": false,                  # an anatomy / mechanism beat (Nano Banana)
+    "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = NB Pro + NB2
   }
 
 Beat videos (§35A, V7.71.0) — a Kling B-roll or hook clip in Modes 1–3 — add:
@@ -105,6 +106,7 @@ IMG_NEG_MAX = 5         # §6A: at most five "no …" / "never …" items
 NEG_WORD = re.compile(r"\b(?:no|never|without|avoid)\b", re.I)
 SIZE_ANCHOR = re.compile(r"\d+(?:\.\d+)?\s*(?:×|x|by)?\s*\d*\s*(?:cm|mm|centimet|millimet)|\bthe size of\b|\bas (?:small|big|large) as\b", re.I)
 NANO = {"nano_banana_pro", "nano_banana_2", "nano-banana-pro", "nano-banana-2"}
+SUNBURST = {"gpt_image_2_5", "gpt_image_2_5_sunburst", "gpt-image-2-5-sunburst-image-to-image", "gpt-image-2-5-sunburst-text-to-image"}
 
 
 def run_image(c):
@@ -135,10 +137,13 @@ def run_image(c):
         check("product photo attached first (§6A)", bool(kinds) and kinds[0] == "product", f"first ref: {kinds[0] if kinds else 'none'}")
         check("true-size anchor for the product (§6A)", bool(SIZE_ANCHOR.search(p)), "e.g. '12 × 5 cm, the size of a matchbox'")
     pair = [str(m).lower() for m in (c.get("pair") or [])]
-    check("A/B pair: two renders on two models (§5)", len(pair) == 2 and pair[0] != pair[1], f"pair {pair}")
-    if c.get("body") or mode in (2, 3, 5):
-        why = "a body in frame" if c.get("body") else f"Mode {mode}"
-        check(f"Nano Banana only ({why}, §18A)", bool(pair) and all(m in NANO for m in pair), f"pair {pair}")
+    anatomy = bool(c.get("anatomy"))
+    check("A/B pair: two renders (§5)", len(pair) == 2, f"pair {pair}")
+    if anatomy or mode in (2, 3, 5):
+        why = "anatomy" if anatomy else f"Mode {mode}"
+        check(f"Nano Banana Pro + 2 ({why}, §18A)", sorted(pair) in (sorted(["nano_banana_pro", "nano_banana_2"]), sorted(["nano-banana-pro", "nano-banana-2"])), f"pair {pair}")
+    else:
+        check(f"Sunburst on realistic work (Mode {mode}, §18A V7.72.0)", len(pair) == 2 and all(m in SUNBURST for m in pair), f"pair {pair}")
     return res
 
 
