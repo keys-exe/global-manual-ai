@@ -14,10 +14,10 @@ assert VOICE_NARR.startswith("A British woman of sixty-one")
 AGE = "soft creases fanning from the outer eyes, a pair of short vertical lines between the brows, loose skin gathering along the jaw, faint thread veins on the cheeks, deep folds from the nose to the mouth"
 STEP1 = "\n\n".join([
  S("CAM-LOCK"),
- S("FRAME-SCALE").replace("[SCALE]", "about three quarters") + " " + S("FRAME-PROPPED"),
+ S("FRAME-SCALE").replace("[SCALE]", "about three quarters") + " The phone is on a small tripod out of shot, at her chest height about a metre and a half away, looking very slightly up; she is seen from the knees up, the room readable behind her and out to both sides.",
  "THE SAME WOMAN as in the two attached reference images — the face close-up (image 2) is her face exactly, and the five-panel sheet (image 1) is her body and clothes; copy that face, do not invent a new one. A white British woman of sixty-one — round soft face with full cheeks dropping a little at the jaw, deep-set dark brown eyes under low heavy brows, a short upturned nose, a small full mouth, the short pale scar across the tip of her nose, dark brown hair threaded with grey pulled back in a low loose bun, short and solid — her real age showing, unchanged in face, age, hair colour and build. "
  "In her own kitchen-diner at home: a pale painted wall behind her with a dresser of blue-and-white plates and a wall calendar with no readable writing, soft and out of focus. "
- "She sits at a round wooden table facing the camera straight on — shoulders, body and face square to the lens, not turned to either side — forearms resting on the bare table top, hands loosely together, both eyes looking straight into the lens, about to speak. An ordinary photograph of the room: no phone, camera screen, on-screen buttons or device appears anywhere, and nothing stands on the table between her and the lens. "
+ "She sits on a plain wooden kitchen chair out in the open room, with no table in front of her and nothing at all between her and the lens, facing the camera straight on — shoulders, body and face square to the lens, not turned to either side — her hands resting together in her lap, both eyes looking straight into the lens, about to speak. An ordinary photograph of the room: no phone, camera screen, on-screen buttons or device appears anywhere, and nothing is in the foreground. "
  "Wearing a mustard-yellow cardigan buttoned over a navy-and-white striped Breton top, in mustard, navy and white.",
  S("LIGHT-SHOT").replace("[SOURCE from the light plan — the window on the room's WALL, or the named practical]", "The window on the kitchen-diner's west wall")
    .replace("[SUBJECT]", "her").replace("[SCREEN SIDE]", "left").replace("[TIME-OF-DAY QUALITY and the act's light state]", "soft ordinary afternoon daylight").replace("[SIDE]", "the left"),
@@ -27,7 +27,7 @@ STEP1 = "\n\n".join([
  S("HAIR-A").replace("[HAIR-SPEC]", "dark brown hair threaded with grey, pulled back into a low loose bun at the nape with a few strands escaping at the temples"),
  S("NECK-A"), S("TEETH-A"),
  S("CAP-A"), S("CAP-FILE"),
- "AVOID: " + ", ".join([S("NEG-FRAME"), S("NEG-SKIN"), S("NEG-TEX"), S("NEG-FINISH"), S("NEG-M1"), S("NEG-LIGHT"), "no phone in frame, no phone in her hand, no second phone, no screen or device, no object between her and the camera, no cup or pens in the foreground, no newspaper, no mug of tea, no readable text, no camera app interface, no on-screen buttons or labels, no shutter button, no viewfinder overlay, no screenshot, no body turned to the side, no three-quarter view, no head turned away, no eyes looking off-camera, no younger woman, no silver or blonde hair, no hair worn loose, no different face from the reference"]),
+ "AVOID: " + ", ".join([S("NEG-FRAME"), S("NEG-SKIN"), S("NEG-TEX"), S("NEG-FINISH"), S("NEG-M1"), S("NEG-LIGHT"), "no phone in frame, no phone in her hand, no second phone, no screen or device, no object between her and the camera, no cup or pens in the foreground, no newspaper, no mug of tea, no readable text, no camera app interface, no on-screen buttons or labels, no shutter button, no viewfinder overlay, no screenshot, no table in front of her, no table top in the foreground, no objects in the foreground, no belongings, no keys, no glasses, no handbag, no purse, no wallet, no body turned to the side, no three-quarter view, no head turned away, no eyes looking off-camera, no younger woman, no silver or blonde hair, no hair worn loose, no different face from the reference"]),
 ])
 assert "[" not in STEP1, STEP1[STEP1.index("["):][:80]
 
@@ -49,7 +49,7 @@ def take(tid, line, closure, stress, intent):
      "delivery": VOICE_NARR + f" To one person, {intent}; stress on '{stress}'. Not a narrator, not an advert. " + S("AUD-A") + "",
      "subject": "As in the start frame.",
      "camera": {"movement": S("RIG-R3C"), "framing": "As in the start frame."},
-     "motion": S("BREATH-A") + f" Right hand lifts off the desk on '{stress}', settles; eyes on lens. " + mouth + " " + S("HOLD-C"),
+     "motion": S("BREATH-A") + f" Right hand lifts off her lap on '{stress}', settles; eyes on lens. " + mouth + " " + S("HOLD-C"),
      "lighting": S("INHERIT-CAP"),
      "style": "As in the start frame.",
      "negatives": ", ".join([sel(S("NEG-WARP-C"), "no parts detaching", "no duplicate objects", "no flickering geometry", "no background bending", "no texture swimming", "no smearing"), S("NEG-CAM-TH"),
@@ -57,7 +57,7 @@ def take(tid, line, closure, stress, intent):
     }
     return json.dumps(d, ensure_ascii=False, separators=(",", ":"))
 
-pathlib.Path("N_step1_image.prompt.txt").write_text(STEP1)  # v2 (Fix "make it face in camera": v1 turned her three-quarters — the prompt asked for it; now square to the lens, turn negatives) · v1 built with the stryde-too-bad lessons (face crop attached as image 2, bare table, no device) — v3 (Fix "USE MY AVATAR NARRATOR": v2 ignored the sheet — younger woman, brown hair — and drew a camera-app screen; face crop attached as image 2, identity restated, UI negatives) · v2 (Fix "fix this": v1 drew a second phone, pen mug and newspaper in front of her)
+pathlib.Path("N_step1_image.prompt.txt").write_text(STEP1)  # v3 (Fix "REMOVE THE PHONE AND BELONGINGS IN THE TABLE": FRAME-PROPPED's "phone leaned against something on the table" kept drawing props — replaced by a tripod out of shot, no table, hands in her lap, foreground negatives) · v2 (Fix "make it face in camera": v1 turned her three-quarters — the prompt asked for it; now square to the lens, turn negatives) · v1 built with the stryde-too-bad lessons (face crop attached as image 2, bare table, no device) — v3 (Fix "USE MY AVATAR NARRATOR": v2 ignored the sheet — younger woman, brown hair — and drew a camera-app screen; face crop attached as image 2, identity restated, UI negatives) · v2 (Fix "fix this": v1 drew a second phone, pen mug and newspaper in front of her)
 print("step1", len(STEP1))
 out = {}
 for t in TAKES:
