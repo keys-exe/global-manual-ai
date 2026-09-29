@@ -38,26 +38,32 @@ def photo(parts, avoid):
     return "\n\n".join([S("CAM-LOCK")] + [p for p in parts if p] + [S("CAP-FILE"), "AVOID: " + avoid + ", " + NEG_BASE])
 PROD = P.REF_PROD.replace("the attached reference image", "the attached product photos, front and back").rstrip(" —") + "."
 RIGID = "It is a RIGID MOULDED shell with a hard edge, never fabric, never neoprene, never a padded pad."
-OPEN_PALM = dict(P.HELD_GRIPS)["open palm"]
 DENISE_HAND = ("Her hand is a sixty-four-year-old Black woman's hand, the same woman as the attached character sheet: dark brown skin with "
                "deeper creases over the knuckles, short unpainted nails, a paler palm, the rolled cuff of a mustard-yellow linen shirt at the wrist.")
 ALAN_HAND = ("His hand is a seventy-two-year-old white man's hand, the same man as the attached character sheet: thin and wiry, knobbly "
              "knuckles, sun-mottled skin with age spots on the back, short nails, the cuff of a navy cardigan over a sage-green polo at the wrist.")
 B = {}
-# HK1-01 — "Too bad these knee straps look too small to work." (VN01: the strap small in a palm beside a big brace)
+# HK1-01 — "Too bad these knee straps look too small to work." (VN01: the strap small in her hand beside a big brace)
+# v2 Fix "WRONG PRODUCT": v1 drew a flat rectangular block with a U-slot and square brackets (the open palm flattened it). Fixed with the
+# stryde-thirty-years BR-11 fix: EXACT SAME OBJECT as the first product photo, the bottom-edge pinch, the W outline stated, block negatives.
 B["HK1-01"] = ("nano_banana_pro", ["front", "back", "R1-DENISE", "P2-D-LOUNGE"], photo([
-    "A snapshot from a phone held high over the coffee table, looking down. Her right hand is held out, palm up, just above the low oak "
-    "coffee table: " + OPEN_PALM + ". On the table right beside her hand lies a big grey knee brace, blank, no brand — a long "
-    "neoprene sleeve with two steel hinged bars down its sides and three wide straps — three times the size of the strap in her palm. "
+    "The strap in this photo is THE EXACT SAME OBJECT as the FIRST attached product photo, the front, and the second, the back — only "
+    "the view changes. A snapshot from a phone held high over the coffee table, looking down. Her right hand holds the strap up just above "
+    "the low oak coffee table, front face and wordmark up to the lens: " + dict(P.HELD_GRIPS)["bottom-edge pinch"].split(" (")[0] + ". "
+    "Nothing rises above the shell's top edge; both peaks and the notch stand clear. On the table right beside her hand lies a big grey knee brace, blank, no brand — a long "
+    "neoprene sleeve with two steel hinged bars down its sides and three wide straps — three times the size of the strap in her hand. "
     "Only her hand, wrist and forearm come in from the right of the frame; her knees in olive cotton shorts are soft at the bottom edge. " + DENISE_HAND,
     "THE SAME LOUNGE exactly as in the attached location plate — the low oak coffee table with its stack of books and the bowl of clementines, "
     "the red-and-cream kilim rug below it, the teal velvet sofa with mustard cushions — seen from directly above the table, the table filling the frame.",
-    PROD + " " + RIGID + " " + P.WORDMARK_LOCK + " " + P.SIZE_HELD,
-    angle("HK1-01", "her hand and the brace"), focus("the strap in her palm and its wordmark"),
+    PROD + " " + RIGID + " The shell is a hard, thin, curved plate shaped like a wide shallow W across its top — two pointed peaks with "
+    "the concave notch between them, narrower at the waist — exactly the outline of the product photos, never a rectangle, never a box. "
+    + P.WORDMARK_LOCK + " " + P.SIZE_HELD,
+    angle("HK1-01", "her hand and the brace"), focus("the strap in her hand and its wordmark"),
     light("the bay window on the lounge's south wall", "the table and her hand", "right", "bright morning daylight"),
     colour("bright morning daylight", 5600, "warm oak, the red-and-cream kilim, teal velvet at the edge", "she", "a mustard-yellow shirt cuff and olive shorts",
-           "the black strap in her palm against the grey brace", "true to life")],
-    P.NEG_HELD_P + ", " + P.NEG_WORDMARK + ", no stryde wordmark on the brace, no brand on the brace, no second strap, no strap worn, no face, " + NEG_HANDS))
+           "the black strap in her hand against the grey brace", "true to life")],
+    P.NEG_HELD_P + ", " + P.NEG_WORDMARK + ", no rectangular block, no flat straight top edge, no U-shaped slot notch, no square "
+    "shell, no box shape, no square chrome brackets, no shell without peaks, no soft pad, no cushion, no stryde wordmark on the brace, no brand on the brace, no second strap, no strap worn, no face, " + NEG_HANDS))
 # HK2-01 — "Too bad these knee straps look like another gimmick." (VN02: a drawer crammed with old supports)
 B["HK2-01"] = ("nano_banana_2", ["R2-ALAN", "P0-A-KITCHEN"], photo([
     "A snapshot from a phone held straight above the kitchen units, looking down into a drawer. His right hand has just pulled the wide top "

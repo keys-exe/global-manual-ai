@@ -36,5 +36,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - 2026-09-29: user "CONFIRMED PROCEED" — **VO locked on T8** for HK1, BODY1, HK2, BODY2 (`vo/cut/T8_V1.mp3`, `T8_V2.mp3` are the masters; 55.38s / 54.69s). Step 6: hook start images HK1-01 (NBP, refs front+back product photos, Denise sheet, lounge plate) and HK2-01 (NB2, Alan sheet, kitchen plate) — `hooks/build_hooks.py`, refs `hooks/refs.json` — on the board To check. Jobs report nano_banana_2 / nano_banana_flash.
 
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the HK1-01 and HK2-01 start images; each hook's clip follows its confirmed image (one by one); script flags F2, F4, F5, F7, F8, F9.
-- **Next:** hook clips (Kling via Kie, §27G, preflight), lengths from the T8 master (E6).
+- **Hooks, 2026-09-29:** HK2-01 image confirmed → clip v1 on the board to check (Kling 3.0 on Kie task b080e98e…, 4.04 s, 72 credits, `hooks/build_video.py`, preflight PASS; board asset 09834dfa…). HK1-01 Fix "WRONG PRODUCT" (v1 drew a flat rectangular block): v2 made with the thirty-years BR-11 fix — EXACT SAME OBJECT as the first product photo, bottom-edge pinch instead of the open palm, W outline stated, block negatives; v2 shows the real shell. v1 moved to the Old board (asset e8300435…), deleted from Current.
+- **Waiting on the user:** Confirm/Fix HK1-01 v2 and the HK2-01 clip; script flags F2, F4, F5, F7, F8, F9.
+- **Next:** HK1-01 clip once its image is confirmed; then the body B-roll (29 beats).
