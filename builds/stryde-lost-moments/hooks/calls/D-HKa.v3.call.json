@@ -1,0 +1,35 @@
+{
+ "beat": "D-HKa",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\": \"d_hka\", \"subject\": \"A white British man of sixty-four in a grey marl sweatshirt, navy shorts and white trainers, caught mid-limp in his garage, hand pressed on his right knee, heading toward his golf bag against the right-hand wall. Exactly as in the start frame.\", \"camera\": {\"movement\": \"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\", \"framing\": \"PROPPED as in the start frame.\"}, \"motion\": \"Already moving on the first frame: he takes ONE slow, painful limping step and cannot go on \u2014 his right hand stays pressed hard on his right knee the whole time; his stiff right leg drags forward a short way; as his weight lands on it the knee gives slightly and he dips, catches himself with his left hand out toward the chest freezer, and stops; he stays bent over, shoulders heaving with one heavy breath, head down, the golf bag still well out of reach. About three seconds for the step, then he holds still, bent. The camera stays where it is. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly \u2014 motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\", \"lighting\": \"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\", \"style\": \"As in the start frame.\", \"negatives\": \"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no camera travelling with the subject, no man turning to camera, no face in frame, no knee strap, no easy stride, no confident posture, no reaching the bag, no touching the bag, no hand leaving the knee, no brisk walk, no second step, no standing up straight, no golf bag moving, no clubs changing, no readable lettering, no music, no speech, no slow motion\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_065700_5562569b-f0b9-409b-ba4c-608f7ac8e55b.png",
+ "start_approved": true,
+ "approved_by": "user: frame v3 confirmed (2026-09-29)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 3,
+ "risks": [
+  {
+   "risk": "the limp reads as an easy walk again (v2 fault)",
+   "prevented_by": "ONE slow step, hand never leaves the knee, the knee gives and he stops bent; 'no brisk walk, no second step, no reaching the bag'"
+  },
+  {
+   "risk": "the man turns to camera or his face appears",
+   "prevented_by": "he walks toward the bag, away from camera; 'no man turning to camera, no face in frame'"
+  },
+  {
+   "risk": "legs warp mid-step",
+   "prevented_by": "two slow steps at a countable pace; HOLD-C + NEG-WARP-C"
+  }
+ ],
+ "fix_note": "Fault in the motion (user Fix on clip v2: MAKE HE STGGLING TO WALK): v2 walked at near-normal pace, let go of the knee and reached the bag \u2192 one slow buckling step, hand stays on the knee, stops bent short of the bag; generation 3",
+ "user_go": "user: FIX THOSE (2026-09-29) on the clip's Fix note \u2014 go for the 3rd generation"
+}
