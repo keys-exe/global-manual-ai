@@ -108,9 +108,9 @@ BB("B01c", A1, "and every step you take lands on it.", "step", "every step lands
    notes="user 2026-09-29 'PUT DIFFERENT BROLLS HERE' — second half of the B01b line")
 TH("B01-TH", A1, "Put your finger there now and press.", framing="punch")
 BB("B02", A1, "That is the one.", "one", "participation",
-   "R1", "L-M-STAIRS", "M-D1", "CU sitting on the bottom stair, her fingertip pressing just below her right kneecap", "her fingertip presses in once and holds",
+   "R1", "L-M-STAIRS", "M-D1", "CU front-on: seated on her bottom stair, the front of her bare right knee square to the lens, her fingertip on the tendon straight below the kneecap", "her fingertip presses in once and holds",
    "one press, about a second", STILL, "hands: large in frame, one movement", "no", "absent", "—", "NB2",
-   HIGH, THR, "clean", "CU", "high = her own view of her knee", "hands", "shallow", L(M_GREY, "R"), False)
+   EYE, FRO, "clean", "CU", "front-on = the tendon below the kneecap shown straight on", "hands", "shallow", L(M_GREY, "R"), False)
 TH("B03-TH", A1, "It is not a big thing. It is about as wide as your thumb, and it has been quietly taking your whole bodyweight, multiplied, since you were a teenager.")
 BB("B04a", A1, "Going up the stairs, your muscles lift you.", "up", "mechanism — up",
    "R2", "L-D-STAIRS", "D-D1", "from behind and below: Desmond climbs two stairs, thigh muscles working, hand on the rail", "two steps up",

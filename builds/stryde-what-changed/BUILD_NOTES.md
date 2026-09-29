@@ -132,4 +132,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - B01c clip Fix "WALKING SINCE THE SCRIPT LINE IS 'EVERY STEP'" → §22X fault = motion (one step down, no walking) → she steps down
   and keeps walking out of frame, three or four real-time steps at ~2/s; same confirmed start frame; gen 2 preflight PASS; Kie 977ed02f…
   72 cr → To check; v1 clip moved to Old.
-- **Where it stands:** waiting on the user's check of the B01b clip, the B01c v2 clip, the B02 v2 image and the B01a image.
+- B02 Fix "SHOW THE FRONT OF THE KNEE POINTING THE 'BELOW KNEECAP/ KNEE TENDON'" (v2 was side-on, the finger on the side of the
+  knee) → act map B02 now eye/front CU (angles.py PASS); v3 front-on, kneecap centred, fingertip on the midline tendon just under it;
+  job 5d3a123f → To check; v2 moved to Old.
+- **Where it stands:** waiting on the user's check of the B01b clip, the B01c v2 clip, the B02 v3 image and the B01a image.
