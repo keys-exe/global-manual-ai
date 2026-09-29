@@ -20,6 +20,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - 2026-09-29: user confirmed R1 Denise and said proceed. Steps 4–5 (`STEP4_5.md`): six 16:9 plates on Higgsfield (P0 kitchen, P1 garden with P0 attached, P2 lounge, P3 shop, P4 consult, P5 PROP-F hall/stairs), To check;
   act map `work/actmap.py` (29 unique beats, 20 shots per video, `angles.py` PASS both), wardrobe ledger; board: plates + 29 planned beats, docs locations/actmap/wardrobe on Plan + Current.
 
+- 2026-09-29: user "CONFIRM ALL LOCATION. PROCEED" — P0–P4 confirmed on the board, P5 confirmed from the message.
+  §22U step 1: `voice/N_step1_v1.png` (job 7ae0b05d…, requested nano_banana_pro, job reports nano_banana_2 — the known logging mismatch) on the board as N-VOICE-IMG, To check.
+  Step 2 ready: `voice/N_G1..G3.call.json` (2,441–2,482 chars, §37 TH ladder steps 1+4), preflight PASS except the frame's approval.
+  **Kling connector has 3 credits → takes go via Kie `kling-3.0` (§5 fallback)**; Kie 175,036.8 credits. Step 8: `vo/ALL.enhanced.txt` (HK1+BODY1+HK2+BODY2, one request) verbatim PASS, 2,434 chars.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the six plates; the script flags F2, F4, F5, F7, F8, F9 (voiced as written until answered).
-- **Next (no stop, §22U):** N voice-source image → two Kling 10s takes with `VOICE-NARR` → `voice_source.py` → clone by API `TooBad-Narrator` → Enhance → Eleven v4 one request (HK1+BODY1+HK2+BODY2) → VO takes on the board → house cut. Then hooks (step 6).
+- **Waiting on the user:** Confirm/Fix the narrator frame N-VOICE-IMG (paid video waits on it, §22X); script flags F2, F4, F5, F7, F8, F9.
+- **Next, no stop:** Kie Kling takes G1–G3 → `voice_source.py` (medium trim, ×1.2, gate, loop ≥30s) → `elevenlabs_clone.py` `TooBad` → `tts_api.py` eleven_v4 speed ~0.85, takes on the board → `vo_trim.py` house cut per variant. Then hooks HK1-01, HK2-01 (step 6).
