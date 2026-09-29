@@ -1,0 +1,34 @@
+{
+ "beat": "E-HKb",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"e_hkb\",\"subject\":\"Hip height, three-quarter from his right, full body: a Black British man of seventy in a mustard-and-green short-sleeve shirt, olive shorts and navy slippers, lifting his six-year-old granddaughter (purple T-shirt, denim shorts) up into his arms on a red rug in a living room, both laughing, the black knee strap snug just under his right kneecap. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame.\"},\"motion\":\"Already rising on the first frame: he finishes the lift in one smooth, easy push, straightening his knees over about two seconds and standing tall with her held against his chest, her arms round his neck; then he holds her there and they laugh together, a small happy sway, faces close. Strong and easy, no strain. His legs and the strapped right knee stay in frame the whole time and her legs never cover the strap. The camera stays where it is. The strap keeps its exact shape, size and wordmark in every frame, moves only with the leg and stays exactly under the kneecap; its rigid shell never bends. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. Mass and momentum: weight rises through the legs first, arms follow; hair and fabric lag and settle.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no merging, no splitting, no extra limbs, no extra fingers, no fused hands, no child's legs merging with his, no dropping the child, no stumble, no wobble, no strain, no grimace, no hand on the knee, no hand on the sofa, no camera travelling with the subject, no bending, no curling, no flipping of the product, no strap sliding on the leg, no product covering the kneecap, no second unit, no child covering the strap, no extra children, no other adult, no music, no speech\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122408_93a5c907-3c21-46d7-ba71-a92f59a3ecb0.png",
+ "start_approved": true,
+ "approved_by": "user: Confirm on the board of the lifting frame (product fixed) + 'FIX THOSE' (2026-09-29)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "fix_note": "Fault in the shot (user Fixes: CHANGE THE SCENE \u2026 LIFTING HER GRANDCHILD HAPPY; FIX THE PRODUCT) \u2192 new frame, new motion: he finishes the lift and stands holding her",
+ "risks": [
+  {
+   "risk": "the child's and his limbs merge during the lift",
+   "prevented_by": "one action, about two seconds; 'no extra limbs, no child's legs merging with his, no fused hands'"
+  },
+  {
+   "risk": "the child's legs cover the strap",
+   "prevented_by": "'her legs never cover the strap'; 'no child covering the strap'"
+  },
+  {
+   "risk": "reads as strain or a stumble",
+   "prevented_by": "'strong and easy, no strain'; 'no stumble, no wobble, no strain, no grimace'"
+  }
+ ]
+}

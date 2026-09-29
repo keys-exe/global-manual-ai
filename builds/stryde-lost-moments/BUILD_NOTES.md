@@ -79,3 +79,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Both frames To check; their clips (§27G staging: A two steps down reciprocal gait; E finishes the lift) after the Confirm.
 - 12:28 UTC: A-HKb stairs frame confirmed (user) → clip v9 (Kie ddd7e120…, 90 cr): two steps down, reciprocal gait, hands free, side waist-down, camera still (§27G, STAIR-EASE/NEG-SUPPORT/NEG-EFFORT), preflight PASS → To check.
   E-HKb Fix "FIX THE PRODUCT" (the lifting frame had a flat fabric band) → GPT Image 2.5 edit 93a5c907… with product refs + placement photo: real strap under the kneecap; previous frame → Old. To check.
+- 12:45 UTC: user Fixes —
+  A-HKb clip: "JUST WALK DOWNSTAIR WITHOUT TOUCHING THE HANDRAIL" → diagnosed (contact sheet): her far hand drifts onto the WALL rail from ~1.5s; the rail sat at hand height in the frame. Fix at the source: GPT Image 2.5 edit f1d7edd9… removes the wall rail + brackets (same crop). Frame To check; clip re-made after Confirm.
+  B-HKb: "MAKE SHE WALKING ON THE STREET HAPPY" → new frame 489afe1d… (side-on full body, right→left mid-stride, smile, day-2 outfit, high street).
+  C-HKb: "MAKE IT HE WALKING WITH THE DOG HAPPY" → new frame f91a9b21… (side-on full body, right→left with Bramble on the red lead, smile, day-2 outfit, outside his house).
+  E-HKb frame (real product) confirmed → clip v2 (Kie 0192fd30…, 90 cr): he finishes the lift and holds her, both laughing; preflight PASS → To check.
+  Replaced frames/clips → Old. Walking clips (B, C) will use §27G: 3–4 steps across a locked frame.
