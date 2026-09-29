@@ -180,8 +180,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   the daughter candid, never to camera. **HK-B-SD v1** (task 416c4189, 693 credits; ingredients N, C2, P8 v4, INFO-WARD-B-N/B-C2,
   @audio1 `hooks/sd/daughter_voice_HKA_v3.mp3`) → To check. Whisper: only her line, 7.98–10.58 s.
 
+- 2026-09-29 ~14:06 UTC: user "the main character should be carrying bags too same as her daughter" → Hook B prompt: the mother carries
+  two big shopping bags, one in each hand, like her daughter's (was one small bag + free arm); negative "no empty-handed mother".
+  **HK-B-SD v2** (gen 2, preflight PASS, task 036eb3e4, 693 credits) → To check; only speech her line 8.10–10.56 s. v1 on Old.
+  The confirmed Hook A prompt is kept as `hooks/sd/HK-A_v3.prompt.txt` (the shared negative now also has "no empty-handed mother").
+
 ## Where it stands
 - Voice done: VO T2 locked, TH-01…16 confirmed. Locations P0–P8 confirmed (16:9, Kie GPT Image 2). Outfit cards confirmed.
-- **Hooks:** Hook 1 = HK-A-SD v3 confirmed. Hook 2 = HK-B-SD v1 To check. In the edit the daughter's on-camera line replaces the
+- **Hooks:** Hook 1 = HK-A-SD v3 confirmed. Hook 2 = HK-B-SD v2 To check (the mother with bags). In the edit the daughter's on-camera line replaces the
   mother reading "Mama, when did that happen?" in VO T2 (TH-01, 7.36–9.93 s).
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
