@@ -43,6 +43,13 @@ Beat images (§6A, V7.70.0) — a B-roll or hook start/end frame — are linted 
     "pair": ["nano_banana_pro", "nano_banana_2"]   # the two models of the A/B pair (§5)
   }
 
+Beat videos (§35A, V7.71.0) — a Kling B-roll or hook clip in Modes 1–3 — add:
+    "script_line": "the spoken line", "motion_plan": "the 'Video will show' line the user confirmed on the image card",
+    "motion_confirmed": true,          # Manual: the user's pick of the image with that line; Automatic: the §22V USE
+    "risk_class": null | "stairs" | "travel" | "hand_product" | "product_angle",
+    "pin_waived": null | "the user's words, if a risky shot runs unpinned",
+    "pilot": null | "first" | "confirmed"   # risky class: the build's first clip of that class, or after it was confirmed
+
 Every check is PASS or FAIL. Any FAIL → exit 1 and the call is not sent.
 """
 import argparse, json, re, sys
@@ -135,6 +142,36 @@ def run_image(c):
     return res
 
 
+VID_MAX = 1000          # §35A: a beat video prompt is ≤ 1,000 characters
+RISKY = {"stairs", "travel", "hand_product", "product_angle"}
+BOILER = [  # the stacked paragraphs §35A retired: each adds motion or contradicts the one action
+    "deliberate reframe", "already drifting", "Mass and momentum in all movement", "One small movement",
+    "nothing melts, merges, splits", "Focus soft for a moment at entry", "operator notices",
+]
+FAST = re.compile(r"\b(?:run(?:s|ning)?|sprint\w*|jog\w*|rac(?:es|ing)|fast|quickly|hurr(?:y|ies|ying))\b", re.I)
+
+
+def run_beat_video(c, p, check):
+    norm = lambda t: re.sub(r"[\s“”\"']+", " ", (t or "").strip().lower())
+    check("≤ 1,000 characters (§35A)", len(p) <= VID_MAX, f"{len(p)} chars")
+    sl = c.get("script_line")
+    check("the spoken line is in the prompt (§35A)", bool(sl) and norm(sl) in norm(p), "script_line missing" if not sl else "")
+    mp = c.get("motion_plan")
+    check("the confirmed motion plan is the prompt's action (§35A)", bool(mp) and norm(mp) in norm(p), "motion_plan missing" if not mp else "")
+    check("motion confirmed at the image (§22X)", c.get("motion_confirmed") is True, "the user's pick of the image with its 'Video will show' line")
+    negs = NEG_WORD.findall(p)
+    check(f"≤ {IMG_NEG_MAX} negatives (§35A)", len(negs) <= IMG_NEG_MAX, f"{len(negs)} no/never/without/avoid")
+    hits = [b for b in BOILER if b.lower() in p.lower()]
+    check("no retired boilerplate (§35A)", not hits, "; ".join(hits))
+    rc = (c.get("risk_class") or "").lower() or None
+    if rc in RISKY:
+        check(f"{rc}: end frame pinned (§27G)", bool(c.get("pinned")) or bool((c.get("pin_waived") or "").strip()), "first-and-last frame, or the user's words in pin_waived")
+        check(f"{rc}: pilot clip first (§22X)", c.get("pilot") in ("first", "confirmed"), "the first clip of this class runs alone; the rest wait for its Confirm")
+        if rc in ("stairs", "travel"):
+            f = FAST.search(p)
+            check("fast comes from the edit, never the legs (§27G)", not f, f.group(0) if f else "")
+
+
 def run(c):
     if str(c.get("kind", "")).lower() == "image":
         return run_image(c)
@@ -182,6 +219,10 @@ def run(c):
         check("prefer_multi_shots false", str(c.get("prefer_multi_shots", "")).lower() == "false")
     else:
         check("known connector", False, conn)
+
+    # 3b. Beat video prompt (§35A) — Kling B-roll and hook clips in Modes 1–3
+    if conn == "kling" and not film and kind in ("broll", "insert"):
+        run_beat_video(c, p, check)
 
     # 4. Prompt hygiene
     ph = PLACEHOLDER.findall(p)
