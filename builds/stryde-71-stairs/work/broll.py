@@ -65,10 +65,21 @@ def seed(beat, subject_word, focus_name, prose, light_subject, quality, neg, ref
         txt = txt.replace("exactly as in her attached reference sheet", "her face, hair and build exactly as in her attached reference sheet, but not the clothes she wears on the sheet")
         if "reference sheet" in txt:
             neg += ", no outfit copied from the reference sheet, no cream open cardigan over a coral top, no plum blouse with khaki trousers"
+    if any(l.startswith("STRYDE") for l, _ in refs):   # user 2026-09-29: "wrong product" x9 — the model invented braces and shields
+        refs = [x for x in refs if x[0].startswith("STRYDE")] + [x for x in refs if not x[0].startswith("STRYDE")]
+        txt = PROD_COPY + " " + txt
+        neg += ", " + PROD_NEG
     body.append(txt)
     body += [lt, S("CAP-FILE"),
              "AVOID: " + ", ".join([S("NEG-FILE"), M1, neg])]
     return dict(model=MODEL[r["model"]], refs=refs, body=body)
+
+PROD_COPY = ("THE STRAP — copy it EXACTLY from the first attached photos (the product photos): ONE small, slim, matte-black curved shell only about 5 cm tall — "
+  "about as tall as the kneecap — with two small rounded peaks and a shallow notch between them along its top edge, the lowercase grey stryde wordmark on its face, "
+  "a small brushed-chrome slide at each end, and a thin black knit elastic band running from the slides around the back of the leg. It is NOT a knee brace, NOT a sleeve, NOT a pad and NOT a shield. "
+  "When worn it sits on BARE SKIN just below the kneecap, the kneecap fully uncovered above it — never over clothing.")
+PROD_NEG = ("no knee brace, no hinged brace, no metal side hinges, no brace with a hole for the kneecap, no knee sleeve, no wraparound pad, no tall shield, "
+  "no strap over the kneecap, no strap over trousers or fabric, no velcro panel, no strap without its knit band, no different product from the product photos")
 
 BEATS = {}
 
@@ -202,6 +213,8 @@ C1 = dict(markers="a short silver-white natural curly crop, a long oval face wit
           skin="a Black American woman of seventy-four, medium-brown skin, long creases on the cheeks, a scatter of dark spots along the cheekbones")
 C1ID = C1["skin"] + ", " + C1["markers"]
 REF["T01B"] = B / "broll/images/T-01b_img_v1.png"
+REF["THF"] = B / "broll/images/TH-frame_ref.png"      # frame of the confirmed TH-09 talking head
+REF["L01A"] = B / "broll/images/L-01a_img_v1.png"     # confirmed L-01a: her tote
 REF.update({"PF": B.parents[1] / "products/stryde/stryde_refs/front.webp", "PB": B.parents[1] / "products/stryde/stryde_refs/back.webp",
             "WORN": "job:f5263ed7-0667-4ebd-977e-9bfd835d5036", "BENT": "job:8a8979ac-9eb1-4398-b41b-eea793a99a26",
             "BOX": B.parents[1] / "products/stryde/stryde_refs/package_open.jpg"})
@@ -301,7 +314,7 @@ def r_03a(): return seed("R-03a", "Loretta across the table", "the strap", [
     R(("C1 sheet", "C1"), ("P2-KITCHEN plate", "P2"), *PR_REFS["bent"]))
 BEATS["R-03a"] = r_03a
 def r_04a(): return seed("R-04a", "Loretta's right knee", "the strap and its wordmark", [   # Fix 2026-09-29: "all of these are wrong"
-    "Close on Loretta's right knee as she sits on a wooden kitchen chair at the table, " + KITCH + ". Loretta — " + C1ID + " — her face out of frame; her khaki trouser leg is rolled up above the right knee, "
+    "Close on Loretta's right knee as she sits on a wooden kitchen chair at the table, " + KITCH + ". Loretta — " + C1ID + " — her face out of frame; her khaki trouser leg is rolled up ABOVE the right knee so the whole knee and shin are bare skin, "
     "the plum blouse cuff of her own right hand in frame. Medium-brown skin on her knee, shin and hand. Her OWN right index finger taps the strap once, caught as it touches the edge of the shell, the rest of the shell and the wordmark uncovered. " + prod("bent")],
     "the knee and the strap", "the morning light through the sink window", PNEG + ", no face, no someone else's hand, no hand from outside the frame, no white skin, no sandals, no bare foot",
     R(("C1 sheet", "C1"), ("P2-KITCHEN plate", "P2"), *PR_REFS["bent"]))
@@ -320,10 +333,10 @@ def r_06a(): return seed("R-06a", "her right shin", "the strap", [   # Fix 2026-
 BEATS["R-06a"] = r_06a
 def r_07a(): return seed("R-07a", "her coming down the stairs", "her", [   # user 2026-09-29: R-07a/b/c are ONE B-roll — going down the stairs
     "Her staircase, exactly as in the attached hall photo, seen from the hall floor at the foot of the stairs looking up the straight flight. She — " + NID + ", exactly as in her attached reference sheet — in " + WARD["N-D3"] + ", "
-    "is halfway down the stairs coming down FORWARDS, facing the camera and the hall, hands free at her sides, not touching the handrail, "
-    "caught mid-step: her left foot in a tan house slipper landing flat on the next step down, her right leg bent above it carrying her, steady and easy, a small surprised smile starting. "
+    "stands at the VERY TOP of the stairs, on the top step at the landing, the whole flight below her, and takes her FIRST step down FORWARDS, facing the camera and the hall, hands free at her sides, not touching the handrail, "
+    "caught mid-step: her left foot in a tan house slipper landing flat on the first step down, her right leg bent above it carrying her, steady and easy, a small surprised smile starting. "
     "The strap on her right knee, visible below the hem of her denim skirt. " + prod("worn")],
-    "her and the stairs", STAIRS_SUN, PNEG + ", no hands on the rail, no going down backwards, no one else on the stairs, no top of the stairs only, no standing still",
+    "her and the stairs", STAIRS_SUN, PNEG + ", no hands on the rail, no going down backwards, no one else on the stairs, no her halfway down, no her near the bottom, no standing still",
     R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]), height="low")
 BEATS["R-07a"] = r_07a
 
@@ -373,10 +386,11 @@ BEATS["PR-01a"] = lambda: seed("PR-01a", "the person", "the strap", [   # Fix 20
     'On the front steps of an ordinary brick house in the afternoon sun' + ". " + 'A Black man in his sixties, stocky, a grey goatee, in khaki shorts and a faded T-shirt,' + " " + 'carries a full 20 kg bag of garden mulch on his shoulder UP his porch steps, caught mid-step on the second step, his right knee bent and taking the load, the strap on his right knee below his shorts, easy and strong.' + " " + prod("worn")],
     "the person and the strap", MID, PNEG + ", no looking at the camera, no posing, no sitting, no putting the strap on",
     R(*PR_REFS["worn"]), house=False, side="three-quarter", height="low")
-BEATS["PR-01b"] = lambda: seed("PR-01b", "the person", "the strap", [   # Fix 2026-09-29: productive B-roll — what the strap lets them do
-    'In her backyard vegetable garden in the afternoon, raised beds and a wooden fence behind' + ". " + 'A Black woman in her fifties, a round face, short natural hair, in cropped trousers rolled to the calf and a T-shirt, garden gloves on,' + " " + 'pushes a loaded wheelbarrow of soil up a short grassy slope between the beds, caught mid-stride, leaning into it, her right knee bent under the load, the strap on her right knee just below her rolled trouser hem, a satisfied grin.' + " " + prod("worn")],
-    "the person and the strap", MID, PNEG + ", no looking at the camera, no posing, no sitting, no putting the strap on",
-    R(*PR_REFS["worn"]), house=False, side="three-quarter", height="low")
+BEATS["PR-01b"] = lambda: seed("PR-01b", "the woman", "her", [   # Fix 2026-09-29: "the product should always be under the pants"
+    "In her backyard vegetable garden in the afternoon, raised beds and a wooden fence behind. A Black woman in her fifties, a round face, short natural hair, in long olive work trousers down to her ankles and a T-shirt, garden gloves on, "
+    "pushes a loaded wheelbarrow of soil up a short grassy slope between the beds, caught mid-stride, leaning into it, her right knee bent under the load, a satisfied grin. " + prod("hidden").replace("her clothes", "her trousers")],
+    "the woman", MID, "no looking at the camera, no posing, no strap visible, no strap over the trousers, no knee brace, no rolled-up trousers, no shorts",
+    [], house=False, side="three-quarter", height="low")
 BEATS["PR-01c"] = lambda: seed("PR-01c", "the person", "the strap", [   # Fix 2026-09-29: productive B-roll — what the strap lets them do
     'In his open garage in the afternoon, a pegboard of tools and a workbench behind' + ". " + 'A Latino man in his seventies, lean, white hair and a trimmed white moustache, in work shorts and a plaid short-sleeve shirt,' + " " + 'stands on the second rung of an aluminium stepladder, reaching up to hang a bicycle on a wall hook, caught mid-reach, his weight on his right leg, the strap on his right knee below his shorts.' + " " + prod("worn")],
     "the person and the strap", MID, PNEG + ", no looking at the camera, no posing, no sitting, no putting the strap on, no crouching",
@@ -385,7 +399,8 @@ BEATS["PR-01d"] = lambda: mont("PR-01d", "A Black woman in her forties in gym sh
     "caught in the last centimetres as both hands seat the strap under her right kneecap.", "daylight from the gym's big front windows", "seat")
 def pr_02a(): return seed("PR-02a", "the doctor", "the strap", [
     "In a sports-medicine clinic office, " + CLINIC + ". A sports-medicine doctor — a Black man in his fifties in a navy polo shirt, short greying beard — sits at his desk beside a life-size knee model, "
-    "holding the strap up in a bottom-edge pinch, caught as he turns it toward a patient across the desk, explaining. The strap is SMALL in his big hand: no wider than his palm is long, about 12 cm across, his fingers and palm clearly bigger than it. " + prod("held")],
+    "holding up ONE complete strap between his thumb and two fingers by one chrome slide, the black knit band hanging below it as a loop, caught as he turns it toward a patient across the desk, explaining. "
+    "Framed from his waist up, the strap SMALL in the frame and in his hand: about as wide as his four fingers laid side by side, about 12 cm, much smaller than his chest or his face. " + prod("held")],
     "the doctor", "even afternoon daylight through the half-open blind", PNEG + ", no looking at the camera, no white coat, no readable text, no strap wider than his hand, no strap as wide as his chest",
     R(*PR_REFS["held"], ("P7-CLINIC plate", "P7")), house=False)
 BEATS["PR-02a"] = pr_02a
@@ -402,17 +417,18 @@ def pr_04a(): return seed("PR-04a", "the runner", "the strap", [
     "the runner", "open afternoon sun, clear sky", PNEG + ", no looking at the camera, no logos on clothes, no race bib",
     R(*PR_REFS["worn"]), house=False)
 BEATS["PR-04a"] = pr_04a
-def pr_05a(): return seed("PR-05a", "her right knee", "the strap", [   # Fix 2026-09-29: wrong character, product too big
+def pr_05a(): return seed("PR-05a", "her right knee", "the strap", [   # Fix 2026-09-29: "dont make her cover the product"
     "Close on her right leg as she sits on the edge of her bed in the morning, in her bedroom in the same house — greige walls, a white six-panel door, honey oak floor, a quilted bedspread. "
-    "Her pale-yellow cotton nightgown is hitched above the knee; deep brown skin on her knee, shin and hands, a plain wedding band. " + PS.fill(PS.SEAT_LOCK, "right") + " Caught in the last few centimetres of the slide."],
-    "her knee and the strap", MORN, PNEG + ", no face, " + PS.fill(PS.NEG_SEAT, "right")[:300],
+    "Her pale-yellow cotton nightgown is hitched above the knee; deep brown skin on her knee and shin. The strap is already on her right knee, fully in place; "
+    "BOTH her hands rest flat on the bedspread beside her thigh, well away from the strap, nothing covering it — caught as she straightens her leg to stand. " + prod("worn")],
+    "her knee and the strap", MORN, PNEG + ", no face, no hands on the strap, no fingers over the shell, no hand covering the wordmark",
     R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]))
 BEATS["PR-05a"] = pr_05a
-def pr_05b(): return seed("PR-05b", "her right leg", "the trouser leg", [   # Fix 2026-09-29: "dont use a dress, use normal pants and shirt"
+def pr_05b(): return seed("PR-05b", "her right leg", "the trouser leg", [   # Fix 2026-09-29: "dont show the product here"
     "Close from the side on her right leg as she stands by her bed in the morning, in her bedroom in the same house — greige wall, honey oak floor. She wears plain navy trousers and a plain white T-shirt, its hem at her hip. "
-    "The leg of her navy trousers is caught falling down over the strap on her right knee, half covering it, the shell's edge still showing at the hem; her deep-brown hand lets go of the trouser leg at her thigh."],
-    "her leg", MORN, "no face, no dress, no skirt, no nightgown, no strap on the left knee, no bare legs, no second strap",
-    R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["worn"]), clothes="plain navy trousers and a plain white T-shirt")
+    "Her deep-brown hand smooths the navy trouser leg down over her knee, caught mid-smooth; the trouser leg hangs straight and plain to her ankle — nothing shows under it, no outline, no strap visible anywhere."],
+    "her leg", MORN, "no face, no dress, no skirt, no nightgown, no strap visible, no product, no bulge under the fabric, no bare legs, no rolled trouser",
+    R(("N sheet", "N"), ("P0-PROP-N plate", "P0")), clothes="plain navy trousers and a plain white T-shirt")
 BEATS["PR-05b"] = pr_05b
 def pr_06a(): return seed("PR-06a", "the kitchen table", "the strap", [
     "Looking straight down at her kitchen table in the morning, " + KITCH + ": the table cleared — no pills, no gel, no braces — just a white coffee mug with a wisp of steam and one strap lying beside it, the front of the shell up. " + REF_PROD + ". " + PS.fill(PS.WORDMARK_LOCK, "right")],
@@ -436,9 +452,9 @@ def l_01b(): return seed("L-01b", "her passing three women", "her", [
 BEATS["L-01b"] = l_01b
 def l_02a(): return seed("L-02a", "her in the checkout line", "her", [
     "In the grocery store, exactly as in the attached store photo — the checkout lane, the black conveyor belt, the card terminal on its post. She — " + NID + ", exactly as in her attached reference sheet — in " + WARD["N-D6"] + ", "
-    "stands square in the checkout line holding a full shopping basket, her canvas tote bag on her shoulder, two shoppers ahead of her, caught as she moves the basket to her other hand, feet planted."],
-    "her", "flat cool-white overhead store light", "no missing tote bag, no looking at the camera, no leaning, no readable text or signs, no knee strap visible, no product",
-    R(("N sheet", "N"), ("P4-STORE plate", "P4")), house=False)
+    "stands square in the checkout line holding a full shopping basket, on her shoulder THE SAME canvas tote bag as in the attached walk photo — identical colour, straps and size — two shoppers ahead of her, caught as she moves the basket to her other hand, feet planted."],
+    "her", "flat cool-white overhead store light", "no missing tote bag, no different bag from the walk photo, no looking at the camera, no leaning, no readable text or signs, no knee strap visible, no product",
+    R(("N sheet", "N"), ("P4-STORE plate", "P4"), ("L-01a walk photo (her tote)", "L01A")), house=False)
 BEATS["L-02a"] = l_02a
 def l_02b(): return seed("L-02b", "her going up the path", "everything", [
     "On " + STREET + ". Seen from behind and to one side: she walks up the straight concrete path to her porch, her canvas tote bag on her shoulder and a full brown paper grocery bag in each hand, caught mid-stride, in " + WARD["N-D6"] + "."],
@@ -479,12 +495,13 @@ def c_05a(): return seed("C-05a", "a cheap knock-off strap", "the cheap strap", 
     "the cheap strap and her hand", MORN_K, "no wordmark, no brand, no logo, no readable text, no chrome slides, no hero product, no distorted shapes, no melted object, no second strap",
     R(("N sheet", "N"), ("P2-KITCHEN plate", "P2")))
 BEATS["C-05a"] = c_05a
-def c_06a(): return seed("C-06a", "her on the landing", "the straps", [
-    "At the top of her stairs, the same staircase as in the attached hall photo — the photo wall of small framed family portraits behind her, the dark oak handrail and white balusters beside her. She — " + NID + ", exactly as in her attached reference sheet — in " + WARD["N-TODAY"] + ", "
-    "stands waist-up to a propped phone and holds up TWO straps toward the lens — one in her left hand, one in her right hand, each in a bottom-edge pinch, both the same small size — caught lifting them a little higher, smiling. "
-    "Each strap is SMALL in her hand: no wider than her hand is long, about 12 cm across, her face much bigger than either strap. " + prod("held")],
-    "her", "midday light from the landing window, bright and soft", PNEG.replace(", no second strap unless stated", "") + ", no third strap, no single strap, no selfie arm, no strap as big as her face",
-    R(("N sheet", "N"), ("P0-PROP-N plate", "P0"), *PR_REFS["held"]))   # P1 removed (user 2026-09-29)
+def c_06a(): return seed("C-06a", "her on the landing", "the straps", [   # Fix 2026-09-29: "wrong product, person, location all are wrong" — person and place from the talking heads
+    "EXACTLY the same woman and the same spot as in the attached talking-head frame: the top of her stairs on the carpeted upstairs landing — beige carpet, the white balusters and dark oak handrail going down on her right, "
+    "a framed family photo on the warm greige wall behind her left, the window at the end of the landing. She — " + NID + ", the same face as in that frame and her reference sheet — in " + WARD["N-TODAY"] + ", "
+    "stands waist-up to a propped phone and holds up TWO complete straps toward the lens, one in each hand, each held by one chrome slide so the whole strap shows: the small curved shell with its wordmark and the black knit band hanging below it as a loop. "
+    "Both the same small size — each no wider than her hand is long, about 12 cm. Caught lifting them a little higher, smiling. " + prod("held")],
+    "her", "midday light from the landing window, bright and soft", PNEG.replace(", no second strap unless stated", "") + ", no third strap, no single strap, no selfie arm, no strap as big as her face, no hall below, no front door, no different woman",
+    R(("Talking-head frame (person + landing)", "THF"), ("N sheet", "N"), *PR_REFS["held"]))
 BEATS["C-06a"] = c_06a
 def c_07a(): return seed("C-07a", "her going out", "her", [   # Fix 2026-09-29: "should be a productive broll"
     "On " + STREET + ". She — " + NID + ", exactly as in her attached reference sheet — in " + WARD["N-D7"] + ", a straw sun hat on and a handbag on her arm, "
