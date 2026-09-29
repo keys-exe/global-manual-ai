@@ -1,0 +1,46 @@
+{
+ "beat": "HK3-SEEDANCE",
+ "connector": "seedance",
+ "mode": 1,
+ "kind": "dialogue",
+ "prompt": "INGREDIENTS. @image1 is the opening composition: the clip opens on exactly this framing, light and camera position, and nothing in it is re-composed. @image2 is the room: the same brick workshop bench seen from the same side, the tall factory windows, the pegboard of tools, the blue vice and the rail of braces at the back. @image3 and @image4 are the maker: face, age, hair and build only — the crooked broken nose bent to his left, the higher left corner of the mouth, the neat grey moustache — with the wardrobe taken from @image1 and never from these references. @audio1 is the maker's voice, its timbre, pitch, accent and pace, for every word he speaks; it sets who he sounds like, never how he feels in this shot. These references set what things ARE; the prose below sets what HAPPENS, and nothing in them is a shot to cut to.\n\nOne continuous take, no cuts, from a phone propped on the bench at chest height; the camera never moves. The maker, sixty-two, sits on the stool at the bench exactly as in @image1, his right hand holding one half of a cut beige knee sleeve out towards the lens, the cut edge and black lining showing. He is talking from the first frame, straight to the lens past the sleeve, dry and certain: \"This is a knee sleeve I cut in half this morning. I want to show you why the one in your drawer never helped you.\" On the first sentence he holds the sleeve half still and turns it a little so the cut edge faces the lens. On 'this morning' he lowers it to rest on his knee in one smooth move of about a second, and the phone's focus taps from the sleeve to his eyes as it comes down; then he stays still. He speaks the whole line straight through at an even, unhurried pace, the second sentence following the first after one short breath, with no pause longer than a breath anywhere; the line is finished by about eight seconds and he holds still, lips closed, to the end. Opens flat and matter-of-fact; turns on 'never helped you' — the chin comes down a fraction and the eyes hold the lens; exits still and flat, lips closing and staying closed. Stress on 'never helped you'. A man of sixty-two from the Black Country, Walsall, a dry, flat, slightly nasal voice, level and unhurried but never slow. Statements fall and stop dead, no lift at the end; Black Country vowels, \"I\" close to \"oi\", dropped h's, glottal t's. Never theatrical or salesy. The voice sounds like a phone microphone in a brick room: audible breath before the first word and between phrases, level drifting slightly, no studio compression, no music. Morning light through the tall factory windows on the left of the frame lights his face from that side; the colours stay natural and ungraded, exactly as in @image1. The sleeve half is soft beige neoprene with a black lining and a clean cut edge; it keeps its shape and size in his hand. Everything keeps its exact form, proportion and count from first frame to last; five fingers on each hand; his face never reshapes. Avoid: no long pause mid-line, no silence between 'show you' and 'why', no phone anywhere in the frame, no cuts, no second shot, no camera movement, no zoom, no standing up, no second sleeve appearing, no sleeve stretching, melting or changing colour, no extra fingers, no hand merging with the sleeve, no slow motion, no morphing, no warping, no duplicate person, no different face, no straightened nose, no symmetrical mouth, no music, no second voice, no subtitles, no text.",
+ "duration": 10,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": "hooks/HK3-BR2_start_v3.png (confirmed, no phone) as @image1",
+ "start_approved": true,
+ "pinned": false,
+ "files": [
+  "HK3-BR2_start_v3.png",
+  "P2-WORKSHOP-BENCH_v1.png",
+  "C1-MAKER_v1.png",
+  "C1_TH_propped_v1.png",
+  "HK3_voice_ref.mp3"
+ ],
+ "audios": [
+  "HK3_voice_ref.mp3"
+ ],
+ "dialogue": "This is a knee sleeve I cut in half this morning. I want to show you why the one in your drawer never helped you.",
+ "script_line": "This is a knee sleeve I cut in half this morning. I want to show you why the one in your drawer never helped you.",
+ "pace": "brisk",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 3,
+ "risks": [
+  {
+   "risk": "voice drifts from the talking heads",
+   "prevented_by": "@audio1 = the T2 take's own HK3 line (the cloned voice), named in the manifest as timbre/accent/pace; VOICE-MAKER in the prose"
+  },
+  {
+   "risk": "face blends away from the maker",
+   "prevented_by": "@image3 sheet + @image4 confirmed TH photo, face-only clause with the crooked nose and mouth markers; @image1 is the confirmed face-fixed frame"
+  },
+  {
+   "risk": "hand and sleeve merge or the sleeve deforms",
+   "prevented_by": "one action (lower to the knee over ~2s) at a named pace, sleeve described as rigid in shape and colour, locked camera, negatives for merging/stretching/extra fingers"
+  }
+ ],
+ "note": "User 2026-09-28: 'use v3 for HK2 and HK3' — same route as HK1-FULL v3: Kie bytedance/seedance-2-5, ingredients, 720p, 10s (§28H brisk budget), native audio; tail after the last word trimmed in the edit.",
+ "fix_note": "Q: user Fix 'make it 10 seconds' — v2 ran 13s with a 3.3s dead pause after 'I want to show you' while he lowered the sleeve → the lowering moved to 'this morning' (one second), the line told to run straight through, duration 13 → 10",
+ "user_go": "2026-09-28: third generation and the §28H word-budget override (25 words / 20 for 10s) approved by the user ('Regenerate at 10s'); the T2 voice take speaks this line in 7.03s"
+}

@@ -1,0 +1,55 @@
+{
+  "variant": "HK2",
+  "picture_s": 568.45,
+  "mix_s": 568.45,
+  "dialogue_level_db": -20.1,
+  "music_gain_db": -18.8,
+  "cues": [
+    [
+      "HOOK2",
+      0.0
+    ],
+    [
+      "SC01-KITCHEN-SARAH",
+      15.467
+    ],
+    [
+      "SC02-NIGHT-FRANK",
+      82.367
+    ],
+    [
+      "SC03-WEDDING",
+      104.133
+    ],
+    [
+      "SC04-BARBARA-KITCHEN",
+      135.967
+    ],
+    [
+      "SC05-STAIRS-BARBARA",
+      319.433
+    ],
+    [
+      "SC06-DOCTOR",
+      367.633
+    ],
+    [
+      "SC07-HALLWAY-FRANK",
+      403.867
+    ],
+    [
+      "SC08-STAIRS-SARAH",
+      453.067
+    ],
+    [
+      "SC09-THE-DANCE",
+      503.267
+    ],
+    [
+      "SC10-CALL-JOAN",
+      527.6
+    ]
+  ],
+  "video": "/home/user/global-manual-ai/builds/six-weeks-ago/out/Six Weeks Ago HK2 - new music.mp4",
+  "video_s": 568.43
+}

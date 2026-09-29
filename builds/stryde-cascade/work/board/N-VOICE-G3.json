@@ -1,0 +1,26 @@
+{
+ "build": "stryde-cascade",
+ "beat": "N-VOICE-G3",
+ "stage": "voice",
+ "act": "Voice",
+ "title": "Voice source take G3 (Kling)",
+ "line": "Here is the sequence, and it is almost always the same.",
+ "prompt": "{\"shot\":\"Voice take G3.\",\"dialogue\":\"Here is the sequence, and it is almost always the same.\",\"delivery\":\"A man of sixty-one from Nottingham, a low gravelly chest voice, slow and deliberate with a short stop before the word that matters. East Midlands vowels, short flat 'a', final t's caught in the throat; statements land flat and fall at the end; a dry breath out through the nose before a number. Stress: quieter and slower on the hard line, never louder. To one person, quietly certain; stress on 'always'. Audio must sound like a phone microphone recording in a room, not a studio voice track: audible breath before the first word and between phrases, mouth and lip noise, sibilance present and un-de-essed, plosives on hard consonants, level drifting slightly across the take rather than sitting compressed and even. No studio compression, no noise gate, no reverb plate, no post EQ. Garage workshop, phone a metre away.\",\"subject\":\"As in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame, hands in the lower frame.\"},\"motion\":\"Take one small quick inhale and begin speaking as it finishes — the first word lands within the first half second of the clip, no settle, no glance, no held beat before speech. Right hand lifts on 'always', settles; eyes on lens. Jaw-carried speech, visibly dropping on open vowels, lips shaping over it. Lips fully close on the exact word 'same', pulling slightly to the right corner. After the final word the lips close and the jaw settles. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no static camera, no camera coming to rest, no music, no second voice\"}",
+ "model": "kling-video-v3_0_omni · 10s · 1080p · audio",
+ "videoConnector": "Kling",
+ "credits": 120,
+ "duration": 10,
+ "status": "use",
+ "videoAsset": "edc3757d200729754c116458ecdb2f7e",
+ "videoParts": [
+  "edc3757d200729754c116458ecdb2f7e",
+  "e739677df1d7b53a6a647ff2fdd129db"
+ ],
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/264be630-6dde-4971-996e-e1d95d115319-agZNU-Ymj52kGcPTPJvXbQ-output.mp4",
+ "videoAt": 1790585884000,
+ "imageAsset": "2865fe303ee31dee1437e9f0ebdd23bb",
+ "imageStatus": "confirmed",
+ "note": "§22W USE for voice source · same-voice gate PASS (Cascade_clone_source.mp3, 35.9s)",
+ "updatedAt": 1790585884461
+}

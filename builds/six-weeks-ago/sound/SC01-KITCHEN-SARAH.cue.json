@@ -1,0 +1,61 @@
+{
+  "scene": "SC01-KITCHEN-SARAH",
+  "story_part": "Problem",
+  "length_s": 66.9,
+  "theme": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif"
+  ],
+  "avoid": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals"
+  ],
+  "tempo": "slow",
+  "sections": [
+    {
+      "name": "Stairlift argument",
+      "start": 0.0,
+      "end": 36.767,
+      "energy": "low",
+      "styles": [
+        "tense quiet cello",
+        "hesitant sparse piano",
+        "restrained frustration"
+      ]
+    },
+    {
+      "name": "Everything tried",
+      "start": 36.767,
+      "end": 51.733,
+      "energy": "mid",
+      "styles": [
+        "cello and viola rise",
+        "frustration and weariness",
+        "piano motif hinted"
+      ]
+    },
+    {
+      "name": "How it starts",
+      "start": 51.733,
+      "end": 66.9,
+      "energy": "low",
+      "styles": [
+        "sparse sad piano",
+        "long space between notes",
+        "quiet dread"
+      ],
+      "avoid": [
+        "full strings"
+      ]
+    }
+  ],
+  "timeline_at_HK1_s": 17.5333
+}

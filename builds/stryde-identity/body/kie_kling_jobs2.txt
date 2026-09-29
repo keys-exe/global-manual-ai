@@ -1,0 +1,8 @@
+MECH-01 4 {"taskId": "5d887653a73fb2b62ed490c05116e796"} https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133059_4000e0f1-99be-4aab-a3ab-0ed0c3ef54ad.png
+BR-03 5 {"taskId": "a31367c0a97f34a2e40e51b849793b3a"} https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_141220_48bf57d1-6cdb-4874-b896-f867ffc0ceab.png
+BR-04 3 {"taskId": "eb7c678ec6d064b8fede74e92a4e40d2"} https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_141223_94f66a7c-b23c-4f88-9ba6-e7d20ab01cd5.png
+BR-06 4 {"taskId": "c2b850379c02c0ba85de5e1ce984901d"} https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_141224_8d4e3f43-a3b6-4810-b570-227c4c1a71c3.png
+BR-13 4 {"taskId": "a53f4eca4beacbde9881ac09ed0f2477"} https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_141408_179363a4-3fc3-42e4-9493-fc87a253502d.png
+BR-20 3 {"taskId": "b091ea0946f17ec33888a969564c69c9"} https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_141222_852f670d-d7b2-4e05-95e2-94a65313518a.png
+BR-26a 3 {"taskId": "09c4d838f52b6d3ee702ce3a9ac37328"} https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133505_6a4db4ee-a090-4a16-84c0-86a3a50a68a8.png
+BR-26b 3 {"taskId": "87ec4ffa943c91c196d93f52b34d7b00"} https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_141408_a9708a3a-5830-49b5-93a2-2bda7ed1eff0.png

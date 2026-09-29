@@ -1,0 +1,34 @@
+{
+ "beat": "MECH-01",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"patellar_tendon_load\",\"subject\":\"Translucent anatomical knee from the front, the patellar tendon a pearly band from the kneecap down to the shin.\",\"camera\":{\"movement\":\"Virtual camera already drifting on frame one: a slow steady lateral drift, constant unhurried speed, mechanically smooth, no orbit, no sway. Still drifting at the cut.\",\"framing\":\"as in the start frame\"},\"motion\":\"The body's weight arrives from above: over two seconds the small glow on the patellar tendon just below the kneecap brightens once, steadily, then holds. Nothing else lights. The anatomy keeps its structure every frame: bones hold shape and spacing, joints never separate, muscle keeps its volume, layer order holds.\",\"lighting\":\"exactly as in the start frame, no change in brightness\",\"style\":\"Premium 3D anatomical render exactly as in the start frame, deep near-black field.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no flickering geometry, no text, no labels, no arrows, no flash, no white frame, no strobe, no camera shake, no glow on the side of the joint, no glow on the meniscus\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "MECH-01 confirmed image",
+ "start_approved": true,
+ "fix_note": "not the patellar tendon -> frame: front view, glow on the tendon itself",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "subject_motion": "still",
+ "pace": "named",
+ "risks": [
+  {
+   "risk": "phone appears in frame",
+   "prevented_by": "no phone named anywhere; phone negatives"
+  },
+  {
+   "risk": "product bends or wobbles",
+   "prevented_by": "HOLD-PC rigid-shell clause + product negatives"
+  },
+  {
+   "risk": "the Fix-note fault repeats",
+   "prevented_by": "fault fixed at source in image + motion"
+  }
+ ]
+}

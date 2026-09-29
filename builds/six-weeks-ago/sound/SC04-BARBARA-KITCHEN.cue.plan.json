@@ -1,0 +1,69 @@
+{
+  "positive_global_styles": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif",
+    "instrumental",
+    "slow tempo"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "Doubt",
+      "positive_local_styles": [
+        "light curious piano",
+        "soft and warm but hesitant",
+        "conversational, unobtrusive"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 68133,
+      "lines": []
+    },
+    {
+      "section_name": "The tendon",
+      "positive_local_styles": [
+        "curious pizzicato strings",
+        "piano motif returns",
+        "a quiet sense of discovery and hope building"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 66700,
+      "lines": []
+    },
+    {
+      "section_name": "Nothing to slip",
+      "positive_local_styles": [
+        "steady reassuring piano and strings",
+        "warm, grounded, confident"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 28967,
+      "lines": []
+    },
+    {
+      "section_name": "Hopes up",
+      "positive_local_styles": [
+        "fragile solo piano",
+        "vulnerable, hesitant",
+        "holding back"
+      ],
+      "negative_local_styles": [
+        "strings swell"
+      ],
+      "duration_ms": 21667,
+      "lines": []
+    }
+  ]
+}

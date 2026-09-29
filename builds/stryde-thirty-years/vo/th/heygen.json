@@ -1,0 +1,159 @@
+{
+ "avatar": "d54cb6fb17763dfb7682feedcd89c8d7",
+ "avatar_image_asset": "301837eaab0044cb8db42e76ba2300cd",
+ "engine": "avatar_iv",
+ "expressiveness": "high",
+ "note": "avatar_v rejected motionPrompt (no digital twin in group) -> \u00a722U (c)",
+ "renders": {
+  "TH-01": {
+   "video_id": "dffae086733880d307316a6438434722",
+   "audio_asset": "2ac07a2f323041ee98ad04234b4398ba",
+   "motion": "Economical natural gestures while talking: his free hand rises a little from the bench and opens outward on 'keeps growing', never frozen; small head nods, eyes on the camera throughout, the phone arm steady.",
+   "line": "Leave it there and the list of things you have stopped doing keeps growing.",
+   "heard": "leave it there and the list of things you have stopped doing keeps growing",
+   "match": 1.0,
+   "start": 30.86,
+   "end": 35.37,
+   "dur": 4.51
+  },
+  "TH-02": {
+   "video_id": "b30a8a94d1d70e9c35102e08b1254407",
+   "audio_asset": "ff79a4824d3a4331ad8e149d58472d9c",
+   "motion": "Economical natural gestures while talking: a small dry nod on 'thirty years', his free hand low and relaxed, never frozen; eyes on the camera throughout, the phone arm steady.",
+   "line": "Here is what I have watched fail for thirty years.",
+   "heard": "here is what i have watched fail for thirty years",
+   "match": 1.0,
+   "start": 35.37,
+   "end": 38.84,
+   "dur": 3.47
+  },
+  "TH-03": {
+   "video_id": "92cdd284e25202db0e6ae42f9358a472",
+   "audio_asset": "63ed1aa147624c3da38288dac4b50dc5",
+   "motion": "Gentler and a touch slower: his free hand settles palm-down on 'not you failing', a small shake of the head, hands never frozen; eyes on the camera throughout, the phone arm steady.",
+   "line": "that was not you failing. You were wrapping the wrong part of your leg.",
+   "heard": "that was not you failing you were wrapping the wrong part of your leg",
+   "match": 1.0,
+   "start": 62.06,
+   "end": 66.45,
+   "dur": 4.39
+  },
+  "TH-04": {
+   "video_id": "8e49f464c8337edc29b1153548f71ac2",
+   "audio_asset": "9ee63bd3df984243a573cd12add7deb0",
+   "motion": "Sure and matter-of-fact: his free hand makes a short flat downward chop on 'under it', then lifts three fingers on 'Three things', hands never frozen; eyes on the camera throughout, the phone arm steady.",
+   "line": "You do not wrap the joint. You go under it. Three things have to be right.",
+   "heard": "you do not wrap the joint you go under it three things have to be right",
+   "match": 1.0,
+   "start": 66.45,
+   "end": 71.63,
+   "dur": 5.18
+  },
+  "TH-05": {
+   "video_id": "62e4b4e3ccac0f64b063c8c383eaecdd",
+   "audio_asset": "90a338357e81452499c9278e77bba07d",
+   "motion": "Casual and dry: a small palm-out wave-off on 'Do not take my word for it', one finger raised on 'One knee only', hands never frozen; eyes on the camera throughout, the phone arm steady.",
+   "line": "Do not take my word for it. One knee only. Leave the other bare.",
+   "heard": "do not take my word for it one knee only leave the other bare",
+   "match": 1.0,
+   "start": 114.56,
+   "end": 119.12,
+   "dur": 4.56
+  },
+  "TH-06": {
+   "video_id": "aae3aa19022891e120b1df3b3763cffc",
+   "audio_asset": "ea1cecdfd33f4994875e29e0ad989f8e",
+   "motion": "Quieter and slower, honest: almost still, a slight shake of the head on 'Not because', his free hand opens a little on 'where it hurts'; eyes on the camera throughout, the phone arm steady.",
+   "line": "Not because the arthritis is gone. Because the force is not landing where it hurts.",
+   "heard": "not because the arthritis is gone because the force is not landing where it hurts",
+   "match": 1.0,
+   "start": 122.18,
+   "end": 127.91,
+   "dur": 5.73
+  },
+  "TH-07": {
+   "video_id": "cdc22205511d6b9a999b4243a893d17b",
+   "audio_asset": "cd60c77eaa794a5f99f3d9883a8a50f7",
+   "motion": "Warm and short: a small nod and a dry half-smile on 'stairs', his free hand gives a brief flick towards the camera; eyes on the camera throughout, the phone arm steady.",
+   "line": "Go and do your stairs.",
+   "heard": "go and do your stairs",
+   "match": 1.0,
+   "start": 135.69,
+   "end": 137.256,
+   "dur": 1.57
+  }
+ },
+ "avatar_v_renders": {
+  "TH-01": "734aa22818ff92dfa0bb7e123fe2f823",
+  "TH-02": "a6910d903ada887bf17edd8b635f29fa",
+  "TH-03": "b96ca36e556060fd5444f74c01df03b1",
+  "TH-04": "4f8b58451a5f7380f8af3f7498bd736f",
+  "TH-05": "38c629a93efb1350cf47825c3390eea4",
+  "TH-06": "290d4d853ff8f271fb7b13b1d4fbe801",
+  "TH-07": "c185ad300421f3d651d28f34e28c073f"
+ },
+ "note_v2": "2026-09-28 user: 'IT SHOULD BE V' -> re-rendered on avatar_v without motionPrompt (no digital twin on the account; \u00a722U says motion prompt never dropped \u2014 user's call, logged)",
+ "one_go": {
+  "video_id": "cf21685a105b9d103e35639a1cac8c49",
+  "audio_asset": "77bc97c8d35e411686e0b47c13cbf71d",
+  "engine": "avatar_v",
+  "duration": 137.231,
+  "trims": {
+   "TH-01": [
+    30.86,
+    35.37
+   ],
+   "TH-02": [
+    35.37,
+    38.84
+   ],
+   "TH-03": [
+    62.06,
+    66.45
+   ],
+   "TH-04": [
+    66.45,
+    71.63
+   ],
+   "TH-05": [
+    114.56,
+    119.12
+   ],
+   "TH-06": [
+    122.18,
+    127.91
+   ],
+   "TH-07": [
+    135.69,
+    137.256
+   ]
+  }
+ },
+ "avatar_v_segment_renders_superseded": true,
+ "onego_propped": {
+  "avatar": "764d5cd1bc5b74f51ed0639353e85448",
+  "image_asset": "e884360d6bd743219055ccc2dd2fc42f",
+  "audio_asset": "9bf38e4bf9b541d9be008a1a1e2ff1d7",
+  "video_id": "22d3374e6bf08e105e7016feb1f21d6a",
+  "duration": 151.006,
+  "cuts": {
+   "HK1": [
+    0.0,
+    10.41
+   ],
+   "HK2": [
+    10.41,
+    16.86
+   ],
+   "HK3": [
+    16.86,
+    23.89
+   ],
+   "BODY": [
+    23.89,
+    151.031
+   ]
+  }
+ },
+ "earlier_th_cards_deleted": "2026-09-28 user: delete all TH"
+}

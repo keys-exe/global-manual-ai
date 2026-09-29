@@ -1,0 +1,51 @@
+{
+  "scene": "HOOK1",
+  "story_part": "Hook",
+  "length_s": 17.533,
+  "theme": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif",
+    "tense suspenseful underscore",
+    "low sustained cello drone",
+    "uneasy slow pulse"
+  ],
+  "avoid": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals"
+  ],
+  "tempo": "slow",
+  "sections": [
+    {
+      "name": "Stairs struggle",
+      "start": 0,
+      "end": 14.167,
+      "energy": "mid",
+      "styles": [
+        "tense low cello drone",
+        "uneasy slow piano pulse",
+        "rising unease"
+      ]
+    },
+    {
+      "name": "Six weeks ago card",
+      "start": 14.167,
+      "end": 17.533,
+      "energy": "low",
+      "styles": [
+        "single sustained piano note",
+        "fading, suspended, unresolved"
+      ],
+      "avoid": [
+        "strings swell"
+      ]
+    }
+  ]
+}

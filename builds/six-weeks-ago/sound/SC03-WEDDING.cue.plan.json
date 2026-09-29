@@ -1,0 +1,48 @@
+{
+  "positive_global_styles": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif",
+    "instrumental",
+    "slow tempo"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The promise",
+      "positive_local_styles": [
+        "tender nostalgic solo piano",
+        "bittersweet memory",
+        "piano motif gently"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 12033,
+      "lines": []
+    },
+    {
+      "section_name": "Watching Barbara dance",
+      "positive_local_styles": [
+        "gentle waltz feel in three",
+        "warm viola joins",
+        "wistful longing, bittersweet"
+      ],
+      "negative_local_styles": [
+        "upbeat dance music"
+      ],
+      "duration_ms": 21800,
+      "lines": []
+    }
+  ]
+}

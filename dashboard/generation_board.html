@@ -610,7 +610,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .step .n{display:flex;align-items:center;gap:6px}
 .step .g-wait{margin-left:auto}
 @media (max-width:900px){#manualView .pipe,#planView .pipe{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.mtools{display:flex;justify-content:flex-end}
+.mtools{display:flex;justify-content:flex-end;align-items:center;gap:12px;flex-wrap:wrap}
 #mbar.mbar{flex-direction:column;align-items:stretch;gap:8px}
 .mgroup.widget{scroll-margin-top:16px}
 .mgroup.all-done .w-num{background:var(--use-bg);color:var(--use)}
@@ -1023,7 +1023,7 @@ function renderInner(){
     return `<section class="widget${s.wide?" wide":""}" id="w-${s.key}">
       <div class="w-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
         <div class="w-title"><h2>${s.name}</h2><span class="sub">${s.sub}</span></div>
-        <div class="w-actions">${link}</div></div>
+        <div class="w-actions">${BOARD_ROLE!=="old"&&s.key==="broll"?bankBtn(gens):BOARD_ROLE!=="old"&&s.key==="hooks"?bankBtn(gens,"hooks"):""}${link}</div></div>
       <div class="bar w-bar">${stageBar(s,b,gens,all)}</div>
       <div class="w-body">${body}</div></section>`;
   }).join("");
@@ -1290,7 +1290,7 @@ function renderManual(gens){
       <div class="bar"><i style="width:${t?d/t*100:0}%;background:var(--use)"></i></div>
       <span class="c">${d} of ${t} done</span></button>`};
   $("#mbar").innerHTML=`<nav class="pipe" style="--n:${gs.length+1}" aria-label="Groups">${stepM("all","All","Everything",allP[0],allP[1],0)}${gs.map((x,i)=>{const [d,t,w]=prog(x);return stepM(x.key,String(i+1).padStart(2,"0"),x.label,d,t,w)}).join("")}</nav>
-    <div class="mtools"${BOARD_ROLE==="old"?" hidden":""}><label class="switch"><input type="checkbox" data-needs="1" ${state.mneeds?"checked":""}><span class="sw-track"><span class="sw-knob"></span></span><span>Only what needs me <b>${needsYouCount(gens)}</b></span></label></div>`;
+    <div class="mtools"${BOARD_ROLE==="old"?" hidden":""}><label class="switch"><input type="checkbox" data-needs="1" ${state.mneeds?"checked":""}><span class="sw-track"><span class="sw-knob"></span></span><span>Only what needs me <b>${needsYouCount(gens)}</b></span></label>${bankBtn(gens)}</div>`;
   const html=gs.map(x=>{
     if(state.mstage!=="all"&&state.mstage!==x.key) return "";
     const steps=["image","video","file"].filter(k=>x.items.some(g=>flow(g).includes(k)));
@@ -1424,8 +1424,29 @@ async function downloadOne(g,k,vnum){
   toast("Preparing "+fileName(g,k)+"…");
   try{await saveFile(fileName(g,k),await fetchMedia(g,k))}catch(e){toast("Couldn't fetch the file. Try again.")}
 }
+// the B-roll bank: every confirmed hook and B-roll video, its current version at full quality
+function brollBank(gens,only){return gens.filter(g=>(only?[only]:["broll","hooks"]).includes(g.stage)&&!isAudio(g)&&flow(g).includes("video")&&stepState(g,"video")==="ok"&&g.videoAsset)}
+function bankBtn(gens,only){const n=brollBank(gens,only).length;return `<button class="btn small primary" type="button" data-zip="${only?"hookbank":"brollbank"}" data-step="video" ${n?"":"disabled"} title="${only?"Every confirmed hook video":"Every confirmed hook and B-roll video"}, full quality, for the B-roll bank">${I.dl} Download all ${only?"hooks":"B-rolls"} <b>${n}</b></button>`}
+async function downloadBank(only){
+  const b=currentBuild(), gens=brollBank(buildGens(),only).sort((x,y)=>groupOf(x).order-groupOf(y).order||beatSort(x,y)), d=STEP.video;
+  if(!gens.length) return;
+  toast(`Packing ${gens.length} ${only?"hooks":"B-rolls"}… large files take a while`);
+  const zip=new JSZip(); let md=`# ${b.name||b.id} · B-roll bank · ${gens.length} confirmed videos\n\n`, miss=0;
+  for(const g of gens){
+    const grp=groupOf(g).label, path=`${grp.replace(/\s+/g,"-")}/${fileName(g,"video")}`;
+    md+=`## ${g.beat} · ${g.title||""}\n${grp} · ${path}`+(g.duration?` · ${g.duration}s`:"")+(g.videoOut&&g.videoOutV===currentV(g,"video")?` · clean up to ${g.videoOut}s`:"")+"\n\n"+(g.line?`> ${g.line}\n\n`:"");
+    if(g[d.prompt]) md+=`Model: ${g[d.model]||d.defModel}\n\n\`\`\`\n${g[d.prompt]}\n\`\`\`\n\n`;
+    try{zip.file(path,await fetchMedia(g,"video"))}catch(e){miss++;md+=`(file could not be fetched)\n\n`}
+  }
+  zip.file("broll_bank.md",md);
+  const blob=await zip.generateAsync({type:"blob",compression:"STORE"});
+  await saveFile(`${b.id}_${only?"hooks":"broll-bank"}.zip`,blob);
+  if(miss) toast(`${miss} file${miss>1?"s":""} couldn't be fetched — listed in broll_bank.md`);
+}
 async function downloadZip(groupKey,step){
   if(!window.JSZip){toast("Zip isn't available right now");return}
+  if(groupKey==="brollbank") return downloadBank();
+  if(groupKey==="hookbank") return downloadBank("hooks");
   const b=currentBuild(), gens=buildGens().filter(g=>(groupKey==="final"?isFinal(g)&&g.videoAsset:groupOf(g).key===groupKey)&&flow(g).includes(step)).sort(beatSort);
   if(!gens.length) return;
   const label=groupKey==="final"?"Final output":groupOf(gens[0]).label, d=STEP[step];

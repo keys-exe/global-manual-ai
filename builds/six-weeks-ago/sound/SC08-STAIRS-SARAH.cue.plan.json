@@ -1,0 +1,46 @@
+{
+  "positive_global_styles": [
+    "intimate British family drama film score",
+    "warm felt piano",
+    "soft string quartet, cello and viola",
+    "gentle cinematic underscore",
+    "simple recurring four-note piano motif",
+    "instrumental",
+    "slow tempo"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "percussion",
+    "synthesizers",
+    "electronic sounds",
+    "brass",
+    "choir",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "Right behind you",
+      "positive_local_styles": [
+        "the opening's low cello note, now softened and warm",
+        "careful, protective"
+      ],
+      "negative_local_styles": [
+        "tension"
+      ],
+      "duration_ms": 14067,
+      "lines": []
+    },
+    {
+      "section_name": "Six weeks ago",
+      "positive_local_styles": [
+        "full warm theme on piano and strings",
+        "resolution, pride, wonder"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 38133,
+      "lines": []
+    }
+  ]
+}

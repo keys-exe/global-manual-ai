@@ -1,0 +1,209 @@
+{
+ "note": "\u00a724M sound plan. Tones: one per location, looped. SFX: one sound per object, placed on its frame. Body event times are HK1 time; hook events carry \"in\" and use that variant's own time.",
+ "tones": {
+  "LOC-HOUSE-HALL": {
+   "prompt": "quiet suburban British house hallway and staircase in the daytime, very faint distant traffic through a closed front door, soft old clock ticking in another room, steady and even, no events, seamless loop",
+   "duration": 28
+  },
+  "LOC-KITCHEN": {
+   "prompt": "quiet home kitchen room tone in the daytime, soft low fridge hum, very faint birdsong outside a closed window, steady and even, no events, seamless loop",
+   "duration": 28
+  },
+  "LOC-BEDROOM-NIGHT": {
+   "prompt": "still bedroom at night, near silence, very faint wind outside the window, a slow soft clock tick, steady and even, no events, seamless loop",
+   "duration": 25
+  },
+  "LOC-WEDDING-HALL": {
+   "prompt": "wedding reception hall ambience, warm indistinct crowd chatter and soft laughter at a distance, occasional light clink of glasses, large room reverb, no music, no clear words, steady, seamless loop",
+   "duration": 28,
+   "gain_db": 8
+  },
+  "LOC-GP-ROOM": {
+   "prompt": "doctor's consulting room tone, soft ventilation hum, very faint muffled corridor footsteps far away, steady and even, no events, seamless loop",
+   "duration": 25
+  },
+  "LOC-LIVING-ROOM": {
+   "prompt": "quiet living room in the afternoon, soft room tone, faint distant birdsong through a net-curtained window, steady and even, no events, seamless loop",
+   "duration": 25
+  },
+  "LOC-STATION-STAIRS": {
+   "prompt": "busy train station stairwell at morning rush hour, many commuters' footsteps on concrete stairs, indistinct crowd murmur, distant train rumble, large glass roof reverb, no announcements, no clear words, steady, seamless loop",
+   "duration": 28,
+   "gain_db": 9
+  }
+ },
+ "hook_tone": {
+  "HK1": "LOC-HOUSE-HALL",
+  "HK2": "LOC-STATION-STAIRS",
+  "HK3": "LOC-KITCHEN"
+ },
+ "scene_tone": {
+  "SC01-KITCHEN-SARAH": "LOC-KITCHEN",
+  "SC02-NIGHT-FRANK": "LOC-BEDROOM-NIGHT",
+  "SC03-WEDDING": "LOC-WEDDING-HALL",
+  "SC04-BARBARA-KITCHEN": "LOC-KITCHEN",
+  "SC05-STAIRS-BARBARA": "LOC-HOUSE-HALL",
+  "SC06-DOCTOR": "LOC-GP-ROOM",
+  "SC07-HALLWAY-FRANK": "LOC-HOUSE-HALL",
+  "SC08-STAIRS-SARAH": "LOC-HOUSE-HALL",
+  "SC09-THE-DANCE": "LOC-KITCHEN",
+  "SC10-CALL-JOAN": "LOC-LIVING-ROOM"
+ },
+ "sfx": {
+  "SFX-STAIR-CREAK": {
+   "prompt": "single old wooden stair creaking under a slow heavy step on carpet, soft low creak, close-mic, quiet house hallway",
+   "duration": 1.2
+  },
+  "SFX-STAIR-STEP": {
+   "prompt": "one soft footstep on a carpeted wooden stair, muffled thud, close-mic, quiet house hallway",
+   "duration": 0.6
+  },
+  "SFX-SLIPPER-STEP": {
+   "prompt": "one careful step of a soft fleece slipper onto a carpeted stair, gentle muffled pad, close-mic, quiet hallway",
+   "duration": 0.7
+  },
+  "SFX-PLATE-SMASH": {
+   "prompt": "ceramic dinner plate dropped and smashing on a hard kitchen vinyl floor, sharp crash and scattering shards, close, small kitchen",
+   "duration": 1.5
+  },
+  "SFX-BODY-FALL": {
+   "prompt": "elderly woman slumping down onto a kitchen floor against cupboard doors, soft heavy body thud and fabric, close, small kitchen",
+   "duration": 1.2
+  },
+  "SFX-SNEAKER-STEP": {
+   "prompt": "one quick footstep of a white canvas sneaker on a concrete station stair, crisp rubber tap, close-mic, reverberant stairwell",
+   "duration": 0.5
+  },
+  "SFX-CLOTHES-RUSTLE": {
+   "prompt": "trouser fabric pulled up over a knee, soft cotton rustle, close-mic, quiet room",
+   "duration": 1.0
+  },
+  "SFX-STRAP-VELCRO": {
+   "prompt": "hook-and-loop strap on a knee brace pulled and pressed closed, short velcro rip then soft press, close-mic, quiet room",
+   "duration": 1.0
+  },
+  "SFX-CHAIR-SIT": {
+   "prompt": "older woman sitting down on a wooden kitchen chair, light wood creak and small scrape on the floor, close, quiet kitchen",
+   "duration": 1.0
+  }
+ },
+ "events": [
+  {
+   "id": "SFX-STAIR-CREAK",
+   "at": 0.6,
+   "in": "HK1",
+   "gain_db": -4
+  },
+  {
+   "id": "SFX-STAIR-CREAK",
+   "at": 5.4,
+   "in": "HK1",
+   "gain_db": -6
+  },
+  {
+   "id": "SFX-STAIR-STEP",
+   "at": 11.4,
+   "in": "HK1",
+   "gain_db": -6
+  },
+  {
+   "id": "SFX-SNEAKER-STEP",
+   "at": 9.45,
+   "in": "HK2",
+   "gain_db": -2
+  },
+  {
+   "id": "SFX-SNEAKER-STEP",
+   "at": 10.05,
+   "in": "HK2",
+   "gain_db": -3
+  },
+  {
+   "id": "SFX-PLATE-SMASH",
+   "at": 1.3,
+   "in": "HK3",
+   "gain_db": 6
+  },
+  {
+   "id": "SFX-BODY-FALL",
+   "at": 5.3,
+   "in": "HK3",
+   "gain_db": 3
+  },
+  {
+   "id": "SFX-CLOTHES-RUSTLE",
+   "at": 152.4,
+   "gain_db": -16
+  },
+  {
+   "id": "SFX-CHAIR-SIT",
+   "at": 196.8,
+   "gain_db": -6
+  },
+  {
+   "id": "SFX-STRAP-VELCRO",
+   "at": 285.5,
+   "gain_db": -8
+  },
+  {
+   "id": "SFX-CLOTHES-RUSTLE",
+   "at": 288.6,
+   "gain_db": -16
+  },
+  {
+   "id": "SFX-SLIPPER-STEP",
+   "at": 336.45,
+   "gain_db": -3
+  },
+  {
+   "id": "SFX-CLOTHES-RUSTLE",
+   "at": 356.0,
+   "gain_db": -18
+  },
+  {
+   "id": "SFX-CLOTHES-RUSTLE",
+   "at": 385.8,
+   "gain_db": -16
+  },
+  {
+   "id": "SFX-STAIR-STEP",
+   "at": 455.7,
+   "gain_db": -7
+  },
+  {
+   "id": "SFX-STAIR-STEP",
+   "at": 456.6,
+   "gain_db": -8
+  },
+  {
+   "id": "SFX-STAIR-STEP",
+   "at": 457.5,
+   "gain_db": -7
+  },
+  {
+   "id": "SFX-STAIR-STEP",
+   "at": 458.4,
+   "gain_db": -8
+  },
+  {
+   "id": "SFX-STAIR-STEP",
+   "at": 459.3,
+   "gain_db": -8
+  },
+  {
+   "id": "SFX-STAIR-STEP",
+   "at": 460.2,
+   "gain_db": -9
+  },
+  {
+   "id": "SFX-STAIR-STEP",
+   "at": 461.1,
+   "gain_db": -9
+  },
+  {
+   "id": "SFX-STAIR-STEP",
+   "at": 462.0,
+   "gain_db": -10
+  }
+ ]
+}

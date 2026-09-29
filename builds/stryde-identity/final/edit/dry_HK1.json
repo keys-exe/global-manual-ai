@@ -1,0 +1,840 @@
+{
+  "master_s": 57.89,
+  "min_th_s": 1.5,
+  "edl": [
+    {
+      "beat": "EDIT-HK1",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/271b7b308eaf62e251524563890ba5cc.mp4",
+      "phrase": "Why these knee straps are a must if you've been told you're bone on bone.",
+      "key": "\"Why",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 0.0,
+      "start": 0.0,
+      "line_end": 9.5,
+      "in_spec": 0.0,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.21,
+      "speed": 1.0,
+      "in": 0.0,
+      "flex": false,
+      "skip": 0.0,
+      "end": 4.0833
+    },
+    {
+      "beat": "MECH-01",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/MECH-01_video_v2.mp4",
+      "phrase": "Because every step puts seventeen times your bodyweight",
+      "key": "Because",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 4.2,
+      "start": 4.0833,
+      "line_end": 9.5,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 7.0417
+    },
+    {
+      "beat": "MECH-02",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/c881ba79fb59c2fa1fbd69da1a8db942.mp4",
+      "phrase": "through one small spot below your kneecap.",
+      "key": "through",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 7.18,
+      "start": 7.0417,
+      "line_end": 9.5,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 9.4583
+    },
+    {
+      "beat": "BR-03",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-03_video_v2.mp4",
+      "phrase": "These straps took three years to build with orthopaedic surgeons,",
+      "key": "These",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 9.6,
+      "start": 9.4583,
+      "line_end": 14.5417,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 12.5833
+    },
+    {
+      "beat": "BR-04",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-04_video_v2.mp4",
+      "phrase": "to sit right on that spot.",
+      "key": "to",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 12.7,
+      "start": 12.5833,
+      "line_end": 14.5417,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 14.4167
+    },
+    {
+      "beat": "BR-05",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/3a47bc7482ae1d15ceee4005ee8ebe15.mp4",
+      "phrase": "Unlike the cheap copies, which are too small to reach it.",
+      "key": "Unlike",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 14.54,
+      "start": 14.4167,
+      "line_end": 17.125,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 17.0833
+    },
+    {
+      "beat": "BR-06",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-06_video_v3.mp4",
+      "phrase": "Inside, a silicone pad catches the force",
+      "key": "Inside,",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 17.2,
+      "start": 17.0833,
+      "line_end": 22.625,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 19.5
+    },
+    {
+      "beat": "MECH-07",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/e04d52634c06f7edfae09dfeb51053b7.mp4",
+      "phrase": "and moves it off the worn part, before it hits the joint.",
+      "key": "and",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 19.62,
+      "start": 19.5,
+      "line_end": 22.625,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 22.5
+    },
+    {
+      "beat": "BR-08",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/2f1896f039f888e27cdcb01e871a6855.mp4",
+      "phrase": "Sports scientists measured it.",
+      "key": "Sports",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 22.64,
+      "start": 22.5,
+      "line_end": 24.0,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 23.875
+    },
+    {
+      "beat": "BR-09",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/f77bcca8a5e85b4dbc0400be7091e24a.mp4",
+      "phrase": "Thirty-four percent less strain, every step.",
+      "key": "Thirty-four",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 24.02,
+      "start": 23.875,
+      "line_end": 26.4167,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 26.2917
+    },
+    {
+      "beat": "MECH-10",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/MECH-10_video_v2.mp4",
+      "phrase": "Built for bone on bone, arthritis,",
+      "key": "Built",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 26.42,
+      "start": 26.2917,
+      "line_end": 30.5833,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 28.8333
+    },
+    {
+      "beat": "MECH-11",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/3e217867d83f7b995aea722f5eda9976.mp4",
+      "phrase": "worn cartilage and meniscus.",
+      "key": "worn",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 28.94,
+      "start": 28.8333,
+      "line_end": 30.5833,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 30.7083
+    },
+    {
+      "beat": "BR-12",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-12_video_v2.mp4",
+      "phrase": "So you walk further,",
+      "key": "So",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 30.84,
+      "start": 30.7083,
+      "line_end": 33.7083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 31.625
+    },
+    {
+      "beat": "BR-13",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-13_video_v6.mp4",
+      "phrase": "and take the stairs without gripping the rail.",
+      "key": "and",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 31.62,
+      "start": 31.625,
+      "line_end": 33.7083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 33.7083
+    },
+    {
+      "beat": "BR-14",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-14_video_v3.mp4",
+      "phrase": "Not because the arthritis has gone.",
+      "key": "Not",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 33.82,
+      "start": 33.7083,
+      "line_end": 35.25,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 35.25
+    },
+    {
+      "beat": "MECH-15",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/MECH-15_video_v2.mp4",
+      "phrase": "Because the force isn't landing where it hurts.",
+      "key": "Because",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 35.36,
+      "start": 35.25,
+      "line_end": 37.8333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 37.9583
+    },
+    {
+      "beat": "BR-16",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-16_video_v2.mp4",
+      "phrase": "Adjustable.",
+      "key": "Adjustable.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 38.1,
+      "start": 37.9583,
+      "line_end": 38.5833,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 38.75
+    },
+    {
+      "beat": "BR-17",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-17_video_v3.mp4",
+      "phrase": "No slipping. No sores. No rolling down.",
+      "key": "No",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 38.74,
+      "start": 38.75,
+      "line_end": 41.25,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 41.25
+    },
+    {
+      "beat": "BR-18",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/fa3cc84b4f686515b61b82af38ca39ea.mp4",
+      "phrase": "It sits flat under your trousers,",
+      "key": "It",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 41.38,
+      "start": 41.25,
+      "line_end": 44.5417,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 42.9583
+    },
+    {
+      "beat": "BR-19",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-19_video_v2.mp4",
+      "phrase": "light enough to wear all day.",
+      "key": "light",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 43.08,
+      "start": 42.9583,
+      "line_end": 44.5417,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 45.0
+    },
+    {
+      "beat": "BR-20",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-20_video_v2.mp4",
+      "phrase": "Recommended by orthopaedic surgeons,",
+      "key": "Recommended",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 45.12,
+      "start": 45.0,
+      "line_end": 49.2083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 46.375
+    },
+    {
+      "beat": "BR-21",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-21_video_v2.mp4",
+      "phrase": "and worn by over two hundred thousand people.",
+      "key": "and",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 46.48,
+      "start": 46.375,
+      "line_end": 49.2083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 49.2083
+    },
+    {
+      "beat": "BR-22",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-22_video_v3.mp4",
+      "phrase": "And the best part?",
+      "key": "And",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 49.32,
+      "start": 49.2083,
+      "line_end": 50.0,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 50.125
+    },
+    {
+      "beat": "BR-23",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/final/src/8deabadfdf7f329af3343b0992baab46.mp4",
+      "phrase": "It's two for the price of one today.",
+      "key": "It's",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 50.12,
+      "start": 50.125,
+      "line_end": 51.7917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 51.8333
+    },
+    {
+      "beat": "BR-24",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-24_video_v4.mp4",
+      "phrase": "You get sixty days.",
+      "key": "You",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 51.94,
+      "start": 51.8333,
+      "line_end": 53.0833,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 53.0833
+    },
+    {
+      "beat": "BR-25",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-25_video_v9.mp4",
+      "phrase": "If it doesn't change your stairs, you get your money back.",
+      "key": "If",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 53.22,
+      "start": 53.0833,
+      "line_end": 55.5,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 55.375
+    },
+    {
+      "beat": "BR-26a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-26a_video_v2.mp4",
+      "phrase": "Put one on,",
+      "key": "Put",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 55.5,
+      "start": 55.375,
+      "line_end": 57.8333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 56.2083
+    },
+    {
+      "beat": "BR-26b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-identity/body/BR-26b_video_v2.mp4",
+      "phrase": "and your own stairs will tell you.",
+      "key": "and",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 56.2,
+      "start": 56.2083,
+      "line_end": 57.8333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 57.875
+    }
+  ],
+  "timeline": [
+    {
+      "kind": "BR",
+      "beat": "EDIT-HK1",
+      "layout": "full",
+      "start": 0.0,
+      "end": 4.083
+    },
+    {
+      "kind": "BR",
+      "beat": "MECH-01",
+      "layout": "full",
+      "start": 4.083,
+      "end": 7.042
+    },
+    {
+      "kind": "BR",
+      "beat": "MECH-02",
+      "layout": "full",
+      "start": 7.042,
+      "end": 9.458
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-03",
+      "layout": "full",
+      "start": 9.458,
+      "end": 12.583
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-04",
+      "layout": "full",
+      "start": 12.583,
+      "end": 14.417
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-05",
+      "layout": "full",
+      "start": 14.417,
+      "end": 17.083
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-06",
+      "layout": "full",
+      "start": 17.083,
+      "end": 19.5
+    },
+    {
+      "kind": "BR",
+      "beat": "MECH-07",
+      "layout": "full",
+      "start": 19.5,
+      "end": 22.5
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-08",
+      "layout": "full",
+      "start": 22.5,
+      "end": 23.875
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-09",
+      "layout": "full",
+      "start": 23.875,
+      "end": 26.292
+    },
+    {
+      "kind": "BR",
+      "beat": "MECH-10",
+      "layout": "full",
+      "start": 26.292,
+      "end": 28.833
+    },
+    {
+      "kind": "BR",
+      "beat": "MECH-11",
+      "layout": "full",
+      "start": 28.833,
+      "end": 30.708
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-12",
+      "layout": "full",
+      "start": 30.708,
+      "end": 31.625
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-13",
+      "layout": "full",
+      "start": 31.625,
+      "end": 33.708
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-14",
+      "layout": "full",
+      "start": 33.708,
+      "end": 35.25
+    },
+    {
+      "kind": "BR",
+      "beat": "MECH-15",
+      "layout": "full",
+      "start": 35.25,
+      "end": 37.958
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-16",
+      "layout": "full",
+      "start": 37.958,
+      "end": 38.75
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-17",
+      "layout": "full",
+      "start": 38.75,
+      "end": 41.25
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-18",
+      "layout": "full",
+      "start": 41.25,
+      "end": 42.958
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-19",
+      "layout": "full",
+      "start": 42.958,
+      "end": 45.0
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-20",
+      "layout": "full",
+      "start": 45.0,
+      "end": 46.375
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-21",
+      "layout": "full",
+      "start": 46.375,
+      "end": 49.208
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-22",
+      "layout": "full",
+      "start": 49.208,
+      "end": 50.125
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-23",
+      "layout": "full",
+      "start": 50.125,
+      "end": 51.833
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-24",
+      "layout": "full",
+      "start": 51.833,
+      "end": 53.083
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-25",
+      "layout": "full",
+      "start": 53.083,
+      "end": 55.375
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-26a",
+      "layout": "full",
+      "start": 55.375,
+      "end": 56.208
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-26b",
+      "layout": "full",
+      "start": 56.208,
+      "end": 57.875
+    },
+    {
+      "kind": "HOLE",
+      "start": 57.875,
+      "end": 57.89
+    }
+  ],
+  "fixes": [
+    {
+      "beat": "MECH-11",
+      "fix": "HOLE: extended with own footage to 30.71s"
+    },
+    {
+      "beat": "MECH-15",
+      "fix": "HOLE: extended with own footage to 37.96s"
+    },
+    {
+      "beat": "BR-16",
+      "fix": "HOLE: extended with own footage to 38.75s"
+    },
+    {
+      "beat": "BR-19",
+      "fix": "HOLE: extended with own footage to 45.00s"
+    },
+    {
+      "beat": "BR-22",
+      "fix": "HOLE: extended with own footage to 50.12s"
+    },
+    {
+      "beat": "BR-23",
+      "fix": "HOLE: extended with own footage to 51.83s"
+    },
+    {
+      "beat": "BR-26b",
+      "fix": "HOLE: extended with own footage to 57.89s"
+    }
+  ],
+  "warnings": [],
+  "failures": [
+    {
+      "beat": "BR-16",
+      "fail": "FLASH",
+      "detail": "on screen 0.79s < 0.8s"
+    },
+    {
+      "fail": "HOLE_REMAINS",
+      "detail": "57.88\u201357.89s"
+    }
+  ],
+  "status": "FAIL"
+}

@@ -1,0 +1,570 @@
+[
+ {
+  "beat_id": "HK1-01",
+  "act": "HOOK",
+  "phrase": "Why this knee strap is a must for anyone who dreads the stairs.",
+  "type": "BR",
+  "subject": "S1",
+  "location": "HALL-STAIRS/TRAVERSED+PROP",
+  "story_day": "D1",
+  "product_state": "absent",
+  "visibility": "NA",
+  "valence": "neg",
+  "framing": "WIDE",
+  "notes": "foot of stairs, looks up the flight, hand on the newel post and her right knee, braces to start",
+  "duration": "pending-master",
+  "side": "right"
+ },
+ {
+  "beat_id": "HK2-01",
+  "act": "HOOK",
+  "phrase": "Why this strap is a must for bone on bone knees.",
+  "type": "BR",
+  "subject": "S1",
+  "location": "LIVING/PLATED",
+  "story_day": "D1",
+  "product_state": "absent",
+  "visibility": "NA",
+  "valence": "neg",
+  "framing": "PROPPED",
+  "notes": "on sofa edge, both hands press around bare right knee, slow wince, starts to push up",
+  "duration": "pending-master",
+  "side": "right"
+ },
+ {
+  "beat_id": "HK3-01",
+  "act": "HOOK",
+  "phrase": "Why this strap is a must if your knee hurts going downstairs.",
+  "type": "BR",
+  "subject": "S1",
+  "location": "HALL-STAIRS/TRAVERSED+PROP",
+  "story_day": "D1",
+  "product_state": "absent",
+  "visibility": "NA",
+  "valence": "neg",
+  "framing": "WIDE",
+  "notes": "coming down the stairs step-to, gripping the handrail, filmed from the hall below",
+  "duration": "pending-master",
+  "side": "right"
+ },
+ {
+  "beat_id": "B01",
+  "act": "A1-PROBLEM",
+  "phrase": "Because every step",
+  "type": "BR",
+  "subject": "S1",
+  "location": "HALL-STAIRS/TRAVERSED+PROP",
+  "story_day": "D1",
+  "product_state": "absent",
+  "visibility": "NA",
+  "valence": "neg",
+  "framing": "OTS",
+  "notes": "close low angle: right foot lands on a tread, knee bends, hand grips rail",
+  "duration": 3,
+  "side": "right",
+  "span": [
+   0.0,
+   1.22
+  ]
+ },
+ {
+  "beat_id": "B02",
+  "act": "A1-PROBLEM",
+  "phrase": "puts seventeen times your bodyweight",
+  "type": "MECH",
+  "subject": "none",
+  "location": "MECH field",
+  "story_day": "-",
+  "product_state": "absent",
+  "visibility": "NA",
+  "valence": "neutral",
+  "framing": "MECH-C",
+  "notes": "anatomical knee on a step, load arriving down the femur onto the tendon (ANAT, walking cadence)",
+  "duration": 3,
+  "side": "right",
+  "span": [
+   1.22,
+   3.52
+  ]
+ },
+ {
+  "beat_id": "B03",
+  "act": "A1-PROBLEM",
+  "phrase": "through one small spot below your kneecap.",
+  "type": "MECH",
+  "subject": "none",
+  "location": "MECH field",
+  "story_day": "-",
+  "product_state": "absent",
+  "visibility": "NA",
+  "valence": "neutral",
+  "framing": "MECH-B",
+  "notes": "patellar tendon SITE glowing under load, just below the patella",
+  "duration": 4,
+  "side": "right",
+  "span": [
+   3.52,
+   6.52
+  ]
+ },
+ {
+  "beat_id": "B04",
+  "act": "A2-BUILT",
+  "phrase": "These straps took three years to build with orthopaedic surgeons,",
+  "type": "BR",
+  "subject": "S2",
+  "location": "CLINIC/PLATED",
+  "story_day": "SURG",
+  "product_state": "held",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "PROPPED",
+  "notes": "surgeon at the desk turning the strap in his hands beside the knee model, pressing the notch against the model's kneecap",
+  "duration": 5,
+  "side": "right",
+  "span": [
+   6.96,
+   10.64
+  ]
+ },
+ {
+  "beat_id": "B05",
+  "act": "A2-BUILT",
+  "phrase": "to sit right on that spot.",
+  "type": "PRODUCT",
+  "subject": "S1",
+  "location": "LIVING/PLATED",
+  "story_day": "D2",
+  "product_state": "seated",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "CLOSE",
+  "notes": "SEAT-LOCK: both hands slide the strap up the shin and seat it under the kneecap, fingers lifting",
+  "duration": 4,
+  "side": "right",
+  "span": [
+   10.64,
+   13.3
+  ]
+ },
+ {
+  "beat_id": "B06",
+  "act": "A2-BUILT",
+  "phrase": "Unlike the cheap copies, which are too small to reach it.",
+  "type": "DEMO",
+  "subject": "S1 hands",
+  "location": "LIVING/PLATED",
+  "story_day": "D2",
+  "product_state": "held",
+  "visibility": "VISIBLE",
+  "valence": "neutral",
+  "framing": "CLOSE",
+  "notes": "9C SIDE-BY-SIDE: STRYDE shell in one hand vs a small plain black generic tube strap in the other, the generic one visibly narrower than a kneecap",
+  "duration": 5,
+  "side": "right",
+  "span": [
+   13.3,
+   17.08
+  ]
+ },
+ {
+  "beat_id": "B07",
+  "act": "A3-MECH",
+  "phrase": "Inside, a silicone pad",
+  "type": "PRODUCT",
+  "subject": "S1 hands",
+  "location": "LIVING/PLATED",
+  "story_day": "D2",
+  "product_state": "held",
+  "visibility": "VISIBLE",
+  "valence": "neutral",
+  "framing": "CLOSE",
+  "notes": "strap turned in hand through window light, thumb pressing into the shell (9C PRESS), inner face toward camera only as matte black (pad not described: FLAG)",
+  "duration": 3,
+  "side": "right",
+  "span": [
+   18.08,
+   19.6
+  ]
+ },
+ {
+  "beat_id": "B08",
+  "act": "A3-MECH",
+  "phrase": "catches the force and moves it off the worn part, before it hits the joint.",
+  "type": "MECH",
+  "subject": "none",
+  "location": "MECH field",
+  "story_day": "-",
+  "product_state": "worn (ANAT-PROD)",
+  "visibility": "NA",
+  "valence": "neutral",
+  "framing": "MECH-B",
+  "notes": "anatomical: shell over tendon, load spreading off the SITE across the shell",
+  "duration": 6,
+  "side": "right",
+  "span": [
+   19.6,
+   24.7
+  ]
+ },
+ {
+  "beat_id": "B09",
+  "act": "A4-PROOF",
+  "phrase": "Sports scientists measured it.",
+  "type": "BR",
+  "subject": "S3 + S1",
+  "location": "LAB/INCIDENTAL",
+  "story_day": "LAB",
+  "product_state": "worn",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "OTS",
+  "notes": "gait lab: S1 walking on a treadmill in the strap, S3 watching a laptop turned away, clipboard",
+  "duration": 3,
+  "side": "right",
+  "span": [
+   25.38,
+   27.36
+  ]
+ },
+ {
+  "beat_id": "B10",
+  "act": "A4-PROOF",
+  "phrase": "Thirty-four percent less strain, every step.",
+  "type": "BR",
+  "subject": "S1",
+  "location": "STREET/TRAVERSED",
+  "story_day": "D2",
+  "product_state": "worn",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "CLOSE-WALK",
+  "notes": "tracking the right knee walking along a pavement, strap holding station each step",
+  "duration": 5,
+  "side": "right",
+  "span": [
+   27.36,
+   31.26
+  ]
+ },
+ {
+  "beat_id": "B11",
+  "act": "A4-CALLOUT",
+  "phrase": "Built for bone on bone, arthritis,",
+  "type": "BR",
+  "subject": "S1",
+  "location": "LIVING/PLATED",
+  "story_day": "D1",
+  "product_state": "absent",
+  "visibility": "NA",
+  "valence": "neg",
+  "framing": "PROPPED",
+  "notes": "rising from the sofa, hands pushing on both knees, stiff",
+  "duration": 4,
+  "side": "right",
+  "span": [
+   31.48,
+   34.6
+  ]
+ },
+ {
+  "beat_id": "B12",
+  "act": "A4-CALLOUT",
+  "phrase": "worn cartilage and meniscus.",
+  "type": "BR",
+  "subject": "S1",
+  "location": "GARDEN/INCIDENTAL+PROP",
+  "story_day": "D1",
+  "product_state": "absent",
+  "visibility": "NA",
+  "valence": "neg",
+  "framing": "WIDE",
+  "notes": "back garden, lowering herself to kneel at a border, hand on the right knee",
+  "duration": 3,
+  "side": "right",
+  "span": [
+   35.28,
+   37.4
+  ]
+ },
+ {
+  "beat_id": "B13",
+  "act": "A5-AFTER",
+  "phrase": "So you walk further,",
+  "type": "BR",
+  "subject": "S1",
+  "location": "PARK/TRAVERSED",
+  "story_day": "D2",
+  "product_state": "worn",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "WIDE",
+  "notes": "walking briskly along a park path past a green bench, strap visible",
+  "duration": 3,
+  "side": "right",
+  "span": [
+   37.76,
+   38.98
+  ]
+ },
+ {
+  "beat_id": "B14",
+  "act": "A5-AFTER",
+  "phrase": "and take the stairs without gripping the rail.",
+  "type": "BR",
+  "subject": "S1",
+  "location": "HALL-STAIRS/TRAVERSED+PROP",
+  "story_day": "D2",
+  "product_state": "worn",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "WIDE",
+  "notes": "STAIR-UP reciprocal gait, hands free, from the hall below",
+  "duration": 4,
+  "side": "right",
+  "span": [
+   38.98,
+   41.78
+  ]
+ },
+ {
+  "beat_id": "B15",
+  "act": "A5-AFTER",
+  "phrase": "Not because the arthritis has gone.",
+  "type": "BR",
+  "subject": "S1",
+  "location": "HALL-STAIRS/TRAVERSED+PROP",
+  "story_day": "D2",
+  "product_state": "worn",
+  "visibility": "VISIBLE",
+  "valence": "neutral",
+  "framing": "CLOSE",
+  "notes": "close on the right knee in the strap as it bends onto a tread, weight going through",
+  "duration": 3,
+  "side": "right",
+  "span": [
+   41.98,
+   44.14
+  ]
+ },
+ {
+  "beat_id": "B16",
+  "act": "A5-AFTER",
+  "phrase": "Because the force isn't landing where it hurts.",
+  "type": "MECH",
+  "subject": "none",
+  "location": "MECH field",
+  "story_day": "-",
+  "product_state": "worn (ANAT-PROD)",
+  "visibility": "NA",
+  "valence": "neutral",
+  "framing": "MECH-C",
+  "notes": "anatomical: step load landing on the shell, SITE calm",
+  "duration": 4,
+  "side": "right",
+  "span": [
+   44.7,
+   47.72
+  ]
+ },
+ {
+  "beat_id": "B17",
+  "act": "A6-FEATURES",
+  "phrase": "Adjustable.",
+  "type": "PRODUCT",
+  "subject": "S1 hands",
+  "location": "LIVING/PLATED",
+  "story_day": "D2",
+  "product_state": "held",
+  "visibility": "VISIBLE",
+  "valence": "neutral",
+  "framing": "CLOSE",
+  "notes": "band tail drawn through a chrome slide in hand, knit stretching and recovering (9C STRETCH)",
+  "duration": 3,
+  "side": "right",
+  "span": [
+   48.44,
+   49.1
+  ]
+ },
+ {
+  "beat_id": "B18",
+  "act": "A6-FEATURES",
+  "phrase": "No slipping. No sores. No rolling down.",
+  "type": "BR",
+  "subject": "S1",
+  "location": "STREET/TRAVERSED",
+  "story_day": "D2",
+  "product_state": "worn",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "CLOSE-WALK",
+  "notes": "stepping up a kerb, strap holds station (12B anchoring)",
+  "duration": 4,
+  "side": "right",
+  "span": [
+   49.42,
+   52.5
+  ]
+ },
+ {
+  "beat_id": "B19",
+  "act": "A6-FEATURES",
+  "phrase": "It sits flat under your trousers, light enough to wear all day.",
+  "type": "BR",
+  "subject": "S1",
+  "location": "HALL/TRAVERSED+PROP",
+  "story_day": "D3",
+  "product_state": "worn",
+  "visibility": "CONCEALED",
+  "valence": "pos",
+  "framing": "WIDE",
+  "notes": "WEAR-CONCEAL: walking down the hall to the front door in trousers, no bulge",
+  "duration": 5,
+  "side": "right",
+  "span": [
+   53.14,
+   57.52
+  ]
+ },
+ {
+  "beat_id": "B20",
+  "act": "A7-SOCIAL",
+  "phrase": "Recommended by orthopaedic surgeons,",
+  "type": "BR",
+  "subject": "S2 + S1",
+  "location": "CLINIC/PLATED",
+  "story_day": "SURG",
+  "product_state": "worn",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "OTS",
+  "notes": "S1 seated on the couch, surgeon crouched pointing at the strap seated under her kneecap, nodding",
+  "duration": 3,
+  "side": "right",
+  "span": [
+   57.76,
+   59.9
+  ]
+ },
+ {
+  "beat_id": "B21",
+  "act": "A7-SOCIAL",
+  "phrase": "and worn by over two hundred thousand people.",
+  "type": "BR",
+  "subject": "S4 one-off",
+  "location": "HIGH-STREET/TRAVERSED",
+  "story_day": "-",
+  "product_state": "worn",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "WIDE",
+  "notes": "a British high street, an older man in shorts walking toward camera with the strap on his right knee among shoppers",
+  "duration": 5,
+  "side": "right",
+  "span": [
+   59.9,
+   63.84
+  ]
+ },
+ {
+  "beat_id": "B22",
+  "act": "A8-OFFER",
+  "phrase": "And the best part? It's two for the price of one today.",
+  "type": "PRODUCT",
+  "subject": "S1 hands",
+  "location": "LIVING/PLATED",
+  "story_day": "D2",
+  "product_state": "held",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "CLOSE",
+  "notes": "two straps held in both hands, turned through the light (offer act in hand)",
+  "duration": 5,
+  "side": "right",
+  "span": [
+   64.48,
+   68.08
+  ]
+ },
+ {
+  "beat_id": "B23",
+  "act": "A8-OFFER",
+  "phrase": "You get sixty days.",
+  "type": "BR",
+  "subject": "S1",
+  "location": "LIVING/PLATED",
+  "story_day": "D2",
+  "product_state": "worn",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "PROPPED",
+  "notes": "on the sofa, strap on, lifting the right leg and flexing the knee easily, small smile",
+  "duration": 3,
+  "side": "right",
+  "span": [
+   68.72,
+   69.94
+  ]
+ },
+ {
+  "beat_id": "B24",
+  "act": "A8-OFFER",
+  "phrase": "If it doesn't change your stairs, you get your money back.",
+  "type": "BR",
+  "subject": "S1",
+  "location": "HALL-STAIRS/TRAVERSED+PROP",
+  "story_day": "D2",
+  "product_state": "worn",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "WIDE",
+  "notes": "STAIR-DOWN reciprocal gait, hands free",
+  "duration": 4,
+  "side": "right",
+  "span": [
+   70.46,
+   73.5
+  ]
+ },
+ {
+  "beat_id": "B25",
+  "act": "A9-CTA",
+  "phrase": "Put one on,",
+  "type": "PRODUCT",
+  "subject": "S1",
+  "location": "LIVING/PLATED",
+  "story_day": "D2",
+  "product_state": "seated",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "CLOSE",
+  "notes": "SEAT-LOCK second angle, three-quarter from the right",
+  "duration": 3,
+  "side": "right",
+  "span": [
+   73.94,
+   74.6
+  ]
+ },
+ {
+  "beat_id": "B26",
+  "act": "A9-CTA",
+  "phrase": "and your own stairs will tell you.",
+  "type": "BR",
+  "subject": "S1",
+  "location": "HALL-STAIRS/TRAVERSED+PROP",
+  "story_day": "D2",
+  "product_state": "worn",
+  "visibility": "VISIBLE",
+  "valence": "pos",
+  "framing": "WIDE",
+  "notes": "foot of the stairs, starts to climb briskly, first two treads, from behind-right",
+  "duration": 3,
+  "side": "right",
+  "span": [
+   74.6,
+   76.96
+  ]
+ }
+]
