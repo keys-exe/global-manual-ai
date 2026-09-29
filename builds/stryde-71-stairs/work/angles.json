@@ -1080,66 +1080,6 @@
   }
  },
  {
-  "beat": "R-07b",
-  "group": "Act 3",
-  "type": "BR",
-  "subject": "N feet",
-  "height": "ground",
-  "side": "profile",
-  "fg": "clean",
-  "scale": "CU",
-  "why": "ground = the steps",
-  "mirror_of": "P-01b",
-  "mode": 1,
-  "speaking": false,
-  "product_beat": true,
-  "focus": {
-   "plane": "product",
-   "dof": "medium",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D3",
-  "face": false,
-  "light": {
-   "source": "front-door sidelights, west wall",
-   "key_side": "L",
-   "time": "afternoon",
-   "arc": "after: sun",
-   "kelvin": 5600
-  }
- },
- {
-  "beat": "R-07c",
-  "group": "Act 3",
-  "type": "BR",
-  "subject": "N",
-  "height": "eye",
-  "side": "profile",
-  "fg": "through",
-  "scale": "MEDIUM",
-  "why": "through the spindles = Loretta's view, watching her do it",
-  "mirror_of": null,
-  "mode": 1,
-  "speaking": false,
-  "product_beat": true,
-  "focus": {
-   "plane": "product",
-   "dof": "deep",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D3",
-  "face": true,
-  "light": {
-   "source": "front-door sidelights, west wall",
-   "key_side": "L",
-   "time": "afternoon",
-   "arc": "after: sun",
-   "kelvin": 5600
-  }
- },
- {
   "beat": "M-01a",
   "group": "Act 4",
   "type": "BR",

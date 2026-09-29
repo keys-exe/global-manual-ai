@@ -2,6 +2,10 @@
  "model": "nano_banana_2",
  "refs": [
   [
+   "N sheet",
+   "cast/N-NARR_v1.png"
+  ],
+  [
    "P2-KITCHEN plate",
    "plates/P2-KITCHEN_v2.png"
   ]

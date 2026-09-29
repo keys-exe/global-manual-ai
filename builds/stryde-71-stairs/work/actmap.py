@@ -174,18 +174,10 @@ R("R-06a", A, "She said, \"Just put it on and walk down them stairs.\"", "stairs
   "CU seated: both hands slide the strap up her right shin to seat it under the kneecap",
   "slides up the last few centimetres and stops at contact", "one slide, about a second", "hands: start mid-movement, end on contact", "seated", "VISIBLE", "NBP",
   "high", TQ, "clean", "CU", "high = her own view of her knee", "product", "medium", *KIT, "morning", "turn", False)
-R("R-07a", A, "I did. Chile, the first step, I didn't even have to hold the rail.", "rail", "payoff", "N", "L-N-STAIRS", "N-D3",
-  "MEDIUM from the hall floor: N at the top of the stairs takes the first step down facing forwards, hands at her sides",
-  "one step down, facing forwards", "one step, about a second", "stairs: camera at the bottom, subject 1 step, hands free", "worn", "VISIBLE", "NBP",
+R("R-07a", A, "I did. Chile, the first step, I didn't even have to hold the rail. Not the second. Not the third. All the way down. Both feet. Forwards.", "Forwards", "payoff", "N", "L-N-STAIRS", "N-D3",
+  "MEDIUM-WIDE from the hall floor at the foot of the stairs: N comes down the whole flight facing forwards, hands free — ONE B-roll for the three lines (user 2026-09-29; was R-07a/b/c)",
+  "walks down the stairs, facing forwards", "one step per second, the whole flight", "stairs: camera at the bottom, subject coming down toward it, hands free", "worn", "VISIBLE", "NBP",
   "low", FR, "clean", "MEDIUM", "low = resolve", "deep", "deep", *STAIR_PM, "afternoon", "after: sun through the sidelights", True, mirror="P-01a")
-R("R-07b", A, "Not the second. Not the third.", "second", "payoff", "N feet", "L-N-STAIRS", "N-D3",
-  "CU at step height from the side: her feet come down two steps, one foot per step, strap on the right knee at top of frame",
-  "two steps down", "one step per second", "stairs: feet only, side", "worn", "VISIBLE", "NBP",
-  "ground", PR, "clean", "CU", "ground = the steps", "product", "medium", *STAIR_PM, "afternoon", "after: sun", False, mirror="P-01b")
-R("R-07c", A, "All the way down. Both feet. Forwards.", "Forwards", "payoff", "N", "L-N-STAIRS", "N-D3",
-  "MEDIUM from the side through the spindles: she steps off the last step into the hall, facing forwards",
-  "last step down onto the hall floor", "one step, about a second", "stairs: side, waist-up, camera still", "worn", "VISIBLE", "NBP",
-  "eye", PR, "through", "MEDIUM", "through the spindles = Loretta's view, watching her do it", "deep", "deep", *STAIR_PM, "afternoon", "after: sun", True)
 
 # ---------------- Act 4 — mechanism (Loretta's words)
 A = "Act 4"
