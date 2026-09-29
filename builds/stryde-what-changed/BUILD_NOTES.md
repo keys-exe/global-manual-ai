@@ -70,4 +70,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   MCU Desmond seated on his bottom stair tying his right trainer, bent bare knee nearest the lens, high three-quarter (angles.py PASS).
   v2 job f20c462e (refs R2 + P2) → To check. v1 image + v1 clip moved to the Old board, deleted from Current. HK2-a clip in
   `clips.py` still describes the anatomy swell — rewrite it (one lace tug) once v2 is confirmed. HK2-b clip still waiting on the user's check.
-- **Where it stands:** waiting on the user's check of HK2-a v2 image and HK2-b clip; then HK2-a clip, then Hook 3 images.
+- User Fixes: HK2-a "I WANT ANATOMY B ROLL HERE" → anatomy again but an ECU of the tendon as a band, high three-quarter
+  (ANAT_A_POINT_TIGHT kept), v3 job 512cb5a0. HK2-b "GIVE ME DIFFERENT BROLL HERE" → Desmond rising out of a deep squat with a heavy
+  box of old football kit in his hall, low front, v2 job fd0fae7c (refs R2 + P2). Act map rows updated, angles.py PASS. Replaced
+  versions (HK2-a v2 image; HK2-b v1 image + v1 clip) moved to the Old board, deleted from Current. Both clips in `clips.py` need
+  rewriting to the new shots once the images are confirmed (HK2-a: the band draws taut once; HK2-b: one lift out of the squat).
+- **Where it stands:** waiting on the user's check of HK2-a v3 and HK2-b v2 images; then both Hook 2 clips, then Hook 3 images.
