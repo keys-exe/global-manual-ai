@@ -164,7 +164,7 @@ if __name__ == "__main__":
     ap.add_argument("--max-wpm", type=int, default=MAX_WPM, help="pace ceiling: the inspo's measured rate, never above 210 (§22U step 9)")
     ap.add_argument("--pause-stop", type=float, default=PAUSE_STOP, help="pause kept after . ? ! (default 0.45 s; never longer than the take had)")
     ap.add_argument("--pause-comma", type=float, default=PAUSE_COMMA, help="pause kept after , ; : (default 0.20 s; never longer than the take had)")
-    ap.add_argument("--pause-word", type=float, default=PAUSE_WORD, help="pause kept inside a phrase (default 0.01 s; never longer than the take had)")
+    ap.add_argument("--pause-word", type=float, default=PAUSE_WORD, help="pause kept inside a phrase (default 0.60 s; never longer than the take had)")
     a = ap.parse_args()
     MAX_WPM, PAUSE_STOP, PAUSE_COMMA, PAUSE_WORD = a.max_wpm, a.pause_stop, a.pause_comma, a.pause_word
     if a.mode in (4, 5):
