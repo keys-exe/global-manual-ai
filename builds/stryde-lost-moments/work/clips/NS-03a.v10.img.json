@@ -1,0 +1,11 @@
+{"taskId": "b2b491a17c3b6f9396147589c719aff9", "created": true}
+{
+  "taskId": "b2b491a17c3b6f9396147589c719aff9",
+  "state": "success",
+  "credits": 10.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/gpt-image-2-5/image_1790699406752_uomo7f.png"
+  ],
+  "saved": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/act1/NS-03a_v10.png"
+}
