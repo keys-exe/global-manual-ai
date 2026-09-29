@@ -152,3 +152,14 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
 
   Checked on the HK1 render: every cut lands 0.08–0.12 s before the sentence's first word; the out-cut is on the sentence's last word, or holds through the silent pause (≤0.6 s) into the next B-roll. Finals **v8**: PASS, −14.5/−14.6/−14.5 LUFS, 48 kHz.
 - Board: v7 copied to Old Versions 2 (sha256 matched) and removed from Final; v8 on Final; Old Versions 2 docs hold v6 and v7.
+- User: "the voice change in the middle". Cause: the v5 TTS text switched mood tags mid-script ([serious]/[gentle]/[measured] … then [confident]/[honest]/[conversational]/[warm]). The clone's timbre jumped (sharpest at "The physio helps…", ~1:20 into the finals) and its pitch rose 10–15% from "The strap I keep in the van" on, in all 4 takes. Fix: **VO v6**.
+  - Text `vo/v6/steady.txt`: one [calm] tag for the whole read, every word and [pause] kept (verbatim check PASS).
+  - `work/tts_steady.py` (build-local, like tts_api.py plus `stability`): Eleven v4, stability 1.0 (Robust), speed 1.0 → take R1.
+  - Takes tried: T1/T2 (tags removed, default stability) still drifted; R2 (speed 0.96) not needed.
+  - R1 checked per 10 s: pitch 126–156 Hz (sd 7.9), and no timbre jump at the old spot. The remaining bump at "I am not paid by them…" shows in every take: it is the short lines' rhythm, not a voice change.
+  - House cut `vo_trim.py --script vo/voice.lines.txt`: 189.74 s, 206 wpm, PASS. (script.lines.txt has 691 words incl. unspoken lines; the pace gate uses voice.lines.txt, 651.)
+  - cut_points: HK1 0–14.78 · HK2 –26.79 · HK3 –38.14 · BODY –189.74 → `vo/master/*.wav` (v5 masters kept in `vo/v5/master/`).
+- Talking head v6: HeyGen `08d6be00694bee98bc8f9a38067f5210`, Avatar V, whole R1 take in one go (189.72 s), cut at the v6 ranges. Frames checked. Board: VO-T5-* (use; VO-T1-* back to review), TH-HK1..3 v7 assets, TH-BODY note.
+- Finals **v9**: variants PASS, HK1 166.38 / HK2 163.61 / HK3 162.95 s, −14.5/−14.7/−14.6 LUFS, 48 kHz. BGM v4 unchanged (body 151.6 vs 151.7 s).
+- Storage: v8 copied (sha256 matched) to the Plan store (HK1) and Old Versions 2 (HK2/HK3), then removed from Final.
+- Local disk: removed `th/v4/TH-FULL.mp4` (Kampo head), whose original is still on HeyGen (306975d4…, checked).

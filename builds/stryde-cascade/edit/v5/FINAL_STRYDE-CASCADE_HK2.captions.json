@@ -2,1062 +2,1062 @@
  "cards": [
   {
    "start": 0.0,
-   "end": 0.8,
+   "end": 0.76,
    "text": "I can tell"
   },
   {
-   "start": 0.8,
-   "end": 1.6,
+   "start": 0.76,
+   "end": 1.48,
    "text": "how long someone"
   },
   {
-   "start": 1.6,
-   "end": 2.06,
+   "start": 1.48,
+   "end": 1.96,
    "text": "has had a"
   },
   {
-   "start": 2.06,
-   "end": 2.84,
+   "start": 1.96,
+   "end": 2.64,
    "text": "bad knee by"
   },
   {
-   "start": 2.84,
-   "end": 3.64,
+   "start": 2.64,
+   "end": 3.42,
    "text": "which rail they"
   },
   {
-   "start": 3.64,
-   "end": 4.06,
+   "start": 3.42,
+   "end": 3.84,
    "text": "ask me to"
   },
   {
-   "start": 4.06,
-   "end": 4.57,
+   "start": 3.84,
+   "end": 4.35,
    "text": "fit."
   },
   {
-   "start": 4.88,
-   "end": 5.44,
+   "start": 4.62,
+   "end": 5.2,
    "text": "The first one"
   },
   {
-   "start": 5.44,
-   "end": 6.0,
+   "start": 5.2,
+   "end": 5.72,
    "text": "goes at the"
   },
   {
-   "start": 6.0,
-   "end": 6.4,
+   "start": 5.72,
+   "end": 6.12,
    "text": "top of the"
   },
   {
-   "start": 6.4,
-   "end": 7.22,
+   "start": 6.12,
+   "end": 6.71,
    "text": "stairs."
   },
   {
-   "start": 7.22,
-   "end": 7.9,
+   "start": 6.98,
+   "end": 7.64,
    "text": "The second one"
   },
   {
-   "start": 7.9,
-   "end": 8.62,
+   "start": 7.64,
+   "end": 8.38,
    "text": "goes the whole"
   },
   {
-   "start": 8.62,
-   "end": 9.39,
+   "start": 8.38,
+   "end": 9.36,
    "text": "way down."
   },
   {
-   "start": 10.24,
-   "end": 10.86,
+   "start": 9.36,
+   "end": 9.72,
    "text": "I would like"
   },
   {
-   "start": 10.86,
-   "end": 11.6,
+   "start": 9.72,
+   "end": 10.44,
    "text": "to stop being"
   },
   {
-   "start": 11.6,
-   "end": 12.3,
+   "start": 10.44,
+   "end": 11.14,
    "text": "called back for"
   },
   {
-   "start": 12.3,
-   "end": 12.917,
+   "start": 11.14,
+   "end": 12.0,
    "text": "the second one."
   },
   {
-   "start": 12.917,
-   "end": 13.537,
+   "start": 12.0,
+   "end": 12.66,
    "text": "Here is the"
   },
   {
-   "start": 13.537,
-   "end": 14.137,
+   "start": 12.66,
+   "end": 13.22,
    "text": "sequence,"
   },
   {
-   "start": 14.137,
-   "end": 14.537,
+   "start": 13.22,
+   "end": 13.66,
    "text": "and it is"
   },
   {
-   "start": 14.537,
-   "end": 15.537,
+   "start": 13.66,
+   "end": 14.62,
    "text": "almost always the"
   },
   {
-   "start": 15.537,
-   "end": 16.067,
+   "start": 14.62,
+   "end": 15.42,
    "text": "same."
   },
   {
-   "start": 16.357,
-   "end": 17.037,
+   "start": 15.42,
+   "end": 16.16,
    "text": "One knee starts"
   },
   {
-   "start": 17.037,
-   "end": 17.617,
+   "start": 16.16,
+   "end": 16.74,
    "text": "hurting on the"
   },
   {
-   "start": 17.617,
-   "end": 18.357,
+   "start": 16.74,
+   "end": 17.48,
    "text": "stairs."
   },
   {
-   "start": 18.357,
-   "end": 18.997,
+   "start": 17.48,
+   "end": 18.1,
    "text": "So you favour"
   },
   {
-   "start": 18.997,
-   "end": 19.577,
+   "start": 18.1,
+   "end": 18.7,
    "text": "it."
   },
   {
-   "start": 19.577,
-   "end": 20.137,
+   "start": 18.7,
+   "end": 19.26,
    "text": "You lead with"
   },
   {
-   "start": 20.137,
-   "end": 20.937,
+   "start": 19.26,
+   "end": 20.06,
    "text": "the good leg,"
   },
   {
-   "start": 20.937,
-   "end": 21.997,
+   "start": 20.06,
+   "end": 21.1,
    "text": "every step."
   },
   {
-   "start": 21.997,
-   "end": 22.557,
+   "start": 21.1,
+   "end": 21.64,
    "text": "The good leg"
   },
   {
-   "start": 22.557,
-   "end": 23.177,
+   "start": 21.64,
+   "end": 22.24,
    "text": "is now doing"
   },
   {
-   "start": 23.177,
-   "end": 23.657,
+   "start": 22.24,
+   "end": 22.74,
    "text": "the work of"
   },
   {
-   "start": 23.657,
-   "end": 24.437,
+   "start": 22.74,
+   "end": 23.48,
    "text": "two."
   },
   {
-   "start": 24.437,
-   "end": 24.917,
+   "start": 23.48,
+   "end": 23.98,
    "text": "Within a year"
   },
   {
-   "start": 24.917,
-   "end": 25.577,
+   "start": 23.98,
+   "end": 24.7,
    "text": "or two it"
   },
   {
-   "start": 25.577,
-   "end": 26.777,
+   "start": 24.7,
+   "end": 25.86,
    "text": "starts as well."
   },
   {
-   "start": 26.777,
-   "end": 27.437,
+   "start": 25.86,
+   "end": 26.52,
    "text": "Then a rail"
   },
   {
-   "start": 27.437,
-   "end": 28.417,
+   "start": 26.52,
+   "end": 27.42,
    "text": "at the top."
   },
   {
-   "start": 28.417,
-   "end": 29.197,
+   "start": 27.42,
+   "end": 28.24,
    "text": "Then a rail"
   },
   {
-   "start": 29.197,
-   "end": 29.737,
+   "start": 28.24,
+   "end": 28.84,
    "text": "all the way"
   },
   {
-   "start": 29.737,
-   "end": 30.457,
+   "start": 28.84,
+   "end": 29.54,
    "text": "down."
   },
   {
-   "start": 30.457,
-   "end": 31.237,
+   "start": 29.54,
+   "end": 30.22,
    "text": "Then you stop"
   },
   {
-   "start": 31.237,
-   "end": 31.837,
+   "start": 30.22,
+   "end": 30.76,
    "text": "going up in"
   },
   {
-   "start": 31.837,
-   "end": 32.797,
+   "start": 30.76,
+   "end": 31.74,
    "text": "the afternoon."
   },
   {
-   "start": 32.797,
-   "end": 33.537,
+   "start": 31.74,
+   "end": 32.52,
    "text": "Then a bed"
   },
   {
-   "start": 33.537,
-   "end": 34.317,
+   "start": 32.52,
+   "end": 33.53,
    "text": "comes downstairs."
   },
   {
-   "start": 34.317,
-   "end": 35.257,
+   "start": 33.84,
+   "end": 34.2,
    "text": "I am not"
   },
   {
-   "start": 35.257,
-   "end": 35.877,
+   "start": 34.2,
+   "end": 34.8,
    "text": "telling you that"
   },
   {
-   "start": 35.877,
-   "end": 37.077,
+   "start": 34.8,
+   "end": 35.92,
    "text": "to frighten you."
   },
   {
-   "start": 37.077,
-   "end": 37.857,
+   "start": 35.92,
+   "end": 36.7,
    "text": "Every step on"
   },
   {
-   "start": 37.857,
-   "end": 38.497,
+   "start": 36.7,
+   "end": 37.34,
    "text": "that list is"
   },
   {
-   "start": 38.497,
-   "end": 39.277,
+   "start": 37.34,
+   "end": 38.12,
    "text": "a response to"
   },
   {
-   "start": 39.277,
-   "end": 40.257,
+   "start": 38.12,
+   "end": 39.14,
    "text": "weight landing in"
   },
   {
-   "start": 40.257,
-   "end": 40.877,
+   "start": 39.14,
+   "end": 39.74,
    "text": "one place."
   },
   {
-   "start": 40.877,
-   "end": 42.257,
+   "start": 39.74,
+   "end": 41.16,
    "text": "Two centimetres below"
   },
   {
-   "start": 42.257,
-   "end": 43.137,
+   "start": 41.16,
+   "end": 42.06,
    "text": "your kneecap there"
   },
   {
-   "start": 43.137,
-   "end": 43.577,
+   "start": 42.06,
+   "end": 42.52,
    "text": "is a band"
   },
   {
-   "start": 43.577,
-   "end": 44.437,
+   "start": 42.52,
+   "end": 43.38,
    "text": "of tendon about"
   },
   {
-   "start": 44.437,
-   "end": 44.997,
+   "start": 43.38,
+   "end": 43.94,
    "text": "as wide as"
   },
   {
-   "start": 44.997,
-   "end": 45.647,
+   "start": 43.94,
+   "end": 44.8,
    "text": "your thumb."
   },
   {
-   "start": 45.957,
-   "end": 46.557,
+   "start": 44.8,
+   "end": 45.54,
    "text": "Every step you"
   },
   {
-   "start": 46.557,
-   "end": 47.517,
+   "start": 45.54,
+   "end": 46.56,
    "text": "take lands on"
   },
   {
-   "start": 47.517,
-   "end": 48.277,
+   "start": 46.56,
+   "end": 47.32,
    "text": "it."
   },
   {
-   "start": 48.277,
-   "end": 49.457,
+   "start": 47.32,
+   "end": 48.42,
    "text": "Seventeen times your"
   },
   {
-   "start": 49.457,
-   "end": 50.337,
+   "start": 48.42,
+   "end": 49.32,
    "text": "bodyweight."
   },
   {
-   "start": 50.337,
-   "end": 50.857,
+   "start": 49.32,
+   "end": 49.82,
    "text": "Put your finger"
   },
   {
-   "start": 50.857,
-   "end": 51.887,
+   "start": 49.82,
+   "end": 50.89,
    "text": "there and press."
   },
   {
-   "start": 52.217,
-   "end": 52.837,
+   "start": 51.18,
+   "end": 51.76,
    "text": "That is the"
   },
   {
-   "start": 52.837,
-   "end": 53.557,
+   "start": 51.76,
+   "end": 52.46,
    "text": "band."
   },
   {
-   "start": 53.557,
-   "end": 54.417,
+   "start": 52.46,
+   "end": 53.32,
    "text": "Coming down is"
   },
   {
-   "start": 54.417,
-   "end": 55.137,
+   "start": 53.32,
+   "end": 54.04,
    "text": "worse than going"
   },
   {
-   "start": 55.137,
-   "end": 55.817,
+   "start": 54.04,
+   "end": 54.68,
    "text": "up."
   },
   {
-   "start": 55.817,
-   "end": 56.497,
+   "start": 54.68,
+   "end": 55.38,
    "text": "Going up,"
   },
   {
-   "start": 56.497,
-   "end": 57.237,
+   "start": 55.38,
+   "end": 56.14,
    "text": "your muscles lift"
   },
   {
-   "start": 57.237,
-   "end": 57.777,
+   "start": 56.14,
+   "end": 56.72,
    "text": "you."
   },
   {
-   "start": 57.777,
-   "end": 58.877,
+   "start": 56.72,
+   "end": 57.63,
    "text": "Coming down,"
   },
   {
-   "start": 58.877,
-   "end": 59.837,
+   "start": 57.9,
+   "end": 58.84,
    "text": "nothing does."
   },
   {
-   "start": 59.837,
-   "end": 60.437,
+   "start": 58.84,
+   "end": 59.44,
    "text": "You are catching"
   },
   {
-   "start": 60.437,
-   "end": 61.017,
+   "start": 59.44,
+   "end": 60.04,
    "text": "yourself,"
   },
   {
-   "start": 61.017,
-   "end": 61.757,
+   "start": 60.04,
+   "end": 60.78,
    "text": "and the catch"
   },
   {
-   "start": 61.757,
-   "end": 62.517,
+   "start": 60.78,
+   "end": 61.64,
    "text": "lands on that"
   },
   {
-   "start": 62.517,
-   "end": 63.257,
+   "start": 61.64,
+   "end": 62.4,
    "text": "band."
   },
   {
-   "start": 63.257,
-   "end": 63.917,
+   "start": 62.4,
+   "end": 63.1,
    "text": "The pain is"
   },
   {
-   "start": 63.917,
-   "end": 64.537,
+   "start": 63.1,
+   "end": 63.74,
    "text": "not the first"
   },
   {
-   "start": 64.537,
-   "end": 65.417,
+   "start": 63.74,
+   "end": 64.64,
    "text": "thing that happened."
   },
   {
-   "start": 65.417,
-   "end": 65.997,
+   "start": 64.64,
+   "end": 65.1,
    "text": "It is the"
   },
   {
-   "start": 65.997,
-   "end": 66.677,
+   "start": 65.1,
+   "end": 65.78,
    "text": "first thing you"
   },
   {
-   "start": 66.677,
-   "end": 67.057,
+   "start": 65.78,
+   "end": 66.6,
    "text": "noticed."
   },
   {
-   "start": 67.057,
-   "end": 68.017,
+   "start": 66.6,
+   "end": 67.1,
    "text": "You have been"
   },
   {
-   "start": 68.017,
-   "end": 68.737,
+   "start": 67.1,
+   "end": 67.72,
    "text": "told it is"
   },
   {
-   "start": 68.737,
-   "end": 69.457,
+   "start": 67.72,
+   "end": 68.36,
    "text": "your age."
   },
   {
-   "start": 69.457,
-   "end": 70.437,
+   "start": 68.36,
+   "end": 69.28,
    "text": "Or your weight."
   },
   {
-   "start": 70.437,
-   "end": 71.197,
+   "start": 69.28,
+   "end": 70.08,
    "text": "Or that the"
   },
   {
-   "start": 71.197,
-   "end": 72.277,
+   "start": 70.08,
+   "end": 71.24,
    "text": "muscle is weak."
   },
   {
-   "start": 72.277,
-   "end": 73.097,
+   "start": 71.24,
+   "end": 72.1,
    "text": "Sometimes that is"
   },
   {
-   "start": 73.097,
-   "end": 73.917,
+   "start": 72.1,
+   "end": 72.9,
    "text": "part of it."
   },
   {
-   "start": 73.917,
-   "end": 74.517,
+   "start": 72.9,
+   "end": 73.5,
    "text": "It has never"
   },
   {
-   "start": 74.517,
-   "end": 75.037,
+   "start": 73.5,
+   "end": 74.04,
    "text": "been the whole"
   },
   {
-   "start": 75.037,
-   "end": 75.697,
+   "start": 74.04,
+   "end": 74.76,
    "text": "of it."
   },
   {
-   "start": 75.697,
-   "end": 76.557,
+   "start": 74.76,
+   "end": 75.86,
    "text": "The physio helps"
   },
   {
-   "start": 76.557,
-   "end": 77.477,
+   "start": 75.86,
+   "end": 76.52,
    "text": "and then stops"
   },
   {
-   "start": 77.477,
-   "end": 78.277,
+   "start": 76.52,
+   "end": 77.28,
    "text": "helping."
   },
   {
-   "start": 78.277,
-   "end": 79.057,
+   "start": 77.28,
+   "end": 78.08,
    "text": "The gel sits"
   },
   {
-   "start": 79.057,
-   "end": 80.057,
+   "start": 78.08,
+   "end": 79.06,
    "text": "on your skin."
   },
   {
-   "start": 80.057,
-   "end": 80.897,
+   "start": 79.06,
+   "end": 79.94,
    "text": "The pills switch"
   },
   {
-   "start": 80.897,
-   "end": 82.017,
+   "start": 79.94,
+   "end": 80.98,
    "text": "the alarm off."
   },
   {
-   "start": 82.017,
-   "end": 83.057,
+   "start": 80.98,
+   "end": 81.98,
    "text": "The sleeve squeezes"
   },
   {
-   "start": 83.057,
-   "end": 83.837,
+   "start": 81.98,
+   "end": 82.96,
    "text": "the whole knee"
   },
   {
-   "start": 83.837,
-   "end": 84.637,
+   "start": 82.96,
+   "end": 83.56,
    "text": "and leaves that"
   },
   {
-   "start": 84.637,
-   "end": 86.437,
+   "start": 83.56,
+   "end": 85.15,
    "text": "band carrying everything."
   },
   {
-   "start": 86.437,
-   "end": 86.817,
+   "start": 85.42,
+   "end": 85.8,
    "text": "None of them"
   },
   {
-   "start": 86.817,
-   "end": 87.777,
+   "start": 85.8,
+   "end": 86.7,
    "text": "are wrong."
   },
   {
-   "start": 87.777,
-   "end": 88.257,
+   "start": 86.7,
+   "end": 87.22,
    "text": "None of them"
   },
   {
-   "start": 88.257,
-   "end": 88.957,
+   "start": 87.22,
+   "end": 87.94,
    "text": "move the weight"
   },
   {
-   "start": 88.957,
-   "end": 89.937,
+   "start": 87.94,
+   "end": 88.92,
    "text": "off the band,"
   },
   {
-   "start": 89.937,
-   "end": 90.677,
+   "start": 88.92,
+   "end": 89.64,
    "text": "and that is"
   },
   {
-   "start": 90.677,
-   "end": 91.497,
+   "start": 89.64,
+   "end": 90.42,
    "text": "the only thing"
   },
   {
-   "start": 91.497,
-   "end": 92.197,
+   "start": 90.42,
+   "end": 91.12,
    "text": "that stops the"
   },
   {
-   "start": 92.197,
-   "end": 93.057,
+   "start": 91.12,
+   "end": 91.69,
    "text": "sequence."
   },
   {
-   "start": 93.057,
-   "end": 93.597,
+   "start": 92.02,
+   "end": 92.58,
    "text": "The strap I"
   },
   {
-   "start": 93.597,
-   "end": 94.057,
+   "start": 92.58,
+   "end": 93.02,
    "text": "keep in the"
   },
   {
-   "start": 94.057,
-   "end": 94.697,
+   "start": 93.02,
+   "end": 93.66,
    "text": "van now is"
   },
   {
-   "start": 94.697,
-   "end": 95.497,
+   "start": 93.66,
+   "end": 94.86,
    "text": "called Stryde."
   },
   {
-   "start": 95.497,
-   "end": 96.477,
+   "start": 94.86,
+   "end": 95.56,
    "text": "It sits two"
   },
   {
-   "start": 96.477,
-   "end": 97.477,
+   "start": 95.56,
+   "end": 96.66,
    "text": "centimetres below the"
   },
   {
-   "start": 97.477,
-   "end": 97.937,
+   "start": 96.66,
+   "end": 97.08,
    "text": "kneecap,"
   },
   {
-   "start": 97.937,
-   "end": 99.077,
+   "start": 97.08,
+   "end": 97.78,
    "text": "on the tendon."
   },
   {
-   "start": 99.077,
-   "end": 100.057,
+   "start": 97.78,
+   "end": 99.06,
    "text": "It never crosses"
   },
   {
-   "start": 100.057,
-   "end": 100.827,
+   "start": 99.06,
+   "end": 99.94,
    "text": "the joint."
   },
   {
-   "start": 101.117,
-   "end": 101.497,
+   "start": 99.94,
+   "end": 100.32,
    "text": "There is a"
   },
   {
-   "start": 101.497,
-   "end": 102.617,
+   "start": 100.32,
+   "end": 101.42,
    "text": "silicone pad inside"
   },
   {
-   "start": 102.617,
-   "end": 103.577,
+   "start": 101.42,
+   "end": 102.36,
    "text": "that holds pressure"
   },
   {
-   "start": 103.577,
-   "end": 104.257,
+   "start": 102.36,
+   "end": 103.02,
    "text": "on that one"
   },
   {
-   "start": 104.257,
-   "end": 105.357,
+   "start": 103.02,
+   "end": 104.08,
    "text": "band instead of"
   },
   {
-   "start": 105.357,
-   "end": 105.977,
+   "start": 104.08,
+   "end": 104.74,
    "text": "spreading it round"
   },
   {
-   "start": 105.977,
-   "end": 107.097,
+   "start": 104.74,
+   "end": 105.9,
    "text": "the whole knee."
   },
   {
-   "start": 107.097,
-   "end": 107.697,
+   "start": 105.9,
+   "end": 106.5,
    "text": "Your weight gets"
   },
   {
-   "start": 107.697,
-   "end": 108.597,
+   "start": 106.5,
+   "end": 107.48,
    "text": "caught and moved"
   },
   {
-   "start": 108.597,
-   "end": 109.337,
+   "start": 107.48,
+   "end": 108.1,
    "text": "off the worn"
   },
   {
-   "start": 109.337,
-   "end": 110.217,
+   "start": 108.1,
+   "end": 109.06,
    "text": "part before it"
   },
   {
-   "start": 110.217,
-   "end": 111.297,
+   "start": 109.06,
+   "end": 110.16,
    "text": "reaches the joint."
   },
   {
-   "start": 111.297,
-   "end": 112.177,
+   "start": 110.16,
+   "end": 111.12,
    "text": "The placement is"
   },
   {
-   "start": 112.177,
-   "end": 113.537,
+   "start": 111.12,
+   "end": 112.48,
    "text": "the whole thing."
   },
   {
-   "start": 113.537,
-   "end": 114.017,
+   "start": 112.48,
+   "end": 112.98,
    "text": "A little too"
   },
   {
-   "start": 114.017,
-   "end": 114.917,
+   "start": 112.98,
+   "end": 113.8,
    "text": "high and it"
   },
   {
-   "start": 114.917,
-   "end": 115.377,
+   "start": 113.8,
+   "end": 114.3,
    "text": "is a sleeve"
   },
   {
-   "start": 115.377,
-   "end": 115.737,
+   "start": 114.3,
+   "end": 114.68,
    "text": "again."
   },
   {
-   "start": 115.737,
-   "end": 117.197,
+   "start": 114.68,
+   "end": 116.02,
    "text": "Thirty four percent"
   },
   {
-   "start": 117.197,
-   "end": 118.247,
+   "start": 116.02,
+   "end": 117.05,
    "text": "less strain."
   },
   {
-   "start": 118.597,
-   "end": 119.207,
+   "start": 117.38,
+   "end": 118.26,
    "text": "Measured."
   },
   {
-   "start": 119.477,
-   "end": 120.277,
+   "start": 118.26,
+   "end": 119.12,
    "text": "Three years with"
   },
   {
-   "start": 120.277,
-   "end": 121.237,
+   "start": 119.12,
+   "end": 120.1,
    "text": "orthopedic surgeons."
   },
   {
-   "start": 121.237,
-   "end": 122.837,
+   "start": 120.1,
+   "end": 121.64,
    "text": "Two hundred thousand"
   },
   {
-   "start": 122.837,
-   "end": 123.977,
+   "start": 121.64,
+   "end": 122.74,
    "text": "people wearing one."
   },
   {
-   "start": 123.977,
-   "end": 124.497,
+   "start": 122.74,
+   "end": 123.36,
    "text": "I am not"
   },
   {
-   "start": 124.497,
-   "end": 125.117,
+   "start": 123.36,
+   "end": 124.04,
    "text": "paid by them."
   },
   {
-   "start": 125.117,
-   "end": 126.277,
+   "start": 124.04,
+   "end": 125.22,
    "text": "I started carrying"
   },
   {
-   "start": 126.277,
-   "end": 126.937,
+   "start": 125.22,
+   "end": 125.92,
    "text": "a couple because"
   },
   {
-   "start": 126.937,
-   "end": 127.557,
+   "start": 125.92,
+   "end": 126.5,
    "text": "I was tired"
   },
   {
-   "start": 127.557,
-   "end": 128.137,
+   "start": 126.5,
+   "end": 127.12,
    "text": "of fitting the"
   },
   {
-   "start": 128.137,
-   "end": 128.887,
+   "start": 127.12,
+   "end": 127.91,
    "text": "second rail."
   },
   {
-   "start": 129.237,
-   "end": 129.957,
+   "start": 128.26,
+   "end": 129.0,
    "text": "Three houses this"
   },
   {
-   "start": 129.957,
-   "end": 130.577,
+   "start": 129.0,
+   "end": 129.68,
    "text": "year have not"
   },
   {
-   "start": 130.577,
-   "end": 131.737,
+   "start": 129.68,
+   "end": 130.74,
    "text": "called me back."
   },
   {
-   "start": 131.737,
-   "end": 132.417,
+   "start": 130.74,
+   "end": 131.52,
    "text": "That is not"
   },
   {
-   "start": 132.417,
-   "end": 133.197,
+   "start": 131.52,
+   "end": 132.38,
    "text": "a study."
   },
   {
-   "start": 133.197,
-   "end": 133.637,
+   "start": 132.38,
+   "end": 132.8,
    "text": "It is just"
   },
   {
-   "start": 133.637,
-   "end": 133.957,
+   "start": 132.8,
+   "end": 133.18,
    "text": "what I have"
   },
   {
-   "start": 133.957,
-   "end": 134.577,
+   "start": 133.18,
+   "end": 133.78,
    "text": "seen."
   },
   {
-   "start": 134.577,
-   "end": 135.277,
+   "start": 133.78,
+   "end": 134.46,
    "text": "Not because the"
   },
   {
-   "start": 135.277,
-   "end": 136.537,
+   "start": 134.46,
+   "end": 135.64,
    "text": "arthritis is gone."
   },
   {
-   "start": 136.537,
-   "end": 137.117,
+   "start": 135.64,
+   "end": 136.2,
    "text": "It is still"
   },
   {
-   "start": 137.117,
-   "end": 137.877,
+   "start": 136.2,
+   "end": 136.84,
    "text": "there."
   },
   {
-   "start": 137.877,
-   "end": 138.557,
+   "start": 136.84,
+   "end": 137.56,
    "text": "Because the weight"
   },
   {
-   "start": 138.557,
-   "end": 139.317,
+   "start": 137.56,
+   "end": 138.4,
    "text": "is not landing"
   },
   {
-   "start": 139.317,
-   "end": 139.957,
+   "start": 138.4,
+   "end": 139.08,
    "text": "on that band"
   },
   {
-   "start": 139.957,
-   "end": 140.797,
+   "start": 139.08,
+   "end": 139.96,
    "text": "any more."
   },
   {
-   "start": 140.797,
-   "end": 141.137,
+   "start": 139.96,
+   "end": 140.3,
    "text": "You do not"
   },
   {
-   "start": 141.137,
-   "end": 141.657,
+   "start": 140.3,
+   "end": 140.82,
    "text": "have to believe"
   },
   {
-   "start": 141.657,
-   "end": 142.297,
+   "start": 140.82,
+   "end": 141.48,
    "text": "me."
   },
   {
-   "start": 142.297,
-   "end": 143.497,
+   "start": 141.48,
+   "end": 142.68,
    "text": "One knee only."
   },
   {
-   "start": 143.497,
-   "end": 143.957,
+   "start": 142.68,
+   "end": 143.14,
    "text": "Leave the other"
   },
   {
-   "start": 143.957,
-   "end": 144.617,
+   "start": 143.14,
+   "end": 143.78,
    "text": "bare."
   },
   {
-   "start": 144.617,
-   "end": 144.977,
+   "start": 143.78,
+   "end": 144.18,
    "text": "Go to your"
   },
   {
-   "start": 144.977,
-   "end": 145.777,
+   "start": 144.18,
+   "end": 145.08,
    "text": "own stairs and"
   },
   {
-   "start": 145.777,
-   "end": 147.057,
+   "start": 145.08,
+   "end": 146.3,
    "text": "come down forwards."
   },
   {
-   "start": 147.057,
-   "end": 147.577,
+   "start": 146.3,
+   "end": 146.76,
    "text": "You will know"
   },
   {
-   "start": 147.577,
-   "end": 148.637,
+   "start": 146.76,
+   "end": 147.68,
    "text": "in a minute."
   },
   {
-   "start": 148.637,
-   "end": 149.357,
+   "start": 147.68,
+   "end": 148.4,
    "text": "Two for one,"
   },
   {
-   "start": 149.357,
-   "end": 149.737,
+   "start": 148.4,
+   "end": 148.76,
    "text": "so you do"
   },
   {
-   "start": 149.737,
-   "end": 150.397,
+   "start": 148.76,
+   "end": 149.48,
    "text": "both knees,"
   },
   {
-   "start": 150.397,
-   "end": 150.897,
+   "start": 149.48,
+   "end": 149.92,
    "text": "which is the"
   },
   {
-   "start": 150.897,
-   "end": 151.157,
+   "start": 149.92,
+   "end": 150.18,
    "text": "point."
   },
   {
-   "start": 151.157,
-   "end": 152.297,
+   "start": 150.18,
+   "end": 151.42,
    "text": "Sixty days,"
   },
   {
-   "start": 152.297,
-   "end": 152.957,
+   "start": 151.42,
+   "end": 151.9,
    "text": "and you keep"
   },
   {
-   "start": 152.957,
-   "end": 153.477,
+   "start": 151.9,
+   "end": 152.8,
    "text": "the straps."
   },
   {
-   "start": 153.477,
-   "end": 154.437,
+   "start": 152.8,
+   "end": 153.46,
    "text": "From the Stryde"
   },
   {
-   "start": 154.437,
-   "end": 155.237,
+   "start": 153.46,
+   "end": 153.68,
    "text": "site."
   },
   {
-   "start": 155.237,
-   "end": 156.077,
+   "start": 153.68,
+   "end": 155.34,
    "text": "The copies stretch,"
   },
   {
-   "start": 156.077,
-   "end": 156.957,
+   "start": 155.34,
+   "end": 155.88,
    "text": "and a stretched"
   },
   {
-   "start": 156.957,
-   "end": 157.817,
+   "start": 155.88,
+   "end": 156.78,
    "text": "strap does not"
   },
   {
-   "start": 157.817,
-   "end": 158.957,
+   "start": 156.78,
+   "end": 157.88,
    "text": "hold the spot."
   },
   {
-   "start": 158.957,
-   "end": 159.197,
+   "start": 157.88,
+   "end": 158.18,
    "text": "And if you"
   },
   {
-   "start": 159.197,
-   "end": 159.957,
+   "start": 158.18,
+   "end": 158.92,
    "text": "know somebody whose"
   },
   {
-   "start": 159.957,
-   "end": 160.717,
+   "start": 158.92,
+   "end": 159.7,
    "text": "stairs have started"
   },
   {
-   "start": 160.717,
-   "end": 162.037,
+   "start": 159.7,
+   "end": 160.96,
    "text": "taking them longer,"
   },
   {
-   "start": 162.037,
-   "end": 163.057,
+   "start": 160.96,
+   "end": 161.98,
    "text": "send them this."
   },
   {
-   "start": 163.057,
-   "end": 163.477,
+   "start": 161.98,
+   "end": 162.42,
    "text": "That is the"
   },
   {
-   "start": 163.477,
-   "end": 163.877,
+   "start": 162.42,
+   "end": 162.8,
    "text": "one I would"
   },
   {
-   "start": 163.877,
-   "end": 164.797,
+   "start": 162.8,
+   "end": 163.76,
    "text": "rather you did."
   }
  ]
