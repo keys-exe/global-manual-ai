@@ -65,3 +65,4 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   VO-T1-HK1…5 To check (V3: breath at 18.79s kept; V4: breath 32.14s + long pause 28.11–28.75s; V5: last word clipped by the TTS).
   **C-HKb clip v4 not recovered** (its Kie task id was never logged) — the user downloads it from the old board.
   D-HKa image Fix (user): "MAKE IT STRUGGLING ON HIS KNEE PAIN" → v5 nano_banana_pro edit of v4 (job 93103d12-eb4e-444a-b035-84ebaf026a33).
+- 09:25 UTC: user "CONFIRM HOOK 4" — board shows D-HKa frame v5 + its existing clip (made from frame v4) and D-HKb frame v2 + clip v2 all confirmed. **Hooks 1–4 done.** Next: Hook 5 — E-HKa, E-HKb frames To check → their clips on Confirm.
