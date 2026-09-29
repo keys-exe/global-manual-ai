@@ -154,4 +154,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   BANISTER, CHANGE THE BROLL" → v2 Maureen coming down towards a low front lens gripping the oak handrail, stepping carefully (job 7286093e).
   Act map rows updated, angles.py PASS; v1s moved to Old. B04c image "CONFIRM" → clip (the landing flares the spot once; 5 s, Kie
   441653e6… 90 cr). All → To check.
-- **Where it stands:** waiting on the user's check of the B02 clip, the B03a–c clips, the B04a / B04b v2 images, the B04c clip and B01a.
+- User: B04a v2 image CONFIRM → clip (he levers himself up one step with effort; 4 s, Kie 84d457d0… 72 cr). B04b Fix "SHE'S GOING
+  DOWN THE STAIR, NOT YET AT THE LAST STEP" → v3 halfway down the flight, six or seven treads up (job 0ae147b1); v2 to Old. B04c clip Fix
+  "GOING DOWN THE STAIR" → §22X fault = motion (the leg did not visibly step down) → gen 2 names the descent (foot lowers and lands, the
+  leg travels down), same confirmed start frame, preflight PASS; Kie 55ed7ddd… 90 cr; v1 to Old. All → To check.
+- **Where it stands:** waiting on the user's check of the B02 clip, B03a–c clips, B04a clip, B04b v3 image, B04c v2 clip and B01a image.

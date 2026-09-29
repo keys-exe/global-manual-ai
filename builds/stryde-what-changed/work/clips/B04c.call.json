@@ -3,7 +3,7 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"b04c\",\"subject\":\"A premium 3D anatomical model of a knee as a dark translucent silhouette on a near-black field, seen from a high three-quarter angle, bent under a downward step, only the patellar tendon legible inside it with a tight spot glowing on it. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already under load on the first frame: the foot lands on the step below and the knee bends a little deeper to catch the weight — the spot at the patellar tendon immediately below the kneecap flares brighter as it lands, then eases back, staying one tight spot; one landing in about two seconds. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens and straightens along its length, and the whole structure compresses a few degrees. The anatomy takes the weight — it is not a still model with light played over it.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no arrows, no text, no labels, no numbers, no glow spreading down the shin, no second limb, no product, no camera orbit, no zoom, no music, no speech, no slow motion\"}",
+ "prompt": "{\"shot\":\"b04c\",\"subject\":\"A premium 3D anatomical model of a leg as a dark translucent silhouette on a near-black field, seen from a high three-quarter angle, the knee bent above a step, the foot about to land on the step below, only the patellar tendon legible inside it. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already stepping down on the first frame: the leg comes DOWN the stair — the foot lowers from the upper step and lands flat on the step below while the knee bends deeper to catch the body's weight, the whole leg visibly travelling downward within the frame; as the foot lands the spot at the patellar tendon immediately below the kneecap flares brighter, then eases back, staying one tight spot. One step down in about two seconds. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens and straightens along its length, and the whole structure compresses a few degrees. The anatomy takes the weight — it is not a still model with light played over it.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no stepping up, no leg staying still, no arrows, no text, no labels, no numbers, no glow spreading down the shin, no second limb, no product, no camera orbit, no camera following the leg, no zoom, no music, no speech, no slow motion\"}",
  "duration": 5,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
@@ -14,20 +14,21 @@
  "end_approved": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "generation": 2,
  "risks": [
   {
-   "risk": "the glow spreads down the leg",
-   "prevented_by": "'staying one tight spot', negatives on spread"
+   "risk": "the leg does not visibly step down again",
+   "prevented_by": "the descent named twice — foot lowers and lands, the leg travels down — 'no leg staying still'"
   },
   {
-   "risk": "the silhouette swims or warps",
-   "prevented_by": "HOLD-C + NEG-WARP-C, one landing only"
+   "risk": "the camera follows the leg down",
+   "prevented_by": "locked-off tripod clause, 'no camera following the leg'"
   },
   {
-   "risk": "labels or numbers appear",
-   "prevented_by": "'no text, no labels, no numbers'"
+   "risk": "the glow spreads or the silhouette warps",
+   "prevented_by": "'one tight spot', HOLD-C + NEG-WARP-C"
   }
  ],
- "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+ "approved_by": "user board Fix on B04c: GOING DOWN THE STAIR + chat FIX (2026-09-29)",
+ "fix_note": "Q4 motion: v1 flared the spot but the leg did not visibly step down → the descent named as the action (foot lowers and lands, the leg travels down within the frame), camera-follow negative; start frame kept (confirmed)"
 }
