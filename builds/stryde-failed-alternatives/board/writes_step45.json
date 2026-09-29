@@ -1,0 +1,266 @@
+{
+"plates": [
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__P0-PROP-B",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/P0-PROP-B.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__P1-G-KITCHEN",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/P1-G-KITCHEN.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__P2-D-BOWLS",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/P2-D-BOWLS.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__P3-PROP-S",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/P3-PROP-S.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__P4-S-KITCHEN",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/P4-S-KITCHEN.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__P5-CLINIC",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/P5-CLINIC.json"
+}
+],
+"beats": [
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__HK1-01",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_HK1-01.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__HK2-01",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_HK2-01.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__HK3-01",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_HK3-01.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__HK-BR",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_HK-BR.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B1-01a",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B1-01a.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__MECH-S1",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_MECH-S1.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__MECH-S2",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_MECH-S2.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B1-02a",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B1-02a.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B1-02b",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B1-02b.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__MECH-02",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_MECH-02.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__MECH-03",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_MECH-03.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B1-05a",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B1-05a.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__MECH-04",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_MECH-04.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__MECH-05",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_MECH-05.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B1-08",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B1-08.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B1-09",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B1-09.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B1-10",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B1-10.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B1-11a",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B1-11a.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__CARD-11b",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_CARD-11b.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B1-12a",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B1-12a.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B1-12b",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B1-12b.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B2-01b",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B2-01b.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B2-03",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B2-03.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B2-04",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B2-04.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B2-06",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B2-06.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B2-08",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B2-08.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B2-12a",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B2-12a.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B2-12b",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B2-12b.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__MECH-07",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_MECH-07.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B3-05",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B3-05.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B3-06",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B3-06.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B3-07",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B3-07.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B3-08",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B3-08.json"
+},
+{
+"op": "set",
+"collection": "generations",
+"doc_id": "stryde-failed-alternatives__B3-12",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/beat_B3-12.json"
+}
+],
+"docs": [
+{
+"op": "set",
+"collection": "docs",
+"doc_id": "locations",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/doc_locations.json"
+},
+{
+"op": "set",
+"collection": "docs",
+"doc_id": "actmap",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/doc_actmap.json"
+},
+{
+"op": "set",
+"collection": "docs",
+"doc_id": "wardrobe",
+"file_path": "/home/user/global-manual-ai/builds/stryde-failed-alternatives/board/doc_wardrobe.json"
+}
+]
+}

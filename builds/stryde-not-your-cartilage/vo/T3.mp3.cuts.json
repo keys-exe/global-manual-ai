@@ -1,0 +1,39 @@
+{
+ "src": "T3.mp3",
+ "duration": 71.12,
+ "cuts": [
+  3.99,
+  8.31,
+  13.41
+ ],
+ "ranges": {
+  "HK1": [
+   0.0,
+   3.99
+  ],
+  "HK2": [
+   3.99,
+   8.31
+  ],
+  "HK3": [
+   8.31,
+   13.41
+  ],
+  "BODY": [
+   13.41,
+   71.12
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "kneecap",
+   "knee cap"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ]
+ ]
+}
