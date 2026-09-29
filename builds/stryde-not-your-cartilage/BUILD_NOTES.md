@@ -32,6 +32,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   `tts_api.py` eleven_v4 speed 0.85, `vo/ALL.enhanced.fitted.txt` (HK1+HK2+HK3+BODY one request): 4 takes, 71–72s, ~156 wpm; `cut_points.py` split each (all words present); `vo_trim.py` house cut per part → 16 pieces `VO-T<n>-<PART>`, all on the board To check.
   House-cut verify: T2 PASS on all four parts → **working take T2**; T1-HK1, T3-HK1 (a breath left at the hook's tail) and T4-BODY (a breath left at 17.5s) FAIL. Variants on T2: HK1+BODY 61.95s 156 wpm · HK2+BODY 62.21s 155 · HK3+BODY 62.72s 156 (≤ 180, the reference's rate).
 
+- 2026-09-29: user "CONFIRMED PROCEED" — confirmed VO take **T4** on every part (T4-BODY keeps one breath at 17.5s, the user's choice) → VO locked (`voLocked`, voice N locked); T1–T3 moved to Old; N-G1…G3 confirmed.
+  E6 lengths on the T4 master (`edit/plan_len_HK<n>.json`, `assemble.py --lengths`, no failures) → `edit/call_lengths.json`, written as `duration` on every beat. Masters: HK1 60.86s · HK2 61.04s · HK3 61.68s. B-01a's anchor moved to the body's first word ("Built") so each hook ends where the body starts (hooks 3.5–4.4s on screen).
+  Step 6: HK1-01 image (ANAT-B, worn cartilage shown calm) — Higgsfield logged `nano_banana_flash` for `nano_banana_2` (job 11ce6cd7…) = failed generation (§5/§18A), not used; re-run on Kie `nano-banana-2` (task 14799498…, 12 credits) → on the board To check.
+
+- 2026-09-29: HK1-01 image sent to Fix ("MAKE MORE DETAILS"). Diagnosed: ANAT-B (ghost limb) is empty inside by design. Fixed at the prompt: ANAT-A full stack + named fine detail (tendons, ligaments, menisci, bone grain), still calm, no emission; model `nano_banana_pro` (mechanism class allows it, §18A) on Kie (task 16cedf8c…, 18 credits) → v2 To check; v1 on Old.
+
 ## Where it stands
-- **Waiting on the user:** check the VO takes (Confirm one take per part locks the VO; the run continues on T2) and the three voice-source takes; script flags F2, F5, F6, F7.
-- **Next:** `assemble.py --lengths` on the T2 master for every B-roll length (E6), then the hooks one by one (step 6): HK1-01, HK2-01, HK3-01 — image, then video, each approved by the user.
+- **Waiting on the user:** Confirm/Fix HK1-01's image v2 (step 6 gate; its 5s video waits on it); script flags F2, F5, F6, F7.
+- **Next:** HK1-01 video (Kling, 5s, slow orbit, `preflight.py`), then HK2-01 and HK3-01 the same way, one by one; then the body B-roll (step 7). **Nano Banana 2 beats go through Kie `nano-banana-2`** while Higgsfield keeps logging flash.

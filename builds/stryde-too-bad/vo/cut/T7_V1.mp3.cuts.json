@@ -1,0 +1,29 @@
+{
+ "src": "cut/T7_V1.mp3",
+ "duration": 56.77,
+ "cuts": [
+  3.0
+ ],
+ "ranges": {
+  "HK1": [
+   0.0,
+   3.0
+  ],
+  "BODY1": [
+   3.0,
+   56.77
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ]
+ ]
+}
