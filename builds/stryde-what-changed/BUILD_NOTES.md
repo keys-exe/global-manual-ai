@@ -105,4 +105,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - User "FIX" in reply to the go request → the user's go for the third HK3-a clip (recorded as `user_go`): brisk real-time walk,
   Kie b8350fd2… 108 cr, 16.8 MB → 2 board parts → To check; v2 moved to Old. HK3-b v3 image confirmed on the board → clip (the knee
   takes a landing once a second, the spot flares brighter each time; 8 s, preflight PASS), Kie 3125c088… 144 cr → To check.
-- **Where it stands:** waiting on the user's check of the HK3-a v3 and HK3-b clips; then step 7 body B-roll, Act 1 images (12 beats).
+- User "PROCEED": all three hooks `use` (HK1–HK3 images and clips). Step 7 body B-roll started — Act 1 images, 12 beats
+  (`work/beats.py`; `broll/<beat>_v1.png`; jobs in `broll/act1_images.json`), all nano_banana_2 2k 9:16, one render each → To check:
+  B01a ANAT-B ghost limb (the tendon band), B01b Desmond ECU stepping down, B02 Maureen's fingertip below her kneecap, B04a Desmond
+  climbing from behind, B04b Desmond stepping down through the spindles, B04c ANAT-C silhouette landing, B05 ANAT-B cutaway cartilage
+  thinning (no glow), B06 ANAT-A pip (knee upper right, lower-left clear for the host cut-out), B07 Maureen pausing at the top of the stairs,
+  B08a Maureen picking up her keys, B08b over Desmond's shoulder straightening a team photo, B08c Desmond rising off the bottom stair.
+  Anatomy helper now takes the stack (ANAT-A/B/C) and slot overrides; eye-level angle lines drop the "not eye-level" clause.
+- **Where it stands:** waiting on the user's check of the 12 Act 1 images; then their clips (E6 from the BODY cuts), then Act 2.
