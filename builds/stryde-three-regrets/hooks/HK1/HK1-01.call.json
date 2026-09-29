@@ -3,28 +3,29 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"hk1_gail_knee_rock\",\"subject\":\"THE SAME WOMAN as in the start frame, 62, big-boned, thin copper bob; exactly as in the start frame, unchanged in every respect. Grey marl T-shirt, lilac dressing gown open, navy pyjama shorts, sheepskin slippers.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"PROPPED as in the start frame: eye height, three-quarter, waist-up with both knees in frame, the drawer chest soft behind. FOCUS: the hands and the knee they hold are in sharp focus; the room behind falls to a soft, recognisable shape.\"},\"motion\":\"CONTINUING: she is already rocking forward over her right knee, both hands cupped round it. COMPLETING: one slow rock, about three seconds — her weight tips forward onto her hands, her fingers press into the skin round the kneecap, then she eases back a few centimetres. UNRESOLVED: her hands stay on the knee, her eyes stay down on it. In the room, the net curtain at the window stirs once. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, grey window light from the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no changed face, no second person, no second rock, no standing up, no extra fingers, no fused fingers, no glancing at the lens, no slow motion, no knee support, no music\"}",
+ "prompt": "{\"shot\":\"hk1_01_struggle\",\"subject\":\"THE SAME WOMAN AND BEDROOM as in the start frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"MEDIUM as in the start frame: eye height from the doorway, three-quarter, the room around her. FOCUS: her face and hands on the knee are sharp.\"},\"motion\":\"CONTINUING: she sits on the bed edge, both hands clamped round her right knee, wincing. COMPLETING: one slow painful rock forward, about two seconds — she leans over the knee, the wince tightening, then eases a little back. UNRESOLVED: she stays bent over the knee, still hurting. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, grey flat late-morning window light from the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no standing up, no letting go of the knee, no crying, no talking, no face to the lens, no furniture moving, no music\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_122843_8b974844-d47c-4234-abbf-078db2789502.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_193752_d163c373-a8fe-4578-87ab-64f020c880ea.png",
  "start_approved": true,
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "generation": 2,
+ "fix_note": "frame fault: v1 did not look like struggling, then the room drifted from P1 (user Fixes 1-2) → new start frame v3 in the P1 bedroom, wincing, confirmed by the user; motion kept to one slow painful rock",
  "risks": [
   {
-   "risk": "hands melt into the knee / extra fingers",
-   "prevented_by": "HOLD-C + one rock only + NEG-WARP-C and finger negatives"
+   "risk": "she stands up or lets go",
+   "prevented_by": "one rock, stays seated; no standing up, no letting go of the knee"
   },
   {
-   "risk": "she stands up or rocks twice",
-   "prevented_by": "motion names one rock, 3s, UNRESOLVED hands stay on knee; negatives no second rock, no standing up"
+   "risk": "the room warps or furniture moves",
+   "prevented_by": "HOLD-C; no furniture moving"
   },
   {
-   "risk": "face drifts from Gail",
-   "prevented_by": "INHERIT-SUBJ + NEG-SUBJ, start frame from the confirmed R1 sheet"
+   "risk": "hands fuse with the knee",
+   "prevented_by": "HOLD-HC"
   }
  ]
 }
