@@ -267,18 +267,21 @@ B["B01c"] = (NB2, ["R1", "P3"], photo([
     "text, no number plates, no logos on the plimsolls, no wrong number of legs"))
 
 # B02 — "That is the one." Maureen on her bottom stair, fingertip just below her kneecap.
-B["B02"] = (NB2, ["R1", "P1"], photo([
-    "A snapshot from a phone held above and a little to the side, looking down. She is sitting on the bottom stair of her hall, her right "
-    "knee bent in front of her, and she presses the tip of her right index finger into the soft spot just below her right kneecap, "
-    "finding it. Close: the frame holds her bare right knee, her hand and finger on it, the navy skirt hem and a little of the stair "
-    "carpet — her face is not in the frame.",
+B["B02"] = (NB2, ["R1", "P1"], photo([   # v2 — user Fix "POINTING HER FINGER BELOW HER KNEECAP" (v1: the finger landed on the thigh ABOVE the kneecap)
+    "A snapshot from a phone held above and in front of her knee, looking down at it. She is sitting on the bottom stair of her hall, her "
+    "right foot flat on the hall floor so her bare right knee is bent and faces the lens. The whole kneecap is clearly visible as a rounded "
+    "bony shape in the middle of the frame. Her right index finger points at and presses into the soft spot BELOW the kneecap — the "
+    "fingertip sits on the band just under the bottom edge of the kneecap, between the kneecap and the top of the shin bone, never on the "
+    "kneecap itself and never above it on the thigh. Close: the frame holds her bare knee, the fingertip below the kneecap, her hand, "
+    "the navy skirt hem at the top edge and a little of the stair carpet — her face is not in the frame.",
     R1_BODY + " Her hands: slim older hands, thin skin over the knuckles, a plain gold wedding ring. " + R1_LEGS
     + " Wearing a navy cotton A-line skirt ending just above the knee.",
     M_STAIRS,
-    angle("B02", "her finger on the spot below her kneecap"),
-    focus("her fingertip and the spot below her kneecap", deep=False).replace("the room behind", "the stairs behind"),
+    angle("B02", "her fingertip just below her kneecap"),
+    focus("her fingertip and the spot just below her kneecap", deep=False).replace("the room behind", "the stairs behind"),
     light("M-GREY-R", "her knee and hand"), colour("M-STAIRS-AM")],
-    NO_FACE + ", no product anywhere, no knee strap, no knee support, no second person, no extra fingers, no wrong number of hands"))
+    NO_FACE + ", no finger above the kneecap, no finger on the thigh, no finger on the kneecap, no product anywhere, no knee strap, "
+    "no knee support, no second person, no extra fingers, no wrong number of hands"))
 
 # B04a — "Going up the stairs, your muscles lift you." Desmond from behind and below, climbing.
 B["B04a"] = (NB2, ["R2", "P2"], photo([

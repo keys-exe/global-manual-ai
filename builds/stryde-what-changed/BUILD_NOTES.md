@@ -125,4 +125,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   joint," = ECU front of Desmond's straight bare knee, the tendon ridge under the skin (job c2453c7e); B01c "and every step you take
   lands on it." = ground level side-on, Maureen's plimsoll stepping down off the kerb (refs R1 + P3, job 656ef52d). Both → To check.
   Old B01b (Desmond stepping down the stairs) moved to the Old board, deleted from Current.
-- **Where it stands:** B01a, B01b (v2) and B01c images waiting on the user's check; clips follow each Confirm, one at a time.
+- User: B01b + B01c "CONFIRM, GO" → clips (`clips.py`, preflight PASS): B01b the knee straightens a touch, the ridge firms, 5 s
+  (3.78 s line), Kie d1ad48dd… 90 cr; B01c one step down off the kerb, 4 s (≈2.4 s line, hold ≥ 3 s), Kie 70f34a9f… 72 cr → To check.
+  B02 Fix "POINTING HER FINGER BELOW HER KNEECAP" (v1's finger sat on the thigh above the kneecap) → v2: whole kneecap visible, fingertip
+  on the band just under its bottom edge, with negatives for above/on the kneecap; job 6fd48533 → To check; v1 moved to Old.
+- **Where it stands:** waiting on the user's check of the B01b / B01c clips, the B02 v2 image and the B01a image.
