@@ -52,6 +52,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: B-08 sent to Fix ("change the product"). Diagnosed: v1 was shot in profile, which hides the shell's front shape — the model drew a generic wrap with the wordmark on the side of the leg. Fixed at the source: angle eye/profile → eye/three-quarter (act map; `angles.py` PASS all three), the shell, peaks, notch and wordmark to the phone, `product_tq_left.jpg` attached, wrap/side-wordmark negatives → v2 (Kie NBP, task d5e65c41…, 18 credits) To check; v1 on Old.
 
+- 2026-09-29: user confirmed 17 body images (all but B-08, B-12 and the three still-to-check anatomy frames MECH-S1, MECH-S2, MECH-01). Fixes: B-08 v2 ("CHANG THE PRODUCT") and B-12 v1 ("FIX THE PRODUCT") both drew a generic narrow knee band — the strap was small in frame. Fixed at the source: both reframed close with the knee large (B-08 low/three-quarter/MCU knees-to-chest; B-12 OTS CU on the knee), the worn photo attached first, a NOT-a-narrow-band clause + band negatives → B-08 v3, B-12 v2 (Kie NBP, 18 credits each) To check; replaced versions on Old. `angles.py` PASS all three. **Lesson for every worn beat: keep the knee big in frame — a strap under ~a fifth of the frame width comes back as a generic band.**
+
+- 2026-09-29: user confirmed B-08 v3, B-12 v2, MECH-S1, MECH-S2, MECH-01 — all 21 body images confirmed (CARD-13b stays a still). Step 7 videos: `body/build_videos.py` (§27G one action at a named pace, RIG-R1 on people / RIG-RVD on anatomy, rigid-product clause, HOLD-C + PHYS-MOTION-C, NEG-WARP-C; B-09a allows the strap to slide *up* only; MECH-S1/S2 share B-01's 4s) → 21 `body/<BEAT>.call.json`, `preflight.py` PASS all (B-01a, B-09a, B-14, B-08, B-12 trimmed under 2,500 chars; B-09a's SEAT-LOCK sentence dropped — it left a [SITE] slot and contradicts a slide-up shot) → Kie `kling-3.0` pro 9:16, no sound (`body/run_videos.sh`), cards set Generating.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the 22 body images; script flags F2, F5, F6, F7.
-- **Next:** each confirmed image → its video on Kie `kling-3.0` at its `edit/call_lengths.json` length (§27G one action, `preflight.py`); then `assemble.py` rough cuts and `variants.py` (HK1/2/3 + BODY), CapCut block (step 8), finals on the Final board.
+- **Rendering:** the 21 body videos on Kie `kling-3.0` → board To check.
+- **Waiting on the user:** Confirm/Fix the body videos; script flags F2, F5, F6, F7.
+- **Next:** `assemble.py` rough cuts and `variants.py` (HK1/2/3 + BODY), CapCut block (step 8), finals on the Final board.
