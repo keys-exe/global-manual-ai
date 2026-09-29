@@ -1,6 +1,6 @@
 """Finish one hook variant: burned-in captions (CAPCUT.md C1 style) + the background music, ducked under the VO.
 
-usage: finish.py VARIANT.mp4 HOOK_ID --bgm edit/v3/bgm_v1.mp3 --hook-slot 14.5 --out OUT.mp4
+usage: finish.py VARIANT.mp4 HOOK_ID --bgm edit/v4/bgm_v2.mp3 --hook-slot 16.5 --out OUT.mp4
 
 - Word timings per part (hook alone, body alone), aligned to the verbatim script lines and offset by the
   hook's length on the 24 fps grid, exactly as assemble.py times the B-roll — so captions sit on the words.
@@ -97,7 +97,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("video"); ap.add_argument("hook")
     ap.add_argument("--bgm", required=True); ap.add_argument("--hook-slot", type=float, default=14.5)
-    ap.add_argument("--music-db", type=float, default=-17.0, help="music gain before ducking")
+    ap.add_argument("--music-db", type=float, default=-29.0, help="music gain before ducking (≈15 dB under a −28 LUFS VO)")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
     out = Path(a.out); work = out.parent / f".{out.stem}_caps"; work.mkdir(parents=True, exist_ok=True)
