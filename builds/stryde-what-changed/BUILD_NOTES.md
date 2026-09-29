@@ -59,3 +59,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **Waiting on the user:** Confirm/Fix Hook 1's clips HK1-a, HK1-b (step 6 gate), then Hook 2's images. Their clips (Kie Kling 3.0 while Kling is short) follow each image's Confirm; E6 lengths from the T1 cuts.
 - Board storage: Current ≈ 0.65 GB used of 1 GB after the talking heads — B-roll clips will need the Final/Old split or a second store.
 - Open flags: F2, F3, F5, F6, F8, F9, F11 (claims).
+
+### 2026-09-29 — Hook 2 images
+- Hook 1 images and clips confirmed (board `use`). Hook 2 start images generated (`work/beats.py HK2-a HK2-b`, nano_banana_2 2k 9:16, one render each; HK2-b refs R2 sheet + P2 plate; new light `D-GREY-L`, colour `D-STAIRS-AM` 6500K). Jobs e16327a8 (HK2-a), a7ba052b (HK2-b); on the board as To check (`hooks/HK2-*_v1.png`).
+- HK2-a shows no thumb against the tendon (F2 unanswered).
+- Video connector: Kie AI `kling-3.0/video` (Kling account 3 credits) — told the user.
+- **Where it stands:** waiting on the user's check of HK2-a / HK2-b images; then Hook 2 clips (`work/clips.py`), then Hook 3.
