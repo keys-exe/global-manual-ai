@@ -1,0 +1,33 @@
+{
+ "beat": "HK1-a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"hk1_a\",\"subject\":\"A white British woman of sixty-nine, seen from the side waist-down through the white stair spindles, coming DOWN her stairs forwards: a navy A-line skirt ending just above the knee, bare knees and shins, white canvas plimsolls, her left hand on the honey oak handrail. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already mid-step on the first frame: her right foot is planted and taking her weight, the right knee bends a little further under the load as her left foot comes down onto the next stair below — one careful step in about a second and a half — then her weight settles onto it. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no second person, no face in frame, no knee strap, no knee brace, no walking stick, no going up the stairs, no turning sideways, no extra legs, no music, no speech, no slow motion\"}",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "legs or feet warp on the stair",
+   "prevented_by": "one step at a countable pace, start frame caught mid-step, HOLD-C + NEG-WARP-C"
+  },
+  {
+   "risk": "camera travels with the moving subject",
+   "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"
+  },
+  {
+   "risk": "a strap or brace appears on the bare knee (the before state)",
+   "prevented_by": "'no knee strap, no knee brace' + bare knees in subject"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' (2026-09-29)"
+}

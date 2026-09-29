@@ -51,7 +51,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Old board, their files deleted from Current. One upload part began with '<' and was refused as markup → boundary moved one byte
   (TH-ALL-LOCK parts: 14,999,999 + 7,500,001 + 7,500,000 + …; the join is byte-exact).
 
+- 16:40 user "confirm": board shows HK1-a + HK1-b images confirmed; talking heads (TH-ALL-T1, TH-HK1…3) set to `use` on that word.
+  Hook 1 clips (`work/clips.py`, §27G, locked-off tripod, `preflight.py` PASS): E6 from the trimmed HK1 variant's word timings
+  (HK1-a 0–4.28 s → 6 s; HK1-b 4.28–7.64 s → 5 s). Kling at 3 credits → Kie kling-3.0: HK1-a 7bbb2401… (108 cr), HK1-b 6b510627… (90 cr) → To check.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the talking heads (TH-ALL-T1 = the locked-VO render, TH-HK1…3) and Hook 1's images HK1-a, HK1-b. Their clips (Kie Kling 3.0 while Kling is short) follow each image's Confirm; E6 lengths from the T1 cuts.
+- **Waiting on the user:** Confirm/Fix Hook 1's clips HK1-a, HK1-b (step 6 gate), then Hook 2's images. Their clips (Kie Kling 3.0 while Kling is short) follow each image's Confirm; E6 lengths from the T1 cuts.
 - Board storage: Current ≈ 0.65 GB used of 1 GB after the talking heads — B-roll clips will need the Final/Old split or a second store.
 - Open flags: F2, F3, F5, F6, F8, F9, F11 (claims).
