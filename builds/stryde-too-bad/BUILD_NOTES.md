@@ -27,6 +27,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: N-VOICE-IMG sent to Fix ("fix this"). Diagnosed: v1 drew a second phone in her hand, a pen mug and a garbled newspaper in front of her (my prompt's "phone propped against a mug of pens"). Fixed at the prompt (bare desk, no device in frame, added negatives) → v2 (job 055e39b6…), To check; v1 moved to Old. Take calls now point at v2.
 
+- 2026-09-29: N-VOICE-IMG v2 sent to Fix ("USE MY AVATAR NARRATOR"). Diagnosed: v2 ignored the sheet (younger, brown hair) and drew a camera-app screen. Fixed: the sheet's face close-up cropped (`voice/N_face_ref.png`, Higgsfield media 4a0599ba…) attached as image 2 beside the sheet, identity restated, camera-UI negatives → v3 (job 847461ac…), To check; v2 on Old. Every job still reports nano_banana_2 though nano_banana_pro is requested.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the narrator frame N-VOICE-IMG v2 (paid video waits on it, §22X); script flags F2, F4, F5, F7, F8, F9.
+- **Waiting on the user:** Confirm/Fix the narrator frame N-VOICE-IMG v3 (paid video waits on it, §22X); script flags F2, F4, F5, F7, F8, F9.
 - **Next, no stop:** Kie Kling takes G1–G3 → `voice_source.py` (medium trim, ×1.2, gate, loop ≥30s) → `elevenlabs_clone.py` `TooBad` → `tts_api.py` eleven_v4 speed ~0.85, takes on the board → `vo_trim.py` house cut per variant. Then hooks HK1-01, HK2-01 (step 6).

@@ -15,9 +15,9 @@ AGE = "fine lines at the outer eyes and across the forehead, a deep vertical lin
 STEP1 = "\n\n".join([
  S("CAM-LOCK"),
  S("FRAME-SCALE").replace("[SCALE]", "about three quarters") + " " + S("FRAME-PROPPED"),
- "THE SAME WOMAN exactly as in the attached reference sheet — long narrow face with high flat cheekbones, hooded grey-green eyes, a slightly hooked narrow nose, a thin mouth that turns down a little at the corners, the small white scar breaking the outer end of her right eyebrow, silver-ash blunt chin-length bob with a straight fringe, tall and narrow — unchanged in face, age and build. "
+ "THE SAME WOMAN as in the two attached reference images — the face close-up (image 2) is her face exactly, and the five-panel sheet (image 1) is her body and clothes; copy that face, do not invent a new one. A white British woman of fifty-seven — long narrow face with high flat cheekbones, hooded grey-green eyes, a slightly hooked narrow nose, a thin mouth that turns down a little at the corners, the small white scar breaking the outer end of her right eyebrow, silver-ash blunt chin-length bob with a straight fringe, tall and narrow — her real age showing, unchanged in face, age, hair colour and build. "
  "In her own small study at home: a white-painted wall behind her with a crowded bookshelf and a framed map, soft and out of focus. "
- "She sits at a wooden desk, turned three-quarters towards the camera, forearms resting on the bare desk top, hands loosely together, eyes on the lens, about to speak. The picture is taken BY the phone: no phone, screen or device appears anywhere in the frame, and nothing stands on the desk between her and the lens. "
+ "She sits at a wooden desk, turned three-quarters towards the camera, forearms resting on the bare desk top, hands loosely together, eyes on the lens, about to speak. An ordinary photograph of the room: no phone, camera screen, on-screen buttons or device appears anywhere, and nothing stands on the desk between her and the lens. "
  "Wearing a charcoal-grey merino V-neck jumper over a white T-shirt, in charcoal and white.",
  S("LIGHT-SHOT").replace("[SOURCE from the light plan — the window on the room's WALL, or the named practical]", "The window on the study's west wall")
    .replace("[SUBJECT]", "her").replace("[SCREEN SIDE]", "left").replace("[TIME-OF-DAY QUALITY and the act's light state]", "soft ordinary afternoon daylight").replace("[SIDE]", "the left"),
@@ -27,7 +27,7 @@ STEP1 = "\n\n".join([
  S("HAIR-A").replace("[HAIR-SPEC]", "ash-blonde hair gone mostly silver, cut in a blunt chin-length bob with a straight fringe"),
  S("NECK-A"), S("TEETH-A"),
  S("CAP-A"), S("CAP-FILE"),
- "AVOID: " + ", ".join([S("NEG-FRAME"), S("NEG-SKIN"), S("NEG-TEX"), S("NEG-FINISH"), S("NEG-M1"), S("NEG-LIGHT"), "no phone in frame, no phone in her hand, no second phone, no screen or device, no object between her and the camera, no mug or pens in the foreground, no newspaper, no readable text"]),
+ "AVOID: " + ", ".join([S("NEG-FRAME"), S("NEG-SKIN"), S("NEG-TEX"), S("NEG-FINISH"), S("NEG-M1"), S("NEG-LIGHT"), "no phone in frame, no phone in her hand, no second phone, no screen or device, no object between her and the camera, no mug or pens in the foreground, no newspaper, no readable text, no camera app interface, no on-screen buttons or labels, no shutter button, no viewfinder overlay, no screenshot, no younger woman, no brown or dark hair, no hair tied back, no different face from the reference"]),
 ])
 assert "[" not in STEP1, STEP1[STEP1.index("["):][:80]
 
@@ -57,7 +57,7 @@ def take(tid, line, closure, stress, intent):
     }
     return json.dumps(d, ensure_ascii=False, separators=(",", ":"))
 
-pathlib.Path("N_step1_image.prompt.txt").write_text(STEP1)  # v2 (Fix "fix this": v1 drew a second phone, pen mug and newspaper in front of her)
+pathlib.Path("N_step1_image.prompt.txt").write_text(STEP1)  # v3 (Fix "USE MY AVATAR NARRATOR": v2 ignored the sheet — younger woman, brown hair — and drew a camera-app screen; face crop attached as image 2, identity restated, UI negatives) · v2 (Fix "fix this": v1 drew a second phone, pen mug and newspaper in front of her)
 print("step1", len(STEP1))
 out = {}
 for t in TAKES:
