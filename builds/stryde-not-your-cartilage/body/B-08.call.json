@@ -1,0 +1,34 @@
+{
+ "beat": "B-08",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b_08\",\"subject\":\"Hassan, a very tall thin Black British man of seventy-two in a white shirt and navy cardigan at his kitchen sink, the strap on his right knee.\",\"camera\":{\"movement\":\"Camera already drifting on the first frame, never static at entry. Continuous low-amplitude breath sway throughout, roughly one cycle per two seconds, mostly vertical with a slight roll. Focus soft for a moment at entry, then settles. One deliberate reframe in the back half as the operator notices the subject sitting off-centre — corrects part of the way, not fully. Camera lags behind the subject, never anticipates it and never moves with it. Still drifting on the final frame.\",\"framing\":\"As in the start frame.\"},\"motion\":\"One small action at an easy pace: standing on the spot, he holds the kettle under the running tap as it fills, then turns the tap off; his legs stay planted. The strap keeps its exact shape, size and wordmark in every frame and moves only with the leg or hand that carries it; its rigid shell never bends, flexes or changes proportion. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no wordmark changing, no second strap, no strap sliding up or down the leg, no strap turning into a narrow band, no stepping, no kettle changing shape, no second person appearing, no camera travelling with the subject, no zoom, no music, no speech\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://tempfile.aiquickdraw.com/workers/images/image_294b4d2ef7f6b0f7f6ed67e25a0d153a.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "the strap turning into a narrow band",
+   "prevented_by": "rigid-product clause, negatives name it"
+  },
+  {
+   "risk": "the water or his hands warping",
+   "prevented_by": "one fill at an easy pace, PHYS-MOTION-C + NEG-WARP-C"
+  },
+  {
+   "risk": "his legs moving and the strap sliding",
+   "prevented_by": "legs planted, rigid-product clause"
+  }
+ ],
+ "route": "Kie AI kling-3.0 (§5 fallback: Kling connector at 3 credits)"
+}

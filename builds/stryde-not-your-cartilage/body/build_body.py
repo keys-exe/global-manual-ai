@@ -176,15 +176,18 @@ add("B-07", "nano-banana-pro", PR(FRONT, "stryde_refs/worn_front.jpg") + [SHEET[
   light("the front-door glass behind the camera and the landing window above", "her", "right", "soft bright morning daylight, the after"),
   colour("soft bright morning daylight", 5600, "magnolia walls, the deep red stair carpet, the white handrail", "she", "yellow, green and navy", "the black strap on her knee", "natural, warm"), S("SKIN-B1")],
   NEG_WORN + ", no walking stick, no looking at the camera, " + NEG_HANDS, scale="about three quarters"))
-# v2 (Fix "change the product"): v1 in profile hid the shell and the model drew a generic wrap -> three-quarter front, shell and wordmark to the phone, tq photo attached
-add("B-08", "nano-banana-pro", PR(FRONT, "stryde_refs/product_tq_left.jpg", "stryde_refs/worn_front.jpg") + [SHEET["R3"], LOC["P4"][0]], photo([
-  "A snapshot from three-quarter front, the phone at waist height a couple of metres away: he stands at the kitchen sink filling the white kettle under the tap, his body turned a little towards the camera, "
-  "easy on both feet, the strap on his right knee with the front of its shell, its two peaks and notch and its grey wordmark facing the phone, the ordinary morning back. " +
-  HASSAN[0].upper() + HASSAN[1:] + ". He wears " + WARD["H-D2"] + ". " + WORN,
-  plate("P4", LOC["P4"][1], LOC["P4"][2]), angle("B-08", "him at the sink"), focus("the nearest eye of Hassan"),
+# v3 (Fix x2 "change/CHANG THE PRODUCT"): v1 profile and v2 full-length both kept the strap small, so the model drew a generic narrow band -> low and close, knees to chest, the shell large
+NOT_BAND = ("It is NOT a narrow patella band, NOT a thin tube strap, NOT a sports strap: the shell is a WIDE moulded panel that covers the whole front of the knee from side to side, "
+            "about as tall as the kneecap, its top edge rising into two pointed peaks either side of a notch that cups the kneecap, a chrome slide at each end, exactly like the attached worn photo.")
+NEG_BAND = "no narrow knee band, no thin tube strap, no patella strap band, no strap narrower than the kneecap, no plain black band with a logo, no fabric knee wrap, no sleeve, no generic brace, no wordmark on the side of the leg"
+add("B-08", "nano-banana-pro", PR("stryde_refs/worn_front.jpg", FRONT, "stryde_refs/product_tq_left.jpg") + [SHEET["R3"], LOC["P4"][0]], photo([
+  "A close snapshot from a phone held low, at his knee height, a little in front of him and to one side: he stands at the kitchen sink filling the white kettle, framed from his knees up to his chest, "
+  "the kettle and his hands at the tap at the top of the frame, his bare right knee large in the lower half of the frame with the strap on it, the front of its shell, its two peaks and notch "
+  "and its grey wordmark facing the phone. " + HASSAN[0].upper() + HASSAN[1:] + ". He wears " + WARD["H-D2"] + ". " + WORN + " " + NOT_BAND,
+  plate("P4", LOC["P4"][1], LOC["P4"][2]), angle("B-08", "him at the sink"), focus("the strap on his knee and its wordmark"),
   light("the window over the sink on the kitchen's far wall", "him", "left", "bright morning sun along the worktop"),
-  colour("bright morning sun", 5600, "cream units, the dark speckled worktop, white tiles", "he", "maroon and charcoal", "the white kettle", "natural, warm"), S("SKIN-B1")],
-  NEG_WORN + ", no fabric knee wrap, no sleeve, no generic brace, no strap seen only from the side, no wordmark on the side of the leg, no looking at the camera, no water splashing everywhere, " + NEG_HANDS))
+  colour("bright morning sun", 5600, "cream units, the dark speckled worktop, white tiles", "he", "maroon and charcoal", "the white kettle", "natural, warm")],
+  NEG_WORN + ", " + NEG_BAND + ", no looking at the camera, no water splashing everywhere, " + NEG_HANDS, scale="about half"))
 add("B-09a", "nano-banana-pro", PR(FRONT, BACK) + [SHEET["R4"], LOC["P5"][0]], photo([
   "A close snapshot from the side at knee height: she sits on the edge of her bed, her right leg straight out, the olive trouser rolled above the knee. The strap is closed and sits at mid-shin, well below the knee, "
   "and both her hands are flat on the two sides of the shell, about to slide it up. " + ELAINE[0].upper() + ELAINE[1:] + " — only her hands, forearms and leg in frame, her striped sleeves at the wrists. " +
@@ -222,13 +225,15 @@ add("B-11b", "nano-banana-2", [SHEET["R4"]], photo([
   light("open sky over the market, the sun behind the camera's right", "her", "right", "bright late-morning daylight"),
   colour("bright daylight", 5600, "the green-and-white awning, crates of fruit", "she", "navy stripes, olive and yellow", "the red apples", "natural, lively"), S("SKIN-B1")],
   "no strap visible, no knee visible, no brace, no readable signs, no prices, no shop names, no looking at the camera, " + NEG_HANDS))
-add("B-12", "nano-banana-pro", PR(FRONT, "stryde_refs/worn_front.jpg") + [SHEET["R2"], LOC["P6"][0]], photo([
-  "A snapshot over the surgeon's shoulder: Derek sits on the edge of the blue examination couch, the strap on his right knee; " + SG01 + " crouches in front of him and taps the top edge of the shell with two fingers, "
-  "nodding. The surgeon's shoulder and the back of his head are soft in the near foreground at the right; Derek looks down at him, pleased. " + DEREK[0].upper() + DEREK[1:] + ". He wears " + WARD["D-D3"] + ". " + WORN,
-  plate("P6", LOC["P6"][1]), angle("B-12", "the surgeon, towards Derek", ", looking past the surgeon's shoulder, soft in the near foreground"), focus("the strap on his knee"),
+# v2 (Fix "FIX THE PRODUCT"): v1 medium shot kept the strap small -> generic narrow band; now tight on the knee, the shell large
+add("B-12", "nano-banana-pro", PR("stryde_refs/worn_front.jpg", FRONT, "stryde_refs/product_tq_left.jpg") + [SHEET["R2"], LOC["P6"][0]], photo([
+  "A close snapshot over the surgeon's shoulder, tight on the knee: Derek sits on the edge of the blue examination couch and his bare right knee fills the middle of the frame with the strap on it, "
+  "the front of its shell, its two peaks and notch and its grey wordmark facing the phone; " + SG01 + " crouches in front of him, the side of his head and his shoulder soft in the near foreground at the left, "
+  "and his two fingers tap the top edge of the shell. Derek's face is at the top of the frame, looking down, pleased. " + DEREK[0].upper() + DEREK[1:] + ". He wears " + WARD["D-D3"] + ". " + WORN + " " + NOT_BAND,
+  plate("P6", LOC["P6"][1]), angle("B-12", "the surgeon, towards Derek's knee", ", looking past the surgeon's shoulder, soft in the near foreground"), focus("the strap on his knee and its wordmark"),
   light("the window on the consulting room's left-hand wall", "Derek", "left", "overcast morning daylight"),
-  colour("overcast morning daylight", 6500, "pale grey-blue walls, the blue couch", "he", "blue-and-white stripes and stone", "the black strap", "cool, true to life"), S("SKIN-B1")],
-  NEG_WORN + ", no white coat, no stethoscope, no text, " + NEG_HANDS))
+  colour("overcast morning daylight", 6500, "pale grey-blue walls, the blue couch", "he", "blue-and-white stripes and stone", "the black strap", "cool, true to life")],
+  NEG_WORN + ", " + NEG_BAND + ", no white coat, no stethoscope, no text, no chest X-ray, " + NEG_HANDS, scale="about half"))
 add("B-13a", "nano-banana-pro", PR(FRONT, "stryde_refs/package_open.jpg") + [LOC["P1"][0]], photo([
   "A snapshot from directly above the glass-topped coffee table in Folake's lounge: the open box lies on the glass, " + P.PACKAGE_LOCK + " A hand — a Black woman's hand, slim, dark brown skin, "
   "short unpainted nails, a wax-print cuff at the wrist — settles the lid on the table beside it.",
