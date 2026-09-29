@@ -91,5 +91,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - User "CONFIRM GO": HK2-b clip `use`, HK3-a / HK3-b images confirmed. Hook 3 clips (`clips.py`, preflight PASS): HK3-a three walking
   steps towards the ground-level lens, 6 s (0–4.14 s), Kie 2d1677aa… 108 cr — 15.18 MB, split into 2 board parts (join byte-exact);
   HK3-b six stacking pulses on the one spot, 8 s (4.14–10.28 s; anatomy, not a human-motion beat), Kie b4e5fdd4… 144 cr → To check.
-- **Where it stands:** all three hooks built; waiting on the user's check of the Hook 3 clips. Next: step 7 body B-roll, Act 1 images
-  (12 beats: B01a, B01b, B02, B04a–c, B05, B06 pip, B07, B08a–c).
+- User Fixes on Hook 3: HK3-a clip "FIX BROLL, WALKING/ STEPPING FAST" → §22X fault = motion pace (three steps at ~1/s) → two slow
+  steps of ~2 s each, pace named, fast-walk negatives; same confirmed start frame; gen 2 preflight PASS (fix_note); Kie 023bd1e6…
+  108 cr, 21.9 MB → 2 board parts → To check. HK3-b image "GIVE ME BETTER DIFFERENT BROLL" → re-planned (act map, angles.py PASS):
+  from above and behind on Maureen's stairs, her plimsoll landing on the one worn pale patch at the centre of a tread, every tread
+  worn the same — forty years of steps (refs R1 + P1), job 1206e3e7 → To check. Replaced versions (HK3-a v1 clip; HK3-b v1 image + clip)
+  moved to the Old board, deleted from Current.
+- **Where it stands:** waiting on the user's check of the HK3-a v2 clip and the HK3-b v2 image; then the HK3-b clip (one step down onto
+  the worn spot), then step 7 body B-roll, Act 1 images (12 beats).

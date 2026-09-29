@@ -84,10 +84,10 @@ BB("HK3-a", HOOK[3], "Five thousand steps a day. Forty years.", "Five", "hook �
    "one step per second, normal walking speed", STILL, "walking toward camera: feet/knee only, 3 steps", "no", "absent", "—", "NB2",
    GROUND, FRO, "clean", "CU", "ground = steps", "deep", "deep", L(STREET_AM, "L"), False, ledger="VN01", eg="EG03 · captions '5,000 a day' '40 years'")
 BB("HK3-b", HOOK[3], "That is about seventy million times your full bodyweight has gone through one spot below your kneecap.", "seventy", "hook — the arithmetic (VN01, F4)",
-   "ANAT", "—", "—", "ANAT-A: the whole leg from hip to foot, the one small spot below the kneecap glowing warmer as the pulses stack up", "the spot warms with each pulse",
-   "one pulse a second", STILL, "none", "no", "absent", "—", "NB2",
-   HIGH, THR, "clean", "MS", "high, whole leg = one small spot on a long load path", "deep", "deep", L(ANAT, "R"), False, ledger="VN01 · F4",
-   eg="EG05 · '70,000,000' overlay (post)", notes="whole leg (MS), not HK2-a's ECU band or HK1-b's knee profile — three anatomy looks, no repeats")
+   "R1", "L-M-STAIRS", "M-D1", "high, looking down the flight past her shins: Maureen's plimsoll landing on a stair tread worn pale in one spot at its centre, every tread below worn the same", "one step down onto the worn spot",
+   "one step, about a second and a half", STILL, "stairs: from above and behind, knee-down, camera still", "no", "absent", "—", "NB2",
+   HIGH, TQB, "clean", "MEDIUM", "high = forty years of wear, looked down on", "foreground", "medium", L(M_GREY, "L"), False, ledger="VN01 · F4",
+   eg="EG03 · '70,000,000' overlay (post)", notes="user Fix 2026-09-29 'GIVE ME BETTER DIFFERENT BROLL' (was a whole-leg anatomy render) — the one worn spot on every tread = the one spot below the kneecap")
 TH("HK3-TH", HOOK[3], "Here is what happens when that spot stops being able to take it.")
 
 # ============================================================ ACT 1 — why it happens (shared body)
