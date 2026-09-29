@@ -665,6 +665,11 @@ button.ing .im{cursor:zoom-in}
 .ing .dot{position:absolute;right:5px;top:5px;width:8px;height:8px;border-radius:50%;background:var(--st,#8a92a1);box-shadow:0 0 0 1.5px var(--surface);z-index:1}
 .ing .in{position:absolute;left:4px;top:4px;z-index:1;min-width:16px;height:16px;padding:0 4px;border-radius:5px;background:rgba(0,0,0,.62);color:#fff;font-family:var(--mono);font-size:9.5px;display:grid;place-items:center}
 .ing-row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin}
+.ing .aud{display:grid;justify-items:center;gap:4px;color:var(--accent)}
+.ing .aud .ico{width:22px;height:22px}
+.ing .aud small{font-size:9.5px;color:var(--muted)}
+.ing .inote{font-size:11px;line-height:1.35;color:var(--ink);background:var(--sunk);border-radius:6px;padding:4px 6px}
+.v-ing .ing .inote{background:#161a22;color:#c9ced8}
 .v-panel .ing-row .ing{width:56px}
 .v-panel .ing .im{border-color:#2c323e;background:#161a22}
 .v-panel .ing .il{color:#c9ced8}
@@ -1064,7 +1069,7 @@ function renderInner(){
     if(s.key==="vo") body=all.length?`<div class="arows">${voRows(gens)}</div>`:body;
     // a scene: its images first, then its clips
     if(s.scene&&vis.length){const im=vis.filter(g=>!flow(g).includes("video")), cl=vis.filter(g=>flow(g).includes("video"));
-      body=`<div style="display:grid;gap:18px">`+[["Images",im,"The scene's master, frames and inserts"],["Clips",cl,"Each clip with the images it was made from"]].filter(x=>x[1].length).map(([h,l,n],i)=>`<div class="msec"><div class="msec-h"><h3>${i+1} · ${h}</h3><span class="note">${n}</span></div><div class="tiles">${l.map(tile).join("")}</div></div>`).join("")+`</div>`+(aud.length?`<div class="arows">${aud.map(audioRow).join("")}</div>`:"")}
+      body=`<div style="display:grid;gap:18px">`+[["Images",im,"Info cards and plates made for this scene"],["Clips",cl,"Each clip with the images it was made from"]].filter(x=>x[1].length).map(([h,l,n],i)=>`<div class="msec"><div class="msec-h"><h3>${i+1} · ${h}</h3><span class="note">${n}</span></div><div class="tiles">${l.map(tile).join("")}</div></div>`).join("")+`</div>`+(aud.length?`<div class="arows">${aud.map(audioRow).join("")}</div>`:"")}
     if(s.key==="talking"&&!voLocked(b,gens)) body=`<p class="note" style="margin:0 0 10px">Talking heads start after the VO is locked.</p>`+body;
     return `<section class="widget${s.wide?" wide":""}" id="w-${s.key}">
       <div class="w-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
@@ -1284,14 +1289,18 @@ function flow(g){
   return ["file"];
 }
 // Seedance (ingredients mode): several reference images feed one video — shown as the ingredients, then the video, never one start image.
-// ingredients: [{label, role, ref}] — ref = the generation doc (id or beat) whose image is used; or {label, role, asset, parts, type} for a file with no card of its own.
+// ingredients are information, never frames: [{label, role, kind, note, ref}] — kind = character · voice · location · product · info,
+// note = an info card's one fact, ref = the generation doc (id or beat) used (its image, or a voice card's clip); or {label, role, kind, note, asset, parts, type} for a file with no card of its own.
 // a Seedance card that already has its own start image (older builds) keeps the image → video flow
 function isSeed(g){return Array.isArray(g.ingredients)&&g.ingredients.length>0||/seedance/i.test(String(g.model||""))&&!g.imageAsset&&!g.imagePrompt}
 function ingOf(g,field){
   return (Array.isArray(g[field||"ingredients"])?g[field||"ingredients"]:[]).map((x,i)=>{
     const r=x.ref?state.gens.find(y=>y.id===x.ref||(y.build===g.build&&y.beat===x.ref)):null;
-    return r?{i,label:x.label||r.title||r.beat,role:x.role||r.beat||"",ref:r,asset:r.imageAsset,parts:r.imageParts,type:r.imageType,st:pending(r,"image")?"gen":stepState(r,"image")}
-      :{i,label:x.label||"Ingredient "+(i+1),role:x.role||"",ref:null,asset:x.asset,parts:x.parts,type:x.type,st:x.asset?"ok":"todo"};
+    if(r){const aud=isAudio(r)||!flow(r).includes("image"), k=aud?"file":"image";
+      const kind=x.kind||(aud?"voice":{cast:"character",locations:"location"}[r.stage]||"info");
+      return {i,label:x.label||r.title||r.beat,role:x.role||r.beat||"",kind,note:x.note||(kind==="info"?r.line||"":""),ref:r,rk:k,audio:aud,asset:aud?r.videoAsset:r.imageAsset,parts:aud?r.videoParts:r.imageParts,type:aud?r.videoType:r.imageType,st:pending(r,k)?"gen":stepState(r,k)}}
+    const aud=/^audio\//.test(x.type||"");
+    return {i,label:x.label||"Ingredient "+(i+1),role:x.role||"",kind:x.kind||(aud?"voice":""),note:x.note||"",ref:null,audio:aud,asset:x.asset,parts:x.parts,type:x.type,st:x.asset?"ok":"todo"};
   });
 }
 // the reference images a step was made from: an image's imageRefs, a Seedance video's (or audio's) ingredients
@@ -1300,16 +1309,17 @@ function ingReady(g){const l=ingOf(g);return l.length>0&&l.every(x=>x.st==="ok")
 // a video unlocks when its image is confirmed — a Seedance video when every ingredient is
 function videoLocked(g){return isSeed(g)?!ingReady(g):stepState(g,"image")!=="ok"}
 // the picture that stands for a beat: its image, or a Seedance beat's first ingredient
-function coverOf(g){if(g.imageAsset) return {asset:g.imageAsset,parts:g.imageParts,type:g.imageType};const x=isSeed(g)&&ingOf(g).find(y=>y.asset);return x?{asset:x.asset,parts:x.parts,type:x.type}:null}
+function coverOf(g){if(g.imageAsset) return {asset:g.imageAsset,parts:g.imageParts,type:g.imageType};const x=isSeed(g)&&ingOf(g).find(y=>y.asset&&!y.audio);return x?{asset:x.asset,parts:x.parts,type:x.type}:null}
+const ING_KIND={character:"Character",voice:"Voice",location:"Location",product:"Product",info:"Info"};
 function ingColor(st){return st==="ok"?"var(--use)":st==="bad"||st==="gen"?"var(--regen)":st==="review"?"var(--review)":"#8a92a1"}
 function ingTile(g,x,where,k){
   const inV=where==="viewer"||where==="vrow", compact=where==="row"||where==="vrow";
   const cls=x.st==="ok"?"ok":x.st==="bad"||x.st==="gen"?"bad":x.st==="review"?"now":"";
-  const im=x.ref&&pending(x.ref,"image")?genPanel(x.ref,"image",true):x.asset?`<img ${srcFrom(x.asset,x.parts,x.type)} alt="${esc(x.label)}" loading="lazy">`:`<span>${x.ref?"No image yet":"Missing"}</span>`;
-  const act=x.ref?`data-viewm="${esc(x.ref.id)}" data-step="image"`:x.asset?`data-ving="${inV?x.i:esc(g.id)+":"+x.i+":"+(k||"video")}"`:"";
+  const im=x.ref&&pending(x.ref,x.rk)?genPanel(x.ref,x.rk,true):x.audio&&x.asset?`<span class="aud">${ICONS.audio}<small>Voice clip</small></span>`:x.asset?`<img ${srcFrom(x.asset,x.parts,x.type)} alt="${esc(x.label)}" loading="lazy">`:`<span>${x.ref?"Not made yet":"Missing"}</span>`;
+  const act=x.ref?`data-viewm="${esc(x.ref.id)}" data-step="${x.rk}"`:x.asset?`data-ving="${inV?x.i:esc(g.id)+":"+x.i+":"+(k||"video")}"`:"";
   const tag=act?"button":"div";
   const tip=x.st==="ok"?"Confirmed":x.st==="review"?"Check it":x.st==="bad"?"Fixing":x.st==="gen"?"Generating":"Waiting";
-  return `<${tag} ${tag==="button"?'type="button" ':""}class="ing ${cls}" ${act} title="${esc(x.label+(x.role?" · "+x.role:"")+" · "+tip)}"><span class="dot" style="--st:${ingColor(x.st)}"></span><span class="in">${x.i+1}</span><span class="im">${im}</span><span class="il">${esc(x.label)}</span>${compact?"":`<span class="ir">${esc(x.role||tip)}</span>`}</${tag}>`;
+  return `<${tag} ${tag==="button"?'type="button" ':""}class="ing ${cls}" ${act} title="${esc([ING_KIND[x.kind],x.label,x.role,x.note,tip].filter(Boolean).join(" · "))}"><span class="dot" style="--st:${ingColor(x.st)}"></span><span class="in">${x.i+1}</span><span class="im">${im}</span><span class="il">${esc(x.label)}</span>${compact?"":`<span class="ir">${esc([ING_KIND[x.kind],x.role||tip].filter(Boolean).join(" · "))}</span>${x.note?`<span class="inote">${esc(x.note)}</span>`:""}`}</${tag}>`;
 }
 // A step being generated or regenerated shows the generating panel, never its old render (Current and Final boards).
 function pending(g,k){return BOARD_ROLE!=="old"&&["bad","gen"].includes(stepState(g,k))}
@@ -1439,11 +1449,11 @@ function ingBox(grp,all){
       <div class="kv"><span class="lbl">${esc(grp.label)} · step 1 · Seedance</span><h3>Ingredients</h3></div>
       <div class="box-stats">
         <div class="kv"><span class="lbl">Ready</span><span class="mono" style="color:var(--use)">${ok}/${items.length}</span></div>
-        <div class="kv"><span class="lbl">Images</span><span class="mono">${n}</span></div></div>
+        <div class="kv"><span class="lbl">Ingredients</span><span class="mono">${n}</span></div></div>
       <span class="grow"></span>
       <button class="btn small primary" type="button" data-zip="${grp.key}" data-step="ingredients" ${n?"":"disabled"}>${I.dl} Download all ingredients</button>
     </div>
-    <p class="note box-note">Seedance makes each video from several reference images — they show here, then the video.</p>
+    <p class="note box-note">Seedance makes each video from its ingredients — characters, voice, location, product and info cards, never frames — they show here, then the video.</p>
     <div class="bar" style="margin:0 14px"><i style="width:${items.length?ok/items.length*100:0}%;background:var(--use)"></i></div>
     ${list.length?`<div class="cards">${list.map(card).join("")}</div>`:`<div class="empty" style="margin:14px">All ingredients here are confirmed.</div>`}
   </div>`;
@@ -1504,7 +1514,7 @@ function mediaCard(g,k){
 }
 
 function extFor(type,k){
-  const m={"image/png":"png","image/jpeg":"jpg","image/webp":"webp","image/gif":"gif","video/mp4":"mp4","video/webm":"webm","video/quicktime":"mp4","application/pdf":"pdf","text/plain":"txt","application/json":"json","text/markdown":"md"};
+  const m={"image/png":"png","image/jpeg":"jpg","image/webp":"webp","image/gif":"gif","video/mp4":"mp4","video/webm":"webm","video/quicktime":"mp4","application/pdf":"pdf","audio/mpeg":"mp3","audio/mp4":"m4a","audio/wav":"wav","text/plain":"txt","application/json":"json","text/markdown":"md"};
   return m[type]||(k==="image"?"png":"mp4");
 }
 function fileName(g,k){const b=currentBuild();return `${b?b.id:"build"}_${g.beat||g.id}_${k}.${extFor(g[STEP[k].type],k)}`}
@@ -1580,8 +1590,8 @@ async function downloadIng(groupKey){
   for(const g of gens){
     md+=`## ${g.beat} · ${g.title||""}\n`+(g.line?`> ${g.line}\n\n`:"\n");
     for(const x of ingOf(g)){
-      const name=`${g.beat||g.id}/${String(x.i+1).padStart(2,"0")}_${String(x.label).replace(/[^\w.-]+/g,"-")}.${extFor(x.type,"image")}`;
-      md+=`- ${x.label}${x.role?" · "+x.role:""}${x.ref?" (from "+x.ref.beat+")":""}\n`;
+      const name=`${g.beat||g.id}/${String(x.i+1).padStart(2,"0")}_${String(x.label).replace(/[^\w.-]+/g,"-")}.${extFor(x.type,x.audio?"file":"image")}`;
+      md+=`- ${ING_KIND[x.kind]?ING_KIND[x.kind]+": ":""}${x.label}${x.role?" · "+x.role:""}${x.note?" — "+x.note:""}${x.ref?" (from "+x.ref.beat+")":""}\n`;
       if(x.asset){try{zip.file(name,await fetchIng(x))}catch(e){md+=`  (file could not be fetched)\n`}}
     }
     md+="\n";
@@ -1712,7 +1722,7 @@ function renderViewer(){
   // Seedance: the Ingredients tab shows every reference image the video is made from
   const ings=refsOf(g,k), ingV=ings.length>0&&v.ing!=null, one=ingV&&v.ing!=="all"?ings[Number(v.ing)]:null;
   const isAud=type.startsWith("audio/");
-  const media=ingV?(one&&one.asset?`<div class="v-ing1"><img ${srcFrom(one.asset,one.parts,one.type)} alt="${esc(one.label)}"><button class="btn small" type="button" ${seed?`data-ving="all"`:`data-vstep="${k}"`}>${I.l} ${seed?"All ingredients":"Back to the "+d.label.toLowerCase()} · ${esc(one.label)}</button></div>`:
+  const media=ingV?(one&&one.asset?`<div class="v-ing1">${one.audio?`<div class="v-audio"><span class="lbl">${esc(one.label)}</span><audio ${srcFrom(one.asset,one.parts,one.type)} controls></audio></div>`:`<img ${srcFrom(one.asset,one.parts,one.type)} alt="${esc(one.label)}">`}<button class="btn small" type="button" ${seed?`data-ving="all"`:`data-vstep="${k}"`}>${I.l} ${seed?"All ingredients":"Back to the "+d.label.toLowerCase()} · ${esc(one.label)}</button></div>`:
       ings.length?`<div class="v-ing">${ings.map(x=>ingTile(g,x,"viewer")).join("")}</div>`:`<div class="v-empty">No ingredients listed yet</div>`):
     pending(g,k)&&!older?genPanel(g,k):asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
     moved?`<div class="v-empty"><div style="display:grid;gap:12px;justify-items:center">${I.box}<span>v${shown.v} is on the Old versions board, kept at full quality. Nothing was shrunk or deleted.</span>${archiveLink(shown)?`<a class="btn" href="${esc(archiveLink(shown))}" target="_blank" rel="noopener">Open in Old versions ↗</a>`:""}</div></div>`:
