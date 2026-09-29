@@ -372,20 +372,22 @@ B["B06"] = (NB2, [], anat(
 
 # B06-BR2 — user "The load does not thin with it — BROLL HERE". Desmond on the pavement, knee-height side-on: one heavy step, his
 # whole weight landing on the knee. Faceless; plain trainers.
+# v2 — user Fix 'FOCUS ON KNEE' (v1: both legs, shorts to trainers, the knee small): a close-up on the landing right knee.
 B["B06-BR2"] = (NB2, ["R2", "P3"], photo([
-    "A snapshot from a phone held low at knee height on the pavement, side-on. He is walking along the pavement from the left of the frame "
-    "to the right at an ordinary pace, caught at the moment his right heel strikes the paving slab: the right leg out in front, the heel "
-    "just down and the knee bending a little as it takes his whole weight, the thigh muscle firming above it; the left foot pushing off "
-    "behind at the toe. The frame holds his legs from the shorts hem down to the trainers, big in frame, with the grey paving slabs under "
-    "them — nothing above the shorts hem.",
-    R2_BODY + " Wearing " + WARD["D-D1"].split("over a white T-shirt, ")[1] + ", plain, no logos.",
+    "A close-up snapshot from a phone held at knee height on the pavement, side-on, close in. He is walking along the pavement from the "
+    "left of the frame to the right, caught as his right foot lands and takes his whole weight: THE RIGHT KNEE FILLS THE MIDDLE OF THE "
+    "FRAME, bending a little under the load, the kneecap and the band of tendon below it standing out under the skin, the lower thigh "
+    "muscle firm above it and the top of the shin below. The frame holds only the knee, from just below the shorts hem to the middle of "
+    "the shin — no feet, no trainers, no other leg in focus; the other leg is only a soft dark shape behind. The street behind is a soft "
+    "grey blur of paving and hedge.",
+    R2_BODY + " Wearing dark grey jogging shorts ending just above the knee.",
     STREET,
-    angle("B06-BR2", "his legs mid-stride"),
-    focus("his landing right knee", deep=False).replace("the room behind", "the street behind"),
-    light("STREET-AM-L", "his legs and the pavement"),
-    colour("STREET-AM").replace("navy skirt and white plimsolls", "dark grey jogging shorts and white trainers with navy trim")],
+    angle("B06-BR2", "his right knee"),
+    focus("his right knee and the tendon below the kneecap", deep=False).replace("the room behind", "the street behind"),
+    light("STREET-AM-L", "his knee"),
+    colour("STREET-AM").replace("navy skirt and white plimsolls", "dark grey jogging shorts")],
     NO_FACE + ", no torso, no hands, no product anywhere, no knee strap, no knee support, no walking stick, no limp, no second person, "
-    "no dog, no number plates, no readable signs, " + PLAIN_SHOES + ", no wrong number of legs"))
+    "no dog, no number plates, no readable signs, no feet in frame, no shoes in frame, no wrong number of legs"))
 
 # B08-BR — first sentence of B08-TH: "Nothing about the way you walk changed, so you assume nothing changed." (user Fix: B-roll here).
 # Maureen from behind, walking down her hall towards the front door, ordinary and unhurried.

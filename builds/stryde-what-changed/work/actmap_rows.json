@@ -2648,7 +2648,7 @@
   "subject": "R2",
   "location": "L-STREET",
   "story_day": "D-D1",
-  "framing": "CU knee-height, side-on on the pavement: Desmond mid-stride, his right heel striking the paving slab, the knee taking his whole weight as it lands, the thigh firming",
+  "framing": "ECU knee-height, side-on on the pavement: Desmond's right knee fills the frame as his foot lands, the knee bending under his whole weight, the tendon standing out below the kneecap",
   "action": "one heavy step lands",
   "pace": "one step, about a second, ordinary walking pace",
   "camera": "locked off",
@@ -2661,14 +2661,14 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "user 2026-09-29 'The load does not thin with it — BROLL HERE'",
+  "notes": "user 2026-09-29 'The load does not thin with it — BROLL HERE'; v2 Fix 'FOCUS ON KNEE'",
   "duration": "pending-master",
   "angle": {
    "height": "low",
    "side": "profile",
    "fg": "clean",
-   "scale": "CU",
-   "why": "low profile = the full weight landing on the knee"
+   "scale": "ECU",
+   "why": "low profile, close = the full weight landing on the knee"
   },
   "focus": {
    "plane": "foreground",

@@ -283,15 +283,18 @@ B["B01a"] = clip("B01a",
            {"risk": "a second spot appears", "prevented_by": "'no second glowing spot'"}])
 
 # B07-BRa image v1 (user CONFIRM GO): ANAT-B front-on, the cartilage cushion worn thin. "The cushion gets thinner." ≈ 1.4 s → 3 s.
+# Video v2 — user Fix 'THINNER' (v1: the cushion flattened only a little, a red dot appeared): the cushion now wears to a sliver,
+# bones almost touching; 4 s so the change reads.
 B["B07-BRa"] = clip("B07-BRa",
     "A premium 3D anatomical model of a single knee seen straight from the front on a near-black field, a faint glass-like body shell, "
     "ivory bones: the end of the thigh bone above, the top of the shin bone below, the kneecap in front, and between the bones a thin, "
     "pearly, worn cartilage cushion.",
-    "The model stays still. Over the clip the pale cushion between the bones slowly wears a little thinner — its edges fray and it "
-    "shrinks in height — and the two bone ends settle a fraction closer together. One slow, steady change, no glow.",
-    "no bones moving apart, no model rotating, no glow, no emission, no cracking, no breaking, no second limb, no arrows, no text, "
-    "no labels, no product, no camera orbit, no zoom, no slow motion",
-    1.4, hi=5, anat=True,
+    "The model stays still. Over the clip the pale cushion between the bones wears away CLEARLY and steadily: it shrinks to less than "
+    "half its height, its edges fray and flake away, until only a thin, patchy sliver is left and the two bone ends sit almost touching "
+    "— an obvious, unmistakable thinning from the first frame to the last. One steady change, no glow.",
+    "no bones moving apart, no cushion growing back, no model rotating, no glow, no emission, no red spot, no blood, no cracking, "
+    "no breaking, no second limb, no arrows, no text, no labels, no product, no camera orbit, no zoom, no slow motion",
+    2.2, hi=5, anat=True,
     risks=[{"risk": "the model rotates or the bones warp", "prevented_by": "'the model stays still', locked-off camera, HOLD-C + NEG-WARP-C, 'no model rotating'"},
            {"risk": "a glow appears on a condition beat", "prevented_by": "'no glow, no emission' in motion and negatives"},
            {"risk": "the cushion shatters instead of thinning", "prevented_by": "one slow steady change, 'no cracking, no breaking'"}])
@@ -315,7 +318,23 @@ B["B07-BRb"] = clip("B07-BRb",
            {"risk": "her face comes into frame", "prevented_by": "cropped below the chin, 'no face in frame', locked-off camera"},
            {"risk": "the basket or towels fall", "prevented_by": "'no dropping the basket, no towels falling'"}])
 
-START = {"B07-BRa": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_220935_8b097287-2a0e-4aa7-8dde-2b2d9ea7f463.png",
+# B07 image v2 (user CONFIRM): kitchen, morning, Maureen stopped at the table, hand on her knee, puzzled. "That is why it feels like it
+# arrived overnight." ≈ 2.2 s → 4 s.
+B["B07"] = clip("B07",
+    "A white British woman of sixty-nine with short white hair in her kitchen in the morning, a dusty-pink cardigan over a navy-and-white "
+    "striped top, standing at the pale-oak table with tea and toast, one hand on the table edge, the other on her right knee, looking down "
+    "at it with a small puzzled frown.",
+    "Already still on the first frame: she rubs her right knee slowly once with her hand and presses it, looking down at it, then lifts "
+    "her eyes a little, puzzled, as if it was fine yesterday — small and quiet, about three seconds, real time.",
+    "no wincing, no crying, no grimace, no sitting down, no walking away, no looking at the camera, no second person, no knee strap, "
+    "no extra hands, no extra fingers",
+    2.2, hi=6,
+    risks=[{"risk": "her face drifts off the sheet as she moves", "prevented_by": "small movement only, eyes lift a little, 4 s cap, HOLD-C"},
+           {"risk": "hands warp on the knee", "prevented_by": "one slow rub and press, 'no extra hands, no extra fingers', NEG-WARP-C"},
+           {"risk": "the frown becomes pain", "prevented_by": "'puzzled… as if it was fine yesterday', 'no wincing, no grimace'"}])
+
+START = {"B07": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_225901_b28d6f1c-bceb-447c-9792-c9ed9f38a4a6.png",
+         "B07-BRa": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_220935_8b097287-2a0e-4aa7-8dde-2b2d9ea7f463.png",
          "B07-BRb": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_220935_39e2cddd-d187-4527-85ab-16bd1b581a42.png",
          "B01a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_185450_3c452d7b-23e8-414a-bcad-4435a876272c.png",
          "HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
