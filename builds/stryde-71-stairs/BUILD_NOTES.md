@@ -168,6 +168,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   task 40365bb4, 693 credits) → To check; her line 9.28–10.62 s → **VOICE-C2-HKA v2** (9.00–11.00 s). v1 video + voice on Old.
   A third Hook A generation needs the user's go (§22X).
 
+- 2026-09-29 ~13:35 UTC: user "thats an OA be realistic here no one would believe that" → chose "Tone down the daughter only", then
+  "the daughter reaction looks like staged". Source: v2 prompt had her stop, look up past the lens with a frozen shocked face and a
+  whisper-gasp. Now (both hooks): she is in frame from the start two steps behind, keeps moving, never looks at the camera, says the line
+  to her mother with a small natural reaction; negatives against posing/overacting. **HK-A-SD v3** (3rd generation on the user's go,
+  preflight PASS, task 71da4e8d, 693 credits) → To check; her line 8.10–10.56 s → **VOICE-C2-HKA v3** (7.85–10.95 s). v2 on Old.
+
 ## Where it stands
 - **Voice stage done** (2026-09-29): VO T2 locked (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`), TH-01…16 (Avatar V render of T2) confirmed.
 - **Step 6 — hooks (Seedance, V7.68 ingredients):** waiting on the user's Confirm of the 4 outfit info cards. Then: Seedance Hook A on Kie
