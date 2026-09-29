@@ -1,0 +1,33 @@
+{
+ "beat": "A-07",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\": \"a_07\", \"subject\": \"Medium shot from behind: Gloria in a coral blouse and navy linen skirt walking away down her tiled hall toward a bright kitchen doorway. Exactly as in the start frame.\", \"camera\": {\"movement\": \"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\", \"framing\": \"PROPPED as in the start frame.\"}, \"motion\": \"Already walking on the first frame: three easy steps away from the lens down the hall, one step per second, arms swinging loosely, shoulders straight; the camera stays where it is and she gets a little smaller. Mass and momentum: the hips lead, the arms swing after. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else.\", \"lighting\": \"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\", \"style\": \"As in the start frame.\", \"negatives\": \"no morphing, no warping, no melting, no merging, no splitting, no duplicate objects, no background bending, no texture swimming, no camera travelling with the subject, no slow motion, no music, no speech, no cut, no second shot, no extra fingers, no fused fingers, no turning round, no stick, no hand on the wall, no running, no knee strap appearing, no brace, no walking stick\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1790700070625-xv79q16n5ep.png",
+ "start_approved": true,
+ "approved_by": "user: 'I'VE CONFIRM PROCEED' (2026-09-29) on the Act 2 images",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "walking",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "camera follows her",
+   "prevented_by": "propped camera, 'the camera stays where it is'"
+  },
+  {
+   "risk": "she turns round",
+   "prevented_by": "negatives"
+  },
+  {
+   "risk": "legs tangle",
+   "prevented_by": "three steps at a named pace"
+  }
+ ]
+}
