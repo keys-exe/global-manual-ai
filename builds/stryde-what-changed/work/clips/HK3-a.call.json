@@ -30,5 +30,6 @@
   }
  ],
  "approved_by": "user board Fix on HK3-a: FASTER WALKING, NOT SLOW MO + chat FIX (2026-09-29) — the user go for a third generation",
- "fix_note": "Q4 motion: v1 was read as too slow a brief — the user wanted a FAST walk; v2 slowed it further and read as slow motion → brisk real-time walk named at about two steps a second, five or six steps, slow-motion and slow-walk negatives; start frame kept (confirmed)"
+ "fix_note": "Q4 motion: v1 was read as too slow a brief — the user wanted a FAST walk; v2 slowed it further and read as slow motion → brisk real-time walk named at about two steps a second, five or six steps, slow-motion and slow-walk negatives; start frame kept (confirmed)",
+ "user_go": "user chat reply \"FIX\" (2026-09-29) to the request for a go on the third HK3-a clip"
 }
