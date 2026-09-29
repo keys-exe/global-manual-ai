@@ -129,4 +129,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   (3.78 s line), Kie d1ad48dd… 90 cr; B01c one step down off the kerb, 4 s (≈2.4 s line, hold ≥ 3 s), Kie 70f34a9f… 72 cr → To check.
   B02 Fix "POINTING HER FINGER BELOW HER KNEECAP" (v1's finger sat on the thigh above the kneecap) → v2: whole kneecap visible, fingertip
   on the band just under its bottom edge, with negatives for above/on the kneecap; job 6fd48533 → To check; v1 moved to Old.
-- **Where it stands:** waiting on the user's check of the B01b / B01c clips, the B02 v2 image and the B01a image.
+- B01c clip Fix "WALKING SINCE THE SCRIPT LINE IS 'EVERY STEP'" → §22X fault = motion (one step down, no walking) → she steps down
+  and keeps walking out of frame, three or four real-time steps at ~2/s; same confirmed start frame; gen 2 preflight PASS; Kie 977ed02f…
+  72 cr → To check; v1 clip moved to Old.
+- **Where it stands:** waiting on the user's check of the B01b clip, the B01c v2 clip, the B02 v2 image and the B01a image.

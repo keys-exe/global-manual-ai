@@ -125,17 +125,18 @@ B["B01b"] = clip("B01b",
     risks=[{"risk": "the knee warps or the skin swims", "prevented_by": "one small straighten, HOLD-C + NEG-WARP-C, locked-off camera"},
            {"risk": "a hand or a strap appears on the knee", "prevented_by": "'no hands, no knee strap, no knee brace'"},
            {"risk": "the camera drifts along the leg", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"}])
-B["B01c"] = clip("B01c",
+B["B01c"] = clip("B01c",   # v2 — user Fix "WALKING SINCE THE SCRIPT LINE IS 'EVERY STEP'" (v1 was one step down off the kerb)
     "An older white woman's feet and shins seen side-on from a camera at ground level at the kerb: plain white canvas plimsolls, bare "
     "pale shins, a navy skirt hem, the grey kerb stone and the road.",
-    "Already at the landing on the first frame: her right plimsoll settles flat on the tarmac and the right knee bends a little as it takes "
-    "her weight, then her left foot comes down off the kerb beside it — one step down at an ordinary pace, about a second.",
-    "no face in frame, no torso, no second person, no cars moving, no knee strap, no walking stick, no running, no slow motion, "
-    "no logos, no number plates, no extra legs",
+    "Already at the landing on the first frame: her right plimsoll settles on the tarmac and she keeps walking straight on across the "
+    "frame at an ordinary everyday pace in real time — three or four steps, about two a second, each foot landing flat and the knee "
+    "bending a little as it takes her weight — and she walks on out of the side of the frame.",
+    "no stopping, no standing still, no slow motion, no slow walking, no running, no face in frame, no torso, no second person, "
+    "no cars moving, no knee strap, no walking stick, no logos, no number plates, no extra legs",
     2.4, hi=4,
-    risks=[{"risk": "feet or shins warp stepping down", "prevented_by": "one step at a countable pace, start frame caught at the landing, HOLD-C + NEG-WARP-C"},
-           {"risk": "camera travels with her feet", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"},
-           {"risk": "the step reads as slow motion", "prevented_by": "'an ordinary pace', 'no slow motion'"}])
+    risks=[{"risk": "feet or shins warp mid-walk", "prevented_by": "an ordinary pace named, start frame caught at a landing, HOLD-C + NEG-WARP-C"},
+           {"risk": "camera travels with her feet", "prevented_by": "locked-off tripod clause, she walks out of frame, 'no camera travelling with the subject'"},
+           {"risk": "the walk reads as slow motion or stops", "prevented_by": "'in real time', about two steps a second, 'no stopping, no slow motion'"}])
 
 START = {"HK1-a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140551_661eba13-ffd8-4a6f-8b1c-2bfca7beddcc.png",
          "HK1-b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_140550_bca03c1b-07b2-4580-8709-6f3a74007ee7.png",
