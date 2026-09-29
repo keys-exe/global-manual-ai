@@ -191,14 +191,15 @@ B["B04c"] = clip("B04c",   # image v2 (user Fix "WALKING DOWN THE STAIR"): the s
     "A premium 3D anatomical figure from the waist down as dark translucent silhouettes on a near-black field, seen from a high "
     "three-quarter angle, walking down a short flight of faintly edge-lit steps, the leading foot landing on the step below, a tight "
     "spot glowing on the patellar tendon below the leading knee.",
-    "Already mid-stride on the first frame: the figure keeps walking DOWN the steps at an ordinary pace — the leading foot lands and the "
-    "knee bends to catch the weight while the spot at [SITE] flares brighter, then the trailing leg swings down past it to the next step "
-    "and that knee takes the landing in turn, its spot flaring as it lands — two steps down in real time, the figure travelling down the "
-    "stairs within the frame, the glow always one tight spot.",
-    "no stepping up, no standing still, no arrows, no text, no labels, no numbers, no glow spreading down the shin, no extra legs, "
-    "no product, no camera orbit, no camera following the figure, no zoom, no slow motion",
+    "Already mid-stride on the first frame: the figure walks DOWN the stairs at an ordinary pace, in real time — the leading foot lands on "
+    "the step below and that knee bends to catch the body's weight, the one spot on its patellar tendon flaring brighter as it lands and "
+    "easing back, the figure travelling down within the frame. ONLY THE LEADING KNEE GLOWS: the other leg and its knee stay dark "
+    "silhouette the whole time, never lit.",
+    "no glow on the other knee, no second glowing spot, no both knees lit, no stepping up, no standing still, no arrows, no text, "
+    "no labels, no numbers, no glow spreading down the shin, no extra legs, no product, no camera orbit, no camera following the figure, "
+    "no zoom, no slow motion",
     3.5, hi=5, anat=True,
-    risks=[{"risk": "the figure stops or steps up", "prevented_by": "two steps down named in order, 'no stepping up, no standing still'"},
+    risks=[{"risk": "both knees light up again", "prevented_by": "'ONLY THE LEADING KNEE GLOWS', the other knee named dark, 'no glow on the other knee, no both knees lit'"},
            {"risk": "legs warp or multiply mid-stride", "prevented_by": "start frame caught mid-stride, HOLD-C + NEG-WARP-C, 'no extra legs'"},
            {"risk": "the camera follows the figure down", "prevented_by": "locked-off tripod clause, 'no camera following the figure'"}])
 # B04a v2 image (user confirmed): Desmond struggling up. "Going up the stairs, your muscles lift you." ≈ 2.2 s → 4 s.

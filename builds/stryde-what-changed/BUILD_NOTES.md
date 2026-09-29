@@ -167,4 +167,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - User: B04b v4 + B04c v2 images CONFIRM → clips (preflight PASS): B04b two careful steps down, 6 s, Kie 6cb6e900… 108 cr; B04c the
   silhouette figure walks two steps down the visible stairs, the spot flaring at each landing, 5 s (new shot from image v2), Kie aefb1da6…
   90 cr. Both → To check.
-- **Where it stands:** waiting on the user's check of the B02, B03a–c, B04a, B04b, B04c clips and the B06 v2 and B01a images.
+- User Fixes: B04c clip "BOTH KNEE ARE LIGHTING" → §22X fault = anatomy (both knees glowed as each foot landed) → gen 2 of the image-v2
+  shot: only the leading knee glows, the other named dark throughout; preflight PASS; Kie 702f6b72… 90 cr; v3 clip to Old. B06 image
+  'PUT SOME ARROW POINTING THE patellar tendon, PUT SOME MOVEMENT, MORE DETAILED' → v3: one clean glowing arrow, no text, pointing at the
+  tendon (the user's call overrides the no-arrow house default for this beat), the leg caught mid-step under load, higher anatomical
+  detail, pip layout kept; job 47c5dbd5; v2 to Old. Both → To check.
+- **Where it stands:** waiting on the user's check of the B02, B03a–c, B04a, B04b, B04c v4 clips and the B06 v3 and B01a images.
