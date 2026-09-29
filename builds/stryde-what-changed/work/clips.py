@@ -333,7 +333,24 @@ B["B07"] = clip("B07",
            {"risk": "hands warp on the knee", "prevented_by": "one slow rub and press, 'no extra hands, no extra fingers', NEG-WARP-C"},
            {"risk": "the frown becomes pain", "prevented_by": "'puzzled… as if it was fine yesterday', 'no wincing, no grimace'"}])
 
-START = {"B07": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_225901_b28d6f1c-bceb-447c-9792-c9ed9f38a4a6.png",
+# B08-BR image v1 (user Confirm on the board): Maureen from behind, walking down her hall to the front door.
+# "Nothing about the way you walk changed, so you assume nothing changed." ≈ 3.6 s → 5 s.
+B["B08-BR"] = clip("B08-BR",
+    "A white British woman of sixty-nine with short white hair, seen from behind, walking away down her pale duck-egg blue hall towards "
+    "the white front door: a dusty-pink cardigan, a navy skirt ending above the knee, bare legs, white canvas plimsolls; the half-moon "
+    "hall table with a vase of dried lavender on the left, the white spindles and oak handrail of the stairs on the right.",
+    "Already mid-stride on the first frame: she walks on down the hall away from the lens at an ordinary, unhurried pace — about four "
+    "easy, even steps, one step a second, real time — getting a little smaller in the frame, arms swinging naturally. She does not turn "
+    "round.",
+    "no turning round, no looking back, no face, no limp, no stopping, no reaching the door, no opening the door, no second person, "
+    "no walking stick, no knee strap, no extra legs",
+    3.6, hi=6,
+    risks=[{"risk": "legs warp or swap mid-stride", "prevented_by": "even steps at one a second, start frame mid-stride, HOLD-C + NEG-WARP-C"},
+           {"risk": "she turns and her face appears", "prevented_by": "'She does not turn round', 'no turning round, no looking back, no face'"},
+           {"risk": "camera follows her down the hall", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"}])
+
+START = {"B08-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_225901_8a563cef-0c03-48f0-94fa-92dd33e9b572.png",
+         "B07": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_225901_b28d6f1c-bceb-447c-9792-c9ed9f38a4a6.png",
          "B07-BRa": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_220935_8b097287-2a0e-4aa7-8dde-2b2d9ea7f463.png",
          "B07-BRb": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_220935_39e2cddd-d187-4527-85ab-16bd1b581a42.png",
          "B01a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_185450_3c452d7b-23e8-414a-bcad-4435a876272c.png",
