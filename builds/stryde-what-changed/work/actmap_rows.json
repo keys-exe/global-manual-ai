@@ -2601,11 +2601,11 @@
   "subject": "extras",
   "location": "L-STREET",
   "story_day": "M-D1",
-  "framing": "side-on, waist-down: three older passers-by walk past along the pavement one after another",
-  "action": "they walk through the frame",
-  "pace": "an ordinary walking pace",
+  "framing": "MEDIUM on the pavement at a bus stop: three people of different ages, each with a knee problem — a man in his seventies on the shelter bench rubbing his knee, a woman in her forties leaning on the shelter post easing her knee, a young man in his twenties in running gear walking past with a slight limp, a hand on his thigh",
+  "action": "the walker limps through, the man on the bench rubs his knee",
+  "pace": "an ordinary, slightly slow pace",
   "camera": "locked off",
-  "staging": "street: side-on, waist-down, camera still, nobody faces the lens",
+  "staging": "street: three-quarter on to the bus stop, camera still, nobody looks at the lens",
   "pin_end": "no",
   "max": 6,
   "product": "absent",
@@ -2614,14 +2614,14 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "covers B06-TH",
+  "notes": "user 2026-09-29 'It happens to everybody. (2 OR 3 PEOPLE HAVING PROBLEM IN THEIR KNEE) BROLL HERE' + 'NOT SAME AGE'; one-off extras, no sheets (§19B)",
   "duration": "pending-master",
   "angle": {
    "height": "eye",
-   "side": "profile",
+   "side": "three-quarter",
    "fg": "clean",
    "scale": "MEDIUM",
-   "why": "side-on = everyone passing, no one singled out"
+   "why": "three-quarter = several people, one ordinary street, the same trouble"
   },
   "focus": {
    "plane": "deep",
@@ -2636,7 +2636,7 @@
    "arc": "problem: grey",
    "kelvin": 6500
   },
-  "face": false
+  "face": true
  },
  {
   "beat": "B07-BR",

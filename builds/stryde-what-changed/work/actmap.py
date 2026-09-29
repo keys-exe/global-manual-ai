@@ -298,9 +298,10 @@ BB("B03c", A1, "since you were a teenager.", "teenager", "since you were a teena
    OVER, FRO, "clean", "CU", "overhead = the album laid open, looked back on", "hands", "medium", L(KITCH, "L"), False, ledger="F2",
    notes="was B03-BR (the album) — now the third part of the B03 line")
 BB("B06-BR", A1, "That part is ordinary. It happens to everybody. But here is what nobody explains. The load does not thin with it.", "everybody", "it happens to everybody",
-   "extras", "L-STREET", "M-D1", "side-on, waist-down: three older passers-by walk past along the pavement one after another", "they walk through the frame",
-   "an ordinary walking pace", STILL, "street: side-on, waist-down, camera still, nobody faces the lens", "no", "absent", "—", "NB2",
-   EYE, PRO, "clean", "MEDIUM", "side-on = everyone passing, no one singled out", "deep", "deep", L(STREET_AM, "L"), False, notes="covers B06-TH")
+   "extras", "L-STREET", "M-D1", "MEDIUM on the pavement at a bus stop: three people of different ages, each with a knee problem — a man in his seventies on the shelter bench rubbing his knee, a woman in her forties leaning on the shelter post easing her knee, a young man in his twenties in running gear walking past with a slight limp, a hand on his thigh", "the walker limps through, the man on the bench rubs his knee",
+   "an ordinary, slightly slow pace", STILL, "street: three-quarter on to the bus stop, camera still, nobody looks at the lens", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "MEDIUM", "three-quarter = several people, one ordinary street, the same trouble", "deep", "deep", L(STREET_AM, "L"), True,
+   notes="user 2026-09-29 'It happens to everybody. (2 OR 3 PEOPLE HAVING PROBLEM IN THEIR KNEE) BROLL HERE' + 'NOT SAME AGE'; one-off extras, no sheets (§19B)")
 BB("B07-BR", A1, "The cushion gets thinner. The weight stays exactly the same.", "thinner", "the cushion wears, the load does not",
    "R1", "L-M-STAIRS", "M-D1", "overhead on the hall floor by the front door: an old white plimsoll, its heel worn thin and flat; her bare foot slides into it", "her foot slides into the worn shoe",
    "one slide in, about two seconds", STILL, "hall floor, feet only, camera still", "no", "absent", "—", "NB2",

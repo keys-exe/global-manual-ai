@@ -449,10 +449,10 @@
   "type": "BR",
   "subject": "extras",
   "height": "eye",
-  "side": "profile",
+  "side": "three-quarter",
   "scale": "MEDIUM",
   "fg": "clean",
-  "why": "side-on = everyone passing, no one singled out",
+  "why": "three-quarter = several people, one ordinary street, the same trouble",
   "mirror_of": null,
   "mode": 1,
   "product_beat": false,
@@ -463,7 +463,7 @@
    "moving_subject": false
   },
   "story_day": "M-D1",
-  "face": false,
+  "face": true,
   "light": {
    "source": "open overcast sky, morning",
    "key_side": "L",

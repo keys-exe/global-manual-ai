@@ -173,3 +173,5 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   tendon (the user's call overrides the no-arrow house default for this beat), the leg caught mid-step under load, higher anatomical
   detail, pip layout kept; job 47c5dbd5; v2 to Old. Both → To check.
 - **Where it stands:** waiting on the user's check of the B02, B03a–c, B04a, B04b, B04c v4 clips and the B06 v3 and B01a images.
+
+- 2026-09-29 — B06-BR ("It happens to everybody."): user asked for 2–3 people with knee trouble, then "NOT SAME AGE". Act map row rewritten (three people, a man in his seventies on the bus-stop bench rubbing his knee, a woman in her forties at the shelter post easing her knee, a man of about 25 in running kit limping past); angles PASS. Image v1 (nano_banana_2, ref P3) on the Current board as To check.

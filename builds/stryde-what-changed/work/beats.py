@@ -458,6 +458,25 @@ B["B03b"] = (NB2, ["R1", "P4"], photo([
     "no looking at the camera, no wincing, no pain face, no product anywhere, no knee strap, no second person, no brand name on the pot, "
     "no readable text, no logos, no extra hands"))
 
+# B06-BR — "It happens to everybody." (user: "2 OR 3 PEOPLE HAVING PROBLEM IN THEIR KNEE", "NOT SAME AGE") — three one-off extras of
+# different ages at a bus stop, each with knee trouble.
+B["B06-BR"] = (NB2, ["P3"], photo([
+    "A snapshot from a phone at eye height on the pavement, three-quarter on to a bus stop on the same residential street. Three people of "
+    "clearly DIFFERENT AGES, each with trouble in a knee, none of them looking at the lens: on the shelter bench, a white-haired white "
+    "British man in his mid-seventies in a grey anorak sits forward rubbing his right knee with both hands; beside the shelter, a Black "
+    "British woman in her mid-forties in a camel coat with a work bag on her shoulder leans one hand on the shelter post and eases her "
+    "weight off her left knee, lifting that foot slightly; and in the foreground, a young South Asian British man of about twenty-five in "
+    "running tights, shorts and a light running jacket walks past with a slight limp, one hand pressed on his thigh above the knee. "
+    "Ordinary, unposed, a grey weekday morning. Medium shot, all three in frame, the pavement and the bus shelter around them.",
+    STREET + " A plain bus shelter with a bench and a post, no adverts, no signs, no timetable text.",
+    angle("B06-BR", "the three people at the bus stop"),
+    focus("everything", deep=True),
+    light("STREET-AM-L", "the three people and the bus stop"),
+    colour("STREET-AM").replace("navy skirt and white plimsolls", "a grey anorak, a camel coat and dark running kit")],
+    "no three people of the same age, no looking at the camera, no one in obvious agony, no crying, no walking sticks, no wheelchairs, "
+    "no knee straps, no knee supports, no product anywhere, no adverts, no readable signs, no timetable, no bus, no number plates, "
+    "no logos, no brand marks on the running kit, no more than three people, no children"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
