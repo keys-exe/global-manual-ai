@@ -162,7 +162,7 @@ Every worn beat shows a bare right knee (shorts, a skirt above the knee, or trou
 
 | Day | Subject | BASE | MID / OUTER | LOWER | FOOT | ACCENT | Colour family | Beats |
 |---|---|---|---|---|---|---|---|---|
-| F-D1 | R1 Folake (problem) | black long-sleeved jersey top | long burnt-orange knitted cardigan | charcoal jersey trousers | maroon slippers | a patterned headwrap in orange and black | orange / black | HK2-01, B-03c |
+| F-D1 | R1 Folake (problem) | black long-sleeved jersey top | long burnt-orange knitted cardigan | charcoal jersey trousers | maroon slippers | — (no headwrap: her braids are part of her identity) | orange / black | HK2-01, B-03c |
 | F-D2 | R1 Folake (after) | yellow-and-green wax-print short-sleeved blouse | — | navy cotton skirt ending just above the knee | tan leather flat sandals | — | yellow / green / navy | B-07, B-13a (hands) |
 | D-D1 | R2 Derek (problem) | checked flannel shirt | olive waxed jacket, zipped | dark jeans | brown walking boots | a tweed flat cap | olive / brown | B-03a |
 | D-D2 | R2 Derek (after) | grey T-shirt | navy fleece, open | khaki walking shorts above the knee | black trail shoes, grey socks | — | navy / khaki | B-01a, B-04, B-14 |

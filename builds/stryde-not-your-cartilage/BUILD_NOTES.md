@@ -40,6 +40,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: user "CONFIRMED PROCEED" — HK1-01 image v2 confirmed. HK1-01 video: `hooks/HK1-01.call.json` (RIG-RVD small lateral drift, the joint stays calm, 1,926 chars) preflight PASS → Kie `kling-3.0` 5s (task 0bc64313…, 90 credits) → on the board To check.
 
+- 2026-09-29: user "CONFIRMED PROCEED" — HK1-01 video confirmed (hook 1 done). HK2-01 image (`hooks/build_hk2.py`: Folake in her armchair, a bad-knee morning, no strap; R1 sheet + P1 lounge attached) on Kie `nano-banana-2` (task 75717998…, 12 credits) → To check. F-D1 wardrobe: headwrap dropped (it would hide her braids, part of her identity).
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the HK1-01 video (hook 1 gate); script flags F2, F5, F6, F7.
-- **Next:** HK2-01 (Folake in her armchair, a bad-knee morning; image on Kie `nano-banana-2` with the R1 sheet + P1 lounge plate), then HK3-01 (the consultant's finger on the X-ray, P6), one by one; then the body B-roll (step 7). Kling connector at 3 credits → videos on Kie `kling-3.0`; NB2 images on Kie while Higgsfield logs flash.
+- **Waiting on the user:** Confirm/Fix the HK2-01 image; script flags F2, F5, F6, F7.
+- **Next:** HK2-01 video (5s, one rub of the knee, a glance out of the window), then HK3-01 (image → video), then the body B-roll (step 7). Videos on Kie `kling-3.0`; NB2 images on Kie while Higgsfield logs flash.
