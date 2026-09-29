@@ -1,0 +1,19 @@
+{
+ "th": "th/TH-HK2.trim.mp4",
+ "out": "hooks/plan/HK2.rough.v4.mp4",
+ "segments": [
+  {
+   "kind": "TH",
+   "start": 0,
+   "end": 5.28
+  },
+  {
+   "kind": "BR",
+   "beat": "HK2-02a",
+   "start": 5.28,
+   "end": 8.64,
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK2-02a.v2.mp4",
+   "in": 0.4
+  }
+ ]
+}

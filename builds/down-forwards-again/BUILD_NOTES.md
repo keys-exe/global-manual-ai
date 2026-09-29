@@ -135,6 +135,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   ADJUST in `hooks/plan/assemble_local.py`): --lead 0 (cut on the next line's first word) and a longer hold (DFA_HOLD: HK1 3.0, HK2 5, HK3 4.69 → ends
   exactly on 'I have started', 5.48 s). v3 cuts PASS (length = master, no black) → board; v2 to the Old board.
 
+- 2026-09-29 ~14:50 UTC: user notes on the v3 cuts — HK3 open on the B-roll; HK2 B-roll a bit late; HK1 first cut before 'backwards' finished, last cut
+  late (cut on 'And'), second B-roll only on 'Without'. → cuts placed BY HAND (`hooks/plan/cut_by_hand.py`, timelines `hooks/plan/HKn.cut.v4.json`) from
+  medium.en word times + a 30 ms loudness trace (`hooks/plan/words.py` → words.json): HK1 doctor 0–1.50 | stairs 1.50–4.53 (backwards rings out 4.40) |
+  knee replacement 4.53–5.72 (1.2 s) | physio 5.72–7.52 | braces 7.52–9.87 | doctor on 'And' 9.87. HK2 strap from 5.28 (end of 'knee'). HK3 scans 0–5.40
+  (0.93×, §30H allows ≥0.8×), doctor on 'I have'. All = master length, no black. v3 cuts to the Old board.
+
 ## Where it stands
-- **Waiting on the user:** the three hook rough cuts (HK1-CUT, HK2-CUT, HK3-CUT) — the step-6 hooks gate.
-- **Then:** step 7 — body B-roll act by act (images → the user's Confirm → videos), then the finished variants (variants.py: HKn + the body), CapCut block.
+- **Waiting on the user:** hook cuts v4 (HK1-CUT, HK2-CUT, HK3-CUT) — the step-6 hooks gate.
+- **Then:** step 7 — body B-roll act by act (images → the user's Confirm → videos); cuts placed by hand from word + loudness timings (the user's
+  timing notes, 2026-09-29); finished variants (HKn + the body); CapCut block.
