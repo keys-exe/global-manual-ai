@@ -1,0 +1,12 @@
+{"taskId": "b07f701fd9105766b64791d4efdc56d6", "created": true}
+{
+  "taskId": "b07f701fd9105766b64791d4efdc56d6",
+  "state": "success",
+  "credits": 72.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/b07f701fd9105766b64791d4efdc56d6_1_1790712736_3845.mp4"
+  ],
+  "saved": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-01b_v2.mp4",
+  "model": "kling-3.0/video"
+}
