@@ -122,7 +122,7 @@ def main():
              f"afade=t=out:st={fade_st:.3f}:d=2[m];"
              f"[0:a]aresample=48000,asplit=2[vo][sc];"
              f"[m][sc]sidechaincompress=threshold=0.02:ratio=6:attack=15:release=350[md];"
-             f"[vo][md]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1:LRA=11,aresample=48000[a]")
+             f"[vo][md]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1:LRA=11,volume=0.9dB,alimiter=limit=0.8:attack=5:release=80:level=false,aresample=48000[a]")
     subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", "-i", a.video,
                     "-f", "concat", "-safe", "0", "-i", str(work / "caps.txt"), "-i", a.bgm,
                     "-filter_complex", graph, "-map", "[v]", "-map", "[a]", "-r", str(FPS),
