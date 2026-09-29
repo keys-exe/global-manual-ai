@@ -57,7 +57,7 @@ Higgsfield `gpt_image_2_5` · `variant: sunburst` · `quality: high` · `resolut
 | P4-KITCHEN | kitchen table | `0bedfad5-bf20-4ebd-a862-fed90b55601a` | 4,503 |
 | P5-CONSULT | consulting room | `833bfccb-a188-46d7-873a-ddc728f658fc` | 4,269 |
 | S1-SURGEON | one-off surgeon, §19B sheet (`APPROACH-PRO`), British Pakistani man, 58, navy scrubs + grey gilet, scar through the right eyebrow | `7569a690-7398-49cb-ba09-4da6e7efd4ad` | 9,440 |
-| **H-VOICE-IMG** | §22U step 1: the host on the chesterfield, thighs up, mic beside her chin, eyes on the lens — the Kling voice start image and the HeyGen avatar | `41e24534-5ee4-4e05-8a89-4b666259da10` (`nano_banana_pro` requested; Higgsfield logged `nano_banana_2`, the known §5 routing label) | 9,517 |
+| **H-VOICE-IMG** | §22U step 1 (**v2, medium shot from the waist up**, your Fix; v1 on the Old board): the host on the chesterfield, mic beside her chin, eyes on the lens — the Kling voice start image and the HeyGen avatar | `41e24534-5ee4-4e05-8a89-4b666259da10` (`nano_banana_pro` requested; Higgsfield logged `nano_banana_2`, the known §5 routing label) | 9,517 |
 
 ---
 
