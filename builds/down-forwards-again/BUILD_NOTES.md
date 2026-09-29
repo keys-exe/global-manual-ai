@@ -188,4 +188,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   tipped out on the kitchen table (row now PRODUCT; CP-01 copy leg retired). STEP4_5 tables + docs/actmap + docs/wardrobe (Plan + Current) synced;
   angles.py PASS; wardrobe audits PASS. `acts/build_fix_r5.py`. Replaced versions moved to Old. The Product Sheet's INNER_PAD ("plain smooth black")
   still disagrees with the user's photo — not edited (shared file); the photo is in stryde_refs for any build to attach.
+- **Round 6 (hourly Fix check, 2026-09-29 18:45 UTC):** BR-04 "the patellar tendon is below the center of the knee cap. will never be at the side fix this"
+  → v8 is an edit of the user's own pointing photo (its framing and fingertip spot kept, the person/clothes/room swapped). `acts/build_fix_r6.py`.
+  v7 moved to Old. Balances: Higgsfield 14,178.65; Kling 3.0.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
