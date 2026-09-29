@@ -30,6 +30,19 @@ CALL.json describes one paid video call exactly as it will be sent:
     "risks": [{"risk": "...", "prevented_by": "..."}]   # top three failure modes and the clause that prevents each
   }
 
+Beat images (§6A, V7.70.0) — a B-roll or hook start/end frame — are linted too, with "kind": "image":
+  {
+    "beat": "B1-02", "kind": "image", "mode": 1,
+    "prompt": "<the image prompt exactly as it will be sent>",
+    "script_line": "the spoken line this picture shows, verbatim",
+    "face": false,                     # a face shows in the frame
+    "room": true,                      # the location shows (plate attached)
+    "product": false,                  # the product shows (product photo attached first)
+    "body": true,                      # a person or body part shows
+    "refs": [{"label": "...", "kind": "product|character|location|frame|info"}],   # in attach order
+    "pair": ["nano_banana_pro", "nano_banana_2"]   # the two models of the A/B pair (§5)
+  }
+
 Every check is PASS or FAIL. Any FAIL → exit 1 and the call is not sent.
 """
 import argparse, json, re, sys
@@ -80,7 +93,51 @@ def word_budget(d, pace):
     return int(2.2 * d - 2) if pace == "brisk" else int(2 * d - 2)
 
 
+IMG_MAX = 1200          # §6A: a beat image prompt is ≤ 1,200 characters
+IMG_NEG_MAX = 5         # §6A: at most five "no …" / "never …" items
+NEG_WORD = re.compile(r"\b(?:no|never|without|avoid)\b", re.I)
+SIZE_ANCHOR = re.compile(r"\d+(?:\.\d+)?\s*(?:×|x|by)?\s*\d*\s*(?:cm|mm|centimet|millimet)|\bthe size of\b|\bas (?:small|big|large) as\b", re.I)
+NANO = {"nano_banana_pro", "nano_banana_2", "nano-banana-pro", "nano-banana-2"}
+
+
+def run_image(c):
+    res = []
+
+    def check(name, ok, detail=""):
+        res.append({"check": name, "result": "PASS" if ok else "FAIL", "detail": detail})
+
+    p = c.get("prompt", "")
+    mode = int(c.get("mode", 1))
+    norm = lambda t: re.sub(r"[\s“”\"']+", " ", (t or "").strip().lower())
+    refs = c.get("refs") or []
+    kinds = [str(r.get("kind", "")).lower() for r in refs]
+
+    check("≤ 1,200 characters (§6A)", len(p) <= IMG_MAX, f"{len(p)} chars")
+    sl = c.get("script_line")
+    check("the spoken line is in the prompt (§6A)", bool(sl) and norm(sl) in norm(p), "script_line missing" if not sl else "")
+    negs = NEG_WORD.findall(p)
+    check(f"≤ {IMG_NEG_MAX} negatives (§6A)", len(negs) <= IMG_NEG_MAX, f"{len(negs)} no/never/without/avoid")
+    check("no unfilled slot", not PLACEHOLDER.search(p), (PLACEHOLDER.search(p) or [""])[0])
+    if c.get("face") is False:
+        hit = re.search(r"character sheet|the same (?:woman|man|person|girl|boy)\b", p, re.I)
+        check("no face block on a no-face shot (§6A)", not hit and "character" not in kinds, hit.group(0) if hit else ("character ref attached" if "character" in kinds else ""))
+    if c.get("room") is False:
+        hit = re.search(r"location plate", p, re.I)
+        check("no room block on a no-room shot (§6A)", not hit and "location" not in kinds, hit.group(0) if hit else ("location ref attached" if "location" in kinds else ""))
+    if c.get("product"):
+        check("product photo attached first (§6A)", bool(kinds) and kinds[0] == "product", f"first ref: {kinds[0] if kinds else 'none'}")
+        check("true-size anchor for the product (§6A)", bool(SIZE_ANCHOR.search(p)), "e.g. '12 × 5 cm, the size of a matchbox'")
+    pair = [str(m).lower() for m in (c.get("pair") or [])]
+    check("A/B pair: two renders on two models (§5)", len(pair) == 2 and pair[0] != pair[1], f"pair {pair}")
+    if c.get("body") or mode in (2, 3, 5):
+        why = "a body in frame" if c.get("body") else f"Mode {mode}"
+        check(f"Nano Banana only ({why}, §18A)", bool(pair) and all(m in NANO for m in pair), f"pair {pair}")
+    return res
+
+
 def run(c):
+    if str(c.get("kind", "")).lower() == "image":
+        return run_image(c)
     res = []
 
     def check(name, ok, detail=""):

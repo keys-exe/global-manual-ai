@@ -696,6 +696,13 @@ button.ing .im{cursor:zoom-in}
 .pd .ptext{margin-top:6px}
 .mc-verdict{display:grid;grid-template-columns:1fr 1fr;gap:6px}
 .mc-verdict .btn{justify-content:center;font-weight:600}
+/* A/B image pair (V7.70.0): two renders side by side, pick one */
+.media.pair{aspect-ratio:9/8;display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;place-items:stretch;cursor:default}
+.pair-opt{position:relative;border:0;padding:0;border-radius:7px;overflow:hidden;background:var(--frame);cursor:zoom-in;min-width:0}
+.pair-opt img{width:100%;height:100%;object-fit:cover;display:block}
+.pair-opt .pl{position:absolute;left:6px;top:6px;min-width:22px;padding:2px 6px;border-radius:5px;background:rgba(0,0,0,.7);color:#fff;font-weight:700;font-size:12px}
+.pair-opt .pmod{position:absolute;left:6px;right:6px;bottom:6px;padding:2px 5px;border-radius:5px;background:rgba(0,0,0,.6);color:#fff;font-family:var(--mono);font-size:9.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left}
+.mc-verdict.pair .wide{grid-column:1/-1}
 .mc-tools{display:grid;grid-template-columns:1fr 1fr;gap:6px}
 .mc-tools .btn{justify-content:center}
 .mc .specs .wide{grid-column:1/-1}
@@ -1338,6 +1345,24 @@ function stepState(g,k){
   if(k==="image"){return v==="confirmed"?"ok":v==="regenerate"?"bad":v==="generating"?"gen":g[d.asset]?"review":"todo"}
   return v==="use"?"ok":v==="regenerate"?"bad":v==="generating"?"gen":g[d.asset]?"review":"todo";
 }
+// A/B image pair (V7.70.0): two renders of one prompt, on two models; the reviewer uses one or sends both back
+function pairOf(g){
+  const p=g.imagePair; if(BOARD_ROLE==="old"||!Array.isArray(p)||p.length!==2||stepState(g,"image")!=="review") return null;
+  const vs=versionsOf(g,"image"), a=vs.find(x=>x.v===Number(p[0])), b=vs.find(x=>x.v===Number(p[1]));
+  return a&&b&&a.asset&&b.asset&&!a.archived&&!b.archived?[a,b]:null;
+}
+async function pickImage(gid,vnum){
+  const g=state.gens.find(x=>x.id===gid), pr=g&&pairOf(g); if(!pr||!state.db) return;
+  const x=pr.find(y=>y.v===vnum), other=pr.find(y=>y.v!==vnum); if(!x) return;
+  const L="AB"[pr.indexOf(x)];
+  const patch={imageAsset:x.asset,imageParts:Array.isArray(x.parts)?x.parts:[],imageType:x.type||"",imageUrl:x.url||"",imageModel:x.model||"",imageConnector:x.connector||"",
+    imageCredits:x.credits??null,imageRes:x.size??null,imageAt:x.at||null,imageStatus:"confirmed",status:flow(g).length===1?"use":"ready",
+    imagePick:x.v,imageUnused:other.v,imagePair:[],updatedAt:Date.now()};
+  try{await state.db.doc("generations/"+gid).update(patch);Object.assign(g,patch);
+    if(state.viewer&&state.viewer.id===gid){state.viewer.ver=null;state.viewer.fix=false}
+    toast(`Image ${L} chosen.`+(flow(g).includes("video")?" Its video is unlocked.":""));advanceIfDone(g)}
+  catch(e){handleWriteError(e)}
+}
 function nextStep(g){return flow(g).find(k=>stepState(g,k)!=="ok")||null}
 function needsMe(g){return nextStep(g)!==null}
 function stepNeedsYou(g){return flow(g).some(k=>stepState(g,k)==="review"&&!(k==="video"&&videoLocked(g)))}
@@ -1486,11 +1511,13 @@ function mediaCard(g,k){
   ];
   if(k==="video"&&g.videoOut!=null&&(g.videoOutV==null||g.videoOutV===currentV(g,"video"))) specs.push(["Clean part",`0–${Number(g.videoOut).toFixed(1)}s`,"wide"]);
   const canAct=!state.readOnly&&!locked&&!pending(g,k);
+  const pr=k==="image"&&pairOf(g);
+  const pairMedia=pr?`<div class="media filled pair" role="group" aria-label="Two options for ${esc(g.beat)}">${pr.map((x,i)=>`<button type="button" class="pair-opt" data-vpair="${esc(g.id)}" data-v="${x.v}" aria-label="View option ${"AB"[i]}"><img ${srcFrom(x.asset,x.parts,x.type)} alt="${esc(g.beat)} option ${"AB"[i]}"><span class="pl">${"AB"[i]}</span><span class="pmod">${esc(shortModel(x.model||"—"))}</span></button>`).join("")}</div>`:"";
   return `<article class="mc ${cls}" id="mc-${esc(g.id)}-${k}">
     <div class="mc-head">
       <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}${versionsOf(g,k).length>1?`<span class="vbadge" title="${versionsOf(g,k).length} versions">v${currentV(g,k)}</span>`:""}</span></div>
-      <div class="kv end"><span class="lbl">Status</span>${chip}</div></div>
-    <div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}"`} ${asset?`data-viewm="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="View ${d.label.toLowerCase()} for ${esc(g.beat)}"`:""}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>
+      <div class="kv end"><span class="lbl">Status</span>${pr?`<span class="pill s-review">Pick one</span>`:chip}</div></div>
+    ${pr?pairMedia:`<div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}"`} ${asset?`data-viewm="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="View ${d.label.toLowerCase()} for ${esc(g.beat)}"`:""}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>`}
     ${seed?`<div class="kv"><span class="lbl">Ingredients · ${refs.filter(x=>x.st==="ok").length}/${refs.length} confirmed</span><div class="ing-row">${refs.map(x=>ingTile(g,x,"row",k)).join("")||`<span class="mc-l">None listed yet</span>`}</div></div>`:
       refs.length?`<div class="kv"><span class="lbl">Reference images used · ${refs.length}</span><div class="ing-row">${refs.map(x=>ingTile(g,x,"row",k)).join("")}</div></div>`:""}
     <div class="kv"><span class="lbl">Shot</span><span class="mc-t">${esc(g.title||"—")}</span></div>
@@ -1503,7 +1530,10 @@ function mediaCard(g,k){
         <label class="lbl" for="fault-${esc(g.id)}-${k}">What should be fixed?</label>
         <textarea id="fault-${esc(g.id)}-${k}" rows="3" placeholder="e.g. The strap sits above the kneecap. Move it just below, on the soft spot." required></textarea>
         <div class="fix-actions"><button class="btn small bad solidbad" type="submit">Confirm &amp; regenerate</button><button class="btn small" type="button" data-faultcancel="1">Cancel</button></div></form>`:""}
-    ${canAct&&!fixing?`<div class="mc-verdict">
+    ${canAct&&!fixing&&pr?`<div class="mc-verdict pair">
+      ${pr.map((x,i)=>`<button class="btn ok" type="button" data-pick="${esc(g.id)}" data-v="${x.v}">✓ Use ${"AB"[i]}</button>`).join("")}
+      <button class="btn bad wide" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}">✎ Both wrong · Fix</button></div>`:
+    canAct&&!fixing?`<div class="mc-verdict">
       <button class="btn ok${s==="ok"?" solid":""}" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>✓ Confirm</button>
       <button class="btn bad" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>✎ Fix</button></div>`:""}
     <div class="mc-tools">
@@ -1710,7 +1740,8 @@ function renderViewer(){
   const k=v.step, d=STEP[k];
   const vers=versionsOf(g,k), cur=currentV(g,k);
   const shown=(v.ver&&vers.find(x=>x.v===v.ver))||vers.find(x=>x.v===cur)||null;
-  const older=shown&&shown.v!==cur;
+  const pr=k==="image"&&pairOf(g), pl=pr&&shown?pr.findIndex(x=>x.v===shown.v):-1, other=pl>=0?pr[1-pl]:null;
+  const older=shown&&shown.v!==cur&&pl<0;
   const moved=!!(shown&&shown.archived);
   const asset=shown&&!moved&&shown.asset, type=(shown&&shown.type)||g[d.type]||"";
   const list=viewerList(k), i=list.findIndex(x=>x.id===g.id);
@@ -1749,7 +1780,7 @@ function renderViewer(){
   };
   const verUi=vers.length?`<div class="v-ver">
       <button type="button" class="v-ver-btn" data-vmenu="1" aria-haspopup="listbox" aria-expanded="${!!v.menu}">
-        <span class="lbl">Version</span><b>v${shown?shown.v:"—"}</b>${older?`<span class="vi-old">Not current</span>`:`<span class="vi-cur">Current</span>`}<span class="vv-of">of ${vers.length}</span><span aria-hidden="true">▾</span></button>
+        <span class="lbl">Version</span><b>v${shown?shown.v:"—"}</b>${pl>=0?`<span class="vi-cur">Option ${"AB"[pl]}</span>`:older?`<span class="vi-old">Not current</span>`:`<span class="vi-cur">Current</span>`}<span class="vv-of">of ${vers.length}</span><span aria-hidden="true">▾</span></button>
       ${v.menu?`<div class="v-menu" role="listbox" aria-label="Versions">${vers.slice().reverse().map(item).join("")}</div>`:""}
     </div>`:"";
   // details: the shown version's own record
@@ -1766,7 +1797,7 @@ function renderViewer(){
   const prompt=g[d.prompt]||"";
   const canAct=!state.readOnly&&!locked&&!ingV&&!pending(g,k)&&!older&&!!asset;
   const panel=`<aside class="v-panel" data-shown="${!!v.details}" aria-label="Details">
-      <div class="ps"><span class="lbl">Status</span><div>${chip}${older?` <span class="pill s-planned">Viewing v${shown.v}</span>`:""}</div></div>
+      <div class="ps"><span class="lbl">Status</span><div>${pl>=0?`<span class="pill s-review">Pick one</span> <span class="pill s-planned">Option ${"AB"[pl]}</span>`:chip}${older?` <span class="pill s-planned">Viewing v${shown.v}</span>`:""}</div></div>
       ${g.line?`<div class="ps"><span class="lbl">Script line</span><div class="v-quote">“${esc(g.line)}”</div></div>`:""}
       ${ings.length?`<div class="ps"><span class="lbl">${seed?"Ingredients":"Reference images used"} · ${ings.length}</span><div class="ing-row">${ings.map(x=>ingTile(g,x,"vrow",k)).join("")}</div></div>`:""}
       ${older?`<div class="v-oldbar">You're looking at v${shown.v}, not the current version.${shown.note?` Fix that made it: ${esc(shown.note)}`:""}</div>`:""}
@@ -1780,7 +1811,10 @@ function renderViewer(){
           <textarea id="vfault" rows="3" placeholder="e.g. The strap sits above the kneecap. Move it just below." required></textarea>
           <div class="v-actions"><button class="btn badv" type="submit" style="background:#c23a2e;color:#fff">Confirm &amp; regenerate</button><button class="btn" type="button" data-vfix="0">Cancel</button></div></form>`:""}
       <div class="v-actions">
-        ${canAct&&!v.fix?`<button class="btn okv" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}">${I.ok} Confirm</button>
+        ${canAct&&!v.fix&&pl>=0?`<button class="btn okv" type="button" data-pick="${esc(g.id)}" data-v="${shown.v}">${I.ok} Use ${"AB"[pl]}</button>
+        <button class="btn badv" type="button" data-vfix="1">${I.fix} Both wrong · Fix</button>
+        <button class="btn full" type="button" data-vpick="${other.v}">See option ${"AB"[1-pl]}</button>`:
+        canAct&&!v.fix?`<button class="btn okv" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}">${I.ok} Confirm</button>
         <button class="btn badv" type="button" data-vfix="1">${I.fix} Fix</button>`:""}
         ${older&&!moved&&!state.readOnly?`<button class="btn full" type="button" data-vrestore="${shown.v}">${I.back} Use this version</button>`:""}
         ${moved?(archiveLink(shown)?`<a class="btn primary full" href="${esc(archiveLink(shown))}" target="_blank" rel="noopener">${I.box} Open v${shown.v} in Old versions</a>`:""):`<button class="btn primary full" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${shown?`data-ver="${shown.v}"`:"disabled"}>${I.dl} Download${older?` v${shown.v}`:""}</button>`}
@@ -2142,7 +2176,7 @@ function tocJump(i){
 let pickTarget=null;
 document.addEventListener("click",e=>{
   if(!e.target.closest(".vsel")) closeVsel();
-  const t=e.target.closest("[data-fjump],[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-ving],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-fjump],[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-ving],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-pick],[data-vpair],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
   if(ds.fjump){const el=document.getElementById("fc-"+ds.fjump);if(el) el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"});return}
@@ -2169,6 +2203,8 @@ document.addEventListener("click",e=>{
   if(ds.vrestore){const x=state.gens.find(y=>y.id===state.viewer.id);if(x) restoreVersion(x,state.viewer.step,Number(ds.vrestore));return}
   if(state.viewer&&state.viewer.menu&&!e.target.closest(".v-menu")){state.viewer.menu=false;renderViewer()}
   if(ds.sound){const v=document.querySelector(".viewer video");if(v){v.muted=false;v.dataset.sound="1";tryPlay(v)}t.remove();return}
+  if(ds.vpair){openViewer(ds.vpair,"image");state.viewer.ver=Number(ds.v);renderViewer();return}
+  if(ds.pick){state.faultOpen=null;pickImage(ds.pick,Number(ds.v));return}
   if(ds.viewm){openViewer(ds.viewm,ds.step)}
   else if(ds.vnav){moveViewer(Number(ds.vnav))}
   else if(ds.vstep){state.viewer.step=ds.vstep;state.viewer.ing=null;state.viewer.ver=null;state.viewer.menu=false;renderViewer()}
