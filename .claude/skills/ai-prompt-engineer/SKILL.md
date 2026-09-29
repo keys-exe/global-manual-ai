@@ -1,6 +1,6 @@
 ---
 name: ai-prompt-engineer
-description: AI Prompt Engineer Global Standards (V7.73.0) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
+description: AI Prompt Engineer Global Standards (V7.73.1) — the only authoritative standard for this repo, in the default Manual run mode. Use for ANY task here — realistic ads, UGC, VSLs (short, long, AI Drama), B-roll, talking heads, product shots, avatar/character sheets, Mode 1–5 builds (Realistic, 3D Pixar, Claymation, Realistic Film, Pixar Film), Kling / Seedance / Wan / Veo / Nano Banana / GPT Image prompts, Product Sheets, Build Sheets, CapCut notes, and edits to the standards document itself. If the user explicitly says "we will use automation" (or directly asks to run the build automatically), load ai-prompt-engineer-auto as well.
 ---
 
 # AI Prompt Engineer — Global Standards
@@ -50,6 +50,8 @@ Where a script line contradicts a product spec or visual standard, the render fo
 **Manual: the user checks every generation (correction 2026-09-26; reaffirmed 2026-09-27 — "you will not check them").** No verdict, no instrument, no note on any render — images, clips, audio, colour, joins, contact sheets are all the user's. You still lint your own prompts and plans before spending (`preflight.py`, `angles.py`). **Automatic: you check everything and deliver the final videos only.** Never judge, confirm or regenerate a render on your own — put it on the board as To check and wait for the user's Confirm or Fix; regenerate only from their Fix note (no budget — except a third video generation of one shot, which waits for the user's go, §22X). The two verdicts below are for **Automatic runs only**.
 
 **Image verdict (§22V, Automatic only). Open and judge every image yourself — the line first, then product, body, continuity, register, animatability — and ship `USE` or `REGENERATE · Q<n>: fault → fix`. Two regenerations per fault, then the user. Adapt to the named tool; else the most recently used one; ask only if none was ever named.
+
+**Would the user fix it? (§22V Q7 / §22W Q8, V7.73.1, Automatic):** every image and clip is also checked against the House Taste and product fix patterns — a break is REGENERATE citing the rule; the A/B pick is the render that breaks none. Manual builds' Fix notes train these rules.
 
 **Clip verdict (§22W, Automatic only).** Judge every video yourself from `scripts/contact_sheet.py` (true first + last frame, `--full` for zoom): the line, product in every frame, body in every frame, motion, continuity, technical, enough footage for its slot → `USE` or `REGENERATE`.
 
@@ -345,6 +347,8 @@ Grep for `^## <number>\.` (or the Appendix heading) to jump to any of these.
 **PENDING AMENDMENTS**
 
 **OPEN DECISIONS**
+
+**CHANGELOG — V7.73.0 → V7.73.1 *(cut authorised)***
 
 **CHANGELOG — V7.72.1 → V7.73.0 *(cut authorised)***
 
