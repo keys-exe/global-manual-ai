@@ -116,10 +116,19 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Kling videos) removed from the Current board; every version kept on the Old board (§16A never lose a version). Hooks on Current now:
   HK-A-SD and HK-B-SD only.
 
+- 2026-09-29: user "check the new pr we have something about the seedance" → merged V7.68.x (default branch): **Seedance ingredients
+  are information, never frames** — no master/start/scene frame for a Seedance shot. The HK-A-SD / HK-B-SD start images are retired
+  (moved to the Old board). `hooks/seedance_hooks.py` rewritten to the V7.68 ING-MANIFEST (characters → @audio → place → product →
+  info cards, then the shot in prose). Hook A: @image1 N sheet, @image2 C2 sheet, @audio1 mother voice (VO T2 0–7.3 s, she does not
+  speak), @image3 P1 landing, @image4 P0 house, @image5/6 outfit cards A-N / A-C2. Hook B: sheets, @audio1 mother, @audio2 daughter
+  line cut from the Hook A clip, @image3 P8 mall, @image4/5 outfit cards B-N / B-C2. **4 outfit info cards** made (Higgsfield jobs
+  1b0479d5, 4e0dd1dd, 5ba28b60, ca50d941; caption band added, `hooks/info/`) and on the Current board as their own cards
+  (INFO-WARD-A-N, -A-C2, -B-N, -B-C2) To check. HK-A-SD / HK-B-SD cards now carry `ingredients` (no image step); each video unlocks
+  once all its ingredients are confirmed. Board template republished to all four 71 Stairs boards (Current, Old, Final, Plan).
+
 ## Where it stands
-- **Voice stage redone to V7.66.0, no laugh/sigh** (2026-09-29): VO takes (text v2) + TH-ALL-T1 (now T2) + TH-01…16 on the board To check. Working take **T2** (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`); a confirmed different take → one new Avatar V render + re-cut.
-- **Step 6 — hooks (the hook gate):** Hook 1: HK-02a video confirmed (use); HK-01a new frame v2 To check (then its video, gen 2).
-  Hook 2 (mall): P8-MALL plate + HK-01b/HK-02b v2 images To check → then their videos on Kie.
-  Beat times from `vo/cut/VO_T1.beats.json`: HK-01a 0.00–3.84s, HK-02a 4.04–7.00s, TH-01 7.00–8.94s (Hook 2 uses the same times).
-- **Next on the user's Confirm:** HK-01a video gen 2 + Hook 2 videos (add to `hooks/build_calls.py`, preflight, Kie) → both hooks approved → Acts 1–7 B-roll.
-  Finals: FINAL-HK1 (Hook 1 + body), FINAL-HK2 (Hook 2 + body) on the Final board.
+- **Voice stage done** (2026-09-29): VO T2 locked (`vo/cut/v3/VO_T2.mp3`, beats `vo/cut/v3/VO_T2.beats.json`), TH-01…16 (Avatar V render of T2) confirmed.
+- **Step 6 — hooks (Seedance, V7.68 ingredients):** waiting on the user's Confirm of the 4 outfit info cards. Then: Seedance Hook A on Kie
+  (`kie.py seedance`, 11 s, 720p, 9:16) → cut the daughter's line → @audio2 → Hook B → both to HK-A-SD / HK-B-SD as `review`.
+  In the edit the daughter's on-camera line replaces the mother reading "Mama, when did that happen?" in VO T2 (TH-01, 7.36–9.93 s).
+- **Then:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
