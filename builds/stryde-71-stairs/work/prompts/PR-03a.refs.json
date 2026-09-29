@@ -2,16 +2,16 @@
  "model": "nano_banana_pro",
  "refs": [
   [
+   "STRYDE worn (front)",
+   "job:f5263ed7-0667-4ebd-977e-9bfd835d5036"
+  ],
+  [
    "STRYDE front",
    "products/stryde/stryde_refs/front.webp"
   ],
   [
    "STRYDE back",
    "products/stryde/stryde_refs/back.webp"
-  ],
-  [
-   "STRYDE worn (front)",
-   "job:f5263ed7-0667-4ebd-977e-9bfd835d5036"
   ]
  ]
 }

@@ -2,6 +2,10 @@
  "model": "nano_banana_pro",
  "refs": [
   [
+   "STRYDE worn (front)",
+   "job:f5263ed7-0667-4ebd-977e-9bfd835d5036"
+  ],
+  [
    "STRYDE front",
    "products/stryde/stryde_refs/front.webp"
   ],
@@ -10,16 +14,12 @@
    "products/stryde/stryde_refs/back.webp"
   ],
   [
-   "STRYDE worn (front)",
-   "job:f5263ed7-0667-4ebd-977e-9bfd835d5036"
-  ],
-  [
    "N sheet",
    "cast/N-NARR_v1.png"
   ],
   [
-   "P0-PROP-N plate",
-   "plates/P0-PROP-N_v3.png"
+   "P6-STREET plate",
+   "plates/P6-STREET_v2.png"
   ]
  ]
 }
