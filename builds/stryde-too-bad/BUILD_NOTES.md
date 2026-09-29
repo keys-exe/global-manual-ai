@@ -33,6 +33,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: board outage (HTTP 503) held the VO cards; after it cleared all 32 VO part cards (T1–T8 × HK1/BODY1/HK2/BODY2) went on the board (`vo/assets.json`). User "VOICE ID: PROCEED" → narrator voice TooBad marked **locked**.
 
+- 2026-09-29: user "CONFIRMED PROCEED" — **VO locked on T8** for HK1, BODY1, HK2, BODY2 (`vo/cut/T8_V1.mp3`, `T8_V2.mp3` are the masters; 55.38s / 54.69s). Step 6: hook start images HK1-01 (NBP, refs front+back product photos, Denise sheet, lounge plate) and HK2-01 (NB2, Alan sheet, kitchen plate) — `hooks/build_hooks.py`, refs `hooks/refs.json` — on the board To check. Jobs report nano_banana_2 / nano_banana_flash.
+
 ## Where it stands
-- **Waiting on the user:** Confirm one VO take per part (HK1, BODY1, HK2, BODY2) — the run continues on T5 until then; script flags F2, F4, F5, F7, F8, F9.
-- **Next:** hooks one by one (step 6): HK1-01, HK2-01 image prompts → Higgsfield → board.
+- **Waiting on the user:** Confirm/Fix the HK1-01 and HK2-01 start images; each hook's clip follows its confirmed image (one by one); script flags F2, F4, F5, F7, F8, F9.
+- **Next:** hook clips (Kling via Kie, §27G, preflight), lengths from the T8 master (E6).
