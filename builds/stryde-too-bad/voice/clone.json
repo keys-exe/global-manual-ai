@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "voice_name": "TooBad",
+  "voice_id": "5Iu9piJEpm2ewCIAa3Wm",
+  "category": "cloned",
+  "requires_verification": false,
+  "source": "src/TooBad_clone_source.mp3",
+  "source_s": 40.75,
+  "remove_background_noise": true
+}

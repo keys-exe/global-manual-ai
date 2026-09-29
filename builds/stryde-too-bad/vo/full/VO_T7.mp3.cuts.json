@@ -1,0 +1,54 @@
+{
+ "src": "full/VO_T7.mp3",
+ "duration": 113.36,
+ "cuts": [
+  3.05,
+  56.82,
+  59.87
+ ],
+ "ranges": {
+  "HK1": [
+   0.0,
+   3.05
+  ],
+  "BODY1": [
+   3.05,
+   56.82
+  ],
+  "HK2": [
+   56.82,
+   59.87
+  ],
+  "BODY2": [
+   59.87,
+   113.36
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ],
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ],
+  [
+   "replace",
+   "knock offs",
+   "knockoffs"
+  ]
+ ]
+}

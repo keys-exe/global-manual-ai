@@ -1,0 +1,5 @@
+# full-size renders live on the Generation Board; the repo keeps JPEG copies
+*.png
+*.mp4
+*.video.log
+*.part*.mp4

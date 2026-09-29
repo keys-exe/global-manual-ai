@@ -12,6 +12,10 @@ builds/*/cast/*_v*.png
 builds/*/plates/*_v*.png
 builds/*/voice/*_v*.png
 builds/*/hooks/*_v*.png
+builds/*/cast/full/
+builds/*/plates/full/
+builds/*/hooks/downloads/
+builds/*/vo/downloads/
 builds/**/edit/*.err
 builds/**/edit/variants_report.json
 builds/**/_plan_*.json
@@ -25,3 +29,4 @@ builds/*/voice/*.png
 *.pyc
 builds/*/broll/renders/
 builds/**/edit/**/.*_caps/
+builds/*/broll/v*/*.png

@@ -1,0 +1,35 @@
+{
+ "beat": "A-HKb",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"a_hkb\",\"subject\":\"Close-up at knee height, three-quarter from the outer side, of the bent right knee of a Black British woman of seventy-three sitting on the bottom stair, the black knee strap snug on the tendon just under her kneecap, floral skirt hem across the thigh, burgundy slipper below. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame.\"},\"motion\":\"Already moving on the first frame: she eases her lower leg forward a few centimetres, straightening the knee slightly, about a second and a half, then lets it settle; the strap moves only with the leg and stays exactly where it sits under the kneecap. The camera stays where it is. The strap keeps its exact shape, size, peaks, chrome slide, band and wordmark in every frame; its rigid shell never bends, flexes or changes proportion. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly \u2014 motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no strap sliding on the leg, no product covering the kneecap, no second unit, no sleeve, no wrap, no hands on the strap, no camera travelling with the subject, no music, no speech\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_193329_477e36cd-a674-42c0-be8a-fc18a8ef38fa.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 4,
+ "risks": [
+  {
+   "risk": "strap slides or bends as the leg moves",
+   "prevented_by": "rigid-product clause; 'moves only with the leg and stays exactly where it sits'; 'no strap sliding on the leg'"
+  },
+  {
+   "risk": "leg or foot warps during the small extension",
+   "prevented_by": "one small movement at a countable pace, HOLD-C + NEG-WARP-C"
+  },
+  {
+   "risk": "camera drifts with the moving leg",
+   "prevented_by": "RIG-R3C propped; 'the camera stays where it is'"
+  }
+ ],
+ "approved_by": "user: CONFIRM HOOK 1 (2026-09-28, v7 frame)",
+ "fix_note": "Fault in the frame (user Fixes: product position, too low): v6 strap ~70px low \u2192 v7 frame with the strap raised to sit against the kneecap; same leg-ease motion. 4th video generation of this shot \u2192 needs the user's go (\u00a722X)",
+ "user_go": "user: CONFIRM HOOK 1 (2026-09-28) \u2014 go for the 4th generation"
+}

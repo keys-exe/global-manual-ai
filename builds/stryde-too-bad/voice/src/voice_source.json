@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "voice_name": "TooBad",
+  "clone_source": "src/TooBad_clone_source.mp3",
+  "takes": [
+    {
+      "take": 1,
+      "src": "N_G1.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 4.65,
+      "after_speed_s": 3.9,
+      "pitch_median_hz": 191.6,
+      "transcript": "Too bad. These knee straps look too small to work. Bad.",
+      "pitch_diff": 0.0
+    },
+    {
+      "take": 2,
+      "src": "N_G2.lead.mp4",
+      "in_s": 8.5,
+      "after_trim_s": 6.89,
+      "after_speed_s": 5.75,
+      "pitch_median_hz": 205.1,
+      "transcript": "Built over three years with orthoparic surgeons to do what sleeves and braces never could",
+      "pitch_diff": 0.07
+    },
+    {
+      "take": 3,
+      "src": "N_G3.lead.mp4",
+      "in_s": 7.83,
+      "after_trim_s": 4.68,
+      "after_speed_s": 3.92,
+      "pitch_median_hz": 210.5,
+      "transcript": "They're small on purpose, because the pain comes from one small spot.",
+      "pitch_diff": 0.099
+    }
+  ],
+  "voice_mismatch_takes": [],
+  "joined_s": 13.57,
+  "repeats": 3,
+  "total_s": 40.75,
+  "gaps_over_0.4s": []
+}

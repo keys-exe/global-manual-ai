@@ -728,7 +728,7 @@
   "subject": "C1",
   "location": "L-G-STAIRS",
   "story_day": "G-D1",
-  "framing": "from the side, waist-down: she comes down backwards, facing up the flight, both hands on the rail",
+  "framing": "from the foot of the stairs looking up the flight: she comes down backwards, back to the lens, one hand on each handrail (user reference clip)",
   "action": "one step down backwards",
   "pace": "one step, about a second and a half",
   "camera": "locked off",
@@ -741,14 +741,14 @@
   "layout": "full",
   "eg": "EGN01",
   "ledger": "VN02",
-  "notes": "user Fix 2026-09-28: MAKE DOWN BACKWARD",
+  "notes": "user Fixes 2026-09-28: backwards, both hands on the rails; composition from the user's reference clip hooks/ref_stairs_user.mp4",
   "duration": "pending-master",
   "angle": {
    "height": "eye",
-   "side": "profile",
-   "fg": "through",
-   "scale": "MEDIUM",
-   "why": "through the spindles: we watch her struggle"
+   "side": "behind",
+   "fg": "clean",
+   "scale": "WIDE",
+   "why": "behind, from below: her careful backwards descent (user reference)"
   },
   "focus": {
    "plane": "deep",

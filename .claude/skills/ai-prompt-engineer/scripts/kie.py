@@ -5,8 +5,10 @@ Needs KIE_API_KEY in the environment (an environment secret; never pasted in cha
 
   kie.py credit
   kie.py upload FILE [--path DIR]                       -> public URL (temporary: 24h-3 days)
-  kie.py image  MODEL --prompt-file P [--ref URL ...] [--out FILE]
+  kie.py image  MODEL --prompt-file P [--ref URL ...] [--plate] [--out FILE]
+        --plate: a location or property plate, made at 16:9 (V7.68.1); everything else 9:16
         MODEL: nano-banana-pro | nano-banana-2 |
+               gpt-image-2-text-to-image | gpt-image-2-image-to-image (GPT Image 2) |
                gpt-image-2-5-sunburst-text-to-image | gpt-image-2-5-sunburst-image-to-image
   kie.py seedance --prompt-file P --ref-image URL ... [--ref-audio URL ...] [--ref-video URL ...]
         [--duration 10] [--no-audio] [--out FILE]
@@ -15,7 +17,8 @@ Needs KIE_API_KEY in the environment (an environment secret; never pasted in cha
         batch or over its cap (§5, V7.65.0): pro mode (1080x1920), 9:16, sound off, single shot.
   kie.py wait TASK_ID [--out FILE]
 
-Fixed by the standard, never overridden here: aspect 9:16; images 2K; Seedance
+Fixed by the standard, never overridden here: aspect 9:16 (location and property
+plates 16:9 with --plate, V7.68.1); images 2K; Seedance
 720p, ingredients mode (reference_image_urls, never first_frame_url), duration
 stated (never -1). A local path passed as --ref is uploaded first.
 Every command prints JSON. Exit 0 = success, 2 = task failed, 1 = error.
@@ -28,6 +31,8 @@ UPLOAD = "https://kieai.redpandaai.co/api/file-stream-upload"
 IMAGE_MODELS = {
     "nano-banana-pro": ("image_input", 8),
     "nano-banana-2": ("image_input", 14),
+    "gpt-image-2-text-to-image": (None, 0),
+    "gpt-image-2-image-to-image": ("input_urls", 16),
     "gpt-image-2-5-sunburst-text-to-image": (None, 0),
     "gpt-image-2-5-sunburst-image-to-image": ("input_urls", 16),
 }
@@ -117,6 +122,7 @@ def main():
     u = sub.add_parser("upload"); u.add_argument("file"); u.add_argument("--path", default="pipeline")
     i = sub.add_parser("image"); i.add_argument("model", choices=IMAGE_MODELS)
     i.add_argument("--prompt-file", required=True); i.add_argument("--ref", nargs="*", default=[])
+    i.add_argument("--plate", action="store_true", help="location/property plate: 16:9")
     i.add_argument("--out")
     s = sub.add_parser("seedance"); s.add_argument("--prompt-file", required=True)
     s.add_argument("--ref-image", nargs="+", required=True); s.add_argument("--ref-audio", nargs="*", default=[])
@@ -152,7 +158,7 @@ def main():
         refs = [as_url(r) for r in a.ref]
         if len(refs) > cap:
             sys.exit(json.dumps({"error": f"{a.model} takes at most {cap} references, got {len(refs)}"}))
-        inp = {"prompt": prompt, "aspect_ratio": "9:16", "resolution": "2K"}
+        inp = {"prompt": prompt, "aspect_ratio": "16:9" if a.plate else "9:16", "resolution": "2K"}
         if a.model.startswith("nano"):
             inp["output_format"] = "png"
         if field:

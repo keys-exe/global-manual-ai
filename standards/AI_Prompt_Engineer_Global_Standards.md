@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.67.0 — supersedes all prior versions.** *(trim once, at the right place — a VO task trims the VO (house cut), a talking-head task trims only the talking heads and sends the untrimmed take to HeyGen, so a trim that reads too fast or too slow is redone for free; the Kling voice-clone source trimmed in the medium style before ×1.2 and the loop, §22U/E11/E11A/E1/E7/§44; no tight cuts — every word finishes and a pause inside a phrase is never shortened, in the VO house cut (−50 dB + 80 ms release, 60 ms fade) and the talking-head trim (120/250 ms padding, −50 dB, 40 ms fade-out), §22U/E11/E11A/E1; every system update merged into the default branch the same turn, and never applied to an existing build without its team's ask, §34; HeyGen Avatar V only and talking heads rendered in one go, then cut into each hook + body, §22U/§44/E7; confirmed hook and B-roll videos never deleted from the board, with Download all B-rolls / hooks, §16A; the edit breathes — the VO at the inspo's pace, ≤ 210 wpm, with natural pauses kept by the house cut, re-voiced slower by tags and API speed, §22U/E11A; every B-roll held ~3s and never under 2s, full screen by default with split/picture-in-picture on at most one B-roll in five, never two in a row, §30H/§42 Part 3A; Kling falls back to Kie AI's Kling 3.0 when short or capped, §5; Eleven v4 TTS with the Enhance pass before every request, §22U; the Manual voice flow — maps before voices, then voice source, clone, VO, talking heads and a natural-pace trim with no stop, §18/§22U/E0; camera settings and colour grading — the film LUT is a real file made from the Look Sheet's grade numbers, checked on skin and neutrals and applied identically in CapCut desktop and by `lut.py`, §24G/§40; white balance pinned per scene as the key light's Kelvin, §30K/§30L; Modes 2–3 matched, never graded, §12; Mode 1 phone settings — 1x or front camera only, no ultra-wide, telephoto, Portrait or Cinematic mode, flash or daylight night mode, §22A; the film camera numbers marked unverified, §24G; the film shot library — 34 shot types for Modes 4–5, from wide to inside-the-fridge, each with its setup, `SHOT-LINE` clause, meaning and limits; signature shots capped per scene and film; Dutch tilt allowed in the film modes with a reason, §24K part 7/§30I; the Generation Board's Final output tab and the board shown in both run modes, §16A; film music composed to the scene section by section and checked by the agent in both run modes, `music.py`, §24M/E0; film sound — clips carry dialogue only, one music theme per film, one continuous music cue and room tone per scene, a film-wide SFX list, made on ElevenLabs and mixed by `mix_scene.py`, §24M; the film modes upgraded — motion and camera grammar, acting and story, the scene image list, the state track, connected scenes, voice emotion carried across cuts, US-feature camera packages and production value, no trimming, §24G–§24L; video preflight and two generations per shot, §22X; camera angle range, focus, lighting and the scene colour lock, all modes, §30I–§30L; the colour grade in the edit only, §40; who checks — Manual the user, Automatic the agent with final videos only — and `DIRECTIONS` on the intake, E0/§18B; the Edit Grammar — how the inspo presents its B-roll and cuts (full-frame, split-screen, picture-in-picture, punch-ins, transitions, captions, SFX) is read off its frames, locked as `EDIT-[BUILD]` and copied in both run modes: every B-roll row carries its layout, the prompt is framed for it, `assemble.py` renders split, picture-in-picture and punch-ins, and the rest is a CapCut line, §42 Part 3A/§18/§30H/§35/§40/E4; the Manual Drive run — a Drive link with `RUN: MANUAL` is fetched and absorbed by the agent exactly as in Automatic, the agent then generates and checks the avatars (step 3) itself and stops — the avatars are the user's decision; on the user's go, steps 4–5 follow as copy-ready prompts and the build continues in Manual, §1/§18/§18B/§31/§44/E0; intake fixes — a Loom MP4 in the Drive folder is sorted as the Loom brief, never as an inspo, §18B/§18C; `.docx` tables are read, so a two-column VO | VISUAL script is no longer extracted empty and its visual column enters the ledger row by row, §22U/§27F; speaker labels (`VO:`, `NARRATOR:`, `SARAH:`) are cut from spoken lines, never voiced, §22U; the script's visual instructions are binding — every note on the script is logged in the Visual Instruction Ledger, carried by a named beat or CapCut line, and checked in the image and clip verdicts, §27F; the Loom brief — an optional Loom link sent beside the Drive link, fetched, transcribed and framed by `scripts/fetch_loom.py`, its instructions followed like the script's own, §18C; Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
+**Version 7.73.1 — supersedes all prior versions.** *(Automatic judges as the user would — the House Taste and fix patterns are the bar for the act map, the motion plan, every image and clip verdict (§22V Q7, §22W Q8) and every A/B pick; every Manual build's Fix notes train the Automatic run, E0; learning from the board — every Fix note harvested (`fix_patterns.py`), repeated notes turned into House Taste rules HT01–HT16 (generic) and the product's `fix_patterns.md` (product-specific), both read before every image and video prompt and refreshed after every Fix round, §34A/§6A/§35A, `preflight.py`; Nano Banana Pro is the model for anatomy / mechanism and Modes 2, 3 and 5 — its A/B pair two Pro renders; `nano_banana_2` only as the alternative when Pro can't run, logged, §18A/§5/§24/§44, `preflight.py`; realistic images on GPT Image 2.5 Sunburst — every Mode 1 and Mode 4 image (sheets, plates, B-roll and hook frames with or without people, worn and held product, seeds, info cards) routes to Sunburst, the A/B pair two Sunburst renders; Nano Banana Pro / 2 only for anatomy and mechanism and for Modes 2, 3 and 5; the V7.53.0 body rule retired on the short §6A prompts, §4/§5/§18A/§44/Appendix D, `preflight.py`; beat videos right on one generation — the motion confirmed on the image card ("Video will show") before any video credit, a short beat video prompt ≤ 1,000 characters (the line, the confirmed action from this frame, the camera in one clause, 2–3 shot facts, ≤ 5 negatives; the stacked camera-drift and physics paragraphs retired), stairs / travel / hand-on-product / product-angle shots pinned first-and-last frame with a pilot clip first, and "fast" made in the edit, never by the legs, §35A/§27G/§22X/§16A, `preflight.py`; beat images short and single-minded — every B-roll and hook frame prompt ≤ 1,200 characters, opens with the spoken line and the one thing it shows, carries only the blocks the shot uses, says what it wants in positive words with ≤ 5 negatives, attaches the product photo first with a true-size anchor, §6A, `preflight.py`; beat images made as an A/B pair on two models — the reviewer uses A, uses B, or sends both back with one Fix, §5/§16A/§22V; B-roll never lands late — it cuts 6 frames before the anchor word's onset in the audio (not Whisper's late word start), and a cut is never pushed past its word to protect the clip before it: that clip fails FLASH and the rows are merged, §30H/E4/E6, `assemble.py`; ads stay phone style — a Seedance hook in a Mode 1–3 ad keeps the ad's register; the series look and F6–F10 are for films only, §24N; the prestige streaming-series look for every Seedance film clip and Seedance hook — series camera package, motivated low-key light, the Seedance move library F6–F10 (pull-back, arc, crane, lateral track, dolly zoom), series coverage and angle-for-status, the hook as a cold open, the settings order on every shot, §24N/§24G/§24K/§22B/Appendix A, `preflight.py`, `angles.py`; Seedance on a hook only on the user's call — never picked by the agent, in either run mode; films unaffected, §4; location and property plates generated at 16:9 — references of the whole room; every frame, clip and deliverable stays 9:16, §2/§30C/§30G/E7, `kie.py image --plate`; Seedance ingredients are information, never frames — characters, voice clips, the location, the product and info cards (one fact each, e.g. where the product sits on the body); no master, start or scene frame is made for a Seedance shot, §4/§24H/§22X/§30L/§16A/E7; trim once, at the right place — a VO task trims the VO (house cut), a talking-head task trims only the talking heads and sends the untrimmed take to HeyGen, so a trim that reads too fast or too slow is redone for free; the Kling voice-clone source trimmed in the medium style before ×1.2 and the loop, §22U/E11/E11A/E1/E7/§44; no tight cuts — every word finishes and a pause inside a phrase is never shortened, in the VO house cut (−50 dB + 80 ms release, 60 ms fade) and the talking-head trim (120/250 ms padding, −50 dB, 40 ms fade-out), §22U/E11/E11A/E1; every system update merged into the default branch the same turn, and never applied to an existing build without its team's ask, §34; HeyGen Avatar V only and talking heads rendered in one go, then cut into each hook + body, §22U/§44/E7; confirmed hook and B-roll videos never deleted from the board, with Download all B-rolls / hooks, §16A; the edit breathes — the VO at the inspo's pace, ≤ 210 wpm, with natural pauses kept by the house cut, re-voiced slower by tags and API speed, §22U/E11A; every B-roll held ~3s and never under 2s, full screen by default with split/picture-in-picture on at most one B-roll in five, never two in a row, §30H/§42 Part 3A; Kling falls back to Kie AI's Kling 3.0 when short or capped, §5; Eleven v4 TTS with the Enhance pass before every request, §22U; the Manual voice flow — maps before voices, then voice source, clone, VO, talking heads and a natural-pace trim with no stop, §18/§22U/E0; camera settings and colour grading — the film LUT is a real file made from the Look Sheet's grade numbers, checked on skin and neutrals and applied identically in CapCut desktop and by `lut.py`, §24G/§40; white balance pinned per scene as the key light's Kelvin, §30K/§30L; Modes 2–3 matched, never graded, §12; Mode 1 phone settings — 1x or front camera only, no ultra-wide, telephoto, Portrait or Cinematic mode, flash or daylight night mode, §22A; the film camera numbers marked unverified, §24G; the film shot library — 34 shot types for Modes 4–5, from wide to inside-the-fridge, each with its setup, `SHOT-LINE` clause, meaning and limits; signature shots capped per scene and film; Dutch tilt allowed in the film modes with a reason, §24K part 7/§30I; the Generation Board's Final output tab and the board shown in both run modes, §16A; film music composed to the scene section by section and checked by the agent in both run modes, `music.py`, §24M/E0; film sound — clips carry dialogue only, one music theme per film, one continuous music cue and room tone per scene, a film-wide SFX list, made on ElevenLabs and mixed by `mix_scene.py`, §24M; the film modes upgraded — motion and camera grammar, acting and story, the scene image list, the state track, connected scenes, voice emotion carried across cuts, US-feature camera packages and production value, no trimming, §24G–§24L; video preflight and two generations per shot, §22X; camera angle range, focus, lighting and the scene colour lock, all modes, §30I–§30L; the colour grade in the edit only, §40; who checks — Manual the user, Automatic the agent with final videos only — and `DIRECTIONS` on the intake, E0/§18B; the Edit Grammar — how the inspo presents its B-roll and cuts (full-frame, split-screen, picture-in-picture, punch-ins, transitions, captions, SFX) is read off its frames, locked as `EDIT-[BUILD]` and copied in both run modes: every B-roll row carries its layout, the prompt is framed for it, `assemble.py` renders split, picture-in-picture and punch-ins, and the rest is a CapCut line, §42 Part 3A/§18/§30H/§35/§40/E4; the Manual Drive run — a Drive link with `RUN: MANUAL` is fetched and absorbed by the agent exactly as in Automatic, the agent then generates and checks the avatars (step 3) itself and stops — the avatars are the user's decision; on the user's go, steps 4–5 follow as copy-ready prompts and the build continues in Manual, §1/§18/§18B/§31/§44/E0; intake fixes — a Loom MP4 in the Drive folder is sorted as the Loom brief, never as an inspo, §18B/§18C; `.docx` tables are read, so a two-column VO | VISUAL script is no longer extracted empty and its visual column enters the ledger row by row, §22U/§27F; speaker labels (`VO:`, `NARRATOR:`, `SARAH:`) are cut from spoken lines, never voiced, §22U; the script's visual instructions are binding — every note on the script is logged in the Visual Instruction Ledger, carried by a named beat or CapCut line, and checked in the image and clip verdicts, §27F; the Loom brief — an optional Loom link sent beside the Drive link, fetched, transcribed and framed by `scripts/fetch_loom.py`, its instructions followed like the script's own, §18C; Automatic run order made explicit — avatars and plates pass first, then the act map and wardrobe map, then voice, then B-roll timed from the master, E0/E4/§18; Automatic is hands-off — no stops, the agent approves every step and delivers only the finished videos, with default credit caps per build, E0; every B-roll clip is as long as the script line it covers, E6; every voice starts as a Seedance clip — never ElevenLabs Voice Design or a library voice; a clone name already on the account is refused, §22U/§22D; the API voice clone is Automatic only — Manual clones in the ElevenLabs app and keeps the clone stop; Automatic runs `scripts/elevenlabs_clone.py` with no stop, §22U step 6/§18B/E0/E7; the intake message carries voice, hooks, credit cap and free adjustments, so a build runs from one message, §18B; hook variants — one finished video per hook, each hook + the identical body, built and checked by instrument, §30H; clip verdict — the agent judges every video, §22W; B-roll placed on its line with no holes and no talking-head flicker, assembled and verified by instrument, §30H; the TTS text is the script's spoken lines, verbatim — nothing added, removed or changed, no title, headings, links or visual notes, locked by instrument, §22U; strict connector routing — Higgsfield images, Kling connector for Kling, the Kie AI API for Seedance 2.5 and as the image fallback, with Kie's file upload for public URLs, §5; the agent judges every image against its line, USE or REGENERATE, §22V; Drive output layout, §18B/E9; the Drive intake — one shared folder carries the inspo, script, Product Sheet and product images, §18B; the Intake Pack — steps 1 and 2 in one message, then cast, plates and voices built straight from it, §18B; the film voice master — a Seedance clip kept untrimmed, §24I; the voice and talking-head pipeline — Seedance voice source, ElevenLabs clone, Eleven v3 TTS with audio tags, HeyGen Avatar V talking heads, §22U; two run modes — Manual, the default, and Automatic, only on the explicit call "we will use automation": generate, check, reroll and trim inside the pipeline, Appendix E0/E11, §44 default 83; AI Drama VSL format, §3B; hero product and the mechanism inside the film, §24G/§24J; film-mode CapCut lines, §40; Mode 5 Pixar Film — the Pixar design told as a feature film, with the Mode 4 film system, §24J; Mode 4 dramatic performance — emotion map, listener, subtext, two-hander rhythm, neutral voice masters, §24I; Seedance 2.5 runs ingredients mode on every call, up to 30 files, §4; Mode 4 Realistic Film — the look derived per build from the inspo and script, §24G; scene-connected frames — master, coverage, chain, contact sheet, bridge, §24H; 9:16 locked; Seedance always 720p; GPT Image off every beat with a body in it, §4/§18A; whole-body anatomy in every T2I, §27D; creator framing — the body never fills the frame, §22F; five modes — Realistic, Realistic Film, 3D Pixar, Pixar Film, Claymation; three image models only — `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst; the dwelling is an object — Property Standard at §30G)*
 
 ---
 
@@ -104,7 +104,7 @@ The five are **not interchangeable.** Mode 1 = true, found, phone-real. Mode 4 =
 - No drift between modes mid-project.
 - **Mode 4 is selected on explicit instruction per build**, never inferred from a reference however cinematic it is. Once selected, its look is derived from the inspo and the script and locked at §18A, and every other axis of Mode 4 follows §24G–§24H.
 - **Mode 5 is selected the same way** — on explicit instruction per build, its look derived from the inspo and the script — and follows §24J. Mode 2 stays the register for short stylized ad beats.
-- **9:16 vertical is locked for every mode and every build** (V7.54.0). Never letterboxed, never overridden by a Build Sheet.
+- **9:16 vertical is locked for every mode and every build** (V7.54.0). Never letterboxed, never overridden by a Build Sheet. **One exception — location plates are generated at 16:9** *(V7.68.1, user 2026-09-29: "when generating location plates use 16:9 instead of 9:16")*: every location plate (§30C) and the property plate (§30G) is a 16:9 landscape image, so it holds the whole room — every wall, window, door and anchor — as a reference. A plate is a reference, never a shot: every frame, clip and deliverable made against it stays 9:16, and the prose, not the plate's framing, sets the shot. In Mode 1 the plate reads as the phone held in landscape (1x, §22A).
 - No real-camera or photographic language inside Mode 2. **Mode 5 may use virtual-cinematography language — lens, depth of field, rig, shot scale — always as a virtual camera inside a render, and never photographic capture language such as film stock, grain, sensor or phone** (§24J). Mode 3 is a photograph of a real miniature, so its capture language is the tabletop rig (§24F), never a phone.
 
 **Hybrid register exception:** builds may mix registers by act — mechanism in the §12A register, hook and story in Mode 2 or 3, proof and close in Mode 1. Declared per act at §18A, never discovered at the act map, and **each beat is internally pure.** Never blend two registers inside one shot.
@@ -219,7 +219,7 @@ When the user names a tool, adapt to that tool's ideal format, structure, densit
 - **Multi-shot is native.** The model will cut inside a clip if the prompt describes more than one moment. §29's single-beat rule is therefore a *prompt* discipline here, not a parameter: one moment, one arc, no time ranges, no "then the camera cuts to." A Seedance beat that describes two shots gets two shots.
 - **Resolution: 720p, always** *(locked V7.54.0, user decision)*. Every Seedance call in every mode passes `resolution: "720p"`. Never 1080p, never 4k. Any delivery upscale happens in post, never by regenerating.
 - **Duration 4–30s, or `auto`.** `auto` is never used — duration comes from E6, stated. The 3s mechanism floor Kling-direct offers does not exist here; mechanism beats route to Kling-direct.
-- **Reference inputs — first frame plus optional last frame via one or two images; omni-reference mode takes up to 30 images, 10 video clips and 10 audio clips, addressed as `@image1` etc.** **Our pipeline uses omni-reference — ingredients mode — on every Seedance call, never first-frame mode** *(V7.54.1, user decision)*. **The ceiling is 30 files per call, counted across images, video and audio together.** How the 30 are filled is §4's Seedance ingredients section below.
+- **Reference inputs — first frame plus optional last frame via one or two images; omni-reference mode takes up to 30 images, 10 video clips and 10 audio clips, addressed as `@image1` etc.** **Our pipeline uses omni-reference — ingredients mode — on every Seedance call, never first-frame mode** *(V7.54.1, user decision)*. **The ceiling is 30 files per call, counted across images, video and audio together.** How the 30 are filled is §4's Seedance ingredients section below — **ingredients are information, never frames** (V7.68.0): characters, voice clips, the location, the product and info cards; no master or start frame is made or attached.
 
 **Wan 3.0** *(new at V7.49.3 — vendor-documented, not yet measured in this pipeline)* — Prose, not JSON. A single unified model covering T2V, I2V, reference-to-video and edit; I2V takes a first-frame image with an optional last frame, 2–30s, 480p/720p/1080p, the five aspect ratios including 9:16, audio generated by default. Two rules and two warnings:
 
@@ -242,16 +242,16 @@ GPT Image 2 (April 2026) was superseded by **GPT Image 2.5** on 8 September 2026
 |---|---|---|
 | **Any beat carrying a readable wordmark with NO person in frame** — hero product, pack, guarantee, typed object beats | `gpt_image_2_5`, `variant: sunburst`, `quality: high`, `resolution: 2k`, product reference under `image_references`, `REF-PROD` in prose exactly as on any other call | **Routed.** Held and worn wordmark beats have hands and limbs in them and route to `nano_banana_pro` (V7.53.0, below) |
 | Avatar sheet (§19) | `gpt_image_2_5`, `sunburst`, `high`, 2k, no reference | **Routed — measured.** Two sheets, two face types, identity and grid held, best close-up texture in the pipeline. `gpt_image_2` at `high`/2k is the fallback |
-| Candid B-roll face seeds (§22T) | `nano_banana_pro` | **Sunburst withdrawn (V7.53.0)** — anatomy failures |
+| Candid B-roll face seeds (§22T) | `gpt_image_2_5` Sunburst (V7.72.0) | Nano Banana retired from realistic work by the user |
 | Mechanism A–C | Nano Banana stays | Renders, measured; and OpenAI's classifiers are stricter than Nano Banana's — §5's safe vocabulary is mandatory, not advisory, on any anatomy beat that routes here |
-| Volume B-roll, no type | `nano_banana_2`; Sunburst only where no person is in frame | — |
-| **Any Mode 1 beat with a human body in frame** — face, hands, limbs, full figure | **Nano Banana only.** GPT Image 2.5 withdrawn at V7.53.0 | **User-observed failure across builds:** Sunburst almost always renders people with malformed hands, missing limbs and missing heads. Avatar sheets are the one exception — measured, and gated by the §19 panel check with its body count |
+| Volume B-roll, with or without people | `gpt_image_2_5` Sunburst (V7.72.0) | — |
+| **Any Mode 1 or Mode 4 beat with a human body in frame** — face, hands, limbs, full figure | **`gpt_image_2_5` Sunburst** (V7.72.0; was Nano Banana only at V7.53.0) | **User decision, 2026-09-29:** "with the new prompts GPT Image will be the best bet… all realistic Mode 1 and Mode 4 on GPT Image, no Nano Banana Pro in realistic". The V7.53.0 body failures were logged on the old 3,000–5,200-character stacked prompts; §6A prompts and the A/B pair (two Sunburst renders) are the answer to them. Watched in Open Decisions |
 | **Mode 2 / Mode 3 — any beat** | Nano Banana only | **Locked** (§18A rule 6) |
-| **Mode 4 — any beat** | **Routes exactly as Mode 1**, including the V7.53.0 body rule | **Locked** (§18A) |
+| **Mode 4 — any beat** | **Routes exactly as Mode 1**: Sunburst on every class except anatomy / mechanism (V7.72.0) | **Locked** (§18A) |
 | **Mode 5 — any beat** | Nano Banana only, exactly as Mode 2 | **Locked** (§18A rule 6) |
 | **Where the route is decided** | **§18A, at script absorption** | A post-lock change is a §34 correction |
 
-**The body rule (V7.53.0).** GPT Image 2.5 fails on human anatomy often enough that no beat with a person in it is routed to it, and no prompt wording is expected to fix that — this is a routing decision, not a wording problem. Its two strengths, type and product preservation, are kept where no person appears. **Cost, stated:** people beats now depend on the Nano Banana route, which is exactly the route carrying the §5 connector fault, so model-critical people beats run in the platform's own interface until that fault is fixed.
+**The body rule (V7.53.0) — retired at V7.72.0 by the user; kept here as history.** GPT Image 2.5 fails on human anatomy often enough that no beat with a person in it is routed to it, and no prompt wording is expected to fix that — this is a routing decision, not a wording problem. Its two strengths, type and product preservation, are kept where no person appears. **Cost, stated:** people beats now depend on the Nano Banana route, which is exactly the route carrying the §5 connector fault, so model-critical people beats run in the platform's own interface until that fault is fixed.
 
 **Two catalogue traps, read off the per-model schema (§5).** `quality` **defaults to `low`** and `resolution` **defaults to `1k`** on both models. Neither is ever omitted: every call passes `quality: high` (or `xhigh`/`max` on 2.5 where the beat is a pack shot) and `resolution: 2k`. A GPT Image frame that reads soft or under-detailed is checked for these two fields before the prompt is touched.
 
@@ -305,9 +305,10 @@ Read side by side, the two schemas differ in **three tags and nothing else**: `n
 | Talking heads | **Kling `kling-video-v3_0_omni`** | The only route with a measured voice, lip-sync and `prefer_multi_shots` history in this pipeline (§22C, §28F, §28H). Do not move talking heads to a new model mid-build — two generators is two voices for one character (§22C) |
 | Mechanism A–C | **Kling-direct, as long as the line (E6), 3s minimum** | Kling's 3–15s range lets the clip match the line; §12A's compressed blocks set the pace inside it |
 | Lifestyle B-roll | Kling by default; **Wan 3.0 in references mode or Seedance 2.5 in ingredients mode as sanctioned alternates** | Audio is discarded, so the voice argument does not apply; a B-roll beat can move routes without a continuity cost. Use the alternates to break a stubborn beat (§5's routing fallback, now with two siblings), to spend the 2–30s range on a demonstration that must play uncut through the proof (§30B), or wherever a recurring subject's face must show small or turning — references mode establishes the face from the sheet, not the seed |
-| Talking heads on Seedance | **Mode 4: the default route**, with each speaker's voice master as an audio ingredient. **Mode 1: permitted**, Kling stays the default. Both are override-against-measurement until the voice-lock test runs (Open Decisions) | The audio ingredient is the reason to want it |
+| Talking heads on Seedance | **Mode 4: the default route**, with each speaker's voice master as an audio ingredient. **Mode 1: permitted**, Kling stays the default — **on a hook, only on the user's call** (row below, V7.68.2). Both are override-against-measurement until the voice-lock test runs (Open Decisions) | The audio ingredient is the reason to want it |
 | Talking heads on Wan | **Blocked until the voice-lock test passes** (Open Decisions) | The audio-reference slot is the reason to want it; until it is shown to carry timbre, a prose-model talking head is a second voice for the character |
 | Hero product / sweep | Kling by default | R4 single-axis moves are measured on Kling |
+| **Hooks on Seedance** *(V7.68.2)* | **Only on the user's call** — named in the intake (`ADJUST`, `DIRECTIONS`) or in a message, per build or per hook. Otherwise a hook takes its normal route (Kling; HeyGen for a talking-head hook, §22U). **The agent never picks Seedance for a hook on its own — in Manual or Automatic, not as a fallback, not to break a stubborn beat.** Films (Modes 4–5) are Seedance throughout and are unaffected | User, 2026-09-29: "the hook Seedance are called and not automatic" |
 
 **A route change on any beat is an iteration and ships its prompt** (§16). **A route change on a talking head is a §34 correction** and reissues every talking head in the act, because the voice changed with the model.
 
@@ -336,34 +337,35 @@ First-frame mode uses these two models as a slower Kling. **References mode is t
 
 **NORMATIVE — `REF-MANIFEST` — see Appendix A.**
 
-### Seedance 2.5 — ingredients mode, every call *(new V7.54.1 — user decision; visual check pending)*
+### Seedance 2.5 — ingredients mode, every call *(new V7.54.1 — user decision; rebuilt V7.68.0 — ingredients are information, never frames; visual check pending)*
 
-**Every Seedance call is an ingredients call.** No start frame is uploaded. The approved frame for the shot goes in as `@image1` and the manifest names it as the opening composition, so the composition discipline of §6 and §24H is kept, while the model also sees everyone, everything and everywhere the shot touches. **The ceiling is 30 files per call**, images, video and audio counted together.
+**Every Seedance call is an ingredients call, and its ingredients are information, not frames** *(V7.68.0, user 2026-09-29: "for using the Seedance we don't need a master — we just need the characters, the voice clip, the location and important ingredients… like where the strap should go, so everyone knows; we need infos for ingredients, not frames")*. **No master, no start frame, no end frame, no scene frame is generated or attached for a Seedance shot.** The model is given who is in the shot, how they sound, where it happens, what the product is and the facts it must get right; the prose writes the shot itself — scale, angle, focus, light side, blocking, the one action (§24K, §27G, §30I–§30K). **The ceiling is 30 files per call**, images, video and audio counted together.
 
 **Full potential means every file earns a role, not that every slot is filled.** An ingredient the prose does not name is one the model may ignore or misread, and two ingredients that disagree make it ambiguous which one wins. So the pack is built by role, in a fixed order, and **every file is named in `ING-MANIFEST` with its handle and its job.**
 
 | Order | Group | Content | Up to | When |
 |---|---|---|---|---|
-| 1 | **Composition** | The approved frame for this shot (§6 seed, or the §24H coverage frame) | 1 | **Always** |
-| 2 | **Scene** | The scene master, then the approved frames of the other shots in the scene; on a MATCH CUT or CONTINUOUS join, the bridge frame from the previous scene | 6 | Any shot in a scene with more than one frame |
-| 3 | **Characters** | For each person in frame: their §19 sheet, plus up to two approved stills of them from this film | 3 per person | Anyone in frame |
-| 4 | **Product** | The canonical reference, plus the view references that match the beat (worn front, side or rear; held) — **named as views of one object** | 4 | Product in shot |
-| 5 | **Place** | The location plate (PLATED only, §30C), the property plate on dwelling interiors (§30G), one sightline or view-out frame where it applies | 3 | As the location tier allows |
-| 6 | **Look** | One or two approved frames from earlier scenes that carry the film's look best (Mode 4), or its capture register (Mode 1) | 2 | Every call after the first approved scene |
-| 7 | **Voice** | Each speaking character's voice master, 5–10 seconds, **recorded neutral** — it sets who they sound like, never how they feel (§24I) | 1 per speaker | Any shot with dialogue |
-| 8 | **Motion** | **Our own approved clips only:** the previous shot of this scene when this shot continues its action | 2 | Match on action. **Never external footage** |
+| 1 | **Characters** | For each person in frame: their §19 sheet — face, age, hair and build | 1 per person | Anyone in frame |
+| 2 | **Voice** | Each speaking character's voice clip, 5–10 seconds, **recorded neutral** — it sets who they sound like, never how they feel (§24I, §22U) | 1 per speaker | Any shot with dialogue |
+| 3 | **Location** | The location plate (§30C), the property plate on dwelling interiors (§30G) | 2 | Every shot |
+| 4 | **Product** | The canonical reference, plus the one view that matches the beat — **named as views of one object** | 2 | Product in shot |
+| 5 | **Info** | **Info cards** — one fact per card that the model must get right and the prose alone cannot carry (below) | 6 | Whenever such a fact is in shot |
 
-A two-hander dialogue shot with the product in frame lands around 26 files. If a pack would exceed 30, **drop in this order:** look frames → extra scene frames → extra character stills → product views beyond the canonical and the one matching view → motion clips. **Never dropped:** the composition, one sheet per person in frame, the canonical product reference when the product is in shot, the scene master in Mode 4, and a voice master for every speaker.
+**Info cards.** An info card is an image made (or taken from the Drive) for one fact, so everyone — the model, the reviewer, the team — sees the same thing: **where the product sits on the body** (the Product Sheet's placement point, §8A — the spot marked on the body), how it is worn or fastened, the story day's outfit when it differs from the sheet (§14, §21), a prop's state, an on-screen object that must read (a badge, a label, a screen). Rules: **one fact per card**; the fact is written as a caption on the card and again in its `ING-MANIFEST` clause; marks (a circle, an arrow, a label) are guidance only and **never appear in the render** — the manifest says so on every card; a card follows the Product Sheet and the §7 references, never invents; it is made on the §5 image route, one render per call, and goes on the board as its own card for Confirm / Fix before any clip that uses it. A card with two facts is split; a card that contradicts a sheet or plate is remade.
+
+If a pack would exceed 30, **drop in this order:** product views beyond the canonical → info cards the prose can carry alone → the property plate. **Never dropped:** one sheet per person in frame, a voice clip for every speaker, the location plate, the canonical product reference when the product is in shot, and every info card for a fact in shot.
 
 **Five rules for the pack:**
 
-1. **Nothing in the pack may contradict anything else in it.** A frame with a prop in a different state, a different outfit, an old look or a retired geometry is never attached. The §5 never-attach list holds in full: baked type, two units, ring marks, prohibited elements.
-2. **Sheets carry faces, never wardrobe.** A §19 sheet shows the reference outfit, not the story day's. The manifest says so on every sheet, and the outfit comes from the scene frames. Without that clause the sheet's clothes win.
+1. **Nothing in the pack may contradict anything else in it.** A card with a prop in a different state, a different outfit, an old look or a retired geometry is never attached. The §5 never-attach list holds in full: baked type, two units, ring marks, prohibited elements.
+2. **Sheets carry faces, never wardrobe.** A §19 sheet shows the reference outfit, not the story day's. The manifest says so on every sheet; the outfit comes from the prose and, when it matters, a wardrobe info card. Without that clause the sheet's clothes win.
 3. **Every view of the product is named as a view of the same object.** Several angles help only when the manifest makes it impossible to read them as several products.
-4. **One moment per prompt still holds**, except a Mode 4 MULTI-SHOT scene (§29). A pack of thirty images reads to the model as a storyboard even more readily than a pack of four, so the no-cut instruction is stated in the prose, not assumed.
+4. **One moment per prompt still holds**, except a Mode 4 MULTI-SHOT scene (§29). A pack reads to the model as a storyboard readily, so the no-cut instruction is stated in the prose, not assumed.
 5. **Duration stated, never `auto`; 720p; 9:16.**
 
-**What is checked on the first frame, in addition to §5:** the composition is `@image1`'s, not a new one assembled from the pack · every face is its own sheet's, not a blend of two characters · the wardrobe is the scene's, not the sheet's · the product is its canonical geometry · the room matches the scene master · the look or capture register survived. A pack of clean references pulls toward a clean render, so the register blocks are stated in full in the prose on this route, never inherited.
+**Continuity without frames.** Shots of one scene share the same sheets, voice clips, plate and cards, the same `COLOUR-KEY` and the same state-track clauses (§24H) in the prose — that is what holds them together. The scene's first approved clip becomes its colour and light reference for the clips after it (§30L).
+
+**What is checked on the first frame, in addition to §5:** every face is its own sheet's, not a blend of two characters · the wardrobe is the story day's, not the sheet's · the product is its canonical geometry, placed and worn as its info card shows · no info-card mark, arrow or caption appears · the room is the plate's · the composition is the prose's · the look or capture register survived. A pack of clean references pulls toward a clean render, so the register blocks are stated in full in the prose on this route, never inherited.
 
 **NORMATIVE — `ING-MANIFEST` — see Appendix A.**
 
@@ -398,7 +400,7 @@ I2V   Kling AI → kling-video-v3_0_omni      (image_1 = that URL)
       Higgsfield → kling3_0                 (start_image = the job id)
         or, B-roll only
       Wan 3.0 image-to-video                (image_url = that URL, first-frame mode)   — unverified
-      Seedance 2.5 ingredients              (that frame as @image1, up to 30 files)   — unverified
+      Seedance 2.5 ingredients              (no frame: sheets, voice, plate, product, info cards; up to 30 files)   — unverified
 ```
 
 The two Kling routes are live and measured. Higgsfield-to-Higgsfield is fewer moving parts; Kling-direct gives finer control over `prefer_multi_shots`, duration granularity (3–15s vs 5/10), and audio.
@@ -412,7 +414,9 @@ Prompt quality is half the job. Most product drift traces to execution, not word
 
 **Every generation goes through the connector named here and no other.** A call routed anywhere else is a failed generation, even if it renders.
 
-**One render per call — never variants** *(correction 2026-09-26, user: "I don't want to waste credits")*. Every generation call makes **one** image or **one** clip: Higgsfield `count` 1, Kling `imageCount` / `image_count` 1, one Kie task per render. No "a/b" sets, no 2–4 variants of the same prompt, no batch of the same beat twice — a variant is paid for whether it is used or not. A Fix is answered with one new render; if it misses, the user presses Fix again. The only exceptions are the §22U voice source (at least two Kling takes, by design) and a user who asks for more than one in so many words, for that call only.
+**One render per call — never variants** *(correction 2026-09-26, user: "I don't want to waste credits")*. Every generation call makes **one** image or **one** clip: Higgsfield `count` 1, Kling `imageCount` / `image_count` 1, one Kie task per render. No "a/b" sets, no 2–4 variants of the same prompt, no batch of the same beat twice — a variant is paid for whether it is used or not. A Fix is answered with one new render; if it misses, the user presses Fix again. The only exceptions are the §22U voice source (at least two Kling takes, by design), **the A/B beat-image pair below**, and a user who asks for more than one in so many words, for that call only.
+
+**Beat images are an A/B pair** *(V7.70.0, user 2026-09-29: "generate 2 images all the times and show it in the artifact and have a button which one to use, and if both are incorrect then a fix")*. Every **beat image** in Modes 1–3 — a B-roll or hook start frame, and a pinned beat's end frame — is made **twice, from the same §6A prompt, one render per call**, on the models below: **realistic (Mode 1 and Mode 4, V7.72.0) → two `gpt_image_2_5` Sunburst renders**, one call each; **anatomy / mechanism and Modes 2, 3 and 5 → two `nano_banana_pro` renders** (§18A; `nano_banana_2` only as the alternative, V7.72.1). Two renders give the reviewer a choice; a pair on one model is still two independent draws. Both go on the card at once (§16A); the reviewer presses **Use A**, **Use B**, or **Both wrong · Fix** — a Fix makes a new pair from the corrected prompt. The unchosen render moves to the Old versions board like any replaced version. Cast sheets, plates, voice-source frames, info cards, the film modes and every video stay one render per call. Each render's **logged** model is recorded; when the connector logs the same model for both (the Higgsfield Nano Banana routing fault, below), the card says so and the pair is remade on the Kie route.
 
 | Job | Connector | Model |
 |---|---|---|
@@ -536,7 +540,7 @@ A start frame that already contains the action gives the video model nowhere to 
 
 **This is the load-bearing division in the whole pipeline and it is what makes the character budget payable.**
 
-Anything that is a **property of the frame** goes in T2I at full length, where there is no ceiling: capture characteristics, lighting, surface and environment, wardrobe, product geometry, style, grade.
+Anything that is a **property of the frame** goes in T2I, not I2V: capture characteristics, lighting, surface and environment, wardrobe, product geometry, style, grade. **For a beat image (B-roll or hook frame) that means the §6A short form, not the full Appendix A blocks** *(V7.70.0)* — "no ceiling" is retired for beat images: the long stacked prompt was the main source of distorted and off-line frames.
 
 Anything that is **change over time** stays in I2V: motion arcs, camera arcs, delivery, gesture chains, ocular arcs, continuity negatives.
 
@@ -547,6 +551,24 @@ I2V then references rather than restates. See `INHERIT-CAP`, `INHERIT-SUBJ` and 
 Frame with headroom, lead room, and empty space where the movement is going. **A perfectly composed still is usually a badly composed start frame.**
 
 ---
+
+## 6A. Beat Image Prompt — short and single-minded *(new V7.70.0)*
+
+**Origin:** user, 2026-09-29 — "the image in B-rolls… 80–90% of the time are distorted or not connected to the script line"; "we really need a shorter but much more powerful prompt". The Fix notes across five builds traced it to the prompt, not the model alone: beat prompts had grown to 3,000–5,200 characters by stacking every "every T2I" block from Appendix A (camera lock, capture block, whole-body anatomy, face description, location plate, angle, focus, light, colour key) plus 30–60 "no …" items. The blocks contradicted each other (a no-face close-up carrying a full face description; "the hands in focus" on a shot of a knee), the image models have no negative prompt so each "no third leg" named the fault into the frame, and the spoken line was never in the prompt, so nothing held the picture to what is said.
+
+**Scope:** every beat image — B-roll and hook start frames and pinned end frames — all modes. Cast sheets (§19), location and property plates (§30C/§30G), voice-source frames and info cards keep their own formats. **For a beat image this section replaces the "every T2I" placement of the Appendix A blocks** (`CAM-LOCK`, `CAP-*`, `BODY-WHOLE`, `ANGLE-LINE`, `FOCUS-LINE`, `LIGHT-SHOT`, `COLOUR-KEY`, `PHYS-FRAME`, `PLACE-LOCK`, the `NEG-*` lists): each block's *intent* is still owed, said in one short clause, only when the shot needs it. The strings stay locked and whole for the formats above and for video prompts.
+
+**The form — ≤ 1,200 characters (target 600–900), in this order:**
+1. **The line and the one thing it shows.** Opens with the spoken line verbatim in quotes and the single picture that shows it: `For the line "…": her fingertip presses the soft spot just below her kneecap.` One subject, one action caught mid-way (§6 non-pre-emption), one moment. A line with no picture of its own is flagged at step 5, never padded here.
+2. **The framing, once.** Shot size, angle and side in one clause (§30I), the focus plane only when it is not obvious (§30J). One camera — never two framings in one prompt.
+3. **Only the references this shot uses, in this order:** the product photo(s) first when the product shows, with a **true-size anchor** (`12 × 5 cm, about the size of a matchbox`) and its placement point (§8A) in one sentence; the cast sheet only when a face or identifying body shows (`the same woman as the attached sheet` — the sheet carries the face, the prose never re-describes it); the location plate only when the room shows, as soft background in a phrase. A reference not in the picture is not attached and not named.
+4. **Two or three physical facts that decide right or wrong** — taken first from the House Taste (§34A) and the product's `fix_patterns.md` — written as what is wanted: `exactly two legs — the right straight out, the left out of frame`, `the strap's hard shell centred just below the kneecap`, `one hand only`. These are the Fix-note faults of the beat's class, turned positive.
+5. **The register in one line:** Mode 1 `An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.` (the `CAM-LOCK` and `CAP-*` intent); the light side and scene colour in a phrase when a location shows (§30K/§30L).
+6. **At most five "no …" items**, only for faults that keep recurring on this beat class and cannot be said positively. Never an `AVOID:` list.
+
+**Checks:** `scripts/preflight.py` with `"kind": "image"` (≤ 1,200 characters, the line present, ≤ 5 negatives, no face block or cast sheet on a no-face shot, no plate on a no-room shot, product photo first with a size anchor, the A/B pair routed by §18A — two Sunburst renders on realistic work, two Nano Banana Pro renders on anatomy and in Modes 2, 3 and 5). Any FAIL → not sent. A Fix note is applied by rewriting the prompt in this form, never by appending another paragraph or another "no …".
+
+**Unverified:** the hit-rate gain is not yet measured — the A/B picks on the board are the measurement (Open Decisions).
 
 ## 7. Reference Image Rule
 
@@ -1737,7 +1759,12 @@ Every generation of a build — image and video, both run modes — is logged on
 - **Confirming moves the run on** *(user's named change, 2026-09-26)*: in Manual run, once every card in a group is confirmed (for example every cast image), the board says so and moves to the next group that still needs work (Cast → Locations → Voice → Hook 1 → Act 1 …). Clicking anywhere in the viewer's details panel, including the Fix box, never closes the viewer.
 - **The Final output tab** *(user's named change, 2026-09-27)*: beside Board, Manual run and Plan, the board shows the build's finished videos — one card per hook variant (Hook 1 + body, Hook 2 + body…, from the hooks on the board), or the finished film on a film build — each with a player, its length, size, the hook's opening line, what it was made from, its status, Confirm / Fix and Download, plus a strip across the top and Download all. A variant not yet cut shows as "Not cut yet", so the tab never sits empty. The agent writes each finished video as an Edit-stage card with `final: true` (beat `FINAL-HK<n>`, `hook`, `madeFrom`) the turn it is exported; in Manual it lands as To check for the final review, in Automatic the agent confirms it and these are the delivered videos.
 - **The B-roll bank — confirmed B-rolls are never deleted** *(user's named change, 2026-09-28: "don't delete the final B-rolls, we need those… put a download all, we will put those in the B-roll bank")*: the current, confirmed version of every hook and B-roll video stays on the board it lives on at full quality — no storage clean-up, board split or move to Old versions ever deletes it, and a file is deleted from Current only when it is a replaced or unchosen version whose copy on the Old versions board is confirmed. The Board tab's B-roll card and Manual run (beside "Only what needs me") carry **Download all B-rolls**, and the Board tab's Hooks card carries **Download all hooks** (the confirmed hook videos only, same zip layout): one zip of every confirmed hook and B-roll video, full quality, in a folder per act, with `broll_bank.md` (beat, title, script line, length, clean part, prompt) for the team's B-roll bank.
+- **Seedance beats show their ingredients, then the video** *(user's named change, 2026-09-29: "whenever we are using the Seedance it will always show the images, the ingredients, and then the video — not like the B-rolls, 1 image then video")*: a Seedance 2.5 shot is made from several reference images (ingredients mode, §4), not one start image, so its card never has an Image step. The agent writes the beat's `ingredients` — `[{label, role, ref}]`, `ref` = the card used (a cast sheet, a voice clip, a location plate, an info card), or `{label, role, asset, parts, type}` for a file with no card of its own (a product photo from the Drive); each entry also carries `kind` (`character` · `voice` · `location` · `product` · `info`) and, on an info card, `note` — the one fact it shows, which the board prints under it (V7.68.0: ingredients are information, never frames, §4) — on the video's generation doc, with `model` = the Seedance model and no `imageAsset`. Manual run shows an **Ingredients** box before the Videos box (every beat's ingredients with their kind, label, fact and status — a voice clip as a playable voice tile — **Download all ingredients**); the video card shows the ingredient strip above its details; the viewer opens the video with an **Ingredients** tab beside it. The video unlocks when every ingredient is confirmed: a newly generated ingredient is its own card (`flow: ["image"]`), checked with Confirm / Fix like any image; a file with no card counts as given. Connector shown: Kie AI (§5). Each ingredient carries its number as the prompt names it (`@image1`…, in `role`). **The same holds wherever Seedance is used** — a hook, a talking head, a B-roll, or a VO take / voice master cut from a Seedance clip (its audio row lists the images under "Made in Seedance from").
+- **Reference images on every image** *(user's named change, 2026-09-29: "same as how the images are made, I also want to know what are the reference images used")*: every generated image lists the images it was made from in `imageRefs` (same shape as `ingredients`: the cast sheet, location plate, master frame, product photo…), shown under the image on its card and in the viewer's details.
+- **Films run scene by scene** *(user's named change, 2026-09-29: "Scene 1 all the images then the clips in Scene 1, then Scene 2 and so on")*: on a film build (Modes 4–5, pure Seedance) every shot card carries `scene: <n>`. Manual run groups by scene after the setup stages — **Scene 1**: its Images (the scene's info cards and any new plates — no master or frames on Seedance, §4), the Ingredients per clip, then its Clips; then **Scene 2**… Scenes are never lumped together: on the Board tab each scene is its own section in the stage strip (Scene 1, Scene 2…, where the B-roll stage sits), showing its Images first, then its Clips.
 - **The board is always shown** *(user's named change, 2026-09-27)*: in both run modes the agent opens the build's board in the user's panel (Artifact `open`) when a run starts or resumes and at every delivery (steps 1–3, 4–5, each hook, each act, the edit, the finished videos). Automatic writes and shows the board exactly as Manual does — the run mode changes who confirms, never whether the board is shown.
+- **A/B image pairs** *(user's named change, 2026-09-29: "show it in the artifact and have a button like which one to use, and if both are incorrect then a fix")*: a beat image made as a §5 pair shows both renders side by side on its card, labelled **A** and **B** with each model, and the buttons **Use A**, **Use B** and **Both wrong · Fix** (status *Pick one*); clicking either opens it in the viewer with the same choice and a *See option A/B* switch. The agent writes both renders into `imageVersions` (each with `pair: "A"|"B"`, its model, connector and logged model), points the step fields at A and sets `imagePair: [vA, vB]`. **Use** copies the chosen version into the step fields, confirms the image and records `imagePick` (the chosen `v`) and `imageUnused` (the other), clearing `imagePair`; the agent then moves `imageUnused` to the Old versions board. **Both wrong · Fix** is the ordinary Fix — the note covers both, and the agent answers with a new pair. A card without `imagePair` behaves as before. In Automatic the agent judges both (§22V) and uses the better `USE`.
+- **Video will show** *(V7.71.0)*: an image card whose beat has a video shows its `motionPlan` under the script line (card and viewer), so picking the image also confirms the motion (§22X).
 - **Cards are added only by the agent:** no build picker, no "new card" control. In Automatic (E0) the agent confirms its own cards; the board stays the record.
 
 **The design is locked.** `dashboard/generation_board.html` is the spec at implementation depth, the way the carousel plate above is: its layout, grouping, labels, buttons, viewer and file handling are the accepted design. A session never redesigns, restyles or simplifies it, and never publishes a board from anything but this template. It changes only when the user asks for a named change; that change is made in the template, republished to every board, and logged here as a correction (§34). A board that deviates from the template is a §34 correction, not a style choice.
@@ -2138,29 +2165,27 @@ The script is read for four things before choosing: **how many beats carry a rea
 | Model | Call | Strength | Status |
 |---|---|---|---|
 | `nano_banana_pro` | default params, 2k | Text and diagrams; measured §22T candid register | **Measured** — but see §5: the connector route has been delivering `nano_banana_2` |
-| `nano_banana_2` | default params, 2k | Fast volume, identical register outside type | **Measured.** Approved Mode 2 worn beat ran on it (17 Sep 2026) |
-| `gpt_image_2_5` **Sunburst** | `variant: sunburst`, `quality: high` (`xhigh` on pack shots), `resolution: 2k` | Precision tier: text >95%, reference preservation | **Arsenal — the only GPT Image variant routed; sanctioned for any Mode 1 class except mechanism; measured on sheets** |
+| `nano_banana_2` | default params, 2k | Fast volume, identical register outside type | **The alternative only (V7.72.1):** used when `nano_banana_pro` can't run (route down, refused, out of credits on its route), logged on the card with the reason. Approved Mode 2 worn beat ran on it (17 Sep 2026) |
+| `gpt_image_2_5` **Sunburst** | `variant: sunburst`, `quality: high` (`xhigh` on pack shots), `resolution: 2k` | Precision tier: text >95%, reference preservation | **The realistic model (V7.72.0): every Mode 1 and Mode 4 class except anatomy / mechanism** |
 
 **The GPT Image row is Mode 1's.** Mode 2 and Mode 3 choose from Nano Banana only (rule 6). **Three models exist for this pipeline and no others: `nano_banana_pro`, `nano_banana_2`, `gpt_image_2_5` Sunburst.** `nano_banana_flash` and GPT Image 2.5 Flare are retired and are never entered in a lock.
 
 ### Part 3 — Default lock
 
-**Mode 1**
+**Mode 1** *(V7.72.0, user 2026-09-29: "for all realistic Mode 1 and Mode 4 we will use GPT Image, no Nano Banana Pro in realistic; Nano Banana Pro just stays at anatomy and Pixar")*
 
-| Beat class | Choosable |
+| Beat class | Model |
 |---|---|
-| Avatar and recurring-subject sheets | Sunburst (measured) · GPT Image 2 fallback |
-| Readable wordmark, no person in frame | `nano_banana_pro` · Sunburst |
-| Readable wordmark with hands or a body — held, worn, seating, demo | `nano_banana_pro` only |
-| Candid face seeds (§22T) | `nano_banana_pro` |
-| Talking-head seeds | `nano_banana_pro` |
-| Volume B-roll with a person | `nano_banana_2` |
-| Volume B-roll, no person | `nano_banana_2` · Sunburst |
-| Mechanism A–C | `nano_banana_2` · `nano_banana_pro` only — classifier threshold |
+| Avatar and recurring-subject sheets | Sunburst |
+| Location and property plates | Sunburst |
+| B-roll and hook frames — with or without people, worn, held, seating, demo, wordmark | Sunburst (A/B pair: two Sunburst renders, §5) |
+| Candid face seeds (§22T), talking-head seeds, voice-source frames | Sunburst |
+| Info cards | Sunburst |
+| Anatomy / mechanism A–C | `nano_banana_pro` (A/B pair: two Pro renders); `nano_banana_2` only as the alternative (V7.72.1) |
 
 **There is no variant choice at step 2** *(V7.51.3)*. Sunburst is the only GPT Image variant routed, so the step-2 decision is only whether a beat class goes to GPT Image or to Nano Banana, recorded in the lock with a one-line reason.
 
-**Mode 4 — Realistic Film.** Takes the Mode 1 table exactly, including rule 7. The lock also records the Film Look Sheet and its compiled `LOOK-[BUILD]` string, and a look change after step 2 is a §34 correction that reissues every generated frame. **Video: Seedance 2.5 in references mode for dialogue scenes and any MULTI-SHOT scene, 720p; Kling or Seedance for single-shot inserts, as the lock records.**
+**Mode 4 — Realistic Film.** Takes the Mode 1 table exactly (Sunburst on every class except anatomy, V7.72.0). The lock also records the Film Look Sheet and its compiled `LOOK-[BUILD]` string, and a look change after step 2 is a §34 correction that reissues every generated frame. **Video: Seedance 2.5 in references mode for dialogue scenes and any MULTI-SHOT scene, 720p; Kling or Seedance for single-shot inserts, as the lock records.**
 
 **Mode 5 — Pixar Film.** Takes the Mode 2 table below. The lock also records the Animated Film Look Sheet and its compiled `LOOK-[BUILD]`, and a look change after step 2 is a §34 correction. **Video: Seedance 2.5 in ingredients mode at 720p for dialogue and MULTI-SHOT scenes; Kling or Seedance for single-shot inserts.**
 
@@ -2168,20 +2193,20 @@ The script is read for four things before choosing: **how many beats carry a rea
 
 | Beat class | Model |
 |---|---|
-| Every beat class, including worn and product beats | **`nano_banana_2`** |
+| Every beat class, including worn and product beats | **`nano_banana_pro`** (A/B pair: two Pro renders) — `nano_banana_2` only as the alternative (V7.72.1, user 2026-09-29: "just use Nano Banana Pro and not 2; Nano Banana 2 is just an alternative") |
 | Hero beats where the wordmark must render — sheets, hero product, pack, guarantee | `nano_banana_pro`, **run in the platform's own interface** (§5) |
 
-The wordmark on any `nano_banana_2` stylized beat is checked on the first frame; if it garbles, it is blanked and added in CapCut (§17).
+The wordmark on any stylized beat is checked on the first frame; if it garbles, it is blanked and added in CapCut (§17).
 
 ### Rules
 
 1. **Every GPT Image call passes `variant: sunburst`, `quality` and `resolution` explicitly.** Catalogue defaults are `flare` / `low` / `1k`, so an omitted variant runs the retired one and an omitted quality runs soft. A soft or off-variant frame is a parameter check before it is a prompt check, and a job logging `flare` is a failed generation (§5).
-2. **Reasoning-model guard on Mode 1 and Mode 4.** Sunburst reasons. `CAP-FILE`'s final clause and `NEG-FILE` are stated in full on every Mode 1 call to either; in Mode 4, `CAP-FILM` and `NEG-FILM` take their place and the check asks whether anything was beautified or glossed. The first-frame check adds: *has the model lit, composed or cleaned anything the prompt said nobody did?* If yes, the class reroutes and the finding is recorded.
+2. **Reasoning-model guard on Mode 1 and Mode 4.** Sunburst reasons. `CAP-FILE`'s final clause and `NEG-FILE` are stated in full on every Mode 1 call to either; in Mode 4, `CAP-FILM` and `NEG-FILM` take their place and the check asks whether anything was beautified or glossed. The first-frame check adds: *has the model lit, composed or cleaned anything the prompt said nobody did?* If yes, the class reroutes and the finding is recorded. On a §6A beat image the guard is the register line (`nothing staged or retouched`), not the full strings (V7.72.0).
 3. **The lock is recorded, not remembered.** Written into the step-2 locks and into the run ledger as `declared.model_lock{beat_class → model, variant, quality}`. Every completed job's logged model and params are read against it (§5).
 4. **Changing a locked model after step 2 is a §34 correction.** Two models render one prompt differently; it reissues every already-generated beat in that class.
 5. **Arsenal models enter a lock without a gating test** (V7.50.0, user decision). The per-batch first-frame check still runs on every batch.
 6. **Mode 2, Mode 5 and Mode 3 are locked to Nano Banana.** `gpt_image_2_5` is never routed in either mode, for any beat class. Not a default the step-2 read can override. A hybrid build takes the full menu on its Mode 1 acts only, and the lock table records the split by act.
-7. **No GPT Image on any beat with a human body in frame** (V7.53.0). Avatar sheets excepted, because the §19 panel check gates them. This rule outranks rule 5.
+7. ~~No GPT Image on any beat with a human body in frame~~ (V7.53.0) — **retired at V7.72.0 by the user:** realistic work runs on Sunburst with the §6A short prompts and the A/B pair; anatomy / mechanism stays on Nano Banana.
 
 **Delivery:** the Mode & Model Lock ships in the absorption delivery as a ledger widget — one row per beat class, the model and params, a status badge, and the step-2 read that justified it.
 
@@ -2526,6 +2551,11 @@ What the camera lock removes is only the cinema *lighting* vocabulary — shaped
 | **F2** Locked tripod | Mode 4 masters, two-shots, inserts | Framed and locked; one late partial pan or tilt | `RIG-F2` |
 | **F3** Shoulder | Mode 4 tension, arguments, a scene coming apart | Slow heavy float, reframes a beat behind the eyes | `RIG-F3` |
 | **F4** Slider | Mode 4 establishing shots, object and product beats — **only when the subject is still** (§24K) | Constant lateral move, foreground parallax | `RIG-F4` |
+| **F6** Pull-back reveal | Seedance, still subject: isolation, consequence (§24N) | Slow level pull away, the room revealed | `RIG-F6` |
+| **F7** Arc | Seedance, still subject: a power shift, a character seen anew (§24N) | ≤ 30° around at constant distance | `RIG-F7` |
+| **F8** Crane / pedestal | Seedance, still or in-place subject: opening or closing a scene (§24N) | Vertical only, 50–150cm | `RIG-F8` |
+| **F9** Lateral track | Seedance walks in profile on flat ground, 4–6 steps (§24N) | Parallel to the walk at constant distance | `RIG-F9` |
+| **F10** Dolly zoom | Seedance, still subject, at most once per film (§24N) | Face holds size, background stretches | `RIG-F10` |
 | **F5** Stabiliser follow | Mode 4 walks — **only where the reference edit follows a walk**: waist-up, flat ground, three or four steps (§24K). Otherwise a walk is F2, the subject crossing a locked frame | Constant-distance glide, the world sliding past | `RIG-F5` |
 
 ### RV-DRIFT and RV are chosen by what is doing the work *(V7.10 — measured)*
@@ -2844,6 +2874,8 @@ Judge the four takes in this order: **(1) every word of the script is present an
 
 **Automatic run mode only** *(correction 2026-09-26, user: "in manual runs I don't want the automatic checking, I want me to be the one who checks every generation")*. **In Manual the agent does not judge renders:** every image goes on the Generation Board as To check, and the user confirms it or sends it to Fix with a note (§16A). The agent regenerates only from the user's Fix note.
 
+**A/B pairs (§5, V7.70.0).** A beat image comes as two renders: judge both; use the one that is `USE`, or the better of two `USE`s (the line first, then product, body); two `REGENERATE`s make one Fix note for a new pair. The pick and the reason are recorded on the card.
+
 **Every generated image is opened and judged by the agent before anything is built on it.** The verdict is final. There are two outcomes: **USE**, or **REGENERATE** with the named fault and the named fix. The image is never passed on because it is "close".
 
 **Scope (Automatic):** every image the agent generated or was handed: cast sheets, property and location plates, seeds, start frames and hook frames.
@@ -2856,6 +2888,7 @@ Judge the four takes in this order: **(1) every word of the script is present an
 4. **Does it hold continuity?** Same person as the sheet (§19, §30E), same room as the plate (§30C, §30G), wardrobe for the story day (§14), axis and window side (§30C). **In a scene (§24H), judged in its scene, never alone:** against the master, the previous approved frame in story order and the shot's state-track row — eyes, face, hair, wardrobe state, hands, position, condition. A state that resets or appears without its cause, **or a colour off the scene's `COLOUR-KEY` and master (§30L, `light_check.py colour`)**, is a REGENERATE, and a continuity fault never ships as "the best of three" (§24H, Automatic — connected).
 5. **Is it the right register?** Mode and capture as locked (§18A, §22A, §22S), 9:16, framing scale (§22F), **the row's angle — height, side and foreground (§30I), not the model's eye-level default — and its focus: the named plane sharp, the depth as written (§30J), and its light: the key on the screen side the light plan gives, the act's light state, eyes catching light, none of the `NEG-LIGHT` tells (§30K)**, no garbled text (§17).
 6. **Will it animate?** It works as the start frame for the motion the beat needs (§6, §27A): room for the move, and the subject not frozen at the end state. **It is caught mid-action** (§27G rule 4): the weight already on one foot, the hand already moving, the head already turning — never a square, frozen pose. On a `pin_end` beat the end image is judged the same way and must match the start image in everything but the travel.
+7. **Would the user fix it?** *(V7.73.1)* Check it against every House Taste row and product fix pattern that applies (§34A) — they are the user's own past Fix notes. A render that breaks one is `REGENERATE · HT<nn>/FP<nn>: fault → fix`, even when questions 1–6 pass. On an A/B pair, the pick is the render that breaks none; the rule that decided goes on the card.
 
 ### The verdict line — shipped for every image
 
@@ -2884,6 +2917,7 @@ The fix is a named change to the prompt: a clause added, a string restated at fu
 5. **Does it hold continuity?** The subject matches the sheet, the room matches the plate, the wardrobe matches the story day, and the axis and screen direction match `GEO-LINE` (§30C, §30E). **In a scene (§24H): the join too** — this clip's true last frame against the next clip's true first frame (same state track, position, props, light), and no state appearing or vanishing inside the clip. **The colour joins too** (§30L): the clip's colours match its frame and its scene (`light_check.py colour`). **The voice joins too** (§24I part 13): the line sounds like the previous line of the same character unless the VOICE row gives a cause, and it matches the face. Once every clip of a scene passes, the scene is judged as one strip in cut order (`SC-xx · SCENE` verdict).
 6. **Is it technically clean?** 9:16, the stated duration (E6), no black frames, no garbled on-screen text, and no cut inside the clip unless the beat is MULTI-SHOT (§29).
 7. **Is there enough footage for its slot?** The clip covers its §30H slot at 1.0x, or at no slower than 0.8x. Otherwise it is REGENERATE at a longer duration.
+8. **Would the user fix it?** *(V7.73.1)* Check the clip against every applicable House Taste row and product fix pattern (§34A) — hands on the rail in an after-state shot, a move already done, an image-zoom feel, a stiff strap, a product the wrong size. A break is `REGENERATE · HT<nn>/FP<nn>: fault → fix`.
 
 The verdict line and the fix rule are §22V's: `<BEAT-ID> · <clip> · USE` or `… · REGENERATE · Q<n>: <fault> → <fix>`.
 
@@ -2893,10 +2927,12 @@ The verdict line and the fix rule are §22V's: `<BEAT-ID> · <clip> · USE` or `
 
 **Scope: every paid video call, both run modes, every connector — Seedance first, because it costs the most.** A video generation is the most expensive step in the pipeline, and it can only animate what the frame and the prompt already hold. So the checking happens **before** the call, on the image and the prompt, where a fault costs nothing to fix. **A call that has not passed preflight is never sent.**
 
+**Motion is confirmed at the image, never after the video** *(V7.71.0 — about half of the video Fix notes across two builds were the shot plan, not a distortion: "should be a productive B-roll", "show her struggling", "hands off the rail")*. When a beat's image prompt is written, its one-line **motion plan** is written with it (`motionPlan` on the card, shown as **Video will show** — "From this frame: he comes down 3 steps at a brisk pace, arms loose, ends on the bottom step"). Picking the image (Use A / Use B, or Confirm) confirms the motion too; a note on the motion is a Fix on the image card, before any video credit. The video prompt's action is that line, word for word (§35A). Automatic: the §22V `USE` covers it.
+
 ### The gate — four parts, in order, the first FAIL stops the call
 
-1. **The frame is approved.** Manual: the user's Confirm on the board. Automatic: §22V `USE` and, in a scene, the passed contact sheet (§24H). A pinned shot needs its approved end frame too.
-2. **The frame is ready to move** — the video-specific reading of the start frame, on top of §22V:
+1. **The frame is approved** — **on Seedance, every ingredient is approved** (V7.68.0: sheets, voice clips, plate(s), product references, info cards; there is no frame). Manual: the user's Confirm on the board. Automatic: §22V `USE` and, in a scene, the passed contact sheet (§24H). A pinned Kling shot needs its approved end frame too.
+2. **The frame is ready to move** — the video-specific reading of the start frame, on top of §22V (on Seedance: the ingredients agree with each other and with the prose, each info card holds one unambiguous fact, and the prose carries the staging below):
    - caught mid-action, with room in frame for the whole motion (the hand's path, the step, the turn) — nothing the motion needs will have to enter or leave the frame unless the shot says so;
    - hands either fully visible and correct or cleanly out of frame — never half-hidden at an edge, never overlapping each other or the product;
    - on a speaking shot, the mouth and eyes clear — no hair, hand, cup or shadow across them;
@@ -3235,7 +3271,7 @@ The mode is removed. No beat is written in it. `NEG-M2` is retired and the ID is
 
 **Small type garbles here exactly as in Mode 1** (§17). The wordmark is checked on the first frame; if garbled, blank it and add it in CapCut.
 
-**Image model — locked to Nano Banana** (§18A rule 6): `nano_banana_2` on every beat class; `nano_banana_pro` on hero wordmark beats, run in the platform's own interface.
+**Image model — locked to Nano Banana** (§18A rule 6): `nano_banana_pro` on every beat class; `nano_banana_2` only as the alternative (V7.72.1).
 
 **For a Pixar build told as a film — scenes, coverage, dramatic dialogue — use Mode 5 (§24J).** Mode 2 stays the register for short stylized ad beats.
 
@@ -3446,7 +3482,7 @@ Mode 3 sits close to the B-roll column of §37: no `dialogue`, no `delivery`, an
 
 ### The look is derived, never defaulted
 
-Mode 4 has no house look. **The kind of film — its grade, palette, glass, light, texture, movement, performance and sound — is derived for each build from the inspo and the script**, recorded on the **Film Look Sheet** (Build Sheet item 3b), and compiled into one locked string, `LOOK-[BUILD]`, pasted verbatim into every Mode 4 T2I. As with `VOICE-[CHAR]`, **paraphrase drift is look drift**: the string is compressed once and never reworded.
+Mode 4 has no house look — **except its base on the Seedance route: every Seedance film clip starts from the prestige streaming-series look (§24N, V7.69.0), and the derivation below runs inside it.** **The kind of film — its grade, palette, glass, light, texture, movement, performance and sound — is derived for each build from the inspo and the script**, recorded on the **Film Look Sheet** (Build Sheet item 3b), and compiled into one locked string, `LOOK-[BUILD]`, pasted verbatim into every Mode 4 T2I. As with `VOICE-[CHAR]`, **paraphrase drift is look drift**: the string is compressed once and never reworded.
 
 **The agent writes the Film Look Sheet — always** (2026-09-27, user). The user sets the mode and, optionally, `DIRECTIONS` (§18B); the agent derives every field and never asks the user to fill or approve it. `DIRECTIONS` steers the derivation where the inspo and script leave room. **Derivation order.** Step 1 measures the inspo (§42): luminance and contrast, the colour of shadows and highlights, saturation, depth of field by shot size, camera movement and its speed, cutting rhythm, and how the light is motivated. Step 2 reads the script for genre, era, tone and the emotional arc by act. Where the two disagree, **the inspo sets the look and the script sets how it moves across the acts** (the §11 colour script). Where neither decides a field, ask before the first frame.
 
@@ -3476,6 +3512,7 @@ Look Sheet field 2 is filled from this library, never from a generic "cinema cam
 | **Nostalgic, period, memory** | 35mm film — Kodak Vision3 250D (day) / 500T (night) on an ARRICAM LT | Panavision Primo · Cooke Panchro/i Classic | Film colour and halation; grain added in post, never generated |
 | **Big, epic, sweeping** | ARRI Alexa 65 or Mini LF | Panavision anamorphic (C-series / T-series) | Oval bokeh, horizontal streak flare — **only when field 6 calls for flare** (`NEG-LIGHT` otherwise drops it) |
 | **Indie, raw, handheld realism** | ARRI Alexa Mini, Super 35 | Zeiss Ultra Prime · vintage Cooke Speed Panchro | Slightly soft edges, character, less polish |
+| **Prestige streaming series** — the house base for every Seedance film clip, film hooks included; ads stay phone style (§24N, V7.69.1) | ARRI Alexa 35 or Mini LF · Sony Venice 2 · RED V-Raptor — the genre row above picks between them | ARRI Signature Prime · Zeiss Supreme · Cooke S7/i (spherical) | Motivated low-key light, deep shadows that hold detail, shallow separation, rich restrained colour |
 
 **One package per film** (a film never switches cameras between scenes, §24G one look). The package fills `CAM-FILM`'s `[CAMERA]` (body and format) and `[LENS FAMILY]`.
 
@@ -3566,6 +3603,8 @@ The frame matches `LOOK-[BUILD]` · highlights behave as field 6 states · one m
 
 **Scope:** every Mode 4 and **Mode 5** build. Any Mode 1 or Mode 2 build may adopt it by declaring it on the Build Sheet. In Mode 5, plates and sheets are rendered in the animated look, and the assembly is §24J's.
 
+**On the Seedance route (every Mode 4–5 clip) no frames are made** *(V7.68.0, user 2026-09-29 — §4)*: no master, no start, chained, end or bridge frame. Everything below that speaks of frames holds for its content, carried in the prose instead: the Scene Bible, the shot list, blocking, axis, state track, camera, light and colour plans are written as before and go into each clip's prose; **the scene image list is the scene's ingredient list** — the sheets, voice clips, plate(s), product references and the info cards the scene needs (a prop's state, the day's outfit, an insert object, where the product sits) — counted, each on the board for Confirm / Fix, and all approved before any clip of the scene. The frame rows (bridge, master, start, chained, end frames) apply only to a Kling or Wan shot in a declared adopting build.
+
 ### A scene is one place, one continuous time
 
 A scene is a maximal run of beats in one location in continuous story time. In Mode 4 a scene **is** a capture event (E8): it carries one outfit (§14), one light state, and one action line. Scene IDs run `SC-01`, `SC-02`…
@@ -3632,7 +3671,7 @@ A scene is a maximal run of beats in one location in continuous story time. In M
 - **Consecutive lines from the same position, with the same state, share one frame** — and one clip where the E6 duration allows — never a frame per line.
 - A listener and a speaker at the same scale from the same side are two positions (reverse angles), so both are rows; the same person twice from the same position is one.
 
-**A MULTI-SHOT clip still needs a start frame for every shot inside it** (row 3): the first shot's frame goes in as `@image1`, the others as ingredients (§24H video, §4). A walk in a locked frame (§24K) needs only its start frame, caught mid-step.
+**On Seedance a MULTI-SHOT clip needs no frames** (V7.68.0): each shot inside it is written in the prose on the scene's ingredients (§4). On a Kling or Wan shot in an adopting build, a MULTI-SHOT clip still needs a start frame for every shot inside it (row 3). A walk in a locked frame (§24K) needs only its start frame, caught mid-step.
 
 **Every row is counted before generation.** The list's total is the scene's image count, and the build's image budget is the sum of the lists. One render per call (§5); each image goes on the board as its own card the turn it lands — an end frame as `<beat>-END`, a prop reference as `<SC-xx>-PROP-<name>` — in the scene's act, Images box, as To check (Manual). The contact sheet (below) is laid out from this list, in shot order, with the end frames beside their start frames.
 
@@ -3677,7 +3716,7 @@ In an Automatic run (E0) the agent is the only check, so the scene is held to th
 
 ### Video from a scene
 
-Each single-shot beat animates its own approved frame (I2V, §6), and **no clip is generated before its call passes the §22X preflight**. Every Seedance clip, single-shot or MULTI-SHOT, runs in ingredients mode at 720p (§4): the shot's approved frame as `@image1`, then the scene master and the scene's other approved frames, the character sheets, the product views, the plates, the look frames, the voice masters and, on a continuing action, the previous approved clip — up to 30 files, each named in `ING-MANIFEST`. A MULTI-SHOT scene adds `MULTI-FILM` inside the prompt. The §27A arc and the F-rig apply to every shot; `INHERIT-FILM` carries the look.
+Each single-shot beat animates its own approved frame (I2V, §6), and **no clip is generated before its call passes the §22X preflight**. Every Seedance clip, single-shot or MULTI-SHOT, runs in ingredients mode at 720p (§4): the character sheets, the voice clips, the plate(s), the product references and the scene's info cards — no frame of any kind (V7.68.0) — up to 30 files, each named in `ING-MANIFEST`, with the shot written in the prose. A MULTI-SHOT scene adds `MULTI-FILM` inside the prompt. The §27A arc and the F-rig apply to every shot; `INHERIT-FILM` carries the look.
 
 ### Assembly — Mode 4 T2I
 
@@ -3891,7 +3930,7 @@ The frame matches `LOOK-[BUILD]` · every character is on model against their sh
 
 ## 24K. Film Motion & Camera Grammar *(new 2026-09-27 — Modes 4 and 5; visual check pending)*
 
-**Scope: every Mode 4 and Mode 5 clip, single-shot and MULTI-SHOT.** §24G–§24J made the film modes look and play like a film. This section makes them **move** like one without the distortion §27G measured: in a film the camera is a storyteller, but a video model breaks the same way a phone clip does when the camera and the body move at once. So the film camera keeps §27G's limits and gets its meaning from the scene's emotion instead of from movement for its own sake.
+**Scope: every Mode 4 and Mode 5 clip, single-shot and MULTI-SHOT.** On the Seedance route §24N widens the move library (F6–F10) and sets the series look, coverage and hook grammar; everything here still holds. §24G–§24J made the film modes look and play like a film. This section makes them **move** like one without the distortion §27G measured: in a film the camera is a storyteller, but a video model breaks the same way a phone clip does when the camera and the body move at once. So the film camera keeps §27G's limits and gets its meaning from the scene's emotion instead of from movement for its own sake.
 
 ### 1. §27G holds in the film modes, unchanged
 
@@ -3901,7 +3940,7 @@ One action per shot at a countable pace, human motion 3–6s, start frames caugh
 |---|---|---|
 | **Is still** — seated, standing, lying, talking, listening, handling something in place | Any F-rig the Look Sheet allows | — |
 | **Moves in place** — sits down, stands up, turns to look, reaches across a table | **F2** (one late partial pan or tilt), or **F3** floating without travelling | F1, F4, F5 |
-| **Travels** — walks, crosses a room, climbs stairs | **F2**: the subject walks into, across or out of a locked frame, staged per §27G rule 3. **F5** only where the reference edit follows a walk (§42 Part 3A): waist-up, flat ground, three or four steps | F1, F3, F4, and F5 on stairs, full-body or toward the lens |
+| **Travels** — walks, crosses a room, climbs stairs | **F2**: the subject walks into, across or out of a locked frame, staged per §27G rule 3. **F5** only where the reference edit follows a walk (§42 Part 3A): waist-up, flat ground, three or four steps. **On Seedance also F9** — a lateral track beside a walk in profile (§24N) | F1, F3, F4, F6, F7, F8, F10, and F5 or F9 on stairs, full-body toward the lens, or toward the lens |
 | **Turns the product, or must end on an exact frame** | Pinned both ends (§27G rule 5): a single-shot insert on the Kling first-and-last-frame call (E7), with the film strings, or a cut between two stills | Any MULTI-SHOT clip |
 
 ### 2. The camera plan — every move has a story reason
@@ -4091,6 +4130,78 @@ The music never restarts inside a scene; the room tone never changes at a cut; e
 **NORMATIVE — `MUSIC-CUE`, `ROOM-TONE`, `SFX-LINE`, `NEG-SOUND` — see Appendix A.**
 
 ---
+
+## 24N. Series Look & Seedance Camera — the prestige streaming live-action style *(new V7.69.0, user 2026-09-29: "about making hooks and movies using Seedance I want the best camera motion, angles and settings — I want the Netflix live-action style"; visual check pending)*
+
+**Scope: every Seedance clip of a live-action film (Mode 4, AI Drama), its hooks included.** **Ads stay phone style** *(V7.69.1, user 2026-09-29: "for ads it will stay phone style")*: a Seedance hook the user calls for in a Mode 1–3 ad (§4, V7.68.2) keeps the ad's own register — Mode 1's iPhone capture (§22A), its R-rigs (§22B) and its angles — never `SERIES-LOOK`, the F-rigs or this section's coverage. Mode 5 is animated and keeps §24J; it takes parts 2–4 below through its virtual camera (`VCAM`). Kling and Wan shots are unchanged.
+
+**The target is the look of a high-end streaming live-action drama series** — the productions a major streamer commissions and certifies: shot on its approved digital cinema cameras, lit like a feature, covered like prestige television. **The prompt never names a streamer, a series or a studio** (§10A: a platform name in a visual prompt pulls its logo and type into the frame, and it is a trademark question); the look is built from named artefacts in `SERIES-LOOK`, the same way §24G builds the feature look.
+
+### 1. The look — the house base for these clips
+
+**The series look is the base; the build's look is derived inside it** (the §24G derivation still runs: the inspo and the script set genre, palette, contrast, pace and texture within the series look, and `DIRECTIONS` can steer it). The Film Look Sheet opens from these defaults:
+
+| Field | Series default | Why it reads as a streaming drama |
+|---|---|---|
+| **Camera** | The §24G package row **Prestige streaming series**: ARRI Alexa 35 or Alexa Mini LF, Sony Venice 2, RED V-Raptor — large format where the genre allows; the genre row still picks between them | These are the bodies prestige series are certified on; the model has seen their footage labelled |
+| **Glass** | Spherical primes — ARRI Signature, Zeiss Supreme, Cooke S7/i; anamorphic only for an epic look (§24G) | Clean, modern rendering; soft roll-off on faces |
+| **Depth** | Shallow from MCU in (T1.8–T2.8), the room held on WIDE/FULL (T4) — §30J | The subject separated from a readable, layered room |
+| **Light** | **Motivated low-key:** one source per scene side (window, practical, overhead fixture), key-to-fill about 4:1 to 8:1 on faces, a shadow side on every face, practical lamps lit in frame, blacks deep but holding detail, highlights rolling off, never flat or evenly lit (§30K) | Flat, even light is the television look; contrast with a source is the series look |
+| **Colour** | Natural, rich, restrained in camera — the real colours of set and wardrobe (`COLOUR-KEY`); the series grade is the one LUT in the edit (§40), never in the prompt | Every clip matches by construction |
+| **Texture** | Real skin (§22S), worn costume, lived-in dressed sets, `PROD-DEPTH` layers | Money on screen is what is in front of the lens |
+| **Cadence** | 24 fps, 180-degree shutter (`INHERIT-FILM`) | Feature motion blur, never the smooth video look |
+| **Performance** | Restrained (§24I); eyeline off-lens | Series acting is small and specific |
+
+**`SERIES-LOOK` goes after `ING-MANIFEST` and before `CAM-FILM` on every clip in scope. NORMATIVE — `SERIES-LOOK` — see Appendix A.** The §24G floors hold: the word *cinematic* stays banned, 720p, 9:16, no generated grade or grain.
+
+### 2. The camera moves — the Seedance move library
+
+On this route the camera is a storyteller with a wider vocabulary than §24K's five rigs, **but §27G's core never yields:** one move per shot, named with its distance and speed, already moving on the first frame and still moving at the cut, the product rigid, and the subject's own action kept simple whenever the camera travels. *(Unverified: that Seedance holds bodies steadier under camera travel than the Kling runs §27G measured. The widening below is on that expectation and is checked on first use — Open Decisions.)*
+
+| Move | Rig | What it says | Subject | Size and speed | Clip |
+|---|---|---|---|---|---|
+| **Locked** | F2 | Normal life; the performance carries it | Anything (§24K part 1) | One late partial pan or tilt | any |
+| **Slow push-in** | F1 | Pressure, realisation, leaning into the turn | Still | 20–40cm on a single, easing as the line lands | 4–8s |
+| **Pull-back reveal** | **F6** | Isolation, consequence, the room revealed around someone | Still | 60–150cm, slow, the reveal completing at the cut | 5–10s |
+| **Arc** | **F7** | A power shift, a character seen anew, a confrontation turning | Still | ≤ 30° around the subject at constant distance, slow | 5–8s |
+| **Crane / pedestal** | **F8** | Opening or closing a scene; rising = release or hope, lowering = weight or arrival | Still or moving in place | 50–150cm vertical only, slow | 5–10s |
+| **Slider** | F4 | Establishing, object and product beats, parallax | Still | §24K | 4–8s |
+| **Shoulder float** | F3 | Conflict, intimacy, unease | Still or in place | §24K | any |
+| **Stabiliser follow** | F5 | Following someone into their world | Travels — **behind or beside, waist-up, flat ground, 3–4 steps** | §24K | 3–6s |
+| **Lateral track** | **F9** | Journey, resolve, a walk-and-talk | **Travels across the frame in profile, flat ground, constant walking pace, 4–6 steps** | Camera matches the walk, parallel to it, constant distance | 4–8s |
+| **Dolly zoom** | **F10** | The floor dropping out — dread, the realisation | Still | Subtle: background stretching behind a face held the same size | 3–5s |
+
+**Limits.**
+- **Camera and subject both travel only on F5 and F9**, as written in their rows. Never on stairs, never toward or away from the lens, never with a sit, a stand, a product turn or hands doing fine work.
+- **One move per shot.** No combined moves (a push with an arc, a crane with a pan). A crane is vertical only; an arc never exceeds 30°.
+- **F10 is a signature move:** at most one per film, never in two consecutive scenes, never on a hook's first shot, never on a product beat. It counts against §24K part 7's signature cap.
+- **The camera never moves more than the emotion in the shot** (§24K part 2). The camera plan picks the move from the emotion map; F2 is the default when in doubt.
+- **MULTI-SHOT clips** keep §24K part 5: F1, F2 and F3 only, nobody moving.
+- **Whip pans, speed ramps and snap zooms are edit devices** (CapCut lines, §42 Part 3A), never generated.
+
+**NORMATIVE — `RIG-F6`, `RIG-F7`, `RIG-F8`, `RIG-F9`, `RIG-F10` — see Appendix A.**
+
+### 3. Angles and coverage — how a series covers a scene
+
+**A dialogue scene is covered in series order**, each step a row with its §30I angle, §24K part 7 shot and move:
+1. **Establish** — a wide or two-shot that places everyone (often high, or through a doorway or window), F2, F4 or F8.
+2. **Dirty over-the-shoulders** — a matched pair on one side of the axis, the near shoulder soft at the frame edge (`SH-OTS`).
+3. **Clean singles** — each character at the **same scale and lens height** as the other, tightening from MCU to CU on the turn (§24K part 3).
+4. **Reactions** — the listener's face as the words land (§24I part 5).
+5. **Inserts** — hands, an object, the product (`SH-MACRO`, info cards §4).
+
+**Angle carries status:** lens at eye level between equals; slightly below the eyeline of whoever holds power in the moment; slightly above whoever is losing it; a profile two-shot for distance between people. **Composition in 9:16:** short-siding (the face looking toward the near edge, space behind the head) for unease or isolation, lead room for confidence, frame-in-frame (a doorway, a mirror, a window) for watched or trapped, empty space above the head for smallness. Every choice is still one §30I row with its reason, and `angles.py` passes the shot list.
+
+**A hook is a cold open.** Its first shot starts mid-action on the most intriguing image — tight (MCU, CU, insert) or one striking wide — with its one move already underway (F1, F8 lowering, or F9); the first line or sound lands inside the first second; no establishing shot first. Each hook shot runs 1.5–3s, the scales escalate toward the hook line, and the last shot cuts on the question or the turn. §3B's payoff mirror repeats the hook's move, scale and axis.
+
+### 4. The settings on every shot
+
+Every shot row names, and the prompt writes, in this order: `ING-MANIFEST` → `SERIES-LOOK` (or the build's `LOOK-[BUILD]` derived from it) → `CAM-FILM` (body, glass, focal and stop by scale from §24G, 24 fps, 180-degree shutter) → `SHOT-LINE` → `ANGLE-LINE` (height, side, foreground, lens height for status) → `FOCUS-LINE` → `LIGHT-FILM` (key side, ratio, practicals) → the move's rig string with its distance and speed → action and performance (§24I) → `INHERIT-FILM` → negatives. The act-map row (E4) carries `move`, `distance`, `speed` and `lens_height` beside `camera`.
+
+### 5. Checks
+
+`preflight.py` (§22X): one rig; F6, F7, F8 and F10 only on a still subject (F8 also on a subject moving in place); F9 only on a subject travelling, framed in profile; F5 waist-up; `SERIES-LOOK` present on every Mode 4 Seedance clip and never on a Mode 1–3 call; F6–F10 only on a film; no streamer or show name in the prompt; F10 at most once per film (checked on the shot list). Automatic judges the first clip of each new move against §22W with the move's limits in mind; Manual: the user checks it on the board.
+
 
 ## 25. Style Lock Rule
 
@@ -4529,7 +4640,7 @@ Two options, picked per line: **generate at 3s** so the fall is short and the ev
 
 | Hard motion | Safe staging |
 |---|---|
-| Walking down or up stairs | From the side, waist-down, two steps, camera still; hand on the rail visible. Never from the front with the full body, never a camera travelling down with her |
+| Walking down or up stairs | From the side, waist-down, two or three steps, camera still, **end frame pinned** (rule 5). A hand on the rail only when the line shows the struggle; an after-state shot keeps both hands free (V7.71.0 — the users' Fix notes). A full body from the front only with a pinned end frame, never a camera travelling down with the subject |
 | Walking toward or away from the camera | Waist-up, or feet-only; three or four steps at most |
 | Turning around, turning the product | Don't animate the turn. Pin the end frame (rule 5) so the model only fills the gap, or cut between two stills |
 | Sitting down, standing up | Start mid-movement (hips already moving) and end on contact; 3s |
@@ -4541,6 +4652,8 @@ Two options, picked per line: **generate at 3s** so the fall is short and the ev
 6. **The product is rigid.** Every clip with the product carries, in plain words, that it keeps its exact shape, size and wordmark in every frame and moves only with the body it sits on. Negatives add bending, curling, folding, melting, warping and flipping (with `NEG-WARP-P`, §27D).
 7. **The generator's settings never add motion.** `prefer_multi_shots` is **false on every Kling video call, every model** (it defaults to true on `kling-video-v3_0` and puts a cut inside the clip). No slow motion, speed ramps or smart splitting.
 8. **The edit never adds judder.** The rough cut is built at Kling's own 24 fps (§30H), so no frame is repeated. Clips are never slowed below 0.8x, and E6 sizing means they rarely need slowing at all.
+9. **"Fast" is made in the edit, never by the legs** *(V7.71.0; the users' notes asked for "down the stairs fast", and fast legs on stairs are where Kling breaks)*. A line or note that wants speed gets a **brisk, countable pace** (one step per 0.8–1s), a **3–4s clip**, a tighter frame (feet or waist-up, side-on) and a tight cut in the edit — never "running", "quickly", "fast" or a sprint in the prompt. Energy comes from the face, the arms and the cut.
+10. **Risky motion is pinned and piloted** *(V7.71.0)*. Four classes — **stairs, travel (walking toward, away or across), a hand on the product, the product changing angle** — always run first-and-last frame (rule 5), the end frame made with the start frame and picked with it (§5 A/B pair). The build's **first clip of each class is a pilot**: it runs alone, and the other clips of that class wait for its Confirm, so a staging mistake is paid for once, not six times. A user who wants a risky shot unpinned says so in words, recorded as `pin_waived`.
 
 ### What the user sees *(§16A)*
 
@@ -5274,6 +5387,8 @@ Same register, density, retention, wardrobe, casting, capture, audio, camera-arc
 
 The first confirmed render in a new location is the **scene plate** — the canonical scene reference for that location, for the whole build. It is a gate (§18): signed off against the Location Sheet before any other beat in that location is built. Every subsequent T2I in that location attaches the plate as a scene reference **alongside** the character reference. One plate per location; a second competing plate is the drift path, exactly as competing product references are (§5). A deliberate redress — a time jump, the same room years later — is a new plate, gated, never a drift.
 
+**Aspect: 16:9** (V7.68.1, §2) — the plate is a wide reference of the whole room; the beats built against it stay 9:16.
+
 **Assembly, scene plate T2I:** `CAM-LOCK` → `PROP-REF` + `PROP-SHELL` with the property plate attached where the room belongs to the build's dwelling (§30G) → the room's geometry, fixed dressing and named anchors → the location's §22A profile → `PHYS-FRAME-C` → `CAP-A` → `CAP-FILE` → negatives carrying `NEG-SCENE` + `NEG-PROP` + `NEG-M1`. **Empty — no people, no product, nothing staged**, exactly as the property plate is. A plate with a person in it re-injects that person into every beat built against it.
 
 ### 1a. Plate scope — plated and incidental *(new V7.48.2)*
@@ -5472,7 +5587,7 @@ The motion arc is written before any frame is composed. In order, per beat:
 3. **The start frame, derived from the arc** (§6): the moment before COMPLETING, with CONTINUING already present or plausible on frame one, and lead room where the motion goes. The start frame answers four questions — **where does the completing action end** (compose space for it); **what is already moving** (put it in frame); **what must the model never invent** (reference it); **does the face appear anywhere in the clip** — and if yes, is it resolved in this seed (Part 4).
 4. **The attachment set:** the property plate (§30G, on any interior beat of the dwelling, plated or not) + scene plate (§30C, PLATED locations only) + the subject's reference sheet (Part 1, if recurring) + product reference (§5, if the product appears) — and every referenced object also named in prose. Image + names, for every reference on the call. On a TRAVERSED exterior nothing is attached for the place; the profile, `GEO-LINE` and carried landmark do the work.
 5. **Strings by register:** Location Profile, surface (§15A on object beats), `BROLL-REAL`, physics (§27C), placement + orientation if worn (§9A-P), and the sequence's `GEO-LINE`.
-6. **Model routing** (§4): `nano_banana_pro` on any readable wordmark, `nano_banana_2` otherwise, 2k; I2V per §44 default 5.
+6. **Model routing** (§18A, V7.72.1): realistic → `gpt_image_2_5` Sunburst; anatomy and Modes 2, 3, 5 → `nano_banana_pro` (`nano_banana_2` only as the alternative); 2k; I2V per §44 default 5.
 7. **The first-frame check, extended:** the §5/§30C habit plus **subject markers present** and **geography holding** — axis side, travel direction, fixed features on the correct screen sides for this angle.
 
 A beat built in this order cannot compose a start frame that fights its own motion, and cannot render a face, room or object the references do not constrain.
@@ -5538,7 +5653,7 @@ One frame carrying the whole shell: the hall seen from just inside the front doo
 
 ### Assembly
 
-**Property plate T2I:** `CAM-LOCK` → `PLATE-PROP` → the property's daylight profile → `PHYS-FRAME-C` → `CAP-A` → `CAP-FILE` → negatives carrying `NEG-PROP` + `NEG-SCENE` + `NEG-M1`.
+**Property plate T2I** (16:9, V7.68.1, §2): `CAM-LOCK` → `PLATE-PROP` → the property's daylight profile → `PHYS-FRAME-C` → `CAP-A` → `CAP-FILE` → negatives carrying `NEG-PROP` + `NEG-SCENE` + `NEG-M1`.
 
 **Any interior beat of the dwelling**, plated or not: `PROP-REF` opens the scene description with the property plate attached, `PROP-SHELL` follows it, then `SCENE-REF` and the location's own anchors where the location is PLATED, then `SIGHT-LINE` and `VIEW-OUT` where either applies. `NEG-PROP` merges into the negatives.
 
@@ -5554,7 +5669,7 @@ One frame carrying the whole shell: the hall seen from just inside the front doo
 
 ### The rules
 
-1. **PLACE — on the word, a beat early, already moving** *(amended 2026-09-26, user)*. Each B-roll **cuts in 3 frames (0.1s) before its anchor word**: the word the picture shows, named as the phrase's `key` on the act-map row (`knee`, `stairs`, `strap`), or the phrase's first word when no key is given. The lead never cuts before 0.00s or into the previous clip's first 2.0s. Time comes from the master's word timestamps, **aligned to the verbatim script**, so the transcript's "17" still finds the script's "seventeen" (§22U). **The clip plays from its in-point, never its first frame:** a Kling clip opens on its start image and takes about half a second to move, so by default the first **0.4s is skipped**; where the row names the clip's action `peak` (seconds into the clip), the in-point puts that peak on the key word; an explicit `in` overrides both. It runs until the next B-roll starts, until its line ends, or until its footage runs out, whichever comes first. The master audio is one continuous track and is never cut. In a voice-only build the first B-roll still covers 0.00s, so a key on the opening line is a HOLE_AT_START.
+1. **PLACE — on the word, a beat early, already moving** *(amended 2026-09-26, user; V7.69.2 — "the brolls are always late")*. Each B-roll **cuts in 6 frames (0.25s) before its anchor word's onset**: the word the picture shows, named as the phrase's `key` on the act-map row (`knee`, `stairs`, `strap`), or the phrase's first word when no key is given. The word is found in the master's word timestamps, **aligned to the verbatim script**, so the transcript's "17" still finds the script's "seventeen" (§22U); **its time is its onset in the audio** — the start of the voiced run Whisper's word start falls in, searched up to 0.3s back (0.1s forward when Whisper lands in silence), since Whisper's word starts run late; in connected speech with no silence in reach, Whisper's time stands. The lead never cuts before 0.00s; where it would cut into the previous clip's first 2.0s it shrinks toward 0, **but a cut never lands after its word** — if even a cut on the onset leaves the previous clip under 2.0s, that clip fails FLASH (rule 5: merge the two rows into one picture). `assemble.py` reports each cut's `early_s` (onset − cut) and fails any cut after its word as `LATE`. **The clip plays from its in-point, never its first frame:** a Kling clip opens on its start image and takes about half a second to move, so by default the first **0.4s is skipped**; where the row names the clip's action `peak` (seconds into the clip), the in-point puts that peak on the key word; an explicit `in` overrides both. It runs until the next B-roll starts, until its line ends, or until its footage runs out, whichever comes first. The master audio is one continuous track and is never cut. In a voice-only build the first B-roll still covers 0.00s, so a key on the opening line is a HOLE_AT_START.
 2. **JOIN — frame-exact.** Two B-rolls that meet share one cut: no gap frame and no overlap. Cuts are snapped to the 30 fps frame grid.
 3. **FLICKER — none.** **A talking-head window under 1.5s between two B-rolls is closed**, in this order: give back the skipped opening (the default or `peak` in-point moves toward 0); extend the earlier clip with its own footage; slow it to no slower than 0.8x; else the clip is **REGENERATE at a longer duration** (§22W Q7). Clips sized by E6 from `assemble.py --lengths` need none of these. A talking-head window of 1.5s or more is a deliberate return to face and stays. §31's ~15s return-to-face rule still governs the long runs.
 4. **HOLE — none, in voice-only builds.** All-B-roll, narrated and film voiceover builds have no talking-head base, so **every frame from 0.00s to the last word is B-roll**. Uncovered time is closed the same way. An uncovered opening means a B-roll is missing on the first line. An unclosable hole is a FAIL, never black.
@@ -5791,7 +5906,7 @@ A rim light on everyone in a room with no window behind them · skin glowing · 
 
 ### 1. The colour key — written once per scene, pasted on every shot
 
-At step 5 each scene gets a **colour key**, read off its approved master frame (or, in Modes 1–3, the location plate and the day's outfit rows), and compiled into `COLOUR-KEY`:
+At step 5 each scene gets a **colour key**, read off its approved master frame (or, in Modes 1–3 and on every Seedance scene, V7.68.0, the location plate and the day's outfit rows), and compiled into `COLOUR-KEY`. On Seedance there is no master: the scene's first approved clip is the `--ref` for the clips after it:
 
 | Field | Content |
 |---|---|
@@ -5847,6 +5962,39 @@ When the user flags a problem with a specific shot:
 
 ---
 
+## 34A. Learning from the Board — the House Taste *(new V7.73.0)*
+
+**Origin:** user, 2026-09-29 — "you should learn what are the things getting fixed on the board, learn the pattern so you know what type of image or videos we want". A Fix note is the user saying what they want. One note fixes one beat; the same note twice is a rule, and it is applied before the next render, not after the next Fix.
+
+**The loop — both run modes, every build:**
+1. **Harvest.** After every Fix round (and when a build starts or resumes), dump the build's boards (Current and Old, `ArtifactData list` with `out_dir`) and run `scripts/fix_patterns.py <dirs> --md <out>`: every user Fix note, by build, beat, step, model, with a rough class. Agent bookkeeping and agent verdicts are kept apart.
+2. **Read and generalise.** A note that repeats — on two beats, or in two builds — becomes a rule, written as what to do, positively. **Generic** rules (any product, any build) go in the House Taste table below; **product-specific** ones (its shape, size, back, placement, packaging, copies) go in `products/<product>/fix_patterns.md`. Each rule carries its source count and the builds it came from. A one-off note stays a beat fix.
+3. **Apply.** Before writing any beat image or video prompt, read the House Taste and the product's `fix_patterns.md`. The §6A step 4 / §35A step 4 facts come from them first; the act map (§18 step 5) is checked against HT01–HT05 and HT10 before it is approved. `preflight.py` wants the rules applied listed on the call (`"taste": ["HT03", "FP02", …]`).
+4. **Report.** New or changed rules are listed to the user in one line at the next delivery; the user's notes are the authority, so a learned rule is written in the same turn (like a §34 correction), and the user can strike it. A system rule learned here never re-cuts an existing build (§34).
+
+### House Taste *(learned from 462 user Fix notes on five builds' boards, 2026-09-29)*
+
+| ID | Rule | Learned from |
+|---|---|---|
+| **HT01** | **Benefit and after-state lines are productive B-roll:** the person doing a real everyday task easily with the product on — carrying laundry, groceries or a heavy box the right way, gardening, getting up, out and about — not only stairs, never struggling, never tying or fitting the product. | ~20 notes, 4 builds ("should be a productive B-roll", "results of using the strap", "instead of stairs other activities", "don't show him struggling") |
+| **HT02** | **Problem lines show the struggle for real:** slow, both hands on the rail, looking at the stairs, one step at a time with both feet on the same step, stepping down backwards, turning away from the stairs. | ~8 notes, 3 builds |
+| **HT03** | **After-state on stairs: hands never touch the rail;** brisk, continuous, one foot per step, never stopping on each step, face visible, the product knee straight enough that the product shows. | ~20 notes, 4 builds |
+| **HT04** | **Show the move in progress, never already done:** start at the very top when going down, at the bottom when going up, inside the van when stepping out; never "already at the bottom / at the top / outside". | ~10 notes, 4 builds |
+| **HT05** | **Hooks must sell:** a scroll-stopping picture with stakes, out in the world (a mall, a station, a course, the doctor proposing surgery) rather than a normal-looking shot at home; follow the hook's own concept literally ("ten seconds" = ten seconds to put it on). | ~10 notes, 2 builds |
+| **HT06** | **The product at its true size, always:** a size anchor against the hand or body in every product beat; "too big" is the single most repeated product note. Its packaging too. | ~15 notes, 4 builds |
+| **HT07** | **Never hide or crowd the product:** hands never cover it; a finger or thumb beside, not over; no extra hand in the frame; hands off the product in the start frame when the clip doesn't need them. | ~8 notes, 3 builds |
+| **HT08** | **Wardrobe by day or event, never the cast-sheet clothes;** the same outfit and props (bag, glasses, basket) across every beat of that day, with the earlier beat's confirmed image attached as the reference. | ~25 notes, 2 builds |
+| **HT09** | **Locations come from their plate, and every beat there matches it** (the same stairs, same room); plates roomy and lived-in, never cramped or empty; no stray objects (floor mats, phones in the street); shops and counters real. | ~20 notes, 4 builds |
+| **HT10** | **One picture per idea:** a script line that lists several things, or runs long, gets several B-rolls, not one. | 3 notes, 2 builds |
+| **HT11** | **Anatomy and mechanism hit the named structure exactly** (the tendon under the kneecap, not the kneecap or the side), and the product is visibly doing the work the line claims; no white flash at the start. | ~10 notes, 4 builds |
+| **HT12** | **Whole, matching bodies:** never a cut-off body, legs the same length, two different hands (never two right hands), no stray feet at the frame edge, different faces for different people. | ~8 notes, 4 builds |
+| **HT13** | **Real motion, real physics:** never a clip that feels like an image zoom; soft parts flex and hang naturally, rigid parts stay rigid; nothing teleports or moves by itself (a person puts things in the bin); keep exactly what the confirmed image got right. | ~12 notes, 3 builds |
+| **HT14** | **Pointing at a spot on the body:** camera front-on, the fingertip pressing up into the exact spot, centred, never on the side. | ~8 notes, 3 builds |
+| **HT15** | **Realistic phone camera angles** only in Mode 1 — nothing a person holding a phone couldn't shoot. | 2 notes, 1 build |
+| **HT16** | **Cast to the market:** ethnicity and setting follow the ad's market (a British ad casts British). | 3 notes, 1 build |
+
+**Unverified:** the counts are read by hand from the harvested notes (several builds' boards live on the user's other account and are not in this read). Rows are added, merged or struck as new notes come in.
+
 ## 35. Kling B-roll JSON Format
 
 ```json
@@ -5892,6 +6040,23 @@ When the user flags a problem with a specific shot:
 **Spoken phrase goes outside the JSON as a label.**
 
 ---
+
+## 35A. Beat Video Prompt — short and single-minded *(new V7.71.0)*
+
+**Origin:** user, 2026-09-29 — "the image is dealt with, how about the videos, we will never do 2 generations, how can we make it much stronger". The beat video prompts had grown to the 2,500-character Kling ceiling (median ~2,200) by stacking a camera-drift paragraph (drift at entry, soft focus, "one deliberate reframe"), a physics paragraph, form-keeping boilerplate and ~30 "no …" items. They contradicted themselves ("one small movement" beside "one step every 0.6 seconds"), asked the camera to move while the subject moved (§27G rule 2), and never carried the line.
+
+**Scope:** every Kling (or Wan) B-roll and hook clip in Modes 1–3. Film clips keep §24K/§24N; talking heads keep §36/§22U. For a beat video this section replaces the §35 JSON fill and the "every I2V" placement of the Appendix A motion strings (`CAM-*` arcs, `R*` rigs, `PHYS-MOTION`, `INHERIT-*`, the `NEG-*` motion lists): each one's intent is said in a clause, only when the shot needs it. §35's JSON shape may still carry the text (a user or build rule for JSON on Kling holds), with the same content and limit.
+
+**The form — ≤ 1,000 characters (target 400–700), in this order:**
+1. **The line:** `For the line "…":`
+2. **The action, from this frame:** the confirmed motion plan word for word (§22X) — one action, how much of it (3 steps, one press, one lift) and how long, at a countable pace, ending on a named state (`ends on the bottom step, facing us`). Never "quickly", "fast" or "running" (§27G rule 9).
+3. **The camera in one clause:** Mode 1 `Handheld phone, a gentle breath sway, the camera stays where it is.`; a push-in only on a still subject.
+4. **Two or three facts that decide right or wrong for this shot** — from the House Taste (§34A) and the product's `fix_patterns.md` first — positive: `the same staircase, the same number of steps, every step whole`, `both hands stay clear of the banister`, `the strap stays rigid and in place just below the right kneecap` (§27G rule 6).
+5. **At most five "no …" items**, for faults this shot class keeps producing.
+
+**Calls:** `prefer_multi_shots: false`, E6 length (3–15s), pinned shots first-and-last frame (§27G rule 10, E7). **Checks:** `preflight.py` (≤ 1,000 characters, the line and the confirmed `motion_plan` in the prompt, `motion_confirmed`, ≤ 5 negatives, none of the retired boilerplate, risky classes pinned and piloted, no fast words on stairs or travel). A video Fix (§22X) rewrites the prompt in this form — never adds a paragraph.
+
+**Unverified:** the drop in video Fix notes is not yet measured (Open Decisions).
 
 ## 36. Kling Talking Head JSON Format
 
@@ -6240,7 +6405,7 @@ Three tiers. Every numeric, clinical or comparative claim in a script is assigne
 
 **18. Product placement and orientation → `PLACE-LOCK` + `ORIENT-LOCK` and `NEG-PLACE` + `NEG-ORIENT` on every worn beat, in every register.** One `[SITE]`, shared by anatomy and photoreal alike. The rigid element is always on the front face of the joint; only the band crosses the rear, **below the hollow and across the top of the limb segment beyond it**, its outer face featureless and its inner face carrying `[BAND-INNER]`. The rear spec goes in T2I at full length on **every** worn beat including front-only seeds — a seed with no rear information leaves the model nothing to turn onto and it invents a shell. **The product is not handed** — which limb is declared at the act map and held. The reference image carries neither placement nor orientation (§9A-P).
 
-**19. Image model → three models, locked per beat class at §18 step 2 (§18A).** **The arsenal is `nano_banana_pro`, `nano_banana_2` and `gpt_image_2_5` Sunburst, and nothing else** — `nano_banana_flash` and GPT Image 2.5 Flare are retired, never routed, never entered in a lock, and a job logging either is a failed generation discarded and re-run (§5). **Mode 1** takes all three, but **Sunburst only on beats with no person in frame** (plus avatar sheets, gated by the panel check) — every beat with a face, hand, limb or figure routes to Nano Banana (V7.53.0). **Mode 2 and Mode 3** locked to Nano Banana: `nano_banana_2` on every class, `nano_banana_pro` on hero wordmark beats run in the platform's own interface. Every GPT Image call passes `variant`, `quality: high`, `resolution: 2k`. Resolution is 2k on every beat type.
+**19. Image model → three models, locked per beat class at §18 step 2 (§18A).** **The arsenal is `nano_banana_pro`, `nano_banana_2` and `gpt_image_2_5` Sunburst, and nothing else** — `nano_banana_flash` and GPT Image 2.5 Flare are retired, never routed, never entered in a lock, and a job logging either is a failed generation discarded and re-run (§5). **Mode 1 and Mode 4** route every class to **Sunburst** except anatomy / mechanism, which stays on Nano Banana (V7.72.0, user — the V7.53.0 body rule is retired). **Mode 2, Mode 3 and Mode 5** locked to Nano Banana: `nano_banana_pro` on every class, anatomy / mechanism too; `nano_banana_2` only as the alternative when Pro can't run (V7.72.1). Every GPT Image call passes `variant`, `quality: high`, `resolution: 2k`. Resolution is 2k on every beat type.
 
 **20. Prompt vocabulary → no prohibited concept is ever named, including inside a negative** (§5). Steer with positive description. Anatomy beats open with the medical-education framing clause (§12A).
 
@@ -6425,6 +6590,8 @@ A standard with no home field does not get written into prompts. Every new secti
 Roughly two-thirds of prompt content is invariant across same-rig, same-location beats. **Invariant content is compressed once, tested once, and locked here** — never trimmed freehand across a corpus. Sections reference IDs; they do not restate text.
 
 Character counts are exact for the block as written.
+
+**Beat images (V7.70.0):** where a string below is placed on "every T2I", a B-roll or hook frame takes the §6A short form instead — the string's intent in one clause, only when the shot needs it. The strings stay whole for cast sheets, plates, voice-source frames, info cards and video prompts.
 
 ## Capture
 
@@ -7637,10 +7804,10 @@ no limping, no favouring one leg, no wincing, no grimacing, no gritted teeth, no
 
 ## References mode (§4, Wan 3.0 / Seedance 2.5)
 
-**`ING-MANIFEST`** — PATTERN. Opens every Seedance 2.5 prompt, one clause per ingredient group, in the §4 pack order. Drop any clause whose group is empty. **The wardrobe clause on every sheet, the one-object clause on product views, and the final sentence are never trimmed.** *(V7.54.1 — unverified)* (1047 as template)
+**`ING-MANIFEST`** — PATTERN. Opens every Seedance 2.5 prompt, one clause per ingredient group, in the §4 pack order. Drop any clause whose group is empty. **The wardrobe clause on every sheet, the one-object clause on product views, the never-in-render clause on every info card and the final sentence are never trimmed.** *(V7.54.1, rebuilt V7.68.0 — no frames — unverified)*
 
 ```
-INGREDIENTS. @image1 is the opening composition: the clip opens on exactly this framing, light and camera position, and nothing in it is re-composed. [@image2–@imageN] are this scene: [the master and the other shots named], and they set the room, the light side, the blocking and every prop's position. [@imageX] is [NAME]: face, age, hair and build only, with the wardrobe taken from the scene frames and never from this sheet. [One clause per character.] [@imageY–@imageZ] are the product, one object seen [from the front / the side / behind], exactly as shown: [the REF-PROD clause]. [@imageP] is the room and the house. [@imageL] carries the film's look. [@audio1] is [NAME]'s voice, its timbre, pitch, accent and pace, for every line [NAME] speaks; it sets who they sound like, never how they feel in this shot. [@video1] is the previous shot of this scene, and this shot continues its action and matches its light and movement. These references set what things ARE; the prose below sets what HAPPENS, and nothing in them is a shot to cut to.
+INGREDIENTS. [@imageX] is [NAME]: face, age, hair and build only, with the wardrobe as written below and never from this sheet. [One clause per character.] [@audio1] is [NAME]'s voice, its timbre, pitch, accent and pace, for every line [NAME] speaks; it sets who they sound like, never how they feel in this shot. [@imageP] is the place: [LOCATION], its walls, windows, furniture and light side exactly as shown. [@imageY–@imageZ] are the product, one object seen [from the front / the side], exactly as shown: [the REF-PROD clause]. [@imageI] is an info card: [THE FACT, as captioned — e.g. where the product sits on the body]; follow it exactly, and its marks, arrows and caption never appear in the clip. [One clause per info card.] These references set who, where and what things ARE; the prose below sets the shot and what HAPPENS, and nothing in them is a shot to cut to.
 ```
 
 **`REF-MANIFEST`** — PATTERN, **Wan 3.0 only since V7.54.1**. Opens every references-mode prompt, seed first, one clause per ingredient, in slot order. Substitute the platform's handle form (`Image 1` / `@image1`), the character's §19A markers, the Product Sheet's `REF-PROD` clause and the Location Sheet's anchors; drop the Image 4 clause on any non-PLATED location. The final sentence never trims — it is what stops a pack of references reading as a storyboard. *(V7.49.4 — unverified)* (697 as template)
@@ -7904,6 +8071,30 @@ Camera on a slider, already travelling: a slow, constant lateral move of about [
 **`RIG-F5`** — stabiliser follow. **Only where the reference edit follows a walk** (§24K): waist-up, flat ground, three or four steps; never stairs, never full-body, never toward the lens. `[PACE]` from the shot list. *(352)*
 ```
 Camera on a stabiliser following the subject from waist height as they walk on flat ground, [PACE], for three or four steps only, holding a constant distance and gliding with a slight float. Framed waist-up: the legs are out of frame. The subject stays in the same place in the frame while the world slides past behind them. Still following at the cut.
+```
+**`RIG-F6`** — pull-back reveal. Seedance, **still subject only** (§24N). `[DISTANCE]` 60–150.
+```
+Camera pulling back on a dolly, already moving on the first frame: a slow, steady pull away from the subject covering about [DISTANCE] centimetres across the whole clip, perfectly level, with no bounce and no sway, revealing more of the room around them as it goes. The subject stays in place and never walks while the camera moves. Still pulling back on the final frame.
+```
+**`RIG-F7`** — arc. Seedance, **still subject only** (§24N). `[DEGREES]` 10–30.
+```
+Camera arcing on a curved track, already moving on the first frame: a slow, constant arc of no more than [DEGREES] degrees around the subject at the same distance, perfectly level, the background turning behind them while their face stays in frame. The subject stays in place; nobody walks during the move. Still arcing on the final frame.
+```
+**`RIG-F8`** — crane / pedestal. Seedance, **still or in-place subject** (§24N). `[DIRECTION]` rising or lowering; `[DISTANCE]` 50–150.
+```
+Camera on a crane, already moving on the first frame: a slow, steady [DIRECTION] move of about [DISTANCE] centimetres, straight vertical, with no pan and no push, the frame's height changing smoothly across the whole clip. The subject stays in place. Still moving on the final frame.
+```
+**`RIG-F9`** — lateral track. Seedance, **a walk in profile on flat ground, four to six steps** (§24N); never stairs, never toward the lens. `[PACE]` from the shot list.
+```
+Camera tracking alongside on a dolly track, parallel to the subject as they walk across the frame in profile on flat ground, [PACE], for four to six steps, holding a constant distance and the same framing; the background slides past behind them while they stay in the same place in the frame. Their walk is steady and even, with no turn, no stop and no stairs. Still tracking at the cut.
+```
+**`RIG-F10`** — dolly zoom. Seedance, **still subject only, at most once per film** (§24N).
+```
+Camera performing a slow dolly zoom: the camera eases back while the lens zooms in, so the subject's face holds the same size in frame while the background behind them slowly stretches and looms closer. Subtle, smooth and continuous across the whole clip. The subject stays perfectly still.
+```
+**`SERIES-LOOK`** — every Seedance film clip, film hooks included — never an ad, which stays phone style (§24N, V7.69.1), after `ING-MANIFEST` and before `CAM-FILM`. Never names a streamer, a series or a studio (§10A). *(V7.69.0 — unverified)*
+```
+The look of a high-end live-action drama series: shot on a large-format digital cinema camera with spherical prime lenses, 24 frames per second with natural motion blur. Motivated low-key light from real sources in the scene — a window, a practical lamp, an overhead fixture — with a shadow side on every face, deep shadows that still hold detail and highlights that roll off softly; never flat and never evenly lit. Shallow depth of field on close shots, the room layered in depth behind. Natural, rich, restrained colour straight from the camera, real skin texture, worn costumes and a lived-in set. Restrained, specific performances.
 ```
 **`MULTI-FILM`** — Seedance 2.5 MULTI-SHOT, Mode 4 only, up to four shots, **only when nobody moves** (§24K part 5), each shot at least 2.5s. After `REF-MANIFEST`; closes with `INHERIT-FILM` + `AUD-FILM` + negatives. *(734)*
 ```
@@ -8395,7 +8586,7 @@ Why the load-bearing rules exist. One lookup instead of a document search. **Whe
 | The camera stands where a phone could be | The frame a generator defaults to — the body filling 9:16 — is a camera position no phone ever occupies; naming the creator's actual position and distance returns the person at a real size with the room around them |
 | Full body is always WIDE | A whole person in a vertical frame only fits from 2.5–3m at waist height; asked for closer, the generator presses the figure edge to edge instead |
 | Tight is reached at arm's length | The selfie distance makes the face large and keeps the room over a shoulder; a crop that removes the room buys pixels and loses the found-footage read |
-| GPT Image off every beat with a body | Its failures on people are missing heads, missing limbs and malformed hands — the kind no negative repairs and no edit hides. Its real strengths are type and product, and neither needs a person in frame |
+| GPT Image off every beat with a body — **retired V7.72.0** | Its failures on people (missing heads, limbs, malformed hands) were logged on the old stacked prompts. The user moved all realistic work to Sunburst with the §6A short prompts and the A/B pair as the safety net; anatomy and the stylised modes stay on Nano Banana |
 | Mode 4 is its own mode, not a Mode 1 override | An override leaves the phone stack in force, and `NEG-M1` and `NEG-FINISH` ban grain, grade, composition and lit subjects — a film build stacked on Mode 1 fights itself on every beat |
 | The look is derived, never defaulted | A film's look is the inspo's and the script's, not the house's; one fixed look would be wrong for every film but one |
 | `LOOK-[BUILD]` pasted verbatim | Paraphrase drift is look drift, exactly as it is voice drift |
@@ -8435,6 +8626,8 @@ The machine half of the document. Nothing here changes the craft; it makes the c
 ## E0. Run modes — Manual and Automatic *(new V7.56.0)*
 
 **Who checks (2026-09-27, user: "for the manual ill be the one to check every generation you will not check them, but for automation you will be the one who will check everything i want the final results only").** **Manual:** the user checks every generation — every image, clip and audio file — on the board; the agent runs no verdict, no instrument and no note on any render, and regenerates only from the user's Fix. **One exception, at the user's word: the film music the agent composes** — the agent checks every track against its composition plan (`music.py check`, §24M) before it reaches the board, then the user checks it too. The agent still checks its own **prompts and plans** before it spends credits (`preflight.py`, `angles.py`), because those are its work, not a generation. **Automatic:** the agent checks everything — every §22V, §22W, §22X, §24H, §30I–§30L check and instrument — never stops, and delivers **the final videos only**, with the Flags list.
+
+**Automatic judges as the user would** *(V7.73.1, user 2026-09-29: "all the things you learn here will be crucial on perfecting the automation run")*. The House Taste and each product's `fix_patterns.md` (§34A) are the user's accumulated verdicts, so in Automatic they are the bar: the act map is checked against HT01–HT05 and HT10 before it is approved, every motion plan against HT03, HT04 and HT13, every image and clip verdict asks §22V Q7 / §22W Q8, and every A/B pick is the render that breaks no rule. **Every Manual build trains the Automatic run:** its Fix notes are harvested into §34A after each round. Only the user's notes make rules — the agent's own REGENERATE verdicts never do.
 
 **Manual is the default** (§44 default 83). **The agent writes the prompts and generates through the §5 connectors** — avatars, plates, voice, hooks, B-roll, talking heads — puts every render on the board for the user to check (the user, not the agent, confirms or fixes each one; correction 2026-09-26), and stops at the human gates: the avatars (§18 step 3), each hook (step 6), the final review *(correction 2026-09-26, user)*. **The voice stage runs straight through in Manual too (correction 2026-09-28):** after the step-5 maps, voice source → API clone → VO → talking heads → natural-pace trim, no stop (§22U). What this appendix adds for Automatic is the removal of the remaining gates, the agent's own master pick and hook approval, the checks, and the finished-video assembly.
 
@@ -8564,7 +8757,7 @@ One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t
 
 **`angle` (2026-09-27, §30I).** Every B-roll and film row carries `angle` — `height` (ground · low · eye · high · overhead), `side` (front · three-quarter · profile · three-quarter-back · behind · ots) and `fg` (clean · through · reflection) — with `why` (what the angle says) and, on a payoff that repeats an earlier angle, `mirror_of`. **`light` (§30K)** — `source` (from the light plan), `key_side` on screen (L · R · back · front), `time`, `arc` (the act's light state), `kelvin` (the key's colour temperature — the scene's white balance, 2026-09-28) and `why` on a backlit or 90° side key. **`focus` (§30J)** — `plane` (eyes · hands · product · foreground · background · deep), `dof` (deep · medium · shallow), `rack` (`{from, to, cue, kind: pull | tap}` or null) and `moving_subject`. **`shot` (2026-09-28, §24K part 7)** — Modes 4–5: one library ID (`SH-WIDE` … `SH-INSIDE`) or a list of two; its setup agrees with `height`, `side`, `scale` and `fg`; `speaking: true` on a row that carries a lip-synced line. `angles.py` reads these fields.
 
-**`key` (amended 2026-09-26, user).** Every B-roll row names its `key`: the word in its phrase that the picture shows (the noun or action on screen, never a filler like "and" or "when"). §30H cuts the clip in 3 frames before it. Leave it empty only when the picture is the phrase's first word. In a voice-only build the opening row has no key — its clip covers 0.00s. After generation, a row may add `peak`: the second in the clip where its action peaks, so the in-point lands it on the key word.
+**`key` (amended 2026-09-26, user).** Every B-roll row names its `key`: the word in its phrase that the picture shows (the noun or action on screen, never a filler like "and" or "when"). §30H cuts the clip in 6 frames before its onset (V7.69.2). Leave it empty only when the picture is the phrase's first word. In a voice-only build the opening row has no key — its clip covers 0.00s. After generation, a row may add `peak`: the second in the clip where its action peaks, so the in-point lands it on the key word.
 
 ## E5. Slot-fill manifest
 
@@ -8591,7 +8784,7 @@ One row per beat: `beat_id · phrase_ids[] · t2i_prompt_path · t2i_job_id · t
 
 Words at pace → duration: brisk ≤9 → 5s · unhurried ≤8 → 5s · brisk 10–20 → 10s · unhurried 9–18 → 10s · above → split the line per §29. Talking-while-doing always reads the unhurried column. **B-roll duration = the script line it covers** *(V7.60.6 — replaces the fixed 5s / 3s B-roll durations)*. Every B-roll clip — mechanism, anatomy, product and object beats included — is generated as long as the spoken span it is placed on (§30H): the line, or the phrase where §27 splits a line across several B-rolls.
 - **Measured, not estimated:** the span is read from the voice master's word timestamps (`assemble.py --lengths`). In Automatic the voice master is made before any B-roll call, so every B-roll duration is measured.
-- **Call duration** *(amended 2026-09-26, user)* = the clip's **time on screen** + its skipped opening (0.4s, §30H rule 1) + 0.5s handle, rounded **up** to the next whole second, within the model's range — Kling 3.0 3–15s. Time on screen runs from its cut (3 frames before its anchor word) to the next B-roll's cut; in a talking-head build it stops at its line end when the gap after is a deliberate return to face (≥1.5s). This covers the flicker and hole gaps up front, so no clip has to be slowed down in assembly. `scripts/assemble.py <plan> --lengths` computes it from the master before any B-roll call. A span needing under 3s gets 3s and is cut in assembly. **Human motion is capped at 6s** (§27G rule 1; the plan row's `max`, default 6): a line needing more is split at a word boundary into two clips, and `--lengths` flags it `SPLIT`. A row whose shot has no human motion (a room, an object at rest, a slow push-in) may set `max` up to 15.
+- **Call duration** *(amended 2026-09-26, user)* = the clip's **time on screen** + its skipped opening (0.4s, §30H rule 1) + 0.5s handle, rounded **up** to the next whole second, within the model's range — Kling 3.0 3–15s. Time on screen runs from its cut (6 frames before its anchor word's onset, V7.69.2) to the next B-roll's cut; in a talking-head build it stops at its line end when the gap after is a deliberate return to face (≥1.5s). This covers the flicker and hole gaps up front, so no clip has to be slowed down in assembly. `scripts/assemble.py <plan> --lengths` computes it from the master before any B-roll call. A span needing under 3s gets 3s and is cut in assembly. **Human motion is capped at 6s** (§27G rule 1; the plan row's `max`, default 6): a line needing more is split at a word boundary into two clips, and `--lengths` flags it `SPLIT`. A row whose shot has no human motion (a room, an object at rest, a slow push-in) may set `max` up to 15.
 - **No voice master over the line** (Mode 4/5/AI Drama dialogue scenes, voiced in-clip by Seedance): the span is the E6 words→duration estimate at the scene's pace, recorded as `estimated` in the ledger (V7.60.7).
 - **Never a default length.** A B-roll call without a span — measured, or estimated where no master covers the line — is not submitted.
 
@@ -8599,15 +8792,15 @@ Superseded B-roll rule, kept for reference: B-roll calls: 5s (the Higgsfield flo
 
 ## E7. Verified call templates *(param names measured in production)*
 
-**T2I (Higgsfield):** `generate_image_batch` → `{model: "nano_banana_pro"|"nano_banana_2", prompt, aspect_ratio: "9:16", resolution: "2k", medias: [{role: "image", value: <media_id>} …]}`
-**T2I (Higgsfield, GPT Image 2.5 Sunburst):** `generate_image_batch` → `{model: "gpt_image_2_5", variant: "sunburst", quality: "high", resolution: "2k", prompt, aspect_ratio: "9:16", medias: [{role: "image_references", value: <media_id>} …]}`. Never omit `quality` or `resolution` — both default low. Fallback `gpt_image_2` takes `quality: "high"`, `resolution: "2k"`, role `image`. — reference images by media id, up to product + character + scene plate on one call. Verify logged model on completion.
+**T2I (Higgsfield):** `generate_image_batch` → `{model: "nano_banana_pro"|"nano_banana_2", prompt, aspect_ratio: "9:16" (location and property plates "16:9", §2), resolution: "2k", medias: [{role: "image", value: <media_id>} …]}`
+**T2I (Higgsfield, GPT Image 2.5 Sunburst):** `generate_image_batch` → `{model: "gpt_image_2_5", variant: "sunburst", quality: "high", resolution: "2k", prompt, aspect_ratio: "9:16" (location and property plates "16:9", §2), medias: [{role: "image_references", value: <media_id>} …]}`. Never omit `quality` or `resolution` — both default low. Fallback `gpt_image_2` takes `quality: "high"`, `resolution: "2k"`, role `image`. — reference images by media id, up to product + character + scene plate on one call. Verify logged model on completion.
 **I2V (Higgsfield) — retired V7.59.0, Kling runs on the Kling connector (§5); kept for reference:** `generate_video_batch` → `{model: "kling3_0", prompt: <JSON-as-string per §35/§36>, duration: 5|10, resolution: "1080p", medias: [{role: "start_image", value: <completed T2I job_id>}], declined_preset_id: <id> (mandatory on dark-field and any beat that has matched a preset)}`.
 **I2V (Kling-direct):** `kling-video-v3_0_omni` (and `kling-video-v3_0` for first-and-last frame, §27G rule 5) → external URLs accepted, `prefer_multi_shots: false` explicit on every model, `enable_audio: true`, duration 3–15s, ceiling 2,500 applies.
 **I2V first-and-last frame (Kling, §27G rule 5):** `image_to_video {model: "kling-video-v3_0", inputs: [{name: "first_image", url: <approved start image>}, {name: "tail_image", url: <approved end image>}], arguments: prompt (§35 JSON, the travel between the two frames only), duration <E6>, resolution "1080p", prefer_multi_shots "false", imageCount "1"}`; poll `query_tasks`.
 **I2V (Wan 3.0, references mode — the default, unverified):** reference-to-video endpoint → `{prompt: <REF-MANIFEST + prose per §27A + §22B + full §22A block>, images: [<seed>, <character sheet>, <product ref>, <scene plate if PLATED>], audios: [<voice clip>] only on a spoken beat and only after the voice-lock test, resolution: "1080p", aspect_ratio: "9:16", duration: <E6>, enable_prompt_expansion: false, thinking_mode: false, seed: <fixed for reissues>}`. Where the platform's schema allows a start frame alongside references, the seed goes in as the start frame and drops out of the image array. Never video references.
 **I2V (Wan 3.0, first-frame fallback):** image-to-video endpoint → `{prompt, image_url: <seed URL>, resolution: "1080p", aspect_ratio: "9:16", duration: <E6>, enable_audio: false on B-roll, enable_prompt_expansion: false, thinking_mode: false}`. Never `last_image` on a §27A beat — an end frame is a resolved exit.
-**I2V (Seedance 2.5, ingredients — every call, unverified):** omni-reference endpoint → `{prompt: <ING-MANIFEST + prose>, images_list: [<the §4 pack, composition first>], videos_list: [<our own approved clips only>], audios_list: [<voice masters>], resolution: "720p", aspect_ratio: "9:16", duration: <E6, never "auto">}`. **30 files maximum across all three lists.** Audio is generated regardless and discarded on B-roll.
-**Seedance first-frame mode is retired** (V7.54.1). A Seedance call with a start frame and no ingredient pack is a failed generation.
+**I2V (Seedance 2.5, ingredients — every call, unverified):** omni-reference endpoint → `{prompt: <ING-MANIFEST + prose>, images_list: [<the §4 pack: sheets, plate(s), product, info cards — no frames>], audios_list: [<voice clips>], resolution: "720p", aspect_ratio: "9:16", duration: <E6, never "auto">}` — no `videos_list` (V7.68.0). **30 files maximum across all three lists.** Audio is generated regardless and discarded on B-roll.
+**Seedance first-frame mode is retired** (V7.54.1). A Seedance call with a start frame, a master or any scene frame in its pack is a failed call (V7.68.0).
 **Film voice master (Seedance, §24I):** the Seedance ingredients template with `duration: 10`, `images_list: [<face-only sheet>]`, no `audios_list`; then `ffmpeg -i <clip> -vn -c:a copy <CHAR>_voice_master.<ext>`.
 **Voice source (Kling, §22U step 2):** two or more calls, one per take — `image_to_video {model: "kling-video-v3_0_omni", inputs: [{name: "image_1", url: <step-1 image>}], arguments: prompt (§36 JSON, minified, ≤ 2,500), aspect_ratio "9:16", resolution "1080p", duration "10", enable_audio "true", prefer_multi_shots "false", imageCount "1"}`; poll `query_tasks`. Then `voice_source.py G1.mp4 G2.mp4 --name <Keyword>`.
 **Clone (ElevenLabs, §22U step 6):** both run modes (Manual since 2026-09-28; before that Manual cloned in the ElevenLabs app) — `scripts/elevenlabs_clone.py clone <Keyword>_clone_source.mp3 --name <Keyword> [--character <FirstName>]` → name checked against `GET /v1/voices` (taken = refused, §22U step 7) → `POST /v1/voices/add` (multipart, header `xi-api-key: $ELEVENLABS_API_KEY`) `{name: <keyword>, files: [<step-5 file>], remove_background_noise: true}` → `{voice_id, requires_verification: false}`; confirmed by `GET /v1/voices/{id}` (`category: "cloned"`). Preflight `GET /v1/user/subscription`: `can_use_instant_voice_cloning`, `voice_limit − voice_slots_used`. Cleanup `DELETE /v1/voices/{id}`. Measured 2026-09-25 (one test clone from a 48s source, then deleted). The connector has no clone call.
@@ -8704,6 +8897,11 @@ Locked corrections not yet written into the document. **Empties at each version 
 
 Standards-level only. Build- and product-level decisions live on their own sheets.
 
+00000. **§34A House Taste — does it cut the Fix rate?** *(V7.73.0)* Count Fix notes per beat on the next builds against the five harvested ones; a House Taste rule that keeps being fixed is rewritten, one that never comes up again after two builds stays.
+0000. **Sunburst on every realistic image — first builds** *(V7.72.0)*. Watch for the V7.53.0 faults (missing heads, limbs, malformed hands, wordmark on a worn product) and how often both renders of a pair fail. The user will change the route if it doesn't hold.
+000. **§35A short beat video prompts, motion confirmed at the image, pinned + piloted risky classes — first builds** *(V7.71.0)*. Measure video Fix notes per clip against The Cascade and 71 Stairs (~50 notes, about half plan faults). Check whether the 1,000-character form loses anything Kling needed (hands, product rigidity) and whether the pilot slows the run too much.
+00. **§6A short beat prompts and the §5 A/B pair — hit rate, first builds** *(V7.70.0)*. Measure on the board: the share of pairs with at least one `Use`, A vs B picks by model, and Fix rounds per beat against the V7.69 builds (stryde-too-bad Act 1: 7 of 19 first-pass images sent to Fix; stryde-identity: 19 of 27 B-rolls). If one model wins > 80% of picks over two builds, revisit the pair.
+0. **§24N series look and the Seedance move library — visual check, first use** *(V7.69.0)*. The first clip of each new move (F6–F10) and the first `SERIES-LOOK` clip are judged for body and face stability during the move, the move's size and speed against its row, and whether the frame reads as a streaming drama rather than television. A move that breaks bodies on Seedance goes back to its §24K limit.
 1. **§22B and §27A test pass — RUN this cycle** (one A/B pair, same seed: full R1+§27A block vs naive "handheld micro-shake"). Results:
    - **Optical flow by thirds: 0.106→0.307→0.424 (arc) vs 0.111→0.122→0.221 (naive).** The arc delivered ~2× the camera motion, with structured bursts — the largest at 78% of runtime, where the back-half correction was written — and a directional +11.8px cumulative path vs near-zero. **§22B confirmed: arc language steers amplitude, structure and position.**
    - **Last-frame delta: 3.31 vs 2.39 (+38%), final flow 0.360 vs 0.227. "Never at rest at the cut" confirmed** — the clause §22B, §27A and §28E all depend on.
@@ -8803,6 +9001,145 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
 
 **Camera numbers and the LUT — measure on the first film build (2026-09-28).** (a) Same frame, same seed: T2.0 vs T5.6 and 35mm vs 85mm in `CAM-FILM` — does depth or perspective change, or only the scale wording? (b) The shutter wording on Seedance and Kling — any motion-blur difference? (c) `COLOUR-KEY` with and without `[KELVIN]` across a five-shot scene — `light_check.py colour` warmth spread. (d) CapCut desktop vs `lut.py apply` on the same clip with the same `LUT-[BUILD].cube` — identical within ±2 levels?
+
+---
+
+# CHANGELOG — V7.73.0 → V7.73.1 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **22V** Q7, **22W** Q8, **E0** | Automatic judges as the user would: every image and clip verdict checks the applicable House Taste and product fix patterns (§34A) — a break is REGENERATE citing the rule; the act map and motion plans are checked against them; the A/B pick is the render that breaks none. Manual builds' Fix notes feed the rules; the agent's own verdicts never do |
+
+**Origin:** user, 2026-09-29 — "all the things you learn here will be crucial on perfecting the automation run".
+
+---
+
+# CHANGELOG — V7.72.1 → V7.73.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **34A** (new) | Learning from the board: harvest every Fix note (`fix_patterns.py`), turn repeats into rules — generic in the House Taste (HT01–HT16), product-specific in `products/<product>/fix_patterns.md` — read before every beat prompt, refreshed after every Fix round, new rules reported to the user |
+| **6A**, **35A** | Step 4's decisive facts come from the House Taste and the product's fix patterns first |
+| Files | `fix_patterns.py` (new), `preflight.py` (`taste` on image and video calls), `products/stryde/fix_patterns.md` (new), skill summaries, CLAUDE.md |
+
+**Origin:** user, 2026-09-29 — "learn what are the things getting fixed on the board… so you know what type of image or videos we want". Read from 462 user Fix notes on stryde-identity, stryde-71-stairs, down-forwards-again, stryde-cascade and sha0071. Existing builds are not changed (§34).
+
+---
+
+# CHANGELOG — V7.71.0 → V7.72.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **18A**, **4**, **44** default 19 | Every Mode 1 and Mode 4 image class — sheets, plates, B-roll and hook frames with or without people, worn and held product, seeds, voice frames, info cards — routes to `gpt_image_2_5` Sunburst. Nano Banana Pro / 2 only for anatomy / mechanism and for Modes 2, 3 and 5 |
+| **5** | The realistic A/B pair is two Sunburst renders; anatomy and the stylised modes pair `nano_banana_pro` + `nano_banana_2` |
+| Appendix D | The V7.53.0 "GPT Image off every beat with a body" rule retired |
+| Files | `preflight.py` (pair routing by mode and anatomy), skill summaries, CLAUDE.md |
+
+**Scope (user, 2026-09-29: "we will use this in the new sessions, the image models update, not on the current ones"):** V7.72.0–V7.72.1 routing applies to builds started from V7.72 on. A build already running keeps its step-2 model lock (§18A rule 4); a session resuming or fixing it never switches its images to the new routing.
+
+**V7.72.1 (same day):** anatomy / mechanism and Modes 2, 3, 5 run on `nano_banana_pro` alone — the pair is two Pro renders; `nano_banana_2` is only the alternative when Pro can't run (user: "just use Nano Banana Pro and not 2; Nano Banana 2 is just an alternative").
+
+**Origin:** user, 2026-09-29 — "with the new prompts GPT Image will be the best bet and I'll just change that if ever; all realistic Mode 1 and Mode 4 on GPT Image, no Nano Banana Pro in realistic; Nano Banana Pro just stays at anatomy and Pixar". Risk recorded in Open Decisions. Existing builds are not changed (§34).
+
+---
+
+# CHANGELOG — V7.70.0 → V7.71.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **35A** (new) | Beat video prompts (Kling/Wan B-roll and hook, Modes 1–3) ≤ 1,000 characters: the line, the confirmed action from this frame, the camera in one clause, 2–3 shot facts, ≤ 5 negatives; the camera-drift, physics and form-keeping paragraphs retired for beat videos |
+| **22X** | The motion is confirmed at the image: `motionPlan` written with the image prompt, shown on the card as "Video will show"; picking the image confirms it |
+| **27G** | Rule 9: "fast" from the edit (brisk countable pace, 3–4s, tight frame and cut), never fast legs; rule 10: stairs, travel, hand-on-product and product-angle shots pinned first-and-last frame, the build's first clip of each class a pilot; the stairs staging row updated (hands free on after-state shots) |
+| **16A** | "Video will show" on the image card and viewer |
+| Files | `generation_board.html`, `preflight.py` (beat video checks), skill summaries, CLAUDE.md |
+
+**Origin:** user, 2026-09-29 — "how about the videos, we will never do 2 generations, how can we make it much stronger". Evidence: ~50 video Fix notes on The Cascade and 71 Stairs — about half the shot plan ("productive B-roll", "struggling", "fast", "hands off the rail"), ~6 distortion (mostly stairs), ~4 "frozen" / "image zoom"; prompts at the 2,500-character ceiling with contradicting motion. Existing builds are not changed (§34); their saved call files will fail the new checks and are not re-run.
+
+---
+
+# CHANGELOG — V7.69.2 → V7.70.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **6A** (new), **6**, Appendix A note | Beat image prompts — B-roll and hook frames — are ≤ 1,200 characters in a fixed order: the spoken line and the one thing it shows, the framing once, only the references the shot uses (product photo first with a true-size anchor; cast sheet only when a face shows; plate only when the room shows), two or three decisive facts in positive words, the register in one line, ≤ 5 negatives. Replaces the "every T2I" placement of the Appendix A blocks for beat images; "no ceiling" retired for them |
+| **5**, **22V** | Beat images in Modes 1–3 are an A/B pair: the same prompt on two models, one render per call (body in frame: `nano_banana_pro` + `nano_banana_2`; no body: `gpt_image_2_5` Sunburst + `nano_banana_pro`). Automatic judges both and uses the better |
+| **16A** | The board card shows the pair side by side with **Use A**, **Use B**, **Both wrong · Fix**; `imagePair`, `imagePick`, `imageUnused`, `pair` on each version |
+| Files | `dashboard/generation_board.html` (the pair card and viewer), `preflight.py` (`"kind": "image"` lint), skill summary, CLAUDE.md |
+
+**Origin:** user, 2026-09-29 — "the image in brolls… 80–90% of the time are distorted or not connected to the script line", the A/B picker proposal, and "we really need a shorter but much more powerful prompt". Cause found in the builds' prompts and Fix notes: 3,000–5,200-character prompts stacking contradictory blocks, 30–60 "no …" items naming the faults, the spoken line absent, the product with no size anchor, and the Higgsfield Nano Banana routing fault. Existing builds and boards are not changed (§34) — only on their team's ask.
+
+---
+
+# CHANGELOG — V7.69.1 → V7.69.2 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **30H** rule 1, **E4** `key`, **E6** | B-roll never lands late: the anchor word is timed by its onset in the master's audio (Whisper's word starts run late); the cut leads it by 6 frames (0.25s, was 3 frames/0.1s); a cut is never pushed past its word to protect the previous clip's 2.0s — the lead shrinks toward 0 and, if the previous clip is still under 2.0s, it fails FLASH (merge the rows); `early_s` per cut, `LATE` fail |
+| Files | `assemble.py` (`onset`, `--lead 0.25`, no push past the word, `early_s` in the EDL and `--lengths`, `LATE`), skill summary |
+
+**Origin:** user, 2026-09-29 — "the broll placements… it's always late". Cause found in `assemble.py`: the 2.0s minimum hold (V7.65.0) pushed a cut after its word whenever two B-rolls sat within 2s; Whisper's late word starts; a 0.1s lead. Existing builds are not re-cut (§34) — only on their team's ask.
+
+---
+
+# CHANGELOG — V7.69.0 → V7.69.1 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **24N**, **24G**, Appendix A | Ads stay phone style: the series look, F6–F10 and the series coverage are for films (Mode 4, AI Drama, their hooks included) only; a Seedance hook the user calls for in a Mode 1–3 ad keeps the ad's register (§22A, §22B) |
+| Files | `preflight.py` (`SERIES-LOOK` required on Mode 4 Seedance, refused on Modes 1–3; F6–F10 refused outside films), both skills |
+
+**Origin:** user, 2026-09-29 — "for ads it will stay phone style".
+
+---
+
+# CHANGELOG — V7.68.2 → V7.69.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **24N** (new) | Series Look & Seedance Camera: every Seedance film clip and every Seedance hook the user calls for is shot in the prestige streaming live-action series look (`SERIES-LOOK`; never names a streamer, §10A); the Seedance move library adds F6 pull-back reveal, F7 arc (≤ 30°), F8 crane/pedestal, F9 lateral track (walk in profile, 4–6 steps), F10 dolly zoom (≤ 1 per film); series coverage order, angle for status, 9:16 composition; the hook as a cold open; the settings order on every shot; checks |
+| **24G** | New package row *Prestige streaming series* (Alexa 35 / Mini LF · Venice 2 · V-Raptor, spherical primes); on the Seedance route the Mode 4 look is derived inside the series base |
+| **24K**, **22B** | Travel row and rig table carry F6–F10 |
+| Appendix A | `RIG-F6`–`RIG-F10`, `SERIES-LOOK` |
+| Open Decisions | First use of each new move and of `SERIES-LOOK` is a visual check |
+| Files | `preflight.py` (new rigs and subject rules, F9 profile, `SERIES-LOOK` on film and `series` calls, no streamer names, Seedance checks ingredients instead of a start image), `angles.py` (F6–F10 as moving rigs, F10 counted as a signature move, ≤ 1 per film), both skills, `CLAUDE.md` |
+
+**Origin:** user, 2026-09-29 — "about making hooks and movies using Seedance I want the best camera motion, angles and settings — I want the Netflix live-action style."
+
+---
+
+# CHANGELOG — V7.68.1 → V7.68.2 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **4** I2V routing | New row: a hook (Modes 1–3) goes to Seedance only on the user's call — intake `ADJUST` / `DIRECTIONS` or a message, per build or per hook; otherwise its normal route (Kling; HeyGen for a talking-head hook). The agent never picks Seedance for a hook itself, in Manual or Automatic, not as a fallback. Films (Modes 4–5) unaffected |
+| Files | both skills, `CLAUDE.md` |
+
+**Origin:** user, 2026-09-29 — "then the hook Seedance are called and not automatic" (confirmed: "only when you ask for it").
+
+---
+
+# CHANGELOG — V7.68.0 → V7.68.1 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **2**, **30C**, **30G**, **E7** | Location plates and the property plate are generated at **16:9** (was 9:16): a plate is a wide reference of the whole room, never a shot; every frame, clip and deliverable stays 9:16 |
+| Files | `kie.py image --plate` (16:9), both skills, `CLAUDE.md` |
+
+**Origin:** user, 2026-09-29 — "when generating location plates use 16:9 instead of 9:16".
+
+---
+
+# CHANGELOG — V7.67.0 → V7.68.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **4** Seedance ingredients, `ING-MANIFEST`, **E7** | Ingredients are information, never frames: the pack is Characters (§19 sheet) → Voice (clip per speaker) → Location (plate, property plate) → Product (canonical + one view) → **Info cards** (new: one fact per card — where the product sits on the body, how it is worn, the day's outfit, a prop's state, an on-screen object; marks never in the render; on the board for Confirm / Fix). No composition frame, scene frames, look frames or motion clips; the shot is written in the prose; no `videos_list`. A Seedance call carrying a frame is a failed call |
+| **24H**, **30L** | On the Seedance route no frames are made (no master, start, chained, end or bridge frame); the scene image list is the scene's ingredient list; continuity is carried by shared ingredients, `COLOUR-KEY` and the state track in the prose; the scene's first approved clip is the colour reference |
+| **22X** | Gate part 1 on Seedance: every ingredient approved; part 2 reads the ingredients and the prose |
+| **16A** | Board ingredients carry `kind` (character · voice · location · product · info) and an info card's `note`; voice clips show as voice tiles; scene Images hold info cards, not frames |
+| Files | `dashboard/generation_board.html`, both skills, `CLAUDE.md` |
+
+**Origin:** user, 2026-09-29 — "for using the Seedance we don't need master Seedance, we just need the characters, the voice clip, location and important ingredients — example in STRYDE we need the patellar tendon point or where the strap should go so everyone knows — like we need infos for ingredients, not frames."
 
 ---
 

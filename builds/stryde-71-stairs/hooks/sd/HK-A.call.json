@@ -1,0 +1,48 @@
+{
+ "beat": "HK-A-SD",
+ "connector": "seedance",
+ "mode": 1,
+ "kind": "dialogue",
+ "prompt": "INGREDIENTS. @image1 is THE MOTHER: face, age, hair and build only, with the wardrobe as written below and never from this sheet. @image2 is THE DAUGHTER: face, age, hair and build only, with the wardrobe as written below and never from this sheet. @image3 is the place: her house's upstairs landing and straight open staircase, the photo wall of black-and-white and sepia family portraits, white balusters under a dark oak handrail, the worn beige runner and the front door with glass sidelights at the bottom, exactly as shown; @image4 is the same house's hall and the foot of those stairs, its finishes exactly as shown. @image5 is an info card: THE MOTHER's outfit in this scene, exactly as shown and captioned; follow it exactly, and its caption never appears in the clip. @image6 is an info card: THE DAUGHTER's outfit in this scene, exactly as shown and captioned; follow it exactly, and its caption never appears in the clip. These references set who, where and what things ARE; the prose below sets the shot and what HAPPENS, and nothing in them is a shot to cut to. A phone propped on the upstairs landing at head height, looking straight down the flight, 24mm, 9:16, the whole flight in frame, the front door bright at the bottom; the light comes from the front-door sidelights below and the landing window behind the camera, warm clear Sunday afternoon, faces lit from the left of frame. Opening mid-climb: the mother, in her royal-blue skirt suit (cream blouse, navy pumps), comes up the last four steps toward the camera quickly and lightly, one step per half-second, her hand only brushing the rail, head up, a small proud smile, and walks past the camera on its right and out of frame at the top. Three steps behind her the daughter, in her burgundy sweater, dark jeans and white trainers, keeps climbing, slower, gripping the rail and a little out of breath; she stops two steps from the top, one hand on the rail, looks up past the lens to where her mother went, and \u2014 in the last three seconds \u2014 says, surprised and out of breath: \"Mama, when did that happen?\" Her voice: A Black American woman in her mid-forties from the Atlanta suburbs, a warm alto with a light Georgia accent: soft 'r', drawn vowels, 'Mama' said MAH-muh. Real, unperformed surprise, a little out of breath from the stairs, the question rising at the end, half a laugh of disbelief in the breath before it, never shouted. Audio must sound like a phone microphone recording in a room, not a studio voice track: audible breath before the first word and between phrases, mouth and lip noise, sibilance present and un-de-essed, plosives on hard consonants, level drifting slightly across the take rather than sitting compressed and even. No studio compression, no noise gate, no reverb plate, no post EQ. Small hallway and carpeted stairs, the photo wall and runner deadening it, short dull tail; her voice about a metre and a half below the phone, a little room in the signal, no boom. The phone is propped and still apart from the tiniest drift; it never moves, pans or follows anyone. One continuous shot, no cut. Mass and momentum in all movement: weight transfers first, hands arrive last, clothes and braids lag and settle; nothing melts, merges or changes shape; both women keep their faces, builds and clothes from the first frame to the last. Negative: never a smooth announcer voice, never RP newsreader neutral, never audiobook-warm, never a generic voiceover artist, never the same voice as any other character in the build, never younger than the character, never a mid-pitch evenly paced narrator with no wear and no habits, no studio polish, no generic intensity on emphatic lines, no voice that could read any script for any brand, the mother never speaks, no second line, no narration, no music, no subtitles, no text on screen, no cut to another shot, no escalator, no camera travelling with anyone, no running, no one falling or stumbling, no knee strap visible, no third person close to camera, no morphing, no warping, no face swap.",
+ "duration": 11,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "files": [
+  "../cast/N-NARR_v1.png",
+  "../cast/C2-DAUGHTER_v1.png",
+  "../plates/P1-LANDING_v5.png",
+  "../plates/P0-PROP-N_v3.png",
+  "info/INFO-WARD-A-N_v1.png",
+  "info/INFO-WARD-A-C2_v1.png"
+ ],
+ "audios": [],
+ "dialogue": "Mama, when did that happen?",
+ "script_line": "Mama, when did that happen?",
+ "pace": "brisk",
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "the mother speaks or a second voice/narration appears",
+   "prevented_by": "only the daughter's line is written; negative: the mother never speaks, no narration, no second line"
+  },
+  {
+   "risk": "outfits drift or come from the sheets",
+   "prevented_by": "sheets are face/age/hair/build only; outfit info cards @image5/@image6 followed exactly"
+  },
+  {
+   "risk": "camera follows the mother / cuts",
+   "prevented_by": "phone propped and still, never pans or follows; one continuous shot, no cut"
+  }
+ ],
+ "ingredients_approved": true
+}

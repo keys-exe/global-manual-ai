@@ -1,0 +1,34 @@
+{
+ "beat": "HK1-01",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"hk1_01\",\"subject\":\"A stylised translucent anatomical model of one knee: muscles semi-transparent in natural colour, bones warm ivory-gold, the patellar tendon pearly white, the cartilage worn thin and bone close to bone — and the whole joint calm, nothing glowing.\",\"camera\":{\"movement\":\"Virtual camera already drifting on the first frame, never static at entry. A slow steady lateral travel across the subject, single direction, constant unhurried speed, mechanically smooth — no rotation around the subject, no orbit, no push, no sway, no handheld physics, no focus hunt, no reaction to anything in the scene. Total travel stays small, roughly a tenth of frame width across the clip. Still drifting on the final frame, the move never completing and never coming to rest.\",\"framing\":\"As in the start frame.\"},\"motion\":\"The faint particulate in the near-black field drifts slowly and the light moves softly across the translucent surfaces as the view drifts; the anatomy itself stays still and calm, its colours unchanged from first frame to last — no glow appears anywhere. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Exactly as in the start frame.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no glow appearing, no red glow, no orange glow, no heat, no pulse, no colour change in the joint, no rotation around the subject, no orbit, no push-in, no pause, no freeze, no text, no labels, no arrows, no music, no speech\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://tempfile.aiquickdraw.com/workers/images/image_fa77c8bcdca5c1f38b14a9a158ad27ad.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "a glow or red heat appearing in the joint",
+   "prevented_by": "motion says colours unchanged, no glow; negatives name glow, red, pulse, colour change"
+  },
+  {
+   "risk": "the anatomy warping or melting as the view moves",
+   "prevented_by": "RIG-RVD small lateral drift only, HOLD-C + NEG-WARP-C"
+  },
+  {
+   "risk": "the camera orbiting or pushing in",
+   "prevented_by": "RIG-RVD 'no orbit, no push'; negatives repeat it"
+  }
+ ],
+ "route": "Kie AI kling-3.0 (§5 fallback: Kling connector at 3 credits)"
+}

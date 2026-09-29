@@ -1,0 +1,34 @@
+{
+ "beat": "MECH-03",
+ "connector": "kling",
+ "route": "Kling 3.0 on Kie (kie.py kling), Kling connector out of credits",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"mech_03\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"The render camera holds still; no move, no zoom.\",\"framing\":\"MCU as in the start frame, the knee from the front in the translucent brace.\"},\"motion\":\"The translucent brace squeezes in evenly all round the knee over about two seconds and holds; the one tight red point on the tendon below the kneecap stays exactly as bright, untouched. Bones keep their shape, length and spacing, joints never separate or pass through each other, muscle keeps its volume and the layer order holds. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bones bending, no joint separating, no rubbery deformation, no structures inflating, no anatomy sliding through the outer contour, no red point fading, no strap, no glow spreading onto the shin, no second glow, no flicker, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no music, no voice, no text, no captions\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "broll/v2/MECH-03_v2.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the red point cools (the opposite of the line)",
+   "prevented_by": "'stays exactly as bright, untouched'"
+  },
+  {
+   "risk": "the brace passes through the anatomy",
+   "prevented_by": "squeezes evenly + NEG_ANAT"
+  },
+  {
+   "risk": "camera moves",
+   "prevented_by": "render camera holds still"
+  }
+ ]
+}

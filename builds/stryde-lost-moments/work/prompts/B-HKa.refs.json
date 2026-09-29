@@ -1,0 +1,14 @@
+{
+ "model": "nano_banana_2",
+ "face": "FACE",
+ "refs": [
+  [
+   "C2 sheet",
+   "93f2ff6f-c34b-4e1f-af22-12eea57d8a87"
+  ],
+  [
+   "P1-HIGHST plate",
+   "c3dba824-7767-44b1-b9cf-0c05730558f8"
+  ]
+ ]
+}

@@ -1,0 +1,640 @@
+[
+ {
+  "beat": "HK2-01",
+  "group": "Hook 2",
+  "type": "BR",
+  "subject": "R1 Folake",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "eye level, beside her: an ordinary morning deciding the day",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 6,
+  "light": {
+   "source": "east window of Folake's lounge, net curtains",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem \u2192 after: bright morning through the nets",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B-01a",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R2 Derek hands",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = his view down into the box",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "open sky, high thin cloud, sun high on the left",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "problem (D1): flat bright overcast \u00b7 after (D2): the cloud broken, sun",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "MECH-S1",
+  "group": "Body",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 10,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "MECH-01",
+  "group": "Body",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "low",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low + profile = the gap closed, bone meeting bone",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 10,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B-02b",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R3 Hassan",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MEDIUM",
+  "fg": "through",
+  "why": "OTS over the consultant = the news landing on him",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "consulting-room window, left-hand wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: overcast morning daylight (a morning clinic)",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B-03a",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R2 Derek",
+  "height": "eye",
+  "side": "profile",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "profile = the long path ahead of him",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": 2,
+  "light": {
+   "source": "open sky, high thin cloud, sun high on the left",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "problem (D1): flat bright overcast \u00b7 after (D2): the cloud broken, sun",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B-03b",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R3 Hassan",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = the flight looms over him",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 8,
+  "light": {
+   "source": "front-door coloured glass + half-landing window",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem (H1) \u2192 after (H2): warm wash on the stairs",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B-03c",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R1 Folake",
+  "height": "high",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high = the chair holding her down",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 6,
+  "light": {
+   "source": "east window of Folake's lounge, net curtains",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem \u2192 after: bright morning through the nets",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B-04",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R2 Derek hand",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 3,
+  "light": {
+   "source": "open sky, high thin cloud, sun high on the left",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "problem (D1): flat bright overcast \u00b7 after (D2): the cloud broken, sun",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "MECH-02",
+  "group": "Body",
+  "type": "BR",
+  "subject": "anatomy",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 10,
+  "light": {
+   "source": "rendered: the ANAT look's own light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "mechanism: X-ray blue, red on pain",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B-06",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R3 Hassan",
+  "height": "ground",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "ground = at the knee: the leg straightening",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 9,
+  "light": {
+   "source": "front-door coloured glass + half-landing window",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem (H1) \u2192 after (H2): warm wash on the stairs",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B-07",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R1 Folake",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = the stairs no longer loom",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": 7,
+  "light": {
+   "source": "front-door glass behind the camera + the landing window",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: soft bright wash down the hall",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B-08",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R3 Hassan",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "low and close, knees to chest: the strap large enough to read (Fix \u00d72: small in frame, the model drew a generic band)",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 9,
+  "light": {
+   "source": "window over the sink, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "after: bright sun along the worktop",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B-09a",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R4 Elaine",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile = the height: the notch meets the kneecap",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "sash window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: bright morning across the bed",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B-09b",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R4 Elaine hands",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high = looking into it",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "sash window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: bright morning across the bed",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B-10",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R3 Hassan",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = the full bend and straightening",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 9,
+  "light": {
+   "source": "window over the sink, east wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "after: bright sun along the worktop",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B-11a",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R4 Elaine",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low = the flat line of the trouser",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "sash window, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "after: bright morning across the bed",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B-11b",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R4 Elaine",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "through",
+  "why": "through the stall's fruit = caught in her day",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 5,
+  "light": {
+   "source": "open sky over a street market, sun behind the camera's right",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "after: bright, busy",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "B-12",
+  "group": "Body",
+  "type": "BR",
+  "subject": "surgeon SG-01 (one-off, \u00a719B)",
+  "height": "eye",
+  "side": "ots",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "OTS over the surgeon's shoulder, tight on the knee = his approval, the strap large (Fix: small in frame, generic band)",
+  "mode": 1,
+  "product_beat": false,
+  "face": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 4,
+  "light": {
+   "source": "consulting-room window, left-hand wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "everyday: overcast morning daylight (a morning clinic)",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B-13a",
+  "group": "Body",
+  "type": "BR",
+  "subject": "object",
+  "height": "overhead",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "overhead = what's in the box",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 7,
+  "light": {
+   "source": "east window of Folake's lounge, net curtains",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem \u2192 after: bright morning through the nets",
+   "why": "",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "CARD-13b",
+  "group": "Body",
+  "type": "BR",
+  "subject": "two straps on dark",
+  "height": "eye",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mode": 1,
+  "product_beat": true,
+  "face": false,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": 1,
+  "light": {
+   "source": "rendered: dark card, soft top light",
+   "key_side": "front",
+   "time": "midday",
+   "arc": "offer card",
+   "why": "",
+   "kelvin": 6500
+  }
+ },
+ {
+  "beat": "B-14",
+  "group": "Body",
+  "type": "BR",
+  "subject": "R2 Derek",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low = strong, the after",
+  "mode": 1,
+  "product_beat": false,
+  "face": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": 3,
+  "light": {
+   "source": "open sky, high thin cloud, sun high on the left",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "problem (D1): flat bright overcast \u00b7 after (D2): the cloud broken, sun",
+   "why": "",
+   "kelvin": 6500
+  }
+ }
+]

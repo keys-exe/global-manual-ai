@@ -1,0 +1,12 @@
+{"taskId": "b8350fd2d9202173275db6719cc0b644", "created": true}
+{
+  "taskId": "b8350fd2d9202173275db6719cc0b644",
+  "state": "success",
+  "credits": 108.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/b8350fd2d9202173275db6719cc0b644_1_1790707394_9369.mp4"
+  ],
+  "saved": "HK3-a_v3.mp4",
+  "model": "kling-3.0/video"
+}

@@ -2,7 +2,7 @@
 """§30H — place B-roll on its lines, close every hole, render and verify a rough cut.
 
 Usage:
-  assemble.py PLAN.json [--out ROUGH.mp4] [--min-th 1.5] [--lead 0.1] [--skip 0.4] [--fps 24] [--dry-run]
+  assemble.py PLAN.json [--out ROUGH.mp4] [--min-th 1.5] [--lead 0.25] [--skip 0.4] [--fps 24] [--dry-run]
   assemble.py PLAN.json --lengths      # before any B-roll call: the length each clip needs (E6)
 
 PLAN.json:
@@ -47,10 +47,16 @@ and holds until the next B-roll or the next punch-in (scale 1.0 = punch back out
 A punch-in landing under a B-roll is reported and ignored.
 
 Rules (§30H):
-  1. PLACE   each B-roll cuts in --lead (3 frames) before its anchor word: the
-             phrase's `key` word when given, else its first word (word timestamps
-             of the master; never before 0 or inside the previous clip's first
-             2.0s). It plays from its in-point, not frame 0: `in` if given, else
+  1. PLACE   each B-roll cuts in --lead (6 frames, 0.25s) before its anchor word: the
+             phrase's `key` word when given, else its first word. The word's time is
+             its ONSET in the master's audio (the voiced run Whisper's word start falls
+             in, up to 0.3s earlier — Whisper's word starts run late), never Whisper's
+             guess alone. Never before 0; when the lead would cut into the previous
+             clip's first 2.0s it shrinks toward 0, but the cut NEVER lands after its
+             word (V7.69.2 — "the brolls are always late"): if even a cut on the onset
+             leaves the previous clip under 2.0s, that clip FAILS FLASH (merge the rows).
+             Every cut is reported with `early_s` (onset - cut); a cut after its word
+             is a LATE FAIL. It plays from its in-point, not frame 0: `in` if given, else
              `peak` minus the lead-to-key time, else --skip (0.4s — the start
              image's static opening). It runs until the next B-roll starts, the
              phrase's line ends, or the clip runs out — whichever is first.
@@ -91,6 +97,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 from trim import words, duration  # noqa: E402
 
 FF = imageio_ffmpeg.get_ffmpeg_exe()
+ONSET_BACK, ONSET_FWD = 0.3, 0.1   # §30H rule 1 (V7.69.2): search window around Whisper's word start
+ONSET_DROP = 30.0                  # voiced = within 30 dB of the master's loud level (95th pct)
 FPS = 24                     # set from --fps; Kling renders 24 fps
 MIN_SLOW = 0.8
 FILM = False                 # plan "mode" 4/5: no speed change ever (§24L)
@@ -203,6 +211,39 @@ def join_media(root, spec, kind):
     return out
 
 
+def level_db(audio):
+    """10 ms frame levels (dBFS) of the master, mono 16 kHz."""
+    import numpy as np
+    raw = subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-i", str(audio), "-ac", "1", "-ar", "16000",
+                          "-f", "s16le", "-"], capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+    n = len(x) // 160
+    rms = np.sqrt((x[:n * 160].reshape(n, 160) ** 2).mean(axis=1) + 1e-12)
+    return 20 * np.log10(rms)
+
+
+def onset(db, t):
+    """The word's real start in the audio (§30H rule 1, V7.69.2). Whisper's word start
+    usually lands late; the voice starts where the voiced run it falls in begins. Silent
+    at t -> the first voiced frame within ONSET_FWD; voiced -> back to the silence before
+    it, at most ONSET_BACK. Connected speech with no silence in reach keeps Whisper's time."""
+    import numpy as np
+    if db is None or not len(db):
+        return t
+    thr = float(np.percentile(db, 95)) - ONSET_DROP
+    f = min(max(int(round(t * 100)), 0), len(db) - 1)
+    if db[f] < thr:
+        for k in range(f, min(len(db), f + int(ONSET_FWD * 100) + 1)):
+            if db[k] >= thr:
+                return k / 100.0
+        return t
+    lo = max(0, f - int(ONSET_BACK * 100))
+    for k in range(f, lo - 1, -1):
+        if db[k] < thr:
+            return (k + 1) / 100.0
+    return t
+
+
 def snap(t):
     return round(round(t * FPS) / FPS, 4)
 
@@ -214,7 +255,7 @@ def main():
     ap.add_argument("--min-th", type=float, default=1.5)
     ap.add_argument("--model", default="base.en")
     ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--lead", type=float, default=0.1, help="cut this many seconds before the anchor word (3 frames)")
+    ap.add_argument("--lead", type=float, default=0.25, help="cut this many seconds before the anchor word's onset (6 frames, V7.69.2)")
     ap.add_argument("--skip", type=float, default=0.4, help="default in-point: skip the clip's static opening")
     ap.add_argument("--lengths", action="store_true", help="print each B-roll's required call duration (E6) and exit")
     ap.add_argument("--fps", type=int, default=24, help="timeline frame rate; 24 = Kling's native rate (no repeated frames)")
@@ -245,6 +286,7 @@ def main():
         ws += [(s0 + offset, e0 + offset, w) for s0, e0, w in pw]
         offset += snap(duration(root / part))  # each part starts on a whole frame
     fails, fixes, edl = [], [], []
+    db = level_db(audio)
 
     # 1. PLACE — a lead before the anchor word (the key word, else the phrase's first
     # word); play from the in-point, not the start image's static opening
@@ -263,7 +305,7 @@ def main():
                 fails.append({"beat": b["beat"], "fail": "KEY_NOT_IN_PHRASE", "key": b["key"], "phrase": b["phrase"]})
             else:
                 anchor = k[0]
-        word_t = ws[anchor][0]
+        word_t = onset(db, ws[anchor][0])   # the word's sound, not Whisper's guess (V7.69.2)
         lay, lerr = check_layout(b, base is not None)
         if lerr:
             fails.append({"beat": b["beat"], "fail": "LAYOUT_INVALID", "detail": lerr})
@@ -273,16 +315,23 @@ def main():
             continue
         edl.append({"beat": b["beat"], "clip": str(clip) if clip else None, "phrase": b["phrase"],
                     "key": ws[anchor][2], "layout": lay, "word_t": word_t,
-                    "start": snap(max(0.0, word_t - a.lead)), "line_end": snap(line_end(ws, j)),
+                    "start": min(snap(max(0.0, word_t - a.lead)), round(int(word_t * FPS) / FPS, 4)), "line_end": snap(line_end(ws, j)),
                     "in_spec": b.get("in"), "peak": b.get("peak"), "max": b.get("max", a.max_clip),
                     "clip_len": (min(duration(clip), float(b["out"])) if b.get("out") else duration(clip)) if clip else None,
                     "speed": 1.0})
     edl.sort(key=lambda e: e["start"])
     for n, e in enumerate(edl):
-        # the lead never cuts into the previous clip's first MIN_FLASH seconds
+        # the lead never cuts into the previous clip's first MIN_FLASH seconds — it shrinks
+        # toward 0, but the cut never lands after its word (V7.69.2); a previous clip left
+        # under MIN_FLASH fails FLASH below (merge the rows)
         if n and e["start"] < edl[n - 1]["start"] + MIN_FLASH:
-            e["start"] = snap(max(e["word_t"], edl[n - 1]["start"] + MIN_FLASH))
-        lead = e["word_t"] - e["start"]
+            e["start"] = snap(min(e["word_t"], max(e["start"], edl[n - 1]["start"] + MIN_FLASH)))
+            if e["start"] > e["word_t"] + 1e-6:          # snap rounded past the word
+                e["start"] = round(int(e["word_t"] * FPS) / FPS, 4)
+        lead = max(0.0, e["word_t"] - e["start"])
+        e["early_s"] = round(e["word_t"] - e["start"], 3)
+        if e["early_s"] < -1e-6:
+            fails.append({"beat": e["beat"], "fail": "LATE", "detail": f"cuts {-e['early_s']:.2f}s after its word"})
         if e["in_spec"] is not None:
             e["in"], e["flex"] = float(e["in_spec"]), False
         elif e["peak"] is not None:
@@ -305,7 +354,7 @@ def main():
                 on = nxt - e["start"]   # a hold never leaves a face window under --min-th
             need = on + e["skip"] + HANDLE
             call = max(KLING_MIN, int(-(-need // 1)))
-            row = {"beat": e["beat"], "cut_s": e["start"], "anchor": e["key"], "on_screen_s": round(on, 2),
+            row = {"beat": e["beat"], "cut_s": e["start"], "early_s": e["early_s"], "anchor": e["key"], "on_screen_s": round(on, 2),
                    "skip_s": round(e["skip"], 2), "call_s": call}
             cap = min(KLING_MAX, e["max"])
             if call > cap:
