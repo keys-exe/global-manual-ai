@@ -18,6 +18,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Four boards made; build doc on all four, cast on Current, docs/absorption on Plan + Current.
 
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the five avatars and the absorption; answer F2, F4, F5, F7, F8, F9.
+- 2026-09-29: user confirmed N, R2 Alan, R4 Fiona; R1 Grace and R3 Kofi sent back "CHANGE THIS AVATAR" → recast as **R1 Beverley** (Black British, 71) and **R3 Clive** (Black British, 67), one render each; Grace and Kofi moved to the Old board.
+- **Waiting on the user:** Confirm/Fix R1 Beverley and R3 Clive, and the absorption; answer F2, F4, F5, F7, F8, F9.
 - Next (on the go): steps 4–5 — location plates (16:9) for R1 park + hall stairs, R2 garden, R3 workplace, R4 stairs + coastal path, a clinic (surgeon one-off);
   act map + wardrobe map for both videos (`angles.py`, ~50% Black per video, ≤ 1 boxed B-roll in 5); then voice straight through (§22U, N).

@@ -187,15 +187,15 @@ Held in the Product Sheet register (V7.49.37): 17× bodyweight · three years wi
 
 ## 3. Cast (step 3): generated, on the board for your check
 
-**Casting to the Product Sheet (British, 55–80, balanced men/women) and the script's instruction (about half Black):** four recurring wearers carry the B-roll across both videos, two Black and two white, two women and two men. **N, the narrator, is never on screen**: her sheet exists only to make the two Kling clips her voice is cloned from (§22U). One-offs (the surgeon on B2-10, hands, extras) come at steps 4–5, balanced to keep about half Black.
+**Casting to the Product Sheet (British, 55–80, balanced men/women) and the script's instruction (about half Black):** four recurring wearers carry the B-roll across both videos, two Black (R1 Beverley, R3 Clive) and two white, two women and two men. **N, the narrator, is never on screen**: her sheet exists only to make the two Kling clips her voice is cloned from (§22U). One-offs (the surgeon on B2-10, hands, extras) come at steps 4–5, balanced to keep about half Black.
 
 | Sheet | Who | Job ID | File | Board |
 |---|---|---|---|---|
-| N-NARR | the narrator (voice only) | `208200f7-8adc-4cc8-99fa-4e3a60772df4` | `cast/N-NARR_v1.png` | To check |
-| R1-GRACE | wearer · walks, stairs | `d74aa805-e134-4a6c-b8ed-65d690299805` | `cast/R1-GRACE_v1.png` | To check |
-| R2-ALAN | wearer · garden, trousers over it | `29295252-0141-4402-af1f-28ce67a2dcf2` | `cast/R2-ALAN_v1.png` | To check |
-| R3-KOFI | wearer · still working, on his feet | `6411f6af-38fd-440f-8849-a99023f8cfc3` | `cast/R3-KOFI_v1.png` | To check |
-| R4-FIONA | wearer · her stairs, the close | `6757bb36-e953-4b36-84c3-23bf20d39d9f` | `cast/R4-FIONA_v1.png` | To check |
+| N-NARR | the narrator (voice only) | `208200f7-8adc-4cc8-99fa-4e3a60772df4` | `cast/N-NARR_v1.png` | **Confirmed** (user, 2026-09-29) |
+| R1-BEVERLEY | wearer · walks, stairs | `4a30a73b-c0c7-47a2-a6ad-e3505cb71d80` | `cast/R1-BEVERLEY_v1.png` | To check (replaces R1-GRACE, sent back: "CHANGE THIS AVATAR"; Grace is on the Old board) |
+| R2-ALAN | wearer · garden, trousers over it | `29295252-0141-4402-af1f-28ce67a2dcf2` | `cast/R2-ALAN_v1.png` | **Confirmed** (user, 2026-09-29) |
+| R3-CLIVE | wearer · still working, on his feet | `119ee44b-af12-42f2-a2ab-55a5b9eaacb6` | `cast/R3-CLIVE_v1.png` | To check (replaces R3-KOFI, sent back: "CHANGE THIS AVATAR"; Kofi is on the Old board) |
+| R4-FIONA | wearer · her stairs, the close | `6757bb36-e953-4b36-84c3-23bf20d39d9f` | `cast/R4-FIONA_v1.png` | **Confirmed** (user, 2026-09-29) |
 
 Manual run: **I don't check the sheets** (§18B step 3). Confirm or Fix each on the board. Prompts: `cast/<ID>.prompt.txt`, assembled from Appendix A by ID in `cast/build_sheets.py` (`CAM-LOCK` → `AVATAR-SHEET` + `SHEET-GRID` → `SKIN-T` → `CAP-SHARP` → `CAP-FILE` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILE` + `NEG-DEFAULT-FACE`), 9,145–9,255 chars each. Spend: 5 Sunburst jobs, one render each. Higgsfield 17,527 credits before the cast.
 
@@ -204,25 +204,25 @@ Manual run: **I don't check the sheets** (§18B step 3). Confirm or Fix each on 
 | ID | Identity string |
 |---|---|
 | N | white British woman, 57, tall and narrow, slightly stooped; long narrow face, high flat cheekbones, hooded grey-green eyes, slightly hooked nose, thin mouth turned down at the corners; small white scar breaking the outer end of the right eyebrow; silver-ash blunt chin-length bob with a straight fringe; charcoal merino V-neck over a white T-shirt, black trousers, black loafers |
-| R1 | Black British woman (Nigerian heritage), 62, tall and full-figured; round face, wide cheekbones, large dark brown eyes, broad short nose, full lips; gap between her front teeth; short coiled hair, mostly grey; mustard chunky cardigan over a black top, stone shorts above the knee, white leather trainers |
+| R1 | Black British woman (Jamaican heritage), 71, short and slim, slight stoop; long oval face, high rounded forehead, small bright dark eyes, narrow straight nose, small neat mouth; small dark mole high on the right cheekbone; silver-grey hair smoothed back into a small low bun; lilac short-sleeved blouse, navy linen shorts above the knee, navy canvas slip-ons |
 | R2 | white British man, 72, short and wiry, slight bow legs; long thin face, sunken cheeks, close-set pale blue eyes, large nose crooked to the left, large ears; bald with a white fringe; faded red-and-green checked flannel shirt, khaki shorts above the knee, brown walking shoes, grey socks |
-| R3 | Black British man (Ghanaian heritage), 58, stocky, barrel-chested; broad square face, heavy brow, deep-set eyes, wide flat nose; notch through the left eyebrow; shaved head, short grey goatee; heather-grey zip hoodie over navy T-shirt, navy work shorts above the knee, black work boots |
+| R3 | Black British man (Trinidadian heritage), 67, tall and lean; long lean face, high sharp cheekbones, hooded dark eyes, long straight nose, neat white moustache; small raised scar on the left earlobe; short grey-white coiled hair, receding high at the temples; burgundy polo shirt, beige chino shorts above the knee, tan suede desert boots |
 | R4 | white British woman (Scottish heritage), 66, tall, strong-shouldered; wide oval face, strong jaw, light hazel eyes, freckles; small pale scar on the point of the chin; shoulder-length curly faded copper-red hair going grey at the temples; teal fleece zip-neck over white T-shirt, navy shorts above the knee, grey trail trainers |
 
 ### §19A axis tables
 
 | Axis | N | R1 | R2 | R3 | R4 |
 |---|---|---|---|---|---|
-| Face | long, narrow, flat cheekbones | round, full | long, thin, sunken | broad, square, heavy brow | wide oval, strong jaw |
-| Hair | silver bob + fringe | short grey coils | bald, white fringe | shaved + grey goatee | curly copper-grey |
-| Age | 57 | 62 | 72 | 58 | 66 |
-| Build | tall, narrow | tall, full-figured | short, wiry | medium, stocky | tall, strong |
-| Wardrobe | charcoal knit | mustard cardigan | checked flannel | grey hoodie, workwear | teal fleece |
-| Marker | eyebrow scar | tooth gap | crooked nose | eyebrow notch | chin scar |
+| Face | long, narrow, flat cheekbones | long oval, high forehead | long, thin, sunken | long, lean, sharp cheekbones | wide oval, strong jaw |
+| Hair | silver bob + fringe | silver low bun | bald, white fringe | grey coils, receding + white moustache | curly copper-grey |
+| Age | 57 | 71 | 72 | 67 | 66 |
+| Build | tall, narrow | short, slim, stooped | short, wiry | tall, lean | tall, strong |
+| Wardrobe | charcoal knit | lilac blouse | checked flannel | burgundy polo | teal fleece |
+| Marker | eyebrow scar | cheekbone mole | crooked nose | earlobe scar | chin scar |
 | Voice | British (below) | non-speaking | non-speaking | non-speaking | non-speaking |
 | Environment | — (voice only) | park, her hall and stairs | his garden, home | his workplace | her stairs, a coastal path |
 
-**Clearance within the build:** every pair differs on ≥ 7 axes. **Against the roster** (`stryde-what-changed` H, R1 Maureen, R2 Desmond; `stryde-three-regrets` N, Gail, Ken, Joan; `stryde-lost-moments`): every new face differs on ≥ 6 axes; no marker repeats (R2 Desmond's nose scar ≠ R2 Alan's crooked nose). ✓
+**Clearance within the build:** every pair differs on ≥ 6 axes (R1 and R2 are both short; they differ on every other axis). **Against the roster** (`stryde-what-changed` H, R1 Maureen, R2 Desmond; `stryde-three-regrets` N, Gail, Ken, Joan; `stryde-lost-moments`): every new face differs on ≥ 6 axes; no marker repeats (R2 Desmond's nose scar ≠ R2 Alan's crooked nose). ✓
 
 ### Narrator: `VOICE-NARR` (§22D) and §20 constraint sheet
 
