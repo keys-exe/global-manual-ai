@@ -120,4 +120,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   under it. Act map now 75 rows, 58 B-roll; angles.py PASS on all three variants; `docs/actmap` updated on the Plan and Current
   boards; 14 planned cards added. Hooks unchanged (VN01: the host on camera for each hook's last line — the script's own note).
   Build-specific, not a system change.
-- **Where it stands:** B01a image (first body shot) waiting on the user's check; then its clip; then B01b, and so on in cut order.
+- User on the B01b line ("It sits two centimetres below your kneecap, on the front of the joint, and every step you take lands on
+  it."): "PUT DIFFERENT BROLLS HERE" → the line split in two (act map 76 rows / 59 B-roll, angles.py PASS): B01b "…on the front of the
+  joint," = ECU front of Desmond's straight bare knee, the tendon ridge under the skin (job c2453c7e); B01c "and every step you take
+  lands on it." = ground level side-on, Maureen's plimsoll stepping down off the kerb (refs R1 + P3, job 656ef52d). Both → To check.
+  Old B01b (Desmond stepping down the stairs) moved to the Old board, deleted from Current.
+- **Where it stands:** B01a, B01b (v2) and B01c images waiting on the user's check; clips follow each Confirm, one at a time.

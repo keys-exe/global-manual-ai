@@ -96,10 +96,16 @@ BB("B01a", A1, "That band is the patellar tendon.", "tendon", "anatomy",
    "ANAT", "—", "—", "ANAT-A: the knee three-quarter front, the patellar tendon traced from the kneecap down to the shin", "the tendon lights from top to bottom",
    "one trace, about two seconds", STILL, "none", "no", "absent", "—", "NB2",
    EYE, THR, "clean", "CU", "", "deep", "deep", L(ANAT, "L"), False, eg="EG05")
-BB("B01b", A1, "It sits two centimetres below your kneecap, on the front of the joint, and every step you take lands on it.", "step", "anatomy → life",
-   "R2", "L-D-STAIRS", "D-D1", "ECU from the side: Desmond's bare right knee bending as he steps down one stair", "one step down",
-   "one step, about a second and a half", STILL, "stairs: side, waist-down, camera still, hand on the rail visible", "no", "absent", "—", "NB2",
-   EYE, PRO, "clean", "ECU", "profile shows the knee bending and the spot below it", "foreground", "medium", L(D_GREY, "L"), False)
+BB("B01b", A1, "It sits two centimetres below your kneecap, on the front of the joint,", "centimetres", "where it is",
+   "R2", "L-D-STAIRS", "D-D1", "ECU from the front: Desmond standing in his hall, his bare right knee straight, the band of the tendon standing out as a ridge under the skin just below the kneecap", "the knee straightens a touch, the ridge firms",
+   "one small straighten, about a second", STILL, "hall: knee only, from the front, camera still", "no", "absent", "—", "NB2",
+   EYE, FRO, "clean", "ECU", "front = the spot shown straight on", "foreground", "medium", L(D_GREY, "L"), False,
+   notes="user 2026-09-29 'PUT DIFFERENT BROLLS HERE' — line split in two (was Desmond stepping down, side-on)")
+BB("B01c", A1, "and every step you take lands on it.", "step", "every step lands on it",
+   "R1", "L-STREET", "M-D1", "ground level, side-on: Maureen's plimsoll steps down off the kerb and lands on the road, the knee taking it", "one step down off the kerb",
+   "one step, about a second", STILL, "street: feet and shins only, camera still at ground level", "no", "absent", "—", "NB2",
+   GROUND, PRO, "clean", "CU", "ground level = the step landing", "foreground", "medium", L(STREET_AM, "L"), False,
+   notes="user 2026-09-29 'PUT DIFFERENT BROLLS HERE' — second half of the B01b line")
 TH("B01-TH", A1, "Put your finger there now and press.", framing="punch")
 BB("B02", A1, "That is the one.", "one", "participation",
    "R1", "L-M-STAIRS", "M-D1", "CU sitting on the bottom stair, her fingertip pressing just below her right kneecap", "her fingertip presses in once and holds",
@@ -328,7 +334,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03-BR', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06', 'B07-TH', 'B07-BR', 'B07', 'B08-TH', 'B08-BR', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03-BR', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06', 'B07-TH', 'B07-BR', 'B07', 'B08-TH', 'B08-BR', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []
