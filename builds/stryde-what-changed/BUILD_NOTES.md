@@ -32,8 +32,20 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - 13:00 UTC user "fix those": board → all 6 plates + S1-SURGEON confirmed; H-VOICE-IMG Fix "medium shot only, not too wide" →
   v2 (job bccb1cd0…, waist-up, face ~¼ frame height, no knees/legs; nano_banana_pro requested, logged nano_banana_2). v1 to Old (asset 0b58b0a8…).
 
+- 13:08 hourly check: H-VOICE-IMG v2 confirmed → §22U straight through. Kling at 3 credits → Kie `kling-3.0/video` (pro, sound, 10s):
+  G1 057fb576… (15 words, cut from HK1's first clause to pass the 20-word 10s budget), G2 c252fcb9… (19 words); preflight PASS both.
+  `voice_source.py` PASS (190.5 / 188.2 Hz, 31.9 s) → ElevenLabs IVC **`Changed` = YlKDROvtue2RvBG9MAKL**. Enhance run by hand on
+  HK1+HK2+HK3+BODY (`vo/enhanced.fitted.txt`, 5,025 chars, `[slowly]`/`[pause]`, verbatim PASS) → 4 eleven_v4 takes at speed 0.9
+  (T1 174, T2 177, T3 174, T4 172 wpm). Take check `work/take_check.py` (cut_points.py's number map lacks 5,000 / 70 million):
+  T1 PASS (small.en missed "your"; medium.en hears it) = **working take**; T3 "that is" → "that's". Cuts T1: 10.34 / 25.91 / 41.82 s.
+  User (mid-run) "CONFIRM ALL LOCATION. PROCEED"; "VOICE ID: PROCEED" → asked: keep `Changed` (answer: keep).
+  HeyGen photo avatar 1f288b8b… (H-VOICE-IMG v2); Avatar V rejected motionPrompt (no digital twin) → Avatar V without it (§22U (c)),
+  video 20d477e9…, 254.06 s → cut HK1/HK2/HK3 + BODY → `trim.py` natural PASS: HK1 213.2 s 182 wpm, HK2 217.8 s 185, HK3 218.8 s 181.
+  Board: user chose the 4 Mbps re-encode (trim.py output ~320 MB each); TH-ALL-T1 untrimmed (133 MB, parts) + TH-HK1…3 (~112 MB).
+  Hook 1 images HK1-a (Maureen's legs on her stairs, NB2 → logged nano_banana_flash) + HK1-b (ANAT-A hot spot) → To check.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix **H-VOICE-IMG v2** (the voice starts on its Confirm, §22X). Plates and S1 confirmed.
-- Next: Kling G1/G2 (`preflight.py` first) → `voice_source.py` → `elevenlabs_clone.py` (name `Changed`) → Enhance → one v4 request
-  HK1+HK2+HK3+BODY (`tts_api.py`) → HeyGen Avatar V on the untrimmed take → `cut_points.py` + `trim.py`. Then Hook 1 images.
+- **Waiting on the user:** Confirm/Fix the voice cards (G1, G2, clone source, VO T1–T4 per part), TH-ALL-T1, TH-HK1…3, and Hook 1's
+  images HK1-a, HK1-b. Their clips (Kie Kling 3.0 while Kling is short) follow each image's Confirm; E6 lengths from the T1 cuts.
+- Board storage: Current ≈ 0.65 GB used of 1 GB after the talking heads — B-roll clips will need the Final/Old split or a second store.
 - Open flags: F2, F3, F5, F6, F8, F9, F11 (claims).
