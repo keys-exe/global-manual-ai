@@ -83,5 +83,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - HK2-b Fix "FIX THE BROLL" → v3 still had the face in frame and the box floating between the legs with the hands on the knees.
   Front-on keeps pulling the face in → re-planned side-on, cropped at the waist (act map LOW/PRO, angles.py PASS), both hands under the
   box's bottom corners, no face identity text in the prompt. v4 job a9e02dbb → To check; v3 moved to Old, deleted from Current.
-- **Where it stands:** waiting on the user's check of the HK2-a clip and the HK2-b v4 image; then the HK2-b clip (one lift out of the
-  squat), then Hook 3 images.
+- User "CONFIRM, GO": HK2-b v4 image confirmed, HK2-a clip set to `use`. HK2-b clip (`clips.py`: one lift from the deep squat to thigh
+  height, head never enters; preflight PASS) Kie kling-3.0 ba2bf463… (90 cr), 5 s → To check.
+- Hook 3 images started on "GO": HK3-a (Maureen walking towards a ground-level lens on the pavement, cropped at the waist, refs R1 + P3,
+  job 4eefcbcd) and HK3-b (act map changed to MS: the whole leg hip to foot, one small spot — a third anatomy look, not HK1-b's profile or
+  HK2-a's band ECU; job a1ea8928) → To check. Faceless beats now carry no face identity text (the HK2-b lesson).
+- **Where it stands:** waiting on the user's check of the HK2-b clip and the HK3-a / HK3-b images; then the Hook 3 clips (E6: HK3-a
+  0–4.14 s, HK3-b 4.14 s–TH cut), then step 7 body B-roll.

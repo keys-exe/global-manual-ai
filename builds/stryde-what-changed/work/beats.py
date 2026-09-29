@@ -190,6 +190,33 @@ B["HK2-b"] = (NB2, ["R2", "P2"], photo([
     "no box floating, no hands resting on the knees, no box between the legs, no box held at the chest, no standing upright, no half squat, "
     "no second person, no wrong number of legs, no extra hands, no posterised colour, no banding"))
 
+# ── Hook 3 ──────────────────────────────────────────────────────────────────────────
+# Faceless beats carry no face identity text (HK2-b lesson: face text pulls the face into frame).
+R1_BODY = ("THE SAME WOMAN as in the attached character sheet of her — the same pale, faintly freckled older skin, the same short slight build "
+           "and thin legs, sixty-nine years old.")
+B["HK3-a"] = (NB2, ["R1", "P3"], photo([
+    "A snapshot from a phone lying almost on the pavement, pointing along it, at ground level. She is walking along the pavement straight "
+    "towards the lens at an ordinary pace, about two metres away, caught mid-stride: her right foot planted flat on a paving slab and "
+    "taking her weight, the right knee bending a little under it, her left foot lifting off behind at the heel. THE FRAME IS CROPPED AT "
+    "HER WAIST — her body above the waist, her head and face are above the frame and not in the picture. It holds her skirt hem, both "
+    "bare knees and shins, her plimsolls, the paving slabs running away behind her, the low garden walls and hedges on one side and the "
+    "parked cars on the other going soft into the distance.",
+    R1_BODY + " " + R1_LEGS + " Wearing a navy cotton A-line skirt ending just above the knee so both knees are bare, and white canvas "
+    "plimsolls, plain, no logo.",
+    STREET,
+    angle("HK3-a", "her feet and knees coming towards the lens"),
+    focus("her planted right foot and knee", deep=False).replace("the room behind", "the street behind"),
+    light("STREET-AM-L", "her legs and the pavement"), colour("STREET-AM")],
+    "no face in frame, no head, no torso above the waist, no product anywhere, no knee strap, no knee support, no walking stick, no dog, "
+    "no second person, no house numbers, no readable signs, no number plates, no logos on the plimsolls, no wrong number of legs"))
+
+B["HK3-b"] = (NB2, [], anat(
+    "Seen from a high three-quarter angle, the whole leg from the hip to the foot standing on the ground and carrying the body's weight, "
+    "the thigh, the knee and the long shin all readable end to end, the knee in the middle of the frame and small — one long load path "
+    "from the hip down to the heel with a single small spot on it. " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from a high three-quarter angle, the whole leg from the hip to the foot filling the frame top to bottom, the knee "
+         "joint small in the middle of the frame").replace(", the limb falling away out of frame at both ends", ", the foot resting on a faint ground plane").replace("model of a single knee", "model of a single leg"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
