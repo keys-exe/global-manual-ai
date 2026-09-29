@@ -118,21 +118,21 @@ BB("B04a", A1, "Going up the stairs, your muscles lift you.", "up", "the climb i
    EYE, THR, "clean", "MEDIUM", "three-quarter = his effort and his face together", "deep", "deep", L(D_GREY, "R"), True,
    notes="user Fix 2026-09-29 'NEGATIVE BROLL, STRUGGLING TO Going up the stairs.' (was from behind, climbing easily)")
 BB("B04b", A1, "Going down, nothing lifts you. You are catching yourself on every step,", "catching", "the careful descent",
-   "R1", "L-M-STAIRS", "M-D1", "MEDIUM low front: Maureen coming down her stairs towards the lens, gripping the oak handrail, placing each foot carefully, her weight held back", "one careful step down, holding the rail",
+   "R1", "L-M-STAIRS", "M-D1", "MEDIUM from the lower stairs looking up: Maureen near the top of her flight coming down, gripping the oak handrail, her other hand braced on the wall, struggling a little", "one careful step down, holding the rail",
    "one careful step, about two seconds", STILL, "stairs: from the foot of the flight looking up, camera still", "no", "absent", "—", "NB2",
    LOW, FRO, "clean", "MEDIUM", "low front = her coming down to us, every step a catch", "deep", "deep", L(M_GREY, "L"), True,
    notes="user Fix 2026-09-29 'GOING DOWN WHILE HOLDING THE BANISTER, CHANGE THE BROLL' (was Desmond stepping down through the spindles)")
 BB("B04c", A1, "so coming down puts more through that band than going up does.", "more", "mechanism (F5)",
-   "ANAT", "—", "—", "ANAT-A: the knee on a down step, the tendon glowing stronger as the foot lands", "one landing pulse, stronger than the last",
+   "ANAT", "—", "—", "ANAT-C: the silhouette figure, waist-down, walking down a short flight of steps, the leading foot landing, the spot glowing", "one landing pulse, stronger than the last",
    "one pulse, about a second", STILL, "none", "no", "absent", "—", "NB2",
-   HIGH, THR, "clean", "CU", "high = the drop onto the step", "deep", "deep", L(ANAT, "R"), False, ledger="F5", eg="EG05")
+   HIGH, THR, "clean", "MEDIUM", "high = the drop onto the step", "deep", "deep", L(ANAT, "R"), False, ledger="F5", eg="EG05")
 BB("B05", A1, "And inside the joint there is a layer of cartilage doing the absorbing. And over the years that layer thins.", "thins", "anatomy — cartilage",
    "ANAT", "—", "—", "ANAT-A: the joint cut away, the pale cartilage layer between the bones slowly thinning", "the cartilage thins by a fraction",
    "one slow change over four seconds", STILL, "none", "no", "absent", "—", "NB2",
    EYE, PRO, "clean", "CU", "profile: the layer seen edge-on", "deep", "deep", L(ANAT, "L"), False, eg="EG05")
 TH("B06-TH", A1, "That part is ordinary. It happens to everybody. But here is what nobody explains. The load does not thin with it.")
 BB("B06", A1, "Seventeen times your bodyweight is still arriving, every step, in exactly the same place.", "Seventeen", "mechanism — load (pip)",
-   "ANAT", "—", "—", "ANAT-A: the thinner joint, the load pulses still arriving at the same spot below the kneecap", "one pulse per second, unchanged",
+   "ANAT", "—", "—", "ANAT-A detailed: the thinner joint — worn cartilage, menisci, ligaments, fat pad, tendon fibres — the load pulses still arriving at the same spot below the kneecap", "one pulse per second, unchanged",
    "one pulse a second", STILL, "none", "no", "absent", "—", "NB2",
    LOW, THR, "clean", "CU", "low = the weight coming down on it", "deep", "deep", L(ANAT, "L"), False,
    layout="pip", eg="EG02 host cut-out bottom-left · EG04 red box 'Seventeen times' · 17× overlay")

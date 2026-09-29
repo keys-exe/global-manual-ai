@@ -384,7 +384,7 @@
   "subject": "ANAT",
   "height": "high",
   "side": "three-quarter",
-  "scale": "CU",
+  "scale": "MEDIUM",
   "fg": "clean",
   "why": "high = the drop onto the step",
   "mirror_of": null,

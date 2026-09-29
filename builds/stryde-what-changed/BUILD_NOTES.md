@@ -158,4 +158,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   DOWN THE STAIR, NOT YET AT THE LAST STEP" → v3 halfway down the flight, six or seven treads up (job 0ae147b1); v2 to Old. B04c clip Fix
   "GOING DOWN THE STAIR" → §22X fault = motion (the leg did not visibly step down) → gen 2 names the descent (foot lowers and lands, the
   leg travels down), same confirmed start frame, preflight PASS; Kie 55ed7ddd… 90 cr; v1 to Old. All → To check.
-- **Where it stands:** waiting on the user's check of the B02 clip, B03a–c clips, B04a clip, B04b v3 image, B04c v2 clip and B01a image.
+- User image Fixes: B04b "HIGHER LAYER IN STAIR, STRUGGLING A LITTLE BIT" → v4 near the top of the flight, a hand braced on the wall,
+  a small wince (job dc076019). B04c "WALKING DOWN THE STAIR" (image) → v2 ANAT-C silhouette figure, waist-down, walking down a short
+  flight of visible steps, the leading foot landing (act map MEDIUM; job 6ae8e4ac) — both earlier clips (v1, v2) moved to Old, the clip
+  is redone after this image is confirmed. B06 'ANATOMY "MORE DETAILS"' → v2 detailed joint (thin worn cartilage, menisci, collateral +
+  cruciate ligaments, fat pad, fibrous tendon, muscle striation, bone texture), pip layout kept (job 32b9a21d). angles.py PASS; replaced
+  versions on Old, deleted from Current. All → To check.
+- **Where it stands:** waiting on the user's check of the B02 clip, B03a–c clips, B04a clip, B04b v4 / B04c v2 / B06 v2 images and B01a.
