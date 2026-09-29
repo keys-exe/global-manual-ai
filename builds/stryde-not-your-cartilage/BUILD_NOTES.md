@@ -46,6 +46,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: user "CONFIRMED PROCEED" — HK2-01 video confirmed (hook 2 done). HK3-01 image (`hooks/build_hk3.py`: the consultant's finger traces the narrowed gap on a lit knee X-ray, no writing on the film; P6 attached) on Kie `nano-banana-2` (task 2cf20028…, 12 credits, 1536×2752) → To check.
 
+- 2026-09-29: user "CONFIRMED PROCEED" — HK3-01 image confirmed. HK3-01 video (`hooks/HK3-01.call.json`: RIG-R1, one slow fingertip trace along the gap, 2,354 chars) preflight PASS → Kie `kling-3.0` 6s (task 5ea8028d…, 108 credits) → To check.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the HK3-01 image; script flags F2, F5, F6, F7.
-- **Next:** HK3-01 video (5–6s: one slow trace of the fingertip along the gap), then the body B-roll (step 7). Videos on Kie `kling-3.0`; NB2 images on Kie while Higgsfield logs flash.
+- **Waiting on the user:** Confirm/Fix the HK3-01 video (hook 3 gate); script flags F2, F5, F6, F7.
+- **Next:** the body B-roll (step 7), 21 shots (`work/actmap.json`, lengths `edit/call_lengths.json`): images first on the §18A lock (NBP for wordmark/worn beats, NB2 volume via Kie while Higgsfield logs flash), each To check, then the videos on Kie `kling-3.0`.
