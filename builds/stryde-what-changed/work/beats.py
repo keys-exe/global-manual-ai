@@ -479,36 +479,40 @@ B["B07"] = (NB2, ["R1", "P4"], photo([
     "no crying, no wincing, no grimace, no product anywhere, no knee strap, no walking stick, no second person, no looking at the camera, "
     "no readable text, no logos on the mug"))
 
-# B08a v2 — "Some of the people it happens to have never run a mile in their life." User Fix 'GIVE ME DIFFERENT BROLL HERE' (v1:
-# her keys from the hall bowl). Maureen on her street pulling a tartan shopping trolley: an ordinary, unathletic errand. Face in frame.
-B["B08a"] = (NB2, ["R1", "P3"], photo([
-    "A snapshot from a phone at eye height on the pavement, three-quarter from the front. She is walking slowly along her street towards "
-    "and past the lens, pulling a red-and-green tartan shopping trolley on two wheels behind her with one hand, a small handbag over her "
-    "other arm, on an ordinary errand to the shops — unhurried, a little careful, nothing sporty about her. Medium shot, the whole of her "
-    "from head to feet, the trolley behind her, the pavement and the houses around her.",
-    R1 + " Wearing " + WARD["M-D1"] + ".",
-    STREET,
-    angle("B08a", "her walking with the trolley"),
-    focus("her nearest eye", deep=False).replace("the room behind", "the street behind"),
-    light("STREET-AM-L", "her and the pavement"), colour("STREET-AM").replace("navy skirt and white plimsolls", "a dusty-pink cardigan, a navy skirt and a red-and-green tartan trolley")],
-    "no running, no sports clothes, no product anywhere, no knee strap, no walking stick, no second person, no looking at the camera, "
-    "no readable text, no brand on the trolley, no number plates, no readable signs"))
+# B08a v3 — "Some of the people it happens to have never run a mile in their life." User Fix 'GIVE ME DIFFERENT BROLL HERE' again
+# (v1 keys from the hall bowl; v2 tartan trolley on the street). Overhead into her understairs cupboard: a pair of plain running
+# trainers never worn, shop tag still on, beside her worn plimsolls; her hand on the door. Faceless.
+B["B08a"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone held straight above, looking down into the open understairs cupboard in her hall. On the cupboard floor: a "
+    "pair of plain white running trainers, brand new and never worn, still laced together with a blank cardboard shop tag hanging from "
+    "them, a film of dust on the toes; beside them her own old white canvas plimsolls, worn soft and creased. Her hand holds the edge of "
+    "the cupboard door at the side of the frame. Close-up: the two pairs of shoes fill the frame, an old umbrella and a folded shopping "
+    "bag at the back of the cupboard.",
+    "Her hand: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, thin skin over the knuckles, a "
+    "plain gold wedding ring, the dusty-pink cardigan cuff at the wrist.",
+    M_STAIRS + " The understairs cupboard under the flight has a plain white-painted door; inside, a worn oatmeal carpet floor.",
+    angle("B08a", "the shoes in the cupboard"),
+    focus("the new trainers", deep=False).replace("the room behind", "the back of the cupboard"),
+    light("M-GREY-L", "the shoes and her hand"), colour("M-STAIRS-AM")],
+    "no face, no person beyond her hand, no product anywhere, no knee strap, no readable text, no writing on the tag, no logos on the "
+    "trainers, no swoosh, no stripes on the trainers, no brand marks, no second hand, no extra fingers"))
 
-# B08b v2 — "Others played sport for thirty years." User Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: over his shoulder straightening a
-# team photo). Seated on his bottom stair, his hands turn over an old scuffed leather football on his lap. Faceless close-up.
+# B08b v3 — "Others played sport for thirty years." User Fix 'CHANGE THIS IMAGE' (v1 team photo over his shoulder; v2 old football
+# held up on the stairs). A shelf in his hall: a row of small old amateur football trophies and a faded club pennant; his hand sets
+# one tarnished trophy back in its place. Faceless close-up.
 B["B08b"] = (NB2, ["R2", "P2"], photo([
-    "A snapshot from a phone held a little above, looking down at his lap. He sits on his bottom stair with an old, scuffed, well-used "
-    "leather football held in both hands on his lap, turning it over and looking at it — the panels worn and greyed, the stitching "
-    "frayed, a lifetime of Saturdays on it. Close-up: his hands and the ball fill the middle of the frame, his bare knees and the tops of "
-    "his shins below, the charcoal stair carpet with its white nosing stripe under him. His face is not in the frame.",
-    R2_BODY + " His hands: dark brown older skin, thick knuckles, real unretouched skin. Wearing dark grey jogging shorts ending just "
-    "above the knee.",
+    "A snapshot from a phone at eye height along a shelf in his hall, three-quarter on. On the shelf: a row of six small old amateur "
+    "football trophies — little tarnished gilt figures on chipped marble and wooden bases, different heights and ages, some dull with "
+    "years — and a faded navy-and-white club pennant pinned to the wall above them. His hand sets one tarnished trophy back into the gap "
+    "in the row. Close-up: the trophies and his hand fill the frame, the grey wall behind, a black-framed team photo soft at the edge.",
+    "His hand: THE SAME MAN as in the attached character sheet — dark brown older skin, thick knuckles, real unretouched skin, the cuff of "
+    "a navy zip-neck sports top at the wrist.",
     D_STAIRS,
-    angle("B08b", "his hands and the football"),
-    focus("his hands and the football", deep=False).replace("the room behind", "the hall floor below"),
-    light("D-GREY-R", "his hands and the ball"), colour("D-STAIRS-AM").replace("a navy zip-neck top, dark grey shorts and white trainers with navy trim", "dark grey shorts and a worn tan-and-white leather football")],
-    NO_FACE + ", no product anywhere, no knee strap, no readable text, no logos on the ball, no brand marks, no names, no trophies, "
-    "no second person, no extra fingers, no extra hands"))
+    angle("B08b", "the trophies on the shelf"),
+    focus("his hand and the trophy", deep=False).replace("the room behind", "the wall behind"),
+    light("D-GREY-R", "the trophies and his hand"), colour("D-STAIRS-AM").replace("a navy zip-neck top, dark grey shorts and white trainers with navy trim", "tarnished gilt trophies and a faded navy-and-white pennant")],
+    "no face, no person beyond his hand, no product anywhere, no readable text, no engraving you can read, no names, no dates, no "
+    "writing on the pennant, no logos, no second hand, no extra fingers"))
 
 # B08c — "It is coming from standing up and walking." Desmond seated on the bottom stair, rising. Face in frame.
 B["B08c"] = (NB2, ["R2", "P2"], photo([

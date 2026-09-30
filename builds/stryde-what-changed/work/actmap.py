@@ -144,15 +144,15 @@ BB("B07", A1, "That is why it feels like it arrived overnight.", "overnight", "p
    notes="v2 — user Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: top of her stairs, stopping)")
 TH("B08-TH", A1, "Nothing about the way you walk changed, so you assume nothing changed. And here is the part that catches people out. You do not have to have done anything to your knees for this to happen.")
 BB("B08a", A1, "Some of the people it happens to have never run a mile in their life.", "mile", "not what you did",
-   "R1", "L-STREET", "M-D1", "MEDIUM on the pavement: Maureen walks slowly along her street pulling a tartan shopping trolley, an ordinary unathletic errand", "a few slow steps along the pavement, the trolley rolling behind",
-   "an ordinary slow walking pace", STILL, "street: three-quarter from the front, full figure, camera still", "no", "absent", "—", "NB2",
-   EYE, THR, "clean", "MEDIUM", "three-quarter = her everyday, nothing sporty about it", "eyes", "medium", L(STREET_AM, "L"), True,
-   notes="v2 — user Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: her keys from the hall bowl)")
+   "R1", "L-M-STAIRS", "M-D1", "CU in her understairs cupboard: a pair of plain white running trainers, still laced together with the shop tag on, dusty and never worn, beside her own worn plimsolls; her hand pushes the cupboard door open", "the door swings open onto the unworn trainers",
+   "one slow door swing, about two seconds", STILL, "cupboard floor, shoes and hand only, camera still", "no", "absent", "—", "NB2",
+   OVER, FRO, "clean", "CU", "overhead = looking down into the cupboard at the unused trainers", "foreground", "shallow", L(M_GREY, "L"), False,
+   notes="v3 — user Fix 'GIVE ME DIFFERENT BROLL HERE' again (v1 keys from the hall bowl; v2 tartan shopping trolley on the street)")
 BB("B08b", A1, "Others played sport for thirty years.", "sport", "not what you did",
-   "R2", "L-D-STAIRS", "D-D1", "CU seated on his bottom stair: Desmond's hands turn over an old, scuffed leather football on his lap, his bare knees below it", "his hands turn the ball over once",
-   "one slow turn, about two seconds", STILL, "seated, hands, ball and knees only, camera still", "no", "absent", "—", "NB2",
-   HIGH, FRO, "clean", "CU", "high = looking down at the ball he played with for thirty years", "hands", "shallow", L(D_GREY, "R"), False,
-   notes="v2 — user Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: over his shoulder straightening a team photo)")
+   "R2", "L-D-STAIRS", "D-D1", "CU on a shelf in his hall: a row of small old amateur football trophies and a faded club pennant; Desmond's hand sets one tarnished trophy back in its place", "his hand sets the trophy down",
+   "one set-down, about a second", STILL, "shelf, trophies and hand only, camera still", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "CU", "three-quarter along the shelf = thirty years of trophies in a row", "hands", "shallow", L(D_GREY, "R"), False,
+   notes="v3 — user Fix 'CHANGE THIS IMAGE' (v1 team photo over his shoulder; v2 old football on his lap)")
 TH("B08-TH2", A1, "It makes almost no difference, because the load is not coming from what you did.", framing="punch")
 BB("B08c", A1, "It is coming from standing up and walking.", "standing", "the cause — ordinary life",
    "R2", "L-D-STAIRS", "D-D1", "MEDIUM: Desmond sitting on the bottom stair tying a trainer, already rising — ends standing", "rises to standing",
