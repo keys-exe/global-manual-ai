@@ -285,9 +285,9 @@ BB("B19a", A4, "Put one on one knee only. Leave the other bare.", "bare", "the s
    "one breath, about a second", STILL, "none", "no", "worn (one knee)", "VISIBLE", "NBP",
    HIGH, FRO, "clean", "CU", "high = her own view, the comparison", "product", "medium", L(M_SUN, "R"), False, notes="one strapped knee, one bare — the script's test (SIDE_RULE)")
 BB("B19b", A4, "Go to your own stairs and come down forwards.", "forwards", "the self-test",
-   "R1", "L-M-STAIRS", "M-D2", "front-on, waist-down: continuing B19a, she stands and steps down off the bottom stair forwards, strap on the right knee, the left bare, hand on the newel post (fix: 'CONTINUE OF B19A')", "one step down, facing forwards",
-   "one step, about a second and a half", STILL, "stairs: front-on, waist-down, camera still, hand on the newel post", "no", "worn", "VISIBLE", "NBP",
-   EYE, FRO, "clean", "MEDIUM", "front = she comes down to us, the test", "product", "medium", L(M_SUN, "R"), False)
+   "R1", "L-M-STAIRS", "M-D2", "from the landing above, looking down three-quarter: Maureen on the TOP stair takes her first step down, facing forwards, strap on the right knee, the left bare (fix: 'FROM THE FIRST STAIR ON THE TOP STAIR GOING DOWN'; edit of B18b v1)", "one step down, facing forwards",
+   "one step, about a second and a half", STILL, "stairs: facing forwards, camera still on the landing above, the flight below her", "no", "worn", "VISIBLE", "NBP",
+   HIGH, THR, "clean", "MEDIUM", "high from the landing = the whole flight still ahead of her", "product", "medium", L(M_SUN, "R"), False)
 TH("B19-TH2", A4, "You will know in a minute. Not because the arthritis has gone. It is still there, and nothing here changes that.", framing="punch")
 BB("B20", A4, "Because the weight is not landing on that band any more.", "weight", "mechanism — protection (pip)",
    "ANAT", "—", "—", "ANAT-A: the strap seated, the step pulse arriving and spreading off the tendon, the spot staying calm", "one step pulse, the spot stays cool",
@@ -400,10 +400,18 @@ BB("B19-BR", A4, "And you do not have to take my word for any of it.", "word", "
    "R1", "L-M-STAIRS", "M-D2", "MEDIUM from a little above, chest to plimsolls: seated on her bottom stair, the open box of two on her lap, her hands lift one strap out (fix: 'DIFFERENT BROLL HERE')", "she lifts the strap out of the box",
    "one lift, about a second and a half", STILL, "seated, hands and box, camera still", "no", "held", "the strap and the open box", "NBP",
    HIGH, FRO, "clean", "MEDIUM", "high = her own view of what she is about to try", "product", "medium", L(M_SUN, "R"), False, notes="covers B19-TH")
-BB("B19-BR2", A4, "You will know in a minute. Not because the arthritis has gone. It is still there, and nothing here changes that.", "minute", "she notices",
-   "R1", "L-M-STAIRS", "M-D2", "MEDIUM waist-up at the foot of the stairs she has just come down: Maureen, hand on the newel post, a quiet surprised smile (fix: different B-roll)", "a small smile forms",
-   "one breath, about two seconds", STILL, "standing, waist-up, camera still", "no", "absent", "—", "NBP",
-   EYE, THR, "clean", "MEDIUM", "three-quarter = her private moment of noticing", "face", "shallow", L(M_SUN, "R"), True, ledger="F9", notes="covers B19-TH2; no claim shown beyond ease")
+BB("B19-BR2", A4, "You will know in a minute.", "minute", "a minute",
+   "R1", "L-M-STAIRS", "M-D2", "CU side-on: her wrist and a plain gold watch as her hand rests on the square newel post at the foot of the stairs (fix: 'CUT IT INTO MORE THAN ONE BROLL')", "the second hand ticks on",
+   "a few ticks, about two seconds", STILL, "hand still on the newel post, camera still", "no", "absent", "—", "NB2",
+   EYE, PRO, "clean", "CU", "profile = the watch, the minute", "hands", "shallow", L(M_SUN, "R"), False, notes="covers B19-TH2 (1/3); no brand on the watch")
+BB("B19-BR2b", A4, "Not because the arthritis has gone.", "arthritis", "still arthritic",
+   "R1", "L-M-STAIRS", "M-D2", "CU from above: seated on her bottom stair, her older hands with swollen arthritic knuckles resting on her bare left knee", "her fingers flex slowly once",
+   "one slow flex, about two seconds", STILL, "seated, hands on the knee, camera still", "no", "absent", "—", "NB2",
+   HIGH, FRO, "clean", "CU", "high = her own view of her hands", "hands", "shallow", L(M_SUN, "R"), False, notes="covers B19-TH2 (2/3); honest — the arthritis stays")
+BB("B19-BR2c", A4, "It is still there, and nothing here changes that.", "still there", "honest",
+   "props", "L-KITCHEN", "K-D1", "CU on the kitchen windowsill: a plain weekly pill organiser beside a glass of water, her hand setting the glass down", "the glass settles on the sill",
+   "one set-down, about a second", STILL, "windowsill, hand and objects, camera still", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "CU", "three-quarter = the everyday, unchanged", "hands", "shallow", L(KITCH, "R"), False, notes="covers B19-TH2 (3/3); no labels, no readable text")
 BB("B21-BR", A4, "So here is the choice. Keep aiming at the joint, which is where it hurts but not where the load is.", "joint", "aiming at the joint",
    "R2", "L-D-STAIRS", "D-D1", "CU seated on his bottom stair: Desmond's hand rubs clear gel in slow circles over his whole kneecap", "two slow circles of the hand",
    "two circles, about two seconds", STILL, "seated, knee and hand only, camera still", "no", "absent", "—", "NB2",
@@ -414,7 +422,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06a2', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B10d2', 'B11-TH', 'B11-BR', 'B12', 'B12b', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B16c2', 'B16c3', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06a2', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B10d2', 'B11-TH', 'B11-BR', 'B12', 'B12b', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B16c2', 'B16c3', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B19-BR2b', 'B19-BR2c', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []
