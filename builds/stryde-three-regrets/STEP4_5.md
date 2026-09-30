@@ -16,9 +16,9 @@ Built against the **locked avatars** (user, 2026-09-28): N-NARR v1 · R1 Gail v1
 |---|---|---|---|---|---|---|
 | **PROP-G** | Gail's house, a 1960s pebble-dashed semi | **C0**: hall/stairs and front bedroom are rooms of one dwelling | R1 | — | **Property Sheet + plate P0** | P0-PROP-G |
 | L-G-HALL | hall and stairs | C1 (P-032–P-033 coming down vs going up; the self-test P-050–P-053) | R1 | BR-032, BR-033, BR-047, BR-048, BR-050, BR-052, BR-053 | **TRAVERSED** + property plate · landmark: the pine handrail on white spindles | P0 |
-| L-G-BED | front bedroom, the drawer | C1 (P-016 "the drawer fills up") | R1 | HK1-01, HK2-03, HK3-04, BR-003–BR-008, BR-012, BR-016, BR-035, PR-037–BR-042 | **PLATED** | P1-G-BEDROOM (P0 attached) |
+| L-G-BED | front bedroom, the drawer | C1 (P-016 "the drawer fills up") | R1 | HK1-01, HK3-04, BR-003–BR-008, BR-012, BR-016, BR-035, PR-037–BR-042 | **PLATED** | P1-G-BEDROOM (P0 attached) |
 | L-G-OUT | her front path | C7 (after-state outdoors) | R1 | BR-043 | **INCIDENTAL** (the pebble-dash front, written with the beat) | — |
-| L-N-WORK | the narrator's workroom, the postbag | C5 (the narrator) · C1 (P-057 "those messages") | N | TH-01…TH-06, HK2-01, HK2-02, BR-057, BR-058 | **PLATED** | P2-N-WORKROOM |
+| L-N-WORK | the narrator's workroom, the postbag | C5 (the narrator) · C1 (P-057 "those messages") | N | TH-01…TH-06, HK2-01, HK2-02, HK2-03, BR-057, BR-058 | **PLATED** | P2-N-WORKROOM |
 | L-K-STOP | high-street bus stop and kerb | C1 (P-020 "you lead with the good leg") | R2 | HK1-02, HK3-02, BR-017–BR-020, BR-022, BR-061b, PR-062 | **PLATED** | P3-K-BUSSTOP |
 | L-J-LOUNGE | Joan's retirement-flat lounge | C1 (P-025 "stopped saying yes") | R3 | HK3-03, BR-024–BR-027 | **PLATED** | P4-J-LOUNGE |
 | L-J-STEPS | her daughter's front steps | C1 (P-028 "the house with the steps up to the front door") · the payoff (P-065) | R3 | BR-028–BR-030, BR-065 | **PLATED** | P5-J-STEPS |
@@ -106,7 +106,7 @@ Columns are E4's, condensed. `duration` = `pending-master` on every B-roll row (
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | HK2-01 | Hook 2 | HK2 | BR | N hands | L-N-WORK | N-D1 · E-N2 | her hands lift a stack of printed letters out of a grey post tray · one lift, 2s | sway · none · no | overhead · front · CU · clean — overhead = routine, the daily postbag | hands, deep | L | written | absent | full · EG01 banner · EG02 | NB2 | — |
 | HK2-02 | Hook 2 | HK2 | BR | N | L-N-WORK | N-D1 · E-N2 | pins one more card onto the full pinboard · one push of a pin, 2s | sway · none · no | eye · three-quarter-back · MEDIUM · clean — three-quarter-back = we read over her shoulder, the board is the subject | background, medium | L | Three | absent | full · EG01 banner · EG02 | NB2 | — |
-| HK2-03 | Hook 2 | HK2 | BR | object | L-G-BED | G-D1 · E-G1 | Gail's overfilled top drawer of knee supports, a strap sliding off the edge · one small slide, 2s | sway · none · no | high · front · CU · clean — high = looking down into the pile | foreground, medium | R | none | absent | full · EG01 banner · EG02 | NB2 | — |
+| HK2-03 | Hook 2 | HK2 | BR | N hands | L-N-WORK | N-D1 · E-N2 | her hands lay one more formal letter onto the third of three piles (user Fix 2026-09-30: fit HK2-01/02) · one placing, 2s | sway · none · no | overhead · front · CU · clean — overhead = the sorting, three piles = three things | hands, deep | L | none | absent | full · EG01 banner · EG02 | NB2 | — |
 
 #### Hook 3
 
