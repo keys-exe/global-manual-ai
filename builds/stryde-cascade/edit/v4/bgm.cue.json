@@ -1,0 +1,98 @@
+{
+ "scene": "STRYDE-CASCADE-BGM",
+ "length_s": 178.3,
+ "theme": [
+  "understated warm documentary underscore",
+  "soft felt piano",
+  "gentle koto plucks",
+  "low warm string pad",
+  "quiet and spacious, sits under a speaking voice"
+ ],
+ "avoid": [
+  "drums",
+  "heavy percussion",
+  "synth lead",
+  "epic",
+  "EDM",
+  "trailer hits",
+  "bright brass",
+  "vocals"
+ ],
+ "tempo": "slow",
+ "sections": [
+  {
+   "name": "Hook",
+   "start": 0,
+   "end": 16.5,
+   "energy": "low",
+   "styles": [
+    "sparse felt piano motif",
+    "single koto notes",
+    "quiet suspense"
+   ],
+   "avoid": [
+    "strings swelling"
+   ]
+  },
+  {
+   "name": "The cascade",
+   "start": 16.5,
+   "end": 75.0,
+   "energy": "low",
+   "styles": [
+    "sombre and patient",
+    "slow piano with a low string pad",
+    "restrained"
+   ],
+   "avoid": [
+    "percussion"
+   ]
+  },
+  {
+   "name": "What has been tried",
+   "start": 75.0,
+   "end": 102.32,
+   "energy": "low",
+   "styles": [
+    "thoughtful",
+    "piano with soft koto answers"
+   ],
+   "avoid": [
+    "percussion"
+   ]
+  },
+  {
+   "name": "The strap",
+   "start": 102.32,
+   "end": 146.22,
+   "energy": "mid",
+   "styles": [
+    "warmer",
+    "hopeful lift",
+    "strings open up gently",
+    "light pulse of plucked koto"
+   ],
+   "avoid": [
+    "drums"
+   ]
+  },
+  {
+   "name": "Try it",
+   "start": 146.22,
+   "end": 178.3,
+   "energy": "mid",
+   "styles": [
+    "warm and resolved",
+    "keeps the fuller texture and the same level as The strap",
+    "gentle forward motion",
+    "only the very last chord fades"
+   ],
+   "avoid": [
+    "drums",
+    "big finale",
+    "thinning out",
+    "dropping to solo piano"
+   ]
+  }
+ ]
+}

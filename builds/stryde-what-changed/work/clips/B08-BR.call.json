@@ -1,0 +1,33 @@
+{
+ "beat": "B08-BR",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b08_br\",\"subject\":\"A white British woman of sixty-nine with short white hair, seen from behind, walking away down her pale duck-egg blue hall towards the white front door: a dusty-pink cardigan, a navy skirt ending above the knee, bare legs, white canvas plimsolls; the half-moon hall table with a vase of dried lavender on the left, the white spindles and oak handrail of the stairs on the right. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already mid-stride on the first frame: she walks on down the hall away from the lens at an ordinary, unhurried pace — about four easy, even steps, one step a second, real time — getting a little smaller in the frame, arms swinging naturally. She does not turn round. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no turning round, no looking back, no face, no limp, no stopping, no reaching the door, no opening the door, no second person, no walking stick, no knee strap, no extra legs, no music, no speech, no slow motion\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_225901_8a563cef-0c03-48f0-94fa-92dd33e9b572.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "legs warp or swap mid-stride",
+   "prevented_by": "even steps at one a second, start frame mid-stride, HOLD-C + NEG-WARP-C"
+  },
+  {
+   "risk": "she turns and her face appears",
+   "prevented_by": "'She does not turn round', 'no turning round, no looking back, no face'"
+  },
+  {
+   "risk": "camera follows her down the hall",
+   "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}

@@ -1,0 +1,34 @@
+{
+ "beat": "MECH-02",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"mech_02\",\"subject\":\"A translucent anatomical model of a knee: muscles semi-transparent, bones ivory-gold, one tight hot red point on the patellar tendon just below the kneecap, the strap just below it.\",\"camera\":{\"movement\":\"Virtual camera already drifting on the first frame, never static at entry. A slow steady lateral travel across the subject, single direction, constant unhurried speed, mechanically smooth — no rotation around the subject, no orbit, no push, no sway, no handheld physics, no focus hunt, no reaction to anything in the scene. Total travel stays small, roughly a tenth of frame width across the clip. Still drifting on the final frame, the move never completing and never coming to rest.\",\"framing\":\"As in the start frame.\"},\"motion\":\"One action at a steady pace: the strap slides up the last short way and seats on the tendon just below the kneecap, and the instant it seats the red point cools to calm blue. The strap keeps its exact shape, size and wordmark in every frame and moves only with the leg or hand that carries it; its rigid shell never bends, flexes or changes proportion. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Exactly as in the start frame.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no wordmark changing, no second strap, no strap sliding up or down the leg, no strap turning into a narrow band, no glow spreading onto the shin, no glow on the kneecap, no pause, no freeze, no pause, no freeze\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://tempfile.aiquickdraw.com/a2/92891ae1c2daa36444aa36d2d54ff88b_1790696649801.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "the red glow spreading instead of cooling",
+   "prevented_by": "motion names the cool on seating; negatives"
+  },
+  {
+   "risk": "the anatomy warping",
+   "prevented_by": "RIG-RVD small drift, HOLD-C + NEG-WARP-C"
+  },
+  {
+   "risk": "the strap climbing the kneecap",
+   "prevented_by": "seats just below the kneecap, rigid-product clause"
+  }
+ ],
+ "route": "Kie AI kling-3.0 (§5 fallback: Kling connector at 3 credits)"
+}

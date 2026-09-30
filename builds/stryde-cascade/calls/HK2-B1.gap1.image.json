@@ -1,0 +1,41 @@
+{
+ "beat": "HK2-B1",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"The first one goes at the top of the stairs.\": the fitter stands on the landing at the top of the stairs, running his right hand along a short new oak handrail fixed beside the top two steps, a spirit level resting on it, checking his work. High angle from the landing, three-quarter, medium shot. He is the same man as the attached cast sheet, in the navy fleece from the attached talking-head frame. The stairs, wall and carpet exactly as in the attached hall plate. One short rail at the top only; the rest of the wall bare. Window light from the landing window. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "The first one goes at the top of the stairs.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "N-CHINESE cast sheet",
+   "kind": "character",
+   "id": "8cc4a583-5d7d-4f39-9ef7-7fe7899d298b"
+  },
+  {
+   "label": "C-TH-FRAME (his workwear, his hands)",
+   "kind": "frame",
+   "id": "af785dc9-5a0d-4e5e-8952-752be522bf08"
+  },
+  {
+   "label": "PLATE-P1-PROP (C1's hall and stairs)",
+   "kind": "location",
+   "id": "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  }
+ ],
+ "taste": [
+  "HT09",
+  "HT12"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "standing on the landing, his hand slides once along the short new rail from end to end, checking it, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render — this board has no A/B view"
+}

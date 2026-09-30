@@ -1,0 +1,12 @@
+{"taskId": "c252fcb90bcfb95bf622a833ff0df05d", "created": true}
+{
+  "taskId": "c252fcb90bcfb95bf622a833ff0df05d",
+  "state": "success",
+  "credits": 270.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/c252fcb90bcfb95bf622a833ff0df05d_1_1790687568_6274.mp4"
+  ],
+  "saved": "H_G2.mp4",
+  "model": "kling-3.0/video"
+}

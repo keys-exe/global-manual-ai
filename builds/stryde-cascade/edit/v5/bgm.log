@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "track": "edit/v5/bgm_v3.mp3"
+}
+Hook                   low       -24.6 dB  brightness 381 Hz
+The cascade            low       -17.5 dB  brightness 510 Hz
+What has been tried    low       -14.3 dB  brightness 530 Hz
+The strap              mid       -12.8 dB  brightness 403 Hz
+Try it                 mid       -13.2 dB  brightness 383 Hz
+length 170.24s  tempo ~49.7 BPM  vocals {'checked': True, 'confident_words': 0, 'text': ''}
+FAIL  DROPOUT  'Hook' drops out for 1.0s
+FAIL  CLICK    'Hook' jumps 18.1 dB in 100 ms
+FAIL  CLICK    'The cascade' jumps 13.7 dB in 100 ms
+FAIL  CLICK    'The strap' jumps 12.4 dB in 100 ms
+FAIL  DROPOUT  'Try it' drops out for 1.8s
+FAIL  ENERGY   'The strap' (mid) not louder than 'What has been tried' (low): -12.8 vs -14.3 dB
+FAIL  ENERGY   'Try it' (mid) not louder than 'What has been tried' (low): -13.2 vs -14.3 dB
+MUSIC FAIL

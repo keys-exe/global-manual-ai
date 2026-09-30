@@ -1,0 +1,34 @@
+{
+ "beat": "B07-BRa",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b07_bra\",\"subject\":\"A premium 3D anatomical model of a single knee seen straight from the front on a near-black field, a faint glass-like body shell, ivory bones: the end of the thigh bone above, the top of the shin bone below, the kneecap in front, and between the bones a thin, pearly, worn cartilage cushion. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"The model stays still. Over the clip the pale cushion between the bones wears away CLEARLY and steadily: it shrinks to less than half its height, its edges fray and flake away, until only a thin, patchy sliver is left and the two bone ends sit almost touching — an obvious, unmistakable thinning from the first frame to the last. One steady change, no glow. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no bones moving apart, no cushion growing back, no model rotating, no glow, no emission, no red spot, no blood, no cracking, no breaking, no second limb, no arrows, no text, no labels, no product, no camera orbit, no zoom, no slow motion, no music, no speech, no slow motion\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_220935_8b097287-2a0e-4aa7-8dde-2b2d9ea7f463.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "the model rotates or the bones warp",
+   "prevented_by": "'the model stays still', locked-off camera, HOLD-C + NEG-WARP-C, 'no model rotating'"
+  },
+  {
+   "risk": "a glow appears on a condition beat",
+   "prevented_by": "'no glow, no emission' in motion and negatives"
+  },
+  {
+   "risk": "the cushion shatters instead of thinning",
+   "prevented_by": "one slow steady change, 'no cracking, no breaking'"
+  }
+ ],
+ "approved_by": "user board Fix on B07-BRa video: THINNER + chat FIX THIS (2026-09-29)",
+ "fix_note": "Q prompt/motion: the cushion only flattened a little and a red dot appeared → the cushion wears to less than half its height, a thin patchy sliver, bones almost touching; 'no red spot'; 4 s; start frame kept (confirmed image v1)"
+}

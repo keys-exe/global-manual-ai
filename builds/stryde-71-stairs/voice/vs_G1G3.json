@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "voice_name": "Stairs",
+  "clone_source": "Stairs_clone_source.mp3",
+  "takes": [
+    {
+      "take": 1,
+      "src": "G1.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 5.76,
+      "after_speed_s": 4.83,
+      "pitch_median_hz": 190.5,
+      "transcript": "I'm 71 and I take the stairs faster than women half my age.",
+      "pitch_diff": 0.0
+    },
+    {
+      "take": 2,
+      "src": "G3.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 6.77,
+      "after_speed_s": 5.66,
+      "pitch_median_hz": 205.1,
+      "transcript": "Six weeks ago, I was going down my stairs backwards, one step at a time.",
+      "pitch_diff": 0.077
+    }
+  ],
+  "voice_mismatch_takes": [],
+  "joined_s": 10.49,
+  "repeats": 3,
+  "total_s": 31.5,
+  "gaps_over_0.4s": []
+}

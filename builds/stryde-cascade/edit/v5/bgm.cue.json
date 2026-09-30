@@ -1,0 +1,102 @@
+{
+ "scene": "STRYDE-CASCADE-BGM-v5",
+ "length_s": 168.2,
+ "theme": [
+  "understated warm documentary underscore",
+  "soft felt piano",
+  "gentle nylon-string guitar",
+  "low warm string pad",
+  "quiet and spacious, sits under a speaking voice"
+ ],
+ "avoid": [
+  "drums",
+  "heavy percussion",
+  "synth lead",
+  "epic",
+  "EDM",
+  "trailer hits",
+  "bright brass",
+  "vocals"
+ ],
+ "tempo": "slow",
+ "sections": [
+  {
+   "name": "Hook",
+   "start": 0,
+   "end": 16.5,
+   "energy": "low",
+   "styles": [
+    "felt piano motif from the first second",
+    "single soft guitar harmonics",
+    "quiet suspense"
+   ],
+   "avoid": [
+    "strings swelling"
+   ]
+  },
+  {
+   "name": "The cascade",
+   "start": 16.5,
+   "end": 71.0,
+   "energy": "low",
+   "styles": [
+    "sombre and patient",
+    "slow piano with a low string pad",
+    "restrained"
+   ],
+   "avoid": [
+    "percussion"
+   ]
+  },
+  {
+   "name": "What has been tried",
+   "start": 71.0,
+   "end": 95.9,
+   "energy": "low",
+   "styles": [
+    "thoughtful",
+    "piano with soft guitar answers"
+   ],
+   "avoid": [
+    "percussion"
+   ]
+  },
+  {
+   "name": "The strap",
+   "start": 95.9,
+   "end": 138.1,
+   "energy": "mid",
+   "styles": [
+    "warmer",
+    "hopeful lift",
+    "strings open up gently",
+    "light pulse of plucked guitar"
+   ],
+   "avoid": [
+    "drums"
+   ]
+  },
+  {
+   "name": "Try it",
+   "start": 138.1,
+   "end": 168.2,
+   "energy": "mid",
+   "styles": [
+    "warm and resolved",
+    "keeps the fuller texture and the same level as The strap",
+    "gentle forward motion",
+    "keeps playing at full level right to the end of the section",
+    "only the very last chord fades, in the final two seconds"
+   ],
+   "avoid": [
+    "drums",
+    "big finale",
+    "thinning out",
+    "dropping to solo piano",
+    "ending early",
+    "silence before the end",
+    "long fade-out"
+   ]
+  }
+ ]
+}

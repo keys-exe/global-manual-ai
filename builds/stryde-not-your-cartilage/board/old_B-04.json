@@ -1,0 +1,98 @@
+{
+ "act": "Act 2",
+ "beat": "B-04",
+ "build": "stryde-not-your-cartilage",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "imageAsset": "574b617b11c6ee8f6e53d9565059d893",
+ "imageAt": 1790729140546,
+ "imageConnector": "Kie AI",
+ "imageFault": "THE PRODUCT IS TOO SMALL, USE THE PRODUCT EXACTLY",
+ "imageModel": "nano_banana_pro (Kie AI)",
+ "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic — exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nTHE PERSON DOES NOT FILL THE FRAME. The phone sits where a creator filming themselves would actually put it, at a real distance a phone can be held or propped, so the room is part of the picture: a clear gap above the head, the wall, window or shelves behind them readable, floor or furniture visible around them. The person takes up about half of the frame height and sits a little off-centre, and no more than one edge of the frame cuts their body.\n\nA close snapshot on the towpath: his hand held out at chest height, the strap resting in his open palm, the front of the shell and its wordmark square to the phone. The product exactly as in the attached product photos — a matte-black polymer shell spanning the whole front of the knee, its top edge waving up into two matching pointed peaks of equal height either side of a crisp concave notch that occupies only the middle three fifths of its width, waisted off-centre, a black elastic band in a coarse knit with a visible textured weave carrying two black keeper loops on its outer face, a brushed chrome slide inset flush into each end of the shell carrying three engraved dotted chevrons, and a lowercase grey stryde wordmark centred on the lower body directly beneath the notch, horizontal and readable, never to one side of the notch. It is a RIGID MOULDED shell with a hard edge, never fabric, never neoprene. Held: the strap resting across an open upturned palm, the pad on the palm and the front face up to the lens, fingers loosely curled at the shell's lower edge, the band draped over the hand. The lowercase grey stryde wordmark is printed on the shell's broad lower body, centred beneath the notch, in bold rounded lettering, sharp and readable -- always there, in every frame; the shell is never blank. Its size never changes: the shell is about five to six of the holder's thumb-widths across, overhanging the pinching hand at both ends, and about as tall as the thumb is long from its tip to its base knuckle; the band is a little wider than the thumb. His hand is the man in the attached character sheet — a white British man of seventy-four from the north-east: broad square face, heavy-lidded pale grey eyes, bushy white brows, a wide flattened nose, a short clipped white beard, thick wavy white hair combed back, big-framed with a round belly, the top joint of his left index finger missing — his real age showing's hand: big, weathered, sun-mottled. The canal and the stone bridge soft behind.\n\nTHE SAME PLACE exactly as in the attached location plate — the canal towpath: the gravel path, the still canal on the left with its stone edge, the humped stone bridge in the middle distance, the moored narrowboats, the wooden bench in the hedgerow on the right.\n\nTHE CAMERA ANGLE: an eye-level camera, seen from the front of the strap in his palm. This exact angle, not a straight-on eye-level view.\n\nFOCUS: the strap and its wordmark is in sharp focus; the room behind falls to a soft, recognisable shape. The blur is optical: soft and round, never smeared.\n\nTHE LIGHT: open sky, the cloud broken, sun high on the left lights the strap and his hand from the left of the frame, late-morning daylight, so it has a lit side toward the left and a softer shadow side. The shadows fall away from that source, one way only.\n\nTHE COLOURS OF THIS SCENE: the light is clear daylight, 5600K, and the camera is white-balanced for it; the canal's brown-green, the grey stone bridge; he wears a navy fleece cuff; the accent is the matte-black strap and its grey wordmark. Colours are natural, natural and ungraded. No colour in this shot differs from the rest of the scene.\n\nEVERY PERSON IN FRAME IS ANATOMICALLY WHOLE. Each person has exactly one head attached to one neck, two arms and two legs, each joined to the body at the right place and bending only at real joints. Every visible hand has one thumb and four fingers, separate, correctly sized, gripping or resting the way a real hand does. Any part of a body that is not visible is out of view for a reason you can see — cut by the frame edge or hidden behind a named object — never simply missing inside the frame.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no hand gripping the band, no fingers on the chrome slides, no fingers across the wordmark, no fingers over the peaks or the notch, no flat palm pressed on the front face, no strap swinging by its band alone, no band being stretched, no band being threaded, no product changing hands, no second strap, no strap worn while held, no blank shell, no missing wordmark, no wordmark fading, no wordmark smearing, no misspelled wordmark, no extra letters, no wordmark on the band, no wordmark on the back of the shell, no V-shaped notch, no crown-shaped peaks, no tall horn peaks, no deep U-shaped shell, no slot-shaped notch, no flat rectangular shell, no slab shell without peaks, no chrome slide mounted on the front face, no slide on the band instead of the shell's end, no moulded frame around the slide, no sideways chevrons, no band leaving the bottom edge of the shell, no product tipped on its side, no watch-strap band, no keeper loop shaped like a buckle, no shell drawn apart from its band, no strap turned on its side with the wordmark vertical, no wrong finger count, no malformed hands, no hands merging into objects, no face, no strap worn, no readable text, no logos other than the stryde wordmark, no AI face, no plastic skin, no waxy skin, no extra fingers, no fused fingers, no polished render, no advertising image, no studio lighting, no vignette, no glowing skin, no light from nowhere, no shadows falling in two directions, no lens flare\n",
+ "imageRefs": [
+  {
+   "kind": "product",
+   "label": "Product photo — front",
+   "role": "image 1"
+  },
+  {
+   "kind": "product",
+   "label": "Product photo — back",
+   "role": "image 2"
+  },
+  {
+   "kind": "character",
+   "label": "Derek character sheet",
+   "ref": "R2-DEREK",
+   "role": "image 3 · the person"
+  },
+  {
+   "kind": "location",
+   "label": "P2-D-TOWPATH",
+   "ref": "P2-D-TOWPATH",
+   "role": "image 4 · the place"
+  }
+ ],
+ "imageRes": "1536×2752",
+ "imageStatus": "regenerate",
+ "imageType": "image/png",
+ "imageUrl": "https://tempfile.aiquickdraw.com/workers/images/image_7bc141a03c777856727283a1c1437997.png",
+ "imageVersions": [
+  {
+   "asset": "951127d954d90fee4877c374da7deab9",
+   "at": 1790697230355,
+   "connector": "Kie AI",
+   "credits": 18,
+   "model": "nano-banana-pro",
+   "note": "",
+   "parts": [],
+   "size": "1536×2752",
+   "type": "image/png",
+   "url": "https://tempfile.aiquickdraw.com/workers/images/image_2e452cfba1980eac4abce766ef97ed7b.png",
+   "v": 1
+  },
+  {
+   "asset": "574b617b11c6ee8f6e53d9565059d893",
+   "at": 1790729140546,
+   "connector": "Kie AI",
+   "credits": 18,
+   "model": "nano-banana-pro",
+   "note": "wrong product, use the reference product for consistency",
+   "parts": [],
+   "size": "1536×2752",
+   "type": "image/png",
+   "url": "https://tempfile.aiquickdraw.com/workers/images/image_7bc141a03c777856727283a1c1437997.png",
+   "v": 2
+  }
+ ],
+ "line": "This strap doesn't repair your cartilage.",
+ "model": "kling-3.0 pro (Kie AI)",
+ "note": "R2 Derek hand · L-D-TOWPATH · D-D2 · eye/front/CU · layout full",
+ "prompt": "{\"shot\":\"b_04\",\"subject\":\"An older man's big weathered hand holding a matte-black strap in his open palm by a canal, the front of the shell and its grey stryde wordmark facing the phone.\",\"camera\":{\"movement\":\"Camera already drifting on the first frame, never static at entry. Continuous low-amplitude breath sway throughout, roughly one cycle per two seconds, mostly vertical with a slight roll. Focus soft for a moment at entry, then settles. One deliberate reframe in the back half as the operator notices the subject sitting off-centre — corrects part of the way, not fully. Camera lags behind the subject, never anticipates it and never moves with it. Still drifting on the final frame.\",\"framing\":\"As in the start frame.\"},\"motion\":\"One small action at a slow pace: his palm tilts the strap a little towards the light and back, so the chrome slides catch a glint; the strap stays in his palm. The strap keeps its exact shape, size and wordmark in every frame and moves only with the leg or hand that carries it; its rigid shell never bends, flexes or changes proportion. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no wordmark changing, no second strap, no strap falling, no fingers covering the wordmark, no second person appearing, no camera travelling with the subject, no zoom, no music, no speech\"}",
+ "stage": "broll",
+ "status": "regenerate",
+ "title": "holds the strap up in his palm by the canal, the wordmark facing the phone, a small tilt into the light",
+ "updatedAt": 1790745326583,
+ "videoAsset": "ec9f316bd8d3d723651a4df97f68495d",
+ "videoAt": 1790698867087,
+ "videoConnector": "Kie AI",
+ "videoType": "video/mp4",
+ "videoUrl": "https://tempfile.aiquickdraw.com/k/472b0acc0fd407766b6a772c98f62f97_1_1790698860_4705.mp4",
+ "videoVersions": [
+  {
+   "asset": "ec9f316bd8d3d723651a4df97f68495d",
+   "at": 1790698867087,
+   "connector": "Kie AI",
+   "credits": 72,
+   "model": "kling-3.0 pro (Kie AI)",
+   "note": "",
+   "size": 8733219,
+   "type": "video/mp4",
+   "url": "https://tempfile.aiquickdraw.com/k/472b0acc0fd407766b6a772c98f62f97_1_1790698860_4705.mp4",
+   "v": 1
+  }
+ ]
+}

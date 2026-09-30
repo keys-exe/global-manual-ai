@@ -1,0 +1,4 @@
+file '/home/user/global-manual-ai/builds/stryde-cascade/voice/C/CascadeWei_source1.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-cascade/voice/C/CascadeWei_source2.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-cascade/voice/C/CascadeWei_source3.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-cascade/voice/C/CascadeWei_source4.x1.2.wav'

@@ -1,0 +1,4 @@
+file 'lock_HK1.wav'
+file 'lock_HK2.wav'
+file 'lock_HK3.wav'
+file 'lock_BODY.wav'

@@ -7,7 +7,7 @@ from fix2 import FX as FX2
 from fix4 import FX as FX4
 LEN = {x["beat"]: x["call_s"] for x in json.load(open(broll.B / "edit/lengths_v2_HK1.json"))["lengths"]}
 GO = "user, 2026-09-28: pressed Fix on the card and said \"fix those\""
-SP = "/tmp/claude-0/-home-user-global-manual-ai/0821f8b4-c061-556b-9536-6cf806123315/scratchpad/cur7/generations/"
+SP = "/tmp/claude-0/-home-user-global-manual-ai/0821f8b4-c061-556b-9536-6cf806123315/scratchpad/cur9/generations/"
 MF = {
  "A4-B1": ("an older man carrying a laundry basket up his stairs, a strap on his right knee",
    "Already moving on the first frame: basket held high against his chest, clear of the banister, he steps up onto the next stair, one easy step a second, weight onto the strapped right knee; he climbs away from the camera, never into the hall. Still climbing at the cut. The camera stays where it is.", {}),

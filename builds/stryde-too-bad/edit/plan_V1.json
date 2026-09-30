@@ -1,0 +1,125 @@
+{
+ "audio": "/tmp/claude-0/-home-user-global-manual-ai/9cace666-3414-53de-ab66-91cee1d4bda1/scratchpad/vo/V1.master.wav",
+ "script": "/home/user/global-manual-ai/builds/stryde-too-bad/vo/V1.lines.txt",
+ "base": null,
+ "broll": [
+  {
+   "beat": "HK1-01",
+   "clip": null,
+   "phrase": "Too bad these knee straps look too small to work."
+  },
+  {
+   "beat": "B1-01a",
+   "clip": null,
+   "phrase": "Built over three years with orthopaedic surgeons"
+  },
+  {
+   "beat": "MECH-S1",
+   "clip": null,
+   "phrase": "to do what sleeves and braces never could.",
+   "key": "sleeves"
+  },
+  {
+   "beat": "B1-02a",
+   "clip": null,
+   "phrase": "They're small on purpose.",
+   "key": "small"
+  },
+  {
+   "beat": "B1-02",
+   "clip": null,
+   "phrase": "Because the pain comes from one small spot.",
+   "key": "one"
+  },
+  {
+   "beat": "B1-03a",
+   "clip": null,
+   "phrase": "Seventeen times your bodyweight goes through it,"
+  },
+  {
+   "beat": "MECH-02",
+   "clip": null,
+   "phrase": "two centimetres below your kneecap."
+  },
+  {
+   "beat": "MECH-03",
+   "clip": null,
+   "phrase": "A big brace wraps the whole knee and misses it."
+  },
+  {
+   "beat": "B1-04b",
+   "clip": null,
+   "phrase": "This sits right on it."
+  },
+  {
+   "beat": "MECH-04",
+   "clip": null,
+   "phrase": "It redirects the load away from the worn spot."
+  },
+  {
+   "beat": "B1-05b",
+   "clip": null,
+   "phrase": "And the pain just lifts."
+  },
+  {
+   "beat": "B1-06",
+   "clip": null,
+   "phrase": "A scalpel, not a sledgehammer."
+  },
+  {
+   "beat": "B1-07a",
+   "clip": null,
+   "phrase": "Perfect for bone on bone, arthritis,"
+  },
+  {
+   "beat": "MECH-05",
+   "clip": null,
+   "phrase": "worn cartilage and meniscus pain."
+  },
+  {
+   "beat": "B1-08",
+   "clip": null,
+   "phrase": "So you can walk further without stopping."
+  },
+  {
+   "beat": "B1-09a",
+   "clip": null,
+   "phrase": "Small enough to sit flat under your trousers."
+  },
+  {
+   "beat": "B1-09b",
+   "clip": null,
+   "phrase": "Light enough you forget it's there."
+  },
+  {
+   "beat": "B1-10",
+   "clip": null,
+   "phrase": "No slipping. No sores. No rolling down."
+  },
+  {
+   "beat": "B1-11",
+   "clip": null,
+   "phrase": "Over two hundred thousand people wear one now."
+  },
+  {
+   "beat": "B1-12a",
+   "clip": null,
+   "phrase": "Buy one, get one free today at getstryde.co."
+  },
+  {
+   "beat": "CARD-12b",
+   "clip": null,
+   "phrase": "Sixty-day money-back guarantee."
+  },
+  {
+   "beat": "B1-13a",
+   "clip": null,
+   "phrase": "Too small to work? Try it on your own stairs."
+  },
+  {
+   "beat": "B1-13b",
+   "clip": null,
+   "phrase": "Nothing to lose but the pain."
+  }
+ ]
+}
