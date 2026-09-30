@@ -993,6 +993,91 @@ B["B14b"] = (NBP, ["B14BV4", "PBI", "PI"], (
     "AVOID: no strap longer than her hand, no oversized strap, no strap bigger than in Image 3, no change to the pad, no change to the "
     "ridge, no change to the strap's shape, no wordmark, no second strap, no change to the hand, no change to the kitchen, no extra fingers"))
 
+# ── 2026-09-30 "BROLLS HERE" B15-BR, B15, B16a, B16b, B16c ──────────────────────────────────────────────
+# Learned on B14a (three misses): fresh renders put a worn strap on the side of the knee. Worn shots here are IMAGE EDITS of
+# worn_front.jpg (the real strap worn, front-on, correctly placed) — only the leg, clothes and room change (FP03, FP11, FP12).
+REFS.update({"PWE": ("worn_front.jpg — the shot to edit (Image 1)", "2290ef3b-75a4-4c39-8ea2-b9c4b60e6637"),
+             "S1": ("S1-SURGEON sheet", "7569a690-7398-49cb-ba09-4da6e7efd4ad"),
+             "P5": ("P5-CONSULT plate", "833bfccb-a188-46d7-873a-ddc728f658fc"),
+             "B13V6": ("B13 v6 — the strap in a hand at true size", "18bd9cdf-0960-44c3-a3c1-ef65855dd429")})
+KEEP_STRAP = ("Keep the strap EXACTLY as it is in Image 1 — the same matte-black shell with two rounded peaks and the notch cupping the "
+              "lower edge of the kneecap, the same chrome slides at the outer sides of the leg, the same grey stryde wordmark, the same "
+              "size, position and angle, seated on the patellar tendon directly below the kneecap, front-on to the camera — and keep the "
+              "camera angle and framing the same.")
+EDIT_NEG = ("no strap moved, no strap higher, no strap lower, no strap on the side of the knee, no strap over the kneecap, no change to "
+            "the strap's shape or size, no wordmark change, no second strap, no hairy legs")
+
+# B15 — "A centimetre too high and it is a sleeve again." ECU front-on, Maureen's right knee, the kneecap's lower edge in the notch.
+B["B15"] = (NBP, ["PWE", "R1", "P1"], (
+    "Edit Image 1. " + KEEP_STRAP + " Change ONLY the person and the room: the leg is now Maureen's, THE SAME WOMAN as in the character "
+    "sheet (Image 2) — a slight white British woman of sixty-nine: a thin, VERY PALE older leg, faintly freckled, soft creases over a "
+    "bony kneecap, a few thread veins on the shin, fine pale hair only, real unretouched skin. In place of the dark shorts, the hem of a "
+    "mid-blue denim skirt ending just above the knee. Behind her, instead of the window, THE SAME HALL as Image 3 — pale duck-egg blue "
+    "walls, white skirting, oatmeal carpet, the foot of the stairs — soft and out of focus, warm afternoon sun from the right. A real "
+    "phone photo.\n\nAVOID: " + EDIT_NEG + ", no tanned skin, no young skin, no man's leg, no shorts"))
+
+# B16a — "Thirty four percent less strain. Measured." Front-on CU, Desmond's strapped right knee as he stands on his stair.
+B["B16a"] = (NBP, ["PWE", "R2", "P2"], (
+    "Edit Image 1. " + KEEP_STRAP + " Change ONLY the person and the room: the leg is now Desmond's, THE SAME MAN as in the character "
+    "sheet (Image 2) — a Black British man of sixty-six: a strong, dark brown older leg, a few grey hairs on the shin, an ashy kneecap "
+    "with soft creases, real unretouched skin. Instead of the dark shorts, the hem of khaki cotton shorts ending just above the knee. He "
+    "stands on a stair of HIS OWN STAIRS as in Image 3: his foot on the charcoal-grey stair carpet with a white stripe at the nosing, "
+    "warm mid-grey walls and white spindles behind him, soft and out of focus, warm afternoon sun from the left. A real phone photo."
+    "\n\nAVOID: " + EDIT_NEG + ", no pale skin, no white man's leg, no dark shorts"))
+
+# B16c — "Two hundred thousand people wearing one." Ground-level front-on: Desmond's strapped knee and shin walking toward the lens.
+B["B16c"] = (NBP, ["PWE", "R2", "P3"], (
+    "Edit Image 1. " + KEEP_STRAP + " Change ONLY the person, his step and the place: the leg is now Desmond's, THE SAME MAN as in the "
+    "character sheet (Image 2) — a Black British man of sixty-six: a strong, dark brown older leg, a few grey hairs on the shin, an ashy "
+    "kneecap, real unretouched skin. Instead of the dark shorts, the hem of khaki cotton shorts ending just above the knee. He is out "
+    "walking TOWARDS the camera on THE SAME PAVEMENT as Image 3 — grey paving slabs, a low garden wall and privet hedge, parked cars, "
+    "1930s semis going away, soft and out of focus behind — this leg planted mid-stride, the knee slightly bent, a plain white trainer "
+    "with navy trim on the slab; the camera low, near knee height. Warm afternoon sun from the left. A real phone photo.\n\n"
+    "AVOID: " + EDIT_NEG + ", no pale skin, no dark shorts, no logos on the trainer, no running"))
+
+# B15-BR — "The placement is the whole thing." High three-quarter, her own view: seated on her bottom stair, two fingertips of her left
+# hand laid flat on the tendon just below her bare kneecap, the strap resting front face up in her right palm, ready (HELD, FP02, FP06).
+B["B15-BR"] = (NBP, ["PF", "B13V6", "R1", "P1"], photo([
+    "A snapshot from a phone held up high, looking down at her right knee as she sits on her bottom stair, the knee bent, the foot flat "
+    "on the hall floor in a white canvas plimsoll. Two fingertips of her left hand lie flat on the patellar tendon JUST BELOW HER BARE "
+    "KNEECAP, marking the spot. Her right hand, beside the knee, holds the strap from Image 1 resting front face up across her open palm "
+    "exactly as the hand holds it in Image 2 — copied exactly, the matte-black shell with two rounded peaks and the notch, the chrome "
+    "slides, the grey stryde wordmark readable, at its true size: about 12 cm across, a little wider than her palm, the soft band hanging "
+    "over the sides of her hand. The kneecap is bare. Close-up: her knee, her two hands and the strap fill the frame.",
+    "Her legs and hands: THE SAME WOMAN as in the attached character sheet — thin, very pale, faintly freckled older skin, soft creases "
+    "over a bony knee, a few thread veins, one plain gold wedding ring, the sage-green cardigan cuffs at the wrists; a mid-blue denim "
+    "skirt ending just above the knee.",
+    M_STAIRS,
+    angle("B15-BR", "her knee, her hands and the strap"),
+    focus("the hands and what they hold", deep=False).replace("the room behind", "the hall behind"),
+    light("M-SUN-R", "her knee, hands and the strap"), colour("M-STAIRS-SUN")],
+    NO_FACE + ", no torso above the waist, no strap on the leg, no strap worn, " + P.NEG_WORDMARK + ", " + PROD_NEG
+    + ", no oversized strap, no strap bigger than her hand, no tanned skin, no bare feet, no second person, no extra fingers, no extra hands"))
+
+# B16b — "Three years with orthopedic surgeons." MCU three-quarter at his desk: S1 in navy scrubs and grey gilet, the knee model on the
+# desk, holding the strap up in one hand at chest height, front face to the lens, looking up from it (APPROACH-PRO, HELD).
+LIGHT["CONS-L"] = ("the half-lowered white roller blind on the left-hand wall", "left", "soft even daylight — calm and clinical, never cold")
+COLOUR["CONS-PM"] = ("soft even daylight, cool-neutral", "off-white walls, a pale wood desk, grey vinyl, a white roller blind",
+                     "navy surgical scrubs and a plain grey fleece gilet", "the matte-black strap and its chrome slides", "true to life, calm")
+KELVIN["CONS-PM"] = 5600
+B["B16b"] = (NBP, ["S1", "P5", "PF", "B13V6"], photo([
+    "A snapshot from a phone at eye level, three-quarter on, a medium close-up across his desk in his consulting room. He sits at the "
+    "pale wood desk, the life-size anatomical knee model beside him, and holds the strap from Image 3 up in ONE hand at chest height, "
+    "its front face and the grey stryde wordmark towards the lens — copied exactly, the matte-black shell with two rounded peaks and the "
+    "notch, the chrome slides, at its true size, about 12 cm across, a little wider than his palm, the way the hand holds it in Image 4, "
+    "the soft band hanging below his hand. He has just looked up from it towards someone across the desk, calm and kind. The frame holds "
+    "him from mid-chest up, the strap and the knee model in the lower part of the frame.",
+    "HE IS THE SAME MAN as in the attached character sheet (Image 1): a British man of Pakistani heritage, fifty-eight, medium height and "
+    "solid build, short black hair grey at the temples, combed back, kind and attentive, bare face; wearing navy surgical scrubs with a "
+    "short-sleeved tunic and a plain grey fleece gilet.",
+    "THE SAME CONSULTING ROOM as the attached location plate (Image 2): off-white walls, the half-lowered white roller blind on the "
+    "left-hand wall, the pale wood desk, the anatomical knee model, a framed botanical print, the grey couch soft behind.",
+    angle("B16b", "him at his desk with the strap"),
+    focus("the nearest eye of the surgeon", deep=False).replace("the room behind", "the consulting room behind"),
+    light("CONS-L", "his face, hands and the strap"), colour("CONS-PM")],
+    "no looking at the camera, no smiling for the camera, no white coat, no stethoscope, no second person, " + P.NEG_WORDMARK + ", "
+    + PROD_NEG + ", no oversized strap, no strap worn, no readable text on the monitor, no certificates with text, no extra fingers, no extra hands"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
