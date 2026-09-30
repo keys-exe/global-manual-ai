@@ -583,21 +583,25 @@ B["B09-BR"] = (NB2, ["R1", "P4"], photo([
     NO_FACE + ", no person beyond her hand, no product anywhere, no knee strap, no strap of any kind, no readable text, no labels, "
     "no brand names, no logos, no pharmacy boxes, no printing on the blister pack, no second hand, no extra fingers"))
 
-# B10a — "A sleeve squeezes the whole knee and leaves that band carrying everything." (user 'GIVE ME BROLLS HERE'). Her own view down
-# into her lap on a kitchen chair: she pulls the same grey sleeve (as in B09-BR) up over her bare knee, squeezing the whole joint. Faceless.
+# B10a — "A sleeve squeezes the whole knee and leaves that band carrying everything." v2 (user 'GIVE ME DIFFERENT IMAGE HERE'; v1 was
+# the overhead lap view, the sleeve sitting like a cap). Low, front-on CU: Maureen standing in her kitchen, the same grey sleeve (as in
+# B09-BR) already on, snug round the whole knee; her hands press it flat round the joint. Faceless.
 B["B10a"] = (NB2, ["R1", "P4", "K9"], photo([
-    "A snapshot from a phone held straight above her lap, looking down, as she sits on a wooden kitchen chair. Both her hands are "
-    "pulling a plain grey knit knee sleeve up her right leg, caught halfway over the knee: the sleeve already hugs the top of the shin and "
-    "the lower half of the kneecap and is being drawn up over the rest, the knit stretched tight and squeezing the whole joint evenly all the "
-    "way round, the thin skin puckering slightly at its edges. Close: her two hands, the sleeve and the bare knee fill the frame, the "
-    "navy skirt pushed up above the knee, the kitchen floor tiles below.",
-    R1_BODY + " " + R1_LEGS + " Her hands: slim, pale, faintly freckled older skin, a plain gold wedding ring, the dusty-pink cardigan cuffs at the wrists. The sleeve is the same plain grey knit knee sleeve as on the table in the attached photo.",
+    "A snapshot from a phone held low, at knee height, straight in front of her as she stands on the kitchen floor. She is wearing a "
+    "plain grey knit knee sleeve on her right leg, pulled on fully: it wraps the WHOLE knee as one even tube, from just above the knee "
+    "on the lower thigh down over the kneecap to just below it on the upper shin, snug and squeezing evenly all the way round, the knit "
+    "stretched smooth over the kneecap. Both her hands rest on it, one each side of the knee, pressing it flat round the joint. Close-up: "
+    "the sleeved knee and her hands fill the middle of the frame, the hem of her navy skirt at the top, her bare left knee beside it and "
+    "her white canvas plimsolls on the tiles at the bottom, the kitchen table legs and units behind.",
+    R1_BODY + " " + R1_LEGS + " Her hands: slim, pale, faintly freckled older skin, a plain gold wedding ring, the dusty-pink cardigan "
+    "cuffs at the wrists. The sleeve is the same plain grey knit knee sleeve as on the table in the attached photo.",
     KITCHEN,
-    angle("B10a", "her knee and the sleeve"),
+    angle("B10a", "her sleeved knee"),
     focus("everything", deep=True),
-    light("KITCH-L", "her knee and hands"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff, a navy skirt and a grey knit sleeve").replace("the faded orange of the old photograph", "the grey sleeve")],
-    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no strap of any kind, no brace, no readable text, no labels, "
-    "no logos, no second person, no extra hands, no extra fingers, no wrong number of legs"))
+    light("KITCH-L", "her knee and hands"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff, a navy skirt, white plimsolls and a grey knit sleeve").replace("the faded orange of the old photograph", "the grey sleeve")],
+    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no strap of any kind, no brace, no sock, no cap over the "
+    "kneecap, no gap in the sleeve, no readable text, no labels, no logos, no second person, no extra hands, no extra fingers, no wrong "
+    "number of legs"))
 
 # B10b — "A hinged brace stops the knee going sideways, and it was never going sideways." (user 'GIVE ME BROLLS HERE'). High
 # three-quarter CU on the table: her hands try to bend the same black hinged brace (as in B09-BR) sideways at its metal hinge; it will not.

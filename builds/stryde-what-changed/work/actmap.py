@@ -169,9 +169,9 @@ BB("B08c", A1, "It is coming from standing up and walking.", "standing", "the ca
 # ============================================================ ACT 2 — the costly mistake
 TH("B09-TH", A2, "Which is why most of what gets sold for this cannot work.", framing="punch")
 BB("B10a", A2, "A sleeve squeezes the whole knee and leaves that band carrying everything.", "sleeve", "the mistake (F6)",
-   "R1", "L-KITCHEN", "M-D1", "overhead, looking down into her lap as she sits on a kitchen chair: her hands pull the plain grey knit sleeve up over her bare knee, the sleeve squeezing the whole joint evenly", "one pull up over the knee",
-   "one pull, about a second", STILL, "seated: her knee and hands only, camera still", "no", "absent", "—", "NB2",
-   OVER, FRO, "clean", "CU", "overhead = her own view, the sleeve round everything", "hands", "deep", L(KITCH, "L"), False, ledger="F6", notes="unbranded; user 2026-09-30 'GIVE ME BROLLS HERE' — sleeve on the knee, not on the table")
+   "R1", "L-KITCHEN", "M-D1", "low, front-on CU: Maureen standing in her kitchen with the plain grey knit sleeve on, snug round the whole knee from lower thigh to upper shin; her hands press it flat round the joint", "her hands smooth the sleeve round the knee",
+   "one smoothing movement, about a second", STILL, "standing: knee and hands only, camera still", "no", "absent", "—", "NB2",
+   LOW, FRO, "clean", "CU", "low front = the sleeve wrapped round everything, big in frame", "hands", "deep", L(KITCH, "L"), False, ledger="F6", notes="unbranded; user 2026-09-30 'GIVE ME BROLLS HERE' — sleeve on the knee, not on the table; v2 'GIVE ME DIFFERENT IMAGE HERE' — standing, low front-on")
 BB("B10b", A2, "A hinged brace stops the knee going sideways, and it was never going sideways.", "brace", "the mistake (F6)",
    "hands", "L-KITCHEN", "K-D1", "CU a black hinged knee brace lying on the table; a hand flexes its hinge once sideways", "one flex of the hinge",
    "one flex, about a second", STILL, "hands: one movement", "no", "absent", "—", "NB2",
