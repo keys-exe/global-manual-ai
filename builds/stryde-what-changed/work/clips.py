@@ -439,7 +439,28 @@ B["B08c"] = clip("B08c",
            {"risk": "his face drifts off the sheet", "prevented_by": "three-quarter, short clip, calm expression, HOLD-C"},
            {"risk": "camera follows him", "prevented_by": "locked-off tripod clause, 'no walking out of frame'"}])
 
-START = {"B08b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_115249_bc7a2b7d-06a8-444e-bf7a-4a7e604d9123.png",
+# B06b image v2 (user CONFIRM 2026-09-30): ANAT ECU front-on on the patellar tendon, blazing target core, five rings, fibre
+# streaks, heat halo, particle swirl — all inside the tendon. "in exactly the same place." ≈ 1.7 s → 3 s.
+B["B06b"] = clip("B06b",
+    "A premium 3D anatomical model seen very close and straight on: the lower edge of the kneecap at the top and the patellar tendon as a "
+    "broad satin-white band of fibres filling the frame, one blazing near-white core dead centre on it with concentric rings of light, "
+    "a red-orange heat halo and a swirl of glowing particles around it, all inside the tissue.",
+    "Already under load on the first frame, the tendon stays where it is. Impacts land on the one core, about once a second: at each one "
+    "the tendon draws taut, the core flares brighter, a new ring of light ripples outward through the fibres from exactly the same point "
+    "while the older rings keep spreading and fade at the edges, bright streaks race along the fibres into the core, and the particle swirl "
+    "turns slowly around it. The core never moves off its spot.",
+    "no second spot, no core moving, no rings leaving the tendon, no light outside the body, no energy flying in from outside, "
+    "no glow down the shin, no text, no numbers, no second limb, no camera orbit, no explosion of the tendon",
+    1.7, hi=4, anat=True,
+    risks=[{"risk": "the core wanders or a second spot appears", "prevented_by": "'exactly the same point', 'the core never moves off its spot', 'no second spot, no core moving'"},
+           {"risk": "the rings or light spill outside the tendon", "prevented_by": "'all inside the tissue', 'no rings leaving the tendon, no light outside the body'"},
+           {"risk": "the tendon swims or tears", "prevented_by": "HOLD-C + NEG-WARP-C, one taut draw per impact, 'the tendon stays where it is'"}])
+B["B06b"][0]["motion"] = B["B06b"][0]["motion"].replace(
+    "quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens",
+    "The patellar tendon visibly tightens").replace(", and the whole structure compresses a few degrees", "")
+
+START = {"B06b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_120637_827d2dc0-4a1e-44f8-a542-35ccb0fd7320.png",
+         "B08b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_115249_bc7a2b7d-06a8-444e-bf7a-4a7e604d9123.png",
          "B08c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_115249_63775ae4-a1ed-4292-9094-ad0930a4f2d6.png",
          "B08a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_111706_9b645285-1aef-43ba-99f4-f95ac2ed5c6b.png",
          "B08-BRb": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_103917_57a208e9-a3f0-44c8-9602-b7a6f6ee6d42.png",
