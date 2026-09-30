@@ -1,1 +1,8 @@
 {"taskId": "aed36aba78f73826bbecf1e41ed2c3d8", "created": true}
+{
+  "taskId": "aed36aba78f73826bbecf1e41ed2c3d8",
+  "state": "waiting",
+  "timed_out": true,
+  "model": "kling-3.0-omni/image-to-video"
+}
+{"taskId": "aed36aba78f73826bbecf1e41ed2c3d8", "created": true}
