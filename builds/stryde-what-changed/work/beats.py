@@ -860,6 +860,54 @@ B["B13"] = (NBP, ["B13V3", "PF"], (
     "no extra fingers, no missing fingers, no fused fingers, no second hand, no thumb over the wordmark, no fingers on the chrome slides, "
     "no change to the strap, no change to the wordmark, no change to the kitchen, no change to the light"))
 
+# ── 2026-09-30 Fix round 3 — image edits of the last renders (the B13 v3 approach) ─────────────────────────
+REFS["B14AV2"] = ("B14a v2 — the scene to edit (Image 1)", "08cf3855-d502-4d9f-8d7c-ef5460eee8fb")
+REFS["B14BV2"] = ("B14b v2 — the scene to edit (Image 1)", "ab4a6700-d742-40b1-8b0d-6eb4c68382da")
+REFS["B14CV2"] = ("B14c v2 — the scene to edit (Image 1)", "71f98792-0aca-4ad9-ba37-6b168d66454b")
+
+# B14a v3 — video Fix 'FIX THE PLACEMENT, BELOW THE KNEECAP' (video v1 ended with the strap high and turned to the side of the knee — the
+# start frame already had it at kneecap height and rotated: fixed at the source, §22X). Edit of v2: the strap moved to its seat — centred
+# on the patellar tendon just below the kneecap, front and wordmark to the lens; her hands at the shell's two sides (FP03, PLACE_LOCK_C).
+B["B14a"] = (NBP, ["B14AV2", "PF", "PW"], (
+    "Edit Image 1. Keep everything in Image 1 exactly as it is — the same woman, her sage-green cardigan, denim skirt, pale legs and white "
+    "plimsolls, the same stairs, hall, light and framing. Change ONLY where the strap sits and how her hands hold it: the strap from "
+    "Image 2, copied exactly, is worn on her right leg CENTRED ON THE PATELLAR TENDON DIRECTLY BELOW THE KNEECAP, as in Image 3 — the "
+    "notch in the shell's top edge cups the lower border of the kneecap, the two peaks either side reach no higher than the base of the "
+    "kneecap, the shell spans the front of the upper shin with a chrome slide at each side of the leg, the front of the shell and the "
+    "grey stryde wordmark facing the camera, level and readable, the black band running level round the leg behind. The whole kneecap "
+    "stays bare above it, its outline reading in full. Both her hands hold the shell lightly by its two outer ends, fingertips on the "
+    "chrome-slide ends, nothing covering the wordmark. The strap is at least a quarter of the frame wide.\n\n"
+    + P.PLACE_LOCK_C.replace("[SIDE]", "right") + "\n\n"
+    "AVOID: no strap over the kneecap, no strap on the side of the knee, no strap turned sideways, no strap at kneecap height, no strap "
+    "low on the shin, no strap on the left leg, no strap on the thigh, no wordmark hidden, no second strap, no change to her clothes, no "
+    "change to her legs, no change to the stairs, no extra fingers, no extra hands"))
+
+# B14b v3 — image Fix 'FIX THE PRODUCT' (v2: the pad shape and slides drifted from the real inside). Edit of v2: only the strap in her
+# hand replaced by the inside of the strap in back_inner.jpg, copied exactly, at the same size (FP04, FP12; never the word 'silicone').
+B["B14b"] = (NBP, ["B14BV2", "PBI", "PI"], (
+    "Edit Image 1. Keep everything in Image 1 exactly as it is — the same kitchen, the same light, the same hand with its pink cuff and "
+    "gold ring, the same pose, the same camera and framing, the same size in the hand. Change ONLY the strap she holds: replace it with "
+    "the inside of the strap in Image 2, COPIED EXACTLY — the same smooth matte-black back with its narrow waisted outline, the same "
+    "mid-grey pad with the long smooth comma-shaped raised ridge running down its middle and the fine curved grooves fanning out from it "
+    "on both sides, the same polished chrome slide at each end with the black knit band looped through it. Held upright in her hand as "
+    "in Image 1, its inside to the lens, exactly as Image 3 shows it in a real hand. No wordmark on this side.\n\n"
+    + P.INNER_PAD + "\n\n"
+    "AVOID: " + P.NEG_INNER_PAD + ", no invented pad shape, no different outline, no second ridge, no wordmark, no second strap, no "
+    "change to the hand, no change to the kitchen, no change to the light, no extra fingers, no strap larger than in Image 1"))
+
+# B14c v3 — image Fix 'FIX SIZE BIGGER' (v2: the strap a little narrow for the knee). Edit of v2: the same strap scaled up to true
+# worn size — spanning the whole front of the leg, slide to slide at its outer edges, as tall as the kneecap (SIZE_WORN, FP02, FP11).
+B["B14c"] = (NBP, ["B14CV2", "PF"], (
+    "Edit Image 1. Keep everything in Image 1 exactly as it is — the same anatomical model, the same muscles, bones and kneecap, the "
+    "same near-black field, the same light and framing, the same position of the strap just below the kneecap with the wordmark to the "
+    "lens. Change ONLY the SIZE of the strap: make it BIGGER — about one and a half times as wide as in Image 1, so the shell spans the "
+    "WHOLE FRONT WIDTH OF THE LEG from edge to edge, with a chrome slide right at each outer side of the leg, and the shell about as tall "
+    "as the kneecap itself. The notch still cups the kneecap's lower border and the peaks still reach no higher than its base; the "
+    "kneecap stays uncovered above it. The strap keeps exactly the shape and details of Image 2 — the two rounded peaks and the notch, "
+    "the chevron slides, the grey stryde wordmark — and the black band stays level round the leg. " + P.SIZE_WORN + "\n\n"
+    "AVOID: no small strap, no strap narrower than the leg, no strap over the kneecap, no strap lower on the shin, no change to the "
+    "anatomy, no change to the light, no second strap, no blank shell, no text other than the wordmark"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
