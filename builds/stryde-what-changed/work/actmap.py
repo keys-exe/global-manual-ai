@@ -231,19 +231,19 @@ BB("B14c", A3, "Your weight gets caught and moved off the worn part before it re
    EYE, FRO, "clean", "CU", "front-on = the placement reads (FP03)", "deep", "deep", L(ANAT, "R"), False, ledger="F7", eg="EG05", notes="user Fix 2026-09-30 'fix the product' (v1: a translucent invented strap over the joint) — front.webp attached as Image 1")
 TH("B15-TH", A3, "The placement is the whole thing.", framing="punch")
 BB("B15", A3, "A centimetre too high and it is a sleeve again.", "high", "placement",
-   "R1", "L-M-STAIRS", "M-D2", "ECU from the side: the strap seated on her right knee, the kneecap's lower edge sitting in the notch", "her knee flexes a little and straightens",
+   "R1", "L-M-STAIRS", "M-D2", "ECU front-on: the strap seated on her right knee, the kneecap's lower edge sitting in the notch (made from worn_front.jpg)", "her knee flexes a little and straightens",
    "one flex, about a second", STILL, "none", "no", "worn", "VISIBLE", "NBP",
-   EYE, PRO, "clean", "ECU", "profile: the kneecap in the notch", "product", "medium", L(M_SUN, "L"), False, notes="PLACE-LOCK, contact")
+   EYE, FRO, "clean", "ECU", "front-on: the kneecap in the notch (FP03)", "product", "medium", L(M_SUN, "L"), False, notes="PLACE-LOCK, contact")
 BB("B16a", A3, "Thirty four percent less strain. Measured.", "Thirty", "proof — held (34%)",
-   "R2", "L-D-STAIRS", "D-D2", "from the side, waist-down: Desmond comes down one stair easily, the strap on his right knee", "one easy step down",
-   "one step, about a second", STILL, "stairs: side, waist-down, camera still, hand on the rail visible", "no", "worn", "VISIBLE", "NBP",
-   EYE, PRO, "clean", "MEDIUM", "profile: the knee working with the strap on", "product", "medium", L(D_SUN, "L"), False, eg="34% overlay (post)")
+   "R2", "L-D-STAIRS", "D-D2", "front-on CU: Desmond's strapped right knee as he stands on his stair, about to step down (made from worn_front.jpg)", "one easy step down",
+   "one step, about a second", STILL, "stairs: front-on knee CU, camera still", "no", "worn", "VISIBLE", "NBP",
+   EYE, FRO, "clean", "CU", "front-on: the knee working with the strap on (FP03)", "product", "medium", L(D_SUN, "L"), False, eg="34% overlay (post)")
 BB("B16b", A3, "Three years with orthopedic surgeons.", "surgeons", "authority — held",
    "S1", "L-CONSULT", "S1-D1", "MCU at his desk, the knee model beside him, he holds the strap still at chest height and looks up from it", "lifts his eyes from the strap to the patient",
    "one look up, about a second", STILL, "none", "no", "held", "—", "NBP",
    EYE, THR, "clean", "MCU", "", "eyes", "medium", L(CONS, "L"), True, notes="APPROACH-PRO")
 BB("B16c", A3, "Two hundred thousand people wearing one.", "thousand", "social proof — held",
-   "R2", "L-STREET", "D-D2", "knee-and-shin only, walking toward the lens on the pavement, the strap staying put", "three walking steps toward the lens",
+   "R2", "L-STREET", "D-D2", "knee-and-shin only, walking toward the lens on the pavement, the strap staying put (made from worn_front.jpg)", "three walking steps toward the lens",
    "one step per second, normal walking speed", STILL, "walking toward camera: feet/knee only, 3 steps", "no", "worn", "VISIBLE", "NBP",
    GROUND, FRO, "clean", "CU", "ground = steps and legs", "product", "deep", L(STREET_PM, "L"), False, eg="200,000+ overlay (post)")
 BB("B17a", A3, "Ten seconds to put on.", "Ten", "feature (F8)",

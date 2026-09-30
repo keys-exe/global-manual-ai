@@ -275,3 +275,16 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **B13 v6** (Fix "FIX THE SIZE") and **B14b v5** (Fix "FIX SIZE"): edits of v5 / v4 with the strap made smaller (read as "too big", every earlier size note on this product — FP02). Both came out smaller, but by less than the two thirds asked (about 85%).
 - **B14a video v2** (image v4 confirmed; generation 2 — v1 slid and turned the strap, so this motion never touches it): the strap stays on the knee. Flaws: the camera drifts round towards the front, and her hands shift and clasp rather than lifting cleanly away.
 - **B14c video v1**: user CONFIRM → `status: use` (the board had it at `ready`).
+
+### 2026-09-30 — "CONFIRM GO": B13 and B14b videos (B14a, B14c videos confirmed on the board)
+- **B13 video v1** (4 s, task `149f25fa…`): **flaw — the wrist turns and the shell bends round her palm instead of staying rigid.**
+- **B14b video v2** (4 s, task `d972d0e8…`, generation 2): **flaw — the hand still moves and the strap twists and flexes.** A third video of B14b waits for the user's go.
+- Learned (both beats): Kling bends the rigid shell whenever it sits in a hand in motion. Next go for a held product shot: a still image in the edit with a slow CapCut push-in (no generated motion), or a locked-off clip where nothing but the light changes.
+
+### 2026-09-30 — "BROLLS HERE" B15-BR, B15, B16a, B16b, B16c
+- New approach for worn shots (after three misses on B14a): **image edits of worn_front.jpg** (the real strap worn front-on, correctly placed) — only the leg, clothes and room change. Act map rows B15 and B16a moved to front-on (EYE FRO) to match.
+- **B15** (Maureen, pale leg, denim hem, her hall) and **B16a** (Desmond, khaki shorts, his stairs): the strap sits exactly right, wordmark readable — the approach works.
+- **B16c** (Desmond walking on the pavement): placement right; flaw — a Nike logo on the trainer at the bottom of the frame.
+- **B15-BR** (fresh render): flaw — she stands on the stairs instead of sitting, and her fingers rest on her thigh rather than measuring the spot below the kneecap; the strap in her palm reads right.
+- **B16b** (S1 at his desk, knee model, strap held up): reads well; the strap's peaks are soft.
+- All five on Current 2 as `review`; docs/actmap updated on Plan, Current, Current 2.
