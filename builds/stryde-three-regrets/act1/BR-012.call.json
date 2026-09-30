@@ -3,28 +3,30 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"act1_gail_press\",\"subject\":\"THE SAME WOMAN as in the start frame, early sixties, big-boned, auburn chin-length bob, lilac dressing gown, grey T-shirt, navy pyjama shorts; exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"ECU as in the start frame: over her right shoulder, looking down her arm to the knee. FOCUS: the fingertip under the kneecap is sharp; the bed falls soft.\"},\"motion\":\"CONTINUING: her right forefinger is already pressed under her right kneecap. COMPLETING: one press, about two seconds — she presses a little deeper, the skin dimpling, her fingers tensing, then a small wince through her shoulders, her head dipping slightly. UNRESOLVED: the finger stays pressed in. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, grey flat late-morning daylight from the bedroom window on the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no second person, no other hand, no face turning to the lens, no bruise, no talking, no slow motion, no music\"}",
+ "prompt": "{\"shot\":\"act1_gail_press\",\"subject\":\"THE SAME KNEE, HANDS AND DRESSING-GOWN SLEEVE as in the start frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CU as in the start frame: knee height, in front of the bent knee. FOCUS: the fingertip on the tendon under the kneecap is sharp; the quilt and carpet fall soft.\"},\"motion\":\"CONTINUING: her right forefinger already rests on the patellar tendon just under the kneecap. COMPLETING: one press, about two seconds — the fingertip pushes straight in, the skin dimpling round it, the finger bending at the first knuckle with the pressure; a small flinch runs through her hand and the knee twitches slightly, then she holds the press. UNRESOLVED: the finger stays pressed in under the kneecap. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum: nothing at uniform speed, motions settle slowly, fabric lags.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, grey flat late-morning daylight from the bedroom window on the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no second person, no other hand, no face, no finger sliding onto the kneecap, no finger moving to the side, no bruise, no talking, no slow motion, no music, no sound\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_154618_55534c5d-17d6-469d-b88d-6947f6deaee9.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_214018_d8d65386-01e9-468a-a6ab-778acb4eee12.png",
  "start_approved": true,
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "generation": 2,
  "risks": [
   {
-   "risk": "a second person's hand appears",
-   "prevented_by": "her own right hand; no second person, no other hand"
+   "risk": "the finger slides off the tendon onto the kneecap",
+   "prevented_by": "one straight press; no finger sliding onto the kneecap"
   },
   {
-   "risk": "finger sinks unnaturally into the knee",
-   "prevented_by": "skin dimpling only; HOLD-HC"
+   "risk": "fingers fuse with the knee",
+   "prevented_by": "HOLD-HC; five separate fingers"
   },
   {
-   "risk": "she turns to the lens",
-   "prevented_by": "no face turning to the lens"
+   "risk": "the camera moves to show her face",
+   "prevented_by": "framing as in the start frame; no face"
   }
- ]
+ ],
+ "audio": false,
+ "fix_note": "frame fault: v1-v3 showed the hand gripping the side of the knee from over her shoulder, never on the tendon (user Fixes) → new start frame v4 in front of the knee, finger on the patellar tendon under the kneecap, confirmed by the user; motion rewritten as one straight press, sound off"
 }
