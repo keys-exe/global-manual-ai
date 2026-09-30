@@ -2,16 +2,12 @@
  "model": "nano_banana_pro",
  "refs": [
   [
+   "B13 v2 \u2014 the scene to edit (Image 1)",
+   "48c97d46-dde1-4c51-a0dd-12179b8c0336"
+  ],
+  [
    "front.webp \u2014 the strap front-on (Image 1)",
    "20bc8be5-8526-48b6-a6e0-acbcb17b7c56"
-  ],
-  [
-   "R1-MAUREEN sheet",
-   "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"
-  ],
-  [
-   "P4-KITCHEN plate",
-   "0bedfad5-bf20-4ebd-a862-fed90b55601a"
   ]
  ]
 }

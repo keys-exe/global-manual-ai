@@ -663,7 +663,40 @@ B["B11-BR"] = clip("B11-BR",
            {"risk": "the leg moves or a second limb appears", "prevented_by": "'the knee holds its pose', 'no leg moving, no second limb', locked camera"}])
 B["B11-BR"][0]["motion"] = B["B11-BR"][0]["motion"].replace(", and the whole structure compresses a few degrees", "")
 
-START = {"B11-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_144242_82c48d6d-785c-454d-91a5-bfea8bd28bcb.png",
+# B14a image v2 (user Fix 'fix the woman', then 'confirm'): Maureen seated on her bottom stair, both hands at the sides of the shell just
+# below her right kneecap. One slide up the last centimetre to contact, then her fingers lift away (SEAT_LOCK; §27G rigid product).
+B["B14a"] = clip("B14a",
+    "A slight white British woman of sixty-nine sitting on her bottom stair: sage-green cardigan, mid-blue denim skirt, pale older legs, "
+    "white canvas plimsolls; the black STRYDE knee strap closed round her right leg just below the kneecap, both her hands holding the "
+    "shell by its two sides.",
+    "Already moving on the first frame: both hands slide the whole strap UP the last centimetre as one piece and it stops against the "
+    "underside of the kneecap, seated on the tendon — one short slide, about a second — then her fingers lift gently away and rest on "
+    "her thigh. The strap stays exactly where it stopped; the shell is rigid and keeps its shape and wordmark throughout.",
+    "no strap climbing onto the kneecap, no strap sliding down, no band being pulled, no fastening, no strap changing shape, no strap "
+    "changing size, no wordmark changing, no second strap, no face, no standing up, no extra hands, no extra fingers",
+    4.0, hi=5,
+    risks=[{"risk": "the shell warps or the wordmark smears as it moves", "prevented_by": "one short slide, rigid-shell line in motion, 'no strap changing shape/size, no wordmark changing'"},
+           {"risk": "the strap overshoots onto the kneecap", "prevented_by": "'stops against the underside of the kneecap', 'no strap climbing onto the kneecap'"},
+           {"risk": "hands duplicate or pass through the strap", "prevented_by": "HOLD-C + NEG-WARP-C, 'no extra hands, no extra fingers'"}])
+
+# B14b image v2 (user Fix 'too big, fix size', then 'confirm'): the strap upright in her one hand, the grey pad to the lens. One small
+# tilt through the window light — the pad stays to the lens, so no pinned end frame (act map pin 'no').
+B["B14b"] = clip("B14b",
+    "An older woman's hand holding a small black knee strap upright, its inside turned to the lens: a grey grooved pad with one smooth "
+    "comma-shaped ridge inside a thin black rim, a chrome slide at each end, a pale kitchen soft behind.",
+    "Already on the first frame: her wrist turns the strap a few degrees to one side and back, slowly, over about two seconds, so the "
+    "window light slides across the grooves and the ridge of the pad; the pad stays facing the lens the whole time and the strap keeps "
+    "its size and shape.",
+    "no strap turning round, no front of the shell showing, no wordmark, no strap changing size, no pad changing shape, no ridge moving, "
+    "no second hand, no extra fingers, no strap dropped",
+    4.0, hi=5,
+    risks=[{"risk": "the pad pattern swims as it tilts", "prevented_by": "a few degrees only, 'no pad changing shape, no ridge moving', HOLD-C"},
+           {"risk": "the strap turns right round to its front", "prevented_by": "'the pad stays facing the lens', 'no strap turning round, no front of the shell showing'"},
+           {"risk": "the strap grows in the hand (the Fix was size)", "prevented_by": "'keeps its size and shape', 'no strap changing size'"}])
+
+START = {"B14a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_160315_08cf3855-d502-4d9f-8d7c-ef5460eee8fb.png",
+         "B14b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_160315_ab4a6700-d742-40b1-8b0d-6eb4c68382da.png",
+         "B11-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_144242_82c48d6d-785c-454d-91a5-bfea8bd28bcb.png",
          "B12": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_0a389350-3a9a-410e-a56c-5b29e5ee4659.png",
          "B12b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_c1a15ea6-ad66-4f8b-aeb5-9bb6b3d657b0.png",
          "B10c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140203_48b079aa-50b4-48f7-888a-f2c5779f802c.png",
