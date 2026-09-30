@@ -1533,7 +1533,7 @@
   "beat": "B16c",
   "group": "Act 3",
   "type": "BR",
-  "subject": "R2",
+  "subject": "one-off",
   "height": "ground",
   "side": "front",
   "scale": "CU",
@@ -1548,7 +1548,67 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": "D-D2",
+  "story_day": "one-off",
+  "face": false,
+  "light": {
+   "source": "open sky, afternoon sun",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "B16c2",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "one-off",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low three-quarter: another life, same strap",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "one-off",
+  "face": false,
+  "light": {
+   "source": "open sky, afternoon sun",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
+  "beat": "B16c3",
+  "group": "Act 3",
+  "type": "BR",
+  "subject": "one-off",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "front-on: everyday, everywhere",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "one-off",
   "face": false,
   "light": {
    "source": "open sky, afternoon sun",
