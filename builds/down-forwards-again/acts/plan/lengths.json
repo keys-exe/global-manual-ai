@@ -186,10 +186,10 @@
  "BR-16a": {
   "act": "Act 4",
   "in": 0.0,
-  "out": 5.18,
-  "span": 5.18,
-  "kling": 6,
-  "line": "Thirty four percent less strain. Measured. Three years with orthopedic surgeons."
+  "out": 3.22,
+  "span": 3.22,
+  "kling": 4,
+  "line": "Thirty four percent less strain. Measured."
  },
  "BR-16b": {
   "act": "Act 4",
@@ -234,10 +234,10 @@
  "BR-20": {
   "act": "Act 4",
   "in": 30.5,
-  "out": 39.58,
-  "span": 9.08,
-  "kling": 10,
-  "line": "Not because the arthritis has gone. Her scan looks exactly the same as it did in March. I have both of them. Because the load is not landing on that band any more."
+  "out": 32.56,
+  "span": 2.06,
+  "kling": 3,
+  "line": "Not because the arthritis has gone."
  },
  "PR-22a": {
   "act": "Act 5",
@@ -326,5 +326,29 @@
   "span": 1.9,
   "kling": 3,
   "line": "It was where the load was landing."
+ },
+ "BR-16a2": {
+  "act": "Act 4",
+  "in": 3.22,
+  "out": 5.18,
+  "span": 1.96,
+  "kling": 3,
+  "line": "Three years with orthopedic surgeons."
+ },
+ "BR-20b": {
+  "act": "Act 4",
+  "in": 32.56,
+  "out": 36.52,
+  "span": 3.96,
+  "kling": 4,
+  "line": "Her scan looks exactly the same as it did in March. I have both of them."
+ },
+ "BR-20c": {
+  "act": "Act 4",
+  "in": 36.52,
+  "out": 39.58,
+  "span": 3.06,
+  "kling": 4,
+  "line": "Because the load is not landing on that band any more."
  }
 }

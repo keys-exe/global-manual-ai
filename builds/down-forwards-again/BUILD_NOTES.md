@@ -235,4 +235,22 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   each, BR-14b v2 (three even steps, no pause) → board To check; 846 Kie credits. Act map + docs synced.
   **Open for later acts:** A4 aligns poorly (ratio 0.74; BR-17b came out 11 s) — check the A4 act-map lines against the heard words before its
   videos. A5 still has the BR-22a3 row ("From the Stryde site.") with no card.
+- **2026-09-30 ~10:45 UTC: user "fix those and generate the next videos".** Board Fix notes: BR-06 image "fix this distorted image"; videos
+  BR-10b "this feels lke floating", BR-10c "make this anatomy", BR-14b "use anatomy here", BR-16a "this should be 2 brolls make an over all new ones",
+  BR-16b "i need new image here", BR-17b "new image productive broll but with the pants down not showing the strap", BR-19a "should be going down the
+  stairs no breathing and she should not touch the hand rail", BR-20 "i want new images here this should be 3 brolls".
+  **Act map** (angles PASS, wardrobe PASS, STEP4_5 + docs/actmap, docs/wardrobe, docs/locations synced on Plan + Current): BR-06 now eye/profile from
+  across the hall · BR-10b heel on a footstool · BR-10c → MECH (the load running down the leg, landing on the tendon) · BR-14b → MECH + strap (load
+  caught by the pad, turned into the shell) · B-16 split: BR-16a "Thirty four percent less strain. Measured." (gait lab, L-LAB) + NEW BR-16a2 "Three
+  years with orthopedic surgeons." (surgeon fitting the strap, L-ORTHO) · BR-16b walking group in a park (L-PARK; L-TOWPATH retired) · BR-17b out at
+  the greengrocer's, trousers down (L-SHOP, still P-A3) · BR-19a sets off down the stairs, hands free · B-20 split: BR-20 "Not because the arthritis
+  has gone." (his finger on the narrowed joint gap) + NEW BR-20b "Her scan looks exactly the same…" (the two films on his desk, overhead) + NEW BR-20c
+  "Because the load is not landing on that band any more." (MECH + strap, tendon calm). Lengths re-run (A4: BR-16a 4 s, BR-16a2 3, BR-16b 3,
+  BR-17b 3, BR-20 3, BR-20b 4, BR-20c 4).
+  **Images** (`acts/build_fix_r11.py`, nano_banana_pro, one each) → board To check: BR-06 v6, BR-10b v2, BR-10c v2, BR-14b v3, BR-16a v4, BR-16a2 v1,
+  BR-16b v2, BR-17b v3, BR-20 v2, BR-20b v1, BR-20c v1. Their videos wait for the user's Confirm (cards on Planned); the replaced images and videos
+  moved to Old (Current's 1 GB store was full — the move freed it).
+  **Videos** (`acts/build_act5_videos.py`, preflight PASS ×8, Kie kling-3.0-omni, tasks `acts/video/act5_tasks.txt`): Act 5 gen 1 PR-22a 4 s,
+  BR-22a2 3, BR-22b 4, BR-23 3; BR-15 v2 5 s and PR-12 v2 3 s on their new images; MECH-03 v4 3 s on its new image (4th video of the card —
+  user_go = this message); BR-19a v2 5 s (Fix, gen 2).
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

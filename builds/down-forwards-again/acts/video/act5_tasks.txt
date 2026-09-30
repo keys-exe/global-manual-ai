@@ -1,0 +1,8 @@
+BR-15.v2 {"taskId": "1e4ca8a30ec6d4cec3aba3f24094d325", "model": "kling-3.0-omni/image-to-video"}
+PR-12.v2 {"taskId": "cabd25faf674f0b7b16f56ba9c739e18", "model": "kling-3.0-omni/image-to-video"}
+MECH-03.v4 {"taskId": "9a23ecdc11b27b01f7e3fd20ee15d546", "model": "kling-3.0-omni/image-to-video"}
+BR-19a.v2 {"taskId": "dc0402ecd5b616359205ebddf60aa6dc", "model": "kling-3.0-omni/image-to-video"}
+PR-22a {"taskId": "40b66b24289912ac2943d843708b898b", "model": "kling-3.0-omni/image-to-video"}
+BR-22a2 {"taskId": "8094eea0ca9a8f9f851ebd37471dbb0c", "model": "kling-3.0-omni/image-to-video"}
+BR-22b {"taskId": "8f5c53af906aff08424daed57df275c8", "model": "kling-3.0-omni/image-to-video"}
+BR-23 {"taskId": "0afb178e5733e3b991ee6878afa5837c", "model": "kling-3.0-omni/image-to-video"}

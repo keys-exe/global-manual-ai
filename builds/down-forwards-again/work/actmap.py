@@ -22,6 +22,9 @@ LOC = {
  "L-PHYSIO":  dict(plate="—", tier="INCIDENTAL", src="the gym's tall windows + ceiling panels"),
  "L-HOSP":    dict(plate="—", tier="INCIDENTAL", src="the bay window past the curtain + ward ceiling light"),
  "L-TOWPATH": dict(plate="—", tier="INCIDENTAL", src="open sky over the canal"),
+ "L-PARK":    dict(plate="—", tier="INCIDENTAL", src="open sky over the park"),
+ "L-LAB":     dict(plate="—", tier="INCIDENTAL", src="the gait lab's tall side windows + ceiling panels"),
+ "L-SHOP":    dict(plate="—", tier="INCIDENTAL", src="the open front of a greengrocer's on a high street, morning sky"),
  "—":         dict(plate="—", tier="—", src="§12A render light"),
 }
 DAY = {  # story day -> (int, time, act light state, kelvin)
@@ -115,8 +118,9 @@ row("MECH-05","Act 1",["B-05"],"MECH","anatomy","—","MECH","ANAT-A step-down, 
 # ---- ACT 2 — that is why ×3, the list, never / never / always (B-06–B-10) ------------------------------------
 TH("TH-A2", "Act 2", ["B-06","B-07","B-08","B-09","B-10"], "quieter on the list; slower and lower on 'where the load was landing' (stress register)")
 row("BR-06","Act 2",["B-06"],"BR","P","L-P-HALL","P-D1","comes down her stairs BACKWARDS, facing the steps, both hands on the banister","one step back, 3s",
-    "locked-off sway","stairs descending backwards (§27G: one step, both hands on rail, camera at the foot)","no","high","three-quarter-back","FULL","clean",
-    "high + three-quarter-back = small, careful, from the landing","deep","deep","R","backwards",layout=CUT)
+    "locked-off sway","stairs descending backwards (§27G: one step, both hands on rail, camera at the foot)","no","eye","profile","FULL","clean",
+    "profile = backwards only reads side-on; the flight above and below her","deep","deep","R","backwards",layout=CUT)
+# the user, 2026-09-30 (image Fix on BR-06 v5): "fix this distorted image" → side-on from the hall, one plain straight flight, her mid-flight facing the steps
 row("BR-07","Act 2",["B-07"],"BR","P","L-P-FRONT","P-D1","rocks forward in the low fireside armchair, hands on the wooden arms, to stand — the first try, sinks back","one rock, 3s",
     "sway","sit-to-stand (§27G: one action, hands on the arms)","no","eye","profile","MEDIUM","clean","profile = the effort side-on","medium","eyes","L","chair",layout=CUT,face=True)
 row("BR-08","Act 2",["B-08"],"BR","P legs","L-P-HALL","P-D1","steps up onto the bottom stair RIGHT leg first, the left trailing","one step, 2s",
@@ -132,10 +136,11 @@ row("BR-10","Act 2",["B-10"],"BR","P","L-P-FRONT","P-D1","seated in the armchair
     "sway","sitting · hands","no","high","three-quarter","MEDIUM","clean","high = how hard she tried","medium","hands","L","tried",layout=CUT)
 # the user, 2026-09-29 (video Fix on BR-10): "this should be 3 separate brolls" → B-10 split: BR-10 (how hard she tried — keeps its image),
 # BR-10b (never a weak muscle — her hand on her thigh as the muscle tightens hard), BR-10c (where the load was landing — the knee as the foot lands a step down)
-row("BR-10b","Act 2",["B-10"],"BR","P legs","L-P-FRONT","P-D1","her leg held straight out from the armchair, her hand flat on her thigh as the thigh muscle tightens hard under it","one squeeze, 2s",
+row("BR-10b","Act 2",["B-10"],"BR","P legs","L-P-FRONT","P-D1","her leg straight, the heel resting on a footstool, her hand flat on her thigh as the thigh muscle tightens hard under it","one squeeze, 2s",
     "sway","sitting · hands","no","low","profile","CU","clean","low + profile = the strong muscle's shape","medium","hands","L","muscle",layout=CUT)
-row("BR-10c","Act 2",["B-10"],"BR","P legs","L-P-HALL","P-D1","her left foot lands on the hall floor off the bottom stair, the left knee bending to take the weight","one step down, 2s",
-    "locked-off sway","stairs descending (§27G: one step, camera low at the foot)","no","ground","three-quarter","CU","clean","ground = where the weight lands","deep","deep","R","landing",layout=CUT,eg="EG06 red arrow")
+# the user, 2026-09-30 (video Fix on BR-10c): "make this anatomy" → ANAT render: the load running down the leg and landing on the band as the foot lands
+row("BR-10c","Act 2",["B-10"],"MECH","anatomy","—","MECH","ANAT-A: as the foot lands a step down, the load runs down the thigh and lands on the patellar tendon, which lights red","one landing, 2s",
+    "RV render","none","no","low","three-quarter","CU","clean","low = where the weight lands, looking up the leg","deep","deep","L","landing",layout=CUT,eg="EG06 red arrow")
 
 # ---- ACT 3 — the failed fixes, Stryde, placement (B-11–B-15) --------------------------------------------------
 TH("TH-A3", "Act 3", ["B-11","B-12","B-13","B-14","B-15"], "counts the three on his fingers; lifts the strap from the desk into frame on 'This does'")
@@ -153,9 +158,11 @@ row("BR-13","Act 3",["B-13"],"BR","P","L-P-FRONT","P-D2","sits on the armchair e
 # loing for 1 broll only" → MECH-14 keeps its id (version history) but becomes the product close-up of the pad's inside; BR-14b carries the second sentence.
 row("MECH-14","Act 3",["B-14"],"PRODUCT","P hand","L-P-FRONT","P-D2","turns the strap over in her hand: the grey ridged silicone pad inside, its smooth central bar","a slow half turn, 2s",
     "sway","hands","yes — product turns","high","three-quarter","CU","clean","high = looking down into her palm at the pad","medium","product","L","pad",product="held, back of the shell (PAD_BACK_SHOT, the user's pad photo)",layout=SPL,model="NBP")
-row("BR-14b","Act 3",["B-14"],"BR","P legs","L-P-HALL","P-D2","steps down one stair, strap on the LEFT knee: the foot lands and the knee bends easily under her weight","one step down, 2s",
-    "locked-off sway","stairs descending (§27G: one step, camera at the foot)","no","low","three-quarter","CU","clean","low = the catch, at the knee","medium","product","R","caught",
-    product="worn · VISIBLE",model="NBP")
+# the user, 2026-09-30 (video Fix on BR-14b): "use anatomy here" → ANAT render with the strap on: the load comes down, is caught by the pad and turned off
+# the band into the shell before it reaches the joint
+row("BR-14b","Act 3",["B-14"],"MECH","anatomy + strap","—","MECH","ANAT-A + product: the load comes down the leg, meets the pad over the tendon and is turned off into the shell; the joint below stays calm","one landing, 2s",
+    "RV render","none","no","eye","three-quarter","CU","clean","three-quarter = the strap and the tendon under it both read","deep","deep","L","caught",
+    product="worn · VISIBLE (on the anatomical model)",model="NBP")
 # the user, 2026-09-29 (image Fix on BR-15): "generate a new image for this different concept" → her own knee, the strap on it, her fingertip resting on the
 # notch where it meets the kneecap's lower edge: the placement checked on her, not on a desk model (was: the doctor's finger on a knee model)
 row("BR-15","Act 3",["B-15"],"BR","P hand","L-P-FRONT","P-D2","her fingertip rests on the strap's notch where it meets the lower edge of her kneecap — right on the tendon, not a centimetre higher","one light touch, 2s",
@@ -164,26 +171,41 @@ row("BR-15","Act 3",["B-15"],"BR","P hand","L-P-FRONT","P-D2","her fingertip res
 
 # ---- ACT 4 — proof, ten seconds, the doctor's word, the test, the scan (B-16–B-20) ------------------------------
 TH("TH-A4", "Act 4", ["B-16","B-17","B-18","B-19","B-20"], "hands flat on the desk on 'I do not sell these'; eyebrows up on 'You will know in a minute'")
-row("BR-16a","Act 4",["B-16"],"BR","surgeon (one-off SG-01, §19B approachable)","L-ORTHO","X-D1","turns the strap in his hand beside a knee model","one turn, 2s",
-    "sway","hands","yes — product turns","eye","three-quarter","MCU","clean","","medium","product","R","orthopedic",product="held",model="NBP",layout=PIP,face=True,eg="EG06 34% card")
-row("BR-16b","Act 4",["B-16"],"BR","walkers (one-offs WK-01)","L-TOWPATH","X-D1","a line of older walkers' legs passes on a towpath, a strap on each near knee","they cross frame, 3s",
-    "locked-off","walking across frame (§27G: camera never travels)","no","ground","profile","MEDIUM","clean","ground = the steps of many","deep","deep","L","Two",
+# the user, 2026-09-30 (video Fix on BR-16a): "this should be 2 brolls make an over all new ones" → BR-16a (measured: a gait lab) + BR-16a2 (the surgeons)
+row("BR-16a","Act 4",["B-16"],"BR","volunteer (one-off LV-01)","L-LAB","X-D1","in a gait lab, a volunteer wearing the strap steps down off a low wooden step onto a force plate, a load curve on the monitor behind","one step down, 2s",
+    "locked-off sway","one step down (§27G: camera side-on, never travels)","no","low","profile","MEDIUM","clean","low + profile = the measured step, side-on","medium","product","L","Measured",
+    product="worn · VISIBLE",model="NBP",layout=PIP,eg="EG06 34% card")
+row("BR-16a2","Act 4",["B-16"],"BR","surgeons (one-offs SG-01, SG-02, §19B approachable) + patient (one-off PT-01)","L-ORTHO","X-D1","an orthopaedic surgeon fits the strap below a patient's kneecap on the examination couch while a second surgeon watches","one slide up, 2s",
+    "sway","hands · seating (SEAT_LOCK: only ever up)","yes — ends seated","eye","three-quarter","MEDIUM","clean","three-quarter = the two surgeons and the knee in one frame","medium","hands","R","orthopedic",
+    product="seated · VISIBLE",model="NBP",layout=FULL,face=True)
+# the user, 2026-09-30 (video Fix on BR-16b): "i need new image here" → a walking group coming towards us in a park, faces and knees, straps on several knees
+row("BR-16b","Act 4",["B-16"],"BR","walkers (one-offs WK-01)","L-PARK","X-D1","a walking group of older people comes along a park path towards us, the slim strap on several knees","they walk towards us, 3s",
+    "locked-off","walking at camera (§27G: camera never travels, they stop short of it)","no","low","front","WIDE","clean","low + front = the many, coming our way","deep","deep","L","Two",
     product="worn · VISIBLE",model="NBP",layout=CUT,eg="EG06 200,000 card")
 row("BR-17a","Act 4",["B-17"],"BR","P","L-P-HALL","P-D2","sitting on the bottom stair, seats the strap on her LEFT knee in one slide up (SEAT_LOCK)","one slide up, 2s",
     "sway","seating (SEAT_LOCK: only ever up)","yes — ends seated","high","three-quarter","CU","clean","high = quick and easy","medium","product","R","Ten",
     product="seated · VISIBLE",model="NBP",layout=SPL,ledger="F6")
-row("BR-17b","Act 4",["B-17"],"BR","P","L-P-HALL","P-D2","stands and lets the rolled trouser leg fall; it lies flat over the strap","one drop, 2s",
-    "sway","standing","no","low","three-quarter","CU","clean","low = the flat line of the trouser","medium","product","R","nobody",
-    product="worn · REVEAL→CONCEALED (§9D)",model="NBP",layout=SPL,ledger="F6")
-row("BR-19a","Act 4",["B-19"],"BR","P","L-P-HALL","P-D2","at the top of the stairs, trousers rolled above both knees: strap on the LEFT knee, the right bare","still, a breath, 2s",
-    "sway","standing on a landing (§27G: no step)","no","high","front","MEDIUM","clean","high = the drop of the stairs below her","medium","product","R","One",
+# the user, 2026-09-30 (video Fix on BR-17b): "new image productive broll but with the pants down not showing the strap" → out doing her shopping at the
+# greengrocer's, the trouser legs down to her shoes, nothing showing at the knee
+row("BR-17b","Act 4",["B-17"],"BR","P","L-SHOP","P-D2","out at the greengrocer's, choosing apples into a paper bag, the wide denim trouser legs down to her trainers, nothing showing at the knee","one reach, 2s",
+    "sway","standing (§27G: one reach, no step)","no","eye","three-quarter","FULL","clean","three-quarter + full = out in the world, the whole leg line smooth","medium","subject","R","nobody",
+    product="worn · CONCEALED under trousers (§9D)",model="NBP",layout=SPL,ledger="F6",face=True)
+# the user, 2026-09-30 (video Fix on BR-19a): "should be going down the stairs no breathing and she should not touch the hand rail"
+row("BR-19a","Act 4",["B-19"],"BR","P","L-P-HALL","P-D2","sets off down the stairs forwards from the top, strap on the LEFT knee, the right bare, hands free of the rail","two steps, 2s",
+    "sway","stairs descending (§27G: camera below her on the flight, hands free, never on the rail)","no","high","front","MEDIUM","clean","high = the drop of the stairs below her","medium","product","R","One",
     product="worn · VISIBLE, one knee only",model="NBP",layout=CUT,ledger="F4")
 row("BR-19b","Act 4",["B-19"],"BR","P","L-P-HALL","P-D2","comes down the stairs forwards, one step at a time, hand light on the banister","two steps, 3s",
     "locked-off sway","stairs descending (§27G: camera at the foot, hand on rail)","no","low","front","FULL","clean",
     "low = the mirror of BR-05b, now easy","deep","deep","R","forwards",product="worn · VISIBLE",model="NBP",layout=FULL,face=True,ledger="F4")
-row("BR-20","Act 4",["B-20"],"BR","D","L-D-CONS","D-D1","holds two identical knee X-rays up side by side to the window","still, 2s",
-    "sway","standing at the window (§27G: no travel)","no","eye","three-quarter-back","MCU","through","three-quarter-back + through = we read both scans over his shoulder",
-    "medium","background","back","both",layout=SPL,ledger="F3",face=True)
+# the user, 2026-09-30 (video Fix on BR-20): "i want new images here this should be 3 brolls" → BR-20 (the arthritis still there), BR-20b (the two scans,
+# identical), BR-20c (the load no longer landing on the band — anatomy with the strap)
+row("BR-20","Act 4",["B-20"],"BR","D hand","L-D-CONS","D-D1","her knee X-ray held to the window, his fingertip tracing the narrowed joint gap on the inner side","one trace, 2s",
+    "sway","hands","no","eye","front","CU","clean","front = read the scan straight on","medium","hands","back","arthritis",layout=SPL,ledger="F3")
+row("BR-20b","Act 4",["B-20"],"BR","D hands","L-D-CONS","D-D1","the two knee X-rays laid side by side on his desk, March and now, identical; his hands square them up","one small push, 2s",
+    "sway","hands","no","overhead","front","CU","clean","overhead = the two side by side, the same","medium","foreground","L","both",layout=CUT,ledger="F3")
+row("BR-20c","Act 4",["B-20"],"MECH","anatomy + strap","—","MECH","ANAT-A + product: a step lands with the strap on, the tendon stays cool and unlit, the pad holding it","one landing, 2s",
+    "RV render","none","no","low","profile","CU","clean","low + profile = the same view as the red band, now calm","deep","deep","L","band",
+    product="worn · VISIBLE (on the anatomical model)",model="NBP",layout=FULL)
 
 # ---- ACT 5 — the reframe, the offer, the close (B-21–B-23) ------------------------------------------------------
 TH("TH-A5", "Act 5", ["B-21","B-22","B-23"], "slow and certain on 'move the load'; the last line straight to lens, a small nod")
@@ -227,13 +249,15 @@ BLINE = {
  "BR-09a": "And the list of things she said no to got longer every year. The long walk.", "BR-09b": "The garden.", "BR-09c": "Her family coming to her instead.",
  "BR-11a": "A sleeve squeezes the whole knee.", "BR-11b": "A hinged brace stops it going sideways, and her knee was never going sideways.",
  "BR-11c": "A gel sits on the skin. None of them move the load.",
- "BR-16a": "Thirty four percent less strain. Measured. Three years with orthopedic surgeons.", "BR-16b": "Two hundred thousand people wearing one.",
+ "BR-16a": "Thirty four percent less strain. Measured.", "BR-16a2": "Three years with orthopedic surgeons.", "BR-16b": "Two hundred thousand people wearing one.",
  "BR-17a": "Ten seconds to put on. No sores, no rolling down,", "BR-17b": "and nobody can see it.",
  "BR-19a": "You do not have to take my word for it. One knee only. Leave the other bare.", "BR-19b": "Go to your own stairs and come down forwards. You will know in a minute.",
  "PR-22a": "Two for one, so you do both knees, which is what she needed.", "BR-22a2": "Sixty days, and you keep the straps.", "BR-22a3": "From the Stryde site.",
  "MECH-14": "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee.",
  "BR-14b": "The weight gets caught and moved off the worn part before it reaches the joint.",
  "BR-22b": "The copies stretch, and a stretched strap stops holding the spot.",
+ "BR-20": "Not because the arthritis has gone.",
+ "BR-20b": "Her scan looks exactly the same as it did in March. I have both of them.", "BR-20c": "Because the load is not landing on that band any more.",
 }
 for r in R:
     if r["beat"] in BLINE:
