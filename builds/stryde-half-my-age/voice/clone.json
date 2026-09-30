@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "voice_name": "HalfMyAge",
+  "voice_id": "m8paURpcIo2oNWLiWDYk",
+  "category": "cloned",
+  "requires_verification": false,
+  "source": "HalfMyAge_clone_source.mp3",
+  "source_s": 38.63,
+  "remove_background_noise": true
+}

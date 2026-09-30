@@ -32,7 +32,7 @@ for k, (name, who, n, wall, vid, voice) in CH.items():
          f"{name[0].upper() + name[1:]} looks just off the lens at someone beside the camera and says, clearly and completely: \"{line}\" "
          f"Delivery: {voice} {NEUTRAL} {AUD} Dialogue only: {NEGS}. One speaker only. "
          "NEGATIVES: no other people, no second voice, no microphone in frame, no looking into the lens, no text, no captions, " + NEGS + ".")
-    call = {"beat": f"VOICE-{k}", "connector": "seedance", "mode": 4, "kind": "voice_master", "prompt": p, "duration": 10,
+    call = {"beat": f"VOICE-{k}", "connector": "seedance", "mode": 4, "kind": "voice_master", "prompt": p, "duration": max(4, min(10, round(len(line.split()) / 2.5 + 1.5))),
             "resolution": "720p", "aspect_ratio": "9:16", "start_image": None, "start_approved": True, "ingredients_approved": True, "files": [f"voice/{k}_face.jpg"], "audios": [],
             "generate_audio": True, "dialogue": line, "script_line": line, "pace": "unhurried", "subject_motion": "still", "prefer_multi_shots": "false",
             "generation": 1, "user_go": None, "fix_note": None, "rack": None,

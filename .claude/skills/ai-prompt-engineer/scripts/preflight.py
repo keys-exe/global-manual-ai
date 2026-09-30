@@ -361,7 +361,9 @@ def run(c):
     # 4a. §24I part 7 — a neutral film voice master: its own recipe, not a film shot
     if kind == "voice_master":
         check("voice master on Seedance", conn == "seedance", conn)
-        check("voice master 10s (§24I)", d == 10, str(d))
+        fit = max(4, min(10, round(words(c.get("dialogue") or "") / 2.5 + 1.5)))
+        check("voice master duration fits its line — no paid dead space (§24I, 2026-09-30)",
+              isinstance(d, (int, float)) and 4 <= d <= fit, f"{d}s for {words(c.get('dialogue') or '')} words; fit ≤ {fit}s")
         imgs = [f for f in c.get("files", []) if not MUSIC_FILE.search(str(f))]
         check("one ingredient: the face-only reference", len(c.get("files", [])) == 1, f"{len(c.get('files', []))} files")
         check("no audio in (it is the master)", not c.get("audios"), ",".join(map(str, c.get("audios") or [])))
