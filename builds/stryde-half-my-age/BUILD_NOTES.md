@@ -29,3 +29,6 @@ F1, F2, F4 claims to confirm · F8 Hook E's action (proposed: HER gets up off th
 
 ## Next
 On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene Bibles, act map + wardrobe map, ingredient lists, `angles.py`), then §24I voice masters, then hooks one by one on Seedance.
+
+- 2026-09-30 **Voices, narration takes and L-STAIRS v4 confirmed** (user: "CONFIRMED ALL PROCEED") — 29 VO-T1 takes set `use`. **Step 6 started — Hook A (station stairs):** act map HKA-SH03 rig F9 → F2 (F9 is never on stairs; `angles.py` PASS). Outfit info card `OUT-N-HA` (Her's day-HA outfit, Sunburst on Higgsfield, 2.75 cr) To check. Five Seedance calls in `hooks/HKA/` (`build_calls.py`, all `preflight.py` PASS): SH01 6s (L001), SH02 4s (L002), SH03 4s silent, SH04 4s (L003), SH05 7s silent (VO L004 6.3s laid in the edit). SH04 uses no card → sent first on Kie (v1 done, 252 cr, To check); SH01/02/03/05 wait for the outfit card's Confirm. Voice masters sent to Kie as mp3 (`voice/*_voice_master.mp3`).
+- **Kie credits: 2,489 before Hook A** — Hook A needs ~1,575 (25s × 63/s). The other three hooks and the film need ~23,000 more: **top-up needed before Hook B.**
