@@ -149,15 +149,16 @@ BB("B08a", A1, "Some of the people it happens to have never run a mile in their 
    EYE, THR, "clean", "MEDIUM", "three-quarter = an unhurried, unsporty life", "eyes", "medium", L(STREET_AM, "L"), True,
    notes="v4 — user Fix 'CREATE NEW IMAGE FOR THIS LINE' (v1 keys; v2 tartan trolley; v3 unworn trainers in the cupboard)")
 BB("B08b", A1, "Others played sport for thirty years.", "sport", "not what you did",
-   "R2", "L-STREET", "D-D1", "MEDIUM on the pavement: Desmond jogging along his street in running kit, strong and fit, an easy practised stride", "three easy jogging strides towards and past the lens",
-   "an easy jogging pace", STILL, "street: low three-quarter from the front, full figure, camera still", "no", "absent", "—", "NB2",
-   LOW, THR, "clean", "MEDIUM", "low three-quarter = a strong, sporty man in his stride", "eyes", "medium", L(STREET_AM, "L"), True,
-   notes="v4 — user Fix 'CREATE NEW IMAGE FOR THIS LINE' (v1 team photo; v2 old football; v3 trophies on a shelf)")
+   "extras", "L-PARK", "D-D1", "MEDIUM on a grass park pitch: a veterans' Sunday football game, a fit grey-haired man in his sixties in a plain kit strikes the ball, other older players around him", "he strikes the ball and follows through",
+   "one kick, about a second", STILL, "pitch: low three-quarter, the kicker full figure, camera still", "no", "absent", "—", "NB2",
+   LOW, THR, "clean", "MEDIUM", "low three-quarter = a lifetime of sport, still playing", "eyes", "medium", L(STREET_AM, "L"), True,
+   notes="v5 — user Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 team photo; v2 football; v3 trophies; v4 Desmond jogging); one-off extras, no sheets (§19B)")
 TH("B08-TH2", A1, "It makes almost no difference, because the load is not coming from what you did.", framing="punch")
 BB("B08c", A1, "It is coming from standing up and walking.", "standing", "the cause — ordinary life",
-   "R2", "L-D-STAIRS", "D-D1", "MEDIUM: Desmond sitting on the bottom stair tying a trainer, already rising — ends standing", "rises to standing",
-   "about a second and a half", STILL, "standing up: start mid-movement, end on contact, 3s", "no", "absent", "—", "NB2",
-   LOW, THR, "clean", "MEDIUM", "low = the effort of standing", "eyes", "deep", L(D_GREY, "L"), True, mx=3)
+   "R1", "L-KITCHEN", "M-D1", "side-on, waist-down, low: Maureen pushes up from her kitchen chair, both knees straightening under her weight, and takes the first step away", "she rises and steps off",
+   "one rise and one step, about two seconds", STILL, "standing up: side-on, waist-down, camera still", "no", "absent", "—", "NB2",
+   LOW, PRO, "clean", "MS", "low profile = the knees doing the work of standing", "foreground", "shallow", L(KITCH, "L"), False, mx=3,
+   notes="v2 — user Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 Desmond rising from his bottom stair)")
 
 # ============================================================ ACT 2 — the costly mistake
 TH("B09-TH", A2, "Which is why most of what gets sold for this cannot work.", framing="punch")
@@ -334,10 +335,14 @@ BB("B08-BRc", A1, "You do not have to have done anything to your knees for this 
    "one ordinary action, about two seconds", STILL, "kitchen: side-on at the sink, waist up, camera still", "no", "absent", "—", "NB2",
    EYE, PRO, "clean", "MEDIUM", "profile = an ordinary life, nothing sporty", "eyes", "medium", L(KITCH, "L"), True,
    notes="user 2026-09-30 'give me brolls here' — second sentence; replaces the planned plimsolls shot (too close to B08-BR2's boots)")
-BB("B08-BR2", A1, "It makes almost no difference, because the load is not coming from what you did.", "difference", "what you did doesn't matter",
+BB("B08-BR2", A1, "It makes almost no difference,", "difference", "what you did doesn't matter",
    "R2", "L-D-STAIRS", "D-D1", "CU Desmond's hand sets a pair of old black football boots, dried mud on the studs, down on the shoe rack by his front door", "the boots set down on the rack",
    "one set-down, about a second", STILL, "hall by the door, hand and boots only, camera still", "no", "absent", "—", "NB2",
-   HIGH, THR, "clean", "CU", "high = the old boots looked down on, put away", "hands", "shallow", L(D_GREY, "L"), False, notes="covers B08-TH2; no logos on the boots")
+   HIGH, THR, "clean", "CU", "high = the old boots looked down on, put away", "hands", "shallow", L(D_GREY, "L"), False, notes="first half of B08-TH2 (user 'BROLLS HERE'); no logos on the boots")
+BB("B08-BR3", A1, "because the load is not coming from what you did.", "load", "the load comes from every step",
+   "R1", "L-M-STAIRS", "M-D1", "ECU at floor level, side-on: Maureen's plimsoll steps over her front doorstep from the hall, the bare knee above bending as it takes her weight", "one step over the doorstep",
+   "one step, about a second", STILL, "doorway: ground level side-on, feet and knee only, camera still", "no", "absent", "—", "NB2",
+   GROUND, PRO, "clean", "ECU", "ground profile = one ordinary step taking the load", "foreground", "shallow", L(M_GREY, "R"), False, notes="second half of B08-TH2 (user 'BROLLS HERE')")
 BB("B09-BR", A2, "Which is why most of what gets sold for this cannot work.", "sold", "the pile of things that didn't work",
    "hands", "L-KITCHEN", "K-D1", "on the oak table: a grey knit knee sleeve, a black hinged brace, a plain white gel tube and a blister pack of tablets laid out together; a hand sets the last one down", "the last item set down",
    "one set-down, about a second", STILL, "table top, hands only, camera still", "no", "absent", "—", "NB2",
@@ -372,7 +377,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []

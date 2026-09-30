@@ -394,7 +394,23 @@ B["B08-BRc"] = clip("B08-BRc",
            {"risk": "her face drifts off the sheet", "prevented_by": "side-on, calm, small head turn only, HOLD-C"},
            {"risk": "text appears on the kettle", "prevented_by": "'no readable text on the kettle'"}])
 
-START = {"B08-BRb": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_103917_57a208e9-a3f0-44c8-9602-b7a6f6ee6d42.png",
+# B08a image v4 (user CONFIRM): Maureen seated at the bus stop on her street, handbag on her lap.
+# "Some of the people it happens to have never run a mile in their life." ≈ 3.2 s → 5 s.
+B["B08a"] = clip("B08a",
+    "A white British woman of sixty-nine with short white hair, seated side-on on the wooden bench of a glass bus shelter on a grey British "
+    "residential street, a dusty-pink cardigan over a navy-and-white striped top, a navy skirt, white plimsolls, a brown handbag on her lap "
+    "under both hands, parked cars and 1930s semis beyond.",
+    "Already still on the first frame: she settles the handbag a little on her lap, smooths it with one hand, then turns her head slowly "
+    "to glance up the road for the bus and back — calm and unhurried, an ordinary wait, real time.",
+    "no standing up, no bus arriving, no second person, no looking at the camera, no cars moving, no walking stick, no knee strap, "
+    "no extra hands, no extra fingers, no readable text",
+    3.2, hi=6,
+    risks=[{"risk": "her face drifts off the sheet as she turns", "prevented_by": "one slow head turn and back, 5 s cap, HOLD-C"},
+           {"risk": "hands warp on the handbag", "prevented_by": "one small settle and smooth, NEG-WARP-C, 'no extra hands'"},
+           {"risk": "a bus or people wander in", "prevented_by": "'no bus arriving, no second person, no cars moving'"}])
+
+START = {"B08a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_111706_9b645285-1aef-43ba-99f4-f95ac2ed5c6b.png",
+         "B08-BRb": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_103917_57a208e9-a3f0-44c8-9602-b7a6f6ee6d42.png",
          "B08-BRc": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_103918_c1db651c-8d38-40ec-8f3b-0468a2ed021b.png",
          "B06-BR2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_230724_8d894c4c-441e-428d-aeed-497f8383a717.png",
          "B08-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_225901_8a563cef-0c03-48f0-94fa-92dd33e9b572.png",
