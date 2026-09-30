@@ -3,30 +3,41 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"hk2_drawer_strap_slide\",\"subject\":\"Gail's overfilled top drawer of blank knee supports exactly as in the start frame, nobody in frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"High as in the start frame: above head height looking down into the open drawer. FOCUS: the near edge of the drawer and the sliding strap are sharp; the photograph behind falls soft.\"},\"motion\":\"CONTINUING: the black strap hangs over the drawer's front edge exactly where it is in the start frame. COMPLETING: nothing in the drawer moves for the whole three seconds — the strap stays still, flat against the drawer front, not sliding, not swinging, not twitching; the only movement is the phone's own slow breath sway. UNRESOLVED: the overfilled drawer and the hanging strap, perfectly still. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Worn pine, black neoprene, grey brace fabric, beige hook-and-loop; grey window light from the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no people, no hands, no pile collapsing, no strap moving, no strap sliding, no swinging, no pendulum motion, no strap bouncing, no strap falling, no other support moving, no readable text, no brand, no slow motion, no music\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_124843_6ba23186-24fd-4e9c-b5a3-f3952385cbfd.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_154946_ae7ed4ba-ef78-49ac-9c84-a2cfd2410690.png",
  "start_approved": true,
  "pinned": false,
- "subject_motion": "still",
+ "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 3,
+ "audio": false,
+ "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": from this frame, her right hand sets the last handful of letters down on the third pile — one set-down, about two seconds — ending with three separate piles side by side and both hands at rest. The sheets sag a little and settle flat. Handheld phone, a gentle breath sway, the camera stays where it is, straight above the desk. Exactly three piles the whole time, the same grey trays full of the same white typed letters, every finger whole and separate. No fourth pile, no letters flying, no handwriting, no readable text, no sound.",
+ "script_line": "Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.",
+ "motion_plan": "her right hand sets the last handful of letters down on the third pile — one set-down, about two seconds — ending with three separate piles side by side and both hands at rest",
+ "motion_confirmed": true,
+ "taste": [
+  "HT04",
+  "HT12",
+  "HT13",
+  "HT18",
+  "HT19"
+ ],
+ "generation": 4,
+ "user_go": "MAKE CLIP FOR HK2-03 (user in chat, 2026-09-30; also taken as the Confirm of image v3 and its motion line)",
+ "fix_note": "frame fault: gens 1–3 were Gail's drawer with a swinging strap (user Fix: make the B-roll suit HK2-01) → new start frame v3, an edit of the confirmed HK2-01 v4 (her hands dividing the letters into three piles); one set-down on the third pile, §35A form, sound off",
  "risks": [
   {
-   "risk": "the strap still moves or swings",
-   "prevented_by": "subject still; motion states nothing in the drawer moves; negatives no strap moving, no sliding, no swinging, no pendulum"
+   "risk": "a fourth pile appears or the piles merge",
+   "prevented_by": "exactly three piles the whole time; no fourth pile"
   },
   {
-   "risk": "the strap drops to the floor",
-   "prevented_by": "COMPLETING ends hanging down the drawer front; negative no strap falling"
+   "risk": "fingers fuse into the paper",
+   "prevented_by": "every finger whole and separate"
   },
   {
-   "risk": "a frozen still frame with no life",
-   "prevented_by": "RIG-R1C breath sway and focus hunt keep the frame alive"
+   "risk": "the typed letters morph into handwriting",
+   "prevented_by": "same white typed letters; no handwriting, no readable text"
   }
- ],
- "fix_note": "motion fault: generations 1 and 2 moved the strap and it swung (user: REMOVE SWING STRAP; then \"the black strap stay and the strap don't swing\") → the strap no longer moves at all: COMPLETING is stillness, only the camera's breath sway; negatives add no strap moving / sliding / falling; same confirmed start image; Kie (same Kling 3.0 Omni)",
- "user_go": "FIX HK2-03 — board note: \"the black strap stay and the strap don't swing\""
+ ]
 }

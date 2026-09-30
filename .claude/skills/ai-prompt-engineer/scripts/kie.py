@@ -10,6 +10,10 @@ Needs KIE_API_KEY in the environment (an environment secret; never pasted in cha
         MODEL: nano-banana-pro | nano-banana-2 |
                gpt-image-2-text-to-image | gpt-image-2-image-to-image (GPT Image 2) |
                gpt-image-2-5-sunburst-text-to-image | gpt-image-2-5-sunburst-image-to-image
+  kie.py kling-omni --prompt-file P --image URL --duration 3-15 [--no-audio] [--out FILE]
+        Kling 3.0 Omni image-to-video (`kling-3.0-omni/image-to-video`, 1080p, aspect auto = the
+        9:16 start image, prefer_multi_shots false, audio on) — the same model as the Kling
+        connector; used for the Kling fallback on `stryde-three-regrets` (2026-09-28).
   kie.py seedance --prompt-file P --ref-image URL ... [--ref-audio URL ...] [--ref-video URL ...]
         [--duration 10] [--no-audio] [--out FILE]
   kie.py kling --prompt-file P --image URL [--end-image URL] [--duration 5] [--out FILE]
@@ -123,6 +127,9 @@ def main():
     i = sub.add_parser("image"); i.add_argument("model", choices=IMAGE_MODELS)
     i.add_argument("--prompt-file", required=True); i.add_argument("--ref", nargs="*", default=[])
     i.add_argument("--plate", action="store_true", help="location/property plate: 16:9")
+    ko = sub.add_parser("kling-omni"); ko.add_argument("--prompt-file", required=True)
+    ko.add_argument("--image", required=True); ko.add_argument("--duration", type=int, required=True)
+    ko.add_argument("--no-audio", action="store_true"); ko.add_argument("--out")
     i.add_argument("--out")
     s = sub.add_parser("seedance"); s.add_argument("--prompt-file", required=True)
     s.add_argument("--ref-image", nargs="+", required=True); s.add_argument("--ref-audio", nargs="*", default=[])
@@ -153,6 +160,19 @@ def main():
         if a.out:
             res, rc = wait(task, a.out); res["model"] = "kling-3.0/video"; print(json.dumps(res, indent=2)); sys.exit(rc)
         print(json.dumps({"taskId": task, "model": "kling-3.0/video"})); return
+    if a.cmd == "kling-omni":
+        if not 3 <= a.duration <= 15:
+            sys.exit(json.dumps({"error": "Kling duration must be 3-15s, stated (E6)"}))
+        if len(prompt) > 2500:
+            sys.exit(json.dumps({"error": f"prompt {len(prompt)} chars; the §35 ceiling is 2,500"}))
+        # Kie requires aspect_ratio "auto" for a single start image (measured 2026-09-28: 422);
+        # the 9:16 start image sets the 9:16 output.
+        inp = {"prompt": prompt, "image_urls": [as_url(a.image)], "duration": a.duration,
+               "resolution": "1080p", "aspect_ratio": "auto", "audio": not a.no_audio,
+               "prefer_multi_shots": False}
+        task = create("kling-3.0-omni/image-to-video", inp)
+        res, rc = wait(task, a.out); res["model"] = "kling-3.0-omni/image-to-video"
+        print(json.dumps(res, indent=2)); sys.exit(rc)
     if a.cmd == "image":
         field, cap = IMAGE_MODELS[a.model]
         refs = [as_url(r) for r in a.ref]
