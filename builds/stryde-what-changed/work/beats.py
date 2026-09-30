@@ -141,7 +141,8 @@ NBP, NB2 = "nano_banana_pro", "nano_banana_2"
 REFS = {"R1": ("R1-MAUREEN sheet", "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"), "R2": ("R2-DESMOND sheet", "9f0903d2-b148-4273-93b6-e4227a87d9f6"),
         "P1": ("P1-PROP-M plate", "520de2e7-e577-4afe-b18c-b79dbed0acf0"), "P2": ("P2-PROP-D plate", "68ddef76-e5b0-4947-966f-cda7e00335c2"),
         "P3": ("P3-STREET plate", "c19e14a9-5146-4444-8b83-e765dfdc3f8f"),
-        "P4": ("P4-KITCHEN plate", "0bedfad5-bf20-4ebd-a862-fed90b55601a")}
+        "P4": ("P4-KITCHEN plate", "0bedfad5-bf20-4ebd-a862-fed90b55601a"),
+        "K9": ("B09-BR v1 (the sleeve and brace as already shown)", "f986eef2-5bbd-465a-920b-fd552b19e4e5")}
 B = {}  # beat -> (model, [ref keys], prompt)
 
 # ── Hook 1 ──────────────────────────────────────────────────────────────────────────
@@ -581,6 +582,38 @@ B["B09-BR"] = (NB2, ["R1", "P4"], photo([
     light("KITCH-L", "the table and her hand"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff, a grey sleeve, a black brace and a white tube").replace("the faded orange of the old photograph", "the black brace")],
     NO_FACE + ", no person beyond her hand, no product anywhere, no knee strap, no strap of any kind, no readable text, no labels, "
     "no brand names, no logos, no pharmacy boxes, no printing on the blister pack, no second hand, no extra fingers"))
+
+# B10a — "A sleeve squeezes the whole knee and leaves that band carrying everything." (user 'GIVE ME BROLLS HERE'). Her own view down
+# into her lap on a kitchen chair: she pulls the same grey sleeve (as in B09-BR) up over her bare knee, squeezing the whole joint. Faceless.
+B["B10a"] = (NB2, ["R1", "P4", "K9"], photo([
+    "A snapshot from a phone held straight above her lap, looking down, as she sits on a wooden kitchen chair. Both her hands are "
+    "pulling a plain grey knit knee sleeve up her right leg, caught halfway over the knee: the sleeve already hugs the top of the shin and "
+    "the lower half of the kneecap and is being drawn up over the rest, the knit stretched tight and squeezing the whole joint evenly all the "
+    "way round, the thin skin puckering slightly at its edges. Close: her two hands, the sleeve and the bare knee fill the frame, the "
+    "navy skirt pushed up above the knee, the kitchen floor tiles below.",
+    R1_BODY + " " + R1_LEGS + " Her hands: slim, pale, faintly freckled older skin, a plain gold wedding ring, the dusty-pink cardigan cuffs at the wrists. The sleeve is the same plain grey knit knee sleeve as on the table in the attached photo.",
+    KITCHEN,
+    angle("B10a", "her knee and the sleeve"),
+    focus("everything", deep=True),
+    light("KITCH-L", "her knee and hands"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff, a navy skirt and a grey knit sleeve").replace("the faded orange of the old photograph", "the grey sleeve")],
+    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no strap of any kind, no brace, no readable text, no labels, "
+    "no logos, no second person, no extra hands, no extra fingers, no wrong number of legs"))
+
+# B10b — "A hinged brace stops the knee going sideways, and it was never going sideways." (user 'GIVE ME BROLLS HERE'). High
+# three-quarter CU on the table: her hands try to bend the same black hinged brace (as in B09-BR) sideways at its metal hinge; it will not.
+B["B10b"] = (NB2, ["R1", "P4", "K9"], photo([
+    "A snapshot from a phone held up high, looking down at an angle at the pale-oak kitchen table. The same bulky black hinged knee "
+    "brace as in the attached photo lies on the linen runner, its two metal side hinges showing. Her two hands hold it at either end "
+    "of one metal hinge and push to bend it sideways, and it does not give: the metal side bar stays dead straight, her knuckles "
+    "whitening slightly with the effort. Close-up: her hands and the brace fill the frame, the table and the jug of flowers soft behind.",
+    "Her hands: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, thin skin over the "
+    "knuckles, a plain gold wedding ring, the dusty-pink cardigan cuffs at the wrists.",
+    KITCHEN,
+    angle("B10b", "her hands and the brace"),
+    focus("the metal hinge", deep=False).replace("the room behind", "the table behind"),
+    light("KITCH-L", "her hands and the brace"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff and a black brace").replace("the faded orange of the old photograph", "the brushed metal hinge")],
+    NO_FACE + ", no person beyond her hands, no product anywhere, no knee strap, no readable text, no labels, no brand names, no logos, "
+    "no second person, no extra hands, no extra fingers, no bent metal"))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)

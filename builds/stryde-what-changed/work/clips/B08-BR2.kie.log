@@ -1,1 +1,12 @@
 {"taskId": "85027d9776c9cdeb4ec5b01f259e6436", "created": true}
+{
+  "taskId": "85027d9776c9cdeb4ec5b01f259e6436",
+  "state": "success",
+  "credits": 54.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/85027d9776c9cdeb4ec5b01f259e6436_1_1790771241_3374.mp4"
+  ],
+  "saved": "clips/B08-BR2_v1.mp4",
+  "model": "kling-3.0/video"
+}

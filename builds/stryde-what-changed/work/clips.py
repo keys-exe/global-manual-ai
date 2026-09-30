@@ -473,7 +473,40 @@ B["B08-BR2"] = clip("B08-BR2",
            {"risk": "a logo or stripes appear on the boots", "prevented_by": "'no logos on the boots, no stripes, no swoosh'"},
            {"risk": "a face or body enters the frame", "prevented_by": "'no face, no person entering the frame', hand and boots only"}])
 
-START = {"B08-BR2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_113626_ed25dfaf-eb63-4715-8c55-3f29b1f75f53.png",
+# B06 video gen 3 (user CONFIRM on B06 after the §22X ask, 2026-09-30) from image v6: whole leg mid-step, white-gold wave-fronts
+# inside the thigh, impact flare with rings and a particle swirl at the knee; pip (host bottom-left). First half of the line,
+# "Seventeen times your bodyweight is still arriving, every step," ≈ 2.9 s → 4 s. v2's arrows are gone with the new image.
+B["B06"] = clip("B06",
+    "A premium 3D anatomical model of a whole leg mid-step on a near-black field, low three-quarter, the knee upper right: curved "
+    "white-gold wave-fronts of light inside the thigh, a hot glow in the knee joint and an impact flare with rings of light and a swirl "
+    "of glowing particles at the patellar tendon below the kneecap, all inside the translucent body shell.",
+    "Already under load on the first frame, the leg itself stays where it is. The curved wave-fronts of light TRAVEL DOWN through the "
+    "inside of the thigh one after another towards the knee, like pulses of force, about one arriving every second; as each one reaches "
+    "the knee the flare at the tendon below the kneecap bursts brighter, a new ring of light ripples out from it and fades, and the "
+    "particle swirl turns faster for a moment, then settles. The thigh tenses slightly with each arrival. The flare stays on its one spot.",
+    "no wave-fronts leaving the leg, no light outside the body shell, no energy flying in from outside, no second spot, no glow down the shin, "
+    "no leg moving, no second limb, no text, no numbers, no camera orbit, no zoom, no slow motion",
+    2.9, hi=6, anat=True,
+    risks=[{"risk": "the wave-fronts morph, multiply or leave the leg", "prevented_by": "'travel down through the inside of the thigh', HOLD-C + NEG-WARP-C, 'no wave-fronts leaving the leg, no light outside the body shell'"},
+           {"risk": "the leg moves or the camera orbits", "prevented_by": "'the leg itself stays where it is', locked-off camera, 'no leg moving, no camera orbit'"},
+           {"risk": "the flare wanders or a second spot appears", "prevented_by": "'the flare stays on its one spot', 'no second spot, no glow down the shin'"}])
+
+# B09-BR image v1 (user CONFIRM 2026-09-30): Maureen's kitchen table, grey sleeve, black hinged brace, white gel tube, blister pack
+# under her hand. "Which is why most of what gets sold for this cannot work." ≈ 3.2 s → 4 s.
+B["B09-BR"] = clip("B09-BR",
+    "An older white woman's hand in a dusty-pink cardigan cuff, a gold wedding ring, resting on a blister pack of white tablets on a "
+    "wooden kitchen table, beside a plain white gel tube, a grey knit knee sleeve and a black hinged knee brace on a linen runner.",
+    "Already moving on the first frame: her hand slides the blister pack a little way into line beside the gel tube, lets go, and "
+    "comes to rest flat on the table beside it — one unhurried movement, about two seconds. The four things stay exactly where they are.",
+    "no second hand, no face, no person entering the frame, no picking anything up, no tablets popping out, no readable text, no labels, "
+    "no logos, no extra fingers, no objects moving on their own",
+    3.2, hi=5,
+    risks=[{"risk": "fingers warp or multiply on the pack", "prevented_by": "one slide and let go, HOLD-C + NEG-WARP-C, 'no extra fingers'"},
+           {"risk": "text or labels appear on the tube or pack", "prevented_by": "'no readable text, no labels, no logos'"},
+           {"risk": "the other objects drift or morph", "prevented_by": "'the four things stay exactly where they are', 'no objects moving on their own'"}])
+
+START = {"B09-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_122112_f986eef2-5bbd-465a-920b-fd552b19e4e5.png",
+         "B08-BR2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_113626_ed25dfaf-eb63-4715-8c55-3f29b1f75f53.png",
          "B06b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_120637_827d2dc0-4a1e-44f8-a542-35ccb0fd7320.png",
          "B08b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_115249_bc7a2b7d-06a8-444e-bf7a-4a7e604d9123.png",
          "B08c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_115249_63775ae4-a1ed-4292-9094-ad0930a4f2d6.png",
@@ -501,7 +534,7 @@ START = {"B08-BR2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9i
          "B04c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_211843_6ae8e4ac-2507-4735-9b38-7f1edc3a2b07.png",
          "B04b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_211843_dc076019-ac3b-475f-a315-f311f4d298f0.png",
          "B04a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_205729_cf751279-1d57-43d5-9b56-f8b0adbb16f5.png",
-         "B06": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_215836_f898adbd-fc7c-47b3-9528-088a1df6aa36.png",
+         "B06": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_120636_d2f3cfb3-87cd-4895-938a-4c42ce7d829b.png",
          "B06-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_215145_b3e86d93-f337-4226-9feb-1ae2a35a886e.png"}
 
 if __name__ == "__main__":
