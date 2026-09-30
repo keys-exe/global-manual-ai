@@ -3,30 +3,31 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"act4_first_look\",\"subject\":\"THE SAME HAND and strap as in the start frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CU as in the start frame: level, front, the strap by the bright window. FOCUS: the shell and wordmark are sharp.\"},\"motion\":\"CONTINUING: her hand is already holding the strap up in a bottom-edge pinch. COMPLETING: one small slow tilt of the wrist, about two seconds — the shell turns a little towards the light so the chrome slides catch it, then back, the wordmark staying readable. UNRESOLVED: held up, still, facing the lens. The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum: nothing at uniform speed, motions settle slowly, the band lags.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, warm midday sun from the window on the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no fingers over the peaks or notch, no hand on the band, no strap swinging, no face, no glancing at the lens, no talking, no slow motion, no music, no shell bending, no extra or fused fingers, no strap growing or shrinking, no strap larger than her palm plus a thumb's width each side, no sound\"}",
+ "prompt": "{\"shot\":\"act4_first_look\",\"subject\":\"THE SAME HAND and brand-new strap as in the start frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CU as in the start frame: level, front, the strap by the bright window. FOCUS: the shell and wordmark are sharp.\"},\"motion\":\"CONTINUING: her hand already holds the strap up by the window in a bottom-edge pinch, the wordmark facing the lens. COMPLETING: one gentle presenting move, about two seconds — forearm and hand move as one piece, lifting the strap a few centimetres toward the lens as if showing it to someone, then settle; fingers and wrist locked, the strap square to the lens, never turning. UNRESOLVED: held up, still, facing the lens. The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum: nothing at uniform speed, motions settle slowly, the band lags.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, warm midday sun from the window on the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no fingers over the peaks or notch, no hand on the band, no strap swinging, no turning, no rotating, no wrist twist, no finger movement, no squeezing, no regripping, no strap tilting away, no face, no glancing at the lens, no talking, no slow motion, no music, no shell bending, no extra or fused fingers, no strap growing or shrinking, no strap larger than her palm plus a thumb's width each side, no sound\"}",
  "duration": 4,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_224727_4e69f838-bcb2-43f7-a7bf-49af649344f7.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_091516_8727cd8f-db44-41d0-9395-682529abac7f.png",
  "start_approved": true,
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 2,
+ "generation": 3,
  "risks": [
   {
-   "risk": "the shell reshapes as it turns",
-   "prevented_by": "small tilt only; HOLD-PC; shell never bends"
+   "risk": "the shell twists or flexes",
+   "prevented_by": "no turning, no wrist twist; rigid shell never bends"
   },
   {
-   "risk": "the wordmark garbles",
-   "prevented_by": "wordmark staying readable; no wordmark changing letters"
+   "risk": "the fingers regrip and fuse with the shell",
+   "prevented_by": "no finger movement, no regripping; HOLD-HC"
   },
   {
-   "risk": "fingers cover the peaks",
-   "prevented_by": "no fingers over the peaks or notch"
+   "risk": "the strap changes size as it nears the lens",
+   "prevented_by": "a few centimetres only; no strap growing or shrinking"
   }
  ],
  "audio": false,
- "fix_note": "frame fault: v1's shell was about twice her hand's width with a huge band loop (user Fix: make the product size fit into a knee) → new start frame v2 at true size, confirmed by the user; same small hold/turn, with no size change allowed, sound off"
+ "fix_note": "motion + frame fault: v2 turned the strap in her fingers, twisting and flexing the shell, and the old frame looked used (user Fixes: brand new product; change the hand motion) → new confirmed frame v3 (brand-new strap); motion is now one gentle lift toward the lens with fingers and wrist locked, no turning; sound off",
+ "user_go": "fix PR-037 (user in chat, 2026-09-30, on the v2 clip, card note: change the hand motion)"
 }

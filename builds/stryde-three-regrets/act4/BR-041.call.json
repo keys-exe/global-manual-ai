@@ -3,29 +3,31 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"act4_seat_press\",\"subject\":\"THE SAME LEG, HANDS AND STRAP as in the start frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CU as in the start frame: knee height, three-quarter front, the knee, the strap and both hands. FOCUS: her hands and the strap are sharp.\"},\"motion\":\"CONTINUING: both hands rest on the shell's two sides, the strap already seated with its notch under the kneecap. COMPLETING: one firm press, about two seconds — her palms press the shell snugly in place, then her fingers lift a little away. UNRESOLVED: her hands hover just off the shell, the strap seated exactly where it was. The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, warm midday sun from the window on the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no strap moving up or down, no strap sliding, no strap climbing onto the kneecap, no band pulled, no face, no talking, no slow motion, no music, no shell bending, no extra or fused fingers\"}",
- "duration": 3,
+ "prompt": "{\"shot\":\"act4_seat_press\",\"subject\":\"THE SAME WOMAN, BICYCLE, SAGE LINEN SHORTS AND STRAP as in the start frame, the strap on the bare skin below her right kneecap; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"MEDIUM as in the start frame: knee height, side view of the whole bicycle on the park path. FOCUS: she, the bike and the strap are sharp.\"},\"motion\":\"CONTINUING: she is already riding slowly along the path, left to right, right foot on the pedal near the top. COMPLETING: one slow pedal stroke, about three seconds — the right pedal goes down, the left comes up, chain and wheels turning with them, the bike moving a little right; the strap stays in place below the kneecap. UNRESOLVED: still pedalling gently, the whole bike in frame. The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum: nothing at uniform speed, motions settle slowly, fabric lags.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, warm late-morning sun from the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no strap moving up or down, no strap sliding, no strap climbing onto the kneecap, no face, no talking, no slow motion, no music, no shell bending, no extra or fused fingers, no bike leaving frame, no broken bike geometry, no extra pedal, no feet off the pedals, no strap moving onto the kneecap, no trousers, no fast pedalling, no sound\"}",
+ "duration": 4,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_204931_f67ced7e-f0bd-4a0c-9e1b-6e889ce0dd9f.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_091533_2bdec7ac-72eb-47a8-8e0d-1933c36dfef2.png",
  "start_approved": true,
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 2,
+ "generation": 3,
  "risks": [
   {
-   "risk": "the strap slides or moves under the press",
-   "prevented_by": "seated exactly where it was; no strap moving up or down, no strap sliding"
+   "risk": "the bike geometry breaks as the pedals turn",
+   "prevented_by": "chain and wheels turn with the pedals; no broken bike geometry, no extra pedal"
   },
   {
-   "risk": "it reads as tightening",
-   "prevented_by": "palms flat on the shell; no band being pulled or tightened"
+   "risk": "the strap slides as the knee bends",
+   "prevented_by": "strap stays exactly in place; no strap moving onto the kneecap"
   },
   {
-   "risk": "the strap moves down",
-   "prevented_by": "only up; no strap moving down"
+   "risk": "the bike rides out of frame",
+   "prevented_by": "one slow stroke, moving a little; no bike leaving frame"
   }
  ],
- "fix_note": "clip v1 was made from image v1 (strap at mid-shin, slide up); the user reworked the start image to v8 (strap already seated, both hands on the shell) and confirmed it → the action becomes one press into the seat, fingers lift, strap unmoved"
+ "fix_note": "frame fault: v2 clip was a hand press on the strap indoors (user Fixes: make the person cycle; shorts in the same colour and texture) → new start frame v11 cycling in sage shorts, confirmed by the user; motion rewritten as one slow pedal stroke with the strap staying put, sound off",
+ "audio": false,
+ "user_go": "make clip for BR-041 (user in chat, 2026-09-30) — go for gen 3, §22X"
 }
