@@ -270,3 +270,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **B14b v4** (Fix "FIX THE PRODUCT SHOWING THE STRAP"): edit of v3 — the whole strap now, the band one closed loop with its keeper, pad to the lens. Reads right.
 - **B14c video v1** (user "GO", 4 s, task `f7e3bbda…`): the glow calms, but **flaws: the camera pushes in a little and the strap creeps up to the kneecap in the last second.** Trim to the first ~2.5 s in the edit, or Fix.
 - Replaced versions moved to Old (docs + files).
+
+### 2026-09-30 — B13/B14b size Fixes; B14a confirmed → video v2; B14c video confirmed
+- **B13 v6** (Fix "FIX THE SIZE") and **B14b v5** (Fix "FIX SIZE"): edits of v5 / v4 with the strap made smaller (read as "too big", every earlier size note on this product — FP02). Both came out smaller, but by less than the two thirds asked (about 85%).
+- **B14a video v2** (image v4 confirmed; generation 2 — v1 slid and turned the strap, so this motion never touches it): the strap stays on the knee. Flaws: the camera drifts round towards the front, and her hands shift and clasp rather than lifting cleanly away.
+- **B14c video v1**: user CONFIRM → `status: use` (the board had it at `ready`).
