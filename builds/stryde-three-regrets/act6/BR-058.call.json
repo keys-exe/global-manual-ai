@@ -3,28 +3,30 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"act6_finger_line\",\"subject\":\"THE SAME HAND AND CARD as in the start frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"ECU as in the start frame: eye height, three-quarter to the pinboard. FOCUS: her fingertip and the line of ink are sharp.\"},\"motion\":\"CONTINUING: her forefinger rests under one handwritten line on the card. COMPLETING: one slow small trace, about two seconds — the fingertip moves a finger's width along under the line and stops. UNRESOLVED: her finger rests there, still. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, soft warm morning window light, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no readable words, no words forming, no card falling, no pins moving, no face, no talking, no music\"}",
+ "prompt": "{\"shot\":\"act6_finger_line\",\"subject\":\"THE SAME WOMAN, HANDS AND TYPED LETTER as in the start frame, rust shirt, at the wooden table; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"MEDIUM CLOSE as in the start frame: eye height across the table, her hands and the letter, her face cut at the eyes. FOCUS: her fingertip and the typed line are sharp.\"},\"motion\":\"CONTINUING: her right forefinger rests under one typed line near the bottom of the letter. COMPLETING: one slow small trace, about two seconds — the fingertip moves a finger's width along under the line and stops; her left hand stays still on the table. UNRESOLVED: her finger rests there, still, her head bowed slightly over the page. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum: nothing at uniform speed, motions settle slowly, fabric lags.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, soft daylight from the window on the left, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no talking, no music, no readable text, no letters forming words, no page turning, no paper sliding, no hand lifting off the page, no crying, no sound\"}",
  "duration": 4,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_225831_acb15513-9c08-4ac7-8323-b947c3910db3.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_231115_e695a1bd-1826-4f19-8a32-eb095650cd1a.png",
  "start_approved": true,
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "generation": 2,
  "risks": [
   {
-   "risk": "the handwriting turns readable or changes",
-   "prevented_by": "no readable words, no words forming"
+   "risk": "the text turns readable or changes",
+   "prevented_by": "no readable text, no letters forming words"
   },
   {
-   "risk": "the card falls off the board",
-   "prevented_by": "no card falling, no pins moving"
+   "risk": "the page slides or turns",
+   "prevented_by": "no page turning, no paper sliding"
   },
   {
-   "risk": "the finger fuses into the card",
-   "prevented_by": "HOLD-HC"
+   "risk": "the finger fuses into the page",
+   "prevented_by": "HOLD-HC; five separate fingers"
   }
- ]
+ ],
+ "audio": false,
+ "fix_note": "frame fault: v1 clip traced a handwritten card on a pinboard (user Fixes: a typed letter, then change camera angle) → new start frame v3 at the table, finger under a typed line, confirmed by the user; same small trace, sound off"
 }

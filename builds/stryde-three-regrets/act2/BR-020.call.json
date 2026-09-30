@@ -3,7 +3,7 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"act2_ken_kerb_step_up\",\"subject\":\"THE SAME MAN as in the start frame, flat cap, tan golf jacket, stone shorts, navy socks, brown brogues; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"FULL as in the start frame: low at kerb height, side-on. FOCUS: deep.\"},\"motion\":\"CONTINUING: left brogue already on top of the kerb, right hand gripping the lamp post, stiff right leg down on the road. COMPLETING: one slow hard step up, about three seconds — he pushes up through the left leg and pulls on the post, then the stiff right leg swings up and lands beside the left. UNRESOLVED: he stands on the pavement, holding the post, catching his breath. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, flat grey overcast daylight from the left, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no stepping back down, no right leg leading, no jump, no both feet in the air, no stumbling, no fall, no bus, no traffic, no glancing at the lens, no talking, no slow motion, no music, no sound\"}",
+ "prompt": "{\"shot\":\"act2_ken_kerb_step_up\",\"subject\":\"THE SAME MAN as in the start frame, flat cap, tan golf jacket, stone shorts, navy socks, brown brogues; unchanged in every respect. His face STRAINED first frame to last: brow knotted, jaw clenched, wincing — struggling, never smiling.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"FULL as in the start frame: low at kerb height, side-on. FOCUS: deep.\"},\"motion\":\"CONTINUING: left brogue already flat on top of the kerb, right hand gripping the lamp post, stiff right leg down on the road. COMPLETING: one slow laboured step up at walking pace, about four seconds, ONE FOOT ON THE GROUND AT EVERY MOMENT — he leans over the left foot, pulls on the post, the left knee straightens slowly and shakily, then the stiff right foot drags up onto the kerb and settles beside the left. UNRESOLVED: he stands hunched, gripping the post, catching his breath. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum: heavy and slow, nothing at uniform speed, weight transferring first, fabric lags.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, flat grey overcast daylight from the left, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no stepping back down, no right leg leading, no jump, no hop, no spring, no bounce, no both feet in the air, no leap, no athletic step, no quick step, no smile, no relaxed face, no fall, no fall, no bus, no traffic, no glancing at the lens, no talking, no slow motion, no music, no sound\"}",
  "duration": 5,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
@@ -12,21 +12,22 @@
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 2,
+ "generation": 3,
  "risks": [
   {
-   "risk": "he jumps or both feet leave the ground",
-   "prevented_by": "one step down, left foot lands first; no jump, no both feet in the air"
+   "risk": "he hops or springs up",
+   "prevented_by": "one foot on the ground at every moment; no jump, no hop, no spring"
   },
   {
-   "risk": "the right knee bends normally, losing the point",
-   "prevented_by": "stiff right leg follows; HOLD-HC"
+   "risk": "his face relaxes or smiles",
+   "prevented_by": "subject: strained face first to last; no smile"
   },
   {
-   "risk": "he walks out of frame",
-   "prevented_by": "UNRESOLVED: stands at the crossing edge; HOLD-C in frame"
+   "risk": "the right knee bends normally",
+   "prevented_by": "stiff right foot drags up; HOLD-HC"
   }
  ],
  "audio": false,
- "fix_note": "frame fault: v1 stepped down calmly (user Fixes: struggling, then step UP onto the kerb) → new start frame v3 stepping up onto the kerb, good leg first, strained, confirmed by the user; motion rewritten as one hard step up, sound off"
+ "fix_note": "motion fault: v2 hopped up onto the kerb with a neutral face (user Fix: must not jump, act natural, face struggling) → slow laboured step at walking pace with one foot always on the ground, the trailing foot dragging up, strain on his face from frame one; the confirmed start frame kept; sound off",
+ "user_go": "FIX BR-020 (user in chat, 2026-09-30, on the v2 clip)"
 }
