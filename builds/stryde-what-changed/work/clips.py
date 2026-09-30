@@ -765,7 +765,61 @@ B["B16c"] = clip("B16c",
 for _b in ("B15", "B16a", "B16c"):
     B[_b][0]["motion"] = B[_b][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the fabric of the hem lags; the strap never slides")
 
-START = {"B15": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_171207_7f990a90-9ac1-4b71-ae5d-db3100e64d28.png",
+# ── 2026-09-30 "CONFIRM AND GO": B15-BR, B16b, B17a, B17b (images confirmed). Learned on B13/B14b: a strap in a moving hand bends —
+# the hand holding it stays still; only the other hand / the person moves (§27G rigid product). ──
+B["B15-BR"] = clip("B15-BR",
+    "An older white woman standing on her stairs in a sage cardigan and denim skirt, one hand resting on her thigh above her bare knee, "
+    "the other hand held out open with a small black STRYDE knee strap lying on the palm, front face up.",
+    "Already moving on the first frame: the hand on her thigh slides slowly down and two fingertips come to rest flat just below her "
+    "kneecap, marking the spot — one slow movement, about a second and a half. The open hand holding the strap stays completely still. "
+    "The strap does not move at all — rigid, keeping its shape, size and wordmark on her palm.",
+    "no strap moving, no strap bending, no strap changing shape, no strap changing size, no wordmark changing, no hand closing over the "
+    "strap, no face, no second person, no extra hands, no extra fingers",
+    3.0, hi=5,
+    risks=[{"risk": "the strap bends in the hand (B13/B14b)", "prevented_by": "the holding hand stays still; rigid line; 'no strap bending/moving'"},
+           {"risk": "fingers merge with the knee", "prevented_by": "one slow slide, HOLD-C + NEG-WARP-C, 'no extra fingers'"},
+           {"risk": "the camera moves", "prevented_by": "locked-off tripod clause"}])
+B["B16b"] = clip("B16b",
+    "A British surgeon of Pakistani heritage, late fifties, short black hair grey at the temples, navy scrubs and a grey fleece gilet, "
+    "seated at his desk in a consulting room, holding a small black STRYDE knee strap up in one hand, a knee model beside him.",
+    "Already on the first frame: he lifts his eyes from the strap to someone across the desk and gives a small, calm nod — one look up, "
+    "about a second and a half. His hand holding the strap stays completely still. The strap does not move at all — rigid, keeping its shape, size and wordmark.",
+    "no strap moving, no strap bending, no strap changing shape, no wordmark changing, no looking at the camera, no talking, no smiling "
+    "for the camera, no second person, no extra hands, no extra fingers",
+    3.0, hi=5,
+    risks=[{"risk": "the strap bends in his hand", "prevented_by": "the hand stays still; rigid line; 'no strap bending/moving'"},
+           {"risk": "he looks into the lens", "prevented_by": "'to someone across the desk', 'no looking at the camera'"},
+           {"risk": "face drifts from the character", "prevented_by": "one small look and nod only, HOLD-C"}])
+B["B17a"] = clip("B17a",
+    "A Black British man's strapped right knee seen front-on on his stairs, his navy tracksuit leg bunched above the bare knee, both his "
+    "hands at the two chrome-slide ends of a black STRYDE strap seated just below the kneecap.",
+    "Already moving on the first frame: both hands give the strap one light press into place, then let go and move away out of frame "
+    "to either side — one movement, about a second and a half. The strap does not move at all — rigid, keeping its shape, size and wordmark on the knee.",
+    "no strap moving, no strap sliding, no strap bending, no strap changing shape, no wordmark changing, no fabric falling over the "
+    "strap, no face, no extra hands, no extra fingers",
+    3.0, hi=5,
+    risks=[{"risk": "the strap moves with the hands", "prevented_by": "one light press then release; 'no strap moving/sliding'"},
+           {"risk": "the bunched trouser drops over it", "prevented_by": "'no fabric falling over the strap'"},
+           {"risk": "hands duplicate", "prevented_by": "HOLD-C + NEG-WARP-C, 'no extra hands'"}])
+B["B17b"] = clip("B17b",
+    "An older white woman's pale right leg seen front-on at knee height on her stairs, the hem of a denim skirt above, a black STRYDE "
+    "strap seated just below the kneecap, her white plimsoll on the bottom stair.",
+    "Already moving on the first frame: she steps down off the bottom stair onto the hall floor towards the lens — one ordinary step, "
+    "about a second — then stands. The strap does not move at all — rigid, keeping its shape, size and wordmark on her leg, never rolling down.",
+    "no strap moving, no strap rolling down, no strap sliding, no strap bending, no wordmark changing, no stumbling, no face, no camera "
+    "movement, no extra legs",
+    3.0, hi=5,
+    risks=[{"risk": "the strap slips (the line says it doesn't)", "prevented_by": "rigid line; 'no strap rolling down/sliding'"},
+           {"risk": "legs warp on the step", "prevented_by": "one ordinary step, HOLD-C + NEG-WARP-C, 'no extra legs'"},
+           {"risk": "the camera follows", "prevented_by": "locked-off tripod clause"}])
+for _b in ("B15-BR", "B16b", "B17a", "B17b"):
+    B[_b][0]["motion"] = B[_b][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "fabric lags a little; the strap never moves")
+
+START = {"B15-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172430_65c0e88d-6f35-4e1e-8179-c59137a63188.png",
+         "B16b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172428_cd78f594-03a3-464c-89d0-0bb10b8647fc.png",
+         "B17a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172428_558e9117-34fa-4372-915b-a77ceed91aad.png",
+         "B17b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172429_9cd0c861-73b5-4458-b5f3-7605104c44d8.png",
+         "B15": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_171207_7f990a90-9ac1-4b71-ae5d-db3100e64d28.png",
          "B16a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_171208_c47a0262-949a-4916-b2b9-f3a4f299e573.png",
          "B16c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_171206_2b9f648e-cf29-49e9-8c84-49836ab0329d.png",
          "B14c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_163337_ba5e6993-4e59-4bf8-8ec8-9aeb85e5a9de.png",

@@ -1,0 +1,33 @@
+{
+ "beat": "B16b",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b16b\",\"subject\":\"A British surgeon of Pakistani heritage, late fifties, short black hair grey at the temples, navy scrubs and a grey fleece gilet, seated at his desk in a consulting room, holding a small black STRYDE knee strap up in one hand, a knee model beside him. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already on the first frame: he lifts his eyes from the strap to someone across the desk and gives a small, calm nod — one look up, about a second and a half. His hand holding the strap stays completely still. The strap does not move at all — rigid, keeping its shape, size and wordmark. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; fabric lags a little; the strap never moves; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no strap moving, no strap bending, no strap changing shape, no wordmark changing, no looking at the camera, no talking, no smiling for the camera, no second person, no extra hands, no extra fingers, no music, no speech, no slow motion\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172428_cd78f594-03a3-464c-89d0-0bb10b8647fc.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the strap bends in his hand",
+   "prevented_by": "the hand stays still; rigid line; 'no strap bending/moving'"
+  },
+  {
+   "risk": "he looks into the lens",
+   "prevented_by": "'to someone across the desk', 'no looking at the camera'"
+  },
+  {
+   "risk": "face drifts from the character",
+   "prevented_by": "one small look and nod only, HOLD-C"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}

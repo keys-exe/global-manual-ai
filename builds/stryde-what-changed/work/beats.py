@@ -1180,6 +1180,24 @@ B["B17c"] = (NB2, ["R2", "P2"], photo([
     "under the fabric, no shorts, no bare legs, no logos on the tracksuit, no stripes, " + PLAIN_SHOES + ", no walking stick, no second "
     "person, no extra legs"))
 
+# B17c v3 — "and nobody can see it." User Fix 'FIX THIS, GIVE ME DIFFERENT BROLL' (v2: Desmond on his stairs in tracksuit bottoms).
+# Three-quarter at her kitchen table: Maureen in long navy trousers, legs crossed, a cup of tea in both hands — the fabric smooth over
+# both knees, nothing shows. Framed from the chin down. No product in frame.
+B["B17c"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone at eye level across her kitchen table, three-quarter on. She sits on a wooden chair turned a little out "
+    "from the pale-oak table, her legs crossed at the knee, holding a mug of tea in both hands in her lap, about to lift it. The frame "
+    "holds her from just below the chin down to her plimsolls: the cardigan, her hands round the mug, and both legs in long navy "
+    "trousers. The soft trouser fabric falls smooth and loose over both knees — no bulge, no outline, nothing showing underneath. An "
+    "ordinary, easy afternoon.",
+    R1_BODY + " Wearing a sage-green cardigan over a white T-shirt, long navy wide-leg cotton trousers to the ankle and white canvas "
+    "plimsolls. Her hands: slim, pale, faintly freckled older skin, a plain gold wedding ring.",
+    KITCHEN,
+    angle("B17c", "her sitting at the kitchen table"),
+    focus("her crossed knees and hands", deep=False).replace("the room behind", "the kitchen behind"),
+    light("KITCH-R", "her and the table"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a sage-green cardigan and long navy trousers").replace("the faded orange of the old photograph", "the mug of tea")],
+    NO_FACE + ", no product anywhere, no knee strap visible, no bulge under the trousers, no outline of anything under the fabric, no "
+    "shorts, no skirt, no bare legs, no readable text on the mug, no logos, no second person, no extra hands, no extra fingers, no extra legs"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
