@@ -1811,7 +1811,7 @@
   "subject": "R1",
   "location": "L-M-STAIRS",
   "story_day": "M-D2",
-  "framing": "ECU from the side: the strap seated on her right knee, the kneecap's lower edge sitting in the notch",
+  "framing": "ECU front-on: the strap seated on her right knee, the kneecap's lower edge sitting in the notch (made from worn_front.jpg)",
   "action": "her knee flexes a little and straightens",
   "pace": "one flex, about a second",
   "camera": "locked off",
@@ -1828,10 +1828,10 @@
   "duration": "pending-master",
   "angle": {
    "height": "eye",
-   "side": "profile",
+   "side": "front",
    "fg": "clean",
    "scale": "ECU",
-   "why": "profile: the kneecap in the notch"
+   "why": "front-on: the kneecap in the notch (FP03)"
   },
   "focus": {
    "plane": "product",
@@ -1858,11 +1858,11 @@
   "subject": "R2",
   "location": "L-D-STAIRS",
   "story_day": "D-D2",
-  "framing": "from the side, waist-down: Desmond comes down one stair easily, the strap on his right knee",
+  "framing": "front-on CU: Desmond's strapped right knee as he stands on his stair, about to step down (made from worn_front.jpg)",
   "action": "one easy step down",
   "pace": "one step, about a second",
   "camera": "locked off",
-  "staging": "stairs: side, waist-down, camera still, hand on the rail visible",
+  "staging": "stairs: front-on knee CU, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "worn",
@@ -1875,10 +1875,10 @@
   "duration": "pending-master",
   "angle": {
    "height": "eye",
-   "side": "profile",
+   "side": "front",
    "fg": "clean",
-   "scale": "MEDIUM",
-   "why": "profile: the knee working with the strap on"
+   "scale": "CU",
+   "why": "front-on: the knee working with the strap on (FP03)"
   },
   "focus": {
    "plane": "product",
@@ -1952,7 +1952,7 @@
   "subject": "R2",
   "location": "L-STREET",
   "story_day": "D-D2",
-  "framing": "knee-and-shin only, walking toward the lens on the pavement, the strap staying put",
+  "framing": "knee-and-shin only, walking toward the lens on the pavement, the strap staying put (made from worn_front.jpg)",
   "action": "three walking steps toward the lens",
   "pace": "one step per second, normal walking speed",
   "camera": "locked off",
