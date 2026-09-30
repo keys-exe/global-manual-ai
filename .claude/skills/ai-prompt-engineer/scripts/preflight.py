@@ -9,7 +9,10 @@ CALL.json describes one paid video call exactly as it will be sent:
     "beat": "BF-SC02-SH03",
     "connector": "seedance" | "kling",
     "mode": 1-5,                       # §18A mode lock
-    "kind": "dialogue" | "listener" | "insert" | "broll" | "multi",
+    "kind": "dialogue" | "listener" | "insert" | "broll" | "multi" | "voice_master",
+                                       # voice_master = a §24I part 7 neutral film voice master (Seedance, 10s, the
+                                       # face-only sheet crop as the one ingredient, no audio in): the film-shot strings
+                                       # (rig, SERIES-LOOK, drama, state, business) do not apply — the §24I recipe does
     "prompt": "<the full prompt text, or a Kling §35/§36 JSON string>",
     "duration": 8,
     "resolution": "720p", "aspect_ratio": "9:16",
@@ -225,6 +228,66 @@ def run_beat_video(c, p, check):
             check("fast comes from the edit, never the legs (§27G)", not f, f.group(0) if f else "")
 
 
+def film_shot(c, p, conn, mode, kind, film, check):
+    """§24K/§30J/§24H film-shot checks (sections 5–6), skipped on a §24I voice master."""
+    # 5. Motion (§27G / §24K)
+    rigs = [r for r, s in RIGS.items() if s in p]
+    sm = c.get("subject_motion") or ("travels" if WALK.search(p) else "still")
+    series = film and mode == 4 and conn == "seedance"   # ads stay phone style (§24N, V7.69.1)
+    if film or series:
+        check("one F-rig", len(rigs) == 1, ",".join(rigs) or "none found")
+        bad = [r for r in rigs if (sm == "in_place" and r in NOT_IN_PLACE) or (sm == "travels" and r in NOT_TRAVELS)]
+        check("camera or subject moves, never both — except F5/F9 on a walk (§24K, §24N)", not bad, f"subject {sm}, rig {','.join(rigs)}")
+        if "F5" in rigs:
+            check("F5 framed waist-up", "waist" in p.lower())
+        if "F9" in rigs:
+            check("F9: a walk in profile", sm == "travels" and "profile" in p.lower(), f"subject {sm}")
+        if set(rigs) & SEEDANCE_ONLY:
+            check("F6–F10 on Seedance only (§24N)", conn == "seedance", conn)
+    if series:
+        check("SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] in p)
+    if not film:
+        check("ads stay phone style: no SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] not in p)
+        check("ads stay phone style: no F6–F10 (§24N)", not any(sig in p for r, sig in RIGS.items() if r in SEEDANCE_ONLY))
+    if kind == "multi":
+        check("MULTI-SHOT only when nobody moves", sm == "still", f"subject {sm}")
+
+    # 5b. Focus (§30J)
+    rk = c.get("rack")
+    if rk:
+        check("rack: cue named", bool(rk.get("cue")))
+        check("rack: subject still", sm == "still", f"subject {sm}")
+        if film:
+            check("rack: no travelling rig", not (set(rigs) & TRAVEL_RIGS), ",".join(rigs))
+            check("rack: pull written", "focus pulls" in p or "pulls focus" in p)
+        else:
+            check("rack: Mode 1 tap-to-focus", "tap" in p.lower(), "phones tap to focus — never a clean pull (§30J)")
+        check("rack: one focus change", len(re.findall(r"focus (?:pulls|shifts|jumps)", p)) <= 1)
+    if film:
+        check("FOCUS-LINE", "FOCUS:" in p, "the shot names what is sharp (§30J)")
+
+    # 6. Film strings
+    if film:
+        check("INHERIT string", SIG["INHERIT-FILM" if mode == 4 else "INHERIT-ANIM"] in p)
+        check("NEG-SCENECUT", SIG["NEG-SCENECUT"] in p)
+        check("NEG-FILM / NEG-ANIMFILM", SIG["NEG-FILM" if mode == 4 else "NEG-ANIMFILM"] in p)
+        check("NEG-SOUND (clips carry dialogue only, §24M)", SIG["NEG-SOUND"] in p)
+        if kind in ("dialogue", "listener", "multi", "broll") and kind != "insert":
+            check("STATE-CARRY", SIG["STATE-CARRY"] in p)
+            check("NEG-DRAMA", SIG["NEG-DRAMA"] in p)
+        if kind in ("dialogue", "listener", "multi"):
+            check("BUSINESS-LINE", SIG["BUSINESS-LINE"] in p)
+        if kind in ("dialogue", "multi"):
+            for k in ("DRAMA-DELIVERY", "PLAYING", "VOICE NOW"):
+                check(k, SIG[k] in p)
+            check("AUD string", SIG["AUD-FILM" if mode == 4 else "AUD-ANIM"] in p)
+            check("voice master attached", bool(c.get("audios")), "audios_list empty")
+        if kind == "listener":
+            check("LISTEN-LINE", SIG["LISTEN-LINE"] in p)
+        if kind == "multi":
+            check("MULTI-FILM", SIG["MULTI-FILM"] in p)
+
+
 def run(c):
     if str(c.get("kind", "")).lower() == "image":
         return run_image(c)
@@ -295,62 +358,20 @@ def run(c):
     check("no banned word 'cinematic'", not BANNED.search(p))
     check("no streamer, series or studio name (§24N, §10A)", not STREAMERS.search(p), ",".join(sorted(set(m.group(0) for m in STREAMERS.finditer(p)))))
 
-    # 5. Motion (§27G / §24K)
-    rigs = [r for r, s in RIGS.items() if s in p]
-    sm = c.get("subject_motion") or ("travels" if WALK.search(p) else "still")
-    series = film and mode == 4 and conn == "seedance"   # ads stay phone style (§24N, V7.69.1)
-    if film or series:
-        check("one F-rig", len(rigs) == 1, ",".join(rigs) or "none found")
-        bad = [r for r in rigs if (sm == "in_place" and r in NOT_IN_PLACE) or (sm == "travels" and r in NOT_TRAVELS)]
-        check("camera or subject moves, never both — except F5/F9 on a walk (§24K, §24N)", not bad, f"subject {sm}, rig {','.join(rigs)}")
-        if "F5" in rigs:
-            check("F5 framed waist-up", "waist" in p.lower())
-        if "F9" in rigs:
-            check("F9: a walk in profile", sm == "travels" and "profile" in p.lower(), f"subject {sm}")
-        if set(rigs) & SEEDANCE_ONLY:
-            check("F6–F10 on Seedance only (§24N)", conn == "seedance", conn)
-    if series:
-        check("SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] in p)
-    if not film:
-        check("ads stay phone style: no SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] not in p)
-        check("ads stay phone style: no F6–F10 (§24N)", not any(sig in p for r, sig in RIGS.items() if r in SEEDANCE_ONLY))
-    if kind == "multi":
-        check("MULTI-SHOT only when nobody moves", sm == "still", f"subject {sm}")
-
-    # 5b. Focus (§30J)
-    rk = c.get("rack")
-    if rk:
-        check("rack: cue named", bool(rk.get("cue")))
-        check("rack: subject still", sm == "still", f"subject {sm}")
-        if film:
-            check("rack: no travelling rig", not (set(rigs) & TRAVEL_RIGS), ",".join(rigs))
-            check("rack: pull written", "focus pulls" in p or "pulls focus" in p)
-        else:
-            check("rack: Mode 1 tap-to-focus", "tap" in p.lower(), "phones tap to focus — never a clean pull (§30J)")
-        check("rack: one focus change", len(re.findall(r"focus (?:pulls|shifts|jumps)", p)) <= 1)
-    if film:
-        check("FOCUS-LINE", "FOCUS:" in p, "the shot names what is sharp (§30J)")
-
-    # 6. Film strings
-    if film:
-        check("INHERIT string", SIG["INHERIT-FILM" if mode == 4 else "INHERIT-ANIM"] in p)
-        check("NEG-SCENECUT", SIG["NEG-SCENECUT"] in p)
-        check("NEG-FILM / NEG-ANIMFILM", SIG["NEG-FILM" if mode == 4 else "NEG-ANIMFILM"] in p)
-        check("NEG-SOUND (clips carry dialogue only, §24M)", SIG["NEG-SOUND"] in p)
-        if kind in ("dialogue", "listener", "multi", "broll") and kind != "insert":
-            check("STATE-CARRY", SIG["STATE-CARRY"] in p)
-            check("NEG-DRAMA", SIG["NEG-DRAMA"] in p)
-        if kind in ("dialogue", "listener", "multi"):
-            check("BUSINESS-LINE", SIG["BUSINESS-LINE"] in p)
-        if kind in ("dialogue", "multi"):
-            for k in ("DRAMA-DELIVERY", "PLAYING", "VOICE NOW"):
-                check(k, SIG[k] in p)
-            check("AUD string", SIG["AUD-FILM" if mode == 4 else "AUD-ANIM"] in p)
-            check("voice master attached", bool(c.get("audios")), "audios_list empty")
-        if kind == "listener":
-            check("LISTEN-LINE", SIG["LISTEN-LINE"] in p)
-        if kind == "multi":
-            check("MULTI-FILM", SIG["MULTI-FILM"] in p)
+    # 4a. §24I part 7 — a neutral film voice master: its own recipe, not a film shot
+    if kind == "voice_master":
+        check("voice master on Seedance", conn == "seedance", conn)
+        check("voice master 10s (§24I)", d == 10, str(d))
+        imgs = [f for f in c.get("files", []) if not MUSIC_FILE.search(str(f))]
+        check("one ingredient: the face-only reference", len(c.get("files", [])) == 1, f"{len(c.get('files', []))} files")
+        check("no audio in (it is the master)", not c.get("audios"), ",".join(map(str, c.get("audios") or [])))
+        check("dialogue on", c.get("generate_audio") is True and bool(c.get("dialogue")))
+        check("neutral delivery (§24I part 7)", "no emotion coloured into the words" in p)
+        check("AUD string", SIG["AUD-FILM" if mode == 4 else "AUD-ANIM"] in p)
+        check("one speaker only", "one speaker only" in p.lower())
+        check("no DRAMA-DELIVERY on a master (who, never how)", SIG["DRAMA-DELIVERY"] not in p)
+    else:
+        film_shot(c, p, conn, mode, kind, film, check)
 
     # 7. Dialogue: verbatim and inside the word budget
     dl = c.get("dialogue")
