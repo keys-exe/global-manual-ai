@@ -1,9 +1,13 @@
 {
- "model": "nano_banana_2",
+ "model": "nano_banana_pro",
  "refs": [
   [
    "S1-SURGEON sheet",
    "7569a690-7398-49cb-ba09-4da6e7efd4ad"
+  ],
+  [
+   "R1-MAUREEN sheet",
+   "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"
   ],
   [
    "P5-CONSULT plate",
