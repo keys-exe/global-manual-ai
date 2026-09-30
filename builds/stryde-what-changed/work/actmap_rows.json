@@ -895,13 +895,13 @@
   "key": "mile",
   "function": "not what you did",
   "subject": "R1",
-  "location": "L-STREET",
+  "location": "L-M-STAIRS",
   "story_day": "M-D1",
-  "framing": "MEDIUM on the pavement: Maureen walks slowly along her street pulling a tartan shopping trolley, an ordinary unathletic errand",
-  "action": "a few slow steps along the pavement, the trolley rolling behind",
-  "pace": "an ordinary slow walking pace",
+  "framing": "CU in her understairs cupboard: a pair of plain white running trainers, still laced together with the shop tag on, dusty and never worn, beside her own worn plimsolls; her hand pushes the cupboard door open",
+  "action": "the door swings open onto the unworn trainers",
+  "pace": "one slow door swing, about two seconds",
   "camera": "locked off",
-  "staging": "street: three-quarter from the front, full figure, camera still",
+  "staging": "cupboard floor, shoes and hand only, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "absent",
@@ -910,29 +910,29 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "v2 — user Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: her keys from the hall bowl)",
+  "notes": "v3 — user Fix 'GIVE ME DIFFERENT BROLL HERE' again (v1 keys from the hall bowl; v2 tartan shopping trolley on the street)",
   "duration": "pending-master",
   "angle": {
-   "height": "eye",
-   "side": "three-quarter",
+   "height": "overhead",
+   "side": "front",
    "fg": "clean",
-   "scale": "MEDIUM",
-   "why": "three-quarter = her everyday, nothing sporty about it"
+   "scale": "CU",
+   "why": "overhead = looking down into the cupboard at the unused trainers"
   },
   "focus": {
-   "plane": "eyes",
-   "dof": "medium",
+   "plane": "foreground",
+   "dof": "shallow",
    "rack": null,
    "moving_subject": false
   },
   "light": {
-   "source": "open overcast sky, morning",
+   "source": "Maureen's landing window, grey morning",
    "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 6500
   },
-  "face": true
+  "face": false
  },
  {
   "beat": "B08b",
@@ -944,11 +944,11 @@
   "subject": "R2",
   "location": "L-D-STAIRS",
   "story_day": "D-D1",
-  "framing": "CU seated on his bottom stair: Desmond's hands turn over an old, scuffed leather football on his lap, his bare knees below it",
-  "action": "his hands turn the ball over once",
-  "pace": "one slow turn, about two seconds",
+  "framing": "CU on a shelf in his hall: a row of small old amateur football trophies and a faded club pennant; Desmond's hand sets one tarnished trophy back in its place",
+  "action": "his hand sets the trophy down",
+  "pace": "one set-down, about a second",
   "camera": "locked off",
-  "staging": "seated, hands, ball and knees only, camera still",
+  "staging": "shelf, trophies and hand only, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "absent",
@@ -957,14 +957,14 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "v2 — user Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: over his shoulder straightening a team photo)",
+  "notes": "v3 — user Fix 'CHANGE THIS IMAGE' (v1 team photo over his shoulder; v2 old football on his lap)",
   "duration": "pending-master",
   "angle": {
-   "height": "high",
-   "side": "front",
+   "height": "eye",
+   "side": "three-quarter",
    "fg": "clean",
    "scale": "CU",
-   "why": "high = looking down at the ball he played with for thirty years"
+   "why": "three-quarter along the shelf = thirty years of trophies in a row"
   },
   "focus": {
    "plane": "hands",
