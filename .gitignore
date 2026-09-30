@@ -30,3 +30,4 @@ builds/*/voice/*.png
 builds/*/broll/renders/
 builds/**/edit/**/.*_caps/
 builds/*/broll/v*/*.png
+builds/*/hooks/*/*_v*.png

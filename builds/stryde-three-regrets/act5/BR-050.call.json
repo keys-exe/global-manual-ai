@@ -1,0 +1,31 @@
+{
+ "beat": "BR-050",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"act5_landing_ease\",\"subject\":\"THE SAME WOMAN as in the start frame, copper bob, white blouse, sage-green trousers, one strap on her right knee; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"MEDIUM as in the start frame: from halfway up the stairs, her on the landing. FOCUS: both knees and the strap are sharp.\"},\"motion\":\"CONTINUING: she stands at ease on the landing, arms loose at her sides, a soft half-smile. COMPLETING: one slow easy breath, about two seconds — her shoulders rise and settle, her half-smile warms a little. UNRESOLVED: she stands relaxed, both knees in view, hands away from the banister. The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, warm midday light on the landing, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no hand on the banister or rail, no stepping, no second strap, no strap on the left knee, no strap sliding, no big grin, no talking, no glancing at the lens, no shell bending, no music\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_223741_c1969154-92ca-40a7-96e0-454c385694d3.png",
+ "start_approved": true,
+ "pinned": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "her hand goes back to the banister",
+   "prevented_by": "arms loose, hands away; no hand on the banister, no reaching for the rail"
+  },
+  {
+   "risk": "she steps down",
+   "prevented_by": "one breath only; no stepping"
+  },
+  {
+   "risk": "the strap slides or a second appears",
+   "prevented_by": "HOLD-PC; no strap sliding, no second strap"
+  }
+ ],
+ "fix_note": "Image Fix: v2 frame had her hand on the banister and a stern face → new start frame at ease; motion reduced to one breath."
+}
