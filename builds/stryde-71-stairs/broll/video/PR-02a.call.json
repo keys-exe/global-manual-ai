@@ -1,0 +1,31 @@
+{
+ "beat": "PR-02a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"pr_02a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Camera fixed in place on a small tripod-like hold, only the faintest breath of movement, the frame never pans, tilts, follows or travels. Still at the cut.\",\"framing\":\"MCU as in the start frame, the doctor at his desk holding up the strap, the knee model behind.\"},\"motion\":\"The doctor turns the strap a little toward the camera in his hand over about a second, as if showing it to a patient across the desk, and holds it there with a slight nod. The black strap is one rigid moulded piece: it keeps its exact shape, size, two small peaks, silver buckle and white wordmark in every frame — it never bends, stretches, melts, grows or changes where it sits. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, skin, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no camera travelling, no cut, no music, no voice, no text, no captions, no strap changing shape, no strap changing size, no strap sliding, no second strap, no wordmark changing, no readable text other than the strap's wordmark, no strap twisting, no knee model moving, no readable text on the wall\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "broll/images/PR-02a_img_v3.png",
+ "start_approved": true,
+ "pinned": false,
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "strap twists or flops",
+   "prevented_by": "RIGID clause + no strap twisting"
+  },
+  {
+   "risk": "hand merges with the strap",
+   "prevented_by": "finger clause"
+  },
+  {
+   "risk": "face warps",
+   "prevented_by": "same person clause"
+  }
+ ]
+}

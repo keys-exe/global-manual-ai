@@ -293,8 +293,8 @@
   },
   {
    "beat": "PR-01a",
-   "phrase": "Over 200,000 people wear one now",
-   "key": "people",
+   "phrase": "Over 200,000",
+   "key": "Over",
    "max": 6,
    "layout": {
     "type": "full"
@@ -302,7 +302,7 @@
   },
   {
    "beat": "PR-01b",
-   "phrase": "Over 200,000 people wear one now",
+   "phrase": "people",
    "key": "people",
    "max": 6,
    "layout": {
@@ -311,8 +311,8 @@
   },
   {
    "beat": "PR-01c",
-   "phrase": "Over 200,000 people wear one now",
-   "key": "people",
+   "phrase": "wear one",
+   "key": "wear",
    "max": 6,
    "layout": {
     "type": "full"
@@ -320,8 +320,8 @@
   },
   {
    "beat": "PR-01d",
-   "phrase": "Over 200,000 people wear one now",
-   "key": "people",
+   "phrase": "now",
+   "key": "now",
    "max": 6,
    "layout": {
     "type": "full"

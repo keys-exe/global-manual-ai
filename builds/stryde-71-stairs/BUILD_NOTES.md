@@ -279,4 +279,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - Act 4 videos v1: M-01a through M-06a (work/video_act4.py), all pass preflight. Anatomy shots use a completely still camera.
     - The Old board is full (1 GB), so the R-03a and R-05a v1 videos stay on Current as earlier versions until the user decides (a second Old board?).
     - M-03a runs 8 s as one clip, not split: E6 needs 7.6 s, and the §27G 6 s cap applies to human motion, not an anatomy pulse.
+  - **Act 5 (2026-09-30).**
+    - The PR-01a–d plan phrases are split into "Over 200,000" / "people" / "wear one" / "now", so each montage clip gets its own cut. `--lengths` now has no failures (3 s each), and work/lengths_T2.json is refreshed.
+    - Act 5 videos v1 (work/video_act5.py), all pass preflight.
+      - PR-01b and PR-05b keep the strap hidden under the trousers.
+      - PR-04a jogs toward a locked camera and stays in frame.
+    - M-04a and M-04b are on the board.
+    - Kie's file host serves some finished renders at about 1 KB/s and drops the connection. A resumed curl join of R-02b came out corrupt, so it was deleted; P-01a v2 and R-02b now download clean from zero with getclean.py (scratchpad), which verifies the file decodes before it goes in.
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.

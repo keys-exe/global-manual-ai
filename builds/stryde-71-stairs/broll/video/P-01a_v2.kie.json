@@ -1,1 +1,9 @@
-{"taskId": "30c1a8cb78ea92ecb83908cada9fd5ec", "created": true}
+{
+  "taskId": "30c1a8cb78ea92ecb83908cada9fd5ec",
+  "state": "success",
+  "credits": 54.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/30c1a8cb78ea92ecb83908cada9fd5ec_1_1790768358_6257.mp4"
+  ]
+}

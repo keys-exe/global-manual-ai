@@ -1,0 +1,31 @@
+{
+ "beat": "PR-04a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"pr_04a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Camera fixed in place on a small tripod-like hold, only the faintest breath of movement, the frame never pans, tilts, follows or travels. Still at the cut.\",\"framing\":\"MEDIUM-FULL as in the start frame, on the red running track, the young woman jogging toward the camera.\"},\"motion\":\"She jogs steadily toward the camera, about two strides per second, arms swinging loosely, the strapped right knee lifting and landing smoothly; she is still fully in frame, a little closer, at the end. The black strap is one rigid moulded piece: it keeps its exact shape, size, two small peaks, silver buckle and white wordmark in every frame — it never bends, stretches, melts, grows or changes where it sits. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, skin, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no camera travelling, no cut, no music, no voice, no text, no captions, no strap changing shape, no strap changing size, no strap sliding, no second strap, no wordmark changing, no readable text other than the strap's wordmark, no sprinting, no running out of frame, no legs crossing wrongly, no people in the background changing\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "broll/images/PR-04a_img_v1.png",
+ "start_approved": true,
+ "pinned": false,
+ "pace": "brisk",
+ "subject_motion": "traveling",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "legs tangle while running at camera",
+   "prevented_by": "steady jog, locked camera, stays in frame (§27G walking at camera)"
+  },
+  {
+   "risk": "strap moves on the knee",
+   "prevented_by": "RIGID clause"
+  },
+  {
+   "risk": "background runners morph",
+   "prevented_by": "HOLD"
+  }
+ ]
+}
