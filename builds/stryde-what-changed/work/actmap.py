@@ -375,9 +375,9 @@ BB("B09-BR", A2, "Which is why most of what gets sold for this cannot work.", "s
    "one set-down, about a second", STILL, "table top, hands only, camera still", "no", "absent", "—", "NB2",
    HIGH, THR, "clean", "MEDIUM", "high = everything tried, laid out", "hands", "deep", L(KITCH, "L"), False, ledger="F6", notes="covers B09-TH; all unbranded, no print")
 BB("B11-BR", A2, "None of them are aimed at the spot.", "spot", "none of them touch the spot",
-   "R1", "L-KITCHEN", "M-D1", "CU front-on at knee height: seated at her kitchen table, Maureen's fingertip presses the one spot just below her bare kneecap, the sleeve, brace, gel and tablets lying unused on the table behind", "her fingertip presses the spot once and holds",
-   "one press, about a second", STILL, "seated: knee and hand in front, the things on the table soft behind, camera still", "no", "absent", "—", "NB2",
-   EYE, FRO, "clean", "CU", "front = the one exact spot, the remedies all off to the side", "foreground", "shallow", L(KITCH, "L"), False, ledger="F6", notes="covers B11-TH; user 2026-09-30 'BROLLS HERE' — her finger on the spot, the four remedies unused behind")
+   "ANAT", "—", "—", "ANAT-A front-on CU: around the knee, a faint grey sleeve squeezing the whole joint, the ghosted side bars of a hinged brace along both sides and a thin glossy film of gel on the skin — all of them around the knee, none reaching the one glowing spot on the tendon just below the kneecap", "the spot pulses once; the sleeve, the brace bars and the gel do nothing",
+   "one pulse", STILL, "none", "no", "absent", "—", "NB2",
+   EYE, FRO, "clean", "CU", "front = everything around the knee, the one spot still lit in the middle", "deep", "deep", L(ANAT, "L"), False, ledger="F6", notes="covers B11-TH; user 2026-09-30 'BROLLS HERE'; v2 Fix 'fix this, give me different image' (v1: her fingertip on the knee, the remedies on the table)")
 BB("B15-BR", A3, "The placement is the whole thing.", "placement", "placement, measured",
    "R1", "L-M-STAIRS", "M-D2", "ECU seated on her bottom stair: two fingers laid flat just below her kneecap, measuring the spot, the strap held ready in her other hand", "the strap's pad lowers onto the measured spot",
    "one placement, about two seconds", STILL, "seated, knee and hands only, camera still", "no", "held", "the pad and shell", "NBP",

@@ -615,7 +615,39 @@ B["B06"] = clip("B06",
            {"risk": "a second limb edge appears (seen in v3)", "prevented_by": "'no second limb', close framing on the one knee"}])
 B["B06"][0]["motion"] = B["B06"][0]["motion"].replace(", and the whole structure compresses a few degrees", "")
 
-START = {"B10c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140203_48b079aa-50b4-48f7-888a-f2c5779f802c.png",
+# B12 image v1 (user Confirm 2026-09-30): ANAT-A profile, the knee under load, the tendon spot below the kneecap glowing hot; pip.
+# "What that band actually needs" ≈ 1.6 s → 3 s.
+B["B12"] = clip("B12",
+    "A premium 3D anatomical model of a knee seen from the side on a near-black field: the thigh muscles, the kneecap and the patellar "
+    "tendon below it drawn taut, one tight spot on the tendon just below the kneecap glowing hot red-orange.",
+    "Already under load on the first frame, the knee holds its pose. One step's load arrives: [TARGET] draws a little tauter and the "
+    "spot below the kneecap pulses hotter and brighter over about a second, then eases back a little. The spot stays one tight spot.",
+    "no leg moving, no knee bending, no glow spreading down the shin, no second spot, no second limb, no text, no camera orbit, no zoom",
+    1.6, hi=4, anat=True,
+    risks=[{"risk": "the glow spreads down the shin", "prevented_by": "'The spot stays one tight spot', 'no glow spreading down the shin, no second spot'"},
+           {"risk": "the leg moves or bends", "prevented_by": "'the knee holds its pose', 'no leg moving, no knee bending', locked camera"},
+           {"risk": "a second limb appears", "prevented_by": "'no second limb', HOLD-C + NEG-WARP-C"}])
+B["B12"][0]["motion"] = B["B12"][0]["motion"].replace(", and the whole structure compresses a few degrees", "")
+
+# B12b image v1 (user Confirm 2026-09-30): ANAT-B close on the patellar tendon, a soft warm spot below the kneecap.
+# "is for less of your weight to land on it." ≈ 2.2 s → 4 s.
+B["B12b"] = clip("B12b",
+    "A premium 3D anatomical model seen close and front-on on a near-black field: the lower edge of the kneecap and the patellar "
+    "tendon below it as a broad pearly band, one soft warm glow on it just below the kneecap.",
+    "Already on the first frame, the tendon is at rest. Over about two seconds the warm red-orange at the centre of the spot cools and "
+    "fades to a gentle, even pearly light, and the band eases a little, relaxed — less load landing on it. It settles and stays calm.",
+    "no glow brightening, no glow spreading, no second spot, no bones moving, no second limb, no text, no camera orbit, no zoom",
+    2.2, hi=5, anat=True,
+    risks=[{"risk": "the glow brightens instead of calming", "prevented_by": "'cools and fades to a gentle, even pearly light', 'no glow brightening'"},
+           {"risk": "the model swims or the band warps", "prevented_by": "HOLD-C + NEG-WARP-C, one slow fade, 'no bones moving'"},
+           {"risk": "the glow spreads or a second spot appears", "prevented_by": "'no glow spreading, no second spot'"}])
+B["B12b"][0]["motion"] = (B["B12b"][0]["motion"]
+    .replace("quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens and straightens along its length, and the whole structure compresses a few degrees", "The patellar tendon loosens a little and rests as the load eases")
+    .replace("The anatomy takes the weight — it is not a still model with light played over it.", "The anatomy eases — it is not a still model with light played over it."))
+
+START = {"B12": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_0a389350-3a9a-410e-a56c-5b29e5ee4659.png",
+         "B12b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_c1a15ea6-ad66-4f8b-aeb5-9bb6b3d657b0.png",
+         "B10c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140203_48b079aa-50b4-48f7-888a-f2c5779f802c.png",
          "B10d": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140212_e6684a2f-35c2-4d68-91bd-def7c5820b7a.png",
          "B10d2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140214_02e1997c-f151-4fc5-b250-3d1e36a9b3a2.png",
          "B10a2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_130409_3a6ea112-6592-45b6-bf5b-93efcd5e52d8.png",

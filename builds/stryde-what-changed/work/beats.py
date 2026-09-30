@@ -693,22 +693,19 @@ B["B10d2"] = (NB2, ["R1", "P1"], photo([
     NO_FACE + ", no torso, no product anywhere, no knee strap, no brace, no sleeve, no walking stick, no second person, no readable "
     "text, no logos on the plimsolls, no going up the stairs, no wrong number of legs"))
 
-# B11-BR — "None of them are aimed at the spot." (user 'BROLLS HERE', covers B11-TH). Front-on at knee height: seated at her kitchen
-# table, Maureen's fingertip presses the one spot just below her bare kneecap; the sleeve, brace, gel and tablets lie unused behind.
-B["B11-BR"] = (NB2, ["R1", "P4", "K9"], photo([
-    "A snapshot from a phone held at knee height straight in front of her as she sits sideways on a wooden chair at her kitchen table. "
-    "Her bare right knee is nearest the lens, square on; the tip of her right index finger presses the one small soft spot just below the "
-    "kneecap, on the band of the tendon. Behind her knee, on the edge of the pale-oak table and going soft, lie the things she tried: a "
-    "grey knit knee sleeve, a black hinged brace, a plain white tube of gel and a silver blister pack — the same ones as in the attached "
-    "photo, pushed aside, unused. Close: her knee and fingertip fill the lower middle of the frame, the navy skirt hem at the top.",
-    R1_BODY + " " + R1_LEGS + " Her hand: slim, pale, faintly freckled older skin, a plain gold wedding ring, the dusty-pink cardigan cuff "
-    "at the wrist. Wearing a navy skirt ending just above the knee.",
-    KITCHEN,
-    angle("B11-BR", "her knee and fingertip"),
-    focus("her fingertip on the spot below the kneecap", deep=False).replace("the room behind", "the table behind"),
-    light("KITCH-L", "her knee and hand"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff and a navy skirt").replace("the faded orange of the old photograph", "the black brace behind")],
-    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no sleeve or brace on her leg, no readable text, no labels, "
-    "no logos, no second person, no extra hands, no extra fingers, no wrong number of legs"))
+# B11-BR v2 — "None of them are aimed at the spot." User Fix 'fix this, give me different image' (v1: her fingertip on the knee, the
+# remedies on the table). ANAT-A front-on: the sleeve, the brace's side bars and the gel film all sit AROUND the knee; the one spot on
+# the tendon just below the kneecap glows untouched in the middle.
+B["B11-BR"] = (NB2, [], anat(
+    "Seen straight from the front at eye level, close: the whole knee in the middle of the frame, and around it, rendered as faint "
+    "ghostly overlays, the three things people try: a translucent grey knit sleeve squeezing the whole joint evenly from the lower thigh "
+    "to the upper shin; the two black side bars and round hinges of a knee brace, ghosted, running down the OUTER and INNER sides of the "
+    "knee; and a thin glossy film of gel lying on the skin's surface over the front. All three sit AROUND the knee and on its surface — "
+    "not one of them reaches the patellar tendon just below the kneecap, where the one tight spot glows, untouched, in the middle of "
+    "everything. "
+    + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed straight from the front at eye level, close, the whole knee in the middle of the frame")
+    .replace("no clothing, ", "no clothing other than the faint ghosted sleeve, no strap, "))
 
 # B12 — "What that band actually needs" (first half of the B12 line; user 'BROLLS HERE'). ANAT-A in profile under load, the tendon
 # spot glowing hot; pip — knee upper right, lower-left clear for the host.

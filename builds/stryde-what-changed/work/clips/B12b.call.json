@@ -1,0 +1,33 @@
+{
+ "beat": "B12b",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b12b\",\"subject\":\"A premium 3D anatomical model seen close and front-on on a near-black field: the lower edge of the kneecap and the patellar tendon below it as a broad pearly band, one soft warm glow on it just below the kneecap. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already on the first frame, the tendon is at rest. Over about two seconds the warm red-orange at the centre of the spot cools and fades to a gentle, even pearly light, and the band eases a little, relaxed — less load landing on it. It settles and stays calm. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. The patellar tendon loosens a little and rests as the load eases. The anatomy eases — it is not a still model with light played over it.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no glow brightening, no glow spreading, no second spot, no bones moving, no second limb, no text, no camera orbit, no zoom, no music, no speech, no slow motion\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_c1a15ea6-ad66-4f8b-aeb5-9bb6b3d657b0.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the glow brightens instead of calming",
+   "prevented_by": "'cools and fades to a gentle, even pearly light', 'no glow brightening'"
+  },
+  {
+   "risk": "the model swims or the band warps",
+   "prevented_by": "HOLD-C + NEG-WARP-C, one slow fade, 'no bones moving'"
+  },
+  {
+   "risk": "the glow spreads or a second spot appears",
+   "prevented_by": "'no glow spreading, no second spot'"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}

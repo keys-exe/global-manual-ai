@@ -3350,14 +3350,14 @@
   "line": "None of them are aimed at the spot.",
   "key": "spot",
   "function": "none of them touch the spot",
-  "subject": "R1",
-  "location": "L-KITCHEN",
-  "story_day": "M-D1",
-  "framing": "CU front-on at knee height: seated at her kitchen table, Maureen's fingertip presses the one spot just below her bare kneecap, the sleeve, brace, gel and tablets lying unused on the table behind",
-  "action": "her fingertip presses the spot once and holds",
-  "pace": "one press, about a second",
+  "subject": "ANAT",
+  "location": "—",
+  "story_day": "—",
+  "framing": "ANAT-A front-on CU: around the knee, a faint grey sleeve squeezing the whole joint, the ghosted side bars of a hinged brace along both sides and a thin glossy film of gel on the skin — all of them around the knee, none reaching the one glowing spot on the tendon just below the kneecap",
+  "action": "the spot pulses once; the sleeve, the brace bars and the gel do nothing",
+  "pace": "one pulse",
   "camera": "locked off",
-  "staging": "seated: knee and hand in front, the things on the table soft behind, camera still",
+  "staging": "none",
   "pin_end": "no",
   "max": 6,
   "product": "absent",
@@ -3366,27 +3366,27 @@
   "layout": "full",
   "eg": "",
   "ledger": "F6",
-  "notes": "covers B11-TH; user 2026-09-30 'BROLLS HERE' — her finger on the spot, the four remedies unused behind",
+  "notes": "covers B11-TH; user 2026-09-30 'BROLLS HERE'; v2 Fix 'fix this, give me different image' (v1: her fingertip on the knee, the remedies on the table)",
   "duration": "pending-master",
   "angle": {
    "height": "eye",
    "side": "front",
    "fg": "clean",
    "scale": "CU",
-   "why": "front = the one exact spot, the remedies all off to the side"
+   "why": "front = everything around the knee, the one spot still lit in the middle"
   },
   "focus": {
-   "plane": "foreground",
-   "dof": "shallow",
+   "plane": "deep",
+   "dof": "deep",
    "rack": null,
    "moving_subject": false
   },
   "light": {
-   "source": "kitchen window over the sink",
+   "source": "anatomical register (§12A)",
    "key_side": "L",
-   "time": "morning",
-   "arc": "everyday: cool daylight",
-   "kelvin": 6500
+   "time": "midday",
+   "arc": "mechanism",
+   "kelvin": 5600
   },
   "face": false
  },
