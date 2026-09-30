@@ -149,16 +149,16 @@ BB("B08a", A1, "Some of the people it happens to have never run a mile in their 
    EYE, THR, "clean", "MEDIUM", "three-quarter = an unhurried, unsporty life", "eyes", "medium", L(STREET_AM, "L"), True,
    notes="v4 — user Fix 'CREATE NEW IMAGE FOR THIS LINE' (v1 keys; v2 tartan trolley; v3 unworn trainers in the cupboard)")
 BB("B08b", A1, "Others played sport for thirty years.", "sport", "not what you did",
-   "R2", "L-D-STAIRS", "D-D1", "MCU on his stairs: Desmond sits holding an old faded photograph of his amateur football team from the 1980s, young him in the front row, looking at it with a small fond smile", "his thumb moves over the photo, a small smile",
-   "one small movement, about two seconds", STILL, "seated on the stairs, head, hands and photo, camera still", "no", "absent", "—", "NB2",
-   EYE, THR, "clean", "MCU", "three-quarter = his face and the photo together, thirty years in one look", "eyes", "medium", L(D_GREY, "R"), True,
-   notes="v6 — user Fix 'DIFFERENT IMAGE HERE, LIKE HOLDING PAST PICTURE' (v1 team photo on the wall; v2 football; v3 trophies; v4 jogging; v5 veterans' match)")
+   "R2", "L-D-STAIRS", "D-D1", "POV from his own eyes, seated on his stairs: Desmond's hands hold an old faded photograph of his 1980s amateur football team, his bare knees below", "his thumb moves over the photo",
+   "one small movement, about two seconds", STILL, "POV: hands, photo and knees only, camera still", "no", "absent", "—", "NB2",
+   HIGH, FRO, "clean", "CU", "POV = seeing the old photo through his own eyes", "hands", "shallow", L(D_GREY, "R"), False,
+   notes="v7 — user Fix 'POV ANGLE' on v6 (him holding the old team photo, three-quarter)")
 TH("B08-TH2", A1, "It makes almost no difference, because the load is not coming from what you did.", framing="punch")
 BB("B08c", A1, "It is coming from standing up and walking.", "standing", "the cause — ordinary life",
-   "R1", "L-KITCHEN", "M-D1", "side-on, waist-down, low: Maureen pushes up from her kitchen chair, both knees straightening under her weight, and takes the first step away", "she rises and steps off",
-   "one rise and one step, about two seconds", STILL, "standing up: side-on, waist-down, camera still", "no", "absent", "—", "NB2",
-   LOW, PRO, "clean", "MS", "low profile = the knees doing the work of standing", "foreground", "shallow", L(KITCH, "L"), False, mx=3,
-   notes="v2 — user Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 Desmond rising from his bottom stair)")
+   "R2", "L-STREET", "D-D1", "MEDIUM on the pavement: Desmond sitting on a low brick front-garden wall pushes up to standing and steps off along the pavement", "he stands up and takes the first steps away",
+   "one rise and two steps, about three seconds", STILL, "street: three-quarter, full figure, camera still", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "MEDIUM", "three-quarter = the whole ordinary movement, sit to stand to walk", "eyes", "medium", L(STREET_AM, "L"), True, mx=3,
+   notes="v3 — user Fix 'CHANGE TO FROM SITTING TO STAND UP AND WALK, OUTSIDE' (v1 Desmond rising off his stair; v2 Maureen rising from her kitchen chair)")
 
 # ============================================================ ACT 2 — the costly mistake
 TH("B09-TH", A2, "Which is why most of what gets sold for this cannot work.", framing="punch")
