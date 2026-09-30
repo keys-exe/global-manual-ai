@@ -1,0 +1,22 @@
+"""BR-039 clip gen 3 (§22X, user's go "MAKE CLIP FOR BR-039", 2026-09-30): new start frame v8 (v6 bedroom hold, back_ref_v2 back turned 180°); §35A form; a level lift toward the window light, the strap never turning (no pinned end frame on the Kie route, so no angle change); sound off."""
+import json, os
+D = os.path.dirname(os.path.abspath(__file__)) + "/"
+LINE = "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee."
+PLAN = "her hands lift the strap slowly a few centimetres toward the window light, held level with its back to the lens, so the light slides across the grey grooves — one small lift, about three seconds — ending held still"
+prompt = (f'For the line "{LINE}": from this frame, {PLAN}. '
+          "Handheld phone, a gentle breath sway, the camera stays where it is. "
+          "The strap stays rigid and faces the lens the whole time, the same shape, the same grey pad and raised bolster, the band hanging below; two hands, every finger whole. "
+          "No turning the strap, no pad changing shape, no lettering, no extra fingers, no sound.")
+call = {"beat": "BR-039", "connector": "kling", "mode": 1, "kind": "broll", "duration": 6, "resolution": "1080p", "aspect_ratio": "9:16",
+        "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_202643_7012a618-0f59-4282-b1fe-1eeb096359a7.png",
+        "start_approved": True, "pinned": False, "subject_motion": "in_place", "prefer_multi_shots": "false", "audio": False,
+        "prompt": prompt, "script_line": LINE, "motion_plan": PLAN, "motion_confirmed": True,
+        "taste": ["HT06", "HT07", "HT13", "FP04", "FP05", "FP06"], "generation": 3, "pilot": "confirmed",
+        "user_go": "MAKE CLIP FOR BR-039 (user in chat, 2026-09-30; also taken as the Confirm of image v8 and its motion line)",
+        "fix_note": "frame fault: the confirmed clip (gen 2) shows the old back from the user's phone photo; the user moved to back_ref_v2 (image Fixes v4–v8) → new start frame v8; motion changed from a tilt to a level lift (no angle change, the Kie route cannot pin an end frame); sound off",
+        "risks": [{"risk": "the strap turns and the back changes", "prevented_by": "held level, faces the lens the whole time; no turning the strap"},
+                  {"risk": "the pad's grooves or bolster morph", "prevented_by": "the same grey pad and raised bolster; no pad changing shape"},
+                  {"risk": "fingers fuse with the shell", "prevented_by": "two hands, every finger whole"}]}
+json.dump(call, open(D + "BR-039.call.json", "w"), ensure_ascii=False, indent=1)
+open(D + "BR-039.kie_prompt.txt", "w").write(prompt)
+print(len(prompt))
