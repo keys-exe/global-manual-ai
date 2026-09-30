@@ -2,7 +2,7 @@
  "beat": "HK3-02",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.\": keep this photo exactly as it is — his hands, gold ring, tan jacket cuffs, stone shorts, bare knee, pavement, kerb and shelter post, the same high three-quarter angle and grey daylight. Image 1 is that photo.\nChange only the pill card and the pill: his right hand holds the small silver foil card of headache pills flat and level, a hand's width ABOVE his open left palm, the clear raised bubbles facing up. His right thumb presses down on one full bubble, and one small round white pill has just broken out through the silver foil on the UNDERSIDE of the card and is dropping into the middle of his open palm below. The pill is below the card, between the card and the palm — never on top of the card.\nIn frame: exactly two hands, five fingers each, one card, one falling pill; two empty bubbles, the rest full. The card and palm fill the middle of the frame.\nNo pill on top of the card, no readable text or logos on the foil, no box, no extra fingers.",
+ "prompt": "For the line \"The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.\": keep this photo exactly as it is — his hands, gold ring, tan jacket cuffs, stone shorts, bare knee, pavement, kerb and shelter post, the same high three-quarter angle and grey daylight. Image 1 is that photo.\nChange only what he holds: the foil card is gone. In his right hand is a small plain white plastic bottle from the chemist, about the size of his thumb, its white cap off. He tilts it over his open left palm, and one small round white headache pill has just rolled out onto the middle of the palm.\nIn frame: exactly two hands, five fingers each, one bottle, one pill. The bottle and palm fill the middle of the frame.\nNo foil card, no label text or logos on the bottle, no box, no other pills, no extra fingers.",
  "script_line": "The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.",
  "face": false,
  "room": false,
@@ -10,12 +10,12 @@
  "body": true,
  "refs": [
   {
-   "label": "HK3-02 v1 frame",
+   "label": "HK3-02 v2 frame",
    "kind": "frame"
   }
  ],
  "match": "frame",
- "edit_of": "deb72848-6430-493c-aeaa-1e222336f286",
+ "edit_of": "bedec169-1c5c-4083-af2f-c4cfa925830d",
  "taste": [
   "HT04",
   "HT12",
@@ -28,5 +28,5 @@
   "nano_banana_pro"
  ],
  "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call)",
- "fix_note": "the pill must be under the Blister pack: v1's pill lay on top of the card under his thumb → edit of v1: the pill breaks out through the foil underside and drops into his palm below"
+ "fix_note": "change it pain killer into a bottle one: v2 was a foil card → edit of v2: a small plain pill bottle tipped over his palm, one pill rolled out into his palm (retry wording after job 35731d3c failed without a reason)"
 }
