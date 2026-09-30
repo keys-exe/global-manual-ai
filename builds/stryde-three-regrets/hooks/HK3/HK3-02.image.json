@@ -2,7 +2,7 @@
  "beat": "HK3-02",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.\": keep this photo exactly as it is — his hands, gold ring, tan jacket cuffs, stone shorts, bare knee, pavement, kerb and shelter post, the same high three-quarter angle and grey daylight. Image 1 is that photo.\nChange only what he holds: the foil card is gone. In his right hand is a small plain white plastic bottle from the chemist, about the size of his thumb, its white cap off. He tilts it over his open left palm, and one small round white headache pill has just rolled out onto the middle of the palm.\nIn frame: exactly two hands, five fingers each, one bottle, one pill. The bottle and palm fill the middle of the frame.\nNo foil card, no label text or logos on the bottle, no box, no other pills, no extra fingers.",
+ "prompt": "For the line \"The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.\": keep this photo exactly as it is — his hands, gold ring, tan jacket cuffs, stone shorts, bare knee, pavement, the pill in his palm, the same high three-quarter angle and grey daylight. Image 1 is that photo.\nChange only the bottle: make it a real painkiller bottle from a chemist — translucent amber-brown plastic, a few round white pills visible through it, a plain white paper label wrapped round it with one red band across the top, printed with nothing. Same size, same tilt, same open mouth over his palm, cap off.\nIn frame: exactly two hands, five fingers each, one bottle, one pill in the palm. The bottle and palm fill the middle of the frame.\nNo lettering, logos or words anywhere, no plain white tub, no other pills, no extra fingers.",
  "script_line": "The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.",
  "face": false,
  "room": false,
@@ -10,14 +10,13 @@
  "body": true,
  "refs": [
   {
-   "label": "HK3-02 v2 frame",
+   "label": "HK3-02 v3 frame",
    "kind": "frame"
   }
  ],
  "match": "frame",
- "edit_of": "bedec169-1c5c-4083-af2f-c4cfa925830d",
+ "edit_of": "5f6c4299-1bd8-4356-88c4-a7f9127c3514",
  "taste": [
-  "HT04",
   "HT12",
   "HT17",
   "HT18",
@@ -28,5 +27,5 @@
   "nano_banana_pro"
  ],
  "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call)",
- "fix_note": "change it pain killer into a bottle one: v2 was a foil card → edit of v2: a small plain pill bottle tipped over his palm, one pill rolled out into his palm (retry wording after job 35731d3c failed without a reason)"
+ "fix_note": "make the bottle look like real pain killer: v3 was a blank white tub → edit of v3: amber chemist's bottle, white label with a red band, no printing (§6A rule 5)"
 }
