@@ -1,0 +1,1 @@
+{"src": "vo/v3/parts_T3/raw_BODY.wav", "out": "vo/v3/master_T3/BODY.mp3", "duration_in_s": 175.75, "breaths_cut": [[56.35, 56.52]], "source_end_db": -86.7, "source_end_clipped": false, "verify": {"duration_s": 161.89, "wpm": 189, "max_wpm": 210, "too_fast": false, "breaths_left": [], "gaps_over_limit": [], "tail_last_db": -42.4, "status": "PASS"}}

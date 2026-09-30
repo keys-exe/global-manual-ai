@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "voice_name": "CascadeWei",
+  "clone_source": "voice/C/CascadeWei_clone_source.mp3",
+  "takes": [
+    {
+      "take": 1,
+      "src": "renders/voiceC/C_G1.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 5.7,
+      "after_speed_s": 4.76,
+      "pitch_median_hz": 145.5,
+      "transcript": "A bad knee is not a knee problem. It is a weight problem.",
+      "pitch_diff": 0.0
+    },
+    {
+      "take": 2,
+      "src": "renders/voiceC/C_G3.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 5.91,
+      "after_speed_s": 4.93,
+      "pitch_median_hz": 133.3,
+      "transcript": "I need you to take this seriously. Here is the sequence, and it is almost always the same.",
+      "pitch_diff": 0.084
+    },
+    {
+      "take": 3,
+      "src": "renders/voiceC/C_G5.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 4.86,
+      "after_speed_s": 4.07,
+      "pitch_median_hz": 136.8,
+      "transcript": "The good leg is now doing the work of two. Within a year or two it starts as well.",
+      "pitch_diff": 0.06
+    },
+    {
+      "take": 4,
+      "src": "renders/voiceC/C_G6.mp4",
+      "in_s": 10.04,
+      "after_trim_s": 5.4,
+      "after_speed_s": 4.52,
+      "pitch_median_hz": 141.0,
+      "transcript": "You have been told it is your age, or your weight, or that the muscle is weak.",
+      "pitch_diff": 0.031
+    }
+  ],
+  "voice_mismatch_takes": [],
+  "joined_s": 18.28,
+  "repeats": 2,
+  "total_s": 36.6,
+  "gaps_over_0.4s": []
+}

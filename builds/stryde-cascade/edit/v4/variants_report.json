@@ -1,0 +1,597 @@
+{
+  "status": "PASS",
+  "variants": [
+    {
+      "hook": "HK1",
+      "file": "edit/v4/STRYDE-CASCADE_HK1.mp4",
+      "status": "PASS",
+      "hook_s": 16.083,
+      "body_s": 162.13,
+      "duration_s": 178.23,
+      "expected_s": 178.213,
+      "fixes": [
+        {
+          "beat": "A2-B3",
+          "fix": "gave back 0.34s of the skipped opening (in-point 0.06s)"
+        },
+        {
+          "beat": "A5-P1",
+          "fix": "gave back 0.19s of the skipped opening (in-point 0.21s)"
+        },
+        {
+          "beat": "HK1-B1",
+          "fix": "HOLD: held to 3.58s on screen"
+        },
+        {
+          "beat": "HK1-B2",
+          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
+        },
+        {
+          "beat": "HK1-B2",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "HK1-B3",
+          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
+        },
+        {
+          "beat": "HK1-B3",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A1-B1",
+          "fix": "HOLD: held to 2.96s on screen"
+        },
+        {
+          "beat": "A1-B2",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A1-B3",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A1-B4",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A1-B5",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A1-B6",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A1-B7",
+          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
+        },
+        {
+          "beat": "A1-B7",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A2-M1",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A2-M1",
+          "fix": "HOLD: held to 2.92s on screen"
+        },
+        {
+          "beat": "A2-M2",
+          "fix": "HOLD: held to 2.67s on screen"
+        },
+        {
+          "beat": "A2-B1",
+          "fix": "HOLD: held to 2.62s on screen"
+        },
+        {
+          "beat": "A2-M3",
+          "fix": "HOLD: held to 2.50s on screen"
+        },
+        {
+          "beat": "A2-B2",
+          "fix": "HOLD: held to 3.04s on screen"
+        },
+        {
+          "beat": "A2-B3",
+          "fix": "gave back 0.06s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A2-B3",
+          "fix": "HOLD: held to 2.08s on screen"
+        },
+        {
+          "beat": "A2-M4",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A3-B1",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "A3-B1",
+          "fix": "HOLD: held to 2.71s on screen"
+        },
+        {
+          "beat": "A3-B2",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A3-B3",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A4-P1",
+          "fix": "HOLD: held to 2.92s on screen"
+        },
+        {
+          "beat": "A4-B1",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A4-B2",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A4-B2",
+          "fix": "HOLD: held to 2.67s on screen"
+        },
+        {
+          "beat": "A4-P3",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A5-B1",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A5-B2",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A5-B3",
+          "fix": "gave back 0.11s of the skipped opening (in-point 0.29s)"
+        },
+        {
+          "beat": "A5-B3",
+          "fix": "HOLD: held to 3.75s on screen"
+        },
+        {
+          "beat": "A5-B4",
+          "fix": "HOLD: held to 2.88s on screen"
+        },
+        {
+          "beat": "A5-P1",
+          "fix": "gave back 0.17s of the skipped opening (in-point 0.04s)"
+        },
+        {
+          "beat": "A5-P1",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "gave back 0.00s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "HOLD: held to 3.71s on screen"
+        },
+        {
+          "beat": "A5-B5",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A4-P2",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A4-P2",
+          "fix": "FLICKER 1.08s: slowed to 0.97x to reach 117.42s"
+        },
+        {
+          "beat": "A4-M1",
+          "fix": "FLICKER 0.58s: extended with own footage to 121.38s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    },
+    {
+      "hook": "HK2",
+      "file": "edit/v4/STRYDE-CASCADE_HK2.mp4",
+      "status": "PASS",
+      "hook_s": 13.0,
+      "body_s": 162.13,
+      "duration_s": 175.13,
+      "expected_s": 175.13,
+      "fixes": [
+        {
+          "beat": "A2-B3",
+          "fix": "gave back 0.34s of the skipped opening (in-point 0.06s)"
+        },
+        {
+          "beat": "A5-P1",
+          "fix": "gave back 0.19s of the skipped opening (in-point 0.21s)"
+        },
+        {
+          "beat": "HK2-B1",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "HK2-B1",
+          "fix": "HOLD: held to 2.71s on screen"
+        },
+        {
+          "beat": "HK2-B2",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "HK2-B2",
+          "fix": "HOLD: held to 2.71s on screen"
+        },
+        {
+          "beat": "HK2-B3",
+          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
+        },
+        {
+          "beat": "HK2-B3",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A1-B1",
+          "fix": "HOLD: held to 2.96s on screen"
+        },
+        {
+          "beat": "A1-B2",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A1-B3",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A1-B4",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A1-B5",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A1-B6",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A1-B7",
+          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
+        },
+        {
+          "beat": "A1-B7",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A2-M1",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A2-M1",
+          "fix": "HOLD: held to 2.92s on screen"
+        },
+        {
+          "beat": "A2-M2",
+          "fix": "HOLD: held to 2.67s on screen"
+        },
+        {
+          "beat": "A2-B1",
+          "fix": "HOLD: held to 2.62s on screen"
+        },
+        {
+          "beat": "A2-M3",
+          "fix": "HOLD: held to 2.50s on screen"
+        },
+        {
+          "beat": "A2-B2",
+          "fix": "HOLD: held to 3.04s on screen"
+        },
+        {
+          "beat": "A2-B3",
+          "fix": "gave back 0.06s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A2-B3",
+          "fix": "HOLD: held to 2.08s on screen"
+        },
+        {
+          "beat": "A2-M4",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A3-B1",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "A3-B1",
+          "fix": "HOLD: held to 2.71s on screen"
+        },
+        {
+          "beat": "A3-B2",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A3-B3",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A4-P1",
+          "fix": "HOLD: held to 2.92s on screen"
+        },
+        {
+          "beat": "A4-B1",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A4-B2",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A4-B2",
+          "fix": "HOLD: held to 2.67s on screen"
+        },
+        {
+          "beat": "A4-P3",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A5-B1",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A5-B2",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A5-B3",
+          "fix": "gave back 0.11s of the skipped opening (in-point 0.29s)"
+        },
+        {
+          "beat": "A5-B3",
+          "fix": "HOLD: held to 3.75s on screen"
+        },
+        {
+          "beat": "A5-B4",
+          "fix": "HOLD: held to 2.88s on screen"
+        },
+        {
+          "beat": "A5-P1",
+          "fix": "gave back 0.17s of the skipped opening (in-point 0.04s)"
+        },
+        {
+          "beat": "A5-P1",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "gave back 0.00s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "HOLD: held to 3.71s on screen"
+        },
+        {
+          "beat": "A5-B5",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A4-P2",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A4-P2",
+          "fix": "FLICKER 1.08s: slowed to 0.97x to reach 114.33s"
+        },
+        {
+          "beat": "A4-M1",
+          "fix": "FLICKER 0.58s: extended with own footage to 118.29s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    },
+    {
+      "hook": "HK3",
+      "file": "edit/v4/STRYDE-CASCADE_HK3.mp4",
+      "status": "PASS",
+      "hook_s": 13.125,
+      "body_s": 162.13,
+      "duration_s": 175.25,
+      "expected_s": 175.255,
+      "fixes": [
+        {
+          "beat": "A2-B3",
+          "fix": "gave back 0.34s of the skipped opening (in-point 0.06s)"
+        },
+        {
+          "beat": "A5-P1",
+          "fix": "gave back 0.19s of the skipped opening (in-point 0.21s)"
+        },
+        {
+          "beat": "HK3-B2",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A1-B1",
+          "fix": "HOLD: held to 2.96s on screen"
+        },
+        {
+          "beat": "A1-B2",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A1-B3",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A1-B4",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A1-B5",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A1-B6",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A1-B7",
+          "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
+        },
+        {
+          "beat": "A1-B7",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A2-M1",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A2-M1",
+          "fix": "HOLD: held to 2.92s on screen"
+        },
+        {
+          "beat": "A2-M2",
+          "fix": "HOLD: held to 2.67s on screen"
+        },
+        {
+          "beat": "A2-B1",
+          "fix": "HOLD: held to 2.62s on screen"
+        },
+        {
+          "beat": "A2-M3",
+          "fix": "HOLD: held to 2.50s on screen"
+        },
+        {
+          "beat": "A2-B2",
+          "fix": "HOLD: held to 3.04s on screen"
+        },
+        {
+          "beat": "A2-B3",
+          "fix": "gave back 0.06s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A2-B3",
+          "fix": "HOLD: held to 2.08s on screen"
+        },
+        {
+          "beat": "A2-M4",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A3-B1",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "A3-B1",
+          "fix": "HOLD: held to 2.71s on screen"
+        },
+        {
+          "beat": "A3-B2",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A3-B3",
+          "fix": "HOLD: held to 2.00s on screen"
+        },
+        {
+          "beat": "A4-P1",
+          "fix": "HOLD: held to 2.92s on screen"
+        },
+        {
+          "beat": "A4-B1",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A4-B2",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A4-B2",
+          "fix": "HOLD: held to 2.67s on screen"
+        },
+        {
+          "beat": "A4-P3",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A5-B1",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A5-B2",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A5-B3",
+          "fix": "gave back 0.11s of the skipped opening (in-point 0.29s)"
+        },
+        {
+          "beat": "A5-B3",
+          "fix": "HOLD: held to 3.75s on screen"
+        },
+        {
+          "beat": "A5-B4",
+          "fix": "HOLD: held to 2.88s on screen"
+        },
+        {
+          "beat": "A5-P1",
+          "fix": "gave back 0.17s of the skipped opening (in-point 0.04s)"
+        },
+        {
+          "beat": "A5-P1",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "gave back 0.00s of the skipped opening (in-point 0.33s)"
+        },
+        {
+          "beat": "A5-F1",
+          "fix": "HOLD: held to 3.71s on screen"
+        },
+        {
+          "beat": "A5-B5",
+          "fix": "HOLD: held to 3.00s on screen"
+        },
+        {
+          "beat": "A4-P2",
+          "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+        },
+        {
+          "beat": "A4-P2",
+          "fix": "FLICKER 1.08s: slowed to 0.97x to reach 114.46s"
+        },
+        {
+          "beat": "A4-M1",
+          "fix": "FLICKER 0.58s: extended with own footage to 118.42s"
+        }
+      ],
+      "failures": [],
+      "black_frames": []
+    }
+  ],
+  "body_identical_across_variants": true
+}

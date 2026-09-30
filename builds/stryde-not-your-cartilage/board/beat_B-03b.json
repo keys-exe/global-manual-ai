@@ -1,0 +1,73 @@
+{
+ "beat": "B-03b",
+ "imageStatus": "review",
+ "imageAsset": "a31e0830bd97968b00a4d92edef31cb7",
+ "imageUrl": "https://tempfile.aiquickdraw.com/a2/4e72f9a9d6b41a0725e9323ecf2bfada_1790728975781.png",
+ "imageAt": 1790728985190,
+ "imageCredits": 12.0,
+ "imageType": "image/png",
+ "imageRegens": 1,
+ "imagePrompt": "Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic — exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone.\n\nTHE PERSON DOES NOT FILL THE FRAME. The phone sits where a creator filming themselves would actually put it, at a real distance a phone can be held or propped, so the room is part of the picture: a clear gap above the head, the wall, window or shelves behind them readable, floor or furniture visible around them. The person takes up about three quarters of the frame height and sits a little off-centre, and no more than one edge of the frame cuts their body.\n\nA snapshot from the foot of the stairs looking up the whole flight: he stands IN THE MIDDLE OF THE STAIRCASE, on the seventh step of fourteen, with about six carpeted steps visible below his feet running down to the camera and about six more rising above his head to the landing, so he is clearly halfway up, never at the bottom and never at the top. Both feet on that one step, his right hand gripping the dark handrail hard, pausing with a wince, breathing out. The man in the attached character sheet — a Black British man of Sudanese heritage, seventy-two, very dark skin: a long face with a heavy square jaw and hollow cheeks, deep-set eyes under a heavy brow ridge, a long nose broad at the tip, clean-shaven with grey stubble, a short rounded grey afro thinning at the crown, the thin pale scar along his right jawline, very tall and thin with a slight stoop — his real age showing. He wears a white shirt under a navy V-neck cardigan, grey wool trousers and black leather shoes. No strap, no brace.\n\nThis room is part of THE SAME HOUSE as the attached property reference image — the pale sage walls, tall white moulded skirting, dark-stained panel doors and the brown-and-gold patterned carpet — the same finishes throughout, seen here in a different room of that same house, with nothing redecorated and nothing newer than the rest. THE SAME PLACE exactly as in the attached location plate — Hassan's hall: the steep straight staircase rising along the left-hand wall with the dark-stained handrail on turned white spindles and the brown-and-gold patterned carpet up every stair, the shoe rack by the door, the woven wall hanging.\n\nTHE CAMERA ANGLE: a low camera close to the floor looking up, seen from three-quarter of him on the stairs. This exact angle, not a straight-on eye-level view.\n\nFOCUS: the nearest eye of Hassan is in sharp focus; the room behind falls to a soft, recognisable shape. The blur is optical: soft and round, never smeared.\n\nTHE LIGHT: the front door's coloured-glass panel behind the camera and the half-landing window above lights him from the right of the frame, warm morning daylight, so the face has a lit side toward the right and a softer shadow side, with a small catchlight in the eyes. The shadows fall away from that source, one way only.\n\nTHE COLOURS OF THIS SCENE: the light is warm morning daylight, 5600K, and the camera is white-balanced for it; pale sage walls, the brown-and-gold patterned stair carpet, the dark handrail; he wears white and navy; the accent is the woven wall hanging. Colours are natural, natural and ungraded. No colour in this shot differs from the rest of the scene.\n\nSKIN SURFACE IS GEOMETRY, NOT PATTERN — the face is not a flat surface with texture printed on it. Every pore is a small pit with one wall in shadow and one wall catching the light. Every line and crease is a groove the light falls into and does not fully reach the bottom of. The whole surface is minutely uneven, rising and dipping, so the hard light breaks across it into thousands of separate tiny highlights and thousands of separate tiny shadows rather than sweeping smoothly over it. The skin has relief and casts shadow onto itself. At full magnification the surface keeps resolving into more detail rather than dissolving into smoothness.\n\nEVERY PERSON IN FRAME IS ANATOMICALLY WHOLE. Each person has exactly one head attached to one neck, two arms and two legs, each joined to the body at the right place and bending only at real joints. Every visible hand has one thumb and four fingers, separate, correctly sized, gripping or resting the way a real hand does. Any part of a body that is not visible is out of view for a reason you can see — cut by the frame edge or hidden behind a named object — never simply missing inside the frame.\n\nTHIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part.\n\nAVOID: no knee strap, no brace, no walking stick, no stairlift, no smile, no looking at the camera, no man on the bottom steps, no man at the foot of the stairs, no man at the top of the stairs, no wrong finger count, no malformed hands, no hands merging into objects, no readable text, no logos other than the stryde wordmark, no AI face, no plastic skin, no waxy skin, no extra fingers, no fused fingers, no polished render, no advertising image, no studio lighting, no vignette, no glowing skin, no light from nowhere, no shadows falling in two directions, no lens flare\n",
+ "imageRefs": [
+  {
+   "kind": "character",
+   "label": "Hassan character sheet",
+   "ref": "R3-HASSAN",
+   "role": "image 1 · the person"
+  },
+  {
+   "kind": "location",
+   "label": "P3-PROP-H",
+   "ref": "P3-PROP-H",
+   "role": "image 2 · the place"
+  }
+ ],
+ "imageVersions": [
+  {
+   "asset": "80171d01f97a359164a483daa2e13c98",
+   "at": 1790697230355,
+   "connector": "Kie AI",
+   "credits": 12,
+   "model": "nano-banana-2",
+   "note": "",
+   "parts": [],
+   "size": "1536×2752",
+   "type": "image/png",
+   "url": "https://tempfile.aiquickdraw.com/models/nano-banana-2/1790696566587-fvtkwtbjvx4.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "94cae97a775bc2228d26501ab5100270"
+  },
+  {
+   "v": 2,
+   "asset": "a31e0830bd97968b00a4d92edef31cb7",
+   "type": "image/png",
+   "url": "https://tempfile.aiquickdraw.com/a2/4e72f9a9d6b41a0725e9323ecf2bfada_1790728975781.png",
+   "model": "nano-banana-2",
+   "connector": "Kie AI",
+   "credits": 12.0,
+   "size": "1536×2752",
+   "at": 1790728985190,
+   "note": "make the man at the middle of the stair",
+   "parts": []
+  }
+ ],
+ "videoVersions": [
+  {
+   "asset": "50576581eae49f08b1bc7418f810fd0f",
+   "at": 1790698900723,
+   "connector": "Kie AI",
+   "credits": 54,
+   "model": "kling-3.0 pro (Kie AI)",
+   "note": "",
+   "size": 7455878,
+   "type": "video/mp4",
+   "url": "https://tempfile.aiquickdraw.com/k/94359fdb48a321f5789e2b41605e8160_1_1790698834_8534.mp4",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "f9e26578479f6210991d0fddf2388382"
+  }
+ ],
+ "status": "planned",
+ "updatedAt": 1790729184192
+}

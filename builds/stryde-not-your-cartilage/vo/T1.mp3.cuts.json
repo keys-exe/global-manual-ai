@@ -1,0 +1,44 @@
+{
+ "src": "T1.mp3",
+ "duration": 71.76,
+ "cuts": [
+  4.0,
+  8.38,
+  13.39
+ ],
+ "ranges": {
+  "HK1": [
+   0.0,
+   4.0
+  ],
+  "HK2": [
+   4.0,
+   8.38
+  ],
+  "HK3": [
+   8.38,
+   13.39
+  ],
+  "BODY": [
+   13.39,
+   71.76
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "orthopaedic",
+   "orthopedic"
+  ],
+  [
+   "replace",
+   "orthopaedic",
+   "orthopedic"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ]
+ ]
+}

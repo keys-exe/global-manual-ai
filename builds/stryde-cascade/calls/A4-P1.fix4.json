@@ -9,7 +9,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_183103_ae5199ce-9d47-4e0f-a9ea-0fe93f469ba8.png",
- "start_approved": false,
+ "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,

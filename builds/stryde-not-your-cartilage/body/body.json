@@ -1,0 +1,221 @@
+{
+ "B-01a": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/package_open.jpg",
+   "cast/R2-DEREK_v1.jpg",
+   "plates/P2-D-TOWPATH_v1.jpg"
+  ],
+  "chars": 5931,
+  "line": "B-01"
+ },
+ "MECH-S1": {
+  "model": "nano-banana-2",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/back.webp"
+  ],
+  "chars": 6829,
+  "line": "B-01"
+ },
+ "MECH-S2": {
+  "model": "nano-banana-2",
+  "refs": [],
+  "chars": 4799,
+  "line": "B-01"
+ },
+ "MECH-01": {
+  "model": "nano-banana-2",
+  "refs": [],
+  "chars": 4822,
+  "line": "B-02"
+ },
+ "B-02b": {
+  "model": "nano-banana-2",
+  "refs": [
+   "cast/R3-HASSAN_v1.jpg",
+   "plates/P6-CONSULT_v1.jpg"
+  ],
+  "chars": 5376,
+  "line": "B-02"
+ },
+ "B-03a": {
+  "model": "nano-banana-2",
+  "refs": [
+   "cast/R2-DEREK_v1.jpg",
+   "plates/P2-D-TOWPATH_v1.jpg"
+  ],
+  "chars": 4882,
+  "line": "B-03"
+ },
+ "B-03b": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "plates/P3-PROP-H_v1.jpg",
+   "cast/R3-HASSAN_v1.jpg"
+  ],
+  "chars": 2514,
+  "line": "B-03"
+ },
+ "B-03c": {
+  "model": "nano-banana-2",
+  "refs": [
+   "cast/R1-FOLAKE_v1.jpg",
+   "plates/P1-F-LOUNGE_v1.jpg"
+  ],
+  "chars": 5425,
+  "line": "B-03"
+ },
+ "B-04": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/product_tq_left.jpg",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/back.webp",
+   "cast/R2-DEREK_v1.jpg",
+   "plates/P2-D-TOWPATH_v1.jpg"
+  ],
+  "chars": 7623,
+  "line": "B-04"
+ },
+ "MECH-02": {
+  "model": "nano-banana-2",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/back.webp"
+  ],
+  "chars": 7028,
+  "line": "B-05"
+ },
+ "B-06": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/worn_front.jpg",
+   "cast/R3-HASSAN_v1.jpg",
+   "plates/P3-PROP-H_v1.jpg"
+  ],
+  "chars": 11649,
+  "line": "B-06"
+ },
+ "B-07": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/worn_front.jpg",
+   "cast/R1-FOLAKE_v1.jpg",
+   "plates/P0-PROP-FO_v1.jpg"
+  ],
+  "chars": 11699,
+  "line": "B-07"
+ },
+ "B-08": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/worn_front.jpg",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/product_tq_left.jpg",
+   "cast/R3-HASSAN_v1.jpg",
+   "plates/P4-H-KITCHEN_v1.jpg"
+  ],
+  "chars": 11806,
+  "line": "B-08"
+ },
+ "B-09a": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/worn_front.jpg",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/product_tq_left.jpg",
+   "cast/R4-ELAINE_v1.jpg",
+   "plates/P5-E-BEDROOM_v1.jpg"
+  ],
+  "chars": 8393,
+  "line": "B-09"
+ },
+ "B-09b": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/inner_face.jpg",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/back_inner.jpg",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/back.webp",
+   "cast/R4-ELAINE_v1.jpg",
+   "plates/P5-E-BEDROOM_v1.jpg"
+  ],
+  "chars": 6167,
+  "line": "B-09"
+ },
+ "B-10": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/worn_bent.jpg",
+   "cast/R3-HASSAN_v1.jpg",
+   "plates/P4-H-KITCHEN_v1.jpg"
+  ],
+  "chars": 11571,
+  "line": "B-10"
+ },
+ "B-11a": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/worn_front.jpg",
+   "cast/R4-ELAINE_v1.jpg",
+   "plates/P5-E-BEDROOM_v1.jpg"
+  ],
+  "chars": 10258,
+  "line": "B-11"
+ },
+ "B-11b": {
+  "model": "nano-banana-2",
+  "refs": [
+   "cast/R4-ELAINE_v1.jpg"
+  ],
+  "chars": 4894,
+  "line": "B-11"
+ },
+ "B-12": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/worn_front.jpg",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/product_tq_left.jpg",
+   "cast/R2-DEREK_v1.jpg",
+   "plates/P6-CONSULT_v1.jpg"
+  ],
+  "chars": 11721,
+  "line": "B-12"
+ },
+ "B-13a": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/package_open.jpg",
+   "plates/P1-F-LOUNGE_v1.jpg"
+  ],
+  "chars": 5536,
+  "line": "B-13"
+ },
+ "CARD-13b": {
+  "model": "gpt-image-2-5-sunburst-image-to-image",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/product_tq_left.jpg"
+  ],
+  "chars": 2698,
+  "line": "B-13"
+ },
+ "B-14": {
+  "model": "nano-banana-pro",
+  "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/worn_front.jpg",
+   "cast/R2-DEREK_v1.jpg",
+   "plates/P2-D-TOWPATH_v1.jpg"
+  ],
+  "chars": 11254,
+  "line": "B-14"
+ }
+}

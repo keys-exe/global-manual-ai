@@ -1,0 +1,32 @@
+{
+ "beat": "A3-B5c",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"and that is the only thing that stops the sequence.\": the client's hall stairs exactly as in the attached hall plate, with just one short new oak handrail fixed beside the top two steps and the rest of the wall bare and unmarked all the way down — no second rail, nothing else changed. Calm afternoon light down the stairs. Eye level from the hall, three-quarter, the whole flight in frame. No people. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "and that is the only thing that stops the sequence.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "PLATE-P1-PROP (C1's hall and stairs)",
+   "kind": "location",
+   "id": "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  }
+ ],
+ "taste": [
+  "HT09",
+  "HT12"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "the camera eases slowly down the bare wall beside the stairs from the short top rail to the empty lower wall, 3s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "new beat: A3-B5 split into three (user)",
+ "act": "Act 3"
+}

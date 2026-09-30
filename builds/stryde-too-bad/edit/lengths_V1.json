@@ -1,0 +1,215 @@
+{
+  "master_s": 55.4,
+  "lead_s": 0.25,
+  "skip_s": 0.4,
+  "lengths": [
+    {
+      "beat": "HK1-01",
+      "cut_s": 0.0,
+      "early_s": 0.03,
+      "anchor": "Too",
+      "on_screen_s": 2.79,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-01a",
+      "cut_s": 2.7917,
+      "early_s": 0.268,
+      "anchor": "Built",
+      "on_screen_s": 3.29,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "MECH-S1",
+      "cut_s": 6.0833,
+      "early_s": 0.237,
+      "anchor": "sleeves",
+      "on_screen_s": 2.12,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-02a",
+      "cut_s": 8.2083,
+      "early_s": 0.262,
+      "anchor": "small",
+      "on_screen_s": 2.71,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-02",
+      "cut_s": 10.9167,
+      "early_s": 0.253,
+      "anchor": "one",
+      "on_screen_s": 1.38,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B1-03a",
+      "cut_s": 12.2917,
+      "early_s": 0.008,
+      "anchor": "Seventeen",
+      "on_screen_s": 2.88,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "MECH-02",
+      "cut_s": 15.1667,
+      "early_s": 0.233,
+      "anchor": "two",
+      "on_screen_s": 2.08,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-03",
+      "cut_s": 17.25,
+      "early_s": 0.25,
+      "anchor": "A",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-04b",
+      "cut_s": 20.25,
+      "early_s": 0.27,
+      "anchor": "This",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-04",
+      "cut_s": 22.25,
+      "early_s": 0.04,
+      "anchor": "It",
+      "on_screen_s": 2.08,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B1-05b",
+      "cut_s": 24.3333,
+      "early_s": 0.257,
+      "anchor": "And",
+      "on_screen_s": 2.42,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-06",
+      "cut_s": 26.75,
+      "early_s": 0.27,
+      "anchor": "A",
+      "on_screen_s": 1.88,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B1-07a",
+      "cut_s": 28.625,
+      "early_s": 0.035,
+      "anchor": "Perfect",
+      "on_screen_s": 2.58,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "MECH-05",
+      "cut_s": 31.2083,
+      "early_s": 0.262,
+      "anchor": "worn",
+      "on_screen_s": 2.08,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B1-08",
+      "cut_s": 33.2917,
+      "early_s": 0.238,
+      "anchor": "So",
+      "on_screen_s": 2.29,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-09a",
+      "cut_s": 35.5833,
+      "early_s": 0.257,
+      "anchor": "Small",
+      "on_screen_s": 2.5,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-09b",
+      "cut_s": 38.0833,
+      "early_s": 0.237,
+      "anchor": "Light",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B1-10",
+      "cut_s": 40.0833,
+      "early_s": 0.027,
+      "anchor": "No",
+      "on_screen_s": 2.67,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-11",
+      "cut_s": 42.75,
+      "early_s": 0.25,
+      "anchor": "Over",
+      "on_screen_s": 2.75,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-12a",
+      "cut_s": 45.5,
+      "early_s": 0.24,
+      "anchor": "Buy",
+      "on_screen_s": 2.46,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "CARD-12b",
+      "cut_s": 47.9583,
+      "early_s": 0.242,
+      "anchor": "Sixty-day",
+      "on_screen_s": 2.62,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-13a",
+      "cut_s": 50.5833,
+      "early_s": 0.247,
+      "anchor": "Too",
+      "on_screen_s": 2.71,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-13b",
+      "cut_s": 53.2917,
+      "early_s": 0.238,
+      "anchor": "Nothing",
+      "on_screen_s": 2.11,
+      "skip_s": 0.4,
+      "call_s": 4
+    }
+  ],
+  "failures": []
+}

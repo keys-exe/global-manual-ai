@@ -1,0 +1,45 @@
+{
+ "beat": "A4-B2b",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"A little too high and it is a sleeve again.\": front-on, close on the man's straightened right knee: the strap sits a little too high, riding on the kneecap, and his two fingertips at its two ends are about to slide it down. The strap is exactly the product in the attached front photo — the strap is small — a rigid black W-topped shell about 12 × 5 cm, narrower than the knee, on one soft black knit band that loops once round the leg — the same strap as in the attached worn frame, just higher. Only fingertips on its ends, the shell and wordmark clear. His leg and shorts as in the worn frame; the hall soft behind. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "A little too high and it is a sleeve again.",
+ "face": false,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "STRYDE front photo",
+   "kind": "product",
+   "id": "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5"
+  },
+  {
+   "label": "A4-B1 confirmed (C2 wearing the strap)",
+   "kind": "frame",
+   "id": "6c8f404b-135e-4b02-b48a-3ef1f2cea15a"
+  },
+  {
+   "label": "PLATE-C2-HALL",
+   "kind": "location",
+   "id": "1e46a65f-f165-4694-b5b6-1f92ea2688b3"
+  }
+ ],
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "HT06"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "his fingers slide the strap down from over the kneecap to sit just below it, one slide, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "user Fix: \"fix the product\" → strap was oversized with a doubled band; now true size, one band, worn frame attached",
+ "act": "Act 4"
+}

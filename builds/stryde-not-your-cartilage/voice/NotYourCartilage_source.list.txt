@@ -1,0 +1,3 @@
+file '/home/user/global-manual-ai/builds/stryde-not-your-cartilage/voice/NotYourCartilage_source1.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-not-your-cartilage/voice/NotYourCartilage_source2.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-not-your-cartilage/voice/NotYourCartilage_source3.x1.2.wav'

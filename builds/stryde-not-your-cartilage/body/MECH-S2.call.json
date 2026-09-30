@@ -1,0 +1,34 @@
+{
+ "beat": "MECH-S2",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"mech_s2\",\"subject\":\"A translucent anatomical model of a knee in a big blank wraparound brace, the joint under it glowing hot red-orange.\",\"camera\":{\"movement\":\"Virtual camera already drifting on the first frame, never static at entry. A slow steady lateral travel across the subject, single direction, constant unhurried speed, mechanically smooth — no rotation around the subject, no orbit, no push, no sway, no handheld physics, no focus hunt, no reaction to anything in the scene. Total travel stays small, roughly a tenth of frame width across the clip. Still drifting on the final frame, the move never completing and never coming to rest.\",\"framing\":\"As in the start frame.\"},\"motion\":\"One action at a slow pace: the red-orange glow under the brace pulses once, brighter and back; the brace does not move. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning.\",\"lighting\":\"Exactly as in the start frame.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no brace moving, no text or logo appearing, no pause, no freeze, no pause, no freeze\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://tempfile.aiquickdraw.com/a2/645a6853a4e50dc3f8e3b62ef7958b25_1790696569756.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "the red glow spreading off the joint",
+   "prevented_by": "motion names one pulse; negatives"
+  },
+  {
+   "risk": "the brace deforming",
+   "prevented_by": "brace does not move, NEG-WARP-C"
+  },
+  {
+   "risk": "text appearing on the brace",
+   "prevented_by": "negatives"
+  }
+ ],
+ "route": "Kie AI kling-3.0 (§5 fallback: Kling connector at 3 credits)"
+}

@@ -1,0 +1,6 @@
+file '/home/user/global-manual-ai/builds/stryde-cascade/voice/K/CascadeHarukoB_source1.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-cascade/voice/K/CascadeHarukoB_source2.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-cascade/voice/K/CascadeHarukoB_source3.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-cascade/voice/K/CascadeHarukoB_source4.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-cascade/voice/K/CascadeHarukoB_source5.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-cascade/voice/K/CascadeHarukoB_source6.x1.2.wav'

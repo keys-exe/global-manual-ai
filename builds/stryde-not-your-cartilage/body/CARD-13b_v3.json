@@ -1,0 +1,11 @@
+{"taskId": "cce31c3ce19703f3bd0abc41abfa60c4", "created": true}
+{
+  "taskId": "cce31c3ce19703f3bd0abc41abfa60c4",
+  "state": "success",
+  "credits": 10.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/gpt-image-2-5/1790746956377-7o4apzq7uzo.png"
+  ],
+  "saved": "body/CARD-13b_v3.png"
+}

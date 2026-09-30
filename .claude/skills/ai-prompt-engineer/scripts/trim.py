@@ -160,7 +160,7 @@ def render(src, dst, spans):
                     "-filter_complex", graph] + maps + [str(dst)], check=True)
 
 
-def verify(dst, keep_count, model_name):
+def verify(dst, keep_count, model_name, post=0.0):
     ws = words(dst, model_name)
     total = duration(dst)
     gaps = [s for s in silences(dst) if s[1] - s[0] > MAX_GAP]
@@ -169,7 +169,7 @@ def verify(dst, keep_count, model_name):
         "tail_after_last_word_s": round(total - ws[-1][1], 3) if ws else None,
         "gaps_over_0.6s": [(round(a, 3), round(b, 3)) for a, b in gaps],
     }
-    ok = bool(ws) and ws[0][0] <= ENTRY_CAP and total - ws[-1][1] <= TAIL_CAP + 0.1 \
+    ok = bool(ws) and ws[0][0] <= ENTRY_CAP and total - ws[-1][1] <= TAIL_CAP + post + 0.1 \
         and len(gaps) <= keep_count
     return ok, report
 
@@ -208,7 +208,10 @@ def main():
         print(json.dumps({"status": "TRIM_FAIL", "reason": "no words detected"}))
         sys.exit(2)
     total = duration(src)
-    quiet = silences(src, noise_db=QUIET_DB, min_dur=0.15)
+    # Air is what is below QUIET_DB (-50 dB, so a word's decay is kept), plus any gap longer than MAX_GAP
+    # below NOISE_DB (-40 dB): verify() fails such a gap, so room tone between -50 and -40 dB in a long
+    # pause must be cut too (the --pre/--post padding still keeps every word ending) (2026-09-29).
+    quiet = merge(silences(src, noise_db=QUIET_DB, min_dur=0.15) + silences(src, noise_db=NOISE_DB, min_dur=MAX_GAP))
     st = STYLES[a.style]
     pace = {"style": a.style,
             "sentence": st[0] if a.sentence_pause is None else a.sentence_pause,
@@ -222,7 +225,8 @@ def main():
         print(json.dumps(result, indent=2))
         return
     render(src, dst, spans)
-    ok, check = verify(dst, len(keep), a.model)
+    # the tail may hold the --post padding the trim itself keeps after the last word (no tight cuts)
+    ok, check = verify(dst, len(keep), a.model, a.post)
     out_s = duration(dst)
     wpm = round(len(ws) / out_s * 60, 1) if out_s else None
     check["wpm"] = wpm

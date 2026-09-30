@@ -1,0 +1,43 @@
+{
+ "beat": "A1-B2b",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"The good leg is now doing the work of two.\": from this frame, her right leg straightens and lifts her up one step while the left leg trails, one step, slow, 2s. Handheld phone, a slight natural sway, the camera never follows her. The stairs keep the same steps; she climbs exactly one step, slowly. No morphing, no extra fingers, no music.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap1/A1-B2b.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "The good leg is now doing the work of two.",
+ "motion_plan": "her right leg straightens and lifts her up one step while the left leg trails, one step, slow, 2s",
+ "motion_confirmed": true,
+ "risk_class": "stairs",
+ "pilot": "confirmed",
+ "pin_waived": "user, 2026-09-30: \"Run from the start frame\" (asked: stairs clips without a picked end frame)",
+ "taste": [
+  "HT02",
+  "HT12"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+{"src": "raw/T1-HK2.mp3", "out": "cut/T1-HK2.mp3", "duration_in_s": 4.38, "breaths_cut": [[3.99, 4.16]], "source_end_db": -87.1, "source_end_clipped": false, "verify": {"duration_s": 3.79, "wpm": 174, "max_wpm": 210, "too_fast": false, "breaths_left": [], "gaps_over_limit": [], "tail_last_db": -58.2, "status": "PASS"}}

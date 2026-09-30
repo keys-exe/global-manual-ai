@@ -1,0 +1,184 @@
+{
+  "master_s": 61.68,
+  "lead_s": 0.1,
+  "skip_s": 0.4,
+  "lengths": [
+    {
+      "beat": "HK3-01",
+      "cut_s": 0.0,
+      "anchor": "How",
+      "on_screen_s": 4.38,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "B-01a",
+      "cut_s": 4.375,
+      "anchor": "Built",
+      "on_screen_s": 3.12,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "MECH-S1",
+      "cut_s": 7.5,
+      "anchor": "sleeves",
+      "on_screen_s": 2.42,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "MECH-01",
+      "cut_s": 9.9167,
+      "anchor": "Bone",
+      "on_screen_s": 4.12,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "B-02b",
+      "cut_s": 14.0417,
+      "anchor": "knee.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B-03a",
+      "cut_s": 16.0417,
+      "anchor": "walk.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B-03b",
+      "cut_s": 18.0417,
+      "anchor": "stairs.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B-03c",
+      "cut_s": 20.0417,
+      "anchor": "Getting",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B-04",
+      "cut_s": 23.0417,
+      "anchor": "strap",
+      "on_screen_s": 3.0,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "MECH-02",
+      "cut_s": 26.0417,
+      "anchor": "strain",
+      "on_screen_s": 3.21,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B-06",
+      "cut_s": 29.25,
+      "anchor": "works",
+      "on_screen_s": 2.5,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B-07",
+      "cut_s": 31.75,
+      "anchor": "walk",
+      "on_screen_s": 3.38,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B-08",
+      "cut_s": 35.125,
+      "anchor": "Surgery",
+      "on_screen_s": 3.33,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B-09a",
+      "cut_s": 38.4583,
+      "anchor": "Adjustable,",
+      "on_screen_s": 2.08,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B-09b",
+      "cut_s": 40.5417,
+      "anchor": "pad",
+      "on_screen_s": 3.17,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B-10",
+      "cut_s": 43.7083,
+      "anchor": "slipping.",
+      "on_screen_s": 4.33,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "B-11a",
+      "cut_s": 48.0417,
+      "anchor": "trousers.",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B-11b",
+      "cut_s": 50.0417,
+      "anchor": "Light",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B-12",
+      "cut_s": 52.0417,
+      "anchor": "Recommended",
+      "on_screen_s": 2.17,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B-13a",
+      "cut_s": 54.2083,
+      "anchor": "Buy",
+      "on_screen_s": 2.67,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "CARD-13b",
+      "cut_s": 56.875,
+      "anchor": "Sixty-day",
+      "on_screen_s": 2.71,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B-14",
+      "cut_s": 59.5833,
+      "anchor": "Nothing",
+      "on_screen_s": 2.1,
+      "skip_s": 0.4,
+      "call_s": 3
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,144 @@
+{
+ "audio": [
+  "../vo/cut/T4-HK2.mp3",
+  "../vo/cut/T4-BODY.mp3"
+ ],
+ "script": [
+  "../vo/HK2.lines.txt",
+  "../vo/BODY.lines.txt"
+ ],
+ "base": null,
+ "broll": [
+  {
+   "beat": "HK2-01",
+   "clip": null,
+   "phrase": "Your cartilage doesn't decide whether today is a bad knee day"
+  },
+  {
+   "beat": "B-01a",
+   "clip": null,
+   "phrase": "Built over three years with orthopaedic surgeons",
+   "key": "Built"
+  },
+  {
+   "beat": "MECH-S1",
+   "clip": null,
+   "phrase": "to do what sleeves and braces never could",
+   "key": "sleeves"
+  },
+  {
+   "beat": "MECH-01",
+   "clip": null,
+   "phrase": "Bone on bone, advanced arthritis",
+   "key": "Bone"
+  },
+  {
+   "beat": "B-02b",
+   "clip": null,
+   "phrase": "and they're already talking about a new knee",
+   "key": "knee"
+  },
+  {
+   "beat": "B-03a",
+   "clip": null,
+   "phrase": "A long walk",
+   "key": "walk"
+  },
+  {
+   "beat": "B-03b",
+   "clip": null,
+   "phrase": "A flight of stairs",
+   "key": "stairs"
+  },
+  {
+   "beat": "B-03c",
+   "clip": null,
+   "phrase": "Getting up out of a chair. Every time, the pain",
+   "key": "Getting"
+  },
+  {
+   "beat": "B-04",
+   "clip": null,
+   "phrase": "This strap doesn't repair your cartilage",
+   "key": "strap"
+  },
+  {
+   "beat": "MECH-02",
+   "clip": null,
+   "phrase": "It takes the strain off the tendon below your kneecap",
+   "key": "strain"
+  },
+  {
+   "beat": "B-06",
+   "clip": null,
+   "phrase": "And that's why it works even on knees they've written off",
+   "key": "works"
+  },
+  {
+   "beat": "B-07",
+   "clip": null,
+   "phrase": "You walk again. You come down your own stairs again",
+   "key": "walk"
+  },
+  {
+   "beat": "B-08",
+   "clip": null,
+   "phrase": "Surgery is no longer the only thing you've got left",
+   "key": "Surgery"
+  },
+  {
+   "beat": "B-09a",
+   "clip": null,
+   "phrase": "Adjustable, breathable",
+   "key": "Adjustable"
+  },
+  {
+   "beat": "B-09b",
+   "clip": null,
+   "phrase": "with a silicone pad that locks the pressure right where you need it",
+   "key": "pad"
+  },
+  {
+   "beat": "B-10",
+   "clip": null,
+   "phrase": "No slipping. No sores. No rolling down",
+   "key": "slipping"
+  },
+  {
+   "beat": "B-11a",
+   "clip": null,
+   "phrase": "It stays put under your trousers",
+   "key": "trousers"
+  },
+  {
+   "beat": "B-11b",
+   "clip": null,
+   "phrase": "Light enough you forget it's there",
+   "key": "Light"
+  },
+  {
+   "beat": "B-12",
+   "clip": null,
+   "phrase": "Recommended by orthopaedic surgeons for lasting relief",
+   "key": "Recommended"
+  },
+  {
+   "beat": "B-13a",
+   "clip": null,
+   "phrase": "Buy one, get one free today at getstryde.co",
+   "key": "Buy"
+  },
+  {
+   "beat": "CARD-13b",
+   "clip": null,
+   "phrase": "Sixty-day money-back guarantee",
+   "key": "Sixty-day"
+  },
+  {
+   "beat": "B-14",
+   "clip": null,
+   "phrase": "Nothing to lose but the pain",
+   "key": "Nothing"
+  }
+ ]
+}
