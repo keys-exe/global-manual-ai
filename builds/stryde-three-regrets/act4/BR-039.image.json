@@ -2,7 +2,7 @@
  "beat": "BR-039",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee.\": keep this photo exactly as it is — her two hands, the thin gold watch, the sunny pale-blue bedroom, the quilt, the hold, the close angle slightly above and the window light from the right. Image 1 is that photo.\nChange only the back of the strap she holds up: Image 2 is the real back of the product — copy it exactly, same shape, same parts, same markings, nothing redesigned. A matte-black shell; set into it a mid-grey rubbery pad in a curved bow-tie outline, wide at both ends and pinched in the middle, covered in fine curved grooves; down its middle one smooth, ungrooved raised bolster, thick at both ends and waisted in the centre; a polished chrome slide at each end with the black knit band looped through. True size: the shell about 12 × 5 cm, a little wider than her palm.\nIn frame: two hands, her fingertips holding the shell's two ends from behind; the strap's back takes about a third of the frame width, the whole grey pad in view.\nNo lettering or logos, no holes in the pad, no extra fingers.",
+ "prompt": "For the line \"A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee.\": keep this photo exactly as it is — her two hands, the gold watch, the pale-blue bedroom, the window, the quilt, the sunlight and the camera angle. Image 1 is that photo.\nChange only the product in her hands: replace it with the strap in Image 2, its back facing the lens — copy it exactly, same shape, same parts, same markings, nothing redesigned: a matte-black shell; set into it a mid-grey rubbery pad in a curved bow-tie outline covered in fine curved grooves, one smooth raised bolster down its middle; a polished chrome slide at each end with the black knit band looped through. True size: the shell about 12 × 5 cm, a little wider than her palm.\nIn frame: two hands, each thumb and finger pinching one end of the shell, held flat and level; the whole grey pad in view, taking about a third of the frame width; the band hangs below in a loop.\nNo lettering or logos, no holes in the pad, no extra fingers.",
  "script_line": "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee.",
  "face": false,
  "room": true,
@@ -10,16 +10,16 @@
  "body": true,
  "refs": [
   {
-   "label": "BR-039 v3 frame",
+   "label": "BR-039 v2 frame (the user's pick)",
    "kind": "frame"
   },
   {
-   "label": "back_ref_v2.png (latest back)",
+   "label": "back_ref_v2.png (the user's last image)",
    "kind": "product"
   }
  ],
  "match": "frame",
- "edit_of": "5c53a554-ec93-4e7e-9394-4717d1247696",
+ "edit_of": "f2032c5a-e864-4626-96f6-77f30b779ba6",
  "taste": [
   "HT06",
   "HT07",
@@ -34,5 +34,5 @@
   "nano_banana_pro"
  ],
  "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call)",
- "fix_note": "USE THE LATEST BACK OF THE STRYDE PRODUCT: v3's back came from the user's earlier phone photo → edit of v3 with back_ref_v2.png (the latest studio back) copied exactly"
+ "fix_note": "USE THIS AS IMAGE BUT CHANGE THE PRODUCT INTO LAST IMAGE I HAVE GIVEN: edit of v2 with the back from back_ref_v2"
 }
