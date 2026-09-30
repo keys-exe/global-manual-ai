@@ -1,0 +1,41 @@
+{
+ "beat": "A2-M7",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"The pain is not the first thing that happened. It is the first thing you noticed.\": from this frame, faint frayed fibres along the tendon glow a dull orange, then one sharp red pulse spreads from them, 3s. The camera holds still on the render, one slow even light pulse, nothing else moves. The tendon and kneecap keep their exact shape; only the glow changes. No text, no arrows, no extra limbs.",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap1/A2-M7.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "The pain is not the first thing that happened. It is the first thing you noticed.",
+ "motion_plan": "faint frayed fibres along the tendon glow a dull orange, then one sharp red pulse spreads from them, 3s",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "pilot": null,
+ "taste": [
+  "HT11"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ]
+}

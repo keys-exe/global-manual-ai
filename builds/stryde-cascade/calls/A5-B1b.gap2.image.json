@@ -1,0 +1,37 @@
+{
+ "beat": "A5-B1b",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Three houses this year have not called me back.\": the fitter sits in the driver's seat of his van with a paper job diary open against the steering wheel, running his pen down the page, a small satisfied smile. Eye level through the open door, three-quarter, medium shot, his face sharp. He is the same man as the attached cast sheet, in his B-roll work clothes, not the talking-head outfit: a worn tan canvas work jacket open over a dark green work shirt, charcoal work trousers, no fleece; the van as in the attached plate. Handwriting unreadable. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "Three houses this year have not called me back.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "N-CHINESE cast sheet",
+   "kind": "character",
+   "id": "8cc4a583-5d7d-4f39-9ef7-7fe7899d298b"
+  },
+  {
+   "label": "PLATE-VAN",
+   "kind": "location",
+   "id": "b1cc1764-3e34-4b37-b8c6-0abf55cfe68e"
+  }
+ ],
+ "taste": [
+  "HT12",
+  "HT09"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "in the van's driver seat he runs a pen down a page of his job diary and stops, a small smile, 3s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "user Fix 2026-09-30: \"the avatar broll clothes should not be the same as the th\" → TH frame dropped, new work outfit",
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render"
+}
