@@ -1546,6 +1546,39 @@ B["B19-BR2c"] = (NBP, ["R1", "B19AV1W", "P4"], photo([
     "no looking into the lens, no posing, no broad grin, no sadness, no crying, no product anywhere, no knee strap, no second person, no "
     "readable text, no extra fingers"))
 
+# ── 2026-09-30 "FIX AND CONFIRM" round 4 ──
+# B19-BR fix "FIX OUR PRODUCT": v3/v4 redrew the straps whenever a person held the box. Edit of package_open.jpg changing ONLY the
+# background — the box, lid and straps stay the product photo; the white studio becomes her bottom stair and hall.
+REFS.update({"PF_LOCAL": ("front.webp — the strap front-on", "../intake/front.webp")})
+B["B19-BR"] = (NBP, ["PKG", "P1", "PF_LOCAL"], (
+    "Edit Image 1. Keep the STRYDE box EXACTLY as it is in Image 1, untouched — the matte-black box and tray, BOTH straps lying in the "
+    "tray exactly as they are (each matte-black shell with two rounded peaks and the notch between them, a chrome slide at each end, the "
+    "soft black band, the grey stryde wordmark on the shell, as in Image 3), and the lid with the large grey stryde wordmark propped "
+    "behind — the same shapes, sizes, angle and proportions, nothing redrawn, nothing added. Change ONLY the plain white background: "
+    "the box now sits on the oatmeal wool carpet of her bottom stair, the white-painted spindles and honey oak handrail beside it and "
+    "the pale duck-egg blue hall wall behind, as in Image 2, softly out of focus. Warm afternoon sun from the right, a soft real shadow "
+    "under the box. An ordinary phone photo taken from a little above.\n\nAVOID: no redrawn strap, no changed shell shape, no flat "
+    "band, no wordmark on the band, " + P.NEG_WORDMARK + ", no third strap, no person, no hands, no extra objects, no studio background"))
+
+# B19-BR2b fix "DIFFERENT BROLL HERE" — "Not because the arthritis has gone.": two-shot across the surgeon's desk, he points to the joint
+# on the anatomical knee model, Maureen listens and nods. Honest, no product.
+B["B19-BR2b"] = (NBP, ["S1", "R1", "P5"], photo([
+    "A snapshot from a phone at eye level, three-quarter on, across the desk in the consulting room. The surgeon sits behind the pale "
+    "wood desk and points with one finger to the inside of the joint on the life-size anatomical knee model between them, explaining "
+    "calmly; Maureen sits across from him in the patient's chair, listening, a small understanding nod. Medium: both of them from the "
+    "waist up, the knee model in the middle of the frame.",
+    "HE IS THE SAME MAN as in the attached character sheet (Image 1): a British man of Pakistani heritage, fifty-eight, short black hair "
+    "grey at the temples, combed back, kind and attentive; wearing navy surgical scrubs with a short-sleeved tunic and a plain grey "
+    "fleece gilet.",
+    R1.replace("the attached character sheet of her", "the attached character sheet of her (Image 2)") + " Wearing a navy-and-white Breton striped T-shirt.",
+    "THE SAME CONSULTING ROOM as the attached location plate (Image 3): off-white walls, the half-lowered white roller blind on the "
+    "left-hand wall, the pale wood desk, the anatomical knee model, a framed botanical print, the grey couch soft behind.",
+    angle("B19-BR2b", "the two of them across the desk"),
+    focus("everything", deep=True),
+    light("CONS-L", "them and the desk"), colour("CONS-PM").replace("the matte-black strap and its chrome slides", "the ivory anatomical knee model").replace("navy surgical scrubs and a plain grey fleece gilet", "navy surgical scrubs, a plain grey fleece gilet and a navy-and-white striped T-shirt")],
+    "no looking at the camera, no white coat, no stethoscope, no readable text on the monitor, no certificates with text, no product "
+    "anywhere, no knee strap, no third person, no extra fingers, no extra hands"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
