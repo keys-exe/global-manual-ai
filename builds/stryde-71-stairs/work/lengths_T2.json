@@ -376,18 +376,17 @@
       "beat": "L-03a",
       "cut_s": 166.3333,
       "anchor": "husband",
-      "on_screen_s": 6.08,
+      "on_screen_s": 4.42,
       "skip_s": 0.4,
-      "call_s": 6,
-      "flag": "SPLIT \u2014 needs 7.0s, over 6s; split the phrase into two clips at a word boundary"
+      "call_s": 6
     },
     {
       "beat": "C-01a",
-      "cut_s": 172.4167,
-      "anchor": "strap.",
-      "on_screen_s": 2.5,
+      "cut_s": 170.75,
+      "anchor": "That",
+      "on_screen_s": 4.17,
       "skip_s": 0.4,
-      "call_s": 4
+      "call_s": 6
     },
     {
       "beat": "C-02a",

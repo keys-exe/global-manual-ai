@@ -286,4 +286,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
       - PR-04a jogs toward a locked camera and stays in frame.
     - M-04a and M-04b are on the board.
     - Kie's file host serves some finished renders at about 1 KB/s and drops the connection. A resumed curl join of R-02b came out corrupt, so it was deleted; P-01a v2 and R-02b now download clean from zero with getclean.py (scratchpad), which verifies the file decodes before it goes in.
+  - **Act 6 + Act 5 Fixes (2026-09-30).**
+    - PR-01b video Fix: "just normal pushing the wagon she should not be struggling". Generation 2: she straightens out of the lean and pushes lightly, one easy step; straining is banned.
+    - PR-06a: "the stap is too big". The size is fixed in the start image, so this is an image edit of v1 (work/prompts/PR-06a.edit.txt).
+      - Only the strap is shrunk: the shell is about as wide as the mug is tall, with the band looped behind it.
+      - The PR-06a video waits for the user to confirm the new image.
+    - Plan: C-01a's cut key moved from "strap" to "That", so L-03a no longer runs over the next line. L-03a now needs 6 s and C-01a 6 s; lengths refreshed.
+    - Act 6 videos v1 (work/video_act6.py): L-01a, L-01b, L-02a, L-02b, L-03a. All pass preflight, locked camera, the strap hidden under the jeans.
+    - PR-05a v1 arrived truncated from Kie's file host and is being re-downloaded clean.
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.

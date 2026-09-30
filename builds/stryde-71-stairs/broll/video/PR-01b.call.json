@@ -3,7 +3,7 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"pr_01b\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Camera fixed in place on a small tripod-like hold, only the faintest breath of movement, the frame never pans, tilts, follows or travels. Still at the cut.\",\"framing\":\"MEDIUM as in the start frame, in the back garden, the woman pushing the wheelbarrow.\"},\"motion\":\"She leans in and pushes the loaded wheelbarrow forward in one easy push, taking one step with it over about a second, smiling; the soil stays in the barrow. Her trousers cover her knees. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, skin, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no camera travelling, no cut, no music, no voice, no text, no captions, no strap showing, no strap over the trousers, no product, no soil spilling, no wheelbarrow changing shape, no second push\"}",
+ "prompt": "{\"shot\":\"pr_01b\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Camera fixed in place on a small tripod-like hold, only the faintest breath of movement, the frame never pans, tilts, follows or travels. Still at the cut.\",\"framing\":\"MEDIUM as in the start frame, in the back garden, the woman with the wheelbarrow.\"},\"motion\":\"She straightens up easily from the lean into a relaxed, upright stance and pushes the loaded wheelbarrow forward lightly with ONE easy step in about a second — no effort, no strain, her arms relaxed, a calm smile, as if it weighs nothing. The soil stays in the barrow. Her trousers cover her knees. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, skin, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no camera travelling, no cut, no music, no voice, no text, no captions, no strap showing, no strap over the trousers, no product, no straining, no struggling, no lunging, no leaning hard, no gritted teeth, no soil spilling, no wheelbarrow changing shape\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
@@ -13,19 +13,20 @@
  "pace": "unhurried",
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "generation": 2,
  "risks": [
+  {
+   "risk": "she strains again",
+   "prevented_by": "'no effort, no strain… as if it weighs nothing' + no straining / no lunging (user)"
+  },
   {
    "risk": "wheelbarrow warps",
    "prevented_by": "HOLD"
   },
   {
-   "risk": "hands fuse with the handles",
-   "prevented_by": "finger clause"
-  },
-  {
-   "risk": "strap appears over the trousers",
-   "prevented_by": "no strap showing (user: under the trousers)"
+   "risk": "strap shows",
+   "prevented_by": "no strap showing (under the trousers)"
   }
- ]
+ ],
+ "fix_note": "v1 had her lunge and strain against the wheelbarrow (motion fault, user: 'just normal pushing the wagon she should not be struggling') → she rises out of the lean into an easy upright stance and pushes the barrow lightly one relaxed step, no effort, no strain"
 }
