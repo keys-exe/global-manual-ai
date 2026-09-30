@@ -3,29 +3,30 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"p_01a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut. The camera never travels.\",\"framing\":\"MEDIUM as in the start frame, from the hall below and to the side of the stairs, looking up at her on the flight.\"},\"motion\":\"Going down her stairs backwards, facing up the flight, she lowers her right foot behind her onto the step below in one slow, careful step over about two seconds, her hand gripping the handrail and her weight shifting onto that foot as it lands, her body sinking one step lower; then she pauses there, still holding the rail. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, skin, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no camera travelling, no cut, no music, no voice, no text, no captions, no walking forwards, no turning around, no stumbling, no fall, no second step\"}",
+ "prompt": "{\"shot\":\"p_01a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Camera fixed in place on a small tripod-like hold, only the faintest breath of movement, the frame never pans, tilts, follows or travels. Still at the cut.\",\"framing\":\"MEDIUM-WIDE as in the start frame, from the hall floor looking up the flight at her back, halfway up the stairs.\"},\"motion\":\"ONLY ONE STEP IN THE WHOLE CLIP. Facing up the stairs, both hands on the handrail, she lowers her right foot behind her onto the step just below, then her left foot joins it on that SAME step, the two slippers side by side again after about two seconds — then she stays still there, both feet together on that one step, to the end of the clip. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, skin, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no camera travelling, no cut, no music, no voice, no text, no captions, no second step, no turning around, no facing the camera, no walking forwards, no alternating feet, no feet on different steps at the end, no hand off the handrail, no stumbling, no fall\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "broll/images/P-01a_img_v4.png",
+ "start_image": "broll/images/P-01a_img_v6.png",
  "start_approved": true,
  "pinned": false,
  "pace": "unhurried",
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "generation": 2,
  "risks": [
   {
-   "risk": "legs and steps blend on the stairs",
-   "prevented_by": "side view, one step only, camera never travels (§27G stairs staging)"
+   "risk": "she walks down several steps",
+   "prevented_by": "'ONLY ONE STEP IN THE WHOLE CLIP' + no second step / no alternating feet"
   },
   {
    "risk": "she turns to face down the stairs",
-   "prevented_by": "'facing up the flight' + negatives no turning around / no walking forwards"
+   "prevented_by": "'facing up the stairs' + no turning around"
   },
   {
-   "risk": "hand fuses with the handrail",
-   "prevented_by": "PERSON finger clause + HOLD"
+   "risk": "legs blend on the stairs",
+   "prevented_by": "locked camera, one step only (§27G stairs staging)"
   }
- ]
+ ],
+ "fix_note": "the v1 video was made from the old image (seen from the side, she was on the wrong step); user asked for a new image of her back, halfway up, coming down backwards with both feet on each step → new confirmed image v6; one step-to only, both feet end together and hold, camera fixed"
 }

@@ -1,1 +1,9 @@
-{"taskId": "1d932476ad94a1601670d59ac2ca7139", "created": true}
+{
+  "taskId": "1d932476ad94a1601670d59ac2ca7139",
+  "state": "success",
+  "credits": 54.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/1d932476ad94a1601670d59ac2ca7139_1_1790766335_8086.mp4"
+  ]
+}

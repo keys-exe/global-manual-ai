@@ -264,4 +264,18 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - P-01b video v2 (user: "same step on the stair both feet"): generation 2 of that shot. Locked camera, one step-to only, both feet end together on the same step and hold; alternating feet are banned (work/video_act2.py, preflight PASS). v1 is on the Old board. A third generation needs the user's go (§22X).
     - P-01a (user: "we should be looking at her back… walking down backwards same step both feet"): a new image first (v5, 12 Kie credits; v4 and the old video v1 moved to the Old board). Shot from the hall floor at the foot of the stairs looking up at her back; she comes down backwards facing up the flight, both hands on the rail, both feet on one step. nano-banana-pro gave Kie "Internal Error" (no charge), so it went on nano-banana-2. The P-01a video waits for the user to confirm this image. It will be video generation 2 and needs a fix_note.
     - Act 2 videos v1: T-01a 3 s, T-01b 5 s, T-02a 3 s, T-02b 5 s, T-03a 4 s. All are on the board To check. They used a locked camera and anatomy shots held still. 360 Kie credits, plus 72 for P-01b v2.
+  - **Round 2026-09-30.**
+    - P-01a image v6. User: "she should be way more up like half way of the stairs". Now about seven empty steps sit between the hall floor and her heels. v5 is on the Old board.
+    - T-03a image v2. User: "should be the ghost limb anatomy here". Switched to ANAT-B (no muscle layer). anat() in work/broll.py now takes `dens`. Image v1 and the old video v1 are on the Old board.
+    - Act 3 videos v1: R-01a, R-02a, R-02b, R-03a, R-04a, R-05a, R-06a, R-07a.
+      - Built with work/video_act3.py; all pass preflight.
+      - Locked camera. A RIGID strap clause goes on every beat that shows the strap.
+      - R-07a is 6 s of her walking down forwards, hands free.
+      - The R-02b download from Kie's file host crawled at about 1 KB/s, so it is being resumed with curl.
+    - After the user's check:
+      - R-03a video Fix: "make her just showing the stryde strap". Generation 2: hands stay on her thighs and she turns the knee a little toward the camera.
+      - R-05a video Fix: "dont make her turn it over". Generation 2: hands still, the strap flat, the same side up.
+      - P-01a and T-03a videos: generation 2 from the new confirmed images, each with a fix_note.
+    - Act 4 videos v1: M-01a through M-06a (work/video_act4.py), all pass preflight. Anatomy shots use a completely still camera.
+    - M-03a runs 8 s as one clip, not split: E6 needs 7.6 s, and the §27G 6 s cap applies to human motion, not an anatomy pulse.
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
