@@ -263,3 +263,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **B14b v3** (Fix "FIX THE PRODUCT"): edit of v2 with back_inner.jpg as Image 1 — outline and pad closer to the photo; still held upright. Image v2 + video v1 (rubbery) moved to Old.
 - **B14c v3** (Fix "FIX SIZE BIGGER"): edit of v2 — the strap now spans the whole front of the leg, slide to slide, below the kneecap, wordmark readable. v2 moved to Old.
 - Learned: an image edit swaps or resizes a product well (B13, B14c) but does not move a worn product to a new place on the body (B14a) — placement changes need a fresh render.
+
+### 2026-09-30 — "FIX AND CONFIRM": B13 v5, B14a v4, B14b v4; B14c GO → video
+- **B13 v5** (Fix "CHANGE THE IMAGE, MAKE SURE THE PRODUCT IS RIGHT AND THE SIZE"): new image — the strap across her one open palm, two peaks + notch, chevron slides, wordmark readable, about palm-width (true size), band hanging behind. Shot came out front-on rather than from above.
+- **B14a v4** (Fix "MAKE SURE THE STRAP STAY IN THAT PLACE"): fresh render asked front-on with the strap already seated below the kneecap. **Flaw: the model went side-on again and the strap sits on the side of the knee — third miss on placement.** Next go: an image edit built on worn_front.jpg (the real worn-placement photo, front-on) — her legs, skirt and stairs put round the real strap — rather than a render or an edit of our own frames.
+- **B14b v4** (Fix "FIX THE PRODUCT SHOWING THE STRAP"): edit of v3 — the whole strap now, the band one closed loop with its keeper, pad to the lens. Reads right.
+- **B14c video v1** (user "GO", 4 s, task `f7e3bbda…`): the glow calms, but **flaws: the camera pushes in a little and the strap creeps up to the kneecap in the last second.** Trim to the first ~2.5 s in the edit, or Fix.
+- Replaced versions moved to Old (docs + files).

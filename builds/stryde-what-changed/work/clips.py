@@ -694,7 +694,25 @@ B["B14b"] = clip("B14b",
            {"risk": "the strap turns right round to its front", "prevented_by": "'the pad stays facing the lens', 'no strap turning round, no front of the shell showing'"},
            {"risk": "the strap grows in the hand (the Fix was size)", "prevented_by": "'keeps its size and shape', 'no strap changing size'"}])
 
-START = {"B14a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_160315_08cf3855-d502-4d9f-8d7c-ef5460eee8fb.png",
+# B14c image v3 (user Fix 'FIX SIZE BIGGER', then 'GO'): ANAT front-on, the real strap seated below the kneecap spanning the leg.
+# One slow fade: the warm glow on the tendon under the strap calms to a soft pearly light; the strap never moves (rigid product).
+B["B14c"] = clip("B14c",
+    "A premium 3D anatomical model of a knee seen straight from the front on a near-black field, a black STRYDE knee strap with two "
+    "rounded peaks, chrome slides and a grey stryde wordmark seated across the front of the leg just below the kneecap.",
+    "Already under load on the first frame: a soft warm glow shows on the tendon at the edges of the strap; over about two seconds it "
+    "fades and cools to a calm, even pearly light as the strap takes the load, then stays calm. The strap stays exactly where it is — "
+    "rigid, its shape, peaks and wordmark unchanged; the kneecap stays uncovered above it.",
+    "no strap moving, no strap sliding, no strap changing shape, no strap changing size, no wordmark changing, no second strap, no "
+    "arrows, no text, no labels, no glow spreading down the shin, no second limb, no camera orbit, no zoom",
+    3.0, hi=5,
+    risks=[{"risk": "the strap warps or the wordmark smears", "prevented_by": "rigid-product line in motion, 'no strap changing shape/size, no wordmark changing'"},
+           {"risk": "the strap slides up onto the kneecap", "prevented_by": "'stays exactly where it is', 'no strap moving, no strap sliding'"},
+           {"risk": "the glow spreads or text appears", "prevented_by": "'no glow spreading down the shin', 'no arrows, no text, no labels'"}])
+
+B["B14c"][0]["motion"] = B["B14c"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the strap never moves")
+
+START = {"B14c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_163337_ba5e6993-4e59-4bf8-8ec8-9aeb85e5a9de.png",
+         "B14a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_160315_08cf3855-d502-4d9f-8d7c-ef5460eee8fb.png",
          "B14b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_160315_ab4a6700-d742-40b1-8b0d-6eb4c68382da.png",
          "B11-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_144242_82c48d6d-785c-454d-91a5-bfea8bd28bcb.png",
          "B12": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_0a389350-3a9a-410e-a56c-5b29e5ee4659.png",

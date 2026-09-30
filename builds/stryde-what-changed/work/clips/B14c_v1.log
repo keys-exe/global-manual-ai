@@ -1,0 +1,12 @@
+{"taskId": "f7e3bbdac8ba32910326b5a9ce36adeb", "created": true}
+{
+  "taskId": "f7e3bbdac8ba32910326b5a9ce36adeb",
+  "state": "success",
+  "credits": 72.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/f7e3bbdac8ba32910326b5a9ce36adeb_1_1790786750_6285.mp4"
+  ],
+  "saved": "clips/B14c_v1.mp4",
+  "model": "kling-3.0/video"
+}
