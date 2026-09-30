@@ -904,6 +904,38 @@ START = {"B17c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv
          "B06": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140945_6ede13f8-ffce-4d69-b55d-17a1c9d5ea6f.png",
          "B06-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_215145_b3e86d93-f337-4226-9feb-1ae2a35a886e.png"}
 
+# ── 2026-09-30 "FIX AND CONFIRM": B18b v1 / B19a v1 images confirmed (Kie renders — start frames are the local board copies) ──
+B["B18b"] = clip("B18b",
+    "A white British woman of sixty-nine with soft white hair, in a sage-green cardigan, white T-shirt and mid-blue denim skirt, coming "
+    "DOWN her carpeted stairs towards the camera, facing forwards, her left hand light on the honey oak handrail, a black STRYDE strap "
+    "seated just below her right kneecap, white plimsolls.",
+    "Already mid-step on the first frame: she comes down one more stair towards the camera, facing forwards, easy and unhurried — her "
+    "left foot lands on the stair below, about a second and a half — then her weight settles onto it, her hand sliding lightly along "
+    "the rail. The strap stays exactly where it is on her leg — rigid, keeping its shape, size and wordmark, moving only as one piece "
+    "with the knee.",
+    "no strap moving, no strap sliding, no strap changing shape, no strap on the left leg, no stumbling, no hurrying, no going up the "
+    "stairs, no turning sideways, no looking into the lens, no camera movement, no extra legs, no extra hands",
+    3.0, hi=5,
+    risks=[{"risk": "legs or feet warp on the stair", "prevented_by": "one step at a countable pace, caught mid-step, HOLD-C + NEG-WARP-C"},
+           {"risk": "the strap slides or changes", "prevented_by": "rigid line; 'no strap moving/sliding/changing shape'"},
+           {"risk": "the camera travels with her", "prevented_by": "locked-off tripod clause, 'no camera movement'"}])
+B["B19a"] = clip("B19a",
+    "A white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt and a denim skirt, sitting on her "
+    "bottom stair seen from above, both knees side by side, a black STRYDE strap seated just below her right kneecap, her left knee "
+    "bare, both hands resting on her thighs, white plimsolls on the hall carpet.",
+    "Already breathing out on the first frame: one slow, relaxed breath out, about a second and a half — her shoulders drop a little and "
+    "settle; her hands stay resting on her thighs and her knees stay still. The strap does not move at all — rigid, keeping its shape, "
+    "size and wordmark.",
+    "no strap moving, no strap appearing on the left knee, no second strap, no hands moving to the strap, no standing up, no camera "
+    "movement, no extra legs, no extra hands, no extra fingers",
+    3.0, hi=5,
+    risks=[{"risk": "a strap appears on the bare left knee", "prevented_by": "'no strap appearing on the left knee, no second strap'"},
+           {"risk": "hands drift and pull the strap", "prevented_by": "hands stay resting; 'no hands moving to the strap'"},
+           {"risk": "the face warps", "prevented_by": "one small breath only, HOLD-C + NEG-WARP-C"}])
+for _b in ("B18b", "B19a"):
+    B[_b][0]["motion"] = B[_b][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little; the strap never moves")
+START.update({"B18b": str(HERE.parent / "broll/B18b_v1.png"), "B19a": str(HERE.parent / "broll/B19a_v1.png")})
+
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

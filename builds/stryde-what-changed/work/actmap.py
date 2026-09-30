@@ -272,9 +272,9 @@ BB("B17c", A3, "and nobody can see it.", "nobody", "CONCEALED (§9D, F8)",
 # ============================================================ ACT 4 — proof, the test, the offer, the close
 TH("B18-TH", A4, "The thing people write to us about most is not the pain.")
 BB("B18a", A4, "It is that the knee stops feeling like a rusty hinge.", "hinge", "outcome (F9)",
-   "R2", "L-D-STAIRS", "D-D2", "CU Desmond's strapped right knee bending smoothly as he sits down onto the bottom stair — already lowering, ends seated", "sits down, ends on contact",
-   "about a second and a half", STILL, "sitting down: start mid-movement, end on contact, 3s", "no", "worn", "VISIBLE", "NBP",
-   EYE, THR, "clean", "CU", "", "product", "medium", L(D_SUN, "R"), False, ledger="F9", mx=3)
+   "R2", "L-D-STAIRS", "D-D2", "Desmond crouches easily at the foot of his stairs to tie his trainer, the strapped right knee deeply bent front-on, a relaxed smile (fix: positive result; edit of B18a v1)", "his hands pull the lace tight",
+   "one pull, about a second", STILL, "crouched, hands at the laces, camera still", "no", "worn", "VISIBLE", "NBP",
+   LOW, FRO, "clean", "MEDIUM", "low = at his knee, the bend is the point", "product", "medium", L(D_SUN, "R"), True, ledger="F9", mx=3)
 BB("B18b", A4, "They stop planning the stairs before they get to them.", "stairs", "outcome (F9)",
    "R1", "L-M-STAIRS", "M-D2", "WIDE from the foot of the stairs: Maureen at the top starts straight down, facing forwards, hand light on the rail", "one step down, facing forwards",
    "one step, about a second and a half", STILL, "stairs: facing forwards, full figure small in frame, camera still at the foot", "no", "worn", "VISIBLE", "NBP",
@@ -285,9 +285,9 @@ BB("B19a", A4, "Put one on one knee only. Leave the other bare.", "bare", "the s
    "one breath, about a second", STILL, "none", "no", "worn (one knee)", "VISIBLE", "NBP",
    HIGH, FRO, "clean", "CU", "high = her own view, the comparison", "product", "medium", L(M_SUN, "R"), False, notes="one strapped knee, one bare — the script's test (SIDE_RULE)")
 BB("B19b", A4, "Go to your own stairs and come down forwards.", "forwards", "the self-test",
-   "R1", "L-M-STAIRS", "M-D2", "from the side, waist-down: Maureen comes down one stair facing forwards, hand light on the rail", "one step down, facing forwards",
-   "one step, about a second and a half", STILL, "stairs: side, waist-down, camera still, hand on the rail visible", "no", "worn", "VISIBLE", "NBP",
-   EYE, PRO, "through", "MEDIUM", "through the spindles: the same view as the hook, now forwards", "product", "medium", L(M_SUN, "L"), False, notes="mirror_of HK1-a")
+   "R1", "L-M-STAIRS", "M-D2", "front-on, waist-down: continuing B19a, she stands and steps down off the bottom stair forwards, strap on the right knee, the left bare, hand on the newel post (fix: 'CONTINUE OF B19A')", "one step down, facing forwards",
+   "one step, about a second and a half", STILL, "stairs: front-on, waist-down, camera still, hand on the newel post", "no", "worn", "VISIBLE", "NBP",
+   EYE, FRO, "clean", "MEDIUM", "front = she comes down to us, the test", "product", "medium", L(M_SUN, "R"), False)
 TH("B19-TH2", A4, "You will know in a minute. Not because the arthritis has gone. It is still there, and nothing here changes that.", framing="punch")
 BB("B20", A4, "Because the weight is not landing on that band any more.", "weight", "mechanism — protection (pip)",
    "ANAT", "—", "—", "ANAT-A: the strap seated, the step pulse arriving and spreading off the tendon, the spot staying calm", "one step pulse, the spot stays cool",
@@ -392,18 +392,18 @@ BB("B15-BR", A3, "The placement is the whole thing.", "placement", "placement, m
    "R1", "L-M-STAIRS", "M-D2", "ECU seated on her bottom stair: two fingers laid flat just below her kneecap, measuring the spot, the strap held ready in her other hand", "the strap's pad lowers onto the measured spot",
    "one placement, about two seconds", STILL, "seated, knee and hands only, camera still", "no", "held", "the pad and shell", "NBP",
    HIGH, THR, "clean", "ECU", "high = her own view, measuring", "hands", "shallow", L(M_SUN, "R"), False, notes="covers B15-TH; PLACE-LOCK")
-BB("B18-BR", A4, "The thing people write to us about most is not the pain.", "write", "the letters",
-   "hands", "L-KITCHEN", "K-D1", "overhead on the oak table: a small pile of handwritten cards and letters, the handwriting too soft to read; a hand spreads them out", "the letters spread out",
-   "one spread, about two seconds", STILL, "table top, hands only, camera still", "no", "absent", "—", "NB2",
-   OVER, FRO, "clean", "CU", "overhead = the letters laid out, read", "hands", "medium", L(KITCH, "R"), False, notes="covers B18-TH; no readable handwriting")
+BB("B18-BR", A4, "The thing people write to us about most is not the pain.", "write", "people writing to us",
+   "R1", "L-KITCHEN", "K-D1", "MEDIUM at her kitchen table: Maureen types a message on her phone with a small warm smile, a cup of tea, the screen turned away (fix: 'DIFFERENT BROLL HERE')", "her thumbs type, she smiles",
+   "a few taps, about two seconds", STILL, "table, seated, camera still", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "MEDIUM", "eye three-quarter = with her as she writes", "face", "shallow", L(KITCH, "R"), True, notes="covers B18-TH; no readable screen")
 BB("B19-BR", A4, "And you do not have to take my word for any of it.", "word", "try it yourself",
-   "R1", "L-M-STAIRS", "M-D2", "MEDIUM from behind at the foot of her stairs: Maureen holds one strap in her hand and looks up the flight", "she lifts her eyes up the stairs",
-   "one look up, about two seconds", STILL, "hall: from behind, the strap in her hand, camera still", "no", "held", "the strap in her hand", "NBP",
-   EYE, BEH, "clean", "MEDIUM", "from behind = her test, her stairs", "deep", "deep", L(M_SUN, "L"), False, notes="covers B19-TH")
-BB("B19-BR2", A4, "You will know in a minute. Not because the arthritis has gone. It is still there, and nothing here changes that.", "minute", "coming down with ease",
-   "R1", "L-M-STAIRS", "M-D2", "CU side-on: her hand lets go of the oak handrail as she comes down the stairs steadily", "her hand lifts off the rail mid-step",
-   "one step, about a second and a half", STILL, "stairs: side-on, hand and rail, camera still", "no", "absent", "—", "NB2",
-   EYE, PRO, "clean", "CU", "profile = the hand leaving the rail", "hands", "shallow", L(M_SUN, "L"), False, ledger="F9", notes="covers B19-TH2; no claim shown beyond ease")
+   "R1", "L-M-STAIRS", "M-D2", "MEDIUM from a little above, chest to plimsolls: seated on her bottom stair, the open box of two on her lap, her hands lift one strap out (fix: 'DIFFERENT BROLL HERE')", "she lifts the strap out of the box",
+   "one lift, about a second and a half", STILL, "seated, hands and box, camera still", "no", "held", "the strap and the open box", "NBP",
+   HIGH, FRO, "clean", "MEDIUM", "high = her own view of what she is about to try", "product", "medium", L(M_SUN, "R"), False, notes="covers B19-TH")
+BB("B19-BR2", A4, "You will know in a minute. Not because the arthritis has gone. It is still there, and nothing here changes that.", "minute", "she notices",
+   "R1", "L-M-STAIRS", "M-D2", "MEDIUM waist-up at the foot of the stairs she has just come down: Maureen, hand on the newel post, a quiet surprised smile (fix: different B-roll)", "a small smile forms",
+   "one breath, about two seconds", STILL, "standing, waist-up, camera still", "no", "absent", "—", "NBP",
+   EYE, THR, "clean", "MEDIUM", "three-quarter = her private moment of noticing", "face", "shallow", L(M_SUN, "R"), True, ledger="F9", notes="covers B19-TH2; no claim shown beyond ease")
 BB("B21-BR", A4, "So here is the choice. Keep aiming at the joint, which is where it hurts but not where the load is.", "joint", "aiming at the joint",
    "R2", "L-D-STAIRS", "D-D1", "CU seated on his bottom stair: Desmond's hand rubs clear gel in slow circles over his whole kneecap", "two slow circles of the hand",
    "two circles, about two seconds", STILL, "seated, knee and hand only, camera still", "no", "absent", "—", "NB2",

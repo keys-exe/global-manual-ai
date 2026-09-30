@@ -1,0 +1,33 @@
+{
+ "beat": "B19a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b19a\",\"subject\":\"A white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt and a denim skirt, sitting on her bottom stair seen from above, both knees side by side, a black STRYDE strap seated just below her right kneecap, her left knee bare, both hands resting on her thighs, white plimsolls on the hall carpet. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already breathing out on the first frame: one slow, relaxed breath out, about a second and a half — her shoulders drop a little and settle; her hands stay resting on her thighs and her knees stay still. The strap does not move at all — rigid, keeping its shape, size and wordmark. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair and fabric lag a little; the strap never moves; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no strap moving, no strap appearing on the left knee, no second strap, no hands moving to the strap, no standing up, no camera movement, no extra legs, no extra hands, no extra fingers, no music, no speech, no slow motion\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-what-changed/broll/B19a_v1.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "a strap appears on the bare left knee",
+   "prevented_by": "'no strap appearing on the left knee, no second strap'"
+  },
+  {
+   "risk": "hands drift and pull the strap",
+   "prevented_by": "hands stay resting; 'no hands moving to the strap'"
+  },
+  {
+   "risk": "the face warps",
+   "prevented_by": "one small breath only, HOLD-C + NEG-WARP-C"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}
