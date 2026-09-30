@@ -242,10 +242,19 @@ BB("B16b", A3, "Three years with orthopedic surgeons.", "surgeons", "authority �
    "S1", "L-CONSULT", "S1-D1", "MCU at his desk, the knee model beside him, he holds the strap still at chest height and looks up from it", "lifts his eyes from the strap to the patient",
    "one look up, about a second", STILL, "none", "no", "held", "—", "NBP",
    EYE, THR, "clean", "MCU", "", "eyes", "medium", L(CONS, "L"), True, notes="APPROACH-PRO")
-BB("B16c", A3, "Two hundred thousand people wearing one.", "thousand", "social proof — held",
-   "R2", "L-STREET", "D-D2", "knee-and-shin only, walking toward the lens on the pavement, the strap staying put (made from worn_front.jpg)", "three walking steps toward the lens",
-   "one step per second, normal walking speed", STILL, "walking toward camera: feet/knee only, 3 steps", "no", "worn", "VISIBLE", "NBP",
+BB("B16c", A3, "Two hundred thousand people wearing one.", "thousand", "social proof — worn (1 of 3)",
+   "one-off", "L-PARK", "one-off", "ground-level front-on: a British Indian woman in her sixties walking a park path towards the lens, the strap on her right knee (v2: user 'GIVE ME 3 BROLLS FOR THIS LINE, WALKING WEARING STRYDE'; edit of worn_front.jpg)", "two easy walking steps",
+   "one step per second, easy walking pace", STILL, "walking toward camera: knee and shin only", "no", "worn", "VISIBLE", "NBP",
    GROUND, FRO, "clean", "CU", "ground = steps and legs", "product", "deep", L(STREET_PM, "L"), False, eg="200,000+ overlay (post)")
+BB("B16c2", A3, "Two hundred thousand people wearing one.", "thousand", "social proof — worn (2 of 3)",
+   "one-off", "L-PROMENADE", "one-off", "low three-quarter: a white British man about seventy walking a seaside promenade, the strap on his right knee (user 'GIVE ME 3 BROLLS FOR THIS LINE'; edit of worn_front.jpg)", "two easy walking steps",
+   "one step per second, easy walking pace", STILL, "walking toward camera: knee and shin only", "no", "worn", "VISIBLE", "NBP",
+   LOW, THR, "clean", "CU", "low three-quarter: another life, same strap", "product", "deep", L(STREET_PM, "R"), False)
+BB("B16c3", A3, "Two hundred thousand people wearing one.", "thousand", "social proof — worn (3 of 3)",
+   "one-off", "L-HIGHSTREET", "one-off", "eye-level front-on CU: a Black British woman in her late fifties walking a high street, shopping bag in hand, the strap on her right knee (user 'GIVE ME 3 BROLLS FOR THIS LINE'; edit of worn_front.jpg)", "two easy walking steps",
+   "one step per second, easy walking pace", STILL, "walking toward camera: knee and shin only", "no", "worn", "VISIBLE", "NBP",
+   EYE, FRO, "clean", "CU", "front-on: everyday, everywhere", "product", "deep", L(STREET_PM, "L"), False)
+
 BB("B17a", A3, "Ten seconds to put on.", "Ten", "feature (F8)",
    "R2", "L-D-STAIRS", "D-D3", "front-on CU on his stairs, the navy tracksuit leg bunched above the bare knee, both hands pressing the strap's two ends into place under the kneecap (v2: edit of B17c v1)", "his hands let go of the seated strap",
    "one release, about a second", STILL, "hands: let go, the strap never moves", "no", "seated", "VISIBLE", "NBP",
@@ -405,7 +414,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06a2', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B10d2', 'B11-TH', 'B11-BR', 'B12', 'B12b', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06a2', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B10d2', 'B11-TH', 'B11-BR', 'B12', 'B12b', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B16c2', 'B16c3', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []

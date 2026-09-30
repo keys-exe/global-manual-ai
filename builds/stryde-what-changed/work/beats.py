@@ -1219,6 +1219,31 @@ B["B17c"] = (NBP, ["B16CV1", "R2"], (
     "No strap is visible anywhere. A real phone photo.\n\nAVOID: no visible strap, no bulge under the trousers, no outline of a strap "
     "under the fabric, no bare knee, no shorts, no rolled-up trousers, no logos on the trainer, no stripes, no extra legs"))
 
+# ── 2026-09-30 B16c ×3 — "Two hundred thousand people wearing one." User Fix 'GIVE ME 3 BROLLS FOR THIS LINE, WALKING WEARING STRYDE'.
+# Three different one-off people out walking with the strap on, each an edit of worn_front.jpg (placement stays right, FP03/FP12). ──
+def walker(person, clothes, place, light_side, cam="the camera low, near knee height, straight on", extra=""):
+    return ("Edit Image 1. " + KEEP_STRAP + " Change ONLY the person, the step and the place: the leg is now " + person + ". Instead of "
+            "the dark shorts, " + clothes + ". They are out WALKING TOWARDS THE CAMERA " + place + ", soft and out of focus behind — "
+            "this leg planted mid-stride, the knee slightly bent" + extra + "; " + cam + ". Warm afternoon sun from the " + light_side +
+            ". A real phone photo.\n\nAVOID: " + EDIT_NEG.replace(", no hairy legs", "") + ", no logos on the shoes, no swoosh, no "
+            "brand marks, no running, no extra legs")
+B["B16c"] = (NBP, ["PWE"], walker(
+    "a British Indian woman in her sixties — warm brown older skin, a few faint creases over the kneecap, real unretouched skin",
+    "the hem of a knee-length navy floral cotton skirt just above the knee",
+    "along a tarmac path through a green English park — mown grass, big old trees, a wooden bench",
+    "left", extra=", a plain white canvas plimsoll on the path at the foot of the frame"))
+B["B16c2"] = (NBP, ["PWE"], walker(
+    "a white British man about seventy — pale, weathered older skin, grey hairs on the shin, real unretouched skin",
+    "the hem of stone-coloured cotton walking shorts just above the knee",
+    "along a seaside promenade — pale paving, blue railings, the grey-blue sea and a pale sky",
+    "right", cam="the camera low, near knee height, a little to one side so the leg is seen three-quarter on — the strap's front still "
+    "facing the camera enough that the wordmark reads", extra=", a plain grey walking shoe on the paving"))
+B["B16c3"] = (NBP, ["PWE"], walker(
+    "a Black British woman in her late fifties — deep brown skin, smooth with soft creases at the knee, real unretouched skin",
+    "the hem of a knee-length khaki cotton skirt just above the knee, a paper shopping bag swinging lightly at her side",
+    "along a busy British high-street pavement — shopfronts with no readable signs, other people blurred far behind",
+    "left", cam="the camera at knee height, straight on", extra=", a plain tan leather flat on the paving"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

@@ -3,31 +3,33 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"b17b\",\"subject\":\"An older white woman's pale right leg seen front-on at knee height on her stairs, the hem of a denim skirt above, a black STRYDE strap seated just below the kneecap, her white plimsoll on the bottom stair. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: she steps down off the bottom stair onto the hall floor towards the lens — one ordinary step, about a second — then stands. The strap does not move at all — rigid, keeping its shape, size and wordmark on her leg, never rolling down. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; fabric lags a little; the strap never moves; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no strap moving, no strap rolling down, no strap sliding, no strap bending, no wordmark changing, no stumbling, no face, no camera movement, no extra legs, no music, no speech, no slow motion\"}",
+ "prompt": "{\"shot\":\"b17b\",\"subject\":\"An older white woman's pale right leg seen front-on from low on a pavement, the hem of a denim skirt above, a black STRYDE strap seated just below the kneecap, a white plimsoll on the paving, a street of semis soft behind. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already mid-stride on the first frame: she walks towards the lens at an easy walking pace, two steps, about two seconds, and her legs pass just out of the bottom of the frame. The strap stays exactly where it is on her leg, never rolling down or sliding — rigid, keeping its shape, size and wordmark, moving only as one piece with the knee. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; fabric lags a little with each step; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no running, no strap sliding, no strap rolling down, no strap moving up, no strap changing shape, no wordmark changing, no face, no camera movement, no extra legs, no music, no speech, no slow motion\"}",
  "duration": 4,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172429_9cd0c861-73b5-4458-b5f3-7605104c44d8.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_180845_347779b9-c72d-43c5-b420-25576b1b839c.png",
  "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,
  "subject_motion": "travels",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "generation": 2,
  "risks": [
   {
    "risk": "the strap slips (the line says it doesn't)",
-   "prevented_by": "rigid line; 'no strap rolling down/sliding'"
+   "prevented_by": "rigid line; 'no strap sliding/rolling down'"
   },
   {
-   "risk": "legs warp on the step",
-   "prevented_by": "one ordinary step, HOLD-C + NEG-WARP-C, 'no extra legs'"
+   "risk": "legs warp mid-stride",
+   "prevented_by": "easy walking pace, two steps, HOLD-C + NEG-WARP-C, 'no extra legs'"
   },
   {
-   "risk": "the camera follows",
-   "prevented_by": "locked-off tripod clause"
+   "risk": "the camera tracks her",
+   "prevented_by": "locked-off tripod clause, 'no camera movement'"
   }
  ],
- "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)",
+ "fix_note": "video v1 came from the replaced image (stepping off her stair) → user Fix 'USING OR WALKING': new image, walking on the pavement, strap rigid",
+ "user_go": "user: FIX AND CONFIRM on image v3 (2026-09-30)"
 }

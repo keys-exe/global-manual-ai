@@ -308,3 +308,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **B17b v3** (Fix "USING OR WALKING"): edit of B15 v1 — Maureen walking towards the lens on the pavement, the strap in use and in place. Image v2 + video v1 moved to Old 2; the video waits for the new image's Confirm.
 - **B17c v4** (Fix "WALKING WEARING PANTS"): edit of B16c v1 — Desmond's same stride on the pavement in long navy trousers covering the knee; nothing shows. Flaw carried from B16c: a Nike logo on the trainer. v3 moved to Old 2.
 - Act map rows B17b (L-STREET, LOW FRO) and B17c (L-STREET, GROUND FRO) rewritten; angles pass.
+
+### 2026-09-30 — "FIX AND CONFIRM", then "CONFIRM": B16c ×3; B17b, B17c videos
+- **B16c ×3** (Fix "GIVE ME 3 BROLLS FOR THIS LINE, WALKING WEARING STRYDE"): three one-off people out walking with the strap on, each an edit of worn_front.jpg — B16c v2 a British Indian woman in her sixties on a park path; new B16c2 a white British man about seventy on a seaside promenade (three-quarter); new B16c3 a Black British woman in her late fifties on a high street with a shopping bag. Act map rows added (91 rows, 74 B-roll); angles pass. B16c v1 image + video moved to Old 2.
+- User confirmed all three images → walking videos (4 s each; B16c split in 2 parts on the board). The strap stays in place in all three.
+- **B17b video v2** (Maureen walking on the pavement, strap stays) and **B17c video v1** (Desmond walking in long trousers, nothing shows) — both clean.

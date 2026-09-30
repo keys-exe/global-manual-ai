@@ -751,18 +751,24 @@ B["B16a"] = clip("B16a",
     risks=[{"risk": "the strap slides or bends with the knee", "prevented_by": "rigid line in motion, 'no strap sliding/changing shape'"},
            {"risk": "legs warp on the step", "prevented_by": "one ordinary step, HOLD-C + NEG-WARP-C, 'no extra legs'"},
            {"risk": "the camera follows him", "prevented_by": "locked-off tripod clause, 'no camera movement'"}])
-B["B16c"] = clip("B16c",
-    "A Black British man's strong dark-brown right knee and shin seen front-on from low on a pavement: the hem of khaki shorts above, a "
-    "black STRYDE strap seated just below the kneecap, the grey stryde wordmark readable, a street of semis soft behind.",
-    "Already mid-stride on the first frame: he walks towards the lens at an easy walking pace, two steps, about two seconds, and his "
-    "legs pass just out of the bottom of the frame. the strap stays exactly where it is on the leg — rigid, keeping its shape, size and wordmark, moving only as one piece with the knee.",
-    "no running, no strap sliding, no strap moving up, no strap moving down, no strap changing shape, no strap changing size, no wordmark "
-    "changing, no logos on the trainers, no face, no camera movement, no extra legs",
-    3.0, hi=5,
-    risks=[{"risk": "the strap slides as he walks", "prevented_by": "rigid line, 'no strap sliding/moving'"},
-           {"risk": "legs warp mid-stride", "prevented_by": "easy walking pace, two steps, HOLD-C + NEG-WARP-C, 'no extra legs'"},
-           {"risk": "the camera tracks him", "prevented_by": "locked-off tripod clause, 'no camera movement'"}])
-for _b in ("B15", "B16a", "B16c"):
+def _walker_clip(beat, who):
+    return clip(beat,
+        who + " seen front-on from low, walking towards the lens, a black STRYDE strap seated just below the kneecap, the grey stryde "
+        "wordmark readable, the place soft behind.",
+        "Already mid-stride on the first frame: they walk towards the lens at an easy walking pace, two steps, about two seconds, and "
+        "the legs pass just out of the bottom of the frame. The strap stays exactly where it is on the leg — rigid, keeping its shape, "
+        "size and wordmark, moving only as one piece with the knee.",
+        "no running, no strap sliding, no strap moving up, no strap moving down, no strap changing shape, no strap changing size, no "
+        "wordmark changing, no logos on the shoes, no face, no camera movement, no extra legs",
+        3.0, hi=5,
+        risks=[{"risk": "the strap slides as they walk", "prevented_by": "rigid line, 'no strap sliding/moving'"},
+               {"risk": "legs warp mid-stride", "prevented_by": "easy walking pace, two steps, HOLD-C + NEG-WARP-C, 'no extra legs'"},
+               {"risk": "the camera tracks them", "prevented_by": "locked-off tripod clause, 'no camera movement'"}])
+# B16c ×3 (user 'GIVE ME 3 BROLLS FOR THIS LINE, WALKING WEARING STRYDE', images confirmed)
+B["B16c"] = _walker_clip("B16c", "A British Indian woman in her sixties, a knee-length navy floral skirt, on a park path,")
+B["B16c2"] = _walker_clip("B16c2", "A white British man about seventy, stone walking shorts, on a seaside promenade, seen a little three-quarter,")
+B["B16c3"] = _walker_clip("B16c3", "A Black British woman in her late fifties, a knee-length khaki skirt and a paper shopping bag, on a high street,")
+for _b in ("B15", "B16a", "B16c", "B16c2", "B16c3"):
     B[_b][0]["motion"] = B[_b][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the fabric of the hem lags; the strap never slides")
 
 # ── 2026-09-30 "CONFIRM AND GO": B15-BR, B16b, B17a, B17b (images confirmed). Learned on B13/B14b: a strap in a moving hand bends —
@@ -815,13 +821,44 @@ B["B17b"] = clip("B17b",
 for _b in ("B15-BR", "B16b", "B17a", "B17b"):
     B[_b][0]["motion"] = B[_b][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "fabric lags a little; the strap never moves")
 
-START = {"B15-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172430_65c0e88d-6f35-4e1e-8179-c59137a63188.png",
+# ── 2026-09-30 B17b v3 / B17c v4 images confirmed → walking clips (like B16c) ──
+B["B17b"] = clip("B17b",
+    "An older white woman's pale right leg seen front-on from low on a pavement, the hem of a denim skirt above, a black STRYDE strap "
+    "seated just below the kneecap, a white plimsoll on the paving, a street of semis soft behind.",
+    "Already mid-stride on the first frame: she walks towards the lens at an easy walking pace, two steps, about two seconds, and her "
+    "legs pass just out of the bottom of the frame. The strap stays exactly where it is on her leg, never rolling down or sliding — "
+    "rigid, keeping its shape, size and wordmark, moving only as one piece with the knee.",
+    "no running, no strap sliding, no strap rolling down, no strap moving up, no strap changing shape, no wordmark changing, no face, "
+    "no camera movement, no extra legs",
+    3.0, hi=5,
+    risks=[{"risk": "the strap slips (the line says it doesn't)", "prevented_by": "rigid line; 'no strap sliding/rolling down'"},
+           {"risk": "legs warp mid-stride", "prevented_by": "easy walking pace, two steps, HOLD-C + NEG-WARP-C, 'no extra legs'"},
+           {"risk": "the camera tracks her", "prevented_by": "locked-off tripod clause, 'no camera movement'"}])
+B["B17c"] = clip("B17c",
+    "A Black British man's legs seen front-on from ground level on a pavement, walking in long plain navy trousers that cover his knees, "
+    "white trainers, a street of semis soft behind.",
+    "Already mid-stride on the first frame: he walks towards the lens at an easy walking pace, two steps, about two seconds, and his "
+    "legs pass just out of the bottom of the frame. The trouser fabric moves naturally over the knee with the stride — nothing shows "
+    "underneath.",
+    "no running, no visible strap, no bulge under the trousers, no outline under the fabric, no trousers riding up, no logos on the "
+    "trainers, no face, no camera movement, no extra legs",
+    3.0, hi=5,
+    risks=[{"risk": "an outline of the strap shows through", "prevented_by": "'no bulge, no outline under the fabric, no visible strap'"},
+           {"risk": "legs warp mid-stride", "prevented_by": "easy walking pace, two steps, HOLD-C + NEG-WARP-C, 'no extra legs'"},
+           {"risk": "the camera tracks him", "prevented_by": "locked-off tripod clause, 'no camera movement'"}])
+for _b in ("B17b", "B17c"):
+    B[_b][0]["motion"] = B[_b][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "fabric lags a little with each step")
+
+START = {"B17c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_180847_021f33a1-6deb-4b77-a0e4-71386a5ef51e.png",
+         "B15-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172430_65c0e88d-6f35-4e1e-8179-c59137a63188.png",
          "B16b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172428_cd78f594-03a3-464c-89d0-0bb10b8647fc.png",
          "B17a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172428_558e9117-34fa-4372-915b-a77ceed91aad.png",
-         "B17b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172429_9cd0c861-73b5-4458-b5f3-7605104c44d8.png",
+         "B17b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_180845_347779b9-c72d-43c5-b420-25576b1b839c.png",
          "B15": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_171207_7f990a90-9ac1-4b71-ae5d-db3100e64d28.png",
          "B16a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_171208_c47a0262-949a-4916-b2b9-f3a4f299e573.png",
-         "B16c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_171206_2b9f648e-cf29-49e9-8c84-49836ab0329d.png",
+         "B16c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_181732_31a8a1ec-7792-44d0-8444-46f3d88776ac.png",
+         "B16c2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_181733_a7a7d77c-8e08-4eeb-b086-4c2c542cdba6.png",
+         "B16c3": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_181732_555079af-6939-431b-a6be-491d12f6be49.png",
          "B14c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_163337_ba5e6993-4e59-4bf8-8ec8-9aeb85e5a9de.png",
          "B14a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_164241_ab6052f5-7c35-44e1-8052-a67bfedf24f7.png",
          "B14b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_164932_3277f2fd-1eb7-4b05-8d44-8c7529e34946.png",
