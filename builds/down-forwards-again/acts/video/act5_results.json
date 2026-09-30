@@ -1,0 +1,74 @@
+{
+ "PR-12.v2": {
+  "taskId": "cabd25faf674f0b7b16f56ba9c739e18",
+  "state": "success",
+  "credits": 54.0,
+  "failMsg": "",
+  "urls": [
+   "https://tempfile.aiquickdraw.com/k/cabd25faf674f0b7b16f56ba9c739e18_1_1790766555_7076.mp4"
+  ]
+ },
+ "BR-19a.v2": {
+  "taskId": "dc0402ecd5b616359205ebddf60aa6dc",
+  "state": "success",
+  "credits": 90.0,
+  "failMsg": "",
+  "urls": [
+   "https://tempfile.aiquickdraw.com/k/dc0402ecd5b616359205ebddf60aa6dc_1_1790766598_4942.mp4"
+  ]
+ },
+ "BR-23.v1": {
+  "taskId": "0afb178e5733e3b991ee6878afa5837c",
+  "state": "success",
+  "credits": 54.0,
+  "failMsg": "",
+  "urls": [
+   "https://tempfile.aiquickdraw.com/k/0afb178e5733e3b991ee6878afa5837c_1_1790766559_5169.mp4"
+  ]
+ },
+ "BR-15.v2": {
+  "taskId": "1e4ca8a30ec6d4cec3aba3f24094d325",
+  "state": "success",
+  "credits": 90.0,
+  "failMsg": "",
+  "urls": [
+   "https://tempfile.aiquickdraw.com/k/1e4ca8a30ec6d4cec3aba3f24094d325_1_1790766566_5769.mp4"
+  ]
+ },
+ "MECH-03.v4": {
+  "taskId": "9a23ecdc11b27b01f7e3fd20ee15d546",
+  "state": "success",
+  "credits": 54.0,
+  "failMsg": "",
+  "urls": [
+   "https://tempfile.aiquickdraw.com/k/9a23ecdc11b27b01f7e3fd20ee15d546_1_1790766558_3352.mp4"
+  ]
+ },
+ "PR-22a.v1": {
+  "taskId": "40b66b24289912ac2943d843708b898b",
+  "state": "success",
+  "credits": 72.0,
+  "failMsg": "",
+  "urls": [
+   "https://tempfile.aiquickdraw.com/k/40b66b24289912ac2943d843708b898b_1_1790766578_7099.mp4"
+  ]
+ },
+ "BR-22a2.v1": {
+  "taskId": "8094eea0ca9a8f9f851ebd37471dbb0c",
+  "state": "success",
+  "credits": 54.0,
+  "failMsg": "",
+  "urls": [
+   "https://tempfile.aiquickdraw.com/k/8094eea0ca9a8f9f851ebd37471dbb0c_1_1790766572_1984.mp4"
+  ]
+ },
+ "BR-22b.v1": {
+  "taskId": "8f5c53af906aff08424daed57df275c8",
+  "state": "success",
+  "credits": 72.0,
+  "failMsg": "",
+  "urls": [
+   "https://tempfile.aiquickdraw.com/k/8f5c53af906aff08424daed57df275c8_1_1790766564_8820.mp4"
+  ]
+ }
+}

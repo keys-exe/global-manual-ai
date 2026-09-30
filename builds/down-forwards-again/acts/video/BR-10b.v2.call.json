@@ -1,0 +1,43 @@
+{
+ "beat": "BR-10b",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_110402_2fd4a868-2c38-4ff9-8224-49d45ca9042b.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "It was never a weak muscle.",
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "the leg floats up (the user's 'feels like floating')",
+   "prevented_by": "the heel stays planted on the footstool; no leg lifting off the footstool"
+  },
+  {
+   "risk": "the leg duplicates or bends",
+   "prevented_by": "one squeeze, leg straight; no extra legs, no leg bending; NEG-WARP-C"
+  },
+  {
+   "risk": "the hand melts into the fabric",
+   "prevented_by": "fingers lift a little with the muscle; HOLD-C"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
+ "audio": false,
+ "prompt": "{\"shot\":\"br_10b\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CLOSE, as in the start frame: her straight leg side-on on the footstool, her hand on the thigh. \"},\"motion\":\"With her heel resting on the footstool, she tightens her thigh muscle once, hard, over about a second — the muscle's firm shape rising under the grey jogging bottoms and her fingers lifting a little with it — and holds it; the heel stays planted on the footstool the whole time. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject, no music, no voice, no text appearing, no leg lifting off the footstool, no heel floating, no leg bending, no kicking, no footstool moving, no extra legs\"}",
+ "video_version": 2,
+ "user_fault": "this feels lke floating",
+ "fix_note": "v1's leg was held up in the air → new frame with the heel on a footstool; the heel stays planted"
+}

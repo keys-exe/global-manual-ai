@@ -253,4 +253,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   **Videos** (`acts/build_act5_videos.py`, preflight PASS ×8, Kie kling-3.0-omni, tasks `acts/video/act5_tasks.txt`): Act 5 gen 1 PR-22a 4 s,
   BR-22a2 3, BR-22b 4, BR-23 3; BR-15 v2 5 s and PR-12 v2 3 s on their new images; MECH-03 v4 3 s on its new image (4th video of the card —
   user_go = this message); BR-19a v2 5 s (Fix, gen 2).
+- **2026-09-30 11:41 UTC hourly Fix check (round 12):** image Fixes on the round-11 renders — BR-10c "i want a new one here" → v3 close on the knee,
+  red pulses down the thigh landing on the tendon; BR-16a2 "wrong product" → v2 and BR-16b "wrong product" → v3 (both had drawn padded open-kneecap
+  braces: now the strap described by what the knee shows — kneecap bare, a small curved shell under it, a thin band — the worn reference attached first,
+  brace/sleeve negatives, the camera closer; BR-16b cut to four walkers); BR-20c "fix this cause its distorted" → v2 one leg only, no crossed legs.
+  `acts/build_fix_r12.py` → To check; replaced images to Old. The user had meanwhile confirmed BR-06, BR-10b, BR-14b, BR-16a, BR-17b, BR-20, BR-20b →
+  their videos (`acts/build_r11_videos.py`, preflight PASS ×7, tasks `acts/video/r11_tasks.txt`): BR-06 v3 5 s (third video, new frame; user_go = the
+  10:45 message), BR-10b v2 3 s, BR-14b v3 5 s (third, new anatomy frame), BR-16a v2 4 s, BR-17b v2 3 s, BR-20 v2 3 s, BR-20b v1 4 s.
+  Round-11 videos landed on the board To check: BR-15 v2, PR-12 v2, MECH-03 v4, PR-22a, BR-22a2, BR-22b (540 Kie credits for the eight);
+  BR-19a v2 and BR-23 still downloading (Kie's file host drops transfers; `fetch.py`-style resume loop). Kie spend ≈ 3,780 so far.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
