@@ -18,7 +18,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 11,
+  "story_day": 12,
   "light": {
    "source": "consulting-room window, left-hand wall",
    "key_side": "L",
@@ -76,7 +76,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 10,
+  "story_day": 11,
   "light": {
    "source": "rendered: the ANAT look's own light",
    "key_side": "front",
@@ -105,7 +105,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 10,
+  "story_day": 11,
   "light": {
    "source": "rendered: the ANAT look's own light",
    "key_side": "front",
@@ -134,7 +134,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 8,
+  "story_day": 9,
   "light": {
    "source": "consulting-room window, left-hand wall",
    "key_side": "L",
@@ -192,7 +192,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 8,
+  "story_day": 9,
   "light": {
    "source": "front-door coloured glass + half-landing window",
    "key_side": "R",
@@ -221,7 +221,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 6,
+  "story_day": 7,
   "light": {
    "source": "east window of Folake's lounge, net curtains",
    "key_side": "L",
@@ -279,7 +279,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 10,
+  "story_day": 11,
   "light": {
    "source": "rendered: the ANAT look's own light",
    "key_side": "front",
@@ -308,7 +308,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 9,
+  "story_day": 10,
   "light": {
    "source": "front-door coloured glass + half-landing window",
    "key_side": "R",
@@ -337,7 +337,7 @@
    "rack": null,
    "moving_subject": true
   },
-  "story_day": 7,
+  "story_day": 8,
   "light": {
    "source": "front-door glass behind the camera + the landing window",
    "key_side": "R",
@@ -366,7 +366,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 9,
+  "story_day": 10,
   "light": {
    "source": "window over the sink, east wall",
    "key_side": "L",
@@ -382,10 +382,10 @@
   "type": "BR",
   "subject": "R4 Elaine",
   "height": "eye",
-  "side": "profile",
+  "side": "three-quarter",
   "scale": "CU",
   "fg": "clean",
-  "why": "profile = the height: the notch meets the kneecap",
+  "why": "three-quarter = the shell front and its notch meet the kneecap in view (Fix: profile drew the band being fastened)",
   "mode": 1,
   "product_beat": false,
   "face": true,
@@ -395,7 +395,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 5,
+  "story_day": 6,
   "light": {
    "source": "sash window, south wall",
    "key_side": "R",
@@ -453,7 +453,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 9,
+  "story_day": 10,
   "light": {
    "source": "window over the sink, east wall",
    "key_side": "L",
@@ -569,7 +569,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": 7,
+  "story_day": 8,
   "light": {
    "source": "east window of Folake's lounge, net curtains",
    "key_side": "L",

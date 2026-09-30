@@ -57,10 +57,11 @@ V = {
           "One action at a steady pace: he lifts a saucepan out of the cupboard and stands back up to full height, easy, the strap staying put on his knee.",
           "in_place", "worn", "no strap sliding as the knee straightens, no saucepan warping",
           [("the strap sliding as the knee straightens", "rigid-product clause; 'no strap sliding'"), ("his body warping on the rise", "one stand at a countable pace, start frame mid-crouch (§27G), PHYS-MOTION-C"), ("the saucepan changing shape", "NEG-WARP-C")]),
- "B-11a": ("A woman's right leg from the thigh down beside a bed, an olive trouser leg rolled above the knee, the strap worn on the knee.",
-           "One action at a natural pace: she lets go of the rolled cuff and the olive trouser leg unrolls and falls down over the knee and the strap, hanging flat to the ankle.",
-           "in_place", "worn", "no strap showing through the fabric as a bulge, no trousers bunching",
-           [("the fabric warping as it falls", "one drop, PHYS-MOTION-C: fabric lags and settles"), ("the strap moving under the fabric", "rigid-product clause"), ("the leg changing shape", "HOLD-C")]),
+ # gen 2 (Fix "fix the product in the knee even the trouser going down"): v1 let the cuff fall and the strap fell with it to the ankle -> her hand guides the fabric down slowly over a strap that stays locked
+ "B-11a": ("A woman's right leg beside a bed, an olive trouser leg rolled above the knee, the strap on the knee.",
+           "One action at a slow, careful pace: her hand smooths the trouser leg down over the knee, the fabric sliding over the strap, which stays locked on the knee under it.",
+           "in_place", "worn", "no strap falling, no strap coming off, no strap at the ankle, no strap moving with the fabric",
+           [("the strap falling with the fabric (v1)", "her hand guides the fabric slowly; the strap locked on the knee; negatives name falling and the ankle"), ("the fabric warping as it moves", "one slow smoothing, PHYS-MOTION-C"), ("the leg changing shape", "HOLD-C")]),
  "B-11b": ("Elaine, a petite white British woman of sixty-three with an ash-grey pixie cut, in a striped top, olive trousers and a yellow raincoat, at a street-market fruit stall.",
            "One action at an easy pace: she picks up one red apple from the crate and drops it into her paper bag, relaxed.",
            "in_place", "absent", "no strap visible, no knee visible, no readable signs",
@@ -77,10 +78,11 @@ V = {
              "One action at a steady pace: the strap slides up the last short way and seats on the tendon just below the kneecap, and the instant it seats the red point cools to calm blue.",
              "in_place", "worn", "no glow spreading onto the shin, no glow on the kneecap, no pause, no freeze",
              [("the red glow spreading instead of cooling", "motion names the cool on seating; negatives"), ("the anatomy warping", "RIG-RVD small drift, HOLD-C + NEG-WARP-C"), ("the strap climbing the kneecap", "seats just below the kneecap, rigid-product clause")]),
- "B-08": ("Hassan, a very tall thin Black British man of seventy-two in a white shirt and navy cardigan at his kitchen sink, the strap on his right knee.",
-          "One small action at an easy pace: standing on the spot, he holds the kettle under the running tap as it fills, then turns the tap off; his legs stay planted.",
-          "in_place", "worn", "no stepping, no kettle changing shape",
-          [("the strap turning into a narrow band", "rigid-product clause, negatives name it"), ("the water or his hands warping", "one fill at an easy pace, PHYS-MOTION-C + NEG-WARP-C"), ("his legs moving and the strap sliding", "legs planted, rigid-product clause")]),
+ # gen 2 (Fix "the result of the video is worst"): v1 asked for a running tap that is not in the frame, so Kling poured the kettle into a glass -> an action on what is in frame
+ "B-08": ("Hassan, a tall thin Black man of seventy-two in a maroon polo and shorts at his kitchen worktop, the white kettle before him, strap on his right knee.",
+          "One small action at an easy pace: his right hand presses the kettle's switch down and rests on the worktop; his legs stay planted.",
+          "in_place", "worn", "no pouring, no water, no glass, no lifting the kettle",
+          [("liquid physics (pouring, a glass appearing)", "no water in the action at all; the kettle stays on its base; negatives name pouring and a glass"), ("the strap turning into a narrow band", "rigid-product clause, negatives name it"), ("his legs moving and the strap sliding", "legs planted, rigid-product clause")]),
  "B-12": ("Derek, a big-framed white British man of seventy-four, on the couch edge, strap on his right knee; a surgeon crouched in the soft foreground.",
           "One small action at a slow pace: the surgeon taps the top edge of the strap's shell once with one finger and nods; Derek stays still.",
           "in_place", "worn", "no strap being pressed out of shape, no surgeon turning to camera",
@@ -100,9 +102,12 @@ V = {
 }
 MECH = {"MECH-02", "MECH-S1", "MECH-S2", "MECH-01"}
 def url_of(b):
-    f = sorted(H.glob(f"{b}_v*.json"), key=lambda p: int(p.stem.rsplit("_v", 1)[1]))[-1]
-    raw = f.read_text(); r = json.loads(raw[raw.rindex("\n{") + 1:]) if "\n{" in raw else json.loads(raw)
-    return r["urls"][0]
+    # the latest finished render of the beat's start image (a render still in progress has no urls yet)
+    for f in sorted(H.glob(f"{b}_v*.json"), key=lambda p: -int(p.stem.rsplit("_v", 1)[1])):
+        raw = f.read_text()
+        try: r = json.loads(raw[raw.rindex("\n{") + 1:]) if "\n{" in raw else json.loads(raw)
+        except ValueError: continue
+        if r.get("urls"): return r["urls"][0]
 out = {}
 for b, (subj, motion, mv, prod, xneg, risks) in V.items():
     anat = b in MECH
