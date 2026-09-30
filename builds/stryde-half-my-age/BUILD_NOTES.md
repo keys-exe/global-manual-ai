@@ -22,6 +22,8 @@
 - 2026-09-30 **Voices redone (user: "I DONT THINK WE CAN MAKE CONSISTENT VOICES WITH THIS SHORT SECONDS VOICES"; chose "Main four")**: new masters for Her (15s), Barbara (14s), Daughter (14s), Husband (12s) — 3–6 script sentences read back to back, 12–14s of speech each after the outer idle cut (Kie 945/882/882/756 cr). Narrator clone rebuilt from Her's 13.4s master (`HalfMyAge`, voice_id YwLtt6Gr8SyuAmM71knK); all 29 narration takes re-voiced. Sister and both friends keep their short masters (user's choice). Old clips/masters/takes moved to Old.
 - 2026-09-30 L-STAIRS Fix round 2 (user: "it doesnt feel like connected to the p-house"): v2 had the flight mirrored the wrong way. v3 (Higgsfield, back up) = the property plate's staircase seen from the top: photos on the right wall, banister left, the green front door at the foot. v2 to Old.
 
+- 2026-09-30 L-STAIRS Fix round 3 (user: "the picture frame not the same as the p-house"): v4 = an edit of v3 (HT17: match by editing) changing only the stair-wall frames to the property plate's seven mahogany frames with white mounts and B&W photos, largest at the bottom; v3 to Old. All other plates confirmed by the user.
+
 ## Open (Flags in BUILD_SHEET.md)
 F1, F2, F4 claims to confirm · F8 Hook E's action (proposed: HER gets up off the living-room floor unaided as the daughter reaches to help) · F9 "Three weeks ago" vs six weeks · F10 trouser-leg reveal vs FP13 · F6 right knee default · F11 mechanism insert optional · F12 no to-lens close · F16 no Drive connector.
 
