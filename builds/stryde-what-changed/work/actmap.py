@@ -198,9 +198,9 @@ BB("B10d", A2, "A painkiller turns the alarm off", "painkiller", "the mistake (F
    "one press, about a second", STILL, "hands: one movement", "no", "absent", "—", "NB2",
    LOW, THR, "clean", "CU", "low = the small pill made big", "hands", "shallow", L(KITCH, "L"), False, ledger="F6", notes="unbranded, no print")
 BB("B10d2", A2, "and leaves the load exactly where it was.", "load", "the load is still there (F6)",
-   "R1", "L-M-STAIRS", "M-D1", "floor level at the foot of her stairs, three-quarter: Maureen's plimsoll lands on the bottom stair as she comes down, the bare knee above bending under her whole weight, hand on the rail", "one step down onto the bottom stair",
-   "one step, about a second, ordinary pace", STILL, "stairs: floor level three-quarter, legs only, camera still", "no", "absent", "—", "NB2",
-   GROUND, THR, "clean", "CU", "ground three-quarter = the same step, the same load, pill or no pill", "foreground", "shallow", L(M_GREY, "L"), False, ledger="F6", notes="user 2026-09-30 'BROLLS HERE' — second half of the B10d line; no face")
+   "R2", "L-D-STAIRS", "D-D1", "low side-on: Desmond getting up off his bottom stair, hands pressed on his thighs, both knees bent hard under his whole weight", "he pushes up to standing",
+   "one push up, about two seconds, ordinary pace", STILL, "stairs: low side-on, legs only, camera still", "no", "absent", "—", "NB2",
+   LOW, PRO, "clean", "CU", "low profile = the knees still carrying all of it", "foreground", "shallow", L(D_GREY, "L"), False, ledger="F6", notes="user Fix 2026-09-30 'give me different broll here' (v1 Maureen stepping down); no face")
 TH("B11-TH", A2, "None of them are aimed at the spot.", framing="punch")
 BB("B12", A2, "What that band actually needs", "needs", "the need (pip)",
    "ANAT", "—", "—", "ANAT-A: the knee in profile under load, the tendon spot below the kneecap glowing hot", "the spot pulses with a step",
@@ -214,7 +214,7 @@ BB("B12b", A2, "is for less of your weight to land on it.", "less", "less load, 
    "one slow fade, about two seconds", STILL, "none", "no", "absent", "—", "NB2",
    HIGH, FRO, "clean", "ECU", "from above = the load easing off the one spot", "deep", "deep", L(ANAT, "L"), False, notes="user 2026-09-30 'BROLLS HERE' — second half of the B12 line")
 BB("B13", A3, "That is what this does. It is called Stryde.", "Stryde", "reveal — the product, wordmark",
-   "hands", "L-KITCHEN", "K-D1", "CU two hands hold the strap up at chest height above the kitchen table, the front of the shell and the wordmark to the lens", "the hands lift it a few centimetres into the light",
+   "hands", "L-KITCHEN", "K-D1", "CU the strap rests across her one open upturned palm at chest height above the kitchen table, the front of the shell and the wordmark to the lens", "the hand lifts it a few centimetres into the light",
    "one small lift, about a second", STILL, "hands: one movement; the strap does not turn", "no", "held", "VISIBLE", "NBP",
    EYE, FRO, "clean", "CU", "", "product", "medium", L(KITCH, "R"), False, eg="EG04 red box 'Stryde'", notes="WORDMARK-LOCK")
 BB("B14a", A3, "It sits two centimetres below the kneecap, on the tendon, and never crosses the joint.", "below", "SEAT (§9B) — placement",
@@ -222,8 +222,8 @@ BB("B14a", A3, "It sits two centimetres below the kneecap, on the tendon, and ne
    "one slide, about a second", STILL, "hands: start mid-movement, end on contact", "no", "seated", "VISIBLE", "NBP",
    HIGH, THR, "clean", "CU", "high = her own view of her knee", "product", "medium", L(M_SUN, "R"), False, notes="PLACE-LOCK")
 BB("B14b", A3, "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee.", "pad", "product — the pad (PAD_BACK_SHOT)",
-   "hands", "L-KITCHEN", "K-D1", "CU hands hold the strap and tip it so the inner pad faces the lens", "one tilt of the strap toward the lens",
-   "one tilt, about a second", STILL, "turning the product: pin the end frame", "yes", "held — the pad", "—", "NBP",
+   "hands", "L-KITCHEN", "K-D1", "ECU one hand holds the strap turned round, the grey pad inside the shell to the lens", "a slight tilt through the light",
+   "one small tilt, about two seconds", STILL, "hands: one small tilt; the pad stays to the lens", "no", "held — the pad", "—", "NBP",
    EYE, THR, "clean", "ECU", "", "product", "medium", L(KITCH, "L"), False, notes="prompt says 'the pad', never 'silicone'; inner_face.jpg attached")
 BB("B14c", A3, "Your weight gets caught and moved off the worn part before it reaches the joint.", "caught", "mechanism — protection (F7)",
    "ANAT", "—", "—", "ANAT-A: the strap seated below the kneecap, the pad pressing on the tendon, the glow at the worn spot calming", "the red at the spot fades as the pad takes the load",
