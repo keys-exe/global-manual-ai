@@ -55,7 +55,7 @@
    "cast/R3-HASSAN_v1.jpg",
    "plates/P3-PROP-H_v1.jpg"
   ],
-  "chars": 5474,
+  "chars": 5832,
   "line": "B-03"
  },
  "B-03c": {
@@ -71,11 +71,12 @@
   "model": "nano-banana-pro",
   "refs": [
    "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/product_tq_left.jpg",
    "/home/user/global-manual-ai/products/stryde/stryde_refs/back.webp",
    "cast/R2-DEREK_v1.jpg",
    "plates/P2-D-TOWPATH_v1.jpg"
   ],
-  "chars": 6601,
+  "chars": 7248,
   "line": "B-04"
  },
  "MECH-02": {
@@ -124,23 +125,24 @@
  "B-09a": {
   "model": "nano-banana-pro",
   "refs": [
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/worn_front.jpg",
    "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
-   "/home/user/global-manual-ai/products/stryde/stryde_refs/back.webp",
    "cast/R4-ELAINE_v1.jpg",
    "plates/P5-E-BEDROOM_v1.jpg"
   ],
-  "chars": 7059,
+  "chars": 8071,
   "line": "B-09"
  },
  "B-09b": {
   "model": "nano-banana-pro",
   "refs": [
-   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
    "/home/user/global-manual-ai/products/stryde/stryde_refs/back_inner.jpg",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/front.webp",
+   "/home/user/global-manual-ai/products/stryde/stryde_refs/back.webp",
    "cast/R4-ELAINE_v1.jpg",
    "plates/P5-E-BEDROOM_v1.jpg"
   ],
-  "chars": 5998,
+  "chars": 6484,
   "line": "B-09"
  },
  "B-10": {

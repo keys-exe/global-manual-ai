@@ -58,6 +58,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-29: all 21 body videos rendered on Kie `kling-3.0` (1,566 credits; B-01a and B-14 over 15 MB → split into 2 parts each, not shrunk) → on the Current board To check (v1 each, `board/video_<BEAT>.json`).
 
+- 2026-09-29 (hourly check 21:38 UTC): user confirmed 13 body videos — B-01a, B-02b ("use only up to" 2.6s, v1), B-03a, B-03c, B-07, B-10, B-11b, B-12, B-13a, B-14, MECH-S1, MECH-S2, MECH-02. Still To check: B-03b, B-04, B-06, B-08, B-09a, B-09b, B-11a, MECH-01. No Fixes.
+
+- 2026-09-30 (hourly check 00:37 UTC): 6 Fix notes picked up.
+  Images (Kie, v2 each, To check): **B-03b** "make the man at the middle of the stair" → he stood on the bottom steps; prompt now pins him to the 7th of 14 steps with stairs above and below (NB2, 12 cr). **B-04** "wrong product, use the reference product" → v1 drew a small dog-bone shell with a loose strap; now the strap stands as the closed ring of the front photo, large in frame, front + three-quarter + back photos attached (NBP, 18 cr). **B-09a** "make this woman using short, wrong wear of product" → v1 in trousers, profile, band being fastened; now shorts (new wardrobe E-D3), three-quarter front (act map; `angles.py` PASS ×3), the strap already a closed ring a hand's width below the kneecap, worn photo attached first, NOT_BAND (NBP, 18 cr). **B-09b** "wrong product" → v1 pad outline a dog-bone with no peaks; the inside photo attached first and copied, square-on (NBP, 18 cr). Their v1 images and the v1 videos made from them moved to Old; the videos wait for the new images.
+  Videos (§22X gen 2, preflight PASS with fix_note, To check): **B-08** "the result of the video is worst" → the prompt asked for a running tap not in the frame, so Kling poured the kettle into a glass; now he switches the kettle on, no water (90 cr). **B-11a** "fix the product in the knee even the trouser going down" → the freely falling cuff dragged the strap to the ankle; now her hand smooths the fabric down over a strap locked on the knee (54 cr). v1s on Old. A third generation of either waits for the user's go.
+
 ## Where it stands
-- **Waiting on the user:** Confirm/Fix the 21 body videos; script flags F2, F5, F6, F7.
+- **Waiting on the user:** check the new images B-03b, B-04, B-09a, B-09b (their videos follow) and the videos B-06, B-08 v2, B-11a v2, MECH-01; script flags F2, F5, F6, F7.
 - **Next:** `assemble.py` rough cuts and `variants.py` (HK1/2/3 + BODY), CapCut block (step 8), finals on the Final board.
