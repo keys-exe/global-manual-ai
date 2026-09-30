@@ -1,0 +1,33 @@
+{
+ "beat": "B16c",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b16c\",\"subject\":\"A Black British man's strong dark-brown right knee and shin seen front-on from low on a pavement: the hem of khaki shorts above, a black STRYDE strap seated just below the kneecap, the grey stryde wordmark readable, a street of semis soft behind. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already mid-stride on the first frame: he walks towards the lens at an easy walking pace, two steps, about two seconds, and his legs pass just out of the bottom of the frame. the strap stays exactly where it is on the leg — rigid, keeping its shape, size and wordmark, moving only as one piece with the knee. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; the fabric of the hem lags; the strap never slides; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no running, no strap sliding, no strap moving up, no strap moving down, no strap changing shape, no strap changing size, no wordmark changing, no logos on the trainers, no face, no camera movement, no extra legs, no music, no speech, no slow motion\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_171206_2b9f648e-cf29-49e9-8c84-49836ab0329d.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the strap slides as he walks",
+   "prevented_by": "rigid line, 'no strap sliding/moving'"
+  },
+  {
+   "risk": "legs warp mid-stride",
+   "prevented_by": "easy walking pace, two steps, HOLD-C + NEG-WARP-C, 'no extra legs'"
+  },
+  {
+   "risk": "the camera tracks him",
+   "prevented_by": "locked-off tripod clause, 'no camera movement'"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}

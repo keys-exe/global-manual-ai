@@ -1,0 +1,33 @@
+{
+ "beat": "B15",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b15\",\"subject\":\"A slight older white woman's pale right knee seen front-on at knee height in her hall: the hem of a denim skirt above, a black STRYDE strap seated just below the kneecap, the kneecap's lower edge sitting in the strap's notch, the grey stryde wordmark readable. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already on the first frame: she shifts her weight onto this leg, the knee straightening a touch and settling — one small, slow movement, about a second and a half — then she stands still. the strap stays exactly where it is on the leg — rigid, keeping its shape, size and wordmark, moving only as one piece with the knee; the kneecap stays in the notch. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; the fabric of the hem lags; the strap never slides; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no strap sliding, no strap moving up, no strap moving down, no strap changing shape, no strap changing size, no wordmark changing, no hands, no walking out of frame, no camera movement, no extra legs, no music, no speech, no slow motion\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_171207_7f990a90-9ac1-4b71-ae5d-db3100e64d28.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the strap slides or warps",
+   "prevented_by": "one small weight shift, rigid line, 'no strap sliding/moving/changing shape'"
+  },
+  {
+   "risk": "the leg warps",
+   "prevented_by": "HOLD-C + NEG-WARP-C, 'no extra legs'"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "locked-off tripod clause"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}
