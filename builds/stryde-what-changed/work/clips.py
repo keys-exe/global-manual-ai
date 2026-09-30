@@ -535,7 +535,25 @@ B["B10a"] = clip("B10a",
            {"risk": "hands or fingers warp", "prevented_by": "one movement then rest, 'no extra fingers, no extra hands'"},
            {"risk": "she walks or the legs move out of frame", "prevented_by": "'She stays standing where she is, her feet planted', 'no walking, no stepping'"}])
 
-START = {"B10a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_124139_4d54cb95-4893-4963-aeaa-56169d8697f8.png",
+# B10a2 image v1 (user CONFIRM 2026-09-30): ANAT-B three-quarter, a faint grey knit sleeve round the whole knee, the tendon under it
+# lit and taut. "and leaves that band carrying everything." ≈ 2.3 s → 4 s.
+B["B10a2"] = clip("B10a2",
+    "A premium 3D anatomical model of a knee on a near-black field, three-quarter front, wrapped in a faint translucent grey knit sleeve "
+    "from the lower thigh to the upper shin; under it the patellar tendon is the one lit structure, a tight spot glowing below the kneecap.",
+    "Already under load on the first frame, the knee stays where it is. One step's load arrives: [TARGET] draws taut and the spot below "
+    "the kneecap pulses brighter over about a second and eases back, while the sleeve round the whole joint stays exactly as it is — "
+    "it does not tighten, glow or move.",
+    "no sleeve moving, no sleeve glowing, no second spot, no glow down the shin, no leg moving, no second limb, no text, no camera orbit",
+    2.3, hi=5, anat=True,
+    risks=[{"risk": "the sleeve warps, glows or slides", "prevented_by": "'the sleeve ... stays exactly as it is', 'no sleeve moving, no sleeve glowing', HOLD-C + NEG-WARP-C"},
+           {"risk": "the glow spreads or a second spot appears", "prevented_by": "one tight spot named, 'no second spot, no glow down the shin'"},
+           {"risk": "the leg moves or the camera orbits", "prevented_by": "'the knee stays where it is', locked camera, 'no leg moving, no camera orbit'"}])
+B["B10a2"][0]["motion"] = B["B10a2"][0]["motion"].replace(
+    "quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens",
+    "The patellar tendon visibly tightens").replace(", and the whole structure compresses a few degrees", "")
+
+START = {"B10a2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_130409_3a6ea112-6592-45b6-bf5b-93efcd5e52d8.png",
+         "B10a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_124139_4d54cb95-4893-4963-aeaa-56169d8697f8.png",
          "B10b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_123301_214e72ba-2159-428e-bfeb-3619729c8fca.png",
          "B09-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_122112_f986eef2-5bbd-465a-920b-fd552b19e4e5.png",
          "B08-BR2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_113626_ed25dfaf-eb63-4715-8c55-3f29b1f75f53.png",
