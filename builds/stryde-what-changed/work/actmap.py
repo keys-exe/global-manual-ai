@@ -190,13 +190,17 @@ BB("B10b2", A2, "and it was never going sideways.", "sideways", "the knee only b
    "one bend and straighten, about two seconds", STILL, "none", "no", "absent", "—", "NB2",
    LOW, PRO, "clean", "CU", "low profile = the hinge seen flat on, bending only forwards", "deep", "deep", L(ANAT, "L"), False, ledger="F6", notes="user 2026-09-30 'BROLLS HERE' — second half of the B10b line; v2 'GIVE ME DIFFERENT IMAGE HERE' (v1: Maureen walking towards the lens)")
 BB("B10c", A2, "Gel sits on the skin.", "Gel", "the mistake (F6)",
-   "hands", "L-KITCHEN", "K-D1", "CU a plain white tube; clear gel squeezed onto two fingertips", "one squeeze",
-   "one squeeze, about a second", STILL, "hands: one movement", "no", "absent", "—", "NB2",
-   EYE, PRO, "clean", "CU", "profile: the gel sitting on the fingertip", "hands", "shallow", L(KITCH, "R"), False, ledger="F6", notes="unbranded, no label")
-BB("B10d", A2, "A painkiller turns the alarm off and leaves the load exactly where it was.", "painkiller", "the mistake (F6)",
+   "R1", "L-KITCHEN", "M-D1", "CU side-on at knee height: seated on a kitchen chair, Maureen's fingertips smooth clear gel over the front of her bare knee, a glossy film sitting on the skin's surface, the plain white tube on the table edge", "her fingertips smooth the gel once over the knee",
+   "one smoothing stroke, about a second", STILL, "seated: knee and hand only, camera still", "no", "absent", "—", "NB2",
+   EYE, PRO, "clean", "CU", "profile: the gel lying on the surface of the skin", "hands", "shallow", L(KITCH, "R"), False, ledger="F6", notes="unbranded, no label; user 2026-09-30 'BROLLS HERE' — gel on the knee, not on fingertips")
+BB("B10d", A2, "A painkiller turns the alarm off", "painkiller", "the mistake (F6)",
    "hands", "L-KITCHEN", "K-D1", "CU a plain blister pack of white tablets beside a glass of water; a thumb pops one tablet out", "one tablet popped",
    "one press, about a second", STILL, "hands: one movement", "no", "absent", "—", "NB2",
    LOW, THR, "clean", "CU", "low = the small pill made big", "hands", "shallow", L(KITCH, "L"), False, ledger="F6", notes="unbranded, no print")
+BB("B10d2", A2, "and leaves the load exactly where it was.", "load", "the load is still there (F6)",
+   "R1", "L-M-STAIRS", "M-D1", "floor level at the foot of her stairs, three-quarter: Maureen's plimsoll lands on the bottom stair as she comes down, the bare knee above bending under her whole weight, hand on the rail", "one step down onto the bottom stair",
+   "one step, about a second, ordinary pace", STILL, "stairs: floor level three-quarter, legs only, camera still", "no", "absent", "—", "NB2",
+   GROUND, THR, "clean", "CU", "ground three-quarter = the same step, the same load, pill or no pill", "foreground", "shallow", L(M_GREY, "L"), False, ledger="F6", notes="user 2026-09-30 'BROLLS HERE' — second half of the B10d line; no face")
 TH("B11-TH", A2, "None of them are aimed at the spot.", framing="punch")
 BB("B12", A2, "What that band actually needs is for less of your weight to land on it.", "less", "the need (pip)",
    "ANAT", "—", "—", "ANAT-A: the knee in profile, the load pulse at the spot below the kneecap dimming to a soft glow", "the pulse softens",
@@ -396,7 +400,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06a2', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06a2', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B10d2', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []

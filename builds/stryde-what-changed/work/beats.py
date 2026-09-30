@@ -644,6 +644,54 @@ B["B10b2"] = (NB2, [], anat(
     view="viewed from the side, in exact profile, from slightly below, the bent knee joint large in the middle of the frame with the thigh "
          "above-left, the knee pointing right and the shin below-left"))
 
+# B10c — "Gel sits on the skin." (user 'BROLLS HERE'). Side-on at knee height: seated in her kitchen, Maureen's fingertips smooth clear
+# gel over the front of her bare knee — a glossy film lying on the surface of the skin. Plain unlabelled tube on the table edge.
+B["B10c"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone held at knee height beside her as she sits on a wooden kitchen chair, side-on. Her right leg is bent with "
+    "the bare knee nearest the lens; the fingertips of her right hand are smoothing a thin layer of clear gel over the front of the "
+    "knee, the gel lying as a wet, glossy film on the surface of the skin, catching the window light. A plain white tube with no label "
+    "lies on the edge of the pale-oak table behind. Close: the frame holds her knee, her hand and the hem of her navy skirt, the kitchen "
+    "going soft behind.",
+    R1_BODY + " " + R1_LEGS + " Her hand: slim, pale, faintly freckled older skin, a plain gold wedding ring, the dusty-pink cardigan "
+    "cuff at the wrist. Wearing a navy skirt ending just above the knee.",
+    KITCHEN,
+    angle("B10c", "her knee and the gel"),
+    focus("the gel on her knee", deep=False).replace("the room behind", "the kitchen behind"),
+    light("KITCH-R", "her knee and hand"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff and a navy skirt").replace("the faded orange of the old photograph", "the glossy clear gel")],
+    NO_FACE + ", no torso, no product anywhere, no knee strap, no brace, no sleeve, no label on the tube, no readable text, no logos, "
+    "no second person, no extra fingers, no wrong number of legs"))
+
+# B10d — "A painkiller turns the alarm off" (first half of the line; user 'BROLLS HERE'). Low three-quarter CU on the kitchen table:
+# her thumb pops one white tablet out of a plain blister pack beside a glass of water.
+B["B10d"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone resting low on the pale-oak kitchen table, three-quarter on, looking slightly up. Her two hands hold a plain "
+    "silver blister pack of small white tablets, her thumb pressing one tablet out through the foil, the tablet just breaking through. "
+    "A plain glass of water stands beside her hands on the table. Close: her hands, the blister pack and the glass fill the frame, the "
+    "kitchen units soft behind.",
+    "Her hands: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, thin skin over the knuckles, "
+    "a plain gold wedding ring, the dusty-pink cardigan cuffs at the wrists.",
+    KITCHEN,
+    angle("B10d", "her hands and the tablets").replace("close to the floor", "resting on the table top"),
+    focus("the tablet under her thumb", deep=False).replace("the room behind", "the kitchen behind"),
+    light("KITCH-L", "her hands and the table"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff and a silver blister pack").replace("the faded orange of the old photograph", "the white tablets")],
+    NO_FACE + ", no person beyond her hands, no product anywhere, no knee strap, no printing on the blister pack, no pharmacy box, "
+    "no brand names, no readable text, no logos, no second person, no extra hands, no extra fingers"))
+
+# B10d2 — "and leaves the load exactly where it was." (second half of the B10d line; user 'BROLLS HERE'). Floor level at the foot of
+# her stairs, three-quarter: her plimsoll lands on the bottom stair, the bare knee bending under her whole weight. No face.
+B["B10d2"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone lying on the hall floor at the foot of her stairs, three-quarter on, looking up the flight. She is coming "
+    "down: her right plimsoll just landing on the bottom stair nearest the lens, the bare right knee above it bending under her whole "
+    "weight, her left foot still on the stair above, one hand light on the honey oak handrail. Close: the frame holds her legs from the "
+    "hem of the navy skirt down to her plimsolls and the bottom stairs, the rest of the flight going soft above.",
+    R1_BODY + " " + R1_LEGS + " Wearing white canvas plimsolls, plain, no logo, and a navy skirt ending just above the knee.",
+    M_STAIRS,
+    angle("B10d2", "her legs coming down the stairs"),
+    focus("her landing plimsoll and knee", deep=False).replace("the room behind", "the stairs above"),
+    light("M-GREY-L", "her legs and the stairs"), colour("M-STAIRS-AM")],
+    NO_FACE + ", no torso, no product anywhere, no knee strap, no brace, no sleeve, no walking stick, no second person, no readable "
+    "text, no logos on the plimsolls, no going up the stairs, no wrong number of legs"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
