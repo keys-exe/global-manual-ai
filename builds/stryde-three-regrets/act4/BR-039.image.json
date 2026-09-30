@@ -2,7 +2,7 @@
  "beat": "BR-039",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee.\": keep this photo exactly as it is — her two hands, the gold watch, the pale-blue bedroom, the window, the quilt, the sunlight and the camera angle. Image 1 is that photo.\nChange only the product in her hands: replace it with the strap in Image 2, its back facing the lens — copy it exactly, same shape, same parts, same markings, nothing redesigned: a matte-black shell; set into it a mid-grey rubbery pad in a curved bow-tie outline covered in fine curved grooves, one smooth raised bolster down its middle; a polished chrome slide at each end with the black knit band looped through. True size: the shell about 12 × 5 cm, a little wider than her palm.\nIn frame: two hands, each thumb and finger pinching one end of the shell, held flat and level; the whole grey pad in view, taking about a third of the frame width; the band hangs below in a loop.\nNo lettering or logos, no holes in the pad, no extra fingers.",
+ "prompt": "For the line \"A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee.\": keep this photo exactly as it is — her two hands, the gold watch, the pale-blue bedroom, the window, the quilt, the sunlight and the camera angle. Image 1 is that photo.\nChange only the strap's orientation: rotate it a quarter turn so it stands upright exactly as in Image 2 — its long side vertical, one chrome slide at the top and one at the bottom, the grey pad with its curved grooves and the raised bolster running top to bottom, back to the lens. Copy the strap exactly from Image 2 — same shape, same parts, same markings, nothing redesigned. True size: the shell about 12 × 5 cm, a little longer than her palm.\nIn frame: two hands — her left hand pinches the top end below the top slide, her right hand pinches the bottom end above the bottom slide; the band hangs down in a loop below; the strap takes about a quarter of the frame width.\nNo lettering or logos, no holes in the pad, no extra fingers.",
  "script_line": "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee.",
  "face": false,
  "room": true,
@@ -10,16 +10,16 @@
  "body": true,
  "refs": [
   {
-   "label": "BR-039 v2 frame (the user's pick)",
+   "label": "BR-039 v6 frame",
    "kind": "frame"
   },
   {
-   "label": "back_ref_v2.png (the user's last image)",
+   "label": "back_ref_v2.png (upright)",
    "kind": "product"
   }
  ],
  "match": "frame",
- "edit_of": "f2032c5a-e864-4626-96f6-77f30b779ba6",
+ "edit_of": "bd6f0ed7-a9db-423b-a7a2-ea3ad0e56069",
  "taste": [
   "HT06",
   "HT07",
@@ -34,5 +34,5 @@
   "nano_banana_pro"
  ],
  "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call)",
- "fix_note": "USE THIS AS IMAGE BUT CHANGE THE PRODUCT INTO LAST IMAGE I HAVE GIVEN: edit of v2 with the back from back_ref_v2"
+ "fix_note": "ROTATE THE PRODUCT: v6 sideways → rotated a quarter turn upright as in back_ref_v2"
 }
