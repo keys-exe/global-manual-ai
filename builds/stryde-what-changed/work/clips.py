@@ -365,7 +365,38 @@ B["B06-BR2"] = clip("B06-BR2",
            {"risk": "skin or knee shape warps under the bend", "prevented_by": "one small bend and straighten, HOLD-C + NEG-WARP-C, 'no skin warping'"},
            {"risk": "camera follows the leg", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"}])
 
-START = {"B06-BR2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_230724_8d894c4c-441e-428d-aeed-497f8383a717.png",
+# B08-BRb image v1 (user CONFIRM): Desmond on his stairs, hand gripping his knee, caught out; seen from the landing above.
+# "And here is the part that catches people out." ≈ 2.0 s → 3 s.
+B["B08-BRb"] = clip("B08-BRb",
+    "A Black British man of sixty-six with close-cropped grey-white hair and a short grey-white beard, seen from above on his carpeted "
+    "stairs, a navy zip-neck top, dark grey shorts, bare knees, one hand on the dark handrail, the other gripping the front of his knee, "
+    "black-framed football team photos on the grey wall beside him.",
+    "Already stopped on the first frame: his hand squeezes the front of his knee once and holds it, his head dips a little as he looks "
+    "down at it, and his brow draws into a surprised, caught-out frown — he stays where he is on the stair. Small and quiet, real time.",
+    "no stepping, no falling, no wincing in agony, no looking at the camera, no second person, no knee strap, no extra hands, "
+    "no extra fingers, no photos changing",
+    2.0, hi=6,
+    risks=[{"risk": "his face drifts off the sheet", "prevented_by": "small movement only, head dips a little, 3 s, HOLD-C"},
+           {"risk": "hand warps on the knee", "prevented_by": "one squeeze and hold, 'no extra hands, no extra fingers', NEG-WARP-C"},
+           {"risk": "he climbs or steps and the legs warp", "prevented_by": "'he stays where he is on the stair', 'no stepping'"}])
+
+# B08-BRc image v1 (user CONFIRM): Maureen at her kitchen worktop with the kettle, side-on, an ordinary morning.
+# "You do not have to have done anything to your knees for this to happen." ≈ 3.4 s → 5 s.
+B["B08-BRc"] = clip("B08-BRc",
+    "A white British woman of sixty-nine with short white hair, side-on at her kitchen worktop by the sink and the window, a dusty-pink "
+    "cardigan over a navy-and-white striped top, a navy skirt, holding a cream kettle on its base, shelves of mugs and jars behind.",
+    "Already moving on the first frame: she closes the kettle lid with a small press, settles it on its base and flicks the switch on, then "
+    "rests her hand on the worktop and waits, looking out of the window — calm, unhurried, an ordinary morning, real time.",
+    "no pouring, no steam burst, no looking at the camera, no pain, no hand on her knee, no second person, no extra hands, no extra "
+    "fingers, no readable text on the kettle",
+    3.4, hi=6,
+    risks=[{"risk": "hands warp on the kettle", "prevented_by": "two small actions at an easy pace, NEG-WARP-C, 'no extra hands'"},
+           {"risk": "her face drifts off the sheet", "prevented_by": "side-on, calm, small head turn only, HOLD-C"},
+           {"risk": "text appears on the kettle", "prevented_by": "'no readable text on the kettle'"}])
+
+START = {"B08-BRb": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_103917_57a208e9-a3f0-44c8-9602-b7a6f6ee6d42.png",
+         "B08-BRc": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_103918_c1db651c-8d38-40ec-8f3b-0468a2ed021b.png",
+         "B06-BR2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_230724_8d894c4c-441e-428d-aeed-497f8383a717.png",
          "B08-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_225901_8a563cef-0c03-48f0-94fa-92dd33e9b572.png",
          "B07": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_225901_b28d6f1c-bceb-447c-9792-c9ed9f38a4a6.png",
          "B07-BRa": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_220935_8b097287-2a0e-4aa7-8dde-2b2d9ea7f463.png",
