@@ -1,0 +1,37 @@
+{
+ "beat": "A2-M6",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Coming down, nothing does.\": going down the stairs, side view: the body stands on the upper step at the right and the single leg reaches forward and down, heel just landing on the lower step at the left, the knee bent as the weight drops onto it. The thigh muscle dim and slack; the tendon just below the kneecap flaring hot red as it takes the landing. Exactly one leg, one kneecap, one foot, the same leg as the attached going-up frame, now descending. Premium 3D anatomical render exactly in the style of the attached anatomy frame: near-black background, faint translucent body shell, warm red layered muscle, ivory bone, cool key light and warm under-glow. No text, no arrows, no second leg.",
+ "script_line": "Coming down, nothing does.",
+ "face": false,
+ "room": false,
+ "product": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "A2-M5 confirmed (the same leg going up)",
+   "kind": "frame",
+   "id": "bbfc6a69-c3c8-49b0-8d3e-5b1c9419ebe6"
+  },
+  {
+   "label": "A2-M3 confirmed (anatomy style)",
+   "kind": "frame",
+   "id": "72d41a87-6298-4032-b626-2ca1e7e571bd"
+  }
+ ],
+ "taste": [
+  "HT11",
+  "HT03"
+ ],
+ "anatomy": true,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "the leg lowers the body down one step; the thigh muscle dims and the tendon under the kneecap flares red, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "user Fix: \"show it comming down and not up\" → the body now stands on the upper step and the leg reaches forward and down, heel landing on the lower step",
+ "act": "Act 2"
+}

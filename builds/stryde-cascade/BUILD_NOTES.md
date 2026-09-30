@@ -183,3 +183,20 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
     - A2-M5 and A3-B5 first timed out at createTask. Kie has no task list to check, so they were retried once; the first sends may also have been charged.
     - A3-B0 and A3-B5 are split into 15 MB parts on the board.
     - A2-M7's download was cut off and was fetched again from the same task (`kie.py wait`).
+- 2026-09-30, later Fix rounds on Current 2 (user: "fix those and generate the new ones"):
+  - Round 3 (`work/fix_gap3.py`, calls `*.gap3.image.json`):
+    - A2-M6 now descends.
+    - A4-B2b, A4-B4, A4-P3 "fix the product": true size, one band, the A4-B1 worn frame attached.
+    - A3-B5 "this should be 3 brolls": A3-B5 keeps its clip for "None of them are wrong." (status use, line shortened). New A3-B5b (anatomy: sleeve on, band still loaded) and A3-B5c (the stairs with only the top rail).
+  - Round 4 (`work/fix_gap4.py`, `*.gap4.image.json`):
+    - A4-B1b: strap seated higher. A4-B3: one band, nothing under the shell. A4-B4: new style, three people on a park bench.
+    - A5-B1: straps go into his tool bag. A5-B1b and HK2-B0: distortion fixed; the rail now leans on the wall.
+    - HK2-B0 and A4-B3 videos were archived because their frames were redone.
+    - A5-M1 video gen 2 (`calls/A5-M1.gapv2.json`): camera locked; the strap named a rigid printed object.
+  - Videos from confirmed frames (`work/gap_video.py`, now reading each beat's newest image call; `work/gap_video_board.py` writes the cards):
+    - Done: A1-B1b, A1-B2b, A4-B3 (old frame, archived), A5-M1 v1, A5-P2, HK2-B0 (old frame, archived), A5-B4b, HK2-B3.
+    - Sent: A2-M6, A3-B5b, A3-B5c, A4-B2b, A4-P3.
+    - Stairs, hand-on-product and product-angle clips run unpinned on the user's "Run from the start frame" (`pin_waived`).
+  - Kie's file host is slow: downloads get cut off. Refetch by task id with `kie.py wait` (no `--out`) and then `curl -C -`.
+  - Storage: the Plan store filled up. New **Old Versions 3** https://claude.ai/artifact/Nk2SyCzxLexZjcqornaX3j (template, BOARD_ROLE old; `boards.old3`) holds the round-4 replaced frames and videos, with per-beat docs. Earlier replaced versions are in the Plan store (`archiveBoard` on each version entry).
+  - HK3-B4's card disappeared from Current 2 after its video was put on (deleted on the board?). Its clip is in `renders/gapv1/HK3-B4_vid.mp4` and its frame in `renders/gap1/`.
