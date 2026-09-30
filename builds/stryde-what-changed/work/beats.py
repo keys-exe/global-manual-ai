@@ -826,6 +826,24 @@ B["B14c"] = (NBP, ["PF"], anat(
     .replace("no product,", "no product other than the one strap on the tendon,").replace("no product\n", "no product other than the one strap on the tendon\n")
     .replace("no text overlays, no labels,", "no text overlays, no diagram labels,").replace("no clothing, ", "no clothing, no second strap, no strap over the kneecap, no translucent strap, no ghosted strap, no invented strap shape, no blank shell, "))
 
+# B13 v3 — User Fix 'fix the product stryde' (v2: a plain rounded rectangle, no peaks, no notch). Made as an IMAGE EDIT of v2 (Image 1:
+# the confirmed-looking hand, kitchen and hanging band) with front.webp as Image 2: only the object in her hand is replaced, by the
+# strap in the product photo copied exactly (FP01, FP12).
+REFS["B13V2"] = ("B13 v2 — the scene to edit (Image 1)", "48c97d46-dde1-4c51-a0dd-12179b8c0336")
+B["B13"] = (NBP, ["B13V2", "PF"], (
+    "Edit Image 1. Keep everything in Image 1 exactly as it is — the same kitchen, the same light, the same hand with the gold ring and "
+    "the dusty-pink cuff, the same pose, the same camera and framing, the same soft black knit band hanging down in a loop behind her "
+    "hand. Change ONLY the black shell she holds up: replace it with the strap from Image 2, copied exactly — the same matte-black shell "
+    "with its top edge rising into TWO rounded peaks with a deep rounded notch dipping between them in the middle, the same short "
+    "shoulders dropping to a brushed chrome slide with three engraved chevrons at each end, the same gently waisted bottom edge and the "
+    "same grey lowercase stryde wordmark centred on the lower body beneath the notch. Seen straight on, exactly as the front of the strap "
+    "faces the camera in Image 2, at the same size in her hand as the shell in Image 1 — about five to six of her thumb-widths across. "
+    "Her thumb stays at the lower left corner and her fingertips stay behind it; nothing covers the peaks, the notch or the wordmark. The "
+    "band comes out of both chrome slides and hangs soft behind her hand as in Image 1. A real phone photo, unchanged in look.\n\n"
+    "AVOID: no rounded rectangle shell, no oval shell, no flat straight top edge, no U-shaped shell, no cup shape, no peaks at the very "
+    "ends, no blank shell, no misspelled wordmark, no second strap, no change to the hand, no change to the kitchen, no change to the "
+    "light, no extra fingers, no readable text other than the wordmark"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

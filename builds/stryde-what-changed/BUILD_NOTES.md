@@ -251,3 +251,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **B14b v2** (Fix "too big, fix size"): the strap now sits in one hand at true size, pad to the lens, matches the pad photo. Held upright, not sideways across the fingers as asked.
 - **B14c v2** (Fix "fix the product"): now NBP with front.webp attached, front-on at eye level (act map row EYE FRO, NBP): the real strap seated on the tendon below the kneecap, wordmark readable. Reads well.
 - v1s of B13/B14a/B14b/B14c moved to Old (docs + files), deleted from Current 2.
+
+### 2026-09-30 — B13 Fix again; B14a, B14b confirmed → videos
+- **B13 v3** (Fix "fix the product stryde"): made as an image edit of v2 with front.webp as Image 2 — only the shell swapped. The shell now has the two peaks, the notch, the chevron slides and the wordmark. Flaw: two gold rings on her hand. v2 moved to Old.
+- **B14a video v1** (5 s, task `4d22c403…`, split in 2 parts on the board): the hands settle the strap and lift away; the strap stays put. Flaw: the hands fiddle rather than making one clean slide, and the shell turns a little on the knee.
+- **B14b video v1** (5 s, task `5f9d667a…`): **flaw — the strap bends like rubber mid-clip (FP05/§27G rigid shell broken).** If Fixed, next try: a much smaller move (a slow push-in on a still hand) rather than a wrist tilt.
