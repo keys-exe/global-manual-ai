@@ -262,4 +262,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   10:45 message), BR-10b v2 3 s, BR-14b v3 5 s (third, new anatomy frame), BR-16a v2 4 s, BR-17b v2 3 s, BR-20 v2 3 s, BR-20b v1 4 s.
   Round-11 videos landed on the board To check: BR-15 v2, PR-12 v2, MECH-03 v4, PR-22a, BR-22a2, BR-22b (540 Kie credits for the eight);
   BR-19a v2 and BR-23 still downloading (Kie's file host drops transfers; `fetch.py`-style resume loop). Kie spend ≈ 3,780 so far.
+- **2026-09-30 ~12:30 UTC: user "fix those and generate the new ones" (twice).** Video Fixes: PR-12 v3 "just let move it infront dont turn it" (a
+  straight sideways move, front face to the lens), BR-22b v2 "dont make the strap jump" (almost still, one slow sag), BR-14b v4 "it should turn to
+  blue" (the red stream turns cool blue where it meets the strap; 4th video, user_go = that message) — `acts/build_r13_videos.py`, preflight PASS.
+  BR-16a "show it in a like treadmill" → new frame first (§22X): v5 is an edit of the confirmed v4 with a lab treadmill (`acts/build_fix_r13.py`;
+  act-map row updated, angles PASS) → To check; its video waits. Replaced renders moved to Old.
+  **All pending clips landed on the board To check:** BR-06 v3, BR-14b v4, BR-10b v2, BR-17b v2, BR-19a v2, BR-20 v2, BR-20b v1, BR-23 v1,
+  PR-12 v3, BR-22b v2 (plus BR-15 v2, MECH-03 v4, PR-22a, BR-22a2 earlier).
+  **Download fix:** Kie's tempfile host stalls mid-transfer through the proxy; `voice/kie_fetch.py` asks Kie's `common/download-url` for a signed
+  R2 link and downloads in one go (sizes checked against Content-Length).
+  Waiting on the user's check: images BR-10c v3, BR-16a v5, BR-16a2 v2, BR-16b v3, BR-20c v2 (their videos follow a Confirm).
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

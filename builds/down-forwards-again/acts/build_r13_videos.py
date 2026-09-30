@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Step 7 · video Fixes (the user, 2026-09-30 ~12:30 UTC: "fix those and generate the new ones"; board Fix notes). §22X: fault diagnosed, fixed in
+"""Step 7 · video Fixes (+ 2026-09-30 ~12:30 UTC: BR-14b v4 "it should turn to blue", 4th video of the card, user_go = that message) (the user, 2026-09-30 ~12:30 UTC: "fix those and generate the new ones"; board Fix notes). §22X: fault diagnosed, fixed in
 the motion, never the same prompt resent.
   PR-12 v3 (gen 2 on its frame) "just let move it infront dont turn it": v2 tipped the strap towards the light → she moves it straight across in front of
     her, from beside her face to in front of her chest, its front face square to the lens the whole time, never turned or tilted.
@@ -33,6 +33,18 @@ C["BR-22b"] = (2, 2, ("dont make the strap jump",
   [{"risk": "a strap jumps (the user's fault)", "prevented_by": "almost still, one slow sag; no jumping, no sudden movement"},
    {"risk": "a wordmark appears on the copies", "prevented_by": "no wordmark, no logo, no text on the copies"},
    {"risk": "the bands stretch in motion", "prevented_by": "sags a little only; NEG-WARP-C"}]))
+C["BR-14b"] = (4, 4, ("it should turn to blue",
+  "v3 fanned the red out sideways inside the shell but it stayed red → where the red stream meets the strap it turns cool blue: the strap cools the load"),
+  mech("BR-14b",
+  "The foot lands on the step; a stream of red light runs down the thigh and, the moment it meets the strap, turns cool calm blue, spreading softly "
+  "blue round the shell and the band, over about two seconds; below the strap the tendon and the joint stay cool pale blue. The strap is solid, keeps "
+  "its exact shape, size and wordmark.",
+  fr("BR-14b", "CLOSE, as in the start frame: the knee with the strap, the step below."),
+  ["no red below the strap, no red on the tendon, no strap moving, no strap turning translucent, no wordmark changing"],
+  [{"risk": "the red stays red past the strap (the user's fault)", "prevented_by": "turns cool blue the moment it meets the strap; no red below the strap"},
+   {"risk": "the strap melts into the anatomy", "prevented_by": "the strap is solid, keeps its shape; no strap turning translucent"},
+   {"risk": "the camera orbits off the knee", "prevented_by": "RIG-RVF push toward the target; NEG-CAM-RV"}]))
 for b, (v, g, (fault, note), c) in C.items():
     c.update(generation=g, video_version=v, user_fault=fault, fix_note=note)
+    if g >= 3: c["user_go"] = "the user, 2026-09-30 ~12:30 UTC: 'fix those and generate the new ones' — asked for this card's Fix ('" + fault + "')"
     (here / "video" / f"{b}.v{v}.call.json").write_text(json.dumps(c, ensure_ascii=False, indent=1)); print(f"{b}.v{v} {len(c['prompt'])} chars {c['duration']}s")

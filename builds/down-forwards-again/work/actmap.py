@@ -172,8 +172,9 @@ row("BR-15","Act 3",["B-15"],"BR","P hand","L-P-FRONT","P-D2","her fingertip res
 # ---- ACT 4 — proof, ten seconds, the doctor's word, the test, the scan (B-16–B-20) ------------------------------
 TH("TH-A4", "Act 4", ["B-16","B-17","B-18","B-19","B-20"], "hands flat on the desk on 'I do not sell these'; eyebrows up on 'You will know in a minute'")
 # the user, 2026-09-30 (video Fix on BR-16a): "this should be 2 brolls make an over all new ones" → BR-16a (measured: a gait lab) + BR-16a2 (the surgeons)
-row("BR-16a","Act 4",["B-16"],"BR","volunteer (one-off LV-01)","L-LAB","X-D1","in a gait lab, a volunteer wearing the strap steps down off a low wooden step onto a force plate, a load curve on the monitor behind","one step down, 2s",
-    "locked-off sway","one step down (§27G: camera side-on, never travels)","no","low","profile","MEDIUM","clean","low + profile = the measured step, side-on","medium","product","L","Measured",
+# the user, 2026-09-30 (video Fix on BR-16a v2): "show it in a like treadmill" → the volunteer walks on a lab treadmill, the load curve on the monitor
+row("BR-16a","Act 4",["B-16"],"BR","volunteer (one-off LV-01)","L-LAB","X-D1","in a gait lab, a volunteer wearing the strap walks steadily on a treadmill, a load curve on the monitor beside him","walking on the spot, 3s",
+    "locked-off sway","treadmill walk (§27G: he stays in place on the belt, camera side-on, never travels)","no","low","profile","MEDIUM","clean","low + profile = the measured step, side-on","medium","product","L","Measured",
     product="worn · VISIBLE",model="NBP",layout=PIP,eg="EG06 34% card")
 row("BR-16a2","Act 4",["B-16"],"BR","surgeons (one-offs SG-01, SG-02, §19B approachable) + patient (one-off PT-01)","L-ORTHO","X-D1","an orthopaedic surgeon fits the strap below a patient's kneecap on the examination couch while a second surgeon watches","one slide up, 2s",
     "sway","hands · seating (SEAT_LOCK: only ever up)","yes — ends seated","eye","three-quarter","MEDIUM","clean","three-quarter = the two surgeons and the knee in one frame","medium","hands","R","orthopedic",
