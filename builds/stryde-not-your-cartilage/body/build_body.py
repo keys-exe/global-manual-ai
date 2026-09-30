@@ -265,12 +265,13 @@ add("B-13a", "nano-banana-pro", PR(FRONT, "stryde_refs/package_open.jpg") + [LOC
   light("the wide window on the lounge's east wall", "the box", "left", "bright morning daylight", face=False),
   colour("bright morning daylight", 5600, "the glass table on the cream rug", "she", "a yellow-and-green wax-print cuff", "the matte-black box", "natural, warm")],
   P.NEG_PACKAGE + ", " + P.NEG_WORDMARK + ", no face, " + NEG_HANDS, scale="about half"))
+# v3 (Fix "MAKE THE TWO STRAP FLOATING SIDE BY SIDE ON A DARK NAVY BLACK BACKGROUND"): v2 stood them on a table (the v2 Fix) -> floating again, level, side by side, not overlapping
 add("CARD-13b", "gpt-image-2-5-sunburst-image-to-image", PR(FRONT, "stryde_refs/product_tq_left.jpg"), "\n\n".join([
-  "Product photograph, vertical 9:16. Two identical straps REST ON A TABLE side by side, each standing on its band as a closed ring, the front of each shell and its wordmark to the camera, slightly angled "
-  "towards each other, sitting ON the surface with real contact shadows beneath them: a dark walnut tabletop running back into a deep navy-black background, a soft top light and a faint cool rim on their edges, "
-  "the lower third of the frame (the table's front edge area) and the top quarter kept as plain dark space for text added later.",
+  "Product photograph, vertical 9:16. Two identical straps FLOAT SIDE BY SIDE in mid-air against a plain deep navy-black background — level with each other, a small gap between them, not overlapping, "
+  "not touching anything, each a closed ring with the front of its shell and its wordmark square to the camera. A soft top light and a faint cool rim on their edges; no table, no surface, no floor. "
+  "The lower third of the frame and the top quarter kept as plain dark space for text added later.",
   PROD, RIGID, P.WORDMARK_LOCK, P.SIZE_OBJECT,
-  "AVOID: " + ", ".join([P.NEG_WORDMARK, P.NEG_OBSERVED, "no text, no offer text, no price, no URL, no badge, no third strap, no single strap, no box, no hands, no people, no props, no reflections of text, no floating straps, no straps hovering above the table, no missing shadows"])]))
+  "AVOID: " + ", ".join([P.NEG_WORDMARK, P.NEG_OBSERVED, "no text, no offer text, no price, no URL, no badge, no third strap, no single strap, no box, no hands, no people, no props, no reflections of text, no table, no surface, no floor, no shadows cast on a surface, no overlapping straps, no straps at different heights"])]))
 add("B-14", "nano-banana-pro", PR(FRONT, "stryde_refs/worn_front.jpg") + [SHEET["R2"], LOC["P2"][0]], photo([
   "A snapshot from low down on the towpath, caught mid-stride: he walks towards the camera along the path, the stone bridge behind him, his left foot forward, arms swinging easy, the strap on his right knee, "
   "a small contented smile. " + DEREK[0].upper() + DEREK[1:] + ". He wears " + WARD["D-D2"] + ". " + WORN,
