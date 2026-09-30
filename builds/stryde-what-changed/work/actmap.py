@@ -144,13 +144,15 @@ BB("B07", A1, "That is why it feels like it arrived overnight.", "overnight", "p
    notes="v2 — user Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: top of her stairs, stopping)")
 TH("B08-TH", A1, "Nothing about the way you walk changed, so you assume nothing changed. And here is the part that catches people out. You do not have to have done anything to your knees for this to happen.")
 BB("B08a", A1, "Some of the people it happens to have never run a mile in their life.", "mile", "not what you did",
-   "R1", "L-M-STAIRS", "M-D1", "MEDIUM in her hall: Maureen picks her keys out of the bowl on the half-moon table", "lifts the keys from the bowl",
-   "one lift, about a second", STILL, "hands: one grip change", "no", "absent", "—", "NB2",
-   EYE, THR, "clean", "MEDIUM", "", "eyes", "medium", L(M_GREY, "L"), True)
+   "R1", "L-STREET", "M-D1", "MEDIUM on the pavement: Maureen walks slowly along her street pulling a tartan shopping trolley, an ordinary unathletic errand", "a few slow steps along the pavement, the trolley rolling behind",
+   "an ordinary slow walking pace", STILL, "street: three-quarter from the front, full figure, camera still", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "MEDIUM", "three-quarter = her everyday, nothing sporty about it", "eyes", "medium", L(STREET_AM, "L"), True,
+   notes="v2 — user Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: her keys from the hall bowl)")
 BB("B08b", A1, "Others played sport for thirty years.", "sport", "not what you did",
-   "R2", "L-D-STAIRS", "D-D1", "CU over Desmond's shoulder: his hand straightens one black-framed team photograph on the stair wall", "his fingertips level the frame",
-   "one small nudge, about a second", STILL, "hands: one movement", "no", "absent", "—", "NB2",
-   EYE, "ots", "through", "CU", "over his shoulder: his own memory", "hands", "shallow", L(D_GREY, "R"), False)
+   "R2", "L-D-STAIRS", "D-D1", "CU seated on his bottom stair: Desmond's hands turn over an old, scuffed leather football on his lap, his bare knees below it", "his hands turn the ball over once",
+   "one slow turn, about two seconds", STILL, "seated, hands, ball and knees only, camera still", "no", "absent", "—", "NB2",
+   HIGH, FRO, "clean", "CU", "high = looking down at the ball he played with for thirty years", "hands", "shallow", L(D_GREY, "R"), False,
+   notes="v2 — user Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: over his shoulder straightening a team photo)")
 TH("B08-TH2", A1, "It makes almost no difference, because the load is not coming from what you did.", framing="punch")
 BB("B08c", A1, "It is coming from standing up and walking.", "standing", "the cause — ordinary life",
    "R2", "L-D-STAIRS", "D-D1", "MEDIUM: Desmond sitting on the bottom stair tying a trainer, already rising — ends standing", "rises to standing",
