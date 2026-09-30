@@ -168,14 +168,22 @@ BB("B08c", A1, "It is coming from standing up and walking.", "standing", "the ca
 
 # ============================================================ ACT 2 — the costly mistake
 TH("B09-TH", A2, "Which is why most of what gets sold for this cannot work.", framing="punch")
-BB("B10a", A2, "A sleeve squeezes the whole knee and leaves that band carrying everything.", "sleeve", "the mistake (F6)",
+BB("B10a", A2, "A sleeve squeezes the whole knee", "sleeve", "the mistake (F6)",
    "R1", "L-KITCHEN", "M-D1", "low, front-on CU: Maureen standing in her kitchen with the plain grey knit sleeve on, snug round the whole knee from lower thigh to upper shin; her hands press it flat round the joint", "her hands smooth the sleeve round the knee",
    "one smoothing movement, about a second", STILL, "standing: knee and hands only, camera still", "no", "absent", "—", "NB2",
    LOW, FRO, "clean", "CU", "low front = the sleeve wrapped round everything, big in frame", "hands", "deep", L(KITCH, "L"), False, ledger="F6", notes="unbranded; user 2026-09-30 'GIVE ME BROLLS HERE' — sleeve on the knee, not on the table; v2 'GIVE ME DIFFERENT IMAGE HERE' — standing, low front-on")
-BB("B10b", A2, "A hinged brace stops the knee going sideways, and it was never going sideways.", "brace", "the mistake (F6)",
+BB("B10a2", A2, "and leaves that band carrying everything.", "band", "the sleeve leaves the band loaded (F6)",
+   "ANAT", "—", "—", "ANAT-C three-quarter CU: the knee inside a faint translucent grey knit sleeve that squeezes the whole joint evenly, and under it the patellar tendon alone lit bright and drawn taut, carrying the load", "the band draws taut and glows brighter as a step's load arrives; the sleeve does nothing",
+   "one load, about a second", STILL, "none", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "CU", "three-quarter = the band inside the sleeve, seen along its length", "deep", "deep", L(ANAT, "L"), False, ledger="F6", notes="user 2026-09-30 'BROLLS HERE' — second half of the B10a line; generic unbranded sleeve")
+BB("B10b", A2, "A hinged brace stops the knee going sideways,", "brace", "the mistake (F6)",
    "hands", "L-KITCHEN", "K-D1", "CU a black hinged knee brace lying on the table; a hand flexes its hinge once sideways", "one flex of the hinge",
    "one flex, about a second", STILL, "hands: one movement", "no", "absent", "—", "NB2",
    HIGH, THR, "clean", "CU", "high = looking down at it, done with it", "hands", "medium", L(KITCH, "L"), False, ledger="F6", notes="unbranded")
+BB("B10b2", A2, "and it was never going sideways.", "sideways", "the knee only bends forwards (F6)",
+   "R1", "L-KITCHEN", "M-D1", "front-on at floor level, waist-down: Maureen walks across her kitchen towards the lens, her bare knees bending straight forwards over her feet, no wobble", "two ordinary steps towards the lens",
+   "two steps, about two seconds", STILL, "kitchen: floor level front-on, knees and feet only, camera still", "no", "absent", "—", "NB2",
+   GROUND, FRO, "clean", "CU", "ground front = the knee tracks straight ahead, never sideways", "foreground", "medium", L(KITCH, "L"), False, ledger="F6", notes="user 2026-09-30 'BROLLS HERE' — second half of the B10b line; bare knees, no brace")
 BB("B10c", A2, "Gel sits on the skin.", "Gel", "the mistake (F6)",
    "hands", "L-KITCHEN", "K-D1", "CU a plain white tube; clear gel squeezed onto two fingertips", "one squeeze",
    "one squeeze, about a second", STILL, "hands: one movement", "no", "absent", "—", "NB2",
@@ -383,7 +391,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []
