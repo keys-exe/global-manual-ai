@@ -494,37 +494,37 @@ B["B08a"] = (NB2, ["R1", "P3"], photo([
     "no running, no sports clothes, no product anywhere, no knee strap, no walking stick, no second person, no bus, no looking at the "
     "camera, no readable text, no adverts, no timetable, no number plates, no readable signs"))
 
-# B08b v6 — "Others played sport for thirty years." User Fix 'DIFFERENT IMAGE HERE, LIKE HOLDING PAST PICTURE' (v1 team photo on the
-# wall; v2 football; v3 trophies; v4 jogging; v5 veterans' match). Desmond on his stairs holding an old faded photo of his 1980s
-# amateur team, young him in the front row, a small fond smile. Face in frame.
+# B08b v7 — "Others played sport for thirty years." User Fix 'POV ANGLE' on v6 (him holding the old team photo, three-quarter).
+# POV from his own eyes, seated on his stairs: his hands hold the old faded 1980s team photo, his bare knees below. Faceless.
 B["B08b"] = (NB2, ["R2", "P2"], photo([
-    "A snapshot from a phone at eye height in his hall, three-quarter on. He sits on his stairs holding an old, faded colour photograph "
-    "in both hands, tilted so we can see it: a 1980s amateur football team posed in two rows on a muddy park pitch in plain navy-and-white "
-    "kit, a young Black man with a short afro in the front row among them — him, thirty years younger. He looks down at it with a small, "
-    "fond smile, his thumb resting at the photo's edge, the corners of the print soft and curled. Medium close-up: his face, his hands "
-    "and the photograph, the black-framed team photos on the stair wall soft behind him.",
-    R2 + " Wearing " + WARD["D-D1"] + ".",
+    "A point-of-view snapshot, as if through his own eyes, looking down from where he sits on his stairs. His two hands hold an old, "
+    "faded colour photograph out in front of him: a 1980s amateur football team posed in two rows on a muddy park pitch in plain "
+    "navy-and-white kit, a young Black man with a short afro in the front row among them. The corners of the print are soft and curled, "
+    "his thumb resting at its edge. Below the photo, his own bare knees and dark grey shorts, and further down the charcoal stair carpet "
+    "with its white nosing stripe and his white trainers on the step below. His face is not in the frame — we are seeing through his eyes.",
+    R2_BODY + " His hands: dark brown older skin, thick knuckles, real unretouched skin, the cuffs of a navy zip-neck sports top at the "
+    "wrists. Wearing dark grey jogging shorts ending just above the knee.",
     D_STAIRS,
-    angle("B08b", "him holding the old photograph"),
-    focus("his nearest eye", deep=False).replace("the room behind", "the stair wall behind"),
-    light("D-GREY-R", "his face, hands and the photo"), colour("D-STAIRS-AM")],
-    "no crying, no looking at the camera, no product anywhere, no knee strap, no readable text, no writing on the photo, no names, "
-    "no dates, no badges, no logos, no second person in the room, no extra fingers, no extra hands"))
+    angle("B08b", "his hands, the photo and his knees").replace("seen from the front of", "looking straight down at"),
+    focus("the photograph", deep=False).replace("the room behind", "the stairs below"),
+    light("D-GREY-R", "his hands and the photo"), colour("D-STAIRS-AM")],
+    NO_FACE + ", no product anywhere, no knee strap, no readable text, no writing on the photo, no names, no dates, no badges, no logos, "
+    + PLAIN_SHOES + ", no extra fingers, no extra hands, no extra knees"))
 
-# B08c v2 — "It is coming from standing up and walking." User Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 Desmond rising from his bottom
-# stair). Side-on, low, waist-down in her kitchen: Maureen pushes up from her chair, both knees straightening under her weight.
-B["B08c"] = (NB2, ["R1", "P4"], photo([
-    "A snapshot from a phone held low beside the kitchen table, side-on. She is getting up from her kitchen chair, caught halfway: her "
-    "weight coming forward over her feet, one hand pushing down on the edge of the pale-oak table, both bare knees bent and starting to "
-    "straighten as they take her weight, her plimsolls flat on the floor. The frame holds her from the waist down — the skirt, both knees, "
-    "the shins, the plimsolls, the chair seat behind her and the table edge — her face is above the frame, not in the picture.",
-    R1_BODY + " " + R1_LEGS + " Wearing a navy cotton A-line skirt ending just above the knee and white canvas plimsolls, plain, no logo.",
-    KITCHEN,
-    angle("B08c", "her knees as she stands up"),
-    focus("her nearest knee", deep=False).replace("the room behind", "the kitchen behind"),
-    light("KITCH-L", "her legs"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a navy skirt and white plimsolls")
-    .replace("the faded orange of the old photograph", "the jug of garden flowers")],
-    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no walking stick, no second person, no wrong number of legs"))
+# B08c v3 — "It is coming from standing up and walking." User Fix 'CHANGE TO FROM SITTING TO STAND UP AND WALK, OUTSIDE' (v1 Desmond
+# rising off his stair; v2 Maureen rising from her kitchen chair). Desmond on his street, pushing up from a low front-garden wall.
+B["B08c"] = (NB2, ["R2", "P3"], photo([
+    "A snapshot from a phone at eye height on the pavement, three-quarter on. He has been sitting on a low brick front-garden wall and is "
+    "getting up to walk on, caught halfway: his weight coming forward over his feet, one hand pushing off the top of the wall, both bare "
+    "knees bent and straightening as they take his weight, his face three-quarter to the camera, looking ahead up the pavement, "
+    "matter-of-fact. Medium shot, the whole of him from head to trainers, the wall and hedge behind him and the pavement running away.",
+    R2 + " Wearing " + WARD["D-D1"] + ".",
+    STREET,
+    angle("B08c", "him getting up off the wall"),
+    focus("his nearest eye", deep=False).replace("the room behind", "the street behind"),
+    light("STREET-AM-L", "him and the pavement"), colour("STREET-AM").replace("navy skirt and white plimsolls", "a navy zip-neck top, dark grey shorts and white trainers")],
+    "no wincing, no pain face, no product anywhere, no knee strap, no walking stick, no second person, no looking at the camera, no "
+    "readable text, no number plates, " + PLAIN_SHOES + ", no wrong number of legs"))
 
 # B08-BR2 — "It makes almost no difference," (user 'BROLLS HERE', first half of B08-TH2). Desmond's hand sets his old muddy football
 # boots down on the shoe rack by his front door. Faceless close-up.

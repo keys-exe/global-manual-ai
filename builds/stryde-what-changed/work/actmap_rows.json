@@ -944,11 +944,11 @@
   "subject": "R2",
   "location": "L-D-STAIRS",
   "story_day": "D-D1",
-  "framing": "MCU on his stairs: Desmond sits holding an old faded photograph of his amateur football team from the 1980s, young him in the front row, looking at it with a small fond smile",
-  "action": "his thumb moves over the photo, a small smile",
+  "framing": "POV from his own eyes, seated on his stairs: Desmond's hands hold an old faded photograph of his 1980s amateur football team, his bare knees below",
+  "action": "his thumb moves over the photo",
   "pace": "one small movement, about two seconds",
   "camera": "locked off",
-  "staging": "seated on the stairs, head, hands and photo, camera still",
+  "staging": "POV: hands, photo and knees only, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "absent",
@@ -957,18 +957,18 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "v6 — user Fix 'DIFFERENT IMAGE HERE, LIKE HOLDING PAST PICTURE' (v1 team photo on the wall; v2 football; v3 trophies; v4 jogging; v5 veterans' match)",
+  "notes": "v7 — user Fix 'POV ANGLE' on v6 (him holding the old team photo, three-quarter)",
   "duration": "pending-master",
   "angle": {
-   "height": "eye",
-   "side": "three-quarter",
+   "height": "high",
+   "side": "front",
    "fg": "clean",
-   "scale": "MCU",
-   "why": "three-quarter = his face and the photo together, thirty years in one look"
+   "scale": "CU",
+   "why": "POV = seeing the old photo through his own eyes"
   },
   "focus": {
-   "plane": "eyes",
-   "dof": "medium",
+   "plane": "hands",
+   "dof": "shallow",
    "rack": null,
    "moving_subject": false
   },
@@ -979,7 +979,7 @@
    "arc": "problem: grey",
    "kelvin": 6500
   },
-  "face": true
+  "face": false
  },
  {
   "beat": "B08-TH2",
@@ -1005,14 +1005,14 @@
   "line": "It is coming from standing up and walking.",
   "key": "standing",
   "function": "the cause — ordinary life",
-  "subject": "R1",
-  "location": "L-KITCHEN",
-  "story_day": "M-D1",
-  "framing": "side-on, waist-down, low: Maureen pushes up from her kitchen chair, both knees straightening under her weight, and takes the first step away",
-  "action": "she rises and steps off",
-  "pace": "one rise and one step, about two seconds",
+  "subject": "R2",
+  "location": "L-STREET",
+  "story_day": "D-D1",
+  "framing": "MEDIUM on the pavement: Desmond sitting on a low brick front-garden wall pushes up to standing and steps off along the pavement",
+  "action": "he stands up and takes the first steps away",
+  "pace": "one rise and two steps, about three seconds",
   "camera": "locked off",
-  "staging": "standing up: side-on, waist-down, camera still",
+  "staging": "street: three-quarter, full figure, camera still",
   "pin_end": "no",
   "max": 3,
   "product": "absent",
@@ -1021,29 +1021,29 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "v2 — user Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 Desmond rising from his bottom stair)",
+  "notes": "v3 — user Fix 'CHANGE TO FROM SITTING TO STAND UP AND WALK, OUTSIDE' (v1 Desmond rising off his stair; v2 Maureen rising from her kitchen chair)",
   "duration": "pending-master",
   "angle": {
-   "height": "low",
-   "side": "profile",
+   "height": "eye",
+   "side": "three-quarter",
    "fg": "clean",
-   "scale": "MS",
-   "why": "low profile = the knees doing the work of standing"
+   "scale": "MEDIUM",
+   "why": "three-quarter = the whole ordinary movement, sit to stand to walk"
   },
   "focus": {
-   "plane": "foreground",
-   "dof": "shallow",
+   "plane": "eyes",
+   "dof": "medium",
    "rack": null,
    "moving_subject": false
   },
   "light": {
-   "source": "kitchen window over the sink",
+   "source": "open overcast sky, morning",
    "key_side": "L",
    "time": "morning",
-   "arc": "everyday: cool daylight",
+   "arc": "problem: grey",
    "kelvin": 6500
   },
-  "face": false
+  "face": true
  },
  {
   "beat": "B09-TH",
