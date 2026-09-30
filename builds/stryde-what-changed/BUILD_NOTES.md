@@ -257,3 +257,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **B14a video v1** (5 s, task `4d22c403…`, split in 2 parts on the board): the hands settle the strap and lift away; the strap stays put. Flaw: the hands fiddle rather than making one clean slide, and the shell turns a little on the knee.
 - **B14b video v1** (5 s, task `5f9d667a…`): **flaw — the strap bends like rubber mid-clip (FP05/§27G rigid shell broken).** If Fixed, next try: a much smaller move (a slow push-in on a still hand) rather than a wrist tilt.
 - **B13 v4** (Fix "fix the hand holding the stryde"): image edit of v3, only the hand changed — one ring, fingers curled behind, thumb at the lower-left corner; strap kept. Flaw: two fingertips still peek over the shell's top edge by the left peak. v3 moved to Old.
+
+### 2026-09-30 — Fixes on B14a (video), B14b, B14c
+- **B14a v3** (video Fix "FIX THE PLACEMENT, BELOW THE KNEECAP"): root cause was the start frame (strap at kneecap height, turned to the side), so fixed at the source as an image edit of v2 — **the edit barely moved the strap: v3 still has it high and turned. Not fixed.** Next go: a fresh render, not an edit — front-on (EYE FRO) seated knee, strap already seated on the tendon (PLACE_LOCK_C), hands at the slides, then a short "fingers lift away" video. Image v2 + video v1 moved to Old.
+- **B14b v3** (Fix "FIX THE PRODUCT"): edit of v2 with back_inner.jpg as Image 1 — outline and pad closer to the photo; still held upright. Image v2 + video v1 (rubbery) moved to Old.
+- **B14c v3** (Fix "FIX SIZE BIGGER"): edit of v2 — the strap now spans the whole front of the leg, slide to slide, below the kneecap, wordmark readable. v2 moved to Old.
+- Learned: an image edit swaps or resizes a product well (B13, B14c) but does not move a worn product to a new place on the body (B14a) — placement changes need a fresh render.
