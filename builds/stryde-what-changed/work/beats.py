@@ -565,6 +565,23 @@ B["B06-BR"] = (NB2, ["P3"], photo([
     "no knee straps, no knee supports, no product anywhere, no adverts, no readable signs, no timetable, no bus, no number plates, "
     "no logos, no brand marks on the running kit, no more than three people, no children"))
 
+# B09-BR — "Which is why most of what gets sold for this cannot work." (user 'BROLL HERE', covers B09-TH). Maureen's kitchen table:
+# the things she has tried, laid out together; her hand sets the last one down. All plain and unbranded (F6); nothing like a strap.
+B["B09-BR"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone held up high, looking down at an angle at the pale-oak kitchen table. Laid out together on it, the things "
+    "she has tried for her knee: a plain grey knit knee sleeve, a bulky black hinged knee brace with metal side hinges, a plain white "
+    "tube of gel with no label, and a plain silver blister pack of white tablets. Her hand is just setting the blister pack down beside "
+    "the others. Medium shot: the four things and her hand fill the middle of the frame, the edge of the table, the linen runner and the "
+    "sage-green units behind.",
+    "Her hand: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, thin skin over the knuckles, "
+    "a plain gold wedding ring, the dusty-pink cardigan cuff at the wrist.",
+    KITCHEN,
+    angle("B09-BR", "the things on the table"),
+    focus("everything", deep=True),
+    light("KITCH-L", "the table and her hand"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff, a grey sleeve, a black brace and a white tube").replace("the faded orange of the old photograph", "the black brace")],
+    NO_FACE + ", no person beyond her hand, no product anywhere, no knee strap, no strap of any kind, no readable text, no labels, "
+    "no brand names, no logos, no pharmacy boxes, no printing on the blister pack, no second hand, no extra fingers"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
