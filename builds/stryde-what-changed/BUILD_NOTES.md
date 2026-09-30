@@ -328,3 +328,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - B19b "CONTINUE OF B19A" → edit of B19a v1: she steps down off the bottom stair forwards, strap right, left bare, hand on the newel (NBP).
   - B19-BR2 "FIX, GIVE ME DIFFERENT BROLL HERE" → waist-up at the stair foot, hand on the newel, quiet surprised smile (NBP). She looks off to the side rather than back up the stairs.
 - Wardrobe continuity from B19a v1 on: Maureen in a navy-and-white striped T-shirt (B18b still cardigan). Act map rows for the five updated; angles PASS all three orders; docs/actmap on Plan v31, Current v31, Current 2 v17.
+
+### 2026-09-30 — "FIX AND CONFIRM" round 2 (B18-BR…B19-BR2)
+- Confirmed → videos (Kling 3.0 via Kie, 4 s, 72 cr, preflight PASS): **B18-BR v1** (Maureen types on her phone, smiles — clean); **B18a v1** (Desmond pulls his lace tight — flaws: the strap's shell changes shape a little across frames; the swoosh-like mark on the trainer stays).
+- B18b video: the card reads status `ready` (not `use`, no Fix note) — left untouched, asked the user.
+- Fixes (Kie, NBP/NB2):
+  - B19-BR v3 "FIX THE PRODUCT" → edit of package_open.jpg on her lap, hands on the box sides only. Flaw: she wears a pink cardigan over the striped T-shirt.
+  - B19b v3 "FROM THE FIRST STAIR ON THE TOP STAIR GOING DOWN" → edit of B18b v1, striped T-shirt. **Flaw: the strap came out on her LEFT knee (right bare) and she stands on the landing facing the camera rather than stepping down.**
+  - B19-BR2 split into three (user "CUT IT INTO MORE THAN ONE BROLL"): B19-BR2 v3 "You will know in a minute." (wrist + plain gold watch on the newel post — clean); **B19-BR2b** v1 "Not because the arthritis has gone." (her arthritic hands on her knee — flaws: barefoot, and the right knee behind shows no strap); **B19-BR2c** v1 "It is still there…" (pill organiser + glass of water — on the worktop by the sink, not the sill).
+- Act map: B19b now HIGH/three-quarter from the landing (B18b/B19b both low-front-wide failed WINDOW); B19-BR2 split into B19-BR2/2b/2c in BODY; angles PASS all three; docs/actmap Plan v32, Current v32, Current 2 v18.

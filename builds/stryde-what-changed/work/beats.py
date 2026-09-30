@@ -1406,6 +1406,77 @@ B["B19-BR2"] = (NBP, ["R1", "B19AV1", "P1"], photo([
     light("M-SUN-R", "her and the stairs"), colour("M-STAIRS-SUN").replace("a sage-green cardigan, a white T-shirt and a mid-blue denim skirt", "a navy-and-white striped T-shirt")],
     "no looking into the lens, no posing, no broad grin, no product in frame, no second person, no readable text, no extra fingers"))
 
+# ── 2026-09-30 "FIX AND CONFIRM" round 2: B19-BR (fix the product), B19b (top stair going down), B19-BR2 split into three ──
+REFS.update({"B18BV1": ("B18b v1 — the shot to edit (Image 1)", "../broll/B18b_v1.png"),
+             "B19AV1W": ("B19a v1 — her clothes, knees and stairs", "../broll/B19a_v1.png")})
+
+# B19-BR fix "RE DO THIS BROLL FIX THE PRODUCT": edit of package_open.jpg so the box and both straps stay exactly the product; her
+# hands hold the box's sides only (a strap in a lifting hand bent last time).
+B["B19-BR"] = (NBP, ["PKG", "B19AV1W", "R1", "P1"], (
+    "Edit Image 1. Keep the open box and BOTH straps in it EXACTLY as they are in Image 1 — the same matte-black box and tray, the same "
+    "two straps lying in the tray, each with its matte-black shell with two rounded peaks, a chrome slide at each end, the black band, "
+    "and the grey stryde wordmark on each shell and on the lid — the same shapes, sizes and proportions, nothing redrawn. Change ONLY "
+    "where the box is: it now rests open on the lap of the woman in Image 2, sitting on her bottom stair — a navy-and-white striped "
+    "T-shirt, a mid-blue denim skirt, her bare knees below the box, white plimsolls on the oatmeal hall carpet, the white spindles and "
+    "the stairs of Image 4 beside her. Her two hands hold the two short sides of the box, fingers on the outside, never touching the "
+    "straps. The lid lies beside her on the stair. Seen from a little above, her face out of the top of the frame. Warm afternoon sun "
+    "from the right. An ordinary phone photo.\n\nAVOID: no strap lifted, no strap bent, no redesigned strap, no changed shell shape, "
+    + P.NEG_WORDMARK + ", no third strap, no hands on the straps, no face, no extra hands, no extra fingers"))
+
+# B19b fix "FROM THE FIRST STAIR ON THE TOP STAIR GOING DOWN": edit of B18b v1 (strap placed right): she is on the top stair taking her
+# first step down, seen from the landing above, three-quarter; her clothes as B19a (striped T-shirt), the left knee bare.
+B["B19b"] = (NBP, ["B18BV1", "B19AV1W", "R1"], (
+    "Edit Image 1. " + KEEP_WORN.replace(" and keep the leg, the skin and the room.", " and keep her face, her pale older legs, the "
+    "denim skirt, white plimsolls and the stairs.") + " Change: her top is now the navy-and-white Breton striped T-shirt from Image 2 "
+    "(no cardigan). She stands on the TOP stair and takes her FIRST step down, facing forwards — her strapped RIGHT foot stepping down "
+    "onto the next stair, her LEFT knee BARE, her left hand light on the honey oak handrail. Move the camera up onto the landing just "
+    "above and behind her, a little to the side, looking down three-quarter past her at the whole flight below, so her strapped right "
+    "knee is seen from the front-side. Warm afternoon sun from the half-landing window. A real phone photo.\n\n"
+    "AVOID: no strap on the left knee, no second strap, no strap moved, no strap over the kneecap, no cardigan, no stumbling, no "
+    "looking into the lens, no extra legs, no extra hands"))
+
+# B19-BR2 split (user 'CUT IT INTO MORE THAN ONE BROLL'):
+# B19-BR2 — "You will know in a minute." CU side-on: her wrist and a plain gold watch, her hand resting on the newel post.
+B["B19-BR2"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone at eye level beside the foot of her stairs, side-on, close. Her left hand — slim, pale, faintly freckled, a "
+    "plain gold wedding ring — rests on the top of the square white newel post, and on her wrist a small plain gold watch with a cream "
+    "face, simple black hands and plain markers, no brand, no numbers readable as text. The cuff of a navy-and-white striped T-shirt "
+    "sleeve just in frame. Close: the wrist, the watch and the post fill the frame, the hall soft behind.",
+    M_STAIRS,
+    angle("B19-BR2", "her wrist and watch on the newel post"),
+    focus("the hands and what they hold", deep=False).replace("the room behind", "the hall behind"),
+    light("M-SUN-R", "her wrist and the post"), colour("M-STAIRS-SUN").replace("a sage-green cardigan, a white T-shirt and a mid-blue denim skirt", "a navy-and-white striped T-shirt cuff").replace("the matte-black strap and its chrome slides", "the small gold watch")],
+    NO_FACE + ", no brand on the watch, no readable text, no smartwatch, no product anywhere, no knee strap, no second hand, no extra fingers"))
+
+# B19-BR2b — "Not because the arthritis has gone." CU from above: seated on the bottom stair, her older hands with swollen arthritic
+# knuckles resting on her BARE left knee. Only the left knee in frame — the strapped right knee stays out of the shot.
+B["B19-BR2b"] = (NB2, ["R1", "B19AV1W", "P1"], photo([
+    "A snapshot from a phone held above, looking down. Maureen sits on her bottom stair; close on her BARE LEFT knee and her two older "
+    "hands resting on it — thin, pale, faintly freckled skin, the knuckles visibly swollen and knobbly with arthritis, a slight bend in "
+    "two fingers, a plain gold wedding ring. The hem of her mid-blue denim skirt just above the knee. Close: the hands and the one knee "
+    "fill the frame, the oatmeal carpet soft below; her other knee is out of frame.",
+    "Her legs and hands as the woman in the attached character sheet and in Image 2: a white British woman of sixty-nine. " + R1_LEGS,
+    M_STAIRS,
+    angle("B19-BR2b", "her hands on her knee"),
+    focus("the hands and what they hold", deep=False).replace("the room behind", "the carpet below"),
+    light("M-SUN-R", "her hands and knee"), colour("M-STAIRS-SUN").replace("a sage-green cardigan, a white T-shirt and a mid-blue denim skirt", "a mid-blue denim skirt hem").replace("the matte-black strap and its chrome slides", "the gold wedding ring")],
+    NO_FACE + ", no knee strap, no brace, no product anywhere, no second knee, no red inflamed skin, no bruises, no wounds, no extra "
+    "fingers, no fused fingers"))
+
+# B19-BR2c — "It is still there, and nothing here changes that." CU on the kitchen windowsill: a plain weekly pill organiser beside a
+# glass of water, her hand setting the glass down. No labels.
+B["B19-BR2c"] = (NB2, ["P4"], photo([
+    "A snapshot from a phone at eye level, three-quarter on, close on the kitchen windowsill over the sink. A plain translucent weekly "
+    "pill organiser with seven small lids, a few white tablets inside, sits beside a glass of water; an older woman's hand — slim, pale, "
+    "a plain gold wedding ring, a navy-and-white striped T-shirt cuff — is just setting the glass down on the sill. Close: the organiser, "
+    "the glass and her hand fill the frame, the garden through the window soft behind.",
+    KITCHEN,
+    angle("B19-BR2c", "the pill organiser on the windowsill"),
+    focus("the hands and what they hold", deep=False).replace("the room behind", "the window behind"),
+    light("KITCH-R", "the windowsill and her hand"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a navy-and-white striped T-shirt cuff").replace("the faded orange of the old photograph", "the white tablets")],
+    NO_FACE + ", no labels, no letters on the lids, no day names, no readable text, no brand, no medicine boxes, no product anywhere, no "
+    "knee strap, no second hand, no extra fingers"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
