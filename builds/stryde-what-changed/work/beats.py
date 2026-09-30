@@ -693,6 +693,45 @@ B["B10d2"] = (NB2, ["R1", "P1"], photo([
     NO_FACE + ", no torso, no product anywhere, no knee strap, no brace, no sleeve, no walking stick, no second person, no readable "
     "text, no logos on the plimsolls, no going up the stairs, no wrong number of legs"))
 
+# B11-BR — "None of them are aimed at the spot." (user 'BROLLS HERE', covers B11-TH). Front-on at knee height: seated at her kitchen
+# table, Maureen's fingertip presses the one spot just below her bare kneecap; the sleeve, brace, gel and tablets lie unused behind.
+B["B11-BR"] = (NB2, ["R1", "P4", "K9"], photo([
+    "A snapshot from a phone held at knee height straight in front of her as she sits sideways on a wooden chair at her kitchen table. "
+    "Her bare right knee is nearest the lens, square on; the tip of her right index finger presses the one small soft spot just below the "
+    "kneecap, on the band of the tendon. Behind her knee, on the edge of the pale-oak table and going soft, lie the things she tried: a "
+    "grey knit knee sleeve, a black hinged brace, a plain white tube of gel and a silver blister pack — the same ones as in the attached "
+    "photo, pushed aside, unused. Close: her knee and fingertip fill the lower middle of the frame, the navy skirt hem at the top.",
+    R1_BODY + " " + R1_LEGS + " Her hand: slim, pale, faintly freckled older skin, a plain gold wedding ring, the dusty-pink cardigan cuff "
+    "at the wrist. Wearing a navy skirt ending just above the knee.",
+    KITCHEN,
+    angle("B11-BR", "her knee and fingertip"),
+    focus("her fingertip on the spot below the kneecap", deep=False).replace("the room behind", "the table behind"),
+    light("KITCH-L", "her knee and hand"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff and a navy skirt").replace("the faded orange of the old photograph", "the black brace behind")],
+    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no sleeve or brace on her leg, no readable text, no labels, "
+    "no logos, no second person, no extra hands, no extra fingers, no wrong number of legs"))
+
+# B12 — "What that band actually needs" (first half of the B12 line; user 'BROLLS HERE'). ANAT-A in profile under load, the tendon
+# spot glowing hot; pip — knee upper right, lower-left clear for the host.
+B["B12"] = (NB2, [], anat(
+    "Seen from the side, in profile, at eye level: the knee bent a little under a step's load, the quadriceps above, the kneecap, and the "
+    "patellar tendon below it drawn taut as one clear pearly band down to the top of the shin, its one tight spot just below the kneecap "
+    "glowing hot red-orange at the core. THE KNEE SITS IN THE UPPER RIGHT OF THE FRAME; the lower-left third of the frame is calm "
+    "near-black field with nothing in it (a person will be placed there later). "
+    + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from the side, in profile, at eye level, the knee joint in the upper right of the frame, the lower-left third empty field"))
+
+# B12b — "is for less of your weight to land on it." (second half of the B12 line). ANAT-B ECU from above on the patellar tendon:
+# the spot below the kneecap cooling from hot red-orange to a soft, calm pearly glow — less load landing on it.
+B["B12b"] = (NB2, [], anat(
+    "Seen from above, looking down the front of the knee, very close: the lower edge of the kneecap at the top of the frame and the "
+    "patellar tendon below it as a broad pearly band filling the frame. On it, just below the kneecap, the one spot is CALMING: its "
+    "centre still a soft warm glow, the hot red-orange cooling and fading to a gentle, even pearly light, the tendon relaxed and at "
+    "ease, the whole band quiet — less load landing on it.",
+    view="viewed from above, very close on the patellar tendon just below the kneecap, the tendon filling the frame", stack="ANAT-B",
+    slots={"[STACK]": "the surrounding soft tissue"})
+    .replace("mid-intensity and clearly glowing — not at peak, leaving headroom to escalate", "low, soft and calm, cooling")
+    .replace("Unmistakably the brightest element in frame.", "Still the brightest element in frame, but quiet."))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
