@@ -844,6 +844,22 @@ B["B13"] = (NBP, ["B13V2", "PF"], (
     "ends, no blank shell, no misspelled wordmark, no second strap, no change to the hand, no change to the kitchen, no change to the "
     "light, no extra fingers, no readable text other than the wordmark"))
 
+# B13 v4 — User Fix 'fix the hand holding the stryde' (v3: the strap right at last, but an odd hand — fingers splayed up above the
+# shell, two gold rings). Image edit of v3 (Image 1): only the hand changes; the strap stays exactly as it is (front.webp as Image 2).
+REFS["B13V3"] = ("B13 v3 — the scene to edit (Image 1)", "5069cf9a-486c-461a-ada2-2380f3ecb70d")
+B["B13"] = (NBP, ["B13V3", "PF"], (
+    "Edit Image 1. Keep the strap exactly as it is in Image 1 — the same matte-black shell with its two rounded peaks and the notch "
+    "between them, the same chrome slides, the same grey stryde wordmark, the same size and position, the soft black band hanging in a "
+    "loop below — and keep the kitchen, the light and the framing exactly the same. The strap must still match Image 2. Change ONLY THE "
+    "HAND holding it: ONE natural older woman's right hand, relaxed, holding the strap the way you hold up a phone to show someone — her "
+    "four fingers curled together BEHIND the shell, hidden by it, only their tips just showing at the shell's lower edge; her thumb "
+    "resting lightly on the front at the shell's lower left corner, below the peak and clear of the wordmark. Nothing sticks up above "
+    "the shell. Five fingers in total, natural proportions, slim, pale, faintly freckled older skin with thin skin over the knuckles, "
+    "ONE plain gold wedding ring on the ring finger only, the dusty-pink cardigan cuff at the wrist. A real phone photo, unchanged in look."
+    "\n\nAVOID: no fingers spread above the shell, no fingers splayed, no second ring, no ring on the thumb, no ring on the index finger, "
+    "no extra fingers, no missing fingers, no fused fingers, no second hand, no thumb over the wordmark, no fingers on the chrome slides, "
+    "no change to the strap, no change to the wordmark, no change to the kitchen, no change to the light"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
