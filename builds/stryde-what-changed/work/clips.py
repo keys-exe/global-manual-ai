@@ -663,21 +663,23 @@ B["B11-BR"] = clip("B11-BR",
            {"risk": "the leg moves or a second limb appears", "prevented_by": "'the knee holds its pose', 'no leg moving, no second limb', locked camera"}])
 B["B11-BR"][0]["motion"] = B["B11-BR"][0]["motion"].replace(", and the whole structure compresses a few degrees", "")
 
-# B14a image v2 (user Fix 'fix the woman', then 'confirm'): Maureen seated on her bottom stair, both hands at the sides of the shell just
-# below her right kneecap. One slide up the last centimetre to contact, then her fingers lift away (SEAT_LOCK; §27G rigid product).
+# B14a image v4 (user Fix 'MAKE SURE THE STRAP STAY IN THAT PLACE', then 'CONFIRM'): side-on, Maureen seated on her bottom stair, the
+# strap already on her right knee, both hands resting on the knee above it. Generation 2 (v1 slid the strap and turned it — §22X: the
+# strap no longer moves at all). One action: her hands lift off her knee and settle on her thigh; the strap stays exactly where it is.
 B["B14a"] = clip("B14a",
-    "A slight white British woman of sixty-nine sitting on her bottom stair: sage-green cardigan, mid-blue denim skirt, pale older legs, "
-    "white canvas plimsolls; the black STRYDE knee strap closed round her right leg just below the kneecap, both her hands holding the "
-    "shell by its two sides.",
-    "Already moving on the first frame: both hands slide the whole strap UP the last centimetre as one piece and it stops against the "
-    "underside of the kneecap, seated on the tendon — one short slide, about a second — then her fingers lift gently away and rest on "
-    "her thigh. The strap stays exactly where it stopped; the shell is rigid and keeps its shape and wordmark throughout.",
-    "no strap climbing onto the kneecap, no strap sliding down, no band being pulled, no fastening, no strap changing shape, no strap "
-    "changing size, no wordmark changing, no second strap, no face, no standing up, no extra hands, no extra fingers",
+    "A slight white British woman of sixty-nine seen side-on sitting on her bottom stair: sage-green cardigan, denim skirt, pale older "
+    "legs, white canvas plimsolls; a black STRYDE knee strap with a chrome slide already worn on her right leg just below the kneecap, "
+    "both her hands resting on top of the knee above it.",
+    "Already moving on the first frame: both her hands lift slowly off her knee and settle on her thigh — one slow movement, about a "
+    "second and a half — then she sits still. The strap does not move at all: it stays exactly where it is on her leg, rigid, keeping "
+    "its shape, its slide and its wordmark.",
+    "no strap moving, no strap sliding, no strap turning, no strap changing shape, no strap changing size, no hands touching the strap, "
+    "no standing up, no face, no second strap, no extra hands, no extra fingers",
     4.0, hi=5,
-    risks=[{"risk": "the shell warps or the wordmark smears as it moves", "prevented_by": "one short slide, rigid-shell line in motion, 'no strap changing shape/size, no wordmark changing'"},
-           {"risk": "the strap overshoots onto the kneecap", "prevented_by": "'stops against the underside of the kneecap', 'no strap climbing onto the kneecap'"},
-           {"risk": "hands duplicate or pass through the strap", "prevented_by": "HOLD-C + NEG-WARP-C, 'no extra hands, no extra fingers'"}])
+    risks=[{"risk": "the strap moves or turns with the hands (v1)", "prevented_by": "hands lift off the knee, never touch the strap; 'no strap moving/sliding/turning, no hands touching the strap'"},
+           {"risk": "the shell warps", "prevented_by": "rigid line in motion, 'no strap changing shape/size'"},
+           {"risk": "hands duplicate", "prevented_by": "HOLD-C + NEG-WARP-C, 'no extra hands, no extra fingers'"}])
+B["B14a"][0]["motion"] = B["B14a"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the cardigan cuffs settle; the strap never moves")
 
 # B14b image v2 (user Fix 'too big, fix size', then 'confirm'): the strap upright in her one hand, the grey pad to the lens. One small
 # tilt through the window light — the pad stays to the lens, so no pinned end frame (act map pin 'no').
@@ -712,7 +714,7 @@ B["B14c"] = clip("B14c",
 B["B14c"][0]["motion"] = B["B14c"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the strap never moves")
 
 START = {"B14c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_163337_ba5e6993-4e59-4bf8-8ec8-9aeb85e5a9de.png",
-         "B14a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_160315_08cf3855-d502-4d9f-8d7c-ef5460eee8fb.png",
+         "B14a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_164241_ab6052f5-7c35-44e1-8052-a67bfedf24f7.png",
          "B14b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_160315_ab4a6700-d742-40b1-8b0d-6eb4c68382da.png",
          "B11-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_144242_82c48d6d-785c-454d-91a5-bfea8bd28bcb.png",
          "B12": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_0a389350-3a9a-410e-a56c-5b29e5ee4659.png",

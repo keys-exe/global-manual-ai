@@ -971,6 +971,28 @@ B["B14b"] = (NBP, ["B14BV3", "PBI", "PI"], (
     "second strap, no change to the pad, no change to the ridge, no wordmark, no change to the hand, no change to the kitchen, no extra "
     "fingers"))
 
+# ── 2026-09-30 Fix round 5 — size (image edits of the last renders; FP02: every earlier size note on this product was "too big") ──
+REFS["B13V5"] = ("B13 v5 — the scene to edit (Image 1)", "3c4796b1-e2d6-457c-9b02-c1aa9fe4105e")
+REFS["B14BV4"] = ("B14b v4 — the scene to edit (Image 1)", "cf900e16-d5f8-423a-b72d-6fea1b21f48f")
+B["B13"] = (NBP, ["B13V5", "PF"], (
+    "Edit Image 1. Keep everything in Image 1 exactly as it is — the same kitchen, light, framing and camera, the same hand and cuff, "
+    "the same strap design copied from Image 2 with its two rounded peaks, notch, chevron slides and grey stryde wordmark, lying on her "
+    "open palm in the same way. Change ONLY THE SIZE of the strap: make it SMALLER, about two thirds of its size in Image 1 — its true "
+    "size, a small shell about 12 cm across and 5 cm tall: from slide to slide it is only a little wider than her palm, about five of "
+    "her thumb-widths, and it is about as tall as her thumb is long, so her fingers and the heel of her palm show clearly around it. The "
+    "band shrinks with it and still hangs soft behind her hand. The wordmark stays readable.\n\n"
+    "AVOID: no strap as wide as the whole hand with fingers spread, no oversized strap, no strap bigger than in the product photo, no "
+    "change to the strap's shape, no change to the wordmark, no second strap, no change to the hand, no change to the kitchen, no extra fingers"))
+B["B14b"] = (NBP, ["B14BV4", "PBI", "PI"], (
+    "Edit Image 1. Keep everything in Image 1 exactly as it is — the same kitchen, light, framing and camera, the same hand and cuff, "
+    "the same inside of the strap with its grey grooved pad, smooth comma-shaped ridge, chrome slides and closed black band loop. Change "
+    "ONLY THE SIZE of the strap: make it SMALLER, about two thirds of its size in Image 1 — its true size, as in Image 3: from slide to "
+    "slide about 12 cm, SHORTER than her hand from the wrist to the fingertips, about as tall as her thumb is long, sitting in her hand "
+    "the way the strap sits in the hand in Image 3. The band loop shrinks with it and still hangs soft below. The pad still faces the "
+    "lens.\n\n"
+    "AVOID: no strap longer than her hand, no oversized strap, no strap bigger than in Image 3, no change to the pad, no change to the "
+    "ridge, no change to the strap's shape, no wordmark, no second strap, no change to the hand, no change to the kitchen, no extra fingers"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
