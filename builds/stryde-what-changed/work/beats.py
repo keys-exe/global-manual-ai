@@ -742,16 +742,17 @@ B["B10d2"] = (NB2, ["R2", "P2"], photo([
     NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no brace, no sleeve, no walking stick, no second person, "
     "no readable text, " + PLAIN_SHOES + ", no wrong number of legs, no extra hands, no extra fingers"))
 
-# B13 — "That is what this does. It is called Stryde." Front-on, eye level, CU in the kitchen: the strap resting across her open upturned
-# palm at chest height, the shell's front and wordmark square to the lens, big in frame (FP01, FP02, FP06, FP11, FP12; HELD_GRIPS open palm).
+# B13 v2 — "That is what this does. It is called Stryde." User Fix 'fix the product' (v1: a U-shaped shell, the band standing up as a
+# stiff ring). One hand holds it up by the fingertips on the pad behind (HELD_GRIPS 'fingertips behind'), front square to the lens exactly
+# as front.webp, the band hanging soft below (FP01, FP05, FP06, FP11, FP12).
 B["B13"] = (NBP, ["PF", "R1", "P4"], photo([
     "A snapshot from a phone held at chest height, straight on, in her kitchen. The strap in Image 1, copied exactly — same shell, band, "
-    "slides and wordmark, nothing redesigned — rests across her ONE open, upturned right palm held out towards the lens above the pale-oak "
-    "table, the front face of the shell square to the lens and the wordmark readable, her fingers loosely curled at the shell's lower edge, "
-    "her thumb beside it, nothing covering the shell, the notch or the wordmark, the soft black knit band draped in a relaxed loop over the "
-    "back of her hand. Close-up: the strap fills about half the frame width, her palm and wrist under it, the kitchen soft behind.",
-    P.REF_PROD.replace("attached reference image", "Image 1") + " " + P.WORDMARK_LOCK + " " + P.SIZE_HELD
-    + " The shell is about 12 cm across and 5 cm tall — no longer than her palm is wide plus a little overhang each side.",
+    "slides and wordmark, nothing redesigned — held up in ONE hand at chest height above the pale-oak table: her fingertips pressed flat on "
+    "the pad behind the shell, her thumb at the shell's lower left corner, the front face of the shell square to the lens exactly as it "
+    "faces the camera in Image 1, the wordmark readable, nothing covering the shell, the peaks, the notch or the wordmark. The soft black "
+    "knit band hangs down loosely from both slides behind her hand in a slack, drooping loop, bending like fabric. Close-up: the shell fills "
+    "about half the frame width, her hand and wrist behind and below it, the kitchen soft behind.",
+    "THE SHAPE, exactly as Image 1: a wide, low matte-black shell, about two and a half times as wide as it is tall. Its top edge rises into TWO rounded peaks, one over each end third of the shell, with a deep rounded notch dipping between them in the middle; beyond each peak the top edge drops down to a short straight shoulder where a brushed chrome slide with three small engraved chevrons sits upright at each end. The bottom edge is gently waisted. The black coarse-knit band comes out of each slide. The shell is flat-fronted and wide — never a U, never a cup, never a tall ring, never a curved bow. " + P.WORDMARK_LOCK + " " + P.SIZE_HELD,
     "Her hand: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, thin skin over the knuckles, "
     "a plain gold wedding ring, the dusty-pink cardigan cuff at the wrist.",
     KITCHEN,
@@ -759,35 +760,45 @@ B["B13"] = (NBP, ["PF", "R1", "P4"], photo([
     focus("the product and its wordmark", deep=False).replace("the room behind", "the kitchen behind"),
     light("KITCH-R", "the strap and her hand"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff").replace("the faded orange of the old photograph", "the brushed chrome slides")],
     NO_FACE + ", no person beyond her hand and wrist, no second hand, " + P.NEG_WORDMARK + ", " + PROD_NEG
-    + ", no fingers across the wordmark, no fingers on the slides, no hand gripping the band, no strap worn, no packaging, no box"))
+    + ", no U-shaped shell, no cup shape, no stiff band, no band standing up in a ring, no band loop above the hand, no curved bow shape, "
+    "no peaks at the very ends, no fingers across the wordmark, no fingers on the slides, no hand gripping the band, no strap worn, no packaging, no box"))
 
-# B14a — "It sits two centimetres below the kneecap, on the tendon, and never crosses the joint." High three-quarter CU, her own view: sitting
-# on her bottom stair, her two hands slide the closed strap up the front of her right shin, a finger's width short of its seat (SEAT_LOCK, FP03, FP10).
+# B14a v2 — "It sits two centimetres below the kneecap, on the tendon, and never crosses the joint." User Fix 'fix the woman' (v1: a
+# younger, tanned-looking pair of legs and hands, bare feet — not Maureen). Same seat move; Maureen's own legs, hands and plimsolls.
 B["B14a"] = (NBP, ["PF", "PW", "R1", "P1"], photo([
     "A snapshot from a phone held up high, looking down at an angle at her right knee as she sits on her bottom stair, the knee bent at a "
-    "right angle, the foot flat on the hall floor. The strap in Image 1, copied exactly — same shell, band, slides and wordmark, nothing "
-    "redesigned — is closed round the top of her right shin, its front face towards the lens: both her hands hold the shell by its two "
-    "sides, fingertips flat on the matte shell, sliding the whole strap UP the front of the shin, caught a finger's width short of its seat "
-    "— about to stop ON THE PATELLAR TENDON just below the kneecap, where Image 2 shows it worn. The kneecap above stays bare, its whole "
-    "outline reading. Close-up: the knee, the strap and her hands fill the frame, the strap about a third of the frame wide.",
+    "right angle, the foot flat on the hall floor in a white canvas plimsoll. The strap in Image 1, copied exactly — same shell, band, "
+    "slides and wordmark, nothing redesigned — is closed round the top of her right shin, its front face towards the lens: both her hands "
+    "hold the shell by its two sides, fingertips flat on the matte shell, sliding the whole strap UP the front of the shin, caught a "
+    "finger's width short of its seat — about to stop ON THE PATELLAR TENDON just below the kneecap, where Image 2 shows it worn. The "
+    "kneecap above stays bare, its whole outline reading. Close-up: the knee, the strap and her hands fill the frame, the strap about a "
+    "third of the frame wide.",
     P.REF_PROD.replace("attached reference image", "Image 1") + " " + P.WORDMARK_LOCK + " " + P.SIZE_WORN,
-    R1_BODY + " " + R1_LEGS + " Wearing " + WARD["M-D2"] + ". Her hands: a plain gold wedding ring, the sage-green cardigan cuffs at the wrists.",
+    "SHE IS MAUREEN, THE SAME WOMAN as in the attached character sheet (Image 3): a SIXTY-NINE-year-old white British woman, short and "
+    "slight with a small rounded back. Her legs are thin and VERY PALE, never tanned — milky, faintly freckled older skin with soft creases "
+    "over a bony knee, a few thread veins and a faint bluish vein on the shin, slightly loose skin at the knee, real unretouched skin. Her "
+    "hands are small, thin-skinned older hands: prominent knuckles and tendons, brown age spots on the backs, short plain unpolished nails, "
+    "a plain gold wedding ring. Wearing a sage-green cardigan over a white T-shirt, a mid-blue denim skirt ending just above the knee, and "
+    "WHITE CANVAS PLIMSOLLS on both feet.",
     M_STAIRS,
     angle("B14a", "her right knee and the strap"),
     focus("the product and its wordmark", deep=False).replace("the room behind", "the hall behind"),
     light("M-SUN-R", "her knee, the strap and her hands"), colour("M-STAIRS-SUN")],
     NO_FACE + ", no torso above the waist, " + P.NEG_SEAT + ", " + P.NEG_WORDMARK + ", " + PROD_NEG
-    + ", no strap on the left leg, no strap over the kneecap, no strap on the thigh, no fingers across the wordmark, no second person, no extra fingers"))
+    + ", no tanned skin, no young skin, no smooth young hands, no manicured nails, no painted nails, no bare feet, no strap on the left leg, "
+    "no strap over the kneecap, no strap on the thigh, no fingers across the wordmark, no second person, no extra fingers"))
 
-# B14b — "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee." Eye level three-quarter ECU in
-# the kitchen: the strap turned round in one hand, the grey pad inside the shell to the lens (PAD_BACK_SHOT, INNER_PAD — never 'silicone'; FP04, FP06, FP12).
+# B14b v2 — "A silicone pad inside holds pressure on that one band…" User Fix 'too big, fix size' (v1: the strap held upright, longer
+# than her whole hand). Held across her fingers exactly like inner_face.jpg, at that photo's size against the hand, framed wider (FP02, FP06).
 B["B14b"] = (NBP, ["PBI", "PI", "R1", "P4"], photo([
-    "A snapshot from a phone held at eye level, three-quarter on, very close, in her kitchen. She holds the strap turned round in ONE hand "
-    "so its inside faces the lens, exactly as the hand holds it in Image 2: her fingers curled under the shell's back, her thumb resting at "
-    "the pad's lower corner, clear of the raised ridge. The pad is Image 1 copied exactly — same outline, same comma-shaped ridge, same "
-    "fanned grooves, same chrome slides and black knit band ends, nothing redesigned. Extreme close-up: the pad fills about two thirds of "
-    "the frame width, her hand below it, the kitchen table soft far behind.",
-    P.PAD_BACK_SHOT + " " + P.INNER_PAD + " " + P.SIZE_HELD,
+    "A snapshot from a phone held at eye level, three-quarter on, close, in her kitchen. She holds the strap turned round in ONE hand so "
+    "its inside faces the lens, lying ACROSS her fingers sideways exactly as the hand holds it in Image 2 and at the SAME SIZE against the "
+    "hand as in Image 2: her fingers under the shell's back, her thumb resting at the pad's lower corner, clear of the raised ridge. It is "
+    "a small object: slide to slide it is about 12 cm — SHORTER than her hand from the wrist to the fingertips — and about 5 cm tall, "
+    "about as tall as her thumb is long. The pad is Image 1 copied exactly — same outline, same comma-shaped ridge, same fanned grooves, "
+    "same chrome slides and black knit band ends, nothing redesigned. Close-up: her whole hand, her wrist and the cardigan cuff in frame, "
+    "the strap about two fifths of the frame width, the kitchen table soft behind.",
+    P.PAD_BACK_SHOT.replace(" fills the frame", " faces the lens") + " " + P.INNER_PAD + " " + P.SIZE_HELD,
     "Her hand: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, thin skin over the knuckles, "
     "a plain gold wedding ring, the dusty-pink cardigan cuff at the wrist.",
     KITCHEN,
@@ -795,22 +806,25 @@ B["B14b"] = (NBP, ["PBI", "PI", "R1", "P4"], photo([
     focus("the pad inside the shell", deep=False).replace("the room behind", "the kitchen behind"),
     light("KITCH-L", "the pad and her hand"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff").replace("the faded orange of the old photograph", "the grey pad")],
     NO_FACE + ", no person beyond her hand, no second hand, " + P.NEG_INNER_PAD + ", " + PROD_NEG
-    + ", no wordmark on this side, no thumb over the ridge, no strap worn, no packaging"))
+    + ", no strap longer than her hand, no strap held upright, no strap filling the frame, no wordmark on this side, no thumb over the ridge, "
+    "no strap worn, no packaging"))
 
-# B14c — "Your weight gets caught and moved off the worn part before it reaches the joint." ANAT-A low three-quarter: the strap seated on
-# the tendon just below the kneecap, drawn as a dark translucent shell; the load path bends round the spot, the glow there calming (F7).
-B["B14c"] = (NB2, [], anat(
-    "Seen from a low three-quarter angle, close: the knee under a step's load, and seated on it, drawn as a slim dark translucent "
-    "matte-black shell about as tall as the kneecap, a strap sits ON THE PATELLAR TENDON directly below the kneecap — its top edge rising "
-    "into two small matching peaks either side of a notch that cups the kneecap's lower border, a thin black band running round the leg "
-    "at the height of the shell's middle, a small chrome slide at each end. Behind the shell, a soft grey pad presses flat on the tendon. "
-    "The spot on the tendon just below the kneecap is CALMING: the hot red-orange fading to a soft, even pearly glow under the pad, the "
-    "tendon relaxed; the load reads as a faint cool glow carried round the shell and spread into the surrounding soft tissue, away from "
-    "the worn spot. The kneecap stays uncovered above the strap.",
-    view="viewed from a low three-quarter angle, close, the strapped knee large in the middle of the frame")
-    .replace("no product,", "no product other than the one strap on the tendon,").replace("no product\n", "no product other than the one strap on the tendon\n").replace("no clothing, ", "no clothing, no second strap, no strap over the kneecap, ")
-    .replace("mid-intensity and clearly glowing — not at peak, leaving headroom to escalate", "low, soft and calm, cooling")
-    .replace("Unmistakably the brightest element in frame.", "Still the brightest element in frame, but quiet."))
+# B14c v2 — "Your weight gets caught and moved off the worn part before it reaches the joint." User Fix 'fix the product' (v1: an
+# invented translucent strap over the joint). ANAT-A front-on at eye level with the REAL strap from front.webp (Image 1), opaque, seated on
+# the tendon below the kneecap, wordmark to the lens; the glow at the spot calming around it (FP01, FP03, FP12).
+B["B14c"] = (NBP, ["PF"], anat(
+    "Seen straight from the front at eye level, close: the knee under a step's load, and worn on it THE STRAP IN IMAGE 1, COPIED EXACTLY — "
+    "the same solid, opaque matte-black shell, the same two rounded peaks with the rounded notch between them, the same brushed chrome "
+    "slides with engraved chevrons, the same black coarse-knit band and the same grey lowercase stryde wordmark, nothing redesigned, a real "
+    "physical object sitting on the translucent model. It sits ON THE PATELLAR TENDON directly below the kneecap: the notch cups the "
+    "kneecap's lower border, the peaks either side reach no higher than the base of the kneecap, the shell spans the front of the knee with "
+    "a chrome slide at each side, the band running level round the leg behind; the wordmark faces the lens, horizontal and readable. The "
+    "kneecap stays fully uncovered above it. Around the shell's edges, on the tendon beneath it, the spot is CALMING: a soft, even pearly "
+    "glow seeping out round the shell where the hot red-orange has faded, the tendon relaxed; the load reads as a faint cool glow spread "
+    "into the surrounding soft tissue, away from the worn spot. " + P.SIZE_WORN,
+    view="viewed straight from the front at eye level, close, the strapped knee large in the middle of the frame")
+    .replace("no product,", "no product other than the one strap on the tendon,").replace("no product\n", "no product other than the one strap on the tendon\n")
+    .replace("no text overlays, no labels,", "no text overlays, no diagram labels,").replace("no clothing, ", "no clothing, no second strap, no strap over the kneecap, no translucent strap, no ghosted strap, no invented strap shape, no blank shell, "))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)

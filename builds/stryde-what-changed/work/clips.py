@@ -581,20 +581,21 @@ B["B10d"] = clip("B10d",
            {"risk": "extra tablets or hands appear", "prevented_by": "'no tablets multiplying', 'no extra hands, no extra fingers'"},
            {"risk": "text appears on the blister pack", "prevented_by": "'no printing on the pack, no readable text'"}])
 
-# B10d2 image v1 (user CONFIRM GO): Maureen at the foot of her stairs, legs only, one foot on the hall carpet, one on the bottom stair,
-# hand on the rail. "and leaves the load exactly where it was." ≈ 2.3 s → 4 s.
+# B10d2 image v2 (user Fix 'give me different broll here', then 'confirm'): Desmond at the foot of his stairs, low side-on, legs only,
+# hands on his thighs, knees bent, pushing himself up.
 B["B10d2"] = clip("B10d2",
-    "An older white woman's legs at the foot of her stairs, seen from low in the hall: a navy skirt hem, bare legs, white canvas "
-    "plimsolls, one foot on the oatmeal hall carpet and one on the bottom stair, her hand on the white banister rail above.",
-    "Already moving on the first frame: she steps up onto the bottom stair — her weight shifts onto the foot on the stair and that bare "
-    "knee bends and takes her whole weight as she rises onto it — one ordinary step, about a second and a half, then she stands on the "
-    "stair. She stays in frame.",
-    "no second step, no walking out of frame, no stumbling, no face, no second person, no knee strap, no brace, no logos on the plimsolls, "
-    "no extra legs",
+    "A Black British man of sixty-six seen side-on from low in his hall, cropped at the waist: dark grey jogging shorts, a navy zip-neck top, "
+    "bare dark-skinned knees and shins, plain white trainers, both hands pressed on his thighs just above the knees, the grey-carpeted "
+    "bottom stairs behind him.",
+    "Already moving on the first frame: he pushes down on his thighs and straightens up — both knees taking his whole weight as they "
+    "slowly straighten — one ordinary push up, about two seconds, then he stands still with his hands leaving his thighs. His feet stay "
+    "planted; he stays in frame.",
+    "no stepping, no walking out of frame, no stumbling, no face, no head, no second person, no knee strap, no brace, no logos on the "
+    "trainers, no extra legs, no extra hands",
     2.3, hi=5,
-    risks=[{"risk": "legs warp as she steps up", "prevented_by": "one step at an ordinary pace, start frame mid-stance, HOLD-C + NEG-WARP-C, 'no extra legs'"},
-           {"risk": "she climbs on and leaves frame", "prevented_by": "'then she stands on the stair. She stays in frame', 'no second step, no walking out of frame'"},
-           {"risk": "the camera follows her", "prevented_by": "locked-off tripod clause"}])
+    risks=[{"risk": "legs warp as he straightens", "prevented_by": "one slow push up, feet planted, HOLD-C + NEG-WARP-C, 'no extra legs'"},
+           {"risk": "the head/face comes into frame as he stands", "prevented_by": "locked-off tripod, 'no face, no head', cropped at the waist in subject"},
+           {"risk": "the swoosh on the trainers stays visible", "prevented_by": "'no logos on the trainers' (the start frame shows it; the edit can blur it if it stays)"}])
 
 # B06 video gen 4 (user 'B06 GO', 2026-09-30) from image v7: close-up on the knee joint, low three-quarter, wave-fronts into the joint,
 # impact flare with rings and particles below the kneecap. v3 faults fixed at the source: the waves ran on past the knee onto the shin
@@ -667,7 +668,7 @@ START = {"B11-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iU
          "B12b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_c1a15ea6-ad66-4f8b-aeb5-9bb6b3d657b0.png",
          "B10c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140203_48b079aa-50b4-48f7-888a-f2c5779f802c.png",
          "B10d": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140212_e6684a2f-35c2-4d68-91bd-def7c5820b7a.png",
-         "B10d2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140214_02e1997c-f151-4fc5-b250-3d1e36a9b3a2.png",
+         "B10d2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_155002_e1a1e449-2ce8-454d-9af0-774d557c78fb.png",
          "B10a2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_130409_3a6ea112-6592-45b6-bf5b-93efcd5e52d8.png",
          "B10a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_124139_4d54cb95-4893-4963-aeaa-56169d8697f8.png",
          "B10b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_123301_214e72ba-2159-428e-bfeb-3619729c8fca.png",
