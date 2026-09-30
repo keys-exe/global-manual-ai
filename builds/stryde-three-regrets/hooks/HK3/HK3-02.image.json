@@ -1,0 +1,32 @@
+{
+ "beat": "HK3-02",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.\": keep this photo exactly as it is — his hands, gold ring, tan jacket cuffs, stone shorts, bare knee, pavement, kerb and shelter post, the same high three-quarter angle and grey daylight. Image 1 is that photo.\nChange only the pill card and the pill: his right hand holds the small silver foil card of headache pills flat and level, a hand's width ABOVE his open left palm, the clear raised bubbles facing up. His right thumb presses down on one full bubble, and one small round white pill has just broken out through the silver foil on the UNDERSIDE of the card and is dropping into the middle of his open palm below. The pill is below the card, between the card and the palm — never on top of the card.\nIn frame: exactly two hands, five fingers each, one card, one falling pill; two empty bubbles, the rest full. The card and palm fill the middle of the frame.\nNo pill on top of the card, no readable text or logos on the foil, no box, no extra fingers.",
+ "script_line": "The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.",
+ "face": false,
+ "room": false,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "HK3-02 v1 frame",
+   "kind": "frame"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "deb72848-6430-493c-aeaa-1e222336f286",
+ "taste": [
+  "HT04",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro"
+ ],
+ "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call)",
+ "fix_note": "the pill must be under the Blister pack: v1's pill lay on top of the card under his thumb → edit of v1: the pill breaks out through the foil underside and drops into his palm below"
+}
