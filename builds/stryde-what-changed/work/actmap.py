@@ -131,11 +131,17 @@ BB("B05", A1, "And inside the joint there is a layer of cartilage doing the abso
    "one slow change over four seconds", STILL, "none", "no", "absent", "—", "NB2",
    EYE, PRO, "clean", "CU", "profile: the layer seen edge-on", "deep", "deep", L(ANAT, "L"), False, eg="EG05")
 TH("B06-TH", A1, "That part is ordinary. It happens to everybody. But here is what nobody explains. The load does not thin with it.")
-BB("B06", A1, "Seventeen times your bodyweight is still arriving, every step, in exactly the same place.", "Seventeen", "mechanism — load (pip)",
-   "ANAT", "—", "—", "ANAT-A detailed: the thinner joint — worn cartilage, menisci, ligaments, fat pad, tendon fibres — the load pulses still arriving at the same spot below the kneecap", "one pulse per second, unchanged",
-   "one pulse a second", STILL, "none", "no", "absent", "—", "NB2",
+BB("B06", A1, "Seventeen times your bodyweight is still arriving, every step,", "Seventeen", "mechanism — load (pip)",
+   "ANAT", "—", "—", "ANAT-A detailed, whole leg mid-step: glowing waves of force pour down through the thigh inside the limb and burst as a bright ripple at the spot below the kneecap, every step", "one wave arrives each step",
+   "one wave a second", STILL, "none", "no", "absent", "—", "NB2",
    LOW, THR, "clean", "CU", "low = the weight coming down on it", "deep", "deep", L(ANAT, "L"), False,
-   layout="pip", eg="EG02 host cut-out bottom-left · EG04 red box 'Seventeen times' · 17× overlay")
+   layout="pip", eg="EG02 host cut-out bottom-left · EG04 red box 'Seventeen times' · 17× overlay",
+   notes="v5 image — user 'MORE EFFECTS, MAKE IT 2 BROLLS HERE' (split: this is the first half)")
+BB("B06b", A1, "in exactly the same place.", "same", "the same spot, every time",
+   "ANAT", "—", "—", "ANAT-A ECU of the patellar tendon just below the kneecap: one tight glowing target spot, concentric rings of light rippling out through the tendon fibres from it as each impact lands on exactly the same point", "the rings ripple out from the one spot",
+   "one ripple a second", STILL, "none", "no", "absent", "—", "NB2",
+   EYE, FRO, "clean", "ECU", "front-on and close = the one exact spot, dead centre", "deep", "deep", L(ANAT, "R"), False,
+   notes="user 'MORE EFFECTS, MAKE IT 2 BROLLS HERE' — second half of the B06 line")
 TH("B07-TH", A1, "The cushion gets thinner. The weight stays exactly the same.", framing="punch")
 BB("B07", A1, "That is why it feels like it arrived overnight.", "overnight", "problem — the feeling",
    "R1", "L-KITCHEN", "M-D1", "MCU in her kitchen first thing in the morning: Maureen half-risen from her chair at the oak table, a cup of tea in front of her, she stops and puts a hand to her knee, a small surprised frown", "she straightens, stops, hand to her knee",
@@ -377,7 +383,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []

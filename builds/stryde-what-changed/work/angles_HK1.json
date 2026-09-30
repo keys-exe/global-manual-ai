@@ -534,6 +534,36 @@
   }
  },
  {
+  "beat": "B06b",
+  "group": "Act 1",
+  "type": "BR",
+  "subject": "ANAT",
+  "height": "eye",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "front-on and close = the one exact spot, dead centre",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "\u2014",
+  "face": false,
+  "light": {
+   "source": "anatomical register (\u00a712A)",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "mechanism",
+   "kelvin": 5600,
+   "why": ""
+  }
+ },
+ {
   "beat": "B07-TH",
   "group": "Act 1",
   "type": "TH",

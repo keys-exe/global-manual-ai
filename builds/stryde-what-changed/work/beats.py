@@ -346,94 +346,36 @@ B["B05"] = (NB2, [], anat(
          "is visible", stack="ANAT-B",
     slots={"[TARGET]": "the cartilage lining the joint surfaces"}).replace("the patellar tendon crisp", "the cartilage crisp"))
 
-# B06 v4 — user Fix 'MORE ARROWS, MORE DETAILS' on "Seventeen times your bodyweight is still arriving, every step, in exactly the
-# same place." (v3: one pointer arrow). Several force arrows now carry the bodyweight down the thigh and converge on the one tendon spot,
-# plus the pointer; more anatomical detail. Still no text. Pip (host cut-out bottom-left): knee upper right.
-B["B06"] = (NB2, [], anat(
-    "Seen from a low three-quarter angle, CAUGHT MID-STEP: the leg bending under a landing, the foot just striking the ground below the "
-    "frame, the thigh muscles visibly tensed and bulging with the load, the knee flexed — the body's weight coming down through it. In "
-    "very rich, high anatomical detail: the four heads of the quadriceps each distinct with fine fibre striation and pearly tendon sheaths, "
-    "the quadriceps tendon sweeping over the kneecap, the kneecap with its textured bony surface and its smooth cartilage underside, the "
-    "patellar tendon as a banded, fibrous ribbon drawn taut with its long fibres visible, the infrapatellar fat pad and the small bursa "
-    "behind it, the joint capsule as a thin translucent sleeve, the two crescent menisci, the collateral ligaments at the sides, the "
-    "cruciate ligaments crossing deep inside, fine blood vessels threading over the bone, the bone ends with porous trabecular texture — "
-    "and the cartilage between the bones visibly THIN and worn. SEVERAL FORCE ARROWS: five or six smooth, slightly glowing white-to-amber "
-    "arrows run DOWN the front and sides of the thigh from the top of the frame, following the line of the leg like the body's weight "
-    "pouring down, all CONVERGING on the one same spot on the patellar tendon just below the kneecap; plus one larger clean white pointer "
-    "arrow outside the leg in the dark field pointing precisely at that spot. The arrows are crisp medical-illustration graphics, no "
-    "text, no label, no number on any of them. THE KNEE SITS IN THE UPPER RIGHT OF THE FRAME; the lower-left third of the frame is calm "
-    "near-black field with nothing in it (a person will be placed there later). "
+# B06 v5 — "Seventeen times your bodyweight is still arriving, every step," User 'MORE EFFECTS, MAKE IT 2 BROLLS HERE' (v4: force
+# arrows down the thigh + pointer; confirmed, two videos made). Now the first half of the line: the whole leg mid-step, glowing waves of
+# force pouring down through the thigh INSIDE the limb and bursting as a bright ripple at the tendon spot. Effects stay inside the body.
+EFX_OK = lambda s: (s.replace("no shockwave, no burst, ", "").replace("no arrows, no force arrows, ", "")
+                     .replace("no volumetric emission floating outside the structures, ", ""))
+B["B06"] = (NB2, [], EFX_OK(anat(
+    "Seen from a low three-quarter angle, the whole leg CAUGHT MID-STEP from the hip down: the foot landing below the frame, the knee "
+    "flexed, the thigh muscles tensed and bulging with the load, in rich anatomical detail — the quadriceps heads with fine striation, "
+    "the kneecap, the patellar tendon as a taut banded ribbon, the worn thin cartilage. THE EFFECT: bright glowing waves of white-gold "
+    "light travel DOWN through the inside of the thigh like a pulse of force, three stacked wave-fronts one behind another, the lowest one "
+    "just arriving at the patellar tendon below the kneecap, where it bursts into a bright ripple — a ring of light spreading through the "
+    "tendon and the translucent tissue around the spot, with fine glowing particles lifting from the impact inside the body shell. All of "
+    "the light lives INSIDE the leg: nothing flies in from outside. THE KNEE SITS IN THE UPPER RIGHT OF THE FRAME; the lower-left third "
+    "of the frame is calm near-black field with nothing in it (a person will be placed there later). "
     + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
-    view="viewed from a low three-quarter angle, foreshortened, the knee joint in the upper right of the frame, the lower-left third "
-         "empty field")
-    .replace("no arrows, no force arrows, ", "no arrows pointing anywhere but the tendon spot, ").replace("no diagram markings, ", "").replace("no annotations, ", "")
-    .replace("no individual muscle fibres, ", "").replace("no surface veins, ", "")
-    .replace("never fine striation and never individual fibres", "fine striation readable"))
+    view="viewed from a low three-quarter angle, foreshortened, the whole leg from the hip down with the knee joint in the upper right of "
+         "the frame, the lower-left third empty field")
+    .replace("no individual muscle fibres, ", "").replace("never fine striation and never individual fibres", "fine striation readable")))
 
-# B06-BR2 — user "The load does not thin with it — BROLL HERE". Desmond on the pavement, knee-height side-on: one heavy step, his
-# whole weight landing on the knee. Faceless; plain trainers.
-# v2 — user Fix 'FOCUS ON KNEE' (v1: both legs, shorts to trainers, the knee small): a close-up on the landing right knee.
-B["B06-BR2"] = (NB2, ["R2", "P3"], photo([
-    "A close-up snapshot from a phone held at knee height on the pavement, side-on, close in. He is walking along the pavement from the "
-    "left of the frame to the right, caught as his right foot lands and takes his whole weight: THE RIGHT KNEE FILLS THE MIDDLE OF THE "
-    "FRAME, bending a little under the load, the kneecap and the band of tendon below it standing out under the skin, the lower thigh "
-    "muscle firm above it and the top of the shin below. The frame holds only the knee, from just below the shorts hem to the middle of "
-    "the shin — no feet, no trainers, no other leg in focus; the other leg is only a soft dark shape behind. The street behind is a soft "
-    "grey blur of paving and hedge.",
-    R2_BODY + " Wearing dark grey jogging shorts ending just above the knee.",
-    STREET,
-    angle("B06-BR2", "his right knee"),
-    focus("his right knee and the tendon below the kneecap", deep=False).replace("the room behind", "the street behind"),
-    light("STREET-AM-L", "his knee"),
-    colour("STREET-AM").replace("navy skirt and white plimsolls", "dark grey jogging shorts")],
-    NO_FACE + ", no torso, no hands, no product anywhere, no knee strap, no knee support, no walking stick, no limp, no second person, "
-    "no dog, no number plates, no readable signs, no feet in frame, no shoes in frame, no wrong number of legs"))
-
-# B08-BR — first sentence of B08-TH: "Nothing about the way you walk changed, so you assume nothing changed." (user Fix: B-roll here).
-# Maureen from behind, walking down her hall towards the front door, ordinary and unhurried.
-B["B08-BR"] = (NB2, ["R1", "P1"], photo([
-    "A snapshot from a phone at eye height at the foot of her stairs, looking down her hall towards the front door. She is walking away "
-    "from the lens down the hall at an ordinary, unhurried pace, caught mid-stride: her right foot planted, her left heel lifting behind. "
-    "Medium shot from behind, her whole figure small in the frame, the front door with its glass panel at the end of the hall, the half-moon "
-    "hall table beside it. Her face is not visible — only the back of her head and her soft white hair.",
-    R1_BODY + " " + R1_LEGS + " Wearing " + WARD["M-D1"] + ".",
-    M_STAIRS + " The half-moon hall table with a key bowl and a blue-and-white vase of dried lavender stands just inside the front door.",
-    angle("B08-BR", "her walking down the hall"),
-    focus("everything"),
-    light("M-GREY-R", "her and the hall"), colour("M-STAIRS-AM")],
-    "no face visible, no turning round, no looking back, no limp, no walking stick, no product anywhere, no knee strap, no second person, "
-    "no readable text, no wrong number of legs"))
-
-# B08-BRb — "And here is the part that catches people out." (user 2026-09-30 'give me brolls here'). Desmond halfway down his
-# stairs stops short, hand to his knee, caught out. Seen from the landing above. Face in frame.
-B["B08-BRb"] = (NB2, ["R2", "P2"], photo([
-    "A snapshot from a phone held on the landing, looking down the flight at him, three-quarter on. He is halfway down his stairs and has "
-    "stopped short: his right hand on the dark handrail, his left hand gone to the front of his left knee, his head bowed looking down at "
-    "the knee with a surprised, caught-out frown — as if it had never done that before. Medium close-up from above, his head and "
-    "shoulders down to his knee, the stairs falling away below him.",
-    R2 + " Wearing " + WARD["D-D1"] + ".",
-    D_STAIRS,
-    angle("B08-BRb", "him on the stairs below"),
-    focus("his nearest eye", deep=False).replace("the room behind", "the stairs below"),
-    light("D-GREY-R", "him and the stairs"), colour("D-STAIRS-AM")],
-    "no crying, no wincing in agony, no falling, no looking at the camera, no product anywhere, no knee strap, no walking stick, "
-    "no second person, " + PLAIN_SHOES + ", no going up the stairs"))
-
-# B08-BRc — "You do not have to have done anything to your knees for this to happen." Maureen in her kitchen filling the kettle:
-# an ordinary quiet life, nothing sporty. Replaces the planned plimsolls shot (too close to B08-BR2's boots).
-B["B08-BRc"] = (NB2, ["R1", "P4"], photo([
-    "A snapshot from a phone at eye height in her kitchen, side-on. She stands at the sink under the window filling the kettle from the "
-    "tap, an ordinary quiet morning, her face in profile looking down at the kettle, calm and unhurried. Medium shot from the waist up, the "
-    "worktop, the window over the sink and the open shelf of mugs around her.",
-    R1 + " Wearing " + WARD["M-D1"] + ".",
-    KITCHEN,
-    angle("B08-BRc", "her at the sink"),
-    focus("her nearest eye", deep=False).replace("the room behind", "the kitchen behind"),
-    light("KITCH-L", "her face and hands"),
-    colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan and a navy-and-white striped top")
-    .replace("the faded orange of the old photograph", "the jug of garden flowers")],
-    "no pain, no hand on her knee, no product anywhere, no knee strap, no second person, no looking at the camera, no readable text, "
-    "no logos on the kettle"))
+# B06b — "in exactly the same place." (second half of the B06 line). ECU front-on of the patellar tendon just below the kneecap: one
+# tight glowing target spot, concentric rings of light rippling out through the tendon fibres as each impact lands on the same point.
+B["B06b"] = (NB2, [], EFX_OK(anat(
+    "Seen straight from the front, very close: the lower edge of the kneecap at the top of the frame and the patellar tendon below it as "
+    "a broad satin-white band of long fibres filling the frame. Dead centre on the tendon, just below the kneecap: ONE TIGHT, NEAR-WHITE "
+    "GLOWING SPOT, like the centre of a target, and around it three thin CONCENTRIC RINGS OF LIGHT rippling outward through the tendon "
+    "fibres, each fainter than the last — the marks of impact after impact landing on exactly the same point. Fine glowing particles "
+    "hang in the tissue around the spot. All of the light lives INSIDE the tendon and the tissue: nothing flies in from outside. "
+    + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed straight from the front, very close on the patellar tendon just below the kneecap, the tendon filling the frame")
+    .replace("no individual muscle fibres, ", "").replace("never fine striation and never individual fibres", "fine striation readable")))
 
 # B07-BRa — user "The cushion gets thinner. (CUSHION IN KNEE GETS THINNER)". ANAT-B, front-on and closer than B05 (profile cutaway):
 # the cartilage cushion in the joint gap, visibly thin. No glow — a condition beat.
