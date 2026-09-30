@@ -202,13 +202,17 @@ BB("B10d2", A2, "and leaves the load exactly where it was.", "load", "the load i
    "one step, about a second, ordinary pace", STILL, "stairs: floor level three-quarter, legs only, camera still", "no", "absent", "—", "NB2",
    GROUND, THR, "clean", "CU", "ground three-quarter = the same step, the same load, pill or no pill", "foreground", "shallow", L(M_GREY, "L"), False, ledger="F6", notes="user 2026-09-30 'BROLLS HERE' — second half of the B10d line; no face")
 TH("B11-TH", A2, "None of them are aimed at the spot.", framing="punch")
-BB("B12", A2, "What that band actually needs is for less of your weight to land on it.", "less", "the need (pip)",
-   "ANAT", "—", "—", "ANAT-A: the knee in profile, the load pulse at the spot below the kneecap dimming to a soft glow", "the pulse softens",
+BB("B12", A2, "What that band actually needs", "needs", "the need (pip)",
+   "ANAT", "—", "—", "ANAT-A: the knee in profile under load, the tendon spot below the kneecap glowing hot", "the spot pulses with a step",
    "one fade, about two seconds", STILL, "none", "no", "absent", "—", "NB2",
    EYE, PRO, "clean", "CU", "profile shows the load path down the leg", "deep", "deep", L(ANAT, "L"), False,
    layout="pip", eg="EG02 host cut-out bottom-left")
 
 # ============================================================ ACT 3 — the product
+BB("B12b", A2, "is for less of your weight to land on it.", "less", "less load, a calmer spot",
+   "ANAT", "—", "—", "ANAT-B ECU from above on the patellar tendon: the hot spot below the kneecap cooling from red-orange to a soft calm pearly glow as less load lands on it", "the glow cools and softens once",
+   "one slow fade, about two seconds", STILL, "none", "no", "absent", "—", "NB2",
+   HIGH, FRO, "clean", "ECU", "from above = the load easing off the one spot", "deep", "deep", L(ANAT, "L"), False, notes="user 2026-09-30 'BROLLS HERE' — second half of the B12 line")
 BB("B13", A3, "That is what this does. It is called Stryde.", "Stryde", "reveal — the product, wordmark",
    "hands", "L-KITCHEN", "K-D1", "CU two hands hold the strap up at chest height above the kitchen table, the front of the shell and the wordmark to the lens", "the hands lift it a few centimetres into the light",
    "one small lift, about a second", STILL, "hands: one movement; the strap does not turn", "no", "held", "VISIBLE", "NBP",
@@ -370,10 +374,10 @@ BB("B09-BR", A2, "Which is why most of what gets sold for this cannot work.", "s
    "hands", "L-KITCHEN", "K-D1", "on the oak table: a grey knit knee sleeve, a black hinged brace, a plain white gel tube and a blister pack of tablets laid out together; a hand sets the last one down", "the last item set down",
    "one set-down, about a second", STILL, "table top, hands only, camera still", "no", "absent", "—", "NB2",
    HIGH, THR, "clean", "MEDIUM", "high = everything tried, laid out", "hands", "deep", L(KITCH, "L"), False, ledger="F6", notes="covers B09-TH; all unbranded, no print")
-BB("B11-BR", A2, "None of them are aimed at the spot.", "spot", "the sleeve misses the spot",
-   "ANAT", "—", "—", "ANAT-C: the knee as a dark silhouette wrapped in a faint grey knit sleeve over the whole joint, the one spot below the kneecap still glowing untouched", "the spot pulses once, the sleeve does nothing",
-   "one pulse", STILL, "none", "no", "absent", "—", "NB2",
-   EYE, FRO, "clean", "CU", "front = the sleeve round everything, the spot still lit", "deep", "deep", L(ANAT, "L"), False, eg="EG05", notes="covers B11-TH; generic unbranded sleeve")
+BB("B11-BR", A2, "None of them are aimed at the spot.", "spot", "none of them touch the spot",
+   "R1", "L-KITCHEN", "M-D1", "CU front-on at knee height: seated at her kitchen table, Maureen's fingertip presses the one spot just below her bare kneecap, the sleeve, brace, gel and tablets lying unused on the table behind", "her fingertip presses the spot once and holds",
+   "one press, about a second", STILL, "seated: knee and hand in front, the things on the table soft behind, camera still", "no", "absent", "—", "NB2",
+   EYE, FRO, "clean", "CU", "front = the one exact spot, the remedies all off to the side", "foreground", "shallow", L(KITCH, "L"), False, ledger="F6", notes="covers B11-TH; user 2026-09-30 'BROLLS HERE' — her finger on the spot, the four remedies unused behind")
 BB("B15-BR", A3, "The placement is the whole thing.", "placement", "placement, measured",
    "R1", "L-M-STAIRS", "M-D2", "ECU seated on her bottom stair: two fingers laid flat just below her kneecap, measuring the spot, the strap held ready in her other hand", "the strap's pad lowers onto the measured spot",
    "one placement, about two seconds", STILL, "seated, knee and hands only, camera still", "no", "held", "the pad and shell", "NBP",
@@ -400,7 +404,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06a2', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B10d2', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06a2', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B10d2', 'B11-TH', 'B11-BR', 'B12', 'B12b', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []
