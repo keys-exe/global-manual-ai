@@ -3,6 +3,7 @@
  "beat": "B-08",
  "build": "stryde-not-your-cartilage",
  "duration": 5,
+ "fault": "FILL THE GLASS WITH WATER",
  "flow": [
   "image",
   "video"
@@ -74,10 +75,16 @@
  "line": "Surgery is no longer the only thing you've got left.",
  "model": "kling-3.0 pro (Kie AI)",
  "note": "R3 Hassan · L-H-KITCHEN · H-D2 · eye/profile/MEDIUM · layout full · flag F6",
+ "prompt": "{\"shot\":\"b_08\",\"subject\":\"Hassan, a tall thin Black man of seventy-two in a maroon polo and shorts at his kitchen worktop, the white kettle before him, strap on his right knee.\",\"camera\":{\"movement\":\"Camera already drifting on the first frame, never static at entry. Continuous low-amplitude breath sway throughout, roughly one cycle per two seconds, mostly vertical with a slight roll. Focus soft for a moment at entry, then settles. One deliberate reframe in the back half as the operator notices the subject sitting off-centre — corrects part of the way, not fully. Camera lags behind the subject, never anticipates it and never moves with it. Still drifting on the final frame.\",\"framing\":\"As in the start frame.\"},\"motion\":\"One small action at an easy pace: his right hand presses the kettle's switch down and rests on the worktop; his legs stay planted. The strap keeps its exact shape, size and wordmark in every frame and moves only with the leg or hand that carries it; its rigid shell never bends, flexes or changes proportion. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no wordmark changing, no second strap, no strap sliding up or down the leg, no strap turning into a narrow band, no pouring, no water, no glass, no lifting the kettle, no second person appearing, no camera travelling with the subject, no zoom, no music, no speech\"}",
  "stage": "broll",
  "status": "regenerate",
  "title": "at the sink he fills the kettle, easy on his feet, strap on his right knee",
- "updatedAt": 1790729104285,
+ "updatedAt": 1790745326583,
+ "videoAsset": "309b3225ae183c0d0c4baa78f9c3834e",
+ "videoAt": 1790729044914,
+ "videoConnector": "Kie AI",
+ "videoType": "video/mp4",
+ "videoUrl": "https://tempfile.aiquickdraw.com/k/1e847aabd387ece3207a6e1b337545b1_1_1790729025_7338.mp4",
  "videoVersions": [
   {
    "asset": "b90626c2b75f73be3cbcdc96ae4e921f",
@@ -90,13 +97,18 @@
    "type": "video/mp4",
    "url": "https://tempfile.aiquickdraw.com/k/7a8dfee612f19b76cd1fde3bdf98d8ad_1_1790698946_9836.mp4",
    "v": 1
+  },
+  {
+   "asset": "309b3225ae183c0d0c4baa78f9c3834e",
+   "at": 1790729044914,
+   "connector": "Kie AI",
+   "credits": 90,
+   "model": "kling-3.0 pro (Kie AI)",
+   "note": "the result of the video is worst fix it",
+   "size": 7778435,
+   "type": "video/mp4",
+   "url": "https://tempfile.aiquickdraw.com/k/1e847aabd387ece3207a6e1b337545b1_1_1790729025_7338.mp4",
+   "v": 2
   }
- ],
- "videoAsset": "b90626c2b75f73be3cbcdc96ae4e921f",
- "videoType": "video/mp4",
- "videoUrl": "https://tempfile.aiquickdraw.com/k/7a8dfee612f19b76cd1fde3bdf98d8ad_1_1790698946_9836.mp4",
- "videoConnector": "Kie AI",
- "videoAt": 1790698952371,
- "fault": "the result of the video is worst fix it",
- "prompt": "{\"shot\":\"b_08\",\"subject\":\"Hassan, a very tall thin Black British man of seventy-two in a white shirt and navy cardigan at his kitchen sink, the strap on his right knee.\",\"camera\":{\"movement\":\"Camera already drifting on the first frame, never static at entry. Continuous low-amplitude breath sway throughout, roughly one cycle per two seconds, mostly vertical with a slight roll. Focus soft for a moment at entry, then settles. One deliberate reframe in the back half as the operator notices the subject sitting off-centre — corrects part of the way, not fully. Camera lags behind the subject, never anticipates it and never moves with it. Still drifting on the final frame.\",\"framing\":\"As in the start frame.\"},\"motion\":\"One small action at an easy pace: standing on the spot, he holds the kettle under the running tap as it fills, then turns the tap off; his legs stay planted. The strap keeps its exact shape, size and wordmark in every frame and moves only with the leg or hand that carries it; its rigid shell never bends, flexes or changes proportion. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no wordmark changing, no second strap, no strap sliding up or down the leg, no strap turning into a narrow band, no stepping, no kettle changing shape, no second person appearing, no camera travelling with the subject, no zoom, no music, no speech\"}"
+ ]
 }

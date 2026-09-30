@@ -1,1 +1,11 @@
 {"taskId": "569e3789edde90dbc17b4abec372c3a0", "created": true}
+{
+  "taskId": "569e3789edde90dbc17b4abec372c3a0",
+  "state": "success",
+  "credits": 18.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1790745231005-e7409dfhov7.png"
+  ],
+  "saved": "body/B-09a_v3.png"
+}
