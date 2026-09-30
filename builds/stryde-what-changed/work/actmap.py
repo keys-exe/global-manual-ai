@@ -251,13 +251,14 @@ BB("B17a", A3, "Ten seconds to put on.", "Ten", "feature (F8)",
    "one release, about a second", STILL, "hands: let go, the strap never moves", "no", "seated", "VISIBLE", "NBP",
    HIGH, FRO, "clean", "CU", "high = his own view down: on in one move (FP03, FP10)", "product", "medium", L(D_SUN, "R"), False, ledger="F8")
 BB("B17b", A3, "No sores, no rolling down,", "sores", "feature (F8)",
-   "R1", "L-M-STAIRS", "M-D2", "front-on at knee height: Maureen coming down onto her bottom stair, the strap still exactly in place under the kneecap after the whole flight (v2: user 'GIVE ME DIFFERENT BROLL HERE')", "one step down, the strap stays put",
-   "one step, about a second", STILL, "stairs: front-on knee CU, camera still", "no", "worn", "VISIBLE", "NBP",
-   LOW, FRO, "clean", "CU", "knee height, front-on: after the stairs it has not moved", "product", "medium", L(M_SUN, "L"), False, ledger="F8")
+   "R1", "L-STREET", "M-D2", "front-on low on the pavement: Maureen walking towards the lens in her denim skirt, the strap in use on her right knee, staying put mid-stride (v3: user 'USING OR WALKING'; edit of B15 v1)", "two easy walking steps",
+   "one step per second, easy walking pace", STILL, "walking toward camera: knee and shin only", "no", "worn", "VISIBLE", "NBP",
+   LOW, FRO, "clean", "CU", "low front-on: the strap staying put while she walks", "product", "medium", L(STREET_PM, "R"), False, ledger="F8")
+
 BB("B17c", A3, "and nobody can see it.", "nobody", "CONCEALED (§9D, F8)",
-   "R1", "L-KITCHEN", "M-D3", "three-quarter at her kitchen table: Maureen in long navy trousers, legs crossed, a cup of tea in her hands — the trouser smooth over both knees, nothing shows (v3: user 'FIX THIS, GIVE ME DIFFERENT BROLL')", "she lifts her cup and sips",
-   "one sip, about two seconds", STILL, "none", "no", "worn (hidden)", "CONCEALED", "NB2",
-   EYE, THR, "clean", "MEDIUM", "three-quarter: an ordinary afternoon, nothing to see", "product", "medium", L(KITCH, "R"), False, ledger="F8", notes="no product in frame; framed from the chin down")
+   "R2", "L-STREET", "D-D3", "ground-level front-on: Desmond walking towards the lens on the pavement in long navy trousers, the fabric smooth over the knee — nothing shows (v4: user 'WALKING WEARING PANTS'; edit of B16c v1)", "two easy walking steps",
+   "one step per second, easy walking pace", STILL, "walking toward camera: knee and shin only", "no", "worn (hidden)", "CONCEALED", "NBP",
+   GROUND, FRO, "clean", "CU", "ground front-on: an ordinary trouser leg walking, nothing to see", "product", "medium", L(STREET_PM, "L"), False, ledger="F8", notes="no product visible")
 
 # ============================================================ ACT 4 — proof, the test, the offer, the close
 TH("B18-TH", A4, "The thing people write to us about most is not the pain.")

@@ -2044,13 +2044,13 @@
   "key": "sores",
   "function": "feature (F8)",
   "subject": "R1",
-  "location": "L-M-STAIRS",
+  "location": "L-STREET",
   "story_day": "M-D2",
-  "framing": "front-on at knee height: Maureen coming down onto her bottom stair, the strap still exactly in place under the kneecap after the whole flight (v2: user 'GIVE ME DIFFERENT BROLL HERE')",
-  "action": "one step down, the strap stays put",
-  "pace": "one step, about a second",
+  "framing": "front-on low on the pavement: Maureen walking towards the lens in her denim skirt, the strap in use on her right knee, staying put mid-stride (v3: user 'USING OR WALKING'; edit of B15 v1)",
+  "action": "two easy walking steps",
+  "pace": "one step per second, easy walking pace",
   "camera": "locked off",
-  "staging": "stairs: front-on knee CU, camera still",
+  "staging": "walking toward camera: knee and shin only",
   "pin_end": "no",
   "max": 6,
   "product": "worn",
@@ -2066,7 +2066,7 @@
    "side": "front",
    "fg": "clean",
    "scale": "CU",
-   "why": "knee height, front-on: after the stairs it has not moved"
+   "why": "low front-on: the strap staying put while she walks"
   },
   "focus": {
    "plane": "product",
@@ -2075,8 +2075,8 @@
    "moving_subject": false
   },
   "light": {
-   "source": "Maureen's front-door glass, afternoon sun",
-   "key_side": "L",
+   "source": "open sky, afternoon sun",
+   "key_side": "R",
    "time": "afternoon",
    "arc": "after: sun",
    "kelvin": 5600
@@ -2090,30 +2090,30 @@
   "line": "and nobody can see it.",
   "key": "nobody",
   "function": "CONCEALED (§9D, F8)",
-  "subject": "R1",
-  "location": "L-KITCHEN",
-  "story_day": "M-D3",
-  "framing": "three-quarter at her kitchen table: Maureen in long navy trousers, legs crossed, a cup of tea in her hands — the trouser smooth over both knees, nothing shows (v3: user 'FIX THIS, GIVE ME DIFFERENT BROLL')",
-  "action": "she lifts her cup and sips",
-  "pace": "one sip, about two seconds",
+  "subject": "R2",
+  "location": "L-STREET",
+  "story_day": "D-D3",
+  "framing": "ground-level front-on: Desmond walking towards the lens on the pavement in long navy trousers, the fabric smooth over the knee — nothing shows (v4: user 'WALKING WEARING PANTS'; edit of B16c v1)",
+  "action": "two easy walking steps",
+  "pace": "one step per second, easy walking pace",
   "camera": "locked off",
-  "staging": "none",
+  "staging": "walking toward camera: knee and shin only",
   "pin_end": "no",
   "max": 6,
   "product": "worn (hidden)",
   "visibility": "CONCEALED",
-  "model": "NB2",
+  "model": "NBP",
   "layout": "full",
   "eg": "",
   "ledger": "F8",
-  "notes": "no product in frame; framed from the chin down",
+  "notes": "no product visible",
   "duration": "pending-master",
   "angle": {
-   "height": "eye",
-   "side": "three-quarter",
+   "height": "ground",
+   "side": "front",
    "fg": "clean",
-   "scale": "MEDIUM",
-   "why": "three-quarter: an ordinary afternoon, nothing to see"
+   "scale": "CU",
+   "why": "ground front-on: an ordinary trouser leg walking, nothing to see"
   },
   "focus": {
    "plane": "product",
@@ -2122,11 +2122,11 @@
    "moving_subject": false
   },
   "light": {
-   "source": "kitchen window over the sink",
-   "key_side": "R",
-   "time": "morning",
-   "arc": "everyday: cool daylight",
-   "kelvin": 6500
+   "source": "open sky, afternoon sun",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "after: sun",
+   "kelvin": 5600
   },
   "face": false
  },

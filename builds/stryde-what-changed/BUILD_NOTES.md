@@ -303,3 +303,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 ### 2026-09-30 — "CONFIRM AND GO / FIX": B15-BR, B16b, B17a, B17b videos; B17c v3
 - **Videos** (4 s each): B15-BR (her other hand slides down to mark the spot; the hand holding the strap stays still), B16b (the surgeon looks up and nods; strap held still), B17a (hands press the strap, let go; it stays), B17b (she steps off the bottom stair; the strap stays). The "holding hand stays still" rule held — no strap bending in any of the four.
 - **B17c v3** (Fix "FIX THIS, GIVE ME DIFFERENT BROLL"): Maureen at her kitchen table in long navy trousers, legs crossed, tea in hand — nothing shows. Act map row rewritten (R1, L-KITCHEN, EYE THR MEDIUM). Flaw: her face is in frame (asked chin down); the kitchen reads a little different from the plate. v2 moved to Old 2.
+
+### 2026-09-30 — "FIX THOSE": B17b v3, B17c v4
+- **B17b v3** (Fix "USING OR WALKING"): edit of B15 v1 — Maureen walking towards the lens on the pavement, the strap in use and in place. Image v2 + video v1 moved to Old 2; the video waits for the new image's Confirm.
+- **B17c v4** (Fix "WALKING WEARING PANTS"): edit of B16c v1 — Desmond's same stride on the pavement in long navy trousers covering the knee; nothing shows. Flaw carried from B16c: a Nike logo on the trainer. v3 moved to Old 2.
+- Act map rows B17b (L-STREET, LOW FRO) and B17c (L-STREET, GROUND FRO) rewritten; angles pass.
