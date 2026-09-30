@@ -505,7 +505,39 @@ B["B09-BR"] = clip("B09-BR",
            {"risk": "text or labels appear on the tube or pack", "prevented_by": "'no readable text, no labels, no logos'"},
            {"risk": "the other objects drift or morph", "prevented_by": "'the four things stay exactly where they are', 'no objects moving on their own'"}])
 
-START = {"B09-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_122112_f986eef2-5bbd-465a-920b-fd552b19e4e5.png",
+# B10b image v1 (user CONFIRM 2026-09-30): high three-quarter CU on the kitchen table, her hands on the black hinged brace's metal
+# hinge. "A hinged brace stops the knee going sideways, and it was never going sideways." ≈ 4.3 s → 6 s.
+B["B10b"] = clip("B10b",
+    "An older white woman's two hands in dusty-pink cardigan cuffs, a gold wedding ring, holding a bulky black hinged knee brace on a "
+    "wooden kitchen table by its brushed-metal side bar and hinge, a linen runner and a jug of flowers behind.",
+    "Already moving on the first frame: her hands push once to bend the brace sideways at the metal hinge, pressing harder for a moment "
+    "— the metal bar does not give at all and stays dead straight — then her grip eases off and her hands rest on it. One push and "
+    "release, at an unhurried pace over about two seconds. The brace stays where it is on the table.",
+    "no metal bending, no hinge breaking, no brace folding, no brace changing shape, no second pair of hands, no face, no person entering "
+    "the frame, no readable text, no labels, no logos, no extra fingers",
+    4.3, hi=6,
+    risks=[{"risk": "the metal bar bends or the brace morphs under her hands", "prevented_by": "'does not give at all and stays dead straight', HOLD-C + NEG-WARP-C, 'no metal bending, no brace changing shape'"},
+           {"risk": "fingers warp or multiply on the hinge", "prevented_by": "one push and release, 'no extra fingers', 'no second pair of hands'"},
+           {"risk": "text or logos appear on the brace", "prevented_by": "'no readable text, no labels, no logos'"}])
+
+# B10a image v2 (user Confirm on the board 2026-09-30): low front-on, Maureen standing in her kitchen, the grey sleeve snug round
+# her whole right knee, her hands on it. "A sleeve squeezes the whole knee and leaves that band carrying everything." ≈ 4.3 s → 6 s.
+B["B10a"] = clip("B10a",
+    "An older white woman's legs seen low and front-on as she stands on a tiled kitchen floor: a plain grey knit sleeve pulled on round "
+    "her whole right knee, both her hands resting on it, pink cardigan cuffs, a navy skirt hem above, white canvas plimsolls below.",
+    "Already moving on the first frame: her hands smooth the sleeve once round the knee, pressing it snug from the sides and then down "
+    "over the kneecap, and come to rest on it — one unhurried smoothing, about two seconds. She stays standing where she is, her feet "
+    "planted, and the sleeve stays one even grey tube round the whole knee.",
+    "no walking, no stepping, no pulling the sleeve off, no sleeve slipping down, no sleeve changing colour or shape, no face, no second "
+    "person, no knee strap, no brace, no readable text, no logos, no extra fingers, no extra hands",
+    4.3, hi=6,
+    risks=[{"risk": "the sleeve warps, slips or morphs under her hands", "prevented_by": "one slow smoothing, 'stays one even grey tube', HOLD-C + NEG-WARP-C, 'no sleeve slipping down'"},
+           {"risk": "hands or fingers warp", "prevented_by": "one movement then rest, 'no extra fingers, no extra hands'"},
+           {"risk": "she walks or the legs move out of frame", "prevented_by": "'She stays standing where she is, her feet planted', 'no walking, no stepping'"}])
+
+START = {"B10a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_124139_4d54cb95-4893-4963-aeaa-56169d8697f8.png",
+         "B10b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_123301_214e72ba-2159-428e-bfeb-3619729c8fca.png",
+         "B09-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_122112_f986eef2-5bbd-465a-920b-fd552b19e4e5.png",
          "B08-BR2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_113626_ed25dfaf-eb63-4715-8c55-3f29b1f75f53.png",
          "B06b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_120637_827d2dc0-4a1e-44f8-a542-35ccb0fd7320.png",
          "B08b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_115249_bc7a2b7d-06a8-444e-bf7a-4a7e604d9123.png",
