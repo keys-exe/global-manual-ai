@@ -645,7 +645,25 @@ B["B12b"][0]["motion"] = (B["B12b"][0]["motion"]
     .replace("quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens and straightens along its length, and the whole structure compresses a few degrees", "The patellar tendon loosens a little and rests as the load eases")
     .replace("The anatomy takes the weight — it is not a still model with light played over it.", "The anatomy eases — it is not a still model with light played over it."))
 
-START = {"B12": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_0a389350-3a9a-410e-a56c-5b29e5ee4659.png",
+# B11-BR image v2 (user confirm 2026-09-30): ANAT-A front-on, a ghosted sleeve round the joint and ghosted brace bars down both
+# sides; the one spot on the tendon below the kneecap glowing untouched. "None of them are aimed at the spot." ≈ 1.8 s → 3 s.
+B["B11-BR"] = clip("B11-BR",
+    "A premium 3D anatomical model of a knee seen straight from the front on a near-black field, a faint ghosted grey sleeve round the "
+    "whole joint and the ghosted black side bars and hinges of a brace down both sides, one tight spot glowing on the patellar tendon "
+    "just below the kneecap in the middle.",
+    "Already under load on the first frame, the knee holds its pose. The spot below the kneecap pulses brighter once over about a "
+    "second and eases back, while the sleeve and the brace bars around the knee stay exactly as they are — they do not move, tighten "
+    "or glow. The spot stays one tight spot.",
+    "no sleeve moving, no brace moving, no brace glowing, no second spot, no glow down the shin, no leg moving, no second limb, no text, "
+    "no camera orbit",
+    1.8, hi=4, anat=True,
+    risks=[{"risk": "the ghosted sleeve or brace bars warp, slide or glow", "prevented_by": "'stay exactly as they are — they do not move, tighten or glow', 'no sleeve moving, no brace moving', HOLD-C + NEG-WARP-C"},
+           {"risk": "the glow spreads or a second spot appears", "prevented_by": "'The spot stays one tight spot', 'no second spot, no glow down the shin'"},
+           {"risk": "the leg moves or a second limb appears", "prevented_by": "'the knee holds its pose', 'no leg moving, no second limb', locked camera"}])
+B["B11-BR"][0]["motion"] = B["B11-BR"][0]["motion"].replace(", and the whole structure compresses a few degrees", "")
+
+START = {"B11-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_144242_82c48d6d-785c-454d-91a5-bfea8bd28bcb.png",
+         "B12": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_0a389350-3a9a-410e-a56c-5b29e5ee4659.png",
          "B12b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_c1a15ea6-ad66-4f8b-aeb5-9bb6b3d657b0.png",
          "B10c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140203_48b079aa-50b4-48f7-888a-f2c5779f802c.png",
          "B10d": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140212_e6684a2f-35c2-4d68-91bd-def7c5820b7a.png",
