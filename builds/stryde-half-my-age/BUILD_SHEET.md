@@ -268,7 +268,7 @@ Everyone with two or more beats gets a sheet. **Seven:** HER (narrator/protagoni
 | C2-DAUGHTER | `c936500d-9947-44da-9950-cc6e16fe056a` | `cast/C2-DAUGHTER_v1.png` | To check |
 | C3-HUSBAND | `98c11aee-5f7f-4244-a68e-d649856acf2d` | `cast/C3-HUSBAND_v1.png` | To check |
 | C4-SISTER | `582d3d80-d3cb-4894-a867-a281436ed90a` | `cast/C4-SISTER_v1.png` | To check |
-| C5-FRIEND1 | `eaae20f9-0e81-40c7-986f-7f483d82db83` | `cast/C5-FRIEND1_v1.png` | To check |
+| C5-FRIEND1 | v1 `eaae20f9-0e81-40c7-986f-7f483d82db83` (Old) · **v2 `18040ee9-baea-4511-a622-6554decdb9e9`** | `cast/C5-FRIEND1_v2.png` | To check (v2) |
 | C6-FRIEND2 | `f310a25a-423f-401b-9a45-21a8173a3127` | `cast/C6-FRIEND2_v1.png` | To check |
 
 Manual run: **not checked by me** (§18B step 3) — Confirm or Fix each on the board. Prompts `cast/<ID>.prompt.txt` (9,375–9,636 chars), built from Appendix A by ID in `cast/build_sheets.py`: `CAM-FILM` (Alexa Mini LF + Signature Prime 50mm T4, tripod) → `AVATAR-SHEET` + `SHEET-GRID` → `SKIN-T` → `LOOK-HALFMYAGE` → `CAP-FILM` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILM` (lens clause dropped — the close-up looks at the lens) + `NEG-DEFAULT-FACE`. Spend: 7 Sunburst jobs, one render each (Higgsfield 12,735.65 before).
@@ -282,7 +282,7 @@ Manual run: **not checked by me** (§18B step 3) — Confirm or Fix each on the 
 | C2 | white English woman, mid-40s, medium height, sturdy; oval face, straight nose, grey-blue eyes, straight mouth; dark brown hair in a loose low bun with strands at the temples; small dark mole left of the upper lip; olive hooded parka open over a cream cable-knit jumper, dark indigo jeans, tan ankle boots |
 | C3 | white English man, mid-70s, medium height, round-shouldered, soft paunch; broad heavy face, jowls, pale blue eyes under thick grey-white brows, large nose; grey hair swept back, **thinning and receding** (fuller in the prompt), short grey-white beard; brown V-neck cardigan over a blue-and-white checked shirt, grey trousers, brown slippers |
 | C4 | white English woman, late 60s, short and heavy, wide waist; round soft face, rosy cheeks, hazel eyes, short upturned nose, double chin, a mole on the left cheek; short strawberry-blonde permed curls; lilac zip fleece over a navy floral blouse, navy trousers, beige walking shoes |
-| C5 | British Indian woman, 70, tall and slim, straight-backed; long oval face, large dark eyes, strong brows, long straight nose, full lips, a dark mole by the outer right eye; silver-grey hair in one long plait; rust wool coat open over a teal knitted dress to mid-calf, black ankle boots |
+| C5 | **v2 (Fix: "I WANT A NEW ONE HERE")** white Irish woman, 69, tall, lean, wiry; long narrow angular face, sharp cheekbones, pale green eyes, freckles; hennaed copper-red short layered hair; navy pea coat over a red-and-cream Breton top, charcoal trousers, tan brogues — identity string to be re-read off the render once confirmed. (v1, British Indian woman with a silver plait, moved to Old) |
 | C6 | Black British woman (Jamaican heritage), 72, short and full-figured; round full face, dark brown eyes, broad nose, full mouth, small raised dark mole under the left eye; short salt-and-pepper rounded afro; mustard corduroy jacket over a black polo-neck, dark green wide-leg trousers, burgundy loafers |
 
 ### §19A axis tables

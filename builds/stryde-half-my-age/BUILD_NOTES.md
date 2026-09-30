@@ -11,6 +11,8 @@
 - Absorption on the Plan board (`docs/absorption`, not yet confirmed).
 - Product: repo sheet V7.49.38 kept (the Drive's V7.49.32 is older); new ref `back_ref_v2.png` added to `products/stryde/stryde_refs/`.
 
+- 2026-09-30 Fix round 1: C5-FRIEND1 "I WANT A NEW ONE HERE" → new casting v2 (white Irish woman, 69, copper-red crop, navy pea coat; Sunburst 2.75 cr); v1 moved to Old. Other six sheets still To check.
+
 ## Open (Flags in BUILD_SHEET.md)
 F1, F2, F4 claims to confirm · F8 Hook E's action (proposed: HER gets up off the living-room floor unaided as the daughter reaches to help) · F9 "Three weeks ago" vs six weeks · F10 trouser-leg reveal vs FP13 · F6 right knee default · F11 mechanism insert optional · F12 no to-lens close · F16 no Drive connector.
 
