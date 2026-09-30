@@ -328,3 +328,31 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - B19b "CONTINUE OF B19A" → edit of B19a v1: she steps down off the bottom stair forwards, strap right, left bare, hand on the newel (NBP).
   - B19-BR2 "FIX, GIVE ME DIFFERENT BROLL HERE" → waist-up at the stair foot, hand on the newel, quiet surprised smile (NBP). She looks off to the side rather than back up the stairs.
 - Wardrobe continuity from B19a v1 on: Maureen in a navy-and-white striped T-shirt (B18b still cardigan). Act map rows for the five updated; angles PASS all three orders; docs/actmap on Plan v31, Current v31, Current 2 v17.
+
+### 2026-09-30 — "FIX AND CONFIRM" round 2 (B18-BR…B19-BR2)
+- Confirmed → videos (Kling 3.0 via Kie, 4 s, 72 cr, preflight PASS): **B18-BR v1** (Maureen types on her phone, smiles — clean); **B18a v1** (Desmond pulls his lace tight — flaws: the strap's shell changes shape a little across frames; the swoosh-like mark on the trainer stays).
+- B18b video: the card reads status `ready` (not `use`, no Fix note) — left untouched, asked the user.
+- Fixes (Kie, NBP/NB2):
+  - B19-BR v3 "FIX THE PRODUCT" → edit of package_open.jpg on her lap, hands on the box sides only. Flaw: she wears a pink cardigan over the striped T-shirt.
+  - B19b v3 "FROM THE FIRST STAIR ON THE TOP STAIR GOING DOWN" → edit of B18b v1, striped T-shirt. **Flaw: the strap came out on her LEFT knee (right bare) and she stands on the landing facing the camera rather than stepping down.**
+  - B19-BR2 split into three (user "CUT IT INTO MORE THAN ONE BROLL"): B19-BR2 v3 "You will know in a minute." (wrist + plain gold watch on the newel post — clean); **B19-BR2b** v1 "Not because the arthritis has gone." (her arthritic hands on her knee — flaws: barefoot, and the right knee behind shows no strap); **B19-BR2c** v1 "It is still there…" (pill organiser + glass of water — on the worktop by the sink, not the sill).
+- Act map: B19b now HIGH/three-quarter from the landing (B18b/B19b both low-front-wide failed WINDOW); B19-BR2 split into B19-BR2/2b/2c in BODY; angles PASS all three; docs/actmap Plan v32, Current v32, Current 2 v18.
+
+### 2026-09-30 — "FIX AND CONFIRM" round 3 (B19-BR…B19-BR2c)
+- Board note: pressing Confirm on an already-confirmed image resets that beat's video status to `ready` (the page's setVerdict). B18b and B19a videos had flipped to `ready` that way — set back to `review` (v1 unchanged).
+- Fixes (Kie; old versions moved to Old 2):
+  - B19-BR v4 "SHOW THE STRYDE PACKAGE" (edit of package_open.jpg, lid propped with wordmark). **Flaws: the woman came out young and blonde (not Maureen) and the straps were redrawn as plain bands with the wordmark on the band — the box reads well.**
+  - B19b v4 "LEFT SIDE KNEE HAVE THE STRYDE STRAP, THEN SHE WILL GO DOWN THE STAIR" (edit of B18b v1): strap on the knee on the left of the frame (her right), other bare, striped T-shirt, coming down facing forwards — clean.
+  - B19-BR2 v4 "You will know in a minute." → CU of her face on the stairs, surprise into a smile — clean.
+  - B19-BR2b v2 "Not because the arthritis has gone." → surgeon's pen on the narrowed joint space of a knee X-ray — clean (no text on screen).
+  - B19-BR2c v2 "It is still there…" → Maureen at the kitchen window with tea, profile — clean.
+- Act map rows for the five updated (B19-BR MEDIUM package, B19b LOW three-quarter, B19-BR2 face CU, B19-BR2b consult X-ray, B19-BR2c kitchen window); angles PASS; docs/actmap Plan v33, Current v33, Current 2 v19.
+
+### 2026-09-30 — "FIX AND CONFIRM" round 4
+- **Kie AI is out of credits (1.8 left)** after B19-BR v5; the Kling account has 3. Everything else this round ran on **Higgsfield** (Kling 3.0 pro, sound off, 7 cr per 4 s clip; NBP 2 cr). Start frames that were Kie renders were imported to Higgsfield by their Kie links (B19b v4 → 2bbd2157…, B19-BR2 v4 → 23b553f3…, B19-BR2c v2 → 80c12f92…). Higgsfield offered a preset ("IN THE DARK") instead of submitting — declined.
+- Confirmed → videos (Higgsfield Kling 3.0): **B19b v1** (she comes down several stairs, strap stays on the leg on the left of the frame — clean); **B19-BR2 v1** (she glances down and back; the smile is faint and her lips move a little early on); **B19-BR2c v1** (one sip at the window — clean).
+- Fixes:
+  - B19-BR v5 "FIX OUR PRODUCT" → edit of package_open.jpg changing only the background (Kie NBP, 18 cr): the box, lid and both straps now match the product photo. It sits on the hall floor at the foot of the stairs rather than on the stair itself; no person.
+  - B19-BR2b v3 "DIFFERENT BROLL HERE" → two-shot across the surgeon's desk, he points to the joint on the knee model, Maureen listens (Higgsfield NBP) — clean.
+- Learned: a person holding the box makes the model redraw the straps; keep product-photo edits background-only.
+- Act map rows B19-BR (props, package) and B19-BR2b (consult two-shot) updated; angles PASS; docs/actmap Plan v34, Current v34, Current 2 v20.
