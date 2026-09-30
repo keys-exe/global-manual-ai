@@ -895,13 +895,13 @@
   "key": "mile",
   "function": "not what you did",
   "subject": "R1",
-  "location": "L-M-STAIRS",
+  "location": "L-STREET",
   "story_day": "M-D1",
-  "framing": "CU in her understairs cupboard: a pair of plain white running trainers, still laced together with the shop tag on, dusty and never worn, beside her own worn plimsolls; her hand pushes the cupboard door open",
-  "action": "the door swings open onto the unworn trainers",
-  "pace": "one slow door swing, about two seconds",
+  "framing": "MEDIUM at the bus stop on her street: Maureen sits on the shelter bench with her handbag on her lap, waiting for the bus, calm and still",
+  "action": "she settles her handbag and glances up the road",
+  "pace": "one small settle, about two seconds",
   "camera": "locked off",
-  "staging": "cupboard floor, shoes and hand only, camera still",
+  "staging": "street: three-quarter to the shelter, full figure seated, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "absent",
@@ -910,29 +910,29 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "v3 — user Fix 'GIVE ME DIFFERENT BROLL HERE' again (v1 keys from the hall bowl; v2 tartan shopping trolley on the street)",
+  "notes": "v4 — user Fix 'CREATE NEW IMAGE FOR THIS LINE' (v1 keys; v2 tartan trolley; v3 unworn trainers in the cupboard)",
   "duration": "pending-master",
   "angle": {
-   "height": "overhead",
-   "side": "front",
+   "height": "eye",
+   "side": "three-quarter",
    "fg": "clean",
-   "scale": "CU",
-   "why": "overhead = looking down into the cupboard at the unused trainers"
+   "scale": "MEDIUM",
+   "why": "three-quarter = an unhurried, unsporty life"
   },
   "focus": {
-   "plane": "foreground",
-   "dof": "shallow",
+   "plane": "eyes",
+   "dof": "medium",
    "rack": null,
    "moving_subject": false
   },
   "light": {
-   "source": "Maureen's landing window, grey morning",
+   "source": "open overcast sky, morning",
    "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 6500
   },
-  "face": false
+  "face": true
  },
  {
   "beat": "B08b",
@@ -942,13 +942,13 @@
   "key": "sport",
   "function": "not what you did",
   "subject": "R2",
-  "location": "L-D-STAIRS",
+  "location": "L-STREET",
   "story_day": "D-D1",
-  "framing": "CU on a shelf in his hall: a row of small old amateur football trophies and a faded club pennant; Desmond's hand sets one tarnished trophy back in its place",
-  "action": "his hand sets the trophy down",
-  "pace": "one set-down, about a second",
+  "framing": "MEDIUM on the pavement: Desmond jogging along his street in running kit, strong and fit, an easy practised stride",
+  "action": "three easy jogging strides towards and past the lens",
+  "pace": "an easy jogging pace",
   "camera": "locked off",
-  "staging": "shelf, trophies and hand only, camera still",
+  "staging": "street: low three-quarter from the front, full figure, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "absent",
@@ -957,29 +957,29 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "v3 — user Fix 'CHANGE THIS IMAGE' (v1 team photo over his shoulder; v2 old football on his lap)",
+  "notes": "v4 — user Fix 'CREATE NEW IMAGE FOR THIS LINE' (v1 team photo; v2 old football; v3 trophies on a shelf)",
   "duration": "pending-master",
   "angle": {
-   "height": "eye",
+   "height": "low",
    "side": "three-quarter",
    "fg": "clean",
-   "scale": "CU",
-   "why": "three-quarter along the shelf = thirty years of trophies in a row"
+   "scale": "MEDIUM",
+   "why": "low three-quarter = a strong, sporty man in his stride"
   },
   "focus": {
-   "plane": "hands",
-   "dof": "shallow",
+   "plane": "eyes",
+   "dof": "medium",
    "rack": null,
    "moving_subject": false
   },
   "light": {
-   "source": "Desmond's stair window, grey morning",
-   "key_side": "R",
+   "source": "open overcast sky, morning",
+   "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 6500
   },
-  "face": false
+  "face": true
  },
  {
   "beat": "B08-TH2",
