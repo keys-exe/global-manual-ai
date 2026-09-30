@@ -1198,6 +1198,27 @@ B["B17c"] = (NB2, ["R1", "P4"], photo([
     NO_FACE + ", no product anywhere, no knee strap visible, no bulge under the trousers, no outline of anything under the fabric, no "
     "shorts, no skirt, no bare legs, no readable text on the mug, no logos, no second person, no extra hands, no extra fingers, no extra legs"))
 
+# ── 2026-09-30 "FIX THOSE" — B17b, B17c walking on the pavement ────────────────────────────────────────
+REFS["B16CV1"] = ("B16c v1 — the shot to edit (Image 1)", "2b9f648e-cf29-49e9-8c84-49836ab0329d")
+# B17b v3 — Fix 'USING OR WALKING': edit of B15 v1 — Maureen out walking towards the lens on the pavement, the strap in use, staying put.
+B["B17b"] = (NBP, ["B15V1", "R1", "P3"], (
+    "Edit Image 1. " + KEEP_WORN.replace(" and keep the leg, the skin and the room.", " and keep her pale older leg and the denim skirt hem.")
+    + " Change ONLY her step and the place: she is out WALKING TOWARDS THE CAMERA on THE SAME PAVEMENT as Image 3 — grey paving slabs, "
+    "a low garden wall and privet hedge, parked cars, 1930s semis going away, soft and out of focus behind — this leg planted mid-stride, "
+    "the knee slightly bent, a white canvas plimsoll on the slab at the foot of the frame; the camera low, near knee height. Warm "
+    "afternoon sun from the right. The strap sits exactly where it was, in use. A real phone photo.\n\nAVOID: no strap moved, no strap "
+    "rolled down, no strap slipped, no strap higher, no redness on the skin, no second strap, no tanned skin, no bare feet, no running, "
+    "no extra legs"))
+# B17c v4 — Fix 'WALKING WEARING PANTS': edit of B16c v1 — the same stride on the same pavement, but in long navy trousers: the fabric
+# covers the knee and shin, smooth — nothing shows. No product visible.
+B["B17c"] = (NBP, ["B16CV1", "R2"], (
+    "Edit Image 1. Keep everything in Image 1 exactly as it is — the same pavement, street, light, low camera and framing, the same "
+    "stride, the same plain white trainer on the slab. Change ONLY his clothes: instead of khaki shorts he wears long plain navy cotton "
+    "trousers to the ankle, straight-leg, soft and a little loose. The trouser leg covers the whole knee and shin down to the trainer; "
+    "the fabric falls smooth over the knee with only the natural creases of walking — no bulge, no outline, nothing showing underneath. "
+    "No strap is visible anywhere. A real phone photo.\n\nAVOID: no visible strap, no bulge under the trousers, no outline of a strap "
+    "under the fabric, no bare knee, no shorts, no rolled-up trousers, no logos on the trainer, no stripes, no extra legs"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
