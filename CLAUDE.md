@@ -1,6 +1,6 @@
 # global-manual-ai
 
-This repo runs under the **AI Prompt Engineer — Global Standards** (currently V7.74.0).
+This repo runs under the **AI Prompt Engineer — Global Standards** (currently V7.74.1).
 
 - Master file (the only standard): `standards/AI_Prompt_Engineer_Global_Standards.md`
 - Project skill that loads it: `.claude/skills/ai-prompt-engineer/SKILL.md` — the **Manual** run mode, always the default
@@ -59,6 +59,7 @@ Fix notes are picked up by the hourly Routines **Generation Board — hourly Fix
 - **No BGM in Seedance generations (V7.73.3, user 2026-09-30 — "we will put bgm in the editing phase").** Every Seedance call carries `NEG-SOUND`, asks for no music anywhere in the prompt, runs silent (`generate_audio: false`) when the clip has no dialogue, and takes voice-only audio refs (§24M, `preflight.py`). The music is the scene's `MUSIC-CUE` / the CapCut line, added in the edit.
 - **Reference images on every image (user, 2026-09-29).** Every image card gets `imageRefs` (same shape as `ingredients`) listing the images it was made from — cast sheet, plate, master, product photo.
 - **Films scene by scene (user, 2026-09-29).** On a film build every shot card (info cards with `flow: ["image"]`, clips with `ingredients`) carries `scene: <n>` (stage `broll`); Manual run shows Scene 1 (Images → Ingredients → Clips), then Scene 2…; the Board tab gives each scene its own section too (Images, then Clips), never one Scenes group Demo boards: film https://claude.ai/artifact/FoRhEmVsbvoeGqfGTsZNxG · ad https://claude.ai/artifact/QkZd5AHDtutTHikX9ZTrDX (placeholder media).
+- **Credits spent by model (user, 2026-09-30, V7.74.1):** the Board tab's Credits spent KPI and widget count every render of every step (all versions, images included) by connector and model, with a total per connector; each card's Credits row shows this render and the step's total over its renders. So write `credits` (or `imageCredits`), `model` and the connector on every version entry and on the step's fields, every render — a render with no credits recorded is not counted.
 - **Generating panel (user, 2026-09-28):** while a step is `generating` or `regenerate` (Fix pressed), the Current and Final boards never show its old render — the card, board tile, viewer and final card show a dark moving-gradient "Generating… / Regenerating…" panel (Higgsfield style) with no Confirm / Fix until the new render lands as `review`. Older versions stay reachable in the viewer's version menu and on the Old board. So set the step's status the moment you start a render and point it at the new file only when it lands.
 
 New build: copy the template to your scratchpad (four times: set `BOARD_ROLE` and the `<title>` — "<Build>", "<Build> Old Versions", "<Build> Final Output", "<Build> Plan"), set its `<title>` to the build name, publish each as a new artifact with `capabilities: {db: {}, assets: {}, downloads: true}`, seed `builds/<id>` (with `boards`) on all four and `generations` on Current, and add a row above with the four links. To change the design, edit the template and republish it to every board with `url` (keep each board's `<title>`).
