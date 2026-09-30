@@ -322,10 +322,16 @@ BB("B08-BR", A1, "Nothing about the way you walk changed, so you assume nothing 
    "R1", "L-M-STAIRS", "M-D1", "MEDIUM from behind: Maureen walks down her hall towards the front door, ordinary and unhurried", "four ordinary steps away from the lens",
    "an ordinary walking pace", STILL, "hall: from behind, full figure small in frame, camera still", "no", "absent", "—", "NB2",
    EYE, BEH, "clean", "MEDIUM", "from behind = her ordinary day, unobserved", "deep", "deep", L(M_GREY, "R"), False, notes="first sentence of B08-TH (user Fix 2026-09-29)")
-BB("B08-BRb", A1, "And here is the part that catches people out. You do not have to have done anything to your knees for this to happen.", "anything", "nothing you did",
-   "R1", "L-M-STAIRS", "M-D1", "CU on her hall floor by the front door: her plimsolls set neatly side by side on the mat, clean and ordinary; her hand sets them down", "her hand sets the pair down",
-   "one set-down, about a second", STILL, "hall floor, hand and shoes only, camera still", "no", "absent", "—", "NB2",
-   HIGH, FRO, "clean", "CU", "high = looking down at an ordinary pair of shoes", "hands", "medium", L(M_GREY, "L"), False, notes="rest of B08-TH (planned)")
+BB("B08-BRb", A1, "And here is the part that catches people out.", "catches", "it catches you out",
+   "R2", "L-D-STAIRS", "D-D1", "MCU from the landing above: Desmond halfway down his stairs stops short, one hand on the rail, the other going to his knee, looking down at it, caught out", "he stops mid-flight and his hand goes to his knee",
+   "one stop, about a second", STILL, "stairs: from above, head and shoulders to the knee, camera still", "no", "absent", "—", "NB2",
+   HIGH, THR, "clean", "MCU", "high three-quarter = looking down on the man caught out mid-step", "eyes", "medium", L(D_GREY, "R"), True,
+   notes="user 2026-09-30 'give me brolls here' — first sentence of the rest of B08-TH")
+BB("B08-BRc", A1, "You do not have to have done anything to your knees for this to happen.", "anything", "nothing you did",
+   "R1", "L-KITCHEN", "M-D1", "MEDIUM side-on in her kitchen: Maureen at the worktop filling the kettle at the sink, an ordinary quiet morning", "she fills the kettle and turns off the tap",
+   "one ordinary action, about two seconds", STILL, "kitchen: side-on at the sink, waist up, camera still", "no", "absent", "—", "NB2",
+   EYE, PRO, "clean", "MEDIUM", "profile = an ordinary life, nothing sporty", "eyes", "medium", L(KITCH, "L"), True,
+   notes="user 2026-09-30 'give me brolls here' — second sentence; replaces the planned plimsolls shot (too close to B08-BR2's boots)")
 BB("B08-BR2", A1, "It makes almost no difference, because the load is not coming from what you did.", "difference", "what you did doesn't matter",
    "R2", "L-D-STAIRS", "D-D1", "CU Desmond's hand sets a pair of old black football boots, dried mud on the studs, down on the shoe rack by his front door", "the boots set down on the rack",
    "one set-down, about a second", STILL, "hall by the door, hand and boots only, camera still", "no", "absent", "—", "NB2",
@@ -364,7 +370,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []

@@ -404,6 +404,37 @@ B["B08-BR"] = (NB2, ["R1", "P1"], photo([
     "no face visible, no turning round, no looking back, no limp, no walking stick, no product anywhere, no knee strap, no second person, "
     "no readable text, no wrong number of legs"))
 
+# B08-BRb — "And here is the part that catches people out." (user 2026-09-30 'give me brolls here'). Desmond halfway down his
+# stairs stops short, hand to his knee, caught out. Seen from the landing above. Face in frame.
+B["B08-BRb"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held on the landing, looking down the flight at him, three-quarter on. He is halfway down his stairs and has "
+    "stopped short: his right hand on the dark handrail, his left hand gone to the front of his left knee, his head bowed looking down at "
+    "the knee with a surprised, caught-out frown — as if it had never done that before. Medium close-up from above, his head and "
+    "shoulders down to his knee, the stairs falling away below him.",
+    R2 + " Wearing " + WARD["D-D1"] + ".",
+    D_STAIRS,
+    angle("B08-BRb", "him on the stairs below"),
+    focus("his nearest eye", deep=False).replace("the room behind", "the stairs below"),
+    light("D-GREY-R", "him and the stairs"), colour("D-STAIRS-AM")],
+    "no crying, no wincing in agony, no falling, no looking at the camera, no product anywhere, no knee strap, no walking stick, "
+    "no second person, " + PLAIN_SHOES + ", no going up the stairs"))
+
+# B08-BRc — "You do not have to have done anything to your knees for this to happen." Maureen in her kitchen filling the kettle:
+# an ordinary quiet life, nothing sporty. Replaces the planned plimsolls shot (too close to B08-BR2's boots).
+B["B08-BRc"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone at eye height in her kitchen, side-on. She stands at the sink under the window filling the kettle from the "
+    "tap, an ordinary quiet morning, her face in profile looking down at the kettle, calm and unhurried. Medium shot from the waist up, the "
+    "worktop, the window over the sink and the open shelf of mugs around her.",
+    R1 + " Wearing " + WARD["M-D1"] + ".",
+    KITCHEN,
+    angle("B08-BRc", "her at the sink"),
+    focus("her nearest eye", deep=False).replace("the room behind", "the kitchen behind"),
+    light("KITCH-L", "her face and hands"),
+    colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan and a navy-and-white striped top")
+    .replace("the faded orange of the old photograph", "the jug of garden flowers")],
+    "no pain, no hand on her knee, no product anywhere, no knee strap, no second person, no looking at the camera, no readable text, "
+    "no logos on the kettle"))
+
 # B07-BRa — user "The cushion gets thinner. (CUSHION IN KNEE GETS THINNER)". ANAT-B, front-on and closer than B05 (profile cutaway):
 # the cartilage cushion in the joint gap, visibly thin. No glow — a condition beat.
 B["B07-BRa"] = (NB2, [], anat(

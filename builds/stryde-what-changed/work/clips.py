@@ -349,7 +349,24 @@ B["B08-BR"] = clip("B08-BR",
            {"risk": "she turns and her face appears", "prevented_by": "'She does not turn round', 'no turning round, no looking back, no face'"},
            {"risk": "camera follows her down the hall", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"}])
 
-START = {"B08-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_225901_8a563cef-0c03-48f0-94fa-92dd33e9b572.png",
+# B06-BR2 image v2 (user confirm): close-up of Desmond's right knee, side-on at knee height on the pavement.
+# "The load does not thin with it." ≈ 1.8 s → 3 s.
+B["B06-BR2"] = clip("B06-BR2",
+    "A close-up, side-on at knee height on a grey pavement: a Black British man's bare right knee filling the frame, dark brown older "
+    "skin, the kneecap and the band of tendon below it under the skin, dark grey jogging shorts above, the other leg a soft shape "
+    "behind, a soft blurred street of hedges and houses beyond.",
+    "Already mid-step on the first frame: his right foot lands out of frame below and the knee takes his whole weight — it bends a "
+    "little under the load, the tendon below the kneecap tightens and the thigh firms — then straightens as he moves over it, the knee "
+    "drifting only a little to the right. One heavy step, about a second and a half, real time.",
+    "no knee leaving the frame, no second knee coming into focus, no feet in frame, no face, no limp, no stumbling, no knee strap, "
+    "no extra legs, no skin warping",
+    1.8, hi=6,
+    risks=[{"risk": "the knee walks out of the close frame", "prevented_by": "one step only, 'drifting only a little', 'no knee leaving the frame'"},
+           {"risk": "skin or knee shape warps under the bend", "prevented_by": "one small bend and straighten, HOLD-C + NEG-WARP-C, 'no skin warping'"},
+           {"risk": "camera follows the leg", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"}])
+
+START = {"B06-BR2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_230724_8d894c4c-441e-428d-aeed-497f8383a717.png",
+         "B08-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_225901_8a563cef-0c03-48f0-94fa-92dd33e9b572.png",
          "B07": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_225901_b28d6f1c-bceb-447c-9792-c9ed9f38a4a6.png",
          "B07-BRa": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_220935_8b097287-2a0e-4aa7-8dde-2b2d9ea7f463.png",
          "B07-BRb": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_220935_39e2cddd-d187-4527-85ab-16bd1b581a42.png",
