@@ -1078,6 +1078,42 @@ B["B16b"] = (NBP, ["S1", "P5", "PF", "B13V6"], photo([
     "no looking at the camera, no smiling for the camera, no white coat, no stethoscope, no second person, " + P.NEG_WORDMARK + ", "
     + PROD_NEG + ", no oversized strap, no strap worn, no readable text on the monitor, no certificates with text, no extra fingers, no extra hands"))
 
+# ── 2026-09-30 "GIVE ME BROLLS FOR B17A TO B17C" — edits of B16a v1 / B15 v1 (the worn placement that came out right) ──
+REFS.update({"B16AV1": ("B16a v1 — the shot to edit (Image 1)", "c47a0262-949a-4916-b2b9-f3a4f299e573"),
+             "B15V1": ("B15 v1 — the shot to edit (Image 1)", "7f990a90-9ac1-4b71-ae5d-db3100e64d28")})
+KEEP_WORN = ("Keep the strap EXACTLY as it is in Image 1 — the same shell, peaks, notch, chrome slides and grey stryde wordmark, the "
+             "same size, the same place seated on the tendon directly below the kneecap, front-on — and keep the leg, the skin and the room.")
+TRACKSUIT = ("plain navy tracksuit bottoms, soft brushed cotton, no logo, no stripes, no piping")
+
+# B17a — "Ten seconds to put on." High, his own view down on his strapped right knee on his stairs: the navy tracksuit leg rolled up
+# above the knee, both hands just finishing — fingertips at the strap's two chrome-slide ends (FP10: on in one move).
+B["B17a"] = (NBP, ["B16AV1", "R2"], (
+    "Edit Image 1. " + KEEP_WORN + " Change: instead of the khaki shorts he wears " + TRACKSUIT + ", the right leg rolled up in soft "
+    "folds to just above the knee. Add HIS TWO HANDS — THE SAME MAN as in the character sheet (Image 2): strong, dark brown older hands, "
+    "thick knuckles — the fingertips of each resting lightly on the strap's two outer chrome-slide ends, just finishing putting it on, "
+    "the thumbs clear of the wordmark and the notch. See it a little more from above, as he looks down at his own knee. A real phone "
+    "photo.\n\nAVOID: no strap moved, no strap higher, no strap lower, no strap on the side of the knee, no hands covering the wordmark, "
+    "no hands on the band, no fastening, no logos on the tracksuit, no stripes, no extra fingers, no extra hands, no second strap"))
+
+# B17b — "No sores, no rolling down," Front-on ECU at knee height, Maureen's strapped knee: one fingertip resting on the smooth,
+# unmarked skin just below the strap's lower edge — no red mark, no groove, the band flat.
+B["B17b"] = (NBP, ["B15V1", "R1"], (
+    "Edit Image 1. " + KEEP_WORN + " Add ONE HAND — THE SAME WOMAN as in the character sheet (Image 2): a slim, pale, faintly freckled "
+    "older hand with a plain gold wedding ring and the sage-green cardigan cuff at the wrist — its index fingertip resting on the skin "
+    "JUST BELOW THE STRAP'S LOWER EDGE, at the side of the shin. The skin there is smooth and unmarked: no red line, no groove, no "
+    "chafing; the band lies flat against the leg. Come a little closer so the strap's lower edge and her fingertip are large in the "
+    "frame. A real phone photo.\n\nAVOID: no strap moved, no redness, no marks on the skin, no sores, no groove in the skin, no finger "
+    "on the wordmark, no second hand, no extra fingers, no second strap"))
+
+# B17c — "and nobody can see it." Front-on at knee height, Desmond's strapped knee: his hand holds the rolled-up navy tracksuit hem just
+# above the knee, about to let it drop over the strap (the drop is the video).
+B["B17c"] = (NBP, ["B16AV1", "R2"], (
+    "Edit Image 1. " + KEEP_WORN + " Change: instead of the khaki shorts he wears " + TRACKSUIT + ". The right trouser leg is pulled up, "
+    "bunched just above the knee, and HIS ONE HAND — THE SAME MAN as in the character sheet (Image 2): a strong, dark brown older hand — "
+    "holds the gathered hem there, about to let it fall back down over the strap and the shin. The strap and the kneecap are fully "
+    "visible below the bunched fabric. A real phone photo.\n\nAVOID: no strap moved, no strap higher, no strap lower, no fabric covering "
+    "the strap yet, no logos on the tracksuit, no stripes, no shorts, no second hand, no extra fingers, no second strap"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

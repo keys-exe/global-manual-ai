@@ -1827,11 +1827,11 @@
   "notes": "PLACE-LOCK, contact",
   "duration": "pending-master",
   "angle": {
-   "height": "eye",
+   "height": "low",
    "side": "front",
    "fg": "clean",
    "scale": "ECU",
-   "why": "front-on: the kneecap in the notch (FP03)"
+   "why": "knee height, front-on: the kneecap in the notch (FP03)"
   },
   "focus": {
    "plane": "product",
@@ -1874,11 +1874,11 @@
   "notes": "",
   "duration": "pending-master",
   "angle": {
-   "height": "eye",
+   "height": "low",
    "side": "front",
    "fg": "clean",
    "scale": "CU",
-   "why": "front-on: the knee working with the strap on (FP03)"
+   "why": "knee height, front-on: the knee working with the strap on (FP03)"
   },
   "focus": {
    "plane": "product",
@@ -1999,11 +1999,11 @@
   "subject": "R2",
   "location": "L-D-STAIRS",
   "story_day": "D-D3",
-  "framing": "CU sitting on the bottom stair, his tracksuit leg rolled up, both hands slide the strap up to contact under the kneecap",
-  "action": "slides up and stops at contact",
-  "pace": "one slide, about a second",
+  "framing": "front-on CU on his stairs, his navy tracksuit leg rolled up above the knee, both hands at the strap's two ends, just seated under the kneecap (edit of B16a)",
+  "action": "his hands let go of the seated strap",
+  "pace": "one release, about a second",
   "camera": "locked off",
-  "staging": "hands: start mid-movement, end on contact",
+  "staging": "hands: let go, the strap never moves",
   "pin_end": "no",
   "max": 6,
   "product": "seated",
@@ -2016,10 +2016,10 @@
   "duration": "pending-master",
   "angle": {
    "height": "high",
-   "side": "three-quarter",
+   "side": "front",
    "fg": "clean",
    "scale": "CU",
-   "why": "high = his own view of his knee"
+   "why": "high = his own view down: on in one move (FP03, FP10)"
   },
   "focus": {
    "plane": "product",
@@ -2046,8 +2046,8 @@
   "subject": "R1",
   "location": "L-M-STAIRS",
   "story_day": "M-D2",
-  "framing": "CU seated, her fingertips run along the skin at the strap's lower edge — the skin smooth and unmarked",
-  "action": "fingertips slide once along the edge",
+  "framing": "front-on ECU, her fingertip resting on the smooth unmarked skin just below the strap's lower edge (edit of B15)",
+  "action": "her fingertip slides once along the edge",
   "pace": "one slide, about a second",
   "camera": "locked off",
   "staging": "hands: large in frame, one movement",
@@ -2063,10 +2063,10 @@
   "duration": "pending-master",
   "angle": {
    "height": "low",
-   "side": "profile",
+   "side": "front",
    "fg": "clean",
-   "scale": "CU",
-   "why": "low profile: the edge against the skin"
+   "scale": "ECU",
+   "why": "knee height, front-on: the edge against the skin"
   },
   "focus": {
    "plane": "product",
@@ -2093,7 +2093,7 @@
   "subject": "R2",
   "location": "L-D-STAIRS",
   "story_day": "D-D3",
-  "framing": "CU from the side: he lets his tracksuit leg drop over the strap; the fabric lies flat",
+  "framing": "front-on CU: his hand holds the rolled-up navy tracksuit hem just above the strapped knee, about to let it drop (edit of B16a)",
   "action": "the trouser leg falls and settles",
   "pace": "one drop, about a second",
   "camera": "locked off",
@@ -2110,10 +2110,10 @@
   "duration": "pending-master",
   "angle": {
    "height": "eye",
-   "side": "profile",
+   "side": "front",
    "fg": "clean",
    "scale": "CU",
-   "why": "profile shows the flat line of the trouser"
+   "why": "front-on: the strap disappears under the trouser"
   },
   "focus": {
    "plane": "product",
