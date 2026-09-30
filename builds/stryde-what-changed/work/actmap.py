@@ -131,11 +131,17 @@ BB("B05", A1, "And inside the joint there is a layer of cartilage doing the abso
    "one slow change over four seconds", STILL, "none", "no", "absent", "—", "NB2",
    EYE, PRO, "clean", "CU", "profile: the layer seen edge-on", "deep", "deep", L(ANAT, "L"), False, eg="EG05")
 TH("B06-TH", A1, "That part is ordinary. It happens to everybody. But here is what nobody explains. The load does not thin with it.")
-BB("B06", A1, "Seventeen times your bodyweight is still arriving, every step, in exactly the same place.", "Seventeen", "mechanism — load (pip)",
-   "ANAT", "—", "—", "ANAT-A detailed: the thinner joint — worn cartilage, menisci, ligaments, fat pad, tendon fibres — the load pulses still arriving at the same spot below the kneecap", "one pulse per second, unchanged",
-   "one pulse a second", STILL, "none", "no", "absent", "—", "NB2",
+BB("B06", A1, "Seventeen times your bodyweight is still arriving, every step,", "Seventeen", "mechanism — load (pip)",
+   "ANAT", "—", "—", "ANAT-A detailed, whole leg mid-step: glowing waves of force pour down through the thigh inside the limb and burst as a bright ripple at the spot below the kneecap, every step", "one wave arrives each step",
+   "one wave a second", STILL, "none", "no", "absent", "—", "NB2",
    LOW, THR, "clean", "CU", "low = the weight coming down on it", "deep", "deep", L(ANAT, "L"), False,
-   layout="pip", eg="EG02 host cut-out bottom-left · EG04 red box 'Seventeen times' · 17× overlay")
+   layout="pip", eg="EG02 host cut-out bottom-left · EG04 red box 'Seventeen times' · 17× overlay",
+   notes="v5 image — user 'MORE EFFECTS, MAKE IT 2 BROLLS HERE' (split: this is the first half)")
+BB("B06b", A1, "in exactly the same place.", "same", "the same spot, every time",
+   "ANAT", "—", "—", "ANAT-A ECU of the patellar tendon just below the kneecap: one tight glowing target spot, concentric rings of light rippling out through the tendon fibres from it as each impact lands on exactly the same point", "the rings ripple out from the one spot",
+   "one ripple a second", STILL, "none", "no", "absent", "—", "NB2",
+   EYE, FRO, "clean", "ECU", "front-on and close = the one exact spot, dead centre", "deep", "deep", L(ANAT, "R"), False,
+   notes="user 'MORE EFFECTS, MAKE IT 2 BROLLS HERE' — second half of the B06 line")
 TH("B07-TH", A1, "The cushion gets thinner. The weight stays exactly the same.", framing="punch")
 BB("B07", A1, "That is why it feels like it arrived overnight.", "overnight", "problem — the feeling",
    "R1", "L-KITCHEN", "M-D1", "MCU in her kitchen first thing in the morning: Maureen half-risen from her chair at the oak table, a cup of tea in front of her, she stops and puts a hand to her knee, a small surprised frown", "she straightens, stops, hand to her knee",
@@ -149,16 +155,16 @@ BB("B08a", A1, "Some of the people it happens to have never run a mile in their 
    EYE, THR, "clean", "MEDIUM", "three-quarter = an unhurried, unsporty life", "eyes", "medium", L(STREET_AM, "L"), True,
    notes="v4 — user Fix 'CREATE NEW IMAGE FOR THIS LINE' (v1 keys; v2 tartan trolley; v3 unworn trainers in the cupboard)")
 BB("B08b", A1, "Others played sport for thirty years.", "sport", "not what you did",
-   "extras", "L-PARK", "D-D1", "MEDIUM on a grass park pitch: a veterans' Sunday football game, a fit grey-haired man in his sixties in a plain kit strikes the ball, other older players around him", "he strikes the ball and follows through",
-   "one kick, about a second", STILL, "pitch: low three-quarter, the kicker full figure, camera still", "no", "absent", "—", "NB2",
-   LOW, THR, "clean", "MEDIUM", "low three-quarter = a lifetime of sport, still playing", "eyes", "medium", L(STREET_AM, "L"), True,
-   notes="v5 — user Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 team photo; v2 football; v3 trophies; v4 Desmond jogging); one-off extras, no sheets (§19B)")
+   "R2", "L-D-STAIRS", "D-D1", "POV from his own eyes, seated on his stairs: Desmond's hands hold an old faded photograph of his 1980s amateur football team, his bare knees below", "his thumb moves over the photo",
+   "one small movement, about two seconds", STILL, "POV: hands, photo and knees only, camera still", "no", "absent", "—", "NB2",
+   HIGH, FRO, "clean", "CU", "POV = seeing the old photo through his own eyes", "hands", "shallow", L(D_GREY, "R"), False,
+   notes="v7 — user Fix 'POV ANGLE' on v6 (him holding the old team photo, three-quarter)")
 TH("B08-TH2", A1, "It makes almost no difference, because the load is not coming from what you did.", framing="punch")
 BB("B08c", A1, "It is coming from standing up and walking.", "standing", "the cause — ordinary life",
-   "R1", "L-KITCHEN", "M-D1", "side-on, waist-down, low: Maureen pushes up from her kitchen chair, both knees straightening under her weight, and takes the first step away", "she rises and steps off",
-   "one rise and one step, about two seconds", STILL, "standing up: side-on, waist-down, camera still", "no", "absent", "—", "NB2",
-   LOW, PRO, "clean", "MS", "low profile = the knees doing the work of standing", "foreground", "shallow", L(KITCH, "L"), False, mx=3,
-   notes="v2 — user Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 Desmond rising from his bottom stair)")
+   "R2", "L-STREET", "D-D1", "MEDIUM on the pavement: Desmond sitting on a low brick front-garden wall pushes up to standing and steps off along the pavement", "he stands up and takes the first steps away",
+   "one rise and two steps, about three seconds", STILL, "street: three-quarter, full figure, camera still", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "MEDIUM", "three-quarter = the whole ordinary movement, sit to stand to walk", "eyes", "medium", L(STREET_AM, "L"), True, mx=3,
+   notes="v3 — user Fix 'CHANGE TO FROM SITTING TO STAND UP AND WALK, OUTSIDE' (v1 Desmond rising off his stair; v2 Maureen rising from her kitchen chair)")
 
 # ============================================================ ACT 2 — the costly mistake
 TH("B09-TH", A2, "Which is why most of what gets sold for this cannot work.", framing="punch")
@@ -377,7 +383,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10b', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []

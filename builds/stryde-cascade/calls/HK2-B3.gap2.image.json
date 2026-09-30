@@ -1,0 +1,37 @@
+{
+ "beat": "HK2-B3",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"I would like to stop being called back for the second one.\": the fitter sits in the open side door of his van, phone to his ear, listening, his eyes just lowering — a quiet, tired moment. Eye level, profile, medium shot, his face sharp. He is the same man as the attached cast sheet, in his B-roll work clothes, not the talking-head outfit: a worn tan canvas work jacket open over a dark green work shirt, charcoal work trousers, no fleece. The van exactly as in the attached van plate: shelving with clear organiser boxes, handrail lengths strapped to the wall. Afternoon light from the street side. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "I would like to stop being called back for the second one.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "N-CHINESE cast sheet",
+   "kind": "character",
+   "id": "8cc4a583-5d7d-4f39-9ef7-7fe7899d298b"
+  },
+  {
+   "label": "PLATE-VAN",
+   "kind": "location",
+   "id": "b1cc1764-3e34-4b37-b8c6-0abf55cfe68e"
+  }
+ ],
+ "taste": [
+  "HT12",
+  "HT09"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "sitting still in the van's side door, phone at his ear, he lowers his eyes and gives one small nod, 3s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "user Fix 2026-09-30: \"the avatar broll clothes should not be the same as the th\" → TH frame dropped, new work outfit",
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render"
+}

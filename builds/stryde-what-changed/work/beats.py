@@ -346,94 +346,44 @@ B["B05"] = (NB2, [], anat(
          "is visible", stack="ANAT-B",
     slots={"[TARGET]": "the cartilage lining the joint surfaces"}).replace("the patellar tendon crisp", "the cartilage crisp"))
 
-# B06 v4 — user Fix 'MORE ARROWS, MORE DETAILS' on "Seventeen times your bodyweight is still arriving, every step, in exactly the
-# same place." (v3: one pointer arrow). Several force arrows now carry the bodyweight down the thigh and converge on the one tendon spot,
-# plus the pointer; more anatomical detail. Still no text. Pip (host cut-out bottom-left): knee upper right.
-B["B06"] = (NB2, [], anat(
-    "Seen from a low three-quarter angle, CAUGHT MID-STEP: the leg bending under a landing, the foot just striking the ground below the "
-    "frame, the thigh muscles visibly tensed and bulging with the load, the knee flexed — the body's weight coming down through it. In "
-    "very rich, high anatomical detail: the four heads of the quadriceps each distinct with fine fibre striation and pearly tendon sheaths, "
-    "the quadriceps tendon sweeping over the kneecap, the kneecap with its textured bony surface and its smooth cartilage underside, the "
-    "patellar tendon as a banded, fibrous ribbon drawn taut with its long fibres visible, the infrapatellar fat pad and the small bursa "
-    "behind it, the joint capsule as a thin translucent sleeve, the two crescent menisci, the collateral ligaments at the sides, the "
-    "cruciate ligaments crossing deep inside, fine blood vessels threading over the bone, the bone ends with porous trabecular texture — "
-    "and the cartilage between the bones visibly THIN and worn. SEVERAL FORCE ARROWS: five or six smooth, slightly glowing white-to-amber "
-    "arrows run DOWN the front and sides of the thigh from the top of the frame, following the line of the leg like the body's weight "
-    "pouring down, all CONVERGING on the one same spot on the patellar tendon just below the kneecap; plus one larger clean white pointer "
-    "arrow outside the leg in the dark field pointing precisely at that spot. The arrows are crisp medical-illustration graphics, no "
-    "text, no label, no number on any of them. THE KNEE SITS IN THE UPPER RIGHT OF THE FRAME; the lower-left third of the frame is calm "
-    "near-black field with nothing in it (a person will be placed there later). "
+# B06 v6 — user Fix 'ADD MORE EFFECT' (on v5): five wave-fronts, energy threads, heat glow, big impact burst.
+# B06 v5 — "Seventeen times your bodyweight is still arriving, every step," User 'MORE EFFECTS, MAKE IT 2 BROLLS HERE' (v4: force
+# arrows down the thigh + pointer; confirmed, two videos made). Now the first half of the line: the whole leg mid-step, glowing waves of
+# force pouring down through the thigh INSIDE the limb and bursting as a bright ripple at the tendon spot. Effects stay inside the body.
+EFX_OK = lambda s: (s.replace("no shockwave, no burst, ", "").replace("no arrows, no force arrows, ", "")
+                     .replace("no volumetric emission floating outside the structures, ", "")
+                     .replace("no sparks, ", "").replace("no explosion, ", "")
+                     .replace("mid-intensity and clearly glowing — not at peak, leaving headroom to escalate", "at full, blazing intensity")
+                     .replace(", sharp-edged and small, never spreading down onto the shin bone or across the joint; the bones and muscles around it stay calm", ", the centre of all the effects"))
+B["B06"] = (NB2, [], EFX_OK(anat(
+    "Seen from a low three-quarter angle, the whole leg CAUGHT MID-STEP from the hip down: the foot landing below the frame, the knee "
+    "flexed, the thigh muscles tensed and bulging with the load, in rich anatomical detail — the quadriceps heads with fine striation, "
+    "the kneecap, the patellar tendon as a taut banded ribbon, the worn thin cartilage. THE EFFECTS, BOLD AND DRAMATIC: FIVE brilliant "
+    "white-gold wave-fronts of light pour DOWN through the inside of the thigh like pulses of force, stacked one behind another, each "
+    "trailing a bright streaming glow; glowing threads of energy light up along the muscle fibres as the force passes; a hot red-orange "
+    "heat glow floods the knee joint; and where the lowest wave hits the patellar tendon below the kneecap it BURSTS into a big bright "
+    "impact flare — three wide rings of light rippling out through the tendon and the translucent tissue, a flare of white at the core, "
+    "and a swirl of hundreds of glowing particles spinning around the knee inside the body shell. All of "
+    "the light lives INSIDE the leg: nothing flies in from outside. THE KNEE SITS IN THE UPPER RIGHT OF THE FRAME; the lower-left third "
+    "of the frame is calm near-black field with nothing in it (a person will be placed there later). "
     + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
-    view="viewed from a low three-quarter angle, foreshortened, the knee joint in the upper right of the frame, the lower-left third "
-         "empty field")
-    .replace("no arrows, no force arrows, ", "no arrows pointing anywhere but the tendon spot, ").replace("no diagram markings, ", "").replace("no annotations, ", "")
-    .replace("no individual muscle fibres, ", "").replace("no surface veins, ", "")
-    .replace("never fine striation and never individual fibres", "fine striation readable"))
+    view="viewed from a low three-quarter angle, foreshortened, the whole leg from the hip down with the knee joint in the upper right of "
+         "the frame, the lower-left third empty field")
+    .replace("no individual muscle fibres, ", "").replace("never fine striation and never individual fibres", "fine striation readable")))
 
-# B06-BR2 — user "The load does not thin with it — BROLL HERE". Desmond on the pavement, knee-height side-on: one heavy step, his
-# whole weight landing on the knee. Faceless; plain trainers.
-# v2 — user Fix 'FOCUS ON KNEE' (v1: both legs, shorts to trainers, the knee small): a close-up on the landing right knee.
-B["B06-BR2"] = (NB2, ["R2", "P3"], photo([
-    "A close-up snapshot from a phone held at knee height on the pavement, side-on, close in. He is walking along the pavement from the "
-    "left of the frame to the right, caught as his right foot lands and takes his whole weight: THE RIGHT KNEE FILLS THE MIDDLE OF THE "
-    "FRAME, bending a little under the load, the kneecap and the band of tendon below it standing out under the skin, the lower thigh "
-    "muscle firm above it and the top of the shin below. The frame holds only the knee, from just below the shorts hem to the middle of "
-    "the shin — no feet, no trainers, no other leg in focus; the other leg is only a soft dark shape behind. The street behind is a soft "
-    "grey blur of paving and hedge.",
-    R2_BODY + " Wearing dark grey jogging shorts ending just above the knee.",
-    STREET,
-    angle("B06-BR2", "his right knee"),
-    focus("his right knee and the tendon below the kneecap", deep=False).replace("the room behind", "the street behind"),
-    light("STREET-AM-L", "his knee"),
-    colour("STREET-AM").replace("navy skirt and white plimsolls", "dark grey jogging shorts")],
-    NO_FACE + ", no torso, no hands, no product anywhere, no knee strap, no knee support, no walking stick, no limp, no second person, "
-    "no dog, no number plates, no readable signs, no feet in frame, no shoes in frame, no wrong number of legs"))
-
-# B08-BR — first sentence of B08-TH: "Nothing about the way you walk changed, so you assume nothing changed." (user Fix: B-roll here).
-# Maureen from behind, walking down her hall towards the front door, ordinary and unhurried.
-B["B08-BR"] = (NB2, ["R1", "P1"], photo([
-    "A snapshot from a phone at eye height at the foot of her stairs, looking down her hall towards the front door. She is walking away "
-    "from the lens down the hall at an ordinary, unhurried pace, caught mid-stride: her right foot planted, her left heel lifting behind. "
-    "Medium shot from behind, her whole figure small in the frame, the front door with its glass panel at the end of the hall, the half-moon "
-    "hall table beside it. Her face is not visible — only the back of her head and her soft white hair.",
-    R1_BODY + " " + R1_LEGS + " Wearing " + WARD["M-D1"] + ".",
-    M_STAIRS + " The half-moon hall table with a key bowl and a blue-and-white vase of dried lavender stands just inside the front door.",
-    angle("B08-BR", "her walking down the hall"),
-    focus("everything"),
-    light("M-GREY-R", "her and the hall"), colour("M-STAIRS-AM")],
-    "no face visible, no turning round, no looking back, no limp, no walking stick, no product anywhere, no knee strap, no second person, "
-    "no readable text, no wrong number of legs"))
-
-# B08-BRb — "And here is the part that catches people out." (user 2026-09-30 'give me brolls here'). Desmond halfway down his
-# stairs stops short, hand to his knee, caught out. Seen from the landing above. Face in frame.
-B["B08-BRb"] = (NB2, ["R2", "P2"], photo([
-    "A snapshot from a phone held on the landing, looking down the flight at him, three-quarter on. He is halfway down his stairs and has "
-    "stopped short: his right hand on the dark handrail, his left hand gone to the front of his left knee, his head bowed looking down at "
-    "the knee with a surprised, caught-out frown — as if it had never done that before. Medium close-up from above, his head and "
-    "shoulders down to his knee, the stairs falling away below him.",
-    R2 + " Wearing " + WARD["D-D1"] + ".",
-    D_STAIRS,
-    angle("B08-BRb", "him on the stairs below"),
-    focus("his nearest eye", deep=False).replace("the room behind", "the stairs below"),
-    light("D-GREY-R", "him and the stairs"), colour("D-STAIRS-AM")],
-    "no crying, no wincing in agony, no falling, no looking at the camera, no product anywhere, no knee strap, no walking stick, "
-    "no second person, " + PLAIN_SHOES + ", no going up the stairs"))
-
-# B08-BRc — "You do not have to have done anything to your knees for this to happen." Maureen in her kitchen filling the kettle:
-# an ordinary quiet life, nothing sporty. Replaces the planned plimsolls shot (too close to B08-BR2's boots).
-B["B08-BRc"] = (NB2, ["R1", "P4"], photo([
-    "A snapshot from a phone at eye height in her kitchen, side-on. She stands at the sink under the window filling the kettle from the "
-    "tap, an ordinary quiet morning, her face in profile looking down at the kettle, calm and unhurried. Medium shot from the waist up, the "
-    "worktop, the window over the sink and the open shelf of mugs around her.",
-    R1 + " Wearing " + WARD["M-D1"] + ".",
-    KITCHEN,
-    angle("B08-BRc", "her at the sink"),
-    focus("her nearest eye", deep=False).replace("the room behind", "the kitchen behind"),
-    light("KITCH-L", "her face and hands"),
-    colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan and a navy-and-white striped top")
-    .replace("the faded orange of the old photograph", "the jug of garden flowers")],
-    "no pain, no hand on her knee, no product anywhere, no knee strap, no second person, no looking at the camera, no readable text, "
-    "no logos on the kettle"))
+# B06b v2 — user Fix 'ADD MORE EFFECT': five rings, fibre streaks, heat halo, particle swirl.
+# B06b — "in exactly the same place." (second half of the B06 line). ECU front-on of the patellar tendon just below the kneecap: one
+# tight glowing target spot, concentric rings of light rippling out through the tendon fibres as each impact lands on the same point.
+B["B06b"] = (NB2, [], EFX_OK(anat(
+    "Seen straight from the front, very close: the lower edge of the kneecap at the top of the frame and the patellar tendon below it as "
+    "a broad satin-white band of long fibres filling the frame. Dead centre on the tendon, just below the kneecap: ONE BLAZING "
+    "NEAR-WHITE CORE, like the bullseye of a target, and around it FIVE bold CONCENTRIC RINGS OF LIGHT rippling outward through the "
+    "tendon fibres — the marks of impact after impact landing on exactly the same point. Bright streaks of light race along the tendon "
+    "fibres into the core, a hot red-orange heat halo pulses around it, and a swirl of hundreds of glowing particles circles the spot "
+    "inside the tissue, the brightest, most dramatic thing in the frame. All of the light lives INSIDE the tendon and the tissue: nothing flies in from outside. "
+    + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed straight from the front, very close on the patellar tendon just below the kneecap, the tendon filling the frame")
+    .replace("no individual muscle fibres, ", "").replace("never fine striation and never individual fibres", "fine striation readable")))
 
 # B07-BRa — user "The cushion gets thinner. (CUSHION IN KNEE GETS THINNER)". ANAT-B, front-on and closer than B05 (profile cutaway):
 # the cartilage cushion in the joint gap, visibly thin. No glow — a condition beat.
@@ -494,37 +444,37 @@ B["B08a"] = (NB2, ["R1", "P3"], photo([
     "no running, no sports clothes, no product anywhere, no knee strap, no walking stick, no second person, no bus, no looking at the "
     "camera, no readable text, no adverts, no timetable, no number plates, no readable signs"))
 
-# B08b v5 — "Others played sport for thirty years." User Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 team photo; v2 football; v3 trophies;
-# v4 Desmond jogging). A veterans' Sunday football game on a park pitch: a fit grey-haired man in his sixties strikes the ball.
-# One-off extras, no sheets (§19B). No location plate: an ordinary British park pitch, described in words.
-B["B08b"] = (NB2, [], photo([
-    "A snapshot from a phone held low at the edge of a grass football pitch in a British park, three-quarter on. A veterans' Sunday "
-    "morning game: a fit, broad-shouldered grey-haired Black British man in his mid-sixties, in a plain navy football shirt, black shorts "
-    "and long navy socks, strikes the ball with his right foot, caught at the moment of the kick — standing leg planted and bent, kicking "
-    "leg swinging through, arms out for balance, his face set and focused on the ball. Behind him, soft, two other grey-haired players in "
-    "plain white shirts, a line of autumn trees and a low fence at the edge of the park. Medium shot, the kicker from head to boots.",
-    "The pitch: worn, slightly muddy municipal grass with faded white lines, a plain goal with a sagging net far behind.",
-    angle("B08b", "the man kicking the ball"),
-    focus("his nearest eye", deep=False).replace("the room behind", "the pitch behind"),
-    light("STREET-AM-L", "him and the pitch"), colour("STREET-AM").replace("grey paving, green privet, pebble-dash and brick semis", "worn green grass, autumn trees, a grey sky")
-    .replace("navy skirt and white plimsolls", "plain navy and white football kit").replace("the green privet", "the navy shirt")],
-    "no young players, no children, no crowd, no product anywhere, no knee strap, no knee support, no readable text, no numbers on the "
-    "shirts, no sponsor, no badges, no logos on the kit or boots, no brand marks, no looking at the camera, no wrong number of legs"))
+# B08b v7 — "Others played sport for thirty years." User Fix 'POV ANGLE' on v6 (him holding the old team photo, three-quarter).
+# POV from his own eyes, seated on his stairs: his hands hold the old faded 1980s team photo, his bare knees below. Faceless.
+B["B08b"] = (NB2, ["R2", "P2"], photo([
+    "A point-of-view snapshot, as if through his own eyes, looking down from where he sits on his stairs. His two hands hold an old, "
+    "faded colour photograph out in front of him: a 1980s amateur football team posed in two rows on a muddy park pitch in plain "
+    "navy-and-white kit, a young Black man with a short afro in the front row among them. The corners of the print are soft and curled, "
+    "his thumb resting at its edge. Below the photo, his own bare knees and dark grey shorts, and further down the charcoal stair carpet "
+    "with its white nosing stripe and his white trainers on the step below. His face is not in the frame — we are seeing through his eyes.",
+    R2_BODY + " His hands: dark brown older skin, thick knuckles, real unretouched skin, the cuffs of a navy zip-neck sports top at the "
+    "wrists. Wearing dark grey jogging shorts ending just above the knee.",
+    D_STAIRS,
+    angle("B08b", "his hands, the photo and his knees").replace("seen from the front of", "looking straight down at"),
+    focus("the photograph", deep=False).replace("the room behind", "the stairs below"),
+    light("D-GREY-R", "his hands and the photo"), colour("D-STAIRS-AM")],
+    NO_FACE + ", no product anywhere, no knee strap, no readable text, no writing on the photo, no names, no dates, no badges, no logos, "
+    + PLAIN_SHOES + ", no extra fingers, no extra hands, no extra knees"))
 
-# B08c v2 — "It is coming from standing up and walking." User Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 Desmond rising from his bottom
-# stair). Side-on, low, waist-down in her kitchen: Maureen pushes up from her chair, both knees straightening under her weight.
-B["B08c"] = (NB2, ["R1", "P4"], photo([
-    "A snapshot from a phone held low beside the kitchen table, side-on. She is getting up from her kitchen chair, caught halfway: her "
-    "weight coming forward over her feet, one hand pushing down on the edge of the pale-oak table, both bare knees bent and starting to "
-    "straighten as they take her weight, her plimsolls flat on the floor. The frame holds her from the waist down — the skirt, both knees, "
-    "the shins, the plimsolls, the chair seat behind her and the table edge — her face is above the frame, not in the picture.",
-    R1_BODY + " " + R1_LEGS + " Wearing a navy cotton A-line skirt ending just above the knee and white canvas plimsolls, plain, no logo.",
-    KITCHEN,
-    angle("B08c", "her knees as she stands up"),
-    focus("her nearest knee", deep=False).replace("the room behind", "the kitchen behind"),
-    light("KITCH-L", "her legs"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a navy skirt and white plimsolls")
-    .replace("the faded orange of the old photograph", "the jug of garden flowers")],
-    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no walking stick, no second person, no wrong number of legs"))
+# B08c v3 — "It is coming from standing up and walking." User Fix 'CHANGE TO FROM SITTING TO STAND UP AND WALK, OUTSIDE' (v1 Desmond
+# rising off his stair; v2 Maureen rising from her kitchen chair). Desmond on his street, pushing up from a low front-garden wall.
+B["B08c"] = (NB2, ["R2", "P3"], photo([
+    "A snapshot from a phone at eye height on the pavement, three-quarter on. He has been sitting on a low brick front-garden wall and is "
+    "getting up to walk on, caught halfway: his weight coming forward over his feet, one hand pushing off the top of the wall, both bare "
+    "knees bent and straightening as they take his weight, his face three-quarter to the camera, looking ahead up the pavement, "
+    "matter-of-fact. Medium shot, the whole of him from head to trainers, the wall and hedge behind him and the pavement running away.",
+    R2 + " Wearing " + WARD["D-D1"] + ".",
+    STREET,
+    angle("B08c", "him getting up off the wall"),
+    focus("his nearest eye", deep=False).replace("the room behind", "the street behind"),
+    light("STREET-AM-L", "him and the pavement"), colour("STREET-AM").replace("navy skirt and white plimsolls", "a navy zip-neck top, dark grey shorts and white trainers")],
+    "no wincing, no pain face, no product anywhere, no knee strap, no walking stick, no second person, no looking at the camera, no "
+    "readable text, no number plates, " + PLAIN_SHOES + ", no wrong number of legs"))
 
 # B08-BR2 — "It makes almost no difference," (user 'BROLLS HERE', first half of B08-TH2). Desmond's hand sets his old muddy football
 # boots down on the shoe rack by his front door. Faceless close-up.

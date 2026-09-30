@@ -1,0 +1,37 @@
+{
+ "beat": "A4-B1b",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"It never crosses the joint.\": the knee from the side, bent halfway as it moves, with the small rigid black strap exactly as in the attached strap anatomy frame, wrapped just below the kneecap on the patellar tendon. The joint line glows a soft cool blue above the strap and the bend happens there, above it; the strap sits wholly on the tendon below, never over the kneecap or the joint. Side view, the knee filling the frame, one leg. Premium 3D anatomical render exactly in the style of the attached anatomy frame: near-black background, faint translucent body shell, warm red layered muscle, ivory bone, cool key light and warm under-glow. No text, no arrows.",
+ "script_line": "It never crosses the joint.",
+ "face": false,
+ "room": false,
+ "product": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "A4-M1 confirmed (anatomy with the strap)",
+   "kind": "frame",
+   "id": "fc400c13-25a4-409a-b275-0ccf9d5a18a4"
+  },
+  {
+   "label": "A2-M3 confirmed (anatomy style)",
+   "kind": "frame",
+   "id": "72d41a87-6298-4032-b626-2ca1e7e571bd"
+  }
+ ],
+ "taste": [
+  "HT11",
+  "FP03",
+  "FP02"
+ ],
+ "anatomy": true,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "the knee bends slowly to a right angle and back; the strap stays on the tendon below the kneecap and never crosses the joint, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "user Fix: \"anatomy here\" → real-knee photo replaced by an anatomy render of the strap on the tendon"
+}

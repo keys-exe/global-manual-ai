@@ -409,7 +409,39 @@ B["B08a"] = clip("B08a",
            {"risk": "hands warp on the handbag", "prevented_by": "one small settle and smooth, NEG-WARP-C, 'no extra hands'"},
            {"risk": "a bus or people wander in", "prevented_by": "'no bus arriving, no second person, no cars moving'"}])
 
-START = {"B08a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_111706_9b645285-1aef-43ba-99f4-f95ac2ed5c6b.png",
+# B08b image v7 (user CONFIRM): POV on his stairs, his hands holding the old 1980s team photo, his knees below.
+# "Others played sport for thirty years." ≈ 2.0 s → 3 s.
+B["B08b"] = clip("B08b",
+    "A point-of-view shot looking down from a man seated on his carpeted stairs: his two dark-skinned hands hold an old faded colour "
+    "photograph of a 1980s amateur football team in navy-and-white kit, his bare knees, grey shorts and white trainers below, the stairs "
+    "falling away beneath.",
+    "Already holding it on the first frame: his hands tilt the photo very slightly towards him and his right thumb moves slowly across "
+    "its edge, as if touching the memory — small, calm, real time. The knees stay still.",
+    "no photo changing, no faces in the photo changing, no hands moving out of frame, no extra hands, no extra fingers, no readable text, "
+    "no camera shake beyond a slight natural hold",
+    2.0, hi=6,
+    risks=[{"risk": "the faces or kit in the photo morph", "prevented_by": "only the thumb and a slight tilt move, 'no faces in the photo changing', HOLD-C + NEG-WARP-C"},
+           {"risk": "fingers multiply on the print", "prevented_by": "one slow thumb movement, 'no extra fingers, no extra hands'"},
+           {"risk": "camera drifts", "prevented_by": "locked-off tripod clause"}])
+
+# B08c image v3 (user CONFIRM): Desmond getting up off a low front-garden wall on his street.
+# "It is coming from standing up and walking." ≈ 2.4 s → 4 s.
+B["B08c"] = clip("B08c",
+    "A Black British man of sixty-six with close-cropped grey-white hair and a short grey-white beard on a grey British residential "
+    "pavement, a navy zip-neck top, dark grey shorts, bare knees, white trainers, rising from a low brick front-garden wall with a hedge "
+    "behind, parked cars along the kerb.",
+    "Already rising on the first frame: he pushes off the wall with one hand, his knees straighten as he comes up to standing, and he "
+    "takes two ordinary steps away along the pavement to the right — an everyday, unhurried movement, real time.",
+    "no wincing, no stumbling, no looking at the camera, no second person, no cars moving, no knee strap, no walking stick, no extra legs, "
+    "no extra hands, no walking out of frame",
+    2.4, hi=4,
+    risks=[{"risk": "legs warp as he rises and steps", "prevented_by": "one rise then two steps at an easy pace, start frame mid-rise, HOLD-C + NEG-WARP-C"},
+           {"risk": "his face drifts off the sheet", "prevented_by": "three-quarter, short clip, calm expression, HOLD-C"},
+           {"risk": "camera follows him", "prevented_by": "locked-off tripod clause, 'no walking out of frame'"}])
+
+START = {"B08b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_115249_bc7a2b7d-06a8-444e-bf7a-4a7e604d9123.png",
+         "B08c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_115249_63775ae4-a1ed-4292-9094-ad0930a4f2d6.png",
+         "B08a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_111706_9b645285-1aef-43ba-99f4-f95ac2ed5c6b.png",
          "B08-BRb": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_103917_57a208e9-a3f0-44c8-9602-b7a6f6ee6d42.png",
          "B08-BRc": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_103918_c1db651c-8d38-40ec-8f3b-0468a2ed021b.png",
          "B06-BR2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_230724_8d894c4c-441e-428d-aeed-497f8383a717.png",
