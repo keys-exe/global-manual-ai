@@ -1,1 +1,11 @@
 {"taskId": "229091575c1bdf51898e3ca18e3212a1", "created": true}
+{
+  "taskId": "229091575c1bdf51898e3ca18e3212a1",
+  "state": "success",
+  "credits": 18.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/workers/images/image_2b453bbda8159c5eed0e08643b0af509.png"
+  ],
+  "saved": "body/B-09a_v2.png"
+}
