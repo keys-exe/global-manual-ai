@@ -1,0 +1,4279 @@
+[
+ {
+  "beat": "HKA-SH01",
+  "group": "HKA",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "high",
+  "side": "behind",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "high over the daughter's shoulder: the drop of the stairs and Mum already below — the gap between them is the joke",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HA",
+  "face": true,
+  "light": {
+   "source": "overcast sky through the glass canopy",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — cool overcast, open",
+   "kelvin": 6500
+  },
+  "lines": "L001",
+  "action": "the daughter at the top of the station steps reaches for the rail; below, HER is already three steps down, bag in hand",
+  "pace": "HER steps down one step per second",
+  "rig": "F2",
+  "cast": [
+   "C2",
+   "N"
+  ],
+  "location": "L-STATION",
+  "cut": "on 'we can…'",
+  "ingredients": [
+   "C2",
+   "N",
+   "L-STATION",
+   "VOICE-C2"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKA-SH02",
+  "group": "HKA",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "low from below on the steps: she owns the stairs — resolve",
+  "mode": 4,
+  "shot": [
+   "SH-MED",
+   "SH-LOW"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HA",
+  "face": true,
+  "light": {
+   "source": "overcast sky through the glass canopy",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — cool overcast, open",
+   "kelvin": 6500
+  },
+  "lines": "L002",
+  "action": "HER, three steps down, turns her head back up to her daughter without stopping, bag in her right hand, left hand free of the rail",
+  "pace": "one step per second",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-STATION",
+  "cut": "on 'love.'",
+  "ingredients": [
+   "N",
+   "L-STATION",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKA-SH03",
+  "group": "HKA",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "profile",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "profile as she steps down the last stairs and onto the train — distance growing from the daughter",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "HA",
+  "face": true,
+  "light": {
+   "source": "overcast sky through the glass canopy",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — cool overcast, open",
+   "kelvin": 6500
+  },
+  "lines": "",
+  "action": "HER walks down the last steps and steps through the open train doors, brisk and even",
+  "pace": "brisk, one step per second",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-STATION",
+  "cut": "as she steps inside",
+  "ingredients": [
+   "N",
+   "L-STATION"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKA-SH04",
+  "group": "HKA",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "three-quarter on the daughter, breathless, staring across the table — the witness",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HA",
+  "face": true,
+  "light": {
+   "source": "carriage windows",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — cool overcast, open",
+   "kelvin": 6500
+  },
+  "lines": "L003",
+  "action": "the daughter drops into the seat opposite, catching her breath, staring at her mother",
+  "pace": "still, chest rising",
+  "rig": "F1",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-CARRIAGE",
+  "cut": "on 'happen?'",
+  "ingredients": [
+   "C2",
+   "L-CARRIAGE",
+   "VOICE-C2"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKA-SH05",
+  "group": "HKA",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "ots",
+  "scale": "CU",
+  "fg": "through",
+  "why": "over the daughter's shoulder onto HER, calm, looking out of the window — the answer is her face",
+  "mode": 4,
+  "shot": [
+   "SH-OTS",
+   "SH-CU"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HA",
+  "face": true,
+  "light": {
+   "source": "carriage windows",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — cool overcast, open",
+   "kelvin": 6500
+  },
+  "lines": "L004",
+  "action": "HER sits settled by the window, bag on her lap, a small private smile, looking out as the town slides past",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N",
+   "C2"
+  ],
+  "location": "L-CARRIAGE",
+  "cut": "end of VO",
+  "ingredients": [
+   "N",
+   "C2",
+   "L-CARRIAGE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKB-SH01",
+  "group": "HKB",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-MED",
+   "SH-EYE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HB",
+  "face": true,
+  "light": {
+   "source": "the atrium skylight",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — soft top daylight",
+   "kelvin": 5600
+  },
+  "lines": "L005",
+  "action": "the daughter, loaded with shopping bags on both arms, nods at the glass lift where a small queue waits",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-SHOPCENTRE",
+  "cut": "on 'there.'",
+  "ingredients": [
+   "C2",
+   "L-SHOPCENTRE",
+   "VOICE-C2"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKB-SH02",
+  "group": "HKB",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "low",
+  "side": "three-quarter-back",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low behind her as she climbs: the flight ahead, her pace against it",
+  "mode": 4,
+  "shot": [
+   "SH-REAR",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "HB",
+  "face": true,
+  "light": {
+   "source": "the atrium skylight",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — soft top daylight",
+   "kelvin": 5600
+  },
+  "lines": "L006",
+  "action": "HER is already three steps up the wide staircase, a full bag in each hand, climbing at an even pace, glancing back over her shoulder",
+  "pace": "one step per second",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-SHOPCENTRE",
+  "cut": "on 'stairs.'",
+  "ingredients": [
+   "N",
+   "L-SHOPCENTRE",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKB-SH03",
+  "group": "HKB",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "from the top of the stairs looking down on her face as she speaks up",
+  "mode": 4,
+  "shot": [
+   "SH-34",
+   "SH-HIGH"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HB",
+  "face": true,
+  "light": {
+   "source": "the atrium skylight",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — soft top daylight",
+   "kelvin": 5600
+  },
+  "lines": "L006",
+  "action": "HER, mid-climb, says it over her shoulder without breaking stride",
+  "pace": "one step per second",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-SHOPCENTRE",
+  "cut": "on 'stairs.'",
+  "ingredients": [
+   "N",
+   "L-SHOPCENTRE",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKB-SH04",
+  "group": "HKB",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile of the daughter arriving at the top, out of breath — her effort against Mum's ease",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HB",
+  "face": true,
+  "light": {
+   "source": "the atrium skylight",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — soft top daylight",
+   "kelvin": 5600
+  },
+  "lines": "L007",
+  "action": "the daughter reaches the top step, puffing, bags sagging, and looks at her mother",
+  "pace": "breathing hard",
+  "rig": "F2",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-SHOPCENTRE",
+  "cut": "on 'happen?'",
+  "ingredients": [
+   "C2",
+   "L-SHOPCENTRE",
+   "VOICE-C2"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKB-SH05",
+  "group": "HKB",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "ots",
+  "scale": "CU",
+  "fg": "through",
+  "why": "over the daughter onto HER, unbothered at the top",
+  "mode": 4,
+  "shot": [
+   "SH-OTS",
+   "SH-CU"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HB",
+  "face": true,
+  "light": {
+   "source": "the atrium skylight",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — soft top daylight",
+   "kelvin": 5600
+  },
+  "lines": "L008",
+  "action": "HER waits at the top rail, bags down by her feet, breathing easily, eyebrows up",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N",
+   "C2"
+  ],
+  "location": "L-SHOPCENTRE",
+  "cut": "end of VO",
+  "ingredients": [
+   "N",
+   "C2",
+   "L-SHOPCENTRE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKC-SH01",
+  "group": "HKC",
+  "type": "SHOT",
+  "subject": "X2",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-EYE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HC",
+  "face": true,
+  "light": {
+   "source": "the concourse glass roof",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "After — cool station daylight",
+   "kelvin": 6000
+  },
+  "lines": "L009 L010",
+  "action": "the tannoy (off) announces the escalator is out of service; a commuter in his 20s looks up from his phone and groans",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "X2"
+  ],
+  "location": "L-ESCALATOR",
+  "cut": "on 'joking.'",
+  "ingredients": [
+   "L-ESCALATOR",
+   "VOICE-X1",
+   "VOICE-X2"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKC-SH02",
+  "group": "HKC",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "through",
+  "why": "low past the commuter's legs: she walks past him and takes the first step — first to go",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "HC",
+  "face": true,
+  "light": {
+   "source": "the concourse glass roof",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "After — cool station daylight",
+   "kelvin": 6000
+  },
+  "lines": "L011",
+  "action": "HER walks past the groaning commuter and puts her foot on the first step of the fixed stairs, handbag on her shoulder, hands free",
+  "pace": "brisk, one step per second",
+  "rig": "F2",
+  "cast": [
+   "N",
+   "X2"
+  ],
+  "location": "L-ESCALATOR",
+  "cut": "on 'love.'",
+  "ingredients": [
+   "N",
+   "L-ESCALATOR",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKC-SH03",
+  "group": "HKC",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "high",
+  "side": "behind",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "high wide from the top: one small figure climbing ahead of the crowd",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "HC",
+  "face": false,
+  "light": {
+   "source": "the concourse glass roof",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "After — cool station daylight",
+   "kelvin": 6000
+  },
+  "lines": "",
+  "action": "HER climbs the long fixed staircase at an even pace while commuters behind her bunch up at the foot",
+  "pace": "one step per second",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-ESCALATOR",
+  "cut": "halfway up",
+  "ingredients": [
+   "N",
+   "L-ESCALATOR"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKC-SH04",
+  "group": "HKC",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HC",
+  "face": true,
+  "light": {
+   "source": "the concourse glass roof",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "After — cool station daylight",
+   "kelvin": 6000
+  },
+  "lines": "L012",
+  "action": "the daughter at the bottom of the stairs, coffee in hand, stares up after her mother",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-ESCALATOR",
+  "cut": "on 'happen?'",
+  "ingredients": [
+   "C2",
+   "L-ESCALATOR",
+   "VOICE-C2"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKC-SH05",
+  "group": "HKC",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "high",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high at the top of the stairs looking down on her arriving — she turns to look back down",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HC",
+  "face": true,
+  "light": {
+   "source": "the concourse glass roof",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "After — cool station daylight",
+   "kelvin": 6000
+  },
+  "lines": "L013",
+  "action": "HER reaches the top and turns back to look down at her daughter, not out of breath",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-ESCALATOR",
+  "cut": "end of VO",
+  "ingredients": [
+   "N",
+   "L-ESCALATOR"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKE-SH01",
+  "group": "HKE",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "high on her kneeling on the floor — small, low down, the old danger",
+  "mode": 4,
+  "shot": [
+   "SH-HIGH",
+   "SH-34"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HE",
+  "face": true,
+  "light": {
+   "source": "the bay window",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "After — soft daylight",
+   "kelvin": 5600
+  },
+  "lines": "",
+  "action": "HER kneels on the living-room carpet picking up a grandchild's spilled jigsaw pieces into the box",
+  "pace": "slow, piece by piece",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-LIVING",
+  "cut": "as the door opens",
+  "ingredients": [
+   "N",
+   "L-LIVING",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKE-SH02",
+  "group": "HKE",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "through",
+  "why": "through the doorway: the daughter comes in already reaching",
+  "mode": 4,
+  "shot": [
+   "SH-MED",
+   "SH-OCCL"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HE",
+  "face": true,
+  "light": {
+   "source": "the bay window",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "After — soft daylight",
+   "kelvin": 5600
+  },
+  "lines": "L014",
+  "action": "the daughter comes through the doorway and reflexively reaches a hand down toward her mother",
+  "pace": "quick, two steps",
+  "rig": "F2",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-LIVING",
+  "cut": "on 'a…'",
+  "ingredients": [
+   "C2",
+   "L-LIVING",
+   "P-HOUSE",
+   "VOICE-C2"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKE-SH03",
+  "group": "HKE",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "low",
+  "side": "profile",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low profile: she rises from kneeling to standing in one move, no hands on the furniture — the proof",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HE",
+  "face": true,
+  "light": {
+   "source": "the bay window",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "After — soft daylight",
+   "kelvin": 5600
+  },
+  "lines": "",
+  "action": "HER puts one foot flat and stands up from kneeling in one smooth move, the jigsaw box in her hands, before the offered hand arrives",
+  "pace": "one smooth rise over two seconds",
+  "rig": "F2",
+  "cast": [
+   "N",
+   "C2"
+  ],
+  "location": "L-LIVING",
+  "cut": "as she reaches full height",
+  "ingredients": [
+   "N",
+   "C2",
+   "L-LIVING",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKE-SH04",
+  "group": "HKE",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "ots",
+  "scale": "CU",
+  "fg": "through",
+  "why": "over Mum's shoulder onto the daughter's face, hand still out",
+  "mode": 4,
+  "shot": [
+   "SH-OTS",
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HE",
+  "face": true,
+  "light": {
+   "source": "the bay window",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "After — soft daylight",
+   "kelvin": 5600
+  },
+  "lines": "L015",
+  "action": "the daughter, hand still outstretched in the air, stares",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "C2",
+   "N"
+  ],
+  "location": "L-LIVING",
+  "cut": "on 'happen?'",
+  "ingredients": [
+   "C2",
+   "N",
+   "L-LIVING",
+   "VOICE-C2"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "HKE-SH05",
+  "group": "HKE",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "HE",
+  "face": true,
+  "light": {
+   "source": "the bay window",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "After — soft daylight",
+   "kelvin": 5600
+  },
+  "lines": "L016",
+  "action": "HER puts the jigsaw box on the mantel and gives her daughter a small look",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-LIVING",
+  "cut": "end of VO",
+  "ingredients": [
+   "N",
+   "L-LIVING",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC02-SH01",
+  "group": "SC02",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "from the hall looking up at her on the landing — she is stranded up there",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B1",
+  "face": true,
+  "light": {
+   "source": "the hall pendant lamp below and the landing lamp",
+   "key_side": "R",
+   "time": "evening",
+   "arc": "Before — cool dusk, one warm lamp",
+   "kelvin": 2800
+  },
+  "lines": "L017",
+  "action": "HER stands at the top of the stairs holding the newel post, calling down",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on 'later.'",
+  "ingredients": [
+   "N",
+   "L-STAIRS",
+   "P-HOUSE",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC02-SH02",
+  "group": "SC02",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "high",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "down the stairs onto the husband too quickly lifting the bags — what he doesn't say",
+  "mode": 4,
+  "shot": [
+   "SH-HIGH",
+   "SH-MED"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B1",
+  "face": true,
+  "light": {
+   "source": "the hall pendant lamp below and the landing lamp",
+   "key_side": "R",
+   "time": "evening",
+   "arc": "Before — cool dusk, one warm lamp",
+   "kelvin": 2800
+  },
+  "lines": "L018",
+  "action": "the husband in the hall snatches up the two shopping bags by the bottom step, a little too fast",
+  "pace": "quick lift",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on 'up.'",
+  "ingredients": [
+   "C3",
+   "L-STAIRS",
+   "P-HOUSE",
+   "VOICE-C3"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC02-SH03",
+  "group": "SC02",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "high",
+  "side": "behind",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "high behind her from the landing: going down backwards, both hands on the banister — the low point",
+  "mode": 4,
+  "shot": [
+   "SH-REAR",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B2",
+  "face": false,
+  "light": {
+   "source": "the frosted landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Before — cold grey morning",
+   "kelvin": 6500
+  },
+  "lines": "L019",
+  "action": "next morning, HER goes down the stairs backwards, facing the steps, both hands gripping the banister, one foot then the other onto each step",
+  "pace": "slow, one step every three seconds",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on 'at a time.'",
+  "ingredients": [
+   "N",
+   "L-STAIRS",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC02-SH04",
+  "group": "SC02",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile on her face, jaw set, mid-step",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B2",
+  "face": true,
+  "light": {
+   "source": "the frosted landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Before — cold grey morning",
+   "kelvin": 6500
+  },
+  "lines": "L019",
+  "action": "HER, mid-stairs, backwards, lowers her weight onto the next step and breathes out",
+  "pace": "slow",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-STAIRS",
+  "cut": "breath out",
+  "ingredients": [
+   "N",
+   "L-STAIRS",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC02-SH05",
+  "group": "SC02",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B2",
+  "face": true,
+  "light": {
+   "source": "the frosted landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Before — cold grey morning",
+   "kelvin": 6500
+  },
+  "lines": "L020",
+  "action": "the husband at the foot of the stairs with a mug of tea, not quite looking at how she's coming down",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on 'alright?'",
+  "ingredients": [
+   "C3",
+   "L-STAIRS",
+   "P-HOUSE",
+   "VOICE-C3"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC02-SH06",
+  "group": "SC02",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "ots",
+  "scale": "CU",
+  "fg": "through",
+  "why": "over his shoulder onto her covering it",
+  "mode": 4,
+  "shot": [
+   "SH-OTS",
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B2",
+  "face": true,
+  "light": {
+   "source": "the frosted landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Before — cold grey morning",
+   "kelvin": 6500
+  },
+  "lines": "L021",
+  "action": "HER, on the bottom step, takes the tea and gives a small tight smile",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N",
+   "C3"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on 'love.'",
+  "ingredients": [
+   "N",
+   "C3",
+   "L-STAIRS",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC02-SH07",
+  "group": "SC02",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter-back",
+  "scale": "WIDE",
+  "fg": "through",
+  "why": "through the half-open door: her alone on the bed edge, the world outside the window",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-OCCL"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B2",
+  "face": true,
+  "light": {
+   "source": "the bedroom window through net curtains",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "Before — flat grey afternoon",
+   "kelvin": 6500
+  },
+  "lines": "L022",
+  "action": "HER sits on the edge of the bed upstairs, hands in her lap, looking out of the window",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-BEDROOM",
+  "cut": "end of VO",
+  "ingredients": [
+   "N",
+   "L-BEDROOM",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC03-SH01",
+  "group": "SC03",
+  "type": "INSERT",
+  "subject": "N",
+  "height": "low",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "low on the knee: the brace sliding down — the failure at eye level with it",
+  "mode": 4,
+  "shot": [
+   "SH-MACRO",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B3",
+  "face": false,
+  "light": {
+   "source": "the landing lamp",
+   "key_side": "R",
+   "time": "evening",
+   "arc": "Before — cool dusk, one warm lamp",
+   "kelvin": 2800
+  },
+  "lines": "L023",
+  "action": "a bulky hinged knee brace slides slowly down her shin as she stands on the landing",
+  "pace": "slow slide over three seconds",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on 'down my leg.'",
+  "ingredients": [
+   "N",
+   "L-STAIRS",
+   "INFO-BRACE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC03-SH02",
+  "group": "SC03",
+  "type": "INSERT",
+  "subject": "N",
+  "height": "ground",
+  "side": "profile",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "ground level: the brace round her ankle by evening",
+  "mode": 4,
+  "shot": [
+   "SH-GROUND",
+   "SH-MACRO"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B3",
+  "face": false,
+  "light": {
+   "source": "the landing lamp",
+   "key_side": "R",
+   "time": "evening",
+   "arc": "Before — cool dusk, one warm lamp",
+   "kelvin": 2800
+  },
+  "lines": "L023",
+  "action": "the hinged brace sits bunched round her ankle above her slipper",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on 'ankle.'",
+  "ingredients": [
+   "N",
+   "L-STAIRS",
+   "INFO-BRACE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC03-SH03",
+  "group": "SC03",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high on her on the physio couch — small, being handled",
+  "mode": 4,
+  "shot": [
+   "SH-HIGH",
+   "SH-MED"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B3p",
+  "face": true,
+  "light": {
+   "source": "the clinic window blinds",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Before — clinical cool",
+   "kelvin": 5600
+  },
+  "lines": "L023",
+  "action": "HER lies on a physiotherapy couch while a physio's hands bend her right knee",
+  "pace": "slow bend",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-PHYSIO",
+  "cut": "on 'Physiotherapy.'",
+  "ingredients": [
+   "N",
+   "INFO-PHYSIO"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC03-SH04",
+  "group": "SC03",
+  "type": "INSERT",
+  "subject": "N",
+  "height": "overhead",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "overhead on the table: the pills as routine",
+  "mode": 4,
+  "shot": [
+   "SH-OVER",
+   "SH-MACRO"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B3q",
+  "face": false,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Before — cold grey morning",
+   "kelvin": 6500
+  },
+  "lines": "L023",
+  "action": "her hand pushes two painkillers out of a blister strip beside a mug on the pine table",
+  "pace": "one pill, then the next",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'Painkillers.'",
+  "ingredients": [
+   "N",
+   "L-KITCHEN"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC03-SH05",
+  "group": "SC03",
+  "type": "INSERT",
+  "subject": "N",
+  "height": "eye",
+  "side": "profile",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "profile on the knee: the needle side, clinical",
+  "mode": 4,
+  "shot": [
+   "SH-MACRO",
+   "SH-PROFILE"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B3p",
+  "face": false,
+  "light": {
+   "source": "the clinic window blinds",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Before — clinical cool",
+   "kelvin": 5600
+  },
+  "lines": "L023",
+  "action": "a gloved hand swabs the side of her right knee before an injection, the syringe held out of focus",
+  "pace": "one swab",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-PHYSIO",
+  "cut": "on 'injections.'",
+  "ingredients": [
+   "N",
+   "INFO-PHYSIO"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC03-SH06",
+  "group": "SC03",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "high",
+  "side": "three-quarter-back",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "high over her shoulder into the drawer: every failed brace",
+  "mode": 4,
+  "shot": [
+   "SH-HIGH",
+   "SH-REAR"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B3d",
+  "face": false,
+  "light": {
+   "source": "the bedside lamp",
+   "key_side": "R",
+   "time": "evening",
+   "arc": "Before — cool dusk, one warm lamp",
+   "kelvin": 2800
+  },
+  "lines": "L023 L024",
+  "action": "HER drops the hinged brace into the bottom drawer, already crammed with braces, sleeves and supports, and pushes it shut with her foot",
+  "pace": "drop, then one push",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-BEDROOM",
+  "cut": "on the drawer closing",
+  "ingredients": [
+   "N",
+   "L-BEDROOM",
+   "INFO-DRAWER"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC03-SH07",
+  "group": "SC03",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "through the doorway: he watches, soft",
+  "mode": 4,
+  "shot": [
+   "SH-34",
+   "SH-OCCL"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B3d",
+  "face": true,
+  "light": {
+   "source": "the bedside lamp",
+   "key_side": "R",
+   "time": "evening",
+   "arc": "Before — cool dusk, one warm lamp",
+   "kelvin": 2800
+  },
+  "lines": "L025",
+  "action": "the husband in the bedroom doorway, a hand on the frame, watching her",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-BEDROOM",
+  "cut": "on 'soon.'",
+  "ingredients": [
+   "C3",
+   "L-BEDROOM",
+   "VOICE-C3"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC03-SH08",
+  "group": "SC03",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile on her not turning round",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE",
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B3d",
+  "face": true,
+  "light": {
+   "source": "the bedside lamp",
+   "key_side": "R",
+   "time": "evening",
+   "arc": "Before — cool dusk, one warm lamp",
+   "kelvin": 2800
+  },
+  "lines": "L026",
+  "action": "HER, still facing the drawer, answers without turning",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-BEDROOM",
+  "cut": "on 'shuts.'",
+  "ingredients": [
+   "N",
+   "L-BEDROOM",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC03-SH09",
+  "group": "SC03",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-EYE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B3d",
+  "face": true,
+  "light": {
+   "source": "the bedside lamp",
+   "key_side": "R",
+   "time": "evening",
+   "arc": "Before — cool dusk, one warm lamp",
+   "kelvin": 2800
+  },
+  "lines": "L027 L028",
+  "action": "HER sits on the bed edge with the phone to her ear; the sister's voice comes through the phone",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-BEDROOM",
+  "cut": "on 'Easier.'",
+  "ingredients": [
+   "N",
+   "L-BEDROOM",
+   "VOICE-N",
+   "VOICE-C4"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC03-SH10",
+  "group": "SC03",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "high wide: phone down in her lap, the room around her — a life on one level",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B3d",
+  "face": true,
+  "light": {
+   "source": "the bedside lamp",
+   "key_side": "R",
+   "time": "evening",
+   "arc": "Before — cool dusk, one warm lamp",
+   "kelvin": 2800
+  },
+  "lines": "L029",
+  "action": "HER lowers the phone to her lap and sits still",
+  "pace": "slow pull-back over the line",
+  "rig": "F6",
+  "cast": [
+   "N"
+  ],
+  "location": "L-BEDROOM",
+  "cut": "end of VO",
+  "ingredients": [
+   "N",
+   "L-BEDROOM",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC04-SH01",
+  "group": "SC04",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "front",
+  "scale": "WIDE",
+  "fg": "through",
+  "why": "past the tables onto the floor: Barbara in the middle of it",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-FGFOC"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B4",
+  "face": true,
+  "light": {
+   "source": "fairy lights and candle jars",
+   "key_side": "L",
+   "time": "evening",
+   "arc": "Turn — warm party light",
+   "kelvin": 2700
+  },
+  "lines": "L030",
+  "action": "the reception in full swing: Barbara dances in the middle of the parquet floor among the guests, the bride in white near her",
+  "pace": "dancing on the beat",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-WEDDING",
+  "cut": "on 'all night.'",
+  "ingredients": [
+   "C1",
+   "L-WEDDING",
+   "INFO-WEDDING"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC04-SH02",
+  "group": "SC04",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "low on Barbara dancing — strength",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-MED"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B4",
+  "face": true,
+  "light": {
+   "source": "fairy lights and candle jars",
+   "key_side": "L",
+   "time": "evening",
+   "arc": "Turn — warm party light",
+   "kelvin": 2700
+  },
+  "lines": "L030",
+  "action": "Barbara bends her knees and turns on the beat, laughing",
+  "pace": "on the beat",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-WEDDING",
+  "cut": "on '74.'",
+  "ingredients": [
+   "C1",
+   "L-WEDDING"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC04-SH03",
+  "group": "SC04",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B4",
+  "face": true,
+  "light": {
+   "source": "fairy lights and candle jars",
+   "key_side": "L",
+   "time": "evening",
+   "arc": "Turn — warm party light",
+   "kelvin": 2700
+  },
+  "lines": "L031",
+  "action": "HER seated at a round table, not taking her eyes off Barbara, says it low to her husband",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N",
+   "C3"
+  ],
+  "location": "L-WEDDING",
+  "cut": "on 'Bone on bone.'",
+  "ingredients": [
+   "N",
+   "L-WEDDING",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC04-SH04",
+  "group": "SC04",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over her shoulder onto him, half-listening",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B4",
+  "face": true,
+  "light": {
+   "source": "fairy lights and candle jars",
+   "key_side": "L",
+   "time": "evening",
+   "arc": "Turn — warm party light",
+   "kelvin": 2700
+  },
+  "lines": "L032",
+  "action": "the husband beside her leans in with his pint",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3",
+   "N"
+  ],
+  "location": "L-WEDDING",
+  "cut": "on 'Whose?'",
+  "ingredients": [
+   "C3",
+   "N",
+   "L-WEDDING",
+   "VOICE-C3"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC04-SH05",
+  "group": "SC04",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile: she answers without looking at him",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE",
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B4",
+  "face": true,
+  "light": {
+   "source": "fairy lights and candle jars",
+   "key_side": "L",
+   "time": "evening",
+   "arc": "Turn — warm party light",
+   "kelvin": 2700
+  },
+  "lines": "L033 L034",
+  "action": "HER keeps watching the dance floor, the light of it on her face",
+  "pace": "slow push-in",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-WEDDING",
+  "cut": "end of VO",
+  "ingredients": [
+   "N",
+   "L-WEDDING",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC05-SH01",
+  "group": "SC05",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "WIDE",
+  "fg": "through",
+  "why": "past the doorframe: the two of them at the table, the routine laid out",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-OCCL"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L035",
+  "action": "morning: HER at the pine table with pills, a tube of gel, the brace and an ice pack on her right knee; Barbara sits opposite with a mug, watching",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "N",
+   "C1"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'routine.'",
+  "ingredients": [
+   "N",
+   "C1",
+   "L-KITCHEN",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC05-SH02",
+  "group": "SC05",
+  "type": "INSERT",
+  "subject": "N",
+  "height": "overhead",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "overhead: the routine, piece by piece",
+  "mode": 4,
+  "shot": [
+   "SH-OVER",
+   "SH-MACRO"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": false,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L035",
+  "action": "on the table: two pills, the gel tube, the brace, the ice pack on the right knee",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'routine.'",
+  "ingredients": [
+   "N",
+   "L-KITCHEN"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC05-SH03",
+  "group": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over HER shoulder onto Barbara deciding",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L036",
+  "action": "Barbara puts her mug down",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "C1",
+   "N"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'something?'",
+  "ingredients": [
+   "C1",
+   "N",
+   "L-KITCHEN",
+   "VOICE-C1"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC05-SH04",
+  "group": "SC05",
+  "type": "INSERT",
+  "subject": "C1",
+  "height": "low",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "low on the knee: the reveal",
+  "mode": 4,
+  "shot": [
+   "SH-MACRO",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": false,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L037",
+  "action": "Barbara, seated, turns her bare right knee toward the camera: a small black strap sits just below her kneecap on the tendon",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'kneecap.'",
+  "ingredients": [
+   "C1",
+   "L-KITCHEN",
+   "PROD-FRONT",
+   "INFO-PLACEMENT"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC05-SH05",
+  "group": "SC05",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34",
+   "SH-CU"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L037",
+  "action": "HER looks at it, unimpressed",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on the look",
+  "ingredients": [
+   "N",
+   "L-KITCHEN"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC05-SH06",
+  "group": "SC05",
+  "type": "INSERT",
+  "subject": "C1",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "high on the table: the boxed spare arrives",
+  "mode": 4,
+  "shot": [
+   "SH-HIGH",
+   "SH-MACRO"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": false,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L038",
+  "action": "Barbara's hand lays a small open box with a second strap inside on the table next to the pills",
+  "pace": "one move",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'spare.'",
+  "ingredients": [
+   "C1",
+   "L-KITCHEN",
+   "PROD-BOX"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC05-SH07",
+  "group": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile on Barbara, easy",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L038",
+  "action": "Barbara sits back, matter-of-fact",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'spare.'",
+  "ingredients": [
+   "C1",
+   "L-KITCHEN",
+   "VOICE-C1"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC06-SH01",
+  "group": "SC06",
+  "type": "INSERT",
+  "subject": "N",
+  "height": "overhead",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "overhead: the strap in her palm, small",
+  "mode": 4,
+  "shot": [
+   "SH-OVER",
+   "SH-MACRO"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": false,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L039",
+  "action": "the strap rests across HER open palm; she turns it once",
+  "pace": "one turn",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'Too small.'",
+  "ingredients": [
+   "N",
+   "L-KITCHEN",
+   "PROD-FRONT"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC06-SH02",
+  "group": "SC06",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L040",
+  "action": "HER holds the strap up, sceptical",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'mine.'",
+  "ingredients": [
+   "N",
+   "L-KITCHEN",
+   "PROD-FRONT",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC06-SH03",
+  "group": "SC06",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low on Barbara: certainty",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L041",
+  "action": "Barbara leans in across the table",
+  "pace": "slow push-in",
+  "rig": "F1",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'stairs.'",
+  "ingredients": [
+   "C1",
+   "L-KITCHEN",
+   "VOICE-C1"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC07-SH01",
+  "group": "SC07",
+  "type": "INSERT",
+  "subject": "N",
+  "height": "low",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "low on the knee: the strap slides up into place",
+  "mode": 4,
+  "shot": [
+   "SH-MACRO",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": false,
+  "light": {
+   "source": "the frosted landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — the light opens",
+   "kelvin": 5600
+  },
+  "lines": "",
+  "action": "on the landing, HER slides the strap up her bare right shin in one move until it seats just below the kneecap",
+  "pace": "one move",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-STAIRS",
+  "cut": "as it seats",
+  "ingredients": [
+   "N",
+   "L-STAIRS",
+   "PROD-FRONT",
+   "INFO-PLACEMENT"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC07-SH02",
+  "group": "SC07",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "high",
+  "side": "behind",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "the mirror of SC02-SH03: same high angle behind her, now facing forwards",
+  "mode": 4,
+  "shot": [
+   "SH-REAR",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": false,
+  "light": {
+   "source": "the frosted landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — the light opens",
+   "kelvin": 5600
+  },
+  "lines": "L042",
+  "action": "HER stands at the top of the stairs facing forwards, hand hovering over the banister, and takes the first step down without touching it",
+  "pace": "one step, then a beat",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on 'banister.'",
+  "ingredients": [
+   "N",
+   "L-STAIRS",
+   "P-HOUSE"
+  ],
+  "mirror_of": "SC02-SH03"
+ },
+ {
+  "beat": "SC07-SH03",
+  "group": "SC07",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "low",
+  "side": "front",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "from below: she comes toward us, step by step, hands free",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-MED"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the frosted landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — the light opens",
+   "kelvin": 5600
+  },
+  "lines": "L043",
+  "action": "HER comes down the second and third steps facing forwards, hands at her sides, eyes on the steps",
+  "pace": "one step per second",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on 'third.'",
+  "ingredients": [
+   "N",
+   "L-STAIRS",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC07-SH04",
+  "group": "SC07",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the frosted landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — the light opens",
+   "kelvin": 5600
+  },
+  "lines": "",
+  "action": "Barbara watches from the hall below, arms folded, a small smile",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-STAIRS",
+  "cut": "reaction",
+  "ingredients": [
+   "C1",
+   "L-STAIRS",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC07-SH05",
+  "group": "SC07",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "ground",
+  "side": "profile",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "ground level at the foot: both feet, forwards, down the last steps",
+  "mode": 4,
+  "shot": [
+   "SH-GROUND",
+   "SH-PROFILE"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "B5",
+  "face": false,
+  "light": {
+   "source": "the frosted landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — the light opens",
+   "kelvin": 5600
+  },
+  "lines": "L044",
+  "action": "HER walks down the last steps forwards and steps onto the hall carpet",
+  "pace": "one step per second",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on 'Forwards.'",
+  "ingredients": [
+   "N",
+   "L-STAIRS",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC07-SH06",
+  "group": "SC07",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-EYE"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the frosted landing window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — the light opens",
+   "kelvin": 5600
+  },
+  "lines": "L045",
+  "action": "HER stands at the foot of the stairs and looks back up the flight, breath caught",
+  "pace": "slow push-in",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on 'switch.'",
+  "ingredients": [
+   "N",
+   "L-STAIRS",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC08-SH01",
+  "group": "SC08",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34",
+   "SH-MED"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L046",
+  "action": "back at the table, Barbara talks while HER sits down across from her",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "N"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'hurts.'",
+  "ingredients": [
+   "C1",
+   "N",
+   "L-KITCHEN",
+   "VOICE-C1"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC08-SH02",
+  "group": "SC08",
+  "type": "INSERT",
+  "subject": "C1",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "low on her own knee: the spot",
+  "mode": 4,
+  "shot": [
+   "SH-MACRO",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": false,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L047",
+  "action": "Barbara presses two fingers on her own bare knee just below the kneecap",
+  "pace": "one press",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'lands.'",
+  "ingredients": [
+   "C1",
+   "L-KITCHEN",
+   "INFO-PLACEMENT"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC08-SH03",
+  "group": "SC08",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over HER shoulder: the explanation lands on her",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L047",
+  "action": "Barbara, leaning in, counts it off",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "N"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'that spot.'",
+  "ingredients": [
+   "C1",
+   "N",
+   "L-KITCHEN",
+   "VOICE-C1"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC08-SH04",
+  "group": "SC08",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "profile",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "profile on HER taking it in",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE",
+   "SH-CU"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L048",
+  "action": "HER listens, looking down at her own knee",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'Nothing more.'",
+  "ingredients": [
+   "N",
+   "L-KITCHEN"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC08-SH05",
+  "group": "SC08",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low on Barbara's last line — she is sure",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "B5",
+  "face": true,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — soft morning daylight",
+   "kelvin": 5600
+  },
+  "lines": "L049",
+  "action": "Barbara taps the table once beside the box",
+  "pace": "slow push-in",
+  "rig": "F1",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'off.'",
+  "ingredients": [
+   "C1",
+   "L-KITCHEN",
+   "VOICE-C1"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC09-SH01",
+  "group": "SC09",
+  "type": "SHOT",
+  "subject": "X4",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34",
+   "SH-MED"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A1",
+  "face": true,
+  "light": {
+   "source": "clinic window",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — clear daylight",
+   "kelvin": 5600
+  },
+  "lines": "L050",
+  "action": "a sports-medicine doctor fits the strap below a patient's kneecap in a bright clinic",
+  "pace": "one move",
+  "rig": "F2",
+  "cast": [
+   "X4"
+  ],
+  "location": "L-CLINIC",
+  "cut": "on 'Sports doctors.'",
+  "ingredients": [
+   "L-CLINIC",
+   "PROD-FRONT",
+   "INFO-PLACEMENT"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC09-SH02",
+  "group": "SC09",
+  "type": "SHOT",
+  "subject": "X5",
+  "height": "low",
+  "side": "profile",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low profile on a full swing — 76 and strong",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-PROFILE"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A1g",
+  "face": true,
+  "light": {
+   "source": "the sun",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "After — clear daylight",
+   "kelvin": 5600
+  },
+  "lines": "L051",
+  "action": "Barbara's husband, 76, takes a full golf swing on a green fairway, the strap on his knee under his shorts",
+  "pace": "one swing",
+  "rig": "F2",
+  "cast": [
+   "X5"
+  ],
+  "location": "L-GOLF",
+  "cut": "on 'twice a week.'",
+  "ingredients": [
+   "L-GOLF",
+   "PROD-FRONT"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC09-SH03",
+  "group": "SC09",
+  "type": "SHOT",
+  "subject": "X6",
+  "height": "eye",
+  "side": "front",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-EYE"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "A1t",
+  "face": true,
+  "light": {
+   "source": "the sun",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "After — clear daylight",
+   "kelvin": 5600
+  },
+  "lines": "L051",
+  "action": "Barbara's niece, 22, runs across a tennis court for a forehand, the strap on her knee",
+  "pace": "one shot",
+  "rig": "F2",
+  "cast": [
+   "X6"
+  ],
+  "location": "L-TENNIS",
+  "cut": "on '22.'",
+  "ingredients": [
+   "L-TENNIS",
+   "PROD-FRONT"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC10-SH01",
+  "group": "SC10",
+  "type": "INSERT",
+  "subject": "N",
+  "height": "low",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "low on the knee: the strap going on, then hidden",
+  "mode": 4,
+  "shot": [
+   "SH-MACRO",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A2",
+  "face": false,
+  "light": {
+   "source": "the bedroom window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "After — warm morning sun",
+   "kelvin": 5000
+  },
+  "lines": "L052",
+  "action": "six weeks later: on the bed edge, HER slides the strap up to just below her right kneecap, then pulls her trouser leg down over it",
+  "pace": "two moves",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-BEDROOM",
+  "cut": "on 'there.'",
+  "ingredients": [
+   "N",
+   "L-BEDROOM",
+   "PROD-FRONT",
+   "INFO-PLACEMENT"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC10-SH02",
+  "group": "SC10",
+  "type": "INSERT",
+  "subject": "N",
+  "height": "overhead",
+  "side": "front",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "overhead: the same table, empty now — the mirror of the pills",
+  "mode": 4,
+  "shot": [
+   "SH-OVER",
+   "SH-MACRO"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A2",
+  "face": false,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "After — warm morning sun",
+   "kelvin": 5000
+  },
+  "lines": "L052",
+  "action": "the pine table with just a mug of tea on it — no pills, no gel",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [],
+  "location": "L-KITCHEN",
+  "cut": "on 'lunchtime.'",
+  "ingredients": [
+   "L-KITCHEN"
+  ],
+  "mirror_of": "SC03-SH04"
+ },
+ {
+  "beat": "SC10-SH03",
+  "group": "SC10",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "profile",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "lateral track beside her walk — pace made visible",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "A2",
+  "face": true,
+  "light": {
+   "source": "the late-morning sun",
+   "key_side": "R",
+   "time": "midday",
+   "arc": "After — warm open daylight",
+   "kelvin": 5600
+  },
+  "lines": "L053",
+  "action": "HER walks briskly along the high street past shopfronts, overtaking three younger women",
+  "pace": "brisk, two steps per second",
+  "rig": "F9",
+  "cast": [
+   "N"
+  ],
+  "location": "L-HIGHST",
+  "cut": "on 'half my age.'",
+  "ingredients": [
+   "N",
+   "INFO-HIGHST"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC10-SH04",
+  "group": "SC10",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "low: she stands square, rooted — strength",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-34"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A2",
+  "face": true,
+  "light": {
+   "source": "the shop's glass front",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — warm open daylight",
+   "kelvin": 4500
+  },
+  "lines": "L054",
+  "action": "HER stands square in the checkout queue, a full basket in her hand, weight even on both feet, completely still",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-SHOP",
+  "cut": "on 'weight.'",
+  "ingredients": [
+   "N",
+   "L-SHOP"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC10-SH05",
+  "group": "SC10",
+  "type": "SHOT",
+  "subject": "X3",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over HER shoulder onto the cashier",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A2",
+  "face": true,
+  "light": {
+   "source": "the shop's glass front",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — warm open daylight",
+   "kelvin": 4500
+  },
+  "lines": "L055",
+  "action": "the young cashier reaches across for the two full bags",
+  "pace": "one reach",
+  "rig": "F2",
+  "cast": [
+   "X3",
+   "N"
+  ],
+  "location": "L-SHOP",
+  "cut": "on 'love?'",
+  "ingredients": [
+   "N",
+   "L-SHOP",
+   "VOICE-X3"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC10-SH06",
+  "group": "SC10",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34",
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A2",
+  "face": true,
+  "light": {
+   "source": "the shop's glass front",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — warm open daylight",
+   "kelvin": 4500
+  },
+  "lines": "L056",
+  "action": "HER lifts both bags herself with a small smile",
+  "pace": "one lift",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-SHOP",
+  "cut": "on 'actually.'",
+  "ingredients": [
+   "N",
+   "L-SHOP",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC10-SH07",
+  "group": "SC10",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "behind",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "behind her, walking away up her own street with the bags",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-REAR"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "A2",
+  "face": false,
+  "light": {
+   "source": "the afternoon sun",
+   "key_side": "back",
+   "time": "afternoon",
+   "arc": "After — warm open daylight",
+   "kelvin": 5000,
+   "why": "the sun ahead of her down the street: she walks into it"
+  },
+  "lines": "L057",
+  "action": "HER walks up her street toward her front door, a full bag in each hand",
+  "pace": "brisk",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-HIGHST",
+  "cut": "on 'helped me.'",
+  "ingredients": [
+   "N",
+   "P-HOUSE-EXT"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC11-SH01",
+  "group": "SC11",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "through",
+  "why": "through the doorway: him in his chair, as always",
+  "mode": 4,
+  "shot": [
+   "SH-MED",
+   "SH-OCCL"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A2",
+  "face": true,
+  "light": {
+   "source": "the bay window",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "After — warm afternoon",
+   "kelvin": 5000
+  },
+  "lines": "L058",
+  "action": "the husband in his leather armchair by the fire looks up from his newspaper",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-LIVING",
+  "cut": "on 'time.'",
+  "ingredients": [
+   "C3",
+   "L-LIVING",
+   "P-HOUSE",
+   "VOICE-C3"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC11-SH02",
+  "group": "SC11",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "low",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "low on her in the doorway, bags down — she has won",
+  "mode": 4,
+  "shot": [
+   "SH-LOW"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A2",
+  "face": true,
+  "light": {
+   "source": "the bay window",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "After — warm afternoon",
+   "kelvin": 5000
+  },
+  "lines": "L059",
+  "action": "HER stands in the living-room doorway, bags at her feet, cheeks flushed from the walk",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-LIVING",
+  "cut": "on 'I know.'",
+  "ingredients": [
+   "N",
+   "L-LIVING",
+   "P-HOUSE",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC12-SH01",
+  "group": "SC12",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "WIDE",
+  "fg": "through",
+  "why": "past the friends at the table: she crosses the room — nobody waits for her",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-FGFOC"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "A3",
+  "face": true,
+  "light": {
+   "source": "the café front window",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — honeyed daylight",
+   "kelvin": 4800
+  },
+  "lines": "L060 L061",
+  "action": "HER walks across the café floor straight to the window table where her two friends sit, easy and quick",
+  "pace": "brisk",
+  "rig": "F2",
+  "cast": [
+   "N",
+   "C5",
+   "C6"
+  ],
+  "location": "L-CAFE",
+  "cut": "on 'anymore.'",
+  "ingredients": [
+   "N",
+   "C5",
+   "C6",
+   "L-CAFE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC12-SH02",
+  "group": "SC12",
+  "type": "SHOT",
+  "subject": "C5",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over HER shoulder onto Friend 1",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A3",
+  "face": true,
+  "light": {
+   "source": "the café front window",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — honeyed daylight",
+   "kelvin": 4800
+  },
+  "lines": "L062",
+  "action": "Friend 1 looks her up and down as she sits",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C5",
+   "N"
+  ],
+  "location": "L-CAFE",
+  "cut": "on 'haircut.'",
+  "ingredients": [
+   "C5",
+   "N",
+   "L-CAFE",
+   "VOICE-C5"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC12-SH03",
+  "group": "SC12",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34",
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A3",
+  "face": true,
+  "light": {
+   "source": "the café front window",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — honeyed daylight",
+   "kelvin": 4800
+  },
+  "lines": "L063",
+  "action": "HER, settled in her chair, meets her eye",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-CAFE",
+  "cut": "on 'like that.'",
+  "ingredients": [
+   "N",
+   "L-CAFE",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC12-SH04",
+  "group": "SC12",
+  "type": "SHOT",
+  "subject": "C6",
+  "height": "low",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "low profile: Friend 2 leans in, curious",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE",
+   "SH-LOW"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A3",
+  "face": true,
+  "light": {
+   "source": "the café front window",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — honeyed daylight",
+   "kelvin": 4800
+  },
+  "lines": "L064",
+  "action": "Friend 2 leans forward over her coffee",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C6"
+  ],
+  "location": "L-CAFE",
+  "cut": "on 'it?'",
+  "ingredients": [
+   "C6",
+   "L-CAFE",
+   "VOICE-C6"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC12-SH05",
+  "group": "SC12",
+  "type": "INSERT",
+  "subject": "N",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "under the table: the reveal, an inch",
+  "mode": 4,
+  "shot": [
+   "SH-MACRO",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A3",
+  "face": false,
+  "light": {
+   "source": "the café front window",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — honeyed daylight",
+   "kelvin": 4800
+  },
+  "lines": "L065",
+  "action": "under the table HER lifts her trouser leg an inch and the strap shows just below her right kneecap",
+  "pace": "one lift",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-CAFE",
+  "cut": "on 'strap.'",
+  "ingredients": [
+   "N",
+   "L-CAFE",
+   "PROD-FRONT",
+   "INFO-PLACEMENT"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC12-SH06",
+  "group": "SC12",
+  "type": "SHOT",
+  "subject": "C5",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-EYE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A3",
+  "face": true,
+  "light": {
+   "source": "the café front window",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — honeyed daylight",
+   "kelvin": 4800
+  },
+  "lines": "L066",
+  "action": "Friend 1 peers down, unconvinced",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "C5"
+  ],
+  "location": "L-CAFE",
+  "cut": "on 'thing?'",
+  "ingredients": [
+   "C5",
+   "L-CAFE",
+   "VOICE-C5"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC12-SH07",
+  "group": "SC12",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "slightly high on her sitting back — at ease, nothing to prove",
+  "mode": 4,
+  "shot": [
+   "SH-34",
+   "SH-HIGH"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A3",
+  "face": true,
+  "light": {
+   "source": "the café front window",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — honeyed daylight",
+   "kelvin": 4800
+  },
+  "lines": "L067",
+  "action": "HER sits back and picks up her cup",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-CAFE",
+  "cut": "on 'said.'",
+  "ingredients": [
+   "N",
+   "L-CAFE",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC12-SH08",
+  "group": "SC12",
+  "type": "INSERT",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "the name, on the table between the cups",
+  "mode": 4,
+  "shot": [
+   "SH-MACRO",
+   "SH-34"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A3",
+  "face": false,
+  "light": {
+   "source": "the café front window",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — honeyed daylight",
+   "kelvin": 4800
+  },
+  "lines": "L068",
+  "action": "the strap lies on the café table between the cups, its wordmark reading",
+  "pace": "slow push-in",
+  "rig": "F2",
+  "cast": [],
+  "location": "L-CAFE",
+  "cut": "on 'real thing.'",
+  "ingredients": [
+   "L-CAFE",
+   "PROD-FRONT"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC12-SH09",
+  "group": "SC12",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MEDIUM",
+  "fg": "through",
+  "why": "over Friend 2's shoulder onto the table: the three of them together",
+  "mode": 4,
+  "shot": [
+   "SH-OTS",
+   "SH-MED"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A3",
+  "face": true,
+  "light": {
+   "source": "the café front window",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — honeyed daylight",
+   "kelvin": 4800
+  },
+  "lines": "L068",
+  "action": "the three women laughing together at the window table",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "N",
+   "C5",
+   "C6"
+  ],
+  "location": "L-CAFE",
+  "cut": "on 'sites.'",
+  "ingredients": [
+   "N",
+   "C5",
+   "C6",
+   "L-CAFE"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC13-SH01",
+  "group": "SC13",
+  "type": "INSERT",
+  "subject": "N",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "ECU",
+  "fg": "clean",
+  "why": "high on the table: two straps, the offer",
+  "mode": 4,
+  "shot": [
+   "SH-MACRO",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A4",
+  "face": false,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "After — warm afternoon",
+   "kelvin": 5000
+  },
+  "lines": "L069",
+  "action": "HER hands lift the lid of a small box on the kitchen table: two straps side by side inside",
+  "pace": "one lift",
+  "rig": "F2",
+  "cast": [
+   "N"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'work.'",
+  "ingredients": [
+   "N",
+   "L-KITCHEN",
+   "PROD-BOX"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC13-SH02",
+  "group": "SC13",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34",
+   "SH-CU"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A4",
+  "face": true,
+  "light": {
+   "source": "the kitchen window",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "After — warm afternoon",
+   "kelvin": 5000
+  },
+  "lines": "L070 L071",
+  "action": "HER looks at the box, quiet, then out of the window",
+  "pace": "slow push-in",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on the doorbell",
+  "ingredients": [
+   "N",
+   "L-KITCHEN"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC13-SH03",
+  "group": "SC13",
+  "type": "SHOT",
+  "subject": "C4",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MEDIUM",
+  "fg": "through",
+  "why": "over HER shoulder: the door opens on the sister",
+  "mode": 4,
+  "shot": [
+   "SH-OTS",
+   "SH-MED"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A4",
+  "face": true,
+  "light": {
+   "source": "the front door glass",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "After — warm afternoon",
+   "kelvin": 5000
+  },
+  "lines": "L072",
+  "action": "HER opens the front door; her sister on the step, eyes going past her to the staircase",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C4",
+   "N"
+  ],
+  "location": "P-HOUSE",
+  "cut": "on 'up?'",
+  "ingredients": [
+   "C4",
+   "N",
+   "P-HOUSE",
+   "VOICE-C4"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC13-SH04",
+  "group": "SC13",
+  "type": "SHOT",
+  "subject": "N",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "low on her in the doorway: the host of her own house again",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A4",
+  "face": true,
+  "light": {
+   "source": "the front door glass",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — warm afternoon",
+   "kelvin": 5000
+  },
+  "lines": "L073",
+  "action": "HER, holding the door, nods",
+  "pace": "still",
+  "rig": "F1",
+  "cast": [
+   "N"
+  ],
+  "location": "P-HOUSE",
+  "cut": "on 'up.'",
+  "ingredients": [
+   "N",
+   "P-HOUSE",
+   "VOICE-N"
+  ],
+  "mirror_of": null
+ },
+ {
+  "beat": "SC13-SH05",
+  "group": "SC13",
+  "type": "SHOT",
+  "subject": "C4",
+  "height": "high",
+  "side": "behind",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "high from the landing: the sister's first step, hand on the rail — the loop paid",
+  "mode": 4,
+  "shot": [
+   "SH-HIGH",
+   "SH-REAR"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "A4",
+  "face": false,
+  "light": {
+   "source": "the frosted landing window",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "After — warm afternoon",
+   "kelvin": 5000
+  },
+  "lines": "L074",
+  "action": "the sister puts her hand on the banister and takes the first step up, HER one step behind her",
+  "pace": "one step, then the next",
+  "rig": "F2",
+  "cast": [
+   "C4",
+   "N"
+  ],
+  "location": "L-STAIRS",
+  "cut": "end",
+  "ingredients": [
+   "C4",
+   "N",
+   "L-STAIRS",
+   "P-HOUSE"
+  ],
+  "mirror_of": null
+ }
+]

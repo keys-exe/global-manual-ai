@@ -1,13 +1,13 @@
 {
- "model": "nano_banana_2",
+ "model": "nano_banana_pro",
  "refs": [
   [
-   "R1-MAUREEN sheet",
-   "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"
+   "B16c v1 \u2014 the shot to edit (Image 1)",
+   "2b9f648e-cf29-49e9-8c84-49836ab0329d"
   ],
   [
-   "P4-KITCHEN plate",
-   "0bedfad5-bf20-4ebd-a862-fed90b55601a"
+   "R2-DESMOND sheet",
+   "9f0903d2-b148-4273-93b6-e4227a87d9f6"
   ]
  ]
 }

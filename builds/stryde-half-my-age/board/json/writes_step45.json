@@ -1,0 +1,92 @@
+[
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__P-HOUSE",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/gen_P-HOUSE.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__L-STAIRS",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/gen_L-STAIRS.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__L-KITCHEN",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/gen_L-KITCHEN.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__L-BEDROOM",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/gen_L-BEDROOM.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__L-LIVING",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/gen_L-LIVING.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__L-STATION",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/gen_L-STATION.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__L-CARRIAGE",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/gen_L-CARRIAGE.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__L-ESCALATOR",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/gen_L-ESCALATOR.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__L-SHOPCENTRE",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/gen_L-SHOPCENTRE.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__L-WEDDING",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/gen_L-WEDDING.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__L-SHOP",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/gen_L-SHOP.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__L-CAFE",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/gen_L-CAFE.json"
+ },
+ {
+  "op": "set",
+  "collection": "docs",
+  "doc_id": "locations",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/doc_locations.json"
+ },
+ {
+  "op": "set",
+  "collection": "docs",
+  "doc_id": "actmap",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/doc_actmap.json"
+ },
+ {
+  "op": "set",
+  "collection": "docs",
+  "doc_id": "wardrobe",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-half-my-age/board/json/doc_wardrobe.json"
+ }
+]

@@ -1,0 +1,29 @@
+{
+  "limit": 10000,
+  "tags_used": 2,
+  "unknown_tags": [],
+  "banned_category_tags": [],
+  "ladder": [
+    {
+      "rung": "1 full tagging",
+      "chars": 109
+    },
+    {
+      "rung": "2a strip rhythm + reactions",
+      "chars": 96
+    },
+    {
+      "rung": "2b strip dialogue moves too",
+      "chars": 96
+    },
+    {
+      "rung": "3 no tags",
+      "chars": 87
+    }
+  ],
+  "rung_used": "1 full tagging",
+  "parts": 1,
+  "chars": 109,
+  "out": "L022.tagged.fitted.txt",
+  "verbatim": "PASS"
+}

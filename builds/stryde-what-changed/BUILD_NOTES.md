@@ -303,3 +303,37 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 ### 2026-09-30 — "CONFIRM AND GO / FIX": B15-BR, B16b, B17a, B17b videos; B17c v3
 - **Videos** (4 s each): B15-BR (her other hand slides down to mark the spot; the hand holding the strap stays still), B16b (the surgeon looks up and nods; strap held still), B17a (hands press the strap, let go; it stays), B17b (she steps off the bottom stair; the strap stays). The "holding hand stays still" rule held — no strap bending in any of the four.
 - **B17c v3** (Fix "FIX THIS, GIVE ME DIFFERENT BROLL"): Maureen at her kitchen table in long navy trousers, legs crossed, tea in hand — nothing shows. Act map row rewritten (R1, L-KITCHEN, EYE THR MEDIUM). Flaw: her face is in frame (asked chin down); the kitchen reads a little different from the plate. v2 moved to Old 2.
+
+### 2026-09-30 — "FIX THOSE": B17b v3, B17c v4
+- **B17b v3** (Fix "USING OR WALKING"): edit of B15 v1 — Maureen walking towards the lens on the pavement, the strap in use and in place. Image v2 + video v1 moved to Old 2; the video waits for the new image's Confirm.
+- **B17c v4** (Fix "WALKING WEARING PANTS"): edit of B16c v1 — Desmond's same stride on the pavement in long navy trousers covering the knee; nothing shows. Flaw carried from B16c: a Nike logo on the trainer. v3 moved to Old 2.
+- Act map rows B17b (L-STREET, LOW FRO) and B17c (L-STREET, GROUND FRO) rewritten; angles pass.
+
+### 2026-09-30 — "FIX AND CONFIRM", then "CONFIRM": B16c ×3; B17b, B17c videos
+- **B16c ×3** (Fix "GIVE ME 3 BROLLS FOR THIS LINE, WALKING WEARING STRYDE"): three one-off people out walking with the strap on, each an edit of worn_front.jpg — B16c v2 a British Indian woman in her sixties on a park path; new B16c2 a white British man about seventy on a seaside promenade (three-quarter); new B16c3 a Black British woman in her late fifties on a high street with a shopping bag. Act map rows added (91 rows, 74 B-roll); angles pass. B16c v1 image + video moved to Old 2.
+- User confirmed all three images → walking videos (4 s each; B16c split in 2 parts on the board). The strap stays in place in all three.
+- **B17b video v2** (Maureen walking on the pavement, strap stays) and **B17c video v1** (Desmond walking in long trousers, nothing shows) — both clean.
+
+### 2026-09-30 — B18-BR to B19-BR2 images (v1, To check)
+- Higgsfield timed out on the batch submit, history and balance (three tries over ~5 min), so all seven were made on **Kie AI** with the same models (NB2 / NBP) and prompts, refs uploaded from the repo copies and the edit bases' Higgsfield CDN links (B16a v1, B13 v6, B17b v2, HK1-a). 12 cr (NB2) / 18 cr (NBP) each, 114 cr total. The Higgsfield batch outcome is unknown: if it did submit, those jobs are not on the board.
+- Seen flaws: B18a Desmond already seated (not caught landing), barefoot; B19-BR strap in her hand small, wordmark not readable; B19a shows her face and a striped T-shirt (not the cardigan); B19b strap sits round the upper calf / back of the knee on the rear leg, not on the tendon below the kneecap; B18b she is mid-flight rather than at the top; B18-BR one US stamp among the letters.
+
+### 2026-09-30 — "FIX AND CONFIRM" on B18-BR…B19-BR2
+- Higgsfield is back (it had simply been unreachable; the earlier batch never submitted — no double charge). This round still ran on **Kie AI**: the edit bases B18a v1 / B19a v1 are Kie renders kept only locally.
+- Confirmed → videos (Kling 3.0 via Kie, 4 s, 72 cr each, preflight PASS): **B18b v1** (she comes down several steps, strap stays on the right knee), **B19a v1** (one breath out, hands on thighs, left knee bare).
+- Fixes (v2, To check; v1 moved to Old 2):
+  - B18-BR "DIFFERENT BROLL HERE" → Maureen at the kitchen table typing a message on her phone, smiling, tea (NB2).
+  - B18a "POSITIVE LIKE REVIEW OR RESULT…" → edit of B18a v1: Desmond crouching easily to tie his trainer, strap front-on, smiling (NBP). Flaw: a dark swoosh-like mark on the trainer side.
+  - B19-BR "DIFFERENT BROLL HERE" → try it yourself: the open box of two (package_open.jpg) on her lap on the bottom stair, lifting one strap out (NBP).
+  - B19b "CONTINUE OF B19A" → edit of B19a v1: she steps down off the bottom stair forwards, strap right, left bare, hand on the newel (NBP).
+  - B19-BR2 "FIX, GIVE ME DIFFERENT BROLL HERE" → waist-up at the stair foot, hand on the newel, quiet surprised smile (NBP). She looks off to the side rather than back up the stairs.
+- Wardrobe continuity from B19a v1 on: Maureen in a navy-and-white striped T-shirt (B18b still cardigan). Act map rows for the five updated; angles PASS all three orders; docs/actmap on Plan v31, Current v31, Current 2 v17.
+
+### 2026-09-30 — "FIX AND CONFIRM" round 2 (B18-BR…B19-BR2)
+- Confirmed → videos (Kling 3.0 via Kie, 4 s, 72 cr, preflight PASS): **B18-BR v1** (Maureen types on her phone, smiles — clean); **B18a v1** (Desmond pulls his lace tight — flaws: the strap's shell changes shape a little across frames; the swoosh-like mark on the trainer stays).
+- B18b video: the card reads status `ready` (not `use`, no Fix note) — left untouched, asked the user.
+- Fixes (Kie, NBP/NB2):
+  - B19-BR v3 "FIX THE PRODUCT" → edit of package_open.jpg on her lap, hands on the box sides only. Flaw: she wears a pink cardigan over the striped T-shirt.
+  - B19b v3 "FROM THE FIRST STAIR ON THE TOP STAIR GOING DOWN" → edit of B18b v1, striped T-shirt. **Flaw: the strap came out on her LEFT knee (right bare) and she stands on the landing facing the camera rather than stepping down.**
+  - B19-BR2 split into three (user "CUT IT INTO MORE THAN ONE BROLL"): B19-BR2 v3 "You will know in a minute." (wrist + plain gold watch on the newel post — clean); **B19-BR2b** v1 "Not because the arthritis has gone." (her arthritic hands on her knee — flaws: barefoot, and the right knee behind shows no strap); **B19-BR2c** v1 "It is still there…" (pill organiser + glass of water — on the worktop by the sink, not the sill).
+- Act map: B19b now HIGH/three-quarter from the landing (B18b/B19b both low-front-wide failed WINDOW); B19-BR2 split into B19-BR2/2b/2c in BODY; angles PASS all three; docs/actmap Plan v32, Current v32, Current 2 v18.
