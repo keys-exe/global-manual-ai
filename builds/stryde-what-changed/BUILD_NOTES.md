@@ -243,3 +243,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **B14b v1** (NBP; back_inner.jpg as Image 1, inner_face.jpg, R1, P4 — both imported to Higgsfield this round: `a4613068…`, `7bd450f9…`): the pad to the lens in one hand; pad matches the photo. Act map row: pad shown as the frame itself, video = a small tilt through the light (no pinned end frame).
 - **B14c v1** (NB2 anatomy): strap drawn on the knee, glow below. Flaw seen: the shell sits over the kneecap / joint line rather than on the tendon below it, and the spot still reads red.
 - All five on Current 2 as `review`; docs/actmap updated on Plan, Current and Current 2.
+
+### 2026-09-30 — B10d2 confirm; Fixes on B13, B14a, B14b, B14c
+- **B10d2** image v2 confirmed → video v2 (Kie Kling 3.0, 4 s, task `696c2659…`): he pushes up off his thighs to standing, feet planted, clean. The Nike swoosh from the image is still on the trainers (blur in the edit if kept). On Current 2 as `review`.
+- **B13 v2** (Fix "fix the product"): held up by fingertips behind, band hanging soft. **Flaw: the shell came out as a plain rounded rectangle — no peaks, no notch — so it is still not the strap.** Next try if Fixed again: an image edit built on front.webp itself (the photo composited into her hand) rather than a fresh render.
+- **B14a v2** (Fix "fix the woman"): read as "not Maureen" — v1 legs/hands looked younger and tanned, bare feet. v2: very pale older legs, age-spotted hands, plimsolls. Flaw: framed wider than asked and the strap is small in frame (below a quarter of the width, FP11).
+- **B14b v2** (Fix "too big, fix size"): the strap now sits in one hand at true size, pad to the lens, matches the pad photo. Held upright, not sideways across the fingers as asked.
+- **B14c v2** (Fix "fix the product"): now NBP with front.webp attached, front-on at eye level (act map row EYE FRO, NBP): the real strap seated on the tendon below the kneecap, wordmark readable. Reads well.
+- v1s of B13/B14a/B14b/B14c moved to Old (docs + files), deleted from Current 2.

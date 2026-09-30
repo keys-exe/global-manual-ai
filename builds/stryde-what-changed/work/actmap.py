@@ -214,7 +214,7 @@ BB("B12b", A2, "is for less of your weight to land on it.", "less", "less load, 
    "one slow fade, about two seconds", STILL, "none", "no", "absent", "—", "NB2",
    HIGH, FRO, "clean", "ECU", "from above = the load easing off the one spot", "deep", "deep", L(ANAT, "L"), False, notes="user 2026-09-30 'BROLLS HERE' — second half of the B12 line")
 BB("B13", A3, "That is what this does. It is called Stryde.", "Stryde", "reveal — the product, wordmark",
-   "hands", "L-KITCHEN", "K-D1", "CU the strap rests across her one open upturned palm at chest height above the kitchen table, the front of the shell and the wordmark to the lens", "the hand lifts it a few centimetres into the light",
+   "hands", "L-KITCHEN", "K-D1", "CU one hand holds the strap up at chest height above the kitchen table by its fingertips on the pad behind, the front of the shell and the wordmark square to the lens, the band hanging soft below", "the hand lifts it a few centimetres into the light",
    "one small lift, about a second", STILL, "hands: one movement; the strap does not turn", "no", "held", "VISIBLE", "NBP",
    EYE, FRO, "clean", "CU", "", "product", "medium", L(KITCH, "R"), False, eg="EG04 red box 'Stryde'", notes="WORDMARK-LOCK")
 BB("B14a", A3, "It sits two centimetres below the kneecap, on the tendon, and never crosses the joint.", "below", "SEAT (§9B) — placement",
@@ -226,9 +226,9 @@ BB("B14b", A3, "A silicone pad inside holds pressure on that one band instead of
    "one small tilt, about two seconds", STILL, "hands: one small tilt; the pad stays to the lens", "no", "held — the pad", "—", "NBP",
    EYE, THR, "clean", "ECU", "", "product", "medium", L(KITCH, "L"), False, notes="prompt says 'the pad', never 'silicone'; inner_face.jpg attached")
 BB("B14c", A3, "Your weight gets caught and moved off the worn part before it reaches the joint.", "caught", "mechanism — protection (F7)",
-   "ANAT", "—", "—", "ANAT-A: the strap seated below the kneecap, the pad pressing on the tendon, the glow at the worn spot calming", "the red at the spot fades as the pad takes the load",
-   "one fade, about two seconds", STILL, "none", "no", "worn (anatomical)", "—", "NB2",
-   LOW, THR, "clean", "CU", "low = the fix, resolve", "deep", "deep", L(ANAT, "R"), False, ledger="F7", eg="EG05")
+   "ANAT", "—", "—", "ANAT-A front-on: the real strap (front.webp) seated on the tendon below the kneecap, wordmark to the lens, the glow at the worn spot calming around it", "the red at the spot fades as the pad takes the load",
+   "one fade, about two seconds", STILL, "none", "no", "worn (anatomical)", "VISIBLE", "NBP",
+   EYE, FRO, "clean", "CU", "front-on = the placement reads (FP03)", "deep", "deep", L(ANAT, "R"), False, ledger="F7", eg="EG05", notes="user Fix 2026-09-30 'fix the product' (v1: a translucent invented strap over the joint) — front.webp attached as Image 1")
 TH("B15-TH", A3, "The placement is the whole thing.", framing="punch")
 BB("B15", A3, "A centimetre too high and it is a sleeve again.", "high", "placement",
    "R1", "L-M-STAIRS", "M-D2", "ECU from the side: the strap seated on her right knee, the kneecap's lower edge sitting in the notch", "her knee flexes a little and straightens",
