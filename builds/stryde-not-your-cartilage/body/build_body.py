@@ -216,17 +216,17 @@ add("B-09a", "nano-banana-pro", PR("stryde_refs/worn_front.jpg", FRONT, "stryde_
   light("the sash window on the bedroom's south wall", "her leg", "right", "bright morning daylight", face=False),
   colour("bright morning daylight", 5600, "dove-grey walls, the striped duvet, pine floorboards", "she", "navy-and-white stripes and olive shorts", "the black strap", "natural")],
   P.fill(P.NEG_SEAT, "right") + ", " + P.NEG_WORDMARK + ", " + P.NEG_OBSERVED + ", " + NEG_BAND + ", no square buckle, no rectangular buckle, no flat straight-edged band, no shell without peaks, no trousers, no open band, no band ends in her hands, no hands covering the wordmark, no face, " + NEG_HANDS, scale="about half"))
-# v3 (Fix "THE PRODUCT IS WRONG, MAKE THE PRODUCT EXACTLY IN THE PRODUCT REFERENCE"): v2 held the strap as a closed ring and it came out goggle-shaped -> held flat and opened out exactly as the inside photo is shot, overhead, square-on
-add("B-09b", "nano-banana-pro", PR("stryde_refs/back_inner.jpg", "stryde_refs/inner_face.jpg", FRONT) + [SHEET["R4"], LOC["P5"][0]], photo([
-  "A close overhead snapshot looking straight down: sitting on the bed she holds the second strap FLAT and OPENED OUT across her two palms above the striped duvet, its inside face up to the phone, "
-  "EXACTLY AS THE STRAP IS SHOWN IN THE ATTACHED INSIDE PHOTO, copied shape for shape: the shell lying flat in the middle, its inside face showing the mid-grey pad inside a thin matte-black rim, its outline "
-  "two rounded pointed peaks either side of a wide shallow notch along the top edge, a chrome slide at each end, and the black knit band running straight out from each slide in the photo's layout. "
-  "The strap fills about two thirds of the frame. " + P.INNER_PAD +
-  " Her hands are " + ELAINE + "'s hands: small, slim, fine-skinned, the striped cuffs at the wrists, cupped under the band ends, never covering the pad.",
+# v4 (Fix "FIX THE PRODUCT, MAKE THE STRAP VISIBLE TOO, USE THE REFERENCE PRODUCT"): v3 laid it flat and the band and slides were lost -> held as in the inside-face photo, the whole strap in frame: shell inside face, both chrome slides and the knit band looping away as a ring
+add("B-09b", "nano-banana-pro", PR("stryde_refs/inner_face.jpg", "stryde_refs/back_inner.jpg", BACK) + [SHEET["R4"], LOC["P5"][0]], photo([
+  "A close snapshot from a little above, sitting on the bed: she holds the second strap up in her hands EXACTLY AS THE STRAP IS HELD IN THE ATTACHED INSIDE-FACE PHOTO, the inside of the shell turned to the phone. "
+  "THE WHOLE STRAP IS IN FRAME AND VISIBLE: the shell with its inside face to the camera — the mid-grey pad inside a thin matte-black rim, the shell's outline two rounded pointed peaks either side of a wide shallow notch "
+  "along the top edge — a brushed chrome slide at each end of the shell, and the black coarse-knit elastic band leaving both slides and looping away behind the shell as a closed ring, exactly as in the attached back photo. "
+  "The product is copied shape for shape from the attached reference photos; it fills about two thirds of the frame. " + P.INNER_PAD +
+  " Her hands are " + ELAINE + "'s hands: small, slim, fine-skinned, the striped cuffs at the wrists; her fingers hold the band and the shell's outer ends, never covering the pad, the slides or the band.",
   plate("P5", LOC["P5"][1]), angle("B-09b", "the strap in her hands"), focus("the pad inside the shell"),
   light("the sash window on the bedroom's south wall", "the strap and her hands", "right", "bright morning daylight", face=False),
   colour("bright morning daylight", 5600, "the striped duvet below", "she", "navy-and-white stripes", "the mid-grey pad", "natural")],
-  P.NEG_INNER_PAD + ", " + P.NEG_HELD_P + ", no closed ring, no goggle shape, no mask shape, no dog-bone outline, no bow-tie outline, no shell without peaks, no fingers over the pad, no face, " + NEG_HANDS, scale="about half"))
+  P.NEG_INNER_PAD + ", " + P.NEG_HELD_P + ", no band hidden, no band cut off, no missing chrome slides, no strap laid flat, no goggle shape, no mask shape, no dog-bone outline, no bow-tie outline, no shell without peaks, no fingers over the pad, no face, " + NEG_HANDS, scale="about half"))
 add("B-10", "nano-banana-pro", PR(FRONT, "stryde_refs/worn_bent.jpg") + [SHEET["R3"], LOC["P4"][0]], photo([
   "A snapshot caught mid-action from low down: he is crouched at the bottom kitchen cupboard, one hand on the open cupboard door, the other reaching in for a saucepan, his right knee deeply bent, "
   "the strap on it staying put, easy. " + HASSAN[0].upper() + HASSAN[1:] + ". He wears " + WARD["H-D2"] + ". " + WORN_BENT,
