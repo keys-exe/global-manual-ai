@@ -235,3 +235,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - 2026-09-30 — B12 and B12b clips v1 on Current 2 (Kie 3 s / 4 s). Seen on my check: B12 the spot pulses, but the leg drifts slightly and a thin sliver of a second limb shows at the right edge; B12b the hot spot cools and fades to a calm pearly band, clean. To check.
 - 2026-09-30 — user confirm B11-BR v2 → clip v1 submitted (Kie 3 s, task f6cb6ecd781159545488b6284669fe6d; build preflight PASS): the spot pulses once, the ghosted sleeve and brace bars stay still.
 - 2026-09-30 — B11-BR clip v1 on Current 2 (Kie 3 s, 54 cr). Seen on my check: the spot pulses as asked, but the frame drifts in slightly closer, the ghosted brace bars fade partly out mid-clip, and a thin edge of a second limb shows at the top right. To check.
+
+### 2026-09-30 — "fix b10d2 / brolls for b13 to b14c"
+- **B10d2 v2** (board Fix "give me different broll here"): Desmond, low side-on, pushing up off his bottom stair, hands on his thighs, both knees under his whole weight (R2, P2; act map row now LOW PRO). v1 image + its video moved to Old (`c5d64b50…`, `34435af8…`), deleted from Current 2; the video waits for the new image's Confirm. Flaw seen: the trainers carry a Nike swoosh despite the negative, and he reads as standing rather than rising off the stair.
+- **B13 v1** (NBP; front.webp as Image 1, R1, P4): strap across one open palm, wordmark to the lens. Flaw seen: the band stands up as a stiff ring (FP05) and the shell's two peaks read weak.
+- **B14a v1** (NBP; front.webp, worn_front.jpg, R1, P1): seated on her bottom stair, both hands seating the strap under the kneecap, wordmark readable. Flaw seen: bare feet (plimsolls asked).
+- **B14b v1** (NBP; back_inner.jpg as Image 1, inner_face.jpg, R1, P4 — both imported to Higgsfield this round: `a4613068…`, `7bd450f9…`): the pad to the lens in one hand; pad matches the photo. Act map row: pad shown as the frame itself, video = a small tilt through the light (no pinned end frame).
+- **B14c v1** (NB2 anatomy): strap drawn on the knee, glow below. Flaw seen: the shell sits over the kneecap / joint line rather than on the tendon below it, and the spot still reads red.
+- All five on Current 2 as `review`; docs/actmap updated on Plan, Current and Current 2.
