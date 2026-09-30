@@ -346,18 +346,24 @@ B["B05"] = (NB2, [], anat(
          "is visible", stack="ANAT-B",
     slots={"[TARGET]": "the cartilage lining the joint surfaces"}).replace("the patellar tendon crisp", "the cartilage crisp"))
 
+# B06 v6 — user Fix 'ADD MORE EFFECT' (on v5): five wave-fronts, energy threads, heat glow, big impact burst.
 # B06 v5 — "Seventeen times your bodyweight is still arriving, every step," User 'MORE EFFECTS, MAKE IT 2 BROLLS HERE' (v4: force
 # arrows down the thigh + pointer; confirmed, two videos made). Now the first half of the line: the whole leg mid-step, glowing waves of
 # force pouring down through the thigh INSIDE the limb and bursting as a bright ripple at the tendon spot. Effects stay inside the body.
 EFX_OK = lambda s: (s.replace("no shockwave, no burst, ", "").replace("no arrows, no force arrows, ", "")
-                     .replace("no volumetric emission floating outside the structures, ", ""))
+                     .replace("no volumetric emission floating outside the structures, ", "")
+                     .replace("no sparks, ", "").replace("no explosion, ", "")
+                     .replace("mid-intensity and clearly glowing — not at peak, leaving headroom to escalate", "at full, blazing intensity")
+                     .replace(", sharp-edged and small, never spreading down onto the shin bone or across the joint; the bones and muscles around it stay calm", ", the centre of all the effects"))
 B["B06"] = (NB2, [], EFX_OK(anat(
     "Seen from a low three-quarter angle, the whole leg CAUGHT MID-STEP from the hip down: the foot landing below the frame, the knee "
     "flexed, the thigh muscles tensed and bulging with the load, in rich anatomical detail — the quadriceps heads with fine striation, "
-    "the kneecap, the patellar tendon as a taut banded ribbon, the worn thin cartilage. THE EFFECT: bright glowing waves of white-gold "
-    "light travel DOWN through the inside of the thigh like a pulse of force, three stacked wave-fronts one behind another, the lowest one "
-    "just arriving at the patellar tendon below the kneecap, where it bursts into a bright ripple — a ring of light spreading through the "
-    "tendon and the translucent tissue around the spot, with fine glowing particles lifting from the impact inside the body shell. All of "
+    "the kneecap, the patellar tendon as a taut banded ribbon, the worn thin cartilage. THE EFFECTS, BOLD AND DRAMATIC: FIVE brilliant "
+    "white-gold wave-fronts of light pour DOWN through the inside of the thigh like pulses of force, stacked one behind another, each "
+    "trailing a bright streaming glow; glowing threads of energy light up along the muscle fibres as the force passes; a hot red-orange "
+    "heat glow floods the knee joint; and where the lowest wave hits the patellar tendon below the kneecap it BURSTS into a big bright "
+    "impact flare — three wide rings of light rippling out through the tendon and the translucent tissue, a flare of white at the core, "
+    "and a swirl of hundreds of glowing particles spinning around the knee inside the body shell. All of "
     "the light lives INSIDE the leg: nothing flies in from outside. THE KNEE SITS IN THE UPPER RIGHT OF THE FRAME; the lower-left third "
     "of the frame is calm near-black field with nothing in it (a person will be placed there later). "
     + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
@@ -365,14 +371,16 @@ B["B06"] = (NB2, [], EFX_OK(anat(
          "the frame, the lower-left third empty field")
     .replace("no individual muscle fibres, ", "").replace("never fine striation and never individual fibres", "fine striation readable")))
 
+# B06b v2 — user Fix 'ADD MORE EFFECT': five rings, fibre streaks, heat halo, particle swirl.
 # B06b — "in exactly the same place." (second half of the B06 line). ECU front-on of the patellar tendon just below the kneecap: one
 # tight glowing target spot, concentric rings of light rippling out through the tendon fibres as each impact lands on the same point.
 B["B06b"] = (NB2, [], EFX_OK(anat(
     "Seen straight from the front, very close: the lower edge of the kneecap at the top of the frame and the patellar tendon below it as "
-    "a broad satin-white band of long fibres filling the frame. Dead centre on the tendon, just below the kneecap: ONE TIGHT, NEAR-WHITE "
-    "GLOWING SPOT, like the centre of a target, and around it three thin CONCENTRIC RINGS OF LIGHT rippling outward through the tendon "
-    "fibres, each fainter than the last — the marks of impact after impact landing on exactly the same point. Fine glowing particles "
-    "hang in the tissue around the spot. All of the light lives INSIDE the tendon and the tissue: nothing flies in from outside. "
+    "a broad satin-white band of long fibres filling the frame. Dead centre on the tendon, just below the kneecap: ONE BLAZING "
+    "NEAR-WHITE CORE, like the bullseye of a target, and around it FIVE bold CONCENTRIC RINGS OF LIGHT rippling outward through the "
+    "tendon fibres — the marks of impact after impact landing on exactly the same point. Bright streaks of light race along the tendon "
+    "fibres into the core, a hot red-orange heat halo pulses around it, and a swirl of hundreds of glowing particles circles the spot "
+    "inside the tissue, the brightest, most dramatic thing in the frame. All of the light lives INSIDE the tendon and the tissue: nothing flies in from outside. "
     + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
     view="viewed straight from the front, very close on the patellar tendon just below the kneecap, the tendon filling the frame")
     .replace("no individual muscle fibres, ", "").replace("never fine striation and never individual fibres", "fine striation readable")))
