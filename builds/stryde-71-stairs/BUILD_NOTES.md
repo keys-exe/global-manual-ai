@@ -294,4 +294,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - Plan: C-01a's cut key moved from "strap" to "That", so L-03a no longer runs over the next line. L-03a now needs 6 s and C-01a 6 s; lengths refreshed.
     - Act 6 videos v1 (work/video_act6.py): L-01a, L-01b, L-02a, L-02b, L-03a. All pass preflight, locked camera, the strap hidden under the jeans.
     - PR-05a v1 arrived truncated from Kie's file host and is being re-downloaded clean.
+  - **Act 7 (2026-09-30).**
+    - Act 7 videos v1 (work/video_act7.py): C-01a, C-02a, C-03a, C-04a, C-05a, C-06a, C-07a, C-09a. All pass preflight.
+    - Motion is written from the confirmed images. C-07a's image is her stepping down the porch steps, not the box from the old act-map note.
+    - Downloads: Kie's `common/download-url` gives a direct storage link that is fast where tempfile.aiquickdraw.com stalls.
+      - scratchpad fetch.py uses it and checks size and decode before a file goes in.
+      - kie.py's own slow download is stopped once the task id is logged, so it can't overwrite a good file.
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
