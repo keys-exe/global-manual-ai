@@ -681,22 +681,37 @@ B["B14a"] = clip("B14a",
            {"risk": "hands duplicate", "prevented_by": "HOLD-C + NEG-WARP-C, 'no extra hands, no extra fingers'"}])
 B["B14a"][0]["motion"] = B["B14a"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the cardigan cuffs settle; the strap never moves")
 
-# B14b image v2 (user Fix 'too big, fix size', then 'confirm'): the strap upright in her one hand, the grey pad to the lens. One small
-# tilt through the window light — the pad stays to the lens, so no pinned end frame (act map pin 'no').
+# B13 image v6 (user Fixes, then 'CONFIRM GO'): the strap front face up on her one open palm in the kitchen, wordmark to the lens.
+# One small lift into the light; the strap is rigid and still on the palm, only the band sways (§27G rigid product).
+B["B13"] = clip("B13",
+    "An older woman's open right palm held out in a kitchen, a small black STRYDE knee strap lying across it front face to the lens: two "
+    "rounded peaks, chrome slides, the grey stryde wordmark; the soft black band looping behind her hand.",
+    "Already moving on the first frame: her open hand lifts a few centimetres towards the window light — one small slow lift, about a "
+    "second and a half — then holds still. The strap rests still on her palm the whole time, rigid, keeping its shape, size and wordmark; "
+    "only the soft band behind her hand sways a little.",
+    "no strap sliding, no strap turning, no strap changing shape, no strap changing size, no wordmark changing, no fingers closing over "
+    "the strap, no second hand, no second strap, no extra fingers",
+    3.0, hi=5,
+    risks=[{"risk": "the shell warps or the wordmark smears", "prevented_by": "rigid line in motion, 'no strap changing shape/size, no wordmark changing'"},
+           {"risk": "the strap slides off the palm", "prevented_by": "one small slow lift, 'rests still on her palm', 'no strap sliding, no strap turning'"},
+           {"risk": "fingers close over the wordmark", "prevented_by": "'no fingers closing over the strap'"}])
+B["B13"][0]["motion"] = B["B13"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the soft band lags and settles; the shell never moves on the palm")
+
+# B14b image v5 (user Fixes, then 'CONFIRM GO'): the whole strap upright in her one hand, the grey pad to the lens. Generation 2 — v1
+# tilted the wrist and the strap bent like rubber (§22X motion fault): now the hand holds still and only the band loop sways.
 B["B14b"] = clip("B14b",
     "An older woman's hand holding a small black knee strap upright, its inside turned to the lens: a grey grooved pad with one smooth "
-    "comma-shaped ridge inside a thin black rim, a chrome slide at each end, a pale kitchen soft behind.",
-    "Already on the first frame: her wrist turns the strap a few degrees to one side and back, slowly, over about two seconds, so the "
-    "window light slides across the grooves and the ridge of the pad; the pad stays facing the lens the whole time and the strap keeps "
-    "its size and shape.",
-    "no strap turning round, no front of the shell showing, no wordmark, no strap changing size, no pad changing shape, no ridge moving, "
-    "no second hand, no extra fingers, no strap dropped",
-    4.0, hi=5,
-    risks=[{"risk": "the pad pattern swims as it tilts", "prevented_by": "a few degrees only, 'no pad changing shape, no ridge moving', HOLD-C"},
-           {"risk": "the strap turns right round to its front", "prevented_by": "'the pad stays facing the lens', 'no strap turning round, no front of the shell showing'"},
-           {"risk": "the strap grows in the hand (the Fix was size)", "prevented_by": "'keeps its size and shape', 'no strap changing size'"}])
+    "comma-shaped ridge inside a thin black rim, a chrome slide at each end, the black band hanging below in a soft loop, a kitchen soft behind.",
+    "Already on the first frame: her hand holds the strap still. The soft band loop below it sways gently once and settles, over about "
+    "two seconds. The shell and its pad do not move, bend or turn at all — rigid, facing the lens, keeping their shape and size.",
+    "no strap bending, no shell flexing, no strap turning, no strap tilting, no pad changing shape, no ridge moving, no strap changing size, "
+    "no front of the shell showing, no wordmark, no second hand, no extra fingers",
+    3.0, hi=5,
+    risks=[{"risk": "the shell bends like rubber (v1)", "prevented_by": "the hand holds still; only the band sways; 'no strap bending, no shell flexing'"},
+           {"risk": "the pad pattern swims", "prevented_by": "'no pad changing shape, no ridge moving', HOLD-C"},
+           {"risk": "the strap turns to its front", "prevented_by": "'no strap turning, no front of the shell showing, no wordmark'"}])
+B["B14b"][0]["motion"] = B["B14b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "only the band loop lags and settles; the shell never moves")
 
-# B14c image v3 (user Fix 'FIX SIZE BIGGER', then 'GO'): ANAT front-on, the real strap seated below the kneecap spanning the leg.
 # One slow fade: the warm glow on the tendon under the strap calms to a soft pearly light; the strap never moves (rigid product).
 B["B14c"] = clip("B14c",
     "A premium 3D anatomical model of a knee seen straight from the front on a near-black field, a black STRYDE knee strap with two "
@@ -715,7 +730,8 @@ B["B14c"][0]["motion"] = B["B14c"][0]["motion"].replace("hair, fabric and straps
 
 START = {"B14c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_163337_ba5e6993-4e59-4bf8-8ec8-9aeb85e5a9de.png",
          "B14a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_164241_ab6052f5-7c35-44e1-8052-a67bfedf24f7.png",
-         "B14b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_160315_ab4a6700-d742-40b1-8b0d-6eb4c68382da.png",
+         "B14b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_164932_3277f2fd-1eb7-4b05-8d44-8c7529e34946.png",
+         "B13": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_164932_18bd9cdf-0960-44c3-a3c1-ef65855dd429.png",
          "B11-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_144242_82c48d6d-785c-454d-91a5-bfea8bd28bcb.png",
          "B12": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_0a389350-3a9a-410e-a56c-5b29e5ee4659.png",
          "B12b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_143722_c1a15ea6-ad66-4f8b-aeb5-9bb6b3d657b0.png",
