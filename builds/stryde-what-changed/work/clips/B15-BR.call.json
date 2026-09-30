@@ -1,0 +1,33 @@
+{
+ "beat": "B15-BR",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b15_br\",\"subject\":\"An older white woman standing on her stairs in a sage cardigan and denim skirt, one hand resting on her thigh above her bare knee, the other hand held out open with a small black STRYDE knee strap lying on the palm, front face up. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: the hand on her thigh slides slowly down and two fingertips come to rest flat just below her kneecap, marking the spot — one slow movement, about a second and a half. The open hand holding the strap stays completely still. The strap does not move at all — rigid, keeping its shape, size and wordmark on her palm. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; fabric lags a little; the strap never moves; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no strap moving, no strap bending, no strap changing shape, no strap changing size, no wordmark changing, no hand closing over the strap, no face, no second person, no extra hands, no extra fingers, no music, no speech, no slow motion\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172430_65c0e88d-6f35-4e1e-8179-c59137a63188.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the strap bends in the hand (B13/B14b)",
+   "prevented_by": "the holding hand stays still; rigid line; 'no strap bending/moving'"
+  },
+  {
+   "risk": "fingers merge with the knee",
+   "prevented_by": "one slow slide, HOLD-C + NEG-WARP-C, 'no extra fingers'"
+  },
+  {
+   "risk": "the camera moves",
+   "prevented_by": "locked-off tripod clause"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}
