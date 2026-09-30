@@ -1477,6 +1477,75 @@ B["B19-BR2c"] = (NB2, ["P4"], photo([
     NO_FACE + ", no labels, no letters on the lids, no day names, no readable text, no brand, no medicine boxes, no product anywhere, no "
     "knee strap, no second hand, no extra fingers"))
 
+# ── 2026-09-30 "FIX AND CONFIRM" round 3 ──
+# B19-BR fix "SHOW THE STRYDE PACKAGE": edit of package_open.jpg — the whole box is the hero, lid with the wordmark propped up behind
+# the tray, on her lap; striped T-shirt only (v3 drifted to a pink cardigan).
+B["B19-BR"] = (NBP, ["PKG", "B19AV1W", "R1", "P1"], (
+    "Edit Image 1. Keep the STRYDE box EXACTLY as it is in Image 1 — the matte-black box and tray with BOTH straps lying in it, each "
+    "matte-black shell with two rounded peaks, a chrome slide at each end and the grey stryde wordmark, and the lid with the large grey "
+    "stryde wordmark — the same shapes, sizes and proportions, nothing redrawn. Change ONLY where it is: the open box now rests on the "
+    "lap of the woman in Image 2, sitting on her bottom stair, its lid propped upright behind the tray so the stryde wordmark on the lid "
+    "faces the camera clearly. She wears ONLY the navy-and-white Breton striped T-shirt from Image 2 — no cardigan, no jacket — and a "
+    "mid-blue denim skirt, her bare knees just below the box, white plimsolls on the oatmeal hall carpet, the white spindles and stairs "
+    "of Image 4 beside her. Her two hands hold the two short sides of the box, fingers outside, never on the straps. Seen from a little "
+    "above; the box large in frame, her face out of the top of the frame. Warm afternoon sun from the right. An ordinary phone photo."
+    "\n\nAVOID: no cardigan, no pink, no jacket, no strap lifted, no strap bent, no redesigned strap, no changed shell shape, "
+    + P.NEG_WORDMARK + ", no third strap, no hands on the straps, no lid lying flat, no face, no extra hands, no extra fingers"))
+
+# B19b fix "LEFT SIDE KNEE HAVE THE STRYDE STRAP, THEN SHE WILL GO DOWN THE STAIR": edit of B18b v1 — the strap is already on the knee
+# on the LEFT of the frame (her right); her top becomes the striped T-shirt; she is at the top of the flight taking the first step down.
+B["B19b"] = (NBP, ["B18BV1", "B19AV1W", "R1"], (
+    "Edit Image 1. " + KEEP_WORN.replace(" and keep the leg, the skin and the room.", " and keep her face, her pale older legs, the "
+    "denim skirt, white plimsolls and the stairs.") + " The strap stays on the knee on the LEFT side of the frame (her right knee), "
+    "exactly where it is; the knee on the RIGHT side of the frame stays BARE. Change: her top is now ONLY the navy-and-white Breton "
+    "striped T-shirt from Image 2 — no cardigan. She is at the TOP of the flight, just stepping down onto the first stair, facing down "
+    "the stairs towards the camera, her left hand light on the honey oak handrail, easy and unhurried. The camera is a little lower "
+    "down the flight and a little to the side, looking up three-quarter at her. Warm afternoon sun. A real phone photo.\n\n"
+    "AVOID: no strap on the knee on the right of the frame, no second strap, no strap moved, no strap over the kneecap, no cardigan, "
+    "no stumbling, no looking into the lens, no extra legs, no extra hands"))
+
+# B19-BR2 fix "GIVE ME DIFFERENT BROLL HERE" — "You will know in a minute.": CU of her face on the stairs as she notices.
+B["B19-BR2"] = (NBP, ["R1", "B19AV1W", "P1"], photo([
+    "A snapshot from a phone at eye level on her stairs, three-quarter on, close. Maureen has paused partway down her stairs, one hand "
+    "on the honey oak handrail at the bottom of the frame; a quiet look of surprise is softening into a small private smile, as if "
+    "she has just noticed something about her knee. Close: her head and shoulders fill the frame, the white spindles and the duck-egg "
+    "blue wall soft behind.",
+    R1 + " Wearing the navy-and-white Breton striped T-shirt from Image 2.",
+    M_STAIRS,
+    angle("B19-BR2", "her face on the stairs"),
+    focus("the nearest eye of the woman", deep=False).replace("the room behind", "the hall behind"),
+    light("M-SUN-R", "her face"), colour("M-STAIRS-SUN").replace("a sage-green cardigan, a white T-shirt and a mid-blue denim skirt", "a navy-and-white striped T-shirt").replace("the matte-black strap and its chrome slides", "the honey oak handrail")],
+    "no looking into the lens, no posing, no broad grin, no product in frame, no knee strap, no second person, no readable text, no extra fingers"))
+
+# B19-BR2b fix "GIVE ME DIFFERENT BROLL HERE" — "Not because the arthritis has gone.": the surgeon's pen on the narrowed joint space of a knee
+# X-ray on his monitor. No text on the screen.
+B["B19-BR2b"] = (NB2, ["S1", "P5"], photo([
+    "A snapshot from a phone at eye level, close on the monitor on his desk in the consulting room. A black-and-white X-ray of a knee "
+    "seen from the front fills the screen — the thigh bone above, the shin bone below, the gap between them narrowed and uneven on the "
+    "inner side, a little bony spurring at the edges: an arthritic knee. The surgeon's hand — medium-brown skin, the navy scrubs cuff — "
+    "holds a plain pen and points its tip at the narrowed joint space. Close: the X-ray on the screen and his hand fill the frame, the "
+    "edge of the pale wood desk below.",
+    "THE SAME CONSULTING ROOM as the attached location plate (Image 2): off-white walls, the pale wood desk, the white roller blind.",
+    angle("B19-BR2b", "the X-ray on the monitor"),
+    focus("the hands and what they hold", deep=False).replace("the room behind", "the room behind"),
+    light("CONS-L", "the screen and his hand"), colour("CONS-PM")],
+    "no text on the screen, no labels, no numbers, no names, no hospital logo, no user interface, no face, no second hand, no product "
+    "anywhere, no knee strap, no extra fingers"))
+
+# B19-BR2c fix "DIFFERENT BROLL HERE" — "It is still there, and nothing here changes that.": Maureen at her kitchen window with tea,
+# calm, living with it. Side-on medium.
+B["B19-BR2c"] = (NBP, ["R1", "B19AV1W", "P4"], photo([
+    "A snapshot from a phone at eye level in her kitchen, side-on. Maureen stands at the window over the sink holding a white mug of tea "
+    "in both hands, looking out at the garden, calm and at ease, a settled, accepting look. Medium: her from the waist up in profile, the "
+    "window and the garden soft beyond.",
+    R1 + " Wearing the navy-and-white Breton striped T-shirt from Image 2.",
+    KITCHEN,
+    angle("B19-BR2c", "her at the kitchen window"),
+    focus("the nearest eye of the woman", deep=False).replace("the room behind", "the garden beyond"),
+    light("KITCH-R", "her face and the mug"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a navy-and-white striped T-shirt").replace("the faded orange of the old photograph", "the white mug")],
+    "no looking into the lens, no posing, no broad grin, no sadness, no crying, no product anywhere, no knee strap, no second person, no "
+    "readable text, no extra fingers"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
