@@ -1,0 +1,31 @@
+{
+ "beat": "MECH-010",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"act1_tendon_step\",\"subject\":\"The same single anatomical leg as in the start frame, in the same pose, the calf the same shape and size; unchanged in every respect.\",\"camera\":{\"movement\":\"Virtual camera already pushing in on frame one: a slow steady push straight toward the patellar tendon two centimetres below the kneecap, mechanically smooth, no orbit, no sway, no handheld physics. The tendon grows to fill more of the frame. Still pushing at the cut.\",\"framing\":\"CU as in the start frame, true lateral profile, closing on the band of tendon just below the kneecap. FOCUS: that band is sharp; the thigh and calf fall soft.\"},\"motion\":\"CONTINUING: the leg stands in its start pose, foot planted, the band of patellar tendon below the kneecap already glowing warm. COMPLETING: the weight of one step settles through the planted leg, about three seconds — the knee gives a few degrees, the quadriceps tighten and that thumb-wide band draws taut, its glow brightening to near-white at that one spot, then easing a little. UNRESOLVED: the band keeps glowing. The leg never lifts or walks; the calf keeps its exact shape, size and grain throughout. The structures behave mechanically: muscle bellies shorten and thicken as they contract; the patellar tendon draws taut as tension arrives and softens as it passes; the knee keeps correct joint spacing. Small, controlled deformations, never soft rubber. The anatomy keeps its structure every frame: bones hold shape, length and spacing, joints never separate, muscle keeps constant volume, layer order holds.\",\"lighting\":\"Render exactly as in the start frame, same rim light and colour. No grading change across the clip.\",\"style\":\"Premium 3D anatomical visualisation, clean render, as in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no flowing energy, no river of light, no glow moving along the limb away from the site, no emission migrating, no fog, no mist, no crossfade, no arrows, no lasers, no beams, no external energy attacking the body, no shattering, no fragments, no walking, no stepping forward, no second leg, no whole body, no hands, no calf changing shape, no muscle peeling or shredding, no glow on the bone shafts, no slow motion, no music\"}",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_153358_ad58d8b6-9209-4db2-9f52-ccce05a1adb3.png",
+ "start_approved": true,
+ "pinned": false,
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "the model animates walking again",
+   "prevented_by": "leg planted, never lifts or walks; no walking, no stepping forward"
+  },
+  {
+   "risk": "calf reshapes or shreds",
+   "prevented_by": "calf keeps exact shape, size and grain; no calf changing shape, no muscle peeling"
+  },
+  {
+   "risk": "hands or a second leg enter",
+   "prevented_by": "slow push only, no orbit; no second leg, no whole body, no hands"
+  }
+ ],
+ "fix_note": "user: calf must be the same; focus on the band two centimetres below the kneecap. v1: the 'walking step' + orbit animated a whole walking figure — hands and a second leg entered, the calf shredded → motion now keeps the leg planted in its start pose (the step's weight settles through it), camera is a slow push toward the tendon with the tendon sharp, calf held to its exact shape; negatives ban walking, extra limbs, hands and calf change"
+}

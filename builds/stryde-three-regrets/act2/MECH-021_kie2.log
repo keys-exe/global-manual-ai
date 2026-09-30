@@ -1,0 +1,12 @@
+{"taskId": "ce0f06b52f624fee0387016159ce6438", "created": true}
+{
+  "taskId": "ce0f06b52f624fee0387016159ce6438",
+  "state": "success",
+  "credits": 108.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/ce0f06b52f624fee0387016159ce6438_1_1790755183_8245.mp4"
+  ],
+  "saved": "act2/MECH-021_kie2.json",
+  "model": "kling-3.0-omni/image-to-video"
+}

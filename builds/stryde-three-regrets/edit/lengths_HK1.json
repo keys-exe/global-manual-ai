@@ -1,0 +1,473 @@
+{
+  "master_s": 159.16,
+  "lead_s": 0.1,
+  "skip_s": 0.4,
+  "lengths": [
+    {
+      "beat": "HK1-01",
+      "cut_s": 2.25,
+      "anchor": "knees.",
+      "on_screen_s": 0.79,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "HK1-02",
+      "cut_s": 3.0417,
+      "anchor": "one",
+      "on_screen_s": 2.21,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "HK1-03",
+      "cut_s": 5.25,
+      "anchor": "doctor",
+      "on_screen_s": 0.62,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-003",
+      "cut_s": 10.7917,
+      "anchor": "Regret",
+      "on_screen_s": 0.88,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-004",
+      "cut_s": 13.75,
+      "anchor": "coming",
+      "on_screen_s": 1.83,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-005",
+      "cut_s": 15.5833,
+      "anchor": "sleeve.",
+      "on_screen_s": 1.04,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-006",
+      "cut_s": 16.625,
+      "anchor": "metal",
+      "on_screen_s": 1.08,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-007",
+      "cut_s": 17.7083,
+      "anchor": "wrap,",
+      "on_screen_s": 2.75,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-008",
+      "cut_s": 20.4583,
+      "anchor": "And",
+      "on_screen_s": 0.75,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-009",
+      "cut_s": 23.7083,
+      "anchor": "scan",
+      "on_screen_s": 0.75,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-010",
+      "cut_s": 26.7917,
+      "anchor": "band",
+      "on_screen_s": 4.46,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "MECH-011",
+      "cut_s": 31.25,
+      "anchor": "Seventeen",
+      "on_screen_s": 2.25,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-012",
+      "cut_s": 33.5,
+      "anchor": "finger",
+      "on_screen_s": 1.92,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-013",
+      "cut_s": 35.4167,
+      "anchor": "band",
+      "on_screen_s": 1.58,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-014",
+      "cut_s": 37.0,
+      "anchor": "sleeve",
+      "on_screen_s": 3.92,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "BR-015",
+      "cut_s": 40.9167,
+      "anchor": "hinged",
+      "on_screen_s": 4.96,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "BR-016",
+      "cut_s": 45.875,
+      "anchor": "drawer",
+      "on_screen_s": 4.54,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "BR-017",
+      "cut_s": 50.4167,
+      "anchor": "Regret",
+      "on_screen_s": 1.62,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-018",
+      "cut_s": 52.0417,
+      "anchor": "bad",
+      "on_screen_s": 1.29,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-019",
+      "cut_s": 53.3333,
+      "anchor": "Nobody",
+      "on_screen_s": 2.29,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-020",
+      "cut_s": 55.625,
+      "anchor": "good",
+      "on_screen_s": 3.42,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "MECH-021",
+      "cut_s": 60.6667,
+      "anchor": "work",
+      "on_screen_s": 5.08,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "BR-022",
+      "cut_s": 65.75,
+      "anchor": "second",
+      "on_screen_s": 0.88,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-024",
+      "cut_s": 70.9583,
+      "anchor": "Regret",
+      "on_screen_s": 1.62,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-025",
+      "cut_s": 72.5833,
+      "anchor": "yes,",
+      "on_screen_s": 2.58,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-026",
+      "cut_s": 75.1667,
+      "anchor": "long",
+      "on_screen_s": 1.21,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-027",
+      "cut_s": 76.375,
+      "anchor": "day",
+      "on_screen_s": 1.62,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-028",
+      "cut_s": 78.0,
+      "anchor": "steps",
+      "on_screen_s": 1.46,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-029",
+      "cut_s": 79.4583,
+      "anchor": "Not",
+      "on_screen_s": 2.54,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-030",
+      "cut_s": 82.0,
+      "anchor": "people",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-032",
+      "cut_s": 86.5833,
+      "anchor": "Coming",
+      "on_screen_s": 1.83,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-033",
+      "cut_s": 88.4167,
+      "anchor": "Going",
+      "on_screen_s": 1.54,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-034",
+      "cut_s": 91.8333,
+      "anchor": "catch",
+      "on_screen_s": 2.12,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-035",
+      "cut_s": 93.9583,
+      "anchor": "wrap",
+      "on_screen_s": 1.12,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-036",
+      "cut_s": 95.0833,
+      "anchor": "underneath",
+      "on_screen_s": 1.42,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "PR-037",
+      "cut_s": 96.5,
+      "anchor": "Stryde.",
+      "on_screen_s": 2.12,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-038",
+      "cut_s": 98.625,
+      "anchor": "below",
+      "on_screen_s": 3.58,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "BR-039",
+      "cut_s": 102.2083,
+      "anchor": "pad",
+      "on_screen_s": 5.38,
+      "skip_s": 0.4,
+      "call_s": 6,
+      "flag": "SPLIT \u2014 needs 6.3s, over 6s; split the phrase into two clips at a word boundary"
+    },
+    {
+      "beat": "MECH-040",
+      "cut_s": 107.5833,
+      "anchor": "caught",
+      "on_screen_s": 3.54,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "BR-041",
+      "cut_s": 111.125,
+      "anchor": "placement",
+      "on_screen_s": 1.42,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-042",
+      "cut_s": 112.5417,
+      "anchor": "centimetre",
+      "on_screen_s": 2.29,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-043",
+      "cut_s": 114.8333,
+      "anchor": "Thirty",
+      "on_screen_s": 3.29,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "PR-045",
+      "cut_s": 118.125,
+      "anchor": "orthopedic",
+      "on_screen_s": 0.83,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-046",
+      "cut_s": 118.9583,
+      "anchor": "Two",
+      "on_screen_s": 2.29,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-047",
+      "cut_s": 121.25,
+      "anchor": "Ten",
+      "on_screen_s": 1.42,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-048",
+      "cut_s": 124.875,
+      "anchor": "nobody",
+      "on_screen_s": 1.17,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-050",
+      "cut_s": 128.2917,
+      "anchor": "One",
+      "on_screen_s": 3.12,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "BR-052",
+      "cut_s": 131.4167,
+      "anchor": "come",
+      "on_screen_s": 1.42,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-053",
+      "cut_s": 132.8333,
+      "anchor": "know",
+      "on_screen_s": 0.67,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-056",
+      "cut_s": 136.875,
+      "anchor": "weight",
+      "on_screen_s": 2.79,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "BR-057",
+      "cut_s": 139.6667,
+      "anchor": "messages",
+      "on_screen_s": 1.71,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-058",
+      "cut_s": 141.375,
+      "anchor": "wish",
+      "on_screen_s": 2.25,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "PR-061a",
+      "cut_s": 147.25,
+      "anchor": "Two",
+      "on_screen_s": 1.12,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-061b",
+      "cut_s": 148.375,
+      "anchor": "both",
+      "on_screen_s": 4.42,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "PR-062",
+      "cut_s": 152.7917,
+      "anchor": "keep",
+      "on_screen_s": 0.96,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "CARD-063",
+      "cut_s": 153.75,
+      "anchor": "From",
+      "on_screen_s": 1.38,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "BR-064",
+      "cut_s": 155.125,
+      "anchor": "stretch,",
+      "on_screen_s": 3.25,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "BR-065",
+      "cut_s": 158.375,
+      "anchor": "stairs.",
+      "on_screen_s": 0.33,
+      "skip_s": 0.4,
+      "call_s": 3
+    }
+  ],
+  "failures": []
+}

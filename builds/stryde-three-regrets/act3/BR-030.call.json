@@ -1,0 +1,30 @@
+{
+ "beat": "BR-030",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"act3_she_leaves\",\"subject\":\"THE SAME PEOPLE as in the start frame: the woman with the raised hand and the boy in the red sweatshirt in the foreground, and the old woman in the camel coat on the steps beyond them; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"MEDIUM as in the start frame: behind the family, over their shoulders, looking at the old woman. FOCUS: deep; everyone stays sharp.\"},\"motion\":\"CONTINUING: the woman's hand is already raised in a wave. COMPLETING: one wave, about two seconds — the old woman gives a small smile, then turns away and takes two slow steps off to the side down the pavement. UNRESOLVED: she walks on, her back half to them, the wave ending. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, flat grey overcast daylight, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no hug, no running, no family faces to the lens, no one falling, no extra people appearing, no slow motion, no music\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_181302_762e1cbd-e2d6-4fe3-bf6b-e6b841262f03.png",
+ "start_approved": true,
+ "pinned": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "extra people appear or merge",
+   "prevented_by": "HOLD-C exact count; no extra people appearing"
+  },
+  {
+   "risk": "she walks towards the camera",
+   "prevented_by": "turns away down the pavement; back half to them"
+  },
+  {
+   "risk": "family turn to the lens",
+   "prevented_by": "no family faces to the lens"
+  }
+ ]
+}
