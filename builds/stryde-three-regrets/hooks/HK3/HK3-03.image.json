@@ -1,0 +1,36 @@
+{
+ "beat": "HK3-03",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.\": she has fallen in her lounge and sits on the carpet beside her armchair, unable to get up, waiting for help.\nA high three-quarter shot from standing height, her whole body in frame, small on the carpet with the room around her.\nImage 1 is her lounge: the same rose-pink wing armchair, net-curtained window, carpet and teak side table, copied exactly. Image 2 is the woman: the same face and white pixie crop, copied exactly.\nIn frame: she sits on the floor with her legs out to one side, her right hand flat on the armchair seat as if she tried to pull herself up, her left hand in her lap; the side table holds only the telephone, out of her reach; every other surface bare. Heather-purple twinset, grey pleated skirt, one beige slipper off on the carpet. She is looking toward the door off to the right, mouth closed, patient and a little frightened, not hurt.\nGrey afternoon daylight through the nets from the left. An ordinary iPhone photo.\nNo blood or injury, no second person, no readable text or logos, no extra fingers.",
+ "script_line": "The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P4-J-LOUNGE plate",
+   "kind": "location"
+  },
+  {
+   "label": "R3-JOAN sheet v2",
+   "kind": "character"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT02",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro"
+ ],
+ "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call)",
+ "fix_note": "The woman fell down and is waiting for help: v1 was her seated in the armchair looking at the clock → on the carpet after a fall, the phone out of reach, waiting"
+}
