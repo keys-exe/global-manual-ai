@@ -31,7 +31,7 @@ CALL.json describes one paid video call exactly as it will be sent:
     "risks": [{"risk": "...", "prevented_by": "..."}]   # top three failure modes and the clause that prevents each
   }
 
-Beat images (§6A, V7.70.0) — a B-roll or hook start/end frame — are linted too, with "kind": "image":
+Beat images (§6A, V7.70.0; first-render rules V7.74.0) — a B-roll or hook start/end frame — are linted too, with "kind": "image":
   {
     "beat": "B1-02", "kind": "image", "mode": 1,
     "prompt": "<the image prompt exactly as it will be sent>",
@@ -40,7 +40,9 @@ Beat images (§6A, V7.70.0) — a B-roll or hook start/end frame — are linted 
     "room": true,                      # the location shows (plate attached)
     "product": false,                  # the product shows (product photo attached first)
     "body": true,                      # a person or body part shows
-    "refs": [{"label": "...", "kind": "product|character|location|frame|info"}],   # in attach order
+    "refs": [{"label": "...", "kind": "product|character|location|frame|info"}],   # in attach order — each named in the prompt as "Image n" (§6A Part 2 rule 1)
+    "match": null | "plate" | "frame",   # the shot must match a plate / a confirmed earlier beat exactly → an image edit of it (§6A Part 2 rule 3, V7.74.0)
+    "edit_of": null | "<asset id or file of the plate / frame being edited>",   # required when match is set; the prompt opens as an edit ("Keep this photo exactly…")
     "taste": ["HT03", "FP02"],         # House Taste / product fix-pattern rules applied (§34A)
     "anatomy": false,                  # an anatomy / mechanism beat (Nano Banana)
     "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = two NB Pro
@@ -114,6 +116,18 @@ SIZE_ANCHOR = re.compile(r"\d+(?:\.\d+)?\s*(?:×|x|by)?\s*\d*\s*(?:cm|mm|centime
 NANO = {"nano_banana_pro", "nano_banana_2", "nano-banana-pro", "nano-banana-2"}
 PRO = {"nano_banana_pro", "nano-banana-pro"}
 SUNBURST = {"gpt_image_2_5", "gpt_image_2_5_sunburst", "gpt-image-2-5-sunburst-image-to-image", "gpt-image-2-5-sunburst-text-to-image"}
+# §6A Part 2 — right on the first render (V7.74.0)
+FRACTION = re.compile(r"\b(?:a |one |two |three |about a |about two |about three |roughly a |at least a |over a |nearly a )?(?:half|third|quarter|fifth|thirds|quarters|fifths|\d{2}\s?(?:%|percent))\s+(?:of\s+)?(?:the\s+)?frame(?:'s)?\b|\bfills?\s+(?:most of\s+)?the\s+frame\b|\bframe[- ]filling\b", re.I)
+FIDELITY = re.compile(r"\b(?:copied|reproduced|matched|exactly as|identical to|the same as)\b[^.]{0,80}\bexactly\b|\bexactly\b[^.]{0,40}\b(?:as|in|from)\s+Image\s*\d|\bcopied exactly\b|\bnothing redesigned\b", re.I)
+EDIT_OPEN = re.compile(r"^\s*(?:For the line \"[^\"]*\":\s*)?(?:keep|edit|using|take|leave|start from|starting from)\b[^.]{0,120}\b(?:this photo|this picture|this image|this frame|the plate|image\s*1)\b", re.I)
+HANDS = re.compile(r"\b(?:hands?|palms?|fingers?|fingertips?|thumbs?|wrists?|arms? (?:at|by|folded|crossed))\b", re.I)
+GAZE = re.compile(r"\b(?:both eyes|eyes (?:on|to|toward|down|up|closed|fixed|level)|looking (?:at|down|up|ahead|away|into|toward|straight)|gaze|square to the lens|to the lens|into the lens|at the camera|to camera|face (?:to|turned|toward|square))\b", re.I)
+SURFACE = re.compile(r"\b(?:table|desk|counter|worktop|countertop|shelf|shelves|bench|dresser|sideboard|nightstand|floor)\b", re.I)
+BARE = re.compile(r"\b(?:bare|empty|clear(?:ed)?|nothing (?:else|on)|only (?:the|one|two|a)|every other surface|no other objects?)\b", re.I)
+PLAIN = re.compile(r"\b(?:no|without|free of)\s+(?:readable\s+|visible\s+)?(?:lettering|logos?|text|labels?|writing|branding|print)\b|\bplain(?:,| and| —| -)?\s+(?:un(?:branded|marked|lettered)|no\b)|\bunbranded\b|\bno lettering\b", re.I)
+DEVICE = re.compile(r"\b(?:(?:a|an|her|his|their|one|my)\s+(?:i?phone|smartphone|mobile|tripod|camera|ring light|selfie stick|gimbal|laptop|webcam)|the\s+(?:i?phone|smartphone|mobile|tripod|ring light|selfie stick|gimbal|laptop|webcam))\b(?![^.]{0,40}\b(?:photo|shot|frame|lens|register|look|style)\b)", re.I)   # "the camera" is the viewpoint (gaze, edit openings) and is not flagged
+BODY_PART = r"(?:legs?|feet|foot|arms?|hands?|heads?|shoulders?|knees?|body|torso|elbows?|hips?|calf|calves|shins?|thighs?|fingers?)"
+OUT_OF_FRAME = re.compile(r"(\b\w+\b)\s+(?:is |are |kept |cut |partly |just |half )?(?:out of|outside|off|beyond)\s+(?:the\s+)?(?:frame|shot|picture|screen)\b|\boff[- ]screen\b|\bnot in (?:the )?(?:frame|shot|picture)\b|\bunseen\b", re.I)
 
 
 def run_image(c):
@@ -144,6 +158,29 @@ def run_image(c):
     if c.get("product"):
         check("product photo attached first (§6A)", bool(kinds) and kinds[0] == "product", f"first ref: {kinds[0] if kinds else 'none'}")
         check("true-size anchor for the product (§6A)", bool(SIZE_ANCHOR.search(p)), "e.g. '12 × 5 cm, the size of a matchbox'")
+    # §6A Part 2 — right on the first render (V7.74.0)
+    if refs:
+        missing = [i + 1 for i in range(len(refs)) if not re.search(rf"\b(?:Image|Photo|Picture)\s*{i + 1}\b", p, re.I)]
+        check("every reference numbered in the prompt (§6A rule 1)", not missing, f"refs not named as 'Image n': {missing}" if missing else "")
+    if c.get("product"):
+        check("fidelity clause on the product (§6A rule 1)", bool(FIDELITY.search(p)), "e.g. 'the product in Image 1 copied exactly — same shape, same parts, same markings, nothing redesigned'")
+        check("frame fraction beside the size anchor (§6A rule 2)", bool(FRACTION.search(p)), "e.g. 'about a third of the frame wide' — the subject at least a quarter of the frame")
+    match = (c.get("match") or "").strip().lower()
+    if match:
+        check(f"edit_of set for a {match}-matched shot (§6A rule 3)", bool(c.get("edit_of")), "the plate / confirmed frame being edited")
+        check("the prompt opens as an edit of that picture (§6A rule 3)", bool(EDIT_OPEN.search(p)), "e.g. 'Keep this photo exactly as it is — the room, the camera, the light. Add …'")
+        check("Image 1 is the picture being edited (§6A rule 3)", bool(kinds) and kinds[0] in ("location", "frame"), f"first ref: {kinds[0] if kinds else 'none'}")
+    if c.get("body") or c.get("face"):
+        check("every visible hand placed (§6A rule 4)", bool(HANDS.search(p)), "say where each hand is and what it does — 'right hand on the rail, left hand loose at her side'")
+    if c.get("face"):
+        check("gaze stated on a face shot (§6A rule 6)", bool(GAZE.search(p)), "e.g. 'square to the lens, both eyes on it, mouth closed' or 'looking down at the next step'")
+    if SURFACE.search(p):
+        check("bare surfaces / a closed inventory (§6A rule 4)", bool(BARE.search(p)), f"'{SURFACE.search(p).group(0)}' named — say what is on it and close the list ('every other surface bare')")
+    check("plain surfaces — no lettering or logos (§6A rule 5)", bool(PLAIN.search(p)), "e.g. 'clothing, packaging, walls and signs plain — no lettering, logos or labels except the product's own wordmark'")
+    dev = DEVICE.search(p)
+    check("no device named as an object in the picture (§6A rule 7)", not dev, dev.group(0) if dev else "")
+    oof = [m for m in OUT_OF_FRAME.finditer(p) if not re.search(rf"\b{BODY_PART}\b", p[max(0, m.start() - 40):m.end()], re.I)]
+    check("nothing named outside the frame but a body part (§6A rule 7)", not oof, oof[0].group(0) if oof else "")
     pair = [str(m).lower() for m in (c.get("pair") or [])]
     anatomy = bool(c.get("anatomy"))
     check("A/B pair: two renders (§5)", len(pair) == 2, f"pair {pair}")

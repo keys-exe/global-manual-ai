@@ -2,7 +2,7 @@
 
 What the user keeps fixing on STRYDE renders, turned into rules. Read with the House Taste (§34A) before every image and video prompt that shows the strap, its box or a copy; cite the IDs on the call (`"taste": ["FP01", …]`). Refreshed after every Fix round with `fix_patterns.py`.
 
-Learned 2026-09-29 from the boards of stryde-identity, stryde-71-stairs, down-forwards-again and stryde-cascade (the other builds' boards live on the user's other account and aren't in this read).
+Learned 2026-09-29 from the boards of stryde-identity, stryde-71-stairs, down-forwards-again and stryde-cascade (the other builds' boards live on the user's other account and aren't in this read); FP11–FP12 added 2026-09-30 from stryde-not-your-cartilage and stryde-what-changed (V7.74.0).
 
 | ID | Rule | Learned from |
 |---|---|---|
@@ -16,3 +16,5 @@ Learned 2026-09-29 from the boards of stryde-identity, stryde-71-stairs, down-fo
 | **FP08** | **The fakes are cheap copies of the same shape, stretching and sagging** — shown being stretched in the hands, not worn, never a different kind of product. | 4 notes, 2 builds |
 | **FP09** | **The "two for one" offer shows two straps.** | 1 note, 1 build |
 | **FP10** | **Fitting it is one move up to the tendon** — she slides it up to seat it; never tying, never a long fitting sequence. | 3 notes, 2 builds |
+| **FP11** | **The strap is big in the frame or it isn't the strap** *(V7.74.0)*: below about a fifth of the frame width every model draws a generic band (a flat band with a square buckle, a dog-bone pad, a narrow knee band). Every worn or held beat frames the knee or hand large — the strap at least a quarter of the frame wide, said as a fraction beside the 12 × 5 cm anchor (§6A Part 2 rule 2); a wide shot that needs the strap becomes wide + insert. | 8 notes, 2 builds (not-your-cartilage B-04, B-08, B-09a, B-09b, B-12: "wrong product", "too small, use the product exactly"; what-changed B06-BR2 "focus on knee") |
+| **FP12** | **The photo at the shot's angle, first, and copied exactly** *(V7.74.0)*: front-on → `front.webp`; three-quarter → `product_tq_left.jpg`; from behind → `back_real.jpg`; opened out / inside → the inside photo. Never a profile of a worn strap (it hides the shell's front and moves the wordmark to the side of the leg). The prompt names it `Image 1` and asks for it "copied exactly — same shell, band, slides and wordmark, nothing redesigned" (§6A Part 2 rule 1). | 5 notes, 2 builds (B-08 profile → generic wrap; B-09b "make the product exactly in the product reference" ×2; B-04 "use the product exactly") |

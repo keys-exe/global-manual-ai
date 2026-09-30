@@ -22,7 +22,11 @@ from collections import Counter
 from pathlib import Path
 
 CLASSES = [  # first match wins; a triage aid only
-    ("product", r"product|strap|brace|stryde|shell|wordmark|logo|box|pack|fake|copy"),
+    ("text/logo", r"letter|logo|text|label|swoosh|brand|writing|readable"),           # §6A Part 2 rule 5 / HT18
+    ("clutter", r"belonging|remove the|clutter|phone|pen mug|props?\b|on the table|nothing on"),   # rule 4 / HT19
+    ("plate-match", r"location plate|use the plate|same (?:stair|room|hall)|match the plate"),    # rule 3 / HT17
+    ("gaze", r"face (?:in|to|the) camera|look(?:ing)? at the camera|eyes on|turned away"),        # rule 6 / HT20
+    ("product", r"product|strap|brace|stryde|shell|wordmark|box|pack|fake|copy"),
     ("placement", r"below|above|knee ?cap|tendon|spot|placement|side of|wrong spot"),
     ("size", r"\bbig\b|small|size|huge|tiny"),
     ("anatomy", r"leg|finger|hand|arm|limb|third|extra|foot|feet|face|distort"),
