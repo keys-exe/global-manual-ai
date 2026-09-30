@@ -951,12 +951,12 @@
   "beat": "B10a",
   "group": "Act 2",
   "type": "BR",
-  "subject": "hands",
+  "subject": "R1",
   "height": "overhead",
   "side": "front",
   "scale": "CU",
   "fg": "clean",
-  "why": "overhead = laid out, examined",
+  "why": "overhead = her own view, the sleeve round everything",
   "mirror_of": null,
   "mode": 1,
   "product_beat": false,
@@ -966,7 +966,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": "K-D1",
+  "story_day": "M-D1",
   "face": false,
   "light": {
    "source": "kitchen window over the sink",
