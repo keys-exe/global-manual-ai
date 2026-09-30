@@ -494,22 +494,22 @@ B["B08a"] = (NB2, ["R1", "P3"], photo([
     "no running, no sports clothes, no product anywhere, no knee strap, no walking stick, no second person, no bus, no looking at the "
     "camera, no readable text, no adverts, no timetable, no number plates, no readable signs"))
 
-# B08b v5 — "Others played sport for thirty years." User Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 team photo; v2 football; v3 trophies;
-# v4 Desmond jogging). A veterans' Sunday football game on a park pitch: a fit grey-haired man in his sixties strikes the ball.
-# One-off extras, no sheets (§19B). No location plate: an ordinary British park pitch, described in words.
-B["B08b"] = (NB2, [], photo([
-    "A snapshot from a phone held low at the edge of a grass football pitch in a British park, three-quarter on. A veterans' Sunday "
-    "morning game: a fit, broad-shouldered grey-haired Black British man in his mid-sixties, in a plain navy football shirt, black shorts "
-    "and long navy socks, strikes the ball with his right foot, caught at the moment of the kick — standing leg planted and bent, kicking "
-    "leg swinging through, arms out for balance, his face set and focused on the ball. Behind him, soft, two other grey-haired players in "
-    "plain white shirts, a line of autumn trees and a low fence at the edge of the park. Medium shot, the kicker from head to boots.",
-    "The pitch: worn, slightly muddy municipal grass with faded white lines, a plain goal with a sagging net far behind.",
-    angle("B08b", "the man kicking the ball"),
-    focus("his nearest eye", deep=False).replace("the room behind", "the pitch behind"),
-    light("STREET-AM-L", "him and the pitch"), colour("STREET-AM").replace("grey paving, green privet, pebble-dash and brick semis", "worn green grass, autumn trees, a grey sky")
-    .replace("navy skirt and white plimsolls", "plain navy and white football kit").replace("the green privet", "the navy shirt")],
-    "no young players, no children, no crowd, no product anywhere, no knee strap, no knee support, no readable text, no numbers on the "
-    "shirts, no sponsor, no badges, no logos on the kit or boots, no brand marks, no looking at the camera, no wrong number of legs"))
+# B08b v6 — "Others played sport for thirty years." User Fix 'DIFFERENT IMAGE HERE, LIKE HOLDING PAST PICTURE' (v1 team photo on the
+# wall; v2 football; v3 trophies; v4 jogging; v5 veterans' match). Desmond on his stairs holding an old faded photo of his 1980s
+# amateur team, young him in the front row, a small fond smile. Face in frame.
+B["B08b"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone at eye height in his hall, three-quarter on. He sits on his stairs holding an old, faded colour photograph "
+    "in both hands, tilted so we can see it: a 1980s amateur football team posed in two rows on a muddy park pitch in plain navy-and-white "
+    "kit, a young Black man with a short afro in the front row among them — him, thirty years younger. He looks down at it with a small, "
+    "fond smile, his thumb resting at the photo's edge, the corners of the print soft and curled. Medium close-up: his face, his hands "
+    "and the photograph, the black-framed team photos on the stair wall soft behind him.",
+    R2 + " Wearing " + WARD["D-D1"] + ".",
+    D_STAIRS,
+    angle("B08b", "him holding the old photograph"),
+    focus("his nearest eye", deep=False).replace("the room behind", "the stair wall behind"),
+    light("D-GREY-R", "his face, hands and the photo"), colour("D-STAIRS-AM")],
+    "no crying, no looking at the camera, no product anywhere, no knee strap, no readable text, no writing on the photo, no names, "
+    "no dates, no badges, no logos, no second person in the room, no extra fingers, no extra hands"))
 
 # B08c v2 — "It is coming from standing up and walking." User Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 Desmond rising from his bottom
 # stair). Side-on, low, waist-down in her kitchen: Maureen pushes up from her chair, both knees straightening under her weight.

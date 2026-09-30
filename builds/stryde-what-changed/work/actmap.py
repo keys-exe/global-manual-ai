@@ -149,10 +149,10 @@ BB("B08a", A1, "Some of the people it happens to have never run a mile in their 
    EYE, THR, "clean", "MEDIUM", "three-quarter = an unhurried, unsporty life", "eyes", "medium", L(STREET_AM, "L"), True,
    notes="v4 — user Fix 'CREATE NEW IMAGE FOR THIS LINE' (v1 keys; v2 tartan trolley; v3 unworn trainers in the cupboard)")
 BB("B08b", A1, "Others played sport for thirty years.", "sport", "not what you did",
-   "extras", "L-PARK", "D-D1", "MEDIUM on a grass park pitch: a veterans' Sunday football game, a fit grey-haired man in his sixties in a plain kit strikes the ball, other older players around him", "he strikes the ball and follows through",
-   "one kick, about a second", STILL, "pitch: low three-quarter, the kicker full figure, camera still", "no", "absent", "—", "NB2",
-   LOW, THR, "clean", "MEDIUM", "low three-quarter = a lifetime of sport, still playing", "eyes", "medium", L(STREET_AM, "L"), True,
-   notes="v5 — user Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 team photo; v2 football; v3 trophies; v4 Desmond jogging); one-off extras, no sheets (§19B)")
+   "R2", "L-D-STAIRS", "D-D1", "MCU on his stairs: Desmond sits holding an old faded photograph of his amateur football team from the 1980s, young him in the front row, looking at it with a small fond smile", "his thumb moves over the photo, a small smile",
+   "one small movement, about two seconds", STILL, "seated on the stairs, head, hands and photo, camera still", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "MCU", "three-quarter = his face and the photo together, thirty years in one look", "eyes", "medium", L(D_GREY, "R"), True,
+   notes="v6 — user Fix 'DIFFERENT IMAGE HERE, LIKE HOLDING PAST PICTURE' (v1 team photo on the wall; v2 football; v3 trophies; v4 jogging; v5 veterans' match)")
 TH("B08-TH2", A1, "It makes almost no difference, because the load is not coming from what you did.", framing="punch")
 BB("B08c", A1, "It is coming from standing up and walking.", "standing", "the cause — ordinary life",
    "R1", "L-KITCHEN", "M-D1", "side-on, waist-down, low: Maureen pushes up from her kitchen chair, both knees straightening under her weight, and takes the first step away", "she rises and steps off",
