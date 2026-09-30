@@ -1114,6 +1114,72 @@ B["B17c"] = (NBP, ["B16AV1", "R2"], (
     "visible below the bunched fabric. A real phone photo.\n\nAVOID: no strap moved, no strap higher, no strap lower, no fabric covering "
     "the strap yet, no logos on the tracksuit, no stripes, no shorts, no second hand, no extra fingers, no second strap"))
 
+# ── 2026-09-30 "CONFIRM AND FIX THOSE" — B15-BR, B16b, B17a, B17b, B17c ─────────────────────────────────
+REFS.update({"B15BRV1": ("B15-BR v1 — the shot to edit (Image 1)", "c77be803-6bed-4724-a149-9c37c6ea9037"),
+             "B16BV1": ("B16b v1 — the shot to edit (Image 1)", "a1856804-7303-4094-ad47-a26814674d77"),
+             "B17CV1": ("B17c v1 — the shot to edit (Image 1)", "bf16b2d6-7dbb-4787-a3fe-740878153396")})
+
+# B15-BR v2 — Fix 'FIX THE PRODUCT': edit of v1, only the strap in her palm replaced by front.webp copied exactly, at true size.
+B["B15-BR"] = (NBP, ["B15BRV1", "PF"], (
+    "Edit Image 1. Keep everything in Image 1 exactly as it is — the same woman, stairs, light, camera and framing, the same open palm. "
+    "Change ONLY the strap resting in her palm: replace it with the strap in Image 2, COPIED EXACTLY — the matte-black shell with its "
+    "two rounded peaks and the deep rounded notch between them, the short shoulders dropping to a brushed chrome slide with three "
+    "engraved chevrons at each end, the gently waisted bottom edge, the grey lowercase stryde wordmark centred beneath the notch — lying "
+    "front face up across her palm at its true size, about 12 cm across, a little wider than her palm, the soft black knit band hanging "
+    "over the sides of her hand in one closed loop.\n\nAVOID: no U-shaped shell, no cup shape, no rounded rectangle, no stiff band, no "
+    "band standing up in a ring, no oversized strap, no change to the woman, no change to the stairs, no second strap, no extra fingers"))
+
+# B16b v2 — Fix 'FIX THE SIZE, TOO BIG': edit of v1, only the strap in his hand made smaller (about two thirds).
+B["B16b"] = (NBP, ["B16BV1", "PF"], (
+    "Edit Image 1. Keep everything in Image 1 exactly as it is — the same surgeon, his face, scrubs and gilet, the desk, the knee model, "
+    "the room, light and framing, and the same strap design as Image 2. Change ONLY THE SIZE of the strap in his hand: make it SMALLER, "
+    "about two thirds of its size in Image 1 — its true size, a small shell about 12 cm across and 5 cm tall, only a little wider than "
+    "his palm, about as tall as his thumb is long, his fingers and hand showing clearly around it, the band shrinking with it. The "
+    "wordmark stays readable.\n\nAVOID: no oversized strap, no strap as wide as his hand with fingers spread, no change to the strap's "
+    "shape, no change to his face, no change to the room, no second strap, no extra fingers"))
+
+# B17a v2 — Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1: the strap sat over the tracksuit). Edit of B17c v1 (bare knee, hem bunched above):
+# both his hands now at the strap's two chrome-slide ends, pressing it into place — on in one move (FP10).
+B["B17a"] = (NBP, ["B17CV1", "R2"], (
+    "Edit Image 1. Keep the strap EXACTLY as it is in Image 1 — seated on the bare skin of the tendon directly below the kneecap, the "
+    "same shell, peaks, notch, chrome slides and grey stryde wordmark, the same size and place — and keep the leg, the stairs, the light "
+    "and the framing. The navy tracksuit leg stays bunched up above the bare knee on its own. Change ONLY his hands: his hand lets go of "
+    "the fabric, and BOTH HIS HANDS — THE SAME MAN as in the character sheet (Image 2), strong dark-brown older hands with thick knuckles "
+    "— now rest with their fingertips on the strap's two outer chrome-slide ends, one each side, pressing it into place, the thumbs clear "
+    "of the wordmark and the notch. A real phone photo.\n\nAVOID: no strap over the fabric, no fabric covering the strap, no strap "
+    "moved, no hands on the wordmark, no hands on the band, no fastening, no extra fingers, no extra hands, no second strap"))
+
+# B17b v2 — Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: her fingertip at the strap's edge). "No sores, no rolling down": edit of B15 v1 —
+# Maureen coming down onto her bottom stair, the strap still exactly in place under the kneecap.
+B["B17b"] = (NBP, ["B15V1", "R1", "P1"], (
+    "Edit Image 1. Keep the strap EXACTLY as it is in Image 1 — the same shell, peaks, notch, chrome slides and grey stryde wordmark, the "
+    "same size, seated on the tendon directly below the kneecap, front-on — and keep her pale older leg and denim skirt hem. Change: she "
+    "is coming DOWN HER STAIRS towards the camera, as in Image 3 — this knee a little bent as her weight lands on it, her white canvas "
+    "plimsoll on the oatmeal carpet of the bottom stair at the foot of the frame; widen a little so the frame holds from the skirt hem "
+    "down to her foot, the stair treads and white spindles soft behind her, warm afternoon sun from the right. The strap has not moved. "
+    "A real phone photo.\n\nAVOID: no strap moved, no strap rolled down, no strap slipped, no strap higher, no redness on the skin, no "
+    "second strap, no tanned skin, no bare feet, no extra legs"))
+
+# B17c v2 — Fix 'GIVE ME DIFFERENT BROLL HERE' (v1: his hand about to drop the hem). "and nobody can see it.": side-on, waist-down,
+# Desmond comes down his stairs in navy tracksuit bottoms, the fabric smooth over both knees — nothing shows. No product in frame.
+LIGHT["D-SUN-L"] = ("the glass panel of his front door", "left", "warm afternoon sun, soft and golden — the after state, easy and bright, never harsh")
+COLOUR["D-STAIRS-SUN"] = ("warm afternoon sunlight", "warm mid-grey walls, charcoal carpet with white nosing stripes, white spindles and skirting",
+                          "navy tracksuit bottoms and white trainers with navy trim", "the white nosing stripes", "true to life, warm")
+KELVIN["D-STAIRS-SUN"] = 5600
+B["B17c"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held at hip height beside his stairs, side-on to him. He is coming down his stairs easily, caught mid-step: "
+    "one foot planted on a stair taking his weight, the other lowering to the stair below, one hand light on the handrail. The frame is "
+    "cropped at his waist: it holds his legs in plain navy tracksuit bottoms from the hip down to his trainers and the stair treads. The "
+    "soft trouser fabric falls smooth and loose over both knees — no bulge, no outline, nothing showing underneath.",
+    R2_LEGS + " Wearing " + TRACKSUIT + " and plain white trainers with navy trim.",
+    D_STAIRS,
+    angle("B17c", "his legs on the stairs"),
+    focus("his trousered knees", deep=False).replace("the room behind", "the hall behind"),
+    light("D-SUN-L", "his legs and the stairs"), colour("D-STAIRS-SUN")],
+    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap visible, no bulge under the trousers, no outline of anything "
+    "under the fabric, no shorts, no bare legs, no logos on the tracksuit, no stripes, " + PLAIN_SHOES + ", no walking stick, no second "
+    "person, no extra legs"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
