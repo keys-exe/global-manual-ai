@@ -1,0 +1,41 @@
+{
+ "beat": "VOICE-C2",
+ "connector": "seedance",
+ "mode": 4,
+ "kind": "voice_master",
+ "prompt": "INGREDIENTS. @image1 is the daughter: face, age, hair and build only. These references set what things ARE; the prose below sets what HAPPENS, and nothing in them is a shot to cut to. A plain medium close-up of the daughter, a woman of forty-six, standing against a plain pale grey wall, soft daylight from the left, the camera on a locked tripod, nothing else in frame. The daughter looks just off the lens at someone beside the camera and says, clearly and completely: \"Mum… the next one’s in ten minutes, we can…\" Delivery: An English woman of forty-six from the north of England, a quick, warm mid-range voice with the same flat northern vowels as her mother, a little brisker and higher. Concern tucked under teasing; words tumble slightly faster than her mother's. Level, even and unhurried; conversational volume; no emotion coloured into the words; a person reading a sentence aloud to themselves. Audio is clean production sound from a boom microphone just out of frame above the speaker: close, clear and even, with a little of the room's natural tone behind the voice. Breath and mouth detail are present but never exaggerated. No phone-microphone proximity, no compression pumping, no music and no sound effects anywhere in the clip — dialogue only. The microphone and all equipment stay outside the picture. Dialogue only: no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack. One speaker only. NEGATIVES: no other people, no second voice, no microphone in frame, no looking into the lens, no text, no captions, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack.",
+ "duration": 10,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "start_approved": true,
+ "ingredients_approved": true,
+ "files": [
+  "voice/C2_face.jpg"
+ ],
+ "audios": [],
+ "generate_audio": true,
+ "dialogue": "Mum… the next one’s in ten minutes, we can…",
+ "script_line": "Mum… the next one’s in ten minutes, we can…",
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "emotional colour in the master",
+   "prevented_by": "the neutral delivery clause after VOICE-[CHAR]"
+  },
+  {
+   "risk": "music or effects under the voice",
+   "prevented_by": "NEG-SOUND twice, dialogue only"
+  },
+  {
+   "risk": "microphone or a second person in frame",
+   "prevented_by": "equipment outside the picture, one speaker, negatives"
+  }
+ ]
+}

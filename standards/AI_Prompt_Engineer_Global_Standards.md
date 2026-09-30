@@ -8929,6 +8929,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 
 | Date | Correction | Section affected | Status |
 |---|---|---|---|
+| 2026-09-30 | **Film voice masters carry no dead space** (user: "the voice has a lot of dead space its wasting time and credits"). §24I part 7: (1) the master's Seedance `duration` fits its line — the shortest duration whose §28H word budget holds the line, plus one second of air, never under Seedance's 4s minimum, never a flat 10s; (2) the line is the character's longest neutral line from the script (a short line in a long clip is paid-for silence); (4) the idle silence before the first word and after the last is removed (kept from 0.4s before the first word to 0.5s after the last) — the spoken audio between stays exactly as generated: no speed change, no inner pause cut, no noise work. `preflight.py` `voice_master` checks the fitted duration. | §24I part 7 steps 1, 2, 4; E7 | written in at the next cut |
 
 *(Rows above are written in and wait for the next cut's changelog.)*
 

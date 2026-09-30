@@ -1,1 +1,11 @@
 {"taskId": "a9e40a6032b9915596ed1c6a27794933", "created": true}
+{
+  "taskId": "a9e40a6032b9915596ed1c6a27794933",
+  "state": "success",
+  "credits": 630.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/seedance/1790793331281-u79qa5f9sl.mp4"
+  ],
+  "saved": "VOICE-C4_clip.mp4"
+}

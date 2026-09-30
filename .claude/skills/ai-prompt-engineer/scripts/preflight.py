@@ -228,6 +228,14 @@ def run_beat_video(c, p, check):
             check("fast comes from the edit, never the legs (§27G)", not f, f.group(0) if f else "")
 
 
+def master_fit(line, pace="unhurried"):
+    """§24I (2026-09-30): the shortest Seedance duration (≥ 4s) whose §28H budget holds the line, + 1s of air."""
+    d = 4
+    while d < 30 and word_budget(d, pace) < words(line):
+        d += 1
+    return d + 1 if d >= 4 and word_budget(4, pace) < words(line) else max(4, d)
+
+
 def film_shot(c, p, conn, mode, kind, film, check):
     """§24K/§30J/§24H film-shot checks (sections 5–6), skipped on a §24I voice master."""
     # 5. Motion (§27G / §24K)
@@ -361,7 +369,9 @@ def run(c):
     # 4a. §24I part 7 — a neutral film voice master: its own recipe, not a film shot
     if kind == "voice_master":
         check("voice master on Seedance", conn == "seedance", conn)
-        check("voice master 10s (§24I)", d == 10, str(d))
+        fit = master_fit(c.get("dialogue") or "", c.get("pace", "unhurried"))
+        check("voice master duration fits its line — no paid dead space (§24I, 2026-09-30)",
+              isinstance(d, (int, float)) and 4 <= d <= fit, f"{d}s for {words(c.get('dialogue') or '')} words; fit ≤ {fit}s")
         imgs = [f for f in c.get("files", []) if not MUSIC_FILE.search(str(f))]
         check("one ingredient: the face-only reference", len(c.get("files", [])) == 1, f"{len(c.get('files', []))} files")
         check("no audio in (it is the master)", not c.get("audios"), ",".join(map(str, c.get("audios") or [])))

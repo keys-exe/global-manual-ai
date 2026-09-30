@@ -13,6 +13,10 @@
 
 - 2026-09-30 Fix round 1: C5-FRIEND1 "I WANT A NEW ONE HERE" → new casting v2 (white Irish woman, 69, copper-red crop, navy pea coat; Sunburst 2.75 cr); v1 moved to Old. Other six sheets still To check.
 
+- 2026-09-30 **Cast confirmed** (user: "CONFIRMED ALL PROCEED"); absorption confirmed. Steps 4–5 delivered (`STEP4_5.md`): Property Sheet, 12 plates (16:9, Sunburst 2.75 cr each) To check, act map 89 shots (`angles.py` PASS), Scene Bibles, wardrobe map, ingredient ledger. Flags F6/F8/F9/F10 run on my recommendations.
+- 2026-09-30 **Voice stage:** 7 §24I voice masters on Kie Seedance (10s, **630 Kie credits each**, 4,410 total); narrator clone `HalfMyAge` (voice_id m8paURpcIo2oNWLiWDYk, from HER's tightened master); 29 narration takes (eleven_v4, verbatim PASS, no pause tags, speed 1.0) on the board as `VO-T1-Lxxx`.
+- 2026-09-30 **Fix round 2 (user):** "FIX THE LOCATION" → L-STAIRS "FIX THIS ITS DISTORTED": v2 prompt (35mm, level camera, straight verticals, distortion negatives) — **Higgsfield timed out on submit and on every call after; outcome unknown** → card back on `regenerate` with a `fixPlan`; the hourly check checks Higgsfield for a finished stairs plate before resubmitting. "THE VOICE HAS A LOT OF DEAD SPACE" → the masters spoke 1–7s of each 10s clip: idle silence cut from all 7 (raw kept as `voice/*_raw.m4a`, v2 on the cards), narration re-voiced without pause tags; §24I amendment in Pending Amendments + `preflight.py` voice_master duration-fit check.
+
 ## Open (Flags in BUILD_SHEET.md)
 F1, F2, F4 claims to confirm · F8 Hook E's action (proposed: HER gets up off the living-room floor unaided as the daughter reaches to help) · F9 "Three weeks ago" vs six weeks · F10 trouser-leg reveal vs FP13 · F6 right knee default · F11 mechanism insert optional · F12 no to-lens close · F16 no Drive connector.
 
