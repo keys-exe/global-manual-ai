@@ -941,14 +941,14 @@
   "line": "Others played sport for thirty years.",
   "key": "sport",
   "function": "not what you did",
-  "subject": "extras",
-  "location": "L-PARK",
+  "subject": "R2",
+  "location": "L-D-STAIRS",
   "story_day": "D-D1",
-  "framing": "MEDIUM on a grass park pitch: a veterans' Sunday football game, a fit grey-haired man in his sixties in a plain kit strikes the ball, other older players around him",
-  "action": "he strikes the ball and follows through",
-  "pace": "one kick, about a second",
+  "framing": "MCU on his stairs: Desmond sits holding an old faded photograph of his amateur football team from the 1980s, young him in the front row, looking at it with a small fond smile",
+  "action": "his thumb moves over the photo, a small smile",
+  "pace": "one small movement, about two seconds",
   "camera": "locked off",
-  "staging": "pitch: low three-quarter, the kicker full figure, camera still",
+  "staging": "seated on the stairs, head, hands and photo, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "absent",
@@ -957,14 +957,14 @@
   "layout": "full",
   "eg": "",
   "ledger": "",
-  "notes": "v5 — user Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1 team photo; v2 football; v3 trophies; v4 Desmond jogging); one-off extras, no sheets (§19B)",
+  "notes": "v6 — user Fix 'DIFFERENT IMAGE HERE, LIKE HOLDING PAST PICTURE' (v1 team photo on the wall; v2 football; v3 trophies; v4 jogging; v5 veterans' match)",
   "duration": "pending-master",
   "angle": {
-   "height": "low",
+   "height": "eye",
    "side": "three-quarter",
    "fg": "clean",
-   "scale": "MEDIUM",
-   "why": "low three-quarter = a lifetime of sport, still playing"
+   "scale": "MCU",
+   "why": "three-quarter = his face and the photo together, thirty years in one look"
   },
   "focus": {
    "plane": "eyes",
@@ -973,8 +973,8 @@
    "moving_subject": false
   },
   "light": {
-   "source": "open overcast sky, morning",
-   "key_side": "L",
+   "source": "Desmond's stair window, grey morning",
+   "key_side": "R",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 6500
