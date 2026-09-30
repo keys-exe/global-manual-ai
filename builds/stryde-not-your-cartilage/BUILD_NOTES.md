@@ -77,6 +77,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - 2026-09-30: user "FIX THOSE" — confirmed B-04 v3 and B-11a v2 images, B-09a v2 video. **B-03b** v6 "USE THE STAIR LOCATION PLATE, MAKE THIS MAN STANDING IN THE MIDDLE OF THE DOWN STAIR, GRIPPING THE HANDRAIL" → v4/v5 lost the plate's wide view (the "person fills the frame" framing pulled the camera in, putting him on the bottom steps); v6 is an edit of the plate itself — the photo kept, him added mid-flight, facing down, both hands on the rail, a third of the frame tall (NBP, 18 cr). **Lesson: when a shot must match a plate exactly, write it as an edit of the plate, not a new photo.**
   Videos from the confirmed frames (preflight PASS): **B-04** v2 — the strap tilts into the light on his palm, its size locked (72 cr); **B-11a** v4 (gen 4, the user's go: image Fix + confirm + "FIX THOSE") — the loose trouser comes down over the strap, the strap staying put (54 cr). To check.
 
+- 2026-09-30 (06:38 check): user confirmed B-03b v6 and B-09b v4 images. **B-03b** video gen 2 from the v6 frame (he tightens both hands on the rail and breathes out, no step; preflight PASS, 54 cr) → To check. **B-09b** video waits: it would be the shot's third video generation (v1 and v2 were made from earlier frames) — asked the user for the go (§22X).
+
 ## Where it stands
-- **Waiting on the user:** check images B-03b v6, B-09b v4 (their videos follow) and videos B-04 v2, B-11a v4; script flags F2, F5, F6, F7.
+- **Waiting on the user:** the go for B-09b's video (third generation of the shot); check videos B-03b v2, B-04 v2, B-11a v4; script flags F2, F5, F6, F7.
 - **Next:** `assemble.py` rough cuts and `variants.py` (HK1/2/3 + BODY), CapCut block (step 8), finals on the Final board.
