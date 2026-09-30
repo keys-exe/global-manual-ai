@@ -596,6 +596,25 @@ B["B10d2"] = clip("B10d2",
            {"risk": "she climbs on and leaves frame", "prevented_by": "'then she stands on the stair. She stays in frame', 'no second step, no walking out of frame'"},
            {"risk": "the camera follows her", "prevented_by": "locked-off tripod clause"}])
 
+# B06 video gen 4 (user 'B06 GO', 2026-09-30) from image v7: close-up on the knee joint, low three-quarter, wave-fronts into the joint,
+# impact flare with rings and particles below the kneecap. v3 faults fixed at the source: the waves ran on past the knee onto the shin
+# (now: they end AT the knee), the leg bent and lifted (now: the knee holds its pose), a second limb edge showed (now: named out).
+B["B06"] = clip("B06",
+    "A premium 3D anatomical model, close up on a knee joint on a near-black field, low three-quarter: bright wave-fronts of light "
+    "inside the lower thigh, a heat glow in the joint and a blazing impact flare with rings of light and a swirl of glowing particles "
+    "at the patellar tendon just below the kneecap, all inside the translucent body shell.",
+    "Already under load on the first frame, and the knee holds exactly this pose. The wave-fronts of light travel down through the lower "
+    "thigh one after another and END AT THE KNEE, about one arriving every second; as each one arrives the flare below the kneecap bursts "
+    "brighter, a new ring of light ripples out through the tendon and fades, and the particle swirl turns faster for a moment. Nothing "
+    "travels past the knee onto the shin. The flare stays on its one spot.",
+    "no leg moving, no knee bending, no light travelling down the shin, no rings on the shin, no second limb, no light outside the body "
+    "shell, no text, no camera orbit, no zoom",
+    1.7, hi=6, anat=True,
+    risks=[{"risk": "the waves run on past the knee onto the shin (seen in v3)", "prevented_by": "'END AT THE KNEE', 'Nothing travels past the knee onto the shin', 'no light travelling down the shin, no rings on the shin'"},
+           {"risk": "the leg bends or lifts (seen in v3)", "prevented_by": "'the knee holds exactly this pose', 'no leg moving, no knee bending', locked camera"},
+           {"risk": "a second limb edge appears (seen in v3)", "prevented_by": "'no second limb', close framing on the one knee"}])
+B["B06"][0]["motion"] = B["B06"][0]["motion"].replace(", and the whole structure compresses a few degrees", "")
+
 START = {"B10c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140203_48b079aa-50b4-48f7-888a-f2c5779f802c.png",
          "B10d": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140212_e6684a2f-35c2-4d68-91bd-def7c5820b7a.png",
          "B10d2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140214_02e1997c-f151-4fc5-b250-3d1e36a9b3a2.png",
@@ -631,7 +650,7 @@ START = {"B10c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv
          "B04c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_211843_6ae8e4ac-2507-4735-9b38-7f1edc3a2b07.png",
          "B04b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_211843_dc076019-ac3b-475f-a315-f311f4d298f0.png",
          "B04a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_205729_cf751279-1d57-43d5-9b56-f8b0adbb16f5.png",
-         "B06": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_120636_d2f3cfb3-87cd-4895-938a-4c42ce7d829b.png",
+         "B06": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140945_6ede13f8-ffce-4d69-b55d-17a1c9d5ea6f.png",
          "B06-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_215145_b3e86d93-f337-4226-9feb-1ae2a35a886e.png"}
 
 if __name__ == "__main__":
