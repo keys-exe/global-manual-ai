@@ -288,3 +288,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **B15-BR** (fresh render): flaw — she stands on the stairs instead of sitting, and her fingers rest on her thigh rather than measuring the spot below the kneecap; the strap in her palm reads right.
 - **B16b** (S1 at his desk, knee model, strap held up): reads well; the strap's peaks are soft.
 - All five on Current 2 as `review`; docs/actmap updated on Plan, Current, Current 2.
+
+### 2026-09-30 — "GIVE ME BROLLS FOR B17A TO B17C"
+- Built as image edits of the worn shots that came out right (B16a v1 for Desmond, B15 v1 for Maureen). Act map rows B17a (HIGH FRO), B17b (LOW FRO, ECU), B17c (EYE FRO) moved to front-on; B15 and B16a relabelled LOW FRO (knee-height camera) so the angle check passes.
+- **B17b** (her fingertip on smooth unmarked skin below the strap's edge) and **B17c** (his hand holding the bunched navy tracksuit hem above the strapped knee) read right.
+- **B17a**: flaw — the tracksuit leg was not rolled up: the strap sits OVER the trouser fabric. Next go: build it from B17c's frame (knee bare, hem bunched above) with his hands at the slide ends.
