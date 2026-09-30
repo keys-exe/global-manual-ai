@@ -317,3 +317,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 ### 2026-09-30 — B18-BR to B19-BR2 images (v1, To check)
 - Higgsfield timed out on the batch submit, history and balance (three tries over ~5 min), so all seven were made on **Kie AI** with the same models (NB2 / NBP) and prompts, refs uploaded from the repo copies and the edit bases' Higgsfield CDN links (B16a v1, B13 v6, B17b v2, HK1-a). 12 cr (NB2) / 18 cr (NBP) each, 114 cr total. The Higgsfield batch outcome is unknown: if it did submit, those jobs are not on the board.
 - Seen flaws: B18a Desmond already seated (not caught landing), barefoot; B19-BR strap in her hand small, wordmark not readable; B19a shows her face and a striped T-shirt (not the cardigan); B19b strap sits round the upper calf / back of the knee on the rear leg, not on the tendon below the kneecap; B18b she is mid-flight rather than at the top; B18-BR one US stamp among the letters.
+
+### 2026-09-30 — "FIX AND CONFIRM" on B18-BR…B19-BR2
+- Higgsfield is back (it had simply been unreachable; the earlier batch never submitted — no double charge). This round still ran on **Kie AI**: the edit bases B18a v1 / B19a v1 are Kie renders kept only locally.
+- Confirmed → videos (Kling 3.0 via Kie, 4 s, 72 cr each, preflight PASS): **B18b v1** (she comes down several steps, strap stays on the right knee), **B19a v1** (one breath out, hands on thighs, left knee bare).
+- Fixes (v2, To check; v1 moved to Old 2):
+  - B18-BR "DIFFERENT BROLL HERE" → Maureen at the kitchen table typing a message on her phone, smiling, tea (NB2).
+  - B18a "POSITIVE LIKE REVIEW OR RESULT…" → edit of B18a v1: Desmond crouching easily to tie his trainer, strap front-on, smiling (NBP). Flaw: a dark swoosh-like mark on the trainer side.
+  - B19-BR "DIFFERENT BROLL HERE" → try it yourself: the open box of two (package_open.jpg) on her lap on the bottom stair, lifting one strap out (NBP).
+  - B19b "CONTINUE OF B19A" → edit of B19a v1: she steps down off the bottom stair forwards, strap right, left bare, hand on the newel (NBP).
+  - B19-BR2 "FIX, GIVE ME DIFFERENT BROLL HERE" → waist-up at the stair foot, hand on the newel, quiet surprised smile (NBP). She looks off to the side rather than back up the stairs.
+- Wardrobe continuity from B19a v1 on: Maureen in a navy-and-white striped T-shirt (B18b still cardigan). Act map rows for the five updated; angles PASS all three orders; docs/actmap on Plan v31, Current v31, Current 2 v17.
