@@ -647,6 +647,22 @@ B["B10b2"] = (NB2, ["R1", "P4"], photo([
     NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no brace, no sleeve, no walking stick, no second person, "
     "no knees turned inwards or outwards, no readable text, no logos on the plimsolls, no wrong number of legs"))
 
+# B06a2 — "is still arriving, every step," (user 'BROLL HERE', second half of the B06 line). From his landing, above and behind:
+# Desmond going down his stairs, one foot landing on the next tread, the bare knee bending under his whole weight. No face.
+B["B06a2"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held at chest height on his landing, looking down the flight from behind him. Desmond is going down his "
+    "stairs away from the lens, caught mid-step: his right foot just landing flat on the next tread down, the back of that bare right knee "
+    "creasing as the leg bends and takes his whole weight, his left foot still on the tread above, one hand light on the dark handrail. The frame "
+    "holds him from the waist down — the back of his navy top's hem, his dark grey shorts, both bare legs and his trainers — with the "
+    "charcoal stair carpet and white nosing stripes falling away below him to the hall.",
+    R2_LEGS + " Wearing " + WARD["D-D1"] + ".",
+    D_STAIRS,
+    angle("B06a2", "his legs going down the stairs"),
+    focus("his landing foot and bending knee", deep=False).replace("the room behind", "the hall below"),
+    light("D-GREY-L", "his legs and the stairs"), colour("D-STAIRS-AM")],
+    NO_FACE + ", no looking back at the camera, no product anywhere, no knee strap, no walking stick, no second person, no readable "
+    "text, " + PLAIN_SHOES + ", no going up the stairs, no wrong number of legs, no extra hands"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

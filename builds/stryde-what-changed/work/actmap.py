@@ -131,12 +131,17 @@ BB("B05", A1, "And inside the joint there is a layer of cartilage doing the abso
    "one slow change over four seconds", STILL, "none", "no", "absent", "—", "NB2",
    EYE, PRO, "clean", "CU", "profile: the layer seen edge-on", "deep", "deep", L(ANAT, "L"), False, eg="EG05")
 TH("B06-TH", A1, "That part is ordinary. It happens to everybody. But here is what nobody explains. The load does not thin with it.")
-BB("B06", A1, "Seventeen times your bodyweight is still arriving, every step,", "Seventeen", "mechanism — load (pip)",
+BB("B06", A1, "Seventeen times your bodyweight", "Seventeen", "mechanism — load (pip)",
    "ANAT", "—", "—", "ANAT-A detailed, whole leg mid-step: glowing waves of force pour down through the thigh inside the limb and burst as a bright ripple at the spot below the kneecap, every step", "one wave arrives each step",
    "one wave a second", STILL, "none", "no", "absent", "—", "NB2",
    LOW, THR, "clean", "CU", "low = the weight coming down on it", "deep", "deep", L(ANAT, "L"), False,
    layout="pip", eg="EG02 host cut-out bottom-left · EG04 red box 'Seventeen times' · 17× overlay",
    notes="v5 image — user 'MORE EFFECTS, MAKE IT 2 BROLLS HERE' (split: this is the first half)")
+BB("B06a2", A1, "is still arriving, every step,", "step", "the load lands on every step",
+   "R2", "L-D-STAIRS", "D-D1", "from above and behind on his landing: Desmond going down his stairs, his foot landing on the next tread and the bare knee bending as it takes his whole weight, the flight falling away below", "one step down lands",
+   "one step, about a second, ordinary pace", STILL, "stairs: from the landing above, legs and back of shorts only, camera still, he walks away down the flight", "no", "absent", "—", "NB2",
+   HIGH, BEH, "clean", "MEDIUM", "high from behind = every step down, the weight going onto the knee", "foreground", "medium", L(D_GREY, "L"), False,
+   notes="user 2026-09-30 'BROLL HERE' — second half of the B06 line; no face, plain trainers")
 BB("B06b", A1, "in exactly the same place.", "same", "the same spot, every time",
    "ANAT", "—", "—", "ANAT-A ECU of the patellar tendon just below the kneecap: one tight glowing target spot, concentric rings of light rippling out through the tendon fibres from it as each impact lands on exactly the same point", "the rings ripple out from the one spot",
    "one ripple a second", STILL, "none", "no", "absent", "—", "NB2",
@@ -391,7 +396,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
-BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
+BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06a2', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B11-TH', 'B11-BR', 'B12', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
     out = []

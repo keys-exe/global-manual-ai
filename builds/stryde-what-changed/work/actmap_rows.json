@@ -763,7 +763,7 @@
   "beat": "B06",
   "type": "BR",
   "act": "Act 1",
-  "line": "Seventeen times your bodyweight is still arriving, every step,",
+  "line": "Seventeen times your bodyweight",
   "key": "Seventeen",
   "function": "mechanism — load (pip)",
   "subject": "ANAT",
@@ -803,6 +803,53 @@
    "time": "midday",
    "arc": "mechanism",
    "kelvin": 5600
+  },
+  "face": false
+ },
+ {
+  "beat": "B06a2",
+  "type": "BR",
+  "act": "Act 1",
+  "line": "is still arriving, every step,",
+  "key": "step",
+  "function": "the load lands on every step",
+  "subject": "R2",
+  "location": "L-D-STAIRS",
+  "story_day": "D-D1",
+  "framing": "from above and behind on his landing: Desmond going down his stairs, his foot landing on the next tread and the bare knee bending as it takes his whole weight, the flight falling away below",
+  "action": "one step down lands",
+  "pace": "one step, about a second, ordinary pace",
+  "camera": "locked off",
+  "staging": "stairs: from the landing above, legs and back of shorts only, camera still, he walks away down the flight",
+  "pin_end": "no",
+  "max": 6,
+  "product": "absent",
+  "visibility": "—",
+  "model": "NB2",
+  "layout": "full",
+  "eg": "",
+  "ledger": "",
+  "notes": "user 2026-09-30 'BROLL HERE' — second half of the B06 line; no face, plain trainers",
+  "duration": "pending-master",
+  "angle": {
+   "height": "high",
+   "side": "behind",
+   "fg": "clean",
+   "scale": "MEDIUM",
+   "why": "high from behind = every step down, the weight going onto the knee"
+  },
+  "focus": {
+   "plane": "foreground",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "Desmond's stair window, grey morning",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 6500
   },
   "face": false
  },
