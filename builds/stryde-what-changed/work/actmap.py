@@ -285,9 +285,9 @@ BB("B19a", A4, "Put one on one knee only. Leave the other bare.", "bare", "the s
    "one breath, about a second", STILL, "none", "no", "worn (one knee)", "VISIBLE", "NBP",
    HIGH, FRO, "clean", "CU", "high = her own view, the comparison", "product", "medium", L(M_SUN, "R"), False, notes="one strapped knee, one bare — the script's test (SIDE_RULE)")
 BB("B19b", A4, "Go to your own stairs and come down forwards.", "forwards", "the self-test",
-   "R1", "L-M-STAIRS", "M-D2", "from the landing above, looking down three-quarter: Maureen on the TOP stair takes her first step down, facing forwards, strap on the right knee, the left bare (fix: 'FROM THE FIRST STAIR ON THE TOP STAIR GOING DOWN'; edit of B18b v1)", "one step down, facing forwards",
-   "one step, about a second and a half", STILL, "stairs: facing forwards, camera still on the landing above, the flight below her", "no", "worn", "VISIBLE", "NBP",
-   HIGH, THR, "clean", "MEDIUM", "high from the landing = the whole flight still ahead of her", "product", "medium", L(M_SUN, "R"), False)
+   "R1", "L-M-STAIRS", "M-D2", "from partway down the flight, looking up three-quarter: Maureen at the top takes her first step down, the strap on the knee on the LEFT of the frame (her right), the other bare (fix: 'LEFT SIDE KNEE HAVE THE STRYDE STRAP, THEN SHE WILL GO DOWN THE STAIR'; edit of B18b v1)", "one step down, facing forwards",
+   "one step, about a second and a half", STILL, "stairs: facing forwards, camera still partway down the flight", "no", "worn", "VISIBLE", "NBP",
+   LOW, THR, "clean", "MEDIUM", "low three-quarter = the flight ahead of her, her first step", "product", "medium", L(M_SUN, "R"), True)
 TH("B19-TH2", A4, "You will know in a minute. Not because the arthritis has gone. It is still there, and nothing here changes that.", framing="punch")
 BB("B20", A4, "Because the weight is not landing on that band any more.", "weight", "mechanism — protection (pip)",
    "ANAT", "—", "—", "ANAT-A: the strap seated, the step pulse arriving and spreading off the tendon, the spot staying calm", "one step pulse, the spot stays cool",
@@ -397,21 +397,21 @@ BB("B18-BR", A4, "The thing people write to us about most is not the pain.", "wr
    "a few taps, about two seconds", STILL, "table, seated, camera still", "no", "absent", "—", "NB2",
    EYE, THR, "clean", "MEDIUM", "eye three-quarter = with her as she writes", "face", "shallow", L(KITCH, "R"), True, notes="covers B18-TH; no readable screen")
 BB("B19-BR", A4, "And you do not have to take my word for any of it.", "word", "try it yourself",
-   "R1", "L-M-STAIRS", "M-D2", "MEDIUM from a little above, chest to plimsolls: seated on her bottom stair, the open box of two on her lap, her hands lift one strap out (fix: 'DIFFERENT BROLL HERE')", "she lifts the strap out of the box",
-   "one lift, about a second and a half", STILL, "seated, hands and box, camera still", "no", "held", "the strap and the open box", "NBP",
-   HIGH, FRO, "clean", "MEDIUM", "high = her own view of what she is about to try", "product", "medium", L(M_SUN, "R"), False, notes="covers B19-TH")
-BB("B19-BR2", A4, "You will know in a minute.", "minute", "a minute",
-   "R1", "L-M-STAIRS", "M-D2", "CU side-on: her wrist and a plain gold watch as her hand rests on the square newel post at the foot of the stairs (fix: 'CUT IT INTO MORE THAN ONE BROLL')", "the second hand ticks on",
-   "a few ticks, about two seconds", STILL, "hand still on the newel post, camera still", "no", "absent", "—", "NB2",
-   EYE, PRO, "clean", "CU", "profile = the watch, the minute", "hands", "shallow", L(M_SUN, "R"), False, notes="covers B19-TH2 (1/3); no brand on the watch")
+   "R1", "L-M-STAIRS", "M-D2", "MEDIUM from a little above, chest to plimsolls: the STRYDE box on her lap on the bottom stair, the lid with its wordmark propped behind, both straps in the tray, her hands on the box's sides (fix: 'SHOW THE STRYDE PACKAGE'; edit of package_open.jpg)", "her hands settle the box on her lap",
+   "one small settle, about a second", STILL, "seated, box on the lap, camera still", "no", "packaged", "the box and both straps", "NBP",
+   HIGH, FRO, "clean", "MEDIUM", "high = her own view of the package", "product", "medium", L(M_SUN, "R"), False, notes="covers B19-TH")
+BB("B19-BR2", A4, "You will know in a minute.", "minute", "she notices",
+   "R1", "L-M-STAIRS", "M-D2", "CU on her stairs: Maureen pauses mid-flight, a quiet look of surprise softening into a small smile as she notices (fix: 'GIVE ME DIFFERENT BROLL HERE')", "the smile forms",
+   "one breath, about two seconds", STILL, "on the stairs, head and shoulders, camera still", "no", "absent", "—", "NBP",
+   EYE, THR, "clean", "CU", "three-quarter CU = her private moment of noticing", "face", "shallow", L(M_SUN, "R"), True, notes="covers B19-TH2 (1/3)")
 BB("B19-BR2b", A4, "Not because the arthritis has gone.", "arthritis", "still arthritic",
-   "R1", "L-M-STAIRS", "M-D2", "CU from above: seated on her bottom stair, her older hands with swollen arthritic knuckles resting on her bare left knee", "her fingers flex slowly once",
-   "one slow flex, about two seconds", STILL, "seated, hands on the knee, camera still", "no", "absent", "—", "NB2",
-   HIGH, FRO, "clean", "CU", "high = her own view of her hands", "hands", "shallow", L(M_SUN, "R"), False, notes="covers B19-TH2 (2/3); honest — the arthritis stays")
+   "S1", "L-CONSULT", "S1-D1", "CU in the consulting room: the surgeon's hand points with a pen to the narrowed joint space on a knee X-ray on the monitor (fix: 'GIVE ME DIFFERENT BROLL HERE')", "the pen traces the joint line",
+   "one slow trace, about two seconds", STILL, "desk, hand and monitor, camera still", "no", "absent", "—", "NB2",
+   EYE, FRO, "clean", "CU", "front = the X-ray, the plain fact", "hands", "shallow", L(CONS, "L"), False, notes="covers B19-TH2 (2/3); no text on the monitor")
 BB("B19-BR2c", A4, "It is still there, and nothing here changes that.", "still there", "honest",
-   "props", "L-KITCHEN", "K-D1", "CU on the kitchen windowsill: a plain weekly pill organiser beside a glass of water, her hand setting the glass down", "the glass settles on the sill",
-   "one set-down, about a second", STILL, "windowsill, hand and objects, camera still", "no", "absent", "—", "NB2",
-   EYE, THR, "clean", "CU", "three-quarter = the everyday, unchanged", "hands", "shallow", L(KITCH, "R"), False, notes="covers B19-TH2 (3/3); no labels, no readable text")
+   "R1", "L-KITCHEN", "K-D1", "MEDIUM side-on: Maureen at her kitchen window with a mug of tea, looking out at the garden, calm and at ease (fix: 'DIFFERENT BROLL HERE')", "she lifts the mug a little",
+   "one small sip, about two seconds", STILL, "standing at the window, camera still", "no", "absent", "—", "NBP",
+   EYE, PRO, "clean", "MEDIUM", "profile = the plain everyday, living with it", "face", "medium", L(KITCH, "R"), True, notes="covers B19-TH2 (3/3)")
 BB("B21-BR", A4, "So here is the choice. Keep aiming at the joint, which is where it hurts but not where the load is.", "joint", "aiming at the joint",
    "R2", "L-D-STAIRS", "D-D1", "CU seated on his bottom stair: Desmond's hand rubs clear gel in slow circles over his whole kneecap", "two slow circles of the hand",
    "two circles, about two seconds", STILL, "seated, knee and hand only, camera still", "no", "absent", "—", "NB2",
