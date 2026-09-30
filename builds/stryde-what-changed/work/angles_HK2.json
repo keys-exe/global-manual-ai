@@ -1101,12 +1101,12 @@
   "beat": "B10c",
   "group": "Act 2",
   "type": "BR",
-  "subject": "hands",
+  "subject": "R1",
   "height": "eye",
   "side": "profile",
   "scale": "CU",
   "fg": "clean",
-  "why": "profile: the gel sitting on the fingertip",
+  "why": "profile: the gel lying on the surface of the skin",
   "mirror_of": null,
   "mode": 1,
   "product_beat": false,
@@ -1116,7 +1116,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": "K-D1",
+  "story_day": "M-D1",
   "face": false,
   "light": {
    "source": "kitchen window over the sink",
@@ -1153,6 +1153,36 @@
    "key_side": "L",
    "time": "morning",
    "arc": "everyday: cool daylight",
+   "kelvin": 6500,
+   "why": ""
+  }
+ },
+ {
+  "beat": "B10d2",
+  "group": "Act 2",
+  "type": "BR",
+  "subject": "R1",
+  "height": "ground",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "ground three-quarter = the same step, the same load, pill or no pill",
+  "mirror_of": null,
+  "mode": 1,
+  "product_beat": false,
+  "focus": {
+   "plane": "foreground",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "M-D1",
+  "face": false,
+  "light": {
+   "source": "Maureen's landing window, grey morning",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
    "kelvin": 6500,
    "why": ""
   }
