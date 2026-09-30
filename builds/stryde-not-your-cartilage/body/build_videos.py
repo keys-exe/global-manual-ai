@@ -57,11 +57,11 @@ V = {
           "One action at a steady pace: he lifts a saucepan out of the cupboard and stands back up to full height, easy, the strap staying put on his knee.",
           "in_place", "worn", "no strap sliding as the knee straightens, no saucepan warping",
           [("the strap sliding as the knee straightens", "rigid-product clause; 'no strap sliding'"), ("his body warping on the rise", "one stand at a countable pace, start frame mid-crouch (§27G), PHYS-MOTION-C"), ("the saucepan changing shape", "NEG-WARP-C")]),
- # gen 2 (Fix "fix the product in the knee even the trouser going down"): v1 let the cuff fall and the strap fell with it to the ankle -> her hand guides the fabric down slowly over a strap that stays locked
- "B-11a": ("A woman's right leg beside a bed, an olive trouser leg rolled above the knee, the strap on the knee.",
-           "One action at a slow, careful pace: her hand smooths the trouser leg down over the knee, the fabric sliding over the strap, which stays locked on the knee under it.",
-           "in_place", "worn", "no strap falling, no strap coming off, no strap at the ankle, no strap moving with the fabric",
-           [("the strap falling with the fabric (v1)", "her hand guides the fabric slowly; the strap locked on the knee; negatives name falling and the ankle"), ("the fabric warping as it moves", "one slow smoothing, PHYS-MOTION-C"), ("the leg changing shape", "HOLD-C")]),
+ # gen 3 (Fix "It stays put under your trousers. Light enough you forget it's there. MAKE IT EXACTLY AS THE SCRIPT", user's go): gen 2 kept tugging the cuff and the trouser never came down -> the trouser leg comes all the way down over the strap and the clip ends on it covered
+ "B-11a": ("A woman's right leg by a bed, olive trouser rolled above the knee, the strap on the knee.",
+           "One action at a brisk pace, done in two seconds: she pushes the trouser leg down to her ankle; it ends hanging flat over the knee, the strap staying put under it.",
+           "in_place", "worn", "no strap falling, no strap at the ankle, no trouser staying rolled up",
+           [("the trouser never coming down (gen 2)", "the end state is named: trouser down to the ankle, flat over the knee, within the first two seconds"), ("the strap falling with the fabric (gen 1)", "the strap stays put under the fabric; negatives name falling and the ankle"), ("the fabric warping", "PHYS-MOTION-C: fabric lags and settles")]),
  "B-11b": ("Elaine, a petite white British woman of sixty-three with an ash-grey pixie cut, in a striped top, olive trousers and a yellow raincoat, at a street-market fruit stall.",
            "One action at an easy pace: she picks up one red apple from the crate and drops it into her paper bag, relaxed.",
            "in_place", "absent", "no strap visible, no knee visible, no readable signs",
@@ -78,11 +78,11 @@ V = {
              "One action at a steady pace: the strap slides up the last short way and seats on the tendon just below the kneecap, and the instant it seats the red point cools to calm blue.",
              "in_place", "worn", "no glow spreading onto the shin, no glow on the kneecap, no pause, no freeze",
              [("the red glow spreading instead of cooling", "motion names the cool on seating; negatives"), ("the anatomy warping", "RIG-RVD small drift, HOLD-C + NEG-WARP-C"), ("the strap climbing the kneecap", "seats just below the kneecap, rigid-product clause")]),
- # gen 2 (Fix "the result of the video is worst"): v1 asked for a running tap that is not in the frame, so Kling poured the kettle into a glass -> an action on what is in frame
- "B-08": ("Hassan, a tall thin Black man of seventy-two in a maroon polo and shorts at his kitchen worktop, the white kettle before him, strap on his right knee.",
-          "One small action at an easy pace: his right hand presses the kettle's switch down and rests on the worktop; his legs stay planted.",
-          "in_place", "worn", "no pouring, no water, no glass, no lifting the kettle",
-          [("liquid physics (pouring, a glass appearing)", "no water in the action at all; the kettle stays on its base; negatives name pouring and a glass"), ("the strap turning into a narrow band", "rigid-product clause, negatives name it"), ("his legs moving and the strap sliding", "legs planted, rigid-product clause")]),
+ # gen 3 (Fix "FILL THE GLASS WITH WATER", user's go): gen 2 only switched the kettle on -> he pours from the kettle into the clear glass beside it until it is full
+ "B-08": ("Hassan, tall and thin, in a maroon polo and shorts at his worktop, the white kettle and a clear glass before him, strap on his right knee.",
+          "One action at an easy, steady pace: he lifts the kettle and pours water into the glass beside it until the glass is full; his legs stay planted.",
+          "in_place", "worn", "no spilling, no water missing the glass, no second glass",
+          [("the water not landing in the glass (liquid physics)", "one steady stream into a named glass beside the kettle; negatives name spilling and missing"), ("the strap turning into a narrow band", "rigid-product clause, negatives name it"), ("his legs moving and the strap sliding", "legs planted, rigid-product clause")]),
  "B-12": ("Derek, a big-framed white British man of seventy-four, on the couch edge, strap on his right knee; a surgeon crouched in the soft foreground.",
           "One small action at a slow pace: the surgeon taps the top edge of the strap's shell once with one finger and nods; Derek stays still.",
           "in_place", "worn", "no strap being pressed out of shape, no surgeon turning to camera",

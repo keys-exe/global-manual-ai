@@ -2,12 +2,22 @@
  "act": "Act 2",
  "beat": "B-11a",
  "build": "stryde-not-your-cartilage",
- "stage": "broll",
- "title": "standing by the bed she lets her rolled trouser leg drop; it falls flat over the strap",
- "line": "It stays put under your trousers. Light enough you forget it's there.",
+ "fault": "“It stays put under your trousers. Light enough you forget it's there.”\nMAKE IT EXACTLY AS THE SCRIPT",
  "flow": [
   "video"
  ],
+ "line": "It stays put under your trousers. Light enough you forget it's there.",
+ "model": "kling-3.0 pro (Kie AI)",
+ "prompt": "{\"shot\":\"b_11a\",\"subject\":\"A woman's right leg beside a bed, an olive trouser leg rolled above the knee, the strap on the knee.\",\"camera\":{\"movement\":\"Camera already drifting on the first frame, never static at entry. Continuous low-amplitude breath sway throughout, roughly one cycle per two seconds, mostly vertical with a slight roll. Focus soft for a moment at entry, then settles. One deliberate reframe in the back half as the operator notices the subject sitting off-centre — corrects part of the way, not fully. Camera lags behind the subject, never anticipates it and never moves with it. Still drifting on the final frame.\",\"framing\":\"As in the start frame.\"},\"motion\":\"One action at a slow, careful pace: her hand smooths the trouser leg down over the knee, the fabric sliding over the strap, which stays locked on the knee under it. The strap keeps its exact shape, size and wordmark in every frame and moves only with the leg or hand that carries it; its rigid shell never bends, flexes or changes proportion. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no wordmark changing, no second strap, no strap sliding up or down the leg, no strap turning into a narrow band, no strap falling, no strap coming off, no strap at the ankle, no strap moving with the fabric, no second person appearing, no camera travelling with the subject, no zoom, no music, no speech\"}",
+ "stage": "broll",
+ "status": "regenerate",
+ "title": "standing by the bed she lets her rolled trouser leg drop; it falls flat over the strap",
+ "updatedAt": 1790745326583,
+ "videoAsset": "b44e6772c822458ab8d41ee2a4660877",
+ "videoAt": 1790729066870,
+ "videoConnector": "Kie AI",
+ "videoType": "video/mp4",
+ "videoUrl": "https://tempfile.aiquickdraw.com/k/a8ca148bfaf8c4f5959b64e6d9adde74_1_1790729059_7634.mp4",
  "videoVersions": [
   {
    "asset": "21271293d5312123c8c62d633f6c9614",
@@ -20,16 +30,18 @@
    "type": "video/mp4",
    "url": "https://tempfile.aiquickdraw.com/k/eb7ae2760cfb7f83908509eec617d3ff_1_1790698955_3940.mp4",
    "v": 1
+  },
+  {
+   "asset": "b44e6772c822458ab8d41ee2a4660877",
+   "at": 1790729066870,
+   "connector": "Kie AI",
+   "credits": 54,
+   "model": "kling-3.0 pro (Kie AI)",
+   "note": "fix the product in the knee even the trouser going down",
+   "size": 5518893,
+   "type": "video/mp4",
+   "url": "https://tempfile.aiquickdraw.com/k/a8ca148bfaf8c4f5959b64e6d9adde74_1_1790729059_7634.mp4",
+   "v": 2
   }
- ],
- "videoAsset": "21271293d5312123c8c62d633f6c9614",
- "videoType": "video/mp4",
- "videoUrl": "https://tempfile.aiquickdraw.com/k/eb7ae2760cfb7f83908509eec617d3ff_1_1790698955_3940.mp4",
- "videoConnector": "Kie AI",
- "videoAt": 1790698962951,
- "status": "regenerate",
- "fault": "fix the product in the knee even the trouser going down",
- "prompt": "{\"shot\":\"b_11a\",\"subject\":\"A woman's right leg from the thigh down beside a bed, an olive trouser leg rolled above the knee, the strap worn on the knee.\",\"camera\":{\"movement\":\"Camera already drifting on the first frame, never static at entry. Continuous low-amplitude breath sway throughout, roughly one cycle per two seconds, mostly vertical with a slight roll. Focus soft for a moment at entry, then settles. One deliberate reframe in the back half as the operator notices the subject sitting off-centre — corrects part of the way, not fully. Camera lags behind the subject, never anticipates it and never moves with it. Still drifting on the final frame.\",\"framing\":\"As in the start frame.\"},\"motion\":\"One action at a natural pace: she lets go of the rolled cuff and the olive trouser leg unrolls and falls down over the knee and the strap, hanging flat to the ankle. The strap keeps its exact shape, size and wordmark in every frame and moves only with the leg or hand that carries it; its rigid shell never bends, flexes or changes proportion. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no wordmark changing, no second strap, no strap sliding up or down the leg, no strap turning into a narrow band, no strap showing through the fabric as a bulge, no trousers bunching, no second person appearing, no camera travelling with the subject, no zoom, no music, no speech\"}",
- "model": "kling-3.0 pro (Kie AI)",
- "updatedAt": 1790729104285
+ ]
 }
