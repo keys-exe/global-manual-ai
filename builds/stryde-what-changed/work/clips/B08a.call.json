@@ -1,0 +1,33 @@
+{
+ "beat": "B08a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b08a\",\"subject\":\"A white British woman of sixty-nine with short white hair, seated side-on on the wooden bench of a glass bus shelter on a grey British residential street, a dusty-pink cardigan over a navy-and-white striped top, a navy skirt, white plimsolls, a brown handbag on her lap under both hands, parked cars and 1930s semis beyond. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already still on the first frame: she settles the handbag a little on her lap, smooths it with one hand, then turns her head slowly to glance up the road for the bus and back — calm and unhurried, an ordinary wait, real time. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no standing up, no bus arriving, no second person, no looking at the camera, no cars moving, no walking stick, no knee strap, no extra hands, no extra fingers, no readable text, no music, no speech, no slow motion\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_111706_9b645285-1aef-43ba-99f4-f95ac2ed5c6b.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "her face drifts off the sheet as she turns",
+   "prevented_by": "one slow head turn and back, 5 s cap, HOLD-C"
+  },
+  {
+   "risk": "hands warp on the handbag",
+   "prevented_by": "one small settle and smooth, NEG-WARP-C, 'no extra hands'"
+  },
+  {
+   "risk": "a bus or people wander in",
+   "prevented_by": "'no bus arriving, no second person, no cars moving'"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}
