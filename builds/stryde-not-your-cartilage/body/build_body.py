@@ -138,22 +138,21 @@ add("B-03a", "nano-banana-2", [SHEET["R2"], LOC["P2"][0]], photo([
   light("open sky under high thin cloud, the sun a pale disc high on the left", "him", "left", "flat bright overcast"),
   colour("flat bright overcast", 6500, "grey-green towpath, brown-green canal, the stone bridge", "he", "olive and denim", "the tweed cap", "muted, slightly cool"), S("SKIN-B1")],
   "no knee strap, no brace, no walking stick, no second person, no smile"))
-# v5 (Fix "MAKE THIS MAN STANDING HALFWAY DOWN THE STAIRS, GRIPPING THE HANDRAIL"): v4 had him climbing, turned three-quarter -> coming down, stopped halfway, facing down the flight to the camera
-# v4 (Fix "MAKE THE MAN MORE STRUGGLING BECAUSE OF THE KNEE PAIN, BOTH HANDS ON THE HANDRAIL"): v3 kept the plate but his pause read as calm -> visibly struggling, both hands on the handrail
-# v3 (Fix "FIX THE STAIR, USE THE LOCATION PLATE OF THE STAIR"): v2 invented a different hall -> the plate attached first, the shot taken from the plate's own viewpoint (NBP for reference fidelity)
-add("B-03b", "nano-banana-pro", [LOC["P3"][0], SHEET["R3"]], photo([
-  "A snapshot from just inside the front door, looking along the hall EXACTLY AS IN THE ATTACHED LOCATION PLATE — the same viewpoint, the same staircase: the straight flight of brown-and-gold patterned carpet "
-  "rising away from the camera along the left-hand sage wall, the white newel post and white spindles with the dark-stained handrail on the right-hand side of the flight, the shoe rack bottom left, the "
-  "hall running on past the stairs to the kitchen at the back, the woven wall hanging and the side table on the right. He is COMING DOWN the stairs and has stopped HALFWAY DOWN THE FLIGHT, "
-  "about six steps below him to the hall floor and six above him to the landing, FACING DOWN THE STAIRS towards the camera, one foot on the step below the other, CLEARLY STRUGGLING WITH KNEE PAIN: "
-  "BOTH HANDS gripping the dark handrail on his side of the flight hard, knuckles tight, his weight hauled onto his arms and off his right leg, the right knee bent and favoured, shoulders hunched, "
-  "his face screwed up in pain, eyes half shut, mouth tight, breathing hard. " + HASSAN[0].upper() + HASSAN[1:] +
-  ". He wears " + WARD["H-D1"] + ". No strap, no brace.",
-  "THE SAME PLACE, UNCHANGED from the attached plate: nothing moved, nothing added, the stairs the same width, pitch, carpet and banister.",
-  angle("B-03b", "him on the stairs"), focus("the nearest eye of Hassan"),
-  light("the front door's coloured-glass panel behind the camera and the half-landing window above", "him", "right", "warm morning daylight"),
-  colour("warm morning daylight", 5600, "pale sage walls, the brown-and-gold patterned stair carpet, the dark handrail", "he", "white and navy", "the woven wall hanging", "natural"), S("SKIN-B1")],
-  "no knee strap, no brace, no walking stick, no stairlift, no smile, no calm face, no relaxed posture, no one hand free, no climbing up, no back to the camera, no looking at the camera, no man on the bottom steps, no man at the top of the stairs, no different staircase, no banister on the left, no stairs rising to the right, no staircase turning, " + NEG_HANDS, scale="about half"))
+# v6 (Fix "USE THE STAIR LOCATION PLATE, MAKE THIS MAN STANDING IN THE MIDDLE OF THE DOWN STAIR, GRIPPING THE HANDRAIL"): v4/v5 lost the plate's wide view — the "person fills the frame" framing pulled the camera in and put him on the bottom steps -> an edit of the plate itself: keep the photo, add him mid-flight, small in frame
+# (v5: coming down, facing the camera; v4: both hands on the handrail, struggling; v3: the plate attached first)
+add("B-03b", "nano-banana-pro", [LOC["P3"][0], SHEET["R3"]], "\n\n".join([
+  "EDIT THE FIRST ATTACHED PHOTO (the hall and staircase). Keep that photo EXACTLY as it is — the same camera position just inside the front door, the same wide framing, the same lens, "
+  "light and colours: the whole straight flight of brown-and-gold patterned stairs rising along the left-hand sage wall from the bottom step to the landing, the white newel post and white "
+  "spindles with the dark handrail on the right of the flight, the shoe rack bottom left, the coats, the hall running back to the kitchen, the side table, the radiator and the dark door on the right. "
+  "Nothing is moved, cropped, zoomed or restyled.",
+  "ADD ONE MAN, and only this: the man in the second attached photo — " + HASSAN + ". He wears " + WARD["H-D1"] + ". He is COMING DOWN the stairs and has stopped IN THE MIDDLE OF THE FLIGHT, "
+  "on about the seventh step, with about six steps below him down to the hall floor and six above him up to the landing, FACING DOWN THE STAIRS towards the camera, one foot on the step below the other. "
+  "He is small in this wide view — about a third of the frame height — his feet well up the flight, never at the bottom. BOTH HANDS grip the dark handrail on the right of the flight, knuckles tight, "
+  "his weight hauled onto his arms and off his right leg, the right knee bent and favoured, shoulders hunched, his face tight with knee pain. His scale matches the stairs: each step comes up to about his shin.",
+  "He is lit by the photo's own light and casts a soft shadow on the stairs the same way the banister does. The skin, clothes and hands are real and unretouched; one head, two arms, two legs, "
+  "every visible hand with one thumb and four fingers.",
+  "AVOID: no change to the room, no crop, no zoom in, no new camera angle, no man at the bottom of the stairs, no man on the hall floor, no man at the top of the stairs, no climbing up, no back to the camera, "
+  "no one hand free, no smile, no looking at the camera, no knee strap, no brace, no walking stick, no second person, no text, no AI face, no plastic skin, no extra fingers, no fused fingers"]))
 add("B-03c", "nano-banana-2", [SHEET["R1"], LOC["P1"][0]], photo([
   "A snapshot caught mid-action from a phone held a little above her: she is half-way up out of the burgundy armchair, both hands pushing down on its wooden arms, her body leaning forward over her knees, "
   "a wince on her face. " + FOLAKE[0].upper() + FOLAKE[1:] + ". She wears " + WARD["F-D1"] + ". No strap, no brace.",
