@@ -1,1 +1,11 @@
 {"taskId": "66b058e7becd131e91f70664af508420", "created": true}
+{
+  "taskId": "66b058e7becd131e91f70664af508420",
+  "state": "success",
+  "credits": 252.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/seedance/1790799141872-z7x72dncuh.mp4"
+  ],
+  "saved": "hooks/HKA/HKA-SH03_v1.mp4"
+}
