@@ -24,7 +24,7 @@ R("HKA-SH01", g, "SHOT", "C2", "high", "behind", "WIDE", "clean", "high over the
 R("HKA-SH02", g, "SHOT", "N", "low", "three-quarter", "MEDIUM", "clean", "low from below on the steps: she owns the stairs — resolve", ["SH-MED", "SH-LOW"], "eyes", "medium", st,
   "L002", "HER, three steps down, turns her head back up to her daughter without stopping, bag in her right hand, left hand free of the rail", "F2", ["N"], "L-STATION", speaking=True, day=d, cue="on 'love.'", pace="one step per second", ing=["N", "L-STATION", "VOICE-N"])
 R("HKA-SH03", g, "SHOT", "N", "eye", "profile", "FULL", "clean", "profile as she steps down the last stairs and onto the train — distance growing from the daughter", ["SH-PROFILE"], "deep", "deep", st,
-  "", "HER walks down the last steps and steps through the open train doors, brisk and even", "F9", ["N"], "L-STATION", day=d, cue="as she steps inside", pace="brisk, one step per second", ing=["N", "L-STATION"], moving=True)
+  "", "HER walks down the last steps and steps through the open train doors, brisk and even", "F2", ["N"], "L-STATION", day=d, cue="as she steps inside", pace="brisk, one step per second", ing=["N", "L-STATION"], moving=True)
 ct = L("carriage windows", "L", "midday", "After — cool overcast, open", 6500)
 R("HKA-SH04", g, "SHOT", "C2", "eye", "three-quarter", "MCU", "clean", "three-quarter on the daughter, breathless, staring across the table — the witness", ["SH-34"], "eyes", "shallow", ct,
   "L003", "the daughter drops into the seat opposite, catching her breath, staring at her mother", "F1", ["C2"], "L-CARRIAGE", speaking=True, day=d, cue="on 'happen?'", pace="still, chest rising", ing=["C2", "L-CARRIAGE", "VOICE-C2"])
