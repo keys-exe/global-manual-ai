@@ -138,14 +138,18 @@ add("B-03a", "nano-banana-2", [SHEET["R2"], LOC["P2"][0]], photo([
   light("open sky under high thin cloud, the sun a pale disc high on the left", "him", "left", "flat bright overcast"),
   colour("flat bright overcast", 6500, "grey-green towpath, brown-green canal, the stone bridge", "he", "olive and denim", "the tweed cap", "muted, slightly cool"), S("SKIN-B1")],
   "no knee strap, no brace, no walking stick, no second person, no smile"))
-add("B-03b", "nano-banana-2", [SHEET["R3"], LOC["P3"][0]], photo([
-  "A snapshot from the foot of the stairs looking up the whole flight: he stands IN THE MIDDLE OF THE STAIRCASE, on the seventh step of fourteen, with about six carpeted steps "
-  "visible below his feet running down to the camera and about six more rising above his head to the landing, so he is clearly halfway up, never at the bottom and never at the top. "
-  "Both feet on that one step, his right hand gripping the dark handrail hard, pausing with a wince, breathing out. " + HASSAN[0].upper() + HASSAN[1:] + ". He wears " + WARD["H-D1"] + ". No strap, no brace.",
-  plate("P3", LOC["P3"][1], LOC["P3"][2]), angle("B-03b", "him on the stairs"), focus("the nearest eye of Hassan"),
+# v3 (Fix "FIX THE STAIR, USE THE LOCATION PLATE OF THE STAIR"): v2 invented a different hall -> the plate attached first, the shot taken from the plate's own viewpoint (NBP for reference fidelity)
+add("B-03b", "nano-banana-pro", [LOC["P3"][0], SHEET["R3"]], photo([
+  "A snapshot from just inside the front door, looking along the hall EXACTLY AS IN THE ATTACHED LOCATION PLATE — the same viewpoint, the same staircase: the straight flight of brown-and-gold patterned carpet "
+  "rising away from the camera along the left-hand sage wall, the white newel post and white spindles with the dark-stained handrail on the right-hand side of the flight, the shoe rack bottom left, the "
+  "hall running on past the stairs to the kitchen at the back, the woven wall hanging and the side table on the right. He stands IN THE MIDDLE OF THAT FLIGHT, halfway up, about six steps below him and "
+  "six above, turned three-quarter to the camera, both feet on one step, his right hand gripping the dark handrail hard, pausing with a wince, breathing out. " + HASSAN[0].upper() + HASSAN[1:] +
+  ". He wears " + WARD["H-D1"] + ". No strap, no brace.",
+  "THE SAME PLACE, UNCHANGED from the attached plate: nothing moved, nothing added, the stairs the same width, pitch, carpet and banister.",
+  angle("B-03b", "him on the stairs"), focus("the nearest eye of Hassan"),
   light("the front door's coloured-glass panel behind the camera and the half-landing window above", "him", "right", "warm morning daylight"),
   colour("warm morning daylight", 5600, "pale sage walls, the brown-and-gold patterned stair carpet, the dark handrail", "he", "white and navy", "the woven wall hanging", "natural"), S("SKIN-B1")],
-  "no knee strap, no brace, no walking stick, no stairlift, no smile, no looking at the camera, no man on the bottom steps, no man at the foot of the stairs, no man at the top of the stairs, " + NEG_HANDS))
+  "no knee strap, no brace, no walking stick, no stairlift, no smile, no looking at the camera, no man on the bottom steps, no man at the top of the stairs, no different staircase, no banister on the left, no stairs rising to the right, no staircase turning, " + NEG_HANDS, scale="about half"))
 add("B-03c", "nano-banana-2", [SHEET["R1"], LOC["P1"][0]], photo([
   "A snapshot caught mid-action from a phone held a little above her: she is half-way up out of the burgundy armchair, both hands pushing down on its wooden arms, her body leaning forward over her knees, "
   "a wince on her face. " + FOLAKE[0].upper() + FOLAKE[1:] + ". She wears " + WARD["F-D1"] + ". No strap, no brace.",
@@ -159,13 +163,14 @@ REF_EXACT = ("EXACTLY THE PRODUCT IN THE ATTACHED FRONT PHOTO, copied shape for 
              "its top edge rising into two rounded pointed peaks either side of a wide shallow notch, a brushed chrome slide at each end where the band enters the shell, the grey stryde wordmark "
              "on the shell's lower body. Never a loose flat strap, never a dog-bone or bow-tie shape, never a small shell.")
 add("B-04", "nano-banana-pro", PR(FRONT, "stryde_refs/product_tq_left.jpg", BACK) + [SHEET["R2"], LOC["P2"][0]], photo([
-  "A close snapshot on the towpath: his hand held out at chest height, the strap standing in his open palm as a closed ring, the front of the shell and its wordmark square to the phone, "
-  "the strap large, filling about half the width of the frame. " + REF_EXACT + " " + HELD("open palm") +
+  "A CLOSE-UP on the towpath, the phone a hand's length from the strap: his open palm held out towards the phone, the strap standing on it as a closed ring, the front of the shell "
+  "and its wordmark square to the phone, the strap FILLING ABOUT THREE QUARTERS OF THE FRAME WIDTH. TRUE SIZE: the shell is WIDER THAN HIS WHOLE PALM, overhanging his hand on both sides by "
+  "about a finger's width, and about as tall as his thumb is long; the ring of band behind it is about as wide as his palm. It is a full-size adult knee strap, never a small bracelet or a finger ring. " + REF_EXACT + " " + HELD("open palm") +
   " His hand is " + DEREK + "'s hand: big, weathered, sun-mottled. The canal and the stone bridge soft behind.",
   plate("P2", LOC["P2"][1]), angle("B-04", "the strap in his palm"), focus("the strap and its wordmark"),
   light("open sky, the cloud broken, sun high on the left", "the strap and his hand", "left", "late-morning daylight", face=False),
   colour("clear daylight", 5600, "the canal's brown-green, the grey stone bridge", "he", "a navy fleece cuff", "the matte-black strap and its grey wordmark", "natural")],
-  NEG_HELD + ", no face, no strap worn, no dog-bone shell, no bow-tie shell, no loose open strap, no small shell, no band hanging loose off the hand", scale="about half"))
+  NEG_HELD + ", no face, no strap worn, no dog-bone shell, no bow-tie shell, no loose open strap, no small shell, no strap smaller than the palm, no bracelet-sized strap, no band hanging loose off the hand", scale="about half"))
 add("MECH-02", "nano-banana-2", PR(FRONT, BACK), anat(
   "THE STATE: one tight hot red point glows on the patellar tendon just below the kneecap — " + P.ANAT_A_POINT_TIGHT + " The strap sits just below it on the shin, about to seat, not yet on the point.",
   prod=True, neg_extra=", no glow spreading onto the shin, no glow on the kneecap"))
@@ -195,27 +200,29 @@ add("B-08", "nano-banana-pro", PR("stryde_refs/worn_front.jpg", FRONT, "stryde_r
   light("the window over the sink on the kitchen's far wall", "him", "left", "bright morning sun along the worktop"),
   colour("bright morning sun", 5600, "cream units, the dark speckled worktop, white tiles", "he", "maroon and charcoal", "the white kettle", "natural, warm")],
   NEG_WORN + ", " + NEG_BAND + ", no looking at the camera, no water splashing everywhere, " + NEG_HANDS, scale="about half"))
-# v2 (Fix "make this woman using short, wrong wear of product"): v1 in trousers, seen in profile, drew the band being fastened -> shorts, three-quarter front, the strap a closed ring on the shin
-add("B-09a", "nano-banana-pro", PR("stryde_refs/worn_front.jpg", FRONT) + [SHEET["R4"], LOC["P5"][0]], photo([
-  "A close snapshot from knee height, a little to her right: she sits on the edge of her bed in shorts, her bare right leg straight out towards the phone, the knee large in frame. "
-  "The strap is already on and closed — a CLOSED RING around her upper shin, a hand's width below the kneecap, the front of its shell, its peaks, notch and grey wordmark facing the phone, "
-  "exactly like the attached worn photo but sitting lower on the shin — and both her hands rest flat on the two sides of the shell, about to slide it up to the kneecap. Nothing is being fastened. "
+# v3 (Fix "THE PRODUCT IS WRONG FIX IT"): v2 drew a generic flat band with a square buckle — the strap far from its seat and seen at an angle came out as a stock knee band -> straight front view like the worn photo, the strap only a finger's width below its seat so it reads as the worn product, the peaks and notch named and the worn photo attached first
+add("B-09a", "nano-banana-pro", PR("stryde_refs/worn_front.jpg", FRONT, "stryde_refs/product_tq_left.jpg") + [SHEET["R4"], LOC["P5"][0]], photo([
+  "A close snapshot from straight in front of her knee at knee height, framed like the attached worn photo: she sits on the edge of her bed in shorts, her bare right leg towards the phone, the knee large in frame. "
+  "The strap is on her leg EXACTLY AS IN THE ATTACHED WORN PHOTO — the same wide matte-black moulded shell across the front of the leg, its top edge rising into two pointed peaks either side of a wide notch, "
+  "a chrome slide at each side of the leg, the grey stryde wordmark centred on the shell, the black knit band running round behind — but sitting a finger's width lower, just below the kneecap, not yet touching it. "
+  "Both her hands rest flat on the two outer ends of the shell by the chrome slides, fingertips pointing up, about to push it the last small way up. Nothing is being fastened. "
   + ELAINE[0].upper() + ELAINE[1:] + " — only her hands, forearms and legs in frame. She wears " + WARD["E-D3"] + ". " +
   PROD + " " + RIGID + " " + P.WORDMARK_LOCK + " " + P.LEG_SKIN + " " + NOT_BAND,
   plate("P5", LOC["P5"][1]), angle("B-09a", "her leg and hands"), focus("the strap and her hands"),
   light("the sash window on the bedroom's south wall", "her leg", "right", "bright morning daylight", face=False),
   colour("bright morning daylight", 5600, "dove-grey walls, the striped duvet, pine floorboards", "she", "navy-and-white stripes and olive shorts", "the black strap", "natural")],
-  P.fill(P.NEG_SEAT, "right") + ", " + P.NEG_WORDMARK + ", " + P.NEG_OBSERVED + ", " + NEG_BAND + ", no trousers, no rolled trouser leg, no open band, no band ends in her hands, no strap on the knee yet, no face, " + NEG_HANDS, scale="about half"))
-# v2 (Fix "wrong product"): v1 drew a dog-bone pad with no peaks -> the inside photo attached first and copied, the strap large and square to the phone
-add("B-09b", "nano-banana-pro", PR("stryde_refs/back_inner.jpg", FRONT, BACK) + [SHEET["R4"], LOC["P5"][0]], photo([
-  "A close snapshot looking down: sitting on the bed she holds the second strap up in both hands and has turned it round so the inside of the shell faces the phone square-on, the strap large in frame. "
-  "The inside of the shell is EXACTLY as in the attached photo of the inside, copied shape for shape: the same outline as the front of the shell — two rounded pointed peaks either side of a wide shallow notch "
-  "along the top edge, a chrome slide at each end — never a dog-bone or bow-tie outline; the band is a closed ring of black knit elastic looping away behind it. " + P.PAD_BACK_SHOT + " " + P.INNER_PAD +
-  " Her hands are " + ELAINE + "'s hands: small, slim, fine-skinned, the striped cuffs at the wrists.",
+  P.fill(P.NEG_SEAT, "right") + ", " + P.NEG_WORDMARK + ", " + P.NEG_OBSERVED + ", " + NEG_BAND + ", no square buckle, no rectangular buckle, no flat straight-edged band, no shell without peaks, no trousers, no open band, no band ends in her hands, no hands covering the wordmark, no face, " + NEG_HANDS, scale="about half"))
+# v3 (Fix "THE PRODUCT IS WRONG, MAKE THE PRODUCT EXACTLY IN THE PRODUCT REFERENCE"): v2 held the strap as a closed ring and it came out goggle-shaped -> held flat and opened out exactly as the inside photo is shot, overhead, square-on
+add("B-09b", "nano-banana-pro", PR("stryde_refs/back_inner.jpg", "stryde_refs/inner_face.jpg", FRONT) + [SHEET["R4"], LOC["P5"][0]], photo([
+  "A close overhead snapshot looking straight down: sitting on the bed she holds the second strap FLAT and OPENED OUT across her two palms above the striped duvet, its inside face up to the phone, "
+  "EXACTLY AS THE STRAP IS SHOWN IN THE ATTACHED INSIDE PHOTO, copied shape for shape: the shell lying flat in the middle, its inside face showing the mid-grey pad inside a thin matte-black rim, its outline "
+  "two rounded pointed peaks either side of a wide shallow notch along the top edge, a chrome slide at each end, and the black knit band running straight out from each slide in the photo's layout. "
+  "The strap fills about two thirds of the frame. " + P.INNER_PAD +
+  " Her hands are " + ELAINE + "'s hands: small, slim, fine-skinned, the striped cuffs at the wrists, cupped under the band ends, never covering the pad.",
   plate("P5", LOC["P5"][1]), angle("B-09b", "the strap in her hands"), focus("the pad inside the shell"),
   light("the sash window on the bedroom's south wall", "the strap and her hands", "right", "bright morning daylight", face=False),
   colour("bright morning daylight", 5600, "the striped duvet below", "she", "navy-and-white stripes", "the mid-grey pad", "natural")],
-  P.NEG_INNER_PAD + ", " + P.NEG_HELD_P + ", no dog-bone outline, no bow-tie outline, no shell without peaks, no loose open strap, no face, " + NEG_HANDS, scale="about half"))
+  P.NEG_INNER_PAD + ", " + P.NEG_HELD_P + ", no closed ring, no goggle shape, no mask shape, no dog-bone outline, no bow-tie outline, no shell without peaks, no fingers over the pad, no face, " + NEG_HANDS, scale="about half"))
 add("B-10", "nano-banana-pro", PR(FRONT, "stryde_refs/worn_bent.jpg") + [SHEET["R3"], LOC["P4"][0]], photo([
   "A snapshot caught mid-action from low down: he is crouched at the bottom kitchen cupboard, one hand on the open cupboard door, the other reaching in for a saucepan, his right knee deeply bent, "
   "the strap on it staying put, easy. " + HASSAN[0].upper() + HASSAN[1:] + ". He wears " + WARD["H-D2"] + ". " + WORN_BENT,
@@ -255,10 +262,11 @@ add("B-13a", "nano-banana-pro", PR(FRONT, "stryde_refs/package_open.jpg") + [LOC
   colour("bright morning daylight", 5600, "the glass table on the cream rug", "she", "a yellow-and-green wax-print cuff", "the matte-black box", "natural, warm")],
   P.NEG_PACKAGE + ", " + P.NEG_WORDMARK + ", no face, " + NEG_HANDS, scale="about half"))
 add("CARD-13b", "gpt-image-2-5-sunburst-image-to-image", PR(FRONT, "stryde_refs/product_tq_left.jpg"), "\n\n".join([
-  "Product photograph, vertical 9:16. Two identical straps float side by side, slightly overlapping and angled towards each other, against a deep navy-black background with a soft top light and a faint "
-  "cool rim on their edges, the lower third of the frame and the top quarter empty dark space for text added later.",
+  "Product photograph, vertical 9:16. Two identical straps REST ON A TABLE side by side, each standing on its band as a closed ring, the front of each shell and its wordmark to the camera, slightly angled "
+  "towards each other, sitting ON the surface with real contact shadows beneath them: a dark walnut tabletop running back into a deep navy-black background, a soft top light and a faint cool rim on their edges, "
+  "the lower third of the frame (the table's front edge area) and the top quarter kept as plain dark space for text added later.",
   PROD, RIGID, P.WORDMARK_LOCK, P.SIZE_OBJECT,
-  "AVOID: " + ", ".join([P.NEG_WORDMARK, P.NEG_OBSERVED, "no text, no offer text, no price, no URL, no badge, no third strap, no single strap, no box, no hands, no people, no props, no reflections of text"])]))
+  "AVOID: " + ", ".join([P.NEG_WORDMARK, P.NEG_OBSERVED, "no text, no offer text, no price, no URL, no badge, no third strap, no single strap, no box, no hands, no people, no props, no reflections of text, no floating straps, no straps hovering above the table, no missing shadows"])]))
 add("B-14", "nano-banana-pro", PR(FRONT, "stryde_refs/worn_front.jpg") + [SHEET["R2"], LOC["P2"][0]], photo([
   "A snapshot from low down on the towpath, caught mid-stride: he walks towards the camera along the path, the stone bridge behind him, his left foot forward, arms swinging easy, the strap on his right knee, "
   "a small contented smile. " + DEREK[0].upper() + DEREK[1:] + ". He wears " + WARD["D-D2"] + ". " + WORN,
