@@ -3,32 +3,33 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"b06\",\"subject\":\"A premium 3D anatomical model of a single knee on a near-black field, low three-quarter, under load: four glowing force arrows on the thigh and one white pointer arrow, all aimed at one glowing spot on the patellar tendon below the kneecap. Exactly as in the start frame.\",\"camera\":{\"movement\":\"A slow, steady push-in straight towards the patellar tendon over the whole clip, no pan, no tilt, no orbit.\",\"framing\":\"Starts as in the start frame, ends close on the patellar tendon and the glowing spot.\"},\"motion\":\"Already under load on the first frame, the leg itself stays where it is. ALL FIVE ARROWS MOVE: the four force arrows slide DOWN along the thigh and the pointer arrow slides IN from the dark field, all five travelling onto the one spot below the kneecap and arriving together; as they arrive the spot flares brighter and the thigh tenses slightly, then the arrows ease back a little and travel in again — about once a second, same spot. The arrows keep their shape and count. As they arrive, the view closes in slowly on the patellar tendon until it fills much of the frame: its long fibres, its banded grain and the glowing spot on it in crisp detail. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens and straightens along its length, and the whole structure compresses a few degrees. The anatomy takes the weight — it is not a still model with light played over it.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no arrows changing shape, no new arrows, no arrows disappearing, no glow down the shin, no second spot, no leg moving, no second limb, no text, no camera orbit, no rotation, no slow motion, no music, no speech, no slow motion\"}",
- "duration": 6,
+ "prompt": "{\"shot\":\"b06\",\"subject\":\"A premium 3D anatomical model of a whole leg mid-step on a near-black field, low three-quarter, the knee upper right: curved white-gold wave-fronts of light inside the thigh, a hot glow in the knee joint and an impact flare with rings of light and a swirl of glowing particles at the patellar tendon below the kneecap, all inside the translucent body shell. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already under load on the first frame, the leg itself stays where it is. The curved wave-fronts of light TRAVEL DOWN through the inside of the thigh one after another towards the knee, like pulses of force, about one arriving every second; as each one reaches the knee the flare at the tendon below the kneecap bursts brighter, a new ring of light ripples out from it and fades, and the particle swirl turns faster for a moment, then settles. The thigh tenses slightly with each arrival. The flare stays on its one spot. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens and straightens along its length, and the whole structure compresses a few degrees. The anatomy takes the weight — it is not a still model with light played over it.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no wave-fronts leaving the leg, no light outside the body shell, no energy flying in from outside, no second spot, no glow down the shin, no leg moving, no second limb, no text, no numbers, no camera orbit, no zoom, no slow motion, no music, no speech, no slow motion\"}",
+ "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_215836_f898adbd-fc7c-47b3-9528-088a1df6aa36.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_120636_d2f3cfb3-87cd-4895-938a-4c42ce7d829b.png",
  "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 2,
+ "generation": 3,
  "risks": [
   {
-   "risk": "the arrows morph, multiply or vanish as they move",
-   "prevented_by": "count and shape named fixed ('ALL FIVE', 'keep their shape and count'), one simple slide in, 'no new arrows, no arrows disappearing'"
+   "risk": "the wave-fronts morph, multiply or leave the leg",
+   "prevented_by": "'travel down through the inside of the thigh', HOLD-C + NEG-WARP-C, 'no wave-fronts leaving the leg, no light outside the body shell'"
   },
   {
-   "risk": "the push-in turns into an orbit or the leg moves",
-   "prevented_by": "slow push-in only, 'no camera orbit, no rotation', 'the leg itself stays where it is', 'no leg moving'"
+   "risk": "the leg moves or the camera orbits",
+   "prevented_by": "'the leg itself stays where it is', locked-off camera, 'no leg moving, no camera orbit'"
   },
   {
-   "risk": "a second limb edge appears (seen in v1)",
-   "prevented_by": "'no second limb' + the push-in crops the frame edges away"
+   "risk": "the flare wanders or a second spot appears",
+   "prevented_by": "'the flare stays on its one spot', 'no second spot, no glow down the shin'"
   }
  ],
- "approved_by": "user board Fix on B06 video: MOVING ALL ARROW, DETAILED FOCUS ON THE TENDON + chat FIX (2026-09-29)",
- "fix_note": "Q prompt/motion: arrows held still, locked camera, pointer drifted → all five arrows travel in onto the one spot each second, keeping shape and count; slow push-in onto the patellar tendon for detail; 'no second limb'; start frame kept (confirmed image v4)"
+ "approved_by": "user: 'B06 GO' 2026-09-30",
+ "user_go": "user: 'B06 GO' (answered the explicit third-video question, 2026-09-30)",
+ "fix_note": "v2 fault: arrows left the frame as the push-in closed in, and the user asked for more effects → new image v6 (wave-fronts inside the thigh, impact flare), locked camera so nothing leaves frame, one wave arriving per second"
 }

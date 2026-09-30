@@ -486,7 +486,7 @@ B["B06"] = clip("B06",
     "particle swirl turns faster for a moment, then settles. The thigh tenses slightly with each arrival. The flare stays on its one spot.",
     "no wave-fronts leaving the leg, no light outside the body shell, no energy flying in from outside, no second spot, no glow down the shin, "
     "no leg moving, no second limb, no text, no numbers, no camera orbit, no zoom, no slow motion",
-    2.9, hi=6, anat=True,
+    1.7, hi=6, anat=True,   # line now "Seventeen times your bodyweight" (B06a2 takes the rest) ≈ 1.7 s → 3 s
     risks=[{"risk": "the wave-fronts morph, multiply or leave the leg", "prevented_by": "'travel down through the inside of the thigh', HOLD-C + NEG-WARP-C, 'no wave-fronts leaving the leg, no light outside the body shell'"},
            {"risk": "the leg moves or the camera orbits", "prevented_by": "'the leg itself stays where it is', locked-off camera, 'no leg moving, no camera orbit'"},
            {"risk": "the flare wanders or a second spot appears", "prevented_by": "'the flare stays on its one spot', 'no second spot, no glow down the shin'"}])
