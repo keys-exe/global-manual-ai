@@ -356,20 +356,21 @@ EFX_OK = lambda s: (s.replace("no shockwave, no burst, ", "").replace("no arrows
                      .replace("no sparks, ", "").replace("no explosion, ", "")
                      .replace("mid-intensity and clearly glowing — not at peak, leaving headroom to escalate", "at full, blazing intensity")
                      .replace(", sharp-edged and small, never spreading down onto the shin bone or across the joint; the bones and muscles around it stay calm", ", the centre of all the effects"))
+# B06 v7 — user Fix 'REROLL THIS IMAGE / FOCUS ON THE KNEE / CLOSE UP / ADD MORE EFFECTS' (v6: the whole leg mid-step). Now a
+# close-up of the knee joint itself, low three-quarter, under a step's load, with more effects — all inside the limb. Pip kept.
 B["B06"] = (NB2, [], EFX_OK(anat(
-    "Seen from a low three-quarter angle, the whole leg CAUGHT MID-STEP from the hip down: the foot landing below the frame, the knee "
-    "flexed, the thigh muscles tensed and bulging with the load, in rich anatomical detail — the quadriceps heads with fine striation, "
-    "the kneecap, the patellar tendon as a taut banded ribbon, the worn thin cartilage. THE EFFECTS, BOLD AND DRAMATIC: FIVE brilliant "
-    "white-gold wave-fronts of light pour DOWN through the inside of the thigh like pulses of force, stacked one behind another, each "
-    "trailing a bright streaming glow; glowing threads of energy light up along the muscle fibres as the force passes; a hot red-orange "
-    "heat glow floods the knee joint; and where the lowest wave hits the patellar tendon below the kneecap it BURSTS into a big bright "
-    "impact flare — three wide rings of light rippling out through the tendon and the translucent tissue, a flare of white at the core, "
-    "and a swirl of hundreds of glowing particles spinning around the knee inside the body shell. All of "
-    "the light lives INSIDE the leg: nothing flies in from outside. THE KNEE SITS IN THE UPPER RIGHT OF THE FRAME; the lower-left third "
-    "of the frame is calm near-black field with nothing in it (a person will be placed there later). "
+    "Seen from a low three-quarter angle, CLOSE UP ON THE KNEE: the knee joint fills most of the frame — the lower thigh entering from "
+    "the top, the kneecap, the patellar tendon as a taut banded ribbon, the top of the shin leaving at the bottom — flexed and taking a "
+    "step's full load, in rich anatomical detail with fine striation on the quadriceps tendon and the worn thin cartilage in the joint. "
+    "THE EFFECTS, BOLD AND DRAMATIC, ALL AROUND THE KNEE: brilliant white-gold wave-fronts of force pour down through the lower thigh "
+    "into the joint, one behind another, each trailing a streaming glow; bright threads of energy race along the tendon fibres; a hot "
+    "red-orange heat glow floods the joint space; and at the patellar tendon just below the kneecap a big impact flare BURSTS — a "
+    "blazing white core, four wide rings of light rippling out through the tendon and the translucent tissue, arcs of light "
+    "crackling across the joint surfaces, and a swirl of hundreds of glowing particles spinning around the knee inside the body shell. "
+    "All of the light lives INSIDE the leg: nothing flies in from outside. The knee sits slightly right of centre; the lower-left corner "
+    "stays calm, empty field (a person will be placed there later). "
     + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
-    view="viewed from a low three-quarter angle, foreshortened, the whole leg from the hip down with the knee joint in the upper right of "
-         "the frame, the lower-left third empty field")
+    view="viewed from a low three-quarter angle, close up on the knee joint, which fills most of the frame slightly right of centre")
     .replace("no individual muscle fibres, ", "").replace("never fine striation and never individual fibres", "fine striation readable")))
 
 # B06b v2 — user Fix 'ADD MORE EFFECT': five rings, fibre streaks, heat halo, particle swirl.
