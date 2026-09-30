@@ -632,36 +632,17 @@ B["B10a2"] = (NB2, [], anat(
          "the upper shin below", stack="ANAT-B", slots={"[STACK]": "the surrounding soft tissue"})
     .replace("no clothing, ", "no clothing other than the faint grey knit sleeve, no strap, no brace, no product, "))
 
-# B10b2 — "and it was never going sideways." (user 'BROLLS HERE', second half of the B10b line). Floor level, front-on, waist-down:
-# Maureen walks towards the lens across her kitchen, bare knees bending straight forwards over her feet. No brace.
-B["B10b2"] = (NB2, ["R1", "P4"], photo([
-    "A snapshot from a phone lying on the kitchen floor, straight in front of her, looking up a little. She is walking towards the lens "
-    "across her kitchen, caught mid-stride: her right foot planted flat on the tiles nearest the lens, that bare knee bent a little and "
-    "pointing straight ahead over the foot, her left foot lifting behind. Close: the frame holds her legs from the hem of the navy skirt "
-    "down to her plimsolls, both knees square to the lens, the kitchen floor, table legs and sage-green units behind going soft.",
-    R1_BODY + " " + R1_LEGS + " Wearing white canvas plimsolls, plain, no logo, and a navy skirt ending just above the knee.",
-    KITCHEN,
-    angle("B10b2", "her knees and feet"),
-    focus("her nearest knee", deep=False).replace("the room behind", "the kitchen behind"),
-    light("KITCH-L", "her legs"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a navy skirt and white plimsolls").replace("the faded orange of the old photograph", "the white plimsolls")],
-    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no brace, no sleeve, no walking stick, no second person, "
-    "no knees turned inwards or outwards, no readable text, no logos on the plimsolls, no wrong number of legs"))
-
-# B06a2 — "is still arriving, every step," (user 'BROLL HERE', second half of the B06 line). From his landing, above and behind:
-# Desmond going down his stairs, one foot landing on the next tread, the bare knee bending under his whole weight. No face.
-B["B06a2"] = (NB2, ["R2", "P2"], photo([
-    "A snapshot from a phone held at chest height on his landing, looking down the flight from behind him. Desmond is going down his "
-    "stairs away from the lens, caught mid-step: his right foot just landing flat on the next tread down, the back of that bare right knee "
-    "creasing as the leg bends and takes his whole weight, his left foot still on the tread above, one hand light on the dark handrail. The frame "
-    "holds him from the waist down — the back of his navy top's hem, his dark grey shorts, both bare legs and his trainers — with the "
-    "charcoal stair carpet and white nosing stripes falling away below him to the hall.",
-    R2_LEGS + " Wearing " + WARD["D-D1"] + ".",
-    D_STAIRS,
-    angle("B06a2", "his legs going down the stairs"),
-    focus("his landing foot and bending knee", deep=False).replace("the room behind", "the hall below"),
-    light("D-GREY-L", "his legs and the stairs"), colour("D-STAIRS-AM")],
-    NO_FACE + ", no looking back at the camera, no product anywhere, no knee strap, no walking stick, no second person, no readable "
-    "text, " + PLAIN_SHOES + ", no going up the stairs, no wrong number of legs, no extra hands"))
+# B10b2 v2 — "and it was never going sideways." User Fix 'GIVE ME DIFFERENT IMAGE HERE' (v1: Maureen walking towards the lens).
+# ANAT-A in profile, low: the knee as a hinge, bent forwards mid-step in one flat plane — the joint only ever bends forwards.
+B["B10b2"] = (NB2, [], anat(
+    "Seen from the side, in exact profile, from slightly below: the whole knee bent forwards mid-step like a hinge — the thigh angled "
+    "down from the upper left to the knee pointing to the right, the shin angled back down to the lower left, the joint between them folding in one flat plane square to the "
+    "lens, the femur and tibia meeting at the hinge with the kneecap riding in front of it. Everything in the leg lines up in that one "
+    "plane: nothing twists, nothing turns or leans sideways, the foot pointing straight ahead in line with the knee. The quadriceps, "
+    "hamstrings and calf in rich detail around the hinge. "
+    + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from the side, in exact profile, from slightly below, the bent knee joint large in the middle of the frame with the thigh "
+         "above-left, the knee pointing right and the shin below-left"))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)

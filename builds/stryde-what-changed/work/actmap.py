@@ -186,9 +186,9 @@ BB("B10b", A2, "A hinged brace stops the knee going sideways,", "brace", "the mi
    "one flex, about a second", STILL, "hands: one movement", "no", "absent", "—", "NB2",
    HIGH, THR, "clean", "CU", "high = looking down at it, done with it", "hands", "medium", L(KITCH, "L"), False, ledger="F6", notes="unbranded")
 BB("B10b2", A2, "and it was never going sideways.", "sideways", "the knee only bends forwards (F6)",
-   "R1", "L-KITCHEN", "M-D1", "front-on at floor level, waist-down: Maureen walks across her kitchen towards the lens, her bare knees bending straight forwards over her feet, no wobble", "two ordinary steps towards the lens",
-   "two steps, about two seconds", STILL, "kitchen: floor level front-on, knees and feet only, camera still", "no", "absent", "—", "NB2",
-   GROUND, FRO, "clean", "CU", "ground front = the knee tracks straight ahead, never sideways", "foreground", "medium", L(KITCH, "L"), False, ledger="F6", notes="user 2026-09-30 'BROLLS HERE' — second half of the B10b line; bare knees, no brace")
+   "ANAT", "—", "—", "ANAT-A profile, low: the knee as a hinge mid-step, thigh and shin bent forwards at the joint in one flat plane, the tendon spot glowing below the kneecap; the leg square to the lens, nothing turned sideways", "the knee bends forwards and straightens once, in one plane",
+   "one bend and straighten, about two seconds", STILL, "none", "no", "absent", "—", "NB2",
+   LOW, PRO, "clean", "CU", "low profile = the hinge seen flat on, bending only forwards", "deep", "deep", L(ANAT, "L"), False, ledger="F6", notes="user 2026-09-30 'BROLLS HERE' — second half of the B10b line; v2 'GIVE ME DIFFERENT IMAGE HERE' (v1: Maureen walking towards the lens)")
 BB("B10c", A2, "Gel sits on the skin.", "Gel", "the mistake (F6)",
    "hands", "L-KITCHEN", "K-D1", "CU a plain white tube; clear gel squeezed onto two fingertips", "one squeeze",
    "one squeeze, about a second", STILL, "hands: one movement", "no", "absent", "—", "NB2",
