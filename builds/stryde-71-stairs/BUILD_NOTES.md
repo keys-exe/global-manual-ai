@@ -277,5 +277,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
       - R-05a video Fix: "dont make her turn it over". Generation 2: hands still, the strap flat, the same side up.
       - P-01a and T-03a videos: generation 2 from the new confirmed images, each with a fix_note.
     - Act 4 videos v1: M-01a through M-06a (work/video_act4.py), all pass preflight. Anatomy shots use a completely still camera.
+    - The Old board is full (1 GB), so the R-03a and R-05a v1 videos stay on Current as earlier versions until the user decides (a second Old board?).
     - M-03a runs 8 s as one clip, not split: E6 needs 7.6 s, and the §27G 6 s cap applies to human motion, not an anatomy pulse.
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.

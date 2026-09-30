@@ -58,3 +58,7 @@ T-03a 5f75b9e40485150603f8f5276b15dbc7
 P-01a img v5 f88fb68bec0226a2d5cbe4c01741e8a2 (Current); img v4 → Old 1724249d5c670e2cd94694ebb965110a; video v1 → Old 95a311d434a6ddb068f454075067dd9b
 P-01b video v2 8ec6ea1e866300628c90880bae29352e; video v1 → Old af57c0d500319c232c9b9f485528ffc7
 T-01a dad66bf27372bb3487f881ca3c77b2b5 · T-01b 412f02ce80b489d72abe2303da5f20aa · T-02a e4b14d52fbc52f2d730775f9a675bf07 · T-02b f43d05c4d3fdfac76f4934093c556814 · T-03a 736fbf3be7b4b5f1f0bee8167a917ed1 (videos v1)
+2026-09-30 · images: P-01a v6 8ec8547ce30673bd6ec6eaf6a4f49aea (v5 → Old 517b04633f7ecf4ed0fbb96991371437) · T-03a v2 1ecc93c3c9b5268490377e3981b19218 (v1 → Old 072b5e119623df23e6a7ec7fd94ab396; video v1 → Old 3093d943fb166bfbce65935626d4883f)
+2026-09-30 · Act 3 v1: R-01a 49dde48a · R-02a 5efb658b · R-03a 318d8800 · R-04a 0eae9309 · R-05a d475415e · R-06a 20e8386b · R-07a 918937e0
+2026-09-30 · gen 2: T-03a 12d1c601 · R-03a 02aa3f9e · R-05a aeb87e9a (R-03a/R-05a v1 stay on Current: Old board storage full, 1 GB)
+2026-09-30 · Act 4 v1: M-01a 2c9a3b9c · M-01b d0ec3d36 · M-02a 851d80cc · M-03a 334265b4 · M-05a 28b9d1c4 · M-05b 1d8c0d42 · M-06a 319f9c22
