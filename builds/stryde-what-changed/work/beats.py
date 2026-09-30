@@ -908,6 +908,69 @@ B["B14c"] = (NBP, ["B14CV2", "PF"], (
     "AVOID: no small strap, no strap narrower than the leg, no strap over the kneecap, no strap lower on the shin, no change to the "
     "anatomy, no change to the light, no second strap, no blank shell, no text other than the wordmark"))
 
+# ── 2026-09-30 Fix round 4 ──────────────────────────────────────────────────────────────────────────────
+# B13 v5 — User Fix 'CHANGE THE IMAGE, MAKE SURE THE PRODUCT IS RIGHT AND THE SIZE'. A new image: seen from above, the strap lying
+# front-face-up across her ONE open palm like the product photo laid flat (HELD_GRIPS 'open palm'; FP01, FP02, FP05, FP06, FP11, FP12).
+B["B13"] = (NBP, ["PF", "R1", "P4"], photo([
+    "A snapshot from a phone held above her hand, looking straight down, in her kitchen. The strap in Image 1, COPIED EXACTLY — same "
+    "shell, band, slides and wordmark, nothing redesigned — lies front face UP across her ONE open, upturned right palm, seen from above "
+    "exactly as Image 1 shows it: the matte-black shell with its two rounded peaks and the deep rounded notch between them, a chrome "
+    "slide with three engraved chevrons at each end, the grey lowercase stryde wordmark centred beneath the notch, sharp and readable. "
+    "TRUE SIZE: the shell is about 12 cm across and 5 cm tall — it lies across her palm with each chrome slide just past the edges of her "
+    "palm, no wider than her hand, about as tall as her thumb is long. Her fingers are relaxed and slightly curled at the shell's lower "
+    "edge, her thumb resting beside it; nothing covers the shell, the peaks, the notch or the wordmark. The soft black knit band comes out "
+    "of both slides and hangs down over the sides of her hand in one closed, slack loop, bending like fabric. Close-up: the strap about "
+    "half the frame width, her palm and wrist around it, the pale-oak table soft below.",
+    P.WORDMARK_LOCK + " " + P.SIZE_HELD,
+    "Her hand: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, thin skin over the knuckles, "
+    "ONE plain gold wedding ring, the dusty-pink cardigan cuff at the wrist.",
+    KITCHEN.replace("THE SAME KITCHEN as the attached location plate", "Below, THE SAME KITCHEN TABLE as the attached location plate"),
+    "THE CAMERA ANGLE: a camera held directly above her hand, looking straight down at the strap in her palm. This exact angle.",
+    focus("the product and its wordmark", deep=False).replace("the room behind", "the table below"),
+    light("KITCH-R", "the strap and her hand"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan cuff").replace("the faded orange of the old photograph", "the brushed chrome slides")],
+    NO_FACE + ", no person beyond her hand and wrist, no second hand, " + P.NEG_WORDMARK + ", " + PROD_NEG
+    + ", no rounded rectangle shell, no oval shell, no flat straight top edge, no U-shaped shell, no cup shape, no stiff band, no band cut "
+    "off at the slides, no strap bigger than her hand, no strap much smaller than her palm, no second ring, no fingers across the "
+    "wordmark, no fingers on the slides, no strap worn, no packaging, no box"))
+
+# B14a v4 — User Fix 'MAKE SURE THE STRAP STAY IN THAT PLACE' (the place = on the tendon just below the kneecap, the earlier Fix; v3's
+# edit left it high and turned). A new image, front-on: seated on her bottom stair, the strap ALREADY SEATED below the kneecap, her
+# fingertips just leaving its ends; the video then only lifts her hands away — the strap never moves (PLACE_LOCK_C; FP03, FP11).
+B["B14a"] = (NBP, ["PF", "PW", "R1", "P1"], photo([
+    "A snapshot from a phone held at knee height, straight in front of her, as she sits on her bottom stair with her right knee bent at a "
+    "right angle towards the lens and her right foot flat on the hall floor in a white canvas plimsoll. The strap in Image 1, COPIED "
+    "EXACTLY — same shell, band, slides and wordmark, nothing redesigned — is worn on her right leg exactly as in Image 2: seated ON THE "
+    "PATELLAR TENDON directly below the kneecap, square to the lens, the grey stryde wordmark level and readable. Her two hands rest "
+    "lightly at the shell's two outer ends, fingertips on the chrome slides, just about to lift away. The whole kneecap is bare above it. "
+    "Close-up: her right knee fills the middle of the frame from mid-thigh to mid-shin, the strap about a third of the frame wide, her "
+    "hem and hands in frame, the stairs soft behind.",
+    P.PLACE_LOCK_C.replace("[SIDE]", "right") + " " + P.SIZE_WORN,
+    "SHE IS MAUREEN, THE SAME WOMAN as in the attached character sheet (Image 3): sixty-nine, short and slight. Her legs are thin and very "
+    "pale, never tanned — faintly freckled older skin with soft creases over a bony knee, a few thread veins. Her hands are small, "
+    "thin-skinned older hands with age spots and one plain gold wedding ring. Wearing a sage-green cardigan over a white T-shirt, a "
+    "mid-blue denim skirt ending just above the knee, white canvas plimsolls.",
+    M_STAIRS,
+    "THE CAMERA ANGLE: an eye-level camera at the height of her knee, seen from the front of her right knee and the strap. This exact angle.",
+    focus("the product and its wordmark", deep=False).replace("the room behind", "the hall behind"),
+    light("M-SUN-R", "her knee, the strap and her hands"), colour("M-STAIRS-SUN")],
+    NO_FACE + ", no torso above the waist, " + P.NEG_PLACE.replace('[OTHER_SIDE]', 'left') + ", " + P.NEG_WORDMARK + ", " + PROD_NEG
+    + ", no strap over the kneecap, no strap at kneecap height, no strap on the side of the knee, no strap turned sideways, no strap low "
+    "on the shin, no strap on the left leg, no tanned skin, no bare feet, no second person, no extra fingers"))
+
+# B14b v4 — User Fix 'FIX THE PRODUCT SHOWING THE STRAP' (v3: the pad right, but the band cut off in short stubs at the slides — not a
+# whole strap; FP05). Edit of v3: the same inside and pad, and the whole black knit band continuing from both slides as one closed loop.
+REFS["B14BV3"] = ("B14b v3 — the scene to edit (Image 1)", "0395fa6e-9c5e-4761-9fec-9fe8a5a48fe3")
+B["B14b"] = (NBP, ["B14BV3", "PBI", "PI"], (
+    "Edit Image 1. Keep everything in Image 1 exactly as it is — the same kitchen, light, framing and hand, and the same inside of the "
+    "shell with its grey grooved pad and smooth comma-shaped ridge, the same chrome slides, the same size in her hand. Change ONLY the "
+    "band: show THE WHOLE STRAP. The black coarse-knit elastic band does not stop at the slides — it runs out of the top slide and out of "
+    "the bottom slide and joins behind her hand into ONE CLOSED, continuous loop, soft and slack, hanging down past her wrist and bending "
+    "like fabric, exactly as the band loops through its slides in Image 2 and hangs from the real strap in Image 3. Two small black "
+    "keeper loops sit on the band. The pad stays facing the lens. No wordmark on this side.\n\n"
+    "AVOID: no band cut off at the slides, no short band stubs, no open band ends, no stiff band, no band standing up in a ring, no "
+    "second strap, no change to the pad, no change to the ridge, no wordmark, no change to the hand, no change to the kitchen, no extra "
+    "fingers"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
