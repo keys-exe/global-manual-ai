@@ -619,6 +619,34 @@ B["B10b"] = (NB2, ["R1", "P4", "K9"], photo([
     NO_FACE + ", no person beyond her hands, no product anywhere, no knee strap, no readable text, no labels, no brand names, no logos, "
     "no second person, no extra hands, no extra fingers, no bent metal"))
 
+# B10a2 — "and leaves that band carrying everything." (user 'BROLLS HERE', second half of the B10a line). ANAT, three-quarter: a
+# faint grey knit sleeve squeezing the whole knee evenly, and under it the patellar tendon alone lit and taut — still carrying the load.
+B["B10a2"] = (NB2, [], anat(
+    "Seen from eye level, three-quarter front, close: the knee under load, wrapped from the lower thigh to the upper shin in a faint, "
+    "translucent grey knit sleeve — a soft ghostly compression tube of fine knit texture squeezing the WHOLE joint evenly all the way "
+    "round, pressing the same everywhere. Under it, the anatomy stays readable, and one structure alone is lit: the patellar tendon, "
+    "running from the lower edge of the kneecap to the top of the shin as one clear pearly band, drawn taut, with its one tight spot "
+    "glowing just below the kneecap — still carrying all of the load while the sleeve round everything changes nothing. "
+    + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from eye level, three-quarter front, the sleeved knee large in the middle of the frame with the lower thigh above and "
+         "the upper shin below", stack="ANAT-B", slots={"[STACK]": "the surrounding soft tissue"})
+    .replace("no clothing, ", "no clothing other than the faint grey knit sleeve, no strap, no brace, no product, "))
+
+# B10b2 — "and it was never going sideways." (user 'BROLLS HERE', second half of the B10b line). Floor level, front-on, waist-down:
+# Maureen walks towards the lens across her kitchen, bare knees bending straight forwards over her feet. No brace.
+B["B10b2"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone lying on the kitchen floor, straight in front of her, looking up a little. She is walking towards the lens "
+    "across her kitchen, caught mid-stride: her right foot planted flat on the tiles nearest the lens, that bare knee bent a little and "
+    "pointing straight ahead over the foot, her left foot lifting behind. Close: the frame holds her legs from the hem of the navy skirt "
+    "down to her plimsolls, both knees square to the lens, the kitchen floor, table legs and sage-green units behind going soft.",
+    R1_BODY + " " + R1_LEGS + " Wearing white canvas plimsolls, plain, no logo, and a navy skirt ending just above the knee.",
+    KITCHEN,
+    angle("B10b2", "her knees and feet"),
+    focus("her nearest knee", deep=False).replace("the room behind", "the kitchen behind"),
+    light("KITCH-L", "her legs"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a navy skirt and white plimsolls").replace("the faded orange of the old photograph", "the white plimsolls")],
+    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no brace, no sleeve, no walking stick, no second person, "
+    "no knees turned inwards or outwards, no readable text, no logos on the plimsolls, no wrong number of legs"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
