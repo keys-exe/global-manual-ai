@@ -179,3 +179,7 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
   - The v1 `imageUrl`s written on 2026-09-29 were guessed from timestamps and return 403. The job ids (`imageJob`) are right; the real files are in `renders/gap1/`.
   - Videos: confirmed frames get §35A calls via `work/gap_video.py` (length = line span in v9 + 0.9 s, min 3). Sent: A2-M2b, A2-M5, A2-M7, A3-B0, A3-B5, HK3-B4 (`calls/*.gapv1.json`, Kie Kling 3.0).
   - A1-B1b and A1-B2b are stairs shots, so §35A wants a pinned end frame (the board has no end-frame step). Asked the user: waive the pin, or make end frames.
+  - Videos v1 on Current 2 (review): A2-M2b, A2-M5, A2-M7, A3-B0, A3-B5 and HK3-B4, Kie Kling 3.0, 522 credits.
+    - A2-M5 and A3-B5 first timed out at createTask. Kie has no task list to check, so they were retried once; the first sends may also have been charged.
+    - A3-B0 and A3-B5 are split into 15 MB parts on the board.
+    - A2-M7's download was cut off and was fetched again from the same task (`kie.py wait`).
