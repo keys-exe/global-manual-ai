@@ -552,7 +552,54 @@ B["B10a2"][0]["motion"] = B["B10a2"][0]["motion"].replace(
     "quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens",
     "The patellar tendon visibly tightens").replace(", and the whole structure compresses a few degrees", "")
 
-START = {"B10a2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_130409_3a6ea112-6592-45b6-bf5b-93efcd5e52d8.png",
+# B10c image v1 (user CONFIRM GO 2026-09-30): Maureen seated side-on, clear gel glossy on her bare knee, her hand resting on her thigh.
+# "Gel sits on the skin." ≈ 1.5 s → 3 s.
+B["B10c"] = clip("B10c",
+    "An older white woman seated on a wooden kitchen chair, seen side-on at knee height: a glossy film of clear gel on the front of her "
+    "bare right knee, her hand with a gold wedding ring resting on her thigh just above it, a pink cardigan cuff, a navy skirt hem.",
+    "Already moving on the first frame: her fingertips slide down from her thigh and smooth the gel once over the front of the knee, "
+    "the glossy film spreading thin and still sitting on the surface of the skin, then her hand comes to rest on the knee — one "
+    "unhurried stroke, about a second and a half.",
+    "no gel soaking in, no gel dripping, no rubbing hard, no second hand, no face, no second person, no label on the tube, no readable text, "
+    "no extra fingers",
+    1.5, hi=4,
+    risks=[{"risk": "fingers warp as they smooth the gel", "prevented_by": "one slow stroke then rest, HOLD-C + NEG-WARP-C, 'no extra fingers'"},
+           {"risk": "the gel vanishes or drips", "prevented_by": "'still sitting on the surface of the skin', 'no gel soaking in, no gel dripping'"},
+           {"risk": "a face or second hand appears", "prevented_by": "'no second hand, no face, no second person'"}])
+
+# B10d image v1 (user CONFIRM GO): her hands holding a plain blister pack over the kitchen table, a glass of water beside.
+# "A painkiller turns the alarm off" ≈ 1.7 s → 3 s.
+B["B10d"] = clip("B10d",
+    "An older white woman's two hands in pink cardigan cuffs, a gold wedding ring, holding a plain silver blister pack of small white "
+    "tablets over a wooden kitchen table, a plain glass of water beside them.",
+    "Already moving on the first frame: her thumb presses down on one tablet and it pops out through the foil into her other palm — "
+    "one press, about a second — then her hands hold still. The glass of water stays where it is.",
+    "no tablets multiplying, no pack changing shape, no printing on the pack, no readable text, no face, no second person, "
+    "no extra hands, no extra fingers",
+    1.7, hi=4,
+    risks=[{"risk": "fingers or the pack warp during the press", "prevented_by": "one press then still, HOLD-C + NEG-WARP-C, 'no pack changing shape'"},
+           {"risk": "extra tablets or hands appear", "prevented_by": "'no tablets multiplying', 'no extra hands, no extra fingers'"},
+           {"risk": "text appears on the blister pack", "prevented_by": "'no printing on the pack, no readable text'"}])
+
+# B10d2 image v1 (user CONFIRM GO): Maureen at the foot of her stairs, legs only, one foot on the hall carpet, one on the bottom stair,
+# hand on the rail. "and leaves the load exactly where it was." ≈ 2.3 s → 4 s.
+B["B10d2"] = clip("B10d2",
+    "An older white woman's legs at the foot of her stairs, seen from low in the hall: a navy skirt hem, bare legs, white canvas "
+    "plimsolls, one foot on the oatmeal hall carpet and one on the bottom stair, her hand on the white banister rail above.",
+    "Already moving on the first frame: she steps up onto the bottom stair — her weight shifts onto the foot on the stair and that bare "
+    "knee bends and takes her whole weight as she rises onto it — one ordinary step, about a second and a half, then she stands on the "
+    "stair. She stays in frame.",
+    "no second step, no walking out of frame, no stumbling, no face, no second person, no knee strap, no brace, no logos on the plimsolls, "
+    "no extra legs",
+    2.3, hi=5,
+    risks=[{"risk": "legs warp as she steps up", "prevented_by": "one step at an ordinary pace, start frame mid-stance, HOLD-C + NEG-WARP-C, 'no extra legs'"},
+           {"risk": "she climbs on and leaves frame", "prevented_by": "'then she stands on the stair. She stays in frame', 'no second step, no walking out of frame'"},
+           {"risk": "the camera follows her", "prevented_by": "locked-off tripod clause"}])
+
+START = {"B10c": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140203_48b079aa-50b4-48f7-888a-f2c5779f802c.png",
+         "B10d": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140212_e6684a2f-35c2-4d68-91bd-def7c5820b7a.png",
+         "B10d2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140214_02e1997c-f151-4fc5-b250-3d1e36a9b3a2.png",
+         "B10a2": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_130409_3a6ea112-6592-45b6-bf5b-93efcd5e52d8.png",
          "B10a": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_124139_4d54cb95-4893-4963-aeaa-56169d8697f8.png",
          "B10b": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_123301_214e72ba-2159-428e-bfeb-3619729c8fca.png",
          "B09-BR": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_122112_f986eef2-5bbd-465a-920b-fd552b19e4e5.png",
