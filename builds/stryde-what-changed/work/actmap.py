@@ -247,17 +247,17 @@ BB("B16c", A3, "Two hundred thousand people wearing one.", "thousand", "social p
    "one step per second, normal walking speed", STILL, "walking toward camera: feet/knee only, 3 steps", "no", "worn", "VISIBLE", "NBP",
    GROUND, FRO, "clean", "CU", "ground = steps and legs", "product", "deep", L(STREET_PM, "L"), False, eg="200,000+ overlay (post)")
 BB("B17a", A3, "Ten seconds to put on.", "Ten", "feature (F8)",
-   "R2", "L-D-STAIRS", "D-D3", "front-on CU on his stairs, his navy tracksuit leg rolled up above the knee, both hands at the strap's two ends, just seated under the kneecap (edit of B16a)", "his hands let go of the seated strap",
+   "R2", "L-D-STAIRS", "D-D3", "front-on CU on his stairs, the navy tracksuit leg bunched above the bare knee, both hands pressing the strap's two ends into place under the kneecap (v2: edit of B17c v1)", "his hands let go of the seated strap",
    "one release, about a second", STILL, "hands: let go, the strap never moves", "no", "seated", "VISIBLE", "NBP",
    HIGH, FRO, "clean", "CU", "high = his own view down: on in one move (FP03, FP10)", "product", "medium", L(D_SUN, "R"), False, ledger="F8")
 BB("B17b", A3, "No sores, no rolling down,", "sores", "feature (F8)",
-   "R1", "L-M-STAIRS", "M-D2", "front-on ECU, her fingertip resting on the smooth unmarked skin just below the strap's lower edge (edit of B15)", "her fingertip slides once along the edge",
-   "one slide, about a second", STILL, "hands: large in frame, one movement", "no", "worn", "VISIBLE", "NBP",
-   LOW, FRO, "clean", "ECU", "knee height, front-on: the edge against the skin", "product", "medium", L(M_SUN, "L"), False, ledger="F8")
+   "R1", "L-M-STAIRS", "M-D2", "front-on at knee height: Maureen coming down onto her bottom stair, the strap still exactly in place under the kneecap after the whole flight (v2: user 'GIVE ME DIFFERENT BROLL HERE')", "one step down, the strap stays put",
+   "one step, about a second", STILL, "stairs: front-on knee CU, camera still", "no", "worn", "VISIBLE", "NBP",
+   LOW, FRO, "clean", "CU", "knee height, front-on: after the stairs it has not moved", "product", "medium", L(M_SUN, "L"), False, ledger="F8")
 BB("B17c", A3, "and nobody can see it.", "nobody", "REVEAL→CONCEALED (§9D, F8)",
-   "R2", "L-D-STAIRS", "D-D3", "front-on CU: his hand holds the rolled-up navy tracksuit hem just above the strapped knee, about to let it drop (edit of B16a)", "the trouser leg falls and settles",
-   "one drop, about a second", STILL, "none", "no", "worn", "REVEAL", "NBP",
-   EYE, FRO, "clean", "CU", "front-on: the strap disappears under the trouser", "product", "medium", L(D_SUN, "L"), False, ledger="F8")
+   "R2", "L-D-STAIRS", "D-D3", "side-on, waist-down: Desmond comes down his stairs in navy tracksuit bottoms, the trouser leg smooth over the knee — nothing shows (v2: user 'GIVE ME DIFFERENT BROLL HERE')", "one easy step down",
+   "one step, about a second", STILL, "stairs: side, waist-down, camera still", "no", "worn", "REVEAL", "NBP",
+   EYE, PRO, "clean", "MEDIUM", "profile: a plain trouser leg, nothing to see", "product", "medium", L(D_SUN, "L"), False, ledger="F8")
 
 # ============================================================ ACT 4 — proof, the test, the offer, the close
 TH("B18-TH", A4, "The thing people write to us about most is not the pain.")

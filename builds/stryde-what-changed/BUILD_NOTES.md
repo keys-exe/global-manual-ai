@@ -293,3 +293,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Built as image edits of the worn shots that came out right (B16a v1 for Desmond, B15 v1 for Maureen). Act map rows B17a (HIGH FRO), B17b (LOW FRO, ECU), B17c (EYE FRO) moved to front-on; B15 and B16a relabelled LOW FRO (knee-height camera) so the angle check passes.
 - **B17b** (her fingertip on smooth unmarked skin below the strap's edge) and **B17c** (his hand holding the bunched navy tracksuit hem above the strapped knee) read right.
 - **B17a**: flaw — the tracksuit leg was not rolled up: the strap sits OVER the trouser fabric. Next go: build it from B17c's frame (knee bare, hem bunched above) with his hands at the slide ends.
+
+### 2026-09-30 — "CONFIRM AND FIX THOSE"
+- **Old 2 board** https://claude.ai/artifact/GeqiDkeUa1eYhvuFnt87Gq created (the Old board's 1 GB store is full); Current 2's build doc now points `boards.old` at it. Replaced renders from B15 on go there. Hourly Fix-check prompt updated to use it.
+- **Videos (images confirmed): B15, B16a, B16c** (4 s each, Kie Kling 3.0). The strap stays in place in all three; the shell wobbles slightly in B15 and B16a; B16c's last half-second passes the lens.
+- **Image Fixes:** B15-BR v2 ("FIX THE PRODUCT": the strap in her palm swapped for front.webp — peaks, notch, chevrons right); B16b v2 ("FIX THE SIZE, TOO BIG": smaller); B17a v2 ("GIVE ME DIFFERENT IMAGE HERE": from B17c v1 — hem bunched above the bare knee, both hands pressing the strap's ends); B17b v2 ("GIVE ME DIFFERENT BROLL HERE": Maureen coming down onto her bottom stair, the strap still in place — "no rolling down"); B17c v2 ("GIVE ME DIFFERENT BROLL HERE": Desmond on his stairs side-on in navy tracksuit bottoms, nothing shows). Act map rows B17a–c updated; angles pass.
+- v1s moved to Old 2 (docs + files), deleted from Current 2.
