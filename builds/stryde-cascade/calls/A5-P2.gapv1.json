@@ -1,0 +1,45 @@
+{
+ "beat": "A5-P2",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"Sixty days, and you keep the straps.\": from this frame, the camera holds; his hand sets his house keys down beside the open box, one placing, 2s. Handheld phone, a slight natural sway, the camera never follows her. The box and exactly two small straps stay still and rigid; one hand only. No morphing, no extra fingers, no music.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap1/A5-P2.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "Sixty days, and you keep the straps.",
+ "motion_plan": "the camera holds; his hand sets his house keys down beside the open box, one placing, 2s",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP09",
+  "HT06"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ]
+}

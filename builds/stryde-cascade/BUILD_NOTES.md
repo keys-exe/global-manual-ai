@@ -171,3 +171,32 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
   - Lines left on the face (the direct-to-camera ones): "A bad knee is not a knee problem.", "I need you to take this seriously.", "Here is the sequence…", "I am not telling you that to frighten you.", "Sometimes that is part of it…", "I am not paid by them.", "That is not a study…", "You do not have to believe me.", "From the Stryde site.", "That is the one I would rather you did."
   - 25 frames rendered (Higgsfield nano_banana_pro, job ids `work/fill_gaps_jobs.json`), `renders/gap1/`.
 - Storage: the Current board is full, so the 25 went on a new **Current 2** board https://claude.ai/artifact/9pV9xM3ew68PMV2zMZAsJS (same template, BOARD_ROLE "current", db/assets/downloads; build doc with `boards.current2`, also added on Current). Cards: imageStatus review, status planned, `motionPlan` = "Video will show". Next: on the user's Confirm, video calls per §35A (Kie Kling 3.0, lengths from `assemble.py --lengths`), then the new rows in `variants.json` (full screen, whole sentences), redo clips swapped in, finals v10.
+- 2026-09-30, user: "most of this are already on the brolls i just need the missing ones and the ones getting changes". Checked the v9 finals at each line (frames sent): all 18 new lines showed only the talking head; of the 7 redos, HK2-B3 and A5-B1 showed the old white fitter's face, A4-P3 was the strap photo, and HK1-B2, HK2-B1, A4-P1, A5-P1 were hands only. User picked "18 missing + 3 changes". The 4 hands-only frames were copied (sha256 matched) to the Plan board's store (Old Versions 2 is full), with docs `generations/stryde-cascade__unused-<BEAT>`, then removed from Current 2; their current B-rolls stay in the edit. Current 2 now holds 21 cards.
+- 2026-09-30 Fix round on Current 2 (user on the board and in chat):
+  - "the avatar broll clothes should not be the same as the th": the fitter's B-roll outfit is now a worn tan canvas work jacket over a dark green work shirt, with charcoal work trousers. The TH frame is no longer attached; the face comes from the cast sheet only. Redone: HK2-B0, HK2-B3 (card Fix "clothes"), A5-B1, A5-B1b (chat). `work/fix_wardrobe.py`.
+  - A2-M6 "fix this distortions": the render had two crossed legs and a second kneecap. Now one leg in side profile, with confirmed A2-M5 as the leg reference. A4-B1b "anatomy here": now an anatomy render with the strap on the tendon; motionPlan updated. `work/fix_gap2_anat.py`.
+  - All 6 are v2 on Current 2 (review). The v1 frames were copied (sha256 matched) to the Plan board's store (`archiveAsset` + `archiveBoard` on the version entry) and removed from Current 2.
+  - The v1 `imageUrl`s written on 2026-09-29 were guessed from timestamps and return 403. The job ids (`imageJob`) are right; the real files are in `renders/gap1/`.
+  - Videos: confirmed frames get §35A calls via `work/gap_video.py` (length = line span in v9 + 0.9 s, min 3). Sent: A2-M2b, A2-M5, A2-M7, A3-B0, A3-B5, HK3-B4 (`calls/*.gapv1.json`, Kie Kling 3.0).
+  - A1-B1b and A1-B2b are stairs shots, so §35A wants a pinned end frame (the board has no end-frame step). Asked the user: waive the pin, or make end frames.
+  - Videos v1 on Current 2 (review): A2-M2b, A2-M5, A2-M7, A3-B0, A3-B5 and HK3-B4, Kie Kling 3.0, 522 credits.
+    - A2-M5 and A3-B5 first timed out at createTask. Kie has no task list to check, so they were retried once; the first sends may also have been charged.
+    - A3-B0 and A3-B5 are split into 15 MB parts on the board.
+    - A2-M7's download was cut off and was fetched again from the same task (`kie.py wait`).
+- 2026-09-30, later Fix rounds on Current 2 (user: "fix those and generate the new ones"):
+  - Round 3 (`work/fix_gap3.py`, calls `*.gap3.image.json`):
+    - A2-M6 now descends.
+    - A4-B2b, A4-B4, A4-P3 "fix the product": true size, one band, the A4-B1 worn frame attached.
+    - A3-B5 "this should be 3 brolls": A3-B5 keeps its clip for "None of them are wrong." (status use, line shortened). New A3-B5b (anatomy: sleeve on, band still loaded) and A3-B5c (the stairs with only the top rail).
+  - Round 4 (`work/fix_gap4.py`, `*.gap4.image.json`):
+    - A4-B1b: strap seated higher. A4-B3: one band, nothing under the shell. A4-B4: new style, three people on a park bench.
+    - A5-B1: straps go into his tool bag. A5-B1b and HK2-B0: distortion fixed; the rail now leans on the wall.
+    - HK2-B0 and A4-B3 videos were archived because their frames were redone.
+    - A5-M1 video gen 2 (`calls/A5-M1.gapv2.json`): camera locked; the strap named a rigid printed object.
+  - Videos from confirmed frames (`work/gap_video.py`, now reading each beat's newest image call; `work/gap_video_board.py` writes the cards):
+    - Done: A1-B1b, A1-B2b, A4-B3 (old frame, archived), A5-M1 v1, A5-P2, HK2-B0 (old frame, archived), A5-B4b, HK2-B3.
+    - Sent: A2-M6, A3-B5b, A3-B5c, A4-B2b, A4-P3.
+    - Stairs, hand-on-product and product-angle clips run unpinned on the user's "Run from the start frame" (`pin_waived`).
+  - Kie's file host is slow: downloads get cut off. Refetch by task id with `kie.py wait` (no `--out`) and then `curl -C -`.
+  - Storage: the Plan store filled up. New **Old Versions 3** https://claude.ai/artifact/Nk2SyCzxLexZjcqornaX3j (template, BOARD_ROLE old; `boards.old3`) holds the round-4 replaced frames and videos, with per-beat docs. Earlier replaced versions are in the Plan store (`archiveBoard` on each version entry).
+  - HK3-B4's card disappeared from Current 2 after its video was put on (deleted on the board?). Its clip is in `renders/gapv1/HK3-B4_vid.mp4` and its frame in `renders/gap1/`.
