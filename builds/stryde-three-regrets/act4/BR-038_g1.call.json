@@ -1,0 +1,30 @@
+{
+ "beat": "BR-038",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"act4_worn_breath\",\"subject\":\"THE SAME LEG, HANDS AND STRAP as in the start frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CU as in the start frame: knee height, three-quarter, the strap on the knee. FOCUS: the strap and kneecap are sharp.\"},\"motion\":\"CONTINUING: she sits with the right leg straight, the strap seated under the kneecap, hands resting on her thigh. COMPLETING: one slow breath, about two seconds — her thigh and hands rise and settle slightly, the strap staying exactly in place, the notch cupping the kneecap. UNRESOLVED: still, the strap untouched. The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, warm midday sun from the window on the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no hands on the strap, no strap sliding, no strap on the kneecap, no face, no glancing at the lens, no talking, no slow motion, no music, no shell bending, no extra or fused fingers\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_183706_9ebf53ea-162d-4e0a-b64f-c25864cd65d6.png",
+ "start_approved": true,
+ "pinned": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the strap slides or climbs the kneecap",
+   "prevented_by": "strap staying exactly in place; no strap sliding"
+  },
+  {
+   "risk": "shell warps",
+   "prevented_by": "HOLD-PC; no shell bending"
+  },
+  {
+   "risk": "leg skin smooths",
+   "prevented_by": "INHERIT-CAP; capture unchanged"
+  }
+ ]
+}

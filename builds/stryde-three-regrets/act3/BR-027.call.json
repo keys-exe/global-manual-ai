@@ -1,0 +1,32 @@
+{
+ "beat": "BR-027",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"act3_day_out_walkers\",\"subject\":\"THE SAME TWO WALKERS as in the start frame, seen from the chest down, each with one strap on the near leg; people, clothes and straps unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"MEDIUM as in the start frame: knee height, side-on to the promenade. FOCUS: the near legs and straps are sharp; the sea slightly soft.\"},\"motion\":\"CONTINUING: the two friends are already strolling along the promenade, left to right, a stride apart. COMPLETING: they walk on at an easy, steady pace for about three seconds, near knees bending and straightening with each step, the straps staying snug and in place below the kneecap, the chip bag swinging. UNRESOLVED: they are still walking, the first nearing the frame edge. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, bright breezy afternoon sun from behind the lens and to the left, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no faces, no strap moving on the leg, no strap changing shape, no strap on the far leg, no overlapping legs, no running, no turning to the lens, no slow motion, no music, no sound\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_220251_7762d8ac-e1b4-45c1-83a0-f0a7a256cac5.png",
+ "start_approved": true,
+ "pinned": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "receiver misses the cradle or floats",
+   "prevented_by": "settles into the cradle; no receiver floating"
+  },
+  {
+   "risk": "fingers fuse with the receiver",
+   "prevented_by": "HOLD-HC five separate fingers"
+  },
+  {
+   "risk": "cord tangles or morphs",
+   "prevented_by": "HOLD-C; NEG-WARP-C"
+  }
+ ],
+ "audio": false,
+ "fix_note": "frame fault: v1 was the phone put back on its cradle (user Fix: show people outside walking with the Stryde product) → new start frame v2, two friends on a seaside promenade each wearing one Stryde, confirmed by the user; motion rewritten as an easy walk with the straps staying put, sound off"
+}

@@ -1,0 +1,32 @@
+{
+ "beat": "BR-029",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"act3_covering_smile\",\"subject\":\"THE SAME WOMAN as in the start frame, seventy-nine, white pixie crop, camel wool coat, heather-purple twinset, grey pleated skirt, black shoes, handbag; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"FULL as in the start frame: her whole body from head to shoes, the steps, railing and red door behind. FOCUS: she is sharp head to shoes.\"},\"motion\":\"CONTINUING: she stands at the foot of the steps, eyes lowered to the pavement, mouth turned down. COMPLETING: one slow breath out, about two seconds — her shoulders sink a little further, her head dips slightly, her hand tightens on the handbag strap. UNRESOLVED: she stays standing there, sad and still, eyes down. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum: nothing at uniform speed, motions settle slowly, fabric lags.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, flat grey overcast daylight, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no laughing, no looking at the camera, no talking, no slow motion, no music, no smile, no happy face, no walking, no climbing the steps, no hand to the face, no crying, no camera moving closer, no crop to a close-up, no sound\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_080354_d2964266-20e3-49d5-8fc9-c511ab9cd940.png",
+ "start_approved": true,
+ "pinned": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "she smiles",
+   "prevented_by": "motion: sad breath out; no smile, no happy face"
+  },
+  {
+   "risk": "the camera pushes in and crops her",
+   "prevented_by": "FULL as in the start frame; no crop to a close-up"
+  },
+  {
+   "risk": "she walks off or up the steps",
+   "prevented_by": "UNRESOLVED: stays standing; no walking, no climbing the steps"
+  }
+ ],
+ "audio": false,
+ "fix_note": "frame fault: v1 was a close-up covering smile (user Fixes: sad and disappointed, then show the whole body) → new start frame v3, her whole body at the foot of the steps, sad, confirmed by the user; motion rewritten as one slow sad breath out, sound off"
+}
