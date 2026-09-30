@@ -138,18 +138,20 @@ add("B-03a", "nano-banana-2", [SHEET["R2"], LOC["P2"][0]], photo([
   light("open sky under high thin cloud, the sun a pale disc high on the left", "him", "left", "flat bright overcast"),
   colour("flat bright overcast", 6500, "grey-green towpath, brown-green canal, the stone bridge", "he", "olive and denim", "the tweed cap", "muted, slightly cool"), S("SKIN-B1")],
   "no knee strap, no brace, no walking stick, no second person, no smile"))
+# v4 (Fix "MAKE THE MAN MORE STRUGGLING BECAUSE OF THE KNEE PAIN, BOTH HANDS ON THE HANDRAIL"): v3 kept the plate but his pause read as calm -> visibly struggling, both hands on the handrail
 # v3 (Fix "FIX THE STAIR, USE THE LOCATION PLATE OF THE STAIR"): v2 invented a different hall -> the plate attached first, the shot taken from the plate's own viewpoint (NBP for reference fidelity)
 add("B-03b", "nano-banana-pro", [LOC["P3"][0], SHEET["R3"]], photo([
   "A snapshot from just inside the front door, looking along the hall EXACTLY AS IN THE ATTACHED LOCATION PLATE — the same viewpoint, the same staircase: the straight flight of brown-and-gold patterned carpet "
   "rising away from the camera along the left-hand sage wall, the white newel post and white spindles with the dark-stained handrail on the right-hand side of the flight, the shoe rack bottom left, the "
   "hall running on past the stairs to the kitchen at the back, the woven wall hanging and the side table on the right. He stands IN THE MIDDLE OF THAT FLIGHT, halfway up, about six steps below him and "
-  "six above, turned three-quarter to the camera, both feet on one step, his right hand gripping the dark handrail hard, pausing with a wince, breathing out. " + HASSAN[0].upper() + HASSAN[1:] +
+  "six above, turned three-quarter to the camera, CLEARLY STRUGGLING WITH KNEE PAIN: BOTH HANDS gripping the dark handrail hard, knuckles tight, his body pulled in against the banister, "
+  "his weight hauled onto his arms and off his right leg, the right knee bent and favoured, shoulders hunched, his face screwed up in pain, eyes squeezed half shut, mouth tight, breathing hard. " + HASSAN[0].upper() + HASSAN[1:] +
   ". He wears " + WARD["H-D1"] + ". No strap, no brace.",
   "THE SAME PLACE, UNCHANGED from the attached plate: nothing moved, nothing added, the stairs the same width, pitch, carpet and banister.",
   angle("B-03b", "him on the stairs"), focus("the nearest eye of Hassan"),
   light("the front door's coloured-glass panel behind the camera and the half-landing window above", "him", "right", "warm morning daylight"),
   colour("warm morning daylight", 5600, "pale sage walls, the brown-and-gold patterned stair carpet, the dark handrail", "he", "white and navy", "the woven wall hanging", "natural"), S("SKIN-B1")],
-  "no knee strap, no brace, no walking stick, no stairlift, no smile, no looking at the camera, no man on the bottom steps, no man at the top of the stairs, no different staircase, no banister on the left, no stairs rising to the right, no staircase turning, " + NEG_HANDS, scale="about half"))
+  "no knee strap, no brace, no walking stick, no stairlift, no smile, no calm face, no relaxed posture, no one hand free, no looking at the camera, no man on the bottom steps, no man at the top of the stairs, no different staircase, no banister on the left, no stairs rising to the right, no staircase turning, " + NEG_HANDS, scale="about half"))
 add("B-03c", "nano-banana-2", [SHEET["R1"], LOC["P1"][0]], photo([
   "A snapshot caught mid-action from a phone held a little above her: she is half-way up out of the burgundy armchair, both hands pushing down on its wooden arms, her body leaning forward over her knees, "
   "a wince on her face. " + FOLAKE[0].upper() + FOLAKE[1:] + ". She wears " + WARD["F-D1"] + ". No strap, no brace.",
@@ -230,8 +232,10 @@ add("B-10", "nano-banana-pro", PR(FRONT, "stryde_refs/worn_bent.jpg") + [SHEET["
   light("the window over the sink on the kitchen's far wall", "him", "left", "bright morning sun along the worktop"),
   colour("bright morning sun", 5600, "cream units, chequered floor", "he", "maroon and charcoal", "the black strap on his knee", "natural, warm"), S("SKIN-B1")],
   P.fill(P.NEG_BENT, "right") + ", " + NEG_WORN + ", " + NEG_HANDS))
+# v2 (Fix "MAKE THE TROUSER A LITTLE BIT LOOSE"): v1 trousers fitted close to the leg -> loose, relaxed-fit cotton, the cuff sitting loosely
 add("B-11a", "nano-banana-pro", PR(FRONT, "stryde_refs/worn_front.jpg") + [SHEET["R4"], LOC["P5"][0]], photo([
   "A close snapshot from low down beside the bed: she stands by the bed, the olive trouser still rolled above her right knee showing the strap worn on it, her fingers at the rolled cuff just letting it go. "
+  "The trousers are LOOSE and relaxed-fit — roomy through the thigh and the leg, soft cotton hanging in easy folds, the rolled cuff sitting loosely above the knee with air between it and the leg, never tight or clinging. "
   "Only her leg from the thigh down, her hand and the edge of the bed in frame. " + WORN,
   plate("P5", LOC["P5"][1]), angle("B-11a", "her right leg"), focus("the strap and its wordmark"),
   light("the sash window on the bedroom's south wall", "her leg", "right", "bright morning daylight", face=False),
