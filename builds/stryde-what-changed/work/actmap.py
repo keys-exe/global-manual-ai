@@ -132,7 +132,7 @@ BB("B05", A1, "And inside the joint there is a layer of cartilage doing the abso
    EYE, PRO, "clean", "CU", "profile: the layer seen edge-on", "deep", "deep", L(ANAT, "L"), False, eg="EG05")
 TH("B06-TH", A1, "That part is ordinary. It happens to everybody. But here is what nobody explains. The load does not thin with it.")
 BB("B06", A1, "Seventeen times your bodyweight", "Seventeen", "mechanism — load (pip)",
-   "ANAT", "—", "—", "ANAT-A detailed, whole leg mid-step: glowing waves of force pour down through the thigh inside the limb and burst as a bright ripple at the spot below the kneecap, every step", "one wave arrives each step",
+   "ANAT", "—", "—", "ANAT-A close-up on the knee joint under a step's load: waves of force pour down into the joint and burst as a big impact flare with rings and particles at the spot below the kneecap", "one wave arrives each step",
    "one wave a second", STILL, "none", "no", "absent", "—", "NB2",
    LOW, THR, "clean", "CU", "low = the weight coming down on it", "deep", "deep", L(ANAT, "L"), False,
    layout="pip", eg="EG02 host cut-out bottom-left · EG04 red box 'Seventeen times' · 17× overlay",
