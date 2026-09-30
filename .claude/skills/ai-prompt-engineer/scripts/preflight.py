@@ -17,7 +17,8 @@ CALL.json describes one paid video call exactly as it will be sent:
     "start_approved": true,            # Manual: the user's Confirm; Automatic: §22V USE + scene contact sheet
     "pinned": false, "end_image": null, "end_approved": false,
     "files": ["..."],                  # Seedance ingredients (images + videos + audios), each named in the manifest
-    "audios": ["..."],                 # voice masters (dialogue)
+    "audios": ["..."],                 # voice masters (dialogue) — voice only, never a music track (§24M)
+    "generate_audio": true,            # Seedance: false on every clip with no dialogue — no BGM (§24M, V7.73.3)
     "dialogue": "the spoken words, verbatim from the script",
     "script_line": "the same line as script_lines.py extracted it",
     "pace": "unhurried" | "brisk",
@@ -87,6 +88,9 @@ RIGS = {  # rig signature → F-rig (F6–F10: the Seedance move library, §24N)
 TRAVEL_RIGS = {"F1", "F4", "F5", "F6", "F7", "F8", "F9", "F10"}   # the camera moves through space
 NOT_IN_PLACE = {"F1", "F4", "F5", "F6", "F7", "F9", "F10"}         # subject sits, stands, turns, reaches (§24K/§24N)
 NOT_TRAVELS = {"F1", "F3", "F4", "F6", "F7", "F8", "F10"}          # subject walks: only F2, F5, F9
+MUSIC = re.compile(r"\b(?:music(?:al)?|score|soundtrack|bgm|background music|song|melody|instrumental|orchestra(?:l)?|underscore|theme tune)\b", re.I)
+NEG_CLAUSE = re.compile(r"\b(?:no|never|without)\b[^,.;:\n]*", re.I)   # negative clauses may name music ("no music, no score")
+MUSIC_FILE = re.compile(r"(?:music|bgm|score|soundtrack|MUS-SC)", re.I)
 SEEDANCE_ONLY = {"F6", "F7", "F8", "F9", "F10"}
 STREAMERS = re.compile(r"\b(netflix|hbo|max original|prime video|amazon original|apple tv|disney\+?|hulu|paramount\+?|peacock)\b", re.I)
 WALK = re.compile(r"\b(walks?|walking|steps? (?:toward|into|across|down|up)|crosses|climbs?|stairs|runs?|running)\b", re.I)
@@ -231,6 +235,18 @@ def run(c):
         check("prefer_multi_shots false", str(c.get("prefer_multi_shots", "")).lower() == "false")
     else:
         check("known connector", False, conn)
+
+    # 3a. No BGM in any Seedance generation — music is laid in the edit (§24M, V7.73.3)
+    if conn == "seedance":
+        check("NEG-SOUND (no BGM on Seedance, §24M)", SIG["NEG-SOUND"] in p)
+        pos = NEG_CLAUSE.sub("", p)
+        mus = sorted(set(m.group(0).lower() for m in MUSIC.finditer(pos)))
+        check("no music asked for in the prompt (§24M)", not mus, ",".join(mus))
+        talk = bool(c.get("dialogue") or c.get("audios"))
+        check("no dialogue → generate_audio false (§24M)", talk or c.get("generate_audio") is False,
+              "a clip with no dialogue is generated silent (kie.py seedance --no-audio)")
+        bad = [a for a in (c.get("audios") or []) if MUSIC_FILE.search(str(a))]
+        check("audio references are voice only, never music (§24M)", not bad, ",".join(map(str, bad)))
 
     # 3b. Beat video prompt (§35A) — Kling B-roll and hook clips in Modes 1–3
     if conn == "kling" and not film and kind in ("broll", "insert"):
