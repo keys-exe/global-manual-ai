@@ -69,8 +69,6 @@ a.tab{text-decoration:none}
 .kpi .v{font-family:var(--display);font-size:28px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}
 .kpi .s{font-size:12px;color:var(--muted)}
 .kpi .v.multi{font-size:18px;line-height:1.2;display:flex;flex-wrap:wrap;gap:2px 12px}.kpi .v small{font-size:11px;font-family:var(--body);font-weight:600;color:var(--muted);margin-left:5px}
-.kpi .brk{font-size:11px;color:var(--muted);line-height:1.5}.kpi .brk .mono{font-size:11px}.kpi .brk b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
-.spend{width:100%;border-collapse:collapse;font-size:12px}.spend th{text-align:left;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:4px 8px;border-bottom:1px solid var(--line)}.spend td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}.spend td.n,.spend th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.spend tr.tot td{font-weight:600;color:var(--ink)}.spend tr.tot td:first-child{border-bottom:0}
 .bar{height:6px;border-radius:3px;background:var(--sunk);overflow:hidden;display:flex}
 .bar i{display:block;height:100%}
 
@@ -838,7 +836,7 @@ const state = {builds:[], gens:[], build:null, filter:"all", q:"", live:false, r
 const $ = s=>document.querySelector(s);
 const esc = s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const num = n=>Number(n||0).toLocaleString("en-US");
-// Credits spent, by connector and model, every render counted (user, 2026-09-30: "the credit spent should show what model and how much").
+// Credits spent, by connector, every render counted (user, 2026-09-30: "the credit spent should show what [connector] and how much").
 // Each version entry carries its own credits/model/connector; a step with no version records falls back to its own fields.
 function spendRows(gens){
   const acc=new Map();
@@ -852,13 +850,6 @@ function spendRows(gens){
   return [...acc.values()].sort((a,b)=>a.conn.localeCompare(b.conn)||b.credits-a.credits);
 }
 function spendByConn(rows){const m=new Map();for(const r of rows){const t=m.get(r.conn)||{conn:r.conn,credits:0,n:0};t.credits+=r.credits;t.n+=r.n;m.set(r.conn,t)}return [...m.values()]}
-// A step's credits: this render, and the step's total over every render it has had.
-function creditsTxt(g,k,cur){
-  const d=STEP[k];const vers=Array.isArray(g[d.vers])?g[d.vers]:[];
-  const tot=vers.reduce((s,v)=>s+(Number(v&&v.credits)||0),0);const n=vers.filter(v=>Number(v&&v.credits)).length;
-  const c=cur!=null&&cur!==""?num(cur):"—";
-  return tot&&n>1&&tot!==Number(cur)?`${c} <span class="sub">· ${num(tot)} over ${n} renders</span>`:c;
-}
 function lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
 function lsSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
 
@@ -1051,8 +1042,7 @@ function renderInner(){
     <div class="kpi"><span class="k">Confirmed</span><span class="v" style="color:var(--use)">${use}</span><span class="s">Passed the image and clip checks</span></div>
     <div class="kpi"><span class="k">To check</span><span class="v" style="color:var(--review)">${review}</span><span class="s">${gen} generating now</span></div>
     <div class="kpi"><span class="k">Fixing</span><span class="v" style="color:var(--regen)">${regen}</span><span class="s">Two tries per fault, then you</span></div>
-    <div class="kpi"><span class="k">Credits spent</span><span class="v${byConn.length>1?" multi":""}">${byConn.length>1?byConn.map(t=>`${num(t.credits)}<small>${esc(t.conn)}</small>`).join(""):num(credits)}</span><span class="s">${byConn.length>1?"Per connector — each its own unit":byConn.length?esc(byConn[0].conn)+" credits, every render counted":"Every render counted, by model"}</span>
-      ${spend.length?`<div class="brk">${[...spend].sort((a,b)=>b.credits-a.credits).slice(0,3).map(r=>`<span class="mono" title="${esc(r.conn)}">${esc(r.model)}</span> <b>${num(r.credits)}</b>`).join(" · ")}${spend.length>3?` · +${spend.length-3} more below`:""}</div>`:""}</div>`;
+    <div class="kpi"><span class="k">Credits spent</span><span class="v${byConn.length>1?" multi":""}">${byConn.length?byConn.map(t=>`${num(t.credits)}<small>${esc(t.conn)}</small>`).join(""):num(credits)}</span><span class="s">${byConn.length?"By connector, every render counted":"Logged on generations"}</span></div>`;
 
   const vs=views(); if(!vs.includes(state.view)) state.view=vs[0];
   $("#eyebrow").textContent=BOARD_ROLE==="current"&&!Object.keys(boardsOf(b)).length?"AI Prompt Engineer · Generation Board":"Generation Board · "+BOARD_NAMES[BOARD_ROLE];
@@ -1119,13 +1109,6 @@ function renderInner(){
       <div class="bar w-bar">${stageBar(s,b,gens,all)}</div>
       <div class="w-body">${body}</div></section>`;
   }).join("");
-  const spendRowsAll=spendRows(buildGens());
-  if(spendRowsAll.length){
-    const conns=spendByConn(spendRowsAll);
-    html+=`<section class="widget"><div class="w-head"><span class="w-num">¤</span><div class="w-title"><h2>Credits spent</h2><span class="sub">By connector and model — every render counted, images and videos, replaced versions included</span></div></div>
-      <div class="w-body"><table class="spend"><thead><tr><th>Connector</th><th>Model</th><th class="n">Renders</th><th class="n">Credits</th></tr></thead><tbody>${conns.map(t=>spendRowsAll.filter(r=>r.conn===t.conn).map(r=>`<tr><td>${esc(r.conn)}</td><td><span class="mono">${esc(r.model)}</span></td><td class="n">${r.n}</td><td class="n">${num(r.credits)}</td></tr>`).join("")+`<tr class="tot"><td></td><td>${esc(t.conn)} total</td><td class="n">${t.n}</td><td class="n">${num(t.credits)}</td></tr>`).join("")}</tbody></table>
-      <p class="note">Each connector's credits are its own unit — totals are per connector, never added across them.</p></div></section>`;
-  }
   const bal=b&&b.balances||{};
   if(Object.keys(bal).length&&BOARD_ROLE==="current"){
     html+=`<section class="widget"><div class="w-head"><span class="w-num">¤</span><div class="w-title"><h2>Credit balances</h2><span class="sub">${b.balancesAt?"As of "+esc(b.balancesAt):"Last recorded"}</span></div></div>
@@ -1563,7 +1546,7 @@ function mediaCard(g,k){
     ["Connector",esc(g[d.conn]||(seed?"Kie AI":d.defConn)||"—")],
     [k==="image"?"Resolution":"Length",size],
     ["Model",`<span class="mono">${esc(model||"—")}</span>`,"wide"],
-    ["Credits",creditsTxt(g,k,g[d.credits])],
+    ["Credits",g[d.credits]!=null&&g[d.credits]!==""?num(g[d.credits]):"—"],
     ["Attempt",`${1+(Number(g[d.regens])||0)} of 3`],
     ["Generated",when(g[d.at])],
   ];
@@ -1848,7 +1831,7 @@ function renderViewer(){
     ["Connector",esc(x.connector||(seed?"Kie AI":d.defConn)||"—")],
     [k==="image"?"Resolution":"Length",esc(sizeTxt(x)||"—")],
     ["Model",`<span class="mono">${esc(x.model||g[d.model]||d.defModel||"—")}</span>`,"wide"],
-    ["Credits",creditsTxt(g,k,x.credits)],
+    ["Credits",x.credits!=null&&x.credits!==""?num(x.credits):"—"],
     ["Attempt",`${1+(Number(g[d.regens])||0)} of 3`],
     ["Generated",when(x.at)],
     ["Original",x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">Open ↗</a>`:"—"],
