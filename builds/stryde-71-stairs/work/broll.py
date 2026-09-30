@@ -90,16 +90,18 @@ N_HANDS = 'BOTH her hands are full and NEVER touch the handrail: her right hand 
 BEATS = {}
 
 # ---------------------------------------------------------------- Act 1 — the problem days (N-D1, grey mornings)
-def p_01a():   # Fix 2026-09-29 (video note): "new image cause we should be looking at her back cause she is walking down backwards same step both feet as always"
+def p_01a():   # Fix 2026-09-29 (video note): "new image cause we should be looking at her back cause she is walking down backwards same step both feet as always" · Fix 2026-09-30 (image v5): "she should be way more up like half way of the stairs and not already at the bottom"
     return seed("P-01a", "her back as she comes down the stairs backwards", "her", [
       "Her staircase, exactly as in the attached hall photo: the straight open flight with the full-width oatmeal-beige stair carpet and its brass stair rods, the white balusters and dark oak handrail, the photo wall of small dark-framed family portraits. "
-      "Seen from the hall floor at the foot of the stairs, looking straight UP the flight at HER BACK. A woman of seventy-one — " + NID + " — " + N_BUILD + " — is about halfway up the flight, "
+      "Seen from the hall floor about two metres back from the foot of the stairs, looking straight UP the flight at HER BACK. A woman of seventy-one — " + NID + " — " + N_BUILD + " — stands HALFWAY UP the flight, on the seventh or eighth step: "
+      "between the hall floor and her heels run about SEVEN EMPTY carpeted steps with their brass rods, clearly visible in the lower half of the frame, and her slippers sit around the middle of the frame height; the landing and the rest of the flight rise above her. "
+      "She is NOT at the bottom, NOT on the first or second step. She is "
       "coming DOWN the stairs BACKWARDS: she faces UP the stairs toward the landing, so the camera sees her back, the back of her head and her heels. "
       "BOTH her hands grip the dark oak handrail beside her, one a little above the other, her elbows bent, her weight on her arms. "
       "BOTH her feet stand TOGETHER, side by side on the SAME step, heels at the front edge of the tread — the way she always goes down, one step at a time, both feet on each step before the next. "
       "Her shoulders hunched, her head bowed toward her feet. She is wearing " + WARD["N-D1"] + ". The hall below is dim; nothing tidied."],
       "her and the stairs", GREY,
-      "no face to camera, no facing down the stairs, no walking forwards, no feet on different steps, no hand off the handrail, no stumbling, no fall, no one else on the stairs, no stairlift, no walking stick, no knee brace, no product, no different staircase from the hall photo, no turn in the stairs, no narrow runner, no slim woman",
+      "no face to camera, no facing down the stairs, no walking forwards, no feet on different steps, no hand off the handrail, no stumbling, no fall, no one else on the stairs, no stairlift, no walking stick, no knee brace, no product, no different staircase from the hall photo, no turn in the stairs, no narrow runner, no slim woman, no woman on the bottom steps, no woman at the foot of the stairs, no feet near the hall floor",
       [("N sheet", REF["N"]), ("P0-PROP-N plate", REF["P0"])], side="behind", height="low")
 BEATS["P-01a"] = p_01a
 
@@ -241,12 +243,12 @@ MID = "a clear spring afternoon — warm, bright daylight, the after days, never
 MORN = "a bright, fresh morning — clean daylight, the after days"
 STAIRS_SUN = "Sunday-style afternoon sun through the front door's sidelights, warm and clear — the after state, never moody"
 
-def anat(beat, state, extra, prod_in=False, neg=""):
+def anat(beat, state, extra, prod_in=False, neg="", dens="ANAT-A"):
     r = ROWS[beat]
     sl = dict(PS.SLOTS)
     f = lambda t: (t.replace("[REGION]", "right knee, from mid-thigh to mid-shin, the leg upright").replace("[TARGET JOINT]", sl["TARGET_JOINT"])
                     .replace("[STACK]", sl["STACK"]).replace("[BONES]", "The " + sl["BONES"]).replace("[TARGET]", sl["TARGET"]).replace("[SITE]", sl["SITE"]))
-    body = [f(S("ANAT-BASE")), f(S("ANAT-LIGHT")), S("ANAT-FIELD"), f(S("ANAT-A")), f(state), extra]
+    body = [f(S("ANAT-BASE")), f(S("ANAT-LIGHT")), S("ANAT-FIELD"), f(S(dens)), f(state), extra]
     refs = []
     if prod_in:
         body.append(REF_PROD + ". " + S("ANAT-PROD"))
@@ -289,8 +291,9 @@ def t_02b(): return seed("T-02b", "the dancing feet", "the feet", [
     "the feet", PARTY, "no faces, no bare feet, no knee strap, no product, no readable text",
     R(("P3-RECEPTION plate", "P3")), house=False)
 BEATS["T-02b"] = t_02b
-def t_03a(): return anat("T-03a", HOT("a hot red"),
-    "The joint surfaces inside the knee are worn thin — bone close to bone, the cartilage almost gone, rough and pale at the contact — and the tight red spot sits on the tendon just below the kneecap, pulsing once.")
+def t_03a(): return anat("T-03a", HOT("a hot red"),   # Fix 2026-09-30: "should be the ghost limb anatomy here" → ANAT-B, no muscle layer
+    "The joint surfaces inside the knee are worn thin — bone close to bone, the cartilage almost gone, rough and pale at the contact — and the tight red spot sits on the tendon just below the kneecap, pulsing once.",
+    neg="no muscle, no red muscle bellies, no muscle fibres, no flesh layer", dens="ANAT-B")
 BEATS["T-03a"] = t_03a
 
 # ---------------------------------------------------------------- Act 3 — Loretta's visit and the first stairs (N-D3a / N-D3)
