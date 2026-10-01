@@ -1,0 +1,49 @@
+{
+ "beat": "HK-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — the open doorway, the two women, where each stands, the light — and move the camera in close on their faces. Image 1 is this frame of the two at the doorstep. Image 2 is the mother. Image 3 is her daughter.\nClose-up from inside the doorway at eye level, both heads filling the frame, sharp on both faces: the same woman as Image 2 nearest the lens in three-quarter profile, turned back to her daughter, a small smile, eyes on her; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 a step beyond her, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. The white door leaf soft at one edge, the sunlit sidewalk soft behind.\nIn the frame: the two faces and shoulders, the door edge, the sidewalk beyond; every other surface bare. Both women's hands out of frame below the shoulders.\nThe render and light of Image 1, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
+ "script_line": "Mama, when did that happen?",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "HK-03a v21 A (the doorway frame — the two at the doorstep)",
+   "kind": "frame"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character"
+  },
+  {
+   "label": "C2-DAUGHTER sheet v2",
+   "kind": "character"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "HK-03a v21 A (job c3b7a0c1)",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22",
+  "HT05",
+  "HT23",
+  "HT24"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user board Fix: make it a close up shot"
+}
