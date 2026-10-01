@@ -1,0 +1,53 @@
+{
+ "beat": "BR-18",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150402_bed0952a-1162-4d19-8bc1-d2cd461c6918.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "because it is the cheapest thing on the list and the only one aimed at the band.",
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the strap changes shape or becomes generic",
+   "prevented_by": "keep their exact shapes; the shell stays rigid"
+  },
+  {
+   "risk": "a hand enters and moves things",
+   "prevented_by": "nothing on the table moves; no hands"
+  },
+  {
+   "risk": "camera travels too far and loses the row",
+   "prevented_by": "eases in a little"
+  }
+ ],
+ "route": "kling",
+ "route_note": "user 2026-10-01: 'USE KLING CONNECTOR' (Kling credits back: 45,091) — off Kie",
+ "approved_by": "the user, 2026-10-01: 'confirm all'",
+ "audio": false,
+ "prompt": "For the line \"because it is the cheapest thing on the list and the only one aimed at the band.\": From this frame: the camera eases in a little towards the small strap at the end of the row; nothing on the table moves. The sleeve, the brace, the gel tube and the strap keep their exact shapes and places; the strap's shell stays rigid. No hands, no new objects, no text.",
+ "video_version": 1,
+ "motion_plan": "From this frame: the camera eases in a little towards the small strap at the end of the row; nothing on the table moves.",
+ "motion_confirmed": true,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP05",
+  "HT06"
+ ],
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "user_go": "the user, 2026-10-01: 'confirm all'",
+ "motion_confirmed_by": "the user, 2026-10-01: 'confirm all' (image v1, motion plan on the card)",
+ "kling_model": "kling-video-v3_0"
+}
