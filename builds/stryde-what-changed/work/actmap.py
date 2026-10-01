@@ -55,15 +55,23 @@ def BB(beat, act, line, key, fn, subj, loc, day, framing, action, pace, camera, 
       h, side, fg, scale, why, plane, dof, light["src"], light["ks"], light["time"], light["arc"], light["kelvin"], face, **kw)
 
 # ============================================================ HOOKS (VN01: line 1 as VO over full-screen B-roll, the host on camera for the last line)
-BB("HK1-a", HOOK[1], "Your knees have been taking seventeen times your bodyweight on every step", "step", "hook — the hidden number (VN01, EG03)",
-   "R1", "L-M-STAIRS", "M-D1", "ECU her feet and bare right knee from the side, coming down one stair", "one step down onto the next stair, weight onto the right leg",
-   "one step, about a second and a half", STILL, "stairs: side, waist-down, camera still, hand on the rail visible", "no", "absent", "—", "NB2",
-   GROUND, PRO, "through", "CU", "ground through the spindles = steps and knees, watched", "foreground", "medium", L(M_GREY, "L"), False,
+BB("HK1-a", HOOK[1], "Your knees have been taking seventeen times your bodyweight", "seventeen", "hook — the hidden number (VN01, EG03)",
+   "R2", "L-D-STAIRS", "D-D1", "low side-on, waist-down: Desmond climbing his stairs with two heavy shopping bags, knees bent under the load (user 2026-10-01 'GIVE ME NEW MULTIPLE DIFFERENT BROLL HERE')", "one step up, weight onto the front knee",
+   "one step, about a second and a half", STILL, "stairs: side-on, waist-down, camera still", "no", "absent", "—", "NB2",
+   LOW, PRO, "clean", "MS", "low profile = the load bending the knees", "foreground", "medium", L(D_GREY, "L"), False,
    ledger="VN01", eg="EG03 full screen · EG04 caption red box 'seventeen times'")
-BB("HK1-b", HOOK[1], "for forty years, and you never felt a thing.", "never", "hook — the hidden number (VN01)",
-   "ANAT", "—", "—", "ANAT-A: the knee in profile, a soft pulse of load arriving at the spot just below the kneecap with each step", "one pulse per step",
-   "one pulse a second", STILL, "none", "no", "absent", "—", "NB2",
-   EYE, PRO, "clean", "CU", "profile shows the load path down the leg", "deep", "deep", L(ANAT, "L"), False, ledger="VN01", eg="EG05 anatomy")
+BB("HK1-a2", HOOK[1], "on every step", "every", "hook — the hidden number (VN01)",
+   "R1", "L-STREET", "M-D1", "ground-level ECU: Maureen's white plimsoll landing on her worn stone front-door step", "the foot lands and takes the weight",
+   "one step, about a second", STILL, "ground level, feet only, camera still", "no", "absent", "—", "NB2",
+   GROUND, THR, "clean", "ECU", "ground level = every single step, close", "foreground", "medium", L(M_GREY, "L"), False, ledger="VN01")
+BB("HK1-b", HOOK[1], "for forty years,", "forty", "hook — the hidden number (VN01)",
+   "R1", "L-KITCHEN", "K-D1", "CU over her shoulder: Maureen's hand holding a faded 1980s photograph of her younger self out walking on a hillside", "her thumb smooths the corner of the photo",
+   "one small move, about a second", STILL, "hands and photo, camera still", "no", "absent", "—", "NB2",
+   HIGH, TQB, "clean", "CU", "over the shoulder, high = looking back over the years", "hands", "shallow", L(KITCH, "L"), False, ledger="VN01")
+BB("HK1-b2", HOOK[1], "and you never felt a thing.", "never", "hook — the hidden number (VN01)",
+   "R1", "L-STREET", "M-D1", "MEDIUM front-on: Maureen coming up her front path with a shopping bag, smiling, easy, oblivious", "two easy steps towards the camera",
+   "two steps, about two seconds", STILL, "front path, camera still", "no", "absent", "—", "NB2",
+   EYE, FRO, "clean", "MEDIUM", "eye level front = her, untroubled", "deep", "deep", L(M_GREY, "L"), False, ledger="VN01")
 TH("HK1-TH", HOOK[1], "Here is what changed.")
 
 BB("HK2-a", HOOK[2], "There is a band under your kneecap about as wide as your thumb,", "band", "hook — the flattering fact (VN01)",
@@ -421,7 +429,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    "two steps, about two seconds", STILL, "park path: whole figure, camera still", "no", "worn", "VISIBLE", "NBP",
    LOW, FRO, "clean", "WIDE", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
-HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
+HOOKS = {1: ["HK1-a", "HK1-a2", "HK1-b", "HK1-b2", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
 BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06a2', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B10d2', 'B11-TH', 'B11-BR', 'B12', 'B12b', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B16c2', 'B16c3', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B19-BR2b', 'B19-BR2c', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):
