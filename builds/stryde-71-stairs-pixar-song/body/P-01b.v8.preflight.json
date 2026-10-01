@@ -1,0 +1,38 @@
+{
+ "beat": "P-01b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"One step at a time.\": Keep this photo exactly as it is — the flight of stairs from the hall floor, its runner and brass rods, the oak rail, the woman at the top with her back to us — but close in on her feet. Image 1 is the picture; nothing in it changes but the crop.\nClose-up from below on the top steps, sharp on the slippers: the same pink terry slippers of Image 1 at the top of the flight, her back to the lens, toes pointing up the stairs, the right heel reaching back and down onto the step below the top one, the left slipper still flat on the top step; her bare brown ankles and the hem of the faded blue floral house dress at the top edge; her hands and head out of frame above.\nIn frame: two slippers, two legs below the knee, the top four steps of the flight of Image 1 with their runner and rods, the rail at the side; every other surface bare. Each foot whole, heels toward the lens.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Slippers and hem plain — no lettering, logos or labels; nobody else.",
+ "script_line": "One step at a time.",
+ "face": false,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P-01a frame v12 B (confirmed) — her at the top of the flight from below",
+   "kind": "frame"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "1dfc8df04304a40cd25abf92c38d556b",
+ "taste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "USE THE P01A AS REFERENCE HERE",
+ "product": false
+}

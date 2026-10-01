@@ -341,5 +341,22 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   from B**) To check. P-03a's old image (v3) and clip (v1) and P-03b's v7/v8 copied to Old (Old docs v3/v4), deleted from Current. Balances as printed:
   Higgsfield 8,054.15; Kling 41,519 (build doc v23).
 
-**Waiting on:** picks or Fix notes on P-03a v5/v6, P-03b v9/v10, P-05b, P-05c; Confirm or Fix on the clips P-01a v1, P-01b v2 (a third run needs your go),
-P-02a v2, P-05a v3. Then the clips for P-03a / P-03b / P-05b / P-05c from the picks; then Act 2 (the wedding).
+- 19:20 UTC hourly Fix check — seven Fixes on the board. **P-01a clip** "SHOULD NOT BE STEPPING SO FAR DOWN IT SHOULD BE 1 STEP AT A TIME" → **clip v2**
+  5 s / 40 cr (one slow step only, then she holds; seen: one foot lowers to the step below, the other joins, she holds), v1 to Old. **P-01b** "USE THE
+  P01A AS REFERENCE HERE" → **v7/v8**, a direct edit of the confirmed P-01a v12 B frame closed in on her feet at the top of the flight (act map: low ·
+  behind; seen: both from below on the top steps, slippers toes-up, the heel reaching down); the v5 image and clip v2 to Old. **P-02a** "USE A DIFFERENT
+  CAMERA ANGLES" → **v7/v8** from the landing behind her shoulder, high, looking down the whole flight (act map: high · over-the-shoulder, no face;
+  seen: A sitting on the top step, head down to the hall; B standing at the top with a hand on the newel — not sitting); the v6 image and clip v2 to
+  Old. **P-03a** "MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW" → **v7/v8**, a short hinged brace a hand's length above and below the knee (seen:
+  both seated from the side, the short brace at the knee, hand on its strap); v5/v6 to Old. **P-03b** "USE THE P03A AS REFERENCE AGAIN" → **v11/v12**,
+  a direct edit of the new P-03a A (seen: the same seat at floor level, the short brace around the ankle, evening; if P-03a B is picked, P-03b is made
+  again from B); v9/v10 to Old. **P-05b** "I NEED A DIFFERENT ONES HERE" → **v3/v4**, a different picture: at floor level by her chair, a dropped knee
+  sleeve and a pill bottle beside her slipper (seen: both as asked, A with the bottle rolled, B the bottle open); v1/v2 to Old. **P-05c** same note →
+  **v3/v4**, from behind her shoulder, high, head bowed over the heap on the table, no face (seen: A from behind at the table, the heap in front; B a
+  wider three-quarter from behind, a sliver of profile); v1/v2 to Old. Act map rows re-staged (`work/actmap.py`, `STEP4_5.md`, `docs/actmap` v22 on
+  Current and Plan). All replaced files copied to Old (Old docs: P-01a v7, P-01b v5, P-02a v5, P-03a v4, P-03b v5, P-05b/P-05c new) and deleted from
+  Current. `fix_patterns.py`: the "use X as reference" notes (P1↔P0, P-03a↔P-03b, P-01a↔P-01b) are FP14 again — no new rule. No restore requests on
+  Old. Balances as printed: Higgsfield 7,990.15; Kling 41,279 (build doc v24).
+
+**Waiting on:** picks or Fix notes on P-01b v7/v8, P-02a v7/v8, P-03a v7/v8, P-03b v11/v12, P-05b v3/v4, P-05c v3/v4; Confirm or Fix on the clips
+P-01a v2, P-05a v3. Then the clips from the picks; then Act 2 (the wedding).

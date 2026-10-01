@@ -4,8 +4,10 @@
  "bars": 1,
  "beat": "P-01a",
  "build": "stryde-71-stairs-pixar-song",
- "duration": 5,
+ "credits": 40,
+ "duration": 5.04,
  "eg": "",
+ "fault": "SHOULD NOT BE STEEPING SO FAR DOWN IT SGHOULD BE 1 STEP AT A TIME",
  "flow": [
   "image",
   "video"
@@ -49,6 +51,7 @@
  ],
  "imageType": "image/png",
  "imageUnused": 11,
+ "imageUnusedArchived": "1f53a8894eb04d598e3e5c0bcd29e781",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_185749_c5f6bfae-2afa-42de-bc4c-d7063c3c5646.png",
  "imageVersions": [
   {
@@ -222,13 +225,15 @@
    "v": 10
   },
   {
+   "archiveAsset": "1f53a8894eb04d598e3e5c0bcd29e781",
+   "archived": true,
    "asset": "c1b5d0447248aeda89143fcf125bb1fb",
    "at": 1790881191787,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "aaffd0fa-e14c-4c86-ad0c-b7e7d5a26b91",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L14)",
+   "note": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L14) · not chosen (the user picked B, v12); copied to Old versions",
    "pair": "A",
    "res": "1536×2752",
    "size": 5425880,
@@ -258,21 +263,56 @@
  "light": "landing window at the top of the stairs, south wall · key L · morning · problem: grey · 6500K",
  "line": "Six weeks ago, I was going down my stairs backwards.",
  "location": "L-N-STAIRS",
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: one careful step down backwards, her back to the lens — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
  "music": "MUS-EXPOSE",
  "onScreen": 3.25,
  "pinEnd": "no",
  "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
  "product": "absent · —",
+ "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": From this frame: one careful step down backwards, her back to the lens — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the hall floor looking up the flight, she takes one careful step down backwards: her right foot lowers onto the step below and takes her weight, the left follows to the same step, both hands sliding a little down the rail, her back to the lens the whole time, her face to the landing; nobody speaks. Stylized 3D animation, exactly on model from the frame, the staircase exactly as in the frame. No camera travel; nobody else; no cut; she never turns to the lens.",
+ "regens": 1,
  "section": "Hook — MUS-OPEN",
  "shot": "low · behind · clean · MEDIUM",
  "songIn": 16.14,
  "songOut": 19.39,
  "stage": "broll",
  "staging": "stairs: camera at the top, subject below, slow single step",
- "status": "ready",
+ "status": "regenerate",
  "storyDay": "N-D1",
  "title": "problem (HT02; user Fix 2026-10-01: looking up the stairs, stepping backward — so the lens goes to the foot of the flight, edit of P0)",
- "updatedAt": 1790881215227
+ "updatedAt": 1790881739001,
+ "videoAsset": "3ca72ff249af39d5c1c701e111eacc7c",
+ "videoAt": 1790881654990,
+ "videoConnector": "Kling",
+ "videoJob": "AZtYm6x5ecRwFiriXrZ6-FpVRSsX5OF-Bj0ta1bAGbUn7oxiZN1ISajEirgTDXd8hfskOM5Y",
+ "videoNote": "first clip of this beat, from the confirmed v12 B · what I see: from the top step she lowers one foot to the step below and the other follows, back to the lens, hands on the rail, nobody speaks",
+ "videoRes": "1072×1928",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1faf845b-2f53-4ae3-97fa-7ad191645c39-PcS3C5R49adgvxbzbamWkw-output.mp4?x-kcdn-pid=112372",
+ "videoVersions": [
+  {
+   "asset": "3ca72ff249af39d5c1c701e111eacc7c",
+   "at": 1790881654990,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 12,
+   "job": "AZtYm6x5ecRwFiriXrZ6-FpVRSsX5OF-Bj0ta1bAGbUn7oxiZN1ISajEirgTDXd8hfskOM5Y",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v12 B (job c5f6bfae) · what I see: from the top step she lowers one foot to the step below and the other follows, back to the lens, hands on the rail, nobody speaks",
+   "res": "1072×1928",
+   "size": 4636335,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1faf845b-2f53-4ae3-97fa-7ad191645c39-PcS3C5R49adgvxbzbamWkw-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  }
+ ]
 }
