@@ -1353,6 +1353,24 @@ B["B23a"] = clip("B23a",
            {"risk": "a second strap appears on the stepping leg", "prevented_by": "'no second strap'"}])
 B["B23a"][0]["motion"] = B["B23a"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the skirt hem lags a little; the strap never moves")
 
+# ── 2026-10-01 B22a v5 confirmed (user "GO CONFIRM"; seated on her bed, both knees strapped) → clip. Made on Kie AI Kling while the
+# Higgsfield queue is failing. Hands pat the thighs well above the straps; the straps never move. ──
+START.update({"B22a": str(HERE.parent / "broll/B22a_v5.png")})
+B["B22a"] = clip("B22a",
+    "Seen straight on at knee height: a white British woman of sixty-nine sitting on the edge of her bed in a white top and denim "
+    "skirt, both knees bent towards the camera, a black STRYDE strap seated just below EACH kneecap, her hands resting on her thighs, "
+    "white plimsolls on the carpet.",
+    "Already moving on the first frame: her hands give her thighs one light, happy pat, well above the straps, and settle again, "
+    "about a second and a half — a small pleased gesture; her legs barely move. Both straps stay exactly as they are — rigid, the same "
+    "shape, size and wordmark from first frame to last.",
+    "no hand touching a strap, no strap moving, no strap changing shape, no wordmark changing, no third strap, no standing up, no face, "
+    "no camera movement, no extra hands, no extra fingers, no extra legs",
+    3.0, hi=5,
+    risks=[{"risk": "a hand lands on a strap and it redraws", "prevented_by": "'well above the straps', 'no hand touching a strap'"},
+           {"risk": "the straps warp", "prevented_by": "rigid line; legs barely move"},
+           {"risk": "hands duplicate", "prevented_by": "one pat, HOLD-C + NEG-WARP-C, 'no extra hands'"}])
+B["B22a"][0]["motion"] = B["B22a"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the skirt lags a little; the straps never move")
+
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
