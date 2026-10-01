@@ -5,12 +5,12 @@
  "beat": "HK-01b",
  "title": "hook — the result · SH-GROUND through the balusters",
  "line": "faster than women half my age.",
- "status": "ready",
+ "status": "review",
  "flow": [
   "image",
   "video"
  ],
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "Kling 3.0 (kling-video-v3_0) · 5 s · 1080p · prefer_multi_shots false · silent",
  "imageModel": "nano_banana_pro → logged nano_banana_2",
  "duration": 5,
  "songIn": 3.95,
@@ -33,7 +33,7 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "",
- "updatedAt": 1790867699809,
+ "updatedAt": 1790868925077,
  "hook": 1,
  "imagePrompt": "For the line \"faster than women half my age.\": at tread level through the white balusters, an older woman's black pump strikes the 7th of 14 steps mid-stride, her green hem swinging, and a few steps below a white trainer lands on the 5th. Image 1 is this scene's confirmed frame — same staircase, shoes and hems.\nClose-up, the lens resting on the 4th step at the open side of the flight, looking along the treads past two balusters soft and pale in the near foreground, sharp on the black pump, the lower steps soft: the pump, a deep brown ankle and the emerald hem at the left, the white trainer and a bare brown shin under black denim shorts at the right, the beige runner and brass rods between. Both women's hands and faces out of frame; the feet at true scale to the steps, each step at shin height.\nIn frame: two black pumps, two white trainers, four legs below the knee, four steps of the one staircase, two balusters; every other surface bare. Each foot whole, one foot per step.\nThe render and light of Image 1. Shoes, clothing and walls plain — no lettering, logos or labels.",
  "imageStatus": "confirmed",
@@ -213,5 +213,33 @@
  "shot": "SH-GROUND (through the balusters)",
  "imageParts": [],
  "imagePick": 7,
- "imageUnused": 8
+ "imageUnused": 8,
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "e5e55a28af50978aae304f4d97561edc",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/37490892-1885-4896-be58-2038430fe138-lKhiQJoH0nbZcoIg0JaUPw-output.mp4?x-kcdn-pid=112372",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 40.0,
+   "size": 4392112,
+   "duration": 5.04,
+   "res": "1072×1928",
+   "at": 1790868925077,
+   "job": "AapDQq33vt5vt9V7b8quyIvs50Tfw3PkgY-B0e5rQZv7zwVyr0zdFIOKHxztdNxDHwtiWGSq",
+   "note": "from the picked image v7 A (re-angled)"
+  }
+ ],
+ "videoAsset": "e5e55a28af50978aae304f4d97561edc",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/37490892-1885-4896-be58-2038430fe138-lKhiQJoH0nbZcoIg0JaUPw-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AapDQq33vt5vt9V7b8quyIvs50Tfw3PkgY-B0e5rQZv7zwVyr0zdFIOKHxztdNxDHwtiWGSq",
+ "videoConnector": "Kling",
+ "credits": 40.0,
+ "videoRes": "1072×1928",
+ "videoAt": 1790868925077,
+ "regens": 0,
+ "prompt": "For the line \"faster than women half my age.\": From this frame: two steps up — one step per second; camera RV sway — the virtual camera breathes in place, never travels. Seen through the balusters at tread level, the black pump lifts off its step and lands on the next one up, then the other pump follows, one step per second, the green hem swinging with each step; behind them the white trainer lifts and lands one step up at the same pace. The lens stays resting on its step; the balusters in the foreground stay still and soft; the same steps, each one whole, the runner and brass rods in place. Stylized 3D animation, the shoes and legs exactly as in the frame. No camera travel; no feet leaving the frame; no cut.",
+ "videoPreflight": "PASS (§35A)"
 }

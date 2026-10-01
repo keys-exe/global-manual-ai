@@ -1,0 +1,35 @@
+{
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "e116c450024a8eb9b20b27a251f746ea",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/b96318de-697b-486e-9219-82625fec3be6-HAAAXSWLWW4hgpp89y-0AQ-output.mp4?x-kcdn-pid=112372",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 48.0,
+   "size": 5829192,
+   "duration": 6.04,
+   "res": "1072×1928",
+   "at": 1790868925077,
+   "job": "AcQ4ZqPHoZy4XdDADlxlXUYQmfGVwf_SeKqh9OmOjZD-1665vhSjgmjKbiyFQolaReMsuOkw",
+   "note": "from the picked image v7 A (re-angled)"
+  }
+ ],
+ "videoAsset": "e116c450024a8eb9b20b27a251f746ea",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/b96318de-697b-486e-9219-82625fec3be6-HAAAXSWLWW4hgpp89y-0AQ-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AcQ4ZqPHoZy4XdDADlxlXUYQmfGVwf_SeKqh9OmOjZD-1665vhSjgmjKbiyFQolaReMsuOkw",
+ "videoConnector": "Kling",
+ "credits": 48.0,
+ "duration": 6,
+ "videoRes": "1072×1928",
+ "videoAt": 1790868925077,
+ "status": "review",
+ "regens": 0,
+ "prompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": From this frame: one last step up and a look up — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels. Seen from the landing above, the daughter takes one last step up onto the 13th step, about a second, her right hand sliding up the handrail, and lifts her face fully to the lens, eyes on it, lips parted on a breath; she ends still, one step below the top. The high viewpoint stays where it is; the flight, the photo wall and the hall far below stay exactly as in the frame. Stylized 3D animation, the character exactly on model from the frame, her afro puff settling after the step. No camera travel; no second person; no cut.",
+ "model": "Kling 3.0 (kling-video-v3_0) · 6 s · 1080p · prefer_multi_shots false · silent",
+ "videoPreflight": "PASS (§35A)",
+ "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
+ "updatedAt": 1790868925077
+}

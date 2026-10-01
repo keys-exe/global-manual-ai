@@ -5,12 +5,12 @@
  "beat": "HK-02a",
  "title": "hook — the witness · SH-HIGH from the landing",
  "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
- "status": "ready",
+ "status": "review",
  "flow": [
   "image",
   "video"
  ],
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "Kling 3.0 (kling-video-v3_0) · 6 s · 1080p · prefer_multi_shots false · silent",
  "imageModel": "nano_banana_pro → logged nano_banana_2",
  "duration": 6,
  "songIn": 8.01,
@@ -33,7 +33,7 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "",
- "updatedAt": 1790867704482,
+ "updatedAt": 1790868925077,
  "hook": 1,
  "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": her daughter on the 12th step below, a hand on the rail, looking up at the lens, out of breath. Image 1 is this scene's confirmed frame. Image 2 is the daughter. Image 3 is the hall and staircase.\nMedium shot from the landing, the lens above head height looking steeply down the flight, sharp on her eyes. The same woman as Image 2 on the 12th of 14 steps, weight on her right foot, the left lifting to the 13th, right hand gripping the oak handrail, left hand on her thigh, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. Past her the flight of Image 3 falls away: the photo wall at the left of frame, balusters and handrail at the right, beige runner and brass rods, the bare oak floor and the front door far below.\nIn the frame: one woman, the one staircase, the photo wall, the hall floor, the front door; every other surface bare. Two hands, two legs.\nThe render of Image 1, sun from the sidelights below, a catchlight in each eye. Clothing, shoes and walls plain — no lettering, logos or labels; no second person.",
  "imageStatus": "confirmed",
@@ -225,5 +225,33 @@
  "shot": "SH-HIGH (from the landing)",
  "imageParts": [],
  "imagePick": 7,
- "imageUnused": 8
+ "imageUnused": 8,
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "e116c450024a8eb9b20b27a251f746ea",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/b96318de-697b-486e-9219-82625fec3be6-HAAAXSWLWW4hgpp89y-0AQ-output.mp4?x-kcdn-pid=112372",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 48.0,
+   "size": 5829192,
+   "duration": 6.04,
+   "res": "1072×1928",
+   "at": 1790868925077,
+   "job": "AcQ4ZqPHoZy4XdDADlxlXUYQmfGVwf_SeKqh9OmOjZD-1665vhSjgmjKbiyFQolaReMsuOkw",
+   "note": "from the picked image v7 A (re-angled)"
+  }
+ ],
+ "videoAsset": "e116c450024a8eb9b20b27a251f746ea",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/b96318de-697b-486e-9219-82625fec3be6-HAAAXSWLWW4hgpp89y-0AQ-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AcQ4ZqPHoZy4XdDADlxlXUYQmfGVwf_SeKqh9OmOjZD-1665vhSjgmjKbiyFQolaReMsuOkw",
+ "videoConnector": "Kling",
+ "credits": 48.0,
+ "videoRes": "1072×1928",
+ "videoAt": 1790868925077,
+ "regens": 0,
+ "prompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": From this frame: one last step up and a look up — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels. Seen from the landing above, the daughter takes one last step up onto the 13th step, about a second, her right hand sliding up the handrail, and lifts her face fully to the lens, eyes on it, lips parted on a breath; she ends still, one step below the top. The high viewpoint stays where it is; the flight, the photo wall and the hall far below stay exactly as in the frame. Stylized 3D animation, the character exactly on model from the frame, her afro puff settling after the step. No camera travel; no second person; no cut.",
+ "videoPreflight": "PASS (§35A)"
 }

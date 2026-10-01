@@ -1,0 +1,35 @@
+{
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "e5e55a28af50978aae304f4d97561edc",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/37490892-1885-4896-be58-2038430fe138-lKhiQJoH0nbZcoIg0JaUPw-output.mp4?x-kcdn-pid=112372",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 40.0,
+   "size": 4392112,
+   "duration": 5.04,
+   "res": "1072×1928",
+   "at": 1790868925077,
+   "job": "AapDQq33vt5vt9V7b8quyIvs50Tfw3PkgY-B0e5rQZv7zwVyr0zdFIOKHxztdNxDHwtiWGSq",
+   "note": "from the picked image v7 A (re-angled)"
+  }
+ ],
+ "videoAsset": "e5e55a28af50978aae304f4d97561edc",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/37490892-1885-4896-be58-2038430fe138-lKhiQJoH0nbZcoIg0JaUPw-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AapDQq33vt5vt9V7b8quyIvs50Tfw3PkgY-B0e5rQZv7zwVyr0zdFIOKHxztdNxDHwtiWGSq",
+ "videoConnector": "Kling",
+ "credits": 40.0,
+ "duration": 5,
+ "videoRes": "1072×1928",
+ "videoAt": 1790868925077,
+ "status": "review",
+ "regens": 0,
+ "prompt": "For the line \"faster than women half my age.\": From this frame: two steps up — one step per second; camera RV sway — the virtual camera breathes in place, never travels. Seen through the balusters at tread level, the black pump lifts off its step and lands on the next one up, then the other pump follows, one step per second, the green hem swinging with each step; behind them the white trainer lifts and lands one step up at the same pace. The lens stays resting on its step; the balusters in the foreground stay still and soft; the same steps, each one whole, the runner and brass rods in place. Stylized 3D animation, the shoes and legs exactly as in the frame. No camera travel; no feet leaving the frame; no cut.",
+ "model": "Kling 3.0 (kling-video-v3_0) · 5 s · 1080p · prefer_multi_shots false · silent",
+ "videoPreflight": "PASS (§35A)",
+ "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
+ "updatedAt": 1790868925077
+}
