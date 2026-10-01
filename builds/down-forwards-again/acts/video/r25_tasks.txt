@@ -1,1 +1,2 @@
 BR-03b {"generationId": "AZ4xG8blKVwhJrJs-g4b7Va3mbN5yx3GNkj-MWrSRWEBOZgqG1rTuZDEdsSrx0PHfvjoBCxk", "model": "kling-video-v3_0", "connector": "Kling", "credits": 24}
+BR-03b.v2 {"generationId": "AcXavNNODOQsktCWhAcn5hDE-WMjLRP95RGmj1JWz2w6KryUr7foZO9eIB9k8ryTqwZBJ-sL", "model": "kling-video-v3_0", "connector": "Kling", "credits": 24}

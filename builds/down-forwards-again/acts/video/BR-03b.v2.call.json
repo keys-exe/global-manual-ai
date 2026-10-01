@@ -1,0 +1,53 @@
+{
+ "beat": "BR-03b",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_152256_e2533a33-3bf0-4929-a8b3-6c1a78948645.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "there is a band of tendon about as wide as your thumb.",
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "the thumb outline turns into a real hand",
+   "prevented_by": "see-through thumb; no hand"
+  },
+  {
+   "risk": "the glow spreads onto the kneecap",
+   "prevented_by": "the band runs from the bottom of the kneecap down to the shin"
+  },
+  {
+   "risk": "the leg moves",
+   "prevented_by": "no leg movement; bones and muscles keep their place"
+  }
+ ],
+ "route": "kling",
+ "route_note": "user 2026-10-01: 'USE KLING CONNECTOR' (Kling credits back: 45,091) — off Kie",
+ "approved_by": "the user, 2026-10-01: 'confirm'",
+ "audio": false,
+ "prompt": "For the line \"there is a band of tendon about as wide as your thumb.\": From this frame: the glass thumb outline settles across the band, which glows a little brighter under it; the knee stays still. The virtual camera holds steady with a very slow, small drift. The glowing band runs from the bottom of the round kneecap down to the top of the shin bone, in the centre of the frame, with the see-through thumb across it. The bones and muscles keep their shape and place. No zoom, no leg movement, no hand, no text.",
+ "video_version": 2,
+ "motion_plan": "From this frame: the glass thumb outline settles across the band, which glows a little brighter under it; the knee stays still.",
+ "motion_confirmed": true,
+ "taste": [
+  "HT11",
+  "HT12",
+  "HT13"
+ ],
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "user_go": "the user, 2026-10-01: 'confirm'",
+ "motion_confirmed_by": "the user, 2026-10-01: 'confirm' (image v2, anatomy, motion plan on the card)",
+ "kling_model": "kling-video-v3_0",
+ "fix_note": "user: 'i dont want to re use broll … i want anatomy here' → new anatomy frame (image v2); the thumb outline settles on the glowing band"
+}
