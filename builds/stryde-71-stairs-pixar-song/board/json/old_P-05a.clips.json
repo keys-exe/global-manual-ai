@@ -1,0 +1,53 @@
+{
+ "videoVersions": [
+  {
+   "archived": true,
+   "asset": "a668035a9e91213c5cea4f8b37cd4e8c",
+   "at": 1790878081408,
+   "connector": "Kling",
+   "credits": 48,
+   "duration": 6.04,
+   "fromImage": 3,
+   "job": "AcYJ9QfUH3l7jIifoKDPi8NoYU_eRRW548XtPx00SKHA862Cg3PIS6bMl8ZZXT1bdFok4z2p",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v3 A (job 8545c58b) · what I see: the push lands, then the heap on the table thins out and vanishes by the end, and her mouth moves as if talking · replaced by v2 on the user's Fix (the beat split into three)",
+   "res": "1072×1928",
+   "size": 6887306,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/b0bab431-325a-4f4c-84fc-48b293345db5-0l6uDJmH4CjSRbs6JlloPg-output.mp4?x-kcdn-pid=112372",
+   "v": 1,
+   "archiveAsset": "a668035a9e91213c5cea4f8b37cd4e8c"
+  },
+  {
+   "asset": "62e157b5f8ddaf144b7eaad11c83dac7",
+   "at": 1790879441635,
+   "connector": "Kling",
+   "credits": 24,
+   "duration": 3.04,
+   "fromImage": 3,
+   "job": "AVPN31066q5LBkJaQhg2YSeFnxX1usvKWFPmWdYbeGTC0WkQ1CkAufNgVjpxhDinO53XXM2D",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v3 A (job 8545c58b) · what I see: one push to the far edge, the heap stays on the table to the end, mouth closed, she sits back · user Fix: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c; this clip re-cut to its own line (3 s), the v1 faults fixed in the prompt",
+   "res": "1072×1928",
+   "size": 3851565,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/59caaa19-9f3b-438b-a98b-fdac5a038225-E6grZjpcspO8yH5XjmcjAA-output.mp4?x-kcdn-pid=112372",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "62e157b5f8ddaf144b7eaad11c83dac7"
+  }
+ ],
+ "videoAsset": "62e157b5f8ddaf144b7eaad11c83dac7",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/59caaa19-9f3b-438b-a98b-fdac5a038225-E6grZjpcspO8yH5XjmcjAA-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AVPN31066q5LBkJaQhg2YSeFnxX1usvKWFPmWdYbeGTC0WkQ1CkAufNgVjpxhDinO53XXM2D",
+ "videoAt": 1790879441635,
+ "duration": 3.04,
+ "videoFault": "replaced on the user's Fix: never talk the lyrics/script in B-roll",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "status": "regenerate",
+ "updatedAt": 1790881140666
+}

@@ -4,8 +4,10 @@
  "bars": 1,
  "beat": "P-01b",
  "build": "stryde-71-stairs-pixar-song",
- "duration": 4,
+ "credits": 32,
+ "duration": 4.04,
  "eg": "",
+ "fault": "this hsould be stepping backwards",
  "flow": [
   "image",
   "video"
@@ -49,6 +51,7 @@
  ],
  "imageType": "image/png",
  "imageUnused": 6,
+ "imageUnusedArchived": "bb9501fabb1e6667590468ced6b91bd3",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180143_257b0fc3-b4d8-48ca-bedc-6544fba22b01.png",
  "imageVersions": [
   {
@@ -135,13 +138,15 @@
    "v": 5
   },
   {
+   "archiveAsset": "bb9501fabb1e6667590468ced6b91bd3",
+   "archived": true,
    "asset": "cceca487fc3e1e05ecf5421ec6a8c743",
    "at": 1790877909563,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "6a82e9ac-f45b-4c8f-8ce8-67ee02e12d33",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user Fix: \"this should be the backwards also\" → both slippers point up the stairs, the heel lowering backwards onto the step below",
+   "note": "user Fix: \"this should be the backwards also\" → both slippers point up the stairs, the heel lowering backwards onto the step below · not chosen (the user picked the other); copied to Old versions",
    "pair": "B",
    "res": "1536×2752",
    "size": 8144721,
@@ -156,21 +161,56 @@
  "light": "landing window at the top of the stairs, south wall · key L · morning · problem: grey · 6500K",
  "line": "One step at a time.",
  "location": "L-N-STAIRS",
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: one foot back and down onto the step below, the other joins — about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
  "music": "MUS-EXPOSE",
  "onScreen": 2.44,
  "pinEnd": "no",
  "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
  "product": "absent · —",
+ "prompt": "For the line \"One step at a time.\": From this frame: one foot back and down onto the step below, the other joins — about two seconds; camera RV sway — the virtual camera breathes in place, never travels. In close at step height, the lower slipper's heel settles backwards onto the step below and takes her weight, then the other slipper lifts off the step above and comes down beside it, toes still pointing up the stairs; the hand stays on the rail; the steps, runner and rods stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; the feet never turn around.",
+ "regens": 1,
  "section": "The low point and what failed — MUS-EXPOSE",
  "shot": "ground · profile · clean · CU",
  "songIn": 19.39,
  "songOut": 21.83,
  "stage": "broll",
  "staging": "stairs: feet only, side",
- "status": "ready",
+ "status": "regenerate",
  "storyDay": "N-D1",
  "title": "problem",
- "updatedAt": 1790878804011
+ "updatedAt": 1790880513192,
+ "videoAsset": "fd3d7510a4dbe96f31cf19f9cf878af9",
+ "videoAt": 1790879441635,
+ "videoConnector": "Kling",
+ "videoJob": "AVQFMONukGJ4IfiOICrhuf_Vz2b98IFT6hgiNfAubAB3_55Ju4dNZMuGZDuWwicaB0DF7eGy",
+ "videoNote": "first clip of this beat, from the confirmed v5 A · what I see: the lower heel settles on the step below and the other foot follows; the feet stay turned up the stairs",
+ "videoRes": "1072×1928",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/ed657454-a0c6-4691-9ef1-38f2c7e7f06a-2ddgBxbNi261B_5vJYz6kA-output.mp4?x-kcdn-pid=112372",
+ "videoVersions": [
+  {
+   "asset": "fd3d7510a4dbe96f31cf19f9cf878af9",
+   "at": 1790879441635,
+   "connector": "Kling",
+   "credits": 32,
+   "duration": 4.04,
+   "fromImage": 5,
+   "job": "AVQFMONukGJ4IfiOICrhuf_Vz2b98IFT6hgiNfAubAB3_55Ju4dNZMuGZDuWwicaB0DF7eGy",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v5 A (job 257b0fc3) · what I see: the lower heel settles on the step below and the other foot follows; the feet stay turned up the stairs",
+   "res": "1072×1928",
+   "size": 7207960,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/ed657454-a0c6-4691-9ef1-38f2c7e7f06a-2ddgBxbNi261B_5vJYz6kA-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  }
+ ]
 }
