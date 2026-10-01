@@ -45,7 +45,7 @@ RISK = {"A1-B1b": "stairs", "A1-B2b": "stairs", "A5-B4b": "stairs", "A4-B3": "ha
 WAIVE = 'user, 2026-09-30: "Run from the start frame" (asked: clips without a picked end frame — this board has no end-frame step)'
 
 def newest(b):
-    for n in (5, 4, 3, 2, 1):
+    for n in range(9, 0, -1):
         c = B / f"calls/{b}.gap{n}.image.json"
         if c.exists():
             img = B / f"renders/gap{n}/{b}.png"

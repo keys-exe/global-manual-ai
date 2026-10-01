@@ -208,3 +208,7 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
   - Downloads: the Kie file host stalled, and two transfers died when killed. `work/kie_fetch.sh` (task wait, then resumable curl, then an ffmpeg check) fetched them on retry.
   - Replaced versions are in Old Versions 3 (`archiveAsset` + `archiveBoard`). Only round 4 has per-beat Old docs there; the round-5 replacements are recorded on the Current 2 version entries.
 - 2026-10-01 Fix round 6: A5-B1 "the strap is floating in his hands and its a bit too small". The strap lay flat on an open palm with no band showing. The new frame (`work/fix_gap6.py`) uses the product sheet's bottom-edge pinch grip, the band round his wrist, and SIZE_HELD against his thumb (12 × 5 cm). The previous frame is in Old Versions 3. Every other Current 2 card is confirmed with its video in use; A5-B1's video waits for this frame.
+
+### Fix round 7 (2026-10-01, hourly check)
+- A5-B1 Fix: "he is holding the 2 straps showing to us" → `work/fix_gap7.py`: he holds both straps up, one in each hand, the same bottom-edge pinch grip and true size on each (preflight PASS, 952 chars). Higgsfield job `dde11100-a475-4063-b83a-920389ec4615` → Current 2 asset `7d260a82…` (v6, review). Motion plan updated to lift both straps. v5 copied to Old 3 (`03b734a7…`) and deleted from Current 2. The Old 3 A5-B1 doc now lists v2–v5.
+- `gap_video.py` `newest()` now looks at rounds 9..1 (it used to stop at gap5).
