@@ -6,7 +6,7 @@
   "image"
  ],
  "hook": 1,
- "imageAsset": "0c8a73134652aea95025aa36bfcd1dc8",
+ "imageAsset": "38f68dcc05ffb8b0a2d6f1404d3f1eda",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageFault": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\"",
@@ -27,7 +27,7 @@
  "imageRes": "1536×2752",
  "imageStatus": "regenerate",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142328_e1cce4cb-46b2-468d-b42c-4ede3e4108d0.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_11c204af-0135-4c7d-93f1-42c4dbe2924e.png",
  "imageVersions": [
   {
    "archived": true,
@@ -124,11 +124,27 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142325_30fcbe8e-6006-4ddb-957f-a740ec7d8e8b.png",
    "v": 6,
    "archived": true
+  },
+  {
+   "asset": "38f68dcc05ffb8b0a2d6f1404d3f1eda",
+   "at": 1790867552722,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "11c204af-0135-4c7d-93f1-42c4dbe2924e",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "not chosen — the user used the other render",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7046931,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_11c204af-0135-4c7d-93f1-42c4dbe2924e.png",
+   "v": 8,
+   "archived": true
   }
  ],
  "line": "faster than women half my age.",
  "stage": "hooks",
  "status": "regenerate",
  "title": "hook — the result — v1–v3 pairs (replaced)",
- "updatedAt": 1790867385732
+ "updatedAt": 1790868326332
 }

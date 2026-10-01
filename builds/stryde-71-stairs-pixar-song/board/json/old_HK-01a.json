@@ -27,11 +27,27 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_980d1f5a-0dd8-4473-95cf-e577349c834a.png",
    "v": 2,
    "archived": true
+  },
+  {
+   "asset": "d9f845182a1016b37a460b7bb0a3b413",
+   "at": 1790867552722,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "5ac564d4-fb17-4b3a-b95e-4cab0673a8f0",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "not chosen — the user used the other render",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7959714,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_5ac564d4-fb17-4b3a-b95e-4cab0673a8f0.png",
+   "v": 4,
+   "archived": true
   }
  ],
- "imageAsset": "c6d5ce03121a7fe7d97d260059511143",
+ "imageAsset": "d9f845182a1016b37a460b7bb0a3b413",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_980d1f5a-0dd8-4473-95cf-e577349c834a.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_5ac564d4-fb17-4b3a-b95e-4cab0673a8f0.png",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
@@ -57,5 +73,5 @@
    "role": "Image 3"
   }
  ],
- "updatedAt": 1790860282492
+ "updatedAt": 1790868326332
 }

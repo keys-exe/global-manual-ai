@@ -1,0 +1,49 @@
+{
+ "beat": "HK-01b",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"faster than women half my age.\": From this frame: two steps up — one step per second; camera RV sway — the virtual camera breathes in place, never travels. Seen through the balusters at tread level, the black pump lifts off its step and lands on the next one up, then the other pump follows, one step per second, the green hem swinging with each step; behind them the white trainer lifts and lands one step up at the same pace. The lens stays resting on its step; the balusters in the foreground stay still and soft; the same steps, each one whole, the runner and brass rods in place. Stylized 3D animation, the shoes and legs exactly as in the frame. No camera travel; no feet leaving the frame; no cut.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_cfba53bd-0a57-46d1-8473-f49289e63229.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "faster than women half my age.",
+ "motion_plan": "From this frame: two steps up — one step per second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "unhurried",
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "risk_class": "stairs",
+ "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
+ "pilot": "confirmed",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT13",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "legs and steps blend",
+   "prevented_by": "one step per second, few steps, camera still, every step whole"
+  },
+  {
+   "risk": "a hand lands on the rail (HT03)",
+   "prevented_by": "hands free and clear of the rail"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  }
+ ]
+}

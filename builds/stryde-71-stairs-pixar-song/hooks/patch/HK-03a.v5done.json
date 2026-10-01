@@ -1,66 +1,4 @@
 {
- "build": "stryde-71-stairs-pixar-song",
- "act": "Hook 1",
- "stage": "hooks",
- "beat": "HK-03a",
- "title": "hook — the line · SH-OTS over the daughter's shoulder",
- "line": "\"Mama, when did that happen?\"",
- "status": "planned",
- "flow": [
-  "image",
-  "video"
- ],
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "duration": 5,
- "songIn": 12.89,
- "songOut": 16.14,
- "onScreen": 3.25,
- "section": "Hook — MUS-OPEN",
- "bars": 1,
- "key": "Mama",
- "location": "L-N-STAIRS (landing)",
- "storyDay": "N-D4",
- "framing": "MCU over the daughter's near shoulder from the top step, her shoulder and afro puff soft in the near foreground, onto N on the landing turned back to her with a small knowing smile, the landing window bright behind her",
- "motionPlan": "From this frame: N turns her head back to her daughter — one turn, about a second; camera RV sway — the virtual camera breathes in place, never travels",
- "staging": "none",
- "pinEnd": "no",
- "angle": "eye · ots · through · MCU — ots = the line lands between them; the window behind her = she's in the light, the daughter in shadow",
- "focus": "eyes · medium",
- "light": "landing window, south wall · key R · afternoon · after: Sunday sun · 5600K",
- "product": "worn (under the dress) · HIDDEN",
- "layout": "full",
- "eg": "",
- "music": "MUS-OPEN",
- "ledger": "",
- "updatedAt": 1790868365586,
- "hook": 1,
- "editOf": "stryde-71-stairs-pixar-song__P0-PROP-N",
- "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this picture exactly as it is — the top of the staircase, the landing behind it, the photo wall, the handrail, the two women and their clothes, the light — and move the viewpoint up to the 9th step, close behind the daughter. Image 1 is the confirmed frame of this beat.\nMedium close-up over the daughter's right shoulder: she stands on the 14th and top step with her back three-quarter to us, her olive shoulder and afro puff soft in the near right foreground, right hand on the handrail; her mother on the landing two paces beyond, body turned along it, head turned back over her left shoulder, a small knowing smile, mouth closed, eyes on her daughter, both hands free at her sides; the mother sharp, the landing wall and balusters of Image 1 behind her exactly as they are.\nIn the frame: the two women, the top steps, the landing's balusters and rail, the landing wall of Image 1; every other surface bare. Two legs each.\nThe render and light of Image 1, a catchlight in each eye. Clothing and walls plain — no lettering, logos or labels; no third person; no window.",
- "imageStatus": "review",
- "imageRefs": [
-  {
-   "label": "HK-03a v6 B (confirmed frame)",
-   "role": "Image 1 · edited (§6A rule 3, HT17)",
-   "kind": "frame",
-   "ref": "stryde-71-stairs-pixar-song__HK-03a"
-  }
- ],
- "imageMatch": "frame",
- "imageTaste": [
-  "HT03",
-  "HT04",
-  "HT05",
-  "HT08",
-  "HT09",
-  "HT12",
-  "HT17",
-  "HT18",
-  "HT19",
-  "HT22",
-  "HT23"
- ],
- "preflight": "PASS (§6A, kind image)",
  "imageVersions": [
   {
    "archiveAsset": "5cb241f3716ed4e7c2b62beef21f3263",
@@ -241,8 +179,19 @@
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
  "imageAt": 1790868365586,
+ "imageStatus": "review",
  "imageRegens": 5,
- "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
+ "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this picture exactly as it is — the top of the staircase, the landing behind it, the photo wall, the handrail, the two women and their clothes, the light — and move the viewpoint up to the 9th step, close behind the daughter. Image 1 is the confirmed frame of this beat.\nMedium close-up over the daughter's right shoulder: she stands on the 14th and top step with her back three-quarter to us, her olive shoulder and afro puff soft in the near right foreground, right hand on the handrail; her mother on the landing two paces beyond, body turned along it, head turned back over her left shoulder, a small knowing smile, mouth closed, eyes on her daughter, both hands free at her sides; the mother sharp, the landing wall and balusters of Image 1 behind her exactly as they are.\nIn the frame: the two women, the top steps, the landing's balusters and rail, the landing wall of Image 1; every other surface bare. Two legs each.\nThe render and light of Image 1, a catchlight in each eye. Clothing and walls plain — no lettering, logos or labels; no third person; no window.",
  "imageFault": "user 2026-10-01 Fix: \"wrong location\" on the OTS pair → the OTS kept, built as an image edit of the user's confirmed v6 (the top of the flight from the hall), viewpoint moved up the flight",
- "shot": "SH-OTS (over the daughter's shoulder, from mid-flight)"
+ "imageMatch": "frame",
+ "imageRefs": [
+  {
+   "label": "HK-03a v6 B (confirmed frame)",
+   "role": "Image 1 · edited (§6A rule 3, HT17)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__HK-03a"
+  }
+ ],
+ "shot": "SH-OTS (over the daughter's shoulder, from mid-flight)",
+ "updatedAt": 1790868365586
 }

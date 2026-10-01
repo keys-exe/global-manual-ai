@@ -1,0 +1,51 @@
+{
+ "videoVersions": [
+  {
+   "asset": "f3acafbf69d13a7f074028f7b4bb9927",
+   "at": 1790860629241,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "job": "AeINI6H83Mif1Uu-CSW_n6OIv5VRfNgGeM42Em_3YIOoiOmdZWpRPD-U5n8FuUg4z919Hftu",
+   "model": "kling-video-v3_0",
+   "note": "",
+   "res": "1072×1928",
+   "size": 5728454,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/89c7bf2b-9e52-49ec-b6b6-cb0121792d3e-S_LIAPjXX8sjd8nEjx3gKg-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  },
+  {
+   "v": 2,
+   "asset": "864a6b7f62d4344b7db33a54d5db95ff",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/6f14f08b-04e7-4d10-8bad-79d2ccd87f52-PHtD7iepuOMevEXxp4jRpQ-output.mp4?x-kcdn-pid=112372",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 40.0,
+   "size": 4622776,
+   "duration": 5.04,
+   "res": "1072×1928",
+   "at": 1790868925077,
+   "job": "AYcOB6HuBNTSApKpCKTvA6fF2xWIV09Lr6tjJxHPNgaz9NJ1eZLLhPOGc3Nh54fzko2_PRQO",
+   "note": "from image v3 A — the re-angled pick (clip v1 was from image v1 A)"
+  }
+ ],
+ "videoAsset": "864a6b7f62d4344b7db33a54d5db95ff",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/6f14f08b-04e7-4d10-8bad-79d2ccd87f52-PHtD7iepuOMevEXxp4jRpQ-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AYcOB6HuBNTSApKpCKTvA6fF2xWIV09Lr6tjJxHPNgaz9NJ1eZLLhPOGc3Nh54fzko2_PRQO",
+ "videoConnector": "Kling",
+ "credits": 40.0,
+ "duration": 5,
+ "videoRes": "1072×1928",
+ "videoAt": 1790868925077,
+ "status": "review",
+ "regens": 0,
+ "prompt": "For the line \"I'm seventy-one, and I take the stairs\": From this frame: two steps up, N pulling ahead — one step per second, brisk; camera RV sway — the virtual camera breathes in place, never travels. The older woman in the green dress climbs two steps up the flight above us, one step per second, ending two steps higher with her weight settling onto the upper foot, both hands free and clear of the rail the whole way; her daughter behind her climbs two steps at the same pace, right hand sliding along the oak handrail, ending still two steps below. The low viewpoint at the newel stays where it is; the same staircase, every step whole, balusters and photo wall still; exactly one staircase, both women climbing up and away. Stylized 3D animation, both characters exactly on model from the frame, the dress hem following through after each step. No camera travel; no extra people; no cut.",
+ "model": "Kling 3.0 (kling-video-v3_0) · 5 s · 1080p · prefer_multi_shots false · silent",
+ "videoPreflight": "PASS (§35A)",
+ "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
+ "updatedAt": 1790868925077,
+ "videoNote": "clip v2 from image v3 (the low full shot); clip v1 (from image v1 A, confirmed earlier) stays as a version"
+}
