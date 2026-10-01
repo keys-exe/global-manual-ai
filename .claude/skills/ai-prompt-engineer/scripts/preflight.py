@@ -328,10 +328,11 @@ def run(c):
         fn = c.get("fix_note", "")
         check("gen 2 has a diagnosed fix", "→" in fn or "->" in fn, fn or "missing fix_note")
 
-    # 2. Frames — on Seedance, ingredients: information, never frames (§4, V7.68.0)
-    if conn == "seedance":
+    # 2. Frames — on Seedance, ingredients: information, never frames (§4, V7.68.0).
+    #    Wan 3.0 in ingredients mode (V7.83.1, user 2026-10-01: "use wan 3.0 prime, the ingredients and not frames") — the same rule.
+    if conn in ("seedance", "wan"):
         check("every ingredient approved", c.get("ingredients_approved") is True, "Manual: the user's Confirm on every ingredient card")
-        check("no frame in the pack", not c.get("start_image"), "a Seedance call carries no start, master or scene frame")
+        check("no frame in the pack", not c.get("start_image") and not c.get("end_image"), f"a {conn} ingredients call carries no start, end, master or scene frame")
     else:
         check("start image approved", bool(c.get("start_image")) and c.get("start_approved") is True)
     if c.get("pinned"):
@@ -346,6 +347,11 @@ def run(c):
         files = c.get("files", [])
         check("ingredients ≤ 30 files", len(files) <= 30, f"{len(files)} files")
         check("ingredient manifest present", "@image1" in p or "ING-MANIFEST" in p or "reference" in p.lower())
+    elif conn == "wan":
+        check("Wan duration 2–30, stated (never auto)", isinstance(d, (int, float)) and 2 <= d <= 30, str(d))
+        imgs = [f for f in c.get("files", []) if not MUSIC_FILE.search(str(f))]
+        check("ingredients ≤ 4 images (Appendix D)", len(imgs) <= 4, f"{len(imgs)} images")
+        check("ingredient manifest present", "@image1" in p or "Image1" in p or "Image 1" in p or "REF-MANIFEST" in p)
     elif conn == "kling":
         check("Kling duration 3–15", isinstance(d, (int, float)) and 3 <= d <= 15, str(d))
         check("prompt ≤ 2,500 chars", len(p) <= 2500, f"{len(p)} chars")
@@ -353,8 +359,8 @@ def run(c):
     else:
         check("known connector", False, conn)
 
-    # 3a. No BGM in any Seedance generation — music is laid in the edit (§24M, V7.73.3)
-    if conn == "seedance":
+    # 3a. No BGM in any Seedance (or Wan) generation — music is laid in the edit (§24M, V7.73.3)
+    if conn in ("seedance", "wan"):
         check("NEG-SOUND (no BGM on Seedance, §24M)", SIG["NEG-SOUND"] in p)
         pos = NEG_CLAUSE.sub("", p)
         mus = sorted(set(m.group(0).lower() for m in MUSIC.finditer(pos)))

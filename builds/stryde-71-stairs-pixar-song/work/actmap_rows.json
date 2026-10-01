@@ -135,11 +135,11 @@
   ],
   "line": "\"Mama, when did that happen?\"",
   "key": "Mama",
-  "function": "hook — the line (church steps, the two turned to each other, edit of the confirmed HK-02a frame) · MEDIUM from the sidewalk",
+  "function": "hook — the line (a new angle on the user's call: from inside the open church doorway, the two on the doorstep, close up on the user's Fix) · CU through the doors",
   "subject": "N + C2",
   "location": "L-CHURCH",
   "story_day": "N-D4",
-  "framing": "MEDIUM from the sidewalk at the foot of the church steps, the lens at hip height looking up the flight: N stopped on the 6th step and turned back to face her daughter, one hand on her hip, a small smile; the daughter two steps below with her right hand on the black rail, face up to her mother, mouth open mid-word",
+  "framing": "CU at eye level from inside the church's open front doorway, both heads filling the frame: N nearest the lens in three-quarter profile turned back to her daughter, a small smile; the daughter a step beyond, face up to her mother, mouth open mid-word; the door edge and the sunlit sidewalk soft",
   "action": "the daughter's head tilts as she asks, N's smile widens",
   "pace": "a beat, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -155,16 +155,16 @@
   "ledger": "",
   "music": "MUS-OPEN",
   "angle": {
-   "height": "low",
+   "height": "eye",
    "side": "three-quarter",
-   "fg": "clean",
-   "scale": "MEDIUM",
-   "why": "low from the sidewalk = the same place as HK-02a; the line lands between them, both faces in frame (HT24)"
+   "fg": "through",
+   "scale": "CU",
+   "why": "through the doorway in close = the line lands between the two faces; she has arrived, the daughter is still on the step (HT24)"
   },
   "mirror_of": null,
   "focus": {
    "plane": "eyes",
-   "dof": "medium",
+   "dof": "shallow",
    "rack": null,
    "moving_subject": false
   },

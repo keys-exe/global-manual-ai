@@ -2,7 +2,7 @@
  "beat": "SC02-SH01",
  "kind": "image",
  "mode": 4,
- "prompt": "For the line \"Just leave it by the stairs, love. I’ll get it later.\": at night she is stranded at the very top of her own stairs, calling down. Image 1 and Image 2 are this exact staircase, copied exactly: a straight flight of oatmeal-carpeted steps with brass rods along the magnolia LEFT wall and its framed photographs; on the OPEN RIGHT side the dark banister, square spindles and top newel post. A low shot from halfway up that flight looking up it: the top steps soft in the near foreground, the photo wall on the left, the banister on the right. At the very top, both feet on the landing's edge, stands the woman from Image 3 — face, steel-grey bob with its heavy fringe and small build copied exactly — in a heather-green jumper and charcoal skirt. Right hand on the top newel post, left hand flat on her chest; she is looking down the stairs, calling, a brave smile that never reaches her eyes. Behind her only the landing's magnolia wall; every step bare. Night: one warm 2800K ceiling pendant on the landing lights her; the steps below fall into dark. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
+ "prompt": "For the line \"Just leave it by the stairs, love. I’ll get it later.\": Keep this photo exactly as it is — Image 1, the hall seen from the front door: the staircase rising straight ahead along the left-hand wall with its framed photographs, the dark banister on its right, the landing and its lamp at the top, the telephone table with only the telephone, the barometer, the doorways on the right. The camera stays exactly where it is; recompose it as a tall vertical frame centred on the staircase. Change only three things. It is night: the hall's glass pendant and the landing lamp are lit, warm 2800K; the door glass is dark. Add the woman from Image 2, exactly as on her sheet — face, steel-grey bob with its heavy fringe, small build, and the same clothes: the green crew-neck jumper, charcoal skirt and black low-heeled shoes. She stands on the landing at the very top of the stairs, small in the frame, facing down the flight toward the camera, her right hand on the top newel post, her left hand at her side; she is looking down the stairs, calling, tired. Two plain shopping bags stand on the hall carpet at the foot of the bottom step. Clothing and bags plain and unbranded.",
  "script_line": "Just leave it by the stairs, love. I’ll get it later.",
  "refs": [
   {
@@ -13,26 +13,19 @@
    "role": "Image 1"
   },
   {
-   "kind": "location",
-   "label": "Her stairs from the landing (v4)",
-   "ref": "stryde-half-my-age__L-STAIRS",
-   "job": "73351f73-d511-45c9-839f-4aec7c451868",
-   "role": "Image 2"
-  },
-  {
    "kind": "character",
    "label": "Her — cast sheet (face, hair, build)",
    "ref": "stryde-half-my-age__N-HER",
    "job": "30fd2bc8-17e3-4e27-b2cf-8225e00b088c",
-   "role": "Image 3"
+   "role": "Image 2"
   }
  ],
  "face": true,
  "body": true,
  "room": true,
  "product": false,
- "match": null,
- "edit_of": null,
+ "match": "plate",
+ "edit_of": "P-HOUSE v1",
  "pair": [
   "gpt_image_2",
   "gpt_image_2"
@@ -40,7 +33,7 @@
  "model": "gpt-image-2 image-to-image · 9:16 (Kie AI)",
  "model_override": "user 2026-10-01: \"use gpt image 2 and not sunburst, re do all the scene 2\" — overrides the §18A Sunburst routing for this build's body frames",
  "role": "key",
- "motion_plan": "From this frame: she calls the line down the stairs, a small forced smile on 'love', then her eyes drop to the stairs below; her right hand stays on the newel post; she does not step down.",
+ "motion_plan": "From this frame: she stays on the landing, right hand on the newel post, and calls the line down to the hall; on 'later' she looks away from the stairs; she does not step down.",
  "scene": 2,
  "taste": [
   "HT02",
@@ -50,6 +43,6 @@
   "HT19",
   "HT22"
  ],
- "generation": 5,
- "fix_note": "the surroundings are wrong not the same as the location"
+ "generation": 7,
+ "fix_note": "re do the shot1 of the scene 2 fresh start cause everything you gave me is not correct"
 }

@@ -1387,6 +1387,60 @@ B["B10d"] = clip("B10d",
            {"risk": "text appears on the blister pack", "prevented_by": "'no text on the blister pack'"}])
 B["B10d"][0]["motion"] = B["B10d"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little")
 
+# ── 2026-10-01 B08-BR v2 confirmed (board Confirm; image Fix "WRONG WOMAN" → the R1 back view) → clip gen 2. v2 starts standing,
+# both feet down, so the clip starts the walk rather than continuing it. Kie AI Kling.
+START.update({"B08-BR": str(HERE.parent / "broll/B08-BR_v2.png")})
+B["B08-BR"] = clip("B08-BR",
+    "A white British woman of sixty-nine with a short white layered crop, slight build and a small rounded back, seen from behind in her "
+    "pale duck-egg blue hall facing the white front door: a dusty-pink cardigan, a navy skirt ending above the knee, bare legs, white "
+    "canvas plimsolls; the half-moon hall table with a vase of dried lavender on the left, the white spindles and oak handrail of the "
+    "stairs on the right.",
+    "Starting on the first frame: she steps off with her right foot and walks on down the hall away from the lens at an ordinary, "
+    "unhurried pace — about three easy, even steps, one step a second, real time — getting a little smaller in the frame, arms swinging "
+    "naturally. She does not turn round.",
+    "no turning round, no looking back, no face, no limp, no stopping, no reaching the door, no opening the door, no second person, "
+    "no walking stick, no knee strap, no change to her hair, no extra legs",
+    3.6, hi=5,
+    risks=[{"risk": "legs warp or swap on the first steps", "prevented_by": "three even steps at one a second, HOLD-C + NEG-WARP-C"},
+           {"risk": "she turns and her face appears", "prevented_by": "'She does not turn round', 'no turning round, no looking back, no face'"},
+           {"risk": "camera follows her down the hall", "prevented_by": "locked-off tripod clause, 'no camera travelling with the subject'"},
+           {"risk": "her hair drifts back to the wrong woman's bob", "prevented_by": "short white crop in subject, 'no change to her hair'"}])
+
+# ── 2026-10-01 B18b image v6 confirmed (going down the stairs, straps kept from B22a v4) + user "CONFIRM GO" → clip gen 3. Kie AI Kling.
+START.update({"B18b": str(HERE.parent / "broll/B18b_v6.png")})
+B["B18b"] = clip("B18b",
+    "Front-on at knee height, an older woman's pale legs coming down an oatmeal-carpeted staircase towards the camera, the hem of a "
+    "mid-blue denim skirt at the top of the frame, white canvas plimsolls; a matte-black knee strap with two pointed peaks, chrome "
+    "slides and a grey lowercase \"stryde\" sits just below EACH kneecap; white spindles on the right.",
+    "Already moving on the first frame: her lower foot settles flat on the stair below and takes her weight, then her other foot "
+    "comes down past it onto the next stair — one easy, even step down in about a second and a half, real time, without hesitating. "
+    "Both straps stay exactly as they are — rigid, the same shape, size, place and wordmark from first frame to last.",
+    "no strap moving, no strap changing shape, no wordmark changing, no third strap, no hand in frame, no hand on the banister, no face, "
+    "no going up the stairs, no stopping, no stumbling, no camera movement, no extra legs, no extra feet",
+    2.6, hi=5,
+    risks=[{"risk": "the straps warp or redraw as the legs move", "prevented_by": "rigid-strap line, 'no strap changing shape, no wordmark changing'"},
+           {"risk": "legs or feet duplicate on the stairs", "prevented_by": "one step at a named pace, HOLD-C + NEG-WARP-C, 'no extra legs, no extra feet'"},
+           {"risk": "a hand reaches into frame for the banister", "prevented_by": "'no hand in frame, no hand on the banister'"}])
+B["B18b"][0]["motion"] = B["B18b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the skirt lags a little; the straps never move")
+
+# ── 2026-10-01 B18b video Fix "FAST WALKING DOWN TO STAIR NOT STOPPING" (gen 3: pauses between steps; strap on the left of frame flips
+# at ~3.1 s). §22X diagnosis: motion — the pace was "one easy step"; §27G rule 9: speed comes from a brisk countable pace + the edit,
+# never "fast" legs. Gen 4 (waits for the user's GO): brisk continuous steps, one every 0.8 s, no pause, 4 s, straps rigid.
+B["B18b"] = clip("B18b",
+    "Front-on at knee height, an older woman's pale legs coming down an oatmeal-carpeted staircase towards the camera, the hem of a "
+    "mid-blue denim skirt at the top of the frame, white canvas plimsolls; a matte-black knee strap with two pointed peaks, chrome "
+    "slides and a grey lowercase \"stryde\" sits just below EACH kneecap; white spindles on the right.",
+    "Already moving on the first frame: she walks down the stairs towards the camera at a brisk, steady pace without pausing — one "
+    "step every 0.8 seconds, left, right, left, right, each foot landing flat on the next stair as the other leaves — four even steps, "
+    "never slowing, never stopping. Both straps stay exactly as they are — rigid, peaks pointing up, the same shape, size, place and "
+    "wordmark from first frame to last.",
+    "no pausing between steps, no strap twisting or flipping, no wordmark changing, no hand in frame, no camera movement",
+    3.2, hi=4,
+    risks=[{"risk": "the straps twist or flip as the knees bend (gen 3 at 3.1 s)", "prevented_by": "rigid-strap line 'peaks pointing up', 4 s cap"},
+           {"risk": "she pauses between steps again", "prevented_by": "countable pace 'one step every 0.8 seconds', 'never slowing, never stopping'"},
+           {"risk": "legs or feet duplicate at the faster pace", "prevented_by": "brisk not fast (§27G rule 9), HOLD-C + NEG-WARP-C"}])
+B["B18b"][0]["motion"] = B["B18b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the skirt lags a little; the straps never move")
+
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
