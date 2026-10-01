@@ -187,6 +187,7 @@ Held in the Product Sheet register (user-confirmed V7.49.29): three years with o
 | Beat class | Model · params | Why |
 |---|---|---|
 | Mode | **Mode 2 — 3D Pixar**, 9:16, the whole build (hybrid declined by the brief — F2) | the task title "Pixar Song"; §2 explicit instruction |
+| **Format** | **Music Video (§3C, V7.76.0)** — no voices, no VO, no talking heads; one **sung** music master supplied by the team (the script's lines verbatim — the §22U verbatim rule on the lyrics); every clip silent, the track whole under the cut; board `kind: "music"`, Music stage, `MUS-BODY` card | V7.76.0 landed on the default branch during steps 4–5 and describes this build exactly; adopted the same turn (nothing generated against the act map yet) |
 | Avatar sheets (step 3) | `nano_banana_pro` · 2k · 9:16 · one render each — **Higgsfield logged `nano_banana_2`** (the §5 routing fault seen on every build since stryde-identity; recorded on the cards) | §18A Mode 2 table (rule 6: Nano Banana only); F10 |
 | Every beat image — hook, B-roll, worn, held, product, info cards | `nano_banana_pro` · 2k · **A/B pair** (two Pro renders, V7.70.0) · §6A short prompt · `PIX-SPLIT` + the front photo first on any product beat | §18A Mode 2 table |
 | Anatomy / mechanism (EG03, EG04, M-03…M-05, C-03) | `nano_banana_pro` · A/B pair · §12A register inside the Pixar world | §18A |
@@ -194,7 +195,7 @@ Held in the Product Sheet register (user-confirmed V7.49.29): three years with o
 | Video (B-roll, hook) | Kling 3.0 (`kling-video-v3_0_omni`), start image, render rigs RV / R4 only, `PIX-MOTION`, `prefer_multi_shots: false`, §35A ≤ 1,000 chars | §4, §24, §27G |
 | **Voice** | **the supplied song — locked as generated.** No §22U clone, no TTS, no `vo_trim.py`, no talking heads. Word timestamps `work/lyrics.timed.json` are the voice master's timeline (E6, §30H) | VN01 |
 | Captions | CapCut, lyric lines verbatim (EG01) | §17 |
-| Music (§40A, V7.75.0) | **none added** — the song is the voice and the music in one; its own arrangement carries the §40A register map (sparse under the problem, fuller at the turn — read off the track at step 5, not composed). No BGM under the song, no `music.py` cue | §40A, §24M |
+| Music (§40A, §3C) | **the song is the music master** (`music/MUS-BODY.cue.json`: the §40A register map as its sections, `sung: true`, `bpm: 73.8`); `music.py check` run (listening pass, thresholds unverified): loudness rises steadily hook → close, drum transients flag CLICK on a hot master, nothing to regenerate; the cut grid is the song's beat (`music/MUS-BODY.grid.json`, `music.py`'s `grid`) | §3C, §40A |
 | Edit | `EDIT-STRYDE-71-SONG`; cuts on the song's beat; `assemble.py` plan from the song's word times; export native 9:16; audio normalised −14 LUFS | §30H, §42 Part 3A |
 
 **Other locks:** format **Narrated B-roll, variant A** (the narrator seen, never addressing — §3A; F3); **side: right knee** ("an ice pack on my right knee" → `SIDE_RULE`); mechanism claim: **protection**; hooks: **1, in the song → 1 finished video (3:48)**; the §24 hybrid (Mode 1 proof/offer/close) **not applied** — the brief says Pixar (F2).

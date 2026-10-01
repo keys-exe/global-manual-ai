@@ -11,6 +11,11 @@ HERE = pathlib.Path(__file__).parent
 LYR = {r["n"]: r for r in json.load(open(HERE / "lyrics.timed.json"))}
 LYR[37]["start"], LYR[37]["end"] = 84.46, 86.28       # "Stryde." — not heard by the transcript (F4); the gap after line 36 carries it
 VOCAL_END, LEAD, SKIP, HANDLE = 222.68, 0.25, 0.4, 0.5
+GRID = json.load(open(HERE.parent / "music/MUS-BODY.grid.json")); BEATS = GRID["beats"]; BAR = GRID["beat_s"] * 4
+SECTIONS = [(sec["name"], sec["start"], sec["end"]) for sec in json.load(open(HERE.parent / "music/MUS-BODY.cue.json"))["sections"]]
+def snap(t):
+    b = [x for x in BEATS if x <= t + 1e-6]
+    return round(b[-1], 2) if b else 0.0
 
 ROWS = []
 def R(beat, act, lines, key, fn, subj, loc, day, framing, action, pace, staging, prod, vis,
@@ -71,14 +76,10 @@ R("P-01b", A, (7, 7), "step", "problem", "N feet", "L-N-STAIRS", "N-D1",
   "CU from the side at step height: her slipper lowers onto the next step down, the other foot joins it on the same step",
   "one foot down, the other joins", "about two seconds", "stairs: feet only, side", "absent", "—",
   "ground", PR, "clean", "CU", "ground = the steps themselves", "foreground", "medium", *STAIR_AM, "morning", "problem: grey", False, "MUS-EXPOSE")
-R("P-02a", A, (8, 9), "down", "problem", "N", "L-N-LANDING", "N-D1",
+R("P-02a", A, (8, 10), "down", "problem", "N", "L-N-LANDING", "N-D1",
   "MEDIUM from the landing: N sitting on the top step in her house dress, looking down the flight, one hand on the newel, not going",
   "she looks down the stairs and looks away", "one turn of the head, about two seconds", "none", "absent", "—",
   "eye", TQ, "through", "MEDIUM", "through the balusters = trapped up here", "eyes", "deep", *STAIR_AM, "morning", "problem: grey", True, "MUS-EXPOSE")
-R("P-02b", A, (10, 10), "upstairs", "problem", "—", "L-N-STAIRS", "N-D1",
-  "WIDE from the top landing looking down the empty staircase to the closed front door, the hall below dim",
-  "none — the light shifts faintly on the runner", "held, about two seconds", "none", "absent", "—",
-  "high", FR, "clean", "WIDE", "high = the drop she won't take", "deep", "deep", *STAIR_AM, "morning", "problem: grey", False, "MUS-EXPOSE", camera=R4, mx=15)
 R("P-03a", A, (11, 12), "brace", "failed fix", "N", "L-N-KITCHEN", "N-D1",
   "CU seated at the kitchen table: a big black hinged knee brace over her bare right knee, sagging below the kneecap, her hand hauling it up",
   "her hand pulls the brace up once and it slips back", "one pull, about two seconds", "hands: large in frame, one movement", "absent (generic brace, §10)", "—",
@@ -95,18 +96,10 @@ R("P-04b", A, (15, 15), "therapy", "failed fix", "N + one-off PT", "L-CLINIC", "
   "MEDIUM: N lying on a PT treatment table, a therapist's hands bending her right knee",
   "the therapist bends the knee a little further", "one slow bend, about two seconds", "hands: one movement, subject lying still", "absent", "—",
   "high", TQ, "clean", "MEDIUM", "high = done to her, passive", "hands", "medium", *CLIN, "afternoon", "problem: clinical", False, "MUS-EXPOSE")
-R("P-04c", A, (16, 16), "brace", "failed fix", "N hand", "L-N-KITCHEN", "N-D1c",
-  "CU: a heap of knee braces and sleeves on the table, her hand drops one more on the pile",
-  "one brace dropped on the pile", "one drop, about a second", "hands: one movement", "absent (generic, §10)", "—",
-  "eye", PR, "clean", "CU", "profile = the pile seen from the side, growing", "hands", "deep", *KIT, "morning", "problem: grey", False, "MUS-EXPOSE")
-R("P-05a", A, (17, 17), "Nothing", "low", "N", "L-N-KITCHEN", "N-D1c",
-  "MEDIUM across the table: N pushes the heap of braces and bottles away from her with the back of her hand",
+R("P-05a", A, (16, 18), "Nothing", "low", "N", "L-N-KITCHEN", "N-D1c",
+  "MEDIUM across the table: N pushes the heap of braces, sleeves and bottles away from her with the back of her hand, then sits back, looking at nothing",
   "one push away across the table", "one push, about two seconds", "hands: one movement, seated", "absent", "—",
   "low", TQ, "clean", "MEDIUM", "low = the table edge, her giving up made big", "eyes", "deep", *KIT, "morning", "problem: grey", True, "MUS-EXPOSE")
-R("P-05b", A, (18, 18), "life", "low", "N", "L-N-KITCHEN", "N-D1c",
-  "MEDIUM through the hall doorway: N at the kitchen table, a cold coffee, looking at nothing",
-  "she lets out one breath, shoulders drop", "one breath, about two seconds", "none", "absent", "—",
-  "eye", PR, "through", "MEDIUM", "profile through the doorway = watched, alone", "eyes", "deep", *KIT, "morning", "problem: grey", True, "MUS-EXPOSE")
 
 # ---------------- Act 2 — the turn (44.0–64.4 s), the wedding, N-D2
 A = "Act 2"
@@ -149,23 +142,19 @@ R("R-02a", A, (28, 29), "watched", "reveal — the routine", "N + C1", "L-N-KITC
   "MEDIUM across the kitchen table: Loretta seated with a coffee watching N, who is laying out her morning routine on the table between them",
   "N sets the gel tube down beside the bottles", "one set-down, about a second", "hands: one movement, seated", "absent", "—",
   "eye", OT, "clean", "MEDIUM", "over Loretta's shoulder = we watch with her", "hands", "deep", *KIT, "morning", "routine", True, "MUS-TURN", ledger="VN06")
-R("R-02b", A, (30, 30), "gel", "reveal — the routine", "N hands", "L-N-KITCHEN", "N-D3",
-  "overhead: her hands squeeze gel from a plain tube onto her fingers beside two tablets, a glass of water and the folded brace",
+R("R-02b", A, (30, 31), "gel", "reveal — the routine", "N hands", "L-N-KITCHEN", "N-D3",
+  "overhead: her hands squeeze gel from a plain tube onto her fingers beside two tablets, a glass of water, the folded brace and a blue ice pack",
   "one squeeze", "about a second", "hands: large in frame", "absent", "—",
   "overhead", FR, "clean", "CU", "overhead = routine", "hands", "deep", *KIT, "morning", "routine", False, "MUS-TURN", ledger="VN06")
-R("R-02c", A, (31, 31), "ice", "reveal — the routine", "N", "L-N-KITCHEN", "N-D3",
-  "CU seated: she presses a blue ice pack onto her bare right knee",
-  "she presses the pack down once", "one press, about a second", "hands: one movement", "absent", "—",
-  "high", TQ, "clean", "CU", "high = her own view of her knee", "hands", "medium", *KIT, "morning", "routine", False, "MUS-TURN")
 R("R-03a", A, (32, 33), "said", "reveal", "C1", "L-N-KITCHEN", "N-D3",
   "MCU across the table: Loretta leans in with a half smile, one hand already reaching down toward her own knee",
   "she leans in and reaches down", "one lean, about two seconds", "none", "absent", "—",
   "low", TQ, "clean", "MCU", "low = she has the answer", "eyes", "deep", *KIT, "morning", "turn", True, "MUS-TURN")
-R("R-03b", A, (34, 34), "leg", "reveal (§9D)", "C1", "L-N-KITCHEN", "N-D3",
-  "MEDIUM seated across the table: Loretta pulls her right khaki pant leg up over the knee",
+R("R-03b", A, (34, 35), "leg", "reveal (§9D)", "C1", "L-N-KITCHEN", "N-D3",
+  "MEDIUM seated across the table: Loretta pulls her right khaki pant leg up over the knee — the little black strap coming into view under her kneecap",
   "one pull up past the knee", "one pull, about two seconds", "hands: one movement, seated", "worn", "REVEAL",
   "eye", TQ, "clean", "MEDIUM", "", "hands", "medium", *KIT, "morning", "turn", True, "MUS-TURN")
-R("R-04a", A, (35, 37), "strap", "product first appearance (PIX-SPLIT, FP01, FP03, FP11)", "C1 knee", "L-N-KITCHEN", "N-D3",
+R("R-04a", A, (36, 37), "strap", "product first appearance (PIX-SPLIT, FP01, FP03, FP11)", "C1 knee", "L-N-KITCHEN", "N-D3",
   "ECU her right knee, front-on, the strap at least a quarter of the frame wide: the little black strap seated just under the kneecap, her fingertip tapping the shell once",
   "one tap on the strap", "one tap, about a second", "hands: large in frame", "worn", "VISIBLE",
   "low", FR, "clean", "ECU", "low = the answer, resolve", "product", "medium", *KIT, "morning", "turn", False, "MUS-TURN", camera=R4)
@@ -185,13 +174,9 @@ R("R-07a", A, (44, 46), "rail", "payoff (HT03, HT04)", "N", "L-N-STAIRS", "N-D3"
   "MEDIUM from the hall floor: N at the very top of the stairs takes the first step down facing forwards, hands at her sides, the strap on her bare right knee",
   "one step down, facing forwards", "one step, about a second", "stairs: camera at the bottom, subject 1 step, hands free", "worn", "VISIBLE",
   "low", FR, "clean", "MEDIUM", "low = resolve", "deep", "deep", *STAIR_PM, "afternoon", "after: sun through the sidelights", True, "MUS-TURN", mirror="P-01a")
-R("R-07b", A, (47, 47), "second", "payoff", "N feet", "L-N-STAIRS", "N-D3",
-  "CU at step height from the side: her feet come down two steps, one foot per step, the strap on the right knee at the top of frame",
-  "two steps down", "one step per second", "stairs: feet only, side", "worn", "VISIBLE",
-  "ground", PR, "clean", "CU", "ground = the steps", "product", "medium", *STAIR_PM, "afternoon", "after: sun", False, "MUS-TURN", mirror="P-01b")
-R("R-07c", A, (48, 49), "Forwards", "payoff", "N", "L-N-STAIRS", "N-D3",
-  "MEDIUM from the side through the balusters: she steps off the last step into the hall, facing forwards, Loretta's shoulder soft in the foreground",
-  "last step down onto the hall floor", "one step, about a second", "stairs: side, waist-up, camera still", "worn", "VISIBLE",
+R("R-07c", A, (47, 49), "Forwards", "payoff", "N", "L-N-STAIRS", "N-D3",
+  "MEDIUM from the side through the balusters: N comes down the last three steps into the hall facing forwards, hands free, the strap on her bare right knee, Loretta's shoulder soft in the foreground",
+  "three steps down to the hall floor, one foot per step", "one step per second", "stairs: side, waist-up, camera still, 3 steps", "worn", "VISIBLE",
   "eye", PR, "through", "MEDIUM", "through the balusters = Loretta's view, watching her do it", "deep", "deep", *STAIR_PM, "afternoon", "after: sun", True, "MUS-TURN")
 
 # ---------------- Act 4 — Pure Mechanism (106.6–134.2 s)
@@ -200,11 +185,7 @@ R("M-01a", A, (50, 51), "comfortable", "mechanism — comparative (F1)", "N", "L
   "MEDIUM: N lying back on the PT table with a heat pad on her knee, eyes closed",
   "she settles her head back", "one settle, about a second", "none", "absent", "—",
   "overhead", FR, "clean", "MEDIUM", "overhead = passive, managed", "eyes", "deep", *CLIN, "afternoon", "problem: clinical", True, "MUS-EDU", ledger="F1")
-R("M-01b", A, (52, 52), "worse", "mechanism — comparative (F1)", "—", "—", "—",
-  "ANAT-A: the worn knee joint, the red spreading a little further under the heat pad's glow",
-  "the red spreads slowly", "about two seconds", "none", "absent", "—",
-  "eye", TQ, "clean", "CU", "", "deep", "deep", *ANAT, "—", "mechanism", False, "MUS-EDU", eg="EG04", ledger="F1", camera=R4, mx=15)
-R("M-02a", A, (53, 53), "fixes", "mechanism — comparison card (EG03, F1/F5)", "—", "—", "—",
+R("M-02a", A, (52, 53), "fixes", "mechanism — comparison card (EG03, F1/F5)", "—", "—", "—",
   "CARD: two knees side by side in the anatomical register — left, a full sleeve over the whole knee, pressure spread everywhere; right, the strap seated under the kneecap on one spot",
   "a slow soft glow settles on the right knee's spot", "about two seconds", "none", "worn (anatomical)", "—",
   "eye", FR, "clean", "MEDIUM", "", "deep", "deep", *ANAT, "—", "mechanism", False, "MUS-EDU", layout="card", eg="EG03 · labels in the edit", ledger="F5", camera=R4, mx=15)
@@ -216,12 +197,8 @@ R("M-04a", A, (56, 58), "whole", "mechanism — comparative (F1)", "—", "L-N-K
   "overhead: the heap of braces and sleeves beside the pill bottles and the syringe box on the table",
   "none — held", "about two seconds", "none", "absent", "—",
   "overhead", FR, "clean", "MEDIUM", "overhead = the whole routine laid out", "deep", "deep", *KIT, "morning", "problem: grey", False, "MUS-EDU", ledger="F1", camera=R4, mx=15)
-R("M-04b", A, (59, 60), "spot", "mechanism", "—", "—", "—",
-  "ANAT-A: the knee with a generic sleeve drawn around the whole joint, the red point below the kneecap still glowing through it",
-  "the red point keeps pulsing under the sleeve", "one pulse per second", "none", "absent", "—",
-  "eye", TQ, "clean", "CU", "", "deep", "deep", *ANAT, "—", "mechanism", False, "MUS-EDU", eg="EG04", ledger="F1", camera=R4, mx=15)
-R("M-05a", A, (61, 61), "pressure", "mechanism", "—", "—", "—",
-  "ANAT-A: pressure lines running down the thigh into the red point under the kneecap",
+R("M-05a", A, (59, 61), "pressure", "mechanism", "—", "—", "—",
+  "ANAT-A: the knee with a generic sleeve drawn faintly around the whole joint, the red point under the kneecap glowing through it, pressure lines running down the thigh into the point",
   "pressure pulses down the leg", "one pulse per second", "none", "absent", "—",
   "eye", PR, "clean", "MEDIUM", "profile shows the load path down the leg", "deep", "deep", *ANAT, "—", "mechanism", False, "MUS-EDU", eg="EG04", camera=R4, mx=15)
 R("M-05b", A, (62, 63), "weight", "mechanism — protection (HT11, FP03)", "—", "—", "—",
@@ -235,22 +212,14 @@ R("M-06a", A, (64, 65), "gone", "outcome (F1)", "N feet", "L-N-STAIRS", "N-D3",
 
 # ---------------- Act 5 — proof (134.2–159.2 s)
 A = "Act 5"
-for i, (who, place, how, h, sd, src) in enumerate([
-    ("one-off man, 60s", "L-MONT-1 porch", "sits on a porch step and seats the strap on his right knee", "high", TQ, SUN),
-    ("one-off woman, 50s", "L-MONT-2 bedroom", "on the bed edge, slides the strap up her right shin", "eye", PR, BED),
-    ("one-off man, 70s", "L-MONT-3 garage", "one foot on a stool, presses the strap flat under his kneecap", "low", TQ, SUN)]):
-    R(f"PR-01{'abc'[i]}", A, (66, 66), "people", "proof montage (EG05, one beat each)", who, place, "G-%d" % (i + 1),
-      f"CU: {how} — the strap at least a quarter of the frame wide", "slides/presses the strap to contact", "one movement, about a second", "hands: start mid-movement, end on contact",
-      "seated", "VISIBLE", h, sd, "clean", "CU", {"high": "high = their own view of the knee", "low": "low = strong", "eye": "profile shows the strap from the side"}[h],
-      "product", "medium", *src, "afternoon", "proof: daylight", False, "MUS-AFTER", eg="EG05 · 200,000+ overlay", mx=3, tin=round(i * 0.83, 2))
-R("PR-02a", A, (67, 67), "doctors", "authority (F1, §19B)", "one-off sports doctor", "L-CLINIC", "G-5",
-  "MCU: an approachable sports-medicine doctor in a polo shirt holds the strap up beside the knee model on her desk, front of the strap to the lens",
-  "she turns the strap toward the patient", "one turn, about a second", "hands: product rigid", "held", "VISIBLE",
+R("PR-01a", A, (66, 66), "people", "proof (EG05 → one picture, §30H floor)", "one-off man, 60s", "L-MONT-1 porch", "G-1",
+  "CU: a man of sixty-odd sits on a porch step and seats the strap on his right knee — the strap at least a quarter of the frame wide",
+  "slides the strap to contact", "one movement, about a second", "hands: start mid-movement, end on contact", "seated", "VISIBLE",
+  "high", TQ, "clean", "CU", "high = his own view of the knee", "product", "medium", *SUN, "afternoon", "proof: daylight", False, "MUS-AFTER", eg="EG05 · 200,000+ overlay")
+R("PR-02a", A, (67, 68), "doctors", "authority (F1, §19B)", "one-off sports doctor", "L-CLINIC", "G-5",
+  "MCU: an approachable sports-medicine doctor in a polo shirt holds the strap up beside the knee model on her desk, front of the strap to the lens, then seats it under the model's kneecap",
+  "she turns the strap to the lens and seats it on the model", "one turn, then one press, about three seconds", "hands: product rigid", "held", "VISIBLE",
   "eye", TQ, "clean", "MCU", "", "eyes", "medium", *CLIN, "afternoon", "authority: even daylight", True, "MUS-AFTER", ledger="F1", pin="yes")
-R("PR-02b", A, (68, 68), "doctors", "authority (F1)", "one-off sports doctor + knee model", "L-CLINIC", "G-5",
-  "CU: the doctor's hands seat the strap under the kneecap of the anatomical knee model on the desk",
-  "presses the strap flat on the model", "one press, about a second", "hands: one movement", "seated (on the model)", "VISIBLE",
-  "high", FR, "clean", "CU", "high = looking down at the desk with her", "product", "medium", *CLIN, "afternoon", "authority: even daylight", False, "MUS-AFTER", ledger="F1")
 R("PR-03a", A, (69, 70), "golf", "proof", "one-off, Loretta's husband", "L-GOLF", "G-6",
   "MEDIUM from the side: a Black man of 76 in a golf polo and khaki shorts mid-swing follow-through, the strap on his bare right knee",
   "finishes the follow-through and holds", "one follow-through, about a second", "one movement, feet planted", "worn", "VISIBLE",
@@ -267,14 +236,10 @@ R("PR-05b", A, (74, 75), "clothes", "feature — conceal (§9D)", "N", "L-N-BEDR
   "CU from the side: her trouser leg drops over the strap and lies flat",
   "the trouser leg falls and settles", "one drop, about a second", "none", "worn", "REVEAL→CONCEALED",
   "eye", PR, "clean", "CU", "profile shows the flat trouser line", "product", "medium", *BED, "morning", "after: fresh daylight", False, "MUS-AFTER")
-R("PR-06a", A, (76, 76), "pills", "feature", "—", "L-N-KITCHEN", "N-D5",
-  "overhead: the kitchen table cleared — just a coffee mug and the strap lying beside it, front up",
+R("PR-06a", A, (76, 77), "pills", "feature", "—", "L-N-KITCHEN", "N-D5",
+  "overhead: the kitchen table cleared — just a coffee mug and the strap lying beside it, front up; no bottles, no gel, no brace",
   "steam rises from the mug", "about two seconds", "none", "absent (strap on table)", "VISIBLE",
   "overhead", FR, "clean", "CU", "overhead = the same table, the routine gone", "product", "deep", *KIT, "morning", "after: sun", False, "MUS-AFTER", mirror="P-04a", camera=R4, mx=15)
-R("PR-06b", A, (77, 77), "ankle", "feature", "N feet", "L-N-KITCHEN", "N-D5",
-  "CU at floor level by the table: her bare ankles above her slippers, nothing bunched around them, the chair legs beside",
-  "she crosses one ankle over the other", "one small move, about a second", "feet only", "absent", "—",
-  "ground", TQ, "clean", "CU", "ground = where the brace used to end up — nothing there", "foreground", "medium", *KIT, "morning", "after: sun", False, "MUS-AFTER", mirror="P-03b")
 
 # ---------------- Act 6 — the result, lived (160.5–178.1 s), yesterday, N-D6
 A = "Act 6"
@@ -285,7 +250,7 @@ R("L-01a", A, (78, 79), "store", "result (F1, HT01)", "N", "L-STREET", "N-D6",
 R("L-01b", A, (80, 80), "Passed", "result", "N + one-offs", "L-STREET", "N-D6",
   "MEDIUM three-quarter: N overtakes three younger women strolling slowly on the sidewalk",
   "two steps as she draws level and passes", "one step per second", "walking across frame: camera still", "worn (under trousers)", "HIDDEN",
-  "low", TQ, "clean", "MEDIUM", "low = she's the strong one", "deep", "deep", *SUN, "afternoon", "after: sun", True, "MUS-AFTER")
+  "low", TQ, "clean", "MEDIUM", "low = she's the strong one", "deep", "deep", *SUN, "afternoon", "after: sun", True, "MUS-AFTER", tin=-0.85)
 R("L-02a", A, (81, 82), "checkout", "result", "N + one-offs", "L-STORE", "N-D6",
   "MEDIUM: N standing square in a grocery checkout line with a full basket, shoppers ahead of her",
   "she moves the basket to her other hand, feet planted", "one movement, about a second", "none", "worn (under trousers)", "HIDDEN",
@@ -294,14 +259,10 @@ R("L-02b", A, (83, 84), "bags", "result (HT01)", "N", "L-STREET", "N-D6",
   "MEDIUM from behind: N walking up her front path to the porch, a grocery bag in each hand",
   "two steps up the path", "one step per second", "walking away: waist-up, 2 steps", "worn (under trousers)", "HIDDEN",
   "low", TQB, "clean", "MEDIUM", "low = resolve; she made it", "deep", "deep", *SUN, "afternoon", "after: sun", False, "MUS-AFTER")
-R("L-03a", A, (85, 86), "husband", "result", "one-off, N's husband", "L-N-LIVING", "N-D6",
-  "MEDIUM: her husband in his recliner lowers the newspaper (blank pages) and looks up toward the door",
+R("L-03a", A, (85, 87), "husband", "result", "one-off, N's husband", "L-N-LIVING", "N-D6",
+  "MEDIUM: her husband in his recliner lowers the newspaper (blank pages) and looks up toward the door, where N stands with a grocery bag in each hand, a small knowing smile",
   "lowers the paper and looks up", "one movement, about a second", "none", "absent", "—",
   "eye", TQ, "clean", "MEDIUM", "", "eyes", "deep", *LIV, "afternoon", "after: sun", True, "MUS-AFTER")
-R("L-03b", A, (87, 87), "know", "result", "N", "L-N-LIVING", "N-D6",
-  "MCU in the living-room doorway: N with a grocery bag in each hand, a small knowing smile at her husband off frame",
-  "she lifts the bags a touch and smiles", "one lift, about a second", "hands: bags rigid", "worn (under trousers)", "HIDDEN",
-  "low", FR, "clean", "MCU", "low = she's got this", "eyes", "medium", *LIV, "afternoon", "after: sun", True, "MUS-AFTER")
 
 # ---------------- Act 7 — proof, name, authority, objection (178.1–200.9 s)
 A = "Act 7"
@@ -313,26 +274,18 @@ R("C-02a", A, (90, 90), "church", "proof", "3 one-offs (church ladies)", "L-CHUR
   "MCU from the sidewalk: three ladies in Sunday hats at the foot of the church steps, one nudging the next and nodding up toward the steps",
   "one nudge and a nod", "one movement, about a second", "none", "absent", "—",
   "eye", FR, "clean", "MCU", "", "eyes", "deep", *SUN, "afternoon", "after: Sunday sun", True, "MUS-AFTER", ledger="VN08")
-R("C-02b", A, (91, 91), "steps", "proof (HT03)", "N + 3 one-offs", "L-CHURCH", "N-D4",
+R("C-02b", A, (91, 92), "steps", "proof (HT03)", "N + 3 one-offs", "L-CHURCH", "N-D4",
   "MEDIUM from the sidewalk: N comes down the church steps facing forwards, hands free, the three ladies watching from the side",
   "one step down, facing forwards", "one step, about a second", "stairs: camera at the bottom, subject 1 step, hands free", "worn (under the dress)", "HIDDEN",
   "low", TQ, "clean", "MEDIUM", "low = resolve; she's the proof", "deep", "deep", *SUN, "afternoon", "after: Sunday sun", True, "MUS-AFTER", ledger="VN08")
-R("C-03a", A, (92, 92), "say", "name — lead-in", "N", "L-STREET", "N-D6",
-  "MEDIUM: N in a rocking chair on her front porch, turning to look out at the street, a glass of iced tea on the rail",
-  "she sets the rocker moving once", "one push, about two seconds", "none", "worn (under trousers)", "HIDDEN",
-  "low", PR, "clean", "MEDIUM", "low profile = settled on her own porch, the street beyond", "eyes", "deep", *PORCH, "afternoon", "after: sun", True, "MUS-OFFER")
 R("C-03b", A, (93, 93), "Stryde", "name (F5)", "—", "—", "—",
   "ANAT-A: the strap seated on the knee in the anatomical register, calm blue at the spot (labels in the edit)",
   "a slow soft glow at the pad", "about two seconds", "none", "worn (anatomical)", "—",
   "eye", TQ, "clean", "CU", "", "deep", "deep", *ANAT, "—", "mechanism", False, "MUS-OFFER", eg="EG04 · labels in the edit", ledger="F5", camera=R4, mx=15)
-R("C-04a", A, (94, 95), "surgeons", "authority (§19B)", "one-off surgeon + patient", "L-CLINIC", "G-8",
-  "MEDIUM: an approachable orthopaedic surgeon in scrubs fits the strap on a seated patient's bare right knee",
+R("C-04a", A, (94, 96), "surgeons", "authority (§19B)", "one-off surgeon + patient", "L-CLINIC", "G-8",
+  "MEDIUM: an approachable orthopaedic surgeon in scrubs fits the real strap on a seated patient's bare right knee, the shell and wordmark to the lens",
   "presses the strap flat under the kneecap", "one press, about a second", "hands: one movement", "seated", "VISIBLE",
   "eye", OT, "clean", "MEDIUM", "over the shoulder = we're the patient", "hands", "medium", *CLIN, "afternoon", "authority: even daylight", True, "MUS-OFFER")
-R("C-04b", A, (96, 96), "real", "product hero (FP01, FP12)", "N hand", "L-N-KITCHEN", "N-D5",
-  "ECU front-on: the strap held in one hand, filling the frame, the shell, band, slides and wordmark exactly as the photo",
-  "the hand turns it a few degrees to the light", "one small turn, about a second", "hands: product rigid", "held", "VISIBLE",
-  "eye", FR, "clean", "ECU", "", "product", "shallow", *KIT, "morning", "offer: bright daylight", False, "MUS-OFFER", camera=R4)
 R("C-05a", A, (97, 99), "knock-offs", "objection (F6, §10, FP08)", "one-off hands", "L-N-KITCHEN", "N-D5",
   "CU on a plain table: two cheap copies of the same shape being stretched between two hands, the band sagging, the shell flexing — no brand, no packaging, no screen",
   "the hands stretch the copy and it sags", "one stretch, about two seconds", "hands: one movement", "absent (fakes, §10)", "—",
@@ -360,24 +313,21 @@ R("C-09a", A, (106, 106), "sister", "close", "N hands", "L-N-KITCHEN", "N-D5",
   "CU: she ties a ribbon around a second closed box on the kitchen table",
   "pulls the ribbon's bow tight", "one pull, about two seconds", "hands: large in frame", "box closed", "—",
   "high", TQ, "clean", "CU", "high = her own view", "hands", "medium", *KIT, "morning", "after", False, "MUS-OFFER")
-R("C-09b", A, (107, 107), "Sunday", "close", "one-off, N's sister", "L-N-STAIRS", "N-D7",
-  "MEDIUM from inside the hall: a Black woman of 68 in a Sunday dress stepping in through the open front door with the ribboned box under her arm",
-  "one step over the threshold", "one step, about a second", "walking toward camera: waist-up, 1 step", "absent", "—",
-  "eye", FR, "clean", "MEDIUM", "", "eyes", "deep", *STAIR_PM, "afternoon", "after: Sunday sun", True, "MUS-OFFER", mirror="R-01a")
-R("C-09c", A, (108, 108), "stairs", "close (HT03)", "one-off sister + N", "L-N-STAIRS", "N-D7",
-  "MEDIUM from the landing looking down: the sister climbing the family-photo stairs toward the camera, hands off the rail, N's shoulder at the top edge of frame watching",
+R("C-09c", A, (107, 108), "stairs", "close (HT03)", "one-off sister + N", "L-N-STAIRS", "N-D7",
+  "MEDIUM from the landing looking down: the sister, a ribboned box under one arm, climbing the family-photo stairs toward the camera, hands off the rail, N's shoulder at the top edge of frame watching",
   "two steps up, hands free", "one step per second", "stairs: camera at the top, subject coming up 2 steps, hands free", "worn (the sister's, under the dress)", "HIDDEN",
   "high", FR, "clean", "MEDIUM", "high = from N's place at the top, the mirror of the hook", "deep", "deep", *STAIR_PM, "afternoon", "after: Sunday sun", True, "MUS-OFFER", mirror="HK-02a")
 
 def e6():
     """song-clocked spans (E6): cut = first lyric word onset − 0.25 s; on-screen to the next beat's cut; call = ceil(on + 0.4 + 0.5), 3–15, split over `max`."""
     for i, r in enumerate(ROWS):
-        a = r["lines"][0]; r["t_in"] = round(max(0.0, LYR[a]["start"] - LEAD + r["tin"]), 2)
+        a = r["lines"][0]; lyric_cut = max(0.0, LYR[a]["start"] - LEAD + r["tin"]); r["lyric_cut"] = round(lyric_cut, 2); r["t_in"] = snap(lyric_cut) if i else 0.0
     for i, r in enumerate(ROWS):
         nxt = ROWS[i + 1]["t_in"] if i + 1 < len(ROWS) else VOCAL_END
         on = round(nxt - r["t_in"], 2); r["t_out"] = round(nxt, 2); r["on_screen"] = on
         call = math.ceil(on + SKIP + HANDLE); call = max(3, min(15, call))
-        r["duration"] = min(call, r["max"]); r["split"] = call > r["max"]
+        r["duration"] = min(call, r["max"]); r["split"] = call > r["max"]; r["flash"] = on < 2.0
+        r["bars"] = round(on / BAR * 2) / 2; r["section"] = next((n for n, s0, e0 in SECTIONS if s0 <= r["t_in"] < e0), SECTIONS[-1][0])
 
 if __name__ == "__main__":
     e6()
@@ -386,7 +336,7 @@ if __name__ == "__main__":
                 speaking=False, product_beat=not r["product"].startswith("absent") and r["visibility"] != "HIDDEN",
                 focus=r["focus"], story_day=r["story_day"], face=r["face"], light=r["light"]) for r in ROWS]
     json.dump(ang, open(HERE / "angles.json", "w"), indent=1)
-    cols = ["Beat", "Act", "Song t (s)", "Lines", "Lyric (verbatim)", "Key", "Function", "Subject", "Location", "Day", "Framing", "Action · pace", "Staging (§27G)",
+    cols = ["Beat", "Act", "Song t (s)", "Section · bars", "Lines", "Lyric (verbatim)", "Key", "Function", "Subject", "Location", "Day", "Framing", "Action · pace", "Staging (§27G)",
             "Pin end", "Camera", "Angle (§30I)", "Focus (§30J)", "Light (§30K)", "Product · visibility", "Layout · EG", "Call (E6)", "Music (§40A)", "Ledger"]
     md, cur = [], None
     for r in ROWS:
@@ -394,7 +344,7 @@ if __name__ == "__main__":
             cur = r["act"]; md += ["", f"### {cur}", "", "| " + " | ".join(cols) + " |", "|" + "---|" * len(cols)]
         a, f, l = r["angle"], r["focus"], r["light"]
         md.append("| " + " | ".join(str(x).replace("|", "/") for x in [
-            r["beat"], r["act"], f'{r["t_in"]:.2f} → {r["t_out"]:.2f} ({r["on_screen"]:.1f})', f'{r["lines"][0]}–{r["lines"][1]}', r["line"], r["key"], r["function"], r["subject"], r["location"], r["story_day"], r["framing"],
+            r["beat"], r["act"], f'{r["t_in"]:.2f} → {r["t_out"]:.2f} ({r["on_screen"]:.1f})', f'{r["section"].split(" — ")[1]} · {r["bars"]:g}', f'{r["lines"][0]}–{r["lines"][1]}', r["line"], r["key"], r["function"], r["subject"], r["location"], r["story_day"], r["framing"],
             f'{r["action"]} · {r["pace"]}', r["staging"], r["pin_end"], r["camera"],
             f'{a["height"]} · {a["side"]} · {a["fg"]} · {a["scale"]}' + (f' — {a["why"]}' if a["why"] else ""),
             f'{f["plane"]} · {f["dof"]}', f'{l["source"]} · key {l["key_side"]} · {l["time"]} · {l["arc"]} · {l["kelvin"]}K',
@@ -402,8 +352,8 @@ if __name__ == "__main__":
             f'{r["duration"]}s' + (" · SPLIT" if r["split"] else ""), r["music"], r["ledger"] or "—"]) + " |")
     (HERE / "actmap.md").write_text("\n".join(md).strip() + "\n")
     plan = {"master": "intake/song.mp3", "script": "work/lyrics.txt", "fps": 24,
-            "broll": [{"beat": r["beat"], "phrase": r["line"], "key": r["key"], "max": r["max"], "layout": r["layout"], "clip": f"renders/{r['beat']}.mp4"} for r in ROWS]}
+            "broll": [{"beat": r["beat"], "phrase": r["line"], "key": r["key"], "max": r["max"], "layout": r["layout"], "in_cut": r["t_in"], "section": r["section"], "bars": r["bars"], "clip": f"renders/{r['beat']}.mp4"} for r in ROWS]}
     json.dump(plan, open(HERE / "plan.json", "w"), indent=1, ensure_ascii=False)
     covered = set(); [covered.update(range(r["lines"][0], r["lines"][1] + 1)) for r in ROWS]
     print(len(ROWS), "rows ·", "lines covered", len(covered), "of 108 · missing", sorted(set(range(1, 109)) - covered),
-          "· splits", [r["beat"] for r in ROWS if r["split"]], "· total on-screen", round(sum(r["on_screen"] for r in ROWS), 1))
+          "· splits", [r["beat"] for r in ROWS if r["split"]], "· FLASH", [(r["beat"], r["on_screen"]) for r in ROWS if r["flash"]], "· total on-screen", round(sum(r["on_screen"] for r in ROWS), 1))

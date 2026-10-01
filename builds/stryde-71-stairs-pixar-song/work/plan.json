@@ -9,6 +9,9 @@
    "key": "stairs",
    "max": 6,
    "layout": "full",
+   "in_cut": 0.0,
+   "section": "Hook — MUS-OPEN",
+   "bars": 1.0,
    "clip": "renders/HK-01a.mp4"
   },
   {
@@ -17,6 +20,9 @@
    "key": "faster",
    "max": 6,
    "layout": "full",
+   "in_cut": 3.95,
+   "section": "Hook — MUS-OPEN",
+   "bars": 1.0,
    "clip": "renders/HK-01b.mp4"
   },
   {
@@ -25,6 +31,9 @@
    "key": "daughter",
    "max": 6,
    "layout": "full",
+   "in_cut": 8.01,
+   "section": "Hook — MUS-OPEN",
+   "bars": 1.5,
    "clip": "renders/HK-02a.mp4"
   },
   {
@@ -33,6 +42,9 @@
    "key": "Mama",
    "max": 6,
    "layout": "full",
+   "in_cut": 12.89,
+   "section": "Hook — MUS-OPEN",
+   "bars": 1.0,
    "clip": "renders/HK-03a.mp4"
   },
   {
@@ -41,6 +53,9 @@
    "key": "backwards",
    "max": 6,
    "layout": "full",
+   "in_cut": 16.14,
+   "section": "Hook — MUS-OPEN",
+   "bars": 1.0,
    "clip": "renders/P-01a.mp4"
   },
   {
@@ -49,23 +64,21 @@
    "key": "step",
    "max": 6,
    "layout": "full",
+   "in_cut": 19.39,
+   "section": "The low point and what failed — MUS-EXPOSE",
+   "bars": 1.0,
    "clip": "renders/P-01b.mp4"
   },
   {
    "beat": "P-02a",
-   "phrase": "I ain't gonna lie, some days I wasn't going down them at all.",
+   "phrase": "I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.",
    "key": "down",
    "max": 6,
    "layout": "full",
+   "in_cut": 21.83,
+   "section": "The low point and what failed — MUS-EXPOSE",
+   "bars": 1.5,
    "clip": "renders/P-02a.mp4"
-  },
-  {
-   "beat": "P-02b",
-   "phrase": "I'd just stay upstairs.",
-   "key": "upstairs",
-   "max": 15,
-   "layout": "full",
-   "clip": "renders/P-02b.mp4"
   },
   {
    "beat": "P-03a",
@@ -73,6 +86,9 @@
    "key": "brace",
    "max": 6,
    "layout": "full",
+   "in_cut": 26.71,
+   "section": "The low point and what failed — MUS-EXPOSE",
+   "bars": 1.0,
    "clip": "renders/P-03a.mp4"
   },
   {
@@ -81,6 +97,9 @@
    "key": "ankle",
    "max": 6,
    "layout": "full",
+   "in_cut": 29.96,
+   "section": "The low point and what failed — MUS-EXPOSE",
+   "bars": 1.0,
    "clip": "renders/P-03b.mp4"
   },
   {
@@ -89,6 +108,9 @@
    "key": "everything",
    "max": 6,
    "layout": "full",
+   "in_cut": 32.4,
+   "section": "The low point and what failed — MUS-EXPOSE",
+   "bars": 1.0,
    "clip": "renders/P-04a.mp4"
   },
   {
@@ -97,31 +119,21 @@
    "key": "therapy",
    "max": 6,
    "layout": "full",
+   "in_cut": 34.84,
+   "section": "The low point and what failed — MUS-EXPOSE",
+   "bars": 1.0,
    "clip": "renders/P-04b.mp4"
   },
   {
-   "beat": "P-04c",
-   "phrase": "Every brace and sleeve they make.",
-   "key": "brace",
-   "max": 6,
-   "layout": "full",
-   "clip": "renders/P-04c.mp4"
-  },
-  {
    "beat": "P-05a",
-   "phrase": "Nothing worked. Nothing lasted.",
+   "phrase": "Every brace and sleeve they make. Nothing worked. Nothing lasted. Nothing gave me my life back.",
    "key": "Nothing",
    "max": 6,
    "layout": "full",
+   "in_cut": 38.09,
+   "section": "The low point and what failed — MUS-EXPOSE",
+   "bars": 1.5,
    "clip": "renders/P-05a.mp4"
-  },
-  {
-   "beat": "P-05b",
-   "phrase": "Nothing gave me my life back.",
-   "key": "life",
-   "max": 6,
-   "layout": "full",
-   "clip": "renders/P-05b.mp4"
   },
   {
    "beat": "T-01a",
@@ -129,6 +141,9 @@
    "key": "married",
    "max": 6,
    "layout": "full",
+   "in_cut": 42.97,
+   "section": "The low point and what failed — MUS-EXPOSE",
+   "bars": 1.0,
    "clip": "renders/T-01a.mp4"
   },
   {
@@ -137,6 +152,9 @@
    "key": "Loretta",
    "max": 6,
    "layout": "full",
+   "in_cut": 45.41,
+   "section": "The turn — MUS-TURN",
+   "bars": 1.0,
    "clip": "renders/T-01b.mp4"
   },
   {
@@ -145,6 +163,9 @@
    "key": "floor",
    "max": 6,
    "layout": "full",
+   "in_cut": 48.66,
+   "section": "The turn — MUS-TURN",
+   "bars": 1.0,
    "clip": "renders/T-02a.mp4"
   },
   {
@@ -153,6 +174,9 @@
    "key": "Slide",
    "max": 6,
    "layout": "full",
+   "in_cut": 51.91,
+   "section": "The turn — MUS-TURN",
+   "bars": 1.0,
    "clip": "renders/T-02b.mp4"
   },
   {
@@ -161,6 +185,9 @@
    "key": "bone",
    "max": 15,
    "layout": "full",
+   "in_cut": 54.35,
+   "section": "The turn — MUS-TURN",
+   "bars": 1.0,
    "clip": "renders/T-03a.mp4"
   },
   {
@@ -169,6 +196,9 @@
    "key": "mine",
    "max": 6,
    "layout": "full",
+   "in_cut": 56.79,
+   "section": "The turn — MUS-TURN",
+   "bars": 1.0,
    "clip": "renders/T-04a.mp4"
   },
   {
@@ -177,6 +207,9 @@
    "key": "fixing",
    "max": 6,
    "layout": "full",
+   "in_cut": 60.04,
+   "section": "The turn — MUS-TURN",
+   "bars": 1.5,
    "clip": "renders/T-04b.mp4"
   },
   {
@@ -185,6 +218,9 @@
    "key": "stay",
    "max": 6,
    "layout": "full",
+   "in_cut": 64.11,
+   "section": "The turn — MUS-TURN",
+   "bars": 1.0,
    "clip": "renders/R-01a.mp4"
   },
   {
@@ -193,23 +229,21 @@
    "key": "watched",
    "max": 6,
    "layout": "full",
+   "in_cut": 67.36,
+   "section": "The reveal and payoff — MUS-TURN",
+   "bars": 1.5,
    "clip": "renders/R-02a.mp4"
   },
   {
    "beat": "R-02b",
-   "phrase": "Two anti-inflammatories, the gel, the brace,",
+   "phrase": "Two anti-inflammatories, the gel, the brace, an ice pack on my right knee.",
    "key": "gel",
    "max": 6,
    "layout": "full",
+   "in_cut": 71.43,
+   "section": "The reveal and payoff — MUS-TURN",
+   "bars": 1.5,
    "clip": "renders/R-02b.mp4"
-  },
-  {
-   "beat": "R-02c",
-   "phrase": "an ice pack on my right knee.",
-   "key": "ice",
-   "max": 6,
-   "layout": "full",
-   "clip": "renders/R-02c.mp4"
   },
   {
    "beat": "R-03a",
@@ -217,22 +251,31 @@
    "key": "said",
    "max": 6,
    "layout": "full",
+   "in_cut": 76.3,
+   "section": "The reveal and payoff — MUS-TURN",
+   "bars": 1.0,
    "clip": "renders/R-03a.mp4"
   },
   {
    "beat": "R-03b",
-   "phrase": "She pulled up her pant leg.",
+   "phrase": "She pulled up her pant leg. She had on a little black strap,",
    "key": "leg",
    "max": 6,
    "layout": "full",
+   "in_cut": 79.56,
+   "section": "The reveal and payoff — MUS-TURN",
+   "bars": 1.0,
    "clip": "renders/R-03b.mp4"
   },
   {
    "beat": "R-04a",
-   "phrase": "She had on a little black strap, right under her kneecap. Stryde.",
+   "phrase": "right under her kneecap. Stryde.",
    "key": "strap",
    "max": 6,
    "layout": "full",
+   "in_cut": 82.0,
+   "section": "The reveal and payoff — MUS-TURN",
+   "bars": 1.0,
    "clip": "renders/R-04a.mp4"
   },
   {
@@ -241,6 +284,9 @@
    "key": "handed",
    "max": 6,
    "layout": "full",
+   "in_cut": 85.25,
+   "section": "The reveal and payoff — MUS-TURN",
+   "bars": 1.5,
    "clip": "renders/R-05a.mp4"
   },
   {
@@ -249,6 +295,9 @@
    "key": "Loretta",
    "max": 6,
    "layout": "full",
+   "in_cut": 90.12,
+   "section": "The reveal and payoff — MUS-TURN",
+   "bars": 1.5,
    "clip": "renders/R-06a.mp4"
   },
   {
@@ -257,6 +306,9 @@
    "key": "put",
    "max": 6,
    "layout": "full",
+   "in_cut": 94.19,
+   "section": "The reveal and payoff — MUS-TURN",
+   "bars": 1.0,
    "clip": "renders/R-06b.mp4"
   },
   {
@@ -265,22 +317,20 @@
    "key": "rail",
    "max": 6,
    "layout": "full",
+   "in_cut": 98.25,
+   "section": "The reveal and payoff — MUS-TURN",
+   "bars": 1.0,
    "clip": "renders/R-07a.mp4"
   },
   {
-   "beat": "R-07b",
-   "phrase": "Not the second. Not the third.",
-   "key": "second",
-   "max": 6,
-   "layout": "full",
-   "clip": "renders/R-07b.mp4"
-  },
-  {
    "beat": "R-07c",
-   "phrase": "All the way down. Both feet. Forwards.",
+   "phrase": "Not the second. Not the third. All the way down. Both feet. Forwards.",
    "key": "Forwards",
    "max": 6,
    "layout": "full",
+   "in_cut": 101.51,
+   "section": "The reveal and payoff — MUS-TURN",
+   "bars": 1.0,
    "clip": "renders/R-07c.mp4"
   },
   {
@@ -289,22 +339,20 @@
    "key": "comfortable",
    "max": 6,
    "layout": "full",
+   "in_cut": 105.57,
+   "section": "The reveal and payoff — MUS-TURN",
+   "bars": 1.5,
    "clip": "renders/M-01a.mp4"
   },
   {
-   "beat": "M-01b",
-   "phrase": "while your knee got worse.",
-   "key": "worse",
-   "max": 15,
-   "layout": "full",
-   "clip": "renders/M-01b.mp4"
-  },
-  {
    "beat": "M-02a",
-   "phrase": "This one fixes why it hurts.\"",
+   "phrase": "while your knee got worse. This one fixes why it hurts.\"",
    "key": "fixes",
    "max": 15,
    "layout": "card",
+   "in_cut": 110.45,
+   "section": "Pure mechanism — MUS-EDU",
+   "bars": 1.5,
    "clip": "renders/M-02a.mp4"
   },
   {
@@ -313,6 +361,9 @@
    "key": "spot",
    "max": 15,
    "layout": "full",
+   "in_cut": 115.33,
+   "section": "Pure mechanism — MUS-EDU",
+   "bars": 1.0,
    "clip": "renders/M-03a.mp4"
   },
   {
@@ -321,22 +372,20 @@
    "key": "whole",
    "max": 15,
    "layout": "full",
+   "in_cut": 119.39,
+   "section": "Pure mechanism — MUS-EDU",
+   "bars": 1.5,
    "clip": "renders/M-04a.mp4"
   },
   {
-   "beat": "M-04b",
-   "phrase": "Not that spot. That's why ain't nothing worked.",
-   "key": "spot",
-   "max": 15,
-   "layout": "full",
-   "clip": "renders/M-04b.mp4"
-  },
-  {
    "beat": "M-05a",
-   "phrase": "The pain is pressure. That's all it is.",
+   "phrase": "Not that spot. That's why ain't nothing worked. The pain is pressure. That's all it is.",
    "key": "pressure",
    "max": 15,
    "layout": "full",
+   "in_cut": 123.46,
+   "section": "Pure mechanism — MUS-EDU",
+   "bars": 1.0,
    "clip": "renders/M-05a.mp4"
   },
   {
@@ -345,6 +394,9 @@
    "key": "weight",
    "max": 15,
    "layout": "full",
+   "in_cut": 127.52,
+   "section": "Pure mechanism — MUS-EDU",
+   "bars": 1.0,
    "clip": "renders/M-05b.mp4"
   },
   {
@@ -353,47 +405,32 @@
    "key": "gone",
    "max": 6,
    "layout": "full",
+   "in_cut": 130.78,
+   "section": "Pure mechanism — MUS-EDU",
+   "bars": 1.0,
    "clip": "renders/M-06a.mp4"
   },
   {
    "beat": "PR-01a",
    "phrase": "Over two hundred thousand people wear one now.",
    "key": "people",
-   "max": 3,
+   "max": 6,
    "layout": "full",
+   "in_cut": 133.22,
+   "section": "Pure mechanism — MUS-EDU",
+   "bars": 0.5,
    "clip": "renders/PR-01a.mp4"
   },
   {
-   "beat": "PR-01b",
-   "phrase": "Over two hundred thousand people wear one now.",
-   "key": "people",
-   "max": 3,
-   "layout": "full",
-   "clip": "renders/PR-01b.mp4"
-  },
-  {
-   "beat": "PR-01c",
-   "phrase": "Over two hundred thousand people wear one now.",
-   "key": "people",
-   "max": 3,
-   "layout": "full",
-   "clip": "renders/PR-01c.mp4"
-  },
-  {
    "beat": "PR-02a",
-   "phrase": "Sports doctors recommend it.",
+   "phrase": "Sports doctors recommend it. Not the pharma companies. Sports doctors.",
    "key": "doctors",
    "max": 6,
    "layout": "full",
+   "in_cut": 135.65,
+   "section": "Proof and the result — MUS-AFTER",
+   "bars": 1.5,
    "clip": "renders/PR-02a.mp4"
-  },
-  {
-   "beat": "PR-02b",
-   "phrase": "Not the pharma companies. Sports doctors.",
-   "key": "doctors",
-   "max": 6,
-   "layout": "full",
-   "clip": "renders/PR-02b.mp4"
   },
   {
    "beat": "PR-03a",
@@ -401,6 +438,9 @@
    "key": "golf",
    "max": 6,
    "layout": "full",
+   "in_cut": 139.72,
+   "section": "Proof and the result — MUS-AFTER",
+   "bars": 1.5,
    "clip": "renders/PR-03a.mp4"
   },
   {
@@ -409,6 +449,9 @@
    "key": "track",
    "max": 6,
    "layout": "full",
+   "in_cut": 144.6,
+   "section": "Proof and the result — MUS-AFTER",
+   "bars": 1.0,
    "clip": "renders/PR-04a.mp4"
   },
   {
@@ -417,6 +460,9 @@
    "key": "worn",
    "max": 6,
    "layout": "full",
+   "in_cut": 147.85,
+   "section": "Proof and the result — MUS-AFTER",
+   "bars": 1.0,
    "clip": "renders/PR-05a.mp4"
   },
   {
@@ -425,23 +471,21 @@
    "key": "clothes",
    "max": 6,
    "layout": "full",
+   "in_cut": 151.1,
+   "section": "Proof and the result — MUS-AFTER",
+   "bars": 1.0,
    "clip": "renders/PR-05b.mp4"
   },
   {
    "beat": "PR-06a",
-   "phrase": "No pills. No gel.",
+   "phrase": "No pills. No gel. No brace around my ankle by lunchtime.",
    "key": "pills",
    "max": 15,
    "layout": "full",
+   "in_cut": 154.35,
+   "section": "Proof and the result — MUS-AFTER",
+   "bars": 1.5,
    "clip": "renders/PR-06a.mp4"
-  },
-  {
-   "beat": "PR-06b",
-   "phrase": "No brace around my ankle by lunchtime.",
-   "key": "ankle",
-   "max": 6,
-   "layout": "full",
-   "clip": "renders/PR-06b.mp4"
   },
   {
    "beat": "L-01a",
@@ -449,6 +493,9 @@
    "key": "store",
    "max": 6,
    "layout": "full",
+   "in_cut": 160.04,
+   "section": "Proof and the result — MUS-AFTER",
+   "bars": 1.0,
    "clip": "renders/L-01a.mp4"
   },
   {
@@ -457,6 +504,9 @@
    "key": "Passed",
    "max": 6,
    "layout": "full",
+   "in_cut": 163.3,
+   "section": "Proof and the result — MUS-AFTER",
+   "bars": 1.0,
    "clip": "renders/L-01b.mp4"
   },
   {
@@ -465,6 +515,9 @@
    "key": "checkout",
    "max": 6,
    "layout": "full",
+   "in_cut": 165.74,
+   "section": "Proof and the result — MUS-AFTER",
+   "bars": 1.0,
    "clip": "renders/L-02a.mp4"
   },
   {
@@ -473,23 +526,21 @@
    "key": "bags",
    "max": 6,
    "layout": "full",
+   "in_cut": 169.8,
+   "section": "Proof and the result — MUS-AFTER",
+   "bars": 1.0,
    "clip": "renders/L-02b.mp4"
   },
   {
    "beat": "L-03a",
-   "phrase": "When I got home, my husband said, \"You was gone a long time.\"",
+   "phrase": "When I got home, my husband said, \"You was gone a long time.\" I said, \"I know.\"",
    "key": "husband",
    "max": 6,
    "layout": "full",
+   "in_cut": 173.05,
+   "section": "Proof and the result — MUS-AFTER",
+   "bars": 1.5,
    "clip": "renders/L-03a.mp4"
-  },
-  {
-   "beat": "L-03b",
-   "phrase": "I said, \"I know.\"",
-   "key": "know",
-   "max": 6,
-   "layout": "full",
-   "clip": "renders/L-03b.mp4"
   },
   {
    "beat": "C-01a",
@@ -497,6 +548,9 @@
    "key": "strap",
    "max": 6,
    "layout": "full",
+   "in_cut": 177.12,
+   "section": "Proof and the result — MUS-AFTER",
+   "bars": 1.0,
    "clip": "renders/C-01a.mp4"
   },
   {
@@ -505,23 +559,21 @@
    "key": "church",
    "max": 6,
    "layout": "full",
+   "in_cut": 181.18,
+   "section": "Name, authority, objection — MUS-AFTER",
+   "bars": 1.0,
    "clip": "renders/C-02a.mp4"
   },
   {
    "beat": "C-02b",
-   "phrase": "after they watched me come down the church steps.",
+   "phrase": "after they watched me come down the church steps. So I'ma just say it right here.",
    "key": "steps",
    "max": 6,
    "layout": "full",
+   "in_cut": 183.62,
+   "section": "Name, authority, objection — MUS-AFTER",
+   "bars": 1.5,
    "clip": "renders/C-02b.mp4"
-  },
-  {
-   "beat": "C-03a",
-   "phrase": "So I'ma just say it right here.",
-   "key": "say",
-   "max": 6,
-   "layout": "full",
-   "clip": "renders/C-03a.mp4"
   },
   {
    "beat": "C-03b",
@@ -529,23 +581,21 @@
    "key": "Stryde",
    "max": 15,
    "layout": "full",
+   "in_cut": 187.69,
+   "section": "Name, authority, objection — MUS-AFTER",
+   "bars": 1.0,
    "clip": "renders/C-03b.mp4"
   },
   {
    "beat": "C-04a",
-   "phrase": "They spent three years designing it with orthopedic surgeons.",
+   "phrase": "They spent three years designing it with orthopedic surgeons. It's the real thing.",
    "key": "surgeons",
    "max": 6,
    "layout": "full",
+   "in_cut": 190.94,
+   "section": "Name, authority, objection — MUS-AFTER",
+   "bars": 1.5,
    "clip": "renders/C-04a.mp4"
-  },
-  {
-   "beat": "C-04b",
-   "phrase": "It's the real thing.",
-   "key": "real",
-   "max": 6,
-   "layout": "full",
-   "clip": "renders/C-04b.mp4"
   },
   {
    "beat": "C-05a",
@@ -553,6 +603,9 @@
    "key": "knock-offs",
    "max": 6,
    "layout": "full",
+   "in_cut": 195.82,
+   "section": "Name, authority, objection — MUS-AFTER",
+   "bars": 1.0,
    "clip": "renders/C-05a.mp4"
   },
   {
@@ -561,6 +614,9 @@
    "key": "Two",
    "max": 6,
    "layout": "full",
+   "in_cut": 199.88,
+   "section": "Name, authority, objection — MUS-AFTER",
+   "bars": 1.5,
    "clip": "renders/C-06a.mp4"
   },
   {
@@ -569,6 +625,9 @@
    "key": "Sixty",
    "max": 6,
    "layout": "full",
+   "in_cut": 204.76,
+   "section": "Offer and close — MUS-OFFER",
+   "bars": 1.0,
    "clip": "renders/C-07a.mp4"
   },
   {
@@ -577,6 +636,9 @@
    "key": "years",
    "max": 6,
    "layout": "full",
+   "in_cut": 207.2,
+   "section": "Offer and close — MUS-OFFER",
+   "bars": 1.0,
    "clip": "renders/C-08a.mp4"
   },
   {
@@ -585,6 +647,9 @@
    "key": "step",
    "max": 6,
    "layout": "full",
+   "in_cut": 209.64,
+   "section": "Offer and close — MUS-OFFER",
+   "bars": 1.5,
    "clip": "renders/C-08b.mp4"
   },
   {
@@ -593,22 +658,20 @@
    "key": "sister",
    "max": 6,
    "layout": "full",
+   "in_cut": 214.52,
+   "section": "Offer and close — MUS-OFFER",
+   "bars": 1.0,
    "clip": "renders/C-09a.mp4"
   },
   {
-   "beat": "C-09b",
-   "phrase": "She coming Sunday.",
-   "key": "Sunday",
-   "max": 6,
-   "layout": "full",
-   "clip": "renders/C-09b.mp4"
-  },
-  {
    "beat": "C-09c",
-   "phrase": "She gon' walk up my stairs on her own.",
+   "phrase": "She coming Sunday. She gon' walk up my stairs on her own.",
    "key": "stairs",
    "max": 6,
    "layout": "full",
+   "in_cut": 218.58,
+   "section": "Offer and close — MUS-OFFER",
+   "bars": 1.5,
    "clip": "renders/C-09c.mp4"
   }
  ]
