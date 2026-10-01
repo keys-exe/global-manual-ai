@@ -95,3 +95,7 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
 - SH03 (board Fix: "she should not be going down so fast and she should be looking down to know where she is stepping backwards") → one step in the whole clip, she looks down over her shoulder at the step behind her. Agent's look: slow, one step, looking down; by the end only her right hand is on the banister.
 - SH05 (board Fix: "remove the mic at the top") → the top of the frame is written (ceiling and pendant only), boom negatives. The cause was the AUD string naming "a boom microphone just out of frame above the speaker" → system fix V7.83.2 (`AUD-FILM` reworded, `preflight.py` MIC_PRIME, LESSONS L13); this build's SC02 builder uses the new audio line. Agent's look: no mic in frame; "Sleep all right?".
 - 378 + 252 cr on Kie. Replaced versions on Old. Both To check.
+
+## 2026-10-01 — Scene 2 all confirmed; Scene 3 started ("confirmed proceed")
+- SC02-SH01…SH07 all `use` on the board.
+- SC03 ingredients made (GPT Image 2 on Kie, 10 cr each), on the board To check: OUT-N-B3 (slate cardigan, cream blouse, navy knee skirt), OUT-C3-B3 (brown cardigan, green checked shirt), INFO-BRACE (generic hinged brace), INFO-DRAWER (edit of the L-BEDROOM plate, the bottom drawer crammed), INFO-PHYSIO (16:9 room plate). Next: once confirmed, the 10 SC03 clips on Seedance 2.5 (ingredients only), SH01→SH10 per the act map; VOICE-C4 master to mp3 for SH09.
