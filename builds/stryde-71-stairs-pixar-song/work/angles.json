@@ -67,15 +67,15 @@
   "height": "eye",
   "side": "three-quarter",
   "fg": "through",
-  "scale": "MEDIUM",
-  "why": "through the doorway = inside with her; she has arrived, the daughter is still on the step; both faces in frame (HT24)",
+  "scale": "CU",
+  "why": "through the doorway in close = the line lands between the two faces; she has arrived, the daughter is still on the step (HT24)",
   "mirror_of": null,
   "mode": 2,
   "speaking": false,
   "product_beat": false,
   "focus": {
    "plane": "eyes",
-   "dof": "medium",
+   "dof": "shallow",
    "rack": null,
    "moving_subject": false
   },

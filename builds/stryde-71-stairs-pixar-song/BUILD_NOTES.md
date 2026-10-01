@@ -255,4 +255,13 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   turned to each other on model; A a dim vestibule with the white door leaves either side, B brighter with dark wood door frames and the street and
   houses behind. Higgsfield balance 8,840.15.
 
-**Waiting on:** HK-03a v21/v22 pick. Then the HK-03a clip; then the body acts in order; CapCut block with lyric captions and the outro end card.
+- 17:20 UTC hourly Fix check — **HK-03a Fix on the v15 pair: "make it a close up shot"**. v16 (`hooks/HK-03a.v16.prompt.txt`, PASS 1,125 chars; the first
+  draft failed §6A rule 4 "every visible hand placed" — hands stated out of frame): the same doorway setup in close, an image edit of v21 A, both
+  faces filling the frame, the mother in three-quarter profile turned back, the daughter beyond her mouth open mid-word (actmap row: eye · three-quarter
+  · through · CU, shallow; `docs/actmap` v17). **HK-03a v23/v24** To check (`hooks/v16_cards.py`); v21/v22 to Old (Old doc v11). Seen: A — the daughter
+  left in the frame facing the mother at right, the mother's profile under the hat brim, the white door leaf and the sunlit street behind; B — the
+  mother at left in profile, the daughter at right facing her, both on model. No restore requests on Old. `fix_patterns.py` re-run (73 notes): the
+  HK-03a run of notes is one beat being staged (talking → at the door → inside → close up), not a repeat across beats — no new rule. Default branch
+  merged (V7.83.0; this build's locks unchanged). Higgsfield balance 8,676.65.
+
+**Waiting on:** HK-03a v23/v24 pick. Then the HK-03a clip; then the body acts in order; CapCut block with lyric captions and the outro end card.

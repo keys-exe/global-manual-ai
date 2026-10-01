@@ -3,7 +3,7 @@
  "act": "Hook 1",
  "stage": "hooks",
  "beat": "HK-03a",
- "title": "hook — the line (a new angle on the user's call: from inside the open church doorway, the two on the doorstep) · MEDIUM through the doors",
+ "title": "hook — the line (a new angle on the user's call: from inside the open church doorway, the two on the doorstep, close up on the user's Fix) · CU through the doors",
  "line": "\"Mama, when did that happen?\"",
  "status": "planned",
  "flow": [
@@ -21,11 +21,11 @@
  "key": "Mama",
  "location": "L-CHURCH",
  "storyDay": "N-D4",
- "framing": "MEDIUM at eye level from inside the church's open front doorway looking out, the open door leaves soft at the frame edges: N on the threshold turned back to face her daughter, a hand on her hip, a small smile; the daughter on the top step just outside, right hand on the top of the black rail, face up to her mother, mouth open mid-word; the steps and the sunlit sidewalk beyond",
+ "framing": "CU at eye level from inside the church's open front doorway, both heads filling the frame: N nearest the lens in three-quarter profile turned back to her daughter, a small smile; the daughter a step beyond, face up to her mother, mouth open mid-word; the door edge and the sunlit sidewalk soft",
  "motionPlan": "From this frame: the daughter's head tilts as she asks, N's smile widens — a beat, about a second; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "none",
  "pinEnd": "no",
- "angle": "eye · three-quarter · through · MEDIUM — through the doorway = inside with her; she has arrived, the daughter is still on the step; both faces in frame (HT24)",
+ "angle": "eye · three-quarter · through · CU — through the doorway in close = the line lands between the two faces; she has arrived, the daughter is still on the step (HT24)",
  "focus": "eyes · medium",
  "light": "landing window, south wall · key R · afternoon · after: Sunday sun · 5600K",
  "product": "worn (under the dress) · HIDDEN",
@@ -33,17 +33,17 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "",
- "updatedAt": 1790874697137,
+ "updatedAt": 1790875444279,
  "hook": 1,
  "editOf": "stryde-71-stairs-pixar-song__P0-PROP-N",
- "imagePrompt": "For the line \"Mama, when did that happen?\": from inside the church's open front doorway looking out, the two women on the doorstep. Image 1 is the church, doors and steps. Image 2 is the mother. Image 3 is her daughter.\nMedium shot at eye level from inside the dim vestibule, the open white door leaves soft at the frame edges, sharp on both faces. The same woman as Image 2 on the threshold, turned back to her daughter, body three-quarter to the lens, a hand on her hip, a small smile; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 on the top step outside, right hand on the top of the black handrail, face up to her mother, eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. Behind her the steps of Image 1 fall to the sunlit sidewalk.\nIn the frame: the two women, the open doors, the top of the flight, the handrail, the sidewalk; every other surface bare. Two legs each.\nA final frame from a 3D animated feature film, stylized storybook render, the afternoon sun outside as the key, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
+ "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — the open doorway, the two women, where each stands, the light — and move the camera in close on their faces. Image 1 is this frame of the two at the doorstep. Image 2 is the mother. Image 3 is her daughter.\nClose-up from inside the doorway at eye level, both heads filling the frame, sharp on both faces: the same woman as Image 2 nearest the lens in three-quarter profile, turned back to her daughter, a small smile, eyes on her; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 a step beyond her, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. The white door leaf soft at one edge, the sunlit sidewalk soft behind.\nIn the frame: the two faces and shoulders, the door edge, the sidewalk beyond; every other surface bare. Both women's hands out of frame below the shoulders.\nThe render and light of Image 1, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
  "imageStatus": "review",
  "imageRefs": [
   {
-   "label": "P5-CHURCH plate v1 (confirmed)",
-   "kind": "location",
-   "ref": "stryde-71-stairs-pixar-song__P5-CHURCH",
-   "role": "Image 1"
+   "label": "HK-03a v21 A (the doorway frame)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__HK-03a",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
   },
   {
    "label": "N-NARR sheet v2",
@@ -58,7 +58,7 @@
    "role": "Image 3"
   }
  ],
- "imageMatch": null,
+ "imageMatch": "frame",
  "imageTaste": [
   "HT03",
   "HT04",
@@ -382,6 +382,8 @@
    "v": 18
   },
   {
+   "archiveAsset": "214ca599ebdb09fbf55c2fc249c66c2b",
+   "archived": true,
    "asset": "ec584fd371ebb43cb4c046f74c942b58",
    "at": 1790874308284,
    "connector": "Higgsfield",
@@ -394,11 +396,11 @@
    "size": 8034575,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170333_fe8a2b8e-6c4d-4e7c-87a2-c63d4b3e8b70.png",
-   "v": 19,
-   "archived": true,
-   "archiveAsset": "214ca599ebdb09fbf55c2fc249c66c2b"
+   "v": 19
   },
   {
+   "archiveAsset": "e4eefc20dfd2cd8091e996a0a3d33482",
+   "archived": true,
    "asset": "3a7f9055eea621dcb99b03939a1f72b3",
    "at": 1790874308284,
    "connector": "Higgsfield",
@@ -411,55 +413,87 @@
    "size": 5735523,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170330_1e5056c4-0d6e-4744-8ece-e7ce703112dd.png",
-   "v": 20,
-   "archived": true,
-   "archiveAsset": "e4eefc20dfd2cd8091e996a0a3d33482"
+   "v": 20
   },
   {
-   "v": 21,
-   "pair": "A",
    "asset": "8f5525885c9216cfdf9a566eb7aaba7d",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170958_c3b7a0c1-1455-4188-986a-4b07769f4166.png",
+   "at": 1790874697137,
+   "connector": "Higgsfield",
+   "credits": 2.14,
    "job": "c3b7a0c1-1455-4188-986a-4b07769f4166",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "size": 6386239,
+   "note": "user 2026-10-01 Fix on the v14 pair: \"i want a new angle they should be inside like at the door step\" → a new setup: from inside the open church doorway looking out, the mother on the threshold turned back to her daughter on the top step, hand on the rail end, mouth open mid-word, the steps and sidewalk beyond (HT24); the v14 pair to Old · MEDIUM from inside the open church doorway (new angle), the two on the doorstep turned to each other · replaced by the v16 pair (user Fix: make it a close up shot)",
+   "pair": "A",
    "res": "1536×2752",
-   "at": 1790874697137,
-   "note": "user 2026-10-01 Fix on the v14 pair: \"i want a new angle they should be inside like at the door step\" → a new setup: from inside the open church doorway looking out, the mother on the threshold turned back to her daughter on the top step, hand on the rail end, mouth open mid-word, the steps and sidewalk beyond (HT24); the v14 pair to Old · MEDIUM from inside the open church doorway (new angle), the two on the doorstep turned to each other"
+   "size": 6386239,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170958_c3b7a0c1-1455-4188-986a-4b07769f4166.png",
+   "v": 21,
+   "archived": true,
+   "archiveAsset": "8951b15967623e615ef0ad788eb35cb3"
   },
   {
-   "v": 22,
-   "pair": "B",
    "asset": "cd3450b983f2de359e42009184e77559",
+   "at": 1790874697137,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "6bb1bce2-7e95-4e3e-8d4e-594f7f771155",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix on the v14 pair: \"i want a new angle they should be inside like at the door step\" → a new setup: from inside the open church doorway looking out, the mother on the threshold turned back to her daughter on the top step, hand on the rail end, mouth open mid-word, the steps and sidewalk beyond (HT24); the v14 pair to Old · MEDIUM from inside the open church doorway (new angle), the two on the doorstep turned to each other · replaced by the v16 pair (user Fix: make it a close up shot)",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6933696,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170958_6bb1bce2-7e95-4e3e-8d4e-594f7f771155.png",
-   "job": "6bb1bce2-7e95-4e3e-8d4e-594f7f771155",
+   "v": 22,
+   "archived": true,
+   "archiveAsset": "df1d7c8b6e8b439b59845dcc3abbcb9a"
+  },
+  {
+   "v": 23,
+   "pair": "A",
+   "asset": "6d723c7b06d6a379d1695b9f0f0ff5bc",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_172245_38aeb6db-74b7-4098-abae-e6bf498d42f6.png",
+   "job": "38aeb6db-74b7-4098-abae-e6bf498d42f6",
    "model": "nano_banana_pro → logged nano_banana_2",
    "connector": "Higgsfield",
    "credits": 2.14,
-   "size": 6933696,
+   "size": 6353942,
    "res": "1536×2752",
-   "at": 1790874697137,
-   "note": "user 2026-10-01 Fix on the v14 pair: \"i want a new angle they should be inside like at the door step\" → a new setup: from inside the open church doorway looking out, the mother on the threshold turned back to her daughter on the top step, hand on the rail end, mouth open mid-word, the steps and sidewalk beyond (HT24); the v14 pair to Old · MEDIUM from inside the open church doorway (new angle), the two on the doorstep turned to each other"
+   "at": 1790875444279,
+   "note": "user 2026-10-01 Fix on the v15 pair: \"make it a close up shot\" → the same doorway setup in close: both faces filling the frame, the mother in three-quarter profile turned back, the daughter beyond her face up, mouth open mid-word — an image edit of v21 A (HT17, HT24); the v15 pair to Old · CU from inside the open church doorway (edit of v21 A), both faces, the two turned to each other"
+  },
+  {
+   "v": 24,
+   "pair": "B",
+   "asset": "7995a67612ff18f2ea395898a8bee62e",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_172246_b41571cf-baf4-4a12-b756-4aff247f16e5.png",
+   "job": "b41571cf-baf4-4a12-b756-4aff247f16e5",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6290968,
+   "res": "1536×2752",
+   "at": 1790875444279,
+   "note": "user 2026-10-01 Fix on the v15 pair: \"make it a close up shot\" → the same doorway setup in close: both faces filling the frame, the mother in three-quarter profile turned back, the daughter beyond her face up, mouth open mid-word — an image edit of v21 A (HT17, HT24); the v15 pair to Old · CU from inside the open church doorway (edit of v21 A), both faces, the two turned to each other"
   }
  ],
  "imagePair": [
-  21,
-  22
+  23,
+  24
  ],
- "imageAsset": "8f5525885c9216cfdf9a566eb7aaba7d",
+ "imageAsset": "6d723c7b06d6a379d1695b9f0f0ff5bc",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170958_c3b7a0c1-1455-4188-986a-4b07769f4166.png",
- "imageJob": "c3b7a0c1-1455-4188-986a-4b07769f4166",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_172245_38aeb6db-74b7-4098-abae-e6bf498d42f6.png",
+ "imageJob": "38aeb6db-74b7-4098-abae-e6bf498d42f6",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
- "imageAt": 1790874697137,
+ "imageAt": 1790875444279,
  "imageRegens": 6,
  "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
- "imageFault": "user 2026-10-01 Fix on the v14 pair: \"i want a new angle they should be inside like at the door step\" → a new setup: from inside the open church doorway looking out, the mother on the threshold turned back to her daughter on the top step, hand on the rail end, mouth open mid-word, the steps and sidewalk beyond (HT24); the v14 pair to Old",
- "shot": "MEDIUM from inside the open church doorway (new angle), the two on the doorstep turned to each other"
+ "imageFault": "user 2026-10-01 Fix on the v15 pair: \"make it a close up shot\" → the same doorway setup in close: both faces filling the frame, the mother in three-quarter profile turned back, the daughter beyond her face up, mouth open mid-word — an image edit of v21 A (HT17, HT24); the v15 pair to Old",
+ "shot": "CU from inside the open church doorway (edit of v21 A), both faces, the two turned to each other"
 }
