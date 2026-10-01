@@ -58,6 +58,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   in the foreground) — on Current as To check with that said on the card; v2 to Old (d696aabd…). If it fails again: §30G says hall, stairs and landing are
   TRAVERSED (no location plate — they take the property plate), so the landing beats (HK-03a, P-02a) can be made as edits of P0 looking up the flight.
 
+- same session, ~12:10–12:20 UTC — **Fix round 4 on P1-LANDING** (board note "it should be the 2nd floor view"): diagnosis — the long prompts restating
+  the whole hall anchored the model to P0's own viewpoint. v4 = a **short** edit of P0 (1,937 chars) with an HT22 geography block (camera upstairs, the hall one
+  storey below, exactly one straight flight, sides stated), Higgsfield nano_banana_pro (logged NB2, 2 cr). The render is the view from the top of the flight
+  looking down to the front door, photo wall left, rail right — but the model also drew a gallery balustrade across the top of the frame and a second
+  landing rail on the right (not in P0). On Current as To check; v3 to Old (b7ddb7b6…). Default branch merged (V7.77.1, HT22).
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator never sings to camera (default) vs two bookends · F4 "Stryde." · F10 Mode 2 sheet amendment / true Pro route on Kie · F12 BPM · F13 clipped master.
 
