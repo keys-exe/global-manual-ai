@@ -1,0 +1,55 @@
+{
+ "beat": "BR-22a2",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_182442_aba229e5-66d6-4822-94fc-90bfa97c5e6b.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Sixty days, and you keep the straps.",
+ "pace": "unhurried",
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "a buckle or brace appears behind the knee",
+   "prevented_by": "thin plain black knit band round the back, flat; no buckle, no clasp, no brace"
+  },
+  {
+   "risk": "the strap slides or grows",
+   "prevented_by": "stays exactly as in the frame, just below the kneecap"
+  },
+  {
+   "risk": "she stumbles or both legs blur",
+   "prevented_by": "one easy step, right foot first, left leg straight"
+  }
+ ],
+ "route": "kling",
+ "route_note": "user 2026-10-01: 'USE KLING CONNECTOR' (Kling credits back: 45,091) — off Kie",
+ "approved_by": "the user, 2026-10-01: 'just re do the video not change the image'",
+ "audio": false,
+ "prompt": "For the line \"Sixty days, and you keep the straps.\": From this frame: she steps down off the front step onto the tiled path, right foot first, the strapped left leg staying straight; one easy step. The phone camera holds still with a very slight handheld sway. The strap stays exactly as in the frame: one small black shell on the front of her left knee just below the kneecap, held by a thin plain black knit band that goes round the back of the knee, flat against the skin. Her skirt, bag and the doorway keep their shape. No buckle, no clasp, no brace, no second strap, no text.",
+ "video_version": 2,
+ "motion_plan": "From this frame: she steps down off the front step onto the tiled path, right foot first, the strapped left leg staying straight; one easy step.",
+ "motion_confirmed": true,
+ "taste": [
+  "FP01",
+  "FP03",
+  "FP05",
+  "FP11",
+  "HT06"
+ ],
+ "risk_class": "stairs",
+ "pilot": "confirmed",
+ "pin_waived": "the user, 2026-10-01: 'just re do the video not change the image' (keep the confirmed doorway frame, no new end frame)",
+ "user_go": "the user, 2026-10-01: 'just re do the video not change the image'",
+ "motion_confirmed_by": "the user, 2026-10-01: 'just re do the video not change the image'",
+ "kling_model": "kling-video-v3_0",
+ "fix_note": "video v1: as she stepped, the small strap was redrawn as a bigger brace with a buckle behind the knee → the strap described exactly (shell on the front, thin plain band round the back, flat), 'no buckle, no clasp, no brace'; Kling connector (v1 was Kie omni)"
+}
