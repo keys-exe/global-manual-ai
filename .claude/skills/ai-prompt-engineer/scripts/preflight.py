@@ -351,7 +351,7 @@ def run(c):
         check("Wan duration 2–30, stated (never auto)", isinstance(d, (int, float)) and 2 <= d <= 30, str(d))
         imgs = [f for f in c.get("files", []) if not MUSIC_FILE.search(str(f))]
         check("ingredients ≤ 4 images (Appendix D)", len(imgs) <= 4, f"{len(imgs)} images")
-        check("ingredient manifest present", "@image1" in p or "Image 1" in p or "REF-MANIFEST" in p)
+        check("ingredient manifest present", "@image1" in p or "Image1" in p or "Image 1" in p or "REF-MANIFEST" in p)
     elif conn == "kling":
         check("Kling duration 3–15", isinstance(d, (int, float)) and 3 <= d <= 15, str(d))
         check("prompt ≤ 2,500 chars", len(p) <= 2500, f"{len(p)} chars")
