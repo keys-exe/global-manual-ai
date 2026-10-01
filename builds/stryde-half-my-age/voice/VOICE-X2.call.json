@@ -1,0 +1,41 @@
+{
+ "beat": "VOICE-X2",
+ "connector": "seedance",
+ "mode": 4,
+ "kind": "voice_master",
+ "prompt": "INGREDIENTS. @image1 is the commuter: face, age, hair and build only. These references set what things ARE; the prose below sets what HAPPENS, and nothing in them is a shot to cut to. A plain medium close-up of the commuter, a man in his late twenties, standing against a plain pale grey wall, soft daylight from the left, the camera on a locked tripod, nothing else in frame. The commuter looks just off the lens at someone beside the camera and says, clearly and completely: \"You’re joking.\" Delivery: A man in his late twenties from London, a flat, tired, slightly nasal mid-range voice with plain estuary vowels; quick and clipped. Level, even and unhurried; conversational volume; no emotion coloured into the words; a person reading a sentence aloud to themselves. Audio is clean production sound from a boom microphone just out of frame above the speaker: close, clear and even, with a little of the room's natural tone behind the voice. Breath and mouth detail are present but never exaggerated. No phone-microphone proximity, no compression pumping, no music and no sound effects anywhere in the clip — dialogue only. The microphone and all equipment stay outside the picture. Dialogue only: no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack. One speaker only. NEGATIVES: no other people, no second voice, no microphone in frame, no looking into the lens, no text, no captions, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack.",
+ "duration": 4,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "start_approved": true,
+ "ingredients_approved": true,
+ "files": [
+  "voice/X2_face.jpg"
+ ],
+ "audios": [],
+ "generate_audio": true,
+ "dialogue": "You’re joking.",
+ "script_line": "You’re joking.",
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "fix_note": null,
+ "user_go": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "a second voice or music",
+   "prevented_by": "one speaker only, NEG-SOUND"
+  },
+  {
+   "risk": "emotion in the master",
+   "prevented_by": "neutral delivery clause"
+  },
+  {
+   "risk": "microphone in frame",
+   "prevented_by": "equipment outside the picture"
+  }
+ ]
+}

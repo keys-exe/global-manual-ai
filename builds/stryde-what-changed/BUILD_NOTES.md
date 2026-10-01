@@ -370,3 +370,16 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **B19-BR2 video v2** (Fix "walking up stair", gen 2): she climbs one stair, smiling, hand sliding up the rail. Flaw: her head rises off the top of the close frame in the second half.
 - **B19b video v3** (user "go", gen 3): free hand told to rest on the bare thigh, one step only. **Failed again — the free hand still goes onto the banister from the second step, and she takes several steps.** Kling pulls any free hand onto a visible rail. Proposal for the next round (needs the user's go): a new frame where the banister is out of the shot (e.g. from the wall side, waist-down, rail not in frame) or her free hand already holding something.
 - Fix-pattern (house taste candidate): a visible banister + a free hand = Kling grabs the rail, whatever the prompt says. Keep the rail out of frame or the hand busy in the frame itself.
+
+### 2026-10-01 — "fix and generate the images"
+- B10b2's imageFault "GIVE ME DIFFERENT IMAGE HERE" is the old note already answered by its v2 (still To check) — nothing redone.
+- B19-BR2 video v2 also done this round (see above). B19b Fix "don't hold the banister stair railing, only the wall": after three videos the rail had to go — **B19b v6** = edit of v5 with the banister and spindles replaced by a second wall (enclosed stairs), hand on the wall, strap unchanged. v5 → Old 2. Its video waits for the Confirm.
+- New images (all Higgsfield; NBP 2 cr, NB2 1.5 cr):
+  - **B20** (pip anatomy) — the real strap on the translucent knee, tendon calm. Clean.
+  - **B21-BR** — Desmond on his bottom stair rubbing gel over his whole kneecap, tube beside him. Clean.
+  - **B21** — edit of B16a v1: Desmond stepping down, team photo behind. Flaws: the strap is seen side-on and sits a little low; the wordmark reads "Stryde" with a capital S.
+  - **B22-BR** — package photo, background only, on her doormat. Flaw: her hand holds the lid up rather than hovering above it.
+  - **B22a** — package photo on the kitchen table, her two hands lifting the lid; not fully overhead. Straps exact.
+  - **B22c** — the cheap copy pulled between her hands. Flaw: the copy doesn't look cheap or damaged enough and the band isn't visibly slack.
+  - **B23a** — edit of B19b v5: her plimsoll on the stair edge. Flaw: the strap sits too low, on the upper shin; "Stryde" capital S.
+  - **B23b** — Maureen at the foot of her stairs, small smile, striped T-shirt. Shot from about eye level rather than low.
