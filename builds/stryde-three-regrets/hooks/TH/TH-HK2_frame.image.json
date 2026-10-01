@@ -2,7 +2,7 @@
  "beat": "TH-HK2",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": keep this photo exactly as it is — the same camera, distance and framing, the same woman, her face, hair, rust-orange needlecord overshirt and cream T-shirt, the chair, brick wall, pinboard, window, grey post trays, desk and light. Image 1 is that photo.\nChange only the laptop: place it as in Image 2 — farther back on the desk, toward the grey post trays, smaller, the whole laptop inside the frame with bare desk showing between it and the right and bottom edges. Its screen faces her, turned a little toward the lens, a pale inbox of soft grey lines too small to read. A plain silver laptop, lid and keys blank. Her right hand rests on its keyboard, her left forearm on the desk edge.\nIn frame: one woman; on the desk only the laptop and the grey post trays, every other surface bare. Her face square to the lens, both eyes on it, mouth closed.\nNo readable text or logos, no extra fingers.",
+ "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": keep this photo exactly as it is — the same camera angle, distance and framing, the same woman, her face, hair, rust-orange needlecord overshirt and cream T-shirt, the chair, brick wall, pinboard, shelves, window, grey post trays, desk and light. Image 1 is that photo.\nChange only the laptop's position: slide it left along the desk, close in to her, so it sits right against her body in front of her chest, its left corner touching her forearm and its screen just below her chin line. The right half of the desk is left bare. Its screen faces her, turned a little toward the lens, a pale inbox of soft grey lines too small to read. A plain silver laptop, lid and keys blank. Both her hands rest on its keyboard, close to her body.\nIn frame: one woman; on the desk only the laptop and the grey post trays, every other surface bare. Her face square to the lens above the screen, both eyes on it, mouth closed.\nNo readable text or logos, no extra fingers.",
  "script_line": "Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.",
  "face": true,
  "room": true,
@@ -10,16 +10,12 @@
  "body": true,
  "refs": [
   {
-   "label": "TH-HK2 frame v3",
-   "kind": "frame"
-  },
-  {
-   "label": "TH-HK2 frame v5 (laptop placement)",
+   "label": "TH-HK2 frame v7",
    "kind": "frame"
   }
  ],
  "match": "frame",
- "edit_of": "d243ddcc-0086-4af0-aab7-ad270b961d77",
+ "edit_of": "5409fe10-3362-40e4-8e3d-8d550c04117b",
  "taste": [
   "HT12",
   "HT17",
@@ -32,5 +28,5 @@
   "nano_banana_pro"
  ],
  "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call)",
- "fix_note": "use previous camera angle, the laptop place farther to the frame: edit of v3, laptop placed as in v5"
+ "fix_note": "use the previous camera angle, make the laptop close to the left side of the woman: edit of v7"
 }
