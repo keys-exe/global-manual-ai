@@ -80,5 +80,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - 2026-09-30 (06:38 check): user confirmed B-03b v6 and B-09b v4 images. **B-03b** video gen 2 from the v6 frame (he tightens both hands on the rail and breathes out, no step; preflight PASS, 54 cr) → To check. **B-09b** video waits: it would be the shot's third video generation (v1 and v2 were made from earlier frames) — asked the user for the go (§22X).
 
 ## Where it stands
-- **Waiting on the user:** the go for B-09b's video (third generation of the shot); check videos B-03b v2, B-04 v2, B-11a v4; script flags F2, F5, F6, F7.
+- 2026-10-01 (15:38 check): user confirmed the B-03b video (v2). No Fixes.
+- **Waiting on the user:** the go for B-09b's video (third generation of the shot); check videos B-04 v2, B-11a v4; script flags F2, F5, F6, F7.
 - **Next:** `assemble.py` rough cuts and `variants.py` (HK1/2/3 + BODY), CapCut block (step 8), finals on the Final board.
