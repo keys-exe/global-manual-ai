@@ -1,0 +1,32 @@
+{
+ "beat": "BR-039",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"act4_pad_back\",\"subject\":\"THE SAME HANDS and strap as in the start frame, the grey ribbed pad with its raised ridge facing the lens; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CU as in the start frame: level, front, the strap held up over the bed. FOCUS: the grey pad, its ribs and the ridge are sharp.\"},\"motion\":\"CONTINUING: her two hands already hold the strap by its chrome ends, the grey pad facing the lens. COMPLETING: one small tilt, about two seconds — the shell tips a little back towards the window so the sun rakes across the grey ribs and the raised ridge, then settles. UNRESOLVED: held still, the pad facing the lens, the band hanging below. The product keeps the start frame's exact geometry every frame: same silhouette, same two matching peaks of equal height, same notch, same band width, same hardware and wordmark position. The rigid shell never bends, flexes or stretches from any angle. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum: nothing at uniform speed, motions settle slowly, the band lags.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, warm midday sun from the window on the right, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no turning the strap round, no wordmark appearing, no glossy pad, no pad changing colour, no ribs changing direction, no ridge flattening, no band being stretched, no face, no glancing at the lens, no talking, no slow motion, no music, no shell bending, no extra or fused fingers, no sound\"}",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_081425_5c53a554-ec93-4e7e-9394-4717d1247696.png",
+ "start_approved": true,
+ "pinned": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "the strap spins and the back changes",
+   "prevented_by": "small tilt only; no turning the strap round"
+  },
+  {
+   "risk": "the pad's ribs or ridge morph",
+   "prevented_by": "no ribs changing direction, no ridge flattening; HOLD-PC"
+  },
+  {
+   "risk": "fingers fuse with the shell",
+   "prevented_by": "no extra or fused fingers"
+  }
+ ],
+ "audio": false,
+ "fix_note": "frame fault: v1 clip showed a plain black pad, not the real back (user Fix: use this image as reference of the back) → new start frame v3 from the user's photo, grey ribbed pad with a raised ridge, confirmed by the user; same small tilt, sound off"
+}
