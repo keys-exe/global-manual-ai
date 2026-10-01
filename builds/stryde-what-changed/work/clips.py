@@ -1321,6 +1321,38 @@ B["B23b"] = clip("B23b",
            {"risk": "the camera follows her down (§27G)", "prevented_by": "locked-off camera, 'no camera following her'"}])
 B["B23b"][0]["motion"] = B["B23b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little; the strap never moves")
 
+# ── 2026-10-01 user "GO": B22a v4 (gen 4) and B23a v6 (gen 3) images confirmed — both carry the approved real-photo strap. The motion
+# keeps the user's earlier Fix "WALKING DOWN STAIR"; the straps must not change from the first frame. ──
+START.update({"B22a": str(HERE.parent / "broll/B22a_v4.png"), "B23a": str(HERE.parent / "broll/B23a_v6.png")})
+B["B22a"] = clip("B22a",
+    "Low and close, straight on: an older woman's two pale legs on her carpeted staircase, facing down the stairs towards the camera, a "
+    "black STRYDE strap seated just below EACH kneecap — pointed peaks, the kneecap seated in the notch, chrome slides, the grey "
+    "lowercase stryde wordmark — her denim skirt hem above, white plimsolls below.",
+    "Already walking on the first frame: she walks down the stairs towards the camera, one easy step down with one foot, then the "
+    "other, about two seconds, steady and sure, starting straight away. She only ever comes down, facing the camera, never turning. "
+    "Both straps stay exactly as they are — rigid, the same shape, size and wordmark from first frame to last.",
+    "no standing still, no strap moving, no strap changing shape, no wordmark changing, no third strap, no going up the stairs, no "
+    "turning round, no hands, no hand at the edge of the frame, no camera following her, no extra legs, no feet warping",
+    3.0, hi=4,
+    risks=[{"risk": "she stands still most of the clip (v3)", "prevented_by": "'starting straight away', 'no standing still'"},
+           {"risk": "the approved straps get redrawn", "prevented_by": "rigid line, 'the same shape, size and wordmark from first frame to last'"},
+           {"risk": "a hand edges into the corner", "prevented_by": "'no hands, no hand at the edge of the frame'"}])
+B["B22a"][0]["motion"] = B["B22a"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the skirt hem lags a little; the straps never move")
+B["B23a"] = clip("B23a",
+    "Close on an older woman's pale strapped leg on her carpeted staircase, facing down the stairs towards the camera, a black STRYDE "
+    "strap seated just below the kneecap — pointed peaks, the kneecap seated in the notch, chrome slides, the grey lowercase stryde "
+    "wordmark; her other leg stepping down to the stair below; denim skirt hem above, white plimsolls.",
+    "Already moving on the first frame: the stepping foot lands softly on the stair below and the weight moves onto it, then the "
+    "strapped leg follows down one stair, steady and sure, about two seconds. She only ever comes down, facing the camera, never "
+    "turning. The strap stays exactly as it is — rigid, the same shape, size and wordmark from first frame to last.",
+    "no strap moving, no strap changing shape, no wordmark changing, no second strap, no going up the stairs, no turning round, no "
+    "slipping, no hands, no hand at the edge of the frame, no camera following her, no extra legs, no feet warping",
+    3.0, hi=4,
+    risks=[{"risk": "the approved strap gets redrawn as the leg moves", "prevented_by": "rigid line, 'from first frame to last'"},
+           {"risk": "a hand edges into the corner (v1, v2)", "prevented_by": "'no hands, no hand at the edge of the frame'"},
+           {"risk": "a second strap appears on the stepping leg", "prevented_by": "'no second strap'"}])
+B["B23a"][0]["motion"] = B["B23a"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the skirt hem lags a little; the strap never moves")
+
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

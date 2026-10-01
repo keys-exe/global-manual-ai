@@ -1973,6 +1973,35 @@ B["B23a"] = (NBP, ["B22AV4H", "PW"], (
     "AVOID: no redrawn strap, no band showing through the notch, no flat peaks, no gap between the kneecap and the notch, "
     + P.NEG_WORDMARK + ", no capital letters, no second strap in view, no hand, no face, no extra legs"))
 
+# B10d Fix "GIVE ME DIFFERENT BROLL HERE" (v1: thumb popping a tablet) — "A painkiller turns the alarm off": the line's metaphor made
+# literal. Low, looking up at her hall ceiling: a plain white smoke alarm with its red light flashing, her hand pressing the button.
+B["B10d"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone held low, looking up three-quarter at the white ceiling of her hallway near the top of the wall. A plain "
+    "round white smoke alarm is fixed to the ceiling, its small red light glowing bright. Her hand reaches up from below and her thumb "
+    "presses the alarm's centre button. Close: the alarm and her hand fill the frame, the pale duck-egg blue wall top and a soft corner "
+    "of the ceiling behind.",
+    "Her hand: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, thin skin over the knuckles, "
+    "a plain gold wedding ring, a navy-and-white striped sleeve at the wrist.",
+    "THE SAME HALL as the attached house plate (Image 2): pale duck-egg blue walls, white ceiling, white ogee cornice.",
+    angle("B10d", "the smoke alarm and her hand"),
+    focus("the alarm's button under her thumb", deep=False).replace("the room behind", "the ceiling behind"),
+    "Daylight from the hall window, soft and even, on the alarm and her hand."],
+    NO_FACE + ", no person beyond her hand, no product anywhere, no knee strap, no smoke, no fire, no flames, no text on the alarm, "
+    "no brand names, no logos, no pills, no second hand, no extra fingers"))
+
+# B22a Fix "GIVE ME ANOTHER DIFFERENT BROLL HERE" — "Two for one, so you can do both knees.": edit of the approved B22a v4 (its two
+# real-photo straps carry over): Maureen now sits on the edge of her bed, both knees bent towards the camera, a strap below each.
+B["B22a"] = (NBP, ["B22AV4H", "R1"], (
+    "Edit Image 1. Keep BOTH straps EXACTLY as they are in Image 1 — the approved product: the same matte-black shells, the pointed "
+    "peaks and crisp notches with each kneecap seated in its notch, the chrome slides, the grey lowercase \"stryde\" on each — the "
+    "same shape, the same size on the leg, one just below EACH kneecap, nothing redrawn. Keep her pale legs, the denim skirt and white "
+    "plimsolls. Change the place and the pose: she now sits on the edge of her bed in her bright bedroom, both knees bent and side by "
+    "side towards the camera, feet flat on the carpet, her hands resting lightly on her thighs well above the straps, an easy, pleased "
+    "posture — the same woman as in Image 2, seen from the chest down, no face. The camera is level with her knees, straight on, so "
+    "both straps read front-on and large. Soft morning light from the bedroom window. A real phone photo.\n\n"
+    "AVOID: no redrawn straps, no hand on a strap, no capital letters, " + P.NEG_WORDMARK + ", no third strap, no face, no stairs, no "
+    "extra legs, no extra hands"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
