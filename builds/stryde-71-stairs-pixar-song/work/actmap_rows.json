@@ -391,11 +391,11 @@
   "subject": "N",
   "location": "L-N-KITCHEN",
   "story_day": "N-D1",
-  "framing": "CU seated at the kitchen table: a big black hinged knee brace over her bare right knee, sagging below the kneecap, her hand hauling it up",
+  "framing": "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a big black hinged knee brace sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new)",
   "action": "her hand pulls the brace up once and it slips back",
   "pace": "one pull, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "hands: large in frame, one movement",
+  "staging": "hands: large in frame, one movement, seated",
   "pin_end": "no",
   "pin_waived": null,
   "max": 6,
@@ -407,11 +407,11 @@
   "ledger": "",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "high",
-   "side": "three-quarter",
+   "height": "low",
+   "side": "profile",
    "fg": "clean",
    "scale": "CU",
-   "why": "high = her own view of her knee"
+   "why": "low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14)"
   },
   "mirror_of": null,
   "focus": {
@@ -422,7 +422,7 @@
   },
   "light": {
    "source": "window over the sink, south wall",
-   "key_side": "R",
+   "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 5600
@@ -454,11 +454,11 @@
   "subject": "N feet",
   "location": "L-N-KITCHEN",
   "story_day": "N-D1",
-  "framing": "CU at floor level: the brace bunched around her right ankle above her slipper",
+  "framing": "CU from the same side, the frame dropped to floor level: the same seat and chair as P-03a, the same brace now bunched around her right ankle above her slipper, both slippers on the floor; hands and head out of frame (edit of the P-03a frame, FP14)",
   "action": "she shifts her foot once",
   "pace": "one small shift, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "feet only",
+  "staging": "feet only, seated",
   "pin_end": "no",
   "pin_waived": null,
   "max": 6,
@@ -471,10 +471,10 @@
   "music": "MUS-EXPOSE",
   "angle": {
    "height": "ground",
-   "side": "three-quarter",
+   "side": "profile",
    "fg": "clean",
    "scale": "CU",
-   "why": "ground = where it ended up"
+   "why": "ground = where it ended up; the same side as P-03a so the two connect"
   },
   "mirror_of": null,
   "focus": {
@@ -485,7 +485,7 @@
   },
   "light": {
    "source": "window over the sink, south wall",
-   "key_side": "R",
+   "key_side": "L",
    "time": "evening",
    "arc": "problem: grey",
    "kelvin": 5600

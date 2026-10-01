@@ -17,7 +17,7 @@
  "imageAt": 1790876674688,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": null,
+ "imageFault": "NEW IMAGE",
  "imageJob": "549092c2-8bdd-46cc-8264-8f4b41dabf2a",
  "imageMatch": "plate",
  "imageModel": "nano_banana_pro → logged nano_banana_2",
@@ -33,9 +33,9 @@
    "role": "Image 1 · edited (§6A rule 3, HT17)"
   }
  ],
- "imageRegens": 0,
+ "imageRegens": 1,
  "imageRes": 8167876,
- "imageStatus": "confirmed",
+ "imageStatus": "regenerate",
  "imageTaste": [
   "HT02",
   "HT03",
@@ -139,10 +139,10 @@
  "songOut": 29.96,
  "stage": "broll",
  "staging": "hands: large in frame, one movement",
- "status": "review",
+ "status": "regenerate",
  "storyDay": "N-D1",
  "title": "failed fix",
- "updatedAt": 1790878081408,
+ "updatedAt": 1790881256568,
  "videoAsset": "95875f4ed089d74ac741bb61b17982f1",
  "videoAt": 1790878081408,
  "videoConnector": "Kling",

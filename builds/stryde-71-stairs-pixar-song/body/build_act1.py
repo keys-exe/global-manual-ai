@@ -124,11 +124,27 @@ A final frame from a 3D animated feature film, stylized storybook render — the
 FIX6 = {"P-01a": "she should be starting from the top to show case the moving backwards (v5 pair kept her at the newel — the crop still held the bottom of the flight; now an edit of the P-02a frame)"}
 if V >= 6:
     P = P6
+
+# ---- v7 (user 2026-10-01: "THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL"): a new staging for both — seated on the kitchen chair, from the side at
+# knee height. P-03a is an edit of the P2 plate; P-03b is an edit of the new P-03a A frame (FP14), run once P-03a has rendered (P3B_OF = its job id).
+P7 = {}
+P7["P-03a"] = (f'''For the line "{L("P-03a")}": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chairs, the floor, the light — in close at the near chair from the side, a tall 9:16 crop, and add the seated woman from the shoulders down. Image 1 is the kitchen.
+Medium close-up from the side at knee height, sharp on the brace: an older Black woman sitting on the kitchen chair at the table, her right leg out a little, a big black hinged knee brace with wide straps slid down below the kneecap, sagging at the top of her shin, her right hand gripping its top strap and hauling it back up, her left hand flat on the chair seat; the hem of a faded blue floral house dress at mid-thigh, pink terry slippers flat on the floor; her head and shoulders out of frame above.
+In frame: the seated woman from the shoulders down, two hands placed, the brace, two slippers, the chair and table edge of Image 1; every other surface bare.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Brace and dress plain — no lettering, logos or labels; nobody else.''', [REF_P2], False, P2)
+P3B_OF = None   # set to the new P-03a A job id when it has rendered
+P7["P-03b"] = (f'''For the line "{L("P-03b")}": Keep this photo exactly as it is — the seated woman, her house dress, the chair, the table edge, the kitchen behind — but drop the frame to the floor and slide the brace down. Image 1 is the picture; nothing in it changes but the brace and the crop.
+Close-up from the same side at floor level, sharp on the ankle: the big black hinged knee brace of Image 1, copied exactly — same wide straps, same round hinges — now slid all the way down her right leg and bunched in a loose ring around her right ankle just above her pink terry slipper, both slippers flat on the floor, her shins bare; her hands resting on her knees, her head and shoulders out of frame above.
+In frame: two slippers, two shins, the one brace of Image 1 around the right ankle, the chair legs and floor of Image 1; every other surface bare. Each foot whole.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in evening light, the window dim, the ceiling light on. Brace and slippers plain — no lettering, logos or labels; nobody else.''', [{"label": "P-03a frame v7 A (new) — the seat and the brace", "kind": "frame"}], False, "P3A-NEW")
+FIX7 = {"P-03a": "THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL", "P-03b": "THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL"}
+if V >= 7:
+    P = P7
 if __name__ == "__main__":
     fails = 0
     for b, (pr, refs, face, eo) in P.items():
         c = {"beat": b, "kind": "image", "mode": 2, "prompt": pr, "script_line": L(b), "face": face, "room": True, "body": b != "P-05b", "refs": refs,
-             "match": "frame" if eo in (P3A, P02B) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
+             "match": "frame" if eo in (P3A, P02B, "P3A-NEW") else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
         OV = (OUTV if V == 4 else {}).get(b, V)
         (H / f"{b}.v{OV}.prompt.txt").write_text(pr); (H / f"{b}.v{OV}.preflight.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
         r = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v{OV}.preflight.json")], capture_output=True, text=True)

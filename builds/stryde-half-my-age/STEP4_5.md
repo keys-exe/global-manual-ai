@@ -78,7 +78,7 @@ Want: her life back (stairs, town, Sundays not planned around one level) · Stak
 | HE | oatmeal cardigan over a teal top, grey trousers | denim jacket over a grey hoodie, jeans | — | — | — |
 | B1 | heather-green jumper, charcoal A-line skirt (sheet) | — | brown cardigan, checked shirt (sheet) | — | — |
 | B2 | pale-blue quilted dressing gown, grey nightdress, slippers | — | same as B1 | — | — |
-| B3 | slate-grey cardigan, cream blouse, navy knee-length skirt | — | brown cardigan, green checked shirt | — | Sister: voice only |
+| B3 | slate-grey cardigan, cream blouse, navy knee-length skirt | — | bottle-green crew-neck jumper, pale-blue oxford shirt, charcoal cords (user Fix 2026-10-01: not the Scene 2 outfit) | — | Sister: voice only |
 | B4 | dusty-rose dress, cream jacket | — | navy suit, pale-blue shirt, tie | royal-blue dress, silver cardigan | bride in white |
 | B5 | sage-green button cardigan, white blouse, charcoal skirt above the knee | — | — | cobalt gilet, white top, navy knee-length shorts (sheet) | — |
 | A2 | camel trench, cream jumper, navy trousers, white trainers | — | brown cardigan, plain grey shirt | — | Cashier: supermarket polo |
