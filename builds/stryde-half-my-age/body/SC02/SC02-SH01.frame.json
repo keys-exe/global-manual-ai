@@ -2,7 +2,7 @@
  "beat": "SC02-SH01",
  "kind": "image",
  "mode": 4,
- "prompt": "For the line \"Just leave it by the stairs, love. I’ll get it later.\": she is stranded at the top of her own stairs at night, calling down. SCENE MASTER, Scene 2. A low, wide shot from the dark hall floor, looking up the whole flight through the banister's square spindles: the dark spindles soft in the near foreground like bars, the flight rising between them. Image 1 is this hall and staircase — copied exactly. At the top, small in the frame, stands the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in a heather-green jumper and charcoal skirt, in the one pool of warm light from the landing lamp. Her right hand grips the newel post, her left hand at her chest; she is looking down the stairs, mouth open mid-word, the face lit, tired. Two plain shopping bags at the foot of the bottom step, near frame; every step bare. Low-key night: one warm 2800K lamp on the landing, the hall below in deep blue-grey shadow, high contrast. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
+ "prompt": "For the line \"Just leave it by the stairs, love. I’ll get it later.\": at night she covers her fear with a light voice, stranded at the top of her stairs. A medium close-up from three steps below her, looking slightly up, 85mm lens, shallow focus on her eyes. the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in a heather-green jumper, stands on the landing behind the top newel post. Her right hand grips the dark newel post in the foreground of the shot, knuckles tight; her left hand rests flat on her chest. She is looking down past the camera toward the hall, calling, a small brave smile that does not reach her eyes. Image 1 is this house: behind her, out of focus, the magnolia landing wall and its framed photographs. Night: one warm 2800K landing lamp to her right lights half her face; the other half falls into deep shadow; the stairwell below is dark. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
  "script_line": "Just leave it by the stairs, love. I’ll get it later.",
  "refs": [
   {
@@ -27,12 +27,13 @@
  "match": null,
  "edit_of": null,
  "pair": [
-  "gpt_image_2_5",
-  "gpt_image_2_5"
+  "gpt_image_2",
+  "gpt_image_2"
  ],
- "model": "gpt_image_2_5 · sunburst · high · 2k · 9:16",
- "role": "master",
- "motion_plan": "From this frame: she keeps her right hand on the newel post and calls down the line; she stays on the landing.",
+ "model": "gpt-image-2 image-to-image · 9:16 (Kie AI)",
+ "model_override": "user 2026-10-01: \"use gpt image 2 and not sunburst, re do all the scene 2\" — overrides the §18A Sunburst routing for this build's body frames",
+ "role": "key",
+ "motion_plan": "From this frame: she calls the line down the stairs, a small forced smile on 'love', then her eyes drop to the stairs below; her right hand stays on the newel post.",
  "scene": 2,
  "taste": [
   "HT02",
@@ -42,6 +43,6 @@
   "HT19",
   "HT22"
  ],
- "generation": 2,
- "fix_note": "I WANT NEW ONES IN SCENE TWO MORE EMOTIONAL CAMERA ANGLES I WANT THE BEST NETFLIX STYLE CINEMATIVE"
+ "generation": 3,
+ "fix_note": "i want new ones the all of theme are not good (scene 2)"
 }

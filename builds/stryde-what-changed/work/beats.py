@@ -2002,6 +2002,20 @@ B["B22a"] = (NBP, ["B22AV4H", "R1"], (
     "AVOID: no redrawn straps, no hand on a strap, no capital letters, " + P.NEG_WORDMARK + ", no third strap, no face, no stairs, no "
     "extra legs, no extra hands"))
 
+# B10d Fix "DIFFERENT BROLL HERE" (v1 thumb popping a tablet, v2 smoke alarm — both turned down) — "A painkiller turns the alarm off":
+# Maureen at her kitchen counter, side-on, swallowing a painkiller with a glass of water, eyes closed — relief, nothing fixed.
+B["B10d"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone at eye level in her kitchen, side-on. Maureen stands at the worktop, head tipped back a little, eyes "
+    "closed, a plain glass of water at her lips as she swallows a painkiller; her other hand rests flat on the worktop beside a plain "
+    "silver blister pack. A small, tired look of relief. Medium: her from the waist up in profile, the kitchen window soft behind.",
+    R1 + " Wearing the dusty-pink cardigan over a white top.",
+    KITCHEN,
+    angle("B10d", "her at the worktop"),
+    focus("the nearest eye of the woman", deep=False).replace("the room behind", "the kitchen behind"),
+    light("KITCH-L", "her face and the glass"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan and a white top").replace("the faded orange of the old photograph", "the glass of water")],
+    "no looking into the lens, no smile, no product anywhere, no knee strap, no printing on the blister pack, no pharmacy box, "
+    "no brand names, no readable text, no logos, no second person, no extra hands, no extra fingers"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

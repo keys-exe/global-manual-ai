@@ -6,7 +6,7 @@
   "image"
  ],
  "hook": 1,
- "imageAsset": "e088089c7164af5a6a69aa3a2029d6b1",
+ "imageAsset": "2a152f66c7acd3857a84e23aebb73fca",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageFault": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\"",
@@ -33,7 +33,7 @@
  "imageRes": "1536×2752",
  "imageStatus": "regenerate",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142326_2dfb344e-6964-457b-aff8-c5882662b1d5.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150922_045aa7f0-1978-42a5-99c0-941797ea4dbd.png",
  "imageVersions": [
   {
    "archived": true,
@@ -130,11 +130,27 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142331_f45b3eaf-06fe-418a-ad7d-01fc3a0b26e8.png",
    "v": 6,
    "archived": true
+  },
+  {
+   "asset": "2a152f66c7acd3857a84e23aebb73fca",
+   "at": 1790867552722,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "045aa7f0-1978-42a5-99c0-941797ea4dbd",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "not chosen — the user used the other render",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 5621016,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150922_045aa7f0-1978-42a5-99c0-941797ea4dbd.png",
+   "v": 8,
+   "archived": true
   }
  ],
  "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
  "stage": "hooks",
  "status": "regenerate",
  "title": "hook — the witness — v1–v3 pairs (replaced)",
- "updatedAt": 1790867385732
+ "updatedAt": 1790868326332
 }
