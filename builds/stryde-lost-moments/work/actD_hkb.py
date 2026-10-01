@@ -108,3 +108,20 @@ def write_start4():
     c.update(prompt=PROMPT4, refs=[{"label": r["label"], "kind": r["kind"]} for r in refs], ref_urls=[r["url"] for r in refs], motion_plan=SWING,
              fix_note="MAKE HE HIITING THE BALL → walking → at address on the tee, face-on; the clip is one swing through the ball")
     (HERE / "clips" / "D-HKb.img5.call.json").write_text(json.dumps(c, indent=1)); print("START4", len(PROMPT4))
+
+# Round 7 (board Fix "CHANGE THE SCENE WALKING ON THE GROUND", 2026-10-01): off the grass — walking a packed-earth path by the course
+# toward the camera at an angle, bag on his shoulder; same natural look. Walking = travel → camera-fixed end frame after the pick.
+PROMPT5 = f"""For the line "{LINE}": he walks a packed-earth path by the course, mid-stride, strapped right leg forward.
+Medium-full shot from hip height, three-quarter front from his right, normal phone lens, head to feet, the dirt path underfoot, fairway behind.
+Image 1: the strap (three-quarter). Image 2: the strap worn. Image 3: the course. Image 4: the man. Image 5: his bag. Image 6: his outfit.
+{STRAP} The same man as Image 4 in the polo and sleeveless pullover of Image 6, grey shorts, white-and-tan golf shoes, the bag of Image 5 on his right shoulder.
+Right hand on the bag strap, left arm swinging; looking ahead past the camera, a small smile, mouth closed.
+In the frame: one man, one bag, the path, the course; nothing else.
+Soft late light through thin cloud, muted natural colour, real skin. An ordinary iPhone photo, nothing retouched.
+Clothing and bag plain — no lettering or logos but the strap's own wordmark."""
+def write_start5():
+    (HERE / "prompts" / "D-HKb.v74e.txt").write_text(PROMPT5)
+    c = json.load(open(HERE / "clips" / "D-HKb.img4.call.json"))
+    c.update(prompt=PROMPT5, motion_plan="From this frame: he walks on along the path toward the camera at a normal walking pace, two steps, about three seconds.",
+             fix_note="CHANGE THE SCENE WALKING ON THE GROUND → tee address → walking a packed-earth path beside the course")
+    (HERE / "clips" / "D-HKb.img6.call.json").write_text(json.dumps(c, indent=1)); print("START5", len(PROMPT5))
