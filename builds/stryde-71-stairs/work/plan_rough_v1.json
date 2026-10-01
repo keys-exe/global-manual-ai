@@ -1,0 +1,557 @@
+{
+ "audio": "/home/user/global-manual-ai/builds/stryde-71-stairs/vo/cut/v3/VO_T2.mp3",
+ "script": "/home/user/global-manual-ai/builds/stryde-71-stairs/work/script.lines.txt",
+ "base": "/home/user/global-manual-ai/builds/stryde-71-stairs/vo/th/v4/TH_ALL.mp4",
+ "broll": [
+  {
+   "beat": "P-01a",
+   "phrase": "Six weeks ago, I was going down my stairs backwards",
+   "key": "backwards",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-01a_v2.mp4"
+  },
+  {
+   "beat": "P-01b",
+   "phrase": "One step at a time",
+   "key": "step",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-01b_v2.mp4"
+  },
+  {
+   "beat": "P-02a",
+   "phrase": "I'd just stay upstairs",
+   "key": "upstairs",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-02a_v1.mp4"
+  },
+  {
+   "beat": "P-03a",
+   "phrase": "That big knee brace I bought slid right down my leg",
+   "key": "brace",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-03a_v1.mp4"
+  },
+  {
+   "beat": "P-03b",
+   "phrase": "By evening, it was around my ankle",
+   "key": "ankle",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-03b_v1.mp4"
+  },
+  {
+   "beat": "P-04a",
+   "phrase": "Physical therapy",
+   "key": "therapy",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-04a_v1.mp4"
+  },
+  {
+   "beat": "P-04b",
+   "phrase": "Pain pills",
+   "key": "pills",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-04b_v1.mp4"
+  },
+  {
+   "beat": "P-04c",
+   "phrase": "Cortisone shots",
+   "key": "shots",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-04c_v1.mp4"
+  },
+  {
+   "beat": "P-04d",
+   "phrase": "Every brace and sleeve they make",
+   "key": "brace",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-04d_v1.mp4"
+  },
+  {
+   "beat": "P-05a",
+   "phrase": "Nothing gave me my life back",
+   "key": "life",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-05a_v1.mp4"
+  },
+  {
+   "beat": "T-01a",
+   "phrase": "Then my grandbaby got married in June",
+   "key": "married",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/T-01a_v1.mp4"
+  },
+  {
+   "beat": "T-01b",
+   "phrase": "My cousin Loretta was there",
+   "key": "Loretta",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/T-01b_v1.mp4"
+  },
+  {
+   "beat": "T-02a",
+   "phrase": "and she was out on that dance floor all night",
+   "key": "floor",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/T-02a_v1.mp4"
+  },
+  {
+   "beat": "T-02b",
+   "phrase": "Electric Slide, Cupid Shuffle, all of it",
+   "key": "Slide",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/T-02b_v1.mp4"
+  },
+  {
+   "beat": "T-03a",
+   "phrase": "Both her knees was bone on bone too",
+   "key": "bone",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/T-03a_v2.mp4"
+  },
+  {
+   "beat": "R-01a",
+   "phrase": "Loretta came to stay the week after",
+   "key": "stay",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-01a_v1.mp4"
+  },
+  {
+   "beat": "R-02a",
+   "phrase": "Two anti-inflammatories, the gel,",
+   "key": "gel",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-02a_v1.mp4"
+  },
+  {
+   "beat": "R-02b",
+   "phrase": "the brace, an ice pack on my right knee",
+   "key": "ice",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-02b_v1.mp4"
+  },
+  {
+   "beat": "R-03a",
+   "phrase": "She pulled up her pant leg",
+   "key": "leg",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-03a_v2.mp4"
+  },
+  {
+   "beat": "R-04a",
+   "phrase": "She had on a little black strap, right under her kneecap. Stryde",
+   "key": "strap",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-04a_v1.mp4"
+  },
+  {
+   "beat": "R-05a",
+   "phrase": "She handed me one. It looked ridiculous. Too small",
+   "key": "small",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-05a_v2.mp4"
+  },
+  {
+   "beat": "R-06a",
+   "phrase": "She said, \"Just put it on and walk down them stairs.\"",
+   "key": "stairs",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-06a_v1.mp4"
+  },
+  {
+   "beat": "R-07a",
+   "phrase": "I did. Chile, the first step, I didn't even have to hold the rail. Not the second. Not the third. All the way down. Both feet. Forwards",
+   "key": "Forwards",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-07a_v1.mp4"
+  },
+  {
+   "beat": "M-01a",
+   "phrase": "She said, \"Everything else you tried was made to keep you comfortable",
+   "key": "comfortable",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-01a_v1.mp4"
+  },
+  {
+   "beat": "M-01b",
+   "phrase": "while your knee got worse",
+   "key": "worse",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-01b_v1.mp4"
+  },
+  {
+   "beat": "M-02a",
+   "phrase": "This one fixes why it hurts.\"",
+   "key": "fixes",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-02a_v1.mp4"
+  },
+  {
+   "beat": "M-03a",
+   "phrase": "She said, \"There's one spot under the kneecap where every step lands.\"",
+   "key": "spot",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-03a_v1.mp4"
+  },
+  {
+   "beat": "M-04a",
+   "phrase": "\"Every brace, every shot, every pill you ever tried treated the whole knee",
+   "key": "whole",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-04a_v1.mp4"
+  },
+  {
+   "beat": "M-04b",
+   "phrase": "Not that spot. That's why ain't nothing worked",
+   "key": "spot",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-04b_v1.mp4"
+  },
+  {
+   "beat": "M-05a",
+   "phrase": "\"The pain is pressure. That's all it is",
+   "key": "pressure",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-05a_v1.mp4"
+  },
+  {
+   "beat": "M-05b",
+   "phrase": "This strap sits right on that spot and takes the weight off.\"",
+   "key": "weight",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-05b_v1.mp4"
+  },
+  {
+   "beat": "M-06a",
+   "phrase": "First step. Pain gone. Just like that",
+   "key": "gone",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-06a_v1.mp4"
+  },
+  {
+   "beat": "PR-01a",
+   "phrase": "Over 200,000",
+   "key": "Over",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-01a_v1.mp4"
+  },
+  {
+   "beat": "PR-01b",
+   "phrase": "people",
+   "key": "people",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-01b_v2.mp4"
+  },
+  {
+   "beat": "PR-01c",
+   "phrase": "wear one",
+   "key": "wear",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-01c_v1.mp4"
+  },
+  {
+   "beat": "PR-01d",
+   "phrase": "now",
+   "key": "now",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-01d_v1.mp4"
+  },
+  {
+   "beat": "PR-02a",
+   "phrase": "Sports doctors recommend it",
+   "key": "doctors",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-02a_v1.mp4"
+  },
+  {
+   "beat": "PR-03a",
+   "phrase": "Loretta's husband wears one. He's 76, and he plays golf twice a week",
+   "key": "golf",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-03a_v1.mp4"
+  },
+  {
+   "beat": "PR-04a",
+   "phrase": "Her niece wears one when she runs track. She's 22",
+   "key": "track",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-04a_v1.mp4"
+  },
+  {
+   "beat": "PR-05a",
+   "phrase": "I've worn mine every day for six weeks",
+   "key": "worn",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-05a_v1.mp4"
+  },
+  {
+   "beat": "PR-05b",
+   "phrase": "Under my clothes. Don't nobody know it's there",
+   "key": "clothes",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-05b_v1.mp4"
+  },
+  {
+   "beat": "PR-06a",
+   "phrase": "No pills. No gel. No brace around my ankle by lunchtime",
+   "key": "pills",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-06a_v2.mp4"
+  },
+  {
+   "beat": "L-01a",
+   "phrase": "Yesterday I walked to the store. Two miles there. Two miles back",
+   "key": "store",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/L-01a_v1.mp4"
+  },
+  {
+   "beat": "L-01b",
+   "phrase": "Passed three women half my age",
+   "key": "passed",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/L-01b_v1.mp4"
+  },
+  {
+   "beat": "L-02a",
+   "phrase": "Stood in that checkout line ten minutes without shifting my weight",
+   "key": "checkout",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/L-02a_v1.mp4"
+  },
+  {
+   "beat": "L-02b",
+   "phrase": "Carried two bags home. Didn't nobody help me",
+   "key": "bags",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/L-02b_v1.mp4"
+  },
+  {
+   "beat": "L-03a",
+   "phrase": "When I got home, my husband said, \"You was gone a long time.\"",
+   "key": "husband",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/L-03a_v1.mp4"
+  },
+  {
+   "beat": "C-01a",
+   "phrase": "That was six weeks of wearing the strap. Nothing else",
+   "key": "That",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-01a_v1.mp4"
+  },
+  {
+   "beat": "C-02a",
+   "phrase": "Three ladies from church already ordered one after they watched me come down the church steps",
+   "key": "church",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-02a_v1.mp4"
+  },
+  {
+   "beat": "C-03a",
+   "phrase": "It's called Stryde Patellar Force Redirection",
+   "key": "Stryde",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-03a_v1.mp4"
+  },
+  {
+   "beat": "C-04a",
+   "phrase": "They spent three years designing it with orthopedic surgeons",
+   "key": "surgeons",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-04a_v1.mp4"
+  },
+  {
+   "beat": "C-05a",
+   "phrase": "Not them cheap knock-offs they be selling on Amazon and them fake websites",
+   "key": "knock-offs",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-05a_v1.mp4"
+  },
+  {
+   "beat": "C-06a",
+   "phrase": "The link's right down below. Two straps for the price of one right now",
+   "key": "Two",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-06a_v1.mp4"
+  },
+  {
+   "beat": "C-07a",
+   "phrase": "Sixty days to send them back if they don't work",
+   "key": "Sixty",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-07a_v1.mp4"
+  },
+  {
+   "beat": "C-09a",
+   "phrase": "I bought my sister a pair that same week",
+   "key": "sister",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-09a_v1.mp4"
+  }
+ ]
+}

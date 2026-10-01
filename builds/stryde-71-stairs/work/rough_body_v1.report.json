@@ -1,0 +1,1797 @@
+{
+  "master_s": 210.0,
+  "min_th_s": 1.5,
+  "edl": [
+    {
+      "beat": "P-01a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-01a_v2.mp4",
+      "phrase": "Six weeks ago, I was going down my stairs backwards",
+      "key": "backwards.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 12.56,
+      "start": 12.4583,
+      "line_end": 13.0,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 14.4583
+    },
+    {
+      "beat": "P-01b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-01b_v2.mp4",
+      "phrase": "One step at a time",
+      "key": "step",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 13.92,
+      "start": 14.4583,
+      "line_end": 14.7917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 17.4583
+    },
+    {
+      "beat": "P-02a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-02a_v1.mp4",
+      "phrase": "I'd just stay upstairs",
+      "key": "upstairs.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 19.14,
+      "start": 19.0417,
+      "line_end": 19.2917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 21.0417
+    },
+    {
+      "beat": "P-03a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-03a_v1.mp4",
+      "phrase": "That big knee brace I bought slid right down my leg",
+      "key": "brace",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 20.82,
+      "start": 21.0417,
+      "line_end": 22.9167,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 24.6667
+    },
+    {
+      "beat": "P-03b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-03b_v1.mp4",
+      "phrase": "By evening, it was around my ankle",
+      "key": "ankle.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 24.76,
+      "start": 24.6667,
+      "line_end": 25.125,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 27.8333
+    },
+    {
+      "beat": "P-04a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-04a_v1.mp4",
+      "phrase": "Physical therapy",
+      "key": "therapy.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 27.92,
+      "start": 27.8333,
+      "line_end": 28.25,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 29.8333
+    },
+    {
+      "beat": "P-04b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-04b_v1.mp4",
+      "phrase": "Pain pills",
+      "key": "pills.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 29.02,
+      "start": 29.8333,
+      "line_end": 29.4583,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 31.8333
+    },
+    {
+      "beat": "P-04c",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-04c_v1.mp4",
+      "phrase": "Cortisone shots",
+      "key": "shots.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 30.3,
+      "start": 31.8333,
+      "line_end": 30.6667,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 33.8333
+    },
+    {
+      "beat": "P-04d",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-04d_v1.mp4",
+      "phrase": "Every brace and sleeve they make",
+      "key": "brace",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 31.4,
+      "start": 33.8333,
+      "line_end": 32.875,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 36.6667
+    },
+    {
+      "beat": "P-05a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/P-05a_v1.mp4",
+      "phrase": "Nothing gave me my life back",
+      "key": "life",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 36.78,
+      "start": 36.6667,
+      "line_end": 37.3333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 39.2083
+    },
+    {
+      "beat": "T-01a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/T-01a_v1.mp4",
+      "phrase": "Then my grandbaby got married in June",
+      "key": "married",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 39.3,
+      "start": 39.2083,
+      "line_end": 39.9583,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 41.2083
+    },
+    {
+      "beat": "T-01b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/T-01b_v1.mp4",
+      "phrase": "My cousin Loretta was there",
+      "key": "Loretta",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 40.88,
+      "start": 41.2083,
+      "line_end": 41.625,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 44.4583
+    },
+    {
+      "beat": "T-02a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/T-02a_v1.mp4",
+      "phrase": "and she was out on that dance floor all night",
+      "key": "floor",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 44.56,
+      "start": 44.4583,
+      "line_end": 45.75,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 46.5417
+    },
+    {
+      "beat": "T-02b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/T-02b_v1.mp4",
+      "phrase": "Electric Slide, Cupid Shuffle, all of it",
+      "key": "Slide,",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 46.66,
+      "start": 46.5417,
+      "line_end": 48.8333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 50.0
+    },
+    {
+      "beat": "T-03a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/T-03a_v2.mp4",
+      "phrase": "Both her knees was bone on bone too",
+      "key": "bone",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 50.08,
+      "start": 50.0,
+      "line_end": 51.0,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 53.0
+    },
+    {
+      "beat": "R-01a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-01a_v1.mp4",
+      "phrase": "Loretta came to stay the week after",
+      "key": "stay",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 57.44,
+      "start": 57.3333,
+      "line_end": 58.3333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 60.3333
+    },
+    {
+      "beat": "R-02a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-02a_v1.mp4",
+      "phrase": "Two anti-inflammatories, the gel,",
+      "key": "gel,",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 63.74,
+      "start": 63.625,
+      "line_end": 66.375,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 65.625
+    },
+    {
+      "beat": "R-02b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-02b_v1.mp4",
+      "phrase": "the brace, an ice pack on my right knee",
+      "key": "ice",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 65.18,
+      "start": 65.625,
+      "line_end": 66.375,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 68.625
+    },
+    {
+      "beat": "R-03a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-03a_v2.mp4",
+      "phrase": "She pulled up her pant leg",
+      "key": "leg.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 71.44,
+      "start": 71.3333,
+      "line_end": 71.7083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 73.3333
+    },
+    {
+      "beat": "R-04a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-04a_v1.mp4",
+      "phrase": "She had on a little black strap, right under her kneecap. Stryde",
+      "key": "strap,",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 73.16,
+      "start": 73.3333,
+      "line_end": 76.3333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 76.3333
+    },
+    {
+      "beat": "R-05a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-05a_v2.mp4",
+      "phrase": "She handed me one. It looked ridiculous. Too small",
+      "key": "small.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 79.3,
+      "start": 79.2083,
+      "line_end": 79.7917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 82.2083
+    },
+    {
+      "beat": "R-06a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-06a_v1.mp4",
+      "phrase": "She said, \"Just put it on and walk down them stairs.\"",
+      "key": "stairs.\"",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 86.78,
+      "start": 86.6667,
+      "line_end": 88.2083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 89.6667
+    },
+    {
+      "beat": "R-07a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/R-07a_v1.mp4",
+      "phrase": "I did. Chile, the first step, I didn't even have to hold the rail. Not the second. Not the third. All the way down. Both feet. Forwards",
+      "key": "Forwards.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 97.0,
+      "start": 96.9167,
+      "line_end": 97.4583,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 6.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 101.0417
+    },
+    {
+      "beat": "M-01a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-01a_v1.mp4",
+      "phrase": "She said, \"Everything else you tried was made to keep you comfortable",
+      "key": "comfortable",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 101.16,
+      "start": 101.0417,
+      "line_end": 102.7917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 103.0417
+    },
+    {
+      "beat": "M-01b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-01b_v1.mp4",
+      "phrase": "while your knee got worse",
+      "key": "worse.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 102.48,
+      "start": 103.0417,
+      "line_end": 102.7917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 105.0417
+    },
+    {
+      "beat": "M-02a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-02a_v1.mp4",
+      "phrase": "This one fixes why it hurts.\"",
+      "key": "fixes",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 103.86,
+      "start": 105.0417,
+      "line_end": 114.4167,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 107.0417
+    },
+    {
+      "beat": "M-03a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-03a_v1.mp4",
+      "phrase": "She said, \"There's one spot under the kneecap where every step lands.\"",
+      "key": "spot",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 106.98,
+      "start": 107.0417,
+      "line_end": 114.4167,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 8.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 113.75
+    },
+    {
+      "beat": "M-04a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-04a_v1.mp4",
+      "phrase": "\"Every brace, every shot, every pill you ever tried treated the whole knee",
+      "key": "whole",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 113.86,
+      "start": 113.75,
+      "line_end": 114.4167,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 115.75
+    },
+    {
+      "beat": "M-04b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-04b_v1.mp4",
+      "phrase": "Not that spot. That's why ain't nothing worked",
+      "key": "spot.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 115.14,
+      "start": 115.75,
+      "line_end": 118.625,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 118.25
+    },
+    {
+      "beat": "M-05a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-05a_v1.mp4",
+      "phrase": "\"The pain is pressure. That's all it is",
+      "key": "pressure.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 118.36,
+      "start": 118.25,
+      "line_end": 120.0417,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 121.25
+    },
+    {
+      "beat": "M-05b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-05b_v1.mp4",
+      "phrase": "This strap sits right on that spot and takes the weight off.\"",
+      "key": "weight",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 122.88,
+      "start": 122.7917,
+      "line_end": 124.5,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 125.0
+    },
+    {
+      "beat": "M-06a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/M-06a_v1.mp4",
+      "phrase": "First step. Pain gone. Just like that",
+      "key": "gone.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 125.1,
+      "start": 125.0,
+      "line_end": 126.625,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 127.0417
+    },
+    {
+      "beat": "PR-01a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-01a_v1.mp4",
+      "phrase": "Over 200,000",
+      "key": "Over",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 127.16,
+      "start": 127.0417,
+      "line_end": 129.5833,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 129.0417
+    },
+    {
+      "beat": "PR-01b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-01b_v2.mp4",
+      "phrase": "people",
+      "key": "people",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 128.54,
+      "start": 129.0417,
+      "line_end": 129.5833,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 131.0417
+    },
+    {
+      "beat": "PR-01c",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-01c_v1.mp4",
+      "phrase": "wear one",
+      "key": "wear",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 128.92,
+      "start": 131.0417,
+      "line_end": 129.5833,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 133.0417
+    },
+    {
+      "beat": "PR-01d",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-01d_v1.mp4",
+      "phrase": "now",
+      "key": "now.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 129.34,
+      "start": 133.0417,
+      "line_end": 129.5833,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 135.0417
+    },
+    {
+      "beat": "PR-02a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-02a_v1.mp4",
+      "phrase": "Sports doctors recommend it",
+      "key": "doctors",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 130.16,
+      "start": 135.0417,
+      "line_end": 131.375,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 137.0417
+    },
+    {
+      "beat": "PR-03a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-03a_v1.mp4",
+      "phrase": "Loretta's husband wears one. He's 76, and he plays golf twice a week",
+      "key": "golf",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 137.0,
+      "start": 137.0417,
+      "line_end": 138.0417,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 139.7083
+    },
+    {
+      "beat": "PR-04a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-04a_v1.mp4",
+      "phrase": "Her niece wears one when she runs track. She's 22",
+      "key": "track.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 139.82,
+      "start": 139.7083,
+      "line_end": 140.9583,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 141.875
+    },
+    {
+      "beat": "PR-05a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-05a_v1.mp4",
+      "phrase": "I've worn mine every day for six weeks",
+      "key": "worn",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 141.98,
+      "start": 141.875,
+      "line_end": 144.0,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 144.625
+    },
+    {
+      "beat": "PR-05b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-05b_v1.mp4",
+      "phrase": "Under my clothes. Don't nobody know it's there",
+      "key": "clothes.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 144.74,
+      "start": 144.625,
+      "line_end": 146.3333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 146.7917
+    },
+    {
+      "beat": "PR-06a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/PR-06a_v2.mp4",
+      "phrase": "No pills. No gel. No brace around my ankle by lunchtime",
+      "key": "pills.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 146.9,
+      "start": 146.7917,
+      "line_end": 150.5833,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 150.5833
+    },
+    {
+      "beat": "L-01a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/L-01a_v1.mp4",
+      "phrase": "Yesterday I walked to the store. Two miles there. Two miles back",
+      "key": "store.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 152.7,
+      "start": 152.5833,
+      "line_end": 155.3333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 155.25
+    },
+    {
+      "beat": "L-01b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/L-01b_v1.mp4",
+      "phrase": "Passed three women half my age",
+      "key": "Passed",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 155.34,
+      "start": 155.25,
+      "line_end": 157.625,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 158.5833
+    },
+    {
+      "beat": "L-02a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/L-02a_v1.mp4",
+      "phrase": "Stood in that checkout line ten minutes without shifting my weight",
+      "key": "checkout",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 158.68,
+      "start": 158.5833,
+      "line_end": 161.375,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 162.2917
+    },
+    {
+      "beat": "L-02b",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/L-02b_v1.mp4",
+      "phrase": "Carried two bags home. Didn't nobody help me",
+      "key": "bags",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 162.4,
+      "start": 162.2917,
+      "line_end": 164.75,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 166.3333
+    },
+    {
+      "beat": "L-03a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/L-03a_v1.mp4",
+      "phrase": "When I got home, my husband said, \"You was gone a long time.\"",
+      "key": "husband",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 166.42,
+      "start": 166.3333,
+      "line_end": 172.7083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 6.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 170.75
+    },
+    {
+      "beat": "C-01a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-01a_v1.mp4",
+      "phrase": "That was six weeks of wearing the strap. Nothing else",
+      "key": "That",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 170.84,
+      "start": 170.75,
+      "line_end": 173.7917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 6.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 174.9167
+    },
+    {
+      "beat": "C-02a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-02a_v1.mp4",
+      "phrase": "Three ladies from church already ordered one after they watched me come down the church steps",
+      "key": "church",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 175.02,
+      "start": 174.9167,
+      "line_end": 178.2083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 178.2083
+    },
+    {
+      "beat": "C-03a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-03a_v1.mp4",
+      "phrase": "It's called Stryde Patellar Force Redirection",
+      "key": "Stryde",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 181.0,
+      "start": 180.9167,
+      "line_end": 183.0417,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 183.9167
+    },
+    {
+      "beat": "C-04a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-04a_v1.mp4",
+      "phrase": "They spent three years designing it with orthopedic surgeons",
+      "key": "surgeons.",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 186.22,
+      "start": 186.125,
+      "line_end": 186.4167,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 188.9167
+    },
+    {
+      "beat": "C-05a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-05a_v1.mp4",
+      "phrase": "Not them cheap knock-offs they be selling on Amazon and them fake websites",
+      "key": "knock-offs",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 189.02,
+      "start": 188.9167,
+      "line_end": 191.6667,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 191.9167
+    },
+    {
+      "beat": "C-06a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-06a_v1.mp4",
+      "phrase": "The link's right down below. Two straps for the price of one right now",
+      "key": "Two",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 194.2,
+      "start": 194.0833,
+      "line_end": 196.4167,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 196.3333
+    },
+    {
+      "beat": "C-07a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-07a_v1.mp4",
+      "phrase": "Sixty days to send them back if they don't work",
+      "key": "Sixty",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 196.42,
+      "start": 196.3333,
+      "line_end": 198.8333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 199.3333
+    },
+    {
+      "beat": "C-09a",
+      "clip": "/home/user/global-manual-ai/builds/stryde-71-stairs/broll/video/C-09a_v1.mp4",
+      "phrase": "I bought my sister a pair that same week",
+      "key": "sister",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 204.38,
+      "start": 204.2917,
+      "line_end": 205.8333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 207.2917
+    }
+  ],
+  "timeline": [
+    {
+      "kind": "TH",
+      "start": 0.0,
+      "end": 12.458,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "P-01a",
+      "layout": "full",
+      "start": 12.458,
+      "end": 14.458
+    },
+    {
+      "kind": "BR",
+      "beat": "P-01b",
+      "layout": "full",
+      "start": 14.458,
+      "end": 17.458
+    },
+    {
+      "kind": "TH",
+      "start": 17.458,
+      "end": 19.042,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "P-02a",
+      "layout": "full",
+      "start": 19.042,
+      "end": 21.042
+    },
+    {
+      "kind": "BR",
+      "beat": "P-03a",
+      "layout": "full",
+      "start": 21.042,
+      "end": 24.667
+    },
+    {
+      "kind": "BR",
+      "beat": "P-03b",
+      "layout": "full",
+      "start": 24.667,
+      "end": 27.833
+    },
+    {
+      "kind": "BR",
+      "beat": "P-04a",
+      "layout": "full",
+      "start": 27.833,
+      "end": 29.833
+    },
+    {
+      "kind": "BR",
+      "beat": "P-04b",
+      "layout": "full",
+      "start": 29.833,
+      "end": 31.833
+    },
+    {
+      "kind": "BR",
+      "beat": "P-04c",
+      "layout": "full",
+      "start": 31.833,
+      "end": 33.833
+    },
+    {
+      "kind": "BR",
+      "beat": "P-04d",
+      "layout": "full",
+      "start": 33.833,
+      "end": 36.667
+    },
+    {
+      "kind": "BR",
+      "beat": "P-05a",
+      "layout": "full",
+      "start": 36.667,
+      "end": 39.208
+    },
+    {
+      "kind": "BR",
+      "beat": "T-01a",
+      "layout": "full",
+      "start": 39.208,
+      "end": 41.208
+    },
+    {
+      "kind": "BR",
+      "beat": "T-01b",
+      "layout": "full",
+      "start": 41.208,
+      "end": 44.458
+    },
+    {
+      "kind": "BR",
+      "beat": "T-02a",
+      "layout": "full",
+      "start": 44.458,
+      "end": 46.542
+    },
+    {
+      "kind": "BR",
+      "beat": "T-02b",
+      "layout": "full",
+      "start": 46.542,
+      "end": 50.0
+    },
+    {
+      "kind": "BR",
+      "beat": "T-03a",
+      "layout": "full",
+      "start": 50.0,
+      "end": 53.0
+    },
+    {
+      "kind": "TH",
+      "start": 53.0,
+      "end": 57.333,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "R-01a",
+      "layout": "full",
+      "start": 57.333,
+      "end": 60.333
+    },
+    {
+      "kind": "TH",
+      "start": 60.333,
+      "end": 63.625,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "R-02a",
+      "layout": "full",
+      "start": 63.625,
+      "end": 65.625
+    },
+    {
+      "kind": "BR",
+      "beat": "R-02b",
+      "layout": "full",
+      "start": 65.625,
+      "end": 68.625
+    },
+    {
+      "kind": "TH",
+      "start": 68.625,
+      "end": 71.333,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "R-03a",
+      "layout": "full",
+      "start": 71.333,
+      "end": 73.333
+    },
+    {
+      "kind": "BR",
+      "beat": "R-04a",
+      "layout": "full",
+      "start": 73.333,
+      "end": 76.333
+    },
+    {
+      "kind": "TH",
+      "start": 76.333,
+      "end": 79.208,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "R-05a",
+      "layout": "full",
+      "start": 79.208,
+      "end": 82.208
+    },
+    {
+      "kind": "TH",
+      "start": 82.208,
+      "end": 86.667,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "R-06a",
+      "layout": "full",
+      "start": 86.667,
+      "end": 89.667
+    },
+    {
+      "kind": "TH",
+      "start": 89.667,
+      "end": 96.917,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "R-07a",
+      "layout": "full",
+      "start": 96.917,
+      "end": 101.042
+    },
+    {
+      "kind": "BR",
+      "beat": "M-01a",
+      "layout": "full",
+      "start": 101.042,
+      "end": 103.042
+    },
+    {
+      "kind": "BR",
+      "beat": "M-01b",
+      "layout": "full",
+      "start": 103.042,
+      "end": 105.042
+    },
+    {
+      "kind": "BR",
+      "beat": "M-02a",
+      "layout": "full",
+      "start": 105.042,
+      "end": 107.042
+    },
+    {
+      "kind": "BR",
+      "beat": "M-03a",
+      "layout": "full",
+      "start": 107.042,
+      "end": 113.75
+    },
+    {
+      "kind": "BR",
+      "beat": "M-04a",
+      "layout": "full",
+      "start": 113.75,
+      "end": 115.75
+    },
+    {
+      "kind": "BR",
+      "beat": "M-04b",
+      "layout": "full",
+      "start": 115.75,
+      "end": 118.25
+    },
+    {
+      "kind": "BR",
+      "beat": "M-05a",
+      "layout": "full",
+      "start": 118.25,
+      "end": 121.25
+    },
+    {
+      "kind": "TH",
+      "start": 121.25,
+      "end": 122.792,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "M-05b",
+      "layout": "full",
+      "start": 122.792,
+      "end": 125.0
+    },
+    {
+      "kind": "BR",
+      "beat": "M-06a",
+      "layout": "full",
+      "start": 125.0,
+      "end": 127.042
+    },
+    {
+      "kind": "BR",
+      "beat": "PR-01a",
+      "layout": "full",
+      "start": 127.042,
+      "end": 129.042
+    },
+    {
+      "kind": "BR",
+      "beat": "PR-01b",
+      "layout": "full",
+      "start": 129.042,
+      "end": 131.042
+    },
+    {
+      "kind": "BR",
+      "beat": "PR-01c",
+      "layout": "full",
+      "start": 131.042,
+      "end": 133.042
+    },
+    {
+      "kind": "BR",
+      "beat": "PR-01d",
+      "layout": "full",
+      "start": 133.042,
+      "end": 135.042
+    },
+    {
+      "kind": "BR",
+      "beat": "PR-02a",
+      "layout": "full",
+      "start": 135.042,
+      "end": 137.042
+    },
+    {
+      "kind": "BR",
+      "beat": "PR-03a",
+      "layout": "full",
+      "start": 137.042,
+      "end": 139.708
+    },
+    {
+      "kind": "BR",
+      "beat": "PR-04a",
+      "layout": "full",
+      "start": 139.708,
+      "end": 141.875
+    },
+    {
+      "kind": "BR",
+      "beat": "PR-05a",
+      "layout": "full",
+      "start": 141.875,
+      "end": 144.625
+    },
+    {
+      "kind": "BR",
+      "beat": "PR-05b",
+      "layout": "full",
+      "start": 144.625,
+      "end": 146.792
+    },
+    {
+      "kind": "BR",
+      "beat": "PR-06a",
+      "layout": "full",
+      "start": 146.792,
+      "end": 150.583
+    },
+    {
+      "kind": "TH",
+      "start": 150.583,
+      "end": 152.583,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "L-01a",
+      "layout": "full",
+      "start": 152.583,
+      "end": 155.25
+    },
+    {
+      "kind": "BR",
+      "beat": "L-01b",
+      "layout": "full",
+      "start": 155.25,
+      "end": 158.583
+    },
+    {
+      "kind": "BR",
+      "beat": "L-02a",
+      "layout": "full",
+      "start": 158.583,
+      "end": 162.292
+    },
+    {
+      "kind": "BR",
+      "beat": "L-02b",
+      "layout": "full",
+      "start": 162.292,
+      "end": 166.333
+    },
+    {
+      "kind": "BR",
+      "beat": "L-03a",
+      "layout": "full",
+      "start": 166.333,
+      "end": 170.75
+    },
+    {
+      "kind": "BR",
+      "beat": "C-01a",
+      "layout": "full",
+      "start": 170.75,
+      "end": 174.917
+    },
+    {
+      "kind": "BR",
+      "beat": "C-02a",
+      "layout": "full",
+      "start": 174.917,
+      "end": 178.208
+    },
+    {
+      "kind": "TH",
+      "start": 178.208,
+      "end": 180.917,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "C-03a",
+      "layout": "full",
+      "start": 180.917,
+      "end": 183.917
+    },
+    {
+      "kind": "TH",
+      "start": 183.917,
+      "end": 186.125,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "C-04a",
+      "layout": "full",
+      "start": 186.125,
+      "end": 188.917
+    },
+    {
+      "kind": "BR",
+      "beat": "C-05a",
+      "layout": "full",
+      "start": 188.917,
+      "end": 191.917
+    },
+    {
+      "kind": "TH",
+      "start": 191.917,
+      "end": 194.083,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "C-06a",
+      "layout": "full",
+      "start": 194.083,
+      "end": 196.333
+    },
+    {
+      "kind": "BR",
+      "beat": "C-07a",
+      "layout": "full",
+      "start": 196.333,
+      "end": 199.333
+    },
+    {
+      "kind": "TH",
+      "start": 199.333,
+      "end": 204.292,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "C-09a",
+      "layout": "full",
+      "start": 204.292,
+      "end": 207.292
+    },
+    {
+      "kind": "TH",
+      "start": 207.292,
+      "end": 210.0,
+      "zoom": 1.0
+    }
+  ],
+  "fixes": [
+    {
+      "beat": "P-01a",
+      "fix": "HOLD: held to 2.00s on screen"
+    },
+    {
+      "beat": "P-01b",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "P-02a",
+      "fix": "HOLD: held to 2.00s on screen"
+    },
+    {
+      "beat": "P-03a",
+      "fix": "HOLD: held to 3.62s on screen"
+    },
+    {
+      "beat": "P-03b",
+      "fix": "HOLD: held to 3.17s on screen"
+    },
+    {
+      "beat": "P-04a",
+      "fix": "HOLD: held to 2.00s on screen"
+    },
+    {
+      "beat": "P-05a",
+      "fix": "HOLD: held to 2.54s on screen"
+    },
+    {
+      "beat": "T-01a",
+      "fix": "HOLD: held to 2.00s on screen"
+    },
+    {
+      "beat": "T-01b",
+      "fix": "HOLD: held to 3.25s on screen"
+    },
+    {
+      "beat": "T-02a",
+      "fix": "HOLD: held to 2.08s on screen"
+    },
+    {
+      "beat": "T-02b",
+      "fix": "HOLD: held to 3.46s on screen"
+    },
+    {
+      "beat": "T-03a",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "R-01a",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "R-02b",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "R-03a",
+      "fix": "HOLD: held to 2.00s on screen"
+    },
+    {
+      "beat": "R-05a",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "R-06a",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "R-07a",
+      "fix": "HOLD: held to 4.12s on screen"
+    },
+    {
+      "beat": "M-01a",
+      "fix": "HOLD: held to 2.00s on screen"
+    },
+    {
+      "beat": "M-04a",
+      "fix": "HOLD: held to 2.00s on screen"
+    },
+    {
+      "beat": "M-05a",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "M-05b",
+      "fix": "HOLD: held to 2.21s on screen"
+    },
+    {
+      "beat": "M-06a",
+      "fix": "HOLD: held to 2.04s on screen"
+    },
+    {
+      "beat": "PR-01b",
+      "fix": "HOLD: held to 2.00s on screen"
+    },
+    {
+      "beat": "PR-03a",
+      "fix": "HOLD: held to 2.67s on screen"
+    },
+    {
+      "beat": "PR-04a",
+      "fix": "HOLD: held to 2.17s on screen"
+    },
+    {
+      "beat": "PR-05a",
+      "fix": "HOLD: held to 2.75s on screen"
+    },
+    {
+      "beat": "PR-05b",
+      "fix": "HOLD: held to 2.17s on screen"
+    },
+    {
+      "beat": "L-01b",
+      "fix": "HOLD: held to 3.33s on screen"
+    },
+    {
+      "beat": "L-02a",
+      "fix": "HOLD: held to 3.71s on screen"
+    },
+    {
+      "beat": "L-02b",
+      "fix": "HOLD: held to 4.04s on screen"
+    },
+    {
+      "beat": "C-03a",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "C-04a",
+      "fix": "HOLD: held to 2.79s on screen"
+    },
+    {
+      "beat": "C-05a",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "C-07a",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "C-09a",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "C-01a",
+      "fix": "FLICKER 1.12s: extended with own footage to 174.92s"
+    }
+  ],
+  "warnings": [],
+  "failures": [],
+  "render": {
+    "file": "edit/ROUGH_BODY_v1.mp4",
+    "duration_s": 209.95,
+    "duration_matches_master": true,
+    "black_frames": []
+  },
+  "status": "PASS"
+}

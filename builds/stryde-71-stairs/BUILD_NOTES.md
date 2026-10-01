@@ -313,4 +313,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - PR-01b and PR-06a moved to this board too, because the first Current board can't take new files.
     - PR-01b video Fix: "use a different image cause he video gets distorted". The frame was the cause: a lunge with the back leg raised, the barrow seen nose-on with crossing, bent handles. New start image v4 (work/prompts/PR-01b.v4.t2i.txt, nano-banana-pro, ref = v3 for the same woman and garden): she walks upright behind the barrow in a clean side view, both feet down, straight handles, single wheel ahead. The light line had said "bedroom window" and now reads afternoon sun. Video generation 3 waits for the user to confirm image v4 (§22X go).
     - PR-06a video generation 2 from the confirmed image v2 (work/video_act6.py G2, preflight PASS).
+  - **2026-10-01: Fixes + the edit.**
+    - The user's Fixes pressed on the first Current board (PR-01b "new image", PR-06a "wrong image") are the same as the ones done on the Acts 6–7 board: PR-01b image v4 and PR-06a video v2 (from image v2) are To check there. The first board's cards point there.
+    - Body rough cut v1: `assemble.py` with every beat's latest clip (`work/plan_rough_v1.json`), PASS (209.95 s, matches the master, no black frames). One ffmpeg graph with 70 inputs ran out of memory, so `work/seg_assemble.py` renders the same cut list segment by segment and joins them losslessly.
+    - **FINAL-HK1 v1 / FINAL-HK2 v1** (`work/final_join.sh`): hook clip with the mother's VO 0–8.0 s laid over it (clip audio at 0.4 until 7.9 s, then her daughter's own line from the clip), then the body from 10.0 s ("Six weeks ago"). 210.9 s, 1080×1920, 24 fps. On the Final board as `review`, 11 parts each.
+    - These finals use clips still To check. A Fix on any of them is re-cut locally for free: run `seg_assemble.py`, then `final_join.sh`.
+    - Not done yet: the CapCut finish (captions, colour).
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
