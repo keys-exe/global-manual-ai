@@ -1,33 +1,4 @@
 {
- "act": "Hook 1",
- "beat": "HK-01b",
- "build": "stryde-71-stairs-pixar-song",
- "flow": [
-  "image"
- ],
- "hook": 1,
- "imageAsset": "f3e9e6d830dcfd3769aa24e51f123031",
- "imageConnector": "Higgsfield",
- "imageCredits": 2.14,
- "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  9,
-  10
- ],
- "imagePrompt": "For the line \"faster than women half my age.\": at tread level from the side on the wide concrete plaza steps, an older woman's low black pump strikes the next step mid-stride, her green hem swinging past two pairs of young women's white trainers stopped on the step below, one knee bent with a hand on it. Image 1 is the plaza steps.\nClose-up, profile, the lens at tread height, feet and four steps filling the frame, sharp on the black pump, the steel handrail's base soft behind: the pump and a deep brown ankle under the emerald hem at the left, the two pairs of trainers under bare shins and leggings at the right, the pale concrete treads of Image 1 between. All hands and faces out of frame but one hand on a knee; the feet at true scale to the steps.\nIn frame: two black pumps, four white trainers, six legs below the knee, one hand on a knee, four steps of the one flight, the rail's foot; every other surface bare. Each foot whole, one foot per step.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, the light of Image 1. Shoes and clothing plain — no lettering, logos or labels.",
- "imageRefs": [
-  {
-   "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 1"
-  }
- ],
- "imageRes": "1536×2752",
- "imageStatus": "regenerate",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_153949_5979df8a-9700-4b6e-b429-2a8c3bf5a853.png",
  "imageVersions": [
   {
    "archived": true,
@@ -176,8 +147,19 @@
    "archiveAsset": "b355f8c7215782c7d0b2d4a6d419f26e"
   }
  ],
- "line": "faster than women half my age.",
- "stage": "hooks",
+ "imagePair": [
+  9,
+  10
+ ],
+ "imageAsset": "f3e9e6d830dcfd3769aa24e51f123031",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_153949_5979df8a-9700-4b6e-b429-2a8c3bf5a853.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imagePrompt": "For the line \"faster than women half my age.\": at tread level from the side on the wide concrete plaza steps, an older woman's low black pump strikes the next step mid-stride, her green hem swinging past two pairs of young women's white trainers stopped on the step below, one knee bent with a hand on it. Image 1 is the plaza steps.\nClose-up, profile, the lens at tread height, feet and four steps filling the frame, sharp on the black pump, the steel handrail's base soft behind: the pump and a deep brown ankle under the emerald hem at the left, the two pairs of trainers under bare shins and leggings at the right, the pale concrete treads of Image 1 between. All hands and faces out of frame but one hand on a knee; the feet at true scale to the steps.\nIn frame: two black pumps, four white trainers, six legs below the knee, one hand on a knee, four steps of the one flight, the rail's foot; every other surface bare. Each foot whole, one foot per step.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, the light of Image 1. Shoes and clothing plain — no lettering, logos or labels.",
+ "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
+ "imageStatus": "regenerate",
  "status": "regenerate",
  "title": "hook — the result — v1–v8 pairs (replaced; latest: the church / second-floor pair)",
  "updatedAt": 1790870546611

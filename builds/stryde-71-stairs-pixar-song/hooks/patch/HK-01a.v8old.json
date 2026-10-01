@@ -1,16 +1,4 @@
 {
- "build": "stryde-71-stairs-pixar-song",
- "act": "Hook 1",
- "hook": 1,
- "stage": "hooks",
- "beat": "HK-01a",
- "title": "hook — the result (HT05: out in the world, the crowd as the stakes) — v1–v4 pairs (replaced; latest: the church / second-floor pair)",
- "line": "I'm seventy-one, and I take the stairs",
- "flow": [
-  "image"
- ],
- "status": "regenerate",
- "imageStatus": "regenerate",
  "imageVersions": [
   {
    "asset": "c6d5ce03121a7fe7d97d260059511143",
@@ -79,38 +67,20 @@
    "archiveAsset": "70f978a6c30c9f139ad364316ea0cff1"
   }
  ],
+ "imagePair": [
+  5,
+  6
+ ],
  "imageAsset": "6cce4acba4efdbf4fe676c24c8f267c2",
  "imageType": "image/png",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_153950_a8fa0f04-884a-4b9b-bf3d-c5b47c37a3bd.png",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
- "imageModel": "nano_banana_pro → logged nano_banana_2",
  "imagePrompt": "For the line \"I'm seventy-one, and I take the stairs\": Keep this photo exactly as it is — the flight, the steel handrails, the glass doors, the towers, the camera, the light — as a tall 9:16 crop on the middle lane of the flight, and add the people. Image 1 is the plaza steps. Image 2 is the older woman.\nThe same woman as Image 2, seventy-one, alone in the middle lane on the 15th of 30 steps, mid-step, weight on her right foot, left foot lifting to the 16th, both hands free at her sides, chin up, eyes on the doors; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. Below her younger people in plain weekend clothes over the lower steps: two women in their thirties stopped side by side on the 9th step, hands on their knees; a young man leaning on the left handrail, the rest climbing slowly, all lower than her. All at true scale to the steps.\nIn the frame: the older woman, twelve younger people, the one flight of Image 1, the handrails, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1, a catchlight in each eye. Clothing, bags and walls plain — no lettering, logos or labels; nobody above her.",
- "imageRefs": [
-  {
-   "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 1 · edited (HT17, §6A rule 3)"
-  },
-  {
-   "kind": "character",
-   "label": "N-NARR sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__N-NARR",
-   "role": "Image 2"
-  },
-  {
-   "kind": "character",
-   "label": "C2-DAUGHTER sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 3"
-  }
- ],
- "updatedAt": 1790870546611,
- "imagePair": [
-  5,
-  6
- ],
- "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old"
+ "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
+ "imageStatus": "regenerate",
+ "status": "regenerate",
+ "title": "hook — the result (HT05: out in the world, the crowd as the stakes) — v1–v4 pairs (replaced; latest: the church / second-floor pair)",
+ "updatedAt": 1790870546611
 }
