@@ -1,0 +1,12 @@
+{"taskId": "be7e8e2e8df32b2e674eac4ef2890170", "created": true}
+{
+  "taskId": "be7e8e2e8df32b2e674eac4ef2890170",
+  "state": "success",
+  "credits": 54.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/be7e8e2e8df32b2e674eac4ef2890170_1_1790876224_2683.mp4"
+  ],
+  "saved": "HK2-03_kling_g6.mp4",
+  "model": "kling-3.0-omni/image-to-video"
+}

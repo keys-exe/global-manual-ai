@@ -187,11 +187,21 @@ def main():
         auds = [as_url(r) for r in a.ref_audio]
         if len(imgs) > 10 or len(auds) > 5:
             sys.exit(json.dumps({"error": "Wan 3.0 Prime takes at most 10 image and 5 audio references"}))
-        inp = {"prompt": prompt, "reference_image_urls": imgs, "resolution": "720p", "aspect_ratio": "9:16",
-               "duration": a.duration, "generate_audio": not a.no_audio}
+        # Kie's field names for this model (measured 2026-10-01): resolution "720P" (upper-case P); no generate_audio
+        # field — a silent clip is tried with "audio": false and, if Kie refuses that field too, generated with sound
+        # and its track dropped in the edit (§24M: the clip carries dialogue only).
+        inp = {"prompt": prompt, "reference_image_urls": imgs, "resolution": "720P", "aspect_ratio": "9:16", "duration": a.duration}
         if auds:
             inp["reference_audio_urls"] = auds
-        task = create("wan/3-0-video-prime", inp)
+        if a.no_audio:
+            d = call("POST", f"{API}/jobs/createTask", {"model": "wan/3-0-video-prime", "input": dict(inp, audio=False)})
+            if d.get("code") == 200:
+                task = d["data"]["taskId"]; print(json.dumps({"taskId": task, "created": True, "audio": False}), flush=True)
+            else:
+                print(json.dumps({"note": "audio:false refused", "response": d}), flush=True)
+                task = create("wan/3-0-video-prime", inp)
+        else:
+            task = create("wan/3-0-video-prime", inp)
         res, rc = wait(task, a.out); res["model"] = "wan/3-0-video-prime"
         print(json.dumps(res, indent=2)); sys.exit(rc)
     if a.cmd == "image":

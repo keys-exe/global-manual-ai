@@ -147,7 +147,7 @@ def run_image(c):
     kinds = [str(r.get("kind", "")).lower() for r in refs]
 
     check("≤ 1,200 characters (§6A)", len(p) <= IMG_MAX, f"{len(p)} chars")
-    # L09 (2026-10-01): a Mode 2/3/5 beat prompt carries the mode's render line, or the model returns a photograph of the plate edit
+    # L10 (2026-10-01): a Mode 2/3/5 beat prompt carries the mode's render line, or the model returns a photograph of the plate edit
     MODE_LINE = {2: r"3D animated|storybook|pixar", 3: r"claymation|stop-motion|clay", 5: r"3D animated|storybook|pixar"}
     if mode in MODE_LINE:
         check(f"the mode's render line is in the prompt (§12 lock, mode {mode})", bool(re.search(MODE_LINE[mode], p, re.I)), "e.g. 'A final frame from a 3D animated feature film, stylized storybook render'")
@@ -355,7 +355,7 @@ def run(c):
         check("Wan duration 2–30, stated (never auto)", isinstance(d, (int, float)) and 2 <= d <= 30, str(d))
         imgs = [f for f in c.get("files", []) if not MUSIC_FILE.search(str(f))]
         check("ingredients ≤ 4 images (Appendix D)", len(imgs) <= 4, f"{len(imgs)} images")
-        check("ingredient manifest present", "@image1" in p or "Image 1" in p or "REF-MANIFEST" in p)
+        check("ingredient manifest present", "@image1" in p or "Image1" in p or "Image 1" in p or "REF-MANIFEST" in p)
     elif conn == "kling":
         check("Kling duration 3–15", isinstance(d, (int, float)) and 3 <= d <= 15, str(d))
         check("prompt ≤ 2,500 chars", len(p) <= 2500, f"{len(p)} chars")
