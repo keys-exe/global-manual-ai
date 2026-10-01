@@ -1,0 +1,151 @@
+{
+ "audio": "../vo/trim_tight/VO_T1_V5.mp3",
+ "script": "../vo/V5.lines.txt",
+ "base": null,
+ "broll": [
+  {
+   "beat": "E-HKa",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/E-HKa.mp4",
+   "phrase": "Too bad you can't get down on the floor with the grandkids.",
+   "max": 6
+  },
+  {
+   "beat": "E-HKb",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/E-HKb.mp4",
+   "phrase": "Thanks to these life-changing knee straps, it doesn't have to stay that way.",
+   "max": 6
+  },
+  {
+   "beat": "SH-01",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/SH-01.mp4",
+   "phrase": "Built over three years with orthopaedic surgeons,",
+   "max": 6
+  },
+  {
+   "beat": "SH-02",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/SH-02.mp4",
+   "phrase": "to do what sleeves and braces never could.",
+   "max": 6
+  },
+  {
+   "beat": "SH-03",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/SH-03.mp4",
+   "phrase": "Perfect for bone on bone, arthritis, worn cartilage and meniscus pain.",
+   "max": 6
+  },
+  {
+   "beat": "E-01",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/E-01.mp4",
+   "phrase": "It's not getting down that stops you.",
+   "max": 6
+  },
+  {
+   "beat": "E-02",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/E-02.mp4",
+   "phrase": "It's getting back up.",
+   "max": 6
+  },
+  {
+   "beat": "MECH-01",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/MECH-01.mp4",
+   "phrase": "Seventeen times your bodyweight goes through one small spot below your kneecap.",
+   "max": 6
+  },
+  {
+   "beat": "MECH-02",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/MECH-02.mp4",
+   "phrase": "This strap redirects the load away from the worn spot.",
+   "max": 6
+  },
+  {
+   "beat": "E-03",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/E-03.mp4",
+   "phrase": "And the pain just lifts.",
+   "max": 6
+  },
+  {
+   "beat": "E-04",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/E-04.mp4",
+   "phrase": "So you get down among the toys.",
+   "max": 3
+  },
+  {
+   "beat": "E-05",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/E-05.mp4",
+   "phrase": "And you get back up on your own.",
+   "max": 3
+  },
+  {
+   "beat": "E-06",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/E-06.mp4",
+   "phrase": "No hand on the sofa.",
+   "max": 6
+  },
+  {
+   "beat": "E-07",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/E-07.mp4",
+   "phrase": "Nobody hauling you up.",
+   "max": 6
+  },
+  {
+   "beat": "NS-03a",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/NS-03a.mp4",
+   "phrase": "Adjustable, breathable,",
+   "max": 6
+  },
+  {
+   "beat": "NS-04b",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/NS-04b.mp4",
+   "phrase": "light enough you forget it's there.",
+   "max": 6
+  },
+  {
+   "beat": "SH-04a",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/SH-04a.mp4",
+   "phrase": "No slipping.",
+   "max": 6
+  },
+  {
+   "beat": "SH-04b",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/SH-04b.mp4",
+   "phrase": "No sores.",
+   "max": 6
+  },
+  {
+   "beat": "SH-04c",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/SH-04c.mp4",
+   "phrase": "No rolling down.",
+   "max": 6
+  },
+  {
+   "beat": "NS-05",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/NS-05.mp4",
+   "phrase": "Recommended by orthopaedic surgeons for lasting relief.",
+   "max": 6
+  },
+  {
+   "beat": "SH-05",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/SH-05.mp4",
+   "phrase": "Buy one, get one free today at getstryde.co.",
+   "max": 6
+  },
+  {
+   "beat": "SH-06",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/SH-06.mp4",
+   "phrase": "Sixty-day money-back guarantee.",
+   "max": 6
+  },
+  {
+   "beat": "E-08",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/E-08.mp4",
+   "phrase": "They won't be little for long.",
+   "max": 6
+  },
+  {
+   "beat": "E-09",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/final/clips/E-09.mp4",
+   "phrase": "Nothing to lose but the pain.",
+   "max": 6
+  }
+ ]
+}
