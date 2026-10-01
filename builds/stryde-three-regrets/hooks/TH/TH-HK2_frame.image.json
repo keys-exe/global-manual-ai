@@ -2,36 +2,31 @@
  "beat": "TH-HK2",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": keep this photo exactly as it is — the same camera, framing, light and colour, the same woman, her face, hair, rust-orange needlecord overshirt and cream T-shirt, her hands on the laptop, the laptop, the chair, brick wall, pinboard, shelves, window and desk. Image 1 is that photo.\nChange only the grey post trays: replace them with one closed stryde box in the same spot, the box in Image 2 copied exactly — same shape, same parts, same markings, nothing redesigned — with its lid on. A rigid two-piece box, a lid over a base, matte black all over, about 28 cm wide, 16 cm deep and 8 cm tall, about a quarter of the frame wide, lying flat. The only print is the lowercase grey stryde wordmark centred on the lid.\nIn frame: one woman, both hands on the keyboard; on the desk only the laptop and the closed box, every other surface bare. Her face square to the lens, both eyes on it, mouth closed.\nClothing, walls and papers plain — no lettering, logos or labels except the product's own wordmark; no extra fingers.",
+ "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": keep this photo exactly as it is — the same camera, framing, light and colour, the same woman, her face, hair, rust-orange needlecord overshirt and cream T-shirt, her hands on the laptop, the laptop, the closed black stryde box by the brick wall, the chair, pinboard, shelves, window and desk. Image 1 is that photo.\nChange only one thing: remove the black box on the near desk, in front of the laptop at the bottom of the frame. Where it stood, show the bare wooden desk — the same planks, grain and light as the rest of the desk, the desk's front edge running on unbroken.\nIn frame: one woman, both hands on the keyboard; on the desk only the laptop and the one closed box by the wall, every other surface bare. Her face square to the lens, both eyes on it, mouth closed.\nClothing, walls and papers plain — no lettering, logos or labels except the product's own wordmark on that box; no extra fingers.",
  "script_line": "Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.",
  "face": true,
  "room": true,
- "product": true,
+ "product": false,
  "body": true,
  "refs": [
   {
-   "label": "TH-HK2 frame v13",
+   "label": "TH-HK2 frame v14",
    "kind": "frame"
-  },
-  {
-   "label": "PR-061a (STRYDE box, confirmed)",
-   "kind": "product"
   }
  ],
  "match": "frame",
- "edit_of": "338ef3bd-e344-4fc2-a9ce-a814f6e5d003",
+ "edit_of": "d8287710-2cf7-4846-9541-390e023e40f9",
  "taste": [
   "HT12",
   "HT17",
   "HT18",
   "HT19",
-  "HT20",
-  "FP02"
+  "HT20"
  ],
  "anatomy": false,
  "pair": [
   "nano_banana_pro"
  ],
  "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call)",
- "fix_note": "change the grey post trays into a closed package of stryde: edit of v13"
+ "fix_note": "remove the second box on the near desk in front of the laptop: edit of v14"
 }
