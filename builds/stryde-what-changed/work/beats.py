@@ -1959,6 +1959,20 @@ B["B23b"] = (NBP, ["B23BV2H", "PWR"], (
     "AVOID: no strap on the left leg, no second strap, no wordmark on the back, no shell at the back of the leg, no strap over the "
     "back of the knee crease, no change to her, no face, no hand on the banister"))
 
+# B23a Fix "FIX PRODUCT" (v5 redrawn: band through the notch, flat peaks). Build it from B22a v4, the image the user just confirmed —
+# its straps are approved. Edit: close on the leg on the left of the frame, its strap kept exactly; the other leg steps down.
+REFS.update({"B22AV4H": ("B22a v4 — confirmed, the approved straps (Image 1)", "8e41f172-7950-490b-bd96-fc2e1ef62a7a")})
+B["B23a"] = (NBP, ["B22AV4H", "PW"], (
+    "Edit Image 1. The strap on the knee on the LEFT of the frame is the approved product: keep it EXACTLY as it is — the same "
+    "matte-black shell, the two pointed peaks and the crisp notch with the kneecap seated in it and no gap, the chrome slides, the grey "
+    "lowercase \"stryde\" — the same shape, the same place just below the kneecap, nothing redrawn. Keep her pale legs, the denim skirt "
+    "hem, the white plimsolls, the oatmeal-carpeted stairs and the warm light. Change ONLY the framing and the step: the camera comes in "
+    "closer on that strapped leg so it fills the middle of the frame from the skirt hem to the plimsoll, the strap large and front-on; "
+    "her OTHER leg is stepping down to the stair below, partly out of frame at the side, its knee bare — the second strap is no longer "
+    "seen. Image 2 is the real strap worn, for reference only. A real phone photo.\n\n"
+    "AVOID: no redrawn strap, no band showing through the notch, no flat peaks, no gap between the kneecap and the notch, "
+    + P.NEG_WORDMARK + ", no capital letters, no second strap in view, no hand, no face, no extra legs"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
