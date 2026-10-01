@@ -2178,6 +2178,21 @@ B["B08-BR"] = (NB2, ["B08BRV1L", "R1"], (
     "AVOID: no bob haircut, no blonde or yellow hair, no hair touching the collar, no broad shoulders, no tall build, no face, no change "
     "to the hall, no second person"))
 
+# ── 2026-10-01 B18b Fix "WRONG PRODUCT AND SHOULD BE GOING DOWN TO STAIR" (v5: changing the camera made the model redraw both straps
+# as plain bands). B22a v4 already shows her standing on her stairs facing down the flight, front-on, both approved straps large —
+# so keep its camera, framing and straps untouched and change ONLY her step: one foot coming down onto the stair below.
+B["B18b"] = (NBP, ["B22AV4L"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — the camera, the framing, the light, the carpeted stairs and white "
+    "spindles, the denim skirt, her pale legs and BOTH STRAPS. The two straps are the real product: keep them pixel for pixel — the "
+    "matte-black shells with two pointed peaks and the crisp notch under each kneecap, the chrome slides, the grey lowercase "
+    "\"stryde\" on each, the same size and the same place just below each kneecap. Do not redraw them. Change ONLY her step: she is "
+    "walking DOWN the stairs towards the camera — her right foot (on the left of the frame) is coming down onto the stair below, its "
+    "white plimsoll just landing on the edge of that stair, that knee bending a little; her left foot stays on the stair above, taking "
+    "her weight. Both knees stay front-on with their straps facing the camera. A real phone photo.\n\n"
+    "AVOID: no redrawn straps, no plain bands, no neoprene, no straps without peaks, no band showing through the notch, "
+    + P.NEG_WORDMARK + ", no capital letters, no small straps, no third strap, no change of camera angle, no hands in frame, no face, "
+    "no extra legs"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

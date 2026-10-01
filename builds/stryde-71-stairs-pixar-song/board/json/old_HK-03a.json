@@ -6,16 +6,16 @@
   "image"
  ],
  "hook": 1,
- "imageAsset": "14aa9c9327b0ebf9b79e42fcfab5d20e",
+ "imageAsset": "214ca599ebdb09fbf55c2fc249c66c2b",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "user 2026-10-01 Fix: \"they should be at the door already for this scene\" → the two at the top of the church steps in front of the white doors, the mother on the landing turned back to her daughter on the top step, mouth open mid-word — an image edit of the confirmed HK-02a v13 A (HT17, HT24); the v13 pair (mid-flight) to Old",
+ "imageFault": "user 2026-10-01 Fix on the v14 pair: \"i want a new angle they should be inside like at the door step\" → a new setup: from inside the open church doorway looking out, the mother on the threshold turned back to her daughter on the top step, hand on the rail end, mouth open mid-word, the steps and sidewalk beyond (HT24); the v14 pair to Old",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [
-  17,
-  18
+  19,
+  20
  ],
- "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — the church, its steps, the black handrail, the hedges, the camera, the light — and move the two women up to the doors. Image 1 is this frame of the church steps. Image 2 is the mother. Image 3 is her daughter.\nMedium shot from the sidewalk, the lens at hip height up the flight, sharp on both faces. The same woman as Image 2 on the top landing in front of the closed white doors, turned back to face down the steps, her body three-quarter to the lens, a hand on her hip, eyes on her daughter, a small smile; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 on the top step just below her, right hand on the top of the black handrail, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. \nIn the frame: the two women, the one flight of Image 1, the handrail, the hedges, the doors; every other surface bare. Two legs each.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
+ "imagePrompt": "For the line \"Mama, when did that happen?\": from inside the church's open front doorway looking out, the two women on the doorstep. Image 1 is the church, doors and steps. Image 2 is the mother. Image 3 is her daughter.\nMedium shot at eye level from inside the dim vestibule, the open white door leaves soft at the frame edges, sharp on both faces. The same woman as Image 2 on the threshold, turned back to her daughter, body three-quarter to the lens, a hand on her hip, a small smile; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 on the top step outside, right hand on the top of the black handrail, face up to her mother, eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. Behind her the steps of Image 1 fall to the sunlit sidewalk.\nIn the frame: the two women, the open doors, the top of the flight, the handrail, the sidewalk; every other surface bare. Two legs each.\nA final frame from a 3D animated feature film, stylized storybook render, the afternoon sun outside as the key, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
  "imageRefs": [
   {
    "kind": "location",
@@ -39,7 +39,7 @@
  "imageRes": "1536×2752",
  "imageStatus": "regenerate",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_164610_3556349f-c5f6-4bb2-b63e-e3a6b5f6fcee.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170333_fe8a2b8e-6c4d-4e7c-87a2-c63d4b3e8b70.png",
  "imageVersions": [
   {
    "archived": true,
@@ -336,11 +336,45 @@
    "v": 18,
    "archived": true,
    "archiveAsset": "6ea66929298f9b587e9ab8240e56926b"
+  },
+  {
+   "asset": "214ca599ebdb09fbf55c2fc249c66c2b",
+   "at": 1790874308284,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "fe8a2b8e-6c4d-4e7c-87a2-c63d4b3e8b70",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"they should be at the door already for this scene\" → the two at the top of the church steps in front of the white doors, the mother on the landing turned back to her daughter on the top step, mouth open mid-word — an image edit of the confirmed HK-02a v13 A (HT17, HT24); the v13 pair (mid-flight) to Old · MEDIUM from the sidewalk (edit of the confirmed HK-02a frame), the two at the church doors at the top of the steps, turned to each other · replaced by the v15 pair (user: fix those — the v14 pair stayed mid-flight)",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 8034575,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170333_fe8a2b8e-6c4d-4e7c-87a2-c63d4b3e8b70.png",
+   "v": 19,
+   "archived": true,
+   "archiveAsset": "214ca599ebdb09fbf55c2fc249c66c2b"
+  },
+  {
+   "asset": "e4eefc20dfd2cd8091e996a0a3d33482",
+   "at": 1790874308284,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "1e5056c4-0d6e-4744-8ece-e7ce703112dd",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"they should be at the door already for this scene\" → the two at the top of the church steps in front of the white doors, the mother on the landing turned back to her daughter on the top step, mouth open mid-word — an image edit of the confirmed HK-02a v13 A (HT17, HT24); the v13 pair (mid-flight) to Old · MEDIUM from the sidewalk (edit of the confirmed HK-02a frame), the two at the church doors at the top of the steps, turned to each other · replaced by the v15 pair (user: fix those — the v14 pair stayed mid-flight)",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 5735523,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170330_1e5056c4-0d6e-4744-8ece-e7ce703112dd.png",
+   "v": 20,
+   "archived": true,
+   "archiveAsset": "e4eefc20dfd2cd8091e996a0a3d33482"
   }
  ],
  "line": "\"Mama, when did that happen?\"",
  "stage": "hooks",
  "status": "regenerate",
- "title": "hook — the line (at the church doors at the top of the steps, the two turned to each other, edit of the confirmed HK-02a frame) — v1–v16 pairs (replaced; latest: the v13 pair, the two mid-flight)",
- "updatedAt": 1790874308284
+ "title": "hook — the line (a new angle on the user's call: from inside the open church doorway, the two on the doorstep) — v1–v18 pairs (replaced; latest: the v14 pair, still mid-flight)",
+ "updatedAt": 1790874697137
 }

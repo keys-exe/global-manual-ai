@@ -3,32 +3,33 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"b18b\",\"subject\":\"Seen from the foot of the stairs: a white British woman of sixty-nine with soft white hair, in a sage-green cardigan, white T-shirt, denim skirt and white plimsolls, coming down her carpeted stairs facing the camera, a black STRYDE strap just below EACH kneecap, both arms down at her sides, hands empty, a bright easy smile. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: she steps down one stair towards the camera, light and easy, about a second and a half, her bright smile staying. Both arms stay down at her sides, hands open and empty, the whole clip — neither hand touches the handrail, the wall or her clothes. Both straps stay exactly where they are — rigid, keeping their shape, size and wordmarks. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair and fabric lag a little; the straps never move; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no hand on the banister, no hand on the handrail, no hand on the wall, no hand on her skirt, nothing in her hands, no second step, no wincing, no stumbling, no strap moving, no third strap, no feet warping, no shoe changing shape, no extra legs, no extra hands, no music, no speech, no slow motion\"}",
- "duration": 4,
+ "prompt": "{\"shot\":\"b18b\",\"subject\":\"Front-on at knee height, an older woman's pale legs coming down an oatmeal-carpeted staircase towards the camera, the hem of a mid-blue denim skirt at the top of the frame, white canvas plimsolls; a matte-black knee strap with two pointed peaks, chrome slides and a grey lowercase \\\"stryde\\\" sits just below EACH kneecap; white spindles on the right. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: her lower foot settles flat on the stair below and takes her weight, then her other foot comes down past it onto the next stair — one easy, even step down in about a second and a half, real time, without hesitating. Both straps stay exactly as they are — rigid, the same shape, size, place and wordmark from first frame to last. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; the skirt lags a little; the straps never move; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no strap moving, no strap changing shape, no wordmark changing, no third strap, no hand in frame, no hand on the banister, no face, no going up the stairs, no stopping, no stumbling, no camera movement, no extra legs, no extra feet, no music, no speech, no slow motion\"}",
+ "duration": 5,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "/home/user/global-manual-ai/builds/stryde-what-changed/broll/B18b_v4.png",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-what-changed/broll/B18b_v6.png",
  "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,
  "subject_motion": "travels",
  "prefer_multi_shots": "false",
- "generation": 2,
+ "generation": 3,
  "risks": [
   {
-   "risk": "a hand goes to the handrail",
-   "prevented_by": "'both arms stay down at her sides, hands open and empty, the whole clip', 'no hand on the banister, no hand on the handrail'"
+   "risk": "the straps warp or redraw as the legs move",
+   "prevented_by": "rigid-strap line, 'no strap changing shape, no wordmark changing'"
   },
   {
-   "risk": "a strap slides or a third appears",
-   "prevented_by": "rigid line, 'no strap moving, no third strap'"
+   "risk": "legs or feet duplicate on the stairs",
+   "prevented_by": "one step at a named pace, HOLD-C + NEG-WARP-C, 'no extra legs, no extra feet'"
   },
   {
-   "risk": "feet warp on the step",
-   "prevented_by": "one step only, 4 s"
+   "risk": "a hand reaches into frame for the banister",
+   "prevented_by": "'no hand in frame, no hand on the banister'"
   }
  ],
- "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)",
- "fix_note": "video v1 was from the old frame (hand on the rail); new frame v4 after Fixes 'positive, not holding the banister' / 'keep her hands down, don't hold anything' → hands down and empty the whole clip"
+ "approved_by": "user: board Confirm of B18b image v6 + 'CONFIRM GO' (2026-10-01)",
+ "user_go": "CONFIRM GO (2026-10-01)",
+ "fix_note": "gens 1–2 came from earlier frames (wide, coming down; then the wrong product) → new confirmed start frame v6 with the approved straps, one step down, rigid straps"
 }
