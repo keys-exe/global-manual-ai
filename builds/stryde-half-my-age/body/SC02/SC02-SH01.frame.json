@@ -2,37 +2,30 @@
  "beat": "SC02-SH01",
  "kind": "image",
  "mode": 4,
- "prompt": "For the line \"Just leave it by the stairs, love. I’ll get it later.\": at night she is stranded at the very top of her own stairs, calling down. Image 1 and Image 2 are this exact staircase, copied exactly: a straight flight of oatmeal-carpeted steps with brass rods along the magnolia LEFT wall and its framed photographs; on the OPEN RIGHT side the dark banister, square spindles and top newel post. A low shot from halfway up that flight looking up it: the top steps soft in the near foreground, the photo wall on the left, the banister on the right. At the very top, both feet on the landing's edge, stands the woman from Image 3 — face, steel-grey bob with its heavy fringe and small build copied exactly — in a heather-green jumper and charcoal skirt. Right hand on the top newel post, left hand flat on her chest; she is looking down the stairs, calling, a brave smile that never reaches her eyes. Behind her only the landing's magnolia wall; every step bare. Night: one warm 2800K ceiling pendant on the landing lights her; the steps below fall into dark. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
+ "prompt": "For the line \"Just leave it by the stairs, love. I’ll get it later.\": Keep this photo exactly as it is — Image 1, the staircase seen from the landing down to the green front door: the top newel post near on the left, the banister down the left, the photographs on the right-hand wall, the telephone table and barometer at the foot; the camera stays where it is, recomposed as a tall vertical frame. Change only two things. First, it is night: the hall pendant glows warm 2800K over the foot of the stairs, the front-door glass is dark, the landing around the camera is in shadow. Second, add the woman from Image 2 — face, steel-grey bob with its heavy fringe and small build copied exactly — in a heather-green jumper and charcoal skirt, standing at the very top step in the near foreground, seen over her right shoulder in three-quarter profile. Her right hand grips the top newel post; her left hand rests on her chest; she is looking down the stairs toward the hall, mouth open mid-word, tired. Two plain shopping bags stand at the foot of the stairs beside the telephone table; every step bare. Clothing and bags plain and unbranded.",
  "script_line": "Just leave it by the stairs, love. I’ll get it later.",
  "refs": [
-  {
-   "kind": "location",
-   "label": "Her house — hall and stairs from the front door",
-   "ref": "stryde-half-my-age__P-HOUSE",
-   "job": "cc27b514-c130-4cc5-abec-f01c18368e62",
-   "role": "Image 1"
-  },
   {
    "kind": "location",
    "label": "Her stairs from the landing (v4)",
    "ref": "stryde-half-my-age__L-STAIRS",
    "job": "73351f73-d511-45c9-839f-4aec7c451868",
-   "role": "Image 2"
+   "role": "Image 1"
   },
   {
    "kind": "character",
    "label": "Her — cast sheet (face, hair, build)",
    "ref": "stryde-half-my-age__N-HER",
    "job": "30fd2bc8-17e3-4e27-b2cf-8225e00b088c",
-   "role": "Image 3"
+   "role": "Image 2"
   }
  ],
  "face": true,
  "body": true,
  "room": true,
  "product": false,
- "match": null,
- "edit_of": null,
+ "match": "plate",
+ "edit_of": "L-STAIRS v4",
  "pair": [
   "gpt_image_2",
   "gpt_image_2"
@@ -40,7 +33,7 @@
  "model": "gpt-image-2 image-to-image · 9:16 (Kie AI)",
  "model_override": "user 2026-10-01: \"use gpt image 2 and not sunburst, re do all the scene 2\" — overrides the §18A Sunburst routing for this build's body frames",
  "role": "key",
- "motion_plan": "From this frame: she calls the line down the stairs, a small forced smile on 'love', then her eyes drop to the stairs below; her right hand stays on the newel post; she does not step down.",
+ "motion_plan": "From this frame: she calls the line down the stairs, her right hand tight on the newel post; on 'later' her eyes drop to the steps; she does not step down.",
  "scene": 2,
  "taste": [
   "HT02",
@@ -50,6 +43,6 @@
   "HT19",
   "HT22"
  ],
- "generation": 5,
- "fix_note": "the surroundings are wrong not the same as the location"
+ "generation": 6,
+ "fix_note": "wrongh location fix this"
 }
