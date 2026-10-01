@@ -3,30 +3,47 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"hk2_formal_letter_read\",\"subject\":\"THE SAME WOMAN, DESK AND LONG TYPED LETTER as in the start frame; unchanged in every respect. The page stays a full page of small typed lines that cannot be read, in every frame.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CU as in the start frame: over her right shoulder, the letter in her hands, the bare desk below. FOCUS: her hands and the sheet are sharp.\"},\"motion\":\"CONTINUING: she holds the long typed letter up in both hands, reading. COMPLETING: one slow read down the page, about two seconds — her head tilts a little lower as her eyes move down the letter, the sheet tipping slightly towards her. UNRESOLVED: she keeps reading near the bottom of the page, still. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, soft cool morning window light, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no readable words, no words forming or changing, no page turning, no second sheet, no folding, no stacks of letters, no pinboard, no face to the lens, no talking, no music\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_202914_ed0c8b59-b0f5-48c7-8de7-b22afb73f54c.png",
+ "start_image": "HK2-02_v15.png (the confirmed v15 render before its screen paste — screen blank; the letter is composited back)",
  "start_approved": true,
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 4,
- "user_go": "user 2026-09-29: \"MAKE CLIP FOR HK2-02\" (after image v9, told it would be the 4th generation)",
- "fix_note": "frame fault: gen 3 animated the three-stacks frame, then the user asked for a formal letter, no stacks, unreadable, long (image Fixes 7-9) → new start image v9, a long formal typed letter at the bare desk, confirmed by the user; motion is one slow read down the page",
+ "audio": false,
+ "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": from this frame, her right forefinger and middle finger slide slowly and steadily up the trackpad in one even stroke, from its lower half to its upper half, about three seconds, the wrist following; her left hand stays on the keyboard. The camera is locked off on a tripod over her right shoulder and stays perfectly still. The laptop screen stays plain bright white and evenly lit; the laptop, the closed black box beside it, the desk, the brick wall and her shoulder stay put; two hands, every finger whole. No camera move, no zoom, no screen flicker, no sound.",
+ "script_line": "Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.",
+ "motion_plan": "her right forefinger and middle finger slide slowly and steadily up the trackpad in one even stroke, from its lower half to its upper half, about three seconds, the wrist following; her left hand stays on the keyboard",
+ "motion_confirmed": true,
+ "user_go": "user 2026-10-01: make clip for HK2-02",
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT13"
+ ],
+ "generation": 7,
+ "fix_note": "new image v15 (over her right shoulder, the long letter) replaces the chart push-in clip; the user's BR-057 Fix (a still hand under a scrolling screen) → Kling animates the hand stroke only, locked camera, blank screen; the letter composited back scrolling with the hand (LESSONS L09)",
  "risks": [
   {
-   "risk": "the type turns readable or morphs",
-   "prevented_by": "subject: small typed lines that cannot be read in every frame; no readable words, no words forming or changing"
+   "risk": "the camera drifts so the screen corners move",
+   "prevented_by": "locked off on a tripod, stays perfectly still; no camera move, no zoom"
   },
   {
-   "risk": "the page turns, folds or doubles",
-   "prevented_by": "no page turning, no second sheet, no folding; HOLD-C"
+   "risk": "Kling draws content on the screen",
+   "prevented_by": "the laptop screen stays plain bright white"
   },
   {
-   "risk": "fingers fuse with the paper",
-   "prevented_by": "HOLD-HC"
+   "risk": "the stroke is fast or jerky",
+   "prevented_by": "slowly and steadily, one even stroke, about three seconds"
+  },
+  {
+   "risk": "fingers fuse into the trackpad",
+   "prevented_by": "two hands, every finger whole"
+  },
+  {
+   "risk": "the box slides or morphs",
+   "prevented_by": "the closed black box beside it stays put"
   }
  ]
 }
