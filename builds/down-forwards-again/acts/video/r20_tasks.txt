@@ -1,0 +1,1 @@
+BR-10c.v3 {"generationId": "AX9mPOp5pAUBnfke1q4i7NG3R07JyCnjxJP5roSPofx6A1RCxpTzISXZmB_qiXrFqcRSKUE_", "model": "kling-video-v3_0", "connector": "Kling (MCP)", "credits": 24}

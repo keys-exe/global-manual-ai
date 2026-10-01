@@ -28,4 +28,8 @@ c.update(prompt=PROMPT, start_image=d["imageUrl"], script_line=LINE, motion_plan
          fix_note="v2's 'the foot lands, the knee bends' on a planted frame invented a step-up (body, hands and a second leg came into frame, a squat) → the foot stays planted, a slight settle only, the pulses land on the tendon; §35A form",
          user_go="the user, 2026-10-01: 'FIX THOSE' — the card's Fix note on v2")
 c.pop("rack", None)
+if c["motion_confirmed"]:
+    c["motion_confirmed_by"] = "the user, 2026-10-01: 'ITS TAKING TOO LONG ON THE FIXING USE KLING CONNECTOR' — the reply to the proposed 'Video will show' line"
+c.update(route="kling", kling_model="kling-video-v3_0", route_note="user 2026-10-01: 'USE KLING CONNECTOR' (Kling credits back: 45,091) — off Kie")
+for k in ("kie_model",): c.pop(k, None)
 (here / "video/BR-10c.v3.call.json").write_text(json.dumps(c, ensure_ascii=False, indent=1)); print("BR-10c.v3", len(PROMPT), "chars;", "motion_confirmed", c["motion_confirmed"])

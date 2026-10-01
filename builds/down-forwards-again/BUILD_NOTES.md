@@ -326,4 +326,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   but "motion confirmed" — §22X wants the user's confirm of the "Video will show" line before a video credit; this board's template predates
   the motion-plan display, so the line is asked in chat (also stored as `motionPlan` on the card, status ready). On the confirm: rebuild with
   `--confirmed` and send.
+- **2026-10-01: user "ITS TAKING TOO LONG ON THE FIXING USE KLING CONNECTOR".** Merged the default branch again. Kling connector back (Ultra,
+  45,091 credits) — video Fixes go through it from here (`kling-video-v3_0`, first frame, silent, 1080p). BR-10c v3 (§35A prompt, the reply
+  taken as the motion confirm) was sent on Kling (24 credits) — but the user had meanwhile changed the card's note to "USE NEW IMAGE HERE ALSO
+  USE KILNG FIR VIDEO", so that clip (made on the old frame) goes to Old 2 as unused when it lands. New image BR-10c v5 (`acts/build_fix_r21.py`,
+  nano_banana_pro per the lock): the knee from the front, close, the tendon facing the lens, the foot planted → To check; its video (Kling)
+  follows the Confirm, with the motion plan already on the card. Current's 1 GB store full again: image v4 and video v2 of BR-10c moved to Old 2.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

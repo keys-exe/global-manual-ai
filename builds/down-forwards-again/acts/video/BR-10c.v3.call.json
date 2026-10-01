@@ -30,16 +30,15 @@
    "prevented_by": "flares at the landing; no gradual onset, no crossfade"
   }
  ],
- "kie_model": "kling-3.0-omni/image-to-video",
- "route": "kie",
- "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "route": "kling",
+ "route_note": "user 2026-10-01: 'USE KLING CONNECTOR' (Kling credits back: 45,091) — off Kie",
  "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
  "audio": false,
  "prompt": "For the line \"It was where the load was landing.\": The leg stays planted on the step as it is; the knee settles a few degrees as the weight arrives, over about a second, and three red pulses run down the thigh one after another and land on the patellar tendon below the kneecap, which flares bright red; it ends on the tendon glowing red and the kneecap plain ivory. The virtual camera drifts slowly sideways at a steady distance, a small move. One leg only, from mid-thigh to the foot, the foot flat on the step the whole time. The glow sits only on the cord below the kneecap; the kneecap and the joint stay calm. The bones and muscles keep their shape and place. No second leg, no hands or body entering the frame, no stepping, no red on the kneecap, no zoom.",
  "video_version": 3,
  "fix_note": "v2's 'the foot lands, the knee bends' on a planted frame invented a step-up (body, hands and a second leg came into frame, a squat) → the foot stays planted, a slight settle only, the pulses land on the tendon; §35A form",
  "motion_plan": "The leg stays planted on the step as it is; the knee settles a few degrees as the weight arrives, over about a second, and three red pulses run down the thigh one after another and land on the patellar tendon below the kneecap, which flares bright red; it ends on the tendon glowing red and the kneecap plain ivory.",
- "motion_confirmed": false,
+ "motion_confirmed": true,
  "taste": [
   "HT11",
   "HT12",
@@ -49,5 +48,7 @@
  "pilot": null,
  "pin_waived": null,
  "user_fault": "I NEED A NEW MOVEMENT BASE ON THE IMAGE",
- "user_go": "the user, 2026-10-01: 'FIX THOSE' — the card's Fix note on v2"
+ "user_go": "the user, 2026-10-01: 'FIX THOSE' — the card's Fix note on v2",
+ "motion_confirmed_by": "the user, 2026-10-01: 'ITS TAKING TOO LONG ON THE FIXING USE KLING CONNECTOR' — the reply to the proposed 'Video will show' line",
+ "kling_model": "kling-video-v3_0"
 }
