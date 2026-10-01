@@ -412,3 +412,15 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - B20 and B22c videos had flipped to `ready` by an image re-Confirm — set back to `review` (unchanged).
 - **B19b**: v7 image confirmed; its next video would be the 4th for this shot → waits for the user's go.
 - Act map rows B18b, B19-BR2, B21-BR, B22a, B23a updated; angles: JUMP B19b/B19-BR2 only (see above). docs/actmap Plan v37, Current v37, Current 2 v23. Higgsfield 10,457.65.
+
+### 2026-10-01 — "GO" (B19b video 4, B19-BR2 video 3) + four confirmed images → clips
+- User "GO" for the extra generations. Both clips start from frames where both hands already have a job (one flat on the wall, one on the bare thigh); the prompt keeps both hands still, no wince/lean, one step.
+  - **B19b v4**: no hand on the banister the whole clip — the hand fault is fixed. She comes down a few stairs, not one. Strap stays put.
+  - **B19-BR2 v3**: no hand on the banister; comes down towards the camera. Flaw: it looks almost the same as B19b v4 (same stairs, angle, outfit, move), so B19b → B19-BR2 still cuts as a jump.
+- Images confirmed (B18b v4, B21-BR v3, B22a v2, B23a v3) → clips (Kling 3.0 pro, 4 s, 7 cr):
+  - **B18b v2**: hands down and empty throughout; she walks right down to the camera and her knees leave the frame in the last half second.
+  - **B21-BR v1**: the red tendon glow pulses, the blue joint ring holds — clean.
+  - **B22a v2**: small weight shift, straps hold. Flaw: a hand edges into the top-right corner mid-clip.
+  - **B23a v1**: the foot lands on the stair edge. Flaws: a hand edges into the top right; the strap changes shape in the last second.
+- Replaced videos (B19b v3, B19-BR2 v2, B18b v1, B22a v1) → Old 2. Higgsfield 10,397.65.
+- Learned: giving both hands a job in the START FRAME (wall + thigh) and saying "neither hand moves" finally kept Kling off the banister.

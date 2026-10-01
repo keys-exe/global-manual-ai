@@ -3,33 +3,33 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"b19_br2\",\"subject\":\"A close-up of a white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt, on her stairs, one hand on the honey oak handrail, three-quarter on, a small private smile. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: she walks UP her stairs, taking one easy step up at an unhurried pace, about a second and a half — her body rises a little in the frame, her hand slides up the oak handrail with her, and her small smile stays as she climbs, easy and sure. Her head stays inside the frame. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair and fabric lag a little; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no going down the stairs, no stumbling, no wincing, no head leaving the frame, no looking into the lens, no talking, no camera movement, no camera following her, no face morphing, no extra fingers, no extra hands, no music, no speech, no slow motion\"}",
+ "prompt": "{\"shot\":\"b19_br2\",\"subject\":\"A white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt and a mid-blue denim skirt, partway down her carpeted stairs facing the camera; her hand on the right of the frame flat on the duck-egg blue wall, her other hand resting on her thigh; a black STRYDE strap seated just below the kneecap of the leg on the left of the frame, the other knee bare. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: she steps down one more stair, easy and sure, about a second and a half, and as her weight lands a quiet look of surprise softens into a small smile — she has noticed her knee. BOTH hands stay exactly where they are the whole clip; neither hand moves. Her head stays inside the frame. The strap stays exactly where it is — rigid, keeping its shape, size and wordmark. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair and fabric lag a little; the strap never moves; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no hand on the banister, no hand reaching across, no going up the stairs, no second step, no head leaving the frame, no looking into the lens, no broad grin, no strap moving, no extra hands, no music, no speech, no slow motion\"}",
  "duration": 4,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "/home/user/global-manual-ai/builds/stryde-what-changed/broll/B19-BR2_v4.png",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-what-changed/broll/B19-BR2_v6.png",
  "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,
  "subject_motion": "travels",
  "prefer_multi_shots": "false",
- "generation": 2,
+ "generation": 3,
  "risks": [
   {
-   "risk": "her head rises out of a close frame",
-   "prevented_by": "one step only, 'her head stays inside the frame'"
+   "risk": "a hand goes to the banister",
+   "prevented_by": "both hands given a job in the frame and told not to move"
   },
   {
-   "risk": "the camera follows her up",
-   "prevented_by": "locked-off tripod clause, 'no camera following her'"
+   "risk": "her head leaves the frame (v2)",
+   "prevented_by": "going down, not up; 'her head stays inside the frame'"
   },
   {
-   "risk": "she goes down instead of up",
-   "prevented_by": "'walks UP', 'no going down the stairs'"
+   "risk": "the smile overplays",
+   "prevented_by": "'a small smile', 'no broad grin'"
   }
  ],
  "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)",
- "fix_note": "video v1: she only smiled on the spot → user Fix 'walking up stair': same frame, the motion is now one easy step UP the stairs, hand sliding up the rail, head kept in frame",
- "user_go": "user: Fix note on video v1 (2026-10-01)"
+ "fix_note": "video v2: her head left the frame climbing (user: 'fix the stair location' / 'continuous of Go to your own stairs…') → new frame v6 coming down forwards, one step down, hands fixed, head in frame",
+ "user_go": "user: 'GO' (2026-10-01) after the third/fourth-generation question"
 }
