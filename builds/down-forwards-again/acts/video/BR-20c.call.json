@@ -1,0 +1,41 @@
+{
+ "beat": "BR-20c",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_114404_65dd2144-09a8-44e3-af39-a1009d558646.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Because the load is not landing on that band any more.",
+ "pace": "brisk",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "the strap is redrawn as the camera closes in (BR-14b v5's fault)",
+   "prevented_by": "RIG-RVD lateral drift, no push, no zoom; the strap is locked line"
+  },
+  {
+   "risk": "the red runs on into the tendon",
+   "prevented_by": "stops dead at the strap's top edge; no red below the strap"
+  },
+  {
+   "risk": "a second leg appears (the image's earlier fault)",
+   "prevented_by": "no second leg; HOLD-AC"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
+ "audio": false,
+ "prompt": "{\"shot\":\"br_20c\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Virtual camera already drifting on the first frame, never static at entry. A slow steady lateral travel across the subject, single direction, constant unhurried speed, mechanically smooth — no rotation around the subject, no orbit, no push, no sway, no handheld physics, no focus hunt, no reaction to anything in the scene. Total travel stays small, roughly a tenth of frame width across the clip. Still drifting on the final frame, the move never completing and never coming to rest.\",\"framing\":\"CLOSE, held at the start frame's size: the one anatomical leg with the strap, the step below. \"},\"motion\":\"The foot takes a step's weight on the step below, the knee bending a little, over about two seconds; a stream of red light runs down the thigh to the strap and stops dead at its top edge; below the strap the tendon stays cool, pale and unlit the whole time. The strap is locked: small black shell below the kneecap, thin band, same size and wordmark as the start frame throughout. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. The anatomy keeps its structure every frame: bones hold shape, length and spacing, joints never separate or pass through each other, muscle keeps constant volume, and the layer order holds — bone deepest, muscle over it, translucent contour outermost.\",\"lighting\":\"As in the start frame.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no locked-off camera, no camera coming to rest, no handheld shake, no reframe, no gimbal glide, no crossfade, no glow fading in place, no gradual onset, no static anatomy, no text overlays, no second limb, no clothing, no hands, no x-ray look, no push, no zoom, no red below the strap, no red on the tendon, no strap growing, no metal clips, no strap glowing, no strap moving, no second leg, no real skin\"}",
+ "video_version": 1
+}

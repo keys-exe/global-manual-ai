@@ -1,0 +1,42 @@
+{
+ "beat": "BR-16b",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_114404_c1fa7878-47f3-4ce1-9b09-feed2ed8c1fd.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Two hundred thousand people wearing one.",
+ "pace": "unhurried",
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "legs merge or multiply",
+   "prevented_by": "one step each; no legs merging, no extra legs; NEG-WARP-C"
+  },
+  {
+   "risk": "the straps turn into braces or spread to other knees",
+   "prevented_by": "the strap is locked line; no padding, no brace, no strap appearing on the bare knees"
+  },
+  {
+   "risk": "the camera walks back with them",
+   "prevented_by": "RIG-R1C: the phone stays on the path, sways but never travels"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
+ "audio": false,
+ "prompt": "{\"shot\":\"br_16b\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"FULL, as in the start frame: the four walkers on the park path, the trees and the pond behind. \"},\"motion\":\"The four walkers take one easy step further along the path towards us at a normal pace, over about a second and a half, with small smiles; still walking on the last frame, a couple of metres from the lens. The strap on each of the two near knees is locked: small black shell below the kneecap, thin band, same size and wordmark as the start frame throughout. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject, no music, no voice, no text appearing, no bending, no curling, no folding, no melting, no flipping of the product, no second strap, no strap sliding down the leg, no strap rotating round the leg, no strap on the kneecap, no legs merging, no extra legs, no walkers appearing or vanishing, no walker reaching the lens, no strap on the bare knees, no padding, no brace\"}",
+ "video_version": 2,
+ "fix_note": "v1 ran on the old towpath frame → the new confirmed park frame (four walkers, the strap on the two near knees)"
+}
