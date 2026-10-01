@@ -1,45 +1,4 @@
 {
- "act": "Hook 1",
- "beat": "HK-03a",
- "build": "stryde-71-stairs-pixar-song",
- "flow": [
-  "image"
- ],
- "hook": 1,
- "imageAsset": "214ca599ebdb09fbf55c2fc249c66c2b",
- "imageConnector": "Higgsfield",
- "imageCredits": 2.14,
- "imageFault": "user 2026-10-01 Fix on the v14 pair: \"i want a new angle they should be inside like at the door step\" → a new setup: from inside the open church doorway looking out, the mother on the threshold turned back to her daughter on the top step, hand on the rail end, mouth open mid-word, the steps and sidewalk beyond (HT24); the v14 pair to Old",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  19,
-  20
- ],
- "imagePrompt": "For the line \"Mama, when did that happen?\": from inside the church's open front doorway looking out, the two women on the doorstep. Image 1 is the church, doors and steps. Image 2 is the mother. Image 3 is her daughter.\nMedium shot at eye level from inside the dim vestibule, the open white door leaves soft at the frame edges, sharp on both faces. The same woman as Image 2 on the threshold, turned back to her daughter, body three-quarter to the lens, a hand on her hip, a small smile; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 on the top step outside, right hand on the top of the black handrail, face up to her mother, eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. Behind her the steps of Image 1 fall to the sunlit sidewalk.\nIn the frame: the two women, the open doors, the top of the flight, the handrail, the sidewalk; every other surface bare. Two legs each.\nA final frame from a 3D animated feature film, stylized storybook render, the afternoon sun outside as the key, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
- "imageRefs": [
-  {
-   "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 1 · edited (HT17, §6A rule 3)"
-  },
-  {
-   "kind": "character",
-   "label": "N-NARR sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__N-NARR",
-   "role": "Image 2"
-  },
-  {
-   "kind": "character",
-   "label": "C2-DAUGHTER sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 3"
-  }
- ],
- "imageRes": "1536×2752",
- "imageStatus": "regenerate",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170333_fe8a2b8e-6c4d-4e7c-87a2-c63d4b3e8b70.png",
  "imageVersions": [
   {
    "archived": true,
@@ -372,8 +331,19 @@
    "archiveAsset": "e4eefc20dfd2cd8091e996a0a3d33482"
   }
  ],
- "line": "\"Mama, when did that happen?\"",
- "stage": "hooks",
+ "imagePair": [
+  19,
+  20
+ ],
+ "imageAsset": "214ca599ebdb09fbf55c2fc249c66c2b",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170333_fe8a2b8e-6c4d-4e7c-87a2-c63d4b3e8b70.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imagePrompt": "For the line \"Mama, when did that happen?\": from inside the church's open front doorway looking out, the two women on the doorstep. Image 1 is the church, doors and steps. Image 2 is the mother. Image 3 is her daughter.\nMedium shot at eye level from inside the dim vestibule, the open white door leaves soft at the frame edges, sharp on both faces. The same woman as Image 2 on the threshold, turned back to her daughter, body three-quarter to the lens, a hand on her hip, a small smile; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 on the top step outside, right hand on the top of the black handrail, face up to her mother, eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. Behind her the steps of Image 1 fall to the sunlit sidewalk.\nIn the frame: the two women, the open doors, the top of the flight, the handrail, the sidewalk; every other surface bare. Two legs each.\nA final frame from a 3D animated feature film, stylized storybook render, the afternoon sun outside as the key, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
+ "imageFault": "user 2026-10-01 Fix on the v14 pair: \"i want a new angle they should be inside like at the door step\" → a new setup: from inside the open church doorway looking out, the mother on the threshold turned back to her daughter on the top step, hand on the rail end, mouth open mid-word, the steps and sidewalk beyond (HT24); the v14 pair to Old",
+ "imageStatus": "regenerate",
  "status": "regenerate",
  "title": "hook — the line (a new angle on the user's call: from inside the open church doorway, the two on the doorstep) — v1–v18 pairs (replaced; latest: the v14 pair, still mid-flight)",
  "updatedAt": 1790874697137

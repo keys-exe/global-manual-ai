@@ -71,7 +71,7 @@ Clothing, shoes, walls and frames plain — no lettering, logos or labels; no se
 for b, (ln, pr, face) in END.items():
     add(b, ln, pr, [{"label": "the start frame (A of A, B of B)", "kind": "frame"}], face=face, match="frame", edit_of="<start frame>")
 
-if __name__ == "__main__" and not any(a in sys.argv for a in ("--v2","--v3","--v4","--v5","--v6","--v7","--v8","--v9","--v10","--v11","--v12","--v13","--v14")):
+if __name__ == "__main__" and not any(a in sys.argv for a in ("--v2","--v3","--v4","--v5","--v6","--v7","--v8","--v9","--v10","--v11","--v12","--v13","--v14","--v15")):
     fails = 0
     for b, c in CALLS.items():
         (H / f"{b}.prompt.txt").write_text(c["prompt"])
@@ -101,7 +101,7 @@ The landing is a storey above the hall, at the head of the 14-step flight. The s
 In the frame: the two women, the top of the one staircase of Image 1, the landing wall; every other surface bare. Two legs each.
 The render and light of Image 1, the women on model.
 Clothing, shoes and walls plain — no lettering, logos or labels; no third person.'''
-if __name__ == "__main__" and "--v2" in sys.argv and not any(a in sys.argv for a in ("--v5","--v6","--v7","--v8","--v9","--v10","--v11","--v12","--v13","--v14")):
+if __name__ == "__main__" and "--v2" in sys.argv and not any(a in sys.argv for a in ("--v5","--v6","--v7","--v8","--v9","--v10","--v11","--v12","--v13","--v14","--v15")):
     fails = 0
     for b, pr in V2.items():
         c = dict(CALLS[b]); c["prompt"] = pr; c["fix_note"] = "see V2 comment"
@@ -129,7 +129,7 @@ V3["HK-03a"] = f'''For the line "{L4}": Keep this picture exactly as it is — t
 Tall crop on the top of the flight and the landing of Image 1: the mother standing on the landing floor above the top step, body facing along the landing, head turned back over her left shoulder, a small knowing smile, mouth closed, eyes on her daughter, hands free at her sides; the daughter one step below on the 14th and top step, right hand on the handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word. The two fill over half the frame. {SCENE}
 In the frame: two women, the top of the one staircase, the landing's balusters and rail, the photo wall; every other surface bare. Two legs each.
 The render and light of Image 1. Clothing, shoes and walls plain — no lettering, logos or labels; no third person.'''
-if __name__ == "__main__" and "--v3" in sys.argv and not any(a in sys.argv for a in ("--v5","--v6","--v7","--v8","--v9","--v10","--v11","--v12","--v13","--v14")):
+if __name__ == "__main__" and "--v3" in sys.argv and not any(a in sys.argv for a in ("--v5","--v6","--v7","--v8","--v9","--v10","--v11","--v12","--v13","--v14","--v15")):
     fails = 0
     for b, pr in V3.items():
         c = dict(CALLS[b]); c["prompt"] = pr; c["refs"] = [{"label": "HK-01a v1 A (confirmed frame)", "kind": "frame"}]; c["match"] = "frame"; c["edit_of"] = HK01A_A
@@ -162,7 +162,7 @@ V4["HK-03a"] = (f'''For the line "{L4}": over the daughter's shoulder on the top
 Medium close-up over the daughter's right shoulder from the top step, her olive shoulder and afro puff soft in the near right foreground, the lens at her eye height, sharp on her mother's eyes. The same woman as Image 2 on the landing two paces beyond, body turned along it, head turned back over her left shoulder, a small knowing smile, mouth closed, eyes on her daughter, both hands free at her sides; {N_WARD}. Behind her the landing's balusters, oak rail and the window flaring bright, rimming her silver hair. The same woman as Image 3 in the foreground, only her shoulder and hair.
 In the frame: the two women, the landing floor, the balusters and rail, the window; every other surface bare.
 The render of Image 1, the window the key light, a catchlight in each eye. Clothing and walls plain — no lettering, logos or labels; no third person.''', [FR1, REF_N, REF_C2], True)
-if __name__ == "__main__" and "--v4" in sys.argv and not any(a in sys.argv for a in ("--v5","--v6","--v7","--v8","--v9","--v10","--v11","--v12","--v13","--v14")):
+if __name__ == "__main__" and "--v4" in sys.argv and not any(a in sys.argv for a in ("--v5","--v6","--v7","--v8","--v9","--v10","--v11","--v12","--v13","--v14","--v15")):
     fails = 0
     for b, (pr, refs, face) in V4.items():
         c = dict(CALLS[b]); c.update({"prompt": pr, "refs": refs, "face": face, "match": None, "edit_of": None, "taste": TASTE + ["HT05", "HT23"],
@@ -180,7 +180,7 @@ V5["HK-03a"] = f'''For the line "{L4}": Keep this picture exactly as it is — t
 Medium close-up over the daughter's right shoulder: she stands on the 14th and top step with her back three-quarter to us, her olive shoulder and afro puff soft in the near right foreground, right hand on the handrail; her mother on the landing two paces beyond, body turned along it, head turned back over her left shoulder, a small knowing smile, mouth closed, eyes on her daughter, both hands free at her sides; the mother sharp, the landing wall and balusters of Image 1 behind her exactly as they are.
 In the frame: the two women, the top steps, the landing's balusters and rail, the landing wall of Image 1; every other surface bare. Two legs each.
 The render and light of Image 1, a catchlight in each eye. Clothing and walls plain — no lettering, logos or labels; no third person; no window.'''
-if __name__ == "__main__" and "--v5" in sys.argv and not any(a in sys.argv for a in ("--v6","--v7","--v8","--v9","--v10","--v11","--v12","--v13","--v14")):
+if __name__ == "__main__" and "--v5" in sys.argv and not any(a in sys.argv for a in ("--v6","--v7","--v8","--v9","--v10","--v11","--v12","--v13","--v14","--v15")):
     b = "HK-03a"; pr = V5[b]
     c = dict(CALLS[b]); c.update({"prompt": pr, "refs": [{"label": "HK-03a v6 B (confirmed frame)", "kind": "frame"}], "face": True, "match": "frame",
                                   "edit_of": "4122ca3c0e3d17a8c4ef2d90f9d03d49 (Old copy of v6; Higgsfield job 4e7f3ff7…)", "taste": TASTE + ["HT05", "HT23"], "fix_note": "wrong location"})
@@ -202,7 +202,7 @@ V6["HK-01b"] = (f'''For the line "{L2}": at tread level from the side on the chu
 Close-up, profile, the lens at the height of the 5th step, feet and four steps filling the frame, sharp on the black pump, the lower steps soft: the pump and a deep brown ankle under the emerald hem at the left, the sandals and bare shins under lilac and cream hems at the right, the pale concrete treads of Image 1 and the foot of the black iron handrail between. All hands and faces out of frame; the feet at true scale to the steps.
 In frame: two black pumps, four sandals, six legs below the knee, four steps of the one flight, the rail's foot; every other surface bare. Each foot whole, one foot per step.
 A final frame from a 3D animated feature film, stylized storybook render, afternoon sun from the open sky, the light of Image 1. Shoes and hems plain — no lettering, logos or labels.''', [REF_P5], False, None, None)
-if __name__ == "__main__" and "--v6" in sys.argv and not any(a in sys.argv for a in ("--v7","--v8","--v9","--v10","--v11","--v12","--v13","--v14")):
+if __name__ == "__main__" and "--v6" in sys.argv and not any(a in sys.argv for a in ("--v7","--v8","--v9","--v10","--v11","--v12","--v13","--v14","--v15")):
     fails = 0
     for b, (pr, refs, face, match, eo) in V6.items():
         c = dict(CALLS[b]); c.update({"prompt": pr, "refs": refs, "face": face, "match": match, "edit_of": eo, "taste": TASTE + ["HT05", "HT23"], "fix_note": "user: HK-01a/b outside — women half her age"})
@@ -220,7 +220,7 @@ V7["HK-03a"] = f'''For the line "{L4}": Keep this picture exactly as it is — t
 Medium close-up from the landing over the mother's near shoulder: the same woman as Image 2 stands on the landing floor at the very top, back to the lens, her emerald-green right shoulder and silver twist-out soft in the near right foreground. Below her the same woman as Image 3 on the 14th and top step, one step down, right hand on the handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word; {C2_WARD}. The flight of Image 1 drops away behind her to the hall floor.
 In the frame: the two women, the one staircase of Image 1, the photo wall, the hall floor far below; every other surface bare. Two hands on the daughter, two legs.
 The render and light of Image 1, a catchlight in each eye. Clothing and walls plain — no lettering, logos or labels; no third person.'''
-if __name__ == "__main__" and "--v7" in sys.argv and not any(a in sys.argv for a in ("--v8","--v9","--v10","--v11","--v12","--v13","--v14")):
+if __name__ == "__main__" and "--v7" in sys.argv and not any(a in sys.argv for a in ("--v8","--v9","--v10","--v11","--v12","--v13","--v14","--v15")):
     b = "HK-03a"; pr = V7[b]
     c = dict(CALLS[b]); c.update({"prompt": pr, "refs": [{"label": "HK-02a v7 A (confirmed frame from the landing)", "kind": "frame"}, REF_N, REF_C2], "face": True, "match": "frame",
                                   "edit_of": HK02A_V7, "taste": TASTE + ["HT05", "HT23"], "fix_note": "this should be at the second floor"})
@@ -363,12 +363,29 @@ V14["HK-03a"] = (f'''For the line "{L4}": Keep this photo exactly as it is — t
 Medium shot from the sidewalk, the lens at hip height up the flight, sharp on both faces. The same woman as Image 2 on the top landing in front of the closed white doors, turned back to face down the steps, her body three-quarter to the lens, a hand on her hip, eyes on her daughter, a small smile; {N_WARD}, a wide-brim black Sunday hat. The same woman as Image 3 on the top step just below her, right hand on the top of the black handrail, face up to her mother, both eyes on her, mouth open mid-word; {C2_WARD}. 
 In the frame: the two women, the one flight of Image 1, the handrail, the hedges, the doors; every other surface bare. Two legs each.
 The render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.''', [FR13, REF_N, REF_C2], True, "frame", "HK-02a v13 A (job 805d393b)")
-if __name__ == "__main__" and "--v14" in sys.argv:
+if __name__ == "__main__" and "--v14" in sys.argv and "--v15" not in sys.argv:
     fails = 0
     for b, (pr, refs, face, match, eo) in V14.items():
         c = dict(CALLS[b]); c.update({"prompt": pr, "refs": refs, "face": face, "match": match, "edit_of": eo, "taste": TASTE + ["HT05", "HT23", "HT24"], "fix_note": "user board Fix: they should be at the door already for this scene"})
         (H / f"{b}.v14.prompt.txt").write_text(pr); (H / f"{b}.v14.preflight.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
         r = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v14.preflight.json")], capture_output=True, text=True)
         print(f"{b} v14: {len(pr)} chars — {'PASS' if r.returncode == 0 else 'FAIL'}"); [print("   ", l) for l in r.stdout.splitlines() if "FAIL" in l]
+        fails += r.returncode != 0
+    sys.exit(1 if fails else 0)
+
+# user 2026-10-01 "fix those" after v14 kept the women mid-flight: v15 is built on the EMPTY confirmed P5 plate (nothing to hold their old places), both placed at the doors.
+V15 = {}
+# board note on the v14 pair (user 2026-10-01): "i want a new angle they should be inside like at the door step" — a new setup: from inside the open church doorway looking out, the two on the doorstep.
+V15["HK-03a"] = (f'''For the line "{L4}": from inside the church's open front doorway looking out, the two women on the doorstep. Image 1 is the church, doors and steps. Image 2 is the mother. Image 3 is her daughter.
+Medium shot at eye level from inside the dim vestibule, the open white door leaves soft at the frame edges, sharp on both faces. The same woman as Image 2 on the threshold, turned back to her daughter, body three-quarter to the lens, a hand on her hip, a small smile; {N_WARD}, a wide-brim black Sunday hat. The same woman as Image 3 on the top step outside, right hand on the top of the black handrail, face up to her mother, eyes on her, mouth open mid-word; {C2_WARD}. Behind her the steps of Image 1 fall to the sunlit sidewalk.
+In the frame: the two women, the open doors, the top of the flight, the handrail, the sidewalk; every other surface bare. Two legs each.
+A final frame from a 3D animated feature film, stylized storybook render, the afternoon sun outside as the key, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.''', [REF_P5, REF_N, REF_C2], True, None, None)
+if __name__ == "__main__" and "--v15" in sys.argv:
+    fails = 0
+    for b, (pr, refs, face, match, eo) in V15.items():
+        c = dict(CALLS[b]); c.update({"prompt": pr, "refs": refs, "face": face, "match": match, "edit_of": eo, "taste": TASTE + ["HT05", "HT23", "HT24"], "fix_note": "user board note: i want a new angle they should be inside like at the door step"})
+        (H / f"{b}.v15.prompt.txt").write_text(pr); (H / f"{b}.v15.preflight.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
+        r = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v15.preflight.json")], capture_output=True, text=True)
+        print(f"{b} v15: {len(pr)} chars — {'PASS' if r.returncode == 0 else 'FAIL'}"); [print("   ", l) for l in r.stdout.splitlines() if "FAIL" in l]
         fails += r.returncode != 0
     sys.exit(1 if fails else 0)

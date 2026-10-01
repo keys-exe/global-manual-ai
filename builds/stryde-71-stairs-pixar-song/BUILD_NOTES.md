@@ -247,4 +247,12 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   on the HK-02a frame. Default branch merged (V7.81.0; its new `angles.py` anatomy-beat check, §12A-1, fails this build's locked act map — a system
   update, not applied to this running build). Higgsfield balance 8,888.15.
 
-**Waiting on:** HK-03a v19/v20 pick or Fix. Then the HK-03a clip; then the body acts in order; CapCut block with lyric captions and the outro end card.
+- same session, ~17:15–17:25 UTC — user "fix those" + board note on the v14 pair: **"i want a new angle they should be inside like at the door step"**.
+  v15 (`hooks/HK-03a.v15.prompt.txt`, PASS 1,197 chars after three trims): a new setup on the user's call — from inside the church's open front doorway
+  looking out, the mother on the threshold turned back to her daughter on the doorstep, hand on the rail end, mouth open mid-word, the sunlit sidewalk
+  beyond (refs P5 plate, N and C2 sheets; no plate match — nothing shows the inside; actmap row: eye · three-quarter · through · MEDIUM, `docs/actmap`
+  v16). **HK-03a v21/v22** To check (`hooks/v15_cards.py`); v19/v20 to Old (Old doc v10). Seen: both from inside the doorway, the two at the doorstep
+  turned to each other on model; A a dim vestibule with the white door leaves either side, B brighter with dark wood door frames and the street and
+  houses behind. Higgsfield balance 8,840.15.
+
+**Waiting on:** HK-03a v21/v22 pick. Then the HK-03a clip; then the body acts in order; CapCut block with lyric captions and the outro end card.
