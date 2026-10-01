@@ -97,7 +97,7 @@ def render_card(text, path, font):
 def main():
     hook = sys.argv[1]
     outd = B / "edit/final"; outd.mkdir(parents=True, exist_ok=True); work = outd / f".{hook}_caps"; work.mkdir(exist_ok=True)
-    hv, bv = B / f"hooks/plan/{hook}.rough.v4.mp4", B / "edit/body/BODY.rough.mp4"
+    hv, bv = B / f"hooks/plan/{hook}.rough.v5.mp4", B / "edit/body/BODY.rough.mp4"
     joined = work / "joined.mp4"
     subprocess.run([FF, "-y", "-v", "error", "-i", str(hv), "-i", str(bv), "-filter_complex",
                     "[0:v]fps=24,scale=1080:1920,setsar=1[v0];[1:v]fps=24,scale=1080:1920,setsar=1[v1];"

@@ -9,7 +9,12 @@ import json, subprocess, pathlib
 import numpy as np, imageio_ffmpeg
 FF = imageio_ffmpeg.get_ffmpeg_exe(); SR = 48000
 B = pathlib.Path(__file__).parents[1]; D = B / "edit/music/v2"
-HOOK = {"HK1": 12.2, "HK2": 8.64, "HK3": 7.64}; BODY = 148.27; TURN = 67.07
+# re-timed 2026-10-01 for the re-trimmed talking heads (th/recut_v2.py) and the re-cut hooks (v5) / body: lengths read from the cuts,
+# TURN = the product's first frame in the body (PR-12's cut in edit/body/BODY.assemble.json, §40A V7.78.0)
+import sys as _s; _s.path.insert(0, str(pathlib.Path(__file__).parents[3] / ".claude/skills/ai-prompt-engineer/scripts")); from trim import duration as _d
+HOOK = {h: round(_d(B / f"hooks/plan/{h}.rough.v5.mp4"), 3) for h in ("HK1", "HK2", "HK3")}; BODY = round(_d(B / "edit/body/BODY.rough.mp4"), 3)
+TURN = [r for r in json.load(open(B / "edit/body/BODY.assemble.json"))["edl"] if r["beat"] == "PR-12"][0]["start"]
+print("hooks", HOOK, "body", BODY, "turn", TURN)
 def load(p):
     raw = subprocess.run([FF, "-v", "error", "-i", str(p), "-ac", "2", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
     return np.frombuffer(raw, np.float32).reshape(-1, 2).copy()

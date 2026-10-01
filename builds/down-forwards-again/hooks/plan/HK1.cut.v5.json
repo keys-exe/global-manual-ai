@@ -1,0 +1,49 @@
+{
+ "th": "th/TH-HK1.trim.mp4",
+ "out": "hooks/plan/HK1.rough.v5.mp4",
+ "segments": [
+  {
+   "kind": "TH",
+   "start": 0.0,
+   "end": 1.5
+  },
+  {
+   "kind": "BR",
+   "beat": "HK1-01a",
+   "start": 1.5,
+   "end": 4.66,
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK1-01a.v1.mp4",
+   "in": 0.0,
+   "speed": 0.956
+  },
+  {
+   "kind": "BR",
+   "beat": "HK1-02a",
+   "start": 4.66,
+   "end": 6.06,
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK1-02a.v1.mp4",
+   "in": 0.4
+  },
+  {
+   "kind": "BR",
+   "beat": "HK1-02b",
+   "start": 6.06,
+   "end": 7.86,
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK1-02b.v1.mp4",
+   "in": 0.4
+  },
+  {
+   "kind": "BR",
+   "beat": "HK1-02c",
+   "start": 7.86,
+   "end": 10.21,
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/hooks/video/HK1-02c.v1.mp4",
+   "in": 0.4
+  },
+  {
+   "kind": "TH",
+   "start": 10.21,
+   "end": 12.6
+  }
+ ]
+}

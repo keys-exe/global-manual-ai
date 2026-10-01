@@ -1,0 +1,90 @@
+{
+ "HK1": {
+  "start": 0.0,
+  "end": 12.57,
+  "dur": 12.57,
+  "boundary_in": 0.0,
+  "boundary_out": 12.68,
+  "end_level_db_before_fade": -180.0,
+  "first_word": "in",
+  "last_word": "too",
+  "last_word_end": 12.48
+ },
+ "HK2": {
+  "start": 12.76,
+  "end": 21.64,
+  "dur": 8.88,
+  "boundary_in": 12.68,
+  "boundary_out": 21.64,
+  "end_level_db_before_fade": -180.0,
+  "first_word": "i",
+  "last_word": "prescription",
+  "last_word_end": 21.32
+ },
+ "HK3": {
+  "start": 21.72,
+  "end": 29.57,
+  "dur": 7.85,
+  "boundary_in": 21.64,
+  "boundary_out": 29.57,
+  "end_level_db_before_fade": -180.0,
+  "first_word": "every",
+  "last_word": "question",
+  "last_word_end": 29.32
+ },
+ "A1": {
+  "start": 29.65,
+  "end": 61.42,
+  "dur": 31.77,
+  "boundary_in": 29.57,
+  "boundary_out": 61.42,
+  "end_level_db_before_fade": -180.0,
+  "first_word": "a",
+  "last_word": "band",
+  "last_word_end": 61.18
+ },
+ "A2": {
+  "start": 61.48,
+  "end": 87.04,
+  "dur": 25.56,
+  "boundary_in": 61.42,
+  "boundary_out": 87.04,
+  "end_level_db_before_fade": -180.0,
+  "first_word": "that",
+  "last_word": "landing",
+  "last_word_end": 86.82
+ },
+ "A3": {
+  "start": 87.1,
+  "end": 120.51,
+  "dur": 33.41,
+  "boundary_in": 87.04,
+  "boundary_out": 120.51,
+  "end_level_db_before_fade": -180.0,
+  "first_word": "a",
+  "last_word": "again",
+  "last_word_end": 120.36
+ },
+ "A4": {
+  "start": 120.56,
+  "end": 160.74,
+  "dur": 40.18,
+  "boundary_in": 120.51,
+  "boundary_out": 160.74,
+  "end_level_db_before_fade": -180.0,
+  "first_word": "thirty",
+  "last_word": "more",
+  "last_word_end": 160.52
+ },
+ "A5": {
+  "start": 160.75,
+  "end": 179.522,
+  "dur": 18.772,
+  "boundary_in": 160.74,
+  "boundary_out": 179.522,
+  "end_level_db_before_fade": -65.9,
+  "first_word": "you",
+  "last_word": "stairs",
+  "last_word_end": 179.3
+ }
+}

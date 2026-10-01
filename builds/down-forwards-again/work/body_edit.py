@@ -9,7 +9,7 @@ import json, glob, os, subprocess, pathlib
 import imageio_ffmpeg
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 B = pathlib.Path(__file__).parents[1]
-G = "/tmp/claude-0/-home-user-global-manual-ai/33ac0ea1-56e5-53d2-9765-ab6fc866d4ca/scratchpad/g32/generations/"
+G = "/tmp/claude-0/-home-user-global-manual-ai/33ac0ea1-56e5-53d2-9765-ab6fc866d4ca/scratchpad/g41/generations/"
 SPLIT = set()   # user 2026-10-01: "DONT USE SPLIT SCREEN" — every B-roll full screen
 # user 2026-10-01: "SOME OF THE BROLLS ARE MISSING" — no row is dropped; a line under 2 s holds its clip over the next words (assemble.py HOLD)
 DROP = {}
@@ -34,6 +34,6 @@ for r in A:
     # no key anchors (dry run 1: keys at the end of a line — "stairs", "surgeons", "landing", "walk" — cut the B-roll in late and squeezed it
     # under 2 s); every B-roll starts on its line's first word
     rows.append(row)
-plan = {"audio": str(master), "script": str(B / "work/BODY.lines.txt"), "base": str(base), "broll": rows}
+plan = {"audio": "base", "script": str(B / "work/BODY.lines.txt"), "base": str(base), "broll": rows}
 json.dump(plan, open(B / "edit/body/BODY.plan.json", "w"), ensure_ascii=False, indent=1)
 print(len(rows), "rows;", sum(1 for x in rows if x["layout"]["type"] != "full"), "split")

@@ -1,5 +1,5 @@
 {
- "audio": "/home/user/global-manual-ai/builds/down-forwards-again/edit/body/BODY.master.wav",
+ "audio": "base",
  "script": "/home/user/global-manual-ai/builds/down-forwards-again/work/BODY.lines.txt",
  "base": "/home/user/global-manual-ai/builds/down-forwards-again/th/TH-BODY.trim.mp4",
  "broll": [
@@ -31,6 +31,14 @@
    "beat": "MECH-03a",
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-03a.v1.mp4",
    "phrase": "Two centimetres below your kneecap",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-03b",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-03b.v2.mp4",
+   "phrase": "there is a band of tendon about as wide as your thumb",
    "layout": {
     "type": "full"
    }
