@@ -222,6 +222,21 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   touch lower, N glancing back over her left shoulder, the women closer together on the left lane. Higgsfield balance 9,190.15 (shared account).
   Merged the default branch first (V7.80.0 arrived from another session; this build's rules unchanged).
 
-**Waiting on:** picks (A/B) or Fix notes on HK-01a v13/v14 (the one hook B-roll), HK-02a v13/v14 and HK-03a v15/v16 (the mother's wardrobe came
-back wrong on both — a Fix is likely). Then the hook clips (HK-01a 8 s; §35A, no end frames — waived); then the body acts in order; CapCut block
+- same session, ~16:50–17:05 UTC — user **"fix those and generate the confirmed"**. Board state read: **HK-01a v13 (A) confirmed**, **HK-02a v13 (A) confirmed**
+  (their B renders v14 moved to Old — Old docs v7/v7, files deleted from Current); **HK-03a Fix "this should be the same as the hk02 location but should
+  be them talking to each other"**. No `restore` requests on the Old board.
+  **HK-03a v13** (`hooks/HK-03a.v13.prompt.txt`, PASS 1,194 chars): an image edit of the confirmed HK-02a v13 A (the church steps from the sidewalk,
+  HT17) — N stopped on the 6th step and turned back to her daughter, hand on hip, a small smile; the daughter two steps below, hand on the black rail,
+  face up, mouth open mid-word (HT24, both in frame); actmap row re-angled low/three-quarter MEDIUM from the sidewalk, `docs/actmap` v14.
+  **HK-03a v17/v18** To check (`hooks/v13_cards.py`); v15/v16 to Old (Old doc v8). Seen: both renders — the same church front and steps, N turned
+  back on the step looking down at the daughter, the daughter looking up with her mouth open; A has N's hand on her hip, B the hand lower.
+  **Clips (§35A, Kling kling-video-v3_0, 1080p, silent, one render each, no end frame — waived):** HK-01a clip **v3** from v13 A, 8 s / 64 cr
+  (`clips/HK-01a.v3.call.json`, PASS, the card's motion plan verbatim; `clips/HK-01a_v3.mp4`, 7.0 MB), HK-02a clip **v2** from v13 A, 5 s / 40 cr
+  (`clips/HK-02a.v2.call.json`, PASS; `clips/HK-02a_v2.mp4`, 8.1 MB). Both To check. Seen on the contact sheets: HK-02a — N climbs two steps toward
+  the doors hands free, the daughter follows two behind, hand on the rail, as planned. **HK-01a — N climbs the whole flight fast, reaches the top
+  and goes in through a door that opens, while the two women stay low on the steps; faster and further than the plan's three steps** (the user
+  asked for "walking faster"; their call — a Fix note can slow it). The earlier home-stairs clips stay on the cards as versions. Kling balance
+  42,739 after; Higgsfield 9,019.15.
+
+**Waiting on:** HK-03a v17/v18 pick; the HK-01a clip v3 and HK-02a clip v2 checks. Then the HK-03a clip; then the body acts in order; CapCut block
 with lyric captions and the outro end card.

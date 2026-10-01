@@ -1,45 +1,4 @@
 {
- "act": "Hook 1",
- "beat": "HK-03a",
- "build": "stryde-71-stairs-pixar-song",
- "flow": [
-  "image"
- ],
- "hook": 1,
- "imageAsset": "0a298122d5e74895068fb93d1ed89cb6",
- "imageConnector": "Higgsfield",
- "imageCredits": 2.14,
- "imageFault": "user 2026-10-01 Fix: \"this should be the same as the hk02 location but should be them talking to each other\" → an image edit of the confirmed HK-02a v13 A (the church steps from the sidewalk, HT17): the mother stopped on the 6th step and turned back to her daughter, the daughter two steps below with her hand on the rail, mouth open mid-word (HT24); the v9 pair (the OTS from the top step) to Old",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  15,
-  16
- ],
- "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — the church, its steps, the black handrail, the hedges, the camera, the light — and turn the two women to each other. Image 1 is this frame of the two women on the church steps. Image 2 is the mother. Image 3 is her daughter.\nMedium shot from the sidewalk, the lens at hip height up the flight, sharp on both faces. The same woman as Image 2 on the 6th of 8 steps, stopped and turned back to face down the steps, her body three-quarter to the lens, one hand on her hip, eyes on her daughter, a small smile; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 on the 4th step, two below her, right hand on the black handrail, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers.\nIn the frame: the two women, the one flight of Image 1, the handrail, the hedges, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
- "imageRefs": [
-  {
-   "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 1 · edited (HT17, §6A rule 3)"
-  },
-  {
-   "kind": "character",
-   "label": "N-NARR sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__N-NARR",
-   "role": "Image 2"
-  },
-  {
-   "kind": "character",
-   "label": "C2-DAUGHTER sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 3"
-  }
- ],
- "imageRes": "1536×2752",
- "imageStatus": "regenerate",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_161353_a20d4123-4de5-43ce-98a5-1ed29fdcf232.png",
  "imageVersions": [
   {
    "archived": true,
@@ -304,8 +263,19 @@
    "archiveAsset": "40b5aa35ebcfc6732f9251f58378fc6b"
   }
  ],
- "line": "\"Mama, when did that happen?\"",
- "stage": "hooks",
+ "imagePair": [
+  15,
+  16
+ ],
+ "imageAsset": "0a298122d5e74895068fb93d1ed89cb6",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_161353_a20d4123-4de5-43ce-98a5-1ed29fdcf232.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — the church, its steps, the black handrail, the hedges, the camera, the light — and turn the two women to each other. Image 1 is this frame of the two women on the church steps. Image 2 is the mother. Image 3 is her daughter.\nMedium shot from the sidewalk, the lens at hip height up the flight, sharp on both faces. The same woman as Image 2 on the 6th of 8 steps, stopped and turned back to face down the steps, her body three-quarter to the lens, one hand on her hip, eyes on her daughter, a small smile; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 on the 4th step, two below her, right hand on the black handrail, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers.\nIn the frame: the two women, the one flight of Image 1, the handrail, the hedges, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
+ "imageFault": "user 2026-10-01 Fix: \"this should be the same as the hk02 location but should be them talking to each other\" → an image edit of the confirmed HK-02a v13 A (the church steps from the sidewalk, HT17): the mother stopped on the 6th step and turned back to her daughter, the daughter two steps below with her hand on the rail, mouth open mid-word (HT24); the v9 pair (the OTS from the top step) to Old",
+ "imageStatus": "regenerate",
  "status": "regenerate",
  "title": "hook — the line (church steps, the two turned to each other, edit of the confirmed HK-02a frame) — v1–v14 pairs (replaced; latest: the v9 OTS pair from the top step)",
  "updatedAt": 1790873347552
