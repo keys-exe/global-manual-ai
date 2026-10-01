@@ -1973,6 +1973,22 @@ B["B23a"] = (NBP, ["B22AV4H", "PW"], (
     "AVOID: no redrawn strap, no band showing through the notch, no flat peaks, no gap between the kneecap and the notch, "
     + P.NEG_WORDMARK + ", no capital letters, no second strap in view, no hand, no face, no extra legs"))
 
+# B10d Fix "GIVE ME DIFFERENT BROLL HERE" (v1: thumb popping a tablet) — "A painkiller turns the alarm off": the line's metaphor made
+# literal. Low, looking up at her hall ceiling: a plain white smoke alarm with its red light flashing, her hand pressing the button.
+B["B10d"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone held low, looking up three-quarter at the white ceiling of her hallway near the top of the wall. A plain "
+    "round white smoke alarm is fixed to the ceiling, its small red light glowing bright. Her hand reaches up from below and her thumb "
+    "presses the alarm's centre button. Close: the alarm and her hand fill the frame, the pale duck-egg blue wall top and a soft corner "
+    "of the ceiling behind.",
+    "Her hand: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, thin skin over the knuckles, "
+    "a plain gold wedding ring, a navy-and-white striped sleeve at the wrist.",
+    "THE SAME HALL as the attached house plate (Image 2): pale duck-egg blue walls, white ceiling, white ogee cornice.",
+    angle("B10d", "the smoke alarm and her hand"),
+    focus("the alarm's button under her thumb", deep=False).replace("the room behind", "the ceiling behind"),
+    "Daylight from the hall window, soft and even, on the alarm and her hand."],
+    NO_FACE + ", no person beyond her hand, no product anywhere, no knee strap, no smoke, no fire, no flames, no text on the alarm, "
+    "no brand names, no logos, no pills, no second hand, no extra fingers"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

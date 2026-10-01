@@ -456,3 +456,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 ### 2026-10-01 — "GO" (B22a video 4, B23a video 3)
 - Both from the confirmed real-photo frames (B22a v4, B23a v6); motion keeps the earlier Fix "WALKING DOWN STAIR"; straps held from first frame to last; no hands. Jobs on Higgsfield: B22a 3691e67d…, B23a 376f4a2b… (queued a long while — finishing on a check-in). Old videos (B22a v3, B23a v2) copied to Old 2 (f725bc33…, a04ea39b…).
+
+### 2026-10-01 — "FIX" (B10d image "GIVE ME DIFFERENT BROLL HERE")
+- **B10d** ("A painkiller turns the alarm off"): new idea — the line's metaphor made literal: low, looking up at her hall ceiling, a plain smoke alarm flashing red, her hand pressing its button. NB2, refs R1 + P1. Act map row updated (L-M-STAIRS, LOW THR CU); angles: only the known B19b/B19-BR2 jump. Job b593b823…. Old image v1 and video v1 copied to Old 2 (cd49c118…, 9ce241af…).
+- Higgsfield is holding every job in "queued" (B22a/B23a videos for 45+ min, now B10d too) while the shared account's balance keeps falling — other builds' jobs are running; ours wait for a slot.
