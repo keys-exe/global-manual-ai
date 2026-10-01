@@ -1,39 +1,4 @@
 {
- "act": "Hook 1",
- "beat": "HK-02a",
- "build": "stryde-71-stairs-pixar-song",
- "flow": [
-  "image"
- ],
- "hook": 1,
- "imageAsset": "06a96521f8ba11f9894eeccf9ed53800",
- "imageConnector": "Higgsfield",
- "imageCredits": 2.14,
- "imageFault": "user 2026-10-01: \"the hk1 should show woman half her age behind her and the hk02-03 should be different location\" → HK-01a/b: the plaza kept, the crowd replaced by one woman half her age stopped behind her; HK-02a/03a: last Sunday = the church steps (confirmed plate P5-CHURCH), both image edits of P5 from its top step; the v8 plaza pairs to Old",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  9,
-  10
- ],
- "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": Keep this photo exactly as it is — the church, its eight steps, the black iron handrail, the hedges, the sidewalk, the light — seen from its top step under the portico looking down the flight, a tall 9:16 crop, and add her daughter. Image 1 is the church steps. Image 2 is the daughter.\nMedium shot from the top step, the lens at eye level looking down the flight, sharp on her eyes. The same woman as Image 2 on the 4th of 8 steps, mid-step, weight on her right foot, the left lifting to the 5th, right hand gripping the black handrail, left hand on her thigh, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. Past her the steps of Image 1 fall to the sidewalk, the hedges either side, the parked cars at the curb. Nobody else.\nIn the frame: the daughter, the one flight, the handrail, the hedges, the sidewalk and cars; every other surface bare. Two hands, two legs on her.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; nobody beside her.",
- "imageRefs": [
-  {
-   "kind": "character",
-   "label": "C2-DAUGHTER sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 1"
-  },
-  {
-   "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 2"
-  }
- ],
- "imageRes": "1536×2752",
- "imageStatus": "regenerate",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155624_9165a953-9350-4196-bce3-cf11cf85e768.png",
  "imageVersions": [
   {
    "archived": true,
@@ -182,8 +147,19 @@
    "archiveAsset": "833a7d717bc12b3168d78c75e491976d"
   }
  ],
- "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
- "stage": "hooks",
+ "imagePair": [
+  9,
+  10
+ ],
+ "imageAsset": "06a96521f8ba11f9894eeccf9ed53800",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155624_9165a953-9350-4196-bce3-cf11cf85e768.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": Keep this photo exactly as it is — the church, its eight steps, the black iron handrail, the hedges, the sidewalk, the light — seen from its top step under the portico looking down the flight, a tall 9:16 crop, and add her daughter. Image 1 is the church steps. Image 2 is the daughter.\nMedium shot from the top step, the lens at eye level looking down the flight, sharp on her eyes. The same woman as Image 2 on the 4th of 8 steps, mid-step, weight on her right foot, the left lifting to the 5th, right hand gripping the black handrail, left hand on her thigh, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. Past her the steps of Image 1 fall to the sidewalk, the hedges either side, the parked cars at the curb. Nobody else.\nIn the frame: the daughter, the one flight, the handrail, the hedges, the sidewalk and cars; every other surface bare. Two hands, two legs on her.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; nobody beside her.",
+ "imageFault": "user 2026-10-01: \"the hk1 should show woman half her age behind her and the hk02-03 should be different location\" → HK-01a/b: the plaza kept, the crowd replaced by one woman half her age stopped behind her; HK-02a/03a: last Sunday = the church steps (confirmed plate P5-CHURCH), both image edits of P5 from its top step; the v8 plaza pairs to Old",
+ "imageStatus": "regenerate",
  "status": "regenerate",
  "title": "hook — the witness (last Sunday: the church steps, edit of P5, HT17) — v1–v8 pairs (replaced; latest: the v8 plaza pair)",
  "updatedAt": 1790871424216
