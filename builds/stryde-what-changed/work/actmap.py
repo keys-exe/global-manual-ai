@@ -299,7 +299,7 @@ BB("B21", A4, "Or move the load off the one spot that has been taking it since y
    "one kick, about a second and a half", STILL, "garden: whole figure, camera still", "no", "worn", "VISIBLE", "NBP",
    LOW, FRO, "clean", "MEDIUM", "low front = the strength back", "product", "medium", L(D_SUN, "R"), False)
 BB("B22a", A4, "Two for one, so you can do both knees.", "Two", "offer — pair pack",
-   "R1", "L-M-STAIRS", "M-D2", "CU front-on, low: Maureen's two knees side by side on the stair, a strap below each kneecap, both wordmarks reading (fix: 'different broll here'; edit of B18b v3)", "she shifts her weight from one knee to the other",
+   "R1", "L-BEDROOM", "M-D2", "CU front-on at knee height: Maureen sitting on the edge of her bed, both knees bent towards the camera, a strap below each kneecap, hands on her thighs (fix: 'GIVE ME ANOTHER DIFFERENT BROLL HERE'; edit of the approved B22a v4)", "she gives her knees a light pat",
    "one small shift, about a second", STILL, "legs only, camera still", "no", "worn ×2", "VISIBLE", "NBP",
    EYE, FRO, "clean", "CU", "level with the knees = both knees, both straps", "product", "medium", L(M_SUN, "L"), False, eg="EG04 · 'BUY 1 GET 1 FREE' in the edit")
 TH("B22-TH", A4, "Sixty days, and you keep the straps. From the Stryde site.", eg="EG01 · '60 days' in the edit (F10)")

@@ -1989,6 +1989,19 @@ B["B10d"] = (NB2, ["R1", "P1"], photo([
     NO_FACE + ", no person beyond her hand, no product anywhere, no knee strap, no smoke, no fire, no flames, no text on the alarm, "
     "no brand names, no logos, no pills, no second hand, no extra fingers"))
 
+# B22a Fix "GIVE ME ANOTHER DIFFERENT BROLL HERE" — "Two for one, so you can do both knees.": edit of the approved B22a v4 (its two
+# real-photo straps carry over): Maureen now sits on the edge of her bed, both knees bent towards the camera, a strap below each.
+B["B22a"] = (NBP, ["B22AV4H", "R1"], (
+    "Edit Image 1. Keep BOTH straps EXACTLY as they are in Image 1 — the approved product: the same matte-black shells, the pointed "
+    "peaks and crisp notches with each kneecap seated in its notch, the chrome slides, the grey lowercase \"stryde\" on each — the "
+    "same shape, the same size on the leg, one just below EACH kneecap, nothing redrawn. Keep her pale legs, the denim skirt and white "
+    "plimsolls. Change the place and the pose: she now sits on the edge of her bed in her bright bedroom, both knees bent and side by "
+    "side towards the camera, feet flat on the carpet, her hands resting lightly on her thighs well above the straps, an easy, pleased "
+    "posture — the same woman as in Image 2, seen from the chest down, no face. The camera is level with her knees, straight on, so "
+    "both straps read front-on and large. Soft morning light from the bedroom window. A real phone photo.\n\n"
+    "AVOID: no redrawn straps, no hand on a strap, no capital letters, " + P.NEG_WORDMARK + ", no third strap, no face, no stairs, no "
+    "extra legs, no extra hands"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
