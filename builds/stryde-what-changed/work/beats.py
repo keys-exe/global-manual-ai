@@ -138,7 +138,7 @@ def anat(state, view=None, stack="ANAT-A", slots=None):
 
 
 NBP, NB2 = "nano_banana_pro", "nano_banana_2"
-REFS = {"R1": ("R1-MAUREEN sheet", "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"), "R2": ("R2-DESMOND sheet", "9f0903d2-b148-4273-93b6-e4227a87d9f6"),
+REFS = {"HK1AV1": ("HK1-a v1 (Kie)", "c3060a68e72e48f949418fe86d0c204d"), "R1": ("R1-MAUREEN sheet", "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"), "R2": ("R2-DESMOND sheet", "9f0903d2-b148-4273-93b6-e4227a87d9f6"),
         "P1": ("P1-PROP-M plate", "520de2e7-e577-4afe-b18c-b79dbed0acf0"), "P2": ("P2-PROP-D plate", "68ddef76-e5b0-4947-966f-cda7e00335c2"),
         "P3": ("P3-STREET plate", "c19e14a9-5146-4444-8b83-e765dfdc3f8f"),
         "P4": ("P4-KITCHEN plate", "0bedfad5-bf20-4ebd-a862-fed90b55601a"),
@@ -2061,6 +2061,48 @@ B["HK1-b2"] = (NB2, ["R1", "P3"], photo([
     focus("everything"),
     "Soft grey morning daylight."],
     "no looking into the lens, no knee strap, no product anywhere, no text on the bag, no logos, no second person, no extra hands"))
+
+# ── 2026-10-01 "FIX THOSE" + board notes (HK1-a "FIX BROLL", HK1-b "DIFFERENT BROLL"). HK1-a: edit of its v1 — only the trainers' logo
+# goes. HK1-a2: the step is her front-door step (door + mat behind), not a kerb. HK1-b: new shot for "for forty years" — her stair carpet
+# worn thin down the middle of every tread. HK1-b2: shot from her doorstep so the frame is her front path, not the pavement.
+B["HK1-a"] = (NB2, ["HK1AV1"], (
+    "Edit Image 1. Keep everything in Image 1 exactly as it is — the same man, his khaki shorts, his hands, the two shopping bags, the "
+    "stairs, the carpet, the photos on the wall, the light, the framing and the angle. Change one thing only: his white trainers become "
+    "plain white leather trainers with a navy heel tab and navy laces, with NO logo, no swoosh, no stripe and no marking of any kind on "
+    "the sides. Nothing else changes.\n\nAvoid: any logo or brand mark on the shoes, any change to the bags, legs, stairs or framing, "
+    "text, extra hands, extra legs."))
+B["HK1-a2"] = (NB2, ["R1", "P3"], photo([
+    "A snapshot from a phone resting on the ground on her front path, three-quarter on, looking at her front door. Maureen's white canvas "
+    "plimsoll is just landing on the worn grey stone doorstep of her house, the weight coming down onto it; the hem of her denim skirt and "
+    "her bare ankle just in frame above. Directly behind the step: the bottom of her open white front door, and a brown "
+    "coir doormat inside. Extreme close-up: the plimsoll and the stone doorstep fill the frame, the door soft behind.",
+    "Her foot: THE SAME WOMAN as in the attached character sheet — pale older skin, a white canvas plimsoll.",
+    "Her house front from the attached street plate (Image 2).",
+    angle("HK1-a2", "her foot on the doorstep"),
+    focus("the foreground"),
+    "Grey morning daylight, soft and even."],
+    NO_FACE + ", no pavement, no kerb, no road, no knee strap, no product anywhere, no logos on the plimsoll, no second foot in focus, "
+    "no extra feet, no extra toes"))
+B["HK1-b"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone held high on the stairs, looking down the flight at a three-quarter angle. The oatmeal wool stair carpet is "
+    "worn thin and greyish down the middle of every tread, a pale flattened path where forty years of footsteps have gone. Maureen's white canvas plimsoll is settling onto the worn patch of the stair just below the "
+    "camera, her bare ankle and the hem of her denim skirt above it. Close: two or three treads and her foot fill the frame.",
+    "Her foot: THE SAME WOMAN as in the attached character sheet — pale older skin, a white canvas plimsoll.",
+    "THE SAME STAIRS as the attached house plate: pale duck-egg blue walls, white skirting, white spindles, a honey oak handrail.",
+    angle("HK1-b", "her foot on the worn stair"),
+    focus("the foreground"),
+    "Grey morning daylight from the half-landing window above."],
+    NO_FACE + ", no knee strap, no product anywhere, no holes in the carpet, no stains, no logos, no text, no second person, no extra feet"))
+B["HK1-b2"] = (NB2, ["R1", "P3"], photo([
+    "From her doorstep at eye level, down her short front-garden path. Maureen walks up the path towards the camera, a cotton "
+    "shopping bag on one arm, smiling. Garden paving under her, a lawn beside; the open gate and street behind. Medium, knees up.",
+    R1 + " Wearing a dusty-pink cardigan over a white top and a mid-blue denim skirt.",
+    "Image 2 is the street behind her.",
+    angle("HK1-b2", "her coming up the path"),
+    focus("everything"),
+    "Soft grey morning daylight."],
+    "no pavement under her feet, no looking into the lens, no knee strap, no product anywhere, no text on the bag, no second "
+    "person, no extra hands"))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)

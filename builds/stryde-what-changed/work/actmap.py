@@ -61,15 +61,15 @@ BB("HK1-a", HOOK[1], "Your knees have been taking seventeen times your bodyweigh
    LOW, PRO, "clean", "MS", "low profile = the load bending the knees", "foreground", "medium", L(D_GREY, "L"), False,
    ledger="VN01", eg="EG03 full screen · EG04 caption red box 'seventeen times'")
 BB("HK1-a2", HOOK[1], "on every step", "every", "hook — the hidden number (VN01)",
-   "R1", "L-STREET", "M-D1", "ground-level ECU: Maureen's white plimsoll landing on her worn stone front-door step", "the foot lands and takes the weight",
+   "R1", "L-STREET", "M-D1", "ground-level ECU: Maureen's white plimsoll landing on her worn stone front-door step, her open front door and doormat right behind it", "the foot lands and takes the weight",
    "one step, about a second", STILL, "ground level, feet only, camera still", "no", "absent", "—", "NB2",
    GROUND, THR, "clean", "ECU", "ground level = every single step, close", "foreground", "medium", L(M_GREY, "L"), False, ledger="VN01")
 BB("HK1-b", HOOK[1], "for forty years,", "forty", "hook — the hidden number (VN01)",
-   "R1", "L-KITCHEN", "K-D1", "CU over her shoulder: Maureen's hand holding a faded 1980s photograph of her younger self out walking on a hillside", "her thumb smooths the corner of the photo",
-   "one small move, about a second", STILL, "hands and photo, camera still", "no", "absent", "—", "NB2",
-   HIGH, TQB, "clean", "CU", "over the shoulder, high = looking back over the years", "hands", "shallow", L(KITCH, "L"), False, ledger="VN01")
+   "R1", "L-M-STAIRS", "M-D1", "high three-quarter CU looking down her stairs: the oatmeal carpet worn thin and grey down the middle of every tread — forty years of footsteps — her plimsoll stepping onto the worn patch (user 2026-10-01 board Fix 'DIFFERENT BROLL')", "her foot settles onto the worn patch",
+   "one step, about a second", STILL, "stairs from above, feet only, camera still", "no", "absent", "—", "NB2",
+   HIGH, TQB, "clean", "CU", "high, looking down = forty years worn into the stairs", "foreground", "shallow", L(M_GREY, "L"), False, ledger="VN01")
 BB("HK1-b2", HOOK[1], "and you never felt a thing.", "never", "hook — the hidden number (VN01)",
-   "R1", "L-STREET", "M-D1", "MEDIUM front-on: Maureen coming up her front path with a shopping bag, smiling, easy, oblivious", "two easy steps towards the camera",
+   "R1", "L-STREET", "M-D1", "MEDIUM front-on from her doorstep: Maureen coming up her own front-garden path from the gate with a shopping bag, smiling, easy, oblivious", "two easy steps towards the camera",
    "two steps, about two seconds", STILL, "front path, camera still", "no", "absent", "—", "NB2",
    EYE, FRO, "clean", "MEDIUM", "eye level front = her, untroubled", "deep", "deep", L(M_GREY, "L"), False, ledger="VN01")
 TH("HK1-TH", HOOK[1], "Here is what changed.")

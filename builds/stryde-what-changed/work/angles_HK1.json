@@ -68,23 +68,23 @@
   "side": "three-quarter-back",
   "scale": "CU",
   "fg": "clean",
-  "why": "over the shoulder, high = looking back over the years",
+  "why": "high, looking down = forty years worn into the stairs",
   "mirror_of": null,
   "mode": 1,
   "product_beat": false,
   "focus": {
-   "plane": "hands",
+   "plane": "foreground",
    "dof": "shallow",
    "rack": null,
    "moving_subject": false
   },
-  "story_day": "K-D1",
+  "story_day": "M-D1",
   "face": false,
   "light": {
-   "source": "kitchen window over the sink",
+   "source": "Maureen's landing window, grey morning",
    "key_side": "L",
    "time": "morning",
-   "arc": "everyday: cool daylight",
+   "arc": "problem: grey",
    "kelvin": 6500,
    "why": ""
   }
