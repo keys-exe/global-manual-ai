@@ -3,7 +3,7 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"b18b\",\"subject\":\"Front-on at knee height, an older woman's pale legs coming down an oatmeal-carpeted staircase towards the camera, the hem of a mid-blue denim skirt at the top of the frame, white canvas plimsolls; a matte-black knee strap with two pointed peaks, chrome slides and a grey lowercase \\\"stryde\\\" sits just below EACH kneecap; white spindles on the right. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: her lower foot settles flat on the stair below and takes her weight, then her other foot comes down past it onto the next stair — one easy, even step down in about a second and a half, real time, without hesitating. Both straps stay exactly as they are — rigid, the same shape, size, place and wordmark from first frame to last. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; the skirt lags a little; the straps never move; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no strap moving, no strap changing shape, no wordmark changing, no third strap, no hand in frame, no hand on the banister, no face, no going up the stairs, no stopping, no stumbling, no camera movement, no extra legs, no extra feet, no music, no speech, no slow motion\"}",
+ "prompt": "{\"shot\":\"b18b\",\"subject\":\"Front-on at knee height, an older woman's pale legs coming down an oatmeal-carpeted staircase towards the camera, the hem of a mid-blue denim skirt at the top of the frame, white canvas plimsolls; a matte-black knee strap with two pointed peaks, chrome slides and a grey lowercase \\\"stryde\\\" sits just below EACH kneecap; white spindles on the right. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: she walks down the stairs towards the camera at a brisk, steady pace without pausing — one step every 0.8 seconds, left, right, left, right, each foot landing flat on the next stair as the other leaves — four even steps, never slowing, never stopping. Both straps stay exactly as they are — rigid, peaks pointing up, the same shape, size, place and wordmark from first frame to last. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; the skirt lags a little; the straps never move; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no pausing between steps, no strap twisting or flipping, no wordmark changing, no hand in frame, no camera movement, no music, no speech, no slow motion\"}",
  "duration": 5,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
@@ -14,22 +14,22 @@
  "end_approved": false,
  "subject_motion": "travels",
  "prefer_multi_shots": "false",
- "generation": 3,
+ "generation": 4,
  "risks": [
   {
-   "risk": "the straps warp or redraw as the legs move",
-   "prevented_by": "rigid-strap line, 'no strap changing shape, no wordmark changing'"
+   "risk": "the straps twist or flip as the knees bend (gen 3 at 3.1 s)",
+   "prevented_by": "rigid-strap line 'peaks pointing up', 4 s cap"
   },
   {
-   "risk": "legs or feet duplicate on the stairs",
-   "prevented_by": "one step at a named pace, HOLD-C + NEG-WARP-C, 'no extra legs, no extra feet'"
+   "risk": "she pauses between steps again",
+   "prevented_by": "countable pace 'one step every 0.8 seconds', 'never slowing, never stopping'"
   },
   {
-   "risk": "a hand reaches into frame for the banister",
-   "prevented_by": "'no hand in frame, no hand on the banister'"
+   "risk": "legs or feet duplicate at the faster pace",
+   "prevented_by": "brisk not fast (§27G rule 9), HOLD-C + NEG-WARP-C"
   }
  ],
- "approved_by": "user: board Confirm of B18b image v6 + 'CONFIRM GO' (2026-10-01)",
- "user_go": "CONFIRM GO (2026-10-01)",
- "fix_note": "gens 1–2 came from earlier frames (wide, coming down; then the wrong product) → new confirmed start frame v6 with the approved straps, one step down, rigid straps"
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)",
+ "user_go": "",
+ "fix_note": "gen 3 stepped with pauses and the left strap flipped at ~3.1 s (motion fault) → brisk countable pace one step per 0.8 s, never stopping, rigid peaks-up straps, 4 s cap; speed finished in the edit (§27G rule 9)"
 }
