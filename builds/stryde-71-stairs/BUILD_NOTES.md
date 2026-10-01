@@ -300,4 +300,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - Downloads: Kie's `common/download-url` gives a direct storage link that is fast where tempfile.aiquickdraw.com stalls.
       - scratchpad fetch.py uses it and checks size and decode before a file goes in.
       - kie.py's own slow download is stopped once the task id is logged, so it can't overwrite a good file.
+  - **2026-10-01: Current board storage full (1 GB).**
+    - On the board: PR-06a image v2 (strap shrunk), PR-01b v2, L-01a, L-01b (2 parts), L-02a.
+    - Rendered and kept locally, not on the board yet: L-02b, L-03a, C-02a–C-09a. The Old board is full too.
+    - Waiting for the user to decide how to free space (e.g. a second Old board for replaced versions).
+    - C-01a failed on Kie ("Image fetch failed") and was resent.
+    - fetch.py fix: the signed direct link refuses HEAD requests, so the size is read from the GET's headers. That is why the first background fetches saved nothing.
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
