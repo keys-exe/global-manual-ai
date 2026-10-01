@@ -4,7 +4,8 @@
  "bars": 1,
  "beat": "P-03a",
  "build": "stryde-71-stairs-pixar-song",
- "duration": 5,
+ "credits": 40,
+ "duration": 5.04,
  "eg": "",
  "flow": [
   "image",
@@ -49,6 +50,7 @@
  ],
  "imageType": "image/png",
  "imageUnused": 4,
+ "imageUnusedArchived": "190180a9df27c63abb60ec5cd9e03530",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174004_549092c2-8bdd-46cc-8264-8f4b41dabf2a.png",
  "imageVersions": [
   {
@@ -101,13 +103,15 @@
    "v": 3
   },
   {
+   "archiveAsset": "190180a9df27c63abb60ec5cd9e03530",
+   "archived": true,
    "asset": "6c020d9d52b5e60d762a77399f0a45ea",
    "at": 1790876674688,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "c646ba7d-2543-4f9a-a270-85068897eb20",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · not chosen (the user picked A); copied to Old versions",
    "pair": "B",
    "res": "1536×2752",
    "size": 7880972,
@@ -122,20 +126,54 @@
  "light": "window over the sink, south wall · key R · morning · problem: grey · 5600K",
  "line": "That big knee brace I bought slid right down my leg.",
  "location": "L-N-KITCHEN",
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: her hand pulls the brace up once and it slips back — one pull, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
  "music": "MUS-EXPOSE",
  "onScreen": 3.25,
  "pinEnd": "no",
  "product": "absent (generic brace, §10) · —",
+ "prompt": "For the line \"That big knee brace I bought slid right down my leg.\": From this frame: her hand pulls the brace up once and it slips back — one pull, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. In close on her knee, her right hand hauls the brace's top strap up over the kneecap in one pull, holds a moment, and the brace sags back down below the kneecap as the hand eases; her left hand stays on the table edge; the knee, the slipper and the kitchen behind stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame, the brace rigid in shape. No camera travel; nobody else; no cut; the brace never changes design.",
  "section": "The low point and what failed — MUS-EXPOSE",
  "shot": "high · three-quarter · clean · CU",
  "songIn": 26.71,
  "songOut": 29.96,
  "stage": "broll",
  "staging": "hands: large in frame, one movement",
- "status": "ready",
+ "status": "review",
  "storyDay": "N-D1",
  "title": "failed fix",
- "updatedAt": 1790877138381
+ "updatedAt": 1790878081408,
+ "videoAsset": "95875f4ed089d74ac741bb61b17982f1",
+ "videoAt": 1790878081408,
+ "videoConnector": "Kling",
+ "videoJob": "ASsv-c2Z7kgWhoKQ7Qb6ejvwDkji5hJh8wpYyXvGn45-zYb2kZubVdDvifu4LpSJv9tlKWI7",
+ "videoNote": "first clip of this beat, from the confirmed v3 A · what I see: one pull up, the brace sags back; the kitchen holds",
+ "videoRes": "1072×1928",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1017ce2d-ffc8-428b-b69b-20a9ed73df62-e-nEESpF53HY1t_krqSZMw-output.mp4?x-kcdn-pid=112372",
+ "videoVersions": [
+  {
+   "asset": "95875f4ed089d74ac741bb61b17982f1",
+   "at": 1790878081408,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 3,
+   "job": "ASsv-c2Z7kgWhoKQ7Qb6ejvwDkji5hJh8wpYyXvGn45-zYb2kZubVdDvifu4LpSJv9tlKWI7",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v3 A (job 549092c2) · what I see: one pull up, the brace sags back; the kitchen holds",
+   "res": "1072×1928",
+   "size": 7243594,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1017ce2d-ffc8-428b-b69b-20a9ed73df62-e-nEESpF53HY1t_krqSZMw-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  }
+ ]
 }

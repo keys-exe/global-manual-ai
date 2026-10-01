@@ -4,8 +4,10 @@
  "bars": 1.5,
  "beat": "P-05a",
  "build": "stryde-71-stairs-pixar-song",
- "duration": 6,
+ "credits": 48,
+ "duration": 6.04,
  "eg": "",
+ "fault": "make this into 3 brolls",
  "flow": [
   "image",
   "video"
@@ -55,6 +57,7 @@
  ],
  "imageType": "image/png",
  "imageUnused": 4,
+ "imageUnusedArchived": "bff464f06a1baf2d46fd6c0b5ce62975",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_8545c58b-ddab-447e-a0ca-a18a56e716f0.png",
  "imageVersions": [
   {
@@ -107,13 +110,15 @@
    "v": 3
   },
   {
+   "archiveAsset": "bff464f06a1baf2d46fd6c0b5ce62975",
+   "archived": true,
    "asset": "5d3b7f257e678514a552f8f9fddc5344",
    "at": 1790876674688,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "14973fd3-3793-4b98-848b-4d72a9292491",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · not chosen (the user picked A); copied to Old versions",
    "pair": "B",
    "res": "1536×2752",
    "size": 7856885,
@@ -128,20 +133,55 @@
  "light": "window over the sink, south wall · key R · morning · problem: grey · 5600K",
  "line": "Every brace and sleeve they make. Nothing worked. Nothing lasted. Nothing gave me my life back.",
  "location": "L-N-KITCHEN",
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: one push away across the table — one push, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
  "music": "MUS-EXPOSE",
  "onScreen": 4.88,
  "pinEnd": "no",
  "product": "absent · —",
+ "prompt": "For the line \"Every brace and sleeve they make. Nothing worked. Nothing lasted. Nothing gave me my life back.\": From this frame: one push away across the table — one push, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. The back of her right hand pushes the heap once across the table away from her, the bottles and sleeves sliding to the far edge, then she sits back in the chair, shoulders dropping, eyes on nothing past the lens, her left hand slack in her lap. Stylized 3D animation, exactly on model from the frame, every object rigid. No camera travel; nobody else; no cut; she never looks into the lens.",
+ "regens": 1,
  "section": "The low point and what failed — MUS-EXPOSE",
  "shot": "low · three-quarter · clean · MEDIUM",
  "songIn": 38.09,
  "songOut": 42.97,
  "stage": "broll",
  "staging": "hands: one movement, seated",
- "status": "ready",
+ "status": "regenerate",
  "storyDay": "N-D1c",
  "title": "low",
- "updatedAt": 1790877210667
+ "updatedAt": 1790878780497,
+ "videoAsset": "328dd584297d22eb45b1f385f1e68089",
+ "videoAt": 1790878081408,
+ "videoConnector": "Kling",
+ "videoJob": "AcYJ9QfUH3l7jIifoKDPi8NoYU_eRRW548XtPx00SKHA862Cg3PIS6bMl8ZZXT1bdFok4z2p",
+ "videoNote": "first clip of this beat, from the confirmed v3 A · what I see: the push lands, then the heap on the table thins out and vanishes by the end, and her mouth moves as if talking",
+ "videoRes": "1072×1928",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/b0bab431-325a-4f4c-84fc-48b293345db5-0l6uDJmH4CjSRbs6JlloPg-output.mp4?x-kcdn-pid=112372",
+ "videoVersions": [
+  {
+   "asset": "328dd584297d22eb45b1f385f1e68089",
+   "at": 1790878081408,
+   "connector": "Kling",
+   "credits": 48,
+   "duration": 6.04,
+   "fromImage": 3,
+   "job": "AcYJ9QfUH3l7jIifoKDPi8NoYU_eRRW548XtPx00SKHA862Cg3PIS6bMl8ZZXT1bdFok4z2p",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v3 A (job 8545c58b) · what I see: the push lands, then the heap on the table thins out and vanishes by the end, and her mouth moves as if talking",
+   "res": "1072×1928",
+   "size": 6887306,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/b0bab431-325a-4f4c-84fc-48b293345db5-0l6uDJmH4CjSRbs6JlloPg-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  }
+ ]
 }

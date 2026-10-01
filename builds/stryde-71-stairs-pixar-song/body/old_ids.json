@@ -25,5 +25,11 @@
  "P-02a@v2A": "cfc3b2e15d01fc9898960e2a89726fa8",
  "P-02a@v2B": "d58e8be1156fcb062d2f4809db0b78aa",
  "P-03b@v2A": "eda0b4f758e4ec90cce64f04b19aa147",
- "P-03b@v2B": "0765000eb4d244f5d49f53fde364f0de"
+ "P-03b@v2B": "0765000eb4d244f5d49f53fde364f0de",
+ "P-01b@v3B": "bb9501fabb1e6667590468ced6b91bd3",
+ "P-02a@v3A": "fd5dd95d55dcceb1fa3f0a7d145ee021",
+ "P-01a@v3A": "f45252741e49aa00582f8d32d6ab75a7",
+ "P-01a@v3B": "15f1e565add70ed4e24d577b76063232",
+ "P-03b@v3A": "cfe4a555362c26e56cc082a3b0ac7a66",
+ "P-03b@v3B": "f92aa283dc68e07d19657bf1374c72ea"
 }
