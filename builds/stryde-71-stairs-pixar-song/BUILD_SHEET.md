@@ -1,6 +1,6 @@
 # Build Sheet — stryde-71-stairs-pixar-song
 
-**STRYDE Precision Strap · "A - VID | Pixar Song | TOF | Pure Mechanism | Iteration | 71 Stairs Black American Woman"** · Standards V7.74.2 · **RUN: MANUAL** · **Mode 2 — 3D Pixar** · 2026-10-01
+**STRYDE Precision Strap · "A - VID | Pixar Song | TOF | Pure Mechanism | Iteration | 71 Stairs Black American Woman"** · Standards V7.75.1 · **RUN: MANUAL** · **Mode 2 — 3D Pixar** · 2026-10-01
 
 Steps 1–3 of §18. **Stopped at the avatar review (§18B, V7.62.0)**: steps 4–5 wait for the user's go.
 Boards: Current https://claude.ai/artifact/NPMPgJeXr6cgTvtuFGhkZc · Old https://claude.ai/artifact/3pEQz2pWLJwTNX5TuBdccV · Final https://claude.ai/artifact/FYK7PCvgLG4SLzj72YdBPn · Plan https://claude.ai/artifact/VEE8gmwPVbvhVMNSC5rBLY
@@ -194,6 +194,7 @@ Held in the Product Sheet register (user-confirmed V7.49.29): three years with o
 | Video (B-roll, hook) | Kling 3.0 (`kling-video-v3_0_omni`), start image, render rigs RV / R4 only, `PIX-MOTION`, `prefer_multi_shots: false`, §35A ≤ 1,000 chars | §4, §24, §27G |
 | **Voice** | **the supplied song — locked as generated.** No §22U clone, no TTS, no `vo_trim.py`, no talking heads. Word timestamps `work/lyrics.timed.json` are the voice master's timeline (E6, §30H) | VN01 |
 | Captions | CapCut, lyric lines verbatim (EG01) | §17 |
+| Music (§40A, V7.75.0) | **none added** — the song is the voice and the music in one; its own arrangement carries the §40A register map (sparse under the problem, fuller at the turn — read off the track at step 5, not composed). No BGM under the song, no `music.py` cue | §40A, §24M |
 | Edit | `EDIT-STRYDE-71-SONG`; cuts on the song's beat; `assemble.py` plan from the song's word times; export native 9:16; audio normalised −14 LUFS | §30H, §42 Part 3A |
 
 **Other locks:** format **Narrated B-roll, variant A** (the narrator seen, never addressing — §3A; F3); **side: right knee** ("an ice pack on my right knee" → `SIDE_RULE`); mechanism claim: **protection**; hooks: **1, in the song → 1 finished video (3:48)**; the §24 hybrid (Mode 1 proof/offer/close) **not applied** — the brief says Pixar (F2).
