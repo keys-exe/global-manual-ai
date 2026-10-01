@@ -1,0 +1,45 @@
+{
+ "beat": "HK-01a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"I'm seventy-one, and I take the stairs faster than women half my age.\": Keep this photo exactly as it is — the flight, the handrails, the doors, the camera, the light — as a tall 9:16 crop on the middle lane of the flight, and add three women seen from behind. Image 1 is the plaza steps. Image 2 is the older woman.\nThe same woman as Image 2, seventy-one, in the middle lane on the 15th of 30 steps, her back to the lens, facing up the flight, eyes on the doors, mid-stride, weight on her right foot, left foot lifting to the 16th, both hands free, head up, one cheek and the edge of a smile past the hat brim; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. Below her two women of thirty-five in grey and navy sweatshirts and leggings, backs to the lens, walking up slowly on the 11th and 10th steps, one hand on the rail, left behind.\nIn the frame: the three women, the one flight of Image 1, the handrails, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1, a catchlight in her eye. Clothing plain — no lettering, logos or labels; no fourth person; nobody in profile.",
+ "script_line": "I'm seventy-one, and I take the stairs faster than women half my age.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P8-PLAZA plate",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "P8-PLAZA (confirmed)",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22",
+  "HT05",
+  "HT23",
+  "HT24"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user: hk01 she is facing the wrong way"
+}
