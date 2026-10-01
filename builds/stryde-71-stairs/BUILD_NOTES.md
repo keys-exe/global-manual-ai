@@ -349,4 +349,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - Combined cue `MUS-FINAL.v5.cue.json` with `product_at` 72.28: plan PASS. Bed check passes except the CLICK flags, all located on musical onsets.
     - Mixed at −8.0 dB music gain: 18.1 dB under the voice in pauses, 26.2 under speech, −14.4 LUFS.
     - FINAL-HK1/HK2 **cut 5** (local `_v6`) are on Final 2 as `review`. The MUS-FINAL card has v5 (A), v6 (B) and v7 (bed).
+  - **2026-10-01: the finish (user: "confirm proceed").** Confirmed on the user's word: MUS-FINAL and FINAL-HK1/HK2 cut 5 (C-05a v3 and PR-01b v3 were already confirmed on the board).
+    - **Cut 6** (local `_v7`): EG01 boxed captions burned in by `work/captions.py`. Black text on white boxes, centred at 72%, phrase by phrase; long clauses split evenly; no caption ends on a small word; no word stands alone unless it is a one-word phrase.
+    - The captions are the script verbatim, all 613 words in order (checked). They are timed to each video's own audio: Whisper aligned to the script, 581/584 words matched and the rest spread between neighbours.
+    - On Final 2 as `review`.
+    - **Shot match (§40 step 1, Mode 1: no LUT, no creative grade):** `light_check.py colour` per scene (location + story day, anatomy excluded). 15 clips are off their scene's first shot; the largest are T-01b and T-02b at the reception, about 30% darker.
+    - Left for the team in CapCut desktop as `edit/CAPCUT_MATCH.md`, also `docs/match` on the Plan board. The clips were not changed.
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
