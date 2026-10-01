@@ -1820,7 +1820,7 @@
   "side": "front",
   "scale": "MEDIUM",
   "fg": "clean",
-  "why": "high = her view of the package on her stair",
+  "why": "high = her view of the package on her table",
   "mirror_of": null,
   "mode": 1,
   "product_beat": true,
@@ -1830,14 +1830,14 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": "M-D2",
+  "story_day": "K-D1",
   "face": false,
   "light": {
-   "source": "Maureen's front-door glass, afternoon sun",
+   "source": "kitchen window over the sink",
    "key_side": "R",
-   "time": "afternoon",
-   "arc": "after: sun",
-   "kelvin": 5600,
+   "time": "morning",
+   "arc": "everyday: cool daylight",
+   "kelvin": 6500,
    "why": ""
   }
  },
