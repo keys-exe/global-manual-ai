@@ -64,6 +64,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   looking down to the front door, photo wall left, rail right — but the model also drew a gallery balustrade across the top of the frame and a second
   landing rail on the right (not in P0). On Current as To check; v3 to Old (b7ddb7b6…). Default branch merged (V7.77.1, HT22).
 
+- same session, ~12:25 UTC — user **"drop that"**: the landing plate P1 is dropped (§30G: hall, stairs and landing are TRAVERSED — they take the property
+  plate). HK-03a and P-02a become image edits of P0 (the top of the flight, HT17); act map / STEP4_5 / docs updated; P1 card removed from Current, all four
+  versions on the Old board. All seven remaining plates are confirmed → **step 6 (the hook) is unlocked.**
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator never sings to camera (default) vs two bookends · F4 "Stryde." · F10 Mode 2 sheet amendment / true Pro route on Kie · F12 BPM · F13 clipped master.
 
