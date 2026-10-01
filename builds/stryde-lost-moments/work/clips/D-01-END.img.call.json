@@ -1,0 +1,32 @@
+{
+ "beat": "D-01-END",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"A round is hours on your feet.\": Keep this photo exactly as it is \u2014 the place, the camera, the light, the clothes and everything in it. Image 1 is the photo. Change only where the two men are: both have walked three steps further up the fairway, a little smaller in the frame, each mid-stride, same hands on bag strap and trolley handle. An ordinary iPhone photo, nothing restyled. Clothing, bag and trolley plain \u2014 no lettering or logos; no third person.",
+ "script_line": "A round is hours on your feet.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "D-01 start (picked A)",
+   "kind": "frame"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-01.A.png",
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "ref_urls": [
+  "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-01.A.png"
+ ]
+}

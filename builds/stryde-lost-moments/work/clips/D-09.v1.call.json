@@ -1,0 +1,47 @@
+{
+ "beat": "D-09",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"Sports doctors recommend it.\": From this frame: he lifts his eyes from the strap to look ahead, about a second. Handheld phone, a gentle breath sway, the camera stays where it is. The strap stays still and rigid on his open palm, wordmark to us; his hand does not move. No speaking, no second strap.",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-09.B.png",
+ "start_approved": true,
+ "approved_by": "user picked B + CONFIRM (2026-10-01)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "Sports doctors recommend it.",
+ "motion_plan": "From this frame: he lifts his eyes from the strap to look ahead, about a second.",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP06",
+  "FP11",
+  "HT06",
+  "HT07",
+  "HT16",
+  "HT18"
+ ],
+ "risks": [
+  {
+   "risk": "the strap deforms",
+   "prevented_by": "still and rigid"
+  },
+  {
+   "risk": "he talks",
+   "prevented_by": "no speaking"
+  },
+  {
+   "risk": "hand regrips",
+   "prevented_by": "his hand does not move"
+  }
+ ]
+}

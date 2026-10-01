@@ -1,0 +1,65 @@
+{
+ "beat": "D-06",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"So you walk the course instead of watching it.\": he walks toward the lens past the parked white buggy, bag on his shoulder, his right leg stepping forward.\nMedium shot, low angle, three-quarter front, head to shins, the strapped right knee nearest the lens.\nImage 1: the strap (three-quarter). Image 2: the strap worn. Image 3: the course and buggy. Image 4: the man. Image 5: his bag. Image 6: his outfit.\nThe strap in Image 1 copied exactly \u2014 same shell, band, slides and wordmark, nothing redesigned \u2014 12 \u00d7 5 cm, about a quarter of the frame wide, seated just below his right kneecap as in Image 2, the kneecap uncovered. The same man as Image 4 in the polo and sleeveless pullover of Image 6, grey shorts, white-and-tan golf shoes, the bag of Image 5 on his right shoulder; the empty buggy of Image 3 behind him.\nRight hand on the bag strap, left arm swinging forward; looking ahead past the lens, smiling, mouth closed.\nIn the frame: one man, one bag, the buggy behind; nothing else.\nAfternoon sun from the right. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nClothing and bag plain \u2014 no lettering or logos but the strap's own wordmark; no second strap.",
+ "script_line": "So you walk the course instead of watching it.",
+ "face": true,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "product_tq_left.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "P6-COURSE plate (buggy)",
+   "kind": "location"
+  },
+  {
+   "label": "C4 Graham sheet",
+   "kind": "character"
+  },
+  {
+   "label": "D-HKa (his golf bag)",
+   "kind": "frame"
+  },
+  {
+   "label": "D-05 (good-round outfit)",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP07",
+  "FP11",
+  "FP12",
+  "HT01",
+  "HT06",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: he takes three steps toward the lens at one step per second, bag on his shoulder, about three seconds.",
+ "ref_urls": [
+  "products/stryde/stryde_refs/product_tq_left.jpg",
+  "products/stryde/stryde_refs/worn_front.jpg",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133541_e02553d3-aafb-4345-a6ef-97a97052c6fe.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_2bd591b1-d203-465c-aa46-7753d7f613e6.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_091748_93103d12-eb4e-444a-b035-84ebaf026a33.png",
+  "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-05.A.png"
+ ],
+ "fix_note": "HE WEARING STRYDE STRAP \u2192 reframed: low angle, head to shins, strapped right knee nearest the lens"
+}

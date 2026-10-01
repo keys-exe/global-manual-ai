@@ -1,0 +1,42 @@
+{
+ "beat": "D-05",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"And the pain just lifts.\": From this frame: his shoulders drop on one long breath out and his face eases, about two seconds. Handheld phone, a gentle breath sway, the camera stays where it is. Both hands stay on the club grip; the club stays rigid and upright. No speaking, no walking.",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-05.A.png",
+ "start_approved": true,
+ "approved_by": "user picked A + CONFIRM (2026-10-01)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "And the pain just lifts.",
+ "motion_plan": "From this frame: his shoulders drop on one long breath out and his face eases, about two seconds.",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "taste": [
+  "HT12",
+  "HT18",
+  "HT20"
+ ],
+ "risks": [
+  {
+   "risk": "he talks",
+   "prevented_by": "no speaking"
+  },
+  {
+   "risk": "he walks off",
+   "prevented_by": "no walking"
+  },
+  {
+   "risk": "the club bends",
+   "prevented_by": "rigid and upright"
+  }
+ ]
+}

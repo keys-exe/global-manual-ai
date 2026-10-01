@@ -1,0 +1,43 @@
+{
+ "beat": "D-03",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"By the back nine, that spot is finished.\": From this frame: he shifts his weight onto the club once and stays bent, about a second. Handheld phone, a gentle breath sway, the camera stays where it is. His left hand stays on the club, his right hand stays on his right knee; the club stays one straight rigid shaft. No walking, no standing up straight, no speaking.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-03.B.png",
+ "start_approved": true,
+ "approved_by": "user picked B + CONFIRM (2026-10-01)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "By the back nine, that spot is finished.",
+ "motion_plan": "From this frame: he shifts his weight onto the club once and stays bent, about a second.",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT18",
+  "HT19"
+ ],
+ "risks": [
+  {
+   "risk": "he walks off",
+   "prevented_by": "no walking"
+  },
+  {
+   "risk": "the club bends",
+   "prevented_by": "one straight rigid shaft"
+  },
+  {
+   "risk": "hands swap places",
+   "prevented_by": "left on club, right on knee"
+  }
+ ]
+}
