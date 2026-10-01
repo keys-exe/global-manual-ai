@@ -1,0 +1,44 @@
+{
+ "beat": "E-03",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"And the pain just lifts.\": From this frame: his shoulders drop on one long breath out and his face eases into relief, about two seconds. Handheld phone, a gentle breath sway, the camera stays where it is. His hands stay resting on his right thigh; the strap stays rigid and in place just below his right kneecap, wordmark to us. He stays kneeling. No standing up, no speaking, no second strap.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actE/E-03.v2.A.png",
+ "start_approved": true,
+ "approved_by": "user picked A (v3) on the board + CONFIRM (2026-10-01)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "And the pain just lifts.",
+ "motion_plan": "From this frame: his shoulders drop on one long breath out and his face eases into relief, about two seconds.",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "taste": [
+  "FP01",
+  "FP03",
+  "FP05",
+  "HT07",
+  "HT13"
+ ],
+ "risks": [
+  {
+   "risk": "strap slides or bends",
+   "prevented_by": "strap rigid and in place"
+  },
+  {
+   "risk": "he gets up",
+   "prevented_by": "stays kneeling; no standing up"
+  },
+  {
+   "risk": "hands drift onto the strap",
+   "prevented_by": "hands stay on his right thigh"
+  }
+ ]
+}
