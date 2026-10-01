@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""EG01 boxed captions for a finished video: the script's spoken lines verbatim, timed to the video's own audio
-(Whisper word times aligned to the script by assemble.align), phrase by phrase, black text on white boxes,
+"""Captions (cut 8: no background box) for a finished video: the script's spoken lines verbatim, timed to the video's own audio
+(Whisper word times aligned to the script by assemble.align), phrase by phrase, white text with a black outline, no box (user 2026-10-01: "remove the caption background"),
 one or two short lines, centred at ~72% height. Writes an .ass file and burns it in.
 Usage: captions.py FINAL.mp4 OUT.mp4 [--script work/script.lines.txt] [--ass out.ass]"""
 import sys, re, json, argparse, subprocess
@@ -60,7 +60,7 @@ WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Box,DejaVu Sans,64,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,1,0,0,0,100,100,0,0,3,14,0,5,60,60,0,1
+Style: Box,DejaVu Sans,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,5,2,5,60,60,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text

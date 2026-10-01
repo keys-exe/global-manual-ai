@@ -369,4 +369,18 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - The MUS-FINAL card has v8 (bed v6), `review`. `docs/music` on Plan and Current 2 is updated.
     - Final 2 is near 1 GB, so **Final 3** https://claude.ai/artifact/P5J5XwVeLRrFR1nbSPaLj4 (template, `BOARD_ROLE` "final") was published. The `builds` doc's `boards.final` on every board points to it.
     - FINAL-HK1/HK2 **cut 7** (local `_v10`; `_v8` no music, `_v9` music) are on Final 3 as `review`: 210.9 s, −14.4 LUFS, captions verbatim (613 words).
+  - **2026-10-01: cut 8 (user: "REMOVE THE CAPTION BACKGROUND, THEN SOME BROLLS STILL LATE OR EARLY TO SHOW AND END FIX THE BROLL PLACEMENTS").** The default branch (V7.79.1, §30H rules 0/1/5/6: cut on the line, a hold never runs into the next line, no word under another line's picture) was merged.
+    - Captions (`work/captions.py`): white text with a black outline and a light shadow, no box. Same phrasing and timing; all 613 words verbatim.
+    - `work/script.lines.txt` held one paragraph per line, so the new line check saw no line ends. `work/script.sentences.txt` has one sentence per line (93, the same 613 words), and `work/plan_rough_v5.json` uses it.
+    - The check found six B-rolls running into the next sentence (P-01b, P-02a, P-04d, PR-02a, L-03a) or cutting in mid-sentence (T-02a on "and").
+    - Fixes:
+      - The P-02a and R-03a phrases are back on their own sentences.
+      - T-01b and T-02a: T-01b runs "My cousin Loretta was there. She's 74," then T-02a cuts in on "and she was out on that dance floor".
+      - P-04d ends at 33.08 s (`in` 0.4, `out` 2.5), before "Nothing worked."
+      - L-03a holds over "I said, 'I know.'" on purpose (`span: hold`). It is the same moment, and the face gap would be under 1.5 s.
+    - Lines too short for a 2.0 s picture share one clip with their neighbour (`work/composite.py`), each picture changing on its own line: `P-01ab_pair`, `P-0203_pair`, `R-0304_pair`, `T-01b-02a_pair`, and `PR-01-02_montage` (the 4-person montage then PR-02a). The P-04abc list stays.
+    - Rough cut v5 PASS: 45 cuts, each 0.08–0.27 s before its sentence's first word, at least 2.0 s on screen, and none over another sentence's words except the L-03a hold (`edit/ROUGH_BODY_v5.timing.json`).
+    - The strap shot is back on "She pulled up her pant leg", so its first frame is 71.33 s. Music re-spliced from the same two pieces (`MUS-FINAL.v7.cue.json`, bed v7): plan OK; the check flags only CLICK onsets. The MUS-FINAL card has v9 (`review`). `docs/music` on Plan and Current 2 and BUILD_SHEET 5c are updated.
+    - FINAL-HK1/HK2 **cut 8** (local `_v13`; `_v11` no music, `_v12` music) are on Final 3 as v8, `review`: 210.9 s, −14.4 LUFS. Final 3 now holds about 580 MB.
+    - The hourly Fix check prompt points at plan v5, bed v7 and 71.33 s.
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.

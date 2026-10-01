@@ -1,0 +1,175 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Box,DejaVu Sans,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,5,2,5,60,60,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.15,Box,,0,0,0,,{\pos(540,1382)}I'm 71,
+Dialogue: 0,0:00:01.26,0:00:02.60,Box,,0,0,0,,{\pos(540,1382)}and I take the\Nstairs faster
+Dialogue: 0,0:00:02.60,0:00:04.33,Box,,0,0,0,,{\pos(540,1382)}than women\Nhalf my age.
+Dialogue: 0,0:00:04.36,0:00:05.26,Box,,0,0,0,,{\pos(540,1382)}Last Sunday,
+Dialogue: 0,0:00:05.26,0:00:06.50,Box,,0,0,0,,{\pos(540,1382)}my daughter\Nwalked behind me
+Dialogue: 0,0:00:06.50,0:00:08.13,Box,,0,0,0,,{\pos(540,1382)}the whole way\Nup and said,
+Dialogue: 0,0:00:08.60,0:00:09.20,Box,,0,0,0,,{\pos(540,1382)}"Mama,
+Dialogue: 0,0:00:09.38,0:00:10.79,Box,,0,0,0,,{\pos(540,1382)}when did that happen?"
+Dialogue: 0,0:00:11.22,0:00:12.36,Box,,0,0,0,,{\pos(540,1382)}Six weeks ago,
+Dialogue: 0,0:00:12.36,0:00:13.06,Box,,0,0,0,,{\pos(540,1382)}I was going down
+Dialogue: 0,0:00:13.06,0:00:14.37,Box,,0,0,0,,{\pos(540,1382)}my stairs backwards.
+Dialogue: 0,0:00:14.70,0:00:16.01,Box,,0,0,0,,{\pos(540,1382)}One step at a time.
+Dialogue: 0,0:00:16.42,0:00:17.33,Box,,0,0,0,,{\pos(540,1382)}I ain't gonna lie,
+Dialogue: 0,0:00:17.46,0:00:18.42,Box,,0,0,0,,{\pos(540,1382)}some days I\Nwasn't going
+Dialogue: 0,0:00:18.42,0:00:19.20,Box,,0,0,0,,{\pos(540,1382)}down them at all.
+Dialogue: 0,0:00:19.20,0:00:20.89,Box,,0,0,0,,{\pos(540,1382)}I'd just stay\Nupstairs.
+Dialogue: 0,0:00:21.26,0:00:22.48,Box,,0,0,0,,{\pos(540,1382)}That big knee\Nbrace I bought
+Dialogue: 0,0:00:22.48,0:00:24.25,Box,,0,0,0,,{\pos(540,1382)}slid right\Ndown my leg.
+Dialogue: 0,0:00:24.26,0:00:25.10,Box,,0,0,0,,{\pos(540,1382)}By evening,
+Dialogue: 0,0:00:25.10,0:00:26.14,Box,,0,0,0,,{\pos(540,1382)}it was around\Nmy ankle.
+Dialogue: 0,0:00:26.14,0:00:28.29,Box,,0,0,0,,{\pos(540,1382)}I done tried\Neverything.
+Dialogue: 0,0:00:28.56,0:00:29.73,Box,,0,0,0,,{\pos(540,1382)}Physical therapy.
+Dialogue: 0,0:00:29.94,0:00:30.79,Box,,0,0,0,,{\pos(540,1382)}Pain pills.
+Dialogue: 0,0:00:30.82,0:00:32.00,Box,,0,0,0,,{\pos(540,1382)}Cortisone shots.
+Dialogue: 0,0:00:32.00,0:00:34.25,Box,,0,0,0,,{\pos(540,1382)}Every brace and\Nsleeve they make.
+Dialogue: 0,0:00:34.44,0:00:35.41,Box,,0,0,0,,{\pos(540,1382)}Nothing worked.
+Dialogue: 0,0:00:35.48,0:00:36.51,Box,,0,0,0,,{\pos(540,1382)}Nothing lasted.
+Dialogue: 0,0:00:37.00,0:00:38.59,Box,,0,0,0,,{\pos(540,1382)}Nothing gave me\Nmy life back.
+Dialogue: 0,0:00:39.00,0:00:40.30,Box,,0,0,0,,{\pos(540,1382)}Then my grandbaby got
+Dialogue: 0,0:00:40.30,0:00:41.25,Box,,0,0,0,,{\pos(540,1382)}married in June.
+Dialogue: 0,0:00:41.52,0:00:42.89,Box,,0,0,0,,{\pos(540,1382)}My cousin Loretta\Nwas there.
+Dialogue: 0,0:00:42.98,0:00:44.19,Box,,0,0,0,,{\pos(540,1382)}She's 74,
+Dialogue: 0,0:00:44.38,0:00:45.04,Box,,0,0,0,,{\pos(540,1382)}and she was out
+Dialogue: 0,0:00:45.04,0:00:47.03,Box,,0,0,0,,{\pos(540,1382)}on that dance\Nfloor all night.
+Dialogue: 0,0:00:47.28,0:00:48.34,Box,,0,0,0,,{\pos(540,1382)}Electric Slide,
+Dialogue: 0,0:00:48.34,0:00:49.31,Box,,0,0,0,,{\pos(540,1382)}Cupid Shuffle,
+Dialogue: 0,0:00:49.38,0:00:50.13,Box,,0,0,0,,{\pos(540,1382)}all of it.
+Dialogue: 0,0:00:50.26,0:00:50.84,Box,,0,0,0,,{\pos(540,1382)}Both her knees
+Dialogue: 0,0:00:50.84,0:00:52.27,Box,,0,0,0,,{\pos(540,1382)}was bone on bone too.
+Dialogue: 0,0:00:52.62,0:00:54.00,Box,,0,0,0,,{\pos(540,1382)}I always figured\Nhers wasn't
+Dialogue: 0,0:00:54.00,0:00:54.80,Box,,0,0,0,,{\pos(540,1382)}as bad as mine.
+Dialogue: 0,0:00:54.80,0:00:56.26,Box,,0,0,0,,{\pos(540,1382)}I always figured mine
+Dialogue: 0,0:00:56.26,0:00:57.45,Box,,0,0,0,,{\pos(540,1382)}was past fixing.
+Dialogue: 0,0:00:57.86,0:00:58.64,Box,,0,0,0,,{\pos(540,1382)}Loretta came to stay
+Dialogue: 0,0:00:58.64,0:00:59.61,Box,,0,0,0,,{\pos(540,1382)}the week after.
+Dialogue: 0,0:00:59.78,0:01:00.40,Box,,0,0,0,,{\pos(540,1382)}She watched me
+Dialogue: 0,0:01:00.40,0:01:01.20,Box,,0,0,0,,{\pos(540,1382)}at the kitchen table,
+Dialogue: 0,0:01:01.20,0:01:02.73,Box,,0,0,0,,{\pos(540,1382)}going through my\Nmorning routine.
+Dialogue: 0,0:01:03.16,0:01:04.68,Box,,0,0,0,,{\pos(540,1382)}Two\Nanti-inflammatories,
+Dialogue: 0,0:01:04.68,0:01:05.28,Box,,0,0,0,,{\pos(540,1382)}the gel,
+Dialogue: 0,0:01:05.40,0:01:05.74,Box,,0,0,0,,{\pos(540,1382)}the brace,
+Dialogue: 0,0:01:05.74,0:01:06.62,Box,,0,0,0,,{\pos(540,1382)}an ice pack
+Dialogue: 0,0:01:06.62,0:01:07.65,Box,,0,0,0,,{\pos(540,1382)}on my right knee.
+Dialogue: 0,0:01:07.96,0:01:09.35,Box,,0,0,0,,{\pos(540,1382)}After a minute\Nshe said,
+Dialogue: 0,0:01:09.52,0:01:10.12,Box,,0,0,0,,{\pos(540,1382)}"Baby,
+Dialogue: 0,0:01:10.16,0:01:11.27,Box,,0,0,0,,{\pos(540,1382)}can I show you\Nsomething?"
+Dialogue: 0,0:01:11.52,0:01:12.95,Box,,0,0,0,,{\pos(540,1382)}She pulled up\Nher pant leg.
+Dialogue: 0,0:01:13.08,0:01:13.58,Box,,0,0,0,,{\pos(540,1382)}She had on
+Dialogue: 0,0:01:13.58,0:01:14.56,Box,,0,0,0,,{\pos(540,1382)}a little black strap,
+Dialogue: 0,0:01:14.56,0:01:16.29,Box,,0,0,0,,{\pos(540,1382)}right under\Nher kneecap.
+Dialogue: 0,0:01:16.29,0:01:17.22,Box,,0,0,0,,{\pos(540,1382)}Stryde.
+Dialogue: 0,0:01:17.22,0:01:18.37,Box,,0,0,0,,{\pos(540,1382)}She handed me one.
+Dialogue: 0,0:01:18.62,0:01:19.95,Box,,0,0,0,,{\pos(540,1382)}It looked ridiculous.
+Dialogue: 0,0:01:20.10,0:01:20.84,Box,,0,0,0,,{\pos(540,1382)}Too small.
+Dialogue: 0,0:01:20.84,0:01:21.86,Box,,0,0,0,,{\pos(540,1382)}I said,
+Dialogue: 0,0:01:21.86,0:01:22.36,Box,,0,0,0,,{\pos(540,1382)}"Loretta,
+Dialogue: 0,0:01:22.36,0:01:23.22,Box,,0,0,0,,{\pos(540,1382)}you know good and well
+Dialogue: 0,0:01:23.22,0:01:23.96,Box,,0,0,0,,{\pos(540,1382)}this ain't gonna work
+Dialogue: 0,0:01:23.96,0:01:25.19,Box,,0,0,0,,{\pos(540,1382)}on knees like mine."
+Dialogue: 0,0:01:25.30,0:01:26.07,Box,,0,0,0,,{\pos(540,1382)}She said,
+Dialogue: 0,0:01:26.18,0:01:26.84,Box,,0,0,0,,{\pos(540,1382)}"Just put it on
+Dialogue: 0,0:01:26.84,0:01:28.35,Box,,0,0,0,,{\pos(540,1382)}and walk down\Nthem stairs."
+Dialogue: 0,0:01:28.74,0:01:29.18,Box,,0,0,0,,{\pos(540,1382)}I did.
+Dialogue: 0,0:01:29.18,0:01:30.58,Box,,0,0,0,,{\pos(540,1382)}Chile,
+Dialogue: 0,0:01:30.58,0:01:31.65,Box,,0,0,0,,{\pos(540,1382)}the first step,
+Dialogue: 0,0:01:31.68,0:01:32.32,Box,,0,0,0,,{\pos(540,1382)}I didn't even have
+Dialogue: 0,0:01:32.32,0:01:33.35,Box,,0,0,0,,{\pos(540,1382)}to hold the rail.
+Dialogue: 0,0:01:33.60,0:01:34.47,Box,,0,0,0,,{\pos(540,1382)}Not the second.
+Dialogue: 0,0:01:34.52,0:01:35.49,Box,,0,0,0,,{\pos(540,1382)}Not the third.
+Dialogue: 0,0:01:35.76,0:01:37.06,Box,,0,0,0,,{\pos(540,1382)}All the way down.
+Dialogue: 0,0:01:37.06,0:01:37.97,Box,,0,0,0,,{\pos(540,1382)}Both feet.
+Dialogue: 0,0:01:38.04,0:01:38.81,Box,,0,0,0,,{\pos(540,1382)}Forwards.
+Dialogue: 0,0:01:39.08,0:01:39.95,Box,,0,0,0,,{\pos(540,1382)}She said,
+Dialogue: 0,0:01:40.08,0:01:41.24,Box,,0,0,0,,{\pos(540,1382)}"Everything\Nelse you tried
+Dialogue: 0,0:01:41.24,0:01:42.16,Box,,0,0,0,,{\pos(540,1382)}was made to keep you
+Dialogue: 0,0:01:42.16,0:01:44.07,Box,,0,0,0,,{\pos(540,1382)}comfortable while\Nyour knee got worse.
+Dialogue: 0,0:01:44.38,0:01:46.49,Box,,0,0,0,,{\pos(540,1382)}This one fixes\Nwhy it hurts."
+Dialogue: 0,0:01:46.78,0:01:47.46,Box,,0,0,0,,{\pos(540,1382)}She said,
+Dialogue: 0,0:01:47.46,0:01:48.64,Box,,0,0,0,,{\pos(540,1382)}"There's one\Nspot under
+Dialogue: 0,0:01:48.64,0:01:50.87,Box,,0,0,0,,{\pos(540,1382)}the kneecap where\Nevery step lands."
+Dialogue: 0,0:01:51.18,0:01:52.05,Box,,0,0,0,,{\pos(540,1382)}"Every brace,
+Dialogue: 0,0:01:52.12,0:01:52.88,Box,,0,0,0,,{\pos(540,1382)}every shot,
+Dialogue: 0,0:01:52.88,0:01:54.34,Box,,0,0,0,,{\pos(540,1382)}every pill\Nyou ever tried
+Dialogue: 0,0:01:54.34,0:01:55.65,Box,,0,0,0,,{\pos(540,1382)}treated the\Nwhole knee.
+Dialogue: 0,0:01:55.82,0:01:56.73,Box,,0,0,0,,{\pos(540,1382)}Not that spot.
+Dialogue: 0,0:01:56.96,0:01:58.39,Box,,0,0,0,,{\pos(540,1382)}That's why ain't\Nnothing worked."
+Dialogue: 0,0:01:58.70,0:02:00.13,Box,,0,0,0,,{\pos(540,1382)}"The pain is pressure.
+Dialogue: 0,0:02:00.20,0:02:01.23,Box,,0,0,0,,{\pos(540,1382)}That's all it is.
+Dialogue: 0,0:02:01.44,0:02:02.74,Box,,0,0,0,,{\pos(540,1382)}This strap\Nsits right on
+Dialogue: 0,0:02:02.74,0:02:04.55,Box,,0,0,0,,{\pos(540,1382)}that spot and takes\Nthe weight off."
+Dialogue: 0,0:02:04.82,0:02:05.73,Box,,0,0,0,,{\pos(540,1382)}First step.
+Dialogue: 0,0:02:05.92,0:02:06.73,Box,,0,0,0,,{\pos(540,1382)}Pain gone.
+Dialogue: 0,0:02:06.84,0:02:07.87,Box,,0,0,0,,{\pos(540,1382)}Just like that.
+Dialogue: 0,0:02:08.10,0:02:10.81,Box,,0,0,0,,{\pos(540,1382)}Over 200,000 people\Nwear one now.
+Dialogue: 0,0:02:11.00,0:02:12.48,Box,,0,0,0,,{\pos(540,1382)}Sports doctors\Nrecommend it.
+Dialogue: 0,0:02:12.48,0:02:13.65,Box,,0,0,0,,{\pos(540,1382)}Not the pharma\Ncompanies.
+Dialogue: 0,0:02:13.68,0:02:14.87,Box,,0,0,0,,{\pos(540,1382)}Sports doctors.
+Dialogue: 0,0:02:15.18,0:02:16.34,Box,,0,0,0,,{\pos(540,1382)}Loretta's husband\Nwears one.
+Dialogue: 0,0:02:16.34,0:02:17.38,Box,,0,0,0,,{\pos(540,1382)}He's 76,
+Dialogue: 0,0:02:17.38,0:02:18.24,Box,,0,0,0,,{\pos(540,1382)}and he plays golf
+Dialogue: 0,0:02:18.24,0:02:19.41,Box,,0,0,0,,{\pos(540,1382)}twice a week.
+Dialogue: 0,0:02:19.50,0:02:20.32,Box,,0,0,0,,{\pos(540,1382)}Her niece wears one
+Dialogue: 0,0:02:20.32,0:02:21.41,Box,,0,0,0,,{\pos(540,1382)}when she runs track.
+Dialogue: 0,0:02:21.50,0:02:22.47,Box,,0,0,0,,{\pos(540,1382)}She's 22.
+Dialogue: 0,0:02:22.74,0:02:23.90,Box,,0,0,0,,{\pos(540,1382)}I've worn mine every
+Dialogue: 0,0:02:23.90,0:02:25.33,Box,,0,0,0,,{\pos(540,1382)}day for six weeks.
+Dialogue: 0,0:02:25.42,0:02:26.31,Box,,0,0,0,,{\pos(540,1382)}Under my clothes.
+Dialogue: 0,0:02:26.34,0:02:27.59,Box,,0,0,0,,{\pos(540,1382)}Don't nobody\Nknow it's there.
+Dialogue: 0,0:02:27.82,0:02:28.45,Box,,0,0,0,,{\pos(540,1382)}No pills.
+Dialogue: 0,0:02:28.62,0:02:29.27,Box,,0,0,0,,{\pos(540,1382)}No gel.
+Dialogue: 0,0:02:29.52,0:02:30.22,Box,,0,0,0,,{\pos(540,1382)}No brace around
+Dialogue: 0,0:02:30.22,0:02:31.83,Box,,0,0,0,,{\pos(540,1382)}my ankle by lunchtime.
+Dialogue: 0,0:02:32.06,0:02:34.25,Box,,0,0,0,,{\pos(540,1382)}Yesterday I walked\Nto the store.
+Dialogue: 0,0:02:34.46,0:02:35.39,Box,,0,0,0,,{\pos(540,1382)}Two miles there.
+Dialogue: 0,0:02:35.58,0:02:36.36,Box,,0,0,0,,{\pos(540,1382)}Two miles back.
+Dialogue: 0,0:02:36.36,0:02:38.76,Box,,0,0,0,,{\pos(540,1382)}Passed three\Nwomen half my age.
+Dialogue: 0,0:02:38.76,0:02:40.76,Box,,0,0,0,,{\pos(540,1382)}Stood in that\Ncheckout line ten
+Dialogue: 0,0:02:40.76,0:02:42.40,Box,,0,0,0,,{\pos(540,1382)}minutes without\Nshifting my weight.
+Dialogue: 0,0:02:42.40,0:02:44.39,Box,,0,0,0,,{\pos(540,1382)}Carried two bags home.
+Dialogue: 0,0:02:44.54,0:02:46.05,Box,,0,0,0,,{\pos(540,1382)}Didn't nobody help me.
+Dialogue: 0,0:02:46.38,0:02:47.24,Box,,0,0,0,,{\pos(540,1382)}When I got home,
+Dialogue: 0,0:02:47.24,0:02:48.25,Box,,0,0,0,,{\pos(540,1382)}my husband said,
+Dialogue: 0,0:02:48.54,0:02:49.87,Box,,0,0,0,,{\pos(540,1382)}"You was gone\Na long time."
+Dialogue: 0,0:02:50.08,0:02:50.75,Box,,0,0,0,,{\pos(540,1382)}I said,
+Dialogue: 0,0:02:50.96,0:02:51.56,Box,,0,0,0,,{\pos(540,1382)}"I know."
+Dialogue: 0,0:02:51.82,0:02:52.92,Box,,0,0,0,,{\pos(540,1382)}That was six weeks
+Dialogue: 0,0:02:52.92,0:02:54.01,Box,,0,0,0,,{\pos(540,1382)}of wearing the strap.
+Dialogue: 0,0:02:54.18,0:02:55.05,Box,,0,0,0,,{\pos(540,1382)}Nothing else.
+Dialogue: 0,0:02:55.30,0:02:57.12,Box,,0,0,0,,{\pos(540,1382)}Three ladies from\Nchurch already ordered
+Dialogue: 0,0:02:57.12,0:02:58.32,Box,,0,0,0,,{\pos(540,1382)}one after they\Nwatched me come
+Dialogue: 0,0:02:58.32,0:02:59.51,Box,,0,0,0,,{\pos(540,1382)}down the church steps.
+Dialogue: 0,0:02:59.70,0:03:00.54,Box,,0,0,0,,{\pos(540,1382)}So I'ma just say
+Dialogue: 0,0:03:00.54,0:03:01.43,Box,,0,0,0,,{\pos(540,1382)}it right here.
+Dialogue: 0,0:03:01.66,0:03:04.43,Box,,0,0,0,,{\pos(540,1382)}It's called Stryde\NPatellar Force Redirection.
+Dialogue: 0,0:03:04.62,0:03:06.30,Box,,0,0,0,,{\pos(540,1382)}They spent three\Nyears designing
+Dialogue: 0,0:03:06.30,0:03:07.83,Box,,0,0,0,,{\pos(540,1382)}it with orthopedic\Nsurgeons.
+Dialogue: 0,0:03:08.04,0:03:09.29,Box,,0,0,0,,{\pos(540,1382)}It's the real thing.
+Dialogue: 0,0:03:09.46,0:03:10.84,Box,,0,0,0,,{\pos(540,1382)}Not them cheap\Nknock-offs they
+Dialogue: 0,0:03:10.84,0:03:11.74,Box,,0,0,0,,{\pos(540,1382)}be selling on Amazon
+Dialogue: 0,0:03:11.74,0:03:13.13,Box,,0,0,0,,{\pos(540,1382)}and them fake\Nwebsites.
+Dialogue: 0,0:03:13.58,0:03:15.01,Box,,0,0,0,,{\pos(540,1382)}The link's right\Ndown below.
+Dialogue: 0,0:03:15.24,0:03:16.32,Box,,0,0,0,,{\pos(540,1382)}Two straps\Nfor the price
+Dialogue: 0,0:03:16.32,0:03:17.42,Box,,0,0,0,,{\pos(540,1382)}of one right now.
+Dialogue: 0,0:03:17.42,0:03:18.76,Box,,0,0,0,,{\pos(540,1382)}Sixty days to send
+Dialogue: 0,0:03:18.76,0:03:19.88,Box,,0,0,0,,{\pos(540,1382)}them back if\Nthey don't work.
+Dialogue: 0,0:03:19.88,0:03:22.17,Box,,0,0,0,,{\pos(540,1382)}Eleven years\Nof knee pain.
+Dialogue: 0,0:03:22.42,0:03:23.50,Box,,0,0,0,,{\pos(540,1382)}Gone the first step
+Dialogue: 0,0:03:23.50,0:03:24.69,Box,,0,0,0,,{\pos(540,1382)}I took with it on.
+Dialogue: 0,0:03:24.98,0:03:25.72,Box,,0,0,0,,{\pos(540,1382)}I bought my sister
+Dialogue: 0,0:03:25.72,0:03:27.09,Box,,0,0,0,,{\pos(540,1382)}a pair that same week.
+Dialogue: 0,0:03:27.16,0:03:28.17,Box,,0,0,0,,{\pos(540,1382)}She coming Sunday.
+Dialogue: 0,0:03:28.42,0:03:29.22,Box,,0,0,0,,{\pos(540,1382)}She gon' walk up
+Dialogue: 0,0:03:29.22,0:03:30.85,Box,,0,0,0,,{\pos(540,1382)}my stairs on her own.
