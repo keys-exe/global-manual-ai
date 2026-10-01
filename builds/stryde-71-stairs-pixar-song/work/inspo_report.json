@@ -1,0 +1,766 @@
+[
+  {
+    "link": "builds/stryde-71-stairs-pixar-song/intake/71_Stairs HOOK+BODY 1.mp4",
+    "role": "primary",
+    "status": "OK",
+    "file": "builds/stryde-71-stairs-pixar-song/intake/71_Stairs HOOK+BODY 1.mp4",
+    "duration_s": 155.55,
+    "resolution": "1080x1920",
+    "aspect": "9:16",
+    "fps": 30.0,
+    "has_audio": true,
+    "shot_count": 82,
+    "mean_shot_s": 1.9,
+    "cut_times_s": [
+      3.6,
+      5.93,
+      7.57,
+      10.23,
+      12.27,
+      15.2,
+      17.67,
+      19.27,
+      20.43,
+      21.43,
+      22.23,
+      23.5,
+      25.33,
+      26.33,
+      28.9,
+      30.6,
+      32.83,
+      34.67,
+      36.73,
+      40.87,
+      42.43,
+      45.37,
+      49.07,
+      52.77,
+      55.6,
+      56.27,
+      58.83,
+      61.6,
+      63.73,
+      66.37,
+      70.27,
+      71.83,
+      73.17,
+      74.27,
+      76.0,
+      77.93,
+      79.37,
+      80.17,
+      81.1,
+      82.43,
+      83.43,
+      84.43,
+      85.7,
+      87.5,
+      89.17,
+      90.2,
+      92.27,
+      92.73,
+      93.17,
+      93.6,
+      94.07,
+      94.5,
+      96.0,
+      97.17,
+      98.27,
+      101.87,
+      104.6,
+      106.67,
+      108.67,
+      112.07,
+      113.5,
+      115.27,
+      117.43,
+      120.37,
+      122.57,
+      124.03,
+      126.1,
+      128.6,
+      131.43,
+      132.77,
+      135.6,
+      137.03,
+      138.43,
+      139.6,
+      140.7,
+      141.67,
+      143.07,
+      143.9,
+      145.67,
+      147.83,
+      150.93
+    ],
+    "silences_-40dB": [],
+    "silences_-30dB": [],
+    "shots": [
+      {
+        "shot": "S01",
+        "t_in": 0.0,
+        "t_out": 3.6,
+        "len_s": 3.6,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S01_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S01_mid.jpg"
+      },
+      {
+        "shot": "S02",
+        "t_in": 3.6,
+        "t_out": 5.93,
+        "len_s": 2.33,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S02_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S02_mid.jpg"
+      },
+      {
+        "shot": "S03",
+        "t_in": 5.93,
+        "t_out": 7.57,
+        "len_s": 1.64,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S03_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S03_mid.jpg"
+      },
+      {
+        "shot": "S04",
+        "t_in": 7.57,
+        "t_out": 10.23,
+        "len_s": 2.66,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S04_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S04_mid.jpg"
+      },
+      {
+        "shot": "S05",
+        "t_in": 10.23,
+        "t_out": 12.27,
+        "len_s": 2.04,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S05_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S05_mid.jpg"
+      },
+      {
+        "shot": "S06",
+        "t_in": 12.27,
+        "t_out": 15.2,
+        "len_s": 2.93,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S06_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S06_mid.jpg"
+      },
+      {
+        "shot": "S07",
+        "t_in": 15.2,
+        "t_out": 17.67,
+        "len_s": 2.47,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S07_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S07_mid.jpg"
+      },
+      {
+        "shot": "S08",
+        "t_in": 17.67,
+        "t_out": 19.27,
+        "len_s": 1.6,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S08_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S08_mid.jpg"
+      },
+      {
+        "shot": "S09",
+        "t_in": 19.27,
+        "t_out": 20.43,
+        "len_s": 1.16,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S09_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S09_mid.jpg"
+      },
+      {
+        "shot": "S10",
+        "t_in": 20.43,
+        "t_out": 21.43,
+        "len_s": 1.0,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S10_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S10_mid.jpg"
+      },
+      {
+        "shot": "S11",
+        "t_in": 21.43,
+        "t_out": 22.23,
+        "len_s": 0.8,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S11_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S11_mid.jpg"
+      },
+      {
+        "shot": "S12",
+        "t_in": 22.23,
+        "t_out": 23.5,
+        "len_s": 1.27,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S12_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S12_mid.jpg"
+      },
+      {
+        "shot": "S13",
+        "t_in": 23.5,
+        "t_out": 25.33,
+        "len_s": 1.83,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S13_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S13_mid.jpg"
+      },
+      {
+        "shot": "S14",
+        "t_in": 25.33,
+        "t_out": 26.33,
+        "len_s": 1.0,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S14_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S14_mid.jpg"
+      },
+      {
+        "shot": "S15",
+        "t_in": 26.33,
+        "t_out": 28.9,
+        "len_s": 2.57,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S15_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S15_mid.jpg"
+      },
+      {
+        "shot": "S16",
+        "t_in": 28.9,
+        "t_out": 30.6,
+        "len_s": 1.7,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S16_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S16_mid.jpg"
+      },
+      {
+        "shot": "S17",
+        "t_in": 30.6,
+        "t_out": 32.83,
+        "len_s": 2.23,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S17_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S17_mid.jpg"
+      },
+      {
+        "shot": "S18",
+        "t_in": 32.83,
+        "t_out": 34.67,
+        "len_s": 1.84,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S18_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S18_mid.jpg"
+      },
+      {
+        "shot": "S19",
+        "t_in": 34.67,
+        "t_out": 36.73,
+        "len_s": 2.06,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S19_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S19_mid.jpg"
+      },
+      {
+        "shot": "S20",
+        "t_in": 36.73,
+        "t_out": 40.87,
+        "len_s": 4.14,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S20_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S20_mid.jpg"
+      },
+      {
+        "shot": "S21",
+        "t_in": 40.87,
+        "t_out": 42.43,
+        "len_s": 1.56,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S21_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S21_mid.jpg"
+      },
+      {
+        "shot": "S22",
+        "t_in": 42.43,
+        "t_out": 45.37,
+        "len_s": 2.94,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S22_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S22_mid.jpg"
+      },
+      {
+        "shot": "S23",
+        "t_in": 45.37,
+        "t_out": 49.07,
+        "len_s": 3.7,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S23_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S23_mid.jpg"
+      },
+      {
+        "shot": "S24",
+        "t_in": 49.07,
+        "t_out": 52.77,
+        "len_s": 3.7,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S24_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S24_mid.jpg"
+      },
+      {
+        "shot": "S25",
+        "t_in": 52.77,
+        "t_out": 55.6,
+        "len_s": 2.83,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S25_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S25_mid.jpg"
+      },
+      {
+        "shot": "S26",
+        "t_in": 55.6,
+        "t_out": 56.27,
+        "len_s": 0.67,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S26_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S26_mid.jpg"
+      },
+      {
+        "shot": "S27",
+        "t_in": 56.27,
+        "t_out": 58.83,
+        "len_s": 2.56,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S27_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S27_mid.jpg"
+      },
+      {
+        "shot": "S28",
+        "t_in": 58.83,
+        "t_out": 61.6,
+        "len_s": 2.77,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S28_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S28_mid.jpg"
+      },
+      {
+        "shot": "S29",
+        "t_in": 61.6,
+        "t_out": 63.73,
+        "len_s": 2.13,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S29_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S29_mid.jpg"
+      },
+      {
+        "shot": "S30",
+        "t_in": 63.73,
+        "t_out": 66.37,
+        "len_s": 2.64,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S30_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S30_mid.jpg"
+      },
+      {
+        "shot": "S31",
+        "t_in": 66.37,
+        "t_out": 70.27,
+        "len_s": 3.9,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S31_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S31_mid.jpg"
+      },
+      {
+        "shot": "S32",
+        "t_in": 70.27,
+        "t_out": 71.83,
+        "len_s": 1.56,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S32_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S32_mid.jpg"
+      },
+      {
+        "shot": "S33",
+        "t_in": 71.83,
+        "t_out": 73.17,
+        "len_s": 1.34,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S33_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S33_mid.jpg"
+      },
+      {
+        "shot": "S34",
+        "t_in": 73.17,
+        "t_out": 74.27,
+        "len_s": 1.1,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S34_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S34_mid.jpg"
+      },
+      {
+        "shot": "S35",
+        "t_in": 74.27,
+        "t_out": 76.0,
+        "len_s": 1.73,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S35_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S35_mid.jpg"
+      },
+      {
+        "shot": "S36",
+        "t_in": 76.0,
+        "t_out": 77.93,
+        "len_s": 1.93,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S36_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S36_mid.jpg"
+      },
+      {
+        "shot": "S37",
+        "t_in": 77.93,
+        "t_out": 79.37,
+        "len_s": 1.44,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S37_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S37_mid.jpg"
+      },
+      {
+        "shot": "S38",
+        "t_in": 79.37,
+        "t_out": 80.17,
+        "len_s": 0.8,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S38_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S38_mid.jpg"
+      },
+      {
+        "shot": "S39",
+        "t_in": 80.17,
+        "t_out": 81.1,
+        "len_s": 0.93,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S39_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S39_mid.jpg"
+      },
+      {
+        "shot": "S40",
+        "t_in": 81.1,
+        "t_out": 82.43,
+        "len_s": 1.33,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S40_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S40_mid.jpg"
+      },
+      {
+        "shot": "S41",
+        "t_in": 82.43,
+        "t_out": 83.43,
+        "len_s": 1.0,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S41_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S41_mid.jpg"
+      },
+      {
+        "shot": "S42",
+        "t_in": 83.43,
+        "t_out": 84.43,
+        "len_s": 1.0,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S42_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S42_mid.jpg"
+      },
+      {
+        "shot": "S43",
+        "t_in": 84.43,
+        "t_out": 85.7,
+        "len_s": 1.27,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S43_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S43_mid.jpg"
+      },
+      {
+        "shot": "S44",
+        "t_in": 85.7,
+        "t_out": 87.5,
+        "len_s": 1.8,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S44_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S44_mid.jpg"
+      },
+      {
+        "shot": "S45",
+        "t_in": 87.5,
+        "t_out": 89.17,
+        "len_s": 1.67,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S45_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S45_mid.jpg"
+      },
+      {
+        "shot": "S46",
+        "t_in": 89.17,
+        "t_out": 90.2,
+        "len_s": 1.03,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S46_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S46_mid.jpg"
+      },
+      {
+        "shot": "S47",
+        "t_in": 90.2,
+        "t_out": 92.27,
+        "len_s": 2.07,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S47_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S47_mid.jpg"
+      },
+      {
+        "shot": "S48",
+        "t_in": 92.27,
+        "t_out": 92.73,
+        "len_s": 0.46,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S48_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S48_mid.jpg"
+      },
+      {
+        "shot": "S49",
+        "t_in": 92.73,
+        "t_out": 93.17,
+        "len_s": 0.44,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S49_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S49_mid.jpg"
+      },
+      {
+        "shot": "S50",
+        "t_in": 93.17,
+        "t_out": 93.6,
+        "len_s": 0.43,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S50_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S50_mid.jpg"
+      },
+      {
+        "shot": "S51",
+        "t_in": 93.6,
+        "t_out": 94.07,
+        "len_s": 0.47,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S51_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S51_mid.jpg"
+      },
+      {
+        "shot": "S52",
+        "t_in": 94.07,
+        "t_out": 94.5,
+        "len_s": 0.43,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S52_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S52_mid.jpg"
+      },
+      {
+        "shot": "S53",
+        "t_in": 94.5,
+        "t_out": 96.0,
+        "len_s": 1.5,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S53_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S53_mid.jpg"
+      },
+      {
+        "shot": "S54",
+        "t_in": 96.0,
+        "t_out": 97.17,
+        "len_s": 1.17,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S54_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S54_mid.jpg"
+      },
+      {
+        "shot": "S55",
+        "t_in": 97.17,
+        "t_out": 98.27,
+        "len_s": 1.1,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S55_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S55_mid.jpg"
+      },
+      {
+        "shot": "S56",
+        "t_in": 98.27,
+        "t_out": 101.87,
+        "len_s": 3.6,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S56_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S56_mid.jpg"
+      },
+      {
+        "shot": "S57",
+        "t_in": 101.87,
+        "t_out": 104.6,
+        "len_s": 2.73,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S57_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S57_mid.jpg"
+      },
+      {
+        "shot": "S58",
+        "t_in": 104.6,
+        "t_out": 106.67,
+        "len_s": 2.07,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S58_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S58_mid.jpg"
+      },
+      {
+        "shot": "S59",
+        "t_in": 106.67,
+        "t_out": 108.67,
+        "len_s": 2.0,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S59_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S59_mid.jpg"
+      },
+      {
+        "shot": "S60",
+        "t_in": 108.67,
+        "t_out": 112.07,
+        "len_s": 3.4,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S60_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S60_mid.jpg"
+      },
+      {
+        "shot": "S61",
+        "t_in": 112.07,
+        "t_out": 113.5,
+        "len_s": 1.43,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S61_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S61_mid.jpg"
+      },
+      {
+        "shot": "S62",
+        "t_in": 113.5,
+        "t_out": 115.27,
+        "len_s": 1.77,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S62_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S62_mid.jpg"
+      },
+      {
+        "shot": "S63",
+        "t_in": 115.27,
+        "t_out": 117.43,
+        "len_s": 2.16,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S63_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S63_mid.jpg"
+      },
+      {
+        "shot": "S64",
+        "t_in": 117.43,
+        "t_out": 120.37,
+        "len_s": 2.94,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S64_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S64_mid.jpg"
+      },
+      {
+        "shot": "S65",
+        "t_in": 120.37,
+        "t_out": 122.57,
+        "len_s": 2.2,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S65_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S65_mid.jpg"
+      },
+      {
+        "shot": "S66",
+        "t_in": 122.57,
+        "t_out": 124.03,
+        "len_s": 1.46,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S66_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S66_mid.jpg"
+      },
+      {
+        "shot": "S67",
+        "t_in": 124.03,
+        "t_out": 126.1,
+        "len_s": 2.07,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S67_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S67_mid.jpg"
+      },
+      {
+        "shot": "S68",
+        "t_in": 126.1,
+        "t_out": 128.6,
+        "len_s": 2.5,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S68_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S68_mid.jpg"
+      },
+      {
+        "shot": "S69",
+        "t_in": 128.6,
+        "t_out": 131.43,
+        "len_s": 2.83,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S69_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S69_mid.jpg"
+      },
+      {
+        "shot": "S70",
+        "t_in": 131.43,
+        "t_out": 132.77,
+        "len_s": 1.34,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S70_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S70_mid.jpg"
+      },
+      {
+        "shot": "S71",
+        "t_in": 132.77,
+        "t_out": 135.6,
+        "len_s": 2.83,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S71_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S71_mid.jpg"
+      },
+      {
+        "shot": "S72",
+        "t_in": 135.6,
+        "t_out": 137.03,
+        "len_s": 1.43,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S72_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S72_mid.jpg"
+      },
+      {
+        "shot": "S73",
+        "t_in": 137.03,
+        "t_out": 138.43,
+        "len_s": 1.4,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S73_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S73_mid.jpg"
+      },
+      {
+        "shot": "S74",
+        "t_in": 138.43,
+        "t_out": 139.6,
+        "len_s": 1.17,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S74_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S74_mid.jpg"
+      },
+      {
+        "shot": "S75",
+        "t_in": 139.6,
+        "t_out": 140.7,
+        "len_s": 1.1,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S75_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S75_mid.jpg"
+      },
+      {
+        "shot": "S76",
+        "t_in": 140.7,
+        "t_out": 141.67,
+        "len_s": 0.97,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S76_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S76_mid.jpg"
+      },
+      {
+        "shot": "S77",
+        "t_in": 141.67,
+        "t_out": 143.07,
+        "len_s": 1.4,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S77_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S77_mid.jpg"
+      },
+      {
+        "shot": "S78",
+        "t_in": 143.07,
+        "t_out": 143.9,
+        "len_s": 0.83,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S78_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S78_mid.jpg"
+      },
+      {
+        "shot": "S79",
+        "t_in": 143.9,
+        "t_out": 145.67,
+        "len_s": 1.77,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S79_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S79_mid.jpg"
+      },
+      {
+        "shot": "S80",
+        "t_in": 145.67,
+        "t_out": 147.83,
+        "len_s": 2.16,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S80_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S80_mid.jpg"
+      },
+      {
+        "shot": "S81",
+        "t_in": 147.83,
+        "t_out": 150.93,
+        "len_s": 3.1,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S81_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S81_mid.jpg"
+      },
+      {
+        "shot": "S82",
+        "t_in": 150.93,
+        "t_out": 155.55,
+        "len_s": 4.62,
+        "frame_in": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S82_in.jpg",
+        "frame_mid": "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/S82_mid.jpg"
+      }
+    ],
+    "second_sheets": [
+      "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/sheet_01.jpg",
+      "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/sheet_02.jpg",
+      "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/sheet_03.jpg",
+      "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/sheet_04.jpg",
+      "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/sheet_05.jpg",
+      "builds/stryde-71-stairs-pixar-song/intake/frames/71_Stairs HOOK+BODY 1/sheet_06.jpg"
+    ]
+  }
+]
