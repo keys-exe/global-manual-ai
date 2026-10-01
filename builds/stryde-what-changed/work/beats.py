@@ -1893,6 +1893,20 @@ B["B23a"] = (NBP, ["B19BV7H"], (
     "AVOID: no strap moved, no strap on the bare knee, no second strap, no strap on the shin, " + P.NEG_WORDMARK + ", no face, no hand "
     "on the banister, no extra legs, no extra feet"))
 
+# B22a Fix "FIX THE PRODUCT": v2's straps were redrawn wrong — thin, wavy, a small capital "STRYDE". Edit of v2 (her knees, the stairs,
+# the framing kept) with BOTH straps replaced by the real strap as worn in worn_front.jpg (Image 2) and front.webp (Image 3), copied
+# exactly (FP12): a tall smooth shell, two rounded peaks with one dip, chrome slides, the big lowercase grey "stryde".
+REFS.update({"B22AV2H": ("B22a v2 — the shot to edit (Image 1)", "f77113f5-0e71-449c-8be8-619937402610")})
+B["B22a"] = (NBP, ["B22AV2H", "PW", "PF"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — her two legs, the denim skirt hem, the white plimsolls, the stairs, the "
+    "light and the camera — and keep each strap in the same place, one just below EACH kneecap. Change ONLY the two straps: replace "
+    "each one with the real strap from Image 2 and Image 3, copied exactly — a tall, smooth matte-black shell whose top edge rises in two "
+    "rounded peaks with one soft dip between them, a chrome slide at each end, a black band round the back, and the large grey "
+    "lowercase wordmark \"stryde\" across the middle of the shell, as big and as clear as in Image 2. Same size on the leg as in Image 2. "
+    "Nothing redesigned. A real phone photo.\n\n"
+    "AVOID: no capital letters in the wordmark, no small wordmark, no thin shell, no extra peaks, no wavy edge, no strap over the "
+    "kneecap, no strap on the shin, no third strap, no hand, no face, no extra legs"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
