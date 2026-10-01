@@ -24,7 +24,7 @@ import imageio_ffmpeg  # noqa: E402
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 W, H, FPS = 1080, 1920, 24
 FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
-SIZE, PAD_X, PAD_Y, RADIUS, Y_CENTER, LINE_GAP, MAXW = 64, 26, 14, 18, 0.58, 6, 4
+SIZE, PAD_X, PAD_Y, RADIUS, Y_CENTER, LINE_GAP, MAXW = 46, 20, 10, 14, 0.70, 4, 4   # user 2026-10-01: "THE CAPTION IS TOO BIG AND TOO HIGH"
 SAFE_L, SAFE_R = 100, 940          # the right-side rail (likes, comments, share) starts ~960 px
 SAFE_CX, SAFE_W = (SAFE_L + SAFE_R) / 2, SAFE_R - SAFE_L
 snap = lambda t: round(t * FPS) / FPS

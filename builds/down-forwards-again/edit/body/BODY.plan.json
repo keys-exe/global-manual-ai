@@ -16,9 +16,7 @@
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-01.v1.mp4",
    "phrase": "Bone on bone on the left, the right one following it",
    "layout": {
-    "type": "split",
-    "broll_pos": "top",
-    "ratio": 0.6
+    "type": "full"
    }
   },
   {
@@ -42,9 +40,7 @@
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-03.v4.mp4",
    "phrase": "Every step you take lands on it",
    "layout": {
-    "type": "split",
-    "broll_pos": "top",
-    "ratio": 0.6
+    "type": "full"
    }
   },
   {
@@ -80,13 +76,19 @@
    }
   },
   {
+   "beat": "BR-05b",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-05b.v1.mp4",
+   "phrase": "Coming down, you are catching yourself,",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
    "beat": "MECH-05",
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-05.v2.mp4",
    "phrase": "and the catch lands on that band",
    "layout": {
-    "type": "split",
-    "broll_pos": "top",
-    "ratio": 0.6
+    "type": "full"
    }
   },
   {
@@ -122,6 +124,14 @@
    }
   },
   {
+   "beat": "BR-09b",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-09b.v1.mp4",
+   "phrase": "The garden",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
    "beat": "BR-09c",
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-09c.v1.mp4",
    "phrase": "Her family coming to her instead",
@@ -133,6 +143,14 @@
    "beat": "BR-10",
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-10.v2.mp4",
    "phrase": "It was never how hard she tried",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-10b",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-10b.v2.mp4",
+   "phrase": "It was never a weak muscle",
    "layout": {
     "type": "full"
    }
@@ -190,9 +208,7 @@
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-14.v1.mp4",
    "phrase": "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee",
    "layout": {
-    "type": "split",
-    "broll_pos": "top",
-    "ratio": 0.6
+    "type": "full"
    }
   },
   {
@@ -215,6 +231,14 @@
    "beat": "BR-16a",
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-16a.v3.mp4",
    "phrase": "Thirty four percent less strain. Measured",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-16a2",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-16a2.v1.mp4",
+   "phrase": "Three years with orthopedic surgeons",
    "layout": {
     "type": "full"
    }
@@ -264,9 +288,7 @@
    "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-20.v2.mp4",
    "phrase": "Not because the arthritis has gone",
    "layout": {
-    "type": "split",
-    "broll_pos": "top",
-    "ratio": 0.6
+    "type": "full"
    }
   },
   {

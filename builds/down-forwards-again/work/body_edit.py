@@ -10,11 +10,9 @@ import imageio_ffmpeg
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 B = pathlib.Path(__file__).parents[1]
 G = "/tmp/claude-0/-home-user-global-manual-ai/33ac0ea1-56e5-53d2-9765-ab6fc866d4ca/scratchpad/g32/generations/"
-SPLIT = {"MECH-01", "MECH-03", "MECH-05", "MECH-14", "BR-20"}
-# FLASH merges (dry run 2): each of these lines is too short between two B-rolls to hold any clip 2 s (§30H MIN_FLASH) — the doctor speaks
-# the line on camera (or the clip before holds over it); the clips stay confirmed on the board for the B-roll bank.
-DROP = {"BR-05b": "Coming down, you are catching yourself (1.96 s)", "BR-09b": "The garden (1.04 s)",
-        "BR-10b": "It was never a weak muscle (1.88 s)", "BR-16a2": "Three years with orthopedic surgeons (1.79 s)"}
+SPLIT = set()   # user 2026-10-01: "DONT USE SPLIT SCREEN" — every B-roll full screen
+# user 2026-10-01: "SOME OF THE BROLLS ARE MISSING" — no row is dropped; a line under 2 s holds its clip over the next words (assemble.py HOLD)
+DROP = {}
 # base + master
 lst = B / "edit/body/th_list.txt"
 lst.write_text("".join(f"file '{B}/th/TH-{a}.trim.mp4'\n" for a in ["A1", "A2", "A3", "A4", "A5"]))
