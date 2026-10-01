@@ -91,6 +91,9 @@ Rules (§30H):
              silence: into the next B-roll when the face window would be under --min-th, or to reach
              2.0s (MIN_FLASH) — never into the next line's words. Still under 2.0s = FLASH FAIL
              (merge the rows: one picture for both lines). Voice-only: it runs to the next B-roll.
+  7. LONG    (V7.84.0, §27) one picture per phrase, 2-3 s: a B-roll on screen over 3.5 s (LONG_MAX) fails and the
+             report names the split at its next shift; "whole": "<why>" on a row with no internal shift, mechanism /
+             anatomy rows and "span": "hold" are exempt. A FLASH merges with the neighbouring phrase, never a sentence.
   6. LAYOUT  full screen is the default: split/pip on at most 1 B-roll in 5, never two in a row.
 Then renders (1080x1920 at --fps, default 24 = Kling's native rate, so no frame
 is repeated; the master as the only audio) and verifies the
@@ -124,6 +127,8 @@ FILM = False                 # plan "mode" 4/5: no speed change ever (§24L)
 MIN_FLASH = 2.0                # §30H rule 5 (V7.65.0): every B-roll holds >= 2.0s on screen (was 0.8s)
 END_DROP = 30.0                # V7.80.0: a word has finished when its level falls this far under the loud level
 END_MAX = 0.5                  # ...looked for at most this far past Whisper's end, never past the next word
+CLAUSE_WORDS = {"and", "but", "because", "so", "or", "then", "when", "while", "which", "who", "until", "before", "after", "if", "that"}
+LONG_MAX = 3.5                 # §27 / §30H rule 7 (V7.84.0): one picture per phrase, 2-3 s — over this, split it
 END_TAIL = 0.1                 # §30H rule 5 (V7.80.0): the B-roll leaves this long after its line's last sound
 MAX_SPLIT_SHARE = 0.2          # §30H layouts (V7.65.0): full is the default; split/pip at most 1 in 5, never two in a row
 HANDLE = 0.5                 # E6: seconds of spare footage on every call
@@ -406,7 +411,8 @@ def main():
         next_t = onset(db, ws[k + 1][0]) if k + 1 < len(ws) else total   # the next thing said after its sentence
         edl.append({"beat": b["beat"], "clip": str(clip) if clip else None, "phrase": b["phrase"],
                     "key": ws[key_i][2] if key_i is not None else ws[anchor][2], "first_word": ws[anchor][2],
-                    "i": i, "j": j, "key_t": key_t, "span": b.get("span"),
+                    "i": i, "j": j, "key_t": key_t, "span": b.get("span"), "whole": b.get("whole"),
+                    "mech": b.get("type") == "MECH" or bool(b.get("anat")) or str(b["beat"]).upper().startswith(("MECH", "ANAT")),
                     "layout": lay, "word_t": word_t,
                     "start": min(snap(max(0.0, word_t - a.lead)), round(int(word_t * FPS) / FPS, 4)),
                     "line_end": snap(min(row_end + END_TAIL, max(row_end, next_t)) if base is not None else row_end),
@@ -452,26 +458,51 @@ def main():
         return out
 
     def flash_fix(e, prev):
-        """FLASH with the merge spelled out (V7.80.0): the row's sentence is too short to hold a picture."""
+        """FLASH with the merge spelled out (V7.80.0; V7.84.0 — merge with the neighbouring PHRASE, never widen
+        to a whole sentence: one picture per phrase, §27)."""
         k = e["k_end"] + 1
         nxt = []
         while k < len(ws):
             nxt.append(ws[k][2])
-            if re.search(r"[.!?][\"')\]]*$", ws[k][2]):
+            if re.search(r"[,;:.!?\u2014-][\"')\]]*$", ws[k][2]):
                 break
             k += 1
         opts = []
         owner = next((x for x in edl if x is not e and x["i"] <= e["k_end"] + 1 <= x["j"]), None)
         if owner is not None:
-            opts.append(f"drop it and start {owner['beat']}'s phrase at {e['first_word']!r} (one picture for both sentences)")
+            opts.append(f"drop it and start {owner['beat']}'s phrase at {e['first_word']!r} (one picture for the two phrases)")
         elif nxt:
-            opts.append(f"widen its phrase to take in the next sentence {' '.join(nxt)!r} (one picture for both)")
+            opts.append(f"take in the next phrase {' '.join(nxt)!r} (one picture for the two phrases — never the whole sentence)")
         if prev is not None:
             opts.append(f"fold it into {prev['beat']}'s phrase")
         if base is not None:
             opts.append("leave the line on the face")
         return (f"on screen {e['end'] - e['start']:.2f}s < {MIN_FLASH}s — {e['shows']!r} is too short to hold a picture: "
                 + ", or ".join(opts))
+
+    def long_fix(e, end):
+        """§27 / §30H rule 7 (V7.84.0, user: "you have been picking long sentences instead of what we used back then"):
+        a B-roll is one phrase, 2-3 s. Over LONG_MAX it is split at its next shift; returns the failure or None."""
+        if e.get("whole") or e.get("mech") or e.get("span") == "hold" or end - e["start"] <= LONG_MAX + 1e-6:
+            return None
+        # every word under the picture: its own phrase plus any words it runs on over
+        last = max([e["k_end"]] + [k for k in range(e["k_end"] + 1, len(ws)) if ws[k][0] < end])
+        cands = []
+        for q in range(e["i"] + 1, last + 1):
+            cut = ws[q][0] - a.lead
+            if cut - e["start"] < MIN_FLASH or end - cut < MIN_FLASH:
+                continue
+            punct = bool(re.search(r"[,;:.!?\u2014-][\"')\]]*$", ws[q - 1][2]))
+            clause = norm(ws[q][2]) in CLAUSE_WORDS
+            if punct or clause:   # a shift: never split mid-phrase ("keep the | straps")
+                cands.append((not punct, abs((cut - e["start"]) - (end - cut)), q))
+        if not cands:
+            return None   # one phrase with no shift inside, or any split would leave a picture under 2.0 s
+        q = min(cands)[2]
+        a1 = " ".join(w for _, _, w in ws[e["i"]:q]); b1 = " ".join(w for _, _, w in ws[q:last + 1])
+        return {"beat": e["beat"], "fail": "LONG",
+                "detail": f"on screen {end - e['start']:.2f}s — over {LONG_MAX}s: one picture per phrase (§27, 2-3 s). "
+                          f"Split it: {a1!r} | {b1!r} — or set \"whole\": \"<why>\" if nothing changes inside it"}
 
     def line_check(e, start, end):
         for lid, wl in spill(e, start, end).items():
@@ -531,6 +562,9 @@ def main():
             e["end"] = e["start"] + on
             if on < MIN_FLASH - 1e-3:
                 fails.append({"beat": e["beat"], "fail": "FLASH", "detail": flash_fix(e, edl[n - 1] if n else None)})
+            lf = long_fix(e, e["start"] + on)
+            if lf:
+                fails.append(lf)
             over = [w for s0, _, w in ws[e["k_end"] + 1:] if s0 < e["end"] - 0.05]
             if over:
                 e["holds_over"] = " ".join(over)
@@ -630,6 +664,9 @@ def main():
     for n, e in enumerate(edl):
         if e["end"] - e["start"] < MIN_FLASH - 1e-3:
             fails.append({"beat": e["beat"], "fail": "FLASH", "detail": flash_fix(e, edl[n - 1] if n else None)})
+        lf = long_fix(e, e["end"])
+        if lf:
+            fails.append(lf)
     # layout mix: full screen is the default; split/pip sparingly (V7.65.0, user 2026-09-28)
     if base is not None and edl:
         boxed = [e for e in edl if e["layout"]["type"] != "full"]
