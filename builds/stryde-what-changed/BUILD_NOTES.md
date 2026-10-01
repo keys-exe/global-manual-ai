@@ -467,3 +467,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - User "GO CONFIRM" on B22a v5 → image confirmed, **video v4 on Kie AI Kling 3.0** (5 s, 150 cr): she pats her thighs, straps on. Flaw: mid-clip her hands slide to her knees and the straps shrink a little, recovering by the end.
 - **B23a video v3 on Kie AI Kling 3.0** (re-run of the user's go after the Higgsfield failure, 5 s, 150 cr): the first ~3 s are good (one step down, strap exact); in the last 1.5 s her leg comes right up to the lens and leaves frame — "Use only up to here" ≈ 3 s would fix it.
 - Kie AI 255,998.8 · Higgsfield 10,085.15.
+
+### 2026-10-01 — "FIX" (B10d "DIFFERENT BROLL HERE" — the smoke alarm turned down too)
+- **B10d v3** (Kie AI nano-banana-2 — Higgsfield still slow): Maureen at the kitchen worktop, side-on, pink cardigan, eyes closed, swallowing a painkiller with a glass of water, the blister pack by her hand. Flaw: the worktop reads as grey speckled stone, not the pale oak. To check; v2 (smoke alarm) → Old 2. Act map row → R1, L-KITCHEN, EYE PRO MEDIUM; angles: only the known B19b/B19-BR2 jump.
+- Kie balance 255,872.8 (shared — it moved 126 during this one call, so the card's 8 cr is an estimate).
