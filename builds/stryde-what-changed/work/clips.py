@@ -1303,6 +1303,24 @@ B["B23a"] = clip("B23a",
            {"risk": "she turns or goes up", "prevented_by": "fixed geography, 'only ever comes down', 'no going up the stairs, no turning round'"}])
 B["B23a"][0]["motion"] = B["B23a"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the skirt hem lags a little; the strap never moves")
 
+# ── 2026-10-01 B23b v3 confirmed (strap added from behind, Fix "PUT STRYDE PRODUCT") → clip gen 2. ──
+START.update({"B23b": str(HERE.parent / "broll/B23b_v3.png")})
+B["B23b"] = clip("B23b",
+    "Seen from just behind her on the landing: a white British woman of sixty-nine with soft white hair, in a navy-and-white striped "
+    "T-shirt, denim skirt and white plimsolls, standing at the top of her carpeted stairs, the flight going down ahead of her to a sunlit "
+    "front door; a black STRYDE strap's band round her right leg just below the knee; her hands hang free at her sides.",
+    "Already moving on the first frame: she steps forwards and down onto the first stair, facing down the stairs, then the second foot "
+    "follows onto the next stair — two easy steps down, about two seconds, steady and unhurried, her hands staying free at her sides. "
+    "She only ever goes down, facing away from the camera, never turning. She stays in frame. The strap stays exactly where it is on "
+    "her right leg — rigid band, the same from first frame to last.",
+    "no hand on the banister, no hand on the handrail, no hand on the wall, no turning round, no face to camera, no stumbling, no "
+    "strap moving, no strap on the left leg, no second strap, no camera following her, no extra legs, no feet warping",
+    3.0, hi=4,
+    risks=[{"risk": "the strap slides or jumps legs", "prevented_by": "'the same from first frame to last', 'no strap on the left leg'"},
+           {"risk": "a free hand drifts onto the banister", "prevented_by": "'her hands staying free at her sides', 'no hand on the banister'"},
+           {"risk": "the camera follows her down (§27G)", "prevented_by": "locked-off camera, 'no camera following her'"}])
+B["B23b"][0]["motion"] = B["B23b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little; the strap never moves")
+
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
