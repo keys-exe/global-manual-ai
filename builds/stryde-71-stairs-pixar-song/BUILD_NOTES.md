@@ -120,10 +120,59 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   files to Old. Seen: HK-01b, HK-02a and HK-03a took the new angles (HK-02a B's daughter drifts off model); HK-01a stayed close to the confirmed frame's
   view in both renders — the frame reference dominated; if the user wants the low full shot, the next round drops the frame ref and uses P0 + sheets.
 
+- same session, ~15:20–15:35 UTC (hourly Fix check) — the user picked the re-angled pairs: **HK-01a v3 (A)**, **HK-01b v7 (A)**, **HK-02a v7 (A)**
+  confirmed; **HK-03a** Fix "wrong location" on the OTS pair (the model invented a bright landing room with a window — no plate exists for the landing).
+  v5 = the OTS kept but built as an image edit of the user's confirmed v6 (the top of the flight from the hall), viewpoint moved up the flight
+  (`hooks/HK-03a.v5.prompt.txt`, PASS); v9/v10 To check, v7/v8 to Old. Seen: both renders keep the P0 staircase; the camera landed at the foot
+  behind the daughter, the mother mid-flight turning back. Unused picks (HK-01a v4, HK-01b v8, HK-02a v8) to Old. **Clips** from the three picks on
+  Kling `kling-video-v3_0` (§35A, preflight PASS; HK-01a = clip v2 from the new frame, clip v1 kept as a version): HK-01a 5 s / 40 cr, HK-01b 5 s / 40 cr,
+  HK-02a 6 s / 48 cr (44,019 before). `fix_patterns.py` re-run (29 notes): the repeated note of this build is still the location one (now 6 beats) —
+  HT17; the new "THEY ARE SO BIG" is a one-off (scale against the steps written into every stairs prompt since).
+
+- same session, ~15:35 UTC — the three hook clips landed (Kling `kling-video-v3_0`, 1072×1928, 24 fps): HK-01a clip v2 (5.04 s, from image v3 — both
+  climbing away from the low viewpoint, hands free), HK-01b v1 (5.04 s — the pump and trainer climbing through the balusters), HK-02a v1 (6.04 s — the
+  daughter climbing toward the high lens, face up). All To check (`clips/`, contact sheets beside). Kling 43,851 after (128 for the three).
+
+- same session, ~15:45 UTC — user **"hk01 a and b should be a different location cause its woman half her age should be outside"**: HK-01a and HK-01b
+  moved to the **church front steps (P5)** — the same Sunday (N-D4, church dress + the wide-brim hat per the wardrobe map), two one-off women in their
+  thirties on the steps below her (HT05: the stakes in the picture). `actmap.py` rows rewritten (L-CHURCH, open-sky light; angles.py PASS), STEP4_5 /
+  `docs/actmap` re-synced. HK-01a = an image edit of P5 (HT17, Image 1 = the plate, Image 2 = N's sheet); HK-01b = feet CU on the steps with P5 as the
+  reference (`hooks/<BEAT>.v6.prompt.txt`, PASS). The home-stairs clips on both cards are superseded — kept as versions; new clips follow the new picks.
+
+- same session, ~15:40–15:55 UTC — **HK-01a/b church pairs landed** (v5/v6 on HK-01a, v9/v10 on HK-01b, To check; the home-stairs picks and clips stay
+  as versions on the cards — their files are still used by the clip versions, so not moved). Seen: N in the hat climbing past two younger women on the
+  P5 steps; the feet CU on the concrete steps with the sandals. **HK-02a clip confirmed** by the user. **HK-03a** Fix "this should be at the second
+  floor": v7 = an image edit of the user's confirmed HK-02a v7 (the view down the flight from the landing — the second floor the user confirmed), the
+  mother's shoulder in the near foreground (OTS from the landing), the daughter on the top step (`hooks/HK-03a.v7.prompt.txt`, PASS; actmap row:
+  high · ots · through, angles.py PASS). v11/v12 To check, v9/v10 to Old. Higgsfield 9,668.15 after (shared account).
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator never sings to camera (default) vs two bookends · F4 "Stryde." · F10 Mode 2 sheet amendment / true Pro route on Kie · F12 BPM · F13 clipped master.
 
 ## Next
-**Waiting on:** the picks on the re-angled hook pairs (v4) of HK-01a, HK-01b, HK-02a, HK-03a; the HK-01a clip v1 is confirmed (made from the v1 A image — a clip from the new angle follows the new pick). Then their clips (no end frames — waived; §35A ≤ 1,000 chars, preflight PASS); then the body acts in order; CapCut block with lyric captions and the outro end card.
+**Waiting on:** picks on HK-01a (church, v5/v6), HK-01b (church, v9/v10) and HK-03a (second floor, v11/v12); HK-02a image + clip confirmed. Then the HK-01a/01b/03a clips; then the body acts. Then their clips (no end frames — waived; §35A ≤ 1,000 chars, preflight PASS); then the body acts in order; CapCut block with lyric captions and the outro end card.
 
 (Earlier plan, done:) steps 4–5 (property sheet + 16:9 Pixar plates on nano_banana_pro: house stairs/landing/kitchen, reception, store checkout, church steps, street; act map on the song's clock — E6 lengths from `work/lyrics.timed.json`, cuts on 3–4 beats, `angles.py` PASS; wardrobe map). No voice stage. Then hook (0–15.5 s) at step 6, body acts at step 7, CapCut block with lyric captions.
+- same session, ~15:50–16:05 UTC — **"i want new ones cause these hooks looks the same as the others i want more powerfull hooks" → the plaza hook.**
+  A new hook concept, not another fix of the old one (HT05: the hook sells out in the world, the stakes in the picture): one monumental public
+  staircase — the great outdoor entrance steps of a downtown arena plaza on a Sunday afternoon (new location L-PLAZA, plate **P8-PLAZA**, 16:9,
+  `plates/build_plates.py --p8`, Higgsfield nano_banana_pro (logged nano_banana_2), on the Current board as To check — generated together with the
+  hooks so the round didn't wait on a plate pick; it is the reference of all four hook frames). The younger crowd stopped on the steps is the stakes
+  N climbs past. Act map, `STEP4_5.md` (locations table: L-PLAZA · PLATED · P8-PLAZA; light row), `docs/actmap` (Current v9 / Plan v9) and
+  `docs/locations` (v3) re-planned on L-PLAZA; angles.py PASS (61 rows); stairs pin stays waived. Four §6A v8 prompts (`hooks/build_hooks.py --v8`,
+  `hooks/<BEAT>.v8.prompt.txt`, all PASS, 1,148–1,198 chars): HK-01a an image edit of P8 (`match: plate`, HT17; Image 1 = P8, Image 2 = N sheet),
+  SH-LOW FULL from the plaza, N on the 15th of 30 steps, a dozen younger people stalled below her; HK-01b SH-GROUND CU profile at tread height, her
+  pumps past the stopped trainers (ref P8); HK-02a SH-HIGH MEDIUM from the top landing, the daughter ten steps below (refs C2, P8); HK-03a SH-OTS
+  over the mother's shoulder from the top, the daughter stopped at the rail (refs N, C2, P8). 8 renders, one per call (jobs in `hooks/jobs.json`
+  `<BEAT>@v8A/B`), ~2.14 cr each; Higgsfield balance 9,642.15 after. Board: **HK-01a v7/v8, HK-01b v11/v12, HK-02a v9/v10, HK-03a v13/v14** To check
+  (`hooks/v8_cards.py`); the church pairs (HK-01a v5/v6, HK-01b v9/v10) and the second-floor pair (HK-03a v11/v12) copied server-side to Old
+  (Old docs HK-01a v3, HK-01b v5, HK-03a v6), marked `archived` + `archiveAsset` on Current and deleted from Current. Kept on Current: HK-01a v1/v3
+  and HK-02a v7 (their clips were made from them), HK-01b v7. The home-stairs clips (HK-01a v1/v2, HK-01b v1, HK-02a v1) stay as versions,
+  superseded — new clips follow the plaza picks. Seen in the renders (no judgement, the user checks): all eight sit on the P8 flight (three lanes,
+  two steel rails, glass doors, towers); HK-01a A/B each hold N in the middle lane with eight younger people on the lower steps (two bent hands on
+  knees, one on the rail); HK-01b both show the black pump mid-step beside two pairs of white trainers; HK-02a both look down the flight from the
+  landing at the daughter, hand on the rail, the plaza crowd behind; HK-03a both frame the daughter from over the mother's hat and shoulder with the
+  towers behind. Higgsfield cleared the queue; Kie not needed (standing fallback stays).
+
+**Waiting on:** the user's picks on the four plaza pairs and the P8-PLAZA plate (A/B on each card; Fix with a note if neither). Then the hook clips
+(§35A, no end frames — waived); then the body acts in order; CapCut block with lyric captions and the outro end card.

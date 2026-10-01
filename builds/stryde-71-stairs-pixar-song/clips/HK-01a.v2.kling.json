@@ -1,0 +1,13 @@
+{
+ "beat": "HK-01a",
+ "connector": "Kling",
+ "model": "kling-video-v3_0",
+ "generationId": "AYcOB6HuBNTSApKpCKTvA6fF2xWIV09Lr6tjJxHPNgaz9NJ1eZLLhPOGc3Nh54fzko2_PRQO",
+ "credits": 40.0,
+ "duration": 5,
+ "resolution": "1080p",
+ "prefer_multi_shots": "false",
+ "enable_audio": "false",
+ "image": "HK-01a v3 A (job 1c7c2fb2)",
+ "note": "clip v2 from the re-angled pick; clip v1 kept"
+}

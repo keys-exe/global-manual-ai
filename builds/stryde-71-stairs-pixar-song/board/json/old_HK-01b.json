@@ -6,16 +6,16 @@
   "image"
  ],
  "hook": 1,
- "imageAsset": "0c8a73134652aea95025aa36bfcd1dc8",
+ "imageAsset": "f3e9e6d830dcfd3769aa24e51f123031",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\"",
+ "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [
-  5,
-  6
+  9,
+  10
  ],
- "imagePrompt": "For the line \"faster than women half my age.\": at step height from the side, an older woman's feet take the stairs at a stride — one low black pump planted on the 6th of 14 steps, the other foot lifting to the 7th, the hem of an emerald-green dress swinging at mid-calf — and a few steps below, white trainers under black denim shorts reaching for the 4th step. Image 1 is the staircase.\nClose-up, profile, at the height of the 6th step, feet and five steps filling the frame, sharp on the pumps. The same beige runner, brass stair rods, white balusters and dark oak handrail as Image 1, photo frames soft behind. Both women's hands and faces out of frame — the picture is feet, legs below the knee and steps. Deep brown skin at the ankles.\nIn the frame: two low black pumps, two white trainers, four legs, five steps of the one staircase; every other surface bare. Each foot whole, one foot per step.\nA final frame from a 3D animated feature film — stylized storybook render, every surface with a material, a single catchlight in each eye, soft warm bounce in the shadows, afternoon sun through the door sidelights from the left.\nShoes, clothing and walls plain — no lettering, logos or labels.",
+ "imagePrompt": "For the line \"faster than women half my age.\": at tread level from the side on the wide concrete plaza steps, an older woman's low black pump strikes the next step mid-stride, her green hem swinging past two pairs of young women's white trainers stopped on the step below, one knee bent with a hand on it. Image 1 is the plaza steps.\nClose-up, profile, the lens at tread height, feet and four steps filling the frame, sharp on the black pump, the steel handrail's base soft behind: the pump and a deep brown ankle under the emerald hem at the left, the two pairs of trainers under bare shins and leggings at the right, the pale concrete treads of Image 1 between. All hands and faces out of frame but one hand on a knee; the feet at true scale to the steps.\nIn frame: two black pumps, four white trainers, six legs below the knee, one hand on a knee, four steps of the one flight, the rail's foot; every other surface bare. Each foot whole, one foot per step.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, the light of Image 1. Shoes and clothing plain — no lettering, logos or labels.",
  "imageRefs": [
   {
    "kind": "location",
@@ -27,7 +27,7 @@
  "imageRes": "1536×2752",
  "imageStatus": "regenerate",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142328_e1cce4cb-46b2-468d-b42c-4ede3e4108d0.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_153949_5979df8a-9700-4b6e-b429-2a8c3bf5a853.png",
  "imageVersions": [
   {
    "archived": true,
@@ -124,11 +124,61 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142325_30fcbe8e-6006-4ddb-957f-a740ec7d8e8b.png",
    "v": 6,
    "archived": true
+  },
+  {
+   "asset": "38f68dcc05ffb8b0a2d6f1404d3f1eda",
+   "at": 1790867552722,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "11c204af-0135-4c7d-93f1-42c4dbe2924e",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "not chosen — the user used the other render",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7046931,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_11c204af-0135-4c7d-93f1-42c4dbe2924e.png",
+   "v": 8,
+   "archived": true
+  },
+  {
+   "v": 9,
+   "pair": "A",
+   "asset": "f3e9e6d830dcfd3769aa24e51f123031",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_153949_5979df8a-9700-4b6e-b429-2a8c3bf5a853.png",
+   "job": "5979df8a-9700-4b6e-b429-2a8c3bf5a853",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6197022,
+   "res": "1536×2752",
+   "at": 1790869411412,
+   "note": "user 2026-10-01: \"hk01 a and b should be a different location cause its woman half her age should be outside\" — the church front steps (P5), the younger women in the frame · replaced by the plaza pair (user 2026-10-01: more powerful hooks)",
+   "archived": true,
+   "archiveAsset": "f3e9e6d830dcfd3769aa24e51f123031"
+  },
+  {
+   "v": 10,
+   "pair": "B",
+   "asset": "b355f8c7215782c7d0b2d4a6d419f26e",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_153949_f353e257-fb13-42a1-83b9-62658e80b29f.png",
+   "job": "f353e257-fb13-42a1-83b9-62658e80b29f",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6236396,
+   "res": "1536×2752",
+   "at": 1790869411412,
+   "note": "user 2026-10-01: \"hk01 a and b should be a different location cause its woman half her age should be outside\" — the church front steps (P5), the younger women in the frame · replaced by the plaza pair (user 2026-10-01: more powerful hooks)",
+   "archived": true,
+   "archiveAsset": "b355f8c7215782c7d0b2d4a6d419f26e"
   }
  ],
  "line": "faster than women half my age.",
  "stage": "hooks",
  "status": "regenerate",
- "title": "hook — the result — v1–v3 pairs (replaced)",
- "updatedAt": 1790867385732
+ "title": "hook — the result — v1–v8 pairs (replaced; latest: the church / second-floor pair)",
+ "updatedAt": 1790870546611
 }

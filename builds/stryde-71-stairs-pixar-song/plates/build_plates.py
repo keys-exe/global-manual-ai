@@ -104,7 +104,7 @@ P["P7-CLINIC"] = dict(loc="L-CLINIC", attach=[], body=[OPEN,
   PIX + " Here: the key is soft daylight through the half-open blind on the left-hand wall (the window faces west), falling in soft bands across the treatment table; the fill is the flat cool overhead panel, a quarter as strong; the rim is the window light edging the stool and the knee model. The door side a stop darker.",
   CAP, NEG("NEG-SCENE")])
 
-if __name__ == "__main__":
+if __name__ == "__main__" and "--p8" not in __import__("sys").argv:
     out = {}
     for k, v in P.items():
         p = "\n\n".join(v["body"]); out[k] = dict(loc=v["loc"], attach=v["attach"], prompt=p)
@@ -152,7 +152,7 @@ V2["P2-KITCHEN"] = dict(loc="L-N-KITCHEN", attach=["P0-PROP-N"], body=[OPEN, PRO
   "the pitcher and the rim of the mug. Warm bounce off the yellow counter into the shadow side of the table.",
   CAP, NEG("NEG-PROP", "NEG-SCENE", extra="no oak cabinets, no plain modern kitchen, no island, no stainless steel, no gingham, no catalogue kitchen")])
 
-if __name__ == "__main__" and True:
+if __name__ == "__main__" and "--p8" not in __import__("sys").argv:
     for k, v in V2.items():
         p = "\n\n".join(v["body"]); pathlib.Path(__file__).parent.joinpath(f"{k}.v2.prompt.txt").write_text(p); print("v2", k, len(p))
     out = json.load(open(pathlib.Path(__file__).parent / "plates.json"))
@@ -184,9 +184,24 @@ V3["P1-LANDING"] = dict(loc="L-N-LANDING", attach=["P0-PROP-N"], edit_of="P0-PRO
   "the rim is the sidelight glow edging the balusters and the newel. The landing end a stop darker than the hall below.",
   CAP, NEG("NEG-PROP", "NEG-SCENE", extra="no turn in the stairs, no half-landing, no second flight, no return stair, no L-shaped stair, no square stairwell, no balustrade across the top of the frame, no window in frame, no door at the top, no photo wall on the right, no rail on the left, no landing furniture")])
 
-if __name__ == "__main__" and True:
+if __name__ == "__main__" and "--p8" not in __import__("sys").argv:
     for k, v in V3.items():
         p = "\n\n".join(v["body"]); pathlib.Path(__file__).parent.joinpath(f"{k}.v3.prompt.txt").write_text(p); print("v3", k, len(p))
     out = json.load(open(pathlib.Path(__file__).parent / "plates.json"))
     for k, v in V3.items(): out[k + "@v3"] = dict(loc=v["loc"], attach=v["attach"], edit_of=v.get("edit_of"), prompt="\n\n".join(v["body"]), route="Kie nano-banana-pro")
     json.dump(out, open(pathlib.Path(__file__).parent / "plates.json", "w"), indent=1)
+
+# ---------------- P8 (user 2026-10-01: "i want new ones … more powerful hooks") — a new hook location, out in the world ------------------------
+# L-PLAZA: the long outdoor steps of a downtown Atlanta arena plaza — the monumental public staircase the hook now plays on (HT05).
+P8 = {}
+P8["P8-PLAZA"] = dict(loc="L-PLAZA", attach=[], body=[OPEN,
+  "A single rendered frame of the great outdoor entrance steps of a downtown Atlanta arena on a Sunday afternoon, from head height on the plaza at the foot of the steps looking up: "
+  "one monumental straight flight of thirty wide pale concrete steps, each tread about four metres wide between two brushed-steel handrails that run up the middle and divide it into three lanes, "
+  "rising to a broad top landing and the arena's tall glass concourse doors under a deep overhang; glass office towers and a blue sky behind the roofline, plain unlettered banner poles either side of the flight, "
+  "low concrete planters with clipped grass at the foot. Empty — nobody in frame, nothing on the steps.",
+  PIX + " Here: the key is hard warm afternoon sun from upper camera-right, every step edge throwing a short shadow down the tread below it; the fill is the blue skylight on the shadow side, a quarter as strong; the rim is the sun catching the two steel handrails and the glass doors. Warm bounce off the pale concrete into the shadows.",
+  CAP, NEG("NEG-SCENE")])
+if __name__ == "__main__" and "--p8" in __import__("sys").argv:
+    for k, v in P8.items():
+        p = "\n\n".join(v["body"]); pathlib.Path(__file__).parent.joinpath(f"{k}.prompt.txt").write_text(p); print(k, len(p))
+        pj = json.load(open(pathlib.Path(__file__).parent / "plates.json")); pj[k] = dict(loc=v["loc"], attach=v["attach"], prompt=p); json.dump(pj, open(pathlib.Path(__file__).parent / "plates.json", "w"), indent=1)
