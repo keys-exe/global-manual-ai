@@ -31,18 +31,17 @@ L022 = "If I’m being honest, some days I wasn’t going down them at all. I’
 GO = "i want new ones the all of theme are not good (scene 2)"
 GO4 = "use gpt image 2 and not sunburst re do all the scene 2"
 FRAMES = [
-    dict(beat="SC02-SH01", line=L017, refs=["P-HOUSE", "L-STAIRS", "N"], face=True, body=True, match=None, role="key", gen=5,
-         fix="the surroundings are wrong not the same as the location",
-         motion="From this frame: she calls the line down the stairs, a small forced smile on 'love', then her eyes drop to the stairs below; her right hand stays on the newel post; she does not step down.",
+    dict(beat="SC02-SH01", line=L017, refs=["L-STAIRS", "N"], face=True, body=True, match="plate", edit_of="L-STAIRS v4", role="key", gen=6,
+         fix="wrongh location fix this",
+         motion="From this frame: she calls the line down the stairs, her right hand tight on the newel post; on 'later' her eyes drop to the steps; she does not step down.",
          prompt=" ".join([
-             f"For the line \"{L017}\": at night she is stranded at the very top of her own stairs, calling down.",
-             "Image 1 and Image 2 are this exact staircase, copied exactly: a straight flight of oatmeal-carpeted steps with brass rods along the magnolia LEFT wall and its framed photographs; on the OPEN RIGHT side the dark banister, square spindles and top newel post.",
-             "A low shot from halfway up that flight looking up it: the top steps soft in the near foreground, the photo wall on the left, the banister on the right.",
-             "At the very top, both feet on the landing's edge, stands the woman from Image 3 — face, steel-grey bob with its heavy fringe and small build copied exactly — in a heather-green jumper and charcoal skirt.",
-             "Right hand on the top newel post, left hand flat on her chest; she is looking down the stairs, calling, a brave smile that never reaches her eyes.",
-             "Behind her only the landing's magnolia wall; every step bare.",
-             "Night: one warm 2800K ceiling pendant on the landing lights her; the steps below fall into dark.",
-             PLAIN, LOOK])),
+             f"For the line \"{L017}\": Keep this photo exactly as it is — Image 1, the staircase seen from the landing down to the green front door: the top newel post near on the left, the banister down the left, the photographs on the right-hand wall, the telephone table and barometer at the foot; the camera stays where it is, recomposed as a tall vertical frame.",
+             "Change only two things.",
+             "First, it is night: the hall pendant glows warm 2800K over the foot of the stairs, the front-door glass is dark, the landing around the camera is in shadow.",
+             "Second, add the woman from Image 2 — face, steel-grey bob with its heavy fringe and small build copied exactly — in a heather-green jumper and charcoal skirt, standing at the very top step in the near foreground, seen over her right shoulder in three-quarter profile.",
+             "Her right hand grips the top newel post; her left hand rests on her chest; she is looking down the stairs toward the hall, mouth open mid-word, tired.",
+             "Two plain shopping bags stand at the foot of the stairs beside the telephone table; every step bare.",
+             PLAIN])),
     dict(beat="SC02-SH03", line=L019, refs=["L-STAIRS", "N"], face=True, body=True, match=None, role="key", gen=3,
          motion="From this frame: she lowers her weight down one step backwards, both hands sliding a little down the banister, and breathes out through her mouth; one step in the clip.",
          prompt=" ".join([
