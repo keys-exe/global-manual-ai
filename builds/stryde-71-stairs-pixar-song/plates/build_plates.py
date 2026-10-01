@@ -158,3 +158,35 @@ if __name__ == "__main__" and True:
     out = json.load(open(pathlib.Path(__file__).parent / "plates.json"))
     for k, v in V2.items(): out[k + "@v2"] = dict(loc=v["loc"], attach=v["attach"], edit_of=v.get("edit_of"), prompt="\n\n".join(v["body"]))
     json.dump(out, open(pathlib.Path(__file__).parent / "plates.json", "w"), indent=1)
+
+# ---------------- v3 (user, 2026-10-01: "FIX THE P1 I WANT IT CONNECTED TO THE P0") -------------------------------------
+# v2 drew a return stair with a half-landing. v3: the same ONE straight flight, counted, from its top — an edit of P0 on a true
+# Nano Banana Pro route (Kie `nano-banana-pro`, P0 as image_input), since Higgsfield reroutes every Pro call to Nano Banana 2.
+V3 = {}
+V3["P1-LANDING"] = dict(loc="L-N-LANDING", attach=["P0-PROP-N"], edit_of="P0-PROP-N", body=[
+  "Image 1 is the finished property plate of this hall and it is the truth: ONE straight staircase of fourteen steps rising along the hall's right-hand "
+  "wall, a worn beige carpet runner held by brass rods on every step, white turned balusters and a dark oak handrail on its open left side, a square white "
+  "newel post at the bottom step, the family photographs in mismatched frames climbing the stair wall beside the steps, the warm greige walls, white "
+  "baseboards and casings, the brass-and-frosted flush light, honey oak floorboards in the hall, the front door with its narrow glass sidelights, the grey "
+  "console table with a bowl, the coat tree with a navy raincoat and a straw hat. Keep every one of these exactly as they are. "
+  "MAKE THIS PICTURE: the same flight, seen from its top. The camera stands on the upstairs landing at the head of that ONE straight flight, at standing "
+  "chest height, looking straight down the whole run of fourteen carpeted steps to the hall floor, so the flight runs from the bottom edge of the frame away "
+  "and down to the centre. There is no turn, no half-landing, no second flight, no bend: one straight run, top to bottom. On the LEFT of the flight, the same "
+  "stair wall with the same photographs in the same frames, now seen descending beside the steps. On the RIGHT of the flight, the same white balusters and "
+  "dark oak handrail running straight down to the same square newel post at the bottom. At the foot of the flight the same honey oak hall floor, the same "
+  "grey console table and coat tree against the left wall, and straight ahead the same front door with its glass sidelights glowing with afternoon light. "
+  "Around the camera, only the top of the landing: the beige carpet continuing from the top step across the landing floor at the bottom corners of the "
+  "frame, a sliver of greige wall at each edge. Nothing else: no window in frame, no doors in frame, no gallery, no balustrade across the frame, "
+  "no furniture on the landing, no new pictures. Counted and closed: one flight, one rail, one newel, one photo wall, one door at the bottom.",
+  OPEN,
+  PIX + " Here: the key is the warm afternoon daylight through the front-door sidelights at the bottom of the flight, rising up the steps toward the "
+  "camera and catching the brass rods; the fill is soft daylight from the landing window behind the camera, a quarter as strong, on the top steps; "
+  "the rim is the sidelight glow edging the balusters and the newel. The landing end a stop darker than the hall below.",
+  CAP, NEG("NEG-PROP", "NEG-SCENE", extra="no turn in the stairs, no half-landing, no second flight, no return stair, no L-shaped stair, no square stairwell, no balustrade across the top of the frame, no window in frame, no door at the top, no photo wall on the right, no rail on the left, no landing furniture")])
+
+if __name__ == "__main__" and True:
+    for k, v in V3.items():
+        p = "\n\n".join(v["body"]); pathlib.Path(__file__).parent.joinpath(f"{k}.v3.prompt.txt").write_text(p); print("v3", k, len(p))
+    out = json.load(open(pathlib.Path(__file__).parent / "plates.json"))
+    for k, v in V3.items(): out[k + "@v3"] = dict(loc=v["loc"], attach=v["attach"], edit_of=v.get("edit_of"), prompt="\n\n".join(v["body"]), route="Kie nano-banana-pro")
+    json.dump(out, open(pathlib.Path(__file__).parent / "plates.json", "w"), indent=1)
