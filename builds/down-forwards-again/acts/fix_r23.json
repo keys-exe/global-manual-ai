@@ -1,0 +1,10 @@
+{
+ "BR-10c": {
+  "v": 7,
+  "refs": [
+   "7ee32818-3189-488b-be89-608809d77e44"
+  ],
+  "prompt": "Edit the attached image. Keep everything exactly as it is \u2014 the knee close-up, the muscles, the bones, the colours, the light, the framing \u2014 and change only the glow. The round bone at the front of the knee becomes plain ivory like the other bones, with no red and no glow on it. The pale vertical cord directly below it \u2014 running down from the bottom of that round bone to the top of the shin bone, in the centre of the image \u2014 now glows bright red along its whole length, near-white at its core: it is the one bright red thing in the image. The soft red streaks in the thigh muscle above stay as they are and lead down to that cord. No glow on the round bone, no red ring around the knee, no text, no labels.",
+  "model": "nano_banana_pro"
+ }
+}

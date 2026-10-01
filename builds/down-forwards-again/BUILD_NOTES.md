@@ -337,4 +337,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   (v3, 24 Kling credits) landed and was filed on Old 2 as unused. The card's motion plan updated for the close-up (the knee stays still, the
   pulses land on the tendon). Note: Higgsfield reports `nano_banana_2` as the model on the jobs requested as `nano_banana_pro` (every render
   this build) — logged, not changed. Balances: Higgsfield 10,498.65; Kling 45,027.
+- **2026-10-01 ~12:30 UTC: user "i need a new br10c"** (board note on v6: "IT SHOULD BE THE PATELLAR TENDON NOT THE KNEE CAP"). Diagnosis: v4–v6
+  all lit the kneecap — their ~5,000-character prompts named the kneecap a dozen times (every "not on the kneecap" line) and the model put the
+  glow where the word sat. v7 (`acts/build_fix_r23.py`): a 710-character targeted edit of v6 — the pale cord below the kneecap glows red, the
+  kneecap plain ivory, nothing else changed → To check; v6 to Old 2. Lesson for anatomy frames: name the target by what it looks like and
+  where it is, keep the prompt short, and don't repeat the wrong structure in negatives.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
