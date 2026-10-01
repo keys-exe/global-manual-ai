@@ -1,0 +1,53 @@
+{
+ "beat": "BR-03b",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150358_a0124d90-fa19-4350-a0e8-713db8796ed8.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "there is a band of tendon about as wide as your thumb.",
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the hand moves off the knee or a second hand appears",
+   "prevented_by": "rests there; no second hand"
+  },
+  {
+   "risk": "the leg kicks or shifts",
+   "prevented_by": "the knee stays still; no leg movement"
+  },
+  {
+   "risk": "camera push-in hides the line",
+   "prevented_by": "no zoom; slight handheld sway"
+  }
+ ],
+ "route": "kling",
+ "route_note": "user 2026-10-01: 'USE KLING CONNECTOR' (Kling credits back: 45,091) — off Kie",
+ "approved_by": "the user, 2026-10-01: 'i want a broll there not th'",
+ "audio": false,
+ "prompt": "For the line \"there is a band of tendon about as wide as your thumb.\": From this frame: her fingertip settles on the soft band just below the kneecap and rests there; the knee stays still. The phone camera holds steady with a very slight handheld sway. Her hand and knee keep their shape and place; the skirt, chair and rug stay as they are. No zoom, no leg movement, no second hand, no text.",
+ "video_version": 1,
+ "motion_plan": "From this frame: her fingertip settles on the soft band just below the kneecap and rests there; the knee stays still.",
+ "motion_confirmed": true,
+ "taste": [
+  "HT06",
+  "HT11",
+  "HT12",
+  "HT13"
+ ],
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "user_go": "the user, 2026-10-01: 'i want a broll there not th'",
+ "motion_confirmed_by": "the user, 2026-10-01: 'i want a broll there not th' (on BR-03b's line, image v1 on the board)",
+ "kling_model": "kling-video-v3_0"
+}
