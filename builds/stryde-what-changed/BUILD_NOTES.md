@@ -471,3 +471,4 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 ### 2026-10-01 — "FIX" (B10d "DIFFERENT BROLL HERE" — the smoke alarm turned down too)
 - **B10d v3** (Kie AI nano-banana-2 — Higgsfield still slow): Maureen at the kitchen worktop, side-on, pink cardigan, eyes closed, swallowing a painkiller with a glass of water, the blister pack by her hand. Flaw: the worktop reads as grey speckled stone, not the pale oak. To check; v2 (smoke alarm) → Old 2. Act map row → R1, L-KITCHEN, EYE PRO MEDIUM; angles: only the known B19b/B19-BR2 jump.
 - Kie balance 255,872.8 (shared — it moved 126 during this one call, so the card's 8 cr is an estimate).
+- User "CONFIRM" B10d v3 → **video v2 on Kie AI Kling 3.0** (5 s, ~150 cr): she swallows, lowers the glass, a tired breath, hand on the worktop — clean. To check. Kie 255,710.8.
