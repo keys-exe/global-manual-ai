@@ -1,0 +1,700 @@
+{
+ "lines": [
+  {
+   "n": 1,
+   "scene": "HOOK A THE STATION STAIRS",
+   "speaker": "DAUGHTER",
+   "text": "Mum… the next one’s in ten minutes, we can…",
+   "vn": [
+    "VN01"
+   ]
+  },
+  {
+   "n": 2,
+   "scene": "HOOK A THE STATION STAIRS",
+   "speaker": "HER",
+   "text": "Not waiting ten minutes, love.",
+   "vn": [
+    "VN02"
+   ]
+  },
+  {
+   "n": 3,
+   "scene": "HOOK A THE STATION STAIRS",
+   "speaker": "DAUGHTER",
+   "text": "When did that happen?",
+   "vn": [
+    "VN03"
+   ]
+  },
+  {
+   "n": 4,
+   "scene": "HOOK A THE STATION STAIRS",
+   "speaker": "VO",
+   "text": "I’m 71 and I take the stairs faster than women half my age. Six weeks ago, I couldn’t."
+  },
+  {
+   "n": 5,
+   "scene": "HOOK B: THE LIFT QUEUE (up, with the shopping)",
+   "speaker": "DAUGHTER",
+   "text": "Mum, the lift’s just there.",
+   "vn": [
+    "VN04"
+   ]
+  },
+  {
+   "n": 6,
+   "scene": "HOOK B: THE LIFT QUEUE (up, with the shopping)",
+   "speaker": "HER",
+   "text": "So are the stairs.",
+   "vn": [
+    "VN05"
+   ]
+  },
+  {
+   "n": 7,
+   "scene": "HOOK B: THE LIFT QUEUE (up, with the shopping)",
+   "speaker": "DAUGHTER",
+   "text": "When did that happen?",
+   "vn": [
+    "VN06"
+   ]
+  },
+  {
+   "n": 8,
+   "scene": "HOOK B: THE LIFT QUEUE (up, with the shopping)",
+   "speaker": "VO",
+   "text": "I’m 71 and I take the stairs faster than women half my age. Six weeks ago, I couldn’t."
+  },
+  {
+   "n": 9,
+   "scene": "HOOK C: THE DEAD ESCALATOR",
+   "speaker": "TANNOY",
+   "text": "...the escalator is out of service. Please use the stairs.",
+   "vn": [
+    "VN07"
+   ]
+  },
+  {
+   "n": 10,
+   "scene": "HOOK C: THE DEAD ESCALATOR",
+   "speaker": "COMMUTER",
+   "text": "You’re joking.",
+   "vn": [
+    "VN08"
+   ]
+  },
+  {
+   "n": 11,
+   "scene": "HOOK C: THE DEAD ESCALATOR",
+   "speaker": "HER",
+   "text": "It’s only stairs, love.",
+   "vn": [
+    "VN09"
+   ]
+  },
+  {
+   "n": 12,
+   "scene": "HOOK C: THE DEAD ESCALATOR",
+   "speaker": "DAUGHTER",
+   "text": "When did that happen?",
+   "vn": [
+    "VN10"
+   ]
+  },
+  {
+   "n": 13,
+   "scene": "HOOK C: THE DEAD ESCALATOR",
+   "speaker": "VO",
+   "text": "I’m 71 and I take the stairs faster than women half my age. Six weeks ago, I couldn’t."
+  },
+  {
+   "n": 14,
+   "scene": "HOOK E: THE FLOOR",
+   "speaker": "DAUGHTER",
+   "text": "Mum, wait, I’ll give you a…",
+   "vn": [
+    "VN11"
+   ]
+  },
+  {
+   "n": 15,
+   "scene": "HOOK E: THE FLOOR",
+   "speaker": "DAUGHTER",
+   "text": "...When did that happen?"
+  },
+  {
+   "n": 16,
+   "scene": "HOOK E: THE FLOOR",
+   "speaker": "VO",
+   "text": "I’m 71. Six weeks ago I couldn’t get up off my own floor.",
+   "vn": [
+    "VN12"
+   ]
+  },
+  {
+   "n": 17,
+   "scene": "SCENE 2: ROCK BOTTOM",
+   "speaker": "HER",
+   "text": "Just leave it by the stairs, love. I’ll get it later.",
+   "vn": [
+    "VN13"
+   ]
+  },
+  {
+   "n": 18,
+   "scene": "SCENE 2: ROCK BOTTOM",
+   "speaker": "HUSBAND",
+   "text": "I’ll bring it up.",
+   "vn": [
+    "VN14"
+   ]
+  },
+  {
+   "n": 19,
+   "scene": "SCENE 2: ROCK BOTTOM",
+   "speaker": "VO",
+   "text": "Six weeks ago, I was going down my stairs backwards. One step at a time."
+  },
+  {
+   "n": 20,
+   "scene": "SCENE 2: ROCK BOTTOM",
+   "speaker": "HUSBAND",
+   "text": "Sleep alright?"
+  },
+  {
+   "n": 21,
+   "scene": "SCENE 2: ROCK BOTTOM",
+   "speaker": "HER",
+   "text": "Fine, love."
+  },
+  {
+   "n": 22,
+   "scene": "SCENE 2: ROCK BOTTOM",
+   "speaker": "VO",
+   "text": "If I’m being honest, some days I wasn’t going down them at all. I’d just stay upstairs."
+  },
+  {
+   "n": 23,
+   "scene": "SCENE 3: TRIED EVERYTHING + THE SUNDAY PLANT",
+   "speaker": "VO",
+   "text": "The full knee brace I bought slipped down my leg. By evening, it was around my ankle. I tried everything. Physiotherapy. Painkillers. Cortisone injections. Every brace and sleeve on the market."
+  },
+  {
+   "n": 24,
+   "scene": "SCENE 3: TRIED EVERYTHING + THE SUNDAY PLANT",
+   "speaker": "VO",
+   "text": "Nothing worked. Nothing lasted. Nothing gave me my life back.",
+   "vn": [
+    "VN15"
+   ]
+  },
+  {
+   "n": 25,
+   "scene": "SCENE 3: TRIED EVERYTHING + THE SUNDAY PLANT",
+   "speaker": "HUSBAND",
+   "text": "That drawer won’t shut soon.",
+   "vn": [
+    "VN16"
+   ]
+  },
+  {
+   "n": 26,
+   "scene": "SCENE 3: TRIED EVERYTHING + THE SUNDAY PLANT",
+   "speaker": "HER",
+   "text": "It shuts."
+  },
+  {
+   "n": 27,
+   "scene": "SCENE 3: TRIED EVERYTHING + THE SUNDAY PLANT",
+   "speaker": "SISTER",
+   "text": "Sunday… shall we just do the garden centre? It’s all one level.",
+   "vn": [
+    "VN17"
+   ]
+  },
+  {
+   "n": 28,
+   "scene": "SCENE 3: TRIED EVERYTHING + THE SUNDAY PLANT",
+   "speaker": "HER",
+   "text": "Course, love. Easier."
+  },
+  {
+   "n": 29,
+   "scene": "SCENE 3: TRIED EVERYTHING + THE SUNDAY PLANT",
+   "speaker": "VO",
+   "text": "My sister’s knees are worse than mine. We planned our Sundays around one level."
+  },
+  {
+   "n": 30,
+   "scene": "SCENE 4: THE WEDDING",
+   "speaker": "VO",
+   "text": "Then my granddaughter got married in June. My cousin Barbara was there. She’s 74. And she was on the dance floor all night."
+  },
+  {
+   "n": 31,
+   "scene": "SCENE 4: THE WEDDING",
+   "speaker": "HER",
+   "text": "Her knees were worse than mine. Both of them. Bone on bone.",
+   "vn": [
+    "VN18"
+   ]
+  },
+  {
+   "n": 32,
+   "scene": "SCENE 4: THE WEDDING",
+   "speaker": "HUSBAND",
+   "text": "Whose?"
+  },
+  {
+   "n": 33,
+   "scene": "SCENE 4: THE WEDDING",
+   "speaker": "HER",
+   "text": "Barbara’s."
+  },
+  {
+   "n": 34,
+   "scene": "SCENE 4: THE WEDDING",
+   "speaker": "VO",
+   "text": "I always assumed hers weren’t as bad as mine. I always assumed mine were past the point of fixing."
+  },
+  {
+   "n": 35,
+   "scene": "SCENE 5: BARBARA COMES TO STAY",
+   "speaker": "VO",
+   "text": "Barbara came to stay the week after. She watched me work through my morning routine."
+  },
+  {
+   "n": 36,
+   "scene": "SCENE 5: BARBARA COMES TO STAY",
+   "speaker": "BARBARA",
+   "text": "Can I show you something?"
+  },
+  {
+   "n": 37,
+   "scene": "SCENE 5: BARBARA COMES TO STAY",
+   "speaker": "VO",
+   "text": "A small black strap. Just below her kneecap."
+  },
+  {
+   "n": 38,
+   "scene": "SCENE 5: BARBARA COMES TO STAY",
+   "speaker": "BARBARA",
+   "text": "They come in twos. I never used the spare.",
+   "vn": [
+    "VN19"
+   ]
+  },
+  {
+   "n": 39,
+   "scene": "SCENE 6: THE SCEPTIC",
+   "speaker": "VO",
+   "text": "It looked absurd. Too small."
+  },
+  {
+   "n": 40,
+   "scene": "SCENE 6: THE SCEPTIC",
+   "speaker": "HER",
+   "text": "Barbara. This can’t possibly work on knees like mine."
+  },
+  {
+   "n": 41,
+   "scene": "SCENE 6: THE SCEPTIC",
+   "speaker": "BARBARA",
+   "text": "Just put it on and walk down the stairs."
+  },
+  {
+   "n": 42,
+   "scene": "SCENE 7: THE TEST",
+   "speaker": "VO",
+   "text": "The first step, I didn’t have to hold the banister."
+  },
+  {
+   "n": 43,
+   "scene": "SCENE 7: THE TEST",
+   "speaker": "VO",
+   "text": "Not the second. Not the third."
+  },
+  {
+   "n": 44,
+   "scene": "SCENE 7: THE TEST",
+   "speaker": "VO",
+   "text": "All the way down. Both feet. Forwards."
+  },
+  {
+   "n": 45,
+   "scene": "SCENE 7: THE TEST",
+   "speaker": "VO",
+   "text": "First step. Pain gone. Like a switch."
+  },
+  {
+   "n": 46,
+   "scene": "SCENE 8: THE MECHANISM, FROM BARBARA",
+   "speaker": "BARBARA",
+   "text": "Everything you’ve tried was designed to make you comfortable while your knee got worse. This one fixes why it hurts."
+  },
+  {
+   "n": 47,
+   "scene": "SCENE 8: THE MECHANISM, FROM BARBARA",
+   "speaker": "BARBARA",
+   "text": "There’s one spot below the kneecap where every step lands. Every brace, every injection, every pill you’ve ever taken treated the whole knee. Not that spot.",
+   "vn": [
+    "VN20"
+   ]
+  },
+  {
+   "n": 48,
+   "scene": "SCENE 8: THE MECHANISM, FROM BARBARA",
+   "speaker": "BARBARA",
+   "text": "That’s why nothing worked. The pain is pressure. Nothing more."
+  },
+  {
+   "n": 49,
+   "scene": "SCENE 8: THE MECHANISM, FROM BARBARA",
+   "speaker": "BARBARA",
+   "text": "This sits on that spot and lifts the weight off."
+  },
+  {
+   "n": 50,
+   "scene": "SCENE 9: PROOF IN THE FAMILY",
+   "speaker": "VO",
+   "text": "Over 200,000 people wear one now. Sports doctors recommend it. Not the pharma companies. Sports doctors."
+  },
+  {
+   "n": 51,
+   "scene": "SCENE 9: PROOF IN THE FAMILY",
+   "speaker": "VO",
+   "text": "Barbara’s husband wears one. He’s 76. He plays golf twice a week. Her niece wears one for tennis. She’s 22."
+  },
+  {
+   "n": 52,
+   "scene": "SCENE 10: SIX WEEKS",
+   "speaker": "VO",
+   "text": "I’ve worn mine every day for six weeks. Under my clothes. Nobody knows it’s there. No pills. No gel. No brace around my ankle by lunchtime."
+  },
+  {
+   "n": 53,
+   "scene": "SCENE 10: SIX WEEKS",
+   "speaker": "VO",
+   "text": "Yesterday I walked into town. Two miles there. Two miles back. I outwalked three women half my age."
+  },
+  {
+   "n": 54,
+   "scene": "SCENE 10: SIX WEEKS",
+   "speaker": "VO",
+   "text": "I stood in line for ten minutes without shifting my weight."
+  },
+  {
+   "n": 55,
+   "scene": "SCENE 10: SIX WEEKS",
+   "speaker": "CASHIER",
+   "text": "You alright carrying those, love?",
+   "vn": [
+    "VN21"
+   ]
+  },
+  {
+   "n": 56,
+   "scene": "SCENE 10: SIX WEEKS",
+   "speaker": "HER",
+   "text": "I am, actually."
+  },
+  {
+   "n": 57,
+   "scene": "SCENE 10: SIX WEEKS",
+   "speaker": "VO",
+   "text": "I carried two bags home. Nobody helped me."
+  },
+  {
+   "n": 58,
+   "scene": "SCENE 11: THE HUSBAND",
+   "speaker": "HUSBAND",
+   "text": "You were gone a long time."
+  },
+  {
+   "n": 59,
+   "scene": "SCENE 11: THE HUSBAND",
+   "speaker": "HER",
+   "text": "I know."
+  },
+  {
+   "n": 60,
+   "scene": "SCENE 12: THE CAFE + REVEAL",
+   "speaker": "VO",
+   "text": "That was six weeks of wearing the strap. Nothing else."
+  },
+  {
+   "n": 61,
+   "scene": "SCENE 12: THE CAFE + REVEAL",
+   "speaker": "VO",
+   "text": "I’m not the one everyone waits for anymore."
+  },
+  {
+   "n": 62,
+   "scene": "SCENE 12: THE CAFE + REVEAL",
+   "speaker": "FRIEND 1",
+   "text": "Right. What’s changed? And don’t say a haircut."
+  },
+  {
+   "n": 63,
+   "scene": "SCENE 12: THE CAFE + REVEAL",
+   "speaker": "HER",
+   "text": "Three weeks ago I couldn’t have crossed this room like that."
+  },
+  {
+   "n": 64,
+   "scene": "SCENE 12: THE CAFE + REVEAL",
+   "speaker": "FRIEND 2",
+   "text": "So what is it?"
+  },
+  {
+   "n": 65,
+   "scene": "SCENE 12: THE CAFE + REVEAL",
+   "speaker": "HER",
+   "text": "It’s a strap.",
+   "vn": [
+    "VN22"
+   ]
+  },
+  {
+   "n": 66,
+   "scene": "SCENE 12: THE CAFE + REVEAL",
+   "speaker": "FRIEND 1",
+   "text": "That little thing?"
+  },
+  {
+   "n": 67,
+   "scene": "SCENE 12: THE CAFE + REVEAL",
+   "speaker": "HER",
+   "text": "That’s what I said."
+  },
+  {
+   "n": 68,
+   "scene": "SCENE 12: THE CAFE + REVEAL",
+   "speaker": "VO",
+   "text": "So I’m just going to say it here. It’s called Stryde. Patellar Force Redirection. It’s been designed for three years with orthopaedic surgeons. It’s the real thing. Not the cheap knockoffs they sell on Amazon and fake Shopify sites."
+  },
+  {
+   "n": 69,
+   "scene": "SCENE 13: THE OFFER, PLANTED IN THE STORY",
+   "speaker": "VO",
+   "text": "The link’s below. Two straps for the price of one right now. 60 days to send them back if they don’t work."
+  },
+  {
+   "n": 70,
+   "scene": "SCENE 13: THE OFFER, PLANTED IN THE STORY",
+   "speaker": "VO",
+   "text": "Eleven years of knee pain. Gone the first step I took with it on."
+  },
+  {
+   "n": 71,
+   "scene": "SCENE 13: THE OFFER, PLANTED IN THE STORY",
+   "speaker": "VO",
+   "text": "I bought a second pair for my sister the same week. She’s coming Sunday.",
+   "vn": [
+    "VN23"
+   ]
+  },
+  {
+   "n": 72,
+   "scene": "SCENE 13: THE OFFER, PLANTED IN THE STORY",
+   "speaker": "SISTER",
+   "text": "All the way up?",
+   "vn": [
+    "VN24"
+   ]
+  },
+  {
+   "n": 73,
+   "scene": "SCENE 13: THE OFFER, PLANTED IN THE STORY",
+   "speaker": "HER",
+   "text": "All the way up."
+  },
+  {
+   "n": 74,
+   "scene": "SCENE 13: THE OFFER, PLANTED IN THE STORY",
+   "speaker": "VO",
+   "text": "She’ll walk up my stairs on her own.",
+   "vn": [
+    "VN25"
+   ]
+  }
+ ],
+ "visual": [
+  {
+   "id": "VN01",
+   "scene": "HOOK A THE STATION STAIRS",
+   "line": 1,
+   "speaker": "DAUGHTER",
+   "note": "at the top of the steps, reaching for the rail"
+  },
+  {
+   "id": "VN02",
+   "scene": "HOOK A THE STATION STAIRS",
+   "line": 2,
+   "speaker": "HER",
+   "note": "already three steps down, shopping bag in hand"
+  },
+  {
+   "id": "VN03",
+   "scene": "HOOK A THE STATION STAIRS",
+   "line": 3,
+   "speaker": "DAUGHTER",
+   "note": "in the carriage, catching her breath, staring at her"
+  },
+  {
+   "id": "VN04",
+   "scene": "HOOK B: THE LIFT QUEUE (up, with the shopping)",
+   "line": 5,
+   "speaker": "DAUGHTER",
+   "note": "loaded with shopping bags, nodding at the lift"
+  },
+  {
+   "id": "VN05",
+   "scene": "HOOK B: THE LIFT QUEUE (up, with the shopping)",
+   "line": 6,
+   "speaker": "HER",
+   "note": "already three steps up, a full bag in each hand"
+  },
+  {
+   "id": "VN06",
+   "scene": "HOOK B: THE LIFT QUEUE (up, with the shopping)",
+   "line": 7,
+   "speaker": "DAUGHTER",
+   "note": "reaching the top, out of breath"
+  },
+  {
+   "id": "VN07",
+   "scene": "HOOK C: THE DEAD ESCALATOR",
+   "line": 9,
+   "speaker": "TANNOY",
+   "note": "off"
+  },
+  {
+   "id": "VN08",
+   "scene": "HOOK C: THE DEAD ESCALATOR",
+   "line": 10,
+   "speaker": "COMMUTER",
+   "note": "20s, groaning at his phone"
+  },
+  {
+   "id": "VN09",
+   "scene": "HOOK C: THE DEAD ESCALATOR",
+   "line": 11,
+   "speaker": "HER",
+   "note": "passing him, first onto the steps"
+  },
+  {
+   "id": "VN10",
+   "scene": "HOOK C: THE DEAD ESCALATOR",
+   "line": 12,
+   "speaker": "DAUGHTER",
+   "note": "at the bottom"
+  },
+  {
+   "id": "VN11",
+   "scene": "HOOK E: THE FLOOR",
+   "line": 14,
+   "speaker": "DAUGHTER",
+   "note": "entering, reflex"
+  },
+  {
+   "id": "VN12",
+   "scene": "HOOK E: THE FLOOR",
+   "line": 16,
+   "speaker": "VO",
+   "note": "variant"
+  },
+  {
+   "id": "VN13",
+   "scene": "SCENE 2: ROCK BOTTOM",
+   "line": 17,
+   "speaker": "HER",
+   "note": "calling down from the landing"
+  },
+  {
+   "id": "VN14",
+   "scene": "SCENE 2: ROCK BOTTOM",
+   "line": 18,
+   "speaker": "HUSBAND",
+   "note": "off, too quickly"
+  },
+  {
+   "id": "VN15",
+   "scene": "SCENE 3: TRIED EVERYTHING + THE SUNDAY PLANT",
+   "line": 24,
+   "speaker": "VO",
+   "note": "on the drawer closing"
+  },
+  {
+   "id": "VN16",
+   "scene": "SCENE 3: TRIED EVERYTHING + THE SUNDAY PLANT",
+   "line": 25,
+   "speaker": "HUSBAND",
+   "note": "from the doorway, soft, watching her drop the brace in"
+  },
+  {
+   "id": "VN17",
+   "scene": "SCENE 3: TRIED EVERYTHING + THE SUNDAY PLANT",
+   "line": 27,
+   "speaker": "SISTER",
+   "note": "voice on the phone"
+  },
+  {
+   "id": "VN18",
+   "scene": "SCENE 4: THE WEDDING",
+   "line": 31,
+   "speaker": "HER",
+   "note": "low, not taking her eyes off Barbara"
+  },
+  {
+   "id": "VN19",
+   "scene": "SCENE 5: BARBARA COMES TO STAY",
+   "line": 38,
+   "speaker": "BARBARA",
+   "note": "laying a second, boxed strap on the table"
+  },
+  {
+   "id": "VN20",
+   "scene": "SCENE 8: THE MECHANISM, FROM BARBARA",
+   "line": 47,
+   "speaker": "BARBARA",
+   "note": "two fingers below her own kneecap"
+  },
+  {
+   "id": "VN21",
+   "scene": "SCENE 10: SIX WEEKS",
+   "line": 55,
+   "speaker": "CASHIER",
+   "note": "reaching for the bags"
+  },
+  {
+   "id": "VN22",
+   "scene": "SCENE 12: THE CAFE + REVEAL",
+   "line": 65,
+   "speaker": "HER",
+   "note": "pulling the trouser leg up an inch"
+  },
+  {
+   "id": "VN23",
+   "scene": "SCENE 13: THE OFFER, PLANTED IN THE STORY",
+   "line": 71,
+   "speaker": "VO",
+   "note": "cut to the front door ON the doorbell; the VO line announces the jump, no card"
+  },
+  {
+   "id": "VN24",
+   "scene": "SCENE 13: THE OFFER, PLANTED IN THE STORY",
+   "line": 72,
+   "speaker": "SISTER",
+   "note": "at the door, eyes going past her to the staircase"
+  },
+  {
+   "id": "VN25",
+   "scene": "SCENE 13: THE OFFER, PLANTED IN THE STORY",
+   "line": 74,
+   "speaker": "VO",
+   "note": "as the sister puts her hand on the rail and takes the first step"
+  }
+ ]
+}

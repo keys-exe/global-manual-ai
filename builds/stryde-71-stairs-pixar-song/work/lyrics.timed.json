@@ -1,0 +1,866 @@
+[
+{
+"n": 1,
+"line": "I'm seventy-one, and I take the stairs",
+"start": 0.0,
+"end": 4.38,
+"words": 7,
+"matched": 7
+},
+{
+"n": 2,
+"line": "faster than women half my age.",
+"start": 4.38,
+"end": 8.64,
+"words": 6,
+"matched": 6
+},
+{
+"n": 3,
+"line": "Last Sunday, my daughter walked behind me",
+"start": 8.64,
+"end": 11.8,
+"words": 7,
+"matched": 7
+},
+{
+"n": 4,
+"line": "the whole way up and said,",
+"start": 11.8,
+"end": 13.2,
+"words": 6,
+"matched": 6
+},
+{
+"n": 5,
+"line": "\"Mama, when did that happen?\"",
+"start": 13.2,
+"end": 15.54,
+"words": 5,
+"matched": 5
+},
+{
+"n": 6,
+"line": "Six weeks ago, I was going down my stairs backwards.",
+"start": 17.12,
+"end": 20.08,
+"words": 10,
+"matched": 10
+},
+{
+"n": 7,
+"line": "One step at a time.",
+"start": 20.08,
+"end": 22.14,
+"words": 5,
+"matched": 5
+},
+{
+"n": 8,
+"line": "I ain't gonna lie,",
+"start": 22.14,
+"end": 23.12,
+"words": 4,
+"matched": 4
+},
+{
+"n": 9,
+"line": "some days I wasn't going down them at all.",
+"start": 23.12,
+"end": 25.68,
+"words": 9,
+"matched": 9
+},
+{
+"n": 10,
+"line": "I'd just stay upstairs.",
+"start": 25.68,
+"end": 27.36,
+"words": 4,
+"matched": 4
+},
+{
+"n": 11,
+"line": "That big knee brace I bought",
+"start": 27.36,
+"end": 28.78,
+"words": 6,
+"matched": 6
+},
+{
+"n": 12,
+"line": "slid right down my leg.",
+"start": 28.78,
+"end": 30.48,
+"words": 5,
+"matched": 5
+},
+{
+"n": 13,
+"line": "By evening, it was around my ankle.",
+"start": 30.48,
+"end": 32.48,
+"words": 7,
+"matched": 7
+},
+{
+"n": 14,
+"line": "I done tried everything.",
+"start": 33.28,
+"end": 35.36,
+"words": 4,
+"matched": 4
+},
+{
+"n": 15,
+"line": "Physical therapy. Pain pills. Cortisone shots.",
+"start": 35.36,
+"end": 38.8,
+"words": 6,
+"matched": 5
+},
+{
+"n": 16,
+"line": "Every brace and sleeve they make.",
+"start": 38.8,
+"end": 40.6,
+"words": 6,
+"matched": 3
+},
+{
+"n": 17,
+"line": "Nothing worked. Nothing lasted.",
+"start": 40.6,
+"end": 42.48,
+"words": 4,
+"matched": 4
+},
+{
+"n": 18,
+"line": "Nothing gave me my life back.",
+"start": 42.48,
+"end": 44.0,
+"words": 6,
+"matched": 6
+},
+{
+"n": 19,
+"line": "Then my grandbaby got married in June.",
+"start": 44.0,
+"end": 46.26,
+"words": 7,
+"matched": 7
+},
+{
+"n": 20,
+"line": "My cousin Loretta was there.",
+"start": 46.26,
+"end": 48.0,
+"words": 5,
+"matched": 5
+},
+{
+"n": 21,
+"line": "She's seventy-four,",
+"start": 48.0,
+"end": 48.94,
+"words": 2,
+"matched": 2
+},
+{
+"n": 22,
+"line": "and she was out on that dance floor all night.",
+"start": 48.94,
+"end": 52.18,
+"words": 10,
+"matched": 10
+},
+{
+"n": 23,
+"line": "Electric Slide, Cupid Shuffle, all of it.",
+"start": 52.18,
+"end": 55.08,
+"words": 7,
+"matched": 7
+},
+{
+"n": 24,
+"line": "Both her knees was bone on bone too.",
+"start": 55.08,
+"end": 57.14,
+"words": 8,
+"matched": 8
+},
+{
+"n": 25,
+"line": "I always figured hers wasn't as bad as mine.",
+"start": 57.14,
+"end": 60.24,
+"words": 9,
+"matched": 9
+},
+{
+"n": 26,
+"line": "I always figured mine was past fixing.",
+"start": 61.02,
+"end": 64.4,
+"words": 7,
+"matched": 7
+},
+{
+"n": 27,
+"line": "Loretta came to stay the week after.",
+"start": 65.04,
+"end": 67.06,
+"words": 7,
+"matched": 7
+},
+{
+"n": 28,
+"line": "She watched me at the kitchen table,",
+"start": 68.26,
+"end": 70.8,
+"words": 7,
+"matched": 7
+},
+{
+"n": 29,
+"line": "going through my morning routine.",
+"start": 70.8,
+"end": 72.28,
+"words": 5,
+"matched": 5
+},
+{
+"n": 30,
+"line": "Two anti-inflammatories, the gel, the brace,",
+"start": 72.28,
+"end": 75.36,
+"words": 6,
+"matched": 5
+},
+{
+"n": 31,
+"line": "an ice pack on my right knee.",
+"start": 75.36,
+"end": 76.86,
+"words": 7,
+"matched": 7
+},
+{
+"n": 32,
+"line": "After a minute she said,",
+"start": 76.86,
+"end": 78.22,
+"words": 5,
+"matched": 5
+},
+{
+"n": 33,
+"line": "\"Baby, can I show you something?\"",
+"start": 78.22,
+"end": 80.02,
+"words": 6,
+"matched": 6
+},
+{
+"n": 34,
+"line": "She pulled up her pant leg.",
+"start": 80.02,
+"end": 81.38,
+"words": 6,
+"matched": 6
+},
+{
+"n": 35,
+"line": "She had on a little black strap,",
+"start": 81.38,
+"end": 83.04,
+"words": 7,
+"matched": 7
+},
+{
+"n": 36,
+"line": "right under her kneecap.",
+"start": 83.04,
+"end": 84.46,
+"words": 4,
+"matched": 4
+},
+{
+"n": 37,
+"line": "Stryde.",
+"start": null,
+"end": null,
+"words": 1,
+"matched": 0
+},
+{
+"n": 38,
+"line": "She handed me one.",
+"start": 86.28,
+"end": 88.24,
+"words": 4,
+"matched": 4
+},
+{
+"n": 39,
+"line": "It looked ridiculous. Too small.",
+"start": 88.24,
+"end": 90.42,
+"words": 5,
+"matched": 5
+},
+{
+"n": 40,
+"line": "I said, \"Loretta, you know good and well",
+"start": 90.42,
+"end": 92.84,
+"words": 8,
+"matched": 8
+},
+{
+"n": 41,
+"line": "this ain't gonna work on knees like mine.\"",
+"start": 92.84,
+"end": 95.02,
+"words": 8,
+"matched": 8
+},
+{
+"n": 42,
+"line": "She said, \"Just put it on",
+"start": 95.02,
+"end": 97.28,
+"words": 6,
+"matched": 6
+},
+{
+"n": 43,
+"line": "and walk down them stairs.\"",
+"start": 97.28,
+"end": 98.66,
+"words": 5,
+"matched": 5
+},
+{
+"n": 44,
+"line": "I did.",
+"start": 98.66,
+"end": 99.3,
+"words": 2,
+"matched": 2
+},
+{
+"n": 45,
+"line": "Chile, the first step,",
+"start": 99.3,
+"end": 100.58,
+"words": 4,
+"matched": 4
+},
+{
+"n": 46,
+"line": "I didn't even have to hold the rail.",
+"start": 100.58,
+"end": 102.48,
+"words": 8,
+"matched": 8
+},
+{
+"n": 47,
+"line": "Not the second. Not the third.",
+"start": 102.48,
+"end": 104.12,
+"words": 6,
+"matched": 6
+},
+{
+"n": 48,
+"line": "All the way down.",
+"start": 104.12,
+"end": 105.36,
+"words": 4,
+"matched": 4
+},
+{
+"n": 49,
+"line": "Both feet. Forwards.",
+"start": 105.36,
+"end": 106.56,
+"words": 3,
+"matched": 3
+},
+{
+"n": 50,
+"line": "She said, \"Everything else you tried",
+"start": 106.56,
+"end": 108.78,
+"words": 6,
+"matched": 6
+},
+{
+"n": 51,
+"line": "was made to keep you comfortable",
+"start": 108.78,
+"end": 111.18,
+"words": 6,
+"matched": 6
+},
+{
+"n": 52,
+"line": "while your knee got worse.",
+"start": 111.18,
+"end": 112.88,
+"words": 5,
+"matched": 5
+},
+{
+"n": 53,
+"line": "This one fixes why it hurts.\"",
+"start": 113.0,
+"end": 116.02,
+"words": 6,
+"matched": 6
+},
+{
+"n": 54,
+"line": "She said, \"There's one spot under the kneecap",
+"start": 116.02,
+"end": 118.36,
+"words": 8,
+"matched": 8
+},
+{
+"n": 55,
+"line": "where every step lands.",
+"start": 118.36,
+"end": 119.72,
+"words": 4,
+"matched": 4
+},
+{
+"n": 56,
+"line": "Every brace, every shot,",
+"start": 119.78,
+"end": 120.76,
+"words": 4,
+"matched": 4
+},
+{
+"n": 57,
+"line": "every pill you ever tried",
+"start": 120.76,
+"end": 122.72,
+"words": 5,
+"matched": 5
+},
+{
+"n": 58,
+"line": "treated the whole knee.",
+"start": 122.72,
+"end": 123.8,
+"words": 4,
+"matched": 4
+},
+{
+"n": 59,
+"line": "Not that spot.",
+"start": 123.88,
+"end": 124.48,
+"words": 3,
+"matched": 3
+},
+{
+"n": 60,
+"line": "That's why ain't nothing worked.",
+"start": 124.48,
+"end": 125.62,
+"words": 5,
+"matched": 5
+},
+{
+"n": 61,
+"line": "The pain is pressure. That's all it is.",
+"start": 125.62,
+"end": 128.3,
+"words": 8,
+"matched": 8
+},
+{
+"n": 62,
+"line": "This strap sits right on that spot",
+"start": 128.3,
+"end": 129.98,
+"words": 7,
+"matched": 7
+},
+{
+"n": 63,
+"line": "and takes the weight off.\"",
+"start": 129.98,
+"end": 131.32,
+"words": 5,
+"matched": 5
+},
+{
+"n": 64,
+"line": "First step. Pain gone.",
+"start": 131.32,
+"end": 133.18,
+"words": 4,
+"matched": 4
+},
+{
+"n": 65,
+"line": "Just like that.",
+"start": 133.18,
+"end": 134.22,
+"words": 3,
+"matched": 3
+},
+{
+"n": 66,
+"line": "Over two hundred thousand people wear one now.",
+"start": 134.22,
+"end": 136.7,
+"words": 8,
+"matched": 5
+},
+{
+"n": 67,
+"line": "Sports doctors recommend it.",
+"start": 136.7,
+"end": 138.56,
+"words": 4,
+"matched": 4
+},
+{
+"n": 68,
+"line": "Not the pharma companies. Sports doctors.",
+"start": 138.56,
+"end": 140.68,
+"words": 6,
+"matched": 6
+},
+{
+"n": 69,
+"line": "Loretta's husband wears one.",
+"start": 140.68,
+"end": 142.3,
+"words": 4,
+"matched": 4
+},
+{
+"n": 70,
+"line": "He's seventy-six, and he plays golf twice a week.",
+"start": 142.3,
+"end": 145.32,
+"words": 9,
+"matched": 9
+},
+{
+"n": 71,
+"line": "Her niece wears one when she runs track.",
+"start": 145.32,
+"end": 147.38,
+"words": 8,
+"matched": 8
+},
+{
+"n": 72,
+"line": "She's twenty-two.",
+"start": 147.38,
+"end": 148.08,
+"words": 2,
+"matched": 2
+},
+{
+"n": 73,
+"line": "I've worn mine every day for six weeks.",
+"start": 148.28,
+"end": 151.48,
+"words": 8,
+"matched": 8
+},
+{
+"n": 74,
+"line": "Under my clothes.",
+"start": 151.48,
+"end": 152.84,
+"words": 3,
+"matched": 3
+},
+{
+"n": 75,
+"line": "Don't nobody know it's there.",
+"start": 152.84,
+"end": 153.82,
+"words": 5,
+"matched": 2
+},
+{
+"n": 76,
+"line": "No pills. No gel.",
+"start": 154.62,
+"end": 155.72,
+"words": 4,
+"matched": 4
+},
+{
+"n": 77,
+"line": "No brace around my ankle by lunchtime.",
+"start": 155.72,
+"end": 159.24,
+"words": 7,
+"matched": 7
+},
+{
+"n": 78,
+"line": "Yesterday I walked to the store.",
+"start": 160.46,
+"end": 162.58,
+"words": 6,
+"matched": 6
+},
+{
+"n": 79,
+"line": "Two miles there. Two miles back.",
+"start": 162.58,
+"end": 164.9,
+"words": 6,
+"matched": 6
+},
+{
+"n": 80,
+"line": "Passed three women half my age.",
+"start": 164.9,
+"end": 166.7,
+"words": 6,
+"matched": 6
+},
+{
+"n": 81,
+"line": "Stood in that checkout line ten minutes",
+"start": 166.7,
+"end": 168.9,
+"words": 7,
+"matched": 7
+},
+{
+"n": 82,
+"line": "without shifting my weight.",
+"start": 168.9,
+"end": 170.38,
+"words": 4,
+"matched": 4
+},
+{
+"n": 83,
+"line": "Carried two bags home.",
+"start": 170.38,
+"end": 171.8,
+"words": 4,
+"matched": 4
+},
+{
+"n": 84,
+"line": "Didn't nobody help me.",
+"start": 171.8,
+"end": 173.4,
+"words": 4,
+"matched": 4
+},
+{
+"n": 85,
+"line": "When I got home, my husband said,",
+"start": 173.4,
+"end": 175.26,
+"words": 7,
+"matched": 7
+},
+{
+"n": 86,
+"line": "\"You was gone a long time.\"",
+"start": 175.26,
+"end": 177.24,
+"words": 6,
+"matched": 6
+},
+{
+"n": 87,
+"line": "I said, \"I know.\"",
+"start": 177.24,
+"end": 178.06,
+"words": 4,
+"matched": 4
+},
+{
+"n": 88,
+"line": "That was six weeks of wearing the strap.",
+"start": 178.06,
+"end": 180.62,
+"words": 8,
+"matched": 8
+},
+{
+"n": 89,
+"line": "Nothing else.",
+"start": 180.62,
+"end": 181.46,
+"words": 2,
+"matched": 2
+},
+{
+"n": 90,
+"line": "Three ladies from church already ordered one",
+"start": 181.46,
+"end": 184.56,
+"words": 7,
+"matched": 7
+},
+{
+"n": 91,
+"line": "after they watched me come down the church steps.",
+"start": 184.56,
+"end": 186.82,
+"words": 9,
+"matched": 9
+},
+{
+"n": 92,
+"line": "So I'ma just say it right here.",
+"start": 186.82,
+"end": 188.46,
+"words": 7,
+"matched": 7
+},
+{
+"n": 93,
+"line": "It's called Stryde Patellar Force Redirection.",
+"start": 188.46,
+"end": 191.34,
+"words": 6,
+"matched": 6
+},
+{
+"n": 94,
+"line": "They spent three years designing it",
+"start": 191.34,
+"end": 193.38,
+"words": 6,
+"matched": 6
+},
+{
+"n": 95,
+"line": "with orthopedic surgeons.",
+"start": 193.38,
+"end": 195.18,
+"words": 3,
+"matched": 3
+},
+{
+"n": 96,
+"line": "It's the real thing.",
+"start": 195.18,
+"end": 196.28,
+"words": 4,
+"matched": 4
+},
+{
+"n": 97,
+"line": "Not them cheap knock-offs",
+"start": 196.28,
+"end": 198.0,
+"words": 4,
+"matched": 4
+},
+{
+"n": 98,
+"line": "they be selling on Amazon",
+"start": 198.0,
+"end": 199.36,
+"words": 5,
+"matched": 5
+},
+{
+"n": 99,
+"line": "and them fake websites.",
+"start": 199.36,
+"end": 200.92,
+"words": 4,
+"matched": 4
+},
+{
+"n": 100,
+"line": "The link's right down below.",
+"start": 200.92,
+"end": 202.54,
+"words": 5,
+"matched": 5
+},
+{
+"n": 101,
+"line": "Two straps for the price of one right now.",
+"start": 202.54,
+"end": 205.1,
+"words": 9,
+"matched": 9
+},
+{
+"n": 102,
+"line": "Sixty days to send them back",
+"start": 205.1,
+"end": 206.92,
+"words": 6,
+"matched": 6
+},
+{
+"n": 103,
+"line": "if they don't work.",
+"start": 206.92,
+"end": 208.02,
+"words": 4,
+"matched": 4
+},
+{
+"n": 104,
+"line": "Eleven years of knee pain.",
+"start": 208.02,
+"end": 210.52,
+"words": 5,
+"matched": 5
+},
+{
+"n": 105,
+"line": "Gone the first step I took with it on.",
+"start": 210.52,
+"end": 213.76,
+"words": 9,
+"matched": 9
+},
+{
+"n": 106,
+"line": "I bought my sister a pair that same week.",
+"start": 214.8,
+"end": 218.28,
+"words": 9,
+"matched": 9
+},
+{
+"n": 107,
+"line": "She coming Sunday.",
+"start": 219.38,
+"end": 220.32,
+"words": 3,
+"matched": 3
+},
+{
+"n": 108,
+"line": "She gon' walk up my stairs on her own.",
+"start": 220.32,
+"end": 222.68,
+"words": 9,
+"matched": 9
+}
+]

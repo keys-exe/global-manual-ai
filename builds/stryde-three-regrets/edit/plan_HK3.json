@@ -1,0 +1,353 @@
+{
+ "audio": "/home/user/global-manual-ai/builds/stryde-three-regrets/vo/master/HK3_tail.wav",
+ "script": "/home/user/global-manual-ai/builds/stryde-three-regrets/vo/master/HK3.script.txt",
+ "base": "/home/user/global-manual-ai/builds/stryde-three-regrets/th/TH-HK3_tail.mp4",
+ "broll": [
+  {
+   "beat": "HK3-01",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/HK3-01.mp4",
+   "phrase": "The most common regret I read is not about surgery.",
+   "in": 0.0
+  },
+  {
+   "beat": "HK3-02",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/HK3-02.mp4",
+   "phrase": "It is not about painkillers."
+  },
+  {
+   "beat": "HK3-03",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/HK3-03.mp4",
+   "phrase": "It is not about waiting too long.",
+   "key": "waiting"
+  },
+  {
+   "beat": "HK3-04",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/HK3-04.mp4",
+   "phrase": "It is about two centimetres.",
+   "key": "two"
+  },
+  {
+   "beat": "BR-003",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-003.mp4",
+   "phrase": "Regret number one.",
+   "key": "Regret"
+  },
+  {
+   "beat": "BR-004",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-004.mp4",
+   "phrase": "Nobody ever told them where it was actually coming from.",
+   "key": "coming"
+  },
+  {
+   "beat": "BR-005",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-005.mp4",
+   "phrase": "They bought the stretchy sleeve.",
+   "key": "sleeve"
+  },
+  {
+   "beat": "BR-006",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-006.mp4",
+   "phrase": "Then the one with the metal sides.",
+   "key": "metal"
+  },
+  {
+   "beat": "BR-007",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-007.mp4",
+   "phrase": "Then the wrap, then the gel,",
+   "key": "wrap"
+  },
+  {
+   "beat": "BR-007b",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-007b.mp4",
+   "phrase": "then the one their neighbour swore by.",
+   "key": "neighbour"
+  },
+  {
+   "beat": "BR-008",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-008.mp4",
+   "phrase": "And why would they not."
+  },
+  {
+   "beat": "BR-009",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-009.mp4",
+   "phrase": "The joint is where it hurts, and the joint is what the scan shows.",
+   "key": "scan"
+  },
+  {
+   "beat": "MECH-010",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/MECH-010.mp4",
+   "phrase": "But two centimetres below your kneecap there is a band of tendon about as wide as your thumb, and every step you take lands on it.",
+   "key": "band"
+  },
+  {
+   "beat": "MECH-011",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/MECH-011.mp4",
+   "phrase": "Seventeen times your bodyweight.",
+   "key": "Seventeen"
+  },
+  {
+   "beat": "BR-012",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-012.mp4",
+   "phrase": "Put your finger under your kneecap and press.",
+   "key": "finger"
+  },
+  {
+   "beat": "MECH-013",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/MECH-013.mp4",
+   "phrase": "That band is the one taking it.",
+   "key": "band"
+  },
+  {
+   "beat": "MECH-014",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/MECH-014.mp4",
+   "phrase": "A sleeve squeezes the whole knee and leaves that band carrying everything.",
+   "key": "sleeve"
+  },
+  {
+   "beat": "BR-015",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-015.mp4",
+   "phrase": "A hinged brace stops the knee going sideways, and the knee was never going sideways.",
+   "key": "hinged"
+  },
+  {
+   "beat": "BR-016",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-016.mp4",
+   "phrase": "So the drawer fills up, the years go by, and not one of them was ever aimed at the spot.",
+   "key": "drawer"
+  },
+  {
+   "beat": "BR-017",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-017.mp4",
+   "phrase": "Regret number two.",
+   "key": "Regret"
+  },
+  {
+   "beat": "BR-018",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-018.mp4",
+   "phrase": "They protected the bad knee with the good one.",
+   "key": "bad"
+  },
+  {
+   "beat": "BR-019",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-019.mp4",
+   "phrase": "Nobody decides to do this."
+  },
+  {
+   "beat": "BR-020",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-020.mp4",
+   "phrase": "You lead with the good leg because it hurts less, and after a while you stop noticing.",
+   "key": "good"
+  },
+  {
+   "beat": "MECH-021",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/MECH-021.mp4",
+   "phrase": "But the good leg is now doing the work of two, and the band on that side is taking a load it was never meant to take.",
+   "key": "work"
+  },
+  {
+   "beat": "BR-022",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-022.mp4",
+   "phrase": "That is why the second knee goes.",
+   "key": "second"
+  },
+  {
+   "beat": "BR-024",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-024.mp4",
+   "phrase": "Regret number three.",
+   "key": "Regret"
+  },
+  {
+   "beat": "BR-025",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-025.mp4",
+   "phrase": "They stopped saying yes, and they never said why.",
+   "key": "yes"
+  },
+  {
+   "beat": "BR-026",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-026.mp4",
+   "phrase": "No to the long walk. No to the day out.",
+   "key": "long"
+  },
+  {
+   "beat": "BR-028",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-028.mp4",
+   "phrase": "No to the house with the steps up to the front door.",
+   "key": "steps"
+  },
+  {
+   "beat": "BR-029",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-029.mp4",
+   "phrase": "Not a decision, just easier than explaining."
+  },
+  {
+   "beat": "BR-030",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-030.mp4",
+   "phrase": "And the people around them thought they had gone off it.",
+   "key": "people",
+   "out": 2.2
+  },
+  {
+   "beat": "BR-032",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-032.mp4",
+   "phrase": "Coming down is worse than going up.",
+   "key": "Coming"
+  },
+  {
+   "beat": "BR-033",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-033.mp4",
+   "phrase": "Going up, your muscles lift you.",
+   "key": "Going"
+  },
+  {
+   "beat": "MECH-034",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/MECH-034.mp4",
+   "phrase": "Coming down, you are catching yourself, and the catch lands on that band.",
+   "key": "catch"
+  },
+  {
+   "beat": "BR-035",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-035.mp4",
+   "phrase": "So you do not wrap the joint.",
+   "key": "wrap"
+  },
+  {
+   "beat": "MECH-036",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/MECH-036.mp4",
+   "phrase": "You go underneath it.",
+   "key": "underneath"
+  },
+  {
+   "beat": "PR-037",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/PR-037.mp4",
+   "phrase": "This one is called Stryde.",
+   "key": "Stryde"
+  },
+  {
+   "beat": "BR-038",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-038.mp4",
+   "phrase": "It sits two centimetres below the kneecap, on the tendon, and never crosses the joint.",
+   "key": "below"
+  },
+  {
+   "beat": "BR-039",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-039.mp4",
+   "phrase": "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee.",
+   "key": "pad"
+  },
+  {
+   "beat": "MECH-040",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/MECH-040.mp4",
+   "phrase": "The weight gets caught and moved off the worn part before it reaches the joint.",
+   "key": "caught"
+  },
+  {
+   "beat": "BR-041",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-041.mp4",
+   "phrase": "The placement is the whole thing.",
+   "key": "placement"
+  },
+  {
+   "beat": "BR-042",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-042.mp4",
+   "phrase": "A centimetre too high and it is a sleeve again.",
+   "key": "centimetre"
+  },
+  {
+   "beat": "BR-043",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-043.mp4",
+   "phrase": "Thirty four percent less strain. Measured.",
+   "key": "Thirty"
+  },
+  {
+   "beat": "PR-045",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/PR-045.mp4",
+   "phrase": "Three years with orthopedic surgeons.",
+   "key": "orthopedic"
+  },
+  {
+   "beat": "BR-046",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-046.mp4",
+   "phrase": "Two hundred thousand people wearing one.",
+   "key": "Two"
+  },
+  {
+   "beat": "BR-047",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-047.mp4",
+   "phrase": "Ten seconds to put on.",
+   "key": "Ten"
+  },
+  {
+   "beat": "BR-048",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-048.mp4",
+   "phrase": "No sores, no rolling down, and nobody can see it.",
+   "key": "nobody"
+  },
+  {
+   "beat": "BR-050",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-050.mp4",
+   "phrase": "One knee only. Leave the other bare.",
+   "key": "One"
+  },
+  {
+   "beat": "BR-052",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-052.mp4",
+   "phrase": "Go to your own stairs and come down forwards.",
+   "key": "come"
+  },
+  {
+   "beat": "BR-053",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-053.mp4",
+   "phrase": "You will know in a minute.",
+   "key": "know"
+  },
+  {
+   "beat": "MECH-056",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/MECH-056.mp4",
+   "phrase": "Because the weight is not landing on that band any more.",
+   "key": "weight"
+  },
+  {
+   "beat": "BR-057",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-057.mp4",
+   "phrase": "Most of those messages end the same way.",
+   "key": "messages"
+  },
+  {
+   "beat": "BR-058",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-058.mp4",
+   "phrase": "I wish somebody had told me this four years ago.",
+   "key": "wish"
+  },
+  {
+   "beat": "PR-061a",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/PR-061a.mp4",
+   "phrase": "Two for one,",
+   "key": "Two"
+  },
+  {
+   "beat": "BR-061b",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-061b.mp4",
+   "phrase": "so you do both knees, which after regret number two is the point.",
+   "key": "both"
+  },
+  {
+   "beat": "PR-062",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/PR-062.mp4",
+   "phrase": "Sixty days, and you keep the straps.",
+   "key": "keep"
+  },
+  {
+   "beat": "BR-064",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-064.mp4",
+   "phrase": "The copies stretch, and a stretched strap stops holding it.",
+   "key": "stretch"
+  },
+  {
+   "beat": "BR-065",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/10717553-fbf6-591d-840c-948130683a36/scratchpad/media/BR-065.mp4",
+   "phrase": "Go and do your stairs.",
+   "key": "stairs"
+  }
+ ],
+ "tail_note": "1.2s of silence after the last word (and the TH's last frame held) so the closing B-roll BR-065 holds >= 2.0s (\u00a730H rule 5); no spoken word, pause or pace changed"
+}

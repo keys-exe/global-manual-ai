@@ -68,6 +68,7 @@ a.tab{text-decoration:none}
 .kpi .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .kpi .v{font-family:var(--display);font-size:28px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}
 .kpi .s{font-size:12px;color:var(--muted)}
+.kpi .cl{display:flex;flex-direction:column;gap:3px;margin-top:2px}.kpi .cr{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,auto);align-items:baseline;gap:8px;font-size:12.5px;line-height:1.3}.kpi .cr .cn{color:var(--ink);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.kpi .cr b{font-family:var(--display);font-size:18px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}.kpi .cr small{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap;min-width:52px;text-align:right}
 .bar{height:6px;border-radius:3px;background:var(--sunk);overflow:hidden;display:flex}
 .bar i{display:block;height:100%}
 
@@ -272,7 +273,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .boxes.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));align-items:start}
 .mc-tools .btn{white-space:nowrap;font-size:12px}
 .tile .frame{border:0;text-align:left;cursor:zoom-in;width:100%}
-.caprow{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.caprow{display:flex;align-items:center;justify-content:space-between;gap:3px 6px;flex-wrap:wrap}
 .linkbtn{border:0;background:transparent;color:var(--accent);font-size:12px;padding:2px 0;font-weight:600}
 .mc .media.filled{cursor:zoom-in}
 .mc .media:not(.filled){cursor:default}
@@ -835,6 +836,22 @@ const state = {builds:[], gens:[], build:null, filter:"all", q:"", live:false, r
 const $ = s=>document.querySelector(s);
 const esc = s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const num = n=>Number(n||0).toLocaleString("en-US");
+// Credits spent, by connector, every render counted (user, 2026-09-30: "the credit spent should show what [connector] and how much").
+// Each version entry carries its own credits/model/connector; a step with no version records falls back to its own fields.
+function spendRows(gens){
+  const acc=new Map();
+  const add=(conn,model,c)=>{c=Number(c);if(!c)return;const key=conn+"|"+model;const r=acc.get(key)||{conn,model,credits:0,n:0};r.credits+=c;r.n++;acc.set(key,r)};
+  for(const g of gens||[]) for(const k of ["image","video"]){
+    const d=STEP[k];const conn=g[d.conn]||d.defConn||"—";const model=g[d.model]||d.defModel||"—";
+    const vers=Array.isArray(g[d.vers])?g[d.vers]:[];
+    let got=0;for(const v of vers){const c=Number(v&&v.credits);if(c){add(v.connector||conn,v.model||model,c);got+=c}}
+    if(!got) add(conn,model,g[d.credits]);
+  }
+  return [...acc.values()].sort((a,b)=>a.conn.localeCompare(b.conn)||b.credits-a.credits);
+}
+// The connector's recorded balance on the build doc (keys matched loosely: "Kie AI" ~ "kie").
+function balanceFor(b,conn){const bal=b&&b.balances||{};const c=String(conn||"").toLowerCase().replace(/[^a-z]/g,"");for(const [k,v] of Object.entries(bal)){const kk=String(k).toLowerCase().replace(/[^a-z]/g,"");if(kk&&c&&(kk===c||kk.includes(c)||c.includes(kk))&&v!=null&&v!=="")return Number(v)}return null}
+function spendByConn(rows){const m=new Map();for(const r of rows){const t=m.get(r.conn)||{conn:r.conn,credits:0,n:0};t.credits+=r.credits;t.n+=r.n;m.set(r.conn,t)}return [...m.values()]}
 function lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
 function lsSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
 
@@ -1006,6 +1023,7 @@ async function confirmTake(id,part){
 }
 function render(){renderInner();hydrate()}
 function renderInner(){
+  state.multiBody=new Set(buildGens().filter(g=>g.stage==="broll").flatMap(bodiesOf)).size>1;
   const b=currentBuild();
   $("#buildTitle").textContent=b?(b.name||b.id):"No build yet";
   $("#buildMeta").innerHTML=b?[
@@ -1016,7 +1034,7 @@ function renderInner(){
   const cg=gens.filter(g=>!spareTake(g,gens));
   const by=k=>cg.filter(g=>g.status===k).length;
   const total=cg.length, use=by("use"), regen=by("regenerate"), review=by("review"), gen=by("generating");
-  const credits=gens.reduce((s,g)=>s+(Number(g.credits)||0),0);
+  const spend=spendRows(gens);const credits=spend.reduce((s,r)=>s+r.credits,0);const byConn=spendByConn(spend);
   const pct=total?Math.round(use/total*100):0;
   const seg=k=>total?`<i style="width:${by(k)/total*100}%;background:var(--${k==="generating"?"gen":k==="regenerate"?"regen":k==="ready"?"ready":k})"></i>`:"";
   $("#summary").innerHTML=`
@@ -1026,7 +1044,7 @@ function renderInner(){
     <div class="kpi"><span class="k">Confirmed</span><span class="v" style="color:var(--use)">${use}</span><span class="s">Passed the image and clip checks</span></div>
     <div class="kpi"><span class="k">To check</span><span class="v" style="color:var(--review)">${review}</span><span class="s">${gen} generating now</span></div>
     <div class="kpi"><span class="k">Fixing</span><span class="v" style="color:var(--regen)">${regen}</span><span class="s">Two tries per fault, then you</span></div>
-    <div class="kpi"><span class="k">Credits spent</span><span class="v">${num(credits)}</span><span class="s">Logged on generations</span></div>`;
+    <div class="kpi"><span class="k">Credits spent</span>${byConn.length?`<div class="cl">${byConn.map(t=>{const left=balanceFor(b,t.conn);const models=spend.filter(r=>r.conn===t.conn).map(r=>`${r.model} ${num(r.credits)}`).join(" · ");return `<div class="cr" title="${esc(models)}"><span class="cn">${esc(t.conn)}</span><b>${num(t.credits)}</b><small>${left!=null?num(left)+" left":""}</small></div>`}).join("")}</div><span class="s">Spent on this board, every render counted</span>`:`<span class="v">0</span><span class="s">Logged on generations</span>`}</div>`;
 
   const vs=views(); if(!vs.includes(state.view)) state.view=vs[0];
   $("#eyebrow").textContent=BOARD_ROLE==="current"&&!Object.keys(boardsOf(b)).length?"AI Prompt Engineer · Generation Board":"Generation Board · "+BOARD_NAMES[BOARD_ROLE];
@@ -1077,6 +1095,14 @@ function renderInner(){
     // a scene: its images first, then its clips
     if(s.scene&&vis.length){const im=vis.filter(g=>!flow(g).includes("video")), cl=vis.filter(g=>flow(g).includes("video"));
       body=`<div style="display:grid;gap:18px">`+[["Images",im,"Info cards and plates made for this scene"],["Clips",cl,"Each clip with the images it was made from"]].filter(x=>x[1].length).map(([h,l,n],i)=>`<div class="msec"><div class="msec-h"><h3>${i+1} · ${h}</h3><span class="note">${n}</span></div><div class="tiles">${l.map(tile).join("")}</div></div>`).join("")+`</div>`+(aud.length?`<div class="arows">${aud.map(audioRow).join("")}</div>`:"")}
+    // more than one hook, or more than one body: each gets its own group (user, 2026-09-29)
+    if(!s.scene&&vis.length&&(s.key==="hooks"||s.key==="broll")){
+      const sub=new Map();
+      for(const g of vis){const ks=s.key==="hooks"?[hookNum(g)]:(state.multiBody?(bodiesOf(g).length?bodiesOf(g):[0]):[0]);for(const n of ks){if(!sub.has(n)) sub.set(n,[]);sub.get(n).push(g)}}
+      if(sub.size>1) body=`<div style="display:grid;gap:18px">`+[...sub.entries()].sort((a,b)=>(a[0]||999)-(b[0]||999)).map(([n,l])=>{
+        const ok=l.filter(g=>!needsMe(g)).length, name=s.key==="hooks"?(n?"Hook "+n:"Hook not set"):(n?"Body "+n:"Body not set");
+        return `<div class="msec"><div class="msec-h"><h3>${name}</h3><span class="note">${ok} of ${l.length} confirmed</span></div><div class="tiles">${l.map(tile).join("")}</div></div>`}).join("")+`</div>`+(aud.length?`<div class="arows">${aud.map(audioRow).join("")}</div>`:"");
+    }
     if(s.key==="talking"&&!voLocked(b,gens)) body=`<p class="note" style="margin:0 0 10px">Talking heads start after the VO is locked.</p>`+body;
     return `<section class="widget${s.wide?" wide":""}" id="w-${s.key}">
       <div class="w-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
@@ -1178,7 +1204,7 @@ function tile(g){
       <div class="line">${esc(g.line||g.title||"")}</div>
       <div class="dur"><span>${esc(g.model?shortModel(g.model):"")}</span><span>${specs.join(" · ")}</span></div></button>
     <div class="cap"><span class="ttl">${esc(g.title||g.beat||"Untitled")}</span>
-      <span class="caprow"><span class="pill">${esc(STATUS_LABEL[st]||st)}</span><button class="linkbtn" type="button" data-open="${esc(g.id)}">Edit</button></span></div></div>`;
+      <span class="caprow">${(x=>`<span class="pill ${x.c}">${esc(x.t)}</span>`)(BOARD_ROLE==="old"?{t:"Not used",c:"s-regenerate"}:todoLabel(g))}<button class="linkbtn" type="button" data-open="${esc(g.id)}">Edit</button></span></div></div>`;
 }
 function shortModel(m){return String(m).replace("kling-video-v3_0_omni","kling 3.0 omni").replace(/_/g," ")}
 
@@ -1373,11 +1399,28 @@ function needsYouCount(gens){return gens.filter(g=>g.stage!=="vo"&&stepNeedsYou(
 function actNum(v){const m=String(v||"").match(/\d+/);return m?Number(m[0]):null}
 // a film shot (or any shot given a scene) groups by scene: Scene 1's images, then its clips, then Scene 2…
 function sceneNum(g){if(g.scene!=null&&g.scene!=="") return actNum(g.scene);return /scene/i.test(String(g.act||""))?actNum(g.act):null}
+// A build can have more than one body (one per finished video): `body` on the card (a number, or a list for a shared shot), else "Body n" in its act
+function bodiesOf(g){const b=g.body;if(Array.isArray(b)) return b.map(Number).filter(Boolean);if(b!=null&&b!=="") return [Number(b)].filter(Boolean);const m=String(g.act||"").match(/body\s*(\d+)/i);return m?[Number(m[1])]:[]}
+function hookNum(g){if(g.hook!=null&&g.hook!=="") return actNum(g.hook);return actNum(g.act)||actNum(g.beat)||0}
+// what this card is waiting for, in plain words (user, 2026-09-29: "image ready to check, video generating…")
+function todoLabel(g){
+  if(pairOf(g)) return {t:"Pick image A or B",c:"s-review"};
+  const fl=flow(g), k=fl.find(x=>stepState(g,x)!=="ok");
+  if(!k) return {t:"Confirmed",c:"s-use"};
+  const nm=isAudio(g)?"Audio":k==="image"?"Image":k==="video"?"Video":"File", s=stepState(g,k);
+  if(k==="video"&&videoLocked(g)) return {t:isSeed(g)?"Waiting for ingredients":"Waiting for image",c:"s-planned"};
+  if(s==="gen") return {t:`${nm} ${g[STEP[k].fault]?"regenerating":"generating"}`,c:"s-generating"};
+  if(s==="bad") return {t:`${nm} to fix`,c:"s-regenerate"};
+  if(s==="review") return {t:`${nm} ready to check`,c:"s-review"};
+  return {t:g[STEP[k].prompt]?`${nm} prompt ready`:`${nm} planned`,c:"s-planned"};
+}
+function stepChip(g,k,s){const nm=isAudio(g)?"Audio":STEP[k].label;return s==="gen"?`<span class="pill s-generating">${nm} ${g[STEP[k].fault]?"regenerating":"generating"}</span>`:s==="ok"?`<span class="pill s-use">${nm} confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">${nm} to fix</span>`:s==="review"?`<span class="pill s-review">${nm} ready to check</span>`:null}
 function groupOf(g){
   if(["hooks","broll","talking"].includes(g.stage)){const n=sceneNum(g);if(n) return {key:"scene-"+n,label:"Scene "+n,kicker:"Scene",order:400+n}}
   if(g.stage==="hooks"){const n=actNum(g.act)||actNum(g.beat)||0;return {key:"hook-"+n,label:n?"Hook "+n:"Hook",kicker:"Hook",order:300+n}}
   if(g.stage==="broll"){
-    const n=actNum(g.act);
+    const n=actNum(String(g.act||"").replace(/body\s*\d+/i,"")), bd=state.multiBody?bodiesOf(g)[0]:0;
+    if(bd) return n?{key:`body-${bd}-act-${n}`,label:`Body ${bd} · Act ${n}`,kicker:"Body "+bd,order:400+bd*40+n}:{key:`body-${bd}`,label:`Body ${bd}`,kicker:"Body",order:400+bd*40};
     return n?{key:"act-"+n,label:"Act "+n,kicker:"Act",order:400+n}:{key:"act-none",label:"Act not set yet",kicker:"Body",order:990,note:"These beats get their act at step 5, the act map."};
   }
   const st=STAGES.find(x=>x.key===g.stage)||STAGES[0];
@@ -1499,7 +1542,7 @@ function mediaCard(g,k){
   const limit=/kling/i.test(model)&&k!=="image"?2500:null;
   const fixing=state.faultOpen===g.id+":"+k;
   const cls=locked?"locked":s==="ok"?"ok":s==="bad"||s==="gen"?"bad":s==="review"?"now":"";
-  const chip=BOARD_ROLE==="old"?`<span class="pill s-regenerate">Not used</span>`:locked?`<span class="pill s-planned">Locked</span>`:s==="gen"?`<span class="pill s-generating">${g[d.fault]?"Regenerating":"Generating"}</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">${prompt?"Prompt ready":"Waiting"}</span>`;
+  const chip=BOARD_ROLE==="old"?`<span class="pill s-regenerate">Not used</span>`:locked?`<span class="pill s-planned">${seed?"Waiting for ingredients":"Waiting for image"}</span>`:stepChip(g,k,s)||`<span class="pill s-planned">${d.label} ${prompt?"prompt ready":"planned"}</span>`;
   const size=g[d.size]?(k==="image"?esc(g[d.size]):`${esc(g[d.size])}s`):"—";
   const specs=[
     ["Connector",esc(g[d.conn]||(seed?"Kie AI":d.defConn)||"—")],
@@ -1516,7 +1559,7 @@ function mediaCard(g,k){
   return `<article class="mc ${cls}" id="mc-${esc(g.id)}-${k}">
     <div class="mc-head">
       <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}${versionsOf(g,k).length>1?`<span class="vbadge" title="${versionsOf(g,k).length} versions">v${currentV(g,k)}</span>`:""}</span></div>
-      <div class="kv end"><span class="lbl">Status</span>${pr?`<span class="pill s-review">Pick one</span>`:chip}</div></div>
+      <div class="kv end"><span class="lbl">Status</span>${pr?`<span class="pill s-review">Pick image A or B</span>`:chip}</div></div>
     ${pr?pairMedia:`<div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}"`} ${asset?`data-viewm="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="View ${d.label.toLowerCase()} for ${esc(g.beat)}"`:""}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>`}
     ${seed?`<div class="kv"><span class="lbl">Ingredients · ${refs.filter(x=>x.st==="ok").length}/${refs.length} confirmed</span><div class="ing-row">${refs.map(x=>ingTile(g,x,"row",k)).join("")||`<span class="mc-l">None listed yet</span>`}</div></div>`:
       refs.length?`<div class="kv"><span class="lbl">Reference images used · ${refs.length}</span><div class="ing-row">${refs.map(x=>ingTile(g,x,"row",k)).join("")}</div></div>`:""}
@@ -1760,7 +1803,7 @@ function renderViewer(){
     moved?`<div class="v-empty"><div style="display:grid;gap:12px;justify-items:center">${I.box}<span>v${shown.v} is on the Old versions board, kept at full quality. Nothing was shrunk or deleted.</span>${archiveLink(shown)?`<a class="btn" href="${esc(archiveLink(shown))}" target="_blank" rel="noopener">Open in Old versions ↗</a>`:""}</div></div>`:
     `<div class="v-empty">${locked?`🔒 Confirm the ${seed?"ingredients":"image"} first`:`No ${d.label.toLowerCase()} yet`}</div>`;
   const s=stepState(g,k);
-  const chip=locked?`<span class="pill s-planned">Locked</span>`:s==="ok"?`<span class="pill s-use">Confirmed</span>`:s==="bad"?`<span class="pill s-regenerate">Fixing</span>`:s==="gen"?`<span class="pill s-generating">Generating</span>`:s==="review"?`<span class="pill s-review">Check it</span>`:`<span class="pill s-planned">Waiting</span>`;
+  const chip=locked?`<span class="pill s-planned">${seed?"Waiting for ingredients":"Waiting for image"}</span>`:stepChip(g,k,s)||`<span class="pill s-planned">${d.label} planned</span>`;
   const grp=groupOf(g);
   // frame check: only for a video, on the version being shown
   const outV=cleanOut(g,k,shown);
@@ -1798,7 +1841,7 @@ function renderViewer(){
   const prompt=g[d.prompt]||"";
   const canAct=!state.readOnly&&!locked&&!ingV&&!pending(g,k)&&!older&&!!asset;
   const panel=`<aside class="v-panel" data-shown="${!!v.details}" aria-label="Details">
-      <div class="ps"><span class="lbl">Status</span><div>${pl>=0?`<span class="pill s-review">Pick one</span> <span class="pill s-planned">Option ${"AB"[pl]}</span>`:chip}${older?` <span class="pill s-planned">Viewing v${shown.v}</span>`:""}</div></div>
+      <div class="ps"><span class="lbl">Status</span><div>${pl>=0?`<span class="pill s-review">Pick image A or B</span> <span class="pill s-planned">Option ${"AB"[pl]}</span>`:chip}${older?` <span class="pill s-planned">Viewing v${shown.v}</span>`:""}</div></div>
       ${g.line?`<div class="ps"><span class="lbl">Script line</span><div class="v-quote">“${esc(g.line)}”</div></div>`:""}
       ${g.motionPlan&&flow(g).includes("video")?`<div class="ps"><span class="lbl">Video will show</span><div class="v-quote">${esc(g.motionPlan)}</div></div>`:""}
       ${ings.length?`<div class="ps"><span class="lbl">${seed?"Ingredients":"Reference images used"} · ${ings.length}</span><div class="ing-row">${ings.map(x=>ingTile(g,x,"vrow",k)).join("")}</div></div>`:""}
@@ -1831,6 +1874,7 @@ function renderViewer(){
   const old=document.getElementById("vfault"), draft=old?old.value:"";
   $("#viewer").innerHTML=`
     <div class="v-top">
+      <button class="btn small v-back" type="button" data-vclose="x" aria-label="Back to the board">${I.l} Back</button>
       <div class="v-title"><span class="lbl">${esc(grp.label)}</span><span class="v-beat">${esc(g.beat||"")} · ${esc(g.title||"")}</span></div>
       <span class="grow"></span>
       <button class="btn small v-detbtn" type="button" data-vdet="1" aria-expanded="${!!v.details}">${I.info} Details</button>

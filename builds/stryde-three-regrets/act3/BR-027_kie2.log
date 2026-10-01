@@ -1,0 +1,12 @@
+{"taskId": "0bfa31ddafd18b97e31b72cde8c4d545", "created": true}
+{
+  "taskId": "0bfa31ddafd18b97e31b72cde8c4d545",
+  "state": "success",
+  "credits": 54.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/0bfa31ddafd18b97e31b72cde8c4d545_1_1790755575_6582.mp4"
+  ],
+  "saved": "act3/BR-027_clip_v2.mp4",
+  "model": "kling-3.0-omni/image-to-video"
+}

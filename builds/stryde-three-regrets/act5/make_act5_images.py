@@ -1,0 +1,75 @@
+import json, sys
+sys.path.insert(0, '../../../products/stryde'); import stryde_product_sheet as s
+F = lambda x: s.fill(x, 'right')
+HEAD="Shot on an iPhone 17 Pro Max, handheld, the main 48MP Fusion camera at 24mm equivalent and f/1.78, left on its default 24 megapixel output, Smart HDR 5 and Deep Fusion on, Photographic Style on Standard, everything left on automatic — exposure, white balance and focus all chosen by the phone rather than by a person. An ordinary photo taken on an ordinary phone."
+FILE="THIS IS A FILE, NOT A PICTURE. Nobody framed it, nobody lit it, nobody chose the moment and nobody looked at it afterwards. It is an unremarkable photograph off a phone. Sharpness is uneven across the frame: one plane is in focus and everything in front of and behind it falls away, because the lens has one fixed aperture and nobody chose where to put the focus. Edges are soft rather than crisp, with faint compression mush in the shadows and detail thinning toward the corners. Nothing has been sharpened, cleaned up, separated from its background or arranged, and no part of the frame has been given more attention than any other part."
+GAIL="THE SAME WOMAN as in the attached reference sheet — broad square face, heavy jaw, a thin copper bob with the scalp showing at the parting, sixty-two, tall and big-boned —"
+D1="Grey marl T-shirt, a faded lilac towelling dressing gown hanging open, navy cotton pyjama shorts above the knee, sheepskin slippers."
+D2="A white broderie-anglaise short-sleeved blouse, wide-leg sage-green linen trousers rolled up above the knees, a thin gold watch."
+AV="no posing for camera, no glancing at the lens, no staged or completed action, no centred composition, no stock footage look, no AI face, no extra fingers, no fused fingers, no deformed limbs, no warped background, no over-saturated colors, no moody dark grade, no light from nowhere, no lens flare, no readable text, no logos"
+def P(scene, angle, focus, light, avoid):
+    return "\n\n".join([HEAD, scene, "THE CAMERA ANGLE: "+angle+" This exact angle, not a straight-on eye-level view.", "FOCUS: "+focus+" The blur is optical: soft and round, never smeared.", light, FILE, "AVOID: "+avoid+", "+AV])+"\n"
+HALL_L="THE LIGHT: the front-door glass behind the lens and the landing window at the top of the stairs light the hall, grey flat late-morning daylight, cool and even, the stair carpet soft in it. The shadows fall away from the door, one way only."
+BED1="THE LIGHT: the window on the room's right-hand wall lights her from the right of the frame, grey flat late-morning daylight, cool, so she has a lit side toward the right and a softer shadow side. The shadows fall away from that source, one way only."
+BED2="THE LIGHT: midday sun through the window on the room's right-hand wall, warmer now, a patch of sunlight on the carpet and a soft warm fill across the bed, so she has a lit side toward the right. The shadows fall away from the window, one way only."
+PROD = s.REF_PROD
+ANATH="Premium 3D anatomical visualisation for medical education, broadcast-quality CGI render, clean. Vertical composition. A stylised anatomical model of a single knee in true lateral profile, framed as a close-up from mid-thigh to mid-shin only, the patellar tendon two centimetres below the kneecap sitting just off-centre in the middle of the frame. Deep near-black field with a faint cool blue tint and very faint drifting particulate at depth. Full muscle stack in natural anatomical colour — quadriceps, hamstrings and calf, warm red and muted brick, semi-transparent and layered, broad directional grain along each belly, never individual fibres. The femur, patella and tibia deepest, warm ivory-gold with soft inner luminosity. The outer body contour a faint translucent glass-like shell, and a bright cool blue-white rim light tracing the silhouette, crisp against the black. Three-source render lighting, a cool pale-cyan key from upper left, a low warm amber bounce, strong falloff, volumetric scatter through the translucent tissue, clean satin sheen on the patellar tendon and bone."
+ANEG="no text overlays, no labels, no numbers, no annotations, no arrows, no UI, no watermark, no opaque surfaces, no individual muscle fibres, no surface veins, no foot, no hip, no second leg, no whole body, no hands, no people, no clothing, no x-ray look, no flat illustration, no cartoon look, no vignette, no spotlight pool, no emission on the bone shafts, no glow at the tibial tuberosity, no glow on the shin bone, no lasers, no energy beams, no external energy"
+
+OUT_L="THE LIGHT: midday sun, high and a little behind the lens to the right, warm on the pebble-dashed front of the house and the path, short crisp shadows falling away from the sun, one way only."
+HALL2="THE LIGHT: midday sun through the front-door glass behind the lens lays a warm patch across the hall carpet and the bottom stairs, the landing window at the top bright, the pale walls warm. The shadows fall away from the door, one way only."
+ROLL="her sage trousers rolled high up both thighs, the rolled hem a full hand's width above the kneecap, nothing touching the strap"
+W=PROD+" "+F(s.PLACE_LOCK_C)+" "+s.SIZE_WORN+" "+s.FIT_SNUG
+B = {}
+B["BR-043"] = P(GAIL+" outside her 1960s pebble-dashed semi, walking down her own short front path towards the low front gate and the pavement, towards the lens, mid-stride: her right foot planted and taking her weight, her left foot swinging through, arms loose, an easy confident stride, the small square front lawn and a clipped privet hedge either side of the concrete path, the house front behind her. "+ROLL+". "+W+" "+s.LEG_SKIN+" "+D2,
+ "the lens low, at waist height in front of her on the path near the gate, looking up the path at her as she comes, from the front. Her whole figure from head to shoes, the house front behind.",
+ "everything from near to far stays sharp — the path, her, the strap, the house.", OUT_L,
+ F(s.NEG_PLACE)+", no trouser hem over the strap, no strap on both knees, no running, no posing, no looking at the lens")
+B["PR-045"] = P("An orthopaedic surgeon in his fifties — kind, approachable, a slight smile, short grey hair, reading glasses pushed up on his head, a pale blue cotton shirt with the sleeves rolled to the forearm, no white coat, no stethoscope — IN THE SAME CONSULTING ROOM as the attached room photograph, sitting at the desk beside a life-size anatomical knee model on its stand. In his right hand, near the knee model, he holds the strap. "+PROD+" held in a bottom-edge pinch: "+dict(s.HELD_GRIPS)["bottom-edge pinch"]+"; nothing rises above the shell's top edge, the peaks and notch clear, the wordmark facing the lens. "+s.SIZE_HELD,
+ "the lens at his eye height, level, seen from three-quarter of him across the corner of the desk, medium close: his head and shoulders, his hand holding the strap and the knee model beside it in the frame.",
+ "the strap in his hand is in sharp focus; his face just soft; the room behind falls to a soft, recognisable shape.",
+ "THE LIGHT: daylight from the consulting-room window to the left of the frame, soft and even, a little warm, so he has a lit side toward the left. The shadows fall away from the window, one way only.",
+ s.NEG_HELD_P+", "+F(s.NEG_WARP_P)+", no white coat, no stethoscope, no scrubs, no mask, no stern face, no strap on the knee model, no second strap, no looking at the lens")
+B["BR-046"] = P("Three older walkers in their sixties and seventies, walking in a loose single line along a flat gravel canal towpath, seen only from the waist down: walking shorts and cropped trousers ending above the knee, bare legs, walking socks and sturdy walking shoes, one with a walking pole. Each walker wears one strap on the knee nearest the lens. Each strap: "+W.replace("[SIDE]","near")+" The canal water and the grassy bank beside the path, a narrowboat moored further along, a hedge on the far side.",
+ "the lens at ground level on the towpath edge, in profile to the walkers, looking across the path as they pass through the frame from left to right, medium: their legs from the waist down fill the frame across its width.",
+ "everything from near to far stays sharp — the legs, the straps, the path and the water.",
+ "THE LIGHT: late-morning sun from behind the lens and to the left, bright and warm, short shadows of the legs on the gravel falling to the right, one way only.",
+ "no faces, no upper bodies, no heads, no straps on the far knees, no strap on both knees, no running, no sports kit, no lycra, no marching in step, "+F(s.NEG_PLACE))
+B["BR-047"] = P(GAIL+" IN THE SAME HOUSE as the attached hall photograph, sitting on the bottom stair with her right leg stretched down onto the hall carpet, knee slightly bent, "+ROLL+". "+PROD+" already closed on her leg, sitting just below the knee: a finger-width strip of bare skin between the kneecap's lower border and the notch, not yet touching the kneecap. Both her hands hold the shell by its two sides, palms and fingertips flat on the matte shell, about to slide it the last short way up into its seat. "+s.SIZE_WORN+" "+s.LEG_SKIN+" "+D2,
+ "the lens above, looking down at her right knee, seen from three-quarter of her, close: her two hands, the strap and the bare kneecap fill the frame, the stair edge and the hall carpet below, no face.",
+ "her hands and the strap are in sharp focus; the hall behind falls soft.", HALL2,
+ "no strap on the kneecap, no strap at mid-shin, no band open, no band being threaded, no hand on the band, no trouser hem over the kneecap, "+F(s.NEG_WARP_P)+", no face")
+B["BR-048"] = P(GAIL+" IN THE SAME HOUSE as the attached hall photograph, standing at the foot of the stairs, just risen from sitting on the bottom stair. Her right trouser leg is still rolled up above the knee, the strap visible on her right knee; her right hand holds the rolled hem, about to let it drop. "+W+" "+s.LEG_SKIN+" A white broderie-anglaise short-sleeved blouse, wide-leg sage-green linen trousers — the left leg already down to the ankle, the right leg rolled up above the knee — a thin gold watch.",
+ "the lens low, at her knee height, seen from three-quarter of her, close: her right leg from the hip to the ankle, her hand on the rolled hem and the strap on the knee, the bottom stairs behind, no face.",
+ "the strap and her hand on the hem are in sharp focus; the hall behind falls soft.", HALL2,
+ F(s.NEG_PLACE)+", no trouser hem over the strap yet, no strap on the left knee, no face")
+B["BR-050"] = P(GAIL+" IN THE SAME HOUSE as the attached hall photograph, standing still on the landing at the top of the stairs, both feet level, her hand resting on the banister post, "+ROLL.replace("both thighs","both thighs, both knees bare to view")+". One strap only, on her right knee; her left knee completely bare. "+W+" "+s.LEG_SKIN+" "+D2,
+ "the lens above, from the front, halfway up the stairs looking up and slightly down across to her on the landing, medium: from her waist to her feet, both knees side by side in the middle of the frame, the landing window behind.",
+ "both knees and the strap are in sharp focus; the landing window behind falls soft.", HALL2,
+ F(s.NEG_PLACE)+", no strap on the left knee, no second strap, no strap on both knees, no trouser hem over the strap, no stepping, no face")
+B["BR-052"] = P(GAIL+" IN THE SAME HOUSE as the attached hall photograph, coming down the staircase forwards towards the lens, halfway through one easy step: her left hand light on the banister rail, her right foot lowered onto the next stair with the knee bending over it, her left foot on the stair above, upright and relaxed, eyes on the stairs ahead. "+ROLL+". "+PROD+" "+F(s.PLACE_BENT)+" "+s.SIZE_WORN+" "+s.LEG_SKIN+" "+D2,
+ "the lens low at the foot of the stairs, a little above the hall floor, looking up the flight at her from three-quarter front. Her whole figure on the stairs, the steps and the rail leading up to her, the landing window behind.",
+ "everything from near to far stays sharp — the steps, the rail, her, the strap.", HALL2,
+ F(s.NEG_BENT)+", no gripping the rail hard, no leaning back, no stiff leg, no both feet on one step, no running, no trouser hem over the strap, no looking at the lens")
+B["BR-053"] = P(GAIL+" IN THE SAME HOUSE as the attached hall photograph, standing at the foot of the stairs, just come down: she has stopped and turned her head to look back up the flight, one hand still on the newel post, a small surprised breath, lips just parted, eyebrows lifting a little, a first hint of a smile. Her trousers are down. A white broderie-anglaise short-sleeved blouse, wide-leg sage-green linen trousers down to the ankle, a thin gold watch.",
+ "the lens at her eye height, level, seen from three-quarter of her from the hall, medium close: her head and shoulders and her hand on the newel post, the stairs rising behind her.",
+ "her eyes are in sharp focus; the stairs behind fall soft.", HALL2,
+ "no big grin, no laughing, no crying, no looking at the lens, no product, no rolled trousers")
+B["MECH-056"] = "\n\n".join([ANATH.replace("in true lateral profile,","in true lateral profile, the knee bent about twenty degrees in the middle of an easy walking step,"),
+ "One leg only, mid-step, the thigh and knee carrying the body's weight easily. The band of patellar tendon two centimetres below the kneecap is calm: cool, pale and even, the same clean ivory-and-satin tone as the healthy tissue around it, no heat anywhere at the site.",
+ "STATE — RELIEF. The patellar tendon immediately below the patella is cool and unlit, only the faintest last trace of warmth long gone. Nothing in the leg glows hot; the whole knee reads calm and even, the soft cool blue rim light the brightest thing in frame.",
+ "AVOID: no orange glow, no red glow, no hot spot, no bright site, no product, no strap, no glow on the bones, "+ANEG])+"\n"
+REFS = {"R1":"39306d36-3fbe-43ab-a8a8-43fc3d63b61c","P0":"75740289-c52e-4333-a7ca-30df059f68e6","P6":"26f471c2-5878-4a54-9e2a-d034ce7fd9e6",
+        "front":"7106f755-c1f5-4d61-b948-4462ed654dfe","back":"b461416e-189b-470b-9fc9-cb77da229ead","worn_front":"f5263ed7-0667-4ebd-977e-9bfd835d5036"}
+PLAN = {"BR-043":("nano_banana_pro",["R1","front","back","worn_front"]),"PR-045":("nano_banana_pro",["P6","front","back"]),
+        "BR-046":("nano_banana_pro",["front","back","worn_front"]),"BR-047":("nano_banana_pro",["R1","P0","front","back"]),
+        "BR-048":("nano_banana_pro",["R1","P0","front","back"]),"BR-050":("nano_banana_pro",["R1","P0","front","back"]),
+        "BR-052":("nano_banana_pro",["R1","P0","front","back"]),"BR-053":("nano_banana_2",["R1","P0"]),"MECH-056":("nano_banana_2",[])}
+refs = {}
+for b,t in B.items():
+    t=t.replace("no readable text, no logos","no other text, no other logos") if PLAN[b][0]=="nano_banana_pro" else t
+    open(b+".txt","w").write(t)
+    refs[b]=[PLAN[b][0],[{"value":REFS[r],"role":"image_references"} for r in PLAN[b][1]]]
+    print(b, len(t), PLAN[b])
+json.dump(refs, open("refs.json","w"))
+json.dump(list(B), open("order.json","w"))

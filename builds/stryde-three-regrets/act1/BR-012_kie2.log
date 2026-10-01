@@ -1,0 +1,12 @@
+{"taskId": "e62775000c20f50a875b23e682049d93", "created": true}
+{
+  "taskId": "e62775000c20f50a875b23e682049d93",
+  "state": "success",
+  "credits": 54.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/e62775000c20f50a875b23e682049d93_1_1790754871_8170.mp4"
+  ],
+  "saved": "BR-012_kie2.json",
+  "model": "kling-3.0-omni/image-to-video"
+}

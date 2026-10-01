@@ -1,0 +1,48 @@
+{
+ "act": "Act 2",
+ "beat": "CARD-13b",
+ "build": "stryde-not-your-cartilage",
+ "flow": [
+  "image"
+ ],
+ "imageAsset": "41b7727d4e61b3f5d877b20f3f36b7f2",
+ "imageAt": 1790745080613,
+ "imageConnector": "Kie AI",
+ "imageFault": "MAKE THE TWO STRAP FLOATING SIDE BY SIDE ON A DARK NAVY BLACK BACKGROUND",
+ "imageStatus": "regenerate",
+ "imageType": "image/png",
+ "imageUrl": "https://tempfile.aiquickdraw.com/gpt-image-2-5/1790745073683-x2rj3lt663c.png",
+ "imageVersions": [
+  {
+   "asset": "22170d06ea5ba38ff0477a0a20ae8584",
+   "at": 1790697230355,
+   "connector": "Kie AI",
+   "credits": 10,
+   "model": "gpt-image-2-5-sunburst-image-to-image",
+   "note": "",
+   "parts": [],
+   "size": "1536×2736",
+   "type": "image/png",
+   "url": "https://tempfile.aiquickdraw.com/gpt-image-2-5/1790696874354-74ubmmq61lg.png",
+   "v": 1
+  },
+  {
+   "asset": "41b7727d4e61b3f5d877b20f3f36b7f2",
+   "at": 1790745080613,
+   "connector": "Kie AI",
+   "credits": 10,
+   "model": "gpt-image-2-5-sunburst-image-to-image",
+   "note": "MAKE THE PRODUCT PLACE ON THE TABLE",
+   "parts": [],
+   "size": "1536×2736",
+   "type": "image/png",
+   "url": "https://tempfile.aiquickdraw.com/gpt-image-2-5/1790745073683-x2rj3lt663c.png",
+   "v": 2
+  }
+ ],
+ "line": "Buy one, get one free today at getstryde.co. Sixty-day money-back guarantee.",
+ "note": "two straps on dark · CARD · CARD · eye/front/MEDIUM · layout card · EG04 'BUY 1 GET 1 FREE' + URL",
+ "stage": "broll",
+ "title": "two straps floating side by side on a dark navy-black background, soft top light (a still, moved in the edit)",
+ "updatedAt": 1790746981480
+}

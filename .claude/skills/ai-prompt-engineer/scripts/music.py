@@ -18,6 +18,9 @@ CUE.json — the scene's music cue, from its sound plan:
                 {"name": "After",           "start": 13.0, "end": 24.6, "energy": "mid",
                  "styles": ["cello enters", "warm theme"]}]}
   Section edges sit on the scene's cut cues or its turn (§24M). The last section runs 2s past the scene.
+  "register": "MUS-OPEN" (or --register): the §40A register of the script part — MUS-OPEN, MUS-EXPOSE,
+  MUS-EDU, MUS-TURN, MUS-AFTER, MUS-OFFER — pre-fills the theme and tempo, adds the NEG-MUSIC negatives,
+  and refuses a tense register (OPEN / EXPOSE / EDU) whose theme asks for cute, cheerful or upbeat music.
 
 plan:    writes the composition plan (global styles = theme + always "instrumental"; negatives = avoid + "vocals",
          "lyrics", "singing"; one plan section per cue section at its exact duration). Free — no generation.
@@ -42,6 +45,39 @@ import numpy as np
 
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 SR = 22050
+# §40A music registers (V7.75.0): the part's register pre-fills the theme and tempo and adds the NEG-MUSIC negatives.
+REGISTERS = {
+    "MUS-OPEN":   {"theme": ["investigative documentary suspense", "low sustained drone", "slow felt pulse", "sparse piano", "low plucked and bowed strings", "soft ticking percussion", "minor or modal", "unresolved", "no melody"], "tempo": "slow"},
+    "MUS-EXPOSE": {"theme": ["dark investigative tension", "long low drones", "dissonant intervals", "present slow pulse", "short stingers", "minor", "unresolved", "no warmth"], "tempo": "slow"},
+    "MUS-EDU":    {"theme": ["inquisitive light tension", "repeating pulse or arpeggio", "clean piano or electronic figures", "low to mid energy", "minor or modal"], "tempo": "moderate"},
+    "MUS-TURN":   {"theme": ["release", "the drone lifting", "first warm chord", "pulse opening into movement", "new key arriving"], "tempo": "moderate"},
+    "MUS-AFTER":  {"theme": ["warm hopeful forward score", "lifted or major", "strings pads and piano with movement", "dignified lift"], "tempo": "moderate"},
+    "MUS-OFFER":  {"theme": ["confident steady pulse", "brighter", "a little faster", "held resolve ending"], "tempo": "moderate"},
+}
+NEG_MUSIC = ["cute", "cheerful", "upbeat", "ukulele", "whistling", "hand claps", "corporate jingle", "stock advert jingle", "pop beat", "vocals", "lyrics", "humming"]
+TENSE = {"MUS-OPEN", "MUS-EXPOSE", "MUS-EDU"}
+NEG_WORDS = re.compile(r"\b(?:cute|cheerful|upbeat|happy|ukulele|whistl\w*|claps?|corporate|jingle|pop beat|bouncy|playful|bright)\b", re.I)
+
+
+def apply_register(cue, reg):
+    """§40A: fold the register into the cue; refuse a tense register whose theme carries a NEG-MUSIC word."""
+    if not reg:
+        return cue
+    if reg not in REGISTERS:
+        sys.exit(f"unknown register {reg}; one of {', '.join(REGISTERS)}")
+    r = REGISTERS[reg]
+    cue = dict(cue)
+    cue["register"] = reg
+    cue["theme"] = list(dict.fromkeys(r["theme"] + list(cue.get("theme") or [])))
+    cue.setdefault("tempo", r["tempo"])
+    cue["avoid"] = list(dict.fromkeys(list(cue.get("avoid") or []) + NEG_MUSIC + (["resolving major cadence"] if reg in TENSE else [])))
+    if reg in TENSE:
+        bad = [t for t in (cue.get("theme") or []) + [x for sec in cue.get("sections", []) for x in sec.get("styles", [])] if NEG_WORDS.search(t)]
+        if bad:
+            sys.exit(f"{reg} cannot carry {bad}: the script here educates, warns or exposes — no cute, cheerful or upbeat music (§40A, NEG-MUSIC)")
+    return cue
+
+
 ORDER = {"silent": 0, "low": 1, "mid": 2, "high": 3}
 TEMPO = {"slow": (40, 90), "moderate": (85, 120), "fast": (115, 200)}
 
@@ -167,8 +203,9 @@ def main():
     ap.add_argument("track", nargs="?")
     ap.add_argument("--out")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--register", help="§40A register: " + ", ".join(REGISTERS))
     a = ap.parse_args()
-    cue = json.loads(Path(a.cue).read_text())
+    cue = apply_register(json.loads(Path(a.cue).read_text()), a.register or json.loads(Path(a.cue).read_text()).get("register"))
     if a.what == "plan":
         plan = build_plan(cue)
         out = a.out or str(Path(a.cue).with_suffix(".plan.json"))

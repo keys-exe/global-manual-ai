@@ -1,0 +1,35 @@
+{
+ "beat": "B14a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b14a\",\"subject\":\"A slight white British woman of sixty-nine seen side-on sitting on her bottom stair: sage-green cardigan, denim skirt, pale older legs, white canvas plimsolls; a black STRYDE knee strap with a chrome slide already worn on her right leg just below the kneecap, both her hands resting on top of the knee above it. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: both her hands lift slowly off her knee and settle on her thigh — one slow movement, about a second and a half — then she sits still. The strap does not move at all: it stays exactly where it is on her leg, rigid, keeping its shape, its slide and its wordmark. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; the cardigan cuffs settle; the strap never moves; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no strap moving, no strap sliding, no strap turning, no strap changing shape, no strap changing size, no hands touching the strap, no standing up, no face, no second strap, no extra hands, no extra fingers, no music, no speech, no slow motion\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_164241_ab6052f5-7c35-44e1-8052-a67bfedf24f7.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "the strap moves or turns with the hands (v1)",
+   "prevented_by": "hands lift off the knee, never touch the strap; 'no strap moving/sliding/turning, no hands touching the strap'"
+  },
+  {
+   "risk": "the shell warps",
+   "prevented_by": "rigid line in motion, 'no strap changing shape/size'"
+  },
+  {
+   "risk": "hands duplicate",
+   "prevented_by": "HOLD-C + NEG-WARP-C, 'no extra hands, no extra fingers'"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)",
+ "fix_note": "video v1: the strap slid and turned to the side of the knee → new start frame with the strap already in place, and the motion never touches the strap (hands lift off the knee)",
+ "user_go": "user: CONFIRM on image v4 (2026-09-30)"
+}

@@ -25,18 +25,18 @@ V = {
            "One action at a slow, sore pace: already stopped, he leans onto his right knee, winces, and straightens a little as he breathes out; he does not walk on.",
            "in_place", "absent", "no knee strap, no brace, no walking stick, no walking away",
            [("his legs warping as he leans", "he stays on the spot, one lean; PHYS-MOTION-C"), ("the camera following him", "RIG-R1 lags, never moves with the subject"), ("a second action (walking on)", "motion says he does not walk on; negatives")]),
- "B-03b": ("Hassan, very tall and thin, in a white shirt, navy cardigan and grey trousers, standing halfway up his steep patterned-carpet staircase, gripping the dark handrail.",
-           "One small action at a slow, tired pace: standing on the same step, he tightens his grip on the handrail, closes his eyes for a moment and breathes out; he takes no step.",
-           "in_place", "absent", "no knee strap, no brace, no stepping, no stairs warping",
-           [("feet and stairs warping", "no step taken (§27G safe staging), HOLD-C"), ("the handrail bending under his hand", "rigid set; NEG-WARP-C"), ("his face changing", "start frame carries identity; one breath")]),
+ "B-03b": ("A wide view of a hall and a straight patterned-carpet staircase; halfway down the flight a very tall thin Black British man of seventy-two in a white shirt and navy cardigan, facing the camera, both hands on the dark handrail.",
+           "One small action at a slow, pained pace: staying on the same step, he tightens both hands on the handrail, winces, and breathes out, his shoulders dropping; he takes no step.",
+           "in_place", "absent", "no knee strap, no brace, no stepping, no stairs warping, no camera moving closer",
+           [("feet and stairs warping", "no step taken (§27G safe staging), HOLD-C"), ("the handrail bending under his hands", "rigid set; NEG-WARP-C"), ("the wide framing drifting in", "RIG-R1 sway only; negatives name the camera moving closer")]),
  "B-03c": ("Folake, a slim Black British woman of sixty-six with long grey-and-black box braids tied back, in a long burnt-orange cardigan, half-way up out of her burgundy armchair, hands on its arms.",
            "One action at a slow, effortful pace: pushing down on the chair arms she rises the rest of the way to standing, a wince on the way up, and steadies herself.",
            "in_place", "absent", "no knee strap, no brace, no walking away, no mug",
            [("arms and hands warping as she pushes up", "one rise at a slow pace, start frame mid-action (§27G), PHYS-MOTION-C"), ("the armchair deforming", "rigid set; NEG-WARP-C"), ("a second action (walking off)", "she only rises and steadies; negatives")]),
- "B-04": ("An older man's big weathered hand holding a matte-black strap in his open palm by a canal, the front of the shell and its grey stryde wordmark facing the phone.",
-          "One small action at a slow pace: his palm tilts the strap a little towards the light and back, so the chrome slides catch a glint; the strap stays in his palm.",
-          "in_place", "held", "no strap falling, no fingers covering the wordmark",
-          [("the shell bending in his hand", "rigid-product clause, one small tilt"), ("the wordmark smearing as it turns", "a small tilt only; negatives name the wordmark"), ("the hand warping", "HOLD-C + NEG-WARP-C")]),
+ "B-04": ("An older man's big weathered open palm by a canal, close to the phone, a matte-black strap standing on it as a closed ring, the shell wider than his palm, its grey stryde wordmark facing the phone.",
+          "One small action at a slow pace: his palm tilts the strap a little towards the light and back, so the chrome slides catch a glint; the strap stays standing on his palm.",
+          "in_place", "held", "no strap falling, no strap shrinking, no fingers covering the wordmark",
+          [("the strap shrinking to bracelet size (the v2 image fault)", "rigid-product clause: exact size in every frame; negatives name shrinking"), ("the strap tipping off the palm", "a small tilt and back only"), ("the wordmark changing", "negatives; rigid-product clause")]),
  "B-06": ("Hassan, very tall and thin, in a maroon polo and charcoal shorts, sitting on the bottom stair, his right leg out straight, the strap on his right knee.",
           "One action at a slow, careful pace: he straightens his right leg the last little way and holds it, his face easing, a small relieved breath out.",
           "in_place", "worn", "",
@@ -45,22 +45,23 @@ V = {
           "One action at a steady, easy pace: she takes two steps down towards the camera, one foot per step, her hand sliding lightly along the rail.",
           "travels", "worn", "no stumbling, no stairs changing",
           [("feet and stairs warping on the steps", "two steps only at a countable pace; camera at the foot, never travelling (§27G)"), ("the strap sliding as she steps", "rigid-product clause; 'no strap sliding'"), ("the camera moving with her", "RIG-R1 lags, never moves with the subject")]),
- "B-09a": ("A woman's slim hands flat on both sides of a closed matte-black strap at mid-shin on her straight right leg.",
-           "One action at a slow, unhurried pace: her hands slide the strap up the shin in one movement until the shell seats just below the kneecap, the notch cupping its lower edge, and her hands come to rest.",
+ "B-09a": ("A woman in shorts, her bare right leg towards the phone, both hands on the ends of the strap's shell, the strap a finger's width below her kneecap.",
+           "One small action at a slow pace: her hands push the strap the last short way up until the notch cups the lower edge of the kneecap, then come to rest on her thigh.",
            "in_place", "worn", "no strap being opened, no strap going over the kneecap",
            [("the strap going over the kneecap or ending too low", "SEAT-LOCK: only ever up, seats by contact"), ("the shell bending as it slides", "rigid-product clause"), ("fingers passing through the strap", "hands flat on the shell's sides; NEG-WARP-C")]),
- "B-09b": ("A woman's slim hands holding a strap turned round so the mid-grey pad inside the shell faces the phone, above a striped duvet.",
+ "B-09b": ("A woman's slim hands holding a strap flat and opened out, inside face up, the mid-grey pad inside the shell facing the phone, above a striped duvet.",
            "One small action at a slow pace: her hands tilt the strap a little so the light moves across the grooved pad and its raised ridge, then hold still.",
-           "in_place", "held", "no strap turning back round, no pad changing pattern",
+           "in_place", "held", "no strap turning over, no strap closing into a ring, no pad changing pattern",
            [("the pad's pattern swimming", "a small tilt only; HOLD-C"), ("the shell bending", "rigid-product clause"), ("fingers warping", "NEG-WARP-C")]),
  "B-10": ("Hassan, in a maroon polo and charcoal shorts, crouched at a low kitchen cupboard reaching in, the strap on his bent right knee.",
           "One action at a steady pace: he lifts a saucepan out of the cupboard and stands back up to full height, easy, the strap staying put on his knee.",
           "in_place", "worn", "no strap sliding as the knee straightens, no saucepan warping",
           [("the strap sliding as the knee straightens", "rigid-product clause; 'no strap sliding'"), ("his body warping on the rise", "one stand at a countable pace, start frame mid-crouch (§27G), PHYS-MOTION-C"), ("the saucepan changing shape", "NEG-WARP-C")]),
- "B-11a": ("A woman's right leg from the thigh down beside a bed, an olive trouser leg rolled above the knee, the strap worn on the knee.",
-           "One action at a natural pace: she lets go of the rolled cuff and the olive trouser leg unrolls and falls down over the knee and the strap, hanging flat to the ankle.",
-           "in_place", "worn", "no strap showing through the fabric as a bulge, no trousers bunching",
-           [("the fabric warping as it falls", "one drop, PHYS-MOTION-C: fabric lags and settles"), ("the strap moving under the fabric", "rigid-product clause"), ("the leg changing shape", "HOLD-C")]),
+ # gen 4 (new frame v2, loose trousers, confirmed; the gen 3 action kept): the trouser leg comes all the way down over the strap and the clip ends on it covered
+ "B-11a": ("A woman's right leg by a bed, loose olive trousers rolled above the knee, the strap on the knee, her hand at her hip.",
+           "One action at a brisk pace, done in two seconds: her hand pushes the loose trouser leg down to her ankle; it ends hanging flat over the knee, the strap staying put under it.",
+           "in_place", "worn", "no strap falling, no strap at the ankle, no trouser staying rolled up",
+           [("the trouser never coming down (gen 2)", "the end state is named: trouser down to the ankle within two seconds"), ("the strap falling with the fabric (gen 1)", "the strap stays put under the fabric; negatives name falling and the ankle"), ("the fabric warping", "PHYS-MOTION-C: fabric lags and settles")]),
  "B-11b": ("Elaine, a petite white British woman of sixty-three with an ash-grey pixie cut, in a striped top, olive trousers and a yellow raincoat, at a street-market fruit stall.",
            "One action at an easy pace: she picks up one red apple from the crate and drops it into her paper bag, relaxed.",
            "in_place", "absent", "no strap visible, no knee visible, no readable signs",
@@ -77,10 +78,11 @@ V = {
              "One action at a steady pace: the strap slides up the last short way and seats on the tendon just below the kneecap, and the instant it seats the red point cools to calm blue.",
              "in_place", "worn", "no glow spreading onto the shin, no glow on the kneecap, no pause, no freeze",
              [("the red glow spreading instead of cooling", "motion names the cool on seating; negatives"), ("the anatomy warping", "RIG-RVD small drift, HOLD-C + NEG-WARP-C"), ("the strap climbing the kneecap", "seats just below the kneecap, rigid-product clause")]),
- "B-08": ("Hassan, a very tall thin Black British man of seventy-two in a white shirt and navy cardigan at his kitchen sink, the strap on his right knee.",
-          "One small action at an easy pace: standing on the spot, he holds the kettle under the running tap as it fills, then turns the tap off; his legs stay planted.",
-          "in_place", "worn", "no stepping, no kettle changing shape",
-          [("the strap turning into a narrow band", "rigid-product clause, negatives name it"), ("the water or his hands warping", "one fill at an easy pace, PHYS-MOTION-C + NEG-WARP-C"), ("his legs moving and the strap sliding", "legs planted, rigid-product clause")]),
+ # gen 3 (Fix "FILL THE GLASS WITH WATER", user's go): gen 2 only switched the kettle on -> he pours from the kettle into the clear glass beside it until it is full
+ "B-08": ("Hassan, tall and thin, in a maroon polo and shorts at his worktop, the white kettle and a clear glass before him, strap on his right knee.",
+          "One action at an easy, steady pace: he lifts the kettle and pours water into the glass beside it until the glass is full; his legs stay planted.",
+          "in_place", "worn", "no spilling, no water missing the glass, no second glass",
+          [("the water not landing in the glass (liquid physics)", "one steady stream into a named glass beside the kettle; negatives name spilling and missing"), ("the strap turning into a narrow band", "rigid-product clause, negatives name it"), ("his legs moving and the strap sliding", "legs planted, rigid-product clause")]),
  "B-12": ("Derek, a big-framed white British man of seventy-four, on the couch edge, strap on his right knee; a surgeon crouched in the soft foreground.",
           "One small action at a slow pace: the surgeon taps the top edge of the strap's shell once with one finger and nods; Derek stays still.",
           "in_place", "worn", "no strap being pressed out of shape, no surgeon turning to camera",
@@ -100,9 +102,12 @@ V = {
 }
 MECH = {"MECH-02", "MECH-S1", "MECH-S2", "MECH-01"}
 def url_of(b):
-    f = sorted(H.glob(f"{b}_v*.json"), key=lambda p: int(p.stem.rsplit("_v", 1)[1]))[-1]
-    raw = f.read_text(); r = json.loads(raw[raw.rindex("\n{") + 1:]) if "\n{" in raw else json.loads(raw)
-    return r["urls"][0]
+    # the latest finished render of the beat's start image (a render still in progress has no urls yet)
+    for f in sorted(H.glob(f"{b}_v*.json"), key=lambda p: -int(p.stem.rsplit("_v", 1)[1])):
+        raw = f.read_text()
+        try: r = json.loads(raw[raw.rindex("\n{") + 1:]) if "\n{" in raw else json.loads(raw)
+        except ValueError: continue
+        if r.get("urls"): return r["urls"][0]
 out = {}
 for b, (subj, motion, mv, prod, xneg, risks) in V.items():
     anat = b in MECH
