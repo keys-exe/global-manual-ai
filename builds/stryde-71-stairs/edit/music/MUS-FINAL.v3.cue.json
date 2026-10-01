@@ -1,0 +1,165 @@
+{
+ "scene": "stryde-71-stairs-FINAL",
+ "length_s": 210.59,
+ "theme": [
+  "one music family: an investigative documentary score — low synth pulse, ticking, plucked and staccato strings — that turns warm and major once the product appears",
+  "instrumental bed under a spoken voice",
+  "continuous from first second to last: no pauses, no stops, no silent breaks"
+ ],
+ "avoid": [
+  "sad",
+  "melancholy",
+  "mournful",
+  "tragic",
+  "weeping strings",
+  "sad piano",
+  "slow sad cello",
+  "funeral",
+  "vocals",
+  "lyrics",
+  "humming",
+  "choir",
+  "electric guitar",
+  "cute",
+  "cheerful jingle",
+  "ukulele",
+  "whistling",
+  "hand claps",
+  "corporate jingle",
+  "stock advert jingle",
+  "pop beat",
+  "silence",
+  "dramatic pause",
+  "music stopping",
+  "fade out before the end"
+ ],
+ "tempo": "moderate",
+ "sections": [
+  {
+   "name": "Hook — the callout",
+   "start": 0,
+   "end": 10.95,
+   "energy": "low",
+   "register": "MUS-OPEN",
+   "styles": [
+    "true-crime investigation opening",
+    "ticking clock",
+    "low synth pulse",
+    "muted plucked strings",
+    "a question hanging",
+    "tension, not sadness"
+   ]
+  },
+  {
+   "name": "Act 1 — the stairs backwards, the failed fixes",
+   "start": 10.95,
+   "end": 38.99,
+   "energy": "low",
+   "register": "MUS-EXPOSE",
+   "styles": [
+    "investigation tension",
+    "pulsing low synth",
+    "staccato string ostinato",
+    "soft deep hits on the reveals",
+    "taut and suspenseful, never sad"
+   ]
+  },
+  {
+   "name": "Act 2 — Loretta on the dance floor",
+   "start": 38.99,
+   "end": 57.65,
+   "energy": "low",
+   "register": "MUS-OPEN",
+   "styles": [
+    "curiosity",
+    "the pulse continues",
+    "a questioning pizzicato motif",
+    "light suspense",
+    "clue-finding"
+   ]
+  },
+  {
+   "name": "Act 3 — the kitchen table, the routine",
+   "start": 57.65,
+   "end": 72.28,
+   "energy": "low",
+   "register": "MUS-EDU",
+   "styles": [
+    "the investigation closes in",
+    "pulse a little quicker",
+    "rising tension",
+    "on the edge of a discovery"
+   ]
+  },
+  {
+   "name": "Act 3 — the strap appears",
+   "start": 72.28,
+   "end": 88.75,
+   "energy": "mid",
+   "register": "MUS-TURN",
+   "styles": [
+    "the pulse keeps going without a break",
+    "a warm major chord blooms over it",
+    "bright curious piano figure joins",
+    "positive and intrigued",
+    "no pause, no silence"
+   ]
+  },
+  {
+   "name": "Act 3 — I did. The first step",
+   "start": 88.75,
+   "end": 100.11,
+   "energy": "mid",
+   "register": "MUS-TURN",
+   "styles": [
+    "full release",
+    "warm strings enter",
+    "major key",
+    "forward movement",
+    "uplifting"
+   ]
+  },
+  {
+   "name": "Act 4 — why it works",
+   "start": 100.11,
+   "end": 128.15,
+   "energy": "mid",
+   "register": "MUS-EDU",
+   "styles": [
+    "confident and inquisitive",
+    "major key",
+    "clean steady pulse",
+    "bright piano arpeggio",
+    "explaining with a smile"
+   ]
+  },
+  {
+   "name": "Acts 5–6 — the proof, the walk, the husband",
+   "start": 128.15,
+   "end": 171.85,
+   "energy": "high",
+   "register": "MUS-AFTER",
+   "styles": [
+    "warm hopeful theme",
+    "major",
+    "strings, piano and light percussion with movement",
+    "dignified lift",
+    "the investigation motif now warm and resolved"
+   ]
+  },
+  {
+   "name": "Act 7 — the name, the offer, her sister",
+   "start": 171.85,
+   "end": 210.59,
+   "energy": "mid",
+   "register": "MUS-OFFER",
+   "styles": [
+    "confident steady pulse",
+    "a little brighter",
+    "the theme held calm",
+    "keeps playing to the very last second",
+    "the final major chord sustained for the last four seconds, no early fade"
+   ]
+  }
+ ]
+}

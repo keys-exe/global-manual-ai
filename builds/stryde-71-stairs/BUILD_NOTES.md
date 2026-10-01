@@ -337,4 +337,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - The first mix was 39 dB under, inaudible, and was corrected. The reference had no music bed (EG07); this deviation is noted.
     - FINAL-HK1 / FINAL-HK2 board v3 (local files `_v4`) have the music and C-05a v3 (one cheap copy, the user's go after "give me a new c05a"). They are on the Final board as `review`. The MUS-FINAL audio card is on the Acts 6–7 board.
     - The Final board holds 3 versions × 2 finals (~0.9 GB), so a later re-cut needs room (a second Final board).
+  - **2026-10-01: music v2 (user: "i want a ne one investigation and change whe nthe produt shows not a sad").** The default branch (V7.77.2) was merged.
+    - New cue (`edit/music/MUS-FINAL.v3.cue.json`): before the strap, an investigation register (ticking, low synth pulse, plucked strings; sad piano and cello banned). From the product reveal (R-03a "She pulled up her pant leg", 72.3 s in the finished video) it turns warm and major to the end.
+    - Three compositions: the first went silent for 19 s near the end and the second stopped dead for 7 s at the strap reveal, so both were discarded. The third asked for continuous music and plays through.
+    - The bed is shaped by `work/music_bed.py`: levels −17 dB before the strap, −13.7 from it, −9.7 in the proof. Mixed at about 18 dB under the voice in pauses and 26 dB while she speaks, −14.4 LUFS.
+    - The register map is rewritten (BUILD_SHEET 5c, `docs/music` on Plan and Acts 6–7). The MUS-FINAL card has v3 (raw) and v4 (bed).
+    - The first Final board was full (0.92 GB), so **Final 2** https://claude.ai/artifact/Hcw2AWLhQAmz1pVMs2TY1u was published from the template (`BOARD_ROLE` "final"). FINAL-HK1/HK2 cut 4 (local `_v5`) are on it as `review`. The first Final board's cards link there.
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
