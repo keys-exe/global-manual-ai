@@ -2,7 +2,7 @@
  "beat": "HK2-01",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": the same room, desk, laptop and woman as Image 1 — the brick wall, pinboard, shelves, window light, the closed black box by the wall, her rust-orange needlecord cuffs. Image 1 is that room; keep its light and colour.\nThe camera moves in close behind her right shoulder, looking down at the open laptop on the desk; the screen fills about half the frame, square to the lens, bright and sharp. Her hands rest at the keyboard's edge, right fingers on the trackpad. Behind the screen, the brick wall and pinboard fall soft.\nOn the screen: a plain white web page of customer reviews and after-purchase survey answers — a long column of separate white cards, each a row of five small grey stars over a short paragraph of two to four lines — each card a different length, the column running off the bottom of the screen. Text soft grey and too small to read.\nIn frame: the laptop, her two hands, the desk; every other surface bare. Clothing, walls and papers plain — no lettering, logos or labels; no app names, no extra fingers.",
+ "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": keep this photo exactly as it is — the same camera over her shoulder, the laptop, her two hands, her rust-orange cuff and grey hair, the desk, brick wall, pinboard and the light. Image 1 is that photo.\nChange only what is on the laptop screen: it shows the web page in Image 2, copied exactly — same shape, same parts, same markings, nothing redesigned — the black stryde wordmark and menu across the top, the row of small product photos, the black Add to Cart bar, and in the middle the customer review: the round photo, the name, the orange Verified Purchase tick, five gold stars and the short quote under them, the small dots below. The page fills the screen edge to edge, lit by the screen itself, seen at the same angle as the screen in Image 1.\nIn frame: the laptop, her two hands, the desk; every other surface bare. Clothing, walls and papers plain — no other lettering or logos; no extra fingers.",
  "script_line": "Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.",
  "face": false,
  "room": true,
@@ -10,10 +10,16 @@
  "body": true,
  "refs": [
   {
-   "label": "TH-HK2 frame v15 (confirmed) — the room",
-   "kind": "plate"
+   "label": "HK2-01 v5",
+   "kind": "frame"
+  },
+  {
+   "label": "STRYDE review page (user's screenshot, rebuilt)",
+   "kind": "screen"
   }
  ],
+ "match": "frame",
+ "edit_of": "255b37d2-4cce-4d41-909b-c2550cfd6e82",
  "taste": [
   "HT12",
   "HT17",
@@ -26,6 +32,6 @@
   "nano_banana_pro"
  ],
  "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call)",
- "motion_plan": "From this frame: her right fingers flick the trackpad and the review column scrolls fast upward through the cards; the camera holds.",
- "fix_note": "a fast scroll in the laptop; reviews / post-purchase survey, short paragraphs; TH-HK2 as background"
+ "motion_plan": "From this frame: her right fingers flick the trackpad and the page scrolls fast upward through the reviews; the camera holds.",
+ "fix_note": "use this as reference in screen (user's screenshot of the STRYDE review carousel)"
 }
