@@ -238,5 +238,13 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   asked for "walking faster"; their call — a Fix note can slow it). The earlier home-stairs clips stay on the cards as versions. Kling balance
   42,739 after; Higgsfield 9,019.15.
 
-**Waiting on:** HK-03a v17/v18 pick; the HK-01a clip v3 and HK-02a clip v2 checks. Then the HK-03a clip; then the body acts in order; CapCut block
-with lyric captions and the outro end card.
+- same session, ~17:00–17:10 UTC — user "fix those": board read — **HK-01a clip v3 and HK-02a clip v2 confirmed (status use)**; **HK-03a Fix "thry should
+  be at the door already for this scene"**. v14 (`hooks/HK-03a.v14.prompt.txt`, PASS 1,190 chars): the same edit of the confirmed HK-02a v13 A, the
+  mother on the top landing in front of the white doors turned back, the daughter on the top step with her hand on the top of the rail (actmap row
+  updated, `docs/actmap` v15). **HK-03a v19/v20** To check (`hooks/v14_cards.py`); v17/v18 to Old (Old doc v9). Seen (the user checks): **both renders
+  kept the women where the source frame had them — N on the 5th–6th step, the daughter at the foot of the flight; neither is at the doors.** The
+  frame edit held the positions; if the user sends it back, the next pair is built on the empty P5 plate (the women placed at the top) rather than
+  on the HK-02a frame. Default branch merged (V7.81.0; its new `angles.py` anatomy-beat check, §12A-1, fails this build's locked act map — a system
+  update, not applied to this running build). Higgsfield balance 8,888.15.
+
+**Waiting on:** HK-03a v19/v20 pick or Fix. Then the HK-03a clip; then the body acts in order; CapCut block with lyric captions and the outro end card.

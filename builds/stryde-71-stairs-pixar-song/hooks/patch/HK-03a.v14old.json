@@ -1,45 +1,4 @@
 {
- "act": "Hook 1",
- "beat": "HK-03a",
- "build": "stryde-71-stairs-pixar-song",
- "flow": [
-  "image"
- ],
- "hook": 1,
- "imageAsset": "14aa9c9327b0ebf9b79e42fcfab5d20e",
- "imageConnector": "Higgsfield",
- "imageCredits": 2.14,
- "imageFault": "user 2026-10-01 Fix: \"they should be at the door already for this scene\" → the two at the top of the church steps in front of the white doors, the mother on the landing turned back to her daughter on the top step, mouth open mid-word — an image edit of the confirmed HK-02a v13 A (HT17, HT24); the v13 pair (mid-flight) to Old",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  17,
-  18
- ],
- "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — the church, its steps, the black handrail, the hedges, the camera, the light — and move the two women up to the doors. Image 1 is this frame of the church steps. Image 2 is the mother. Image 3 is her daughter.\nMedium shot from the sidewalk, the lens at hip height up the flight, sharp on both faces. The same woman as Image 2 on the top landing in front of the closed white doors, turned back to face down the steps, her body three-quarter to the lens, a hand on her hip, eyes on her daughter, a small smile; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 on the top step just below her, right hand on the top of the black handrail, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. \nIn the frame: the two women, the one flight of Image 1, the handrail, the hedges, the doors; every other surface bare. Two legs each.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
- "imageRefs": [
-  {
-   "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 1 · edited (HT17, §6A rule 3)"
-  },
-  {
-   "kind": "character",
-   "label": "N-NARR sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__N-NARR",
-   "role": "Image 2"
-  },
-  {
-   "kind": "character",
-   "label": "C2-DAUGHTER sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 3"
-  }
- ],
- "imageRes": "1536×2752",
- "imageStatus": "regenerate",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_164610_3556349f-c5f6-4bb2-b63e-e3a6b5f6fcee.png",
  "imageVersions": [
   {
    "archived": true,
@@ -338,8 +297,19 @@
    "archiveAsset": "6ea66929298f9b587e9ab8240e56926b"
   }
  ],
- "line": "\"Mama, when did that happen?\"",
- "stage": "hooks",
+ "imagePair": [
+  17,
+  18
+ ],
+ "imageAsset": "14aa9c9327b0ebf9b79e42fcfab5d20e",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_164610_3556349f-c5f6-4bb2-b63e-e3a6b5f6fcee.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — the church, its steps, the black handrail, the hedges, the camera, the light — and move the two women up to the doors. Image 1 is this frame of the church steps. Image 2 is the mother. Image 3 is her daughter.\nMedium shot from the sidewalk, the lens at hip height up the flight, sharp on both faces. The same woman as Image 2 on the top landing in front of the closed white doors, turned back to face down the steps, her body three-quarter to the lens, a hand on her hip, eyes on her daughter, a small smile; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 on the top step just below her, right hand on the top of the black handrail, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. \nIn the frame: the two women, the one flight of Image 1, the handrail, the hedges, the doors; every other surface bare. Two legs each.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
+ "imageFault": "user 2026-10-01 Fix: \"they should be at the door already for this scene\" → the two at the top of the church steps in front of the white doors, the mother on the landing turned back to her daughter on the top step, mouth open mid-word — an image edit of the confirmed HK-02a v13 A (HT17, HT24); the v13 pair (mid-flight) to Old",
+ "imageStatus": "regenerate",
  "status": "regenerate",
  "title": "hook — the line (at the church doors at the top of the steps, the two turned to each other, edit of the confirmed HK-02a frame) — v1–v16 pairs (replaced; latest: the v13 pair, the two mid-flight)",
  "updatedAt": 1790874308284
