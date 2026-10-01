@@ -1579,6 +1579,18 @@ B["B19-BR2b"] = (NBP, ["S1", "R1", "P5"], photo([
     "no looking at the camera, no white coat, no stethoscope, no readable text on the monitor, no certificates with text, no product "
     "anywhere, no knee strap, no third person, no extra fingers, no extra hands"))
 
+# ── 2026-10-01 "confirm, fix": B19-BR "give me different broll, make sure product package is right" — background-only edit of
+# package_open.jpg (the only way the straps stayed exact), now on her kitchen table beside a mug of tea, morning light.
+B["B19-BR"] = (NBP, ["PKG", "P4"], (
+    "Edit Image 1. Keep the STRYDE box EXACTLY as it is in Image 1, untouched — the matte-black box and tray, BOTH straps lying in the "
+    "tray exactly as they are (each matte-black shell with two rounded peaks and the notch between them, a chrome slide at each end, the "
+    "soft black band, the grey stryde wordmark on the shell), and the lid with the large grey stryde wordmark propped behind — the same "
+    "shapes, sizes, angle and proportions, nothing redrawn, nothing added to the box. Change ONLY the plain white background: the box now "
+    "sits on the pale-oak kitchen table with its linen runner from Image 2, a white mug of tea beside it, the sage-green units and the "
+    "window over the sink softly out of focus behind. Soft daylight from the window on the right, a soft real shadow under the box. An "
+    "ordinary phone photo taken from a little above.\n\nAVOID: no redrawn strap, no changed shell shape, no flat band, no wordmark on "
+    "the band, " + P.NEG_WORDMARK + ", no third strap, no person, no hands, no studio background, no readable text other than the wordmark"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

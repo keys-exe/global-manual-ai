@@ -1003,6 +1003,38 @@ for _b in ("B19b", "B19-BR2", "B19-BR2c"):
     B[_b][0]["motion"] = B[_b][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little" + ("; the strap never moves" if _b == "B19b" else ""))
 START.update({"B19b": str(HERE.parent / "broll/B19b_v4.png"), "B19-BR2": str(HERE.parent / "broll/B19-BR2_v4.png"), "B19-BR2c": str(HERE.parent / "broll/B19-BR2c_v2.png")})
 
+# ── 2026-10-01 B19-BR2b v3 confirmed → clip (Higgsfield Kling 3.0) ──
+B["B19-BR2b"] = clip("B19-BR2b",
+    "In a consulting room, a British surgeon of Pakistani heritage in navy scrubs and a grey fleece gilet sits behind a pale wood desk, "
+    "pointing with one finger at the joint of a life-size anatomical knee model; a white British woman of sixty-nine with soft white hair "
+    "in a navy-and-white striped T-shirt sits across from him, listening.",
+    "Already explaining on the first frame: his finger traces once down the inside of the joint on the knee model, about two seconds, "
+    "and she gives one small understanding nod. Both stay seated; the knee model stays still on the desk.",
+    "no knee model moving, no model changing shape, no talking to the camera, no looking into the lens, no standing up, no third person, "
+    "no camera movement, no extra fingers, no extra hands",
+    3.0, hi=5,
+    risks=[{"risk": "the knee model warps under his finger", "prevented_by": "one light trace, 'no knee model moving, no model changing shape'"},
+           {"risk": "faces morph", "prevented_by": "small movements only, HOLD-C + NEG-WARP-C"},
+           {"risk": "someone looks into the lens", "prevented_by": "'no looking into the lens'"}])
+B["B19-BR2b"][0]["motion"] = B["B19-BR2b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little")
+START.update({"B19-BR2b": str(HERE.parent / "broll/B19-BR2b_v3.png")})
+
+# ── 2026-10-01 "confirm": B19-BR v6 confirmed → clip (Higgsfield Kling 3.0). Product still: only steam and light move. ──
+B["B19-BR"] = clip("B19-BR",
+    "An open matte-black STRYDE box on a pale-oak kitchen table with a linen runner, its lid with the grey stryde wordmark resting at the "
+    "back, two black STRYDE straps with chrome slides lying in the tray, a white mug of tea beside it, a sage-green kitchen behind.",
+    "Already moving on the first frame: a thin wisp of steam rises slowly from the tea and drifts, about two seconds, and the soft "
+    "daylight from the window shifts very slightly. The box, the lid and both straps do not move at all — rigid, keeping their exact "
+    "shape, size and wordmarks.",
+    "no box moving, no strap moving, no strap changing shape, no wordmark changing, no lid moving, no hands, no person, no camera "
+    "movement, no zoom",
+    3.0, hi=5,
+    risks=[{"risk": "the straps or wordmarks morph", "prevented_by": "nothing in the box moves; rigid line; 'no strap changing shape, no wordmark changing'"},
+           {"risk": "a hand appears", "prevented_by": "'no hands, no person'"},
+           {"risk": "the camera drifts", "prevented_by": "locked-off tripod clause, 'no camera movement, no zoom'"}])
+B["B19-BR"][0]["motion"] = B["B19-BR"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the steam drifts softly; the straps never move")
+START.update({"B19-BR": str(HERE.parent / "broll/B19-BR_v6.png")})
+
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
