@@ -1,0 +1,64 @@
+{
+  "positive_global_styles": [
+    "investigative documentary suspense",
+    "low sustained drone",
+    "slow felt pulse",
+    "sparse piano",
+    "low plucked and bowed strings",
+    "soft ticking percussion",
+    "minor or modal",
+    "unresolved",
+    "no melody",
+    "one music family: low bowed cello and string drone, sparse felt piano, a soft ticking pulse",
+    "instrumental, sits quietly under a speaking voice",
+    "instrumental",
+    "slow tempo"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "trailer hits",
+    "EDM",
+    "synth lead",
+    "brass",
+    "guitar",
+    "cute",
+    "cheerful",
+    "upbeat",
+    "ukulele",
+    "whistling",
+    "hand claps",
+    "corporate jingle",
+    "stock advert jingle",
+    "pop beat",
+    "vocals",
+    "lyrics",
+    "humming",
+    "resolving major cadence",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The callout",
+      "positive_local_styles": [
+        "low drone and a soft ticking pulse from the first second",
+        "one sparse low piano note",
+        "a question hanging"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 5110,
+      "lines": []
+    },
+    {
+      "section_name": "The question",
+      "positive_local_styles": [
+        "the tension rises one step",
+        "bowed low strings join the drone",
+        "the pulse a little more present",
+        "still unresolved, hands over on the drone"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 10240,
+      "lines": []
+    }
+  ]
+}

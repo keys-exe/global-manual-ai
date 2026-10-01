@@ -15,16 +15,6 @@
     "key_orig": "hurting"
    },
    {
-    "beat": "A1-B1b",
-    "clip": "renders/gapv1/A1-B1b_vid.mp4",
-    "phrase": "So you favour it.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
-   },
-   {
     "beat": "A1-B2",
     "clip": "renders/A1-B2.mp4",
     "phrase": "You lead with the good leg, every step.",
@@ -38,16 +28,6 @@
      "broll_pos": "bottom",
      "ratio": 0.5
     }
-   },
-   {
-    "beat": "A1-B2b",
-    "clip": "renders/gapv1/A1-B2b_vid.mp4",
-    "phrase": "The good leg is now doing the work of two.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
    },
    {
     "beat": "A1-B3",
@@ -160,16 +140,6 @@
     "key_orig": "finger"
    },
    {
-    "beat": "A2-M2b",
-    "clip": "renders/gapv1/A2-M2b_vid.mp4",
-    "phrase": "That is the band.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
-   },
-   {
     "beat": "A2-B3",
     "clip": "renders/A2-B3.mp4",
     "phrase": "Coming down is worse than going up.",
@@ -181,26 +151,6 @@
     "key_orig": "Coming"
    },
    {
-    "beat": "A2-M5",
-    "clip": "renders/gapv1/A2-M5_vid.mp4",
-    "phrase": "Going up, your muscles lift you.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
-   },
-   {
-    "beat": "A2-M6",
-    "clip": "renders/gapv1/A2-M6_vid.mp4",
-    "phrase": "Coming down, nothing does.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
-   },
-   {
     "beat": "A2-M4",
     "clip": "renders/A2-M4.mp4",
     "phrase": "You are catching yourself, and the catch lands on that band.",
@@ -209,26 +159,6 @@
     },
     "max": 8,
     "key_orig": "catch"
-   },
-   {
-    "beat": "A2-M7",
-    "clip": "renders/gapv1/A2-M7_vid.mp4",
-    "phrase": "The pain is not the first thing that happened. It is the first thing you noticed.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
-   },
-   {
-    "beat": "A3-B0",
-    "clip": "renders/gapv1/A3-B0_vid.mp4",
-    "phrase": "You have been told it is your age. Or your weight. Or that the muscle is weak.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
    },
    {
     "beat": "A3-B1",
@@ -279,36 +209,6 @@
     "phrase_orig": "The sleeve squeezes the whole knee"
    },
    {
-    "beat": "A3-B5",
-    "clip": "renders/gapv1/A3-B5_vid.mp4",
-    "phrase": "None of them are wrong.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
-   },
-   {
-    "beat": "A3-B5b",
-    "clip": "renders/gapv1/A3-B5b_vid.mp4",
-    "phrase": "None of them move the weight off the band,",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
-   },
-   {
-    "beat": "A3-B5c",
-    "clip": "renders/gapv1/A3-B5c_vid.mp4",
-    "phrase": "and that is the only thing that stops the sequence.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
-   },
-   {
     "beat": "A4-P1",
     "clip": "renders/A4-P1.mp4",
     "phrase": "The strap I keep in the van now is called Stryde.",
@@ -327,16 +227,6 @@
     },
     "max": 6,
     "key_orig": "below"
-   },
-   {
-    "beat": "A4-B1b",
-    "clip": "renders/gapv1/A4-B1b_vid.mp4",
-    "phrase": "It never crosses the joint.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
    },
    {
     "beat": "A4-P2",
@@ -375,78 +265,25 @@
     }
    },
    {
-    "beat": "A4-B2b",
-    "clip": "renders/gapv1/A4-B2b_vid.mp4",
-    "phrase": "A little too high and it is a sleeve again.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
-   },
-   {
     "beat": "A4-P3",
-    "clip": "renders/gapv2/A4-P3_vid.mp4",
-    "phrase": "Thirty four percent less strain. Measured.",
+    "clip": "renders/A4-P3.mp4",
+    "phrase": "Thirty four percent less strain.",
     "layout": {
      "type": "full"
     },
     "max": 6,
-    "key_orig": "Thirty",
-    "clip_v9": "renders/A4-P3.mp4",
-    "phrase_v9": "Thirty four percent less strain."
-   },
-   {
-    "beat": "A4-B3",
-    "clip": "renders/gapv3/A4-B3_vid.mp4",
-    "phrase": "Three years with orthopedic surgeons.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
-   },
-   {
-    "beat": "A4-B4",
-    "clip": "renders/gapv1/A4-B4_vid.mp4",
-    "phrase": "Two hundred thousand people wearing one.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
+    "key_orig": "Thirty"
    },
    {
     "beat": "A5-B1",
-    "clip": "renders/gapv2/A5-B1_vid.mp4",
+    "clip": "renders/A5-B1.mp4",
     "phrase": "I started carrying a couple because I was tired of fitting the second rail.",
     "layout": {
      "type": "full"
     },
     "max": 6,
     "key_orig": "couple",
-    "phrase_orig": "I started carrying a couple",
-    "clip_v9": "renders/A5-B1.mp4"
-   },
-   {
-    "beat": "A5-B1b",
-    "clip": "renders/gapv1/A5-B1b_vid.mp4",
-    "phrase": "Three houses this year have not called me back.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
-   },
-   {
-    "beat": "A5-M1",
-    "clip": "renders/gapv2/A5-M1_vid.mp4",
-    "phrase": "Not because the arthritis is gone. It is still there.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
+    "phrase_orig": "I started carrying a couple"
    },
    {
     "beat": "A5-B2",
@@ -479,16 +316,6 @@
     "key_orig": "down"
    },
    {
-    "beat": "A5-B4b",
-    "clip": "renders/gapv1/A5-B4b_vid.mp4",
-    "phrase": "You will know in a minute.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
-   },
-   {
     "beat": "A5-P1",
     "clip": "renders/A5-P1.mp4",
     "phrase": "Two for one, so you do both knees, which is the point.",
@@ -498,16 +325,6 @@
     "max": 6,
     "key_orig": "Two",
     "phrase_orig": "Two for one, so you do both knees,"
-   },
-   {
-    "beat": "A5-P2",
-    "clip": "renders/gapv1/A5-P2_vid.mp4",
-    "phrase": "Sixty days, and you keep the straps.",
-    "layout": {
-     "type": "full"
-    },
-    "max": 6,
-    "new_v10": true
    },
    {
     "beat": "A5-F1",
@@ -594,16 +411,6 @@
    "base": "th/TH-HK2.pad.mp4",
    "broll": [
     {
-     "beat": "HK2-B0",
-     "clip": "renders/gapv2/HK2-B0_vid.mp4",
-     "phrase": "I can tell how long someone has had a bad knee by which rail they ask me to fit.",
-     "layout": {
-      "type": "full"
-     },
-     "max": 6,
-     "new_v10": true
-    },
-    {
      "beat": "HK2-B1",
      "clip": "renders/HK2-B1.mp4",
      "phrase": "The first one goes at the top of the stairs.",
@@ -625,7 +432,7 @@
     },
     {
      "beat": "HK2-B3",
-     "clip": "renders/gapv1/HK2-B3_vid.mp4",
+     "clip": "renders/HK2-B3.mp4",
      "phrase": "I would like to stop being called back for the second one.",
      "layout": {
       "type": "full"
@@ -636,8 +443,7 @@
       "type": "split",
       "broll_pos": "bottom",
       "ratio": 0.5
-     },
-     "clip_v9": "renders/HK2-B3.mp4"
+     }
     }
    ]
   },

@@ -1,0 +1,43 @@
+{
+ "scene": "MUS-OPEN-HK1",
+ "register": "MUS-OPEN",
+ "length_s": 16.79,
+ "theme": [
+  "one music family: low bowed cello and string drone, sparse felt piano, a soft ticking pulse",
+  "instrumental, sits quietly under a speaking voice"
+ ],
+ "avoid": [
+  "drums",
+  "trailer hits",
+  "EDM",
+  "synth lead",
+  "brass",
+  "guitar"
+ ],
+ "tempo": "slow",
+ "sections": [
+  {
+   "name": "The callout",
+   "start": 0,
+   "end": 6.66,
+   "energy": "low",
+   "styles": [
+    "low drone and a soft ticking pulse from the first second",
+    "one sparse low piano note",
+    "a question hanging"
+   ]
+  },
+  {
+   "name": "The question",
+   "start": 6.66,
+   "end": 16.79,
+   "energy": "mid",
+   "styles": [
+    "the tension rises one step",
+    "bowed low strings join the drone",
+    "the pulse a little more present",
+    "still unresolved, hands over on the drone"
+   ]
+  }
+ ]
+}

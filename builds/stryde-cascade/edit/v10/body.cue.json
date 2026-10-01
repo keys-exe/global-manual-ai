@@ -1,0 +1,131 @@
+{
+ "scene": "MUS-BODY",
+ "length_s": 153.76,
+ "theme": [
+  "one music family: low bowed cello and string drone, sparse felt piano, a soft ticking pulse",
+  "instrumental, sits quietly under a speaking voice"
+ ],
+ "avoid": [
+  "drums",
+  "trailer hits",
+  "EDM",
+  "synth lead",
+  "brass",
+  "guitar",
+  "cute",
+  "cheerful",
+  "upbeat",
+  "ukulele",
+  "whistling",
+  "hand claps",
+  "corporate jingle",
+  "stock advert jingle",
+  "pop beat",
+  "vocals",
+  "lyrics",
+  "humming"
+ ],
+ "tempo": "slow",
+ "registers": {
+  "The sequence": "MUS-OPEN",
+  "The band": "MUS-EDU",
+  "What has been tried": "MUS-EXPOSE",
+  "The strap": "MUS-TURN",
+  "Proof": "MUS-AFTER",
+  "Try it": "MUS-OFFER",
+  "The price": "MUS-OFFER held back under the price",
+  "Send it on": "MUS-OFFER"
+ },
+ "sections": [
+  {
+   "name": "The sequence",
+   "start": 0,
+   "end": 27.74,
+   "energy": "low",
+   "styles": [
+    "MUS-OPEN: investigative documentary suspense",
+    "low sustained drone, slow ticking pulse, sparse felt piano",
+    "rising a step with each revelation",
+    "minor, unresolved, no melody"
+   ]
+  },
+  {
+   "name": "The band",
+   "start": 27.74,
+   "end": 54.6,
+   "energy": "low",
+   "styles": [
+    "MUS-EDU: inquisitive tension",
+    "a repeating soft piano arpeggio over the drone",
+    "clean and curious, minor or modal",
+    "the viewer leans in"
+   ]
+  },
+  {
+   "name": "What has been tried",
+   "start": 54.6,
+   "end": 80.02,
+   "energy": "mid",
+   "styles": [
+    "MUS-EXPOSE: darker and lower",
+    "long low drones, dissonant intervals",
+    "the pulse more present",
+    "no warmth yet"
+   ]
+  },
+  {
+   "name": "The strap",
+   "start": 80.02,
+   "end": 102.68,
+   "energy": "high",
+   "styles": [
+    "MUS-TURN: the release",
+    "the drone lifts into the first warm chord",
+    "the pulse opens into gentle movement",
+    "a new key arrives"
+   ]
+  },
+  {
+   "name": "Proof",
+   "start": 102.68,
+   "end": 127.96,
+   "energy": "high",
+   "styles": [
+    "MUS-AFTER: warm and hopeful",
+    "lifted, strings and piano moving forward",
+    "dignified, never jingly"
+   ]
+  },
+  {
+   "name": "Try it",
+   "start": 127.96,
+   "end": 135.68,
+   "energy": "high",
+   "styles": [
+    "MUS-OFFER: confident steady pulse",
+    "a little fuller and more forward"
+   ]
+  },
+  {
+   "name": "The price",
+   "start": 135.68,
+   "end": 145.88,
+   "energy": "mid",
+   "styles": [
+    "MUS-OFFER held back under the price",
+    "the same pulse, thinner, so the words carry"
+   ]
+  },
+  {
+   "name": "Send it on",
+   "start": 145.88,
+   "end": 153.76,
+   "energy": "high",
+   "styles": [
+    "MUS-OFFER: steady and resolved",
+    "plays at level to the end",
+    "only the last held chord fades in the final two seconds"
+   ]
+  }
+ ]
+}

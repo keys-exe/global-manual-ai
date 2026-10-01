@@ -1,0 +1,121 @@
+{
+  "positive_global_styles": [
+    "one music family: low bowed cello and string drone, sparse felt piano, a soft ticking pulse",
+    "instrumental, sits quietly under a speaking voice",
+    "instrumental",
+    "slow tempo"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "trailer hits",
+    "EDM",
+    "synth lead",
+    "brass",
+    "guitar",
+    "cute",
+    "cheerful",
+    "upbeat",
+    "ukulele",
+    "whistling",
+    "hand claps",
+    "corporate jingle",
+    "stock advert jingle",
+    "pop beat",
+    "vocals",
+    "lyrics",
+    "humming",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The sequence",
+      "positive_local_styles": [
+        "MUS-OPEN: investigative documentary suspense",
+        "low sustained drone, slow ticking pulse, sparse felt piano",
+        "rising a step with each revelation",
+        "minor, unresolved, no melody"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 27740,
+      "lines": []
+    },
+    {
+      "section_name": "The band",
+      "positive_local_styles": [
+        "MUS-EDU: inquisitive tension",
+        "a repeating soft piano arpeggio over the drone",
+        "clean and curious, minor or modal",
+        "the viewer leans in"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 26860,
+      "lines": []
+    },
+    {
+      "section_name": "What has been tried",
+      "positive_local_styles": [
+        "MUS-EXPOSE: darker and lower",
+        "long low drones, dissonant intervals",
+        "the pulse more present",
+        "no warmth yet"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 25420,
+      "lines": []
+    },
+    {
+      "section_name": "The strap",
+      "positive_local_styles": [
+        "MUS-TURN: the release",
+        "the drone lifts into the first warm chord",
+        "the pulse opens into gentle movement",
+        "a new key arrives"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 22660,
+      "lines": []
+    },
+    {
+      "section_name": "Proof",
+      "positive_local_styles": [
+        "MUS-AFTER: warm and hopeful",
+        "lifted, strings and piano moving forward",
+        "dignified, never jingly"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 25280,
+      "lines": []
+    },
+    {
+      "section_name": "Try it",
+      "positive_local_styles": [
+        "MUS-OFFER: confident steady pulse",
+        "a little fuller and more forward"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 7720,
+      "lines": []
+    },
+    {
+      "section_name": "The price",
+      "positive_local_styles": [
+        "MUS-OFFER held back under the price",
+        "the same pulse, thinner, so the words carry"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 10200,
+      "lines": []
+    },
+    {
+      "section_name": "Send it on",
+      "positive_local_styles": [
+        "MUS-OFFER: steady and resolved",
+        "plays at level to the end",
+        "only the last held chord fades in the final two seconds"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 9880,
+      "lines": []
+    }
+  ]
+}
