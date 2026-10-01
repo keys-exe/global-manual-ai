@@ -2,7 +2,7 @@
  "beat": "TH-HK2",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": keep this photo exactly as it is — the same woman, her face, hair, rust-orange needlecord overshirt and cream T-shirt, the wooden chair, the brick wall, the pinboard, the window, the grey post trays, the desk, the light and the camera. Image 1 is that photo.\nChange only where the laptop is: move it onto the desk directly in front of her, its keyboard just past her forearms and its screen facing her, then turned about a third of the way toward the lens — so we see the screen at an angle: a pale inbox, rows of messages as soft grey lines too small to read. A plain silver laptop, its lid and keys blank and unmarked. Both her hands rest on its keyboard.\nIn frame: one woman, both hands on the keyboard; on the desk only the laptop and the grey post trays, every other surface bare. Her face square to the lens above the screen, both eyes on it, mouth closed.\nNo readable text or logos, no app names, no extra fingers.",
+ "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": keep this photo exactly as it is — the same woman, her face, hair, rust-orange needlecord overshirt and cream T-shirt, the wooden chair, the brick wall, the pinboard, the window, the grey post trays, the desk, the light and the camera. Image 1 is that photo.\nChange only where the laptop is: slide it away from the camera, back across the desk until it sits just in front of her so it looks smaller and the whole laptop fits in the frame, desk around it, nothing cut off by the right edge. Its screen still faces her, turned a little toward the lens so we see the pale inbox at an angle: rows of messages as soft grey lines too small to read. A plain silver laptop, its lid and keys blank and unmarked. Both her hands rest on its keyboard.\nIn frame: one woman, both hands on the keyboard; on the desk only the laptop and the grey post trays, every other surface bare. Her face square to the lens above the screen, both eyes on it, mouth closed.\nNo readable text or logos, no app names, no extra fingers.",
  "script_line": "Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.",
  "face": true,
  "room": true,
@@ -10,12 +10,12 @@
  "body": true,
  "refs": [
   {
-   "label": "TH-HK2 frame v2",
+   "label": "TH-HK2 frame v3",
    "kind": "frame"
   }
  ],
  "match": "frame",
- "edit_of": "9dfce79a-e292-4b75-81f4-6e97711fd031",
+ "edit_of": "d243ddcc-0086-4af0-aab7-ad270b961d77",
  "taste": [
   "HT12",
   "HT17",
@@ -28,5 +28,5 @@
   "nano_banana_pro"
  ],
  "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call)",
- "fix_note": "place the laptop in front of her, and show slightly the screen to the camera: edit of v2"
+ "fix_note": "place the laptop farther from the camera: edit of v3"
 }
