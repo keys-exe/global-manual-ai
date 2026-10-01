@@ -347,3 +347,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - B19-BR2b v2 "Not because the arthritis has gone." → surgeon's pen on the narrowed joint space of a knee X-ray — clean (no text on screen).
   - B19-BR2c v2 "It is still there…" → Maureen at the kitchen window with tea, profile — clean.
 - Act map rows for the five updated (B19-BR MEDIUM package, B19b LOW three-quarter, B19-BR2 face CU, B19-BR2b consult X-ray, B19-BR2c kitchen window); angles PASS; docs/actmap Plan v33, Current v33, Current 2 v19.
+
+### 2026-09-30 — "FIX AND CONFIRM" round 4
+- **Kie AI is out of credits (1.8 left)** after B19-BR v5; the Kling account has 3. Everything else this round ran on **Higgsfield** (Kling 3.0 pro, sound off, 7 cr per 4 s clip; NBP 2 cr). Start frames that were Kie renders were imported to Higgsfield by their Kie links (B19b v4 → 2bbd2157…, B19-BR2 v4 → 23b553f3…, B19-BR2c v2 → 80c12f92…). Higgsfield offered a preset ("IN THE DARK") instead of submitting — declined.
+- Confirmed → videos (Higgsfield Kling 3.0): **B19b v1** (she comes down several stairs, strap stays on the leg on the left of the frame — clean); **B19-BR2 v1** (she glances down and back; the smile is faint and her lips move a little early on); **B19-BR2c v1** (one sip at the window — clean).
+- Fixes:
+  - B19-BR v5 "FIX OUR PRODUCT" → edit of package_open.jpg changing only the background (Kie NBP, 18 cr): the box, lid and both straps now match the product photo. It sits on the hall floor at the foot of the stairs rather than on the stair itself; no person.
+  - B19-BR2b v3 "DIFFERENT BROLL HERE" → two-shot across the surgeon's desk, he points to the joint on the knee model, Maureen listens (Higgsfield NBP) — clean.
+- Learned: a person holding the box makes the model redraw the straps; keep product-photo edits background-only.
+- Act map rows B19-BR (props, package) and B19-BR2b (consult two-shot) updated; angles PASS; docs/actmap Plan v34, Current v34, Current 2 v20.

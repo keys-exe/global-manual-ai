@@ -964,6 +964,45 @@ for _b in ("B18-BR", "B18a"):
     B[_b][0]["motion"] = B[_b][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little; the strap never moves")
 START.update({"B18-BR": str(HERE.parent / "broll/B18-BR_v2.png"), "B18a": str(HERE.parent / "broll/B18a_v2.png")})
 
+# ── 2026-09-30 "FIX AND CONFIRM" round 4: B19b v4, B19-BR2 v4, B19-BR2c v2 confirmed ──
+B["B19b"] = clip("B19b",
+    "A white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt and a mid-blue denim skirt, at the top "
+    "of her carpeted stairs coming DOWN towards the camera, facing forwards, her hand light on the honey oak handrail, a black STRYDE "
+    "strap seated just below the kneecap of the leg on the left of the frame, the other knee bare, white plimsolls.",
+    "Already stepping on the first frame: she steps down one stair towards the camera, facing forwards, easy and unhurried — her foot "
+    "lands on the stair below, about a second and a half — then her weight settles onto it, her hand sliding lightly along the rail. "
+    "The strap stays exactly where it is — rigid, keeping its shape, size and wordmark, moving only as one piece with the knee.",
+    "no strap moving, no strap sliding, no strap changing shape, no strap appearing on the bare knee, no second strap, no stumbling, no "
+    "hurrying, no going up the stairs, no looking into the lens, no camera movement, no extra legs, no extra hands",
+    3.0, hi=5,
+    risks=[{"risk": "the strap jumps to the other knee", "prevented_by": "the strap placed by leg in subject; 'no strap appearing on the bare knee, no second strap'"},
+           {"risk": "legs warp on the stair", "prevented_by": "one step at a countable pace, HOLD-C + NEG-WARP-C"},
+           {"risk": "the camera travels with her", "prevented_by": "locked-off tripod clause, 'no camera movement'"}])
+B["B19-BR2"] = clip("B19-BR2",
+    "A close-up of a white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt, paused partway down her "
+    "stairs, one hand on the honey oak handrail, three-quarter on.",
+    "Already on the first frame: a quiet look of surprise softens into a small private smile, about two seconds, as if she has just "
+    "noticed something; her eyes glance down once towards her knee and back. Her head moves only a little.",
+    "no broad grin, no laughing, no talking, no looking into the lens, no camera movement, no face morphing, no extra fingers",
+    3.0, hi=5,
+    risks=[{"risk": "the face morphs", "prevented_by": "one small expression change, HOLD-C + NEG-WARP-C, 'no face morphing'"},
+           {"risk": "she talks or laughs", "prevented_by": "'no talking, no laughing, no broad grin'"},
+           {"risk": "she looks into the lens", "prevented_by": "'no looking into the lens'"}])
+B["B19-BR2c"] = clip("B19-BR2c",
+    "A white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt, standing side-on at her kitchen window "
+    "holding a white mug of tea in both hands, looking out at the garden, calm.",
+    "Already on the first frame: she lifts the mug a little and takes one small sip, about two seconds, then lowers it slightly, still "
+    "looking out of the window, settled and at ease.",
+    "no spilling, no mug changing shape, no turning to the camera, no looking into the lens, no talking, no camera movement, no extra "
+    "fingers, no extra hands",
+    3.0, hi=5,
+    risks=[{"risk": "the mug or hands warp", "prevented_by": "one small sip at a countable pace, HOLD-C + NEG-WARP-C"},
+           {"risk": "she turns to the camera", "prevented_by": "'no turning to the camera, no looking into the lens'"},
+           {"risk": "tea spills", "prevented_by": "'no spilling'"}])
+for _b in ("B19b", "B19-BR2", "B19-BR2c"):
+    B[_b][0]["motion"] = B[_b][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little" + ("; the strap never moves" if _b == "B19b" else ""))
+START.update({"B19b": str(HERE.parent / "broll/B19b_v4.png"), "B19-BR2": str(HERE.parent / "broll/B19-BR2_v4.png"), "B19-BR2c": str(HERE.parent / "broll/B19-BR2c_v2.png")})
+
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
