@@ -404,6 +404,23 @@
    "v": 22,
    "archived": true,
    "archiveAsset": "df1d7c8b6e8b439b59845dcc3abbcb9a"
+  },
+  {
+   "asset": "5f1b53191c436fc6a523c7481e94904a",
+   "at": 1790875444279,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "38aeb6db-74b7-4098-abae-e6bf498d42f6",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix on the v15 pair: \"make it a close up shot\" → the same doorway setup in close: both faces filling the frame, the mother in three-quarter profile turned back, the daughter beyond her face up, mouth open mid-word — an image edit of v21 A (HT17, HT24); the v15 pair to Old · CU from inside the open church doorway (edit of v21 A), both faces, the two turned to each other · not chosen — the user used B (v24)",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 6353942,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_172245_38aeb6db-74b7-4098-abae-e6bf498d42f6.png",
+   "v": 23,
+   "archived": true,
+   "archiveAsset": "5f1b53191c436fc6a523c7481e94904a"
   }
  ],
  "line": "\"Mama, when did that happen?\"",

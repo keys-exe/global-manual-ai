@@ -147,6 +147,10 @@ def run_image(c):
     kinds = [str(r.get("kind", "")).lower() for r in refs]
 
     check("≤ 1,200 characters (§6A)", len(p) <= IMG_MAX, f"{len(p)} chars")
+    # L10 (2026-10-01): a Mode 2/3/5 beat prompt carries the mode's render line, or the model returns a photograph of the plate edit
+    MODE_LINE = {2: r"3D animated|storybook|pixar", 3: r"claymation|stop-motion|clay", 5: r"3D animated|storybook|pixar"}
+    if mode in MODE_LINE:
+        check(f"the mode's render line is in the prompt (§12 lock, mode {mode})", bool(re.search(MODE_LINE[mode], p, re.I)), "e.g. 'A final frame from a 3D animated feature film, stylized storybook render'")
     sl = c.get("script_line")
     check("the spoken line is in the prompt (§6A)", bool(sl) and norm(sl) in norm(p), "script_line missing" if not sl else "")
     negs = NEG_WORD.findall(p)

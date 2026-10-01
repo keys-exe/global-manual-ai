@@ -5,7 +5,7 @@
  "beat": "HK-03a",
  "title": "hook — the line (a new angle on the user's call: from inside the open church doorway, the two on the doorstep, close up on the user's Fix) · CU through the doors",
  "line": "\"Mama, when did that happen?\"",
- "status": "planned",
+ "status": "generating",
  "flow": [
   "image",
   "video"
@@ -37,7 +37,7 @@
  "hook": 1,
  "editOf": "stryde-71-stairs-pixar-song__P0-PROP-N",
  "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — the open doorway, the two women, where each stands, the light — and move the camera in close on their faces. Image 1 is this frame of the two at the doorstep. Image 2 is the mother. Image 3 is her daughter.\nClose-up from inside the doorway at eye level, both heads filling the frame, sharp on both faces: the same woman as Image 2 nearest the lens in three-quarter profile, turned back to her daughter, a small smile, eyes on her; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 a step beyond her, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. The white door leaf soft at one edge, the sunlit sidewalk soft behind.\nIn the frame: the two faces and shoulders, the door edge, the sidewalk beyond; every other surface bare. Both women's hands out of frame below the shoulders.\nThe render and light of Image 1, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
- "imageStatus": "review",
+ "imageStatus": "confirmed",
  "imageRefs": [
   {
    "label": "HK-03a v21 A (the doorway frame)",
@@ -416,6 +416,8 @@
    "v": 20
   },
   {
+   "archiveAsset": "8951b15967623e615ef0ad788eb35cb3",
+   "archived": true,
    "asset": "8f5525885c9216cfdf9a566eb7aaba7d",
    "at": 1790874697137,
    "connector": "Higgsfield",
@@ -428,11 +430,11 @@
    "size": 6386239,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170958_c3b7a0c1-1455-4188-986a-4b07769f4166.png",
-   "v": 21,
-   "archived": true,
-   "archiveAsset": "8951b15967623e615ef0ad788eb35cb3"
+   "v": 21
   },
   {
+   "archiveAsset": "df1d7c8b6e8b439b59845dcc3abbcb9a",
+   "archived": true,
    "asset": "cd3450b983f2de359e42009184e77559",
    "at": 1790874697137,
    "connector": "Higgsfield",
@@ -445,46 +447,43 @@
    "size": 6933696,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_170958_6bb1bce2-7e95-4e3e-8d4e-594f7f771155.png",
-   "v": 22,
-   "archived": true,
-   "archiveAsset": "df1d7c8b6e8b439b59845dcc3abbcb9a"
+   "v": 22
   },
   {
-   "v": 23,
-   "pair": "A",
    "asset": "6d723c7b06d6a379d1695b9f0f0ff5bc",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_172245_38aeb6db-74b7-4098-abae-e6bf498d42f6.png",
+   "at": 1790875444279,
+   "connector": "Higgsfield",
+   "credits": 2.14,
    "job": "38aeb6db-74b7-4098-abae-e6bf498d42f6",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "size": 6353942,
+   "note": "user 2026-10-01 Fix on the v15 pair: \"make it a close up shot\" → the same doorway setup in close: both faces filling the frame, the mother in three-quarter profile turned back, the daughter beyond her face up, mouth open mid-word — an image edit of v21 A (HT17, HT24); the v15 pair to Old · CU from inside the open church doorway (edit of v21 A), both faces, the two turned to each other · not chosen — the user used B (v24)",
+   "pair": "A",
    "res": "1536×2752",
-   "at": 1790875444279,
-   "note": "user 2026-10-01 Fix on the v15 pair: \"make it a close up shot\" → the same doorway setup in close: both faces filling the frame, the mother in three-quarter profile turned back, the daughter beyond her face up, mouth open mid-word — an image edit of v21 A (HT17, HT24); the v15 pair to Old · CU from inside the open church doorway (edit of v21 A), both faces, the two turned to each other"
+   "size": 6353942,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_172245_38aeb6db-74b7-4098-abae-e6bf498d42f6.png",
+   "v": 23,
+   "archived": true,
+   "archiveAsset": "5f1b53191c436fc6a523c7481e94904a"
   },
   {
-   "v": 24,
-   "pair": "B",
    "asset": "7995a67612ff18f2ea395898a8bee62e",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_172246_b41571cf-baf4-4a12-b756-4aff247f16e5.png",
-   "job": "b41571cf-baf4-4a12-b756-4aff247f16e5",
-   "model": "nano_banana_pro → logged nano_banana_2",
+   "at": 1790875444279,
    "connector": "Higgsfield",
    "credits": 2.14,
-   "size": 6290968,
+   "job": "b41571cf-baf4-4a12-b756-4aff247f16e5",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix on the v15 pair: \"make it a close up shot\" → the same doorway setup in close: both faces filling the frame, the mother in three-quarter profile turned back, the daughter beyond her face up, mouth open mid-word — an image edit of v21 A (HT17, HT24); the v15 pair to Old · CU from inside the open church doorway (edit of v21 A), both faces, the two turned to each other",
+   "pair": "B",
    "res": "1536×2752",
-   "at": 1790875444279,
-   "note": "user 2026-10-01 Fix on the v15 pair: \"make it a close up shot\" → the same doorway setup in close: both faces filling the frame, the mother in three-quarter profile turned back, the daughter beyond her face up, mouth open mid-word — an image edit of v21 A (HT17, HT24); the v15 pair to Old · CU from inside the open church doorway (edit of v21 A), both faces, the two turned to each other"
+   "size": 6290968,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_172246_b41571cf-baf4-4a12-b756-4aff247f16e5.png",
+   "v": 24
   }
  ],
- "imagePair": [
-  23,
-  24
- ],
- "imageAsset": "6d723c7b06d6a379d1695b9f0f0ff5bc",
+ "imagePair": [],
+ "imageAsset": "7995a67612ff18f2ea395898a8bee62e",
  "imageType": "image/png",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_172245_38aeb6db-74b7-4098-abae-e6bf498d42f6.png",
  "imageJob": "38aeb6db-74b7-4098-abae-e6bf498d42f6",
@@ -495,5 +494,7 @@
  "imageRegens": 6,
  "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
  "imageFault": "user 2026-10-01 Fix on the v15 pair: \"make it a close up shot\" → the same doorway setup in close: both faces filling the frame, the mother in three-quarter profile turned back, the daughter beyond her face up, mouth open mid-word — an image edit of v21 A (HT17, HT24); the v15 pair to Old",
- "shot": "CU from inside the open church doorway (edit of v21 A), both faces, the two turned to each other"
+ "shot": "CU from inside the open church doorway (edit of v21 A), both faces, the two turned to each other",
+ "imagePick": 24,
+ "imageUnused": 23
 }

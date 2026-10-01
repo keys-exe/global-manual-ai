@@ -264,4 +264,18 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   HK-03a run of notes is one beat being staged (talking → at the door → inside → close up), not a repeat across beats — no new rule. Default branch
   merged (V7.83.0; this build's locks unchanged). Higgsfield balance 8,676.65.
 
-**Waiting on:** HK-03a v23/v24 pick. Then the HK-03a clip; then the body acts in order; CapCut block with lyric captions and the outro end card.
+- same session, ~17:30–17:50 UTC — user **"confirm proceed"** ×2: **HK-03a v24 (B) confirmed** (v23 to Old, Old doc v12); **HK-03a clip v1** from it
+  (`clips/HK-03a.v1.call.json`, PASS; Kling 4 s / 32 cr, `clips/HK-03a_v1.mp4` 3.5 MB) on the board To check — seen: the daughter's head tilts and
+  her smile opens, the mother's smile widens, the frame holds. **Act 1 (the problem, N-D1) started:** eight §6A beat prompts, every one an image edit
+  of its confirmed plate (P0 stairs, P2 kitchen v2, P7 clinic; N sheet; the N-D1 wardrobe) in `body/build_act1.py` → `body/<BEAT>.v<n>.prompt.txt`.
+  **My error, caught before the board:** the v1 pair (16 renders, ~34 cr) came back as photographs — the body prompts had dropped the Mode 2 render
+  line that every hook prompt carried. Fixed at the source: `preflight.py` now fails any Mode 2/3/5 image call without the mode's render line
+  (`MODE_LINE`; proven on the v1 call = FAIL, v2 = PASS), **LESSONS L10** (numbered L09 before the merge). The v1 pair went to the Old board as a kept version (Old docs for the eight
+  beats; P-03b v1 A failed on Higgsfield, no file) and was never shown as To check. v2 (the render line restored, all PASS 991–1,187 chars):
+  **P-01a v3/v4, P-01b v3/v4, P-02a v3/v4, P-03a v3/v4, P-03b v3/v4, P-04a v3/v4, P-04b v3/v4, P-05a v3/v4** To check (`body/act_cards.py`,
+  `body/patch/v2.ids.json`). Seen (the user checks): the Pixar look is back on all; P-01a A has her coming down facing forward, not backwards as the
+  row says; P-04b A shows the therapist's face (the prompt asked shoulders down); P-05a B the heap pushed away as planned. Higgsfield balance
+  8,409.15; Kling 42,707. Note: `assemble.py --sheet` placement (V7.80.0) is newer than this build's step-5 lock — the act map is already timed on
+  the song's words by `work/actmap.py` (108/108 lines); not re-run here (system updates never touch a running build).
+
+**Waiting on:** the HK-03a clip check; picks or Fix notes on the eight Act 1 pairs. Then the Act 1 clips from the picks; then Act 2 (the wedding).
