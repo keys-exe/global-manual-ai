@@ -30,6 +30,7 @@ CALL.json describes one paid video call exactly as it will be sent:
     "generation": 1,                   # 1 = first try, 2 = the one fix; 3+ only with user_go (§22X)
     "user_go": null | "the user's words giving the go for a 3rd+ generation, and the date",
     "fix_note": "diagnosed fault → the change made (required on generation 2)",
+    "fix_notes_all": ["every Fix note written on this shot so far, one per earlier generation (required on generation 3+, §22X L18)"],
     "rack": null | {"from": "...", "to": "...", "cue": "..."},   # §30J focus change inside the clip
     "risks": [{"risk": "...", "prevented_by": "..."}]   # top three failure modes and the clause that prevents each
   }
@@ -337,6 +338,10 @@ def run(c):
     if gen >= 2:
         fn = c.get("fix_note", "")
         check("gen 2 has a diagnosed fix", "→" in fn or "->" in fn, fn or "missing fix_note")
+    if gen >= 3:
+        fa = c.get("fix_notes_all") or []
+        check("gen 3+ lists every earlier Fix note (fix_notes_all)", isinstance(fa, list) and len(fa) >= gen - 1,
+              f"generation {gen} needs {gen - 1} entries in fix_notes_all, one per earlier generation — every note stays in force (§22X, L18); got {len(fa) if isinstance(fa, list) else 'none'}")
 
     # 2. Frames — on Seedance, ingredients: information, never frames (§4, V7.68.0).
     #    Wan 3.0 in ingredients mode (V7.83.1, user 2026-10-01: "use wan 3.0 prime, the ingredients and not frames") — the same rule.

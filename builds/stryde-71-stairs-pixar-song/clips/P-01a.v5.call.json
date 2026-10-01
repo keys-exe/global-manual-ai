@@ -1,0 +1,55 @@
+{
+ "beat": "P-01a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": From this frame: one careful step down backwards, her back to the lens — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the hall floor looking up the flight, she backs away from the landing slowly, one step at a time: her right heel feels for the step directly below the one it leaves and settles on it, her weight sinks onto it, the left foot joins it on that same step, and only then the next step begins — two slow steps in the whole clip, about two seconds each, every step taken in turn, each foot stopping at the next step; she sinks lower in the frame and grows larger, the landing above her staying empty, both hands sliding down the rail, her back to the lens, her face to the landing; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never climbs, never skips a step.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_185749_c5f6bfae-2afa-42de-bc4c-d7063c3c5646.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Six weeks ago, I was going down my stairs backwards.",
+ "motion_plan": "From this frame: one careful step down backwards, her back to the lens — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one step",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 5,
+ "user_go": "user 2026-10-01: \"P01 SHOULD BE WALKING BACKRWARDS SLOWLY ONE STEP AT A TIME NOT SKIPPING STEPS OF THE STAIRS\"",
+ "fix_note": "user Fix on v4 (she backed down about four steps, skipping some) → the pace named: slowly, one step at a time, each heel to the step directly below, both feet on it before the next, two steps in the whole clip, never a step skipped (§22X; the v1 note 'one step at a time' stays in force — L18)",
+ "fix_notes_all": [
+  "v1: SHOULD NOT BE STEPPING SO FAR DOWN, IT SHOULD BE 1 STEP AT A TIME",
+  "v2: SHOULD BE GOING BACK WARDS NOT UP",
+  "v3: (never shown — climbed)",
+  "v4: P01 SHOULD BE WALKING BACKWARDS SLOWLY ONE STEP AT A TIME NOT SKIPPING STEPS OF THE STAIRS"
+ ],
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  }
+ ],
+ "note": "clip v5 of this beat (from the confirmed image v12 B, job c5f6bfae-2afa-42de-bc4c-d7063c3c5646)"
+}
