@@ -1162,7 +1162,7 @@
   "side": "three-quarter",
   "scale": "MCU",
   "fg": "clean",
-  "why": "upstairs: she does not come down (the next VO: 'I'd just stay upstairs')",
+  "why": "the kitchen, where he has waited for her (user 2026-10-01)",
   "mode": 4,
   "shot": [
    "SH-34"
@@ -1178,25 +1178,24 @@
   "story_day": "B2",
   "face": true,
   "light": {
-   "source": "the frosted landing window",
+   "source": "the kitchen window",
    "key_side": "L",
    "time": "morning",
    "arc": "Before — cold grey morning",
    "kelvin": 6500
   },
   "lines": "L020",
-  "action": "the husband has come up the stairs with a mug of tea; on the landing outside the bedroom, he holds it out, not quite looking at her",
+  "action": "the husband has been waiting in the kitchen with a mug of tea for her; as she comes in from the hall, he holds it out, not quite looking at her",
   "pace": "still",
   "rig": "F2",
   "cast": [
    "C3"
   ],
-  "location": "L-STAIRS",
+  "location": "L-KITCHEN",
   "cut": "on 'alright?'",
   "ingredients": [
    "C3",
-   "L-STAIRS",
-   "P-HOUSE",
+   "L-KITCHEN",
    "VOICE-C3"
   ],
   "mirror_of": null
@@ -1227,26 +1226,26 @@
   "story_day": "B2",
   "face": true,
   "light": {
-   "source": "the frosted landing window",
+   "source": "the kitchen window",
    "key_side": "L",
    "time": "morning",
    "arc": "Before — cold grey morning",
    "kelvin": 6500
   },
   "lines": "L021",
-  "action": "HER, on the landing at her bedroom door in the dressing gown, takes the tea and gives a small tight smile",
+  "action": "HER, just come into the kitchen in the dressing gown, takes the tea and gives a small tight smile",
   "pace": "still",
   "rig": "F1",
   "cast": [
    "N",
    "C3"
   ],
-  "location": "L-STAIRS",
+  "location": "L-KITCHEN",
   "cut": "on 'love.'",
   "ingredients": [
    "N",
    "C3",
-   "L-STAIRS",
+   "L-KITCHEN",
    "VOICE-N"
   ],
   "mirror_of": null
