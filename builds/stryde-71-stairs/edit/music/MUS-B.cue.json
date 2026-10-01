@@ -1,0 +1,109 @@
+{
+ "scene": "MUS-B-product",
+ "length_s": 138.31,
+ "theme": [
+  "the same instruments as an investigative score (pulse, plucked strings, piano) now warm and hopeful",
+  "major key",
+  "continuous, no pauses"
+ ],
+ "avoid": [
+  "sad",
+  "melancholy",
+  "mournful",
+  "tragic",
+  "weeping strings",
+  "slow sad cello",
+  "funeral",
+  "vocals",
+  "lyrics",
+  "humming",
+  "choir",
+  "electric guitar",
+  "cute",
+  "cheerful jingle",
+  "ukulele",
+  "whistling",
+  "hand claps",
+  "corporate jingle",
+  "stock advert jingle",
+  "pop beat",
+  "silence",
+  "dramatic pause",
+  "music stopping",
+  "fade out before the end",
+  "minor key",
+  "suspense",
+  "drone"
+ ],
+ "tempo": "moderate",
+ "sections": [
+  {
+   "name": "The strap appears — the change",
+   "start": 0.0,
+   "end": 16.47,
+   "energy": "mid",
+   "register": "MUS-TURN",
+   "styles": [
+    "opens on the very first beat with a full warm major chord — strings, piano and the pulse together",
+    "bright, hopeful, curious",
+    "clearly a new key from the first second"
+   ]
+  },
+  {
+   "name": "Act 3 — I did. The first step",
+   "start": 16.47,
+   "end": 27.83,
+   "energy": "mid",
+   "register": "MUS-TURN",
+   "styles": [
+    "full release",
+    "warm strings enter",
+    "major key",
+    "forward movement",
+    "uplifting"
+   ]
+  },
+  {
+   "name": "Act 4 — why it works",
+   "start": 27.83,
+   "end": 55.87,
+   "energy": "mid",
+   "register": "MUS-TURN",
+   "styles": [
+    "confident and warm",
+    "major key",
+    "clean steady pulse",
+    "bright piano figure",
+    "explaining with a smile"
+   ]
+  },
+  {
+   "name": "Acts 5–6 — the proof, the walk, the husband",
+   "start": 55.87,
+   "end": 99.57,
+   "energy": "high",
+   "register": "MUS-AFTER",
+   "styles": [
+    "warm hopeful theme",
+    "major",
+    "strings, piano and light percussion with movement",
+    "dignified lift",
+    "the investigation motif now warm and resolved"
+   ]
+  },
+  {
+   "name": "Act 7 — the name, the offer, her sister",
+   "start": 99.57,
+   "end": 138.31,
+   "energy": "mid",
+   "register": "MUS-OFFER",
+   "styles": [
+    "confident steady pulse",
+    "a little brighter",
+    "the theme held calm",
+    "keeps playing to the very last second",
+    "the final major chord sustained for the last four seconds, no early fade"
+   ]
+  }
+ ]
+}

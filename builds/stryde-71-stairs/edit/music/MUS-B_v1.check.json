@@ -1,0 +1,73 @@
+{
+  "file": "edit/music/MUS-B_v1.mp3",
+  "length_s": 140.38,
+  "sections": [
+    {
+      "name": "The strap appears \u2014 the change",
+      "energy": "mid",
+      "rms_db": -20.5,
+      "brightness_hz": 480
+    },
+    {
+      "name": "Act 3 \u2014 I did. The first step",
+      "energy": "mid",
+      "rms_db": -15.0,
+      "brightness_hz": 480
+    },
+    {
+      "name": "Act 4 \u2014 why it works",
+      "energy": "mid",
+      "rms_db": -11.7,
+      "brightness_hz": 432
+    },
+    {
+      "name": "Acts 5\u20136 \u2014 the proof, the walk, the husband",
+      "energy": "high",
+      "rms_db": -10.9,
+      "brightness_hz": 420
+    },
+    {
+      "name": "Act 7 \u2014 the name, the offer, her sister",
+      "energy": "mid",
+      "rms_db": -12.7,
+      "brightness_hz": 434
+    }
+  ],
+  "tempo_bpm": 198.8,
+  "vocals": {
+    "checked": true,
+    "confident_words": 0,
+    "text": ""
+  },
+  "fails": [
+    {
+      "check": "DROPOUT",
+      "detail": "'The strap appears \u2014 the change' drops out for 1.7s"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'The strap appears \u2014 the change' jumps 21.6 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Act 4 \u2014 why it works' jumps 17.2 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Acts 5\u20136 \u2014 the proof, the walk, the husband' jumps 12.7 dB in 100 ms"
+    },
+    {
+      "check": "DROPOUT",
+      "detail": "'Act 7 \u2014 the name, the offer, her sister' drops out for 3.3s"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Acts 5\u20136 \u2014 the proof, the walk, the husband' (high) not louder than 'Act 4 \u2014 why it works' (mid): -10.9 vs -11.7 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Acts 5\u20136 \u2014 the proof, the walk, the husband' (high) not louder than 'Act 7 \u2014 the name, the offer, her sister' (mid): -10.9 vs -12.7 dB"
+    }
+  ],
+  "status": "FAIL"
+}

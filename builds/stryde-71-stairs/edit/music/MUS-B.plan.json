@@ -1,0 +1,125 @@
+{
+  "positive_global_styles": [
+    "the same instruments as an investigative score (pulse, plucked strings, piano) now warm and hopeful",
+    "major key",
+    "continuous, no pauses",
+    "instrumental",
+    "moderate tempo"
+  ],
+  "negative_global_styles": [
+    "sad",
+    "melancholy",
+    "mournful",
+    "tragic",
+    "weeping strings",
+    "slow sad cello",
+    "funeral",
+    "vocals",
+    "lyrics",
+    "humming",
+    "choir",
+    "electric guitar",
+    "cute",
+    "cheerful jingle",
+    "ukulele",
+    "whistling",
+    "hand claps",
+    "corporate jingle",
+    "stock advert jingle",
+    "pop beat",
+    "silence",
+    "dramatic pause",
+    "music stopping",
+    "fade out before the end",
+    "minor key",
+    "suspense",
+    "drone",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The strap appears \u2014 the change",
+      "positive_local_styles": [
+        "release",
+        "the drone lifting",
+        "first warm chord",
+        "pulse opening into movement",
+        "new key arriving",
+        "opens on the very first beat with a full warm major chord \u2014 strings, piano and the pulse together",
+        "bright, hopeful, curious",
+        "clearly a new key from the first second"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 16470,
+      "lines": []
+    },
+    {
+      "section_name": "Act 3 \u2014 I did. The first step",
+      "positive_local_styles": [
+        "release",
+        "the drone lifting",
+        "first warm chord",
+        "pulse opening into movement",
+        "new key arriving",
+        "full release",
+        "warm strings enter",
+        "major key",
+        "forward movement",
+        "uplifting"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 11360,
+      "lines": []
+    },
+    {
+      "section_name": "Act 4 \u2014 why it works",
+      "positive_local_styles": [
+        "release",
+        "the drone lifting",
+        "first warm chord",
+        "pulse opening into movement",
+        "new key arriving",
+        "confident and warm",
+        "major key",
+        "clean steady pulse",
+        "bright piano figure",
+        "explaining with a smile"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 28040,
+      "lines": []
+    },
+    {
+      "section_name": "Acts 5\u20136 \u2014 the proof, the walk, the husband",
+      "positive_local_styles": [
+        "warm hopeful forward score",
+        "lifted or major",
+        "strings pads and piano with movement",
+        "dignified lift",
+        "warm hopeful theme",
+        "major",
+        "strings, piano and light percussion with movement",
+        "the investigation motif now warm and resolved"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 43700,
+      "lines": []
+    },
+    {
+      "section_name": "Act 7 \u2014 the name, the offer, her sister",
+      "positive_local_styles": [
+        "confident steady pulse",
+        "brighter",
+        "a little faster",
+        "held resolve ending",
+        "a little brighter",
+        "the theme held calm",
+        "keeps playing to the very last second",
+        "the final major chord sustained for the last four seconds, no early fade"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 40740,
+      "lines": []
+    }
+  ]
+}

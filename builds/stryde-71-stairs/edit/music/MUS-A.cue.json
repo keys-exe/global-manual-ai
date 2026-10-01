@@ -1,0 +1,102 @@
+{
+ "scene": "MUS-A-investigation",
+ "length_s": 72.28,
+ "theme": [
+  "investigative documentary score",
+  "ticking",
+  "low synth pulse",
+  "plucked and staccato strings",
+  "felt piano single notes",
+  "tense and curious",
+  "continuous, no pauses"
+ ],
+ "avoid": [
+  "sad",
+  "melancholy",
+  "mournful",
+  "tragic",
+  "weeping strings",
+  "sad piano",
+  "slow sad cello",
+  "funeral",
+  "vocals",
+  "lyrics",
+  "humming",
+  "choir",
+  "electric guitar",
+  "cute",
+  "cheerful jingle",
+  "ukulele",
+  "whistling",
+  "hand claps",
+  "corporate jingle",
+  "stock advert jingle",
+  "pop beat",
+  "silence",
+  "dramatic pause",
+  "music stopping",
+  "fade out before the end",
+  "warm resolution",
+  "major key",
+  "uplifting"
+ ],
+ "tempo": "slow",
+ "sections": [
+  {
+   "name": "Hook — the callout",
+   "start": 0,
+   "end": 10.95,
+   "energy": "low",
+   "register": "MUS-OPEN",
+   "styles": [
+    "true-crime investigation opening",
+    "ticking clock",
+    "low synth pulse",
+    "muted plucked strings",
+    "a question hanging",
+    "tension, not sadness"
+   ]
+  },
+  {
+   "name": "Act 1 — the stairs backwards, the failed fixes",
+   "start": 10.95,
+   "end": 38.99,
+   "energy": "low",
+   "register": "MUS-EXPOSE",
+   "styles": [
+    "investigation tension",
+    "pulsing low synth",
+    "staccato string ostinato",
+    "soft deep hits on the reveals",
+    "taut and suspenseful"
+   ]
+  },
+  {
+   "name": "Act 2 — Loretta on the dance floor",
+   "start": 38.99,
+   "end": 57.65,
+   "energy": "low",
+   "register": "MUS-OPEN",
+   "styles": [
+    "curiosity",
+    "the pulse continues",
+    "a questioning pizzicato motif",
+    "light suspense",
+    "clue-finding"
+   ]
+  },
+  {
+   "name": "Act 3 — the kitchen table, the routine",
+   "start": 57.65,
+   "end": 72.28,
+   "energy": "low",
+   "register": "MUS-EDU",
+   "styles": [
+    "the investigation closes in",
+    "pulse a little quicker",
+    "rising tension",
+    "thinning to almost nothing in the last second, as if holding its breath"
+   ]
+  }
+ ]
+}

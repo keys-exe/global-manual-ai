@@ -1,0 +1,59 @@
+{
+  "file": "edit/music/MUS-A_v1.mp3",
+  "length_s": 74.34,
+  "sections": [
+    {
+      "name": "Hook \u2014 the callout",
+      "energy": "low",
+      "rms_db": -18.8,
+      "brightness_hz": 402
+    },
+    {
+      "name": "Act 1 \u2014 the stairs backwards, the failed fixes",
+      "energy": "low",
+      "rms_db": -12.2,
+      "brightness_hz": 494
+    },
+    {
+      "name": "Act 2 \u2014 Loretta on the dance floor",
+      "energy": "low",
+      "rms_db": -10.8,
+      "brightness_hz": 332
+    },
+    {
+      "name": "Act 3 \u2014 the kitchen table, the routine",
+      "energy": "low",
+      "rms_db": -14.3,
+      "brightness_hz": 310
+    }
+  ],
+  "tempo_bpm": 76.0,
+  "vocals": {
+    "checked": true,
+    "confident_words": 0,
+    "text": ""
+  },
+  "fails": [
+    {
+      "check": "CLICK",
+      "detail": "'Hook \u2014 the callout' jumps 38.0 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Act 2 \u2014 Loretta on the dance floor' jumps 13.1 dB in 100 ms"
+    },
+    {
+      "check": "DROPOUT",
+      "detail": "'Act 3 \u2014 the kitchen table, the routine' drops out for 5.6s"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Act 3 \u2014 the kitchen table, the routine' jumps 12.6 dB in 100 ms"
+    },
+    {
+      "check": "TEMPO",
+      "detail": "~76.0 BPM outside moderate (85\u2013120)"
+    }
+  ],
+  "status": "FAIL"
+}

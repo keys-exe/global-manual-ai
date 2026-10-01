@@ -343,4 +343,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - The bed is shaped by `work/music_bed.py`: levels −17 dB before the strap, −13.7 from it, −9.7 in the proof. Mixed at about 18 dB under the voice in pauses and 26 dB while she speaks, −14.4 LUFS.
     - The register map is rewritten (BUILD_SHEET 5c, `docs/music` on Plan and Acts 6–7). The MUS-FINAL card has v3 (raw) and v4 (bed).
     - The first Final board was full (0.92 GB), so **Final 2** https://claude.ai/artifact/Hcw2AWLhQAmz1pVMs2TY1u was published from the template (`BOARD_ROLE` "final"). FINAL-HK1/HK2 cut 4 (local `_v5`) are on it as `review`. The first Final board's cards link there.
+  - **2026-10-01: music v3 (user: "the music chnage wehn the product shows"; V7.78.0 merged).** The product's first frame is R-03a at 72.28 s (act map: the first `worn · REVEAL` row; the hooks and T-02a keep it hidden).
+    - The single-track bed never changed character there: its brightness was the same either side, and only my level step marked it.
+    - Now two compositions of one family: MUS-A investigation (`edit/music/MUS-A.cue.json`) and MUS-B warm major (`MUS-B.cue.json`). They are joined on the frame by `work/music_splice.py`: A's last bars repeat to 71.3 s, then a one-second breath, then B's full chord at 72.30 s. B's offer section repeats to cover the last line, and the levels come from the cue.
+    - Combined cue `MUS-FINAL.v5.cue.json` with `product_at` 72.28: plan PASS. Bed check passes except the CLICK flags, all located on musical onsets.
+    - Mixed at −8.0 dB music gain: 18.1 dB under the voice in pauses, 26.2 under speech, −14.4 LUFS.
+    - FINAL-HK1/HK2 **cut 5** (local `_v6`) are on Final 2 as `review`. The MUS-FINAL card has v5 (A), v6 (B) and v7 (bed).
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
