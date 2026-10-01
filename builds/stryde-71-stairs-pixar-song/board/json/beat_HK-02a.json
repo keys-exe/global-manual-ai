@@ -3,7 +3,7 @@
  "act": "Hook 1",
  "stage": "hooks",
  "beat": "HK-02a",
- "title": "hook — the witness · SH-HIGH from the top of the great flight",
+ "title": "hook — the witness (last Sunday: the daughter walking behind her up the church steps, edit of P5, HT17) · SH-LOW at FULL from the sidewalk",
  "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
  "status": "review",
  "flow": [
@@ -19,13 +19,13 @@
  "section": "Hook — MUS-OPEN",
  "bars": 1.5,
  "key": "daughter",
- "location": "L-PLAZA",
+ "location": "L-CHURCH",
  "storyDay": "N-D4",
- "framing": "MEDIUM from the top of the flight looking steeply down: the daughter ten steps below, right hand on the steel rail, face up to the lens a little out of breath, the long flight, the crowd and the plaza falling away far below her",
- "motionPlan": "From this frame: one last step up and a look up — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "framing": "FULL from the sidewalk at the foot of the church steps, the lens at hip height looking up the flight: N on the 6th of 8 steps climbing briskly hands free, her daughter two steps behind her on the 4th, right hand on the black iron handrail, eyes on her mother's back; the white church doors at the top",
+ "motionPlan": "From this frame: two steps up, the daughter following two steps behind — one step per second; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: camera at the top, subject coming up, 1 step",
  "pinEnd": "no",
- "angle": "high · front · clean · MEDIUM — high = from N's place at the top: she's arrived first, her daughter still climbing with the crowd",
+ "angle": "low · three-quarter-back · clean · FULL — low = resolve, the church rising above her; the daughter walking behind her is the witness of the line",
  "focus": "eyes · medium",
  "light": "front-door sidelights, west wall · key L · afternoon · after: Sunday sun · 5600K",
  "product": "absent · —",
@@ -33,25 +33,31 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "",
- "updatedAt": 1790870546611,
+ "updatedAt": 1790871835947,
  "hook": 1,
- "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": from the top of the great flight looking steeply down, her daughter ten steps below, right hand on the steel rail, looking up at the lens, out of breath, the crowd and the plaza far below her. Image 1 is the daughter. Image 2 is the plaza steps.\nMedium shot from the top landing, the lens high, looking down the flight, sharp on her eyes. The same woman as Image 1 on the 20th of 30 steps, mid-step, weight on her right foot, the left lifting to the next, right hand gripping the steel handrail, left hand on her thigh, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. Past her the flight of Image 2 falls away to a scatter of younger people on the lower steps and the plaza at the foot.\nIn the frame: the daughter, the younger people far below, the one flight, the handrails, the plaza; every other surface bare. Two hands, two legs on her.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, a catchlight in each eye. Clothing plain — no lettering, logos or labels; nobody beside her.",
+ "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": Keep this photo exactly as it is — the church, its steps, the black handrail, the hedges, the camera, the light — as a tall 9:16 crop on the steps, and add two women climbing them. Image 1 is the church steps. Image 2 is the older woman. Image 3 is her daughter.\nThe same woman as Image 2, seventy-one, on the 6th of 8 steps, mid-step, weight on her right foot, left foot lifting to the 7th, both hands free at her sides, chin up, eyes on the doors, seen from behind; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 two steps behind her on the 4th step, walking up behind her, right hand on the black handrail, eyes on her mother's back; olive-green crewneck sweatshirt, black denim shorts, white trainers. Both at true scale to the steps.\nIn the frame: the two women, the one flight of Image 1, the handrail, the hedges, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
  "imageStatus": "review",
  "imageRefs": [
+  {
+   "label": "P5-CHURCH plate v1 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P5-CHURCH",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  },
   {
    "label": "C2-DAUGHTER sheet v2",
    "kind": "character",
    "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 1"
-  },
-  {
-   "label": "P8-PLAZA plate v1 (To check)",
-   "kind": "location",
-   "ref": "stryde-71-stairs-pixar-song__P8-PLAZA",
-   "role": "Image 2"
+   "role": "Image 3"
   }
  ],
- "imageMatch": null,
+ "imageMatch": "plate",
  "imageTaste": [
   "HT03",
   "HT04",
@@ -214,7 +220,9 @@
    "size": 7330648,
    "res": "1536×2752",
    "at": 1790870546611,
-   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-HIGH · MEDIUM front from the top landing, the daughter ten steps below"
+   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-HIGH · MEDIUM front from the top landing, the daughter ten steps below · replaced by the v9 pair (user 2026-10-01: a woman half her age behind her / HK-02-03 at the church)",
+   "archived": true,
+   "archiveAsset": "06a96521f8ba11f9894eeccf9ed53800"
   },
   {
    "v": 10,
@@ -229,27 +237,93 @@
    "size": 6897333,
    "res": "1536×2752",
    "at": 1790870546611,
-   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-HIGH · MEDIUM front from the top landing, the daughter ten steps below"
+   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-HIGH · MEDIUM front from the top landing, the daughter ten steps below · replaced by the v9 pair (user 2026-10-01: a woman half her age behind her / HK-02-03 at the church)",
+   "archived": true,
+   "archiveAsset": "833a7d717bc12b3168d78c75e491976d"
+  },
+  {
+   "v": 11,
+   "pair": "A",
+   "asset": "30b8413c1d3044dbe7dae0ce0769a688",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_161353_015997b5-f9f0-460d-8539-abf57d20e106.png",
+   "job": "015997b5-f9f0-460d-8539-abf57d20e106",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 5846623,
+   "res": "1536×2752",
+   "at": 1790871424216,
+   "note": "user 2026-10-01: \"the hk1 should show woman half her age behind her and the hk02-03 should be different location\" → HK-01a/b: the plaza kept, the crowd replaced by one woman half her age stopped behind her; HK-02a/03a: last Sunday = the church steps (confirmed plate P5-CHURCH), both image edits of P5 from its top step; the v8 plaza pairs to Old · SH-HIGH · MEDIUM from the church's top step (edit of P5), the daughter on the 4th step · replaced by the v10 pair (user Fix: the daughter walking behind her)",
+   "archived": true,
+   "archiveAsset": "81d609a4e19343beb2ad07cdd18d7cf4"
+  },
+  {
+   "v": 12,
+   "pair": "B",
+   "asset": "0fd2be6681cf0694167b1e2d00f48c13",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_161353_e0bd78d9-4841-444f-909d-ccb5252064c2.png",
+   "job": "e0bd78d9-4841-444f-909d-ccb5252064c2",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6163867,
+   "res": "1536×2752",
+   "at": 1790871424216,
+   "note": "user 2026-10-01: \"the hk1 should show woman half her age behind her and the hk02-03 should be different location\" → HK-01a/b: the plaza kept, the crowd replaced by one woman half her age stopped behind her; HK-02a/03a: last Sunday = the church steps (confirmed plate P5-CHURCH), both image edits of P5 from its top step; the v8 plaza pairs to Old · SH-HIGH · MEDIUM from the church's top step (edit of P5), the daughter on the 4th step · replaced by the v10 pair (user Fix: the daughter walking behind her)",
+   "archived": true,
+   "archiveAsset": "5ccde18df1e6eeb8af3e5acb75524b0a"
+  },
+  {
+   "v": 13,
+   "pair": "A",
+   "asset": "5efcd76fe604b67b8c9391e2418ebb72",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_162214_805d393b-463a-486a-9031-09b870b19709.png",
+   "job": "805d393b-463a-486a-9031-09b870b19709",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 5952714,
+   "res": "1536×2752",
+   "at": 1790871835947,
+   "note": "user 2026-10-01 Fix: \"this should show walking behind her\" → the daughter walking up the church steps two steps behind her mother, both in frame from the sidewalk at the foot of the steps (an image edit of the confirmed P5-CHURCH, HT17; §30I SH-LOW at FULL); the v9 pair (the daughter alone from the top step) to Old · SH-LOW · FULL from the sidewalk (edit of P5), N on the 6th step, the daughter walking up two steps behind her"
+  },
+  {
+   "v": 14,
+   "pair": "B",
+   "asset": "87ed9a64547b49ac208029a518450c5d",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_162214_f3b36f38-3228-4ef2-9b8c-b6afe6e69862.png",
+   "job": "f3b36f38-3228-4ef2-9b8c-b6afe6e69862",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 8302898,
+   "res": "1536×2752",
+   "at": 1790871835947,
+   "note": "user 2026-10-01 Fix: \"this should show walking behind her\" → the daughter walking up the church steps two steps behind her mother, both in frame from the sidewalk at the foot of the steps (an image edit of the confirmed P5-CHURCH, HT17; §30I SH-LOW at FULL); the v9 pair (the daughter alone from the top step) to Old · SH-LOW · FULL from the sidewalk (edit of P5), N on the 6th step, the daughter walking up two steps behind her"
   }
  ],
  "imagePair": [
-  9,
-  10
+  13,
+  14
  ],
- "imageAsset": "cddf0ac2f721b0dd9781e4e2eac5560a",
+ "imageAsset": "5efcd76fe604b67b8c9391e2418ebb72",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155624_9165a953-9350-4196-bce3-cf11cf85e768.png",
- "imageJob": "9165a953-9350-4196-bce3-cf11cf85e768",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_162214_805d393b-463a-486a-9031-09b870b19709.png",
+ "imageJob": "805d393b-463a-486a-9031-09b870b19709",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
- "imageAt": 1790870546611,
+ "imageAt": 1790871835947,
  "imageRegens": 3,
  "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
  "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
  "endFrame": "HK-02a-END",
- "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
- "shot": "SH-HIGH · MEDIUM front from the top landing, the daughter ten steps below",
+ "imageFault": "user 2026-10-01 Fix: \"this should show walking behind her\" → the daughter walking up the church steps two steps behind her mother, both in frame from the sidewalk at the foot of the steps (an image edit of the confirmed P5-CHURCH, HT17; §30I SH-LOW at FULL); the v9 pair (the daughter alone from the top step) to Old",
+ "shot": "SH-LOW · FULL from the sidewalk (edit of P5), N on the 6th step, the daughter walking up two steps behind her",
  "imageParts": [],
  "videoVersions": [
   {

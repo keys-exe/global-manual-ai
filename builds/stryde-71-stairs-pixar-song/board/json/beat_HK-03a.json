@@ -3,7 +3,7 @@
  "act": "Hook 1",
  "stage": "hooks",
  "beat": "HK-03a",
- "title": "hook — the line · SH-OTS at the top of the flight, over the mother's shoulder",
+ "title": "hook — the line (church steps, edit of P5) · SH-OTS at the top step, over the mother's shoulder",
  "line": "\"Mama, when did that happen?\"",
  "status": "planned",
  "flow": [
@@ -19,13 +19,13 @@
  "section": "Hook — MUS-OPEN",
  "bars": 1,
  "key": "Mama",
- "location": "L-PLAZA",
+ "location": "L-CHURCH",
  "storyDay": "N-D4",
- "framing": "MCU at the top of the flight over the mother's near shoulder, her shoulder and hat brim soft in the near foreground as she stands on the top landing turned back, onto the daughter arriving on the top step below, face up to her mother, mouth open mid-word, the flight and the city dropping away behind her",
+ "framing": "MCU at the top step of the church over the mother's near shoulder, her shoulder and hat brim soft in the near foreground as she stands turned back, onto the daughter on the step below, face up to her mother, mouth open mid-word, the church steps, the sidewalk and the street dropping away behind her",
  "motionPlan": "From this frame: the daughter's last step up and the look up at her mother — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "none",
  "pinEnd": "no",
- "angle": "high · ots · through · MCU — ots from the top = the line lands between them from the mother's place; the drop behind the daughter is the climb she just made",
+ "angle": "high · ots · through · MCU — ots from the top = the line lands between them from the mother's place; the steps behind the daughter are the climb she just made",
  "focus": "eyes · medium",
  "light": "landing window, south wall · key R · afternoon · after: Sunday sun · 5600K",
  "product": "worn (under the dress) · HIDDEN",
@@ -33,32 +33,32 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "",
- "updatedAt": 1790870546611,
+ "updatedAt": 1790871424216,
  "hook": 1,
  "editOf": "stryde-71-stairs-pixar-song__P0-PROP-N",
- "imagePrompt": "For the line \"Mama, when did that happen?\": at the top of the great flight, over the mother's near shoulder, the daughter arriving on the top step below, face up to her, mouth open mid-word, the city dropping away behind her. Image 1 is the mother. Image 2 is her daughter. Image 3 is the plaza steps.\nMedium close-up from the top landing over the mother's right shoulder: the same woman as Image 1 stands on the landing back to the lens, her green shoulder and black hat brim soft in the near right foreground. The same woman as Image 2 on the 30th and top step, one step down, right hand on the steel handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers; sharp. Behind her the flight of Image 3 falls away to the plaza and the towers.\nIn the frame: the two women, the one flight, the handrails, the plaza and towers below; every other surface bare. Two hands on the daughter, two legs.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
+ "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — the church, its steps, the black iron handrail, the hedges, the sidewalk, the light — seen from its top step under the portico looking down, a tall 9:16 crop, and add the two women. Image 1 is the church steps. Image 2 is the mother. Image 3 is her daughter.\nMedium close-up over the mother's right shoulder: the same woman as Image 2 stands on the top step with her back to the lens, her green shoulder and black hat brim soft in the near right foreground. The same woman as Image 3 on the 7th of 8 steps, one step down, right hand on the black handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers; sharp. Behind her the steps of Image 1 fall to the sidewalk, the hedges, the parked cars.\nIn the frame: the two women, the one flight, the handrail, the hedges, the sidewalk and cars; every other surface bare. Two hands on the daughter, two legs.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
  "imageStatus": "review",
  "imageRefs": [
+  {
+   "label": "P5-CHURCH plate v1 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P5-CHURCH",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
   {
    "label": "N-NARR sheet v2",
    "kind": "character",
    "ref": "stryde-71-stairs-pixar-song__N-NARR",
-   "role": "Image 1"
+   "role": "Image 2"
   },
   {
    "label": "C2-DAUGHTER sheet v2",
    "kind": "character",
    "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 2"
-  },
-  {
-   "label": "P8-PLAZA plate v1 (To check)",
-   "kind": "location",
-   "ref": "stryde-71-stairs-pixar-song__P8-PLAZA",
    "role": "Image 3"
   }
  ],
- "imageMatch": null,
+ "imageMatch": "plate",
  "imageTaste": [
   "HT03",
   "HT04",
@@ -291,7 +291,9 @@
    "size": 5004618,
    "res": "1536×2752",
    "at": 1790870546611,
-   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-OTS · over the mother's shoulder from above, the daughter stopped at the rail"
+   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-OTS · over the mother's shoulder from above, the daughter stopped at the rail · replaced by the v9 pair (user 2026-10-01: a woman half her age behind her / HK-02-03 at the church)",
+   "archived": true,
+   "archiveAsset": "984a1735695a0d64d8030c3ca51eec8c"
   },
   {
    "v": 14,
@@ -306,23 +308,55 @@
    "size": 7015565,
    "res": "1536×2752",
    "at": 1790870546611,
-   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-OTS · over the mother's shoulder from above, the daughter stopped at the rail"
+   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-OTS · over the mother's shoulder from above, the daughter stopped at the rail · replaced by the v9 pair (user 2026-10-01: a woman half her age behind her / HK-02-03 at the church)",
+   "archived": true,
+   "archiveAsset": "a24e27031d9256727872b0ce627741b6"
+  },
+  {
+   "v": 15,
+   "pair": "A",
+   "asset": "fb633c07c9c8a65d0e484f9f911359cb",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_161353_a20d4123-4de5-43ce-98a5-1ed29fdcf232.png",
+   "job": "a20d4123-4de5-43ce-98a5-1ed29fdcf232",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7902985,
+   "res": "1536×2752",
+   "at": 1790871424216,
+   "note": "user 2026-10-01: \"the hk1 should show woman half her age behind her and the hk02-03 should be different location\" → HK-01a/b: the plaza kept, the crowd replaced by one woman half her age stopped behind her; HK-02a/03a: last Sunday = the church steps (confirmed plate P5-CHURCH), both image edits of P5 from its top step; the v8 plaza pairs to Old · SH-OTS · over the mother's shoulder on the church's top step (edit of P5), the daughter one step down"
+  },
+  {
+   "v": 16,
+   "pair": "B",
+   "asset": "06980b30c71a6d0f937c2123467c3e6f",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_161353_2878a5d8-9c26-474e-975f-d73d1bd3dd49.png",
+   "job": "2878a5d8-9c26-474e-975f-d73d1bd3dd49",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 8241772,
+   "res": "1536×2752",
+   "at": 1790871424216,
+   "note": "user 2026-10-01: \"the hk1 should show woman half her age behind her and the hk02-03 should be different location\" → HK-01a/b: the plaza kept, the crowd replaced by one woman half her age stopped behind her; HK-02a/03a: last Sunday = the church steps (confirmed plate P5-CHURCH), both image edits of P5 from its top step; the v8 plaza pairs to Old · SH-OTS · over the mother's shoulder on the church's top step (edit of P5), the daughter one step down"
   }
  ],
  "imagePair": [
-  13,
-  14
+  15,
+  16
  ],
- "imageAsset": "db12fd9f10da85ef2596b645e49367a0",
+ "imageAsset": "fb633c07c9c8a65d0e484f9f911359cb",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155623_1c7e8a7c-3c72-459f-81de-18e1a9dd4ede.png",
- "imageJob": "1c7e8a7c-3c72-459f-81de-18e1a9dd4ede",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_161353_a20d4123-4de5-43ce-98a5-1ed29fdcf232.png",
+ "imageJob": "a20d4123-4de5-43ce-98a5-1ed29fdcf232",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
- "imageAt": 1790870546611,
+ "imageAt": 1790871424216,
  "imageRegens": 6,
  "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
- "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
- "shot": "SH-OTS · over the mother's shoulder from above, the daughter stopped at the rail"
+ "imageFault": "user 2026-10-01: \"the hk1 should show woman half her age behind her and the hk02-03 should be different location\" → HK-01a/b: the plaza kept, the crowd replaced by one woman half her age stopped behind her; HK-02a/03a: last Sunday = the church steps (confirmed plate P5-CHURCH), both image edits of P5 from its top step; the v8 plaza pairs to Old",
+ "shot": "SH-OTS · over the mother's shoulder on the church's top step (edit of P5), the daughter one step down"
 }
