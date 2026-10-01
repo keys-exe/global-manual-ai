@@ -1,0 +1,53 @@
+{
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "2be33d780c1b97a7e4e1c52daea04a06",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe.png",
+   "job": "8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7228522,
+   "res": "1536×2752",
+   "at": 1790858654630,
+   "note": ""
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "069ac4366d876edb3e91933e6b5667c1",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_ae9045e0-f3b5-4962-8a73-ded5efba48ff.png",
+   "job": "ae9045e0-f3b5-4962-8a73-ded5efba48ff",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7826194,
+   "res": "1536×2752",
+   "at": 1790858654630,
+   "note": ""
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageAsset": "2be33d780c1b97a7e4e1c52daea04a06",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe.png",
+ "imageJob": "8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790858654630,
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageStatus": "review",
+ "imageRegens": 0,
+ "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": her daughter near the top of the flight, a hand on the rail, looking up after her, a little out of breath. Image 1 is the daughter. Image 2 is the hall and staircase.\nMedium close-up from the top of the flight looking down, front-on, sharp on her eyes. The same woman as Image 1 on the 12th of 14 steps, mid-step, weight on her right foot, the left lifting to the 13th, right hand gripping the dark oak handrail, left hand on her thigh, chest rising, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. She fills more than half the frame's height. Below her the staircase of Image 2, its photo wall and the hall floor far down.\nIn the frame: one woman, the one staircase, the photo wall; every other surface bare. Two hands, two legs.\nA final frame from a 3D animated feature film — stylized storybook render, every surface with a material, a single catchlight in each eye, soft warm bounce in the shadows, afternoon sun from below lighting her front left.\nClothing, shoes, walls and frames plain — no lettering, logos or labels; no second person.",
+ "preflight": "PASS (§6A, kind image)",
+ "updatedAt": 1790858654630,
+ "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)"
+}

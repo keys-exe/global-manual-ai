@@ -1,0 +1,53 @@
+{
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "fc0e0fcca290a725350f24207eab04ca",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_d0151928-525c-4ea8-9be1-d6eb17a5f9c5.png",
+   "job": "d0151928-525c-4ea8-9be1-d6eb17a5f9c5",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 8012648,
+   "res": "1536×2752",
+   "at": 1790858654630,
+   "note": ""
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "25220af65f761e2752ab9bf3f46df75c",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_f98ac62c-354e-4b96-9d51-06832af9859b.png",
+   "job": "f98ac62c-354e-4b96-9d51-06832af9859b",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6932749,
+   "res": "1536×2752",
+   "at": 1790858654630,
+   "note": ""
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageAsset": "fc0e0fcca290a725350f24207eab04ca",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_d0151928-525c-4ea8-9be1-d6eb17a5f9c5.png",
+ "imageJob": "d0151928-525c-4ea8-9be1-d6eb17a5f9c5",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790858654630,
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageStatus": "review",
+ "imageRegens": 0,
+ "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — hall, staircase, camera, light — as a tall 9:16 crop on the top four steps and the landing, with two women there. Image 1 is the hall and staircase. Image 2 is the mother. Image 3 is her daughter.\nThe same woman as Image 2 on the landing at the head of the flight, body facing along it, head turned back over her left shoulder to her daughter, a small knowing smile, mouth closed, eyes on her daughter, both hands free at her sides; emerald-green church dress to mid-calf, low black pumps. The same woman as Image 3 on the 14th and top step, right hand on the handrail, left hand on her chest, face turned up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. The two fill over half the frame's height.\nIn the frame: the two women, the top of the one staircase of Image 1 with its runner, balusters and handrail, the landing wall; every other surface bare. Two legs each.\nThe render and light of Image 1, the women on model, a catchlight in each eye.\nClothing, shoes and walls plain — no lettering, logos or labels; no third person.",
+ "preflight": "PASS (§6A, kind image)",
+ "updatedAt": 1790858654630,
+ "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)"
+}
