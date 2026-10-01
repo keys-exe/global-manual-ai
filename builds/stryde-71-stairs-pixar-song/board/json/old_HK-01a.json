@@ -1,0 +1,61 @@
+{
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Hook 1",
+ "hook": 1,
+ "stage": "hooks",
+ "beat": "HK-01a",
+ "title": "hook — the result (HT05: stakes in the picture) — unused B",
+ "line": "I'm seventy-one, and I take the stairs",
+ "flow": [
+  "image"
+ ],
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "imageVersions": [
+  {
+   "asset": "c6d5ce03121a7fe7d97d260059511143",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "980d1f5a-0dd8-4473-95cf-e577349c834a",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "not chosen — the user used A (v1)",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 8170724,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_980d1f5a-0dd8-4473-95cf-e577349c834a.png",
+   "v": 2,
+   "archived": true
+  }
+ ],
+ "imageAsset": "c6d5ce03121a7fe7d97d260059511143",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_980d1f5a-0dd8-4473-95cf-e577349c834a.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageModel": "nano_banana_pro → logged nano_banana_2",
+ "imagePrompt": "For the line \"I'm seventy-one, and I take the stairs\": Keep this photo exactly as it is — hall, staircase, camera, light — as a tall 9:16 crop centred on the flight, and add two women climbing it. Image 1 is the hall and staircase. Image 2 is the older woman. Image 3 is her daughter.\nThe same woman as Image 2, seventy-one, on the 6th of 14 steps mid-step: weight on her right foot, left foot lifting to the 7th, both hands free at her sides, face in part profile, eyes up the stairs, mouth closed; emerald-green church dress to mid-calf, low black pumps. The same woman as Image 3 on the 4th step, inside the rail behind her, right hand on the oak handrail, left hand loose at her side, eyes on her mother's back; olive-green crewneck sweatshirt, black denim shorts, white trainers. The two fill more than half the frame's height.\nIn the frame: the two women, the one staircase of Image 1 with its runner, brass rods, balusters and photo wall, the hall floor below; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1, the women on model, a catchlight in each eye.\nClothing, shoes, walls and frames plain — no lettering, logos or labels; no third person.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P0-PROP-N plate",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1 · edited (HT17, §6A rule 3)"
+  },
+  {
+   "kind": "character",
+   "label": "N-NARR sheet v2",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  },
+  {
+   "kind": "character",
+   "label": "C2-DAUGHTER sheet v2",
+   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
+   "role": "Image 3"
+  }
+ ],
+ "updatedAt": 1790860282492
+}
