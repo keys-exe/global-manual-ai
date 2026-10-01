@@ -9,6 +9,8 @@
  "HK-01a@v6B": "2c3d99d8c6911128237ecedb33d5007c",
  "HK-01a@v8A": "3ad574799ab20025416537dae1fcbe8e",
  "HK-01a@v8B": "980fcb229480f75ed6e446c00cdc49c1",
+ "HK-01a@v9A": "c989c8c755bdfaf755b4120176928d40",
+ "HK-01a@v9B": "2cbc05e7d19968f6bbf4a9d66b7adf4b",
  "HK-01b-END@A": "48b3aef7aa10e4cd26265a0f547265be",
  "HK-01b-END@B": "6dd982078f71db72d422b181bc9ce696",
  "HK-01b@A": "2ccfeff7cbea225f68958845eaec5615",
@@ -23,6 +25,8 @@
  "HK-01b@v6B": "de55d05575cc0ae3e9b26eaa66aded49",
  "HK-01b@v8A": "235530cb28c1a1981beaa4fa87ba7ec5",
  "HK-01b@v8B": "6972393110f25934e4ff4c287b1ab1e5",
+ "HK-01b@v9A": "24f712b5d36c324f666c9cbd08f1c911",
+ "HK-01b@v9B": "f4468d528f9ed1cdbf3963e13662e5fa",
  "HK-02a-END@A": "a020759cc7d55c2cad1173d16233ac50",
  "HK-02a-END@B": "fa4a75b0a6387a30a29be74c050a874b",
  "HK-02a@A": "2be33d780c1b97a7e4e1c52daea04a06",
@@ -35,6 +39,8 @@
  "HK-02a@v4B": "1ec5f6723b2f5e6ce32263964ab5aac4",
  "HK-02a@v8A": "cddf0ac2f721b0dd9781e4e2eac5560a",
  "HK-02a@v8B": "2d3f286823b8d158efdb694572167a8b",
+ "HK-02a@v9A": "30b8413c1d3044dbe7dae0ce0769a688",
+ "HK-02a@v9B": "0fd2be6681cf0694167b1e2d00f48c13",
  "HK-03a@A": "fc0e0fcca290a725350f24207eab04ca",
  "HK-03a@B": "25220af65f761e2752ab9bf3f46df75c",
  "HK-03a@v2A": "c9a2e01326e270df82402f320b853938",
@@ -48,5 +54,7 @@
  "HK-03a@v7A": "b01047e313ee4a5096ee9338e23a8df6",
  "HK-03a@v7B": "3e79561427b3fdf9b6b47ccd8e84e175",
  "HK-03a@v8A": "db12fd9f10da85ef2596b645e49367a0",
- "HK-03a@v8B": "26d10b8af5fd273301faf91c1742b903"
+ "HK-03a@v8B": "26d10b8af5fd273301faf91c1742b903",
+ "HK-03a@v9A": "fb633c07c9c8a65d0e484f9f911359cb",
+ "HK-03a@v9B": "06980b30c71a6d0f937c2123467c3e6f"
 }

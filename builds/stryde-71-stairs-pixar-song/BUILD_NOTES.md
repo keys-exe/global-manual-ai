@@ -174,5 +174,25 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   landing at the daughter, hand on the rail, the plaza crowd behind; HK-03a both frame the daughter from over the mother's hat and shoulder with the
   towers behind. Higgsfield cleared the queue; Kie not needed (standing fallback stays).
 
-**Waiting on:** the user's picks on the four plaza pairs and the P8-PLAZA plate (A/B on each card; Fix with a note if neither). Then the hook clips
-(§35A, no end frames — waived); then the body acts in order; CapCut block with lyric captions and the outro end card.
+- same session, ~16:08–16:20 UTC — user **"the hk1 should show woman half her age behind her and the hk02-03 should be different location"** (on the plaza round).
+  HK-01a/b keep the plaza (P8-PLAZA): the crowd is replaced by **one woman half her age** (thirty-five, grey sweatshirt, black leggings, white
+  trainers) stopped four steps behind her, bent with both hands on her knees; HK-01b her pump mid-stride past that woman's stopped trainers.
+  HK-02a/03a move to a **different location — the church steps (L-CHURCH, confirmed plate P5-CHURCH)**: the line is "Last Sunday, my daughter
+  walked behind me the whole way up", so the Sunday church is the story's own place and it is not the plaza; both are image edits of P5 seen from
+  its top step (§6A rule 3, HT17): HK-02a SH-HIGH down the flight at the daughter on the 4th of 8 steps, HK-03a SH-OTS over the mother's shoulder,
+  the daughter one step down. Four §6A v9 prompts (`hooks/build_hooks.py --v9`, `hooks/<BEAT>.v9.prompt.txt`, all PASS, 1,168–1,185 chars; the
+  first HK-02a/03a drafts failed preflight — "Keep this church…" is not the rule-3 opener and 1,225 chars — rewritten to "Keep this photo exactly
+  as it is — the church…" and trimmed). Act map (`work/actmap.py`: HK-01a/b subject + framing, HK-02a/03a L-CHURCH), `STEP4_5.md` (locations:
+  L-CHURCH now carries HK-02a–HK-03a, L-PLAZA HK-01a–HK-01b), `docs/actmap` (Current/Plan v10), `docs/locations` (v4); angles.py PASS. 8 renders,
+  one per call (`hooks/jobs.json` `<BEAT>@v9A/B`), Higgsfield nano_banana_pro (logged nano_banana_2); balance 9,471.15 after (shared account).
+  Board: **HK-01a v9/v10, HK-01b v13/v14, HK-02a v11/v12, HK-03a v15/v16** To check (`hooks/v9_cards.py`, `hooks/patch/v9.ids.json`); the v8
+  plaza pairs copied to Old (Old docs HK-01a v4, HK-01b v6, HK-02a v5, HK-03a v7), marked `archived` + `archiveAsset`, deleted from Current.
+  Seen (no judgement — the user checks): HK-01a A/B both on the P8 flight, N mid-flight, one younger woman in grey bent hands-on-knees below her
+  (A four steps below in the same lane, B further down and one lane left); HK-01b A/B the pump mid-stride and one pair of stopped trainers with a
+  hand on the knee. **HK-02a A came back with brick steps and brick treads, not P5's concrete flight** (B keeps the concrete steps, hedges, cars).
+  **HK-03a A and B both put the mother in a yellow tee and jeans, not the green church dress and hat** (the N sheet's wardrobe won over the prompt);
+  B also looks at the church from across the street, not down its own steps. The daughter at church is in the wardrobe lock's sweatshirt and
+  shorts (N-D4 wardrobe map) — a Fix note can change it. Kie not needed; the fallback stands.
+
+**Waiting on:** picks (A/B) or Fix notes on HK-01a v9/v10, HK-01b v13/v14, HK-02a v11/v12, HK-03a v15/v16 and the P8-PLAZA plate. Then the hook
+clips (§35A, no end frames — waived); then the body acts in order; CapCut block with lyric captions and the outro end card.

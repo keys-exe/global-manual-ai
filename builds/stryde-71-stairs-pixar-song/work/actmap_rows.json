@@ -9,12 +9,12 @@
   ],
   "line": "I'm seventy-one, and I take the stairs",
   "key": "stairs",
-  "function": "hook — the result (HT05: out in the world, the crowd as the stakes) · SH-LOW at FULL from the plaza",
-  "subject": "N + crowd of younger people",
+  "function": "hook — the result (HT05: out in the world, the stakes in the picture) · SH-LOW at FULL from the plaza",
+  "subject": "N + one woman half her age",
   "location": "L-PLAZA",
   "story_day": "N-D4",
-  "framing": "FULL from the plaza at the foot of the great outdoor flight, the lens at hip height looking up the steps: N in her church dress and hat mid-flight on the 15th of 30 steps, climbing briskly hands free, alone in a lane of the steps; around and below her a dozen younger people in weekend clothes slower on the steps — two stopped with hands on knees, one leaning on the steel rail — the arena's glass doors at the top",
-  "action": "two steps up, N pulling ahead of the crowd",
+  "framing": "FULL from the plaza at the foot of the great outdoor flight, the lens at hip height looking up the steps: N in her church dress and hat mid-flight on the 15th of 30 steps, climbing briskly hands free; four steps below her in the same lane a woman of thirty-five in weekend clothes stopped, bent with both hands on her knees, out of breath, being left behind — the arena's glass doors at the top",
+  "action": "two steps up, N pulling away from the younger woman",
   "pace": "one step per second, brisk",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
   "staging": "stairs: side-on/behind, full body, camera still at the foot",
@@ -33,7 +33,7 @@
    "side": "three-quarter-back",
    "fg": "clean",
    "scale": "FULL",
-   "why": "low = resolve, the monumental flight rising above her; the younger crowd stalled below her is the stakes"
+   "why": "low = resolve, the monumental flight rising above her; the woman half her age stalled below her is the stakes"
   },
   "mirror_of": null,
   "focus": {
@@ -73,10 +73,10 @@
   "line": "faster than women half my age.",
   "key": "faster",
   "function": "hook — the result · SH-GROUND on the plaza steps",
-  "subject": "N feet + two younger women's feet",
+  "subject": "N feet + the younger woman's feet",
   "location": "L-PLAZA",
   "story_day": "N-D4",
-  "framing": "CU at tread level from the side on the wide concrete steps: N's low black pumps striking the next step mid-stride, the green hem swinging past two pairs of young women's trainers stopped on the step below, one knee bent, one hand on it",
+  "framing": "CU at tread level from the side on the wide concrete steps: N's low black pump striking the next step mid-stride, the green hem swinging, and a step behind and below it the younger woman's white trainers stopped side by side, one hand resting on her knee",
   "action": "two steps up past the stopped feet",
   "pace": "one step per second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -96,7 +96,7 @@
    "side": "profile",
    "fg": "clean",
    "scale": "CU",
-   "why": "ground = the steps and the pace; her pumps passing the stopped younger feet"
+   "why": "ground = the steps and the pace; her pump passing the stopped younger feet"
   },
   "mirror_of": null,
   "focus": {
@@ -135,11 +135,11 @@
   ],
   "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
   "key": "daughter",
-  "function": "hook — the witness · SH-HIGH from the top of the great flight",
+  "function": "hook — the witness (last Sunday: the church steps, edit of P5, HT17) · SH-HIGH from the top step",
   "subject": "C2",
-  "location": "L-PLAZA",
+  "location": "L-CHURCH",
   "story_day": "N-D4",
-  "framing": "MEDIUM from the top of the flight looking steeply down: the daughter ten steps below, right hand on the steel rail, face up to the lens a little out of breath, the long flight, the crowd and the plaza falling away far below her",
+  "framing": "MEDIUM from the top step of the church under the portico looking down the flight: the daughter on the 4th of 8 steps, right hand on the black iron handrail, face up to the lens a little out of breath, the sidewalk, hedges and parked cars below her",
   "action": "one last step up and a look up",
   "pace": "one step, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -159,7 +159,7 @@
    "side": "front",
    "fg": "clean",
    "scale": "MEDIUM",
-   "why": "high = from N's place at the top: she's arrived first, her daughter still climbing with the crowd"
+   "why": "high = from N's place at the top: she's arrived first, her daughter still climbing behind her"
   },
   "mirror_of": null,
   "focus": {
@@ -198,11 +198,11 @@
   ],
   "line": "\"Mama, when did that happen?\"",
   "key": "Mama",
-  "function": "hook — the line · SH-OTS at the top of the flight, over the mother's shoulder",
+  "function": "hook — the line (church steps, edit of P5) · SH-OTS at the top step, over the mother's shoulder",
   "subject": "N + C2",
-  "location": "L-PLAZA",
+  "location": "L-CHURCH",
   "story_day": "N-D4",
-  "framing": "MCU at the top of the flight over the mother's near shoulder, her shoulder and hat brim soft in the near foreground as she stands on the top landing turned back, onto the daughter arriving on the top step below, face up to her mother, mouth open mid-word, the flight and the city dropping away behind her",
+  "framing": "MCU at the top step of the church over the mother's near shoulder, her shoulder and hat brim soft in the near foreground as she stands turned back, onto the daughter on the step below, face up to her mother, mouth open mid-word, the church steps, the sidewalk and the street dropping away behind her",
   "action": "the daughter's last step up and the look up at her mother",
   "pace": "one step, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -222,7 +222,7 @@
    "side": "ots",
    "fg": "through",
    "scale": "MCU",
-   "why": "ots from the top = the line lands between them from the mother's place; the drop behind the daughter is the climb she just made"
+   "why": "ots from the top = the line lands between them from the mother's place; the steps behind the daughter are the climb she just made"
   },
   "mirror_of": null,
   "focus": {
