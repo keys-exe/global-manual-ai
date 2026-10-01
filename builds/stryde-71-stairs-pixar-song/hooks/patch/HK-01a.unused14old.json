@@ -1,16 +1,4 @@
 {
- "build": "stryde-71-stairs-pixar-song",
- "act": "Hook 1",
- "hook": 1,
- "stage": "hooks",
- "beat": "HK-01a",
- "title": "hook — the result, one B-roll for both lines (user 2026-10-01: her walking faster up the stairs, the women half her age walking behind her, left behind; HT05 out in the world) — v1–v10 pairs (replaced; latest: the v11 pair, N side-on)",
- "line": "I'm seventy-one, and I take the stairs",
- "flow": [
-  "image"
- ],
- "status": "regenerate",
- "imageStatus": "regenerate",
  "imageVersions": [
   {
    "archived": true,
@@ -198,38 +186,11 @@
    "archiveAsset": "b532e5e02fe6fdb7d4c20f4cf5296946"
   }
  ],
- "imageAsset": "26386837993fc54f14cfa480843d2b45",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_162539_03f7a763-5aff-4f60-9110-4a6f09c95a0d.png",
- "imageConnector": "Higgsfield",
- "imageCredits": 2.14,
- "imageRes": "1536×2752",
- "imageModel": "nano_banana_pro → logged nano_banana_2",
- "imagePrompt": "For the line \"I'm seventy-one, and I take the stairs faster than women half my age.\": Keep this photo exactly as it is — the flight, the handrails, the doors, the camera, the light — as a tall 9:16 crop on the middle lane of the flight, and add three women seen from behind. Image 1 is the plaza steps. Image 2 is the older woman.\nThe same woman as Image 2, seventy-one, in the middle lane on the 15th of 30 steps, her back to the lens, facing up the flight, eyes on the doors, mid-stride, weight on her right foot, left foot lifting to the 16th, both hands free, head up, one cheek and the edge of a smile past the hat brim; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. Below her two women of thirty-five in grey and navy sweatshirts and leggings, backs to the lens, walking up slowly on the 11th and 10th steps, one hand on the rail, left behind.\nIn the frame: the three women, the one flight of Image 1, the handrails, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1, a catchlight in her eye. Clothing plain — no lettering, logos or labels; no fourth person; nobody in profile.",
- "imageRefs": [
-  {
-   "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 1 · edited (HT17, §6A rule 3)"
-  },
-  {
-   "kind": "character",
-   "label": "N-NARR sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__N-NARR",
-   "role": "Image 2"
-  },
-  {
-   "kind": "character",
-   "label": "C2-DAUGHTER sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 3"
-  }
- ],
- "updatedAt": 1790872776833,
  "imagePair": [
-  11,
-  12
+  14
  ],
- "imageFault": "user 2026-10-01: \"hk01 she is facing the wrong way\" → v11 had her side-on across the steps; v12 has her back to the lens, facing up the flight to the doors, climbing away, the two women half her age behind her with their backs to the lens too — an image edit of the confirmed P8-PLAZA (HT17, HT24); the v11 pair to Old"
+ "imageAsset": "b532e5e02fe6fdb7d4c20f4cf5296946",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_163540_ef071cb8-0ef2-4acc-85ca-e06eff29473e.png",
+ "imageFault": "not chosen — the user used A (v13)",
+ "updatedAt": 1790876000000
 }

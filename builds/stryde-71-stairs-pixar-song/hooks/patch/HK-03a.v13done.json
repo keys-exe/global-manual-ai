@@ -1,79 +1,4 @@
 {
- "build": "stryde-71-stairs-pixar-song",
- "act": "Hook 1",
- "stage": "hooks",
- "beat": "HK-03a",
- "title": "hook — the line (church steps, the two turned to each other, edit of the confirmed HK-02a frame) · MEDIUM from the sidewalk",
- "line": "\"Mama, when did that happen?\"",
- "status": "planned",
- "flow": [
-  "image",
-  "video"
- ],
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "duration": 5,
- "songIn": 12.89,
- "songOut": 16.14,
- "onScreen": 3.25,
- "section": "Hook — MUS-OPEN",
- "bars": 1,
- "key": "Mama",
- "location": "L-CHURCH",
- "storyDay": "N-D4",
- "framing": "MEDIUM from the sidewalk at the foot of the church steps, the lens at hip height looking up the flight: N stopped on the 6th step and turned back to face her daughter, one hand on her hip, a small smile; the daughter two steps below with her right hand on the black rail, face up to her mother, mouth open mid-word",
- "motionPlan": "From this frame: the daughter's head tilts as she asks, N's smile widens — a beat, about a second; camera RV sway — the virtual camera breathes in place, never travels",
- "staging": "none",
- "pinEnd": "no",
- "angle": "low · three-quarter · clean · MEDIUM — low from the sidewalk = the same place as HK-02a; the line lands between them, both faces in frame (HT24)",
- "focus": "eyes · medium",
- "light": "landing window, south wall · key R · afternoon · after: Sunday sun · 5600K",
- "product": "worn (under the dress) · HIDDEN",
- "layout": "full",
- "eg": "",
- "music": "MUS-OPEN",
- "ledger": "",
- "updatedAt": 1790873347552,
- "hook": 1,
- "editOf": "stryde-71-stairs-pixar-song__P0-PROP-N",
- "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — the church, its steps, the black handrail, the hedges, the camera, the light — and turn the two women to each other. Image 1 is this frame of the two women on the church steps. Image 2 is the mother. Image 3 is her daughter.\nMedium shot from the sidewalk, the lens at hip height up the flight, sharp on both faces. The same woman as Image 2 on the 6th of 8 steps, stopped and turned back to face down the steps, her body three-quarter to the lens, one hand on her hip, eyes on her daughter, a small smile; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 on the 4th step, two below her, right hand on the black handrail, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers.\nIn the frame: the two women, the one flight of Image 1, the handrail, the hedges, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
- "imageStatus": "review",
- "imageRefs": [
-  {
-   "label": "HK-02a v13 A (confirmed frame — the church steps from the sidewalk)",
-   "kind": "frame",
-   "ref": "stryde-71-stairs-pixar-song__HK-02a",
-   "role": "Image 1 · edited (§6A rule 3, HT17)"
-  },
-  {
-   "label": "N-NARR sheet v2",
-   "kind": "character",
-   "ref": "stryde-71-stairs-pixar-song__N-NARR",
-   "role": "Image 2"
-  },
-  {
-   "label": "C2-DAUGHTER sheet v2",
-   "kind": "character",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 3"
-  }
- ],
- "imageMatch": "frame",
- "imageTaste": [
-  "HT03",
-  "HT04",
-  "HT05",
-  "HT08",
-  "HT09",
-  "HT12",
-  "HT17",
-  "HT18",
-  "HT19",
-  "HT22",
-  "HT23",
-  "HT24"
- ],
- "preflight": "PASS (§6A, kind image)",
  "imageVersions": [
   {
    "archiveAsset": "5cb241f3716ed4e7c2b62beef21f3263",
@@ -390,8 +315,55 @@
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
  "imageAt": 1790873347552,
- "imageRegens": 6,
- "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
+ "imageStatus": "review",
+ "imagePick": {
+  "__delete__": true
+ },
+ "imageUnused": {
+  "__delete__": true
+ },
+ "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — the church, its steps, the black handrail, the hedges, the camera, the light — and turn the two women to each other. Image 1 is this frame of the two women on the church steps. Image 2 is the mother. Image 3 is her daughter.\nMedium shot from the sidewalk, the lens at hip height up the flight, sharp on both faces. The same woman as Image 2 on the 6th of 8 steps, stopped and turned back to face down the steps, her body three-quarter to the lens, one hand on her hip, eyes on her daughter, a small smile; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 on the 4th step, two below her, right hand on the black handrail, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers.\nIn the frame: the two women, the one flight of Image 1, the handrail, the hedges, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
  "imageFault": "user 2026-10-01 Fix: \"this should be the same as the hk02 location but should be them talking to each other\" → an image edit of the confirmed HK-02a v13 A (the church steps from the sidewalk, HT17): the mother stopped on the 6th step and turned back to her daughter, the daughter two steps below with her hand on the rail, mouth open mid-word (HT24); the v9 pair (the OTS from the top step) to Old",
- "shot": "MEDIUM from the sidewalk (edit of the confirmed HK-02a frame), the two turned to each other on the church steps"
+ "imageMatch": "frame",
+ "imageRefs": [
+  {
+   "label": "HK-02a v13 A (confirmed frame — the church steps from the sidewalk)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__HK-02a",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  },
+  {
+   "label": "C2-DAUGHTER sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
+   "role": "Image 3"
+  }
+ ],
+ "shot": "MEDIUM from the sidewalk (edit of the confirmed HK-02a frame), the two turned to each other on the church steps",
+ "title": "hook — the line (church steps, the two turned to each other, edit of the confirmed HK-02a frame) · MEDIUM from the sidewalk",
+ "framing": "MEDIUM from the sidewalk at the foot of the church steps, the lens at hip height looking up the flight: N stopped on the 6th step and turned back to face her daughter, one hand on her hip, a small smile; the daughter two steps below with her right hand on the black rail, face up to her mother, mouth open mid-word",
+ "angle": "low · three-quarter · clean · MEDIUM — low from the sidewalk = the same place as HK-02a; the line lands between them, both faces in frame (HT24)",
+ "location": "L-CHURCH",
+ "motionPlan": "From this frame: the daughter's head tilts as she asks, N's smile widens — a beat, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22",
+  "HT23",
+  "HT24"
+ ],
+ "updatedAt": 1790873347552
 }

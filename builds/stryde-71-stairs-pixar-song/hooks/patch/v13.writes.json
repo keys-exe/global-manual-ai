@@ -1,0 +1,17 @@
+[
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__HK-03a",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/hooks/patch/HK-03a.v13done.json",
+  "if_version": 26
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__HK-03a",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/hooks/patch/HK-03a.v13old.json",
+  "if_version": 7,
+  "_board": "old"
+ }
+]
