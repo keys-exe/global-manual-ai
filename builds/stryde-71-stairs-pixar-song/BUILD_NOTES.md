@@ -68,10 +68,37 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   plate). HK-03a and P-02a become image edits of P0 (the top of the flight, HT17); act map / STEP4_5 / docs updated; P1 card removed from Current, all four
   versions on the Old board. All seven remaining plates are confirmed → **step 6 (the hook) is unlocked.**
 
+- same session, ~12:35–12:50 UTC — **Step 6, the hook: A/B start frames + pinned end frames on the Current board, all To check.** Four §6A short
+  prompts (`hooks/build_hooks.py` → `hooks/<BEAT>.prompt.txt`, 1,183–1,199 chars, `preflight.py` kind image PASS on all seven): HK-01a and HK-03a are
+  image edits of P0 (HT17, Image 1 = the plate, 9:16 crop on the flight / on the top of the flight), HK-01b (feet CU, no sheet) and HK-02a (C2 from the
+  top looking down) carry P0 as a reference. Both renders of each pair on Higgsfield `nano_banana_pro` (logged `nano_banana_2` again, §5 fault noted on
+  every card; Kie Pro not used — 963/render). **§27G rule 10 applied:** every stairs-class row is pinned — `actmap.py` now sets `pin_end = yes` on any
+  `stairs:` staging (13 rows incl. PR-02a), act map / STEP4_5 / `docs/actmap` on Current + Plan re-synced, the 12 stairs cards carry `pinEnd: yes` +
+  `endFrame`. The hook's three stairs beats got their end frames the same turn as their own cards — `HK-01a-END`, `HK-01b-END`, `HK-02a-END` (A = an
+  edit of start A, B = of start B; "Use A with start A"). HK-03a (a head turn, staging none) is unpinned. 14 renders = 30 Higgsfield credits measured
+  (10,377.65 → 10,347.65; 2.14 each on the cards). Assets `hooks/assets.json`, jobs `hooks/jobs.json`, connector links `hooks/urls.json`.
+  What I saw (information only — the picks are the user's): HK-01a A/B both on P0's staircase, N two–three steps up (not the 6th), C2's hand on the newel;
+  HK-01b A has a white top edge at the daughter's waist, B is shot through the balusters; HK-02a A has bare oak treads and a hall mat, B a tiled hall floor
+  (both off the plate); HK-03a A puts N on the hall floor at the foot of the stairs (wrong end), B has her on the landing behind the balusters with C2 on
+  the top step. Video pilot: HK-01a is the build's first stairs clip (§27G rule 10) — it runs alone after the picks, the other stairs clips wait on its Confirm.
+
+- same session, ~13:00–13:20 UTC — user **"we dont need end frame generate new ones"** (after Use A on HK-01a and its END card). **End frames waived:**
+  §27G rule 10's pin recorded as `pin_waived` on every stairs row (`actmap.py`: `pin_end: no · waived (user 2026-10-01)`; STEP4_5 / `docs/actmap` on
+  Current + Plan re-synced; the 12 stairs cards `pinEnd: no`, `pinWaived`), the three END cards removed from Current and kept on Old with both renders.
+  **New pairs** (v3/v4 = A/B) for HK-01b, HK-02a, HK-03a from rewritten prompts (`hooks/<BEAT>.v2.prompt.txt`, preflight PASS: HK-01b names the
+  sweatshirt hem at the top edge; HK-02a asks for the runner, a rod on every step and the bare oak floorboards of the plate; HK-03a states the landing is a
+  storey above the hall and the mother stands on the landing floor above the top step); v1 pairs to Old. Seen: HK-03a A again puts the mother at the foot of
+  the stairs on the hall floor, B has both at the top; HK-02a A/B both on the runner with the oak floor below now. Higgsfield balance moved 82.25 for the
+  6 renders (10,347.65 → 10,265.4) — far more than the 2.14/render measured on the first batch; cards carry 2.14, unverified why.
+  **HK-01a clip (stairs pilot)** on Kling `kling-video-v3_0` (the lock said omni; v3_0 is the single-image first-frame route per who_am_i — same Kling 3.0),
+  5 s, 1080p, `prefer_multi_shots false`, `enable_audio false` (the song is the sound), start = v1 A via its Higgsfield CDN link, §35A prompt 908 chars,
+  preflight PASS with `pin_waived` + `pilot: first`; 40 Kling credits (44,563 → 44,523); 1072×1928, 5.04 s, 24 fps; on the card as To check
+  (`clips/HK-01a_v1.mp4`, contact sheet `clips/HK-01a_v1.contact.jpg`: she climbs hands-free, the daughter's hand on the rail, camera still).
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator never sings to camera (default) vs two bookends · F4 "Stryde." · F10 Mode 2 sheet amendment / true Pro route on Kie · F12 BPM · F13 clipped master.
 
 ## Next
-**Waiting on the plates' Confirm.** Then step 6 — the hook (HK-01a → HK-03a, 0–15.5 s): A/B beat images with `motionPlan`, then the Kling clips on the user's picks; then the body acts in order; CapCut block with lyric captions and the outro end card.
+**Waiting on:** the HK-01a clip's Confirm (stairs pilot — the other stairs clips wait on it) and the picks on the v2 pairs of HK-01b, HK-02a, HK-03a. Then their clips (no end frames — waived; §35A ≤ 1,000 chars, preflight PASS); then the body acts in order; CapCut block with lyric captions and the outro end card.
 
 (Earlier plan, done:) steps 4–5 (property sheet + 16:9 Pixar plates on nano_banana_pro: house stairs/landing/kitchen, reception, store checkout, church steps, street; act map on the song's clock — E6 lengths from `work/lyrics.timed.json`, cuts on 3–4 beats, `angles.py` PASS; wardrobe map). No voice stage. Then hook (0–15.5 s) at step 6, body acts at step 7, CapCut block with lyric captions.

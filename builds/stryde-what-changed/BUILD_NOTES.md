@@ -424,3 +424,18 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - **B23a v1**: the foot lands on the stair edge. Flaws: a hand edges into the top right; the strap changes shape in the last second.
 - Replaced videos (B19b v3, B19-BR2 v2, B18b v1, B22a v1) → Old 2. Higgsfield 10,397.65.
 - Learned: giving both hands a job in the START FRAME (wall + thigh) and saying "neither hand moves" finally kept Kling off the banister.
+
+### 2026-10-01 — "GO" with three video Fixes
+- **B21 v2** (Fix "WILL KICK THEN JUMPING KEEP MOVING", 5 s, 8.75 cr): kick, a small hop, then a light jog across the lawn; strap holds. Flaw: the ball doubles for a moment at the kick.
+- **B22a v3** (Fix "WALKING DOWN STAIR", 3rd video — user GO): she stands for ~3 s and only steps at the very end; a hand edges into the top-right corner again.
+- **B23a v2** (Fix "WALKING DOWN STAIR"): two steps down towards the camera, strap stays on the right knee. Flaw: a hand edges into the top right in two frames.
+- Fixed-geography wording (HT22) used on the stair clips. The stray hand at the top right keeps coming back on the low leg shots (B22a, B23a) — the edited frames have a faint hand/sleeve edge there; next fix is a frame edit that removes it rather than a prompt line.
+- Replaced videos → Old 2. Higgsfield 10,306.9.
+
+### 2026-10-01 — "FIX" (B22a image "FIX THE PRODUCT")
+- **B22a v3** (NBP edit of v2, refs worn_front.jpg + front.webp, "copied exactly", lowercase "stryde"): to check. Not fixed — the shells are a little closer in shape but the wordmark is still small and in capitals. At this distance (two knees, full lower legs) the model redraws the strap from scratch and ignores the product photo. v2 → Old 2.
+- Proposed next (user's call): frame closer so each strap is large (FP12 works when the strap fills a good part of the frame), or one strapped knee from worn_front.jpg (background-only edit, the real product untouched) with the second knee beside it.
+
+### 2026-10-01 — "FIX" (B23a image "FIX THE PRODUCT")
+- **B23a v4** (NBP edit of v3, refs worn_front.jpg + front.webp, framed like worn_front.jpg): the strap is now large and matches the real one — shell, two peaks, chrome slides, big lowercase grey "stryde". Flaw: her plimsoll is cut off at the bottom edge, so the step onto the stair isn't shown. To check; v3 → Old 2.
+- Confirms the B22a lesson: the product copies right only when it is big in frame. B22a (two knees, small straps) needs the closer framing too — waiting on the user's pick.
