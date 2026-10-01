@@ -1,0 +1,136 @@
+{
+ "scene": "MUS-BODY-B",
+ "length_s": 73.02,
+ "theme": [
+  "the same thriller score family turning: pulsing bass and strings",
+  "the tension breaks into confidence",
+  "determined, forward, hopeful, never sad, never sentimental",
+  "instrumental, sits under a speaking voice"
+ ],
+ "avoid": [
+  "sad",
+  "melancholic",
+  "mournful",
+  "sentimental",
+  "grief",
+  "emotional piano ballad",
+  "slow felt piano",
+  "sombre cello",
+  "tearful",
+  "nostalgic",
+  "cute",
+  "cheerful",
+  "upbeat",
+  "ukulele",
+  "whistling",
+  "hand claps",
+  "corporate jingle",
+  "stock advert jingle",
+  "pop beat",
+  "vocals",
+  "lyrics",
+  "humming",
+  "guitar",
+  "EDM drop",
+  "trailer braams",
+  "dark drone",
+  "menacing",
+  "suspense"
+ ],
+ "tempo": "moderate",
+ "registers": {
+  "The strap": "MUS-TURN",
+  "Proof": "MUS-AFTER",
+  "Try it": "MUS-OFFER",
+  "The price": "MUS-OFFER",
+  "Send it on": "MUS-OFFER"
+ },
+ "sections": [
+  {
+   "name": "The strap",
+   "start": 0.28,
+   "end": 22.94,
+   "energy": "high",
+   "styles": [
+    "the change is clear from the very first beat: a new key, a confident major chord and a driving rhythm",
+    "at full level from the first beat, no intro, no fade-in",
+    "the pulse opens into a confident driving rhythm",
+    "the first major chord, determined"
+   ],
+   "avoid": [
+    "fade-in",
+    "quiet intro",
+    "dark drone",
+    "ending",
+    "stopping",
+    "silence"
+   ]
+  },
+  {
+   "name": "Proof",
+   "start": 22.94,
+   "end": 48.22,
+   "energy": "high",
+   "styles": [
+    "MUS-AFTER: confident forward momentum",
+    "determined and uplifting, never sentimental",
+    "strings and pulse driving forward"
+   ],
+   "avoid": [
+    "ending",
+    "stopping",
+    "silence"
+   ]
+  },
+  {
+   "name": "Try it",
+   "start": 48.22,
+   "end": 55.94,
+   "energy": "high",
+   "styles": [
+    "MUS-OFFER: steady confident drive",
+    "a little brighter and fuller"
+   ],
+   "avoid": [
+    "ending",
+    "stopping",
+    "fade-out",
+    "silence"
+   ]
+  },
+  {
+   "name": "The price",
+   "start": 55.94,
+   "end": 66.14,
+   "energy": "mid",
+   "styles": [
+    "MUS-OFFER under the price: the same driving pulse keeps playing, a little quieter and thinner",
+    "no stop, no break, continuous music"
+   ],
+   "avoid": [
+    "silence",
+    "ending",
+    "stopping",
+    "fade-out"
+   ]
+  },
+  {
+   "name": "Send it on",
+   "start": 66.14,
+   "end": 73.02,
+   "energy": "high",
+   "styles": [
+    "MUS-OFFER: steady and resolved",
+    "plays at full level to the very end, no fade-out, no ending"
+   ],
+   "avoid": [
+    "long fade-out",
+    "dying away",
+    "ritardando",
+    "ending",
+    "stopping",
+    "silence"
+   ]
+  }
+ ]
+}

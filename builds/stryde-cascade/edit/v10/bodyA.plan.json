@@ -1,0 +1,90 @@
+{
+  "positive_global_styles": [
+    "true-crime documentary thriller score",
+    "suspense and intrigue, not sadness",
+    "pulsing low synth bass ostinato",
+    "ticking clock",
+    "taut staccato strings",
+    "dark mysterious atmosphere",
+    "instrumental, sits under a speaking voice",
+    "instrumental",
+    "moderate tempo"
+  ],
+  "negative_global_styles": [
+    "sad",
+    "melancholic",
+    "mournful",
+    "sentimental",
+    "grief",
+    "emotional piano ballad",
+    "slow felt piano",
+    "sombre cello",
+    "tearful",
+    "nostalgic",
+    "cute",
+    "cheerful",
+    "upbeat",
+    "ukulele",
+    "whistling",
+    "hand claps",
+    "corporate jingle",
+    "stock advert jingle",
+    "pop beat",
+    "vocals",
+    "lyrics",
+    "humming",
+    "guitar",
+    "EDM drop",
+    "trailer braams",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The sequence",
+      "positive_local_styles": [
+        "at full level from the very first beat, no intro, no fade-in",
+        "MUS-OPEN: hidden-camera suspense",
+        "ticking clock, low pulsing bass ostinato",
+        "tension climbing with each step",
+        "mysterious, unresolved"
+      ],
+      "negative_local_styles": [
+        "fade-in",
+        "quiet intro",
+        "silence"
+      ],
+      "duration_ms": 27740,
+      "lines": []
+    },
+    {
+      "section_name": "The band",
+      "positive_local_styles": [
+        "MUS-EDU: investigative curiosity",
+        "a clean repeating synth arpeggio over the pulse",
+        "inquisitive, the viewer leans in",
+        "minor, mysterious"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 26860,
+      "lines": []
+    },
+    {
+      "section_name": "What has been tried",
+      "positive_local_styles": [
+        "MUS-EXPOSE: the expos\u00e9",
+        "darker driving pulse, staccato strings",
+        "dissonant stabs on the reveals",
+        "menacing, no warmth",
+        "keeps playing at full level right to the end, no fade-out, no ending"
+      ],
+      "negative_local_styles": [
+        "fade-out",
+        "ending",
+        "resolution",
+        "silence"
+      ],
+      "duration_ms": 30140,
+      "lines": []
+    }
+  ]
+}

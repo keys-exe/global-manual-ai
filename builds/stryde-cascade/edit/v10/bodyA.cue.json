@@ -1,0 +1,97 @@
+{
+ "scene": "MUS-BODY-A",
+ "length_s": 82.74,
+ "theme": [
+  "true-crime documentary thriller score",
+  "suspense and intrigue, not sadness",
+  "pulsing low synth bass ostinato",
+  "ticking clock",
+  "taut staccato strings",
+  "dark mysterious atmosphere",
+  "instrumental, sits under a speaking voice"
+ ],
+ "avoid": [
+  "sad",
+  "melancholic",
+  "mournful",
+  "sentimental",
+  "grief",
+  "emotional piano ballad",
+  "slow felt piano",
+  "sombre cello",
+  "tearful",
+  "nostalgic",
+  "cute",
+  "cheerful",
+  "upbeat",
+  "ukulele",
+  "whistling",
+  "hand claps",
+  "corporate jingle",
+  "stock advert jingle",
+  "pop beat",
+  "vocals",
+  "lyrics",
+  "humming",
+  "guitar",
+  "EDM drop",
+  "trailer braams"
+ ],
+ "tempo": "moderate",
+ "registers": {
+  "The sequence": "MUS-OPEN",
+  "The band": "MUS-EDU",
+  "What has been tried": "MUS-EXPOSE"
+ },
+ "sections": [
+  {
+   "name": "The sequence",
+   "start": 0,
+   "end": 27.74,
+   "energy": "low",
+   "styles": [
+    "at full level from the very first beat, no intro, no fade-in",
+    "MUS-OPEN: hidden-camera suspense",
+    "ticking clock, low pulsing bass ostinato",
+    "tension climbing with each step",
+    "mysterious, unresolved"
+   ],
+   "avoid": [
+    "fade-in",
+    "quiet intro",
+    "silence"
+   ]
+  },
+  {
+   "name": "The band",
+   "start": 27.74,
+   "end": 54.6,
+   "energy": "low",
+   "styles": [
+    "MUS-EDU: investigative curiosity",
+    "a clean repeating synth arpeggio over the pulse",
+    "inquisitive, the viewer leans in",
+    "minor, mysterious"
+   ]
+  },
+  {
+   "name": "What has been tried",
+   "start": 54.6,
+   "end": 82.74,
+   "energy": "mid",
+   "styles": [
+    "MUS-EXPOSE: the expos\u00e9",
+    "darker driving pulse, staccato strings",
+    "dissonant stabs on the reveals",
+    "menacing, no warmth",
+    "keeps playing at full level right to the end, no fade-out, no ending"
+   ],
+   "avoid": [
+    "fade-out",
+    "ending",
+    "resolution",
+    "silence"
+   ]
+  }
+ ]
+}

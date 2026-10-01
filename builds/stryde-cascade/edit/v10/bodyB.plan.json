@@ -1,0 +1,124 @@
+{
+  "positive_global_styles": [
+    "the same thriller score family turning: pulsing bass and strings",
+    "the tension breaks into confidence",
+    "determined, forward, hopeful, never sad, never sentimental",
+    "instrumental, sits under a speaking voice",
+    "instrumental",
+    "moderate tempo"
+  ],
+  "negative_global_styles": [
+    "sad",
+    "melancholic",
+    "mournful",
+    "sentimental",
+    "grief",
+    "emotional piano ballad",
+    "slow felt piano",
+    "sombre cello",
+    "tearful",
+    "nostalgic",
+    "cute",
+    "cheerful",
+    "upbeat",
+    "ukulele",
+    "whistling",
+    "hand claps",
+    "corporate jingle",
+    "stock advert jingle",
+    "pop beat",
+    "vocals",
+    "lyrics",
+    "humming",
+    "guitar",
+    "EDM drop",
+    "trailer braams",
+    "dark drone",
+    "menacing",
+    "suspense",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The strap",
+      "positive_local_styles": [
+        "the change is clear from the very first beat: a new key, a confident major chord and a driving rhythm",
+        "at full level from the first beat, no intro, no fade-in",
+        "the pulse opens into a confident driving rhythm",
+        "the first major chord, determined"
+      ],
+      "negative_local_styles": [
+        "fade-in",
+        "quiet intro",
+        "dark drone",
+        "ending",
+        "stopping",
+        "silence"
+      ],
+      "duration_ms": 22660,
+      "lines": []
+    },
+    {
+      "section_name": "Proof",
+      "positive_local_styles": [
+        "MUS-AFTER: confident forward momentum",
+        "determined and uplifting, never sentimental",
+        "strings and pulse driving forward"
+      ],
+      "negative_local_styles": [
+        "ending",
+        "stopping",
+        "silence"
+      ],
+      "duration_ms": 25280,
+      "lines": []
+    },
+    {
+      "section_name": "Try it",
+      "positive_local_styles": [
+        "MUS-OFFER: steady confident drive",
+        "a little brighter and fuller"
+      ],
+      "negative_local_styles": [
+        "ending",
+        "stopping",
+        "fade-out",
+        "silence"
+      ],
+      "duration_ms": 7720,
+      "lines": []
+    },
+    {
+      "section_name": "The price",
+      "positive_local_styles": [
+        "MUS-OFFER under the price: the same driving pulse keeps playing, a little quieter and thinner",
+        "no stop, no break, continuous music"
+      ],
+      "negative_local_styles": [
+        "silence",
+        "ending",
+        "stopping",
+        "fade-out"
+      ],
+      "duration_ms": 10200,
+      "lines": []
+    },
+    {
+      "section_name": "Send it on",
+      "positive_local_styles": [
+        "MUS-OFFER: steady and resolved",
+        "plays at full level to the very end, no fade-out, no ending"
+      ],
+      "negative_local_styles": [
+        "long fade-out",
+        "dying away",
+        "ritardando",
+        "ending",
+        "stopping",
+        "silence"
+      ],
+      "duration_ms": 8880,
+      "lines": []
+    }
+  ]
+}
