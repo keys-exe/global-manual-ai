@@ -1,0 +1,45 @@
+{
+ "beat": "E-03",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"And the pain just lifts.\": From this frame: he straightens to his full height and breaks into a broad, happy smile, about two seconds. Handheld phone, a gentle breath sway, the camera stays where it is. Both feet stay planted on the rug and his hands stay loose at his sides; the strap stays rigid and in place just below his right kneecap. No walking, no speaking, no second strap.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actE/E-03.v3.A.png",
+ "start_approved": true,
+ "approved_by": "user picked A (v5) + CONFIRM (2026-10-01)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "fix_note": "MAKE HE STAND HAPPY: kneeling frame \u2192 new standing smiling frame (picked A), motion = straightens + broad smile",
+ "script_line": "And the pain just lifts.",
+ "motion_plan": "From this frame: he straightens to his full height and breaks into a broad, happy smile, about two seconds.",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "taste": [
+  "FP01",
+  "FP03",
+  "FP05",
+  "HT07",
+  "HT13"
+ ],
+ "risks": [
+  {
+   "risk": "he walks off",
+   "prevented_by": "feet planted; no walking"
+  },
+  {
+   "risk": "strap slides",
+   "prevented_by": "strap rigid and in place"
+  },
+  {
+   "risk": "hands go to the knee",
+   "prevented_by": "hands loose at his sides"
+  }
+ ]
+}
