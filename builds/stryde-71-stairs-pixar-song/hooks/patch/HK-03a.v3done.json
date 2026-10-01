@@ -1,66 +1,4 @@
 {
- "build": "stryde-71-stairs-pixar-song",
- "act": "Hook 1",
- "stage": "hooks",
- "beat": "HK-03a",
- "title": "hook — the line (edit of P0: the top of the flight, HT17)",
- "line": "\"Mama, when did that happen?\"",
- "status": "planned",
- "flow": [
-  "image",
-  "video"
- ],
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "duration": 5,
- "songIn": 12.89,
- "songOut": 16.14,
- "onScreen": 3.25,
- "section": "Hook — MUS-OPEN",
- "bars": 1,
- "key": "Mama",
- "location": "L-N-STAIRS (landing)",
- "storyDay": "N-D4",
- "framing": "MEDIUM on the landing: N at the top turning back with a small knowing smile, C2 arriving on the last step looking at her, mouth open mid-word",
- "motionPlan": "From this frame: N turns her head back to her daughter — one turn, about a second; camera RV sway — the virtual camera breathes in place, never travels",
- "staging": "none",
- "pinEnd": "no",
- "angle": "eye · three-quarter · clean · MEDIUM",
- "focus": "eyes · deep",
- "light": "landing window, south wall · key R · afternoon · after: Sunday sun · 5600K",
- "product": "worn (under the dress) · HIDDEN",
- "layout": "full",
- "eg": "",
- "music": "MUS-OPEN",
- "ledger": "",
- "updatedAt": 1790866782613,
- "hook": 1,
- "editOf": "stryde-71-stairs-pixar-song__P0-PROP-N",
- "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this picture exactly as it is — the staircase, the photo wall, the handrail, the landing, the light — and move the two women to the top. Image 1 is the confirmed frame of this moment.\nTall crop on the top of the flight and the landing of Image 1: the mother standing on the landing floor above the top step, body facing along the landing, head turned back over her left shoulder, a small knowing smile, mouth closed, eyes on her daughter, hands free at her sides; the daughter one step below on the 14th and top step, right hand on the handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word. The two fill over half the frame. Scene so far: one straight 14-step flight, hall to landing, photo wall on its right, balusters and oak rail on its left; the mother climbs ahead hands free, the daughter behind, right hand on the rail; nobody holds anything.\nIn the frame: two women, the top of the one staircase, the landing's balusters and rail, the photo wall; every other surface bare. Two legs each.\nThe render and light of Image 1. Clothing, shoes and walls plain — no lettering, logos or labels; no third person.",
- "imageStatus": "review",
- "imageRefs": [
-  {
-   "label": "HK-01a v1 A (confirmed frame)",
-   "role": "Image 1 · edited (§6A rule 3, HT17)",
-   "kind": "frame",
-   "ref": "stryde-71-stairs-pixar-song__HK-01a"
-  }
- ],
- "imageMatch": "frame",
- "imageTaste": [
-  "HT03",
-  "HT04",
-  "HT05",
-  "HT08",
-  "HT09",
-  "HT12",
-  "HT17",
-  "HT18",
-  "HT19",
-  "HT22",
-  "HT23"
- ],
- "preflight": "PASS (§6A, kind image)",
  "imageVersions": [
   {
    "archiveAsset": "5cb241f3716ed4e7c2b62beef21f3263",
@@ -173,7 +111,31 @@
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
  "imageAt": 1790866782613,
+ "imageStatus": "review",
  "imageRegens": 3,
- "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
- "imageFault": "user 2026-10-01: \"WRONG LOCATION\" → fixed as an edit of the confirmed HK-01a frame A"
+ "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this picture exactly as it is — the staircase, the photo wall, the handrail, the landing, the light — and move the two women to the top. Image 1 is the confirmed frame of this moment.\nTall crop on the top of the flight and the landing of Image 1: the mother standing on the landing floor above the top step, body facing along the landing, head turned back over her left shoulder, a small knowing smile, mouth closed, eyes on her daughter, hands free at her sides; the daughter one step below on the 14th and top step, right hand on the handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word. The two fill over half the frame. Scene so far: one straight 14-step flight, hall to landing, photo wall on its right, balusters and oak rail on its left; the mother climbs ahead hands free, the daughter behind, right hand on the rail; nobody holds anything.\nIn the frame: two women, the top of the one staircase, the landing's balusters and rail, the photo wall; every other surface bare. Two legs each.\nThe render and light of Image 1. Clothing, shoes and walls plain — no lettering, logos or labels; no third person.",
+ "imageFault": "user 2026-10-01: \"WRONG LOCATION\" → fixed as an edit of the confirmed HK-01a frame A",
+ "imageMatch": "frame",
+ "imageRefs": [
+  {
+   "label": "HK-01a v1 A (confirmed frame)",
+   "role": "Image 1 · edited (§6A rule 3, HT17)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__HK-01a"
+  }
+ ],
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22",
+  "HT23"
+ ],
+ "updatedAt": 1790866782613
 }

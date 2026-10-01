@@ -95,6 +95,21 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   preflight PASS with `pin_waived` + `pilot: first`; 40 Kling credits (44,563 → 44,523); 1072×1928, 5.04 s, 24 fps; on the card as To check
   (`clips/HK-01a_v1.mp4`, contact sheet `clips/HK-01a_v1.contact.jpg`: she climbs hands-free, the daughter's hand on the rail, camera still).
 
+- same session, ~13:35–13:50 UTC — user **"FIX THOSE"** (board notes: HK-01b "WRONG CHARACTER", HK-02a "INCORRECT PLACEMENTS OF PICTURE FRAMES FIX THE
+  LOCATION", HK-03a "WRONG LOCATION"). Default branch merged first (V7.78.1 — HT23 "one scene, one continuous moment"). Diagnosis: all three faults are
+  fidelity to the confirmed scene — the characters in a no-sheet feet shot, the photo wall and the landing drawn free-hand from the plate. Fix at the source
+  (HT17): each v3 pair is an **image edit of the confirmed HK-01a frame A** (Image 1 = that frame, the user's own pick — right staircase, right two women,
+  right photo wall), with the HT23 "Scene so far" line on every prompt (`hooks/<BEAT>.v3.prompt.txt`, 1,182–1,200 chars, preflight PASS, `match: frame`).
+  HK-02a's camera therefore bends to the frame's (from the hall floor, the daughter side-on near the top, face in profile) — the act map's "from the landing
+  looking down" would have had to invent the wall again. v5/v6 = the new A/B; v3/v4 to Old. `fix_patterns.py` run (27 notes): the repeating note on this
+  build is "use the location / connected to P0" (P1 ×3, HK-02a, HK-03a) — already HT17, now applied as edits of the confirmed frame; no new rule.
+
+- same session, ~14:55 UTC — the six v3 Fix renders landed after ~65 min in Higgsfield's queue (the user asked for Kie if Higgsfield faulted; it cleared
+  before a reroute was needed). v5/v6 on the Current board as To check, v3/v4 on Old. Seen: every render keeps the confirmed frame's camera, staircase,
+  photo wall and both women (the three faults are gone), but the model kept the women low on the flight — HK-01b is a wide, not the feet close-up;
+  HK-02a has the daughter at the newel with the mother mid-flight; HK-03a has the mother a few steps up turning back, the daughter at the foot. The
+  user's picks decide. Higgsfield balance 10,091.15 (shared account — other users' renders move it between our batches).
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator never sings to camera (default) vs two bookends · F4 "Stryde." · F10 Mode 2 sheet amendment / true Pro route on Kie · F12 BPM · F13 clipped master.
 

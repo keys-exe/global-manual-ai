@@ -71,7 +71,7 @@ Clothing, shoes, walls and frames plain — no lettering, logos or labels; no se
 for b, (ln, pr, face) in END.items():
     add(b, ln, pr, [{"label": "the start frame (A of A, B of B)", "kind": "frame"}], face=face, match="frame", edit_of="<start frame>")
 
-if __name__ == "__main__" and "--v2" not in sys.argv:
+if __name__ == "__main__" and "--v2" not in sys.argv and "--v3" not in sys.argv:
     fails = 0
     for b, c in CALLS.items():
         (H / f"{b}.prompt.txt").write_text(c["prompt"])
@@ -101,12 +101,41 @@ The landing is a storey above the hall, at the head of the 14-step flight. The s
 In the frame: the two women, the top of the one staircase of Image 1, the landing wall; every other surface bare. Two legs each.
 The render and light of Image 1, the women on model.
 Clothing, shoes and walls plain — no lettering, logos or labels; no third person.'''
-if __name__ == "__main__" and "--v2" in sys.argv:
+if __name__ == "__main__" and "--v2" in sys.argv and "--v3" not in sys.argv:
     fails = 0
     for b, pr in V2.items():
         c = dict(CALLS[b]); c["prompt"] = pr; c["fix_note"] = "see V2 comment"
         (H / f"{b}.v2.prompt.txt").write_text(pr); (H / f"{b}.v2.preflight.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
         r = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v2.preflight.json")], capture_output=True, text=True)
         print(f"{b} v2: {len(pr)} chars — {'PASS' if r.returncode == 0 else 'FAIL'}"); [print("   ", l) for l in r.stdout.splitlines() if "FAIL" in l]
+        fails += r.returncode != 0
+    sys.exit(1 if fails else 0)
+
+# ---- v3 (user 2026-10-01 "FIX THOSE": HK-01b "WRONG CHARACTER", HK-02a "INCORRECT PLACEMENTS OF PICTURE FRAMES FIX THE LOCATION", HK-03a "WRONG LOCATION").
+# HT17: all three are now image edits of the CONFIRMED HK-01a frame A (the user's pick: the right staircase, the right two women) — Image 1 = that frame.
+# HT23 (V7.78.1): one SCENE SO FAR line on every hook shot.
+HK01A_A = "dd00641302644603f67a37537f1e5afe"   # HK-01a v1 A, confirmed (Higgsfield job c5ffa422…)
+SCENE = "Scene so far: one straight 14-step flight, hall to landing, photo wall on its right, balusters and oak rail on its left; the mother climbs ahead hands free, the daughter behind, right hand on the rail; nobody holds anything."
+V3 = {}
+V3["HK-01b"] = f'''For the line "{L2}": Keep the two women of this picture exactly — skin, build, the emerald-green dress, black pumps, black denim shorts, white trainers — and the same staircase, reframed as a close-up of their feet. Image 1 is the confirmed frame of this moment.
+Close-up, profile, at the height of the 6th step, feet and five steps filling the frame, sharp on the pumps: one black pump planted on the 6th of 14 steps, the other foot lifting to the 7th, the green hem at mid-calf; a few steps below, the white trainers reaching for the 4th step. The top edge cuts the dress at the knee and the olive sweatshirt hem at the hip. Both women's hands and faces out of frame. {SCENE}
+In frame: two black pumps, two white trainers, four legs, five steps of the one staircase, beige runner, brass rods; every other surface bare. Each foot whole, one foot per step.
+The render and light of Image 1. Shoes, clothing and walls plain — no lettering, logos or labels.'''
+V3["HK-02a"] = f'''For the line "{L3}": Keep this picture exactly as it is — the staircase, the photo wall with every frame where it is, the handrail, the light — and move the two women up it: the daughter near the top, a hand on the rail, looking up after her mother. Image 1 is the confirmed frame of this moment.
+Tall crop on the upper half of the flight: the mother stepping onto the landing at the top edge, back to us; the daughter on the 12th of 14 steps, side-on, right hand gripping the oak handrail, left hand on her thigh, lips parted on a breath, face in profile turned up the stairs, eyes on her mother; she fills over half the frame, the photo wall of Image 1 beside her. {SCENE}
+In the frame: two women, the one staircase, the photo wall; every other surface bare. Two hands, two legs each.
+The render and light of Image 1. Clothing, shoes and walls plain — no lettering, logos or labels; no third person.'''
+V3["HK-03a"] = f'''For the line "{L4}": Keep this picture exactly as it is — the staircase, the photo wall, the handrail, the landing, the light — and move the two women to the top. Image 1 is the confirmed frame of this moment.
+Tall crop on the top of the flight and the landing of Image 1: the mother standing on the landing floor above the top step, body facing along the landing, head turned back over her left shoulder, a small knowing smile, mouth closed, eyes on her daughter, hands free at her sides; the daughter one step below on the 14th and top step, right hand on the handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word. The two fill over half the frame. {SCENE}
+In the frame: two women, the top of the one staircase, the landing's balusters and rail, the photo wall; every other surface bare. Two legs each.
+The render and light of Image 1. Clothing, shoes and walls plain — no lettering, logos or labels; no third person.'''
+if __name__ == "__main__" and "--v3" in sys.argv:
+    fails = 0
+    for b, pr in V3.items():
+        c = dict(CALLS[b]); c["prompt"] = pr; c["refs"] = [{"label": "HK-01a v1 A (confirmed frame)", "kind": "frame"}]; c["match"] = "frame"; c["edit_of"] = HK01A_A
+        c["taste"] = TASTE + ["HT23"]; c["fix_note"] = {"HK-01b": "WRONG CHARACTER", "HK-02a": "INCORRECT PLACEMENTS OF PICTURE FRAMES FIX THE LOCATION", "HK-03a": "WRONG LOCATION"}[b]
+        (H / f"{b}.v3.prompt.txt").write_text(pr); (H / f"{b}.v3.preflight.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
+        r = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v3.preflight.json")], capture_output=True, text=True)
+        print(f"{b} v3: {len(pr)} chars — {'PASS' if r.returncode == 0 else 'FAIL'}"); [print("   ", l) for l in r.stdout.splitlines() if "FAIL" in l]
         fails += r.returncode != 0
     sys.exit(1 if fails else 0)

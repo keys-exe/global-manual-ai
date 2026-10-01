@@ -1,0 +1,39 @@
+{
+ "beat": "HK-01b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"faster than women half my age.\": Keep the two women of this picture exactly — skin, build, the emerald-green dress, black pumps, black denim shorts, white trainers — and the same staircase, reframed as a close-up of their feet. Image 1 is the confirmed frame of this moment.\nClose-up, profile, at the height of the 6th step, feet and five steps filling the frame, sharp on the pumps: one black pump planted on the 6th of 14 steps, the other foot lifting to the 7th, the green hem at mid-calf; a few steps below, the white trainers reaching for the 4th step. The top edge cuts the dress at the knee and the olive sweatshirt hem at the hip. Both women's hands and faces out of frame. Scene so far: one straight 14-step flight, hall to landing, photo wall on its right, balusters and oak rail on its left; the mother climbs ahead hands free, the daughter behind, right hand on the rail; nobody holds anything.\nIn frame: two black pumps, two white trainers, four legs, five steps of the one staircase, beige runner, brass rods; every other surface bare. Each foot whole, one foot per step.\nThe render and light of Image 1. Shoes, clothing and walls plain — no lettering, logos or labels.",
+ "script_line": "faster than women half my age.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "HK-01a v1 A (confirmed frame)",
+   "kind": "frame"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "dd00641302644603f67a37537f1e5afe",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22",
+  "HT23"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "WRONG CHARACTER"
+}
