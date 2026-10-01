@@ -76,5 +76,19 @@
  "P-01b@v11B": "old2:e0b7ba5bd6df0ef3bdc22847f59f0b60",
  "P-01b@v11A": "old2:ecf835a3e11f483b6912dce25af3f860",
  "P-01b@v14A": "old2:1d43fe56a9c395d4d48202a32cbbc88d",
- "P-01b@v16B": "old2:62feeee173ae395cc4a92386b4a7ffbc"
+ "P-01b@v16B": "old2:62feeee173ae395cc4a92386b4a7ffbc",
+ "T-01a@v1A": "old2:4750568ea34725f5fc033eb90d2ae89a",
+ "T-01a@v1B": "old2:f57e5c099ef302918365b9bf38ff38e3",
+ "T-01b@v1A": "old2:195dbd92fd110229b8f0f96654cb93c2",
+ "T-01b@v1B": "old2:cdcb62f98511097fed38e8c2ba676e2c",
+ "T-02a@v1A": "old2:0da332385d9ceace73d198838bb2eb58",
+ "T-02a@v1B": "old2:a84ec499f85a071643b980ff22b0e6e6",
+ "T-02b@v1A": "old2:35cfdb7dff3be5a34bcd04c82d6fffba",
+ "T-02b@v1B": "old2:ca1bca919995a6873e7d6fda8bfd2f85",
+ "T-03a@v1A": "old2:6d345f99e30d0c184cc83331d29ae476",
+ "T-03a@v1B": "old2:a9bacf4bbbf2ce8049ed3bafb6906fc0",
+ "T-04a@v1A": "old2:0d7c1756e0c4fadf98e09b4151fb8843",
+ "T-04a@v1B": "old2:9973081d7a1d591fdbd16b39bb3a753a",
+ "T-04b@v1A": "old2:59cdadf15163a2f3bc0575f3dba00f4b",
+ "T-04b@v1B": "old2:4981a2a78dd669cd5888d6b0e5bf7900"
 }

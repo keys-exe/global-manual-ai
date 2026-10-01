@@ -1,103 +1,40 @@
 {
- "build": "stryde-71-stairs-pixar-song",
  "act": "Act 2",
- "stage": "broll",
+ "anatStyle": "S2",
+ "anatWhy": "\"bone on bone\" is a wear line — S2 X-ray (§12A-1), now front-on so both sides of each joint show",
+ "angle": "eye · front · clean · CU — front-on shows both knees and the gap gone on each side of the joint",
+ "bars": 1,
  "beat": "T-03a",
- "title": "mechanism — the worn joint",
- "line": "Both her knees was bone on bone too.",
- "status": "ready",
+ "build": "stryde-71-stairs-pixar-song",
+ "duration": 4,
+ "eg": "EG04",
  "flow": [
   "image",
   "video"
  ],
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "duration": 4,
- "songIn": 54.35,
- "songOut": 56.79,
- "onScreen": 2.44,
- "section": "The turn — MUS-TURN",
- "bars": 1.0,
- "key": "bone",
- "location": "—",
- "storyDay": "—",
- "framing": "ANAT-A: a knee in the anatomical register, the worn joint surfaces touching, glowing red where bone meets bone",
- "motionPlan": "From this frame: the red pulses once — one pulse, about a second; camera R4 — slow single-axis push on a stabilised virtual rig",
- "staging": "none",
- "pinEnd": "no",
- "angle": "eye · profile · clean · CU — profile shows the joint gap gone",
  "focus": "deep · deep",
- "light": "anatomical register (§12A), neutral studio light · key L · — · mechanism · 5600K",
- "product": "absent · —",
- "layout": "full",
- "eg": "EG04",
- "music": "MUS-TURN",
- "ledger": "",
- "updatedAt": 1790890992104,
- "imageVersions": [
-  {
-   "v": 1,
-   "pair": "A",
-   "asset": "b8bb8a0c2acf3cc5ff8c22377766558e",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_0e92e7e6-29cb-450f-b213-81660681158d.png",
-   "job": "0e92e7e6-29cb-450f-b213-81660681158d",
-   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "at": 1790890992104,
-   "refs": [
-    {
-     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
-     "kind": "style",
-     "ref": "stryde-71-stairs-pixar-song__P-05c"
-    }
-   ],
-   "note": "first pair · what I see: S2 X-ray: two knees in profile, blue-white bone, the joint gap gone, a red-orange glow where bone meets bone · B has a stray small panel in its top-right corner"
-  },
-  {
-   "v": 2,
-   "pair": "B",
-   "asset": "438c6916c58d1b96d736a27d912b979c",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_c5479f4f-36a5-44e6-82ed-f515429aeff1.png",
-   "job": "c5479f4f-36a5-44e6-82ed-f515429aeff1",
-   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "at": 1790890992104,
-   "refs": [
-    {
-     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
-     "kind": "style",
-     "ref": "stryde-71-stairs-pixar-song__P-05c"
-    }
-   ],
-   "note": "first pair · what I see: S2 X-ray: two knees in profile, blue-white bone, the joint gap gone, a red-orange glow where bone meets bone · B has a stray small panel in its top-right corner"
-  }
- ],
- "imagePair": [
-  1,
-  2
- ],
- "imageStatus": "review",
- "imageAsset": "b8bb8a0c2acf3cc5ff8c22377766558e",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_0e92e7e6-29cb-450f-b213-81660681158d.png",
- "imageJob": "0e92e7e6-29cb-450f-b213-81660681158d",
+ "framing": "ANAT-A: S2 X-ray of both knees front-on, the worn joint surfaces touching, glowing red where bone meets bone",
+ "imageAsset": "19aafe282b02b08e26ad279adbae6414",
+ "imageAt": 1790891943025,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageRes": "1536×2752",
- "imageAt": 1790890992104,
- "imagePrompt": "For the line \"Both her knees was bone on bone too.\": An X-ray frame in the film's world: a glowing radiograph of an older woman's two knees in profile, facing frame left, one just behind the other, bright blue-white bone on a deep navy-black field, soft tissue a faint grey; in each knee the gap between thigh bone and shin bone is gone, the bones touching, and where bone meets bone a warm red-orange glow. Image 1 is the style — the same render, materials, light and proportions; a stylized storybook X-ray.\nClose-up, sharp on the two joints, the near knee about a third of the frame wide, the two knees level with each other.\nIn frame: two knees — the thigh-bone ends, the shin-bone tops, the kneecaps faint; every other area plain dark.\nA final frame from a 3D animated feature film, stylized storybook render. Film plain — no lettering, logos, labels or measurement marks.",
+ "imageJob": "f7432585-0c05-4e4a-b421-69fbbe358810",
  "imageMatch": null,
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  3,
+  4
+ ],
+ "imagePrompt": "For the line \"Both her knees was bone on bone too.\": An X-ray frame in the film's world: a glowing radiograph of an older woman's two knees side by side, front-on, facing the lens, bright blue-white bone on a deep navy-black field, soft tissue a faint grey; in each knee the gap between thigh bone and shin bone is gone on both sides of the joint, the bones touching, and where bone meets bone a warm red-orange glow. Image 1 is the style — the same render, materials, light and proportions; a stylized storybook X-ray.\nClose-up, sharp on the two joints, the knees level with each other, each knee about a third of the frame wide.\nIn frame: two knees — the thigh-bone ends, the shin-bone tops, the kneecaps faint over the joints; every other area plain dark.\nA final frame from a 3D animated feature film, stylized storybook render. Film plain — no lettering, logos, labels or measurement marks.",
  "imageRefs": [
   {
-   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
    "kind": "style",
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
    "ref": "stryde-71-stairs-pixar-song__P-05c"
   }
  ],
+ "imageRes": "1536×2752",
+ "imageStatus": "review",
  "imageTaste": [
   "HT03",
   "HT04",
@@ -109,8 +46,123 @@
   "HT25",
   "FP13",
   "FP14",
-  "FP17"
+  "FP17",
+  "HT26"
  ],
- "anatStyle": "S2",
- "anatWhy": "\"bone on bone\" is a wear line — S2 X-ray (§12A-1)"
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_f7432585-0c05-4e4a-b421-69fbbe358810.png",
+ "imageVersions": [
+  {
+   "asset": "b8bb8a0c2acf3cc5ff8c22377766558e",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "0e92e7e6-29cb-450f-b213-81660681158d",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: S2 X-ray: two knees in profile, blue-white bone, the joint gap gone, a red-orange glow where bone meets bone · B has a stray small panel in its top-right corner · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_0e92e7e6-29cb-450f-b213-81660681158d.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "6d345f99e30d0c184cc83331d29ae476",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "asset": "438c6916c58d1b96d736a27d912b979c",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "c5479f4f-36a5-44e6-82ed-f515429aeff1",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: S2 X-ray: two knees in profile, blue-white bone, the joint gap gone, a red-orange glow where bone meets bone · B has a stray small panel in its top-right corner · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_c5479f4f-36a5-44e6-82ed-f515429aeff1.png",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "a9bacf4bbbf2ce8049ed3bafb6906fc0",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "19aafe282b02b08e26ad279adbae6414",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_f7432585-0c05-4e4a-b421-69fbbe358810.png",
+   "job": "f7432585-0c05-4e4a-b421-69fbbe358810",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7134234,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: S2 X-ray of both knees front-on, blue-white bone on a dark field, the joint gap closed with a red-orange glow — A paler with the leg outline, B darker field and a brighter glow"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "0d33d453af7a9f46e01b93192bb6e4df",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_3398f2c7-07d9-4166-bc1b-2424a8b2aad7.png",
+   "job": "3398f2c7-07d9-4166-bc1b-2424a8b2aad7",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6056565,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: S2 X-ray of both knees front-on, blue-white bone on a dark field, the joint gap closed with a red-orange glow — A paler with the leg outline, B darker field and a brighter glow"
+  }
+ ],
+ "key": "bone",
+ "layout": "full",
+ "ledger": "",
+ "light": "anatomical register (§12A), neutral studio light · key L · — · mechanism · 5600K",
+ "line": "Both her knees was bone on bone too.",
+ "location": "—",
+ "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "motionPlan": "From this frame: the red pulses once — one pulse, about a second; camera R4 — slow single-axis push on a stabilised virtual rig",
+ "music": "MUS-TURN",
+ "onScreen": 2.44,
+ "pinEnd": "no",
+ "product": "absent · —",
+ "section": "The turn — MUS-TURN",
+ "songIn": 54.35,
+ "songOut": 56.79,
+ "stage": "broll",
+ "staging": "none",
+ "status": "ready",
+ "storyDay": "—",
+ "title": "mechanism — the worn joint",
+ "updatedAt": 1790891943025,
+ "imageParts": []
 }
