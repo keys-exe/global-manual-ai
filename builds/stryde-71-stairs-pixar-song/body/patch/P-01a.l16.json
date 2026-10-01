@@ -1,8 +1,9 @@
 {
  "imageVersions": [
   {
+   "archiveAsset": "162bcb731ef282ae1b00c5fd1add634b",
    "archived": true,
-   "asset": "162bcb731ef282ae1b00c5fd1add634b",
+   "asset": null,
    "at": 1790873674660,
    "connector": "Higgsfield",
    "credits": 2.14,
@@ -17,8 +18,9 @@
    "v": 1
   },
   {
+   "archiveAsset": "94963077fca64bdf53703cfc56487302",
    "archived": true,
-   "asset": "94963077fca64bdf53703cfc56487302",
+   "asset": null,
    "at": 1790873674660,
    "connector": "Higgsfield",
    "credits": 2.14,
@@ -35,7 +37,7 @@
   {
    "archiveAsset": "28ecb9052da3f07c0a75455de24c8e86",
    "archived": true,
-   "asset": "28ecb9052da3f07c0a75455de24c8e86",
+   "asset": "cb26db644dffde6e7fe6b41eed0e8fd8",
    "at": 1790876674688,
    "connector": "Higgsfield",
    "credits": 2.14,
@@ -52,7 +54,7 @@
   {
    "archiveAsset": "4868c40ee69aa99e13da0e2edf40349d",
    "archived": true,
-   "asset": "4868c40ee69aa99e13da0e2edf40349d",
+   "asset": "aef520f5ee04e55265e022ca52b45ce0",
    "at": 1790876674688,
    "connector": "Higgsfield",
    "credits": 2.14,
@@ -67,7 +69,41 @@
    "v": 4
   },
   {
-   "asset": "f1df7f1708adbf0927ab0dcef2214de3",
+   "archiveAsset": "f45252741e49aa00582f8d32d6ab75a7",
+   "archived": true,
+   "asset": "d6d698f54f70a1cc0a5a28018589818c",
+   "at": 1790877909563,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "b40ecc90-fd6c-43d4-aa77-cac90ebda894",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"should be looking up the stairs and stepping backwardd\" → the lens moved to the foot of the stairs — her back to it, face up to the landing, one foot reaching back down (act map re-angled low · behind) · replaced by the next pair on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 5814804,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180142_b40ecc90-fd6c-43d4-aa77-cac90ebda894.png",
+   "v": 5
+  },
+  {
+   "archiveAsset": "15f1e565add70ed4e24d577b76063232",
+   "archived": true,
+   "asset": "3b578a0489e2edbb140870a68f57922d",
+   "at": 1790877909563,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "db0c4bf6-8fb9-40f2-8ce4-b3d01282903f",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"should be looking up the stairs and stepping backwardd\" → the lens moved to the foot of the stairs — her back to it, face up to the landing, one foot reaching back down (act map re-angled low · behind) · replaced by the next pair on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7335286,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180142_db0c4bf6-8fb9-40f2-8ce4-b3d01282903f.png",
+   "v": 6
+  },
+  {
+   "asset": "2dd4c0fb04df9415c9edacd4b43e1cea",
    "at": 1790879352102,
    "connector": "Higgsfield",
    "credits": 2.14,
@@ -84,7 +120,7 @@
    "archiveAsset": "f1df7f1708adbf0927ab0dcef2214de3"
   },
   {
-   "asset": "f8d17c37a0b3f16eefbbfa40c45bb66b",
+   "asset": "4cccf4d24eb1c0c38fce6be3a072f30e",
    "at": 1790879352102,
    "connector": "Higgsfield",
    "credits": 2.14,
@@ -103,7 +139,7 @@
   {
    "v": 9,
    "pair": "A",
-   "asset": "47ae6855780779c668a732735c6c7839",
+   "asset": null,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_185414_d0e04a75-56b4-4734-855e-8e281f8e3087.png",
    "job": "d0e04a75-56b4-4734-855e-8e281f8e3087",
@@ -113,14 +149,14 @@
    "size": 8329017,
    "res": "1536×2752",
    "at": 1790881140666,
-   "note": "the v5 pair (edit of the plate cropped to the landing and the top of the flight) still placed her at the newel — the crop kept the bottom of the flight in; kept here as a version, never shown as To check (agent error, L16)",
+   "note": "the v5 pair (edit of the plate cropped to the landing and the top of the flight) still placed her at the newel — the crop kept the bottom of the flight in; kept here as a version, never shown as To check (agent error, L14)",
    "archived": true,
    "archiveAsset": "47ae6855780779c668a732735c6c7839"
   },
   {
    "v": 10,
    "pair": "B",
-   "asset": "29424cd6376280a101104eae488852e3",
+   "asset": null,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_185415_b01d0caa-04e2-4829-8728-1c5f16695678.png",
    "job": "b01d0caa-04e2-4829-8728-1c5f16695678",
@@ -130,29 +166,41 @@
    "size": 7401529,
    "res": "1536×2752",
    "at": 1790881140666,
-   "note": "the v5 pair (edit of the plate cropped to the landing and the top of the flight) still placed her at the newel — the crop kept the bottom of the flight in; kept here as a version, never shown as To check (agent error, L16)",
+   "note": "the v5 pair (edit of the plate cropped to the landing and the top of the flight) still placed her at the newel — the crop kept the bottom of the flight in; kept here as a version, never shown as To check (agent error, L14)",
    "archived": true,
    "archiveAsset": "29424cd6376280a101104eae488852e3"
+  },
+  {
+   "v": 11,
+   "pair": "A",
+   "asset": "c1b5d0447248aeda89143fcf125bb1fb",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_185749_aaffd0fa-e14c-4c86-ad0c-b7e7d5a26b91.png",
+   "job": "aaffd0fa-e14c-4c86-ad0c-b7e7d5a26b91",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 5425880,
+   "res": "1536×2752",
+   "at": 1790881191787,
+   "note": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L16)"
+  },
+  {
+   "v": 12,
+   "pair": "B",
+   "asset": "1dfc8df04304a40cd25abf92c38d556b",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_185749_c5f6bfae-2afa-42de-bc4c-d7063c3c5646.png",
+   "job": "c5f6bfae-2afa-42de-bc4c-d7063c3c5646",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7403677,
+   "res": "1536×2752",
+   "at": 1790881191787,
+   "note": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L16)"
   }
  ],
- "imagePair": [
-  9,
-  10
- ],
- "imageAsset": "29424cd6376280a101104eae488852e3",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_185415_b01d0caa-04e2-4829-8728-1c5f16695678.png",
- "imageJob": "b01d0caa-04e2-4829-8728-1c5f16695678",
- "imageAt": 1790881140666,
- "imagePrompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": Keep this photo exactly as it is — the top of the staircase, the landing, the oak rail, the photo wall, the light — a tall 9:16 crop on the landing and the top steps, and add the woman. Image 1 is the top of the staircase and the landing. Image 2 is the woman.\nMedium shot from below, sharp on her. The same woman as Image 2, seventy-one, starting from the top: standing on the top step at the head of the stairs, going down backwards — her back to the lens, face turned up to the landing, eyes on its floor, both hands gripping the oak rail, her right foot reaching back and down to the step below; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman from behind on the top step of Image 1, the landing above her, a few steps below her, the rail, the photo wall; every other surface bare. Two hands on the rail, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Clothing and frames plain — no lettering, logos or labels; no second person.",
- "imageFault": "replaced on the user's Fix (starting from the top); v9/v10 never shown (agent error, L16)",
- "title": "problem (HT02; user Fix 2026-10-01: looking up the stairs, stepping backward — so the lens goes to the foot of the flight, edit of P0)",
- "shot": "low · behind · clean · MEDIUM",
- "framing": "MEDIUM from the hall, the lens low looking up the flight at its top: N high on the flight, two steps down from the landing (user Fix 2026-10-01: at the top or the middle, never at the bottom), her back to the lens, face turned up toward the landing, both hands gripping the oak rail, one slippered foot reaching back and down to the step below",
- "status": "regenerate",
- "imageStatus": "regenerate",
- "updatedAt": 1790881140666,
- "flow": [
-  "image"
- ]
+ "imageFault": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L16)",
+ "updatedAt": 1790882400000
 }

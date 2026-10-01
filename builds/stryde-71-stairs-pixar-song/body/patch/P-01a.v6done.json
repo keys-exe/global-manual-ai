@@ -183,7 +183,7 @@
    "size": 5425880,
    "res": "1536×2752",
    "at": 1790881191787,
-   "note": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L14)"
+   "note": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L16)"
   },
   {
    "v": 12,
@@ -198,7 +198,7 @@
    "size": 7403677,
    "res": "1536×2752",
    "at": 1790881191787,
-   "note": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L14)"
+   "note": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L16)"
   }
  ],
  "imagePair": [
@@ -222,7 +222,7 @@
   "__delete__": true
  },
  "imagePrompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": Keep this photo exactly as it is — the hall floor, the whole flight, the oak rail and newel, the photo wall, the light — and only stand the woman up. Image 1 is the picture; nothing in it moves but her.\nMedium shot from the hall floor looking up the whole flight, sharp on her. The woman of Image 1, seventy-one, now standing on the top step where she sat, turned away from the lens to face the landing, going down backwards: her back to us, the back of her grey head, both hands gripping the oak rail, her right foot reaching back and down to the step below; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman from behind at the top of the flight of Image 1, every step between her and the lens, the rail, the newel, the photo wall; every other surface bare. Two hands on the rail, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Clothing and frames plain — no lettering, logos or labels; no second person.",
- "imageFault": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L14)",
+ "imageFault": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L16)",
  "imageNote": {
   "__delete__": true
  },
