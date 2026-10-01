@@ -27,3 +27,17 @@ if __name__ == "__main__":
          "pair": ["gpt_image_2_5", "gpt_image_2_5"], "motion_plan": MOTION, "ref_urls": [r["url"] for r in REFS],
          "fix_note": "MAKE HE WALKING ON THE GOLF CORSE → new frame: walking the sunny fairway, bag on shoulder, side-on low angle, strapped right knee nearest the lens"}
     (HERE / "clips" / "D-HKb.img2.call.json").write_text(json.dumps(c, indent=1)); print(len(PROMPT))
+
+# Round 2 (board, 2026-10-01): A picked (v2) → walking = travel, pinned → end-frame A/B pair as an edit of the pick (§6A rule 3).
+END_CHANGE = ("Change only where he is: he has taken three more steps along the fairway, his left leg now forward, the same bag on his right shoulder, "
+              "the strap still seated below his right kneecap, the camera and the fairway behind him unchanged.")
+def write_end():
+    start = SP + "D-HKb.v2.A.png"
+    p = (f'For the line "{LINE}": Keep this photo exactly as it is — the place, the camera, the light, the clothes, the strap and everything in it. '
+         f'Image 1 is the photo. {END_CHANGE} Right hand stays on the bag strap, left arm swinging; looking ahead, smiling, mouth closed. '
+         f'An ordinary iPhone photo, nothing restyled. Clothing and bag plain — no lettering or logos but the strap\'s own wordmark; no second strap.')
+    (HERE / "prompts" / "D-HKb-END.v74.txt").write_text(p)
+    c = {"beat": "D-HKb-END", "kind": "image", "mode": 1, "prompt": p, "script_line": LINE, "face": True, "room": True, "product": False,
+         "body": True, "refs": [{"label": "D-HKb start (picked A, v2)", "kind": "frame"}], "match": "frame", "edit_of": start,
+         "taste": ["FP01", "FP03", "FP11", "HT01", "HT13"], "anatomy": False, "pair": ["gpt_image_2_5", "gpt_image_2_5"], "ref_urls": [start]}
+    (HERE / "clips" / "D-HKb-END.img.call.json").write_text(json.dumps(c, indent=1)); print("END", len(p))
