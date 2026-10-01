@@ -75,7 +75,7 @@ SIG = {
     "PLAYING": "PLAYING:",
     "LISTEN-LINE": "The reaction arrives a beat after the words that cause it",
     "BUSINESS-LINE": "the hands never stop to gesture",
-    "AUD-FILM": "clean production sound from a boom microphone",
+    "AUD-FILM": "clean, close production dialogue sound",
     "AUD-ANIM": "clean studio voice performance recorded for animation",
     "NEG-SCENECUT": "no light direction changing within the scene",
     "NEG-DRAMA": "no theatrical acting",
@@ -85,6 +85,7 @@ SIG = {
     "NEG-SOUND": "no music, no score, no sound effects",
     "SERIES-LOOK": "The look of a high-end live-action drama series",
 }
+MIC_WORDS = re.compile(r"\b(?:boom|windshield|dead[- ]cat|(?<!phone-)(?<!phone )microphones?|mics?)\b", re.I)
 RIGS = {  # rig signature → F-rig (F6–F10: the Seedance move library, §24N)
     "F1": "steady push toward the subject", "F2": "Camera on a tripod", "F3": "Camera on an operator's shoulder",
     "F4": "Camera on a slider", "F5": "Camera on a stabiliser",
@@ -383,6 +384,10 @@ def run(c):
     ph = PLACEHOLDER.findall(p)
     check("no unfilled [SLOTS]", not ph, ", ".join(sorted(set(ph)))[:300])
     check("no banned word 'cinematic'", not BANNED.search(p))
+    if film:  # V7.83.1, LESSONS L13: the video model draws what the prompt names — a boom named "out of frame" lands in frame
+        _pos = p.split("NEGATIVES:")[0]
+        _mic = MIC_WORDS.findall(_pos)
+        check("MIC_PRIME — no microphone, boom or windshield named outside the negatives", not _mic, ",".join(sorted(set(m if isinstance(m, str) else m[0] for m in _mic))))
     check("no streamer, series or studio name (§24N, §10A)", not STREAMERS.search(p), ",".join(sorted(set(m.group(0) for m in STREAMERS.finditer(p)))))
 
     # 4a. §24I part 7 — a neutral film voice master: its own recipe, not a film shot

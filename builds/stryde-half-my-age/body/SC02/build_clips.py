@@ -22,6 +22,11 @@ from hka_calls import (SERIES, LOOK, INHERIT, F2, PHYS, AUD, SILENT, NEG_EQUIP, 
                        NEG_SCENECUT, NEG_DRAMA, NEG_SOUND, NEG_STAIRS, VOICE_N, HER_ID,
                        manifest, SHEET, VOICE, PLACE, state, negs)
 
+# V7.83.1 (LESSONS L13): the audio line no longer names a boom microphone — the model drew it into SH05 v3
+AUD = AUD.replace("Audio is clean production sound from a boom microphone just out of frame above the speaker: close, clear and even,",
+                  "Audio is clean, close production dialogue sound: clear and even,").replace(
+          "The microphone and all sound equipment stay completely outside the picture: nothing hangs into the top of the frame. ", "")
+assert "boom" not in AUD
 HUS_ID = "a solid, slightly stooped man of seventy-four with short thinning grey hair"
 VOICE_C3 = ("An English man of seventy-four from the north of England, a gruff, soft, low voice with a slight roughness, few words, plain northern vowels. "
             "He says kind things a little too quickly and lets them drop.")
@@ -154,13 +159,14 @@ SHOTS.append(dict(beat="SC02-SH04", kind="broll", duration=4, line="", vo="L019"
            {"risk": "she steps up instead of down", "prevented_by": "the foot reaching down behind her, stepping-up negative"},
            {"risk": "she lets go of the banister", "prevented_by": "both hands on the rail, negative"}, {"risk": "the gown changes", "prevented_by": "outfit card"}]))
 
-SHOTS.append(dict(beat="SC02-SH05", kind="dialogue", duration=4, line=L020, subject_motion="still", files=["C3", "L-KITCHEN"], audios=["C3"], gen=3, go=GO_KITCHEN,
-    fix="User (chat): \"lets do this at the kitchen where he is wating for the main character\" → the tea moment moved from the landing to the kitchen: he has been waiting there with her tea and she comes in from the hall after the backwards descent (SH03/SH04). Third generation of this shot at the user's call",
+SHOTS.append(dict(beat="SC02-SH05", kind="dialogue", duration=4, line=L020, subject_motion="still", files=["C3", "L-KITCHEN"], audios=["C3"], gen=4, go=GO_KITCHEN + " / remove the mic at the top (board Fix) / fix those (chat go)",
+    fix="User Fix (board, v3): \"remove the mic at the top\" → fault in the frame: the model hung a furry boom microphone over his head (a dialogue shot, nothing written for the top of frame); the plate is clean. Now the top of the frame is written — only the plain white ceiling and the cream enamel pendant on its flex — with the boom and windshield named in the negatives. Earlier — User (chat): \"lets do this at the kitchen where he is wating for the main character\" → the tea moment moved from the landing to the kitchen: he has been waiting there with her tea and she comes in from the hall after the backwards descent (SH03/SH04). Third generation of this shot at the user's call",
     prompt=" ".join([
         manifest([("@image1", SHEET("the husband", HUS_OUT)), ("@image2", KITCHEN), ("@audio1", VOICE("the husband"))]),
         SERIES, LOOK, INHERIT, KITCHEN_SC,
         f"THE SHOT: a medium close-up at his eye level, three-quarter on, from the kitchen doorway where she has just come in: the husband, {HUS_ID}, in {HUS_OUT}, stands by the scrubbed pine table, "
-        "the sage-green cupboards and the window over the sink soft behind him, exactly the kitchen of the place reference.",
+        "the sage-green cupboards and the window over the sink soft behind him, exactly the kitchen of the place reference. "
+        "The top of the frame holds only the plain white ceiling and the cream enamel pendant lamp on its flex, exactly as in the place reference; nothing else hangs or reaches into the top of the frame.",
         "He has been waiting for her; he holds a plain white mug of tea out toward her at chest height in his right hand, his left hand resting on the back of a ladder-back chair; he glances at her, then a little away, not quite looking at her, and says: \"" + L020 + "\" His feet stay where they are.",
         F2, PHYS,
         "While the line is spoken, the husband keeps doing one thing with their hands: his right hand holding the mug out still at chest height, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
@@ -171,8 +177,8 @@ SHOTS.append(dict(beat="SC02-SH05", kind="dialogue", duration=4, line=L020, subj
                  "gruff and soft, an ordinary morning voice, matching the face in this shot.",
                  "he heard every step and it frightens him, which leaks only through his eyes not staying on her."),
         AUD,
-        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no logo or writing on the mug, no stairs, no hall, no walking, no sitting down", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    risks=[{"risk": "the room drifts from the kitchen plate", "prevented_by": "the kitchen plate as Image2, named anchors (table, cupboards, sink window) (HT17)"},
+        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no boom microphone above his head, no furry windshield, no fluffy grey object hanging at the top of the frame, nothing hanging from the ceiling except the pendant lamp, no logo or writing on the mug, no stairs, no hall, no walking, no sitting down", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    risks=[{"risk": "a boom mic hangs into the top of the frame", "prevented_by": "the top of frame written (ceiling and pendant only), boom and windshield negatives"}, {"risk": "the room drifts from the kitchen plate", "prevented_by": "the kitchen plate as Image2, named anchors (table, cupboards, sink window) (HT17)"},
            {"risk": "he stares straight at her", "prevented_by": "the glance and away written (the act map's 'not quite looking')"},
            {"risk": "voice drifts", "prevented_by": "his voice master as Audio1"},
            {"risk": "a logo on the mug", "prevented_by": "a plain white mug, negative (HT18)"}]))

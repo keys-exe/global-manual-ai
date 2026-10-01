@@ -90,3 +90,8 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
 - User: "lets do this at the kitchen where he is wating for the main character" → the tea moment is now in the kitchen (L-KITCHEN plate): he has waited there with her tea; she comes in from the hall after the backwards descent (SH03/SH04). New KITCHEN_SC scene block; act map updated. Third generation of each shot, at the user's call.
 - Seedance 2.5 on Kie: SH05 v3, SH06 v3 (252 cr each). Transcripts: "Sleep all right?" / "Fine, love." Landing versions (v2) moved to Old. Both To check.
 - Agent's look (not a verdict): the kitchen light reads as warm sunny daylight (the plate's afternoon light) rather than the cold grey morning of SH03/SH04.
+
+## 2026-10-01 — Fix round: SC02-SH03 v5, SC02-SH05 v4 (go: "fix those")
+- SH03 (board Fix: "she should not be going down so fast and she should be looking down to know where she is stepping backwards") → one step in the whole clip, she looks down over her shoulder at the step behind her. Agent's look: slow, one step, looking down; by the end only her right hand is on the banister.
+- SH05 (board Fix: "remove the mic at the top") → the top of the frame is written (ceiling and pendant only), boom negatives. The cause was the AUD string naming "a boom microphone just out of frame above the speaker" → system fix V7.83.1 (`AUD-FILM` reworded, `preflight.py` MIC_PRIME, LESSONS L13); this build's SC02 builder uses the new audio line. Agent's look: no mic in frame; "Sleep all right?".
+- 378 + 252 cr on Kie. Replaced versions on Old. Both To check.
