@@ -180,8 +180,12 @@ FILES = {"C2": "cast/C2-DAUGHTER_v1.png", "N": "cast/N-HER_v1.png", "L-LIVING": 
          "PROP-JIGSAW": "hooks/HKE/PROP-JIGSAW_v1.png"}
 AUDIO = {"C2": "voice/C2_voice_master.mp3", "N": "voice/N_voice_master.mp3"}
 
+CONFIRMED = {"HKE-SH04"}  # confirmed by the user at v2 on the board: kept as rendered, never rewritten by a later round
+
 if __name__ == "__main__":
     for s in SHOTS:
+        if s["beat"] in CONFIRMED:
+            continue
         call = {"beat": s["beat"], "connector": "seedance", "mode": 4, "kind": s["kind"], "prompt": s["prompt"],
                 "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16", "start_image": None,
                 "ingredients_approved": True, "files": [FILES[f] for f in s["files"]],
