@@ -1,6 +1,6 @@
 {
  "act": "Hook 1",
- "angle": "eye · three-quarter · through · CU — through the heap in the foreground = what she is left with between her and us",
+ "angle": "high · ots · clean · MEDIUM — high over her shoulder = looking at the heap with her; her face kept from us",
  "bars": 0,
  "beat": "P-05c",
  "body": 1,
@@ -13,35 +13,29 @@
   "video"
  ],
  "focus": "eyes · shallow",
- "framing": "CU across the table at her eye level: N sat back in the chair, shoulders down, eyes on nothing past the lens, the heap soft in the foreground at the table's far edge",
- "imageAsset": "1248995b7a7627d8725e2a48adbc4c6f",
- "imageAt": 1790879352102,
+ "framing": "MEDIUM from behind her shoulder, high: N at the table with her head bowed, both hands slack in her lap, the heap of braces, sleeves and pill bottles on the table in front of her, the window beyond (user Fix 2026-10-01: a different one)",
+ "imageAsset": "9bbcd385146792a55c13dff4d825d60a",
+ "imageAt": 1790883125026,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "I NEED A DIFFERENT ONES HERE",
- "imageJob": "58243361-f630-4185-97d1-fec7bd89b76c",
+ "imageFault": "WRONG PERSON ALSO SHOULD USE DIFFERENT TYPE OF BROLL",
+ "imageJob": "35250036-f365-4846-94ec-f1c0d86ba537",
  "imageMatch": "plate",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [
-  1,
-  2
+  3,
+  4
  ],
- "imagePrompt": "For the line \"Nothing gave me my life back.\": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chair, the cabinets, the light — in close across the table, a tall 9:16 crop, and add the woman. Image 1 is the kitchen. Image 2 is the woman.\nClose-up from across the table at her eye level, the heap of braces, sleeves and pill bottles soft in the near foreground at the table's far edge, sharp on her face. The same woman as Image 2, seventy-one, sat back in the chair, shoulders down, eyes on nothing past the lens, mouth closed; faded blue floral knee-length house dress, grey cardigan, pink terry slippers; both hands slack in her lap, out of frame below the table edge. Nobody else.\nIn the frame: her face and shoulders, the chair back, the heap soft in front, the cabinets of Image 1 behind; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink, a catchlight in each eye. Clothing and bottles plain — no lettering, logos or labels; no second person.",
+ "imagePrompt": "For the line \"Nothing gave me my life back.\": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chair, the window, the light — seen from behind the near chair, a tall 9:16 crop, and add the woman. Image 1 is the kitchen.\nMedium shot from behind her right shoulder, the lens high looking down over her at the table, sharp on the table. An older Black woman with short grey hair, seen only from behind, sitting at the table, head bowed, shoulders down, both hands slack in her lap; on the table before her a folded black hinged knee brace, two grey knee sleeves, three plain pill bottles, a white gel tube and a blue ice pack in a heap; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the back of her head and shoulders in the near foreground, the heap on the table, the chair back, the window of Image 1; every other surface bare. Two hands placed in her lap.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Clothing and bottles plain — no lettering, logos or labels; no second person.",
  "imageRefs": [
   {
    "kind": "location",
    "label": "P2-KITCHEN plate v2 (confirmed)",
    "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
    "role": "Image 1 · edited (§6A rule 3, HT17)"
-  },
-  {
-   "kind": "character",
-   "label": "N-NARR sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__N-NARR",
-   "role": "Image 2"
   }
  ],
- "imageRegens": 1,
+ "imageRegens": 2,
  "imageRes": "1536×2752",
  "imageStatus": "regenerate",
  "imageTaste": [
@@ -57,16 +51,18 @@
   "HT22"
  ],
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182542_58243361-f630-4185-97d1-fec7bd89b76c.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_35250036-f365-4846-94ec-f1c0d86ba537.png",
  "imageVersions": [
   {
+   "archiveAsset": "338908cdab95f2369f40d8dc93efd194",
+   "archived": true,
    "asset": "1248995b7a7627d8725e2a48adbc4c6f",
    "at": 1790879352102,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "58243361-f630-4185-97d1-fec7bd89b76c",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front",
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front · replaced on the user's Fix; copied to Old versions",
    "pair": "A",
    "res": "1536×2752",
    "size": 7158995,
@@ -75,19 +71,51 @@
    "v": 1
   },
   {
+   "archiveAsset": "3aab874af807455bbf2ebc29a96d12ca",
+   "archived": true,
    "asset": "0d2406fbeaa7d8d11fada17a750f6134",
    "at": 1790879352102,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "1f776e47-cd64-4151-97ed-df6d215a7875",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front",
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front · replaced on the user's Fix; copied to Old versions",
    "pair": "B",
    "res": "1536×2752",
    "size": 7054645,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182544_1f776e47-cd64-4151-97ed-df6d215a7875.png",
    "v": 2
+  },
+  {
+   "asset": "9bbcd385146792a55c13dff4d825d60a",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "35250036-f365-4846-94ec-f1c0d86ba537",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I NEED A DIFFERENT ONES HERE\" → a different picture: from behind her shoulder, high, her head bowed over the heap on the table",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 8170271,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_35250036-f365-4846-94ec-f1c0d86ba537.png",
+   "v": 3
+  },
+  {
+   "asset": "ccda2b89229e0b6416adbe3a761b626c",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "37be9669-e4cd-4806-b91f-61d4e05e0fa1",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I NEED A DIFFERENT ONES HERE\" → a different picture: from behind her shoulder, high, her head bowed over the heap on the table",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6426503,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_37be9669-e4cd-4806-b91f-61d4e05e0fa1.png",
+   "v": 4
   }
  ],
  "key": "life",
@@ -97,10 +125,10 @@
   18
  ],
  "location": "L-N-KITCHEN",
- "motionPlan": "From this frame: her eyes drop to the table, one slow blink — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
- "shot": "eye · three-quarter · through · CU",
+ "motionPlan": "From this frame: her head sinks a little lower — one slow drop, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "shot": "high · ots · clean · MEDIUM",
  "stage": "broll",
  "status": "regenerate",
  "title": "low — her face, sat back (user 2026-10-01: three B-rolls)",
- "updatedAt": 1790881308161
+ "updatedAt": 1790883371715
 }
