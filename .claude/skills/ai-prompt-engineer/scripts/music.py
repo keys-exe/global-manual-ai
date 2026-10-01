@@ -18,6 +18,12 @@ CUE.json — the scene's music cue, from its sound plan:
                 {"name": "After",           "start": 13.0, "end": 24.6, "energy": "mid",
                  "styles": ["cello enters", "warm theme"]}]}
   Section edges sit on the scene's cut cues or its turn (§24M). The last section runs 2s past the scene.
+  "sung": true + "lines" per section — a sung music video (§3C, only on the user's call): the lyrics are the
+  script's lines verbatim; vocals allowed, VOCALS not checked. "bpm": 88 pins the tempo (and the cut grid).
+cuts:    music.py cuts CUE TRACK --rows rows.json — §3C/§30H for a music video: the beat grid, then every row's
+         cut on a bar line, its time on screen, its call length (E6); FLASH under 2.0s, a row over 15s, a hole.
+render:  music.py render CUE TRACK --rows rows.json --out rough.mp4 — the rough cut: each clip from its 0.4s
+         in-point for its time on screen, 9:16, joined frame-exact, the track whole under it.
   "register": "MUS-OPEN" (or --register): the §40A register of the script part — MUS-OPEN, MUS-EXPOSE,
   MUS-EDU, MUS-TURN, MUS-AFTER, MUS-OFFER — pre-fills the theme and tempo, adds the NEG-MUSIC negatives,
   and refuses a tense register (OPEN / EXPOSE / EDU) whose theme asks for cute, cheerful or upbeat music.
@@ -82,7 +88,11 @@ ORDER = {"silent": 0, "low": 1, "mid": 2, "high": 3}
 TEMPO = {"slow": (40, 90), "moderate": (85, 120), "fast": (115, 200)}
 
 
+VOCAL_NEG = {"vocals", "lyrics", "singing", "humming"}
+
+
 def build_plan(cue):
+    sung = bool(cue.get("sung"))      # §3C: a sung music video, only on the user's call — lyrics = the script's lines verbatim
     secs = []
     for i, s in enumerate(cue["sections"]):
         end = s["end"] + (2.0 if i == len(cue["sections"]) - 1 else 0.0)
@@ -90,9 +100,12 @@ def build_plan(cue):
                      "positive_local_styles": s.get("styles", []) or ["continue the theme"],
                      "negative_local_styles": s.get("avoid", []),
                      "duration_ms": int(round((end - s["start"]) * 1000)),
-                     "lines": []})
-    return {"positive_global_styles": list(dict.fromkeys(cue["theme"] + ["instrumental", f"{cue.get('tempo', 'slow')} tempo"])),
-            "negative_global_styles": list(dict.fromkeys(cue.get("avoid", []) + ["vocals", "lyrics", "singing"])),
+                     "lines": list(s.get("lines", [])) if sung else []})
+    tempo = f"{cue['bpm']} BPM" if cue.get("bpm") else f"{cue.get('tempo', 'slow')} tempo"
+    pos = cue["theme"] + ([] if sung else ["instrumental"]) + [tempo]
+    neg = [x for x in cue.get("avoid", []) if not (sung and x in VOCAL_NEG)] + ([] if sung else ["vocals", "lyrics", "singing"])
+    return {"positive_global_styles": list(dict.fromkeys(pos)),
+            "negative_global_styles": list(dict.fromkeys(neg)),
             "sections": secs}
 
 
@@ -187,7 +200,7 @@ def check(cue, path):
     if bpm and band and not (band[0] <= bpm <= band[1]) and not (band[0] <= bpm / 2 <= band[1]) and not (band[0] <= bpm * 2 <= band[1]):
         fails.append({"check": "TEMPO", "detail": f"~{bpm} BPM outside {cue.get('tempo')} ({band[0]}–{band[1]})"})
     v = vocals(path)
-    if v.get("checked") and v["confident_words"] >= 4:
+    if not cue.get("sung") and v.get("checked") and v["confident_words"] >= 4:
         fails.append({"check": "VOCALS", "detail": f"{v['confident_words']} confident words: {v['text']!r}"})
     for x in secs:
         x.pop("wins")
@@ -196,16 +209,140 @@ def check(cue, path):
     return res
 
 
+def grid(y, bpm=None):
+    """Beat and bar times of a track: the tempo (detected, or the cue's bpm), the beat phase that best fits the
+    onsets, and the bar phase (4/4) whose downbeats carry the most energy. Unverified on generated tracks."""
+    hop = 512
+    fps = SR / hop
+    frames = len(y) // hop
+    env = np.array([np.sqrt(np.mean(y[i * hop:(i + 1) * hop] ** 2)) for i in range(frames)])
+    onset = np.maximum(0, np.diff(env, prepend=env[:1]))
+    bpm = float(bpm or tempo_bpm(y) or 90.0)
+    while bpm < 60:
+        bpm *= 2
+    while bpm > 160:
+        bpm /= 2
+    period = 60.0 / bpm
+    total = len(y) / SR
+    best, phase = -1.0, 0.0
+    for k in range(48):
+        ph = period * k / 48
+        idx = (np.arange(ph, total, period) * fps).astype(int)
+        idx = idx[idx < len(onset)]
+        sc = float(onset[idx].sum()) if len(idx) else 0.0
+        if sc > best:
+            best, phase = sc, ph
+    beats = [round(float(t), 3) for t in np.arange(phase, total, period)]
+    bar_best, bar0 = -1.0, 0
+    for k in range(4):
+        idx = (np.array(beats[k::4]) * fps).astype(int)
+        idx = idx[idx < len(env)]
+        sc = float(env[idx].sum()) if len(idx) else 0.0
+        if sc > bar_best:
+            bar_best, bar0 = sc, k
+    return {"bpm": round(bpm, 1), "beat_s": round(period, 3), "beats": beats, "bars": beats[bar0::4], "length_s": round(total, 2)}
+
+
+def snap(t, grid_times):
+    """The grid line at or before t (never after: a cut never lands late)."""
+    prev = [g for g in grid_times if g <= t + 1e-6]
+    return prev[-1] if prev else (grid_times[0] if grid_times else t)
+
+
+def cut_sheet(cue, rows, g, hold_bars=2, skip=0.4, handle=0.5):
+    """§3C/§30H on a music video. Rows run in order; each holds its bars (default 2) from its cut, cutting on bar
+    lines; the last row of a section ends exactly where the next section's music begins (its edge: the nearest bar
+    line within half a beat, else the section's own start — the composed change), and the last row ends with the
+    track. Fails: FLASH (under 2.0s), SPLIT (over one 15s clip), OVERFLOW (a section's rows need more time than
+    its music), HOLE (the picture stops before the track). Call length = time on screen + 0.4s + 0.5s, rounded
+    up, Kling 3-15s (E6)."""
+    import math
+    bars, half = g["bars"], g["beat_s"] / 2
+    secs = {s["name"]: s for s in cue["sections"]}
+
+    def edge(t):
+        near = min(bars, key=lambda b: abs(b - t)) if bars else t
+        return float(near) if abs(near - t) <= half else float(t)
+
+    out, fails, t = [], [], 0.0
+    for i, r in enumerate(rows):
+        start = float(t)
+        n = max(1, int(r.get("bars", hold_bars)))
+        later = [b for b in bars if b > start + half]
+        end = float(later[n - 1]) if len(later) >= n else g["length_s"]
+        nxt = rows[i + 1] if i + 1 < len(rows) else None
+        if nxt is None:
+            end = g["length_s"]
+        elif nxt.get("section") != r.get("section") and nxt.get("section") in secs:
+            e = edge(secs[nxt["section"]]["start"])
+            if e <= start + 1e-6:
+                fails.append(f"OVERFLOW: section '{r.get('section')}' needs more time than its music — fewer bars or fewer rows before {nxt['beat']}")
+            end = e
+        on = round(end - start, 3)
+        call = min(15, max(3, math.ceil(on + skip + handle - 1e-9)))
+        out.append({"beat": r["beat"], "section": r.get("section"), "text": r.get("text", ""), "cut_s": round(start, 3),
+                    "end_s": round(end, 3), "on_screen_s": on, "call_s": call})
+        if on < 2.0:
+            fails.append(f"FLASH: {r['beat']} on screen {on}s < 2.0s — give it more bars or merge the rows")
+        if on + skip + handle > 15:
+            fails.append(f"SPLIT: {r['beat']} needs {on}s, over one 15s clip — split the row")
+        t = end
+    if out and abs(out[-1]["end_s"] - g["length_s"]) > 0.05:
+        fails.append("HOLE: the picture stops before the track ends")
+    return {"grid": {k: g[k] for k in ("bpm", "beat_s", "length_s")}, "rows": out, "fails": fails,
+            "status": "PASS" if not fails else "FAIL"}
+
+
+def render(sheet, track, clips, out, w=1080, h=1920, fps=24, skip=0.4):
+    """Rough cut of a music video: each row's clip from its in-point for its time on screen, scaled to 9:16,
+    joined frame-exact, the track laid under it whole. No speed change, no slowed clip."""
+    import tempfile
+    tmp = Path(tempfile.mkdtemp())
+    parts = []
+    for i, r in enumerate(sheet["rows"]):
+        src = clips.get(r["beat"])
+        if not src:
+            sys.exit(f"no clip for {r['beat']}")
+        seg = tmp / f"{i:03d}.mp4"
+        subprocess.run([FF, "-v", "error", "-y", "-ss", str(skip), "-i", src, "-t", str(r["on_screen_s"]), "-an",
+                        "-vf", f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps={fps},setsar=1",
+                        "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "16", str(seg)], check=True)
+        parts.append(seg)
+    lst = tmp / "list.txt"
+    lst.write_text("".join(f"file '{p}'\n" for p in parts))
+    subprocess.run([FF, "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-i", str(track),
+                    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", str(out)], check=True)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("what", choices=["plan", "compose", "check"])
+    ap.add_argument("what", choices=["plan", "compose", "check", "cuts", "render"])
     ap.add_argument("cue")
     ap.add_argument("track", nargs="?")
+    ap.add_argument("--rows", help="cuts/render: JSON list of the act-map rows in order: {beat, section, bars?, text?, clip?}")
+    ap.add_argument("--hold-bars", type=int, default=2)
     ap.add_argument("--out")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--register", help="§40A register: " + ", ".join(REGISTERS))
     a = ap.parse_args()
     cue = apply_register(json.loads(Path(a.cue).read_text()), a.register or json.loads(Path(a.cue).read_text()).get("register"))
+    if a.what in ("cuts", "render"):
+        if not (a.track and a.rows):
+            sys.exit(f"{a.what} needs the track and --rows")
+        rows = json.loads(Path(a.rows).read_text())
+        sheet = cut_sheet(cue, rows, grid(load(a.track), cue.get("bpm")), a.hold_bars)
+        if a.what == "cuts":
+            print(json.dumps(sheet, indent=2))
+            sys.exit(0 if sheet["status"] == "PASS" else 2)
+        if sheet["status"] != "PASS":
+            print(json.dumps(sheet["fails"], indent=2))
+            sys.exit(2)
+        if not a.out:
+            sys.exit("--out is required")
+        render(sheet, a.track, {r["beat"]: r.get("clip") for r in rows}, a.out)
+        print(json.dumps({"status": "OK", "rough_cut": a.out, "rows": len(sheet["rows"])}, indent=2))
+        return
     if a.what == "plan":
         plan = build_plan(cue)
         out = a.out or str(Path(a.cue).with_suffix(".plan.json"))

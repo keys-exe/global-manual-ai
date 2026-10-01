@@ -1579,6 +1579,30 @@ B["B19-BR2b"] = (NBP, ["S1", "R1", "P5"], photo([
     "no looking at the camera, no white coat, no stethoscope, no readable text on the monitor, no certificates with text, no product "
     "anywhere, no knee strap, no third person, no extra fingers, no extra hands"))
 
+# ── 2026-10-01 "confirm, fix": B19-BR "give me different broll, make sure product package is right" — background-only edit of
+# package_open.jpg (the only way the straps stayed exact), now on her kitchen table beside a mug of tea, morning light.
+B["B19-BR"] = (NBP, ["PKG", "P4"], (
+    "Edit Image 1. Keep the STRYDE box EXACTLY as it is in Image 1, untouched — the matte-black box and tray, BOTH straps lying in the "
+    "tray exactly as they are (each matte-black shell with two rounded peaks and the notch between them, a chrome slide at each end, the "
+    "soft black band, the grey stryde wordmark on the shell), and the lid with the large grey stryde wordmark propped behind — the same "
+    "shapes, sizes, angle and proportions, nothing redrawn, nothing added to the box. Change ONLY the plain white background: the box now "
+    "sits on the pale-oak kitchen table with its linen runner from Image 2, a white mug of tea beside it, the sage-green units and the "
+    "window over the sink softly out of focus behind. Soft daylight from the window on the right, a soft real shadow under the box. An "
+    "ordinary phone photo taken from a little above.\n\nAVOID: no redrawn strap, no changed shell shape, no flat band, no wordmark on "
+    "the band, " + P.NEG_WORDMARK + ", no third strap, no person, no hands, no studio background, no readable text other than the wordmark"))
+
+# ── 2026-10-01 B19b video Fix "not holding the banister because the knee with stryde is okay but in the knee without stryde is in
+# pain her hand is on the wall" → the fault is in the frame (hand on the rail): edit of B19b v4 (Higgsfield 2bbd2157), hands only.
+REFS.update({"B19BV4": ("B19b v4 — the shot to edit (Image 1)", "2bbd2157-d85f-4fe6-a69f-093c5a92c056")})
+B["B19b"] = (NBP, ["B19BV4"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — her face, white hair, the navy-and-white striped T-shirt, the denim "
+    "skirt, her legs, the white plimsolls, the stairs, the light, the camera angle, and the black strap EXACTLY where it is on the knee on "
+    "the LEFT of the frame, the other knee BARE. Change ONLY her hands: she is NOT holding the banister — her hand on the left of the "
+    "frame hangs free by her side, well away from the honey oak handrail; her other hand, on the right of the frame, is pressed flat "
+    "against the pale duck-egg blue wall beside her, steadying herself, fingers spread. A real phone photo.\n\nAVOID: no hand on the "
+    "banister, no hand on the handrail, no strap moved, no strap on the bare knee, no second strap, no change to her face or clothes, no "
+    "extra hands, no extra fingers"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

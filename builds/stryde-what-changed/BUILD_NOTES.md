@@ -356,3 +356,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - B19-BR2b v3 "DIFFERENT BROLL HERE" → two-shot across the surgeon's desk, he points to the joint on the knee model, Maureen listens (Higgsfield NBP) — clean.
 - Learned: a person holding the box makes the model redraw the straps; keep product-photo edits background-only.
 - Act map rows B19-BR (props, package) and B19-BR2b (consult two-shot) updated; angles PASS; docs/actmap Plan v34, Current v34, Current 2 v20.
+
+### 2026-10-01 — "confirm, fix" / "confirm"
+- All on Higgsfield (Kie 1.8 cr, Kling 3 cr — see the build doc balances). package_open.jpg imported to Higgsfield as 3205de84-4b37-452d-be69-2c1f88b48392 (via a Kie file upload link).
+- B19-BR v6 "give me different broll, make sure product package is right" → background-only edit of package_open.jpg: the box and both straps exact, now on her kitchen table beside a mug of tea (Higgsfield NBP, 2 cr). The lid rests on the back edge rather than propped. Act map row moved to L-KITCHEN; angles PASS; docs/actmap Plan v35, Current v35, Current 2 v21. User then confirmed it → **B19-BR clip** (steam from the tea, the box still; Kling 3.0 pro).
+- B19-BR2b v1 clip (surgeon traces the joint on the knee model, Maureen nods) — clean. Kling 3.0 pro, 7 cr.
+- B19b and B19-BR2 videos had flipped to `ready` by an image re-Confirm — set back to `review` (videos unchanged).
+- **B19-BR clip v1** (steam from the tea, the box and straps still; the frame sits a touch wider than the image) — on the board as To check.
+- **B19b video Fix** "not holding the banister because the knee with stryde is okay but in the knee without stryde is in pain her hand is on the wall": §22X — the fault is in the frame (hand on the rail), so the frame is fixed first: B19b v5 = edit of v4 (Higgsfield NBP), no hand on the banister, the other hand flat on the wall, strap unchanged. v4 moved to Old 2. The video waits for the frame's Confirm; then video v2 = the strapped leg steps down easily, the bare-knee step makes her wince and lean on the wall (2nd generation, no go needed).
