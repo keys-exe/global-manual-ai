@@ -31,16 +31,17 @@ L022 = "If I’m being honest, some days I wasn’t going down them at all. I’
 GO = "i want new ones the all of theme are not good (scene 2)"
 GO4 = "use gpt image 2 and not sunburst re do all the scene 2"
 FRAMES = [
-    dict(beat="SC02-SH01", line=L017, refs=["P-HOUSE", "N"], face=True, body=True, match=None, role="key", gen=3,
-         motion="From this frame: she calls the line down the stairs, a small forced smile on 'love', then her eyes drop to the stairs below; her right hand stays on the newel post.",
+    dict(beat="SC02-SH01", line=L017, refs=["P-HOUSE", "N"], face=True, body=True, match=None, role="key", gen=4,
+         fix="she should be at the very top of the stairs",
+         motion="From this frame: she calls the line down the stairs, a small forced smile on 'love', then her eyes drop to the stairs below; her right hand stays on the newel post; she does not step down.",
          prompt=" ".join([
-             f"For the line \"{L017}\": at night she covers her fear with a light voice, stranded at the top of her stairs.",
-             "A medium close-up from three steps below her, looking slightly up, 85mm lens, shallow focus on her eyes.",
-             f"{HER}, in a heather-green jumper, stands on the landing behind the top newel post.",
-             "Her right hand grips the dark newel post in the foreground of the shot, knuckles tight; her left hand rests flat on her chest.",
-             "She is looking down past the camera toward the hall, calling, a small brave smile that does not reach her eyes.",
-             "Image 1 is this house: behind her, out of focus, the magnolia landing wall and its framed photographs.",
-             "Night: one warm 2800K landing lamp to her right lights half her face; the other half falls into deep shadow; the stairwell below is dark.",
+             f"For the line \"{L017}\": at night she covers her fear with a light voice, stranded at the very top of her stairs.",
+             "A low shot from halfway up the flight looking straight up the stairs, 85mm lens: the last five carpeted steps with brass stair rods rise toward her, soft in the near foreground, and she stands at the very top, on the landing's edge, both slippered feet on the landing at the top step.",
+             f"She is {HER}, in a heather-green jumper and charcoal skirt; top half of the frame, sharp.",
+             "Her right hand grips the top newel post, knuckles tight; her left hand rests flat on her chest.",
+             "She is looking down the stairs past the camera, calling, a small brave smile that does not reach her eyes.",
+             "Image 1 is this staircase and landing: the magnolia wall and framed photographs behind her, out of focus.",
+             "Night: one warm 2800K landing lamp to her right lights half her face; the other half in deep shadow; the steps below dark.",
              PLAIN, LOOK])),
     dict(beat="SC02-SH03", line=L019, refs=["L-STAIRS", "N"], face=True, body=True, match=None, role="key", gen=3,
          motion="From this frame: she lowers her weight down one step backwards, both hands sliding a little down the banister, and breathes out through her mouth; one step in the clip.",
@@ -73,7 +74,7 @@ if __name__ == "__main__":
                 "pair": ["gpt_image_2", "gpt_image_2"], "model": "gpt-image-2 image-to-image · 9:16 (Kie AI)",
                 "model_override": "user 2026-10-01: \"use gpt image 2 and not sunburst, re do all the scene 2\" — overrides the §18A Sunburst routing for this build's body frames",
                 "role": f["role"], "motion_plan": f["motion"], "scene": 2,
-                "taste": ["HT02", "HT04", "HT09", "HT18", "HT19", "HT22"], "generation": f.get("gen", 1), "fix_note": GO if f.get("gen", 1) > 1 else None}
+                "taste": ["HT02", "HT04", "HT09", "HT18", "HT19", "HT22"], "generation": f.get("gen", 1), "fix_note": f.get("fix") or (GO if f.get("gen", 1) > 1 else None)}
         (H / f"{f['beat']}.frame.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
         (H / f"{f['beat']}.frame.txt").write_text(f["prompt"])
         print(f["beat"], len(f["prompt"]), "chars")
