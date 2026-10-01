@@ -1,13 +1,13 @@
 {
- "model": "nano_banana_2",
+ "model": "nano_banana_pro",
  "refs": [
   [
-   "R1-MAUREEN sheet",
-   "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"
+   "B23b v2 \u2014 the shot to edit (Image 1)",
+   "423672f4-7f10-4c29-b2ea-9d26058a71f4"
   ],
   [
-   "P1-PROP-M plate",
-   "520de2e7-e577-4afe-b18c-b79dbed0acf0"
+   "worn_rear.jpg \u2014 the strap from behind (Image 2)",
+   "4263ad56-3ded-4bae-955a-7cc4148f3591"
   ]
  ]
 }
