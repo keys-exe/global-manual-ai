@@ -1,0 +1,38 @@
+{
+ "beat": "P-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"That big knee brace I bought slid right down my leg.\": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chairs, the floor, the light — in close at the near chair from the side, a tall 9:16 crop, and add the seated woman. Image 1 is the kitchen.\nMedium close-up from the side at knee height, sharp on the brace: an older Black woman sitting on the chair, her right leg out a little, a short black hinged knee brace — a hand's length above and below the knee, two wide straps, a small round hinge each side — slid down below the kneecap, sagging at her shin, her right hand hauling its top strap back up, her left hand flat on the chair seat; a faded blue floral house dress at mid-thigh, pink terry slippers flat on the floor; her head and shoulders out of frame above.\nIn frame: the seated woman from the shoulders down, two hands placed, the brace, two slippers, the chair and table edge of Image 1; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Brace and dress plain — no lettering, logos or labels; nobody else.",
+ "script_line": "That big knee brace I bought slid right down my leg.",
+ "face": false,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "cc6ec5031226aadf6d5a46725855adea",
+ "taste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW",
+ "product": false
+}

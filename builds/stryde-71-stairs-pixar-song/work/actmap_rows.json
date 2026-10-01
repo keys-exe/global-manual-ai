@@ -265,11 +265,11 @@
   "subject": "N feet",
   "location": "L-N-STAIRS",
   "story_day": "N-D1",
-  "framing": "CU from the side at step height: her feet backwards on the flight, toes pointing up the stairs, one slipper's heel lowering backwards onto the next step down, the other foot still on the step above (user Fix 2026-10-01: backwards also)",
+  "framing": "CU on her feet at the top of the flight, from below (an edit of the confirmed P-01a frame, user 2026-10-01: use the P01A as reference): the same woman from behind, her slippers on the top step, the right heel reaching back and down to the step below, the hem of the house dress above",
   "action": "one foot back and down onto the step below, the other joins",
   "pace": "about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "stairs: feet only, side, going down backwards",
+  "staging": "stairs: feet only, from below, going down backwards",
   "pin_end": "no",
   "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
   "max": 6,
@@ -281,11 +281,11 @@
   "ledger": "",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "ground",
-   "side": "profile",
+   "height": "low",
+   "side": "behind",
    "fg": "clean",
    "scale": "CU",
-   "why": "ground = the steps themselves"
+   "why": "low from behind = the feet going the wrong way, the same view as P-01a so the two connect (FP14)"
   },
   "mirror_of": null,
   "focus": {
@@ -328,7 +328,7 @@
   "subject": "N",
   "location": "L-N-STAIRS (landing)",
   "story_day": "N-D1",
-  "framing": "MEDIUM from the hall floor looking up the whole flight: N sitting on the top step at the head of the stairs in her house dress, one hand on the newel, looking down the flight toward the lens, not going (user Fix 2026-10-01: her at the top of the stairs looking down)",
+  "framing": "MEDIUM from the landing behind her shoulder, high, looking down the whole flight past her: N sitting on the top step in her house dress, one hand on the newel, her head turned down to the hall far below (user Fix 2026-10-01: a different camera angle)",
   "action": "she looks down the stairs and looks away",
   "pace": "one turn of the head, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -344,27 +344,27 @@
   "ledger": "",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "low",
-   "side": "front",
+   "height": "high",
+   "side": "ots",
    "fg": "clean",
    "scale": "MEDIUM",
-   "why": "low from the foot of the stairs = the whole flight between her and the hall; trapped up there"
+   "why": "high over her shoulder = the drop she won't go down is the picture; the other angle on this flight (P-01a/P-01b are from below)"
   },
   "mirror_of": null,
   "focus": {
-   "plane": "eyes",
+   "plane": "deep",
    "dof": "deep",
    "rack": null,
    "moving_subject": false
   },
   "light": {
    "source": "landing window at the top of the stairs, south wall",
-   "key_side": "L",
+   "key_side": "R",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 6500
   },
-  "face": true,
+  "face": false,
   "speaking": false,
   "tin": 0.0,
   "lyric_cut": 21.89,
@@ -391,7 +391,7 @@
   "subject": "N",
   "location": "L-N-KITCHEN",
   "story_day": "N-D1",
-  "framing": "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a big black hinged knee brace sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new)",
+  "framing": "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a short black hinged knee brace — a hand's length above and below the knee — sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new; the brace a bit more short)",
   "action": "her hand pulls the brace up once and it slips back",
   "pace": "one pull, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -706,8 +706,8 @@
   "subject": "N hands",
   "location": "L-N-KITCHEN",
   "story_day": "N-D1c",
-  "framing": "CU at table height on the far edge of the kitchen table: the heap of braces, sleeves and pill bottles jammed against the edge where the push left it, a bottle on its side at the lip, a knee sleeve hanging off the edge; her hands out of frame",
-  "action": "the bottle at the edge rolls off and drops out of frame",
+  "framing": "CU at floor level by her chair: a grey knee sleeve dropped on the kitchen floor beside her pink slipper, a pill bottle on its side next to it, a chair leg; her feet still (user Fix 2026-10-01: a different one)",
+  "action": "the bottle rolls once and stops against the slipper",
   "pace": "one roll, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
   "staging": "objects only, one movement",
@@ -722,11 +722,11 @@
   "ledger": "",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "eye",
-   "side": "front",
+   "height": "ground",
+   "side": "three-quarter",
    "fg": "clean",
    "scale": "CU",
-   "why": "eye at table height = the heap at the edge, nothing left in it"
+   "why": "ground = what the fixes came to, on the floor by her feet"
   },
   "mirror_of": null,
   "focus": {
@@ -737,7 +737,7 @@
   },
   "light": {
    "source": "window over the sink, south wall",
-   "key_side": "L",
+   "key_side": "R",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 5600
@@ -769,11 +769,11 @@
   "subject": "N",
   "location": "L-N-KITCHEN",
   "story_day": "N-D1c",
-  "framing": "CU across the table at her eye level: N sat back in the chair, shoulders down, eyes on nothing past the lens, the heap soft in the foreground at the table's far edge",
-  "action": "her eyes drop to the table, one slow blink",
-  "pace": "one look down, about two seconds",
+  "framing": "MEDIUM from behind her shoulder, high: N at the table with her head bowed, both hands slack in her lap, the heap of braces, sleeves and pill bottles on the table in front of her, the window beyond (user Fix 2026-10-01: a different one)",
+  "action": "her head sinks a little lower",
+  "pace": "one slow drop, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "face: one movement, seated",
+  "staging": "none",
   "pin_end": "no",
   "pin_waived": null,
   "max": 3,
@@ -785,16 +785,16 @@
   "ledger": "",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "eye",
-   "side": "three-quarter",
-   "fg": "through",
-   "scale": "CU",
-   "why": "through the heap in the foreground = what she is left with between her and us"
+   "height": "high",
+   "side": "ots",
+   "fg": "clean",
+   "scale": "MEDIUM",
+   "why": "high over her shoulder = looking at the heap with her; her face kept from us"
   },
   "mirror_of": null,
   "focus": {
-   "plane": "eyes",
-   "dof": "shallow",
+   "plane": "deep",
+   "dof": "medium",
    "rack": null,
    "moving_subject": false
   },
@@ -805,7 +805,7 @@
    "arc": "problem: grey",
    "kelvin": 5600
   },
-  "face": true,
+  "face": false,
   "speaking": false,
   "tin": 0.0,
   "lyric_cut": 42.23,

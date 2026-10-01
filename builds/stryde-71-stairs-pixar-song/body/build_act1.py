@@ -140,11 +140,41 @@ A final frame from a 3D animated feature film, stylized storybook render — the
 FIX7 = {"P-03a": "THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL", "P-03b": "THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL"}
 if V >= 7:
     P = P7
+
+# ---- v8 (hourly check 19:20, 2026-10-01): P-01b "USE THE P01A AS REFERENCE HERE" (edit of the confirmed P-01a v12 B frame, FP14); P-02a "USE A DIFFERENT CAMERA
+# ANGLES" (from the landing over her shoulder, edit of P0); P-03a "MAKE THE BRACE A BIT MORE SHORT" (edit of P2); P-05b / P-05c "I NEED A DIFFERENT ONES HERE".
+# P-03b "USE THE P03A AS REFERENCE AGAIN" runs after P-03a lands (P3A8 = its A job id).
+P01B = "1dfc8df04304a40cd25abf92c38d556b"   # P-01a v12 B, confirmed — job c5f6bfae
+REF_P01B = {"label": "P-01a frame v12 B (confirmed) — her at the top of the flight from below", "kind": "frame"}
+P8 = {}
+P8["P-01b"] = (f'''For the line "{L("P-01b")}": Keep this photo exactly as it is — the flight of stairs from the hall floor, its runner and brass rods, the oak rail, the woman at the top with her back to us — but close in on her feet. Image 1 is the picture; nothing in it changes but the crop.
+Close-up from below on the top steps, sharp on the slippers: the same pink terry slippers of Image 1 at the top of the flight, her back to the lens, toes pointing up the stairs, the right heel reaching back and down onto the step below the top one, the left slipper still flat on the top step; her bare brown ankles and the hem of the faded blue floral house dress at the top edge; her hands and head out of frame above.
+In frame: two slippers, two legs below the knee, the top four steps of the flight of Image 1 with their runner and rods, the rail at the side; every other surface bare. Each foot whole, heels toward the lens.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Slippers and hem plain — no lettering, logos or labels; nobody else.''', [REF_P01B], False, P01B)
+P8["P-02a"] = (f'''For the line "{L("P-02a")}": Keep this photo exactly as it is — the staircase, its runner, the oak rail, the photo wall, the hall floor, the light — but seen from the top landing looking down the flight, a tall 9:16 crop, and add the woman. Image 1 is the hall and staircase.
+Medium shot from the landing, the lens high behind her right shoulder looking down the stairs past her, sharp on her. An older Black woman with short grey hair, seen only from behind, sitting on the top step, her right hand on the newel post, her left hand in her lap, her head turned down to the hall floor far below; {WARD}. Nobody else.
+In the frame: the back of her head and shoulders in the near foreground, the whole flight below her, the rail, the photo wall, the hall floor at the bottom; every other surface bare. Two hands placed, two legs.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Clothing and frames plain — no lettering, logos or labels; no second person.''', [REF_P0], False, P0)
+P8["P-03a"] = (f'''For the line "{L("P-03a")}": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chairs, the floor, the light — in close at the near chair from the side, a tall 9:16 crop, and add the seated woman. Image 1 is the kitchen.
+Medium close-up from the side at knee height, sharp on the brace: an older Black woman sitting on the chair, her right leg out a little, a short black hinged knee brace — a hand's length above and below the knee, two wide straps, a small round hinge each side — slid down below the kneecap, sagging at her shin, her right hand hauling its top strap back up, her left hand flat on the chair seat; a faded blue floral house dress at mid-thigh, pink terry slippers flat on the floor; her head and shoulders out of frame above.
+In frame: the seated woman from the shoulders down, two hands placed, the brace, two slippers, the chair and table edge of Image 1; every other surface bare.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Brace and dress plain — no lettering, logos or labels; nobody else.''', [REF_P2], False, P2)
+P8["P-05b"] = (f'''For the line "{L("P-05b")}": Keep this photo exactly as it is — the kitchen floor, the chair legs, the table above, the cabinets, the light — in close at floor level by the near chair, a tall 9:16 crop, and lay down the things. Image 1 is the kitchen.
+Close-up at floor level from the side, sharp on the floor: a grey knee sleeve dropped flat on the wooden floor beside a pink terry slipper, a plain pill bottle on its side next to it, a second slipper behind, the chair leg beside them; her feet still in the slippers, her legs out of frame above the ankle; nobody's hands in the frame.
+In frame: one sleeve, one bottle, two slippers, the chair legs and floor of Image 1; every other surface bare, nothing else on the floor.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Sleeve and bottle plain — no lettering, logos or labels; nobody else.''', [REF_P2], False, P2)
+P8["P-05c"] = (f'''For the line "{L("P-05c")}": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chair, the window, the light — seen from behind the near chair, a tall 9:16 crop, and add the woman. Image 1 is the kitchen.
+Medium shot from behind her right shoulder, the lens high looking down over her at the table, sharp on the table. An older Black woman with short grey hair, seen only from behind, sitting at the table, head bowed, shoulders down, both hands slack in her lap; on the table before her a folded black hinged knee brace, two grey knee sleeves, three plain pill bottles, a white gel tube and a blue ice pack in a heap; {WARD}. Nobody else.
+In the frame: the back of her head and shoulders in the near foreground, the heap on the table, the chair back, the window of Image 1; every other surface bare. Two hands placed in her lap.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Clothing and bottles plain — no lettering, logos or labels; no second person.''', [REF_P2], False, P2)
+FIX8 = {"P-01b": "USE THE P01A AS REFERENCE HERE", "P-02a": "USE A DIFFERENT CAMERA ANGLES", "P-03a": "MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW", "P-05b": "I NEED A DIFFERENT ONES HERE", "P-05c": "I NEED A DIFFERENT ONES HERE"}
+if V >= 8:
+    P = P8
 if __name__ == "__main__":
     fails = 0
     for b, (pr, refs, face, eo) in P.items():
-        c = {"beat": b, "kind": "image", "mode": 2, "prompt": pr, "script_line": L(b), "face": face, "room": True, "body": b != "P-05b", "refs": refs,
-             "match": "frame" if eo in (P3A, P02B, "P3A-NEW") else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
+        c = {"beat": b, "kind": "image", "mode": 2, "prompt": pr, "script_line": L(b), "face": face, "room": True, "body": b not in ("P-05b",), "refs": refs,
+             "match": "frame" if eo in (P3A, P02B, "P3A-NEW", P01B) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX8 if V >= 8 else FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
         OV = (OUTV if V == 4 else {}).get(b, V)
         (H / f"{b}.v{OV}.prompt.txt").write_text(pr); (H / f"{b}.v{OV}.preflight.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
         r = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v{OV}.preflight.json")], capture_output=True, text=True)

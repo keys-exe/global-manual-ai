@@ -1,0 +1,255 @@
+{
+ "imageVersions": [
+  {
+   "archiveAsset": "9efe426c4826fa5171b2e00edcd7b702",
+   "archived": true,
+   "asset": null,
+   "at": 1790873674660,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "a401e32e-dbdc-4770-9622-045a6ba04a46",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7911309,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_a401e32e-dbdc-4770-9622-045a6ba04a46.png",
+   "v": 1
+  },
+  {
+   "archiveAsset": "09837dc92e83eba5ae3826cfd4984210",
+   "archived": true,
+   "asset": null,
+   "at": 1790873674660,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "5e7b9fb2-8d81-42d0-9363-d30c2b7ad565",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6106311,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_5e7b9fb2-8d81-42d0-9363-d30c2b7ad565.png",
+   "v": 2
+  },
+  {
+   "archiveAsset": "cfc3b2e15d01fc9898960e2a89726fa8",
+   "archived": true,
+   "asset": "04a73911cf0242824751507c06cc62e8",
+   "at": 1790876674688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "34a4e086-d516-4570-af05-3bcb361ab1aa",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · replaced by the v3 pair on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7436671,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174004_34a4e086-d516-4570-af05-3bcb361ab1aa.png",
+   "v": 3
+  },
+  {
+   "archiveAsset": "d58e8be1156fcb062d2f4809db0b78aa",
+   "archived": true,
+   "asset": "6aebc675e5a732523b339338073f8d88",
+   "at": 1790876674688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "979a33d3-1057-491f-8304-8f29d86fc5e1",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · replaced by the v3 pair on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7989378,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174004_979a33d3-1057-491f-8304-8f29d86fc5e1.png",
+   "v": 4
+  },
+  {
+   "archiveAsset": "fd5dd95d55dcceb1fa3f0a7d145ee021",
+   "archived": true,
+   "asset": "d4e98c1bf9a1a04369112e4a5d9015b9",
+   "at": 1790877909563,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "e443ca80-6a5d-4e63-accd-97ba7c3ef2e6",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"this should be her at the top of the stairs looking down\" → from the hall floor looking up the whole flight — she sits on the top step looking down it (act map re-angled low · front) · not chosen (the user picked the other); copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 8122962,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180141_e443ca80-6a5d-4e63-accd-97ba7c3ef2e6.png",
+   "v": 5
+  },
+  {
+   "asset": "aa7875902a56e13b0b58fc4f961b1371",
+   "at": 1790877909563,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "04e4ff58-b639-4064-accc-908bc636261e",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"this should be her at the top of the stairs looking down\" → from the hall floor looking up the whole flight — she sits on the top step looking down it (act map re-angled low · front) · replaced on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7769512,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180142_04e4ff58-b639-4064-accc-908bc636261e.png",
+   "v": 6,
+   "archived": true,
+   "archiveAsset": "52c696143b7e85fbfbfbd876ca2eb2f2"
+  },
+  {
+   "v": 7,
+   "pair": "A",
+   "asset": "b76721256da12550aa1b5b6d9a94e65e",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_4003e2aa-ceab-4cad-b8c6-5703cb6e254f.png",
+   "job": "4003e2aa-ceab-4cad-b8c6-5703cb6e254f",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 8257136,
+   "res": "1536×2752",
+   "at": 1790883125026,
+   "note": "user Fix: \"USE A DIFFERENT CAMERA ANGLES\" → from the landing behind her shoulder, high, looking down the whole flight past her (act map re-angled high · over-the-shoulder)"
+  },
+  {
+   "v": 8,
+   "pair": "B",
+   "asset": "6321d1076c95e1ae81658b2324168b64",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_fa8e2af8-2d6d-4be9-b3dd-e8bb8a5a882f.png",
+   "job": "fa8e2af8-2d6d-4be9-b3dd-e8bb8a5a882f",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 5754806,
+   "res": "1536×2752",
+   "at": 1790883125026,
+   "note": "user Fix: \"USE A DIFFERENT CAMERA ANGLES\" → from the landing behind her shoulder, high, looking down the whole flight past her (act map re-angled high · over-the-shoulder)"
+  }
+ ],
+ "imagePair": [
+  7,
+  8
+ ],
+ "imageAsset": "b76721256da12550aa1b5b6d9a94e65e",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_4003e2aa-ceab-4cad-b8c6-5703cb6e254f.png",
+ "imageJob": "4003e2aa-ceab-4cad-b8c6-5703cb6e254f",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790883125026,
+ "imageStatus": "review",
+ "imagePick": {
+  "__delete__": true
+ },
+ "imageUnused": {
+  "__delete__": true
+ },
+ "imagePrompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": Keep this photo exactly as it is — the staircase, its runner, the oak rail, the photo wall, the hall floor, the light — but seen from the top landing looking down the flight, a tall 9:16 crop, and add the woman. Image 1 is the hall and staircase.\nMedium shot from the landing, the lens high behind her right shoulder looking down the stairs past her, sharp on her. An older Black woman with short grey hair, seen only from behind, sitting on the top step, her right hand on the newel post, her left hand in her lap, her head turned down to the hall floor far below; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the back of her head and shoulders in the near foreground, the whole flight below her, the rail, the photo wall, the hall floor at the bottom; every other surface bare. Two hands placed, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Clothing and frames plain — no lettering, logos or labels; no second person.",
+ "imageFault": "user Fix: \"USE A DIFFERENT CAMERA ANGLES\" → from the landing behind her shoulder, high, looking down the whole flight past her (act map re-angled high · over-the-shoulder)",
+ "imageNote": {
+  "__delete__": true
+ },
+ "imageMatch": "plate",
+ "imageRefs": [
+  {
+   "label": "P0-PROP-N plate (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  }
+ ],
+ "status": "ready",
+ "shot": "high · ots · clean · MEDIUM",
+ "angle": "high · ots · clean · MEDIUM — high over her shoulder = the drop she won't go down is the picture; the other angle on this flight (P-01a/P-01b are from below)",
+ "framing": "MEDIUM from the landing behind her shoulder, high, looking down the whole flight past her: N sitting on the top step in her house dress, one hand on the newel, her head turned down to the hall far below (user Fix 2026-10-01: a different camera angle)",
+ "motionPlan": "From this frame: she looks down the stairs and looks away — one turn of the head, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "location": "L-N-STAIRS (landing)",
+ "line": "I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.",
+ "title": "problem (edit of P0: the top of the flight, HT17)",
+ "act": "Hook 1",
+ "imageTaste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "updatedAt": 1790883125026,
+ "videoVersions": [
+  {
+   "archiveAsset": "d2a12f28fbc8d2b46b170f7ff4ed79a8",
+   "archived": true,
+   "asset": "e69e36bbf36719d12782764199e8d7e2",
+   "at": 1790879441635,
+   "connector": "Kling",
+   "credits": 48,
+   "duration": 6.04,
+   "fromImage": 6,
+   "job": "Ae7xxyHuF6LmLZ5oV7UyCvFXaFggT_VwkxglIXEpR2ZgPyozblpz-KZ3E7W6p5J63PNBu9Vo",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v6 B (job 04e4ff58) · what I see: she stays on the top step, looks down the flight and away; her mouth opens into a smile mid-clip as if speaking · replaced on the user's Fix (never talk the lyrics in B-roll); copied to Old versions",
+   "res": "1072×1928",
+   "size": 3337101,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/f3b33137-f1e5-49d5-9c46-ce477a449dcb-4r8X6ev41rNXPNsDc8FxUg-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  },
+  {
+   "asset": "01115eaa59d3e344c6ee49645e94aa24",
+   "at": 1790881100527,
+   "connector": "Kling",
+   "credits": 48,
+   "duration": 6.04,
+   "fromImage": 6,
+   "job": "AbS01H4psap-MiSKAdm7D9QCMJ8ofaWm4SZnBApVWycTkC8ZQIxnRCklxemUUJugkh3fGLF1",
+   "model": "kling-video-v3_0",
+   "note": "user: never talk the lyrics/script in B-roll → mouth closed, lips still, she never speaks or sings (§35A rule 6, HT25) · what I see: she looks down the flight and away, mouth closed throughout · its image was replaced; copied to Old versions",
+   "res": "1072×1928",
+   "size": 3204922,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/fe9e542f-bf11-462a-a811-2da39a0e3753-yoMiZW5idkEubXoLDAVXfw-output.mp4?x-kcdn-pid=112372",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "d2da0c1169d11ef19716e6d130d13bcd"
+  }
+ ],
+ "videoAsset": {
+  "__delete__": true
+ },
+ "videoUrl": {
+  "__delete__": true
+ },
+ "videoJob": {
+  "__delete__": true
+ },
+ "videoAt": {
+  "__delete__": true
+ },
+ "videoRes": {
+  "__delete__": true
+ },
+ "credits": {
+  "__delete__": true
+ },
+ "prompt": {
+  "__delete__": true
+ },
+ "fault": {
+  "__delete__": true
+ },
+ "videoNote": "the clip is made again once the new image is picked"
+}

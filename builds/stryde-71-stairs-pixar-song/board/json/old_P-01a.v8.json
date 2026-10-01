@@ -1,0 +1,33 @@
+{
+ "videoVersions": [
+  {
+   "asset": "6d9e6a8323510a79d61ca96a23343a00",
+   "at": 1790881654990,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 12,
+   "job": "AZtYm6x5ecRwFiriXrZ6-FpVRSsX5OF-Bj0ta1bAGbUn7oxiZN1ISajEirgTDXd8hfskOM5Y",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v12 B (job c5f6bfae) · what I see: from the top step she lowers one foot to the step below and the other follows, back to the lens, hands on the rail, nobody speaks · replaced on the user's Fix (one step at a time); copied to Old versions",
+   "res": "1072×1928",
+   "size": 4636335,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1faf845b-2f53-4ae3-97fa-7ad191645c39-PcS3C5R49adgvxbzbamWkw-output.mp4?x-kcdn-pid=112372",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "6d9e6a8323510a79d61ca96a23343a00"
+  }
+ ],
+ "videoAsset": "6d9e6a8323510a79d61ca96a23343a00",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1faf845b-2f53-4ae3-97fa-7ad191645c39-PcS3C5R49adgvxbzbamWkw-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AZtYm6x5ecRwFiriXrZ6-FpVRSsX5OF-Bj0ta1bAGbUn7oxiZN1ISajEirgTDXd8hfskOM5Y",
+ "duration": 5.04,
+ "videoFault": "replaced on the user's Fix: one step at a time",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "updatedAt": 1790882998753
+}
