@@ -4,7 +4,8 @@
  "bars": 1,
  "beat": "P-04b",
  "build": "stryde-71-stairs-pixar-song",
- "duration": 5,
+ "credits": 40,
+ "duration": 5.04,
  "eg": "",
  "flow": [
   "image",
@@ -55,6 +56,7 @@
  ],
  "imageType": "image/png",
  "imageUnused": 4,
+ "imageUnusedArchived": "5471c9dde3ffc8150461f6ec2683cffc",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_d6e85763-5356-4351-8f90-f4fc5eec9aa8.png",
  "imageVersions": [
   {
@@ -107,13 +109,15 @@
    "v": 3
   },
   {
+   "archiveAsset": "5471c9dde3ffc8150461f6ec2683cffc",
+   "archived": true,
    "asset": "5bf7023291d072a35d8da1fb16b15562",
    "at": 1790876674688,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "0e49fdec-98da-4b6e-bf5f-58ecb40f7309",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · not chosen (the user picked A); copied to Old versions",
    "pair": "B",
    "res": "1536×2752",
    "size": 7379294,
@@ -128,20 +132,54 @@
  "light": "exam-room window, blind half open, west wall · key R · afternoon · problem: clinical · 5600K",
  "line": "Physical therapy. Pain pills. Cortisone shots.",
  "location": "L-CLINIC",
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: the therapist bends the knee a little further — one slow bend, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
  "music": "MUS-EXPOSE",
  "onScreen": 3.25,
  "pinEnd": "no",
  "product": "absent · —",
+ "prompt": "For the line \"Physical therapy. Pain pills. Cortisone shots.\": From this frame: the therapist bends the knee a little further — one slow bend, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. The therapist's two hands bend her right knee a little further toward her chest, slowly, and hold it there; she stays on her back, head on the pillow, eyes on the ceiling, hands folded on her stomach; the therapist's head stays out of frame above. Stylized 3D animation, both exactly on model from the frame. No camera travel; no third person; no cut; nobody turns to the lens.",
  "section": "The low point and what failed — MUS-EXPOSE",
  "shot": "high · three-quarter · clean · MEDIUM",
  "songIn": 34.84,
  "songOut": 38.09,
  "stage": "broll",
  "staging": "hands: one movement, subject lying still",
- "status": "ready",
+ "status": "use",
  "storyDay": "N-D1b",
  "title": "failed fix",
- "updatedAt": 1790877206680
+ "updatedAt": 1790878739201,
+ "videoAsset": "c3c6086ce7674f4e8b84149f6f2b585d",
+ "videoAt": 1790878081408,
+ "videoConnector": "Kling",
+ "videoJob": "AdbKCG6_nIJzk0Pl2sNxaLNf4tRN7biCyHrEUzN0vY9mSe05za3wfLZ2omDjiO9dQU8Xdzcx",
+ "videoNote": "first clip of this beat, from the confirmed v3 A · what I see: the knee bends a little further and holds; she stays on her back",
+ "videoRes": "1072×1928",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/995adb12-918b-4a64-b6cc-17dacdc4b16c-39aPOcZCU1MndHOQFXSrRw-output.mp4?x-kcdn-pid=112372",
+ "videoVersions": [
+  {
+   "asset": "c3c6086ce7674f4e8b84149f6f2b585d",
+   "at": 1790878081408,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 3,
+   "job": "AdbKCG6_nIJzk0Pl2sNxaLNf4tRN7biCyHrEUzN0vY9mSe05za3wfLZ2omDjiO9dQU8Xdzcx",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v3 A (job d6e85763) · what I see: the knee bends a little further and holds; she stays on her back",
+   "res": "1072×1928",
+   "size": 3721518,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/995adb12-918b-4a64-b6cc-17dacdc4b16c-39aPOcZCU1MndHOQFXSrRw-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  }
+ ]
 }

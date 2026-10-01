@@ -1,0 +1,38 @@
+{
+ "moved": [
+  {
+   "asset": "f45252741e49aa00582f8d32d6ab75a7",
+   "at": 1790877909563,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "b40ecc90-fd6c-43d4-aa77-cac90ebda894",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"should be looking up the stairs and stepping backwardd\" → the lens moved to the foot of the stairs — her back to it, face up to the landing, one foot reaching back down (act map re-angled low · behind) · replaced by the next pair on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 5814804,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180142_b40ecc90-fd6c-43d4-aa77-cac90ebda894.png",
+   "v": 5,
+   "archived": true,
+   "archiveAsset": "f45252741e49aa00582f8d32d6ab75a7"
+  },
+  {
+   "asset": "15f1e565add70ed4e24d577b76063232",
+   "at": 1790877909563,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "db0c4bf6-8fb9-40f2-8ce4-b3d01282903f",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"should be looking up the stairs and stepping backwardd\" → the lens moved to the foot of the stairs — her back to it, face up to the landing, one foot reaching back down (act map re-angled low · behind) · replaced by the next pair on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7335286,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180142_db0c4bf6-8fb9-40f2-8ce4-b3d01282903f.png",
+   "v": 6,
+   "archived": true,
+   "archiveAsset": "15f1e565add70ed4e24d577b76063232"
+  }
+ ]
+}

@@ -296,5 +296,23 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   push lands, then the heap thins out and vanishes by the end and her mouth moves as if talking (told the user; a Fix is theirs to call). Higgsfield
   balance 8,257.15; Kling 42,007 (build doc v20).
 
-**Waiting on:** picks or Fix notes on the four new Act 1 pairs (P-01a, P-01b, P-02a, P-03b); Confirm or Fix on the four Act 1 clips. Then the
-remaining Act 1 clips from the picks; then Act 2 (the wedding).
+- 18:20 UTC hourly Fix check + user message **"p03a and b should be connected so same braces"**. Board: P-01b picked v5 A, P-02a picked v6 B;
+  P-04a / P-04b clips confirmed; P-03a clip still To check; **P-01a Fix "she should be at the top of the middle of the stairs she should never be at
+  the bottom"**; **P-05a (video) Fix "make this into 3 brolls"**. Done: **P-01a v7/v8** (`body/P-01a.v4.prompt.txt`, PASS 1,200 chars — two steps
+  below the landing, the crop on the upper half of the flight; act-map framing updated) — seen: both renders still put her on the lower half of the
+  flight (the model kept her mid-flight; told the user; the next Fix will crop the plate to the top of the flight first). **P-03b v7/v8**
+  (`P-03b.v4.prompt.txt`, PASS; `match: "frame"`, a direct image edit of the confirmed P-03a frame, job 549092c2) — seen: A seated, the P-03a brace
+  around the ankle, hand on the knee; B keeps the P-03a standing pose with the brace at the ankle; the earlier v5/v6 pair to Old. **P-05 split**
+  (`work/actmap.py`: P-05a lines 16–16 · P-05b 17–17 · P-05c 18–18, 62 rows, 108/108; `STEP4_5.md`, `docs/actmap` v19 on Current and Plan): on the
+  song's clock P-05a gets 1.6 s, P-05b 2.4 s, P-05c 0.8 s (the T-01a cut snaps to the grid at 42.97 — FLASH on P-05a and P-05c; the user asked for
+  three, told them). New cards **P-05b v1/v2** (the heap at the far edge, `P-05b.v1.prompt.txt`) and **P-05c v1/v2** (her face sat back,
+  `P-05c.v1.prompt.txt`) To check; **P-05a clip v2** (3 s / 24 cr, §22X: every object stays to the last frame, mouth closed — seen: the push lands,
+  the heap stays, she sits back) To check, v1 kept as a version. **P-01b clip v1** (4 s / 32 cr — seen: the heel settles on the step below, the other
+  foot follows, feet stay turned up the stairs) and **P-02a clip v1** (6 s / 48 cr — seen: she looks down the flight and away; her mouth opens into a
+  smile mid-clip as if speaking; told the user) To check; the unused P-01b v6 and P-02a v5 to Old (Old docs v3). `act_cards.py` now sets new beats
+  (`set`, base fields) and strips `__delete__` on a set (first batch was refused for it). `fix_patterns.py` re-run: "connected" repeats across P1-LANDING
+  and P-03a/b → **FP14** in `products/stryde/fix_patterns.md` (the second beat on one prop is an edit of the first's confirmed frame). No restore
+  requests on Old. Balances as printed: Higgsfield 8,167.15; Kling 41,743 (build doc v21).
+
+**Waiting on:** picks or Fix notes on P-01a v7/v8, P-03b v7/v8, P-05b, P-05c; Confirm or Fix on the clips P-03a v1, P-01b v1, P-02a v1, P-05a v2.
+Then the clips for P-01a / P-03b / P-05b / P-05c from the picks; then Act 2 (the wedding).
