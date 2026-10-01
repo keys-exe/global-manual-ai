@@ -1,0 +1,49 @@
+{
+ "beat": "P-05a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Every brace and sleeve they make. Nothing worked. Nothing lasted. Nothing gave me my life back.\": From this frame: one push away across the table — one push, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. The back of her right hand pushes the heap once across the table away from her, the bottles and sleeves sliding to the far edge, then she sits back in the chair, shoulders dropping, eyes on nothing past the lens, her left hand slack in her lap. Stylized 3D animation, exactly on model from the frame, every object rigid. No camera travel; nobody else; no cut; she never looks into the lens.",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_8545c58b-ddab-447e-a0ca-a18a56e716f0.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Every brace and sleeve they make. Nothing worked. Nothing lasted. Nothing gave me my life back.",
+ "motion_plan": "From this frame: one push away across the table — one push, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one push",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  }
+ ],
+ "note": "first clip of this beat (from the confirmed image v3 A, job 8545c58b-ddab-447e-a0ca-a18a56e716f0)"
+}

@@ -3,28 +3,39 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"hk3_ken_pill\",\"subject\":\"THE SAME MAN'S HANDS as in the start frame, 72, thin and wiry, gold wedding ring, the foil card of pills over his open palm on his knee; exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"High as in the start frame: looking down at his hands on the bus-stop bench. FOCUS: the hands, the foil card and the pill are sharp; the pavement falls soft.\"},\"motion\":\"CONTINUING: his thumb is already pushing the pill through the foil. COMPLETING: one press, about two seconds — the foil gives, the small white pill pops through and drops into his open palm, rolling a little and settling. UNRESOLVED: he holds the pill in his palm, the foil card still in his other hand. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, flat grey overcast light from the left, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no second pill, no pills scattering, no pill floating, no readable text on the foil, no extra fingers, no fused fingers, no slow motion, no music\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_145916_deb72848-6430-493c-aeaa-1e222336f286.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_172836_d24aeaec-5899-4c19-8c5b-46642f9d1535.png",
  "start_approved": true,
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "audio": false,
+ "prompt": "For the line \"The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.\": from this frame, he tilts the amber bottle a little further and one more white pill rolls out into his open palm beside the first — one small tilt, about two seconds — ending with the bottle eased back upright just above his palm. Handheld phone, a gentle breath sway, the camera stays where it is, looking down at his hands. The same amber bottle with its plain white label and red band, rigid, the same size; exactly two pills in his palm at the end; two hands, every finger whole and separate. No pills spilling, no lettering on the label, no bottle changing shape, no extra fingers, no sound.",
+ "script_line": "The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.",
+ "motion_plan": "he tilts the amber bottle a little further and one more white pill rolls out into his open palm beside the first — one small tilt, about two seconds — ending with the bottle eased back upright just above his palm",
+ "motion_confirmed": true,
+ "taste": [
+  "HT04",
+  "HT12",
+  "HT13",
+  "HT18"
+ ],
+ "generation": 2,
+ "fix_note": "frame fault: v1 clip was made from the foil-card frame (user Fixes: pill under the pack → a bottle → a real painkiller bottle) → new confirmed start frame v4; one small tilt, one more pill, sound off",
  "risks": [
   {
-   "risk": "thumb, foil and pill merge",
-   "prevented_by": "HOLD-C + NEG-WARP-C + finger negatives"
+   "risk": "pills pour out in a heap",
+   "prevented_by": "one more pill; exactly two pills at the end; no pills spilling"
   },
   {
-   "risk": "several pills pop out or scatter",
-   "prevented_by": "one press; negatives no second pill, no scattering"
+   "risk": "the bottle melts or the label grows text",
+   "prevented_by": "the same amber bottle, rigid, same size; no lettering on the label"
   },
   {
-   "risk": "the pill floats instead of dropping",
-   "prevented_by": "PHYS-MOTION-C weight; negative no pill floating"
+   "risk": "fingers fuse into the bottle",
+   "prevented_by": "two hands, every finger whole and separate"
   }
  ]
 }

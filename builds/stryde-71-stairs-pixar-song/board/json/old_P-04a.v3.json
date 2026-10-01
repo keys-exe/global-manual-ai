@@ -1,0 +1,78 @@
+{
+ "imageVersions": [
+  {
+   "archived": true,
+   "asset": "96005abadb741c0c13a30f79590cdbef",
+   "at": 1790873674660,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "05484467-c2ef-45dd-b536-7ba2fd2e82f6",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 8556337,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_05484467-c2ef-45dd-b536-7ba2fd2e82f6.png",
+   "v": 1
+  },
+  {
+   "archived": true,
+   "asset": "d1c613ffb7a29e4aeb0cf95ae9b42ac7",
+   "at": 1790873674660,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "a279e4e0-9af8-446d-94de-0f715b2797c8",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 9277877,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_a279e4e0-9af8-446d-94de-0f715b2797c8.png",
+   "v": 2
+  },
+  {
+   "asset": "0f102de85ce8e407d4afe71b397d5254",
+   "at": 1790876674688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "2e7f1e2a-ddbe-4dcb-bbd5-a3ca3202d80a",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · not chosen (the user picked A, v3)",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 8333572,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_2e7f1e2a-ddbe-4dcb-bbd5-a3ca3202d80a.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "0f102de85ce8e407d4afe71b397d5254"
+  }
+ ],
+ "imagePair": [],
+ "imageAsset": "0f102de85ce8e407d4afe71b397d5254",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_2e7f1e2a-ddbe-4dcb-bbd5-a3ca3202d80a.png",
+ "imageJob": "2e7f1e2a-ddbe-4dcb-bbd5-a3ca3202d80a",
+ "imageAt": 1790876674688,
+ "imagePrompt": "For the line \"I done tried everything.\": Keep this photo exactly as it is — the kitchen table top, the light — straight down from above, a tall 9:16 crop, and lay out the things. Image 1 is the kitchen.\nOverhead close-up of the wooden table of Image 1, sharp across it: a woman's two brown hands spread over the heap, the right pushing a tall pill bottle, the left on a folded black hinged knee brace; around them three plain pill bottles, a white gel tube, two grey knee sleeves, a blue ice pack, a roll of beige tape; the cuffs of a grey cardigan at the frame edge, her head and shoulders out of frame above.\nIn frame: two hands placed, the brace, two sleeves, three bottles, the tube, the ice pack, the tape, the table top; every other surface bare, nothing else on the table.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Bottles and packs plain — no lettering, logos or labels; nobody else.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  }
+ ],
+ "imageFault": "not chosen — the user picked v3 A",
+ "title": "failed fix (HT10)",
+ "shot": "overhead · front · clean · MEDIUM",
+ "framing": "overhead on the kitchen table: her two hands spread the whole arsenal across the wood — pill bottles, a gel tube, two sleeves, a hinged brace, an ice pack",
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "updatedAt": 1790877932602,
+ "flow": [
+  "image"
+ ]
+}

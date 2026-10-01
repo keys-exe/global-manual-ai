@@ -1,0 +1,76 @@
+{
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Hook 1",
+ "stage": "broll",
+ "beat": "P-02a",
+ "title": "problem (edit of P0: the top of the flight, HT17) — v1 pair (photoreal, replaced)",
+ "line": "I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.",
+ "flow": [
+  "image"
+ ],
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "9efe426c4826fa5171b2e00edcd7b702",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_a401e32e-dbdc-4770-9622-045a6ba04a46.png",
+   "job": "a401e32e-dbdc-4770-9622-045a6ba04a46",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7911309,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "09837dc92e83eba5ae3826cfd4984210",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_5e7b9fb2-8d81-42d0-9363-d30c2b7ad565.png",
+   "job": "5e7b9fb2-8d81-42d0-9363-d30c2b7ad565",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6106311,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageAsset": "9efe426c4826fa5171b2e00edcd7b702",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_a401e32e-dbdc-4770-9622-045a6ba04a46.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePrompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": Keep this photo exactly as it is — the staircase, the landing, the oak newel and balusters, the photo wall, the light — seen from the landing through the balusters, a tall 9:16 crop, and add the woman. Image 1 is the hall and staircase. Image 2 is the woman.\nMedium shot at eye level from the landing, the top balusters soft in the near foreground, sharp on her. The same woman as Image 2, seventy-one, sitting on the top step, her right hand on the newel post, her left hand in her lap, looking down the flight, eyes on the hall floor below, not going; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman, the top of the flight of Image 1, the newel and balusters, the photo wall, the hall below; every other surface bare. Two hands placed, two legs.\nThe render of Image 1 in grey morning light from the landing window at her side, a catchlight in each eye. Clothing and frames plain — no lettering, logos or labels; no second person.",
+ "imageRefs": [
+  {
+   "label": "P0-PROP-N plate (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  }
+ ],
+ "imageFault": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+ "location": "L-N-STAIRS (landing)",
+ "updatedAt": 1790876674688
+}

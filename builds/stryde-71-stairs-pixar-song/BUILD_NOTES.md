@@ -255,4 +255,46 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   turned to each other on model; A a dim vestibule with the white door leaves either side, B brighter with dark wood door frames and the street and
   houses behind. Higgsfield balance 8,840.15.
 
-**Waiting on:** HK-03a v21/v22 pick. Then the HK-03a clip; then the body acts in order; CapCut block with lyric captions and the outro end card.
+- 17:20 UTC hourly Fix check — **HK-03a Fix on the v15 pair: "make it a close up shot"**. v16 (`hooks/HK-03a.v16.prompt.txt`, PASS 1,125 chars; the first
+  draft failed §6A rule 4 "every visible hand placed" — hands stated out of frame): the same doorway setup in close, an image edit of v21 A, both
+  faces filling the frame, the mother in three-quarter profile turned back, the daughter beyond her mouth open mid-word (actmap row: eye · three-quarter
+  · through · CU, shallow; `docs/actmap` v17). **HK-03a v23/v24** To check (`hooks/v16_cards.py`); v21/v22 to Old (Old doc v11). Seen: A — the daughter
+  left in the frame facing the mother at right, the mother's profile under the hat brim, the white door leaf and the sunlit street behind; B — the
+  mother at left in profile, the daughter at right facing her, both on model. No restore requests on Old. `fix_patterns.py` re-run (73 notes): the
+  HK-03a run of notes is one beat being staged (talking → at the door → inside → close up), not a repeat across beats — no new rule. Default branch
+  merged (V7.83.0; this build's locks unchanged). Higgsfield balance 8,676.65.
+
+- same session, ~17:30–17:50 UTC — user **"confirm proceed"** ×2: **HK-03a v24 (B) confirmed** (v23 to Old, Old doc v12); **HK-03a clip v1** from it
+  (`clips/HK-03a.v1.call.json`, PASS; Kling 4 s / 32 cr, `clips/HK-03a_v1.mp4` 3.5 MB) on the board To check — seen: the daughter's head tilts and
+  her smile opens, the mother's smile widens, the frame holds. **Act 1 (the problem, N-D1) started:** eight §6A beat prompts, every one an image edit
+  of its confirmed plate (P0 stairs, P2 kitchen v2, P7 clinic; N sheet; the N-D1 wardrobe) in `body/build_act1.py` → `body/<BEAT>.v<n>.prompt.txt`.
+  **My error, caught before the board:** the v1 pair (16 renders, ~34 cr) came back as photographs — the body prompts had dropped the Mode 2 render
+  line that every hook prompt carried. Fixed at the source: `preflight.py` now fails any Mode 2/3/5 image call without the mode's render line
+  (`MODE_LINE`; proven on the v1 call = FAIL, v2 = PASS), **LESSONS L10** (numbered L09 before the merge). The v1 pair went to the Old board as a kept version (Old docs for the eight
+  beats; P-03b v1 A failed on Higgsfield, no file) and was never shown as To check. v2 (the render line restored, all PASS 991–1,187 chars):
+  **P-01a v3/v4, P-01b v3/v4, P-02a v3/v4, P-03a v3/v4, P-03b v3/v4, P-04a v3/v4, P-04b v3/v4, P-05a v3/v4** To check (`body/act_cards.py`,
+  `body/patch/v2.ids.json`). Seen (the user checks): the Pixar look is back on all; P-01a A has her coming down facing forward, not backwards as the
+  row says; P-04b A shows the therapist's face (the prompt asked shoulders down); P-05a B the heap pushed away as planned. Higgsfield balance
+  8,409.15; Kling 42,707. Note: `assemble.py --sheet` placement (V7.80.0) is newer than this build's step-5 lock — the act map is already timed on
+  the song's words by `work/actmap.py` (108/108 lines); not re-run here (system updates never touch a running build).
+
+- ~18:00 UTC — user **"fixed those and proceed"** (board: HK-03a clip v1 confirmed; P-03a / P-04a / P-04b / P-05a picked A (v3); Fix notes on
+  P-01a "should be looking up the stairs and stepping backwardd", P-01b "this should be the backwards also", P-02a "this should be her at the top
+  of the stairs looking down", P-03b "the brace here should be same as the p03a"). **Act map re-angled for the three stairs beats** (`work/actmap.py`,
+  60 rows, 108/108; `STEP4_5.md`, `docs/actmap` v18 on Current and Plan): P-01a low · behind from the foot of the stairs (her back to the lens,
+  face up to the landing, one foot reaching back down), P-01b feet backwards (toes up the stairs, heel lowering to the step below), P-02a low ·
+  front from the hall floor (the whole flight, her on the top step looking down it). **v3 prompts** (`body/build_act1.py 3`, PASS 1,163–1,197
+  chars; P-03b attaches the confirmed P-03a frame as Image 2 "the brace, copied exactly"): **P-01a v5/v6, P-01b v5/v6, P-02a v5/v6, P-03b v5/v6**
+  To check (`body/patch/v3.ids.json`, `act_cards.py` now takes per-beat `notes` and a `P03A` frame ref); their v3/v4 pairs and the four unused B
+  renders (v4 of P-03a/P-04a/P-04b/P-05a) copied to Old (Old docs v2), archived on Current, the Current files deleted. Seen (the user checks):
+  P-01a both from the foot of the flight, her back to the lens, face up to the landing, hands on the rail — a still can't show the direction of
+  the step, the clip will; P-01b A/B the heel reaching down, toes up the stairs; P-02a A three-quarter / B frontal, on the top step looking down the
+  full flight; P-03b A/B the P-03a brace (round hinges, wide straps) around the ankle. **Act 1 clips** from the confirmed A frames
+  (`clips/build_act1_clips.py`, §35A PASS 564–684 chars; Kling 3.0 1080p, no audio): **P-03a v1** 5 s / 40 cr, **P-04a v1** 4 s / 32 cr, **P-04b v1**
+  5 s / 40 cr, **P-05a v1** 6 s / 48 cr — To check (`clips/<BEAT>.v1.card.json`). Seen: P-03a one pull and the brace sags back; P-04a the hands
+  push the pile apart but the framing drifts and the top of her head enters at the bottom edge; P-04b the knee bends further and holds; P-05a the
+  push lands, then the heap thins out and vanishes by the end and her mouth moves as if talking (told the user; a Fix is theirs to call). Higgsfield
+  balance 8,257.15; Kling 42,007 (build doc v20).
+
+**Waiting on:** picks or Fix notes on the four new Act 1 pairs (P-01a, P-01b, P-02a, P-03b); Confirm or Fix on the four Act 1 clips. Then the
+remaining Act 1 clips from the picks; then Act 2 (the wedding).

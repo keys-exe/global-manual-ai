@@ -66,22 +66,22 @@ R("HK-02a", A, (3, 4), "daughter", "hook — the witness (last Sunday: the daugh
   "FULL from the sidewalk at the foot of the church steps, the lens at hip height looking up the flight: N on the 6th of 8 steps climbing briskly hands free, her daughter two steps behind her on the 4th, right hand on the black iron handrail, eyes on her mother's back; the white church doors at the top",
   "two steps up, the daughter following two steps behind", "one step per second", "stairs: side-on/behind, full body, camera still at the foot", "worn (under the dress)", "HIDDEN",
   "low", TQB, "clean", "FULL", "low = resolve, the church rising above her; the daughter walking behind her is the witness of the line", "deep", "deep", "open sky, afternoon sun", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
-R("HK-03a", A, (5, 5), "Mama", "hook — the line (a new angle on the user's call: from inside the open church doorway, the two on the doorstep) · MEDIUM through the doors", "N + C2", "L-CHURCH", "N-D4",
-  "MEDIUM at eye level from inside the church's open front doorway looking out, the open door leaves soft at the frame edges: N on the threshold turned back to face her daughter, a hand on her hip, a small smile; the daughter on the top step just outside, right hand on the top of the black rail, face up to her mother, mouth open mid-word; the steps and the sunlit sidewalk beyond",
+R("HK-03a", A, (5, 5), "Mama", "hook — the line (a new angle on the user's call: from inside the open church doorway, the two on the doorstep, close up on the user's Fix) · CU through the doors", "N + C2", "L-CHURCH", "N-D4",
+  "CU at eye level from inside the church's open front doorway, both heads filling the frame: N nearest the lens in three-quarter profile turned back to her daughter, a small smile; the daughter a step beyond, face up to her mother, mouth open mid-word; the door edge and the sunlit sidewalk soft",
   "the daughter's head tilts as she asks, N's smile widens", "a beat, about a second", "none", "worn (under the dress)", "HIDDEN",
-  "eye", TQ, "through", "MEDIUM", "through the doorway = inside with her; she has arrived, the daughter is still on the step; both faces in frame (HT24)", "eyes", "medium", "open sky, afternoon sun", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
-R("P-01a", A, (6, 6), "backwards", "problem (HT02)", "N", "L-N-STAIRS", "N-D1",
-  "MEDIUM from the landing: N going down the stairs backwards, facing the steps, both hands gripping the rail",
-  "one careful step down backwards", "one step, about two seconds", "stairs: camera at the top, subject below, slow single step", "absent", "—",
-  "high", BH, "clean", "MEDIUM", "high = small against the drop, overwhelmed", "deep", "deep", *STAIR_AM, "morning", "problem: grey", False, "MUS-EXPOSE", ledger="VN04")
+  "eye", TQ, "through", "CU", "through the doorway in close = the line lands between the two faces; she has arrived, the daughter is still on the step (HT24)", "eyes", "shallow", "open sky, afternoon sun", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
+R("P-01a", A, (6, 6), "backwards", "problem (HT02; user Fix 2026-10-01: looking up the stairs, stepping backward — so the lens goes to the foot of the flight, edit of P0)", "N", "L-N-STAIRS", "N-D1",
+  "MEDIUM from the hall at the foot of the stairs, the lens low looking up the flight: N mid-flight with her back to the lens, face turned up the stairs toward the landing, both hands gripping the oak rail, one slippered foot reaching back and down to the step below",
+  "one careful step down backwards, her back to the lens", "one step, about two seconds", "stairs: camera at the foot, subject above with her back to it, slow single step", "absent", "—",
+  "low", BH, "clean", "MEDIUM", "low from the hall, her back to us = going down the wrong way, small against the flight rising above her", "deep", "deep", *STAIR_AM, "morning", "problem: grey", False, "MUS-EXPOSE", ledger="VN04")
 R("P-01b", A, (7, 7), "step", "problem", "N feet", "L-N-STAIRS", "N-D1",
-  "CU from the side at step height: her slipper lowers onto the next step down, the other foot joins it on the same step",
-  "one foot down, the other joins", "about two seconds", "stairs: feet only, side", "absent", "—",
+  "CU from the side at step height: her feet backwards on the flight, toes pointing up the stairs, one slipper's heel lowering backwards onto the next step down, the other foot still on the step above (user Fix 2026-10-01: backwards also)",
+  "one foot back and down onto the step below, the other joins", "about two seconds", "stairs: feet only, side, going down backwards", "absent", "—",
   "ground", PR, "clean", "CU", "ground = the steps themselves", "foreground", "medium", *STAIR_AM, "morning", "problem: grey", False, "MUS-EXPOSE")
 R("P-02a", A, (8, 10), "down", "problem (edit of P0: the top of the flight, HT17)", "N", "L-N-STAIRS (landing)", "N-D1",
-  "MEDIUM from the landing: N sitting on the top step in her house dress, looking down the flight, one hand on the newel, not going",
+  "MEDIUM from the hall floor looking up the whole flight: N sitting on the top step at the head of the stairs in her house dress, one hand on the newel, looking down the flight toward the lens, not going (user Fix 2026-10-01: her at the top of the stairs looking down)",
   "she looks down the stairs and looks away", "one turn of the head, about two seconds", "none", "absent", "—",
-  "eye", TQ, "through", "MEDIUM", "through the balusters = trapped up here", "eyes", "deep", *STAIR_AM, "morning", "problem: grey", True, "MUS-EXPOSE")
+  "low", FR, "clean", "MEDIUM", "low from the foot of the stairs = the whole flight between her and the hall; trapped up there", "eyes", "deep", *STAIR_AM, "morning", "problem: grey", True, "MUS-EXPOSE")
 R("P-03a", A, (11, 12), "brace", "failed fix", "N", "L-N-KITCHEN", "N-D1",
   "CU seated at the kitchen table: a big black hinged knee brace over her bare right knee, sagging below the kneecap, her hand hauling it up",
   "her hand pulls the brace up once and it slips back", "one pull, about two seconds", "hands: large in frame, one movement", "absent (generic brace, §10)", "—",

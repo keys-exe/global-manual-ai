@@ -135,11 +135,11 @@
   ],
   "line": "\"Mama, when did that happen?\"",
   "key": "Mama",
-  "function": "hook — the line (a new angle on the user's call: from inside the open church doorway, the two on the doorstep) · MEDIUM through the doors",
+  "function": "hook — the line (a new angle on the user's call: from inside the open church doorway, the two on the doorstep, close up on the user's Fix) · CU through the doors",
   "subject": "N + C2",
   "location": "L-CHURCH",
   "story_day": "N-D4",
-  "framing": "MEDIUM at eye level from inside the church's open front doorway looking out, the open door leaves soft at the frame edges: N on the threshold turned back to face her daughter, a hand on her hip, a small smile; the daughter on the top step just outside, right hand on the top of the black rail, face up to her mother, mouth open mid-word; the steps and the sunlit sidewalk beyond",
+  "framing": "CU at eye level from inside the church's open front doorway, both heads filling the frame: N nearest the lens in three-quarter profile turned back to her daughter, a small smile; the daughter a step beyond, face up to her mother, mouth open mid-word; the door edge and the sunlit sidewalk soft",
   "action": "the daughter's head tilts as she asks, N's smile widens",
   "pace": "a beat, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -158,13 +158,13 @@
    "height": "eye",
    "side": "three-quarter",
    "fg": "through",
-   "scale": "MEDIUM",
-   "why": "through the doorway = inside with her; she has arrived, the daughter is still on the step; both faces in frame (HT24)"
+   "scale": "CU",
+   "why": "through the doorway in close = the line lands between the two faces; she has arrived, the daughter is still on the step (HT24)"
   },
   "mirror_of": null,
   "focus": {
    "plane": "eyes",
-   "dof": "medium",
+   "dof": "shallow",
    "rack": null,
    "moving_subject": false
   },
@@ -198,15 +198,15 @@
   ],
   "line": "Six weeks ago, I was going down my stairs backwards.",
   "key": "backwards",
-  "function": "problem (HT02)",
+  "function": "problem (HT02; user Fix 2026-10-01: looking up the stairs, stepping backward — so the lens goes to the foot of the flight, edit of P0)",
   "subject": "N",
   "location": "L-N-STAIRS",
   "story_day": "N-D1",
-  "framing": "MEDIUM from the landing: N going down the stairs backwards, facing the steps, both hands gripping the rail",
-  "action": "one careful step down backwards",
+  "framing": "MEDIUM from the hall at the foot of the stairs, the lens low looking up the flight: N mid-flight with her back to the lens, face turned up the stairs toward the landing, both hands gripping the oak rail, one slippered foot reaching back and down to the step below",
+  "action": "one careful step down backwards, her back to the lens",
   "pace": "one step, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "stairs: camera at the top, subject below, slow single step",
+  "staging": "stairs: camera at the foot, subject above with her back to it, slow single step",
   "pin_end": "no",
   "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
   "max": 6,
@@ -218,11 +218,11 @@
   "ledger": "VN04",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "high",
+   "height": "low",
    "side": "behind",
    "fg": "clean",
    "scale": "MEDIUM",
-   "why": "high = small against the drop, overwhelmed"
+   "why": "low from the hall, her back to us = going down the wrong way, small against the flight rising above her"
   },
   "mirror_of": null,
   "focus": {
@@ -265,11 +265,11 @@
   "subject": "N feet",
   "location": "L-N-STAIRS",
   "story_day": "N-D1",
-  "framing": "CU from the side at step height: her slipper lowers onto the next step down, the other foot joins it on the same step",
-  "action": "one foot down, the other joins",
+  "framing": "CU from the side at step height: her feet backwards on the flight, toes pointing up the stairs, one slipper's heel lowering backwards onto the next step down, the other foot still on the step above (user Fix 2026-10-01: backwards also)",
+  "action": "one foot back and down onto the step below, the other joins",
   "pace": "about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "stairs: feet only, side",
+  "staging": "stairs: feet only, side, going down backwards",
   "pin_end": "no",
   "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
   "max": 6,
@@ -328,7 +328,7 @@
   "subject": "N",
   "location": "L-N-STAIRS (landing)",
   "story_day": "N-D1",
-  "framing": "MEDIUM from the landing: N sitting on the top step in her house dress, looking down the flight, one hand on the newel, not going",
+  "framing": "MEDIUM from the hall floor looking up the whole flight: N sitting on the top step at the head of the stairs in her house dress, one hand on the newel, looking down the flight toward the lens, not going (user Fix 2026-10-01: her at the top of the stairs looking down)",
   "action": "she looks down the stairs and looks away",
   "pace": "one turn of the head, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -344,11 +344,11 @@
   "ledger": "",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "eye",
-   "side": "three-quarter",
-   "fg": "through",
+   "height": "low",
+   "side": "front",
+   "fg": "clean",
    "scale": "MEDIUM",
-   "why": "through the balusters = trapped up here"
+   "why": "low from the foot of the stairs = the whole flight between her and the hall; trapped up there"
   },
   "mirror_of": null,
   "focus": {
@@ -359,7 +359,7 @@
   },
   "light": {
    "source": "landing window at the top of the stairs, south wall",
-   "key_side": "R",
+   "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 6500

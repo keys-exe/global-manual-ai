@@ -1,0 +1,70 @@
+{
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Hook 1",
+ "stage": "broll",
+ "beat": "P-03a",
+ "title": "failed fix — v1 pair (photoreal, replaced)",
+ "line": "That big knee brace I bought slid right down my leg.",
+ "flow": [
+  "image"
+ ],
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "ac67432e40d8cd2dde185fdf4936c274",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_d0d0b222-0978-4732-b042-ff84f5759b9f.png",
+   "job": "d0d0b222-0978-4732-b042-ff84f5759b9f",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6724178,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "255954c3264fbcd98c507841ed167ab0",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173518_4bd8ac39-8f6b-4d08-b339-bad4633d0d6b.png",
+   "job": "4bd8ac39-8f6b-4d08-b339-bad4633d0d6b",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7018492,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageAsset": "ac67432e40d8cd2dde185fdf4936c274",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_d0d0b222-0978-4732-b042-ff84f5759b9f.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePrompt": "For the line \"That big knee brace I bought slid right down my leg.\": Keep this photo exactly as it is — the kitchen, its table and chairs, the cabinets, the light — in close at the table, a tall 9:16 crop, and add a seated woman's knee. Image 1 is the kitchen.\nClose-up from above and to the side, her own view of her knee, sharp on the brace: a seated older Black woman's bare right knee forward, a big black hinged knee brace with wide straps slid down below the kneecap, sagging in folds at the top of her shin, her right hand gripping its top strap and hauling it back up, her left hand on the table edge; the hem of a faded blue floral house dress at mid-thigh, a pink terry slipper on the floor, her head and shoulders out of frame above.\nIn frame: the bare knee, the sagging brace, two hands placed, the table edge and one chair of Image 1; every other surface bare.\nThe render of Image 1 in grey morning light from the window over the sink. Brace and dress plain — no lettering, logos or labels; nobody else.",
+ "imageRefs": [
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  }
+ ],
+ "imageFault": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+ "location": "L-N-KITCHEN",
+ "updatedAt": 1790876674688
+}

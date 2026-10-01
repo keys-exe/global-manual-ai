@@ -1,0 +1,36 @@
+[
+ {
+  "v": 1,
+  "pair": "A",
+  "asset": null,
+  "type": "image/png",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_05484467-c2ef-45dd-b536-7ba2fd2e82f6.png",
+  "job": "05484467-c2ef-45dd-b536-7ba2fd2e82f6",
+  "model": "nano_banana_pro → logged nano_banana_2",
+  "connector": "Higgsfield",
+  "credits": 2.14,
+  "size": 8556337,
+  "res": "1536×2752",
+  "at": 1790873674660,
+  "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+  "archived": true,
+  "archiveAsset": "96005abadb741c0c13a30f79590cdbef"
+ },
+ {
+  "v": 2,
+  "pair": "B",
+  "asset": null,
+  "type": "image/png",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_a279e4e0-9af8-446d-94de-0f715b2797c8.png",
+  "job": "a279e4e0-9af8-446d-94de-0f715b2797c8",
+  "model": "nano_banana_pro → logged nano_banana_2",
+  "connector": "Higgsfield",
+  "credits": 2.14,
+  "size": 9277877,
+  "res": "1536×2752",
+  "at": 1790873674660,
+  "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+  "archived": true,
+  "archiveAsset": "d1c613ffb7a29e4aeb0cf95ae9b42ac7"
+ }
+]
