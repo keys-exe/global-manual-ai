@@ -1,39 +1,4 @@
 {
- "act": "Hook 1",
- "beat": "HK-02a",
- "build": "stryde-71-stairs-pixar-song",
- "flow": [
-  "image"
- ],
- "hook": 1,
- "imageAsset": "81d609a4e19343beb2ad07cdd18d7cf4",
- "imageConnector": "Higgsfield",
- "imageCredits": 2.14,
- "imageFault": "user 2026-10-01 Fix: \"this should show walking behind her\" → the daughter walking up the church steps two steps behind her mother, both in frame from the sidewalk at the foot of the steps (an image edit of the confirmed P5-CHURCH, HT17; §30I SH-LOW at FULL); the v9 pair (the daughter alone from the top step) to Old",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  11,
-  12
- ],
- "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": Keep this photo exactly as it is — the church, its steps, the black handrail, the hedges, the camera, the light — as a tall 9:16 crop on the steps, and add two women climbing them. Image 1 is the church steps. Image 2 is the older woman. Image 3 is her daughter.\nThe same woman as Image 2, seventy-one, on the 6th of 8 steps, mid-step, weight on her right foot, left foot lifting to the 7th, both hands free at her sides, chin up, eyes on the doors, seen from behind; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 two steps behind her on the 4th step, walking up behind her, right hand on the black handrail, eyes on her mother's back; olive-green crewneck sweatshirt, black denim shorts, white trainers. Both at true scale to the steps.\nIn the frame: the two women, the one flight of Image 1, the handrail, the hedges, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
- "imageRefs": [
-  {
-   "kind": "character",
-   "label": "C2-DAUGHTER sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 1"
-  },
-  {
-   "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 2"
-  }
- ],
- "imageRes": "1536×2752",
- "imageStatus": "regenerate",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_161353_015997b5-f9f0-460d-8539-abf57d20e106.png",
  "imageVersions": [
   {
    "archived": true,
@@ -216,8 +181,19 @@
    "archiveAsset": "5ccde18df1e6eeb8af3e5acb75524b0a"
   }
  ],
- "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
- "stage": "hooks",
+ "imagePair": [
+  11,
+  12
+ ],
+ "imageAsset": "81d609a4e19343beb2ad07cdd18d7cf4",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_161353_015997b5-f9f0-460d-8539-abf57d20e106.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": Keep this photo exactly as it is — the church, its steps, the black handrail, the hedges, the camera, the light — as a tall 9:16 crop on the steps, and add two women climbing them. Image 1 is the church steps. Image 2 is the older woman. Image 3 is her daughter.\nThe same woman as Image 2, seventy-one, on the 6th of 8 steps, mid-step, weight on her right foot, left foot lifting to the 7th, both hands free at her sides, chin up, eyes on the doors, seen from behind; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. The same woman as Image 3 two steps behind her on the 4th step, walking up behind her, right hand on the black handrail, eyes on her mother's back; olive-green crewneck sweatshirt, black denim shorts, white trainers. Both at true scale to the steps.\nIn the frame: the two women, the one flight of Image 1, the handrail, the hedges, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
+ "imageFault": "user 2026-10-01 Fix: \"this should show walking behind her\" → the daughter walking up the church steps two steps behind her mother, both in frame from the sidewalk at the foot of the steps (an image edit of the confirmed P5-CHURCH, HT17; §30I SH-LOW at FULL); the v9 pair (the daughter alone from the top step) to Old",
+ "imageStatus": "regenerate",
  "status": "regenerate",
  "title": "hook — the witness (last Sunday: the daughter walking behind her up the church steps, edit of P5, HT17) — v1–v10 pairs (replaced; latest: the v9 church pair from the top step)",
  "updatedAt": 1790871835947
