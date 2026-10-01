@@ -1,0 +1,45 @@
+{
+ "beat": "HK-01a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"I'm seventy-one, and I take the stairs\": Keep this photo exactly as it is — hall, staircase, camera, light — as a tall 9:16 crop centred on the flight, and add two women climbing it. Image 1 is the hall and staircase. Image 2 is the older woman. Image 3 is her daughter.\nThe same woman as Image 2, seventy-one, on the 6th of 14 steps mid-step: weight on her right foot, left foot lifting to the 7th, both hands free at her sides, face in part profile, eyes up the stairs, mouth closed; emerald-green church dress to mid-calf, low black pumps. The same woman as Image 3 on the 4th step, inside the rail behind her, right hand on the oak handrail, left hand loose at her side, eyes on her mother's back; olive-green crewneck sweatshirt, black denim shorts, white trainers. The two fill more than half the frame's height.\nIn the frame: the two women, the one staircase of Image 1 with its runner, brass rods, balusters and photo wall, the hall floor below; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1, the women on model, a catchlight in each eye.\nClothing, shoes, walls and frames plain — no lettering, logos or labels; no third person.",
+ "script_line": "I'm seventy-one, and I take the stairs",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P0-PROP-N plate",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character"
+  },
+  {
+   "label": "C2-DAUGHTER sheet v2",
+   "kind": "character"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "973904c55f316a52570c8bff44ef7a07",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null
+}
