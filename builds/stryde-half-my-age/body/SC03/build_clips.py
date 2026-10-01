@@ -218,32 +218,33 @@ SHOTS.append(dict(beat="SC03-SH07", kind="dialogue", duration=4, line=L025, subj
            {"risk": "the Scene 2 outfit returns (v1)", "prevented_by": "his B3 card as Image4, cardigan/checked-shirt negatives"},
            {"risk": "he walks into the room", "prevented_by": "on the threshold, hand on the frame, negative"}]))
 
-SHOTS.append(dict(beat="SC03-SH08", kind="dialogue", duration=4, line=L026, subject_motion="still", gen=4, user_go="board Fix \"USE THE SH07 AS THE REFERENCE FOR THIS\" (2026-10-01)",
-    fix_notes_all=["THIS TWO SHOULD BE CONNECTED AND HUSBAND SHOULD BE LOOKING FROM THE DOORWAY INTO THE BEDROOM LOOKING TO HER", "WRONGH DRAWER", "USE THE SH07 AS THE REFERENCE FOR THIS"],
-    fix="board \"USE THE SH07 AS THE REFERENCE FOR THIS\": v3 was shot from the window side → v4 is SH07's own set-up from the doorway (a still of SH07 v3 attached), closer on her; earlier: user (chat): \"THIS TWO SHOULD BE CONNECTED AND HUSBAND SHOULD BE LOOKING FROM THE DOORWAY INTO THE BEDROOM LOOKING TO HER\"; board \"WRONGH DRAWER\": v2 had her hands in a waist-high upper drawer → v3 the crammed BOTTOM drawer at floor level, her whole figure in frame so it shows; v1 had her alone → v2 keeps SH07's set-up, closer on her, him still in the doorway behind her looking at her",
-    files=["N-FACE", "C3", "L-BEDROOM", "OUT-N-B3", "OUT-C3-B3", "INFO-DRAWER", "REF-SH07"], audios=["N"],
+SHOTS.append(dict(beat="SC03-SH08", kind="dialogue", duration=4, line=L026, subject_motion="still", gen=5, user_go="board Fix \"SHOULD BE A DIFFERENT CAMERA ANGLE IT SHOULD BE FROM THE SIDE OF HER LOOKING TO THE HUSBAND\" (2026-10-01)",
+    fix_notes_all=["THIS TWO SHOULD BE CONNECTED AND HUSBAND SHOULD BE LOOKING FROM THE DOORWAY INTO THE BEDROOM LOOKING TO HER", "WRONGH DRAWER", "USE THE SH07 AS THE REFERENCE FOR THIS", "SHOULD BE A DIFFERENT CAMERA ANGLE IT SHOULD BE FROM THE SIDE OF HER LOOKING TO THE HUSBAND"],
+    fix="board \"SHOULD BE A DIFFERENT CAMERA ANGLE IT SHOULD BE FROM THE SIDE OF HER LOOKING TO THE HUSBAND\": v4 repeated SH07's doorway view → v5 is the reverse, from her side at the chest, her face in three-quarter profile looking across the room at him in the doorway (the window-side set-up that held in v2/v3, the still dropped so it can't pull the camera back, L17); earlier: board \"USE THE SH07 AS THE REFERENCE FOR THIS\": v3 was shot from the window side → v4 is SH07's own set-up from the doorway (a still of SH07 v3 attached), closer on her; earlier: user (chat): \"THIS TWO SHOULD BE CONNECTED AND HUSBAND SHOULD BE LOOKING FROM THE DOORWAY INTO THE BEDROOM LOOKING TO HER\"; board \"WRONGH DRAWER\": v2 had her hands in a waist-high upper drawer → v3 the crammed BOTTOM drawer at floor level, her whole figure in frame so it shows; v1 had her alone → v2 keeps SH07's set-up, closer on her, him still in the doorway behind her looking at her",
+    files=["N-FACE", "C3", "L-BEDROOM", "OUT-N-B3", "OUT-C3-B3", "INFO-DRAWER"], audios=["N"],
     title="Scene 3 · \"It shuts.\"",
     prompt=" ".join([
         manifest([("@image1", "is Her: her face and hair only, a close crop — her clothes come from the outfit card, never from this picture."), ("@image2", SHEET("the husband", HUS_B3)), ("@image3", BEDROOM), ("@image4", CARD_N), ("@image5", CARD_C3), ("@image6", CARD_DRAWER),
-                  ("@image7", "is a still from the shot before: copy its camera position, its framing side, the room, the light and where both people are — this shot continues it; it is never a shot to cut to."),
                   ("@audio1", VOICE("Her"))]),
-        SERIES, LOOK, INHERIT, BEDROOM_EVE, DOORWAY_GEO_REV,
-        "THE SHOT: the same camera position as Image7, from the landing just behind the husband, on a longer lens so she is closer: at the LEFT edge of the frame, soft and cut by the frame, the husband's shoulder and the edge of the open white door with its brass handle; "
-        f"across the room, sharp and larger than in Image7, Her, {HER_ID}, in {HER_B3}, stands at the chest of drawers under the window with her back to the door, her head bowed toward its BOTTOM drawer by her feet, pulled half open and crammed exactly as the drawer card shows it; every other drawer is shut; the bed with the pale green candlewick bedspread on the right.",
-        "HER OUTFIT, exactly the card: the buttoned slate-grey wool cardigan, the cream blouse's small round collar, the navy knee-length skirt, black low-heeled shoes.",
-        "She does not turn round. She turns her head a little toward her right shoulder, so her cheek and the corner of her mouth show in lost profile, and says, flat and quiet: \"" + L026 + "\" Then she looks back down at the drawer. The husband stays where he is on the threshold, watching her.",
+        SERIES, LOOK, INHERIT, BEDROOM_EVE, DOORWAY_GEO,
+        f"THE SHOT: the reverse of the shot before — a medium close-up from her side, at her shoulder height, the camera beside the chest of drawers by the window: Her, {HER_ID}, in {HER_B3}, from the waist up, "
+        "in the near frame on the LEFT, her face in three-quarter profile turned toward the RIGHT of the frame, looking across the room at her husband; her right hand rests on the top of the chest beside her. "
+        f"Across the room on the RIGHT half of the frame, soft but clearly him, the husband in {HUS_B3} stands on the threshold of the open bedroom door, his hand on the door frame, looking back at her. "
+        "The crammed bottom drawer is below the frame by her feet; no other drawer is open.",
+        "HER OUTFIT, exactly the card: the buttoned slate-grey wool cardigan, the cream blouse's small round collar over its neckline.",
+        "She has turned her head from the drawer to look at him. She holds his eyes and says, flat and quiet: \"" + L026 + "\" and presses her lips together. He stays where he is in the doorway, watching her.",
         F2, PHYS,
         "While the line is spoken, Her keeps doing one thing with their hands: her right hand resting on the top of the chest of drawers, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
-        state("HER", "tired, in the outfit of the card, at the chest of drawers, back to the door", "nothing"),
-        "FOCUS: Her is in sharp focus; the husband's shoulder and the door edge in the near frame fall soft. The blur is optical: soft and round, never smeared.",
-        dialogue("Her", L026, VOICE_N, "she will not let him make it a joke, or a conversation. Speaking to her husband in the doorway behind her without turning.",
-                 "closes the subject. Opens flat; turns on 'shuts', where her lips press; exits looking down. Stress on 'shuts'.",
+        state("HER", "tired, in the outfit of the card, at the chest of drawers, turned to look at him", "nothing"),
+        "FOCUS: her nearest eye is in sharp focus; the husband in the doorway falls soft. The blur is optical: soft and round, never smeared.",
+        dialogue("Her", L026, VOICE_N, "she will not let him make it a joke, or a conversation. Speaking to her husband in the doorway across the room, looking at him.",
+                 "closes the subject. Opens flat; turns on 'shuts', where her lips press; exits holding his look. Stress on 'shuts'.",
                  "quiet, flat and dry, matching the face in this shot.",
-                 "she knows nothing has worked, which leaks only through her not turning round."),
+                 "she knows nothing has worked, which leaks only through how flat she keeps it."),
         AUD,
-        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no green jumper, no upper drawer open, no turning round to face him, no camera inside the room, no husband speaking", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no green jumper, no upper drawer open, no hands in a drawer, no husband leaving the doorway, no husband speaking", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "the husband drops out of the frame (v1)", "prevented_by": "him in the doorway behind her written into the shot, sheet + card attached (HT24)"},
-           {"risk": "a different set-up from SH07 (v3)", "prevented_by": "SH07 v3 still attached as Image7, the same camera position, the doorway geography (L17)"}, {"risk": "the wrong drawer again (v2)", "prevented_by": "the BOTTOM drawer at floor level by her shoes, every other drawer shut, the drawer card attached, upper-drawer negative, her whole figure framed"},
+           {"risk": "the camera drifts back to the doorway view (v4)", "prevented_by": "her side named twice, the window-side geography that held in v2/v3, no SH07 still to pull it"}, {"risk": "the wrong drawer again (v2)", "prevented_by": "the BOTTOM drawer at floor level by her shoes, every other drawer shut, the drawer card attached, upper-drawer negative, her whole figure framed"},
            {"risk": "the husband speaks her line", "prevented_by": "only her voice master as Audio1, negative"}]))
 
 SHOTS.append(dict(beat="SC03-SH09", kind="dialogue", duration=7, line=L028, subject_motion="still", gen=3,
