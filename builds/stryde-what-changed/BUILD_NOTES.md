@@ -400,3 +400,27 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - **B22c v1**: the copy's band stretches slack — OK; the end folds a little.
 - Act map row B19-BR2 updated (same staircase as B19b); angles PASS (HK1–HK3); docs/actmap Plan v36, Current v36, Current 2 v22.
 - Higgsfield balance 10,500.65 (shared account — it fell by ~1,767 since the last reading; this round used ~57).
+
+### 2026-10-01 — "fix & confirm" (images B18b, B19-BR2, B21-BR, B22a, B23a; videos B21, B22-BR, B23b)
+- Image Fixes (Higgsfield NBP, 2 cr each), To check; replaced versions → Old 2:
+  - **B18b v4** ("keep her hands down, don't hold anything", edit of v3): both arms down, hands empty — clean.
+  - **B19-BR2 v6** ("continuous of 'Go to your own stairs and come down forwards'", edit of B19b v7): coming down forwards, hand on the wall, small smile. Flaw: she is barely further down than in B19b — same angle and scale, so B19b → B19-BR2 cuts as a jump (angles.py JUMP FAIL, the only one). Offered a closer version to the user.
+  - **B21-BR v3** ("different broll here", edit of B20 v1): anatomy, strap removed, the joint ringed cool blue, the tendon glowing red — clean. Level and closer than B20 (EYE FRO CU).
+  - **B22a v2** ("different broll here", edit of B18b v3): both knees front-on, a strap below each kneecap. Flaw: wordmarks read "STRYDE" in capitals.
+  - **B23a v3** ("different broll here", edit of B19b v7): low on her legs on the stairs, strap on the knee on the left of the frame. Flaw: the bare leg is the one stepping down, not the strapped one.
+- Videos (Kling 3.0 pro, 4 s, 7 cr), To check: **B21 v1** (gentle kick; the ball rolls out of frame and he steps forward — strap holds); **B22-BR v1** (two brisk steps on the park path, strap stays on the right knee — clean); **B23b v1** (two steps down from the top, hands free — clean). B21 and B22-BR are over 15 MB → split into parts.
+- B20 and B22c videos had flipped to `ready` by an image re-Confirm — set back to `review` (unchanged).
+- **B19b**: v7 image confirmed; its next video would be the 4th for this shot → waits for the user's go.
+- Act map rows B18b, B19-BR2, B21-BR, B22a, B23a updated; angles: JUMP B19b/B19-BR2 only (see above). docs/actmap Plan v37, Current v37, Current 2 v23. Higgsfield 10,457.65.
+
+### 2026-10-01 — "GO" (B19b video 4, B19-BR2 video 3) + four confirmed images → clips
+- User "GO" for the extra generations. Both clips start from frames where both hands already have a job (one flat on the wall, one on the bare thigh); the prompt keeps both hands still, no wince/lean, one step.
+  - **B19b v4**: no hand on the banister the whole clip — the hand fault is fixed. She comes down a few stairs, not one. Strap stays put.
+  - **B19-BR2 v3**: no hand on the banister; comes down towards the camera. Flaw: it looks almost the same as B19b v4 (same stairs, angle, outfit, move), so B19b → B19-BR2 still cuts as a jump.
+- Images confirmed (B18b v4, B21-BR v3, B22a v2, B23a v3) → clips (Kling 3.0 pro, 4 s, 7 cr):
+  - **B18b v2**: hands down and empty throughout; she walks right down to the camera and her knees leave the frame in the last half second.
+  - **B21-BR v1**: the red tendon glow pulses, the blue joint ring holds — clean.
+  - **B22a v2**: small weight shift, straps hold. Flaw: a hand edges into the top-right corner mid-clip.
+  - **B23a v1**: the foot lands on the stair edge. Flaws: a hand edges into the top right; the strap changes shape in the last second.
+- Replaced videos (B19b v3, B19-BR2 v2, B18b v1, B22a v1) → Old 2. Higgsfield 10,397.65.
+- Learned: giving both hands a job in the START FRAME (wall + thigh) and saying "neither hand moves" finally kept Kling off the banister.
