@@ -788,6 +788,7 @@ const STAGES = [
   {key:"cast",       name:"Cast",       folder:"02_CAST",       sub:"Character sheets, checked image by image", kind:"image"},
   {key:"locations",  name:"Locations",  folder:"03_LOCATIONS",  sub:"Property and location plates", kind:"image"},
   {key:"voice",      name:"Voice",      folder:"04_VOICE",      sub:"Everyone who speaks has a voice", kind:"audio", wide:true},
+  {key:"music",      name:"Music",      folder:"04_MUSIC",      sub:"The track the video is cut to", kind:"audio", musicOnly:true, wide:true},
   {key:"vo",         name:"VO",         folder:"04_VOICE",      sub:"Voice-over takes for the hooks and the body", kind:"audio", narration:true, wide:true},
   {key:"talking",    name:"Talking heads", folder:"06_TALKING_HEADS", sub:"HeyGen Avatar V, after the VO is locked", kind:"video", narration:true, wide:true},
   {key:"hooks",      name:"Hooks",      folder:"05_HOOKS",      sub:"One opening per hook variant", kind:"video", wide:true},
@@ -878,10 +879,12 @@ function beatSort(a,b){return String(a.beat||"").localeCompare(String(b.beat||""
 // Which stages this build has: films (Mode 4/5, AI Drama) carry their voices in the scenes, so no VO and no
 // talking heads; a narration build shows Talking heads only when it uses them.
 function isFilm(b){return !!b&&(b.kind==="film"||(b.kind!=="narration"&&/mode\s*[45]\b|film|drama/i.test(`${b.mode||""} ${b.format||""}`)))}
-function needsTalking(b,gens){if(!b||isFilm(b)) return false; if(b.talkingHeads===true) return true; if(b.talkingHeads===false) return false; return gens.some(g=>g.stage==="talking")}
+// A music video (§3C): no voices, no VO, no talking heads — the music track replaces them.
+function isMusic(b){return !!b&&(b.kind==="music"||/music\s*video/i.test(String(b.format||"")))}
+function needsTalking(b,gens){if(!b||isFilm(b)||isMusic(b)) return false; if(b.talkingHeads===true) return true; if(b.talkingHeads===false) return false; return gens.some(g=>g.stage==="talking")}
 // every scene is its own stage (Scene 1, Scene 2…), placed where the B-roll stage sits; a film with no scenes yet shows "Scenes"
 function stagesFor(b,gens){
-  const base=STAGES.filter(s=>!(s.narration&&isFilm(b))&&!(s.key==="talking"&&!needsTalking(b,gens)));
+  const base=STAGES.filter(s=>!(s.narration&&isFilm(b))&&!(s.key==="talking"&&!needsTalking(b,gens))&&!(s.musicOnly&&!isMusic(b))&&!(isMusic(b)&&["voice","vo","talking"].includes(s.key)));
   const nums=[...new Set(gens.filter(g=>["hooks","broll","talking"].includes(g.stage)).map(sceneNum).filter(Boolean))].sort((x,y)=>x-y);
   const scenes=nums.map(n=>({key:"scene-"+n,scene:n,name:"Scene "+n,folder:"07_BROLL",sub:"Its images, then its clips",kind:"video",wide:true}));
   return base.flatMap(s=>{
