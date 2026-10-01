@@ -2,12 +2,12 @@
  "model": "nano_banana_2",
  "refs": [
   [
-   "R1-MAUREEN sheet",
-   "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"
+   "B08-BR v1 \u2014 the shot to edit (Image 1)",
+   "../broll/B08-BR_v1.png"
   ],
   [
-   "P1-PROP-M plate",
-   "520de2e7-e577-4afe-b18c-b79dbed0acf0"
+   "R1-MAUREEN sheet",
+   "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"
   ]
  ]
 }

@@ -492,3 +492,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Flaws reported: HK1-a2 came out front-on with red muscles and the TEXT "PATELLAR TENDINOPATHY / PAIN POINT" (needs a Fix);
   HK1-b's cartilage looks smooth and healthy, not worn, and the glow sits on the shin bone; HK1-a's front foot is cut by the frame edge.
 - The live-action v2s moved to Old 2 (appended there) and deleted from Current 2. Act map rows changed to ANAT.
+
+### 2026-10-01 — FIX round (board notes)
+- Merged the default branch (standards V7.81.0). This build keeps its V7.79 locks; the new `angles.py` ANAT style check ("0 anatomy beats in 0 styles") reads this build's act map, which has no style fields, so that FAIL is not acted on here.
+- B18b "GIVE ME DIFFERENT BROLL HERE, MAKE SURE PRODUCT IS RIGHT" → new shot (v5): knee-level front-on from the bottom stairs, Maureen walking straight onto the stairs; built as an edit of the confirmed B22a v4 on Kie nano-banana-pro. **The product came out WRONG**: the edit redrew both straps as plain black neoprene bands with a small wordmark (no shell, no peaks, no chrome slides). Her hands are also in frame, and she's on a landing, not stepping onto the bottom stair. Lesson: changing the camera angle of the approved image still makes the model redraw the strap — keep Image 1's camera and change only the feet/room. v4 image + v2 video moved to Old 2.
+- B08-BR "WRONG WOMAN, FIX THIS" (Current board) → v2, edit of v1 on Kie nano-banana-2: now the R1 back view (short white crop, slight build). Flaw: she stands with both feet planted rather than mid-stride. v1 image + video moved to Old 2.
