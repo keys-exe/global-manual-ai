@@ -318,4 +318,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   ~3.9 s = 4 beats at 65 BPM) and the close's pulse — rhythm, not splices; LENGTH differs only by the plan's 2 s tail. On the board To check:
   MUS-HK1/2/3, MUS-BODY, PREVIEW-HK1 (the HK1 variant with the locked VO on top). The raw compositions are force-added to git (`edit/music/*.mp3`).
   Also landed: BR-16a v3 (treadmill), BR-23 v2 (going up), BR-10c v2 (red on the patellar tendon) — To check.
+- **2026-10-01 (new session): user "FIX THOSE".** Merged the default branch (standards V7.77.0). One Fix on the board: BR-10c video v2 "I NEED A
+  NEW MOVEMENT BASE ON THE IMAGE". Diagnosis (§22X, motion): v2's "the foot lands, the knee bends" on a frame whose foot is already planted made
+  the model invent a step-up (the body, both hands and a second leg came into frame, the knee bent into a squat). v3 is written in the §35A
+  short form (`acts/build_r20_videos.py`, 762 chars, the line, the action from this frame, one camera clause, 3 facts, 5 negatives, taste
+  HT11/HT12/HT13): the leg stays planted, the knee settles a few degrees, three red pulses land on the patellar tendon. Preflight passes all
+  but "motion confirmed" — §22X wants the user's confirm of the "Video will show" line before a video credit; this board's template predates
+  the motion-plan display, so the line is asked in chat (also stored as `motionPlan` on the card, status ready). On the confirm: rebuild with
+  `--confirmed` and send.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

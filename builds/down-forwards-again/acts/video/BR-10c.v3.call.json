@@ -1,0 +1,53 @@
+{
+ "beat": "BR-10c",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_103842_2296ce70-78ef-4af7-bc65-f62ef96602a1.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "It was where the load was landing.",
+ "pace": "brisk",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 3,
+ "risks": [
+  {
+   "risk": "the red lands on the kneecap or joint (the user's image fault)",
+   "prevented_by": "lands on the patellar tendon below the kneecap; no red on the kneecap, no red in the joint"
+  },
+  {
+   "risk": "a second leg appears",
+   "prevented_by": "no second leg; HOLD-AC"
+  },
+  {
+   "risk": "the glow fades in slowly and reads as ambient",
+   "prevented_by": "flares at the landing; no gradual onset, no crossfade"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
+ "audio": false,
+ "prompt": "For the line \"It was where the load was landing.\": The leg stays planted on the step as it is; the knee settles a few degrees as the weight arrives, over about a second, and three red pulses run down the thigh one after another and land on the patellar tendon below the kneecap, which flares bright red; it ends on the tendon glowing red and the kneecap plain ivory. The virtual camera drifts slowly sideways at a steady distance, a small move. One leg only, from mid-thigh to the foot, the foot flat on the step the whole time. The glow sits only on the cord below the kneecap; the kneecap and the joint stay calm. The bones and muscles keep their shape and place. No second leg, no hands or body entering the frame, no stepping, no red on the kneecap, no zoom.",
+ "video_version": 3,
+ "fix_note": "v2's 'the foot lands, the knee bends' on a planted frame invented a step-up (body, hands and a second leg came into frame, a squat) → the foot stays planted, a slight settle only, the pulses land on the tendon; §35A form",
+ "motion_plan": "The leg stays planted on the step as it is; the knee settles a few degrees as the weight arrives, over about a second, and three red pulses run down the thigh one after another and land on the patellar tendon below the kneecap, which flares bright red; it ends on the tendon glowing red and the kneecap plain ivory.",
+ "motion_confirmed": false,
+ "taste": [
+  "HT11",
+  "HT12",
+  "HT13"
+ ],
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "user_fault": "I NEED A NEW MOVEMENT BASE ON THE IMAGE",
+ "user_go": "the user, 2026-10-01: 'FIX THOSE' — the card's Fix note on v2"
+}
