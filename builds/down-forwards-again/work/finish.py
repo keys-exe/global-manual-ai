@@ -24,7 +24,9 @@ import imageio_ffmpeg  # noqa: E402
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 W, H, FPS = 1080, 1920, 24
 FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
-SIZE, PAD_X, PAD_Y, RADIUS, Y_CENTER = 70, 26, 14, 18, 0.65
+SIZE, PAD_X, PAD_Y, RADIUS, Y_CENTER, LINE_GAP, MAXW = 64, 26, 14, 18, 0.58, 6, 4
+SAFE_L, SAFE_R = 100, 940          # the right-side rail (likes, comments, share) starts ~960 px
+SAFE_CX, SAFE_W = (SAFE_L + SAFE_R) / 2, SAFE_R - SAFE_L
 snap = lambda t: round(t * FPS) / FPS
 
 def audio_of(video, out):
@@ -46,19 +48,50 @@ def timed_words(hook, hook_wav, body_wav):
     return out
 
 def cards(ws):
+    """2-4 words a card (user 2026-10-01: "the caption should not be one word only use the safezone"),
+    broken at punctuation or a pause; a lone word joins its neighbour when they run together."""
+    cs, cur = [], []
+    for k, w in enumerate(ws):
+        cur.append(w)
+        gap = ws[k + 1][0] - w[1] if k + 1 < len(ws) else 9
+        if len(cur) == MAXW or (len(cur) >= 2 and re.search(r"[.,?!;:]$", w[2])) or gap > 0.35:
+            cs.append(cur); cur = []
+    if cur: cs.append(cur)
+    out = []
+    for c in cs:   # a one-word card joins the card before it when there is room and no real pause between them
+        if out and (len(c) == 1 or len(out[-1]) == 1) and len(out[-1]) + len(c) <= MAXW and c[0][0] - out[-1][-1][1] <= 0.35 \
+                and not re.search(r"[.?!]$", out[-1][-1][2]):
+            out[-1] = out[-1] + c
+        else:
+            out.append(c)
     timed = []
-    for i, (s, e, w) in enumerate(ws):
-        nxt = ws[i + 1][0] if i + 1 < len(ws) else e + 0.3
-        end = nxt if nxt - e <= 0.5 else e + 0.25          # one word per card; a real pause: the card leaves with its word
-        timed.append((s, max(end, s + 0.12), w))
+    for i, c in enumerate(out):
+        end = out[i + 1][0][0] if i + 1 < len(out) else c[-1][1] + 0.3
+        if end - c[-1][1] > 0.5: end = c[-1][1] + 0.25          # a real pause: the card leaves with its last word
+        timed.append((c[0][0], max(end, c[0][0] + 0.2), " ".join(w for _, _, w in c)))
     return timed
 
-def render_card(tok, path, font):
+def wrap(text, font, d):
+    words, lines = text.split(), [""]
+    for w in words:
+        t = (lines[-1] + " " + w).strip()
+        if lines[-1] and d.textlength(t, font=font) > SAFE_W - 2 * PAD_X: lines.append(w)
+        else: lines[-1] = t
+    return lines
+
+def render_card(text, path, font):
+    """Centred in the 9:16 safe zone: clear of the top 14 %, the bottom 25 % (caption/CTA UI) and the right-side
+    button rail; at most SAFE_W wide, wrapped to two lines."""
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
-    b = d.textbbox((0, 0), tok, font=font); wdt = b[2] - b[0]; asc, desc = font.getmetrics(); th = asc + desc
-    bw, bh = wdt + 2 * PAD_X, th + 2 * PAD_Y; x0, y0 = (W - bw) // 2, int(H * Y_CENTER - bh / 2)
+    lines = wrap(text, font, d); asc, desc = font.getmetrics(); lh = asc + desc
+    widths = [d.textlength(l, font=font) for l in lines]
+    bw = int(max(widths)) + 2 * PAD_X; bh = lh * len(lines) + LINE_GAP * (len(lines) - 1) + 2 * PAD_Y
+    x0 = int(SAFE_CX - bw / 2); y0 = int(H * Y_CENTER - bh / 2)
+    assert x0 >= SAFE_L and x0 + bw <= SAFE_R and y0 >= H * 0.14 and y0 + bh <= H * 0.75, (text, x0, bw, y0, bh)
     d.rounded_rectangle([x0, y0, x0 + bw, y0 + bh], RADIUS, fill=(255, 255, 255, 245))
-    d.text((x0 + PAD_X - b[0], y0 + PAD_Y), tok, font=font, fill=(10, 10, 10, 255)); img.save(path)
+    for i, (l, wd) in enumerate(zip(lines, widths)):
+        d.text((SAFE_CX - wd / 2, y0 + PAD_Y + i * (lh + LINE_GAP)), l, font=font, fill=(10, 10, 10, 255))
+    img.save(path)
 
 def main():
     hook = sys.argv[1]
