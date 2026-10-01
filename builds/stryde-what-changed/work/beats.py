@@ -2016,6 +2016,52 @@ B["B10d"] = (NB2, ["R1", "P4"], photo([
     "no looking into the lens, no smile, no product anywhere, no knee strap, no printing on the blister pack, no pharmacy box, "
     "no brand names, no readable text, no logos, no second person, no extra hands, no extra fingers"))
 
+# ── 2026-10-01 user "GIVE ME NEW MULTIPLE DIFFERENT BROLL HERE" on Hook 1's first line — four new shots, phrase by phrase. No product
+# (the hook is before the product). Made for Current 2 (Current's store is full).
+B["HK1-a"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held low at the side of his staircase, side-on, waist-down. Desmond climbs his stairs carrying two heavy, "
+    "full plastic shopping bags, one in each hand, his front knee deeply bent as it takes his weight on the next stair, the bags pulling "
+    "his arms straight down. Medium: from his waist to his feet, the stairs and the heavy bags filling the frame.",
+    "His legs and hands: THE SAME MAN as in the attached character sheet — dark brown older skin, khaki shorts, white trainers with navy trim.",
+    D_STAIRS,
+    angle("HK1-a", "his legs and the bags on the stairs"),
+    focus("the hands and what they hold", deep=False).replace("the hands and what they hold", "his front knee and the bags").replace("the room behind", "the hall behind"),
+    "Grey morning daylight from the hall window on the left."],
+    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no brace, no text on the bags, no logos, no "
+    "supermarket names, no second person, no extra legs, no extra hands"))
+B["HK1-a2"] = (NB2, ["R1", "P3"], photo([
+    "A snapshot from a phone resting on the ground beside her front door, three-quarter on. Maureen's white canvas plimsoll is just "
+    "landing on the worn grey stone of her front-door step, the weight coming down onto it; the hem of her denim skirt and her bare "
+    "ankle just in frame above. Extreme close-up: the plimsoll and the stone step fill the frame, the front path soft beyond.",
+    "Her foot: THE SAME WOMAN as in the attached character sheet — pale older skin, a white canvas plimsoll.",
+    "Her terraced house front from the attached street plate (Image 2), soft beyond.",
+    angle("HK1-a2", "her foot on the step"),
+    focus("the foreground"),
+    "Grey morning daylight, soft and even."],
+    NO_FACE + ", no knee strap, no product anywhere, no logos on the plimsoll, no second foot in focus, no extra feet, no extra toes"))
+B["HK1-b"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone held just above and behind her shoulder, looking down. Maureen's older hand holds a small faded 1980s "
+    "colour photograph: in it, her younger self — about thirty, the same face, dark hair — striding out on a green hillside in walking "
+    "boots, laughing. Her thumb rests on the photo's white border. Close: her hand and the photograph fill the frame, the pale oak "
+    "kitchen table soft below.",
+    "Her hand: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, a plain gold wedding ring, "
+    "a dusty-pink cardigan cuff.",
+    angle("HK1-b", "her hand and the photograph"),
+    focus("the hands and what they hold", deep=False).replace("the room behind", "the table below"),
+    "Soft overcast daylight from the kitchen window on the left."],
+    NO_FACE + " of the older woman, no product anywhere, no knee strap, no text on the photograph, no date stamp, no second photograph, "
+    "no extra fingers"))
+B["HK1-b2"] = (NB2, ["R1", "P3"], photo([
+    "A snapshot from a phone at eye level on the pavement, looking straight up her short front path. Maureen comes up the path towards "
+    "the camera with a full cotton shopping bag over one arm, mid-stride, smiling easily, relaxed and unhurried, as if nothing in the "
+    "world is wrong. Medium: her from the knees up, her terraced house and front door behind her.",
+    R1 + " Wearing a dusty-pink cardigan over a white top and a mid-blue denim skirt.",
+    "Her terraced house front from the attached street plate (Image 2).",
+    angle("HK1-b2", "her coming up the path"),
+    focus("everything"),
+    "Soft grey morning daylight."],
+    "no looking into the lens, no knee strap, no product anywhere, no text on the bag, no logos, no second person, no extra hands"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

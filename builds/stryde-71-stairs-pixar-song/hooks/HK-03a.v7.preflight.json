@@ -1,0 +1,48 @@
+{
+ "beat": "HK-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Mama, when did that happen?\": Keep this picture exactly as it is — the view from the landing down the flight, photo wall, balusters, handrail, the hall far below, the light — and change only the two women. Image 1 is the confirmed frame from the landing. Image 2 is the mother. Image 3 is her daughter.\nMedium close-up from the landing over the mother's near shoulder: the same woman as Image 2 stands on the landing floor at the very top, back to the lens, her emerald-green right shoulder and silver twist-out soft in the near right foreground. Below her the same woman as Image 3 on the 14th and top step, one step down, right hand on the handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. The flight of Image 1 drops away behind her to the hall floor.\nIn the frame: the two women, the one staircase of Image 1, the photo wall, the hall floor far below; every other surface bare. Two hands on the daughter, two legs.\nThe render and light of Image 1, a catchlight in each eye. Clothing and walls plain — no lettering, logos or labels; no third person.",
+ "script_line": "Mama, when did that happen?",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "HK-02a v7 A (confirmed frame from the landing)",
+   "kind": "frame"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character"
+  },
+  {
+   "label": "C2-DAUGHTER sheet v2",
+   "kind": "character"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "e7a7cd34d255d219fad70fd135bfec53",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22",
+  "HT05",
+  "HT23"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "this should be at the second floor"
+}
