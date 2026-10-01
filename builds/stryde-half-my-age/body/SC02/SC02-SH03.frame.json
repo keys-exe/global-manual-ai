@@ -2,7 +2,7 @@
  "beat": "SC02-SH03",
  "kind": "image",
  "mode": 4,
- "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards. One step at a time.\": Keep this photo exactly as it is — Image 1, the stairs from the landing down to the green front door, banister on the left, photographs on the right wall, brass rods; the camera stays high on the landing, recomposed as a tall vertical frame. SCENE MASTER, Scene 2, next morning. Add the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in a pale-blue quilted dressing gown, grey nightdress and grey slippers. She is going down backwards: on the second step, facing up toward the camera, turned to the banister, both hands gripping its rail on frame left, left foot lowered to the next step, right foot on the step above. Head bowed, looking down at her feet, jaw set; about a third of the frame's height. Every step bare. Cold grey morning light from the frosted landing window, 6500K, key from the left; the hall below dim. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
+ "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards. One step at a time.\": she goes down her stairs backwards, one step at a time. SCENE MASTER, Scene 2, next morning. A medium-wide shot level with her, side-on in profile from beside the flight, through the banister spindles, long lens, shallow focus on her face. Image 1 is this staircase — the oatmeal carpet, brass stair rods, dark banister — copied exactly. Mid-flight is the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in a pale-blue quilted dressing gown and grey slippers, facing up the stairs, going down backwards. Both hands grip the banister rail, knuckles pale; her left foot reaches down for the next step, her right still on the step above; eyes down on the step, jaw set, a breath held. Every step bare. Cold grey morning: the frosted landing window behind her rims her hair and shoulders, her face half in shadow; 6500K, soft, low-key. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
  "script_line": "Six weeks ago, I was going down my stairs backwards. One step at a time.",
  "refs": [
   {
@@ -24,8 +24,8 @@
  "body": true,
  "room": true,
  "product": false,
- "match": "plate",
- "edit_of": "L-STAIRS v4",
+ "match": null,
+ "edit_of": null,
  "pair": [
   "gpt_image_2_5",
   "gpt_image_2_5"
@@ -38,9 +38,10 @@
   "HT02",
   "HT04",
   "HT09",
-  "HT17",
   "HT18",
   "HT19",
   "HT22"
- ]
+ ],
+ "generation": 2,
+ "fix_note": "I WANT NEW ONES IN SCENE TWO MORE EMOTIONAL CAMERA ANGLES I WANT THE BEST NETFLIX STYLE CINEMATIVE"
 }

@@ -24,35 +24,43 @@ L017 = "Just leave it by the stairs, love. I’ll get it later."
 L019 = "Six weeks ago, I was going down my stairs backwards. One step at a time."
 L022 = "If I’m being honest, some days I wasn’t going down them at all. I’d just stay upstairs."
 
+# Round 2 (user Fix, chat: "I want new ones in scene two, more emotional camera angles, the best Netflix-style cinematic"):
+# each master rebuilt around one emotional idea — SH01 trapped behind the spindles, SH03 the strain in profile against the
+# cold window, SH07 a sliver of her through the door gap, small in the negative space. Low-key motivated light, deeper shadow.
+GO = "I WANT NEW ONES IN SCENE TWO MORE EMOTIONAL CAMERA ANGLES I WANT THE BEST NETFLIX STYLE CINEMATIVE"
 FRAMES = [
-    dict(beat="SC02-SH01", line=L017, refs=["P-HOUSE", "N"], face=True, body=True, match=None, role="master",
+    dict(beat="SC02-SH01", line=L017, refs=["P-HOUSE", "N"], face=True, body=True, match=None, role="master", gen=2,
          motion="From this frame: she keeps her right hand on the newel post and calls down the line; she stays on the landing.",
          prompt=" ".join([
-             f"For the line \"{L017}\": she stands stranded at the top of her stairs at night, calling down.",
-             "SCENE MASTER, Scene 2. A full-length shot from low at the foot of the stairs, three-quarter on, looking up the straight flight to the landing.",
-             "Image 1 is this hall: stairs up the left-hand wall, dark banister and square spindles on the open right side, framed photographs up the wall, brass stair rods, oatmeal carpet — copied exactly.",
-             f"On the landing stands {HER}, in a heather-green jumper, charcoal A-line skirt and grey slippers.",
-             "Her right hand rests on the top newel post, her left hand loose at her side; she is looking down the stairs, mouth open mid-word, about a third of the frame's height.",
-             "Two plain shopping bags stand on the carpet at the foot of the bottom step; the telephone table holds only the telephone.",
-             "Night: hall pendant and landing lamp, warm 2800K, key from the right; the rest of the house deep blue-grey.",
+             f"For the line \"{L017}\": she is stranded at the top of her own stairs at night, calling down.",
+             "SCENE MASTER, Scene 2. A low, wide shot from the dark hall floor, looking up the whole flight through the banister's square spindles: the dark spindles soft in the near foreground like bars, the flight rising between them.",
+             "Image 1 is this hall and staircase — copied exactly.",
+             f"At the top, small in the frame, stands {HER}, in a heather-green jumper and charcoal skirt, in the one pool of warm light from the landing lamp.",
+             "Her right hand grips the newel post, her left hand at her chest; she is looking down the stairs, mouth open mid-word, the face lit, tired.",
+             "Two plain shopping bags at the foot of the bottom step, near frame; every step bare.",
+             "Low-key night: one warm 2800K lamp on the landing, the hall below in deep blue-grey shadow, high contrast.",
              PLAIN, LOOK])),
-    dict(beat="SC02-SH03", line=L019, refs=["L-STAIRS", "N"], face=True, body=True, match="plate", edit_of="L-STAIRS v4", role="master",
+    dict(beat="SC02-SH03", line=L019, refs=["L-STAIRS", "N"], face=True, body=True, match=None, role="master", gen=2,
          motion="From this frame: she lowers her left foot to the next step down, then her right foot beside it, both hands sliding down the banister — one step every three seconds, backwards.",
          prompt=" ".join([
-             f"For the line \"{L019}\": Keep this photo exactly as it is — Image 1, the stairs from the landing down to the green front door, banister on the left, photographs on the right wall, brass rods; the camera stays high on the landing, recomposed as a tall vertical frame.",
-             f"SCENE MASTER, Scene 2, next morning. Add {HER}, in a pale-blue quilted dressing gown, grey nightdress and grey slippers.",
-             "She is going down backwards: on the second step, facing up toward the camera, turned to the banister, both hands gripping its rail on frame left, left foot lowered to the next step, right foot on the step above.",
-             "Head bowed, looking down at her feet, jaw set; about a third of the frame's height. Every step bare.",
-             "Cold grey morning light from the frosted landing window, 6500K, key from the left; the hall below dim.",
+             f"For the line \"{L019}\": she goes down her stairs backwards, one step at a time.",
+             "SCENE MASTER, Scene 2, next morning. A medium-wide shot level with her, side-on in profile from beside the flight, through the banister spindles, long lens, shallow focus on her face.",
+             "Image 1 is this staircase — the oatmeal carpet, brass stair rods, dark banister — copied exactly.",
+             f"Mid-flight is {HER}, in a pale-blue quilted dressing gown and grey slippers, facing up the stairs, going down backwards.",
+             "Both hands grip the banister rail, knuckles pale; her left foot reaches down for the next step, her right still on the step above; eyes down on the step, jaw set, a breath held.",
+             "Every step bare.",
+             "Cold grey morning: the frosted landing window behind her rims her hair and shoulders, her face half in shadow; 6500K, soft, low-key.",
              PLAIN, LOOK])),
-    dict(beat="SC02-SH07", line=L022, refs=["L-BEDROOM", "N"], face=True, body=True, match="plate", edit_of="L-BEDROOM v1", role="master",
+    dict(beat="SC02-SH07", line=L022, refs=["L-BEDROOM", "N"], face=True, body=True, match=None, role="master", gen=2,
          motion="From this frame: she sits still on the edge of the bed, hands in her lap, eyes on the window; only her breathing moves.",
          prompt=" ".join([
-             f"For the line \"{L022}\": Keep this photo exactly as it is — Image 1, the bedroom from the doorway: the bed with the pale green candlewick bedspread on the right, the dark-wood chest of drawers under the window, the walnut wardrobe on the left, the half-open door soft in the near foreground; the camera stays in the doorway, recomposed as a tall vertical frame.",
-             f"SCENE MASTER, Scene 2, that afternoon. Add {HER}, in the pale-blue quilted dressing gown and grey slippers.",
-             "She sits alone on the near edge of the bed, three-quarter from behind, both feet flat on the carpet, both hands in her lap, her eyes on the window; about a third of the frame's height.",
+             f"For the line \"{L022}\": she stays upstairs, alone, instead of going down.",
+             "SCENE MASTER, Scene 2, that afternoon. Seen from the dark landing through the gap of the half-open bedroom door: the door and frame dark and soft at both sides of the frame, a tall bright sliver of room between them.",
+             "Image 1 is this bedroom — the pale green candlewick bedspread, the dark-wood chest of drawers under the window — copied exactly.",
+             f"In the sliver, small, sits {HER}, in the pale-blue dressing gown, on the far edge of the bed, three-quarter from behind.",
+             "Both hands rest in her lap, both feet flat on the carpet; her eyes on the window and the grey garden beyond the nets.",
              "The bed made and bare; the bedside table holds only its lamp, switched off.",
-             "Flat grey overcast daylight through the nets, 6500K, from the window ahead.",
+             "Flat grey afternoon light from the window ahead silhouettes her softly; the landing around the door in shadow.",
              PLAIN, LOOK])),
 ]
 
@@ -64,7 +72,7 @@ if __name__ == "__main__":
                 "face": f["face"], "body": f["body"], "room": True, "product": False, "match": f.get("match"), "edit_of": f.get("edit_of"),
                 "pair": ["gpt_image_2_5", "gpt_image_2_5"], "model": "gpt_image_2_5 · sunburst · high · 2k · 9:16",
                 "role": f["role"], "motion_plan": f["motion"], "scene": 2,
-                "taste": ["HT02", "HT04", "HT09", "HT17", "HT18", "HT19", "HT22"]}
+                "taste": ["HT02", "HT04", "HT09", "HT18", "HT19", "HT22"], "generation": f.get("gen", 1), "fix_note": GO if f.get("gen", 1) > 1 else None}
         (H / f"{f['beat']}.frame.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
         (H / f"{f['beat']}.frame.txt").write_text(f["prompt"])
         print(f["beat"], len(f["prompt"]), "chars")
