@@ -1,0 +1,43 @@
+{
+ "beat": "D-02",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"Every stride,\": From this frame: his feet take two strides across the frame at one step per second, about two seconds. Handheld phone, a gentle breath sway, the camera stays where it is. The feet end exactly as in the end frame; exactly two feet in the same white-and-tan shoes, the grass still. No third foot, no hopping.",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-02.A.png",
+ "start_approved": true,
+ "pinned": true,
+ "end_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-02-END.A.png",
+ "end_approved": true,
+ "approved_by": "user picked the start and end frames (A) + CONFIRM (2026-10-01)",
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "Every stride,",
+ "motion_plan": "From this frame: his feet take two strides across the frame at one step per second, about two seconds.",
+ "motion_confirmed": true,
+ "risk_class": "travel",
+ "pilot": "confirmed",
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT18"
+ ],
+ "risks": [
+  {
+   "risk": "extra foot",
+   "prevented_by": "exactly two feet; no third foot"
+  },
+  {
+   "risk": "shoes change",
+   "prevented_by": "the same white-and-tan shoes"
+  },
+  {
+   "risk": "odd gait",
+   "prevented_by": "one step per second, two strides"
+  }
+ ]
+}

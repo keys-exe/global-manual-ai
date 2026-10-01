@@ -1,0 +1,49 @@
+{
+ "beat": "D-10",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"One for each knee.\": From this frame: he lifts the second strap a few centimetres into the light, about a second. Handheld phone, a gentle breath sway, the camera stays where it is. It ends exactly as in the end frame; both straps keep their exact shape, the worn one still below his right kneecap, his left hand on his thigh. No strap bending, no third strap.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-10.B.png",
+ "start_approved": true,
+ "pinned": true,
+ "end_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-10-END.A.png",
+ "end_approved": true,
+ "approved_by": "user picked the start and end frames (A) + CONFIRM (2026-10-01)",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "One for each knee.",
+ "motion_plan": "From this frame: he lifts the second strap a few centimetres into the light, about a second.",
+ "motion_confirmed": true,
+ "risk_class": "hand_product",
+ "pilot": "confirmed",
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP06",
+  "FP09",
+  "FP11",
+  "HT06",
+  "HT07",
+  "HT18"
+ ],
+ "risks": [
+  {
+   "risk": "the held strap deforms",
+   "prevented_by": "both straps keep their exact shape; no strap bending"
+  },
+  {
+   "risk": "worn strap slides",
+   "prevented_by": "the worn one still below his right kneecap"
+  },
+  {
+   "risk": "extra strap",
+   "prevented_by": "no third strap"
+  }
+ ]
+}

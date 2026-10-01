@@ -1,0 +1,34 @@
+{
+ "beat": "D-06-END",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"So you walk the course instead of watching it.\": Keep this photo exactly as it is \u2014 the place, the camera, the light, the clothes, the strap and everything in it. Image 1 is the photo. Change only where he is: he has taken two more steps toward the lens, a little larger in the frame but still head to shins, his left leg now forward, the same bag on his right shoulder, the strap still seated below his right kneecap. Right hand stays on the bag strap, left arm swinging; looking ahead past the lens, smiling, mouth closed. An ordinary iPhone photo, nothing restyled. Clothing and bag plain \u2014 no lettering or logos but the strap's own wordmark; no second strap.",
+ "script_line": "So you walk the course instead of watching it.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "D-06 start (picked A, v3)",
+   "kind": "frame"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-06.v2.A.png",
+ "taste": [
+  "FP01",
+  "FP03",
+  "FP11",
+  "HT01",
+  "HT13"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "ref_urls": [
+  "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-06.v2.A.png"
+ ]
+}

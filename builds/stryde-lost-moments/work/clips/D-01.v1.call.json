@@ -1,0 +1,43 @@
+{
+ "beat": "D-01",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"A round is hours on your feet.\": From this frame: they walk on up the fairway at a normal walking pace, three steps each, about three seconds. Handheld phone, a gentle breath sway, the camera stays where it is. They end exactly as in the end frame; the same two men, bag and trolley the whole way, the fairway unchanged. No third person, no camera move.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-01.A.png",
+ "start_approved": true,
+ "pinned": true,
+ "end_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-01-END.A.png",
+ "end_approved": true,
+ "approved_by": "user picked the start and end frames (A) + CONFIRM (2026-10-01)",
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "A round is hours on your feet.",
+ "motion_plan": "From this frame: they walk on up the fairway at a normal walking pace, three steps each, about three seconds.",
+ "motion_confirmed": true,
+ "risk_class": "travel",
+ "pilot": "confirmed",
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT18"
+ ],
+ "risks": [
+  {
+   "risk": "the men morph or swap",
+   "prevented_by": "the same two men, bag and trolley"
+  },
+  {
+   "risk": "they overshoot",
+   "prevented_by": "end exactly as in the end frame"
+  },
+  {
+   "risk": "pace too quick",
+   "prevented_by": "normal walking pace, three steps"
+  }
+ ]
+}
