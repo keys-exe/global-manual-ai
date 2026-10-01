@@ -1,0 +1,57 @@
+{
+ "beat": "C-05",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Round the block first.\": he walks toward the camera along his residential street, Bramble trotting at heel on the red lead.\nMedium-full shot from hip height, three-quarter front, normal phone lens, head to feet, the houses of Image 3 behind.\nImage 1: the strap. Image 2: the strap worn. Image 3: his street. Image 4: the man. Image 5: the dog.\nThe strap in Image 1 copied exactly \u2014 same shell, band, slides and wordmark \u2014 12 \u00d7 5 cm, about a quarter of the frame wide, seated just below his right kneecap as in Image 2, the kneecap uncovered. The same man as Image 4 in a grey sweatshirt under a burgundy quilted gilet, stone shorts above the knee and brown walking boots; the springer spaniel of Image 5 at his left side.\nLeft hand holds the lead, right arm swinging; looking ahead past the camera, a small smile, mouth closed.\nIn the frame: one man, one dog, one lead, the pavement and houses; nothing else.\nSoft afternoon light through thin cloud, muted natural colour, real skin. An ordinary iPhone photo, nothing retouched.\nClothing plain \u2014 no lettering or logos but the strap's own wordmark.",
+ "script_line": "Round the block first.",
+ "face": true,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "product_tq_left.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "C-HKb (his street)",
+   "kind": "location"
+  },
+  {
+   "label": "C3 Winston sheet",
+   "kind": "character"
+  },
+  {
+   "label": "DOG-BRAMBLE sheet",
+   "kind": "character"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP11",
+  "HT01",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: he walks toward the camera along the street, the dog at heel, two steps, about three seconds.",
+ "ref_urls": [
+  "products/stryde/stryde_refs/product_tq_left.jpg",
+  "products/stryde/stryde_refs/worn_front.jpg",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_124230_f91a9b21-6419-4779-af8c-b8d704ff7f89.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_a6a36eec-ccb0-49a2-a70c-e29c191c9c4d.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133540_378e491a-bdcc-4504-b470-2b4c2c32cc76.png"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "beat": "C-06",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Then the field.\": man and dog small on the field path, the dog bounding ahead of him off the lead.\nWide shot from a slightly high angle, three-quarter, normal phone lens, the whole field open, the path curving away.\nImage 1: the field. Image 2: the man. Image 3: the dog.\nA man in his sixties with the build of Image 2, in a grey sweatshirt under a burgundy quilted gilet, stone shorts above the knee and brown walking boots, small in the frame mid-stride, the red lead coiled in his left hand; the springer spaniel of Image 3 a few metres ahead, mid-bound.\nHis right arm swinging; facing along the path.\nIn the frame: one man, one dog, the path, the field and hedges; nothing else.\nSoft afternoon light through thin cloud, muted natural colour, real skin. An ordinary iPhone photo, nothing retouched.\nClothing plain \u2014 no lettering or logos; no second person.",
+ "script_line": "Then the field.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P4-FIELD plate",
+   "kind": "location"
+  },
+  {
+   "label": "C3 Winston sheet (build, clothes)",
+   "kind": "frame"
+  },
+  {
+   "label": "DOG-BRAMBLE sheet",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: they walk on along the field path at a normal walking pace, the dog bounding ahead, about three seconds.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133537_c94f2912-3e28-4a7b-9ee6-211deebf9143.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_a6a36eec-ccb0-49a2-a70c-e29c191c9c4d.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133540_378e491a-bdcc-4504-b470-2b4c2c32cc76.png"
+ ]
+}

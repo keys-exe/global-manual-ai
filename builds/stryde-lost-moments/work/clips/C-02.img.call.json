@@ -1,0 +1,38 @@
+{
+ "beat": "C-02",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Every stride,\": his brown walking boots and the dog's paws step along a grey pavement, side by side.\nClose shot at ground level, side profile, normal phone lens, knees down, the kerb running across the frame.\nImage 1: the man's boots and legs. Image 2: the dog.\nExactly two boots (Image 1's brown walking boots, grey socks, the hem of navy shorts at the top edge) and the four paws and legs of the springer spaniel of Image 2, one boot mid-stride.\nBoth of his hands outside the frame above; the dog's head out of frame.\nIn the frame: two boots, one dog's legs, the pavement, the kerb; nothing else.\nFlat grey overcast morning light, muted colour, real skin. An ordinary iPhone photo, nothing retouched.\nBoots and pavement plain \u2014 no lettering or logos.",
+ "script_line": "Every stride,",
+ "face": false,
+ "room": false,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "C3 Winston sheet (boots)",
+   "kind": "frame"
+  },
+  {
+   "label": "DOG-BRAMBLE sheet",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: two strides along the pavement, one step per second, the dog's paws beside his boots.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_a6a36eec-ccb0-49a2-a70c-e29c191c9c4d.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133540_378e491a-bdcc-4504-b470-2b4c2c32cc76.png"
+ ]
+}

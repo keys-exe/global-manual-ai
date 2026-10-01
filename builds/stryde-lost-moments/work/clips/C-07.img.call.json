@@ -1,0 +1,57 @@
+{
+ "beat": "C-07",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Then the long loop you both miss.\": from behind, he walks away along the hedge path, Bramble trotting ahead on the red lead.\nMedium shot from knee height, three-quarter back from his right, normal phone lens, waist down, the path leading away.\nImage 1: the strap. Image 2: the strap worn. Image 3: the hedge path. Image 4: the man. Image 5: the dog.\nThe strap in Image 1 copied exactly \u2014 same shell, band, slides and wordmark \u2014 12 \u00d7 5 cm, about a quarter of the frame wide, seated just below his right kneecap as in Image 2, the kneecap uncovered. A man with the legs and skin of Image 4, stone shorts, brown walking boots, the hem of a burgundy gilet at the top edge; the springer spaniel of Image 5 ahead on the path.\nLeft hand at his side holding the red lead, right hand out of frame above.\nIn the frame: one man from the waist down, one dog, one lead, the path and hedge; nothing else.\nSoft afternoon light through thin cloud, muted natural colour, real skin. An ordinary iPhone photo, nothing retouched.\nClothing plain \u2014 no lettering or logos but the strap's own wordmark.",
+ "script_line": "Then the long loop you both miss.",
+ "face": false,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "product_tq_left.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "P4-FIELD plate (hedge path)",
+   "kind": "location"
+  },
+  {
+   "label": "C3 Winston sheet (legs, boots)",
+   "kind": "frame"
+  },
+  {
+   "label": "DOG-BRAMBLE sheet",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP11",
+  "HT02",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: three steps away along the hedge path, one step per second, the dog trotting ahead.",
+ "ref_urls": [
+  "products/stryde/stryde_refs/product_tq_left.jpg",
+  "products/stryde/stryde_refs/worn_front.jpg",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133537_c94f2912-3e28-4a7b-9ee6-211deebf9143.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_a6a36eec-ccb0-49a2-a70c-e29c191c9c4d.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133540_378e491a-bdcc-4504-b470-2b4c2c32cc76.png"
+ ]
+}

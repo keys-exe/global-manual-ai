@@ -1,0 +1,48 @@
+{
+ "beat": "C-01",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Here's why the walks got shorter.\": at his front gate, Bramble strains ahead on the red lead and he holds back, one hand on his right knee.\nMedium shot from hip height, three-quarter front, normal phone lens, head to knees, the dog in front of him.\nImage 1: his house and gate. Image 2: the man. Image 3: the dog. Image 4: his outfit.\nThe same man as Image 2 in a red-and-navy check flannel shirt under an open olive waxed jacket, navy shorts above the knee and brown walking boots, as in Image 4. The springer spaniel of Image 3, red collar, pulling on a red lead toward the pavement.\nLeft hand holds the lead, right hand pressed on his right knee; looking down at the dog, brow tight, mouth closed.\nIn the frame: one man, one dog, one lead, the gate and house front; nothing else.\nFlat grey overcast morning light, muted colour, real skin. An ordinary iPhone photo, nothing retouched.\nClothing plain \u2014 no lettering or logos.",
+ "script_line": "Here's why the walks got shorter.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "C-HKb (outside his house)",
+   "kind": "location"
+  },
+  {
+   "label": "C3 Winston sheet",
+   "kind": "character"
+  },
+  {
+   "label": "DOG-BRAMBLE sheet",
+   "kind": "character"
+  },
+  {
+   "label": "C-HKa (day-1 outfit)",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT01",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: the dog leans on the lead; he stays put at the gate, about two seconds.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_124230_f91a9b21-6419-4779-af8c-b8d704ff7f89.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_a6a36eec-ccb0-49a2-a70c-e29c191c9c4d.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133540_378e491a-bdcc-4504-b470-2b4c2c32cc76.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_204703_48a7897f-b698-41b9-b867-c2f8073021b4.png"
+ ]
+}

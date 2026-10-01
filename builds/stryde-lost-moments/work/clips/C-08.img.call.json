@@ -1,0 +1,43 @@
+{
+ "beat": "C-08",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Get the lead.\": in his hall, his hand lifts the red dog lead off a brass hook, Bramble's head at his knee looking up.\nClose shot from low, three-quarter, normal phone lens, the hook and his hand at the top, the dog's head below.\nImage 1: his house \u2014 sage walls, quarry-tiled floor. Image 2: the man's hands and skin. Image 3: the dog.\nHis right hand (Image 2, a grey sweatshirt cuff) gripping the red lead on the hook; the head of the springer spaniel of Image 3 looking up, ears forward; stone shorts at the edge.\nHis left hand out of frame.\nIn the frame: one hand, one red lead, one hook, the dog's head, the sage wall; nothing else.\nSoft daylight through front-door glass, muted natural colour. An ordinary iPhone photo, nothing retouched.\nWall and hook plain \u2014 no lettering or logos.",
+ "script_line": "Get the lead.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P3-PROP-W (his house, sage walls, quarry tiles)",
+   "kind": "location"
+  },
+  {
+   "label": "C3 Winston sheet (hands)",
+   "kind": "frame"
+  },
+  {
+   "label": "DOG-BRAMBLE sheet",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT01",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: his hand lifts the lead off the hook, one lift, about a second.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133541_b2ba5e02-c0a7-4ed9-bbcb-8eb33c4e04aa.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_a6a36eec-ccb0-49a2-a70c-e29c191c9c4d.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133540_378e491a-bdcc-4504-b470-2b4c2c32cc76.png"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "beat": "C-04",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"So you take the lead back.\": at his front gate a woman's hand passes the red dog lead into his big hand.\nClose shot at chest height, side profile, normal phone lens, two hands meeting over the gate top, the gate between them.\nImage 1: the gate and the red lead. Image 2: the man's hands and skin.\nHis right hand (Image 2's hands, a grey sweatshirt cuff under a burgundy gilet edge) closing on the lead handle; her left hand (a white woman in her forties, plain blue cardigan cuff) letting go of it.\nExactly two hands, one red lead looping down out of frame.\nIn the frame: two hands, one lead, the gate top; nothing else.\nSoft afternoon light through thin cloud, muted natural colour, real skin. An ordinary iPhone photo, nothing retouched.\nClothing plain \u2014 no lettering or logos.",
+ "script_line": "So you take the lead back.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "C-HKb (gate, red lead)",
+   "kind": "location"
+  },
+  {
+   "label": "C3 Winston sheet (hands)",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT01",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: the lead passes from her hand to his, one pass, about a second.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_124230_f91a9b21-6419-4779-af8c-b8d704ff7f89.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_a6a36eec-ccb0-49a2-a70c-e29c191c9c4d.png"
+ ]
+}
