@@ -1,0 +1,33 @@
+{
+ "beat": "B23b",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b23b\",\"subject\":\"Seen from just behind her on the landing: a white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt, denim skirt and white plimsolls, standing at the top of her carpeted stairs, the flight going down ahead of her to a sunlit front door; her hands hang free at her sides. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: she steps forwards and down onto the first stair, facing down the stairs, then the second foot follows onto the next stair — two easy steps down, about two seconds, steady and unhurried, her hands staying free at her sides. She stays in frame. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair and fabric lag a little; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no hand on the banister, no hand on the handrail, no hand on the wall, no turning round, no face to camera, no stumbling, no camera following her down the stairs, no second person, no extra legs, no feet warping, no shoe changing shape, no music, no speech, no slow motion\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-what-changed/broll/B23b_v2.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "a free hand drifts onto the banister (B19b's fault)",
+   "prevented_by": "'her hands staying free at her sides', 'no hand on the banister, no hand on the handrail'"
+  },
+  {
+   "risk": "the camera follows her down (§27G)",
+   "prevented_by": "locked-off camera, 'no camera following her down the stairs'"
+  },
+  {
+   "risk": "feet warp on the stairs",
+   "prevented_by": "two steps at a counted pace, HOLD-C + NEG-WARP-C"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}
