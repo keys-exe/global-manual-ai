@@ -1,0 +1,61 @@
+{
+ "videoVersions": [
+  {
+   "asset": "fd3d7510a4dbe96f31cf19f9cf878af9",
+   "at": 1790879441635,
+   "connector": "Kling",
+   "credits": 32,
+   "duration": 4.04,
+   "fromImage": 5,
+   "job": "AVQFMONukGJ4IfiOICrhuf_Vz2b98IFT6hgiNfAubAB3_55Ju4dNZMuGZDuWwicaB0DF7eGy",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v5 A (job 257b0fc3) · what I see: the lower heel settles on the step below and the other foot follows; the feet stay turned up the stairs · replaced on the user's Fix (never talk the lyrics in B-roll); copied to Old versions",
+   "res": "1072×1928",
+   "size": 7207960,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/ed657454-a0c6-4691-9ef1-38f2c7e7f06a-2ddgBxbNi261B_5vJYz6kA-output.mp4?x-kcdn-pid=112372",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "743b683df5fa55b7e68d5f5718b5a017"
+  },
+  {
+   "v": 2,
+   "asset": "81924488136f9eeaa8edd820ce4abc9e",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/546b7953-5fcf-4ada-b975-46758b77cf9c-2JOCIgScxv0ubXoLDAVXfw-output.mp4?x-kcdn-pid=112372",
+   "job": "AaAOyXEk_2RrgNMFgyETzVWjaMEum3RdwccuIj53pvbMeZzCsijUhiia72bNd47c-Evwn8Jq",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 32,
+   "size": 7149802,
+   "res": "1072×1928",
+   "duration": 4.04,
+   "at": 1790881100527,
+   "fromImage": 5,
+   "note": "user Fix: this should be stepping backwards → each foot moves down and away from the top, toes up the stairs, the feet never climb; nobody speaks (§35A rule 6) · what I see: the first heel settles on the step below, but the second foot then swings up and forward — it still reads as climbing more than stepping back"
+  }
+ ],
+ "videoAsset": "81924488136f9eeaa8edd820ce4abc9e",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/546b7953-5fcf-4ada-b975-46758b77cf9c-2JOCIgScxv0ubXoLDAVXfw-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AaAOyXEk_2RrgNMFgyETzVWjaMEum3RdwccuIj53pvbMeZzCsijUhiia72bNd47c-Evwn8Jq",
+ "videoConnector": "Kling",
+ "model": "kling-video-v3_0",
+ "credits": 32,
+ "duration": 4.04,
+ "videoRes": "1072×1928",
+ "videoAt": 1790881100527,
+ "prompt": "For the line \"One step at a time.\": From this frame: one foot back and down onto the step below, the other joins — about two seconds; camera RV sway — the virtual camera breathes in place, never travels. In close at step height, she steps backwards down the flight: the lower slipper's heel settles on the step below and takes her weight, then the upper foot lifts and reaches back and down to join it — each foot moves downward and away from the top, toes always pointing up the stairs; the hand stays on the rail; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; the feet never turn around or climb.",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "videoFault": "user Fix: this should be stepping backwards → each foot moves down and away from the top, toes up the stairs, the feet never climb; nobody speaks (§35A rule 6)",
+ "regens": 1,
+ "status": "review",
+ "videoNote": "clip v2 · what I see: the first heel settles on the step below, but the second foot then swings up and forward — it still reads as climbing more than stepping back",
+ "updatedAt": 1790881100527
+}

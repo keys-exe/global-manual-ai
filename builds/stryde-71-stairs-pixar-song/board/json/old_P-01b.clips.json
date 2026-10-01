@@ -1,0 +1,35 @@
+{
+ "videoVersions": [
+  {
+   "asset": "743b683df5fa55b7e68d5f5718b5a017",
+   "at": 1790879441635,
+   "connector": "Kling",
+   "credits": 32,
+   "duration": 4.04,
+   "fromImage": 5,
+   "job": "AVQFMONukGJ4IfiOICrhuf_Vz2b98IFT6hgiNfAubAB3_55Ju4dNZMuGZDuWwicaB0DF7eGy",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v5 A (job 257b0fc3) · what I see: the lower heel settles on the step below and the other foot follows; the feet stay turned up the stairs",
+   "res": "1072×1928",
+   "size": 7207960,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/ed657454-a0c6-4691-9ef1-38f2c7e7f06a-2ddgBxbNi261B_5vJYz6kA-output.mp4?x-kcdn-pid=112372",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "743b683df5fa55b7e68d5f5718b5a017"
+  }
+ ],
+ "videoAsset": "743b683df5fa55b7e68d5f5718b5a017",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/ed657454-a0c6-4691-9ef1-38f2c7e7f06a-2ddgBxbNi261B_5vJYz6kA-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AVQFMONukGJ4IfiOICrhuf_Vz2b98IFT6hgiNfAubAB3_55Ju4dNZMuGZDuWwicaB0DF7eGy",
+ "videoAt": 1790879441635,
+ "duration": 4.04,
+ "videoFault": "replaced on the user's Fix: never talk the lyrics/script in B-roll",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "status": "regenerate",
+ "updatedAt": 1790881140666
+}

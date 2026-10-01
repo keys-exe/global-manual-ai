@@ -4,7 +4,8 @@
  "bars": 1.5,
  "beat": "P-02a",
  "build": "stryde-71-stairs-pixar-song",
- "duration": 6,
+ "credits": 48,
+ "duration": 6.04,
  "editOf": "stryde-71-stairs-pixar-song__P0-PROP-N",
  "eg": "",
  "flow": [
@@ -56,6 +57,7 @@
  ],
  "imageType": "image/png",
  "imageUnused": 5,
+ "imageUnusedArchived": "fd5dd95d55dcceb1fa3f0a7d145ee021",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180142_04e4ff58-b639-4064-accc-908bc636261e.png",
  "imageVersions": [
   {
@@ -127,13 +129,15 @@
    "v": 4
   },
   {
+   "archiveAsset": "fd5dd95d55dcceb1fa3f0a7d145ee021",
+   "archived": true,
    "asset": "d4e98c1bf9a1a04369112e4a5d9015b9",
    "at": 1790877909563,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "e443ca80-6a5d-4e63-accd-97ba7c3ef2e6",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user Fix: \"this should be her at the top of the stairs looking down\" → from the hall floor looking up the whole flight — she sits on the top step looking down it (act map re-angled low · front)",
+   "note": "user Fix: \"this should be her at the top of the stairs looking down\" → from the hall floor looking up the whole flight — she sits on the top step looking down it (act map re-angled low · front) · not chosen (the user picked the other); copied to Old versions",
    "pair": "A",
    "res": "1536×2752",
    "size": 8122962,
@@ -163,20 +167,54 @@
  "light": "landing window at the top of the stairs, south wall · key R · morning · problem: grey · 6500K",
  "line": "I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.",
  "location": "L-N-STAIRS (landing)",
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: she looks down the stairs and looks away — one turn of the head, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
  "music": "MUS-EXPOSE",
  "onScreen": 4.88,
  "pinEnd": "no",
  "product": "absent · —",
+ "prompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": From this frame: she looks down the stairs and looks away — one turn of the head, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the hall floor looking up the flight, she looks down the stairs toward the lens, holds, then turns her face away to the side; her hand stays on the newel, her body stays seated on the top step; the whole staircase stays exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never stands.",
  "section": "The low point and what failed — MUS-EXPOSE",
  "shot": "low · front · clean · MEDIUM",
  "songIn": 21.83,
  "songOut": 26.71,
  "stage": "broll",
  "staging": "none",
- "status": "ready",
+ "status": "review",
  "storyDay": "N-D1",
  "title": "problem (edit of P0: the top of the flight, HT17)",
- "updatedAt": 1790878869148
+ "updatedAt": 1790879386272,
+ "videoAsset": "e69e36bbf36719d12782764199e8d7e2",
+ "videoAt": 1790879441635,
+ "videoConnector": "Kling",
+ "videoJob": "Ae7xxyHuF6LmLZ5oV7UyCvFXaFggT_VwkxglIXEpR2ZgPyozblpz-KZ3E7W6p5J63PNBu9Vo",
+ "videoNote": "first clip of this beat, from the confirmed v6 B · what I see: she stays on the top step, looks down the flight and away; her mouth opens into a smile mid-clip as if speaking",
+ "videoRes": "1072×1928",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/f3b33137-f1e5-49d5-9c46-ce477a449dcb-4r8X6ev41rNXPNsDc8FxUg-output.mp4?x-kcdn-pid=112372",
+ "videoVersions": [
+  {
+   "asset": "e69e36bbf36719d12782764199e8d7e2",
+   "at": 1790879441635,
+   "connector": "Kling",
+   "credits": 48,
+   "duration": 6.04,
+   "fromImage": 6,
+   "job": "Ae7xxyHuF6LmLZ5oV7UyCvFXaFggT_VwkxglIXEpR2ZgPyozblpz-KZ3E7W6p5J63PNBu9Vo",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v6 B (job 04e4ff58) · what I see: she stays on the top step, looks down the flight and away; her mouth opens into a smile mid-clip as if speaking",
+   "res": "1072×1928",
+   "size": 3337101,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/f3b33137-f1e5-49d5-9c46-ce477a449dcb-4r8X6ev41rNXPNsDc8FxUg-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  }
+ ]
 }

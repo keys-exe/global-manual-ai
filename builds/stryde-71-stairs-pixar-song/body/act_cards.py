@@ -12,7 +12,8 @@ RL = {"P0": {"label": "P0-PROP-N plate (confirmed)", "kind": "location", "ref": 
       "P3": {"label": "P3-RECEPTION plate (confirmed)", "kind": "location", "ref": f"{B}__P3-RECEPTION", "edited": "§6A rule 3, HT17"},
       "N": {"label": "N-NARR sheet v2", "kind": "character", "ref": f"{B}__N-NARR"}, "C1": {"label": "C1-LORETTA sheet v2", "kind": "character", "ref": f"{B}__C1-LORETTA"},
       "C2": {"label": "C2-DAUGHTER sheet v2", "kind": "character", "ref": f"{B}__C2-DAUGHTER"},
-      "P03A": {"label": "P-03a frame v3 A (confirmed) — the brace", "kind": "frame", "ref": f"{B}__P-03a"}}
+      "P03A": {"label": "P-03a frame v3 A (confirmed) — the brace", "kind": "frame", "ref": f"{B}__P-03a", "edited": "§6A rule 3, HT17, FP14"},
+      "P02B": {"label": "P-02a frame v6 B (confirmed) — her at the top of the flight", "kind": "frame", "ref": f"{B}__P-02a", "edited": "§6A rule 3, HT17, FP14"}}
 writes = []
 for b in CFG["beats"]:
     pre = H / "patch" / f"{b}.versions_pre_v{V}.json"; vers = json.load(open(pre)) if pre.exists() else []
@@ -33,7 +34,7 @@ for b in CFG["beats"]:
     patch = {"imageVersions": vers + new, "imagePair": [n0 + 1, n0 + 2], "imageAsset": new[0]["asset"], "imageType": "image/png", "imageUrl": new[0]["url"], "imageJob": new[0]["job"],
              "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair", "imageConnector": "Higgsfield", "imageCredits": CRED, "imageRes": "1536×2752", "imageAt": now,
              "imageStatus": "review", "imagePick": {"__delete__": True}, "imageUnused": {"__delete__": True}, "imagePrompt": (H / f"{b}.v{PV}.prompt.txt").read_text(), "imageFault": CFG.get("notes", {}).get(b, CFG["note"]) if V > 1 else None, "imageNote": {"__delete__": True},
-             "imageMatch": "frame" if CFG["refs"][b][0] == "P03A" else "plate", "imageRefs": refs, "status": "ready" if vers or True else "ready", "shot": f"{a.get('height','')} · {a.get('side','')} · {a.get('fg','')} · {a.get('scale','')}", "angle": f"{a.get('height','')} · {a.get('side','')} · {a.get('fg','')} · {a.get('scale','')} — {a.get('why','')}",
+             "imageMatch": "frame" if CFG["refs"][b][0] in ("P03A", "P02B") else "plate", "imageRefs": refs, "status": "ready" if vers or True else "ready", "shot": f"{a.get('height','')} · {a.get('side','')} · {a.get('fg','')} · {a.get('scale','')}", "angle": f"{a.get('height','')} · {a.get('side','')} · {a.get('fg','')} · {a.get('scale','')} — {a.get('why','')}",
              "framing": r["framing"], "motionPlan": f"From this frame: {r['action']} — {r['pace']}; camera {r['camera']}", "location": r["location"], "line": r["line"], "title": r["function"], "act": r["act"],
              "imageTaste": ["HT02", "HT03", "HT04", "HT08", "HT09", "HT12", "HT17", "HT18", "HT19", "HT22"], "updatedAt": now}
     if not vers:   # a new beat: the base fields of a generation doc

@@ -220,6 +220,9 @@ BOILER = [  # the stacked paragraphs §35A retired: each adds motion or contradi
 FAST = re.compile(r"\b(?:run(?:s|ning)?|sprint\w*|jog\w*|rac(?:es|ing)|fast|quickly|hurr(?:y|ies|ying))\b", re.I)
 
 
+NOSPEAK = re.compile(r"\b(?:mouths? (?:closed|shut|still)|never (?:speaks?|sings?|talks?)|nobody (?:speaks?|sings?|talks?)|no one (?:speaks?|sings?)|lips (?:still|closed)|does not (?:speak|sing))\b", re.I)
+
+
 def run_beat_video(c, p, check):
     norm = lambda t: re.sub(r"[\s“”\"']+", " ", (t or "").strip().lower())
     check("≤ 1,000 characters (§35A)", len(p) <= VID_MAX, f"{len(p)} chars")
@@ -233,6 +236,8 @@ def run_beat_video(c, p, check):
     check(f"≤ {IMG_NEG_MAX} negatives (§35A)", len(negs) <= IMG_NEG_MAX, f"{len(negs)} no/never/without/avoid")
     hits = [b for b in BOILER if b.lower() in p.lower()]
     check("no retired boilerplate (§35A)", not hits, "; ".join(hits))
+    # L15 (2026-10-01, user: "you should never talk the lyrics/script in broll") — a B-roll is pictures under the voice; the prompt says so.
+    check("nobody mouths the line (§35A rule 6, HT25)", bool(NOSPEAK.search(p)), "e.g. 'mouth closed, she never speaks or sings' or 'nobody speaks'")
     rc = (c.get("risk_class") or "").lower() or None
     if rc in RISKY:
         check(f"{rc}: end frame pinned (§27G)", bool(c.get("pinned")) or bool((c.get("pin_waived") or "").strip()), "first-and-last frame, or the user's words in pin_waived")

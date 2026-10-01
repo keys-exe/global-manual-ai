@@ -99,12 +99,37 @@ FIX4 = {"P-01a": "she should be at the top of the middle of the stairs she shoul
 OUTV = {"P-05b": 1, "P-05c": 1}
 if V >= 4:
     P = P4
+
+# ---- v5 (user Fix 2026-10-01: "she should be starting from the top to show case the moving backwards"): the plate cropped to the landing and the top of the flight
+# (plates/P0-PROP-N_top.png, Higgsfield media 692d9e49) so the model has only the top to put her on.
+REF_P0T = {"label": "P0-PROP-N plate (confirmed) — cropped to the landing and the top of the flight", "kind": "location"}
+P5 = {}
+P5["P-01a"] = (f'''For the line "{L("P-01a")}": Keep this photo exactly as it is — the top of the staircase, the landing, the oak rail, the photo wall, the light — a tall 9:16 crop on the landing and the top steps, and add the woman. Image 1 is the top of the staircase and the landing. Image 2 is the woman.
+Medium shot from below, sharp on her. The same woman as Image 2, seventy-one, starting from the top: standing on the top step at the head of the stairs, going down backwards — her back to the lens, face turned up to the landing, eyes on its floor, both hands gripping the oak rail, her right foot reaching back and down to the step below; {WARD}. Nobody else.
+In the frame: the woman from behind on the top step of Image 1, the landing above her, a few steps below her, the rail, the photo wall; every other surface bare. Two hands on the rail, two legs.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Clothing and frames plain — no lettering, logos or labels; no second person.''', [REF_P0T, REF_N], True, "692d9e49-493e-4792-92c1-4f362f6961d5")
+FIX5 = {"P-01a": "she should be starting from the top to show case the moving backwards"}
+if V >= 5:
+    P = P5
+
+# ---- v6 (same Fix, 2026-10-01): the v5 pair (edit of the cropped plate) still put her at the newel — the crop kept the bottom of the flight in. So the
+# frame is now an edit of the confirmed P-02a v6 B (her on the top step, the whole flight from the hall floor): the same woman stood up at the top (FP14).
+P02B = "aa7875902a56e13b0b58fc4f961b1371"   # P-02a v6 B, confirmed — job 04e4ff58
+REF_P02B = {"label": "P-02a frame v6 B (confirmed) — her at the top of the flight", "kind": "frame"}
+P6 = {}
+P6["P-01a"] = (f'''For the line "{L("P-01a")}": Keep this photo exactly as it is — the hall floor, the whole flight, the oak rail and newel, the photo wall, the light — and only stand the woman up. Image 1 is the picture; nothing in it moves but her.
+Medium shot from the hall floor looking up the whole flight, sharp on her. The woman of Image 1, seventy-one, now standing on the top step where she sat, turned away from the lens to face the landing, going down backwards: her back to us, the back of her grey head, both hands gripping the oak rail, her right foot reaching back and down to the step below; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.
+In the frame: the woman from behind at the top of the flight of Image 1, every step between her and the lens, the rail, the newel, the photo wall; every other surface bare. Two hands on the rail, two legs.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Clothing and frames plain — no lettering, logos or labels; no second person.''', [REF_P02B], False, P02B)
+FIX6 = {"P-01a": "she should be starting from the top to show case the moving backwards (v5 pair kept her at the newel — the crop still held the bottom of the flight; now an edit of the P-02a frame)"}
+if V >= 6:
+    P = P6
 if __name__ == "__main__":
     fails = 0
     for b, (pr, refs, face, eo) in P.items():
         c = {"beat": b, "kind": "image", "mode": 2, "prompt": pr, "script_line": L(b), "face": face, "room": True, "body": b != "P-05b", "refs": refs,
-             "match": "frame" if eo == P3A else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
-        OV = (OUTV if V >= 4 else {}).get(b, V)
+             "match": "frame" if eo in (P3A, P02B) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
+        OV = (OUTV if V == 4 else {}).get(b, V)
         (H / f"{b}.v{OV}.prompt.txt").write_text(pr); (H / f"{b}.v{OV}.preflight.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
         r = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v{OV}.preflight.json")], capture_output=True, text=True)
         print(f"{b} v{OV}: {len(pr)} chars — {'PASS' if r.returncode == 0 else 'FAIL'}"); [print("   ", l) for l in r.stdout.splitlines() if "FAIL" in l]
