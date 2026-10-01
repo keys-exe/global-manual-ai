@@ -134,8 +134,8 @@ SHOTS.append(dict(beat="SC03-SH03", kind="broll", duration=4, line="", vo="L023"
            {"risk": "the clinician's face appears", "prevented_by": "hands and forearms only, negative"},
            {"risk": "the room drifts", "prevented_by": "the physio room card as Image2"}]))
 
-SHOTS.append(dict(beat="SC03-SH04", kind="broll", duration=4, line="", vo="L023", subject_motion="in_place", gen=3, user_go="board Fix (2026-10-01): the note on SH04, made again with the strip card",
-    fix_notes_all=["FEELS LIKE JUST PRESSING INSTEAD OF SWALLOWING IT AND ALSO THE PILL BED IS STILL COMPLETE", "v2 (not put up): the strip still full, a green jumper — the cast sheet's outfit — instead of the cardigan"],
+SHOTS.append(dict(beat="SC03-SH04", kind="broll", duration=6, line="", vo="L023", subject_motion="in_place", gen=3, user_go="board Fix \"SHE SHOULD BE TAKING THE MEDS AND REMOVE ONE OF THE PILLS ON THE PILL BED\" (2026-10-01)",
+    fix_notes_all=["FEELS LIKE JUST PRESSING INSTEAD OF SWALLOWING IT AND ALSO THE PILL BED IS STILL COMPLETE", "v2 (not put up): the strip still full, a green jumper — the cast sheet's outfit — instead of the cardigan", "SHE SHOULD BE TAKING THE MEDS AND REMOVE ONE OF THE PILLS ON THE PILL BED"],
     fix="board: \"FEELS LIKE JUST PRESSING INSTEAD OF SWALLOWING IT AND ALSO THE PILL BED IS STILL COMPLETE\" — v1 was an overhead of hands pressing tablets out of a full strip → v2 shows her taking them: two tablets into her mouth and a sip of tea to wash them down, her face in frame; the strip on the table mostly empty, the foil torn over the used pockets", files=["N-FACE", "L-KITCHEN", "OUT-N-B3", "PROP-BLISTER"], audios=[],
     title="Scene 3 · Painkillers",
     prompt=" ".join([
@@ -143,17 +143,17 @@ SHOTS.append(dict(beat="SC03-SH04", kind="broll", duration=4, line="", vo="L023"
         SERIES, LOOK, INHERIT, KITCHEN_AM,
         "Her lips stay closed except to take the tablets and to drink; she never speaks.",
         f"THE SHOT: a medium close-up in three-quarter profile at her eye level as she sits at the scrubbed pine table: Her, {HER_ID}, in {HER_B3}, from the chest up, "
-        "a plain white mug of tea in her right hand; on the table in front of her, sharp in the lower frame, the painkiller strip of the prop card, every pocket torn open and empty but one.",
+        "a plain white mug of tea on the table by her right hand; on the table in front of her, sharp in the lower frame, the painkiller strip of the prop card, every pocket torn open and empty but one.",
         "HER OUTFIT, exactly the card: the buttoned slate-grey wool cardigan with its row of small buttons, the cream blouse's small round collar over its neckline.",
-        "Two white tablets lie in her left palm. She tips them into her mouth, lifts the mug and takes one sip, and swallows — her throat moves once; she lowers the mug. Unhurried, a routine she has done every morning.",
+        "Her left hand presses the last white tablet out of the strip through its foil into her right palm — the strip is then empty. She puts the tablet in her mouth, lifts the mug, takes one sip and swallows — her throat moves once — and sets the mug down. Unhurried, a routine she has done every morning.",
         F2, PHYS,
-        state("HER", "in the outfit of the card, at the kitchen table, two tablets in her palm", "the tablets are swallowed, the mug back down"),
+        state("HER", "in the outfit of the card, at the kitchen table", "the last tablet is out of the strip and swallowed, the mug back down"),
         "FOCUS: her nearest eye is in sharp focus; the strip on the table is clear enough to read as mostly empty; the kitchen behind falls soft. The blur is optical: soft and round, never smeared.",
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no green jumper, no pullover, no talking, no full blister strip, no pressing tablets out, no brand or writing on the strip or the mug, no sunshine, no third tablet in her palm", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no green jumper, no pullover, no talking, no full blister strip, no brand or writing on the strip or the mug, no sunshine, no third tablet in her palm", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "a brand on the pills", "prevented_by": "a plain silver strip, negative (HT18)"},
            {"risk": "warm sunny light (the kitchen plate is afternoon)", "prevented_by": "KITCHEN_AM: flat grey 6500K, no sunshine, warm-light negative"},
-           {"risk": "she presses pills again instead of taking them (v1)", "prevented_by": "the swallow written as the action, two tablets already in her palm, pressing negative"},
+           {"risk": "she presses but never takes it (v1)", "prevented_by": "one tablet out, then into her mouth, a sip and a swallow, the end state written"},
            {"risk": "the strip is full (v1)", "prevented_by": "eight of ten pockets torn and empty, 'no full blister strip'"}]))
 
 SHOTS.append(dict(beat="SC03-SH05", kind="broll", duration=4, line="", vo="L023", subject_motion="still", files=["N", "INFO-PHYSIO", "OUT-N-B3"], audios=[],
@@ -218,32 +218,32 @@ SHOTS.append(dict(beat="SC03-SH07", kind="dialogue", duration=4, line=L025, subj
            {"risk": "the Scene 2 outfit returns (v1)", "prevented_by": "his B3 card as Image4, cardigan/checked-shirt negatives"},
            {"risk": "he walks into the room", "prevented_by": "on the threshold, hand on the frame, negative"}]))
 
-SHOTS.append(dict(beat="SC03-SH08", kind="dialogue", duration=4, line=L026, subject_motion="still", gen=3, user_go="board Fix \"WRONGH DRAWER\" (2026-10-01) after the chat Fix",
-    fix_notes_all=["THIS TWO SHOULD BE CONNECTED AND HUSBAND SHOULD BE LOOKING FROM THE DOORWAY INTO THE BEDROOM LOOKING TO HER", "WRONGH DRAWER"],
-    fix="user (chat): \"THIS TWO SHOULD BE CONNECTED AND HUSBAND SHOULD BE LOOKING FROM THE DOORWAY INTO THE BEDROOM LOOKING TO HER\"; board \"WRONGH DRAWER\": v2 had her hands in a waist-high upper drawer → v3 the crammed BOTTOM drawer at floor level, her whole figure in frame so it shows; v1 had her alone → v2 keeps SH07's set-up, closer on her, him still in the doorway behind her looking at her",
-    files=["N", "C3", "L-BEDROOM", "OUT-N-B3", "OUT-C3-B3", "INFO-DRAWER"], audios=["N"],
+SHOTS.append(dict(beat="SC03-SH08", kind="dialogue", duration=4, line=L026, subject_motion="still", gen=4, user_go="board Fix \"USE THE SH07 AS THE REFERENCE FOR THIS\" (2026-10-01)",
+    fix_notes_all=["THIS TWO SHOULD BE CONNECTED AND HUSBAND SHOULD BE LOOKING FROM THE DOORWAY INTO THE BEDROOM LOOKING TO HER", "WRONGH DRAWER", "USE THE SH07 AS THE REFERENCE FOR THIS"],
+    fix="board \"USE THE SH07 AS THE REFERENCE FOR THIS\": v3 was shot from the window side → v4 is SH07's own set-up from the doorway (a still of SH07 v3 attached), closer on her; earlier: user (chat): \"THIS TWO SHOULD BE CONNECTED AND HUSBAND SHOULD BE LOOKING FROM THE DOORWAY INTO THE BEDROOM LOOKING TO HER\"; board \"WRONGH DRAWER\": v2 had her hands in a waist-high upper drawer → v3 the crammed BOTTOM drawer at floor level, her whole figure in frame so it shows; v1 had her alone → v2 keeps SH07's set-up, closer on her, him still in the doorway behind her looking at her",
+    files=["N-FACE", "C3", "L-BEDROOM", "OUT-N-B3", "OUT-C3-B3", "INFO-DRAWER", "REF-SH07"], audios=["N"],
     title="Scene 3 · \"It shuts.\"",
     prompt=" ".join([
-        manifest([("@image1", SHEET("Her", HER_B3)), ("@image2", SHEET("the husband", HUS_B3)), ("@image3", BEDROOM), ("@image4", CARD_N), ("@image5", CARD_C3), ("@image6", CARD_DRAWER),
+        manifest([("@image1", "is Her: her face and hair only, a close crop — her clothes come from the outfit card, never from this picture."), ("@image2", SHEET("the husband", HUS_B3)), ("@image3", BEDROOM), ("@image4", CARD_N), ("@image5", CARD_C3), ("@image6", CARD_DRAWER),
+                  ("@image7", "is a still from the shot before: copy its camera position, its framing side, the room, the light and where both people are — this shot continues it; it is never a shot to cut to."),
                   ("@audio1", VOICE("Her"))]),
-        SERIES, LOOK, INHERIT, BEDROOM_EVE, DOORWAY_GEO,
-        f"THE SHOT: the reverse of the shot before, from the window side: a medium-wide shot of Her, {HER_ID}, in {HER_B3}, her whole figure in profile on the left of the frame, standing at the chest of drawers; "
-        "its BOTTOM drawer, the one at floor level by her shoes, is pulled half open and crammed with braces, sleeves and supports exactly as the drawer card shows it; every other drawer is shut; "
-        "her eyes are down on that bottom drawer; "
-        f"behind her, small and soft across the room in the open doorway on the right half of the frame, the husband in {HUS_B3}, his hand on the door frame, still looking at her.",
-        "She does not turn round and does not touch the drawer. Her eyes stay down on the bottom drawer by her feet; she says, flat and quiet: \"" + L026 + "\" and presses her lips together. In the doorway behind her he stays where he is, watching her.",
+        SERIES, LOOK, INHERIT, BEDROOM_EVE, DOORWAY_GEO_REV,
+        "THE SHOT: the same camera position as Image7, from the landing just behind the husband, on a longer lens so she is closer: at the LEFT edge of the frame, soft and cut by the frame, the husband's shoulder and the edge of the open white door with its brass handle; "
+        f"across the room, sharp and larger than in Image7, Her, {HER_ID}, in {HER_B3}, stands at the chest of drawers under the window with her back to the door, her head bowed toward its BOTTOM drawer by her feet, pulled half open and crammed exactly as the drawer card shows it; every other drawer is shut; the bed with the pale green candlewick bedspread on the right.",
+        "HER OUTFIT, exactly the card: the buttoned slate-grey wool cardigan, the cream blouse's small round collar, the navy knee-length skirt, black low-heeled shoes.",
+        "She does not turn round. She turns her head a little toward her right shoulder, so her cheek and the corner of her mouth show in lost profile, and says, flat and quiet: \"" + L026 + "\" Then she looks back down at the drawer. The husband stays where he is on the threshold, watching her.",
         F2, PHYS,
         "While the line is spoken, Her keeps doing one thing with their hands: her right hand resting on the top of the chest of drawers, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
         state("HER", "tired, in the outfit of the card, at the chest of drawers, back to the door", "nothing"),
-        "FOCUS: the nearest eye of Her is in sharp focus; the doorway and the husband behind her fall soft. The blur is optical: soft and round, never smeared.",
+        "FOCUS: Her is in sharp focus; the husband's shoulder and the door edge in the near frame fall soft. The blur is optical: soft and round, never smeared.",
         dialogue("Her", L026, VOICE_N, "she will not let him make it a joke, or a conversation. Speaking to her husband in the doorway behind her without turning.",
                  "closes the subject. Opens flat; turns on 'shuts', where her lips press; exits looking down. Stress on 'shuts'.",
                  "quiet, flat and dry, matching the face in this shot.",
                  "she knows nothing has worked, which leaks only through her not turning round."),
         AUD,
-        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no upper drawer open, no hands in a drawer, no turning round, no husband leaving the doorway, no husband speaking", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no green jumper, no upper drawer open, no turning round to face him, no camera inside the room, no husband speaking", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "the husband drops out of the frame (v1)", "prevented_by": "him in the doorway behind her written into the shot, sheet + card attached (HT24)"},
-           {"risk": "the wrong drawer again (v2)", "prevented_by": "the BOTTOM drawer at floor level by her shoes, every other drawer shut, the drawer card attached, upper-drawer negative, her whole figure framed"},
+           {"risk": "a different set-up from SH07 (v3)", "prevented_by": "SH07 v3 still attached as Image7, the same camera position, the doorway geography (L17)"}, {"risk": "the wrong drawer again (v2)", "prevented_by": "the BOTTOM drawer at floor level by her shoes, every other drawer shut, the drawer card attached, upper-drawer negative, her whole figure framed"},
            {"risk": "the husband speaks her line", "prevented_by": "only her voice master as Audio1, negative"}]))
 
 SHOTS.append(dict(beat="SC03-SH09", kind="dialogue", duration=7, line=L028, subject_motion="still", gen=3,
@@ -293,7 +293,7 @@ SHOTS.append(dict(beat="SC03-SH10", kind="broll", duration=6, line="", vo="L029"
 FILES = {"N": "cast/N-HER_v1.png", "N-FACE": "cast/N-HER_face.png", "PROP-BLISTER": "body/SC03/ingredients/PROP-BLISTER_v1.png", "C3": "cast/C3-HUSBAND_v1.png", "L-STAIRS": "plates/L-STAIRS_v4.png", "L-BEDROOM": "plates/L-BEDROOM_v1.png",
          "L-KITCHEN": "plates/L-KITCHEN_v1.png", "INFO-PHYSIO": "body/SC03/ingredients/INFO-PHYSIO_v1.png",
          "OUT-N-B3": "body/SC03/ingredients/OUT-N-B3_v1.png", "OUT-C3-B3": "body/SC03/ingredients/OUT-C3-B3_v2.png",
-         "INFO-BRACE": "body/SC03/ingredients/INFO-BRACE_v1.png", "REF-SH09": "body/SC03/ingredients/REF-SH09-v3.png", "INFO-DRAWER": "body/SC03/ingredients/INFO-DRAWER_v2.png"}
+         "INFO-BRACE": "body/SC03/ingredients/INFO-BRACE_v1.png", "REF-SH09": "body/SC03/ingredients/REF-SH09-v3.png", "REF-SH07": "body/SC03/ingredients/REF-SH07-v3.png", "INFO-DRAWER": "body/SC03/ingredients/INFO-DRAWER_v2.png"}
 AUDIO = {"N": "voice/N_voice_master.mp3", "C3": "voice/C3_voice_master.mp3"}
 
 if __name__ == "__main__":
