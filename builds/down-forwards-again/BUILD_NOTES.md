@@ -342,4 +342,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   glow where the word sat. v7 (`acts/build_fix_r23.py`): a 710-character targeted edit of v6 — the pale cord below the kneecap glows red, the
   kneecap plain ivory, nothing else changed → To check; v6 to Old 2. Lesson for anatomy frames: name the target by what it looks like and
   where it is, keep the prompt short, and don't repeat the wrong structure in negatives.
+- **2026-10-01 ~12:35 UTC: user "generate the video".** BR-10c image v7 confirmed → video v4 on the Kling connector (`acts/build_r24_videos.py`,
+  §35A, 575 chars, kneecap named once; `kling-video-v3_0`, 3 s, silent, 24 credits) → To check.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
