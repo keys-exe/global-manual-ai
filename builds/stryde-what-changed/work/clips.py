@@ -1035,6 +1035,25 @@ B["B19-BR"] = clip("B19-BR",
 B["B19-BR"][0]["motion"] = B["B19-BR"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the steam drifts softly; the straps never move")
 START.update({"B19-BR": str(HERE.parent / "broll/B19-BR_v6.png")})
 
+# ── 2026-10-01 B19b video Fix (gen 2): "not holding the banister because the knee with stryde is okay but in the knee without stryde
+# is in pain her hand is on the wall" — frame fixed first (v5, confirmed); now the motion: strapped step easy, bare-knee step hurts. ──
+B["B19b"] = clip("B19b",
+    "A white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt and a mid-blue denim skirt, at the top "
+    "of her carpeted stairs facing down towards the camera, NOT holding the banister, her hand on the right of the frame pressed flat on "
+    "the duck-egg blue wall; a black STRYDE strap seated just below the kneecap of the leg on the left of the frame, the other knee bare.",
+    "Already stepping on the first frame: she steps down one stair with the strapped leg, easy and sure, about a second; then, as her "
+    "weight comes onto the bare knee for the next step, she winces a little, slows, and presses her hand harder against the wall to "
+    "steady herself — about two seconds. Her other hand stays free, away from the banister. The strap stays exactly where it is — rigid, "
+    "keeping its shape, size and wordmark.",
+    "no hand on the banister, no grabbing the handrail, no falling, no stumbling, no strap moving, no strap on the bare knee, no second "
+    "strap, no going up the stairs, no exaggerated pain, no looking into the lens, no camera movement, no extra legs, no extra hands",
+    4.0, hi=5,
+    risks=[{"risk": "her hand goes to the banister", "prevented_by": "hand pressed on the wall in the subject; 'no hand on the banister, no grabbing the handrail'"},
+           {"risk": "the pain is overplayed or she falls", "prevented_by": "'winces a little, slows'; 'no falling, no stumbling, no exaggerated pain'"},
+           {"risk": "the strap jumps to the bare knee", "prevented_by": "strap placed by leg; 'no strap on the bare knee, no second strap'"}])
+B["B19b"][0]["motion"] = B["B19b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little; the strap never moves")
+START.update({"B19b": str(HERE.parent / "broll/B19b_v5.png")})
+
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

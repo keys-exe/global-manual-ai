@@ -1603,6 +1603,19 @@ B["B19b"] = (NBP, ["B19BV4"], (
     "banister, no hand on the handrail, no strap moved, no strap on the bare knee, no second strap, no change to her face or clothes, no "
     "extra hands, no extra fingers"))
 
+# ── 2026-10-01 B18b Fix "change broll here with stryde both knee": edit of B18b v1 (strap already right on her right knee) — add the
+# same strap, mirrored, on her left knee; everything else kept. ──
+REFS.update({"B18BV1H": ("B18b v1 — the shot to edit (Image 1)", "42d31a31-9927-4be6-ba10-e04b1caf0d24")})
+B["B18b"] = (NBP, ["B18BV1H", "PW"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — her face, white hair, sage-green cardigan, white T-shirt, denim skirt, "
+    "white plimsolls, her hand on the honey oak handrail, the stairs, the light and the camera angle — and keep the black strap EXACTLY "
+    "as it is on the knee on the LEFT of the frame. Change ONLY this: her OTHER knee, on the RIGHT of the frame, now wears a second strap "
+    "identical to the first — the same matte-black shell with two rounded peaks cupping the base of the kneecap, a chrome slide at each "
+    "side, the black band round the leg — the same size, seated in the same place on the tendon just below the kneecap, as in Image 2. "
+    "Both knees strapped, the two straps a matching pair. A real phone photo.\n\nAVOID: no strap moved, no strap over the kneecap, no "
+    "strap higher on the thigh, no strap lower on the shin, no different strap design, no brace, no sleeve, no change to her face or "
+    "clothes, no extra legs, no extra hands"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
