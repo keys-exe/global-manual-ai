@@ -2,7 +2,7 @@
  "beat": "SC02-SH03",
  "kind": "image",
  "mode": 4,
- "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards. One step at a time.\": Keep this photo exactly as it is — Image 1, the stairs from the landing down to the green front door, banister on the left, photographs on the right wall, brass rods; the camera stays high on the landing, recomposed as a tall vertical frame. SCENE MASTER, Scene 2, next morning. Add the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in a pale-blue quilted dressing gown, grey nightdress and grey slippers. She is going down backwards: on the second step, facing up toward the camera, turned to the banister, both hands gripping its rail on frame left, left foot lowered to the next step, right foot on the step above. Head bowed, looking down at her feet, jaw set; about a third of the frame's height. Every step bare. Cold grey morning light from the frosted landing window, 6500K, key from the left; the hall below dim. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
+ "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards. One step at a time.\": each step down her own stairs costs her. A close-up from the landing above and to her side, 85mm lens, shallow focus on her face and hands. the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in a pale-blue quilted dressing gown, is going down backwards: she faces up the stairs, two steps below the camera. Both hands grip the dark banister rail beside her face, knuckles pale; her head is bowed, eyes down on the step at her feet, brow tight, lips pressed, a held breath. Image 1 is this staircase: below her, out of focus, the oatmeal stair carpet and brass rods drop away toward the hall. Cold grey morning light from the frosted landing window, 6500K, from frame left, lights her face and hands; the far side in soft shadow. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
  "script_line": "Six weeks ago, I was going down my stairs backwards. One step at a time.",
  "refs": [
   {
@@ -24,23 +24,25 @@
  "body": true,
  "room": true,
  "product": false,
- "match": "plate",
- "edit_of": "L-STAIRS v4",
+ "match": null,
+ "edit_of": null,
  "pair": [
-  "gpt_image_2_5",
-  "gpt_image_2_5"
+  "gpt_image_2",
+  "gpt_image_2"
  ],
- "model": "gpt_image_2_5 · sunburst · high · 2k · 9:16",
- "role": "master",
- "motion_plan": "From this frame: she lowers her left foot to the next step down, then her right foot beside it, both hands sliding down the banister — one step every three seconds, backwards.",
+ "model": "gpt-image-2 image-to-image · 9:16 (Kie AI)",
+ "model_override": "user 2026-10-01: \"use gpt image 2 and not sunburst, re do all the scene 2\" — overrides the §18A Sunburst routing for this build's body frames",
+ "role": "key",
+ "motion_plan": "From this frame: she lowers her weight down one step backwards, both hands sliding a little down the banister, and breathes out through her mouth; one step in the clip.",
  "scene": 2,
  "taste": [
   "HT02",
   "HT04",
   "HT09",
-  "HT17",
   "HT18",
   "HT19",
   "HT22"
- ]
+ ],
+ "generation": 3,
+ "fix_note": "i want new ones the all of theme are not good (scene 2)"
 }

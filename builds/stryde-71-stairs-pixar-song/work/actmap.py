@@ -53,25 +53,24 @@ R4 = "R4 — slow single-axis push on a stabilised virtual rig"
 
 # ---------------- Hook (0.0–15.5 s) — Last Sunday, N-D4
 A = "Hook 1"
-R("HK-01a", A, (1, 1), "stairs", "hook — the result (HT05: stakes in the picture)", "N + C2", "L-N-STAIRS", "N-D4",
-  "MEDIUM from the hall floor: N climbs her family-photo staircase briskly, hands free, C2 two steps directly behind her inside the rail, working to keep up",
-  "two steps up, N pulling ahead", "one step per second, brisk", "stairs: side-on, waist-up, camera still", "worn (under the dress)", "HIDDEN",
-  "low", TQB, "clean", "MEDIUM", "low = resolve; she's the strong one", "deep", "deep", *STAIR_PM, "afternoon", "after: Sunday sun", True, "MUS-OPEN", ledger="VN04")
-R("HK-01b", A, (2, 2), "faster", "hook — the result", "N feet + C2", "L-N-STAIRS", "N-D4",
-  "CU at step height from the side: N's feet take two steps up, one per step, C2's trainers a few steps below reaching for the next",
-  "two steps up", "one step per second", "stairs: feet only, side", "worn (under the dress)", "HIDDEN",
-  "ground", PR, "clean", "CU", "ground = the steps themselves, the pace", "foreground", "medium", *STAIR_PM, "afternoon", "after: Sunday sun", False, "MUS-OPEN")
-R("HK-02a", A, (3, 4), "daughter", "hook — the witness", "C2", "L-N-STAIRS", "N-D4",
-  "MCU from the landing looking down the flight: C2 near the top, a hand on the rail, looking up after her mother, a little out of breath",
+# Hook re-angled on the user's ask (2026-10-01, "USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK"): §30I setups named with the
+# §24K part 7 shot library (Modes 4–5 library, applied here on the user's explicit call); §27G staging unchanged. HT05: the hook must sell.
+R("HK-01a", A, (1, 1), "stairs", "hook — the result (HT05: stakes in the picture) · SH-LOW at FULL, through the newel", "N + C2", "L-N-STAIRS", "N-D4",
+  "FULL from the foot of the stairs, the lens at hip height beside the newel post looking up the whole flight: N towering mid-flight on the 6th step, climbing briskly, hands free, the daughter two steps behind inside the rail reaching for the handrail; the balusters and the photo wall converge up to the landing light",
+  "two steps up, N pulling ahead", "one step per second, brisk", "stairs: side-on/behind, full body, camera still at the foot", "worn (under the dress)", "HIDDEN",
+  "low", TQB, "through", "FULL", "low = resolve, the whole flight rising above her like a challenge she owns; through the newel = we watch from the hall", "deep", "deep", *STAIR_PM, "afternoon", "after: Sunday sun", True, "MUS-OPEN", ledger="VN04")
+R("HK-01b", A, (2, 2), "faster", "hook — the result · SH-GROUND through the balusters", "N feet + C2", "L-N-STAIRS", "N-D4",
+  "CU at tread level through the white balusters, the lens on the 4th step looking along the flight: N's black pump striking the 7th step mid-stride, the green hem swinging, the daughter's white trainer landing on the 5th behind it",
+  "two steps up", "one step per second", "stairs: feet only, side, through the balusters", "worn (under the dress)", "HIDDEN",
+  "ground", PR, "through", "CU", "ground = the steps themselves, the pace; through the balusters = the stairs as an obstacle course she beats", "foreground", "shallow", *STAIR_PM, "afternoon", "after: Sunday sun", False, "MUS-OPEN")
+R("HK-02a", A, (3, 4), "daughter", "hook — the witness · SH-HIGH from the landing", "C2", "L-N-STAIRS", "N-D4",
+  "MEDIUM from the landing looking steeply down the flight: the daughter on the 12th step below, right hand on the rail, face turned up to the lens a little out of breath, the photo wall falling away to her left, the hall floor and front door far below",
   "one last step up and a look up", "one step, about a second", "stairs: camera at the top, subject coming up, 1 step", "absent", "—",
-  "high", FR, "clean", "MCU", "high = from N's place at the top: she's arrived first", "eyes", "medium", *STAIR_PM, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
-R("HK-03a", A, (5, 5), "Mama", "hook — the line (edit of P0: the top of the flight, HT17)", "N + C2", "L-N-STAIRS (landing)", "N-D4",
-  "MEDIUM on the landing: N at the top turning back with a small knowing smile, C2 arriving on the last step looking at her, mouth open mid-word",
+  "high", FR, "clean", "MEDIUM", "high = from N's place at the top: she's arrived first, her daughter is the one still climbing", "eyes", "medium", *STAIR_PM, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
+R("HK-03a", A, (5, 5), "Mama", "hook — the line · SH-OTS over the daughter's shoulder", "N + C2", "L-N-STAIRS (landing)", "N-D4",
+  "MCU over the daughter's near shoulder from the top step, her shoulder and afro puff soft in the near foreground, onto N on the landing turned back to her with a small knowing smile, the landing window bright behind her",
   "N turns her head back to her daughter", "one turn, about a second", "none", "worn (under the dress)", "HIDDEN",
-  "eye", TQ, "clean", "MEDIUM", "", "eyes", "deep", "landing window, south wall", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
-
-# ---------------- Act 1 — the low point + what failed (17.1–44.0 s), N-D1
-A = "Act 1"
+  "eye", OT, "through", "MCU", "ots = the line lands between them; the window behind her = she's in the light, the daughter in shadow", "eyes", "medium", "landing window, south wall", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
 R("P-01a", A, (6, 6), "backwards", "problem (HT02)", "N", "L-N-STAIRS", "N-D1",
   "MEDIUM from the landing: N going down the stairs backwards, facing the steps, both hands gripping the rail",
   "one careful step down backwards", "one step, about two seconds", "stairs: camera at the top, subject below, slow single step", "absent", "—",

@@ -1,0 +1,11 @@
+{"taskId": "2e9492bb7f81bba7e23156d79d4adb7a", "created": true}
+{
+  "taskId": "2e9492bb7f81bba7e23156d79d4adb7a",
+  "state": "success",
+  "credits": 10.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/gpt-image-2-kie/1790868433044-7hhd7y5m8zi.png"
+  ],
+  "saved": "body/SC02/SC02-SH01_r4B.png"
+}

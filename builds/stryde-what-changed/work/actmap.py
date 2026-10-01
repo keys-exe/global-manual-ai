@@ -194,9 +194,9 @@ BB("B10c", A2, "Gel sits on the skin.", "Gel", "the mistake (F6)",
    "one smoothing stroke, about a second", STILL, "seated: knee and hand only, camera still", "no", "absent", "—", "NB2",
    EYE, PRO, "clean", "CU", "profile: the gel lying on the surface of the skin", "hands", "shallow", L(KITCH, "R"), False, ledger="F6", notes="unbranded, no label; user 2026-09-30 'BROLLS HERE' — gel on the knee, not on fingertips")
 BB("B10d", A2, "A painkiller turns the alarm off", "painkiller", "the mistake (F6)",
-   "hands", "L-M-STAIRS", "M-D1", "CU looking up at her hall ceiling: a plain white smoke alarm flashing red, her hand reaching up and pressing its button, the red light going out (fix: 'GIVE ME DIFFERENT BROLL HERE'; v1 a thumb popping a tablet)", "her thumb presses the button and the red light goes out",
-   "one press, about a second", STILL, "hand and alarm only, camera still", "no", "absent", "—", "NB2",
-   LOW, THR, "clean", "CU", "low looking up = the alarm silenced, the cause untouched", "hands", "shallow", L(KITCH, "L"), False, ledger="F6", notes="the metaphor of the line, literal; unbranded alarm, no text")
+   "R1", "L-KITCHEN", "K-D1", "MEDIUM side-on: Maureen at the kitchen worktop swallowing a painkiller with a glass of water, eyes closed, a tired look of relief (fix: 'DIFFERENT BROLL HERE'; v1 tablet, v2 smoke alarm)", "she swallows and lowers the glass",
+   "one swallow, about two seconds", STILL, "standing at the worktop, camera still", "no", "absent", "—", "NB2",
+   EYE, PRO, "clean", "MEDIUM", "profile = the private moment of masking it", "face", "shallow", L(KITCH, "L"), False, ledger="F6", notes="unbranded blister, no print")
 BB("B10d2", A2, "and leaves the load exactly where it was.", "load", "the load is still there (F6)",
    "R2", "L-D-STAIRS", "D-D1", "low side-on: Desmond getting up off his bottom stair, hands pressed on his thighs, both knees bent hard under his whole weight", "he pushes up to standing",
    "one push up, about two seconds, ordinary pace", STILL, "stairs: low side-on, legs only, camera still", "no", "absent", "—", "NB2",

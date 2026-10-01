@@ -9,15 +9,15 @@
   ],
   "line": "I'm seventy-one, and I take the stairs",
   "key": "stairs",
-  "function": "hook — the result (HT05: stakes in the picture)",
+  "function": "hook — the result (HT05: stakes in the picture) · SH-LOW at FULL, through the newel",
   "subject": "N + C2",
   "location": "L-N-STAIRS",
   "story_day": "N-D4",
-  "framing": "MEDIUM from the hall floor: N climbs her family-photo staircase briskly, hands free, C2 two steps directly behind her inside the rail, working to keep up",
+  "framing": "FULL from the foot of the stairs, the lens at hip height beside the newel post looking up the whole flight: N towering mid-flight on the 6th step, climbing briskly, hands free, the daughter two steps behind inside the rail reaching for the handrail; the balusters and the photo wall converge up to the landing light",
   "action": "two steps up, N pulling ahead",
   "pace": "one step per second, brisk",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "stairs: side-on, waist-up, camera still",
+  "staging": "stairs: side-on/behind, full body, camera still at the foot",
   "pin_end": "no",
   "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
   "max": 6,
@@ -31,9 +31,9 @@
   "angle": {
    "height": "low",
    "side": "three-quarter-back",
-   "fg": "clean",
-   "scale": "MEDIUM",
-   "why": "low = resolve; she's the strong one"
+   "fg": "through",
+   "scale": "FULL",
+   "why": "low = resolve, the whole flight rising above her like a challenge she owns; through the newel = we watch from the hall"
   },
   "mirror_of": null,
   "focus": {
@@ -72,15 +72,15 @@
   ],
   "line": "faster than women half my age.",
   "key": "faster",
-  "function": "hook — the result",
+  "function": "hook — the result · SH-GROUND through the balusters",
   "subject": "N feet + C2",
   "location": "L-N-STAIRS",
   "story_day": "N-D4",
-  "framing": "CU at step height from the side: N's feet take two steps up, one per step, C2's trainers a few steps below reaching for the next",
+  "framing": "CU at tread level through the white balusters, the lens on the 4th step looking along the flight: N's black pump striking the 7th step mid-stride, the green hem swinging, the daughter's white trainer landing on the 5th behind it",
   "action": "two steps up",
   "pace": "one step per second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "stairs: feet only, side",
+  "staging": "stairs: feet only, side, through the balusters",
   "pin_end": "no",
   "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
   "max": 6,
@@ -94,14 +94,14 @@
   "angle": {
    "height": "ground",
    "side": "profile",
-   "fg": "clean",
+   "fg": "through",
    "scale": "CU",
-   "why": "ground = the steps themselves, the pace"
+   "why": "ground = the steps themselves, the pace; through the balusters = the stairs as an obstacle course she beats"
   },
   "mirror_of": null,
   "focus": {
    "plane": "foreground",
-   "dof": "medium",
+   "dof": "shallow",
    "rack": null,
    "moving_subject": false
   },
@@ -135,11 +135,11 @@
   ],
   "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
   "key": "daughter",
-  "function": "hook — the witness",
+  "function": "hook — the witness · SH-HIGH from the landing",
   "subject": "C2",
   "location": "L-N-STAIRS",
   "story_day": "N-D4",
-  "framing": "MCU from the landing looking down the flight: C2 near the top, a hand on the rail, looking up after her mother, a little out of breath",
+  "framing": "MEDIUM from the landing looking steeply down the flight: the daughter on the 12th step below, right hand on the rail, face turned up to the lens a little out of breath, the photo wall falling away to her left, the hall floor and front door far below",
   "action": "one last step up and a look up",
   "pace": "one step, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -158,8 +158,8 @@
    "height": "high",
    "side": "front",
    "fg": "clean",
-   "scale": "MCU",
-   "why": "high = from N's place at the top: she's arrived first"
+   "scale": "MEDIUM",
+   "why": "high = from N's place at the top: she's arrived first, her daughter is the one still climbing"
   },
   "mirror_of": null,
   "focus": {
@@ -198,11 +198,11 @@
   ],
   "line": "\"Mama, when did that happen?\"",
   "key": "Mama",
-  "function": "hook — the line (edit of P0: the top of the flight, HT17)",
+  "function": "hook — the line · SH-OTS over the daughter's shoulder",
   "subject": "N + C2",
   "location": "L-N-STAIRS (landing)",
   "story_day": "N-D4",
-  "framing": "MEDIUM on the landing: N at the top turning back with a small knowing smile, C2 arriving on the last step looking at her, mouth open mid-word",
+  "framing": "MCU over the daughter's near shoulder from the top step, her shoulder and afro puff soft in the near foreground, onto N on the landing turned back to her with a small knowing smile, the landing window bright behind her",
   "action": "N turns her head back to her daughter",
   "pace": "one turn, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -219,15 +219,15 @@
   "music": "MUS-OPEN",
   "angle": {
    "height": "eye",
-   "side": "three-quarter",
-   "fg": "clean",
-   "scale": "MEDIUM",
-   "why": ""
+   "side": "ots",
+   "fg": "through",
+   "scale": "MCU",
+   "why": "ots = the line lands between them; the window behind her = she's in the light, the daughter in shadow"
   },
   "mirror_of": null,
   "focus": {
    "plane": "eyes",
-   "dof": "deep",
+   "dof": "medium",
    "rack": null,
    "moving_subject": false
   },
@@ -253,7 +253,7 @@
  },
  {
   "beat": "P-01a",
-  "act": "Act 1",
+  "act": "Hook 1",
   "type": "BR",
   "lines": [
    6,
@@ -316,7 +316,7 @@
  },
  {
   "beat": "P-01b",
-  "act": "Act 1",
+  "act": "Hook 1",
   "type": "BR",
   "lines": [
    7,
@@ -379,7 +379,7 @@
  },
  {
   "beat": "P-02a",
-  "act": "Act 1",
+  "act": "Hook 1",
   "type": "BR",
   "lines": [
    8,
@@ -442,7 +442,7 @@
  },
  {
   "beat": "P-03a",
-  "act": "Act 1",
+  "act": "Hook 1",
   "type": "BR",
   "lines": [
    11,
@@ -505,7 +505,7 @@
  },
  {
   "beat": "P-03b",
-  "act": "Act 1",
+  "act": "Hook 1",
   "type": "BR",
   "lines": [
    13,
@@ -568,7 +568,7 @@
  },
  {
   "beat": "P-04a",
-  "act": "Act 1",
+  "act": "Hook 1",
   "type": "BR",
   "lines": [
    14,
@@ -631,7 +631,7 @@
  },
  {
   "beat": "P-04b",
-  "act": "Act 1",
+  "act": "Hook 1",
   "type": "BR",
   "lines": [
    15,
@@ -694,7 +694,7 @@
  },
  {
   "beat": "P-05a",
-  "act": "Act 1",
+  "act": "Hook 1",
   "type": "BR",
   "lines": [
    16,

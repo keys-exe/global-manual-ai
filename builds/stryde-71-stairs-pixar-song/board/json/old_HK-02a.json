@@ -1,61 +1,20 @@
 {
- "build": "stryde-71-stairs-pixar-song",
  "act": "Hook 1",
- "hook": 1,
- "stage": "hooks",
  "beat": "HK-02a",
- "title": "hook — the witness — v1 pair (replaced)",
- "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
+ "build": "stryde-71-stairs-pixar-song",
  "flow": [
   "image"
  ],
- "status": "regenerate",
- "imageStatus": "regenerate",
- "imageVersions": [
-  {
-   "asset": "69bedec6423694ced7635d8ae07730fc",
-   "at": 1790858654630,
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "job": "8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe",
-   "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "",
-   "pair": "A",
-   "res": "1536×2752",
-   "size": 7228522,
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe.png",
-   "v": 1,
-   "archived": true
-  },
-  {
-   "asset": "c3d50bdb4d1ab3d963191ddcb4dd5f8e",
-   "at": 1790858654630,
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "job": "ae9045e0-f3b5-4962-8a73-ded5efba48ff",
-   "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "",
-   "pair": "B",
-   "res": "1536×2752",
-   "size": 7826194,
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_ae9045e0-f3b5-4962-8a73-ded5efba48ff.png",
-   "v": 2,
-   "archived": true
-  }
- ],
- "imagePair": [
-  1,
-  2
- ],
- "imageAsset": "69bedec6423694ced7635d8ae07730fc",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe.png",
+ "hook": 1,
+ "imageAsset": "e088089c7164af5a6a69aa3a2029d6b1",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageRes": "1536×2752",
+ "imageFault": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\"",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  5,
+  6
+ ],
  "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": her daughter near the top of the flight, a hand on the rail, looking up after her, a little out of breath. Image 1 is the daughter. Image 2 is the hall and staircase.\nMedium close-up from the top of the flight looking down, front-on, sharp on her eyes. The same woman as Image 1 on the 12th of 14 steps, mid-step, weight on her right foot, the left lifting to the 13th, right hand gripping the dark oak handrail, left hand on her thigh, chest rising, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. She fills more than half the frame's height. Below her the staircase of Image 2, its photo wall and the hall floor far down.\nIn the frame: one woman, the one staircase, the photo wall; every other surface bare. Two hands, two legs.\nA final frame from a 3D animated feature film — stylized storybook render, every surface with a material, a single catchlight in each eye, soft warm bounce in the shadows, afternoon sun from below lighting her front left.\nClothing, shoes, walls and frames plain — no lettering, logos or labels; no second person.",
  "imageRefs": [
   {
@@ -71,6 +30,111 @@
    "role": "Image 2"
   }
  ],
- "imageFault": "user 2026-10-01: \"we dont need end frame generate new ones\" — new pair from a rewritten prompt (§6A read-back)",
- "updatedAt": 1790860729163
+ "imageRes": "1536×2752",
+ "imageStatus": "regenerate",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142326_2dfb344e-6964-457b-aff8-c5882662b1d5.png",
+ "imageVersions": [
+  {
+   "archived": true,
+   "asset": "69bedec6423694ced7635d8ae07730fc",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7228522,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe.png",
+   "v": 1
+  },
+  {
+   "archived": true,
+   "asset": "c3d50bdb4d1ab3d963191ddcb4dd5f8e",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "ae9045e0-f3b5-4962-8a73-ded5efba48ff",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7826194,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_ae9045e0-f3b5-4962-8a73-ded5efba48ff.png",
+   "v": 2
+  },
+  {
+   "asset": "1b182f0f620a930a9ad026682bddff2e",
+   "at": 1790860729163,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "f8698a95-7941-4a72-ad86-d4d2697667d6",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"INCORRECT PLACEMENTS OF PICTURE FRAMES FIX THE LOCATION\" — replaced by the v3 pair (v5/v6)",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7659126,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131452_f8698a95-7941-4a72-ad86-d4d2697667d6.png",
+   "v": 3,
+   "archived": true
+  },
+  {
+   "asset": "e06437989e3166e4e438206d3611e489",
+   "at": 1790860729163,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "403d4f13-3bbb-4a0a-a04e-892afdfce94d",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"INCORRECT PLACEMENTS OF PICTURE FRAMES FIX THE LOCATION\" — replaced by the v3 pair (v5/v6)",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7951446,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131454_403d4f13-3bbb-4a0a-a04e-892afdfce94d.png",
+   "v": 4,
+   "archived": true
+  },
+  {
+   "asset": "e088089c7164af5a6a69aa3a2029d6b1",
+   "at": 1790866782613,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "2dfb344e-6964-457b-aff8-c5882662b1d5",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"INCORRECT PLACEMENTS OF PICTURE FRAMES FIX THE LOCATION\" → an image edit of the confirmed HK-01a frame A (HT17), scene-so-far line (HT23)",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7839583,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142326_2dfb344e-6964-457b-aff8-c5882662b1d5.png",
+   "v": 5,
+   "archived": true
+  },
+  {
+   "asset": "537c041b201f0e00d5fb380302770fe3",
+   "at": 1790866782613,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "f45b3eaf-06fe-418a-ad7d-01fc3a0b26e8",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"INCORRECT PLACEMENTS OF PICTURE FRAMES FIX THE LOCATION\" → an image edit of the confirmed HK-01a frame A (HT17), scene-so-far line (HT23)",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7500433,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142331_f45b3eaf-06fe-418a-ad7d-01fc3a0b26e8.png",
+   "v": 6,
+   "archived": true
+  }
+ ],
+ "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
+ "stage": "hooks",
+ "status": "regenerate",
+ "title": "hook — the witness — v1–v3 pairs (replaced)",
+ "updatedAt": 1790867385732
 }
