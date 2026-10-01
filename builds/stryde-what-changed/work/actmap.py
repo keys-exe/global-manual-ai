@@ -276,7 +276,7 @@ BB("B18a", A4, "It is that the knee stops feeling like a rusty hinge.", "hinge",
    "one pull, about a second", STILL, "crouched, hands at the laces, camera still", "no", "worn", "VISIBLE", "NBP",
    LOW, FRO, "clean", "MEDIUM", "low = at his knee, the bend is the point", "product", "medium", L(D_SUN, "R"), True, ledger="F9", mx=3)
 BB("B18b", A4, "They stop planning the stairs before they get to them.", "stairs", "outcome (F9)",
-   "R1", "L-M-STAIRS", "M-D2", "WIDE from the foot of the stairs: Maureen at the top starts straight down, facing forwards, hand light on the rail", "one step down, facing forwards",
+   "R1", "L-M-STAIRS", "M-D2", "WIDE from the foot of the stairs: Maureen coming down facing forwards, Stryde on both knees, hands free, an easy bright smile (fixes: both knees; positive, no banister)", "one step down, facing forwards",
    "one step, about a second and a half", STILL, "stairs: facing forwards, full figure small in frame, camera still at the foot", "no", "worn", "VISIBLE", "NBP",
    LOW, FRO, "clean", "WIDE", "low from the foot = she comes down to us, resolve", "deep", "deep", L(M_SUN, "L"), True, ledger="F9")
 TH("B19-TH", A4, "And you do not have to take my word for any of it.")
@@ -295,9 +295,9 @@ BB("B20", A4, "Because the weight is not landing on that band any more.", "weigh
    HIGH, FRO, "clean", "CU", "high = the whole knee calm", "deep", "deep", L(ANAT, "L"), False, layout="pip", eg="EG02 host cut-out bottom-left")
 TH("B21-TH", A4, "So here is the choice. Keep aiming at the joint, which is where it hurts but not where the load is.")
 BB("B21", A4, "Or move the load off the one spot that has been taking it since you were a teenager.", "spot", "the choice",
-   "R2", "L-D-STAIRS", "D-D2", "CU Desmond's strapped right knee as he steps down one stair, one of the old team photos on the wall behind", "one step down",
-   "one step, about a second and a half", STILL, "stairs: side, knee-down, camera still", "no", "worn", "VISIBLE", "NBP",
-   LOW, THR, "clean", "CU", "low = resolve", "product", "medium", L(D_SUN, "R"), False)
+   "R2", "L-D-STAIRS", "D-D2", "in his back garden, the old footballer: Desmond about to give a football a gentle kick, the strapped knee front-on, smiling (fix: 'fix broll, give me different broll here'; edit of B18a v2)", "one gentle kick",
+   "one kick, about a second and a half", STILL, "garden: whole figure, camera still", "no", "worn", "VISIBLE", "NBP",
+   LOW, FRO, "clean", "MEDIUM", "low front = the strength back", "product", "medium", L(D_SUN, "R"), False)
 BB("B22a", A4, "Two for one, so you can do both knees.", "Two", "offer — pair pack",
    "hands", "L-KITCHEN", "K-D1", "overhead on the oak table: hands lift the lid off the box; two straps lie inside side by side", "lifts the lid clear and out of frame",
    "one lift, about a second", STILL, "hands: large in frame; straps do not move", "no", "box open, two units", "—", "NBP",
@@ -308,13 +308,13 @@ BB("B22c", A4, "The copies stretch, and a stretched strap stops holding the spot
    "one pull, about a second", STILL, "hands: one movement", "no", "copy only (FAKE-BASE + 'wide webbing')", "—", "NB2",
    HIGH, PRO, "clean", "CU", "high profile = examined and judged", "hands", "medium", L(KITCH, "R"), False, ledger="F11", notes="FAKE-BASE, no wordmark; the hero never damaged")
 BB("B23a", A4, "The next step is going to land in the same place either way.", "step", "close",
-   "R1", "L-M-STAIRS", "M-D2", "ECU her foot, the strap just in frame above it, on the edge of the top stair", "her foot settles on the edge",
+   "R1", "L-M-STAIRS", "M-D2", "CU front-on: the real strap on her knee (worn_front.jpg, background only), her foot landing on the stair edge below (fix: 'fix the product, give me different broll here')", "her foot settles on the edge",
    "one small settle, about a second", STILL, "stairs: feet only, camera still", "no", "worn", "VISIBLE", "NBP",
-   GROUND, THR, "clean", "ECU", "ground = the next step", "foreground", "medium", L(M_SUN, "R"), False)
+   LOW, FRO, "clean", "CU", "low front = the next step, the strap where it works", "foreground", "medium", L(M_SUN, "R"), False)
 BB("B23b", A4, "Go and do it forwards.", "forwards", "close — callback",
-   "R1", "L-M-STAIRS", "M-D2", "MEDIUM from below: Maureen comes down towards us facing forwards, a small smile", "one step down, facing forwards",
-   "one step, about a second and a half", STILL, "stairs: facing forwards, waist-up, camera still at the foot", "no", "worn (out of frame)", "—", "NB2",
-   LOW, FRO, "clean", "MEDIUM", "low from the foot = resolve", "eyes", "medium", L(M_SUN, "L"), True, notes="callback to HK1")
+   "R1", "L-M-STAIRS", "M-D2", "MEDIUM from behind at the top of her stairs: Maureen about to go down forwards, the sunlit flight ahead (fix: 'different broll here')", "her first step down, forwards",
+   "one step, about a second and a half", STILL, "stairs: from behind, camera still on the landing", "no", "worn (out of frame)", "—", "NB2",
+   EYE, BEH, "clean", "MEDIUM", "from behind = her turn now, forwards", "deep", "deep", L(M_SUN, "L"), True, notes="callback to HK1")
 
 
 # ============================================================ B-roll on every line (user, 2026-09-29: "BROLL FOR EVERY LINE")
@@ -401,7 +401,7 @@ BB("B19-BR", A4, "And you do not have to take my word for any of it.", "word", "
    "a slow drift of steam, about two seconds", STILL, "product on the table, camera still", "no", "packaged", "the box and both straps", "NBP",
    HIGH, FRO, "clean", "MEDIUM", "high = her view of the package on her table", "product", "medium", L(KITCH, "R"), False, notes="covers B19-TH")
 BB("B19-BR2", A4, "You will know in a minute.", "minute", "she notices",
-   "R1", "L-M-STAIRS", "M-D2", "CU on her stairs: Maureen pauses mid-flight, a quiet look of surprise softening into a small smile as she notices (fix: 'GIVE ME DIFFERENT BROLL HERE')", "the smile forms",
+   "R1", "L-M-STAIRS", "M-D2", "CU on her stairs (the same staircase as B19b — fix: 'fix the stair location'): Maureen pauses partway down, hand flat on the wall, a quiet look of surprise softening into a small smile as she notices", "the smile forms",
    "one breath, about two seconds", STILL, "on the stairs, head and shoulders, camera still", "no", "absent", "—", "NBP",
    EYE, THR, "clean", "CU", "three-quarter CU = her private moment of noticing", "face", "shallow", L(M_SUN, "R"), True, notes="covers B19-TH2 (1/3)")
 BB("B19-BR2b", A4, "Not because the arthritis has gone.", "arthritis", "still arthritic",
@@ -413,13 +413,13 @@ BB("B19-BR2c", A4, "It is still there, and nothing here changes that.", "still t
    "one small sip, about two seconds", STILL, "standing at the window, camera still", "no", "absent", "—", "NBP",
    EYE, PRO, "clean", "MEDIUM", "profile = the plain everyday, living with it", "face", "medium", L(KITCH, "R"), True, notes="covers B19-TH2 (3/3)")
 BB("B21-BR", A4, "So here is the choice. Keep aiming at the joint, which is where it hurts but not where the load is.", "joint", "aiming at the joint",
-   "R2", "L-D-STAIRS", "D-D1", "CU seated on his bottom stair: Desmond's hand rubs clear gel in slow circles over his whole kneecap", "two slow circles of the hand",
-   "two circles, about two seconds", STILL, "seated, knee and hand only, camera still", "no", "absent", "—", "NB2",
+   "R2", "L-D-STAIRS", "D-D1", "CU on his hall table drawer, crammed with sleeves, a hinged brace, gel tubes and a heat pad; his hand lifts one sleeve out (fix: 'give me different broll here')", "his hand lifts the sleeve and lets it drop",
+   "one lift, about two seconds", STILL, "drawer and hand only, camera still", "no", "absent", "—", "NB2",
    HIGH, THR, "clean", "CU", "high = his own view, rubbing the wrong place", "hands", "shallow", L(D_GREY, "R"), False, ledger="F6", notes="covers B21-TH; plain unbranded gel")
 BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "Sixty", "the offer, delivered",
-   "R1", "L-M-STAIRS", "M-D2", "CU on her doormat: the STRYDE box, just delivered; Maureen's hand picks it up", "the box lifted off the mat",
-   "one lift, about a second", STILL, "hall doormat, hand and box only, camera still", "no", "box", "the box and wordmark", "NBP",
-   HIGH, FRO, "clean", "CU", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
+   "R1", "L-M-STAIRS", "M-D2", "Maureen walking briskly and happily along a sunny park path towards the camera, the strap on her right knee (fix: 'different broll here, positive walking or running with stryde'; edit of B17b v3)", "two easy brisk steps",
+   "two steps, about two seconds", STILL, "park path: whole figure, camera still", "no", "worn", "VISIBLE", "NBP",
+   LOW, FRO, "clean", "WIDE", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
 HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
 BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06a2', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B10d2', 'B11-TH', 'B11-BR', 'B12', 'B12b', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B16c2', 'B16c3', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B19-BR2b', 'B19-BR2c', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']

@@ -383,3 +383,20 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - **B22c** — the cheap copy pulled between her hands. Flaw: the copy doesn't look cheap or damaged enough and the band isn't visibly slack.
   - **B23a** — edit of B19b v5: her plimsoll on the stair edge. Flaw: the strap sits too low, on the upper shin; "Stryde" capital S.
   - **B23b** — Maureen at the foot of her stairs, small smile, striped T-shirt. Shot from about eye level rather than low.
+
+### 2026-10-01 — "fix and confirm" + "fix" (images B18b…B23b, B19-BR2; videos B20, B22a, B22c)
+- Image Fixes (Higgsfield; NBP 2 cr, NB2 1.5 cr), all To check; replaced versions → Old 2:
+  - **B18b v3** (edit of v2): hands off the banister, bright easy smile, both straps kept — clean.
+  - **B19b v7** (edit of v5): her real stairs back, hand flat on the wall, free hand resting on the bare thigh (so Kling has no idle hand for the rail) — clean, strap on the left-of-frame knee only.
+  - **B21-BR v2** (NB2): his hall-table drawer of sleeves, hinged brace, gels, heat pad, tape; his hand lifts a sleeve — clean, no STRYDE.
+  - **B21 v2** (edit of B18a v2): garden, about to kick a leather football, smiling. Flaw: the strap reads side-on, not front-on, and the wordmark isn't legible.
+  - **B22-BR v2** (edit of B17b v3): Maureen walking briskly on a sunny park path, striped tee, strap on the right knee — clean.
+  - **B23a v2** (background-only edit of worn_front.jpg onto her stairs): strap is the real photo's. Flaw: the leg is the photo's (tanned, muscular) — it doesn't read as Maureen's older leg.
+  - **B23b v2** (NB2): from behind at the top of her stairs, about to go down forwards, hands free — clean.
+  - **B19-BR2 v5** (new Fix "fix the stair location"): edit of B19b v7, so it's the same staircase as B19b; close on her face as she notices, hand flat on the wall — clean. Its next video is the 3rd for this shot → waits for the user's go.
+- Videos (Higgsfield Kling 3.0 pro, sound off, 4 s, 7 cr each), To check:
+  - **B20 v1**: calm pulse, strap rigid — clean.
+  - **B22a v1**: the lid lifts away. Flaw: the lifted lid shows a second tray of straps inside it.
+  - **B22c v1**: the copy's band stretches slack — OK; the end folds a little.
+- Act map row B19-BR2 updated (same staircase as B19b); angles PASS (HK1–HK3); docs/actmap Plan v36, Current v36, Current 2 v22.
+- Higgsfield balance 10,500.65 (shared account — it fell by ~1,767 since the last reading; this round used ~57).
