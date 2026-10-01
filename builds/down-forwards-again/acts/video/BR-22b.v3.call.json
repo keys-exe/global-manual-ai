@@ -1,0 +1,44 @@
+{
+ "beat": "BR-22b",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_182443_27d26b57-43cd-4140-a8f8-5f532d53c908.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "The copies stretch, and a stretched strap stops holding the spot.",
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 3,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "a band moves (the user's fault)",
+   "prevented_by": "nothing in the scene moves; no band moving, no sagging"
+  },
+  {
+   "risk": "a wordmark appears on the copies",
+   "prevented_by": "no wordmark, no logo, no text on the copies"
+  },
+  {
+   "risk": "the camera drifts away",
+   "prevented_by": "RIG-R1C: slight handheld sway only"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
+ "audio": false,
+ "prompt": "{\"shot\":\"br_22b\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CLOSE, as in the start frame: the copy straps over the table edge, the bag behind. Framed for a picture-in-picture crop: one subject, large and centred, readable at a third of the width. \"},\"motion\":\"Nothing in the scene moves: the copy straps, their limp bands and the plastic bag lie exactly as they are on the table for the whole clip; only the phone's slight natural handheld sway. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no light changing across the clip, no shadows sliding, no sun patch moving, no light following the subject, no music, no voice, no text appearing, no strap moving, no band moving, no sagging, no sliding, no swinging, no jumping, no bag moving, no wordmark, no logo, no text on the copies, no hands\"}",
+ "video_version": 3,
+ "user_fault": "just showing them no other movement",
+ "fix_note": "v2 still let one band sag → nothing in the scene moves at all; only the phone's slight handheld sway",
+ "user_go": "the user, 2026-09-30 ~12:50 UTC: 'fix those and generate the new ones' — asked for this card's Fix"
+}

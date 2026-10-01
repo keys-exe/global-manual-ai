@@ -1,0 +1,44 @@
+{
+ "beat": "BR-14b",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_110405_fd5a528c-88af-4fbb-8f3f-96723cbed806.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "The weight gets caught and moved off the worn part before it reaches the joint.",
+ "pace": "brisk",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 5,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "the wrong start frame again (the user's fault)",
+   "prevented_by": "start_image read from the board's confirmed imageUrl and asserted"
+  },
+  {
+   "risk": "the red stays red past the strap",
+   "prevented_by": "turns cool blue the moment it meets the strap; no red below the strap"
+  },
+  {
+   "risk": "the strap melts into the anatomy",
+   "prevented_by": "the strap is solid, keeps its shape; no strap turning translucent"
+  }
+ ],
+ "kie_model": "kling-3.0-omni/image-to-video",
+ "route": "kie",
+ "route_note": "user override 2026-09-28: Kie AI substitute for the Kling connector",
+ "approved_by": "user on the board + chat 2026-09-29 ('all confirmed')",
+ "audio": false,
+ "prompt": "{\"shot\":\"br_14b\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Virtual camera already moving fast on the first frame. Rapid push toward the target structure, short and hard, with a slight lateral arc across it. Mechanically smooth at speed — no sway, no bounce, no handheld physics, no whip. Still travelling on the final frame, the cut landing mid-move.\",\"framing\":\"CLOSE, as in the start frame: the anatomical knee with the strap, the step below. \"},\"motion\":\"The foot lands on the step; a stream of red light runs down the thigh and, the moment it meets the strap, turns cool calm blue, spreading softly blue round the shell and the band, over about two seconds; below the strap the tendon and the joint stay cool pale blue. The strap is solid, keeps its exact shape, size and wordmark. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. The anatomy keeps its structure every frame: bones hold shape, length and spacing, joints never separate or pass through each other, muscle keeps constant volume, and the layer order holds — bone deepest, muscle over it, translucent contour outermost.\",\"lighting\":\"As in the start frame.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no static camera, no locked-off camera, no tripod, no camera coming to rest, no handheld shake, no breath sway, no focus hunt, no reframe, no gimbal glide, no whip pan, no orbit completing a full revolution, no camera crossing behind the target, no crossfade, no glow fading in place, no gradual onset, no static anatomy, no arrows, no motion lines, no text overlays, no labels, no numbers, no individual muscle fibres, no second limb, no clothing, no hands, no people, no x-ray look, no flat illustration, no cartoon look, no vignette, no red below the strap, no red on the tendon, no strap moving, no strap turning translucent, no wordmark changing, no real skin, no live-action leg\"}",
+ "video_version": 5,
+ "user_fault": "this is not the right image to genrate the video",
+ "fix_note": "v4 was sent from the old live-action frame by mistake → the same blue-at-the-strap motion from the confirmed anatomy frame (v3)",
+ "user_go": "the user, 2026-09-30 ~12:50 UTC: 'fix those and generate the new ones' — asked for this card's Fix"
+}

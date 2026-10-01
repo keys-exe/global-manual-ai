@@ -272,4 +272,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   **Download fix:** Kie's tempfile host stalls mid-transfer through the proxy; `voice/kie_fetch.py` asks Kie's `common/download-url` for a signed
   R2 link and downloads in one go (sizes checked against Content-Length).
   Waiting on the user's check: images BR-10c v3, BR-16a v5, BR-16a2 v2, BR-16b v3, BR-20c v2 (their videos follow a Confirm).
+- **2026-09-30 ~13:00 UTC → 2026-10-01: user "fix those and generate the new ones" / "Try again" (round 14).**
+  **Mistake owned:** BR-14b v4 was sent on the OLD live-action start frame (a stale `START` entry carried over from an older builder) instead of the
+  confirmed anatomy image — the user: "this is not the right image to genrate the video". v5 (`acts/build_r14_videos.py`) takes its start image from
+  the board's confirmed `imageUrl` and asserts it; same for BR-22b v3. Both preflight PASS (user_go = the user's messages), landed To check.
+  BR-23 "she should be going up normally she is not touching the hand rail" → new frame first (§22X): v3 she goes UP the stairs, hands free, seen
+  high/front from the landing (`acts/build_fix_r14.py`) → To check; its video waits. Act-map rows BR-16a (treadmill), BR-19a, BR-23 synced to
+  STEP4_5.md and `docs/actmap` (Plan + Current v14); angles PASS. Hourly check: no `regenerate` cards. Balances 2026-10-01: Higgsfield 11,377.4;
+  Kie spend on this build ≈ 5,000.
+  Waiting on the user's check: images BR-10c v3, BR-16a v5, BR-16a2 v2, BR-16b v3, BR-20c v2, BR-23 v3; videos BR-14b v5, BR-22b v3 and the
+  earlier To-check clips.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

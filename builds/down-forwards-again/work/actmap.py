@@ -224,9 +224,10 @@ row("BR-22a3","Act 5",["B-22"],"PRODUCT","P hand","L-P-KITCH","P-D2","her phone 
 row("BR-22b","Act 5",["B-22"],"PRODUCT","object (near-copies)","L-P-KITCH","P-D2","three cheap copy straps tipped out of a plastic bag on the kitchen table, their bands stretched long and limp","still; one limp band slides off the edge, 2s",
     "sway","none; blank near-copies (FAKE_BASE)","no","high","three-quarter","CU","clean","high = looking down on what she gave up on","medium","product","R","stretch",
     product="near-copy (FAKE_BASE)",model="NBP",layout=PIP,ledger="F7")
-row("BR-23","Act 5",["B-23"],"BR","P","L-P-HALL","P-D2","comes down her stairs forwards, hands free, a small smile, strap on the LEFT knee","two steps, 3s",
-    "locked-off sway","stairs descending (§27G: camera at the foot, hand near the rail)","no","low","three-quarter","FULL","clean",
-    "low = the mirror of BR-06's high angle: now she owns the stairs","deep","deep","R","stairs",product="worn · VISIBLE",model="NBP",layout=FULL,face=True)
+# the user, 2026-09-30 (video Fix on BR-23): "she should be going up normally she is not touching the hand rail" → she goes UP her stairs, hands free
+row("BR-23","Act 5",["B-23"],"BR","P","L-P-HALL","P-D2","goes up her stairs at a normal pace, hands free and off the rail, a small smile, strap on the LEFT knee","two steps, 3s",
+    "locked-off sway","stairs ascending (§27G: camera on the landing, she climbs towards it and stops short, hands free)","no","high","front","FULL","clean",
+    "high + front = from the landing, she climbs towards us: she owns the stairs","deep","deep","R","stairs",product="worn · VISIBLE",model="NBP",layout=FULL,face=True)
 
 def angles_row(r):
     d, t, arc, k = DAY[r["day"]]
