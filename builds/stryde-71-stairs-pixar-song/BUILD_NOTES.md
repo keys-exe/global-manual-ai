@@ -405,3 +405,14 @@ Waiting on: Confirm or Fix on the clip P-01a v5; picks or Fix notes on P-01b v11
 - Balances: Higgsfield 7706.15 · Kling 40579.
 
 Waiting on: picks on P-03a v9/v10, P-01b v11/v12, P-05b v7/v8; Confirm or Fix on the clips P-01a v5, P-02a v3, P-05c v2, P-03b v1.
+
+## 2026-10-01 — "FIX THOSE" round 3 (20:35 UTC)
+
+- The user confirmed on the board: **P-01a clip v5, P-02a clip v3, P-05c clip v2, P-03b clip v1** (`use`); picked **P-05b v7 A**.
+- **P-03a** "FIX THE IMAGE AND USE THE P03B AS REFERNCE FOR THE BRACE" → v11/v12 (A/B): an edit of the v9 A frame with the confirmed P-03b frame attached as Image 2 — the same short black hinged brace (straps, round side hinge, size) on her right knee, slid below the kneecap. To check. v9/v10 → Old 2 (`18284a81…` / `0be6c808…`), deleted from Current.
+- **P-05b** clip v1 (3 s, 24 cr) from the pick: her hand pushes the stuffed drawer shut, it jams, a sleeve cuff caught over the edge. Unused v8 B → Old 2 (`b883a503…`).
+- **P-01b card vanished from the Current board** (the 20:28 list of 73 docs had no P-01b; it was written at version 24 in the FIC THESE round and nothing in this session deleted it — the same thing happened to `P-01a-END` earlier). Re-set from the local mirror `board/json/beat_P-01b.json` (v11/v12 To check, both files still in the store). Cause unknown; every Fix check now compares the board's beats with the act map and re-sets any missing beat from its mirror.
+- Balances: Higgsfield 7660.15 · Kling see below.
+- P-05b clip v1 landed (what I see: the hand reaches but the drawer never shuts, the view widens at the end) — To check, the user decides. Kling 40325.
+
+Waiting on: picks on P-03a v11/v12, P-01b v11/v12; Confirm or Fix on the clip P-05b v1.
