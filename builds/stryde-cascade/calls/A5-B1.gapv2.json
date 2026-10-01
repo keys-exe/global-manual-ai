@@ -1,0 +1,48 @@
+{
+ "beat": "A5-B1",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"I started carrying a couple because I was tired of fitting the second rail.\": from this frame, crouched by his tool bag, he lifts the two straps, one in each hand, up towards us and holds them there, showing them, one lift, 2s. Handheld phone, a slight natural sway, the camera never follows the subject. Exactly two small straps, rigid; his face and hands keep their shape. No morphing, no extra fingers, no music.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap8/A5-B1.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "script_line": "I started carrying a couple because I was tired of fitting the second rail.",
+ "motion_plan": "crouched by his tool bag, he lifts the two straps, one in each hand, up towards us and holds them there, showing them, one lift, 2s",
+ "motion_confirmed": true,
+ "risk_class": "hand_product",
+ "pilot": "confirmed",
+ "pin_waived": "user, 2026-09-30: \"Run from the start frame\" (asked: clips without a picked end frame — this board has no end-frame step)",
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP05",
+  "FP06",
+  "HT06",
+  "HT09"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ],
+ "fix_note": "user Fix rounds 5–8 on the frame: v1 showed him dropping two straps into the bag pocket → new confirmed frame (both straps held up, true size) and its motion plan: he lifts the two straps up towards us and holds them, one lift"
+}
