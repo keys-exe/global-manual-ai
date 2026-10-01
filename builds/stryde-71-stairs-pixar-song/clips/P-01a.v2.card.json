@@ -1,0 +1,61 @@
+{
+ "videoVersions": [
+  {
+   "asset": "3ca72ff249af39d5c1c701e111eacc7c",
+   "at": 1790881654990,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 12,
+   "job": "AZtYm6x5ecRwFiriXrZ6-FpVRSsX5OF-Bj0ta1bAGbUn7oxiZN1ISajEirgTDXd8hfskOM5Y",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v12 B (job c5f6bfae) · what I see: from the top step she lowers one foot to the step below and the other follows, back to the lens, hands on the rail, nobody speaks · replaced on the user's Fix (one step at a time); copied to Old versions",
+   "res": "1072×1928",
+   "size": 4636335,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1faf845b-2f53-4ae3-97fa-7ad191645c39-PcS3C5R49adgvxbzbamWkw-output.mp4?x-kcdn-pid=112372",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "6d9e6a8323510a79d61ca96a23343a00"
+  },
+  {
+   "v": 2,
+   "asset": "f28c712610099c2e689c8f718d38a9a9",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/c0389d20-ba01-464f-a5fd-bd39a1357db5-BubHjZrkqKJ9S4vdiJDhXQ-output.mp4?x-kcdn-pid=112372",
+   "job": "AdlkFcaWgUN5XKLioo-bNn63IbxjX93ZwlXjhP3aTM9NxjXN74brabvAsTqAiGdW5Jv4wtrm",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 40,
+   "size": 6089970,
+   "res": "1072×1928",
+   "duration": 5.04,
+   "at": 1790882998753,
+   "fromImage": 12,
+   "note": "user Fix: SHOULD NOT BE STEPPING SO FAR DOWN, IT SHOULD BE 1 STEP AT A TIME → one slow step only: the right foot to the step just below, the left joins it on that same step, then she holds; never a second step (§22X) · what I see: one foot lowers to the step below and the other joins it, then she holds; back to the lens, nobody speaks"
+  }
+ ],
+ "videoAsset": "f28c712610099c2e689c8f718d38a9a9",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/c0389d20-ba01-464f-a5fd-bd39a1357db5-BubHjZrkqKJ9S4vdiJDhXQ-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AdlkFcaWgUN5XKLioo-bNn63IbxjX93ZwlXjhP3aTM9NxjXN74brabvAsTqAiGdW5Jv4wtrm",
+ "videoConnector": "Kling",
+ "model": "kling-video-v3_0",
+ "credits": 40,
+ "duration": 5.04,
+ "videoRes": "1072×1928",
+ "videoAt": 1790882998753,
+ "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": From this frame: one careful step down backwards, her back to the lens — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the hall floor looking up the flight, she takes exactly one slow step down backwards: her right foot lowers onto the step just below and takes her weight, the left foot joins it on that same step, and she holds there, both hands on the rail, her back to the lens, her face to the landing; nobody speaks. Stylized 3D animation, exactly on model from the frame, the staircase exactly as in the frame. No camera travel; nobody else; no cut; never a second step.",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "videoFault": "user Fix: SHOULD NOT BE STEPPING SO FAR DOWN, IT SHOULD BE 1 STEP AT A TIME → one slow step only: the right foot to the step just below, the left joins it on that same step, then she holds; never a second step (§22X)",
+ "regens": 1,
+ "status": "review",
+ "videoNote": "clip v2 · what I see: one foot lowers to the step below and the other joins it, then she holds; back to the lens, nobody speaks",
+ "updatedAt": 1790882998753
+}

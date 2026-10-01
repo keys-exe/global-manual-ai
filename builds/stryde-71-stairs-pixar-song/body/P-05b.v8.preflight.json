@@ -1,0 +1,38 @@
+{
+ "beat": "P-05b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Nothing worked. Nothing lasted.\": Keep this photo exactly as it is — the kitchen floor, the chair legs, the table above, the cabinets, the light — in close at floor level by the near chair, a tall 9:16 crop, and lay down the things. Image 1 is the kitchen.\nClose-up at floor level from the side, sharp on the floor: a grey knee sleeve dropped flat on the wooden floor beside a pink terry slipper, a plain pill bottle on its side next to it, a second slipper behind, the chair leg beside them; her feet still in the slippers, her legs out of frame above the ankle; nobody's hands in the frame.\nIn frame: one sleeve, one bottle, two slippers, the chair legs and floor of Image 1; every other surface bare, nothing else on the floor.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Sleeve and bottle plain — no lettering, logos or labels; nobody else.",
+ "script_line": "Nothing worked. Nothing lasted.",
+ "face": false,
+ "room": true,
+ "body": false,
+ "refs": [
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "cc6ec5031226aadf6d5a46725855adea",
+ "taste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "I NEED A DIFFERENT ONES HERE",
+ "product": false
+}

@@ -1,0 +1,38 @@
+{
+ "moved": [
+  {
+   "asset": "45c588bc2cd81cb83b9157f5eaec5b2f",
+   "at": 1790881580349,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "d12fc4fa-274a-4dbc-868f-97ff21f28a18",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user: \"THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL\" + board \"NEW IMAGE\" → a new staging: seated on the kitchen chair, from the side at knee height, the brace sagging at the knee; P-03b is made from this frame (FP14) · replaced on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7804816,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_190411_d12fc4fa-274a-4dbc-868f-97ff21f28a18.png",
+   "v": 5,
+   "archived": true,
+   "archiveAsset": "45c588bc2cd81cb83b9157f5eaec5b2f"
+  },
+  {
+   "asset": "205d7eed6b173e063d0d09ca440daa05",
+   "at": 1790881580349,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "faa67f73-3626-4a77-9f92-1098699b03f0",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user: \"THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL\" + board \"NEW IMAGE\" → a new staging: seated on the kitchen chair, from the side at knee height, the brace sagging at the knee; P-03b is made from this frame (FP14) · replaced on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 5522011,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_190411_faa67f73-3626-4a77-9f92-1098699b03f0.png",
+   "v": 6,
+   "archived": true,
+   "archiveAsset": "205d7eed6b173e063d0d09ca440daa05"
+  }
+ ]
+}

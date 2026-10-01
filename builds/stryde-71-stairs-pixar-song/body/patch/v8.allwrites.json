@@ -1,0 +1,72 @@
+[
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-01b",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/body/patch/P-01b.v8done.json",
+  "if_version": 17
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-02a",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/body/patch/P-02a.v8done.json",
+  "if_version": 14
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-03a",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/body/patch/P-03a.v8done.json",
+  "if_version": 12
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-03b",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/body/patch/P-03b.v8done.json",
+  "if_version": 14
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-05b",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/body/patch/P-05b.v8done.json",
+  "if_version": 3
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-05c",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/body/patch/P-05c.v8done.json",
+  "if_version": 3
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-01a",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/clips/P-01a.v2.card.json",
+  "if_version": 20
+ },
+ {
+  "op": "update",
+  "collection": "docs",
+  "doc_id": "actmap",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/board/json/doc_actmap.json",
+  "if_version": 21
+ },
+ {
+  "op": "update",
+  "collection": "builds",
+  "doc_id": "stryde-71-stairs-pixar-song",
+  "data": {
+   "balances": {
+    "Higgsfield": 7990.15,
+    "Kling": 41279
+   },
+   "balancesAt": 1790883125067,
+   "updatedAt": 1790883125067
+  },
+  "if_version": 23
+ }
+]

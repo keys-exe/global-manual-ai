@@ -8,6 +8,7 @@
  "duration": 6.04,
  "editOf": "stryde-71-stairs-pixar-song__P0-PROP-N",
  "eg": "",
+ "fault": "user: i want new ones on the brolls, i dont like these; never talk the lyrics/script in B-roll",
  "flow": [
   "image",
   "video"
@@ -18,7 +19,7 @@
  "imageAt": 1790877909563,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "user Fix: \"this should be her at the top of the stairs looking down\" → from the hall floor looking up the whole flight — she sits on the top step looking down it (act map re-angled low · front)",
+ "imageFault": "USE A DIFFERENT CAMERA ANGLES",
  "imageJob": "e443ca80-6a5d-4e63-accd-97ba7c3ef2e6",
  "imageMatch": "plate",
  "imageModel": "nano_banana_pro → logged nano_banana_2",
@@ -40,9 +41,9 @@
    "role": "Image 2"
   }
  ],
- "imageRegens": 1,
+ "imageRegens": 2,
  "imageRes": 7769512,
- "imageStatus": "confirmed",
+ "imageStatus": "regenerate",
  "imageTaste": [
   "HT02",
   "HT03",
@@ -173,22 +174,24 @@
  "onScreen": 4.88,
  "pinEnd": "no",
  "product": "absent · —",
- "prompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": From this frame: she looks down the stairs and looks away — one turn of the head, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the hall floor looking up the flight, she looks down the stairs toward the lens, holds, then turns her face away to the side; her hand stays on the newel, her body stays seated on the top step; the whole staircase stays exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never stands.",
+ "prompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": From this frame: she looks down the stairs and looks away — one turn of the head, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the hall floor looking up the flight, she looks down the stairs toward the lens, holds, then turns her face away to the side, her mouth closed the whole time — she never speaks or sings, her lips still; her hand stays on the newel, she stays seated on the top step; the staircase stays exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never stands.",
+ "regens": 1,
  "section": "The low point and what failed — MUS-EXPOSE",
  "shot": "low · front · clean · MEDIUM",
  "songIn": 21.83,
  "songOut": 26.71,
  "stage": "broll",
  "staging": "none",
- "status": "review",
+ "status": "regenerate",
  "storyDay": "N-D1",
  "title": "problem (edit of P0: the top of the flight, HT17)",
- "updatedAt": 1790879386272,
- "videoAsset": "e69e36bbf36719d12782764199e8d7e2",
- "videoAt": 1790879441635,
+ "updatedAt": 1790881248895,
+ "videoAsset": "01115eaa59d3e344c6ee49645e94aa24",
+ "videoAt": 1790881100527,
  "videoConnector": "Kling",
- "videoJob": "Ae7xxyHuF6LmLZ5oV7UyCvFXaFggT_VwkxglIXEpR2ZgPyozblpz-KZ3E7W6p5J63PNBu9Vo",
- "videoNote": "first clip of this beat, from the confirmed v6 B · what I see: she stays on the top step, looks down the flight and away; her mouth opens into a smile mid-clip as if speaking",
+ "videoFault": "user: never talk the lyrics/script in B-roll → mouth closed, lips still, she never speaks or sings (§35A rule 6, HT25)",
+ "videoJob": "AbS01H4psap-MiSKAdm7D9QCMJ8ofaWm4SZnBApVWycTkC8ZQIxnRCklxemUUJugkh3fGLF1",
+ "videoNote": "clip v2 · what I see: she looks down the flight and away, mouth closed throughout",
  "videoRes": "1072×1928",
  "videoTaste": [
   "HT03",
@@ -198,9 +201,11 @@
   "HT22"
  ],
  "videoType": "video/mp4",
- "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/f3b33137-f1e5-49d5-9c46-ce477a449dcb-4r8X6ev41rNXPNsDc8FxUg-output.mp4?x-kcdn-pid=112372",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/fe9e542f-bf11-462a-a811-2da39a0e3753-yoMiZW5idkEubXoLDAVXfw-output.mp4?x-kcdn-pid=112372",
  "videoVersions": [
   {
+   "archiveAsset": "d2a12f28fbc8d2b46b170f7ff4ed79a8",
+   "archived": true,
    "asset": "e69e36bbf36719d12782764199e8d7e2",
    "at": 1790879441635,
    "connector": "Kling",
@@ -209,12 +214,28 @@
    "fromImage": 6,
    "job": "Ae7xxyHuF6LmLZ5oV7UyCvFXaFggT_VwkxglIXEpR2ZgPyozblpz-KZ3E7W6p5J63PNBu9Vo",
    "model": "kling-video-v3_0",
-   "note": "from the confirmed image v6 B (job 04e4ff58) · what I see: she stays on the top step, looks down the flight and away; her mouth opens into a smile mid-clip as if speaking",
+   "note": "from the confirmed image v6 B (job 04e4ff58) · what I see: she stays on the top step, looks down the flight and away; her mouth opens into a smile mid-clip as if speaking · replaced on the user's Fix (never talk the lyrics in B-roll); copied to Old versions",
    "res": "1072×1928",
    "size": 3337101,
    "type": "video/mp4",
    "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/f3b33137-f1e5-49d5-9c46-ce477a449dcb-4r8X6ev41rNXPNsDc8FxUg-output.mp4?x-kcdn-pid=112372",
    "v": 1
+  },
+  {
+   "asset": "01115eaa59d3e344c6ee49645e94aa24",
+   "at": 1790881100527,
+   "connector": "Kling",
+   "credits": 48,
+   "duration": 6.04,
+   "fromImage": 6,
+   "job": "AbS01H4psap-MiSKAdm7D9QCMJ8ofaWm4SZnBApVWycTkC8ZQIxnRCklxemUUJugkh3fGLF1",
+   "model": "kling-video-v3_0",
+   "note": "user: never talk the lyrics/script in B-roll → mouth closed, lips still, she never speaks or sings (§35A rule 6, HT25) · what I see: she looks down the flight and away, mouth closed throughout",
+   "res": "1072×1928",
+   "size": 3204922,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/fe9e542f-bf11-462a-a811-2da39a0e3753-yoMiZW5idkEubXoLDAVXfw-output.mp4?x-kcdn-pid=112372",
+   "v": 2
   }
  ]
 }
