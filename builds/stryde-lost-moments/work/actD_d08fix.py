@@ -49,3 +49,22 @@ Clothing and bag plain — no lettering or logos but the strap's own wordmark.""
          "ref_urls": [r["url"] for r in refs],
          "fix_note": "THE RESULT LOOK LIKE AI AND ERROR → glossy/saturated low wide-angle frame + camera-travel end frame → restaged: hip height, normal lens, soft late light; end frame camera-fixed"}
     (HERE / "clips" / "D-08.img3.call.json").write_text(json.dumps(c, indent=1)); print("START2", len(p))
+
+# Round 3 (user "No buggy — MAKE A BROLL HERE", 2026-10-01): end frame A picked → the clip, generation 2, pinned start A (v5) → end A.
+def write_clip():
+    from actD_v4 import CAM
+    motion = "From this frame: he walks on past the empty buggy toward the camera at a normal walking pace, two steps, about three seconds."
+    facts = ("He ends exactly as in the end frame; the same man, bag on his right shoulder and the strap below his right kneecap the whole way, "
+             "on his right leg only; the empty buggy parked and still. One continuous shot, no cut. No second person.")
+    p = f'For the line "{LINE}": {motion} {CAM} {facts}'
+    (HERE / "prompts" / "D-08.v2.video.txt").write_text(p)
+    c = {"beat": "D-08", "connector": "kling", "mode": 1, "kind": "broll", "prompt": p, "duration": 3, "resolution": "1080p", "aspect_ratio": "9:16",
+         "start_image": SP + "D-08.v3.A.png", "start_approved": True, "pinned": True, "end_image": SP + "D-08-END.v3.A.png", "end_approved": True,
+         "approved_by": "user picked the restaged start (A) and the camera-fixed end frame (A) on the board (2026-10-01)", "subject_motion": "travels",
+         "prefer_multi_shots": "false", "generation": 2,
+         "fix_note": "THE RESULT LOOK LIKE AI AND ERROR: glossy low wide-angle frames + camera-travel end frame (clip cut back halfway, strap flickered legs) → natural restaged start + camera-fixed end frame, one continuous shot, strap on the right leg only",
+         "script_line": LINE, "motion_plan": motion, "motion_confirmed": True, "risk_class": "travel", "pilot": "confirmed", "taste": ["HT01", "HT12", "HT18"],
+         "risks": [{"risk": "mid-clip cut back to the start", "prevented_by": "camera-fixed end frame; one continuous shot, no cut"},
+                   {"risk": "strap swaps legs", "prevented_by": "on his right leg only"},
+                   {"risk": "buggy moves", "prevented_by": "the empty buggy parked and still"}]}
+    (HERE / "clips" / "D-08.v2.call.json").write_text(json.dumps(c, indent=1)); print("CLIP", len(p))
