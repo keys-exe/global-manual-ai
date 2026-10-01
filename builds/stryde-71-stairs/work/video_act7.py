@@ -48,12 +48,26 @@ B7 = {
    risks=[("writing becomes readable text","no readable writing"),("pen fuses with the fingers","finger clause"),("box morphs","HOLD")]),
 }
 
-def go(beat, cfg):
+FIX = {"C-05a": ("THIS SHOULD BE THE LOOK A LIKES → the frame was the cause (v1 animated a generic nylon strap). New start image v5 (confirmed): two cheap look-alike "
+                  "copies of the strap lying on the torn mailer, her hand beside them; motion: she pushes them away with the back of her fingers")}
+G2 = {
+ "C-05a": dict(framing="CLOSE as in the start frame, the kitchen table, two cheap copies of the strap on the torn grey mailer, her hand resting beside them.", cam=LOCKED,
+   motion="With the back of her fingers she pushes the two cheap copies a few inches away across the mailer in one small dismissive movement over about a second, then her hand lifts off the table. "
+          "Each copy is one rigid moulded piece and keeps its exact shape, both sliding together.",
+   extra=", no brand, no logo, no readable text, no chrome, no straps changing shape, no straps bending, no straps merging, no third strap, no hand merging with the straps, no picking them up",
+   pace="unhurried", smot="in_place",
+   risks=[("copies bend or melt as they slide","'one rigid moulded piece… keeps its exact shape' + no straps bending"),("fingers fuse with the plastic","finger clause"),("copies turn into the real strap","no brand / no chrome")]),
+}
+
+def go(beat, cfg, gen=1, fix=None):
     cfg = dict(cfg)
     r = cfg.pop("rigid", False)
     if r: cfg["motion"] += " " + RIGID
     elif beat == "C-06a": cfg["motion"] += " " + RIGID2
-    print(beat, V.LEN[beat], "s", build(beat, cfg, START[beat]), "chars")
+    print(beat, V.LEN[beat], "s", build(beat, cfg, START[beat], gen=gen, fix=fix), "chars")
 
 if __name__ == "__main__":
+    if sys.argv[1:] == ["--g2"]:
+        for bt, cfg in G2.items(): go(bt, cfg, gen=2, fix=FIX[bt])
+        sys.exit()
     for bt, cfg in B7.items(): go(bt, cfg)

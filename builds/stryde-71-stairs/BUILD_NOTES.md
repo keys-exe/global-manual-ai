@@ -326,4 +326,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
       - C-05a Fix "SHOULD BE THE SAME AS COPIES": v3 came out as loose black loops. Image v4 (`work/prompts/C-05a.v4.t2i.txt`, product photos as the first refs) shows two copies with the exact shape of the real strap, blank (no wordmark) with a cheaper shine, lying flat on the torn mailer. To check; its video follows the confirm.
       - The finals are re-cut once C-05a's video exists.
       - C-05a Fix "SHOULD BE LOOKING CHEAP COPIES" (v4 looked like the real premium strap and showed only one). Image v5 is an edit of v4 (`work/prompts/C-05a.v5.edit.txt`): same shape and kitchen; thin glossy scuffed shell with a seam and a crack, dull grey plastic slides, curling elastic; a second identical copy added. To check.
+      - The user said "CONFIRM": C-05a image v5 confirmed on their word. C-05a video generation 2 (`work/video_act7.py --g2`; she pushes the two copies away with the back of her fingers) is To check.
+      - **FINAL-HK1 v2 / FINAL-HK2 v2** re-cut with PR-01b v3, PR-06a v2 and C-05a v2 (`work/plan_rough_v2.json`, rough cut PASS); on the Final board as `review`. v1 stays there as the earlier version (the Old board is full).
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
