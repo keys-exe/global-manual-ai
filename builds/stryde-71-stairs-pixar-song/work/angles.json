@@ -210,36 +210,6 @@
   }
  },
  {
-  "beat": "P-02b",
-  "group": "Act 1",
-  "type": "BR",
-  "subject": "\u2014",
-  "height": "high",
-  "side": "front",
-  "fg": "clean",
-  "scale": "WIDE",
-  "why": "high = the drop she won't take",
-  "mirror_of": null,
-  "mode": 2,
-  "speaking": false,
-  "product_beat": false,
-  "focus": {
-   "plane": "deep",
-   "dof": "deep",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D1",
-  "face": false,
-  "light": {
-   "source": "landing window at the top of the stairs, south wall",
-   "key_side": "L",
-   "time": "morning",
-   "arc": "problem: grey",
-   "kelvin": 6500
-  }
- },
- {
   "beat": "P-03a",
   "group": "Act 1",
   "type": "BR",
@@ -360,36 +330,6 @@
   }
  },
  {
-  "beat": "P-04c",
-  "group": "Act 1",
-  "type": "BR",
-  "subject": "N hand",
-  "height": "eye",
-  "side": "profile",
-  "fg": "clean",
-  "scale": "CU",
-  "why": "profile = the pile seen from the side, growing",
-  "mirror_of": null,
-  "mode": 2,
-  "speaking": false,
-  "product_beat": false,
-  "focus": {
-   "plane": "hands",
-   "dof": "deep",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D1c",
-  "face": false,
-  "light": {
-   "source": "window over the sink, south wall",
-   "key_side": "L",
-   "time": "morning",
-   "arc": "problem: grey",
-   "kelvin": 5600
-  }
- },
- {
   "beat": "P-05a",
   "group": "Act 1",
   "type": "BR",
@@ -414,36 +354,6 @@
   "light": {
    "source": "window over the sink, south wall",
    "key_side": "R",
-   "time": "morning",
-   "arc": "problem: grey",
-   "kelvin": 5600
-  }
- },
- {
-  "beat": "P-05b",
-  "group": "Act 1",
-  "type": "BR",
-  "subject": "N",
-  "height": "eye",
-  "side": "profile",
-  "fg": "through",
-  "scale": "MEDIUM",
-  "why": "profile through the doorway = watched, alone",
-  "mirror_of": null,
-  "mode": 2,
-  "speaking": false,
-  "product_beat": false,
-  "focus": {
-   "plane": "eyes",
-   "dof": "deep",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D1c",
-  "face": true,
-  "light": {
-   "source": "window over the sink, south wall",
-   "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 5600
@@ -750,36 +660,6 @@
   }
  },
  {
-  "beat": "R-02c",
-  "group": "Act 3",
-  "type": "BR",
-  "subject": "N",
-  "height": "high",
-  "side": "three-quarter",
-  "fg": "clean",
-  "scale": "CU",
-  "why": "high = her own view of her knee",
-  "mirror_of": null,
-  "mode": 2,
-  "speaking": false,
-  "product_beat": false,
-  "focus": {
-   "plane": "hands",
-   "dof": "medium",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D3",
-  "face": false,
-  "light": {
-   "source": "window over the sink, south wall",
-   "key_side": "R",
-   "time": "morning",
-   "arc": "routine",
-   "kelvin": 5600
-  }
- },
- {
   "beat": "R-03a",
   "group": "Act 3",
   "type": "BR",
@@ -990,36 +870,6 @@
   }
  },
  {
-  "beat": "R-07b",
-  "group": "Act 3",
-  "type": "BR",
-  "subject": "N feet",
-  "height": "ground",
-  "side": "profile",
-  "fg": "clean",
-  "scale": "CU",
-  "why": "ground = the steps",
-  "mirror_of": "P-01b",
-  "mode": 2,
-  "speaking": false,
-  "product_beat": true,
-  "focus": {
-   "plane": "product",
-   "dof": "medium",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D3",
-  "face": false,
-  "light": {
-   "source": "front-door sidelights, west wall",
-   "key_side": "L",
-   "time": "afternoon",
-   "arc": "after: sun",
-   "kelvin": 5600
-  }
- },
- {
   "beat": "R-07c",
   "group": "Act 3",
   "type": "BR",
@@ -1076,36 +926,6 @@
    "key_side": "L",
    "time": "afternoon",
    "arc": "problem: clinical",
-   "kelvin": 5600
-  }
- },
- {
-  "beat": "M-01b",
-  "group": "Act 4",
-  "type": "BR",
-  "subject": "\u2014",
-  "height": "eye",
-  "side": "three-quarter",
-  "fg": "clean",
-  "scale": "CU",
-  "why": "",
-  "mirror_of": null,
-  "mode": 2,
-  "speaking": false,
-  "product_beat": false,
-  "focus": {
-   "plane": "deep",
-   "dof": "deep",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "\u2014",
-  "face": false,
-  "light": {
-   "source": "anatomical register (\u00a712A), neutral studio light",
-   "key_side": "R",
-   "time": "\u2014",
-   "arc": "mechanism",
    "kelvin": 5600
   }
  },
@@ -1196,36 +1016,6 @@
    "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
-   "kelvin": 5600
-  }
- },
- {
-  "beat": "M-04b",
-  "group": "Act 4",
-  "type": "BR",
-  "subject": "\u2014",
-  "height": "eye",
-  "side": "three-quarter",
-  "fg": "clean",
-  "scale": "CU",
-  "why": "",
-  "mirror_of": null,
-  "mode": 2,
-  "speaking": false,
-  "product_beat": false,
-  "focus": {
-   "plane": "deep",
-   "dof": "deep",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "\u2014",
-  "face": false,
-  "light": {
-   "source": "anatomical register (\u00a712A), neutral studio light",
-   "key_side": "R",
-   "time": "\u2014",
-   "arc": "mechanism",
    "kelvin": 5600
   }
  },
@@ -1328,7 +1118,7 @@
   "side": "three-quarter",
   "fg": "clean",
   "scale": "CU",
-  "why": "high = their own view of the knee",
+  "why": "high = his own view of the knee",
   "mirror_of": null,
   "mode": 2,
   "speaking": false,
@@ -1340,66 +1130,6 @@
    "moving_subject": false
   },
   "story_day": "G-1",
-  "face": false,
-  "light": {
-   "source": "open sky, afternoon sun",
-   "key_side": "R",
-   "time": "afternoon",
-   "arc": "proof: daylight",
-   "kelvin": 5600
-  }
- },
- {
-  "beat": "PR-01b",
-  "group": "Act 5",
-  "type": "BR",
-  "subject": "one-off woman, 50s",
-  "height": "eye",
-  "side": "profile",
-  "fg": "clean",
-  "scale": "CU",
-  "why": "profile shows the strap from the side",
-  "mirror_of": null,
-  "mode": 2,
-  "speaking": false,
-  "product_beat": true,
-  "focus": {
-   "plane": "product",
-   "dof": "medium",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "G-2",
-  "face": false,
-  "light": {
-   "source": "bedroom window, east wall",
-   "key_side": "L",
-   "time": "afternoon",
-   "arc": "proof: daylight",
-   "kelvin": 5600
-  }
- },
- {
-  "beat": "PR-01c",
-  "group": "Act 5",
-  "type": "BR",
-  "subject": "one-off man, 70s",
-  "height": "low",
-  "side": "three-quarter",
-  "fg": "clean",
-  "scale": "CU",
-  "why": "low = strong",
-  "mirror_of": null,
-  "mode": 2,
-  "speaking": false,
-  "product_beat": true,
-  "focus": {
-   "plane": "product",
-   "dof": "medium",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "G-3",
   "face": false,
   "light": {
    "source": "open sky, afternoon sun",
@@ -1434,36 +1164,6 @@
   "light": {
    "source": "exam-room window, blind half open, west wall",
    "key_side": "R",
-   "time": "afternoon",
-   "arc": "authority: even daylight",
-   "kelvin": 5600
-  }
- },
- {
-  "beat": "PR-02b",
-  "group": "Act 5",
-  "type": "BR",
-  "subject": "one-off sports doctor + knee model",
-  "height": "high",
-  "side": "front",
-  "fg": "clean",
-  "scale": "CU",
-  "why": "high = looking down at the desk with her",
-  "mirror_of": null,
-  "mode": 2,
-  "speaking": false,
-  "product_beat": true,
-  "focus": {
-   "plane": "product",
-   "dof": "medium",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "G-5",
-  "face": false,
-  "light": {
-   "source": "exam-room window, blind half open, west wall",
-   "key_side": "L",
    "time": "afternoon",
    "arc": "authority: even daylight",
    "kelvin": 5600
@@ -1620,36 +1320,6 @@
   }
  },
  {
-  "beat": "PR-06b",
-  "group": "Act 5",
-  "type": "BR",
-  "subject": "N feet",
-  "height": "ground",
-  "side": "three-quarter",
-  "fg": "clean",
-  "scale": "CU",
-  "why": "ground = where the brace used to end up \u2014 nothing there",
-  "mirror_of": "P-03b",
-  "mode": 2,
-  "speaking": false,
-  "product_beat": false,
-  "focus": {
-   "plane": "foreground",
-   "dof": "medium",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D5",
-  "face": false,
-  "light": {
-   "source": "window over the sink, south wall",
-   "key_side": "R",
-   "time": "morning",
-   "arc": "after: sun",
-   "kelvin": 5600
-  }
- },
- {
   "beat": "L-01a",
   "group": "Act 6",
   "type": "BR",
@@ -1800,36 +1470,6 @@
   }
  },
  {
-  "beat": "L-03b",
-  "group": "Act 6",
-  "type": "BR",
-  "subject": "N",
-  "height": "low",
-  "side": "front",
-  "fg": "clean",
-  "scale": "MCU",
-  "why": "low = she's got this",
-  "mirror_of": null,
-  "mode": 2,
-  "speaking": false,
-  "product_beat": false,
-  "focus": {
-   "plane": "eyes",
-   "dof": "medium",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D6",
-  "face": true,
-  "light": {
-   "source": "living-room window, front wall",
-   "key_side": "L",
-   "time": "afternoon",
-   "arc": "after: sun",
-   "kelvin": 5600
-  }
- },
- {
   "beat": "C-01a",
   "group": "Act 7",
   "type": "BR",
@@ -1920,36 +1560,6 @@
   }
  },
  {
-  "beat": "C-03a",
-  "group": "Act 7",
-  "type": "BR",
-  "subject": "N",
-  "height": "low",
-  "side": "profile",
-  "fg": "clean",
-  "scale": "MEDIUM",
-  "why": "low profile = settled on her own porch, the street beyond",
-  "mirror_of": null,
-  "mode": 2,
-  "speaking": false,
-  "product_beat": false,
-  "focus": {
-   "plane": "eyes",
-   "dof": "deep",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D6",
-  "face": true,
-  "light": {
-   "source": "open sky, afternoon sun on the porch",
-   "key_side": "L",
-   "time": "afternoon",
-   "arc": "after: sun",
-   "kelvin": 5600
-  }
- },
- {
   "beat": "C-03b",
   "group": "Act 7",
   "type": "BR",
@@ -2006,36 +1616,6 @@
    "key_side": "R",
    "time": "afternoon",
    "arc": "authority: even daylight",
-   "kelvin": 5600
-  }
- },
- {
-  "beat": "C-04b",
-  "group": "Act 7",
-  "type": "BR",
-  "subject": "N hand",
-  "height": "eye",
-  "side": "front",
-  "fg": "clean",
-  "scale": "ECU",
-  "why": "",
-  "mirror_of": null,
-  "mode": 2,
-  "speaking": false,
-  "product_beat": true,
-  "focus": {
-   "plane": "product",
-   "dof": "shallow",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D5",
-  "face": false,
-  "light": {
-   "source": "window over the sink, south wall",
-   "key_side": "L",
-   "time": "morning",
-   "arc": "offer: bright daylight",
    "kelvin": 5600
   }
  },
@@ -2216,36 +1796,6 @@
    "key_side": "R",
    "time": "morning",
    "arc": "after",
-   "kelvin": 5600
-  }
- },
- {
-  "beat": "C-09b",
-  "group": "Act 8",
-  "type": "BR",
-  "subject": "one-off, N's sister",
-  "height": "eye",
-  "side": "front",
-  "fg": "clean",
-  "scale": "MEDIUM",
-  "why": "",
-  "mirror_of": "R-01a",
-  "mode": 2,
-  "speaking": false,
-  "product_beat": false,
-  "focus": {
-   "plane": "eyes",
-   "dof": "deep",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D7",
-  "face": true,
-  "light": {
-   "source": "front-door sidelights, west wall",
-   "key_side": "L",
-   "time": "afternoon",
-   "arc": "after: Sunday sun",
    "kelvin": 5600
   }
  },
