@@ -329,4 +329,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
       - The user said "CONFIRM": C-05a image v5 confirmed on their word. C-05a video generation 2 (`work/video_act7.py --g2`; she pushes the two copies away with the back of her fingers) is To check.
       - **FINAL-HK1 v2 / FINAL-HK2 v2** re-cut with PR-01b v3, PR-06a v2 and C-05a v2 (`work/plan_rough_v2.json`, rough cut PASS); on the Final board as `review`. v1 stays there as the earlier version (the Old board is full).
       - C-05a Fix "IT SHOULD JUST BE ONE PAD NOT 2 IN ONE STRAP" + "give me a new c05a cause its stuck": v5 and its video had two shells on one band. Image v6 is an edit of v4 with ONE cheap copy (`work/prompts/C-05a.v6.edit.txt`). To check; video generation 3 follows the confirm (user asked for a new C-05a).
+  - **2026-10-01: the music (V7.77 §40A, user "use the new bgm update").** The default branch (V7.77.1) was merged into the session branch.
+    - The Music Register Map is BUILD_SHEET 5c (`work/music_register_map.md`), mirrored to `docs/music` on the Plan and Acts 6–7 boards. Hook MUS-OPEN → Act 1 EXPOSE → Act 2 OPEN → Act 3 EDU → "I did." TURN → Act 4 EDU → Acts 5–6 AFTER → Act 7 OFFER, as one family: felt piano, low cello and strings, a soft pulse.
+    - Composed with ElevenLabs Music, one track (`edit/music/MUS-FINAL.cue.json`).
+    - music.py check on the raw track failed: it ended early (faded by 208.5 s, the video runs 210.9 s) and the sections were barely louder or softer than each other. Both were fixed in the mix: the final chord was extended with a crossfade, and section levels were set (low −4, mid 0, high +2.5 dB). The bed re-check passes LENGTH, ENERGY, DROPOUT, VOCALS and TEMPO. The CLICK flags left are musical onsets.
+    - Mixed by `work/music_mix.sh`: voice about −14.5 LUFS, music about 18 dB under it in pauses and about 26 dB under while she speaks.
+    - The first mix was 39 dB under, inaudible, and was corrected. The reference had no music bed (EG07); this deviation is noted.
+    - FINAL-HK1 / FINAL-HK2 board v3 (local files `_v4`) have the music and C-05a v3 (one cheap copy, the user's go after "give me a new c05a"). They are on the Final board as `review`. The MUS-FINAL audio card is on the Acts 6–7 board.
+    - The Final board holds 3 versions × 2 finals (~0.9 GB), so a later re-cut needs room (a second Final board).
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.

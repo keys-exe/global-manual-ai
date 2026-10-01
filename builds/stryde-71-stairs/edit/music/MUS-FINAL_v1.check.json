@@ -1,0 +1,135 @@
+{
+  "file": "edit/music/MUS-FINAL_v1.mp3",
+  "length_s": 212.69,
+  "sections": [
+    {
+      "name": "Hook \u2014 the callout",
+      "energy": "low",
+      "rms_db": -19.6,
+      "brightness_hz": 365
+    },
+    {
+      "name": "Act 1 \u2014 the stairs backwards, the failed fixes",
+      "energy": "low",
+      "rms_db": -16.8,
+      "brightness_hz": 307
+    },
+    {
+      "name": "Act 2 \u2014 Loretta on the dance floor",
+      "energy": "low",
+      "rms_db": -14.3,
+      "brightness_hz": 360
+    },
+    {
+      "name": "Act 3 \u2014 the kitchen table, the little strap, the doubt",
+      "energy": "low",
+      "rms_db": -14.1,
+      "brightness_hz": 383
+    },
+    {
+      "name": "Act 3 \u2014 I did. The first step",
+      "energy": "mid",
+      "rms_db": -12.4,
+      "brightness_hz": 367
+    },
+    {
+      "name": "Act 4 \u2014 why it works",
+      "energy": "mid",
+      "rms_db": -13.0,
+      "brightness_hz": 412
+    },
+    {
+      "name": "Acts 5\u20136 \u2014 the proof, the walk, the husband",
+      "energy": "high",
+      "rms_db": -12.9,
+      "brightness_hz": 369
+    },
+    {
+      "name": "Act 7 \u2014 the name, the offer, her sister",
+      "energy": "mid",
+      "rms_db": -15.2,
+      "brightness_hz": 385
+    }
+  ],
+  "tempo_bpm": 60.1,
+  "vocals": {
+    "checked": true,
+    "confident_words": 0,
+    "text": ""
+  },
+  "fails": [
+    {
+      "check": "CLICK",
+      "detail": "'Hook \u2014 the callout' jumps 77.2 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Act 1 \u2014 the stairs backwards, the failed fixes' jumps 12.3 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Act 2 \u2014 Loretta on the dance floor' jumps 12.0 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Act 3 \u2014 the kitchen table, the little strap, the doubt' jumps 12.3 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Act 4 \u2014 why it works' jumps 12.0 dB in 100 ms"
+    },
+    {
+      "check": "DROPOUT",
+      "detail": "'Act 7 \u2014 the name, the offer, her sister' drops out for 3.7s"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Act 7 \u2014 the name, the offer, her sister' jumps 52.5 dB in 100 ms"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Act 3 \u2014 I did. The first step' (mid) not louder than 'Act 2 \u2014 Loretta on the dance floor' (low): -12.4 vs -14.3 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Act 3 \u2014 I did. The first step' (mid) not louder than 'Act 3 \u2014 the kitchen table, the little strap, the doubt' (low): -12.4 vs -14.1 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Act 4 \u2014 why it works' (mid) not louder than 'Act 2 \u2014 Loretta on the dance floor' (low): -13.0 vs -14.3 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Act 4 \u2014 why it works' (mid) not louder than 'Act 3 \u2014 the kitchen table, the little strap, the doubt' (low): -13.0 vs -14.1 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Acts 5\u20136 \u2014 the proof, the walk, the husband' (high) not louder than 'Act 2 \u2014 Loretta on the dance floor' (low): -12.9 vs -14.3 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Acts 5\u20136 \u2014 the proof, the walk, the husband' (high) not louder than 'Act 3 \u2014 the kitchen table, the little strap, the doubt' (low): -12.9 vs -14.1 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Acts 5\u20136 \u2014 the proof, the walk, the husband' (high) not louder than 'Act 3 \u2014 I did. The first step' (mid): -12.9 vs -12.4 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Acts 5\u20136 \u2014 the proof, the walk, the husband' (high) not louder than 'Act 4 \u2014 why it works' (mid): -12.9 vs -13.0 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Act 7 \u2014 the name, the offer, her sister' (mid) not louder than 'Act 1 \u2014 the stairs backwards, the failed fixes' (low): -15.2 vs -16.8 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Act 7 \u2014 the name, the offer, her sister' (mid) not louder than 'Act 2 \u2014 Loretta on the dance floor' (low): -15.2 vs -14.3 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Act 7 \u2014 the name, the offer, her sister' (mid) not louder than 'Act 3 \u2014 the kitchen table, the little strap, the doubt' (low): -15.2 vs -14.1 dB"
+    }
+  ],
+  "status": "FAIL"
+}

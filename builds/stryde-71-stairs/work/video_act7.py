@@ -59,6 +59,17 @@ G2 = {
    risks=[("copies bend or melt as they slide","'one rigid moulded piece… keeps its exact shape' + no straps bending"),("fingers fuse with the plastic","finger clause"),("copies turn into the real strap","no brand / no chrome")]),
 }
 
+FIX3 = {"C-05a": ("two shells on one band in v2 (from image v5) → ONE copy from image v6. Generation 3 on the user's go ('confirm go', 2026-10-01). v2 animated image v5, which had two shells on one band (user: 'IT SHOULD JUST BE ONE PAD NOT 2 IN ONE STRAP'); "
+                   "new start image v6 (confirmed): ONE cheap copy, one shell on one band; motion: one small push away with the back of her fingers")}
+G3 = {
+ "C-05a": dict(framing="CLOSE as in the start frame, the kitchen table, ONE cheap copy of the strap on the torn grey mailer, her hand resting beside it.", cam=LOCKED,
+   motion="With the back of her fingers she pushes the one cheap copy a few inches away across the mailer in one small dismissive movement over about a second, then her hand lifts off the table. "
+          "The copy is one rigid moulded piece — one shell on one band — and keeps its exact shape as it slides.",
+   extra=", no brand, no logo, no readable text, no chrome, no strap changing shape, no strap bending, no second strap, no second shell, no two pads on one band, no hand merging with the strap, no picking it up",
+   pace="unhurried", smot="in_place",
+   risks=[("a second shell appears","'ONE cheap copy… one shell on one band' + no second shell (user)"),("copy bends as it slides","'one rigid moulded piece… keeps its exact shape'"),("fingers fuse with the plastic","finger clause")]),
+}
+
 def go(beat, cfg, gen=1, fix=None):
     cfg = dict(cfg)
     r = cfg.pop("rigid", False)
@@ -67,6 +78,9 @@ def go(beat, cfg, gen=1, fix=None):
     print(beat, V.LEN[beat], "s", build(beat, cfg, START[beat], gen=gen, fix=fix), "chars")
 
 if __name__ == "__main__":
+    if sys.argv[1:] == ["--g3"]:
+        for bt, cfg in G3.items(): go(bt, cfg, gen=3, fix=FIX3[bt])
+        sys.exit()
     if sys.argv[1:] == ["--g2"]:
         for bt, cfg in G2.items(): go(bt, cfg, gen=2, fix=FIX[bt])
         sys.exit()

@@ -1,0 +1,137 @@
+{
+  "positive_global_styles": [
+    "one music family: felt piano, low cello and bowed strings, a soft heartbeat pulse, warm string pad later",
+    "instrumental bed for a spoken-word ad",
+    "sits under a voice",
+    "instrumental",
+    "slow tempo"
+  ],
+  "negative_global_styles": [
+    "vocals",
+    "lyrics",
+    "humming",
+    "choir",
+    "drums kit",
+    "electric guitar",
+    "cute",
+    "cheerful",
+    "upbeat",
+    "ukulele",
+    "whistling",
+    "hand claps",
+    "corporate jingle",
+    "stock advert jingle",
+    "pop beat",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "Hook \u2014 the callout",
+      "positive_local_styles": [
+        "investigative documentary suspense",
+        "low sustained drone",
+        "slow felt pulse",
+        "sparse felt piano notes",
+        "soft ticking",
+        "minor",
+        "unresolved"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 10950,
+      "lines": []
+    },
+    {
+      "section_name": "Act 1 \u2014 the stairs backwards, the failed fixes",
+      "positive_local_styles": [
+        "darker and lower",
+        "long low cello drone",
+        "dissonant interval",
+        "present slow heartbeat pulse",
+        "minor",
+        "no warmth"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 28040,
+      "lines": []
+    },
+    {
+      "section_name": "Act 2 \u2014 Loretta on the dance floor",
+      "positive_local_styles": [
+        "curiosity",
+        "the drone continues",
+        "a single questioning piano figure",
+        "soft pulse",
+        "modal",
+        "unresolved"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 18660,
+      "lines": []
+    },
+    {
+      "section_name": "Act 3 \u2014 the kitchen table, the little strap, the doubt",
+      "positive_local_styles": [
+        "inquisitive",
+        "repeating soft piano arpeggio",
+        "light pulse",
+        "leaning in",
+        "minor",
+        "building slowly"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 31100,
+      "lines": []
+    },
+    {
+      "section_name": "Act 3 \u2014 I did. The first step",
+      "positive_local_styles": [
+        "release",
+        "the drone lifts",
+        "first warm major chord",
+        "pulse opens into movement",
+        "strings enter softly"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 11360,
+      "lines": []
+    },
+    {
+      "section_name": "Act 4 \u2014 why it works",
+      "positive_local_styles": [
+        "inquisitive and forward",
+        "clean repeating piano arpeggio",
+        "steady light pulse",
+        "warm undertone kept",
+        "lifting at the end"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 28040,
+      "lines": []
+    },
+    {
+      "section_name": "Acts 5\u20136 \u2014 the proof, the walk, the husband",
+      "positive_local_styles": [
+        "warm hopeful theme",
+        "major",
+        "strings pads and piano with movement",
+        "dignified lift",
+        "the opening figure now warm"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 43700,
+      "lines": []
+    },
+    {
+      "section_name": "Act 7 \u2014 the name, the offer, her sister",
+      "positive_local_styles": [
+        "confident steady pulse",
+        "a little brighter",
+        "the theme held calm",
+        "ends on a held resolved chord, no flourish"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 40740,
+      "lines": []
+    }
+  ]
+}

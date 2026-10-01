@@ -1,0 +1,145 @@
+{
+ "scene": "stryde-71-stairs-FINAL",
+ "length_s": 210.59,
+ "theme": [
+  "one music family: felt piano, low cello and bowed strings, a soft heartbeat pulse, warm string pad later",
+  "instrumental bed for a spoken-word ad",
+  "sits under a voice"
+ ],
+ "avoid": [
+  "vocals",
+  "lyrics",
+  "humming",
+  "choir",
+  "drums kit",
+  "electric guitar",
+  "cute",
+  "cheerful",
+  "upbeat",
+  "ukulele",
+  "whistling",
+  "hand claps",
+  "corporate jingle",
+  "stock advert jingle",
+  "pop beat"
+ ],
+ "tempo": "slow",
+ "sections": [
+  {
+   "name": "Hook — the callout",
+   "start": 0,
+   "end": 10.95,
+   "energy": "low",
+   "register": "MUS-OPEN",
+   "styles": [
+    "investigative documentary suspense",
+    "low sustained drone",
+    "slow felt pulse",
+    "sparse felt piano notes",
+    "soft ticking",
+    "minor",
+    "unresolved"
+   ]
+  },
+  {
+   "name": "Act 1 — the stairs backwards, the failed fixes",
+   "start": 10.95,
+   "end": 38.99,
+   "energy": "low",
+   "register": "MUS-EXPOSE",
+   "styles": [
+    "darker and lower",
+    "long low cello drone",
+    "dissonant interval",
+    "present slow heartbeat pulse",
+    "minor",
+    "no warmth"
+   ]
+  },
+  {
+   "name": "Act 2 — Loretta on the dance floor",
+   "start": 38.99,
+   "end": 57.65,
+   "energy": "low",
+   "register": "MUS-OPEN",
+   "styles": [
+    "curiosity",
+    "the drone continues",
+    "a single questioning piano figure",
+    "soft pulse",
+    "modal",
+    "unresolved"
+   ]
+  },
+  {
+   "name": "Act 3 — the kitchen table, the little strap, the doubt",
+   "start": 57.65,
+   "end": 88.75,
+   "energy": "low",
+   "register": "MUS-EDU",
+   "styles": [
+    "inquisitive",
+    "repeating soft piano arpeggio",
+    "light pulse",
+    "leaning in",
+    "minor",
+    "building slowly"
+   ]
+  },
+  {
+   "name": "Act 3 — I did. The first step",
+   "start": 88.75,
+   "end": 100.11,
+   "energy": "mid",
+   "register": "MUS-TURN",
+   "styles": [
+    "release",
+    "the drone lifts",
+    "first warm major chord",
+    "pulse opens into movement",
+    "strings enter softly"
+   ]
+  },
+  {
+   "name": "Act 4 — why it works",
+   "start": 100.11,
+   "end": 128.15,
+   "energy": "mid",
+   "register": "MUS-EDU",
+   "styles": [
+    "inquisitive and forward",
+    "clean repeating piano arpeggio",
+    "steady light pulse",
+    "warm undertone kept",
+    "lifting at the end"
+   ]
+  },
+  {
+   "name": "Acts 5–6 — the proof, the walk, the husband",
+   "start": 128.15,
+   "end": 171.85,
+   "energy": "high",
+   "register": "MUS-AFTER",
+   "styles": [
+    "warm hopeful theme",
+    "major",
+    "strings pads and piano with movement",
+    "dignified lift",
+    "the opening figure now warm"
+   ]
+  },
+  {
+   "name": "Act 7 — the name, the offer, her sister",
+   "start": 171.85,
+   "end": 210.59,
+   "energy": "mid",
+   "register": "MUS-OFFER",
+   "styles": [
+    "confident steady pulse",
+    "a little brighter",
+    "the theme held calm",
+    "ends on a held resolved chord, no flourish"
+   ]
+  }
+ ]
+}
