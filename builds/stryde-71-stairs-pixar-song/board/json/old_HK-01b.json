@@ -6,14 +6,14 @@
   "image"
  ],
  "hook": 1,
- "imageAsset": "526d7ff8daca9504c764f5f4f3a77058",
+ "imageAsset": "0c8a73134652aea95025aa36bfcd1dc8",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "user 2026-10-01: \"WRONG CHARACTER\"",
+ "imageFault": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\"",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [
-  3,
-  4
+  5,
+  6
  ],
  "imagePrompt": "For the line \"faster than women half my age.\": at step height from the side, an older woman's feet take the stairs at a stride — one low black pump planted on the 6th of 14 steps, the other foot lifting to the 7th, the hem of an emerald-green dress swinging at mid-calf — and a few steps below, white trainers under black denim shorts reaching for the 4th step. Image 1 is the staircase.\nClose-up, profile, at the height of the 6th step, feet and five steps filling the frame, sharp on the pumps. The same beige runner, brass stair rods, white balusters and dark oak handrail as Image 1, photo frames soft behind. Both women's hands and faces out of frame — the picture is feet, legs below the knee and steps. Deep brown skin at the ankles.\nIn the frame: two low black pumps, two white trainers, four legs, five steps of the one staircase; every other surface bare. Each foot whole, one foot per step.\nA final frame from a 3D animated feature film — stylized storybook render, every surface with a material, a single catchlight in each eye, soft warm bounce in the shadows, afternoon sun through the door sidelights from the left.\nShoes, clothing and walls plain — no lettering, logos or labels.",
  "imageRefs": [
@@ -27,7 +27,7 @@
  "imageRes": "1536×2752",
  "imageStatus": "regenerate",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131452_63be8ee8-747d-48b9-9bfe-378b60cfb405.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142328_e1cce4cb-46b2-468d-b42c-4ede3e4108d0.png",
  "imageVersions": [
   {
    "archived": true,
@@ -92,11 +92,43 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131454_36ac222c-a41b-443e-b9f0-9e3f1aa954a8.png",
    "v": 4,
    "archived": true
+  },
+  {
+   "asset": "0c8a73134652aea95025aa36bfcd1dc8",
+   "at": 1790866782613,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "e1cce4cb-46b2-468d-b42c-4ede3e4108d0",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"WRONG CHARACTER\" → an image edit of the confirmed HK-01a frame A (HT17), scene-so-far line (HT23)",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7427801,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142328_e1cce4cb-46b2-468d-b42c-4ede3e4108d0.png",
+   "v": 5,
+   "archived": true
+  },
+  {
+   "asset": "32034dbec33111d32b0e2367b2367363",
+   "at": 1790866782613,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "30fcbe8e-6006-4ddb-957f-a740ec7d8e8b",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"WRONG CHARACTER\" → an image edit of the confirmed HK-01a frame A (HT17), scene-so-far line (HT23)",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7489567,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142325_30fcbe8e-6006-4ddb-957f-a740ec7d8e8b.png",
+   "v": 6,
+   "archived": true
   }
  ],
  "line": "faster than women half my age.",
  "stage": "hooks",
  "status": "regenerate",
- "title": "hook — the result — v1 and v2 pairs (replaced)",
- "updatedAt": 1790864623185
+ "title": "hook — the result — v1–v3 pairs (replaced)",
+ "updatedAt": 1790867385732
 }

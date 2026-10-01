@@ -3,7 +3,7 @@
  "act": "Hook 1",
  "stage": "hooks",
  "beat": "HK-01a",
- "title": "hook — the result (HT05: stakes in the picture)",
+ "title": "hook — the result (HT05: stakes in the picture) · SH-LOW at FULL, through the newel",
  "line": "I'm seventy-one, and I take the stairs",
  "status": "review",
  "flow": [
@@ -21,11 +21,11 @@
  "key": "stairs",
  "location": "L-N-STAIRS",
  "storyDay": "N-D4",
- "framing": "MEDIUM from the hall floor: N climbs her family-photo staircase briskly, hands free, C2 two steps directly behind her inside the rail, working to keep up",
+ "framing": "FULL from the foot of the stairs, the lens at hip height beside the newel post looking up the whole flight: N towering mid-flight on the 6th step, climbing briskly, hands free, the daughter two steps behind inside the rail reaching for the handrail; the balusters and the photo wall converge up to the landing light",
  "motionPlan": "From this frame: two steps up, N pulling ahead — one step per second, brisk; camera RV sway — the virtual camera breathes in place, never travels",
- "staging": "stairs: side-on, waist-up, camera still",
+ "staging": "stairs: side-on/behind, full body, camera still at the foot",
  "pinEnd": "no",
- "angle": "low · three-quarter-back · clean · MEDIUM — low = resolve; she's the strong one",
+ "angle": "low · three-quarter-back · through · FULL — low = resolve, the whole flight rising above her like a challenge she owns; through the newel = we watch from the hall",
  "focus": "deep · deep",
  "light": "front-door sidelights, west wall · key R · afternoon · after: Sunday sun · 5600K",
  "product": "worn (under the dress) · HIDDEN",
@@ -33,31 +33,31 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "VN04",
- "updatedAt": 1790860629241,
+ "updatedAt": 1790867552722,
  "hook": 1,
- "imagePrompt": "For the line \"I'm seventy-one, and I take the stairs\": Keep this photo exactly as it is — hall, staircase, camera, light — as a tall 9:16 crop centred on the flight, and add two women climbing it. Image 1 is the hall and staircase. Image 2 is the older woman. Image 3 is her daughter.\nThe same woman as Image 2, seventy-one, on the 6th of 14 steps mid-step: weight on her right foot, left foot lifting to the 7th, both hands free at her sides, face in part profile, eyes up the stairs, mouth closed; emerald-green church dress to mid-calf, low black pumps. The same woman as Image 3 on the 4th step, inside the rail behind her, right hand on the oak handrail, left hand loose at her side, eyes on her mother's back; olive-green crewneck sweatshirt, black denim shorts, white trainers. The two fill more than half the frame's height.\nIn the frame: the two women, the one staircase of Image 1 with its runner, brass rods, balusters and photo wall, the hall floor below; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1, the women on model, a catchlight in each eye.\nClothing, shoes, walls and frames plain — no lettering, logos or labels; no third person.",
- "imageStatus": "confirmed",
+ "imagePrompt": "For the line \"I'm seventy-one, and I take the stairs\": a seventy-one-year-old woman towers mid-flight on her staircase, climbing briskly hands free, her daughter two steps behind reaching for the rail. Image 1 is this scene's confirmed frame — same staircase, women and clothes. Image 2 is the older woman. Image 3 is her daughter.\nFull shot from the foot of the stairs, the lens at hip height by the newel looking steeply up the flight, deep focus, balusters and photo wall converging to the landing light. The same woman as Image 2 on the 6th of 14 steps, weight on her right foot, left foot lifting to the 7th, hands free at her sides, chin up, eyes on the landing; emerald-green church dress to mid-calf, low black pumps. The same woman as Image 3 on the 4th step, right hand reaching the oak handrail, left hand loose, eyes on her mother's back; olive-green crewneck sweatshirt, black denim shorts, white trainers. Both at true scale to the flight.\nIn the frame: the two women, the one staircase of Image 1, the newel; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1. Clothing, shoes and walls plain — no lettering, logos or labels; no third person.",
+ "imageStatus": "review",
  "imageRefs": [
   {
-   "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 1 · edited (HT17, §6A rule 3)"
+   "label": "HK-01a v1 A (confirmed frame)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__HK-01a",
+   "role": "Image 1"
   },
   {
-   "kind": "character",
    "label": "N-NARR sheet v2",
+   "kind": "character",
    "ref": "stryde-71-stairs-pixar-song__N-NARR",
    "role": "Image 2"
   },
   {
-   "kind": "character",
    "label": "C2-DAUGHTER sheet v2",
+   "kind": "character",
    "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
    "role": "Image 3"
   }
  ],
- "imageMatch": "plate",
+ "imageMatch": null,
  "imageTaste": [
   "HT03",
   "HT04",
@@ -68,7 +68,8 @@
   "HT17",
   "HT18",
   "HT19",
-  "HT22"
+  "HT22",
+  "HT23"
  ],
  "preflight": "PASS (§6A, kind image)",
  "imageVersions": [
@@ -88,6 +89,8 @@
    "v": 1
   },
   {
+   "archiveAsset": "c6d5ce03121a7fe7d97d260059511143",
+   "archived": true,
    "asset": "0a4bf29628f86c14cbf754effa950c54",
    "at": 1790858654630,
    "connector": "Higgsfield",
@@ -100,26 +103,55 @@
    "size": 8170724,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_980d1f5a-0dd8-4473-95cf-e577349c834a.png",
-   "v": 2,
-   "archived": true,
-   "archiveAsset": "c6d5ce03121a7fe7d97d260059511143"
+   "v": 2
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "65b8ee38f617a12e83ea4fb42887e264",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_1c7c2fb2-b37f-4843-aa7d-37007a8ccc44.png",
+   "job": "1c7c2fb2-b37f-4843-aa7d-37007a8ccc44",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7951386,
+   "res": "1536×2752",
+   "at": 1790867552722,
+   "note": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\" — re-angled (§30I; §24K shot names on the user's call), from the confirmed HK-01a frame + sheets · SH-LOW (full, through the newel)"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "0413ea179c194454a71613fb143b5218",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_5ac564d4-fb17-4b3a-b95e-4cab0673a8f0.png",
+   "job": "5ac564d4-fb17-4b3a-b95e-4cab0673a8f0",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7959714,
+   "res": "1536×2752",
+   "at": 1790867552722,
+   "note": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\" — re-angled (§30I; §24K shot names on the user's call), from the confirmed HK-01a frame + sheets · SH-LOW (full, through the newel)"
   }
  ],
- "imagePair": [],
- "imageAsset": "dd00641302644603f67a37537f1e5afe",
+ "imagePair": [
+  3,
+  4
+ ],
+ "imageAsset": "65b8ee38f617a12e83ea4fb42887e264",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_c5ffa422-de72-43c1-9e9a-5f11d1559545.png",
- "imageJob": "c5ffa422-de72-43c1-9e9a-5f11d1559545",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_1c7c2fb2-b37f-4843-aa7d-37007a8ccc44.png",
+ "imageJob": "1c7c2fb2-b37f-4843-aa7d-37007a8ccc44",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageRes": 5907574,
- "imageAt": 1790858654630,
+ "imageRes": "1536×2752",
+ "imageAt": 1790867552722,
  "imageRegens": 0,
  "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
  "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
  "imageParts": [],
- "imagePick": 1,
- "imageUnused": 2,
  "prompt": "For the line \"I'm seventy-one, and I take the stairs\": From this frame: two steps up, N pulling ahead — one step per second, brisk; camera RV sway — the virtual camera breathes in place, never travels. The older woman in the green dress climbs two steps, one step per second, and ends two steps higher with her weight settling onto the upper foot, both hands free and clear of the rail the whole way; her daughter behind her climbs two steps at the same pace, right hand sliding along the oak handrail, and ends still two steps below her mother. The same staircase as the frame, every step whole, the beige runner and brass rods in place, the photo wall still; exactly one staircase, both women climbing away from the camera and up. Stylized 3D animation, the two characters exactly on model from the frame, hair and the dress hem following through after each step. No camera travel; no extra people; no cut.",
  "videoConnector": "Kling",
  "videoJob": "AeINI6H83Mif1Uu-CSW_n6OIv5VRfNgGeM42Em_3YIOoiOmdZWpRPD-U5n8FuUg4z919Hftu",
@@ -148,5 +180,8 @@
  "videoType": "video/mp4",
  "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/89c7bf2b-9e52-49ec-b6b6-cb0121792d3e-S_LIAPjXX8sjd8nEjx3gKg-output.mp4?x-kcdn-pid=112372",
  "videoRes": "1072×1928",
- "videoAt": 1790860629241
+ "videoAt": 1790860629241,
+ "shot": "SH-LOW (full, through the newel)",
+ "imageFault": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\" — re-angled (§30I; §24K shot names on the user's call), from the confirmed HK-01a frame + sheets",
+ "videoNote": "clip v1 was made from image v1 A (confirmed, status use); a clip from the new angle waits on the user's pick"
 }

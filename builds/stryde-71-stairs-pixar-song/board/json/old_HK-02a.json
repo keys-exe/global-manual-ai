@@ -6,14 +6,14 @@
   "image"
  ],
  "hook": 1,
- "imageAsset": "1b182f0f620a930a9ad026682bddff2e",
+ "imageAsset": "e088089c7164af5a6a69aa3a2029d6b1",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "user 2026-10-01: \"INCORRECT PLACEMENTS OF PICTURE FRAMES FIX THE LOCATION\"",
+ "imageFault": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\"",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [
-  3,
-  4
+  5,
+  6
  ],
  "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": her daughter near the top of the flight, a hand on the rail, looking up after her, a little out of breath. Image 1 is the daughter. Image 2 is the hall and staircase.\nMedium close-up from the top of the flight looking down, front-on, sharp on her eyes. The same woman as Image 1 on the 12th of 14 steps, mid-step, weight on her right foot, the left lifting to the 13th, right hand gripping the dark oak handrail, left hand on her thigh, chest rising, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. She fills more than half the frame's height. Below her the staircase of Image 2, its photo wall and the hall floor far down.\nIn the frame: one woman, the one staircase, the photo wall; every other surface bare. Two hands, two legs.\nA final frame from a 3D animated feature film — stylized storybook render, every surface with a material, a single catchlight in each eye, soft warm bounce in the shadows, afternoon sun from below lighting her front left.\nClothing, shoes, walls and frames plain — no lettering, logos or labels; no second person.",
  "imageRefs": [
@@ -33,7 +33,7 @@
  "imageRes": "1536×2752",
  "imageStatus": "regenerate",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131452_f8698a95-7941-4a72-ad86-d4d2697667d6.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142326_2dfb344e-6964-457b-aff8-c5882662b1d5.png",
  "imageVersions": [
   {
    "archived": true,
@@ -98,11 +98,43 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131454_403d4f13-3bbb-4a0a-a04e-892afdfce94d.png",
    "v": 4,
    "archived": true
+  },
+  {
+   "asset": "e088089c7164af5a6a69aa3a2029d6b1",
+   "at": 1790866782613,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "2dfb344e-6964-457b-aff8-c5882662b1d5",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"INCORRECT PLACEMENTS OF PICTURE FRAMES FIX THE LOCATION\" → an image edit of the confirmed HK-01a frame A (HT17), scene-so-far line (HT23)",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7839583,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142326_2dfb344e-6964-457b-aff8-c5882662b1d5.png",
+   "v": 5,
+   "archived": true
+  },
+  {
+   "asset": "537c041b201f0e00d5fb380302770fe3",
+   "at": 1790866782613,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "f45b3eaf-06fe-418a-ad7d-01fc3a0b26e8",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"INCORRECT PLACEMENTS OF PICTURE FRAMES FIX THE LOCATION\" → an image edit of the confirmed HK-01a frame A (HT17), scene-so-far line (HT23)",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7500433,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142331_f45b3eaf-06fe-418a-ad7d-01fc3a0b26e8.png",
+   "v": 6,
+   "archived": true
   }
  ],
  "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
  "stage": "hooks",
  "status": "regenerate",
- "title": "hook — the witness — v1 and v2 pairs (replaced)",
- "updatedAt": 1790864623185
+ "title": "hook — the witness — v1–v3 pairs (replaced)",
+ "updatedAt": 1790867385732
 }
