@@ -2392,11 +2392,11 @@
   "subject": "R1",
   "location": "L-M-STAIRS",
   "story_day": "M-D2",
-  "framing": "knee-level, front-on from the bottom stairs: Maureen walking straight onto the bottom stair mid-stride without slowing, Stryde front-on and large on both knees (board Fix 2026-10-01 'GIVE ME DIFFERENT BROLL HERE, MAKE SURE PRODUCT IS RIGHT'; edit of the confirmed B22a v4)",
-  "action": "she steps up onto the bottom stair without breaking stride",
+  "framing": "knee-level, front-on: Maureen walking DOWN her stairs towards camera, one foot landing on the stair below, Stryde front-on and large on both knees (Fixes 2026-10-01 'MAKE SURE PRODUCT IS RIGHT', 'WRONG PRODUCT AND SHOULD BE GOING DOWN TO STAIR'; edit of the confirmed B22a v4, camera and straps kept)",
+  "action": "one easy step down, without looking at her feet",
   "pace": "one step, about a second and a half",
   "camera": "locked off",
-  "staging": "stairs: front-on, skirt hem to feet, camera still on the stairs",
+  "staging": "stairs: going down, front-on, skirt hem to feet, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "worn",
@@ -2412,7 +2412,7 @@
    "side": "front",
    "fg": "clean",
    "scale": "MS",
-   "why": "level with her knees from the stairs = she comes at the stairs without a second thought"
+   "why": "level with her knees = she comes down to us without a second thought"
   },
   "focus": {
    "plane": "deep",
