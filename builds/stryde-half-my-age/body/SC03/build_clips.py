@@ -134,22 +134,23 @@ SHOTS.append(dict(beat="SC03-SH03", kind="broll", duration=4, line="", vo="L023"
            {"risk": "the clinician's face appears", "prevented_by": "hands and forearms only, negative"},
            {"risk": "the room drifts", "prevented_by": "the physio room card as Image2"}]))
 
-SHOTS.append(dict(beat="SC03-SH04", kind="broll", duration=4, line="", vo="L023", subject_motion="in_place", gen=2,
-    fix="board: \"FEELS LIKE JUST PRESSING INSTEAD OF SWALLOWING IT AND ALSO THE PILL BED IS STILL COMPLETE\" — v1 was an overhead of hands pressing tablets out of a full strip → v2 shows her taking them: two tablets into her mouth and a sip of tea to wash them down, her face in frame; the strip on the table mostly empty, the foil torn over the used pockets", files=["N", "L-KITCHEN", "OUT-N-B3"], audios=[],
+SHOTS.append(dict(beat="SC03-SH04", kind="broll", duration=4, line="", vo="L023", subject_motion="in_place", gen=3, user_go="board Fix (2026-10-01): the note on SH04, made again with the strip card",
+    fix_notes_all=["FEELS LIKE JUST PRESSING INSTEAD OF SWALLOWING IT AND ALSO THE PILL BED IS STILL COMPLETE", "v2 (not put up): the strip still full, a green jumper — the cast sheet's outfit — instead of the cardigan"],
+    fix="board: \"FEELS LIKE JUST PRESSING INSTEAD OF SWALLOWING IT AND ALSO THE PILL BED IS STILL COMPLETE\" — v1 was an overhead of hands pressing tablets out of a full strip → v2 shows her taking them: two tablets into her mouth and a sip of tea to wash them down, her face in frame; the strip on the table mostly empty, the foil torn over the used pockets", files=["N-FACE", "L-KITCHEN", "OUT-N-B3", "PROP-BLISTER"], audios=[],
     title="Scene 3 · Painkillers",
     prompt=" ".join([
-        manifest([("@image1", SHEET("Her", HER_B3)), ("@image2", KITCHEN), ("@image3", CARD_N)]),
+        manifest([("@image1", "is Her: her face and hair only, a close crop — her clothes come from the outfit card, never from this picture."), ("@image2", KITCHEN), ("@image3", CARD_N), ("@image4", "is a prop card: the painkiller strip, almost used up — every pocket torn open and empty but one; copy it exactly, and its caption strip and grey backdrop never appear in the clip.")]),
         SERIES, LOOK, INHERIT, KITCHEN_AM,
         "Her lips stay closed except to take the tablets and to drink; she never speaks.",
         f"THE SHOT: a medium close-up in three-quarter profile at her eye level as she sits at the scrubbed pine table: Her, {HER_ID}, in {HER_B3}, from the chest up, "
-        "a plain white mug of tea in her right hand; on the table in front of her, sharp in the lower frame, a silver blister strip with most of its pockets already empty — "
-        "the foil torn open over eight of the ten pockets, only two white tablets still sealed in it.",
+        "a plain white mug of tea in her right hand; on the table in front of her, sharp in the lower frame, the painkiller strip of the prop card, every pocket torn open and empty but one.",
+        "HER OUTFIT, exactly the card: the buttoned slate-grey wool cardigan with its row of small buttons, the cream blouse's small round collar over its neckline.",
         "Two white tablets lie in her left palm. She tips them into her mouth, lifts the mug and takes one sip, and swallows — her throat moves once; she lowers the mug. Unhurried, a routine she has done every morning.",
         F2, PHYS,
         state("HER", "in the outfit of the card, at the kitchen table, two tablets in her palm", "the tablets are swallowed, the mug back down"),
         "FOCUS: her nearest eye is in sharp focus; the strip on the table is clear enough to read as mostly empty; the kitchen behind falls soft. The blur is optical: soft and round, never smeared.",
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no talking, no full blister strip, no pressing tablets out, no brand or writing on the strip or the mug, no sunshine, no third tablet in her palm", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no green jumper, no pullover, no talking, no full blister strip, no pressing tablets out, no brand or writing on the strip or the mug, no sunshine, no third tablet in her palm", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "a brand on the pills", "prevented_by": "a plain silver strip, negative (HT18)"},
            {"risk": "warm sunny light (the kitchen plate is afternoon)", "prevented_by": "KITCHEN_AM: flat grey 6500K, no sunshine, warm-light negative"},
            {"risk": "she presses pills again instead of taking them (v1)", "prevented_by": "the swallow written as the action, two tablets already in her palm, pressing negative"},
@@ -289,7 +290,7 @@ SHOTS.append(dict(beat="SC03-SH10", kind="broll", duration=6, line="", vo="L029"
            {"risk": "the drawer shut flat", "prevented_by": "proud bottom drawer written"},
            {"risk": "overplayed sadness", "prevented_by": "still, looking at nothing, NEG-DRAMA"}]))
 
-FILES = {"N": "cast/N-HER_v1.png", "C3": "cast/C3-HUSBAND_v1.png", "L-STAIRS": "plates/L-STAIRS_v4.png", "L-BEDROOM": "plates/L-BEDROOM_v1.png",
+FILES = {"N": "cast/N-HER_v1.png", "N-FACE": "cast/N-HER_face.png", "PROP-BLISTER": "body/SC03/ingredients/PROP-BLISTER_v1.png", "C3": "cast/C3-HUSBAND_v1.png", "L-STAIRS": "plates/L-STAIRS_v4.png", "L-BEDROOM": "plates/L-BEDROOM_v1.png",
          "L-KITCHEN": "plates/L-KITCHEN_v1.png", "INFO-PHYSIO": "body/SC03/ingredients/INFO-PHYSIO_v1.png",
          "OUT-N-B3": "body/SC03/ingredients/OUT-N-B3_v1.png", "OUT-C3-B3": "body/SC03/ingredients/OUT-C3-B3_v2.png",
          "INFO-BRACE": "body/SC03/ingredients/INFO-BRACE_v1.png", "REF-SH09": "body/SC03/ingredients/REF-SH09-v3.png", "INFO-DRAWER": "body/SC03/ingredients/INFO-DRAWER_v2.png"}
