@@ -1,16 +1,4 @@
 {
- "build": "stryde-71-stairs-pixar-song",
- "act": "Hook 1",
- "hook": 1,
- "stage": "hooks",
- "beat": "HK-01a",
- "title": "hook — the result, one B-roll for both lines (user 2026-10-01: her walking faster up the stairs, the women half her age walking behind her, left behind; HT05 out in the world) — v1–v8 pairs (replaced; latest: the v9 plaza pair with one woman stopped behind her)",
- "line": "I'm seventy-one, and I take the stairs",
- "flow": [
-  "image"
- ],
- "status": "regenerate",
- "imageStatus": "regenerate",
  "imageVersions": [
   {
    "asset": "c6d5ce03121a7fe7d97d260059511143",
@@ -147,38 +135,20 @@
    "archiveAsset": "0799aff6831adaed3b5fcd03c6a01bf0"
   }
  ],
+ "imagePair": [
+  9,
+  10
+ ],
  "imageAsset": "d2a6ac0c2c46a90e1f83ef99d41fe48f",
  "imageType": "image/png",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_161354_dff6e491-37ac-4467-9bee-19bf7d4ec87f.png",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
- "imageModel": "nano_banana_pro → logged nano_banana_2",
  "imagePrompt": "For the line \"I'm seventy-one, and I take the stairs faster than women half my age.\": Keep this photo exactly as it is — the flight, the handrails, the doors, the camera, the light — as a tall 9:16 crop on the middle lane of the flight, and add three women. Image 1 is the plaza steps. Image 2 is the older woman.\nThe same woman as Image 2, seventy-one, in the middle lane on the 15th of 30 steps, mid-stride, weight on her right foot, left foot lifting to the 16th, both hands free, chin up, a small pleased smile in part profile, eyes on the doors; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. Behind her and lower, two women of thirty-five in grey and navy sweatshirts, leggings and white trainers, walking up slowly on the 11th and 10th steps, one with a hand on the handrail, both looking up at her back, left behind. All three at true scale to the steps.\nIn the frame: the three women, the one flight of Image 1, the handrails, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no fourth person.",
- "imageRefs": [
-  {
-   "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 1 · edited (HT17, §6A rule 3)"
-  },
-  {
-   "kind": "character",
-   "label": "N-NARR sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__N-NARR",
-   "role": "Image 2"
-  },
-  {
-   "kind": "character",
-   "label": "C2-DAUGHTER sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 3"
-  }
- ],
- "updatedAt": 1790872059879,
- "imagePair": [
-  9,
-  10
- ],
- "imageFault": "user 2026-10-01: \"should be 1 broll here showing her walking faster going up the stairs and at her back woman walking behind and she likes walking faster and left them\" → HK-01a is the one hook B-roll for both lines (HK-01b dropped): N climbing fast and pleased, two women half her age walking up behind her, left behind — an image edit of the confirmed P8-PLAZA (HT17); the v9 pair to Old"
+ "imageFault": "user 2026-10-01: \"should be 1 broll here showing her walking faster going up the stairs and at her back woman walking behind and she likes walking faster and left them\" → HK-01a is the one hook B-roll for both lines (HK-01b dropped): N climbing fast and pleased, two women half her age walking up behind her, left behind — an image edit of the confirmed P8-PLAZA (HT17); the v9 pair to Old",
+ "imageStatus": "regenerate",
+ "status": "regenerate",
+ "title": "hook — the result, one B-roll for both lines (user 2026-10-01: her walking faster up the stairs, the women half her age walking behind her, left behind; HT05 out in the world) — v1–v8 pairs (replaced; latest: the v9 plaza pair with one woman stopped behind her)",
+ "updatedAt": 1790872059879
 }
