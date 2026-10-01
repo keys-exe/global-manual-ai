@@ -105,20 +105,21 @@ SHOTS.append(dict(
         manifest([("@image1", SHEET("Her", "the outfit on the info card")), ("@image2", PLACE_C), ("@image3", CARD_N)]),
         SERIES, LOOK, INHERIT, CONCOURSE, GEO,
         "THE SHOT: a wide shot from a little above head height at the foot of the climb, behind her, the same view as the location reference: the fixed staircase rises up the centre of frame and the stopped escalator with its yellow barrier runs right beside it on the right. "
-        "Her, " + HER_ID + ", in " + HER_OUT + ", is already a third of the way up that staircase, her back to the camera, climbing away from it; "
-        "at the foot of the stairs, nearest the camera, a few commuters bunch up, small and soft.",
-        "She climbs away from the camera at an even pace, one step up per second, one foot per step, up the staircase directly beside the escalator, hands free, her back to the camera the whole clip. "
-        "The commuters at the foot shuffle onto the first steps behind her, slower. The escalator beside her stays completely still.",
+        "CONTINUES FROM the shot before, with no gap in time: she is exactly where that shot left her — on the fifth step of the staircase, on its right-hand side, right beside the escalator's steel side panel and handrail, mid-stride with her right foot on the next step. "
+        "Her, " + HER_ID + ", in " + HER_OUT + ", is on that fifth step from the first frame, her back to the camera, climbing away from it; the floor and the first four steps between her and the camera are empty.",
+        "She keeps climbing away from the camera at the same even pace, one step up per second, one foot per step, staying on the right-hand side of the staircase right beside the escalator, hands free, her back to the camera the whole clip; by the end she is about four steps higher. "
+        "The escalator beside her stays completely still.",
         F2, PHYS,
-        state("HER", "calm, bob and fringe in place, raincoat belted, handbag on her right shoulder, halfway up the stairs", "she is a few steps higher"),
+        state("HER", "calm, bob and fringe in place, raincoat belted, handbag on her right shoulder, on the fifth step at the right-hand side beside the escalator", "she is about four steps higher, still beside the escalator"),
         "FOCUS: everything from the top step to the crowd at the foot is in sharp focus; everything from near to far stays sharp. The blur is optical: soft and round, never smeared.",
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, NEG_ESC, "no turning round, no walking down the stairs, no climbing the stopped escalator, no walking toward the camera", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    gen=2, fix="User Fix: \"THEY ARE TAKING THE WRONG STAIRS, AND THE ESCALATOR SHOULD NOT BE MOVING…\" → fault in the set and viewpoint: 'from the top looking down' made the model invent a second staircase at the left of the concourse and walk her across the floor → the plate's own viewpoint from the foot, behind her, climbing away up the staircase directly beside the stopped escalator, GEOGRAPHY block, moving-escalator / second-staircase negatives",
+        negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, NEG_ESC, "no turning round, no walking down the stairs, no climbing the stopped escalator, no walking toward the camera, no starting from the foot of the stairs, no people between her and the camera", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    gen=3, go="hook c 0:07-0:09 her position on the stairs are not continue (user, 2026-10-01, on the hook edit)",
+    fix="User Fix v2 (hook edit 0:07–0:09): \"her position on the stairs are not continue\" → fault in the state carry: SH02 ends with her five steps up on the right-hand side beside the escalator, but SH03 restarted her at the foot, centre, with commuters bunched in front → SH03 opens CONTINUES FROM SH02 on the fifth step, right-hand side beside the escalator, the floor and first steps empty, no crowd (HT23). v1 Fix kept: User Fix: \"THEY ARE TAKING THE WRONG STAIRS, AND THE ESCALATOR SHOULD NOT BE MOVING…\" → fault in the set and viewpoint: 'from the top looking down' made the model invent a second staircase at the left of the concourse and walk her across the floor → the plate's own viewpoint from the foot, behind her, climbing away up the staircase directly beside the stopped escalator, GEOGRAPHY block, moving-escalator / second-staircase negatives",
     risks=[{"risk": "another staircase invented", "prevented_by": "plate viewpoint, GEOGRAPHY block, second-staircase negatives"},
            {"risk": "the escalator moves", "prevented_by": "GEOGRAPHY: switched off and still; negatives"},
            {"risk": "she turns or walks away from the stairs", "prevented_by": "body locked facing up the stairs toward the camera (HKB-SH03 Fix)"},
-           {"risk": "the crowd swallows her", "prevented_by": "the crowd small and soft at the foot"},
+           {"risk": "her position resets from the shot before", "prevented_by": "CONTINUES FROM: fifth step, right-hand side beside the escalator; no crowd; start-at-the-foot negative (HT23)"},
            {"risk": "sound generated", "prevented_by": "generate_audio false, SILENT, NEG-SOUND"}]))
 
 L12 = "When did that happen?"
