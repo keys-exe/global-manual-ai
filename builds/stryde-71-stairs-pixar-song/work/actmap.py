@@ -84,8 +84,8 @@ R("P-02a", A, (8, 10), "down", "problem (edit of P0: the top of the flight, HT17
   "low", FR, "clean", "MEDIUM", "low from mid-flight = closer on her at the top, the steps between us; her own hall, not a new one", "eyes", "deep", *STAIR_AM, "morning", "problem: grey", True, "MUS-EXPOSE")
 R("P-03a", A, (11, 12), "brace", "failed fix", "N", "L-N-KITCHEN", "N-D1",
   "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a short black hinged knee brace — a hand's length above and below the knee — sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new; the brace a bit more short)",
-  "the brace drifts slowly down her shin on its own, her hand letting it go", "one slow slide, about three seconds", "hands: large in frame, one movement, seated", "absent (generic brace, §10)", "—",
-  "low", PR, "clean", "CU", "low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14); user Fix 2026-10-01 on the clip: it should feel like drifting down", "hands", "medium", *KIT, "morning", "problem: grey", False, "MUS-EXPOSE")
+  "the brace slips loose and falls down her shin, drifting to her ankle", "one fall, about two seconds", "hands: large in frame, one movement, seated", "absent (generic brace, §10)", "—",
+  "low", PR, "clean", "CU", "low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14); user Fix 2026-10-01 on the clip: it should feel like drifting down, then: falling while drifting down", "hands", "medium", *KIT, "morning", "problem: grey", False, "MUS-EXPOSE")
 R("P-03b", A, (13, 13), "ankle", "failed fix", "N feet", "L-N-KITCHEN", "N-D1",
   "CU from the same side, the frame dropped to floor level: the same seat and chair as P-03a, the same brace now bunched around her right ankle above her slipper, both slippers on the floor; hands and head out of frame (edit of the P-03a frame, FP14)",
   "she shifts her foot once", "one small shift, about a second", "feet only, seated", "absent", "—",
