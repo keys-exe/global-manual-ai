@@ -20,11 +20,11 @@
   "task": "1VZ709_1L6_cNjSadgDKn-BIKDGy89a5C"
  },
  "balances": {
-  "Higgsfield": 7646.15,
+  "Higgsfield": 7623.15,
   "Kie AI": 261969.8,
-  "Kling": 40245
+  "Kling": 39941
  },
- "balancesAt": 1790888539033,
+ "balancesAt": 1790889730352,
  "voices": [
   {
    "id": "N",
@@ -43,5 +43,5 @@
   "bpmEstimate": 73.8
  },
  "updatedAt": 1790849941280,
- "version": 31
+ "version": 33
 }

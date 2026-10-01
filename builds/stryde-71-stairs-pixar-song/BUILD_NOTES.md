@@ -426,3 +426,21 @@ Waiting on: picks on P-03a v11/v12, P-01b v11/v12; Confirm or Fix on the clip P-
 - Balances: Higgsfield 7646.15 · Kling 40245.
 
 Waiting on: a pick on P-01b v13/v14; Confirm or Fix on the clip P-03a v3. Then Act 1 is complete and the Act 2 B-roll images begin.
+
+## 2026-10-01 — "FIX THOSE" round 5 (21:15 UTC)
+
+- The user picked **P-01b v13 A** → clip v3 (4 s, 32 cr; the first clip on this frame): through the balusters the lower slipper settles on the step below, the upper foot follows down. To check. Unused v14 B → Old 2 (`e0b7ba5b…`).
+- **P-03a** clip Fix "IT SHOULD FEELING DRIFTING DOWN" (v3 had her pull the brace up and it sagged back) → the act-map row's action and pace changed ("the brace drifts slowly down her shin on its own, her hand letting it go · one slow slide, about three seconds"; `actmap.py` PASS, STEP4_5 / `docs/actmap` v24 re-synced on Current + Plan, `motionPlan` on the card) → clip v4 (5 s, 40 cr): her hand lifts off to her thigh and the brace slides slowly down to just above the ankle. To check. v3 → Old 2 (`ee2be8f5…`).
+- Balances: Higgsfield 7633.15 · Kling 40093.
+
+Waiting on: Confirm or Fix on the clips P-01b v3 and P-03a v4. Then Act 1 is complete and the Act 2 B-roll images begin.
+
+## 2026-10-01 — "FIX THOSE" round 6 (21:30 UTC)
+
+- **P-01b** clip Fix "FIX HER STEPS" (the feet strip of v3 shows her slippers shuffling and crossing on one tread, never landing step by step) → clip v4 (4 s, 32 cr; generation 2 on the v13 frame): the one backward step spelled foot by foot — right slipper straight back and down, flat on the very next tread, heel first; the left joins it beside it, feet parallel a hand apart, each landing once. v3 → Old 2 (`39ab7a3a…`).
+- **P-03a** clip Fix "SHOULD BE FALLING WHILE DRIFTING DOWN" → the act-map row's action/pace changed again ("the brace slips loose and falls down her shin, drifting to her ankle · one fall, about two seconds"; `docs/actmap` v25 on Current + Plan) → clip v5 (5 s, 40 cr; generation 3 on the v11 frame, sent on the user's "FIX THOSE" — `user_go` and `fix_notes_all` on the call): the top strap pops off the kneecap and the brace drops down her shin under its own weight to rest at the ankle. v4 → Old 2 (`2bf17fd5…`).
+- New STRYDE rule **FP16** (repeat across P-01a and P-01b): a step on the stairs is spelled foot by foot — never "she steps down" alone.
+- What I see: **P-01b v4** — each slipper lands flat on the next tread, one at a time, no shuffling or crossing; but the picked frame (v13 A) has her toes pointing down the stairs, so it reads as walking down forwards, not backwards (the v1 note "this should be stepping backwards" stays in force — L18). Put up To check with that flagged; a backwards version needs a new image pair facing up the stairs, the user's call. **P-03a v5** — the brace slides off the knee and drops down the shin to rest at the ankle. Both To check.
+- Balances: Higgsfield 7623.15 · Kling 39941.
+
+Waiting on: Confirm or Fix on the clips P-01b v4 and P-03a v5.
