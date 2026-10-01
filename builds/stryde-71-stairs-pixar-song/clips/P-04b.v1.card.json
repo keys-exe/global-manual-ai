@@ -1,0 +1,41 @@
+{
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "c3c6086ce7674f4e8b84149f6f2b585d",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/995adb12-918b-4a64-b6cc-17dacdc4b16c-39aPOcZCU1MndHOQFXSrRw-output.mp4?x-kcdn-pid=112372",
+   "job": "AdbKCG6_nIJzk0Pl2sNxaLNf4tRN7biCyHrEUzN0vY9mSe05za3wfLZ2omDjiO9dQU8Xdzcx",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 40,
+   "size": 3721518,
+   "res": "1072×1928",
+   "duration": 5.04,
+   "at": 1790878081408,
+   "fromImage": 3,
+   "note": "from the confirmed image v3 A (job d6e85763) · what I see: the knee bends a little further and holds; she stays on her back"
+  }
+ ],
+ "videoAsset": "c3c6086ce7674f4e8b84149f6f2b585d",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/995adb12-918b-4a64-b6cc-17dacdc4b16c-39aPOcZCU1MndHOQFXSrRw-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AdbKCG6_nIJzk0Pl2sNxaLNf4tRN7biCyHrEUzN0vY9mSe05za3wfLZ2omDjiO9dQU8Xdzcx",
+ "videoConnector": "Kling",
+ "model": "kling-video-v3_0",
+ "credits": 40,
+ "duration": 5.04,
+ "videoRes": "1072×1928",
+ "videoAt": 1790878081408,
+ "prompt": "For the line \"Physical therapy. Pain pills. Cortisone shots.\": From this frame: the therapist bends the knee a little further — one slow bend, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. The therapist's two hands bend her right knee a little further toward her chest, slowly, and hold it there; she stays on her back, head on the pillow, eyes on the ceiling, hands folded on her stomach; the therapist's head stays out of frame above. Stylized 3D animation, both exactly on model from the frame. No camera travel; no third person; no cut; nobody turns to the lens.",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "videoNote": "first clip of this beat, from the confirmed v3 A · what I see: the knee bends a little further and holds; she stays on her back",
+ "status": "review",
+ "updatedAt": 1790878081408
+}

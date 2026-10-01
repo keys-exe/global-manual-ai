@@ -1,0 +1,38 @@
+{
+ "moved": [
+  {
+   "asset": "cfc3b2e15d01fc9898960e2a89726fa8",
+   "at": 1790876674688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "34a4e086-d516-4570-af05-3bcb361ab1aa",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · replaced by the v3 pair on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7436671,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174004_34a4e086-d516-4570-af05-3bcb361ab1aa.png",
+   "v": 3,
+   "archived": true,
+   "archiveAsset": "cfc3b2e15d01fc9898960e2a89726fa8"
+  },
+  {
+   "asset": "d58e8be1156fcb062d2f4809db0b78aa",
+   "at": 1790876674688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "979a33d3-1057-491f-8304-8f29d86fc5e1",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · replaced by the v3 pair on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7989378,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174004_979a33d3-1057-491f-8304-8f29d86fc5e1.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "d58e8be1156fcb062d2f4809db0b78aa"
+  }
+ ]
+}

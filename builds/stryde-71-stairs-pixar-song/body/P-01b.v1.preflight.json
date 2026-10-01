@@ -1,0 +1,38 @@
+{
+ "beat": "P-01b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"One step at a time.\": Keep this photo exactly as it is — the staircase, its carpet runner, brass rods and balusters, the light — in close on four steps mid-flight, a tall 9:16 crop, and add her feet. Image 1 is the staircase.\nClose-up from the side at step height, feet and four steps filling the frame, sharp on the slippers: a pink terry slipper lowering onto the next step down, the other slipper still on the step above about to join it, bare brown ankles under the hem of a faded blue floral house dress, one hand gripping the oak rail at the top edge of the frame, her other hand and her head out of frame above.\nIn frame: two slippers, two legs below the knee, one hand on the rail, four steps of the one flight with their runner and rods; every other surface bare. Each foot whole.\nThe render of Image 1 in grey morning light from above. Slippers and hem plain — no lettering, logos or labels; nobody else.",
+ "script_line": "One step at a time.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P0-PROP-N plate (confirmed)",
+   "kind": "location"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "973904c55f316a52570c8bff44ef7a07",
+ "taste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null
+}
