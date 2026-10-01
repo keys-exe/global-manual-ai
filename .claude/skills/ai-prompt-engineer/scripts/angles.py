@@ -55,9 +55,15 @@ Checks (any FAIL → exit 1):
            move; 3-5 rows use >= 2 styles, 6+ use >= 3; no style on over half (4+), never one style three in a row;
            no two in a row with the same style, height, side and scale; any four in a row have >= 3 setups; the low
            three-quarter on at most a third (3+); no move three in a row, none on over half (4+). pair_of exempts.
+  MVCAM    (§3C camera, V7.86.0) music-video rows (rows with `section`): every row names a library `shot` (§24K part 7)
+           and a camera `move` (push-in, pull-back, orbit, crane-up, crane-down, track, tilt, drift, locked); locked /
+           drift on at most a third; no move three in a row; signature shots at most one in four, never two in a row;
+           a section of 4+ rows uses >= 3 shots; every chorus section (name has CHORUS / DROP, or a row's music is MUS-TURN) has a
+           hero — WIDE/FULL from low, ground, high or overhead, or a crane / orbit; a repeated lyric is never shot
+           from the same setup twice (mirror_of exempts)
 Talking heads (TH), POV and CCTV rows are seed- or mount-locked and skipped (§30A rules 6–7, §22E).
 """
-import argparse, json, sys
+import argparse, json, re, sys
 from collections import defaultdict
 from pathlib import Path
 
@@ -260,8 +266,8 @@ def main():
     counted = [r for r in an if not r.get("pair_of")]          # a matched pair counts once
     n = len(counted)
     used = {sty(r) for r in counted if sty(r)}
-    need = 3 if n >= 6 else 2 if n >= 3 else 1
-    if len(used) < need:
+    need = 3 if n >= 6 else 2 if n >= 3 else 0   # fewer than three anatomy beats (none included): no range to check (LESSONS L19)
+    if need and len(used) < need:
         fail("ANAT", [r["beat"] for r in counted], f"{n} anatomy beats in {len(used)} style(s) {sorted(used)} — use at least {need} (§12A-1)")
     if n >= 4:
         for st in used:
@@ -291,6 +297,51 @@ def main():
             if len({(x.get("height"), x.get("side"), x.get("scale")) for x in w}) < 3:
                 fail("ANAT", [x["beat"] for x in w], "fewer than three angles in four anatomy beats")
 
+    # MVCAM (§3C, V7.86.0 — user: "camera angles in music videos"): the camera moves with the song
+    MV_MOVES = {"push-in", "pull-back", "orbit", "crane-up", "crane-down", "track", "tilt", "drift", "locked"}
+    mv = [r for r in rows if r.get("section")]
+    for r in mv:
+        if not shots(r):
+            fail("MVCAM", [r.get("beat")], "music-video row with no library shot (§24K part 7) — name it (SH-LOW, SH-OTS, SH-AERIAL…)")
+        for sid in shots(r):
+            if sid not in LIB:
+                fail("MVCAM", [r.get("beat")], f"unknown shot {sid}")
+        if r.get("move") not in MV_MOVES:
+            fail("MVCAM", [r.get("beat")], f"no camera move ({' · '.join(sorted(MV_MOVES))}), has {r.get('move')!r}")
+    if mv:
+        still = sum(1 for r in mv if r.get("move") in ("locked", "drift"))
+        if still * 3 > len(mv):
+            fail("MVCAM", ["video"], f"the camera barely moves: locked / drift on {still}/{len(mv)} shots — at most a third")
+        for i in range(2, len(mv)):
+            if mv[i].get("move") and mv[i].get("move") == mv[i - 1].get("move") == mv[i - 2].get("move"):
+                fail("MVCAM", [mv[i - 2]["beat"], mv[i - 1]["beat"], mv[i]["beat"]], f"move {mv[i]['move']} three in a row")
+        sigm = lambda r: bool(SIGNATURE & set(shots(r))) and not r.get("inspo_ok")
+        if sum(map(sigm, mv)) * 4 > len(mv):
+            fail("MVCAM", ["video"], f"signature shots on {sum(map(sigm, mv))}/{len(mv)} — at most one in four")
+        for i in range(1, len(mv)):
+            if sigm(mv[i - 1]) and sigm(mv[i]):
+                fail("MVCAM", [mv[i - 1]["beat"], mv[i]["beat"]], "two signature shots in a row")
+        secs = defaultdict(list)
+        for r in mv:
+            secs[str(r["section"])].append(r)
+        for sec, rs in secs.items():
+            kinds_ = {sid for r in rs for sid in shots(r)}
+            if len(rs) >= 4 and len(kinds_) < 3:
+                fail("MVCAM", [sec], f"{len(kinds_)} shot types in {len(rs)} shots — at least three")
+            chorus = re.search(r"chorus|drop", sec, re.I) or any(r.get("music") == "MUS-TURN" for r in rs)
+            if chorus and not any((r.get("scale") in ("WIDE", "FULL") and r.get("height") in ("low", "ground", "high", "overhead"))
+                                  or r.get("move") in ("crane-up", "crane-down", "orbit") for r in rs):
+                fail("MVCAM", [sec], "a chorus with no hero shot — WIDE/FULL from low, ground, high or overhead, or a crane / orbit")
+        seen_line = {}
+        for r in mv:
+            key = re.sub(r"\W+", " ", str(r.get("line", "")).lower()).strip()
+            if not key:
+                continue
+            setup_ = (tuple(shots(r)), r.get("height"), r.get("side"), r.get("scale"))
+            if key in seen_line and seen_line[key][0] == setup_ and not r.get("mirror_of"):
+                fail("MVCAM", [seen_line[key][1], r["beat"]], "the repeated lyric shot from the same setup — a repeat gets a new angle")
+            seen_line.setdefault(key, (setup_, r["beat"]))
+
     dist = defaultdict(int)
     for r in rows:
         dist[f"{r.get('height')}/{r.get('side')}"] += 1
@@ -300,7 +351,7 @@ def main():
         for f in out:
             print(f"FAIL  {f['check']:8} {', '.join(map(str, f['beats']))}  — {f['detail']}")
         print("setups: " + ", ".join(f"{k} ×{v}" for k, v in sorted(dist.items(), key=lambda x: -x[1])))
-        print("ANGLES, SHOTS, FOCUS, LIGHT & ANATOMY PASS" if not out else f"ANGLES, SHOTS, FOCUS, LIGHT & ANATOMY FAIL ({len(out)})")
+        print("ANGLES, SHOTS, FOCUS, LIGHT, ANATOMY & MUSIC-VIDEO CAMERA PASS" if not out else f"ANGLES, SHOTS, FOCUS, LIGHT, ANATOMY & MUSIC-VIDEO CAMERA FAIL ({len(out)})")
     sys.exit(1 if out else 0)
 
 
