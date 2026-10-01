@@ -109,3 +109,9 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
 - Audio: voice masters remuxed .m4a → .mp4 (stream copy, the board refuses .m4a); VO takes are ElevenLabs' MP3s in an MP4 container (stream copy).
 - Hourly Fix check moved: `trig_01UEW1qUaoYzJv9wMFUSwpja` (:42 UTC) → this session (session_01DtKvcydSBrnzqU5ZXRQ7Pm). The old `trig_018sxCBh92CESZPjxJZLiUJr` is on the other account — the user turns it off there.
 - Next: the user checks INFO-DRAWER v2 + OUT-C3-B3 v2 → then the 10 SC03 clips on Seedance 2.5 (ingredients only), SH01→SH10; VOICE-C4 master to mp3 for SH09.
+- 2026-10-01 SC03 clips carried onto the new Current board (v1, To check); INFO-DRAWER v2 + OUT-C3-B3 v2 set confirmed (the user confirmed them on the first boards).
+- 2026-10-01 **SC03 Fix round (chat, "FIX ALL THESE")**: SH07/SH08 "THIS TWO SHOULD BE CONNECTED AND HUSBAND SHOULD BE LOOKING FROM THE DOORWAY INTO THE BEDROOM LOOKING TO HER"; SH09 "HERE SHE IS NOT USING THE SAME PHONE AS THE NEXT SHOT".
+  - SH08 v2 (252 cr): her in profile at the drawer in the near frame, him in the doorway behind her watching her — To check.
+  - SH07 v2 (252 cr): written from the window side against the doorway plate; he came out inside the room by the window — not put up (L16), kept on Old. **LESSONS L17 / HT22**: a Seedance two-shot is written from the plate's own side. SH07 v3 (252 cr): over his shoulder on the threshold, looking in at her at the chest, her back to him — To check. SH07 v3 and SH08 v2 cut as shot/reverse.
+  - SH09 v2 (441 cr): the phone right, but a green jumper instead of the slate-grey cardigan — not put up, kept on Old. SH09 v3 (441 cr): SH10's slim champagne-gold smartphone, the cardigan held — To check.
+  - Round total 1,638 Kie cr. v1s and the unused v2s on the new Old board.
