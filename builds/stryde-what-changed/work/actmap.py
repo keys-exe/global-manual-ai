@@ -55,23 +55,23 @@ def BB(beat, act, line, key, fn, subj, loc, day, framing, action, pace, camera, 
       h, side, fg, scale, why, plane, dof, light["src"], light["ks"], light["time"], light["arc"], light["kelvin"], face, **kw)
 
 # ============================================================ HOOKS (VN01: line 1 as VO over full-screen B-roll, the host on camera for the last line)
-BB("HK1-a", HOOK[1], "Your knees have been taking seventeen times your bodyweight", "seventeen", "hook — the hidden number (VN01, EG03)",
-   "R2", "L-D-STAIRS", "D-D1", "low side-on, waist-down: Desmond climbing his stairs with two heavy shopping bags, knees bent under the load (user 2026-10-01 'GIVE ME NEW MULTIPLE DIFFERENT BROLL HERE')", "one step up, weight onto the front knee",
-   "one step, about a second and a half", STILL, "stairs: side-on, waist-down, camera still", "no", "absent", "—", "NB2",
-   LOW, PRO, "clean", "MS", "low profile = the load bending the knees", "foreground", "medium", L(D_GREY, "L"), False,
+BB("HK1-a", HOOK[1], "Your knees have been taking seventeen times your bodyweight", "seventeen", "hook — the hidden number (VN01, EG03) · anatomy (user 2026-10-01 'MAKE ME A DIFFERENT BROLLS FOR OUR HOOK 1, WITH ANATOMY')",
+   "ANAT", "—", "—", "ANAT-C side-on: the translucent figure, waist-down, stepping UP a flight of steps, the leading knee bent deep on the higher step and taking the whole body's weight, the tendon spot blazing", "the knee drives up, the spot flares as the weight comes on",
+   "one step up, about a second and a half", STILL, "none", "no", "absent", "—", "NB2",
+   LOW, PRO, "clean", "MEDIUM", "low profile = the whole weight coming down through one knee", "deep", "deep", L(ANAT, "R"), False,
    ledger="VN01", eg="EG03 full screen · EG04 caption red box 'seventeen times'")
-BB("HK1-a2", HOOK[1], "on every step", "every", "hook — the hidden number (VN01)",
-   "R1", "L-STREET", "M-D1", "ground-level ECU: Maureen's white plimsoll landing on her worn stone front-door step, her open front door and doormat right behind it", "the foot lands and takes the weight",
-   "one step, about a second", STILL, "ground level, feet only, camera still", "no", "absent", "—", "NB2",
-   GROUND, THR, "clean", "ECU", "ground level = every single step, close", "foreground", "medium", L(M_GREY, "L"), False, ledger="VN01")
-BB("HK1-b", HOOK[1], "for forty years,", "forty", "hook — the hidden number (VN01)",
-   "R1", "L-M-STAIRS", "M-D1", "high three-quarter CU looking down her stairs: the oatmeal carpet worn thin and grey down the middle of every tread — forty years of footsteps — her plimsoll stepping onto the worn patch (user 2026-10-01 board Fix 'DIFFERENT BROLL')", "her foot settles onto the worn patch",
-   "one step, about a second", STILL, "stairs from above, feet only, camera still", "no", "absent", "—", "NB2",
-   HIGH, TQB, "clean", "CU", "high, looking down = forty years worn into the stairs", "foreground", "shallow", L(M_GREY, "L"), False, ledger="VN01")
-BB("HK1-b2", HOOK[1], "and you never felt a thing.", "never", "hook — the hidden number (VN01)",
-   "R1", "L-STREET", "M-D1", "MEDIUM front-on from her doorstep: Maureen coming up her own front-garden path from the gate with a shopping bag, smiling, easy, oblivious", "two easy steps towards the camera",
-   "two steps, about two seconds", STILL, "front path, camera still", "no", "absent", "—", "NB2",
-   EYE, FRO, "clean", "MEDIUM", "eye level front = her, untroubled", "deep", "deep", L(M_GREY, "L"), False, ledger="VN01")
+BB("HK1-a2", HOOK[1], "on every step", "every", "hook — the hidden number (VN01) · anatomy",
+   "ANAT", "—", "—", "ANAT-A overhead: looking straight down at the knee as the foot lands on a step edge, the kneecap and tendon below, the spot pulsing on the landing", "one landing, the spot pulses once",
+   "one pulse, about a second", STILL, "none", "no", "absent", "—", "NB2",
+   OVER, FRO, "clean", "CU", "overhead = the repeat, step after step", "deep", "deep", L(ANAT, "R"), False, ledger="VN01")
+BB("HK1-b", HOOK[1], "for forty years,", "forty", "hook — the hidden number (VN01) · anatomy",
+   "ANAT", "—", "—", "ANAT-B cutaway, front three-quarter: the cartilage on the end of the thigh bone worn, dulled and pitted from years of use, a low ember at the tendon", "the camera holds; the ember breathes once",
+   "one slow breath of glow, about two seconds", STILL, "none", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "ECU", "close on the worn surface = years of wear", "deep", "deep", L(ANAT, "R"), False, ledger="VN01")
+BB("HK1-b2", HOOK[1], "and you never felt a thing.", "never", "hook — the hidden number (VN01) · anatomy",
+   "ANAT", "—", "—", "ANAT-C wide, front-on: a whole translucent figure walking calmly towards camera, relaxed, only one small spot glowing hot at the knee — the body unaware", "two easy steps, the spot glows quietly the whole time",
+   "two steps, about two seconds", STILL, "none", "no", "absent", "—", "NB2",
+   EYE, FRO, "clean", "WS", "wide and calm = she never felt it", "deep", "deep", L(ANAT, "R"), False, ledger="VN01")
 TH("HK1-TH", HOOK[1], "Here is what changed.")
 
 BB("HK2-a", HOOK[2], "There is a band under your kneecap about as wide as your thumb,", "band", "hook — the flattering fact (VN01)",

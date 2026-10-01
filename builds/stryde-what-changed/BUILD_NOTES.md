@@ -484,3 +484,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - HK1-b v2: new shot for "for forty years": her stair carpet worn thin down the middle of the treads, her plimsoll on it (act map row changed to L-M-STAIRS). Flaws: reads as looking UP the flight, not down; the flight runs along the left wall (plate has it on the right); the wear is subtle.
 - HK1-b2 v2: shot from her doorstep down the garden path, gate and bins behind. Flaw: she looks into the lens.
 - All v1s moved to Old 2 (new HK1-a2 / HK1-b2 Old docs; HK1-a / HK1-b appended as v2 there) and deleted from Current 2.
+
+### 2026-10-01 — "MAKE ME A DIFFERENT BROLLS FOR OUR HOOK 1, WITH ANATOMY"
+- Hook 1's first line is now four anatomy shots, one per phrase, on the same cards (v3), on Kie nano-banana-2, as `review`:
+  HK1-a: the translucent figure, waist-down, stepping up the stairs, the leading knee glowing · HK1-a2 (meant to be overhead on the knee
+  landing on a step) · HK1-b: cutaway of the joint, the worn cartilage · HK1-b2: a whole translucent figure walking calmly, one spot glowing.
+- Flaws reported: HK1-a2 came out front-on with red muscles and the TEXT "PATELLAR TENDINOPATHY / PAIN POINT" (needs a Fix);
+  HK1-b's cartilage looks smooth and healthy, not worn, and the glow sits on the shin bone; HK1-a's front foot is cut by the frame edge.
+- The live-action v2s moved to Old 2 (appended there) and deleted from Current 2. Act map rows changed to ANAT.
