@@ -446,3 +446,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   - **B23a v5** (Fix "REVIEW THE PRODUCT, FIX THE PRODUCT"): big strap, lowercase wordmark, but still redrawn — the band shows a little through the notch and the peaks are flatter than the real photo.
   - **B23b v3** (Fix "PUT STRYDE PRODUCT"): the strap seen from behind on her right leg (black band, slide); the keeper loops don't read clearly.
 - Replaced images → Old 2. Videos of all three wait for the image Confirm.
+
+### 2026-10-01 — "FIX AND CONFIRM" (B22a, B23b confirmed; B23a "FIX PRODUCT")
+- **B23a v6**: an edit of the confirmed B22a v4, the approved strap kept — close on the strapped leg, the other leg stepping down. The strap matches B22a v4 (pointed peaks, kneecap seated in the notch, lowercase "stryde"). To check; v5 → Old 2.
+- **B23b video v2** (gen 2, from the v3 frame with the strap from behind): she walks down the stairs, hands free. Flaw: the strap jumps between her legs during the clip. v1 → Old 2.
+- **B22a**: image v4 confirmed; its next video is the 4th for this shot → waits for the user's go.
+- Lesson: once one product frame is approved, build the next product shots as edits of it (the approved strap carries over) instead of asking for the product again.
+- Higgsfield 10,236.4.
