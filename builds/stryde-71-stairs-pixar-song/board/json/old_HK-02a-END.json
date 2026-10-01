@@ -1,0 +1,92 @@
+{
+ "act": "Hook 1",
+ "beat": "HK-02a-END",
+ "build": "stryde-71-stairs-pixar-song",
+ "endOf": "HK-02a",
+ "flow": [
+  "image"
+ ],
+ "hook": 1,
+ "imageAsset": "86da40c83c553296d2ca4320af370fc5",
+ "imageAt": 1790858654630,
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageJob": "b9e3acd4-f415-4567-9944-ed9350d218f0",
+ "imageMatch": "frame",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  1,
+  2
+ ],
+ "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": Keep this picture exactly as it is — the staircase, the camera, the light, the woman and her clothes — and move her one step higher. Image 1 is the start frame.\nThe daughter now on the 13th of 14 steps, one below the top, both feet planted, right hand still gripping the dark oak handrail, left hand on her thigh, chest rising, lips parted on a breath, face fully turned up, both eyes up into the lens.\nIn the frame: one woman, the one staircase, the photo wall; every other surface bare. Two hands, two legs. Everything else exactly as Image 1.\nClothing, shoes, walls and frames plain — no lettering, logos or labels; no second person.",
+ "imageRefs": [
+  {
+   "kind": "frame",
+   "label": "HK-02a start frame (A for A, B for B)",
+   "ref": "stryde-71-stairs-pixar-song__HK-02a",
+   "role": "Image 1 · edited (§6A rule 3)"
+  }
+ ],
+ "imageRegens": 0,
+ "imageRes": "1536×2752",
+ "imageStatus": "regenerate",
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT13",
+  "HT17",
+  "HT18",
+  "HT22"
+ ],
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_124052_b9e3acd4-f415-4567-9944-ed9350d218f0.png",
+ "imageVersions": [
+  {
+   "asset": "86da40c83c553296d2ca4320af370fc5",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "b9e3acd4-f415-4567-9944-ed9350d218f0",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "edit of HK-02a start A",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 6808607,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_124052_b9e3acd4-f415-4567-9944-ed9350d218f0.png",
+   "v": 1,
+   "archived": true
+  },
+  {
+   "asset": "95aca5264109c19e1ec40fa14a20a269",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "1e45b8ef-f90e-4cfc-b1e7-73ff3100f82a",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "edit of HK-02a start B",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7361103,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_124052_1e45b8ef-f90e-4cfc-b1e7-73ff3100f82a.png",
+   "v": 2,
+   "archived": true
+  }
+ ],
+ "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
+ "location": "L-N-STAIRS",
+ "note": "The end frame of the pinned stairs clip: Kling runs first-and-last frame between the start pick and this pick (§27G rule 5). Use A with start A, B with start B.",
+ "pinEnd": "yes",
+ "preflight": "PASS (§6A, kind image)",
+ "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
+ "section": "Hook — MUS-OPEN",
+ "stage": "hooks",
+ "status": "regenerate",
+ "storyDay": "N-D4",
+ "title": "HK-02a — pinned end frame (§27G rule 10, stairs): one step higher — C2 on the 13th step, face up to the lens — dropped (user: no end frames)",
+ "updatedAt": 1790860282492,
+ "imageFault": "user 2026-10-01: \"we dont need end frame\" — end frames dropped (§27G rule 10 pin waived); kept here, both renders"
+}

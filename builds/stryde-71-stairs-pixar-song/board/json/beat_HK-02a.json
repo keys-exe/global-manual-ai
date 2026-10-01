@@ -33,22 +33,22 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "",
- "updatedAt": 1790858654630,
+ "updatedAt": 1790860729163,
  "hook": 1,
- "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": her daughter near the top of the flight, a hand on the rail, looking up after her, a little out of breath. Image 1 is the daughter. Image 2 is the hall and staircase.\nMedium close-up from the top of the flight looking down, front-on, sharp on her eyes. The same woman as Image 1 on the 12th of 14 steps, mid-step, weight on her right foot, the left lifting to the 13th, right hand gripping the dark oak handrail, left hand on her thigh, chest rising, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. She fills more than half the frame's height. Below her the staircase of Image 2, its photo wall and the hall floor far down.\nIn the frame: one woman, the one staircase, the photo wall; every other surface bare. Two hands, two legs.\nA final frame from a 3D animated feature film — stylized storybook render, every surface with a material, a single catchlight in each eye, soft warm bounce in the shadows, afternoon sun from below lighting her front left.\nClothing, shoes, walls and frames plain — no lettering, logos or labels; no second person.",
+ "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": her daughter near the top of the flight, a hand on the rail, looking up after her, a little out of breath. Image 1 is the daughter. Image 2 is the hall and staircase.\nMedium close-up from the top of the flight, front-on, sharp on her eyes. The same woman as Image 1 on the 12th of 14 steps, mid-step, weight on her right foot, the left lifting to the 13th, right hand gripping the oak handrail, left hand on her thigh, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. She fills over half the frame. Below her the staircase of Image 2 copied exactly — beige runner, a brass rod on every step, white balusters, the photo wall — and far down the bare oak floorboards of Image 2.\nIn the frame: one woman, the one staircase, the photo wall, the oak floor; every other surface bare. Two hands, two legs.\nA final frame from a 3D animated feature film — stylized storybook render, a catchlight in each eye, afternoon sun from below, front left.\nClothing, shoes and walls plain — no lettering, logos or labels; no second person.",
  "imageStatus": "review",
  "imageRefs": [
   {
-   "label": "C2-DAUGHTER sheet v2",
-   "role": "Image 1",
    "kind": "character",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER"
+   "label": "C2-DAUGHTER sheet v2",
+   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
+   "role": "Image 1"
   },
   {
-   "label": "P0-PROP-N plate",
-   "role": "Image 2",
    "kind": "location",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N"
+   "label": "P0-PROP-N plate",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 2"
   }
  ],
  "imageMatch": null,
@@ -65,51 +65,87 @@
   "HT22"
  ],
  "preflight": "PASS (§6A, kind image)",
- "endFrame": "HK-02a-END",
  "imageVersions": [
   {
-   "v": 1,
-   "pair": "A",
    "asset": "2be33d780c1b97a7e4e1c52daea04a06",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe.png",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
    "job": "8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "size": 7228522,
+   "note": "not chosen — replaced by the v2 pair",
+   "pair": "A",
    "res": "1536×2752",
-   "at": 1790858654630,
-   "note": ""
+   "size": 7228522,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "69bedec6423694ced7635d8ae07730fc"
   },
   {
-   "v": 2,
-   "pair": "B",
    "asset": "069ac4366d876edb3e91933e6b5667c1",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "ae9045e0-f3b5-4962-8a73-ded5efba48ff",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "not chosen — replaced by the v2 pair",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7826194,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_ae9045e0-f3b5-4962-8a73-ded5efba48ff.png",
-   "job": "ae9045e0-f3b5-4962-8a73-ded5efba48ff",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "c3d50bdb4d1ab3d963191ddcb4dd5f8e"
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "7bc30137067c4923600880f72d2a6fc7",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131452_f8698a95-7941-4a72-ad86-d4d2697667d6.png",
+   "job": "f8698a95-7941-4a72-ad86-d4d2697667d6",
    "model": "nano_banana_pro → logged nano_banana_2",
    "connector": "Higgsfield",
    "credits": 2.14,
-   "size": 7826194,
+   "size": 7659126,
    "res": "1536×2752",
-   "at": 1790858654630,
-   "note": ""
+   "at": 1790860729163,
+   "note": "user 2026-10-01: \"we dont need end frame generate new ones\" — new pair from a rewritten prompt (§6A read-back)"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "2e977f0b371a42711cb756b517380b98",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131454_403d4f13-3bbb-4a0a-a04e-892afdfce94d.png",
+   "job": "403d4f13-3bbb-4a0a-a04e-892afdfce94d",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7951446,
+   "res": "1536×2752",
+   "at": 1790860729163,
+   "note": "user 2026-10-01: \"we dont need end frame generate new ones\" — new pair from a rewritten prompt (§6A read-back)"
   }
  ],
  "imagePair": [
-  1,
-  2
+  3,
+  4
  ],
- "imageAsset": "2be33d780c1b97a7e4e1c52daea04a06",
+ "imageAsset": "7bc30137067c4923600880f72d2a6fc7",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe.png",
- "imageJob": "8ecebb80-c45b-4e98-94bb-ed8d1b0bddbe",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131452_f8698a95-7941-4a72-ad86-d4d2697667d6.png",
+ "imageJob": "f8698a95-7941-4a72-ad86-d4d2697667d6",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
- "imageAt": 1790858654630,
- "imageRegens": 0,
- "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)"
+ "imageAt": 1790860729163,
+ "imageRegens": 1,
+ "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
+ "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
+ "endFrame": "HK-02a-END",
+ "imageFault": "user 2026-10-01: \"we dont need end frame generate new ones\" — new pair from a rewritten prompt (§6A read-back)"
 }

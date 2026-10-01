@@ -24,7 +24,7 @@
  "framing": "CU from the step below: her foot lands on the top step, strap on the bare right knee above, the family photos soft behind",
  "motionPlan": "From this frame: one foot lands on the step — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: feet only, front",
- "pinEnd": "yes",
+ "pinEnd": "no",
  "angle": "ground · front · clean · CU — ground = the first step",
  "focus": "product · medium",
  "light": "front-door sidelights, west wall · key L · afternoon · after: sun · 5600K",
@@ -33,6 +33,6 @@
  "eg": "",
  "music": "MUS-EDU",
  "ledger": "F1",
- "updatedAt": 1790858547525,
- "endFrame": "M-06a-END"
+ "updatedAt": 1790860191625,
+ "pinWaived": "user 2026-10-01: \"we dont need end frame\""
 }

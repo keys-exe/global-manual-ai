@@ -1,0 +1,82 @@
+{
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Hook 1",
+ "hook": 1,
+ "stage": "hooks",
+ "beat": "HK-03a",
+ "title": "hook — the line (edit of P0: the top of the flight, HT17) — v1 pair (replaced)",
+ "line": "\"Mama, when did that happen?\"",
+ "flow": [
+  "image"
+ ],
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "imageVersions": [
+  {
+   "asset": "5cb241f3716ed4e7c2b62beef21f3263",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "d0151928-525c-4ea8-9be1-d6eb17a5f9c5",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 8012648,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_d0151928-525c-4ea8-9be1-d6eb17a5f9c5.png",
+   "v": 1,
+   "archived": true
+  },
+  {
+   "asset": "3627c8b90c69488223745f44ab047247",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "f98ac62c-354e-4b96-9d51-06832af9859b",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6932749,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_f98ac62c-354e-4b96-9d51-06832af9859b.png",
+   "v": 2,
+   "archived": true
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageAsset": "5cb241f3716ed4e7c2b62beef21f3263",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_d0151928-525c-4ea8-9be1-d6eb17a5f9c5.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — hall, staircase, camera, light — as a tall 9:16 crop on the top four steps and the landing, with two women there. Image 1 is the hall and staircase. Image 2 is the mother. Image 3 is her daughter.\nThe same woman as Image 2 on the landing at the head of the flight, body facing along it, head turned back over her left shoulder to her daughter, a small knowing smile, mouth closed, eyes on her daughter, both hands free at her sides; emerald-green church dress to mid-calf, low black pumps. The same woman as Image 3 on the 14th and top step, right hand on the handrail, left hand on her chest, face turned up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. The two fill over half the frame's height.\nIn the frame: the two women, the top of the one staircase of Image 1 with its runner, balusters and handrail, the landing wall; every other surface bare. Two legs each.\nThe render and light of Image 1, the women on model, a catchlight in each eye.\nClothing, shoes and walls plain — no lettering, logos or labels; no third person.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P0-PROP-N plate",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1 · edited (HT17, §6A rule 3)"
+  },
+  {
+   "kind": "character",
+   "label": "N-NARR sheet v2",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  },
+  {
+   "kind": "character",
+   "label": "C2-DAUGHTER sheet v2",
+   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
+   "role": "Image 3"
+  }
+ ],
+ "imageFault": "user 2026-10-01: \"we dont need end frame generate new ones\" — new pair from a rewritten prompt (§6A read-back)",
+ "updatedAt": 1790860729163
+}

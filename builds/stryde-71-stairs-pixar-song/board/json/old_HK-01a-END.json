@@ -1,0 +1,90 @@
+{
+ "act": "Hook 1",
+ "beat": "HK-01a-END",
+ "build": "stryde-71-stairs-pixar-song",
+ "endOf": "HK-01a",
+ "flow": [
+  "image"
+ ],
+ "hook": 1,
+ "imageAsset": "773c24e0595106cd1eb865ba907a1424",
+ "imageAt": 1790858654630,
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageJob": "a15b8669-db9f-44b1-9d0e-fb77b03aa563",
+ "imageMatch": "frame",
+ "imageModel": "nano_banana_pro → logged nano_banana_2",
+ "imagePair": [],
+ "imageParts": [],
+ "imagePrompt": "For the line \"I'm seventy-one, and I take the stairs\": Keep this picture exactly as it is — the staircase, the camera, the light, the two women and their clothes — and move them two steps higher. Image 1 is the start frame.\nThe older woman now on the 8th of 14 steps, mid-step, weight on her left foot, right foot lifting to the 9th, both hands free at her sides, the side of her face showing, eyes up the stairs, mouth closed. Her daughter now on the 6th step, inside the rail behind her, right hand on the oak handrail, left hand loose at her side, eyes on her mother's back.\nIn the frame: the two women, the one staircase of Image 1, the hall floor below; every other surface bare. Two legs each, one foot per step. Everything else exactly as Image 1.\nClothing, shoes, walls and frames plain — no lettering, logos or labels; no third person.",
+ "imageRefs": [
+  {
+   "kind": "frame",
+   "label": "HK-01a start frame (A for A, B for B)",
+   "ref": "stryde-71-stairs-pixar-song__HK-01a",
+   "role": "Image 1 · edited (§6A rule 3)"
+  }
+ ],
+ "imageRegens": 0,
+ "imageRes": 7640292,
+ "imageStatus": "regenerate",
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT13",
+  "HT17",
+  "HT18",
+  "HT22"
+ ],
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_124052_a15b8669-db9f-44b1-9d0e-fb77b03aa563.png",
+ "imageVersions": [
+  {
+   "asset": "773c24e0595106cd1eb865ba907a1424",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "a15b8669-db9f-44b1-9d0e-fb77b03aa563",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "edit of HK-01a start A",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7640292,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_124052_a15b8669-db9f-44b1-9d0e-fb77b03aa563.png",
+   "v": 1,
+   "archived": true
+  },
+  {
+   "asset": "b28079c27dba04827752117c784a5ad4",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "da0b713e-9abb-4cd8-8542-60d60e34c4fb",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "edit of HK-01a start B",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7754530,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_124052_da0b713e-9abb-4cd8-8542-60d60e34c4fb.png",
+   "v": 2,
+   "archived": true
+  }
+ ],
+ "line": "I'm seventy-one, and I take the stairs",
+ "location": "L-N-STAIRS",
+ "note": "The end frame of the pinned stairs clip: Kling runs first-and-last frame between the start pick and this pick (§27G rule 5). Use A with start A, B with start B.",
+ "pinEnd": "yes",
+ "preflight": "PASS (§6A, kind image)",
+ "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
+ "section": "Hook — MUS-OPEN",
+ "stage": "hooks",
+ "status": "regenerate",
+ "storyDay": "N-D4",
+ "title": "HK-01a — pinned end frame (§27G rule 10, stairs): two steps higher — N on the 8th step, C2 on the 6th — dropped (user: no end frames)",
+ "updatedAt": 1790860282492,
+ "imageFault": "user 2026-10-01: \"we dont need end frame\" — end frames dropped (§27G rule 10 pin waived); kept here, both renders"
+}

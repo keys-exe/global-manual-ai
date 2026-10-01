@@ -24,7 +24,7 @@
  "framing": "MEDIUM from the side through the balusters: N comes down the last three steps into the hall facing forwards, hands free, the strap on her bare right knee, Loretta's shoulder soft in the foreground",
  "motionPlan": "From this frame: three steps down to the hall floor, one foot per step — one step per second; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: side, waist-up, camera still, 3 steps",
- "pinEnd": "yes",
+ "pinEnd": "no",
  "angle": "eye · profile · through · MEDIUM — through the balusters = Loretta's view, watching her do it",
  "focus": "product · deep",
  "light": "front-door sidelights, west wall · key L · afternoon · after: sun · 5600K",
@@ -33,6 +33,6 @@
  "eg": "",
  "music": "MUS-TURN",
  "ledger": "",
- "updatedAt": 1790858547525,
- "endFrame": "R-07c-END"
+ "updatedAt": 1790860191625,
+ "pinWaived": "user 2026-10-01: \"we dont need end frame\""
 }

@@ -21,15 +21,17 @@ ROWS = []
 def R(beat, act, lines, key, fn, subj, loc, day, framing, action, pace, staging, prod, vis,
       h, side, fg, scale, why, plane, dof, src, kelvin, time, arc, face, music, ledger="", layout="full", eg="",
       pin="no", camera="RV sway — the virtual camera breathes in place, never travels", mx=6, mirror=None, moving=False, ks=None, tin=0.0):
+    pin_waived = None
     if staging.startswith("stairs"):
-        pin = "yes"   # §27G rule 10: stairs class always first-and-last frame (end frame <BEAT>-END, picked with the start)
+        # §27G rule 10 would pin every stairs clip; the user waived it: "we dont need end frame" (2026-10-01) — recorded as pin_waived
+        pin = "no"; pin_waived = "user 2026-10-01: \"we dont need end frame\""
     a, b = lines
     line = " ".join(LYR[i]["line"] for i in range(a, b + 1))
     if vis in ("VISIBLE", "REVEAL", "REVEAL→CONCEALED") or prod.startswith(("worn (anatomical)", "held", "box", "seated")):
         plane = "product"
     ks = ks or {"front": "L", "three-quarter": "R", "profile": "L", "behind": "L", "three-quarter-back": "R", "ots": "R"}[side]
     ROWS.append(dict(beat=beat, act=act, type="BR", lines=[a, b], line=line, key=key, function=fn, subject=subj, location=loc,
-        story_day=day, framing=framing, action=action, pace=pace, camera=camera, staging=staging, pin_end=pin, max=mx,
+        story_day=day, framing=framing, action=action, pace=pace, camera=camera, staging=staging, pin_end=pin, pin_waived=pin_waived, max=mx,
         product=prod, visibility=vis, model="NBP", layout=layout, eg=eg, ledger=ledger, music=music,
         angle=dict(height=h, side=side, fg=fg, scale=scale, why=why), mirror_of=mirror,
         focus=dict(plane=plane, dof=dof, rack=None, moving_subject=moving),
@@ -347,7 +349,7 @@ if __name__ == "__main__":
         a, f, l = r["angle"], r["focus"], r["light"]
         md.append("| " + " | ".join(str(x).replace("|", "/") for x in [
             r["beat"], r["act"], f'{r["t_in"]:.2f} → {r["t_out"]:.2f} ({r["on_screen"]:.1f})', f'{r["section"].split(" — ")[1]} · {r["bars"]:g}', f'{r["lines"][0]}–{r["lines"][1]}', r["line"], r["key"], r["function"], r["subject"], r["location"], r["story_day"], r["framing"],
-            f'{r["action"]} · {r["pace"]}', r["staging"], r["pin_end"], r["camera"],
+            f'{r["action"]} · {r["pace"]}', r["staging"], r["pin_end"] + (" · waived (user 2026-10-01)" if r.get("pin_waived") else ""), r["camera"],
             f'{a["height"]} · {a["side"]} · {a["fg"]} · {a["scale"]}' + (f' — {a["why"]}' if a["why"] else ""),
             f'{f["plane"]} · {f["dof"]}', f'{l["source"]} · key {l["key_side"]} · {l["time"]} · {l["arc"]} · {l["kelvin"]}K',
             f'{r["product"]} · {r["visibility"]}', r["layout"] + (f' · {r["eg"]}' if r["eg"] else ""),

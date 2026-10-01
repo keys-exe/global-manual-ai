@@ -24,7 +24,7 @@
  "framing": "MEDIUM from the sidewalk: N comes down the church steps facing forwards, hands free, the three ladies watching from the side",
  "motionPlan": "From this frame: one step down, facing forwards — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: camera at the bottom, subject 1 step, hands free",
- "pinEnd": "yes",
+ "pinEnd": "no",
  "angle": "low · three-quarter · clean · MEDIUM — low = resolve; she's the proof",
  "focus": "deep · deep",
  "light": "open sky, afternoon sun · key R · afternoon · after: Sunday sun · 5600K",
@@ -33,6 +33,6 @@
  "eg": "",
  "music": "MUS-AFTER",
  "ledger": "VN08",
- "updatedAt": 1790858547525,
- "endFrame": "C-02b-END"
+ "updatedAt": 1790860191625,
+ "pinWaived": "user 2026-10-01: \"we dont need end frame\""
 }

@@ -1,0 +1,42 @@
+{
+ "beat": "HK-02a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": her daughter near the top of the flight, a hand on the rail, looking up after her, a little out of breath. Image 1 is the daughter. Image 2 is the hall and staircase.\nMedium close-up from the top of the flight, front-on, sharp on her eyes. The same woman as Image 1 on the 12th of 14 steps, mid-step, weight on her right foot, the left lifting to the 13th, right hand gripping the oak handrail, left hand on her thigh, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. She fills over half the frame. Below her the staircase of Image 2 copied exactly — beige runner, a brass rod on every step, white balusters, the photo wall — and far down the bare oak floorboards of Image 2.\nIn the frame: one woman, the one staircase, the photo wall, the oak floor; every other surface bare. Two hands, two legs.\nA final frame from a 3D animated feature film — stylized storybook render, a catchlight in each eye, afternoon sun from below, front left.\nClothing, shoes and walls plain — no lettering, logos or labels; no second person.",
+ "script_line": "Last Sunday, my daughter walked behind me the whole way up and said,",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "C2-DAUGHTER sheet v2",
+   "kind": "character"
+  },
+  {
+   "label": "P0-PROP-N plate",
+   "kind": "location"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "see V2 comment"
+}
