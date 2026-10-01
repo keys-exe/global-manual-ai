@@ -1,0 +1,87 @@
+{
+ "act": "Hook 1",
+ "beat": "P-01a-END",
+ "build": "stryde-71-stairs-pixar-song",
+ "createdAt": 1790883993227,
+ "endFrameFor": "P-01a",
+ "flow": [
+  "image"
+ ],
+ "framing": "the P-01a start frame with her one step lower — both feet on the second step from the top, her back to the lens, hands on the rail (§27G rule 10: the end frame that pins the clip's direction)",
+ "imageAsset": "5143acc4818d53a943f7903e7200f389",
+ "imageAt": 1790884048040,
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageFault": "not needed — the user dropped the pinned end frame on P-01a (2026-10-01); both renders kept here",
+ "imageJob": "f8a4e603-4af4-40fe-80fd-18646cd781f1",
+ "imageMatch": "frame",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  1,
+  2
+ ],
+ "imagePrompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": Keep this photo exactly as it is — the hall floor, the whole flight, the oak rail and newel, the photo wall, the light — and only move the woman one step down. Image 1 is the picture; nothing in it changes but her place on the stairs.\nMedium shot from the hall floor looking up the whole flight, sharp on her. The woman of Image 1, seventy-one, now standing with both feet on the second step from the top, one step lower, a little larger in the frame, her back to the lens facing the landing, both hands gripping the oak rail a little lower, faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman from behind near the top of the flight of Image 1, two steps above her to the landing, every step between her and the lens, the rail, the newel, the photo wall; every other surface bare. Two hands on the rail, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Clothing and frames plain — no lettering, logos or labels; no second person.",
+ "imageRefs": [
+  {
+   "kind": "frame",
+   "label": "P-01a frame v12 B (confirmed) — the start frame",
+   "ref": "stryde-71-stairs-pixar-song__P-01a",
+   "role": "Image 1 · edited (§6A rule 3, HT17, FP14)"
+  }
+ ],
+ "imageRes": "1536×2752",
+ "imageStatus": "regenerate",
+ "imageTaste": [
+  "HT02",
+  "HT03",
+  "HT17",
+  "FP14"
+ ],
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194553_f8a4e603-4af4-40fe-80fd-18646cd781f1.png",
+ "imageVersions": [
+  {
+   "asset": "5143acc4818d53a943f7903e7200f389",
+   "at": 1790884048040,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "f8a4e603-4af4-40fe-80fd-18646cd781f1",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "the pinned end frame for P-01a: the confirmed start frame with her one step lower · not needed: the user dropped the pinned end frame on P-01a (2026-10-01, \"I DONT NEED END FRAME IN P01\"); kept on Old versions 2",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7274117,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194553_f8a4e603-4af4-40fe-80fd-18646cd781f1.png",
+   "v": 1
+  },
+  {
+   "asset": "ed8b76e75b6e07f044d7ee3ef543ffb9",
+   "at": 1790884048040,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "396928e7-aa36-4b58-bafe-b66de9489313",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "the pinned end frame for P-01a: the confirmed start frame with her one step lower · not needed: the user dropped the pinned end frame on P-01a (2026-10-01, \"I DONT NEED END FRAME IN P01\"); kept on Old versions 2",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7309418,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194552_396928e7-aa36-4b58-bafe-b66de9489313.png",
+   "v": 2
+  }
+ ],
+ "key": "backwards",
+ "line": "Six weeks ago, I was going down my stairs backwards.",
+ "lines": [
+  6,
+  6
+ ],
+ "location": "L-N-STAIRS",
+ "shot": "low · behind · clean · MEDIUM",
+ "stage": "broll",
+ "status": "regenerate",
+ "title": "P-01a — pinned end frame (one step lower)",
+ "updatedAt": 1790885300000,
+ "note": "Old versions 2 (overflow board): the end-frame pair for P-01a, never picked — the P-01a clip is made from its start frame alone"
+}
