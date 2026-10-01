@@ -1,0 +1,76 @@
+{
+ "videoVersions": [
+  {
+   "archiveAsset": "743b683df5fa55b7e68d5f5718b5a017",
+   "archived": true,
+   "asset": "fd3d7510a4dbe96f31cf19f9cf878af9",
+   "at": 1790879441635,
+   "connector": "Kling",
+   "credits": 32,
+   "duration": 4.04,
+   "fromImage": 5,
+   "job": "AVQFMONukGJ4IfiOICrhuf_Vz2b98IFT6hgiNfAubAB3_55Ju4dNZMuGZDuWwicaB0DF7eGy",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v5 A (job 257b0fc3) · what I see: the lower heel settles on the step below and the other foot follows; the feet stay turned up the stairs · replaced on the user's Fix (never talk the lyrics in B-roll); copied to Old versions",
+   "res": "1072×1928",
+   "size": 7207960,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/ed657454-a0c6-4691-9ef1-38f2c7e7f06a-2ddgBxbNi261B_5vJYz6kA-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  },
+  {
+   "archiveAsset": "dda3cd9e156087a07392397a33540500",
+   "archived": true,
+   "asset": "81924488136f9eeaa8edd820ce4abc9e",
+   "at": 1790881100527,
+   "connector": "Kling",
+   "credits": 32,
+   "duration": 4.04,
+   "fromImage": 5,
+   "job": "AaAOyXEk_2RrgNMFgyETzVWjaMEum3RdwccuIj53pvbMeZzCsijUhiia72bNd47c-Evwn8Jq",
+   "model": "kling-video-v3_0",
+   "note": "user Fix: this should be stepping backwards → each foot moves down and away from the top, toes up the stairs, the feet never climb; nobody speaks (§35A rule 6) · what I see: the first heel settles on the step below, but the second foot then swings up and forward — it still reads as climbing more than stepping back · its image was replaced; copied to Old versions",
+   "res": "1072×1928",
+   "size": 7149802,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/546b7953-5fcf-4ada-b975-46758b77cf9c-2JOCIgScxv0ubXoLDAVXfw-output.mp4?x-kcdn-pid=112372",
+   "v": 2
+  },
+  {
+   "v": 3,
+   "asset": "c58026b5afc959074a8a6426425c8943",
+   "at": 1790889169036,
+   "connector": "Kling",
+   "credits": 32,
+   "duration": 4.04,
+   "fromImage": 13,
+   "job": "Ad2ayckrDHYCj8Q6-LgaXEpNGzXpmmwU7Zaj9491-gVzyoTBLdFksu7N90d1HTx9PBR8pD0w",
+   "model": "kling-video-v3_0",
+   "res": "1072×1928",
+   "size": 7074135,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/bc76d640-c02f-40cd-9499-d2e5d6eb7afb-A2GImGx9WJVZOY_o9ZKZYA-output.mp4?x-kcdn-pid=112372",
+   "note": "from the picked image v13 A (job dd368a57) · the first clip on this frame (the image was replaced on the user's Fixes — her own legs, from the side) · what I see: through the balusters her lower slipper settles on the step below, the upper foot follows down, her body facing up the stairs, the hand on the rail; nobody speaks"
+  }
+ ],
+ "status": "review",
+ "prompt": "For the line \"One step at a time.\": From this frame: the right heel settles on the step below, the left foot joins it — about two seconds; camera RV sway — the virtual camera breathes in place, never travels. In close at step height, she steps backwards down the flight: the lower slipper's heel settles on the step below and takes her weight, then the upper foot lifts and reaches back and down to join it — each foot moves downward and away from the top, toes always pointing up the stairs; the hand stays on the rail; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; the feet never turn around or climb.",
+ "regens": 3,
+ "duration": 4.04,
+ "videoAsset": "c58026b5afc959074a8a6426425c8943",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/bc76d640-c02f-40cd-9499-d2e5d6eb7afb-A2GImGx9WJVZOY_o9ZKZYA-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "Ad2ayckrDHYCj8Q6-LgaXEpNGzXpmmwU7Zaj9491-gVzyoTBLdFksu7N90d1HTx9PBR8pD0w",
+ "credits": 32,
+ "videoAt": 1790889169036,
+ "videoRes": "1072×1928",
+ "videoConnector": "Kling",
+ "model": "kling-video-v3_0",
+ "videoFault": {
+  "__delete__": true
+ },
+ "fault": {
+  "__delete__": true
+ },
+ "updatedAt": 1790889169036
+}
