@@ -18,10 +18,15 @@ CUE.json — the scene's music cue, from its sound plan:
                 {"name": "After",           "start": 13.0, "end": 24.6, "energy": "mid",
                  "styles": ["cello enters", "warm theme"]}]}
   Section edges sit on the scene's cut cues or its turn (§24M). The last section runs 2s past the scene.
-  "sung": true + "lines" per section — a sung music video (§3C, only on the user's call): the lyrics are the
-  script's lines verbatim; vocals allowed, VOCALS not checked. "bpm": 88 pins the tempo (and the cut grid).
-cuts:    music.py cuts CUE TRACK --rows rows.json — §3C/§30H for a music video: the beat grid, then every row's
-         cut on a bar line, its time on screen, its call length (E6); FLASH under 2.0s, a row over 15s, a hole.
+  "sung": true + "lines" per section — a music video (§3C, sung by default): the lyrics are the script's lines
+  verbatim, in order. plan refuses a CROWDED section (over 2.5 words a second); the plan asks for one clear lead
+  vocal with every word intelligible. check transcribes the vocal and FAILS LYRICS when a section's sung words
+  match the script under 85% (missing words listed); --words-out saves the word timings for cuts.
+  "bpm": 88 pins the tempo (and the cut grid).
+cuts:    music.py cuts CUE TRACK --rows rows.json [--words words.json] — §3C/§30H for a music video. Sung, with a
+         `phrase` per row: each row cuts on the beat at or before the first sung word of its line (never after it).
+         Instrumental: rows hold their `bars` from cuts on bar lines, section changes on the music's. Prints every
+         row's cut, time on screen and call length (E6); FLASH under 2.0s, SPLIT over 15s, NOT SUNG, HOLE.
 render:  music.py render CUE TRACK --rows rows.json --out rough.mp4 — the rough cut: each clip from its 0.4s
          in-point for its time on screen, 9:16, joined frame-exact, the track whole under it.
   "register": "MUS-OPEN" (or --register): the §40A register of the script part — MUS-OPEN, MUS-EXPOSE,
@@ -89,6 +94,17 @@ TEMPO = {"slow": (40, 90), "moderate": (85, 120), "fast": (115, 200)}
 
 
 VOCAL_NEG = {"vocals", "lyrics", "singing", "humming"}
+# §3C sung music video: the lyrics are the script's lines verbatim, and every word must be made out.
+SUNG_WPS = 2.5      # most words per second a section can carry and still be sung clearly (unverified)
+SUNG_STYLES = ["one clear lead vocal up front in the mix", "every word intelligible", "sung at the rhythm of speech",
+               "the lyrics sung exactly as written, no added words"]
+SUNG_NEG = ["mumbled or slurred vocals", "heavy autotune", "vocal chops", "ad-libs", "added or repeated words",
+            "a choir or backing vocals over the lead", "vocals buried under the instruments"]
+LYRIC_MIN = 0.85    # word accuracy a section's sung lyrics must reach against the script (unverified)
+
+
+def words_of(t):
+    return re.findall(r"[a-z0-9']+", re.sub(r"[’‘]", "'", (t or "").lower()))
 
 
 def build_plan(cue):
@@ -102,8 +118,17 @@ def build_plan(cue):
                      "duration_ms": int(round((end - s["start"]) * 1000)),
                      "lines": list(s.get("lines", [])) if sung else []})
     tempo = f"{cue['bpm']} BPM" if cue.get("bpm") else f"{cue.get('tempo', 'slow')} tempo"
-    pos = cue["theme"] + ([] if sung else ["instrumental"]) + [tempo]
-    neg = [x for x in cue.get("avoid", []) if not (sung and x in VOCAL_NEG)] + ([] if sung else ["vocals", "lyrics", "singing"])
+    if sung:
+        crowded = []
+        for i, s in enumerate(cue["sections"]):
+            n = len(words_of(" ".join(s.get("lines", []))))
+            dur = s["end"] - s["start"]
+            if n and n / max(dur, 0.1) > SUNG_WPS:
+                crowded.append(f"'{s['name']}': {n} words in {dur:.1f}s ({n / dur:.1f}/s, max {SUNG_WPS}/s) — lengthen the section, never cut a word")
+        if crowded:
+            sys.exit("CROWDED — the lyrics cannot be sung clearly in the time:\n  " + "\n  ".join(crowded))
+    pos = cue["theme"] + (SUNG_STYLES if sung else ["instrumental"]) + [tempo]
+    neg = [x for x in cue.get("avoid", []) if not (sung and x in VOCAL_NEG)] + (SUNG_NEG if sung else ["vocals", "lyrics", "singing"])
     return {"positive_global_styles": list(dict.fromkeys(pos)),
             "negative_global_styles": list(dict.fromkeys(neg)),
             "sections": secs}
@@ -158,6 +183,44 @@ def vocals(path):
     return {"checked": True, "confident_words": len(words), "text": " ".join(w.word for w in words)[:200]}
 
 
+def transcribe(path):
+    from faster_whisper import WhisperModel
+    m = WhisperModel("base.en", device="cpu", compute_type="int8")
+    segs, _ = m.transcribe(str(path), vad_filter=False, word_timestamps=True)
+    return [{"w": w.word.strip(), "t": round(w.start, 3), "end": round(w.end, 3), "p": round(w.probability, 2)}
+            for s in segs for w in (s.words or [])]
+
+
+def lyric_match(cue, heard):
+    """Per section: the script's lyric words against the words heard in that section's time (±1s)."""
+    import difflib
+    out = []
+    for i, s in enumerate(cue["sections"]):
+        want = words_of(" ".join(s.get("lines", [])))
+        if not want:
+            continue
+        hi = s["end"] + (2.0 if i == len(cue["sections"]) - 1 else 1.0)
+        got = [x for x in heard if s["start"] - 1.0 <= x["t"] <= hi]
+        gw = [w for x in got for w in words_of(x["w"])]
+        sm = difflib.SequenceMatcher(None, want, gw, autojunk=False)
+        hit = sum(b.size for b in sm.get_matching_blocks())
+        matched = set()
+        for b in sm.get_matching_blocks():
+            matched.update(range(b.a, b.a + b.size))
+        out.append({"name": s["name"], "accuracy": round(hit / len(want), 3),
+                    "missing": [w for k, w in enumerate(want) if k not in matched], "heard": " ".join(gw)})
+    return out
+
+
+def lyrics_check(cue, path):
+    """§3C: transcribe the sung track and hold every section's lyrics to the script, word for word."""
+    try:
+        heard = transcribe(path)
+    except ImportError:
+        return {"checked": False, "note": "faster-whisper not installed"}
+    return {"checked": True, "sections": lyric_match(cue, heard), "words": heard}
+
+
 def check(cue, path):
     y = load(path)
     total = len(y) / SR
@@ -199,9 +262,17 @@ def check(cue, path):
     band = TEMPO.get(cue.get("tempo", "slow"))
     if bpm and band and not (band[0] <= bpm <= band[1]) and not (band[0] <= bpm / 2 <= band[1]) and not (band[0] <= bpm * 2 <= band[1]):
         fails.append({"check": "TEMPO", "detail": f"~{bpm} BPM outside {cue.get('tempo')} ({band[0]}–{band[1]})"})
-    v = vocals(path)
-    if not cue.get("sung") and v.get("checked") and v["confident_words"] >= 4:
-        fails.append({"check": "VOCALS", "detail": f"{v['confident_words']} confident words: {v['text']!r}"})
+    if cue.get("sung"):
+        v = lyrics_check(cue, path)
+        for x in v.get("sections", []):
+            if x["accuracy"] < LYRIC_MIN:
+                fails.append({"check": "LYRICS", "detail": f"'{x['name']}' sung words match the script {x['accuracy']:.0%} (< {LYRIC_MIN:.0%}): missing {x['missing'][:8]} · heard {x['heard'][:120]!r}"})
+        if not v.get("checked"):
+            fails.append({"check": "LYRICS", "detail": "not checked: " + v.get("note", "")})
+    else:
+        v = vocals(path)
+        if v.get("checked") and v["confident_words"] >= 4:
+            fails.append({"check": "VOCALS", "detail": f"{v['confident_words']} confident words: {v['text']!r}"})
     for x in secs:
         x.pop("wins")
     res.update({"sections": secs, "tempo_bpm": bpm, "vocals": v, "fails": fails,
@@ -247,6 +318,49 @@ def snap(t, grid_times):
     """The grid line at or before t (never after: a cut never lands late)."""
     prev = [g for g in grid_times if g <= t + 1e-6]
     return prev[-1] if prev else (grid_times[0] if grid_times else t)
+
+
+def phrase_onset(phrase, heard):
+    """Onset of the first word of `phrase` in the sung words (sequence match of its first three words)."""
+    want = words_of(phrase)[:3]
+    if not want:
+        return None
+    flat = [(w, x["t"]) for x in heard for w in words_of(x["w"])]
+    for k in range(len(flat) - len(want) + 1):
+        if [f[0] for f in flat[k:k + len(want)]] == want:
+            return flat[k][1]
+    return None
+
+
+def lyric_cuts(rows, g, heard, skip=0.4, handle=0.5):
+    """§3C sung: each row cuts on the beat at or before the first sung word of its `phrase` — never after it —
+    and holds to the next row's cut; the first row starts at 0, the last ends with the track."""
+    import math
+    beats = g["beats"]
+    cuts, fails = [], []
+    for i, r in enumerate(rows):
+        if i == 0:
+            cuts.append(0.0)
+            continue
+        on = phrase_onset(r.get("phrase", ""), heard) if r.get("phrase") else None
+        if on is None:
+            fails.append(f"NOT SUNG: {r['beat']} — its phrase {r.get('phrase')!r} is not heard in the track")
+            cuts.append(cuts[-1] + 2.0)
+            continue
+        cuts.append(float(snap(on - 0.02, beats)))
+    out = []
+    for i, r in enumerate(rows):
+        end = cuts[i + 1] if i + 1 < len(rows) else g["length_s"]
+        on = round(end - cuts[i], 3)
+        call = min(15, max(3, math.ceil(on + skip + handle - 1e-9)))
+        out.append({"beat": r["beat"], "phrase": r.get("phrase", ""), "cut_s": round(cuts[i], 3), "end_s": round(end, 3),
+                    "on_screen_s": on, "call_s": call})
+        if on < 2.0:
+            fails.append(f"FLASH: {r['beat']} on screen {on}s < 2.0s — merge it with the next line's row")
+        if on + skip + handle > 15:
+            fails.append(f"SPLIT: {r['beat']} needs {on}s, over one 15s clip — split the row")
+    return {"grid": {k: g[k] for k in ("bpm", "beat_s", "length_s")}, "rows": out, "fails": fails,
+            "status": "PASS" if not fails else "FAIL"}
 
 
 def cut_sheet(cue, rows, g, hold_bars=2, skip=0.4, handle=0.5):
@@ -322,6 +436,8 @@ def main():
     ap.add_argument("track", nargs="?")
     ap.add_argument("--rows", help="cuts/render: JSON list of the act-map rows in order: {beat, section, bars?, text?, clip?}")
     ap.add_argument("--hold-bars", type=int, default=2)
+    ap.add_argument("--words", help="cuts/render on a sung track: the word timings saved by check --words-out (else transcribed)")
+    ap.add_argument("--words-out", help="check on a sung track: save the sung word timings here")
     ap.add_argument("--out")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--register", help="§40A register: " + ", ".join(REGISTERS))
@@ -331,7 +447,12 @@ def main():
         if not (a.track and a.rows):
             sys.exit(f"{a.what} needs the track and --rows")
         rows = json.loads(Path(a.rows).read_text())
-        sheet = cut_sheet(cue, rows, grid(load(a.track), cue.get("bpm")), a.hold_bars)
+        g = grid(load(a.track), cue.get("bpm"))
+        if cue.get("sung") and any(r.get("phrase") for r in rows):
+            heard = json.loads(Path(a.words).read_text()) if a.words else transcribe(a.track)
+            sheet = lyric_cuts(rows, g, heard)
+        else:
+            sheet = cut_sheet(cue, rows, g, a.hold_bars)
         if a.what == "cuts":
             print(json.dumps(sheet, indent=2))
             sys.exit(0 if sheet["status"] == "PASS" else 2)
@@ -358,6 +479,10 @@ def main():
         if not a.track:
             sys.exit("check needs the track")
         r = check(cue, a.track)
+        if a.words_out and isinstance(r.get("vocals"), dict) and r["vocals"].get("words"):
+            Path(a.words_out).write_text(json.dumps(r["vocals"]["words"]))
+        if isinstance(r.get("vocals"), dict):
+            r["vocals"].pop("words", None)
         if a.json:
             print(json.dumps(r, indent=2))
         else:
