@@ -33,6 +33,7 @@ def env(n, fin=0.0, fout=0.0):
 A = level_to(load(D / "BODY_A.mp3"), -21.0); Bm = level_to(load(D / "BODY_B.mp3"), -17.0)
 XF = 0.6
 body = np.zeros((int((BODY + 1.5) * SR), 2), np.float32)
+a = A[:int((TURN + 0.3) * SR)]; body[:len(a)] += a * env(len(a), fout=0.3)          # the investigation groove (missing in the first MUS-BODY card)
 b = Bm[:len(body) - int(TURN * SR)]; b = b * env(len(b), fin=0.05); body[int(TURN * SR):int(TURN * SR) + len(b)] += b
 save(body * env(len(body), fout=1.5), "MUS-BODY")
 for h, L in HOOK.items():
