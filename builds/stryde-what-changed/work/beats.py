@@ -1923,6 +1923,42 @@ B["B23a"] = (NBP, ["B23AV3H", "PW", "PF"], (
     "AVOID: no capital letters in the wordmark, no small strap, no flat shell, no strap over the kneecap, no strap on the shin, no "
     "second strap, no man's leg, no hairy leg, no shorts, no hand, no face, no extra legs, no extra feet"))
 
+# ── 2026-10-01 "GO" with three product Fixes: B22a "FIX THE PRODUCT, REVIEW OUR PRODUCT MAKE SURE IT'S RIGHT", B23a "REVIEW THE PRODUCT,
+# FIX THE PRODUCT", B23b "PUT STRYDE PRODUCT". Asking the model to copy the strap kept failing (flat peaks, an extra lip, small
+# capital wordmark). So the real photo is Image 1 and the strap in it is never touched (the background-only rule that worked for the
+# package) — only the leg, clothes and room around it change. From behind (B23b) the real worn_rear.jpg is the strap's reference.
+REFS.update({"PWR": ("worn_rear.jpg — the strap from behind (Image 2)", "4263ad56-3ded-4bae-955a-7cc4148f3591"),
+             "B23AV4H": ("B23a v4 — her stairs and legs, the setting (Image 2)", "dd76ebef-3ce0-47eb-8e5b-336f9bcacb38"),
+             "B22AV3H": ("B22a v3 — her legs on the stairs, the setting (Image 2)", "49199281-8600-4b63-ad02-160cd5ba6035"),
+             "B23BV2H": ("B23b v2 — the shot to edit (Image 1)", "423672f4-7f10-4c29-b2ea-9d26058a71f4")})
+KEEP_REAL = ("Edit Image 1, the real photo of the strap being worn. The strap in Image 1 is the real product: keep it EXACTLY as it is, "
+             "untouched, pixel for pixel — the same matte-black shell with its two pointed peaks and crisp notch, the chrome slides, "
+             "the band, the grey lowercase \"stryde\" wordmark, the same size, the same place on the leg. Do not redraw it. ")
+B["B23a"] = (NBP, ["PW", "B23AV4H"], (
+    KEEP_REAL + "Change ONLY what is around it, to match Image 2: the grey shorts become the hem of a mid-blue denim skirt; the leg "
+    "becomes a pale, smooth older woman's leg (no hair), the same shape and pose; the room becomes her staircase from Image 2 — oatmeal "
+    "carpeted stairs, white spindles, warm afternoon light; at the bottom of the frame her white canvas plimsoll stands on the edge "
+    "of the stair. Keep the camera and framing of Image 1. A real phone photo.\n\n"
+    "AVOID: no redrawn strap, no change to the strap, " + P.NEG_WORDMARK + ", no capital letters, no extra lip under the shell, no "
+    "shorts, no hairy leg, no hand, no face, no extra legs"))
+B["B22a"] = (NBP, ["PW", "B22AV3H", "PF"], (
+    KEEP_REAL + "Change the framing to show BOTH her knees side by side, front-on, the camera level with the knees, and around the "
+    "strap match Image 2: the grey shorts become the hem of a mid-blue denim skirt, the legs become a pale, smooth older woman's legs "
+    "(no hair), the room becomes her oatmeal-carpeted stairs with white spindles, warm light. The OTHER knee wears a second strap that "
+    "is an identical copy of the one in Image 1 (also Image 3) — same shell, peaks, notch, chrome slides, the same big grey lowercase "
+    "\"stryde\" — seated just below that kneecap. Both straps large in the frame. A real phone photo.\n\n"
+    "AVOID: no redrawn first strap, " + P.NEG_WORDMARK + ", no capital letters, no small straps, no flat peaks, no extra lip under the "
+    "shell, no third strap, no shorts, no hairy legs, no hand, no face, no extra legs"))
+B["B23b"] = (NBP, ["B23BV2H", "PWR"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — Maureen seen from behind at the top of her stairs, her white hair, "
+    "striped T-shirt, denim skirt, white plimsolls, the flight going down ahead, the light and the camera. Add ONLY the strap on her "
+    "RIGHT leg (the leg on the right of the frame), seen from behind exactly as in Image 2 — copied exactly: a black coarse-knit "
+    "elastic band wrapped round the back of the leg just below the knee crease, two small black moulded keeper loops side by side at "
+    "the centre of the band, and a sliver of the chrome slide and the black shell showing at each side of the leg. The same proportions "
+    "on her leg as in Image 2. A real phone photo.\n\n"
+    "AVOID: no strap on the left leg, no second strap, no wordmark on the back, no shell at the back of the leg, no strap over the "
+    "back of the knee crease, no change to her, no face, no hand on the banister"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

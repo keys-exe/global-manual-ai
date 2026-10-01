@@ -439,3 +439,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 ### 2026-10-01 — "FIX" (B23a image "FIX THE PRODUCT")
 - **B23a v4** (NBP edit of v3, refs worn_front.jpg + front.webp, framed like worn_front.jpg): the strap is now large and matches the real one — shell, two peaks, chrome slides, big lowercase grey "stryde". Flaw: her plimsoll is cut off at the bottom edge, so the step onto the stair isn't shown. To check; v3 → Old 2.
 - Confirms the B22a lesson: the product copies right only when it is big in frame. B22a (two knees, small straps) needs the closer framing too — waiting on the user's pick.
+
+### 2026-10-01 — "GO" with three product Fixes (B22a, B23a, B23b)
+- New approach: the real photo is Image 1 (worn_front.jpg; worn_rear.jpg uploaded to Higgsfield as 4263ad56…, worn_bent.jpg as 43e3d12a…) and only the leg, clothes and room around the strap change.
+  - **B22a v4** (Fix "FIX THE PRODUCT, REVIEW OUR PRODUCT MAKE SURE IT'S RIGHT"): both knees, two straps with the right shape and the big lowercase "stryde" — the closest yet.
+  - **B23a v5** (Fix "REVIEW THE PRODUCT, FIX THE PRODUCT"): big strap, lowercase wordmark, but still redrawn — the band shows a little through the notch and the peaks are flatter than the real photo.
+  - **B23b v3** (Fix "PUT STRYDE PRODUCT"): the strap seen from behind on her right leg (black band, slide); the keeper loops don't read clearly.
+- Replaced images → Old 2. Videos of all three wait for the image Confirm.
