@@ -296,4 +296,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   **Storage: the Old board's 1 GB store is full, and so is Current's.** The replaced BR-16a v5 and BR-23 v3 images stay on Current (not lost, not
   marked archived). BR-16b v2 (21 MB, split in two) could not be uploaded — it is in `acts/video/clips/` (gitignored) and on Kie for 24 h
   (`clips/BR-16b.v2.result.json`); its card stays Generating. Asked the user whether to open a second Old Versions board.
+- **2026-10-01 (later still): user "fix those and generate the next videos ones".** Fix: BR-20c video "dont show that red line i want blue glow
+  on the stryde" → v2 (`acts/build_r17_videos.py`, preflight PASS): no red anywhere, the strap itself glows soft cool blue as the step lands, same
+  RIG-RVD drift → To check. No new video could start (BR-10c, BR-16a, BR-23 images still To check).
+  **Storage fixed: Old Versions 2 board** https://claude.ai/artifact/XPkuXUmrtvRSPgumXHsH9X (the live Old page, title "… Old Versions 2"; the
+  first Old board's 1 GB is full). Moved there (copy confirmed, then deleted from Current, entries kept with `archived`, `archiveAsset`,
+  `archiveUrl` = Old 2): BR-16a image v5, BR-23 image v3, BR-20c video v1, and the seven VO takes not chosen (T1–T6, T8; T7 is locked).
+  BR-16b v2 (split in two parts) landed To check. The page's Old link still opens the first Old board; Old 2 is reached by its own link
+  (`boards.old2` on the Current build doc).
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
