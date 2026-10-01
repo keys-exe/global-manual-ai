@@ -61,7 +61,7 @@ def write_clip():
 
 # Round 4 (user "FIX THOSE" = go for the third video, 2026-10-01): clip Fix "look too AI".
 # Restage at the source: hip-height normal-lens phone shot, soft late light, natural colour; strap framed large, no wide-angle stretch.
-PROMPT2 = f"""For the line "{LINE}": he walks along the fairway, mid-stride, his strapped right leg forward.
+PROMPT2 = f"""For the line "{LINE}": he walks the fairway, mid-stride, strapped right leg forward.
 Medium-full shot from hip height, side-on from his right, a normal phone lens, head to feet, the fairway behind him.
 Image 1: the strap (three-quarter). Image 2: the strap worn. Image 3: the course. Image 4: the man. Image 5: his bag. Image 6: his outfit.
 {STRAP} The same man as Image 4 in the polo and sleeveless pullover of Image 6, grey shorts, white-and-tan golf shoes, the bag of Image 5 on his right shoulder; the fairway of Image 3.
@@ -74,3 +74,16 @@ def write_start2():
     c = json.load(open(HERE / "clips" / "D-HKb.img2.call.json"))
     c.update(prompt=PROMPT2, fix_note="look too AI (clip) → frames glossy/saturated + low wide-angle stretch → restaged: hip height, normal lens, soft late light, natural colour")
     (HERE / "clips" / "D-HKb.img3.call.json").write_text(json.dumps(c, indent=1)); print("START2", len(PROMPT2))
+
+# Round 5 (board Fix "CHANGE THE ANGLE", 2026-10-01): side-on → three-quarter front, walking diagonally toward the camera; same natural look.
+PROMPT3 = PROMPT2.replace(
+    "Medium-full shot from hip height, side-on from his right, a normal phone lens, head to feet, the fairway behind him.",
+    "Medium-full shot from hip height, three-quarter front from his right, normal phone lens, head to feet, coming toward the camera at an angle, a flag far off.").replace(
+    "looking ahead, a small smile", "looking ahead past the camera, a small smile").replace(
+    "In the frame: one man, one bag, the fairway; nothing else.", "In the frame: one man, one bag, the fairway, a flag; nothing else.").replace(
+    "Soft late-afternoon light through thin cloud, muted natural colour, real skin texture.", "Soft late light through thin cloud, muted natural colour, real skin.")
+def write_start3():
+    (HERE / "prompts" / "D-HKb.v74c.txt").write_text(PROMPT3)
+    c = json.load(open(HERE / "clips" / "D-HKb.img3.call.json"))
+    c.update(prompt=PROMPT3, fix_note="CHANGE THE ANGLE → side-on → three-quarter front, walking diagonally toward the camera")
+    (HERE / "clips" / "D-HKb.img4.call.json").write_text(json.dumps(c, indent=1)); print("START3", len(PROMPT3))
