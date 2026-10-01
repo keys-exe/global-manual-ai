@@ -1,0 +1,46 @@
+{
+ "beat": "SC02-SH01",
+ "kind": "image",
+ "mode": 4,
+ "prompt": "For the line \"Just leave it by the stairs, love. I’ll get it later.\": she stands stranded at the top of her stairs at night, calling down. SCENE MASTER, Scene 2. A full-length shot from low at the foot of the stairs, three-quarter on, looking up the straight flight to the landing. Image 1 is this hall: stairs up the left-hand wall, dark banister and square spindles on the open right side, framed photographs up the wall, brass stair rods, oatmeal carpet — copied exactly. On the landing stands the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in a heather-green jumper, charcoal A-line skirt and grey slippers. Her right hand rests on the top newel post, her left hand loose at her side; she is looking down the stairs, mouth open mid-word, about a third of the frame's height. Two plain shopping bags stand on the carpet at the foot of the bottom step; the telephone table holds only the telephone. Night: hall pendant and landing lamp, warm 2800K, key from the right; the rest of the house deep blue-grey. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
+ "script_line": "Just leave it by the stairs, love. I’ll get it later.",
+ "refs": [
+  {
+   "kind": "location",
+   "label": "Her house — hall and stairs from the front door",
+   "ref": "stryde-half-my-age__P-HOUSE",
+   "job": "cc27b514-c130-4cc5-abec-f01c18368e62",
+   "role": "Image 1"
+  },
+  {
+   "kind": "character",
+   "label": "Her — cast sheet (face, hair, build)",
+   "ref": "stryde-half-my-age__N-HER",
+   "job": "30fd2bc8-17e3-4e27-b2cf-8225e00b088c",
+   "role": "Image 2"
+  }
+ ],
+ "face": true,
+ "body": true,
+ "room": true,
+ "product": false,
+ "match": null,
+ "edit_of": null,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "model": "gpt_image_2_5 · sunburst · high · 2k · 9:16",
+ "role": "master",
+ "motion_plan": "From this frame: she keeps her right hand on the newel post and calls down the line; she stays on the landing.",
+ "scene": 2,
+ "taste": [
+  "HT02",
+  "HT04",
+  "HT09",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ]
+}

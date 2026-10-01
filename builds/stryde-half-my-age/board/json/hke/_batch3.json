@@ -1,0 +1,36 @@
+[
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__PROP-JIGSAW",
+  "file_path": "board/json/hke/PROP-JIGSAW.json"
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__HKE-SH01",
+  "file_path": "board/json/hke/upd3_SH01.json",
+  "if_version": 5
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__HKE-SH02",
+  "file_path": "board/json/hke/upd3_SH02.json",
+  "if_version": 7
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__HKE-SH03",
+  "file_path": "board/json/hke/upd3_SH03.json",
+  "if_version": 6
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-half-my-age__HKE-SH05",
+  "file_path": "board/json/hke/upd3_SH05.json",
+  "if_version": 6
+ }
+]

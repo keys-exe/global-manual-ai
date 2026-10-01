@@ -1,0 +1,46 @@
+{
+ "beat": "SC02-SH03",
+ "kind": "image",
+ "mode": 4,
+ "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards. One step at a time.\": Keep this photo exactly as it is — Image 1, the stairs from the landing down to the green front door, banister on the left, photographs on the right wall, brass rods; the camera stays high on the landing, recomposed as a tall vertical frame. SCENE MASTER, Scene 2, next morning. Add the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in a pale-blue quilted dressing gown, grey nightdress and grey slippers. She is going down backwards: on the second step, facing up toward the camera, turned to the banister, both hands gripping its rail on frame left, left foot lowered to the next step, right foot on the step above. Head bowed, looking down at her feet, jaw set; about a third of the frame's height. Every step bare. Cold grey morning light from the frosted landing window, 6500K, key from the left; the hall below dim. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
+ "script_line": "Six weeks ago, I was going down my stairs backwards. One step at a time.",
+ "refs": [
+  {
+   "kind": "location",
+   "label": "Her stairs from the landing (v4)",
+   "ref": "stryde-half-my-age__L-STAIRS",
+   "job": "73351f73-d511-45c9-839f-4aec7c451868",
+   "role": "Image 1"
+  },
+  {
+   "kind": "character",
+   "label": "Her — cast sheet (face, hair, build)",
+   "ref": "stryde-half-my-age__N-HER",
+   "job": "30fd2bc8-17e3-4e27-b2cf-8225e00b088c",
+   "role": "Image 2"
+  }
+ ],
+ "face": true,
+ "body": true,
+ "room": true,
+ "product": false,
+ "match": "plate",
+ "edit_of": "L-STAIRS v4",
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "model": "gpt_image_2_5 · sunburst · high · 2k · 9:16",
+ "role": "master",
+ "motion_plan": "From this frame: she lowers her left foot to the next step down, then her right foot beside it, both hands sliding down the banister — one step every three seconds, backwards.",
+ "scene": 2,
+ "taste": [
+  "HT02",
+  "HT04",
+  "HT09",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ]
+}
