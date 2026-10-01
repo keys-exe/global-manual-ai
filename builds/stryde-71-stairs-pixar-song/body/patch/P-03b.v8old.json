@@ -1,0 +1,38 @@
+{
+ "moved": [
+  {
+   "asset": "1cac79be8308f6793c8927538be866f8",
+   "at": 1790881678749,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "c0b411f3-37ff-4edb-9bef-abb16ebb6432",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user: \"THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL\" + board \"USE THE P03A AS REFERENCE FOR THE BRACE\" → a direct image edit of the new P-03a frame (v5 A): the same seat, the same side, the same brace slid down to the ankle, evening (FP14). If P-03a B is picked instead, this pair is made again from B · replaced on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 6750768,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_190555_c0b411f3-37ff-4edb-9bef-abb16ebb6432.png",
+   "v": 9,
+   "archived": true,
+   "archiveAsset": "1cac79be8308f6793c8927538be866f8"
+  },
+  {
+   "asset": "9e5595490aaaf3668757fe2c1273189a",
+   "at": 1790881678749,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "601dc0fc-95e3-4f68-aa1c-f06edb892ccf",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user: \"THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL\" + board \"USE THE P03A AS REFERENCE FOR THE BRACE\" → a direct image edit of the new P-03a frame (v5 A): the same seat, the same side, the same brace slid down to the ankle, evening (FP14). If P-03a B is picked instead, this pair is made again from B · replaced on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6621736,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_190555_601dc0fc-95e3-4f68-aa1c-f06edb892ccf.png",
+   "v": 10,
+   "archived": true,
+   "archiveAsset": "9e5595490aaaf3668757fe2c1273189a"
+  }
+ ]
+}

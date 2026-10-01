@@ -1,0 +1,32 @@
+[
+ {
+  "asset": "325e7262b1f98bce21677368ab3306a1",
+  "at": 1790879352102,
+  "connector": "Higgsfield",
+  "credits": 2.14,
+  "job": "9800c411-572c-44f7-9c9e-a9c4d439ffb8",
+  "model": "nano_banana_pro → logged nano_banana_2",
+  "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05b = the heap at the far edge of the table after the push",
+  "pair": "A",
+  "res": "1536×2752",
+  "size": 6999690,
+  "type": "image/png",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182543_9800c411-572c-44f7-9c9e-a9c4d439ffb8.png",
+  "v": 1
+ },
+ {
+  "asset": "fba0e3ac14db0b3db8a67aa2a3ad8286",
+  "at": 1790879352102,
+  "connector": "Higgsfield",
+  "credits": 2.14,
+  "job": "3a4b129e-05cc-46c1-bc22-16971e888cfc",
+  "model": "nano_banana_pro → logged nano_banana_2",
+  "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05b = the heap at the far edge of the table after the push",
+  "pair": "B",
+  "res": "1536×2752",
+  "size": 7067499,
+  "type": "image/png",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182542_3a4b129e-05cc-46c1-bc22-16971e888cfc.png",
+  "v": 2
+ }
+]
