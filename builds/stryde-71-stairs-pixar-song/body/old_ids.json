@@ -47,5 +47,15 @@
  "P-05b@v1A": "975fb58a1004e0994a8aaa116211ef87",
  "P-05b@v1B": "a99036cd6c4884188142c29840d78ff9",
  "P-05c@v1A": "338908cdab95f2369f40d8dc93efd194",
- "P-05c@v1B": "3aab874af807455bbf2ebc29a96d12ca"
+ "P-05c@v1B": "3aab874af807455bbf2ebc29a96d12ca",
+ "P-01b@v8A": "44e281375c456790b515fd8b6ef03099",
+ "P-01b@v8B": "fdc427f501d18f23e1cebb83db91d59a",
+ "P-02a@v8A": "47f9286e49e102a00fc4c415b20e864d",
+ "P-02a@v8B": "0e3ca0fa903ac5cff4f4b4b5dd0c16c1",
+ "P-03a@v8B": "5999e0eec44900f8306f7c3e250c57c7",
+ "P-03b@v8B": "582492db34d2751f1a27c783cae4a842",
+ "P-05b@v8A": "f2d1c2959307698ef732a58dae2bcf34",
+ "P-05b@v8B": "770c7e06528496c12e1911d28162c8fc",
+ "P-05c@v8A": "238f0ab099ba26d0de6d9a199eaec454",
+ "P-05c@v8B": "0d0bde6a3c79ef28d67900ce0fd25e4a"
 }

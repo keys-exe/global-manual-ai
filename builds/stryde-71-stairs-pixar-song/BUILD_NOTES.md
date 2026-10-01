@@ -358,5 +358,19 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   Current. `fix_patterns.py`: the "use X as reference" notes (P1↔P0, P-03a↔P-03b, P-01a↔P-01b) are FP14 again — no new rule. No restore requests on
   Old. Balances as printed: Higgsfield 7,990.15; Kling 41,279 (build doc v24).
 
-**Waiting on:** picks or Fix notes on P-01b v7/v8, P-02a v7/v8, P-03a v7/v8, P-03b v11/v12, P-05b v3/v4, P-05c v3/v4; Confirm or Fix on the clips
-P-01a v2, P-05a v3. Then the clips from the picks; then Act 2 (the wedding).
+- ~19:40 UTC — user **"FIX THOSE"** (board: P-01a clip "SHOULD BE GOING BACK WARDS NOT UP", P-01b "SHE IS TOO BIG HERE", P-02a "WRONG LOCATION",
+  P-05b / P-05c "WRONG PERSON ALSO SHOULD USE DIFFERENT TYPE OF BROLL"; P-03a picked v7 A, P-03b picked v11 A). **P-03a clip v2** 5 s / 40 cr (the hand
+  pulls the short brace's strap, it sags back) and **P-03b clip v1** 4 s / 32 cr (one small foot shift) To check; the unused B renders to Old. **P-01b
+  v9/v10** (`body/P-01b.v9.prompt.txt`, the same edit of the P-01a frame, a wider crop — seen: her legs small at the top, eight steps below). **P-02a
+  v9/v10** (an edit of the confirmed P-02a v6 B frame, her own flight — the over-the-shoulder try had invented a landing; asked closer from mid-flight,
+  **the render kept the wide framing** — told the user; a crop of the frame is the next step if they want it closer). **P-05b v5/v6** (a different kind
+  of B-roll: the kitchen drawer stuffed with sleeves, a brace and pills, her hand pushing it shut — seen: A a brown hand, **B a pale hand, told the
+  user**). **P-05c v5/v6** (N at the kitchen window in profile, her cast sheet attached — seen: both on model, looking out). Act map re-staged for the
+  four (`docs/actmap` v23). **P-01a clip:** the third generation from the start frame alone (direction named three ways: down toward the lens, larger
+  in the frame, farther from the landing; 40 cr) **still read as climbing — never shown (L16), kept on Old as v3**. The fix moves to **§27G rule 10, a
+  pinned end frame**: card **P-01a-END** (v1/v2, an edit of the confirmed P-01a frame with her one step lower — seen: A both feet on the second step,
+  B one foot lifting down) To check; once the user picks it, the P-01a clip runs first-and-last frame. Replaced files to Old (Old docs P-01a v9,
+  P-01b v6, P-02a v6, P-03a v5, P-03b v6, P-05b v2, P-05c v2), deleted from Current. Balances as printed: Higgsfield 7,897.15; Kling 41,127 (build doc v26).
+
+**Waiting on:** picks or Fix notes on P-01b v9/v10, P-02a v9/v10, P-05b v5/v6, P-05c v5/v6, **P-01a-END v1/v2** (the end frame); Confirm or Fix on the
+clips P-03a v2, P-03b v1, P-05a v3. Then the P-01a pinned clip and the clips from the picks; then Act 2 (the wedding).

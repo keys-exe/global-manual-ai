@@ -170,11 +170,37 @@ A final frame from a 3D animated feature film, stylized storybook render — the
 FIX8 = {"P-01b": "USE THE P01A AS REFERENCE HERE", "P-02a": "USE A DIFFERENT CAMERA ANGLES", "P-03a": "MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW", "P-05b": "I NEED A DIFFERENT ONES HERE", "P-05c": "I NEED A DIFFERENT ONES HERE"}
 if V >= 8:
     P = P8
+
+# ---- v9 (user "FIX THOSE", 2026-10-01): P-01b "SHE IS TOO BIG HERE" (wider, edit of the P-01a frame); P-02a "WRONG LOCATION" (the over-the-shoulder try
+# invented a landing — back to her own flight: an edit of the confirmed P-02a v6 B frame, closer from mid-flight); P-05b / P-05c "WRONG PERSON ALSO SHOULD
+# USE DIFFERENT TYPE OF BROLL" (a drawer insert; N at the window with her cast sheet).
+P02B6 = "04e4ff58-b639-4064-accc-908bc636261e"   # P-02a v6 B — job id (file on Old now)
+REF_P02B6 = {"label": "P-02a frame v6 B (confirmed) — her on the top step, the whole flight", "kind": "frame"}
+P9 = {}
+P9["P-01b"] = (f'''For the line "{L("P-01b")}": Keep this photo exactly as it is — the flight of stairs from the hall floor, its runner and brass rods, the oak rail, the woman at the top with her back to us — but crop to her legs and the upper half of the flight. Image 1 is the picture; nothing in it changes but the crop.
+Medium close-up from below on the upper flight, sharp on the slippers: the woman of Image 1 small at the top of the frame from the hem of her faded blue floral house dress down, her back to the lens, her pink terry slippers on the top step with toes pointing up the stairs, the right heel reaching back and down onto the step below; eight steps of the flight below her filling the lower frame; her hands and head out of frame above.
+In frame: two slippers, two legs below the hem, the top eight steps of the flight of Image 1 with their runner and rods, the rail at the side, the photo wall; every other surface bare. Each foot whole, heels toward the lens.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Slippers and hem plain — no lettering, logos or labels; nobody else.''', [REF_P01B], False, P01B)
+P9["P-02a"] = (f'''For the line "{L("P-02a")}": Keep this photo exactly as it is — the staircase, its runner, the oak rail and newel, the photo wall, the woman sitting on the top step — but closer: from mid-flight. Image 1 is the picture; nothing in it changes but the crop.
+Medium shot from mid-flight, the lens low at step height looking up at the top step, sharp on her face. The same woman of Image 1, seventy-one, sitting on the top step as she sits, her right hand on the newel post, her left hand in her lap, looking down the flight toward the lens, eyes on the steps below, mouth closed; {WARD}; six steps between her and the lens. Nobody else.
+In the frame: the woman at the top of the flight of Image 1, the top steps, the rail, the photo wall; every other surface bare. Two hands placed, two legs.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window above, a catchlight in each eye. Clothing and frames plain — no lettering, logos or labels; no second person.''', [REF_P02B6], True, P02B6)
+P9["P-05b"] = (f'''For the line "{L("P-05b")}": Keep this photo exactly as it is — the kitchen, its sage-green cabinets and drawers under the counter, the floor, the light — in close on one drawer under the counter, a tall 9:16 crop, and open it. Image 1 is the kitchen.
+Close-up at eye level with the drawer, sharp on it: one kitchen drawer pulled half open, stuffed to the brim with two grey knee sleeves, a folded black hinged knee brace, three plain pill bottles and a blue ice pack; an older Black woman's right hand flat on the drawer front pushing it shut, a grey cardigan cuff at her wrist; her left hand and the rest of her out of frame.
+In frame: the open drawer and its contents, one hand placed, the cabinet fronts and counter edge of Image 1; every other surface bare, nothing on the counter.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Sleeves, bottles and cabinets plain — no lettering, logos or labels; nobody else.''', [REF_P2], False, P2)
+P9["P-05c"] = (f'''For the line "{L("P-05c")}": Keep this photo exactly as it is — the kitchen, the sink under the window, the lace curtain, the counter, the light — in close at the window from the side, a tall 9:16 crop, and add the woman. Image 1 is the kitchen. Image 2 is the woman.
+Medium shot from the side at eye level, sharp on her face. The same woman as Image 2, seventy-one, standing at the sink in profile, both hands on its edge, looking out of the window at the street beyond, eyes on it, mouth closed; {WARD}. Nobody else.
+In the frame: the woman in profile, the sink and window of Image 1, the counter; every other surface bare. Two hands placed, two legs.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window on her face, a catchlight in her eye. Clothing and counter plain — no lettering, logos or labels; no second person.''', [REF_P2, REF_N], True, P2)
+FIX9 = {"P-01b": "SHE IS TOO BIG HERE", "P-02a": "WRONG LOCATION", "P-05b": "WRONG PERSON ALSO SHOULD USE DIFFERENT TYPE OF BROLL", "P-05c": "WRONG PERSON ALSO SHOULD USE DIFFERENT TYPE OF BROLL"}
+if V >= 9:
+    P = P9
 if __name__ == "__main__":
     fails = 0
     for b, (pr, refs, face, eo) in P.items():
         c = {"beat": b, "kind": "image", "mode": 2, "prompt": pr, "script_line": L(b), "face": face, "room": True, "body": b not in ("P-05b",), "refs": refs,
-             "match": "frame" if eo in (P3A, P02B, "P3A-NEW", P01B) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX8 if V >= 8 else FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
+             "match": "frame" if eo in (P3A, P02B, "P3A-NEW", P01B, P02B6) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX9 if V >= 9 else FIX8 if V >= 8 else FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
         OV = (OUTV if V == 4 else {}).get(b, V)
         (H / f"{b}.v{OV}.prompt.txt").write_text(pr); (H / f"{b}.v{OV}.preflight.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
         r = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v{OV}.preflight.json")], capture_output=True, text=True)

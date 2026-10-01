@@ -1,6 +1,6 @@
 {
  "act": "Hook 1",
- "angle": "eye · front · clean · CU — eye at table height = the heap at the edge, nothing left in it",
+ "angle": "ground · three-quarter · clean · CU — ground = what the fixes came to, on the floor by her feet",
  "bars": 1,
  "beat": "P-05b",
  "body": 1,
@@ -13,20 +13,20 @@
   "video"
  ],
  "focus": "product · medium",
- "framing": "CU at table height on the far edge of the kitchen table: the heap of braces, sleeves and pill bottles jammed against the edge where the push left it, a bottle on its side at the lip, a knee sleeve hanging off the edge; her hands out of frame",
- "imageAsset": "325e7262b1f98bce21677368ab3306a1",
- "imageAt": 1790879352102,
+ "framing": "CU at floor level by her chair: a grey knee sleeve dropped on the kitchen floor beside her pink slipper, a pill bottle on its side next to it, a chair leg; her feet still (user Fix 2026-10-01: a different one)",
+ "imageAsset": "faa33e269979d8c1af98768ddd147469",
+ "imageAt": 1790883125026,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "I NEED A DIFFERENT ONES HERE",
- "imageJob": "9800c411-572c-44f7-9c9e-a9c4d439ffb8",
+ "imageFault": "WRONG PERSON ALSO SHOULD USE DIFFERENT TYPE OF BROLL",
+ "imageJob": "4d532437-2f36-49d9-a25b-f486d723b9d4",
  "imageMatch": "plate",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [
-  1,
-  2
+  3,
+  4
  ],
- "imagePrompt": "For the line \"Nothing worked. Nothing lasted.\": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chairs, the cabinets, the light — in close at table height on the far edge of the table, a tall 9:16 crop, and lay out the heap. Image 1 is the kitchen.\nClose-up from across the table at table height, the far edge of the table filling the lower frame, sharp on the heap: a folded black hinged knee brace, two grey knee sleeves, three plain pill bottles, a white gel tube and a blue ice pack jammed together against the far edge where a push left them; one bottle on its side at the lip, one sleeve hanging over the edge; nobody in the frame, no hands.\nIn frame: the heap, the table edge and lace of Image 1, the chair back and cabinets behind; every other surface bare, nothing else on the table.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Bottles and packs plain — no lettering, logos or labels; nobody else.",
+ "imagePrompt": "For the line \"Nothing worked. Nothing lasted.\": Keep this photo exactly as it is — the kitchen floor, the chair legs, the table above, the cabinets, the light — in close at floor level by the near chair, a tall 9:16 crop, and lay down the things. Image 1 is the kitchen.\nClose-up at floor level from the side, sharp on the floor: a grey knee sleeve dropped flat on the wooden floor beside a pink terry slipper, a plain pill bottle on its side next to it, a second slipper behind, the chair leg beside them; her feet still in the slippers, her legs out of frame above the ankle; nobody's hands in the frame.\nIn frame: one sleeve, one bottle, two slippers, the chair legs and floor of Image 1; every other surface bare, nothing else on the floor.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Sleeve and bottle plain — no lettering, logos or labels; nobody else.",
  "imageRefs": [
   {
    "kind": "location",
@@ -35,7 +35,7 @@
    "role": "Image 1 · edited (§6A rule 3, HT17)"
   }
  ],
- "imageRegens": 1,
+ "imageRegens": 2,
  "imageRes": "1536×2752",
  "imageStatus": "regenerate",
  "imageTaste": [
@@ -51,16 +51,18 @@
   "HT22"
  ],
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182543_9800c411-572c-44f7-9c9e-a9c4d439ffb8.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192500_4d532437-2f36-49d9-a25b-f486d723b9d4.png",
  "imageVersions": [
   {
+   "archiveAsset": "975fb58a1004e0994a8aaa116211ef87",
+   "archived": true,
    "asset": "325e7262b1f98bce21677368ab3306a1",
    "at": 1790879352102,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "9800c411-572c-44f7-9c9e-a9c4d439ffb8",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05b = the heap at the far edge of the table after the push",
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05b = the heap at the far edge of the table after the push · replaced on the user's Fix; copied to Old versions",
    "pair": "A",
    "res": "1536×2752",
    "size": 6999690,
@@ -69,19 +71,51 @@
    "v": 1
   },
   {
+   "archiveAsset": "a99036cd6c4884188142c29840d78ff9",
+   "archived": true,
    "asset": "fba0e3ac14db0b3db8a67aa2a3ad8286",
    "at": 1790879352102,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "3a4b129e-05cc-46c1-bc22-16971e888cfc",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05b = the heap at the far edge of the table after the push",
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05b = the heap at the far edge of the table after the push · replaced on the user's Fix; copied to Old versions",
    "pair": "B",
    "res": "1536×2752",
    "size": 7067499,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182542_3a4b129e-05cc-46c1-bc22-16971e888cfc.png",
    "v": 2
+  },
+  {
+   "asset": "faa33e269979d8c1af98768ddd147469",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "4d532437-2f36-49d9-a25b-f486d723b9d4",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I NEED A DIFFERENT ONES HERE\" → a different picture: at floor level by her chair, a dropped knee sleeve and a pill bottle on the floor beside her slipper",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 6724993,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192500_4d532437-2f36-49d9-a25b-f486d723b9d4.png",
+   "v": 3
+  },
+  {
+   "asset": "094b8b2c9aa9ef7dc1b7cad685ba306f",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "2bf7176a-aebe-4101-bef0-2276a0a16a7e",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I NEED A DIFFERENT ONES HERE\" → a different picture: at floor level by her chair, a dropped knee sleeve and a pill bottle on the floor beside her slipper",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7104725,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192500_2bf7176a-aebe-4101-bef0-2276a0a16a7e.png",
+   "v": 4
   }
  ],
  "key": "worked",
@@ -91,10 +125,10 @@
   17
  ],
  "location": "L-N-KITCHEN",
- "motionPlan": "From this frame: the bottle at the edge rolls off and drops out of frame — one roll, about a second; camera RV sway — the virtual camera breathes in place, never travels",
- "shot": "eye · front · clean · CU",
+ "motionPlan": "From this frame: the bottle rolls once and stops against the slipper — one roll, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "shot": "ground · three-quarter · clean · CU",
  "stage": "broll",
  "status": "regenerate",
  "title": "low — the heap, pushed to the far edge (user 2026-10-01: three B-rolls)",
- "updatedAt": 1790881300433
+ "updatedAt": 1790883376840
 }

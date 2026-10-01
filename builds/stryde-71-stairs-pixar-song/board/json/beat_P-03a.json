@@ -11,21 +11,19 @@
   "video"
  ],
  "focus": "hands · medium",
- "framing": "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a big black hinged knee brace sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new)",
- "imageAsset": "b42bbca45bfa704204fe566fb3b9013d",
- "imageAt": 1790881580349,
+ "framing": "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a short black hinged knee brace — a hand's length above and below the knee — sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new; the brace a bit more short)",
+ "imageAsset": "235e9ca9db03d8b982b4932ca1fa8e61",
+ "imageAt": 1790883125026,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW",
- "imageJob": "d12fc4fa-274a-4dbc-868f-97ff21f28a18",
+ "imageFault": "user Fix: \"MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW\" → a short hinged brace, a hand's length above and below the knee, same seat and side",
+ "imageJob": "3badbfc6-55a7-4f86-867f-2e548dff448a",
  "imageMatch": "plate",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  5,
-  6
- ],
+ "imageModel": "nano_banana_pro → logged nano_banana_2",
+ "imagePair": [],
  "imageParts": [],
- "imagePrompt": "For the line \"That big knee brace I bought slid right down my leg.\": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chairs, the floor, the light — in close at the near chair from the side, a tall 9:16 crop, and add the seated woman from the shoulders down. Image 1 is the kitchen.\nMedium close-up from the side at knee height, sharp on the brace: an older Black woman sitting on the kitchen chair at the table, her right leg out a little, a big black hinged knee brace with wide straps slid down below the kneecap, sagging at the top of her shin, her right hand gripping its top strap and hauling it back up, her left hand flat on the chair seat; the hem of a faded blue floral house dress at mid-thigh, pink terry slippers flat on the floor; her head and shoulders out of frame above.\nIn frame: the seated woman from the shoulders down, two hands placed, the brace, two slippers, the chair and table edge of Image 1; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Brace and dress plain — no lettering, logos or labels; nobody else.",
+ "imagePick": 7,
+ "imagePrompt": "For the line \"That big knee brace I bought slid right down my leg.\": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chairs, the floor, the light — in close at the near chair from the side, a tall 9:16 crop, and add the seated woman. Image 1 is the kitchen.\nMedium close-up from the side at knee height, sharp on the brace: an older Black woman sitting on the chair, her right leg out a little, a short black hinged knee brace — a hand's length above and below the knee, two wide straps, a small round hinge each side — slid down below the kneecap, sagging at her shin, her right hand hauling its top strap back up, her left hand flat on the chair seat; a faded blue floral house dress at mid-thigh, pink terry slippers flat on the floor; her head and shoulders out of frame above.\nIn frame: the seated woman from the shoulders down, two hands placed, the brace, two slippers, the chair and table edge of Image 1; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Brace and dress plain — no lettering, logos or labels; nobody else.",
  "imageRefs": [
   {
    "kind": "location",
@@ -35,8 +33,8 @@
   }
  ],
  "imageRegens": 2,
- "imageRes": "1536×2752",
- "imageStatus": "regenerate",
+ "imageRes": 7664316,
+ "imageStatus": "confirmed",
  "imageTaste": [
   "HT02",
   "HT03",
@@ -50,8 +48,9 @@
   "HT22"
  ],
  "imageType": "image/png",
+ "imageUnused": 8,
  "imageUnusedArchived": "190180a9df27c63abb60ec5cd9e03530",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_190411_d12fc4fa-274a-4dbc-868f-97ff21f28a18.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_3badbfc6-55a7-4f86-867f-2e548dff448a.png",
  "imageVersions": [
   {
    "archiveAsset": "ac67432e40d8cd2dde185fdf4936c274",
@@ -122,13 +121,15 @@
    "v": 4
   },
   {
+   "archiveAsset": "45c588bc2cd81cb83b9157f5eaec5b2f",
+   "archived": true,
    "asset": "b42bbca45bfa704204fe566fb3b9013d",
    "at": 1790881580349,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "d12fc4fa-274a-4dbc-868f-97ff21f28a18",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user: \"THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL\" + board \"NEW IMAGE\" → a new staging: seated on the kitchen chair, from the side at knee height, the brace sagging at the knee; P-03b is made from this frame (FP14)",
+   "note": "user: \"THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL\" + board \"NEW IMAGE\" → a new staging: seated on the kitchen chair, from the side at knee height, the brace sagging at the knee; P-03b is made from this frame (FP14) · replaced on the user's Fix; copied to Old versions",
    "pair": "A",
    "res": "1536×2752",
    "size": 7804816,
@@ -137,19 +138,51 @@
    "v": 5
   },
   {
+   "archiveAsset": "205d7eed6b173e063d0d09ca440daa05",
+   "archived": true,
    "asset": "a3d3be88a401d9b00278cc3a04f36b86",
    "at": 1790881580349,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "faa67f73-3626-4a77-9f92-1098699b03f0",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user: \"THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL\" + board \"NEW IMAGE\" → a new staging: seated on the kitchen chair, from the side at knee height, the brace sagging at the knee; P-03b is made from this frame (FP14)",
+   "note": "user: \"THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL\" + board \"NEW IMAGE\" → a new staging: seated on the kitchen chair, from the side at knee height, the brace sagging at the knee; P-03b is made from this frame (FP14) · replaced on the user's Fix; copied to Old versions",
    "pair": "B",
    "res": "1536×2752",
    "size": 5522011,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_190411_faa67f73-3626-4a77-9f92-1098699b03f0.png",
    "v": 6
+  },
+  {
+   "asset": "235e9ca9db03d8b982b4932ca1fa8e61",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "3badbfc6-55a7-4f86-867f-2e548dff448a",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW\" → a short hinged brace, a hand's length above and below the knee, same seat and side",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7664316,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_3badbfc6-55a7-4f86-867f-2e548dff448a.png",
+   "v": 7
+  },
+  {
+   "asset": "c630aeb3a7b29239f3feeb608a9ee823",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "ae620c20-cac5-4618-afb1-2fc397a76a76",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW\" → a short hinged brace, a hand's length above and below the knee, same seat and side",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7685564,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_ae620c20-cac5-4618-afb1-2fc397a76a76.png",
+   "v": 8
   }
  ],
  "key": "brace",
@@ -170,10 +203,10 @@
  "songOut": 29.96,
  "stage": "broll",
  "staging": "hands: large in frame, one movement",
- "status": "regenerate",
+ "status": "ready",
  "storyDay": "N-D1",
  "title": "failed fix",
- "updatedAt": 1790881768521,
+ "updatedAt": 1790883326045,
  "videoConnector": "Kling",
  "videoNote": "the clip is made again once the new image is picked",
  "videoTaste": [
