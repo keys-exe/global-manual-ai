@@ -374,3 +374,25 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
 
 **Waiting on:** picks or Fix notes on P-01b v9/v10, P-02a v9/v10, P-05b v5/v6, P-05c v5/v6, **P-01a-END v1/v2** (the end frame); Confirm or Fix on the
 clips P-03a v2, P-03b v1, P-05a v3. Then the P-01a pinned clip and the clips from the picks; then Act 2 (the wedding).
+
+## 2026-10-01 — "FIC THESE" round (20:00–20:15 UTC)
+
+- **P-01b** "I WANT A CLOSE SHOT OF THE LEGS HERE GOING DOWN BACLWRDS" → v11/v12 (A/B): a close side shot at step height on her legs alone (edit of the stair plate P0), the lower slipper on its step, the upper heel reaching back and down. To check. v9/v10 to Old.
+- **P-05b** "WRONG DRAWER AND LOCATION" → v7/v8 (A/B): the middle drawer of the row right of the stove in her own kitchen (edit of the kitchen plate P2), pulled open and stuffed, her brown hand on its edge. To check. v5/v6 to Old.
+- **P-02a** picked v9 A → clip v3 (Kling 3.0, 6 s, 48 cr): seated on the top step she looks down the flight, holds, turns her face aside, mouth closed. To check. Unused v10 to Old.
+- **P-05c** picked v5 A → clip v1 (3 s, 24 cr): at the window she looks out, then her eyes drop to the sink. To check. Unused v6 to Old.
+- **P-01a** — user: "I DONT NEED END FRAME IN P01" → the `P-01a-END` card dropped (its v1 A/B pair kept on **Old versions 2**, 4.28 cr), `pinEnd` removed. Clip **v4** from the confirmed start frame alone (gen 4 on the user's word; §22X: v1–v3 all read her stance on the top step, facing the landing, as a climb → the motion renamed as *backing away from the landing*: she sinks lower in the frame, her head drops below the window, the landing stays empty; 4 s, 32 cr). What I see: she backs down the flight toward the lens one step at a time, about four steps — the direction is finally right. To check; "Use only up to here" trims it to one step if wanted.
+- **Old board full (1 GB).** The asset copy of the END pair failed `quota_or_state`; a new **Old 2** overflow board was published from the template (`BOARD_ROLE "old"`, title "STRYDE · 71 Stairs Pixar Song Old Versions 2") — https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j — with its `builds` doc (`boards.old2`) and the `P-01a-END` Old doc. From now on replaced / unchosen renders go to Old 2; `boards.old2` + `boardsNote` written on all four build docs. `body/old_ids.json` marks Old 2 ids with an `old2:` prefix.
+- Balances: Higgsfield 7814.15 · Kling 40793.
+- Standards on the default branch moved to V7.85.0 (the Visual Pitch) — not applied to this running build (step-2 lock).
+
+Waiting on: picks or Fix notes on P-01b v11/v12, P-05b v7/v8; Confirm or Fix on the clips P-01a v4, P-02a v3, P-05c v1, P-03a v2, P-03b v1.
+
+## 2026-10-01 — P-01a clip v5 (user: "P01 SHOULD BE WALKING BACKRWARDS SLOWLY ONE STEP AT A TIME NOT SKIPPING STEPS OF THE STAIRS", 20:12 UTC)
+
+- The user had pressed Confirm on v4 on the board, then sent this Fix in chat — the chat Fix is the later word, so v4 was replaced: copied to **Old 2** (`c74a4cf5…`, its Old doc there), deleted from Current.
+- **Clip v5** (Kling 3.0, 5 s, 40 cr) from the same confirmed start frame: the "backs away from the landing" framing kept (it was what finally made v4 go down), the pace named outright — slowly, one step at a time, each heel to the step directly below, both feet on it before the next, two steps in the whole clip, never a step skipped. What I see: she backs down toward the lens slowly, one step at a time onto consecutive steps, face to the landing. To check.
+- **Lesson L18 / V7.85.1** (PR #340, merged): the v1 note "1 STEP AT A TIME" was treated as settled once v4 went the right way — every Fix note on a shot now stays in force for every later generation: §22X, `preflight.py` fails a generation 3+ call without `fix_notes_all` (the clip builder writes it: `FIXALL`), LESSONS L18.
+- Balances: Higgsfield 7814.15 · Kling 40633.
+
+Waiting on: Confirm or Fix on the clip P-01a v5; picks or Fix notes on P-01b v11/v12, P-05b v7/v8; Confirm or Fix on the clips P-02a v3, P-05c v1, P-03a v2, P-03b v1.

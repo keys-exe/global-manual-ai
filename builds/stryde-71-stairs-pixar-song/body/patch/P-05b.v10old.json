@@ -1,0 +1,38 @@
+{
+ "moved": [
+  {
+   "asset": "7d7e3ed2084a8bfb712e0a73c78c3d59",
+   "at": 1790883833026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "1b99546b-6a49-42de-a61a-5cac83e66910",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"WRONG PERSON ALSO SHOULD USE DIFFERENT TYPE OF BROLL\" → a different kind of B-roll, an insert: the kitchen drawer stuffed with sleeves, a brace and pills, her hand pushing it shut · replaced on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 5248499,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194105_1b99546b-6a49-42de-a61a-5cac83e66910.png",
+   "v": 5,
+   "archived": true,
+   "archiveAsset": "7d7e3ed2084a8bfb712e0a73c78c3d59"
+  },
+  {
+   "asset": "4f47b35f251f7b1ae5850f5ebc530528",
+   "at": 1790883833026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "0cac9607-b685-46e4-8d6a-c9d2022e23de",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"WRONG PERSON ALSO SHOULD USE DIFFERENT TYPE OF BROLL\" → a different kind of B-roll, an insert: the kitchen drawer stuffed with sleeves, a brace and pills, her hand pushing it shut · replaced on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6064202,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194104_0cac9607-b685-46e4-8d6a-c9d2022e23de.png",
+   "v": 6,
+   "archived": true,
+   "archiveAsset": "4f47b35f251f7b1ae5850f5ebc530528"
+  }
+ ]
+}

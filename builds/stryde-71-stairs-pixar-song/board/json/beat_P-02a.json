@@ -1,6 +1,6 @@
 {
  "act": "Hook 1",
- "angle": "high · ots · clean · MEDIUM — high over her shoulder = the drop she won't go down is the picture; the other angle on this flight (P-01a/P-01b are from below)",
+ "angle": "low · front · clean · MEDIUM — low from mid-flight = closer on her at the top, the steps between us; her own hall, not a new one",
  "bars": 1.5,
  "beat": "P-02a",
  "build": "stryde-71-stairs-pixar-song",
@@ -12,32 +12,30 @@
   "video"
  ],
  "focus": "eyes · deep",
- "framing": "MEDIUM from the landing behind her shoulder, high, looking down the whole flight past her: N sitting on the top step in her house dress, one hand on the newel, her head turned down to the hall far below (user Fix 2026-10-01: a different camera angle)",
- "imageAsset": "b76721256da12550aa1b5b6d9a94e65e",
- "imageAt": 1790883125026,
+ "framing": "MEDIUM from mid-flight looking up at the top step (an edit of the confirmed P-02a v6 frame — her own staircase; user Fix 2026-10-01: 'wrong location' after the over-the-shoulder try): N sitting on the top step in her house dress, one hand on the newel, looking down the flight toward the lens, the top steps and the photo wall around her",
+ "imageAsset": "ab754e7cc5924199123dee14e2cd1d1a",
+ "imageAt": 1790883833026,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "WRONG LOCATION",
- "imageJob": "4003e2aa-ceab-4cad-b8c6-5703cb6e254f",
- "imageMatch": "plate",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  7,
-  8
- ],
+ "imageFault": "user Fix: \"WRONG LOCATION\" (the over-the-shoulder try invented a landing) → back on her own staircase: a direct edit of the confirmed P-02a v6 B frame, asked closer from mid-flight — the render kept the wide framing",
+ "imageJob": "f76f21fd-98a3-41e6-a22c-bad923da5bb4",
+ "imageMatch": "frame",
+ "imageModel": "nano_banana_pro → logged nano_banana_2",
+ "imagePair": [],
  "imageParts": [],
- "imagePrompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": Keep this photo exactly as it is — the staircase, its runner, the oak rail, the photo wall, the hall floor, the light — but seen from the top landing looking down the flight, a tall 9:16 crop, and add the woman. Image 1 is the hall and staircase.\nMedium shot from the landing, the lens high behind her right shoulder looking down the stairs past her, sharp on her. An older Black woman with short grey hair, seen only from behind, sitting on the top step, her right hand on the newel post, her left hand in her lap, her head turned down to the hall floor far below; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the back of her head and shoulders in the near foreground, the whole flight below her, the rail, the photo wall, the hall floor at the bottom; every other surface bare. Two hands placed, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Clothing and frames plain — no lettering, logos or labels; no second person.",
+ "imagePick": 9,
+ "imagePrompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": Keep this photo exactly as it is — the staircase, its runner, the oak rail and newel, the photo wall, the woman sitting on the top step — but closer: from mid-flight. Image 1 is the picture; nothing in it changes but the crop.\nMedium shot from mid-flight, the lens low at step height looking up at the top step, sharp on her face. The same woman of Image 1, seventy-one, sitting on the top step as she sits, her right hand on the newel post, her left hand in her lap, looking down the flight toward the lens, eyes on the steps below, mouth closed; faded blue floral knee-length house dress, grey cardigan, pink terry slippers; six steps between her and the lens. Nobody else.\nIn the frame: the woman at the top of the flight of Image 1, the top steps, the rail, the photo wall; every other surface bare. Two hands placed, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window above, a catchlight in each eye. Clothing and frames plain — no lettering, logos or labels; no second person.",
  "imageRefs": [
   {
-   "kind": "location",
-   "label": "P0-PROP-N plate (confirmed)",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 1 · edited (§6A rule 3, HT17)"
+   "kind": "frame",
+   "label": "P-02a frame v6 B (confirmed) — her on the top step, her own flight",
+   "ref": "stryde-71-stairs-pixar-song__P-02a",
+   "role": "Image 1 · edited (§6A rule 3, HT17, FP14)"
   }
  ],
  "imageRegens": 3,
- "imageRes": "1536×2752",
- "imageStatus": "regenerate",
+ "imageRes": 7180756,
+ "imageStatus": "confirmed",
  "imageTaste": [
   "HT02",
   "HT03",
@@ -51,8 +49,9 @@
   "HT22"
  ],
  "imageType": "image/png",
+ "imageUnused": 10,
  "imageUnusedArchived": "fd5dd95d55dcceb1fa3f0a7d145ee021",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_4003e2aa-ceab-4cad-b8c6-5703cb6e254f.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194104_f76f21fd-98a3-41e6-a22c-bad923da5bb4.png",
  "imageVersions": [
   {
    "archiveAsset": "9efe426c4826fa5171b2e00edcd7b702",
@@ -157,13 +156,15 @@
    "v": 6
   },
   {
+   "archiveAsset": "47f9286e49e102a00fc4c415b20e864d",
+   "archived": true,
    "asset": "b76721256da12550aa1b5b6d9a94e65e",
    "at": 1790883125026,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "4003e2aa-ceab-4cad-b8c6-5703cb6e254f",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user Fix: \"USE A DIFFERENT CAMERA ANGLES\" → from the landing behind her shoulder, high, looking down the whole flight past her (act map re-angled high · over-the-shoulder)",
+   "note": "user Fix: \"USE A DIFFERENT CAMERA ANGLES\" → from the landing behind her shoulder, high, looking down the whole flight past her (act map re-angled high · over-the-shoulder) · replaced on the user's Fix; copied to Old versions",
    "pair": "A",
    "res": "1536×2752",
    "size": 8257136,
@@ -172,19 +173,53 @@
    "v": 7
   },
   {
+   "archiveAsset": "0e3ca0fa903ac5cff4f4b4b5dd0c16c1",
+   "archived": true,
    "asset": "6321d1076c95e1ae81658b2324168b64",
    "at": 1790883125026,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "fa8e2af8-2d6d-4be9-b3dd-e8bb8a5a882f",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user Fix: \"USE A DIFFERENT CAMERA ANGLES\" → from the landing behind her shoulder, high, looking down the whole flight past her (act map re-angled high · over-the-shoulder)",
+   "note": "user Fix: \"USE A DIFFERENT CAMERA ANGLES\" → from the landing behind her shoulder, high, looking down the whole flight past her (act map re-angled high · over-the-shoulder) · replaced on the user's Fix; copied to Old versions",
    "pair": "B",
    "res": "1536×2752",
    "size": 5754806,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_fa8e2af8-2d6d-4be9-b3dd-e8bb8a5a882f.png",
    "v": 8
+  },
+  {
+   "asset": "ab754e7cc5924199123dee14e2cd1d1a",
+   "at": 1790883833026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "f76f21fd-98a3-41e6-a22c-bad923da5bb4",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"WRONG LOCATION\" (the over-the-shoulder try invented a landing) → back on her own staircase: a direct edit of the confirmed P-02a v6 B frame, asked closer from mid-flight — the render kept the wide framing",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7180756,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194104_f76f21fd-98a3-41e6-a22c-bad923da5bb4.png",
+   "v": 9
+  },
+  {
+   "asset": "61e4382d8ea62ac42b3049c451b3c530",
+   "at": 1790883833026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "9e6f0b74-6826-46f2-b9ed-d05deb134895",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"WRONG LOCATION\" (the over-the-shoulder try invented a landing) → back on her own staircase: a direct edit of the confirmed P-02a v6 B frame, asked closer from mid-flight — the render kept the wide framing · not chosen (the user picked A); copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7276545,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194104_9e6f0b74-6826-46f2-b9ed-d05deb134895.png",
+   "v": 10,
+   "archived": true,
+   "archiveAsset": "5dd2bf50b2c7f61e1feb8b2d58954e1f"
   }
  ],
  "key": "down",
@@ -201,17 +236,16 @@
  "product": "absent · —",
  "regens": 1,
  "section": "The low point and what failed — MUS-EXPOSE",
- "shot": "high · ots · clean · MEDIUM",
+ "shot": "low · front · clean · MEDIUM",
  "songIn": 21.83,
  "songOut": 26.71,
  "stage": "broll",
  "staging": "none",
- "status": "regenerate",
+ "status": "review",
  "storyDay": "N-D1",
  "title": "problem (edit of P0: the top of the flight, HT17)",
- "updatedAt": 1790883319765,
+ "updatedAt": 1790885353161,
  "videoConnector": "Kling",
- "videoFault": "user: never talk the lyrics/script in B-roll → mouth closed, lips still, she never speaks or sings (§35A rule 6, HT25)",
  "videoNote": "the clip is made again once the new image is picked",
  "videoTaste": [
   "HT03",
@@ -257,6 +291,29 @@
    "type": "video/mp4",
    "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/fe9e542f-bf11-462a-a811-2da39a0e3753-yoMiZW5idkEubXoLDAVXfw-output.mp4?x-kcdn-pid=112372",
    "v": 2
+  },
+  {
+   "v": 3,
+   "asset": "3133f33edf6ee870ca788789da3c8a30",
+   "at": 1790885353161,
+   "connector": "Kling",
+   "credits": 48,
+   "duration": 6.04,
+   "fromImage": 9,
+   "job": "AS-m3I8VD--0R-AYQqGt2J3tm1khXI2mPHoRs9B7jGUUp3NPQrLh8URfzm1C_XBUdn5kzldy",
+   "model": "kling-video-v3_0",
+   "res": "1072×1928",
+   "size": 7377468,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/e2480c3e-d3f2-48bd-be85-e2881064d21e-ZRyf-JA1c5ZeoCJJcVyGVg-output.mp4?x-kcdn-pid=112372",
+   "note": "from the picked image v9 A (job f76f21fd) · what I see: seated on the top step, she looks down the flight toward the lens, holds, then her face turns aside; mouth closed; the staircase and the frames on the wall stay put · the first clip on the new frame (the image was replaced on the user's Fixes)"
   }
- ]
+ ],
+ "videoAsset": "3133f33edf6ee870ca788789da3c8a30",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/e2480c3e-d3f2-48bd-be85-e2881064d21e-ZRyf-JA1c5ZeoCJJcVyGVg-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AS-m3I8VD--0R-AYQqGt2J3tm1khXI2mPHoRs9B7jGUUp3NPQrLh8URfzm1C_XBUdn5kzldy",
+ "credits": 48,
+ "videoAt": 1790885353161,
+ "videoRes": "1072×1928",
+ "prompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": From this frame: she looks down the stairs and looks away — one turn of the head, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From mid-flight looking up at the top step, she looks down the stairs toward the lens, holds, then turns her face away to the side, her mouth closed the whole time — she never speaks or sings; her hand stays on the newel, she stays seated on the top step; the staircase stays exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never stands."
 }

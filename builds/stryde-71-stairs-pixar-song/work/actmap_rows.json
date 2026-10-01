@@ -265,11 +265,11 @@
   "subject": "N feet",
   "location": "L-N-STAIRS",
   "story_day": "N-D1",
-  "framing": "MEDIUM-CU on her legs and feet at the top of the flight, from below (an edit of the confirmed P-01a frame; user 2026-10-01: use the P01A as reference, then 'she is too big' — a wider frame): the same woman from behind, small at the top of the frame from the hem down, her slippers on the top step, the right heel reaching back and down to the step below, the upper half of the flight below her",
-  "action": "one foot back and down onto the step below, the other joins",
+  "framing": "CU from the side at step height on her legs going down backwards (user 2026-10-01: 'a close shot of the legs here going down backwards'): her body facing up the stairs, the left slipper on the step above, the right reaching back and down heel first onto the step below, one hand on the rail at the top edge",
+  "action": "the right heel settles on the step below, the left foot joins it",
   "pace": "about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "stairs: feet only, from below, going down backwards",
+  "staging": "stairs: legs only, side, going down backwards",
   "pin_end": "no",
   "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
   "max": 6,
@@ -281,11 +281,11 @@
   "ledger": "",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "low",
-   "side": "behind",
+   "height": "ground",
+   "side": "profile",
    "fg": "clean",
    "scale": "CU",
-   "why": "low from behind = the feet going the wrong way, the same view as P-01a so the two connect (FP14)"
+   "why": "ground from the side = the heel-first step down reads as backwards, which the view from below never did"
   },
   "mirror_of": null,
   "focus": {

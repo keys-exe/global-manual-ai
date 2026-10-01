@@ -196,11 +196,26 @@ A final frame from a 3D animated feature film, stylized storybook render — the
 FIX9 = {"P-01b": "SHE IS TOO BIG HERE", "P-02a": "WRONG LOCATION", "P-05b": "WRONG PERSON ALSO SHOULD USE DIFFERENT TYPE OF BROLL", "P-05c": "WRONG PERSON ALSO SHOULD USE DIFFERENT TYPE OF BROLL"}
 if V >= 9:
     P = P9
+
+# ---- v10 (user "FIC THESE", 2026-10-01): P-01b "I WANT A CLOSE SHOT OF THE LEGS HERE GOING DOWN BACKWARDS" (side view at step height, edit of P0);
+# P-05b "WRONG DRAWER AND LOCATION" (the drawer render invented a counter — pinned to the P2 plate's own drawers: the three drawers right of the stove, under the counter).
+P10 = {}
+P10["P-01b"] = (f'''For the line "{L("P-01b")}": Keep this photo exactly as it is — the staircase, its carpet runner and brass rods, the white balusters and oak rail, the light — in close on the top steps from the side, a tall 9:16 crop, and add her legs. Image 1 is the staircase.
+Close-up from the side at step height, sharp on the slippers: her legs from the knee down going down the stairs backwards — her body turned to face up the stairs, her left pink terry slipper flat on the step above, her right slipper reaching back and down heel first onto the step below, toes still pointing up to the landing; bare brown shins under the hem of a faded blue floral house dress; one hand gripping the oak rail at the top edge; her other hand and her head out of frame above.
+In frame: two slippers, two legs below the knee, one hand on the rail, four steps of the flight of Image 1 with their runner and rods; every other surface bare. Each foot whole, heels toward the lower steps.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Slippers and hem plain — no lettering, logos or labels; nobody else.''', [REF_P0], False, P0)
+P10["P-05b"] = (f'''For the line "{L("P-05b")}": Keep this photo exactly as it is — this kitchen, its sage-green cabinets with brass pulls, the row of three drawers under the counter to the right of the cream stove, the tiled splashback, the light — in close on the middle drawer of that row, a tall 9:16 crop, and pull it open. Image 1 is the kitchen.
+Close-up at eye level with the drawer, sharp on it: the middle drawer of Image 1 pulled half open, stuffed to the brim with two grey knee sleeves, a folded black hinged knee brace, three plain pill bottles and a blue ice pack; an older Black woman's right hand, brown, flat on the drawer front pushing it shut, a grey cardigan cuff at her wrist; her left hand and the rest of her out of frame; the stove edge at the left of the frame.
+In frame: the open drawer and its contents, one hand placed, the cabinet fronts, counter edge and stove edge of Image 1; every other surface bare, nothing on the counter.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Sleeves, bottles and cabinets plain — no lettering, logos or labels; nobody else.''', [REF_P2], False, P2)
+FIX10 = {"P-01b": "I WANT A CLOSE SHOT OF THE LEGS HERE GOING DOWN BACLWRDS", "P-05b": "WRONG DRAWER AND LOCATION"}
+if V >= 10:
+    P = P10
 if __name__ == "__main__":
     fails = 0
     for b, (pr, refs, face, eo) in P.items():
         c = {"beat": b, "kind": "image", "mode": 2, "prompt": pr, "script_line": L(b), "face": face, "room": True, "body": b not in ("P-05b",), "refs": refs,
-             "match": "frame" if eo in (P3A, P02B, "P3A-NEW", P01B, P02B6) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX9 if V >= 9 else FIX8 if V >= 8 else FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
+             "match": "frame" if eo in (P3A, P02B, "P3A-NEW", P01B, P02B6) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX10 if V >= 10 else FIX9 if V >= 9 else FIX8 if V >= 8 else FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
         OV = (OUTV if V == 4 else {}).get(b, V)
         (H / f"{b}.v{OV}.prompt.txt").write_text(pr); (H / f"{b}.v{OV}.preflight.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
         r = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v{OV}.preflight.json")], capture_output=True, text=True)
