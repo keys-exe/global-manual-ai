@@ -1054,6 +1054,39 @@ B["B19b"] = clip("B19b",
 B["B19b"][0]["motion"] = B["B19b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little; the strap never moves")
 START.update({"B19b": str(HERE.parent / "broll/B19b_v5.png")})
 
+# ── 2026-10-01 B19-BR2 video Fix (gen 2): "walking up stair" — same frame (face CU on the stairs), the motion now climbs. ──
+B["B19-BR2"] = clip("B19-BR2",
+    "A close-up of a white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt, on her stairs, one hand "
+    "on the honey oak handrail, three-quarter on, a small private smile.",
+    "Already moving on the first frame: she walks UP her stairs, taking one easy step up at an unhurried pace, about a second and a "
+    "half — her body rises a little in the frame, her hand slides up the oak handrail with her, and her small smile stays as she climbs, "
+    "easy and sure. Her head stays inside the frame.",
+    "no going down the stairs, no stumbling, no wincing, no head leaving the frame, no looking into the lens, no talking, no camera "
+    "movement, no camera following her, no face morphing, no extra fingers, no extra hands",
+    3.0, hi=5,
+    risks=[{"risk": "her head rises out of a close frame", "prevented_by": "one step only, 'her head stays inside the frame'"},
+           {"risk": "the camera follows her up", "prevented_by": "locked-off tripod clause, 'no camera following her'"},
+           {"risk": "she goes down instead of up", "prevented_by": "'walks UP', 'no going down the stairs'"}])
+B["B19-BR2"][0]["motion"] = B["B19-BR2"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little")
+
+# ── 2026-10-01 B19b video Fix round 3 (user "go"): v2's free hand drifted onto the banister — give the free hand a job (resting on the
+# bare thigh above the sore knee) and shorten to ONE bare-knee step, so there is no idle hand and no second step for it to wander in. ──
+B["B19b"] = clip("B19b",
+    "A white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt and a mid-blue denim skirt, at the top "
+    "of her carpeted stairs facing down towards the camera; her hand on the right of the frame pressed flat on the duck-egg blue wall; "
+    "a black STRYDE strap seated just below the kneecap of the leg on the left of the frame, the other knee bare.",
+    "Already moving on the first frame: her free hand settles onto her bare thigh just above the bare knee and STAYS there, resting, the "
+    "whole clip. She steps down one stair onto the bare knee, slowly and carefully, about two seconds — she winces a little as her "
+    "weight lands, and leans her other hand harder into the wall. The banister stays untouched at the far edge of the frame. The strap "
+    "stays exactly where it is — rigid, keeping its shape, size and wordmark.",
+    "no hand on the banister, no hand leaving the thigh, no second step, no falling, no strap moving, no strap on the bare knee, no "
+    "exaggerated pain, no feet warping, no shoe changing shape, no extra legs, no extra hands",
+    3.0, hi=4,
+    risks=[{"risk": "the free hand drifts onto the banister (v2's fault)", "prevented_by": "the free hand is given a job — resting on the bare thigh the whole clip; 'no hand on the banister, no hand leaving the thigh'"},
+           {"risk": "feet and shoes warp over two steps (v2)", "prevented_by": "one step only, 4 s; 'no feet warping, no shoe changing shape'"},
+           {"risk": "the pain is overplayed", "prevented_by": "'winces a little'; 'no exaggerated pain, no falling'"}])
+B["B19b"][0]["motion"] = B["B19b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little; the strap never moves")
+
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
