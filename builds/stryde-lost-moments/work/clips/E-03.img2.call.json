@@ -1,0 +1,56 @@
+{
+ "beat": "E-03",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"And the pain just lifts.\": kneeling on his left knee, right knee up and forward with the strap on it, his shoulders drop on a breath out and his face eases into relief.\nMedium shot, low angle, three-quarter front, from his head down to the rug, the strapped right knee in the lower half of the frame.\nImage 1 is the strap (three-quarter photo). Image 2 is the strap worn on a bent knee. Image 3 is the man kneeling. Image 4 is his face.\nThe strap in Image 1 copied exactly \u2014 same shell, band, slides and wordmark, nothing redesigned \u2014 12 \u00d7 5 cm, about a quarter of the frame wide, seated just below his right kneecap exactly as in Image 2, the kneecap uncovered. The same man as Image 4, kneeling as in Image 3, in the shirt, shorts and slippers of Image 3.\nEyes softly closing, looking down, a small relieved smile, mouth closed. Both hands resting on his right thigh above the knee, neither touching the strap.\nIn the frame: one man, the red rug; nothing else.\nWarm afternoon sun from the left, lighting the window side of his face. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nClothing plain \u2014 no lettering or logos but the strap's own wordmark; no second strap.",
+ "script_line": "And the pain just lifts.",
+ "face": true,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "product_tq_left.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "worn_bent.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "E-04 v1 A (kneel, room, day-2 outfit)",
+   "kind": "frame"
+  },
+  {
+   "label": "C5 Clifton sheet",
+   "kind": "character"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP07",
+  "FP11",
+  "FP12",
+  "HT06",
+  "HT07",
+  "HT18",
+  "HT20"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: his shoulders drop on one long breath out and his face eases into relief, about two seconds.",
+ "ref_urls": [
+  "products/stryde/stryde_refs/product_tq_left.jpg",
+  "products/stryde/stryde_refs/worn_bent.jpg",
+  "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actE/E-04.A.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131041_578389bd-200a-401e-a6d9-c0ec3c5f32fe.png"
+ ],
+ "fix_note": "MAKE HE WEARING STRYDE STRAP \u2192 reframed from MCU to a kneeling medium shot, strap on the right knee a quarter of the frame wide"
+}

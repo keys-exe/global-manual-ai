@@ -1,0 +1,43 @@
+{
+ "beat": "E-01",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"It's not getting down that stops you.\": From this frame: he lowers his eyes once and stays still, about a second. Handheld phone, a gentle breath sway, the camera stays where it is. Then he holds, still seated on the sofa edge, both hands on his knees. The same man, cardigan and room as the frame. No standing up, no speaking, no smile.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actE/E-01.B.png",
+ "start_approved": true,
+ "approved_by": "user picked B on the board (2026-10-01)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "It's not getting down that stops you.",
+ "motion_plan": "From this frame: he lowers his eyes once and stays still, about a second.",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT18",
+  "HT19"
+ ],
+ "risks": [
+  {
+   "risk": "he stands up",
+   "prevented_by": "'still seated', no standing up"
+  },
+  {
+   "risk": "he talks",
+   "prevented_by": "no speaking"
+  },
+  {
+   "risk": "the face changes person",
+   "prevented_by": "the same man as the frame"
+  }
+ ]
+}

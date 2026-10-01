@@ -1,0 +1,42 @@
+{
+ "beat": "E-08",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"They won't be little for long.\": From this frame: the girl clicks the track piece into place once, about a second. Handheld phone, a gentle breath sway, the camera stays where it is. The boy keeps one hand on the engine; their grandfather stays kneeling behind the track, watching. Every track piece stays whole. No extra children, no pieces appearing.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actE/E-08.A.png",
+ "start_approved": true,
+ "approved_by": "user picked A on the board (2026-10-01)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "They won't be little for long.",
+ "motion_plan": "From this frame: the girl clicks the track piece into place once, about a second.",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "taste": [
+  "HT12",
+  "HT18",
+  "HT19"
+ ],
+ "risks": [
+  {
+   "risk": "a third child appears",
+   "prevented_by": "no extra children"
+  },
+  {
+   "risk": "track pieces multiply",
+   "prevented_by": "every piece whole; no pieces appearing"
+  },
+  {
+   "risk": "grandfather gets up",
+   "prevented_by": "stays kneeling behind the track"
+  }
+ ]
+}

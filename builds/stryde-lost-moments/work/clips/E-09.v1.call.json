@@ -1,0 +1,41 @@
+{
+ "beat": "E-09",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"Nothing to lose but the pain.\": From this frame: he laughs once, shoulders shaking, then settles into a wide smile, about a second. Handheld phone, a gentle breath sway, the camera stays where it is. His right hand stays on his chest, his left on his thigh; he stays kneeling. No standing up, no speaking.",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actE/E-09.A.png",
+ "start_approved": true,
+ "approved_by": "user picked A on the board (2026-10-01)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "Nothing to lose but the pain.",
+ "motion_plan": "From this frame: he laughs once, shoulders shaking, then settles into a wide smile, about a second.",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "taste": [
+  "HT12",
+  "HT18"
+ ],
+ "risks": [
+  {
+   "risk": "he stands",
+   "prevented_by": "stays kneeling"
+  },
+  {
+   "risk": "he speaks",
+   "prevented_by": "no speaking"
+  },
+  {
+   "risk": "the laugh becomes a grimace",
+   "prevented_by": "settles into a wide smile"
+  }
+ ]
+}
