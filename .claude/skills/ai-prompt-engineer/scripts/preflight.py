@@ -384,7 +384,7 @@ def run(c):
     ph = PLACEHOLDER.findall(p)
     check("no unfilled [SLOTS]", not ph, ", ".join(sorted(set(ph)))[:300])
     check("no banned word 'cinematic'", not BANNED.search(p))
-    if film:  # V7.83.1, LESSONS L13: the video model draws what the prompt names — a boom named "out of frame" lands in frame
+    if film:  # V7.83.2, LESSONS L13: the video model draws what the prompt names — a boom named "out of frame" lands in frame
         _pos = p.split("NEGATIVES:")[0]
         _mic = MIC_WORDS.findall(_pos)
         check("MIC_PRIME — no microphone, boom or windshield named outside the negatives", not _mic, ",".join(sorted(set(m if isinstance(m, str) else m[0] for m in _mic))))

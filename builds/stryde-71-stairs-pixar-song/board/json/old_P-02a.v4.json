@@ -1,0 +1,118 @@
+{
+ "imageVersions": [
+  {
+   "archived": true,
+   "asset": "9efe426c4826fa5171b2e00edcd7b702",
+   "at": 1790873674660,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "a401e32e-dbdc-4770-9622-045a6ba04a46",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7911309,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_a401e32e-dbdc-4770-9622-045a6ba04a46.png",
+   "v": 1
+  },
+  {
+   "archived": true,
+   "asset": "09837dc92e83eba5ae3826cfd4984210",
+   "at": 1790873674660,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "5e7b9fb2-8d81-42d0-9363-d30c2b7ad565",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6106311,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_5e7b9fb2-8d81-42d0-9363-d30c2b7ad565.png",
+   "v": 2
+  },
+  {
+   "archiveAsset": "cfc3b2e15d01fc9898960e2a89726fa8",
+   "archived": true,
+   "asset": "cfc3b2e15d01fc9898960e2a89726fa8",
+   "at": 1790876674688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "34a4e086-d516-4570-af05-3bcb361ab1aa",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · replaced by the v3 pair on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7436671,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174004_34a4e086-d516-4570-af05-3bcb361ab1aa.png",
+   "v": 3
+  },
+  {
+   "archiveAsset": "d58e8be1156fcb062d2f4809db0b78aa",
+   "archived": true,
+   "asset": "d58e8be1156fcb062d2f4809db0b78aa",
+   "at": 1790876674688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "979a33d3-1057-491f-8304-8f29d86fc5e1",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · replaced by the v3 pair on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7989378,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174004_979a33d3-1057-491f-8304-8f29d86fc5e1.png",
+   "v": 4
+  },
+  {
+   "asset": "fd5dd95d55dcceb1fa3f0a7d145ee021",
+   "at": 1790877909563,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "e443ca80-6a5d-4e63-accd-97ba7c3ef2e6",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"this should be her at the top of the stairs looking down\" → from the hall floor looking up the whole flight — she sits on the top step looking down it (act map re-angled low · front) · not chosen (the user picked 6)",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 8122962,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180141_e443ca80-6a5d-4e63-accd-97ba7c3ef2e6.png",
+   "v": 5,
+   "archived": true,
+   "archiveAsset": "fd5dd95d55dcceb1fa3f0a7d145ee021"
+  }
+ ],
+ "imagePair": [],
+ "imageAsset": "fd5dd95d55dcceb1fa3f0a7d145ee021",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180141_e443ca80-6a5d-4e63-accd-97ba7c3ef2e6.png",
+ "imageJob": "e443ca80-6a5d-4e63-accd-97ba7c3ef2e6",
+ "imageAt": 1790877909563,
+ "imagePrompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": Keep this photo exactly as it is — the hall, the whole staircase rising to the right, its rail and newel, the photo wall, the light — a tall 9:16 crop on the full flight, and add the woman. Image 1 is the hall and staircase. Image 2 is the woman.\nMedium shot from the hall floor, the lens low looking up the whole flight, sharp on her. The same woman as Image 2, seventy-one, sitting on the top step at the head of the stairs, her right hand on the newel post, her left hand in her lap, looking down the flight toward the lens, eyes on the hall floor far below, not going; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman at the top of the flight of Image 1, every step between her and the lens, the rail, the photo wall; every other surface bare. Two hands placed, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window above, a catchlight in each eye. Clothing and frames plain — no lettering, logos or labels; no second person.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P0-PROP-N plate (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "kind": "character",
+   "label": "N-NARR sheet v2",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  }
+ ],
+ "imageFault": "not chosen — the user picked v6",
+ "title": "problem (edit of P0: the top of the flight, HT17)",
+ "shot": "low · front · clean · MEDIUM",
+ "framing": "MEDIUM from the hall floor looking up the whole flight: N sitting on the top step at the head of the stairs in her house dress, one hand on the newel, looking down the flight toward the lens, not going (user Fix 2026-10-01: her at the top of the stairs looking down)",
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "updatedAt": 1790879386272,
+ "flow": [
+  "image"
+ ]
+}

@@ -12,30 +12,36 @@
  ],
  "focus": "foreground · medium",
  "framing": "CU at floor level: the brace bunched around her right ankle above her slipper",
- "imageAsset": "d00676774459170c00e4f8bfd2d99991",
- "imageAt": 1790876674688,
+ "imageAsset": "0eb8a26ddb07e601dda9216dc4f0fadb",
+ "imageAt": 1790877909563,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "the brace here should be same as the p03a",
- "imageJob": "18267ff8-4783-431b-b0be-bc6205452240",
+ "imageFault": "user Fix: \"the brace here should be same as the p03a\" → the confirmed P-03a frame attached as Image 2 — the same brace, copied exactly, around the ankle",
+ "imageJob": "4cc85df5-8c36-4b2e-ae4e-674cf065d7a5",
  "imageMatch": "plate",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [
-  3,
-  4
+  5,
+  6
  ],
- "imagePrompt": "For the line \"By evening, it was around my ankle.\": Keep this photo exactly as it is — the kitchen floor, the table and chair legs, the cabinets, the light — in close at floor level, a tall 9:16 crop, and add her feet. Image 1 is the kitchen.\nClose-up at floor level from the side, sharp on the ankle: a seated woman's bare brown shins, the big black hinged knee brace bunched in a loose ring around her right ankle just above a pink terry slipper, both slippers flat on the floor, the hem of a faded blue floral house dress at the top edge, a chair leg beside her. Hands and face out of frame.\nIn frame: two slippers, two shins, the brace around the right ankle, the chair and table legs and floor of Image 1; every other surface bare. Each foot whole.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in evening light, the window over the sink dim, the ceiling light on. Brace and slippers plain — no lettering, logos or labels; nobody else.",
+ "imagePrompt": "For the line \"By evening, it was around my ankle.\": Keep this photo exactly as it is — the kitchen floor, the table and chair legs, the cabinets, the light — in close at floor level, a tall 9:16 crop, and add her feet. Image 1 is the kitchen. Image 2 is the brace, copied exactly — same shape, same wide straps, same round hinges, nothing redesigned.\nClose-up at floor level from the side, sharp on the ankle: a seated woman's bare brown shins, the brace of Image 2 slid down her right leg and bunched in a loose ring around her right ankle, its hinges and straps slumped above a pink terry slipper, both slippers flat on the floor, the hem of a faded blue floral house dress at the top edge, a chair leg beside her. Hands and head out of frame above.\nIn frame: two slippers, two shins, the one brace of Image 2 around the right ankle, the chair and table legs and floor of Image 1; every other surface bare. Each foot whole.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in evening light, the window over the sink dim, the ceiling light on. Brace and slippers plain — no lettering, logos or labels; nobody else.",
  "imageRefs": [
   {
    "kind": "location",
    "label": "P2-KITCHEN plate v2 (confirmed)",
    "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
    "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "kind": "frame",
+   "label": "P-03a frame v3 A (confirmed) — the brace",
+   "ref": "stryde-71-stairs-pixar-song__P-03a",
+   "role": "Image 2"
   }
  ],
  "imageRegens": 1,
  "imageRes": "1536×2752",
- "imageStatus": "regenerate",
+ "imageStatus": "review",
  "imageTaste": [
   "HT02",
   "HT03",
@@ -49,7 +55,7 @@
   "HT22"
  ],
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174038_18267ff8-4783-431b-b0be-bc6205452240.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180143_4cc85df5-8c36-4b2e-ae4e-674cf065d7a5.png",
  "imageVersions": [
   {
    "archiveAsset": null,
@@ -86,13 +92,15 @@
    "v": 2
   },
   {
+   "archiveAsset": "eda0b4f758e4ec90cce64f04b19aa147",
+   "archived": true,
    "asset": "d00676774459170c00e4f8bfd2d99991",
    "at": 1790876674688,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "18267ff8-4783-431b-b0be-bc6205452240",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · replaced by the v3 pair on the user's Fix; copied to Old versions",
    "pair": "A",
    "res": "1536×2752",
    "size": 6865000,
@@ -101,19 +109,51 @@
    "v": 3
   },
   {
+   "archiveAsset": "0765000eb4d244f5d49f53fde364f0de",
+   "archived": true,
    "asset": "6961f3650ef1cb60ee12d8fb02355750",
    "at": 1790876674688,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "ab5050e9-108c-4501-a64b-32376f92c81e",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · replaced by the v3 pair on the user's Fix; copied to Old versions",
    "pair": "B",
    "res": "1536×2752",
    "size": 7137842,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174038_ab5050e9-108c-4501-a64b-32376f92c81e.png",
    "v": 4
+  },
+  {
+   "asset": "0eb8a26ddb07e601dda9216dc4f0fadb",
+   "at": 1790877909563,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "4cc85df5-8c36-4b2e-ae4e-674cf065d7a5",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"the brace here should be same as the p03a\" → the confirmed P-03a frame attached as Image 2 — the same brace, copied exactly, around the ankle",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7256877,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180143_4cc85df5-8c36-4b2e-ae4e-674cf065d7a5.png",
+   "v": 5
+  },
+  {
+   "asset": "3345708c3db6eeac327f8847cb9f7e09",
+   "at": 1790877909563,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "fe1f5c77-8ab2-483d-97d2-6eea3d64d38f",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"the brace here should be same as the p03a\" → the confirmed P-03a frame attached as Image 2 — the same brace, copied exactly, around the ankle",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7229252,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180141_fe1f5c77-8ab2-483d-97d2-6eea3d64d38f.png",
+   "v": 6
   }
  ],
  "key": "ankle",
@@ -134,8 +174,8 @@
  "songOut": 32.4,
  "stage": "broll",
  "staging": "feet only",
- "status": "regenerate",
+ "status": "generating",
  "storyDay": "N-D1",
  "title": "failed fix",
- "updatedAt": 1790877195357
+ "updatedAt": 1790877909563
 }

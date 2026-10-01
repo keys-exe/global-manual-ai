@@ -22,7 +22,7 @@ from hka_calls import (SERIES, LOOK, INHERIT, F2, PHYS, AUD, SILENT, NEG_EQUIP, 
                        NEG_SCENECUT, NEG_DRAMA, NEG_SOUND, NEG_STAIRS, VOICE_N, HER_ID,
                        manifest, SHEET, VOICE, PLACE, state, negs)
 
-# V7.83.1 (LESSONS L13): the audio line no longer names a boom microphone — the model drew it into SH05 v3
+# V7.83.2 (LESSONS L13): the audio line no longer names a boom microphone — the model drew it into SH05 v3
 AUD = AUD.replace("Audio is clean production sound from a boom microphone just out of frame above the speaker: close, clear and even,",
                   "Audio is clean, close production dialogue sound: clear and even,").replace(
           "The microphone and all sound equipment stay completely outside the picture: nothing hangs into the top of the frame. ", "")

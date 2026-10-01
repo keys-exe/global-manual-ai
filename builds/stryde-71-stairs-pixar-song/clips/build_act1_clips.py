@@ -14,20 +14,26 @@ MOTION = {
  "P-05a": "The back of her right hand pushes the heap once across the table away from her, the bottles and sleeves sliding to the far edge, then she sits back in the chair, shoulders dropping, eyes on nothing past the lens, her left hand slack in her lap. Stylized 3D animation, exactly on model from the frame, every object rigid. No camera travel; nobody else; no cut; she never looks into the lens.",
 }
 DUR = {"P-03a": 5, "P-04a": 4, "P-04b": 5, "P-05a": 6}
+MOTION["P-01b"] = "In close at step height, the lower slipper's heel settles backwards onto the step below and takes her weight, then the other slipper lifts off the step above and comes down beside it, toes still pointing up the stairs; the hand stays on the rail; the steps, runner and rods stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; the feet never turn around."
+MOTION["P-02a"] = "From the hall floor looking up the flight, she looks down the stairs toward the lens, holds, then turns her face away to the side; her hand stays on the newel, her body stays seated on the top step; the whole staircase stays exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never stands."
+MOTION["P-05a"] = "The back of her right hand pushes the heap once across the table to its far edge — every bottle, sleeve and brace slides and stays on the table, nothing vanishes — then she sits back in the chair, shoulders dropping, mouth closed, eyes on nothing past the lens, her left hand slack in her lap. Stylized 3D animation, exactly on model from the frame, every object rigid and present to the last frame. No camera travel; nobody else; no cut; she never speaks."
+DUR.update({"P-01b": 4, "P-02a": 6})
+FIXN = {"P-05a": "user: make this into 3 brolls (the beat split; this clip re-cut to its own line) · §22X on v1: the heap vanished and her mouth moved → prompt: every object stays on the table to the last frame, mouth closed, she never speaks"}
 fails = 0
 for arg in sys.argv[1:]:
-    b, iv = arg.split(":"); r = rows[b]; k = f"{b}@v2A"
+    parts = arg.split(":"); b, iv = parts[0], parts[1]; k = parts[2] if len(parts) > 2 else f"{b}@v2A"; cv = int(parts[3]) if len(parts) > 3 else 1; r = rows[b]
+    if b == "P-05a": DUR[b] = r["duration"]
     mp = f"From this frame: {r['action']} — {r['pace']}; camera {r['camera']}"
     pr = f'For the line "{r["line"]}": {mp}. {MOTION[b]}'
     c = {"beat": b, "connector": "kling", "mode": 2, "kind": "broll", "prompt": pr, "duration": DUR[b], "resolution": "1080p", "aspect_ratio": "9:16",
          "start_image": urls[k], "start_approved": True, "pinned": False, "end_image": None, "end_approved": False, "script_line": r["line"], "motion_plan": mp,
-         "motion_confirmed": True, "pace": r["pace"].split(",")[0], "subject_motion": "in_place", "prefer_multi_shots": "false", "generation": 1, "user_go": None,
-         "fix_note": None, "risk_class": "none", "pin_waived": None, "pilot": None, "taste": ["HT03", "HT04", "HT09", "HT12", "HT22"],
+         "motion_confirmed": True, "pace": r["pace"].split(",")[0], "subject_motion": "in_place", "prefer_multi_shots": "false", "generation": cv, "user_go": None,
+         "fix_note": FIXN.get(b) if cv > 1 else None, "risk_class": "none", "pin_waived": None, "pilot": None, "taste": ["HT03", "HT04", "HT09", "HT12", "HT22"],
          "risks": [{"risk": "a second action or a loop", "prevented_by": "one movement named, then rest"}, {"risk": "off model", "prevented_by": "exactly on model from the frame"},
                    {"risk": "the camera travels", "prevented_by": "no camera travel, RV sway only"}],
-         "note": f"first clip of this beat (from the confirmed image v{iv} A, job {jobs[k]})"}
-    (H / f"{b}.v1.call.json").write_text(json.dumps(c, indent=1, ensure_ascii=False)); (H / f"{b}.v1.prompt.txt").write_text(pr)
-    res = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v1.call.json")], capture_output=True, text=True)
+         "note": f"clip v{cv} of this beat (from the confirmed image v{iv} {k[-1]}, job {jobs[k]})"}
+    (H / f"{b}.v{cv}.call.json").write_text(json.dumps(c, indent=1, ensure_ascii=False)); (H / f"{b}.v{cv}.prompt.txt").write_text(pr)
+    res = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v{cv}.call.json")], capture_output=True, text=True)
     print(f"{b} clip: {len(pr)} chars {DUR[b]} s — {'PASS' if res.returncode == 0 else 'FAIL'}"); [print("   ", l) for l in res.stdout.splitlines() if "FAIL" in l]
     fails += res.returncode != 0
 sys.exit(1 if fails else 0)

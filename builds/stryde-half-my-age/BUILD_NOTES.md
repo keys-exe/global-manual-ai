@@ -93,5 +93,5 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
 
 ## 2026-10-01 — Fix round: SC02-SH03 v5, SC02-SH05 v4 (go: "fix those")
 - SH03 (board Fix: "she should not be going down so fast and she should be looking down to know where she is stepping backwards") → one step in the whole clip, she looks down over her shoulder at the step behind her. Agent's look: slow, one step, looking down; by the end only her right hand is on the banister.
-- SH05 (board Fix: "remove the mic at the top") → the top of the frame is written (ceiling and pendant only), boom negatives. The cause was the AUD string naming "a boom microphone just out of frame above the speaker" → system fix V7.83.1 (`AUD-FILM` reworded, `preflight.py` MIC_PRIME, LESSONS L13); this build's SC02 builder uses the new audio line. Agent's look: no mic in frame; "Sleep all right?".
+- SH05 (board Fix: "remove the mic at the top") → the top of the frame is written (ceiling and pendant only), boom negatives. The cause was the AUD string naming "a boom microphone just out of frame above the speaker" → system fix V7.83.2 (`AUD-FILM` reworded, `preflight.py` MIC_PRIME, LESSONS L13); this build's SC02 builder uses the new audio line. Agent's look: no mic in frame; "Sleep all right?".
 - 378 + 252 cr on Kie. Replaced versions on Old. Both To check.
