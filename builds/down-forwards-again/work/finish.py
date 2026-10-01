@@ -50,20 +50,21 @@ def timed_words(hook, hook_wav, body_wav):
 def cards(ws):
     """2-4 words a card (user 2026-10-01: "the caption should not be one word only use the safezone"),
     broken at punctuation or a pause; a lone word joins its neighbour when they run together."""
-    cs, cur = [], []
+    phrases, cur = [], []                      # phrases end at punctuation or a pause
     for k, w in enumerate(ws):
         cur.append(w)
         gap = ws[k + 1][0] - w[1] if k + 1 < len(ws) else 9
-        if len(cur) == MAXW or (len(cur) >= 2 and re.search(r"[.,?!;:]$", w[2])) or gap > 0.35:
-            cs.append(cur); cur = []
-    if cur: cs.append(cur)
+        if re.search(r"[.,?!;:]$", w[2]) or gap > 0.35:
+            phrases.append(cur); cur = []
+    if cur: phrases.append(cur)
     out = []
-    for c in cs:   # a one-word card joins the card before it when there is room and no real pause between them
-        if out and (len(c) == 1 or len(out[-1]) == 1) and len(out[-1]) + len(c) <= MAXW and c[0][0] - out[-1][-1][1] <= 0.35 \
-                and not re.search(r"[.?!]$", out[-1][-1][2]):
-            out[-1] = out[-1] + c
-        else:
-            out.append(c)
+    for ph in phrases:
+        if len(ph) == 1 and out and len(out[-1]) < MAXW and not re.search(r"[.?!]$", out[-1][-1][2]) \
+                and ph[0][0] - out[-1][-1][1] <= 0.35:
+            out[-1] = out[-1] + ph; continue      # a lone word joins its phrase before, inside one sentence
+        k = -(-len(ph) // MAXW); q, r = divmod(len(ph), k); i = 0
+        for j in range(k):                        # balanced: 5 words -> 3 + 2, never 4 + 1
+            n = q + (1 if j < r else 0); out.append(ph[i:i + n]); i += n
     timed = []
     for i, c in enumerate(out):
         end = out[i + 1][0][0] if i + 1 < len(out) else c[-1][1] + 0.3
@@ -72,12 +73,12 @@ def cards(ws):
     return timed
 
 def wrap(text, font, d):
-    words, lines = text.split(), [""]
-    for w in words:
-        t = (lines[-1] + " " + w).strip()
-        if lines[-1] and d.textlength(t, font=font) > SAFE_W - 2 * PAD_X: lines.append(w)
-        else: lines[-1] = t
-    return lines
+    """One line when it fits; else the two-line split with the most even widths."""
+    ws, room = text.split(), SAFE_W - 2 * PAD_X
+    if d.textlength(text, font=font) <= room: return [text]
+    best = min(((" ".join(ws[:i]), " ".join(ws[i:])) for i in range(1, len(ws))),
+               key=lambda l: max(d.textlength(x, font=font) for x in l))
+    return list(best)
 
 def render_card(text, path, font):
     """Centred in the 9:16 safe zone: clear of the top 14 %, the bottom 25 % (caption/CTA UI) and the right-side
