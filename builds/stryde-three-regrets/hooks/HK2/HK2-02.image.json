@@ -2,15 +2,19 @@
  "beat": "HK2-02",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": the same silver laptop, wooden desk, closed black stryde box, brick wall and soft window light from the left as Image 1, copied exactly.\nNew camera: the room is empty, only the objects. The camera is in front of the open laptop, eye level with the screen, close — the screen faces the lens straight on and fills about two thirds of the frame width, its top edge level, the keyboard edge at the bottom of the frame. The screen is lit, plain blank white from edge to edge. To the right of the laptop, part of the closed black box lies on the desk, its lowercase grey stryde wordmark on the lid. Behind, the brick wall soft and out of focus.\nIn frame: the laptop and the one closed box; every other surface bare; the laptop, packaging and walls plain — no lettering, logos or labels except the box's own wordmark.",
+ "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": the same workroom, wooden desk, silver laptop and closed black stryde box as Image 1 — her grey hair tied back and rust-orange needlecord overshirt from behind as Image 2, brick wall, soft window light from the left.\nNew camera angle: over her RIGHT shoulder, higher and closer, looking down at the open laptop at about 40 degrees. Her right shoulder and the back of her head soft at the right edge; the screen large in the middle of the frame, turned slightly toward the lens, lit and plain blank white from edge to edge. Her right hand rests on the trackpad, her left hand on the keyboard. The closed black box on the desk to the right of the laptop, its lowercase grey stryde wordmark on the lid.\nIn frame: her back, shoulder and hands, the laptop, the one closed box; every other surface bare. Clothing, packaging and walls plain — no lettering, logos or labels except the box's own wordmark; five fingers on each hand.",
  "script_line": "Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.",
  "face": false,
  "room": true,
  "product": false,
- "body": false,
+ "body": true,
  "refs": [
   {
-   "label": "HK2-01 v11 (laptop, desk, box, room)",
+   "label": "HK2-01 v11 (her, room, laptop, box)",
+   "kind": "plate"
+  },
+  {
+   "label": "TH-HK2 v15 (her overshirt, hair, room)",
    "kind": "plate"
   }
  ],
@@ -26,6 +30,6 @@
   "nano_banana_pro"
  ],
  "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro); run on Kie (Higgsfield queue stalled today); screen text warped in afterwards",
- "motion_plan": "From this frame: the three tall bars rise one after another on the screen; the camera holds with a slight breath sway.",
- "fix_note": "don't show the woman, show the screen of the laptop that shows a bar chart that shows the three things come up more than anything else"
+ "motion_plan": "From this frame: her fingers slide up the trackpad and the letter scrolls up with them; the camera holds (the letter composited, word for word).",
+ "fix_note": "change camera angle"
 }
