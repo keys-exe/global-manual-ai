@@ -61,7 +61,7 @@ R("HK-02a", A, (3, 4), "daughter", "hook — the witness", "C2", "L-N-STAIRS", "
   "MCU from the landing looking down the flight: C2 near the top, a hand on the rail, looking up after her mother, a little out of breath",
   "one last step up and a look up", "one step, about a second", "stairs: camera at the top, subject coming up, 1 step", "absent", "—",
   "high", FR, "clean", "MCU", "high = from N's place at the top: she's arrived first", "eyes", "medium", *STAIR_PM, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
-R("HK-03a", A, (5, 5), "Mama", "hook — the line", "N + C2", "L-N-LANDING", "N-D4",
+R("HK-03a", A, (5, 5), "Mama", "hook — the line (edit of P0: the top of the flight, HT17)", "N + C2", "L-N-STAIRS (landing)", "N-D4",
   "MEDIUM on the landing: N at the top turning back with a small knowing smile, C2 arriving on the last step looking at her, mouth open mid-word",
   "N turns her head back to her daughter", "one turn, about a second", "none", "worn (under the dress)", "HIDDEN",
   "eye", TQ, "clean", "MEDIUM", "", "eyes", "deep", "landing window, south wall", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
@@ -76,7 +76,7 @@ R("P-01b", A, (7, 7), "step", "problem", "N feet", "L-N-STAIRS", "N-D1",
   "CU from the side at step height: her slipper lowers onto the next step down, the other foot joins it on the same step",
   "one foot down, the other joins", "about two seconds", "stairs: feet only, side", "absent", "—",
   "ground", PR, "clean", "CU", "ground = the steps themselves", "foreground", "medium", *STAIR_AM, "morning", "problem: grey", False, "MUS-EXPOSE")
-R("P-02a", A, (8, 10), "down", "problem", "N", "L-N-LANDING", "N-D1",
+R("P-02a", A, (8, 10), "down", "problem (edit of P0: the top of the flight, HT17)", "N", "L-N-STAIRS (landing)", "N-D1",
   "MEDIUM from the landing: N sitting on the top step in her house dress, looking down the flight, one hand on the newel, not going",
   "she looks down the stairs and looks away", "one turn of the head, about two seconds", "none", "absent", "—",
   "eye", TQ, "through", "MEDIUM", "through the balusters = trapped up here", "eyes", "deep", *STAIR_AM, "morning", "problem: grey", True, "MUS-EXPOSE")
