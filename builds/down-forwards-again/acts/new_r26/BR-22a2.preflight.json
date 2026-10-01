@@ -1,0 +1,37 @@
+{
+ "beat": "BR-22a2",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Sixty days, and you keep the straps.\": keep this room (Image 1) exactly as it is and show her two Stryde straps, kept, resting side by side on the wide arm of the mustard armchair. Close on the armchair arm, the camera at the height of the arm, three-quarter front, a soft window light from the left. The two straps are each the strap in Image 2, copied exactly: same rigid moulded W-topped shell, black knit band closed in one loop, slides and wordmark, nothing redesigned. They lie flat with the shells facing up and the wordmarks readable, the soft bands curled loosely beside them. True size: each shell is 12 by 5 cm; together the two straps span about half the frame width. The armchair arm and the two straps are in sharp focus; the room behind falls soft. Every other surface bare.\n\nAvoid: no hands, no buckles, no third strap, no text.",
+ "script_line": "Sixty days, and you keep the straps.",
+ "face": false,
+ "room": true,
+ "product": true,
+ "body": false,
+ "refs": [
+  {
+   "label": "P1-P-FRONTROOM v2 (the front room plate)",
+   "kind": "location"
+  },
+  {
+   "label": "front.webp",
+   "kind": "product"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "d0eeaf2a-abad-4a79-a9da-624c5eef41a1",
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP05",
+  "FP09",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": "build step-2 lock (§18A): this card's images run on nano_banana_pro, one render — no Sunburst switch on a running build"
+}
