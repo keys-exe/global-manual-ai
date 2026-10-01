@@ -377,3 +377,4 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Hooks: their doctor-only openings are the doctor's own intro/close and the hook cuts are confirmed — not changed.
 - Captions: centre moved 0.70 → 0.79 of the height (clear of the strap at knee height); re-render after the new B-roll videos land.
 - Next: user checks BR-03b / BR-18 / BR-21 images → Kling videos (§35A) → user checks → body re-cut with the new rows → finals re-rendered.
+- ~15:25 UTC: user "i want a broll there not th" → BR-03b video v1 made on Kling from the knee-photo image (24 credits); then the user: "i dont want to re use broll … i want anatomy here". BR-03b image v2 = new anatomy (nano_banana_pro, style of MECH-03a, three-quarter front: the tendon band lit, a glass thumb outline laid across it) — To check. Image v1 + the unused Kling clip moved to Old 2.

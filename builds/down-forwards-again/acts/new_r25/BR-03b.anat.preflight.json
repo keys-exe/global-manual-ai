@@ -1,0 +1,29 @@
+{
+ "beat": "BR-03b",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"there is a band of tendon about as wide as your thumb.\": a new picture in the exact style of Image 1 — the same premium 3D anatomical model, colours, faint glass-like skin shell, near-black blue-tinted background and light — seen from a low three-quarter front angle, close on one left knee that fills most of the frame. In the centre is the patellar tendon: the short, flat band running from the bottom of the round kneecap down to the bump at the top of the shin bone, glowing soft warm red along its whole length. Laid crosswise over that band is a ghostly, translucent glass outline of one adult thumb, exactly as wide as the band, so the band reads as thumb-width. The kneecap above stays plain ivory like the other bones; the muscles stay natural red and semi-transparent.\n\nAvoid: no hand beyond the one thumb outline, no red on the kneecap, no text or labels.",
+ "script_line": "there is a band of tendon about as wide as your thumb.",
+ "face": false,
+ "room": false,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "MECH-03a confirmed image (style)",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT11",
+  "HT12",
+  "HT13"
+ ],
+ "anatomy": true,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ]
+}
