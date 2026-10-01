@@ -81,7 +81,7 @@ def main():
     total = duration(joined)
     lines += [f"file '{blank.resolve()}'", f"duration {max(total - t, 0.05):.3f}", f"file '{blank.resolve()}'"]
     (work / "caps.txt").write_text("\n".join(lines) + "\n")
-    bgm = B / f"edit/music/BGM-{hook}.wav"
+    bgm = B / f"edit/music/v2/BGM-{hook}.wav"   # music v2 (user 2026-10-01: investigation, lifts when the product shows, not sad)
     vo_db = speech_db(joined); mus_db = speech_db(bgm)
     gain = vo_db - 18 - mus_db
     fade_st = max(total - 2.0, 0)

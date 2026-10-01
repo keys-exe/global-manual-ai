@@ -344,4 +344,15 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   where it is, keep the prompt short, and don't repeat the wrong structure in negatives.
 - **2026-10-01 ~12:35 UTC: user "generate the video".** BR-10c image v7 confirmed → video v4 on the Kling connector (`acts/build_r24_videos.py`,
   §35A, 575 chars, kneecap named once; `kling-video-v3_0`, 3 s, silent, 24 credits) → To check.
+- **2026-10-01 ~12:40–13:05 UTC: the edit + music v2.** User "confirm proceed, use the latest bgm update" (BR-10c v4 confirmed; every B-roll
+  confirmed). Layouts: the user picked the current rule over the act map's EDIT-DFA — full screen by default, a 60/40 split on five mechanism
+  shots (MECH-01/03/05/14, BR-20), never two in a row. Body cut (`work/body_edit.py` → `assemble.py`): no key-word anchors (they cut late);
+  four rows merged for FLASH (<2 s lines: BR-05b, BR-09b, BR-10b, BR-16a2 — the doctor on camera there; the clips stay in the B-roll bank);
+  PASS, 148.4 s, matches the VO, no black frames (`edit/body/BODY.rough.mp4`, 123 MB, not in git).
+  User then: "i want a new one investigation and change when the product shows not a sad" → music v2 (`work/music_v2.py`,
+  `work/bgm_mix_v2.py`): an investigation groove (ticking hi-hat, low kick, pizzicato, muted synth arpeggio, ~100 BPM, curious, never sad) up
+  to "This does.", then the same groove lifts into a bright major key, confident, to the end. Body in two parts split on the turn word; BODY_A
+  recomposed longer (TURN + 12 s) so the HK1/HK3 beds reach the turn with no gap. Check: ~99 BPM, no vocals, the lift 4 dB up. v1 music on Old 2;
+  MUS-HK1/2/3 and MUS-BODY v2 To check; PREVIEW-HK1 retired to Old 2 (the finished videos replace it). Finished videos: `work/finish.py`
+  (hook cut + body cut, one-word captions EG01, v2 bed ~18 dB under the voice, ducked, −14 LUFS) → `edit/final/FINAL-HK<n>.mp4`.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

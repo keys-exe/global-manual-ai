@@ -1,0 +1,60 @@
+{
+ "scene": "MUS2-BODY-B",
+ "length_s": 85.2,
+ "theme": [
+  "the same groove and instruments as the investigation, now in a bright major key",
+  "confident, positive, hopeful forward momentum",
+  "the mystery is solved",
+  "tight hi-hat pulse, punchy low kick, pizzicato and arpeggio now bright and open, a warm pad underneath",
+  "instrumental, sits under a speaking voice"
+ ],
+ "avoid": [
+  "sad",
+  "melancholic",
+  "mournful",
+  "slow sad piano",
+  "somber strings",
+  "cello lament",
+  "minor-key ballad",
+  "horror",
+  "dark ambient drone",
+  "vocals",
+  "lyrics",
+  "humming",
+  "EDM drop",
+  "big trailer hits",
+  "busy melody",
+  "cute",
+  "ukulele",
+  "whistling",
+  "corporate jingle",
+  "silence",
+  "fade out"
+ ],
+ "tempo": "moderate",
+ "bpm": 100,
+ "sections": [
+  {
+   "name": "The reveal",
+   "start": 0,
+   "end": 22.94,
+   "energy": "high",
+   "styles": [
+    "opens straight into the bright major-key groove on the first beat",
+    "a satisfying confident reveal",
+    "the groove keeps going to the very last second, never stops, no pause, no fade"
+   ]
+  },
+  {
+   "name": "Proof and the offer",
+   "start": 22.94,
+   "end": 85.2,
+   "energy": "high",
+   "styles": [
+    "the same bright groove, steady and confident",
+    "positive momentum to the end",
+    "the groove keeps going to the very last second, never stops, no pause, no fade"
+   ]
+  }
+ ]
+}

@@ -233,24 +233,18 @@ A white British man in his mid-fifties, a family doctor from the north of Englan
 
 **Recast 2026-09-28 (user: "USE BRITISH ETNICITY"):** D-DOC v1 (British South Asian) → v2 white British man, 54; v1 kept on the Old board. P was already white British. §34: `VOICE-DOC` and the identity string updated; nothing else built on D yet.
 
-## 5c. Music Register Map (§40A, V7.75.0) — written 2026-10-01 on the user's "USE THE LATEST BGM UPDATE"
+## 5c. Music Register Map (§40A) — v2, 2026-10-01
 
-One music family for the whole video — a low bowed cello and string drone, sparse felt piano and a slow soft heartbeat pulse — that changes mood with the script. It opens like an investigative documentary (suspense, curiosity), goes darker under the failed fixes, lifts at "This does.", turns warm under the proof and ends steady and confident. No cute, cheerful or upbeat music anywhere the script educates, warns or exposes (§40A). Music sits about 18 dB under the voice and ducks ~8 dB more while the doctor speaks; it drops under the price.
+**Music v2** (user 2026-10-01: "i want a new one investigation and change when the product shows not a sad"). One family, never sad: a modern investigative-documentary groove — tight ticking hi-hat pulse, punchy low kick, plucky pizzicato strings, a clean muted synth arpeggio, about 100 BPM — curious and driving. It changes on the product's first appearance: on "This does. It is called Stryde." the same groove lifts into a bright major key, confident and positive, and stays there to the last word. Music sits about 18 dB under the doctor's voice and dips further while he speaks.
 
-| Part | Starts on | What the script is doing | Register | Cue in plain words | Level |
-|---|---|---|---|---|---|
-| Hooks HK1 · HK2 · HK3 | the first word | the callout: a result, a doctor's instruction, a different question — opens the loop | MUS-OPEN | a low drone and a slow heartbeat pulse, one low piano note; rises a step on the second sentence; no tune | low → mid |
-| The patient (0.00–8.89 s of the body) | "A patient of mine" | a patient's story and what her scan does not show — the contradiction | MUS-OPEN | investigative-documentary suspense: low drone, slow heartbeat pulse, sparse felt piano, minor, unresolved | low |
-| The band (8.89–31.92 s of the body) | "Two centimetres below your kneecap" | the education: the band of tendon, seventeen times bodyweight, the self-test, why coming down is worse | MUS-EDU | the same drone with a repeating soft piano figure — curious, leaning in, still minor | low |
-| That is why (31.92–57.00 s of the body) | "That is why she came down backwards" | agitation: backwards on the stairs, three tries at the chair, the list she said no to; 'never how hard she tried' | MUS-EXPOSE | darker and lower: long drones, dissonant intervals, the pulse more present; no warmth | mid |
-| What has been tried (57.00–67.07 s of the body) | "A sleeve squeezes the whole knee" | the failed fixes: sleeve, hinged brace, gel — 'none of them move the load' | MUS-EXPOSE | darker and lower: long drones, dissonant intervals, the pulse more present; no warmth | mid |
-| This does (67.07–90.01 s of the body) | "This does." | the turn: 'This does. It is called Stryde.' — where it sits, the pad, the placement | MUS-TURN | the release: the drone lifts into the first warm chord, the pulse starts to move, a new key | high |
-| Proof (90.01–129.75 s of the body) | "Thirty four percent less strain" | proof: 34% less strain, surgeons, 200,000 people, the stairs test, the two identical scans | MUS-AFTER | warm and hopeful: strings and piano moving forward, dignified, never jingly | high |
-| Move the load (129.75–134.40 s of the body) | "You cannot strengthen your way out" | the conclusion: you cannot strengthen your way out of a load problem | MUS-OFFER | confident steady pulse, a little fuller; thinner under the price; resolves on a held chord | high |
-| The offer (134.40–145.12 s of the body) | "Two for one" | the offer: two for one, sixty days, the Stryde site, the copies warning | MUS-OFFER | confident steady pulse, a little fuller; thinner under the price; resolves on a held chord | mid |
-| Go and do your stairs (145.12–148.27 s of the body) | "Nothing to lose but the pain" | the close: nothing to lose but the pain | MUS-OFFER | confident steady pulse, a little fuller; thinner under the price; resolves on a held chord | high |
+| Part | Starts on | What the script is doing | Register | Music |
+|---|---|---|---|---|
+| Hooks HK1 · HK2 · HK3 | the first word | the callout — a result, a doctor's instruction, a different question | MUS-OPEN | the investigation groove from the first second, an intriguing hook |
+| Act 1 — the patient, the band | "A patient of mine" | the case and the education | MUS-OPEN / MUS-EDU | the same groove, curious |
+| Act 2 + the failed fixes | "That is why she came down backwards" | the evidence: backwards, the chair, the list; sleeve, brace, gel | MUS-EXPOSE | the same groove with a touch more drive — never mournful |
+| The reveal → the end | "This does. It is called Stryde." | the product, where it sits, the proof, the offer, the close | MUS-TURN → AFTER → OFFER | the groove lifts into a bright major key: confident, positive, steady to the last word |
 
-Cues: `edit/music/<HK1|HK2|HK3|BODY_A|BODY_B|BODY_C>.cue.json` (built by `work/music_map.py`), composed with `music.py compose` (ElevenLabs Music); beds mixed by `work/bgm_mix.py` → `edit/music/BGM-HK<n>.wav` (one per hook variant: the hook's cue, then the body), preview with the VO by `work/bgm_preview.py`. On the board: MUS-HK1/2/3, MUS-BODY, PREVIEW-HK1 (To check); `docs/music` on Plan and Current.
+Cues: `edit/music/v2/*.cue.json` (`work/music_v2.py`); beds `edit/music/v2/BGM-HK<n>.wav` (`work/bgm_mix_v2.py`). v1 (cello drone, felt piano — read as sad) is on Old 2.
 
 ## Flags (decisions for the user — nothing below was changed silently)
 

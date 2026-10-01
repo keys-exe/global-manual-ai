@@ -1,0 +1,59 @@
+{
+  "positive_global_styles": [
+    "the same groove and instruments as the investigation, now in a bright major key",
+    "confident, positive, hopeful forward momentum",
+    "the mystery is solved",
+    "tight hi-hat pulse, punchy low kick, pizzicato and arpeggio now bright and open, a warm pad underneath",
+    "instrumental, sits under a speaking voice",
+    "instrumental",
+    "100 BPM"
+  ],
+  "negative_global_styles": [
+    "sad",
+    "melancholic",
+    "mournful",
+    "slow sad piano",
+    "somber strings",
+    "cello lament",
+    "minor-key ballad",
+    "horror",
+    "dark ambient drone",
+    "vocals",
+    "lyrics",
+    "humming",
+    "EDM drop",
+    "big trailer hits",
+    "busy melody",
+    "cute",
+    "ukulele",
+    "whistling",
+    "corporate jingle",
+    "silence",
+    "fade out",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The reveal",
+      "positive_local_styles": [
+        "opens straight into the bright major-key groove on the first beat",
+        "a satisfying confident reveal",
+        "the groove keeps going to the very last second, never stops, no pause, no fade"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 22940,
+      "lines": []
+    },
+    {
+      "section_name": "Proof and the offer",
+      "positive_local_styles": [
+        "the same bright groove, steady and confident",
+        "positive momentum to the end",
+        "the groove keeps going to the very last second, never stops, no pause, no fade"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 64260,
+      "lines": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+ "scene": "MUS2-BODY-A",
+ "length_s": 79.07,
+ "theme": [
+  "modern investigative documentary underscore, like a smart true-crime explainer",
+  "curious and intriguing, NOT sad",
+  "driving detective groove at a steady moderate tempo",
+  "tight ticking hi-hat pulse and a punchy low kick",
+  "plucky pizzicato strings and a clean muted synth arpeggio",
+  "one consistent groove, instrumentation from start to end",
+  "instrumental, sits under a speaking voice"
+ ],
+ "avoid": [
+  "sad",
+  "melancholic",
+  "mournful",
+  "slow sad piano",
+  "somber strings",
+  "cello lament",
+  "minor-key ballad",
+  "horror",
+  "dark ambient drone",
+  "vocals",
+  "lyrics",
+  "humming",
+  "EDM drop",
+  "big trailer hits",
+  "busy melody",
+  "cute",
+  "ukulele",
+  "whistling",
+  "corporate jingle",
+  "silence",
+  "fade out"
+ ],
+ "tempo": "moderate",
+ "bpm": 100,
+ "sections": [
+  {
+   "name": "The case",
+   "start": 0,
+   "end": 31.92,
+   "energy": "mid",
+   "styles": [
+    "the groove at full pulse from the first second",
+    "curious, the evidence piling up",
+    "the groove keeps going to the very last second, never stops, no pause, no fade"
+   ]
+  },
+  {
+   "name": "The evidence",
+   "start": 31.92,
+   "end": 79.07,
+   "energy": "mid",
+   "styles": [
+    "the same groove, a touch more tension and drive",
+    "still confident, never sad",
+    "the groove keeps going to the very last second, never stops, no pause, no fade"
+   ]
+  }
+ ]
+}

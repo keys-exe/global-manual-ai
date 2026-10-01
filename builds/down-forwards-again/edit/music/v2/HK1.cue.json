@@ -1,0 +1,51 @@
+{
+ "scene": "MUS2-HK1",
+ "length_s": 16.2,
+ "theme": [
+  "modern investigative documentary underscore, like a smart true-crime explainer",
+  "curious and intriguing, NOT sad",
+  "driving detective groove at a steady moderate tempo",
+  "tight ticking hi-hat pulse and a punchy low kick",
+  "plucky pizzicato strings and a clean muted synth arpeggio",
+  "one consistent groove, instrumentation from start to end",
+  "instrumental, sits under a speaking voice"
+ ],
+ "avoid": [
+  "sad",
+  "melancholic",
+  "mournful",
+  "slow sad piano",
+  "somber strings",
+  "cello lament",
+  "minor-key ballad",
+  "horror",
+  "dark ambient drone",
+  "vocals",
+  "lyrics",
+  "humming",
+  "EDM drop",
+  "big trailer hits",
+  "busy melody",
+  "cute",
+  "ukulele",
+  "whistling",
+  "corporate jingle",
+  "silence",
+  "fade out"
+ ],
+ "tempo": "moderate",
+ "bpm": 100,
+ "sections": [
+  {
+   "name": "The question",
+   "start": 0,
+   "end": 16.2,
+   "energy": "mid",
+   "styles": [
+    "the groove starts immediately at full pulse from the first second",
+    "an intriguing hook",
+    "the groove keeps going to the very last second, never stops, no pause, no fade"
+   ]
+  }
+ ]
+}
