@@ -396,3 +396,12 @@ Waiting on: picks or Fix notes on P-01b v11/v12, P-05b v7/v8; Confirm or Fix on 
 - Balances: Higgsfield 7814.15 · Kling 40633.
 
 Waiting on: Confirm or Fix on the clip P-01a v5; picks or Fix notes on P-01b v11/v12, P-05b v7/v8; Confirm or Fix on the clips P-02a v3, P-05c v1, P-03a v2, P-03b v1.
+
+## 2026-10-01 — 20:21 UTC hourly Fix check
+
+- **P-03a** image Fix "THE BRACE SHOULD BE IN SHOULD ONE KNEE" (the v7 A frame's lower cuff sat behind the near shin and read as a brace across both legs) → v9/v10 (A/B): an edit of that confirmed frame changing only the brace — one short hinged brace on her right leg alone, both cuffs on that leg, the left leg bare and apart. To check. v7 A → **Old 2** (`185b07ce…`); the clip v2 made from it → Old 2 (`4fe78942…`), archived; the card waits for the new pick (status `ready`). **P-03b was made as an edit of the old P-03a frame (FP14)** — it is confirmed and untouched; if the user wants it to match the new P-03a brace, that is their call.
+- **P-05c** clip Fix "NO TALKING ABOUT THE MUSIC" (the face strip at 6 fps shows her mouth opening as if singing along, although the prompt carried the mouth-closed clause at its end) → clip v2 (3 s, 24 cr): the lips clause first and strongest — lips sealed, jaw still, a silent clip, only the eyes move. Checked at 6 fps: lips closed first frame to last. To check. v1 → Old 2 (`6c1e2f26…`).
+- `fix_patterns.py` on Current + Old + Old 2: two repeats written as rules — the mouth moved on three beats with the clause late in the prompt (HT25: the lips clause leads the prompt on any face-visible shot, V7.85.2); the team has dropped every pinned end frame on this build (hooks, P-01a) → `products/stryde/fix_patterns.md` FP15.
+- Balances: Higgsfield 7706.15 · Kling 40579.
+
+Waiting on: picks on P-03a v9/v10, P-01b v11/v12, P-05b v7/v8; Confirm or Fix on the clips P-01a v5, P-02a v3, P-05c v2, P-03b v1.

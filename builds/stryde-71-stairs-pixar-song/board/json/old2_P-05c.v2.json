@@ -1,0 +1,70 @@
+{
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Hook 1",
+ "stage": "broll",
+ "beat": "P-05c",
+ "title": "low — her face, sat back (user 2026-10-01: three B-rolls)",
+ "line": "Nothing gave me my life back.",
+ "location": "L-N-KITCHEN",
+ "shot": "eye · profile · clean · MEDIUM",
+ "angle": "eye · profile · clean · MEDIUM — profile at the window = the life outside she is not in",
+ "framing": "MEDIUM at the kitchen window: N in profile at the sink, both hands on its edge, looking out of the window at the street, the light on her face (a different kind of B-roll with her cast sheet — user Fix 2026-10-01: 'wrong person, a different type of broll')",
+ "motionPlan": "From this frame: she looks out, then her eyes drop to the sink — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "body": 1,
+ "imagePrompt": "For the line \"Nothing gave me my life back.\": Keep this photo exactly as it is — the kitchen, the sink under the window, the lace curtain, the counter, the light — in close at the window from the side, a tall 9:16 crop, and add the woman. Image 1 is the kitchen. Image 2 is the woman.\nMedium shot from the side at eye level, sharp on her face. The same woman as Image 2, seventy-one, standing at the sink in profile, both hands on its edge, looking out of the window at the street beyond, eyes on it, mouth closed; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman in profile, the sink and window of Image 1, the counter; every other surface bare. Two hands placed, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window on her face, a catchlight in her eye. Clothing and counter plain — no lettering, logos or labels; no second person.",
+ "imageModel": "nano_banana_pro → logged nano_banana_2",
+ "imageConnector": "Higgsfield",
+ "imageRes": 4978228,
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "kind": "character",
+   "label": "N-NARR sheet v2",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  }
+ ],
+ "flow": [
+  "image",
+  "video"
+ ],
+ "status": "regenerate",
+ "imageStatus": "confirmed",
+ "imageAsset": "f360966ae0b85a56e219fbdadad90245",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194106_5b40a12a-24f5-4d12-8650-016a8b0384ae.png",
+ "videoVersions": [
+  {
+   "asset": "6c1e2f2609c9efc46b367a24f47cfc0d",
+   "at": 1790885353161,
+   "connector": "Kling",
+   "credits": 24,
+   "duration": 3.04,
+   "fromImage": 5,
+   "job": "AZUzqJCPjDcOqRUlX3t0yB9XuRGkrza5_A1Eu3ajFneGWtNvb0uBSLa1CntOwsmq1q2-HZR3",
+   "model": "kling-video-v3_0",
+   "note": "from the picked image v5 A (job 5b40a12a) · what I see: at the window in profile she looks out, then her eyes drop to the sink and her shoulders settle; mouth closed; the window and curtain stay put · replaced on the user's Fix (NO TALKING ABOUT THE MUSIC — her mouth moved); kept on Old versions 2",
+   "res": "1072×1928",
+   "size": 2508200,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/30c5177c-b9c5-48fd-9a99-efe24b2f404f-oynn9rOC9-e4vnKHM7Ph1A-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  }
+ ],
+ "videoAsset": "6c1e2f2609c9efc46b367a24f47cfc0d",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/30c5177c-b9c5-48fd-9a99-efe24b2f404f-oynn9rOC9-e4vnKHM7Ph1A-output.mp4?x-kcdn-pid=112372",
+ "credits": 24,
+ "duration": 3.04,
+ "videoConnector": "Kling",
+ "model": "kling-video-v3_0",
+ "prompt": "For the line \"Nothing gave me my life back.\": From this frame: she looks out, then her eyes drop to the sink — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. At the window in profile, she looks out a moment longer, then her eyes drop to the sink and her shoulders settle; her hands stay on the sink's edge, her mouth closed the whole time — she never speaks or sings; the window, the curtain and the kitchen stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never turns to the lens.",
+ "fault": "user 2026-10-01: NO TALKING ABOUT THE MUSIC",
+ "note": "Old versions 2 (overflow board): P-05c clip v1 — her mouth opened as if singing along; replaced by v2. The image versions are on the first Old board.",
+ "updatedAt": 1790886305163
+}

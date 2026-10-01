@@ -32,6 +32,8 @@ FIXN = {"P-03a": "the image was replaced on the user's Fix (a shorter brace, sea
         "P-01b": "user Fix: this should be stepping backwards → each foot moves down and away from the top, toes up the stairs, the feet never climb; nobody speaks (§35A rule 6)",
         "P-02a": "user: never talk the lyrics/script in B-roll → mouth closed, lips still, she never speaks or sings (§35A rule 6, HT25)",
         "P-05a_old": "user: make this into 3 brolls (the beat split; this clip re-cut to its own line) · §22X on v1: the heap vanished and her mouth moved → prompt: every object stays on the table to the last frame, mouth closed, she never speaks"}
+MOTION["P-05c_v2"] = "Her lips stay sealed and her jaw still from the first frame to the last — a silent clip, she never speaks or sings; at the window in profile she looks out a moment longer, then only her eyes drop to the sink and her shoulders settle; her hands stay on the sink's edge; the window, the curtain and the kitchen stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she stays in profile."
+FIXN["P-05c"] = "user Fix on v1: NO TALKING ABOUT THE MUSIC (her mouth opened and moved as if singing along) → the lips clause first and strongest: lips sealed, jaw still, a silent clip; only the eyes move (§22X, §35A rule 6)"
 # every Fix note ever written on a beat stays in force for every later version (L18): the call lists them all
 FIXALL = {"P-01a": ["v1: SHOULD NOT BE STEPPING SO FAR DOWN, IT SHOULD BE 1 STEP AT A TIME", "v2: SHOULD BE GOING BACK WARDS NOT UP", "v3: (never shown — climbed)", "v4: P01 SHOULD BE WALKING BACKWARDS SLOWLY ONE STEP AT A TIME NOT SKIPPING STEPS OF THE STAIRS"]}
 fails = 0
@@ -39,7 +41,7 @@ for arg in sys.argv[1:]:
     parts = arg.split(":"); b, iv = parts[0], parts[1]; k = parts[2] if len(parts) > 2 else f"{b}@v2A"; cv = int(parts[3]) if len(parts) > 3 else 1; r = rows[b]
     if b == "P-05a": DUR[b] = r["duration"]
     mp = f"From this frame: {r['action']} — {r['pace']}; camera {r['camera']}"
-    mo = MOTION["P-01a_v5"] if (b == "P-01a" and cv >= 5) else MOTION["P-01a_v4"] if (b == "P-01a" and cv >= 4) else MOTION["P-01a_v3"] if (b == "P-01a" and cv >= 3) else MOTION[b]
+    mo = MOTION["P-05c_v2"] if (b == "P-05c" and cv >= 2) else MOTION["P-01a_v5"] if (b == "P-01a" and cv >= 5) else MOTION["P-01a_v4"] if (b == "P-01a" and cv >= 4) else MOTION["P-01a_v3"] if (b == "P-01a" and cv >= 3) else MOTION[b]
     if b == "P-01a" and cv >= 4: DUR[b] = 4
     if b == "P-01a" and cv >= 5: DUR[b] = 5
     pr = f'For the line "{r["line"]}": {mp}. {mo}'
