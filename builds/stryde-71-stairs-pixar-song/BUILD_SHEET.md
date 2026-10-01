@@ -126,7 +126,7 @@ Conflicts are listed in **Flags**. **Confirm or correct the absorption along wit
 | VN01 | doc line 3 | "The Black American Woman script, sung word for word." | whole build | the song is the voice master; captions from `work/lyrics.txt`; §22U verbatim satisfied by the song itself (F4: one word to listen for) | verified (transcript) |
 | VN02 | doc line 3 | "Suno custom mode." | whole build | information — the song is supplied, nothing to generate | verified |
 | VN03 | doc line 3 | "Visuals: editor's call" | whole build | the pictures are mine to derive: Part 2 structure map + Part 6 beat-it plan, Mode 2 lock | open → step 5 |
-| VN04 | doc line 3 | "but same Afro American Black Woman and entourage" | whole build | the Mode 1 build's cast (N, C1 Loretta, C2 the daughter) recast in Pixar — same faces, markers, ages, wardrobe register (step 3 below); US settings as in `stryde-71-stairs` (family-photo staircase, reception, kitchen table, checkout line, church steps) | open → steps 3–5 |
+| VN04 | doc line 3 | "but same Afro American Black Woman and entourage" | whole build | read as the same **roles** (a Black American woman of 71, her cousin Loretta, her daughter) — the user asked for **new** faces on 2026-10-01 ("i want new ones"), so the v1 recast of the Mode 1 cast is retired and v2 are new people; US settings as in `stryde-71-stairs` (family-photo staircase, reception, kitchen table, checkout line, church steps) | open → steps 3–5 |
 | VN05 | doc line 2 | `Reference:` the Meta Ad Library link = the original 71 Stairs ad (the mp4 in the folder) | whole build | Part 1–3 absorption | verified |
 
 ### Phrase inventory (§27B) — with the song's times; dispositions are assigned at step 5
@@ -203,40 +203,43 @@ Held in the Product Sheet register (user-confirmed V7.49.29): three years with o
 
 ---
 
-## 3. Cast (step 3) — generated, on the board for your check
+## 3. Cast (step 3) — v2, generated, on the board for your check
 
-Everyone with two or more beats gets a sheet — the same three people as the Mode 1 build (VN04): **N** the narrator (every act), **C1 Loretta** (reception, door, table, reveal, stairs coaching), **C2 the daughter** (the hook). One-offs (the grandbaby bride, Loretta's husband, the niece, the sports doctor, the surgeon, N's husband, N's sister, the church ladies, the montage wearers, the younger women she passes) are cast at step 5 per §13.
+**Fix round 1 (user, 2026-10-01: "i want new ones and loretta should not be too thin they should be the same size as the narrator").** Three new people (§19: with nothing attached every reroll is a new person — and new is what was asked), Loretta written at the narrator's build word for word ("THE SAME SIZE AS THE NARRATOR… never thin, never lean, never tall and willowy"). The v1 sheets (the Mode 1 cast recast) are on the Old board. Everyone with two or more beats gets a sheet: **N** the narrator (every act), **C1 Loretta** (reception, door, table, reveal, stairs coaching), **C2 the daughter** (the hook). One-offs are cast at step 5 per §13.
 
-| Sheet | Job ID | File | Board asset | Board |
-|---|---|---|---|---|
-| N-NARR | `499cdf95-5208-4713-8ac4-4be015410227` | `cast/N-NARR_v1.png` 1536×2752 | `78a2cc62e000bb5dfefe14e6a08f1b45` | To check |
-| C1-LORETTA | `75275110-9d2e-4f4c-b540-88b68b13976a` | `cast/C1-LORETTA_v1.png` 1536×2752 | `dd77d4133059e18e0cbb007008d1688c` | To check |
-| C2-DAUGHTER | `b00b3656-29e8-44f2-8608-82d9dbccfefe` | `cast/C2-DAUGHTER_v1.png` 1536×2752 | `6adbaf4d9d4de57ef5c60fc5ced56f22` | To check |
+| Sheet | v | Job ID | File | Board asset | Board |
+|---|---|---|---|---|---|
+| N-NARR | v2 | `32b8bfc2-4538-4c28-b485-3fd28fc5d489` | `cast/N-NARR_v2.png` 1536×2752 | `21896d82f1800c80027bc2c76705c31c` | To check |
+| C1-LORETTA | v2 | `fce3f6cb-9ef5-47b5-996b-f9c62e893bc8` | `cast/C1-LORETTA_v2.png` 1536×2752 | `f0d9e11e33a341d2260a173e49eff071` | To check |
+| C2-DAUGHTER | v2 | `d7028142-0650-4c2e-9c6e-080e28f4edf4` | `cast/C2-DAUGHTER_v2.png` 1536×2752 | `fda069ae35950e7a573035855140337b` | To check |
+| N-NARR | v1 | `499cdf95-5208-4713-8ac4-4be015410227` | `cast/N-NARR_v1.png` | Old `a86adc7f268e060772ffdc12da800900` | replaced |
+| C1-LORETTA | v1 | `75275110-9d2e-4f4c-b540-88b68b13976a` | `cast/C1-LORETTA_v1.png` | Old `f0b774bc2cfc1e03f29b621f6b0a446b` | replaced |
+| C2-DAUGHTER | v1 | `b00b3656-29e8-44f2-8608-82d9dbccfefe` | `cast/C2-DAUGHTER_v1.png` | Old `3128f425a117edf0f9ce9366c664fc2a` | replaced |
 
-Manual run: the sheets are **not checked by me** (§18B step 3) — Confirm or Fix each on the board. Prompts: `cast/<ID>.prompt.txt`, built from Appendix A by ID in `cast/build_sheets.py` — the **Mode 2 sheet form (F10)**: a render opening in place of `CAM-LOCK` → `SHEET-GRID` verbatim → `AVATAR-SHEET`'s sameness / light / room clauses → `PIX-SHAPE` filled → `PIX-EYES` → `PIX-LIGHT` (the window as key) → `CAP-ANIM` → `NEG-SHEET` (minus its two anti-render clauses) + `NEG-GRID` + `NEG-PIX` + `NEG-DEFAULT-FACE`; 9,730–10,106 chars. Spend: 3 jobs × 2 credits (Higgsfield 11,355.4 before).
+Manual run: the sheets are **not checked by me** (§18B step 3) — Confirm or Fix each on the board. Prompts: `cast/<ID>.v2.prompt.txt` (v1 in `cast/v1/`), built from Appendix A by ID in `cast/build_sheets.py` — the **Mode 2 sheet form (F10)**: a render opening in place of `CAM-LOCK` → `SHEET-GRID` verbatim → `AVATAR-SHEET`'s sameness / light / room clauses → `PIX-SHAPE` filled → `PIX-EYES` → `PIX-LIGHT` (the window as key) → `CAP-ANIM` → `NEG-SHEET` (minus its two anti-render clauses) + `NEG-GRID` + `NEG-PIX` + `NEG-DEFAULT-FACE`; v2 adds "NO WRITING ANYWHERE ON THE CANVAS" and a one-side-only marker clause (v1 drew panel titles and mirrored the marker); 9,983–10,326 chars. Spend: 6 jobs × 2 credits so far (Higgsfield 11,355.4 before the cast). Model requested `nano_banana_pro`; Higgsfield logs `nano_banana_2` on every job (§5 routing fault, recorded on the cards).
 
-### Identity strings — read off the renders (§7; descriptions, not verdicts)
+### Identity strings — read off the v2 renders (§7; descriptions, not verdicts)
 
 | ID | Identity string (as rendered) |
 |---|---|
-| N | Pixar-stylized Black American woman, 71, deep brown skin, medium height, soft and full through the hips; round face, full cheeks, heavy-lidded dark eyes, broad nose, full lips; short silver-grey natural crop, fuller on top; **clusters of three small dark raised spots on both cheekbones** (the prompt asked for the left only); coral knit top, open cream cardigan, navy A-line skirt to the knee, black flat slip-ons; warm-white room, beige carpet, window left. **The render carries panel labels (FRONT VIEW…)** — on the board for your call |
-| C1 | Pixar-stylized Black American woman, 74, medium-brown skin, tall and lean, straight-backed; long face, high cheekbones, thin arched silver brows, slight hook to the nose, wide mouth; a pale scar through one eyebrow (reads on the viewer's right in the close-up); a few dark spots on the cheekbones; short silver-white curly crop; plum blouse, khaki shorts above the knee, white canvas slip-ons; butter-yellow wall, oak floor, window right |
-| C2 | Pixar-stylized Black American woman, 46, medium-deep brown skin, medium height, sturdy and broad-shouldered; round face, full cheeks, deep-set eyes, straight brows, broad nose; a small crescent scar on the chin, left of centre; dark box braids in a low ponytail; heather-grey crewneck sweatshirt, dark denim shorts, white trainers; soft grey wall, beige carpet, window left |
+| N | Pixar-stylized Black American woman, 71, deep brown skin, medium height, soft and full through the hips and middle, rounded shoulders; an oval face with full cheeks, wide-set dark eyes under straight level brows, a broad flat-bridged nose, full lower lip; one small dark mole beside the nose at the nostril crease (on the viewer's left in the close-up); short silver-grey twist-out with black at the nape; mustard short-sleeved top, mid-blue denim A-line skirt above the knee, white slip-on canvas shoes; warm-white room, beige carpet, window left; a faint closed-mouth smile in the close-up |
+| C1 | Pixar-stylized Black American woman, 74, medium-brown skin, **the narrator's build** — medium height, soft and full through the hips and middle, rounded full shoulders, a soft double chin; a broad square face with soft full cheeks, hooded eyes under thick arched brows, a short wide nose, a wide mouth; one dark beauty mark beside the corner of her upper lip (on the viewer's right in the close-up); silver-grey chin-length pressed bob, centre-parted, tucked behind the ears; teal three-quarter-sleeve top, khaki shorts above the knee, white canvas slip-ons; butter-yellow wall, oak floor, window right |
+| C2 | Pixar-stylized Black American woman, 46, medium-deep brown skin, medium height, athletic and broad-shouldered; a heart-shaped face with high cheekbones, almond eyes, softly arched brows, a slim straight nose, a small pointed chin; two small dark marks on one cheek below the eye (the prompt asked for one); dark-brown curly hair in one high round afro puff; olive crewneck sweatshirt, black denim shorts, white trainers; pale grey-white room, window left (the floor rendered as a pale hard floor, not the carpet asked for) |
 
-### §19A axis tables (the Mode 1 build's cast, recast — VN04)
+### §19A axis tables (v2)
 
 | Axis | N | C1 | C2 |
 |---|---|---|---|
-| Face | round, heavy-lidded, soft jaw (dominant shape: ROUND; accent: the pointed chin) | long, high cheekbones, square chin (SQUARE; accent: the round crop) | round, full cheeks (ROUND; accent: the braids' straight lines) |
-| Hair | short silver-grey crop | silver-white curly crop | long dark box braids, low ponytail |
+| Face | oval, full cheeks, straight brows (dominant: ROUND; accent: the straight brows) | broad square, soft cheeks, hooded eyes (SQUARE; accent: the round bob) | heart-shaped, pointed chin (TRIANGULAR; accent: the round puff) |
+| Hair | short silver-grey twist-out | silver-grey chin-length pressed bob | dark-brown high afro puff |
 | Age position | 71 | 74 | 46 |
-| Build | medium, full; 5.5 heads, settled posture | tall, lean, upright; 6 heads | medium, sturdy; 6 heads |
-| Class / wardrobe | home, soft cardigan | neat, going-visiting | weekend casual |
-| Marker | dark spots high on the left cheek | scar through the right eyebrow | crescent scar on the chin |
+| Build | medium, full; 5.5 heads, settled posture | **the same as N**: medium, full; 5.5 heads | medium, athletic; 6 heads |
+| Class / wardrobe | home, mustard top and denim skirt | neat, going-visiting, teal and khaki | weekend casual, olive and black |
+| Marker | mole beside the nose | beauty mark above the lip corner | mole under one eye |
 | Voice | the song (sung) | none (quoted in the song) | none |
 | Environment | stairs, landing, kitchen table | reception, front door, table | stairs (hook) |
 
-**Clearance:** N–C1 differ on 7 axes, N–C2 on 7, C1–C2 on 8 ✓. Against the roster: these are **deliberately the `stryde-71-stairs` cast** (VN04 — reuse is opt-in and the brief opts in), carried into Mode 2; against every other build's roster they clear (no shared face architecture). **Mode 2 note:** the Mode 1 wardrobe (trousers) is replaced on the sheets by above-the-knee skirt/shorts so the sheet exposes the placement site (§19, §9D, FP13).
+**Clearance:** N–C1 differ on 6 axes (build now shared by design — the user's call), N–C2 on 7, C1–C2 on 7 ✓. Against the roster (every other build): no shared face architecture, hair, marker or wardrobe register with any locked sheet; v1 (the recast `stryde-71-stairs` faces) is retired to the Old board. **Sheets expose the placement site** (§19, §9D, FP13): above-the-knee skirt/shorts, bare knees, on all three.
 
 ### §20 constraint sheets (what the pictures may do)
 
