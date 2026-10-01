@@ -2,7 +2,7 @@
  "beat": "BR-057",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"Most of those messages end the same way.\": the same workroom, wooden desk, silver laptop, closed black box and woman as Image 1 — her rust-orange needlecord cuffs, the brick wall, soft window light from the left. Image 1 is that scene.\nNew camera: closer, low over her RIGHT shoulder, looking at the open laptop on the desk so the screen fills about half the frame, square to the lens, bright and sharp. On the screen: one long typed letter on a plain white page, many paragraphs running down to a short sign-off and a name at the bottom, the type small. Her right hand rests beside the trackpad, her left hand on the desk by the keyboard; the closed black box just visible at the right edge, soft.\nIn frame: the laptop, her two hands, the edge of the box; every other surface bare. Clothing, walls and papers plain — no lettering or logos on anything but the screen; no app names, no extra fingers.",
+ "prompt": "For the line \"Most of those messages end the same way.\": the same silver laptop, wooden desk, rust-orange needlecord cuffs and hands as Image 1, and the same room and closed black box as Image 2 — brick wall, soft window light from the left. Copy them exactly.\nNew camera angle: low, from her right side at desk height, close. The open laptop is in the foreground on the left half of the frame, its screen turned about 40 degrees toward the lens, large and sharp, lit and plain blank white from edge to edge. Her right hand rests on the trackpad, her rust-orange cuff and forearm coming in from the right edge. Behind the laptop, soft and out of focus, the closed black box on the desk with its lowercase grey stryde wordmark, and the brick wall.\nIn frame: the laptop, her right hand and forearm, the one closed box; every other surface bare. Clothing, packaging and walls plain — no lettering, logos or labels except the box's own wordmark; five fingers on the hand.",
  "script_line": "Most of those messages end the same way.",
  "face": false,
  "room": true,
@@ -10,7 +10,11 @@
  "body": true,
  "refs": [
   {
-   "label": "HK2-01 v11 (the scene)",
+   "label": "BR-057 v5 (laptop, desk, cuffs)",
+   "kind": "plate"
+  },
+  {
+   "label": "HK2-01 v11 (room, box)",
    "kind": "plate"
   }
  ],
@@ -25,7 +29,7 @@
  "pair": [
   "nano_banana_pro"
  ],
- "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro); run on Kie (Higgsfield queue stalled earlier today)",
- "motion_plan": "From this frame: the letter scrolls slowly up to its last lines and stops on the sign-off; the camera holds.",
- "fix_note": "change the letter into a laptop, use HK2-01 as reference, show a long formal letter in the screen"
+ "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro); run on Kie (Higgsfield queue stalled today); screen text warped in afterwards",
+ "motion_plan": "From this frame: the letter scrolls slowly up to its last lines and stops on the sign-off; the camera holds (composited — the letter stays word for word).",
+ "fix_note": "change camera angle"
 }
