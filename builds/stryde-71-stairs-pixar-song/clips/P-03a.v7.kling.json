@@ -7,5 +7,6 @@
  "model": "kling-video-v3_0",
  "resolution": "1080p",
  "prefer_multi_shots": "false",
- "enable_audio": "false"
+ "enable_audio": "false",
+ "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/f02cb464-0104-4829-b06b-ebff7ab5ace7-JzOZiZYU4JYlQPmZFSfMAw-output.mp4?x-kcdn-pid=112372"
 }
