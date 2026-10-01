@@ -282,4 +282,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Kie spend on this build ≈ 5,000.
   Waiting on the user's check: images BR-10c v3, BR-16a v5, BR-16a2 v2, BR-16b v3, BR-20c v2, BR-23 v3; videos BR-14b v5, BR-22b v3 and the
   earlier To-check clips.
+- **2026-10-01: user "fix those and generate the next ones".** The board held one Fix: BR-14b video v5 "dont change the product". Diagnosis
+  (§22X, motion): the RIG-RVF fast push ran from the whole leg to a tight close-up and, as the strap grew in frame, the model redrew it (a wider
+  shell, metal side clips). v6 (`acts/build_r15_videos.py`, preflight PASS, 6th video — user_go = that message): RIG-RVD lateral drift, no push,
+  the strap locked at its start-frame size and look, the light round it never on it → To check; v5 moved to Old. No other video could start: the
+  remaining new-shot images (BR-10c, BR-16a, BR-16a2, BR-16b, BR-20c, BR-23) still wait for the user's Confirm. Every other B-roll video is confirmed.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
