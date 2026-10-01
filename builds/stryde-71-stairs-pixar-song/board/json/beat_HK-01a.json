@@ -21,7 +21,7 @@
  "key": "stairs",
  "location": "L-PLAZA",
  "storyDay": "N-D4",
- "framing": "FULL from the plaza at the foot of the great outdoor flight, the lens at hip height looking up the steps: N in her church dress and hat mid-flight on the 15th of 30 steps, climbing briskly hands free, chin up, a small pleased smile in part profile; three and four steps behind her two women of thirty-five in weekend clothes walking up slowly, one with a hand on the steel rail, both looking up at her back, left behind — the arena's glass doors at the top",
+ "framing": "FULL from the plaza at the foot of the great outdoor flight, the lens at hip height looking up the steps: N in her church dress and hat mid-flight on the 15th of 30 steps, climbing away from the lens with her back to it, facing the doors, hands free, head up, the edge of a smile past the hat brim; three and four steps behind her two women of thirty-five in weekend clothes walking up slowly, one with a hand on the steel rail, both looking up at her back, left behind — the arena's glass doors at the top",
  "motionPlan": "From this frame: three quick steps up, N pulling away; the two women behind her climb slowly and fall further back — one step per second for N, half that for the women; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: side-on/behind, full body, camera still at the foot",
  "pinEnd": "no",
@@ -33,9 +33,9 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "VN04",
- "updatedAt": 1790872059879,
+ "updatedAt": 1790872776833,
  "hook": 1,
- "imagePrompt": "For the line \"I'm seventy-one, and I take the stairs faster than women half my age.\": Keep this photo exactly as it is — the flight, the handrails, the doors, the camera, the light — as a tall 9:16 crop on the middle lane of the flight, and add three women. Image 1 is the plaza steps. Image 2 is the older woman.\nThe same woman as Image 2, seventy-one, in the middle lane on the 15th of 30 steps, mid-stride, weight on her right foot, left foot lifting to the 16th, both hands free, chin up, a small pleased smile in part profile, eyes on the doors; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. Behind her and lower, two women of thirty-five in grey and navy sweatshirts, leggings and white trainers, walking up slowly on the 11th and 10th steps, one with a hand on the handrail, both looking up at her back, left behind. All three at true scale to the steps.\nIn the frame: the three women, the one flight of Image 1, the handrails, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no fourth person.",
+ "imagePrompt": "For the line \"I'm seventy-one, and I take the stairs faster than women half my age.\": Keep this photo exactly as it is — the flight, the handrails, the doors, the camera, the light — as a tall 9:16 crop on the middle lane of the flight, and add three women seen from behind. Image 1 is the plaza steps. Image 2 is the older woman.\nThe same woman as Image 2, seventy-one, in the middle lane on the 15th of 30 steps, her back to the lens, facing up the flight, eyes on the doors, mid-stride, weight on her right foot, left foot lifting to the 16th, both hands free, head up, one cheek and the edge of a smile past the hat brim; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. Below her two women of thirty-five in grey and navy sweatshirts and leggings, backs to the lens, walking up slowly on the 11th and 10th steps, one hand on the rail, left behind.\nIn the frame: the three women, the one flight of Image 1, the handrails, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1, a catchlight in her eye. Clothing plain — no lettering, logos or labels; no fourth person; nobody in profile.",
  "imageStatus": "review",
  "imageRefs": [
   {
@@ -63,7 +63,8 @@
   "HT18",
   "HT19",
   "HT22",
-  "HT23"
+  "HT23",
+  "HT24"
  ],
  "preflight": "PASS (§6A, kind image)",
  "imageVersions": [
@@ -246,7 +247,9 @@
    "size": 7200607,
    "res": "1536×2752",
    "at": 1790872059879,
-   "note": "user 2026-10-01: \"should be 1 broll here showing her walking faster going up the stairs and at her back woman walking behind and she likes walking faster and left them\" → HK-01a is the one hook B-roll for both lines (HK-01b dropped): N climbing fast and pleased, two women half her age walking up behind her, left behind — an image edit of the confirmed P8-PLAZA (HT17); the v9 pair to Old · SH-LOW · FULL from the plaza (edit of P8), N climbing fast, two women half her age walking up behind her"
+   "note": "user 2026-10-01: \"should be 1 broll here showing her walking faster going up the stairs and at her back woman walking behind and she likes walking faster and left them\" → HK-01a is the one hook B-roll for both lines (HK-01b dropped): N climbing fast and pleased, two women half her age walking up behind her, left behind — an image edit of the confirmed P8-PLAZA (HT17); the v9 pair to Old · SH-LOW · FULL from the plaza (edit of P8), N climbing fast, two women half her age walking up behind her · replaced by the v12 pair (user: she is facing the wrong way)",
+   "archived": true,
+   "archiveAsset": "26386837993fc54f14cfa480843d2b45"
   },
   {
    "v": 12,
@@ -261,21 +264,53 @@
    "size": 6832159,
    "res": "1536×2752",
    "at": 1790872059879,
-   "note": "user 2026-10-01: \"should be 1 broll here showing her walking faster going up the stairs and at her back woman walking behind and she likes walking faster and left them\" → HK-01a is the one hook B-roll for both lines (HK-01b dropped): N climbing fast and pleased, two women half her age walking up behind her, left behind — an image edit of the confirmed P8-PLAZA (HT17); the v9 pair to Old · SH-LOW · FULL from the plaza (edit of P8), N climbing fast, two women half her age walking up behind her"
+   "note": "user 2026-10-01: \"should be 1 broll here showing her walking faster going up the stairs and at her back woman walking behind and she likes walking faster and left them\" → HK-01a is the one hook B-roll for both lines (HK-01b dropped): N climbing fast and pleased, two women half her age walking up behind her, left behind — an image edit of the confirmed P8-PLAZA (HT17); the v9 pair to Old · SH-LOW · FULL from the plaza (edit of P8), N climbing fast, two women half her age walking up behind her · replaced by the v12 pair (user: she is facing the wrong way)",
+   "archived": true,
+   "archiveAsset": "0b851edf47ba2ba2461d273cd996758c"
+  },
+  {
+   "v": 13,
+   "pair": "A",
+   "asset": "717e9396da26f299b4cbdf951e13961e",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_163540_6423cc60-d482-430e-a5b9-c41b1fd73906.png",
+   "job": "6423cc60-d482-430e-a5b9-c41b1fd73906",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 5417152,
+   "res": "1536×2752",
+   "at": 1790872776833,
+   "note": "user 2026-10-01: \"hk01 she is facing the wrong way\" → v11 had her side-on across the steps; v12 has her back to the lens, facing up the flight to the doors, climbing away, the two women half her age behind her with their backs to the lens too — an image edit of the confirmed P8-PLAZA (HT17, HT24); the v11 pair to Old · SH-LOW · FULL from the plaza (edit of P8), N climbing away with her back to the lens, two women half her age walking up behind her"
+  },
+  {
+   "v": 14,
+   "pair": "B",
+   "asset": "5f8c77648a81962dfcf4985013eff623",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_163540_ef071cb8-0ef2-4acc-85ca-e06eff29473e.png",
+   "job": "ef071cb8-0ef2-4acc-85ca-e06eff29473e",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6903291,
+   "res": "1536×2752",
+   "at": 1790872776833,
+   "note": "user 2026-10-01: \"hk01 she is facing the wrong way\" → v11 had her side-on across the steps; v12 has her back to the lens, facing up the flight to the doors, climbing away, the two women half her age behind her with their backs to the lens too — an image edit of the confirmed P8-PLAZA (HT17, HT24); the v11 pair to Old · SH-LOW · FULL from the plaza (edit of P8), N climbing away with her back to the lens, two women half her age walking up behind her"
   }
  ],
  "imagePair": [
-  11,
-  12
+  13,
+  14
  ],
- "imageAsset": "14aa0a3e8da57680d2a9c361188ca647",
+ "imageAsset": "717e9396da26f299b4cbdf951e13961e",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_162539_03f7a763-5aff-4f60-9110-4a6f09c95a0d.png",
- "imageJob": "03f7a763-5aff-4f60-9110-4a6f09c95a0d",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_163540_6423cc60-d482-430e-a5b9-c41b1fd73906.png",
+ "imageJob": "6423cc60-d482-430e-a5b9-c41b1fd73906",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
- "imageAt": 1790872059879,
+ "imageAt": 1790872776833,
  "imageRegens": 0,
  "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
  "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
@@ -324,8 +359,8 @@
  "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/6f14f08b-04e7-4d10-8bad-79d2ccd87f52-PHtD7iepuOMevEXxp4jRpQ-output.mp4?x-kcdn-pid=112372",
  "videoRes": "1072×1928",
  "videoAt": 1790868925077,
- "shot": "SH-LOW · FULL from the plaza (edit of P8), N climbing fast, two women half her age walking up behind her",
- "imageFault": "user 2026-10-01: \"should be 1 broll here showing her walking faster going up the stairs and at her back woman walking behind and she likes walking faster and left them\" → HK-01a is the one hook B-roll for both lines (HK-01b dropped): N climbing fast and pleased, two women half her age walking up behind her, left behind — an image edit of the confirmed P8-PLAZA (HT17); the v9 pair to Old",
+ "shot": "SH-LOW · FULL from the plaza (edit of P8), N climbing away with her back to the lens, two women half her age walking up behind her",
+ "imageFault": "user 2026-10-01: \"hk01 she is facing the wrong way\" → v11 had her side-on across the steps; v12 has her back to the lens, facing up the flight to the doors, climbing away, the two women half her age behind her with their backs to the lens too — an image edit of the confirmed P8-PLAZA (HT17, HT24); the v11 pair to Old",
  "videoNote": "the home-stairs clip(s) were made from the earlier confirmed picks — kept as versions, superseded by the plaza concept; a clip from the plaza frame follows the user's pick",
  "lines": [
   1,

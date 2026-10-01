@@ -214,6 +214,14 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   one frame in that relation, from the side or behind, never a POV of one of them; a comparing hook line is one B-roll with all of them in it
   (standards §34A + changelog, skill summary synced).
 
-**Waiting on:** picks (A/B) or Fix notes on HK-01a v11/v12 (the one hook B-roll), HK-02a v13/v14 and HK-03a v15/v16 (the mother's wardrobe came
+- same session, ~16:30–16:45 UTC — user **"hk01 she is facing the wrong way"** (the v11 pair had N side-on across the steps). v12: her back to the
+  lens, facing up the flight to the doors, climbing away, the edge of a smile past the hat brim; the two women behind her with their backs to the
+  lens too (`hooks/HK-01a.v12.prompt.txt`, PASS 1,177 chars after two trims; `face: True` — preflight refuses a face block on a no-face call; the
+  actmap framing updated). **HK-01a v13/v14** To check (`hooks/v12_cards.py`); v11/v12 to Old (Old doc v6). Seen: A — N from behind on the 15th step,
+  head turned a little so her cheek and smile show, the two women two and four steps below her, one hand on the right rail; B — the same from a
+  touch lower, N glancing back over her left shoulder, the women closer together on the left lane. Higgsfield balance 9,190.15 (shared account).
+  Merged the default branch first (V7.80.0 arrived from another session; this build's rules unchanged).
+
+**Waiting on:** picks (A/B) or Fix notes on HK-01a v13/v14 (the one hook B-roll), HK-02a v13/v14 and HK-03a v15/v16 (the mother's wardrobe came
 back wrong on both — a Fix is likely). Then the hook clips (HK-01a 8 s; §35A, no end frames — waived); then the body acts in order; CapCut block
 with lyric captions and the outro end card.
