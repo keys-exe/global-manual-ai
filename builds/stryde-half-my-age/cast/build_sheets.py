@@ -65,6 +65,12 @@ CAST = {
    body="A Black British woman of Jamaican heritage. Short and full-figured, round shoulders, seventy-two years old",
    ward="A mustard corduroy jacket over a black polo-neck jumper, dark green wide-leg trousers and burgundy leather loafers",
    age="soft folds from the nose to the mouth, fine lines at the outer eyes, slight hollows under the eyes, a scatter of small dark raised spots on the cheeks"),
+  "X2-COMMUTER": dict(sex="MAN", side="right", wall="pale grey", floor="grey-flecked lino",   # Hook C one-off, two beats (HKC-SH01, SH02) → §13 sheet
+   face="A narrow face with a long straight nose, dark brown eyes under thick straight dark brows, a short dark beard trimmed close along the jaw and a slightly heavy lower lip. A small healed nick through the outer end of his right eyebrow — his one marker. His right ear sits a touch higher than his left",
+   hair="Short dark brown hair, faded at the sides and a little longer and tousled on top, the same cut and the same height in every panel",
+   body="A white British man in his late twenties. Average height, slim, slightly rounded shoulders from a desk job",
+   ward="A plain mid-grey zip-up hoodie over a white T-shirt, black slim trousers and black-and-white canvas trainers, a black backpack on both shoulders",
+   age="smooth young skin with a few faint lines at the outer eyes, light stubble shadow above the beard line, faint shadows under the eyes from early starts"),
 }
 
 def build(k, c):

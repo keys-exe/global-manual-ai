@@ -1,0 +1,123 @@
+{
+  "file": "intake/song.mp3",
+  "length_s": 228.02,
+  "sections": [
+    {
+      "name": "Hook \u2014 MUS-OPEN",
+      "energy": "mid",
+      "rms_db": -18.3,
+      "brightness_hz": 3231
+    },
+    {
+      "name": "The low point and what failed \u2014 MUS-EXPOSE",
+      "energy": "low",
+      "rms_db": -15.5,
+      "brightness_hz": 3503
+    },
+    {
+      "name": "The turn \u2014 MUS-TURN",
+      "energy": "mid",
+      "rms_db": -14.4,
+      "brightness_hz": 2802
+    },
+    {
+      "name": "The reveal and payoff \u2014 MUS-TURN",
+      "energy": "mid",
+      "rms_db": -14.0,
+      "brightness_hz": 3003
+    },
+    {
+      "name": "Pure mechanism \u2014 MUS-EDU",
+      "energy": "mid",
+      "rms_db": -13.1,
+      "brightness_hz": 3107
+    },
+    {
+      "name": "Proof and the result \u2014 MUS-AFTER",
+      "energy": "high",
+      "rms_db": -11.9,
+      "brightness_hz": 3022
+    },
+    {
+      "name": "Name, authority, objection \u2014 MUS-AFTER",
+      "energy": "high",
+      "rms_db": -11.6,
+      "brightness_hz": 3101
+    },
+    {
+      "name": "Offer and close \u2014 MUS-OFFER",
+      "energy": "high",
+      "rms_db": -11.3,
+      "brightness_hz": 3023
+    }
+  ],
+  "tempo_bpm": 55.0,
+  "vocals": {
+    "checked": true,
+    "confident_words": 284,
+    "text": " I'm  71  and  I  take  the  than  women  my  Last  Sunday  my  daughter  behind  me  the  whole  way  up  and  said  mama,  did  that  happen?  weeks  ago  was  going  down  my  stairs  step  at  a  "
+  },
+  "fails": [
+    {
+      "check": "LENGTH",
+      "detail": "228.02s vs plan 230.02s"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Hook \u2014 MUS-OPEN' jumps 34.8 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'The low point and what failed \u2014 MUS-EXPOSE' jumps 16.9 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'The turn \u2014 MUS-TURN' jumps 17.2 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'The reveal and payoff \u2014 MUS-TURN' jumps 20.4 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Pure mechanism \u2014 MUS-EDU' jumps 17.4 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Proof and the result \u2014 MUS-AFTER' jumps 19.9 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Name, authority, objection \u2014 MUS-AFTER' jumps 22.4 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Offer and close \u2014 MUS-OFFER' jumps 21.2 dB in 100 ms"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Hook \u2014 MUS-OPEN' (mid) not louder than 'The low point and what failed \u2014 MUS-EXPOSE' (low): -18.3 vs -15.5 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'The turn \u2014 MUS-TURN' (mid) not louder than 'The low point and what failed \u2014 MUS-EXPOSE' (low): -14.4 vs -15.5 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'The reveal and payoff \u2014 MUS-TURN' (mid) not louder than 'The low point and what failed \u2014 MUS-EXPOSE' (low): -14.0 vs -15.5 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Proof and the result \u2014 MUS-AFTER' (high) not louder than 'Pure mechanism \u2014 MUS-EDU' (mid): -11.9 vs -13.1 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Name, authority, objection \u2014 MUS-AFTER' (high) not louder than 'Pure mechanism \u2014 MUS-EDU' (mid): -11.6 vs -13.1 dB"
+    },
+    {
+      "check": "ENERGY",
+      "detail": "'Offer and close \u2014 MUS-OFFER' (high) not louder than 'Pure mechanism \u2014 MUS-EDU' (mid): -11.3 vs -13.1 dB"
+    }
+  ],
+  "status": "FAIL"
+}
