@@ -1091,7 +1091,7 @@
    "kelvin": 6500
   },
   "lines": "L019",
-  "action": "next morning, HER goes down the stairs backwards, facing the steps, both hands gripping the banister, one foot then the other onto each step",
+  "action": "HER faces up the stairs, looking up, and steps down backwards one step at a time — both feet together on each step, both hands on the banister",
   "pace": "slow, one step every three seconds",
   "rig": "F2",
   "cast": [
@@ -1138,7 +1138,7 @@
    "kelvin": 6500
   },
   "lines": "L019",
-  "action": "HER, mid-stairs, backwards, lowers her weight onto the next step and breathes out",
+  "action": "HER, mid-flight, facing up the stairs and looking up, lowers onto the next step down backwards, both feet together, both hands on the banister, and breathes out",
   "pace": "slow",
   "rig": "F2",
   "cast": [
@@ -1162,7 +1162,7 @@
   "side": "three-quarter",
   "scale": "MCU",
   "fg": "clean",
-  "why": "",
+  "why": "upstairs: she does not come down (the next VO: 'I'd just stay upstairs')",
   "mode": 4,
   "shot": [
    "SH-34"
@@ -1185,7 +1185,7 @@
    "kelvin": 6500
   },
   "lines": "L020",
-  "action": "the husband at the foot of the stairs with a mug of tea, not quite looking at how she's coming down",
+  "action": "the husband has come up the stairs with a mug of tea; on the landing outside the bedroom, he holds it out, not quite looking at her",
   "pace": "still",
   "rig": "F2",
   "cast": [
@@ -1234,7 +1234,7 @@
    "kelvin": 6500
   },
   "lines": "L021",
-  "action": "HER, on the bottom step, takes the tea and gives a small tight smile",
+  "action": "HER, on the landing at her bedroom door in the dressing gown, takes the tea and gives a small tight smile",
   "pace": "still",
   "rig": "F1",
   "cast": [
