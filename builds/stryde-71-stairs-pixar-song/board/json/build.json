@@ -22,9 +22,9 @@
  "balances": {
   "Higgsfield": 7814.15,
   "Kie AI": 261969.8,
-  "Kling": 40793
+  "Kling": 40633
  },
- "balancesAt": 1790885400000,
+ "balancesAt": 1790886300000,
  "voices": [
   {
    "id": "N",
@@ -43,5 +43,5 @@
   "bpmEstimate": 73.8
  },
  "updatedAt": 1790849941280,
- "version": 27
+ "version": 28
 }

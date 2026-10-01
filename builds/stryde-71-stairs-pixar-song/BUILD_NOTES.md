@@ -387,3 +387,12 @@ clips P-03a v2, P-03b v1, P-05a v3. Then the P-01a pinned clip and the clips fro
 - Standards on the default branch moved to V7.85.0 (the Visual Pitch) — not applied to this running build (step-2 lock).
 
 Waiting on: picks or Fix notes on P-01b v11/v12, P-05b v7/v8; Confirm or Fix on the clips P-01a v4, P-02a v3, P-05c v1, P-03a v2, P-03b v1.
+
+## 2026-10-01 — P-01a clip v5 (user: "P01 SHOULD BE WALKING BACKRWARDS SLOWLY ONE STEP AT A TIME NOT SKIPPING STEPS OF THE STAIRS", 20:12 UTC)
+
+- The user had pressed Confirm on v4 on the board, then sent this Fix in chat — the chat Fix is the later word, so v4 was replaced: copied to **Old 2** (`c74a4cf5…`, its Old doc there), deleted from Current.
+- **Clip v5** (Kling 3.0, 5 s, 40 cr) from the same confirmed start frame: the "backs away from the landing" framing kept (it was what finally made v4 go down), the pace named outright — slowly, one step at a time, each heel to the step directly below, both feet on it before the next, two steps in the whole clip, never a step skipped. What I see: she backs down toward the lens slowly, one step at a time onto consecutive steps, face to the landing. To check.
+- **Lesson L18 / V7.85.1** (PR #340, merged): the v1 note "1 STEP AT A TIME" was treated as settled once v4 went the right way — every Fix note on a shot now stays in force for every later generation: §22X, `preflight.py` fails a generation 3+ call without `fix_notes_all` (the clip builder writes it: `FIXALL`), LESSONS L18.
+- Balances: Higgsfield 7814.15 · Kling 40633.
+
+Waiting on: Confirm or Fix on the clip P-01a v5; picks or Fix notes on P-01b v11/v12, P-05b v7/v8; Confirm or Fix on the clips P-02a v3, P-05c v1, P-03a v2, P-03b v1.
