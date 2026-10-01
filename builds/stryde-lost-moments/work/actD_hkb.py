@@ -58,3 +58,19 @@ def write_clip():
                    {"risk": "he overshoots", "prevented_by": "ends exactly as in the end frame"},
                    {"risk": "strap slides", "prevented_by": "strap below his right kneecap the whole way"}]}
     (HERE / "clips" / "D-HKb.v2.call.json").write_text(json.dumps(c, indent=1)); print("CLIP", len(p))
+
+# Round 4 (user "FIX THOSE" = go for the third video, 2026-10-01): clip Fix "look too AI".
+# Restage at the source: hip-height normal-lens phone shot, soft late light, natural colour; strap framed large, no wide-angle stretch.
+PROMPT2 = f"""For the line "{LINE}": he walks along the fairway, mid-stride, his strapped right leg forward.
+Medium-full shot from hip height, side-on from his right, a normal phone lens, head to feet, the fairway behind him.
+Image 1: the strap (three-quarter). Image 2: the strap worn. Image 3: the course. Image 4: the man. Image 5: his bag. Image 6: his outfit.
+{STRAP} The same man as Image 4 in the polo and sleeveless pullover of Image 6, grey shorts, white-and-tan golf shoes, the bag of Image 5 on his right shoulder; the fairway of Image 3.
+Right hand on the bag strap, left arm swinging; looking ahead, a small smile, mouth closed.
+In the frame: one man, one bag, the fairway; nothing else.
+Soft late-afternoon light through thin cloud, muted natural colour, real skin texture. An ordinary iPhone photo, nothing retouched.
+Clothing and bag plain — no lettering or logos but the strap's own wordmark."""
+def write_start2():
+    (HERE / "prompts" / "D-HKb.v74b.txt").write_text(PROMPT2)
+    c = json.load(open(HERE / "clips" / "D-HKb.img2.call.json"))
+    c.update(prompt=PROMPT2, fix_note="look too AI (clip) → frames glossy/saturated + low wide-angle stretch → restaged: hip height, normal lens, soft late light, natural colour")
+    (HERE / "clips" / "D-HKb.img3.call.json").write_text(json.dumps(c, indent=1)); print("START2", len(PROMPT2))

@@ -26,3 +26,26 @@ def write_end():
     (HERE / "clips" / "D-08-END.img2.call.json").write_text(json.dumps(c, indent=1)); print("END", len(p))
 if __name__ == "__main__":
     write_end()
+
+# Round 2 (user "FIX THOSE", 2026-10-01): clip Fix "THE RESULT LOOK LIKE AI AND ERROR". The start frame (v3 A) has the same glossy,
+# over-saturated low wide-angle look as D-HKb → restage the start the D-HKb way; the camera-fixed end frame is remade from the new pick.
+def write_start2():
+    from actD import C4, HKA, COURSE, TQ, WF, STRAP, R
+    refs = [R("product_tq_left.jpg", "product", TQ), R("worn_front.jpg", "product", WF), R("P6-COURSE plate (buggy)", "location", COURSE),
+            R("C4 Graham sheet", "character", C4), R("D-HKa (his golf bag)", "frame", HKA), R("D-05 (good-round outfit)", "frame", SP + "D-05.A.png")]
+    p = f"""For the line "{LINE}": he walks toward the camera past the empty white buggy parked behind him, bag on his shoulder, mid-stride.
+Medium-full shot from hip height, three-quarter front, a normal phone lens, head to feet, the buggy on the left behind him.
+Image 1: the strap (three-quarter). Image 2: the strap worn. Image 3: the course and buggy. Image 4: the man. Image 5: his bag. Image 6: his outfit.
+{STRAP} The same man as Image 4 in the polo and sleeveless pullover of Image 6, grey shorts, white-and-tan golf shoes, the bag of Image 5 on his right shoulder; the empty buggy of Image 3, its seats bare.
+Right hand on the bag strap, left arm swinging; looking ahead, a small smile, mouth closed.
+In the frame: one man, one bag, one empty buggy, the fairway; nothing else.
+Soft late-afternoon light through thin cloud, muted natural colour, real skin texture. An ordinary iPhone photo, nothing retouched.
+Clothing and bag plain — no lettering or logos but the strap's own wordmark."""
+    (HERE / "prompts" / "D-08.v74c.txt").write_text(p)
+    c = {"beat": "D-08", "kind": "image", "mode": 1, "prompt": p, "script_line": LINE, "face": True, "room": True, "product": True, "body": True,
+         "refs": [{"label": r["label"], "kind": r["kind"]} for r in refs], "match": None, "edit_of": None,
+         "taste": ["FP01", "FP02", "FP03", "FP07", "FP11", "FP12", "HT01", "HT06", "HT18"], "anatomy": False, "pair": ["gpt_image_2_5", "gpt_image_2_5"],
+         "motion_plan": "From this frame: he walks on past the empty buggy toward the camera at a normal walking pace, three steps, about three seconds.",
+         "ref_urls": [r["url"] for r in refs],
+         "fix_note": "THE RESULT LOOK LIKE AI AND ERROR → glossy/saturated low wide-angle frame + camera-travel end frame → restaged: hip height, normal lens, soft late light; end frame camera-fixed"}
+    (HERE / "clips" / "D-08.img3.call.json").write_text(json.dumps(c, indent=1)); print("START2", len(p))
