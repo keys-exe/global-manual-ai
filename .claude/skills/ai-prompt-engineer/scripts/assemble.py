@@ -4,6 +4,7 @@
 Usage:
   assemble.py PLAN.json [--out ROUGH.mp4] [--min-th 1.5] [--lead 0.25] [--skip 0.4] [--fps 24] [--dry-run]
   assemble.py PLAN.json --lengths      # before any B-roll call: the length each clip needs (E6)
+  ... --sheet PLACEMENT.md             # also write the placement sheet (every B-roll's line, in, out)
 
 PLAN.json:
 {
@@ -46,6 +47,10 @@ Punch-ins: the talking head cuts in to `scale` (1.05-1.5) on the phrase's first 
 and holds until the next B-roll or the next punch-in (scale 1.0 = punch back out).
 A punch-in landing under a B-roll is reported and ignored.
 
+Word timings (V7.80.0): medium.en (base.en ended words 0.1-0.4 s early and missed line starts by
+  up to 0.7 s on a real build), and each word's END is moved to where its sound actually stops
+  (the level falls 30 dB under the master's loud level, never past the next word), so a B-roll
+  never leaves while its line's last word is still sounding.
 Clock (V7.79.0): every cut is timed on the track the viewer hears. With a talking-head base,
   "audio": "base" times the words from the base's own (trimmed) sound; a separate master whose
   length differs from the base fails MASTER_MISMATCH — e.g. an untrimmed VO under trimmed TH.
@@ -81,9 +86,11 @@ Rules (§30H):
              (regenerate that clip at a longer duration).
   4. HOLE    in a voice-only build (base null) every uncovered moment is a hole and
              is closed the same way; an unclosable hole is a FAIL.
-  5. HOLD    every B-roll holds ~3.0s (HOLD) when the next B-roll allows it, holding over the next
-             words — never leaving a face window under --min-th (it holds to the next cut
-             when its footage reaches, else stops --min-th short of it); under 2.0s (MIN_FLASH) is a FLASH FAIL (merge the rows) (V7.65.0).
+  5. END     (V7.80.0 — "the brolls stay even though the script line is done") with a talking head a
+             B-roll leaves as its own line's last word finishes (+ END_TAIL); it runs on only over
+             silence: into the next B-roll when the face window would be under --min-th, or to reach
+             2.0s (MIN_FLASH) — never into the next line's words. Still under 2.0s = FLASH FAIL
+             (merge the rows: one picture for both lines). Voice-only: it runs to the next B-roll.
   6. LAYOUT  full screen is the default: split/pip on at most 1 B-roll in 5, never two in a row.
 Then renders (1080x1920 at --fps, default 24 = Kling's native rate, so no frame
 is repeated; the master as the only audio) and verifies the
@@ -115,7 +122,9 @@ FPS = 24                     # set from --fps; Kling renders 24 fps
 MIN_SLOW = 0.8
 FILM = False                 # plan "mode" 4/5: no speed change ever (§24L)
 MIN_FLASH = 2.0                # §30H rule 5 (V7.65.0): every B-roll holds >= 2.0s on screen (was 0.8s)
-HOLD = 3.0                     # §30H rule 5 (V7.65.0): a B-roll holds about 3s when the next one allows it
+END_DROP = 30.0                # V7.80.0: a word has finished when its level falls this far under the loud level
+END_MAX = 0.5                  # ...looked for at most this far past Whisper's end, never past the next word
+END_TAIL = 0.1                 # §30H rule 5 (V7.80.0): the B-roll leaves this long after its line's last sound
 MAX_SPLIT_SHARE = 0.2          # §30H layouts (V7.65.0): full is the default; split/pip at most 1 in 5, never two in a row
 HANDLE = 0.5                 # E6: seconds of spare footage on every call
 KLING_MIN, KLING_MAX = 3, 15
@@ -256,6 +265,27 @@ def onset(db, t):
     return t
 
 
+def word_ends(ws, db):
+    """V7.80.0: Whisper ends words early (base.en 0.1-0.4 s); move each word's end to where its sound
+    falls END_DROP under the master's loud level, at most END_MAX later and never past the next word."""
+    import numpy as np
+    if db is None or not len(db):
+        return ws
+    thr = float(np.percentile(db, 95)) - END_DROP
+    out = []
+    for n, (s0, e0, w) in enumerate(ws):
+        nxt = ws[n + 1][0] if n + 1 < len(ws) else e0 + END_MAX
+        k, stop = int(e0 * 100), int(min(nxt, e0 + END_MAX) * 100)
+        while k < min(stop, len(db)) and db[k] >= thr:
+            k += 1
+        out.append((s0, max(e0, min(k / 100.0, nxt)), w))
+    return out
+
+
+def tc(t):
+    return f"{int(t // 60)}:{t % 60:05.2f}"
+
+
 def snap(t):
     return round(round(t * FPS) / FPS, 4)
 
@@ -265,7 +295,8 @@ def main():
     ap.add_argument("plan")
     ap.add_argument("--out")
     ap.add_argument("--min-th", type=float, default=1.5)
-    ap.add_argument("--model", default="base.en")
+    ap.add_argument("--model", default="medium.en", help="Whisper model; medium.en (V7.80.0) — base.en times words up to 0.7s off")
+    ap.add_argument("--sheet", help="write the placement sheet (markdown) here")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--lead", type=float, default=0.25, help="cut this many seconds before the anchor word's onset (6 frames, V7.69.2)")
     ap.add_argument("--skip", type=float, default=0.4, help="default in-point: skip the clip's static opening")
@@ -325,6 +356,7 @@ def main():
     if clock_fail:
         fails.append(clock_fail)
     db = level_db(audio)
+    ws = word_ends(ws, db)
 
     # 1. PLACE — a lead before the anchor word (the key word, else the phrase's first
     # word); play from the in-point, not the start image's static opening
@@ -363,11 +395,22 @@ def main():
         if clip is None and not a.lengths:
             fails.append({"beat": b["beat"], "fail": "NO_CLIP", "detail": "no clip yet — run --lengths to size the call"})
             continue
+        lines = {line_of[k] for k in range(i, j + 1) if k < len(line_of)}
+        # V7.80.0: the row ends with the sentence its phrase ends in — never past the end of its script line
+        k = j
+        while k < len(ws) - 1 and not re.search(r"[.!?][\"')\]]*$", ws[k][2]) \
+                and (k + 1 >= len(line_of) or line_of[k + 1] == line_of[k]):
+            k += 1
+        row_end = ws[k][1]
+        shows = " ".join(w for _, _, w in ws[i:k + 1])
+        next_t = onset(db, ws[k + 1][0]) if k + 1 < len(ws) else total   # the next thing said after its sentence
         edl.append({"beat": b["beat"], "clip": str(clip) if clip else None, "phrase": b["phrase"],
                     "key": ws[key_i][2] if key_i is not None else ws[anchor][2], "first_word": ws[anchor][2],
                     "i": i, "j": j, "key_t": key_t, "span": b.get("span"),
                     "layout": lay, "word_t": word_t,
-                    "start": min(snap(max(0.0, word_t - a.lead)), round(int(word_t * FPS) / FPS, 4)), "line_end": snap(line_end(ws, j)),
+                    "start": min(snap(max(0.0, word_t - a.lead)), round(int(word_t * FPS) / FPS, 4)),
+                    "line_end": snap(min(row_end + END_TAIL, max(row_end, next_t)) if base is not None else row_end),
+                    "lines": lines, "shows": shows, "k_end": k, "next_t": next_t,
                     "in_spec": b.get("in"), "peak": b.get("peak"), "max": b.get("max", a.max_clip),
                     "clip_len": (min(duration(clip), float(b["out"])) if b.get("out") else duration(clip)) if clip else None,
                     "speed": 1.0})
@@ -394,17 +437,9 @@ def main():
         e["skip"] = e["in"]
 
     # which script lines each row shows; where each line starts (by its first word's sound)
-    for e in edl:
-        e["lines"] = {line_of[k] for k in range(e["i"], e["j"] + 1) if k < len(line_of)}
     line_first = {}
     for k, lid in enumerate(line_of[:len(ws)]):
         line_first.setdefault(lid, k)
-
-    def next_line_onset(e):
-        """Onset of the first line after this row's own lines (the next thing said that isn't its line)."""
-        last = max(e["lines"]) if e["lines"] else None
-        later = sorted(l for l in line_first if last is not None and l > last)
-        return onset(db, ws[line_first[later[0]]][0]) if later else total
 
     def spill(e, start, end):
         """Words spoken while this picture is up that belong to another line — the line the viewer
@@ -415,6 +450,28 @@ def main():
             if max(start + 0.05, e["word_t"]) < s0 < end - 0.05 and k < len(line_of) and line_of[k] not in e["lines"]:
                 out.setdefault(line_of[k], []).append(w)
         return out
+
+    def flash_fix(e, prev):
+        """FLASH with the merge spelled out (V7.80.0): the row's sentence is too short to hold a picture."""
+        k = e["k_end"] + 1
+        nxt = []
+        while k < len(ws):
+            nxt.append(ws[k][2])
+            if re.search(r"[.!?][\"')\]]*$", ws[k][2]):
+                break
+            k += 1
+        opts = []
+        owner = next((x for x in edl if x is not e and x["i"] <= e["k_end"] + 1 <= x["j"]), None)
+        if owner is not None:
+            opts.append(f"drop it and start {owner['beat']}'s phrase at {e['first_word']!r} (one picture for both sentences)")
+        elif nxt:
+            opts.append(f"widen its phrase to take in the next sentence {' '.join(nxt)!r} (one picture for both)")
+        if prev is not None:
+            opts.append(f"fold it into {prev['beat']}'s phrase")
+        if base is not None:
+            opts.append("leave the line on the face")
+        return (f"on screen {e['end'] - e['start']:.2f}s < {MIN_FLASH}s — {e['shows']!r} is too short to hold a picture: "
+                + ", or ".join(opts))
 
     def line_check(e, start, end):
         for lid, wl in spill(e, start, end).items():
@@ -434,6 +491,27 @@ def main():
             fails.append({"beat": e["beat"], "fail": "LINE_UNDER_WRONG_PICTURE",
                           "detail": f"{txt!r} is spoken under {e['beat']}'s picture (its line: {e['phrase']!r}) — {fix}"})
 
+    def write_sheet(path, rows, fails, total, has_base):
+        """The placement sheet (V7.80.0): every B-roll, the line(s) it shows verbatim, where it cuts in
+        and out and how long it is up — for the Plan tab (docs/placement) and the CapCut finish."""
+        bad = {}
+        for f in fails:
+            if f.get("beat"):
+                bad.setdefault(f["beat"], []).append(f["fail"])
+        out = ["### Placement", "",
+               f"Timed on the final track ({tc(total)}). Each B-roll cuts in 6 frames before its line's first word"
+               + (" and leaves as its line's last word ends." if has_base else " and runs to the next B-roll."), "",
+               "| Beat | In | Out | On screen | Starts on | What it shows (verbatim) | Check |", "|---|---|---|---|---|---|---|"]
+        for e in rows:
+            end = e.get("end", e["line_end"])
+            txt = e["shows"].replace("|", "/")
+            check = ", ".join(bad.get(e["beat"], [])) or "OK"
+            if e.get("holds_over"):
+                check += f" · runs on over: {e['holds_over']}".replace("|", "/")
+            out.append(f"| {e['beat']} | {tc(e['start'])} | {tc(end)} | {end - e['start']:.2f}s | "
+                       f"{e['first_word']} | {txt} | {check} |")
+        Path(path).write_text("\n".join(out) + "\n", encoding="utf-8")
+
     if a.lengths:
         out = []
         for n, e in enumerate(edl):
@@ -443,13 +521,19 @@ def main():
                 end = max(e["line_end"], e["start"])   # a deliberate return to face
             if base is not None and n + 1 == len(edl):
                 end = max(e["line_end"], e["start"])
-            hold_to = min(HOLD, nxt - e["start"])
-            if base is not None:   # V7.79.0: a hold never runs into the next line's words
-                hold_to = min(hold_to, max(0.0, next_line_onset(e) - e["start"]))
+            hold_to = min(MIN_FLASH, nxt - e["start"])   # V7.80.0: only to reach 2.0s, never 3s past its line
+            if base is not None:   # a hold never runs into the next words (V7.79.0 line, V7.80.0 sentence)
+                hold_to = min(hold_to, max(0.0, e["next_t"] - e["start"]))
             on = max(end - e["start"], hold_to)   # the hold (rule 5)
             if base is not None and n + 1 < len(edl) and 1e-3 < nxt - e["start"] - on < a.min_th:
                 on = nxt - e["start"]   # a hold never leaves a face window under --min-th
             line_check(e, e["start"], e["start"] + on)
+            e["end"] = e["start"] + on
+            if on < MIN_FLASH - 1e-3:
+                fails.append({"beat": e["beat"], "fail": "FLASH", "detail": flash_fix(e, edl[n - 1] if n else None)})
+            over = [w for s0, _, w in ws[e["k_end"] + 1:] if s0 < e["end"] - 0.05]
+            if over:
+                e["holds_over"] = " ".join(over)
             need = on + e["skip"] + HANDLE
             call = max(KLING_MIN, int(-(-need // 1)))
             row = {"beat": e["beat"], "cut_s": e["start"], "early_s": e["early_s"], "line_starts_on": e["first_word"],
@@ -460,6 +544,8 @@ def main():
                 row["call_s"] = int(cap)
                 row["flag"] = f"SPLIT — needs {need:.1f}s, over {cap:g}s; split the phrase into two clips at a word boundary"
             out.append(row)
+        if a.sheet:
+            write_sheet(a.sheet, edl, fails, total, base is not None)
         print(json.dumps({"master_s": round(total, 3), "lead_s": a.lead, "skip_s": a.skip,
                           "lengths": out, "failures": fails}, indent=2))
         sys.exit(2 if fails else 0)
@@ -495,14 +581,15 @@ def main():
                       "detail": f"{why}: needs {need:.2f}s of footage, has {avail:.2f}s — regenerate longer"})
         return False
 
-    # 5. HOLD — a B-roll whose line is shorter than MIN_FLASH holds over the next words
-    # (up to the next B-roll) so it can be read (V7.65.0)
+    # 5. END — with a talking head the B-roll leaves as its line ends (V7.80.0, user: "the brolls stay
+    # even though the script line is done"); a line too short to read (< MIN_FLASH) holds over the
+    # silence after it — never into the next line's words — else FLASH (merge the rows)
     for n, e in enumerate(edl):
         nxt = edl[n + 1]["start"] if n + 1 < len(edl) else total
-        if e["end"] - e["start"] < HOLD - 1e-3:
-            target = snap(min(nxt, e["start"] + HOLD))
-            if base is not None:   # V7.79.0: never hold into the next (talking-head) line's words
-                target = snap(min(target, max(e["end"], next_line_onset(e))))
+        if e["end"] - e["start"] < MIN_FLASH - 1e-3:
+            target = snap(min(nxt, e["start"] + MIN_FLASH))
+            if base is not None:   # never hold into the next words — only over the silence after its sentence
+                target = snap(min(target, max(e["end"], e["next_t"])))
             if base is not None and n + 1 < len(edl) and 1e-3 < nxt - target < a.min_th:
                 # never hold into a face window and leave a flicker: hold to the next cut when the
                 # footage reaches it, else stop so the face keeps at least --min-th
@@ -514,8 +601,8 @@ def main():
                 if reach > e["end"] + 1e-3:
                     e["end"] = reach
                     fixes.append({"beat": e["beat"], "fix": f"HOLD: held to {reach - e['start']:.2f}s on screen"})
-                if e["end"] - e["start"] < MIN_FLASH - 1e-3:   # still unreadable: slow (>= 0.8x) or FAIL
-                    close(e, snap(min(nxt, e["start"] + MIN_FLASH)), "HOLD")
+                if e["end"] - e["start"] < MIN_FLASH - 1e-3 and target > e["end"] + 1e-3:
+                    close(e, target, "HOLD")   # still unreadable: slow (>= 0.8x) over the silence only, or FAIL
 
     for n, e in enumerate(edl):
         nxt = edl[n + 1]["start"] if n + 1 < len(edl) else None
@@ -533,9 +620,16 @@ def main():
                       "detail": f"0.00–{edl[0]['start']:.2f}s uncovered — place a B-roll on the opening line"})
     for e in edl:
         line_check(e, e["start"], e["end"])
-    for e in edl:
+        # words after its own sentence still under its picture (another line's words already fail LINE)
+        over = [w for s0, _, w in ws[e["k_end"] + 1:] if s0 < e["end"] - 0.05]
+        if over:
+            e["holds_over"] = " ".join(over)
+            if base is not None:
+                fixes.append({"beat": e["beat"], "fix": f"runs on over {e['holds_over']!r} to close a flicker — "
+                              "give that sentence its own row, or merge it into this one"})
+    for n, e in enumerate(edl):
         if e["end"] - e["start"] < MIN_FLASH - 1e-3:
-            fails.append({"beat": e["beat"], "fail": "FLASH", "detail": f"on screen {e['end']-e['start']:.2f}s < {MIN_FLASH}s — merge the row with its neighbour or give it a longer line"})
+            fails.append({"beat": e["beat"], "fail": "FLASH", "detail": flash_fix(e, edl[n - 1] if n else None)})
     # layout mix: full screen is the default; split/pip sparingly (V7.65.0, user 2026-09-28)
     if base is not None and edl:
         boxed = [e for e in edl if e["layout"]["type"] != "full"]
@@ -590,8 +684,10 @@ def main():
         if any(s["kind"] == "BR" and s["start"] + 1e-3 < pt < s["end"] - 1e-3 for s in raw):
             warnings.append({"punch": ph, "warning": f"lands under a B-roll at {pt:.2f}s — ignored"})
 
+    if a.sheet:
+        write_sheet(a.sheet, edl, fails, total, base is not None)
     for e in edl:
-        for k in ("i", "j", "lines"):
+        for k in ("i", "j", "lines", "k_end"):
             e.pop(k, None)
     report = {"master_s": round(total, 3), "min_th_s": a.min_th, "edl": edl,
               "timeline": [{k: (round(v, 3) if isinstance(v, float) else v) for k, v in s.items()} for s in segs],
