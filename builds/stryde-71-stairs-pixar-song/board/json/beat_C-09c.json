@@ -24,7 +24,7 @@
  "framing": "MEDIUM from the landing looking down: the sister, a ribboned box under one arm, climbing the family-photo stairs toward the camera, hands off the rail, N's shoulder at the top edge of frame watching",
  "motionPlan": "From this frame: two steps up, hands free — one step per second; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: camera at the top, subject coming up 2 steps, hands free",
- "pinEnd": "yes",
+ "pinEnd": "no",
  "angle": "high · front · clean · MEDIUM — high = from N's place at the top, the mirror of the hook",
  "focus": "deep · deep",
  "light": "front-door sidelights, west wall · key L · afternoon · after: Sunday sun · 5600K",
@@ -33,6 +33,6 @@
  "eg": "",
  "music": "MUS-OFFER",
  "ledger": "",
- "updatedAt": 1790858547525,
- "endFrame": "C-09c-END"
+ "updatedAt": 1790860191625,
+ "pinWaived": "user 2026-10-01: \"we dont need end frame\""
 }

@@ -12,5 +12,11 @@
  "HK-01b-END@A": "8b850fea-27ac-43e9-88fc-7850c9ad02a1",
  "HK-01b-END@B": "34255b10-9718-4a7e-bae4-aea73a8ed600",
  "HK-02a-END@A": "b9e3acd4-f415-4567-9944-ed9350d218f0",
- "HK-02a-END@B": "1e45b8ef-f90e-4cfc-b1e7-73ff3100f82a"
+ "HK-02a-END@B": "1e45b8ef-f90e-4cfc-b1e7-73ff3100f82a",
+ "HK-01b@v2A": "63be8ee8-747d-48b9-9bfe-378b60cfb405",
+ "HK-01b@v2B": "36ac222c-a41b-443e-b9f0-9e3f1aa954a8",
+ "HK-02a@v2A": "f8698a95-7941-4a72-ad86-d4d2697667d6",
+ "HK-02a@v2B": "403d4f13-3bbb-4a0a-a04e-892afdfce94d",
+ "HK-03a@v2A": "f544688c-3c99-45e7-aa63-5dee209b841e",
+ "HK-03a@v2B": "de94d61b-2025-44c7-b105-744483d4e8c3"
 }
