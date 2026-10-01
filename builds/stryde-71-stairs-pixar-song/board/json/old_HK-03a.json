@@ -6,14 +6,14 @@
   "image"
  ],
  "hook": 1,
- "imageAsset": "d61eb64e576206c335e9faa7c2d4da1d",
+ "imageAsset": "eae2fc51fe2ae6680da43246da07560c",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "user 2026-10-01: \"wrong location\" (on the OTS pair)",
+ "imageFault": "user 2026-10-01: \"this should be at the second floor\"",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [
-  7,
-  8
+  9,
+  10
  ],
  "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — hall, staircase, camera, light — as a tall 9:16 crop on the top four steps and the landing, with two women there. Image 1 is the hall and staircase. Image 2 is the mother. Image 3 is her daughter.\nThe same woman as Image 2 on the landing at the head of the flight, body facing along it, head turned back over her left shoulder to her daughter, a small knowing smile, mouth closed, eyes on her daughter, both hands free at her sides; emerald-green church dress to mid-calf, low black pumps. The same woman as Image 3 on the 14th and top step, right hand on the handrail, left hand on her chest, face turned up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. The two fill over half the frame's height.\nIn the frame: the two women, the top of the one staircase of Image 1 with its runner, balusters and handrail, the landing wall; every other surface bare. Two legs each.\nThe render and light of Image 1, the women on model, a catchlight in each eye.\nClothing, shoes and walls plain — no lettering, logos or labels; no third person.",
  "imageRefs": [
@@ -39,7 +39,7 @@
  "imageRes": "1536×2752",
  "imageStatus": "regenerate",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_2f203e76-f95a-4360-8682-14d8c09f7338.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_152342_941301bc-c5e4-4652-bead-d67e93061f2b.png",
  "imageVersions": [
   {
    "archived": true,
@@ -168,11 +168,43 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150922_6af689ae-ac62-42c9-b80e-147356b62213.png",
    "v": 8,
    "archived": true
+  },
+  {
+   "asset": "eae2fc51fe2ae6680da43246da07560c",
+   "at": 1790868365586,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "941301bc-c5e4-4652-bead-d67e93061f2b",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"wrong location\" on the OTS pair → the OTS kept, built as an image edit of the user's confirmed v6 (the top of the flight from the hall), viewpoint moved up the flight",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7171233,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_152342_941301bc-c5e4-4652-bead-d67e93061f2b.png",
+   "v": 9,
+   "archived": true
+  },
+  {
+   "asset": "ea463c980f617cddc3b8b832c8f154d6",
+   "at": 1790868365586,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "22c7b62f-d907-4cc0-a3d4-aa4b40bd77c5",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"wrong location\" on the OTS pair → the OTS kept, built as an image edit of the user's confirmed v6 (the top of the flight from the hall), viewpoint moved up the flight",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7570554,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_152342_22c7b62f-d907-4cc0-a3d4-aa4b40bd77c5.png",
+   "v": 10,
+   "archived": true
   }
  ],
  "line": "\"Mama, when did that happen?\"",
  "stage": "hooks",
  "status": "regenerate",
  "title": "hook — the line (edit of P0: the top of the flight, HT17) — v1–v3 pairs (replaced)",
- "updatedAt": 1790868326332
+ "updatedAt": 1790869490310
 }

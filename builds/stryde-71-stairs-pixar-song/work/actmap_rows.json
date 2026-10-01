@@ -9,12 +9,12 @@
   ],
   "line": "I'm seventy-one, and I take the stairs",
   "key": "stairs",
-  "function": "hook — the result (HT05: stakes in the picture) · SH-LOW at FULL, through the newel",
-  "subject": "N + C2",
-  "location": "L-N-STAIRS",
+  "function": "hook — the result (HT05: out in the world, stakes in the picture) · SH-LOW at FULL from the sidewalk",
+  "subject": "N + 2 one-off younger women",
+  "location": "L-CHURCH",
   "story_day": "N-D4",
-  "framing": "FULL from the foot of the stairs, the lens at hip height beside the newel post looking up the whole flight: N towering mid-flight on the 6th step, climbing briskly, hands free, the daughter two steps behind inside the rail reaching for the handrail; the balusters and the photo wall converge up to the landing light",
-  "action": "two steps up, N pulling ahead",
+  "framing": "FULL from the sidewalk at the foot of the church steps, the lens at hip height looking up the flight: N in her church dress and wide-brim hat climbing briskly hands free, mid-flight, two women in their thirties in Sunday dresses a few steps below her, one with a hand on the rail, being left behind; the church doors at the top",
+  "action": "two steps up, N pulling ahead of the younger women",
   "pace": "one step per second, brisk",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
   "staging": "stairs: side-on/behind, full body, camera still at the foot",
@@ -31,9 +31,9 @@
   "angle": {
    "height": "low",
    "side": "three-quarter-back",
-   "fg": "through",
+   "fg": "clean",
    "scale": "FULL",
-   "why": "low = resolve, the whole flight rising above her like a challenge she owns; through the newel = we watch from the hall"
+   "why": "low = resolve, the church steps rising above her; the younger women below her in the same frame are the stakes"
   },
   "mirror_of": null,
   "focus": {
@@ -43,7 +43,7 @@
    "moving_subject": false
   },
   "light": {
-   "source": "front-door sidelights, west wall",
+   "source": "open sky, afternoon sun",
    "key_side": "R",
    "time": "afternoon",
    "arc": "after: Sunday sun",
@@ -72,15 +72,15 @@
   ],
   "line": "faster than women half my age.",
   "key": "faster",
-  "function": "hook — the result · SH-GROUND through the balusters",
-  "subject": "N feet + C2",
-  "location": "L-N-STAIRS",
+  "function": "hook — the result · SH-GROUND on the church steps",
+  "subject": "N feet + the younger women's feet",
+  "location": "L-CHURCH",
   "story_day": "N-D4",
-  "framing": "CU at tread level through the white balusters, the lens on the 4th step looking along the flight: N's black pump striking the 7th step mid-stride, the green hem swinging, the daughter's white trainer landing on the 5th behind it",
+  "framing": "CU at tread level from the side on the church steps: N's low black pumps striking the next step mid-stride, the green hem swinging, two pairs of younger women's heeled sandals a step or two below, one foot still planted",
   "action": "two steps up",
   "pace": "one step per second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "stairs: feet only, side, through the balusters",
+  "staging": "stairs: feet only, side",
   "pin_end": "no",
   "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
   "max": 6,
@@ -94,9 +94,9 @@
   "angle": {
    "height": "ground",
    "side": "profile",
-   "fg": "through",
+   "fg": "clean",
    "scale": "CU",
-   "why": "ground = the steps themselves, the pace; through the balusters = the stairs as an obstacle course she beats"
+   "why": "ground = the steps themselves, the pace; her pumps ahead of the younger feet"
   },
   "mirror_of": null,
   "focus": {
@@ -106,7 +106,7 @@
    "moving_subject": false
   },
   "light": {
-   "source": "front-door sidelights, west wall",
+   "source": "open sky, afternoon sun",
    "key_side": "L",
    "time": "afternoon",
    "arc": "after: Sunday sun",
@@ -198,17 +198,17 @@
   ],
   "line": "\"Mama, when did that happen?\"",
   "key": "Mama",
-  "function": "hook — the line · SH-OTS over the daughter's shoulder",
+  "function": "hook — the line · SH-OTS from the landing, over the mother's shoulder (user: second floor)",
   "subject": "N + C2",
   "location": "L-N-STAIRS (landing)",
   "story_day": "N-D4",
-  "framing": "MCU over the daughter's near shoulder from the top step, her shoulder and afro puff soft in the near foreground, onto N on the landing turned back to her with a small knowing smile, the landing window bright behind her",
-  "action": "N turns her head back to her daughter",
-  "pace": "one turn, about a second",
+  "framing": "MCU from the landing over the mother's near shoulder, her shoulder and silver hair soft in the near foreground as she stands on the landing turned back, onto the daughter arriving on the top step below, face up to her mother, mouth open mid-word, the flight and the hall dropping away behind her",
+  "action": "the daughter's last step up and the look up at her mother",
+  "pace": "one step, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "none",
+  "staging": "stairs: camera at the top, subject coming up, 1 step",
   "pin_end": "no",
-  "pin_waived": null,
+  "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
   "max": 6,
   "product": "worn (under the dress)",
   "visibility": "HIDDEN",
@@ -218,11 +218,11 @@
   "ledger": "",
   "music": "MUS-OPEN",
   "angle": {
-   "height": "eye",
+   "height": "high",
    "side": "ots",
    "fg": "through",
    "scale": "MCU",
-   "why": "ots = the line lands between them; the window behind her = she's in the light, the daughter in shadow"
+   "why": "ots from the second floor = the line lands between them from the mother's place at the top; the drop behind the daughter is the climb she just made"
   },
   "mirror_of": null,
   "focus": {
