@@ -1,0 +1,42 @@
+{
+ "beat": "P-01b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"One step at a time.\": Keep this photo exactly as it is — the staircase, its runner, balusters and oak rail, the light — in close on the top steps from the side, a tall 9:16 crop, and add her legs. Image 1 is the staircase. Image 2 is the woman.\nClose-up from the side at step height, sharp on the slippers: the legs of the woman of Image 2 — seventy-one, deep brown skin, heavy calves — from the knee down, facing UP the stairs, going down backwards: both toes point the same way the handrail rises, up toward the landing; heels toward the lower steps; her left pink slipper whole and flat on the upper tread, back from its edge; her right slipper whole and flat on the tread below; her blue floral house dress as in Image 2; one brown hand on the rail, four chunky fingers and a thumb; her head out of frame. Scale true to the set: the hem comes up to her knee.\nIn frame: two slippers, two heavy legs, one hand, four steps of Image 1; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light. Slippers and hem plain — no lettering, logos or labels; nobody else.",
+ "script_line": "One step at a time.",
+ "face": false,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P0-PROP-N plate (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "P-01a frame v12 B (confirmed) — N on the top step from behind: the woman to copy",
+   "kind": "frame"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "973904c55f316a52570c8bff44ef7a07",
+ "taste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "NEW IMAGE PROPER FOOTING",
+ "product": false
+}

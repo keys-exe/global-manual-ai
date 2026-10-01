@@ -252,11 +252,22 @@ A final frame from a 3D animated feature film, stylized storybook render — the
 FIX13 = {"P-01b": "WRONG PERSON"}
 if V >= 13:
     P = P13
+
+# ---- v14 (user "FIX THOSE", 2026-10-01): P-01b "NEW IMAGE PROPER FOOTING" — v13 had her toes pointing down the flight and the lower slipper half off its tread;
+# a new pair: facing UP the stairs (toes to the landing, heels to the lower steps = going down backwards), each slipper whole and flat on its own tread.
+P14 = {}
+P14["P-01b"] = (f'''For the line "{L("P-01b")}": Keep this photo exactly as it is — the staircase, its runner, balusters and oak rail, the light — in close on the top steps from the side, a tall 9:16 crop, and add her legs. Image 1 is the staircase. Image 2 is the woman.
+Close-up from the side at step height, sharp on the slippers: the legs of the woman of Image 2 — seventy-one, deep brown skin, heavy calves — from the knee down, facing UP the stairs, going down backwards: both toes point the same way the handrail rises, up toward the landing; heels toward the lower steps; her left pink slipper whole and flat on the upper tread, back from its edge; her right slipper whole and flat on the tread below; her blue floral house dress as in Image 2; one brown hand on the rail, four chunky fingers and a thumb; her head out of frame. Scale true to the set: the hem comes up to her knee.
+In frame: two slippers, two heavy legs, one hand, four steps of Image 1; every other surface bare.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light. Slippers and hem plain — no lettering, logos or labels; nobody else.''', [REF_P0, REF_P01A12], False, P0)
+FIX14 = {"P-01b": "NEW IMAGE PROPER FOOTING"}
+if V >= 14:
+    P = P14
 if __name__ == "__main__":
     fails = 0
     for b, (pr, refs, face, eo) in P.items():
         c = {"beat": b, "kind": "image", "mode": 2, "prompt": pr, "script_line": L(b), "face": face, "room": True, "body": b not in ("P-05b",), "refs": refs,
-             "match": "frame" if eo in (P3A, P02B, "P3A-NEW", P01B, P02B6, P03A7, P03A9) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX13 if V >= 13 else FIX12 if V >= 12 else FIX11 if V >= 11 else FIX10 if V >= 10 else FIX9 if V >= 9 else FIX8 if V >= 8 else FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
+             "match": "frame" if eo in (P3A, P02B, "P3A-NEW", P01B, P02B6, P03A7, P03A9) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX14 if V >= 14 else FIX13 if V >= 13 else FIX12 if V >= 12 else FIX11 if V >= 11 else FIX10 if V >= 10 else FIX9 if V >= 9 else FIX8 if V >= 8 else FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
         OV = (OUTV if V == 4 else {}).get(b, V)
         (H / f"{b}.v{OV}.prompt.txt").write_text(pr); (H / f"{b}.v{OV}.preflight.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
         r = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v{OV}.preflight.json")], capture_output=True, text=True)
