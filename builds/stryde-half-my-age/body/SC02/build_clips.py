@@ -43,8 +43,12 @@ NIGHT = ("THE SCENE SO FAR, one continuous moment: evening; the hall's glass pen
          "of the stairs, her right hand on the top newel post; she has not come down and does not. Her husband is in the hall at the foot of the stairs. Two plain brown paper shopping bags full of "
          "groceries stand on the hall carpet at the foot of the bottom step, exactly the bags on the prop card.")
 MORNING = ("THE SCENE SO FAR, the next morning, one continuous moment: cold grey daylight, about 6500K, from the frosted landing window and the front-door glass; the lamps are off. Her, in the "
-           "dressing gown of the outfit card, is coming down the stairs slowly, facing down the flight, one step at a time, both feet together on each step before the next, her right hand gripping the banister rail. Her husband "
-           "waits in the hall at the foot of the stairs holding a plain white mug of tea. The shopping bags are gone from the hall.")
+           "dressing gown of the outfit card, is coming down the stairs BACKWARDS: she faces UP the flight, looking up toward the landing, both hands holding the banister rail, and lowers herself "
+           "one step down at a time behind her, both feet together on each step before the next. The hall is empty. The shopping bags are gone from the hall.")
+KITCHEN_SC = ("THE SCENE SO FAR, the same morning, one continuous moment, DOWNSTAIRS IN THE KITCHEN: cold grey daylight, about 6500K, from the window over the sink and the small left window; "
+              "the lamps are off. Her husband has been waiting in the kitchen for her with a plain white mug of tea he made for her. Her, in the dressing gown of the outfit card, has just got "
+              "down the stairs and comes into the kitchen from the hall doorway. Nobody mentions the stairs.")
+KITCHEN = PLACE("her kitchen at the back of the house — the scrubbed pine table and four ladder-back chairs by the small left window, the sage-green wall cupboards and cream worktops on the right, the white sink under the back window with the spider plant, the cream fridge")
 AFTERNOON = ("THE SCENE SO FAR, the same day, afternoon: flat grey overcast light through the net curtains, about 6500K; the bedside lamp is off. Her, still in the dressing gown of the outfit card, "
              "has gone back upstairs and sits alone on her bed.")
 STATIC = "no sliding, no gliding, no drifting across the floor, no feet skating, no camera push, no zoom"
@@ -53,6 +57,9 @@ L017 = "Just leave it by the stairs, love. I’ll get it later."
 L018 = "I’ll bring it up."
 L020 = "Sleep alright?"
 L021 = "Fine, love."
+GO_SC02B = ("Six weeks ago, I was going down my stairs backwards. One step at a time. it should her looking up then stepping backwards one at a time same steps both feet, both hand on the banister / "
+            "HUSBAND: Sleep alright? HER: Fine, love. they should be at the 2nd floor not at the bottom cause the next line is VO: If I'm being honest, some days I wasn't going down them at all. I'd just stay upstairs. (user 2026-10-01)")
+GO_KITCHEN = "lets do this at the kitchen where he is wating for the main character (user 2026-10-01)"
 GO = "i want new ones in scene 2, lets not use wan, lets do seedance (user 2026-10-01) / we will not use frames / confirme and remove the previouse scene 2"
 
 
@@ -106,78 +113,86 @@ SHOTS.append(dict(beat="SC02-SH02", kind="dialogue", duration=4, line=L018, subj
     risks=[{"risk": "the bags change", "prevented_by": "the prop card"}, {"risk": "he climbs", "prevented_by": "feet stay at the foot, negative"},
            {"risk": "voice drifts", "prevented_by": "his voice master as Audio1"}]))
 
-SHOTS.append(dict(beat="SC02-SH03", kind="broll", duration=6, line="", vo="L019", subject_motion="travels", files=["N", "P-HOUSE", "OUT-N-B2"], audios=[], pilot=False, gen=3,
-    fix="User (chat): \"lets not use wan, lets do seedance\" → the same forwards descent on Seedance 2.5. Wan v1 Fix (board): \"it should be going down the stairs and not backwards\" → change of action at the user's call: she comes down facing forwards, slowly, one step at a time (HT02); the camera moved to the foot of the stairs looking up so the descent can only read one way — toward the camera",
-    prompt=" ".join([
-        manifest([("@image1", SHEET("Her", HER_B2)), ("@image2", HALL), ("@image3", CARD_B2)]),
-        SERIES, LOOK, INHERIT, HOUSE, MORNING,
-        "THE SHOT: a medium-wide shot from the hall at the foot of the stairs, looking straight up the flight, exactly as the place reference shows the staircase: "
-        f"Her, {HER_ID}, in {HER_B2}, is near the top of the flight, facing down the stairs toward the camera.",
-        "She comes DOWN the stairs toward the camera, slowly, one step at a time: her right hand grips the banister rail and slides down it, her left hand flat against the stair wall; "
-        "she lowers one foot onto the next step down, then brings the other foot down beside it, both feet together on each step before the next, about one step every three seconds, "
-        "eyes on the step below her, jaw set. Two steps down in the clip, never faster.",
-        F2, PHYS,
-        state("HER", "tired, bob and fringe in place, in the dressing gown, near the top of the flight, right hand on the banister", "she is two steps lower"),
-        "FOCUS: her face and hands are in sharp focus; the stair wall behind her falls soft. The blur is optical: soft and round, never smeared.",
-        SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, "no going up the stairs, no walking backwards, no turning round, no letting go of the banister, no talking, no mouth moving", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    risks=[{"risk": "she climbs instead of descending", "prevented_by": "the camera at the foot, she comes down toward it, going-up negatives"},
-           {"risk": "the stairs bend or her feet slide", "prevented_by": "NEG_STAIRS, one step every three seconds, both feet on each step (HT02)"},
-           {"risk": "the gown changes", "prevented_by": "the outfit card as Image3"}]))
-
-SHOTS.append(dict(beat="SC02-SH04", kind="broll", duration=4, line="", vo="L019", subject_motion="in_place", files=["N", "L-STAIRS", "OUT-N-B2"], audios=[],
+SHOTS.append(dict(beat="SC02-SH03", kind="broll", duration=6, line="", vo="L019", subject_motion="travels", files=["N", "L-STAIRS", "OUT-N-B2"], audios=[], pilot=False, gen=4, go=GO_SC02B,
+    fix="User (chat): \"Six weeks ago, I was going down my stairs backwards. One step at a time. it should her looking up then stepping backwards one at a time same steps both feet, both hand on the banister\" → back to the script line (LESSONS L11): she faces UP the flight looking up, and steps DOWN backwards, both feet together on each step, both hands on the banister; the camera on the landing looking down at her so her face and the direction both read (she moves away from the camera, down). Seedance v3 had her facing forwards on an earlier note that contradicted the line",
     prompt=" ".join([
         manifest([("@image1", SHEET("Her", HER_B2)), ("@image2", STAIRS), ("@image3", CARD_B2)]),
         SERIES, LOOK, INHERIT, HOUSE, MORNING,
-        f"THE SHOT: a medium close-up in profile at her eye level from beside the banister, a long lens, shallow focus on her eye: Her, {HER_ID}, in {HER_B2}, mid-flight, coming down the stairs facing down the flight.",
-        "Her right hand grips the banister rail; she lowers her weight onto the next step down, brings her other foot beside it, and breathes out slowly through her mouth, eyes down on the step, jaw set. One step only.",
+        "THE SHOT: a medium shot from the landing at the top of the stairs, looking down the flight, exactly as the place reference shows it: "
+        f"Her, {HER_ID}, in {HER_B2}, stands three steps below the landing FACING UP THE STAIRS toward the camera, her face lifted, looking up past the camera toward the landing; the rest of the flight and the hall fall away below and behind her.",
+        "She goes DOWN the stairs BACKWARDS, away from the camera, one step at a time: both hands grip the banister rail beside her; she reaches one foot down behind her onto the next step down, "
+        "finds it, then brings the other foot down beside it, both feet together on the same step before the next; then the same again. About one step every three seconds, her eyes up, her jaw set. Two steps down in the clip, never faster; she never turns round.",
         F2, PHYS,
-        state("HER", "tired, in the dressing gown, mid-flight, both hands on the banister", "she is one step lower"),
-        "FOCUS: the nearest eye of Her is in sharp focus; the stair wall and its photographs behind fall to a soft, recognisable shape. The blur is optical: soft and round, never smeared.",
+        state("HER", "tired, bob and fringe in place, in the dressing gown, three steps below the landing, facing up the stairs, both hands on the banister", "she is two steps lower, still facing up"),
+        "FOCUS: her face and hands are in sharp focus; the hall far below her falls soft. The blur is optical: soft and round, never smeared.",
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, "no talking, no mouth moving, no letting go of the banister", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    risks=[{"risk": "she goes up instead of down", "prevented_by": "facing down the flight, lowering onto the next step down"}, {"risk": "the gown changes", "prevented_by": "outfit card"},
-           {"risk": "she lets go of the banister", "prevented_by": "both hands on the rail, negative"}]))
+        negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, "no turning round, no facing down the stairs, no walking forwards, no climbing up toward the camera, no letting go of the banister with either hand, no talking, no mouth moving", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    risks=[{"risk": "she turns and walks down facing forwards", "prevented_by": "facing up the stairs toward the camera written at start and end state; turning negatives"},
+           {"risk": "she climbs toward the camera instead of descending", "prevented_by": "'away from the camera, down', the foot reaching behind her, climbing negative"},
+           {"risk": "the stairs bend or her feet slide", "prevented_by": "NEG_STAIRS, one step every three seconds, both feet on each step (HT02)"},
+           {"risk": "the gown changes", "prevented_by": "the outfit card as Image3"}]))
 
-SHOTS.append(dict(beat="SC02-SH05", kind="dialogue", duration=4, line=L020, subject_motion="still", files=["C3", "P-HOUSE"], audios=["C3"],
+SHOTS.append(dict(beat="SC02-SH04", kind="broll", duration=4, line="", vo="L019", subject_motion="in_place", files=["N", "P-HOUSE", "OUT-N-B2"], audios=[], gen=2, go=GO_SC02B,
+    fix="User (chat): \"it should her looking up then stepping backwards one at a time same steps both feet, both hand on the banister\" → the profile now shows her facing UP the flight and lowering backwards onto the step behind her, both feet together, both hands on the rail (v1 had her facing down the flight)",
     prompt=" ".join([
-        manifest([("@image1", SHEET("the husband", HUS_OUT)), ("@image2", HALL), ("@audio1", VOICE("the husband"))]),
+        manifest([("@image1", SHEET("Her", HER_B2)), ("@image2", HALL), ("@image3", CARD_B2)]),
         SERIES, LOOK, INHERIT, HOUSE, MORNING,
-        f"THE SHOT: a medium close-up at his eye level, three-quarter on, in the hall at the foot of the stairs: the husband, {HUS_ID}, in {HUS_OUT}, beside the bottom newel post, the stairs rising soft behind him.",
-        "He holds a plain white mug of tea at chest height in his right hand, his left hand on the newel post; he glances up the stairs, then a little away, not quite looking at how she is coming down, and says: \"" + L020 + "\"",
+        "THE SHOT: a medium close-up in profile at her eye level, seen from the hall side through the square spindles of the banister, a long lens, shallow focus on her eye: "
+        f"Her, {HER_ID}, in {HER_B2}, mid-flight, FACING UP THE STAIRS toward the top of the frame's slope, her face lifted toward the landing; the bottom of the flight lies behind her back.",
+        "Both hands grip the banister rail in front of her; she reaches her foot down behind her onto the next step down, lowers her weight onto it, brings the other foot down beside it so both feet stand together on the same step, and breathes out slowly through her mouth, eyes still up. One step only.",
         F2, PHYS,
-        "While the line is spoken, the husband keeps doing one thing with their hands: his right hand holding the mug still at chest height, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
-        state("THE HUSBAND", "worried and hiding it, in his own clothes, at the foot of the stairs with her tea", "nothing"),
-        "FOCUS: the nearest eye of the husband is in sharp focus; the stairs behind him fall to a soft, recognisable shape. The blur is optical: soft and round, never smeared.",
-        dialogue("the husband", L020, VOICE_C3, "he will not watch her come down backwards. Speaking to his wife on the stairs.",
+        state("HER", "tired, in the dressing gown, mid-flight, facing up the stairs, both hands on the banister", "she is one step lower, still facing up"),
+        "FOCUS: the nearest eye of Her is in sharp focus; the spindles in front and the stair wall with its photographs behind fall to a soft, recognisable shape. The blur is optical: soft and round, never smeared.",
+        SILENT,
+        negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, "no turning round, no facing down the stairs, no stepping up, no talking, no mouth moving, no letting go of the banister with either hand", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    risks=[{"risk": "she faces down the flight", "prevented_by": "facing up the stairs, the bottom of the flight behind her back, turning negatives"},
+           {"risk": "she steps up instead of down", "prevented_by": "the foot reaching down behind her, stepping-up negative"},
+           {"risk": "she lets go of the banister", "prevented_by": "both hands on the rail, negative"}, {"risk": "the gown changes", "prevented_by": "outfit card"}]))
+
+SHOTS.append(dict(beat="SC02-SH05", kind="dialogue", duration=4, line=L020, subject_motion="still", files=["C3", "L-KITCHEN"], audios=["C3"], gen=3, go=GO_KITCHEN,
+    fix="User (chat): \"lets do this at the kitchen where he is wating for the main character\" → the tea moment moved from the landing to the kitchen: he has been waiting there with her tea and she comes in from the hall after the backwards descent (SH03/SH04). Third generation of this shot at the user's call",
+    prompt=" ".join([
+        manifest([("@image1", SHEET("the husband", HUS_OUT)), ("@image2", KITCHEN), ("@audio1", VOICE("the husband"))]),
+        SERIES, LOOK, INHERIT, KITCHEN_SC,
+        f"THE SHOT: a medium close-up at his eye level, three-quarter on, from the kitchen doorway where she has just come in: the husband, {HUS_ID}, in {HUS_OUT}, stands by the scrubbed pine table, "
+        "the sage-green cupboards and the window over the sink soft behind him, exactly the kitchen of the place reference.",
+        "He has been waiting for her; he holds a plain white mug of tea out toward her at chest height in his right hand, his left hand resting on the back of a ladder-back chair; he glances at her, then a little away, not quite looking at her, and says: \"" + L020 + "\" His feet stay where they are.",
+        F2, PHYS,
+        "While the line is spoken, the husband keeps doing one thing with their hands: his right hand holding the mug out still at chest height, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
+        state("THE HUSBAND", "worried and hiding it, in his own clothes, in the kitchen by the table with her tea", "nothing"),
+        "FOCUS: the nearest eye of the husband is in sharp focus; the kitchen behind him falls to a soft, recognisable shape. The blur is optical: soft and round, never smeared.",
+        dialogue("the husband", L020, VOICE_C3, "he has waited in the kitchen while she came down backwards and will not mention it. Speaking to his wife as she comes in.",
                  "makes it ordinary. Opens light; turns on 'alright', where his eyes slide away; exits holding the mug out a little. Stress on 'alright'.",
                  "gruff and soft, an ordinary morning voice, matching the face in this shot.",
-                 "he has seen it every morning and it frightens him, which leaks only through his eyes not staying on her."),
+                 "he heard every step and it frightens him, which leaks only through his eyes not staying on her."),
         AUD,
-        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no logo or writing on the mug, no climbing the stairs", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    risks=[{"risk": "he stares straight at her", "prevented_by": "the glance up and away written (the act map's 'not quite looking')"},
+        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no logo or writing on the mug, no stairs, no hall, no walking, no sitting down", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    risks=[{"risk": "the room drifts from the kitchen plate", "prevented_by": "the kitchen plate as Image2, named anchors (table, cupboards, sink window) (HT17)"},
+           {"risk": "he stares straight at her", "prevented_by": "the glance and away written (the act map's 'not quite looking')"},
            {"risk": "voice drifts", "prevented_by": "his voice master as Audio1"},
            {"risk": "a logo on the mug", "prevented_by": "a plain white mug, negative (HT18)"}]))
 
-SHOTS.append(dict(beat="SC02-SH06", kind="dialogue", duration=4, line=L021, subject_motion="still", files=["N", "C3", "P-HOUSE", "OUT-N-B2"], audios=["N"],
+SHOTS.append(dict(beat="SC02-SH06", kind="dialogue", duration=4, line=L021, subject_motion="still", files=["N", "C3", "L-KITCHEN", "OUT-N-B2"], audios=["N"], gen=3, go=GO_KITCHEN,
+    fix="User (chat): \"lets do this at the kitchen where he is wating for the main character\" → she takes the tea in the kitchen, just inside the doorway from the hall, over his shoulder. Third generation of this shot at the user's call",
     prompt=" ".join([
-        manifest([("@image1", SHEET("Her", HER_B2)), ("@image2", SHEET("the husband", HUS_OUT)), ("@image3", HALL), ("@image4", CARD_B2), ("@audio1", VOICE("Her"))]),
-        SERIES, LOOK, INHERIT, HOUSE, MORNING,
-        "THE SHOT: a close-up over the husband's shoulder at her eye level: the soft back of his grey head and his brown cardigan shoulder fill the near left edge, out of focus; "
-        f"beyond him, sharp, Her, {HER_ID}, in {HER_B2}, stands on the bottom step of the stairs, a little above him, the banister beside her.",
+        manifest([("@image1", SHEET("Her", HER_B2)), ("@image2", SHEET("the husband", HUS_OUT)), ("@image3", KITCHEN), ("@image4", CARD_B2), ("@audio1", VOICE("Her"))]),
+        SERIES, LOOK, INHERIT, KITCHEN_SC,
+        "THE SHOT: a close-up over the husband's shoulder at her eye level, in the kitchen: the soft back of his grey head and his brown cardigan shoulder fill the near left edge, out of focus; "
+        f"beyond him, sharp, Her, {HER_ID}, in {HER_B2}, stands just inside the kitchen, the end of the scrubbed pine table and the sage-green cupboards soft beside her.",
         "She takes the plain white mug from his hand with both hands, looks at him, and gives a small tight smile that does not reach her eyes, and says: \"" + L021 + "\"",
         F2, PHYS,
         "While the line is spoken, Her keeps doing one thing with their hands: both hands around the mug at chest height, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
-        state("HER", "tired, in the dressing gown, on the bottom step", "the mug is in her hands"),
-        state("THE HUSBAND", "in the near foreground, his back to the camera, out of focus", "the mug has left his hand"),
-        "FOCUS: the nearest eye of Her is in sharp focus; his shoulder in the foreground and the hall behind fall to a soft, recognisable shape. The blur is optical: soft and round, never smeared.",
-        dialogue("Her", L021, VOICE_N, "she has just come down backwards and will not let him say anything about it. Speaking to her husband, close.",
+        state("HER", "tired, in the dressing gown, just come into the kitchen", "the mug is in her hands"),
+        state("THE HUSBAND", "in the near foreground in the kitchen, his back to the camera, out of focus", "the mug has left his hand"),
+        "FOCUS: the nearest eye of Her is in sharp focus; his shoulder in the foreground and the kitchen behind her fall to a soft, recognisable shape. The blur is optical: soft and round, never smeared.",
+        dialogue("Her", L021, VOICE_N, "she has just got down the stairs backwards and will not let him say anything about it. Speaking to her husband, close, in the kitchen.",
                  "closes the subject. Opens on the smile; turns on 'love', where her eyes drop to the mug; exits looking down. Stress on 'Fine'.",
                  "quiet and a little bright, too quick to be true, matching the face in this shot.",
                  "it is not fine, which leaks only through the smile stopping short of her eyes."),
         AUD,
-        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no logo or writing on the mug, no spilling, no crying", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    risks=[{"risk": "the wrong person in the foreground", "prevented_by": "his sheet as Image2, named as the soft foreground"},
+        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no logo or writing on the mug, no spilling, no crying, no stairs, no front door", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    risks=[{"risk": "they are in the hall or on the stairs", "prevented_by": "the kitchen plate, KITCHEN scene block, stairs/front-door negatives"},
+           {"risk": "the wrong person in the foreground", "prevented_by": "his sheet as Image2, named as the soft foreground"},
            {"risk": "the smile overplayed", "prevented_by": "'small tight', NEG-DRAMA"}, {"risk": "voice drifts", "prevented_by": "her voice master"}]))
 
 SHOTS.append(dict(beat="SC02-SH07", kind="broll", duration=6, line="", vo="L022", subject_motion="still", files=["N", "L-BEDROOM", "OUT-N-B2"], audios=[],
@@ -195,7 +210,7 @@ SHOTS.append(dict(beat="SC02-SH07", kind="broll", duration=6, line="", vo="L022"
            {"risk": "she stands up or leaves", "prevented_by": "sits still, nothing else moves, negative"}]))
 
 FILES = {"N": "cast/N-HER_v1.png", "C3": "cast/C3-HUSBAND_v1.png", "P-HOUSE": "plates/P-HOUSE_v1.png", "L-STAIRS": "plates/L-STAIRS_v4.png",
-         "L-BEDROOM": "plates/L-BEDROOM_v1.png", "OUT-N-B2": "body/SC02/ingredients/OUT-N-B2_v1.png", "PROP-BAGS": "body/SC02/ingredients/PROP-BAGS_v1.png"}
+         "L-BEDROOM": "plates/L-BEDROOM_v1.png", "L-KITCHEN": "plates/L-KITCHEN_v1.png", "OUT-N-B2": "body/SC02/ingredients/OUT-N-B2_v1.png", "PROP-BAGS": "body/SC02/ingredients/PROP-BAGS_v1.png"}
 AUDIO = {"N": "voice/N_voice_master.mp3", "C3": "voice/C3_voice_master.mp3"}
 
 if __name__ == "__main__":
@@ -204,7 +219,7 @@ if __name__ == "__main__":
                 "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16", "start_image": None,
                 "ingredients_approved": True, "files": [FILES[f] for f in s["files"]], "audios": [AUDIO[a] for a in s["audios"]],
                 "generate_audio": bool(s["line"]), "dialogue": s["line"] or None, "script_line": s["line"] or None, "pace": "unhurried",
-                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": s.get("gen", 1), "fix_note": s.get("fix"), "user_go": GO,
+                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": s.get("gen", 1), "fix_note": s.get("fix"), "user_go": s.get("go", GO),
                 "risks": s["risks"], "vo": s.get("vo"), "pilot": s.get("pilot", False), "scene": 2,
                 "taste": ["HT02", "HT04", "HT09", "HT17", "HT18", "HT22", "HT23"]}
         (H / f"{s['beat']}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))

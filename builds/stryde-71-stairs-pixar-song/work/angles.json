@@ -330,6 +330,66 @@
   }
  },
  {
+  "beat": "P-05b",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "N hands",
+  "height": "eye",
+  "side": "front",
+  "fg": "clean",
+  "scale": "CU",
+  "why": "eye at table height = the heap at the edge, nothing left in it",
+  "mirror_of": null,
+  "mode": 2,
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "N-D1c",
+  "face": false,
+  "light": {
+   "source": "window over the sink, south wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "P-05c",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "fg": "through",
+  "scale": "CU",
+  "why": "through the heap in the foreground = what she is left with between her and us",
+  "mirror_of": null,
+  "mode": 2,
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "N-D1c",
+  "face": true,
+  "light": {
+   "source": "window over the sink, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 5600
+  }
+ },
+ {
   "beat": "T-01a",
   "group": "Act 2",
   "type": "BR",
