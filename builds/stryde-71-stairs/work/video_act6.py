@@ -12,9 +12,14 @@ START = json.load(open(S + "/act6_cur.json"))
 HID = ", no strap showing, no strap over the jeans, no product"
 WALK = ", no stumbling, no limping, no walking stick, no looking at the camera"
 
-FIX = {"PR-01b": ("v1 had her lunge and strain against the wheelbarrow (motion fault, user: 'just normal pushing the wagon she should not be struggling') → "
+FIX = {"PR-06a": ("start image changed (user Fix on the image: strap shrunk to about the mug's height, image v2 confirmed) → same motion on the new frame; v1 was made from image v1"),
+       "PR-01b": ("v1 had her lunge and strain against the wheelbarrow (motion fault, user: 'just normal pushing the wagon she should not be struggling') → "
                   "she rises out of the lean into an easy upright stance and pushes the barrow lightly one relaxed step, no effort, no strain")}
 G2 = {
+ "PR-06a": dict(framing="CLOSE as in the start frame, the cleared kitchen table with the coffee mug and the small strap.", cam=V.SWAY,
+   motion="Steam rises slowly from the coffee mug and drifts away; nothing else on the table moves. A quiet held moment in the morning light.",
+   extra=PNEG + ", no objects moving, no mug changing, no strap growing, no hands entering, no pills, no brace", pace="unhurried", smot="still", rigid=True,
+   risks=[("strap grows back to the old size","no strap growing + RIGID clause"),("mug morphs","HOLD"),("steam turns to smoke","'steam rises slowly'")]),
  "PR-01b": dict(framing="MEDIUM as in the start frame, in the back garden, the woman with the wheelbarrow.", cam=LOCKED,
    motion="She straightens up easily from the lean into a relaxed, upright stance and pushes the loaded wheelbarrow forward lightly with ONE easy step in about a second — no effort, no strain, "
           "her arms relaxed, a calm smile, as if it weighs nothing. The soil stays in the barrow. Her trousers cover her knees.",
@@ -51,5 +56,8 @@ def go(beat, cfg, gen=1, fix=None):
     print(beat, V.LEN[beat], "s", build(beat, cfg, START[beat], gen=gen, fix=fix), "chars gen", gen)
 
 if __name__ == "__main__":
-    for bt, cfg in G2.items(): go(bt, cfg, gen=2, fix=FIX[bt])
-    for bt, cfg in B6.items(): go(bt, cfg)
+    only = sys.argv[1:]
+    for bt, cfg in G2.items():
+        if not only or bt in only: go(bt, cfg, gen=2, fix=FIX[bt])
+    for bt, cfg in B6.items():
+        if not only or bt in only: go(bt, cfg)

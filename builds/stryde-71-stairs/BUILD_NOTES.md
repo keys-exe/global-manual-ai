@@ -306,4 +306,11 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - Waiting for the user to decide how to free space (e.g. a second Old board for replaced versions).
     - C-01a failed on Kie ("Image fetch failed") and was resent.
     - fetch.py fix: the signed direct link refuses HEAD requests, so the size is read from the GET's headers. That is why the first background fetches saved nothing.
+  - **2026-10-01: second Current board (user's choice).**
+    - Acts 6–7 + the edit now live on https://claude.ai/artifact/HSmTXmZTygXQAoyxk5Kqhc (same template, `BOARD_ROLE` "current", title "STRYDE · 71 Stairs · Acts 6–7"). Its `builds` doc has `boards.current` = this board and `boards.currentFirst` = the first Current board.
+    - Nothing on the existing boards was moved or deleted. Images and the uploaded L videos were copied server-side; cast and plate references are written as `imageRefs` with `asset` so no extra cards show. Older archived image versions keep their Old-board `archiveAsset`.
+    - Uploaded: L-02b (2 parts), L-03a, C-01a–C-09a, all To check. The first Current board's docs carry a note linking here.
+    - PR-01b and PR-06a moved to this board too, because the first Current board can't take new files.
+    - PR-01b video Fix: "use a different image cause he video gets distorted". The frame was the cause: a lunge with the back leg raised, the barrow seen nose-on with crossing, bent handles. New start image v4 (work/prompts/PR-01b.v4.t2i.txt, nano-banana-pro, ref = v3 for the same woman and garden): she walks upright behind the barrow in a clean side view, both feet down, straight handles, single wheel ahead. The light line had said "bedroom window" and now reads afternoon sun. Video generation 3 waits for the user to confirm image v4 (§22X go).
+    - PR-06a video generation 2 from the confirmed image v2 (work/video_act6.py G2, preflight PASS).
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
