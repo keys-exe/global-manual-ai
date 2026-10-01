@@ -3,30 +3,39 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"hk2_letters_lift\",\"subject\":\"THE SAME WOMAN'S HANDS as in the start frame, 57, long knuckly fingers, rust needlecord cuffs; the desk buried in formal typed letters of different lengths; exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"Overhead as in the start frame: the lens directly above the desk, looking straight down. FOCUS: everything from near to far stays sharp.\"},\"motion\":\"CONTINUING: both hands are already lifting the thick stack of letters out of the tray. COMPLETING: one lift, about two seconds — the stack rises clear of the tray and toward the lens, its weight bowing the sheets, one loose envelope sliding off the top back onto the pile. UNRESOLVED: her hands hold the stack just above the desk. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum: heavy start, nothing at uniform speed, the paper sags and lags.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, soft morning window light from the left, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no second lift, no letters flying, no paper floating, no extra fingers, no fused fingers, no readable text, no slow motion, no music, no handwriting appearing, no letters changing, no sound\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_140635_9af1fe41-210a-41b0-a2a6-ed02d6068d6d.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_101938_ae40b51c-fe63-4bcf-9030-82287f93594a.png",
  "start_approved": true,
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 2,
+ "audio": false,
+ "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": from this frame, her right fingers flick down the trackpad twice and the page on the screen scrolls fast upward, review after review sliding past — the same white page, round photos, gold stars and short quotes — about two seconds, fast, then it slows to a stop on another review. Handheld phone over her right shoulder, a gentle breath sway, the camera stays where it is. Only the page on the screen moves; the laptop, her left hand, the desk and the brick wall stay put; two hands, every finger whole. No camera move, no zoom, no extra fingers, no screen flicker, no sound.",
+ "script_line": "Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.",
+ "motion_plan": "her right fingers flick down the trackpad twice and the page on the screen scrolls fast upward, review after review sliding past — the same white page, round photos, gold stars and short quotes — about two seconds, fast, then it slows to a stop on another review",
+ "motion_confirmed": true,
+ "user_go": "user 2026-10-01: make clip for HK2-01 (new confirmed frame v6)",
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT13"
+ ],
+ "generation": 3,
+ "fix_note": "new shot (user Fixes: a fast scroll in the laptop, reviews / survey answers, TH-HK2 as background, their review page on screen) → confirmed start frame v6; one fast scroll, sound off",
  "risks": [
   {
-   "risk": "the typed letters morph into handwriting",
-   "prevented_by": "no handwriting appearing, no letters changing"
+   "risk": "the camera pushes in on the screen instead of holding",
+   "prevented_by": "the camera stays where it is; no camera move, no zoom"
   },
   {
-   "risk": "fingers fuse into the paper",
-   "prevented_by": "no extra fingers, no fused fingers"
+   "risk": "the page turns into a different layout as it scrolls",
+   "prevented_by": "the same white page, round photos, gold stars and short quotes"
   },
   {
-   "risk": "papers fly off",
-   "prevented_by": "one envelope slides back onto the pile; no letters flying"
+   "risk": "fingers fuse into the trackpad",
+   "prevented_by": "two hands, every finger whole"
   }
- ],
- "audio": false,
- "fix_note": "frame fault: v1 clip was made from handwritten letters (user Fixes: formal letters, then different lengths) → new start frame v4 confirmed by the user; same single lift of the stack, sound off"
+ ]
 }
