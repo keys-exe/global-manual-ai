@@ -24,7 +24,7 @@ import imageio_ffmpeg  # noqa: E402
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 W, H, FPS = 1080, 1920, 24
 FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
-SIZE, PAD_X, PAD_Y, RADIUS, Y_CENTER, LINE_GAP, MAXW = 46, 20, 10, 14, 0.70, 4, 4   # user 2026-10-01: "THE CAPTION IS TOO BIG AND TOO HIGH"
+SIZE, PAD_X, PAD_Y, RADIUS, Y_CENTER, LINE_GAP, MAXW = 46, 20, 10, 14, 0.79, 4, 4   # user 2026-10-01: "THE CAPTION IS TOO BIG AND TOO HIGH"; "THE CAPTON SHOULD NOT COVER THE STRAP BRAND LOGO MOVE IT A BIT DOWN" (0.70 -> 0.79)
 SAFE_L, SAFE_R = 100, 940          # the right-side rail (likes, comments, share) starts ~960 px
 SAFE_CX, SAFE_W = (SAFE_L + SAFE_R) / 2, SAFE_R - SAFE_L
 snap = lambda t: round(t * FPS) / FPS
@@ -88,7 +88,7 @@ def render_card(text, path, font):
     widths = [d.textlength(l, font=font) for l in lines]
     bw = int(max(widths)) + 2 * PAD_X; bh = lh * len(lines) + LINE_GAP * (len(lines) - 1) + 2 * PAD_Y
     x0 = int(SAFE_CX - bw / 2); y0 = int(H * Y_CENTER - bh / 2)
-    assert x0 >= SAFE_L and x0 + bw <= SAFE_R and y0 >= H * 0.14 and y0 + bh <= H * 0.75, (text, x0, bw, y0, bh)
+    assert x0 >= SAFE_L and x0 + bw <= SAFE_R and y0 >= H * 0.14 and y0 + bh <= H * 0.84, (text, x0, bw, y0, bh)
     d.rounded_rectangle([x0, y0, x0 + bw, y0 + bh], RADIUS, fill=(255, 255, 255, 245))
     for i, (l, wd) in enumerate(zip(lines, widths)):
         d.text((SAFE_CX - wd / 2, y0 + PAD_Y + i * (lh + LINE_GAP)), l, font=font, fill=(10, 10, 10, 255))

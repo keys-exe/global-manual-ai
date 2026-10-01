@@ -368,3 +368,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Hooks unchanged (already full screen, cuts confirmed).
 - Captions: 46 px (was 64), centred at 70 % height (was 58 %), still inside the safe zone.
 - Final board: FINAL-HK1 v3, FINAL-HK2 v2, FINAL-HK3 v2 — all `review`; the replaced versions on Old 2.
+
+### 2026-10-01 ~15:10 UTC — new B-rolls on doctor-only lines; captions lower
+- User: "SOME OF THE BROLLS ARE MISSING ALSO THE CAPTON SHOULD NOT COVER THE STRAP BRAND LOGO MOVE IT A BIT DOWN", then "there is a band of tendon about as wide as your thumb — THIS LINE AND ALSO CHECK THE OTHER SCRIPT LINES IF IT CAN BE ADDED A BROLL".
+- Every confirmed B-roll was already in the cut; the doctor-only lines were BR-03b (thumb line, card deleted by the user 09-29), BR-22a3 ("From the Stryde site.", card deleted by the user — left alone), the Act 4 stretch (line 17, 7.9 s) and the Act 5 line ("You cannot strengthen your way out of a load problem. You have to move the load.", 4.6 s).
+- New images (`acts/new_r25/build.py`, nano_banana_pro, one render each; Higgsfield reports nano_banana_2): **BR-03b** (edit of BR-04 v9: her thumb flat across the band), **BR-18** ("because it is the cheapest thing on the list and the only one aimed at the band." — edit of BR-11b: sleeve, brace, gel, strap in a row on the kitchen table; the doctor keeps "I do not sell these and I make nothing from saying this. I say it before we talk about anything else,"), **BR-21** ("You cannot strengthen your way out of a load problem." — her seated leg raise against an exercise band in the front room; the doctor keeps "You have to move the load."). Preflight: only the Sunburst rule fails (build lock, §18A) and on BR-18 the product-first rule (Image 1 must be the edited frame). On the Current board To check with motion plans.
+- Current board store was full: two unreferenced images (2c6d8c6e…, 6ab8b1c0…) copied to Old 2 and deleted from Current.
+- Hooks: their doctor-only openings are the doctor's own intro/close and the hook cuts are confirmed — not changed.
+- Captions: centre moved 0.70 → 0.79 of the height (clear of the strap at knee height); re-render after the new B-roll videos land.
+- Next: user checks BR-03b / BR-18 / BR-21 images → Kling videos (§35A) → user checks → body re-cut with the new rows → finals re-rendered.

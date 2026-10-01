@@ -1,0 +1,28 @@
+{
+ "beat": "BR-03b",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"there is a band of tendon about as wide as your thumb.\": keep this photo (Image 1) exactly as it is, and show her own thumb laid flat across that band, just below her kneecap, exactly as wide as it. Keep the framing, her bent left knee head-on, her rust jersey sleeve and gold wedding band, the camel corduroy skirt, the mustard armchair, the rug, the room and the light. Change only her right hand: her thumb now lies flat and crosswise on the front of the knee, in the soft band directly below the bottom edge of the kneecap, the thumbnail facing the lens, the thumb's width covering that band from its top edge to its bottom edge. Her other four fingers curl loosely round the outer side of the knee. The kneecap sits just above the thumb, fully visible. Her hand stays the same hand as in the photo: pale, slightly freckled, sixty-nine years old. The knee and thumb fill about a third of the frame, in sharp focus.\n\nAvoid: no fingertip pressing, no thumb on the kneecap, no second hand on the knee, no text.",
+ "script_line": "there is a band of tendon about as wide as your thumb.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "BR-04 v9",
+   "kind": "frame"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "7527b4ef-2b3e-43c6-b59f-5e39cb223893",
+ "taste": [
+  "HT06"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": "build step-2 lock (§18A): this build's images run on nano_banana_pro, one render — no Sunburst switch on a running build (CLAUDE.md, V7.72 new builds only)"
+}

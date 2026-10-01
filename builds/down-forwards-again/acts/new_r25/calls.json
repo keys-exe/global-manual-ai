@@ -1,0 +1,61 @@
+[
+ {
+  "beat": "BR-03b",
+  "params": {
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "2k",
+   "count": 1,
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "7527b4ef-2b3e-43c6-b59f-5e39cb223893"
+    }
+   ],
+   "prompt": "For the line \"there is a band of tendon about as wide as your thumb.\": keep this photo (Image 1) exactly as it is, and show her own thumb laid flat across that band, just below her kneecap, exactly as wide as it. Keep the framing, her bent left knee head-on, her rust jersey sleeve and gold wedding band, the camel corduroy skirt, the mustard armchair, the rug, the room and the light. Change only her right hand: her thumb now lies flat and crosswise on the front of the knee, in the soft band directly below the bottom edge of the kneecap, the thumbnail facing the lens, the thumb's width covering that band from its top edge to its bottom edge. Her other four fingers curl loosely round the outer side of the knee. The kneecap sits just above the thumb, fully visible. Her hand stays the same hand as in the photo: pale, slightly freckled, sixty-nine years old. The knee and thumb fill about a third of the frame, in sharp focus.\n\nAvoid: no fingertip pressing, no thumb on the kneecap, no second hand on the knee, no text."
+  }
+ },
+ {
+  "beat": "BR-18",
+  "params": {
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "2k",
+   "count": 1,
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "fa5442a9-ed51-4c45-9e00-b0da971e9e0e"
+    },
+    {
+     "role": "image_references",
+     "value": "c942d91d-718d-4723-b190-ad85186ac8d9"
+    }
+   ],
+   "prompt": "For the line \"because it is the cheapest thing on the list and the only one aimed at the band.\": keep this photo (Image 1) exactly as it is, and show everything she tried in a row on her kitchen table, the small strap at the end of it. Keep the kitchen table, the room, the light and the camera angle. On the table, in one neat row from left to right: a grey knit knee sleeve, the hinged knee brace already in the photo, a white tube of gel, and last, the Stryde strap from Image 2, copied exactly: same rigid moulded shell, black knit band, slides and wordmark, nothing redesigned. True sizes: the strap's shell is 12 by 5 cm, smaller than the gel tube and far smaller than the brace; the strap lies flat with the shell facing up, about a quarter of the frame wide. The four things fill the width of the frame, all in sharp focus; every other surface bare.\n\nAvoid: no hands, no text, no price tags, no second strap."
+  }
+ },
+ {
+  "beat": "BR-21",
+  "params": {
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "resolution": "2k",
+   "count": 1,
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "02333782-0c9a-4696-b3f1-fcc7480fe8db"
+    },
+    {
+     "role": "image_references",
+     "value": "d0eeaf2a-abad-4a79-a9da-624c5eef41a1"
+    }
+   ],
+   "prompt": "Line: \"You cannot strengthen your way out of a load problem.\" The picture shows her doing her strengthening exercise, trying hard, and it not being the answer.\n\nA photo on an ordinary phone, held at seated eye height, three-quarter front. The woman is exactly the woman in Image 1: same face, age, hair and build. She wears a rust-coloured long-sleeve jersey top, a knee-length camel corduroy skirt with bare legs, and bare feet. She sits upright in the mustard armchair of the front room in Image 2, which stays exactly as it is. A green exercise band is looped round both ankles. She holds her left leg out straight against the band, a hand's height off the rug, her right foot flat on the floor, both hands gripping the chair arms. She is looking down at her left knee, her jaw set with effort, determined, not sad. She fills about half the frame, whole body in frame from hair to bare feet. Grey morning daylight from the window on the left.\n\nAvoid: no strap on either knee, no weights, no second person, no text."
+  }
+ }
+]

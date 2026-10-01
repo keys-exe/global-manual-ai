@@ -1,0 +1,71 @@
+{
+ "BR-03b": {
+  "line": "there is a band of tendon about as wide as your thumb.",
+  "act": "Act 1",
+  "refs": [
+   [
+    "BR-04 v9",
+    "frame"
+   ]
+  ],
+  "match": "frame",
+  "edit_of": "BR-04 v9",
+  "product": false,
+  "face": false,
+  "room": true,
+  "taste": [
+   "HT06"
+  ],
+  "motion": "From this frame: her thumb settles flat across the band under the kneecap and rests there; the knee stays still."
+ },
+ "BR-18": {
+  "line": "because it is the cheapest thing on the list and the only one aimed at the band.",
+  "act": "Act 4",
+  "refs": [
+   [
+    "BR-11b",
+    "frame"
+   ],
+   [
+    "front.webp",
+    "product"
+   ]
+  ],
+  "match": "frame",
+  "edit_of": "BR-11b",
+  "product": true,
+  "face": false,
+  "room": true,
+  "taste": [
+   "FP01",
+   "FP02",
+   "FP11",
+   "FP12",
+   "HT06"
+  ],
+  "motion": "From this frame: the camera eases in a little towards the small strap at the end of the row; nothing on the table moves."
+ },
+ "BR-21": {
+  "line": "You cannot strengthen your way out of a load problem.",
+  "act": "Act 5",
+  "refs": [
+   [
+    "P-PATIENT",
+    "character"
+   ],
+   [
+    "P1-P-FRONTROOM v2",
+    "location"
+   ]
+  ],
+  "match": null,
+  "edit_of": null,
+  "product": false,
+  "face": true,
+  "room": true,
+  "taste": [
+   "HT06"
+  ],
+  "motion": "From this frame: she lifts her left leg straight against the band once and lowers it slowly; she stays seated."
+ }
+}

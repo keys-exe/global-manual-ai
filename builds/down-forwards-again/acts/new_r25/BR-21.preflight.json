@@ -1,0 +1,32 @@
+{
+ "beat": "BR-21",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "Line: \"You cannot strengthen your way out of a load problem.\" The picture shows her doing her strengthening exercise, trying hard, and it not being the answer.\n\nA photo on an ordinary phone, held at seated eye height, three-quarter front. The woman is exactly the woman in Image 1: same face, age, hair and build. She wears a rust-coloured long-sleeve jersey top, a knee-length camel corduroy skirt with bare legs, and bare feet. She sits upright in the mustard armchair of the front room in Image 2, which stays exactly as it is. A green exercise band is looped round both ankles. She holds her left leg out straight against the band, a hand's height off the rug, her right foot flat on the floor, both hands gripping the chair arms. She is looking down at her left knee, her jaw set with effort, determined, not sad. She fills about half the frame, whole body in frame from hair to bare feet. Grey morning daylight from the window on the left.\n\nAvoid: no strap on either knee, no weights, no second person, no text.",
+ "script_line": "You cannot strengthen your way out of a load problem.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P-PATIENT",
+   "kind": "character"
+  },
+  {
+   "label": "P1-P-FRONTROOM v2",
+   "kind": "location"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT06"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": "build step-2 lock (§18A): this build's images run on nano_banana_pro, one render — no Sunburst switch on a running build (CLAUDE.md, V7.72 new builds only)"
+}

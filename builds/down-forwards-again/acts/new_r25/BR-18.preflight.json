@@ -1,0 +1,36 @@
+{
+ "beat": "BR-18",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"because it is the cheapest thing on the list and the only one aimed at the band.\": keep this photo (Image 1) exactly as it is, and show everything she tried in a row on her kitchen table, the small strap at the end of it. Keep the kitchen table, the room, the light and the camera angle. On the table, in one neat row from left to right: a grey knit knee sleeve, the hinged knee brace already in the photo, a white tube of gel, and last, the Stryde strap from Image 2, copied exactly: same rigid moulded shell, black knit band, slides and wordmark, nothing redesigned. True sizes: the strap's shell is 12 by 5 cm, smaller than the gel tube and far smaller than the brace; the strap lies flat with the shell facing up, about a quarter of the frame wide. The four things fill the width of the frame, all in sharp focus; every other surface bare.\n\nAvoid: no hands, no text, no price tags, no second strap.",
+ "script_line": "because it is the cheapest thing on the list and the only one aimed at the band.",
+ "face": false,
+ "room": true,
+ "product": true,
+ "body": false,
+ "refs": [
+  {
+   "label": "BR-11b",
+   "kind": "frame"
+  },
+  {
+   "label": "front.webp",
+   "kind": "product"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "fa5442a9-ed51-4c45-9e00-b0da971e9e0e",
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP11",
+  "FP12",
+  "HT06"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": "build step-2 lock (§18A): this build's images run on nano_banana_pro, one render — no Sunburst switch on a running build (CLAUDE.md, V7.72 new builds only)"
+}
