@@ -83,13 +83,13 @@ R("P-02a", A, (8, 10), "down", "problem (edit of P0: the top of the flight, HT17
   "she looks down the stairs and looks away", "one turn of the head, about two seconds", "none", "absent", "—",
   "low", FR, "clean", "MEDIUM", "low from the foot of the stairs = the whole flight between her and the hall; trapped up there", "eyes", "deep", *STAIR_AM, "morning", "problem: grey", True, "MUS-EXPOSE")
 R("P-03a", A, (11, 12), "brace", "failed fix", "N", "L-N-KITCHEN", "N-D1",
-  "CU seated at the kitchen table: a big black hinged knee brace over her bare right knee, sagging below the kneecap, her hand hauling it up",
-  "her hand pulls the brace up once and it slips back", "one pull, about two seconds", "hands: large in frame, one movement", "absent (generic brace, §10)", "—",
-  "high", TQ, "clean", "CU", "high = her own view of her knee", "hands", "medium", *KIT, "morning", "problem: grey", False, "MUS-EXPOSE")
+  "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a big black hinged knee brace sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new)",
+  "her hand pulls the brace up once and it slips back", "one pull, about two seconds", "hands: large in frame, one movement, seated", "absent (generic brace, §10)", "—",
+  "low", PR, "clean", "CU", "low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14)", "hands", "medium", *KIT, "morning", "problem: grey", False, "MUS-EXPOSE")
 R("P-03b", A, (13, 13), "ankle", "failed fix", "N feet", "L-N-KITCHEN", "N-D1",
-  "CU at floor level: the brace bunched around her right ankle above her slipper",
-  "she shifts her foot once", "one small shift, about a second", "feet only", "absent", "—",
-  "ground", TQ, "clean", "CU", "ground = where it ended up", "foreground", "medium", *KIT, "evening", "problem: grey", False, "MUS-EXPOSE")
+  "CU from the same side, the frame dropped to floor level: the same seat and chair as P-03a, the same brace now bunched around her right ankle above her slipper, both slippers on the floor; hands and head out of frame (edit of the P-03a frame, FP14)",
+  "she shifts her foot once", "one small shift, about a second", "feet only, seated", "absent", "—",
+  "ground", PR, "clean", "CU", "ground = where it ended up; the same side as P-03a so the two connect", "foreground", "medium", *KIT, "evening", "problem: grey", False, "MUS-EXPOSE")
 R("P-04a", A, (14, 14), "everything", "failed fix (HT10)", "N hands", "L-N-KITCHEN", "N-D1c",
   "overhead on the kitchen table: her two hands spread the whole arsenal across the wood — pill bottles, a gel tube, two sleeves, a hinged brace, an ice pack",
   "both hands push the pile apart", "one push, about two seconds", "hands: large in frame", "absent (generic, §10)", "—",

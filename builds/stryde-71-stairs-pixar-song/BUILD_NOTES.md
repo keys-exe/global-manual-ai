@@ -331,5 +331,15 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   check — seen: both at the head of the stairs from behind, hands on the rail, one slipper reaching down the step. `docs/actmap` v20 on Current and
   Plan (P-01a framing: starting from the top). Balances as printed: Higgsfield 8,085.15; Kling 41,559 (build doc v22).
 
-**Waiting on:** picks or Fix notes on P-01a v11/v12, P-03b v7/v8, P-05b, P-05c; Confirm or Fix on the clips P-03a v1, P-01b v2 (a third run needs
-your go), P-02a v2, P-05a v3. Then the clips for P-01a / P-03b / P-05b / P-05c from the picks; then Act 2 (the wedding).
+- ~19:00 UTC — board: **P-01a picked v12 (B)** → **P-01a clip v1** 5 s / 40 cr To check (seen: from the top step she lowers one foot to the step
+  below and the other follows, back to the lens, nobody speaks); v11 to Old. User **"THE WHOLE P03 I NEED NEW ONES THERE / FIX THEM ALL"** + board
+  P-03a "NEW IMAGE", P-03b "USE THE P03A AS REFERENCE FOR THE BRACE": both beats re-staged (`work/actmap.py`: P-03a low · profile at knee height, seated
+  on the kitchen chair; P-03b the same side at floor level, an edit of the P-03a frame; `STEP4_5.md`, `docs/actmap` v21): **P-03a v5/v6**
+  (`body/P-03a.v7.prompt.txt`, PASS, edit of the P2 plate — seen: A seated with the right leg out, the hinged brace at the knee, hand on its top
+  strap; B seated square to the table, the brace below the knee) and **P-03b v9/v10** (`P-03b.v7.prompt.txt`, PASS, a direct edit of the new P-03a A —
+  seen: both the same seat and side at floor level, the brace bunched at the ankle, evening light; **if the user picks P-03a B, P-03b is made again
+  from B**) To check. P-03a's old image (v3) and clip (v1) and P-03b's v7/v8 copied to Old (Old docs v3/v4), deleted from Current. Balances as printed:
+  Higgsfield 8,054.15; Kling 41,519 (build doc v23).
+
+**Waiting on:** picks or Fix notes on P-03a v5/v6, P-03b v9/v10, P-05b, P-05c; Confirm or Fix on the clips P-01a v1, P-01b v2 (a third run needs your go),
+P-02a v2, P-05a v3. Then the clips for P-03a / P-03b / P-05b / P-05c from the picks; then Act 2 (the wedding).

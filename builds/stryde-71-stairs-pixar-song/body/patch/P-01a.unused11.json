@@ -1,55 +1,4 @@
 {
- "act": "Hook 1",
- "angle": "low · behind · clean · MEDIUM — low from the hall, her back to us = going down the wrong way, small against the flight rising above her",
- "bars": 1,
- "beat": "P-01a",
- "build": "stryde-71-stairs-pixar-song",
- "duration": 5,
- "eg": "",
- "flow": [
-  "image",
-  "video"
- ],
- "focus": "deep · deep",
- "framing": "MEDIUM from the hall, the lens low on the top of the flight and the landing: N starting from the top — standing on the top step at the head of the stairs (user Fix 2026-10-01: starting from the top to show the moving backwards; never at the bottom), her back to the lens, face turned up to the landing, both hands gripping the oak rail, her first foot reaching back and down to the step below",
- "imageAsset": "1dfc8df04304a40cd25abf92c38d556b",
- "imageAt": 1790881191787,
- "imageConnector": "Higgsfield",
- "imageCredits": 2.14,
- "imageFault": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L14)",
- "imageJob": "aaffd0fa-e14c-4c86-ad0c-b7e7d5a26b91",
- "imageMatch": "frame",
- "imageModel": "nano_banana_pro → logged nano_banana_2",
- "imagePair": [],
- "imageParts": [],
- "imagePick": 12,
- "imagePrompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": Keep this photo exactly as it is — the hall floor, the whole flight, the oak rail and newel, the photo wall, the light — and only stand the woman up. Image 1 is the picture; nothing in it moves but her.\nMedium shot from the hall floor looking up the whole flight, sharp on her. The woman of Image 1, seventy-one, now standing on the top step where she sat, turned away from the lens to face the landing, going down backwards: her back to us, the back of her grey head, both hands gripping the oak rail, her right foot reaching back and down to the step below; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman from behind at the top of the flight of Image 1, every step between her and the lens, the rail, the newel, the photo wall; every other surface bare. Two hands on the rail, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Clothing and frames plain — no lettering, logos or labels; no second person.",
- "imageRefs": [
-  {
-   "kind": "frame",
-   "label": "P-02a frame v6 B (confirmed) — her at the top of the flight",
-   "ref": "stryde-71-stairs-pixar-song__P-02a",
-   "role": "Image 1 · edited (§6A rule 3, HT17, FP14)"
-  }
- ],
- "imageRegens": 3,
- "imageRes": 7403677,
- "imageStatus": "confirmed",
- "imageTaste": [
-  "HT02",
-  "HT03",
-  "HT04",
-  "HT08",
-  "HT09",
-  "HT12",
-  "HT17",
-  "HT18",
-  "HT19",
-  "HT22"
- ],
- "imageType": "image/png",
- "imageUnused": 11,
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_185749_c5f6bfae-2afa-42de-bc4c-d7063c3c5646.png",
  "imageVersions": [
   {
    "archiveAsset": "162bcb731ef282ae1b00c5fd1add634b",
@@ -228,13 +177,15 @@
    "credits": 2.14,
    "job": "aaffd0fa-e14c-4c86-ad0c-b7e7d5a26b91",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L14)",
+   "note": "user Fix: \"she should be starting from the top to show case the moving backwards\" → this pair is a direct image edit of the confirmed P-02a frame (her on the top step, the whole flight from the hall floor), stood up with her back to the lens and one foot reaching down (FP14); the v5 pair made from a cropped plate still put her at the newel and was never shown (L14) · not chosen (the user picked B, v12); copied to Old versions",
    "pair": "A",
    "res": "1536×2752",
    "size": 5425880,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_185749_aaffd0fa-e14c-4c86-ad0c-b7e7d5a26b91.png",
-   "v": 11
+   "v": 11,
+   "archived": true,
+   "archiveAsset": "1f53a8894eb04d598e3e5c0bcd29e781"
   },
   {
    "asset": "1dfc8df04304a40cd25abf92c38d556b",
@@ -252,27 +203,6 @@
    "v": 12
   }
  ],
- "key": "backwards",
- "layout": "full",
- "ledger": "VN04",
- "light": "landing window at the top of the stairs, south wall · key L · morning · problem: grey · 6500K",
- "line": "Six weeks ago, I was going down my stairs backwards.",
- "location": "L-N-STAIRS",
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
- "motionPlan": "From this frame: one careful step down backwards, her back to the lens — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
- "music": "MUS-EXPOSE",
- "onScreen": 3.25,
- "pinEnd": "no",
- "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
- "product": "absent · —",
- "section": "Hook — MUS-OPEN",
- "shot": "low · behind · clean · MEDIUM",
- "songIn": 16.14,
- "songOut": 19.39,
- "stage": "broll",
- "staging": "stairs: camera at the top, subject below, slow single step",
- "status": "ready",
- "storyDay": "N-D1",
- "title": "problem (HT02; user Fix 2026-10-01: looking up the stairs, stepping backward — so the lens goes to the foot of the flight, edit of P0)",
- "updatedAt": 1790881215227
+ "imageUnusedArchived": "1f53a8894eb04d598e3e5c0bcd29e781",
+ "updatedAt": 1790883000000
 }
