@@ -50,6 +50,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   Both on Current as To check; v1 files on the Old board (2aa94055…, fce7cec3…), deleted from Current. fix_patterns: the "same as P0" note is the
   third build with it (HT17 already covers it) — no new rule.
 
+- same session, ~11:25–11:40 UTC — P2-KITCHEN v2 **confirmed** by the user. **Fix round 3 on P1-LANDING** (user: "FIX THE P1 I WANT IT CONNECTED TO THE
+  P0", board note "STILL NOT CONNECTED"): v2 had drawn a return stair with a half-landing. v3 = an image edit of P0 on **Kie `nano-banana-pro`** (true Pro —
+  Higgsfield reroutes every Pro call to nano_banana_2; §5 "can't run" case), P0 uploaded to Kie as `image_input`, the prompt counting one straight flight of
+  fourteen steps from its top, every side restated (`plates/P1-LANDING.v3.prompt.txt`). **Kie spend measured 963 credits** (262,932.8 → 261,969.8 — far
+  above the 18 noted on not-your-cartilage; unverified why). The render keeps the camera at the hall floor (reads as P0's own view with a short extra flight
+  in the foreground) — on Current as To check with that said on the card; v2 to Old (d696aabd…). If it fails again: §30G says hall, stairs and landing are
+  TRAVERSED (no location plate — they take the property plate), so the landing beats (HK-03a, P-02a) can be made as edits of P0 looking up the flight.
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator never sings to camera (default) vs two bookends · F4 "Stryde." · F10 Mode 2 sheet amendment / true Pro route on Kie · F12 BPM · F13 clipped master.
 
