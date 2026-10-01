@@ -1,0 +1,36 @@
+{
+ "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": her daughter near the top of the flight, a hand on the rail, looking up after her, a little out of breath. Image 1 is the daughter. Image 2 is the hall and staircase.\nMedium close-up from the top of the flight looking down, front-on, sharp on her eyes. The same woman as Image 1 on the 12th of 14 steps, mid-step, weight on her right foot, the left lifting to the 13th, right hand gripping the dark oak handrail, left hand on her thigh, chest rising, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. She fills more than half the frame's height. Below her the staircase of Image 2, its photo wall and the hall floor far down.\nIn the frame: one woman, the one staircase, the photo wall; every other surface bare. Two hands, two legs.\nA final frame from a 3D animated feature film — stylized storybook render, every surface with a material, a single catchlight in each eye, soft warm bounce in the shadows, afternoon sun from below lighting her front left.\nClothing, shoes, walls and frames plain — no lettering, logos or labels; no second person.",
+ "imageModel": "nano_banana_pro · 2k · 9:16 · A/B pair (Higgsfield)",
+ "imageStatus": "generating",
+ "imageRefs": [
+  {
+   "label": "C2-DAUGHTER sheet v2",
+   "role": "Image 1",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER"
+  },
+  {
+   "label": "P0-PROP-N plate",
+   "role": "Image 2",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N"
+  }
+ ],
+ "imageMatch": null,
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "preflight": "PASS (§6A, kind image)",
+ "pinEnd": "yes",
+ "updatedAt": 1790858331618,
+ "endFrame": "HK-02a-END"
+}
