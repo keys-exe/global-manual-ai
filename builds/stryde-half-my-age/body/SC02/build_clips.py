@@ -1,4 +1,5 @@
-"""Scene 2 (Rock bottom) — Wan 3.0 Prime clips on Kie AI, INGREDIENTS ONLY, no frames
+"""Scene 2 (Rock bottom) — SEEDANCE 2.5 clips on Kie AI, ingredients only, no frames (user 2026-10-01: "i want new ones in scene 2,
+lets not use wan, lets do seedance" — the Wan 3.0 Prime pilots SH01/SH03 are retired to Old). Earlier note: Wan 3.0 Prime, INGREDIENTS ONLY, no frames
 (user 2026-10-01: "use wan 3.0 prime the ingredients and not frames"; "we will not use frames so we will redo the scene 2").
 Each clip: ≤ 4 image ingredients (Image1…: cast sheets, plates, the confirmed info/prop cards) + the speaker's voice master
 as Audio1 on spoken shots; silent otherwise (VO laid in the edit). The framing of each shot follows the act map and the
@@ -52,7 +53,7 @@ L017 = "Just leave it by the stairs, love. I’ll get it later."
 L018 = "I’ll bring it up."
 L020 = "Sleep alright?"
 L021 = "Fine, love."
-GO = "use wan 3.0 prime the ingredients and not frames / we will not use frames so we will re do the scene 2 / confirme and remove the previouse scene 2"
+GO = "i want new ones in scene 2, lets not use wan, lets do seedance (user 2026-10-01) / we will not use frames / confirme and remove the previouse scene 2"
 
 
 def dialogue(who, line, voice, moment, playing, now, under):
@@ -61,20 +62,20 @@ def dialogue(who, line, voice, moment, playing, now, under):
 
 
 SHOTS = []
-SHOTS.append(dict(beat="SC02-SH01", kind="dialogue", duration=7, line=L017, subject_motion="still", files=["N", "P-HOUSE", "PROP-BAGS"], audios=["N"], pilot=True, gen=2,
-    fix="User Fix (board): \"she should be at the top and not going down the stairs\" → fault in the action: 'stands still' left 7 s with nothing to do, so the model walked her down → she is planted on the landing for the whole clip with three small written movements (mouth, a weight shift, the hand tightening), leaving-the-landing negatives",
+SHOTS.append(dict(beat="SC02-SH01", kind="dialogue", duration=7, line=L017, subject_motion="still", files=["N", "P-HOUSE"], audios=["N"], pilot=False, gen=3,
+    fix="User (chat): \"i want new ones in scene 2, lets not use wan, lets do seedance\" → Seedance 2.5 ingredients; and the framing that keeps her at the top: a long lens on ONLY the top four steps and the landing, the flight below the frame, so a walk down would leave the shot. Wan v2 Fix (board): \"she should be at the top and not going down the stairs\" → fault in the action: 'stands still' left 7 s with nothing to do, so the model walked her down → she is planted on the landing for the whole clip with three small written movements (mouth, a weight shift, the hand tightening), leaving-the-landing negatives",
     prompt=" ".join([
-        manifest([("Image1", SHEET("Her", HER_B1)), ("Image2", HALL), ("Image3", CARD_BAGS), ("Audio1", VOICE("Her"))]),
+        manifest([("@image1", SHEET("Her", HER_B1)), ("@image2", HALL), ("@audio1", VOICE("Her"))]),
         SERIES, LOOK, INHERIT, HOUSE, NIGHT,
-        "THE SHOT: a full-length shot from low in the hall just inside the front door, looking straight down the hall and up the whole flight to the landing, exactly as the place reference "
-        f"shows it: the two bags near in the foreground at the foot of the stairs; at the very top, small in the frame, Her, {HER_ID}, in {HER_B1}.",
+        "THE SHOT: a long-lens shot from low in the hall at the foot of the stairs, looking up: the frame holds ONLY the top four steps, the top newel post and the small landing — the rest of the flight "
+        f"is below the bottom edge of the frame, so the stairs cannot be walked inside the shot. On the landing, framed from the knees up, stands Her, {HER_ID}, in {HER_B1}.",
         "She stays exactly where she is, on the landing at the very top, for the WHOLE clip: both feet planted on the landing, she never takes a step and never sets a foot on the stairs. "
         "Her right hand holds the top newel post, her left hand loose at her side; she looks down the stairs toward the hall and calls down: \"" + L017 + "\" "
         "The only movements are her mouth, a small shift of her weight from one foot to the other, and her right hand tightening on the post on 'later'.",
         F2, PHYS,
         "While the line is spoken, Her keeps doing one thing with their hands: her right hand resting on the top newel post, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
         state("HER", "tired, bob and fringe in place, in her own clothes, on the landing at the very top of the stairs", "nothing"),
-        "FOCUS: everything from the bags in the foreground to her on the landing is in sharp focus; everything from near to far stays sharp. The blur is optical: soft and round, never smeared.",
+        "FOCUS: her face is in sharp focus; the top steps in the near foreground fall a little soft. The blur is optical: soft and round, never smeared.",
         dialogue("Her", L017, VOICE_N, "she cannot face the stairs tonight and covers it with a light voice. Speaking down the stairs to her husband in the hall.",
                  "covers her fear. Opens light and easy; turns on 'later', where her eyes leave the stairs; exits looking away. Stress on 'later'.",
                  "light and a little tired, raised to carry down the stairs, matching the face in this shot.",
@@ -82,13 +83,12 @@ SHOTS.append(dict(beat="SC02-SH01", kind="dialogue", duration=7, line=L017, subj
         AUD,
         negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, STATIC, "no walking down the stairs, no stepping onto the stairs, no coming down, no leaving the landing, no walking toward the camera", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "the house drifts from the plate", "prevented_by": "the hall plate as Image2, THE HOUSE block with left/right (HT22)"},
-           {"risk": "she steps down", "prevented_by": "feet stay on the landing, stair negatives"},
-           {"risk": "the bags change", "prevented_by": "the prop card as Image3"},
-           {"risk": "voice drifts from the master", "prevented_by": "her voice master as Audio1"}]))
+           {"risk": "she steps down", "prevented_by": "only the top steps and the landing in frame; planted feet; leaving-the-landing negatives"},
+                      {"risk": "voice drifts from the master", "prevented_by": "her voice master as Audio1"}]))
 
 SHOTS.append(dict(beat="SC02-SH02", kind="dialogue", duration=4, line=L018, subject_motion="in_place", files=["C3", "L-STAIRS", "PROP-BAGS"], audios=["C3"],
     prompt=" ".join([
-        manifest([("Image1", SHEET("the husband", HUS_OUT)), ("Image2", STAIRS), ("Image3", CARD_BAGS), ("Audio1", VOICE("the husband"))]),
+        manifest([("@image1", SHEET("the husband", HUS_OUT)), ("@image2", STAIRS), ("@image3", CARD_BAGS), ("@audio1", VOICE("the husband"))]),
         SERIES, LOOK, INHERIT, HOUSE, NIGHT,
         "THE SHOT: a medium shot from high on the landing looking down the flight, exactly as the place reference shows it, a longer lens holding the foot of the stairs and the hall below: "
         f"the husband, {HUS_ID}, in {HUS_OUT}, stands at the foot of the stairs beside the telephone table, the two bags on the carpet in front of him.",
@@ -106,10 +106,10 @@ SHOTS.append(dict(beat="SC02-SH02", kind="dialogue", duration=4, line=L018, subj
     risks=[{"risk": "the bags change", "prevented_by": "the prop card"}, {"risk": "he climbs", "prevented_by": "feet stay at the foot, negative"},
            {"risk": "voice drifts", "prevented_by": "his voice master as Audio1"}]))
 
-SHOTS.append(dict(beat="SC02-SH03", kind="broll", duration=6, line="", vo="L019", subject_motion="travels", files=["N", "P-HOUSE", "OUT-N-B2"], audios=[], pilot=True, gen=2,
-    fix="User Fix (board): \"it should be going down the stairs and not backwards\" → change of action at the user's call: she comes down facing forwards, slowly, one step at a time (HT02); the camera moved to the foot of the stairs looking up so the descent can only read one way — toward the camera",
+SHOTS.append(dict(beat="SC02-SH03", kind="broll", duration=6, line="", vo="L019", subject_motion="travels", files=["N", "P-HOUSE", "OUT-N-B2"], audios=[], pilot=False, gen=3,
+    fix="User (chat): \"lets not use wan, lets do seedance\" → the same forwards descent on Seedance 2.5. Wan v1 Fix (board): \"it should be going down the stairs and not backwards\" → change of action at the user's call: she comes down facing forwards, slowly, one step at a time (HT02); the camera moved to the foot of the stairs looking up so the descent can only read one way — toward the camera",
     prompt=" ".join([
-        manifest([("Image1", SHEET("Her", HER_B2)), ("Image2", HALL), ("Image3", CARD_B2)]),
+        manifest([("@image1", SHEET("Her", HER_B2)), ("@image2", HALL), ("@image3", CARD_B2)]),
         SERIES, LOOK, INHERIT, HOUSE, MORNING,
         "THE SHOT: a medium-wide shot from the hall at the foot of the stairs, looking straight up the flight, exactly as the place reference shows the staircase: "
         f"Her, {HER_ID}, in {HER_B2}, is near the top of the flight, facing down the stairs toward the camera.",
@@ -127,7 +127,7 @@ SHOTS.append(dict(beat="SC02-SH03", kind="broll", duration=6, line="", vo="L019"
 
 SHOTS.append(dict(beat="SC02-SH04", kind="broll", duration=4, line="", vo="L019", subject_motion="in_place", files=["N", "L-STAIRS", "OUT-N-B2"], audios=[],
     prompt=" ".join([
-        manifest([("Image1", SHEET("Her", HER_B2)), ("Image2", STAIRS), ("Image3", CARD_B2)]),
+        manifest([("@image1", SHEET("Her", HER_B2)), ("@image2", STAIRS), ("@image3", CARD_B2)]),
         SERIES, LOOK, INHERIT, HOUSE, MORNING,
         f"THE SHOT: a medium close-up in profile at her eye level from beside the banister, a long lens, shallow focus on her eye: Her, {HER_ID}, in {HER_B2}, mid-flight, coming down the stairs facing down the flight.",
         "Her right hand grips the banister rail; she lowers her weight onto the next step down, brings her other foot beside it, and breathes out slowly through her mouth, eyes down on the step, jaw set. One step only.",
@@ -141,7 +141,7 @@ SHOTS.append(dict(beat="SC02-SH04", kind="broll", duration=4, line="", vo="L019"
 
 SHOTS.append(dict(beat="SC02-SH05", kind="dialogue", duration=4, line=L020, subject_motion="still", files=["C3", "P-HOUSE"], audios=["C3"],
     prompt=" ".join([
-        manifest([("Image1", SHEET("the husband", HUS_OUT)), ("Image2", HALL), ("Audio1", VOICE("the husband"))]),
+        manifest([("@image1", SHEET("the husband", HUS_OUT)), ("@image2", HALL), ("@audio1", VOICE("the husband"))]),
         SERIES, LOOK, INHERIT, HOUSE, MORNING,
         f"THE SHOT: a medium close-up at his eye level, three-quarter on, in the hall at the foot of the stairs: the husband, {HUS_ID}, in {HUS_OUT}, beside the bottom newel post, the stairs rising soft behind him.",
         "He holds a plain white mug of tea at chest height in his right hand, his left hand on the newel post; he glances up the stairs, then a little away, not quite looking at how she is coming down, and says: \"" + L020 + "\"",
@@ -161,7 +161,7 @@ SHOTS.append(dict(beat="SC02-SH05", kind="dialogue", duration=4, line=L020, subj
 
 SHOTS.append(dict(beat="SC02-SH06", kind="dialogue", duration=4, line=L021, subject_motion="still", files=["N", "C3", "P-HOUSE", "OUT-N-B2"], audios=["N"],
     prompt=" ".join([
-        manifest([("Image1", SHEET("Her", HER_B2)), ("Image2", SHEET("the husband", HUS_OUT)), ("Image3", HALL), ("Image4", CARD_B2), ("Audio1", VOICE("Her"))]),
+        manifest([("@image1", SHEET("Her", HER_B2)), ("@image2", SHEET("the husband", HUS_OUT)), ("@image3", HALL), ("@image4", CARD_B2), ("@audio1", VOICE("Her"))]),
         SERIES, LOOK, INHERIT, HOUSE, MORNING,
         "THE SHOT: a close-up over the husband's shoulder at her eye level: the soft back of his grey head and his brown cardigan shoulder fill the near left edge, out of focus; "
         f"beyond him, sharp, Her, {HER_ID}, in {HER_B2}, stands on the bottom step of the stairs, a little above him, the banister beside her.",
@@ -182,7 +182,7 @@ SHOTS.append(dict(beat="SC02-SH06", kind="dialogue", duration=4, line=L021, subj
 
 SHOTS.append(dict(beat="SC02-SH07", kind="broll", duration=6, line="", vo="L022", subject_motion="still", files=["N", "L-BEDROOM", "OUT-N-B2"], audios=[],
     prompt=" ".join([
-        manifest([("Image1", SHEET("Her", HER_B2)), ("Image2", BEDROOM), ("Image3", CARD_B2)]),
+        manifest([("@image1", SHEET("Her", HER_B2)), ("@image2", BEDROOM), ("@image3", CARD_B2)]),
         SERIES, LOOK, INHERIT, AFTERNOON,
         f"THE SHOT: a close profile at her eye level, a long lens, very shallow focus on her eye: Her, {HER_ID}, in {HER_B2}, sits on the near edge of her bed, her face filling the left half of the frame, the window and its net curtains soft in the right half.",
         "She sits still, both hands in her lap, one thumb moving slowly over the back of the other hand; her eyes are on the grey garden through the window, wet but no tears. She blinks once. Nothing else moves.",
@@ -200,8 +200,8 @@ AUDIO = {"N": "voice/N_voice_master.mp3", "C3": "voice/C3_voice_master.mp3"}
 
 if __name__ == "__main__":
     for s in SHOTS:
-        call = {"beat": s["beat"], "connector": "wan", "model": "wan/3-0-video-prime", "mode": 4, "kind": s["kind"], "prompt": s["prompt"],
-                "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16", "start_image": None, "end_image": None,
+        call = {"beat": s["beat"], "connector": "seedance", "model": "bytedance/seedance-2-5", "mode": 4, "kind": s["kind"], "prompt": s["prompt"],
+                "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16", "start_image": None,
                 "ingredients_approved": True, "files": [FILES[f] for f in s["files"]], "audios": [AUDIO[a] for a in s["audios"]],
                 "generate_audio": bool(s["line"]), "dialogue": s["line"] or None, "script_line": s["line"] or None, "pace": "unhurried",
                 "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": s.get("gen", 1), "fix_note": s.get("fix"), "user_go": GO,
