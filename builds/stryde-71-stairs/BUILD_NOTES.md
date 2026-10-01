@@ -325,4 +325,5 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - Round 2: the user confirmed PR-01b image v5. PR-01b video generation 3 (the user's go recorded as `user_go` in the call; `work/video_act6.py --g3`; she presses the peg onto the sheet and lowers her hands, feet planted) is To check.
       - C-05a Fix "SHOULD BE THE SAME AS COPIES": v3 came out as loose black loops. Image v4 (`work/prompts/C-05a.v4.t2i.txt`, product photos as the first refs) shows two copies with the exact shape of the real strap, blank (no wordmark) with a cheaper shine, lying flat on the torn mailer. To check; its video follows the confirm.
       - The finals are re-cut once C-05a's video exists.
+      - C-05a Fix "SHOULD BE LOOKING CHEAP COPIES" (v4 looked like the real premium strap and showed only one). Image v5 is an edit of v4 (`work/prompts/C-05a.v5.edit.txt`): same shape and kitchen; thin glossy scuffed shell with a seam and a crack, dull grey plastic slides, curling elastic; a second identical copy added. To check.
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
