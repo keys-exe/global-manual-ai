@@ -3,3 +3,4 @@ BR-03b.v2 {"generationId": "AcXavNNODOQsktCWhAcn5hDE-WMjLRP95RGmj1JWz2w6KryUr7fo
 BR-18 {"generationId": "AQAYSRJiMA4uV1rBL2DsuT81YxLlGzqE0uydWsW-eL8h_5CHT4NAHNHz5sGJUfnl76Ug5wC5", "model": "kling-video-v3_0", "connector": "Kling", "credits": 32}
 BR-21 {"generationId": "ARd7kNF6ysnolStoHInGHmyBfv0stZ3fNmDIxoVckCmNJ-RPstWskkj_jvzZ0XTzev1qQcS2", "model": "kling-video-v3_0", "connector": "Kling", "credits": 24}
 BR-22a2.v2 {"generationId": "AbVh-qXfLmCQ_6Ot_mmk8I5htlM0xU5BnHnlVxkufPxvxDPY9FOH7vobk8fRkPBSHNt41GWw", "model": "kling-video-v3_0", "connector": "Kling", "credits": 24}
+BR-22a2.v3 {"generationId": "AYPQYDyqAJqf9RxywR3nKduGt-UkBVZyRMs46T4HWhqWl39_SzsBeOAL6-4cdK0XgzJxkO90", "model": "kling-video-v3_0", "connector": "Kling", "credits": 24}
