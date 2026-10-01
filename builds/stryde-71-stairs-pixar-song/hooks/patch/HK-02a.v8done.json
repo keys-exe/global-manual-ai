@@ -1,71 +1,4 @@
 {
- "build": "stryde-71-stairs-pixar-song",
- "act": "Hook 1",
- "stage": "hooks",
- "beat": "HK-02a",
- "title": "hook — the witness · SH-HIGH from the top of the great flight",
- "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
- "status": "review",
- "flow": [
-  "image",
-  "video"
- ],
- "model": "Kling 3.0 (kling-video-v3_0) · 6 s · 1080p · prefer_multi_shots false · silent",
- "imageModel": "nano_banana_pro → logged nano_banana_2",
- "duration": 6,
- "songIn": 8.01,
- "songOut": 12.89,
- "onScreen": 4.88,
- "section": "Hook — MUS-OPEN",
- "bars": 1.5,
- "key": "daughter",
- "location": "L-PLAZA",
- "storyDay": "N-D4",
- "framing": "MEDIUM from the top of the flight looking steeply down: the daughter ten steps below, right hand on the steel rail, face up to the lens a little out of breath, the long flight, the crowd and the plaza falling away far below her",
- "motionPlan": "From this frame: one last step up and a look up — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
- "staging": "stairs: camera at the top, subject coming up, 1 step",
- "pinEnd": "no",
- "angle": "high · front · clean · MEDIUM — high = from N's place at the top: she's arrived first, her daughter still climbing with the crowd",
- "focus": "eyes · medium",
- "light": "front-door sidelights, west wall · key L · afternoon · after: Sunday sun · 5600K",
- "product": "absent · —",
- "layout": "full",
- "eg": "",
- "music": "MUS-OPEN",
- "ledger": "",
- "updatedAt": 1790870546611,
- "hook": 1,
- "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": from the top of the great flight looking steeply down, her daughter ten steps below, right hand on the steel rail, looking up at the lens, out of breath, the crowd and the plaza far below her. Image 1 is the daughter. Image 2 is the plaza steps.\nMedium shot from the top landing, the lens high, looking down the flight, sharp on her eyes. The same woman as Image 1 on the 20th of 30 steps, mid-step, weight on her right foot, the left lifting to the next, right hand gripping the steel handrail, left hand on her thigh, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. Past her the flight of Image 2 falls away to a scatter of younger people on the lower steps and the plaza at the foot.\nIn the frame: the daughter, the younger people far below, the one flight, the handrails, the plaza; every other surface bare. Two hands, two legs on her.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, a catchlight in each eye. Clothing plain — no lettering, logos or labels; nobody beside her.",
- "imageStatus": "review",
- "imageRefs": [
-  {
-   "label": "C2-DAUGHTER sheet v2",
-   "kind": "character",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 1"
-  },
-  {
-   "label": "P8-PLAZA plate v1 (To check)",
-   "kind": "location",
-   "ref": "stryde-71-stairs-pixar-song__P8-PLAZA",
-   "role": "Image 2"
-  }
- ],
- "imageMatch": null,
- "imageTaste": [
-  "HT03",
-  "HT04",
-  "HT05",
-  "HT08",
-  "HT09",
-  "HT12",
-  "HT17",
-  "HT18",
-  "HT19",
-  "HT22",
-  "HT23"
- ],
- "preflight": "PASS (§6A, kind image)",
  "imageVersions": [
   {
    "archiveAsset": "69bedec6423694ced7635d8ae07730fc",
@@ -244,40 +177,49 @@
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
  "imageAt": 1790870546611,
- "imageRegens": 3,
- "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
- "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
- "endFrame": "HK-02a-END",
+ "imageStatus": "review",
+ "imagePick": {
+  "__delete__": true
+ },
+ "imageUnused": {
+  "__delete__": true
+ },
+ "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": from the top of the great flight looking steeply down, her daughter ten steps below, right hand on the steel rail, looking up at the lens, out of breath, the crowd and the plaza far below her. Image 1 is the daughter. Image 2 is the plaza steps.\nMedium shot from the top landing, the lens high, looking down the flight, sharp on her eyes. The same woman as Image 1 on the 20th of 30 steps, mid-step, weight on her right foot, the left lifting to the next, right hand gripping the steel handrail, left hand on her thigh, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. Past her the flight of Image 2 falls away to a scatter of younger people on the lower steps and the plaza at the foot.\nIn the frame: the daughter, the younger people far below, the one flight, the handrails, the plaza; every other surface bare. Two hands, two legs on her.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, a catchlight in each eye. Clothing plain — no lettering, logos or labels; nobody beside her.",
  "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
- "shot": "SH-HIGH · MEDIUM front from the top landing, the daughter ten steps below",
- "imageParts": [],
- "videoVersions": [
+ "imageMatch": null,
+ "imageRefs": [
   {
-   "v": 1,
-   "asset": "e116c450024a8eb9b20b27a251f746ea",
-   "type": "video/mp4",
-   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/b96318de-697b-486e-9219-82625fec3be6-HAAAXSWLWW4hgpp89y-0AQ-output.mp4?x-kcdn-pid=112372",
-   "model": "kling-video-v3_0",
-   "connector": "Kling",
-   "credits": 48.0,
-   "size": 5829192,
-   "duration": 6.04,
-   "res": "1072×1928",
-   "at": 1790868925077,
-   "job": "AcQ4ZqPHoZy4XdDADlxlXUYQmfGVwf_SeKqh9OmOjZD-1665vhSjgmjKbiyFQolaReMsuOkw",
-   "note": "from the picked image v7 A (re-angled)"
+   "label": "C2-DAUGHTER sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
+   "role": "Image 1"
+  },
+  {
+   "label": "P8-PLAZA plate v1 (To check)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P8-PLAZA",
+   "role": "Image 2"
   }
  ],
- "videoAsset": "e116c450024a8eb9b20b27a251f746ea",
- "videoType": "video/mp4",
- "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/b96318de-697b-486e-9219-82625fec3be6-HAAAXSWLWW4hgpp89y-0AQ-output.mp4?x-kcdn-pid=112372",
- "videoJob": "AcQ4ZqPHoZy4XdDADlxlXUYQmfGVwf_SeKqh9OmOjZD-1665vhSjgmjKbiyFQolaReMsuOkw",
- "videoConnector": "Kling",
- "credits": 48.0,
- "videoRes": "1072×1928",
- "videoAt": 1790868925077,
- "regens": 0,
- "prompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": From this frame: one last step up and a look up — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels. Seen from the landing above, the daughter takes one last step up onto the 13th step, about a second, her right hand sliding up the handrail, and lifts her face fully to the lens, eyes on it, lips parted on a breath; she ends still, one step below the top. The high viewpoint stays where it is; the flight, the photo wall and the hall far below stay exactly as in the frame. Stylized 3D animation, the character exactly on model from the frame, her afro puff settling after the step. No camera travel; no second person; no cut.",
- "videoPreflight": "PASS (§35A)",
+ "shot": "SH-HIGH · MEDIUM front from the top landing, the daughter ten steps below",
+ "title": "hook — the witness · SH-HIGH from the top of the great flight",
+ "framing": "MEDIUM from the top of the flight looking steeply down: the daughter ten steps below, right hand on the steel rail, face up to the lens a little out of breath, the long flight, the crowd and the plaza falling away far below her",
+ "angle": "high · front · clean · MEDIUM — high = from N's place at the top: she's arrived first, her daughter still climbing with the crowd",
+ "location": "L-PLAZA",
+ "motionPlan": "From this frame: one last step up and a look up — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22",
+  "HT23"
+ ],
+ "updatedAt": 1790870546611,
  "videoNote": "the home-stairs clip(s) were made from the earlier confirmed picks — kept as versions, superseded by the plaza concept; a clip from the plaza frame follows the user's pick"
 }

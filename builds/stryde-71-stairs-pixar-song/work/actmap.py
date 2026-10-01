@@ -55,24 +55,25 @@ R4 = "R4 — slow single-axis push on a stabilised virtual rig"
 A = "Hook 1"
 # Hook re-angled on the user's ask (2026-10-01, "USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK"): §30I setups named with the
 # §24K part 7 shot library (Modes 4–5 library, applied here on the user's explicit call); §27G staging unchanged. HT05: the hook must sell.
-# HK-01a/b moved OUTSIDE on the user's call (2026-10-01, "hk01 a and b should be a different location cause its woman half her age should be outside"):
-# the church front steps (P5, the same Sunday N-D4 — HT05: the hook out in the world, the younger women in the picture).
-R("HK-01a", A, (1, 1), "stairs", "hook — the result (HT05: out in the world, stakes in the picture) · SH-LOW at FULL from the sidewalk", "N + 2 one-off younger women", "L-CHURCH", "N-D4",
-  "FULL from the sidewalk at the foot of the church steps, the lens at hip height looking up the flight: N in her church dress and wide-brim hat climbing briskly hands free, mid-flight, two women in their thirties in Sunday dresses a few steps below her, one with a hand on the rail, being left behind; the church doors at the top",
-  "two steps up, N pulling ahead of the younger women", "one step per second, brisk", "stairs: side-on/behind, full body, camera still at the foot", "worn (under the dress)", "HIDDEN",
-  "low", TQB, "clean", "FULL", "low = resolve, the church steps rising above her; the younger women below her in the same frame are the stakes", "deep", "deep", "open sky, afternoon sun", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN", ledger="VN04")
-R("HK-01b", A, (2, 2), "faster", "hook — the result · SH-GROUND on the church steps", "N feet + the younger women's feet", "L-CHURCH", "N-D4",
-  "CU at tread level from the side on the church steps: N's low black pumps striking the next step mid-stride, the green hem swinging, two pairs of younger women's heeled sandals a step or two below, one foot still planted",
-  "two steps up", "one step per second", "stairs: feet only, side", "worn (under the dress)", "HIDDEN",
-  "ground", PR, "clean", "CU", "ground = the steps themselves, the pace; her pumps ahead of the younger feet", "foreground", "shallow", "open sky, afternoon sun", 5600, "afternoon", "after: Sunday sun", False, "MUS-OPEN")
-R("HK-02a", A, (3, 4), "daughter", "hook — the witness · SH-HIGH from the landing", "C2", "L-N-STAIRS", "N-D4",
-  "MEDIUM from the landing looking steeply down the flight: the daughter on the 12th step below, right hand on the rail, face turned up to the lens a little out of breath, the photo wall falling away to her left, the hall floor and front door far below",
+# HOOK v3 concept on the user's call (2026-10-01, "i want new ones cause these hooks look the same as the others i want more powerful hooks"):
+# one monumental public staircase out in the world — the long outdoor steps of a downtown arena plaza (new plate P8-PLAZA, L-PLAZA), the younger
+# crowd on the steps around her (HT05: stakes in the picture, out in the world). The same Sunday (N-D4): church dress + hat; the daughter in her sheet outfit.
+R("HK-01a", A, (1, 1), "stairs", "hook — the result (HT05: out in the world, the crowd as the stakes) · SH-LOW at FULL from the plaza", "N + crowd of younger people", "L-PLAZA", "N-D4",
+  "FULL from the plaza at the foot of the great outdoor flight, the lens at hip height looking up the steps: N in her church dress and hat mid-flight on the 15th of 30 steps, climbing briskly hands free, alone in a lane of the steps; around and below her a dozen younger people in weekend clothes slower on the steps — two stopped with hands on knees, one leaning on the steel rail — the arena's glass doors at the top",
+  "two steps up, N pulling ahead of the crowd", "one step per second, brisk", "stairs: side-on/behind, full body, camera still at the foot", "worn (under the dress)", "HIDDEN",
+  "low", TQB, "clean", "FULL", "low = resolve, the monumental flight rising above her; the younger crowd stalled below her is the stakes", "deep", "deep", "open sky, afternoon sun", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN", ledger="VN04")
+R("HK-01b", A, (2, 2), "faster", "hook — the result · SH-GROUND on the plaza steps", "N feet + two younger women's feet", "L-PLAZA", "N-D4",
+  "CU at tread level from the side on the wide concrete steps: N's low black pumps striking the next step mid-stride, the green hem swinging past two pairs of young women's trainers stopped on the step below, one knee bent, one hand on it",
+  "two steps up past the stopped feet", "one step per second", "stairs: feet only, side", "worn (under the dress)", "HIDDEN",
+  "ground", PR, "clean", "CU", "ground = the steps and the pace; her pumps passing the stopped younger feet", "foreground", "shallow", "open sky, afternoon sun", 5600, "afternoon", "after: Sunday sun", False, "MUS-OPEN")
+R("HK-02a", A, (3, 4), "daughter", "hook — the witness · SH-HIGH from the top of the great flight", "C2", "L-PLAZA", "N-D4",
+  "MEDIUM from the top of the flight looking steeply down: the daughter ten steps below, right hand on the steel rail, face up to the lens a little out of breath, the long flight, the crowd and the plaza falling away far below her",
   "one last step up and a look up", "one step, about a second", "stairs: camera at the top, subject coming up, 1 step", "absent", "—",
-  "high", FR, "clean", "MEDIUM", "high = from N's place at the top: she's arrived first, her daughter is the one still climbing", "eyes", "medium", *STAIR_PM, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
-R("HK-03a", A, (5, 5), "Mama", "hook — the line · SH-OTS from the landing, over the mother's shoulder (user: second floor)", "N + C2", "L-N-STAIRS (landing)", "N-D4",
-  "MCU from the landing over the mother's near shoulder, her shoulder and silver hair soft in the near foreground as she stands on the landing turned back, onto the daughter arriving on the top step below, face up to her mother, mouth open mid-word, the flight and the hall dropping away behind her",
+  "high", FR, "clean", "MEDIUM", "high = from N's place at the top: she's arrived first, her daughter still climbing with the crowd", "eyes", "medium", "open sky, afternoon sun", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
+R("HK-03a", A, (5, 5), "Mama", "hook — the line · SH-OTS at the top of the flight, over the mother's shoulder", "N + C2", "L-PLAZA", "N-D4",
+  "MCU at the top of the flight over the mother's near shoulder, her shoulder and hat brim soft in the near foreground as she stands on the top landing turned back, onto the daughter arriving on the top step below, face up to her mother, mouth open mid-word, the flight and the city dropping away behind her",
   "the daughter's last step up and the look up at her mother", "one step, about a second", "stairs: camera at the top, subject coming up, 1 step", "worn (under the dress)", "HIDDEN",
-  "high", OT, "through", "MCU", "ots from the second floor = the line lands between them from the mother's place at the top; the drop behind the daughter is the climb she just made", "eyes", "medium", "landing window, south wall", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
+  "high", OT, "through", "MCU", "ots from the top = the line lands between them from the mother's place; the drop behind the daughter is the climb she just made", "eyes", "medium", "open sky, afternoon sun", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
 R("P-01a", A, (6, 6), "backwards", "problem (HT02)", "N", "L-N-STAIRS", "N-D1",
   "MEDIUM from the landing: N going down the stairs backwards, facing the steps, both hands gripping the rail",
   "one careful step down backwards", "one step, about two seconds", "stairs: camera at the top, subject below, slow single step", "absent", "—",

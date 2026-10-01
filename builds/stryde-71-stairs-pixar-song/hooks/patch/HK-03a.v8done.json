@@ -1,78 +1,4 @@
 {
- "build": "stryde-71-stairs-pixar-song",
- "act": "Hook 1",
- "stage": "hooks",
- "beat": "HK-03a",
- "title": "hook — the line · SH-OTS at the top of the flight, over the mother's shoulder",
- "line": "\"Mama, when did that happen?\"",
- "status": "planned",
- "flow": [
-  "image",
-  "video"
- ],
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "duration": 5,
- "songIn": 12.89,
- "songOut": 16.14,
- "onScreen": 3.25,
- "section": "Hook — MUS-OPEN",
- "bars": 1,
- "key": "Mama",
- "location": "L-PLAZA",
- "storyDay": "N-D4",
- "framing": "MCU at the top of the flight over the mother's near shoulder, her shoulder and hat brim soft in the near foreground as she stands on the top landing turned back, onto the daughter arriving on the top step below, face up to her mother, mouth open mid-word, the flight and the city dropping away behind her",
- "motionPlan": "From this frame: the daughter's last step up and the look up at her mother — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
- "staging": "none",
- "pinEnd": "no",
- "angle": "high · ots · through · MCU — ots from the top = the line lands between them from the mother's place; the drop behind the daughter is the climb she just made",
- "focus": "eyes · medium",
- "light": "landing window, south wall · key R · afternoon · after: Sunday sun · 5600K",
- "product": "worn (under the dress) · HIDDEN",
- "layout": "full",
- "eg": "",
- "music": "MUS-OPEN",
- "ledger": "",
- "updatedAt": 1790870546611,
- "hook": 1,
- "editOf": "stryde-71-stairs-pixar-song__P0-PROP-N",
- "imagePrompt": "For the line \"Mama, when did that happen?\": at the top of the great flight, over the mother's near shoulder, the daughter arriving on the top step below, face up to her, mouth open mid-word, the city dropping away behind her. Image 1 is the mother. Image 2 is her daughter. Image 3 is the plaza steps.\nMedium close-up from the top landing over the mother's right shoulder: the same woman as Image 1 stands on the landing back to the lens, her green shoulder and black hat brim soft in the near right foreground. The same woman as Image 2 on the 30th and top step, one step down, right hand on the steel handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers; sharp. Behind her the flight of Image 3 falls away to the plaza and the towers.\nIn the frame: the two women, the one flight, the handrails, the plaza and towers below; every other surface bare. Two hands on the daughter, two legs.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
- "imageStatus": "review",
- "imageRefs": [
-  {
-   "label": "N-NARR sheet v2",
-   "kind": "character",
-   "ref": "stryde-71-stairs-pixar-song__N-NARR",
-   "role": "Image 1"
-  },
-  {
-   "label": "C2-DAUGHTER sheet v2",
-   "kind": "character",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 2"
-  },
-  {
-   "label": "P8-PLAZA plate v1 (To check)",
-   "kind": "location",
-   "ref": "stryde-71-stairs-pixar-song__P8-PLAZA",
-   "role": "Image 3"
-  }
- ],
- "imageMatch": null,
- "imageTaste": [
-  "HT03",
-  "HT04",
-  "HT05",
-  "HT08",
-  "HT09",
-  "HT12",
-  "HT17",
-  "HT18",
-  "HT19",
-  "HT22",
-  "HT23"
- ],
- "preflight": "PASS (§6A, kind image)",
  "imageVersions": [
   {
    "archiveAsset": "5cb241f3716ed4e7c2b62beef21f3263",
@@ -321,8 +247,54 @@
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
  "imageAt": 1790870546611,
- "imageRegens": 6,
- "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
+ "imageStatus": "review",
+ "imagePick": {
+  "__delete__": true
+ },
+ "imageUnused": {
+  "__delete__": true
+ },
+ "imagePrompt": "For the line \"Mama, when did that happen?\": at the top of the great flight, over the mother's near shoulder, the daughter arriving on the top step below, face up to her, mouth open mid-word, the city dropping away behind her. Image 1 is the mother. Image 2 is her daughter. Image 3 is the plaza steps.\nMedium close-up from the top landing over the mother's right shoulder: the same woman as Image 1 stands on the landing back to the lens, her green shoulder and black hat brim soft in the near right foreground. The same woman as Image 2 on the 30th and top step, one step down, right hand on the steel handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers; sharp. Behind her the flight of Image 3 falls away to the plaza and the towers.\nIn the frame: the two women, the one flight, the handrails, the plaza and towers below; every other surface bare. Two hands on the daughter, two legs.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
  "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
- "shot": "SH-OTS · over the mother's shoulder from above, the daughter stopped at the rail"
+ "imageMatch": null,
+ "imageRefs": [
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 1"
+  },
+  {
+   "label": "C2-DAUGHTER sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
+   "role": "Image 2"
+  },
+  {
+   "label": "P8-PLAZA plate v1 (To check)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P8-PLAZA",
+   "role": "Image 3"
+  }
+ ],
+ "shot": "SH-OTS · over the mother's shoulder from above, the daughter stopped at the rail",
+ "title": "hook — the line · SH-OTS at the top of the flight, over the mother's shoulder",
+ "framing": "MCU at the top of the flight over the mother's near shoulder, her shoulder and hat brim soft in the near foreground as she stands on the top landing turned back, onto the daughter arriving on the top step below, face up to her mother, mouth open mid-word, the flight and the city dropping away behind her",
+ "angle": "high · ots · through · MCU — ots from the top = the line lands between them from the mother's place; the drop behind the daughter is the climb she just made",
+ "location": "L-PLAZA",
+ "motionPlan": "From this frame: the daughter's last step up and the look up at her mother — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22",
+  "HT23"
+ ],
+ "updatedAt": 1790870546611
 }
