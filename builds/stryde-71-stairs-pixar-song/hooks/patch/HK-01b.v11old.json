@@ -1,33 +1,4 @@
 {
- "act": "Hook 1",
- "beat": "HK-01b",
- "build": "stryde-71-stairs-pixar-song",
- "flow": [
-  "image"
- ],
- "hook": 1,
- "imageAsset": "8f13286884ff0edf392cf150435bfc39",
- "imageConnector": "Higgsfield",
- "imageCredits": 2.14,
- "imageFault": "user 2026-10-01: \"should be 1 broll here showing her walking faster going up the stairs and at her back woman walking behind\" → HK-01 is one B-roll (HK-01a, lines 1–2); this second beat is dropped — every render kept here",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  13,
-  14
- ],
- "imagePrompt": "For the line \"faster than women half my age.\": at tread level from the side on the wide concrete plaza steps, an older woman's low black pump strikes the next step mid-stride, her green hem swinging, and one step behind and below it a younger woman's white trainers stopped side by side, her shins in black leggings, one hand resting on her knee. Image 1 is the plaza steps.\nClose-up, profile, the lens at tread height, feet and four steps filling the frame, sharp on the black pump, the steel handrail's base soft behind: the pump and a deep brown ankle under the emerald hem at the left, the pair of white trainers under the black leggings at the right, the pale concrete treads of Image 1 between. All hands and faces out of frame but one hand on a knee; the feet at true scale to the steps.\nIn frame: two black pumps, two white trainers, four legs below the knee, one hand on a knee, four steps of the one flight, the rail's foot; every other surface bare. Each foot whole, one foot per step.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, the light of Image 1. Shoes and clothing plain — no lettering, logos or labels.",
- "imageRefs": [
-  {
-   "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 1"
-  }
- ],
- "imageRes": "1536×2752",
- "imageStatus": "regenerate",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_161354_a5a1fa07-3d5c-4426-a443-2787617dbbf5.png",
  "imageVersions": [
   {
    "archived": true,
@@ -242,10 +213,21 @@
    "archived": true
   }
  ],
- "line": "faster than women half my age.",
- "stage": "hooks",
+ "imagePair": [
+  13,
+  14
+ ],
+ "imageAsset": "8f13286884ff0edf392cf150435bfc39",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_161354_a5a1fa07-3d5c-4426-a443-2787617dbbf5.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imagePrompt": "For the line \"faster than women half my age.\": at tread level from the side on the wide concrete plaza steps, an older woman's low black pump strikes the next step mid-stride, her green hem swinging, and one step behind and below it a younger woman's white trainers stopped side by side, her shins in black leggings, one hand resting on her knee. Image 1 is the plaza steps.\nClose-up, profile, the lens at tread height, feet and four steps filling the frame, sharp on the black pump, the steel handrail's base soft behind: the pump and a deep brown ankle under the emerald hem at the left, the pair of white trainers under the black leggings at the right, the pale concrete treads of Image 1 between. All hands and faces out of frame but one hand on a knee; the feet at true scale to the steps.\nIn frame: two black pumps, two white trainers, four legs below the knee, one hand on a knee, four steps of the one flight, the rail's foot; every other surface bare. Each foot whole, one foot per step.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, the light of Image 1. Shoes and clothing plain — no lettering, logos or labels.",
+ "imageFault": "user 2026-10-01: \"should be 1 broll here showing her walking faster going up the stairs and at her back woman walking behind\" → HK-01 is one B-roll (HK-01a, lines 1–2); this second beat is dropped — every render kept here",
+ "imageStatus": "regenerate",
  "status": "regenerate",
  "title": "hook — the result — beat dropped (user 2026-10-01: HK-01 is one B-roll); all versions kept",
- "updatedAt": 1790873900000,
- "dropped": true
+ "dropped": true,
+ "updatedAt": 1790873900000
 }

@@ -194,5 +194,26 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   B also looks at the church from across the street, not down its own steps. The daughter at church is in the wardrobe lock's sweatshirt and
   shorts (N-D4 wardrobe map) — a Fix note can change it. Kie not needed; the fallback stands.
 
-**Waiting on:** picks (A/B) or Fix notes on HK-01a v9/v10, HK-01b v13/v14, HK-02a v11/v12, HK-03a v15/v16 and the P8-PLAZA plate. Then the hook
-clips (§35A, no end frames — waived); then the body acts in order; CapCut block with lyric captions and the outro end card.
+- same session, 16:20 UTC hourly Fix check + user message, ~16:20–16:35 UTC — **HK-02a Fix "this should show walking behind her"** → v10: the daughter walking up the
+  church steps two steps behind her mother, both in frame from the sidewalk at the foot of the steps (SH-LOW FULL, an image edit of the confirmed P5,
+  `hooks/HK-02a.v10.prompt.txt`, PASS 1,189 chars after a trim from 1,309; actmap row HK-02a re-angled low/three-quarter-back). **HK-02a v13/v14** To check;
+  v11/v12 to Old (Old doc v6). Seen: both renders — N ahead in the green dress and hat on the 6th step, the daughter two steps behind with her hand on
+  the black rail, the church front and doors above; on model. **P8-PLAZA confirmed by the user** (status use).
+  Then the user: **"I'm seventy-one, and I take the stairs faster than women half my age — should be 1 broll here showing her walking faster going up
+  the stairs and at her back woman walking behind and she likes walking faster and left them"** → **HK-01 is one B-roll for lines 1–2 (0.00 → 8.01 s)**:
+  HK-01a re-planned (`work/actmap.py`: lines (1, 2), `mx=10`, N + two women half her age, "three quick steps up, N pulling away; the women behind
+  climb slowly and fall further back"), **HK-01b dropped** — its Current doc deleted, its v13/v14 files copied to Old and every version kept on the Old
+  HK-01b doc (`dropped: true`); act map 60 rows, 108/108 lines, angles.py PASS; `STEP4_5.md`, `docs/actmap` (v12), `docs/locations` (v5) synced.
+  v11 prompt (`hooks/HK-01a.v11.prompt.txt`, PASS 1,171 chars, edit of the confirmed P8): N mid-stride on the 15th step, chin up, a small pleased smile
+  in part profile; two women of thirty-five in grey and navy sweatshirts walking up slowly on the 11th and 10th steps behind her, one hand on the rail,
+  looking up at her back. **HK-01a v11/v12** To check (`hooks/v11_cards.py`); v9/v10 to Old (Old doc v5). Seen: A — N ahead smiling in part profile,
+  the two women three and four steps behind, one hand on the left rail; B — the same, N a step higher and turned a little more to the lens. The clip
+  will be one 8 s Kling shot from the picked frame (no end frame — waived). Higgsfield balance 9,309.65.
+  `fix_patterns.py` re-run (66 notes): the note that repeated today is the line's relationship — "woman half her age behind her", "walking behind
+  her", "at her back woman walking behind" → **House Taste HT24 (V7.79.2)**: every person a line names as ahead, behind, beside or watching is in the
+  one frame in that relation, from the side or behind, never a POV of one of them; a comparing hook line is one B-roll with all of them in it
+  (standards §34A + changelog, skill summary synced).
+
+**Waiting on:** picks (A/B) or Fix notes on HK-01a v11/v12 (the one hook B-roll), HK-02a v13/v14 and HK-03a v15/v16 (the mother's wardrobe came
+back wrong on both — a Fix is likely). Then the hook clips (HK-01a 8 s; §35A, no end frames — waived); then the body acts in order; CapCut block
+with lyric captions and the outro end card.
