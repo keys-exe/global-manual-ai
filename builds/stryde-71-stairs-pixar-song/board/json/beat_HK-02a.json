@@ -5,13 +5,13 @@
  "beat": "HK-02a",
  "title": "hook — the witness · SH-HIGH from the landing",
  "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
- "status": "planned",
+ "status": "ready",
  "flow": [
   "image",
   "video"
  ],
  "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageModel": "nano_banana_pro → logged nano_banana_2",
  "duration": 6,
  "songIn": 8.01,
  "songOut": 12.89,
@@ -24,7 +24,7 @@
  "framing": "MEDIUM from the landing looking steeply down the flight: the daughter on the 12th step below, right hand on the rail, face turned up to the lens a little out of breath, the photo wall falling away to her left, the hall floor and front door far below",
  "motionPlan": "From this frame: one last step up and a look up — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: camera at the top, subject coming up, 1 step",
- "pinEnd": "yes",
+ "pinEnd": "no",
  "angle": "high · front · clean · MEDIUM — high = from N's place at the top: she's arrived first, her daughter is the one still climbing",
  "focus": "eyes · medium",
  "light": "front-door sidelights, west wall · key L · afternoon · after: Sunday sun · 5600K",
@@ -33,26 +33,26 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "",
- "updatedAt": 1790867552722,
+ "updatedAt": 1790867704482,
  "hook": 1,
  "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": her daughter on the 12th step below, a hand on the rail, looking up at the lens, out of breath. Image 1 is this scene's confirmed frame. Image 2 is the daughter. Image 3 is the hall and staircase.\nMedium shot from the landing, the lens above head height looking steeply down the flight, sharp on her eyes. The same woman as Image 2 on the 12th of 14 steps, weight on her right foot, the left lifting to the 13th, right hand gripping the oak handrail, left hand on her thigh, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. Past her the flight of Image 3 falls away: the photo wall at the left of frame, balusters and handrail at the right, beige runner and brass rods, the bare oak floor and the front door far below.\nIn the frame: one woman, the one staircase, the photo wall, the hall floor, the front door; every other surface bare. Two hands, two legs.\nThe render of Image 1, sun from the sidelights below, a catchlight in each eye. Clothing, shoes and walls plain — no lettering, logos or labels; no second person.",
- "imageStatus": "review",
+ "imageStatus": "confirmed",
  "imageRefs": [
   {
-   "label": "HK-01a v1 A (confirmed frame)",
    "kind": "frame",
+   "label": "HK-01a v1 A (confirmed frame)",
    "ref": "stryde-71-stairs-pixar-song__HK-01a",
    "role": "Image 1"
   },
   {
-   "label": "C2-DAUGHTER sheet v2",
    "kind": "character",
+   "label": "C2-DAUGHTER sheet v2",
    "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
    "role": "Image 2"
   },
   {
-   "label": "P0-PROP-N plate",
    "kind": "location",
+   "label": "P0-PROP-N plate",
    "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
    "role": "Image 3"
   }
@@ -142,6 +142,8 @@
    "v": 4
   },
   {
+   "archiveAsset": "e088089c7164af5a6a69aa3a2029d6b1",
+   "archived": true,
    "asset": "530578d459e9dd75b117d36c12e01984",
    "at": 1790866782613,
    "connector": "Higgsfield",
@@ -154,11 +156,11 @@
    "size": 7839583,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142326_2dfb344e-6964-457b-aff8-c5882662b1d5.png",
-   "v": 5,
-   "archived": true,
-   "archiveAsset": "e088089c7164af5a6a69aa3a2029d6b1"
+   "v": 5
   },
   {
+   "archiveAsset": "537c041b201f0e00d5fb380302770fe3",
+   "archived": true,
    "asset": "1f38f5d9324eada3c5b45c29dc434870",
    "at": 1790866782613,
    "connector": "Higgsfield",
@@ -171,57 +173,57 @@
    "size": 7500433,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142331_f45b3eaf-06fe-418a-ad7d-01fc3a0b26e8.png",
-   "v": 6,
-   "archived": true,
-   "archiveAsset": "537c041b201f0e00d5fb380302770fe3"
+   "v": 6
   },
   {
-   "v": 7,
-   "pair": "A",
    "asset": "e7a7cd34d255d219fad70fd135bfec53",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150922_1b211fc3-5e7f-4db7-8e76-94ee39f557bd.png",
+   "at": 1790867552722,
+   "connector": "Higgsfield",
+   "credits": 2.14,
    "job": "1b211fc3-5e7f-4db7-8e76-94ee39f557bd",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "size": 7520308,
+   "note": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\" — re-angled (§30I; §24K shot names on the user's call), from the confirmed HK-01a frame + sheets · SH-HIGH (from the landing)",
+   "pair": "A",
    "res": "1536×2752",
-   "at": 1790867552722,
-   "note": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\" — re-angled (§30I; §24K shot names on the user's call), from the confirmed HK-01a frame + sheets · SH-HIGH (from the landing)"
+   "size": 7520308,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150922_1b211fc3-5e7f-4db7-8e76-94ee39f557bd.png",
+   "v": 7
   },
   {
-   "v": 8,
-   "pair": "B",
    "asset": "1ec5f6723b2f5e6ce32263964ab5aac4",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150922_045aa7f0-1978-42a5-99c0-941797ea4dbd.png",
-   "job": "045aa7f0-1978-42a5-99c0-941797ea4dbd",
-   "model": "nano_banana_pro → logged nano_banana_2",
+   "at": 1790867552722,
    "connector": "Higgsfield",
    "credits": 2.14,
-   "size": 5621016,
+   "job": "045aa7f0-1978-42a5-99c0-941797ea4dbd",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\" — re-angled (§30I; §24K shot names on the user's call), from the confirmed HK-01a frame + sheets · SH-HIGH (from the landing) · not chosen",
+   "pair": "B",
    "res": "1536×2752",
-   "at": 1790867552722,
-   "note": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\" — re-angled (§30I; §24K shot names on the user's call), from the confirmed HK-01a frame + sheets · SH-HIGH (from the landing)"
+   "size": 5621016,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150922_045aa7f0-1978-42a5-99c0-941797ea4dbd.png",
+   "v": 8,
+   "archived": true,
+   "archiveAsset": "2a152f66c7acd3857a84e23aebb73fca"
   }
  ],
- "imagePair": [
-  7,
-  8
- ],
+ "imagePair": [],
  "imageAsset": "e7a7cd34d255d219fad70fd135bfec53",
  "imageType": "image/png",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150922_1b211fc3-5e7f-4db7-8e76-94ee39f557bd.png",
  "imageJob": "1b211fc3-5e7f-4db7-8e76-94ee39f557bd",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageRes": "1536×2752",
+ "imageRes": 7520308,
  "imageAt": 1790867552722,
  "imageRegens": 3,
  "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
  "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
  "endFrame": "HK-02a-END",
  "imageFault": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\" — re-angled (§30I; §24K shot names on the user's call), from the confirmed HK-01a frame + sheets",
- "shot": "SH-HIGH (from the landing)"
+ "shot": "SH-HIGH (from the landing)",
+ "imageParts": [],
+ "imagePick": 7,
+ "imageUnused": 8
 }

@@ -1,0 +1,49 @@
+{
+ "beat": "HK-02a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": From this frame: one last step up and a look up — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels. Seen from the landing above, the daughter takes one last step up onto the 13th step, about a second, her right hand sliding up the handrail, and lifts her face fully to the lens, eyes on it, lips parted on a breath; she ends still, one step below the top. The high viewpoint stays where it is; the flight, the photo wall and the hall far below stay exactly as in the frame. Stylized 3D animation, the character exactly on model from the frame, her afro puff settling after the step. No camera travel; no second person; no cut.",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150922_1b211fc3-5e7f-4db7-8e76-94ee39f557bd.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Last Sunday, my daughter walked behind me the whole way up and said,",
+ "motion_plan": "From this frame: one last step up and a look up — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "risk_class": "stairs",
+ "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
+ "pilot": "confirmed",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT13",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "legs and steps blend",
+   "prevented_by": "one step per second, few steps, camera still, every step whole"
+  },
+  {
+   "risk": "a hand lands on the rail (HT03)",
+   "prevented_by": "hands free and clear of the rail"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  }
+ ]
+}

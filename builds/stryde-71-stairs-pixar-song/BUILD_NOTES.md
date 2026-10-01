@@ -120,10 +120,19 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   files to Old. Seen: HK-01b, HK-02a and HK-03a took the new angles (HK-02a B's daughter drifts off model); HK-01a stayed close to the confirmed frame's
   view in both renders — the frame reference dominated; if the user wants the low full shot, the next round drops the frame ref and uses P0 + sheets.
 
+- same session, ~15:20–15:35 UTC (hourly Fix check) — the user picked the re-angled pairs: **HK-01a v3 (A)**, **HK-01b v7 (A)**, **HK-02a v7 (A)**
+  confirmed; **HK-03a** Fix "wrong location" on the OTS pair (the model invented a bright landing room with a window — no plate exists for the landing).
+  v5 = the OTS kept but built as an image edit of the user's confirmed v6 (the top of the flight from the hall), viewpoint moved up the flight
+  (`hooks/HK-03a.v5.prompt.txt`, PASS); v9/v10 To check, v7/v8 to Old. Seen: both renders keep the P0 staircase; the camera landed at the foot
+  behind the daughter, the mother mid-flight turning back. Unused picks (HK-01a v4, HK-01b v8, HK-02a v8) to Old. **Clips** from the three picks on
+  Kling `kling-video-v3_0` (§35A, preflight PASS; HK-01a = clip v2 from the new frame, clip v1 kept as a version): HK-01a 5 s / 40 cr, HK-01b 5 s / 40 cr,
+  HK-02a 6 s / 48 cr (44,019 before). `fix_patterns.py` re-run (29 notes): the repeated note of this build is still the location one (now 6 beats) —
+  HT17; the new "THEY ARE SO BIG" is a one-off (scale against the steps written into every stairs prompt since).
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator never sings to camera (default) vs two bookends · F4 "Stryde." · F10 Mode 2 sheet amendment / true Pro route on Kie · F12 BPM · F13 clipped master.
 
 ## Next
-**Waiting on:** the picks on the re-angled hook pairs (v4) of HK-01a, HK-01b, HK-02a, HK-03a; the HK-01a clip v1 is confirmed (made from the v1 A image — a clip from the new angle follows the new pick). Then their clips (no end frames — waived; §35A ≤ 1,000 chars, preflight PASS); then the body acts in order; CapCut block with lyric captions and the outro end card.
+**Waiting on:** the HK-03a v5 pick, and the Confirms on the three hook clips (HK-01a v2, HK-01b, HK-02a). Then the HK-03a clip; then the body acts. Then their clips (no end frames — waived; §35A ≤ 1,000 chars, preflight PASS); then the body acts in order; CapCut block with lyric captions and the outro end card.
 
 (Earlier plan, done:) steps 4–5 (property sheet + 16:9 Pixar plates on nano_banana_pro: house stairs/landing/kitchen, reception, store checkout, church steps, street; act map on the song's clock — E6 lengths from `work/lyrics.timed.json`, cuts on 3–4 beats, `angles.py` PASS; wardrobe map). No voice stage. Then hook (0–15.5 s) at step 6, body acts at step 7, CapCut block with lyric captions.

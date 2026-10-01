@@ -6,14 +6,14 @@
   "image"
  ],
  "hook": 1,
- "imageAsset": "2f2c6e2a603779471fc3469ba6b28267",
+ "imageAsset": "d61eb64e576206c335e9faa7c2d4da1d",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\"",
+ "imageFault": "user 2026-10-01: \"wrong location\" (on the OTS pair)",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [
-  5,
-  6
+  7,
+  8
  ],
  "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — hall, staircase, camera, light — as a tall 9:16 crop on the top four steps and the landing, with two women there. Image 1 is the hall and staircase. Image 2 is the mother. Image 3 is her daughter.\nThe same woman as Image 2 on the landing at the head of the flight, body facing along it, head turned back over her left shoulder to her daughter, a small knowing smile, mouth closed, eyes on her daughter, both hands free at her sides; emerald-green church dress to mid-calf, low black pumps. The same woman as Image 3 on the 14th and top step, right hand on the handrail, left hand on her chest, face turned up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. The two fill over half the frame's height.\nIn the frame: the two women, the top of the one staircase of Image 1 with its runner, balusters and handrail, the landing wall; every other surface bare. Two legs each.\nThe render and light of Image 1, the women on model, a catchlight in each eye.\nClothing, shoes and walls plain — no lettering, logos or labels; no third person.",
  "imageRefs": [
@@ -39,7 +39,7 @@
  "imageRes": "1536×2752",
  "imageStatus": "regenerate",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142326_595f6512-2797-4da6-b4cd-eaa1d33f57da.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_2f203e76-f95a-4360-8682-14d8c09f7338.png",
  "imageVersions": [
   {
    "archived": true,
@@ -136,11 +136,43 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_142326_4e7f3ff7-b2c1-438f-bb89-62d19bbded3a.png",
    "v": 6,
    "archived": true
+  },
+  {
+   "asset": "d61eb64e576206c335e9faa7c2d4da1d",
+   "at": 1790867552722,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "2f203e76-f95a-4360-8682-14d8c09f7338",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\" — re-angled (§30I; §24K shot names on the user's call), from the confirmed HK-01a frame + sheets · SH-OTS (over the daughter's shoulder)",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 4091157,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_2f203e76-f95a-4360-8682-14d8c09f7338.png",
+   "v": 7,
+   "archived": true
+  },
+  {
+   "asset": "2ce22a5882bc4fe249975119bcf4b379",
+   "at": 1790867552722,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "6af689ae-ac62-42c9-b80e-147356b62213",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\" — re-angled (§30I; §24K shot names on the user's call), from the confirmed HK-01a frame + sheets · SH-OTS (over the daughter's shoulder)",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 5964855,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150922_6af689ae-ac62-42c9-b80e-147356b62213.png",
+   "v": 8,
+   "archived": true
   }
  ],
  "line": "\"Mama, when did that happen?\"",
  "stage": "hooks",
  "status": "regenerate",
  "title": "hook — the line (edit of P0: the top of the flight, HT17) — v1–v3 pairs (replaced)",
- "updatedAt": 1790867385732
+ "updatedAt": 1790868326332
 }
