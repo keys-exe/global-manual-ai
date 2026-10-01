@@ -1,0 +1,35 @@
+{
+ "beat": "D-08-END",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"No buggy.\": Keep this photo exactly as it is \u2014 the camera, the place, the light, the clothes, the strap and everything in it. Image 1 is the photo. Change only where he is: he has walked two steps straight toward the camera, a little larger in the frame, still head to shins, his left leg now forward, the strap still seated just below his right kneecap. The camera has not moved: the empty buggy and the path stay exactly where and how big they are in the photo. Right hand stays on the bag strap, left arm swinging; looking ahead past the lens, smiling, mouth closed. An ordinary iPhone photo, nothing restyled. Clothing and bag plain \u2014 no lettering or logos but the strap's own wordmark; no second strap.",
+ "script_line": "No buggy.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "D-08 start (picked A, v3)",
+   "kind": "frame"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-08.v2.A.png",
+ "taste": [
+  "FP01",
+  "FP03",
+  "FP11",
+  "HT01",
+  "HT13"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "ref_urls": [
+  "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-08.v2.A.png"
+ ],
+ "fix_note": "fix this error (D-08 clip): clip jumped back mid-way and the strap flickered legs \u2192 end frame had the camera travel; new end frame with the camera fixed"
+}

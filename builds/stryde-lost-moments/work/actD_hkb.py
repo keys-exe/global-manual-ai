@@ -41,3 +41,20 @@ def write_end():
          "body": True, "refs": [{"label": "D-HKb start (picked A, v2)", "kind": "frame"}], "match": "frame", "edit_of": start,
          "taste": ["FP01", "FP03", "FP11", "HT01", "HT13"], "anatomy": False, "pair": ["gpt_image_2_5", "gpt_image_2_5"], "ref_urls": [start]}
     (HERE / "clips" / "D-HKb-END.img.call.json").write_text(json.dumps(c, indent=1)); print("END", len(p))
+
+# Round 3 (board, 2026-10-01): end frame A picked → pinned first-and-last clip (travel, 4s; the line holds ~3.6s on the tight VO).
+CLIP_FACTS = ("He ends exactly as in the end frame; the same man, bag on his right shoulder and strap below his right kneecap the whole way, "
+              "the fairway unchanged. No second person, no camera move.")
+def write_clip():
+    from actD_v4 import CAM
+    p = f'For the line "{LINE}": {MOTION} {CAM} {CLIP_FACTS}'
+    (HERE / "prompts" / "D-HKb.v2.video.txt").write_text(p)
+    c = {"beat": "D-HKb", "connector": "kling", "mode": 1, "kind": "hook", "prompt": p, "duration": 4, "resolution": "1080p", "aspect_ratio": "9:16",
+         "start_image": SP + "D-HKb.v2.A.png", "start_approved": True, "pinned": True, "end_image": SP + "D-HKb-END.A.png", "end_approved": True,
+         "approved_by": "user picked the start (A) and end frame (A) on the board + confirm (2026-10-01)", "subject_motion": "travels",
+         "prefer_multi_shots": "false", "generation": 2, "fix_note": "MAKE HE WALKING ON THE GOLF CORSE: garage step-ladder frame → new walking-the-fairway frame (picked A) + pinned end frame (A)", "script_line": LINE, "motion_plan": MOTION,
+         "motion_confirmed": True, "risk_class": "travel", "pilot": "confirmed", "taste": ["HT01", "HT12", "HT18"],
+         "risks": [{"risk": "the man morphs", "prevented_by": "the same man, bag and strap the whole way"},
+                   {"risk": "he overshoots", "prevented_by": "ends exactly as in the end frame"},
+                   {"risk": "strap slides", "prevented_by": "strap below his right kneecap the whole way"}]}
+    (HERE / "clips" / "D-HKb.v2.call.json").write_text(json.dumps(c, indent=1)); print("CLIP", len(p))
