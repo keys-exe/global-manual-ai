@@ -46,19 +46,23 @@ SHOTS.append(dict(
     prompt=" ".join([
         manifest([("@image1", SHEET("the commuter", X2_OUT)), ("@image2", PLACE_C), ("@audio1", VOICE("the commuter"))]),
         SERIES, LOOK, INHERIT, CONCOURSE, GEO,
-        "THE SHOT: a medium close-up at eye height, straight on: the commuter, " + X2_ID + ", in " + X2_OUT + ", stands at the foot of the stopped escalator with the yellow barrier just behind him, his phone in his right hand at chest height.",
+        "THE SHOT: a medium close-up at eye height, straight on, on a long lens: the commuter, " + X2_ID + ", in " + X2_OUT + ", stands at the foot of the stopped escalator, his phone in his right hand at chest height. "
+        "Behind him, just over his right shoulder, the yellow folding barrier is the clearest thing in the background; the escalator itself is mostly hidden behind his head and shoulders and falls soft and out of focus. "
+        "The escalator is a dead machine: its steps sit motionless exactly like the fixed stairs beside it, its handrail is still, and nothing behind him moves except a few far-off people.",
         "He looks up from his phone toward the barrier, his shoulders drop, and he says flatly: \"" + L10 + "\" He stays where he stands.",
         F2, PHYS,
         "While the line is spoken, the commuter keeps doing one thing with their hands: his right hand lowering the phone slowly to his side, at one slow drop through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
         state("THE COMMUTER", "tired, backpack on both shoulders, phone in his right hand, standing at the foot of the stopped escalator", "nothing"),
-        "FOCUS: the nearest eye of the commuter is in sharp focus; the concourse behind falls to a soft, recognisable shape. The blur is optical: soft and round, never smeared.",
+        "FOCUS: the nearest eye of the commuter is in sharp focus; the barrier and the escalator behind him fall to a soft, recognisable, motionless shape. The blur is optical: soft and round, never smeared.",
         "DIALOGUE (the commuter, verbatim): \"" + L10 + "\" " + VOICE_X2 + " IN THIS MOMENT: he has just heard the escalator is out of service and he is already late. Speaking to nobody, under his breath. "
         "PLAYING: complains to himself. Opens deflated; turns on the exact word 'joking', where his eyes close for a beat; exits resigned. Stress on 'joking'. "
         "VOICE NOW: low, flat, a sigh in it, continuing from how the commuter sounded on the previous line, and matching the face in this shot. "
         "UNDER THE LINE: thirty steps feels like a mountain this early, which leaks only through his shoulders dropping. Played small and true, for a camera close enough to see a thought. Never theatrical, never pushed, never performed to the lens.",
         AUD,
         negs(NEG_EQUIP, NEG_MORPH, STATIC, NEG_ESC, "no readable text on the phone screen", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    risks=[{"risk": "the groan overacted", "prevented_by": "'flatly', 'under his breath', NEG-DRAMA"},
+    gen=2, fix="User Fix: \"the escalator should not be moving\" → fault in the frame: the escalator's steps filled the centre of the background, sharp and large behind his head, and the model animates an escalator by default even when told it is off → a long lens with the escalator mostly hidden behind his head and soft, the yellow barrier the clear background read, the steps described as motionless as the fixed stairs; GEOGRAPHY block and moving-escalator negatives kept",
+    risks=[{"risk": "the escalator still moves", "prevented_by": "escalator mostly hidden and soft, 'dead machine' stated, moving-escalator negatives"},
+           {"risk": "the groan overacted", "prevented_by": "'flatly', 'under his breath', NEG-DRAMA"},
            {"risk": "phone screen shows text", "prevented_by": "phone at chest height, screen negative"},
            {"risk": "the tannoy line voiced in the clip", "prevented_by": "only his line in DIALOGUE; the tannoy is SFX-TANNOY in the edit"}]))
 
