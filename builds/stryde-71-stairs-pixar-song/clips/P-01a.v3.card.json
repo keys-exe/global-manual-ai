@@ -1,0 +1,86 @@
+{
+ "videoVersions": [
+  {
+   "archiveAsset": "6d9e6a8323510a79d61ca96a23343a00",
+   "archived": true,
+   "asset": "3ca72ff249af39d5c1c701e111eacc7c",
+   "at": 1790881654990,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 12,
+   "job": "AZtYm6x5ecRwFiriXrZ6-FpVRSsX5OF-Bj0ta1bAGbUn7oxiZN1ISajEirgTDXd8hfskOM5Y",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v12 B (job c5f6bfae) · what I see: from the top step she lowers one foot to the step below and the other follows, back to the lens, hands on the rail, nobody speaks · replaced on the user's Fix (one step at a time); copied to Old versions",
+   "res": "1072×1928",
+   "size": 4636335,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1faf845b-2f53-4ae3-97fa-7ad191645c39-PcS3C5R49adgvxbzbamWkw-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  },
+  {
+   "asset": "f28c712610099c2e689c8f718d38a9a9",
+   "at": 1790882998753,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 12,
+   "job": "AdlkFcaWgUN5XKLioo-bNn63IbxjX93ZwlXjhP3aTM9NxjXN74brabvAsTqAiGdW5Jv4wtrm",
+   "model": "kling-video-v3_0",
+   "note": "user Fix: SHOULD NOT BE STEPPING SO FAR DOWN, IT SHOULD BE 1 STEP AT A TIME → one slow step only: the right foot to the step just below, the left joins it on that same step, then she holds; never a second step (§22X) · what I see: one foot lowers to the step below and the other joins it, then she holds; back to the lens, nobody speaks",
+   "res": "1072×1928",
+   "size": 6089970,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/c0389d20-ba01-464f-a5fd-bd39a1357db5-BubHjZrkqKJ9S4vdiJDhXQ-output.mp4?x-kcdn-pid=112372",
+   "v": 2
+  },
+  {
+   "v": 3,
+   "asset": null,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/680061aa-2c72-4578-a9df-a90ad48196bb-r897krMLsiF4xB3PQxig2A-output.mp4?x-kcdn-pid=112372",
+   "job": "AdrmZqEYnrwo83B84gGnDHorA-KxoyDuNcXhTbuInsjgHMcLKMdWqhslX0Rs6aTlM5C9gbc3",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 40,
+   "size": 3409069,
+   "res": "1072×1928",
+   "duration": 5.04,
+   "at": 1790883970358,
+   "fromImage": 12,
+   "note": "third clip from the start frame alone (the direction named three ways) still read as climbing — kept here as a version, never shown as To check (L16); the fix moves to a pinned end frame (P-01a-END, §27G rule 10)",
+   "archived": true,
+   "archiveAsset": "ea415767b835f3a5a368c6d6b6cd38f9"
+  }
+ ],
+ "videoAsset": {
+  "__delete__": true
+ },
+ "videoUrl": {
+  "__delete__": true
+ },
+ "videoJob": {
+  "__delete__": true
+ },
+ "videoAt": {
+  "__delete__": true
+ },
+ "videoRes": {
+  "__delete__": true
+ },
+ "credits": {
+  "__delete__": true
+ },
+ "prompt": {
+  "__delete__": true
+ },
+ "fault": {
+  "__delete__": true
+ },
+ "regens": 3,
+ "status": "ready",
+ "videoFault": "SHOULD BE GOING BACK WARDS NOT UP → three clips from the start frame alone climbed; the next clip is pinned first-and-last frame — pick the end frame on the P-01a-END card, then the clip is made",
+ "videoNote": "waiting on the end-frame pick (card P-01a-END); the clip is pinned start + end so it can only go down",
+ "pinEnd": "P-01a-END",
+ "updatedAt": 1790883970358
+}

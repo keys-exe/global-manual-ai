@@ -265,7 +265,7 @@
   "subject": "N feet",
   "location": "L-N-STAIRS",
   "story_day": "N-D1",
-  "framing": "CU on her feet at the top of the flight, from below (an edit of the confirmed P-01a frame, user 2026-10-01: use the P01A as reference): the same woman from behind, her slippers on the top step, the right heel reaching back and down to the step below, the hem of the house dress above",
+  "framing": "MEDIUM-CU on her legs and feet at the top of the flight, from below (an edit of the confirmed P-01a frame; user 2026-10-01: use the P01A as reference, then 'she is too big' — a wider frame): the same woman from behind, small at the top of the frame from the hem down, her slippers on the top step, the right heel reaching back and down to the step below, the upper half of the flight below her",
   "action": "one foot back and down onto the step below, the other joins",
   "pace": "about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -328,7 +328,7 @@
   "subject": "N",
   "location": "L-N-STAIRS (landing)",
   "story_day": "N-D1",
-  "framing": "MEDIUM from the landing behind her shoulder, high, looking down the whole flight past her: N sitting on the top step in her house dress, one hand on the newel, her head turned down to the hall far below (user Fix 2026-10-01: a different camera angle)",
+  "framing": "MEDIUM from mid-flight looking up at the top step (an edit of the confirmed P-02a v6 frame — her own staircase; user Fix 2026-10-01: 'wrong location' after the over-the-shoulder try): N sitting on the top step in her house dress, one hand on the newel, looking down the flight toward the lens, the top steps and the photo wall around her",
   "action": "she looks down the stairs and looks away",
   "pace": "one turn of the head, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -344,27 +344,27 @@
   "ledger": "",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "high",
-   "side": "ots",
+   "height": "low",
+   "side": "front",
    "fg": "clean",
    "scale": "MEDIUM",
-   "why": "high over her shoulder = the drop she won't go down is the picture; the other angle on this flight (P-01a/P-01b are from below)"
+   "why": "low from mid-flight = closer on her at the top, the steps between us; her own hall, not a new one"
   },
   "mirror_of": null,
   "focus": {
-   "plane": "deep",
+   "plane": "eyes",
    "dof": "deep",
    "rack": null,
    "moving_subject": false
   },
   "light": {
    "source": "landing window at the top of the stairs, south wall",
-   "key_side": "R",
+   "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 6500
   },
-  "face": false,
+  "face": true,
   "speaking": false,
   "tin": 0.0,
   "lyric_cut": 21.89,
@@ -706,11 +706,11 @@
   "subject": "N hands",
   "location": "L-N-KITCHEN",
   "story_day": "N-D1c",
-  "framing": "CU at floor level by her chair: a grey knee sleeve dropped on the kitchen floor beside her pink slipper, a pill bottle on its side next to it, a chair leg; her feet still (user Fix 2026-10-01: a different one)",
-  "action": "the bottle rolls once and stops against the slipper",
-  "pace": "one roll, about a second",
+  "framing": "CU on a kitchen drawer pulled open under the counter, stuffed with knee sleeves, a hinged brace and pill bottles, N's hand on its front pushing it shut (an insert, a different kind of B-roll — user Fix 2026-10-01: 'wrong person, a different type of broll')",
+  "action": "her hand pushes the drawer shut",
+  "pace": "one push, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "objects only, one movement",
+  "staging": "hands: one movement, insert",
   "pin_end": "no",
   "pin_waived": null,
   "max": 3,
@@ -722,11 +722,11 @@
   "ledger": "",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "ground",
-   "side": "three-quarter",
+   "height": "eye",
+   "side": "front",
    "fg": "clean",
    "scale": "CU",
-   "why": "ground = what the fixes came to, on the floor by her feet"
+   "why": "eye on the drawer = where it all ended up, shut away"
   },
   "mirror_of": null,
   "focus": {
@@ -737,7 +737,7 @@
   },
   "light": {
    "source": "window over the sink, south wall",
-   "key_side": "R",
+   "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 5600
@@ -769,11 +769,11 @@
   "subject": "N",
   "location": "L-N-KITCHEN",
   "story_day": "N-D1c",
-  "framing": "MEDIUM from behind her shoulder, high: N at the table with her head bowed, both hands slack in her lap, the heap of braces, sleeves and pill bottles on the table in front of her, the window beyond (user Fix 2026-10-01: a different one)",
-  "action": "her head sinks a little lower",
-  "pace": "one slow drop, about two seconds",
+  "framing": "MEDIUM at the kitchen window: N in profile at the sink, both hands on its edge, looking out of the window at the street, the light on her face (a different kind of B-roll with her cast sheet — user Fix 2026-10-01: 'wrong person, a different type of broll')",
+  "action": "she looks out, then her eyes drop to the sink",
+  "pace": "one look down, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "none",
+  "staging": "face: one movement, standing still",
   "pin_end": "no",
   "pin_waived": null,
   "max": 3,
@@ -785,27 +785,27 @@
   "ledger": "",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "high",
-   "side": "ots",
+   "height": "eye",
+   "side": "profile",
    "fg": "clean",
    "scale": "MEDIUM",
-   "why": "high over her shoulder = looking at the heap with her; her face kept from us"
+   "why": "profile at the window = the life outside she is not in"
   },
   "mirror_of": null,
   "focus": {
-   "plane": "deep",
+   "plane": "eyes",
    "dof": "medium",
    "rack": null,
    "moving_subject": false
   },
   "light": {
    "source": "window over the sink, south wall",
-   "key_side": "R",
+   "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 5600
   },
-  "face": false,
+  "face": true,
   "speaking": false,
   "tin": 0.0,
   "lyric_cut": 42.23,

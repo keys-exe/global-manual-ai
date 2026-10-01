@@ -1,0 +1,51 @@
+[
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-01a",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/board/json/old_P-01a.v9.json",
+  "if_version": 7
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-01b",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/board/json/old_P-01b.v9.json",
+  "if_version": 5
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-02a",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/board/json/old_P-02a.v9.json",
+  "if_version": 5
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-03a",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/board/json/old_P-03a.v9.json",
+  "if_version": 4
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-03b",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/board/json/old_P-03b.v9.json",
+  "if_version": 5
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-05b",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/board/json/old_P-05b.v9.json",
+  "if_version": 1
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-05c",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/board/json/old_P-05c.v9.json",
+  "if_version": 1
+ }
+]

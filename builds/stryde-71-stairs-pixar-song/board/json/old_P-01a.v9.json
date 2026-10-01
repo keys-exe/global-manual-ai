@@ -1,0 +1,46 @@
+{
+ "videoVersions": [
+  {
+   "archiveAsset": "6d9e6a8323510a79d61ca96a23343a00",
+   "archived": true,
+   "asset": "6d9e6a8323510a79d61ca96a23343a00",
+   "at": 1790881654990,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 12,
+   "job": "AZtYm6x5ecRwFiriXrZ6-FpVRSsX5OF-Bj0ta1bAGbUn7oxiZN1ISajEirgTDXd8hfskOM5Y",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v12 B (job c5f6bfae) · what I see: from the top step she lowers one foot to the step below and the other follows, back to the lens, hands on the rail, nobody speaks · replaced on the user's Fix (one step at a time); copied to Old versions",
+   "res": "1072×1928",
+   "size": 4636335,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1faf845b-2f53-4ae3-97fa-7ad191645c39-PcS3C5R49adgvxbzbamWkw-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  },
+  {
+   "asset": "fd3801cc46960e7d6bedd08d9fd14d7b",
+   "at": 1790882998753,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 12,
+   "job": "AdlkFcaWgUN5XKLioo-bNn63IbxjX93ZwlXjhP3aTM9NxjXN74brabvAsTqAiGdW5Jv4wtrm",
+   "model": "kling-video-v3_0",
+   "note": "user Fix: SHOULD NOT BE STEPPING SO FAR DOWN, IT SHOULD BE 1 STEP AT A TIME → one slow step only: the right foot to the step just below, the left joins it on that same step, then she holds; never a second step (§22X) · what I see: one foot lowers to the step below and the other joins it, then she holds; back to the lens, nobody speaks",
+   "res": "1072×1928",
+   "size": 6089970,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/c0389d20-ba01-464f-a5fd-bd39a1357db5-BubHjZrkqKJ9S4vdiJDhXQ-output.mp4?x-kcdn-pid=112372",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "fd3801cc46960e7d6bedd08d9fd14d7b"
+  }
+ ],
+ "videoAsset": "fd3801cc46960e7d6bedd08d9fd14d7b",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/c0389d20-ba01-464f-a5fd-bd39a1357db5-BubHjZrkqKJ9S4vdiJDhXQ-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AdlkFcaWgUN5XKLioo-bNn63IbxjX93ZwlXjhP3aTM9NxjXN74brabvAsTqAiGdW5Jv4wtrm",
+ "duration": 5.04,
+ "videoFault": "replaced on the user's Fix: should be going backwards not up",
+ "updatedAt": 1790883718245
+}
