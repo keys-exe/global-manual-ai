@@ -4,6 +4,7 @@
  "bars": 1,
  "beat": "P-03a",
  "build": "stryde-71-stairs-pixar-song",
+ "credits": 40,
  "duration": 5.04,
  "eg": "",
  "flow": [
@@ -49,7 +50,7 @@
  ],
  "imageType": "image/png",
  "imageUnused": 8,
- "imageUnusedArchived": "190180a9df27c63abb60ec5cd9e03530",
+ "imageUnusedArchived": "5999e0eec44900f8306f7c3e250c57c7",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_3badbfc6-55a7-4f86-867f-2e548dff448a.png",
  "imageVersions": [
   {
@@ -170,13 +171,15 @@
    "v": 7
   },
   {
+   "archiveAsset": "5999e0eec44900f8306f7c3e250c57c7",
+   "archived": true,
    "asset": "c630aeb3a7b29239f3feeb608a9ee823",
    "at": 1790883125026,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "ae620c20-cac5-4618-afb1-2fc397a76a76",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user Fix: \"MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW\" → a short hinged brace, a hand's length above and below the knee, same seat and side",
+   "note": "user Fix: \"MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW\" → a short hinged brace, a hand's length above and below the knee, same seat and side · not chosen (the user picked the other); copied to Old versions",
    "pair": "B",
    "res": "1536×2752",
    "size": 7685564,
@@ -197,18 +200,23 @@
  "onScreen": 3.25,
  "pinEnd": "no",
  "product": "absent (generic brace, §10) · —",
+ "prompt": "For the line \"That big knee brace I bought slid right down my leg.\": From this frame: her hand pulls the brace up once and it slips back — one pull, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the side at knee height, her right hand hauls the short brace's top strap up over the kneecap in one pull, holds a moment, and the brace sags back down below the kneecap as the hand eases; her left hand stays on the chair seat; she stays seated, nobody speaks; the chair, the slippers and the kitchen behind stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame, the brace rigid in shape. No camera travel; nobody else; no cut; the brace never changes design.",
  "section": "The low point and what failed — MUS-EXPOSE",
  "shot": "low · profile · clean · CU",
  "songIn": 26.71,
  "songOut": 29.96,
  "stage": "broll",
  "staging": "hands: large in frame, one movement",
- "status": "ready",
+ "status": "review",
  "storyDay": "N-D1",
  "title": "failed fix",
- "updatedAt": 1790883326045,
+ "updatedAt": 1790883912351,
+ "videoAsset": "7cbcb0aaee04e477b0cfa6094cc38fd9",
+ "videoAt": 1790883912351,
  "videoConnector": "Kling",
- "videoNote": "the clip is made again once the new image is picked",
+ "videoJob": "AfszUQXa2NJvQMWZiLir0TVIBk3DrIp085kuSgXLfsHogrVLLTq06OCdS-TH_bQJkRbMTioF",
+ "videoNote": "clip from the picked v7 A · what I see: the hand pulls the short brace's strap up, it sags back; seated, nobody speaks",
+ "videoRes": "1072×1928",
  "videoTaste": [
   "HT03",
   "HT04",
@@ -217,6 +225,7 @@
   "HT22"
  ],
  "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/811ec0a2-9b44-4851-b90a-1101445c2500-wt3OGYe2W1EDPuCoTQi0Zg-output.mp4?x-kcdn-pid=112372",
  "videoVersions": [
   {
    "archiveAsset": "42b3f2b4303b70dc517f08e99acdf25c",
@@ -235,6 +244,22 @@
    "type": "video/mp4",
    "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1017ce2d-ffc8-428b-b69b-20a9ed73df62-e-nEESpF53HY1t_krqSZMw-output.mp4?x-kcdn-pid=112372",
    "v": 1
+  },
+  {
+   "asset": "7cbcb0aaee04e477b0cfa6094cc38fd9",
+   "at": 1790883912351,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 7,
+   "job": "AfszUQXa2NJvQMWZiLir0TVIBk3DrIp085kuSgXLfsHogrVLLTq06OCdS-TH_bQJkRbMTioF",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v7 A · what I see: the hand pulls the short brace's strap up, it sags back; seated, nobody speaks",
+   "res": "1072×1928",
+   "size": 5413890,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/811ec0a2-9b44-4851-b90a-1101445c2500-wt3OGYe2W1EDPuCoTQi0Zg-output.mp4?x-kcdn-pid=112372",
+   "v": 2
   }
  ]
 }

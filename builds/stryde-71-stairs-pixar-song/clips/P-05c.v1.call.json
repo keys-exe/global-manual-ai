@@ -1,0 +1,49 @@
+{
+ "beat": "P-05c",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Nothing gave me my life back.\": From this frame: she looks out, then her eyes drop to the sink — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. At the window in profile, she looks out a moment longer, then her eyes drop to the sink and her shoulders settle; her hands stay on the sink's edge, her mouth closed the whole time — she never speaks or sings; the window, the curtain and the kitchen stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never turns to the lens.",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194106_5b40a12a-24f5-4d12-8650-016a8b0384ae.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Nothing gave me my life back.",
+ "motion_plan": "From this frame: she looks out, then her eyes drop to the sink — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one look down",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image v5 A, job 5b40a12a-24f5-4d12-8650-016a8b0384ae)"
+}

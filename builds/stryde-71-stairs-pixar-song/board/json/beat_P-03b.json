@@ -4,7 +4,8 @@
  "bars": 1,
  "beat": "P-03b",
  "build": "stryde-71-stairs-pixar-song",
- "duration": 4,
+ "credits": 32,
+ "duration": 4.04,
  "eg": "",
  "flow": [
   "image",
@@ -49,6 +50,7 @@
  ],
  "imageType": "image/png",
  "imageUnused": 12,
+ "imageUnusedArchived": "582492db34d2751f1a27c783cae4a842",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192753_6ca76930-8e96-4da8-8f1c-de4465a37d80.png",
  "imageVersions": [
   {
@@ -237,13 +239,15 @@
    "v": 11
   },
   {
+   "archiveAsset": "582492db34d2751f1a27c783cae4a842",
+   "archived": true,
    "asset": "cb14463e3b4d00d6c338c883942a38e5",
    "at": 1790883125026,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "0530f896-8f7e-4225-9415-1b6526e144b4",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user Fix: \"USE THE P03A AS REFERENCE AGAIN\" → a direct image edit of the new P-03a frame (v7 A): the same seat and side, the shorter brace down at the ankle, evening (FP14). If P-03a B is picked, this pair is made again from B",
+   "note": "user Fix: \"USE THE P03A AS REFERENCE AGAIN\" → a direct image edit of the new P-03a frame (v7 A): the same seat and side, the shorter brace down at the ankle, evening (FP14). If P-03a B is picked, this pair is made again from B · not chosen (the user picked the other); copied to Old versions",
    "pair": "B",
    "res": "1536×2752",
    "size": 6349579,
@@ -258,20 +262,54 @@
  "light": "window over the sink, south wall · key R · evening · problem: grey · 5600K",
  "line": "By evening, it was around my ankle.",
  "location": "L-N-KITCHEN",
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: she shifts her foot once — one small shift, about a second; camera RV sway — the virtual camera breathes in place, never travels",
  "music": "MUS-EXPOSE",
  "onScreen": 2.44,
  "pinEnd": "no",
  "product": "absent · —",
+ "prompt": "For the line \"By evening, it was around my ankle.\": From this frame: she shifts her foot once — one small shift, about a second; camera RV sway — the virtual camera breathes in place, never travels. At floor level, she shifts her right foot once — the slipper slides a little forward on the floor and the brace around her ankle slumps with it, then the foot rests; her other foot and the chair stay exactly as in the frame; nobody speaks. Stylized 3D animation, exactly on model from the frame, the brace rigid in shape. No camera travel; nobody else; no cut; the brace never climbs back up the leg.",
  "section": "The low point and what failed — MUS-EXPOSE",
  "shot": "ground · profile · clean · CU",
  "songIn": 29.96,
  "songOut": 32.4,
  "stage": "broll",
  "staging": "feet only",
- "status": "ready",
+ "status": "review",
  "storyDay": "N-D1",
  "title": "failed fix",
- "updatedAt": 1790883327637
+ "updatedAt": 1790883912351,
+ "videoAsset": "ee0e1c044dd8a30b36fb57c4e699905b",
+ "videoAt": 1790883912351,
+ "videoConnector": "Kling",
+ "videoJob": "Ae2zSKInGywNZv3wrMiDeTMMbmDo04Jb5mF5GOn4rFhOOujiGLuK9Cs95KE4AU08QGNSMWWP",
+ "videoNote": "clip from the picked v11 A · what I see: one small shift of the foot, the brace at the ankle moves with it; nobody speaks",
+ "videoRes": "1072×1928",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/83512876-2b80-44bf-bc0d-c673e8ee9652-sIzbMzjifnU1wzZLLk4grg-output.mp4?x-kcdn-pid=112372",
+ "videoVersions": [
+  {
+   "asset": "ee0e1c044dd8a30b36fb57c4e699905b",
+   "at": 1790883912351,
+   "connector": "Kling",
+   "credits": 32,
+   "duration": 4.04,
+   "fromImage": 11,
+   "job": "Ae2zSKInGywNZv3wrMiDeTMMbmDo04Jb5mF5GOn4rFhOOujiGLuK9Cs95KE4AU08QGNSMWWP",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v11 A · what I see: one small shift of the foot, the brace at the ankle moves with it; nobody speaks",
+   "res": "1072×1928",
+   "size": 4093165,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/83512876-2b80-44bf-bc0d-c673e8ee9652-sIzbMzjifnU1wzZLLk4grg-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  }
+ ]
 }
