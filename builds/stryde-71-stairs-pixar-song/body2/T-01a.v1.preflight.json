@@ -1,0 +1,48 @@
+{
+ "beat": "T-01a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Then my grandbaby got married in June.\": Keep this photo exactly as it is — the banquet hall, the round tables and gold chairs, the string lights and chandeliers, the evening light — at a table by the dance floor, a tall 9:16 crop, and add the bride and two guests. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nMedium shot at eye level, sharp on the bride: a young Black bride in a white gown, seated at the round table in three-quarter view facing frame left toward an older guest, a wide closed-mouth smile, eyes crinkled, looking at the guest; her right hand on the guest's forearm, her left hand on the tablecloth, four chunky fingers and a thumb on each; two older guests in dark suits beside her, smiling, hands on the table. Scale true to the set: the chair back comes up to her shoulders.\nIn frame: the bride, two guests, one table with glasses and a hydrangea centrepiece, the hall of Image 1 soft beyond; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Gown and decor plain — no lettering, logos or labels.",
+ "script_line": "Then my grandbaby got married in June.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P3-RECEPTION plate (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "7cdda7ff-68a8-4e54-ab1c-2d80fbe93822",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": false,
+ "medias": [
+  "7cdda7ff-68a8-4e54-ab1c-2d80fbe93822",
+  "5b40a12a-24f5-4d12-8650-016a8b0384ae"
+ ]
+}

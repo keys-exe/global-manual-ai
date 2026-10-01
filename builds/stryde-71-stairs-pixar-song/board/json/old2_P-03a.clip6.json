@@ -1,0 +1,72 @@
+{
+ "videoVersions": [
+  {
+   "asset": "ee2be8f535a9bd191614b2336202b13f",
+   "at": 1790888488068,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 11,
+   "job": "AVL1xP7SEx00bZUhUe1jG3IbhyRWZq0rBHFJDaphTZEYJKJYV54e6E3Is7cjA70Cd9cwx0Au",
+   "model": "kling-video-v3_0",
+   "note": "from the picked image v11 A (job a5860844) · the first clip on this frame (the image was replaced on the user's Fixes — the P-03b brace copied onto her knee) · what I see: her hand hauls the brace up, holds, and it sags back down the shin toward the ankle; she stays seated, nobody speaks · replaced on the user's Fix (IT SHOULD FEELING DRIFTING DOWN); kept on Old versions 2",
+   "res": "1072×1928",
+   "size": 3958379,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1e6454ed-a84a-48cb-b54c-485626e96832-iPny2duE0Y8uZ0YQnLKJbg-output.mp4?x-kcdn-pid=112372",
+   "v": 3
+  },
+  {
+   "asset": "2bf17fd522840b11ae85f20a9daa15d9",
+   "at": 1790889219121,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 11,
+   "job": "ARew7jVzpC1Fei9BUI1Aa8hEJkFTiwem2TYpfTKphqM0afafv8Lu-RZygvw92aZK-YGIm4HD",
+   "model": "kling-video-v3_0",
+   "note": "user Fix on v3: IT SHOULD FEELING DRIFTING DOWN → the motion rewritten (§22X): the brace drifts down her shin on its own, gravity taking it, her hand letting go; the act-map row's action and pace changed to match · what I see: her hand lifts off to her thigh and the brace slides slowly down her shin on its own, settling just above the ankle by the last frame; she stays seated, nobody speaks · replaced on the user's Fix (SHOULD BE FALLING WHILE DRIFTING DOWN); kept on Old versions 2",
+   "res": "1072×1928",
+   "size": 3128266,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1824202d-29be-4401-9c1a-0a2a441a7b97-Fxn9c4ORTS8PZhyQbkcLqA-output.mp4?x-kcdn-pid=112372",
+   "v": 4
+  },
+  {
+   "asset": "e23eb06a382ff176c36d63dadc9f1431",
+   "at": 1790889655581,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 11,
+   "job": "Ab6BXn6N_wYVe9maeeUgfx4XQVS_PznwqyH4Rt66WRDhhCr8D_jPW3Nft86dxUY3onmFRYcH",
+   "model": "kling-video-v3_0",
+   "note": "user Fix on v4: SHOULD BE FALLING WHILE DRIFTING DOWN → the brace slips loose and falls down her shin under its own weight, drifting as it drops (§22X; third clip on this frame, sent on the user's \"FIX THOSE\") · what I see: her hand lets go, the brace slides off the knee and drops down the shin to rest bunched at the ankle by the last second; she stays seated, nobody speaks · replaced on the user's Fix (THE KNEE BRACE DRIFTS DOWN THEN PULL IT UP AGAIN); kept on Old versions 2",
+   "res": "1072×1928",
+   "size": 5792740,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/7696f1b5-9ffa-489b-bd52-dc80244a2b62-qkLWaZWjDGPs9azbf67FOA-output.mp4?x-kcdn-pid=112372",
+   "v": 5
+  },
+  {
+   "v": 6,
+   "asset": "e98e775c1eb9f67a7bdd92c468508c7f",
+   "at": 1790890209367,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 11,
+   "job": "AagqyvCiqF-DPWAlue_AeyJiDHnRF4mYecme51Fp8d6B7zOzAT8o-8ehpXDh71mxMzYlkWtw",
+   "model": "kling-video-v3_0",
+   "res": "1072×1928",
+   "size": 3967448,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/3e550988-637a-4425-8dc6-bbe56941cc65-r8x892tVW1TsqGpJ1LEE0w-output.mp4?x-kcdn-pid=112372",
+   "note": "user Fix on v5: THE KNEE BRACE DRIFTS DOWN THEN PULL IT UP AGAIN · what I see: the brace falls to her ankle, then she bends forward into frame to haul it up and her mouth opens in a smile — the standing note never talk the lyrics in B-roll broken, so it was never shown (L16, L23); kept here with its credits"
+  }
+ ],
+ "videoAsset": "e98e775c1eb9f67a7bdd92c468508c7f",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/3e550988-637a-4425-8dc6-bbe56941cc65-r8x892tVW1TsqGpJ1LEE0w-output.mp4?x-kcdn-pid=112372",
+ "fault": "user 2026-10-01: THE KNEE BRACE DRIFTS DOWN THEN PULL IT UP AGAIN",
+ "updatedAt": 1790890209367
+}

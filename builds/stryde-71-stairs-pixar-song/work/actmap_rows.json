@@ -392,8 +392,8 @@
   "location": "L-N-KITCHEN",
   "story_day": "N-D1",
   "framing": "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a short black hinged knee brace — a hand's length above and below the knee — sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new; the brace a bit more short)",
-  "action": "the brace drifts slowly down her shin on its own, her hand letting it go",
-  "pace": "one slow slide, about three seconds",
+  "action": "the brace drifts down her shin, then her hand pulls it back up over the knee",
+  "pace": "one slide down, one pull up, about four seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
   "staging": "hands: large in frame, one movement, seated",
   "pin_end": "no",
@@ -411,7 +411,7 @@
    "side": "profile",
    "fg": "clean",
    "scale": "CU",
-   "why": "low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14); user Fix 2026-10-01 on the clip: it should feel like drifting down"
+   "why": "low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14); user Fix 2026-10-01 on the clip: it should feel like drifting down, then: falling while drifting down; then: drifts down, then pull it up again"
   },
   "mirror_of": null,
   "focus": {
@@ -829,12 +829,12 @@
   "line": "Then my grandbaby got married in June.",
   "key": "married",
   "function": "turn",
-  "subject": "one-off bride + guests",
+  "subject": "N + one-off bride",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "MEDIUM: the bride in white laughing with guests at a reception table, string lights overhead",
-  "action": "the bride throws her head back laughing",
-  "pace": "one laugh, about two seconds",
+  "framing": "MEDIUM: the bride in white hugging N (burgundy dress) at the edge of the dance floor, string lights overhead, both smiling with eyes closed (user 2026-10-01: new images, new wardrobe)",
+  "action": "the two of them sway once in the hug",
+  "pace": "one slow sway, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
   "staging": "none",
   "pin_end": "no",
@@ -852,7 +852,7 @@
    "side": "three-quarter",
    "fg": "clean",
    "scale": "MEDIUM",
-   "why": ""
+   "why": "eye level, close on the hug = her grandbaby, her day"
   },
   "mirror_of": null,
   "focus": {
@@ -895,9 +895,9 @@
   "subject": "C1",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "MCU: Loretta at the edge of the dance floor in her satin dress, clapping on the beat, a big laugh",
-  "action": "two claps on the beat",
-  "pace": "about a second",
+  "framing": "MCU: Loretta on the dance floor in her fuchsia satin dress, both hands up waving to the beat, a big closed-mouth grin",
+  "action": "her raised hands wave once on the beat",
+  "pace": "one wave, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
   "staging": "hands: one movement",
   "pin_end": "no",
@@ -958,7 +958,7 @@
   "subject": "C1 + one-off guests",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "WIDE: a line of guests doing a line dance, Loretta in the middle of the line, stepping in time",
+  "framing": "WIDE from high: the line dance seen from above the tables, Loretta in fuchsia in the middle of the line, stepping in time",
   "action": "one side step with the line",
   "pace": "one step per beat, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -974,11 +974,11 @@
   "ledger": "VN05",
   "music": "MUS-TURN",
   "angle": {
-   "height": "eye",
+   "height": "high",
    "side": "front",
-   "fg": "through",
+   "fg": "clean",
    "scale": "WIDE",
-   "why": "through the guests = we're watching from our table"
+   "why": "high over the floor = the whole line moving as one, her in the middle of it"
   },
   "mirror_of": null,
   "focus": {
@@ -1021,8 +1021,8 @@
   "subject": "C1 feet + line",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "CU at floor level: a row of dancing feet on the parquet, Loretta's white slip-ons among them, stepping together",
-  "action": "one step back in unison",
+  "framing": "CU at floor level from the side: the line's feet in profile on the parquet, Loretta's white slip-ons under a fuchsia hem, stepping together",
+  "action": "one step forward in unison",
   "pace": "one step, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
   "staging": "feet only, one step",
@@ -1038,10 +1038,10 @@
   "music": "MUS-TURN",
   "angle": {
    "height": "ground",
-   "side": "front",
+   "side": "profile",
    "fg": "clean",
    "scale": "CU",
-   "why": "ground = the steps"
+   "why": "ground from the side = the step reads as a step"
   },
   "mirror_of": null,
   "focus": {
@@ -1084,7 +1084,7 @@
   "subject": "—",
   "location": "—",
   "story_day": "—",
-  "framing": "ANAT-A: a knee in the anatomical register, the worn joint surfaces touching, glowing red where bone meets bone",
+  "framing": "ANAT-A: S2 X-ray of both knees front-on, the worn joint surfaces touching, glowing red where bone meets bone",
   "action": "the red pulses once",
   "pace": "one pulse, about a second",
   "camera": "R4 — slow single-axis push on a stabilised virtual rig",
@@ -1101,10 +1101,10 @@
   "music": "MUS-TURN",
   "angle": {
    "height": "eye",
-   "side": "profile",
+   "side": "front",
    "fg": "clean",
    "scale": "CU",
-   "why": "profile shows the joint gap gone"
+   "why": "front-on shows both knees and the gap gone on each side of the joint"
   },
   "mirror_of": null,
   "focus": {
@@ -1147,7 +1147,7 @@
   "subject": "N + C1 (far)",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "MEDIUM: N seated at a reception table in her lavender dress, watching Loretta dance across the room, a hand resting on her own right knee under the table edge",
+  "framing": "MEDIUM over her shoulder: N seated alone at a reception table in her burgundy dress, Loretta in fuchsia dancing in focus beyond, N's hand resting on her own right knee",
   "action": "she looks from the dance floor down to her knee",
   "pace": "one look down, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -1163,11 +1163,11 @@
   "ledger": "",
   "music": "MUS-TURN",
   "angle": {
-   "height": "high",
-   "side": "three-quarter",
+   "height": "eye",
+   "side": "ots",
    "fg": "through",
    "scale": "MEDIUM",
-   "why": "high, through the chairs = she's small and sitting it out"
+   "why": "over her shoulder = we see what she sees, the dance she sits out"
   },
   "mirror_of": null,
   "focus": {
@@ -1210,7 +1210,7 @@
   "subject": "N hand",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "CU under the table edge: N's hand rubbing her right knee through the lavender dress, the parquet and dancing feet soft beyond",
+  "framing": "CU under the table edge, front-on: N's hand rubbing her right knee through the burgundy dress, the parquet and dancing feet soft beyond",
   "action": "her hand rubs the knee once",
   "pace": "one slow rub, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -1227,7 +1227,7 @@
   "music": "MUS-TURN",
   "angle": {
    "height": "low",
-   "side": "profile",
+   "side": "front",
    "fg": "clean",
    "scale": "CU",
    "why": "low = under the table, the thing she hides"

@@ -434,3 +434,57 @@ Waiting on: a pick on P-01b v13/v14; Confirm or Fix on the clip P-03a v3. Then A
 - Balances: Higgsfield 7633.15 · Kling 40093.
 
 Waiting on: Confirm or Fix on the clips P-01b v3 and P-03a v4. Then Act 1 is complete and the Act 2 B-roll images begin.
+
+## 2026-10-01 — "FIX THOSE" round 6 (21:30 UTC)
+
+- **P-01b** clip Fix "FIX HER STEPS" (the feet strip of v3 shows her slippers shuffling and crossing on one tread, never landing step by step) → clip v4 (4 s, 32 cr; generation 2 on the v13 frame): the one backward step spelled foot by foot — right slipper straight back and down, flat on the very next tread, heel first; the left joins it beside it, feet parallel a hand apart, each landing once. v3 → Old 2 (`39ab7a3a…`).
+- **P-03a** clip Fix "SHOULD BE FALLING WHILE DRIFTING DOWN" → the act-map row's action/pace changed again ("the brace slips loose and falls down her shin, drifting to her ankle · one fall, about two seconds"; `docs/actmap` v25 on Current + Plan) → clip v5 (5 s, 40 cr; generation 3 on the v11 frame, sent on the user's "FIX THOSE" — `user_go` and `fix_notes_all` on the call): the top strap pops off the kneecap and the brace drops down her shin under its own weight to rest at the ankle. v4 → Old 2 (`2bf17fd5…`).
+- New STRYDE rule **FP16** (repeat across P-01a and P-01b): a step on the stairs is spelled foot by foot — never "she steps down" alone.
+- What I see: **P-01b v4** — each slipper lands flat on the next tread, one at a time, no shuffling or crossing; but the picked frame (v13 A) has her toes pointing down the stairs, so it reads as walking down forwards, not backwards (the v1 note "this should be stepping backwards" stays in force — L18). Put up To check with that flagged; a backwards version needs a new image pair facing up the stairs, the user's call. **P-03a v5** — the brace slides off the knee and drops down the shin to rest at the ankle. Both To check.
+- Balances: Higgsfield 7623.15 · Kling 39941.
+
+Waiting on: Confirm or Fix on the clips P-01b v4 and P-03a v5.
+
+## 2026-10-01 — "FIX THOSE" round 7 (21:30–21:45 UTC)
+
+- **P-01b** image Fix "NEW IMAGE PROPER FOOTING" (v13 had her toes pointing down the flight and the upper slipper half off its tread) → v15/v16 (A/B): facing UP the stairs — toes toward the landing, heels toward the lower steps, so she goes down backwards — each slipper whole and flat on its own tread; stair plate + her confirmed P-01a frame. The first A came out facing down the flight with a slipper off the edge and a grey dress — kept off the board (L16) on Old 2 (`1d43fe56…`, 2.14 cr); re-rendered with the direction tied to the way the handrail rises and her blue floral dress named. A and B are both from behind on the flight. v13 image and its clip v4 → Old 2. To check.
+- **P-03a** clip Fix "THE KNEE BRACE DRIFTS DOWN THEN PULL IT UP AGAIN" → act-map row changed ("the brace drifts down her shin, then her hand pulls it back up over the knee · one slide down, one pull up"; `docs/actmap` v26). Clip v6 (40 cr): the brace fell to her ankle, she bent into frame to pull it and her mouth opened in a smile — the standing no-speech note broken, so it was never shown (L16, **L23**, STRYDE **FP17**); kept on Old 2 (`e98e775c…`). Clip v7 (40 cr): the brace drifts only to mid-shin, she stays upright with her head out of frame, the hand pulls it back over the knee. v5 → Old 2.
+- What I see on **P-03a v7**: the brace still drops to her ankle (not mid-shin), she reaches down and hauls it back over the knee and holds it; her face dips into the top of the frame for about a second, mouth closed. No Fix note broken, so it is up To check with that flagged.
+- Spent this round: Higgsfield 3 renders (6.42 cr), Kling 80 cr (v6 + v7). Balances: Higgsfield 7603.15 · Kling 39861.
+
+Waiting on: a pick on P-01b v15/v16; Confirm or Fix on the clip P-03a v7.
+
+## 2026-10-01 — "GENERATE" / "CONFIRM PROCEED" (21:40 UTC): Act 1 last clip, Act 2 images
+
+- The user picked **P-01b v15 A** and confirmed the **P-03a clip v7** — Act 1 waits only on the P-01b clip.
+- **P-01b** clip v5 (4 s, 32 cr; the first clip on the new frame): from behind, she steps backwards toward the lens one step, foot by foot (FP16), and ends one step lower facing up the stairs. To check. Unused v16 B → Old 2 (`62feeee1…`).
+- **Act 2 — the wedding (N-D2), seven beats T-01a…T-04b**: A/B pairs on Higgsfield nano_banana_pro (14 renders), each an image edit of the confirmed **P3-RECEPTION** plate (Image 1) with the build's style frame attached (P-05c v5 A, `kind: style`, §24O rule 2); C1-LORETTA sheet on T-01b, N-NARR sheet on T-04a; wardrobe per N-D2 (N lavender chiffon + pearl studs; Loretta royal-blue satin + white slip-ons). Builder: `body2/build_act2.py` (all seven `preflight.py` PASS, with the V7.86.0 scale / facing / stylised-hands lines). Laughs written as closed-mouth grins so no clip reads as singing (HT25). **T-03a** "Both her knees was bone on bone too" → anatomy style **S2 X-ray** (a wear line, §12A-1): two knees in profile, the joint gap gone, a red-orange glow where bone meets bone. All seven To check; what I see is on each card (T-03a B has a stray small panel top right; T-04b's tablecloth hangs a little oddly over the knee).
+- Balances: Higgsfield 7563.15 · Kling 39629.
+
+Waiting on: Confirm or Fix on the P-01b clip v5; picks or Fix notes on the seven Act 2 pairs (T-01a, T-01b, T-02a, T-02b, T-03a, T-04a, T-04b).
+
+## 2026-10-01 — "I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO" (21:45–22:00 UTC): Act 2 redone
+
+- **New N-D2 wardrobe** (wardrobe map in `STEP4_5.md`, `docs/wardrobe` v3 on Current + Plan): N in a **burgundy chiffon dress to mid-calf with flutter sleeves, gold hoop earrings, low gold heels** (was lavender chiffon, pearl studs); Loretta in a **fuchsia satin dress to the knee, white slip-on sneakers** (was royal-blue satin). Emerald was not used: it is N's church dress (N-D4), and §14A keeps every day's dress different.
+- **New pictures** on all seven rows (`work/actmap.py`; `angles.py` PASS; `docs/actmap` v28 on Current + Plan):
+  - T-01a: the bride hugs N at the edge of the floor, eye level.
+  - T-01b: Loretta waves both hands overhead, from low.
+  - T-02a: the line dance seen from high above the tables.
+  - T-02b: the feet from the side at floor level.
+  - T-03a: the S2 X-ray, now front-on on both knees.
+  - T-04a: over N's shoulder to Loretta dancing.
+  - T-04b: N's hand on her knee, front-on under the table.
+- The act map's Act 8 cut order and Flags section on the board were re-synced from `STEP4_5.md`. The board held a stale 61-beat cut order.
+- **The 14 new renders** come from `body2/build_act2.py`, written as `body2/T-*.v3.prompt.txt` / `.preflight.json`. All 7 prompts PASS. Each pair is v3 A / v4 B on Higgsfield `nano_banana_pro` (logged `nano_banana_2`, 2k, 9:16).
+  - The sheets go in for the face and hair only, per HT26. Each prompt names the sheet's clothes as not worn: N's mustard top and denim skirt, Loretta's teal blouse and khaki shorts.
+  - All 14 are To check, with `imagePair [3,4]`.
+- What I see:
+  - The wardrobe is right on all seven.
+  - **T-01b A** has a stray guest's back at the left edge. B is clean.
+  - **T-02a A** has six dancers, B has seven.
+  - No Fix note is broken. There were no Fix notes on Act 2.
+- The replaced v1/v2 pairs are on **Old 2**: the 14 files were copied server-side, and Old 2 now has docs for T-01a…T-04b. On Current they are marked `archived`, and their files are deleted from Current.
+  - T-01a and T-04b had been confirmed (A). The user's ask replaces them, so they are back To check.
+- Balances: Higgsfield 7523.15 · Kling 39629.
+
+Waiting on: picks or Fix notes on the seven Act 2 pairs (v3/v4). Confirm or Fix on the P-01b clip v5.

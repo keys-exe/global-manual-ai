@@ -1,1 +1,191 @@
-{"build": "stryde-71-stairs-pixar-song", "act": "Act 2", "stage": "broll", "beat": "T-04b", "title": "turn — her doubt", "line": "I always figured mine was past fixing.", "status": "planned", "flow": ["image", "video"], "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION", "imageModel": "nano_banana_pro · 2k · 9:16 · A/B pair", "duration": 5, "songIn": 60.04, "songOut": 64.11, "onScreen": 4.07, "section": "The turn — MUS-TURN", "bars": 1.5, "key": "fixing", "location": "L-RECEPTION", "storyDay": "N-D2", "framing": "CU under the table edge: N's hand rubbing her right knee through the lavender dress, the parquet and dancing feet soft beyond", "motionPlan": "From this frame: her hand rubs the knee once — one slow rub, about two seconds; camera RV sway — the virtual camera breathes in place, never travels", "staging": "hands: one movement", "pinEnd": "no", "angle": "low · profile · clean · CU — low = under the table, the thing she hides", "focus": "hands · medium", "light": "warm string lights and chandeliers · key L · evening · turn: warm party light · 3200K", "product": "absent · —", "layout": "full", "eg": "", "music": "MUS-TURN", "ledger": "", "updatedAt": 1790851958758}
+{
+ "act": "Act 2",
+ "angle": "low · front · clean · CU — low = under the table, the thing she hides",
+ "bars": 1.5,
+ "beat": "T-04b",
+ "build": "stryde-71-stairs-pixar-song",
+ "duration": 5,
+ "eg": "",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "focus": "hands · medium",
+ "framing": "CU under the table edge, front-on: N's hand rubbing her right knee through the burgundy dress, the parquet and dancing feet soft beyond",
+ "imageAsset": "903089ccf08d882bafb7f3559287b919",
+ "imageAt": 1790891943025,
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageJob": "8917816d-76f4-476b-a1bf-bd14eee8d03c",
+ "imageMatch": "plate",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  3,
+  4
+ ],
+ "imageParts": [],
+ "imagePrompt": "For the line \"I always figured mine was past fixing.\": Keep this photo exactly as it is — the parquet floor, the gold chair legs, the evening light — low under a table edge, a tall 9:16 crop, and add her knee and hand. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nClose-up low and front-on, facing the lens, sharp on the knee: an older Black woman seated, her right knee under the burgundy chiffon of her dress, her brown right hand on the knee rubbing it through the fabric, four chunky fingers and a thumb; a gold heel on the parquet below; behind her chair, soft and out of focus, dancing feet on the parquet. Scale true to the set: the tablecloth hem comes down to just above her knee.\nIn frame: one knee, one hand on it, the tablecloth edge at the top, a chair leg, the dancers soft beyond; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Dress and tablecloth plain — no lettering, logos or labels.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P3-RECEPTION plate (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+  },
+  {
+   "kind": "style",
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "ref": "stryde-71-stairs-pixar-song__P-05c"
+  }
+ ],
+ "imageRes": "1536×2752",
+ "imageStatus": "review",
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17",
+  "HT26"
+ ],
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215406_8917816d-76f4-476b-a1bf-bd14eee8d03c.png",
+ "imageVersions": [
+  {
+   "asset": "43360f814df5a11db6af7e87d1267d10",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "41f9bcc8-d626-46c7-a1d0-4bd60c18bc1c",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: a close-up under the table edge: her brown hand on her knee through the lavender dress, the tablecloth hanging a little oddly over the knee, dancing feet soft beyond · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214030_41f9bcc8-d626-46c7-a1d0-4bd60c18bc1c.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "59cdadf15163a2f3bc0575f3dba00f4b",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "asset": "35ac26e169cf663115dd6768d71f73d5",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "31c7e1d7-184e-413c-bcd4-eddebaebe691",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: a close-up under the table edge: her brown hand on her knee through the lavender dress, the tablecloth hanging a little oddly over the knee, dancing feet soft beyond · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214030_31c7e1d7-184e-413c-bcd4-eddebaebe691.png",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "4981a2a78dd669cd5888d6b0e5bf7900",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "903089ccf08d882bafb7f3559287b919",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215406_8917816d-76f4-476b-a1bf-bd14eee8d03c.png",
+   "job": "8917816d-76f4-476b-a1bf-bd14eee8d03c",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6871431,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: under the table: her hand on her knee through the burgundy chiffon, gold heels on the parquet, dancing feet soft beyond — A with her at frame left, B at frame right"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "b9d358456c0d504b7a09088a978f25c2",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215406_3c7ae833-d78d-41d2-ba9f-6b8e21d49f21.png",
+   "job": "3c7ae833-d78d-41d2-ba9f-6b8e21d49f21",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7141476,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: under the table: her hand on her knee through the burgundy chiffon, gold heels on the parquet, dancing feet soft beyond — A with her at frame left, B at frame right"
+  }
+ ],
+ "key": "fixing",
+ "layout": "full",
+ "ledger": "",
+ "light": "warm string lights and chandeliers · key L · evening · turn: warm party light · 3200K",
+ "line": "I always figured mine was past fixing.",
+ "location": "L-RECEPTION",
+ "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "motionPlan": "From this frame: her hand rubs the knee once — one slow rub, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "music": "MUS-TURN",
+ "onScreen": 4.07,
+ "pinEnd": "no",
+ "product": "absent · —",
+ "section": "The turn — MUS-TURN",
+ "songIn": 60.04,
+ "songOut": 64.11,
+ "stage": "broll",
+ "staging": "hands: one movement",
+ "status": "ready",
+ "storyDay": "N-D2",
+ "title": "turn — her doubt",
+ "updatedAt": 1790891943025
+}

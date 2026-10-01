@@ -1,1 +1,206 @@
-{"build": "stryde-71-stairs-pixar-song", "act": "Act 2", "stage": "broll", "beat": "T-01a", "title": "turn", "line": "Then my grandbaby got married in June.", "status": "planned", "flow": ["image", "video"], "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION", "imageModel": "nano_banana_pro · 2k · 9:16 · A/B pair", "duration": 4, "songIn": 42.97, "songOut": 45.41, "onScreen": 2.44, "section": "The low point and what failed — MUS-EXPOSE", "bars": 1.0, "key": "married", "location": "L-RECEPTION", "storyDay": "N-D2", "framing": "MEDIUM: the bride in white laughing with guests at a reception table, string lights overhead", "motionPlan": "From this frame: the bride throws her head back laughing — one laugh, about two seconds; camera RV sway — the virtual camera breathes in place, never travels", "staging": "none", "pinEnd": "no", "angle": "eye · three-quarter · clean · MEDIUM", "focus": "eyes · deep", "light": "warm string lights and chandeliers · key R · evening · turn: warm party light · 3200K", "product": "absent · —", "layout": "full", "eg": "", "music": "MUS-TURN", "ledger": "VN05", "updatedAt": 1790851958758}
+{
+ "act": "Act 2",
+ "angle": "eye · three-quarter · clean · MEDIUM — eye level, close on the hug = her grandbaby, her day",
+ "bars": 1,
+ "beat": "T-01a",
+ "build": "stryde-71-stairs-pixar-song",
+ "duration": 4,
+ "eg": "",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "focus": "eyes · deep",
+ "framing": "MEDIUM: the bride in white hugging N (burgundy dress) at the edge of the dance floor, string lights overhead, both smiling with eyes closed (user 2026-10-01: new images, new wardrobe)",
+ "imageAsset": "e14ca154f72b257d370cba74b9920467",
+ "imageAt": 1790891943025,
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageJob": "ffc3ebdb-7f13-4674-9df2-f882a54e6922",
+ "imageMatch": "plate",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  3,
+  4
+ ],
+ "imageParts": [],
+ "imagePrompt": "For the line \"Then my grandbaby got married in June.\": Keep this photo exactly as it is — the hall, the dance floor, the lights — at the edge of the floor, a tall 9:16 crop; add the bride and her grandmother. Image 1 is the hall. Image 2 is the grandmother — her face and silver twist-out only. Image 3 is the style — the same render, materials, light and proportions.\nMedium shot at eye level, sharp on both faces: a young Black bride in a white gown, in three-quarter view facing frame right, hugging the same woman as Image 2, seventy-one, in a burgundy chiffon dress with flutter sleeves, gold hoop earrings, her cheek on the bride's shoulder, facing frame left; both smiling, lips closed, eyes closed; the bride's arms round her, her hands on the bride's back, four chunky fingers and a thumb on each. Scale true to the set: the grandmother comes up to the bride's chin.\nIn frame: the two from the waist up, the lights soft behind; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render, warm evening light. No lettering, logos or labels; not the mustard top or denim skirt of Image 2.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P3-RECEPTION plate (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+  },
+  {
+   "kind": "character",
+   "label": "N-NARR sheet v2 (confirmed) — face and hair only (HT26)",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR"
+  },
+  {
+   "kind": "style",
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "ref": "stryde-71-stairs-pixar-song__P-05c"
+  }
+ ],
+ "imageRes": "1536×2752",
+ "imageStatus": "review",
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17",
+  "HT26"
+ ],
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_ffc3ebdb-7f13-4674-9df2-f882a54e6922.png",
+ "imageVersions": [
+  {
+   "asset": "3d47315c864ff0dfbd4087a2d1fc770e",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "ec83a101-c506-42d1-951f-9fbcc3aad14c",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: A: the bride at the table in three-quarter view, an older guest across from her · B: the bride with two older guests in suits; both closed-mouth smiles · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214014_ec83a101-c506-42d1-951f-9fbcc3aad14c.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "4750568ea34725f5fc033eb90d2ae89a",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "asset": "12d092069fcaf5578980cda851107d17",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "26fcf4af-c31c-4e27-8105-cd590e3e9795",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: A: the bride at the table in three-quarter view, an older guest across from her · B: the bride with two older guests in suits; both closed-mouth smiles · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_26fcf4af-c31c-4e27-8105-cd590e3e9795.png",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "f57e5c099ef302918365b9bf38ff38e3",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "e14ca154f72b257d370cba74b9920467",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_ffc3ebdb-7f13-4674-9df2-f882a54e6922.png",
+   "job": "ffc3ebdb-7f13-4674-9df2-f882a54e6922",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7279244,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "character",
+     "label": "N-NARR sheet v2 (confirmed) — face and hair only (HT26)",
+     "ref": "stryde-71-stairs-pixar-song__N-NARR"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the bride in white hugging her grandmother (silver twist-out, burgundy chiffon with flutter sleeves, gold hoops) at the edge of the dance floor, both eyes closed, lips closed — A wider with the balloon arch behind, B closer under the chandelier"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "e2ac252caaac508692ed82be661e5265",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_e0b0ad4a-86a1-408a-8271-266ed9caf725.png",
+   "job": "e0b0ad4a-86a1-408a-8271-266ed9caf725",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7213965,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "character",
+     "label": "N-NARR sheet v2 (confirmed) — face and hair only (HT26)",
+     "ref": "stryde-71-stairs-pixar-song__N-NARR"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the bride in white hugging her grandmother (silver twist-out, burgundy chiffon with flutter sleeves, gold hoops) at the edge of the dance floor, both eyes closed, lips closed — A wider with the balloon arch behind, B closer under the chandelier"
+  }
+ ],
+ "key": "married",
+ "layout": "full",
+ "ledger": "VN05",
+ "light": "warm string lights and chandeliers · key R · evening · turn: warm party light · 3200K",
+ "line": "Then my grandbaby got married in June.",
+ "location": "L-RECEPTION",
+ "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "motionPlan": "From this frame: the two of them sway once in the hug — one slow sway, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "music": "MUS-TURN",
+ "onScreen": 2.44,
+ "pinEnd": "no",
+ "product": "absent · —",
+ "section": "The low point and what failed — MUS-EXPOSE",
+ "songIn": 42.97,
+ "songOut": 45.41,
+ "stage": "broll",
+ "staging": "none",
+ "status": "ready",
+ "storyDay": "N-D2",
+ "title": "turn",
+ "updatedAt": 1790891943025
+}

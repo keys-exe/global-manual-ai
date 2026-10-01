@@ -1,0 +1,99 @@
+{
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "65334c609f4fba0eb7774350cca40671",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_ef04c94b-37c7-4828-b4e5-2ba9325aad8a.png",
+   "job": "ef04c94b-37c7-4828-b4e5-2ba9325aad8a",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "at": 1790890992104,
+   "refs": [
+    {
+     "label": "P3-RECEPTION plate (confirmed)",
+     "kind": "location",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "kind": "style",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "first pair · what I see: a line of guests mid side-step on the parquet, Loretta in royal blue and white slip-ons in the middle, chair backs in the foreground"
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "d6aaa6c949496cd7939c6cbde199d454",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_5f0b48ab-f3c6-4f78-93db-8e26a034a283.png",
+   "job": "5f0b48ab-f3c6-4f78-93db-8e26a034a283",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "at": 1790890992104,
+   "refs": [
+    {
+     "label": "P3-RECEPTION plate (confirmed)",
+     "kind": "location",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "kind": "style",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "first pair · what I see: a line of guests mid side-step on the parquet, Loretta in royal blue and white slip-ons in the middle, chair backs in the foreground"
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageStatus": "review",
+ "status": "ready",
+ "imageAsset": "65334c609f4fba0eb7774350cca40671",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_ef04c94b-37c7-4828-b4e5-2ba9325aad8a.png",
+ "imageJob": "ef04c94b-37c7-4828-b4e5-2ba9325aad8a",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790890992104,
+ "imagePrompt": "For the line \"and she was out on that dance floor all night.\": Keep this photo exactly as it is — the hall, the parquet dance floor, the tables, the string lights and chandeliers, the evening light — wide on the dance floor, a tall 9:16 crop, and add the dancers. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nWide shot at eye level from behind a table, gold chair backs soft in the near foreground, sharp on the line: six wedding guests in a line on the parquet, all facing the lens, mid side-step to their right in unison; in the middle an older Black woman with a silver bob in a royal-blue satin dress to the knee and white slip-on sneakers; arms loose, every hand open, four chunky fingers and a thumb. Scale true to the set: the table edges come up to their hips.\nIn frame: six dancers, the dance floor, the DJ booth and lights of Image 1 beyond; every other surface as in Image 1.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Clothing and decor plain — no lettering, logos or labels.",
+ "imageMatch": "plate",
+ "imageRefs": [
+  {
+   "label": "P3-RECEPTION plate (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-05c"
+  }
+ ],
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "motionPlan": "From this frame: one side step with the line — one step per beat, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "framing": "WIDE: a line of guests doing a line dance, Loretta in the middle of the line, stepping in time",
+ "updatedAt": 1790890992104
+}

@@ -1,0 +1,54 @@
+{
+ "beat": "P-03a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"That big knee brace I bought slid right down my leg.\": From this frame: the brace slips loose and falls down her shin, drifting to her ankle — one fall, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the side at knee height, the short brace slips loose and falls: the top strap pops off the kneecap and the whole brace drops down her shin under its own weight, sliding and turning a little as it drifts lower, and comes to rest bunched just above her ankle by the last frame; her right hand flinches after it and stops on her thigh; her left hand stays on the chair seat; she stays seated, nobody speaks; the chair, the slippers and the kitchen behind stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame, the brace rigid in shape. No camera travel; nobody else; no cut; the brace never climbs back up.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_203935_a5860844-7d29-4f9b-8e9c-6019f6b22e0f.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "That big knee brace I bought slid right down my leg.",
+ "motion_plan": "From this frame: the brace slips loose and falls down her shin, drifting to her ankle — one fall, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one fall",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 3,
+ "user_go": "user 2026-10-01: \"FIX THOSE\" on the board Fix \"SHOULD BE FALLING WHILE DRIFTING DOWN\" (third clip on this frame)",
+ "fix_note": "user Fix on v4: SHOULD BE FALLING WHILE DRIFTING DOWN (v4 drifted too slowly, nothing fell) → the brace slips loose and falls down her shin under its own weight, drifting as it drops, to rest at the ankle; act-map row's action and pace changed (§22X)",
+ "fix_notes_all": [
+  "v1–v2 (earlier frames): never talk the lyrics/script in B-roll; the brace short, on one knee",
+  "v3: IT SHOULD FEELING DRIFTING DOWN",
+  "v4: SHOULD BE FALLING WHILE DRIFTING DOWN"
+ ],
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  }
+ ],
+ "note": "clip v5 of this beat (from the confirmed image v11 A, job a5860844-7d29-4f9b-8e9c-6019f6b22e0f)"
+}

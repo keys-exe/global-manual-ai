@@ -4,6 +4,7 @@
  "bars": 1,
  "beat": "P-01b",
  "build": "stryde-71-stairs-pixar-song",
+ "credits": 32,
  "duration": 4.04,
  "eg": "",
  "flow": [
@@ -12,18 +13,18 @@
  ],
  "focus": "foreground · medium",
  "framing": "CU from the side at step height on her legs going down backwards (user 2026-10-01: 'a close shot of the legs here going down backwards'): her body facing up the stairs, the left slipper on the step above, the right reaching back and down heel first onto the step below, one hand on the rail at the top edge",
- "imageAsset": "c024174597c9abf2a9b6c0597a213980",
- "imageAt": 1790888539033,
+ "imageAsset": "682c509e39458b7768a5c2dbc71c5e6e",
+ "imageAt": 1790890168578,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "user Fix: \"WRONG PERSON\" (the v11/v12 legs were a slim young woman's) → the legs are hers: the confirmed P-01a frame (her on the top step from behind) attached as Image 2 — seventy-one, deep brown skin, heavy calves, thick ankles, her dress hem and pink slippers; a side close-up at step height, her right slipper reaching back and down heel first",
- "imageJob": "dd368a57-9f2e-4442-b110-ceb0d4ad63cb",
+ "imageFault": "user Fix: \"NEW IMAGE PROPER FOOTING\" (v13 had her toes pointing down the flight and the upper slipper half off its tread) → a new pair facing UP the stairs — toes toward the landing, heels toward the lower steps, so she goes down backwards — each slipper whole and flat on its own tread; the stair plate + her confirmed P-01a frame as references",
+ "imageJob": "a6d7dd1e-80a2-492e-bd3f-e741cc7e76ef",
  "imageMatch": "plate",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [],
  "imageParts": [],
- "imagePick": 13,
- "imagePrompt": "For the line \"One step at a time.\": Keep this photo exactly as it is — the staircase, its runner, balusters and oak rail, the light — in close on the top steps from the side, a tall 9:16 crop, and add her legs. Image 1 is the staircase. Image 2 is the woman.\nClose-up from the side at step height, sharp on the slippers: the legs of the woman of Image 2 — seventy-one, deep brown skin, heavy calves, thick ankles — from the knee down, going down backwards: facing up the stairs, her left pink terry slipper flat on the step above, her right slipper reaching back and down heel first onto the step below, toes pointing up; the hem of her blue floral house dress as in Image 2; one brown hand on the rail at the top edge, four chunky fingers and a thumb; her head out of frame. Scale true to the set: the hem comes up to her knee, each step the height of her slipper's length.\nIn frame: two slippers, two heavy legs, one hand, four steps of Image 1; every other surface bare. Each foot whole.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light. Slippers and hem plain — no lettering, logos or labels; nobody else.",
+ "imagePick": 15,
+ "imagePrompt": "For the line \"One step at a time.\": Keep this photo exactly as it is — the staircase, its runner, balusters and oak rail, the light — in close on the top steps from the side, a tall 9:16 crop, and add her legs. Image 1 is the staircase. Image 2 is the woman.\nClose-up from the side at step height, sharp on the slippers: the legs of the woman of Image 2 — seventy-one, deep brown skin, heavy calves — from the knee down, facing UP the stairs, going down backwards: both toes point the same way the handrail rises, up toward the landing; heels toward the lower steps; her left pink slipper whole and flat on the upper tread, back from its edge; her right slipper whole and flat on the tread below; her blue floral house dress as in Image 2; one brown hand on the rail, four chunky fingers and a thumb; her head out of frame. Scale true to the set: the hem comes up to her knee.\nIn frame: two slippers, two heavy legs, one hand, four steps of Image 1; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light. Slippers and hem plain — no lettering, logos or labels; nobody else.",
  "imageRefs": [
   {
    "kind": "location",
@@ -36,7 +37,7 @@
    "ref": "stryde-71-stairs-pixar-song__P-01a"
   }
  ],
- "imageRegens": 6,
+ "imageRegens": 7,
  "imageRes": null,
  "imageStatus": "confirmed",
  "imageTaste": [
@@ -52,9 +53,9 @@
   "HT22"
  ],
  "imageType": "image/png",
- "imageUnused": 14,
+ "imageUnused": 16,
  "imageUnusedArchived": "bb9501fabb1e6667590468ced6b91bd3",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_205954_dd368a57-9f2e-4442-b110-ceb0d4ad63cb.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_212714_a6d7dd1e-80a2-492e-bd3f-e741cc7e76ef.png",
  "imageVersions": [
   {
    "archiveAsset": "2729890e95af17dbb54b0a5caa98da75",
@@ -263,13 +264,16 @@
    "v": 12
   },
   {
+   "archiveAsset": "ecf835a3e11f483b6912dce25af3f860",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "c024174597c9abf2a9b6c0597a213980",
    "at": 1790888539033,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "dd368a57-9f2e-4442-b110-ceb0d4ad63cb",
    "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
-   "note": "user Fix: \"WRONG PERSON\" (the v11/v12 legs were a slim young woman's) → the legs are hers: the confirmed P-01a frame (her on the top step from behind) attached as Image 2 — seventy-one, deep brown skin, heavy calves, thick ankles, her dress hem and pink slippers; a side close-up at step height, her right slipper reaching back and down heel first",
+   "note": "user Fix: \"WRONG PERSON\" (the v11/v12 legs were a slim young woman's) → the legs are hers: the confirmed P-01a frame (her on the top step from behind) attached as Image 2 — seventy-one, deep brown skin, heavy calves, thick ankles, her dress hem and pink slippers; a side close-up at step height, her right slipper reaching back and down heel first · replaced on the user's Fix (NEW IMAGE PROPER FOOTING); copied to Old versions 2",
    "pair": "A",
    "refs": [
     {
@@ -288,6 +292,9 @@
    "v": 13
   },
   {
+   "archiveAsset": "e0b7ba5bd6df0ef3bdc22847f59f0b60",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "340d512a8e6b2b8a043d23c4527d0ee5",
    "at": 1790888539033,
    "connector": "Higgsfield",
@@ -310,9 +317,59 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_205953_51fe7903-2bab-4876-85b4-77207ba08a9d.png",
-   "v": 14,
+   "v": 14
+  },
+  {
+   "asset": "682c509e39458b7768a5c2dbc71c5e6e",
+   "at": 1790890168578,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "a6d7dd1e-80a2-492e-bd3f-e741cc7e76ef",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user Fix: \"NEW IMAGE PROPER FOOTING\" (v13 had her toes pointing down the flight and the upper slipper half off its tread) → a new pair facing UP the stairs — toes toward the landing, heels toward the lower steps, so she goes down backwards — each slipper whole and flat on its own tread; the stair plate + her confirmed P-01a frame as references · A is a re-render: the first A came out with her toes pointing down the flight, the upper slipper hanging off the step edge and a grey dress — it broke the Fix note, so it was kept off the board (L16) and is on Old versions 2 (2.14 cr); the prompt now ties her toes to the way the handrail rises and names her blue floral dress",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P0-PROP-N plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P0-PROP-N"
+    },
+    {
+     "kind": "frame",
+     "label": "P-01a frame v12 B (confirmed) — N on the top step from behind: the woman to copy",
+     "ref": "stryde-71-stairs-pixar-song__P-01a"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_212714_a6d7dd1e-80a2-492e-bd3f-e741cc7e76ef.png",
+   "v": 15
+  },
+  {
+   "asset": "c6efa2fc6902fd3a0a99bc2069b2b373",
+   "at": 1790890168578,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "a531d0b0-aa36-4cc8-aef2-70bf43813edd",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user Fix: \"NEW IMAGE PROPER FOOTING\" (v13 had her toes pointing down the flight and the upper slipper half off its tread) → a new pair facing UP the stairs — toes toward the landing, heels toward the lower steps, so she goes down backwards — each slipper whole and flat on its own tread; the stair plate + her confirmed P-01a frame as references · not chosen (the user picked A); copied to Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P0-PROP-N plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P0-PROP-N"
+    },
+    {
+     "kind": "frame",
+     "label": "P-01a frame v12 B (confirmed) — N on the top step from behind: the woman to copy",
+     "ref": "stryde-71-stairs-pixar-song__P-01a"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_212540_a531d0b0-aa36-4cc8-aef2-70bf43813edd.png",
+   "v": 16,
    "archived": true,
-   "archiveAsset": "e0b7ba5bd6df0ef3bdc22847f59f0b60",
+   "archiveAsset": "62feeee173ae395cc4a92386b4a7ffbc",
    "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
   }
  ],
@@ -329,7 +386,8 @@
  "pinEnd": "no",
  "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
  "product": "absent · —",
- "regens": 3,
+ "prompt": "For the line \"One step at a time.\": From this frame: the right heel settles on the step below, the left foot joins it — about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the step below, her back to the lens, she steps backwards down exactly one step toward the lens: her right slipper lifts, moves straight back and down, and lands flat on the very next tread below, heel first, then the sole; her weight shifts onto it; then her left slipper lifts and lands flat beside it on that same tread, the feet parallel and a hand apart, each landing once; she ends one step lower and a little larger in frame, facing up the stairs, her hand sliding down the rail; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut.",
+ "regens": 6,
  "section": "The low point and what failed — MUS-EXPOSE",
  "shot": "ground · profile · clean · CU",
  "songIn": 19.39,
@@ -339,9 +397,12 @@
  "status": "review",
  "storyDay": "N-D1",
  "title": "problem",
- "updatedAt": 1790889169036,
+ "updatedAt": 1790891028443,
+ "videoAt": 1790891028443,
  "videoConnector": "Kling",
+ "videoJob": "AY-zAWVAPLY5QRZem6ynQ5cpNjfbip-jw8KSRwWkYD_tKmpnE71D_8ZYTxNp2esKmKP6NDX4",
  "videoNote": "the clip is made again once the new image is picked",
+ "videoRes": "1072×1928",
  "videoTaste": [
   "HT03",
   "HT04",
@@ -388,7 +449,9 @@
    "v": 2
   },
   {
-   "v": 3,
+   "archiveAsset": "39ab7a3a35e7b9057388789be62b1157",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "c58026b5afc959074a8a6426425c8943",
    "at": 1790889169036,
    "connector": "Kling",
@@ -397,18 +460,49 @@
    "fromImage": 13,
    "job": "Ad2ayckrDHYCj8Q6-LgaXEpNGzXpmmwU7Zaj9491-gVzyoTBLdFksu7N90d1HTx9PBR8pD0w",
    "model": "kling-video-v3_0",
+   "note": "from the picked image v13 A (job dd368a57) · the first clip on this frame (the image was replaced on the user's Fixes — her own legs, from the side) · what I see: through the balusters her lower slipper settles on the step below, the upper foot follows down, her body facing up the stairs, the hand on the rail; nobody speaks · replaced on the user's Fix (FIX HER STEPS); copied to Old versions 2",
    "res": "1072×1928",
    "size": 7074135,
    "type": "video/mp4",
    "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/bc76d640-c02f-40cd-9499-d2e5d6eb7afb-A2GImGx9WJVZOY_o9ZKZYA-output.mp4?x-kcdn-pid=112372",
-   "note": "from the picked image v13 A (job dd368a57) · the first clip on this frame (the image was replaced on the user's Fixes — her own legs, from the side) · what I see: through the balusters her lower slipper settles on the step below, the upper foot follows down, her body facing up the stairs, the hand on the rail; nobody speaks"
+   "v": 3
+  },
+  {
+   "archiveAsset": "0207f4443fee69cec8e456b2d4223bb0",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
+   "asset": "44f319b4f0f6eadb7550bfd2a4cc48a6",
+   "at": 1790889730352,
+   "connector": "Kling",
+   "credits": 32,
+   "duration": 4.04,
+   "fromImage": 13,
+   "job": "Abn5jP7iIXJJfeojRxtEIp_209usdmIG_vKkU7lPrJuyQN0HVO7SV2yEKvd-6SNlb4reNUio",
+   "model": "kling-video-v3_0",
+   "note": "user Fix on v3: FIX HER STEPS → the step spelled foot by foot (§22X, FP16) · what I see: each slipper now lands flat on the next tread down, one at a time, no shuffling or crossing. Heads-up: in the picked frame (v13 A) her toes point down the stairs, so the clip reads as walking down forwards, not backwards — if backwards is wanted, the frame needs her facing up the stairs (a new image pair) · its image v13 was replaced on the user's Fix (proper footing); copied to Old versions 2",
+   "res": "1072×1928",
+   "size": 6414792,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/48cdea7f-6ae2-419a-a80f-d32e1bf4a737-0Ai_D8-0l35_sWqvXWd0uQ-output.mp4?x-kcdn-pid=112372",
+   "v": 4
+  },
+  {
+   "v": 5,
+   "asset": "13a7385ac0cc63349246ded755afebf2",
+   "at": 1790891028443,
+   "connector": "Kling",
+   "credits": 32,
+   "duration": 4.04,
+   "fromImage": 15,
+   "job": "AY-zAWVAPLY5QRZem6ynQ5cpNjfbip-jw8KSRwWkYD_tKmpnE71D_8ZYTxNp2esKmKP6NDX4",
+   "model": "kling-video-v3_0",
+   "res": "1072×1928",
+   "size": 7497412,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/49f3fd1b-7854-4f31-8abf-d43e572b4cfa-eHr8D2P52SAndHOQFXSrRw-output.mp4?x-kcdn-pid=112372",
+   "note": "the first clip on the picked frame v15 A (facing up the stairs) · one step backwards toward the lens, foot by foot (FP16) · what I see: from behind, her right slipper reaches back and down to the next step, the left follows, she ends one step lower and a little larger in frame, facing up the stairs; nobody speaks"
   }
  ],
- "prompt": "For the line \"One step at a time.\": From this frame: the right heel settles on the step below, the left foot joins it — about two seconds; camera RV sway — the virtual camera breathes in place, never travels. In close at step height, she steps backwards down the flight: the lower slipper's heel settles on the step below and takes her weight, then the upper foot lifts and reaches back and down to join it — each foot moves downward and away from the top, toes always pointing up the stairs; the hand stays on the rail; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; the feet never turn around or climb.",
- "videoAsset": "c58026b5afc959074a8a6426425c8943",
- "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/bc76d640-c02f-40cd-9499-d2e5d6eb7afb-A2GImGx9WJVZOY_o9ZKZYA-output.mp4?x-kcdn-pid=112372",
- "videoJob": "Ad2ayckrDHYCj8Q6-LgaXEpNGzXpmmwU7Zaj9491-gVzyoTBLdFksu7N90d1HTx9PBR8pD0w",
- "credits": 32,
- "videoAt": 1790889169036,
- "videoRes": "1072×1928"
+ "videoAsset": "13a7385ac0cc63349246ded755afebf2",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/49f3fd1b-7854-4f31-8abf-d43e572b4cfa-eHr8D2P52SAndHOQFXSrRw-output.mp4?x-kcdn-pid=112372"
 }

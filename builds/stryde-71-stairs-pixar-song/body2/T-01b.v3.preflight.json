@@ -1,0 +1,53 @@
+{
+ "beat": "T-01b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"My cousin Loretta was there. She's seventy-four,\": Keep this photo exactly as it is — the hall, the parquet dance floor, the string lights and chandeliers, the evening light — out on the dance floor, a tall 9:16 crop, and add the woman. Image 1 is the hall. Image 2 is the woman — her face and silver bob only. Image 3 is the style — the same render, materials, light and proportions.\nMedium close-up from low, sharp on her face: the same woman as Image 2, seventy-four, in a fuchsia satin dress to the knee, in three-quarter view facing frame left, both arms raised above her head, hands open and waving to the beat, four chunky fingers and a thumb on each, a big grin with lips closed, looking at the dancers beside her. Scale true to the set: the chandelier behind her is no bigger than her head.\nIn frame: the woman from the waist up, her raised hands, the string lights of Image 1 soft behind her; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Dress and decor plain — no lettering, logos or labels; not the teal blouse or khaki shorts of Image 2.",
+ "script_line": "My cousin Loretta was there. She's seventy-four,",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P3-RECEPTION plate (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "C1-LORETTA sheet v2 (confirmed)",
+   "kind": "character"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "7cdda7ff-68a8-4e54-ab1c-2d80fbe93822",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user 2026-10-01: I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO",
+ "product": false,
+ "medias": [
+  "7cdda7ff-68a8-4e54-ab1c-2d80fbe93822",
+  "fce3f6cb-9ef5-47b5-996b-f9c62e893bc8",
+  "5b40a12a-24f5-4d12-8650-016a8b0384ae"
+ ]
+}
