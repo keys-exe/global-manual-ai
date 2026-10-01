@@ -13,28 +13,33 @@
  ],
  "focus": "hands · medium",
  "framing": "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a short black hinged knee brace — a hand's length above and below the knee — sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new; the brace a bit more short)",
- "imageAsset": "235e9ca9db03d8b982b4932ca1fa8e61",
- "imageAt": 1790883125026,
+ "imageAsset": "a81e4828b0ccfcbbd0a2a2d8bc2c123d",
+ "imageAt": 1790887275688,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "user Fix: \"MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW\" → a short hinged brace, a hand's length above and below the knee, same seat and side",
- "imageJob": "3badbfc6-55a7-4f86-867f-2e548dff448a",
- "imageMatch": "plate",
- "imageModel": "nano_banana_pro → logged nano_banana_2",
+ "imageFault": "user Fix: \"FIX THE IMAGE AND USE THE P03B AS REFERNCE FOR THE BRACE\" → an edit of the v9 A frame with the confirmed P-03b frame attached as Image 2: the same short black hinged brace — straps, round side hinge and size copied — worn on her right knee only, slid below the kneecap",
+ "imageJob": "a5860844-7d29-4f9b-8e9c-6019f6b22e0f",
+ "imageMatch": "frame",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [],
  "imageParts": [],
- "imagePick": 7,
- "imagePrompt": "For the line \"That big knee brace I bought slid right down my leg.\": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chairs, the floor, the light — in close at the near chair from the side, a tall 9:16 crop, and add the seated woman. Image 1 is the kitchen.\nMedium close-up from the side at knee height, sharp on the brace: an older Black woman sitting on the chair, her right leg out a little, a short black hinged knee brace — a hand's length above and below the knee, two wide straps, a small round hinge each side — slid down below the kneecap, sagging at her shin, her right hand hauling its top strap back up, her left hand flat on the chair seat; a faded blue floral house dress at mid-thigh, pink terry slippers flat on the floor; her head and shoulders out of frame above.\nIn frame: the seated woman from the shoulders down, two hands placed, the brace, two slippers, the chair and table edge of Image 1; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Brace and dress plain — no lettering, logos or labels; nobody else.",
+ "imagePick": 11,
+ "imagePrompt": "For the line \"That big knee brace I bought slid right down my leg.\": Keep this photo exactly as it is — the kitchen, the chair, the table, the woman seated from the side, her dress and slippers, the light — and change only the brace: make it the brace of Image 2. Image 1 is the picture. Image 2 is the brace.\nMedium close-up from the side at knee height, sharp on the brace: the seated woman of Image 1, her right leg out a little toward the lens, wearing the brace of Image 2 copied exactly — the same short black hinged brace, straps, round side hinge and size — on her right knee only, slid down below the kneecap and sagging at the shin; her right hand hauling its top strap up, her left hand flat on the chair seat; her left leg bare and a hand apart behind it; pink terry slippers on the floor; head and shoulders out of frame above.\nIn frame: the woman from the shoulders down, two hands placed, one brace, two slippers, the chair and table of Image 1; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window. Brace and dress plain — no lettering, logos or labels; nobody else.",
  "imageRefs": [
   {
-   "kind": "location",
-   "label": "P2-KITCHEN plate v2 (confirmed)",
-   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
-   "role": "Image 1 · edited (§6A rule 3, HT17)"
+   "edited": "§6A rule 3, HT17, FP14",
+   "kind": "frame",
+   "label": "P-03a frame v9 A — seated from the side, one brace on the right leg",
+   "ref": "stryde-71-stairs-pixar-song__P-03a"
+  },
+  {
+   "kind": "frame",
+   "label": "P-03b frame v11 A (confirmed) — the brace at her ankle: the brace to copy",
+   "ref": "stryde-71-stairs-pixar-song__P-03b"
   }
  ],
- "imageRegens": 2,
- "imageRes": 7664316,
+ "imageRegens": 5,
+ "imageRes": null,
  "imageStatus": "confirmed",
  "imageTaste": [
   "HT02",
@@ -49,9 +54,9 @@
   "HT22"
  ],
  "imageType": "image/png",
- "imageUnused": 8,
+ "imageUnused": 12,
  "imageUnusedArchived": "5999e0eec44900f8306f7c3e250c57c7",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_3badbfc6-55a7-4f86-867f-2e548dff448a.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_203935_a5860844-7d29-4f9b-8e9c-6019f6b22e0f.png",
  "imageVersions": [
   {
    "archiveAsset": "ac67432e40d8cd2dde185fdf4936c274",
@@ -156,13 +161,16 @@
    "v": 6
   },
   {
+   "archiveAsset": "185b07ceefb5019858b4016428c40ed1",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "235e9ca9db03d8b982b4932ca1fa8e61",
    "at": 1790883125026,
    "connector": "Higgsfield",
    "credits": 2.14,
    "job": "3badbfc6-55a7-4f86-867f-2e548dff448a",
    "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "user Fix: \"MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW\" → a short hinged brace, a hand's length above and below the knee, same seat and side",
+   "note": "user Fix: \"MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW\" → a short hinged brace, a hand's length above and below the knee, same seat and side · replaced on the user's Fix (THE BRACE SHOULD BE IN SHOULD ONE KNEE); copied to Old versions 2",
    "pair": "A",
    "res": "1536×2752",
    "size": 7664316,
@@ -186,6 +194,97 @@
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_ae620c20-cac5-4618-afb1-2fc397a76a76.png",
    "v": 8
+  },
+  {
+   "archiveAsset": "18284a810e06de8400db2c9a9cc13ebe",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
+   "asset": "264312abc5d2f118045de7cd0329a764",
+   "at": 1790886423728,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "46dcac67-28db-46a0-b11f-eb05c012dee2",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"THE BRACE SHOULD BE IN SHOULD ONE KNEE\" → an edit of the confirmed v7 A frame changing only the brace: one short hinged brace on her right leg alone, top cuff on the thigh and bottom cuff on the shin of that one leg, her left leg bare and set apart behind it · replaced on the user's Fix (use the P03b brace as reference); copied to Old versions 2",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7154317,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_202503_46dcac67-28db-46a0-b11f-eb05c012dee2.png",
+   "v": 9
+  },
+  {
+   "archiveAsset": "0be6c808645469a2e088ca6523929b22",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
+   "asset": "711291e7870488c81c8efb471767e428",
+   "at": 1790886423728,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "5499394b-d0b3-4574-85da-8b6348b3e63d",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"THE BRACE SHOULD BE IN SHOULD ONE KNEE\" → an edit of the confirmed v7 A frame changing only the brace: one short hinged brace on her right leg alone, top cuff on the thigh and bottom cuff on the shin of that one leg, her left leg bare and set apart behind it · replaced on the user's Fix (use the P03b brace as reference); copied to Old versions 2",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7161792,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_202502_5499394b-d0b3-4574-85da-8b6348b3e63d.png",
+   "v": 10
+  },
+  {
+   "asset": "a81e4828b0ccfcbbd0a2a2d8bc2c123d",
+   "at": 1790887275688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "a5860844-7d29-4f9b-8e9c-6019f6b22e0f",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user Fix: \"FIX THE IMAGE AND USE THE P03B AS REFERNCE FOR THE BRACE\" → an edit of the v9 A frame with the confirmed P-03b frame attached as Image 2: the same short black hinged brace — straps, round side hinge and size copied — worn on her right knee only, slid below the kneecap",
+   "pair": "A",
+   "refs": [
+    {
+     "edited": "§6A rule 3, HT17, FP14",
+     "kind": "frame",
+     "label": "P-03a frame v9 A — seated from the side, one brace on the right leg",
+     "ref": "stryde-71-stairs-pixar-song__P-03a"
+    },
+    {
+     "kind": "frame",
+     "label": "P-03b frame v11 A (confirmed) — the brace at her ankle: the brace to copy",
+     "ref": "stryde-71-stairs-pixar-song__P-03b"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_203935_a5860844-7d29-4f9b-8e9c-6019f6b22e0f.png",
+   "v": 11
+  },
+  {
+   "archiveAsset": "be36efa5afa24a1446b0d06b67d2aff5",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
+   "asset": "fddefd0889ba198030af3c6863bdd137",
+   "at": 1790887275688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "6eb3eafc-8f42-4da4-a9a2-0bb46b840118",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user Fix: \"FIX THE IMAGE AND USE THE P03B AS REFERNCE FOR THE BRACE\" → an edit of the v9 A frame with the confirmed P-03b frame attached as Image 2: the same short black hinged brace — straps, round side hinge and size copied — worn on her right knee only, slid below the kneecap · not chosen (the user picked A); copied to Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "edited": "§6A rule 3, HT17, FP14",
+     "kind": "frame",
+     "label": "P-03a frame v9 A — seated from the side, one brace on the right leg",
+     "ref": "stryde-71-stairs-pixar-song__P-03a"
+    },
+    {
+     "kind": "frame",
+     "label": "P-03b frame v11 A (confirmed) — the brace at her ankle: the brace to copy",
+     "ref": "stryde-71-stairs-pixar-song__P-03b"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_203935_6eb3eafc-8f42-4da4-a9a2-0bb46b840118.png",
+   "v": 12
   }
  ],
  "key": "brace",
@@ -195,12 +294,13 @@
  "line": "That big knee brace I bought slid right down my leg.",
  "location": "L-N-KITCHEN",
  "model": "kling-video-v3_0",
- "motionPlan": "From this frame: her hand pulls the brace up once and it slips back — one pull, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motionPlan": "From this frame: the brace drifts slowly down her shin on its own, her hand letting it go — one slow slide, about three seconds; camera RV sway — the virtual camera breathes in place, never travels",
  "music": "MUS-EXPOSE",
  "onScreen": 3.25,
  "pinEnd": "no",
  "product": "absent (generic brace, §10) · —",
- "prompt": "For the line \"That big knee brace I bought slid right down my leg.\": From this frame: her hand pulls the brace up once and it slips back — one pull, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the side at knee height, her right hand hauls the short brace's top strap up over the kneecap in one pull, holds a moment, and the brace sags back down below the kneecap as the hand eases; her left hand stays on the chair seat; she stays seated, nobody speaks; the chair, the slippers and the kitchen behind stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame, the brace rigid in shape. No camera travel; nobody else; no cut; the brace never changes design.",
+ "prompt": "For the line \"That big knee brace I bought slid right down my leg.\": From this frame: the brace drifts slowly down her shin on its own, her hand letting it go — one slow slide, about three seconds; camera RV sway — the virtual camera breathes in place, never travels. From the side at knee height, the short brace drifts slowly down her shin on its own — a little at a time, gravity taking it, the top strap easing off the kneecap and the whole brace settling lower, toward her ankle, by the last frame; her right hand lifts away from it, hovers, and rests on her thigh; her left hand stays on the chair seat; she stays seated, nobody speaks; the chair, the slippers and the kitchen behind stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame, the brace rigid in shape. No camera travel; nobody else; no cut; the brace never climbs back up.",
+ "regens": 4,
  "section": "The low point and what failed — MUS-EXPOSE",
  "shot": "low · profile · clean · CU",
  "songIn": 26.71,
@@ -210,11 +310,11 @@
  "status": "review",
  "storyDay": "N-D1",
  "title": "failed fix",
- "updatedAt": 1790883912351,
- "videoAsset": "7cbcb0aaee04e477b0cfa6094cc38fd9",
- "videoAt": 1790883912351,
+ "updatedAt": 1790889219121,
+ "videoAsset": "c8b70bd5f6deae8691e7f2284bd3d245",
+ "videoAt": 1790889219121,
  "videoConnector": "Kling",
- "videoJob": "AfszUQXa2NJvQMWZiLir0TVIBk3DrIp085kuSgXLfsHogrVLLTq06OCdS-TH_bQJkRbMTioF",
+ "videoJob": "ARew7jVzpC1Fei9BUI1Aa8hEJkFTiwem2TYpfTKphqM0afafv8Lu-RZygvw92aZK-YGIm4HD",
  "videoNote": "clip from the picked v7 A · what I see: the hand pulls the short brace's strap up, it sags back; seated, nobody speaks",
  "videoRes": "1072×1928",
  "videoTaste": [
@@ -225,7 +325,7 @@
   "HT22"
  ],
  "videoType": "video/mp4",
- "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/811ec0a2-9b44-4851-b90a-1101445c2500-wt3OGYe2W1EDPuCoTQi0Zg-output.mp4?x-kcdn-pid=112372",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1824202d-29be-4401-9c1a-0a2a441a7b97-Fxn9c4ORTS8PZhyQbkcLqA-output.mp4?x-kcdn-pid=112372",
  "videoVersions": [
   {
    "archiveAsset": "42b3f2b4303b70dc517f08e99acdf25c",
@@ -246,6 +346,9 @@
    "v": 1
   },
   {
+   "archiveAsset": "4fe789429962df5d7a513a0163fc95c2",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "7cbcb0aaee04e477b0cfa6094cc38fd9",
    "at": 1790883912351,
    "connector": "Kling",
@@ -254,12 +357,48 @@
    "fromImage": 7,
    "job": "AfszUQXa2NJvQMWZiLir0TVIBk3DrIp085kuSgXLfsHogrVLLTq06OCdS-TH_bQJkRbMTioF",
    "model": "kling-video-v3_0",
-   "note": "from the confirmed image v7 A · what I see: the hand pulls the short brace's strap up, it sags back; seated, nobody speaks",
+   "note": "from the confirmed image v7 A · what I see: the hand pulls the short brace's strap up, it sags back; seated, nobody speaks · its image v7 A was replaced on the user's Fix (brace on one knee); copied to Old versions 2",
    "res": "1072×1928",
    "size": 5413890,
    "type": "video/mp4",
    "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/811ec0a2-9b44-4851-b90a-1101445c2500-wt3OGYe2W1EDPuCoTQi0Zg-output.mp4?x-kcdn-pid=112372",
    "v": 2
+  },
+  {
+   "asset": "88dbfebe748e706508e580a45a245008",
+   "at": 1790888488068,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 11,
+   "job": "AVL1xP7SEx00bZUhUe1jG3IbhyRWZq0rBHFJDaphTZEYJKJYV54e6E3Is7cjA70Cd9cwx0Au",
+   "model": "kling-video-v3_0",
+   "note": "from the picked image v11 A (job a5860844) · the first clip on this frame (the image was replaced on the user's Fixes — the P-03b brace copied onto her knee) · what I see: her hand hauls the brace up, holds, and it sags back down the shin toward the ankle; she stays seated, nobody speaks · replaced on the user's Fix (IT SHOULD FEELING DRIFTING DOWN); copied to Old versions 2",
+   "res": "1072×1928",
+   "size": 3958379,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1e6454ed-a84a-48cb-b54c-485626e96832-iPny2duE0Y8uZ0YQnLKJbg-output.mp4?x-kcdn-pid=112372",
+   "v": 3,
+   "archived": true,
+   "archiveAsset": "ee2be8f535a9bd191614b2336202b13f",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "v": 4,
+   "asset": "c8b70bd5f6deae8691e7f2284bd3d245",
+   "at": 1790889219121,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 11,
+   "job": "ARew7jVzpC1Fei9BUI1Aa8hEJkFTiwem2TYpfTKphqM0afafv8Lu-RZygvw92aZK-YGIm4HD",
+   "model": "kling-video-v3_0",
+   "res": "1072×1928",
+   "size": 3128266,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1824202d-29be-4401-9c1a-0a2a441a7b97-Fxn9c4ORTS8PZhyQbkcLqA-output.mp4?x-kcdn-pid=112372",
+   "note": "user Fix on v3: IT SHOULD FEELING DRIFTING DOWN → the motion rewritten (§22X): the brace drifts down her shin on its own, gravity taking it, her hand letting go; the act-map row's action and pace changed to match · what I see: her hand lifts off to her thigh and the brace slides slowly down her shin on its own, settling just above the ankle by the last frame; she stays seated, nobody speaks"
   }
- ]
+ ],
+ "videoFault": "user 2026-10-01: IT SHOULD FEELING DRIFTING DOWN → clip v4: the brace drifts down her shin on its own, her hand letting go (§22X); v3 kept on Old versions 2"
 }

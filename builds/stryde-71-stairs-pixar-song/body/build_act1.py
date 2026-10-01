@@ -211,11 +211,52 @@ A final frame from a 3D animated feature film, stylized storybook render — the
 FIX10 = {"P-01b": "I WANT A CLOSE SHOT OF THE LEGS HERE GOING DOWN BACLWRDS", "P-05b": "WRONG DRAWER AND LOCATION"}
 if V >= 10:
     P = P10
+
+# ---- v11 (hourly Fix check 20:21 UTC, 2026-10-01): P-03a "THE BRACE SHOULD BE IN SHOULD ONE KNEE" — the v7 A frame's lower cuff sat behind the near shin and
+# read as a brace across both legs; an edit of that confirmed frame with the whole brace on the right knee alone, the left leg bare and apart (FP14).
+P03A7 = "3badbfc6-55a7-4f86-867f-2e548dff448a"   # P-03a v7 A — job id (file on Old 2 now)
+REF_P03A7 = {"label": "P-03a frame v7 A (confirmed) — seated from the side, the short brace", "kind": "frame"}
+P11 = {}
+P11["P-03a"] = (f'''For the line "{L("P-03a")}": Keep this photo exactly as it is — the kitchen, the chair, the table, the woman seated from the side, her dress and slippers, the light — and change only the brace. Image 1 is the picture.
+Medium close-up from the side at knee height, sharp on the brace: the seated woman of Image 1, her right leg out a little toward the lens, one short black hinged knee brace on that right leg only — top cuff on her right thigh, bottom cuff on her right shin, the round hinge at the side of that one knee, one piece on one leg, slid below the kneecap and sagging at the shin; her right hand hauling its top strap up, her left hand flat on the chair seat; her left leg bare and a hand apart behind it; pink terry slippers on the floor; head and shoulders out of frame above.
+In frame: the woman from the shoulders down, two hands placed, one brace, two slippers, the chair and table of Image 1; every other surface bare.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window. Brace and dress plain — no lettering, logos or labels; nobody else.''', [REF_P03A7], False, P03A7)
+FIX11 = {"P-03a": "THE BRACE SHOULD BE IN SHOULD ONE KNEE"}
+if V >= 11:
+    P = P11
+
+# ---- v12 (user "FIX THOSE", 2026-10-01): P-03a "FIX THE IMAGE AND USE THE P03B AS REFERNCE FOR THE BRACE" — the brace copied from the confirmed P-03b frame
+# (the same short black hinged brace with two wide straps and a round side hinge), worn on her right knee; an edit of the P-03a v9 A frame (seated from the side).
+P03A9 = "46dcac67-28db-46a0-b11f-eb05c012dee2"   # P-03a v9 A — job id (file on Old 2 now)
+P03B11 = "6ca76930-8e96-4da8-8f1c-de4465a37d80"  # P-03b v11 A — job id (confirmed)
+REF_P03A9 = {"label": "P-03a frame v9 A — seated from the side, one brace on the right leg", "kind": "frame"}
+REF_P03B11 = {"label": "P-03b frame v11 A (confirmed) — the brace at her ankle: the brace to copy", "kind": "frame"}
+P12 = {}
+P12["P-03a"] = (f'''For the line "{L("P-03a")}": Keep this photo exactly as it is — the kitchen, the chair, the table, the woman seated from the side, her dress and slippers, the light — and change only the brace: make it the brace of Image 2. Image 1 is the picture. Image 2 is the brace.
+Medium close-up from the side at knee height, sharp on the brace: the seated woman of Image 1, her right leg out a little toward the lens, wearing the brace of Image 2 copied exactly — the same short black hinged brace, straps, round side hinge and size — on her right knee only, slid down below the kneecap and sagging at the shin; her right hand hauling its top strap up, her left hand flat on the chair seat; her left leg bare and a hand apart behind it; pink terry slippers on the floor; head and shoulders out of frame above.
+In frame: the woman from the shoulders down, two hands placed, one brace, two slippers, the chair and table of Image 1; every other surface bare.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window. Brace and dress plain — no lettering, logos or labels; nobody else.''', [REF_P03A9, REF_P03B11], False, P03A9)
+FIX12 = {"P-03a": "FIX THE IMAGE AND USE THE P03B AS REFERNCE FOR THE BRACE"}
+if V >= 12:
+    P = P12
+
+# ---- v13 (user "FIX THOSE", 2026-10-01): P-01b "WRONG PERSON" — the v11/v12 legs were a slim young woman's; the legs are hers: seventy-one, deep brown skin,
+# full heavy calves and thick ankles, her dress and slippers — the confirmed P-01a frame (her on the top step from behind) attached as Image 2 to copy her from.
+P01A12 = "c5f6bfae-2afa-42de-bc4c-d7063c3c5646"  # P-01a v12 B — job id (confirmed)
+REF_P01A12 = {"label": "P-01a frame v12 B (confirmed) — N on the top step from behind: the woman to copy", "kind": "frame"}
+P13 = {}
+P13["P-01b"] = (f'''For the line "{L("P-01b")}": Keep this photo exactly as it is — the staircase, its runner, balusters and oak rail, the light — in close on the top steps from the side, a tall 9:16 crop, and add her legs. Image 1 is the staircase. Image 2 is the woman.
+Close-up from the side at step height, sharp on the slippers: the legs of the woman of Image 2 — seventy-one, deep brown skin, heavy calves, thick ankles — from the knee down, going down backwards: facing up the stairs, her left pink terry slipper flat on the step above, her right slipper reaching back and down heel first onto the step below, toes pointing up; the hem of her blue floral house dress as in Image 2; one brown hand on the rail at the top edge, four chunky fingers and a thumb; her head out of frame. Scale true to the set: the hem comes up to her knee, each step the height of her slipper's length.
+In frame: two slippers, two heavy legs, one hand, four steps of Image 1; every other surface bare. Each foot whole.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light. Slippers and hem plain — no lettering, logos or labels; nobody else.''', [REF_P0, REF_P01A12], False, P0)
+FIX13 = {"P-01b": "WRONG PERSON"}
+if V >= 13:
+    P = P13
 if __name__ == "__main__":
     fails = 0
     for b, (pr, refs, face, eo) in P.items():
         c = {"beat": b, "kind": "image", "mode": 2, "prompt": pr, "script_line": L(b), "face": face, "room": True, "body": b not in ("P-05b",), "refs": refs,
-             "match": "frame" if eo in (P3A, P02B, "P3A-NEW", P01B, P02B6) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX10 if V >= 10 else FIX9 if V >= 9 else FIX8 if V >= 8 else FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
+             "match": "frame" if eo in (P3A, P02B, "P3A-NEW", P01B, P02B6, P03A7, P03A9) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX13 if V >= 13 else FIX12 if V >= 12 else FIX11 if V >= 11 else FIX10 if V >= 10 else FIX9 if V >= 9 else FIX8 if V >= 8 else FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
         OV = (OUTV if V == 4 else {}).get(b, V)
         (H / f"{b}.v{OV}.prompt.txt").write_text(pr); (H / f"{b}.v{OV}.preflight.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
         r = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v{OV}.preflight.json")], capture_output=True, text=True)

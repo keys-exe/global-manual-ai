@@ -1,0 +1,60 @@
+{
+ "imageVersions": [
+  {
+   "asset": "64f1a064896df50ddd652e645dd99ce6",
+   "at": 1790885300814,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "1f0ab209-3648-407c-b1d0-c09e80f87576",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I WANT A CLOSE SHOT OF THE LEGS HERE GOING DOWN BACLWRDS\" → a close side shot at step height on her legs alone, an edit of the stair plate: the lower slipper on its step, the upper heel reaching back and down to the step below · replaced on the user's Fix (WRONG PERSON — a slim young woman's legs); kept on Old versions 2",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7564021,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195908_1f0ab209-3648-407c-b1d0-c09e80f87576.png",
+   "v": 11
+  },
+  {
+   "asset": "50a562ccc33e94e13fe6b06793bda917",
+   "at": 1790885300814,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "f57f9812-12bd-4a3f-8490-a95950e386f0",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I WANT A CLOSE SHOT OF THE LEGS HERE GOING DOWN BACLWRDS\" → a close side shot at step height on her legs alone, an edit of the stair plate: the lower slipper on its step, the upper heel reaching back and down to the step below · replaced on the user's Fix (WRONG PERSON — a slim young woman's legs); kept on Old versions 2",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6176505,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195907_f57f9812-12bd-4a3f-8490-a95950e386f0.png",
+   "v": 12
+  },
+  {
+   "asset": "e0b7ba5bd6df0ef3bdc22847f59f0b60",
+   "at": 1790888539033,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "51fe7903-2bab-4876-85b4-77207ba08a9d",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user Fix: \"WRONG PERSON\" (the v11/v12 legs were a slim young woman's) → the legs are hers: the confirmed P-01a frame (her on the top step from behind) attached as Image 2 — seventy-one, deep brown skin, heavy calves, thick ankles, her dress hem and pink slippers; a side close-up at step height, her right slipper reaching back and down heel first · not chosen (the user picked A); kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P0-PROP-N plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P0-PROP-N"
+    },
+    {
+     "kind": "frame",
+     "label": "P-01a frame v12 B (confirmed) — N on the top step from behind: the woman to copy",
+     "ref": "stryde-71-stairs-pixar-song__P-01a"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_205953_51fe7903-2bab-4876-85b4-77207ba08a9d.png",
+   "v": 14
+  }
+ ],
+ "updatedAt": 1790889121310
+}

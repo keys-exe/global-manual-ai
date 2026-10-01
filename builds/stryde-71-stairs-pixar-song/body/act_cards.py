@@ -13,7 +13,7 @@ RL = {"P0": {"label": "P0-PROP-N plate (confirmed)", "kind": "location", "ref": 
       "N": {"label": "N-NARR sheet v2", "kind": "character", "ref": f"{B}__N-NARR"}, "C1": {"label": "C1-LORETTA sheet v2", "kind": "character", "ref": f"{B}__C1-LORETTA"},
       "C2": {"label": "C2-DAUGHTER sheet v2", "kind": "character", "ref": f"{B}__C2-DAUGHTER"},
       "P03A": {"label": "P-03a frame v3 A (confirmed) — the brace", "kind": "frame", "ref": f"{B}__P-03a", "edited": "§6A rule 3, HT17, FP14"},
-      "P03A7": {"label": "P-03a frame v5 A (new, To check) — the seat and the brace", "kind": "frame", "ref": f"{B}__P-03a", "edited": "§6A rule 3, HT17, FP14"},
+      "P03A7": {"label": "P-03a frame v7 A (confirmed) — seated from the side, the short brace", "kind": "frame", "ref": f"{B}__P-03a", "edited": "§6A rule 3, HT17, FP14"},
       "P01B": {"label": "P-01a frame v12 B (confirmed) — her at the top of the flight from below", "kind": "frame", "ref": f"{B}__P-01a", "edited": "§6A rule 3, HT17, FP14"},
       "P03A8": {"label": "P-03a frame v7 A (new, To check) — the seat and the shorter brace", "kind": "frame", "ref": f"{B}__P-03a", "edited": "§6A rule 3, HT17, FP14"},
       "P02B6": {"label": "P-02a frame v6 B (confirmed) — her on the top step, her own flight", "kind": "frame", "ref": f"{B}__P-02a", "edited": "§6A rule 3, HT17, FP14"},

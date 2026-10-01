@@ -392,8 +392,8 @@
   "location": "L-N-KITCHEN",
   "story_day": "N-D1",
   "framing": "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a short black hinged knee brace — a hand's length above and below the knee — sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new; the brace a bit more short)",
-  "action": "her hand pulls the brace up once and it slips back",
-  "pace": "one pull, about two seconds",
+  "action": "the brace drifts slowly down her shin on its own, her hand letting it go",
+  "pace": "one slow slide, about three seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
   "staging": "hands: large in frame, one movement, seated",
   "pin_end": "no",
@@ -411,7 +411,7 @@
    "side": "profile",
    "fg": "clean",
    "scale": "CU",
-   "why": "low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14)"
+   "why": "low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14); user Fix 2026-10-01 on the clip: it should feel like drifting down"
   },
   "mirror_of": null,
   "focus": {

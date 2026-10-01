@@ -396,3 +396,41 @@ Waiting on: picks or Fix notes on P-01b v11/v12, P-05b v7/v8; Confirm or Fix on 
 - Balances: Higgsfield 7814.15 · Kling 40633.
 
 Waiting on: Confirm or Fix on the clip P-01a v5; picks or Fix notes on P-01b v11/v12, P-05b v7/v8; Confirm or Fix on the clips P-02a v3, P-05c v1, P-03a v2, P-03b v1.
+
+## 2026-10-01 — 20:21 UTC hourly Fix check
+
+- **P-03a** image Fix "THE BRACE SHOULD BE IN SHOULD ONE KNEE" (the v7 A frame's lower cuff sat behind the near shin and read as a brace across both legs) → v9/v10 (A/B): an edit of that confirmed frame changing only the brace — one short hinged brace on her right leg alone, both cuffs on that leg, the left leg bare and apart. To check. v7 A → **Old 2** (`185b07ce…`); the clip v2 made from it → Old 2 (`4fe78942…`), archived; the card waits for the new pick (status `ready`). **P-03b was made as an edit of the old P-03a frame (FP14)** — it is confirmed and untouched; if the user wants it to match the new P-03a brace, that is their call.
+- **P-05c** clip Fix "NO TALKING ABOUT THE MUSIC" (the face strip at 6 fps shows her mouth opening as if singing along, although the prompt carried the mouth-closed clause at its end) → clip v2 (3 s, 24 cr): the lips clause first and strongest — lips sealed, jaw still, a silent clip, only the eyes move. Checked at 6 fps: lips closed first frame to last. To check. v1 → Old 2 (`6c1e2f26…`).
+- `fix_patterns.py` on Current + Old + Old 2: two repeats written as rules — the mouth moved on three beats with the clause late in the prompt (HT25: the lips clause leads the prompt on any face-visible shot, V7.85.2); the team has dropped every pinned end frame on this build (hooks, P-01a) → `products/stryde/fix_patterns.md` FP15.
+- Balances: Higgsfield 7706.15 · Kling 40579.
+
+Waiting on: picks on P-03a v9/v10, P-01b v11/v12, P-05b v7/v8; Confirm or Fix on the clips P-01a v5, P-02a v3, P-05c v2, P-03b v1.
+
+## 2026-10-01 — "FIX THOSE" round 3 (20:35 UTC)
+
+- The user confirmed on the board: **P-01a clip v5, P-02a clip v3, P-05c clip v2, P-03b clip v1** (`use`); picked **P-05b v7 A**.
+- **P-03a** "FIX THE IMAGE AND USE THE P03B AS REFERNCE FOR THE BRACE" → v11/v12 (A/B): an edit of the v9 A frame with the confirmed P-03b frame attached as Image 2 — the same short black hinged brace (straps, round side hinge, size) on her right knee, slid below the kneecap. To check. v9/v10 → Old 2 (`18284a81…` / `0be6c808…`), deleted from Current.
+- **P-05b** clip v1 (3 s, 24 cr) from the pick: her hand pushes the stuffed drawer shut, it jams, a sleeve cuff caught over the edge. Unused v8 B → Old 2 (`b883a503…`).
+- **P-01b card vanished from the Current board** (the 20:28 list of 73 docs had no P-01b; it was written at version 24 in the FIC THESE round and nothing in this session deleted it — the same thing happened to `P-01a-END` earlier). Re-set from the local mirror `board/json/beat_P-01b.json` (v11/v12 To check, both files still in the store). Cause unknown; every Fix check now compares the board's beats with the act map and re-sets any missing beat from its mirror.
+- Balances: Higgsfield 7660.15 · Kling see below.
+- P-05b clip v1 landed (what I see: the hand reaches but the drawer never shuts, the view widens at the end) — To check, the user decides. Kling 40325.
+
+Waiting on: picks on P-03a v11/v12, P-01b v11/v12; Confirm or Fix on the clip P-05b v1.
+
+## 2026-10-01 — "FIX THOSE" round 4 (21:00 UTC)
+
+- The user picked **P-03a v11 A** and confirmed the **P-05b clip** (`use`).
+- **P-01b** "WRONG PERSON" (the v11/v12 legs were a slim young woman's) → v13/v14 (A/B): the stair plate as Image 1 and the confirmed P-01a frame (her on the top step from behind) as Image 2 to copy her from — seventy-one, deep brown skin, heavy calves, thick ankles, her dress and slippers. To check (A from the side through the balusters, B from behind on the flight). v11/v12 → Old 2 (`64f1a064…` / `50a562cc…`). The V7.86.0 preflight now asks Mode 2 image prompts for a scale cue (§24O rule 3) and the stylised-hand line (rule 5): both written in.
+- **P-03a** clip v3 (5 s, 40 cr) on the picked frame (generation 1 on the new frame): her hand hauls the brace up, it sags back down toward the ankle. To check. Unused v12 B → Old 2 (`be36efa5…`).
+- Standards on the default branch moved to V7.86.0 (music-video camera, cast-sheet views) — merged into this branch; not applied to this running build beyond the preflight checks above.
+- Balances: Higgsfield 7646.15 · Kling 40245.
+
+Waiting on: a pick on P-01b v13/v14; Confirm or Fix on the clip P-03a v3. Then Act 1 is complete and the Act 2 B-roll images begin.
+
+## 2026-10-01 — "FIX THOSE" round 5 (21:15 UTC)
+
+- The user picked **P-01b v13 A** → clip v3 (4 s, 32 cr; the first clip on this frame): through the balusters the lower slipper settles on the step below, the upper foot follows down. To check. Unused v14 B → Old 2 (`e0b7ba5b…`).
+- **P-03a** clip Fix "IT SHOULD FEELING DRIFTING DOWN" (v3 had her pull the brace up and it sagged back) → the act-map row's action and pace changed ("the brace drifts slowly down her shin on its own, her hand letting it go · one slow slide, about three seconds"; `actmap.py` PASS, STEP4_5 / `docs/actmap` v24 re-synced on Current + Plan, `motionPlan` on the card) → clip v4 (5 s, 40 cr): her hand lifts off to her thigh and the brace slides slowly down to just above the ankle. To check. v3 → Old 2 (`ee2be8f5…`).
+- Balances: Higgsfield 7633.15 · Kling 40093.
+
+Waiting on: Confirm or Fix on the clips P-01b v3 and P-03a v4. Then Act 1 is complete and the Act 2 B-roll images begin.

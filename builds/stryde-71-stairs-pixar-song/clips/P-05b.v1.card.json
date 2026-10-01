@@ -1,0 +1,34 @@
+{
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "304e6a34313878be74fb791122a1c68e",
+   "at": 1790887363975,
+   "connector": "Kling",
+   "credits": 24,
+   "duration": 3.04,
+   "fromImage": 7,
+   "job": "AdKfNzMqSWRQZVvIp18NSR5gHYJyzcSP-L4mhBzeZIC58bJktLyGUHHomgcnptiTL2iCpYMD",
+   "model": "kling-video-v3_0",
+   "res": "1072×1928",
+   "size": 3585187,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/5dda3115-8e29-4979-adf1-a2d8ed90b67a-6fn1k1q-TRbPmUjZ-OfDBA-output.mp4?x-kcdn-pid=112372",
+   "note": "from the picked image v7 A (job cebeeb02) · what I see: her hand reaches to the drawer front but the drawer stays open — the push never lands — and the view widens a little at the end; nobody in frame but the hand"
+  }
+ ],
+ "status": "review",
+ "prompt": "For the line \"Nothing worked. Nothing lasted.\": From this frame: her hand pushes the drawer shut — one push, about a second; camera RV sway — the virtual camera breathes in place, never travels. In close on the open drawer, her hand pushes the drawer front once and the drawer slides shut until it jams on the stuffed sleeves and bottles inside, a sleeve cuff caught over its edge; the hand rests on the drawer front; the drawer, the cabinets and the counter stay exactly as in the frame; nobody speaks, nobody is in frame but the hand. Stylized 3D animation, exactly on model from the frame, every object rigid. No camera travel; nobody else; no cut; nothing new appears.",
+ "regens": 1,
+ "duration": 3.04,
+ "videoAsset": "304e6a34313878be74fb791122a1c68e",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/5dda3115-8e29-4979-adf1-a2d8ed90b67a-6fn1k1q-TRbPmUjZ-OfDBA-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AdKfNzMqSWRQZVvIp18NSR5gHYJyzcSP-L4mhBzeZIC58bJktLyGUHHomgcnptiTL2iCpYMD",
+ "credits": 24,
+ "videoAt": 1790887363975,
+ "videoRes": "1072×1928",
+ "videoConnector": "Kling",
+ "model": "kling-video-v3_0",
+ "updatedAt": 1790887363975
+}
