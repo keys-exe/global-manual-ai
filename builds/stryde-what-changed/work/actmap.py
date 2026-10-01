@@ -397,9 +397,9 @@ BB("B18-BR", A4, "The thing people write to us about most is not the pain.", "wr
    "a few taps, about two seconds", STILL, "table, seated, camera still", "no", "absent", "—", "NB2",
    EYE, THR, "clean", "MEDIUM", "eye three-quarter = with her as she writes", "face", "shallow", L(KITCH, "R"), True, notes="covers B18-TH; no readable screen")
 BB("B19-BR", A4, "And you do not have to take my word for any of it.", "word", "try it yourself",
-   "props", "L-M-STAIRS", "M-D2", "MEDIUM from a little above: the STRYDE box open on her bottom stair, the lid propped with its wordmark, both straps in the tray, the hall behind (fix: 'FIX OUR PRODUCT'; edit of package_open.jpg — background only)", "sunlight shifts a little across the box",
-   "a slow shimmer of light, about two seconds", STILL, "product on the stair, camera still", "no", "packaged", "the box and both straps", "NBP",
-   HIGH, FRO, "clean", "MEDIUM", "high = her view of the package on her stair", "product", "medium", L(M_SUN, "R"), False, notes="covers B19-TH")
+   "props", "L-KITCHEN", "K-D1", "MEDIUM from a little above: the STRYDE box open on her kitchen table beside a mug of tea, the lid propped with its wordmark, both straps in the tray (fix: 'give me different broll, make sure product package is right'; package photo, background only)", "steam drifts from the tea",
+   "a slow drift of steam, about two seconds", STILL, "product on the table, camera still", "no", "packaged", "the box and both straps", "NBP",
+   HIGH, FRO, "clean", "MEDIUM", "high = her view of the package on her table", "product", "medium", L(KITCH, "R"), False, notes="covers B19-TH")
 BB("B19-BR2", A4, "You will know in a minute.", "minute", "she notices",
    "R1", "L-M-STAIRS", "M-D2", "CU on her stairs: Maureen pauses mid-flight, a quiet look of surprise softening into a small smile as she notices (fix: 'GIVE ME DIFFERENT BROLL HERE')", "the smile forms",
    "one breath, about two seconds", STILL, "on the stairs, head and shoulders, camera still", "no", "absent", "—", "NBP",

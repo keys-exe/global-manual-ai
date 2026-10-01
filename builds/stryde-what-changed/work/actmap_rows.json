@@ -3586,13 +3586,13 @@
   "key": "word",
   "function": "try it yourself",
   "subject": "props",
-  "location": "L-M-STAIRS",
-  "story_day": "M-D2",
-  "framing": "MEDIUM from a little above: the STRYDE box open on her bottom stair, the lid propped with its wordmark, both straps in the tray, the hall behind (fix: 'FIX OUR PRODUCT'; edit of package_open.jpg — background only)",
-  "action": "sunlight shifts a little across the box",
-  "pace": "a slow shimmer of light, about two seconds",
+  "location": "L-KITCHEN",
+  "story_day": "K-D1",
+  "framing": "MEDIUM from a little above: the STRYDE box open on her kitchen table beside a mug of tea, the lid propped with its wordmark, both straps in the tray (fix: 'give me different broll, make sure product package is right'; package photo, background only)",
+  "action": "steam drifts from the tea",
+  "pace": "a slow drift of steam, about two seconds",
   "camera": "locked off",
-  "staging": "product on the stair, camera still",
+  "staging": "product on the table, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "packaged",
@@ -3608,7 +3608,7 @@
    "side": "front",
    "fg": "clean",
    "scale": "MEDIUM",
-   "why": "high = her view of the package on her stair"
+   "why": "high = her view of the package on her table"
   },
   "focus": {
    "plane": "product",
@@ -3617,11 +3617,11 @@
    "moving_subject": false
   },
   "light": {
-   "source": "Maureen's front-door glass, afternoon sun",
+   "source": "kitchen window over the sink",
    "key_side": "R",
-   "time": "afternoon",
-   "arc": "after: sun",
-   "kelvin": 5600
+   "time": "morning",
+   "arc": "everyday: cool daylight",
+   "kelvin": 6500
   },
   "face": false
  },
