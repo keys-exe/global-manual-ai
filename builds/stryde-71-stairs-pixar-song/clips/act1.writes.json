@@ -1,0 +1,44 @@
+[
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-03a",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/clips/P-03a.v1.card.json",
+  "if_version": 6
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-04a",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/clips/P-04a.v1.card.json",
+  "if_version": 6
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-04b",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/clips/P-04b.v1.card.json",
+  "if_version": 6
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-05a",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/clips/P-05a.v1.card.json",
+  "if_version": 6
+ },
+ {
+  "op": "update",
+  "collection": "builds",
+  "doc_id": "stryde-71-stairs-pixar-song",
+  "data": {
+   "balances": {
+    "Higgsfield": 8257.15,
+    "Kling": 42007.0
+   },
+   "balancesAt": 1790878081408,
+   "updatedAt": 1790878081408
+  },
+  "if_version": 19
+ }
+]

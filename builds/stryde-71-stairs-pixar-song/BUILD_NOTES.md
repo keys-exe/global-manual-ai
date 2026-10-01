@@ -278,4 +278,23 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   8,409.15; Kling 42,707. Note: `assemble.py --sheet` placement (V7.80.0) is newer than this build's step-5 lock — the act map is already timed on
   the song's words by `work/actmap.py` (108/108 lines); not re-run here (system updates never touch a running build).
 
-**Waiting on:** the HK-03a clip check; picks or Fix notes on the eight Act 1 pairs. Then the Act 1 clips from the picks; then Act 2 (the wedding).
+- ~18:00 UTC — user **"fixed those and proceed"** (board: HK-03a clip v1 confirmed; P-03a / P-04a / P-04b / P-05a picked A (v3); Fix notes on
+  P-01a "should be looking up the stairs and stepping backwardd", P-01b "this should be the backwards also", P-02a "this should be her at the top
+  of the stairs looking down", P-03b "the brace here should be same as the p03a"). **Act map re-angled for the three stairs beats** (`work/actmap.py`,
+  60 rows, 108/108; `STEP4_5.md`, `docs/actmap` v18 on Current and Plan): P-01a low · behind from the foot of the stairs (her back to the lens,
+  face up to the landing, one foot reaching back down), P-01b feet backwards (toes up the stairs, heel lowering to the step below), P-02a low ·
+  front from the hall floor (the whole flight, her on the top step looking down it). **v3 prompts** (`body/build_act1.py 3`, PASS 1,163–1,197
+  chars; P-03b attaches the confirmed P-03a frame as Image 2 "the brace, copied exactly"): **P-01a v5/v6, P-01b v5/v6, P-02a v5/v6, P-03b v5/v6**
+  To check (`body/patch/v3.ids.json`, `act_cards.py` now takes per-beat `notes` and a `P03A` frame ref); their v3/v4 pairs and the four unused B
+  renders (v4 of P-03a/P-04a/P-04b/P-05a) copied to Old (Old docs v2), archived on Current, the Current files deleted. Seen (the user checks):
+  P-01a both from the foot of the flight, her back to the lens, face up to the landing, hands on the rail — a still can't show the direction of
+  the step, the clip will; P-01b A/B the heel reaching down, toes up the stairs; P-02a A three-quarter / B frontal, on the top step looking down the
+  full flight; P-03b A/B the P-03a brace (round hinges, wide straps) around the ankle. **Act 1 clips** from the confirmed A frames
+  (`clips/build_act1_clips.py`, §35A PASS 564–684 chars; Kling 3.0 1080p, no audio): **P-03a v1** 5 s / 40 cr, **P-04a v1** 4 s / 32 cr, **P-04b v1**
+  5 s / 40 cr, **P-05a v1** 6 s / 48 cr — To check (`clips/<BEAT>.v1.card.json`). Seen: P-03a one pull and the brace sags back; P-04a the hands
+  push the pile apart but the framing drifts and the top of her head enters at the bottom edge; P-04b the knee bends further and holds; P-05a the
+  push lands, then the heap thins out and vanishes by the end and her mouth moves as if talking (told the user; a Fix is theirs to call). Higgsfield
+  balance 8,257.15; Kling 42,007 (build doc v20).
+
+**Waiting on:** picks or Fix notes on the four new Act 1 pairs (P-01a, P-01b, P-02a, P-03b); Confirm or Fix on the four Act 1 clips. Then the
+remaining Act 1 clips from the picks; then Act 2 (the wedding).
