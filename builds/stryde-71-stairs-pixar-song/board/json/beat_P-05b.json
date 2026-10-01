@@ -6,6 +6,7 @@
  "body": 1,
  "build": "stryde-71-stairs-pixar-song",
  "createdAt": 1790879352102,
+ "credits": 24,
  "duration": 3.04,
  "eg": "",
  "flow": [
@@ -171,6 +172,9 @@
    "v": 7
   },
   {
+   "archiveAsset": "b883a503a131d786c10505addb850abc",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "ce5bffb2b538ac472c4679d6a090a534",
    "at": 1790885300814,
    "connector": "Higgsfield",
@@ -183,10 +187,7 @@
    "size": 6348441,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195907_47f52e35-f9bf-4e9d-9799-12bc09c24c17.png",
-   "v": 8,
-   "archived": true,
-   "archiveAsset": "b883a503a131d786c10505addb850abc",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 8
   }
  ],
  "key": "worked",
@@ -196,15 +197,24 @@
   17
  ],
  "location": "L-N-KITCHEN",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: her hand pushes the drawer shut — one push, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "prompt": "For the line \"Nothing worked. Nothing lasted.\": From this frame: her hand pushes the drawer shut — one push, about a second; camera RV sway — the virtual camera breathes in place, never travels. In close on the open drawer, her hand pushes the drawer front once and the drawer slides shut until it jams on the stuffed sleeves and bottles inside, a sleeve cuff caught over its edge; the hand rests on the drawer front; the drawer, the cabinets and the counter stay exactly as in the frame; nobody speaks, nobody is in frame but the hand. Stylized 3D animation, exactly on model from the frame, every object rigid. No camera travel; nobody else; no cut; nothing new appears.",
+ "regens": 1,
  "shot": "eye · front · clean · CU",
  "stage": "broll",
- "status": "review",
+ "status": "use",
  "title": "low — the heap, pushed to the far edge (user 2026-10-01: three B-rolls)",
- "updatedAt": 1790887363975,
+ "updatedAt": 1790888187019,
+ "videoAsset": "304e6a34313878be74fb791122a1c68e",
+ "videoAt": 1790887363975,
+ "videoConnector": "Kling",
+ "videoJob": "AdKfNzMqSWRQZVvIp18NSR5gHYJyzcSP-L4mhBzeZIC58bJktLyGUHHomgcnptiTL2iCpYMD",
+ "videoRes": "1072×1928",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/5dda3115-8e29-4979-adf1-a2d8ed90b67a-6fn1k1q-TRbPmUjZ-OfDBA-output.mp4?x-kcdn-pid=112372",
  "videoVersions": [
   {
-   "v": 1,
    "asset": "304e6a34313878be74fb791122a1c68e",
    "at": 1790887363975,
    "connector": "Kling",
@@ -213,22 +223,12 @@
    "fromImage": 7,
    "job": "AdKfNzMqSWRQZVvIp18NSR5gHYJyzcSP-L4mhBzeZIC58bJktLyGUHHomgcnptiTL2iCpYMD",
    "model": "kling-video-v3_0",
+   "note": "from the picked image v7 A (job cebeeb02) · what I see: her hand reaches to the drawer front but the drawer stays open — the push never lands — and the view widens a little at the end; nobody in frame but the hand",
    "res": "1072×1928",
    "size": 3585187,
    "type": "video/mp4",
    "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/5dda3115-8e29-4979-adf1-a2d8ed90b67a-6fn1k1q-TRbPmUjZ-OfDBA-output.mp4?x-kcdn-pid=112372",
-   "note": "from the picked image v7 A (job cebeeb02) · what I see: her hand reaches to the drawer front but the drawer stays open — the push never lands — and the view widens a little at the end; nobody in frame but the hand"
+   "v": 1
   }
- ],
- "prompt": "For the line \"Nothing worked. Nothing lasted.\": From this frame: her hand pushes the drawer shut — one push, about a second; camera RV sway — the virtual camera breathes in place, never travels. In close on the open drawer, her hand pushes the drawer front once and the drawer slides shut until it jams on the stuffed sleeves and bottles inside, a sleeve cuff caught over its edge; the hand rests on the drawer front; the drawer, the cabinets and the counter stay exactly as in the frame; nobody speaks, nobody is in frame but the hand. Stylized 3D animation, exactly on model from the frame, every object rigid. No camera travel; nobody else; no cut; nothing new appears.",
- "regens": 1,
- "videoAsset": "304e6a34313878be74fb791122a1c68e",
- "videoType": "video/mp4",
- "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/5dda3115-8e29-4979-adf1-a2d8ed90b67a-6fn1k1q-TRbPmUjZ-OfDBA-output.mp4?x-kcdn-pid=112372",
- "videoJob": "AdKfNzMqSWRQZVvIp18NSR5gHYJyzcSP-L4mhBzeZIC58bJktLyGUHHomgcnptiTL2iCpYMD",
- "credits": 24,
- "videoAt": 1790887363975,
- "videoRes": "1072×1928",
- "videoConnector": "Kling",
- "model": "kling-video-v3_0"
+ ]
 }
