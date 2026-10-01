@@ -114,34 +114,34 @@ R("P-05c", A, (18, 18), "life", "low — her face, sat back (user 2026-10-01: th
 
 # ---------------- Act 2 — the turn (44.0–64.4 s), the wedding, N-D2
 A = "Act 2"
-R("T-01a", A, (19, 19), "married", "turn", "one-off bride + guests", "L-RECEPTION", "N-D2",
-  "MEDIUM: the bride in white laughing with guests at a reception table, string lights overhead",
-  "the bride throws her head back laughing", "one laugh, about two seconds", "none", "absent", "—",
-  "eye", TQ, "clean", "MEDIUM", "", "eyes", "deep", *REC, "evening", "turn: warm party light", True, "MUS-TURN", ledger="VN05")
+R("T-01a", A, (19, 19), "married", "turn", "N + one-off bride", "L-RECEPTION", "N-D2",
+  "MEDIUM: the bride in white hugging N (burgundy dress) at the edge of the dance floor, string lights overhead, both smiling with eyes closed (user 2026-10-01: new images, new wardrobe)",
+  "the two of them sway once in the hug", "one slow sway, about two seconds", "none", "absent", "—",
+  "eye", TQ, "clean", "MEDIUM", "eye level, close on the hug = her grandbaby, her day", "eyes", "deep", *REC, "evening", "turn: warm party light", True, "MUS-TURN", ledger="VN05")
 R("T-01b", A, (20, 21), "Loretta", "turn", "C1", "L-RECEPTION", "N-D2",
-  "MCU: Loretta at the edge of the dance floor in her satin dress, clapping on the beat, a big laugh",
-  "two claps on the beat", "about a second", "hands: one movement", "absent", "—",
+  "MCU: Loretta on the dance floor in her fuchsia satin dress, both hands up waving to the beat, a big closed-mouth grin",
+  "her raised hands wave once on the beat", "one wave, about a second", "hands: one movement", "absent", "—",
   "low", TQ, "clean", "MCU", "low = she's the one with the strength", "eyes", "deep", *REC, "evening", "turn: warm party light", True, "MUS-TURN", ledger="VN05")
 R("T-02a", A, (22, 22), "floor", "turn", "C1 + one-off guests", "L-RECEPTION", "N-D2",
-  "WIDE: a line of guests doing a line dance, Loretta in the middle of the line, stepping in time",
+  "WIDE from high: the line dance seen from above the tables, Loretta in fuchsia in the middle of the line, stepping in time",
   "one side step with the line", "one step per beat, about a second", "dancing: wide, side step, camera still", "worn (under her dress, hidden)", "HIDDEN",
-  "eye", FR, "through", "WIDE", "through the guests = we're watching from our table", "deep", "deep", *REC, "evening", "turn: warm party light", False, "MUS-TURN", ledger="VN05")
+  "high", FR, "clean", "WIDE", "high over the floor = the whole line moving as one, her in the middle of it", "deep", "deep", *REC, "evening", "turn: warm party light", False, "MUS-TURN", ledger="VN05")
 R("T-02b", A, (23, 23), "Slide", "turn", "C1 feet + line", "L-RECEPTION", "N-D2",
-  "CU at floor level: a row of dancing feet on the parquet, Loretta's white slip-ons among them, stepping together",
-  "one step back in unison", "one step, about a second", "feet only, one step", "absent", "—",
-  "ground", FR, "clean", "CU", "ground = the steps", "foreground", "medium", *REC, "evening", "turn: warm party light", False, "MUS-TURN", ledger="VN05")
+  "CU at floor level from the side: the line's feet in profile on the parquet, Loretta's white slip-ons under a fuchsia hem, stepping together",
+  "one step forward in unison", "one step, about a second", "feet only, one step", "absent", "—",
+  "ground", PR, "clean", "CU", "ground from the side = the step reads as a step", "foreground", "medium", *REC, "evening", "turn: warm party light", False, "MUS-TURN", ledger="VN05")
 R("T-03a", A, (24, 24), "bone", "mechanism — the worn joint", "—", "—", "—",
-  "ANAT-A: a knee in the anatomical register, the worn joint surfaces touching, glowing red where bone meets bone",
+  "ANAT-A: S2 X-ray of both knees front-on, the worn joint surfaces touching, glowing red where bone meets bone",
   "the red pulses once", "one pulse, about a second", "none", "absent", "—",
-  "eye", PR, "clean", "CU", "profile shows the joint gap gone", "deep", "deep", *ANAT, "—", "mechanism", False, "MUS-TURN", eg="EG04", camera=R4, mx=15)
+  "eye", FR, "clean", "CU", "front-on shows both knees and the gap gone on each side of the joint", "deep", "deep", *ANAT, "—", "mechanism", False, "MUS-TURN", eg="EG04", camera=R4, mx=15)
 R("T-04a", A, (25, 25), "mine", "turn — her doubt", "N + C1 (far)", "L-RECEPTION", "N-D2",
-  "MEDIUM: N seated at a reception table in her lavender dress, watching Loretta dance across the room, a hand resting on her own right knee under the table edge",
+  "MEDIUM over her shoulder: N seated alone at a reception table in her burgundy dress, Loretta in fuchsia dancing in focus beyond, N's hand resting on her own right knee",
   "she looks from the dance floor down to her knee", "one look down, about two seconds", "none", "absent", "—",
-  "high", TQ, "through", "MEDIUM", "high, through the chairs = she's small and sitting it out", "eyes", "deep", *REC, "evening", "turn: warm party light", True, "MUS-TURN")
+  "eye", OT, "through", "MEDIUM", "over her shoulder = we see what she sees, the dance she sits out", "eyes", "deep", *REC, "evening", "turn: warm party light", True, "MUS-TURN")
 R("T-04b", A, (26, 26), "fixing", "turn — her doubt", "N hand", "L-RECEPTION", "N-D2",
-  "CU under the table edge: N's hand rubbing her right knee through the lavender dress, the parquet and dancing feet soft beyond",
+  "CU under the table edge, front-on: N's hand rubbing her right knee through the burgundy dress, the parquet and dancing feet soft beyond",
   "her hand rubs the knee once", "one slow rub, about two seconds", "hands: one movement", "absent", "—",
-  "low", PR, "clean", "CU", "low = under the table, the thing she hides", "hands", "medium", *REC, "evening", "turn: warm party light", False, "MUS-TURN")
+  "low", FR, "clean", "CU", "low = under the table, the thing she hides", "hands", "medium", *REC, "evening", "turn: warm party light", False, "MUS-TURN")
 
 # ---------------- Act 3 — the reveal + payoff (65.0–106.6 s), Loretta's visit, N-D3
 A = "Act 3"

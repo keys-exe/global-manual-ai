@@ -462,3 +462,29 @@ Waiting on: a pick on P-01b v15/v16; Confirm or Fix on the clip P-03a v7.
 - Balances: Higgsfield 7563.15 · Kling 39629.
 
 Waiting on: Confirm or Fix on the P-01b clip v5; picks or Fix notes on the seven Act 2 pairs (T-01a, T-01b, T-02a, T-02b, T-03a, T-04a, T-04b).
+
+## 2026-10-01 — "I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO" (21:45–22:00 UTC): Act 2 redone
+
+- **New N-D2 wardrobe** (wardrobe map in `STEP4_5.md`, `docs/wardrobe` v3 on Current + Plan): N in a **burgundy chiffon dress to mid-calf with flutter sleeves, gold hoop earrings, low gold heels** (was lavender chiffon, pearl studs); Loretta in a **fuchsia satin dress to the knee, white slip-on sneakers** (was royal-blue satin). Emerald was not used: it is N's church dress (N-D4), and §14A keeps every day's dress different.
+- **New pictures** on all seven rows (`work/actmap.py`; `angles.py` PASS; `docs/actmap` v28 on Current + Plan):
+  - T-01a: the bride hugs N at the edge of the floor, eye level.
+  - T-01b: Loretta waves both hands overhead, from low.
+  - T-02a: the line dance seen from high above the tables.
+  - T-02b: the feet from the side at floor level.
+  - T-03a: the S2 X-ray, now front-on on both knees.
+  - T-04a: over N's shoulder to Loretta dancing.
+  - T-04b: N's hand on her knee, front-on under the table.
+- The act map's Act 8 cut order and Flags section on the board were re-synced from `STEP4_5.md`. The board held a stale 61-beat cut order.
+- **The 14 new renders** come from `body2/build_act2.py`, written as `body2/T-*.v3.prompt.txt` / `.preflight.json`. All 7 prompts PASS. Each pair is v3 A / v4 B on Higgsfield `nano_banana_pro` (logged `nano_banana_2`, 2k, 9:16).
+  - The sheets go in for the face and hair only, per HT26. Each prompt names the sheet's clothes as not worn: N's mustard top and denim skirt, Loretta's teal blouse and khaki shorts.
+  - All 14 are To check, with `imagePair [3,4]`.
+- What I see:
+  - The wardrobe is right on all seven.
+  - **T-01b A** has a stray guest's back at the left edge. B is clean.
+  - **T-02a A** has six dancers, B has seven.
+  - No Fix note is broken. There were no Fix notes on Act 2.
+- The replaced v1/v2 pairs are on **Old 2**: the 14 files were copied server-side, and Old 2 now has docs for T-01a…T-04b. On Current they are marked `archived`, and their files are deleted from Current.
+  - T-01a and T-04b had been confirmed (A). The user's ask replaces them, so they are back To check.
+- Balances: Higgsfield 7523.15 · Kling 39629.
+
+Waiting on: picks or Fix notes on the seven Act 2 pairs (v3/v4). Confirm or Fix on the P-01b clip v5.

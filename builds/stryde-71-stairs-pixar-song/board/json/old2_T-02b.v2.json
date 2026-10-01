@@ -1,0 +1,79 @@
+{
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Act 2",
+ "stage": "broll",
+ "beat": "T-02b",
+ "title": "turn",
+ "line": "Electric Slide, Cupid Shuffle, all of it.",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "location": "L-RECEPTION",
+ "storyDay": "N-D2",
+ "section": "The turn — MUS-TURN",
+ "key": "Slide",
+ "imageVersions": [
+  {
+   "asset": "35cfdb7dff3be5a34bcd04c82d6fffba",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "ecf744f1-2c4e-4301-b419-bd7acab70760",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: a row of feet on the parquet — Loretta's white slip-ons under the royal-blue hem among dress shoes and heels · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" (new N-D2 wardrobe, new pictures); kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_ecf744f1-2c4e-4301-b419-bd7acab70760.png",
+   "v": 1
+  },
+  {
+   "asset": "ca1bca919995a6873e7d6fda8bfd2f85",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "95b6b9ab-1ac3-470d-8988-745f8d15cf0a",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: a row of feet on the parquet — Loretta's white slip-ons under the royal-blue hem among dress shoes and heels · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" (new N-D2 wardrobe, new pictures); kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214016_95b6b9ab-1ac3-470d-8988-745f8d15cf0a.png",
+   "v": 2
+  }
+ ],
+ "imageAsset": "ca1bca919995a6873e7d6fda8bfd2f85",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214016_95b6b9ab-1ac3-470d-8988-745f8d15cf0a.png",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePrompt": "For the line \"Electric Slide, Cupid Shuffle, all of it.\": Keep this photo exactly as it is — the parquet dance floor, the evening light of the string lights — in close at floor level on the dance floor, a tall 9:16 crop, and add the feet. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nClose-up at floor level, front-on, sharp on the shoes: a row of dancers' feet on the parquet, all facing the lens, stepping back together in unison — black dress shoes, silver heels, and in the middle a pair of white slip-on sneakers under the hem of a royal-blue satin dress, brown ankles; legs from the knee down, every foot whole and flat on the floor. Scale true to the set: the dress hem comes up to her knee.\nIn frame: the row of feet, the parquet, the lights soft behind; nothing else on the floor.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Shoes and dress plain — no lettering, logos or labels.",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageAt": 1790890992104,
+ "imageStatus": "regenerate",
+ "status": "regenerate",
+ "updatedAt": 1790891943025
+}

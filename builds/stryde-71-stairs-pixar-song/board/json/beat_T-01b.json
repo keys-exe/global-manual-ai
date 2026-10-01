@@ -1,133 +1,48 @@
 {
- "build": "stryde-71-stairs-pixar-song",
  "act": "Act 2",
- "stage": "broll",
+ "angle": "low · three-quarter · clean · MCU — low = she's the one with the strength",
+ "bars": 1,
  "beat": "T-01b",
- "title": "turn",
- "line": "My cousin Loretta was there. She's seventy-four,",
- "status": "ready",
+ "build": "stryde-71-stairs-pixar-song",
+ "duration": 5,
+ "eg": "",
  "flow": [
   "image",
   "video"
  ],
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "duration": 5,
- "songIn": 45.41,
- "songOut": 48.66,
- "onScreen": 3.25,
- "section": "The turn — MUS-TURN",
- "bars": 1.0,
- "key": "Loretta",
- "location": "L-RECEPTION",
- "storyDay": "N-D2",
- "framing": "MCU: Loretta at the edge of the dance floor in her satin dress, clapping on the beat, a big laugh",
- "motionPlan": "From this frame: two claps on the beat — about a second; camera RV sway — the virtual camera breathes in place, never travels",
- "staging": "hands: one movement",
- "pinEnd": "no",
- "angle": "low · three-quarter · clean · MCU — low = she's the one with the strength",
  "focus": "eyes · deep",
- "light": "warm string lights and chandeliers · key R · evening · turn: warm party light · 3200K",
- "product": "absent · —",
- "layout": "full",
- "eg": "",
- "music": "MUS-TURN",
- "ledger": "VN05",
- "updatedAt": 1790890992104,
- "imageVersions": [
-  {
-   "v": 1,
-   "pair": "A",
-   "asset": "7be97d68969775f42466ba68870142ba",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_721f6c64-afa0-426d-99ba-99cc16250afc.png",
-   "job": "721f6c64-afa0-426d-99ba-99cc16250afc",
-   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "at": 1790890992104,
-   "refs": [
-    {
-     "label": "P3-RECEPTION plate (confirmed)",
-     "kind": "location",
-     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
-    },
-    {
-     "label": "C1-LORETTA sheet v2 (confirmed)",
-     "kind": "character",
-     "ref": "stryde-71-stairs-pixar-song__C1-LORETTA"
-    },
-    {
-     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
-     "kind": "style",
-     "ref": "stryde-71-stairs-pixar-song__P-05c"
-    }
-   ],
-   "note": "first pair · what I see: Loretta in royal-blue satin clapping at chest height, silver bob, a closed-mouth grin, the dance floor behind — A and B close variants"
-  },
-  {
-   "v": 2,
-   "pair": "B",
-   "asset": "4f5c5614dae25e0bf08101c25aca8068",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214016_d6f413d0-c55a-496f-9efe-d8f3734063a5.png",
-   "job": "d6f413d0-c55a-496f-9efe-d8f3734063a5",
-   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "at": 1790890992104,
-   "refs": [
-    {
-     "label": "P3-RECEPTION plate (confirmed)",
-     "kind": "location",
-     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
-    },
-    {
-     "label": "C1-LORETTA sheet v2 (confirmed)",
-     "kind": "character",
-     "ref": "stryde-71-stairs-pixar-song__C1-LORETTA"
-    },
-    {
-     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
-     "kind": "style",
-     "ref": "stryde-71-stairs-pixar-song__P-05c"
-    }
-   ],
-   "note": "first pair · what I see: Loretta in royal-blue satin clapping at chest height, silver bob, a closed-mouth grin, the dance floor behind — A and B close variants"
-  }
- ],
- "imagePair": [
-  1,
-  2
- ],
- "imageStatus": "review",
- "imageAsset": "7be97d68969775f42466ba68870142ba",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_721f6c64-afa0-426d-99ba-99cc16250afc.png",
- "imageJob": "721f6c64-afa0-426d-99ba-99cc16250afc",
+ "framing": "MCU: Loretta on the dance floor in her fuchsia satin dress, both hands up waving to the beat, a big closed-mouth grin",
+ "imageAsset": "c0edb855f84f45291cea7f33e4a1b24e",
+ "imageAt": 1790891943025,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageRes": "1536×2752",
- "imageAt": 1790890992104,
- "imagePrompt": "For the line \"My cousin Loretta was there. She's seventy-four,\": Keep this photo exactly as it is — the hall, the parquet dance floor, the string lights and chandeliers, the evening light — at the edge of the dance floor, a tall 9:16 crop, and add the woman. Image 1 is the hall. Image 2 is the woman. Image 3 is the style — the same render, materials, light and proportions.\nMedium close-up from low, sharp on her face: the same woman as Image 2, seventy-four, her silver bob as in Image 2, in a royal-blue satin dress to the knee, in three-quarter view facing frame right toward the dancers, clapping on the beat, both hands meeting at chest height, four chunky fingers and a thumb on each, a big closed-mouth grin, eyes on the dance floor. Scale true to the set: the chair backs behind her come up to her hip.\nIn frame: the woman from the waist up, the dance floor and lights of Image 1 soft behind her; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Dress and decor plain — no lettering, logos or labels.",
+ "imageJob": "83cdaecf-f772-4501-8f6c-1a725ed4d7b1",
  "imageMatch": "plate",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  3,
+  4
+ ],
+ "imagePrompt": "For the line \"My cousin Loretta was there. She's seventy-four,\": Keep this photo exactly as it is — the hall, the parquet dance floor, the string lights and chandeliers, the evening light — out on the dance floor, a tall 9:16 crop, and add the woman. Image 1 is the hall. Image 2 is the woman — her face and silver bob only. Image 3 is the style — the same render, materials, light and proportions.\nMedium close-up from low, sharp on her face: the same woman as Image 2, seventy-four, in a fuchsia satin dress to the knee, in three-quarter view facing frame left, both arms raised above her head, hands open and waving to the beat, four chunky fingers and a thumb on each, a big grin with lips closed, looking at the dancers beside her. Scale true to the set: the chandelier behind her is no bigger than her head.\nIn frame: the woman from the waist up, her raised hands, the string lights of Image 1 soft behind her; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Dress and decor plain — no lettering, logos or labels; not the teal blouse or khaki shorts of Image 2.",
  "imageRefs": [
   {
-   "label": "P3-RECEPTION plate (confirmed)",
    "kind": "location",
+   "label": "P3-RECEPTION plate (confirmed)",
    "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
   },
   {
-   "label": "C1-LORETTA sheet v2 (confirmed)",
    "kind": "character",
+   "label": "C1-LORETTA sheet v2 (confirmed) — face and hair only (HT26)",
    "ref": "stryde-71-stairs-pixar-song__C1-LORETTA"
   },
   {
-   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
    "kind": "style",
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
    "ref": "stryde-71-stairs-pixar-song__P-05c"
   }
  ],
+ "imageRes": "1536×2752",
+ "imageStatus": "review",
  "imageTaste": [
   "HT03",
   "HT04",
@@ -139,6 +54,163 @@
   "HT25",
   "FP13",
   "FP14",
-  "FP17"
- ]
+  "FP17",
+  "HT26"
+ ],
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_83cdaecf-f772-4501-8f6c-1a725ed4d7b1.png",
+ "imageVersions": [
+  {
+   "asset": "7be97d68969775f42466ba68870142ba",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "721f6c64-afa0-426d-99ba-99cc16250afc",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: Loretta in royal-blue satin clapping at chest height, silver bob, a closed-mouth grin, the dance floor behind — A and B close variants · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "character",
+     "label": "C1-LORETTA sheet v2 (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__C1-LORETTA"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_721f6c64-afa0-426d-99ba-99cc16250afc.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "195dbd92fd110229b8f0f96654cb93c2",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "asset": "4f5c5614dae25e0bf08101c25aca8068",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "d6f413d0-c55a-496f-9efe-d8f3734063a5",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: Loretta in royal-blue satin clapping at chest height, silver bob, a closed-mouth grin, the dance floor behind — A and B close variants · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "character",
+     "label": "C1-LORETTA sheet v2 (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__C1-LORETTA"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214016_d6f413d0-c55a-496f-9efe-d8f3734063a5.png",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "cdcb62f98511097fed38e8c2ba676e2c",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "c0edb855f84f45291cea7f33e4a1b24e",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_83cdaecf-f772-4501-8f6c-1a725ed4d7b1.png",
+   "job": "83cdaecf-f772-4501-8f6c-1a725ed4d7b1",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7346153,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "character",
+     "label": "C1-LORETTA sheet v2 (confirmed) — face and hair only (HT26)",
+     "ref": "stryde-71-stairs-pixar-song__C1-LORETTA"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: Loretta in fuchsia satin, silver bob, both hands up waving, a closed-mouth grin, the chandelier behind — A has a stray guest's back at the left edge; B clean"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "1284d3fa830f768f08171f62749a7fb9",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_72334911-7619-4138-929e-9dbf479c2b95.png",
+   "job": "72334911-7619-4138-929e-9dbf479c2b95",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7276336,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "character",
+     "label": "C1-LORETTA sheet v2 (confirmed) — face and hair only (HT26)",
+     "ref": "stryde-71-stairs-pixar-song__C1-LORETTA"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: Loretta in fuchsia satin, silver bob, both hands up waving, a closed-mouth grin, the chandelier behind — A has a stray guest's back at the left edge; B clean"
+  }
+ ],
+ "key": "Loretta",
+ "layout": "full",
+ "ledger": "VN05",
+ "light": "warm string lights and chandeliers · key R · evening · turn: warm party light · 3200K",
+ "line": "My cousin Loretta was there. She's seventy-four,",
+ "location": "L-RECEPTION",
+ "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "motionPlan": "From this frame: her raised hands wave once on the beat — one wave, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "music": "MUS-TURN",
+ "onScreen": 3.25,
+ "pinEnd": "no",
+ "product": "absent · —",
+ "section": "The turn — MUS-TURN",
+ "songIn": 45.41,
+ "songOut": 48.66,
+ "stage": "broll",
+ "staging": "hands: one movement",
+ "status": "ready",
+ "storyDay": "N-D2",
+ "title": "turn",
+ "updatedAt": 1790891943025,
+ "imageParts": []
 }
