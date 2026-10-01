@@ -1,0 +1,72 @@
+{
+ "videoVersions": [
+  {
+   "asset": "f3acafbf69d13a7f074028f7b4bb9927",
+   "at": 1790860629241,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "job": "AeINI6H83Mif1Uu-CSW_n6OIv5VRfNgGeM42Em_3YIOoiOmdZWpRPD-U5n8FuUg4z919Hftu",
+   "model": "kling-video-v3_0",
+   "note": "",
+   "res": "1072×1928",
+   "size": 5728454,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/89c7bf2b-9e52-49ec-b6b6-cb0121792d3e-S_LIAPjXX8sjd8nEjx3gKg-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  },
+  {
+   "asset": "864a6b7f62d4344b7db33a54d5db95ff",
+   "at": 1790868925077,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "job": "AYcOB6HuBNTSApKpCKTvA6fF2xWIV09Lr6tjJxHPNgaz9NJ1eZLLhPOGc3Nh54fzko2_PRQO",
+   "model": "kling-video-v3_0",
+   "note": "from image v3 A — the re-angled pick (clip v1 was from image v1 A)",
+   "res": "1072×1928",
+   "size": 4622776,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/6f14f08b-04e7-4d10-8bad-79d2ccd87f52-PHtD7iepuOMevEXxp4jRpQ-output.mp4?x-kcdn-pid=112372",
+   "v": 2
+  },
+  {
+   "v": 3,
+   "asset": "24c90a399edd1f211de4eeb6825f643e",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/9473a347-39aa-4aeb-ae85-2949ddb856ed-auCwi2Ci9r9v8B84jPMpdg-output.mp4?x-kcdn-pid=112372",
+   "job": "AUMNp66NrklEZrMPUQB375X-MU11jpTc6d2RZR9t3Gxd5lKi-qETTMe453pMkTxFzhx71vOv",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 64,
+   "size": 7025711,
+   "duration": 8.04,
+   "res": "1072×1928",
+   "at": 1790877000000,
+   "note": "from the confirmed image v13 A (the plaza, her back to the lens) — the one hook B-roll for lines 1–2; clips v1/v2 were from the home-stairs frames",
+   "fromImage": 13
+  }
+ ],
+ "videoAsset": "24c90a399edd1f211de4eeb6825f643e",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/9473a347-39aa-4aeb-ae85-2949ddb856ed-auCwi2Ci9r9v8B84jPMpdg-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AUMNp66NrklEZrMPUQB375X-MU11jpTc6d2RZR9t3Gxd5lKi-qETTMe453pMkTxFzhx71vOv",
+ "videoConnector": "Kling",
+ "model": "kling-video-v3_0",
+ "credits": 64,
+ "duration": 8.04,
+ "videoRes": "1072×1928",
+ "videoAt": 1790877000000,
+ "prompt": "For the line \"I'm seventy-one, and I take the stairs faster than women half my age.\": From this frame: three quick steps up, N pulling away; the two women behind her climb slowly and fall further back — one step per second for N, half that for the women; camera RV sway — the virtual camera breathes in place, never travels. Seen from the foot of the flight, the older woman in the green dress and hat climbs three steps, one per second, hands free and clear of the rails, her head up toward the doors; the two younger women below her take one slow step each, the gap between them and her widening. The viewpoint stays at the foot; the flight, the rails and the doors stay exactly as in the frame. Stylized 3D animation, all three exactly on model from the frame, the green hem swinging with each step. No camera travel; no fourth person; no cut; nobody turns to the lens.",
+ "videoPreflight": "PASS",
+ "status": "review",
+ "fault": null,
+ "videoNote": "from the confirmed image v13 A (the plaza, her back to the lens) — the one hook B-roll for lines 1–2; clips v1/v2 were from the home-stairs frames",
+ "videoOut": {
+  "__delete__": true
+ },
+ "videoOutV": {
+  "__delete__": true
+ },
+ "updatedAt": 1790877000000
+}

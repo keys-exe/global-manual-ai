@@ -23,6 +23,9 @@ ROWS.json is a list of shot/beat rows in cut order (talking heads may be include
               "rack": null | {"from": "...", "to": "...", "cue": "the word or moment", "kind": "pull" | "tap"},
               "moving_subject": false},               # the subject travels toward or away from the lens
     "story_day": 2,
+    "anat": {"style": "S1".."S7", "why": "...", "move": "orbit-left" | "orbit-right" | "push-in" | "pull-back"
+             | "rise" | "tilt" | "locked"},           # anatomy / mechanism rows (type MECH or kind anatomy|mechanism)
+    "pair_of": null,                                  # second row of a matched problem -> relief pair
     "face": true,                                     # a face is a subject of the shot
     "light": {"source": "kitchen window, east wall", "key_side": "L" | "R" | "back" | "front",
               "time": "morning" | "midday" | "afternoon" | "evening" | "night",
@@ -48,6 +51,10 @@ Checks (any FAIL → exit 1):
   LIGHT    (§30K) missing light; missing or implausible kelvin (1800–10000K); two white balances for one
            source inside one scene or act group; a flat frontal key on a face; a backlit face with no `why` (never while speaking in
            Mode 1); no light state for the act; time going backwards inside a story day
+  ANAT     (§12A-1, V7.81.0) the anatomy / mechanism rows as their own sequence: every one has a style (S1-S7) and a
+           move; 3-5 rows use >= 2 styles, 6+ use >= 3; no style on over half (4+), never one style three in a row;
+           no two in a row with the same style, height, side and scale; any four in a row have >= 3 setups; the low
+           three-quarter on at most a third (3+); no move three in a row, none on over half (4+). pair_of exempts.
 Talking heads (TH), POV and CCTV rows are seed- or mount-locked and skipped (§30A rules 6–7, §22E).
 """
 import argparse, json, sys
@@ -236,6 +243,54 @@ def main():
         if len(rs) >= 4 and len({r.get("height") for r in rs}) == 1:
             fail("HEIGHT", [g], f"all {len(rs)} shots at {rs[0].get('height')}")
 
+    # ANAT (§12A-1, V7.81.0): the anatomy / mechanism beats as their own run — spread among lifestyle
+    # shots, one repeated anatomy look passes every act-level check
+    STYLES = {f"S{n}" for n in range(1, 8)}
+    MOVES = {"orbit-left", "orbit-right", "push-in", "pull-back", "rise", "tilt", "locked"}
+    an = [r for r in rows if r.get("type") == "MECH" or r.get("kind") in ("anatomy", "mechanism") or r.get("anat")]
+    for r in an:
+        A = r.get("anat") or {}
+        if A.get("style") not in STYLES:
+            fail("ANAT", [r.get("beat")], f"no anatomy style (S1-S7), has {A.get('style')!r}")
+        if A.get("move") not in MOVES:
+            fail("ANAT", [r.get("beat")], f"no camera move ({' · '.join(sorted(MOVES))}), has {A.get('move')!r}")
+    sty = lambda r: (r.get("anat") or {}).get("style")
+    mov = lambda r: (r.get("anat") or {}).get("move")
+    look = lambda r: (sty(r), r.get("height"), r.get("side"), r.get("scale"))
+    counted = [r for r in an if not r.get("pair_of")]          # a matched pair counts once
+    n = len(counted)
+    used = {sty(r) for r in counted if sty(r)}
+    need = 3 if n >= 6 else 2 if n >= 3 else 1
+    if len(used) < need:
+        fail("ANAT", [r["beat"] for r in counted], f"{n} anatomy beats in {len(used)} style(s) {sorted(used)} — use at least {need} (§12A-1)")
+    if n >= 4:
+        for st in used:
+            k = sum(1 for r in counted if sty(r) == st)
+            if k * 2 > n:
+                fail("ANAT", [st], f"style {st} on {k}/{n} anatomy beats — at most half")
+        for mv in {mov(r) for r in counted if mov(r)}:
+            k = sum(1 for r in counted if mov(r) == mv)
+            if k * 2 > n:
+                fail("ANAT", [mv], f"move {mv} on {k}/{n} anatomy beats — at most half")
+    if n >= 3:
+        lo = sum(1 for r in counted if r.get("height") == "low" and r.get("side") == "three-quarter")
+        if lo * 3 > n:
+            fail("ANAT", ["low/three-quarter"], f"the old default angle on {lo}/{n} anatomy beats — at most a third")
+    for i in range(1, len(counted)):
+        p, r = counted[i - 1], counted[i]
+        if look(p) == look(r):
+            fail("ANAT", [p["beat"], r["beat"]], f"same style, angle and scale back to back {look(r)}")
+        if i >= 2:
+            q = counted[i - 2]
+            if sty(q) and sty(q) == sty(p) == sty(r):
+                fail("ANAT", [q["beat"], p["beat"], r["beat"]], f"style {sty(r)} three in a row")
+            if mov(q) and mov(q) == mov(p) == mov(r):
+                fail("ANAT", [q["beat"], p["beat"], r["beat"]], f"move {mov(r)} three in a row")
+        if i >= 3:
+            w = counted[i - 3:i + 1]
+            if len({(x.get("height"), x.get("side"), x.get("scale")) for x in w}) < 3:
+                fail("ANAT", [x["beat"] for x in w], "fewer than three angles in four anatomy beats")
+
     dist = defaultdict(int)
     for r in rows:
         dist[f"{r.get('height')}/{r.get('side')}"] += 1
@@ -245,7 +300,7 @@ def main():
         for f in out:
             print(f"FAIL  {f['check']:8} {', '.join(map(str, f['beats']))}  — {f['detail']}")
         print("setups: " + ", ".join(f"{k} ×{v}" for k, v in sorted(dist.items(), key=lambda x: -x[1])))
-        print("ANGLES, SHOTS, FOCUS & LIGHT PASS" if not out else f"ANGLES, SHOTS, FOCUS & LIGHT FAIL ({len(out)})")
+        print("ANGLES, SHOTS, FOCUS, LIGHT & ANATOMY PASS" if not out else f"ANGLES, SHOTS, FOCUS, LIGHT & ANATOMY FAIL ({len(out)})")
     sys.exit(1 if out else 0)
 
 

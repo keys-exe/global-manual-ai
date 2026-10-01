@@ -124,7 +124,7 @@ a.tab{text-decoration:none}
 .frame .dur{font-family:var(--mono);font-size:10px;opacity:.7;position:relative;display:flex;justify-content:space-between;gap:4px}
 .frame .ico{position:absolute;right:8px;top:9px;width:14px;height:14px;opacity:.55}
 .tile .cap{display:flex;flex-direction:column;gap:3px;min-width:0}
-.tile .ttl{font-size:12px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile .ttl{font-size:12px;font-weight:500;line-height:1.3;white-space:normal;overflow-wrap:break-word;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
 
 .pill{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:5px;color:var(--st);background:var(--stbg);width:max-content;max-width:100%}
 .pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
@@ -278,7 +278,7 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .mc .media.filled{cursor:zoom-in}
 .mc .media:not(.filled){cursor:default}
 .media .play{position:absolute;inset:auto auto 8px 8px;width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;display:grid;place-items:center;font-size:12px;padding-left:2px}
-.viewer{position:fixed;inset:0;z-index:40;background:#0b0d12;color:#e8ebf1;display:grid;grid-template-rows:auto minmax(0,1fr) auto;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.viewer{position:fixed;inset:0;z-index:40;background:#0b0d12;color:#e8ebf1;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 .viewer .lbl{color:#7d8595}
 .viewer .btn{background:#1a1e27;border-color:#2c323e;color:#e8ebf1}
 .viewer .btn:hover{border-color:#4a5263}
@@ -286,8 +286,8 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .ico16{width:16px;height:16px;flex:none}
 .v-top{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid #1f242e}
 .v-top .grow{flex:1}
-.v-title{display:flex;flex-direction:column;gap:2px;min-width:0}
-.v-beat{font-family:var(--display);font-weight:700;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.v-title{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1 1 240px;max-width:760px}
+.v-beat{font-family:var(--display);font-weight:700;font-size:18px;line-height:1.25;white-space:normal;overflow-wrap:break-word}
 .v-tabs{display:inline-flex;background:#161a22;border:1px solid #232834;border-radius:10px;padding:3px;gap:2px}
 .v-tabs .tab{color:#9aa3b2;padding:6px 14px}
 .v-tabs .tab[aria-selected="true"]{background:#e8ebf1;color:#0b0d12}
@@ -715,6 +715,17 @@ button.ing .im{cursor:zoom-in}
 .fform{display:flex;gap:6px;flex-wrap:wrap}
 /* Final output */
 #finalView:not([hidden]){display:flex}
+.spend-list{display:flex;flex-direction:column;gap:2px}
+.spend-row{display:grid;grid-template-columns:minmax(0,1.2fr) auto auto minmax(0,auto);align-items:baseline;gap:6px 16px;padding:10px 2px;border-bottom:1px solid var(--line)}
+.spend-row:last-child{border-bottom:0}
+.spend-row .spx-c{font-weight:600;font-size:14px}
+.spend-row .spx-v{font-family:var(--display);font-weight:700;font-size:20px;text-align:right}
+.spend-row .spx-n{font-size:12px;color:var(--muted);text-align:right;white-space:nowrap}
+.spend-row .spx-l{font-size:12px;color:var(--muted);text-align:right;white-space:nowrap}
+.spend-row .spx-m{grid-column:1/-1;font-family:var(--mono);font-size:11.5px;color:var(--muted);overflow-wrap:anywhere}
+.spend-note{font-size:12px;color:var(--muted);margin-top:8px}
+#w-spend .sub{white-space:normal}
+@media (max-width:560px){.spend-row{grid-template-columns:auto auto minmax(0,1fr)}.spend-row .spx-c{grid-column:1/-1}.spend-row .spx-v{text-align:left}}
 @media (max-width:560px){.tabs{display:grid;grid-template-columns:1fr 1fr;width:100%}.tabs .tab{justify-content:center}}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:14px}
 .fc .media{width:100%;cursor:default;border-style:solid;background:var(--frame)}
@@ -852,6 +863,16 @@ function spendRows(gens){
 }
 // The connector's recorded balance on the build doc (keys matched loosely: "Kie AI" ~ "kie").
 function balanceFor(b,conn){const bal=b&&b.balances||{};const c=String(conn||"").toLowerCase().replace(/[^a-z]/g,"");for(const [k,v] of Object.entries(bal)){const kk=String(k).toLowerCase().replace(/[^a-z]/g,"");if(kk&&c&&(kk===c||kk.includes(c)||c.includes(kk))&&v!=null&&v!=="")return Number(v)}return null}
+// The whole build's credits (V7.83.0, user 2026-10-01: "on the final output it should show all the points used on every connector"):
+// a page reads only its own board, so the agent adds up every board (build_spend.py) into builds/<id>.buildSpend.
+// Falls back to this board's own renders until that is written.
+function buildSpendOf(b,gens){
+  const bs=b&&b.buildSpend;
+  if(bs&&Array.isArray(bs.connectors)&&bs.connectors.length)
+    return {whole:true,at:bs.at,boards:bs.boards,rows:bs.connectors.map(c=>({conn:c.conn,credits:Number(c.credits)||0,n:Number(c.renders)||0,models:(c.models||[]).map(m=>({model:m.model,credits:Number(m.credits)||0,n:Number(m.renders)||0}))}))};
+  const sp=spendRows(gens);
+  return {whole:false,rows:spendByConn(sp).map(t=>({...t,models:sp.filter(r=>r.conn===t.conn).map(r=>({model:r.model,credits:r.credits,n:r.n}))}))};
+}
 function spendByConn(rows){const m=new Map();for(const r of rows){const t=m.get(r.conn)||{conn:r.conn,credits:0,n:0};t.credits+=r.credits;t.n+=r.n;m.set(r.conn,t)}return [...m.values()]}
 function lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
 function lsSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
@@ -1047,7 +1068,7 @@ function renderInner(){
     <div class="kpi"><span class="k">Confirmed</span><span class="v" style="color:var(--use)">${use}</span><span class="s">Passed the image and clip checks</span></div>
     <div class="kpi"><span class="k">To check</span><span class="v" style="color:var(--review)">${review}</span><span class="s">${gen} generating now</span></div>
     <div class="kpi"><span class="k">Fixing</span><span class="v" style="color:var(--regen)">${regen}</span><span class="s">Two tries per fault, then you</span></div>
-    <div class="kpi"><span class="k">Credits spent</span>${byConn.length?`<div class="cl">${byConn.map(t=>{const left=balanceFor(b,t.conn);const models=spend.filter(r=>r.conn===t.conn).map(r=>`${r.model} ${num(r.credits)}`).join(" · ");return `<div class="cr" title="${esc(models)}"><span class="cn">${esc(t.conn)}</span><b>${num(t.credits)}</b><small>${left!=null?num(left)+" left":""}</small></div>`}).join("")}</div><span class="s">Spent on this board, every render counted</span>`:`<span class="v">0</span><span class="s">Logged on generations</span>`}</div>`;
+    ${BOARD_ROLE==="final"&&b&&b.buildSpend?`<div class="kpi"><span class="k">Credits spent · whole build</span><div class="cl">${buildSpendOf(b,gens).rows.map(t=>{const left=balanceFor(b,t.conn);return `<div class="cr" title="${esc(t.models.map(m=>m.model+" "+num(m.credits)).join(" · "))}"><span class="cn">${esc(t.conn)}</span><b>${num(t.credits)}</b><small>${left!=null?num(left)+" left":""}</small></div>`}).join("")}</div><span class="s">Every board, every render</span></div>`:`<div class="kpi"><span class="k">Credits spent</span>${byConn.length?`<div class="cl">${byConn.map(t=>{const left=balanceFor(b,t.conn);const models=spend.filter(r=>r.conn===t.conn).map(r=>`${r.model} ${num(r.credits)}`).join(" · ");return `<div class="cr" title="${esc(models)}"><span class="cn">${esc(t.conn)}</span><b>${num(t.credits)}</b><small>${left!=null?num(left)+" left":""}</small></div>`}).join("")}</div><span class="s">Spent on this board, every render counted</span>`:`<span class="v">0</span><span class="s">Logged on generations</span>`}</div>`}`;
 
   const vs=views(); if(!vs.includes(state.view)) state.view=vs[0];
   $("#eyebrow").textContent=BOARD_ROLE==="current"&&!Object.keys(boardsOf(b)).length?"AI Prompt Engineer · Generation Board":"Generation Board · "+BOARD_NAMES[BOARD_ROLE];
@@ -1206,7 +1227,7 @@ function tile(g){
       <div><div class="kind">${esc(kind)}</div><div class="beat">${esc(g.beat||"—")}</div></div>
       <div class="line">${esc(g.line||g.title||"")}</div>
       <div class="dur"><span>${esc(g.model?shortModel(g.model):"")}</span><span>${specs.join(" · ")}</span></div></button>
-    <div class="cap"><span class="ttl">${esc(g.title||g.beat||"Untitled")}</span>
+    <div class="cap"><span class="ttl" title="${esc(g.title||g.beat||"Untitled")}">${esc(g.title||g.beat||"Untitled")}</span>
       <span class="caprow">${(x=>`<span class="pill ${x.c}">${esc(x.t)}</span>`)(BOARD_ROLE==="old"?{t:"Not used",c:"s-regenerate"}:todoLabel(g))}<button class="linkbtn" type="button" data-open="${esc(g.id)}">Edit</button></span></div></div>`;
 }
 function shortModel(m){return String(m).replace("kling-video-v3_0_omni","kling 3.0 omni").replace(/_/g," ")}
@@ -1985,6 +2006,17 @@ function finalCard(x){
       <button class="btn bad" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>✎ Fix</button></div>`:""}
     <div class="mc-tools"><button class="btn small primary" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"} style="grid-column:1/-1">${I.dl} Download</button></div></article>`;
 }
+function spendWidget(b,gens){
+  const s=buildSpendOf(b,gens);
+  const when=s.at?new Date(s.at).toLocaleString(undefined,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}):"";
+  const rows=s.rows.length?`<div class="spend-list">${s.rows.map(t=>{const left=balanceFor(b,t.conn);
+    return `<div class="spend-row"><span class="spx-c">${esc(t.conn)}</span><span class="spx-v">${num(t.credits)}</span><span class="spx-n">${num(t.n)} render${t.n===1?"":"s"}</span><span class="spx-l">${left!=null?num(left)+" left":""}</span>
+      <span class="spx-m">${t.models.map(m=>`${esc(m.model)} ${num(m.credits)}`).join(" · ")}</span></div>`}).join("")}</div>`:`<div class="empty">No credits logged yet.</div>`;
+  return `<section class="widget wide" id="w-spend">
+      <div class="w-head"><span class="w-num">02</span>
+        <div class="w-title"><h2>Credits spent on this build</h2><span class="sub">${s.whole?`Every connector, every render on every board of the build${s.boards?` (${s.boards} boards)`:""}${when?` · updated ${esc(when)}`:""}`:"This board's renders only — the whole build's total appears after the next update"}</span></div></div>
+      <div class="w-body">${rows}<div class="spend-note">Each connector is its own row — credits are never added across connectors.</div></div></section>`;
+}
 function renderFinal(gens){
   const b=currentBuild(), slots=finalSlots(b,gens), film=isFilm(b);
   const done=slots.filter(x=>x.g&&stepState(x.g,"file")==="ok").length, have=slots.filter(x=>x.g&&x.g.videoAsset).length;
@@ -1994,7 +2026,7 @@ function renderFinal(gens){
       <div class="bar"><i style="width:${ok?100:x.g&&x.g.videoAsset?50:0}%;background:var(${ok?"--use":"--review"})"></i></div>
       <span class="c">${ok?"Confirmed":st==="review"?"Check it":st==="bad"?"Fixing":st==="gen"?"Cutting":"Not cut yet"}</span></button>`}).join("")}</nav>`:"";
   // redraw only when a finished video changed, so an update elsewhere on the board never resets the one being watched
-  const sig=JSON.stringify([state.faultOpen,state.readOnly,slots.map(x=>[x.key,x.label,x.g])]);
+  const sig=JSON.stringify([state.faultOpen,state.readOnly,slots.map(x=>[x.key,x.label,x.g]),b&&b.buildSpend,b&&b.balances,BOARD_ROLE==="final"?null:gens.length]);
   if(sig===state.finalSig&&$("#finalView").children.length) return;
   state.finalSig=sig;
   const fi=document.querySelector("#finalView [data-faultform] textarea"), draft=fi?fi.value:"", had=fi&&document.activeElement===fi;
@@ -2005,7 +2037,8 @@ function renderFinal(gens){
         <div class="w-actions"><button class="btn small primary" type="button" data-zip="final" data-step="file" ${have?"":"disabled"}>${I.dl} Download all</button></div></div>
       <div class="bar w-bar"><i style="width:${slots.length?done/slots.length*100:0}%;background:var(--use)"></i></div>
       <div class="w-body">${slots.length?`<div class="fgrid">${slots.map(finalCard).join("")}</div>`:
-        `<div class="empty">The finished videos appear here once the edit is done — one for each hook, each with the same body. Until then, the work in progress is on the Board and in Manual run.</div>`}</div></section>`;
+        `<div class="empty">The finished videos appear here once the edit is done — one for each hook, each with the same body. Until then, the work in progress is on the Board and in Manual run.</div>`}</div></section>
+    ${spendWidget(b,gens)}`;
   const ni=document.querySelector("#finalView [data-faultform] textarea"); if(ni&&draft){ni.value=draft;if(had) ni.focus()}
 }
 

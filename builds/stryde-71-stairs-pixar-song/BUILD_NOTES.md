@@ -214,6 +214,54 @@ F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator ne
   one frame in that relation, from the side or behind, never a POV of one of them; a comparing hook line is one B-roll with all of them in it
   (standards §34A + changelog, skill summary synced).
 
-**Waiting on:** picks (A/B) or Fix notes on HK-01a v11/v12 (the one hook B-roll), HK-02a v13/v14 and HK-03a v15/v16 (the mother's wardrobe came
-back wrong on both — a Fix is likely). Then the hook clips (HK-01a 8 s; §35A, no end frames — waived); then the body acts in order; CapCut block
-with lyric captions and the outro end card.
+- same session, ~16:30–16:45 UTC — user **"hk01 she is facing the wrong way"** (the v11 pair had N side-on across the steps). v12: her back to the
+  lens, facing up the flight to the doors, climbing away, the edge of a smile past the hat brim; the two women behind her with their backs to the
+  lens too (`hooks/HK-01a.v12.prompt.txt`, PASS 1,177 chars after two trims; `face: True` — preflight refuses a face block on a no-face call; the
+  actmap framing updated). **HK-01a v13/v14** To check (`hooks/v12_cards.py`); v11/v12 to Old (Old doc v6). Seen: A — N from behind on the 15th step,
+  head turned a little so her cheek and smile show, the two women two and four steps below her, one hand on the right rail; B — the same from a
+  touch lower, N glancing back over her left shoulder, the women closer together on the left lane. Higgsfield balance 9,190.15 (shared account).
+  Merged the default branch first (V7.80.0 arrived from another session; this build's rules unchanged).
+
+- same session, ~16:50–17:05 UTC — user **"fix those and generate the confirmed"**. Board state read: **HK-01a v13 (A) confirmed**, **HK-02a v13 (A) confirmed**
+  (their B renders v14 moved to Old — Old docs v7/v7, files deleted from Current); **HK-03a Fix "this should be the same as the hk02 location but should
+  be them talking to each other"**. No `restore` requests on the Old board.
+  **HK-03a v13** (`hooks/HK-03a.v13.prompt.txt`, PASS 1,194 chars): an image edit of the confirmed HK-02a v13 A (the church steps from the sidewalk,
+  HT17) — N stopped on the 6th step and turned back to her daughter, hand on hip, a small smile; the daughter two steps below, hand on the black rail,
+  face up, mouth open mid-word (HT24, both in frame); actmap row re-angled low/three-quarter MEDIUM from the sidewalk, `docs/actmap` v14.
+  **HK-03a v17/v18** To check (`hooks/v13_cards.py`); v15/v16 to Old (Old doc v8). Seen: both renders — the same church front and steps, N turned
+  back on the step looking down at the daughter, the daughter looking up with her mouth open; A has N's hand on her hip, B the hand lower.
+  **Clips (§35A, Kling kling-video-v3_0, 1080p, silent, one render each, no end frame — waived):** HK-01a clip **v3** from v13 A, 8 s / 64 cr
+  (`clips/HK-01a.v3.call.json`, PASS, the card's motion plan verbatim; `clips/HK-01a_v3.mp4`, 7.0 MB), HK-02a clip **v2** from v13 A, 5 s / 40 cr
+  (`clips/HK-02a.v2.call.json`, PASS; `clips/HK-02a_v2.mp4`, 8.1 MB). Both To check. Seen on the contact sheets: HK-02a — N climbs two steps toward
+  the doors hands free, the daughter follows two behind, hand on the rail, as planned. **HK-01a — N climbs the whole flight fast, reaches the top
+  and goes in through a door that opens, while the two women stay low on the steps; faster and further than the plan's three steps** (the user
+  asked for "walking faster"; their call — a Fix note can slow it). The earlier home-stairs clips stay on the cards as versions. Kling balance
+  42,739 after; Higgsfield 9,019.15.
+
+- same session, ~17:00–17:10 UTC — user "fix those": board read — **HK-01a clip v3 and HK-02a clip v2 confirmed (status use)**; **HK-03a Fix "thry should
+  be at the door already for this scene"**. v14 (`hooks/HK-03a.v14.prompt.txt`, PASS 1,190 chars): the same edit of the confirmed HK-02a v13 A, the
+  mother on the top landing in front of the white doors turned back, the daughter on the top step with her hand on the top of the rail (actmap row
+  updated, `docs/actmap` v15). **HK-03a v19/v20** To check (`hooks/v14_cards.py`); v17/v18 to Old (Old doc v9). Seen (the user checks): **both renders
+  kept the women where the source frame had them — N on the 5th–6th step, the daughter at the foot of the flight; neither is at the doors.** The
+  frame edit held the positions; if the user sends it back, the next pair is built on the empty P5 plate (the women placed at the top) rather than
+  on the HK-02a frame. Default branch merged (V7.81.0; its new `angles.py` anatomy-beat check, §12A-1, fails this build's locked act map — a system
+  update, not applied to this running build). Higgsfield balance 8,888.15.
+
+- same session, ~17:15–17:25 UTC — user "fix those" + board note on the v14 pair: **"i want a new angle they should be inside like at the door step"**.
+  v15 (`hooks/HK-03a.v15.prompt.txt`, PASS 1,197 chars after three trims): a new setup on the user's call — from inside the church's open front doorway
+  looking out, the mother on the threshold turned back to her daughter on the doorstep, hand on the rail end, mouth open mid-word, the sunlit sidewalk
+  beyond (refs P5 plate, N and C2 sheets; no plate match — nothing shows the inside; actmap row: eye · three-quarter · through · MEDIUM, `docs/actmap`
+  v16). **HK-03a v21/v22** To check (`hooks/v15_cards.py`); v19/v20 to Old (Old doc v10). Seen: both from inside the doorway, the two at the doorstep
+  turned to each other on model; A a dim vestibule with the white door leaves either side, B brighter with dark wood door frames and the street and
+  houses behind. Higgsfield balance 8,840.15.
+
+- 17:20 UTC hourly Fix check — **HK-03a Fix on the v15 pair: "make it a close up shot"**. v16 (`hooks/HK-03a.v16.prompt.txt`, PASS 1,125 chars; the first
+  draft failed §6A rule 4 "every visible hand placed" — hands stated out of frame): the same doorway setup in close, an image edit of v21 A, both
+  faces filling the frame, the mother in three-quarter profile turned back, the daughter beyond her mouth open mid-word (actmap row: eye · three-quarter
+  · through · CU, shallow; `docs/actmap` v17). **HK-03a v23/v24** To check (`hooks/v16_cards.py`); v21/v22 to Old (Old doc v11). Seen: A — the daughter
+  left in the frame facing the mother at right, the mother's profile under the hat brim, the white door leaf and the sunlit street behind; B — the
+  mother at left in profile, the daughter at right facing her, both on model. No restore requests on Old. `fix_patterns.py` re-run (73 notes): the
+  HK-03a run of notes is one beat being staged (talking → at the door → inside → close up), not a repeat across beats — no new rule. Default branch
+  merged (V7.83.0; this build's locks unchanged). Higgsfield balance 8,676.65.
+
+**Waiting on:** HK-03a v23/v24 pick. Then the HK-03a clip; then the body acts in order; CapCut block with lyric captions and the outro end card.

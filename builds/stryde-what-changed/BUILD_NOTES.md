@@ -492,3 +492,14 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Flaws reported: HK1-a2 came out front-on with red muscles and the TEXT "PATELLAR TENDINOPATHY / PAIN POINT" (needs a Fix);
   HK1-b's cartilage looks smooth and healthy, not worn, and the glow sits on the shin bone; HK1-a's front foot is cut by the frame edge.
 - The live-action v2s moved to Old 2 (appended there) and deleted from Current 2. Act map rows changed to ANAT.
+
+### 2026-10-01 — FIX round (board notes)
+- Merged the default branch (standards V7.81.0). This build keeps its V7.79 locks; the new `angles.py` ANAT style check ("0 anatomy beats in 0 styles") reads this build's act map, which has no style fields, so that FAIL is not acted on here.
+- B18b "GIVE ME DIFFERENT BROLL HERE, MAKE SURE PRODUCT IS RIGHT" → new shot (v5): knee-level front-on from the bottom stairs, Maureen walking straight onto the stairs; built as an edit of the confirmed B22a v4 on Kie nano-banana-pro. **The product came out WRONG**: the edit redrew both straps as plain black neoprene bands with a small wordmark (no shell, no peaks, no chrome slides). Her hands are also in frame, and she's on a landing, not stepping onto the bottom stair. Lesson: changing the camera angle of the approved image still makes the model redraw the strap — keep Image 1's camera and change only the feet/room. v4 image + v2 video moved to Old 2.
+- B08-BR "WRONG WOMAN, FIX THIS" (Current board) → v2, edit of v1 on Kie nano-banana-2: now the R1 back view (short white crop, slight build). Flaw: she stands with both feet planted rather than mid-stride. v1 image + video moved to Old 2.
+
+### 2026-10-01 — "CONFIRM AND FIX"
+- B08-BR image v2 confirmed on the board → clip gen 2 on Kie AI Kling (5 s, preflight PASS): she starts the walk from standing and walks away down the hall. Flaw: she covers more ground than three steps and the hall looks a touch longer by the end.
+- B18b Fix "WRONG PRODUCT AND SHOULD BE GOING DOWN TO STAIR" → v6: edit of the confirmed B22a v4 that keeps its camera, framing and both straps, changing ONLY the step (right foot down onto the stair below). The straps came through right (shells, peaks, notch, chrome slides, lowercase wordmark). Confirms the lesson: keep the approved image's camera; change only the pose/room. v5 moved to Old 2.
+- B08-BR clip gen 2 confirmed (use). B18b image v6 confirmed + "CONFIRM GO" → clip gen 3 on Kie AI Kling (5 s, preflight PASS, 18.5 MB split in two on the board). Straps hold to about 2.8 s; from about 3.1 s the strap on the left of frame twists and flips (peaks pointing down) as she keeps walking down several stairs — suggested "Use only up to here" ≈ 2.8 s.
+- B18b video Fix "FAST WALKING DOWN TO STAIR NOT STOPPING" → gen 4 prompt ready (brisk, one step per 0.8 s, no pause, straps rigid, 4 s; speed finished in the edit per §27G rule 9). Preflight holds it for the user's GO (4th generation). Card left on `regenerate`.

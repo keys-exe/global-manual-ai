@@ -48,6 +48,7 @@ Beat images (§6A, V7.70.0; first-render rules V7.74.0) — a B-roll or hook sta
     "edit_of": null | "<asset id or file of the plate / frame being edited>",   # required when match is set; the prompt opens as an edit ("Keep this photo exactly…")
     "taste": ["HT03", "FP02"],         # House Taste / product fix-pattern rules applied (§34A)
     "anatomy": false,                  # an anatomy / mechanism beat (Nano Banana)
+    "anat_style": null | "S1".."S7",   # anatomy beats: the act-map row's style (§12A-1, V7.81.0); S5 (physical model) routes as realistic
     "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = two NB Pro
     "alt_reason": null | "why nano_banana_2 runs instead of Pro (the alternative, V7.72.1)"
   }
@@ -186,6 +187,14 @@ def run_image(c):
     check("nothing named outside the frame but a body part (§6A rule 7)", not oof, oof[0].group(0) if oof else "")
     pair = [str(m).lower() for m in (c.get("pair") or [])]
     anatomy = bool(c.get("anatomy"))
+    if anatomy:   # §12A-1 (V7.81.0): a style per anatomy beat, never the glass body by habit
+        st = c.get("anat_style")
+        check("anatomy style named (S1-S7, §12A-1 V7.81.0)", st in {f"S{n}" for n in range(1, 8)}, f"anat_style {st!r}")
+        if st and st != "S1":
+            s1 = re.search(r"Premium 3D anatomical visuali[sz]ation|near-black (field|background)|glass-like (body|outer|shell)", p, re.I)
+            check(f"no S1 glass-body world on an {st} beat (§12A-1)", not s1, s1.group(0) if s1 else "")
+        if st == "S5":
+            anatomy = False   # a physical model is a Mode 1 capture: routed like realistic work
     check("A/B pair: two renders (§5)", len(pair) == 2, f"pair {pair}")
     if anatomy or mode in (2, 3, 5):
         why = "anatomy" if anatomy else f"Mode {mode}"
@@ -319,10 +328,11 @@ def run(c):
         fn = c.get("fix_note", "")
         check("gen 2 has a diagnosed fix", "→" in fn or "->" in fn, fn or "missing fix_note")
 
-    # 2. Frames — on Seedance, ingredients: information, never frames (§4, V7.68.0)
-    if conn == "seedance":
+    # 2. Frames — on Seedance, ingredients: information, never frames (§4, V7.68.0).
+    #    Wan 3.0 in ingredients mode (V7.83.1, user 2026-10-01: "use wan 3.0 prime, the ingredients and not frames") — the same rule.
+    if conn in ("seedance", "wan"):
         check("every ingredient approved", c.get("ingredients_approved") is True, "Manual: the user's Confirm on every ingredient card")
-        check("no frame in the pack", not c.get("start_image"), "a Seedance call carries no start, master or scene frame")
+        check("no frame in the pack", not c.get("start_image") and not c.get("end_image"), f"a {conn} ingredients call carries no start, end, master or scene frame")
     else:
         check("start image approved", bool(c.get("start_image")) and c.get("start_approved") is True)
     if c.get("pinned"):
@@ -337,6 +347,11 @@ def run(c):
         files = c.get("files", [])
         check("ingredients ≤ 30 files", len(files) <= 30, f"{len(files)} files")
         check("ingredient manifest present", "@image1" in p or "ING-MANIFEST" in p or "reference" in p.lower())
+    elif conn == "wan":
+        check("Wan duration 2–30, stated (never auto)", isinstance(d, (int, float)) and 2 <= d <= 30, str(d))
+        imgs = [f for f in c.get("files", []) if not MUSIC_FILE.search(str(f))]
+        check("ingredients ≤ 4 images (Appendix D)", len(imgs) <= 4, f"{len(imgs)} images")
+        check("ingredient manifest present", "@image1" in p or "Image 1" in p or "REF-MANIFEST" in p)
     elif conn == "kling":
         check("Kling duration 3–15", isinstance(d, (int, float)) and 3 <= d <= 15, str(d))
         check("prompt ≤ 2,500 chars", len(p) <= 2500, f"{len(p)} chars")
@@ -344,8 +359,8 @@ def run(c):
     else:
         check("known connector", False, conn)
 
-    # 3a. No BGM in any Seedance generation — music is laid in the edit (§24M, V7.73.3)
-    if conn == "seedance":
+    # 3a. No BGM in any Seedance (or Wan) generation — music is laid in the edit (§24M, V7.73.3)
+    if conn in ("seedance", "wan"):
         check("NEG-SOUND (no BGM on Seedance, §24M)", SIG["NEG-SOUND"] in p)
         pos = NEG_CLAUSE.sub("", p)
         mus = sorted(set(m.group(0).lower() for m in MUSIC.finditer(pos)))
