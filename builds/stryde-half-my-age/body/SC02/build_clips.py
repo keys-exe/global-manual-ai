@@ -45,6 +45,10 @@ NIGHT = ("THE SCENE SO FAR, one continuous moment: evening; the hall's glass pen
 MORNING = ("THE SCENE SO FAR, the next morning, one continuous moment: cold grey daylight, about 6500K, from the frosted landing window and the front-door glass; the lamps are off. Her, in the "
            "dressing gown of the outfit card, is coming down the stairs BACKWARDS: she faces UP the flight, looking up toward the landing, both hands holding the banister rail, and lowers herself "
            "one step down at a time behind her, both feet together on each step before the next. The hall is empty. The shopping bags are gone from the hall.")
+MORNING_SLOW = (  # SH03 v5: the user's Fix — slower, looking down at the step behind
+    "THE SCENE SO FAR, the next morning, one continuous moment: cold grey daylight, about 6500K, from the frosted landing window and the front-door glass; the lamps are off. Her, in the "
+           "dressing gown of the outfit card, is coming down the stairs BACKWARDS: she faces UP the flight, both hands holding the banister rail, looking down over her shoulder to see where she steps, and lowers herself "
+           "very slowly one step down at a time behind her, both feet together on each step before the next. The hall is empty. The shopping bags are gone from the hall.")
 KITCHEN_SC = ("THE SCENE SO FAR, the same morning, one continuous moment, DOWNSTAIRS IN THE KITCHEN: cold grey daylight, about 6500K, from the window over the sink and the small left window; "
               "the lamps are off. Her husband has been waiting in the kitchen for her with a plain white mug of tea he made for her. Her, in the dressing gown of the outfit card, has just got "
               "down the stairs and comes into the kitchen from the hall doorway. Nobody mentions the stairs.")
@@ -113,23 +117,24 @@ SHOTS.append(dict(beat="SC02-SH02", kind="dialogue", duration=4, line=L018, subj
     risks=[{"risk": "the bags change", "prevented_by": "the prop card"}, {"risk": "he climbs", "prevented_by": "feet stay at the foot, negative"},
            {"risk": "voice drifts", "prevented_by": "his voice master as Audio1"}]))
 
-SHOTS.append(dict(beat="SC02-SH03", kind="broll", duration=6, line="", vo="L019", subject_motion="travels", files=["N", "L-STAIRS", "OUT-N-B2"], audios=[], pilot=False, gen=4, go=GO_SC02B,
-    fix="User (chat): \"Six weeks ago, I was going down my stairs backwards. One step at a time. it should her looking up then stepping backwards one at a time same steps both feet, both hand on the banister\" → back to the script line (LESSONS L11): she faces UP the flight looking up, and steps DOWN backwards, both feet together on each step, both hands on the banister; the camera on the landing looking down at her so her face and the direction both read (she moves away from the camera, down). Seedance v3 had her facing forwards on an earlier note that contradicted the line",
+SHOTS.append(dict(beat="SC02-SH03", kind="broll", duration=6, line="", vo="L019", subject_motion="travels", files=["N", "L-STAIRS", "OUT-N-B2"], audios=[], pilot=False, gen=5, go=GO_SC02B,
+    fix="User Fix (board, v4): \"she should not be going down so fast and she should be looking down to know where she is stepping backwards\" → half the pace: ONE step in the whole clip, the foot feeling for it; before and during the step she looks down over her shoulder at the step behind her. Earlier — User (chat): \"Six weeks ago, I was going down my stairs backwards. One step at a time. it should her looking up then stepping backwards one at a time same steps both feet, both hand on the banister\" → back to the script line (LESSONS L11): she faces UP the flight looking up, and steps DOWN backwards, both feet together on each step, both hands on the banister; the camera on the landing looking down at her so her face and the direction both read (she moves away from the camera, down). Seedance v3 had her facing forwards on an earlier note that contradicted the line",
     prompt=" ".join([
         manifest([("@image1", SHEET("Her", HER_B2)), ("@image2", STAIRS), ("@image3", CARD_B2)]),
-        SERIES, LOOK, INHERIT, HOUSE, MORNING,
+        SERIES, LOOK, INHERIT, HOUSE, MORNING_SLOW,
         "THE SHOT: a medium shot from the landing at the top of the stairs, looking down the flight, exactly as the place reference shows it: "
-        f"Her, {HER_ID}, in {HER_B2}, stands three steps below the landing FACING UP THE STAIRS toward the camera, her face lifted, looking up past the camera toward the landing; the rest of the flight and the hall fall away below and behind her.",
-        "She goes DOWN the stairs BACKWARDS, away from the camera, one step at a time: both hands grip the banister rail beside her; she reaches one foot down behind her onto the next step down, "
-        "finds it, then brings the other foot down beside it, both feet together on the same step before the next; then the same again. About one step every three seconds, her eyes up, her jaw set. Two steps down in the clip, never faster; she never turns round.",
+        f"Her, {HER_ID}, in {HER_B2}, stands three steps below the landing FACING UP THE STAIRS toward the camera, her head turned and lowered, looking down over her shoulder at the step behind her; the rest of the flight and the hall fall away below and behind her.",
+        "She goes DOWN the stairs BACKWARDS, away from the camera, very slowly, ONE step in the whole clip: both hands grip the banister rail beside her; she turns her head and looks down over her shoulder at the step behind her, "
+        "slowly reaches one foot down behind her, feels for the edge of the step with her toe, finds it and puts her weight on it, still looking down at it; then brings the other foot down beside it, both feet together on the same step, "
+        "and stops, breathing out, her eyes still down on her feet. It takes the whole clip; she never hurries and never takes a second step; she never turns round.",
         F2, PHYS,
-        state("HER", "tired, bob and fringe in place, in the dressing gown, three steps below the landing, facing up the stairs, both hands on the banister", "she is two steps lower, still facing up"),
+        state("HER", "tired, bob and fringe in place, in the dressing gown, three steps below the landing, facing up the stairs, both hands on the banister", "she is one step lower, still facing up the stairs, looking down at her feet"),
         "FOCUS: her face and hands are in sharp focus; the hall far below her falls soft. The blur is optical: soft and round, never smeared.",
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, "no turning round, no facing down the stairs, no walking forwards, no climbing up toward the camera, no letting go of the banister with either hand, no talking, no mouth moving", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+        negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, "no turning round, no facing down the stairs, no walking forwards, no climbing up toward the camera, no second step, no hurrying, no looking up at the camera, no letting go of the banister with either hand, no talking, no mouth moving", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "she turns and walks down facing forwards", "prevented_by": "facing up the stairs toward the camera written at start and end state; turning negatives"},
            {"risk": "she climbs toward the camera instead of descending", "prevented_by": "'away from the camera, down', the foot reaching behind her, climbing negative"},
-           {"risk": "the stairs bend or her feet slide", "prevented_by": "NEG_STAIRS, one step every three seconds, both feet on each step (HT02)"},
+           {"risk": "she goes down too fast", "prevented_by": "one step in the whole clip, the foot feeling for the edge, no second step, negative"},
            {"risk": "the gown changes", "prevented_by": "the outfit card as Image3"}]))
 
 SHOTS.append(dict(beat="SC02-SH04", kind="broll", duration=4, line="", vo="L019", subject_motion="in_place", files=["N", "P-HOUSE", "OUT-N-B2"], audios=[], gen=2, go=GO_SC02B,
