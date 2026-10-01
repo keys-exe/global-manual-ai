@@ -6,16 +6,16 @@
   "image"
  ],
  "hook": 1,
- "imageAsset": "eae2fc51fe2ae6680da43246da07560c",
+ "imageAsset": "21e3c8fe2115d3f92fa1e2be16eae982",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageFault": "user 2026-10-01: \"this should be at the second floor\"",
+ "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [
-  9,
-  10
+  11,
+  12
  ],
- "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — hall, staircase, camera, light — as a tall 9:16 crop on the top four steps and the landing, with two women there. Image 1 is the hall and staircase. Image 2 is the mother. Image 3 is her daughter.\nThe same woman as Image 2 on the landing at the head of the flight, body facing along it, head turned back over her left shoulder to her daughter, a small knowing smile, mouth closed, eyes on her daughter, both hands free at her sides; emerald-green church dress to mid-calf, low black pumps. The same woman as Image 3 on the 14th and top step, right hand on the handrail, left hand on her chest, face turned up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. The two fill over half the frame's height.\nIn the frame: the two women, the top of the one staircase of Image 1 with its runner, balusters and handrail, the landing wall; every other surface bare. Two legs each.\nThe render and light of Image 1, the women on model, a catchlight in each eye.\nClothing, shoes and walls plain — no lettering, logos or labels; no third person.",
+ "imagePrompt": "For the line \"Mama, when did that happen?\": at the top of the great flight, over the mother's near shoulder, the daughter arriving on the top step below, face up to her, mouth open mid-word, the city dropping away behind her. Image 1 is the mother. Image 2 is her daughter. Image 3 is the plaza steps.\nMedium close-up from the top landing over the mother's right shoulder: the same woman as Image 1 stands on the landing back to the lens, her green shoulder and black hat brim soft in the near right foreground. The same woman as Image 2 on the 30th and top step, one step down, right hand on the steel handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers; sharp. Behind her the flight of Image 3 falls away to the plaza and the towers.\nIn the frame: the two women, the one flight, the handrails, the plaza and towers below; every other surface bare. Two hands on the daughter, two legs.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
  "imageRefs": [
   {
    "kind": "location",
@@ -39,7 +39,7 @@
  "imageRes": "1536×2752",
  "imageStatus": "regenerate",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_152342_941301bc-c5e4-4652-bead-d67e93061f2b.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_154226_90555894-9918-4cd2-8548-df38ec0d7490.png",
  "imageVersions": [
   {
    "archived": true,
@@ -200,11 +200,45 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_152342_22c7b62f-d907-4cc0-a3d4-aa4b40bd77c5.png",
    "v": 10,
    "archived": true
+  },
+  {
+   "v": 11,
+   "pair": "A",
+   "asset": "21e3c8fe2115d3f92fa1e2be16eae982",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_154226_90555894-9918-4cd2-8548-df38ec0d7490.png",
+   "job": "90555894-9918-4cd2-8548-df38ec0d7490",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 5068866,
+   "res": "1536×2752",
+   "at": 1790869517528,
+   "note": "user 2026-10-01 Fix: \"this should be at the second floor\" → the camera on the landing: an image edit of the user's confirmed HK-02a v7 (the view down the flight from the landing), the mother's shoulder in the near foreground, the daughter on the top step · A: the mother's top came back mustard (the sheet outfit), not the green dress · replaced by the plaza pair (user 2026-10-01: more powerful hooks)",
+   "archived": true,
+   "archiveAsset": "21e3c8fe2115d3f92fa1e2be16eae982"
+  },
+  {
+   "v": 12,
+   "pair": "B",
+   "asset": "dc05fd8662d57ada5685515610651ccb",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_154228_ca12e6e1-2e49-4d94-b689-ca25ab6c7884.png",
+   "job": "ca12e6e1-2e49-4d94-b689-ca25ab6c7884",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6897441,
+   "res": "1536×2752",
+   "at": 1790869517528,
+   "note": "user 2026-10-01 Fix: \"this should be at the second floor\" → the camera on the landing: an image edit of the user's confirmed HK-02a v7 (the view down the flight from the landing), the mother's shoulder in the near foreground, the daughter on the top step · replaced by the plaza pair (user 2026-10-01: more powerful hooks)",
+   "archived": true,
+   "archiveAsset": "dc05fd8662d57ada5685515610651ccb"
   }
  ],
  "line": "\"Mama, when did that happen?\"",
  "stage": "hooks",
  "status": "regenerate",
- "title": "hook — the line (edit of P0: the top of the flight, HT17) — v1–v3 pairs (replaced)",
- "updatedAt": 1790869490310
+ "title": "hook — the line — v1–v10 pairs (replaced; latest: the church / second-floor pair)",
+ "updatedAt": 1790870546611
 }

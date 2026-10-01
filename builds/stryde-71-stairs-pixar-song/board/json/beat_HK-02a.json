@@ -3,7 +3,7 @@
  "act": "Hook 1",
  "stage": "hooks",
  "beat": "HK-02a",
- "title": "hook — the witness · SH-HIGH from the landing",
+ "title": "hook — the witness · SH-HIGH from the top of the great flight",
  "line": "Last Sunday, my daughter walked behind me the whole way up and said,",
  "status": "review",
  "flow": [
@@ -19,13 +19,13 @@
  "section": "Hook — MUS-OPEN",
  "bars": 1.5,
  "key": "daughter",
- "location": "L-N-STAIRS",
+ "location": "L-PLAZA",
  "storyDay": "N-D4",
- "framing": "MEDIUM from the landing looking steeply down the flight: the daughter on the 12th step below, right hand on the rail, face turned up to the lens a little out of breath, the photo wall falling away to her left, the hall floor and front door far below",
+ "framing": "MEDIUM from the top of the flight looking steeply down: the daughter ten steps below, right hand on the steel rail, face up to the lens a little out of breath, the long flight, the crowd and the plaza falling away far below her",
  "motionPlan": "From this frame: one last step up and a look up — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: camera at the top, subject coming up, 1 step",
  "pinEnd": "no",
- "angle": "high · front · clean · MEDIUM — high = from N's place at the top: she's arrived first, her daughter is the one still climbing",
+ "angle": "high · front · clean · MEDIUM — high = from N's place at the top: she's arrived first, her daughter still climbing with the crowd",
  "focus": "eyes · medium",
  "light": "front-door sidelights, west wall · key L · afternoon · after: Sunday sun · 5600K",
  "product": "absent · —",
@@ -33,28 +33,22 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "",
- "updatedAt": 1790868925077,
+ "updatedAt": 1790870546611,
  "hook": 1,
- "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": her daughter on the 12th step below, a hand on the rail, looking up at the lens, out of breath. Image 1 is this scene's confirmed frame. Image 2 is the daughter. Image 3 is the hall and staircase.\nMedium shot from the landing, the lens above head height looking steeply down the flight, sharp on her eyes. The same woman as Image 2 on the 12th of 14 steps, weight on her right foot, the left lifting to the 13th, right hand gripping the oak handrail, left hand on her thigh, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. Past her the flight of Image 3 falls away: the photo wall at the left of frame, balusters and handrail at the right, beige runner and brass rods, the bare oak floor and the front door far below.\nIn the frame: one woman, the one staircase, the photo wall, the hall floor, the front door; every other surface bare. Two hands, two legs.\nThe render of Image 1, sun from the sidelights below, a catchlight in each eye. Clothing, shoes and walls plain — no lettering, logos or labels; no second person.",
- "imageStatus": "confirmed",
+ "imagePrompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": from the top of the great flight looking steeply down, her daughter ten steps below, right hand on the steel rail, looking up at the lens, out of breath, the crowd and the plaza far below her. Image 1 is the daughter. Image 2 is the plaza steps.\nMedium shot from the top landing, the lens high, looking down the flight, sharp on her eyes. The same woman as Image 1 on the 20th of 30 steps, mid-step, weight on her right foot, the left lifting to the next, right hand gripping the steel handrail, left hand on her thigh, lips parted, face up, both eyes up into the lens; olive-green crewneck sweatshirt, black denim shorts, white trainers. Past her the flight of Image 2 falls away to a scatter of younger people on the lower steps and the plaza at the foot.\nIn the frame: the daughter, the younger people far below, the one flight, the handrails, the plaza; every other surface bare. Two hands, two legs on her.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, a catchlight in each eye. Clothing plain — no lettering, logos or labels; nobody beside her.",
+ "imageStatus": "review",
  "imageRefs": [
   {
-   "kind": "frame",
-   "label": "HK-01a v1 A (confirmed frame)",
-   "ref": "stryde-71-stairs-pixar-song__HK-01a",
+   "label": "C2-DAUGHTER sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
    "role": "Image 1"
   },
   {
-   "kind": "character",
-   "label": "C2-DAUGHTER sheet v2",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
-   "role": "Image 2"
-  },
-  {
+   "label": "P8-PLAZA plate v1 (To check)",
    "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 3"
+   "ref": "stryde-71-stairs-pixar-song__P8-PLAZA",
+   "role": "Image 2"
   }
  ],
  "imageMatch": null,
@@ -206,26 +200,57 @@
    "v": 8,
    "archived": true,
    "archiveAsset": "2a152f66c7acd3857a84e23aebb73fca"
+  },
+  {
+   "v": 9,
+   "pair": "A",
+   "asset": "cddf0ac2f721b0dd9781e4e2eac5560a",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155624_9165a953-9350-4196-bce3-cf11cf85e768.png",
+   "job": "9165a953-9350-4196-bce3-cf11cf85e768",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7330648,
+   "res": "1536×2752",
+   "at": 1790870546611,
+   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-HIGH · MEDIUM front from the top landing, the daughter ten steps below"
+  },
+  {
+   "v": 10,
+   "pair": "B",
+   "asset": "2d3f286823b8d158efdb694572167a8b",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155625_9cfea58d-a851-45f6-bde5-2be0dd348d1b.png",
+   "job": "9cfea58d-a851-45f6-bde5-2be0dd348d1b",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6897333,
+   "res": "1536×2752",
+   "at": 1790870546611,
+   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-HIGH · MEDIUM front from the top landing, the daughter ten steps below"
   }
  ],
- "imagePair": [],
- "imageAsset": "e7a7cd34d255d219fad70fd135bfec53",
+ "imagePair": [
+  9,
+  10
+ ],
+ "imageAsset": "cddf0ac2f721b0dd9781e4e2eac5560a",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150922_1b211fc3-5e7f-4db7-8e76-94ee39f557bd.png",
- "imageJob": "1b211fc3-5e7f-4db7-8e76-94ee39f557bd",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155624_9165a953-9350-4196-bce3-cf11cf85e768.png",
+ "imageJob": "9165a953-9350-4196-bce3-cf11cf85e768",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageRes": 7520308,
- "imageAt": 1790867552722,
+ "imageRes": "1536×2752",
+ "imageAt": 1790870546611,
  "imageRegens": 3,
  "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
  "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
  "endFrame": "HK-02a-END",
- "imageFault": "user 2026-10-01: \"USE THE CINEMATIC CAMERA ANGLES CAUSE THIS HOOK IS TOO WEAK\" — re-angled (§30I; §24K shot names on the user's call), from the confirmed HK-01a frame + sheets",
- "shot": "SH-HIGH (from the landing)",
+ "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
+ "shot": "SH-HIGH · MEDIUM front from the top landing, the daughter ten steps below",
  "imageParts": [],
- "imagePick": 7,
- "imageUnused": 8,
  "videoVersions": [
   {
    "v": 1,
@@ -253,5 +278,6 @@
  "videoAt": 1790868925077,
  "regens": 0,
  "prompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": From this frame: one last step up and a look up — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels. Seen from the landing above, the daughter takes one last step up onto the 13th step, about a second, her right hand sliding up the handrail, and lifts her face fully to the lens, eyes on it, lips parted on a breath; she ends still, one step below the top. The high viewpoint stays where it is; the flight, the photo wall and the hall far below stay exactly as in the frame. Stylized 3D animation, the character exactly on model from the frame, her afro puff settling after the step. No camera travel; no second person; no cut.",
- "videoPreflight": "PASS (§35A)"
+ "videoPreflight": "PASS (§35A)",
+ "videoNote": "the home-stairs clip(s) were made from the earlier confirmed picks — kept as versions, superseded by the plaza concept; a clip from the plaza frame follows the user's pick"
 }

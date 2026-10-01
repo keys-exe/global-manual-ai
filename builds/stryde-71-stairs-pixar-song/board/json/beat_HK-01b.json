@@ -3,7 +3,7 @@
  "act": "Hook 1",
  "stage": "hooks",
  "beat": "HK-01b",
- "title": "hook — the result · SH-GROUND on the church steps",
+ "title": "hook — the result · SH-GROUND on the plaza steps",
  "line": "faster than women half my age.",
  "status": "planned",
  "flow": [
@@ -19,13 +19,13 @@
  "section": "Hook — MUS-OPEN",
  "bars": 1,
  "key": "faster",
- "location": "L-CHURCH",
+ "location": "L-PLAZA",
  "storyDay": "N-D4",
- "framing": "CU at tread level from the side on the church steps: N's low black pumps striking the next step mid-stride, the green hem swinging, two pairs of younger women's heeled sandals a step or two below, one foot still planted",
- "motionPlan": "From this frame: two steps up — one step per second; camera RV sway — the virtual camera breathes in place, never travels",
+ "framing": "CU at tread level from the side on the wide concrete steps: N's low black pumps striking the next step mid-stride, the green hem swinging past two pairs of young women's trainers stopped on the step below, one knee bent, one hand on it",
+ "motionPlan": "From this frame: two steps up past the stopped feet — one step per second; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: feet only, side",
  "pinEnd": "no",
- "angle": "ground · profile · clean · CU — ground = the steps themselves, the pace; her pumps ahead of the younger feet",
+ "angle": "ground · profile · clean · CU — ground = the steps and the pace; her pumps passing the stopped younger feet",
  "focus": "foreground · shallow",
  "light": "open sky, afternoon sun · key L · afternoon · after: Sunday sun · 5600K",
  "product": "worn (under the dress) · HIDDEN",
@@ -33,16 +33,16 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "",
- "updatedAt": 1790869411412,
+ "updatedAt": 1790870546611,
  "hook": 1,
- "imagePrompt": "For the line \"faster than women half my age.\": at tread level from the side on the church steps, an older woman's low black pump strikes the 6th of 9 concrete steps mid-stride, her green hem swinging, and a step below two pairs of younger women's heeled sandals, one foot still planted, one lifting late. Image 1 is the church steps.\nClose-up, profile, the lens at the height of the 5th step, feet and four steps filling the frame, sharp on the black pump, the lower steps soft: the pump and a deep brown ankle under the emerald hem at the left, the sandals and bare shins under lilac and cream hems at the right, the pale concrete treads of Image 1 and the foot of the black iron handrail between. All hands and faces out of frame; the feet at true scale to the steps.\nIn frame: two black pumps, four sandals, six legs below the knee, four steps of the one flight, the rail's foot; every other surface bare. Each foot whole, one foot per step.\nA final frame from a 3D animated feature film, stylized storybook render, afternoon sun from the open sky, the light of Image 1. Shoes and hems plain — no lettering, logos or labels.",
+ "imagePrompt": "For the line \"faster than women half my age.\": at tread level from the side on the wide concrete plaza steps, an older woman's low black pump strikes the next step mid-stride, her green hem swinging past two pairs of young women's white trainers stopped on the step below, one knee bent with a hand on it. Image 1 is the plaza steps.\nClose-up, profile, the lens at tread height, feet and four steps filling the frame, sharp on the black pump, the steel handrail's base soft behind: the pump and a deep brown ankle under the emerald hem at the left, the two pairs of trainers under bare shins and leggings at the right, the pale concrete treads of Image 1 between. All hands and faces out of frame but one hand on a knee; the feet at true scale to the steps.\nIn frame: two black pumps, four white trainers, six legs below the knee, one hand on a knee, four steps of the one flight, the rail's foot; every other surface bare. Each foot whole, one foot per step.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, the light of Image 1. Shoes and clothing plain — no lettering, logos or labels.",
  "imageStatus": "review",
  "imageRefs": [
   {
-   "label": "P5-CHURCH plate",
-   "role": "Image 1",
+   "label": "P8-PLAZA plate v1 (To check)",
    "kind": "location",
-   "ref": "stryde-71-stairs-pixar-song__P5-CHURCH"
+   "ref": "stryde-71-stairs-pixar-song__P8-PLAZA",
+   "role": "Image 1"
   }
  ],
  "imageMatch": null,
@@ -208,7 +208,9 @@
    "size": 6197022,
    "res": "1536×2752",
    "at": 1790869411412,
-   "note": "user 2026-10-01: \"hk01 a and b should be a different location cause its woman half her age should be outside\" — the church front steps (P5), the younger women in the frame"
+   "note": "user 2026-10-01: \"hk01 a and b should be a different location cause its woman half her age should be outside\" — the church front steps (P5), the younger women in the frame · replaced by the plaza pair (user 2026-10-01: more powerful hooks)",
+   "archived": true,
+   "archiveAsset": "f3e9e6d830dcfd3769aa24e51f123031"
   },
   {
    "v": 10,
@@ -223,27 +225,59 @@
    "size": 6236396,
    "res": "1536×2752",
    "at": 1790869411412,
-   "note": "user 2026-10-01: \"hk01 a and b should be a different location cause its woman half her age should be outside\" — the church front steps (P5), the younger women in the frame"
+   "note": "user 2026-10-01: \"hk01 a and b should be a different location cause its woman half her age should be outside\" — the church front steps (P5), the younger women in the frame · replaced by the plaza pair (user 2026-10-01: more powerful hooks)",
+   "archived": true,
+   "archiveAsset": "b355f8c7215782c7d0b2d4a6d419f26e"
+  },
+  {
+   "v": 11,
+   "pair": "A",
+   "asset": "235530cb28c1a1981beaa4fa87ba7ec5",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155623_f728fe86-7a0c-4a6f-a8ea-eb1b7829acde.png",
+   "job": "f728fe86-7a0c-4a6f-a8ea-eb1b7829acde",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6101965,
+   "res": "1536×2752",
+   "at": 1790870546611,
+   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-GROUND · CU profile at tread height, her pumps past the stopped trainers"
+  },
+  {
+   "v": 12,
+   "pair": "B",
+   "asset": "6972393110f25934e4ff4c287b1ab1e5",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155623_071d3919-f2a5-42bc-af06-a30467cde0bd.png",
+   "job": "071d3919-f2a5-42bc-af06-a30467cde0bd",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6277496,
+   "res": "1536×2752",
+   "at": 1790870546611,
+   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-GROUND · CU profile at tread height, her pumps past the stopped trainers"
   }
  ],
  "imagePair": [
-  9,
-  10
+  11,
+  12
  ],
- "imageAsset": "036d0ac3e3467550176a467b7527f69d",
+ "imageAsset": "235530cb28c1a1981beaa4fa87ba7ec5",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_153949_5979df8a-9700-4b6e-b429-2a8c3bf5a853.png",
- "imageJob": "5979df8a-9700-4b6e-b429-2a8c3bf5a853",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155623_f728fe86-7a0c-4a6f-a8ea-eb1b7829acde.png",
+ "imageJob": "f728fe86-7a0c-4a6f-a8ea-eb1b7829acde",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
- "imageAt": 1790869411412,
+ "imageAt": 1790870546611,
  "imageRegens": 4,
  "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
  "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
  "endFrame": "HK-01b-END",
- "imageFault": "user 2026-10-01: \"hk01 a and b should be a different location cause its woman half her age should be outside\" — the church front steps (P5), the younger women in the frame",
- "shot": "SH-GROUND (feet on the church steps)",
+ "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
+ "shot": "SH-GROUND · CU profile at tread height, her pumps past the stopped trainers",
  "imageParts": [],
  "videoVersions": [
   {

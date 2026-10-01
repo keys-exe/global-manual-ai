@@ -3,7 +3,7 @@
  "act": "Hook 1",
  "stage": "hooks",
  "beat": "HK-03a",
- "title": "hook — the line · SH-OTS from the landing, over the mother's shoulder (user: second floor)",
+ "title": "hook — the line · SH-OTS at the top of the flight, over the mother's shoulder",
  "line": "\"Mama, when did that happen?\"",
  "status": "planned",
  "flow": [
@@ -19,13 +19,13 @@
  "section": "Hook — MUS-OPEN",
  "bars": 1,
  "key": "Mama",
- "location": "L-N-STAIRS (landing)",
+ "location": "L-PLAZA",
  "storyDay": "N-D4",
- "framing": "MCU from the landing over the mother's near shoulder, her shoulder and silver hair soft in the near foreground as she stands on the landing turned back, onto the daughter arriving on the top step below, face up to her mother, mouth open mid-word, the flight and the hall dropping away behind her",
+ "framing": "MCU at the top of the flight over the mother's near shoulder, her shoulder and hat brim soft in the near foreground as she stands on the top landing turned back, onto the daughter arriving on the top step below, face up to her mother, mouth open mid-word, the flight and the city dropping away behind her",
  "motionPlan": "From this frame: the daughter's last step up and the look up at her mother — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "none",
  "pinEnd": "no",
- "angle": "high · ots · through · MCU — ots from the second floor = the line lands between them from the mother's place at the top; the drop behind the daughter is the climb she just made",
+ "angle": "high · ots · through · MCU — ots from the top = the line lands between them from the mother's place; the drop behind the daughter is the climb she just made",
  "focus": "eyes · medium",
  "light": "landing window, south wall · key R · afternoon · after: Sunday sun · 5600K",
  "product": "worn (under the dress) · HIDDEN",
@@ -33,32 +33,32 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "",
- "updatedAt": 1790869517528,
+ "updatedAt": 1790870546611,
  "hook": 1,
  "editOf": "stryde-71-stairs-pixar-song__P0-PROP-N",
- "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this picture exactly as it is — the view from the landing down the flight, photo wall, balusters, handrail, the hall far below, the light — and change only the two women. Image 1 is the confirmed frame from the landing. Image 2 is the mother. Image 3 is her daughter.\nMedium close-up from the landing over the mother's near shoulder: the same woman as Image 2 stands on the landing floor at the very top, back to the lens, her emerald-green right shoulder and silver twist-out soft in the near right foreground. Below her the same woman as Image 3 on the 14th and top step, one step down, right hand on the handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. The flight of Image 1 drops away behind her to the hall floor.\nIn the frame: the two women, the one staircase of Image 1, the photo wall, the hall floor far below; every other surface bare. Two hands on the daughter, two legs.\nThe render and light of Image 1, a catchlight in each eye. Clothing and walls plain — no lettering, logos or labels; no third person.",
+ "imagePrompt": "For the line \"Mama, when did that happen?\": at the top of the great flight, over the mother's near shoulder, the daughter arriving on the top step below, face up to her, mouth open mid-word, the city dropping away behind her. Image 1 is the mother. Image 2 is her daughter. Image 3 is the plaza steps.\nMedium close-up from the top landing over the mother's right shoulder: the same woman as Image 1 stands on the landing back to the lens, her green shoulder and black hat brim soft in the near right foreground. The same woman as Image 2 on the 30th and top step, one step down, right hand on the steel handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers; sharp. Behind her the flight of Image 3 falls away to the plaza and the towers.\nIn the frame: the two women, the one flight, the handrails, the plaza and towers below; every other surface bare. Two hands on the daughter, two legs.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
  "imageStatus": "review",
  "imageRefs": [
   {
-   "label": "HK-02a v7 A (confirmed frame from the landing)",
-   "role": "Image 1 · edited (§6A rule 3, HT17)",
-   "kind": "frame",
-   "ref": "stryde-71-stairs-pixar-song__HK-02a"
-  },
-  {
    "label": "N-NARR sheet v2",
-   "role": "Image 2",
    "kind": "character",
-   "ref": "stryde-71-stairs-pixar-song__N-NARR"
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 1"
   },
   {
    "label": "C2-DAUGHTER sheet v2",
-   "role": "Image 3",
    "kind": "character",
-   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER"
+   "ref": "stryde-71-stairs-pixar-song__C2-DAUGHTER",
+   "role": "Image 2"
+  },
+  {
+   "label": "P8-PLAZA plate v1 (To check)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P8-PLAZA",
+   "role": "Image 3"
   }
  ],
- "imageMatch": "frame",
+ "imageMatch": null,
  "imageTaste": [
   "HT03",
   "HT04",
@@ -257,7 +257,9 @@
    "size": 5068866,
    "res": "1536×2752",
    "at": 1790869517528,
-   "note": "user 2026-10-01 Fix: \"this should be at the second floor\" → the camera on the landing: an image edit of the user's confirmed HK-02a v7 (the view down the flight from the landing), the mother's shoulder in the near foreground, the daughter on the top step · A: the mother's top came back mustard (the sheet outfit), not the green dress"
+   "note": "user 2026-10-01 Fix: \"this should be at the second floor\" → the camera on the landing: an image edit of the user's confirmed HK-02a v7 (the view down the flight from the landing), the mother's shoulder in the near foreground, the daughter on the top step · A: the mother's top came back mustard (the sheet outfit), not the green dress · replaced by the plaza pair (user 2026-10-01: more powerful hooks)",
+   "archived": true,
+   "archiveAsset": "21e3c8fe2115d3f92fa1e2be16eae982"
   },
   {
    "v": 12,
@@ -272,23 +274,55 @@
    "size": 6897441,
    "res": "1536×2752",
    "at": 1790869517528,
-   "note": "user 2026-10-01 Fix: \"this should be at the second floor\" → the camera on the landing: an image edit of the user's confirmed HK-02a v7 (the view down the flight from the landing), the mother's shoulder in the near foreground, the daughter on the top step"
+   "note": "user 2026-10-01 Fix: \"this should be at the second floor\" → the camera on the landing: an image edit of the user's confirmed HK-02a v7 (the view down the flight from the landing), the mother's shoulder in the near foreground, the daughter on the top step · replaced by the plaza pair (user 2026-10-01: more powerful hooks)",
+   "archived": true,
+   "archiveAsset": "dc05fd8662d57ada5685515610651ccb"
+  },
+  {
+   "v": 13,
+   "pair": "A",
+   "asset": "db12fd9f10da85ef2596b645e49367a0",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155623_1c7e8a7c-3c72-459f-81de-18e1a9dd4ede.png",
+   "job": "1c7e8a7c-3c72-459f-81de-18e1a9dd4ede",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 5004618,
+   "res": "1536×2752",
+   "at": 1790870546611,
+   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-OTS · over the mother's shoulder from above, the daughter stopped at the rail"
+  },
+  {
+   "v": 14,
+   "pair": "B",
+   "asset": "26d10b8af5fd273301faf91c1742b903",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155624_3af1b688-fec6-478c-8d3e-dfede38e1338.png",
+   "job": "3af1b688-fec6-478c-8d3e-dfede38e1338",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7015565,
+   "res": "1536×2752",
+   "at": 1790870546611,
+   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-OTS · over the mother's shoulder from above, the daughter stopped at the rail"
   }
  ],
  "imagePair": [
-  11,
-  12
+  13,
+  14
  ],
- "imageAsset": "b01047e313ee4a5096ee9338e23a8df6",
+ "imageAsset": "db12fd9f10da85ef2596b645e49367a0",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_154226_90555894-9918-4cd2-8548-df38ec0d7490.png",
- "imageJob": "90555894-9918-4cd2-8548-df38ec0d7490",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155623_1c7e8a7c-3c72-459f-81de-18e1a9dd4ede.png",
+ "imageJob": "1c7e8a7c-3c72-459f-81de-18e1a9dd4ede",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
- "imageAt": 1790869517528,
+ "imageAt": 1790870546611,
  "imageRegens": 6,
  "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
- "imageFault": "user 2026-10-01 Fix: \"this should be at the second floor\" → the camera on the landing: an image edit of the user's confirmed HK-02a v7 (the view down the flight from the landing), the mother's shoulder in the near foreground, the daughter on the top step",
- "shot": "SH-OTS from the landing (second floor), over the mother's shoulder"
+ "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
+ "shot": "SH-OTS · over the mother's shoulder from above, the daughter stopped at the rail"
 }

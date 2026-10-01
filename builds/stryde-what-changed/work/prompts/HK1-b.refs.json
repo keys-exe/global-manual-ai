@@ -1,13 +1,4 @@
 {
  "model": "nano_banana_2",
- "refs": [
-  [
-   "R1-MAUREEN sheet",
-   "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"
-  ],
-  [
-   "P4-KITCHEN plate",
-   "0bedfad5-bf20-4ebd-a862-fed90b55601a"
-  ]
- ]
+ "refs": []
 }

@@ -3,7 +3,7 @@
  "act": "Hook 1",
  "stage": "hooks",
  "beat": "HK-01a",
- "title": "hook — the result (HT05: out in the world, stakes in the picture) · SH-LOW at FULL from the sidewalk",
+ "title": "hook — the result (HT05: out in the world, the crowd as the stakes) · SH-LOW at FULL from the plaza",
  "line": "I'm seventy-one, and I take the stairs",
  "status": "planned",
  "flow": [
@@ -19,13 +19,13 @@
  "section": "Hook — MUS-OPEN",
  "bars": 1,
  "key": "stairs",
- "location": "L-CHURCH",
+ "location": "L-PLAZA",
  "storyDay": "N-D4",
- "framing": "FULL from the sidewalk at the foot of the church steps, the lens at hip height looking up the flight: N in her church dress and wide-brim hat climbing briskly hands free, mid-flight, two women in their thirties in Sunday dresses a few steps below her, one with a hand on the rail, being left behind; the church doors at the top",
- "motionPlan": "From this frame: two steps up, N pulling ahead of the younger women — one step per second, brisk; camera RV sway — the virtual camera breathes in place, never travels",
+ "framing": "FULL from the plaza at the foot of the great outdoor flight, the lens at hip height looking up the steps: N in her church dress and hat mid-flight on the 15th of 30 steps, climbing briskly hands free, alone in a lane of the steps; around and below her a dozen younger people in weekend clothes slower on the steps — two stopped with hands on knees, one leaning on the steel rail — the arena's glass doors at the top",
+ "motionPlan": "From this frame: two steps up, N pulling ahead of the crowd — one step per second, brisk; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: side-on/behind, full body, camera still at the foot",
  "pinEnd": "no",
- "angle": "low · three-quarter-back · clean · FULL — low = resolve, the church steps rising above her; the younger women below her in the same frame are the stakes",
+ "angle": "low · three-quarter-back · clean · FULL — low = resolve, the monumental flight rising above her; the younger crowd stalled below her is the stakes",
  "focus": "deep · deep",
  "light": "open sky, afternoon sun · key R · afternoon · after: Sunday sun · 5600K",
  "product": "worn (under the dress) · HIDDEN",
@@ -33,22 +33,22 @@
  "eg": "",
  "music": "MUS-OPEN",
  "ledger": "VN04",
- "updatedAt": 1790869411412,
+ "updatedAt": 1790870546611,
  "hook": 1,
- "imagePrompt": "For the line \"I'm seventy-one, and I take the stairs\": Keep this photo exactly as it is — the church, its steps, the iron handrail, the hedges, the camera, the light — as a tall 9:16 crop on the steps, and add three women climbing them. Image 1 is the church steps. Image 2 is the older woman.\nThe same woman as Image 2, seventy-one, on the 6th of 9 steps, mid-step, weight on her right foot, left foot lifting to the 7th, both hands free at her sides, chin up, eyes on the doors; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. Two women in their thirties in plain Sunday dresses, one lilac, one cream, on the 3rd and 4th steps below her, the lilac one with a hand on the black handrail, both with eyes on the older woman's back. All three at true scale to the steps.\nIn the frame: three women, the one flight of church steps of Image 1, the handrail, the hedges, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1. Dresses, shoes and walls plain — no lettering, logos or labels; no fourth person.",
+ "imagePrompt": "For the line \"I'm seventy-one, and I take the stairs\": Keep this photo exactly as it is — the flight, the steel handrails, the glass doors, the towers, the camera, the light — as a tall 9:16 crop on the middle lane of the flight, and add the people. Image 1 is the plaza steps. Image 2 is the older woman.\nThe same woman as Image 2, seventy-one, alone in the middle lane on the 15th of 30 steps, mid-step, weight on her right foot, left foot lifting to the 16th, both hands free at her sides, chin up, eyes on the doors; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. Below her younger people in plain weekend clothes over the lower steps: two women in their thirties stopped side by side on the 9th step, hands on their knees; a young man leaning on the left handrail, the rest climbing slowly, all lower than her. All at true scale to the steps.\nIn the frame: the older woman, twelve younger people, the one flight of Image 1, the handrails, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1, a catchlight in each eye. Clothing, bags and walls plain — no lettering, logos or labels; nobody above her.",
  "imageStatus": "review",
  "imageRefs": [
   {
-   "label": "P5-CHURCH plate",
-   "role": "Image 1 · edited (§6A rule 3, HT17)",
+   "label": "P8-PLAZA plate v1 (To check)",
    "kind": "location",
-   "ref": "stryde-71-stairs-pixar-song__P5-CHURCH"
+   "ref": "stryde-71-stairs-pixar-song__P8-PLAZA",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
   },
   {
    "label": "N-NARR sheet v2",
-   "role": "Image 2",
    "kind": "character",
-   "ref": "stryde-71-stairs-pixar-song__N-NARR"
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
   }
  ],
  "imageMatch": "plate",
@@ -144,7 +144,9 @@
    "size": 8043341,
    "res": "1536×2752",
    "at": 1790869411412,
-   "note": "user 2026-10-01: \"hk01 a and b should be a different location cause its woman half her age should be outside\" — the church front steps (P5), the younger women in the frame"
+   "note": "user 2026-10-01: \"hk01 a and b should be a different location cause its woman half her age should be outside\" — the church front steps (P5), the younger women in the frame · replaced by the plaza pair (user 2026-10-01: more powerful hooks)",
+   "archived": true,
+   "archiveAsset": "6cce4acba4efdbf4fe676c24c8f267c2"
   },
   {
    "v": 6,
@@ -159,21 +161,53 @@
    "size": 8435794,
    "res": "1536×2752",
    "at": 1790869411412,
-   "note": "user 2026-10-01: \"hk01 a and b should be a different location cause its woman half her age should be outside\" — the church front steps (P5), the younger women in the frame"
+   "note": "user 2026-10-01: \"hk01 a and b should be a different location cause its woman half her age should be outside\" — the church front steps (P5), the younger women in the frame · replaced by the plaza pair (user 2026-10-01: more powerful hooks)",
+   "archived": true,
+   "archiveAsset": "70f978a6c30c9f139ad364316ea0cff1"
+  },
+  {
+   "v": 7,
+   "pair": "A",
+   "asset": "3ad574799ab20025416537dae1fcbe8e",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155624_7752c6e5-21f4-4931-9529-79265df20246.png",
+   "job": "7752c6e5-21f4-4931-9529-79265df20246",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7380982,
+   "res": "1536×2752",
+   "at": 1790870546611,
+   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-LOW · FULL from the plaza (edit of P8), the crowd below her"
+  },
+  {
+   "v": 8,
+   "pair": "B",
+   "asset": "980fcb229480f75ed6e446c00cdc49c1",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155624_ebdf42f6-3aeb-4f72-bd3e-53d6a9823e23.png",
+   "job": "ebdf42f6-3aeb-4f72-bd3e-53d6a9823e23",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7636681,
+   "res": "1536×2752",
+   "at": 1790870546611,
+   "note": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old · SH-LOW · FULL from the plaza (edit of P8), the crowd below her"
   }
  ],
  "imagePair": [
-  5,
-  6
+  7,
+  8
  ],
- "imageAsset": "3b2ff917e1dc6fa2d3427c4e5ea4d4a7",
+ "imageAsset": "3ad574799ab20025416537dae1fcbe8e",
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_153950_a8fa0f04-884a-4b9b-bf3d-c5b47c37a3bd.png",
- "imageJob": "a8fa0f04-884a-4b9b-bf3d-c5b47c37a3bd",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_155624_7752c6e5-21f4-4931-9529-79265df20246.png",
+ "imageJob": "7752c6e5-21f4-4931-9529-79265df20246",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
- "imageAt": 1790869411412,
+ "imageAt": 1790870546611,
  "imageRegens": 0,
  "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
  "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
@@ -222,7 +256,7 @@
  "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/6f14f08b-04e7-4d10-8bad-79d2ccd87f52-PHtD7iepuOMevEXxp4jRpQ-output.mp4?x-kcdn-pid=112372",
  "videoRes": "1072×1928",
  "videoAt": 1790868925077,
- "shot": "SH-LOW (full from the sidewalk, edit of P5)",
- "imageFault": "user 2026-10-01: \"hk01 a and b should be a different location cause its woman half her age should be outside\" — the church front steps (P5), the younger women in the frame",
- "videoNote": "the clip on the card was made on the home stairs — superseded by the user's move outside; kept as a version, a new clip follows the new pick"
+ "shot": "SH-LOW · FULL from the plaza (edit of P8), the crowd below her",
+ "imageFault": "user 2026-10-01: \"i want new ones cause these hooks looks the same as the others i want more powerfull hooks\" → a new hook concept (HT05): one monumental public staircase out in the world — the downtown arena plaza steps (new plate P8-PLAZA, generated with these renders, To check too), the younger crowd stopped on them while she climbs; the church and second-floor pairs to Old",
+ "videoNote": "the home-stairs clip(s) were made from the earlier confirmed picks — kept as versions, superseded by the plaza concept; a clip from the plaza frame follows the user's pick"
 }
