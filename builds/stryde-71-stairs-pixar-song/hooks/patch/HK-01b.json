@@ -1,0 +1,30 @@
+{
+ "imagePrompt": "For the line \"faster than women half my age.\": at step height from the side, an older woman's feet take the stairs at a stride — one low black pump planted on the 6th of 14 steps, the other foot lifting to the 7th, the hem of an emerald-green dress swinging at mid-calf — and a few steps below, white trainers under black denim shorts reaching for the 4th step. Image 1 is the staircase.\nClose-up, profile, at the height of the 6th step, feet and five steps filling the frame, sharp on the pumps. The same beige runner, brass stair rods, white balusters and dark oak handrail as Image 1, photo frames soft behind. Both women's hands and faces out of frame — the picture is feet, legs below the knee and steps. Deep brown skin at the ankles.\nIn the frame: two low black pumps, two white trainers, four legs, five steps of the one staircase; every other surface bare. Each foot whole, one foot per step.\nA final frame from a 3D animated feature film — stylized storybook render, every surface with a material, a single catchlight in each eye, soft warm bounce in the shadows, afternoon sun through the door sidelights from the left.\nShoes, clothing and walls plain — no lettering, logos or labels.",
+ "imageModel": "nano_banana_pro · 2k · 9:16 · A/B pair (Higgsfield)",
+ "imageStatus": "generating",
+ "imageRefs": [
+  {
+   "label": "P0-PROP-N plate",
+   "role": "Image 1",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N"
+  }
+ ],
+ "imageMatch": null,
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "preflight": "PASS (§6A, kind image)",
+ "pinEnd": "yes",
+ "updatedAt": 1790858331618,
+ "endFrame": "HK-01b-END"
+}

@@ -412,3 +412,30 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - B20 and B22c videos had flipped to `ready` by an image re-Confirm — set back to `review` (unchanged).
 - **B19b**: v7 image confirmed; its next video would be the 4th for this shot → waits for the user's go.
 - Act map rows B18b, B19-BR2, B21-BR, B22a, B23a updated; angles: JUMP B19b/B19-BR2 only (see above). docs/actmap Plan v37, Current v37, Current 2 v23. Higgsfield 10,457.65.
+
+### 2026-10-01 — "GO" (B19b video 4, B19-BR2 video 3) + four confirmed images → clips
+- User "GO" for the extra generations. Both clips start from frames where both hands already have a job (one flat on the wall, one on the bare thigh); the prompt keeps both hands still, no wince/lean, one step.
+  - **B19b v4**: no hand on the banister the whole clip — the hand fault is fixed. She comes down a few stairs, not one. Strap stays put.
+  - **B19-BR2 v3**: no hand on the banister; comes down towards the camera. Flaw: it looks almost the same as B19b v4 (same stairs, angle, outfit, move), so B19b → B19-BR2 still cuts as a jump.
+- Images confirmed (B18b v4, B21-BR v3, B22a v2, B23a v3) → clips (Kling 3.0 pro, 4 s, 7 cr):
+  - **B18b v2**: hands down and empty throughout; she walks right down to the camera and her knees leave the frame in the last half second.
+  - **B21-BR v1**: the red tendon glow pulses, the blue joint ring holds — clean.
+  - **B22a v2**: small weight shift, straps hold. Flaw: a hand edges into the top-right corner mid-clip.
+  - **B23a v1**: the foot lands on the stair edge. Flaws: a hand edges into the top right; the strap changes shape in the last second.
+- Replaced videos (B19b v3, B19-BR2 v2, B18b v1, B22a v1) → Old 2. Higgsfield 10,397.65.
+- Learned: giving both hands a job in the START FRAME (wall + thigh) and saying "neither hand moves" finally kept Kling off the banister.
+
+### 2026-10-01 — "GO" with three video Fixes
+- **B21 v2** (Fix "WILL KICK THEN JUMPING KEEP MOVING", 5 s, 8.75 cr): kick, a small hop, then a light jog across the lawn; strap holds. Flaw: the ball doubles for a moment at the kick.
+- **B22a v3** (Fix "WALKING DOWN STAIR", 3rd video — user GO): she stands for ~3 s and only steps at the very end; a hand edges into the top-right corner again.
+- **B23a v2** (Fix "WALKING DOWN STAIR"): two steps down towards the camera, strap stays on the right knee. Flaw: a hand edges into the top right in two frames.
+- Fixed-geography wording (HT22) used on the stair clips. The stray hand at the top right keeps coming back on the low leg shots (B22a, B23a) — the edited frames have a faint hand/sleeve edge there; next fix is a frame edit that removes it rather than a prompt line.
+- Replaced videos → Old 2. Higgsfield 10,306.9.
+
+### 2026-10-01 — "FIX" (B22a image "FIX THE PRODUCT")
+- **B22a v3** (NBP edit of v2, refs worn_front.jpg + front.webp, "copied exactly", lowercase "stryde"): to check. Not fixed — the shells are a little closer in shape but the wordmark is still small and in capitals. At this distance (two knees, full lower legs) the model redraws the strap from scratch and ignores the product photo. v2 → Old 2.
+- Proposed next (user's call): frame closer so each strap is large (FP12 works when the strap fills a good part of the frame), or one strapped knee from worn_front.jpg (background-only edit, the real product untouched) with the second knee beside it.
+
+### 2026-10-01 — "FIX" (B23a image "FIX THE PRODUCT")
+- **B23a v4** (NBP edit of v3, refs worn_front.jpg + front.webp, framed like worn_front.jpg): the strap is now large and matches the real one — shell, two peaks, chrome slides, big lowercase grey "stryde". Flaw: her plimsoll is cut off at the bottom edge, so the step onto the stair isn't shown. To check; v3 → Old 2.
+- Confirms the B22a lesson: the product copies right only when it is big in frame. B22a (two knees, small straps) needs the closer framing too — waiting on the user's pick.

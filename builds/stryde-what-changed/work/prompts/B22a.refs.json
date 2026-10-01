@@ -2,8 +2,16 @@
  "model": "nano_banana_pro",
  "refs": [
   [
-   "B18b v3 \u2014 the shot to edit (Image 1)",
-   "62f43732-74f9-4dba-9a0d-83191c1bbfbf"
+   "B22a v2 \u2014 the shot to edit (Image 1)",
+   "f77113f5-0e71-449c-8be8-619937402610"
+  ],
+  [
+   "worn_front.jpg \u2014 worn placement",
+   "2290ef3b-75a4-4c39-8ea2-b9c4b60e6637"
+  ],
+  [
+   "front.webp \u2014 the strap front-on (Image 1)",
+   "20bc8be5-8526-48b6-a6e0-acbcb17b7c56"
   ]
  ]
 }
