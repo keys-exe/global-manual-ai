@@ -1423,6 +1423,24 @@ B["B18b"] = clip("B18b",
            {"risk": "a hand reaches into frame for the banister", "prevented_by": "'no hand in frame, no hand on the banister'"}])
 B["B18b"][0]["motion"] = B["B18b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the skirt lags a little; the straps never move")
 
+# ── 2026-10-01 B18b video Fix "FAST WALKING DOWN TO STAIR NOT STOPPING" (gen 3: pauses between steps; strap on the left of frame flips
+# at ~3.1 s). §22X diagnosis: motion — the pace was "one easy step"; §27G rule 9: speed comes from a brisk countable pace + the edit,
+# never "fast" legs. Gen 4 (waits for the user's GO): brisk continuous steps, one every 0.8 s, no pause, 4 s, straps rigid.
+B["B18b"] = clip("B18b",
+    "Front-on at knee height, an older woman's pale legs coming down an oatmeal-carpeted staircase towards the camera, the hem of a "
+    "mid-blue denim skirt at the top of the frame, white canvas plimsolls; a matte-black knee strap with two pointed peaks, chrome "
+    "slides and a grey lowercase \"stryde\" sits just below EACH kneecap; white spindles on the right.",
+    "Already moving on the first frame: she walks down the stairs towards the camera at a brisk, steady pace without pausing — one "
+    "step every 0.8 seconds, left, right, left, right, each foot landing flat on the next stair as the other leaves — four even steps, "
+    "never slowing, never stopping. Both straps stay exactly as they are — rigid, peaks pointing up, the same shape, size, place and "
+    "wordmark from first frame to last.",
+    "no pausing between steps, no strap twisting or flipping, no wordmark changing, no hand in frame, no camera movement",
+    3.2, hi=4,
+    risks=[{"risk": "the straps twist or flip as the knees bend (gen 3 at 3.1 s)", "prevented_by": "rigid-strap line 'peaks pointing up', 4 s cap"},
+           {"risk": "she pauses between steps again", "prevented_by": "countable pace 'one step every 0.8 seconds', 'never slowing, never stopping'"},
+           {"risk": "legs or feet duplicate at the faster pace", "prevented_by": "brisk not fast (§27G rule 9), HOLD-C + NEG-WARP-C"}])
+B["B18b"][0]["motion"] = B["B18b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the skirt lags a little; the straps never move")
+
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
