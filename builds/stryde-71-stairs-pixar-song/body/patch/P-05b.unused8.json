@@ -1,57 +1,4 @@
 {
- "act": "Hook 1",
- "angle": "eye · front · clean · CU — eye on the drawer = where it all ended up, shut away",
- "bars": 1,
- "beat": "P-05b",
- "body": 1,
- "build": "stryde-71-stairs-pixar-song",
- "createdAt": 1790879352102,
- "duration": 3.04,
- "eg": "",
- "flow": [
-  "image",
-  "video"
- ],
- "focus": "product · medium",
- "framing": "CU on a kitchen drawer pulled open under the counter, stuffed with knee sleeves, a hinged brace and pill bottles, N's hand on its front pushing it shut (an insert, a different kind of B-roll — user Fix 2026-10-01: 'wrong person, a different type of broll')",
- "imageAsset": "dff013fc6be7f40fcbd2c1f37e363437",
- "imageAt": 1790885300814,
- "imageConnector": "Higgsfield",
- "imageCredits": 2.14,
- "imageFault": "user Fix: \"WRONG DRAWER AND LOCATION\" → her own kitchen: the middle drawer of the row right of the stove in the kitchen plate, pulled open and stuffed, her brown hand on its edge",
- "imageJob": "cebeeb02-e3b3-49d6-9c4c-6f88af75251d",
- "imageMatch": "plate",
- "imageModel": "nano_banana_pro → logged nano_banana_2",
- "imagePair": [],
- "imageParts": [],
- "imagePick": 7,
- "imagePrompt": "For the line \"Nothing worked. Nothing lasted.\": Keep this photo exactly as it is — this kitchen, its sage-green cabinets with brass pulls, the row of three drawers under the counter to the right of the cream stove, the tiled splashback, the light — in close on the middle drawer of that row, a tall 9:16 crop, and pull it open. Image 1 is the kitchen.\nClose-up at eye level with the drawer, sharp on it: the middle drawer of Image 1 pulled half open, stuffed to the brim with two grey knee sleeves, a folded black hinged knee brace, three plain pill bottles and a blue ice pack; an older Black woman's right hand, brown, flat on the drawer front pushing it shut, a grey cardigan cuff at her wrist; her left hand and the rest of her out of frame; the stove edge at the left of the frame.\nIn frame: the open drawer and its contents, one hand placed, the cabinet fronts, counter edge and stove edge of Image 1; every other surface bare, nothing on the counter.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Sleeves, bottles and cabinets plain — no lettering, logos or labels; nobody else.",
- "imageRefs": [
-  {
-   "kind": "location",
-   "label": "P2-KITCHEN plate v2 (confirmed)",
-   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
-   "role": "Image 1 · edited (§6A rule 3, HT17)"
-  }
- ],
- "imageRegens": 3,
- "imageRes": 4996165,
- "imageStatus": "confirmed",
- "imageTaste": [
-  "HT02",
-  "HT03",
-  "HT04",
-  "HT08",
-  "HT09",
-  "HT12",
-  "HT17",
-  "HT18",
-  "HT19",
-  "HT22"
- ],
- "imageType": "image/png",
- "imageUnused": 8,
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195907_cebeeb02-e3b3-49d6-9c4c-6f88af75251d.png",
  "imageVersions": [
   {
    "archiveAsset": "975fb58a1004e0994a8aaa116211ef87",
@@ -188,47 +135,5 @@
    "archiveAsset": "b883a503a131d786c10505addb850abc",
    "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
   }
- ],
- "key": "worked",
- "line": "Nothing worked. Nothing lasted.",
- "lines": [
-  17,
-  17
- ],
- "location": "L-N-KITCHEN",
- "motionPlan": "From this frame: her hand pushes the drawer shut — one push, about a second; camera RV sway — the virtual camera breathes in place, never travels",
- "shot": "eye · front · clean · CU",
- "stage": "broll",
- "status": "review",
- "title": "low — the heap, pushed to the far edge (user 2026-10-01: three B-rolls)",
- "updatedAt": 1790887363975,
- "videoVersions": [
-  {
-   "v": 1,
-   "asset": "304e6a34313878be74fb791122a1c68e",
-   "at": 1790887363975,
-   "connector": "Kling",
-   "credits": 24,
-   "duration": 3.04,
-   "fromImage": 7,
-   "job": "AdKfNzMqSWRQZVvIp18NSR5gHYJyzcSP-L4mhBzeZIC58bJktLyGUHHomgcnptiTL2iCpYMD",
-   "model": "kling-video-v3_0",
-   "res": "1072×1928",
-   "size": 3585187,
-   "type": "video/mp4",
-   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/5dda3115-8e29-4979-adf1-a2d8ed90b67a-6fn1k1q-TRbPmUjZ-OfDBA-output.mp4?x-kcdn-pid=112372",
-   "note": "from the picked image v7 A (job cebeeb02) · what I see: her hand reaches to the drawer front but the drawer stays open — the push never lands — and the view widens a little at the end; nobody in frame but the hand"
-  }
- ],
- "prompt": "For the line \"Nothing worked. Nothing lasted.\": From this frame: her hand pushes the drawer shut — one push, about a second; camera RV sway — the virtual camera breathes in place, never travels. In close on the open drawer, her hand pushes the drawer front once and the drawer slides shut until it jams on the stuffed sleeves and bottles inside, a sleeve cuff caught over its edge; the hand rests on the drawer front; the drawer, the cabinets and the counter stay exactly as in the frame; nobody speaks, nobody is in frame but the hand. Stylized 3D animation, exactly on model from the frame, every object rigid. No camera travel; nobody else; no cut; nothing new appears.",
- "regens": 1,
- "videoAsset": "304e6a34313878be74fb791122a1c68e",
- "videoType": "video/mp4",
- "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/5dda3115-8e29-4979-adf1-a2d8ed90b67a-6fn1k1q-TRbPmUjZ-OfDBA-output.mp4?x-kcdn-pid=112372",
- "videoJob": "AdKfNzMqSWRQZVvIp18NSR5gHYJyzcSP-L4mhBzeZIC58bJktLyGUHHomgcnptiTL2iCpYMD",
- "credits": 24,
- "videoAt": 1790887363975,
- "videoRes": "1072×1928",
- "videoConnector": "Kling",
- "model": "kling-video-v3_0"
+ ]
 }
