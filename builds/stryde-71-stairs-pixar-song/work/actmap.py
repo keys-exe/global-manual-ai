@@ -21,6 +21,8 @@ ROWS = []
 def R(beat, act, lines, key, fn, subj, loc, day, framing, action, pace, staging, prod, vis,
       h, side, fg, scale, why, plane, dof, src, kelvin, time, arc, face, music, ledger="", layout="full", eg="",
       pin="no", camera="RV sway — the virtual camera breathes in place, never travels", mx=6, mirror=None, moving=False, ks=None, tin=0.0):
+    if staging.startswith("stairs"):
+        pin = "yes"   # §27G rule 10: stairs class always first-and-last frame (end frame <BEAT>-END, picked with the start)
     a, b = lines
     line = " ".join(LYR[i]["line"] for i in range(a, b + 1))
     if vis in ("VISIBLE", "REVEAL", "REVEAL→CONCEALED") or prod.startswith(("worn (anatomical)", "held", "box", "seated")):

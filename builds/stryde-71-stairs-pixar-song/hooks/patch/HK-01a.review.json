@@ -1,0 +1,53 @@
+{
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "dd00641302644603f67a37537f1e5afe",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_c5ffa422-de72-43c1-9e9a-5f11d1559545.png",
+   "job": "c5ffa422-de72-43c1-9e9a-5f11d1559545",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 5907574,
+   "res": "1536×2752",
+   "at": 1790858654630,
+   "note": ""
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "0a4bf29628f86c14cbf754effa950c54",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_980d1f5a-0dd8-4473-95cf-e577349c834a.png",
+   "job": "980d1f5a-0dd8-4473-95cf-e577349c834a",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 8170724,
+   "res": "1536×2752",
+   "at": 1790858654630,
+   "note": ""
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageAsset": "dd00641302644603f67a37537f1e5afe",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_c5ffa422-de72-43c1-9e9a-5f11d1559545.png",
+ "imageJob": "c5ffa422-de72-43c1-9e9a-5f11d1559545",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790858654630,
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageStatus": "review",
+ "imageRegens": 0,
+ "imagePrompt": "For the line \"I'm seventy-one, and I take the stairs\": Keep this photo exactly as it is — hall, staircase, camera, light — as a tall 9:16 crop centred on the flight, and add two women climbing it. Image 1 is the hall and staircase. Image 2 is the older woman. Image 3 is her daughter.\nThe same woman as Image 2, seventy-one, on the 6th of 14 steps mid-step: weight on her right foot, left foot lifting to the 7th, both hands free at her sides, face in part profile, eyes up the stairs, mouth closed; emerald-green church dress to mid-calf, low black pumps. The same woman as Image 3 on the 4th step, inside the rail behind her, right hand on the oak handrail, left hand loose at her side, eyes on her mother's back; olive-green crewneck sweatshirt, black denim shorts, white trainers. The two fill more than half the frame's height.\nIn the frame: the two women, the one staircase of Image 1 with its runner, brass rods, balusters and photo wall, the hall floor below; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1, the women on model, a catchlight in each eye.\nClothing, shoes, walls and frames plain — no lettering, logos or labels; no third person.",
+ "preflight": "PASS (§6A, kind image)",
+ "updatedAt": 1790858654630,
+ "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)"
+}
