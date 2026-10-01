@@ -1,0 +1,13 @@
+{
+ "generationId": "Ae2nyyvlC-UI3xRQh9xU7EARgIqRPTeojavzvRx9pufYyjoIcfDMY7OzFgjryvvVRxp351uX",
+ "credits": 32.0,
+ "duration": 4,
+ "image": "HK-03a v24 B (job b41571cf)",
+ "beat": "HK-03a",
+ "connector": "Kling",
+ "model": "kling-video-v3_0",
+ "resolution": "1080p",
+ "prefer_multi_shots": "false",
+ "enable_audio": "false",
+ "kling_credits_before": 42739.0
+}

@@ -1,0 +1,128 @@
+{
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": null,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_6f5a57c1-9db6-41e3-aa80-4048993c9eca.png",
+   "job": "6f5a57c1-9db6-41e3-aa80-4048993c9eca",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7677836,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true,
+   "archiveAsset": "854b06699e9e751c1342b125703d0305"
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": null,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_e51bce27-b057-4cea-b2ad-c69a70a446c7.png",
+   "job": "e51bce27-b057-4cea-b2ad-c69a70a446c7",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7502649,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true,
+   "archiveAsset": "b0d4437c86cb28a20b38ae8f085eb8fb"
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "ba6765bb9e17135ea34bd310d9db5201",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_d6e85763-5356-4351-8f90-f4fc5eec9aa8.png",
+   "job": "d6e85763-5356-4351-8f90-f4fc5eec9aa8",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7384964,
+   "res": "1536×2752",
+   "at": 1790876674688,
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "5bf7023291d072a35d8da1fb16b15562",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_0e49fdec-98da-4b6e-bf5f-58ecb40f7309.png",
+   "job": "0e49fdec-98da-4b6e-bf5f-58ecb40f7309",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7379294,
+   "res": "1536×2752",
+   "at": 1790876674688,
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe"
+  }
+ ],
+ "imagePair": [
+  3,
+  4
+ ],
+ "imageAsset": "ba6765bb9e17135ea34bd310d9db5201",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_d6e85763-5356-4351-8f90-f4fc5eec9aa8.png",
+ "imageJob": "d6e85763-5356-4351-8f90-f4fc5eec9aa8",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790876674688,
+ "imageStatus": "review",
+ "imagePick": {
+  "__delete__": true
+ },
+ "imageUnused": {
+  "__delete__": true
+ },
+ "imagePrompt": "For the line \"Physical therapy. Pain pills. Cortisone shots.\": Keep this photo exactly as it is — the exam room, its treatment table, the window with the half-open blind, the light — a tall 9:16 crop on the table, and add two people. Image 1 is the exam room. Image 2 is the woman.\nMedium shot from above and to the side, sharp on her. The same woman as Image 2, seventy-one, lying on her back on the treatment table, head on the paper-covered pillow, eyes on the ceiling, hands folded on her stomach; faded blue floral house dress, the hem above the knee, pink terry slippers off on the floor. A physical therapist in a plain navy polo, seen only from the shoulders down, stands at the table's side, both hands on her bare right leg, bending the knee up. Nobody else.\nIn frame: the woman, the therapist's torso and two hands placed, the table and window of Image 1; every other surface bare. Two legs on her.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in afternoon light through the blind, a catchlight in each eye. Clothing and walls plain — no lettering, logos or labels; no third person.",
+ "imageFault": null,
+ "imageMatch": "plate",
+ "imageRefs": [
+  {
+   "label": "P7-CLINIC plate (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P7-CLINIC",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  }
+ ],
+ "shot": "high · three-quarter · clean · MEDIUM",
+ "angle": "high · three-quarter · clean · MEDIUM — high = done to her, passive",
+ "framing": "MEDIUM: N lying on a PT treatment table, a therapist's hands bending her right knee",
+ "motionPlan": "From this frame: the therapist bends the knee a little further — one slow bend, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "location": "L-CLINIC",
+ "line": "Physical therapy. Pain pills. Cortisone shots.",
+ "title": "failed fix",
+ "act": "Hook 1",
+ "imageTaste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "updatedAt": 1790876674688,
+ "imageRegens": 0,
+ "status": "planned"
+}

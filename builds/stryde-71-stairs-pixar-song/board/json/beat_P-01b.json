@@ -1,6 +1,6 @@
 {
  "build": "stryde-71-stairs-pixar-song",
- "act": "Act 1",
+ "act": "Hook 1",
  "stage": "broll",
  "beat": "P-01b",
  "title": "problem",
@@ -11,7 +11,7 @@
   "video"
  ],
  "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
- "imageModel": "nano_banana_pro · 2k · 9:16 · A/B pair",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "duration": 4,
  "songIn": 19.39,
  "songOut": 21.83,
@@ -33,6 +33,110 @@
  "eg": "",
  "music": "MUS-EXPOSE",
  "ledger": "",
- "updatedAt": 1790860191625,
- "pinWaived": "user 2026-10-01: \"we dont need end frame\""
+ "updatedAt": 1790876674688,
+ "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": null,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173518_f27417d7-a58b-41d3-8167-81a6d9cc4d22.png",
+   "job": "f27417d7-a58b-41d3-8167-81a6d9cc4d22",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 9572118,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true,
+   "archiveAsset": "2729890e95af17dbb54b0a5caa98da75"
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": null,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173518_7d0ac39f-77f0-4e7a-8051-6ded862a6d24.png",
+   "job": "7d0ac39f-77f0-4e7a-8051-6ded862a6d24",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 9126962,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true,
+   "archiveAsset": "52fb0dd3be238c9fd9c1bd10d2cbe9ce"
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "8977677bc7f1442200067a46942f2c87",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174005_b6ec27b5-f424-4ae9-bc0a-486487e141a8.png",
+   "job": "b6ec27b5-f424-4ae9-bc0a-486487e141a8",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7989934,
+   "res": "1536×2752",
+   "at": 1790876674688,
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "9dd4dcb14651b35375a39bd47a75683a",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174004_af5b0a74-5f46-48d7-a30b-73de4a3add18.png",
+   "job": "af5b0a74-5f46-48d7-a30b-73de4a3add18",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 8054294,
+   "res": "1536×2752",
+   "at": 1790876674688,
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe"
+  }
+ ],
+ "imagePair": [
+  3,
+  4
+ ],
+ "imageAsset": "8977677bc7f1442200067a46942f2c87",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174005_b6ec27b5-f424-4ae9-bc0a-486487e141a8.png",
+ "imageJob": "b6ec27b5-f424-4ae9-bc0a-486487e141a8",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790876674688,
+ "imageStatus": "review",
+ "imagePrompt": "For the line \"One step at a time.\": Keep this photo exactly as it is — the staircase, its carpet runner, brass rods and balusters, the light — in close on four steps mid-flight, a tall 9:16 crop, and add her feet. Image 1 is the staircase.\nClose-up from the side at step height, feet and four steps filling the frame, sharp on the slippers: a pink terry slipper lowering onto the next step down, the other slipper still on the step above about to join it, bare brown ankles under the hem of a faded blue floral house dress, one hand gripping the oak rail at the top edge of the frame, her other hand and her head out of frame above.\nIn frame: two slippers, two legs below the knee, one hand on the rail, four steps of the one flight with their runner and rods; every other surface bare. Each foot whole.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from above. Slippers and hem plain — no lettering, logos or labels; nobody else.",
+ "imageFault": null,
+ "imageMatch": "plate",
+ "imageRefs": [
+  {
+   "label": "P0-PROP-N plate (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  }
+ ],
+ "shot": "ground · profile · clean · CU",
+ "imageTaste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "imageRegens": 0
 }
