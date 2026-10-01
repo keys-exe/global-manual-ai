@@ -27,8 +27,33 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   (assets 21896d82…, f0d9e11e…, fda069ae…); v1 files copied to the Old board (a86adc7f…, f0b774bc…, 3128f425…), Old docs written, v1 deleted
   from Current. VN04 re-read: same roles, new faces (user's call). `fix_patterns.py` run on the Current + Old dumps (`work/fix_patterns.md`): 3 notes (6 rows, each seen on both boards), one beat each — no repeating rule yet; the Loretta build note is a beat fix.
 
+- same session, ~10:35–10:50 UTC — user **"CONFIRMED ALL PROCEED"**: the three v2 avatars set `use`, `docs/absorption` confirmed; F2 full Mode 2,
+  F3 variant A (no singing to camera), F4 caption carries "Stryde." — all on my recommendations. **Steps 4–5 delivered (`STEP4_5.md`):**
+  Property Sheet PROP-N (7 fields), location derivation (8 plates + incidentals), light plans; **8 Pixar plates** (16:9, nano_banana_pro → logged
+  nano_banana_2, 2 cr each; P1/P2 with P0 attached as `image_references`) on Current as To check (`plates/build_plates.py`, Mode 2 plate form);
+  **act map on the song's clock** — 76 B-roll rows, no talking heads, all 108 lyric lines covered in order, E6 call lengths from the lyric word
+  timestamps (no `pending-master`, no splits), `angles.py` PASS (`work/actmap.py` → `actmap_rows.json`, `angles.json`, `actmap.md`, `plan.json`);
+  wardrobe map, story-day map, ledger assigned; 76 planned cards + `docs/actmap`, `docs/wardrobe`, `docs/locations` on Current + Plan.
+  Flags F14 (Loretta's pant leg vs FP13), F15, F16. Higgsfield 11,355.4 → ~11,323 after the cast and plates (14 renders × 2 cr).
+
+- same session, ~10:50–11:05 UTC — **V7.76.0 landed on the default branch (§3C Music Video)** and describes this build: adopted (nothing was generated
+  against the act map yet). Boards republished on the V7.76.0 template (Music stage); build doc `kind: "music"`, `voices` removed, `music` block; the song
+  on Current as **MUS-BODY** (audio card, mp3 wrapped in mp4, To check; `music/MUS-BODY.cue.json` = the §40A register map with the lyric lines per section,
+  `music.py check` report on the card; beat grid `music/MUS-BODY.grid.json`, 73.8 bpm pinned). **Act map re-gridded (§3C):** every cut on the last beat at or
+  before the lyric cut (never late), rows carry `section` + `bars`; 15 rows under the 2.0 s floor merged into their neighbours (the EG05 montage is one card)
+  → **61 rows**, 108/108 lines, no FLASH, no split, `angles.py` PASS. Board: 15 planned cards deleted, 61 rewritten, `docs/actmap` rewritten (Current + Plan).
+
+- same session, ~11:00–11:10 UTC — user **"FIX THOSE"**: six plates confirmed (P0, P3–P7); **Fix round 2** on two: P1-LANDING "NOT THE SAME AS THE P0 PROP N"
+  → v2 as an image edit of the confirmed P0 (Image 1 as `image_references`, the same flight from its top, sides restated for the new angle — HT17);
+  P2-KITCHEN "I NEED A NEW UNIQUE ARANGEMENTS HERE" → v2 a personal Southern grandmother's kitchen of the same house (sage-green cabinets, yellow
+  counter, breakfast nook, skillets, church fan, crayon drawings), P0 attached. `plates/build_plates.py` V2 block, `plates/*.v2.prompt.txt`.
+  Both on Current as To check; v1 files on the Old board (2aa94055…, fce7cec3…), deleted from Current. fix_patterns: the "same as P0" note is the
+  third build with it (HT17 already covers it) — no new rule.
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator never sings to camera (default) vs two bookends · F4 "Stryde." · F10 Mode 2 sheet amendment / true Pro route on Kie · F12 BPM · F13 clipped master.
 
 ## Next
-On the user's go: steps 4–5 (property sheet + 16:9 Pixar plates on nano_banana_pro: house stairs/landing/kitchen, reception, store checkout, church steps, street; act map on the song's clock — E6 lengths from `work/lyrics.timed.json`, cuts on 3–4 beats, `angles.py` PASS; wardrobe map). No voice stage. Then hook (0–15.5 s) at step 6, body acts at step 7, CapCut block with lyric captions.
+**Waiting on the plates' Confirm.** Then step 6 — the hook (HK-01a → HK-03a, 0–15.5 s): A/B beat images with `motionPlan`, then the Kling clips on the user's picks; then the body acts in order; CapCut block with lyric captions and the outro end card.
+
+(Earlier plan, done:) steps 4–5 (property sheet + 16:9 Pixar plates on nano_banana_pro: house stairs/landing/kitchen, reception, store checkout, church steps, street; act map on the song's clock — E6 lengths from `work/lyrics.timed.json`, cuts on 3–4 beats, `angles.py` PASS; wardrobe map). No voice stage. Then hook (0–15.5 s) at step 6, body acts at step 7, CapCut block with lyric captions.
