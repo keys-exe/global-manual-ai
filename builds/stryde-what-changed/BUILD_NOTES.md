@@ -453,3 +453,17 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **B22a**: image v4 confirmed; its next video is the 4th for this shot → waits for the user's go.
 - Lesson: once one product frame is approved, build the next product shots as edits of it (the approved strap carries over) instead of asking for the product again.
 - Higgsfield 10,236.4.
+
+### 2026-10-01 — "GO" (B22a video 4, B23a video 3)
+- Both from the confirmed real-photo frames (B22a v4, B23a v6); motion keeps the earlier Fix "WALKING DOWN STAIR"; straps held from first frame to last; no hands. Jobs on Higgsfield: B22a 3691e67d…, B23a 376f4a2b… (queued a long while — finishing on a check-in). Old videos (B22a v3, B23a v2) copied to Old 2 (f725bc33…, a04ea39b…).
+
+### 2026-10-01 — "FIX" (B10d image "GIVE ME DIFFERENT BROLL HERE")
+- **B10d** ("A painkiller turns the alarm off"): new idea — the line's metaphor made literal: low, looking up at her hall ceiling, a plain smoke alarm flashing red, her hand pressing its button. NB2, refs R1 + P1. Act map row updated (L-M-STAIRS, LOW THR CU); angles: only the known B19b/B19-BR2 jump. Job b593b823…. Old image v1 and video v1 copied to Old 2 (cd49c118…, 9ce241af…).
+- Higgsfield is holding every job in "queued" (B22a/B23a videos for 45+ min, now B10d too) while the shared account's balance keeps falling — other builds' jobs are running; ours wait for a slot.
+- **B22a** user "GIVE ME ANOTHER DIFFERENT BROLL HERE" (mid-turn): new image — Maureen sitting on the edge of her bed, both knees bent towards the camera, a strap below each, hands on her thighs; an edit of the approved B22a v4 so its straps carry over (NBP, job 84a4eae4…). Act map row updated (L-BEDROOM). The queued B22a video (3691e67d…) is now moot → Old 2 when it lands.
+- User "USE KEI AI FOR TEMPORARY" on B22a: **B22a v5** made on Kie AI (nano-banana-pro, 18 cr, refs: B22a v4 + R1 sheet, same prompt) — seated on the edge of her bed, both knees towards the camera, lowercase "stryde" on both straps, hands on thighs. Flaw: both straps sit a little low — a gap between each kneecap and its notch. To check; v4 → Old 2. Kie balance 256,298.8 (topped up). The Higgsfield B22a image job 84a4eae4… is now redundant → Old 2 if it ever lands.
+- **B10d v2** (Higgsfield NB2, finally ran): her finger pressing a plain white smoke alarm with its red light on, gold ring and striped sleeve, duck-egg wall below — clean. To check; image v1 + video v1 → Old 2 (new Old 2 doc).
+- Higgsfield: the two queued Kling videos (B22a 3691e67d…, B23a 376f4a2b…) **failed** after ~1 h; the B22a NBP image 84a4eae4… still queued (redundant).
+- User "GO CONFIRM" on B22a v5 → image confirmed, **video v4 on Kie AI Kling 3.0** (5 s, 150 cr): she pats her thighs, straps on. Flaw: mid-clip her hands slide to her knees and the straps shrink a little, recovering by the end.
+- **B23a video v3 on Kie AI Kling 3.0** (re-run of the user's go after the Higgsfield failure, 5 s, 150 cr): the first ~3 s are good (one step down, strap exact); in the last 1.5 s her leg comes right up to the lens and leaves frame — "Use only up to here" ≈ 3 s would fix it.
+- Kie AI 255,998.8 · Higgsfield 10,085.15.
