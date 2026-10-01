@@ -1,0 +1,44 @@
+{
+ "beat": "HK-01a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"I'm seventy-one, and I take the stairs\": Keep this photo exactly as it is — the flight, the steel handrails, the glass doors, the towers, the camera, the light — as a tall 9:16 crop on the middle lane of the flight, and add two women. Image 1 is the plaza steps. Image 2 is the older woman.\nThe same woman as Image 2, seventy-one, in the middle lane on the 15th of 30 steps, mid-step, weight on her right foot, left foot lifting to the 16th, both hands free at her sides, chin up, eyes on the doors; emerald-green church dress to mid-calf, low black pumps, a wide-brim black Sunday hat. Four steps below her in the same lane a woman of thirty-five in a plain grey sweatshirt, black leggings and white trainers, stopped on the 11th step, bent forward with both hands on her knees, head down, out of breath, left behind. Both at true scale to the steps; nobody else on the flight.\nIn the frame: the two women, the one flight of Image 1, the handrails, the doors; every other surface bare. Two legs each, one foot per step.\nThe render and light of Image 1, a catchlight in each eye. Clothing and walls plain — no lettering, logos or labels; no third person.",
+ "script_line": "I'm seventy-one, and I take the stairs",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P8-PLAZA plate",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "P8-PLAZA (asset after upload)",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22",
+  "HT05",
+  "HT23"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user: HK-01 a woman half her age behind her; HK-02/03 a different location (the church steps)"
+}

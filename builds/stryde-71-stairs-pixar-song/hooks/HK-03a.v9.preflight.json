@@ -1,0 +1,48 @@
+{
+ "beat": "HK-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — the church, its steps, the black iron handrail, the hedges, the sidewalk, the light — seen from its top step under the portico looking down, a tall 9:16 crop, and add the two women. Image 1 is the church steps. Image 2 is the mother. Image 3 is her daughter.\nMedium close-up over the mother's right shoulder: the same woman as Image 2 stands on the top step with her back to the lens, her green shoulder and black hat brim soft in the near right foreground. The same woman as Image 3 on the 7th of 8 steps, one step down, right hand on the black handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers; sharp. Behind her the steps of Image 1 fall to the sidewalk, the hedges, the parked cars.\nIn the frame: the two women, the one flight, the handrail, the hedges, the sidewalk and cars; every other surface bare. Two hands on the daughter, two legs.\nThe render and light of Image 1 — Sunday afternoon sun, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
+ "script_line": "Mama, when did that happen?",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P5-CHURCH plate",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character"
+  },
+  {
+   "label": "C2-DAUGHTER sheet v2",
+   "kind": "character"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "c081c1e27606360045960668a63e2630",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22",
+  "HT05",
+  "HT23"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user: HK-01 a woman half her age behind her; HK-02/03 a different location (the church steps)"
+}

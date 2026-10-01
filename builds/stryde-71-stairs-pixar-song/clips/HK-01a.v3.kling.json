@@ -1,0 +1,14 @@
+{
+ "generationId": "AUMNp66NrklEZrMPUQB375X-MU11jpTc6d2RZR9t3Gxd5lKi-qETTMe453pMkTxFzhx71vOv",
+ "credits": 64.0,
+ "duration": 8,
+ "image": "HK-01a v13 A (job 6423cc60)",
+ "beat": "HK-01a",
+ "connector": "Kling",
+ "model": "kling-video-v3_0",
+ "resolution": "1080p",
+ "prefer_multi_shots": "false",
+ "enable_audio": "false",
+ "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
+ "kling_credits_before": 43851.0
+}

@@ -1,0 +1,40 @@
+{
+ "beat": "HK-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Mama, when did that happen?\": Keep this picture exactly as it is — the top of the staircase, the landing behind it, the photo wall, the handrail, the two women and their clothes, the light — and move the viewpoint up to the 9th step, close behind the daughter. Image 1 is the confirmed frame of this beat.\nMedium close-up over the daughter's right shoulder: she stands on the 14th and top step with her back three-quarter to us, her olive shoulder and afro puff soft in the near right foreground, right hand on the handrail; her mother on the landing two paces beyond, body turned along it, head turned back over her left shoulder, a small knowing smile, mouth closed, eyes on her daughter, both hands free at her sides; the mother sharp, the landing wall and balusters of Image 1 behind her exactly as they are.\nIn the frame: the two women, the top steps, the landing's balusters and rail, the landing wall of Image 1; every other surface bare. Two legs each.\nThe render and light of Image 1, a catchlight in each eye. Clothing and walls plain — no lettering, logos or labels; no third person; no window.",
+ "script_line": "Mama, when did that happen?",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "HK-03a v6 B (confirmed frame)",
+   "kind": "frame"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "4122ca3c0e3d17a8c4ef2d90f9d03d49 (Old copy of v6; Higgsfield job 4e7f3ff7…)",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22",
+  "HT05",
+  "HT23"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "wrong location"
+}

@@ -472,3 +472,23 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **B10d v3** (Kie AI nano-banana-2 — Higgsfield still slow): Maureen at the kitchen worktop, side-on, pink cardigan, eyes closed, swallowing a painkiller with a glass of water, the blister pack by her hand. Flaw: the worktop reads as grey speckled stone, not the pale oak. To check; v2 (smoke alarm) → Old 2. Act map row → R1, L-KITCHEN, EYE PRO MEDIUM; angles: only the known B19b/B19-BR2 jump.
 - Kie balance 255,872.8 (shared — it moved 126 during this one call, so the card's 8 cr is an estimate).
 - User "CONFIRM" B10d v3 → **video v2 on Kie AI Kling 3.0** (5 s, ~150 cr): she swallows, lowers the glass, a tired breath, hand on the worktop — clean. To check. Kie 255,710.8.
+
+### 2026-10-01 — Hook 1 first line: new multiple B-roll ("GIVE ME NEW MULTIPLE DIFFERENT BROLL HERE")
+- Line "Your knees have been taking seventeen times your bodyweight on every step for forty years, and you never felt a thing." now cut as four shots: HK1-a (Desmond up his stairs with two heavy shopping bags, low side-on, R2+P2), HK1-a2 (Maureen's plimsoll landing on the stone step, ground ECU, R1+P3), HK1-b (Maureen's hand holding a 1980s photo of herself hiking, high three-quarter CU, R1+P4), HK1-b2 (Maureen walking towards camera with a tote bag, smiling, R1+P3). Act map rewritten; angles pass (only the known B19b/B19-BR2 jump).
+- Images on Kie nano-banana-2 (Higgsfield still stuck), on Current 2 as `review`. Flaws reported: HK1-a trainer shows a Nike swoosh; HK1-a2 is a kerb on the pavement, not her front-door step; HK1-b2 is on the pavement, not up her front path. Videos after the user confirms.
+- Old HK1-a / HK1-b (image + video, both confirmed) moved to Old 2 (images 811caf95…, 8f31e6c4…; videos a427f0da…, baf1a632…) and removed from Current.
+
+### 2026-10-01 — "FIX THOSE" on the new Hook 1 shots (+ board notes HK1-a "FIX BROLL", HK1-b "DIFFERENT BROLL")
+- HK1-a v2: edit of v1 on Kie, swoosh gone (plain white trainers, navy heel tab). The bags changed a little in the edit.
+- HK1-a2 v2: her stone front-door step with the open front door and coir mat behind. Heel lifting rather than landing.
+- HK1-b v2: new shot for "for forty years": her stair carpet worn thin down the middle of the treads, her plimsoll on it (act map row changed to L-M-STAIRS). Flaws: reads as looking UP the flight, not down; the flight runs along the left wall (plate has it on the right); the wear is subtle.
+- HK1-b2 v2: shot from her doorstep down the garden path, gate and bins behind. Flaw: she looks into the lens.
+- All v1s moved to Old 2 (new HK1-a2 / HK1-b2 Old docs; HK1-a / HK1-b appended as v2 there) and deleted from Current 2.
+
+### 2026-10-01 — "MAKE ME A DIFFERENT BROLLS FOR OUR HOOK 1, WITH ANATOMY"
+- Hook 1's first line is now four anatomy shots, one per phrase, on the same cards (v3), on Kie nano-banana-2, as `review`:
+  HK1-a: the translucent figure, waist-down, stepping up the stairs, the leading knee glowing · HK1-a2 (meant to be overhead on the knee
+  landing on a step) · HK1-b: cutaway of the joint, the worn cartilage · HK1-b2: a whole translucent figure walking calmly, one spot glowing.
+- Flaws reported: HK1-a2 came out front-on with red muscles and the TEXT "PATELLAR TENDINOPATHY / PAIN POINT" (needs a Fix);
+  HK1-b's cartilage looks smooth and healthy, not worn, and the glow sits on the shin bone; HK1-a's front foot is cut by the frame edge.
+- The live-action v2s moved to Old 2 (appended there) and deleted from Current 2. Act map rows changed to ANAT.
