@@ -24,7 +24,7 @@
  "framing": "MEDIUM from the hall: N on the stairs the old way — side-on, both hands on the rail, one foot feeling for the step below",
  "motionPlan": "From this frame: one slow step down — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: side, waist-up, camera still",
- "pinEnd": "yes",
+ "pinEnd": "no",
  "angle": "high · profile · through · MEDIUM — high through the balusters = the years of it",
  "focus": "deep · deep",
  "light": "landing window at the top of the stairs, south wall · key L · morning · problem: grey · 6500K",
@@ -33,6 +33,6 @@
  "eg": "",
  "music": "MUS-OFFER",
  "ledger": "F1",
- "updatedAt": 1790858547525,
- "endFrame": "C-08a-END"
+ "updatedAt": 1790860191625,
+ "pinWaived": "user 2026-10-01: \"we dont need end frame\""
 }

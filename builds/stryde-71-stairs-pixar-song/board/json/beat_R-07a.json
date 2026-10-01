@@ -24,7 +24,7 @@
  "framing": "MEDIUM from the hall floor: N at the very top of the stairs takes the first step down facing forwards, hands at her sides, the strap on her bare right knee",
  "motionPlan": "From this frame: one step down, facing forwards — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: camera at the bottom, subject 1 step, hands free",
- "pinEnd": "yes",
+ "pinEnd": "no",
  "angle": "low · front · clean · MEDIUM — low = resolve",
  "focus": "product · deep",
  "light": "front-door sidelights, west wall · key L · afternoon · after: sun through the sidelights · 5600K",
@@ -33,6 +33,6 @@
  "eg": "",
  "music": "MUS-TURN",
  "ledger": "",
- "updatedAt": 1790858547525,
- "endFrame": "R-07a-END"
+ "updatedAt": 1790860191625,
+ "pinWaived": "user 2026-10-01: \"we dont need end frame\""
 }
