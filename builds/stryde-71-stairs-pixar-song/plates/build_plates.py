@@ -110,3 +110,51 @@ if __name__ == "__main__":
         p = "\n\n".join(v["body"]); out[k] = dict(loc=v["loc"], attach=v["attach"], prompt=p)
         pathlib.Path(__file__).parent.joinpath(f"{k}.prompt.txt").write_text(p); print(k, len(p), v["attach"])
     json.dump(out, open(pathlib.Path(__file__).parent / "plates.json", "w"), indent=1)
+
+# ---------------- v2 (user Fix, 2026-10-01) ----------------------------------------------------------------
+# P1-LANDING: "NOT THE SAME AS THE P0 PROP N" → HT17 / §6A Part 2 rule 3: an image EDIT of the confirmed P0 (Image 1), the same
+# flight seen from its top; every fixed feature on the correct screen side for the new angle.
+# P2-KITCHEN: "I NEED A NEW UNIQUE ARANGEMENTS HERE" → a new, specific, personal kitchen of the same house (P0 attached), not a catalogue oak kitchen.
+V2 = {}
+V2["P1-LANDING"] = dict(loc="L-N-LANDING", attach=["P0-PROP-N"], edit_of="P0-PROP-N", body=[
+  "Keep this house exactly as it is. Image 1 is the confirmed property plate of this hall: the straight staircase rising along the hall's right-hand wall, "
+  "carpeted in the worn beige runner with brass rods, white balusters and a dark oak handrail on its open side, a square white newel post at the bottom step, "
+  "the whole stair wall hung with the family photographs in mismatched frames climbing diagonally beside the steps, the brass-and-frosted flush light, "
+  "the warm greige walls, white baseboards and casings, white six-panel doors with round brass knobs, honey oak floorboards in the hall, the front door with "
+  "its narrow glass sidelights, the grey console table with the bowl, the coat tree with the navy raincoat and the straw hat, the open kitchen doorway at the far end. "
+  "Change only the camera: now it stands on the upstairs landing at the TOP of that same flight, at standing chest height, looking straight back DOWN the stairs to the hall. "
+  "So the same flight drops away from the bottom of the frame to the hall floor; the same photo wall with the same frames is now on the LEFT, the frames stepping down "
+  "beside the steps; the same white balusters and dark oak rail run down the RIGHT side of the flight to the same square newel at the bottom; at the foot of the stairs "
+  "the same honey oak hall floor, and beyond it the same front door with its glass sidelights glowing; the kitchen doorway is behind the camera and not in frame. "
+  "Around the camera the landing itself: the worn beige carpet continuing from the stair runner across the landing floor, the greige walls, a white six-panel bedroom "
+  "door ajar on the left wall of the landing, a small window with a sheer white curtain on the right wall of the landing throwing soft daylight across the top steps. "
+  "Nothing else is new: no second staircase, no balustrade well, no gallery, no extra doors, no new furniture, no new pictures — the same house, the same stairs, from the top.",
+  OPEN,
+  PIX + " Here: the key is the soft daylight from the landing window on the right (the window faces south), about forty-five degrees to the camera; the fill is the warm "
+  "afternoon light from the front-door sidelights rising up the flight from the hall below, a quarter as strong; the rim is that hall light edging the balusters and the "
+  "top of the newel. The landing a stop darker than the hall below.",
+  CAP, NEG("NEG-PROP", "NEG-SCENE", extra="no square stairwell, no balustrade on three sides, no gallery landing, no second flight, no photo wall on the right, no rail on the left, no frames in a new arrangement")])
+
+V2["P2-KITCHEN"] = dict(loc="L-N-KITCHEN", attach=["P0-PROP-N"], body=[OPEN, PROP_REF,
+  "A single rendered frame of the kitchen of a " + PROP_N["[TYPE AND ERA]"] + " house in a tree-lined suburb of Atlanta, Georgia — a Southern grandmother's kitchen, "
+  "personal and particular, nothing from a catalogue — seen from the doorway from the hall: " + fill(S("PROP-SHELL"), SHELL_N) +
+  " THE ARRANGEMENT, counted and closed. On the far wall, under the window over the sink (a sash window with a lace café curtain on a brass rod, a red geranium "
+  "in a clay pot on the sill), a run of cabinets painted a soft sage green with worn brass pulls and a butter-yellow laminate counter; a white enamel double sink; "
+  "an old cream electric range on the left wall with a row of three cast-iron skillets hanging on hooks above it and a tin of wooden spoons; a tall white refrigerator "
+  "on the right wall with grandchildren's crayon drawings held by fruit magnets (no readable words) and a church hand-fan tucked in the door handle. In the window corner "
+  "on the right, a breakfast nook: a round oak pedestal table with a white lace tablecloth and four spindle-back chairs, one with a floral seat cushion, set into the "
+  "corner by the window. On the table: a wooden lazy Susan crowded with orange prescription pill bottles (plain white labels, no readable text), a tube of pain-relief "
+  "gel, a glass of water, a coffee mug and a sweet-tea pitcher with lemon slices. On the counter: a wooden bowl of peaches and a glass cake stand with a pound cake "
+  "under its dome. A wall-mounted beige telephone with its long coiled cord beside the doorway; a plain wall calendar beside the refrigerator (no readable text); "
+  "a braided oval rag rug in front of the sink on the cream vinyl tile. Nothing else on the counters. Empty — nobody in frame.",
+  PIX + " Here: the key is cool morning daylight from the sink window on the far wall (the window faces south), broad and soft across the nook table; the fill is "
+  "a faint warm light from the range hood's small bulb on the left, a quarter as strong; the rim is the bright window edge behind the table catching the chair backs, "
+  "the pitcher and the rim of the mug. Warm bounce off the yellow counter into the shadow side of the table.",
+  CAP, NEG("NEG-PROP", "NEG-SCENE", extra="no oak cabinets, no plain modern kitchen, no island, no stainless steel, no gingham, no catalogue kitchen")])
+
+if __name__ == "__main__" and True:
+    for k, v in V2.items():
+        p = "\n\n".join(v["body"]); pathlib.Path(__file__).parent.joinpath(f"{k}.v2.prompt.txt").write_text(p); print("v2", k, len(p))
+    out = json.load(open(pathlib.Path(__file__).parent / "plates.json"))
+    for k, v in V2.items(): out[k + "@v2"] = dict(loc=v["loc"], attach=v["attach"], edit_of=v.get("edit_of"), prompt="\n\n".join(v["body"]))
+    json.dump(out, open(pathlib.Path(__file__).parent / "plates.json", "w"), indent=1)
