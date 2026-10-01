@@ -1,0 +1,163 @@
+{
+ "audio": "../vo/trim_tight/VO_T1_V4.mp3",
+ "script": "../vo/V4.lines.txt",
+ "base": null,
+ "broll": [
+  {
+   "beat": "D-HKa",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-HKa.mp4",
+   "phrase": "Too bad your golf clubs are still in the garage.",
+   "max": 6
+  },
+  {
+   "beat": "D-HKb",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-HKb.mp4",
+   "phrase": "Thanks to these life-changing knee straps, not for much longer.",
+   "max": 6
+  },
+  {
+   "beat": "SH-01",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/SH-01.mp4",
+   "phrase": "Built over three years with orthopaedic surgeons,",
+   "max": 6
+  },
+  {
+   "beat": "SH-02",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/SH-02.mp4",
+   "phrase": "to do what sleeves and braces never could.",
+   "max": 6
+  },
+  {
+   "beat": "SH-03",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/SH-03.mp4",
+   "phrase": "Perfect for bone on bone, arthritis, worn cartilage and meniscus pain.",
+   "max": 6
+  },
+  {
+   "beat": "D-01",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-01.mp4",
+   "phrase": "A round is hours on your feet.",
+   "max": 6
+  },
+  {
+   "beat": "D-02",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-02.mp4",
+   "phrase": "Every stride,",
+   "max": 6
+  },
+  {
+   "beat": "MECH-01",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/MECH-01.mp4",
+   "phrase": "seventeen times your bodyweight goes through one small spot below your kneecap.",
+   "max": 6
+  },
+  {
+   "beat": "D-03",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-03.mp4",
+   "phrase": "By the back nine, that spot is finished.",
+   "max": 6
+  },
+  {
+   "beat": "D-04",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-04.mp4",
+   "phrase": "This strap sits two centimetres below the kneecap",
+   "max": 6
+  },
+  {
+   "beat": "MECH-02",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/MECH-02.mp4",
+   "phrase": "takes the weight off it.",
+   "max": 6
+  },
+  {
+   "beat": "D-05",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-05.mp4",
+   "phrase": "And the pain just lifts.",
+   "max": 6
+  },
+  {
+   "beat": "D-06",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-06.mp4",
+   "phrase": "So you walk the course instead of watching it.",
+   "max": 6
+  },
+  {
+   "beat": "D-07",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-07.mp4",
+   "phrase": "All eighteen.",
+   "max": 6
+  },
+  {
+   "beat": "D-08",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-08.mp4",
+   "phrase": "No buggy.",
+   "max": 6
+  },
+  {
+   "beat": "NS-06",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/NS-06.mp4",
+   "phrase": "Sits flat under your trousers.",
+   "max": 6
+  },
+  {
+   "beat": "SH-04a",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/SH-04a.mp4",
+   "phrase": "No slipping.",
+   "max": 6
+  },
+  {
+   "beat": "SH-04b",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/SH-04b.mp4",
+   "phrase": "No sores.",
+   "max": 6
+  },
+  {
+   "beat": "SH-04c",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/SH-04c.mp4",
+   "phrase": "No rolling down.",
+   "max": 6
+  },
+  {
+   "beat": "D-09",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-09.mp4",
+   "phrase": "Sports doctors recommend it.",
+   "max": 6
+  },
+  {
+   "beat": "NS-07",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/NS-07.mp4",
+   "phrase": "Over two hundred thousand people wear one now.",
+   "max": 6
+  },
+  {
+   "beat": "SH-05",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/SH-05.mp4",
+   "phrase": "Buy one, get one free today at getstryde.co.",
+   "max": 6
+  },
+  {
+   "beat": "D-10",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-10.mp4",
+   "phrase": "One for each knee.",
+   "max": 6
+  },
+  {
+   "beat": "SH-06",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/SH-06.mp4",
+   "phrase": "Sixty-day money-back guarantee.",
+   "max": 6
+  },
+  {
+   "beat": "D-11",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-11.mp4",
+   "phrase": "Book the tee time.",
+   "max": 6
+  },
+  {
+   "beat": "D-12",
+   "clip": "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/finalD/clips/D-12.mp4",
+   "phrase": "Nothing to lose but the pain.",
+   "max": 6
+  }
+ ]
+}
