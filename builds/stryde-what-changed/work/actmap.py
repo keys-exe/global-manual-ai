@@ -284,9 +284,9 @@ BB("B18a", A4, "It is that the knee stops feeling like a rusty hinge.", "hinge",
    "one pull, about a second", STILL, "crouched, hands at the laces, camera still", "no", "worn", "VISIBLE", "NBP",
    LOW, FRO, "clean", "MEDIUM", "low = at his knee, the bend is the point", "product", "medium", L(D_SUN, "R"), True, ledger="F9", mx=3)
 BB("B18b", A4, "They stop planning the stairs before they get to them.", "stairs", "outcome (F9)",
-   "R1", "L-M-STAIRS", "M-D2", "WIDE from the foot of the stairs: Maureen coming down facing forwards, Stryde on both knees, both hands down and empty, an easy bright smile (fixes: both knees; positive, no banister; 'keep her hands down, don't hold anything')", "one step down, facing forwards",
-   "one step, about a second and a half", STILL, "stairs: facing forwards, full figure small in frame, camera still at the foot", "no", "worn", "VISIBLE", "NBP",
-   LOW, FRO, "clean", "WIDE", "low from the foot = she comes down to us, resolve", "deep", "deep", L(M_SUN, "L"), True, ledger="F9")
+   "R1", "L-M-STAIRS", "M-D2", "knee-level, front-on from the bottom stairs: Maureen walking straight onto the bottom stair mid-stride without slowing, Stryde front-on and large on both knees (board Fix 2026-10-01 'GIVE ME DIFFERENT BROLL HERE, MAKE SURE PRODUCT IS RIGHT'; edit of the confirmed B22a v4)", "she steps up onto the bottom stair without breaking stride",
+   "one step, about a second and a half", STILL, "stairs: front-on, skirt hem to feet, camera still on the stairs", "no", "worn", "VISIBLE", "NBP",
+   EYE, FRO, "clean", "MS", "level with her knees from the stairs = she comes at the stairs without a second thought", "deep", "deep", L(M_SUN, "L"), True, ledger="F9")
 TH("B19-TH", A4, "And you do not have to take my word for any of it.")
 BB("B19a", A4, "Put one on one knee only. Leave the other bare.", "bare", "the self-test",
    "R1", "L-M-STAIRS", "M-D2", "CU seated on the bottom stair: both knees side by side, the strap on the right, the left bare", "her hands rest on her thighs; she breathes out",
