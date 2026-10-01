@@ -87,3 +87,24 @@ def write_start3():
     c = json.load(open(HERE / "clips" / "D-HKb.img3.call.json"))
     c.update(prompt=PROMPT3, fix_note="CHANGE THE ANGLE → side-on → three-quarter front, walking diagonally toward the camera")
     (HERE / "clips" / "D-HKb.img4.call.json").write_text(json.dumps(c, indent=1)); print("START3", len(PROMPT3))
+
+# Round 6 (board Fix "MAKE HE HIITING THE BALL", 2026-10-01): he plays a shot — start frame at address on the tee (face-on golf angle),
+# the clip is one smooth swing through the ball to a balanced finish (in place, not travel). Same natural look.
+PROMPT4 = f"""For the line "{LINE}": on the tee he stands over his ball at address, driver behind the ball, about to swing.
+Medium-full shot from hip height, face-on (square to his chest), normal phone lens, head to feet, the ball on its tee in frame, the fairway behind him.
+Image 1: the strap (three-quarter). Image 2: the strap worn. Image 3: the course. Image 4: the man. Image 5: his outfit.
+{STRAP} The same man as Image 4 in the polo and sleeveless pullover of Image 5, grey shorts, white-and-tan golf shoes, knees softly flexed.
+Both hands together on one driver grip, arms hanging; looking down at the ball, mouth closed.
+In the frame: one man, one driver, one ball on a white tee, the tee box and fairway; nothing else.
+Soft late light through thin cloud, muted natural colour, real skin. An ordinary iPhone photo, nothing retouched.
+Clothing plain — no lettering or logos but the strap's own wordmark."""
+SWING = "From this frame: he swings back and through in one smooth swing, hits the ball and holds a balanced finish, about three seconds."
+def write_start4():
+    from actD import C4, COURSE, TQ, WF, R
+    refs = [R("product_tq_left.jpg", "product", TQ), R("worn_front.jpg", "product", WF), R("P6-COURSE plate", "location", COURSE),
+            R("C4 Graham sheet", "character", C4), R("D-05 (good-round outfit)", "frame", SP + "D-05.A.png")]
+    (HERE / "prompts" / "D-HKb.v74d.txt").write_text(PROMPT4)
+    c = json.load(open(HERE / "clips" / "D-HKb.img4.call.json"))
+    c.update(prompt=PROMPT4, refs=[{"label": r["label"], "kind": r["kind"]} for r in refs], ref_urls=[r["url"] for r in refs], motion_plan=SWING,
+             fix_note="MAKE HE HIITING THE BALL → walking → at address on the tee, face-on; the clip is one swing through the ball")
+    (HERE / "clips" / "D-HKb.img5.call.json").write_text(json.dumps(c, indent=1)); print("START4", len(PROMPT4))

@@ -1,0 +1,60 @@
+{
+ "beat": "D-HKb",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Thanks to these life-changing knee straps, not for much longer.\": on the tee he stands over his ball at address, driver behind the ball, about to swing.\nMedium-full shot from hip height, face-on (square to his chest), normal phone lens, head to feet, the ball on its tee in frame, the fairway behind him.\nImage 1: the strap (three-quarter). Image 2: the strap worn. Image 3: the course. Image 4: the man. Image 5: his outfit.\nThe strap in Image 1 copied exactly \u2014 same shell, band, slides and wordmark, nothing redesigned \u2014 12 \u00d7 5 cm, about a quarter of the frame wide, seated just below his right kneecap as in Image 2, the kneecap uncovered. The same man as Image 4 in the polo and sleeveless pullover of Image 5, grey shorts, white-and-tan golf shoes, knees softly flexed.\nBoth hands together on one driver grip, arms hanging; looking down at the ball, mouth closed.\nIn the frame: one man, one driver, one ball on a white tee, the tee box and fairway; nothing else.\nSoft late light through thin cloud, muted natural colour, real skin. An ordinary iPhone photo, nothing retouched.\nClothing plain \u2014 no lettering or logos but the strap's own wordmark.",
+ "script_line": "Thanks to these life-changing knee straps, not for much longer.",
+ "face": true,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "product_tq_left.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "P6-COURSE plate",
+   "kind": "location"
+  },
+  {
+   "label": "C4 Graham sheet",
+   "kind": "character"
+  },
+  {
+   "label": "D-05 (good-round outfit)",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP07",
+  "FP11",
+  "FP12",
+  "HT01",
+  "HT06",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: he swings back and through in one smooth swing, hits the ball and holds a balanced finish, about three seconds.",
+ "ref_urls": [
+  "products/stryde/stryde_refs/product_tq_left.jpg",
+  "products/stryde/stryde_refs/worn_front.jpg",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133541_e02553d3-aafb-4345-a6ef-97a97052c6fe.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_2bd591b1-d203-465c-aa46-7753d7f613e6.png",
+  "/tmp/claude-0/-home-user-global-manual-ai/d5ebeecb-012d-539f-a9cc-ff2ce5209b53/scratchpad/actD/D-05.A.png"
+ ],
+ "fix_note": "MAKE HE HIITING THE BALL \u2192 walking \u2192 at address on the tee, face-on; the clip is one swing through the ball"
+}
