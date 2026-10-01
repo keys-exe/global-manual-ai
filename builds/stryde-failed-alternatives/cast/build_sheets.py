@@ -38,6 +38,19 @@ CAST = {
    body="A white British woman of Welsh heritage. Tall and very thin, bony shoulders and long thin legs, fifty-seven years old",
    ward="A purple waterproof jacket zipped to the chest over a black base layer, black running shorts ending just above the knee so both knees are bare, grey trail shoes",
    age="weathered lines around the eyes from outdoor light, fine lines across the forehead and around the mouth, freckling on the forearms, thin skin over the knees and the backs of the hands"),
+ "R1-BERNADETTE": dict(sex="WOMAN", side="left", wall="pale lilac", floor="worn green hall carpet",
+   face="A wide face with a broad flat forehead, round full cheeks, small deep-set dark eyes, a short broad nose and a small neat mouth. Three small dark moles in a row along her left jawline — her one marker. The left cheek sits a touch higher than the right",
+   hair="Grey-and-black hair in short locs that reach her jaw, worn loose, the same length and the same grey in every panel",
+   body="A Black British woman of Nigerian heritage. Small and slight, narrow shoulders, thin arms, sixty-nine years old",
+   ward="A rust-orange roll-neck jumper under an olive-green quilted gilet, a charcoal jersey skirt ending just above the knee so both knees are bare, burgundy suede trainers",
+   age="soft creases at the outer eyes, fine lines across the forehead, folds from the nose to the mouth, a few small dark raised spots on the cheekbones, loose skin at the throat, darker skin over the knuckles and knees"),
+ "R3-DELROY": dict(sex="MAN", side="right", wall="pale mint green", floor="scuffed parquet",
+   face="A long rectangular face with a heavy brow ridge, deep-set dark eyes, a wide nose and a broad mouth, clean-shaven. A thick raised scar running down the outside of his right forearm — his one marker. The right side of his jaw is a little heavier than the left",
+   hair="Salt-and-pepper hair, still mostly black, cut in a short flat-top with the sides faded close, the same shape and the same grey in every panel",
+   body="A Black British man of Jamaican heritage. Tall and heavy, a broad chest and a big belly, thick legs, sixty years old",
+   ward="A royal-blue tracksuit top zipped halfway over a white T-shirt, grey jersey shorts ending just above the knee so both knees are bare, black-and-white leather trainers",
+   age="deep lines across the forehead, creases at the outer eyes, heavy folds from the nose to the mouth, a few small dark raised spots on the cheeks, a soft fold under the jaw, darker, drier skin over the knuckles and knees")
+
 }
 def build(k, c):
     sheet = S("AVATAR-SHEET")

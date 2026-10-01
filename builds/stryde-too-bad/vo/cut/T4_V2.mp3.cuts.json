@@ -1,0 +1,34 @@
+{
+ "src": "cut/T4_V2.mp3",
+ "duration": 59.71,
+ "cuts": [
+  3.16
+ ],
+ "ranges": {
+  "HK2": [
+   0.0,
+   3.16
+  ],
+  "BODY2": [
+   3.16,
+   59.71
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ],
+  [
+   "replace",
+   "knock offs",
+   "knockoffs"
+  ]
+ ]
+}

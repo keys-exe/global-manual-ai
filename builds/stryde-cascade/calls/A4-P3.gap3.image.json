@@ -1,0 +1,38 @@
+{
+ "beat": "A4-P3",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Thirty four percent less strain. Measured.\": the knee from the side as bodyweight lands, with the strap exactly as in the attached strap anatomy frame — a small rigid black shell about 12 × 5 cm, no wider than the kneecap, on a thin band — seated just below the kneecap on the patellar tendon, never over the joint. Above and below it the tendon glows hot red; under the shell it is calm cool amber: visibly less strain. Side view, the knee filling the frame, one leg. Premium 3D anatomical render exactly in the style of the attached anatomy frame: near-black background, faint translucent body shell, warm red layered muscle, ivory bone, cool key light and warm under-glow. No text, no numbers, no arrows.",
+ "script_line": "Thirty four percent less strain. Measured.",
+ "face": false,
+ "room": false,
+ "product": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "A4-M1 confirmed (anatomy with the strap)",
+   "kind": "frame",
+   "id": "fc400c13-25a4-409a-b275-0ccf9d5a18a4"
+  },
+  {
+   "label": "A2-M3 confirmed (anatomy style)",
+   "kind": "frame",
+   "id": "72d41a87-6298-4032-b626-2ca1e7e571bd"
+  }
+ ],
+ "taste": [
+  "HT11",
+  "FP02",
+  "FP03"
+ ],
+ "anatomy": true,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "as the knee bends slightly under load, the tendon's hot red glow cools to a calm amber, the strap holding it, 3s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "user Fix: \"fix the product\" → the strap rendered as a wide band over the joint; now the small shell seated below the kneecap as the A4-M1 frame",
+ "act": "Act 4"
+}

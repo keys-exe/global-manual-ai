@@ -1,0 +1,39 @@
+{
+ "beat": "A4-B3",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Three years with orthopedic surgeons.\": on a clean clinic desk, a white life-size knee joint model, and a clinician's gloved hand holding its base. The strap is fitted just below the model's kneecap on its tendon, exactly the product in the attached front photo — the strap is small — a rigid black W-topped shell about 12 × 5 cm, narrower than the knee, on one soft black knit band that loops once round the leg — one band only, fastened once behind, the black shell clean with nothing inside or under it. Seated as in the attached worn frame. Eye level, close, the model and strap sharp; a plain clinic room soft behind. One hand, no face, nothing written. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "Three years with orthopedic surgeons.",
+ "face": false,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "STRYDE front photo",
+   "kind": "product",
+   "id": "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5"
+  },
+  {
+   "label": "A4-B1 confirmed (C2 wearing the strap)",
+   "kind": "frame",
+   "id": "6c8f404b-135e-4b02-b48a-3ef1f2cea15a"
+  }
+ ],
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "HT06"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "a gloved hand turns the knee model a quarter turn to show the strap on the tendon, one turn, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "user Fix: \"remove that excess strap inside the silicon pad\" → a second band and grey inner strip showed; now one band, clean shell"
+}

@@ -1,0 +1,39 @@
+{
+ "beat": "B-11a",
+ "status": "review",
+ "prompt": "{\"shot\":\"b_11a\",\"subject\":\"A woman's right leg beside a bed, an olive trouser leg rolled above the knee, the strap on the knee.\",\"camera\":{\"movement\":\"Camera already drifting on the first frame, never static at entry. Continuous low-amplitude breath sway throughout, roughly one cycle per two seconds, mostly vertical with a slight roll. Focus soft for a moment at entry, then settles. One deliberate reframe in the back half as the operator notices the subject sitting off-centre \u2014 corrects part of the way, not fully. Camera lags behind the subject, never anticipates it and never moves with it. Still drifting on the final frame.\",\"framing\":\"As in the start frame.\"},\"motion\":\"One action at a slow, careful pace: her hand smooths the trouser leg down over the knee, the fabric sliding over the strap, which stays locked on the knee under it. The strap keeps its exact shape, size and wordmark in every frame and moves only with the leg or hand that carries it; its rigid shell never bends, flexes or changes proportion. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly \u2014 motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no wordmark changing, no second strap, no strap sliding up or down the leg, no strap turning into a narrow band, no strap falling, no strap coming off, no strap at the ankle, no strap moving with the fabric, no second person appearing, no camera travelling with the subject, no zoom, no music, no speech\"}",
+ "videoAsset": "7e920f7370f50bc99565a5bc4cacc125",
+ "videoUrl": "https://tempfile.aiquickdraw.com/k/a8ca148bfaf8c4f5959b64e6d9adde74_1_1790729059_7634.mp4",
+ "videoAt": 1790729066870,
+ "credits": 54.0,
+ "videoVersions": [
+  {
+   "asset": "45c79139c703e669c4014d9f8e472830",
+   "at": 1790698962951,
+   "connector": "Kie AI",
+   "credits": 54,
+   "model": "kling-3.0 pro (Kie AI)",
+   "note": "",
+   "size": 4934888,
+   "type": "video/mp4",
+   "url": "https://tempfile.aiquickdraw.com/k/eb7ae2760cfb7f83908509eec617d3ff_1_1790698955_3940.mp4",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "21271293d5312123c8c62d633f6c9614"
+  },
+  {
+   "v": 2,
+   "asset": "7e920f7370f50bc99565a5bc4cacc125",
+   "type": "video/mp4",
+   "url": "https://tempfile.aiquickdraw.com/k/a8ca148bfaf8c4f5959b64e6d9adde74_1_1790729059_7634.mp4",
+   "model": "kling-3.0 pro (Kie AI)",
+   "connector": "Kie AI",
+   "credits": 54.0,
+   "size": 5518893,
+   "at": 1790729066870,
+   "note": "fix the product in the knee even the trouser going down"
+  }
+ ],
+ "regens": 1,
+ "updatedAt": 1790729104285
+}

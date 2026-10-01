@@ -1,0 +1,29 @@
+{
+ "src": "cut/T8_V1.mp3",
+ "duration": 55.381,
+ "cuts": [
+  3.01
+ ],
+ "ranges": {
+  "HK1": [
+   0.0,
+   3.01
+  ],
+  "BODY1": [
+   3.01,
+   55.381
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ]
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "beat": "HK2-B3",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"I would like to stop being called back for the second one.\": from this frame, sitting still in the van's side door, phone at his ear, he lowers his eyes and gives one small nod, 3s. Handheld phone, a slight natural sway, the camera never follows her. He stays seated in the van door; phone and hand stay at his ear. No morphing, no extra fingers, no music.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap2/HK2-B3.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "I would like to stop being called back for the second one.",
+ "motion_plan": "sitting still in the van's side door, phone at his ear, he lowers his eyes and gives one small nod, 3s",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "taste": [
+  "HT12"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ]
+}

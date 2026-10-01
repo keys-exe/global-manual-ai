@@ -1,0 +1,32 @@
+{
+ "beat": "BR-064",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"act6_copy_snaps\",\"subject\":\"THE SAME LEG, KITCHEN CHAIR AND BRAND-NEW CHEAP IMITATION STRAP as in the start frame, the thin band wrapped round the leg below the knee; unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CU as in the start frame: low, shin height, profile, the knee, the shin and the tiled floor below. FOCUS: the imitation is sharp.\"},\"motion\":\"CONTINUING: the imitation sits tight on the leg, the thin band stretched beside one buckle. COMPLETING: one snap and fall, about three seconds — the thin nylon band snaps apart right beside the buckle with a small flick, its two loose ends springing back; the imitation loosens, slides down the shin and drops to the tiled floor in frame, landing with one small bounce and settling there. UNRESOLVED: the imitation lies on the floor, the leg bare and still. Apart from the band snapping at the buckle, everything in frame keeps its exact form, proportion and count first frame to last — nothing melts, merges, grows or becomes something else. One action, completing inside the clip, the imitation in frame throughout, landing in frame. Mass and momentum: the band snaps suddenly, the imitation falls under its own weight and settles, nothing at uniform speed.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, soft kitchen window daylight, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no wordmark, no chrome, no leg moving, no hands, no face, no music, no shell breaking into pieces, no band snapping anywhere but beside the buckle, no imitation leaving frame, no second strap, no leg kicking, no slow motion, no sound\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_120149_ced2e2c5-0418-4c52-87a4-4ebdcc9d851f.png",
+ "start_approved": true,
+ "pinned": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "the shell shatters or splits",
+   "prevented_by": "only the band snaps, beside the buckle; no shell breaking into pieces"
+  },
+  {
+   "risk": "the imitation falls out of frame",
+   "prevented_by": "lands on the tiled floor in frame; no imitation leaving frame"
+  },
+  {
+   "risk": "the leg moves or kicks",
+   "prevented_by": "the leg stays still; no leg kicking"
+  }
+ ],
+ "audio": false,
+ "fix_note": "frame fault: v1 clip was a worn copy sagging down the shin (user Fixes: a brand-new imitation, the band round the knee, then it snaps and falls to the floor) → new start frame v4 confirmed by the user; motion rewritten as one snap at the buckle and the fall to the floor, sound off"
+}

@@ -1,0 +1,54 @@
+{
+ "src": "full/VO_T5.mp3",
+ "duration": 111.92,
+ "cuts": [
+  3.07,
+  56.39,
+  59.06
+ ],
+ "ranges": {
+  "HK1": [
+   0.0,
+   3.07
+  ],
+  "BODY1": [
+   3.07,
+   56.39
+  ],
+  "HK2": [
+   56.39,
+   59.06
+  ],
+  "BODY2": [
+   59.06,
+   111.92
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ],
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ],
+  [
+   "replace",
+   "knock offs",
+   "knockoffs"
+  ]
+ ]
+}

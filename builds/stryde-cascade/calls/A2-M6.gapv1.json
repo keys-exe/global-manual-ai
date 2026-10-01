@@ -1,0 +1,43 @@
+{
+ "beat": "A2-M6",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"Coming down, nothing does.\": from this frame, the leg lowers the body down one step; the thigh muscle dims and the tendon under the kneecap flares red, 2s. The camera holds still on the render, one slow even light pulse, nothing else moves. Exactly one leg, one kneecap, one foot, both steps rigid. No text, no arrows, no extra limbs.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap3/A2-M6.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "Coming down, nothing does.",
+ "motion_plan": "the leg lowers the body down one step; the thigh muscle dims and the tendon under the kneecap flares red, 2s",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "taste": [
+  "HT11",
+  "HT03"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ]
+}

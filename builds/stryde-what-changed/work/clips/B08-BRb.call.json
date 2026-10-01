@@ -1,0 +1,33 @@
+{
+ "beat": "B08-BRb",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b08_brb\",\"subject\":\"A Black British man of sixty-six with close-cropped grey-white hair and a short grey-white beard, seen from above on his carpeted stairs, a navy zip-neck top, dark grey shorts, bare knees, one hand on the dark handrail, the other gripping the front of his knee, black-framed football team photos on the grey wall beside him. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already stopped on the first frame: his hand squeezes the front of his knee once and holds it, his head dips a little as he looks down at it, and his brow draws into a surprised, caught-out frown — he stays where he is on the stair. Small and quiet, real time. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no stepping, no falling, no wincing in agony, no looking at the camera, no second person, no knee strap, no extra hands, no extra fingers, no photos changing, no music, no speech, no slow motion\"}",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_103917_57a208e9-a3f0-44c8-9602-b7a6f6ee6d42.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "his face drifts off the sheet",
+   "prevented_by": "small movement only, head dips a little, 3 s, HOLD-C"
+  },
+  {
+   "risk": "hand warps on the knee",
+   "prevented_by": "one squeeze and hold, 'no extra hands, no extra fingers', NEG-WARP-C"
+  },
+  {
+   "risk": "he climbs or steps and the legs warp",
+   "prevented_by": "'he stays where he is on the stair', 'no stepping'"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}

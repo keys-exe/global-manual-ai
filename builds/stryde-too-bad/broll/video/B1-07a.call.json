@@ -1,0 +1,34 @@
+{
+ "beat": "B1-07a",
+ "connector": "kling",
+ "route": "Kling 3.0 on Kie (kie.py kling), Kling connector out of credits",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b1_07a\",\"subject\":\"Exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"CU as in the start frame, high three-quarter: his hands on his right knee at the kitchen table.\"},\"motion\":\"Both his hands slowly rub the sides of his right knee through his grey trousers, one slow rub down and back over about three seconds, his head bowed a little; his body stays seated and still. The camera sways where it is. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Location, surface, dressing and light exactly as in the start frame. Nothing added, nothing removed.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no standing up, no trousers rolling up, no strap, no fingers passing through the fabric, no held pose, no looping motion, no reversed motion, no slow motion, no two separate actions in one clip, no music, no voice, no text, no captions\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "broll/v2/B1-07a_v1.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "fingers merge with the trousers",
+   "prevented_by": "HOLD-HC + negative"
+  },
+  {
+   "risk": "he stands (second action)",
+   "prevented_by": "stays seated + negatives"
+  },
+  {
+   "risk": "knee reshapes under the hands",
+   "prevented_by": "HOLD-C"
+  }
+ ]
+}

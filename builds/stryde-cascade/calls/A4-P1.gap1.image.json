@@ -1,0 +1,44 @@
+{
+ "beat": "A4-P1",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"The strap I keep in the van now is called Stryde.\": the fitter's hand lifts one strap out of a clear organiser box on the van shelf, turning it towards the lens, caught mid-lift. The strap is exactly the product in the attached front photo — the strap is small — a rigid black shell about 12 × 5 cm, no longer than a palm, on a black knit band, the wordmark readable; it rests across his palm with his thumb beside it, nothing covering the shell. His hand and navy fleece cuff match the attached talking-head frame. Eye level, close, the strap sharp; the van shelf from the attached van plate soft behind. One hand only. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "The strap I keep in the van now is called Stryde.",
+ "face": false,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "STRYDE front photo",
+   "kind": "product",
+   "id": "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5"
+  },
+  {
+   "label": "C-TH-FRAME (his workwear, his hands)",
+   "kind": "frame",
+   "id": "af785dc9-5a0d-4e5e-8952-752be522bf08"
+  },
+  {
+   "label": "PLATE-VAN",
+   "kind": "location",
+   "id": "b1cc1764-3e34-4b37-b8c6-0abf55cfe68e"
+  }
+ ],
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP06",
+  "HT06",
+  "HT07"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "his hand lifts the strap out of the open organiser box and turns it to face the lens, one slow lift, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render — this board has no A/B view"
+}

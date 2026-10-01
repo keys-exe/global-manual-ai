@@ -1,0 +1,49 @@
+{
+ "beat": "A5-B4b",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"You will know in a minute.\": the man is taking his last step off the bottom stair onto the hall floor, hands free at his sides, glancing down at his knee with a small pleased smile. The strap on his right knee just below the kneecap is exactly the product in the attached front photo — the strap is small — a rigid black shell about 12 × 5 cm, no longer than a palm, on a black knit band — his leg straight enough that it shows. Eye level from the hall, front, full body, his face sharp. He is the same man as the attached cast sheet, dressed as in the attached stairs frame; the hall exactly as in the attached plate. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "You will know in a minute.",
+ "face": true,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "STRYDE front photo",
+   "kind": "product",
+   "id": "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5"
+  },
+  {
+   "label": "C2 cast sheet",
+   "kind": "character",
+   "id": "cd219dc4-2b30-4e18-ae35-d702e05fba56"
+  },
+  {
+   "label": "A5-B4 confirmed (C2 on his stairs)",
+   "kind": "frame",
+   "id": "1b5f56a4-b6d8-4d1c-9535-73c75d354f35"
+  },
+  {
+   "label": "PLATE-C2-HALL",
+   "kind": "location",
+   "id": "1e46a65f-f165-4694-b5b6-1f92ea2688b3"
+  }
+ ],
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP07",
+  "HT03",
+  "HT04"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "he steps off the last stair onto the hall floor, hands free, and looks down at his knee with a small smile, one step, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render — this board has no A/B view"
+}

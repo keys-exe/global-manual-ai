@@ -1,0 +1,17 @@
+{
+ "model": "nano_banana_pro",
+ "refs": [
+  [
+   "R1-MAUREEN sheet",
+   "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"
+  ],
+  [
+   "B19a v1 \u2014 her clothes, knees and stairs",
+   "../broll/B19a_v1.png"
+  ],
+  [
+   "P4-KITCHEN plate",
+   "0bedfad5-bf20-4ebd-a862-fed90b55601a"
+  ]
+ ]
+}

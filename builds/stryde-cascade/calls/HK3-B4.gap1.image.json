@@ -1,0 +1,42 @@
+{
+ "beat": "HK3-B4",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Nobody plans for that.\": the older woman sits on the edge of a single bed made up in her front room, looking through the open doorway at the stairs she no longer climbs, her hands in her lap. Eye level, three-quarter, medium shot, her face sharp. She is the same woman as the attached cast sheet, in the same outfit as the attached bed-downstairs frame. The front room exactly as in the attached plate; the bed where it stands in that frame. Soft window light. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "Nobody plans for that.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "C1 cast sheet",
+   "kind": "character",
+   "id": "d04d6e8f-70cf-46ff-ba67-b6bc563a45a2"
+  },
+  {
+   "label": "A1-B7 confirmed (C1, day 3, bed downstairs)",
+   "kind": "frame",
+   "id": "6abf4de5-2aa7-4af0-9b92-5dd5033318f5"
+  },
+  {
+   "label": "PLATE-P1-FRONT (C1's front room)",
+   "kind": "location",
+   "id": "719c268b-14df-47b6-afab-35f0efdb8a2b"
+  }
+ ],
+ "taste": [
+  "HT02",
+  "HT08",
+  "HT09"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "sitting on the edge of the bed she looks through the doorway at the stairs, then down at her hands, one slow look, 3s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render — this board has no A/B view"
+}

@@ -1,0 +1,108 @@
+{
+ "audio": "/tmp/claude-0/-home-user-global-manual-ai/9cace666-3414-53de-ab66-91cee1d4bda1/scratchpad/vo/V2.master.wav",
+ "script": "/home/user/global-manual-ai/builds/stryde-too-bad/vo/V2.lines.txt",
+ "base": null,
+ "broll": [
+  {
+   "beat": "HK2-01",
+   "clip": null,
+   "phrase": "Too bad these knee straps look like another gimmick."
+  },
+  {
+   "beat": "B1-01a",
+   "clip": null,
+   "phrase": "Built over three years with orthopaedic surgeons"
+  },
+  {
+   "beat": "MECH-S1",
+   "clip": null,
+   "phrase": "to do what sleeves and braces never could.",
+   "key": "sleeves"
+  },
+  {
+   "beat": "B2-02",
+   "clip": null,
+   "phrase": "You've been stung before. Fair enough."
+  },
+  {
+   "beat": "MECH-06",
+   "clip": null,
+   "phrase": "So here's what a gimmick never has. A mechanism."
+  },
+  {
+   "beat": "MECH-02",
+   "clip": null,
+   "phrase": "Seventeen times your bodyweight goes through"
+  },
+  {
+   "beat": "B1-02",
+   "clip": null,
+   "phrase": "one small spot below your kneecap."
+  },
+  {
+   "beat": "MECH-04",
+   "clip": null,
+   "phrase": "This strap redirects the load away from that spot."
+  },
+  {
+   "beat": "B2-06a",
+   "clip": null,
+   "phrase": "In a sports medicine study, the strain was cut by thirty-four percent."
+  },
+  {
+   "beat": "B1-05b",
+   "clip": null,
+   "phrase": "And the pain just lifts."
+  },
+  {
+   "beat": "MECH-05",
+   "clip": null,
+   "phrase": "Perfect for bone on bone, arthritis, worn cartilage and meniscus pain."
+  },
+  {
+   "beat": "B1-11",
+   "clip": null,
+   "phrase": "Over two hundred thousand people wear one now."
+  },
+  {
+   "beat": "B1-04b",
+   "clip": null,
+   "phrase": "Adjustable, breathable,"
+  },
+  {
+   "beat": "B2-09b",
+   "clip": null,
+   "phrase": "with a silicone pad that locks the pressure right where you need it."
+  },
+  {
+   "beat": "B1-10",
+   "clip": null,
+   "phrase": "No slipping. No sores. No rolling down."
+  },
+  {
+   "beat": "B2-11",
+   "clip": null,
+   "phrase": "Recommended by orthopaedic surgeons for lasting relief."
+  },
+  {
+   "beat": "B2-12",
+   "clip": null,
+   "phrase": "Only at getstryde.co, not the knock-offs on Amazon."
+  },
+  {
+   "beat": "B1-12a",
+   "clip": null,
+   "phrase": "Buy one, get one free today."
+  },
+  {
+   "beat": "B2-14",
+   "clip": null,
+   "phrase": "And a gimmick doesn't give you sixty days to send it back."
+  },
+  {
+   "beat": "B1-13b",
+   "clip": null,
+   "phrase": "Nothing to lose but the pain."
+  }
+ ]
+}

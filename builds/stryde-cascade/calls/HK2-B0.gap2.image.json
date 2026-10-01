@@ -1,0 +1,38 @@
+{
+ "beat": "HK2-B0",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"I can tell how long someone has had a bad knee by which rail they ask me to fit.\": the fitter stands at the foot of a client's stairs with a length of oak handrail on his shoulder and a tape measure in his hand, looking up the flight, sizing up the job. Low angle from the hall, three-quarter, medium-full shot. He is the same man as the attached cast sheet, in his B-roll work clothes, not the talking-head outfit: a worn tan canvas work jacket open over a dark green work shirt, charcoal work trousers, no fleece. The stairs and hall exactly as in the attached hall plate. One rail on his shoulder, the wall still bare. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "I can tell how long someone has had a bad knee by which rail they ask me to fit.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "N-CHINESE cast sheet",
+   "kind": "character",
+   "id": "8cc4a583-5d7d-4f39-9ef7-7fe7899d298b"
+  },
+  {
+   "label": "PLATE-P1-PROP (C1's hall and stairs)",
+   "kind": "location",
+   "id": "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  }
+ ],
+ "taste": [
+  "HT05",
+  "HT09",
+  "HT09"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "at the foot of the stairs he looks up the flight, rail on his shoulder, and pulls the tape measure out along the wall, one pull, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "user Fix 2026-09-30: \"the avatar broll clothes should not be the same as the th\" → TH frame dropped, new work outfit",
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render"
+}

@@ -1,0 +1,44 @@
+{
+ "beat": "A4-P3",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"Thirty four percent less strain. Measured.\": from this frame, as the knee bends slightly under load, the tendon's hot red glow cools to a calm amber, the strap holding it, 3s. The camera holds still on the render, one slow even light pulse, nothing else moves. The small strap stays rigid below the kneecap; only the glow changes. No text, no arrows, no extra limbs.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap3/A4-P3.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "Thirty four percent less strain. Measured.",
+ "motion_plan": "as the knee bends slightly under load, the tendon's hot red glow cools to a calm amber, the strap holding it, 3s",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "taste": [
+  "HT11",
+  "FP02",
+  "FP03"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ]
+}

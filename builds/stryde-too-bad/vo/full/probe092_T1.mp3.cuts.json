@@ -1,0 +1,54 @@
+{
+ "src": "full/probe092_T1.mp3",
+ "duration": 121.36,
+ "cuts": [
+  3.76,
+  61.52,
+  64.87
+ ],
+ "ranges": {
+  "HK1": [
+   0.0,
+   3.76
+  ],
+  "BODY1": [
+   3.76,
+   61.52
+  ],
+  "HK2": [
+   61.52,
+   64.87
+  ],
+  "BODY2": [
+   64.87,
+   121.36
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "centimetres",
+   "centimeters"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ],
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ]
+ ]
+}

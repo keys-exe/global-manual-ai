@@ -1,0 +1,36 @@
+{
+ "beat": "HK1-B2",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"I fit stair rails for a living.\": a close shot of the fitter's hands driving the last screw into a round brass bracket that holds a new varnished oak handrail to the stair wall — the right hand mid-turn on a yellow-handled screwdriver, the left hand steadying the rail. Eye level, three-quarter, close, the hands sharp. The hands and cuffs match the attached talking-head frame: an older Chinese fitter's weathered hands, the faded navy fleece cuffs at the wrists. The wall and stair carpet as in the attached hall plate, soft behind. Exactly two hands, one screwdriver, the bracket fixed to the wall. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "I fit stair rails for a living.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "C-TH-FRAME (his workwear, his hands)",
+   "kind": "frame",
+   "id": "af785dc9-5a0d-4e5e-8952-752be522bf08"
+  },
+  {
+   "label": "PLATE-P1-PROP (C1's hall and stairs)",
+   "kind": "location",
+   "id": "f1f1e0b0-a384-409c-a5b1-f063dfdc99e9"
+  }
+ ],
+ "taste": [
+  "HT12",
+  "HT09"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "his right hand turns the screwdriver one full turn and the screw seats flush in the brass bracket, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render — this board has no A/B view"
+}

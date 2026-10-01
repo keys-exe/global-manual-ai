@@ -1,0 +1,30 @@
+{
+ "beat": "A2-M7",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"The pain is not the first thing that happened. It is the first thing you noticed.\": close on the patellar tendon just below the kneecap, side view: along the band, fine frayed fibres glow a dull worn orange — damage built up quietly — and a first sharp red pulse is just starting from them. The kneecap above, the shin below. Premium 3D anatomical render exactly in the style of the attached anatomy frame: near-black background, faint translucent body shell, warm red layered muscle, ivory bone, cool key light and warm under-glow. No text, no arrows.",
+ "script_line": "The pain is not the first thing that happened. It is the first thing you noticed.",
+ "face": false,
+ "room": false,
+ "product": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "A2-M3 confirmed (anatomy style)",
+   "kind": "frame",
+   "id": "72d41a87-6298-4032-b626-2ca1e7e571bd"
+  }
+ ],
+ "taste": [
+  "HT11"
+ ],
+ "anatomy": true,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "faint frayed fibres along the tendon glow a dull orange, then one sharp red pulse spreads from them, 3s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render — this board has no A/B view"
+}

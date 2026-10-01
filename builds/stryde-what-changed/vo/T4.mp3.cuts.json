@@ -1,0 +1,45 @@
+{
+ "src": "T4.mp3",
+ "duration": 257.44,
+ "cuts": [
+  10.44,
+  25.76,
+  42.57
+ ],
+ "ranges": {
+  "HK1": [
+   0.0,
+   10.44
+  ],
+  "HK2": [
+   10.44,
+   25.76
+  ],
+  "HK3": [
+   25.76,
+   42.57
+  ],
+  "BODY": [
+   42.57,
+   257.44
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "patellar",
+   "patella"
+  ],
+  [
+   "replace",
+   "stryde",
+   "stride"
+  ],
+  [
+   "replace",
+   "stryde",
+   "stride"
+  ]
+ ],
+ "possible_missing_or_changed": []
+}

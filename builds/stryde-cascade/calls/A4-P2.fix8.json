@@ -1,0 +1,35 @@
+{
+ "beat": "A4-P2",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (Kling account short, §5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"a4_p2\",\"subject\":\"the inside of a small black knee strap lying on a workbench, its grey ribbed silicone pad facing up\",\"camera\":{\"movement\":\"Camera already drifting on the first frame, never static at entry. Continuous low-amplitude breath sway throughout, roughly one cycle per two seconds, mostly vertical with a slight roll. Focus soft for a moment at entry, then settles. Slow push-in toward the grey pad, slow and continuous, the only move in the clip. Still drifting on the final frame.\",\"framing\":\"As in the start frame at first; the small strap grows slowly in frame as the camera eases closer, the ribbed pad filling more of the frame by the cut.\"},\"motion\":\"Already drifting on the first frame: the camera eases very slowly in toward the small strap lying still on the bench, closing the distance by about a third, the window light gliding over the fine ribs and the raised ridge of the grey silicone pad and the chrome slides, about five seconds. Nothing in the frame moves except the camera and the light; no hands appear. Still easing in at the cut. The strap keeps its exact shape and its small size in every frame — about the length of a hand — the ribs and ridge of the pad unchanged. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no second person, no camera travelling with the subject, no music, no speech, no hands, no strap moving, no wordmark appearing, no rectangular pad, no smooth pad, no ribs changing direction, no strap growing, no strap turning over, no long band unrolling\"}",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_121806_5f8baab5-2224-41eb-b708-3a57c9365253.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 4,
+ "fix_note": "frame: the strap showed its back, no pad, and was far too big → v8 frame from the user's inside-pad photo at true size (~12 cm); motion: slow push-in onto the pad (ACTMAP), light over the ribs",
+ "risks": [
+  {
+   "risk": "room redraws during the move",
+   "prevented_by": "nothing in the scene moves; one slow camera move only; HOLD-C"
+  },
+  {
+   "risk": "objects appear or vanish",
+   "prevented_by": "HOLD-C: exact count kept; NEG-WARP-C"
+  },
+  {
+   "risk": "move too fast or resolves",
+   "prevented_by": "slow continuous move, still moving on the final frame"
+  }
+ ],
+ "user_go": "user, 2026-09-29: sent the inside-pad photo and size video for A4-P2, then \"that is good confirmed\" on frame v8"
+}

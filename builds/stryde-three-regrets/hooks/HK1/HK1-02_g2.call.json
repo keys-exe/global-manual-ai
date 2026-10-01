@@ -1,0 +1,31 @@
+{
+ "beat": "HK1-02",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"hk1_02_struggle\",\"subject\":\"THE SAME MAN AND BUS SHELTER as in the start frame; unchanged in every respect.\",\"camera\":{\"movement\":\"Locked off on a steady surface, only a faint breath of sway. The camera never pans or travels. Still at the cut.\",\"framing\":\"FULL as in the start frame: low at his knee height, three-quarter front, the bench and the street around. FOCUS: deep.\"},\"motion\":\"CONTINUING: he is half up off the red bench, hands pushing hard on his knees, grimacing. COMPLETING: one slow hard push, about three seconds — he pushes on his knees and straightens part way, the right knee stiff and slow, his face strained, a small wobble as his weight comes over his feet. UNRESOLVED: he is nearly upright, still bent a little, catching his breath. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Same person, face and wardrobe every frame; five separate fingers on each hand, never fusing or passing through anything; limbs keep their length and bend only as real joints bend. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, flat grey overcast late-morning daylight from the street on the left, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no sitting back down, no falling, no walking away, no stepping off the kerb, no quick easy stand, no talking, no face to the lens, no music\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_194359_c572bebd-0eae-4091-a315-134173c88c69.png",
+ "start_approved": true,
+ "pinned": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "fix_note": "frame fault: v1 was a kerb step, then half-perched through glass, then a calm face (user Fixes 1-3) → new start frame v4, half up off the bench, grimacing, confirmed by the user; motion rewritten as one slow hard push toward standing, camera locked",
+ "risks": [
+  {
+   "risk": "he stands up too easily",
+   "prevented_by": "one slow hard push, nearly upright; no quick easy stand"
+  },
+  {
+   "risk": "he falls or sits back",
+   "prevented_by": "no falling, no sitting back down"
+  },
+  {
+   "risk": "the camera travels with him",
+   "prevented_by": "locked-off camera"
+  }
+ ]
+}

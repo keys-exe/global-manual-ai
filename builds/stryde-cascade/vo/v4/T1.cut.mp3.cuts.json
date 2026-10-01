@@ -1,0 +1,84 @@
+{
+ "src": "v4/T1.cut.mp3",
+ "duration": 206.01,
+ "cuts": [
+  15.79,
+  28.98,
+  42.06
+ ],
+ "ranges": {
+  "HK1": [
+   0.0,
+   15.79
+  ],
+  "HK2": [
+   15.79,
+   28.98
+  ],
+  "HK3": [
+   28.98,
+   42.06
+  ],
+  "BODY": [
+   42.06,
+   206.01
+  ]
+ },
+ "diff": [
+  [
+   "delete",
+   "four hundred",
+   ""
+  ],
+  [
+   "replace",
+   "favour",
+   "favor"
+  ],
+  [
+   "replace",
+   "centimetres",
+   "centimeters"
+  ],
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "stryde",
+   "stride"
+  ],
+  [
+   "replace",
+   "centimetres",
+   "centimeters"
+  ],
+  [
+   "replace",
+   "round",
+   "around"
+  ],
+  [
+   "delete",
+   "two hundred thousand",
+   ""
+  ],
+  [
+   "replace",
+   "any more",
+   "anymore"
+  ],
+  [
+   "replace",
+   "knee",
+   "me"
+  ],
+  [
+   "replace",
+   "stryde",
+   "stride"
+  ]
+ ]
+}

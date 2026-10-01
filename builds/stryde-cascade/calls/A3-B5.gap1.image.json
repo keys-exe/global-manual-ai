@@ -1,0 +1,36 @@
+{
+ "beat": "A3-B5",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"None of them are wrong. None of them move the weight off the band, and that is the only thing that stops the sequence.\": on the side table beside her armchair lie the things she has tried — a coiled physio exercise band, a tube of pain gel, a blister pack of pills — and her hand is setting down a beige knee sleeve beside them. High angle, close, the four things sharp. Her hand and cardigan cuff as in the attached day-two frame; the front room from the attached plate soft behind. Exactly four things, one hand. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "None of them are wrong. None of them move the weight off the band, and that is the only thing that stops the sequence.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "A3-B1 confirmed (C1, day 2, front room)",
+   "kind": "frame",
+   "id": "cc76ef4c-a2a6-40d1-a009-d5064e250995"
+  },
+  {
+   "label": "PLATE-P1-FRONT (C1's front room)",
+   "kind": "location",
+   "id": "719c268b-14df-47b6-afab-35f0efdb8a2b"
+  }
+ ],
+ "taste": [
+  "HT10",
+  "HT12"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "her hand sets the beige knee sleeve down beside the other three things on the table, one placing, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render — this board has no A/B view"
+}

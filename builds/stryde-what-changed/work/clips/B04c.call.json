@@ -1,0 +1,34 @@
+{
+ "beat": "B04c",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b04c\",\"subject\":\"A premium 3D anatomical figure from the waist down as dark translucent silhouettes on a near-black field, seen from a high three-quarter angle, walking down a short flight of faintly edge-lit steps, the leading foot landing on the step below, a tight spot glowing on the patellar tendon below the leading knee. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already mid-stride on the first frame: the figure walks DOWN the stairs at an ordinary pace, in real time — the leading foot lands on the step below and that knee bends to catch the body's weight, the one spot on its patellar tendon flaring brighter as it lands and easing back, the figure travelling down within the frame. ONLY THE LEADING KNEE GLOWS: the other leg and its knee stay dark silhouette the whole time, never lit. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. quadriceps, hamstrings and calf shortens and thickens as the load arrives, the patellar tendon visibly tightens and straightens along its length, and the whole structure compresses a few degrees. The anatomy takes the weight — it is not a still model with light played over it.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no glow on the other knee, no second glowing spot, no both knees lit, no stepping up, no standing still, no arrows, no text, no labels, no numbers, no glow spreading down the shin, no extra legs, no product, no camera orbit, no camera following the figure, no zoom, no slow motion, no music, no speech, no slow motion\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_211843_6ae8e4ac-2507-4735-9b38-7f1edc3a2b07.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "both knees light up again",
+   "prevented_by": "'ONLY THE LEADING KNEE GLOWS', the other knee named dark, 'no glow on the other knee, no both knees lit'"
+  },
+  {
+   "risk": "legs warp or multiply mid-stride",
+   "prevented_by": "start frame caught mid-stride, HOLD-C + NEG-WARP-C, 'no extra legs'"
+  },
+  {
+   "risk": "the camera follows the figure down",
+   "prevented_by": "locked-off tripod clause, 'no camera following the figure'"
+  }
+ ],
+ "approved_by": "user board Fix on B04c: BOTH KNEE ARE LIGHTING + chat FIX (2026-09-29)",
+ "fix_note": "Q5 anatomy: both knees lit as each foot landed → only the leading, landing knee glows, the other named dark throughout, one landing; negatives on the second glow; start frame kept (confirmed image v2)"
+}

@@ -2,7 +2,7 @@
 """§30H — place B-roll on its lines, close every hole, render and verify a rough cut.
 
 Usage:
-  assemble.py PLAN.json [--out ROUGH.mp4] [--min-th 1.5] [--lead 0.1] [--skip 0.4] [--fps 24] [--dry-run]
+  assemble.py PLAN.json [--out ROUGH.mp4] [--min-th 1.5] [--lead 0.25] [--skip 0.4] [--fps 24] [--dry-run]
   assemble.py PLAN.json --lengths      # before any B-roll call: the length each clip needs (E6)
 
 PLAN.json:
@@ -47,10 +47,16 @@ and holds until the next B-roll or the next punch-in (scale 1.0 = punch back out
 A punch-in landing under a B-roll is reported and ignored.
 
 Rules (§30H):
-  1. PLACE   each B-roll cuts in --lead (3 frames) before its anchor word: the
-             phrase's `key` word when given, else its first word (word timestamps
-             of the master; never before 0 or inside the previous clip's first
-             2.0s). It plays from its in-point, not frame 0: `in` if given, else
+  1. PLACE   each B-roll cuts in --lead (6 frames, 0.25s) before its anchor word: the
+             phrase's `key` word when given, else its first word. The word's time is
+             its ONSET in the master's audio (the voiced run Whisper's word start falls
+             in, up to 0.3s earlier — Whisper's word starts run late), never Whisper's
+             guess alone. Never before 0; when the lead would cut into the previous
+             clip's first 2.0s it shrinks toward 0, but the cut NEVER lands after its
+             word (V7.69.2 — "the brolls are always late"): if even a cut on the onset
+             leaves the previous clip under 2.0s, that clip FAILS FLASH (merge the rows).
+             Every cut is reported with `early_s` (onset - cut); a cut after its word
+             is a LATE FAIL. It plays from its in-point, not frame 0: `in` if given, else
              `peak` minus the lead-to-key time, else --skip (0.4s — the start
              image's static opening). It runs until the next B-roll starts, the
              phrase's line ends, or the clip runs out — whichever is first.
@@ -91,6 +97,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 from trim import words, duration  # noqa: E402
 
 FF = imageio_ffmpeg.get_ffmpeg_exe()
+ONSET_BACK, ONSET_FWD = 0.3, 0.1   # §30H rule 1 (V7.69.2): search window around Whisper's word start
+ONSET_DROP = 30.0                  # voiced = within 30 dB of the master's loud level (95th pct)
 FPS = 24                     # set from --fps; Kling renders 24 fps
 MIN_SLOW = 0.8
 FILM = False                 # plan "mode" 4/5: no speed change ever (§24L)
@@ -203,6 +211,39 @@ def join_media(root, spec, kind):
     return out
 
 
+def level_db(audio):
+    """10 ms frame levels (dBFS) of the master, mono 16 kHz."""
+    import numpy as np
+    raw = subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-i", str(audio), "-ac", "1", "-ar", "16000",
+                          "-f", "s16le", "-"], capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+    n = len(x) // 160
+    rms = np.sqrt((x[:n * 160].reshape(n, 160) ** 2).mean(axis=1) + 1e-12)
+    return 20 * np.log10(rms)
+
+
+def onset(db, t):
+    """The word's real start in the audio (§30H rule 1, V7.69.2). Whisper's word start
+    usually lands late; the voice starts where the voiced run it falls in begins. Silent
+    at t -> the first voiced frame within ONSET_FWD; voiced -> back to the silence before
+    it, at most ONSET_BACK. Connected speech with no silence in reach keeps Whisper's time."""
+    import numpy as np
+    if db is None or not len(db):
+        return t
+    thr = float(np.percentile(db, 95)) - ONSET_DROP
+    f = min(max(int(round(t * 100)), 0), len(db) - 1)
+    if db[f] < thr:
+        for k in range(f, min(len(db), f + int(ONSET_FWD * 100) + 1)):
+            if db[k] >= thr:
+                return k / 100.0
+        return t
+    lo = max(0, f - int(ONSET_BACK * 100))
+    for k in range(f, lo - 1, -1):
+        if db[k] < thr:
+            return (k + 1) / 100.0
+    return t
+
+
 def snap(t):
     return round(round(t * FPS) / FPS, 4)
 
@@ -214,7 +255,7 @@ def main():
     ap.add_argument("--min-th", type=float, default=1.5)
     ap.add_argument("--model", default="base.en")
     ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--lead", type=float, default=0.1, help="cut this many seconds before the anchor word (3 frames)")
+    ap.add_argument("--lead", type=float, default=0.25, help="cut this many seconds before the anchor word's onset (6 frames, V7.69.2)")
     ap.add_argument("--skip", type=float, default=0.4, help="default in-point: skip the clip's static opening")
     ap.add_argument("--lengths", action="store_true", help="print each B-roll's required call duration (E6) and exit")
     ap.add_argument("--fps", type=int, default=24, help="timeline frame rate; 24 = Kling's native rate (no repeated frames)")
@@ -245,6 +286,7 @@ def main():
         ws += [(s0 + offset, e0 + offset, w) for s0, e0, w in pw]
         offset += snap(duration(root / part))  # each part starts on a whole frame
     fails, fixes, edl = [], [], []
+    db = level_db(audio)
 
     # 1. PLACE — a lead before the anchor word (the key word, else the phrase's first
     # word); play from the in-point, not the start image's static opening
@@ -263,7 +305,7 @@ def main():
                 fails.append({"beat": b["beat"], "fail": "KEY_NOT_IN_PHRASE", "key": b["key"], "phrase": b["phrase"]})
             else:
                 anchor = k[0]
-        word_t = ws[anchor][0]
+        word_t = onset(db, ws[anchor][0])   # the word's sound, not Whisper's guess (V7.69.2)
         lay, lerr = check_layout(b, base is not None)
         if lerr:
             fails.append({"beat": b["beat"], "fail": "LAYOUT_INVALID", "detail": lerr})
@@ -273,16 +315,23 @@ def main():
             continue
         edl.append({"beat": b["beat"], "clip": str(clip) if clip else None, "phrase": b["phrase"],
                     "key": ws[anchor][2], "layout": lay, "word_t": word_t,
-                    "start": snap(max(0.0, word_t - a.lead)), "line_end": snap(line_end(ws, j)),
+                    "start": min(snap(max(0.0, word_t - a.lead)), round(int(word_t * FPS) / FPS, 4)), "line_end": snap(line_end(ws, j)),
                     "in_spec": b.get("in"), "peak": b.get("peak"), "max": b.get("max", a.max_clip),
                     "clip_len": (min(duration(clip), float(b["out"])) if b.get("out") else duration(clip)) if clip else None,
                     "speed": 1.0})
     edl.sort(key=lambda e: e["start"])
     for n, e in enumerate(edl):
-        # the lead never cuts into the previous clip's first MIN_FLASH seconds
+        # the lead never cuts into the previous clip's first MIN_FLASH seconds — it shrinks
+        # toward 0, but the cut never lands after its word (V7.69.2); a previous clip left
+        # under MIN_FLASH fails FLASH below (merge the rows)
         if n and e["start"] < edl[n - 1]["start"] + MIN_FLASH:
-            e["start"] = snap(max(e["word_t"], edl[n - 1]["start"] + MIN_FLASH))
-        lead = e["word_t"] - e["start"]
+            e["start"] = snap(min(e["word_t"], max(e["start"], edl[n - 1]["start"] + MIN_FLASH)))
+            if e["start"] > e["word_t"] + 1e-6:          # snap rounded past the word
+                e["start"] = round(int(e["word_t"] * FPS) / FPS, 4)
+        lead = max(0.0, e["word_t"] - e["start"])
+        e["early_s"] = round(e["word_t"] - e["start"], 3)
+        if e["early_s"] < -1e-6:
+            fails.append({"beat": e["beat"], "fail": "LATE", "detail": f"cuts {-e['early_s']:.2f}s after its word"})
         if e["in_spec"] is not None:
             e["in"], e["flex"] = float(e["in_spec"]), False
         elif e["peak"] is not None:
@@ -305,7 +354,7 @@ def main():
                 on = nxt - e["start"]   # a hold never leaves a face window under --min-th
             need = on + e["skip"] + HANDLE
             call = max(KLING_MIN, int(-(-need // 1)))
-            row = {"beat": e["beat"], "cut_s": e["start"], "anchor": e["key"], "on_screen_s": round(on, 2),
+            row = {"beat": e["beat"], "cut_s": e["start"], "early_s": e["early_s"], "anchor": e["key"], "on_screen_s": round(on, 2),
                    "skip_s": round(e["skip"], 2), "call_s": call}
             cap = min(KLING_MAX, e["max"])
             if call > cap:
@@ -445,65 +494,81 @@ def main():
         report["status"] = "FAIL" if fails else "PLANNED"
         print(json.dumps(report, indent=2)); sys.exit(2 if fails else 0)
 
-    # render: concat of segments, master audio only
+    # render: one ffmpeg pass per segment (only that segment's inputs, the talking head seeked on
+    # input), then the concat demuxer and the master as the only audio. One filter graph over every
+    # segment held all inputs open at once and was killed for memory on a 49-segment variant (2026-09-28).
     out = Path(a.out) if a.out else root / "rough_cut.mp4"
     focus = float(plan.get("th_focus_y", 0.4))
     V = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},setsar=1"
     END = ",setsar=1,format=yuv420p"
-    inputs, parts = [], []
-
-    def add(path):
-        """Register an input file; return its ffmpeg input index."""
-        inputs.extend(["-i", str(path)])
-        return len(inputs) // 2 - 1
-
-    def th_chain(idx, s0, s1):
-        return f"[{idx}:v]trim={s0}:{s1},setpts=PTS-STARTPTS,{V}"
-
-    def br_chain(e, dur, w, h):
-        src_len = dur * e["speed"]
-        fit = f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps={FPS},setsar=1"
-        return (f"[{add(e['clip'])}:v]trim={e['in']}:{e['in'] + src_len},setpts=(PTS-STARTPTS)/{e['speed']},"
-                f"{fit},trim=0:{dur},setpts=PTS-STARTPTS")
+    segdir = out.parent / f".{out.stem}_segs"
+    segdir.mkdir(parents=True, exist_ok=True)
+    seg_files = []
 
     for n, s in enumerate(segs):
+        inputs, parts = [], []
+
+        def add(path, ss=None):
+            """Register an input file (seeked to ss when given); return its ffmpeg input index."""
+            idx = sum(1 for x in inputs if x == "-i")
+            inputs.extend((["-ss", f"{ss:.4f}"] if ss is not None else []) + ["-i", str(path)])
+            return idx
+
+        def th_chain(s0, s1):
+            return f"[{add(base, s0)}:v]trim=0:{s1 - s0},setpts=PTS-STARTPTS,{V}"
+
+        def br_chain(e, dur, w, h):
+            src_len = dur * e["speed"]
+            fit = f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps={FPS},setsar=1"
+            return (f"[{add(e['clip'])}:v]trim={e['in']}:{e['in'] + src_len},setpts=(PTS-STARTPTS)/{e['speed']},"
+                    f"{fit},trim=0:{dur},setpts=PTS-STARTPTS")
+
         dur = s["end"] - s["start"]
         if s["kind"] == "TH":
             z = s.get("zoom", 1.0)
             zoom = "" if z == 1.0 else (f",scale=trunc(iw*{z}/2)*2:trunc(ih*{z}/2)*2,"
                                         f"crop={W}:{H}:(in_w-{W})/2:(in_h-{H})*{focus}")  # the face point holds still
-            parts.append(f"{th_chain(add(base), s['start'], s['end'])}{zoom}{END}[s{n}]")
-            continue
-        e = next(x for x in edl if x["beat"] == s["beat"])
-        lay = e["layout"]
-        if lay["type"] == "full":
-            parts.append(f"{br_chain(e, dur, W, H)}{END}[s{n}]")
-        elif lay["type"] == "split":
-            hb = even(H * lay["ratio"]); ht = H - hb
-            y = even(min(max(H * focus - ht / 2, 0), H - ht))
-            parts.append(f"{br_chain(e, dur, W, hb)}[b{n}]")
-            parts.append(f"{th_chain(add(base), s['start'], s['end'])},crop={W}:{ht}:0:{y}[t{n}]")
-            order = f"[b{n}][t{n}]" if lay["broll_pos"] == "top" else f"[t{n}][b{n}]"
-            parts.append(f"{order}vstack=inputs=2{END}[s{n}]")
-        else:  # pip
-            bw = even(W * lay["scale"]); bh = even(bw * 16 / 9); bd = int(lay.get("border", 0))
-            fw, fh = bw + 2 * bd, bh + 2 * bd
-            x = CORNER_MARGIN if lay["corner"] in ("tl", "bl") else W - fw - CORNER_MARGIN
-            y = CORNER_MARGIN * 3 if lay["corner"] in ("tl", "tr") else H - fh - CORNER_MARGIN * 6
-            box = f",pad={fw}:{fh}:{bd}:{bd}:white" if bd else ""
-            if lay["over"] == "th":
-                parts.append(f"{th_chain(add(base), s['start'], s['end'])}[g{n}]")
-                parts.append(f"{br_chain(e, dur, bw, bh)}{box}[f{n}]")
-            else:
-                parts.append(f"{br_chain(e, dur, W, H)}[g{n}]")
-                th_box = f"scale={bw}:{bh}:force_original_aspect_ratio=increase,crop={bw}:{bh}"
-                parts.append(f"{th_chain(add(base), s['start'], s['end'])},{th_box}{box}[f{n}]")
-            parts.append(f"[g{n}][f{n}]overlay={x}:{y}:shortest=1{END}[s{n}]")
-    aidx = add(audio)
-    graph = ";".join(parts) + ";" + "".join(f"[s{n}]" for n in range(len(segs))) + f"concat=n={len(segs)}:v=1:a=0[v]"
-    subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", *inputs, "-filter_complex", graph,
-                    "-map", "[v]", "-map", f"{aidx}:a", "-c:v", "libx264", "-crf", "18",
+            parts.append(f"{th_chain(s['start'], s['end'])}{zoom}{END}[v]")
+        else:
+            e = next(x for x in edl if x["beat"] == s["beat"])
+            lay = e["layout"]
+            if lay["type"] == "full":
+                parts.append(f"{br_chain(e, dur, W, H)}{END}[v]")
+            elif lay["type"] == "split":
+                hb = even(H * lay["ratio"]); ht = H - hb
+                y = even(min(max(H * focus - ht / 2, 0), H - ht))
+                parts.append(f"{br_chain(e, dur, W, hb)}[b]")
+                parts.append(f"{th_chain(s['start'], s['end'])},crop={W}:{ht}:0:{y}[t]")
+                order = "[b][t]" if lay["broll_pos"] == "top" else "[t][b]"
+                parts.append(f"{order}vstack=inputs=2{END}[v]")
+            else:  # pip
+                bw = even(W * lay["scale"]); bh = even(bw * 16 / 9); bd = int(lay.get("border", 0))
+                fw, fh = bw + 2 * bd, bh + 2 * bd
+                x = CORNER_MARGIN if lay["corner"] in ("tl", "bl") else W - fw - CORNER_MARGIN
+                y = CORNER_MARGIN * 3 if lay["corner"] in ("tl", "tr") else H - fh - CORNER_MARGIN * 6
+                box = f",pad={fw}:{fh}:{bd}:{bd}:white" if bd else ""
+                if lay["over"] == "th":
+                    parts.append(f"{th_chain(s['start'], s['end'])}[g]")
+                    parts.append(f"{br_chain(e, dur, bw, bh)}{box}[f]")
+                else:
+                    parts.append(f"{br_chain(e, dur, W, H)}[g]")
+                    th_box = f"scale={bw}:{bh}:force_original_aspect_ratio=increase,crop={bw}:{bh}"
+                    parts.append(f"{th_chain(s['start'], s['end'])},{th_box}{box}[f]")
+                parts.append(f"[g][f]overlay={x}:{y}:shortest=1{END}[v]")
+        nfr = round(s["end"] * FPS) - round(s["start"] * FPS)   # frames on the whole-frame grid: no drift
+        sf = segdir / f"s{n:03d}.mp4"
+        subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", *inputs, "-filter_complex", ";".join(parts),
+                        "-map", "[v]", "-frames:v", str(nfr), "-r", str(FPS), "-c:v", "libx264", "-crf", "18",
+                        "-preset", "medium", "-pix_fmt", "yuv420p", "-an", str(sf)], check=True)
+        seg_files.append(sf)
+    lst = segdir / "list.txt"
+    lst.write_text("".join(f"file '{f.resolve()}'\n" for f in seg_files))
+    subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst),
+                    "-i", str(audio), "-map", "0:v", "-map", "1:a", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "192k", "-shortest", str(out)], check=True)
+    for f in seg_files:
+        f.unlink()
+    lst.unlink(); segdir.rmdir()
 
     # verify
     err = subprocess.run([FF, "-hide_banner", "-i", str(out), "-vf", "blackdetect=d=0.03:pic_th=0.98",
