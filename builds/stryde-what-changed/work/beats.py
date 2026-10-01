@@ -2104,6 +2104,49 @@ B["HK1-b2"] = (NB2, ["R1", "P3"], photo([
     "no pavement under her feet, no looking into the lens, no knee strap, no product anywhere, no text on the bag, no second "
     "person, no extra hands"))
 
+# ── 2026-10-01 user "MAKE ME A DIFFERENT BROLLS FOR OUR HOOK 1, WITH ANATOMY": the four Hook 1 shots become anatomy, one per phrase,
+# each a different view from the body's anatomy beats (B04c down the stairs, B05 cartilage profile, B06 effects, HK2-a tendon ECU).
+FIG = lambda t: (t.replace("A stylised anatomical model of a single knee", "A stylised anatomical model of a figure from the waist down")
+                  .replace("no second limb, ", "").replace("no people, ", "")
+                  .replace(", the limb falling away out of frame at both ends", ", the feet on the steps"))
+B["HK1-a"] = (NB2, [], FIG(anat(
+    "Seen from low at the side, in profile: a translucent anatomical figure from the waist down STEPPING UP A SHORT FLIGHT OF STAIRS — "
+    "four simple dark translucent steps rising across the frame from left to right, faintly edge-lit so each step reads clearly. The "
+    "leading foot is planted flat on the higher step and that knee is bent deeply, close to a right angle, taking the whole body's weight "
+    "as it drives up; the trailing leg is straightening on the step below, its heel lifting. Both legs are dark translucent silhouettes with "
+    "only the leading knee's patellar tendon legible inside, glowing hard where the weight comes onto it. " + S("ANAT-HOT") + " "
+    + P.ANAT_A_POINT_TIGHT,
+    view="viewed from low at the side, in profile, a figure from the waist down stepping up a short flight of steps, both legs in frame, "
+         "the deeply bent leading knee in the middle of the frame", stack="ANAT-C", slots={"[STACK]": "the surrounding soft tissue"})))
+B["HK1-a2"] = (NB2, [], anat(
+    "Seen from directly above, looking straight down: one knee bent over the edge of a single simple dark translucent step, the foot just "
+    "landing flat on the step below the knee, the step's front edge a thin clean line of edge-light across the lower frame. The rounded "
+    "kneecap sits in the middle of the frame with the patellar tendon running down from its lower edge towards the shin; the tendon is "
+    "drawn taut as the foot lands and the spot just below the kneecap is glowing. " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from directly above, looking straight down onto the front of the bent knee, the kneecap in the middle of the frame, the "
+         "thigh running up out of the top of the frame and the shin down to the foot on the step"))
+B["HK1-b"] = (NB2, [], anat(
+    "Seen from the front three-quarter, close, the joint opened in a clean cutaway: the rounded end of the thigh bone filling the upper "
+    "frame, and on it the cartilage layer that should be smooth and pearly is WORN — dulled to a tired yellow-grey, thinned to almost "
+    "nothing in a patch at the front where the load lands, its surface roughened and finely pitted like old worn stone, the edges of the "
+    "patch frayed. The top of the shin bone sits below with its own thin, worn lining. Just in front of the joint, at the patellar tendon "
+    "below the kneecap, one small low ember of warm light, dim and steady, as if it has been glowing quietly for years. Everything else "
+    "is calm; no bright emission anywhere.",
+    view="viewed from the front three-quarter, close, the knee joint cut away cleanly so the worn cartilage on the end of the thigh bone "
+         "fills the upper middle of the frame", stack="ANAT-B",
+    slots={"[TARGET]": "the cartilage lining the joint surfaces"}).replace("the patellar tendon crisp", "the cartilage crisp"))
+B["HK1-b2"] = (NB2, [], anat(
+    "Seen straight from the front at eye level, wide: a WHOLE translucent anatomical human figure, head to toe, walking calmly towards "
+    "the camera mid-stride on a flat dark floor, arms swinging loosely, shoulders relaxed, an easy unhurried walk. The figure is a faint "
+    "glass-like silhouette with the skeleton dimly legible inside, everything calm and cool — except ONE small tight spot just below the "
+    "kneecap of the leading leg, glowing warm and bright, the only warm light in the whole frame. The figure carries on as if nothing is "
+    "there. " + P.ANAT_A_POINT_TIGHT,
+    view="viewed straight from the front at eye level, wide, a whole figure from head to toe walking towards the camera, the glowing knee "
+         "in the lower middle of the frame", stack="ANAT-C", slots={"[STACK]": "the surrounding soft tissue"})
+    .replace("A stylised anatomical model of a single knee", "A stylised anatomical model of a whole human figure, head to toe")
+    .replace("no second limb, ", "").replace("no people, ", "")
+    .replace(", the limb falling away out of frame at both ends", ", the feet on the floor").replace("no hands, ", ""))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
