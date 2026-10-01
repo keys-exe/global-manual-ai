@@ -1,0 +1,92 @@
+{
+ "act": "Hook 1",
+ "beat": "HK-01b-END",
+ "build": "stryde-71-stairs-pixar-song",
+ "endOf": "HK-01b",
+ "flow": [
+  "image"
+ ],
+ "hook": 1,
+ "imageAsset": "ba6442a8b1446f93b01c4875675a38fb",
+ "imageAt": 1790858654630,
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageJob": "8b850fea-27ac-43e9-88fc-7850c9ad02a1",
+ "imageMatch": "frame",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  1,
+  2
+ ],
+ "imagePrompt": "For the line \"faster than women half my age.\": Keep this picture exactly as it is — the staircase, the camera, the light, the shoes and the hems — and move the feet two steps higher. Image 1 is the start frame.\nThe low black pump now planted on the 8th of 14 steps, the other foot lifting to the 9th, the emerald hem swinging at mid-calf; the white trainers now reaching for the 6th step. Both women's hands and faces out of frame — the picture is feet, legs below the knee and steps.\nIn the frame: two low black pumps, two white trainers, four legs, five steps of the one staircase; every other surface bare. Each foot whole, one foot per step. Everything else exactly as Image 1.\nShoes, clothing and walls plain — no lettering, logos or labels.",
+ "imageRefs": [
+  {
+   "kind": "frame",
+   "label": "HK-01b start frame (A for A, B for B)",
+   "ref": "stryde-71-stairs-pixar-song__HK-01b",
+   "role": "Image 1 · edited (§6A rule 3)"
+  }
+ ],
+ "imageRegens": 0,
+ "imageRes": "1536×2752",
+ "imageStatus": "regenerate",
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT13",
+  "HT17",
+  "HT18",
+  "HT22"
+ ],
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_124052_8b850fea-27ac-43e9-88fc-7850c9ad02a1.png",
+ "imageVersions": [
+  {
+   "asset": "ba6442a8b1446f93b01c4875675a38fb",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "8b850fea-27ac-43e9-88fc-7850c9ad02a1",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "edit of HK-01b start A",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 6979780,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_124052_8b850fea-27ac-43e9-88fc-7850c9ad02a1.png",
+   "v": 1,
+   "archived": true
+  },
+  {
+   "asset": "4adce9d36210f941d65a0d60ec821557",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "34255b10-9718-4a7e-bae4-aea73a8ed600",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "edit of HK-01b start B",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6365713,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_124052_34255b10-9718-4a7e-bae4-aea73a8ed600.png",
+   "v": 2,
+   "archived": true
+  }
+ ],
+ "line": "faster than women half my age.",
+ "location": "L-N-STAIRS",
+ "note": "The end frame of the pinned stairs clip: Kling runs first-and-last frame between the start pick and this pick (§27G rule 5). Use A with start A, B with start B.",
+ "pinEnd": "yes",
+ "preflight": "PASS (§6A, kind image)",
+ "routingFault": "§5: nano_banana_pro requested, Higgsfield logged nano_banana_2 on both renders (same fault as the cast and plates; Kie Pro route costs 963/render — not used without the user's word)",
+ "section": "Hook — MUS-OPEN",
+ "stage": "hooks",
+ "status": "regenerate",
+ "storyDay": "N-D4",
+ "title": "HK-01b — pinned end frame (§27G rule 10, stairs): two steps higher — the pumps on the 8th/9th, the trainers on the 6th — dropped (user: no end frames)",
+ "updatedAt": 1790860282492,
+ "imageFault": "user 2026-10-01: \"we dont need end frame\" — end frames dropped (§27G rule 10 pin waived); kept here, both renders"
+}

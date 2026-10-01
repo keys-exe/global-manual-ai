@@ -1,0 +1,46 @@
+{
+ "beat": "HK-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — hall, staircase, camera, light — as a tall 9:16 crop on the top steps and the landing, with two women there. Image 1 is the hall and staircase. Image 2 is the mother. Image 3 is her daughter.\nThe landing is a storey above the hall, at the head of the 14-step flight. The same woman as Image 2 standing on the landing floor itself, above the top step, body facing along it, head turned back over her left shoulder to her daughter, a small knowing smile, mouth closed, eyes on her daughter, hands free at her sides; emerald-green church dress to mid-calf, low black pumps. The same woman as Image 3 one step below on the 14th and top step, right hand on the handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. The two fill over half the frame.\nIn the frame: the two women, the top of the one staircase of Image 1, the landing wall; every other surface bare. Two legs each.\nThe render and light of Image 1, the women on model.\nClothing, shoes and walls plain — no lettering, logos or labels; no third person.",
+ "script_line": "Mama, when did that happen?",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P0-PROP-N plate",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character"
+  },
+  {
+   "label": "C2-DAUGHTER sheet v2",
+   "kind": "character"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "973904c55f316a52570c8bff44ef7a07",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "see V2 comment"
+}

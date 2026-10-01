@@ -435,3 +435,21 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 ### 2026-10-01 — "FIX" (B22a image "FIX THE PRODUCT")
 - **B22a v3** (NBP edit of v2, refs worn_front.jpg + front.webp, "copied exactly", lowercase "stryde"): to check. Not fixed — the shells are a little closer in shape but the wordmark is still small and in capitals. At this distance (two knees, full lower legs) the model redraws the strap from scratch and ignores the product photo. v2 → Old 2.
 - Proposed next (user's call): frame closer so each strap is large (FP12 works when the strap fills a good part of the frame), or one strapped knee from worn_front.jpg (background-only edit, the real product untouched) with the second knee beside it.
+
+### 2026-10-01 — "FIX" (B23a image "FIX THE PRODUCT")
+- **B23a v4** (NBP edit of v3, refs worn_front.jpg + front.webp, framed like worn_front.jpg): the strap is now large and matches the real one — shell, two peaks, chrome slides, big lowercase grey "stryde". Flaw: her plimsoll is cut off at the bottom edge, so the step onto the stair isn't shown. To check; v3 → Old 2.
+- Confirms the B22a lesson: the product copies right only when it is big in frame. B22a (two knees, small straps) needs the closer framing too — waiting on the user's pick.
+
+### 2026-10-01 — "GO" with three product Fixes (B22a, B23a, B23b)
+- New approach: the real photo is Image 1 (worn_front.jpg; worn_rear.jpg uploaded to Higgsfield as 4263ad56…, worn_bent.jpg as 43e3d12a…) and only the leg, clothes and room around the strap change.
+  - **B22a v4** (Fix "FIX THE PRODUCT, REVIEW OUR PRODUCT MAKE SURE IT'S RIGHT"): both knees, two straps with the right shape and the big lowercase "stryde" — the closest yet.
+  - **B23a v5** (Fix "REVIEW THE PRODUCT, FIX THE PRODUCT"): big strap, lowercase wordmark, but still redrawn — the band shows a little through the notch and the peaks are flatter than the real photo.
+  - **B23b v3** (Fix "PUT STRYDE PRODUCT"): the strap seen from behind on her right leg (black band, slide); the keeper loops don't read clearly.
+- Replaced images → Old 2. Videos of all three wait for the image Confirm.
+
+### 2026-10-01 — "FIX AND CONFIRM" (B22a, B23b confirmed; B23a "FIX PRODUCT")
+- **B23a v6**: an edit of the confirmed B22a v4, the approved strap kept — close on the strapped leg, the other leg stepping down. The strap matches B22a v4 (pointed peaks, kneecap seated in the notch, lowercase "stryde"). To check; v5 → Old 2.
+- **B23b video v2** (gen 2, from the v3 frame with the strap from behind): she walks down the stairs, hands free. Flaw: the strap jumps between her legs during the clip. v1 → Old 2.
+- **B22a**: image v4 confirmed; its next video is the 4th for this shot → waits for the user's go.
+- Lesson: once one product frame is approved, build the next product shots as edits of it (the approved strap carries over) instead of asking for the product again.
+- Higgsfield 10,236.4.

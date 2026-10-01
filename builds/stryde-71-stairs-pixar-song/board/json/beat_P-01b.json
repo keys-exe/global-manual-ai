@@ -24,7 +24,7 @@
  "framing": "CU from the side at step height: her slipper lowers onto the next step down, the other foot joins it on the same step",
  "motionPlan": "From this frame: one foot down, the other joins — about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
  "staging": "stairs: feet only, side",
- "pinEnd": "yes",
+ "pinEnd": "no",
  "angle": "ground · profile · clean · CU — ground = the steps themselves",
  "focus": "foreground · medium",
  "light": "landing window at the top of the stairs, south wall · key L · morning · problem: grey · 6500K",
@@ -33,6 +33,6 @@
  "eg": "",
  "music": "MUS-EXPOSE",
  "ledger": "",
- "updatedAt": 1790858547525,
- "endFrame": "P-01b-END"
+ "updatedAt": 1790860191625,
+ "pinWaived": "user 2026-10-01: \"we dont need end frame\""
 }
