@@ -1,0 +1,1 @@
+BR-10c.v2 {"taskId": "d3cc5bc8fcd9d30210f21891eec2fbfb", "model": "kling-3.0-omni/image-to-video"}
