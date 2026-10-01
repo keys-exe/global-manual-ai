@@ -16,10 +16,10 @@ B = Path(__file__).resolve().parent.parent
 OUT = B / "edit" / "hooks"
 LUT = B / "edit" / "LUT-HALFMYAGE.cube"
 CONFIRMED = {  # the version the user confirmed on the board
-    "HKA": [1, 1, 1, 1, 1], "HKB": [1, 1, 2, 1, 3], "HKC": [3, 3, 3, 1, 3], "HKE": [3, 3, 3, 2, 3]}
+    "HKA": [1, 1, 1, 1, 1], "HKB": [1, 1, 2, 1, 3], "HKC": [3, 6, 8, 1, 3], "HKE": [3, 3, 3, 2, 3]}
 VO = {"HKA": "L004_v2.m4a", "HKB": "L004_v2.m4a", "HKC": "L004_v2.m4a", "HKE": "L016_v2.m4a"}
 VO_IN = 0.3  # the narration enters 0.3 s into SH05
-VERSION = 2
+VERSION = 3
 PRE, POST, FADE = 0.12, 0.25, 0.04
 
 
