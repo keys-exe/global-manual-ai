@@ -1579,6 +1579,320 @@ B["B19-BR2b"] = (NBP, ["S1", "R1", "P5"], photo([
     "no looking at the camera, no white coat, no stethoscope, no readable text on the monitor, no certificates with text, no product "
     "anywhere, no knee strap, no third person, no extra fingers, no extra hands"))
 
+# ── 2026-10-01 "confirm, fix": B19-BR "give me different broll, make sure product package is right" — background-only edit of
+# package_open.jpg (the only way the straps stayed exact), now on her kitchen table beside a mug of tea, morning light.
+B["B19-BR"] = (NBP, ["PKG", "P4"], (
+    "Edit Image 1. Keep the STRYDE box EXACTLY as it is in Image 1, untouched — the matte-black box and tray, BOTH straps lying in the "
+    "tray exactly as they are (each matte-black shell with two rounded peaks and the notch between them, a chrome slide at each end, the "
+    "soft black band, the grey stryde wordmark on the shell), and the lid with the large grey stryde wordmark propped behind — the same "
+    "shapes, sizes, angle and proportions, nothing redrawn, nothing added to the box. Change ONLY the plain white background: the box now "
+    "sits on the pale-oak kitchen table with its linen runner from Image 2, a white mug of tea beside it, the sage-green units and the "
+    "window over the sink softly out of focus behind. Soft daylight from the window on the right, a soft real shadow under the box. An "
+    "ordinary phone photo taken from a little above.\n\nAVOID: no redrawn strap, no changed shell shape, no flat band, no wordmark on "
+    "the band, " + P.NEG_WORDMARK + ", no third strap, no person, no hands, no studio background, no readable text other than the wordmark"))
+
+# ── 2026-10-01 B19b video Fix "not holding the banister because the knee with stryde is okay but in the knee without stryde is in
+# pain her hand is on the wall" → the fault is in the frame (hand on the rail): edit of B19b v4 (Higgsfield 2bbd2157), hands only.
+REFS.update({"B19BV4": ("B19b v4 — the shot to edit (Image 1)", "2bbd2157-d85f-4fe6-a69f-093c5a92c056")})
+B["B19b"] = (NBP, ["B19BV4"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — her face, white hair, the navy-and-white striped T-shirt, the denim "
+    "skirt, her legs, the white plimsolls, the stairs, the light, the camera angle, and the black strap EXACTLY where it is on the knee on "
+    "the LEFT of the frame, the other knee BARE. Change ONLY her hands: she is NOT holding the banister — her hand on the left of the "
+    "frame hangs free by her side, well away from the honey oak handrail; her other hand, on the right of the frame, is pressed flat "
+    "against the pale duck-egg blue wall beside her, steadying herself, fingers spread. A real phone photo.\n\nAVOID: no hand on the "
+    "banister, no hand on the handrail, no strap moved, no strap on the bare knee, no second strap, no change to her face or clothes, no "
+    "extra hands, no extra fingers"))
+
+# ── 2026-10-01 B18b Fix "change broll here with stryde both knee": edit of B18b v1 (strap already right on her right knee) — add the
+# same strap, mirrored, on her left knee; everything else kept. ──
+REFS.update({"B18BV1H": ("B18b v1 — the shot to edit (Image 1)", "42d31a31-9927-4be6-ba10-e04b1caf0d24")})
+B["B18b"] = (NBP, ["B18BV1H", "PW"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — her face, white hair, sage-green cardigan, white T-shirt, denim skirt, "
+    "white plimsolls, her hand on the honey oak handrail, the stairs, the light and the camera angle — and keep the black strap EXACTLY "
+    "as it is on the knee on the LEFT of the frame. Change ONLY this: her OTHER knee, on the RIGHT of the frame, now wears a second strap "
+    "identical to the first — the same matte-black shell with two rounded peaks cupping the base of the kneecap, a chrome slide at each "
+    "side, the black band round the leg — the same size, seated in the same place on the tendon just below the kneecap, as in Image 2. "
+    "Both knees strapped, the two straps a matching pair. A real phone photo.\n\nAVOID: no strap moved, no strap over the kneecap, no "
+    "strap higher on the thigh, no strap lower on the shin, no different strap design, no brace, no sleeve, no change to her face or "
+    "clothes, no extra legs, no extra hands"))
+
+# ── 2026-10-01 "fix and generate the images": B19b Fix (no banister — only the wall) + the last images B20–B23b ──
+REFS.update({"PKGH": ("package_open.jpg — the STRYDE box (Image 1)", "3205de84-4b37-452d-be69-2c1f88b48392"),
+             "B19BV5": ("B19b v5 — the shot to edit (Image 1)", "b2b774bc-5785-43be-92f2-b1f18d9ca7eb"),
+             "B19BR2V4": ("B19-BR2 v4 — her face and striped T-shirt", "23b553f3-0469-4497-8036-34d35f657c94")})
+
+# B19b Fix "don't hold the banister stair railing, only the wall": three videos proved a visible rail + a free hand = Kling grabs the
+# rail. Remove the rail: edit of v5 with the banister and spindles replaced by a plain wall (an enclosed flight), strap and pose kept.
+B["B19b"] = (NBP, ["B19BV5"], (
+    "Edit Image 1. Keep EVERYTHING about her exactly as in Image 1 — her face, white hair, the navy-and-white striped T-shirt, the denim "
+    "skirt, her legs, the white plimsolls, her pose, her hand pressed flat on the duck-egg blue wall on the right of the frame, and the "
+    "black strap EXACTLY where it is on the knee on the LEFT of the frame, the other knee BARE. Change ONLY the left side of the staircase: "
+    "the honey oak handrail and the white spindles are GONE — in their place is a second plain pale duck-egg blue wall with white "
+    "skirting, so the stairs run down between two walls with no banister and no rail anywhere. Her free hand on the left of the frame "
+    "hangs by her side. Same carpet, same light, same camera. A real phone photo.\n\nAVOID: no banister, no handrail, no spindles, no "
+    "rail of any kind, no strap moved, no strap on the bare knee, no second strap, no change to her face or clothes, no extra hands, no "
+    "extra fingers"))
+
+# B20 — "Because the weight is not landing on that band any more." PIP anatomy: the REAL strap on the translucent knee (as B14c, the
+# confirmed method), high front CU, the tendon spot calm.
+B["B20"] = (NBP, ["PF"], anat(
+    "Seen from a little above and in front, close: the knee taking a step's load, and worn on it THE STRAP IN IMAGE 1, COPIED EXACTLY — "
+    "the same solid, opaque matte-black shell, the same two rounded peaks with the rounded notch between them, the same brushed chrome "
+    "slides with engraved chevrons, the same black coarse-knit band and the same grey lowercase stryde wordmark, nothing redesigned, a real "
+    "physical object on the translucent model. It sits ON THE PATELLAR TENDON directly below the kneecap: the notch cups the kneecap's "
+    "lower border, the shell spans the front of the knee with a chrome slide at each side, the band level round the leg; the wordmark faces "
+    "the lens. The kneecap stays fully uncovered above it. Beneath the shell the tendon is CALM — no hot spot, only a faint cool pearly "
+    "glow spread evenly into the soft tissue around it, the load reaching the knee and passing on, not landing on the band. " + P.SIZE_WORN,
+    view="viewed from a little above and in front, close, the strapped knee large in the middle of the frame")
+    .replace("no product,", "no product other than the one strap on the tendon,").replace("no product\n", "no product other than the one strap on the tendon\n")
+    .replace("no text overlays, no labels,", "no text overlays, no diagram labels,").replace("no clothing, ", "no clothing, no second strap, no strap over the kneecap, no translucent strap, no ghosted strap, no invented strap shape, no blank shell, no hot spot, "))
+
+# B21-BR — "So here is the choice. Keep aiming at the joint…" Desmond on his bottom stair rubbing gel over his whole kneecap. No product.
+B["B21-BR"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held a little above, three-quarter on, close. He sits on his bottom stair; his right hand rubs a smear of "
+    "clear gel in a slow circle over his whole bare kneecap, the gel glistening on the skin, a small white tube lying capped on the stair "
+    "beside him. Close: his bare right knee and his hand fill the frame, his shorts hem at the top, his shin below.",
+    R2_LEGS + " Wearing " + WARD["D-D1"] + ".",
+    D_STAIRS,
+    angle("B21-BR", "his hand on his knee"),
+    focus("the hands and what they hold", deep=False).replace("the room behind", "the hall behind"),
+    light("D-GREY-R", "his knee and hand"), colour("D-STAIRS-AM")],
+    NO_FACE + ", no product anywhere, no knee strap, no brace, no readable text on the tube, no brand on the tube, no logos on the "
+    "trainers, no second hand on the knee, no extra fingers"))
+
+# B21 — "Or move the load off the one spot…" Desmond's strapped right knee stepping down one stair, team photos behind. Edit of B16a v1
+# (his strap placed right, khaki shorts = D-D2), the pose and angle changed only.
+B["B21"] = (NBP, ["B16AV1E", "R2", "P2"], (
+    "Edit Image 1. " + KEEP_WORN.replace(" and keep the leg, the skin and the room.", " and keep his leg, skin, khaki shorts and stairs.")
+    + " Change ONLY his pose and the camera: he is stepping DOWN one stair, facing down the flight — his strapped right foot landing on the "
+    "stair below, the knee bending smoothly as it takes his weight, front-on enough that the strap's wordmark still faces the camera. "
+    "The camera is low on the stairs below him, looking up three-quarter, close on the strapped knee, one of the framed amateur football "
+    "team photos on the grey stair wall soft behind. Plain white trainers with navy trim. Warm afternoon sun from the right. A real phone "
+    "photo.\n\nAVOID: no strap moved, no strap higher, no strap lower, no strap on the side of the knee, no strap over the kneecap, no "
+    "change to the strap's shape or size, no second strap, no face, no logos on the trainers, no readable text on the photos, no extra legs"))
+
+# B22-BR — "Sixty days, and you keep the straps. From the Stryde site." The box, just delivered, on her doormat — background-only edit of
+# the package photo (the only method that kept the straps exact), her hand coming in at the top of the frame without touching it.
+B["B22-BR"] = (NBP, ["PKGH", "P1"], (
+    "Edit Image 1. Keep the STRYDE box EXACTLY as it is in Image 1, untouched — the matte-black box and tray, BOTH straps lying in the tray "
+    "exactly as they are, and the lid with the large grey stryde wordmark — the same shapes, sizes and proportions, nothing redrawn. Change "
+    "ONLY the plain white background: the box now sits on a coir doormat just inside her front door, the oatmeal hall carpet and the foot "
+    "of her stairs with white spindles soft behind, as in Image 2; at the top of the frame her hand — slim, pale, a plain gold wedding "
+    "ring, a navy-and-white striped sleeve — reaches down towards the box, fingertips just above the lid, not yet touching it. Warm "
+    "afternoon sun from the front door glass, a soft real shadow under the box. An ordinary phone photo from a little above.\n\nAVOID: no "
+    "redrawn strap, no changed shell shape, no flat band, " + P.NEG_WORDMARK + ", no third strap, no hand touching the straps, no "
+    "parcel tape, no shipping label, no readable text other than the wordmark, no face, no extra fingers"))
+
+# B22a — "Two for one, so you can do both knees." The open box on the kitchen table from above, her two hands holding the lid off —
+# background-only edit of the package photo, hands on the lid only (never on the straps).
+B["B22a"] = (NBP, ["PKGH", "P4"], (
+    "Edit Image 1. Keep the STRYDE box and BOTH straps lying side by side in its tray EXACTLY as they are in Image 1 — the same shells, "
+    "peaks, notches, chrome slides, bands and grey stryde wordmarks, the same sizes, nothing redrawn. Change ONLY the plain white "
+    "background and the lid: the open box now sits on the pale-oak kitchen table with its linen runner from Image 2, seen from high above, "
+    "looking nearly straight down; her two hands — slim, pale, a gold wedding ring, navy-and-white striped cuffs — hold the matte-black lid "
+    "lifted just clear of the box at the top of the frame, its grey stryde wordmark showing. Soft daylight from the kitchen window on the "
+    "left. An ordinary phone photo.\n\nAVOID: no hands touching the straps, no strap lifted, no strap bent, no redrawn strap, "
+    + P.NEG_WORDMARK + ", no third strap, no readable text other than the wordmark, no face, no extra hands, no extra fingers"))
+
+# B22c — "The copies stretch, and a stretched strap stops holding the spot." The cheap copy (FAKE_BASE + 'wide webbing'), two hands
+# pulling its band slack on the kitchen table. Never the hero.
+B["B22c"] = (NB2, ["P4"], photo([
+    "A snapshot from a phone held a little above, side-on, close on the kitchen table. Two older hands — slim, pale, a gold wedding ring, "
+    "navy-and-white striped cuffs — hold a cheap knee strap by its two ends and pull: its band stretches long and slack, gone thin and "
+    "limp, no longer holding any shape. " + P.FAKE_BASE + " Its band is a wide stiff flat nylon webbing with a velcro tab, fraying at the "
+    "cut end. Close: the copy and both hands fill the frame, the linen runner soft below.",
+    KITCHEN,
+    angle("B22c", "the cheap copy stretched between her hands"),
+    focus("the hands and what they hold", deep=False).replace("the room behind", "the kitchen behind"),
+    light("KITCH-R", "the copy and her hands"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "navy-and-white striped cuffs").replace("the faded orange of the old photograph", "the scuffed black plastic of the copy")],
+    NO_FACE + ", " + P.NEG_FAKE_HERO + ", no STRYDE strap, no wordmark anywhere, no chrome, no box, no second copy, no extra hands, no extra fingers"))
+
+# B23a — "The next step is going to land in the same place either way." Ground-level ECU of her plimsoll settling on the edge of the top
+# stair, the strap just in frame above — edit of B19b v5 (strap placed right), the camera dropped to the step.
+B["B23a"] = (NBP, ["B19BV5"], (
+    "Edit Image 1. " + KEEP_WORN.replace(" and keep the leg, the skin and the room.", " and keep her pale older leg, the white plimsoll and "
+    "the oatmeal stair carpet.") + " Change ONLY the camera: it now sits right down on the stair carpet at the edge of the top stair, "
+    "looking three-quarter along the step, very close: her white plimsoll settling onto the very edge of the stair fills the lower frame, "
+    "her shin rising above it, and the strap just in frame at the top edge, still seated below the kneecap. The rest of the stairs fall "
+    "away soft and out of focus below the edge. Warm afternoon sun. A real phone photo.\n\nAVOID: no strap moved, no strap on the shin, "
+    "no second strap, no face, no hand, no logos on the plimsoll, no extra feet, no extra toes"))
+
+# B23b — "Go and do it forwards." Low MEDIUM from below: Maureen coming down towards us facing forwards, a small smile; the strap out of
+# frame (waist up). Striped T-shirt as the self-test scenes.
+B["B23b"] = (NBP, ["R1", "B19BR2V4", "P1"], photo([
+    "A snapshot from a phone held low near the foot of her stairs, looking up at her. Maureen is coming down towards the camera, facing "
+    "forwards, easy and unhurried, a small warm smile, her hand on the duck-egg blue wall beside her. Medium: her from the waist up, the "
+    "flight and the half-landing window rising behind her.",
+    R1 + " Wearing the navy-and-white Breton striped T-shirt, as in Image 2.",
+    M_STAIRS,
+    angle("B23b", "her coming down the stairs"),
+    focus("the nearest eye of the woman", deep=False).replace("the room behind", "the stairs behind"),
+    light("M-SUN-R", "her face"), colour("M-STAIRS-SUN").replace("a sage-green cardigan, a white T-shirt and a mid-blue denim skirt", "a navy-and-white striped T-shirt").replace("the matte-black strap and its chrome slides", "the half-landing window light")],
+    "no looking into the lens, no posing, no broad grin, no product in frame, no knee strap, no second person, no readable text, no extra fingers"))
+
+# ── 2026-10-01 "fix and confirm" round: seven image Fixes ──
+REFS.update({"B18BV2H": ("B18b v2 — the shot to edit (Image 1)", "019429d5-aafe-425a-a16c-4d62410452d3"),
+             "B18AV2H": ("B18a v2 — the shot to edit (Image 1)", "82dfbe58-78f5-4f2e-a77b-ecd6f6910bc8"),
+             "B17BV3H": ("B17b v3 — the shot to edit (Image 1)", "347779b9-c72d-43c5-b420-25576b1b839c"),
+             "PWE1": ("worn_front.jpg — the strap worn, the shot to edit (Image 1)", "2290ef3b-75a4-4c39-8ea2-b9c4b60e6637")})
+
+# B18b Fix "positive, no ache, not holding the banister": edit of v2 (both knees strapped) — hands off the rail, an easy bright smile.
+B["B18b"] = (NBP, ["B18BV2H"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — her face, white hair, sage-green cardigan, white T-shirt, denim skirt, "
+    "white plimsolls, the stairs, the light, the camera angle — and keep BOTH black straps EXACTLY where they are, one below each "
+    "kneecap. Change ONLY this: she is NOT holding the banister — both hands hang relaxed and free at her sides, well clear of the honey "
+    "oak handrail — and she comes down easily with a bright, open, comfortable smile, light on her feet, no sign of any ache. A real "
+    "phone photo.\n\nAVOID: no hand on the banister, no hand on the handrail, no wincing, no strap moved, no strap over the kneecap, no "
+    "third strap, no change to her face or clothes, no extra hands, no extra legs"))
+
+# B19b Fix "fix the stair location": v6 lost her real staircase (the banister) — back to v5's real stairs (Image 1), her hand on the wall,
+# and the free hand given a job IN THE FRAME (resting on her bare thigh) so the video has no idle hand to put on the rail.
+B["B19b"] = (NBP, ["B19BV5"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — her real staircase with the white spindles and the honey oak handrail, "
+    "her face, white hair, striped T-shirt, denim skirt, plimsolls, her hand pressed flat on the duck-egg blue wall on the right of the "
+    "frame, the light and the camera — and the black strap EXACTLY where it is on the knee on the LEFT of the frame, the other knee BARE. "
+    "Change ONLY her free hand: it now rests flat on the front of her BARE thigh, just above the bare knee, as if easing it — well away "
+    "from the handrail. A real phone photo.\n\nAVOID: no hand on the banister, no hand on the handrail, no strap moved, no strap on the "
+    "bare knee, no second strap, no change to her face or clothes, no extra hands, no extra fingers"))
+
+# B21-BR Fix "give me different broll here" — "Keep aiming at the joint, which is where it hurts but not where the load is.": his hall
+# table drawer full of the things aimed at the joint — sleeves, a hinged brace, gel tubes, a heat pad. No STRYDE.
+B["B21-BR"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held a little above, three-quarter on, close on the open top drawer of the small hall table by his stairs. "
+    "The drawer is crammed with everything aimed at the knee joint: two beige neoprene knee sleeves, a black hinged knee brace with "
+    "metal side bars, three plain white tubes of gel, a folded grey heat pad and a roll of white tape — all plain and unbranded, worn and "
+    "used. His hand — dark brown older skin, thick knuckles, a navy zip-neck sleeve — lifts one sleeve out and holds it over the pile. "
+    "Close: the drawer and his hand fill the frame, the stairs soft behind.",
+    D_STAIRS,
+    angle("B21-BR", "the drawer of knee supports"),
+    focus("the hands and what they hold", deep=False).replace("the room behind", "the hall behind"),
+    light("D-GREY-R", "the drawer and his hand"), colour("D-STAIRS-AM").replace("a navy zip-neck top, dark grey shorts and white trainers with navy trim", "a navy zip-neck cuff").replace("the white nosing stripes", "the beige neoprene sleeves")],
+    NO_FACE + ", no STRYDE strap, no shell with two peaks, no chrome slides, no readable text on the tubes, no brand names, no logos, "
+    "no labels, no packaging with writing, no second hand, no extra fingers"))
+
+# B21 Fix "fix broll, give me different broll here" — "Or move the load off the one spot that has been taking it since you were a
+# teenager.": the old footballer back at it — edit of B18a v2 (his strap placed right, front-on): in his back garden, about to kick a
+# ball gently, smiling.
+B["B21"] = (NBP, ["B18AV2H", "R2"], (
+    "Edit Image 1. " + KEEP_WORN.replace(" and keep the leg, the skin and the room.", " and keep his face, his navy T-shirt, khaki "
+    "shorts, white trainers and his relaxed smile.") + " Change the place and the pose: he is now standing on the lawn of his back garden "
+    "on a sunny afternoon, a worn leather football at his feet, his strapped right leg drawn back ready to give it a gentle kick, the "
+    "strapped knee bent and facing the camera so the strap's front and wordmark read clearly; an easy, happy smile, the old footballer in "
+    "him showing. Seen from the front at about waist height, his whole figure in frame, a garden fence and shrubs soft behind. A real "
+    "phone photo.\n\nAVOID: no strap moved, no strap higher, no strap lower, no strap on the side of the knee, no strap over the "
+    "kneecap, no change to the strap's shape or size, no second strap, no logos on the trainers, no logos on the ball, no second person, "
+    "no extra legs"))
+
+# B22-BR Fix "different broll here, positive walking or running with stryde" — "Sixty days, and you keep the straps.": Maureen walking
+# briskly and happily along a sunny park path — edit of B17b v3 (her strap placed right, walking), pulled back to show her whole stride.
+B["B22-BR"] = (NBP, ["B17BV3H", "R1"], (
+    "Edit Image 1. " + KEEP_WORN.replace(" and keep the leg, the skin and the room.", " and keep her pale older legs, denim skirt and "
+    "white plimsolls.") + " Change the place and pull the camera back: she is now walking briskly and happily along a sunny park path "
+    "towards the camera, mid-stride, the strapped right knee forward and front-on so the strap's front and wordmark read; seen from knee "
+    "height a few metres away, her whole figure in frame — the same woman as in Image 2, in a navy-and-white striped T-shirt — a bright "
+    "easy smile, green grass and trees soft behind. A real phone photo.\n\nAVOID: no strap moved, no strap over the kneecap, no strap "
+    "on the left leg, no second strap, no running shoes with logos, no looking into the lens, no second person, no extra legs"))
+
+# B23a Fix "fix the product, give me different broll here" — "The next step is going to land in the same place either way.": the real
+# worn photo (worn_front.jpg) as Image 1, background only changed to her stairs — the strap stays the real one in the real place.
+B["B23a"] = (NBP, ["PWE1", "P1"], (
+    "Edit Image 1. Keep the leg and the strap EXACTLY as they are in Image 1, untouched — the same black shell with two rounded peaks "
+    "and the notch, the chrome slides, the band, the grey stryde wordmark, the same size and the same place just below the kneecap, the "
+    "same knee and skin — nothing redrawn. Change ONLY the background and add the step: the leg is now on her stairs, the foot below in "
+    "a white canvas plimsoll landing on the edge of an oatmeal-carpeted stair, the white spindles and duck-egg blue wall of Image 2 soft "
+    "behind. Warm afternoon sun. A real phone photo.\n\nAVOID: no redrawn strap, no strap moved, no strap on the shin, "
+    + P.NEG_WORDMARK + ", no second strap, no face, no hand, no logos on the plimsoll, no extra legs, no extra toes"))
+
+# B23b Fix "different broll here" — "Go and do it forwards.": from behind her at the top of her stairs, the flight going down ahead —
+# she is about to go down forwards, hands free.
+B["B23b"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone held at shoulder height just behind her on the landing. Maureen stands at the top of her stairs, her back "
+    "to the camera, about to go down forwards — her first foot just lifting towards the top stair — the whole flight dropping away ahead "
+    "of her to the hall and the front door at the bottom, bright with afternoon sun. Her hands hang free at her sides. Medium: her from "
+    "the head to the knees, the flight ahead.",
+    R1 + " Wearing a navy-and-white Breton striped T-shirt and a mid-blue denim skirt. Her face is not seen — only the back of her soft "
+    "white hair.",
+    M_STAIRS,
+    "THE CAMERA ANGLE: an eye-level camera, seen from directly behind her at the top of the stairs. This exact angle.",
+    focus("everything", deep=True),
+    light("M-SUN-R", "the stairs ahead of her"), colour("M-STAIRS-SUN").replace("a sage-green cardigan, a white T-shirt and a mid-blue denim skirt", "a navy-and-white striped T-shirt and a denim skirt").replace("the matte-black strap and its chrome slides", "the sunlit front door")],
+    "no face, no hand on the banister, no product in frame, no second person, no readable text, no extra fingers"))
+
+# B19-BR2 Fix "fix the stair location" — "You will know in a minute.": the close of her face was on a staircase that matched none of the
+# other stair shots. Now an edit of B19b v7 (her real stairs, the same light, the same T-shirt), pulled in close on her face as she
+# notices — her hand stays flat on the wall, nothing on the banister.
+REFS.update({"B19BV7H": ("B19b v7 — her stairs, the shot to edit (Image 1)", "eb72be2a-a4e4-4f50-b58c-290c9e3f4190")})
+B["B19-BR2"] = (NBP, ["B19BV7H", "R1"], (
+    "Edit Image 1. Keep the place EXACTLY as it is in Image 1 — her real staircase, the white spindles and honey oak handrail on the left, "
+    "the duck-egg blue wall on the right, the oatmeal carpet, the bright window at the top, the warm afternoon light — and keep her "
+    "exactly: the same woman as in Image 2, her soft white hair, the navy-and-white striped T-shirt, her hand pressed flat on the wall. "
+    "Change ONLY the framing and her look: the camera has stepped up the stairs close to her, at her eye level and a little to the side, "
+    "so her head and shoulders fill the frame with the same staircase soft behind her. She has paused partway down; a quiet look of "
+    "surprise is softening into a small private smile, as if she has just noticed her knee is not hurting. A real phone photo.\n\n"
+    "AVOID: no different staircase, no different wall colour, no hand on the banister, no hand on the handrail, no looking into the "
+    "lens, no posing, no broad grin, no knee strap in frame, no second person, no extra fingers"))
+
+# ── 2026-10-01 "fix & confirm" round: five image Fixes ──
+REFS.update({"B18BV3H": ("B18b v3 — the shot to edit (Image 1)", "62f43732-74f9-4dba-9a0d-83191c1bbfbf"),
+             "B20V1H": ("B20 v1 — the anatomy knee (Image 1)", "08a9d57f-fae6-4619-bd8a-954eb432da16")})
+
+# B18b Fix "keep her hands down, don't hold anything": edit of v3 — both arms straight down, hands open and empty, touching nothing.
+B["B18b"] = (NBP, ["B18BV3H"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — her face and bright smile, white hair, sage-green cardigan, white "
+    "T-shirt, denim skirt, white plimsolls, the stairs, the light, the camera angle — and keep BOTH black straps EXACTLY where they are, "
+    "one below each kneecap. Change ONLY her hands: both arms hang straight down at her sides, both hands open, relaxed and EMPTY, a "
+    "little away from her body — not touching her skirt, her legs, the handrail, the wall or anything else. A real phone photo.\n\n"
+    "AVOID: no hand on the skirt, no hand on the thigh, no hand on the banister, no hand on the wall, nothing held, no strap moved, no "
+    "third strap, no change to her face or clothes, no extra hands, no extra fingers"))
+
+# B19-BR2 Fix "continuous of 'Go to your own stairs and come down forwards.' give me different broll here" — "You will know in a
+# minute.": the next moment of B19b — she is now partway down the flight, coming down forwards, a small smile as she notices.
+B["B19-BR2"] = (NBP, ["B19BV7H", "R1"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — her real staircase, the white spindles and honey oak handrail, the "
+    "duck-egg blue wall, the oatmeal carpet, the window, the warm afternoon light, the same camera position and angle — and keep her "
+    "exactly: the same woman as in Image 2, the striped T-shirt, denim skirt, white plimsolls, and the black strap EXACTLY where it is on "
+    "the knee on the LEFT of the frame, the other knee BARE. Change ONLY where she is: this is a moment later — she has come FOUR stairs "
+    "further down the flight, facing forwards, closer to the camera and larger in frame, one foot stepping down to the next stair, her "
+    "hand still flat on the wall, the other resting on her bare thigh; a quiet look of surprise softening into a small smile, as if she "
+    "has just noticed her knee is not hurting. A real phone photo.\n\n"
+    "AVOID: no hand on the banister, no hand on the handrail, no strap moved, no strap on the bare knee, no second strap, no different "
+    "staircase, no change to her face or clothes, no looking into the lens, no extra legs, no extra hands"))
+
+# B21-BR Fix "different broll here" (drawer and gel both turned down) — "Keep aiming at the joint, which is where it hurts but not where
+# the load is.": the anatomy knee from B20 — the joint itself lit cool blue (where everything aims), the tendon below glowing hot red
+# (where the load is). No strap, no text.
+B["B21-BR"] = (NBP, ["B20V1H"], (
+    "Edit Image 1. Keep the premium 3D anatomical knee EXACTLY as it is in Image 1 — the same model, bones, muscles, translucent skin, "
+    "camera angle, near-black background and lighting. Change ONLY this: REMOVE the black strap completely, so the front of the knee is "
+    "bare. The joint itself — the kneecap and the joint line around it — is ringed by a soft cool blue glow, as if everything is aimed "
+    "there. Just below the kneecap, the patellar tendon glows a hot, angry red-orange, clearly the place carrying the load. A clean "
+    "premium medical render.\n\n"
+    "AVOID: no strap, no brace, no sleeve, no product, no text, no labels, no arrows, no numbers, no second knee, no glow on the shin, "
+    "no change to the anatomy"))
+
+# B22a Fix "different broll here" (the box turned down) — "Two for one, so you can do both knees.": edit of B18b v3 (both straps already
+# placed right) — the camera low and close on her two knees, a strap below each kneecap, front-on.
+B["B22a"] = (NBP, ["B18BV3H"], (
+    "Edit Image 1. Keep BOTH black straps EXACTLY as they are in Image 1 — the same shells with two rounded peaks, chrome slides, grey "
+    "stryde wordmarks, the same size and the same place, one just below EACH kneecap — and keep her legs, denim skirt hem, white plimsolls, "
+    "the oatmeal stairs and the warm light. Change ONLY the framing: the camera is now low and close, level with her knees, straight in "
+    "front, so her two strapped knees fill the frame side by side, from the skirt hem down to her plimsolls on the stair, both straps "
+    "front-on and their wordmarks readable. A real phone photo.\n\n"
+    "AVOID: no strap moved, no strap over the kneecap, no strap on the shin, " + P.NEG_WORDMARK + ", no third strap, no face, no hand, "
+    "no extra legs, no extra knees"))
+
+# B23a Fix "different broll here" — "The next step is going to land in the same place either way.": edit of B19b v7 (her strap already
+# placed right) — low and close on her legs as her strapped leg reaches down to the next stair, the foot about to land.
+B["B23a"] = (NBP, ["B19BV7H"], (
+    "Edit Image 1. Keep the black strap EXACTLY as it is in Image 1 — the same shell with two rounded peaks, chrome slides, grey stryde "
+    "wordmark, the same size and the same place just below the kneecap of the knee on the LEFT of the frame — the other knee BARE; keep "
+    "her denim skirt, white plimsolls, her real stairs and the warm light. Change ONLY the framing and the step: the camera is now low "
+    "on the stairs just below her, close on her legs from the skirt hem to her feet, which fill the frame; her strapped leg reaches down "
+    "and its plimsoll is just about to land on the edge of the next stair, the bare leg bent behind on the stair above. A real phone "
+    "photo.\n\n"
+    "AVOID: no strap moved, no strap on the bare knee, no second strap, no strap on the shin, " + P.NEG_WORDMARK + ", no face, no hand "
+    "on the banister, no extra legs, no extra feet"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

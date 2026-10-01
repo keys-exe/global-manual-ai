@@ -24,6 +24,8 @@
  "subject_motion": "still",
  "prefer_multi_shots": "false",
  "generation": 1,
+ "fix_note": null,
+ "user_go": null,
  "risks": [
   {
    "risk": "bags change count or float",

@@ -22,6 +22,8 @@
  "subject_motion": "travels",
  "prefer_multi_shots": "false",
  "generation": 1,
+ "fix_note": null,
+ "user_go": null,
  "risks": [
   {
    "risk": "the camera follows her up",

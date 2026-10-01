@@ -1003,6 +1003,172 @@ for _b in ("B19b", "B19-BR2", "B19-BR2c"):
     B[_b][0]["motion"] = B[_b][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little" + ("; the strap never moves" if _b == "B19b" else ""))
 START.update({"B19b": str(HERE.parent / "broll/B19b_v4.png"), "B19-BR2": str(HERE.parent / "broll/B19-BR2_v4.png"), "B19-BR2c": str(HERE.parent / "broll/B19-BR2c_v2.png")})
 
+# ── 2026-10-01 B19-BR2b v3 confirmed → clip (Higgsfield Kling 3.0) ──
+B["B19-BR2b"] = clip("B19-BR2b",
+    "In a consulting room, a British surgeon of Pakistani heritage in navy scrubs and a grey fleece gilet sits behind a pale wood desk, "
+    "pointing with one finger at the joint of a life-size anatomical knee model; a white British woman of sixty-nine with soft white hair "
+    "in a navy-and-white striped T-shirt sits across from him, listening.",
+    "Already explaining on the first frame: his finger traces once down the inside of the joint on the knee model, about two seconds, "
+    "and she gives one small understanding nod. Both stay seated; the knee model stays still on the desk.",
+    "no knee model moving, no model changing shape, no talking to the camera, no looking into the lens, no standing up, no third person, "
+    "no camera movement, no extra fingers, no extra hands",
+    3.0, hi=5,
+    risks=[{"risk": "the knee model warps under his finger", "prevented_by": "one light trace, 'no knee model moving, no model changing shape'"},
+           {"risk": "faces morph", "prevented_by": "small movements only, HOLD-C + NEG-WARP-C"},
+           {"risk": "someone looks into the lens", "prevented_by": "'no looking into the lens'"}])
+B["B19-BR2b"][0]["motion"] = B["B19-BR2b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little")
+START.update({"B19-BR2b": str(HERE.parent / "broll/B19-BR2b_v3.png")})
+
+# ── 2026-10-01 "confirm": B19-BR v6 confirmed → clip (Higgsfield Kling 3.0). Product still: only steam and light move. ──
+B["B19-BR"] = clip("B19-BR",
+    "An open matte-black STRYDE box on a pale-oak kitchen table with a linen runner, its lid with the grey stryde wordmark resting at the "
+    "back, two black STRYDE straps with chrome slides lying in the tray, a white mug of tea beside it, a sage-green kitchen behind.",
+    "Already moving on the first frame: a thin wisp of steam rises slowly from the tea and drifts, about two seconds, and the soft "
+    "daylight from the window shifts very slightly. The box, the lid and both straps do not move at all — rigid, keeping their exact "
+    "shape, size and wordmarks.",
+    "no box moving, no strap moving, no strap changing shape, no wordmark changing, no lid moving, no hands, no person, no camera "
+    "movement, no zoom",
+    3.0, hi=5,
+    risks=[{"risk": "the straps or wordmarks morph", "prevented_by": "nothing in the box moves; rigid line; 'no strap changing shape, no wordmark changing'"},
+           {"risk": "a hand appears", "prevented_by": "'no hands, no person'"},
+           {"risk": "the camera drifts", "prevented_by": "locked-off tripod clause, 'no camera movement, no zoom'"}])
+B["B19-BR"][0]["motion"] = B["B19-BR"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the steam drifts softly; the straps never move")
+START.update({"B19-BR": str(HERE.parent / "broll/B19-BR_v6.png"), "B20": str(HERE.parent / "broll/B20_v1.png"), "B22a": str(HERE.parent / "broll/B22a_v1.png"), "B22c": str(HERE.parent / "broll/B22c_v1.png")})
+
+# ── 2026-10-01 B19b video Fix (gen 2): "not holding the banister because the knee with stryde is okay but in the knee without stryde
+# is in pain her hand is on the wall" — frame fixed first (v5, confirmed); now the motion: strapped step easy, bare-knee step hurts. ──
+B["B19b"] = clip("B19b",
+    "A white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt and a mid-blue denim skirt, at the top "
+    "of her carpeted stairs facing down towards the camera, NOT holding the banister, her hand on the right of the frame pressed flat on "
+    "the duck-egg blue wall; a black STRYDE strap seated just below the kneecap of the leg on the left of the frame, the other knee bare.",
+    "Already stepping on the first frame: she steps down one stair with the strapped leg, easy and sure, about a second; then, as her "
+    "weight comes onto the bare knee for the next step, she winces a little, slows, and presses her hand harder against the wall to "
+    "steady herself — about two seconds. Her other hand stays free, away from the banister. The strap stays exactly where it is — rigid, "
+    "keeping its shape, size and wordmark.",
+    "no hand on the banister, no grabbing the handrail, no falling, no stumbling, no strap moving, no strap on the bare knee, no second "
+    "strap, no going up the stairs, no exaggerated pain, no looking into the lens, no camera movement, no extra legs, no extra hands",
+    4.0, hi=5,
+    risks=[{"risk": "her hand goes to the banister", "prevented_by": "hand pressed on the wall in the subject; 'no hand on the banister, no grabbing the handrail'"},
+           {"risk": "the pain is overplayed or she falls", "prevented_by": "'winces a little, slows'; 'no falling, no stumbling, no exaggerated pain'"},
+           {"risk": "the strap jumps to the bare knee", "prevented_by": "strap placed by leg; 'no strap on the bare knee, no second strap'"}])
+B["B19b"][0]["motion"] = B["B19b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little; the strap never moves")
+START.update({"B19b": str(HERE.parent / "broll/B19b_v5.png")})
+
+# ── 2026-10-01 B19-BR2 video Fix (gen 2): "walking up stair" — same frame (face CU on the stairs), the motion now climbs. ──
+B["B19-BR2"] = clip("B19-BR2",
+    "A close-up of a white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt, on her stairs, one hand "
+    "on the honey oak handrail, three-quarter on, a small private smile.",
+    "Already moving on the first frame: she walks UP her stairs, taking one easy step up at an unhurried pace, about a second and a "
+    "half — her body rises a little in the frame, her hand slides up the oak handrail with her, and her small smile stays as she climbs, "
+    "easy and sure. Her head stays inside the frame.",
+    "no going down the stairs, no stumbling, no wincing, no head leaving the frame, no looking into the lens, no talking, no camera "
+    "movement, no camera following her, no face morphing, no extra fingers, no extra hands",
+    3.0, hi=5,
+    risks=[{"risk": "her head rises out of a close frame", "prevented_by": "one step only, 'her head stays inside the frame'"},
+           {"risk": "the camera follows her up", "prevented_by": "locked-off tripod clause, 'no camera following her'"},
+           {"risk": "she goes down instead of up", "prevented_by": "'walks UP', 'no going down the stairs'"}])
+B["B19-BR2"][0]["motion"] = B["B19-BR2"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little")
+
+# ── 2026-10-01 B19b video Fix round 3 (user "go"): v2's free hand drifted onto the banister — give the free hand a job (resting on the
+# bare thigh above the sore knee) and shorten to ONE bare-knee step, so there is no idle hand and no second step for it to wander in. ──
+B["B19b"] = clip("B19b",
+    "A white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt and a mid-blue denim skirt, at the top "
+    "of her carpeted stairs facing down towards the camera; her hand on the right of the frame pressed flat on the duck-egg blue wall; "
+    "a black STRYDE strap seated just below the kneecap of the leg on the left of the frame, the other knee bare.",
+    "Already moving on the first frame: her free hand settles onto her bare thigh just above the bare knee and STAYS there, resting, the "
+    "whole clip. She steps down one stair onto the bare knee, slowly and carefully, about two seconds — she winces a little as her "
+    "weight lands, and leans her other hand harder into the wall. The banister stays untouched at the far edge of the frame. The strap "
+    "stays exactly where it is — rigid, keeping its shape, size and wordmark.",
+    "no hand on the banister, no hand leaving the thigh, no second step, no falling, no strap moving, no strap on the bare knee, no "
+    "exaggerated pain, no feet warping, no shoe changing shape, no extra legs, no extra hands",
+    3.0, hi=4,
+    risks=[{"risk": "the free hand drifts onto the banister (v2's fault)", "prevented_by": "the free hand is given a job — resting on the bare thigh the whole clip; 'no hand on the banister, no hand leaving the thigh'"},
+           {"risk": "feet and shoes warp over two steps (v2)", "prevented_by": "one step only, 4 s; 'no feet warping, no shoe changing shape'"},
+           {"risk": "the pain is overplayed", "prevented_by": "'winces a little'; 'no exaggerated pain, no falling'"}])
+B["B19b"][0]["motion"] = B["B19b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little; the strap never moves")
+
+# ── 2026-10-01 "fix and confirm": B20, B22a, B22c images confirmed → clips (Higgsfield Kling 3.0) ──
+B["B20"] = clip("B20",
+    "A premium 3D anatomical model of a knee seen from a little above and in front on a near-black field, a black STRYDE knee strap with "
+    "two rounded peaks, chrome slides and a grey stryde wordmark seated across the front of the leg just below the kneecap.",
+    "Already under load on the first frame: one step's load arrives — the knee flexes very slightly and a faint cool pearly pulse passes "
+    "through the soft tissue around the strap and fades, about a second, the tendon beneath staying calm with no hot spot. The strap "
+    "stays exactly where it is — rigid, its shape, peaks and wordmark unchanged; the kneecap stays uncovered above it.",
+    "no strap moving, no strap sliding, no strap changing shape, no wordmark changing, no second strap, no hot spot, no red glow, no "
+    "arrows, no text, no labels, no glow spreading down the shin, no second limb, no camera orbit, no zoom",
+    3.0, hi=5,
+    risks=[{"risk": "the strap warps or the wordmark smears", "prevented_by": "rigid-product line, 'no strap changing shape, no wordmark changing'"},
+           {"risk": "a hot spot appears (the wrong message)", "prevented_by": "'tendon calm, no hot spot, no red glow'"},
+           {"risk": "the glow spreads or text appears", "prevented_by": "'no glow spreading down the shin, no arrows, no text'"}])
+B["B20"][0]["motion"] = B["B20"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the strap never moves")
+B["B22a"] = clip("B22a",
+    "An open matte-black STRYDE box on a pale-oak kitchen table with a linen runner, two black STRYDE straps with chrome slides lying side "
+    "by side in its tray; an older woman's two hands, navy-and-white striped cuffs, hold the box lid just above it.",
+    "Already moving on the first frame: her hands lift the lid up and away out of the top of the frame in one smooth movement, about a "
+    "second, revealing the two straps in the tray. The box and both straps do not move at all — rigid, keeping their exact shape, size "
+    "and wordmarks.",
+    "no straps moving, no strap changing shape, no wordmark changing, no box moving, no hands touching the straps, no third strap, no "
+    "camera movement, no extra hands, no extra fingers",
+    3.0, hi=5,
+    risks=[{"risk": "the straps morph as the lid lifts", "prevented_by": "rigid line; 'no straps moving, no strap changing shape'"},
+           {"risk": "a hand reaches into the tray", "prevented_by": "'no hands touching the straps'"},
+           {"risk": "hands duplicate", "prevented_by": "one movement, HOLD-C + NEG-WARP-C, 'no extra hands'"}])
+B["B22a"][0]["motion"] = B["B22a"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the straps never move")
+B["B22c"] = clip("B22c",
+    "On a pale-oak kitchen table, two older hands with navy-and-white striped cuffs hold a cheap black knee strap by its two ends — a "
+    "thin plastic shell with no wordmark and a flat nylon band.",
+    "Already pulling on the first frame: the hands draw apart and the cheap nylon band stretches long and thin, then goes limp and slack "
+    "as the hands ease back — one pull, about a second and a half. The cheap shell flexes; nothing snaps.",
+    "no wordmark appearing, no chrome, no STRYDE strap, no band snapping, no extra hands, no extra fingers, no camera movement",
+    3.0, hi=5,
+    risks=[{"risk": "the copy gains a wordmark or becomes the hero", "prevented_by": "'no wordmark appearing, no chrome, no STRYDE strap'"},
+           {"risk": "hands and band tangle", "prevented_by": "one pull at a countable pace, HOLD-C + NEG-WARP-C"},
+           {"risk": "the band snaps (not the line)", "prevented_by": "'goes limp and slack', 'no band snapping'"}])
+B["B22c"][0]["motion"] = B["B22c"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the nylon band stretches and sags")
+
+# ── 2026-10-01 "fix & confirm": B21 v2, B22-BR v2, B23b v2 images confirmed → clips (Higgsfield Kling 3.0) ──
+START.update({"B21": str(HERE.parent / "broll/B21_v2.png"), "B22-BR": str(HERE.parent / "broll/B22-BR_v2.png"), "B23b": str(HERE.parent / "broll/B23b_v2.png")})
+B["B21"] = clip("B21",
+    "A Black British man of about seventy in a navy T-shirt, khaki shorts and white trainers on the lawn of his sunny back garden, a "
+    "worn brown leather football at his feet, a black STRYDE knee strap with chrome slides seated just below his right kneecap.",
+    "Already moving on the first frame: he swings his strapped right leg through and gives the ball one gentle side-foot tap, the ball "
+    "rolling slowly away across the grass, then his foot settles back down beside the other — one easy kick, about a second and a half, "
+    "his smile widening. The strap stays exactly where it is — rigid, keeping its shape, size and wordmark.",
+    "no strap moving, no strap sliding, no strap changing shape, no hard kick, no ball flying up, no second ball, no stumbling, no second "
+    "person, no extra legs, no feet warping, no shoe changing shape",
+    3.0, hi=4,
+    risks=[{"risk": "the strap slides or warps with the kick", "prevented_by": "a gentle side-foot tap, rigid line, 'no strap moving, no strap changing shape'"},
+           {"risk": "the kick becomes violent and the ball flies off", "prevented_by": "'one gentle side-foot tap', 'rolling slowly', 'no hard kick, no ball flying up'"},
+           {"risk": "legs and feet warp mid-swing", "prevented_by": "one movement, 4 s, HOLD-C + NEG-WARP-C, 'no extra legs, no feet warping'"}])
+B["B21"][0]["motion"] = B["B21"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "fabric lags a little; the strap never moves")
+B["B22-BR"] = clip("B22-BR",
+    "A white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt, denim skirt and white plimsolls, "
+    "walking along a sunny park path towards the camera, a black STRYDE knee strap seated just below her right kneecap.",
+    "Already walking on the first frame: she takes two brisk, easy steps towards the camera at a comfortable walking pace, arms swinging "
+    "naturally, her smile bright — about two seconds — and stays fully in frame. The strap stays exactly where it is — rigid, keeping its "
+    "shape, size and wordmark.",
+    "no strap moving, no strap sliding, no strap changing shape, no running, no limping, no camera moving with her, no second person, "
+    "no extra legs, no feet warping, no shoe changing shape",
+    3.0, hi=4,
+    risks=[{"risk": "the camera travels with her (§27G)", "prevented_by": "locked-off camera, 'no camera moving with her'; two steps only"},
+           {"risk": "the strap slides with the stride", "prevented_by": "rigid line, 'no strap moving, no strap sliding'"},
+           {"risk": "legs and plimsolls warp in the stride", "prevented_by": "two steps at a counted pace, HOLD-C + NEG-WARP-C"}])
+B["B22-BR"][0]["motion"] = B["B22-BR"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little; the strap never moves")
+B["B23b"] = clip("B23b",
+    "Seen from just behind her on the landing: a white British woman of sixty-nine with soft white hair, in a navy-and-white striped "
+    "T-shirt, denim skirt and white plimsolls, standing at the top of her carpeted stairs, the flight going down ahead of her to a sunlit "
+    "front door; her hands hang free at her sides.",
+    "Already moving on the first frame: she steps forwards and down onto the first stair, facing down the stairs, then the second foot "
+    "follows onto the next stair — two easy steps down, about two seconds, steady and unhurried, her hands staying free at her sides. "
+    "She stays in frame.",
+    "no hand on the banister, no hand on the handrail, no hand on the wall, no turning round, no face to camera, no stumbling, no "
+    "camera following her down the stairs, no second person, no extra legs, no feet warping, no shoe changing shape",
+    3.0, hi=4,
+    risks=[{"risk": "a free hand drifts onto the banister (B19b's fault)", "prevented_by": "'her hands staying free at her sides', 'no hand on the banister, no hand on the handrail'"},
+           {"risk": "the camera follows her down (§27G)", "prevented_by": "locked-off camera, 'no camera following her down the stairs'"},
+           {"risk": "feet warp on the stairs", "prevented_by": "two steps at a counted pace, HOLD-C + NEG-WARP-C"}])
+B["B23b"][0]["motion"] = B["B23b"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "hair and fabric lag a little")
+
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

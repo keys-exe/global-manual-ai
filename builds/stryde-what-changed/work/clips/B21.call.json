@@ -1,0 +1,33 @@
+{
+ "beat": "B21",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b21\",\"subject\":\"A Black British man of about seventy in a navy T-shirt, khaki shorts and white trainers on the lawn of his sunny back garden, a worn brown leather football at his feet, a black STRYDE knee strap with chrome slides seated just below his right kneecap. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: he swings his strapped right leg through and gives the ball one gentle side-foot tap, the ball rolling slowly away across the grass, then his foot settles back down beside the other — one easy kick, about a second and a half, his smile widening. The strap stays exactly where it is — rigid, keeping its shape, size and wordmark. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; fabric lags a little; the strap never moves; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no strap moving, no strap sliding, no strap changing shape, no hard kick, no ball flying up, no second ball, no stumbling, no second person, no extra legs, no feet warping, no shoe changing shape, no music, no speech, no slow motion\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-what-changed/broll/B21_v2.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the strap slides or warps with the kick",
+   "prevented_by": "a gentle side-foot tap, rigid line, 'no strap moving, no strap changing shape'"
+  },
+  {
+   "risk": "the kick becomes violent and the ball flies off",
+   "prevented_by": "'one gentle side-foot tap', 'rolling slowly', 'no hard kick, no ball flying up'"
+  },
+  {
+   "risk": "legs and feet warp mid-swing",
+   "prevented_by": "one movement, 4 s, HOLD-C + NEG-WARP-C, 'no extra legs, no feet warping'"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}
