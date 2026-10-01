@@ -76,8 +76,9 @@ SHOTS.append(dict(
         manifest([("@image1", SHEET("Her", "the outfit on the info card")), ("@image2", PLACE("the shopping centre atrium with the wide stairs")),
                   ("@image3", CARD_N), ("@audio1", VOICE("Her"))]),
         SERIES, LOOK, INHERIT, CENTRE,
-        "THE SHOT: a medium close-up from the top of the stairs looking down, three-quarter on: Her, " + HER_ID + ", in " + HER_OUT + ", mid-climb toward the camera with " + BAGS_N + ", the stairs falling away below her.",
-        "Without breaking stride, one step per second, she turns her head back over her shoulder toward her daughter below, out of frame, and says: \"" + L6 + "\" Then she faces up again and keeps climbing.",
+        "THE SHOT: a medium close-up from the top of the stairs, the camera on the upper landing looking straight down the flight: Her, " + HER_ID + ", in " + HER_OUT + ", is halfway up the wide tiled stairs, facing up the stairs and climbing up toward the camera with " + BAGS_N + ", the steps below her falling away to the ground floor.",
+        "Her body, chest and feet face up the stairs for the whole clip and she keeps climbing upward toward the camera, one step up per second, one foot per step, each foot landing on the next higher step. "
+        "Without stopping and without turning round, she flicks her eyes and chin a little down to her left toward her daughter, who is out of frame at the foot of the stairs, and says: \"" + L6 + "\" Then her eyes come back up the stairs and she climbs on, closer to the camera.",
         F2, PHYS,
         "While the line is spoken, Her keeps doing one thing with their hands: carrying a full bag in each hand, at one easy swing per step. It is ordinary and unhurried, and the hands never stop to gesture.",
         state("HER", "calm, not out of breath, bob and fringe in place, jacket zipped halfway, a full shopping bag in each hand, halfway up the stairs", "she is a few steps higher"),
@@ -87,8 +88,10 @@ SHOTS.append(dict(
         "VOICE NOW: easy, steady breath, a little raised to carry down the stairs, continuing from how Her sounded on the previous line, and matching the face in this shot. "
         "UNDER THE LINE: she is quietly proud her knees let her do this now, which leaks only through not slowing down at all. Played small and true, for a camera close enough to see a thought. Never theatrical, never pushed, never performed to the lens.",
         AUD,
-        negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    risks=[{"risk": "she stops to speak", "prevented_by": "'Without breaking stride', one step per second"},
+        negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, "no turning round, no turning her back to the camera, no walking down the stairs, no walking away from the stairs, no stepping off the stairs, no walking along the landing", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    gen=2, fix="User Fix: \"she should be going to the stairs and not away from it\" → fault in the prompt's motion: 'turns her head back over her shoulder… then faces up again' let the model turn her whole body and walk away from the flight → body, chest and feet locked facing up the stairs, climbing toward the camera, only a glance down to the left, no turn; turn-round / walk-down / walk-away negatives added",
+    risks=[{"risk": "she turns round or walks away from the stairs", "prevented_by": "body locked facing up the stairs, glance not a turn, explicit negatives"},
+           {"risk": "she stops to speak", "prevented_by": "'Without breaking stride', one step per second"},
            {"risk": "bags change hands or vanish", "prevented_by": "STATE-CARRY, bag count stated"},
            {"risk": "voice not hers", "prevented_by": "VOICE-N master as @audio1"}]))
 
@@ -121,18 +124,21 @@ SHOTS.append(dict(
     files=["N", "C2", "L-SHOPCENTRE", "OUT-N-HB", "OUT-C2-HB"], audios=[],
     prompt=" ".join([
         manifest([("@image1", SHEET("Her", "the outfit on the info card")), ("@image2", SHEET("the daughter", "the outfit on her info card")),
-                  ("@image3", PLACE("the upper gallery at the top of the stairs")), ("@image4", CARD_N), ("@image5", CARD_C2)]),
+                  ("@image3", PLACE("the shopping centre atrium, seen from its upper floor")), ("@image4", CARD_N), ("@image5", CARD_C2)]),
         SERIES, LOOK, INHERIT, CENTRE,
-        "THE SHOT: a close-up over the daughter's shoulder on the upper gallery: the soft back of the daughter's head and charcoal coat shoulder frame the near right edge, out of focus; "
-        "Her, " + HER_ID + ", in " + HER_OUT + ", stands at the glass gallery rail facing the camera side, her two shopping bags set down by her feet.",
+        "THE SHOT: a close-up over the daughter's shoulder, up on the second floor of the atrium, one full storey above the ground floor: the soft back of the daughter's head and charcoal coat shoulder frame the near right edge, out of focus; "
+        "Her, " + HER_ID + ", in " + HER_OUT + ", stands on the upper-floor gallery with her back to the glass gallery rail, facing the camera side, her two shopping bags set down by her feet. "
+        "Behind her, beyond the glass rail, the atrium drops away a full storey: the ground floor is far below and small, the glass lift shaft rises past the rail, and the skylight is close overhead — the shot is unmistakably upstairs.",
         "She waits, breathing easily, looking at her daughter, and her eyebrows lift a little — a small, dry, unbothered look that stays. She blinks naturally; nothing else moves.",
         F1(20), PHYS,
-        state("HER", "calm, not out of breath, bob and fringe in place, jacket zipped halfway, both shopping bags on the floor by her feet, at the gallery rail", "her eyebrows lift a little"),
+        state("HER", "calm, not out of breath, bob and fringe in place, jacket zipped halfway, both shopping bags on the floor by her feet, at the upper-floor gallery rail", "her eyebrows lift a little"),
         state("THE DAUGHTER", "out of breath, coat open, bags on her forearms, back to the camera", "nothing"),
         "FOCUS: the nearest eye of Her is in sharp focus; the daughter's shoulder in front and the atrium behind fall to a soft, recognisable shape. The blur is optical: soft and round, never smeared.",
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, "no talking, no mouth moving", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    risks=[{"risk": "her mouth moves as if speaking", "prevented_by": "SILENT, 'no talking, no mouth moving', generate_audio false"},
+        negs(NEG_EQUIP, NEG_MORPH, "no talking, no mouth moving, no ground-floor setting, no shopfronts at her level behind her, no floor tiles stretching away behind her at her level", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    gen=2, fix="User Fix: \"this should be on the second floor\" → fault in the prompt's set: 'on the upper gallery' was one phrase the model ignored, so it staged her at ground level → the second floor stated three ways (one storey up, the drop to the ground floor behind her through the glass rail, the lift shaft and skylight close), the place clause reworded to the upper floor, ground-floor negatives added",
+    risks=[{"risk": "staged on the ground floor again", "prevented_by": "the drop behind her through the glass rail, ground-floor negatives"},
+           {"risk": "her mouth moves as if speaking", "prevented_by": "SILENT, 'no talking, no mouth moving', generate_audio false"},
            {"risk": "the look overplayed", "prevented_by": "'a little', NEG-DRAMA"},
            {"risk": "bags jump back into her hands", "prevented_by": "STATE-CARRY: bags on the floor"}]))
 
@@ -147,7 +153,7 @@ if __name__ == "__main__":
                 "ingredients_approved": True, "files": [FILES[f] for f in s["files"]],
                 "audios": [AUDIO[a] for a in s["audios"]], "generate_audio": bool(s["line"]),
                 "dialogue": s["line"] or None, "script_line": s["line"] or None, "pace": "unhurried",
-                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": 1,
+                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": s.get("gen", 1), "fix_note": s.get("fix"),
                 "risks": s["risks"], "vo": s.get("vo")}
         (H / f"{s['beat']}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
         (H / f"{s['beat']}.prompt.txt").write_text(s["prompt"])
