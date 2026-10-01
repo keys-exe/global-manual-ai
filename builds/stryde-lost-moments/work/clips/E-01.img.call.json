@@ -1,0 +1,39 @@
+{
+ "beat": "E-01",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"It's not getting down that stops you.\": he sits on the edge of the sofa, still and heavy, looking down \u2014 stuck where he is.\nMedium close-up, eye level, three-quarter front, from the waist up.\nImage 1 is the living room and his day-one clothes. Image 2 is the man.\nThe same man as Image 2 \u2014 same face, hair and build \u2014 in the clothes of Image 1: white T-shirt under a burgundy cardigan, grey shorts. The brown patterned sofa and curtained patio doors of Image 1 soft behind him.\nFace turned down, eyes lowered, looking down, mouth closed \u2014 a quiet, defeated look. Both hands resting on his knees at the bottom of the frame, forearms on his thighs.\nIn the frame: one man, the sofa, the patio doors; nothing else.\nGrey, flat morning daylight from the patio doors on the right. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nClothing, cushions and walls plain \u2014 no lettering, logos or labels; no second person.",
+ "script_line": "It's not getting down that stops you.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "E-HKa (room, day-1 outfit)",
+   "kind": "frame"
+  },
+  {
+   "label": "C5 Clifton sheet",
+   "kind": "character"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT18",
+  "HT19"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: he lowers his eyes once and stays still, about a second.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_070753_27963c08-22a2-42cd-a1c5-460bdfb761cc.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131041_578389bd-200a-401e-a6d9-c0ec3c5f32fe.png"
+ ]
+}

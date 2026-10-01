@@ -1,0 +1,59 @@
+{
+ "beat": "E-07",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Nobody hauling you up.\": he stands upright on the rug on his own, legs straight, as his two grandchildren reach up and take his hands.\nMedium shot, high angle, three-quarter front, from his waist to his feet, the children either side with their heads at his waist.\nImage 1 is the strap (three-quarter photo). Image 2 is the strap worn. Image 3 is the man, the room and his clothes. Image 4 is the girl. Image 5 is the boy.\nThe strap in Image 1 copied exactly \u2014 same shell, band, slides and wordmark, nothing redesigned \u2014 12 \u00d7 5 cm, about a quarter of the frame wide, just below his right kneecap as in Image 2, his leg straight. The man of Image 3 in his olive shorts and navy slippers.\nThe same girl as Image 4 in a purple T-shirt and denim shorts holds his left hand; the same boy as Image 5 in a green T-shirt and grey shorts holds his right hand; both looking up at him, smiling, mouths closed.\nIn the frame: one man, two children, the red rug; nothing else.\nAfternoon sun from the right. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nClothing plain \u2014 no lettering or logos but the strap's own wordmark; no second strap.",
+ "script_line": "Nobody hauling you up.",
+ "face": true,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "product_tq_left.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "worn_bent.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "E-HKb (room, rug, day-2 outfit)",
+   "kind": "frame"
+  },
+  {
+   "label": "GK1 Amara sheet",
+   "kind": "character"
+  },
+  {
+   "label": "GK2 Tobi sheet",
+   "kind": "character"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP11",
+  "FP12",
+  "HT01",
+  "HT06",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: the children take his hands and he stands still, smiling down at them, about a second.",
+ "ref_urls": [
+  "products/stryde/stryde_refs/product_tq_left.jpg",
+  "products/stryde/stryde_refs/worn_bent.jpg",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122408_93a5c907-3c21-46d7-ba71-a92f59a3ecb0.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133636_85af6d78-2a9d-482e-a244-0cccff1e525c.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133636_76c6d8b2-e636-4ec6-af0f-589208186857.png"
+ ]
+}

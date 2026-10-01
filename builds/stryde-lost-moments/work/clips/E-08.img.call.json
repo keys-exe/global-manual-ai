@@ -1,0 +1,48 @@
+{
+ "beat": "E-08",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"They won't be little for long.\": his two grandchildren kneel on the rug building the wooden train track, the girl clicking one curved piece into place, while he kneels just behind the track watching them with a soft smile.\nGround-level shot from behind the children, three-quarter back, their backs and hands sharp in the foreground, him softer behind.\nImage 1 is the room and his shirt. Image 2 is the girl. Image 3 is the boy. Image 4 is the man.\nThe girl of Image 2 in a purple T-shirt and denim shorts, both hands pressing the track piece together; the boy of Image 3 in a green T-shirt and grey shorts, one hand on a small wooden engine, the other flat on the rug. The same man as Image 4 in the mustard-and-green shirt of Image 1, seen from the waist up behind the track, his legs hidden by the children, both hands on his thighs, looking down at the girl's hands.\nIn the frame: two children, one man, the oval track, one engine; the rest of the rug bare.\nAfternoon sun from the patio doors on the left. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nClothing and toys plain \u2014 no lettering, logos or labels.",
+ "script_line": "They won't be little for long.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "E-HKb (room, rug, track, day-2 shirt)",
+   "kind": "frame"
+  },
+  {
+   "label": "GK1 Amara sheet",
+   "kind": "character"
+  },
+  {
+   "label": "GK2 Tobi sheet",
+   "kind": "character"
+  },
+  {
+   "label": "C5 Clifton sheet",
+   "kind": "character"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT12",
+  "HT18",
+  "HT19"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: the girl clicks the track piece into place once, about a second.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122408_93a5c907-3c21-46d7-ba71-a92f59a3ecb0.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133636_85af6d78-2a9d-482e-a244-0cccff1e525c.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133636_76c6d8b2-e636-4ec6-af0f-589208186857.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131041_578389bd-200a-401e-a6d9-c0ec3c5f32fe.png"
+ ]
+}

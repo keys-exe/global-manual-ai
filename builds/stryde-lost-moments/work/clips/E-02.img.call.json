@@ -1,0 +1,33 @@
+{
+ "beat": "E-02",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"It's getting back up.\": close on his right hand pushing down hard on the padded arm of the sofa as he tries to lever himself up \u2014 knuckles pale, tendons standing out on the back of the hand.\nClose-up from slightly above, three-quarter, the hand and sofa arm about half of the frame wide.\nImage 1 is the sofa, the room and his clothes.\nOne hand only: his right, fingers spread, the palm sinking into the brown patterned sofa fabric copied from Image 1; his forearm in the burgundy cardigan sleeve of Image 1 entering from the top of the frame, the arm straight and braced.\nIn the frame: one hand and forearm, the sofa arm, the red rug soft below; nothing else.\nGrey, flat morning daylight from the left. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nSleeve and sofa plain \u2014 no lettering, logos or labels; no second hand.",
+ "script_line": "It's getting back up.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "E-HKa (sofa, day-1 cardigan)",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: his hand presses down once harder into the sofa arm, knuckles whitening, and holds, about a second.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_070753_27963c08-22a2-42cd-a1c5-460bdfb761cc.png"
+ ]
+}

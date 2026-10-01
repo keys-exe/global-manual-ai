@@ -1,0 +1,49 @@
+{
+ "beat": "E-04",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"So you get down among the toys.\": he lowers onto one knee on the red rug beside the train track \u2014 mid-kneel, left knee a hand's width above the rug, right foot flat, right knee bent forward.\nMedium shot from above, three-quarter front, chest down to the rug, the strapped right knee centred.\nImage 1 is the strap (three-quarter photo). Image 2 is the strap worn on a bent knee. Image 3 is the man, the room and his clothes.\nThe strap in Image 1 copied exactly \u2014 same shell, band, slides and wordmark, nothing redesigned \u2014 12 \u00d7 5 cm, about a quarter of the frame wide, seated just below his right kneecap exactly as in Image 2, the kneecap uncovered. The man of Image 3 in the mustard-and-green patterned short-sleeve shirt, olive shorts and navy slippers of Image 3.\nIn the frame: one man, the rug, the oval wooden track with one small engine; the rest of the rug bare. His right hand reaching down toward the track, left hand out to the side for balance, neither touching the strap.\nWarm afternoon sun from the left. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nClothing, slippers and toys plain \u2014 no lettering or logos but the strap's own wordmark; no second strap.",
+ "script_line": "So you get down among the toys.",
+ "face": false,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "product_tq_left.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "worn_bent.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "E-HKb (room, rug, track, day-2 outfit)",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP11",
+  "FP12",
+  "HT01",
+  "HT06",
+  "HT07",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: he finishes lowering onto his left knee until it rests on the rug, and stays kneeling, about a second and a half.",
+ "ref_urls": [
+  "products/stryde/stryde_refs/product_tq_left.jpg",
+  "products/stryde/stryde_refs/worn_bent.jpg",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122408_93a5c907-3c21-46d7-ba71-a92f59a3ecb0.png"
+ ]
+}

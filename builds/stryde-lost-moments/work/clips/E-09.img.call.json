@@ -1,0 +1,37 @@
+{
+ "beat": "E-09",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Nothing to lose but the pain.\": kneeling on the rug, he laughs out loud \u2014 head tipped back a little, eyes creased, a real, unguarded laugh.\nMedium close-up, eye level, three-quarter front, from mid-chest up.\nImage 1 is the room and his day-two shirt. Image 2 is the man.\nThe same man as Image 2 \u2014 same face, hair and build \u2014 in the mustard-and-green patterned shirt of Image 1; the bright patio doors of Image 1 soft behind him.\nMouth open in the laugh, eyes creased, looking down to his right at the rug. Right hand raised to his chest, left hand resting on his thigh low in the frame.\nIn the frame: one man, the soft room behind; nothing else.\nWarm afternoon sun from the left. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nShirt and walls plain \u2014 no lettering, logos or labels; no second person.",
+ "script_line": "Nothing to lose but the pain.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "E-HKb (room, day-2 shirt)",
+   "kind": "frame"
+  },
+  {
+   "label": "C5 Clifton sheet",
+   "kind": "character"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: he laughs once, shoulders shaking, then settles into a wide smile, about a second.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122408_93a5c907-3c21-46d7-ba71-a92f59a3ecb0.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131041_578389bd-200a-401e-a6d9-c0ec3c5f32fe.png"
+ ]
+}

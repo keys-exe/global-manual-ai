@@ -1,0 +1,38 @@
+{
+ "beat": "E-03",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"And the pain just lifts.\": kneeling on the rug, his shoulders drop on a long breath out and his face eases into quiet relief.\nMedium close-up, low angle from just below his eye line, three-quarter front, from mid-chest up.\nImage 1 is the room and his day-two clothes. Image 2 is the man.\nThe same man as Image 2 \u2014 same face, hair and build \u2014 in the mustard-and-green patterned short-sleeve shirt of Image 1. The bright patio doors and cream wall of Image 1 soft behind him.\nEyes softening, looking down at the rug in front of him, the first small relieved smile, mouth closed. Both hands resting on his thighs, low in the frame.\nIn the frame: one man, the soft room behind; nothing else.\nWarm afternoon sun from the patio doors on the left, lighting the window side of his face. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nShirt and walls plain \u2014 no lettering, logos or labels; no second person.",
+ "script_line": "And the pain just lifts.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "E-HKb (room, day-2 outfit)",
+   "kind": "frame"
+  },
+  {
+   "label": "C5 Clifton sheet",
+   "kind": "character"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT12",
+  "HT18",
+  "HT20"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: his shoulders drop on one long breath out and his face eases into relief, about two seconds.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_122408_93a5c907-3c21-46d7-ba71-a92f59a3ecb0.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131041_578389bd-200a-401e-a6d9-c0ec3c5f32fe.png"
+ ]
+}
