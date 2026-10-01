@@ -1,0 +1,2 @@
+BR-16a.v3 {"taskId": "f5cb73f94564f01b60e6b55f1166d214", "model": "kling-3.0-omni/image-to-video"}
+BR-23.v2 {"taskId": "b9f13ec5af39a8569b403c934fbdeaa9", "model": "kling-3.0-omni/image-to-video"}
