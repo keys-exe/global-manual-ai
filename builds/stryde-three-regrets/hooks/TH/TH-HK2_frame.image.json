@@ -2,7 +2,7 @@
  "beat": "TH-HK2",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": keep this photo exactly as it is — the same woman, her face, hair, rust-orange needlecord overshirt and cream T-shirt, the wooden chair, the brick wall, the pinboard, the window, the grey post trays, the desk, the light and the camera. Image 1 is that photo.\nChange only what is on the desk in front of her: the printed letters are gone. In their place an open silver laptop sits on the desk in front of her, its screen turned a little toward her and toward us, showing a long list of messages in an inbox, each line a grey blur too small to read. Her right hand rests on the laptop's trackpad; her left forearm rests on the desk edge.\nIn frame: one woman, both hands placed as said; on the desk only the laptop and the grey post trays, every other surface bare. Her face square to the lens, both eyes on it, mouth closed, as if she has just looked up from the messages.\nNo readable text or logos on the screen or the laptop, no printed letters, no extra fingers.",
+ "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": keep this photo exactly as it is — the same woman, her face, hair, rust-orange needlecord overshirt and cream T-shirt, the wooden chair, the brick wall, the pinboard, the window, the grey post trays, the desk, the light and the camera. Image 1 is that photo.\nChange only the laptop: turn it on the desk so its screen faces her, angled just slightly toward the lens — we see the screen edge-on at a steep angle, a narrow sliver of a pale inbox list, mostly the plain grey back of the lid and its side. A plain silver laptop, its lid and keys blank and unmarked. Her right hand stays on its keyboard.\nIn frame: one woman, both hands placed as before; on the desk only the laptop and the grey post trays, every other surface bare. Her face square to the lens, both eyes on it, mouth closed.\nNo readable text or logos, no app names, no extra fingers.",
  "script_line": "Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.",
  "face": true,
  "room": true,
@@ -10,12 +10,12 @@
  "body": true,
  "refs": [
   {
-   "label": "N step-1 frame (the talking head's source)",
+   "label": "TH-HK2 frame v1",
    "kind": "frame"
   }
  ],
  "match": "frame",
- "edit_of": "9378efcb-3e27-47ab-99d1-18e9ee05c803",
+ "edit_of": "3f68de11-9346-45f8-91bf-a58399251574",
  "taste": [
   "HT12",
   "HT17",
@@ -27,6 +27,6 @@
  "pair": [
   "nano_banana_pro"
  ],
- "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call); a talking-head source frame is one render (§5)",
- "fix_note": "instead of in a paper, make it a laptop where she's reading the messages"
+ "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call)",
+ "fix_note": "make the laptop facing to her just slight face into the camera: edit of v1, laptop turned toward her, unbranded"
 }
