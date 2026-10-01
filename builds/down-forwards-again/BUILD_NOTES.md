@@ -356,3 +356,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   MUS-HK1/2/3 and MUS-BODY v2 To check; PREVIEW-HK1 retired to Old 2 (the finished videos replace it). Finished videos: `work/finish.py`
   (hook cut + body cut, one-word captions EG01, v2 bed ~18 dB under the voice, ducked, −14 LUFS) → `edit/final/FINAL-HK<n>.mp4`.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
+
+### 2026-10-01 — finished videos, captions reworked
+- User: "the caption should not be one word only use the safezone". `work/finish.py` captions are now 2–4 words a card (phrases broken at punctuation / pauses >0.35 s, balanced — 5 words → 3+2; a lone word joins its phrase inside one sentence), white rounded box, black LiberationSans-Bold 64, wrapped to at most two even lines, centred at 58 % height inside the 9:16 safe zone (x 100–940, clear of the top 14 %, the bottom 25 % and the right-side buttons; asserted per card).
+- Final board: FINAL-HK1 v2 (160.55 s, 163 cards), FINAL-HK2 v1 (157.01 s), FINAL-HK3 v1 (156.01 s), all `review`. FINAL-HK1 v1 (one-word captions) moved to Old 2 and deleted from Final.
+- Next: the user's Confirm / Fix on the three finals; then Drive export.
