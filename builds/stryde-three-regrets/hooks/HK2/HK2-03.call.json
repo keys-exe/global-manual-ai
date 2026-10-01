@@ -6,38 +6,44 @@
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_164750_cd5eff63-cbc2-4020-8ef0-0220cb43b7ad.png",
+ "start_image": "HK2-03_blank.png (the confirmed v6 frame with the screen blank; the inbox is composited back)",
  "start_approved": true,
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
  "audio": false,
- "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": from this frame, her right hand sets the last handful of letters down on the third pile — one set-down, about two seconds — ending with three separate piles in a row and both hands at rest. The sheets sag a little and settle flat. Handheld phone, a gentle breath sway, the camera stays where it is, low at desk height. Exactly three piles the whole time, the same grey trays full of the same white typed letters, every finger whole and separate. No fourth pile, no letters flying, no handwriting, no readable text, no sound.",
+ "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": from this frame, her right forefinger and middle finger slide slowly and steadily up the trackpad in one even stroke, from its lower half to its upper half, about three seconds, the wrist following; her left hand stays on the keyboard. The camera is locked off on a tripod over her left shoulder and stays perfectly still. The laptop screen stays plain bright white and evenly lit; the laptop, the closed black box beside it, the desk, the brick wall and her shoulder stay put; two hands, every finger whole. No camera move, no zoom, no screen flicker, no sound.",
  "script_line": "Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.",
- "motion_plan": "her right hand sets the last handful of letters down on the third pile — one set-down, about two seconds — ending with three separate piles in a row and both hands at rest",
+ "motion_plan": "her right forefinger and middle finger slide slowly and steadily up the trackpad in one even stroke, from its lower half to its upper half, about three seconds, the wrist following; her left hand stays on the keyboard",
  "motion_confirmed": true,
+ "user_go": "user 2026-10-01: make clip for HK2-03",
  "taste": [
-  "HT04",
+  "HT02",
   "HT12",
-  "HT13",
-  "HT18",
-  "HT19"
+  "HT13"
  ],
- "generation": 5,
- "user_go": "MAKE CLIP FOR HK2-03 (user in chat, 2026-09-30, after the image v4 Fix CHANGE CAMERA ANGLE; also taken as the Confirm of image v4 and its motion line)",
- "fix_note": "frame fault: the user fixed the image (CHANGE CAMERA ANGLE) — gen 4 was made from the overhead v3 frame → new start frame v4 at desk height, three-quarter front; same single set-down on the third pile, the camera clause now low at desk height; §35A, sound off",
+ "generation": 6,
+ "fix_note": "new image v6 (inbox replaces the letter piles) and the user's BR-057 Fix (a still hand under a scrolling screen) → Kling animates the hand stroke only, locked camera, blank screen; the inbox composited back scrolling with the hand",
  "risks": [
   {
-   "risk": "a fourth pile appears or the piles merge",
-   "prevented_by": "exactly three piles the whole time; no fourth pile"
+   "risk": "the camera drifts so the screen corners move",
+   "prevented_by": "locked off on a tripod, stays perfectly still; no camera move, no zoom"
   },
   {
-   "risk": "fingers fuse into the paper",
-   "prevented_by": "every finger whole and separate"
+   "risk": "Kling draws content on the screen",
+   "prevented_by": "the laptop screen stays plain bright white"
   },
   {
-   "risk": "the typed letters morph into handwriting",
-   "prevented_by": "same white typed letters; no handwriting, no readable text"
+   "risk": "the stroke is fast or jerky",
+   "prevented_by": "slowly and steadily, one even stroke, about three seconds"
+  },
+  {
+   "risk": "fingers fuse into the trackpad",
+   "prevented_by": "two hands, every finger whole"
+  },
+  {
+   "risk": "the box slides or morphs",
+   "prevented_by": "the closed black box beside it stays put"
   }
  ]
 }
