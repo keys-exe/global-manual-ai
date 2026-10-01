@@ -6,6 +6,7 @@
  "body": 1,
  "build": "stryde-71-stairs-pixar-song",
  "createdAt": 1790879352102,
+ "credits": 24,
  "duration": 3.04,
  "eg": "",
  "flow": [
@@ -143,6 +144,8 @@
    "v": 5
   },
   {
+   "archiveAsset": "47551ea46875d3d99069c74b8875e720",
+   "archived": true,
    "asset": "47aa429b4dc68e64d35bdc5e017dcaf0",
    "at": 1790883833026,
    "connector": "Higgsfield",
@@ -155,9 +158,7 @@
    "size": 7005247,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194104_0ecfccc3-53c5-4ed7-9fca-32873f556c56.png",
-   "v": 6,
-   "archived": true,
-   "archiveAsset": "47551ea46875d3d99069c74b8875e720"
+   "v": 6
   }
  ],
  "key": "life",
@@ -167,14 +168,29 @@
   18
  ],
  "location": "L-N-KITCHEN",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: she looks out, then her eyes drop to the sink — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "prompt": "For the line \"Nothing gave me my life back.\": From this frame: she looks out, then her eyes drop to the sink — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay sealed and her jaw still from the first frame to the last — a silent clip, she never speaks or sings; at the window in profile she looks out a moment longer, then only her eyes drop to the sink and her shoulders settle; her hands stay on the sink's edge; the window, the curtain and the kitchen stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she stays in profile.",
+ "regens": 2,
  "shot": "eye · profile · clean · MEDIUM",
  "stage": "broll",
- "status": "review",
+ "status": "use",
  "title": "low — her face, sat back (user 2026-10-01: three B-rolls)",
- "updatedAt": 1790886423751,
+ "updatedAt": 1790887010743,
+ "videoAsset": "5b583a01e0cda7459a502c7e02827bb7",
+ "videoAt": 1790886423751,
+ "videoConnector": "Kling",
+ "videoFault": "user 2026-10-01: NO TALKING ABOUT THE MUSIC → clip v2: lips sealed and jaw still first frame to last, a silent clip, only the eyes move (§22X); v1 kept on Old versions 2",
+ "videoJob": "AXW3XfNaMp8szGYGRG5LAfpDaB07hMS1OVXGHtFrHJmzAL3HVn0kFiPC3wUKamcQ2TzHNG6I",
+ "videoNote": "clip in progress from the picked v5 A",
+ "videoRes": "1072×1928",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/4b5f8800-01c6-4b92-8462-d5033a254117-WXcrGSqTCV7s9azbf67FOA-output.mp4?x-kcdn-pid=112372",
  "videoVersions": [
   {
+   "archiveAsset": "6c1e2f2609c9efc46b367a24f47cfc0d",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "8648b86b62545eec1bdc918e4b9430ca",
    "at": 1790885353161,
    "connector": "Kling",
@@ -188,13 +204,9 @@
    "size": 2508200,
    "type": "video/mp4",
    "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/30c5177c-b9c5-48fd-9a99-efe24b2f404f-oynn9rOC9-e4vnKHM7Ph1A-output.mp4?x-kcdn-pid=112372",
-   "v": 1,
-   "archived": true,
-   "archiveAsset": "6c1e2f2609c9efc46b367a24f47cfc0d",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 1
   },
   {
-   "v": 2,
    "asset": "5b583a01e0cda7459a502c7e02827bb7",
    "at": 1790886423751,
    "connector": "Kling",
@@ -203,23 +215,12 @@
    "fromImage": 5,
    "job": "AXW3XfNaMp8szGYGRG5LAfpDaB07hMS1OVXGHtFrHJmzAL3HVn0kFiPC3wUKamcQ2TzHNG6I",
    "model": "kling-video-v3_0",
+   "note": "user Fix on v1: NO TALKING ABOUT THE MUSIC (her mouth opened as if singing along) → the lips clause first and strongest: lips sealed, jaw still, a silent clip; only the eyes move (§22X, §35A rule 6) · what I see: lips closed first frame to last, she looks out, then her eyes drop to the sink",
    "res": "1072×1928",
    "size": 2505368,
    "type": "video/mp4",
    "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/4b5f8800-01c6-4b92-8462-d5033a254117-WXcrGSqTCV7s9azbf67FOA-output.mp4?x-kcdn-pid=112372",
-   "note": "user Fix on v1: NO TALKING ABOUT THE MUSIC (her mouth opened as if singing along) → the lips clause first and strongest: lips sealed, jaw still, a silent clip; only the eyes move (§22X, §35A rule 6) · what I see: lips closed first frame to last, she looks out, then her eyes drop to the sink"
+   "v": 2
   }
- ],
- "videoAsset": "5b583a01e0cda7459a502c7e02827bb7",
- "videoType": "video/mp4",
- "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/4b5f8800-01c6-4b92-8462-d5033a254117-WXcrGSqTCV7s9azbf67FOA-output.mp4?x-kcdn-pid=112372",
- "videoJob": "AXW3XfNaMp8szGYGRG5LAfpDaB07hMS1OVXGHtFrHJmzAL3HVn0kFiPC3wUKamcQ2TzHNG6I",
- "credits": 24,
- "videoAt": 1790886423751,
- "videoRes": "1072×1928",
- "videoConnector": "Kling",
- "model": "kling-video-v3_0",
- "prompt": "For the line \"Nothing gave me my life back.\": From this frame: she looks out, then her eyes drop to the sink — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay sealed and her jaw still from the first frame to the last — a silent clip, she never speaks or sings; at the window in profile she looks out a moment longer, then only her eyes drop to the sink and her shoulders settle; her hands stay on the sink's edge; the window, the curtain and the kitchen stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she stays in profile.",
- "regens": 2,
- "videoFault": "user 2026-10-01: NO TALKING ABOUT THE MUSIC → clip v2: lips sealed and jaw still first frame to last, a silent clip, only the eyes move (§22X); v1 kept on Old versions 2"
+ ]
 }
