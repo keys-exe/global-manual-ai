@@ -1,6 +1,6 @@
 # global-manual-ai
 
-This repo runs under the **AI Prompt Engineer — Global Standards** (currently V7.81.0).
+This repo runs under the **AI Prompt Engineer — Global Standards** (currently V7.82.0).
 
 - Master file (the only standard): `standards/AI_Prompt_Engineer_Global_Standards.md`
 - Project skill that loads it: `.claude/skills/ai-prompt-engineer/SKILL.md` — the **Manual** run mode, always the default
@@ -12,13 +12,15 @@ This repo runs under the **AI Prompt Engineer — Global Standards** (currently 
 
 **A system update never touches existing builds (user, 2026-09-28 — "don't update the other works, this is an update to our system, we don't adjust them without permission to the team working on that").** A change to the standards, skills, scripts or template applies to new work only. Never re-cut, re-trim, re-render or re-publish anything in another build (its files, board or Drive) because the system changed: the team working on that build decides, and it is done only on their explicit ask.
 
+**Learn from every mistake (user, 2026-10-01 — "you should always learn from your mistake to improve the things").** When the user corrects, stops or undoes something you did, repeats a request, or you find your own error: stop or undo it first, find the cause, fix the rule that caused it at its source (and add a script check where you can), write a row in `LESSONS.md`, and tell the user in one line (§34B). Read `LESSONS.md` before any change to the system and before publishing or writing to a board; the session-start hook prints the latest rules.
+
 Changes to the standards follow §0 and §34: say what will change and which sections before editing; edit the master file; keep the skill's summary in sync in the same commit; bump the version and changelog on a cut.
 
 Product Sheets and Build Sheets (Appendix B / C schemas) go under `products/` and `builds/` respectively. Nothing product-, brand-, character- or location-specific goes into `standards/`.
 
 ## Generation Board (standing instruction from the user, 2026-09-26)
 
-Every generation goes on the build's **Generation Board**. **The board design is locked (§16A):** never redesign, restyle or simplify `dashboard/generation_board.html`; change it only when the user asks for a specific change, then republish it to every board. Both run modes, every build, no need to ask. **One board per build** (the user's team gets only their build's link), all published from the one template `dashboard/generation_board.html`. The page shows the one build its board holds; there is no build picker and no "new generation" button, so cards are only ever added by you.
+Every generation goes on the build's **Generation Board**. **The board design is locked (§16A):** never redesign, restyle or simplify `dashboard/generation_board.html`; change it only when the user asks for a specific change. **A template change goes to new boards only; an existing board is republished only on its team's explicit ask** (user, 2026-10-01 — "no need to update the current boards"; LESSONS L05). Both run modes, every build, no need to ask. **One board per build** (the user's team gets only their build's link), all published from the one template `dashboard/generation_board.html`. The page shows the one build its board holds; there is no build picker and no "new generation" button, so cards are only ever added by you.
 
 | Build | Board |
 |---|---|
@@ -68,7 +70,7 @@ Fix notes are picked up by the hourly Routines **Generation Board — hourly Fix
 - **Credits spent by connector (user, 2026-09-30 / 2026-10-01, V7.75.1):** the Board tab's Credits spent card lists one row per connector — name, credits spent on this board (every render of every step, all versions, images included), and the balance left when the build doc's `balances` has that connector — never added across connectors. So write `credits` (or `imageCredits`) and the connector on every version entry and on the step's fields, every render, and keep `balances` / `balancesAt` on the build doc current after every batch.
 - **Generating panel (user, 2026-09-28):** while a step is `generating` or `regenerate` (Fix pressed), the Current and Final boards never show its old render — the card, board tile, viewer and final card show a dark moving-gradient "Generating… / Regenerating…" panel (Higgsfield style) with no Confirm / Fix until the new render lands as `review`. Older versions stay reachable in the viewer's version menu and on the Old board. So set the step's status the moment you start a render and point it at the new file only when it lands.
 
-New build: copy the template to your scratchpad (four times: set `BOARD_ROLE` and the `<title>` — "<Build>", "<Build> Old Versions", "<Build> Final Output", "<Build> Plan"), set its `<title>` to the build name, publish each as a new artifact with `capabilities: {db: {}, assets: {}, downloads: true}`, seed `builds/<id>` (with `boards`) on all four and `generations` on Current, and add a row above with the four links. To change the design, edit the template and republish it to every board with `url` (keep each board's `<title>`).
+New build: copy the template to your scratchpad (four times: set `BOARD_ROLE` and the `<title>` — "<Build>", "<Build> Old Versions", "<Build> Final Output", "<Build> Plan"), set its `<title>` to the build name, publish each as a new artifact with `capabilities: {db: {}, assets: {}, downloads: true}`, seed `builds/<id>` (with `boards`) on all four and `generations` on Current, and add a row above with the four links. To change the design, edit the template; new boards get it. Republish an existing board (with `url`, keeping its `<title>`) only when its team asks.
 
 - **Location plates at 16:9 (user, 2026-09-29).** Location and property plates are generated 16:9 (`aspect_ratio: "16:9"`; Kie fallback `kie.py image --plate`) and go on the board with `imageRes` e.g. 2752×1536; everything else stays 9:16.
 - One `builds/<build-id>` doc per build (name, product, mode, format, run, aspect, `folders` = Drive OUTPUT folder IDs from `drive.json`, `balances`, `balancesAt`).
