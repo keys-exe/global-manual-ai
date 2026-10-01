@@ -31,17 +31,17 @@ L022 = "If I’m being honest, some days I wasn’t going down them at all. I’
 GO = "i want new ones the all of theme are not good (scene 2)"
 GO4 = "use gpt image 2 and not sunburst re do all the scene 2"
 FRAMES = [
-    dict(beat="SC02-SH01", line=L017, refs=["P-HOUSE", "N"], face=True, body=True, match=None, role="key", gen=4,
-         fix="she should be at the very top of the stairs",
+    dict(beat="SC02-SH01", line=L017, refs=["P-HOUSE", "L-STAIRS", "N"], face=True, body=True, match=None, role="key", gen=5,
+         fix="the surroundings are wrong not the same as the location",
          motion="From this frame: she calls the line down the stairs, a small forced smile on 'love', then her eyes drop to the stairs below; her right hand stays on the newel post; she does not step down.",
          prompt=" ".join([
-             f"For the line \"{L017}\": at night she covers her fear with a light voice, stranded at the very top of her stairs.",
-             "A low shot from halfway up the flight looking straight up the stairs, 85mm lens: the last five carpeted steps with brass stair rods rise toward her, soft in the near foreground, and she stands at the very top, on the landing's edge, both slippered feet on the landing at the top step.",
-             f"She is {HER}, in a heather-green jumper and charcoal skirt; top half of the frame, sharp.",
-             "Her right hand grips the top newel post, knuckles tight; her left hand rests flat on her chest.",
-             "She is looking down the stairs past the camera, calling, a small brave smile that does not reach her eyes.",
-             "Image 1 is this staircase and landing: the magnolia wall and framed photographs behind her, out of focus.",
-             "Night: one warm 2800K landing lamp to her right lights half her face; the other half in deep shadow; the steps below dark.",
+             f"For the line \"{L017}\": at night she is stranded at the very top of her own stairs, calling down.",
+             "Image 1 and Image 2 are this exact staircase, copied exactly: a straight flight of oatmeal-carpeted steps with brass rods along the magnolia LEFT wall and its framed photographs; on the OPEN RIGHT side the dark banister, square spindles and top newel post.",
+             "A low shot from halfway up that flight looking up it: the top steps soft in the near foreground, the photo wall on the left, the banister on the right.",
+             "At the very top, both feet on the landing's edge, stands the woman from Image 3 — face, steel-grey bob with its heavy fringe and small build copied exactly — in a heather-green jumper and charcoal skirt.",
+             "Right hand on the top newel post, left hand flat on her chest; she is looking down the stairs, calling, a brave smile that never reaches her eyes.",
+             "Behind her only the landing's magnolia wall; every step bare.",
+             "Night: one warm 2800K ceiling pendant on the landing lights her; the steps below fall into dark.",
              PLAIN, LOOK])),
     dict(beat="SC02-SH03", line=L019, refs=["L-STAIRS", "N"], face=True, body=True, match=None, role="key", gen=3,
          motion="From this frame: she lowers her weight down one step backwards, both hands sliding a little down the banister, and breathes out through her mouth; one step in the clip.",
