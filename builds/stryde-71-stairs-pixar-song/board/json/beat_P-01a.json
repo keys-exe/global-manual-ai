@@ -4,6 +4,7 @@
  "bars": 1,
  "beat": "P-01a",
  "build": "stryde-71-stairs-pixar-song",
+ "credits": 40,
  "duration": 5.04,
  "eg": "",
  "flow": [
@@ -267,6 +268,7 @@
  "onScreen": 3.25,
  "pinWaived": "user 2026-10-01: \"we dont need end frame\"",
  "product": "absent · —",
+ "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": From this frame: one careful step down backwards, her back to the lens — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the hall floor looking up the flight, she backs away from the landing slowly, one step at a time: her right heel feels for the step directly below the one it leaves and settles on it, her weight sinks onto it, the left foot joins it on that same step, and only then the next step begins — two slow steps in the whole clip, about two seconds each, every step taken in turn, each foot stopping at the next step; she sinks lower in the frame and grows larger, the landing above her staying empty, both hands sliding down the rail, her back to the lens, her face to the landing; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never climbs, never skips a step.",
  "regens": 5,
  "section": "Hook — MUS-OPEN",
  "shot": "low · behind · clean · MEDIUM",
@@ -274,13 +276,17 @@
  "songOut": 19.39,
  "stage": "broll",
  "staging": "stairs: camera at the top, subject below, slow single step",
- "status": "review",
+ "status": "use",
  "storyDay": "N-D1",
  "title": "problem (HT02; user Fix 2026-10-01: looking up the stairs, stepping backward — so the lens goes to the foot of the flight, edit of P0)",
- "updatedAt": 1790885795058,
+ "updatedAt": 1790886925746,
+ "videoAsset": "ae42e12a7e6ea623fafc766322fc4845",
+ "videoAt": 1790885795058,
  "videoConnector": "Kling",
  "videoFault": "user 2026-10-01: P01 SHOULD BE WALKING BACKWARDS SLOWLY ONE STEP AT A TIME NOT SKIPPING STEPS OF THE STAIRS → clip v5: the pace named — slowly, each heel to the step directly below, both feet on it before the next, two steps in the whole clip (§22X); v4 kept on Old versions 2",
+ "videoJob": "ASNxO-B3LI6Hn74j95H9RpVuUgv_uf4aOy_YdRn7zGAT5sjyWcWdkq7LxTQlM_ntxd-bt23c",
  "videoNote": "waiting on the end-frame pick (card P-01a-END); the clip is pinned start + end so it can only go down",
+ "videoRes": "1072×1928",
  "videoTaste": [
   "HT03",
   "HT04",
@@ -289,6 +295,7 @@
   "HT22"
  ],
  "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/01feebc8-ca47-4f69-a771-8b9f034da48b-M-a-KXHSAiYevEXxp4jRpQ-output.mp4?x-kcdn-pid=112372",
  "videoVersions": [
   {
    "archiveAsset": "6d9e6a8323510a79d61ca96a23343a00",
@@ -345,6 +352,9 @@
    "v": 3
   },
   {
+   "archiveAsset": "c74a4cf5fe7dd84fe7499c0d7a552aa9",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "aebc7aa8ff49ba2f3f16dd8cf9e86b93",
    "at": 1790885476286,
    "connector": "Kling",
@@ -358,13 +368,9 @@
    "size": 4244305,
    "type": "video/mp4",
    "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/67d3ce9b-06f8-4bb9-8259-2c8cbc78fe32--AH9Azl8Y6mYkQj5iknP2Q-output.mp4?x-kcdn-pid=112372",
-   "v": 4,
-   "archived": true,
-   "archiveAsset": "c74a4cf5fe7dd84fe7499c0d7a552aa9",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 4
   },
   {
-   "v": 5,
    "asset": "ae42e12a7e6ea623fafc766322fc4845",
    "at": 1790885795058,
    "connector": "Kling",
@@ -373,18 +379,12 @@
    "fromImage": 12,
    "job": "ASNxO-B3LI6Hn74j95H9RpVuUgv_uf4aOy_YdRn7zGAT5sjyWcWdkq7LxTQlM_ntxd-bt23c",
    "model": "kling-video-v3_0",
+   "note": "user Fix on v4: WALKING BACKWARDS SLOWLY ONE STEP AT A TIME NOT SKIPPING STEPS → the pace named: slowly, each heel to the step directly below, both feet on it before the next, two steps in the whole clip (§22X; every earlier note checked — L18) · what I see: from the top step she backs down toward the lens slowly, one step at a time onto the next step each time, face to the landing, hands on the rail; nobody speaks",
    "res": "1072×1928",
    "size": 3596177,
    "type": "video/mp4",
    "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/01feebc8-ca47-4f69-a771-8b9f034da48b-M-a-KXHSAiYevEXxp4jRpQ-output.mp4?x-kcdn-pid=112372",
-   "note": "user Fix on v4: WALKING BACKWARDS SLOWLY ONE STEP AT A TIME NOT SKIPPING STEPS → the pace named: slowly, each heel to the step directly below, both feet on it before the next, two steps in the whole clip (§22X; every earlier note checked — L18) · what I see: from the top step she backs down toward the lens slowly, one step at a time onto the next step each time, face to the landing, hands on the rail; nobody speaks"
+   "v": 5
   }
- ],
- "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": From this frame: one careful step down backwards, her back to the lens — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the hall floor looking up the flight, she backs away from the landing slowly, one step at a time: her right heel feels for the step directly below the one it leaves and settles on it, her weight sinks onto it, the left foot joins it on that same step, and only then the next step begins — two slow steps in the whole clip, about two seconds each, every step taken in turn, each foot stopping at the next step; she sinks lower in the frame and grows larger, the landing above her staying empty, both hands sliding down the rail, her back to the lens, her face to the landing; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never climbs, never skips a step.",
- "videoAsset": "ae42e12a7e6ea623fafc766322fc4845",
- "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/01feebc8-ca47-4f69-a771-8b9f034da48b-M-a-KXHSAiYevEXxp4jRpQ-output.mp4?x-kcdn-pid=112372",
- "videoJob": "ASNxO-B3LI6Hn74j95H9RpVuUgv_uf4aOy_YdRn7zGAT5sjyWcWdkq7LxTQlM_ntxd-bt23c",
- "credits": 40,
- "videoAt": 1790885795058,
- "videoRes": "1072×1928"
+ ]
 }

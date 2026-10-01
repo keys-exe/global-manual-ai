@@ -1,0 +1,54 @@
+{
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Hook 1",
+ "stage": "broll",
+ "beat": "P-05b",
+ "title": "low — the heap, pushed to the far edge (user 2026-10-01: three B-rolls)",
+ "line": "Nothing worked. Nothing lasted.",
+ "location": "L-N-KITCHEN",
+ "shot": "eye · front · clean · CU",
+ "angle": "eye · front · clean · CU — eye on the drawer = where it all ended up, shut away",
+ "framing": "CU on a kitchen drawer pulled open under the counter, stuffed with knee sleeves, a hinged brace and pill bottles, N's hand on its front pushing it shut (an insert, a different kind of B-roll — user Fix 2026-10-01: 'wrong person, a different type of broll')",
+ "motionPlan": "From this frame: her hand pushes the drawer shut — one push, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "body": 1,
+ "imagePrompt": "For the line \"Nothing worked. Nothing lasted.\": Keep this photo exactly as it is — this kitchen, its sage-green cabinets with brass pulls, the row of three drawers under the counter to the right of the cream stove, the tiled splashback, the light — in close on the middle drawer of that row, a tall 9:16 crop, and pull it open. Image 1 is the kitchen.\nClose-up at eye level with the drawer, sharp on it: the middle drawer of Image 1 pulled half open, stuffed to the brim with two grey knee sleeves, a folded black hinged knee brace, three plain pill bottles and a blue ice pack; an older Black woman's right hand, brown, flat on the drawer front pushing it shut, a grey cardigan cuff at her wrist; her left hand and the rest of her out of frame; the stove edge at the left of the frame.\nIn frame: the open drawer and its contents, one hand placed, the cabinet fronts, counter edge and stove edge of Image 1; every other surface bare, nothing on the counter.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Sleeves, bottles and cabinets plain — no lettering, logos or labels; nobody else.",
+ "imageModel": "nano_banana_pro → logged nano_banana_2",
+ "imageConnector": "Higgsfield",
+ "imageRes": 4996165,
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  }
+ ],
+ "flow": [
+  "image",
+  "video"
+ ],
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "imageVersions": [
+  {
+   "asset": "b883a503a131d786c10505addb850abc",
+   "at": 1790885300814,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "47f52e35-f9bf-4e9d-9799-12bc09c24c17",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"WRONG DRAWER AND LOCATION\" → her own kitchen: the middle drawer of the row right of the stove in the kitchen plate, pulled open and stuffed, her brown hand on its edge · not chosen (the user picked A); kept on Old versions 2",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6348441,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195907_47f52e35-f9bf-4e9d-9799-12bc09c24c17.png",
+   "v": 8
+  }
+ ],
+ "imageAsset": "b883a503a131d786c10505addb850abc",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195907_47f52e35-f9bf-4e9d-9799-12bc09c24c17.png",
+ "note": "Old versions 2 (overflow board): P-05b v8 B, not chosen. v1–v6 are on the first Old board.",
+ "updatedAt": 1790887185171
+}

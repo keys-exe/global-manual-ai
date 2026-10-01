@@ -4,6 +4,7 @@
  "bars": 1.5,
  "beat": "P-02a",
  "build": "stryde-71-stairs-pixar-song",
+ "credits": 48,
  "duration": 6.04,
  "editOf": "stryde-71-stairs-pixar-song__P0-PROP-N",
  "eg": "",
@@ -205,6 +206,8 @@
    "v": 9
   },
   {
+   "archiveAsset": "5dd2bf50b2c7f61e1feb8b2d58954e1f",
+   "archived": true,
    "asset": "61e4382d8ea62ac42b3049c451b3c530",
    "at": 1790883833026,
    "connector": "Higgsfield",
@@ -217,9 +220,7 @@
    "size": 7276545,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194104_9e6f0b74-6826-46f2-b9ed-d05deb134895.png",
-   "v": 10,
-   "archived": true,
-   "archiveAsset": "5dd2bf50b2c7f61e1feb8b2d58954e1f"
+   "v": 10
   }
  ],
  "key": "down",
@@ -234,6 +235,7 @@
  "onScreen": 4.88,
  "pinEnd": "no",
  "product": "absent · —",
+ "prompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": From this frame: she looks down the stairs and looks away — one turn of the head, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From mid-flight looking up at the top step, she looks down the stairs toward the lens, holds, then turns her face away to the side, her mouth closed the whole time — she never speaks or sings; her hand stays on the newel, she stays seated on the top step; the staircase stays exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never stands.",
  "regens": 1,
  "section": "The low point and what failed — MUS-EXPOSE",
  "shot": "low · front · clean · MEDIUM",
@@ -241,12 +243,16 @@
  "songOut": 26.71,
  "stage": "broll",
  "staging": "none",
- "status": "review",
+ "status": "use",
  "storyDay": "N-D1",
  "title": "problem (edit of P0: the top of the flight, HT17)",
- "updatedAt": 1790885353161,
+ "updatedAt": 1790885478238,
+ "videoAsset": "3133f33edf6ee870ca788789da3c8a30",
+ "videoAt": 1790885353161,
  "videoConnector": "Kling",
- "videoNote": "the clip is made again once the new image is picked",
+ "videoJob": "AS-m3I8VD--0R-AYQqGt2J3tm1khXI2mPHoRs9B7jGUUp3NPQrLh8URfzm1C_XBUdn5kzldy",
+ "videoNote": "clip in progress from the picked v9 A",
+ "videoRes": "1072×1928",
  "videoTaste": [
   "HT03",
   "HT04",
@@ -255,6 +261,7 @@
   "HT22"
  ],
  "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/e2480c3e-d3f2-48bd-be85-e2881064d21e-ZRyf-JA1c5ZeoCJJcVyGVg-output.mp4?x-kcdn-pid=112372",
  "videoVersions": [
   {
    "archiveAsset": "d2a12f28fbc8d2b46b170f7ff4ed79a8",
@@ -293,7 +300,6 @@
    "v": 2
   },
   {
-   "v": 3,
    "asset": "3133f33edf6ee870ca788789da3c8a30",
    "at": 1790885353161,
    "connector": "Kling",
@@ -302,18 +308,12 @@
    "fromImage": 9,
    "job": "AS-m3I8VD--0R-AYQqGt2J3tm1khXI2mPHoRs9B7jGUUp3NPQrLh8URfzm1C_XBUdn5kzldy",
    "model": "kling-video-v3_0",
+   "note": "from the picked image v9 A (job f76f21fd) · what I see: seated on the top step, she looks down the flight toward the lens, holds, then her face turns aside; mouth closed; the staircase and the frames on the wall stay put · the first clip on the new frame (the image was replaced on the user's Fixes)",
    "res": "1072×1928",
    "size": 7377468,
    "type": "video/mp4",
    "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/e2480c3e-d3f2-48bd-be85-e2881064d21e-ZRyf-JA1c5ZeoCJJcVyGVg-output.mp4?x-kcdn-pid=112372",
-   "note": "from the picked image v9 A (job f76f21fd) · what I see: seated on the top step, she looks down the flight toward the lens, holds, then her face turns aside; mouth closed; the staircase and the frames on the wall stay put · the first clip on the new frame (the image was replaced on the user's Fixes)"
+   "v": 3
   }
- ],
- "videoAsset": "3133f33edf6ee870ca788789da3c8a30",
- "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/e2480c3e-d3f2-48bd-be85-e2881064d21e-ZRyf-JA1c5ZeoCJJcVyGVg-output.mp4?x-kcdn-pid=112372",
- "videoJob": "AS-m3I8VD--0R-AYQqGt2J3tm1khXI2mPHoRs9B7jGUUp3NPQrLh8URfzm1C_XBUdn5kzldy",
- "credits": 48,
- "videoAt": 1790885353161,
- "videoRes": "1072×1928",
- "prompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": From this frame: she looks down the stairs and looks away — one turn of the head, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From mid-flight looking up at the top step, she looks down the stairs toward the lens, holds, then turns her face away to the side, her mouth closed the whole time — she never speaks or sings; her hand stays on the newel, she stays seated on the top step; the staircase stays exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never stands."
+ ]
 }

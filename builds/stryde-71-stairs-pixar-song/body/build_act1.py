@@ -224,11 +224,26 @@ A final frame from a 3D animated feature film, stylized storybook render — the
 FIX11 = {"P-03a": "THE BRACE SHOULD BE IN SHOULD ONE KNEE"}
 if V >= 11:
     P = P11
+
+# ---- v12 (user "FIX THOSE", 2026-10-01): P-03a "FIX THE IMAGE AND USE THE P03B AS REFERNCE FOR THE BRACE" — the brace copied from the confirmed P-03b frame
+# (the same short black hinged brace with two wide straps and a round side hinge), worn on her right knee; an edit of the P-03a v9 A frame (seated from the side).
+P03A9 = "46dcac67-28db-46a0-b11f-eb05c012dee2"   # P-03a v9 A — job id (file on Old 2 now)
+P03B11 = "6ca76930-8e96-4da8-8f1c-de4465a37d80"  # P-03b v11 A — job id (confirmed)
+REF_P03A9 = {"label": "P-03a frame v9 A — seated from the side, one brace on the right leg", "kind": "frame"}
+REF_P03B11 = {"label": "P-03b frame v11 A (confirmed) — the brace at her ankle: the brace to copy", "kind": "frame"}
+P12 = {}
+P12["P-03a"] = (f'''For the line "{L("P-03a")}": Keep this photo exactly as it is — the kitchen, the chair, the table, the woman seated from the side, her dress and slippers, the light — and change only the brace: make it the brace of Image 2. Image 1 is the picture. Image 2 is the brace.
+Medium close-up from the side at knee height, sharp on the brace: the seated woman of Image 1, her right leg out a little toward the lens, wearing the brace of Image 2 copied exactly — the same short black hinged brace, straps, round side hinge and size — on her right knee only, slid down below the kneecap and sagging at the shin; her right hand hauling its top strap up, her left hand flat on the chair seat; her left leg bare and a hand apart behind it; pink terry slippers on the floor; head and shoulders out of frame above.
+In frame: the woman from the shoulders down, two hands placed, one brace, two slippers, the chair and table of Image 1; every other surface bare.
+A final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window. Brace and dress plain — no lettering, logos or labels; nobody else.''', [REF_P03A9, REF_P03B11], False, P03A9)
+FIX12 = {"P-03a": "FIX THE IMAGE AND USE THE P03B AS REFERNCE FOR THE BRACE"}
+if V >= 12:
+    P = P12
 if __name__ == "__main__":
     fails = 0
     for b, (pr, refs, face, eo) in P.items():
         c = {"beat": b, "kind": "image", "mode": 2, "prompt": pr, "script_line": L(b), "face": face, "room": True, "body": b not in ("P-05b",), "refs": refs,
-             "match": "frame" if eo in (P3A, P02B, "P3A-NEW", P01B, P02B6, P03A7) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX11 if V >= 11 else FIX10 if V >= 10 else FIX9 if V >= 9 else FIX8 if V >= 8 else FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
+             "match": "frame" if eo in (P3A, P02B, "P3A-NEW", P01B, P02B6, P03A7, P03A9) else "plate", "edit_of": eo, "taste": TASTE, "anatomy": False, "pair": PAIR, "alt_reason": None, "fix_note": (FIX12 if V >= 12 else FIX11 if V >= 11 else FIX10 if V >= 10 else FIX9 if V >= 9 else FIX8 if V >= 8 else FIX7 if V >= 7 else FIX6 if V >= 6 else FIX5 if V >= 5 else FIX4 if V >= 4 else FIX3).get(b) if V >= 3 else None, "product": False}
         OV = (OUTV if V == 4 else {}).get(b, V)
         (H / f"{b}.v{OV}.prompt.txt").write_text(pr); (H / f"{b}.v{OV}.preflight.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
         r = subprocess.run([sys.executable, str(PF), str(H / f"{b}.v{OV}.preflight.json")], capture_output=True, text=True)
