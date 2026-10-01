@@ -416,3 +416,13 @@ Waiting on: picks on P-03a v9/v10, P-01b v11/v12, P-05b v7/v8; Confirm or Fix on
 - P-05b clip v1 landed (what I see: the hand reaches but the drawer never shuts, the view widens at the end) — To check, the user decides. Kling 40325.
 
 Waiting on: picks on P-03a v11/v12, P-01b v11/v12; Confirm or Fix on the clip P-05b v1.
+
+## 2026-10-01 — "FIX THOSE" round 4 (21:00 UTC)
+
+- The user picked **P-03a v11 A** and confirmed the **P-05b clip** (`use`).
+- **P-01b** "WRONG PERSON" (the v11/v12 legs were a slim young woman's) → v13/v14 (A/B): the stair plate as Image 1 and the confirmed P-01a frame (her on the top step from behind) as Image 2 to copy her from — seventy-one, deep brown skin, heavy calves, thick ankles, her dress and slippers. To check (A from the side through the balusters, B from behind on the flight). v11/v12 → Old 2 (`64f1a064…` / `50a562cc…`). The V7.86.0 preflight now asks Mode 2 image prompts for a scale cue (§24O rule 3) and the stylised-hand line (rule 5): both written in.
+- **P-03a** clip v3 (5 s, 40 cr) on the picked frame (generation 1 on the new frame): her hand hauls the brace up, it sags back down toward the ankle. To check. Unused v12 B → Old 2 (`be36efa5…`).
+- Standards on the default branch moved to V7.86.0 (music-video camera, cast-sheet views) — merged into this branch; not applied to this running build beyond the preflight checks above.
+- Balances: Higgsfield 7646.15 · Kling 40245.
+
+Waiting on: a pick on P-01b v13/v14; Confirm or Fix on the clip P-03a v3. Then Act 1 is complete and the Act 2 B-roll images begin.
