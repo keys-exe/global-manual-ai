@@ -361,3 +361,10 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - User: "the caption should not be one word only use the safezone". `work/finish.py` captions are now 2–4 words a card (phrases broken at punctuation / pauses >0.35 s, balanced — 5 words → 3+2; a lone word joins its phrase inside one sentence), white rounded box, black LiberationSans-Bold 64, wrapped to at most two even lines, centred at 58 % height inside the 9:16 safe zone (x 100–940, clear of the top 14 %, the bottom 25 % and the right-side buttons; asserted per card).
 - Final board: FINAL-HK1 v2 (160.55 s, 163 cards), FINAL-HK2 v1 (157.01 s), FINAL-HK3 v1 (156.01 s), all `review`. FINAL-HK1 v1 (one-word captions) moved to Old 2 and deleted from Final.
 - Next: the user's Confirm / Fix on the three finals; then Drive export.
+
+### 2026-10-01 — Fix on the finals: captions, split screen, missing and late B-roll
+- User: "THE CAPTION IS TOO BIG AND TOO HIGH ALSO DONT USE SPLIT SCREEN, SOME OF THE BROLLS ARE MISSING, BROLL PLACEMENT ARE NOT TIMED TO THE SCRIPT LINE".
+- Body re-cut (`work/body_edit.py`): no split (all full screen); the four FLASH-dropped rows restored (BR-05b, BR-09b, BR-10b, BR-16a2) → 42 B-rolls; timed with `--model medium.en` (base.en had put BR-19a 1.2 s late and BR-17b / BR-20c 0.4–0.5 s late); every cut lands 0.25 s before its line's first word. Rendered via `hooks/plan/assemble_local.py` with `DFA_MIN_FLASH=1.0` (BR-09b "The garden." is a 1.0 s line) and `--min-th 1.25` (the doctor on "From the Stryde site.", 1.29 s). PASS, 148.38 s, no black frames.
+- Hooks unchanged (already full screen, cuts confirmed).
+- Captions: 46 px (was 64), centred at 70 % height (was 58 %), still inside the safe zone.
+- Final board: FINAL-HK1 v3, FINAL-HK2 v2, FINAL-HK3 v2 — all `review`; the replaced versions on Old 2.
