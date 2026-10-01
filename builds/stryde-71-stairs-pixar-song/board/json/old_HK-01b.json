@@ -1,18 +1,36 @@
 {
- "build": "stryde-71-stairs-pixar-song",
  "act": "Hook 1",
- "hook": 1,
- "stage": "hooks",
  "beat": "HK-01b",
- "title": "hook — the result — v1 pair (replaced)",
- "line": "faster than women half my age.",
+ "build": "stryde-71-stairs-pixar-song",
  "flow": [
   "image"
  ],
- "status": "regenerate",
+ "hook": 1,
+ "imageAsset": "526d7ff8daca9504c764f5f4f3a77058",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageFault": "user 2026-10-01: \"WRONG CHARACTER\"",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  3,
+  4
+ ],
+ "imagePrompt": "For the line \"faster than women half my age.\": at step height from the side, an older woman's feet take the stairs at a stride — one low black pump planted on the 6th of 14 steps, the other foot lifting to the 7th, the hem of an emerald-green dress swinging at mid-calf — and a few steps below, white trainers under black denim shorts reaching for the 4th step. Image 1 is the staircase.\nClose-up, profile, at the height of the 6th step, feet and five steps filling the frame, sharp on the pumps. The same beige runner, brass stair rods, white balusters and dark oak handrail as Image 1, photo frames soft behind. Both women's hands and faces out of frame — the picture is feet, legs below the knee and steps. Deep brown skin at the ankles.\nIn the frame: two low black pumps, two white trainers, four legs, five steps of the one staircase; every other surface bare. Each foot whole, one foot per step.\nA final frame from a 3D animated feature film — stylized storybook render, every surface with a material, a single catchlight in each eye, soft warm bounce in the shadows, afternoon sun through the door sidelights from the left.\nShoes, clothing and walls plain — no lettering, logos or labels.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P0-PROP-N plate",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1"
+  }
+ ],
+ "imageRes": "1536×2752",
  "imageStatus": "regenerate",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131452_63be8ee8-747d-48b9-9bfe-378b60cfb405.png",
  "imageVersions": [
   {
+   "archived": true,
    "asset": "d91b10dbba9c4371d804ebd9d5bd7cb2",
    "at": 1790858654630,
    "connector": "Higgsfield",
@@ -25,10 +43,10 @@
    "size": 7433714,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_34e65979-c315-49ee-964a-602965bba31a.png",
-   "v": 1,
-   "archived": true
+   "v": 1
   },
   {
+   "archived": true,
    "asset": "7d61c3add3495102197849cbcf3e0f8f",
    "at": 1790858654630,
    "connector": "Higgsfield",
@@ -41,30 +59,44 @@
    "size": 6757689,
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123855_81a993f8-e75e-4955-ae11-0385f59adfb3.png",
-   "v": 2,
+   "v": 2
+  },
+  {
+   "asset": "526d7ff8daca9504c764f5f4f3a77058",
+   "at": 1790860729163,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "63be8ee8-747d-48b9-9bfe-378b60cfb405",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"WRONG CHARACTER\" — replaced by the v3 pair (v5/v6)",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7730243,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131452_63be8ee8-747d-48b9-9bfe-378b60cfb405.png",
+   "v": 3,
+   "archived": true
+  },
+  {
+   "asset": "c470d68c0216994111b247543fec799b",
+   "at": 1790860729163,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "36ac222c-a41b-443e-b9f0-9e3f1aa954a8",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"WRONG CHARACTER\" — replaced by the v3 pair (v5/v6)",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7059550,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131454_36ac222c-a41b-443e-b9f0-9e3f1aa954a8.png",
+   "v": 4,
    "archived": true
   }
  ],
- "imagePair": [
-  1,
-  2
- ],
- "imageAsset": "d91b10dbba9c4371d804ebd9d5bd7cb2",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_34e65979-c315-49ee-964a-602965bba31a.png",
- "imageConnector": "Higgsfield",
- "imageCredits": 2.14,
- "imageRes": "1536×2752",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePrompt": "For the line \"faster than women half my age.\": at step height from the side, an older woman's feet take the stairs at a stride — one low black pump planted on the 6th of 14 steps, the other foot lifting to the 7th, the hem of an emerald-green dress swinging at mid-calf — and a few steps below, white trainers under black denim shorts reaching for the 4th step. Image 1 is the staircase.\nClose-up, profile, at the height of the 6th step, feet and five steps filling the frame, sharp on the pumps. The same beige runner, brass stair rods, white balusters and dark oak handrail as Image 1, photo frames soft behind. Both women's hands and faces out of frame — the picture is feet, legs below the knee and steps. Deep brown skin at the ankles.\nIn the frame: two low black pumps, two white trainers, four legs, five steps of the one staircase; every other surface bare. Each foot whole, one foot per step.\nA final frame from a 3D animated feature film — stylized storybook render, every surface with a material, a single catchlight in each eye, soft warm bounce in the shadows, afternoon sun through the door sidelights from the left.\nShoes, clothing and walls plain — no lettering, logos or labels.",
- "imageRefs": [
-  {
-   "kind": "location",
-   "label": "P0-PROP-N plate",
-   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
-   "role": "Image 1"
-  }
- ],
- "imageFault": "user 2026-10-01: \"we dont need end frame generate new ones\" — new pair from a rewritten prompt (§6A read-back)",
- "updatedAt": 1790860729163
+ "line": "faster than women half my age.",
+ "stage": "hooks",
+ "status": "regenerate",
+ "title": "hook — the result — v1 and v2 pairs (replaced)",
+ "updatedAt": 1790864623185
 }

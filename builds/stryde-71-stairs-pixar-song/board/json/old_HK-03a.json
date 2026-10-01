@@ -1,61 +1,20 @@
 {
- "build": "stryde-71-stairs-pixar-song",
  "act": "Hook 1",
- "hook": 1,
- "stage": "hooks",
  "beat": "HK-03a",
- "title": "hook — the line (edit of P0: the top of the flight, HT17) — v1 pair (replaced)",
- "line": "\"Mama, when did that happen?\"",
+ "build": "stryde-71-stairs-pixar-song",
  "flow": [
   "image"
  ],
- "status": "regenerate",
- "imageStatus": "regenerate",
- "imageVersions": [
-  {
-   "asset": "5cb241f3716ed4e7c2b62beef21f3263",
-   "at": 1790858654630,
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "job": "d0151928-525c-4ea8-9be1-d6eb17a5f9c5",
-   "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "",
-   "pair": "A",
-   "res": "1536×2752",
-   "size": 8012648,
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_d0151928-525c-4ea8-9be1-d6eb17a5f9c5.png",
-   "v": 1,
-   "archived": true
-  },
-  {
-   "asset": "3627c8b90c69488223745f44ab047247",
-   "at": 1790858654630,
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "job": "f98ac62c-354e-4b96-9d51-06832af9859b",
-   "model": "nano_banana_pro → logged nano_banana_2",
-   "note": "",
-   "pair": "B",
-   "res": "1536×2752",
-   "size": 6932749,
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_f98ac62c-354e-4b96-9d51-06832af9859b.png",
-   "v": 2,
-   "archived": true
-  }
- ],
- "imagePair": [
-  1,
-  2
- ],
- "imageAsset": "5cb241f3716ed4e7c2b62beef21f3263",
- "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_d0151928-525c-4ea8-9be1-d6eb17a5f9c5.png",
+ "hook": 1,
+ "imageAsset": "fd3f9fb5b28e75cd4321e9c71d3d640c",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageRes": "1536×2752",
+ "imageFault": "user 2026-10-01: \"WRONG LOCATION\"",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  3,
+  4
+ ],
  "imagePrompt": "For the line \"Mama, when did that happen?\": Keep this photo exactly as it is — hall, staircase, camera, light — as a tall 9:16 crop on the top four steps and the landing, with two women there. Image 1 is the hall and staircase. Image 2 is the mother. Image 3 is her daughter.\nThe same woman as Image 2 on the landing at the head of the flight, body facing along it, head turned back over her left shoulder to her daughter, a small knowing smile, mouth closed, eyes on her daughter, both hands free at her sides; emerald-green church dress to mid-calf, low black pumps. The same woman as Image 3 on the 14th and top step, right hand on the handrail, left hand on her chest, face turned up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers. The two fill over half the frame's height.\nIn the frame: the two women, the top of the one staircase of Image 1 with its runner, balusters and handrail, the landing wall; every other surface bare. Two legs each.\nThe render and light of Image 1, the women on model, a catchlight in each eye.\nClothing, shoes and walls plain — no lettering, logos or labels; no third person.",
  "imageRefs": [
   {
@@ -77,6 +36,79 @@
    "role": "Image 3"
   }
  ],
- "imageFault": "user 2026-10-01: \"we dont need end frame generate new ones\" — new pair from a rewritten prompt (§6A read-back)",
- "updatedAt": 1790860729163
+ "imageRes": "1536×2752",
+ "imageStatus": "regenerate",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131452_f544688c-3c99-45e7-aa63-5dee209b841e.png",
+ "imageVersions": [
+  {
+   "archived": true,
+   "asset": "5cb241f3716ed4e7c2b62beef21f3263",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "d0151928-525c-4ea8-9be1-d6eb17a5f9c5",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 8012648,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_d0151928-525c-4ea8-9be1-d6eb17a5f9c5.png",
+   "v": 1
+  },
+  {
+   "archived": true,
+   "asset": "3627c8b90c69488223745f44ab047247",
+   "at": 1790858654630,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "f98ac62c-354e-4b96-9d51-06832af9859b",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6932749,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_f98ac62c-354e-4b96-9d51-06832af9859b.png",
+   "v": 2
+  },
+  {
+   "asset": "fd3f9fb5b28e75cd4321e9c71d3d640c",
+   "at": 1790860729163,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "f544688c-3c99-45e7-aa63-5dee209b841e",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"WRONG LOCATION\" — replaced by the v3 pair (v5/v6)",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7040764,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131452_f544688c-3c99-45e7-aa63-5dee209b841e.png",
+   "v": 3,
+   "archived": true
+  },
+  {
+   "asset": "b2a42ac5187faafe0225d55431670209",
+   "at": 1790860729163,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "de94d61b-2025-44c7-b105-744483d4e8c3",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user 2026-10-01 Fix: \"WRONG LOCATION\" — replaced by the v3 pair (v5/v6)",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6504414,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_131452_de94d61b-2025-44c7-b105-744483d4e8c3.png",
+   "v": 4,
+   "archived": true
+  }
+ ],
+ "line": "\"Mama, when did that happen?\"",
+ "stage": "hooks",
+ "status": "regenerate",
+ "title": "hook — the line (edit of P0: the top of the flight, HT17) — v1 and v2 pairs (replaced)",
+ "updatedAt": 1790864623185
 }
