@@ -46,9 +46,21 @@ Punch-ins: the talking head cuts in to `scale` (1.05-1.5) on the phrase's first 
 and holds until the next B-roll or the next punch-in (scale 1.0 = punch back out).
 A punch-in landing under a B-roll is reported and ignored.
 
+Clock (V7.79.0): every cut is timed on the track the viewer hears. With a talking-head base,
+  "audio": "base" times the words from the base's own (trimmed) sound; a separate master whose
+  length differs from the base fails MASTER_MISMATCH — e.g. an untrimmed VO under trimmed TH.
+
 Rules (§30H):
-  1. PLACE   each B-roll cuts in --lead (6 frames, 0.25s) before its anchor word: the
-             phrase's `key` word when given, else its first word. The word's time is
+  1. PLACE   each B-roll cuts in --lead (6 frames, 0.25s) before the FIRST word of its
+             phrase (V7.79.0 — the picture changes as its line starts). `key` no longer moves
+             the cut: with `peak`, the in-point puts the clip's action peak on the key word.
+             Rows are searched in script order, each after the previous phrase (PHRASE_OVERLAPS).
+  6. LINE    (V7.79.0) no spoken word plays under another line's picture: a word spoken while
+             a B-roll is up must belong to that B-roll's own script line(s), else
+             LINE_UNDER_WRONG_PICTURE — names the row that cuts in mid-line (start its phrase at
+             the line's first word) or the line with no row (give it one), or "span": "hold" on the
+             row to hold over it on purpose. With a talking head, a hold stops where the next line
+             starts. Formerly: the phrase's `key` word when given, else its first word. The word's time is
              its ONSET in the master's audio (the voiced run Whisper's word start falls
              in, up to 0.3s earlier — Whisper's word starts run late), never Whisper's
              guess alone. Never before 0; when the lead would cut into the previous
@@ -270,42 +282,80 @@ def main():
     # master, one script and one talking-head track, so §30H holds across the seam.
     global FILM
     FILM = int(plan.get("mode", 1)) in (4, 5)   # §24L: film clips never change speed
-    audio = join_media(root, plan["audio"], "audio")
     base = join_media(root, plan["base"], "video") if plan.get("base") else None
+    if plan.get("audio") == "base":
+        # V7.79.0: time every cut from the talking-head track's own sound — the trimmed take the
+        # viewer hears — never from a separate, untrimmed master
+        if base is None:
+            sys.exit('"audio": "base" needs a "base" talking-head track')
+        tmp = root / "_joined"; tmp.mkdir(exist_ok=True)
+        audio = tmp / (Path(str(base)).stem + ".audio.wav")
+        subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", "-i", str(base), "-vn", "-ac", "1",
+                        "-ar", "48000", "-c:a", "pcm_s16le", str(audio)], check=True)
+        plan["audio"] = str(audio)
+    else:
+        audio = join_media(root, plan["audio"], "audio")
     total = duration(audio)
+    clock_fail = None
+    if base is not None and abs(duration(base) - total) > 2.0 / FPS:
+        clock_fail = {"fail": "MASTER_MISMATCH", "detail": f"the voice track is {total:.2f}s but the talking-head track is "
+                      f"{duration(base):.2f}s — the cuts would be timed on a different take (e.g. before the trim). "
+                      "Time them from the final track: set \"audio\": \"base\" (or the trimmed take's own audio)"}
     # Word timings are taken PER PART (hook alone, body alone) and offset by the
     # parts before it, so the body is timed identically in every hook variant.
     parts = plan["audio"] if isinstance(plan["audio"], list) else [plan["audio"]]
     scripts = plan.get("script")
     scripts = (scripts if isinstance(scripts, list) else [scripts]) if scripts else [None] * len(parts)
-    ws, offset = [], 0.0
-    for part, sc in zip(parts, scripts):
+    ws, offset, line_of = [], 0.0, []
+    for pn, (part, sc) in enumerate(zip(parts, scripts)):
         pw = words(root / part, a.model)
         if sc:
-            pw = align((root / sc).read_text(encoding="utf-8").split(), pw)
+            text = (root / sc).read_text(encoding="utf-8")
+            pw = align(text.split(), pw)
+            line_of += [(pn, ln) for ln, line in enumerate(text.splitlines()) for _ in line.split()]
+        else:   # no script: a sentence is a line
+            ln = 0
+            for _, _, w in pw:
+                line_of.append((pn, ln))
+                if re.search(r"[.!?][\"')\]]*$", w):
+                    ln += 1
         ws += [(s0 + offset, e0 + offset, w) for s0, e0, w in pw]
         offset += snap(duration(root / part))  # each part starts on a whole frame
     fails, fixes, edl = [], [], []
+    if clock_fail:
+        fails.append(clock_fail)
     db = level_db(audio)
 
     # 1. PLACE — a lead before the anchor word (the key word, else the phrase's first
     # word); play from the in-point, not the start image's static opening
-    cursor = 0
+    # V7.79.0 (user: "the broll is not timed on the right script line — I want it perfectly timed"):
+    # the cut lands on the phrase's FIRST word, so the picture changes as its line starts; the key
+    # word no longer moves the cut — it sets the in-point, so the action peaks on the key word
+    cursor, prev_i = 0, 0
     for b in plan["broll"]:
         hit = find_phrase(ws, b["phrase"], cursor)
         if not hit:
-            fails.append({"beat": b["beat"], "fail": "PHRASE_NOT_FOUND", "phrase": b["phrase"]})
+            back = find_phrase(ws, b["phrase"], prev_i + 1)
+            if back:
+                fails.append({"beat": b["beat"], "fail": "PHRASE_OVERLAPS", "phrase": b["phrase"],
+                              "detail": "found only inside the previous row's phrase — the rows overlap or are out of script order"})
+            else:
+                fails.append({"beat": b["beat"], "fail": "PHRASE_NOT_FOUND", "phrase": b["phrase"]})
             continue
         i, j = hit
-        cursor = i + 1
-        anchor = i
+        cursor, prev_i = j + 1, i          # the next row is searched after this phrase, never inside it
+        anchor, key_i = i, None
         if b.get("key"):
             k = find_phrase(ws, b["key"], i)
             if not k or k[1] > j:
                 fails.append({"beat": b["beat"], "fail": "KEY_NOT_IN_PHRASE", "key": b["key"], "phrase": b["phrase"]})
             else:
-                anchor = k[0]
-        word_t = onset(db, ws[anchor][0])   # the word's sound, not Whisper's guess (V7.69.2)
+                key_i = k[0]
+        word_t = onset(db, ws[anchor][0])   # the line's first word, by its sound (V7.69.2 onset)
+        if anchor > 0:   # V7.79.0: in connected speech the onset search can slide back into the previous
+            # word; a line never starts before the previous word has finished (−80 ms of overlap at most)
+            word_t = max(word_t, ws[anchor - 1][1] - 0.08)
+        key_t = onset(db, ws[key_i][0]) if key_i is not None else word_t
         lay, lerr = check_layout(b, base is not None)
         if lerr:
             fails.append({"beat": b["beat"], "fail": "LAYOUT_INVALID", "detail": lerr})
@@ -314,7 +364,9 @@ def main():
             fails.append({"beat": b["beat"], "fail": "NO_CLIP", "detail": "no clip yet — run --lengths to size the call"})
             continue
         edl.append({"beat": b["beat"], "clip": str(clip) if clip else None, "phrase": b["phrase"],
-                    "key": ws[anchor][2], "layout": lay, "word_t": word_t,
+                    "key": ws[key_i][2] if key_i is not None else ws[anchor][2], "first_word": ws[anchor][2],
+                    "i": i, "j": j, "key_t": key_t, "span": b.get("span"),
+                    "layout": lay, "word_t": word_t,
                     "start": min(snap(max(0.0, word_t - a.lead)), round(int(word_t * FPS) / FPS, 4)), "line_end": snap(line_end(ws, j)),
                     "in_spec": b.get("in"), "peak": b.get("peak"), "max": b.get("max", a.max_clip),
                     "clip_len": (min(duration(clip), float(b["out"])) if b.get("out") else duration(clip)) if clip else None,
@@ -335,10 +387,52 @@ def main():
         if e["in_spec"] is not None:
             e["in"], e["flex"] = float(e["in_spec"]), False
         elif e["peak"] is not None:
-            e["in"], e["flex"] = max(0.0, float(e["peak"]) - lead), True
+            # the clip's action peak lands on the key word (V7.79.0): in = peak − (key − cut)
+            e["in"], e["flex"] = max(0.0, float(e["peak"]) - (e["key_t"] - e["start"])), True
         else:
             e["in"], e["flex"] = a.skip, True
         e["skip"] = e["in"]
+
+    # which script lines each row shows; where each line starts (by its first word's sound)
+    for e in edl:
+        e["lines"] = {line_of[k] for k in range(e["i"], e["j"] + 1) if k < len(line_of)}
+    line_first = {}
+    for k, lid in enumerate(line_of[:len(ws)]):
+        line_first.setdefault(lid, k)
+
+    def next_line_onset(e):
+        """Onset of the first line after this row's own lines (the next thing said that isn't its line)."""
+        last = max(e["lines"]) if e["lines"] else None
+        later = sorted(l for l in line_first if last is not None and l > last)
+        return onset(db, ws[line_first[later[0]]][0]) if later else total
+
+    def spill(e, start, end):
+        """Words spoken while this picture is up that belong to another line — the line the viewer
+        hears is not the line the picture shows. Returns {line id: [words]} in order."""
+        out = {}
+        for k, (s0, e0, w) in enumerate(ws):
+            # a word starting inside the row's own lead (the 6 frames before its line) is the lead, not a spill
+            if max(start + 0.05, e["word_t"]) < s0 < end - 0.05 and k < len(line_of) and line_of[k] not in e["lines"]:
+                out.setdefault(line_of[k], []).append(w)
+        return out
+
+    def line_check(e, start, end):
+        for lid, wl in spill(e, start, end).items():
+            txt = " ".join(wl)
+            if e.get("span") == "hold":
+                fixes.append({"beat": e["beat"], "fix": f"held on purpose over: {txt!r}"}); continue
+            own = [x for x in edl if lid in x["lines"]]
+            if own:   # the line has a row, but it cuts in after the line has started
+                o = own[0]
+                first = ws[line_first[lid]][2]
+                fix = (f"{o['beat']} shows this line but cuts in mid-line on {o['first_word']!r} — start its phrase "
+                       f"at the line's first word {first!r}, or give the line's opening its own row")
+            elif base is None:
+                fix = f"give that line its own row, or set \"span\": \"hold\" on {e['beat']} to hold it there on purpose"
+            else:
+                fix = "end the B-roll as its line ends, give that line its own row, or set \"span\": \"hold\""
+            fails.append({"beat": e["beat"], "fail": "LINE_UNDER_WRONG_PICTURE",
+                          "detail": f"{txt!r} is spoken under {e['beat']}'s picture (its line: {e['phrase']!r}) — {fix}"})
 
     if a.lengths:
         out = []
@@ -349,12 +443,17 @@ def main():
                 end = max(e["line_end"], e["start"])   # a deliberate return to face
             if base is not None and n + 1 == len(edl):
                 end = max(e["line_end"], e["start"])
-            on = max(end - e["start"], min(HOLD, nxt - e["start"]))   # the hold (rule 5)
+            hold_to = min(HOLD, nxt - e["start"])
+            if base is not None:   # V7.79.0: a hold never runs into the next line's words
+                hold_to = min(hold_to, max(0.0, next_line_onset(e) - e["start"]))
+            on = max(end - e["start"], hold_to)   # the hold (rule 5)
             if base is not None and n + 1 < len(edl) and 1e-3 < nxt - e["start"] - on < a.min_th:
                 on = nxt - e["start"]   # a hold never leaves a face window under --min-th
+            line_check(e, e["start"], e["start"] + on)
             need = on + e["skip"] + HANDLE
             call = max(KLING_MIN, int(-(-need // 1)))
-            row = {"beat": e["beat"], "cut_s": e["start"], "early_s": e["early_s"], "anchor": e["key"], "on_screen_s": round(on, 2),
+            row = {"beat": e["beat"], "cut_s": e["start"], "early_s": e["early_s"], "line_starts_on": e["first_word"],
+                   "key": e["key"], "on_screen_s": round(on, 2),
                    "skip_s": round(e["skip"], 2), "call_s": call}
             cap = min(KLING_MAX, e["max"])
             if call > cap:
@@ -402,6 +501,8 @@ def main():
         nxt = edl[n + 1]["start"] if n + 1 < len(edl) else total
         if e["end"] - e["start"] < HOLD - 1e-3:
             target = snap(min(nxt, e["start"] + HOLD))
+            if base is not None:   # V7.79.0: never hold into the next (talking-head) line's words
+                target = snap(min(target, max(e["end"], next_line_onset(e))))
             if base is not None and n + 1 < len(edl) and 1e-3 < nxt - target < a.min_th:
                 # never hold into a face window and leave a flicker: hold to the next cut when the
                 # footage reaches it, else stop so the face keeps at least --min-th
@@ -430,6 +531,8 @@ def main():
     if base is None and edl and edl[0]["start"] > 1e-3:
         fails.append({"beat": edl[0]["beat"], "fail": "HOLE_AT_START",
                       "detail": f"0.00–{edl[0]['start']:.2f}s uncovered — place a B-roll on the opening line"})
+    for e in edl:
+        line_check(e, e["start"], e["end"])
     for e in edl:
         if e["end"] - e["start"] < MIN_FLASH - 1e-3:
             fails.append({"beat": e["beat"], "fail": "FLASH", "detail": f"on screen {e['end']-e['start']:.2f}s < {MIN_FLASH}s — merge the row with its neighbour or give it a longer line"})
@@ -487,6 +590,9 @@ def main():
         if any(s["kind"] == "BR" and s["start"] + 1e-3 < pt < s["end"] - 1e-3 for s in raw):
             warnings.append({"punch": ph, "warning": f"lands under a B-roll at {pt:.2f}s — ignored"})
 
+    for e in edl:
+        for k in ("i", "j", "lines"):
+            e.pop(k, None)
     report = {"master_s": round(total, 3), "min_th_s": a.min_th, "edl": edl,
               "timeline": [{k: (round(v, 3) if isinstance(v, float) else v) for k, v in s.items()} for s in segs],
               "fixes": fixes, "warnings": warnings, "failures": fails}
