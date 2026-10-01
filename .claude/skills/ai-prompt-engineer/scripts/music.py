@@ -29,6 +29,10 @@ cuts:    music.py cuts CUE TRACK --rows rows.json [--words words.json] — §3C/
          row's cut, time on screen and call length (E6); FLASH under 2.0s, SPLIT over 15s, NOT SUNG, HOLE.
 render:  music.py render CUE TRACK --rows rows.json --out rough.mp4 — the rough cut: each clip from its 0.4s
          in-point for its time on screen, 9:16, joined frame-exact, the track whole under it.
+  "product_at": 31.4 — the product's first frame (from the act map / cut sheet). plan refuses unless a section starts
+  on it (±0.25s), every section before it is investigation (its "register" MUS-OPEN / -EXPOSE / -EDU, nothing sad
+  or cute in its styles) and the section starting on it turns (MUS-TURN or later) — V7.78.0, §40A.
+  Each section may carry its own "register": its theme and negatives are added to that section.
   "register": "MUS-OPEN" (or --register): the §40A register of the script part — MUS-OPEN, MUS-EXPOSE,
   MUS-EDU, MUS-TURN, MUS-AFTER, MUS-OFFER — pre-fills the theme and tempo, adds the NEG-MUSIC negatives,
   and refuses a tense register (OPEN / EXPOSE / EDU) whose theme asks for cute, cheerful or upbeat music.
@@ -67,7 +71,14 @@ REGISTERS = {
 }
 NEG_MUSIC = ["cute", "cheerful", "upbeat", "ukulele", "whistling", "hand claps", "corporate jingle", "stock advert jingle", "pop beat", "vocals", "lyrics", "humming"]
 TENSE = {"MUS-OPEN", "MUS-EXPOSE", "MUS-EDU"}
-NEG_WORDS = re.compile(r"\b(?:cute|cheerful|upbeat|happy|ukulele|whistl\w*|claps?|corporate|jingle|pop beat|bouncy|playful|bright)\b", re.I)
+# V7.78.0 (user 2026-10-01: "i want an investigation not sad at first bgm and change when the product shows"):
+# everything before the product's first frame is investigation — never sad — and the music changes on that frame.
+NEG_SAD = ["sad", "melancholic", "mournful", "sorrowful", "tearful", "sentimental", "lament", "grief", "tragic",
+           "weeping strings", "solo sad piano", "slow cello lament", "heartbreak ballad"]
+NEG_WORDS = re.compile(r"\b(?:cute|cheerful|upbeat|happy|ukulele|whistl\w*|claps?|corporate|jingle|pop beat|bouncy|playful|bright"
+                       r"|sad|melanchol\w*|mournful|sorrow\w*|tear\w*|weep\w*|lament\w*|grie\w*|sentimental|tragic|somb(?:er|re)|heartbr\w*|elegiac|wistful)\b", re.I)
+AFTER_PRODUCT = {"MUS-TURN", "MUS-AFTER", "MUS-OFFER"}
+PRODUCT_TOL = 0.25  # the music change sits within a quarter second of the product's first frame
 
 
 def apply_register(cue, reg):
@@ -81,7 +92,7 @@ def apply_register(cue, reg):
     cue["register"] = reg
     cue["theme"] = list(dict.fromkeys(r["theme"] + list(cue.get("theme") or [])))
     cue.setdefault("tempo", r["tempo"])
-    cue["avoid"] = list(dict.fromkeys(list(cue.get("avoid") or []) + NEG_MUSIC + (["resolving major cadence"] if reg in TENSE else [])))
+    cue["avoid"] = list(dict.fromkeys(list(cue.get("avoid") or []) + NEG_MUSIC + (["resolving major cadence"] + NEG_SAD if reg in TENSE else [])))
     if reg in TENSE:
         bad = [t for t in (cue.get("theme") or []) + [x for sec in cue.get("sections", []) for x in sec.get("styles", [])] if NEG_WORDS.search(t)]
         if bad:
@@ -107,14 +118,43 @@ def words_of(t):
     return re.findall(r"[a-z0-9']+", re.sub(r"[’‘]", "'", (t or "").lower()))
 
 
+def product_change(cue):
+    """V7.78.0: with `product_at` (the product's first frame, seconds) on the cue, a section must start on it (±0.25s);
+    every section before it is investigation (MUS-OPEN / -EXPOSE / -EDU) and never sad; the one starting on it turns
+    (MUS-TURN, or later registers). Section registers come from each section's `register`."""
+    pa = cue.get("product_at")
+    if pa is None:
+        return
+    secs = cue["sections"]
+    starts = [s["start"] for s in secs]
+    k = min(range(len(secs)), key=lambda i: abs(starts[i] - pa))
+    errs = []
+    if abs(starts[k] - pa) > PRODUCT_TOL:
+        errs.append(f"no section starts on the product's first frame ({pa}s; nearest '{secs[k]['name']}' at {starts[k]}s) — the music changes when the product shows")
+    for s in secs[:k]:
+        reg = s.get("register")
+        if reg and reg not in TENSE:
+            errs.append(f"'{s['name']}' is before the product but carries {reg} — before the product the music is investigation (MUS-OPEN / MUS-EXPOSE / MUS-EDU)")
+        bad = [t for t in s.get("styles", []) if NEG_WORDS.search(t)]
+        if bad:
+            errs.append(f"'{s['name']}' is before the product but asks for {bad} — investigation, never sad or cute")
+    reg = secs[k].get("register")
+    if reg and reg not in AFTER_PRODUCT:
+        errs.append(f"'{secs[k]['name']}' starts on the product but carries {reg} — the product's first frame is MUS-TURN")
+    if errs:
+        sys.exit("PRODUCT CHANGE (§40A, V7.78.0):\n  " + "\n  ".join(errs))
+
+
 def build_plan(cue):
+    product_change(cue)
     sung = bool(cue.get("sung"))      # §3C: a sung music video, only on the user's call — lyrics = the script's lines verbatim
     secs = []
     for i, s in enumerate(cue["sections"]):
         end = s["end"] + (2.0 if i == len(cue["sections"]) - 1 else 0.0)
+        sreg = REGISTERS.get(s.get("register"), {})
         secs.append({"section_name": s["name"],
-                     "positive_local_styles": s.get("styles", []) or ["continue the theme"],
-                     "negative_local_styles": s.get("avoid", []),
+                     "positive_local_styles": list(dict.fromkeys((sreg.get("theme") or []) + s.get("styles", []))) or ["continue the theme"],
+                     "negative_local_styles": list(dict.fromkeys(s.get("avoid", []) + (NEG_SAD + NEG_MUSIC[:8] if s.get("register") in TENSE else []))),
                      "duration_ms": int(round((end - s["start"]) * 1000)),
                      "lines": list(s.get("lines", [])) if sung else []})
     tempo = f"{cue['bpm']} BPM" if cue.get("bpm") else f"{cue.get('tempo', 'slow')} tempo"
