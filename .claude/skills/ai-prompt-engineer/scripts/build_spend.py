@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""§16A — the whole build's credits, per connector, for the Final output board (V7.83.0).
+"""§16A — this build's credits, per connector, for the Final output board (V7.83.0; V7.83.1: this build only,
+never the account's total — user: "the credit spent should be on that task and not as a whole").
 
 Usage:
-  build_spend.py DIR [DIR ...] [--build BUILD_ID] [--out spend.json]
+  build_spend.py DIR [DIR ...] --build BUILD_ID [--out spend.json]
 
 Each DIR is an ArtifactData `list` dump of one board's `generations` collection
 (out_dir=<DIR>; files at <DIR>/generations/<doc_id>.json) — every board of the build:
@@ -40,7 +41,7 @@ def num(x):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("dirs", nargs="+")
-    ap.add_argument("--build")
+    ap.add_argument("--build", required=True, help="the build id: only its cards are counted, never another build's")
     ap.add_argument("--out")
     a = ap.parse_args()
     seen, acc = set(), {}
@@ -66,7 +67,9 @@ def main():
             g = g.get("data", g) if isinstance(g, dict) else None
             if not isinstance(g, dict) or not (g.get("beat") or g.get("build")):
                 continue
-            if a.build and g.get("build") not in (None, a.build):
+            gid0 = str(g.get("id") or Path(f).stem)
+            # only this build: its build field, or (no field) a doc id generations/<build>__<BEAT>
+            if g.get("build") != a.build and not (g.get("build") is None and gid0.split("/")[-1].startswith(a.build + "__")):
                 continue
             docs += 1
             gid = g.get("id") or Path(f).stem

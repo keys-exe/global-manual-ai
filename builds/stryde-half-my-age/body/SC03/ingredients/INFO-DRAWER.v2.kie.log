@@ -1,0 +1,11 @@
+{"taskId": "a1a317ebba8334cb716e51999b0789f5", "created": true}
+{
+  "taskId": "a1a317ebba8334cb716e51999b0789f5",
+  "state": "success",
+  "credits": 10.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/a2/a1a317ebba8334cb716e51999b0789f5_1790881715299.png"
+  ],
+  "saved": "INFO-DRAWER_v2.png"
+}

@@ -1,0 +1,11 @@
+{
+ "generationId": "AZtYm6x5ecRwFiriXrZ6-FpVRSsX5OF-Bj0ta1bAGbUn7oxiZN1ISajEirgTDXd8hfskOM5Y",
+ "credits": 40,
+ "duration": 5,
+ "beat": "P-01a",
+ "connector": "Kling",
+ "model": "kling-video-v3_0",
+ "resolution": "1080p",
+ "prefer_multi_shots": "false",
+ "enable_audio": "false"
+}

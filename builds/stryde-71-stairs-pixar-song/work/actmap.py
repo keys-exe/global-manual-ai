@@ -71,7 +71,7 @@ R("HK-03a", A, (5, 5), "Mama", "hook — the line (a new angle on the user's cal
   "the daughter's head tilts as she asks, N's smile widens", "a beat, about a second", "none", "worn (under the dress)", "HIDDEN",
   "eye", TQ, "through", "CU", "through the doorway in close = the line lands between the two faces; she has arrived, the daughter is still on the step (HT24)", "eyes", "shallow", "open sky, afternoon sun", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
 R("P-01a", A, (6, 6), "backwards", "problem (HT02; user Fix 2026-10-01: looking up the stairs, stepping backward — so the lens goes to the foot of the flight, edit of P0)", "N", "L-N-STAIRS", "N-D1",
-  "MEDIUM from the hall at the foot of the stairs, the lens low looking up the flight: N mid-flight with her back to the lens, face turned up the stairs toward the landing, both hands gripping the oak rail, one slippered foot reaching back and down to the step below",
+  "MEDIUM from the hall, the lens low on the top of the flight and the landing: N starting from the top — standing on the top step at the head of the stairs (user Fix 2026-10-01: starting from the top to show the moving backwards; never at the bottom), her back to the lens, face turned up to the landing, both hands gripping the oak rail, her first foot reaching back and down to the step below",
   "one careful step down backwards, her back to the lens", "one step, about two seconds", "stairs: camera at the foot, subject above with her back to it, slow single step", "absent", "—",
   "low", BH, "clean", "MEDIUM", "low from the hall, her back to us = going down the wrong way, small against the flight rising above her", "deep", "deep", *STAIR_AM, "morning", "problem: grey", False, "MUS-EXPOSE", ledger="VN04")
 R("P-01b", A, (7, 7), "step", "problem", "N feet", "L-N-STAIRS", "N-D1",
@@ -83,13 +83,13 @@ R("P-02a", A, (8, 10), "down", "problem (edit of P0: the top of the flight, HT17
   "she looks down the stairs and looks away", "one turn of the head, about two seconds", "none", "absent", "—",
   "low", FR, "clean", "MEDIUM", "low from the foot of the stairs = the whole flight between her and the hall; trapped up there", "eyes", "deep", *STAIR_AM, "morning", "problem: grey", True, "MUS-EXPOSE")
 R("P-03a", A, (11, 12), "brace", "failed fix", "N", "L-N-KITCHEN", "N-D1",
-  "CU seated at the kitchen table: a big black hinged knee brace over her bare right knee, sagging below the kneecap, her hand hauling it up",
-  "her hand pulls the brace up once and it slips back", "one pull, about two seconds", "hands: large in frame, one movement", "absent (generic brace, §10)", "—",
-  "high", TQ, "clean", "CU", "high = her own view of her knee", "hands", "medium", *KIT, "morning", "problem: grey", False, "MUS-EXPOSE")
+  "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a big black hinged knee brace sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new)",
+  "her hand pulls the brace up once and it slips back", "one pull, about two seconds", "hands: large in frame, one movement, seated", "absent (generic brace, §10)", "—",
+  "low", PR, "clean", "CU", "low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14)", "hands", "medium", *KIT, "morning", "problem: grey", False, "MUS-EXPOSE")
 R("P-03b", A, (13, 13), "ankle", "failed fix", "N feet", "L-N-KITCHEN", "N-D1",
-  "CU at floor level: the brace bunched around her right ankle above her slipper",
-  "she shifts her foot once", "one small shift, about a second", "feet only", "absent", "—",
-  "ground", TQ, "clean", "CU", "ground = where it ended up", "foreground", "medium", *KIT, "evening", "problem: grey", False, "MUS-EXPOSE")
+  "CU from the same side, the frame dropped to floor level: the same seat and chair as P-03a, the same brace now bunched around her right ankle above her slipper, both slippers on the floor; hands and head out of frame (edit of the P-03a frame, FP14)",
+  "she shifts her foot once", "one small shift, about a second", "feet only, seated", "absent", "—",
+  "ground", PR, "clean", "CU", "ground = where it ended up; the same side as P-03a so the two connect", "foreground", "medium", *KIT, "evening", "problem: grey", False, "MUS-EXPOSE")
 R("P-04a", A, (14, 14), "everything", "failed fix (HT10)", "N hands", "L-N-KITCHEN", "N-D1c",
   "overhead on the kitchen table: her two hands spread the whole arsenal across the wood — pill bottles, a gel tube, two sleeves, a hinged brace, an ice pack",
   "both hands push the pile apart", "one push, about two seconds", "hands: large in frame", "absent (generic, §10)", "—",
@@ -98,10 +98,19 @@ R("P-04b", A, (15, 15), "therapy", "failed fix", "N + one-off PT", "L-CLINIC", "
   "MEDIUM: N lying on a PT treatment table, a therapist's hands bending her right knee",
   "the therapist bends the knee a little further", "one slow bend, about two seconds", "hands: one movement, subject lying still", "absent", "—",
   "high", TQ, "clean", "MEDIUM", "high = done to her, passive", "hands", "medium", *CLIN, "afternoon", "problem: clinical", False, "MUS-EXPOSE")
-R("P-05a", A, (16, 18), "Nothing", "low", "N", "L-N-KITCHEN", "N-D1c",
-  "MEDIUM across the table: N pushes the heap of braces, sleeves and bottles away from her with the back of her hand, then sits back, looking at nothing",
+# P-05 split into three B-rolls on the user's Fix (board, 2026-10-01: "make this into 3 brolls") — one line each; the push, the heap, her face
+R("P-05a", A, (16, 16), "Every", "low — the push (user 2026-10-01: three B-rolls, one per line)", "N", "L-N-KITCHEN", "N-D1c",
+  "MEDIUM across the table: N pushes the heap of braces, sleeves and bottles away from her with the back of her hand",
   "one push away across the table", "one push, about two seconds", "hands: one movement, seated", "absent", "—",
-  "low", TQ, "clean", "MEDIUM", "low = the table edge, her giving up made big", "eyes", "deep", *KIT, "morning", "problem: grey", True, "MUS-EXPOSE")
+  "low", TQ, "clean", "MEDIUM", "low = the table edge, her giving up made big", "eyes", "deep", *KIT, "morning", "problem: grey", True, "MUS-EXPOSE", mx=3)
+R("P-05b", A, (17, 17), "worked", "low — the heap, pushed to the far edge (user 2026-10-01: three B-rolls)", "N hands", "L-N-KITCHEN", "N-D1c",
+  "CU at table height on the far edge of the kitchen table: the heap of braces, sleeves and pill bottles jammed against the edge where the push left it, a bottle on its side at the lip, a knee sleeve hanging off the edge; her hands out of frame",
+  "the bottle at the edge rolls off and drops out of frame", "one roll, about a second", "objects only, one movement", "absent (generic, §10)", "—",
+  "eye", FR, "clean", "CU", "eye at table height = the heap at the edge, nothing left in it", "product", "medium", *KIT, "morning", "problem: grey", False, "MUS-EXPOSE", mx=3)
+R("P-05c", A, (18, 18), "life", "low — her face, sat back (user 2026-10-01: three B-rolls)", "N", "L-N-KITCHEN", "N-D1c",
+  "CU across the table at her eye level: N sat back in the chair, shoulders down, eyes on nothing past the lens, the heap soft in the foreground at the table's far edge",
+  "her eyes drop to the table, one slow blink", "one look down, about two seconds", "face: one movement, seated", "absent", "—",
+  "eye", TQ, "through", "CU", "through the heap in the foreground = what she is left with between her and us", "eyes", "shallow", *KIT, "morning", "problem: grey", True, "MUS-EXPOSE", mx=3)
 
 # ---------------- Act 2 — the turn (44.0–64.4 s), the wedding, N-D2
 A = "Act 2"

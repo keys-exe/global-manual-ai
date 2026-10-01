@@ -1,0 +1,35 @@
+{
+ "videoVersions": [
+  {
+   "asset": "d2a12f28fbc8d2b46b170f7ff4ed79a8",
+   "at": 1790879441635,
+   "connector": "Kling",
+   "credits": 48,
+   "duration": 6.04,
+   "fromImage": 6,
+   "job": "Ae7xxyHuF6LmLZ5oV7UyCvFXaFggT_VwkxglIXEpR2ZgPyozblpz-KZ3E7W6p5J63PNBu9Vo",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v6 B (job 04e4ff58) · what I see: she stays on the top step, looks down the flight and away; her mouth opens into a smile mid-clip as if speaking",
+   "res": "1072×1928",
+   "size": 3337101,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/f3b33137-f1e5-49d5-9c46-ce477a449dcb-4r8X6ev41rNXPNsDc8FxUg-output.mp4?x-kcdn-pid=112372",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "d2a12f28fbc8d2b46b170f7ff4ed79a8"
+  }
+ ],
+ "videoAsset": "d2a12f28fbc8d2b46b170f7ff4ed79a8",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/f3b33137-f1e5-49d5-9c46-ce477a449dcb-4r8X6ev41rNXPNsDc8FxUg-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "Ae7xxyHuF6LmLZ5oV7UyCvFXaFggT_VwkxglIXEpR2ZgPyozblpz-KZ3E7W6p5J63PNBu9Vo",
+ "videoAt": 1790879441635,
+ "duration": 6.04,
+ "videoFault": "replaced on the user's Fix: never talk the lyrics/script in B-roll",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "status": "regenerate",
+ "updatedAt": 1790881140666
+}

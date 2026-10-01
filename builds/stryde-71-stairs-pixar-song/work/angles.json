@@ -184,11 +184,11 @@
   "group": "Hook 1",
   "type": "BR",
   "subject": "N",
-  "height": "high",
-  "side": "three-quarter",
+  "height": "low",
+  "side": "profile",
   "fg": "clean",
   "scale": "CU",
-  "why": "high = her own view of her knee",
+  "why": "low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14)",
   "mirror_of": null,
   "mode": 2,
   "speaking": false,
@@ -203,7 +203,7 @@
   "face": false,
   "light": {
    "source": "window over the sink, south wall",
-   "key_side": "R",
+   "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 5600
@@ -215,10 +215,10 @@
   "type": "BR",
   "subject": "N feet",
   "height": "ground",
-  "side": "three-quarter",
+  "side": "profile",
   "fg": "clean",
   "scale": "CU",
-  "why": "ground = where it ended up",
+  "why": "ground = where it ended up; the same side as P-03a so the two connect",
   "mirror_of": null,
   "mode": 2,
   "speaking": false,
@@ -233,7 +233,7 @@
   "face": false,
   "light": {
    "source": "window over the sink, south wall",
-   "key_side": "R",
+   "key_side": "L",
    "time": "evening",
    "arc": "problem: grey",
    "kelvin": 5600
@@ -316,6 +316,66 @@
   "focus": {
    "plane": "eyes",
    "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "N-D1c",
+  "face": true,
+  "light": {
+   "source": "window over the sink, south wall",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "P-05b",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "N hands",
+  "height": "eye",
+  "side": "front",
+  "fg": "clean",
+  "scale": "CU",
+  "why": "eye at table height = the heap at the edge, nothing left in it",
+  "mirror_of": null,
+  "mode": 2,
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "N-D1c",
+  "face": false,
+  "light": {
+   "source": "window over the sink, south wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "P-05c",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "N",
+  "height": "eye",
+  "side": "three-quarter",
+  "fg": "through",
+  "scale": "CU",
+  "why": "through the heap in the foreground = what she is left with between her and us",
+  "mirror_of": null,
+  "mode": 2,
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
    "rack": null,
    "moving_subject": false
   },
