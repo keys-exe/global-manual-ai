@@ -1,0 +1,48 @@
+{
+ "beat": "T-02b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Electric Slide, Cupid Shuffle, all of it.\": Keep this photo exactly as it is — the parquet dance floor, the evening light of the string lights — in close at floor level on the dance floor, a tall 9:16 crop, and add the feet. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nClose-up at floor level, front-on, sharp on the shoes: a row of dancers' feet on the parquet, all facing the lens, stepping back together in unison — black dress shoes, silver heels, and in the middle a pair of white slip-on sneakers under the hem of a royal-blue satin dress, brown ankles; legs from the knee down, every foot whole and flat on the floor. Scale true to the set: the dress hem comes up to her knee.\nIn frame: the row of feet, the parquet, the lights soft behind; nothing else on the floor.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Shoes and dress plain — no lettering, logos or labels.",
+ "script_line": "Electric Slide, Cupid Shuffle, all of it.",
+ "face": false,
+ "room": true,
+ "body": false,
+ "refs": [
+  {
+   "label": "P3-RECEPTION plate (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "7cdda7ff-68a8-4e54-ab1c-2d80fbe93822",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": false,
+ "medias": [
+  "7cdda7ff-68a8-4e54-ab1c-2d80fbe93822",
+  "5b40a12a-24f5-4d12-8650-016a8b0384ae"
+ ]
+}

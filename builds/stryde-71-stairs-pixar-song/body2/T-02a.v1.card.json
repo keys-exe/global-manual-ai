@@ -1,39 +1,4 @@
 {
- "build": "stryde-71-stairs-pixar-song",
- "act": "Act 2",
- "stage": "broll",
- "beat": "T-02a",
- "title": "turn",
- "line": "and she was out on that dance floor all night.",
- "status": "ready",
- "flow": [
-  "image",
-  "video"
- ],
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
- "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "duration": 5,
- "songIn": 48.66,
- "songOut": 51.91,
- "onScreen": 3.25,
- "section": "The turn — MUS-TURN",
- "bars": 1.0,
- "key": "floor",
- "location": "L-RECEPTION",
- "storyDay": "N-D2",
- "framing": "WIDE: a line of guests doing a line dance, Loretta in the middle of the line, stepping in time",
- "motionPlan": "From this frame: one side step with the line — one step per beat, about a second; camera RV sway — the virtual camera breathes in place, never travels",
- "staging": "dancing: wide, side step, camera still",
- "pinEnd": "no",
- "angle": "eye · front · through · WIDE — through the guests = we're watching from our table",
- "focus": "deep · deep",
- "light": "warm string lights and chandeliers · key L · evening · turn: warm party light · 3200K",
- "product": "worn (under her dress, hidden) · HIDDEN",
- "layout": "full",
- "eg": "",
- "music": "MUS-TURN",
- "ledger": "VN05",
- "updatedAt": 1790890992104,
  "imageVersions": [
   {
    "v": 1,
@@ -91,10 +56,12 @@
   2
  ],
  "imageStatus": "review",
+ "status": "ready",
  "imageAsset": "65334c609f4fba0eb7774350cca40671",
  "imageType": "image/png",
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_ef04c94b-37c7-4828-b4e5-2ba9325aad8a.png",
  "imageJob": "ef04c94b-37c7-4828-b4e5-2ba9325aad8a",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
  "imageRes": "1536×2752",
@@ -125,5 +92,8 @@
   "FP13",
   "FP14",
   "FP17"
- ]
+ ],
+ "motionPlan": "From this frame: one side step with the line — one step per beat, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "framing": "WIDE: a line of guests doing a line dance, Loretta in the middle of the line, stepping in time",
+ "updatedAt": 1790890992104
 }

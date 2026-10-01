@@ -453,3 +453,12 @@ Waiting on: Confirm or Fix on the clips P-01b v4 and P-03a v5.
 - Spent this round: Higgsfield 3 renders (6.42 cr), Kling 80 cr (v6 + v7). Balances: Higgsfield 7603.15 · Kling 39861.
 
 Waiting on: a pick on P-01b v15/v16; Confirm or Fix on the clip P-03a v7.
+
+## 2026-10-01 — "GENERATE" / "CONFIRM PROCEED" (21:40 UTC): Act 1 last clip, Act 2 images
+
+- The user picked **P-01b v15 A** and confirmed the **P-03a clip v7** — Act 1 waits only on the P-01b clip.
+- **P-01b** clip v5 (4 s, 32 cr; the first clip on the new frame): from behind, she steps backwards toward the lens one step, foot by foot (FP16), and ends one step lower facing up the stairs. To check. Unused v16 B → Old 2 (`62feeee1…`).
+- **Act 2 — the wedding (N-D2), seven beats T-01a…T-04b**: A/B pairs on Higgsfield nano_banana_pro (14 renders), each an image edit of the confirmed **P3-RECEPTION** plate (Image 1) with the build's style frame attached (P-05c v5 A, `kind: style`, §24O rule 2); C1-LORETTA sheet on T-01b, N-NARR sheet on T-04a; wardrobe per N-D2 (N lavender chiffon + pearl studs; Loretta royal-blue satin + white slip-ons). Builder: `body2/build_act2.py` (all seven `preflight.py` PASS, with the V7.86.0 scale / facing / stylised-hands lines). Laughs written as closed-mouth grins so no clip reads as singing (HT25). **T-03a** "Both her knees was bone on bone too" → anatomy style **S2 X-ray** (a wear line, §12A-1): two knees in profile, the joint gap gone, a red-orange glow where bone meets bone. All seven To check; what I see is on each card (T-03a B has a stray small panel top right; T-04b's tablecloth hangs a little oddly over the knee).
+- Balances: Higgsfield 7563.15 · Kling 39629.
+
+Waiting on: Confirm or Fix on the P-01b clip v5; picks or Fix notes on the seven Act 2 pairs (T-01a, T-01b, T-02a, T-02b, T-03a, T-04a, T-04b).
