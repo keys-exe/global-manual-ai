@@ -25,6 +25,7 @@
  "prefer_multi_shots": "false",
  "generation": 2,
  "fix_note": "User Fix: \"she should be going to the stairs and not away from it\" → fault in the prompt's motion: 'turns her head back over her shoulder… then faces up again' let the model turn her whole body and walk away from the flight → body, chest and feet locked facing up the stairs, climbing toward the camera, only a glance down to the left, no turn; turn-round / walk-down / walk-away negatives added",
+ "user_go": null,
  "risks": [
   {
    "risk": "she turns round or walks away from the stairs",
