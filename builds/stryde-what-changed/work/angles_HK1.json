@@ -1136,7 +1136,7 @@
   "side": "three-quarter",
   "scale": "CU",
   "fg": "clean",
-  "why": "low = the small pill made big",
+  "why": "low looking up = the alarm silenced, the cause untouched",
   "mirror_of": null,
   "mode": 1,
   "product_beat": false,
@@ -1146,7 +1146,7 @@
    "rack": null,
    "moving_subject": false
   },
-  "story_day": "K-D1",
+  "story_day": "M-D1",
   "face": false,
   "light": {
    "source": "kitchen window over the sink",

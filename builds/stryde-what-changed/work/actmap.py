@@ -194,9 +194,9 @@ BB("B10c", A2, "Gel sits on the skin.", "Gel", "the mistake (F6)",
    "one smoothing stroke, about a second", STILL, "seated: knee and hand only, camera still", "no", "absent", "—", "NB2",
    EYE, PRO, "clean", "CU", "profile: the gel lying on the surface of the skin", "hands", "shallow", L(KITCH, "R"), False, ledger="F6", notes="unbranded, no label; user 2026-09-30 'BROLLS HERE' — gel on the knee, not on fingertips")
 BB("B10d", A2, "A painkiller turns the alarm off", "painkiller", "the mistake (F6)",
-   "hands", "L-KITCHEN", "K-D1", "CU a plain blister pack of white tablets beside a glass of water; a thumb pops one tablet out", "one tablet popped",
-   "one press, about a second", STILL, "hands: one movement", "no", "absent", "—", "NB2",
-   LOW, THR, "clean", "CU", "low = the small pill made big", "hands", "shallow", L(KITCH, "L"), False, ledger="F6", notes="unbranded, no print")
+   "hands", "L-M-STAIRS", "M-D1", "CU looking up at her hall ceiling: a plain white smoke alarm flashing red, her hand reaching up and pressing its button, the red light going out (fix: 'GIVE ME DIFFERENT BROLL HERE'; v1 a thumb popping a tablet)", "her thumb presses the button and the red light goes out",
+   "one press, about a second", STILL, "hand and alarm only, camera still", "no", "absent", "—", "NB2",
+   LOW, THR, "clean", "CU", "low looking up = the alarm silenced, the cause untouched", "hands", "shallow", L(KITCH, "L"), False, ledger="F6", notes="the metaphor of the line, literal; unbranded alarm, no text")
 BB("B10d2", A2, "and leaves the load exactly where it was.", "load", "the load is still there (F6)",
    "R2", "L-D-STAIRS", "D-D1", "low side-on: Desmond getting up off his bottom stair, hands pressed on his thighs, both knees bent hard under his whole weight", "he pushes up to standing",
    "one push up, about two seconds, ordinary pace", STILL, "stairs: low side-on, legs only, camera still", "no", "absent", "—", "NB2",
@@ -299,7 +299,7 @@ BB("B21", A4, "Or move the load off the one spot that has been taking it since y
    "one kick, about a second and a half", STILL, "garden: whole figure, camera still", "no", "worn", "VISIBLE", "NBP",
    LOW, FRO, "clean", "MEDIUM", "low front = the strength back", "product", "medium", L(D_SUN, "R"), False)
 BB("B22a", A4, "Two for one, so you can do both knees.", "Two", "offer — pair pack",
-   "R1", "L-M-STAIRS", "M-D2", "CU front-on, low: Maureen's two knees side by side on the stair, a strap below each kneecap, both wordmarks reading (fix: 'different broll here'; edit of B18b v3)", "she shifts her weight from one knee to the other",
+   "R1", "L-BEDROOM", "M-D2", "CU front-on at knee height: Maureen sitting on the edge of her bed, both knees bent towards the camera, a strap below each kneecap, hands on her thighs (fix: 'GIVE ME ANOTHER DIFFERENT BROLL HERE'; edit of the approved B22a v4)", "she gives her knees a light pat",
    "one small shift, about a second", STILL, "legs only, camera still", "no", "worn ×2", "VISIBLE", "NBP",
    EYE, FRO, "clean", "CU", "level with the knees = both knees, both straps", "product", "medium", L(M_SUN, "L"), False, eg="EG04 · 'BUY 1 GET 1 FREE' in the edit")
 TH("B22-TH", A4, "Sixty days, and you keep the straps. From the Stryde site.", eg="EG01 · '60 days' in the edit (F10)")

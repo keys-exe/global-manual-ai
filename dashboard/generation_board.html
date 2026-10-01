@@ -1545,7 +1545,7 @@ function mediaCard(g,k){
   const limit=/kling/i.test(model)&&k!=="image"?2500:null;
   const fixing=state.faultOpen===g.id+":"+k;
   const cls=locked?"locked":s==="ok"?"ok":s==="bad"||s==="gen"?"bad":s==="review"?"now":"";
-  const chip=BOARD_ROLE==="old"?`<span class="pill s-regenerate">Not used</span>`:locked?`<span class="pill s-planned">${seed?"Waiting for ingredients":"Waiting for image"}</span>`:stepChip(g,k,s)||`<span class="pill s-planned">${d.label} ${prompt?"prompt ready":"planned"}</span>`;
+  const chip=BOARD_ROLE==="old"?(g.restore&&g.restore.k===k?(g.restore.status==="done"?`<span class="pill s-use">v${g.restore.v} back on the main board</span>`:`<span class="pill s-generating">Moving v${g.restore.v} to the main board…</span>`):`<span class="pill s-regenerate">Not used</span>`):locked?`<span class="pill s-planned">${seed?"Waiting for ingredients":"Waiting for image"}</span>`:stepChip(g,k,s)||`<span class="pill s-planned">${d.label} ${prompt?"prompt ready":"planned"}</span>`;
   const size=g[d.size]?(k==="image"?esc(g[d.size]):`${esc(g[d.size])}s`):"—";
   const specs=[
     ["Connector",esc(g[d.conn]||(seed?"Kie AI":d.defConn)||"—")],
@@ -1865,6 +1865,7 @@ function renderViewer(){
         canAct&&!v.fix?`<button class="btn okv" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}">${I.ok} Confirm</button>
         <button class="btn badv" type="button" data-vfix="1">${I.fix} Fix</button>`:""}
         ${older&&!moved&&!state.readOnly?`<button class="btn full" type="button" data-vrestore="${shown.v}">${I.back} Use this version</button>`:""}
+        ${BOARD_ROLE==="old"&&shown&&!moved&&state.db?promoteBtn(g,k,shown):""}
         ${moved?(archiveLink(shown)?`<a class="btn primary full" href="${esc(archiveLink(shown))}" target="_blank" rel="noopener">${I.box} Open v${shown.v} in Old versions</a>`:""):`<button class="btn primary full" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${shown?`data-ver="${shown.v}"`:"disabled"}>${I.dl} Download${older?` v${shown.v}`:""}</button>`}
       </div>
     </aside>`;
@@ -1903,6 +1904,26 @@ function renderViewer(){
   if(mv){if(v.rate) mv.playbackRate=v.rate; mv.addEventListener("loadedmetadata",()=>{if(v.rate) mv.playbackRate=v.rate;frameStrip(mv,shown,outV)},{once:true}); if(mv.readyState>=1) frameStrip(mv,shown,outV)}
   const on=el.querySelector('.v-th[aria-current="true"]'); if(on) on.scrollIntoView({block:"nearest",inline:"center"});
   if(v.fix){const t=el.querySelector("#vfault");if(t){t.value=draft;t.focus()}}
+}
+// Old versions board (user, 2026-10-01): "Use this" moves an old render back to the main (Current) board as the
+// confirmed one. A page can only write to its own board, so the button leaves a request here; Claude carries it out
+// (copies the file to the main board, makes it the confirmed version there, moves the one it replaces to Old)
+// at the next Fix check, then marks the request done.
+function promoteState(g,k,v){const r=g.restore;return r&&r.k===k&&r.v===v?r.status:null}
+function promoteBtn(g,k,x){
+  const st=promoteState(g,k,x.v), other=g.restore&&g.restore.status==="requested"&&!(g.restore.k===k&&g.restore.v===x.v);
+  if(st==="requested") return `<div class="full" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="pill s-generating">Moving v${x.v} to the main board…</span><button class="btn small" type="button" data-promote-cancel="${esc(g.id)}">Cancel</button></div><p class="note full" style="margin:0;color:#9aa3b2">It becomes the confirmed ${STEP[k].label.toLowerCase()} on the main board at the next Fix check, or as soon as you tell Claude.</p>`;
+  if(st==="done") return `<span class="pill s-use full">On the main board · confirmed</span>`;
+  return `<button class="btn okv full" type="button" data-promote="${esc(g.id)}" data-step="${k}" data-v="${x.v}" ${other?"disabled title='Another version of this beat is already being moved'":""}>${I.ok} Use this — move it to the main board as the confirmed one</button>`;
+}
+async function promoteVersion(g,k,vnum){
+  const x=versionsOf(g,k).find(y=>y.v===vnum); if(!x||!state.db) return;
+  const req={k,v:vnum,asset:x.asset||"",parts:x.parts||[],type:x.type||"",requestedAt:Date.now(),status:"requested"};
+  try{await state.db.doc("generations/"+g.id).update({restore:req,updatedAt:Date.now()});g.restore=req;renderViewer();render();
+    toast(`v${vnum} will move to the main board as the confirmed ${STEP[k].label.toLowerCase()}.`)}catch(e){handleWriteError(e)}
+}
+async function cancelPromote(g){
+  try{await state.db.doc("generations/"+g.id).update({restore:null,updatedAt:Date.now()});g.restore=null;renderViewer();render();toast("Cancelled")}catch(e){handleWriteError(e)}
 }
 async function restoreVersion(g,k,vnum){
   const d=STEP[k], vers=versionsOf(g,k), x=vers.find(y=>y.v===vnum); if(!x||!state.db) return;
@@ -2225,7 +2246,7 @@ function tocJump(i){
 let pickTarget=null;
 document.addEventListener("click",e=>{
   if(!e.target.closest(".vsel")) closeVsel();
-  const t=e.target.closest("[data-fjump],[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-ving],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vmenu],[data-vpick],[data-vrestore],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-pick],[data-vpair],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-fjump],[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-ving],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vmenu],[data-vpick],[data-vrestore],[data-promote],[data-promote-cancel],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-pick],[data-vpair],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
   if(ds.fjump){const el=document.getElementById("fc-"+ds.fjump);if(el) el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"});return}
@@ -2249,6 +2270,8 @@ document.addEventListener("click",e=>{
   if(ds.vout){setCleanOut(ds.vout==="set");return}
   if(ds.vmenu){state.viewer.menu=!state.viewer.menu;renderViewer();return}
   if(ds.vpick){state.viewer.ver=Number(ds.vpick);state.viewer.menu=false;renderViewer();return}
+  if(ds.promote){const gg=state.gens.find(x=>x.id===ds.promote);if(gg) promoteVersion(gg,ds.step,Number(ds.v));return}
+  if(ds.promoteCancel){const gg=state.gens.find(x=>x.id===ds.promoteCancel);if(gg) cancelPromote(gg);return}
   if(ds.vrestore){const x=state.gens.find(y=>y.id===state.viewer.id);if(x) restoreVersion(x,state.viewer.step,Number(ds.vrestore));return}
   if(state.viewer&&state.viewer.menu&&!e.target.closest(".v-menu")){state.viewer.menu=false;renderViewer()}
   if(ds.sound){const v=document.querySelector(".viewer video");if(v){v.muted=false;v.dataset.sound="1";tryPlay(v)}t.remove();return}

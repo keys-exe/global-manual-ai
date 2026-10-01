@@ -1,0 +1,47 @@
+{
+ "beat": "SC02-SH01",
+ "kind": "image",
+ "mode": 4,
+ "prompt": "For the line \"Just leave it by the stairs, love. I’ll get it later.\": she is stranded at the top of her own stairs at night, calling down. SCENE MASTER, Scene 2. A low, wide shot from the dark hall floor, looking up the whole flight through the banister's square spindles: the dark spindles soft in the near foreground like bars, the flight rising between them. Image 1 is this hall and staircase — copied exactly. At the top, small in the frame, stands the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in a heather-green jumper and charcoal skirt, in the one pool of warm light from the landing lamp. Her right hand grips the newel post, her left hand at her chest; she is looking down the stairs, mouth open mid-word, the face lit, tired. Two plain shopping bags at the foot of the bottom step, near frame; every step bare. Low-key night: one warm 2800K lamp on the landing, the hall below in deep blue-grey shadow, high contrast. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
+ "script_line": "Just leave it by the stairs, love. I’ll get it later.",
+ "refs": [
+  {
+   "kind": "location",
+   "label": "Her house — hall and stairs from the front door",
+   "ref": "stryde-half-my-age__P-HOUSE",
+   "job": "cc27b514-c130-4cc5-abec-f01c18368e62",
+   "role": "Image 1"
+  },
+  {
+   "kind": "character",
+   "label": "Her — cast sheet (face, hair, build)",
+   "ref": "stryde-half-my-age__N-HER",
+   "job": "30fd2bc8-17e3-4e27-b2cf-8225e00b088c",
+   "role": "Image 2"
+  }
+ ],
+ "face": true,
+ "body": true,
+ "room": true,
+ "product": false,
+ "match": null,
+ "edit_of": null,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "model": "gpt_image_2_5 · sunburst · high · 2k · 9:16",
+ "role": "master",
+ "motion_plan": "From this frame: she keeps her right hand on the newel post and calls down the line; she stays on the landing.",
+ "scene": 2,
+ "taste": [
+  "HT02",
+  "HT04",
+  "HT09",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "generation": 2,
+ "fix_note": "I WANT NEW ONES IN SCENE TWO MORE EMOTIONAL CAMERA ANGLES I WANT THE BEST NETFLIX STYLE CINEMATIVE"
+}
