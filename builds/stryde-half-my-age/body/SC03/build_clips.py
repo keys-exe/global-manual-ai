@@ -57,6 +57,9 @@ DOORWAY_GEO = ("THE ROOM FROM THE WINDOW SIDE, the same in both shots of this ex
               "toward the bedroom door. The chest of drawers is beside the camera under the window; the open bedroom door is in the far wall on the RIGHT half of the frame, the tall dark wardrobe "
               "beside it on the right; the bed with the pale green candlewick bedspread runs along the LEFT of the frame. She stands at the chest of drawers in the near frame, side-on to the camera, "
               "facing the chest, with her back to the door. He stands IN the open doorway on the threshold, never inside the room, and looks straight across the room AT HER the whole time.")
+DOORWAY_GEO_REV = ("THE ROOM FROM THE DOOR, exactly as the bedroom plate shows it: the open door and the landing at the near LEFT, the tall dark wardrobe along the left wall, the chest of drawers "
+                   "under the window in the middle of the far wall, the bed with the pale green candlewick bedspread on the RIGHT. He stays on the threshold, never inside the room; "
+                   "she stands at the chest of drawers across the room with her back to the door; he looks across the room AT HER the whole time.")
 STATIC = "no sliding, no gliding, no drifting across the floor, no feet skating, no camera push, no zoom"
 F6 = ("Camera pulling back on a dolly, already moving on the first frame: a slow, steady pull away from the subject covering about 60 centimetres across the whole clip, "
       "perfectly level, with no bounce and no sway, revealing more of the room around them as it goes. The subject stays in place and never walks while the camera moves. Still pulling back on the final frame.")
@@ -181,29 +184,29 @@ SHOTS.append(dict(beat="SC03-SH06", kind="broll", duration=5, line="", vo="L023 
            {"risk": "the drawer shuts cleanly (the line needs it proud)", "prevented_by": "stops a few centimetres proud, a strap caught, negative"},
            {"risk": "the brace changes", "prevented_by": "brace card as Image5"}]))
 
-SHOTS.append(dict(beat="SC03-SH07", kind="dialogue", duration=4, line=L025, subject_motion="still", gen=2,
-    fix="user (chat): \"THIS TWO SHOULD BE CONNECTED AND HUSBAND SHOULD BE LOOKING FROM THE DOORWAY INTO THE BEDROOM LOOKING TO HER\" — v1 framed him alone, from inside, looking at the drawer, in the Scene 2 cardigan → v2 is a two-shot: her in the near frame at the chest, him in the doorway looking at her (HT24), the same set-up as SH08",
+SHOTS.append(dict(beat="SC03-SH07", kind="dialogue", duration=4, line=L025, subject_motion="still", gen=3,
+    fix="user (chat): \"THIS TWO SHOULD BE CONNECTED AND HUSBAND SHOULD BE LOOKING FROM THE DOORWAY INTO THE BEDROOM LOOKING TO HER\" (go: \"FIX ALL THESE\") — v2 put him inside the room beside the chest: the bedroom plate is shot from the doorway and Seedance kept that viewpoint, so a camera written at the window lost → v3 is shot from the plate's own viewpoint, over his shoulder on the threshold, into the room at her; SH08 (v2, the window side) is its reverse",
     files=["C3", "N", "L-BEDROOM", "OUT-C3-B3", "OUT-N-B3", "INFO-DRAWER"], audios=["C3"],
     title="Scene 3 · \"That drawer won’t shut soon.\"",
     prompt=" ".join([
         manifest([("@image1", SHEET("the husband", HUS_B3)), ("@image2", SHEET("Her", HER_B3)), ("@image3", BEDROOM), ("@image4", CARD_C3), ("@image5", CARD_N), ("@image6", CARD_DRAWER),
                   ("@audio1", VOICE("the husband"))]),
-        SERIES, LOOK, INHERIT, BEDROOM_EVE, DOORWAY_GEO,
-        f"THE SHOT: a medium two-shot at standing eye level: in the near frame on the left, soft, Her, {HER_ID}, in {HER_B3}, in profile at the chest of drawers, looking down at its bottom drawer, "
-        f"which stands proud by a few centimetres; across the room, sharp, in the open doorway on the right half of the frame, the husband, {HUS_ID}, in {HUS_B3}, "
-        "his left hand resting on the door frame, the dim landing behind him; the bedside lamp's warm light on his face.",
+        SERIES, LOOK, INHERIT, BEDROOM_EVE, DOORWAY_GEO_REV,
+        f"THE SHOT: an over-the-shoulder two-shot at his eye level, from just behind him on the landing: in the near frame on the LEFT, the husband, {HUS_ID}, in {HUS_B3}, "
+        "stands on the threshold of the open bedroom door, seen from behind his right shoulder, his face turned in three-quarter profile toward the room, his left hand on the door frame beside the brass handle; "
+        f"across the room, under the window, Her, {HER_ID}, in {HER_B3}, stands at the chest of drawers with her back to him, looking down at its bottom drawer, which stands proud by a few centimetres.",
         "He looks across the room at her, at her back and the drawer, and says softly: \"" + L025 + "\" A small breath out through the nose at the end, half a smile that doesn't stay. She does not turn.",
         F2, PHYS,
         "While the line is spoken, the husband keeps doing one thing with their hands: his left hand resting on the door frame, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
         state("THE HUSBAND", "soft worry, in the outfit of his card, on the bedroom threshold, looking at her", "nothing"),
-        "FOCUS: the husband's nearest eye is in sharp focus; Her in the near frame falls soft. The blur is optical: soft and round, never smeared.",
+        "FOCUS: the husband's profile is in sharp focus; Her across the room is a little soft. The blur is optical: soft and round, never smeared.",
         dialogue("the husband", L025, VOICE_C3, "he has watched her drop another brace in and tries to make it light. Speaking to his wife across the room, at the chest of drawers.",
                  "teases to cover the worry. Opens light; turns on 'soon', where the smile goes; exits looking at her. Stress on 'won’t'.",
                  "soft and gruff, a little quiet for the late evening, matching the face in this shot.",
                  "he is worried there is nothing left to try, which leaks only through the smile not staying."),
         AUD,
-        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no cardigan, no checked shirt, no stepping into the room, no looking away from her, no second door", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    risks=[{"risk": "the two read as separate shots again (the user's Fix)", "prevented_by": "both in one frame, the DOORWAY_GEO set-up shared with SH08, his eyline on her written (HT24)"},
+        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no cardigan, no checked shirt, no stepping into the room, no standing by the window, no looking away from her", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    risks=[{"risk": "the camera moves into the room and he follows (v2)", "prevented_by": "the plate's own doorway viewpoint, him on the threshold in the near frame, 'no stepping into the room', 'no standing by the window'"},
            {"risk": "the Scene 2 outfit returns (v1)", "prevented_by": "his B3 card as Image4, cardigan/checked-shirt negatives"},
            {"risk": "he walks into the room", "prevented_by": "on the threshold, hand on the frame, negative"}]))
 
@@ -232,8 +235,8 @@ SHOTS.append(dict(beat="SC03-SH08", kind="dialogue", duration=4, line=L026, subj
            {"risk": "she turns to him", "prevented_by": "'does not turn round', eyes down, negative"},
            {"risk": "the husband speaks her line", "prevented_by": "only her voice master as Audio1, negative"}]))
 
-SHOTS.append(dict(beat="SC03-SH09", kind="dialogue", duration=7, line=L028, subject_motion="still", gen=2,
-    fix="user (chat): \"HERE SHE IS NOT USING THE SAME PHONE AS THE NEXT SHOT\" — v1 a cream cordless handset, SH10 a slim gold smartphone → v2 uses SH10's phone, named the same way in both", files=["N", "L-BEDROOM", "OUT-N-B3"], audios=["N"],
+SHOTS.append(dict(beat="SC03-SH09", kind="dialogue", duration=7, line=L028, subject_motion="still", gen=3,
+    fix="user (chat): \"HERE SHE IS NOT USING THE SAME PHONE AS THE NEXT SHOT\" — v1 a cream cordless handset, SH10 a slim gold smartphone → v2 uses SH10's phone, named the same way in both; v2 had the phone right but dressed her in a green crew-neck jumper → v3 keeps the phone and holds the outfit card: the buttoned slate-grey cardigan named with its buttons and collar, jumper/green negatives", files=["N", "L-BEDROOM", "OUT-N-B3"], audios=["N"],
     title="Scene 3 · The sister on the phone — \"Course, love. Easier.\"",
     prompt=" ".join([
         manifest([("@image1", SHEET("Her", HER_B3)), ("@image2", BEDROOM), ("@image3", CARD_N), ("@audio1", VOICE("Her"))]),
@@ -244,6 +247,7 @@ SHOTS.append(dict(beat="SC03-SH09", kind="dialogue", duration=7, line=L028, subj
         "Then she answers, gently, and it costs her: \"" + L028 + "\"",
         F2, PHYS,
         "While the line is spoken, Her keeps doing one thing with their hands: her right hand holding the phone to her ear, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
+        "HER OUTFIT, exactly the card: the buttoned slate-grey wool cardigan with its row of small buttons down the front, the cream blouse's small round collar lying over its neckline — the same cardigan as every other shot of this evening.",
         state("HER", "tired, in the outfit of the card, on the bed edge with the phone", "nothing"),
         "FOCUS: the nearest eye of Her is in sharp focus; the room behind falls soft. The blur is optical: soft and round, never smeared.",
         dialogue("Her", L028, VOICE_N, "her sister has just suggested the garden centre because it is all on one level. Speaking into the phone.",
@@ -251,7 +255,7 @@ SHOTS.append(dict(beat="SC03-SH09", kind="dialogue", duration=7, line=L028, subj
                  "soft and warm, a little tired, matching the face in this shot.",
                  "she minds that their Sundays are planned around their knees, which leaks only through her eyes closing on 'Easier'."),
         AUD,
-        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no cordless handset, no landline, no lit screen, no speaking before the fourth second, no second voice", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no jumper, no green, no pullover, no cordless handset, no landline, no lit screen, no speaking before the fourth second, no second voice", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "she speaks during the sister's line", "prevented_by": "four listening seconds written, negative; the sister's line is laid in the edit"},
            {"risk": "a second voice generated", "prevented_by": "only her voice master attached, second-voice negative"},
            {"risk": "a different phone from SH10 (the user's Fix)", "prevented_by": "PHONE named identically in SH09 and SH10, handset/landline negative"}]))
