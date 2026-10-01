@@ -133,10 +133,23 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   climbing away from the low viewpoint, hands free), HK-01b v1 (5.04 s — the pump and trainer climbing through the balusters), HK-02a v1 (6.04 s — the
   daughter climbing toward the high lens, face up). All To check (`clips/`, contact sheets beside). Kling 43,851 after (128 for the three).
 
+- same session, ~15:45 UTC — user **"hk01 a and b should be a different location cause its woman half her age should be outside"**: HK-01a and HK-01b
+  moved to the **church front steps (P5)** — the same Sunday (N-D4, church dress + the wide-brim hat per the wardrobe map), two one-off women in their
+  thirties on the steps below her (HT05: the stakes in the picture). `actmap.py` rows rewritten (L-CHURCH, open-sky light; angles.py PASS), STEP4_5 /
+  `docs/actmap` re-synced. HK-01a = an image edit of P5 (HT17, Image 1 = the plate, Image 2 = N's sheet); HK-01b = feet CU on the steps with P5 as the
+  reference (`hooks/<BEAT>.v6.prompt.txt`, PASS). The home-stairs clips on both cards are superseded — kept as versions; new clips follow the new picks.
+
+- same session, ~15:40–15:55 UTC — **HK-01a/b church pairs landed** (v5/v6 on HK-01a, v9/v10 on HK-01b, To check; the home-stairs picks and clips stay
+  as versions on the cards — their files are still used by the clip versions, so not moved). Seen: N in the hat climbing past two younger women on the
+  P5 steps; the feet CU on the concrete steps with the sandals. **HK-02a clip confirmed** by the user. **HK-03a** Fix "this should be at the second
+  floor": v7 = an image edit of the user's confirmed HK-02a v7 (the view down the flight from the landing — the second floor the user confirmed), the
+  mother's shoulder in the near foreground (OTS from the landing), the daughter on the top step (`hooks/HK-03a.v7.prompt.txt`, PASS; actmap row:
+  high · ots · through, angles.py PASS). v11/v12 To check, v9/v10 to Old. Higgsfield 9,668.15 after (shared account).
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator never sings to camera (default) vs two bookends · F4 "Stryde." · F10 Mode 2 sheet amendment / true Pro route on Kie · F12 BPM · F13 clipped master.
 
 ## Next
-**Waiting on:** the HK-03a v5 pick, and the Confirms on the three hook clips (HK-01a v2, HK-01b, HK-02a). Then the HK-03a clip; then the body acts. Then their clips (no end frames — waived; §35A ≤ 1,000 chars, preflight PASS); then the body acts in order; CapCut block with lyric captions and the outro end card.
+**Waiting on:** picks on HK-01a (church, v5/v6), HK-01b (church, v9/v10) and HK-03a (second floor, v11/v12); HK-02a image + clip confirmed. Then the HK-01a/01b/03a clips; then the body acts. Then their clips (no end frames — waived; §35A ≤ 1,000 chars, preflight PASS); then the body acts in order; CapCut block with lyric captions and the outro end card.
 
 (Earlier plan, done:) steps 4–5 (property sheet + 16:9 Pixar plates on nano_banana_pro: house stairs/landing/kitchen, reception, store checkout, church steps, street; act map on the song's clock — E6 lengths from `work/lyrics.timed.json`, cuts on 3–4 beats, `angles.py` PASS; wardrobe map). No voice stage. Then hook (0–15.5 s) at step 6, body acts at step 7, CapCut block with lyric captions.
