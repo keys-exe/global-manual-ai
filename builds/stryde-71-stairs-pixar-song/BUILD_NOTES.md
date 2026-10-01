@@ -104,6 +104,12 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   looking down" would have had to invent the wall again. v5/v6 = the new A/B; v3/v4 to Old. `fix_patterns.py` run (27 notes): the repeating note on this
   build is "use the location / connected to P0" (P1 ×3, HK-02a, HK-03a) — already HT17, now applied as edits of the confirmed frame; no new rule.
 
+- same session, ~14:55 UTC — the six v3 Fix renders landed after ~65 min in Higgsfield's queue (the user asked for Kie if Higgsfield faulted; it cleared
+  before a reroute was needed). v5/v6 on the Current board as To check, v3/v4 on Old. Seen: every render keeps the confirmed frame's camera, staircase,
+  photo wall and both women (the three faults are gone), but the model kept the women low on the flight — HK-01b is a wide, not the feet close-up;
+  HK-02a has the daughter at the newel with the mother mid-flight; HK-03a has the mother a few steps up turning back, the daughter at the foot. The
+  user's picks decide. Higgsfield balance 10,091.15 (shared account — other users' renders move it between our batches).
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 sung claims to confirm · F2 full Mode 2 (locked) vs hybrid · F3 narrator never sings to camera (default) vs two bookends · F4 "Stryde." · F10 Mode 2 sheet amendment / true Pro route on Kie · F12 BPM · F13 clipped master.
 
