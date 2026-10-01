@@ -85,3 +85,8 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
 - User: "they should be at the 2nd floor not at the bottom cause the next line is VO: … I'd just stay upstairs" → SH05/SH06 moved to the landing upstairs: he brings the tea up, she takes it at her bedroom door (new LANDING scene block; L-STAIRS plate) (L12).
 - Seedance 2.5 on Kie, one render each: SH03 v4 (378 cr), SH04 v2, SH05 v2, SH06 v2 (252 cr each). Both lines transcribe verbatim. Replaced versions moved to Old (SH03 v3, SH04/05/06 v1). All four on the board as To check.
 - Agent's look (not a verdict): SH04 shows her standing at the foot of the stairs facing the camera rather than a mid-flight profile stepping backwards; SH06 has the front door and hall pendant behind her, so it may read as downstairs. The user decides.
+
+## 2026-10-01 — SC02 SH05/SH06 moved to the kitchen
+- User: "lets do this at the kitchen where he is wating for the main character" → the tea moment is now in the kitchen (L-KITCHEN plate): he has waited there with her tea; she comes in from the hall after the backwards descent (SH03/SH04). New KITCHEN_SC scene block; act map updated. Third generation of each shot, at the user's call.
+- Seedance 2.5 on Kie: SH05 v3, SH06 v3 (252 cr each). Transcripts: "Sleep all right?" / "Fine, love." Landing versions (v2) moved to Old. Both To check.
+- Agent's look (not a verdict): the kitchen light reads as warm sunny daylight (the plate's afternoon light) rather than the cold grey morning of SH03/SH04.
