@@ -3,31 +3,33 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"b19b\",\"subject\":\"A white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt and a mid-blue denim skirt, at the top of her carpeted stairs coming DOWN towards the camera, facing forwards, her hand light on the honey oak handrail, a black STRYDE strap seated just below the kneecap of the leg on the left of the frame, the other knee bare, white plimsolls. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already stepping on the first frame: she steps down one stair towards the camera, facing forwards, easy and unhurried — her foot lands on the stair below, about a second and a half — then her weight settles onto it, her hand sliding lightly along the rail. The strap stays exactly where it is — rigid, keeping its shape, size and wordmark, moving only as one piece with the knee. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair and fabric lag a little; the strap never moves; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no strap moving, no strap sliding, no strap changing shape, no strap appearing on the bare knee, no second strap, no stumbling, no hurrying, no going up the stairs, no looking into the lens, no camera movement, no extra legs, no extra hands, no music, no speech, no slow motion\"}",
- "duration": 4,
+ "prompt": "{\"shot\":\"b19b\",\"subject\":\"A white British woman of sixty-nine with soft white hair, in a navy-and-white striped T-shirt and a mid-blue denim skirt, at the top of her carpeted stairs facing down towards the camera, NOT holding the banister, her hand on the right of the frame pressed flat on the duck-egg blue wall; a black STRYDE strap seated just below the kneecap of the leg on the left of the frame, the other knee bare. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already stepping on the first frame: she steps down one stair with the strapped leg, easy and sure, about a second; then, as her weight comes onto the bare knee for the next step, she winces a little, slows, and presses her hand harder against the wall to steady herself — about two seconds. Her other hand stays free, away from the banister. The strap stays exactly where it is — rigid, keeping its shape, size and wordmark. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair and fabric lag a little; the strap never moves; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no hand on the banister, no grabbing the handrail, no falling, no stumbling, no strap moving, no strap on the bare knee, no second strap, no going up the stairs, no exaggerated pain, no looking into the lens, no camera movement, no extra legs, no extra hands, no music, no speech, no slow motion\"}",
+ "duration": 5,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "/home/user/global-manual-ai/builds/stryde-what-changed/broll/B19b_v4.png",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-what-changed/broll/B19b_v5.png",
  "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,
  "subject_motion": "travels",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "generation": 2,
  "risks": [
   {
-   "risk": "the strap jumps to the other knee",
-   "prevented_by": "the strap placed by leg in subject; 'no strap appearing on the bare knee, no second strap'"
+   "risk": "her hand goes to the banister",
+   "prevented_by": "hand pressed on the wall in the subject; 'no hand on the banister, no grabbing the handrail'"
   },
   {
-   "risk": "legs warp on the stair",
-   "prevented_by": "one step at a countable pace, HOLD-C + NEG-WARP-C"
+   "risk": "the pain is overplayed or she falls",
+   "prevented_by": "'winces a little, slows'; 'no falling, no stumbling, no exaggerated pain'"
   },
   {
-   "risk": "the camera travels with her",
-   "prevented_by": "locked-off tripod clause, 'no camera movement'"
+   "risk": "the strap jumps to the bare knee",
+   "prevented_by": "strap placed by leg; 'no strap on the bare knee, no second strap'"
   }
  ],
- "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)",
+ "fix_note": "video v1: she held the banister and stepped easily on both legs → new frame (v5, user-confirmed) with no hand on the banister and the other hand on the wall; motion: strapped step easy, bare-knee step makes her wince and lean on the wall",
+ "user_go": "user: Fix note on video v1 + 'confnirm' on image v5 (2026-10-01)"
 }
