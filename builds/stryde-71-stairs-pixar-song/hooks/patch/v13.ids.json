@@ -1,0 +1,24 @@
+{
+ "assets": {
+  "HK-03a@v13A": "bc9e0b496c4d15f18a726f6db9ed3112",
+  "HK-03a@v13B": "85f73bb32b6fdc22dbdb7f590a63cf30"
+ },
+ "jobs": {
+  "HK-03a@v13A": "3556349f-c5f6-4bb2-b63e-e3a6b5f6fcee",
+  "HK-03a@v13B": "2b8b726e-719b-4ff3-8eaf-ec80fb4c83d1"
+ },
+ "stamp": {
+  "HK-03a@v13A": "164610",
+  "HK-03a@v13B": "164610"
+ },
+ "old": {
+  "fb633c07c9c8a65d0e484f9f911359cb": "0a298122d5e74895068fb93d1ed89cb6",
+  "06980b30c71a6d0f937c2123467c3e6f": "40b5aa35ebcfc6732f9251f58378fc6b"
+ },
+ "ifv": {
+  "HK-03a": 26
+ },
+ "oldv": {
+  "HK-03a": 7
+ }
+}

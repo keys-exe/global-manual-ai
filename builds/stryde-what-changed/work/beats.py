@@ -2147,6 +2147,52 @@ B["HK1-b2"] = (NB2, [], anat(
     .replace("no second limb, ", "").replace("no people, ", "")
     .replace(", the limb falling away out of frame at both ends", ", the feet on the floor").replace("no hands, ", ""))
 
+# ── 2026-10-01 B18b board Fix "GIVE ME DIFFERENT BROLL HERE, MAKE SURE PRODUCT IS RIGHT" (v4: wide, coming down, straps small and
+# redrawn). New shot for "They stop planning the stairs before they get to them.": built from the confirmed B22a v4 so its two approved
+# straps carry over, front-on and large — she walks straight onto the bottom stair mid-stride, no pause, no hand on the banister.
+REFS.update({"B22AV4L": ("B22a v4 — confirmed, the approved straps (Image 1)", "../broll/B22a_v4.png")})
+B["B18b"] = (NBP, ["B22AV4L", "R1", "P1"], (
+    "Edit Image 1. Keep BOTH straps EXACTLY as they are in Image 1 — the approved product: the same matte-black shells, the two "
+    "pointed peaks and crisp notch on each with the kneecap seated in it, the chrome slides, the grey lowercase \"stryde\" on each, "
+    "the same size on the leg, one just below EACH kneecap, front-on to the camera, nothing redrawn. Keep her pale legs, the mid-blue "
+    "denim skirt and the white canvas plimsolls. Change the moment: the camera now sits on her staircase a couple of stairs up, level "
+    "with her knees, looking straight out at her as she walks towards it from the hall — mid-stride, not slowing, her right foot already landing "
+    "on the bottom stair and her left heel lifting off the hall floor behind, both knees still front-on with their straps large in "
+    "the middle of the frame. Framed from the skirt hem to her feet, the bottom two stairs and the hall floor around her. She is the "
+    "same woman as in Image 2; her hall and stairs are the ones in Image 3 — oatmeal carpet, white spindles, warm afternoon light. Her "
+    "hands are not in frame. A real phone photo.\n\n"
+    "AVOID: no redrawn straps, no band showing through the notch, no flat peaks, no gap between kneecap and notch, " + P.NEG_WORDMARK +
+    ", no capital letters, no small straps, no third strap, no hand on the banister, no hand in frame, no face, no pausing, no looking "
+    "down at the stairs, no extra legs"))
+
+# ── 2026-10-01 B08-BR board Fix "WRONG WOMAN, FIX THIS" (v1: a longer blonde-white bob, a bigger build — not Maureen). Edit of v1: the
+# hall, framing and pose stay; the woman becomes the R1 cast sheet seen from behind (short white layered crop, slight build, rounded back).
+REFS.update({"B08BRV1L": ("B08-BR v1 — the shot to edit (Image 1)", "../broll/B08-BR_v1.png")})
+B["B08-BR"] = (NB2, ["B08BRV1L", "R1"], (
+    "Edit Image 1. Keep the hall, the stairs, the light, the camera, the framing and her walking pose exactly as they are. Change ONLY "
+    "the woman so she is THE SAME WOMAN as in Image 2 (her character sheet), seen from behind exactly as in the sheet's back view: a "
+    "white British woman of sixty-nine, SHORT AND SLIGHT with narrow shoulders and a small rounded upper back; soft pure-white hair in a "
+    "SHORT LAYERED CROP lifted at the crown, the nape short and showing her neck — no bob, no blonde, no hair over the collar; thin pale "
+    "legs with bony knees. She keeps the same clothes as in Image 2: a dusty-pink cardigan, the navy-and-white striped hem showing below "
+    "it, the navy A-line skirt above the knee, white canvas plimsolls. Her face is not visible. A real phone photo.\n\n"
+    "AVOID: no bob haircut, no blonde or yellow hair, no hair touching the collar, no broad shoulders, no tall build, no face, no change "
+    "to the hall, no second person"))
+
+# ── 2026-10-01 B18b Fix "WRONG PRODUCT AND SHOULD BE GOING DOWN TO STAIR" (v5: changing the camera made the model redraw both straps
+# as plain bands). B22a v4 already shows her standing on her stairs facing down the flight, front-on, both approved straps large —
+# so keep its camera, framing and straps untouched and change ONLY her step: one foot coming down onto the stair below.
+B["B18b"] = (NBP, ["B22AV4L"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — the camera, the framing, the light, the carpeted stairs and white "
+    "spindles, the denim skirt, her pale legs and BOTH STRAPS. The two straps are the real product: keep them pixel for pixel — the "
+    "matte-black shells with two pointed peaks and the crisp notch under each kneecap, the chrome slides, the grey lowercase "
+    "\"stryde\" on each, the same size and the same place just below each kneecap. Do not redraw them. Change ONLY her step: she is "
+    "walking DOWN the stairs towards the camera — her right foot (on the left of the frame) is coming down onto the stair below, its "
+    "white plimsoll just landing on the edge of that stair, that knee bending a little; her left foot stays on the stair above, taking "
+    "her weight. Both knees stay front-on with their straps facing the camera. A real phone photo.\n\n"
+    "AVOID: no redrawn straps, no plain bands, no neoprene, no straps without peaks, no band showing through the notch, "
+    + P.NEG_WORDMARK + ", no capital letters, no small straps, no third strap, no change of camera angle, no hands in frame, no face, "
+    "no extra legs"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:

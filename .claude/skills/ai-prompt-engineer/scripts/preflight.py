@@ -48,6 +48,7 @@ Beat images (§6A, V7.70.0; first-render rules V7.74.0) — a B-roll or hook sta
     "edit_of": null | "<asset id or file of the plate / frame being edited>",   # required when match is set; the prompt opens as an edit ("Keep this photo exactly…")
     "taste": ["HT03", "FP02"],         # House Taste / product fix-pattern rules applied (§34A)
     "anatomy": false,                  # an anatomy / mechanism beat (Nano Banana)
+    "anat_style": null | "S1".."S7",   # anatomy beats: the act-map row's style (§12A-1, V7.81.0); S5 (physical model) routes as realistic
     "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = two NB Pro
     "alt_reason": null | "why nano_banana_2 runs instead of Pro (the alternative, V7.72.1)"
   }
@@ -186,6 +187,14 @@ def run_image(c):
     check("nothing named outside the frame but a body part (§6A rule 7)", not oof, oof[0].group(0) if oof else "")
     pair = [str(m).lower() for m in (c.get("pair") or [])]
     anatomy = bool(c.get("anatomy"))
+    if anatomy:   # §12A-1 (V7.81.0): a style per anatomy beat, never the glass body by habit
+        st = c.get("anat_style")
+        check("anatomy style named (S1-S7, §12A-1 V7.81.0)", st in {f"S{n}" for n in range(1, 8)}, f"anat_style {st!r}")
+        if st and st != "S1":
+            s1 = re.search(r"Premium 3D anatomical visuali[sz]ation|near-black (field|background)|glass-like (body|outer|shell)", p, re.I)
+            check(f"no S1 glass-body world on an {st} beat (§12A-1)", not s1, s1.group(0) if s1 else "")
+        if st == "S5":
+            anatomy = False   # a physical model is a Mode 1 capture: routed like realistic work
     check("A/B pair: two renders (§5)", len(pair) == 2, f"pair {pair}")
     if anatomy or mode in (2, 3, 5):
         why = "anatomy" if anatomy else f"Mode {mode}"

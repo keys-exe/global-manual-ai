@@ -31,18 +31,20 @@ L022 = "If I’m being honest, some days I wasn’t going down them at all. I’
 GO = "i want new ones the all of theme are not good (scene 2)"
 GO4 = "use gpt image 2 and not sunburst re do all the scene 2"
 FRAMES = [
-    dict(beat="SC02-SH01", line=L017, refs=["P-HOUSE", "N"], face=True, body=True, match=None, role="key", gen=4,
-         fix="she should be at the very top of the stairs",
-         motion="From this frame: she calls the line down the stairs, a small forced smile on 'love', then her eyes drop to the stairs below; her right hand stays on the newel post; she does not step down.",
+    # Fresh start (user 2026-10-01: "redo the shot 1 of scene 2, fresh start, cause everything you gave me is not correct"):
+    # built only from the plan — act map SC02-SH01 ("from the hall looking up at her on the landing — she is stranded up there",
+    # FULL, night: hall pendant + landing lamp), wardrobe B1 = her cast-sheet outfit (green jumper, charcoal skirt, black shoes —
+    # never slippers), and the confirmed hall plate edited in place (HT17), the camera left exactly where the plate's is.
+    dict(beat="SC02-SH01", line=L017, refs=["P-HOUSE", "N"], face=True, body=True, match="plate", edit_of="P-HOUSE v1", role="key", gen=7,
+         fix="re do the shot1 of the scene 2 fresh start cause everything you gave me is not correct",
+         motion="From this frame: she stays on the landing, right hand on the newel post, and calls the line down to the hall; on 'later' she looks away from the stairs; she does not step down.",
          prompt=" ".join([
-             f"For the line \"{L017}\": at night she covers her fear with a light voice, stranded at the very top of her stairs.",
-             "A low shot from halfway up the flight looking straight up the stairs, 85mm lens: the last five carpeted steps with brass stair rods rise toward her, soft in the near foreground, and she stands at the very top, on the landing's edge, both slippered feet on the landing at the top step.",
-             f"She is {HER}, in a heather-green jumper and charcoal skirt; top half of the frame, sharp.",
-             "Her right hand grips the top newel post, knuckles tight; her left hand rests flat on her chest.",
-             "She is looking down the stairs past the camera, calling, a small brave smile that does not reach her eyes.",
-             "Image 1 is this staircase and landing: the magnolia wall and framed photographs behind her, out of focus.",
-             "Night: one warm 2800K landing lamp to her right lights half her face; the other half in deep shadow; the steps below dark.",
-             PLAIN, LOOK])),
+             f"For the line \"{L017}\": Keep this photo exactly as it is — Image 1, the hall seen from the front door: the staircase rising straight ahead along the left-hand wall with its framed photographs, the dark banister on its right, the landing and its lamp at the top, the telephone table with only the telephone, the barometer, the doorways on the right. The camera stays exactly where it is; recompose it as a tall vertical frame centred on the staircase.",
+             "Change only three things.",
+             "It is night: the hall's glass pendant and the landing lamp are lit, warm 2800K; the door glass is dark.",
+             "Add the woman from Image 2, exactly as on her sheet — face, steel-grey bob with its heavy fringe, small build, and the same clothes: the green crew-neck jumper, charcoal skirt and black low-heeled shoes. She stands on the landing at the very top of the stairs, small in the frame, facing down the flight toward the camera, her right hand on the top newel post, her left hand at her side; she is looking down the stairs, calling, tired.",
+             "Two plain shopping bags stand on the hall carpet at the foot of the bottom step.",
+             PLAIN])),
     dict(beat="SC02-SH03", line=L019, refs=["L-STAIRS", "N"], face=True, body=True, match=None, role="key", gen=3,
          motion="From this frame: she lowers her weight down one step backwards, both hands sliding a little down the banister, and breathes out through her mouth; one step in the clip.",
          prompt=" ".join([

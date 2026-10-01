@@ -2392,11 +2392,11 @@
   "subject": "R1",
   "location": "L-M-STAIRS",
   "story_day": "M-D2",
-  "framing": "WIDE from the foot of the stairs: Maureen coming down facing forwards, Stryde on both knees, both hands down and empty, an easy bright smile (fixes: both knees; positive, no banister; 'keep her hands down, don't hold anything')",
-  "action": "one step down, facing forwards",
+  "framing": "knee-level, front-on: Maureen walking DOWN her stairs towards camera, one foot landing on the stair below, Stryde front-on and large on both knees (Fixes 2026-10-01 'MAKE SURE PRODUCT IS RIGHT', 'WRONG PRODUCT AND SHOULD BE GOING DOWN TO STAIR'; edit of the confirmed B22a v4, camera and straps kept)",
+  "action": "one easy step down, without looking at her feet",
   "pace": "one step, about a second and a half",
   "camera": "locked off",
-  "staging": "stairs: facing forwards, full figure small in frame, camera still at the foot",
+  "staging": "stairs: going down, front-on, skirt hem to feet, camera still",
   "pin_end": "no",
   "max": 6,
   "product": "worn",
@@ -2408,11 +2408,11 @@
   "notes": "",
   "duration": "pending-master",
   "angle": {
-   "height": "low",
+   "height": "eye",
    "side": "front",
    "fg": "clean",
-   "scale": "WIDE",
-   "why": "low from the foot = she comes down to us, resolve"
+   "scale": "MS",
+   "why": "level with her knees = she comes down to us without a second thought"
   },
   "focus": {
    "plane": "deep",

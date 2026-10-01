@@ -46,6 +46,18 @@ freshness() {
 
 freshness || true
 
+# 3. Lessons (§34B, user 2026-10-01: "always learn from your mistake"): the latest rules from LESSONS.md,
+#    printed every session so no account repeats a mistake another session already made
+lessons() {
+  local f="${CLAUDE_PROJECT_DIR:-.}/LESSONS.md"
+  [ -f "$f" ] || return 0
+  local n
+  n=$(grep -c '^| L[0-9]' "$f" || true)
+  echo "session-start: LESSONS.md holds $n lessons — read it before changing the system or publishing to a board. Latest:"
+  grep '^| L[0-9]' "$f" | head -5 | awk -F'|' '{gsub(/^ +| +$/,"",$2); gsub(/\*\*/,"",$7); gsub(/^ +| +$/,"",$7); print "  " $2 ": " $7}'
+}
+lessons || true
+
 if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
   exit 0
 fi
@@ -59,3 +71,8 @@ python3 -c "import imageio_ffmpeg, faster_whisper, yt_dlp, gdown, docx, pypdf"
 # trim.py default model; cached so the first trim does not wait on a download
 python3 -c "from faster_whisper import WhisperModel; WhisperModel('base.en', device='cpu', compute_type='int8')" 2>/dev/null \
   || echo "session-start: Whisper model not pre-loaded (downloads on first trim)" >&2
+
+# assemble.py times B-roll cuts with medium.en (V7.80.0, §30H rule 0): 1.5 GB, fetched in the background
+# so the session starts at once and the first assembly does not wait (LESSONS L08)
+nohup python3 -c "from faster_whisper import WhisperModel; WhisperModel('medium.en', device='cpu', compute_type='int8')" \
+  >/dev/null 2>&1 &
