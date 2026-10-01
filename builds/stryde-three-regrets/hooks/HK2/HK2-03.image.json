@@ -2,34 +2,34 @@
  "beat": "HK2-03",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": three separate piles of letters stand in a row on the worn wooden desk, and her hands are laying the last handful onto the third pile, caught mid-placing.\nA close shot from desk height, three-quarter from the front right: the three piles run away from us in a diagonal row, the grey post trays full of letters soft behind them.\nImage 1 is her workroom: the same worn wooden desk, brick wall and sash window, copied exactly.\nIn frame: a woman's hands, fifty-seven, long knuckly fingers, short plain nails, rust-orange needlecord cuffs; exactly three piles of white A4 typed letters of different lengths, some stapled, with long window envelopes, untidy; her right hand holds the last handful just touching the third pile, her left hand rests flat on the desk beside the first pile. The piles fill the lower half of the frame. Nothing else on the desk.\nSoft morning daylight from the sash window, one direction. An ordinary iPhone photo.\nNo fourth pile, no readable text or logos, no handwriting, no face, no extra fingers.",
+ "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": the same woman, room, desk, silver laptop and closed black stryde box as Image 1 — her face exactly as Image 2, grey hair tied back, rust-orange needlecord overshirt over a cream T-shirt, brick wall, soft window light from the left.\nNew camera: closer, in front of her, slightly to her left, at eye level — her head and shoulders fill the upper two thirds of the frame, the open laptop's back edge soft in the lower right foreground, the closed box on the desk beyond it. She has just lifted her eyes from the screen and looks up past the lens to the right, both eyes on a point just off camera, thoughtful, eyebrows slightly raised, lips closed — the look of someone who has read something she did not expect. Her right hand rests on the trackpad, her left forearm on the desk.\nIn frame: one woman, the laptop, the one closed box; every other surface bare. Clothing, walls and laptop lid plain — no lettering, logos or labels except the box's own wordmark; five fingers on each hand.",
  "script_line": "Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.",
- "face": false,
+ "face": true,
  "room": true,
  "product": false,
  "body": true,
  "refs": [
   {
-   "label": "P2-N-WORKROOM plate",
-   "kind": "location"
+   "label": "HK2-02 v10 (her, laptop, box, front three-quarter)",
+   "kind": "plate"
+  },
+  {
+   "label": "TH-HK2 v15 (her face, the room)",
+   "kind": "character"
   }
  ],
- "match": null,
- "edit_of": null,
  "taste": [
-  "HT09",
   "HT12",
+  "HT17",
   "HT18",
   "HT19",
-  "HT21"
+  "HT20"
  ],
  "anatomy": false,
  "pair": [
   "nano_banana_pro"
  ],
- "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call) — CLAUDE.md: never switch a running build to Sunburst or the A/B pair",
- "ref_urls": [
-  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_095745_698faa52-95f7-43c6-97f9-a275cd523628.png"
- ],
- "fix_note": "CHANGE CAMERA ANGLE: v3 was overhead (an edit of the HK2-01 frame, so the same angle as HK2-01) → desk height, three-quarter front, close; the HK2-01 frame left off"
+ "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro); run on Kie (Higgsfield queue stalled today)",
+ "motion_plan": "From this frame: she holds the look past the lens, then a small slow breath out through the nose; the camera holds with a slight sway.",
+ "fix_note": "change it into a more suitable HK for HK2-01 and HK2-02"
 }
