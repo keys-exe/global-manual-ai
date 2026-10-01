@@ -1,0 +1,1331 @@
+{
+  "master_s": 148.39,
+  "min_th_s": 1.5,
+  "edl": [
+    {
+      "beat": "BR-01",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-01.v1.mp4",
+      "phrase": "A patient of mine. Nine years of knee pain",
+      "key": "A",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 0.04,
+      "start": 0.0,
+      "line_end": 2.9583,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "early_s": 0.04,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 3.0
+    },
+    {
+      "beat": "MECH-01",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-01.v1.mp4",
+      "phrase": "Bone on bone on the left, the right one following it",
+      "key": "Bone",
+      "layout": {
+        "type": "split",
+        "broll_pos": "top",
+        "ratio": 0.6
+      },
+      "word_t": 3.26,
+      "start": 3.0,
+      "line_end": 6.0,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 0.948,
+      "early_s": 0.26,
+      "in": 0.0,
+      "flex": true,
+      "skip": 0.4,
+      "end": 6.2083
+    },
+    {
+      "beat": "BR-02",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-02.v1.mp4",
+      "phrase": "Here is what her scan does not show you",
+      "key": "Here",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 6.45,
+      "start": 6.2083,
+      "line_end": 8.5417,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.242,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 8.75
+    },
+    {
+      "beat": "MECH-03a",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-03a.v1.mp4",
+      "phrase": "Two centimetres below your kneecap",
+      "key": "Two",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 9.0,
+      "start": 8.75,
+      "line_end": 13.6667,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.25,
+      "in": 0.0,
+      "flex": true,
+      "skip": 0.4,
+      "end": 11.7917
+    },
+    {
+      "beat": "MECH-03",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-03.v4.mp4",
+      "phrase": "Every step you take lands on it",
+      "key": "Every",
+      "layout": {
+        "type": "split",
+        "broll_pos": "top",
+        "ratio": 0.6
+      },
+      "word_t": 14.2,
+      "start": 13.9583,
+      "line_end": 16.1667,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.242,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 15.9583
+    },
+    {
+      "beat": "MECH-03d",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-03d.v1.mp4",
+      "phrase": "Seventeen times your bodyweight",
+      "key": "Seventeen",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 16.2,
+      "start": 15.9583,
+      "line_end": 18.75,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.242,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 18.5417
+    },
+    {
+      "beat": "BR-04",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-04.v1.mp4",
+      "phrase": "Put your finger under your kneecap and press. That band is the one taking it",
+      "key": "Put",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 18.8,
+      "start": 18.5417,
+      "line_end": 23.0,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "early_s": 0.258,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 23.1667
+    },
+    {
+      "beat": "BR-05",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-05.v1.mp4",
+      "phrase": "Coming down is worse than going up",
+      "key": "Coming",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 23.42,
+      "start": 23.1667,
+      "line_end": 25.2917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.253,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 25.4167
+    },
+    {
+      "beat": "BR-05a",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-05a.v2.mp4",
+      "phrase": "Going up, your muscles lift you",
+      "key": "Going",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 25.66,
+      "start": 25.4167,
+      "line_end": 27.4167,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.243,
+      "in": 0.0,
+      "flex": true,
+      "skip": 0.4,
+      "end": 27.7083
+    },
+    {
+      "beat": "MECH-05",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-05.v2.mp4",
+      "phrase": "and the catch lands on that band",
+      "key": "and",
+      "layout": {
+        "type": "split",
+        "broll_pos": "top",
+        "ratio": 0.6
+      },
+      "word_t": 29.46,
+      "start": 29.2083,
+      "line_end": 31.6667,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.252,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 31.8333
+    },
+    {
+      "beat": "BR-06",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-06.v3.mp4",
+      "phrase": "That is why she came down backwards. Backwards takes the catch out",
+      "key": "That",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 32.1,
+      "start": 31.8333,
+      "line_end": 35.7917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "early_s": 0.267,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 35.875
+    },
+    {
+      "beat": "BR-07",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-07.v1.mp4",
+      "phrase": "That is why the chair took three tries",
+      "key": "That",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 36.14,
+      "start": 35.875,
+      "line_end": 38.0833,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.265,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 38.375
+    },
+    {
+      "beat": "BR-08",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-08.v1.mp4",
+      "phrase": "That is why the good knee started going the same way. She had been leading with it for years",
+      "key": "That",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 38.64,
+      "start": 38.375,
+      "line_end": 43.2083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 6.04,
+      "speed": 1.0,
+      "early_s": 0.265,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 42.9583
+    },
+    {
+      "beat": "BR-09a",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-09a.v1.mp4",
+      "phrase": "And the list of things she said no to got longer every year. The long walk",
+      "key": "And",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 43.22,
+      "start": 42.9583,
+      "line_end": 48.0,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 5.04,
+      "speed": 0.834,
+      "early_s": 0.262,
+      "in": 0.0,
+      "flex": true,
+      "skip": 0.4,
+      "end": 49.0
+    },
+    {
+      "beat": "BR-09c",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-09c.v1.mp4",
+      "phrase": "Her family coming to her instead",
+      "key": "Her",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 49.25,
+      "start": 49.0,
+      "line_end": 50.7917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.25,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 51.125
+    },
+    {
+      "beat": "BR-10",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-10.v2.mp4",
+      "phrase": "It was never how hard she tried",
+      "key": "It",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 51.36,
+      "start": 51.125,
+      "line_end": 52.9583,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.235,
+      "in": 0.0,
+      "flex": true,
+      "skip": 0.4,
+      "end": 53.375
+    },
+    {
+      "beat": "BR-10c",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-10c.v4.mp4",
+      "phrase": "It was where the load was landing",
+      "key": "It",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 55.14,
+      "start": 54.875,
+      "line_end": 56.8333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.265,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 57.0
+    },
+    {
+      "beat": "BR-11a",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-11a.v1.mp4",
+      "phrase": "A sleeve squeezes the whole knee",
+      "key": "A",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 57.24,
+      "start": 57.0,
+      "line_end": 59.0417,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.24,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 59.2083
+    },
+    {
+      "beat": "BR-11b",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-11b.v1.mp4",
+      "phrase": "A hinged brace stops it going sideways, and her knee was never going sideways",
+      "key": "A",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 59.46,
+      "start": 59.2083,
+      "line_end": 63.0,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "early_s": 0.252,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 63.3333
+    },
+    {
+      "beat": "BR-11c",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-11c.v1.mp4",
+      "phrase": "A gel sits on the skin. None of them move the load",
+      "key": "A",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 63.59,
+      "start": 63.3333,
+      "line_end": 66.625,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "early_s": 0.257,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 66.9167
+    },
+    {
+      "beat": "PR-12",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/PR-12.v3.mp4",
+      "phrase": "This does. It is called Stryde",
+      "key": "This",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 67.15,
+      "start": 66.9167,
+      "line_end": 69.8333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.233,
+      "in": 0.373,
+      "flex": true,
+      "skip": 0.4,
+      "end": 69.5833
+    },
+    {
+      "beat": "BR-13",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-13.v1.mp4",
+      "phrase": "It sits two centimetres below the kneecap, on the tendon. It never crosses the joint",
+      "key": "It",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 69.84,
+      "start": 69.5833,
+      "line_end": 74.5,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 6.04,
+      "speed": 1.0,
+      "early_s": 0.257,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 74.8333
+    },
+    {
+      "beat": "MECH-14",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-14.v1.mp4",
+      "phrase": "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee",
+      "key": "A",
+      "layout": {
+        "type": "split",
+        "broll_pos": "top",
+        "ratio": 0.6
+      },
+      "word_t": 75.1,
+      "start": 74.8333,
+      "line_end": 80.4583,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 6.04,
+      "speed": 1.0,
+      "early_s": 0.267,
+      "in": 0.165,
+      "flex": true,
+      "skip": 0.4,
+      "end": 80.7083
+    },
+    {
+      "beat": "BR-14b",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-14b.v6.mp4",
+      "phrase": "The weight gets caught and moved off the worn part before it reaches the joint",
+      "key": "The",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 80.95,
+      "start": 80.7083,
+      "line_end": 84.9583,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "early_s": 0.242,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 85.2917
+    },
+    {
+      "beat": "BR-15",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-15.v2.mp4",
+      "phrase": "The placement is the whole thing. A centimetre too high and it is a sleeve again",
+      "key": "The",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 85.55,
+      "start": 85.2917,
+      "line_end": 89.8333,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "early_s": 0.258,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 89.5417
+    },
+    {
+      "beat": "BR-16a",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-16a.v3.mp4",
+      "phrase": "Thirty four percent less strain. Measured",
+      "key": "Thirty",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 89.79,
+      "start": 89.5417,
+      "line_end": 92.7083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "early_s": 0.248,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 92.7083
+    },
+    {
+      "beat": "BR-16b",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-16b.v2.mp4",
+      "phrase": "Two hundred thousand people wearing one",
+      "key": "Two",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 94.68,
+      "start": 94.4167,
+      "line_end": 97.25,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.263,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 97.0
+    },
+    {
+      "beat": "BR-17a",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-17a.v1.mp4",
+      "phrase": "Ten seconds to put on. No sores, no rolling down,",
+      "key": "Ten",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 97.26,
+      "start": 97.0,
+      "line_end": 102.125,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "early_s": 0.26,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 100.4583
+    },
+    {
+      "beat": "BR-17b",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-17b.v2.mp4",
+      "phrase": "and nobody can see it",
+      "key": "and",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 100.7,
+      "start": 100.4583,
+      "line_end": 102.125,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.242,
+      "in": 0.04,
+      "flex": true,
+      "skip": 0.4,
+      "end": 103.4583
+    },
+    {
+      "beat": "BR-19a",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-19a.v2.mp4",
+      "phrase": "You do not have to take my word for it. One knee only. Leave the other bare",
+      "key": "You",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 112.92,
+      "start": 112.6667,
+      "line_end": 116.2917,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "early_s": 0.253,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 116.125
+    },
+    {
+      "beat": "BR-19b",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-19b.v1.mp4",
+      "phrase": "Go to your own stairs and come down forwards. You will know in a minute",
+      "key": "Go",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 116.36,
+      "start": 116.125,
+      "line_end": 119.9167,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 5.04,
+      "speed": 1.0,
+      "early_s": 0.235,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 120.1667
+    },
+    {
+      "beat": "BR-20",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-20.v2.mp4",
+      "phrase": "Not because the arthritis has gone",
+      "key": "Not",
+      "layout": {
+        "type": "split",
+        "broll_pos": "top",
+        "ratio": 0.6
+      },
+      "word_t": 120.41,
+      "start": 120.1667,
+      "line_end": 122.0417,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.243,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 122.3333
+    },
+    {
+      "beat": "BR-20b",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-20b.v1.mp4",
+      "phrase": "Her scan looks exactly the same as it did in March. I have both of them",
+      "key": "Her",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 122.58,
+      "start": 122.3333,
+      "line_end": 126.5,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "early_s": 0.247,
+      "in": 0.207,
+      "flex": true,
+      "skip": 0.4,
+      "end": 126.1667
+    },
+    {
+      "beat": "BR-20c",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-20c.v2.mp4",
+      "phrase": "Because the load is not landing on that band any more",
+      "key": "Because",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 126.42,
+      "start": 126.1667,
+      "line_end": 130.0833,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "early_s": 0.253,
+      "in": 0.123,
+      "flex": true,
+      "skip": 0.4,
+      "end": 130.0833
+    },
+    {
+      "beat": "PR-22a",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/PR-22a.v1.mp4",
+      "phrase": "Two for one, so you do both knees, which is what she needed",
+      "key": "Two",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 134.91,
+      "start": 134.6667,
+      "line_end": 137.7083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "early_s": 0.243,
+      "in": 0.4,
+      "flex": true,
+      "skip": 0.4,
+      "end": 137.4583
+    },
+    {
+      "beat": "BR-22a2",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-22a2.v1.mp4",
+      "phrase": "Sixty days, and you keep the straps",
+      "key": "Sixty",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 137.7,
+      "start": 137.4583,
+      "line_end": 139.9167,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.242,
+      "in": 0.0,
+      "flex": true,
+      "skip": 0.4,
+      "end": 139.9583
+    },
+    {
+      "beat": "BR-22b",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-22b.v3.mp4",
+      "phrase": "The copies stretch, and a stretched strap stops holding the spot",
+      "key": "The",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 141.7,
+      "start": 141.4583,
+      "line_end": 145.1667,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 4.04,
+      "speed": 1.0,
+      "early_s": 0.242,
+      "in": 0.082,
+      "flex": true,
+      "skip": 0.4,
+      "end": 145.4167
+    },
+    {
+      "beat": "BR-23",
+      "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-23.v2.mp4",
+      "phrase": "Nothing to lose but the pain. Go and do your stairs",
+      "key": "Nothing",
+      "layout": {
+        "type": "full"
+      },
+      "word_t": 145.66,
+      "start": 145.4167,
+      "line_end": 148.2083,
+      "in_spec": null,
+      "peak": null,
+      "max": 6.0,
+      "clip_len": 3.04,
+      "speed": 1.0,
+      "early_s": 0.243,
+      "in": 0.082,
+      "flex": true,
+      "skip": 0.4,
+      "end": 148.375
+    }
+  ],
+  "timeline": [
+    {
+      "kind": "BR",
+      "beat": "BR-01",
+      "layout": "full",
+      "start": 0.0,
+      "end": 3.0
+    },
+    {
+      "kind": "BR",
+      "beat": "MECH-01",
+      "layout": "split",
+      "start": 3.0,
+      "end": 6.208
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-02",
+      "layout": "full",
+      "start": 6.208,
+      "end": 8.75
+    },
+    {
+      "kind": "BR",
+      "beat": "MECH-03a",
+      "layout": "full",
+      "start": 8.75,
+      "end": 11.792
+    },
+    {
+      "kind": "TH",
+      "start": 11.792,
+      "end": 13.958,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "MECH-03",
+      "layout": "split",
+      "start": 13.958,
+      "end": 15.958
+    },
+    {
+      "kind": "BR",
+      "beat": "MECH-03d",
+      "layout": "full",
+      "start": 15.958,
+      "end": 18.542
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-04",
+      "layout": "full",
+      "start": 18.542,
+      "end": 23.167
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-05",
+      "layout": "full",
+      "start": 23.167,
+      "end": 25.417
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-05a",
+      "layout": "full",
+      "start": 25.417,
+      "end": 27.708
+    },
+    {
+      "kind": "TH",
+      "start": 27.708,
+      "end": 29.208,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "MECH-05",
+      "layout": "split",
+      "start": 29.208,
+      "end": 31.833
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-06",
+      "layout": "full",
+      "start": 31.833,
+      "end": 35.875
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-07",
+      "layout": "full",
+      "start": 35.875,
+      "end": 38.375
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-08",
+      "layout": "full",
+      "start": 38.375,
+      "end": 42.958
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-09a",
+      "layout": "full",
+      "start": 42.958,
+      "end": 49.0
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-09c",
+      "layout": "full",
+      "start": 49.0,
+      "end": 51.125
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-10",
+      "layout": "full",
+      "start": 51.125,
+      "end": 53.375
+    },
+    {
+      "kind": "TH",
+      "start": 53.375,
+      "end": 54.875,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-10c",
+      "layout": "full",
+      "start": 54.875,
+      "end": 57.0
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-11a",
+      "layout": "full",
+      "start": 57.0,
+      "end": 59.208
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-11b",
+      "layout": "full",
+      "start": 59.208,
+      "end": 63.333
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-11c",
+      "layout": "full",
+      "start": 63.333,
+      "end": 66.917
+    },
+    {
+      "kind": "BR",
+      "beat": "PR-12",
+      "layout": "full",
+      "start": 66.917,
+      "end": 69.583
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-13",
+      "layout": "full",
+      "start": 69.583,
+      "end": 74.833
+    },
+    {
+      "kind": "BR",
+      "beat": "MECH-14",
+      "layout": "split",
+      "start": 74.833,
+      "end": 80.708
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-14b",
+      "layout": "full",
+      "start": 80.708,
+      "end": 85.292
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-15",
+      "layout": "full",
+      "start": 85.292,
+      "end": 89.542
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-16a",
+      "layout": "full",
+      "start": 89.542,
+      "end": 92.708
+    },
+    {
+      "kind": "TH",
+      "start": 92.708,
+      "end": 94.417,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-16b",
+      "layout": "full",
+      "start": 94.417,
+      "end": 97.0
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-17a",
+      "layout": "full",
+      "start": 97.0,
+      "end": 100.458
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-17b",
+      "layout": "full",
+      "start": 100.458,
+      "end": 103.458
+    },
+    {
+      "kind": "TH",
+      "start": 103.458,
+      "end": 112.667,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-19a",
+      "layout": "full",
+      "start": 112.667,
+      "end": 116.125
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-19b",
+      "layout": "full",
+      "start": 116.125,
+      "end": 120.167
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-20",
+      "layout": "split",
+      "start": 120.167,
+      "end": 122.333
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-20b",
+      "layout": "full",
+      "start": 122.333,
+      "end": 126.167
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-20c",
+      "layout": "full",
+      "start": 126.167,
+      "end": 130.083
+    },
+    {
+      "kind": "TH",
+      "start": 130.083,
+      "end": 134.667,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "PR-22a",
+      "layout": "full",
+      "start": 134.667,
+      "end": 137.458
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-22a2",
+      "layout": "full",
+      "start": 137.458,
+      "end": 139.958
+    },
+    {
+      "kind": "TH",
+      "start": 139.958,
+      "end": 141.458,
+      "zoom": 1.0
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-22b",
+      "layout": "full",
+      "start": 141.458,
+      "end": 145.417
+    },
+    {
+      "kind": "BR",
+      "beat": "BR-23",
+      "layout": "full",
+      "start": 145.417,
+      "end": 148.375
+    }
+  ],
+  "fixes": [
+    {
+      "beat": "MECH-01",
+      "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
+    },
+    {
+      "beat": "MECH-03a",
+      "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+    },
+    {
+      "beat": "BR-09a",
+      "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+    },
+    {
+      "beat": "PR-12",
+      "fix": "gave back 0.03s of the skipped opening (in-point 0.37s)"
+    },
+    {
+      "beat": "BR-20b",
+      "fix": "gave back 0.19s of the skipped opening (in-point 0.21s)"
+    },
+    {
+      "beat": "BR-20c",
+      "fix": "gave back 0.28s of the skipped opening (in-point 0.12s)"
+    },
+    {
+      "beat": "BR-22b",
+      "fix": "gave back 0.07s of the skipped opening (in-point 0.33s)"
+    },
+    {
+      "beat": "BR-23",
+      "fix": "gave back 0.15s of the skipped opening (in-point 0.25s)"
+    },
+    {
+      "beat": "BR-01",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "BR-02",
+      "fix": "HOLD: held to 2.54s on screen"
+    },
+    {
+      "beat": "BR-05",
+      "fix": "HOLD: held to 2.25s on screen"
+    },
+    {
+      "beat": "BR-05a",
+      "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+    },
+    {
+      "beat": "BR-05a",
+      "fix": "HOLD: held to 2.29s on screen"
+    },
+    {
+      "beat": "MECH-05",
+      "fix": "HOLD: held to 2.62s on screen"
+    },
+    {
+      "beat": "BR-07",
+      "fix": "HOLD: held to 2.50s on screen"
+    },
+    {
+      "beat": "BR-09c",
+      "fix": "HOLD: held to 2.12s on screen"
+    },
+    {
+      "beat": "BR-10",
+      "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+    },
+    {
+      "beat": "BR-10",
+      "fix": "HOLD: held to 2.25s on screen"
+    },
+    {
+      "beat": "BR-10c",
+      "fix": "HOLD: held to 2.12s on screen"
+    },
+    {
+      "beat": "BR-11a",
+      "fix": "HOLD: held to 2.21s on screen"
+    },
+    {
+      "beat": "BR-17b",
+      "fix": "gave back 0.36s of the skipped opening (in-point 0.04s)"
+    },
+    {
+      "beat": "BR-17b",
+      "fix": "HOLD: held to 3.00s on screen"
+    },
+    {
+      "beat": "BR-20",
+      "fix": "HOLD: held to 2.17s on screen"
+    },
+    {
+      "beat": "BR-22a2",
+      "fix": "gave back 0.40s of the skipped opening (in-point 0.00s)"
+    },
+    {
+      "beat": "BR-22a2",
+      "fix": "HOLD: held to 2.50s on screen"
+    },
+    {
+      "beat": "BR-23",
+      "fix": "gave back 0.17s of the skipped opening (in-point 0.08s)"
+    },
+    {
+      "beat": "BR-23",
+      "fix": "HOLD: held to 2.96s on screen"
+    },
+    {
+      "beat": "MECH-01",
+      "fix": "gave back 0.04s of the skipped opening (in-point 0.00s)"
+    },
+    {
+      "beat": "MECH-01",
+      "fix": "FLICKER 0.21s: slowed to 0.95x to reach 6.21s"
+    },
+    {
+      "beat": "BR-04",
+      "fix": "FLICKER 0.17s: extended with own footage to 23.17s"
+    },
+    {
+      "beat": "BR-06",
+      "fix": "FLICKER 0.08s: extended with own footage to 35.88s"
+    },
+    {
+      "beat": "BR-09a",
+      "fix": "FLICKER 1.00s: slowed to 0.83x to reach 49.00s"
+    },
+    {
+      "beat": "BR-11b",
+      "fix": "FLICKER 0.33s: extended with own footage to 63.33s"
+    },
+    {
+      "beat": "BR-11c",
+      "fix": "FLICKER 0.29s: extended with own footage to 66.92s"
+    },
+    {
+      "beat": "BR-13",
+      "fix": "FLICKER 0.33s: extended with own footage to 74.83s"
+    },
+    {
+      "beat": "MECH-14",
+      "fix": "gave back 0.24s of the skipped opening (in-point 0.17s)"
+    },
+    {
+      "beat": "MECH-14",
+      "fix": "FLICKER 0.25s: extended with own footage to 80.71s"
+    },
+    {
+      "beat": "BR-14b",
+      "fix": "FLICKER 0.33s: extended with own footage to 85.29s"
+    },
+    {
+      "beat": "BR-19b",
+      "fix": "FLICKER 0.25s: extended with own footage to 120.17s"
+    },
+    {
+      "beat": "BR-22b",
+      "fix": "gave back 0.25s of the skipped opening (in-point 0.08s)"
+    },
+    {
+      "beat": "BR-22b",
+      "fix": "FLICKER 0.25s: extended with own footage to 145.42s"
+    }
+  ],
+  "warnings": [],
+  "failures": [],
+  "status": "PLANNED"
+}

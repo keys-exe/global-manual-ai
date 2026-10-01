@@ -1,0 +1,5 @@
+file '/home/user/global-manual-ai/builds/down-forwards-again/th/TH-A1.trim.mp4'
+file '/home/user/global-manual-ai/builds/down-forwards-again/th/TH-A2.trim.mp4'
+file '/home/user/global-manual-ai/builds/down-forwards-again/th/TH-A3.trim.mp4'
+file '/home/user/global-manual-ai/builds/down-forwards-again/th/TH-A4.trim.mp4'
+file '/home/user/global-manual-ai/builds/down-forwards-again/th/TH-A5.trim.mp4'

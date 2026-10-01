@@ -1,0 +1,321 @@
+{
+ "audio": "/home/user/global-manual-ai/builds/down-forwards-again/edit/body/BODY.master.wav",
+ "script": "/home/user/global-manual-ai/builds/down-forwards-again/work/BODY.lines.txt",
+ "base": "/home/user/global-manual-ai/builds/down-forwards-again/th/TH-BODY.trim.mp4",
+ "broll": [
+  {
+   "beat": "BR-01",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-01.v1.mp4",
+   "phrase": "A patient of mine. Nine years of knee pain",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "MECH-01",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-01.v1.mp4",
+   "phrase": "Bone on bone on the left, the right one following it",
+   "layout": {
+    "type": "split",
+    "broll_pos": "top",
+    "ratio": 0.6
+   }
+  },
+  {
+   "beat": "BR-02",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-02.v1.mp4",
+   "phrase": "Here is what her scan does not show you",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "MECH-03a",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-03a.v1.mp4",
+   "phrase": "Two centimetres below your kneecap",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "MECH-03",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-03.v4.mp4",
+   "phrase": "Every step you take lands on it",
+   "layout": {
+    "type": "split",
+    "broll_pos": "top",
+    "ratio": 0.6
+   }
+  },
+  {
+   "beat": "MECH-03d",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-03d.v1.mp4",
+   "phrase": "Seventeen times your bodyweight",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-04",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-04.v1.mp4",
+   "phrase": "Put your finger under your kneecap and press. That band is the one taking it",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-05",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-05.v1.mp4",
+   "phrase": "Coming down is worse than going up",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-05a",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-05a.v2.mp4",
+   "phrase": "Going up, your muscles lift you",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "MECH-05",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-05.v2.mp4",
+   "phrase": "and the catch lands on that band",
+   "layout": {
+    "type": "split",
+    "broll_pos": "top",
+    "ratio": 0.6
+   }
+  },
+  {
+   "beat": "BR-06",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-06.v3.mp4",
+   "phrase": "That is why she came down backwards. Backwards takes the catch out",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-07",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-07.v1.mp4",
+   "phrase": "That is why the chair took three tries",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-08",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-08.v1.mp4",
+   "phrase": "That is why the good knee started going the same way. She had been leading with it for years",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-09a",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-09a.v1.mp4",
+   "phrase": "And the list of things she said no to got longer every year. The long walk",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-09c",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-09c.v1.mp4",
+   "phrase": "Her family coming to her instead",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-10",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-10.v2.mp4",
+   "phrase": "It was never how hard she tried",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-10c",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-10c.v4.mp4",
+   "phrase": "It was where the load was landing",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-11a",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-11a.v1.mp4",
+   "phrase": "A sleeve squeezes the whole knee",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-11b",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-11b.v1.mp4",
+   "phrase": "A hinged brace stops it going sideways, and her knee was never going sideways",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-11c",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-11c.v1.mp4",
+   "phrase": "A gel sits on the skin. None of them move the load",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "PR-12",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/PR-12.v3.mp4",
+   "phrase": "This does. It is called Stryde",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-13",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-13.v1.mp4",
+   "phrase": "It sits two centimetres below the kneecap, on the tendon. It never crosses the joint",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "MECH-14",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/MECH-14.v1.mp4",
+   "phrase": "A silicone pad inside holds pressure on that one band instead of spreading it round the whole knee",
+   "layout": {
+    "type": "split",
+    "broll_pos": "top",
+    "ratio": 0.6
+   }
+  },
+  {
+   "beat": "BR-14b",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-14b.v6.mp4",
+   "phrase": "The weight gets caught and moved off the worn part before it reaches the joint",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-15",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-15.v2.mp4",
+   "phrase": "The placement is the whole thing. A centimetre too high and it is a sleeve again",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-16a",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-16a.v3.mp4",
+   "phrase": "Thirty four percent less strain. Measured",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-16b",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-16b.v2.mp4",
+   "phrase": "Two hundred thousand people wearing one",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-17a",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-17a.v1.mp4",
+   "phrase": "Ten seconds to put on. No sores, no rolling down,",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-17b",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-17b.v2.mp4",
+   "phrase": "and nobody can see it",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-19a",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-19a.v2.mp4",
+   "phrase": "You do not have to take my word for it. One knee only. Leave the other bare",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-19b",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-19b.v1.mp4",
+   "phrase": "Go to your own stairs and come down forwards. You will know in a minute",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-20",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-20.v2.mp4",
+   "phrase": "Not because the arthritis has gone",
+   "layout": {
+    "type": "split",
+    "broll_pos": "top",
+    "ratio": 0.6
+   }
+  },
+  {
+   "beat": "BR-20b",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-20b.v1.mp4",
+   "phrase": "Her scan looks exactly the same as it did in March. I have both of them",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-20c",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-20c.v2.mp4",
+   "phrase": "Because the load is not landing on that band any more",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "PR-22a",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/PR-22a.v1.mp4",
+   "phrase": "Two for one, so you do both knees, which is what she needed",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-22a2",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-22a2.v1.mp4",
+   "phrase": "Sixty days, and you keep the straps",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-22b",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-22b.v3.mp4",
+   "phrase": "The copies stretch, and a stretched strap stops holding the spot",
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "BR-23",
+   "clip": "/home/user/global-manual-ai/builds/down-forwards-again/acts/video/clips/BR-23.v2.mp4",
+   "phrase": "Nothing to lose but the pain. Go and do your stairs",
+   "layout": {
+    "type": "full"
+   }
+  }
+ ]
+}
