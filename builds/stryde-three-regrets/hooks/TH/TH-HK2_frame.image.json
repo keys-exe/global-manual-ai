@@ -2,7 +2,7 @@
  "beat": "TH-HK2",
  "kind": "image",
  "mode": 1,
- "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": keep this photo exactly as it is — the same camera angle, distance and framing, the same woman, her face, hair, rust-orange needlecord overshirt and cream T-shirt, the chair, brick wall, pinboard, shelves, window, grey post trays, desk and light. Image 1 is that photo.\nChange only where the laptop sits, keeping its angle exactly as it is now — the same turn, the screen toward her with the pale inbox showing to the lens at the same angle. Slide it forward along the desk until it sits right in front of her, its keyboard just past her forearms, the whole laptop inside the frame. A plain silver laptop, lid and keys blank, the inbox soft grey lines too small to read. Both her hands rest on its keyboard.\nIn frame: one woman; on the desk only the laptop and the grey post trays, every other surface bare. Her face square to the lens above the screen, both eyes on it, mouth closed.\nNo readable text or logos, no extra fingers.",
+ "prompt": "For the line \"Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.\": keep this photo exactly as it is — the same camera angle, distance and framing, the same woman, her face, hair, rust-orange needlecord overshirt and cream T-shirt, the chair, brick wall, pinboard, shelves, window, grey post trays, desk and light. Image 1 is that photo.\nChange only the laptop: slide it left along the desk, close to her, so it sits right by her body under her hands and the whole laptop is inside the frame, screen open and facing her, turned a little toward the lens so the pale inbox shows at an angle — soft grey lines too small to read. A plain silver laptop, lid and keys blank. Both her hands rest on its keyboard.\nIn frame: one woman; on the desk only the laptop and the grey post trays, every other surface bare. Her face square to the lens, both eyes on it, mouth closed.\nNo readable text or logos, no extra fingers.",
  "script_line": "Twenty five thousand people have written to us about their knees. Three things come up more than anything else, and none of them are what you would expect.",
  "face": true,
  "room": true,
@@ -10,12 +10,12 @@
  "body": true,
  "refs": [
   {
-   "label": "TH-HK2 frame v9",
+   "label": "TH-HK2 frame v11",
    "kind": "frame"
   }
  ],
  "match": "frame",
- "edit_of": "29464a0d-7f3b-4b34-b695-7a644d933ccc",
+ "edit_of": "b7bf3ada-d471-439d-98a0-7e18bc2aaf54",
  "taste": [
   "HT12",
   "HT17",
@@ -28,5 +28,5 @@
   "nano_banana_pro"
  ],
  "alt_reason": "existing build keeps its step-2 image lock (nano_banana_pro on Higgsfield, one render per call)",
- "fix_note": "lock the laptop angle, now place it in front of the woman: edit of v9"
+ "fix_note": "move the laptop close to her: edit of v11"
 }
