@@ -287,4 +287,13 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   shell, metal side clips). v6 (`acts/build_r15_videos.py`, preflight PASS, 6th video — user_go = that message): RIG-RVD lateral drift, no push,
   the strap locked at its start-frame size and look, the light round it never on it → To check; v5 moved to Old. No other video could start: the
   remaining new-shot images (BR-10c, BR-16a, BR-16a2, BR-16b, BR-20c, BR-23) still wait for the user's Confirm. Every other B-roll video is confirmed.
+- **2026-10-01 (later): user "fix those and generate the next ones".** Board: BR-14b v6 confirmed; BR-16a2, BR-16b, BR-20c images confirmed;
+  Fixes BR-16a "remove those silver dots on the body", BR-23 "the product is wrong"; BR-10c still To check.
+  Images (`acts/build_fix_r16.py`, edits of the current render attached first): BR-16a v6 markers removed; BR-23 v4 strap redrawn as worn (kneecap
+  bare, small shell below, thin band; worn reference; brace negatives) → To check.
+  Videos (`acts/build_r16_videos.py`, start images from the board, preflight PASS ×3; tasks `acts/video/r16_tasks.txt`): BR-16a2 v1 3 s,
+  BR-16b v2 4 s… (new park frame), BR-20c v1 4 s (RIG-RVD drift, not the fast push — BR-14b's lesson). BR-16a2 and BR-20c landed To check.
+  **Storage: the Old board's 1 GB store is full, and so is Current's.** The replaced BR-16a v5 and BR-23 v3 images stay on Current (not lost, not
+  marked archived). BR-16b v2 (21 MB, split in two) could not be uploaded — it is in `acts/video/clips/` (gitignored) and on Kie for 24 h
+  (`clips/BR-16b.v2.result.json`); its card stays Generating. Asked the user whether to open a second Old Versions board.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
