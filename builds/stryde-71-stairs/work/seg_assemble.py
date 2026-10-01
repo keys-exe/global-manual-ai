@@ -1,4 +1,4 @@
-"""Run assemble.py, but render its one big ffmpeg graph segment by segment (memory) and join them losslessly."""
+"""Run assemble.py (segments padded to their full frame count), but render its one big ffmpeg graph segment by segment (memory) and join them losslessly."""
 import sys, subprocess, re, os, runpy, tempfile
 A="/home/user/global-manual-ai/.claude/skills/ai-prompt-engineer/scripts/assemble.py"
 _run=subprocess.run
@@ -20,6 +20,11 @@ def run(cmd,*a,**k):
         for x in lst: os.remove(x)
         os.remove(f"{td}/list.txt"); os.rmdir(td)
         return r
+    if isinstance(cmd,list) and "-frames:v" in cmd and "-filter_complex" in cmd and "_segs" in str(cmd[-1]):
+        # a clip exactly as long as its slot can end a frame short: hold its last frame so every
+        # segment has its full frame count (-frames:v still cuts it to the slot) — cut 7, 2026-10-01
+        i=cmd.index("-filter_complex")+1; g=cmd[i]; j=g.rfind("[v]")
+        cmd=cmd[:i]+[g[:j]+",tpad=stop_mode=clone:stop=24[v]"+g[j+3:]]+cmd[i+1:]
     return _run(cmd,*a,**k)
 subprocess.run=run
 sys.argv=[A]+sys.argv[1:]

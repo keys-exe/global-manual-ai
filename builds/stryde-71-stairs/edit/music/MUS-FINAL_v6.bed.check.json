@@ -1,0 +1,93 @@
+{
+  "file": "edit/music/MUS-FINAL_v6.bed.wav",
+  "length_s": 212.6,
+  "sections": [
+    {
+      "name": "Hook \u2014 the callout",
+      "energy": "low",
+      "rms_db": -24.8,
+      "brightness_hz": 403
+    },
+    {
+      "name": "Act 1 \u2014 the stairs backwards, the failed fixes",
+      "energy": "low",
+      "rms_db": -18.2,
+      "brightness_hz": 494
+    },
+    {
+      "name": "Act 2 \u2014 Loretta on the dance floor",
+      "energy": "low",
+      "rms_db": -16.8,
+      "brightness_hz": 332
+    },
+    {
+      "name": "Act 3 \u2014 the kitchen table, the routine",
+      "energy": "low",
+      "rms_db": -16.9,
+      "brightness_hz": 388
+    },
+    {
+      "name": "The strap appears \u2014 the change",
+      "energy": "mid",
+      "rms_db": -13.6,
+      "brightness_hz": 520
+    },
+    {
+      "name": "Act 3 \u2014 I did. The first step",
+      "energy": "mid",
+      "rms_db": -12.1,
+      "brightness_hz": 471
+    },
+    {
+      "name": "Act 4 \u2014 why it works",
+      "energy": "mid",
+      "rms_db": -11.2,
+      "brightness_hz": 407
+    },
+    {
+      "name": "Acts 5\u20136 \u2014 the proof, the walk, the husband",
+      "energy": "high",
+      "rms_db": -8.2,
+      "brightness_hz": 489
+    },
+    {
+      "name": "Act 7 \u2014 the name, the offer, her sister",
+      "energy": "mid",
+      "rms_db": -12.4,
+      "brightness_hz": 399
+    }
+  ],
+  "tempo_bpm": 198.8,
+  "vocals": {
+    "checked": true,
+    "confident_words": 0,
+    "text": ""
+  },
+  "fails": [
+    {
+      "check": "CLICK",
+      "detail": "'Hook \u2014 the callout' jumps 32.2 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Act 2 \u2014 Loretta on the dance floor' jumps 13.1 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Act 3 \u2014 the kitchen table, the routine' jumps 12.6 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'The strap appears \u2014 the change' jumps 17.5 dB in 100 ms"
+    },
+    {
+      "check": "CLICK",
+      "detail": "'Act 7 \u2014 the name, the offer, her sister' jumps 15.1 dB in 100 ms"
+    },
+    {
+      "check": "TEMPO",
+      "detail": "~198.8 BPM outside slow (40\u201390)"
+    }
+  ],
+  "status": "FAIL"
+}

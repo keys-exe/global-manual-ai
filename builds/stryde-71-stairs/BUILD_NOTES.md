@@ -355,4 +355,18 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
     - On Final 2 as `review`.
     - **Shot match (§40 step 1, Mode 1: no LUT, no creative grade):** `light_check.py colour` per scene (location + story day, anatomy excluded). 15 clips are off their scene's first shot; the largest are T-01b and T-02b at the reception, about 30% darker.
     - Left for the team in CapCut desktop as `edit/CAPCUT_MATCH.md`, also `docs/match` on the Plan board. The clips were not changed.
+  - **2026-10-01: B-roll on the script lines (user: "BROLL PLACEMENT ARE NOT TIMED ON THE SCRIPT LINE FIX THAT").** The default branch (V7.78.1) was merged.
+    - Cause: every plan row carried `key`, the word the picture shows, so assemble.py cut on that word, not the line's start. 44 of 55 B-rolls came in more than 0.3 s late: most by 2–3 s, PR-02a by 5.0 s, R-07a by 9.1 s (it waited for "Forwards").
+    - `work/plan_rough_v4.json` has no keys: each B-roll cuts 6 frames before its line's first word. Measured on the render (`edit/ROUGH_BODY_v4.timing.json`): all 50 cuts land 0.08–0.27 s before their line's first word.
+    - Lines too short for a 2.0 s picture:
+      - P-02a starts on "going down them at all. I'd just stay upstairs." (she looks down the flight).
+      - R-03a starts on "something? She pulled up her pant leg."
+      - The list "I done tried everything. Physical therapy. Pain pills. Cortisone shots." is one composite clip, `P-04abc_list` (`work/composite.py`). P-04a, P-04b and P-04c each cut on their own words: 3.5, 0.84 and 1.4 s.
+      - The montage "Over 200,000 people wear one now." is `PR-01abcd_montage`: four pictures of 0.69 s each.
+      - These two lists are faster than 2 s per picture. That was a choice for placing each picture on its item; the user is told.
+    - `work/seg_assemble.py` now holds each segment's last frame to its full frame count. The first render was 0.12 s short because clips exactly as long as their slot dropped a frame. Re-render PASS, 209.95 s.
+    - The strap's first frame (R-03a) moved from 72.28 to 70.41 s. Music re-spliced from the same two pieces (`MUS-FINAL.v6.cue.json`, bed v6): plan PASS. The bed check's CLICK flags are musical onsets as before. Its TEMPO reads 199 BPM on the same composition (66 BPM on v5), a detector octave error.
+    - The MUS-FINAL card has v8 (bed v6), `review`. `docs/music` on Plan and Current 2 is updated.
+    - Final 2 is near 1 GB, so **Final 3** https://claude.ai/artifact/P5J5XwVeLRrFR1nbSPaLj4 (template, `BOARD_ROLE` "final") was published. The `builds` doc's `boards.final` on every board points to it.
+    - FINAL-HK1/HK2 **cut 7** (local `_v10`; `_v8` no music, `_v9` music) are on Final 3 as `review`: 210.9 s, −14.4 LUFS, captions verbatim (613 words).
 - **Next:** Acts 1–7 B-roll on the T2 beats → edit → FINAL-HK1 / FINAL-HK2 on the Final board.
