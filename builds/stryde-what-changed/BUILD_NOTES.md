@@ -435,3 +435,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 ### 2026-10-01 — "FIX" (B22a image "FIX THE PRODUCT")
 - **B22a v3** (NBP edit of v2, refs worn_front.jpg + front.webp, "copied exactly", lowercase "stryde"): to check. Not fixed — the shells are a little closer in shape but the wordmark is still small and in capitals. At this distance (two knees, full lower legs) the model redraws the strap from scratch and ignores the product photo. v2 → Old 2.
 - Proposed next (user's call): frame closer so each strap is large (FP12 works when the strap fills a good part of the frame), or one strapped knee from worn_front.jpg (background-only edit, the real product untouched) with the second knee beside it.
+
+### 2026-10-01 — "FIX" (B23a image "FIX THE PRODUCT")
+- **B23a v4** (NBP edit of v3, refs worn_front.jpg + front.webp, framed like worn_front.jpg): the strap is now large and matches the real one — shell, two peaks, chrome slides, big lowercase grey "stryde". Flaw: her plimsoll is cut off at the bottom edge, so the step onto the stair isn't shown. To check; v3 → Old 2.
+- Confirms the B22a lesson: the product copies right only when it is big in frame. B22a (two knees, small straps) needs the closer framing too — waiting on the user's pick.

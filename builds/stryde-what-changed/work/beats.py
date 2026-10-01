@@ -1907,6 +1907,22 @@ B["B22a"] = (NBP, ["B22AV2H", "PW", "PF"], (
     "AVOID: no capital letters in the wordmark, no small wordmark, no thin shell, no extra peaks, no wavy edge, no strap over the "
     "kneecap, no strap on the shin, no third strap, no hand, no face, no extra legs"))
 
+# B23a Fix "FIX THE PRODUCT": v3's strap was small and redrawn (short flat shell). The product only copies right when it is big in frame
+# (FP12) — so frame like worn_front.jpg: close on the strapped knee and shin, the strap large, copied exactly from Image 2 / Image 3;
+# her plimsoll just landing on the stair edge at the bottom of the frame.
+REFS.update({"B23AV3H": ("B23a v3 — her legs on the stairs (Image 1)", "0af0deed-204e-417a-bdc2-08820c303766")})
+B["B23a"] = (NBP, ["B23AV3H", "PW", "PF"], (
+    "Edit Image 1. Keep her real stairs, the oatmeal carpet, the white spindles, her denim skirt hem, her pale older skin, her white "
+    "plimsolls and the warm light from Image 1. Change the framing and the strap: the camera is now close and straight on to her "
+    "strapped leg, framed like Image 2 — from just above the knee down to her plimsoll, which is just landing on the edge of the next "
+    "stair at the bottom of the frame; the strap is LARGE in the frame. The strap is the real strap from Image 2 and Image 3, copied "
+    "exactly — a tall, smooth matte-black shell whose top edge rises in two rounded peaks with one soft dip under the kneecap, a chrome "
+    "slide at each end, a black band round the back, and the large grey lowercase wordmark \"stryde\" across the middle, as big and as "
+    "clear as in Image 2 — seated on the tendon just below the kneecap, exactly where it sits in Image 2. Nothing redesigned. A real "
+    "phone photo.\n\n"
+    "AVOID: no capital letters in the wordmark, no small strap, no flat shell, no strap over the kneecap, no strap on the shin, no "
+    "second strap, no man's leg, no hairy leg, no shorts, no hand, no face, no extra legs, no extra feet"))
+
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
