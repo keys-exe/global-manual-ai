@@ -453,3 +453,6 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - **B22a**: image v4 confirmed; its next video is the 4th for this shot → waits for the user's go.
 - Lesson: once one product frame is approved, build the next product shots as edits of it (the approved strap carries over) instead of asking for the product again.
 - Higgsfield 10,236.4.
+
+### 2026-10-01 — "GO" (B22a video 4, B23a video 3)
+- Both from the confirmed real-photo frames (B22a v4, B23a v6); motion keeps the earlier Fix "WALKING DOWN STAIR"; straps held from first frame to last; no hands. Jobs on Higgsfield: B22a 3691e67d…, B23a 376f4a2b… (queued a long while — finishing on a check-in). Old videos (B22a v3, B23a v2) copied to Old 2 (f725bc33…, a04ea39b…).
