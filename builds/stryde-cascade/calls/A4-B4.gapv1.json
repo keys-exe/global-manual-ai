@@ -1,0 +1,47 @@
+{
+ "beat": "A4-B4",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"Two hundred thousand people wearing one.\": from this frame, the camera glides slowly past the three knees from left to right while they sit still, 3s. Handheld phone, a slight natural sway, the camera never follows the subject. Exactly six legs and three small straps, all rigid; the people stay seated. No morphing, no extra fingers, no music.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap4/A4-B4.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "Two hundred thousand people wearing one.",
+ "motion_plan": "the camera glides slowly past the three knees from left to right while they sit still, 3s",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP07",
+  "HT06",
+  "HT01"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ]
+}

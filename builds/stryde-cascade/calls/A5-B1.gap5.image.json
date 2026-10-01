@@ -1,0 +1,44 @@
+{
+ "beat": "A5-B1",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"I started carrying a couple because I was tired of fitting the second rail.\": in the open back of his van the fitter crouches by his open black canvas tool bag and holds one strap up towards the lens, showing it to us, a small knowing look; the second strap pokes out of the bag's side pocket. The strap is exactly the product in the attached front photo — the strap is small — a rigid black W-topped shell about 12 × 5 cm, no longer than his palm, on one soft black knit band — resting across his open palm, thumb beside it, the shell and wordmark facing us, nothing covering it. Eye level, three-quarter, medium-close, his face and the strap sharp. He is the same man as the attached cast sheet, in a worn tan canvas work jacket open over a dark green work shirt, charcoal work trousers. The van as in the attached van plate. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "I started carrying a couple because I was tired of fitting the second rail.",
+ "face": true,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "STRYDE front photo",
+   "kind": "product",
+   "id": "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5"
+  },
+  {
+   "label": "N-CHINESE cast sheet",
+   "kind": "character",
+   "id": "8cc4a583-5d7d-4f39-9ef7-7fe7899d298b"
+  },
+  {
+   "label": "PLATE-VAN",
+   "kind": "location",
+   "id": "b1cc1764-3e34-4b37-b8c6-0abf55cfe68e"
+  }
+ ],
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP06",
+  "HT06",
+  "HT09"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "crouched by his tool bag, he lifts one strap up towards us and holds it there, showing it, one lift, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "user Fix: \"fix the image i need him to like show the strap to us\" → he now holds one strap up to the lens, the second in the bag"
+}

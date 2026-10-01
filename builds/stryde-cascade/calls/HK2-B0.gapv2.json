@@ -1,0 +1,44 @@
+{
+ "beat": "HK2-B0",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"I can tell how long someone has had a bad knee by which rail they ask me to fit.\": from this frame, at the foot of the stairs he looks up the flight and pulls the tape measure out along the wall, one pull, 2s. Handheld phone, a slight natural sway, the camera never follows the subject. The rail stays leaning on the wall; the stairs and wall keep their shape. No morphing, no extra fingers, no music.",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap4/HK2-B0.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "script_line": "I can tell how long someone has had a bad knee by which rail they ask me to fit.",
+ "motion_plan": "at the foot of the stairs he looks up the flight and pulls the tape measure out along the wall, one pull, 2s",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "taste": [
+  "HT05",
+  "HT09"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ],
+ "fix_note": "user asked for a new frame (\"this is ditorted i need a new image too\") → first video of the new frame"
+}

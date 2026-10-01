@@ -26,31 +26,39 @@ FACTS = {
  "HK2-B0": "The rail stays leaning on the wall; the stairs and wall keep their shape.",
  "HK2-B3": "He stays seated in the van door; phone and hand stay at his ear.",
  "A4-B2b": "The small strap stays rigid in one piece, one band; fingertips only on its ends.",
- "A4-B3":  "The knee model and the small strap stay rigid; one gloved hand only.",
+ "A4-B3":  "The knee model stays upright and still; the small strap stays rigid; one gloved hand only.",
  "A4-P3":  "The small strap stays rigid below the kneecap; only the glow changes.",
  "A5-M1":  "The small black strap is a rigid printed object: its shape, band and wordmark never change or move.",
  "A5-B4b": "He steps down one step only; the small strap stays rigid below his kneecap.",
  "A5-P2":  "The box and exactly two small straps stay still and rigid; one hand only.",
+ "A4-B1b": "The small strap stays rigid below the kneecap; one leg, bones keep their shape.",
+ "A4-B4":  "Exactly six legs and three small straps, all rigid; the people stay seated.",
+ "A5-B1":  "Exactly two small straps, rigid; his face and hands keep their shape.",
+ "A5-B1b": "The diary stays on his knee; his hands stay clear of the wheel.",
 }
+# a Fix that changes the confirmed motion (user's words) — the card's motionPlan is updated to match
+MOTION = {"A4-B3": "the gloved hand holds the knee model still while the camera eases slowly in towards the strap, the model never turning, 2s",
+          "A4-P3": "as the knee bends slightly under load, the tendon's hot red glow cools to a calm cool blue under the strap, the strap holding it, 3s"}
 NEG = {True: "No text, no arrows, no extra limbs.", False: "No morphing, no extra fingers, no music."}
 NEG_M1 = "No warping of the strap, no text changes, no extra limbs."
-RISK = {"A1-B1b": "stairs", "A1-B2b": "stairs", "A5-B4b": "stairs", "A4-B3": "product_angle", "A4-B2b": "hand_product"}
+RISK = {"A1-B1b": "stairs", "A1-B2b": "stairs", "A5-B4b": "stairs", "A4-B3": "hand_product", "A4-B2b": "hand_product", "A5-B1": "hand_product"}
 WAIVE = 'user, 2026-09-30: "Run from the start frame" (asked: clips without a picked end frame — this board has no end-frame step)'
 
 def newest(b):
-    for n in (4, 3, 2, 1):
+    for n in (5, 4, 3, 2, 1):
         c = B / f"calls/{b}.gap{n}.image.json"
         if c.exists():
             img = B / f"renders/gap{n}/{b}.png"
             return json.load(open(c)), img
     raise SystemExit(f"no image call for {b}")
 
-ap = argparse.ArgumentParser(); ap.add_argument("beats", nargs="+"); ap.add_argument("--gen", type=int, default=1); ap.add_argument("--fix", default="")
+ap = argparse.ArgumentParser(); ap.add_argument("beats", nargs="+"); ap.add_argument("--gen", type=int, default=1); ap.add_argument("--fix", default=""); ap.add_argument("--tag", default="")
 a = ap.parse_args()
 out = 0
 for b in a.beats:
     ic, img = newest(b)
     anat = bool(ic.get("anatomy"))
+    if b in MOTION: ic["motion_plan"] = MOTION[b]
     t0, t1 = SPANS[b]
     dur = max(3, math.ceil((t1 - t0) + 0.9))
     neg = NEG_M1 if b == "A5-M1" else NEG[anat]
@@ -69,7 +77,7 @@ for b in a.beats:
                    {"risk": "camera wanders", "prevented_by": "one camera clause"},
                    {"risk": "extra limbs/fingers", "prevented_by": "count fact + negative"}]}
     if a.gen >= 2: c["fix_note"] = a.fix
-    p = B / f"calls/{b}.gapv{a.gen}.json"
+    p = B / f"calls/{b}.gapv{a.gen}{a.tag}.json"
     json.dump(c, open(p, "w"), indent=1, ensure_ascii=False)
     r = subprocess.run(["python3", str(PF), str(p)], capture_output=True, text=True).stdout
     fails = [l.strip() for l in r.splitlines() if l.strip().startswith("FAIL")]

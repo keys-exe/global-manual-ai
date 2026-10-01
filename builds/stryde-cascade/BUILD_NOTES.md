@@ -200,3 +200,10 @@ Prompts `prompts/` · calls `calls/` · act map `actmap.json` / `ACTMAP.md` · j
   - Kie's file host is slow: downloads get cut off. Refetch by task id with `kie.py wait` (no `--out`) and then `curl -C -`.
   - Storage: the Plan store filled up. New **Old Versions 3** https://claude.ai/artifact/Nk2SyCzxLexZjcqornaX3j (template, BOARD_ROLE old; `boards.old3`) holds the round-4 replaced frames and videos, with per-beat docs. Earlier replaced versions are in the Plan store (`archiveBoard` on each version entry).
   - HK3-B4's card disappeared from Current 2 after its video was put on (deleted on the board?). Its clip is in `renders/gapv1/HK3-B4_vid.mp4` and its frame in `renders/gap1/`.
+- 2026-09-30/10-01, Fix round 5 and catch-up (the session sat idle overnight; the user said "try again"):
+  - A5-B1 "i need him to like show the strap to us": new frame (`work/fix_gap5.py`, `calls/A5-B1.gap5.image.json`). He holds one strap up to the lens and the second sits in his bag. The old frame and video were moved to Old Versions 3.
+  - A4-B3 "dont turn it over": video gen 2 on the round-4 frame (`calls/A4-B3.gapv3.json`). The model stays still and the camera eases in.
+  - A4-P3 "it should be blue not yellow": video gen 2. The calm glow is now cool blue, and the card's motionPlan was updated.
+  - New-frame videos: A4-B1b, A4-B4 (parts), A5-B1b, HK2-B0 (parts), A4-B3 (v2). A5-M1 video gen 2 (strap rigid, camera locked).
+  - Downloads: the Kie file host stalled, and two transfers died when killed. `work/kie_fetch.sh` (task wait, then resumable curl, then an ffmpeg check) fetched them on retry.
+  - Replaced versions are in Old Versions 3 (`archiveAsset` + `archiveBoard`). Only round 4 has per-beat Old docs there; the round-5 replacements are recorded on the Current 2 version entries.

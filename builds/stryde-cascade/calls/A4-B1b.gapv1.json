@@ -1,0 +1,44 @@
+{
+ "beat": "A4-B1b",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"It never crosses the joint.\": from this frame, the knee bends slowly to a right angle and back; the strap stays on the tendon below the kneecap and never crosses the joint, 2s. The camera holds still on the render, one slow even light pulse, nothing else moves. The small strap stays rigid below the kneecap; one leg, bones keep their shape. No text, no arrows, no extra limbs.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap4/A4-B1b.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "It never crosses the joint.",
+ "motion_plan": "the knee bends slowly to a right angle and back; the strap stays on the tendon below the kneecap and never crosses the joint, 2s",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "taste": [
+  "HT11",
+  "FP02",
+  "FP03"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ]
+}

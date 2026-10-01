@@ -1,0 +1,43 @@
+{
+ "beat": "A5-B1b",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"Three houses this year have not called me back.\": from this frame, sitting in the driver's seat, he runs his pen down the diary page on his knee and smiles slightly, one stroke, 2s. Handheld phone, a slight natural sway, the camera never follows the subject. The diary stays on his knee; his hands stay clear of the wheel. No morphing, no extra fingers, no music.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap4/A5-B1b.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "Three houses this year have not called me back.",
+ "motion_plan": "sitting in the driver's seat, he runs his pen down the diary page on his knee and smiles slightly, one stroke, 2s",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "taste": [
+  "HT12",
+  "HT09"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ]
+}

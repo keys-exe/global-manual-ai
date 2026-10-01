@@ -1,0 +1,47 @@
+{
+ "beat": "A4-B3",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"Three years with orthopedic surgeons.\": from this frame, the gloved hand holds the knee model still while the camera eases slowly in towards the strap, the model never turning, 2s. Handheld phone, a slight natural sway, the camera never follows the subject. The knee model stays upright and still; the small strap stays rigid; one gloved hand only. No morphing, no extra fingers, no music.",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap4/A4-B3.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "script_line": "Three years with orthopedic surgeons.",
+ "motion_plan": "the gloved hand holds the knee model still while the camera eases slowly in towards the strap, the model never turning, 2s",
+ "motion_confirmed": true,
+ "risk_class": "hand_product",
+ "pilot": "confirmed",
+ "pin_waived": "user, 2026-09-30: \"Run from the start frame\" (asked: clips without a picked end frame — this board has no end-frame step)",
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "HT06"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ],
+ "fix_note": "user Fix: \"dont turn it over\" → the model turned (the motion asked for a quarter turn); the model now stays still and the camera eases in"
+}
