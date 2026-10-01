@@ -332,4 +332,9 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   USE KILNG FIR VIDEO", so that clip (made on the old frame) goes to Old 2 as unused when it lands. New image BR-10c v5 (`acts/build_fix_r21.py`,
   nano_banana_pro per the lock): the knee from the front, close, the tendon facing the lens, the foot planted → To check; its video (Kling)
   follows the Confirm, with the motion plan already on the card. Current's 1 GB store full again: image v4 and video v2 of BR-10c moved to Old 2.
+- **2026-10-01 11:41 UTC hourly Fix check.** BR-10c image v5 Fix "MAKE THIS A CLOSE UP SHOT AND PATELLAR TENDON" → v6 (`acts/build_fix_r22.py`,
+  an edit of v5): a front close-up of the knee only, the tendon large and the one red spot → To check; v5 to Old 2. The Kling clip made on v4
+  (v3, 24 Kling credits) landed and was filed on Old 2 as unused. The card's motion plan updated for the close-up (the knee stays still, the
+  pulses land on the tendon). Note: Higgsfield reports `nano_banana_2` as the model on the jobs requested as `nano_banana_pro` (every render
+  this build) — logged, not changed. Balances: Higgsfield 10,498.65; Kling 45,027.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.
