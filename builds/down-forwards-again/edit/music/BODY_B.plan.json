@@ -1,0 +1,85 @@
+{
+  "positive_global_styles": [
+    "one music family: low bowed cello and string drone, sparse felt piano, a slow soft heartbeat pulse",
+    "instrumental, sits quietly under a speaking voice",
+    "instrumental",
+    "66 BPM"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "trailer hits",
+    "EDM",
+    "synth lead",
+    "brass",
+    "guitar",
+    "cute",
+    "cheerful",
+    "upbeat",
+    "ukulele",
+    "whistling",
+    "hand claps",
+    "corporate jingle",
+    "stock advert jingle",
+    "pop beat",
+    "humming",
+    "ticking clock",
+    "fast hi-hat",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "This does",
+      "positive_local_styles": [
+        "MUS-TURN: the release, audible from the very first second",
+        "the drone lifts into the first warm chord",
+        "a slow cello line moves over moving piano chords",
+        "the pulse opens into gentle movement",
+        "a new key arrives",
+        "clearly audible and moving the whole time, never a single held tone",
+        "full and present, the loudest part"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 22940,
+      "lines": []
+    },
+    {
+      "section_name": "Proof",
+      "positive_local_styles": [
+        "MUS-AFTER: warm and hopeful",
+        "lifted, strings and piano moving forward",
+        "dignified, never jingly",
+        "full and present, the loudest part",
+        "carries straight on from the section before with no pause, never stops or goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 39740,
+      "lines": []
+    },
+    {
+      "section_name": "Move the load",
+      "positive_local_styles": [
+        "MUS-OFFER: confident steady pulse",
+        "a little fuller and more forward",
+        "full and present, the loudest part",
+        "carries straight on from the section before with no pause, never stops or goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 4650,
+      "lines": []
+    },
+    {
+      "section_name": "The offer \u2014 go and do your stairs",
+      "positive_local_styles": [
+        "MUS-OFFER: confident, steady and resolved",
+        "the same steady pulse and warm strings",
+        "plays at a steady level right to the very end of the track",
+        "carries straight on with no pause, never stops or goes silent, no ending before the last second"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 17870,
+      "lines": []
+    }
+  ]
+}

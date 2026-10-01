@@ -1,0 +1,160 @@
+{
+  "positive_global_styles": [
+    "one music family: low bowed cello and string drone, sparse felt piano, a slow soft heartbeat pulse",
+    "instrumental, sits quietly under a speaking voice",
+    "instrumental",
+    "66 BPM"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "trailer hits",
+    "EDM",
+    "synth lead",
+    "brass",
+    "guitar",
+    "cute",
+    "cheerful",
+    "upbeat",
+    "ukulele",
+    "whistling",
+    "hand claps",
+    "corporate jingle",
+    "stock advert jingle",
+    "pop beat",
+    "humming",
+    "ticking clock",
+    "fast hi-hat",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The patient",
+      "positive_local_styles": [
+        "MUS-OPEN: investigative documentary suspense",
+        "low sustained drone, slow heartbeat pulse, sparse felt piano",
+        "minor, unresolved, no melody",
+        "quiet and sparse",
+        "carries straight on from the section before with no pause, never stops or goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 8890,
+      "lines": []
+    },
+    {
+      "section_name": "The band",
+      "positive_local_styles": [
+        "MUS-EDU: inquisitive tension",
+        "a repeating soft piano figure over the drone",
+        "clean and curious, minor or modal, the viewer leans in",
+        "quiet and sparse",
+        "carries straight on from the section before with no pause, never stops or goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 23030,
+      "lines": []
+    },
+    {
+      "section_name": "That is why",
+      "positive_local_styles": [
+        "MUS-EXPOSE: darker and lower",
+        "long low drones, dissonant intervals",
+        "the pulse more present, a soft low stinger on the last line",
+        "no warmth yet",
+        "fuller, a clear step louder",
+        "carries straight on from the section before with no pause, never stops or goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 25080,
+      "lines": []
+    },
+    {
+      "section_name": "What has been tried",
+      "positive_local_styles": [
+        "MUS-EXPOSE: the same tension, held",
+        "the tension holds, no resolution",
+        "unresolved",
+        "fuller, a clear step louder",
+        "carries straight on from the section before with no pause, never stops or goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 10070,
+      "lines": []
+    },
+    {
+      "section_name": "This does",
+      "positive_local_styles": [
+        "MUS-TURN: the release",
+        "the drone lifts into the first warm chord",
+        "a slow cello line starts to move over moving piano chords",
+        "the pulse opens into gentle movement",
+        "a new key arrives",
+        "clearly audible and moving the whole time, never a single held tone",
+        "full and present, the loudest part",
+        "carries straight on from the section before with no pause, never stops or goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 22940,
+      "lines": []
+    },
+    {
+      "section_name": "Proof",
+      "positive_local_styles": [
+        "MUS-AFTER: warm and hopeful",
+        "lifted, strings and piano moving forward",
+        "dignified, never jingly",
+        "full and present, the loudest part",
+        "carries straight on from the section before with no pause, never stops or goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 39740,
+      "lines": []
+    },
+    {
+      "section_name": "Move the load",
+      "positive_local_styles": [
+        "MUS-OFFER: confident steady pulse",
+        "a little fuller and more forward",
+        "full and present, the loudest part",
+        "carries straight on from the section before with no pause, never stops or goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 4650,
+      "lines": []
+    },
+    {
+      "section_name": "The offer",
+      "positive_local_styles": [
+        "MUS-OFFER: held back under the price and the copies warning",
+        "the same pulse, thinner, so the words carry",
+        "fuller, a clear step louder",
+        "carries straight on from the section before with no pause, never stops or goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 10720,
+      "lines": []
+    },
+    {
+      "section_name": "Go and do your stairs",
+      "positive_local_styles": [
+        "MUS-OFFER: steady and resolved",
+        "plays at level to the end",
+        "full and present, the loudest part",
+        "carries straight on from the section before with no pause, never stops or goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 3150,
+      "lines": []
+    },
+    {
+      "section_name": "Tail",
+      "positive_local_styles": [
+        "the last held chord fades out to silence"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 4000,
+      "lines": []
+    }
+  ]
+}

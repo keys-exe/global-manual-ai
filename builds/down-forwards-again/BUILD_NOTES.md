@@ -304,4 +304,18 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
   `archiveUrl` = Old 2): BR-16a image v5, BR-23 image v3, BR-20c video v1, and the seven VO takes not chosen (T1–T6, T8; T7 is locked).
   BR-16b v2 (split in two parts) landed To check. The page's Old link still opens the first Old board; Old 2 is reached by its own link
   (`boards.old2` on the Current build doc).
+- **2026-10-01 ~11:00 UTC: user "USE THE LATEST BGM UPDATE".** Merged the default branch (standards V7.76.0; the merge kept both sides of the
+  CLAUDE.md table and .gitignore). Applied **§40A (V7.75.0) — music follows the script**: the Music Register Map (Build Sheet 5c, `docs/music`
+  on Plan + Current) — hooks MUS-OPEN; body: The patient OPEN · The band EDU · "That is why" + the failed fixes EXPOSE · "This does." TURN ·
+  Proof AFTER · Move the load / the offer (held back under the price) / "Go and do your stairs" OFFER. One family: low bowed cello and string
+  drone, sparse felt piano, a slow heartbeat pulse (66 BPM pinned); no cute/cheerful/upbeat anywhere.
+  Composing (ElevenLabs Music via `music.py`), what failed and why: v1 — the "ticking" pulse read 170–215 BPM, the 152 s body had a 42 s silent
+  hole; v2/v3 — the body's turn section came out as one flat held tone between silences (three times); HK3 v2 refused (a section under 3 s).
+  Fix: the body composed in three parts — A (patient → failed fixes, fades on "This does."), B (the release → proof; its first try had 14 s of
+  silence from my "starting from near silence" and went silent from 73 s), C (the close, "Two for one" → end, crossfaded under the price).
+  Loudness per section, the hook/body hand-over, the turn join and the close are set in the mix (`work/bgm_mix.py`), not regenerated.
+  `music.py check` on the variant beds: TEMPO ~65 BPM PASS, VOCALS none, ENERGY in order; the CLICK flags fall on the bar downbeats (every
+  ~3.9 s = 4 beats at 65 BPM) and the close's pulse — rhythm, not splices; LENGTH differs only by the plan's 2 s tail. On the board To check:
+  MUS-HK1/2/3, MUS-BODY, PREVIEW-HK1 (the HK1 variant with the locked VO on top). The raw compositions are force-added to git (`edit/music/*.mp3`).
+  Also landed: BR-16a v3 (treadmill), BR-23 v2 (going up), BR-10c v2 (red on the patellar tendon) — To check.
 - **Then:** videos act by act after the user's Confirm; cuts placed by hand from word + loudness timings; finished variants (HKn + the body); CapCut block.

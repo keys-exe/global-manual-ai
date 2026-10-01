@@ -1,0 +1,16 @@
+### Music Register Map (§40A)
+
+One music family for the whole video — a low bowed cello and string drone, sparse felt piano and a slow soft heartbeat pulse — that changes mood with the script. It opens like an investigative documentary (suspense, curiosity), goes darker under the failed fixes, lifts at "This does.", turns warm under the proof and ends steady and confident. No cute, cheerful or upbeat music anywhere the script educates, warns or exposes (§40A). Music sits about 18 dB under the voice and ducks ~8 dB more while the doctor speaks; it drops under the price.
+
+| Part | Starts on | What the script is doing | Register | Cue in plain words | Level |
+|---|---|---|---|---|---|
+| Hooks HK1 · HK2 · HK3 | the first word | the callout: a result, a doctor's instruction, a different question — opens the loop | MUS-OPEN | a low drone and a slow heartbeat pulse, one low piano note; rises a step on the second sentence; no tune | low → mid |
+| The patient (0.00–8.89 s of the body) | "A patient of mine" | a patient's story and what her scan does not show — the contradiction | MUS-OPEN | investigative-documentary suspense: low drone, slow heartbeat pulse, sparse felt piano, minor, unresolved | low |
+| The band (8.89–31.92 s of the body) | "Two centimetres below your kneecap" | the education: the band of tendon, seventeen times bodyweight, the self-test, why coming down is worse | MUS-EDU | the same drone with a repeating soft piano figure — curious, leaning in, still minor | low |
+| That is why (31.92–57.00 s of the body) | "That is why she came down backwards" | agitation: backwards on the stairs, three tries at the chair, the list she said no to; 'never how hard she tried' | MUS-EXPOSE | darker and lower: long drones, dissonant intervals, the pulse more present; no warmth | mid |
+| What has been tried (57.00–67.07 s of the body) | "A sleeve squeezes the whole knee" | the failed fixes: sleeve, hinged brace, gel — 'none of them move the load' | MUS-EXPOSE | darker and lower: long drones, dissonant intervals, the pulse more present; no warmth | mid |
+| This does (67.07–90.01 s of the body) | "This does." | the turn: 'This does. It is called Stryde.' — where it sits, the pad, the placement | MUS-TURN | the release: the drone lifts into the first warm chord, the pulse starts to move, a new key | high |
+| Proof (90.01–129.75 s of the body) | "Thirty four percent less strain" | proof: 34% less strain, surgeons, 200,000 people, the stairs test, the two identical scans | MUS-AFTER | warm and hopeful: strings and piano moving forward, dignified, never jingly | high |
+| Move the load (129.75–134.40 s of the body) | "You cannot strengthen your way out" | the conclusion: you cannot strengthen your way out of a load problem | MUS-OFFER | confident steady pulse, a little fuller; thinner under the price; resolves on a held chord | high |
+| The offer (134.40–145.12 s of the body) | "Two for one" | the offer: two for one, sixty days, the Stryde site, the copies warning | MUS-OFFER | confident steady pulse, a little fuller; thinner under the price; resolves on a held chord | mid |
+| Go and do your stairs (145.12–148.27 s of the body) | "Nothing to lose but the pain" | the close: nothing to lose but the pain | MUS-OFFER | confident steady pulse, a little fuller; thinner under the price; resolves on a held chord | high |

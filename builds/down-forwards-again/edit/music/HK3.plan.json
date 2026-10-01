@@ -1,0 +1,64 @@
+{
+  "positive_global_styles": [
+    "investigative documentary suspense",
+    "low sustained drone",
+    "sparse piano",
+    "low plucked and bowed strings",
+    "minor or modal",
+    "unresolved",
+    "no melody",
+    "one music family: low bowed cello and string drone, sparse felt piano, a slow soft heartbeat pulse",
+    "instrumental, sits quietly under a speaking voice",
+    "instrumental",
+    "66 BPM"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "trailer hits",
+    "EDM",
+    "synth lead",
+    "brass",
+    "guitar",
+    "cute",
+    "cheerful",
+    "upbeat",
+    "ukulele",
+    "whistling",
+    "hand claps",
+    "corporate jingle",
+    "stock advert jingle",
+    "pop beat",
+    "humming",
+    "resolving major cadence",
+    "ticking clock",
+    "fast hi-hat",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The scans \u2014 A different question",
+      "positive_local_styles": [
+        "fades in softly over the first second",
+        "very quiet: only the low drone and a slow heartbeat pulse",
+        "one sparse low piano note",
+        "a question hanging",
+        "rises one small step over its last seconds, bowed low strings joining",
+        "continuous, never goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 7640,
+      "lines": []
+    },
+    {
+      "section_name": "Hand-over",
+      "positive_local_styles": [
+        "the drone fades out to silence"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 4000,
+      "lines": []
+    }
+  ]
+}

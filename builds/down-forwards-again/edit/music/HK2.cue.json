@@ -1,0 +1,76 @@
+{
+ "scene": "MUS-OPEN-HK2",
+ "registers": {
+  "all": "MUS-OPEN"
+ },
+ "length_s": 10.64,
+ "theme": [
+  "investigative documentary suspense",
+  "low sustained drone",
+  "sparse piano",
+  "low plucked and bowed strings",
+  "minor or modal",
+  "unresolved",
+  "no melody",
+  "one music family: low bowed cello and string drone, sparse felt piano, a slow soft heartbeat pulse",
+  "instrumental, sits quietly under a speaking voice"
+ ],
+ "avoid": [
+  "drums",
+  "trailer hits",
+  "EDM",
+  "synth lead",
+  "brass",
+  "guitar",
+  "cute",
+  "cheerful",
+  "upbeat",
+  "ukulele",
+  "whistling",
+  "hand claps",
+  "corporate jingle",
+  "stock advert jingle",
+  "pop beat",
+  "humming",
+  "resolving major cadence",
+  "ticking clock",
+  "fast hi-hat"
+ ],
+ "tempo": "slow",
+ "bpm": 66,
+ "sections": [
+  {
+   "name": "The doctor's instruction",
+   "start": 0,
+   "end": 5.49,
+   "energy": "low",
+   "styles": [
+    "fades in softly over the first second",
+    "very quiet: only the low drone and a slow heartbeat pulse",
+    "one sparse low piano note",
+    "a question hanging"
+   ]
+  },
+  {
+   "name": "Ten seconds, not a prescription",
+   "start": 5.49,
+   "end": 8.64,
+   "energy": "mid",
+   "styles": [
+    "clearly louder and fuller",
+    "bowed low strings join the drone",
+    "the pulse more present",
+    "still unresolved, continuous, never goes silent"
+   ]
+  },
+  {
+   "name": "Hand-over",
+   "start": 8.64,
+   "end": 10.64,
+   "energy": "silent",
+   "styles": [
+    "the drone fades out to silence"
+   ]
+  }
+ ]
+}

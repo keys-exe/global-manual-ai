@@ -1,0 +1,56 @@
+{
+  "positive_global_styles": [
+    "one music family: low bowed cello and string drone, sparse felt piano, a slow soft heartbeat pulse",
+    "instrumental, sits quietly under a speaking voice",
+    "instrumental",
+    "66 BPM"
+  ],
+  "negative_global_styles": [
+    "drums",
+    "trailer hits",
+    "EDM",
+    "synth lead",
+    "brass",
+    "guitar",
+    "cute",
+    "cheerful",
+    "upbeat",
+    "ukulele",
+    "whistling",
+    "hand claps",
+    "corporate jingle",
+    "stock advert jingle",
+    "pop beat",
+    "humming",
+    "ticking clock",
+    "fast hi-hat",
+    "vocals",
+    "lyrics",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The offer",
+      "positive_local_styles": [
+        "MUS-OFFER: confident steady pulse, held back so the words carry",
+        "warm strings and piano, the same family",
+        "audible from the very first second",
+        "carries straight on, never stops or goes silent"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 10720,
+      "lines": []
+    },
+    {
+      "section_name": "Go and do your stairs",
+      "positive_local_styles": [
+        "MUS-OFFER: steady and resolved, a little fuller",
+        "lands on one warm held resolving chord",
+        "plays at a steady level right to the very end of the track, no fade, no silence"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 9150,
+      "lines": []
+    }
+  ]
+}

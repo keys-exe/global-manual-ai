@@ -1,0 +1,148 @@
+{
+ "scene": "BGM-HK3",
+ "length_s": 155.41,
+ "tempo": "slow",
+ "sections": [
+  {
+   "name": "The scans \u2014 A different question",
+   "start": 0,
+   "end": 7.64,
+   "energy": "low",
+   "styles": [
+    "fades in softly over the first second",
+    "very quiet: only the low drone and a slow heartbeat pulse",
+    "one sparse low piano note",
+    "a question hanging",
+    "rises one small step over its last seconds, bowed low strings joining",
+    "continuous, never goes silent"
+   ]
+  },
+  {
+   "name": "The patient",
+   "start": 7.64,
+   "end": 16.53,
+   "energy": "low",
+   "register": "MUS-OPEN",
+   "styles": [
+    "MUS-OPEN: investigative documentary suspense",
+    "low sustained drone, slow heartbeat pulse, sparse felt piano",
+    "minor, unresolved, no melody",
+    "quiet and sparse",
+    "carries straight on from the section before with no pause, never stops or goes silent"
+   ]
+  },
+  {
+   "name": "The band",
+   "start": 16.53,
+   "end": 39.56,
+   "energy": "low",
+   "register": "MUS-EDU",
+   "styles": [
+    "MUS-EDU: inquisitive tension",
+    "a repeating soft piano figure over the drone",
+    "clean and curious, minor or modal, the viewer leans in",
+    "quiet and sparse",
+    "carries straight on from the section before with no pause, never stops or goes silent"
+   ]
+  },
+  {
+   "name": "That is why",
+   "start": 39.56,
+   "end": 64.64,
+   "energy": "mid",
+   "register": "MUS-EXPOSE",
+   "styles": [
+    "MUS-EXPOSE: darker and lower",
+    "long low drones, dissonant intervals",
+    "the pulse more present, a soft low stinger on the last line",
+    "no warmth yet",
+    "fuller, a clear step louder",
+    "carries straight on from the section before with no pause, never stops or goes silent"
+   ]
+  },
+  {
+   "name": "What has been tried",
+   "start": 64.64,
+   "end": 77.21,
+   "energy": "mid",
+   "register": "MUS-EXPOSE",
+   "styles": [
+    "MUS-EXPOSE: the same tension, held",
+    "the tension holds, no resolution",
+    "unresolved",
+    "fuller, a clear step louder",
+    "carries straight on from the section before with no pause, never stops or goes silent"
+   ]
+  },
+  {
+   "name": "This does",
+   "start": 77.21,
+   "end": 97.65,
+   "energy": "high",
+   "register": "MUS-TURN",
+   "styles": [
+    "MUS-TURN: the release",
+    "the drone lifts into the first warm chord",
+    "a slow cello line starts to move over moving piano chords",
+    "the pulse opens into gentle movement",
+    "a new key arrives",
+    "clearly audible and moving the whole time, never a single held tone",
+    "full and present, the loudest part",
+    "carries straight on from the section before with no pause, never stops or goes silent"
+   ]
+  },
+  {
+   "name": "Proof",
+   "start": 97.65,
+   "end": 137.39,
+   "energy": "high",
+   "register": "MUS-AFTER",
+   "styles": [
+    "MUS-AFTER: warm and hopeful",
+    "lifted, strings and piano moving forward",
+    "dignified, never jingly",
+    "full and present, the loudest part",
+    "carries straight on from the section before with no pause, never stops or goes silent"
+   ]
+  },
+  {
+   "name": "Move the load",
+   "start": 137.39,
+   "end": 142.04,
+   "energy": "high",
+   "register": "MUS-OFFER",
+   "styles": [
+    "MUS-OFFER: confident steady pulse",
+    "a little fuller and more forward",
+    "full and present, the loudest part",
+    "carries straight on from the section before with no pause, never stops or goes silent"
+   ]
+  },
+  {
+   "name": "The offer",
+   "start": 142.04,
+   "end": 152.76,
+   "energy": "mid",
+   "register": "MUS-OFFER",
+   "styles": [
+    "MUS-OFFER: held back under the price and the copies warning",
+    "the same pulse, thinner, so the words carry",
+    "fuller, a clear step louder",
+    "carries straight on from the section before with no pause, never stops or goes silent"
+   ]
+  },
+  {
+   "name": "Go and do your stairs",
+   "start": 152.76,
+   "end": 157.41,
+   "energy": "high",
+   "register": "MUS-OFFER",
+   "styles": [
+    "MUS-OFFER: steady and resolved",
+    "plays at level to the end",
+    "full and present, the loudest part",
+    "carries straight on from the section before with no pause, never stops or goes silent"
+   ]
+  }
+ ]
+}

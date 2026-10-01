@@ -1,0 +1,61 @@
+{
+ "scene": "MUS-BODY-C",
+ "length_s": 17.87,
+ "theme": [
+  "one music family: low bowed cello and string drone, sparse felt piano, a slow soft heartbeat pulse",
+  "instrumental, sits quietly under a speaking voice"
+ ],
+ "avoid": [
+  "drums",
+  "trailer hits",
+  "EDM",
+  "synth lead",
+  "brass",
+  "guitar",
+  "cute",
+  "cheerful",
+  "upbeat",
+  "ukulele",
+  "whistling",
+  "hand claps",
+  "corporate jingle",
+  "stock advert jingle",
+  "pop beat",
+  "humming",
+  "ticking clock",
+  "fast hi-hat"
+ ],
+ "tempo": "slow",
+ "bpm": 66,
+ "registers": {
+  "The offer": "MUS-OFFER",
+  "Go and do your stairs": "MUS-OFFER"
+ },
+ "sections": [
+  {
+   "name": "The offer",
+   "start": 0,
+   "end": 10.72,
+   "energy": "mid",
+   "register": "MUS-OFFER",
+   "styles": [
+    "MUS-OFFER: confident steady pulse, held back so the words carry",
+    "warm strings and piano, the same family",
+    "audible from the very first second",
+    "carries straight on, never stops or goes silent"
+   ]
+  },
+  {
+   "name": "Go and do your stairs",
+   "start": 10.72,
+   "end": 17.87,
+   "energy": "high",
+   "register": "MUS-OFFER",
+   "styles": [
+    "MUS-OFFER: steady and resolved, a little fuller",
+    "lands on one warm held resolving chord",
+    "plays at a steady level right to the very end of the track, no fade, no silence"
+   ]
+  }
+ ]
+}
