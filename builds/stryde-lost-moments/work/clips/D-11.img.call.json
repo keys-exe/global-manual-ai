@@ -1,0 +1,59 @@
+{
+ "beat": "D-11",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Book the tee time.\": in his open garage door he swings the uncovered golf bag onto his shoulder.\nMedium shot, low angle, three-quarter front, head to shins, the strapped right knee nearest the lens.\nImage 1 is the strap (front photo). Image 2 is the strap worn. Image 3 is the garage. Image 4 is the man. Image 5 shows his golf bag.\nThe strap in Image 1 copied exactly \u2014 same shell, band, slides and wordmark, nothing redesigned \u2014 12 \u00d7 5 cm, about a quarter of the frame wide, seated just below his right kneecap as in Image 2, the kneecap uncovered. The same man as Image 4 in a pale-blue golf polo under a navy sleeveless V-neck pullover, grey golf shorts above the knee and white-and-tan golf shoes, the navy-and-white bag of Image 5 mid-swing onto his right shoulder, right hand on its strap, left hand loose. The garage of Image 3 behind, door open to the sunny drive.\nLooking ahead out of the door, mouth closed, smiling.\nIn the frame: one man, one bag; nothing else.\nAfternoon sun from the open door behind him. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nClothing, bag and signs plain \u2014 no lettering or logos but the strap's own wordmark; no second strap.",
+ "script_line": "Book the tee time.",
+ "face": true,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "P5-GARAGE plate",
+   "kind": "location"
+  },
+  {
+   "label": "C4 Graham sheet",
+   "kind": "character"
+  },
+  {
+   "label": "D-HKa (his golf bag)",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP07",
+  "FP11",
+  "FP12",
+  "HT01",
+  "HT06",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: the bag settles onto his shoulder in one swing, about a second.",
+ "ref_urls": [
+  "products/stryde/stryde_refs/front.webp",
+  "products/stryde/stryde_refs/worn_front.jpg",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133539_86cd7faf-7c0d-44f0-8194-a7163d4c183a.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_2bd591b1-d203-465c-aa46-7753d7f613e6.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_091748_93103d12-eb4e-444a-b035-84ebaf026a33.png"
+ ]
+}

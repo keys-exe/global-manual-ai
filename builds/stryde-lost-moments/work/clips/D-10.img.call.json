@@ -1,0 +1,49 @@
+{
+ "beat": "D-10",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"One for each knee.\": seated on the course bench, a strap worn on his right knee and the second strap of the pair held up in his hand beside it.\nClose-up, knee height, three-quarter front, his knees and hand filling the frame.\nImage 1 is the strap (front photo). Image 2 is the strap worn. Image 3 is the course and its bench.\nBoth straps copied exactly from Image 1 \u2014 same shell, band, slides and wordmark, nothing redesigned \u2014 12 \u00d7 5 cm each, each about a quarter of the frame wide: one seated just below his right kneecap as in Image 2, the other resting across his open right palm just above his left knee, wordmark to the lens.\nGrey golf shorts above the knee; his left hand resting on his left thigh. The wooden bench slats and fairway of Image 3 soft behind.\nIn the frame: two knees, two straps, two hands; nothing else.\nWarm afternoon sun from the left. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nShorts and bench plain \u2014 no lettering or logos but the straps' own wordmarks; no third strap.",
+ "script_line": "One for each knee.",
+ "face": false,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg",
+   "kind": "product"
+  },
+  {
+   "label": "P6-COURSE plate (bench)",
+   "kind": "location"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP06",
+  "FP09",
+  "FP11",
+  "HT06",
+  "HT07",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: he lifts the second strap a few centimetres into the light, about a second.",
+ "ref_urls": [
+  "products/stryde/stryde_refs/front.webp",
+  "products/stryde/stryde_refs/worn_front.jpg",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133541_e02553d3-aafb-4345-a6ef-97a97052c6fe.png"
+ ]
+}

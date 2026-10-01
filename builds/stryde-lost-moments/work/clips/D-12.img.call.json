@@ -1,0 +1,38 @@
+{
+ "beat": "D-12",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Nothing to lose but the pain.\": on the first tee, club in hand, he looks out over the course with a small, satisfied smile.\nMedium close-up, slightly high angle, three-quarter front, from mid-chest up, the fairway laid out below him.\nImage 1 is the golf course. Image 2 is the man.\nThe same man as Image 2 \u2014 same face, hair and build \u2014 in a pale-blue golf polo under a navy sleeveless V-neck pullover. The sunny fairway of Image 1 soft behind him.\nLooking ahead down the fairway past the lens, a small warm smile, mouth closed. Right hand resting on the top of a club; left hand out of frame at his side.\nIn the frame: one man, one club; nothing else.\nWarm afternoon sun from the left. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nClothing plain \u2014 no lettering or logos; no second person.",
+ "script_line": "Nothing to lose but the pain.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P6-COURSE plate",
+   "kind": "location"
+  },
+  {
+   "label": "C4 Graham sheet",
+   "kind": "character"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT12",
+  "HT18",
+  "HT20"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: he smiles once, a small warm smile, about a second.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133541_e02553d3-aafb-4345-a6ef-97a97052c6fe.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_2bd591b1-d203-465c-aa46-7753d7f613e6.png"
+ ]
+}

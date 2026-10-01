@@ -1,0 +1,43 @@
+{
+ "beat": "D-06",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"So you walk the course instead of watching it.\": he walks past the parked white buggy toward the lens, his golf bag on his shoulder, mid-stride and smiling.\nMedium shot, waist up, low angle, three-quarter front, the empty buggy soft behind him.\nImage 1 is the golf course and its buggy. Image 2 is the man. Image 3 shows his golf bag.\nThe same man as Image 2 \u2014 same face, hair and build \u2014 in a pale-blue golf polo under a navy sleeveless V-neck pullover, carrying the navy-and-white golf bag of Image 3 on his right shoulder. The white buggy and fairway of Image 1 behind him.\nRight hand on the bag's shoulder strap, left arm swinging forward; looking ahead past the lens, mouth closed in an easy smile.\nIn the frame: one man, one bag, the buggy behind; nothing else.\nWarm afternoon sun from the right. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nClothing, bag and signs plain \u2014 no lettering or logos; no second person.",
+ "script_line": "So you walk the course instead of watching it.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P6-COURSE plate (buggy)",
+   "kind": "location"
+  },
+  {
+   "label": "C4 Graham sheet",
+   "kind": "character"
+  },
+  {
+   "label": "D-HKa (his golf bag)",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT01",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: he takes three steps toward the lens at one step per second, bag on his shoulder, about three seconds.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133541_e02553d3-aafb-4345-a6ef-97a97052c6fe.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_2bd591b1-d203-465c-aa46-7753d7f613e6.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_091748_93103d12-eb4e-444a-b035-84ebaf026a33.png"
+ ]
+}

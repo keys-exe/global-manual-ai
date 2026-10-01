@@ -1,0 +1,43 @@
+{
+ "beat": "D-09",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Sports doctors recommend it.\": a sports doctor in his clinic holds the strap up in one hand, looking at it with quiet approval.\nMedium close-up, eye level, three-quarter front, from mid-chest up.\nImage 1 is the strap (front photo). Image 2 is the strap from three-quarter.\nThe strap in Image 1 copied exactly \u2014 same shell, band, slides and wordmark, nothing redesigned \u2014 12 \u00d7 5 cm, about a quarter of the frame wide, resting across his open right palm at chest height, wordmark to the lens, the band looping loosely below.\nA Black British sports doctor in his fifties, short greying hair, a navy clinic polo; eyes on the strap, mouth closed. Left hand resting at his side. A bright, plain sports-medicine room soft behind him, a treatment couch and a window on the left.\nIn the frame: one man, one strap; nothing else.\nEven daylight from the window on the left. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nClothing and walls plain \u2014 no lettering or logos but the strap's own wordmark; no second person.",
+ "script_line": "Sports doctors recommend it.",
+ "face": true,
+ "room": false,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp",
+   "kind": "product"
+  },
+  {
+   "label": "product_tq_left.jpg",
+   "kind": "product"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP06",
+  "FP11",
+  "HT06",
+  "HT07",
+  "HT16",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: he lifts his eyes from the strap to look ahead, about a second.",
+ "ref_urls": [
+  "products/stryde/stryde_refs/front.webp",
+  "products/stryde/stryde_refs/product_tq_left.jpg"
+ ]
+}

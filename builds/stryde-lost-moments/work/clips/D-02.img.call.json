@@ -1,0 +1,33 @@
+{
+ "beat": "D-02",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Every stride,\": close on his golf shoes walking on fairway grass, caught mid-stride, the back heel lifting and the front foot landing.\nClose-up at ground level, from the side, his feet and lower shins filling about half of the frame wide.\nImage 1 shows his white-and-tan golf shoes.\nThe white-and-tan golf shoes of Image 1 copied exactly, his bare lower shins above them, grey sports socks; the short mown grass of the fairway, damp under an overcast sky.\nBoth hands outside the frame above. In the frame: two feet, two shins, the grass; nothing else. Exactly two legs, the left foot landing, the right heel lifting.\nFlat grey overcast light. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nShoes and socks plain \u2014 no lettering or logos; no third foot.",
+ "script_line": "Every stride,",
+ "face": false,
+ "room": false,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "C4 Graham sheet (shoes)",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: his feet take two strides across the frame at one step per second, about two seconds.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_2bd591b1-d203-465c-aa46-7753d7f613e6.png"
+ ]
+}

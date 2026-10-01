@@ -1,0 +1,44 @@
+{
+ "beat": "D-04",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"This strap sits two centimetres below the kneecap\": extreme close-up of his right knee with the strap seated, his fingertip pointing at the small gap between the kneecap and the strap's top edge.\nExtreme close-up, knee height, straight in front of the knee.\nImage 1 is the strap (front photo). Image 2 is the strap worn.\nThe strap in Image 1 copied exactly \u2014 same shell, band, slides and wordmark, nothing redesigned \u2014 12 \u00d7 5 cm, about half of the frame wide, its notch hugging the kneecap's lower edge exactly as in Image 2.\nHis right index fingertip touching the skin in the gap just above the shell's notch, the rest of the hand curled away to the side, nothing over the wordmark. The hem of his grey golf shorts at the top of the frame; bare knee and shin below.\nIn the frame: one knee, one strap, one hand; nothing else.\nBright afternoon sun from the left. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nShorts plain \u2014 no lettering or logos but the strap's own wordmark; no second hand.",
+ "script_line": "This strap sits two centimetres below the kneecap",
+ "face": false,
+ "room": false,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg",
+   "kind": "product"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP11",
+  "FP12",
+  "HT06",
+  "HT07",
+  "HT14",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: his fingertip taps once on the gap between the kneecap and the strap, about a second.",
+ "ref_urls": [
+  "products/stryde/stryde_refs/front.webp",
+  "products/stryde/stryde_refs/worn_front.jpg"
+ ]
+}

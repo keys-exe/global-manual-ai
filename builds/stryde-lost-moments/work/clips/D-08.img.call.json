@@ -1,0 +1,38 @@
+{
+ "beat": "D-08",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"No buggy.\": seen from behind, he walks off the green carrying his golf bag on his shoulder, past the empty white buggy left parked at the side.\nWide shot, eye level, from behind, his whole figure in the middle of the frame, the buggy to the left.\nImage 1 is the golf course and its buggy. Image 2 shows his golf bag.\nA man in his sixties in a pale-blue golf polo under a navy sleeveless V-neck pullover, grey golf shorts above the knee and white-and-tan golf shoes, the navy-and-white bag of Image 2 on his right shoulder, right hand on its strap, left arm swinging, mid-stride. The empty white buggy and fairway of Image 1.\nIn the frame: one man, one bag, one empty buggy, the green and trees; nothing else.\nWarm afternoon sun from behind the camera. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nClothing, bag and signs plain \u2014 no lettering or logos; no person in the buggy.",
+ "script_line": "No buggy.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P6-COURSE plate (buggy)",
+   "kind": "location"
+  },
+  {
+   "label": "D-HKa (his golf bag)",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT01",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: he walks away across the green at a normal walking pace, three steps, about three seconds.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133541_e02553d3-aafb-4345-a6ef-97a97052c6fe.png",
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260929_091748_93103d12-eb4e-444a-b035-84ebaf026a33.png"
+ ]
+}

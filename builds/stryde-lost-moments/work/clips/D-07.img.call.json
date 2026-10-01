@@ -1,0 +1,32 @@
+{
+ "beat": "D-07",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"All eighteen.\": close on his hand dropping the flagstick back into the hole on the last green, the stick halfway into the cup.\nClose-up, slightly high angle, three-quarter, the hand, the bottom of the flagstick and the hole about half of the frame wide.\nImage 1 shows his hands and skin tone.\nOne hand only: his right, an older man's hand like Image 1, gripping the white flagstick a hand's width above the grass, a pale-blue polo cuff at the wrist. The cup's white rim sunk in the short green grass.\nIn the frame: one hand, one flagstick, the hole, the green; nothing else.\nBright afternoon sun from the left. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nFlagstick and flag plain \u2014 no lettering, numbers or logos; no second hand.",
+ "script_line": "All eighteen.",
+ "face": false,
+ "room": false,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "C4 Graham sheet (hand, sleeve)",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: the flagstick slides down into the cup once, about a second.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_131042_2bd591b1-d203-465c-aa46-7753d7f613e6.png"
+ ]
+}

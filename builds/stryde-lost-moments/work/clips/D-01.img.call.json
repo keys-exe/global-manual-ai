@@ -1,0 +1,33 @@
+{
+ "beat": "D-01",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"A round is hours on your feet.\": two golfers walk away up a long, empty fairway, small in the frame, the green far off ahead of them.\nWide shot from a slightly high angle, from behind them, the fairway stretching up the frame.\nImage 1 is the golf course.\nThe fairway, trees and sky of Image 1, under a flat overcast afternoon sky. Two men in their sixties, one in a navy golf polo, stone golf shorts above the knee and white-and-tan golf shoes, his bag on his shoulder; the other in a grey polo, pulling a trolley. Each mid-stride, one hand on his bag strap or trolley handle, the other loose at his side.\nIn the frame: two men, one bag, one trolley, the fairway; nothing else.\nFlat grey overcast light. An ordinary iPhone photo, 1x lens, nothing staged or retouched.\nClothing, bag and signs plain \u2014 no lettering or logos; no third person.",
+ "script_line": "A round is hours on your feet.",
+ "face": false,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P6-COURSE plate",
+   "kind": "location"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT18"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: they walk on up the fairway at a normal walking pace, three steps each, about three seconds.",
+ "ref_urls": [
+  "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_133541_e02553d3-aafb-4345-a6ef-97a97052c6fe.png"
+ ]
+}
