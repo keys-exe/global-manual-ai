@@ -1260,6 +1260,49 @@ B["B23a"] = clip("B23a",
            {"risk": "a slip (wrong message)", "prevented_by": "'lands softly', 'steady and sure', 'no slipping'"}])
 B["B23a"][0]["motion"] = B["B23a"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the skirt hem lags a little; the strap never moves")
 
+# ── 2026-10-01 video Fixes (user "GO"): B21 "WILL KICK THEN JUMPING KEEP MOVING" (gen 2); B22a "WALKING DOWN STAIR" (gen 3, user GO);
+# B23a "WALKING DOWN STAIR" (gen 2). Same confirmed frames; the motion now carries on. Fixed geography (HT22): she faces down the
+# stairs towards the camera and only ever comes down, never turning. ──
+B["B21"] = clip("B21",
+    "A Black British man of about seventy in a navy T-shirt, khaki shorts and white trainers on the lawn of his sunny back garden, a "
+    "worn brown leather football at his feet, a black STRYDE knee strap with chrome slides seated just below his right kneecap.",
+    "Already moving on the first frame: he kicks the ball with his strapped right leg, a crisp easy kick, and straight away gives a "
+    "small happy hop off both feet and keeps moving — jogging lightly after the ball across the grass, about three seconds, full of "
+    "energy, grinning. He stays in frame. The strap stays exactly where it is — rigid, keeping its shape, size and wordmark.",
+    "no strap moving, no strap sliding, no strap changing shape, no stumbling, no falling, no wincing, no second ball, no ball flying "
+    "up out of frame, no camera following him, no second person, no extra legs, no feet warping, no shoe changing shape",
+    4.0, hi=5,
+    risks=[{"risk": "he leaves frame chasing the ball (v1 ended with the ball gone)", "prevented_by": "'he stays in frame', a light jog, 'no camera following him'"},
+           {"risk": "the strap slides on the hop", "prevented_by": "rigid line, 'no strap moving, no strap sliding'"},
+           {"risk": "legs warp mid-jump", "prevented_by": "one small hop, HOLD-C + NEG-WARP-C"}])
+B["B21"][0]["motion"] = B["B21"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "fabric lags a little; the strap never moves").replace("One small movement, completing inside the clip", "One continuous action, completing inside the clip")
+B["B22a"] = clip("B22a",
+    "Low and close, straight on: an older woman's two bare legs on a carpeted staircase, facing down the stairs towards the camera, a "
+    "black STRYDE strap with chrome slides seated just below EACH kneecap, her denim skirt hem above, white plimsolls below.",
+    "Already walking on the first frame: she walks down the stairs towards the camera, two easy steps down, one foot then the other, "
+    "about two seconds, steady and sure — her legs coming a little closer. She only ever comes down, facing the camera, never turning. "
+    "Both straps stay exactly where they are — rigid, keeping their shape, size and wordmarks.",
+    "no strap moving, no strap sliding, no wordmark changing, no third strap, no going up the stairs, no turning round, no hands, no "
+    "hand at the edge of the frame, no camera following her, no extra legs, no extra knees, no feet warping, no shoe changing shape",
+    3.0, hi=4,
+    risks=[{"risk": "a hand edges into the corner (v2)", "prevented_by": "'no hands, no hand at the edge of the frame'"},
+           {"risk": "the straps slide or smear as she steps", "prevented_by": "rigid line, 'no strap moving, no wordmark changing'"},
+           {"risk": "she turns or goes up", "prevented_by": "fixed geography: facing down the stairs towards the camera, 'only ever comes down', 'no going up the stairs, no turning round'"}])
+B["B22a"][0]["motion"] = B["B22a"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the skirt hem lags a little; the straps never move")
+B["B23a"] = clip("B23a",
+    "Low and close on an older woman's legs on her carpeted staircase, facing down the stairs towards the camera: a black STRYDE strap "
+    "seated just below the kneecap of the leg on the left of the frame, the other knee bare, her denim skirt hem above, white plimsolls.",
+    "Already walking on the first frame: she walks down the stairs towards the camera, two easy steps down, one foot then the other, "
+    "about two seconds, steady and sure. She only ever comes down, facing the camera, never turning. The strap stays exactly where it is "
+    "— rigid, keeping its shape, size and wordmark, the same from first frame to last.",
+    "no strap moving, no strap changing shape, no strap on the bare knee, no second strap, no going up the stairs, no turning round, no "
+    "slipping, no hands, no hand at the edge of the frame, no camera following her, no extra legs, no extra feet, no feet warping",
+    3.0, hi=4,
+    risks=[{"risk": "the strap changes shape (v1, last second)", "prevented_by": "'the same from first frame to last', 'no strap changing shape'"},
+           {"risk": "a hand edges into the corner (v1)", "prevented_by": "'no hands, no hand at the edge of the frame'"},
+           {"risk": "she turns or goes up", "prevented_by": "fixed geography, 'only ever comes down', 'no going up the stairs, no turning round'"}])
+B["B23a"][0]["motion"] = B["B23a"][0]["motion"].replace("hair, fabric and straps lag and keep moving after the body stops", "the skirt hem lags a little; the strap never moves")
+
 if __name__ == "__main__":
     out = HERE / "clips"; out.mkdir(exist_ok=True)
     for b in sys.argv[1:] or B:
