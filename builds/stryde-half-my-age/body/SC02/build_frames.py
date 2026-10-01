@@ -29,6 +29,7 @@ L022 = "If I’m being honest, some days I wasn’t going down them at all. I’
 # Round 3 (user Fix: "I want new ones, all of them are not good"): the emotion is in her face, so every key frame goes close —
 # long lens, shallow focus, her face and hands large in frame, one hard motivated light, the house falling away soft behind.
 GO = "i want new ones the all of theme are not good (scene 2)"
+GO4 = "use gpt image 2 and not sunburst re do all the scene 2"
 FRAMES = [
     dict(beat="SC02-SH01", line=L017, refs=["P-HOUSE", "N"], face=True, body=True, match=None, role="key", gen=3,
          motion="From this frame: she calls the line down the stairs, a small forced smile on 'love', then her eyes drop to the stairs below; her right hand stays on the newel post.",
@@ -69,7 +70,8 @@ if __name__ == "__main__":
                 for i, r in enumerate(f["refs"])]
         call = {"beat": f["beat"], "kind": "image", "mode": 4, "prompt": f["prompt"], "script_line": f["line"], "refs": refs,
                 "face": f["face"], "body": f["body"], "room": True, "product": False, "match": f.get("match"), "edit_of": f.get("edit_of"),
-                "pair": ["gpt_image_2_5", "gpt_image_2_5"], "model": "gpt_image_2_5 · sunburst · high · 2k · 9:16",
+                "pair": ["gpt_image_2", "gpt_image_2"], "model": "gpt-image-2 image-to-image · 9:16 (Kie AI)",
+                "model_override": "user 2026-10-01: \"use gpt image 2 and not sunburst, re do all the scene 2\" — overrides the §18A Sunburst routing for this build's body frames",
                 "role": f["role"], "motion_plan": f["motion"], "scene": 2,
                 "taste": ["HT02", "HT04", "HT09", "HT18", "HT19", "HT22"], "generation": f.get("gen", 1), "fix_note": GO if f.get("gen", 1) > 1 else None}
         (H / f"{f['beat']}.frame.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))

@@ -27,10 +27,11 @@
  "match": null,
  "edit_of": null,
  "pair": [
-  "gpt_image_2_5",
-  "gpt_image_2_5"
+  "gpt_image_2",
+  "gpt_image_2"
  ],
- "model": "gpt_image_2_5 · sunburst · high · 2k · 9:16",
+ "model": "gpt-image-2 image-to-image · 9:16 (Kie AI)",
+ "model_override": "user 2026-10-01: \"use gpt image 2 and not sunburst, re do all the scene 2\" — overrides the §18A Sunburst routing for this build's body frames",
  "role": "key",
  "motion_plan": "From this frame: she sits still, eyes on the window; she blinks once and her thumb moves over her other hand; nothing else moves.",
  "scene": 2,
