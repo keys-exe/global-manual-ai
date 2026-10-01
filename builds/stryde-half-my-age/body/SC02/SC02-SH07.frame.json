@@ -2,7 +2,7 @@
  "beat": "SC02-SH07",
  "kind": "image",
  "mode": 4,
- "prompt": "For the line \"If I’m being honest, some days I wasn’t going down them at all. I’d just stay upstairs.\": Keep this photo exactly as it is — Image 1, the bedroom from the doorway: the bed with the pale green candlewick bedspread on the right, the dark-wood chest of drawers under the window, the walnut wardrobe on the left, the half-open door soft in the near foreground; the camera stays in the doorway, recomposed as a tall vertical frame. SCENE MASTER, Scene 2, that afternoon. Add the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in the pale-blue quilted dressing gown and grey slippers. She sits alone on the near edge of the bed, three-quarter from behind, both feet flat on the carpet, both hands in her lap, her eyes on the window; about a third of the frame's height. The bed made and bare; the bedside table holds only its lamp, switched off. Flat grey overcast daylight through the nets, 6500K, from the window ahead. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
+ "prompt": "For the line \"If I’m being honest, some days I wasn’t going down them at all. I’d just stay upstairs.\": she stays upstairs, alone, instead of going down. SCENE MASTER, Scene 2, that afternoon. Seen from the dark landing through the gap of the half-open bedroom door: the door and frame dark and soft at both sides of the frame, a tall bright sliver of room between them. Image 1 is this bedroom — the pale green candlewick bedspread, the dark-wood chest of drawers under the window — copied exactly. In the sliver, small, sits the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in the pale-blue dressing gown, on the far edge of the bed, three-quarter from behind. Both hands rest in her lap, both feet flat on the carpet; her eyes on the window and the grey garden beyond the nets. The bed made and bare; the bedside table holds only its lamp, switched off. Flat grey afternoon light from the window ahead silhouettes her softly; the landing around the door in shadow. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
  "script_line": "If I’m being honest, some days I wasn’t going down them at all. I’d just stay upstairs.",
  "refs": [
   {
@@ -24,8 +24,8 @@
  "body": true,
  "room": true,
  "product": false,
- "match": "plate",
- "edit_of": "L-BEDROOM v1",
+ "match": null,
+ "edit_of": null,
  "pair": [
   "gpt_image_2_5",
   "gpt_image_2_5"
@@ -38,9 +38,10 @@
   "HT02",
   "HT04",
   "HT09",
-  "HT17",
   "HT18",
   "HT19",
   "HT22"
- ]
+ ],
+ "generation": 2,
+ "fix_note": "I WANT NEW ONES IN SCENE TWO MORE EMOTIONAL CAMERA ANGLES I WANT THE BEST NETFLIX STYLE CINEMATIVE"
 }
