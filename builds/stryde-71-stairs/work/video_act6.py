@@ -27,6 +27,16 @@ G2 = {
    pace="unhurried", smot="in_place",
    risks=[("she strains again","'no effort, no strain… as if it weighs nothing' + no straining / no lunging (user)"),("wheelbarrow warps","HOLD"),("strap shows","no strap showing (under the trousers)")]),
 }
+FIX3 = {"PR-01b": ("generation 3 on the user's go (image v5 confirmed). v2 distorted; the frame was the cause (user: 'use a different image cause he video gets distorted', "
+                   "'NEW TYPE OF IMAGE') → new start image v5: hanging a sheet on the washing line, feet planted; motion is arms only, one peg pressed on, then hands lower")}
+G3 = {
+ "PR-01b": dict(framing="MEDIUM-FULL as in the start frame, in the back garden at the washing line, the laundry basket at her feet.", cam=LOCKED,
+   motion="Standing still with both feet planted, she presses the wooden peg down onto the white sheet on the line in one easy movement over about a second, "
+          "then lowers both hands to her sides with a small satisfied look; the sheet sways gently in the breeze. Her trousers cover her knees.",
+   extra=HID.replace("jeans", "trousers") + ", no stepping, no walking, no bending, no sheet covering her face, no sheet changing shape, no pegs multiplying, no washing line breaking, no basket changing",
+   pace="unhurried", smot="in_place",
+   risks=[("arms and sheet fuse","one peg, one movement + finger clause"),("legs warp","feet planted, no stepping (§27G)"),("strap shows","no strap showing (under the trousers)")]),
+}
 B6 = {
  "L-01a": dict(framing="MEDIUM as in the start frame, on her tree-lined street, seen from behind as she walks away along the sidewalk.", cam=LOCKED,
    motion="She walks away from the camera along the sidewalk at an easy, brisk pace, one step per second, the tote swinging a little on her shoulder, upright and steady; she is still well in frame, a little smaller, at the end.",
@@ -57,6 +67,9 @@ def go(beat, cfg, gen=1, fix=None):
 
 if __name__ == "__main__":
     only = sys.argv[1:]
+    if "--g3" in only:
+        for bt, cfg in G3.items(): go(bt, cfg, gen=3, fix=FIX3[bt])
+        sys.exit()
     for bt, cfg in G2.items():
         if not only or bt in only: go(bt, cfg, gen=2, fix=FIX[bt])
     for bt, cfg in B6.items():
