@@ -97,21 +97,23 @@ SHOTS.append(dict(beat="SC03-SH01", kind="broll", duration=4, line="", vo="L023"
            {"risk": "the brace teleports instead of sliding", "prevented_by": "about ten centimetres over the clip, the straps sagging, end state written"},
            {"risk": "a brand or logo on the brace", "prevented_by": "plain card, negative (HT18)"}]))
 
-SHOTS.append(dict(beat="SC03-SH02", kind="broll", duration=4, line="", vo="L023", subject_motion="still", files=["N", "L-STAIRS", "OUT-N-B3", "INFO-BRACE"], audios=[],
+SHOTS.append(dict(beat="SC03-SH02", kind="broll", duration=4, line="", vo="L023", subject_motion="still", gen=2,
+    fix="flagged on the board, user go \"FIX THEM\": v1 the brace bunched round her ankle read as an ankle walking boot covering her shoe → v2 the knee brace has slid only to her lower shin, crooked, its round kneecap opening showing, a hand's width of bare tights between it and her black shoe, which is fully visible", files=["N", "L-STAIRS", "OUT-N-B3", "INFO-BRACE"], audios=[],
     title="Scene 3 · By evening, round her ankle",
     prompt=" ".join([
         manifest([("@image1", SHEET("Her", HER_B3)), ("@image2", STAIRS), ("@image3", CARD_N), ("@image4", CARD_BRACE)]),
         SERIES, LOOK, INHERIT, LANDING_EVE.replace("Over her right knee, on top of her tights, she wears the hinged knee brace of the prop card.",
-                                                   "The hinged knee brace of the prop card has slipped all the way down her right leg."),
-        "THE SHOT: an extreme close-up in profile at floor level on the landing carpet: her right ankle and black shoe fill the lower half of the frame; the hinged brace of the prop card "
-        "sits bunched and twisted round her ankle just above the shoe, one strap undone and trailing on the carpet; the lamp-lit landing soft behind.",
+                                                   "The hinged knee brace of the prop card has slipped down off her right knee to her lower shin."),
+        "THE SHOT: a close-up in profile at shin height on the landing carpet: her right leg from the knee to the shoe; the hinged KNEE brace of the prop card has slid down from her knee "
+        "and hangs crooked round her lower shin, twisted a quarter turn so its round kneecap opening shows sideways, one strap undone and hanging down; below it a hand's width of bare tights, "
+        "then her whole black low-heeled shoe on the carpet, nothing over it; her bare knee above the brace; the lamp-lit landing soft behind.",
         "Nothing moves except her weight settling a little onto that foot and the loose strap end trembling slightly. It holds.",
         F2, PHYS,
         state("HER", "in the outfit of the card, standing on the landing, the brace bunched round her right ankle", "nothing"),
         "FOCUS: the bunched brace and her ankle are in sharp focus; the carpet behind falls soft. The blur is optical: soft and round, never smeared.",
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no brand or writing on the brace, no hands, no walking, no slippers", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    risks=[{"risk": "the brace back on the knee", "prevented_by": "the SCENE SO FAR changed: slipped all the way down, bunched round the ankle"},
+        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no boot, no ankle brace, no shoe covered, no slippers, no brand or writing on the brace", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    risks=[{"risk": "the brace reads as a walking boot again (v1)", "prevented_by": "it stops on the lower shin, a gap of bare tights, the whole shoe visible, kneecap opening shown, boot negatives"},
            {"risk": "slippers instead of her shoes", "prevented_by": "outfit card, black shoe, slippers negative"},
            {"risk": "a brand on the brace", "prevented_by": "plain card, negative"}]))
 
@@ -167,21 +169,22 @@ SHOTS.append(dict(beat="SC03-SH05", kind="broll", duration=4, line="", vo="L023"
            {"risk": "an extra hand", "prevented_by": "two gloved hands and her one hand placed, negative"},
            {"risk": "writing on the syringe", "prevented_by": "negative (HT18)"}]))
 
-SHOTS.append(dict(beat="SC03-SH06", kind="broll", duration=5, line="", vo="L023 L024", subject_motion="in_place", files=["N", "L-BEDROOM", "OUT-N-B3", "INFO-DRAWER", "INFO-BRACE"], audios=[],
+SHOTS.append(dict(beat="SC03-SH06", kind="broll", duration=5, line="", vo="L023 L024", subject_motion="in_place", gen=2,
+    fix="flagged on the board, user go \"FIX THEM\": v1 asked for two actions (drop the brace, then foot-push the drawer shut) — the drawer never shut and the pile read as bottles → v2 is one action, the drop; the drawer stays pulled half open and crammed, as SH07 v3 and SH08 v2 show it; the pile is braces, sleeves and supports only", files=["N", "L-BEDROOM", "OUT-N-B3", "INFO-DRAWER", "INFO-BRACE"], audios=[],
     title="Scene 3 · Into the drawer",
     prompt=" ".join([
         manifest([("@image1", SHEET("Her", HER_B3)), ("@image2", BEDROOM), ("@image3", CARD_N), ("@image4", CARD_DRAWER), ("@image5", CARD_BRACE)]),
         SERIES, LOOK, INHERIT, BEDROOM_EVE.replace(" Her husband, in the outfit of his card, has come to the open bedroom door from the landing.", ""),
         f"THE SHOT: a medium shot from high over her right shoulder, from behind, looking down: Her, {HER_ID}, in {HER_B3}, stands at the chest of drawers under the window; "
         "the bottom drawer is pulled half open, crammed with braces, sleeves and supports exactly as the drawer card shows it; she holds the hinged brace of the prop card in her right hand.",
-        "She drops the brace onto the pile in the drawer, then pushes the drawer shut with the side of her right foot; it slides most of the way in and stops, still standing proud by a few centimetres, a strap caught at the edge.",
+        "She lets the brace drop from her hand onto the top of the pile; it lands, slumps and settles among the others, a strap hanging over the drawer's front edge. The drawer stays where it is, pulled half open and crammed to the brim. That is all that happens.",
         F2, PHYS,
-        state("HER", "tired, in the outfit of the card, at the chest of drawers, the brace in her hand", "the brace is in the drawer and the drawer is shut but still proud"),
+        state("HER", "tired, in the outfit of the card, at the chest of drawers, the brace in her hand", "the brace lies on top of the pile and the drawer stays half open, crammed"),
         "FOCUS: the drawer and her hand are in sharp focus; the window and net curtains fall soft. The blur is optical: soft and round, never smeared.",
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no drawer bigger than the chest, no drawer closing fully, no brand or writing on anything in the drawer, no talking", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+        negs(NEG_EQUIP, NEG_MORPH, STATIC, "no bottles, no clear tubes, no drawer moving, no drawer bigger than the chest, no brand or writing in the drawer", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "the drawer grows (the user's Fix on the card)", "prevented_by": "the drawer card at the chest's own size, negative"},
-           {"risk": "the drawer shuts cleanly (the line needs it proud)", "prevented_by": "stops a few centimetres proud, a strap caught, negative"},
+           {"risk": "a second action (v1 lost the drawer push)", "prevented_by": "one action, the drop; the drawer stays half open as in SH07/SH08, drawer-moving negative"},
            {"risk": "the brace changes", "prevented_by": "brace card as Image5"}]))
 
 SHOTS.append(dict(beat="SC03-SH07", kind="dialogue", duration=4, line=L025, subject_motion="still", gen=3,
