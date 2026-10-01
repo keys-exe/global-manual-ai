@@ -1,20 +1,44 @@
 {
  "scene": "MUS-OPEN-HK3",
- "register": "MUS-OPEN",
- "length_s": 13.35,
+ "length_s": 14.35,
  "theme": [
-  "one music family: low bowed cello and string drone, sparse felt piano, a soft ticking pulse",
-  "instrumental, sits quietly under a speaking voice"
+  "true-crime documentary thriller score",
+  "suspense and intrigue, not sadness",
+  "pulsing low synth bass ostinato",
+  "ticking clock",
+  "taut staccato strings",
+  "dark mysterious atmosphere",
+  "instrumental, sits under a speaking voice"
  ],
  "avoid": [
-  "drums",
-  "trailer hits",
-  "EDM",
-  "synth lead",
-  "brass",
-  "guitar"
+  "sad",
+  "melancholic",
+  "mournful",
+  "sentimental",
+  "grief",
+  "emotional piano ballad",
+  "slow felt piano",
+  "sombre cello",
+  "tearful",
+  "nostalgic",
+  "cute",
+  "cheerful",
+  "upbeat",
+  "ukulele",
+  "whistling",
+  "hand claps",
+  "corporate jingle",
+  "stock advert jingle",
+  "pop beat",
+  "vocals",
+  "lyrics",
+  "humming",
+  "guitar",
+  "EDM drop",
+  "trailer braams"
  ],
- "tempo": "slow",
+ "tempo": "moderate",
+ "register_note": "MUS-OPEN (\u00a740A) \u2014 theme written by hand, not the register preset: the preset's sparse piano and bowed strings read as sad (user Fix 2026-10-01)",
  "sections": [
   {
    "name": "The callout",
@@ -22,21 +46,33 @@
    "end": 5.11,
    "energy": "low",
    "styles": [
-    "low drone and a soft ticking pulse from the first second",
-    "one sparse low piano note",
-    "a question hanging"
+    "at full level from the very first beat, no intro, no fade-in",
+    "a ticking clock and a low pulsing bass from the first second",
+    "something is wrong",
+    "hidden-camera suspense"
+   ],
+   "avoid": [
+    "fade-in",
+    "quiet intro",
+    "silence"
    ]
   },
   {
    "name": "The question",
    "start": 5.11,
-   "end": 13.35,
+   "end": 14.35,
    "energy": "mid",
    "styles": [
-    "the tension rises one step",
-    "bowed low strings join the drone",
-    "the pulse a little more present",
-    "still unresolved, hands over on the drone"
+    "taut staccato strings join",
+    "the pulse drives harder",
+    "tension climbing, unresolved",
+    "keeps playing at full level right to the end, no fade-out, no ending, no ritardando"
+   ],
+   "avoid": [
+    "fade-out",
+    "ending",
+    "dying away",
+    "silence"
    ]
   }
  ]

@@ -8,7 +8,7 @@ usage: finish.py VARIANT.mp4 HOOK_ID --bgm edit/v4/bgm_v2.mp3 --hook-slot 16.5 -
   no keyword boxes (user 2026-09-29: plain captions only). Captions are the script's words, verbatim.
 - Music: the BGM track is laid so its body sections start where the body starts (the track's hook slot is
   --hook-slot seconds, so a shorter hook starts the music that much later into the track). It is ducked under
-  the VO (sidechain), faded out over the last 2 s, and the mix is normalised to −14 LUFS, true peak −1 dB (C9).
+  the VO (sidechain), faded out over the last 0.5 s (user 2026-10-01: "it should only be 0.5s for the fade"), and the mix is normalised to −14 LUFS, true peak −1 dB (C9).
 """
 import argparse, json, re, subprocess, sys
 from pathlib import Path
@@ -117,10 +117,10 @@ def main():
     (work / "caps.txt").write_text("\n".join(lines) + "\n")
     hook_len = snap(duration(B / f"vo/master/{a.hook}.wav"))
     off = max(a.hook_slot - hook_len, 0.0)
-    fade_st = max(total - 2.0, 0)
+    fade_st = max(total - 0.5, 0)
     graph = (f"[1:v]format=rgba[c];[0:v][c]overlay=0:0:eof_action=pass:format=auto,format=yuv420p[v];"
              f"[2:a]atrim=start={off:.3f},asetpts=PTS-STARTPTS,aresample=48000,volume={a.music_db}dB,"
-             f"afade=t=out:st={fade_st:.3f}:d=2[m];"
+             f"afade=t=out:st={fade_st:.3f}:d=0.5[m];"
              f"[0:a]aresample=48000,asplit=2[vo][sc];"
              f"[m][sc]sidechaincompress=threshold=0.02:ratio=6:attack=15:release=350[md];"
              f"[vo][md]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1:LRA=11,volume=0.9dB,alimiter=limit=0.8:attack=5:release=80:level=false,aresample=48000[a]")

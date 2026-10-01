@@ -1,26 +1,26 @@
 {
   "positive_global_styles": [
-    "investigative documentary suspense",
-    "low sustained drone",
-    "slow felt pulse",
-    "sparse piano",
-    "low plucked and bowed strings",
-    "soft ticking percussion",
-    "minor or modal",
-    "unresolved",
-    "no melody",
-    "one music family: low bowed cello and string drone, sparse felt piano, a soft ticking pulse",
-    "instrumental, sits quietly under a speaking voice",
+    "true-crime documentary thriller score",
+    "suspense and intrigue, not sadness",
+    "pulsing low synth bass ostinato",
+    "ticking clock",
+    "taut staccato strings",
+    "dark mysterious atmosphere",
+    "instrumental, sits under a speaking voice",
     "instrumental",
-    "slow tempo"
+    "moderate tempo"
   ],
   "negative_global_styles": [
-    "drums",
-    "trailer hits",
-    "EDM",
-    "synth lead",
-    "brass",
-    "guitar",
+    "sad",
+    "melancholic",
+    "mournful",
+    "sentimental",
+    "grief",
+    "emotional piano ballad",
+    "slow felt piano",
+    "sombre cello",
+    "tearful",
+    "nostalgic",
     "cute",
     "cheerful",
     "upbeat",
@@ -33,31 +33,43 @@
     "vocals",
     "lyrics",
     "humming",
-    "resolving major cadence",
+    "guitar",
+    "EDM drop",
+    "trailer braams",
     "singing"
   ],
   "sections": [
     {
       "section_name": "The callout",
       "positive_local_styles": [
-        "low drone and a soft ticking pulse from the first second",
-        "one sparse low piano note",
-        "a question hanging"
+        "at full level from the very first beat, no intro, no fade-in",
+        "a ticking clock and a low pulsing bass from the first second",
+        "something is wrong",
+        "hidden-camera suspense"
       ],
-      "negative_local_styles": [],
+      "negative_local_styles": [
+        "fade-in",
+        "quiet intro",
+        "silence"
+      ],
       "duration_ms": 5400,
       "lines": []
     },
     {
       "section_name": "The question",
       "positive_local_styles": [
-        "the tension rises one step",
-        "bowed low strings join the drone",
-        "the pulse a little more present",
-        "still unresolved, hands over on the drone"
+        "taut staccato strings join",
+        "the pulse drives harder",
+        "tension climbing, unresolved",
+        "keeps playing at full level right to the end, no fade-out, no ending, no ritardando"
       ],
-      "negative_local_styles": [],
-      "duration_ms": 10610,
+      "negative_local_styles": [
+        "fade-out",
+        "ending",
+        "dying away",
+        "silence"
+      ],
+      "duration_ms": 11610,
       "lines": []
     }
   ]
