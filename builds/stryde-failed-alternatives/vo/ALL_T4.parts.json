@@ -1,0 +1,62 @@
+{
+ "src": "ALL_T4.mp3",
+ "duration": 187.2,
+ "ranges": {
+  "HK1": [
+   0.0,
+   7.78
+  ],
+  "BODY1": [
+   7.78,
+   61.75
+  ],
+  "HK2": [
+   61.75,
+   69.17
+  ],
+  "BODY2": [
+   69.17,
+   121.48
+  ],
+  "HK3": [
+   121.48,
+   129.07
+  ],
+  "BODY3": [
+   129.07,
+   187.2
+  ]
+ },
+ "diff": [
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstry"
+  ],
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ],
+  [
+   "replace",
+   "bodyweight",
+   "body weight"
+  ],
+  [
+   "replace",
+   "getstryde",
+   "getstride"
+  ]
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "beat": "A4-B1",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (Kling account short, §5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"a4_b1\",\"subject\":\"an older man crouched in his hall lacing his walking boots, a black knee strap on his right knee\",\"camera\":{\"movement\":\"Camera already drifting on the first frame, never static at entry. Continuous low-amplitude breath sway throughout, roughly one cycle per two seconds, mostly vertical with a slight roll. Focus soft for a moment at entry, then settles. One deliberate reframe in the back half as the operator notices the subject sitting off-centre — corrects part of the way, not fully. Camera lags behind the subject, never anticipates it and never moves with it. Still drifting on the final frame.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: crouched low with his right knee deeply bent, he pulls his boot laces tight with both hands and ties a quick knot, about three seconds, weight steady on the bent strapped knee. He is finishing the knot at the cut. The camera stays where it is. The strap keeps its exact shape, size and wordmark in every frame and moves only with what holds it; its rigid shell never bends, flexes or changes proportion. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no bending, no curling, no folding, no melting, no flipping of the product, no strap sliding up or down the leg, no second person, no camera travelling with the subject, no music, no speech, no stairs, no standing up, no strap slipping, no misshapen strap\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_185734_6c8f404b-135e-4b02-b48a-3ef1f2cea15a.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 5,
+ "fix_note": "frame: user asked for another activity instead of the stairs → crouched in the hall lacing his walking boots, strap on the loaded knee",
+ "risks": [
+  {
+   "risk": "fingers fuse or multiply",
+   "prevented_by": "one small hand action at a named pace, HOLD-C, NEG-WARP-C"
+  },
+  {
+   "risk": "object in hand morphs",
+   "prevented_by": "HOLD-C: exact form and count kept; product clause where a strap is held"
+  },
+  {
+   "risk": "camera drifts off the action",
+   "prevented_by": "RIG-R1 low-amplitude sway only"
+  }
+ ],
+ "user_go": "user, 2026-09-28: pressed Fix on the card and said \"fix those\""
+}

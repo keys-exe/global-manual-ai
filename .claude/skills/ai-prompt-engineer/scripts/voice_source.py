@@ -6,7 +6,7 @@ Usage:
                   [--speed 1.2] [--min 30] [--max-pitch-diff 0.10]
 
 At least two Kling generations (step 2), in script order. Each one:
-E11 trim (trim.py) -> atempo speed-up (pitch preserved). Then the sped takes
+E11 trim (trim.py, medium style) -> atempo speed-up (pitch preserved). Then the sped takes
 are joined in order and the whole joined sequence is looped until the total
 is >= --min seconds -> <KEYWORD>_clone_source.mp3.
 Same-voice check: each take's pitch median must sit within --max-pitch-diff
@@ -82,11 +82,9 @@ def main():
     for n, src in enumerate(srcs, 1):
         trimmed = out / f"{a.name}_source{n}.trim.mp4"
         sped = out / f"{a.name}_source{n}.x{a.speed}.wav"
-        # Step 3 — trim dead air and inhales (E11); the clone source is speech only,
-        # so the talking-head natural-pace pauses are off here
+        # Step 3 — trim dead air and inhales (E11) in the medium style (user, 2026-09-29)
         r = subprocess.run([sys.executable, str(HERE / "trim.py"), str(src), "--out", str(trimmed),
-                            "--model", a.model, "--sentence-pause", "0", "--comma-pause", "0",
-                            "--word-pause", "0"], capture_output=True, text=True)
+                            "--model", a.model, "--style", "medium"], capture_output=True, text=True)
         rep = json.loads(r.stdout) if r.stdout.strip() else {"error": r.stderr[-500:]}
         if r.returncode != 0:
             print(json.dumps({"status": "FAIL", "step": 3, "take": n, "src": str(src), "trim": rep}, indent=2))

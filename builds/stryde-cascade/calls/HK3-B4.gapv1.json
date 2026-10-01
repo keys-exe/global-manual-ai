@@ -1,0 +1,43 @@
+{
+ "beat": "HK3-B4",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"Nobody plans for that.\": from this frame, sitting on the edge of the bed she looks through the doorway at the stairs, then down at her hands, one slow look, 3s. Handheld phone, a slight natural sway, the camera never follows her. She stays seated on the bed edge; her hands stay in her lap. No morphing, no extra fingers, no music.",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap1/HK3-B4.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "Nobody plans for that.",
+ "motion_plan": "sitting on the edge of the bed she looks through the doorway at the stairs, then down at her hands, one slow look, 3s",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "pilot": null,
+ "taste": [
+  "HT02",
+  "HT08",
+  "HT09"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ]
+}

@@ -1,8 +1,50 @@
 #!/bin/bash
-# Installs the tools the ai-prompt-engineer scripts use (Drive/inspo fetch,
-# script extraction, trim, voice source, clone, assembly) and pre-loads the
-# Whisper model trim.py uses. Cloud sessions only; safe to re-run.
+# 1. Standards freshness (every session, local CLI and cloud): compares this
+#    checkout with the repo's default branch, fast-forwards it when that is
+#    safe, and otherwise tells the session it is behind — so nobody writes a
+#    prompt on stale standards. Prints to stdout: Claude reads it as context.
+# 2. Installs the tools the ai-prompt-engineer scripts use (Drive/inspo fetch,
+#    script extraction, trim, voice source, clone, assembly) and pre-loads the
+#    Whisper model trim.py uses. Cloud sessions only; safe to re-run.
 set -euo pipefail
+
+STANDARDS="standards/AI_Prompt_Engineer_Global_Standards.md"
+
+standards_version() {  # $1 = git rev (or empty for the working tree)
+  if [ -n "${1:-}" ]; then git show "$1:$STANDARDS" 2>/dev/null; else cat "$STANDARDS" 2>/dev/null; fi \
+    | sed -n 's/^\*\*Version \([0-9][0-9.]*\).*/\1/p' | head -1
+}
+
+freshness() {
+  cd "${CLAUDE_PROJECT_DIR:-.}" || return 0
+  git rev-parse --git-dir >/dev/null 2>&1 || return 0
+  local default behind local_v remote_v branch
+  default=$(git symbolic-ref -q --short refs/remotes/origin/HEAD 2>/dev/null | sed 's#^origin/##' || true)
+  if [ -z "$default" ]; then
+    default=$(timeout 20 git remote show origin 2>/dev/null | sed -n 's/.*HEAD branch: *//p' | head -1 || true)
+  fi
+  [ -n "$default" ] || { echo "session-start: no default branch found on origin — check the standards version by hand"; return 0; }
+  if ! timeout 30 git fetch -q origin "$default" 2>/dev/null; then
+    echo "session-start: could not fetch origin/$default (offline?) — standards V$(standards_version) in this checkout, freshness unknown"
+    return 0
+  fi
+  behind=$(git rev-list --count "HEAD..origin/$default" 2>/dev/null || echo 0)
+  local_v=$(standards_version); remote_v=$(standards_version "origin/$default")
+  if [ "$behind" -eq 0 ]; then
+    echo "session-start: standards V${local_v:-?} — checkout up to date with origin/$default"
+    return 0
+  fi
+  branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "")
+  if [ "$branch" = "$default" ] && [ -z "$(git status --porcelain 2>/dev/null)" ] \
+     && git merge -q --ff-only "origin/$default" 2>/dev/null; then
+    echo "session-start: fast-forwarded $default by $behind commit(s) → standards V${remote_v:-?} (was V${local_v:-?})"
+    return 0
+  fi
+  echo "session-start: THIS CHECKOUT IS $behind COMMIT(S) BEHIND origin/$default — standards here V${local_v:-?}, on origin/$default V${remote_v:-?}."
+  echo "session-start: merge the default branch before writing any prompt or deliverable: git merge origin/$default  (on branch '$branch'; uncommitted changes, if any, are why it was not fast-forwarded for you)"
+}
+
+freshness || true
 
 if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
   exit 0

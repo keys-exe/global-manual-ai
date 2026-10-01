@@ -1,0 +1,26 @@
+{
+ "beat": "B-03b",
+ "status": "review",
+ "videoAsset": "50576581eae49f08b1bc7418f810fd0f",
+ "videoType": "video/mp4",
+ "videoConnector": "Kie AI",
+ "videoUrl": "https://tempfile.aiquickdraw.com/k/94359fdb48a321f5789e2b41605e8160_1_1790698834_8534.mp4",
+ "credits": 54.0,
+ "duration": 3,
+ "videoAt": 1790698900723,
+ "updatedAt": 1790698900723,
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "50576581eae49f08b1bc7418f810fd0f",
+   "type": "video/mp4",
+   "url": "https://tempfile.aiquickdraw.com/k/94359fdb48a321f5789e2b41605e8160_1_1790698834_8534.mp4",
+   "model": "kling-3.0 pro (Kie AI)",
+   "connector": "Kie AI",
+   "credits": 54.0,
+   "size": 7455878,
+   "at": 1790698900723,
+   "note": ""
+  }
+ ]
+}

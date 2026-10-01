@@ -42,7 +42,7 @@ DRIVE, BUILD and MODE are required. LOOM is optional: set the Loom to "anyone wi
 ```
 BUILD: 
 MODE: 1 Realistic | 2 3D Pixar | 3 Claymation | 4 Realistic Film | 5 Pixar Film
-FORMAT: UGC Ad | Short VSL | Long VSL | Narrated B-roll | AI Drama VSL
+FORMAT: UGC Ad | Short VSL | Long VSL | Narrated B-roll | AI Drama VSL | Music Video (no VO, no talking heads — the music replaces them)
 RUN: MANUAL | AUTOMATION
 TOOLS: 
 LOOM: (optional)

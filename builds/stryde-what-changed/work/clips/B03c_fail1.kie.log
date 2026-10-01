@@ -1,0 +1,14 @@
+{"taskId": "8a80c318176bff8d592830e2eae787e0", "created": true}
+{
+  "taskId": "8a80c318176bff8d592830e2eae787e0",
+  "state": "generating",
+  "timed_out": true,
+  "model": "kling-3.0/video"
+}
+{"taskId": "8a80c318176bff8d592830e2eae787e0", "created": true}
+{
+  "taskId": "8a80c318176bff8d592830e2eae787e0",
+  "state": "fail",
+  "credits": 0.0,
+  "failMsg": "Internal Error"
+}

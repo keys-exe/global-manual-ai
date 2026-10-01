@@ -1,0 +1,35 @@
+{
+ "beat": "C-HKb",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\": \"c_hkb\", \"subject\": \"Close-up at knee height, three-quarter from the outer side, of the right knee of a Black British man of sixty-seven in a tan armchair, both hands round a white mug of coffee resting on his right thigh, the black knee strap snug just under his kneecap. Exactly as in the start frame.\", \"camera\": {\"movement\": \"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\", \"framing\": \"PROPPED as in the start frame.\"}, \"motion\": \"Already rising on the first frame: he stands up from the armchair confidently in one smooth push, about a second and a half, both hands keeping the coffee mug level and upright, weight coming forward over his right foot; his right leg straightens and takes his full weight with no hesitation, the strapped knee rising in frame and staying in frame, then he stands tall and steady. The camera stays where it is. The strap keeps its exact shape, size and wordmark in every frame, moves only with the leg and stays exactly under the kneecap; its rigid shell never bends. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly \u2014 motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\", \"lighting\": \"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\", \"style\": \"As in the start frame.\", \"negatives\": \"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flipping of the product, no strap sliding on the leg, no product covering the kneecap, no second unit, no hands on the strap, no coffee spilling, no second mug, no wince, no hesitation, no wobble, no knee leaving the frame, no camera travelling with the subject, no music, no speech\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_213609_65caf13d-b54c-42ea-84d2-5a225529f93b.png",
+ "start_approved": true,
+ "approved_by": "user: FIX THOSE (2026-09-28) on frame v4 (coffee mug) \u2014 go for the 4th generation",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 4,
+ "risks": [
+  {
+   "risk": "legs warp while standing up",
+   "prevented_by": "stand-up staging: already rising at frame one, one push at a countable pace; HOLD-C + NEG-WARP-C"
+  },
+  {
+   "risk": "the strap slides or the knee leaves frame",
+   "prevented_by": "'stays exactly under the kneecap'; 'staying in frame'; 'no knee leaving the frame'"
+  },
+  {
+   "risk": "the mug spills, doubles or deforms while he rises",
+   "prevented_by": "'both hands keeping the coffee mug level and upright'; 'no coffee spilling, no second mug, no mug changing shape'; HOLD-C"
+  }
+ ],
+ "fix_note": "Fault in the frame (user Fix: make holding a cap of cofe both hand and stand confidently): mug added in both hands in frame v4 \u2192 same confident stand-up, mug kept level; 4th video generation \u2192 user's go (\u00a722X)",
+ "user_go": "user: FIX THOSE (2026-09-28), the only open Fix being this clip after the go was asked \u2014 go for the 4th generation"
+}

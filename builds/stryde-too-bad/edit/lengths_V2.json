@@ -1,0 +1,188 @@
+{
+  "master_s": 54.71,
+  "lead_s": 0.25,
+  "skip_s": 0.4,
+  "lengths": [
+    {
+      "beat": "HK2-01",
+      "cut_s": 0.0,
+      "early_s": 0.02,
+      "anchor": "Too",
+      "on_screen_s": 2.46,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-01a",
+      "cut_s": 2.4583,
+      "early_s": 0.242,
+      "anchor": "Built",
+      "on_screen_s": 3.17,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "MECH-S1",
+      "cut_s": 5.625,
+      "early_s": 0.255,
+      "anchor": "sleeves",
+      "on_screen_s": 2.08,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B2-02",
+      "cut_s": 7.7083,
+      "early_s": 0.262,
+      "anchor": "You've",
+      "on_screen_s": 2.04,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "MECH-06",
+      "cut_s": 9.75,
+      "early_s": 0.26,
+      "anchor": "So",
+      "on_screen_s": 2.46,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "MECH-02",
+      "cut_s": 12.2083,
+      "early_s": 0.252,
+      "anchor": "Seventeen",
+      "on_screen_s": 2.71,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-02",
+      "cut_s": 14.9167,
+      "early_s": 0.263,
+      "anchor": "one",
+      "on_screen_s": 2.37,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "MECH-04",
+      "cut_s": 17.2917,
+      "early_s": 0.248,
+      "anchor": "This",
+      "on_screen_s": 3.04,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B2-06a",
+      "cut_s": 20.3333,
+      "early_s": 0.257,
+      "anchor": "In",
+      "on_screen_s": 3.25,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B1-05b",
+      "cut_s": 23.5833,
+      "early_s": 0.237,
+      "anchor": "And",
+      "on_screen_s": 2.62,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "MECH-05",
+      "cut_s": 26.2083,
+      "early_s": 0.242,
+      "anchor": "Perfect",
+      "on_screen_s": 4.54,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "B1-11",
+      "cut_s": 30.75,
+      "early_s": 0.25,
+      "anchor": "Over",
+      "on_screen_s": 2.75,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-04b",
+      "cut_s": 33.5,
+      "early_s": 0.23,
+      "anchor": "Adjustable,",
+      "on_screen_s": 1.5,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B2-09b",
+      "cut_s": 35.0,
+      "early_s": 0.02,
+      "anchor": "with",
+      "on_screen_s": 3.29,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B1-10",
+      "cut_s": 38.2917,
+      "early_s": 0.268,
+      "anchor": "No",
+      "on_screen_s": 2.92,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B2-11",
+      "cut_s": 41.2083,
+      "early_s": 0.262,
+      "anchor": "Recommended",
+      "on_screen_s": 3.21,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B2-12",
+      "cut_s": 44.4167,
+      "early_s": 0.233,
+      "anchor": "Only",
+      "on_screen_s": 3.5,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B1-12a",
+      "cut_s": 47.9167,
+      "early_s": 0.233,
+      "anchor": "Buy",
+      "on_screen_s": 2.0,
+      "skip_s": 0.4,
+      "call_s": 3
+    },
+    {
+      "beat": "B2-14",
+      "cut_s": 49.9167,
+      "early_s": 0.033,
+      "anchor": "And",
+      "on_screen_s": 2.67,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B1-13b",
+      "cut_s": 52.5833,
+      "early_s": 0.237,
+      "anchor": "Nothing",
+      "on_screen_s": 2.13,
+      "skip_s": 0.4,
+      "call_s": 4
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,12 @@
+{"taskId": "87bbe5addffb1e6efc7aabdb3ec2f22e", "created": true}
+{
+  "taskId": "87bbe5addffb1e6efc7aabdb3ec2f22e",
+  "state": "success",
+  "credits": 72.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/87bbe5addffb1e6efc7aabdb3ec2f22e_1_1790755572_7448.mp4"
+  ],
+  "saved": "act4/MECH-034_clip_v2.mp4",
+  "model": "kling-3.0-omni/image-to-video"
+}

@@ -1,0 +1,33 @@
+{
+ "beat": "B14c",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b14c\",\"subject\":\"A premium 3D anatomical model of a knee seen straight from the front on a near-black field, a black STRYDE knee strap with two rounded peaks, chrome slides and a grey stryde wordmark seated across the front of the leg just below the kneecap. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already under load on the first frame: a soft warm glow shows on the tendon at the edges of the strap; over about two seconds it fades and cools to a calm, even pearly light as the strap takes the load, then stays calm. The strap stays exactly where it is — rigid, its shape, peaks and wordmark unchanged; the kneecap stays uncovered above it. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; the strap never moves; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no strap moving, no strap sliding, no strap changing shape, no strap changing size, no wordmark changing, no second strap, no arrows, no text, no labels, no glow spreading down the shin, no second limb, no camera orbit, no zoom, no music, no speech, no slow motion\"}",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_163337_ba5e6993-4e59-4bf8-8ec8-9aeb85e5a9de.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the strap warps or the wordmark smears",
+   "prevented_by": "rigid-product line in motion, 'no strap changing shape/size, no wordmark changing'"
+  },
+  {
+   "risk": "the strap slides up onto the kneecap",
+   "prevented_by": "'stays exactly where it is', 'no strap moving, no strap sliding'"
+  },
+  {
+   "risk": "the glow spreads or text appears",
+   "prevented_by": "'no glow spreading down the shin', 'no arrows, no text, no labels'"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}

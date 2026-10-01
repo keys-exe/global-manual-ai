@@ -1,0 +1,33 @@
+{
+ "beat": "B10a",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"b10a\",\"subject\":\"An older white woman's legs seen low and front-on as she stands on a tiled kitchen floor: a plain grey knit sleeve pulled on round her whole right knee, both her hands resting on it, pink cardigan cuffs, a navy skirt hem above, white canvas plimsolls below. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Locked off on a small tripod: the camera does not move at all, no pan, no tilt, no push, no drift.\",\"framing\":\"As in the start frame.\"},\"motion\":\"Already moving on the first frame: her hands smooth the sleeve once round the knee, pressing it snug from the sides and then down over the kneecap, and come to rest on it — one unhurried smoothing, about two seconds. She stays standing where she is, her feet planted, and the sleeve stays one even grey tube round the whole knee. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no camera movement, no zoom, no walking, no stepping, no pulling the sleeve off, no sleeve slipping down, no sleeve changing colour or shape, no face, no second person, no knee strap, no brace, no readable text, no logos, no extra fingers, no extra hands, no music, no speech, no slow motion\"}",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_124139_4d54cb95-4893-4963-aeaa-56169d8697f8.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "the sleeve warps, slips or morphs under her hands",
+   "prevented_by": "one slow smoothing, 'stays one even grey tube', HOLD-C + NEG-WARP-C, 'no sleeve slipping down'"
+  },
+  {
+   "risk": "hands or fingers warp",
+   "prevented_by": "one movement then rest, 'no extra fingers, no extra hands'"
+  },
+  {
+   "risk": "she walks or the legs move out of frame",
+   "prevented_by": "'She stays standing where she is, her feet planted', 'no walking, no stepping'"
+  }
+ ],
+ "approved_by": "user: board Confirm + 'confirm' / 'CONFIRM' (2026-09-29)"
+}

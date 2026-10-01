@@ -1,0 +1,2 @@
+file '/home/user/global-manual-ai/builds/stryde-what-changed/voice/Changed_source1.x1.2.wav'
+file '/home/user/global-manual-ai/builds/stryde-what-changed/voice/Changed_source2.x1.2.wav'

@@ -1,0 +1,34 @@
+{
+ "beat": "C-HKa",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "{\"shot\":\"c_hka\",\"subject\":\"Over the shoulder of a Black British man of sixty-seven standing at his bay window, hand gripping the armchair, looking out; outside, a neighbour in a blue jacket walks his liver-and-white springer spaniel on a red lead past his front gate. Exactly as in the start frame.\",\"camera\":{\"movement\":\"Propped, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame.\"},\"motion\":\"Already moving on the first frame: he tries to take one step toward the window and struggles \u2014 his weight leans hard onto the hand gripping the armchair, his right knee stays stiff and won't bend, his right foot drags forward a short way and he winces through his shoulders, a slow limping half-step in about two seconds, then he stops, braced on the chair. Outside, at the same time, the neighbour and the spaniel walk on past the gate at normal walking speed. The camera stays where it is. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last \u2014 nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly \u2014 motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame \u2014 same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no camera travelling with the subject, no man turning to camera, no face in frame, no dog in the room, no second dog, no knee strap, no easy walking, no confident stride, no letting go of the chair, no readable lettering, no music, no speech, no slow motion\"}",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_201025_d31d1ca1-e6e4-4c79-b4e8-911966ca7757.png",
+ "start_approved": true,
+ "approved_by": "user Confirm on the board + CONFIRM HOOK 3 (2026-09-28)",
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "risks": [
+  {
+   "risk": "the dog or neighbour warps while walking",
+   "prevented_by": "small figures crossing at normal walking speed, start mid-stride; HOLD-C + NEG-WARP-C"
+  },
+  {
+   "risk": "the man turns to camera or his face appears while he moves",
+   "prevented_by": "step toward the window (away from camera); 'no man turning to camera, no face in frame'"
+  },
+  {
+   "risk": "camera follows the walkers",
+   "prevented_by": "RIG-R3C propped; 'the camera stays where it is'"
+  }
+ ],
+ "fix_note": "Fault in the motion (user Fix: MAKE IT HE STRUGGLING TO WALK): v1 had him standing still \u2192 motion rewritten as one limping half-step toward the window, braced on the armchair; frame unchanged (confirmed)"
+}

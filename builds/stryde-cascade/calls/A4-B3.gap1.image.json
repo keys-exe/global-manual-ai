@@ -1,0 +1,33 @@
+{
+ "beat": "A4-B3",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Three years with orthopedic surgeons.\": on a clean clinic desk, a white life-size knee joint model with the strap fitted just below its kneecap, and a clinician's gloved hand turning the model towards us. The strap is exactly the product in the attached front photo — the strap is small — a rigid black shell about 12 × 5 cm, no longer than a palm, on a black knit band — centred on the model's tendon below the kneecap. Eye level, close, the model and strap sharp; a plain clinic room soft behind. One hand, no face, nothing written. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "Three years with orthopedic surgeons.",
+ "face": false,
+ "room": false,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "STRYDE front photo",
+   "kind": "product",
+   "id": "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5"
+  }
+ ],
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "HT06"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "a gloved hand turns the knee model a quarter turn to show the strap on the tendon, one turn, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "note": "build keeps its step-2 image lock (nano_banana_pro); one render — this board has no A/B view"
+}

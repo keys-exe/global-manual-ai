@@ -1,0 +1,36 @@
+{
+ "beat": "A5-B1b",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Three houses this year have not called me back.\": the fitter sits sideways in the driver's seat of his van, door open, a paper job diary resting open on his knee, his right hand running a pen down the page and his left hand holding the diary's edge, a small satisfied smile. The steering wheel behind him, his hands clear of it. Eye level through the open door, three-quarter, medium shot, his face sharp. He is the same man as the attached cast sheet, in a worn tan canvas work jacket open over a dark green work shirt, charcoal work trousers. The van as in the attached plate. Handwriting unreadable. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "Three houses this year have not called me back.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "N-CHINESE cast sheet",
+   "kind": "character",
+   "id": "8cc4a583-5d7d-4f39-9ef7-7fe7899d298b"
+  },
+  {
+   "label": "PLATE-VAN",
+   "kind": "location",
+   "id": "b1cc1764-3e34-4b37-b8c6-0abf55cfe68e"
+  }
+ ],
+ "taste": [
+  "HT12",
+  "HT09"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "sitting in the driver's seat, he runs his pen down the diary page on his knee and smiles slightly, one stroke, 2s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "user Fix: \"distorted image\" → hand, diary and wheel were tangled; diary now rests on his knee, one pen hand, wheel behind"
+}

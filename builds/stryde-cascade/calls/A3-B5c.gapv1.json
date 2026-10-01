@@ -1,0 +1,43 @@
+{
+ "beat": "A3-B5c",
+ "connector": "kling",
+ "route": "kie kling-3.0/video (§5)",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \"and that is the only thing that stops the sequence.\": from this frame, the camera eases slowly down the bare wall beside the stairs from the short top rail to the empty lower wall, 3s. Handheld phone, a slight natural sway, the camera never follows the subject. The stairs, the one short rail and the bare wall keep their exact shape. No morphing, no extra fingers, no music.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "/home/user/global-manual-ai/builds/stryde-cascade/renders/gap3/A3-B5c.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "script_line": "and that is the only thing that stops the sequence.",
+ "motion_plan": "the camera eases slowly down the bare wall beside the stairs from the short top rail to the empty lower wall, 3s",
+ "motion_confirmed": true,
+ "risk_class": null,
+ "pilot": null,
+ "pin_waived": null,
+ "taste": [
+  "HT09",
+  "HT12"
+ ],
+ "risks": [
+  {
+   "risk": "shape drifts",
+   "prevented_by": "one action, shape-and-count fact"
+  },
+  {
+   "risk": "camera wanders",
+   "prevented_by": "one camera clause"
+  },
+  {
+   "risk": "extra limbs/fingers",
+   "prevented_by": "count fact + negative"
+  }
+ ]
+}

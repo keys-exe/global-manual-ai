@@ -1,0 +1,41 @@
+{
+ "beat": "A4-B4",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Two hundred thousand people wearing one.\": two older people walking side by side on a seaside promenade in shorts, seen from behind at knee height, each wearing one strap on one knee. Each strap is exactly the product in the attached front photo — the strap is small — a rigid black W-topped shell about 12 × 5 cm, narrower than the knee, on one soft black knit band that loops once round the leg — worn centred on the tendon just below the kneecap, the kneecap's lower edge in the shell's notch, as in the attached worn frame. Low angle, three-quarter-back, the knees and straps sharp, waist down. Bright overcast daylight. Exactly four legs, two straps. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "Two hundred thousand people wearing one.",
+ "face": false,
+ "room": false,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "STRYDE front photo",
+   "kind": "product",
+   "id": "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5"
+  },
+  {
+   "label": "A4-B1 confirmed (C2 wearing the strap)",
+   "kind": "frame",
+   "id": "6c8f404b-135e-4b02-b48a-3ef1f2cea15a"
+  }
+ ],
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP07",
+  "HT06"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "the two walkers take three brisk steps along the promenade away from us, one step per second, 3s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "user Fix: \"fix the product\" → straps were oversized and sat wrong; now true size, seated on the tendon as the worn frame",
+ "act": "Act 4"
+}

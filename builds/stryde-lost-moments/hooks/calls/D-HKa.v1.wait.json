@@ -1,0 +1,11 @@
+{
+  "taskId": "d3e3e06d2de383fc89b197e817612dce",
+  "state": "success",
+  "credits": 90.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/d3e3e06d2de383fc89b197e817612dce_1_1790637685_8802.mp4"
+  ],
+  "saved": "D-HKa.v1.mp4",
+  "model": "kling-3.0/video"
+}

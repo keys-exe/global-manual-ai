@@ -1,0 +1,40 @@
+{
+ "beat": "A4-B4",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line \"Two hundred thousand people wearing one.\": front-on at knee height, three different older people sit side by side on a wooden park bench in shorts and summer clothes, seen from the waist down, each wearing one strap on one knee. Each strap is exactly the product in the attached front photo — the strap is small — a rigid black W-topped shell about 12 × 5 cm, narrower than the knee, on one soft black knit band that loops once round the leg — centred on the tendon just below the kneecap as in the attached worn frame. Different skin tones, shoes and shorts; sunny park path and grass soft behind. Exactly six legs, three straps. An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.",
+ "script_line": "Two hundred thousand people wearing one.",
+ "face": false,
+ "room": false,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "STRYDE front photo",
+   "kind": "product",
+   "id": "f0b4f34e-379b-4b41-84de-dcbea3cd8ad5"
+  },
+  {
+   "label": "A4-B1 confirmed (C2 wearing the strap)",
+   "kind": "frame",
+   "id": "6c8f404b-135e-4b02-b48a-3ef1f2cea15a"
+  }
+ ],
+ "taste": [
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP07",
+  "HT06",
+  "HT01"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "motion_plan": "the camera glides slowly past the three knees from left to right while they sit still, 3s",
+ "model": "nano_banana_pro",
+ "render_count": 1,
+ "fix_note": "user Fix: \"i need a new style of image\" → new idea: three people side by side on a park bench, front-on, each wearing one strap"
+}
