@@ -129,15 +129,16 @@ SHOTS.append(dict(
         "THE SHOT: a close-up over the daughter's shoulder, up on the second floor of the atrium, one full storey above the ground floor: the soft back of the daughter's head and charcoal coat shoulder frame the near right edge, out of focus; "
         "Her, " + HER_ID + ", in " + HER_OUT + ", stands on the upper-floor gallery with her back to the glass gallery rail, facing the camera side, her two shopping bags set down by her feet. "
         "Behind her, beyond the glass rail, the atrium drops away a full storey: the ground floor is far below and small, the glass lift shaft rises past the rail, and the skylight is close overhead — the shot is unmistakably upstairs.",
-        "She waits, breathing easily, looking at her daughter, and her eyebrows lift a little — a small, dry, unbothered look that stays. She blinks naturally; nothing else moves.",
-        F1(20), PHYS,
+        "She stands still and grounded: both feet flat on the gallery floor, planted the whole clip, her weight settling once onto her left leg near the start. She waits, breathing easily — her shoulders rise and fall with each breath — looking at her daughter, and her eyebrows lift a little: a small, dry, unbothered look that stays. She blinks naturally. Her body does not travel at all; she and the floor under her stay exactly where they are relative to the rail and the lift shaft behind her.",
+        F2, PHYS,
         state("HER", "calm, not out of breath, bob and fringe in place, jacket zipped halfway, both shopping bags on the floor by her feet, at the upper-floor gallery rail", "her eyebrows lift a little"),
         state("THE DAUGHTER", "out of breath, coat open, bags on her forearms, back to the camera", "nothing"),
         "FOCUS: the nearest eye of Her is in sharp focus; the daughter's shoulder in front and the atrium behind fall to a soft, recognisable shape. The blur is optical: soft and round, never smeared.",
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, "no talking, no mouth moving, no ground-floor setting, no shopfronts at her level behind her, no floor tiles stretching away behind her at her level", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    gen=2, fix="User Fix: \"this should be on the second floor\" → fault in the prompt's set: 'on the upper gallery' was one phrase the model ignored, so it staged her at ground level → the second floor stated three ways (one storey up, the drop to the ground floor behind her through the glass rail, the lift shaft and skylight close), the place clause reworded to the upper floor, ground-floor negatives added",
-    risks=[{"risk": "staged on the ground floor again", "prevented_by": "the drop behind her through the glass rail, ground-floor negatives"},
+        negs(NEG_EQUIP, NEG_MORPH, "no sliding, no gliding, no drifting across the floor, no feet skating, no body moving without the feet stepping, no camera push, no zoom, no background sliding behind her, no talking, no mouth moving, no ground-floor setting, no shopfronts at her level behind her, no floor tiles stretching away behind her at her level", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    gen=3, go="FIX THOSE (user, 2026-10-01, after the v2 Fix note)", fix="User Fix v2: \"IT FEELS LIKE SLIDING\" → fault in the motion: an F1 dolly push on a standing subject with nothing else moving read as her gliding across the floor (the background slid while she stayed still) → camera locked on a tripod (F2, no push), her feet planted with one weight shift and visible breathing so the body is grounded, sliding / gliding / camera-push negatives; v1 Fix kept: \"this should be on the second floor\" → fault in the prompt's set: 'on the upper gallery' was one phrase the model ignored, so it staged her at ground level → the second floor stated three ways (one storey up, the drop to the ground floor behind her through the glass rail, the lift shaft and skylight close), the place clause reworded to the upper floor, ground-floor negatives added",
+    risks=[{"risk": "she still looks like she glides", "prevented_by": "F2 locked camera, feet planted, weight shift, sliding negatives"},
+           {"risk": "staged on the ground floor again", "prevented_by": "the drop behind her through the glass rail, ground-floor negatives"},
            {"risk": "her mouth moves as if speaking", "prevented_by": "SILENT, 'no talking, no mouth moving', generate_audio false"},
            {"risk": "the look overplayed", "prevented_by": "'a little', NEG-DRAMA"},
            {"risk": "bags jump back into her hands", "prevented_by": "STATE-CARRY: bags on the floor"}]))
@@ -153,7 +154,7 @@ if __name__ == "__main__":
                 "ingredients_approved": True, "files": [FILES[f] for f in s["files"]],
                 "audios": [AUDIO[a] for a in s["audios"]], "generate_audio": bool(s["line"]),
                 "dialogue": s["line"] or None, "script_line": s["line"] or None, "pace": "unhurried",
-                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": s.get("gen", 1), "fix_note": s.get("fix"),
+                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": s.get("gen", 1), "fix_note": s.get("fix"), "user_go": s.get("go"),
                 "risks": s["risks"], "vo": s.get("vo")}
         (H / f"{s['beat']}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
         (H / f"{s['beat']}.prompt.txt").write_text(s["prompt"])
