@@ -7,7 +7,7 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Lyric,Poppins ExtraBold,82,&H003CC9FF,&H00FFFFFF,&H00101A2B,&H96000000,0,0,0,0,100,100,1,0,1,6,4,2,70,70,520,1
+Style: Lyric,Poppins ExtraBold,94,&H003CC9FF,&H00FFFFFF,&H00101A2B,&H96000000,0,0,0,0,100,100,1,0,1,7,4,2,60,60,500,1
 Style: Over0,Poppins Black,96,&H003CC9FF,&H003CC9FF,&H00101A2B,&H96000000,0,0,0,0,100,100,1,0,1,7,4,2,70,70,640,1
 Style: Over1,Poppins ExtraBold,66,&H00FFFFFF,&H00FFFFFF,&H00101A2B,&H96000000,0,0,0,0,100,100,1,0,1,6,4,2,70,70,520,1
 

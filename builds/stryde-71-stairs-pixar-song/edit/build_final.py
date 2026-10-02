@@ -36,7 +36,16 @@ def dur(p):
                                 capture_output=True, text=True).stdout)
 
 
+def frames(p):
+    r = subprocess.run(["ffprobe", "-v", "error", "-count_packets", "-select_streams", "v:0", "-show_entries", "stream=nb_read_packets",
+                        "-of", "csv=p=0", str(p)], capture_output=True, text=True).stdout.strip()
+    return int(r) if r.isdigit() else -1
+
+
 def enc(args, out):
+    n = int(args[args.index("-frames:v") + 1]) if "-frames:v" in args else None
+    if n and Path(out).exists() and frames(out) == n:
+        return                                   # already rendered at this length
     subprocess.run(["ffmpeg", "-v", "error", "-y", *args, "-an", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "16",
                     "-preset", "medium", str(out)], check=True)
 
@@ -64,9 +73,7 @@ for i, r in enumerate([] if os.environ.get("CAPTIONS_ONLY") else cuts):
     parts.append(seg)
     log.append({"beat": beat, "clip": clips[beat], "cut_s": round(t0, 3), "end_s": round(t1, 3), "frames": n, "in_s": round(tin, 3), "play": how})
 # end card
-end_t0 = VOCAL_END
-if os.environ.get("CAPTIONS_ONLY"):
-    n_end = 0; n_end = fr(song_len) - fr(end_t0)
+end_t0 = VOCAL_END; n_end = fr(song_len) - fr(end_t0)
 still = tmp / "end.png"
 os.environ.get("CAPTIONS_ONLY") or subprocess.run(["ffmpeg", "-v", "error", "-y", "-sseof", "-0.1", "-i", str(B / clips[F16_ENDCARD_SRC]), "-frames:v", "1", "-update", "1", str(still)], check=True)
 seg = tmp / "end.mp4"
