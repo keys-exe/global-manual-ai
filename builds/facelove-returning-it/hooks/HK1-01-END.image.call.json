@@ -1,0 +1,38 @@
+{
+ "beat": "HK1-01-END",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "Keep this photo exactly as it is — Image 1: the same woman, the same bare face, robe, vanity and bedroom, the same light and camera. Change only her hands, for the line — I am so mad, and this is exactly why you read the reviews before you buy another foundation. —: the end of her move — she has brought the closed stick down from her cheek and holds it flat across her open left palm at chest height, her right fingers resting on it. Image 2 is the product, copied exactly — same shape, same violet finish, one wordmark; the size of a thick marker pen, a little longer than her palm is wide, about a quarter of the frame wide. Exactly one stick, capped; both hands at chest height in front of her robe, every finger visible; both eyes on the lens, brows drawn together, mouth closed. No lettering but the stick's own wordmark, no other products, no makeup, no smile, no phone in frame.",
+ "script_line": "I am so mad, and this is exactly why you read the reviews before you buy another foundation.",
+ "face": true,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "HK1-01 A start frame (confirmed)",
+   "kind": "frame"
+  },
+  {
+   "label": "FACELOVE stick, closed (CLOSED.jpg)",
+   "kind": "product"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "HK1-01 A (confirmed; Higgsfield job e63abe33-fa37-44fa-81b3-ad83b4b3b4cf)",
+ "taste": [
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT20"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "media": [
+  "e63abe33-fa37-44fa-81b3-ad83b4b3b4cf",
+  "6258295b-8f69-4d47-950f-1c980dc2af8b"
+ ]
+}
