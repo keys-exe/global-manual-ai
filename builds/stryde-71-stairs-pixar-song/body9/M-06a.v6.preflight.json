@@ -1,0 +1,76 @@
+{
+ "beat": "M-06a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — First step. Pain gone. Just like that. —: Keep this photo exactly as it is — her staircase, runner, brass rods, balusters, denim skirt, tan slippers, the light — and change only her legs and the strap. Image 1 is the photo. Image 2 is the strap.\nShe comes down toward the lens, hands out of frame. Her right leg, at frame left, is straight and locked, its slipper flat on the upper tread, taking her weight; her left leg, at frame right, bends at the knee, its slipper landing on the tread below. On her right knee only, the strap of Image 2 copied exactly — same shape, same parts, same markings, nothing redesigned: a black shell like a wide shallow M, two rounded peaks close together at the middle of its top edge cupping the bottom of the kneecap, a chrome slide at each end, the black band round the back of the knee. Scale true to the set: the strap 12 × 5 cm, a little narrower than her knee, about a quarter of the frame wide.\nIn frame: two legs, two slippers, exactly one strap on her right knee, five treads; nothing else.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun. No lettering, logos or labels but its wordmark.",
+ "script_line": "First step. Pain gone. Just like that.",
+ "face": false,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "M-06a frame v9 A (your pick) — her legs coming down her own staircase (the picture this edit keeps)",
+   "kind": "frame"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "52597e35-aee3-4e75-96a4-938f708c7114",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user image Fix \"wrong product and the knee that should be straight in the image is the one with the strap\" → an edit of the picked v9 A: the strap redrawn as the product photo, on her right knee, and that right leg made the straight standing leg",
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "one_offs": null,
+ "medias": [
+  "52597e35-aee3-4e75-96a4-938f708c7114",
+  "7dcc7c34-651e-45ae-87af-ea18884ec474"
+ ],
+ "board_refs": [
+  {
+   "label": "M-06a frame v9 A (your pick) — her legs coming down her own staircase (the picture this edit keeps)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__M-06a",
+   "role": "Image 1"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 2"
+  }
+ ]
+}

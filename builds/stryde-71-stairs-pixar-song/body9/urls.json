@@ -18,5 +18,37 @@
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_162148_36e9628f-e23a-4f0c-b774-67cc5171d532.png",
   "job": "36e9628f-e23a-4f0c-b774-67cc5171d532",
   "file": "P-04d_v1B.png"
+ },
+ "M-06a@v6A": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_170214_b66972cc-1957-48e1-9600-7e36285c6146.png",
+  "job": "b66972cc-1957-48e1-9600-7e36285c6146",
+  "file": "M-06a_v6A.png"
+ },
+ "M-06a@v6B": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_170214_6147699b-9109-4247-85f9-e6e36c3c5172.png",
+  "job": "6147699b-9109-4247-85f9-e6e36c3c5172",
+  "file": "M-06a_v6B.png"
+ },
+ "T-04a@v4A": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_170214_37c96576-8592-464f-bc1d-5ef33690a52d.png",
+  "job": "37c96576-8592-464f-bc1d-5ef33690a52d",
+  "file": "T-04a_v4A.png"
+ },
+ "T-04a@v4B": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_170214_e2a89b64-e09b-4687-9303-5032bdcd24bd.png",
+  "job": "e2a89b64-e09b-4687-9303-5032bdcd24bd",
+  "file": "T-04a_v4B.png"
+ },
+ "M-06a@v7A": {
+  "url": "https://tempfile.aiquickdraw.com/workers/images/image_c40a4a3e59e596552d13cd347e7108e9.png",
+  "task": "9e5a4efac300fedd3b3a4fce51343f4b",
+  "connector": "Kie AI",
+  "credits": 18.0
+ },
+ "M-06a@v7B": {
+  "url": "https://tempfile.aiquickdraw.com/workers/images/image_0938340e2b69af57b7b77d9eef174e26.png",
+  "task": "b4292adc773ef9aa4b8a2446e7bba902",
+  "connector": "Kie AI",
+  "credits": 18.0
  }
 }

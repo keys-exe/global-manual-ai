@@ -17,7 +17,7 @@
  "T-02a": "clips/T-02a_v1.mp4",
  "T-02b": "clips/T-02b_v1.mp4",
  "T-03a": "clips/T-03a_v2.mp4",
- "T-04a": "clips/T-04a_v2.mp4",
+ "T-04a": "clips/T-04a_v3.mp4",
  "T-04b": "clips/T-04b_v1.mp4",
  "R-01a": "clips/R-01a_v1.mp4",
  "R-02a": "clips/R-02a_v2.mp4",
@@ -35,7 +35,7 @@
  "M-04a": "clips/M-04a_v1.mp4",
  "M-05a": "clips/M-05a_v2.mp4",
  "M-05b": "clips/M-05b_v1.mp4",
- "M-06a": "clips/M-06a_v2.mp4",
+ "M-06a": "clips/M-06a_v3.mp4",
  "PR-01a": "clips/PR-01a_v1.mp4",
  "PR-02a": "clips/PR-02a_v1.mp4",
  "PR-03a": "clips/PR-03a_v1.mp4",
@@ -59,5 +59,7 @@
  "C-08a": "clips/C-08a_v1.mp4",
  "C-08b": "clips/C-08b_v1.mp4",
  "C-09a": "clips/C-09a_v1.mp4",
- "C-09c": "clips/C-09c_v1.mp4"
+ "C-09c": "clips/C-09c_v1.mp4",
+ "P-04c": "clips/P-04c_v1.mp4",
+ "P-04d": "clips/P-04d_v1.mp4"
 }

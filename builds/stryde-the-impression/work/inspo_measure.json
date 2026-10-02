@@ -1,0 +1,1448 @@
+[
+  {
+    "link": "builds/stryde-the-impression/intake/inspo_sea_bass.mp4",
+    "role": "primary",
+    "status": "OK",
+    "file": "builds/stryde-the-impression/intake/inspo_sea_bass.mp4",
+    "duration_s": 389.17,
+    "resolution": "720x1280",
+    "aspect": "9:16",
+    "fps": 24.0,
+    "has_audio": true,
+    "shot_count": 156,
+    "mean_shot_s": 2.49,
+    "cut_times_s": [
+      1.04,
+      2.25,
+      3.04,
+      4.54,
+      5.79,
+      7.5,
+      9.0,
+      13.54,
+      24.12,
+      24.42,
+      25.46,
+      27.46,
+      28.5,
+      31.75,
+      34.08,
+      35.33,
+      36.38,
+      40.71,
+      42.67,
+      44.88,
+      45.88,
+      48.83,
+      50.71,
+      51.75,
+      53.92,
+      55.92,
+      57.33,
+      59.71,
+      61.29,
+      62.42,
+      64.33,
+      69.92,
+      72.88,
+      73.92,
+      75.71,
+      76.54,
+      77.54,
+      78.75,
+      79.88,
+      82.42,
+      83.25,
+      89.08,
+      89.96,
+      92.38,
+      94.12,
+      95.33,
+      97.12,
+      99.12,
+      102.25,
+      104.38,
+      106.21,
+      107.5,
+      108.92,
+      110.33,
+      111.42,
+      112.92,
+      115.17,
+      120.04,
+      125.21,
+      126.29,
+      127.29,
+      127.96,
+      128.83,
+      129.62,
+      131.25,
+      132.46,
+      133.67,
+      135.04,
+      136.38,
+      137.62,
+      139.38,
+      140.71,
+      142.62,
+      143.54,
+      146.79,
+      148.42,
+      149.79,
+      153.33,
+      155.54,
+      157.33,
+      161.38,
+      163.12,
+      163.75,
+      165.96,
+      169.88,
+      170.04,
+      171.17,
+      172.21,
+      174.04,
+      180.58,
+      182.0,
+      187.62,
+      189.58,
+      196.38,
+      206.58,
+      209.46,
+      211.12,
+      217.21,
+      226.0,
+      231.83,
+      237.17,
+      237.75,
+      240.12,
+      241.67,
+      242.79,
+      244.46,
+      245.5,
+      247.38,
+      248.46,
+      249.33,
+      251.0,
+      252.54,
+      254.42,
+      260.08,
+      261.46,
+      262.71,
+      263.88,
+      265.54,
+      268.33,
+      269.83,
+      270.58,
+      272.92,
+      275.46,
+      278.79,
+      281.96,
+      283.71,
+      286.96,
+      288.25,
+      289.62,
+      290.54,
+      291.71,
+      292.5,
+      294.42,
+      298.79,
+      300.46,
+      304.42,
+      306.38,
+      312.75,
+      314.54,
+      316.25,
+      317.38,
+      319.12,
+      321.67,
+      324.83,
+      326.46,
+      328.46,
+      330.12,
+      332.79,
+      336.71,
+      338.42,
+      340.25,
+      343.83,
+      347.46,
+      352.83,
+      362.08
+    ],
+    "silences_-40dB": [],
+    "silences_-30dB": [
+      [
+        145.05,
+        145.53
+      ],
+      [
+        214.39,
+        215.1
+      ]
+    ],
+    "shots": [
+      {
+        "shot": "S01",
+        "t_in": 0.0,
+        "t_out": 1.04,
+        "len_s": 1.04,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S01_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S01_mid.jpg"
+      },
+      {
+        "shot": "S02",
+        "t_in": 1.04,
+        "t_out": 2.25,
+        "len_s": 1.21,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S02_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S02_mid.jpg"
+      },
+      {
+        "shot": "S03",
+        "t_in": 2.25,
+        "t_out": 3.04,
+        "len_s": 0.79,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S03_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S03_mid.jpg"
+      },
+      {
+        "shot": "S04",
+        "t_in": 3.04,
+        "t_out": 4.54,
+        "len_s": 1.5,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S04_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S04_mid.jpg"
+      },
+      {
+        "shot": "S05",
+        "t_in": 4.54,
+        "t_out": 5.79,
+        "len_s": 1.25,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S05_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S05_mid.jpg"
+      },
+      {
+        "shot": "S06",
+        "t_in": 5.79,
+        "t_out": 7.5,
+        "len_s": 1.71,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S06_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S06_mid.jpg"
+      },
+      {
+        "shot": "S07",
+        "t_in": 7.5,
+        "t_out": 9.0,
+        "len_s": 1.5,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S07_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S07_mid.jpg"
+      },
+      {
+        "shot": "S08",
+        "t_in": 9.0,
+        "t_out": 13.54,
+        "len_s": 4.54,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S08_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S08_mid.jpg"
+      },
+      {
+        "shot": "S09",
+        "t_in": 13.54,
+        "t_out": 24.12,
+        "len_s": 10.58,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S09_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S09_mid.jpg"
+      },
+      {
+        "shot": "S10",
+        "t_in": 24.12,
+        "t_out": 24.42,
+        "len_s": 0.3,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S10_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S10_mid.jpg"
+      },
+      {
+        "shot": "S11",
+        "t_in": 24.42,
+        "t_out": 25.46,
+        "len_s": 1.04,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S11_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S11_mid.jpg"
+      },
+      {
+        "shot": "S12",
+        "t_in": 25.46,
+        "t_out": 27.46,
+        "len_s": 2.0,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S12_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S12_mid.jpg"
+      },
+      {
+        "shot": "S13",
+        "t_in": 27.46,
+        "t_out": 28.5,
+        "len_s": 1.04,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S13_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S13_mid.jpg"
+      },
+      {
+        "shot": "S14",
+        "t_in": 28.5,
+        "t_out": 31.75,
+        "len_s": 3.25,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S14_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S14_mid.jpg"
+      },
+      {
+        "shot": "S15",
+        "t_in": 31.75,
+        "t_out": 34.08,
+        "len_s": 2.33,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S15_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S15_mid.jpg"
+      },
+      {
+        "shot": "S16",
+        "t_in": 34.08,
+        "t_out": 35.33,
+        "len_s": 1.25,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S16_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S16_mid.jpg"
+      },
+      {
+        "shot": "S17",
+        "t_in": 35.33,
+        "t_out": 36.38,
+        "len_s": 1.05,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S17_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S17_mid.jpg"
+      },
+      {
+        "shot": "S18",
+        "t_in": 36.38,
+        "t_out": 40.71,
+        "len_s": 4.33,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S18_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S18_mid.jpg"
+      },
+      {
+        "shot": "S19",
+        "t_in": 40.71,
+        "t_out": 42.67,
+        "len_s": 1.96,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S19_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S19_mid.jpg"
+      },
+      {
+        "shot": "S20",
+        "t_in": 42.67,
+        "t_out": 44.88,
+        "len_s": 2.21,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S20_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S20_mid.jpg"
+      },
+      {
+        "shot": "S21",
+        "t_in": 44.88,
+        "t_out": 45.88,
+        "len_s": 1.0,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S21_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S21_mid.jpg"
+      },
+      {
+        "shot": "S22",
+        "t_in": 45.88,
+        "t_out": 48.83,
+        "len_s": 2.95,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S22_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S22_mid.jpg"
+      },
+      {
+        "shot": "S23",
+        "t_in": 48.83,
+        "t_out": 50.71,
+        "len_s": 1.88,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S23_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S23_mid.jpg"
+      },
+      {
+        "shot": "S24",
+        "t_in": 50.71,
+        "t_out": 51.75,
+        "len_s": 1.04,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S24_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S24_mid.jpg"
+      },
+      {
+        "shot": "S25",
+        "t_in": 51.75,
+        "t_out": 53.92,
+        "len_s": 2.17,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S25_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S25_mid.jpg"
+      },
+      {
+        "shot": "S26",
+        "t_in": 53.92,
+        "t_out": 55.92,
+        "len_s": 2.0,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S26_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S26_mid.jpg"
+      },
+      {
+        "shot": "S27",
+        "t_in": 55.92,
+        "t_out": 57.33,
+        "len_s": 1.41,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S27_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S27_mid.jpg"
+      },
+      {
+        "shot": "S28",
+        "t_in": 57.33,
+        "t_out": 59.71,
+        "len_s": 2.38,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S28_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S28_mid.jpg"
+      },
+      {
+        "shot": "S29",
+        "t_in": 59.71,
+        "t_out": 61.29,
+        "len_s": 1.58,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S29_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S29_mid.jpg"
+      },
+      {
+        "shot": "S30",
+        "t_in": 61.29,
+        "t_out": 62.42,
+        "len_s": 1.13,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S30_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S30_mid.jpg"
+      },
+      {
+        "shot": "S31",
+        "t_in": 62.42,
+        "t_out": 64.33,
+        "len_s": 1.91,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S31_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S31_mid.jpg"
+      },
+      {
+        "shot": "S32",
+        "t_in": 64.33,
+        "t_out": 69.92,
+        "len_s": 5.59,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S32_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S32_mid.jpg"
+      },
+      {
+        "shot": "S33",
+        "t_in": 69.92,
+        "t_out": 72.88,
+        "len_s": 2.96,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S33_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S33_mid.jpg"
+      },
+      {
+        "shot": "S34",
+        "t_in": 72.88,
+        "t_out": 73.92,
+        "len_s": 1.04,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S34_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S34_mid.jpg"
+      },
+      {
+        "shot": "S35",
+        "t_in": 73.92,
+        "t_out": 75.71,
+        "len_s": 1.79,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S35_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S35_mid.jpg"
+      },
+      {
+        "shot": "S36",
+        "t_in": 75.71,
+        "t_out": 76.54,
+        "len_s": 0.83,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S36_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S36_mid.jpg"
+      },
+      {
+        "shot": "S37",
+        "t_in": 76.54,
+        "t_out": 77.54,
+        "len_s": 1.0,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S37_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S37_mid.jpg"
+      },
+      {
+        "shot": "S38",
+        "t_in": 77.54,
+        "t_out": 78.75,
+        "len_s": 1.21,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S38_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S38_mid.jpg"
+      },
+      {
+        "shot": "S39",
+        "t_in": 78.75,
+        "t_out": 79.88,
+        "len_s": 1.13,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S39_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S39_mid.jpg"
+      },
+      {
+        "shot": "S40",
+        "t_in": 79.88,
+        "t_out": 82.42,
+        "len_s": 2.54,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S40_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S40_mid.jpg"
+      },
+      {
+        "shot": "S41",
+        "t_in": 82.42,
+        "t_out": 83.25,
+        "len_s": 0.83,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S41_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S41_mid.jpg"
+      },
+      {
+        "shot": "S42",
+        "t_in": 83.25,
+        "t_out": 89.08,
+        "len_s": 5.83,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S42_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S42_mid.jpg"
+      },
+      {
+        "shot": "S43",
+        "t_in": 89.08,
+        "t_out": 89.96,
+        "len_s": 0.88,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S43_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S43_mid.jpg"
+      },
+      {
+        "shot": "S44",
+        "t_in": 89.96,
+        "t_out": 92.38,
+        "len_s": 2.42,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S44_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S44_mid.jpg"
+      },
+      {
+        "shot": "S45",
+        "t_in": 92.38,
+        "t_out": 94.12,
+        "len_s": 1.74,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S45_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S45_mid.jpg"
+      },
+      {
+        "shot": "S46",
+        "t_in": 94.12,
+        "t_out": 95.33,
+        "len_s": 1.21,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S46_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S46_mid.jpg"
+      },
+      {
+        "shot": "S47",
+        "t_in": 95.33,
+        "t_out": 97.12,
+        "len_s": 1.79,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S47_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S47_mid.jpg"
+      },
+      {
+        "shot": "S48",
+        "t_in": 97.12,
+        "t_out": 99.12,
+        "len_s": 2.0,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S48_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S48_mid.jpg"
+      },
+      {
+        "shot": "S49",
+        "t_in": 99.12,
+        "t_out": 102.25,
+        "len_s": 3.13,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S49_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S49_mid.jpg"
+      },
+      {
+        "shot": "S50",
+        "t_in": 102.25,
+        "t_out": 104.38,
+        "len_s": 2.13,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S50_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S50_mid.jpg"
+      },
+      {
+        "shot": "S51",
+        "t_in": 104.38,
+        "t_out": 106.21,
+        "len_s": 1.83,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S51_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S51_mid.jpg"
+      },
+      {
+        "shot": "S52",
+        "t_in": 106.21,
+        "t_out": 107.5,
+        "len_s": 1.29,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S52_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S52_mid.jpg"
+      },
+      {
+        "shot": "S53",
+        "t_in": 107.5,
+        "t_out": 108.92,
+        "len_s": 1.42,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S53_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S53_mid.jpg"
+      },
+      {
+        "shot": "S54",
+        "t_in": 108.92,
+        "t_out": 110.33,
+        "len_s": 1.41,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S54_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S54_mid.jpg"
+      },
+      {
+        "shot": "S55",
+        "t_in": 110.33,
+        "t_out": 111.42,
+        "len_s": 1.09,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S55_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S55_mid.jpg"
+      },
+      {
+        "shot": "S56",
+        "t_in": 111.42,
+        "t_out": 112.92,
+        "len_s": 1.5,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S56_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S56_mid.jpg"
+      },
+      {
+        "shot": "S57",
+        "t_in": 112.92,
+        "t_out": 115.17,
+        "len_s": 2.25,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S57_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S57_mid.jpg"
+      },
+      {
+        "shot": "S58",
+        "t_in": 115.17,
+        "t_out": 120.04,
+        "len_s": 4.87,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S58_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S58_mid.jpg"
+      },
+      {
+        "shot": "S59",
+        "t_in": 120.04,
+        "t_out": 125.21,
+        "len_s": 5.17,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S59_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S59_mid.jpg"
+      },
+      {
+        "shot": "S60",
+        "t_in": 125.21,
+        "t_out": 126.29,
+        "len_s": 1.08,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S60_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S60_mid.jpg"
+      },
+      {
+        "shot": "S61",
+        "t_in": 126.29,
+        "t_out": 127.29,
+        "len_s": 1.0,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S61_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S61_mid.jpg"
+      },
+      {
+        "shot": "S62",
+        "t_in": 127.29,
+        "t_out": 127.96,
+        "len_s": 0.67,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S62_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S62_mid.jpg"
+      },
+      {
+        "shot": "S63",
+        "t_in": 127.96,
+        "t_out": 128.83,
+        "len_s": 0.87,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S63_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S63_mid.jpg"
+      },
+      {
+        "shot": "S64",
+        "t_in": 128.83,
+        "t_out": 129.62,
+        "len_s": 0.79,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S64_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S64_mid.jpg"
+      },
+      {
+        "shot": "S65",
+        "t_in": 129.62,
+        "t_out": 131.25,
+        "len_s": 1.63,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S65_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S65_mid.jpg"
+      },
+      {
+        "shot": "S66",
+        "t_in": 131.25,
+        "t_out": 132.46,
+        "len_s": 1.21,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S66_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S66_mid.jpg"
+      },
+      {
+        "shot": "S67",
+        "t_in": 132.46,
+        "t_out": 133.67,
+        "len_s": 1.21,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S67_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S67_mid.jpg"
+      },
+      {
+        "shot": "S68",
+        "t_in": 133.67,
+        "t_out": 135.04,
+        "len_s": 1.37,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S68_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S68_mid.jpg"
+      },
+      {
+        "shot": "S69",
+        "t_in": 135.04,
+        "t_out": 136.38,
+        "len_s": 1.34,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S69_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S69_mid.jpg"
+      },
+      {
+        "shot": "S70",
+        "t_in": 136.38,
+        "t_out": 137.62,
+        "len_s": 1.24,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S70_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S70_mid.jpg"
+      },
+      {
+        "shot": "S71",
+        "t_in": 137.62,
+        "t_out": 139.38,
+        "len_s": 1.76,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S71_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S71_mid.jpg"
+      },
+      {
+        "shot": "S72",
+        "t_in": 139.38,
+        "t_out": 140.71,
+        "len_s": 1.33,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S72_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S72_mid.jpg"
+      },
+      {
+        "shot": "S73",
+        "t_in": 140.71,
+        "t_out": 142.62,
+        "len_s": 1.91,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S73_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S73_mid.jpg"
+      },
+      {
+        "shot": "S74",
+        "t_in": 142.62,
+        "t_out": 143.54,
+        "len_s": 0.92,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S74_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S74_mid.jpg"
+      },
+      {
+        "shot": "S75",
+        "t_in": 143.54,
+        "t_out": 146.79,
+        "len_s": 3.25,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S75_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S75_mid.jpg"
+      },
+      {
+        "shot": "S76",
+        "t_in": 146.79,
+        "t_out": 148.42,
+        "len_s": 1.63,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S76_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S76_mid.jpg"
+      },
+      {
+        "shot": "S77",
+        "t_in": 148.42,
+        "t_out": 149.79,
+        "len_s": 1.37,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S77_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S77_mid.jpg"
+      },
+      {
+        "shot": "S78",
+        "t_in": 149.79,
+        "t_out": 153.33,
+        "len_s": 3.54,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S78_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S78_mid.jpg"
+      },
+      {
+        "shot": "S79",
+        "t_in": 153.33,
+        "t_out": 155.54,
+        "len_s": 2.21,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S79_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S79_mid.jpg"
+      },
+      {
+        "shot": "S80",
+        "t_in": 155.54,
+        "t_out": 157.33,
+        "len_s": 1.79,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S80_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S80_mid.jpg"
+      },
+      {
+        "shot": "S81",
+        "t_in": 157.33,
+        "t_out": 161.38,
+        "len_s": 4.05,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S81_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S81_mid.jpg"
+      },
+      {
+        "shot": "S82",
+        "t_in": 161.38,
+        "t_out": 163.12,
+        "len_s": 1.74,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S82_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S82_mid.jpg"
+      },
+      {
+        "shot": "S83",
+        "t_in": 163.12,
+        "t_out": 163.75,
+        "len_s": 0.63,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S83_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S83_mid.jpg"
+      },
+      {
+        "shot": "S84",
+        "t_in": 163.75,
+        "t_out": 165.96,
+        "len_s": 2.21,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S84_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S84_mid.jpg"
+      },
+      {
+        "shot": "S85",
+        "t_in": 165.96,
+        "t_out": 169.88,
+        "len_s": 3.92,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S85_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S85_mid.jpg"
+      },
+      {
+        "shot": "S86",
+        "t_in": 169.88,
+        "t_out": 170.04,
+        "len_s": 0.16,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S86_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S86_mid.jpg"
+      },
+      {
+        "shot": "S87",
+        "t_in": 170.04,
+        "t_out": 171.17,
+        "len_s": 1.13,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S87_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S87_mid.jpg"
+      },
+      {
+        "shot": "S88",
+        "t_in": 171.17,
+        "t_out": 172.21,
+        "len_s": 1.04,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S88_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S88_mid.jpg"
+      },
+      {
+        "shot": "S89",
+        "t_in": 172.21,
+        "t_out": 174.04,
+        "len_s": 1.83,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S89_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S89_mid.jpg"
+      },
+      {
+        "shot": "S90",
+        "t_in": 174.04,
+        "t_out": 180.58,
+        "len_s": 6.54,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S90_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S90_mid.jpg"
+      },
+      {
+        "shot": "S91",
+        "t_in": 180.58,
+        "t_out": 182.0,
+        "len_s": 1.42,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S91_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S91_mid.jpg"
+      },
+      {
+        "shot": "S92",
+        "t_in": 182.0,
+        "t_out": 187.62,
+        "len_s": 5.62,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S92_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S92_mid.jpg"
+      },
+      {
+        "shot": "S93",
+        "t_in": 187.62,
+        "t_out": 189.58,
+        "len_s": 1.96,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S93_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S93_mid.jpg"
+      },
+      {
+        "shot": "S94",
+        "t_in": 189.58,
+        "t_out": 196.38,
+        "len_s": 6.8,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S94_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S94_mid.jpg"
+      },
+      {
+        "shot": "S95",
+        "t_in": 196.38,
+        "t_out": 206.58,
+        "len_s": 10.2,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S95_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S95_mid.jpg"
+      },
+      {
+        "shot": "S96",
+        "t_in": 206.58,
+        "t_out": 209.46,
+        "len_s": 2.88,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S96_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S96_mid.jpg"
+      },
+      {
+        "shot": "S97",
+        "t_in": 209.46,
+        "t_out": 211.12,
+        "len_s": 1.66,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S97_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S97_mid.jpg"
+      },
+      {
+        "shot": "S98",
+        "t_in": 211.12,
+        "t_out": 217.21,
+        "len_s": 6.09,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S98_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S98_mid.jpg"
+      },
+      {
+        "shot": "S99",
+        "t_in": 217.21,
+        "t_out": 226.0,
+        "len_s": 8.79,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S99_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S99_mid.jpg"
+      },
+      {
+        "shot": "S100",
+        "t_in": 226.0,
+        "t_out": 231.83,
+        "len_s": 5.83,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S100_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S100_mid.jpg"
+      },
+      {
+        "shot": "S101",
+        "t_in": 231.83,
+        "t_out": 237.17,
+        "len_s": 5.34,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S101_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S101_mid.jpg"
+      },
+      {
+        "shot": "S102",
+        "t_in": 237.17,
+        "t_out": 237.75,
+        "len_s": 0.58,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S102_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S102_mid.jpg"
+      },
+      {
+        "shot": "S103",
+        "t_in": 237.75,
+        "t_out": 240.12,
+        "len_s": 2.37,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S103_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S103_mid.jpg"
+      },
+      {
+        "shot": "S104",
+        "t_in": 240.12,
+        "t_out": 241.67,
+        "len_s": 1.55,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S104_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S104_mid.jpg"
+      },
+      {
+        "shot": "S105",
+        "t_in": 241.67,
+        "t_out": 242.79,
+        "len_s": 1.12,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S105_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S105_mid.jpg"
+      },
+      {
+        "shot": "S106",
+        "t_in": 242.79,
+        "t_out": 244.46,
+        "len_s": 1.67,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S106_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S106_mid.jpg"
+      },
+      {
+        "shot": "S107",
+        "t_in": 244.46,
+        "t_out": 245.5,
+        "len_s": 1.04,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S107_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S107_mid.jpg"
+      },
+      {
+        "shot": "S108",
+        "t_in": 245.5,
+        "t_out": 247.38,
+        "len_s": 1.88,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S108_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S108_mid.jpg"
+      },
+      {
+        "shot": "S109",
+        "t_in": 247.38,
+        "t_out": 248.46,
+        "len_s": 1.08,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S109_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S109_mid.jpg"
+      },
+      {
+        "shot": "S110",
+        "t_in": 248.46,
+        "t_out": 249.33,
+        "len_s": 0.87,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S110_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S110_mid.jpg"
+      },
+      {
+        "shot": "S111",
+        "t_in": 249.33,
+        "t_out": 251.0,
+        "len_s": 1.67,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S111_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S111_mid.jpg"
+      },
+      {
+        "shot": "S112",
+        "t_in": 251.0,
+        "t_out": 252.54,
+        "len_s": 1.54,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S112_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S112_mid.jpg"
+      },
+      {
+        "shot": "S113",
+        "t_in": 252.54,
+        "t_out": 254.42,
+        "len_s": 1.88,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S113_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S113_mid.jpg"
+      },
+      {
+        "shot": "S114",
+        "t_in": 254.42,
+        "t_out": 260.08,
+        "len_s": 5.66,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S114_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S114_mid.jpg"
+      },
+      {
+        "shot": "S115",
+        "t_in": 260.08,
+        "t_out": 261.46,
+        "len_s": 1.38,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S115_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S115_mid.jpg"
+      },
+      {
+        "shot": "S116",
+        "t_in": 261.46,
+        "t_out": 262.71,
+        "len_s": 1.25,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S116_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S116_mid.jpg"
+      },
+      {
+        "shot": "S117",
+        "t_in": 262.71,
+        "t_out": 263.88,
+        "len_s": 1.17,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S117_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S117_mid.jpg"
+      },
+      {
+        "shot": "S118",
+        "t_in": 263.88,
+        "t_out": 265.54,
+        "len_s": 1.66,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S118_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S118_mid.jpg"
+      },
+      {
+        "shot": "S119",
+        "t_in": 265.54,
+        "t_out": 268.33,
+        "len_s": 2.79,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S119_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S119_mid.jpg"
+      },
+      {
+        "shot": "S120",
+        "t_in": 268.33,
+        "t_out": 269.83,
+        "len_s": 1.5,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S120_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S120_mid.jpg"
+      },
+      {
+        "shot": "S121",
+        "t_in": 269.83,
+        "t_out": 270.58,
+        "len_s": 0.75,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S121_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S121_mid.jpg"
+      },
+      {
+        "shot": "S122",
+        "t_in": 270.58,
+        "t_out": 272.92,
+        "len_s": 2.34,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S122_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S122_mid.jpg"
+      },
+      {
+        "shot": "S123",
+        "t_in": 272.92,
+        "t_out": 275.46,
+        "len_s": 2.54,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S123_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S123_mid.jpg"
+      },
+      {
+        "shot": "S124",
+        "t_in": 275.46,
+        "t_out": 278.79,
+        "len_s": 3.33,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S124_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S124_mid.jpg"
+      },
+      {
+        "shot": "S125",
+        "t_in": 278.79,
+        "t_out": 281.96,
+        "len_s": 3.17,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S125_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S125_mid.jpg"
+      },
+      {
+        "shot": "S126",
+        "t_in": 281.96,
+        "t_out": 283.71,
+        "len_s": 1.75,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S126_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S126_mid.jpg"
+      },
+      {
+        "shot": "S127",
+        "t_in": 283.71,
+        "t_out": 286.96,
+        "len_s": 3.25,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S127_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S127_mid.jpg"
+      },
+      {
+        "shot": "S128",
+        "t_in": 286.96,
+        "t_out": 288.25,
+        "len_s": 1.29,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S128_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S128_mid.jpg"
+      },
+      {
+        "shot": "S129",
+        "t_in": 288.25,
+        "t_out": 289.62,
+        "len_s": 1.37,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S129_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S129_mid.jpg"
+      },
+      {
+        "shot": "S130",
+        "t_in": 289.62,
+        "t_out": 290.54,
+        "len_s": 0.92,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S130_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S130_mid.jpg"
+      },
+      {
+        "shot": "S131",
+        "t_in": 290.54,
+        "t_out": 291.71,
+        "len_s": 1.17,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S131_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S131_mid.jpg"
+      },
+      {
+        "shot": "S132",
+        "t_in": 291.71,
+        "t_out": 292.5,
+        "len_s": 0.79,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S132_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S132_mid.jpg"
+      },
+      {
+        "shot": "S133",
+        "t_in": 292.5,
+        "t_out": 294.42,
+        "len_s": 1.92,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S133_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S133_mid.jpg"
+      },
+      {
+        "shot": "S134",
+        "t_in": 294.42,
+        "t_out": 298.79,
+        "len_s": 4.37,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S134_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S134_mid.jpg"
+      },
+      {
+        "shot": "S135",
+        "t_in": 298.79,
+        "t_out": 300.46,
+        "len_s": 1.67,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S135_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S135_mid.jpg"
+      },
+      {
+        "shot": "S136",
+        "t_in": 300.46,
+        "t_out": 304.42,
+        "len_s": 3.96,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S136_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S136_mid.jpg"
+      },
+      {
+        "shot": "S137",
+        "t_in": 304.42,
+        "t_out": 306.38,
+        "len_s": 1.96,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S137_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S137_mid.jpg"
+      },
+      {
+        "shot": "S138",
+        "t_in": 306.38,
+        "t_out": 312.75,
+        "len_s": 6.37,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S138_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S138_mid.jpg"
+      },
+      {
+        "shot": "S139",
+        "t_in": 312.75,
+        "t_out": 314.54,
+        "len_s": 1.79,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S139_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S139_mid.jpg"
+      },
+      {
+        "shot": "S140",
+        "t_in": 314.54,
+        "t_out": 316.25,
+        "len_s": 1.71,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S140_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S140_mid.jpg"
+      },
+      {
+        "shot": "S141",
+        "t_in": 316.25,
+        "t_out": 317.38,
+        "len_s": 1.13,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S141_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S141_mid.jpg"
+      },
+      {
+        "shot": "S142",
+        "t_in": 317.38,
+        "t_out": 319.12,
+        "len_s": 1.74,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S142_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S142_mid.jpg"
+      },
+      {
+        "shot": "S143",
+        "t_in": 319.12,
+        "t_out": 321.67,
+        "len_s": 2.55,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S143_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S143_mid.jpg"
+      },
+      {
+        "shot": "S144",
+        "t_in": 321.67,
+        "t_out": 324.83,
+        "len_s": 3.16,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S144_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S144_mid.jpg"
+      },
+      {
+        "shot": "S145",
+        "t_in": 324.83,
+        "t_out": 326.46,
+        "len_s": 1.63,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S145_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S145_mid.jpg"
+      },
+      {
+        "shot": "S146",
+        "t_in": 326.46,
+        "t_out": 328.46,
+        "len_s": 2.0,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S146_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S146_mid.jpg"
+      },
+      {
+        "shot": "S147",
+        "t_in": 328.46,
+        "t_out": 330.12,
+        "len_s": 1.66,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S147_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S147_mid.jpg"
+      },
+      {
+        "shot": "S148",
+        "t_in": 330.12,
+        "t_out": 332.79,
+        "len_s": 2.67,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S148_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S148_mid.jpg"
+      },
+      {
+        "shot": "S149",
+        "t_in": 332.79,
+        "t_out": 336.71,
+        "len_s": 3.92,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S149_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S149_mid.jpg"
+      },
+      {
+        "shot": "S150",
+        "t_in": 336.71,
+        "t_out": 338.42,
+        "len_s": 1.71,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S150_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S150_mid.jpg"
+      },
+      {
+        "shot": "S151",
+        "t_in": 338.42,
+        "t_out": 340.25,
+        "len_s": 1.83,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S151_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S151_mid.jpg"
+      },
+      {
+        "shot": "S152",
+        "t_in": 340.25,
+        "t_out": 343.83,
+        "len_s": 3.58,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S152_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S152_mid.jpg"
+      },
+      {
+        "shot": "S153",
+        "t_in": 343.83,
+        "t_out": 347.46,
+        "len_s": 3.63,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S153_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S153_mid.jpg"
+      },
+      {
+        "shot": "S154",
+        "t_in": 347.46,
+        "t_out": 352.83,
+        "len_s": 5.37,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S154_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S154_mid.jpg"
+      },
+      {
+        "shot": "S155",
+        "t_in": 352.83,
+        "t_out": 362.08,
+        "len_s": 9.25,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S155_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S155_mid.jpg"
+      },
+      {
+        "shot": "S156",
+        "t_in": 362.08,
+        "t_out": 389.17,
+        "len_s": 27.09,
+        "frame_in": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S156_in.jpg",
+        "frame_mid": "builds/stryde-the-impression/intake/frames/inspo_sea_bass/S156_mid.jpg"
+      }
+    ],
+    "second_sheets": [
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_01.jpg",
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_02.jpg",
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_03.jpg",
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_04.jpg",
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_05.jpg",
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_06.jpg",
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_07.jpg",
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_08.jpg",
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_09.jpg",
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_10.jpg",
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_11.jpg",
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_12.jpg",
+      "builds/stryde-the-impression/intake/frames/inspo_sea_bass/sheet_13.jpg"
+    ]
+  }
+]

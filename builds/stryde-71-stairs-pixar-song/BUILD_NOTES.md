@@ -957,3 +957,44 @@ Line 15 is now three pictures, one per phrase (`work/actmap.py`: the new `sub` /
 - Credits: Higgsfield 5699.65 → 5667.65 (32 for 4 renders, measured; written as 8 per render). Kling unchanged at 36613.
 
 **Waiting on:** Use A / Use B (or Fix) on P-04c and P-04d. Then their clips, then FINAL-HK1 v3 with the three line-15 pictures.
+
+### 2026-10-02 ~16:30–16:55 UTC — "confirm" / "all confirmed proceed to the final" → FINAL-HK1 v3
+
+- You picked A on P-04c and P-04d. Their clips were made on Kling 3.0: 3 s each, 1080p, silent, 24 credits each, preflight PASS (`clips/build_split15_clips.py`).
+  - P-04c: the pills tip into her palm.
+  - P-04d: the gloved thumb presses the plunger at the side of her knee. The prompt has the sealed-lips clause because her chin is at the frame's top edge.
+- Both clips are on the board as `use`, on your word "all confirmed". The unused B pictures were copied to Old 3 and deleted from Current.
+- **FINAL-HK1 v3** is on the Final board as To check. It is 3:48, 64 rows, the cut sheet is `edit/cuts_v3.json` (PASS), and the board copy is 9 parts.
+  - Line 15 is now three pictures, each on its own sung word: P-04b "Physical therapy." at 35.65 s, P-04c "Pain pills." at 36.88 s, P-04d "Cortisone shots." at 38.09 s. They are on screen for 1.2, 1.2 and 0.8 s.
+  - Everything else is as v2. v2 was copied to Old 3 and its parts were deleted from Final.
+- **Balances:** Higgsfield 5667.65 · Kling 36565.
+
+**Waiting on:** your final review of FINAL-HK1 v3.
+
+### 2026-10-02 ~17:00 UTC — "fix those" (two board Fix notes)
+
+- **M-06a** image Fix: "wrong product and the knee that should be straight in the image is the one with the strap".
+  - Diagnosis: the strap had come out as a plain black band, without the twin-peak shell. The strapped right leg also wasn't clearly the straight, weight-bearing one.
+  - New pair, v11 (A) / v12 (B): an edit of the picked v9 A with the product photo as Image 2 and a tighter shape line (a wide shallow M, two peaks at the middle of the top edge cupping the kneecap, chrome slides). Her right leg (frame left) is straight on the upper tread taking her weight; her left leg bends, stepping down (`body9/build_fix14.py`, preflight PASS).
+  - Moved to Old 3: v9 A and the clip made from it (v2).
+- **T-04a** image Fix: "that is not loreta".
+  - Diagnosis: the dancer in fuchsia had been drawn without Loretta's references.
+  - New pair, v7 (A) / v8 (B): an edit of the picked v5 A in which only the dancer changes. She now takes Loretta from her confirmed wedding frame (T-02a v5 A, the day's outfit, HT27) plus her face-and-hair crop (HT26, L54).
+  - Moved to Old 3: v5 A and the clip made from it (v2).
+- Both pairs are on the Current board as To check. The clips follow your picks, then FINAL-HK1 v4.
+- `fix_patterns.py`: 0 notes from the owner (the boards are V7.79.1, which doesn't mark them), so no new rule.
+- Higgsfield balance 5667.65 → 5233.4. That is far more than 4 renders; the account is shared, so other work moved it. The cards carry 8 per render.
+
+### 2026-10-02 ~17:10–17:40 — "fix that and generate the video", then "both confirmed"
+- **M-06a** image Fix: "the product is distorted i need a new one thats why i said it should be straid leg". This is the second Fix in a row on the strap.
+  - Diagnosis: both earlier pairs were edits of a small, angled crop of her staircase frame. The shell wrapped round the thigh with the peaks upside down. Higgsfield also logs NB2 under the Pro name.
+  - New pair, v13 (A) / v14 (B): a fresh picture, not an edit, made with Kie AI nano-banana-pro (true Pro), 18 credits each. It is a front-on close-up at knee height with both legs straight and the shell flat to the lens, a third of the frame wide. Refs: Image 1 is front.webp, Image 2 is the R-07a frame (her stairs, denim skirt, tan slippers).
+  - Motion plan: her left slipper steps down one tread toward the lens while the strapped right leg stays straight.
+  - Moved to Old 3: v11 and v12.
+  - The user said "both confirmed". I read it as M-06a A plus the T-04a clip. A is used and v14 B went to Old 3.
+  - Clip v3 was made from v13 A on Kling (32 credits). The bare left foot stepped. The user said "the one who will step should be the one with the strap", so v3 went to Old 3.
+  - Clip v4 was made from the same frame v13 A (32 credits): her right leg, the one with the strap, steps down. Generation 4 on that note; preflight PASS. System change: V7.92.2 adds HT28, `preflight.py` PRODLIMB, L60 and FP25.
+- **T-04a**: clip v3 was made from the pick v7 A (40 credits). The user confirmed it (status `use`). The unused v8 went to Old 3.
+- **System (owner, keys-exe)**: V7.92.1. After a Fix calling a worn product distorted, the next render is fresh, never another edit. Changes: §6A rule 3, `preflight.py` PRODEDIT, LESSONS L59, FP24. Merged in keys-exe/global-manual-ai#453.
+- Kie balance 94441.6 → 94405.6. Kling balance 36493 after the M-06a clip.
+- FINAL-HK1 v4 is re-cut with T-04a v3 and M-06a v4.

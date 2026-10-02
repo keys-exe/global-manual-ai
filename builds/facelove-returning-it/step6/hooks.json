@@ -1,0 +1,251 @@
+[
+ {
+  "hook": 1,
+  "source": "script (Scene 1 · Cold-Open Hook), verbatim",
+  "line": "I am so mad, and this is exactly why you read the reviews before you buy another foundation. Because I bought this FACELOVE stick that everyone would not stop raving about, and I am going to be returning it.",
+  "concepts": [
+   {
+    "id": "A",
+    "frame1": "her bare, red-cheeked face close to the lens, the FACELOVE carton held up beside it and tapped twice, sticker 'I'm so mad 😡'",
+    "stakes": "she is furious at a product everyone loves",
+    "where": "her vanity, late afternoon",
+    "turn": "'…and I am going to be returning it' — the carton drops into a return mailer",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 2,
+     "specific": 2,
+     "fresh": 1,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "B",
+    "frame1": "the return mailer slapped down on the white vanity, the carton dropped into it from above",
+    "stakes": "the product is already going back",
+    "where": "her vanity top from above",
+    "turn": "cut up to her cross face for the first line",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 1,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "C",
+    "frame1": "close on her red cheek, one finger pointing at the redness",
+    "stakes": "the problem she has lived with",
+    "where": "her vanity mirror",
+    "turn": "the stick enters frame",
+    "score": {
+     "stop": 2,
+     "line": 1,
+     "feel": 2,
+     "specific": 2,
+     "fresh": 1,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "D",
+    "frame1": "she walks out of a department store beauty hall, shopping bag swinging, jaw set",
+    "stakes": "another wasted purchase",
+    "where": "a mall beauty hall",
+    "turn": "cut to her at home, still mad",
+    "score": {
+     "stop": 1,
+     "line": 1,
+     "feel": 1,
+     "specific": 1,
+     "fresh": 2,
+     "makeable": 1
+    }
+   },
+   {
+    "id": "E",
+    "frame1": "a pile of half-used foundation bottles swept off the vanity into a bin",
+    "stakes": "years of money on the wrong shades",
+    "where": "her vanity",
+    "turn": "she holds up the one stick she is 'returning'",
+    "score": {
+     "stop": 2,
+     "line": 1,
+     "feel": 2,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 1
+    }
+   }
+  ],
+  "pick": "A"
+ },
+ {
+  "hook": 2,
+  "source": "written for this build — needs your approval",
+  "line": "Okay, I need to vent. I finally found a foundation that actually matches my redness, and I am sending it back. Here is why.",
+  "concepts": [
+   {
+    "id": "A",
+    "frame1": "screech of tape: her hands tape shut a grey return mailer with the FACELOVE carton inside, then she looks straight up at the lens",
+    "stakes": "she's sending back the one that worked",
+    "where": "her vanity, hands and face",
+    "turn": "'Here is why.' — straight into the body",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 2,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "B",
+    "frame1": "half her face: one cheek even, the other still red, she points at both",
+    "stakes": "it worked — so why return it?",
+    "where": "her vanity",
+    "turn": "'and I am sending it back'",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 2,
+     "specific": 2,
+     "fresh": 1,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "C",
+    "frame1": "she rolls her eyes and drops into the vanity chair, bare-faced",
+    "stakes": "she has had enough",
+    "where": "her bedroom",
+    "turn": "she lifts the stick to the lens",
+    "score": {
+     "stop": 1,
+     "line": 1,
+     "feel": 2,
+     "specific": 1,
+     "fresh": 1,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "D",
+    "frame1": "a post-office counter, the parcel slid across",
+    "stakes": "it is really going back",
+    "where": "a post office",
+    "turn": "flash back to her vanity",
+    "score": {
+     "stop": 1,
+     "line": 2,
+     "feel": 1,
+     "specific": 1,
+     "fresh": 2,
+     "makeable": 1
+    }
+   },
+   {
+    "id": "E",
+    "frame1": "close on the stick in her fist, knuckles tight",
+    "stakes": "the anger is real",
+    "where": "her vanity",
+    "turn": "she opens her hand",
+    "score": {
+     "stop": 1,
+     "line": 1,
+     "feel": 2,
+     "specific": 1,
+     "fresh": 1,
+     "makeable": 2
+    }
+   }
+  ],
+  "pick": "A"
+ },
+ {
+  "hook": 3,
+  "source": "written for this build — needs your approval",
+  "line": "Every makeup counter told me nothing would ever match my redness. So why am I returning the one stick that finally did?",
+  "concepts": [
+   {
+    "id": "A",
+    "frame1": "over the saleswoman's shoulder at the makeup counter: a bottle held to her red jaw, three wrong swatches, a slow head shake",
+    "stakes": "the experts gave up on her skin",
+    "where": "the department-store makeup counter",
+    "turn": "cut to her at home holding the stick: 'So why am I returning…'",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 2,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "B",
+    "frame1": "macro: the white balm laid across her red cheek, the brush turning it to her exact shade",
+    "stakes": "proof it did what the counter said was impossible",
+    "where": "her vanity",
+    "turn": "her face, puzzled at her own question",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 1,
+     "specific": 2,
+     "fresh": 1,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "C",
+    "frame1": "a row of wrong-shade bottles on the counter, each one too pink or too orange against her jaw",
+    "stakes": "every match failed",
+    "where": "the makeup counter",
+    "turn": "the stick against her jaw — perfect",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 1,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 1
+    }
+   },
+   {
+    "id": "D",
+    "frame1": "she shrugs at the lens holding the stick, eyebrows up",
+    "stakes": "the puzzle",
+    "where": "her vanity",
+    "turn": "the body explains",
+    "score": {
+     "stop": 1,
+     "line": 2,
+     "feel": 1,
+     "specific": 1,
+     "fresh": 1,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "E",
+    "frame1": "a shopping bag of returned foundations on the bed",
+    "stakes": "years of failed matches",
+    "where": "her bedroom",
+    "turn": "the one she's returning now",
+    "score": {
+     "stop": 1,
+     "line": 1,
+     "feel": 1,
+     "specific": 1,
+     "fresh": 2,
+     "makeable": 1
+    }
+   }
+  ],
+  "pick": "A"
+ }
+]

@@ -1,0 +1,161 @@
+{
+ "audio": "base",
+ "script": "vo/BODY.lines.txt",
+ "base": "th/TH-BODY.trim.mp4",
+ "broll": [
+  {
+   "beat": "B01",
+   "clip": null,
+   "phrase": "And it is not because it goes on pure white",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B02",
+   "clip": null,
+   "phrase": "and then turns into my exact shade",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B03",
+   "clip": null,
+   "phrase": "and melts in like it was made for my skin",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B05",
+   "clip": null,
+   "phrase": "told me my redness was too tricky to match and I should not bother",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B06",
+   "clip": null,
+   "phrase": "It is not because it covered the redness",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B07",
+   "clip": null,
+   "phrase": "the hyperpigmentation, the old post-acne marks",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B08",
+   "clip": null,
+   "phrase": "and every tired line and dark circle",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B08b",
+   "clip": null,
+   "phrase": "I have been hiding for years, in one swipe",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B09",
+   "clip": null,
+   "phrase": "And it is definitely not because three of my friends this week",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B10",
+   "clip": null,
+   "phrase": "asked what I am using",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B11",
+   "clip": null,
+   "phrase": "throw this one stick on before the grocery store",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B12",
+   "clip": null,
+   "phrase": "and feel completely confident walking out the door",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B13",
+   "clip": null,
+   "phrase": "Two full Foundation Sticks for almost the price of one",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B14",
+   "clip": null,
+   "phrase": "plus a free primer, a mystery gift, free shipping",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B14b",
+   "clip": null,
+   "phrase": "and a full thirty day money back guarantee",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B15b",
+   "clip": null,
+   "phrase": "and buying the deal like I should have",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   }
+  },
+  {
+   "beat": "B16",
+   "clip": null,
+   "phrase": "It was never your skin. It was the formula",
+   "max": 6,
+   "layout": {
+    "type": "full"
+   },
+   "whole": "the two short sentences make one picture (each under 2 s)"
+  }
+ ]
+}
