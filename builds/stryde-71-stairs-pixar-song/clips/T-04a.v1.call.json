@@ -1,0 +1,55 @@
+{
+ "beat": "T-04a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"I always figured hers wasn't as bad as mine.\": From this frame: she looks from the dance floor down to her knee — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay closed and still from the first frame to the last — a silent clip, nobody speaks or sings. She watches Loretta dancing beyond, then lowers her eyes and her head a little toward her own right knee, her hand resting on it; beyond the table, Loretta keeps dancing in place, arms up; the table, the glasses and the hall stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut; she never turns to the lens.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_cecea849-ec9a-4bc4-86b6-ed76c3abf53c.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "I always figured hers wasn't as bad as mine.",
+ "motion_plan": "From this frame: she looks from the dance floor down to her knee — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one look down",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause first (HT25)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image T-04a@v3A, job cecea849-ec9a-4bc4-86b6-ed76c3abf53c)"
+}

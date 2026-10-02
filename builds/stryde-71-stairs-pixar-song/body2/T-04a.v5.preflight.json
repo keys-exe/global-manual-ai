@@ -1,0 +1,58 @@
+{
+ "beat": "T-04a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"I always figured hers wasn't as bad as mine.\": Keep this photo exactly as it is — the seated woman, her burgundy dress, gold hoop and hand on her knee, the table, the hall, the lights, the dancer in fuchsia — and fill the dance floor around that dancer with guests. Image 1 is the photo to keep. Image 2 is the style — the same render, materials and light.\nMedium shot over the seated woman's right shoulder at eye level, sharp on the dancer: on the parquet beyond the table, around the woman in fuchsia, eight wedding guests dance in couples and in a short line, in suits and party dresses, some facing the lens, some in profile; the woman in fuchsia stays where she is, arms up, among them. The seated woman stays in lost profile facing frame right, looking at the dance floor, lips closed, her right hand on her knee, four chunky fingers and a thumb. Scale true to the set: the dancers come up to the second row of string lights.\nIn frame: the seated woman, the table, the dance floor full of dancers; every other surface as in Image 1.\nA final frame from a 3D animated feature film, stylized storybook render, warm evening light. No lettering, logos or labels.",
+ "script_line": "I always figured hers wasn't as bad as mine.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "T-04a frame v3 A (confirmed) — the picture to keep",
+   "kind": "frame"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "cecea849-ec9a-4bc4-86b6-ed76c3abf53c",
+ "taste": [
+  "HT03",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT22",
+  "HT25",
+  "FP14"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user 2026-10-02 Fix: \"SHE SHOULD NOT BE THE ONLY ONE ON THE DANCE FLOOR\" → an edit of the confirmed v3 A frame, the floor filled with guests around Loretta",
+ "product": false,
+ "medias": [
+  "cecea849-ec9a-4bc4-86b6-ed76c3abf53c",
+  "5b40a12a-24f5-4d12-8650-016a8b0384ae"
+ ],
+ "board_refs": [
+  {
+   "label": "T-04a frame v3 A (confirmed) — the picture to keep",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__T-04a",
+   "role": "Image 1"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-05c",
+   "role": "Image 2"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "beat": "T-02a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"and she was out on that dance floor all night.\": From this frame: one side step with the line — one step per beat, about a second; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay closed in a grin from the first frame to the last — a silent clip, nobody speaks or sings. Loretta, at the front nearest the lens, takes one side step to her right on the beat and lands, the guests in the line behind her stepping with her in unison; arms loose, the hall and the lights stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut; nobody turns to the lens.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_084910_366e9056-44ad-4e5a-b53f-8eb8596098c2.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "and she was out on that dance floor all night.",
+ "motion_plan": "From this frame: one side step with the line — one step per beat, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one step per beat",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause first (HT25)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image T-02a@v5A, job 366e9056-44ad-4e5a-b53f-8eb8596098c2)"
+}

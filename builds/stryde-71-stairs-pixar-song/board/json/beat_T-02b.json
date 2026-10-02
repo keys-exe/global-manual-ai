@@ -12,30 +12,38 @@
  ],
  "focus": "foreground · medium",
  "framing": "CU at floor level from the side: the line's feet in profile on the parquet, Loretta's white slip-ons under a fuchsia hem, stepping together",
- "imageAsset": "636a90a686c4658ffe86a097367b0d0b",
- "imageAt": 1790891943025,
+ "imageAsset": "82c3c093e378b3c47ab13cf8db46baaf",
+ "imageAt": 1790931151369,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageJob": "910ae0d0-d92f-4feb-92e2-9e22fd82e823",
+ "imageFault": "wrong person",
+ "imageJob": "6139b545-d92b-4f72-b89f-410bd46c110b",
  "imageMatch": "plate",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [
-  3,
-  4
+  5,
+  6
  ],
- "imagePrompt": "For the line \"Electric Slide, Cupid Shuffle, all of it.\": Keep this photo exactly as it is — the parquet dance floor, the evening light of the string lights — in close at floor level on the dance floor, a tall 9:16 crop, and add the feet. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nClose-up at floor level from the side, sharp on the white sneakers: a row of dancers' feet in profile on the parquet, all pointing frame right, stepping forward together in unison — black dress shoes, gold heels, and nearest the lens a pair of white slip-on sneakers under the hem of a fuchsia satin dress to the knee, brown ankles; legs from the knee down, every foot whole on the floor. Scale true to the set: the fuchsia hem comes up to her knee.\nIn frame: the row of feet, the parquet, the lights soft behind; nothing else on the floor.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Shoes and dress plain — no lettering, logos or labels.",
+ "imageParts": [],
+ "imagePrompt": "For the line \"Electric Slide, Cupid Shuffle, all of it.\": Keep this photo exactly as it is — the parquet dance floor, the evening light of the string lights — in close at floor level on the dance floor, a tall 9:16 crop, and add the feet. Image 1 is the hall. Image 2 is Loretta — her skin, build and fuchsia satin dress. Image 3 is the style — the same render, materials, light and proportions.\nClose-up at floor level from the side, sharp on her white sneakers: nearest the lens, Loretta's legs from Image 2, seventy-four — medium-brown skin, full sturdy calves, thick ankles — under the hem of her fuchsia satin dress, in white slip-on sneakers, pointing frame right, mid step forward; beyond, other dancers' dress shoes and gold heels step with her. Legs from the knee down, every foot whole on the floor. Scale true to the set: her hem comes down to just below her knee.\nIn frame: her legs and sneakers, the row of feet, the parquet, the lights soft behind; nothing else on the floor.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. No lettering, logos or labels.",
  "imageRefs": [
   {
-   "kind": "location",
    "label": "P3-RECEPTION plate (confirmed)",
+   "kind": "location",
    "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
   },
   {
-   "kind": "style",
+   "label": "T-01b frame v3 A (confirmed) — Loretta: the legs, skin, build and dress to copy (no face in this shot)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__T-01b"
+  },
+  {
    "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
    "ref": "stryde-71-stairs-pixar-song__P-05c"
   }
  ],
+ "imageRegens": 2,
  "imageRes": "1536×2752",
  "imageStatus": "review",
  "imageTaste": [
@@ -47,15 +55,18 @@
   "HT21",
   "HT22",
   "HT25",
+  "HT26",
   "FP13",
   "FP14",
-  "FP17",
-  "HT26"
+  "FP17"
  ],
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215353_910ae0d0-d92f-4feb-92e2-9e22fd82e823.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_084908_6139b545-d92b-4f72-b89f-410bd46c110b.png",
  "imageVersions": [
   {
+   "archiveAsset": "35cfdb7dff3be5a34bcd04c82d6fffba",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "606ccb495443c3db7154beac1d8ed528",
    "at": 1790890992104,
    "connector": "Higgsfield",
@@ -78,12 +89,12 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_ecf744f1-2c4e-4301-b419-bd7acab70760.png",
-   "v": 1,
-   "archived": true,
-   "archiveAsset": "35cfdb7dff3be5a34bcd04c82d6fffba",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 1
   },
   {
+   "archiveAsset": "ca1bca919995a6873e7d6fda8bfd2f85",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "f142e65ec8eb2a4bb98e55239b0995ba",
    "at": 1790890992104,
    "connector": "Higgsfield",
@@ -106,51 +117,47 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214016_95b6b9ab-1ac3-470d-8988-745f8d15cf0a.png",
-   "v": 2,
+   "v": 2
+  },
+  {
+   "asset": "636a90a686c4658ffe86a097367b0d0b",
+   "at": 1790891943025,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "910ae0d0-d92f-4feb-92e2-9e22fd82e823",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: her white slip-ons under the fuchsia hem at floor level, dress shoes and gold heels in the row beside her — A three-quarter from the side, B closer from the side · replaced on the user's Fix \"wrong person\"; kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "res": "1536×2752",
+   "size": 6982715,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215353_910ae0d0-d92f-4feb-92e2-9e22fd82e823.png",
+   "v": 3,
    "archived": true,
-   "archiveAsset": "ca1bca919995a6873e7d6fda8bfd2f85",
+   "archiveAsset": "be2412f7a619bf9c21aa21ccdb4f0288",
    "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
   },
   {
-   "v": 3,
-   "pair": "A",
-   "asset": "636a90a686c4658ffe86a097367b0d0b",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215353_910ae0d0-d92f-4feb-92e2-9e22fd82e823.png",
-   "job": "910ae0d0-d92f-4feb-92e2-9e22fd82e823",
-   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "asset": "2beb68a2cdb51877da2fcb4d606c67f6",
+   "at": 1790891943025,
    "connector": "Higgsfield",
    "credits": 2.14,
-   "size": 6982715,
-   "res": "1536×2752",
-   "at": 1790891943025,
-   "refs": [
-    {
-     "kind": "location",
-     "label": "P3-RECEPTION plate (confirmed)",
-     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
-    },
-    {
-     "kind": "style",
-     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
-     "ref": "stryde-71-stairs-pixar-song__P-05c"
-    }
-   ],
-   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: her white slip-ons under the fuchsia hem at floor level, dress shoes and gold heels in the row beside her — A three-quarter from the side, B closer from the side"
-  },
-  {
-   "v": 4,
-   "pair": "B",
-   "asset": "2beb68a2cdb51877da2fcb4d606c67f6",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_71c310ea-7ab8-4030-bd85-1694b3cd439f.png",
    "job": "71c310ea-7ab8-4030-bd85-1694b3cd439f",
    "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "size": 7113795,
-   "res": "1536×2752",
-   "at": 1790891943025,
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: her white slip-ons under the fuchsia hem at floor level, dress shoes and gold heels in the row beside her — A three-quarter from the side, B closer from the side · replaced on the user's Fix \"wrong person\"; kept on Old versions 2",
+   "pair": "B",
    "refs": [
     {
      "kind": "location",
@@ -163,7 +170,78 @@
      "ref": "stryde-71-stairs-pixar-song__P-05c"
     }
    ],
-   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: her white slip-ons under the fuchsia hem at floor level, dress shoes and gold heels in the row beside her — A three-quarter from the side, B closer from the side"
+   "res": "1536×2752",
+   "size": 7113795,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_71c310ea-7ab8-4030-bd85-1694b3cd439f.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "f462238bbbccc0349406babe8cdf473d",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "v": 5,
+   "pair": "A",
+   "asset": "82c3c093e378b3c47ab13cf8db46baaf",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_084908_6139b545-d92b-4f72-b89f-410bd46c110b.png",
+   "job": "6139b545-d92b-4f72-b89f-410bd46c110b",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6553789,
+   "res": "1536×2752",
+   "at": 1790931151369,
+   "refs": [
+    {
+     "label": "P3-RECEPTION plate (confirmed)",
+     "kind": "location",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "label": "T-01b frame v3 A (confirmed) — Loretta: the legs, skin, build and dress to copy (no face in this shot)",
+     "kind": "frame",
+     "ref": "stryde-71-stairs-pixar-song__T-01b"
+    },
+    {
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "kind": "style",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-02 Fix: \"wrong person\" → Loretta's confirmed T-01b frame as Image 2: her skin, full sturdy build and fuchsia dress; the white slip-ons on her · what I see: Loretta's legs nearest the lens — medium-brown, full calves, the fuchsia satin hem just below the knee, white slip-ons mid step; dress shoes and gold heels beyond — A her feet point frame left, B frame right as asked"
+  },
+  {
+   "v": 6,
+   "pair": "B",
+   "asset": "351ec63c2e182d8583d9ecf843cb9b91",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_084909_7368f8c4-4c5e-4f8c-b81d-f24b59cd4083.png",
+   "job": "7368f8c4-4c5e-4f8c-b81d-f24b59cd4083",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6855272,
+   "res": "1536×2752",
+   "at": 1790931151369,
+   "refs": [
+    {
+     "label": "P3-RECEPTION plate (confirmed)",
+     "kind": "location",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "label": "T-01b frame v3 A (confirmed) — Loretta: the legs, skin, build and dress to copy (no face in this shot)",
+     "kind": "frame",
+     "ref": "stryde-71-stairs-pixar-song__T-01b"
+    },
+    {
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "kind": "style",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-02 Fix: \"wrong person\" → Loretta's confirmed T-01b frame as Image 2: her skin, full sturdy build and fuchsia dress; the white slip-ons on her · what I see: Loretta's legs nearest the lens — medium-brown, full calves, the fuchsia satin hem just below the knee, white slip-ons mid step; dress shoes and gold heels beyond — A her feet point frame left, B frame right as asked"
   }
  ],
  "key": "Slide",
@@ -183,9 +261,8 @@
  "songOut": 54.35,
  "stage": "broll",
  "staging": "feet only, one step",
- "status": "ready",
+ "status": "planned",
  "storyDay": "N-D2",
  "title": "turn",
- "updatedAt": 1790891943025,
- "imageParts": []
+ "updatedAt": 1790931151369
 }

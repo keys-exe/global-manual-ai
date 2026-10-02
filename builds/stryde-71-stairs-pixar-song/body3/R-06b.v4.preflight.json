@@ -1,0 +1,106 @@
+{
+ "beat": "R-06b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"She said, Just put it on and walk down them stairs.\": Kitchen of Image 4, tall 9:16. Image 1 is the strap, Image 2 its back, Image 3 its three-quarter view. Image 5 is the style.\nClose-up from high three-quarter, her own view, sharp on the strap: a seated older Black woman's bare right shin and knee, deep brown skin, the hem of her denim skirt just above the knee, a rose-pink blouse sleeve at the top edge, both hands sliding the strap of Image 1 copied exactly — a black shell, two pointed peaks round a notch, a chrome slide at each end — up the shin, 12 × 5 cm, a third of the frame wide, its top edge reaching the kneecap's lower edge; four chunky fingers and a thumb on each; a tan slipper below. Scale true to the set: the hem comes to her knee.\nIn frame: one leg, two hands, the strap, a chair edge, the floor; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark; no caption.",
+ "script_line": "She said, Just put it on and walk down them stairs.",
+ "face": false,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "product_tq_left.jpg — the strap, three-quarter (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "kept off (L16): A printed the lyric as a caption and wore the N-D1 dress from the style frame; B drew the strap as a box (FP01) → quotes dropped, a style frame with no outfit, the shell's shape named",
+ "product": true,
+ "risk_class": "hand_product",
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "72a9acfd-439d-478b-916d-b4da8b6d2836",
+  "05dbc852-16c0-4f52-8aa0-dffd0b20f3c0",
+  "2484470e-dbda-4935-b1f2-0897e8418066",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/back.webp",
+   "role": "Image 2"
+  },
+  {
+   "label": "product_tq_left.jpg — the strap, three-quarter (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/product_tq_left.jpg",
+   "role": "Image 3"
+  },
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 4"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 5"
+  }
+ ]
+}
