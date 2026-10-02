@@ -36,11 +36,11 @@ ORDER = [("SC02", [("SC02-SH01", 3), ("SC02-SH02", 1), ("SC02-SH03", 5), ("SC02-
 
 
 def clip(beat, v):
-    return next(B.glob(f"body/*/{beat}_v{v}.mp4"))
+    return next(p for d in ("body", "hooks") for p in B.glob(f"{d}/*/{beat}_v{v}.mp4"))
 
 
 def call(beat):
-    return json.loads(next(B.glob(f"body/*/{beat}.call.json")).read_text())
+    return json.loads(next(p for d in ("body", "hooks") for p in B.glob(f"{d}/*/{beat}.call.json")).read_text())
 
 
 def act_rows():
@@ -58,16 +58,21 @@ def shot_starts(c):
     return st or {1: 0.0}
 
 
-def plan():
+def plan(order=None, fixed=None):
+    """fixed: [(vo file, beat, offset)] — a hook's narration on a named take, instead of the act map."""
+    order = order or ORDER
     vo_lines = sorted(p.stem for p in VO_DIR.glob("L0*.mp4"))
     takes, t = [], 0.0
-    for scene, beats in ORDER:
+    for scene, beats in order:
         for beat, v in beats:
             p = clip(beat, v); d, has_a = H.info(p); c = call(beat)
             m = re.fullmatch(r"(SC\d\d)-SH(\d\d)-(\d\d)", beat)  # a one-take of two rows (SC03-SH07-08)
             covers = c.get("covers") or ([f"{m[1]}-SH{m[2]}", f"{m[1]}-SH{m[3]}"] if m else [beat])
             takes.append({"scene": scene, "beat": beat, "v": v, "path": p, "dur": d, "audio": has_a, "covers": covers,
                           "starts": shot_starts(c), "dialogue": bool(c.get("dialogue"))})
+    if fixed is not None:
+        bt = {k["beat"]: k for k in takes}
+        return takes, [{"line": Path(f).stem, "file": Path(f), "take": bt[b], "off": off, "dur": H.info(f)[0]} for f, b, off in fixed]
     row_take = {}
     for k in takes:
         for i, r in enumerate(k["covers"]):
@@ -81,7 +86,7 @@ def plan():
             if k is None:  # the row's own shot was merged into a take (L51) — follow the line before it
                 k, off = last["take"], None
             off = OFF.get(L, off)
-            place.append({"line": L, "take": k, "off": off, "dur": H.info(VO_DIR / f"{L}.mp4")[0]})
+            place.append({"line": L, "file": VO_DIR / f"{L}.mp4", "take": k, "off": off, "dur": H.info(VO_DIR / f"{L}.mp4")[0]})
             last = place[-1]
     return takes, place
 
@@ -100,11 +105,13 @@ def speech_spans(wav, sr=44100):
     return [(s, e) for s, e in merged if e - s > 0.15]
 
 
-def build():
+def build(order=None, name="BODY", fixed=None, version=None):
+    order = order or ORDER
+    version = version or VERSION
     OUT.mkdir(parents=True, exist_ok=True)
-    takes, place = plan()
+    takes, place = plan(order, fixed)
     # dialogue per scene (isolate + gate, the hook-edit v3 sound), then its spoken spans in take time
-    for scene, _ in ORDER:
+    for scene, _ in order:
         ks = [k for k in takes if k["scene"] == scene]
         if not any(k["dialogue"] for k in ks):
             for k in ks:
@@ -168,20 +175,20 @@ def build():
         fc.append(f"[{j}:a]atrim=0:{k['dur']:.3f},asetpts=PTS-STARTPTS,aresample=48000,aformat=channel_layouts=stereo,adelay={ms}|{ms}[d{j}]")
         mix.append(f"[d{j}]"); j += 1
     for x in place:
-        args += ["-i", str(VO_DIR / f"{x['line']}.mp4")]
+        args += ["-i", str(x["file"])]
         ms = int(x["at"] * 1000)
         fc.append(f"[{j}:a]aresample=48000,aformat=channel_layouts=stereo,adelay={ms}|{ms}[n{j}]")
         mix.append(f"[n{j}]"); j += 1
     fc.append(f"anullsrc=r=48000:cl=stereo,atrim=0:{total:.3f}[sil]")
     fc.append("[sil]" + "".join(mix) + f"amix=inputs={len(mix) + 1}:duration=first:normalize=0,loudnorm=I=-14:TP=-1:LRA=11[am]")
-    out = OUT / f"BODY_edit_v{VERSION}.mp4"
+    out = OUT / f"{name}_edit_v{version}.mp4"
     subprocess.run([FF, "-y", "-hide_banner", "-loglevel", "error", *args, "-filter_complex", ";".join(fc), "-map", "[vg]", "-map", "[am]",
                     "-c:v", "libx264", "-crf", "17", "-preset", "medium", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
                     "-movflags", "+faststart", str(out)], check=True)
-    sheet = [f"# Body edit v{VERSION} — {total:.1f}s", "", "| Take | v | At | Length | Hold |", "|---|---|---|---|---|"]
+    sheet = [f"# {name} edit v{version} — {total:.1f}s", "", "| Take | v | At | Length | Hold |", "|---|---|---|---|---|"]
     sheet += [f"| {k['beat']} | v{k['v']} | {k['at']:.2f}s | {k['dur']:.2f}s | {k['hold']:.2f}s |" for k in takes]
     sheet += ["", "## Narration", ""] + [f"- {r}" for r in report]
-    (OUT / f"BODY_edit_v{VERSION}.md").write_text("\n".join(sheet) + "\n")
+    (OUT / f"{name}_edit_v{version}.md").write_text("\n".join(sheet) + "\n")
     print("\n".join(report)); print(out, f"{H.info(out)[0]:.2f}s", "holds:", {k["beat"]: k["hold"] for k in takes if k["hold"]})
 
 
