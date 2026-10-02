@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "voice_name": "Returning",
+  "voice_id": "9dP3DgqW7TL53p7rTcnP",
+  "category": "cloned",
+  "requires_verification": false,
+  "source": "Returning_clone_source.mp3",
+  "source_s": 32.31,
+  "remove_background_noise": true
+}

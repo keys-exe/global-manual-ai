@@ -30,6 +30,9 @@ Drive task folder `1PvwdhVU13RI6M1GQi9GKy-aEdx_4XZSa`
 - Kling voice takes built (`voice/N_G1.call.json` "I am so mad…" 18 words, `N_G2` "And it is not because it goes on pure white…" 17 words; kling3_0 via Higgsfield, pro, 10 s, sound on): `preflight.py` PASS except **start image approved** — §22X: no paid video call before the user's Confirm of N-VOICE-IMG. Stopped there.
 - Higgsfield ODAQ B.V. balance 3,828.24 (shared — other sessions spend on it).
 
+- **Voice run (user: "confim and proceed", all plates, C1/C2 and both talking-head frames confirmed):** Kling voice takes G1 (job 50479076) and G2 (job 28d5e439) on kling3_0 via Higgsfield (pro, 10 s, sound on, 25 cr each; Higgsfield's "IN THE DARK" preset declined, prompts sent as written), both heard back verbatim. `voice_source.py` PASS (210.5 / 197.5 Hz, 6.2%) → 32.3 s → **cloned `Returning` = 9dP3DgqW7TL53p7rTcnP**. `eleven_v4` × 4 at speed 0.9 from `vo/ALL.enhanced.fitted.txt`: T1 90.4 s 190 wpm, T2 189, T3 188, T4 184 — every word present (Whisper writes 60% / 30-day as digits), last word rings out (≤ −84 dB). **T1 = working take.**
+- Talking heads: HeyGen photo avatars in one group `90b3886990976ec37c37ddb387fe77a3` — finished face `90b3886990976ec37c37ddb387fe77a3`, bare face `77a6a5e47453baaaab6b6cd4da2a4f4a`. Two looks, so the untrimmed T1 is split once at the hook/body gap (`cut_points.py`, 13.38 s) and rendered as two passes: TH-HK1 on the bare face (video 7ee1d97b), TH-BODY on the finished face (video 7fc276ea). Avatar V rejected `motionPrompt` (no digital twin in the group) → §22U fallback (c): Avatar V without it, never Avatar IV.
+
 ## Decisions
 - Mode 1 + UGC Ad from the inspo (no MODE/FORMAT in the message) — F2. Hooks 3 by default — F3.
 - The inspo file came with no extension (`inspo video`) — renamed `intake/inspo.mp4` and measured as the primary.
