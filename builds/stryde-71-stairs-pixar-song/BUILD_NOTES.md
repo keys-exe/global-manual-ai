@@ -919,3 +919,18 @@ You picked A on all five open pairs, and none of the cards had a Fix note waitin
 **Waiting on:**
 - Confirm or Fix on the open clips: C-02a, C-02b, C-03b, C-04a v2, C-05a, C-06a, C-07a, C-08a, C-08b, C-09a, C-09c, PR-05b v2, PR-06a v2.
 - Every beat now has its picture and clip. Once they're confirmed, the edit comes next (`music.py cuts --words` / `render`).
+
+### 2026-10-02 ~15:10–15:35 UTC — "all are locked finish this": the finished video
+
+All 61 act-map beats are confirmed (`use`). Their clips on disk match the board's current versions byte for byte.
+
+**FINAL-HK1** is on the Final board as To check (status `review`; the final review is yours). It's 3:48 (228.04 s), 1080×1920, 24 fps, 123 MB, uploaded as 9 × 15 MB parts that the board joins back into the exact file. It was made with `edit/build_final.py`; the cut list is `edit/cutlist_HK1.json` and the captions are `edit/captions_HK1.ass`.
+- **Picture:** the 61 confirmed clips cut on the act map's beat-snapped lyric cuts (`work/actmap_rows.json` t_in/t_out = `docs/actmap`), frame-exact on the 24 fps grid. Each clip enters 0.4 s in, except HK-01a (0.03 s) and HK-02a (0.11 s), whose clips are only a fraction longer than their slots. No speed change, nothing slowed.
+- **Sound:** the song, whole and untouched (the only soundtrack, §3C).
+- **Captions (EG01):** the 108 lyric lines verbatim, black on white boxes, one or two rows at ~72 % height, a long line split at its comma or into even halves. Line 37 "Stryde." is captioned at 84.5–86.3 s (F4).
+- **End card (F16):** the 5.3 s instrumental outro (222.7–228.0 s) shows the last frame of the C-07a clip (two straps in the box, the lid aside, the wordmark clear) with a slow 6 % push. The overlays are "Buy 1 Get 1 Free" and "60-day money-back guarantee", both held claims (§17), never generated.
+- Flagged: P-05a (1.6 s) and P-05c (0.8 s) run under the 2.0 s floor. This is the three-shot P-05 you asked for on 2026-10-01.
+- **This build's spend** (`build_spend.py` over the Current, Old, Old 2 and Old 3 boards; written as `buildSpend` on the Current and Final build docs): Kling 3,928 credits / 99 clips · Higgsfield 855.76 / 401 images · Kie AI 963 / 1 image. Total 5,746.76 credits over 501 renders.
+- **Balances:** Higgsfield 5869.65 · Kling 36613 (no generation this turn).
+
+**Waiting on:** your Confirm or Fix on FINAL-HK1 on the Final board.
