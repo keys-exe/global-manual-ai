@@ -1,0 +1,69 @@
+{
+ "beat": "M-02a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"while your knee got worse. This one fixes why it hurts.\": An X-ray card in the film's world, tall 9:16. Image 1 is the strap, Image 2 it worn front-on — copy its shape and where it sits exactly. Image 3 is the style — the film's X-ray look.\nTwo knees side by side, front-on, level, blue-white bone on a black field, each knee a third of the frame wide. The LEFT knee wears a full knee sleeve, a faint grey outline over the whole joint, a soft amber haze across all of it. On the RIGHT knee, drawn solid in real materials over the X-ray, the strap of Image 1 copied exactly — a black shell, two pointed peaks round a notch, a chrome slide at each end — 12 × 5 cm, as wide as the knee, its front to the lens, the wordmark level: the kneecap's lower edge sits in its notch, the shell on the tendon just under the kneecap, the band round the back of the leg; one small warm glow under the shell.\nIn frame: two knees, the sleeve outline, one strap; every other area plain dark.\nA final frame from a 3D animated feature film, stylized storybook render. The strap alone in real materials, in the same light. Film plain — no lettering, labels or measurement marks.",
+ "script_line": "while your knee got worse. This one fixes why it hurts.",
+ "face": false,
+ "room": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "T-03a frame v4 B (confirmed) — the film's X-ray look",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT11",
+  "HT18",
+  "HT21",
+  "FP03",
+  "FP13"
+ ],
+ "anatomy": true,
+ "anat_style": "S2",
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user Fix \"fix the product and palcement\" → the worn-strap photo as Image 2 for its placement, the strap drawn solid in real materials over the X-ray, the kneecap's lower edge in its notch, the shell on the tendon just under the kneecap",
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "e5f263f1-108c-4084-bf56-035f7cf76409",
+  "3398f2c7-07d9-4166-bc1b-2424a8b2aad7"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/worn_front.jpg",
+   "role": "Image 2"
+  },
+  {
+   "label": "T-03a frame v4 B (confirmed) — the film's X-ray look",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__T-03a",
+   "role": "Image 3"
+  }
+ ]
+}

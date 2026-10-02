@@ -57,6 +57,8 @@ Beat images (§6A, V7.70.0; first-render rules V7.74.0) — a B-roll or hook sta
     "taste": ["HT03", "FP02"],         # House Taste / product fix-pattern rules applied (§34A)
     "anatomy": false,                  # an anatomy / mechanism beat (Nano Banana)
     "first_frame": false,              # Modes 2/3/5 (§24O): the build's first beat image — every later one attaches a confirmed frame as kind "style"
+    "anat_lock": null | "the team's look call for the build's anatomy, in their words (§12A-1 rule 7)",
+    "pixar_anatomy": false,            # a build from before V7.90 whose team asked for the Pixar anatomy: the Pixar anatomy checks run despite legacy_build (V7.90.3)
     "anat_style": null | "S1".."S7",   # anatomy beats: the act-map row's style (§12A-1, V7.81.0); S5 (physical model) routes as realistic
     "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = two NB Pro
     "alt_reason": null | "why nano_banana_2 runs instead of Pro (the alternative, V7.72.1)"
@@ -114,6 +116,8 @@ STREAMERS = re.compile(r"\b(netflix|hbo|max original|prime video|amazon original
 WALK = re.compile(r"\b(walks?|walking|steps? (?:toward|into|across|down|up)|crosses|climbs?|stairs|runs?|running)\b", re.I)
 PLACEHOLDER = re.compile(r"\[(?:[A-Z][A-Z0-9 ,:/'’\-]{2,}|NAME|WHO|WORD|STATE|PACE|SIDE|FOCAL)[^\]]*\]")
 BANNED = re.compile(r"\bcinematic\b", re.I)
+# §12A-1 Pixar anatomy (V7.90.0): words that pull a Mode 2 / 5 anatomy frame back to medical CGI
+PIX_ANAT_BAN = re.compile(r"premium 3D anatomical visuali[sz]ation|medical education|broadcast-quality|photo-?real(?:istic)?|natural tissue colou?rs|fibrous|fibre detail|textbook|seamless (?:studio|background)|pale grey seamless", re.I)
 # Builds started before V7.88.0 keep their shot-by-shot plan: no take is required on their calls (a system update never
 # touches existing builds; re-cutting one into takes is its team's call). Recognised by the call's "build" field or its path.
 PRE_TAKES = {"identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "stryde-71-stairs-pixar-song", "stryde-71-stairs",
@@ -180,14 +184,22 @@ def run_image(c):
         pos = NEG_CLAUSE.sub(" ", p)   # what the prompt asks for, negatives removed
         ph = STYLE_PHOTO.search(pos)
         check("no photograph words in a stylised render (§24O rule 1)", not ph, ph.group(0) if ph else "")
-        check("a style reference attached (§24O rule 2)", c.get("first_frame") is True or any(k in ("style", "frame") for k in kinds),
-              "attach one confirmed frame of this build as kind 'style' ('Image n is the style — same render, materials, light and proportions'); the build's first beat image sets first_frame: true")
+        if mode in (2, 5) and c.get("anatomy") and not c.get("anat_lock") and (not c.get("legacy_build") or c.get("pixar_anatomy")):
+            # V7.90.3 (LESSONS L36): a scene frame as the style on a set-less Pixar anatomy shot paints its scene in (3 of 12 renders
+            # drew the kitchen table, hands and brace). The look travels in ANAT-PIX; only a confirmed anatomy frame may be the style.
+            scene = [r.get("label", "") for r in refs if str(r.get("kind", "")).lower() in ("style", "frame") and not re.search(r"anatom", r.get("label", ""), re.I)]
+            check("Pixar anatomy: no scene frame as the style (§24O rule 2, §12A-1 V7.90.3)", not scene,
+                  f"drop {scene[0][:60]!r} — attach only a confirmed anatomy frame (label it 'anatomy'), or none" if scene else "")
+        else:
+            check("a style reference attached (§24O rule 2)", c.get("first_frame") is True or any(k in ("style", "frame") for k in kinds),
+                  "attach one confirmed frame of this build as kind 'style' ('Image n is the style — same render, materials, light and proportions'); the build's first beat image sets first_frame: true")
         if c.get("body") or c.get("face"):
             check("scale against the set and each other (§24O rule 3)", bool(STYLE_SCALE.search(p)),
                   "e.g. 'her head level with the 6th baluster, the door handle at her hip; the daughter a head taller' — 'too big' is this mode's most repeated Fix")
             check("which way each character faces, in picture terms (§24O rule 4)", bool(STYLE_FACING.search(p)),
                   "e.g. 'her back to the lens, facing the church doors' or 'in profile, facing frame left'")
-            if HANDS.search(p):
+            no_hands = re.search(r"\b(?:no hands?|(?:both )?hands? (?:are )?(?:out of|outside the) frame)\b", p, re.I)
+            if HANDS.search(NEG_CLAUSE.sub("", p)) and not no_hands:   # "no hands in frame" names hands only to keep them out
                 check("stylised hands spelled out (§24O rule 5)", bool(STYLE_HANDS.search(p)), "e.g. 'each hand four chunky fingers and a thumb'")
     sl = c.get("script_line")
     check("the spoken line is in the prompt (§6A)", bool(sl) and norm(sl) in norm(p), "script_line missing" if not sl else "")
@@ -202,8 +214,15 @@ def run_image(c):
         hit = re.search(r"location plate", p, re.I)
         check("no room block on a no-room shot (§6A)", not hit and "location" not in kinds, hit.group(0) if hit else ("location ref attached" if "location" in kinds else ""))
     if c.get("product"):
-        check("product photo attached first (§6A)", bool(kinds) and kinds[0] == "product", f"first ref: {kinds[0] if kinds else 'none'}")
+        # an image edit (§6A rule 3) takes the picture being edited as Image 1, so the product photo comes right after it
+        pi = 1 if (c.get("match") or "").strip() else 0
+        check("product photo attached first (§6A)" if not pi else "product photo attached right after the picture being edited (§6A rules 1, 3)",
+              len(kinds) > pi and kinds[pi] == "product", f"ref {pi + 1}: {kinds[pi] if len(kinds) > pi else 'none'}")
         check("true-size anchor for the product (§6A)", bool(SIZE_ANCHOR.search(p)), "e.g. '12 × 5 cm, the size of a matchbox'")
+    if c.get("anatomy"):
+        # §12A-1 rule 8 (V7.89.3, LESSONS L34): a worn photo shows a real leg — it printed one under the knee models
+        worn = [r.get("label", "") for r in refs if re.search(r"\bworn\b", r.get("label", ""), re.I)]
+        check("only the product photo on an anatomy beat (§12A-1 rule 8)", not worn, f"worn photo attached: {worn[0][:60]}" if worn else "")
     # §6A Part 2 — right on the first render (V7.74.0)
     if refs:
         missing = [i + 1 for i in range(len(refs)) if not re.search(rf"\b(?:Image|Photo|Picture)\s*{i + 1}\b", p, re.I)]
@@ -244,11 +263,20 @@ def run_image(c):
             miss = [w for w, rx in (("smoky see-through outline", r"smoky see-through outline"), ("ivory-peach bones", r"ivory-peach"),
                                     ("navy-black field", r"navy-black")) if not re.search(rx, p, re.I)]
             check("S1 Ghost: the look in words (ANAT-BASE + ANAT-STYLE-S1)", not miss, ", ".join(miss))
-        if st and st != "S1":
+        if mode in (2, 5) and not c.get("anat_lock") and (not c.get("legacy_build") or c.get("pixar_anatomy")):
+            # V7.90.0 (user: "lets make one" / "create the pixar version of that"): Pixar anatomy — each realistic style drawn
+            # by the film. Steps aside for the team's look call (anat_lock, §12A-1 rule 7) and builds that existed at the cut.
+            head = p[:400]
+            check("Pixar anatomy: ANAT-PIX opens the prompt (§12A-1 V7.90.0)",
+                  "drawn the way this film's own animators would draw it" in head,
+                  "" if "drawn the way this film's own animators would draw it" in head else "start with the line, then ANAT-PIX (render line + the film's anatomy), then the style's ANAT-PIX-S<n> line")
+            med = PIX_ANAT_BAN.findall(NEG_CLAUSE.sub("", p.split("NEGATIVES:")[0]))
+            check("Pixar anatomy: no medical-CGI words (§12A-1 V7.90.0)", not med, ", ".join(sorted(set(m.lower() for m in med))))
+        if st and st != "S1" and (mode not in (2, 5) or c.get("anat_lock") or c.get("legacy_build")):
             s1 = re.search(r"Premium 3D anatomical visuali[sz]ation|near-black (field|background)|navy-black (field|background)|glass-like (body|outer|shell)|smoky see-through outline", p, re.I)
             check(f"no S1 Ghost world on an {st} beat (§12A-1)", not s1, s1.group(0) if s1 else "")
-        if st == "S5":
-            anatomy = False   # a physical model is a Mode 1 capture: routed like realistic work
+        if st == "S5" and mode not in (2, 3, 5):
+            anatomy = False   # a physical model is a Mode 1 capture: routed like realistic work (stylised modes keep the stylised route, V7.90.0)
     check("A/B pair: two renders (§5)", len(pair) == 2, f"pair {pair}")
     if anatomy or mode in (2, 3, 5):
         why = "anatomy" if anatomy else f"Mode {mode}"

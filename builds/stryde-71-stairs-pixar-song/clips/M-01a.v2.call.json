@@ -1,0 +1,61 @@
+{
+ "beat": "M-01a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"She said, Everything else you tried was made to keep you comfortable\": From this frame: nothing moves, held — she rests still, about two seconds; camera R4 — a slow single-axis push down toward her face on a stabilised virtual rig. Her lips stay sealed and her jaw still from the first frame to the last, her face holding the expression of the frame — a silent clip, nobody speaks or sings. She lies still on the treatment table, eyes closed, a calm resting face, breathing unseen; her hands stay on her stomach; the heat pad stays on her knee; the room stays exactly as in the frame. Stylized 3D animation, exactly on model from the frame. The camera pushes down slowly on one straight axis, nothing more; no cut.",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_100934_5deb4be4-c9b7-4928-88e6-623be80bbf3d.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "She said, \"Everything else you tried was made to keep you comfortable",
+ "motion_plan": "From this frame: nothing moves, held — she rests still, about two seconds; camera R4 — a slow single-axis push down toward her face on a stabilised virtual rig",
+ "motion_confirmed": true,
+ "pace": "one settle",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "user_go": null,
+ "fix_note": "kept off clip v1: her mouth opened as her head settled → held still, camera push only",
+ "fix_notes_all": [
+  "kept off clip v1: her mouth opened as her head settled → held still, camera push only"
+ ],
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v2 of this beat (from the confirmed image M-01a@v1B, job 5deb4be4-c9b7-4928-88e6-623be80bbf3d)"
+}

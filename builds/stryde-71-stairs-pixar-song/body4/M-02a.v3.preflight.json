@@ -1,0 +1,69 @@
+{
+ "beat": "M-02a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"while your knee got worse. This one fixes why it hurts.\": A clean 3D medical anatomy model of the right knee on a pale grey seamless background, in natural tissue colours — red muscle, white tendons and ligaments, ivory bone — soft even light, textbook clarity. Image 1 is the strap, Image 2 it worn front-on — copy its shape and where it sits exactly. Image 3 sets the light only.\nTwo knee models side by side, front-on, level, each a third of the frame wide. The LEFT knee wears a full knee sleeve, a faint grey outline with a soft amber haze over the whole joint. On the RIGHT knee, the strap of Image 1 copied exactly — a black shell, two pointed peaks round a notch, a chrome slide at each end — 12 × 5 cm, as wide as the knee, its front to the lens, the wordmark level: the kneecap's lower edge sits in its notch, the shell on the tendon just under the kneecap, the band round the back; one small warm glow under the shell.\nIn frame: two knee models, the sleeve outline, one strap; every other area plain grey.\nA final frame from a 3D animated feature film, stylized storybook render. The strap alone in real materials, in the same light. No lettering, labels or arrows.",
+ "script_line": "while your knee got worse. This one fixes why it hurts.",
+ "face": false,
+ "room": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT11",
+  "HT18",
+  "HT21",
+  "FP03",
+  "FP13"
+ ],
+ "anatomy": true,
+ "anat_style": "S3",
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user 2026-10-02: \"about all the anatomy here we will use the normal anatomy\" → the natural-colour anatomical model (S3) on a pale grey background · and the earlier Fix \"fix the product and palcement\": the worn-strap photo for its placement, the kneecap's lower edge in its notch",
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "e5f263f1-108c-4084-bf56-035f7cf76409",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/worn_front.jpg",
+   "role": "Image 2"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 3"
+  }
+ ]
+}

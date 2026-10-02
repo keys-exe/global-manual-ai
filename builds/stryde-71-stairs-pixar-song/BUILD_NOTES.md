@@ -626,3 +626,92 @@ The unpicked image of each pair is now on **Old 2**: its file was copied server-
 - Picks on R-04a, R-07a and all seven Act 4 pairs.
 - Confirm or Fix on the R-03b v2, R-05a v2 and R-06b clips, plus the user's go for a third R-03b clip.
 - After the R-07a pick, the 9 s one-take clip.
+
+### 2026-10-02 10:20–10:45 UTC — "fix those and proceed to the next act" + "about all the anatomy here we will use the normal anatomy / fix those"
+
+**The team's anatomy call:** every Act 4 anatomy beat is now the normal anatomy model. That is S3: natural tissue colours (red muscle, white tendons, ivory bone) on pale grey, with P-04a as the light frame only.
+- This covers M-02a, M-03a, M-05a and M-05b.
+- The earlier S1 Ghost, S2 X-ray and S7 versions are on Old 2. That includes M-05b v1, which the user had confirmed; "Use this" on Old 2 brings it back.
+- The new pairs are To check:
+  - M-02a v3/v4: two knee models, a sleeve on the left and the strap on the right.
+  - M-03a v3/v4: side profile, a red point on the tendon.
+  - M-05a v3/v4: the leg model with a sleeve outline and red pressure lines.
+  - M-05b v3/v4: the strap seated, red fading to blue.
+- **Kept off (L16), all on Old 2:**
+  - M-02a v2: the X-ray Fix for "fix the product and placement", superseded before it was shown.
+  - M-02a v3 pair: the worn-strap photo printed a real hairy leg and a room under the models. The worn photo is now dropped from anatomy beats (L34).
+  - M-05b first A: the strap alone on a table.
+- **System:** V7.89.3, §12A-1 rules 7–8, `angles.py` `anat.lock`, `preflight.py` (anatomy + worn photo fails). LESSONS L34.
+
+**R-03b image Fix** "make her look like she is showing the stryde strap like flexing it": an image edit of her confirmed v1 A frame. Her right leg (frame left) stretches toward the lens, both hands present the strap, and she grins. The v4 pair is To check.
+- **Kept off, all on Old 2:**
+  - v3 A: a different woman.
+  - v3 B: the strap on her left knee (FP18).
+  - v4 B: a different woman in a hinged brace. B was re-rendered once (B2) with the same prompt.
+- `preflight.py` could not pass an image edit that shows the product: product-first and edit-first conflicted. Now the edited picture is Image 1 and the product photo comes right after it (§6A, L35).
+- v1 A (the old pick) is on Old 2. Clip v2 stays as the card's video until a new pick gets its clip.
+
+**Clips from the picks (Kling 3.0, 1080p, silent), all To check:**
+- M-01a, 6 s: v1 opened her mouth as her head settled (HT25), so it was kept off and is on Old 2. v2 holds her still with a slow push down.
+- M-04a, 5 s: a slow push on the still heap.
+- M-06a, 4 s: the slipper lands. Her leg then turns side-on and the strap is seen from the side.
+- R-04a, 5 s: her fingertip taps the shell, with a slow push.
+- R-07a, 9 s: one take of the whole walk down, hands off the rail, mouth closed.
+- The unused images of each pair are on Old 2: M-01a v1, M-04a v2, M-06a v1, R-04a v6 and R-07a v5.
+
+**Balances:** Higgsfield 6316.15 · Kling 38245 · Kie 261969.8.
+
+**Waiting on:**
+- Picks on the four anatomy pairs and on R-03b v4.
+- Confirm or Fix on the five new clips, plus the earlier R-03b v2, R-05a v2 and R-06b clips.
+- After the anatomy picks: their clips. M-02a, M-03a, M-05a and M-05b have no clip yet.
+
+### 2026-10-02 ~11:05–11:20 UTC — "use the new pixar anatomy for all the anatomy / lets re do all the anatomy" + "the t03a too"
+
+**Pixar anatomy (V7.90.2 Pixar S3, the team's locked no-muscle "normal anatomy")** is now on every anatomy beat. The look is written in words; `references/anatomy/S3_pixar_locked.jpg` is the bar each render was judged against and is never attached. The new pairs, all To check:
+- M-02a v5/v6: two knee models, a sleeve on the left and the strap on the right.
+- M-03a v5/v6: side profile, a warm glow on the tendon under the kneecap.
+- M-05a v5/v6: a sleeve outline, the glow under the kneecap, warm lines down the thigh.
+- M-05b v5/v6: the strap seated, warm fading to cool blue.
+- T-03a v5/v6: both knees bone on bone, a warm glow where the bones meet.
+
+What moved to Old 2:
+- The realistic S3 versions of the four Act 4 beats.
+- T-03a's confirmed S2 X-ray pick (v4). "Use this" brings it back.
+- T-03a's clip v1 stays on the card until a new pick gets its clip. The status is planned.
+
+**Kept off (L16, L36), on Old 2:** M-02a v5 A, M-05a v3 B and T-03a v5 A. The P-04a kitchen-table frame, attached "for the light only", drew its table, hands and brace around the models. Each slot was re-rendered once without the frame (M-02a v6, M-05a v4, T-03a v6). As a result, those three pairs mix two prompts that differ only by that frame.
+
+**M-06a "wrong person":** a new pair with N herself in frame, from her confirmed R-07a v8 A frame (HT27): pink cardigan, denim skirt, silver twist-out, the strap on her right knee (frame left). Both renders framed her full-length coming down the stairs, so the strap reads small. Her old pick (v2) is on Old 2, and clip v1 stays until a new pick gets its clip.
+
+**System (V7.90.3, L36):**
+- "Normal anatomy" is S3 in the build's own mode.
+- `ANAT-PIX` and the style line merge into one look paragraph so the beat fits §6A.
+- No scene frame as the style on an anatomy beat.
+- `pixar_anatomy: true` runs the Pixar checks on this pre-V7.90 build. `legacy_build` had switched them off.
+
+**Balances:** Higgsfield 6195.15 (this account's private workspace; the ODAQ B.V. rule is for the other account) · Kling 38245.
+
+**Waiting on:**
+- Picks on M-02a, M-03a, M-05a, M-05b, T-03a, M-06a and R-03b. After the picks come the clips.
+- Confirm or Fix on the clips To check.
+
+### 2026-10-02 ~11:25–11:35 UTC — "fix those and generate the videos"
+
+**Fixes, new pairs To check:**
+- **M-03a** "the poin is the patellar tendon" (on the pick v5): an image edit of v5 (v7/v8). The tendon is drawn as a broad ribbon from the kneecap tip to the shin bump, with the glow on its middle and none on the kneecap.
+- **M-05a** "the point is the patellar tendon": a new pair (v7/v8) with the same tendon wording. The first A put the glow on the kneecap again, so it was kept off and re-rendered once (A2).
+- **M-06a** "i want a close up shot of the feet": a ground-level close-up of her feet in tan slippers landing on the runner, with the strap on her right knee (frame left) at the top of the frame (v5/v6). Her R-07a v8 A frame is the reference ("wrong person" still in force). The first B drew a hinged brace, so it was kept off and re-rendered once (B2). The old clip v1 stays on the card until a new pick gets its clip.
+- The two repeated notes are now **FP21** (`products/stryde/fix_patterns.md`): the pain point sits on the patellar tendon ribbon, never on the kneecap.
+
+**Clips on the confirmed Pixar picks (Kling 3.0, 1080p, silent, slow R4 push), To check:**
+- **M-02a** v1, 6 s: the glow settles under the strap.
+- **M-05b** v1, 5 s: warm fades to cool blue down the tendon.
+- **T-03a** v2, 4 s: the bone-on-bone glow pulses once. The old X-ray clip v1 is on Old 2.
+- The unused images of those pairs (v6) are on Old 2.
+
+**Balances:** Higgsfield 6157.15 · Kling 38125.
+
+**Waiting on:**
+- Picks on M-03a, M-05a, M-06a and R-03b, then their clips.
+- Confirm or Fix on the new clips.
