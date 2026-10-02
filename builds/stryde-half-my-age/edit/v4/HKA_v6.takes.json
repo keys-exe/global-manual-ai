@@ -1,0 +1,27 @@
+[
+ {
+  "beat": "HKA-SH01",
+  "at": 0.0,
+  "out_dur": 6.08
+ },
+ {
+  "beat": "HKA-SH02",
+  "at": 6.08,
+  "out_dur": 4.06
+ },
+ {
+  "beat": "HKA-SH03",
+  "at": 10.14,
+  "out_dur": 4.04
+ },
+ {
+  "beat": "HKA-SH04",
+  "at": 14.18,
+  "out_dur": 4.06
+ },
+ {
+  "beat": "HKA-SH05",
+  "at": 18.24,
+  "out_dur": 7.04
+ }
+]

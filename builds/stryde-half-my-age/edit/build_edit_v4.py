@@ -32,16 +32,20 @@ NOMUSIC = E.NOMUSIC
 VO_IN, VO_GAP, CLEAR = 0.3, 0.3, 0.15
 MIN_SPEED = 0.4            # slowest a stretch of picture may run (2.5x), with motion interpolation
 END_HOLD, END_FADE = 1.2, 1.5
-EDIT_V = 5                 # v5 (user 2026-10-02): cutaways for the slow-downs, L049 moving, the sister's "Sunday" whole
+EDIT_V = 6                 # v6 (user 2026-10-02, "this is the final changes"): SC07 stairs the right way round, SC13 keeps its zoom-out
 ONSET = 0.4                # a slowed stretch ends this far before the next spoken line, so its first word plays at speed (v5)
 # v5 cutaways (edit/inserts.py): a take's slowed stretch slower than CUT_BELOW plays at its own speed with the insert cut
 # in at its middle for the time the slow-down bought; REPLACE swaps a take's picture from a time on (its sound kept)
 INS = B / "body" / "INSERTS"
 CUT_BELOW = 0.75
 INSERTS = {"SC03-SH06": INS / "INS-SC03-A_v1.mp4", "SC03-SH09-10": INS / "INS-SC03-B_v1.mp4", "SC04-T2": INS / "INS-SC04_v1.mp4",
-           "SC0506-T1": INS / "INS-SC05_v1.mp4", "SC07-T": INS / "INS-SC07_v1.mp4", "SC12-T3": INS / "INS-SC12_v2.mp4",
-           "SC13-T1": INS / "INS-SC13_v1.mp4"}
+           "SC0506-T1": INS / "INS-SC05_v1.mp4", "SC07-T": INS / "INS-SC07_v2.mp4", "SC12-T3": INS / "INS-SC12_v2.mp4",
+           }   # SC13-T1 keeps its own zoom-out, slowed (user 2026-10-02: "dont add this broll stay with the zooming out")
 INSERT_IN = {}             # the insert's in-point, when its first second isn't the best (set after judging each clip)
+# picture mirrored left-right from a time on: SC07-T's shots 2–4 had the stairs mirrored against the house (the plate and
+# Scene 2: seen from below, banister right, photo wall left) — user 2026-10-02: "flip this cause the stairs should be on the
+# left side not the right"; shot 1 (the strap close-up, wordmark readable) is never flipped
+FLIP = {"SC07-T": 2.92}
 REPLACE = {"SC08-T3": (6.0, INS / "INS-L049_v1.mp4", 0.0)}   # SHOT 2 (the strap on her knee) → INS-L049, Barbara's line kept
 WORDS = json.loads((VO_DIR / "words.json").read_text())
 
@@ -289,6 +293,8 @@ def render_take(k, name):
         key += f"_ins{INSERT_IN.get(k['beat'], 0.3)}_{INSERTS[k['beat']].stat().st_mtime:.0f}"
     if k["beat"] in REPLACE:
         key += f"_rep{REPLACE[k['beat']]}"
+    if k["beat"] in FLIP:
+        key += f"_flip{FLIP[k['beat']]}"
     out = TK / f"{k['beat']}_v{k['v']}__{hashlib.md5(key.encode()).hexdigest()[:8]}.mp4"
     k["render"] = out
     if out.exists():
@@ -303,6 +309,9 @@ def render_take(k, name):
             continue
         x = sum(s[2] for s in k["warp"].st if abs(s[0] - a) < 1e-6 and abs(s[1] - b) < 1e-6)
         segs.append((a, b, (b - a) / (b - a + x)))
+    fl = FLIP.get(k["beat"])
+    if fl is not None:   # split a piece at the flip time (same speed both sides)
+        segs = [y for a, b, sp in segs for y in (((a, fl, sp), (fl, b, sp)) if a < fl < b else ((a, b, sp),))]
     src = NOMUSIC / f"{k['path'].stem}.nomusic.mp4"
     has_a = k["audio"] and src.exists()
     args = ["-i", str(k["path"])] + (["-i", str(src)] if has_a else [])
@@ -331,6 +340,8 @@ def render_take(k, name):
     for j, (n_in, a, b, sp) in enumerate(pics):
         v = (f"[{n_in}:v]trim={a:.4f}:{b:.4f},setpts=PTS-STARTPTS,scale=720:1280:force_original_aspect_ratio=decrease,"
              f"pad=720:1280:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=24")
+        if fl is not None and n_in == 0 and a >= fl - 1e-6:
+            v += ",hflip"
         if sp < 0.999:
             v += f",setpts=PTS/{sp:.5f},minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1"
         fc.append(v + f",format=yuv420p[v{j}]"); vl += f"[v{j}]"

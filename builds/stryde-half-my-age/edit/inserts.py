@@ -106,11 +106,17 @@ INSERTS = {
               "DOWN one step toward the camera — the right foot in its white plimsoll leaves the tread, the right knee "
               "bends under the strap and takes her weight as the foot lands on the next tread down, flat and sure, then "
               "the left foot follows onto the same tread. Both hands stay out of frame and free; nothing is held. "
-              "That is all that happens."),
+              "THE SIDES OF THE STAIRS, as the stairs plate shows them seen from below: the dark wooden banister and its "
+              "balusters run up the RIGHT side of the frame, the cream wall with its row of framed photographs on the "
+              "LEFT side of the frame. That is all that happens."),
+        fix=("v1 (user, 2026-10-02): \"flip this cause the stairs should be on the left side not the right\" — v1 had the "
+             "banister on the left and the photo wall on the right, mirrored from the house's stairs plate and Scene 2 "
+             "→ the sides written out: seen from below, the banister on the RIGHT of frame, the photo wall on the LEFT; "
+             "a mirror flip of v1 is not used because it would move the strap to her left knee and reverse the wordmark"),
         state="coming down the stairs facing forwards, the strap on her right knee",
         state_except="she has come down one more step",
         focus="the right knee and the strap are sharp; the treads above fall soft",
-        neg="no hand on the banister, no going up, no seen from behind, no strap on the left knee, no oversized strap, no face in frame",
+        neg="no hand on the banister, no banister on the left of frame, no photo wall on the right of frame, no going up, no seen from behind, no strap on the left knee, no oversized strap, no face in frame",
         risks=[("she goes up instead of down", "'comes DOWN… toward the camera', going-up negative"),
                ("the strap moves or grows", "knee card, 'never bends, slides or changes size'"),
                ("a hand on the rail (L56)", "'both hands out of frame and free', banister negative")]),
