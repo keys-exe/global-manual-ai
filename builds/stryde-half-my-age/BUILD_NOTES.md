@@ -204,3 +204,12 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
   - v1: the montage line froze SC03-SH01 for 10 s, so the hold rule was fixed in v2.
   - User: "use the new unmusic to remove only the music". `unmusic.py` (§24M V7.92.0, from the default branch; it also needs `safetensors`) ran on all 56 hook and body clips. 11 had music, now taken out with voice and effects kept; the silent clips needed nothing. v3 uses each clip's own sound with only the music taken out.
   - User: "give me the final out put" → `edit/build_finals.py` makes FINAL-HKA/B/C/E v1: hook (confirmed shots, the same sound, narration 0.3 s into SH05) + BODY v3, 5:49–5:52, −14.4 LUFS. Checked by full transcript: every line in script order, no narration under dialogue. On the Final output board To check, split into 9 × 15 MB parts each. No music bed yet (the §40A music map is the next pass). buildSpend was updated on Final and Current: 77,725 credits across 287 renders.
+- 2026-10-02 — User: "next the final ones with the vo and the music" → **FINAL-HKA/B/C/E v2** on Final output To check: v1 + the §40A music. Register map in `edit/music/*.cue.json`, on the Plan board (and Current) as `docs/music`.
+  - One family throughout: felt piano and solo cello, a four-note rising motif, no percussion.
+  - **MUS-HK:** investigation, under every hook.
+  - **MUS-BODY-A:** body 0–119.6 s — investigation (SC02), then exposing (SC03), then intrigue (SC04–05).
+  - **MUS-BODY-B:** from the product's first frame at body 120.82 s (Barbara shows the strap, SC0506-T1) — turn (SC05–08), then after (SC09–12), then offer (SC12–13).
+  - Composed by ElevenLabs music through `music.py`. Sending all three at once got HTTP 429, so they went one at a time.
+  - The `music.py check` FAILs were read by position: the dropouts sit in the unused tail, the jumps are piano notes, and the tempo reading doubles on rubato. The v1 tracks were kept. v2 (no percussion) was no better and is not used. Body B is read from 1.45 s, so the change lands on the product frame.
+  - Mix in `edit/build_finals.py --music`: music at −26 LUFS, ducked 8 dB under speech, final −14.1 to −14.3 LUFS, picture stream-copied. Hook A transcript is a 99% match to v1.
+  - v1 parts copied to Old (`generations/…__FINAL-HK*`) and deleted from Final. The three tracks are on Current as audio cards MUS-HK / MUS-BODY-A / MUS-BODY-B, To check.
