@@ -1,0 +1,618 @@
+[
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__OUTFIT-N-D4",
+  "data": {
+   "act": "Scene 5",
+   "beat": "OUTFIT-N-D4",
+   "build": "facelove-my-mother",
+   "flow": [
+    "image"
+   ],
+   "scene": 5,
+   "stage": "broll",
+   "status": "review",
+   "title": "Susan's outfit, day D4 (Beth's visit) — SC05 all takes",
+   "line": "(outfit) faded sage sweatshirt, grey lounge trousers, grey socks, black elastic (low ponytail) — face from N-FACE through SH06, N-AFTER-FACE from SH07 (HT26)",
+   "imagePrompt": "A wardrobe reference card from a film's costume department: one woman's at-home outfit laid out flat on a plain pale grey linen background, seen from directly above, neatly arranged as if worn. Counted, and only these: exactly one faded sage-green cotton crew-neck sweatshirt, soft and slightly pilled, the cuffs a little stretched; exactly one pair of grey cotton jersey lounge trousers with a drawstring waist; exactly one pair of plain grey socks; exactly one plain black hair elastic beside the collar. Ordinary worn-in clothes of a woman of forty-nine who has stopped making an effort, nothing new, nothing styled. Soft even daylight. Natural, neutral colour, real texture, a still from a feature film. No person, no body, no mannequin, no shoes, no jewellery, no logos or print on the sweatshirt, no text or captions anywhere.",
+   "imageModel": "gpt_image_2_5 · sunburst · high · 2k · 9:16",
+   "imageRefs": [],
+   "imageAsset": "97141d9c308da08048ea7d386e1fe41c",
+   "imageType": "image/png",
+   "imageRes": "1520×2688",
+   "imageConnector": "Higgsfield",
+   "imageCredits": 2.9,
+   "imageJob": "586a9154-89db-42db-87e0-bcf867a8969f",
+   "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261002_173842_586a9154-89db-42db-87e0-bcf867a8969f.png",
+   "imageAt": 1790963201444,
+   "imageStatus": "review",
+   "imageRegens": 0,
+   "updatedAt": 1790963201444,
+   "imageVersions": [
+    {
+     "v": 1,
+     "asset": "97141d9c308da08048ea7d386e1fe41c",
+     "type": "image/png",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261002_173842_586a9154-89db-42db-87e0-bcf867a8969f.png",
+     "model": "gpt_image_2_5 sunburst",
+     "connector": "Higgsfield",
+     "credits": 2.9,
+     "size": 7556345,
+     "at": 1790963201444,
+     "note": ""
+    }
+   ]
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__OUTFIT-C3-D4",
+  "data": {
+   "act": "Scene 5",
+   "beat": "OUTFIT-C3-D4",
+   "build": "facelove-my-mother",
+   "flow": [
+    "image"
+   ],
+   "scene": 5,
+   "stage": "broll",
+   "status": "review",
+   "title": "Beth's outfit, day D4 (her visit) — SC05 all takes",
+   "line": "(outfit) chambray shirt sleeves rolled, white jeans, tan flats, black garment bag — face from C3-FACE (HT26)",
+   "imagePrompt": "A wardrobe reference card from a film's costume department: one woman's smart-casual afternoon outfit laid out flat on a plain pale grey linen background, seen from directly above, neatly arranged as if worn. Counted, and only these: exactly one light-blue chambray button-front shirt with the sleeves rolled to the elbow; exactly one pair of white straight-leg jeans; exactly one pair of tan leather ballet flats; exactly one black zip garment bag on a hanger laid beside them. Neat, easy clothes of a confident woman of forty-nine. Soft even daylight. Natural, neutral colour, real texture, a still from a feature film. No person, no body, no mannequin, no jewellery, no logos anywhere, no text or captions anywhere.",
+   "imageModel": "gpt_image_2_5 · sunburst · high · 2k · 9:16",
+   "imageRefs": [],
+   "imageAsset": "eb266c52aced18f280fe6fcf6836cfa1",
+   "imageType": "image/png",
+   "imageRes": "1520×2688",
+   "imageConnector": "Higgsfield",
+   "imageCredits": 2.9,
+   "imageJob": "99c03052-cd0c-473e-a711-9d21511f49cf",
+   "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261002_173843_99c03052-cd0c-473e-a711-9d21511f49cf.png",
+   "imageAt": 1790963201444,
+   "imageStatus": "review",
+   "imageRegens": 0,
+   "updatedAt": 1790963201444,
+   "imageVersions": [
+    {
+     "v": 1,
+     "asset": "eb266c52aced18f280fe6fcf6836cfa1",
+     "type": "image/png",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261002_173843_99c03052-cd0c-473e-a711-9d21511f49cf.png",
+     "model": "gpt_image_2_5 sunburst",
+     "connector": "Higgsfield",
+     "credits": 2.9,
+     "size": 6629987,
+     "at": 1790963201444,
+     "note": ""
+    }
+   ]
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__PROD-HAND-CARD",
+  "data": {
+   "act": "Scene 5",
+   "beat": "PROD-HAND-CARD",
+   "build": "facelove-my-mother",
+   "flow": [
+    "image"
+   ],
+   "scene": 5,
+   "stage": "broll",
+   "status": "review",
+   "title": "How the stick is held — closed, wordmark to the lens (SC05-T3)",
+   "line": "(product) one closed violet stick in Beth's right hand, the single FACELOVE wordmark facing out",
+   "imagePrompt": "Image 1 is the product: the FACELOVE Changing Foundation Stick, closed. This picture is a reference card of how it is held: a close-up of one woman's right hand, fair skin, short natural nails, the light-blue chambray cuff of a rolled sleeve at the wrist, holding exactly one stick against a plain soft blush-beige background. The product exactly as in the attached reference image — a slim satin pale violet-mauve metal barrel, cool-toned and softly reflective rather than glossy, closed at the far end, carrying a single pale letterspaced FACELOVE wordmark set along the barrel on its front centreline, and at the working end either a solid warm-neutral white balm cut back into two straight shoulders rising to a short flat crest, or a dense white synthetic brush crown standing domed and slightly splayed above a stepped collar with a fine machined slot in its sloped face — here closed at both ends, both caps on. Held in one hand, low on the barrel and well below the wordmark, fingers wrapped around the closed end with the working end standing clear and upward. Fingers never cross the wordmark, never touch the balm crest or the brush crown, and never cover the collar. The barrel is held near upright with a slight tilt toward the lens so the wordmark stays square to camera and legible along its length. Nothing is unscrewed, twisted, wound up, clicked or adjusted; the product is complete and at rest in the hand on the first frame. Soft daylight from the left, one broad soft highlight down the barrel. Natural, neutral colour, real texture, a still from a feature film. NEGATIVES: no second wordmark, no wordmark on both barrel sections, no wordmark across the barrel, no horizontal wordmark on an upright barrel, no wordmark on the capped end, no mirrored or reversed lettering, no wordmark on the brush collar, no both ends open at once, no cap missing from the closed end, no second cap in frame, no second unit, no gloss mirror finish on the barrel, no chrome barrel, no hard specular line down the barrel, no seam where the barrel has none, no second hand, no face, no text or captions anywhere.",
+   "imageModel": "gpt_image_2_5 · sunburst · high · 2k · 9:16",
+   "imageRefs": [
+    {
+     "label": "CLOSED",
+     "kind": "product",
+     "role": "Image 1 · the closed stick",
+     "ref": "facelove-my-mother__PROD-CLOSED"
+    }
+   ],
+   "imageAsset": "04d6267d2f7fed9b0137072d10f3afce",
+   "imageType": "image/png",
+   "imageRes": "1520×2688",
+   "imageConnector": "Higgsfield",
+   "imageCredits": 2.9,
+   "imageJob": "b2a02fd1-8437-4028-9cdf-243320fc6b7a",
+   "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261002_173843_b2a02fd1-8437-4028-9cdf-243320fc6b7a.png",
+   "imageAt": 1790963201444,
+   "imageStatus": "review",
+   "imageRegens": 0,
+   "updatedAt": 1790963201444,
+   "imageVersions": [
+    {
+     "v": 1,
+     "asset": "04d6267d2f7fed9b0137072d10f3afce",
+     "type": "image/png",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261002_173843_b2a02fd1-8437-4028-9cdf-243320fc6b7a.png",
+     "model": "gpt_image_2_5 sunburst",
+     "connector": "Higgsfield",
+     "credits": 2.9,
+     "size": 4272830,
+     "at": 1790963201444,
+     "note": ""
+    }
+   ]
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__COLOUR-FRONT-CARD",
+  "data": {
+   "act": "Scene 5",
+   "beat": "COLOUR-FRONT-CARD",
+   "build": "facelove-my-mother",
+   "flow": [
+    "image"
+   ],
+   "scene": 5,
+   "stage": "broll",
+   "status": "review",
+   "title": "The colour change front — white ahead of the brush, skin behind (SC05-T4/T5)",
+   "line": "(product) the balm goes on white; the brush end works it and it turns to her own skin behind the bristles; her lines stay",
+   "imagePrompt": "Image 1 is Susan's face; Image 2 is the brush end of the FACELOVE stick. This picture is a reference card of how the colour changes on her skin: an extreme close-up of her left cheekbone in soft window light, her real mature skin with every pore, fine line and the crease at the corner of her eye exactly as in Image 1. Across the cheekbone lies one short band of solid warm-neutral white balm. The brush end from Image 2 works the lower end of the band in small circles: The brush end is already in contact with the skin, cap already off and out of frame. The balm meets the skin on its flat crest and leading shoulder, the skin giving very slightly under it with a tight contact shadow along the crest and no gap between white and skin; the brush meets it on the side of its crown, fibres bending back and springing clear behind, the collar never touching the face. The barrel stays clear of the skin. THE TERRAIN IS CONSTANT: every crease, pore and fold sits exactly as deep after the product as before it, unchanged in depth and shape. The colour resolves from inside the cream at the edge the brush has worked: white ahead of the brush crown, her own skin tone behind it. THE TERRAIN IS CONSTANT THROUGHOUT. The crease is exactly as deep in the final frame as in the first: same depth, same length, same shape, same shadow geometry inside it. Pores stay open and individually resolved, fine lines stay legible, the surface keeps its relief. What changes is colour and colour only — the film evens tone across crest and crease alike while every feature of the terrain stays exactly where it was. Natural, neutral colour, real texture, a still from a feature film. NEGATIVES: no product filling the crease, no crease shallower after the product than before, no crease erased, no line softened away, no terrain smoothed out, no pores closed over, no surface flattened into an even sheet, no skin rendered poreless, no gap between the balm crest and the skin, no floating balm, no product hovering above the surface, no barrel rim touching the skin, no collar touching the skin, no brush tip stabbing the surface, no colour resolving ahead of the brush, no colour arriving before the brush touches it, no fully matched patch with no brush present, no bubbles on the cream, no domes on the cream surface, no blistered surface, no foamed layer, no granular bead layer, no bed of separate beads, no polystyrene foam texture, no rounded bodies sitting at the base of the film, no globules, no droplets suspended in the layer, no cool blue-white cream, no blue cast in the white, no grey-white cream, no cream cooler in tone than the ground it sits on, no glowing skin, no radiant skin, no luminous finish, no flawless finish, no beauty-filter smoothing, no airbrushed skin, no poreless skin, no plastic sheen, no wet gloss on the finished film, no makeup-advertisement gloss, no even mask of colour, no opaque coverage hiding the surface, no text or captions anywhere.",
+   "imageModel": "gpt_image_2_5 · sunburst · high · 2k · 9:16",
+   "imageRefs": [
+    {
+     "label": "N-FACE",
+     "kind": "character",
+     "role": "Image 1 · Susan's own skin",
+     "ref": "facelove-my-mother__N-FACE"
+    },
+    {
+     "label": "BRUSH",
+     "kind": "product",
+     "role": "Image 2 · the brush end",
+     "ref": "facelove-my-mother__PROD-BRUSH"
+    }
+   ],
+   "imageAsset": "39901145cfc1a8c81f1e51feda52ae2a",
+   "imageType": "image/png",
+   "imageRes": "1520×2688",
+   "imageConnector": "Higgsfield",
+   "imageCredits": 2.9,
+   "imageJob": "db72e34c-7892-4e1e-ad8d-b3a88a523f10",
+   "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261002_173845_db72e34c-7892-4e1e-ad8d-b3a88a523f10.png",
+   "imageAt": 1790963201444,
+   "imageStatus": "review",
+   "imageRegens": 0,
+   "updatedAt": 1790963201444,
+   "imageVersions": [
+    {
+     "v": 1,
+     "asset": "39901145cfc1a8c81f1e51feda52ae2a",
+     "type": "image/png",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261002_173845_db72e34c-7892-4e1e-ad8d-b3a88a523f10.png",
+     "model": "gpt_image_2_5 sunburst",
+     "connector": "Higgsfield",
+     "credits": 2.9,
+     "size": 5622431,
+     "at": 1790963201444,
+     "note": ""
+    }
+   ]
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__C3-FACE",
+  "data": {
+   "act": "Scene 5",
+   "beat": "C3-FACE",
+   "build": "facelove-my-mother",
+   "flow": [
+    "image"
+   ],
+   "scene": 5,
+   "stage": "broll",
+   "status": "review",
+   "title": "C3-BETH's face-and-hair crop — from the confirmed cast sheet's close-up (no new render, HT26)",
+   "line": "(face) C3-BETH sheet, close-up panel cropped to face and hair — her D4 clothes are not her sheet's party outfit",
+   "imageModel": "crop of C3-BETH_v1 (no render)",
+   "imageRefs": [
+    {
+     "kind": "character",
+     "label": "C3-BETH sheet",
+     "ref": "facelove-my-mother__C3-BETH",
+     "role": "cropped from"
+    }
+   ],
+   "imageAsset": "19f758201b4d3adf150e00f3370af5f4",
+   "imageType": "image/png",
+   "imageRes": "860×910",
+   "imageConnector": "crop",
+   "imageCredits": 0,
+   "imageAt": 1790963201444,
+   "imageStatus": "review",
+   "updatedAt": 1790963201444,
+   "imageVersions": [
+    {
+     "v": 1,
+     "asset": "19f758201b4d3adf150e00f3370af5f4",
+     "type": "image/png",
+     "model": "crop",
+     "connector": "crop",
+     "credits": 0,
+     "size": 1116691,
+     "at": 1790963201444,
+     "note": "Higgsfield media 16a0127c-0945-4187-ae78-eabf7c732819"
+    }
+   ]
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__N-AFTER-FACE",
+  "data": {
+   "act": "Scene 5",
+   "beat": "N-AFTER-FACE",
+   "build": "facelove-my-mother",
+   "flow": [
+    "image"
+   ],
+   "scene": 5,
+   "stage": "broll",
+   "status": "review",
+   "title": "N-SUSAN-AFTER's face-and-hair crop — from the confirmed cast sheet's close-up (no new render, HT26)",
+   "line": "(face) N-SUSAN-AFTER sheet, close-up panel cropped to face and hair — Susan from SH07 on, once the stick is on",
+   "imageModel": "crop of N-SUSAN-AFTER_v1 (no render)",
+   "imageRefs": [
+    {
+     "kind": "character",
+     "label": "N-SUSAN-AFTER sheet",
+     "ref": "facelove-my-mother__N-SUSAN-AFTER",
+     "role": "cropped from"
+    }
+   ],
+   "imageAsset": "b8cdfcafe05d5a72cf5ac381e8eee12d",
+   "imageType": "image/png",
+   "imageRes": "860×910",
+   "imageConnector": "crop",
+   "imageCredits": 0,
+   "imageAt": 1790963201444,
+   "imageStatus": "review",
+   "updatedAt": 1790963201444,
+   "imageVersions": [
+    {
+     "v": 1,
+     "asset": "b8cdfcafe05d5a72cf5ac381e8eee12d",
+     "type": "image/png",
+     "model": "crop",
+     "connector": "crop",
+     "credits": 0,
+     "size": 1195980,
+     "at": 1790963201444,
+     "note": "Higgsfield media 860d3197-f292-42d0-9357-6d8b2427389a"
+    }
+   ]
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__PROD-CLOSED",
+  "data": {
+   "act": "Scene 5",
+   "beat": "PROD-CLOSED",
+   "build": "facelove-my-mother",
+   "flow": [
+    "image"
+   ],
+   "scene": 5,
+   "stage": "broll",
+   "status": "review",
+   "title": "Client product photo — the stick closed — both ends capped",
+   "line": "(product) the client's own photo (CLOSED.jpg), attached as-is to every product take",
+   "imageModel": "client product photo (no render)",
+   "imageRefs": [],
+   "imageAsset": "02dd0c20ff50bb88c92f6784d3596bfb",
+   "imageType": "image/jpeg",
+   "imageRes": "1143×2048",
+   "imageConnector": "client photo",
+   "imageCredits": 0,
+   "imageAt": 1790963201444,
+   "imageStatus": "review",
+   "updatedAt": 1790963201444,
+   "imageVersions": [
+    {
+     "v": 1,
+     "asset": "02dd0c20ff50bb88c92f6784d3596bfb",
+     "type": "image/jpeg",
+     "model": "client photo",
+     "connector": "client photo",
+     "credits": 0,
+     "size": 51087,
+     "at": 1790963201444,
+     "note": "Higgsfield media 7278afd1-9898-41bb-a85f-e23b1e645a73"
+    }
+   ]
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__PROD-BALM",
+  "data": {
+   "act": "Scene 5",
+   "beat": "PROD-BALM",
+   "build": "facelove-my-mother",
+   "flow": [
+    "image"
+   ],
+   "scene": 5,
+   "stage": "broll",
+   "status": "review",
+   "title": "Client product photo — the balm end uncapped",
+   "line": "(product) the client's own photo (BALM_END_DEPLOYED.jpg), attached as-is to every product take",
+   "imageModel": "client product photo (no render)",
+   "imageRefs": [],
+   "imageAsset": "2476aff66629930d145e01174210b925",
+   "imageType": "image/jpeg",
+   "imageRes": "1143×2048",
+   "imageConnector": "client photo",
+   "imageCredits": 0,
+   "imageAt": 1790963201444,
+   "imageStatus": "review",
+   "updatedAt": 1790963201444,
+   "imageVersions": [
+    {
+     "v": 1,
+     "asset": "2476aff66629930d145e01174210b925",
+     "type": "image/jpeg",
+     "model": "client photo",
+     "connector": "client photo",
+     "credits": 0,
+     "size": 53599,
+     "at": 1790963201444,
+     "note": "Higgsfield media e85268b0-5816-4e38-bf31-5f7f829ae31e"
+    }
+   ]
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__PROD-BRUSH",
+  "data": {
+   "act": "Scene 5",
+   "beat": "PROD-BRUSH",
+   "build": "facelove-my-mother",
+   "flow": [
+    "image"
+   ],
+   "scene": 5,
+   "stage": "broll",
+   "status": "review",
+   "title": "Client product photo — the brush end uncapped",
+   "line": "(product) the client's own photo (BRUSH_END_DEPLOYED.jpg), attached as-is to every product take",
+   "imageModel": "client product photo (no render)",
+   "imageRefs": [],
+   "imageAsset": "d75262c590d90d1450bafc0238f83ab7",
+   "imageType": "image/jpeg",
+   "imageRes": "1143×2048",
+   "imageConnector": "client photo",
+   "imageCredits": 0,
+   "imageAt": 1790963201444,
+   "imageStatus": "review",
+   "updatedAt": 1790963201444,
+   "imageVersions": [
+    {
+     "v": 1,
+     "asset": "d75262c590d90d1450bafc0238f83ab7",
+     "type": "image/jpeg",
+     "model": "client photo",
+     "connector": "client photo",
+     "credits": 0,
+     "size": 52791,
+     "at": 1790963201444,
+     "note": "Higgsfield media 10c8c91d-dff7-4675-b394-d414a19f9ec8"
+    }
+   ]
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__SC05-T1",
+  "data": {
+   "act": "Scene 5",
+   "beat": "SC05-T1",
+   "build": "facelove-my-mother",
+   "scene": 5,
+   "stage": "broll",
+   "status": "planned",
+   "flow": [
+    "video"
+   ],
+   "covers": [
+    "SC05-SH01",
+    "SC05-SH02"
+   ],
+   "title": "Scene 5 · T1 — Beth arrives: 'There's a thing Saturday' / Susan on the bed (SH01–SH02)",
+   "line": "There's a thing Saturday. Whole group. You're coming. / So everyone can compare me to Paula again? She looks ten years younger than me, Beth. Everyone saw it.",
+   "duration": 13,
+   "model": "seedance_2_5 · omni_reference · 720p · 9:16",
+   "videoConnector": "Higgsfield",
+   "motionPlan": "Beth walks in from behind the camera, garment bag over her shoulder, stops in profile between the bed and the dressing table, looks at Susan and says it plainly ; Susan doesn't get up; she says it to her hands",
+   "note": "Waits for the Scene 5 ingredient cards' Confirm, then one Seedance call.",
+   "updatedAt": 1790963201444
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__SC05-T2",
+  "data": {
+   "act": "Scene 5",
+   "beat": "SC05-T2",
+   "build": "facelove-my-mother",
+   "scene": 5,
+   "stage": "broll",
+   "status": "planned",
+   "flow": [
+    "video"
+   ],
+   "covers": [
+    "SC05-SH03",
+    "SC05-SH04"
+   ],
+   "title": "Scene 5 · T2 — Beth on Paula's Botox, then pulls out the stool: 'Come sit. Watch this.' (SH03–SH04)",
+   "line": "Paula had Botox last month. Of course she looks like that. That's needles, two thousand dollars, and doing it all again in twelve weeks. / I'm not saying you go do that. You don't need to. Come sit. Watch this.",
+   "duration": 15,
+   "model": "seedance_2_5 · omni_reference · 720p · 9:16",
+   "videoConnector": "Higgsfield",
+   "motionPlan": "Beth lays the garment bag on the bed and talks while she does it ; Beth pulls the dressing-table stool out with one hand and nods Susan to it; Susan gets up from the bed and sits",
+   "note": "Waits for the Scene 5 ingredient cards' Confirm, then one Seedance call.",
+   "updatedAt": 1790963201444
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__SC05-T3",
+  "data": {
+   "act": "Scene 5",
+   "beat": "SC05-T3",
+   "build": "facelove-my-mother",
+   "scene": 5,
+   "stage": "broll",
+   "status": "planned",
+   "flow": [
+    "video"
+   ],
+   "covers": [
+    "SC05-SH05"
+   ],
+   "title": "Scene 5 · T3 — Beth tilts Susan's chin, takes out the closed stick, uncaps the balm end (SH05)",
+   "line": "Everything you've been wearing was built for a thirty year old, so it sits on top and sinks into your lines and ages you. This was made for us. Goes on white, don't panic.",
+   "duration": 12,
+   "model": "seedance_2_5 · omni_reference · 720p · 9:16",
+   "videoConnector": "Higgsfield",
+   "motionPlan": "Beth tilts Susan's chin to the window with two fingers, takes the closed violet stick from her pocket, her palm over the wordmark, and pulls the cap off the balm end",
+   "note": "Waits for the Scene 5 ingredient cards' Confirm, then one Seedance call.",
+   "updatedAt": 1790963201444
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__SC05-T4",
+  "data": {
+   "act": "Scene 5",
+   "beat": "SC05-T4",
+   "build": "facelove-my-mother",
+   "scene": 5,
+   "stage": "broll",
+   "status": "planned",
+   "flow": [
+    "video"
+   ],
+   "covers": [
+    "SC05-SH06"
+   ],
+   "title": "Scene 5 · T4 — Insert — the balm draws a white stripe up her cheekbone (SH06, silent)",
+   "line": "(silent insert — L014's 'Goes on white, don't panic.' plays over it in the edit)",
+   "duration": 4,
+   "model": "seedance_2_5 · omni_reference · 720p · 9:16",
+   "videoConnector": "Higgsfield",
+   "motionPlan": "the balm's flat crest draws one white stripe up Susan's cheekbone",
+   "note": "Waits for the Scene 5 ingredient cards' Confirm, then one Seedance call.",
+   "updatedAt": 1790963201444
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__SC05-T5",
+  "data": {
+   "act": "Scene 5",
+   "beat": "SC05-T5",
+   "build": "facelove-my-mother",
+   "scene": 5,
+   "stage": "broll",
+   "status": "planned",
+   "flow": [
+    "video"
+   ],
+   "covers": [
+    "SC05-SH07"
+   ],
+   "title": "Scene 5 · T5 — Insert — the brush works the stripe; white turns to her skin behind it (SH07)",
+   "line": "It reads your skin and becomes your exact shade. The niacinamide takes the red down. It settles into the lines instead of cracking on top.",
+   "duration": 10,
+   "model": "seedance_2_5 · omni_reference · 720p · 9:16",
+   "videoConnector": "Higgsfield",
+   "motionPlan": "the brush end works the white stripe in small circles; behind the brush the white turns to her own skin tone, ahead of it the stripe stays white",
+   "note": "Waits for the Scene 5 ingredient cards' Confirm, then one Seedance call.",
+   "updatedAt": 1790963201444
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__SC05-T6",
+  "data": {
+   "act": "Scene 5",
+   "beat": "SC05-T6",
+   "build": "facelove-my-mother",
+   "scene": 5,
+   "stage": "broll",
+   "status": "planned",
+   "flow": [
+    "video"
+   ],
+   "covers": [
+    "SC05-SH08",
+    "SC05-SH09",
+    "SC05-SH10"
+   ],
+   "title": "Scene 5 · T6 — Beth steps back; Susan in the mirror: '…and this is all you did?' (SH08–SH10)",
+   "line": "It won't erase a wrinkle, no. Nothing does, not even what Paula paid for. It just stops the wrinkle being the first thing anyone sees. No needles. No downtime. Thirty seconds. / …and this is all you did?",
+   "duration": 15,
+   "model": "seedance_2_5 · omni_reference · 720p · 9:16",
+   "videoConnector": "Higgsfield",
+   "motionPlan": "Beth steps back one step behind Susan's shoulder and talks to her reflection ; Susan leans an inch toward the mirror and looks at her cheek ; Susan turns her head a little toward Beth",
+   "note": "Waits for the Scene 5 ingredient cards' Confirm, then one Seedance call.",
+   "updatedAt": 1790963201444
+  }
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "facelove-my-mother__SC05-T7",
+  "data": {
+   "act": "Scene 5",
+   "beat": "SC05-T7",
+   "build": "facelove-my-mother",
+   "scene": 5,
+   "stage": "broll",
+   "status": "planned",
+   "flow": [
+    "video"
+   ],
+   "covers": [
+    "SC05-SH11"
+   ],
+   "title": "Scene 5 · T7 — Beth, plain: 'This is all I did.' (SH11)",
+   "line": "This is all I did.",
+   "duration": 4,
+   "model": "seedance_2_5 · omni_reference · 720p · 9:16",
+   "videoConnector": "Higgsfield",
+   "motionPlan": "Beth nods once and says it",
+   "note": "Waits for the Scene 5 ingredient cards' Confirm, then one Seedance call.",
+   "updatedAt": 1790963201444
+  }
+ }
+]

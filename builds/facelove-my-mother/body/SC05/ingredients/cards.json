@@ -1,0 +1,48 @@
+{
+ "OUTFIT-N-D4": {
+  "prompt": "A wardrobe reference card from a film's costume department: one woman's at-home outfit laid out flat on a plain pale grey linen background, seen from directly above, neatly arranged as if worn. Counted, and only these: exactly one faded sage-green cotton crew-neck sweatshirt, soft and slightly pilled, the cuffs a little stretched; exactly one pair of grey cotton jersey lounge trousers with a drawstring waist; exactly one pair of plain grey socks; exactly one plain black hair elastic beside the collar. Ordinary worn-in clothes of a woman of forty-nine who has stopped making an effort, nothing new, nothing styled. Soft even daylight. Natural, neutral colour, real texture, a still from a feature film. No person, no body, no mannequin, no shoes, no jewellery, no logos or print on the sweatshirt, no text or captions anywhere.",
+  "refs": [],
+  "media": [],
+  "model": "gpt_image_2_5 · sunburst · high · 2k · 9:16"
+ },
+ "OUTFIT-C3-D4": {
+  "prompt": "A wardrobe reference card from a film's costume department: one woman's smart-casual afternoon outfit laid out flat on a plain pale grey linen background, seen from directly above, neatly arranged as if worn. Counted, and only these: exactly one light-blue chambray button-front shirt with the sleeves rolled to the elbow; exactly one pair of white straight-leg jeans; exactly one pair of tan leather ballet flats; exactly one black zip garment bag on a hanger laid beside them. Neat, easy clothes of a confident woman of forty-nine. Soft even daylight. Natural, neutral colour, real texture, a still from a feature film. No person, no body, no mannequin, no jewellery, no logos anywhere, no text or captions anywhere.",
+  "refs": [],
+  "media": [],
+  "model": "gpt_image_2_5 · sunburst · high · 2k · 9:16"
+ },
+ "PROD-HAND-CARD": {
+  "prompt": "Image 1 is the product: the FACELOVE Changing Foundation Stick, closed. This picture is a reference card of how it is held: a close-up of one woman's right hand, fair skin, short natural nails, the light-blue chambray cuff of a rolled sleeve at the wrist, holding exactly one stick against a plain soft blush-beige background. The product exactly as in the attached reference image — a slim satin pale violet-mauve metal barrel, cool-toned and softly reflective rather than glossy, closed at the far end, carrying a single pale letterspaced FACELOVE wordmark set along the barrel on its front centreline, and at the working end either a solid warm-neutral white balm cut back into two straight shoulders rising to a short flat crest, or a dense white synthetic brush crown standing domed and slightly splayed above a stepped collar with a fine machined slot in its sloped face — here closed at both ends, both caps on. Held in one hand, low on the barrel and well below the wordmark, fingers wrapped around the closed end with the working end standing clear and upward. Fingers never cross the wordmark, never touch the balm crest or the brush crown, and never cover the collar. The barrel is held near upright with a slight tilt toward the lens so the wordmark stays square to camera and legible along its length. Nothing is unscrewed, twisted, wound up, clicked or adjusted; the product is complete and at rest in the hand on the first frame. Soft daylight from the left, one broad soft highlight down the barrel. Natural, neutral colour, real texture, a still from a feature film. NEGATIVES: no second wordmark, no wordmark on both barrel sections, no wordmark across the barrel, no horizontal wordmark on an upright barrel, no wordmark on the capped end, no mirrored or reversed lettering, no wordmark on the brush collar, no both ends open at once, no cap missing from the closed end, no second cap in frame, no second unit, no gloss mirror finish on the barrel, no chrome barrel, no hard specular line down the barrel, no seam where the barrel has none, no second hand, no face, no text or captions anywhere.",
+  "refs": [
+   [
+    "CLOSED",
+    "product",
+    "Image 1 · the closed stick"
+   ]
+  ],
+  "media": [
+   "7278afd1-9898-41bb-a85f-e23b1e645a73"
+  ],
+  "model": "gpt_image_2_5 · sunburst · high · 2k · 9:16"
+ },
+ "COLOUR-FRONT-CARD": {
+  "prompt": "Image 1 is Susan's face; Image 2 is the brush end of the FACELOVE stick. This picture is a reference card of how the colour changes on her skin: an extreme close-up of her left cheekbone in soft window light, her real mature skin with every pore, fine line and the crease at the corner of her eye exactly as in Image 1. Across the cheekbone lies one short band of solid warm-neutral white balm. The brush end from Image 2 works the lower end of the band in small circles: The brush end is already in contact with the skin, cap already off and out of frame. The balm meets the skin on its flat crest and leading shoulder, the skin giving very slightly under it with a tight contact shadow along the crest and no gap between white and skin; the brush meets it on the side of its crown, fibres bending back and springing clear behind, the collar never touching the face. The barrel stays clear of the skin. THE TERRAIN IS CONSTANT: every crease, pore and fold sits exactly as deep after the product as before it, unchanged in depth and shape. The colour resolves from inside the cream at the edge the brush has worked: white ahead of the brush crown, her own skin tone behind it. THE TERRAIN IS CONSTANT THROUGHOUT. The crease is exactly as deep in the final frame as in the first: same depth, same length, same shape, same shadow geometry inside it. Pores stay open and individually resolved, fine lines stay legible, the surface keeps its relief. What changes is colour and colour only — the film evens tone across crest and crease alike while every feature of the terrain stays exactly where it was. Natural, neutral colour, real texture, a still from a feature film. NEGATIVES: no product filling the crease, no crease shallower after the product than before, no crease erased, no line softened away, no terrain smoothed out, no pores closed over, no surface flattened into an even sheet, no skin rendered poreless, no gap between the balm crest and the skin, no floating balm, no product hovering above the surface, no barrel rim touching the skin, no collar touching the skin, no brush tip stabbing the surface, no colour resolving ahead of the brush, no colour arriving before the brush touches it, no fully matched patch with no brush present, no bubbles on the cream, no domes on the cream surface, no blistered surface, no foamed layer, no granular bead layer, no bed of separate beads, no polystyrene foam texture, no rounded bodies sitting at the base of the film, no globules, no droplets suspended in the layer, no cool blue-white cream, no blue cast in the white, no grey-white cream, no cream cooler in tone than the ground it sits on, no glowing skin, no radiant skin, no luminous finish, no flawless finish, no beauty-filter smoothing, no airbrushed skin, no poreless skin, no plastic sheen, no wet gloss on the finished film, no makeup-advertisement gloss, no even mask of colour, no opaque coverage hiding the surface, no text or captions anywhere.",
+  "refs": [
+   [
+    "N-FACE",
+    "character",
+    "Image 1 · Susan's own skin"
+   ],
+   [
+    "BRUSH",
+    "product",
+    "Image 2 · the brush end"
+   ]
+  ],
+  "media": [
+   "67d1090e-3546-45d1-ae77-8a07bb5709fa",
+   "10c8c91d-dff7-4675-b394-d414a19f9ec8"
+  ],
+  "model": "gpt_image_2_5 · sunburst · high · 2k · 9:16"
+ }
+}
