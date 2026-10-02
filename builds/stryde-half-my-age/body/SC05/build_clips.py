@@ -53,11 +53,14 @@ L038 = "They come in twos. I never used the spare."
 L040 = "Barbara. This can’t possibly work on knees like mine."
 L041 = "Just put it on and walk down the stairs."
 GO = "chat: \"confirmed images in the scene 5\" (2026-10-02) — SC05 + SC06 as three takes"
+GO3 = "chat: \"in scene 6 dont show the back and make it more realistic how she holds it. fix everything\" (2026-10-02) — the user's go for the third generation"
+GEN = {"SC06-T1": 3}
+NOTES_ALL = {"SC06-T1": ["v1: this is the back of the silicon for the scene 6 (now superseded by the user: do not show the back); agent: the shell bent, 'Barbara.' dropped", "v2: in scene 6 dont show the back and make it more realistic how she holds it"]}
 GO2 = "board Fix + chat \"fix those\" (2026-10-02) — v2 of the three takes; INFO-ROUTINE v2 confirmed, INFO-KNEE-C1 v2 made for the knee"
 NOTE5 = "the user: scene 5 not realistic — the brace looked like a support for a broken knee, the table things not consistent or correct, no box: Barbara just gives her 1 Stryde"
 FIX = {"SC05-T1": NOTE5 + " → the table is the five-object layout card (soft knee sleeve, painkiller strip, gel, tea, water), no brace, no ice pack; her voice ref holds only her own line (v1 spoke 'They come in twos' under the wide)",
        "SC05-T2": NOTE5 + " → Barbara's knee from her own info card (v1 copied a man's leg), the strap with the kneecap in its notch; no box — she hands Her one strap from her gilet pocket",
-       "SC06-T1": "the user: this is the back of the silicon for the scene 6 → the back photo attached and named when she turns it; v1 bent the shell and dropped 'Barbara.' → rigid shell said, every word of the line said, the name first"}
+       "SC06-T1": "the user: in scene 6 dont show the back and make it more realistic how she holds it → the strap only ever front side up, never turned over, the back photo dropped; it rests in her open hand and then in her hand on the table edge, thumb beside the shell (FP06), never pinched up at the face; v1 bent the shell and dropped 'Barbara.' → rigid shell, every word said"}
 
 P = {}
 P["T1_START"] = ("the wide view from the hall doorway: Her at the pine table with her five things laid out in front of her, pressing a tablet out of the strip; "
@@ -66,7 +69,7 @@ P["T1_END"] = ("Barbara has set her mug down on the table and looks across at He
 P["T2_START"] = ("Barbara, seated across the table, has turned on her chair so her bare right knee comes out past the table end toward the camera, the strap already on it just under the kneecap; Her watches from her chair")
 P["T2_END"] = ("Barbara sits back in her chair across the table, hands on her thighs; Her holds the one spare strap Barbara has just put in her hand, looking down at it")
 P["T3_START"] = ("Her sits at her place at the pine table holding the spare strap flat across her open right palm, front side up; Barbara across the table watching her")
-P["T3_END"] = ("Barbara leans in across the table toward Her, forearms on the table, her face close and certain; Her holds the strap up between them")
+P["T3_END"] = ("Barbara leans in across the table toward Her, forearms on the table, her face close and certain; Her's hand rests on the table with the strap lying in it, front side up")
 
 SHOTS = []
 SHOTS.append(dict(beat="SC05-T1", take="SC05-T1", kind="multi", covers=["SC05-SH01", "SC05-SH02", "SC05-SH03"], duration=12, line=L036, vo="L035", subject_motion="in_place",
@@ -125,24 +128,24 @@ SHOTS.append(dict(beat="SC05-T2", take="SC05-T2", kind="multi", covers=["SC05-SH
            {"risk": "a box or packaging appears (the user: no box)", "prevented_by": "one strap from her gilet pocket, hand to hand; box/packaging negatives"}]))
 
 SHOTS.append(dict(beat="SC06-T1", take="SC06-T1", kind="multi", covers=["SC06-SH01", "SC06-SH02", "SC06-SH03"], duration=13, line=L040 + " " + L041, vo="L039", subject_motion="in_place",
-    files=["PROD-FRONT", "PROD-BACK", "N-FACE", "C1", "L-KITCHEN", "OUT-N-B5"], audios=["N-STOOD", "C1-L036"],
+    files=["PROD-FRONT", "N-FACE", "C1", "L-KITCHEN", "OUT-N-B5"], audios=["N-STOOD", "C1-L036"],
     title="Scene 6 · T1 — the sceptic: the strap in her palm; Just put it on and walk down the stairs (SH01–SH03)", start_pos=P["T3_START"], end_pos=P["T3_END"],
     prompt=" ".join([
-        manifest([("@image1", "is " + STRAP + " — it fits across one palm, slide to slide no longer than the hand."), ("@image2", BACK), ("@image3", FACE_N), ("@image4", SHEET("Barbara", BARB_B5)), ("@image5", KITCHEN), ("@image6", CARD_N),
+        manifest([("@image1", "is " + STRAP + " — it fits across one palm, slide to slide no longer than the hand."), ("@image2", FACE_N), ("@image3", SHEET("Barbara", BARB_B5)), ("@image4", KITCHEN), ("@image5", CARD_N),
                   ("@audio1", VOICE("Her")), ("@audio2", VOICE("Barbara"))]),
         SERIES, LOOK, INHERIT, B5_MORNING, NOSPK,
         "THE EXCHANGE, word for word and in this order: " + L040 + " " + L041 + " — Her says the first line, Barbara answers with the second; nobody else speaks.",
         "One scene covered in 3 shots within a single take, all on the same side of the action line, with the same light, look and wardrobe throughout. Frame 1: " + P["T3_START"] + ". "
         "Everyone stays seated in their place. The action carries straight across every cut: each shot picks up the movement exactly where the last one left it — the same hand, the same object, the same direction — and everyone is where the last shot left them. "
         "SHOT 1, [0s-4s]: ECU straight down from above, Camera on a tripod, locked: the strap of Image1 rests across Her's open right palm, the shell filling about half the frame, the wordmark up; "
-        "she turns it over once, slowly, so we see its back exactly as Image2 — the grey ribbed silicone pad with the long raised bump — then turns it front up again; the shell stays rigid the whole time, only the knit band moves. Her lips sealed and jaw still. "
-        f"SHOT 2, [4s-9s]: MCU, three-quarter, Camera on a tripod, locked: Her, {HER_ID}, in {HER_B5}, holds the strap up between finger and thumb at chin height, sceptical, and says the whole line, beginning with the name — Barbara. — a short pause, then: This can’t possibly work on knees like mine. Every word of " + L040 + " is said. "
+        "it simply rests there the way a small light thing rests in a hand — front side up the whole time, the wordmark facing us, the knit band hanging loose over the side of her hand; her thumb lies beside the shell, never over it, and her fingers curl a little under it. She weighs it once, lifting her hand a centimetre and letting it settle, unimpressed. It is never turned over and its back is never seen. The shell stays rigid. Her lips sealed and jaw still. "
+        f"SHOT 2, [4s-9s]: MCU, three-quarter, Camera on a tripod, locked: Her, {HER_ID}, in {HER_B5}, holds the strap loosely in her right hand resting on the table edge in front of her, front side up, the band hanging over her fingers — the way anyone holds a small thing they don't think much of — glances down at it, then up at Barbara, sceptical, and says the whole line, beginning with the name — Barbara. — a short pause, then: This can’t possibly work on knees like mine. Every word of " + L040 + " is said. "
         f"SHOT 3, [9s-13s]: CU, low three-quarter on Barbara, {BARB_ID}, in {BARB_B5}: she leans in across the table toward Her, forearms on the wood, and says, certain and simple: " + L041 + " "
         "Each cut lands on a completed line. The eyelines match across the table. Nobody looks into the lens. Last frame: " + P["T3_END"] + ".",
         F2, PHYS,
         "THE STRAP, every time it is seen: exactly Image1 — the rigid black shell keeps its shape and size in her hand, never bends, never stretches, never turns into a sleeve or a brace; only the knit band hangs soft.",
-        "While the lines are spoken, Her keeps doing one thing with their hands: her right hand holding the strap up at chin height, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
-        state("HER", "in the outfit of her card at the pine table, the spare strap in her hand", "she holds the strap up"),
+        "While the lines are spoken, Her keeps doing one thing with their hands: her right hand resting on the table edge with the strap lying in it, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
+        state("HER", "in the outfit of her card at the pine table, the spare strap in her hand", "nothing — the strap still lies in her hand, front side up"),
         "FOCUS: SHOT 1 the strap sharp in her palm; SHOT 2 her nearest eye, the strap a little soft; SHOT 3 Barbara's eyes. The blur is optical: soft and round, never smeared.",
         dialogue("Her", L040, VOICE_N, "she has been handed a small strap after years of braces and pills. Speaking across the table to Barbara.",
                  "dismisses it, dry. Opens on the name as a sigh; turns on 'possibly'; exits looking at the strap. Stress on 'possibly'.",
@@ -151,7 +154,7 @@ SHOTS.append(dict(beat="SC06-T1", take="SC06-T1", kind="multi", covers=["SC06-SH
                  "a simple instruction, no argument. Opens level; turns on 'stairs', where she nods once; exits holding Her's eyes. Stress on 'walk'.",
                  "certain and simple, a little lower, matching the face in this shot.", "she knows the stairs will do the arguing for her, which leaks only through how calm she is."),
         AUD,
-        negs(NEG_EQUIP, NEG_MORPH, "no box, no neoprene sleeve, no padded brace, no oversized strap, no shell bending or folding, no invented back, no cardigan, no standing up, no Barbara saying Her's line, no word left out", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+        negs(NEG_EQUIP, NEG_MORPH, "no back of the strap shown, no turning it over, no holding it up at the face, no pinching it between finger and thumb, no box, no neoprene sleeve, no oversized strap, no shell bending, no cardigan, no Barbara saying Her's line, no word left out", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "the strap changes shape in her hand (FP01, FP05)", "prevented_by": "the real front photo first, rigid shell named, bending/sleeve negatives"},
            {"risk": "the voices swap", "prevented_by": "Audio1 Her, Audio2 Barbara, every line named with its speaker, negative"},
            {"risk": "the strap too big for her palm (FP02)", "prevented_by": "12 × 5 cm, 'no longer than the hand', oversized negative"}]))
@@ -172,7 +175,7 @@ if __name__ == "__main__":
                 "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16", "start_image": None,
                 "ingredients_approved": True, "files": [FILES[f] for f in s["files"]], "audios": [AUDIO[a] for a in s["audios"]],
                 "generate_audio": bool(s["line"]), "dialogue": s["line"] or None, "script_line": s["line"] or None, "pace": "unhurried",
-                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": 2, "user_go": GO2, "fix_note": FIX[s["beat"]], "fix_notes_all": [FIX[s["beat"]]],
+                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": GEN.get(s["beat"], 2), "user_go": GO3 if s["beat"] == "SC06-T1" else GO2, "fix_note": FIX[s["beat"]], "fix_notes_all": NOTES_ALL.get(s["beat"], [FIX[s["beat"]]]),
                 "risks": s["risks"], "vo": s.get("vo"), "scene": int(s["beat"][2:4]), "title": s["title"],
                 "taste": ["HT02", "HT17", "HT18", "HT22", "HT23", "HT26", "FP01", "FP02", "FP03", "FP11", "FP12", "FP15"]}
         out = H / f"{s['beat']}.call.json"
