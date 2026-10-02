@@ -1,0 +1,55 @@
+{
+ "beat": "T-01a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Then my grandbaby got married in June.\": From this frame: the two of them sway once in the hug — one slow sway, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. Their lips stay closed and still from the first frame to the last — a silent clip, nobody speaks or sings. The bride and her grandmother rock together slowly once to one side and back in the hug, eyes closed, smiling, arms around each other; the hall, the lights and the balloon arch behind stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else moves; no cut.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_ffc3ebdb-7f13-4674-9df2-f882a54e6922.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Then my grandbaby got married in June.",
+ "motion_plan": "From this frame: the two of them sway once in the hug — one slow sway, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one slow sway",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause first (HT25)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image T-01a@v3A, job ffc3ebdb-7f13-4674-9df2-f882a54e6922)"
+}

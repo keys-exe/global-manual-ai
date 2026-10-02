@@ -1,0 +1,454 @@
+{
+ "build": "stryde-half-my-age",
+ "names": {
+  "N": "HER",
+  "C1": "Barbara",
+  "C2": "Daughter",
+  "C3": "Husband",
+  "C4": "Sister",
+  "C5": "Friend 1",
+  "C6": "Friend 2",
+  "X2": "Commuter",
+  "X3": "Cashier",
+  "X4": "Doctor + patient",
+  "X5": "Barbara's husband",
+  "X6": "Niece"
+ },
+ "days": [
+  {
+   "day": "B1",
+   "event": "six weeks ago, the evening — the shopping left at the foot of the stairs",
+   "source": "stated: VO \"Six weeks ago\"; HER \"I'll get it later\"",
+   "outfits": {
+    "N": "heather-green jumper, charcoal A-line skirt (sheet)",
+    "C3": "brown cardigan, checked shirt (sheet)"
+   },
+   "events": [
+    {
+     "id": "B1-E1",
+     "location": "L-STAIRS",
+     "beats": [
+      "SC02-SH01",
+      "SC02-SH02"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "B2",
+   "event": "the next morning — down the stairs backwards, tea in the kitchen, then back upstairs",
+   "source": "stated: HUSBAND \"Sleep alright?\" (the morning after)",
+   "outfits": {
+    "N": "pale-blue quilted dressing gown, grey nightdress, slippers",
+    "C3": "brown cardigan, checked shirt (sheet) — as on B1"
+   },
+   "events": [
+    {
+     "id": "B2-E1",
+     "location": "L-STAIRS",
+     "beats": [
+      "SC02-SH03",
+      "SC02-SH04"
+     ]
+    },
+    {
+     "id": "B2-E2",
+     "location": "L-KITCHEN",
+     "beats": [
+      "SC02-SH05",
+      "SC02-SH06"
+     ]
+    },
+    {
+     "id": "B2-E3",
+     "location": "L-BEDROOM",
+     "beats": [
+      "SC02-SH07"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "B3",
+   "event": "the weeks of trying everything, shown as one day in one outfit — the brace by evening, the physio, the pills, then that evening the drawer and the sister's call",
+   "source": "stated: VO \"By evening, it was around my ankle. I tried everything. Physiotherapy. Painkillers. Cortisone injections\"",
+   "outfits": {
+    "N": "slate-grey cardigan, cream blouse, navy knee-length skirt",
+    "C3": "bottle-green crew-neck jumper, pale-blue oxford shirt, charcoal cords, brown lace-ups (user Fix 2026-10-01: not the Scene 2 outfit; OUT-C3-B3 v2)"
+   },
+   "events": [
+    {
+     "id": "B3-E1",
+     "location": "L-STAIRS",
+     "beats": [
+      "SC03-SH01",
+      "SC03-SH02"
+     ]
+    },
+    {
+     "id": "B3p",
+     "location": "L-PHYSIO",
+     "beats": [
+      "SC03-SH03",
+      "SC03-SH05"
+     ]
+    },
+    {
+     "id": "B3q",
+     "location": "L-KITCHEN",
+     "beats": [
+      "SC03-SH04"
+     ]
+    },
+    {
+     "id": "B3d",
+     "location": "L-BEDROOM",
+     "beats": [
+      "SC03-SH06",
+      "SC03-SH07",
+      "SC03-SH08",
+      "SC03-SH09",
+      "SC03-SH10"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "B4",
+   "event": "the granddaughter's wedding, a June evening — Barbara on the dance floor",
+   "source": "stated: VO \"my granddaughter got married in June\"",
+   "outfits": {
+    "N": "dusty-rose silk-chiffon midi dress with flutter sleeves and a thin belt, nude satin courts, pearl drops (OUT-N-B4 v2, no jacket)",
+    "C3": "navy suit, pale-blue shirt, burgundy tie (OUT-C3-B4)",
+    "C1": "royal-blue lace midi dress with sheer lace sleeves, silver satin dancing shoes (OUT-C1-B4 v2, no cardigan)"
+   },
+   "events": [
+    {
+     "id": "B4-E1",
+     "location": "L-WEDDING",
+     "beats": [
+      "SC04-SH01",
+      "SC04-SH02",
+      "SC04-SH03",
+      "SC04-SH04",
+      "SC04-SH05"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "B5",
+   "event": "Barbara's stay, the week after — one morning: the routine, the strap, the stairs, why it works",
+   "source": "stated: VO \"Barbara came to stay the week after. She watched me work through my morning routine\"",
+   "outfits": {
+    "N": "sage-green button cardigan, white blouse, charcoal skirt above the knee",
+    "C1": "cobalt gilet, white top, navy knee-length shorts (sheet)"
+   },
+   "events": [
+    {
+     "id": "B5-E1",
+     "location": "L-KITCHEN",
+     "beats": [
+      "SC05-SH01",
+      "SC05-SH02",
+      "SC05-SH03",
+      "SC05-SH04",
+      "SC05-SH05",
+      "SC05-SH06",
+      "SC05-SH07",
+      "SC06-SH01",
+      "SC06-SH02",
+      "SC06-SH03"
+     ]
+    },
+    {
+     "id": "B5-E2",
+     "location": "L-STAIRS",
+     "beats": [
+      "SC07-SH01",
+      "SC07-SH02",
+      "SC07-SH03",
+      "SC07-SH04",
+      "SC07-SH05",
+      "SC07-SH06"
+     ]
+    },
+    {
+     "id": "B5-E3",
+     "location": "L-KITCHEN",
+     "beats": [
+      "SC08-SH01",
+      "SC08-SH02",
+      "SC08-SH03",
+      "SC08-SH04",
+      "SC08-SH05"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "A1",
+   "event": "proof, someone else's day — a sports doctor fits the strap",
+   "source": "ownership: VO \"Sports doctors recommend it\" (generic, its own day)",
+   "outfits": {
+    "X4": "set at SC09 — one-off; the patient's right knee bare for the strap (FP13)"
+   },
+   "events": [
+    {
+     "id": "A1-E1",
+     "location": "L-CLINIC",
+     "beats": [
+      "SC09-SH01"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "A1g",
+   "event": "proof — Barbara's husband, 76, on the golf course",
+   "source": "ownership: VO \"Barbara's husband wears one. He's 76. He plays golf\"",
+   "outfits": {
+    "X5": "set at SC09 — golf clothes with shorts, the strap visible on his knee"
+   },
+   "events": [
+    {
+     "id": "A1g-E1",
+     "location": "L-GOLF",
+     "beats": [
+      "SC09-SH02"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "A1t",
+   "event": "proof — the niece, 22, on the tennis court",
+   "source": "ownership: VO \"Her niece wears one for tennis. She's 22\"",
+   "outfits": {
+    "X6": "set at SC09 — tennis clothes, the strap visible on her knee"
+   },
+   "events": [
+    {
+     "id": "A1t-E1",
+     "location": "L-TENNIS",
+     "beats": [
+      "SC09-SH03"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "A2",
+   "event": "yesterday — the strap on, two miles into town, the shop, two bags home to him",
+   "source": "stated: VO \"Yesterday I walked into town\"",
+   "outfits": {
+    "N": "camel trench, cream jumper, navy trousers, white trainers",
+    "C3": "brown cardigan, plain grey shirt",
+    "X3": "supermarket polo"
+   },
+   "events": [
+    {
+     "id": "A2-E1",
+     "location": "L-BEDROOM",
+     "beats": [
+      "SC10-SH01"
+     ]
+    },
+    {
+     "id": "A2-E2",
+     "location": "L-KITCHEN",
+     "beats": [
+      "SC10-SH02"
+     ]
+    },
+    {
+     "id": "A2-E3",
+     "location": "L-HIGHST",
+     "beats": [
+      "SC10-SH03"
+     ]
+    },
+    {
+     "id": "A2-E4",
+     "location": "L-SHOP",
+     "beats": [
+      "SC10-SH04",
+      "SC10-SH05",
+      "SC10-SH06"
+     ]
+    },
+    {
+     "id": "A2-E5",
+     "location": "L-HIGHST",
+     "beats": [
+      "SC10-SH07"
+     ]
+    },
+    {
+     "id": "A2-E6",
+     "location": "L-LIVING",
+     "beats": [
+      "SC11-SH01",
+      "SC11-SH02"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "A3",
+   "event": "the café with her two friends — the reveal under the table",
+   "source": "event: the café (HER \"Three weeks ago I couldn't have crossed this room\")",
+   "outfits": {
+    "N": "terracotta jumper, navy wide-leg trousers, tan loafers",
+    "C5": "sheet outfit",
+    "C6": "sheet outfit"
+   },
+   "events": [
+    {
+     "id": "A3-E1",
+     "location": "L-CAFE",
+     "beats": [
+      "SC12-SH01",
+      "SC12-SH02",
+      "SC12-SH03",
+      "SC12-SH04",
+      "SC12-SH05",
+      "SC12-SH06",
+      "SC12-SH07",
+      "SC12-SH08",
+      "SC12-SH09"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "HA",
+   "event": "the After, hook A — the station stairs and the train with her daughter",
+   "source": "contrast: the after (hook variant, its own day — §14)",
+   "outfits": {
+    "N": "forest-green wool coat, grey trousers, black ankle boots, tan shoulder bag",
+    "C2": "olive parka, cream jumper, jeans (sheet)"
+   },
+   "events": [
+    {
+     "id": "HA-E1",
+     "location": "L-STATION",
+     "beats": [
+      "HKA-SH01",
+      "HKA-SH02",
+      "HKA-SH03"
+     ]
+    },
+    {
+     "id": "HA-E2",
+     "location": "L-CARRIAGE",
+     "beats": [
+      "HKA-SH04",
+      "HKA-SH05"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "HB",
+   "event": "the After, hook B — the shopping centre stairs past the lift queue",
+   "source": "contrast: the after (hook variant, its own day — §14)",
+   "outfits": {
+    "N": "navy quilted jacket, cream jumper, dark jeans, white trainers",
+    "C2": "charcoal wool coat, jeans, ankle boots"
+   },
+   "events": [
+    {
+     "id": "HB-E1",
+     "location": "L-SHOPCENTRE",
+     "beats": [
+      "HKB-SH01",
+      "HKB-SH02",
+      "HKB-SH03",
+      "HKB-SH04",
+      "HKB-SH05"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "HC",
+   "event": "the After, hook C — the dead escalator in the morning rush",
+   "source": "contrast: the after (hook variant, its own day — §14)",
+   "outfits": {
+    "N": "burgundy raincoat, black trousers, black trainers",
+    "C2": "black puffer jacket, jeans",
+    "X2": "grey hoodie, black backpack"
+   },
+   "events": [
+    {
+     "id": "HC-E1",
+     "location": "L-ESCALATOR",
+     "beats": [
+      "HKC-SH01",
+      "HKC-SH02",
+      "HKC-SH03",
+      "HKC-SH04",
+      "HKC-SH05"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "HE",
+   "event": "the After, hook E — up off the living-room floor",
+   "source": "contrast: the after (hook variant, its own day — §14)",
+   "outfits": {
+    "N": "oatmeal cardigan over a teal top, grey trousers",
+    "C2": "denim jacket over a grey hoodie, jeans"
+   },
+   "events": [
+    {
+     "id": "HE-E1",
+     "location": "L-LIVING",
+     "beats": [
+      "HKE-SH01",
+      "HKE-SH02",
+      "HKE-SH03",
+      "HKE-SH04",
+      "HKE-SH05"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "A4",
+   "event": "Sunday — the sister comes, the second pair, up the stairs together",
+   "source": "stated: VO \"She's coming Sunday\"",
+   "outfits": {
+    "N": "cream cardigan, coral blouse, oatmeal trousers",
+    "C4": "lilac fleece, floral blouse (sheet)"
+   },
+   "events": [
+    {
+     "id": "A4-E1",
+     "location": "L-KITCHEN",
+     "beats": [
+      "SC13-SH01",
+      "SC13-SH02"
+     ]
+    },
+    {
+     "id": "A4-E2",
+     "location": "P-HOUSE",
+     "beats": [
+      "SC13-SH03",
+      "SC13-SH04"
+     ]
+    },
+    {
+     "id": "A4-E3",
+     "location": "L-STAIRS",
+     "beats": [
+      "SC13-SH05"
+     ]
+    }
+   ]
+  }
+ ]
+}

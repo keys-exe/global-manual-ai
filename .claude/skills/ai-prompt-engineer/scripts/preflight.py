@@ -9,7 +9,14 @@ CALL.json describes one paid video call exactly as it will be sent:
     "beat": "BF-SC02-SH03",
     "connector": "seedance" | "kling",
     "mode": 1-5,                       # §18A mode lock
-    "kind": "dialogue" | "listener" | "insert" | "broll" | "multi" | "voice_master",
+    "kind": "dialogue" | "listener" | "insert" | "broll" | "multi" | "take" | "voice_master",
+                                       # take = a §24K part 5 one-take (TAKE-FILM): one continuous action, one call;
+                                       # multi = a MULTI-SHOT take (MULTI-FILM) — both V7.88.0
+    "take": "SC07-T1",                 # film (Modes 4–5) on Seedance: the act map's take (takes.py) — connected shots are one call
+    "legacy_build": false,             # true on a build started before V7.88.0 (set automatically for the PRE_TAKES builds,
+                                       # by "build" or the call's path): its shots stay as planned, no take required
+    "covers": ["SC07-SH02", "SC07-SH03"],   # take / multi: the act-map rows this call generates (≤ 4)
+    "start_pos": "...", "end_pos": "...",   # take / multi: where everyone is on frame 1 / the last frame, in the prompt word for word
                                        # voice_master = a §24I part 7 neutral film voice master (Seedance, 10s, the
                                        # face-only sheet crop as the one ingredient, no audio in): the film-shot strings
                                        # (rig, SERIES-LOOK, drama, state, business) do not apply — the §24I recipe does
@@ -84,6 +91,8 @@ SIG = {
     "NEG-FILM": "no phone camera look",
     "NEG-ANIMFILM": "no concept art",
     "MULTI-FILM": "within a single take",
+    "MULTI-MOVE": "picks up the movement exactly where the last one left it",
+    "TAKE-FILM": "One continuous shot, never cut and never restarted",
     "NEG-SOUND": "no music, no score, no sound effects",
     "SERIES-LOOK": "The look of a high-end live-action drama series",
 }
@@ -105,6 +114,12 @@ STREAMERS = re.compile(r"\b(netflix|hbo|max original|prime video|amazon original
 WALK = re.compile(r"\b(walks?|walking|steps? (?:toward|into|across|down|up)|crosses|climbs?|stairs|runs?|running)\b", re.I)
 PLACEHOLDER = re.compile(r"\[(?:[A-Z][A-Z0-9 ,:/'’\-]{2,}|NAME|WHO|WORD|STATE|PACE|SIDE|FOCAL)[^\]]*\]")
 BANNED = re.compile(r"\bcinematic\b", re.I)
+# Builds started before V7.88.0 keep their shot-by-shot plan: no take is required on their calls (a system update never
+# touches existing builds; re-cutting one into takes is its team's call). Recognised by the call's "build" field or its path.
+PRE_TAKES = {"identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "stryde-71-stairs-pixar-song", "stryde-71-stairs",
+             "stryde-cascade", "stryde-failed-alternatives", "stryde-half-my-age", "stryde-identity", "stryde-lost-moments",
+             "stryde-not-your-cartilage", "stryde-regrets", "stryde-thirty-years", "stryde-three-regrets", "stryde-too-bad",
+             "stryde-what-changed", "demo-ad"}
 
 
 def words(t):
@@ -208,6 +223,10 @@ def run_image(c):
     if SURFACE.search(p):
         check("bare surfaces / a closed inventory (§6A rule 4)", bool(BARE.search(p)), f"'{SURFACE.search(p).group(0)}' named — say what is on it and close the list ('every other surface bare')")
     check("plain surfaces — no lettering or logos (§6A rule 5)", bool(PLAIN.search(p)), "e.g. 'clothing, packaging, walls and signs plain — no lettering, logos or labels except the product's own wordmark'")
+    # L28 (V7.88.1): speech marks inside an image prompt are printed on the frame as a caption — the line goes in without them
+    rest = re.sub(r'^\s*For the line "[^"]*":', "", p, count=1)
+    sm = re.search(r'["“”]', rest) or re.search(r'[“”]', p)
+    check("no speech marks in the picture prompt (§6A rule 5, L28)", not sm, "a quoted line or word prints as a caption — write the line without its speech marks" if sm else "")
     dev = DEVICE.search(p)
     check("no device named as an object in the picture (§6A rule 7)", not dev, dev.group(0) if dev else "")
     oof = [m for m in OUT_OF_FRAME.finditer(p) if not re.search(rf"\b{BODY_PART}\b", p[max(0, m.start() - 40):m.end()], re.I)]
@@ -263,6 +282,10 @@ def run_beat_video(c, p, check):
     check("no retired boilerplate (§35A)", not hits, "; ".join(hits))
     # L15 (2026-10-01, user: "you should never talk the lyrics/script in broll") — a B-roll is pictures under the voice; the prompt says so.
     check("nobody mouths the line (§35A rule 6, HT25)", bool(NOSPEAK.search(p)), "e.g. 'mouth closed, she never speaks or sings' or 'nobody speaks'")
+    # L30 (V7.89.1): a quoted line in a clip prompt invites a talking mouth — the line goes in without its speech marks
+    ml = re.match(r'\s*For the line "(.*?)":\s', p, re.S)
+    qm = bool(ml and re.search(r'["“”]', ml.group(1)))
+    check("no speech marks inside the clip's line (§35A rule 6, L30)", not qm, "write the line without its speech marks: For the line \"…she said, Baby, can I…?\":" if qm else "")
     rc = (c.get("risk_class") or "").lower() or None
     if rc in RISKY:
         check(f"{rc}: end frame pinned (§27G)", bool(c.get("pinned")) or bool((c.get("pin_waived") or "").strip()), "first-and-last frame, or the user's words in pin_waived")
@@ -301,8 +324,24 @@ def film_shot(c, p, conn, mode, kind, film, check):
     if not film:
         check("ads stay phone style: no SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] not in p)
         check("ads stay phone style: no F6–F10 (§24N)", not any(sig in p for r, sig in RIGS.items() if r in SEEDANCE_ONLY))
-    if kind == "multi":
-        check("MULTI-SHOT only when nobody moves", sm == "still", f"subject {sm}")
+    # 5a. One take for connected action (§24K part 5, V7.88.0)
+    if conn == "seedance" and kind != "voice_master" and not c.get("legacy_build"):
+        # legacy_build: true — a build started before V7.88.0 keeps its shot-by-shot plan (never re-cut into takes without its team's ask)
+        check("take named — connected shots are one call (§24K part 5, takes.py)", bool(c.get("take")), "missing take")
+    if kind in ("take", "multi"):
+        cov = c.get("covers") or []
+        check("take covers 1–4 act-map rows", 1 <= len(cov) <= 4, f"{len(cov)} rows")
+        check("take on Seedance", conn == "seedance", conn)
+        d = c.get("duration")
+        check("take ≤ 15s (§24K part 5)", isinstance(d, (int, float)) and d <= 15, str(d))
+        for k in ("start_pos", "end_pos"):
+            v = (c.get(k) or "").strip()
+            check(f"{k} written into the prompt word for word", bool(v) and v in p, v or f"missing {k}")
+    if kind == "take":
+        check("TAKE-FILM", SIG["TAKE-FILM"] in p)
+        check("one-take covers ≤ 3 rows", len(c.get("covers") or []) <= 3, str(len(c.get("covers") or [])))
+    if kind == "multi" and sm != "still":
+        check("moving MULTI-SHOT carries the action across the cut (MULTI-FILM MOVE)", SIG["MULTI-MOVE"] in p, f"subject {sm}")
 
     # 5b. Focus (§30J)
     rk = c.get("rack")
@@ -324,12 +363,12 @@ def film_shot(c, p, conn, mode, kind, film, check):
         check("NEG-SCENECUT", SIG["NEG-SCENECUT"] in p)
         check("NEG-FILM / NEG-ANIMFILM", SIG["NEG-FILM" if mode == 4 else "NEG-ANIMFILM"] in p)
         check("NEG-SOUND (clips carry dialogue only, §24M)", SIG["NEG-SOUND"] in p)
-        if kind in ("dialogue", "listener", "multi", "broll") and kind != "insert":
+        if kind in ("dialogue", "listener", "multi", "take", "broll") and kind != "insert":
             check("STATE-CARRY", SIG["STATE-CARRY"] in p)
             check("NEG-DRAMA", SIG["NEG-DRAMA"] in p)
-        if kind in ("dialogue", "listener", "multi"):
+        if kind in ("dialogue", "listener") or (kind == "multi" and sm == "still"):
             check("BUSINESS-LINE", SIG["BUSINESS-LINE"] in p)
-        if kind in ("dialogue", "multi"):
+        if kind == "dialogue" or (kind in ("multi", "take") and c.get("dialogue")):   # a silent take of movement has no dialogue strings (V7.88.0)
             for k in ("DRAMA-DELIVERY", "PLAYING", "VOICE NOW"):
                 check(k, SIG[k] in p)
             check("AUD string", SIG["AUD-FILM" if mode == 4 else "AUD-ANIM"] in p)
@@ -466,6 +505,11 @@ def main():
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
     c = json.loads(Path(a.call).read_text())
+    def build_of(path):
+        parts = path.parts
+        return parts[parts.index("builds") + 1] if "builds" in parts[:-1] else None
+    if c.get("build") in PRE_TAKES or {build_of(Path(a.call).resolve()), build_of(Path.cwd())} & PRE_TAKES:
+        c.setdefault("legacy_build", True)
     res = run(c)
     fails = [r for r in res if r["result"] == "FAIL"]
     if a.json:

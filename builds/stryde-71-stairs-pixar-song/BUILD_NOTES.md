@@ -488,3 +488,106 @@ Waiting on: Confirm or Fix on the P-01b clip v5; picks or Fix notes on the seven
 - Balances: Higgsfield 7523.15 · Kling 39629.
 
 Waiting on: picks or Fix notes on the seven Act 2 pairs (v3/v4). Confirm or Fix on the P-01b clip v5.
+
+## 2026-10-02 — "FIX THOSE AND GENERATE THE NEXT ACT" (08:40–09:35 UTC): Act 2 Fixes and clips, Act 3 pairs
+
+- **T-02a / T-02b**: the user's Fix notes were "this should be loreta" and "wrong person". The v5/v6 pairs used Loretta's confirmed T-01b frame as Image 2:
+  - T-02a uses it as `kind: character`, with Loretta leading the line nearest the lens.
+  - T-02b uses it as `kind: frame`, because no face shows.
+  - The user picked v5 A on both. The v6 B renders are now on **Old 2**, archived on Current, and their files deleted from Current.
+  - Clips v1 were made on Kling 3.0 from the picks: T-02a is 5 s (40 cr), T-02b is 4 s (32 cr). Both are To check.
+  - What I see on T-02a: Loretta side-steps at the front with the line. She smiles with her teeth showing the whole clip, but her mouth never forms words.
+  - What I see on T-02b: the slip-ons and hem step forward in unison with the dress shoes and gold heels.
+- **T-04a**: the Fix note was "SHE SHOULD NOT BE THE ONLY ONE ON THE DANCE FLOOR".
+  - The v5/v6 pair is an edit of the v3 A frame with the floor full of guests dancing round Loretta. It is To check, with `imagePair [5,6]`.
+  - The replaced v3 A and the clip made from it (v1) are on **Old 2**, archived on Current, and their files deleted from Current. The video waits for the new pick.
+- **Act 3 (R-01a…R-07c, N-D3)**: A/B pairs on Higgsfield `nano_banana_pro` (logged `nano_banana_2`, 2k, 9:16), from `body3/build_act3.py`. Product beats are PIX-SPLIT (product photos first, the strap at least a quarter of the frame, 12 × 5 cm, the kneecap's lower edge in its notch).
+  - Before posting, I checked every render against the standing notes (L16). These were kept off the board, and their causes fixed at source:
+    - R-03a: both first renders put her in the cast sheet's khaki shorts.
+    - R-04a A: a plain band, not the strap.
+    - R-06b A: printed the lyric as a caption and wore the day-one dress from the style frame.
+    - R-06b B: drew the strap as a box.
+    - R-07a B: a hinged brace.
+    - R-07c A: a sleeve brace.
+  - Re-renders (`build_act3_fix.py`, `build_act3_fix2.py`, as v3/v4 prompt files) used:
+    - face-and-hair crops of the sheets (`cast/*_face.png`, HT26);
+    - prompts with no speech marks;
+    - a style frame with no other day's outfit;
+    - the strap's shape named.
+  - Still kept off after the re-renders:
+    - R-03a fix B and R-06b fix B came out light-skinned.
+    - R-07a and R-07c fused the strap onto a sleeve.
+    - R-07a fix2 printed a caption again.
+    - R-07c fix2 showed another woman.
+  - The 13 kept-off renders are on **Old 2** (docs R-03a, R-04a, R-06b, R-07a, R-07c), with their credits.
+  - **On the board, To check:** nine pairs (`imagePair [1,2]`). R-03a pairs fix A with fix2 B. R-04a pairs fix A with the first B. R-06b pairs fix A with fix2 B.
+  - **R-07a and R-07c are single pictures** after three tries each: R-07a is the first A, R-07c the first B. The card says so, and a Fix makes a new pair.
+  - Flags written on the cards:
+    - R-03a B has dark trousers, not the khaki of R-03b/R-04a.
+    - R-07a has her low on the flight, not at the top as the act map has it.
+    - R-07c has a teal sleeve (Loretta) soft at the right edge.
+- Act map rows changed in `work/actmap.py`: T-02a (Loretta leads the line), R-03b (close from low), R-06a (on her palm), R-07a (from three steps below), R-07c (three-quarter, not profile). `angles.py` PASS. The rows are synced to `STEP4_5.md` and `docs/actmap` v29 (Current and Plan).
+- **System (V7.88.1, LESSONS L28):**
+  - No speech marks in a picture prompt (§6A rule 5, `preflight.py` check). It was tested on the empty case and on known-good prompts.
+  - The day's clothes never come from a sheet or the style frame (§24O rule 9, HT26 extended).
+  - From the Fix-note patterns (three "wrong person" notes): HT27, every cast member in the frame goes in by a picture, feet-only shots too.
+  - Merged over the default branch twice (V7.87.0, then V7.88.0 with its L26–L27); ours is V7.88.1 / L28.
+- Balances: Higgsfield 6487.15 · Kling 39093.
+
+Waiting on:
+- Picks or Fix notes on the nine Act 3 pairs and the two Act 3 singles.
+- The T-04a v5/v6 pick.
+- Confirm or Fix on the T-02a and T-02b clips.
+
+## 2026-10-02 — "fix those and generate the videos" (09:35–10:00 UTC)
+
+**Picks on the board.** The user picked frames for:
+- R-01a (v1), R-02a (v1), R-02b (v2), R-03a (v1), R-03b (v1), R-06a (v2)
+- T-04a (v5)
+
+The unpicked image of each pair is now on **Old 2**: its file was copied server-side, then archived and deleted on Current.
+
+**Clips on Kling 3.0** (silent, 1080p, from the picks; `clips/build_act3_clips.py`):
+- R-01a v1, R-02b v1, R-03b v1, T-04a v2: all To check.
+- R-02a, R-03a, R-06a: the v1 clips were kept off (L16, HT25) because their mouths moved as if speaking.
+  - Two of the three lines quote speech, and that quote had gone into the clip prompt.
+  - Clip v2 drops the speech marks and uses a "lips sealed and jaw still" clause.
+  - The v1 clips are on Old 2 with their 120 credits.
+- What I see in the v2 clips:
+  - R-03a v2 is clean.
+  - R-02a v2: the lips part slightly near the end.
+  - R-06a v2: in profile, her lips still part a little. A third generation waits for the user's go (§22X).
+- Flags written on the cards:
+  - R-01a: Loretta walks several steps, not one.
+  - R-03b: the hem goes down over the strap instead of up.
+- Clip credits: 9 × 40 + 48 + 32 = 440 Kling credits.
+
+**Image Fixes** (`body3/build_act3_fix3.py`, v5 prompts, plus v6 for R-07a). All are new A/B pairs on Higgsfield `nano_banana_pro`, To check:
+- **R-04a** "this should be loreta same clothes too": her confirmed R-03b frame is the reference (skin, rolled khaki trouser, teal blouse), per HT27. Pair v3/v4.
+- **R-05a** "product too small and wrong product": the product photos come first, with the shell's shape named and the strap half the frame wide. N comes from her R-06a frame. Pair v3/v4.
+  - Flag: in B the strap rests on her fingertips, not flat in her palm.
+- **R-06b** "wrong product and this is not the pixar anymore": the confirmed R-03b frame is the style (a stylized leg with the strap drawn right). N's skin and clothes come from her R-06a frame. Pair v3/v4.
+- **R-07a** "wrong stairs", together with **R-07c** "this should be part of the r07a so it should be one take only":
+  - R-07c is merged into R-07a as one take. The act map row now covers lines 44–49, 98.25 → 105.57 s, with a 9 s call, and the card has `covers: ["R-07a","R-07c"]`.
+  - The R-07c card is deleted from Current. Its render is on Old 2 (`mergedInto`).
+  - The image is an edit of the confirmed **P0-PROP-N plate** (her own staircase: runner, brass rods, square newel, photo wall), with N from her R-06a frame.
+  - Three renders were kept off and are on Old 2:
+    - the first A drew an open-kneecap sleeve;
+    - one B came back on another staircase with her hand on the rail;
+    - one Higgsfield job failed (no render).
+  - v6 adds the worn-strap photo, with one shell below the kneecap and the kneecap bare. The pair on the board is v2/v3.
+- The replaced pairs (R-04a, R-05a, R-06b) and the old R-07a single are on Old 2.
+
+**Act map.** R-07c is merged in `work/actmap.py` (61 rows). `angles.py` PASS. Synced to `STEP4_5.md` and `docs/actmap` v30 (Current and Plan).
+
+**System (V7.89.1, LESSONS L30)**, merged over the default branch's V7.89.0 and its L29:
+- §35A rule 6: a clip prompt's line goes in without its speech marks, and a face shot uses "lips sealed and jaw still… the face holding the expression of the frame". `preflight.py` now fails speech marks inside a clip's line. Tested: it fails the two v1 prompts and passes the good Act 2 and Act 3 calls.
+- §27 rule 3: one continuous action across consecutive lines is one row and one clip (≤ 15 s).
+
+**Balances:** Higgsfield 6467.15 · Kling 38693.
+
+**Waiting on:**
+- Picks or Fix notes on the R-04a, R-05a, R-06b and R-07a pairs.
+- Confirm or Fix on the R-01a, R-02a, R-02b, R-03a, R-03b, R-06a and T-04a clips.
+- The user's go before a third R-06a clip.
+- The R-07a clip, a 9 s single take, waits for its image pick.

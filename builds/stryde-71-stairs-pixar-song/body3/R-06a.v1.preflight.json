@@ -1,0 +1,117 @@
+{
+ "beat": "R-06a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"I said, “Loretta, you know good and well this ain't gonna work on knees like mine.”\": Kitchen of Image 3, tall 9:16. Image 1 is the strap, Image 2 its back. Image 4 is the host, Image 5 the visitor — face and hair only. Image 6 is the style.\nTwo-shot across the table, both in profile, sharp on the strap: the same woman as Image 4, seventy-one, rose-pink blouse, facing frame right, holds the strap of Image 1 copied exactly, up on her open right palm between them, front to the lens, 12 × 5 cm, a quarter of the frame wide; one eyebrow up, lips closed, eyes on the strap. Across, the same woman as Image 5, teal blouse, facing frame left, unbothered, hands round a mug, eyes on her. Four chunky fingers and a thumb on every hand. Scale true to the set: the table edge comes up to their waists.\nIn frame: two women, the strap, a mug, the cloth; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. The strap alone in real materials, matte shell, chrome slides, knit band, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "I said, “Loretta, you know good and well this ain't gonna work on knees like mine.”",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR sheet v2 (confirmed) — face and hair only (HT26)",
+   "kind": "character"
+  },
+  {
+   "label": "C1-LORETTA sheet v2 (confirmed) — face and hair only (HT26)",
+   "kind": "character"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": true,
+ "risk_class": "hand_product",
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "72a9acfd-439d-478b-916d-b4da8b6d2836",
+  "2484470e-dbda-4935-b1f2-0897e8418066",
+  "32b8bfc2-4538-4c28-b485-3fd28fc5d489",
+  "fce3f6cb-9ef5-47b5-996b-f9c62e893bc8",
+  "5b40a12a-24f5-4d12-8650-016a8b0384ae"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/back.webp",
+   "role": "Image 2"
+  },
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 3"
+  },
+  {
+   "label": "N-NARR sheet v2 (confirmed) — face and hair only (HT26)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 4"
+  },
+  {
+   "label": "C1-LORETTA sheet v2 (confirmed) — face and hair only (HT26)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__C1-LORETTA",
+   "role": "Image 5"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-05c",
+   "role": "Image 6"
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "beat": "R-06b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"She said, Just put it on and walk down them stairs.\": Kitchen of Image 5, tall 9:16. Image 1 is the strap, Image 2 its back, Image 3 its three-quarter view. Image 4 is the woman — her deep brown skin, rose-pink blouse and denim skirt exactly as in Image 4. Image 6 is the style — its leg and its strap.\nClose-up from high three-quarter, her own view, sharp on the strap: her bare right shin and knee, the denim skirt hem just above the knee, both hands sliding the strap of Image 1 copied exactly — a black shell, two pointed peaks round a notch, a chrome slide at each end — up the shin, its front to the lens, 12 × 5 cm, a third of the frame wide, its top edge reaching the kneecap's lower edge; four chunky fingers and a thumb on each; a tan slipper below. Her leg and hands smooth and simplified as in Image 6. Scale true to the set: the hem comes to her knee.\nIn frame: one leg, two hands, the strap, a chair edge, the floor; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "She said, Just put it on and walk down them stairs.",
+ "face": false,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "product_tq_left.jpg — the strap, three-quarter (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "R-06a frame v2 B (confirmed) — N's skin and day clothes (HT27)",
+   "kind": "frame"
+  },
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "R-03b frame v1 A (confirmed) — the style: a stylized leg with the strap drawn right",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user Fix \"wrong product and this is not the pixar anymore\" → the confirmed R-03b frame as the style (stylized leg, strap drawn right), the leg called smooth and simplified, N's skin and clothes from her R-06a frame",
+ "product": true,
+ "risk_class": "hand_product",
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "72a9acfd-439d-478b-916d-b4da8b6d2836",
+  "05dbc852-16c0-4f52-8aa0-dffd0b20f3c0",
+  "37cf0d7a-06aa-4d40-ad45-821191a13086",
+  "2484470e-dbda-4935-b1f2-0897e8418066",
+  "179dfe8a-7ef0-4b2e-8ebd-f8558f58a15f"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/back.webp",
+   "role": "Image 2"
+  },
+  {
+   "label": "product_tq_left.jpg — the strap, three-quarter (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/product_tq_left.jpg",
+   "role": "Image 3"
+  },
+  {
+   "label": "R-06a frame v2 B (confirmed) — N's skin and day clothes (HT27)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__R-06a",
+   "role": "Image 4"
+  },
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 5"
+  },
+  {
+   "label": "R-03b frame v1 A (confirmed) — the style: a stylized leg with the strap drawn right",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__R-03b",
+   "role": "Image 6"
+  }
+ ]
+}
