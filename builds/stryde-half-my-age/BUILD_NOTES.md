@@ -166,4 +166,4 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
   - SC05-T1 v3: trimmed in the edit (ffmpeg, cut 1.5–5.375 s: she drank without the tablet), 8.2 s, 0 cr. To check.
   - SC05-T2 v2 (882 cr): Barbara's knee from the card, Her unimpressed, Barbara hands her one strap across the table (no box), "They come in twos. I never used the spare." (10.4 s). To check.
   - SC06-T1 v3 (819 cr, third generation on the user's "fix everything"): strap front side up throughout, never turned, back photo dropped; held resting in the hand / on the table edge; full lines. The shell looks large and curved in the first close-up — flagged on the card. To check.
-  - LESSONS L38, FP20 amended (a product photo is a reference, never an instruction to show that side).
+  - LESSONS L39, FP20 amended (a product photo is a reference, never an instruction to show that side).
