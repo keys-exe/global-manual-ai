@@ -1,0 +1,58 @@
+{
+ "beat": "M-05b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"This strap sits right on that spot and takes the weight off.\": Image 1 is the strap. Image 2 is the style — copy its look exactly: a smoky see-through outline of the right knee like soft mist, no skin or muscle, warm ivory-peach bones with a soft inner glow, pearly white tendons, a deep navy-black field with faint particles.\nClose-up from a low three-quarter angle, sharp on the strap: the strap of Image 1 copied exactly — a black shell, two pointed peaks round a notch, a chrome slide at each end — 12 × 5 cm, a third of the frame wide, seated on the patellar tendon just under the kneecap, its pad pressed on the spot; under the pad the last of a red glow fading into a calm soft blue that spreads along the tendon. Scale: the kneecap the width of the shell.\nIn frame: the knee outline, the bones, the tendon, the strap; every other area plain dark.\nA final frame from a 3D animated feature film, stylized storybook render. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "This strap sits right on that spot and takes the weight off.",
+ "face": false,
+ "room": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "S1 Ghost reference (references/anatomy/S1_ghost.webp) — the house anatomy look",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT11",
+  "HT18",
+  "HT21",
+  "FP03",
+  "FP13"
+ ],
+ "anatomy": true,
+ "anat_style": "S1",
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "64644b4c-c8c8-47ee-bceb-d6ac81b441ab"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "S1 Ghost reference (references/anatomy/S1_ghost.webp) — the house anatomy look",
+   "kind": "style",
+   "ref": ".claude/skills/ai-prompt-engineer/references/anatomy/S1_ghost.webp",
+   "role": "Image 2"
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "beat": "R-07a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"I did. Chile, the first step, I didn't even have to hold the rail. Not the second. Not the third. All the way down. Both feet. Forwards.\": Keep this photo exactly as it is — the staircase, runner, rods, newel, photo wall, viewpoint and woman — and move her all the way up: she stands on the second-floor landing at the head of the flight, at the top of the frame. Image 1 is the photo. Image 2 is the strap. Image 3 is the style.\nFull shot, sharp on her: the woman of Image 1 small on the landing at the top, facing the lens, right foot reaching for the first step down, hands loose off the rail, four chunky fingers and a thumb, tan slippers; on her bare right knee the strap of Image 2, below the kneecap; a proud closed-mouth smile, looking down at the next step. Every step below her empty, the newel at the bottom of the frame. Scale: she stands as tall as four steps.\nIn frame: her, the full flight; the rest as Image 1.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun from the door. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "I did. Chile, the first step, I didn't even have to hold the rail. Not the second. Not the third. All the way down. Both feet. Forwards.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "R-07a frame v2 A (to check) — her own staircase from the hall",
+   "kind": "frame"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "cae28c19-5ab2-4745-90a7-c5cb98963343",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user Fix \"she should be at the 2nd floor\" → an edit of the v2 frame (her own staircase), she starts on the second-floor landing at the head of the flight · v7 kept off: B left her mid-flight, A failed on Higgsfield → the landing named as the top of the frame, every step below her empty",
+ "product": false,
+ "risk_class": "stairs",
+ "first_frame": false,
+ "medias": [
+  "cae28c19-5ab2-4745-90a7-c5cb98963343",
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "R-07a frame v2 A (to check) — her own staircase from the hall",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__R-07a",
+   "role": "Image 1"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 2"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 3"
+  }
+ ]
+}

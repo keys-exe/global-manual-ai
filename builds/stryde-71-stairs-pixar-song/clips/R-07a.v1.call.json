@@ -1,0 +1,59 @@
+{
+ "beat": "R-07a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"I did. Chile, the first step, I didn't even have to hold the rail. Not the second. Not the third. All the way down. Both feet. Forwards.\": From this frame: she walks down the whole flight toward the lens, one step a second, facing forwards, hands off the rail, to the hall floor; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay sealed and her jaw still from the first frame to the last, her face holding the expression of the frame — a silent clip, nobody speaks or sings. One continuous walk down: right foot, then left, one step per tread, each foot flat on the runner, hands loose at her sides off the rail, a proud smile, to the hall floor; on her right knee the strap stays rigid and exactly as in the frame — black shell, two peaks, chrome slides; the stairs and photo wall stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut; no skipped step.",
+ "duration": 9,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_101336_11b8a6bb-8c4a-4739-86ce-0c779f413c53.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "I did. Chile, the first step, I didn't even have to hold the rail. Not the second. Not the third. All the way down. Both feet. Forwards.",
+ "motion_plan": "From this frame: she walks down the whole flight toward the lens, one step a second, facing forwards, hands off the rail, to the hall floor; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one step per second",
+ "subject_motion": "travel",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "stairs",
+ "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
+ "pilot": "confirmed",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image R-07a@v8A, job 11b8a6bb-8c4a-4739-86ce-0c779f413c53)"
+}

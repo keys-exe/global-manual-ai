@@ -1,0 +1,97 @@
+{
+ "beat": "M-06a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"First step. Pain gone. Just like that.\": Staircase of Image 2, tall 9:16. Image 1 is the strap. Image 3 is the woman — her face, silver twist-out, deep brown skin, pink cardigan, denim skirt and slippers exactly as in Image 3. Image 4 is the style.\nLow angle from two steps below her, looking up the flight, she faces the lens, sharp on the strap: her right slipper landing flat on the step's runner close to the lens, a brass rod beside it; her bare right knee above with the strap of Image 1 copied exactly — a black shell, two pointed peaks round a notch, a chrome slide at each end — 12 × 5 cm, a quarter of the frame wide, the kneecap's lower edge in its notch; above, her denim skirt, her pink cardigan, her hands loose at her sides, four chunky fingers and a thumb each, her face at the top, a proud closed-mouth smile, looking down at the step. Scale true to the set: the slipper as long as the tread is deep.\nIn frame: her, one strap, the steps; the rest as Image 2.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun from the door. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "First step. Pain gone. Just like that.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "P0-PROP-N plate (confirmed) — her hall and staircase",
+   "kind": "location"
+  },
+  {
+   "label": "R-07a frame v8 A (confirmed) — N on her own stairs in the day-three clothes: pink cardigan, denim skirt, tan slippers, silver twist-out (HT27)",
+   "kind": "character"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user Fix \"wrong person\" → N herself in frame: a low angle from two steps below, her strapped knee and slipper close to the lens, her cardigan, skirt and smiling face above (her confirmed R-07a frame as the woman, HT27)",
+ "product": true,
+ "risk_class": "stairs",
+ "first_frame": false,
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "377f63fd-7b11-4db2-a663-052e8c0637e8",
+  "11b8a6bb-8c4a-4739-86ce-0c779f413c53",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "P0-PROP-N plate (confirmed) — her hall and staircase",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 2"
+  },
+  {
+   "label": "R-07a frame v8 A (confirmed) — N on her own stairs in the day-three clothes: pink cardigan, denim skirt, tan slippers, silver twist-out (HT27)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__R-07a",
+   "role": "Image 3"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 4"
+  }
+ ]
+}

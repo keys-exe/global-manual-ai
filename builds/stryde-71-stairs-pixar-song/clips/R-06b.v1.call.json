@@ -1,0 +1,57 @@
+{
+ "beat": "R-06b",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"She said, Just put it on and walk down them stairs.\": From this frame: slides up the last few centimetres and stops at contact — one slide, about a second; camera RV sway — the virtual camera breathes in place, never travels. Both her hands slide the strap the last few centimetres up her right shin and stop with its top edge just under the kneecap; the strap stays rigid and exactly as in the frame — black shell, two peaks, chrome slides; her slipper stays on the floor; the skirt hem and the chair stay exactly as in the frame; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut; the strap never bends or twists.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_094300_bfd70fbd-0045-4aa2-b425-c2bcec07f98f.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "She said, \"Just put it on and walk down them stairs.\"",
+ "motion_plan": "From this frame: slides up the last few centimetres and stops at contact — one slide, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one slide",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image R-06b@fix3B, job bfd70fbd-0045-4aa2-b425-c2bcec07f98f)"
+}

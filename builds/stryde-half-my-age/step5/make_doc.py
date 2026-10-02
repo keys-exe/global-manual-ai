@@ -89,7 +89,7 @@ W("""
 | B2 | pale-blue quilted dressing gown, grey nightdress, slippers | — | same as B1 | — | — |
 | B3 | slate-grey cardigan, cream blouse, navy knee-length skirt | — | bottle-green crew-neck jumper, pale-blue oxford shirt, charcoal cords (user Fix 2026-10-01: not the Scene 2 outfit) | — | Sister: voice only |
 | B4 | dusty-rose silk-chiffon midi dress (no jacket) | — | navy suit, pale-blue shirt, tie | royal-blue lace midi dress (no cardigan) | bride in white |
-| B5 | sage-green button cardigan, white blouse, charcoal skirt above the knee | — | — | cobalt gilet, white top, navy knee-length shorts (sheet) | — |
+| B5 | chambray-blue shirt dress with a tie belt, ending above the knee, white plimsolls (OUT-N-B5 v2) | — | — | cobalt gilet, white top, navy knee-length shorts (sheet) | — |
 | A2 | camel trench, cream jumper, navy trousers, white trainers | — | brown cardigan, plain grey shirt | — | Cashier: supermarket polo |
 | A3 | terracotta jumper, navy wide-leg trousers, tan loafers | — | — | — | Friends 1 and 2: sheet outfits |
 | A4 | cream cardigan, coral blouse, oatmeal trousers | — | — | — | Sister: lilac fleece, floral blouse (sheet) |
