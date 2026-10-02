@@ -1,0 +1,55 @@
+{
+ "beat": "INS-SC13",
+ "build": "stryde-half-my-age",
+ "connector": "seedance",
+ "model": "bytedance/seedance-2-5",
+ "mode": 4,
+ "kind": "broll",
+ "take": "INS-SC13",
+ "insert_into": "SC13-T1",
+ "duration": 5,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "cast/N-HER_face.png",
+  "body/SC11/ingredients/OUT-N-A4_v1.png",
+  "plates/L-KITCHEN_v1.png",
+  "../../products/stryde/stryde_refs/package_open.jpg"
+ ],
+ "audios": [],
+ "generate_audio": false,
+ "dialogue": null,
+ "script_line": null,
+ "vo": "L071",
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": "the user 2026-10-02: \"you can add more videos if needed cause sometimes its noticable the slowdowns\"; \"this feels like an image only\" (L049); \"automate them just give met the final one\"",
+ "risks": [
+  {
+   "risk": "a third strap or the straps fall out",
+   "prevented_by": "'exactly two straps… stay in their tray', negatives"
+  },
+  {
+   "risk": "the box grows",
+   "prevented_by": "box photo, 'size of a paperback book'"
+  },
+  {
+   "risk": "a second action",
+   "prevented_by": "one slide, then the hands draw back"
+  }
+ ],
+ "scene": 13,
+ "title": "Insert · SC13-T1",
+ "taste": [
+  "HT02",
+  "HT17",
+  "HT18",
+  "HT22",
+  "HT23"
+ ],
+ "prompt": "INGREDIENTS. @image1 is Her: her face and hair only, a close crop — her clothes come from the outfit card, never from this picture. @image2 is an info card: Her's outfit on this day — the cream cardigan, coral blouse, oatmeal trousers; follow it exactly, and its caption strip never appears in the clip. @image3 is the place: her kitchen at the back of the house, seen from the hall doorway — the scrubbed pine table with rush-seat ladder-back chairs along the left under the side window, the sage-green cupboards and the white butler sink under the back window, the cream range cooker on the right, warm morning sun coming in, its walls, windows, furniture and light side exactly as shown. @image4 is the real product box, copied exactly: the small matte-black box with the grey stryde wordmark on its lid, and inside, two straps side by side in a black tray — two, never one, never three; its white background never appears in the clip. These references set who, where and what things ARE; the prose below sets the shot and what HAPPENS, and nothing in them is a shot to cut to. The look of a high-end live-action drama series: shot on a large-format digital cinema camera with spherical prime lenses, 24 frames per second with natural motion blur. Motivated low-key light from real sources in the scene — a window, a practical lamp, an overhead fixture — with a shadow side on every face, deep shadows that still hold detail and highlights that roll off softly; never flat and never evenly lit. Shallow depth of field on close shots, the room layered in depth behind. Natural, rich, restrained colour straight from the camera, real skin texture, worn costumes and a lived-in set. Restrained, specific performances. THE LOOK OF THIS FILM: A British family drama shot like a prestige drama series — an ordinary semi-detached house, a railway station, a wedding and a high-street café, watched with warmth and restraint. Lived-in domestic colour: cool blue-grey dusk and night in the rooms of the Before, lit by warm tungsten lamps; muted sage, navy, oatmeal and brick; warming to honeyed daylight, soft greens and cream in the After. Highlights roll off softly with a faint warm halation around bulbs and bright windows; clean modern glass with a gentle fall-off toward the frame edges. Captured with natural, neutral colour and a gentle contrast, ungraded — the grade is added later in the edit. Every frame of this film shares exactly this look. The look exactly as set out here, from the first frame to the last: same lens, same depth of field, same colours, same light direction and same optical texture. Nothing about the look changes across the clip. 24 frames per second with a 180-degree shutter, so moving hands and objects carry natural motion blur. One scene covered in 2 shots within a single take, all on the same side of the action line, with the same light, look and wardrobe throughout. Frame 1: the small black box with its lid on, on the pine table. The action carries straight across every cut: each shot picks up the movement exactly where the last one left it, in the same direction. THE SCENE SO FAR, a Sunday afternoon some weeks later, one continuous moment in her kitchen: warm afternoon light about 5000K from the window over the sink; on the scrubbed pine table, the small black box of the box photo with its lid off beside it, exactly two straps lying side by side in its tray. THE SHOT: an ECU, high three-quarter over the table: Her's hands, in the cream cardigan sleeves, slide the open box slowly across the wood toward the empty place opposite her, set for a guest with a cup and saucer, and leave it there, her fingers resting on the box's edge a moment before they draw back. The two straps stay in their tray. Faces are out of frame. That is all that happens. Camera on a tripod, framed and locked, with no drift, no sway and no reframe. The only camera life is one small operator pan or tilt of a few degrees to keep the subject in frame as they shift. It arrives a beat late and corrects only part of the way. The subject and the room carry all the other movement. Everything in frame keeps the exact form, proportion and count it has from the first frame to the last — nothing melts, merges, splits, grows or becomes something else. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend. Mass and momentum in all movement: nothing at uniform speed, nothing stops instantly; weight transfers first and the hands arrive last; hair, coat hems and bag straps lag and settle after the body stops. HER still carries exactly what this scene has done to them so far: the open box with two straps in front of her. None of it resets: it is the same as in the previous shot, except she has slid the box toward the guest's place. It holds in every frame. FOCUS: the box and the two straps are sharp; the far side of the table falls soft. The blur is optical: soft and round, never smeared. The clip carries no dialogue and no voice at all: nobody speaks. NEGATIVES: no third strap, no strap leaving the tray, no box growing, no face in frame, no microphone in frame, no boom pole, no film equipment, no crew in frame, no morphing, no warping, no melting, no merging, no splitting, no duplicate people, no background bending, no texture swimming, no flickering geometry, no sliding, no gliding, no drifting across the floor, no feet skating, no camera push, no zoom, no phone camera look, no smartphone processing, no HDR tone-mapping, no flat lifted shadows, no over-sharpening halos, no selfie framing, no front-camera distortion, no handheld phone jitter, no digital video look, no CGI look, no plastic skin, no beauty retouch, no diffusion filter glow on skin, no soft-focus beauty lighting, no flat frontal key, no unmotivated light, no applied vignette oval, no letterbox bars, no generated film grain, no slow motion, no speed ramp, no stock footage look, no commercial gloss, no perfect symmetrical face, no actor looking into the lens, no light direction changing within the scene, no colour changing between shots, no graded look, no wardrobe changing within the scene, no prop moving between shots unless shown moving, no character changing position between shots, no camera crossing the action line, no eyeline pointing the wrong way, no time of day changing within the scene, no different room, no extra people, no missing people, no tears, redness or sweat appearing or vanishing between shots, no hair or clothing state resetting between shots, no prop jumping to the other hand, no theatrical acting, no mugging, no soap-opera reactions, no exaggerated crying, no streaming tears, no glycerin tears, no frozen listener, no blank face while being spoken to, no reaction arriving before the line that causes it, no emotion resetting between shots, no two characters speaking at once unless the script overlaps them, no speech directed at the camera, no performing to the lens, no expression held for effect, no nodding along while speaking, no constant half-smile, no eyebrows rising on every stressed word, no hand gesture on every phrase, no head tilt on every line, no voice steadier or brighter than the face, no voice resetting between lines, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack."
+}

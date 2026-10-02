@@ -32,6 +32,17 @@ NOMUSIC = E.NOMUSIC
 VO_IN, VO_GAP, CLEAR = 0.3, 0.3, 0.15
 MIN_SPEED = 0.4            # slowest a stretch of picture may run (2.5x), with motion interpolation
 END_HOLD, END_FADE = 1.2, 1.5
+EDIT_V = 5                 # v5 (user 2026-10-02): cutaways for the slow-downs, L049 moving, the sister's "Sunday" whole
+ONSET = 0.4                # a slowed stretch ends this far before the next spoken line, so its first word plays at speed (v5)
+# v5 cutaways (edit/inserts.py): a take's slowed stretch slower than CUT_BELOW plays at its own speed with the insert cut
+# in at its middle for the time the slow-down bought; REPLACE swaps a take's picture from a time on (its sound kept)
+INS = B / "body" / "INSERTS"
+CUT_BELOW = 0.75
+INSERTS = {"SC03-SH06": INS / "INS-SC03-A_v1.mp4", "SC03-SH09-10": INS / "INS-SC03-B_v1.mp4", "SC04-T2": INS / "INS-SC04_v1.mp4",
+           "SC0506-T1": INS / "INS-SC05_v1.mp4", "SC07-T": INS / "INS-SC07_v1.mp4", "SC12-T3": INS / "INS-SC12_v1.mp4",
+           "SC13-T1": INS / "INS-SC13_v1.mp4"}
+INSERT_IN = {}             # the insert's in-point, when its first second isn't the best (set after judging each clip)
+REPLACE = {"SC08-T3": (6.0, INS / "INS-L049_v1.mp4", 0.0)}   # SHOT 2 (the strap on her knee) → INS-L049, Barbara's line kept
 WORDS = json.loads((VO_DIR / "words.json").read_text())
 
 # a narration line across several rows: the word each phrase starts on, and its row
@@ -49,7 +60,7 @@ OFF = {"L034": 10.0}
 # (the one swap of script order in the cut; told to the user)
 FOLLOW_ON = {"L039"}       # SC04-T2 marks its beats by time: L034 on its silent beat [10s-14s]
 # off-screen lines: (line, file, in, out, row, filter, offset in the row's shot or None = after the line before, vo_in)
-OFFSCREEN = [("L027", B / "voice" / "C4_voice_master.m4a", 0.0, 5.41, "SC03-SH09", "phone", 0.0, 0.25)]
+OFFSCREEN = [("L027", B / "voice" / "C4_voice_master_raw.m4a", 3.62, 9.55, "SC03-SH09", "phone", 0.0, 0.25)]
 # L009 is cut at its own pause around the commuter's reaction: "…the escalator is out of service." — "You're joking." —
 # "Please use the stairs." — "It's only stairs, love." (the announcement keeps running while he groans)
 HOOK_OFFSCREEN = {"HKC": [("L009#1", B / "voice" / "X1_voice_master_raw.mp4", 0.50, 4.30, "HKC-SH01", "pa", 0.0, 0.05),
@@ -243,7 +254,7 @@ def plan(takes, ending=True):
                 if e + CLEAR > gap_end:  # the next spoken line would start under it: slow the speech-free picture before it
                     prev_b = max([b for a, b in sp if b <= na] + [0.0])
                     lo = max(prev_b, min(ref if ref is not None else ts, it["off"] if it["off"] is not None else ts))
-                    stretch(w, k, lo, na - 0.05, e + CLEAR - gap_end, report)
+                    stretch(w, k, lo, na - ONSET, e + CLEAR - gap_end, report)
             it["at"] = s; prev_end = e; prev_item = it
             report.append(f"{it['line']:8} {k['beat']:13} at {s:7.2f}s ({it['dur']:.2f}s)" + (f"  +{s - want:.2f}s after its mark" if s - want > 0.05 else ""))
         end = t + w.out(k["dur"])
@@ -259,6 +270,10 @@ def plan(takes, ending=True):
             if need > 0:
                 last_b = max([b for a, b in sp] + [0.0])
                 stretch(w, k, max(last_b, k["dur"] - 4.0), k["dur"], need, report)
+        slow = [st for st in w.st if st[2] > 0.01 and (st[1] - st[0]) / (st[1] - st[0] + st[2]) < CUT_BELOW]
+        if slow and k["beat"] in INSERTS and INSERTS[k["beat"]].exists():
+            k["insert"] = tuple(max(slow, key=lambda st: st[2]))
+            report.append(f"  cutaway {INSERTS[k['beat']].stem} into {k['beat']} at {k['insert'][0]:.2f}-{k['insert'][1]:.2f}s for {k['insert'][2]:.2f}s")
         k["out_dur"] = w.out(k["dur"])
         t += k["out_dur"]
     return t, report
@@ -270,6 +285,10 @@ def render_take(k, name):
     TK.mkdir(parents=True, exist_ok=True)
     import hashlib
     key = "_".join(f"{a:.2f}-{b:.2f}-{x:.2f}" for a, b, x in k["warp"].st) or "plain"
+    if k.get("insert"):
+        key += f"_ins{INSERT_IN.get(k['beat'], 0.3)}_{INSERTS[k['beat']].stat().st_mtime:.0f}"
+    if k["beat"] in REPLACE:
+        key += f"_rep{REPLACE[k['beat']]}"
     out = TK / f"{k['beat']}_v{k['v']}__{hashlib.md5(key.encode()).hexdigest()[:8]}.mp4"
     k["render"] = out
     if out.exists():
@@ -287,13 +306,35 @@ def render_take(k, name):
     src = NOMUSIC / f"{k['path'].stem}.nomusic.mp4"
     has_a = k["audio"] and src.exists()
     args = ["-i", str(k["path"])] + (["-i", str(src)] if has_a else [])
+    ins = INSERTS.get(k["beat"]) if k.get("insert") else None
+    rep = REPLACE.get(k["beat"])
+    if ins is not None:
+        args += ["-i", str(ins)]; ii = len(args) // 2 - 1
+    if rep is not None:
+        args += ["-i", str(rep[1])]; ri = len(args) // 2 - 1
+    pics = []   # (input, from, to, speed): the picture pieces in order
+    for a, b, sp in segs:
+        if ins is not None and sp < 0.999 and abs(a - k["insert"][0]) < 1e-6:
+            m, need = (a + b) / 2, (b - a) / sp - (b - a)
+            i0 = INSERT_IN.get(k["beat"], 0.3)
+            have = H.info(ins)[0] - i0 - 0.05
+            pics += [(0, a, m, 1.0), (ii, i0, i0 + min(need, have), 1.0 if need <= have else have / need), (0, m, b, 1.0)]
+        elif rep is not None and b > rep[0]:
+            r0 = rep[0]
+            if a < r0:
+                pics.append((0, a, r0, sp)); a = r0
+            o = rep[2] + (a - r0)
+            pics.append((ri, o, o + (b - a), sp * min(1.0, (H.info(rep[1])[0] - o - 0.02) / (b - a))))
+        else:
+            pics.append((0, a, b, sp))
     fc, vl, al = [], "", ""
-    for j, (a, b, sp) in enumerate(segs):
-        v = (f"[0:v]trim={a:.4f}:{b:.4f},setpts=PTS-STARTPTS,scale=720:1280:force_original_aspect_ratio=decrease,"
+    for j, (n_in, a, b, sp) in enumerate(pics):
+        v = (f"[{n_in}:v]trim={a:.4f}:{b:.4f},setpts=PTS-STARTPTS,scale=720:1280:force_original_aspect_ratio=decrease,"
              f"pad=720:1280:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=24")
         if sp < 0.999:
             v += f",setpts=PTS/{sp:.5f},minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1"
         fc.append(v + f",format=yuv420p[v{j}]"); vl += f"[v{j}]"
+    for j, (a, b, sp) in enumerate(segs):
         if has_a:
             tempo, r = [], sp
             while r < 0.5:
@@ -304,8 +345,8 @@ def render_take(k, name):
         else:
             fc.append(f"anullsrc=r=48000:cl=stereo,atrim=0:{(b - a) / sp:.4f}[a{j}]")
         al += f"[a{j}]"
-    n = len(segs)
-    fc.append(f"{''.join(f'[v{j}][a{j}]' for j in range(n))}concat=n={n}:v=1:a=1[v][a]")
+    fc.append(f"{vl}concat=n={len(pics)}:v=1:a=0[v]")
+    fc.append(f"{al}concat=n={len(segs)}:v=0:a=1[a]")
     subprocess.run([FF, "-y", "-hide_banner", "-loglevel", "error", *args, "-filter_complex", ";".join(fc), "-map", "[v]", "-map", "[a]",
                     "-c:v", "libx264", "-crf", "15", "-preset", "medium", "-r", "24", "-c:a", "pcm_s16le", str(out.with_suffix(".mkv"))], check=True)
     out.with_suffix(".mkv").rename(out.with_suffix(".mkv.done"))
@@ -372,19 +413,20 @@ def build(order, name, fixed=None, offscreen=(), ending=True, dry=False):
         vf += f",fade=t=out:st={T - END_FADE:.3f}:d={END_FADE}"
         af += f",afade=t=out:st={T - END_FADE:.3f}:d={END_FADE}"
     fc = mix + fc + [vf + "[vg]", af + "[am]"]
-    out = OUT / f"{name}_v4.mp4"
+    out = OUT / f"{name}_v{EDIT_V}.mp4"
     subprocess.run([FF, "-y", "-hide_banner", "-loglevel", "error", *args, "-filter_complex", ";".join(fc), "-map", "[vg]", "-map", "[am]",
                     "-c:v", "libx264", "-crf", "17", "-preset", "medium", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
                     "-movflags", "+faststart", str(out)], check=True)
-    sheet = [f"# {name} edit v4 — {T:.1f}s", "", "| Take | v | At | Length | Shown for | Slowed stretches |", "|---|---|---|---|---|---|"]
+    sheet = [f"# {name} edit v{EDIT_V} — {T:.1f}s", "", "| Take | v | At | Length | Shown for | Slowed stretches |", "|---|---|---|---|---|---|"]
     sheet += [f"| {k['beat']} | v{k['v']} | {k['at']:.2f}s | {k['dur']:.2f}s | {k['out_dur']:.2f}s | "
               + ("; ".join(f"{a:.2f}-{b:.2f}s ×{(b - a) / (b - a + x):.2f}" for a, b, x in k['warp'].st if x > 0.01) or "—") + " |" for k in takes]
     sheet += ["", "## Narration and off-screen lines", ""] + [f"- {r}" for r in report]
-    (OUT / f"{name}_v4.md").write_text("\n".join(sheet) + "\n")
-    json.dump([{"line": it["line"], "at": round(it["at"], 3), "dur": round(it["dur"], 3), "take": it["take"]["beat"]} for it in items],
-              open(OUT / f"{name}_v4.items.json", "w"), indent=1)
+    (OUT / f"{name}_v{EDIT_V}.md").write_text("\n".join(sheet) + "\n")
+    json.dump([{"line": it["line"], "at": round(it["at"], 3), "dur": round(it["dur"], 3), "take": it["take"]["beat"],
+                "file": str(it["file"]), "a": round(it["a"], 3), "b": round(it["b"], 3), "flt": it["flt"]} for it in items],
+              open(OUT / f"{name}_v{EDIT_V}.items.json", "w"), indent=1)
     json.dump([{"beat": k["beat"], "at": round(k["at"], 3), "out_dur": round(k["out_dur"], 3)} for k in takes],
-              open(OUT / f"{name}_v4.takes.json", "w"), indent=1)
+              open(OUT / f"{name}_v{EDIT_V}.takes.json", "w"), indent=1)
     print("\n".join(report)); print(out, f"{H.info(out)[0]:.2f}s")
     return out
 
