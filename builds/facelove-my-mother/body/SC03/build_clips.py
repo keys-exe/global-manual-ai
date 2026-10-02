@@ -50,3 +50,38 @@ if __name__ == "__main__":
     (H / "SC03-T1.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
     (H / "SC03-T1.prompt.txt").write_text(PROMPT)
     print("SC03-T1", len(PROMPT), "chars")
+
+# Fix round 1 (user's board Fix, 2026-10-02: "VO are missing"): the clip was silent by plan with L008 meant for the edit; the user wants the
+# narration in it. VO-T1-L008 speaks 0.0–16.0 s (16.27 s file) and v1 is 15.04 s, so the last words would fall off the picture. A take stays
+# ≤ 15 s, so v1 is extended forward 4 s on Seedance (mode video_extension, the same push carried on), then VO-T1-L008 is laid in from 0.0 s.
+EXT_START = "Susan against the door, eyes open, in close-up, the camera still creeping in"
+EXT_END = "Susan against the door, eyes open, a little closer, very still"
+EXT_PROMPT = " ".join([
+    S1.manifest([("@video1", "is the shot to continue: Susan, alone against the shut back door in the dark hall, the party glow behind the glass, the camera creeping in on her face; her face, hair, blouse, the hall and the light exactly as shown.")]),
+    S1.SERIES,
+    "Continue this exact shot forward with no cut: the same camera, the same lens, the same light and the same slow level dolly push toward her face, still creeping in. "
+    "Frame 1: " + EXT_START + ". Susan stays against the shut door, her eyes open and level on nothing across the dark hall, her jaw set; she breathes once, slowly; "
+    "nothing else moves. Last frame: " + EXT_END + ".",
+    S1.INHERIT,
+    "One continuous shot, never cut and never restarted, 4s, in one place with the same light, look and wardrobe throughout.",
+    S1.F1(15), S1.PHYS,
+    S1.state("SUSAN", "the dusty-blue blouse, her back against the door, eyes open, jaw set", "nothing"),
+    "FOCUS: Susan's nearest eye sharp throughout. The blur is optical: soft and round, never smeared.",
+    S1.negs(S1.NEG_EQUIP, S1.NEG_MORPH, "no one speaking, no Susan crying, no tears, no hall light switched on, no other person in the hall, no Susan stepping away from the door",
+            S1.NEG_FILM, S1.NEG_SCENECUT, S1.NEG_DRAMA, S1.NEG_SOUND)])
+
+if __name__ == "__main__":
+    ext = {"beat": "SC03-T1", "build": "facelove-my-mother", "connector": "seedance", "model": "seedance_2_5", "mode": 4, "kind": "take", "prompt": EXT_PROMPT,
+           "take": "SC03-T1", "covers": ["SC03-SH02"], "start_pos": EXT_START, "end_pos": EXT_END, "duration": 4, "resolution": "720p", "aspect_ratio": "9:16",
+           "seedance_mode": "video_extension", "extension_mode": "forward", "extends_job": "07ad9d95-8f9c-4594-ae4a-09a03bdcbbec",
+           "start_image": None, "ingredients_approved": True, "files": ["body/SC03/SC03-T1_v1.mp4"], "audios": [], "generate_audio": False,
+           "dialogue": None, "script_line": None, "pace": "unhurried", "subject_motion": "still", "prefer_multi_shots": "false", "generation": 2,
+           "user_go": "board Fix (user, 2026-10-02): VO are missing", "fault": "VO are missing",
+           "fix_note": "plan fault: the clip was made silent with narration L008 left for the edit, and L008 runs 16.0 s against a 15.04 s clip → extend v1 forward 4 s (same F1 push carried on, silent) and lay VO-T1-L008 in from 0.0 s so every word sits on picture",
+           "risks": [{"risk": "the extension jumps or changes the look", "prevented_by": "video_extension forward from v1, 'continue this exact shot forward with no cut', INHERIT"},
+                     {"risk": "she speaks or mouths the narration", "prevented_by": "silent, 'no one speaking'"},
+                     {"risk": "the push stops or drifts", "prevented_by": "F1 carried on at 15 cm, level"}],
+           "scene": 3, "title": "Scene 3 · T1 — extension (+4 s) for the narration", "taste": ["HT17", "HT18", "HT22", "HT23", "HT25"]}
+    (H / "SC03-T1.ext.call.json").write_text(json.dumps(ext, indent=1, ensure_ascii=False))
+    (H / "SC03-T1.ext.prompt.txt").write_text(EXT_PROMPT)
+    print("SC03-T1 ext", len(EXT_PROMPT), "chars")
