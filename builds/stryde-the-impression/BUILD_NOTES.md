@@ -48,6 +48,13 @@
     - the card attached to every take.
   - SC01-T1…T5 are on `regenerate` and are sent once the card is confirmed. Each v1 moves to Old when its v2 lands.
 
+- 2026-10-02 **"fix those"**: the board held INFO-TABLE-SC01 (confirmed) and SC01-T1…T5 on regenerate with the consistency note.
+  - **Hook A v2 rendered:** 3,024 Kie cr; gen 2, the user's message is the go.
+  - **Music check:** T1, T2, T3 and T5 CLEAN. T4 had MUSIC again; it was cleaned, and the raw clip went to Old.
+  - **The v1s moved to Old** (server-side copy, then deleted from Current).
+  - **Seen on extraction, written on each card as `seen`:** the table is cleared and holds; Hazel's window holds; Oscar walks the sideboard side. But T1's wide has Roy in the near-end chair, back to camera, and T2's wide has Emma at the far end and Hazel on the side.
+  - The wides are where seats drift. If the user Fixes them, the next step is a third generation (needs their go, §22X). Option: start each wide from behind the empty near-end chair and name each person's seat by their clothes.
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 price (£30 for two) · F2 "two centimetres" · F3 "replace them at seventy-one" · F6 "Facebook copies" · F7 getstryde.co · F11 strap on under trousers vs FP13 (proposed: bare knee in her nightdress, trousers on after) · F12 one hook → one film · F15 close without the product in hand.
 
