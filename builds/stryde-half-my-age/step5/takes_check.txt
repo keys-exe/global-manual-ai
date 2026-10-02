@@ -1,0 +1,94 @@
+VO-timed takes (V7.93.0): film runs 402s in 57 takes
+  HKA-SH01     5s  (VO 0.0s + holds 4.35s)
+  HKA-SH02     4s  (VO 0.0s + holds 2.68s)
+  HKA-SH03     4s  (VO 0.0s + holds 3.0s)
+  HKA-SH04     4s  (VO 0.0s + holds 2.27s)
+  HKA-SH05     7s  (VO 6.6s + holds 0.0s)
+  HKB-SH01     4s  (VO 0.0s + holds 2.68s)
+  HKB-SH02     4s  (VO 0.0s + holds 3.0s)
+  HKB-SH03     4s  (VO 0.0s + holds 2.27s)
+  HKB-SH04     4s  (VO 0.0s + holds 2.27s)
+  HKB-SH05     7s  (VO 6.6s + holds 0.0s)
+  HKC-SH01     6s  (VO 0.0s + holds 5.6s)
+  HKC-SH02     4s  (VO 0.0s + holds 2.27s)
+  HKC-SH03     4s  (VO 0.0s + holds 3.0s)
+  HKC-SH04     4s  (VO 0.0s + holds 2.27s)
+  HKC-SH05     7s  (VO 6.6s + holds 0.0s)
+  HKE-SH01     4s  (VO 0.0s + holds 3.0s)
+  HKE-SH02     4s  (VO 0.0s + holds 3.1s)
+  HKE-SH03     4s  (VO 0.0s + holds 2.5s)
+  HKE-SH04     4s  (VO 0.0s + holds 2.27s)
+  HKE-SH05     6s  (VO 5.22s + holds 0.0s)
+  SC02-SH01    6s  (VO 0.0s + holds 5.18s)
+  SC02-SH02    4s  (VO 0.0s + holds 2.27s)
+  SC02-SH03    5s  (VO 4.5s + holds 0.0s)
+  SC02-SH04    4s  (VO 1.84s + holds 0.0s)
+  SC02-SH05    4s  (VO 0.0s + holds 1.43s)
+  SC02-SH06    4s  (VO 0.0s + holds 1.43s)
+  SC02-SH07    7s  (VO 6.68s + holds 0.0s)
+  SC03-SH01    4s  (VO 3.22s + holds 0.0s)
+  SC03-SH02    4s  (VO 2.66s + holds 0.0s)
+  SC03-SH03    4s  (VO 2.9s + holds 0.0s)
+  SC03-SH04    4s  (VO 1.04s + holds 0.0s)
+  SC03-SH05    4s  (VO 1.66s + holds 0.0s)
+  SC03-SH06    8s  (VO 7.84s + holds 0.0s)
+  SC03-SH07-08   5s  (VO 0.0s + holds 4.11s)  conversation
+  SC03-SH09-10  13s  (VO 5.48s + holds 6.85s)
+  SC04-T1      9s  (VO 8.56s + holds 0.0s)
+  SC04-T2     15s  (VO 6.68s + holds 7.64s)  conversation
+  SC05-T1      8s  (VO 5.2s + holds 2.68s)
+  SC0506-T1   22s  (VO 7.06s + holds 14.05s)  conversation
+  SC07-T      20s  (VO 14.96s + holds 4.5s)
+  SC08-T1      9s  (VO 0.0s + holds 8.93s)
+  SC08-T2     13s  (VO 0.0s + holds 12.04s)  conversation
+  SC08-T3     10s  (VO 0.0s + holds 9.54s)  conversation
+  SC09-T1      9s  (VO 8.12s + holds 0.0s)
+  SC09-T2      6s  (VO 5.7s + holds 0.0s)
+  SC09-T3      4s  (VO 3.0s + holds 0.0s)
+  SC10-T1      6s  (VO 5.92s + holds 0.0s)
+  SC10-T2      5s  (VO 4.36s + holds 0.0s)
+  SC10-T3      8s  (VO 7.66s + holds 0.0s)
+  SC10-T4      9s  (VO 3.88s + holds 4.53s)  conversation
+  SC10-T5      4s  (VO 3.82s + holds 0.0s)
+  SC11-T1      5s  (VO 0.0s + holds 4.53s)  conversation
+  SC12-T1     16s  (VO 6.76s + holds 9.11s)  conversation
+  SC12-T2      9s  (VO 0.0s + holds 8.24s)  conversation
+  SC12-T3     16s  (VO 15.46s + holds 0.0s)
+  SC13-T1     17s  (VO 16.54s + holds 0.0s)
+  SC13-T2      8s  (VO 3.11s + holds 4.54s)  conversation
+FAIL  VO_LONG SC07-SH01, SC07-SH02, SC07-SH03, SC07-SH04, SC07-SH05, SC07-SH06  — take SC07-T needs 19.5s for its VO and holds (> 15s) — split it with split: "length" at the sentence end after 'feet.' (99.68s), end_pos -> start_pos
+FAIL  VO_LONG SC12-SH08, SC12-SH09  — take SC12-T3 needs 15.5s for its VO and holds (> 15s) — split it with split: "length" at the sentence end after 'thing.' (165.34s), end_pos -> start_pos
+FAIL  VO_LONG SC13-SH01, SC13-SH02  — take SC13-T1 needs 16.5s for its VO and holds (> 15s) — split it with split: "length" at the sentence end after 'week.' (184.66s), end_pos -> start_pos
+FAIL  TAKE+ SC05-SH07, SC06-SH01  — take SC0506-T1 crosses a scene change — a take is one moment in one place
+FAIL  TAKE+ SC07-SH01, SC07-SH02, SC07-SH03, SC07-SH04, SC07-SH05, SC07-SH06  — take SC07-T runs 20s (> 15s) — split it with split: "length" where nobody moves, end_pos -> start_pos
+FAIL  TAKE+ SC12-SH08, SC12-SH09  — take SC12-T3 runs 16s (> 15s) — split it with split: "length" where nobody moves, end_pos -> start_pos
+FAIL  TAKE+ SC13-SH01, SC13-SH02  — take SC13-T1 runs 17s (> 15s) — split it with split: "length" where nobody moves, end_pos -> start_pos
+FAIL  TAKE+ SC13-SH04, SC13-SH05  — take SC13-T2 crosses a location change — a take is one moment in one place
+FAIL  JOIN  HKA-SH01, HKA-SH02  — HKA-SH02 carries straight on from HKA-SH01 (same scene, place and day) but starts a new take — put it in take HKA-SH01, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKA-SH02, HKA-SH03  — HKA-SH03 carries straight on from HKA-SH02 (same scene, place and day) but starts a new take — put it in take HKA-SH02, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKA-SH04, HKA-SH05  — HKA-SH05 carries straight on from HKA-SH04 (same scene, place and day) but starts a new take — put it in take HKA-SH04, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKB-SH01, HKB-SH02  — HKB-SH02 carries straight on from HKB-SH01 (same scene, place and day) but starts a new take — put it in take HKB-SH01, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKB-SH02, HKB-SH03  — HKB-SH03 carries straight on from HKB-SH02 (same scene, place and day) but starts a new take — put it in take HKB-SH02, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKB-SH03, HKB-SH04  — HKB-SH04 carries straight on from HKB-SH03 (same scene, place and day) but starts a new take — put it in take HKB-SH03, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKB-SH04, HKB-SH05  — HKB-SH05 carries straight on from HKB-SH04 (same scene, place and day) but starts a new take — put it in take HKB-SH04, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKC-SH01, HKC-SH02  — HKC-SH02 carries straight on from HKC-SH01 (same scene, place and day) but starts a new take — put it in take HKC-SH01, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKC-SH02, HKC-SH03  — HKC-SH03 carries straight on from HKC-SH02 (same scene, place and day) but starts a new take — put it in take HKC-SH02, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKC-SH03, HKC-SH04  — HKC-SH04 carries straight on from HKC-SH03 (same scene, place and day) but starts a new take — put it in take HKC-SH03, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKC-SH04, HKC-SH05  — HKC-SH05 carries straight on from HKC-SH04 (same scene, place and day) but starts a new take — put it in take HKC-SH04, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKE-SH01, HKE-SH02  — HKE-SH02 carries straight on from HKE-SH01 (same scene, place and day) but starts a new take — put it in take HKE-SH01, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKE-SH02, HKE-SH03  — HKE-SH03 carries straight on from HKE-SH02 (same scene, place and day) but starts a new take — put it in take HKE-SH02, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKE-SH03, HKE-SH04  — HKE-SH04 carries straight on from HKE-SH03 (same scene, place and day) but starts a new take — put it in take HKE-SH03, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  HKE-SH04, HKE-SH05  — HKE-SH05 carries straight on from HKE-SH04 (same scene, place and day) but starts a new take — put it in take HKE-SH04, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  SC02-SH01, SC02-SH02  — SC02-SH02 carries straight on from SC02-SH01 (same scene, place and day) but starts a new take — put it in take SC02-SH01, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  SC02-SH03, SC02-SH04  — SC02-SH04 carries straight on from SC02-SH03 (same scene, place and day) but starts a new take — put it in take SC02-SH03, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  SC02-SH05, SC02-SH06  — SC02-SH06 carries straight on from SC02-SH05 (same scene, place and day) but starts a new take — put it in take SC02-SH05, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  SC03-SH01, SC03-SH02  — SC03-SH02 carries straight on from SC03-SH01 (same scene, place and day) but starts a new take — put it in take SC03-SH01, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  SC03-SH06, SC03-SH07  — SC03-SH07 carries straight on from SC03-SH06 (same scene, place and day) but starts a new take — put it in take SC03-SH06, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  SC03-SH08, SC03-SH09  — SC03-SH09 carries straight on from SC03-SH08 (same scene, place and day) but starts a new take — put it in take SC03-SH07-08, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  SC04-SH02, SC04-SH03  — SC04-SH03 carries straight on from SC04-SH02 (same scene, place and day) but starts a new take — put it in take SC04-T1, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  SC05-SH03, SC05-SH04  — SC05-SH04 carries straight on from SC05-SH03 (same scene, place and day) but starts a new take — put it in take SC05-T1, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  JOIN  SC08-SH01, SC08-SH02  — SC08-SH02 carries straight on from SC08-SH01 (same scene, place and day) but starts a new take — put it in take SC08-T1, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  SPLIT SC08-SH03, SC08-SH04  — split "length" but takes SC08-T2 and SC08-T3 together run 23s (<= 30s, a conversation) — one scene in one place is one take: merge them (rows past 4 shots join the shot before)
+FAIL  JOIN  SC12-SH03, SC12-SH04  — SC12-SH04 carries straight on from SC12-SH03 (same scene, place and day) but starts a new take — put it in take SC12-T1, or name the split reason (length · pinned · insert · intercut · user)
+FAIL  SPLIT SC12-SH07, SC12-SH08  — split "length" but takes SC12-T2 and SC12-T3 together run 25s (<= 30s, a conversation) — one scene in one place is one take: merge them (rows past 4 shots join the shot before)
+TAKES FAIL (35)

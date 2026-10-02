@@ -1,6 +1,6 @@
 {
  "scene": "MUS-BODY-A",
- "length_s": 122.82,
+ "length_s": 128.25,
  "register": "MUS-OPEN",
  "theme": [
   "intimate British film score",
@@ -40,7 +40,7 @@
   {
    "name": "Tried everything (SC03)",
    "start": 36.32,
-   "end": 84.17,
+   "end": 89.6,
    "energy": "low",
    "register": "MUS-EXPOSE",
    "styles": [
@@ -51,8 +51,8 @@
   },
   {
    "name": "The wedding, Barbara seen (SC04\u2013SC05)",
-   "start": 84.17,
-   "end": 122.82,
+   "start": 89.6,
+   "end": 128.25,
    "energy": "mid",
    "register": "MUS-OPEN",
    "styles": [
@@ -62,5 +62,5 @@
    ]
   }
  ],
- "fix_note": "v1 check FAIL: CLICK, DROPOUT, ENERGY order, TEMPO double (ticking percussion) -> no percussion, a continuous sustained bed, soft attacks; section loudness also set in the mix"
+ "fix_note": "v2: re-timed to the edit v4 (the product's first frame moved to 126.25 s: the sister's phone line and the room made for narration); v1 cue's no-percussion, continuous-bed changes kept"
 }

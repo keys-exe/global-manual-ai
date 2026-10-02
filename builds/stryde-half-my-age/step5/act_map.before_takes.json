@@ -47,11 +47,7 @@
    "L-STATION",
    "VOICE-C2"
   ],
-  "mirror_of": null,
-  "take": "HKA-SH01",
-  "start_pos": "the daughter at the top of the station steps, hand reaching for the rail; Her three steps below, bag in hand",
-  "end_pos": "Her a step lower, the daughter still at the top by the rail",
-  "dialogue": "Mum… the next one’s in ten minutes, we can…"
+  "mirror_of": null
  },
  {
   "beat": "HKA-SH02",
@@ -99,11 +95,7 @@
    "L-STATION",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "HKA-SH02",
-  "start_pos": "Her three steps down, bag in her right hand, turning her head back up to her daughter",
-  "end_pos": "Her facing down the steps again, still walking, left hand free of the rail",
-  "dialogue": "Not waiting ten minutes, love."
+  "mirror_of": null
  },
  {
   "beat": "HKA-SH03",
@@ -149,11 +141,7 @@
    "N",
    "L-STATION"
   ],
-  "mirror_of": null,
-  "take": "HKA-SH03",
-  "start_pos": "Her on the last steps, brisk, in profile",
-  "end_pos": "Her stepping in through the open train doors",
-  "hold_s": 3.0
+  "mirror_of": null
  },
  {
   "beat": "HKA-SH04",
@@ -200,11 +188,7 @@
    "L-CARRIAGE",
    "VOICE-C2"
   ],
-  "mirror_of": null,
-  "take": "HKA-SH04",
-  "start_pos": "the daughter dropping into the seat opposite, catching her breath",
-  "end_pos": "the daughter seated, staring across the table at her mother",
-  "dialogue": "When did that happen?"
+  "mirror_of": null
  },
  {
   "beat": "HKA-SH05",
@@ -253,11 +237,7 @@
    "C2",
    "L-CARRIAGE"
   ],
-  "mirror_of": null,
-  "take": "HKA-SH05",
-  "start_pos": "Her settled by the window, bag on her lap",
-  "end_pos": "Her looking out of the window with a small private smile",
-  "vo": "I’m 71 and I take the stairs faster than women half my age. Six weeks ago, I couldn’t."
+  "mirror_of": null
  },
  {
   "beat": "HKB-SH01",
@@ -305,11 +285,7 @@
    "L-SHOPCENTRE",
    "VOICE-C2"
   ],
-  "mirror_of": null,
-  "take": "HKB-SH01",
-  "start_pos": "the daughter with shopping bags on both arms, by the glass lift and its queue",
-  "end_pos": "the daughter nodding at the lift",
-  "dialogue": "Mum, the lift’s just there."
+  "mirror_of": null
  },
  {
   "beat": "HKB-SH02",
@@ -357,11 +333,7 @@
    "L-SHOPCENTRE",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "HKB-SH02",
-  "start_pos": "Her three steps up the wide staircase, a full bag in each hand",
-  "end_pos": "Her climbing on, glancing back over her shoulder",
-  "hold_s": 3.0
+  "mirror_of": null
  },
  {
   "beat": "HKB-SH03",
@@ -409,11 +381,7 @@
    "L-SHOPCENTRE",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "HKB-SH03",
-  "start_pos": "Her mid-climb, bags in hand, looking back over her shoulder",
-  "end_pos": "Her climbing on without breaking stride",
-  "dialogue": "So are the stairs."
+  "mirror_of": null
  },
  {
   "beat": "HKB-SH04",
@@ -460,11 +428,7 @@
    "L-SHOPCENTRE",
    "VOICE-C2"
   ],
-  "mirror_of": null,
-  "take": "HKB-SH04",
-  "start_pos": "the daughter on the last steps, puffing, bags sagging",
-  "end_pos": "the daughter at the top step looking at her mother",
-  "dialogue": "When did that happen?"
+  "mirror_of": null
  },
  {
   "beat": "HKB-SH05",
@@ -513,11 +477,7 @@
    "C2",
    "L-SHOPCENTRE"
   ],
-  "mirror_of": null,
-  "take": "HKB-SH05",
-  "start_pos": "Her at the top rail, bags down by her feet",
-  "end_pos": "Her breathing easily, eyebrows up, the daughter beside her",
-  "vo": "I’m 71 and I take the stairs faster than women half my age. Six weeks ago, I couldn’t."
+  "mirror_of": null
  },
  {
   "beat": "HKC-SH01",
@@ -564,12 +524,7 @@
    "VOICE-X1",
    "VOICE-X2"
   ],
-  "mirror_of": null,
-  "take": "HKC-SH01",
-  "start_pos": "a commuter in his 20s by the stopped escalator, looking at his phone",
-  "end_pos": "the commuter looking up, groaning",
-  "dialogue": "You’re joking.",
-  "hold_s": 5.6
+  "mirror_of": null
  },
  {
   "beat": "HKC-SH02",
@@ -618,11 +573,7 @@
    "L-ESCALATOR",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "HKC-SH02",
-  "start_pos": "Her walking past the commuter toward the fixed stairs, handbag on her shoulder",
-  "end_pos": "Her foot on the first step, hands free",
-  "dialogue": "It’s only stairs, love."
+  "mirror_of": null
  },
  {
   "beat": "HKC-SH03",
@@ -669,11 +620,7 @@
    "N",
    "L-ESCALATOR"
   ],
-  "mirror_of": null,
-  "take": "HKC-SH03",
-  "start_pos": "Her low on the long fixed staircase, commuters bunching at the foot",
-  "end_pos": "Her well ahead, climbing at an even pace",
-  "hold_s": 3.0
+  "mirror_of": null
  },
  {
   "beat": "HKC-SH04",
@@ -720,11 +667,7 @@
    "L-ESCALATOR",
    "VOICE-C2"
   ],
-  "mirror_of": null,
-  "take": "HKC-SH04",
-  "start_pos": "the daughter at the bottom of the stairs, coffee in hand",
-  "end_pos": "the daughter staring up after her mother",
-  "dialogue": "When did that happen?"
+  "mirror_of": null
  },
  {
   "beat": "HKC-SH05",
@@ -771,11 +714,7 @@
    "N",
    "L-ESCALATOR"
   ],
-  "mirror_of": null,
-  "take": "HKC-SH05",
-  "start_pos": "Her on the last steps near the top",
-  "end_pos": "Her at the top, turned back to look down at her daughter",
-  "vo": "I’m 71 and I take the stairs faster than women half my age. Six weeks ago, I couldn’t."
+  "mirror_of": null
  },
  {
   "beat": "HKE-SH01",
@@ -823,11 +762,7 @@
    "L-LIVING",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "HKE-SH01",
-  "start_pos": "Her kneeling on the living-room carpet picking up jigsaw pieces",
-  "end_pos": "Her kneeling, the jigsaw box in her hands",
-  "hold_s": 3.0
+  "mirror_of": null
  },
  {
   "beat": "HKE-SH02",
@@ -876,11 +811,7 @@
    "P-HOUSE",
    "VOICE-C2"
   ],
-  "mirror_of": null,
-  "take": "HKE-SH02",
-  "start_pos": "the daughter coming through the doorway",
-  "end_pos": "the daughter reaching a hand down toward her mother",
-  "dialogue": "Mum, wait, I’ll give you a…"
+  "mirror_of": null
  },
  {
   "beat": "HKE-SH03",
@@ -930,11 +861,7 @@
    "L-LIVING",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "HKE-SH03",
-  "start_pos": "Her kneeling with one foot flat, the box in her hands",
-  "end_pos": "Her standing at full height, box in hand, before the hand arrives",
-  "hold_s": 2.5
+  "mirror_of": null
  },
  {
   "beat": "HKE-SH04",
@@ -984,11 +911,7 @@
    "L-LIVING",
    "VOICE-C2"
   ],
-  "mirror_of": null,
-  "take": "HKE-SH04",
-  "start_pos": "the daughter with her hand outstretched",
-  "end_pos": "the daughter, hand still out, staring",
-  "dialogue": "...When did that happen?"
+  "mirror_of": null
  },
  {
   "beat": "HKE-SH05",
@@ -1035,11 +958,7 @@
    "L-LIVING",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "HKE-SH05",
-  "start_pos": "Her holding the jigsaw box by the mantel",
-  "end_pos": "the box on the mantel, Her giving her daughter a small look",
-  "vo": "I’m 71. Six weeks ago I couldn’t get up off my own floor."
+  "mirror_of": null
  },
  {
   "beat": "SC02-SH01",
@@ -1088,11 +1007,7 @@
    "P-HOUSE",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "SC02-SH01",
-  "start_pos": "Her at the top of the stairs holding the newel post",
-  "end_pos": "Her still at the top, calling down",
-  "dialogue": "Just leave it by the stairs, love. I’ll get it later."
+  "mirror_of": null
  },
  {
   "beat": "SC02-SH02",
@@ -1141,11 +1056,7 @@
    "P-HOUSE",
    "VOICE-C3"
   ],
-  "mirror_of": null,
-  "take": "SC02-SH02",
-  "start_pos": "the husband in the hall by the bottom step, two shopping bags at his feet",
-  "end_pos": "the husband with both bags in his hands",
-  "dialogue": "I’ll bring it up."
+  "mirror_of": null
  },
  {
   "beat": "SC02-SH03",
@@ -1193,11 +1104,7 @@
    "L-STAIRS",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "SC02-SH03",
-  "start_pos": "Her at the top of the stairs facing up the flight, both hands on the banister",
-  "end_pos": "Her a few steps down, backwards, both feet together",
-  "vo": "Six weeks ago, I was going down my stairs backwards."
+  "mirror_of": null
  },
  {
   "beat": "SC02-SH04",
@@ -1244,11 +1151,7 @@
    "L-STAIRS",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "SC02-SH04",
-  "start_pos": "Her mid-flight, facing up the stairs, both hands on the banister",
-  "end_pos": "Her one step lower, both feet together, breathing out",
-  "vo": "One step at a time."
+  "mirror_of": null
  },
  {
   "beat": "SC02-SH05",
@@ -1295,11 +1198,7 @@
    "L-KITCHEN",
    "VOICE-C3"
   ],
-  "mirror_of": null,
-  "take": "SC02-SH05",
-  "start_pos": "the husband in the kitchen with a mug of tea",
-  "end_pos": "the husband holding the mug out, not quite looking at her",
-  "dialogue": "Sleep alright?"
+  "mirror_of": null
  },
  {
   "beat": "SC02-SH06",
@@ -1349,11 +1248,7 @@
    "L-KITCHEN",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "SC02-SH06",
-  "start_pos": "Her just in from the hall in her dressing gown, the husband holding out the mug",
-  "end_pos": "Her holding the tea, a small tight smile",
-  "dialogue": "Fine, love."
+  "mirror_of": null
  },
  {
   "beat": "SC02-SH07",
@@ -1401,11 +1296,7 @@
    "L-BEDROOM",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "SC02-SH07",
-  "start_pos": "Her on the edge of the bed, hands in her lap",
-  "end_pos": "Her still on the bed edge, looking out of the window",
-  "vo": "If I’m being honest, some days I wasn’t going down them at all. I’d just stay upstairs."
+  "mirror_of": null
  },
  {
   "beat": "SC03-SH01",
@@ -1453,11 +1344,7 @@
    "L-STAIRS",
    "INFO-BRACE"
   ],
-  "mirror_of": null,
-  "take": "SC03-SH01",
-  "start_pos": "Her standing on the landing, the hinged brace on her knee",
-  "end_pos": "the brace slid down her shin",
-  "vo": "The full knee brace I bought slipped down my leg."
+  "mirror_of": null
  },
  {
   "beat": "SC03-SH02",
@@ -1505,11 +1392,7 @@
    "L-STAIRS",
    "INFO-BRACE"
   ],
-  "mirror_of": null,
-  "take": "SC03-SH02",
-  "start_pos": "the hinged brace bunched round her ankle above her slipper",
-  "end_pos": "the same, still",
-  "vo": "By evening, it was around my ankle."
+  "mirror_of": null
  },
  {
   "beat": "SC03-SH03",
@@ -1556,11 +1439,7 @@
    "N",
    "INFO-PHYSIO"
   ],
-  "mirror_of": null,
-  "take": "SC03-SH03",
-  "start_pos": "Her lying on the physio couch, the physio's hands on her right knee",
-  "end_pos": "her knee bent by the physio's hands",
-  "vo": "I tried everything. Physiotherapy."
+  "mirror_of": null
  },
  {
   "beat": "SC03-SH04",
@@ -1607,11 +1486,7 @@
    "N",
    "L-KITCHEN"
   ],
-  "mirror_of": null,
-  "take": "SC03-SH04",
-  "start_pos": "her hand on a blister strip beside a mug on the pine table",
-  "end_pos": "two painkillers pushed out on the table",
-  "vo": "Painkillers."
+  "mirror_of": null
  },
  {
   "beat": "SC03-SH05",
@@ -1658,11 +1533,7 @@
    "N",
    "INFO-PHYSIO"
   ],
-  "mirror_of": null,
-  "take": "SC03-SH05",
-  "start_pos": "a gloved hand at the side of her right knee",
-  "end_pos": "the knee swabbed, the syringe out of focus",
-  "vo": "Cortisone injections."
+  "mirror_of": null
  },
  {
   "beat": "SC03-SH06",
@@ -1710,11 +1581,7 @@
    "L-BEDROOM",
    "INFO-DRAWER"
   ],
-  "mirror_of": null,
-  "take": "SC03-SH06",
-  "start_pos": "Her at the open bottom drawer, the brace in her hand",
-  "end_pos": "the drawer pushed shut with her foot, still proud",
-  "vo": "Every brace and sleeve on the market. Nothing worked. Nothing lasted. Nothing gave me my life back."
+  "mirror_of": null
  },
  {
   "beat": "SC03-SH07",
@@ -1762,11 +1629,7 @@
    "L-BEDROOM",
    "VOICE-C3"
   ],
-  "mirror_of": null,
-  "take": "SC03-SH07-08",
-  "take_kind": "one-take",
-  "start_pos": "the husband in the bedroom doorway, a hand on the frame; Her at the chest of drawers with her back to him",
-  "dialogue": "That drawer won’t shut soon."
+  "mirror_of": null
  },
  {
   "beat": "SC03-SH08",
@@ -1814,11 +1677,7 @@
    "L-BEDROOM",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "SC03-SH07-08",
-  "end_pos": "Her still facing the drawer, the husband in the doorway",
-  "joins": true,
-  "dialogue": "It shuts."
+  "mirror_of": null
  },
  {
   "beat": "SC03-SH09",
@@ -1866,12 +1725,7 @@
    "VOICE-N",
    "VOICE-C4"
   ],
-  "mirror_of": null,
-  "take": "SC03-SH09-10",
-  "take_kind": "one-take",
-  "start_pos": "Her on the bed edge, the phone to her ear",
-  "dialogue": "Course, love. Easier.",
-  "hold_s": 6.85
+  "mirror_of": null
  },
  {
   "beat": "SC03-SH10",
@@ -1919,11 +1773,7 @@
    "L-BEDROOM",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "SC03-SH09-10",
-  "end_pos": "Her sitting still on the bed edge, the phone lowered to her lap",
-  "joins": true,
-  "vo": "My sister’s knees are worse than mine. We planned our Sundays around one level."
+  "mirror_of": null
  },
  {
   "beat": "SC04-SH01",
@@ -1971,11 +1821,7 @@
    "L-WEDDING",
    "INFO-WEDDING"
   ],
-  "mirror_of": null,
-  "take": "SC04-T1",
-  "take_kind": "multi",
-  "start_pos": "Barbara dances in the middle of the parquet floor among the guests, mid-step, facing the camera, arms loose; the bride in ivory dances beside her on her left; the near-left table with its candle jar, glasses and flowers soft in the foreground; nobody at that table",
-  "vo": "Then my granddaughter got married in June. My cousin Barbara was there."
+  "mirror_of": null
  },
  {
   "beat": "SC04-SH02",
@@ -2022,10 +1868,7 @@
    "C1",
    "L-WEDDING"
   ],
-  "mirror_of": null,
-  "take": "SC04-T1",
-  "end_pos": "Barbara has turned once on the beat and faces the camera again, knees bent, laughing, in the middle of the floor where she started; the bride still dancing just behind her",
-  "vo": "She’s 74. And she was on the dance floor all night."
+  "mirror_of": null
  },
  {
   "beat": "SC04-SH03",
@@ -2073,11 +1916,7 @@
    "L-WEDDING",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "SC04-T2",
-  "take_kind": "one-take",
-  "start_pos": "Her sits on the right-hand chair of the near-left table in clean profile facing RIGHT, toward the dance floor, her hands in her lap; her husband sits on the chair to her left, nearer the camera, his face in three-quarter turned toward her, his right hand round his pint on the cloth; Barbara dances soft in the background on the floor",
-  "dialogue": "Her knees were worse than mine. Both of them. Bone on bone."
+  "mirror_of": null
  },
  {
   "beat": "SC04-SH04",
@@ -2126,10 +1965,7 @@
    "L-WEDDING",
    "VOICE-C3"
   ],
-  "mirror_of": null,
-  "take": "SC04-T2",
-  "joins": true,
-  "dialogue": "Whose?"
+  "mirror_of": null
  },
  {
   "beat": "SC04-SH05",
@@ -2177,12 +2013,7 @@
    "L-WEDDING",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "SC04-T2",
-  "end_pos": "a close shot of Her's face in profile facing RIGHT, still watching the dance floor, the fairy-light glow moving on her cheek; her husband's shoulder soft at the left edge of frame",
-  "joins": true,
-  "dialogue": "Barbara’s.",
-  "vo": "I always assumed hers weren’t as bad as mine. I always assumed mine were past the point of fixing."
+  "mirror_of": null
  },
  {
   "beat": "SC05-SH01",
@@ -2232,11 +2063,7 @@
    "L-KITCHEN",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "SC05-T1",
-  "take_kind": "multi",
-  "start_pos": "the wide view from the hall doorway: Her at the pine table with her five things laid out in front of her, pressing a tablet out of the strip; Barbara across the table, both hands round her mug, watching her",
-  "vo": "Barbara came to stay the week after."
+  "mirror_of": null
  },
  {
   "beat": "SC05-SH02",
@@ -2283,9 +2110,7 @@
    "N",
    "L-KITCHEN"
   ],
-  "mirror_of": null,
-  "take": "SC05-T1",
-  "vo": "She watched me work through my morning routine."
+  "mirror_of": null
  },
  {
   "beat": "SC05-SH03",
@@ -2334,10 +2159,7 @@
    "L-KITCHEN",
    "VOICE-C1"
   ],
-  "mirror_of": null,
-  "take": "SC05-T1",
-  "end_pos": "Barbara has set her mug down on the table and looks across at Her, her hands flat on the table either side of it; Her looks up at her, the tablet taken, the glass of water back on the table",
-  "dialogue": "Can I show you something?"
+  "mirror_of": null
  },
  {
   "beat": "SC05-SH04",
@@ -2386,11 +2208,7 @@
    "PROD-FRONT",
    "INFO-PLACEMENT"
   ],
-  "mirror_of": null,
-  "take": "SC0506-T1",
-  "take_kind": "multi",
-  "start_pos": "Barbara, seated across the table, has just put her mug down and is turning on her chair toward Her, her bare right knee still under the table edge, the strap on it just under the kneecap; Her watches from her chair",
-  "vo": "A small black strap."
+  "mirror_of": null
  },
  {
   "beat": "SC05-SH05",
@@ -2437,10 +2255,7 @@
    "N",
    "L-KITCHEN"
   ],
-  "mirror_of": null,
-  "take": "SC0506-T1",
-  "joins": true,
-  "vo": "Just below her kneecap."
+  "mirror_of": null
  },
  {
   "beat": "SC05-SH06",
@@ -2488,9 +2303,7 @@
    "L-KITCHEN",
    "PROD-BOX"
   ],
-  "mirror_of": null,
-  "take": "SC0506-T1",
-  "dialogue": "They come in twos. I never used the spare."
+  "mirror_of": null
  },
  {
   "beat": "SC05-SH07",
@@ -2537,10 +2350,7 @@
    "L-KITCHEN",
    "VOICE-C1"
   ],
-  "mirror_of": null,
-  "take": "SC0506-T1",
-  "joins": true,
-  "hold_s": 1.0
+  "mirror_of": null
  },
  {
   "beat": "SC06-SH01",
@@ -2588,10 +2398,7 @@
    "L-KITCHEN",
    "PROD-FRONT"
   ],
-  "mirror_of": null,
-  "take": "SC0506-T1",
-  "joins": true,
-  "vo": "It looked absurd. Too small."
+  "mirror_of": null
  },
  {
   "beat": "SC06-SH02",
@@ -2639,9 +2446,7 @@
    "PROD-FRONT",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "SC0506-T1",
-  "dialogue": "Barbara. This can’t possibly work on knees like mine."
+  "mirror_of": null
  },
  {
   "beat": "SC06-SH03",
@@ -2689,10 +2494,7 @@
    "L-KITCHEN",
    "VOICE-C1"
   ],
-  "mirror_of": null,
-  "take": "SC0506-T1",
-  "end_pos": "Barbara leans in across the table toward Her, forearms on the table, her face close and certain; Her's hand rests on the table with the strap lying in it, front side up",
-  "dialogue": "Just put it on and walk down the stairs."
+  "mirror_of": null
  },
  {
   "beat": "SC07-SH01",
@@ -2741,11 +2543,7 @@
    "PROD-FRONT",
    "INFO-PLACEMENT"
   ],
-  "mirror_of": null,
-  "take": "SC07-T",
-  "take_kind": "multi",
-  "start_pos": "on the landing at the top of the stairs, Her stands with the strap at the middle of her bare right shin, her right hand on it, about to slide it up",
-  "hold_s": 2.5
+  "mirror_of": null
  },
  {
   "beat": "SC07-SH02",
@@ -2793,9 +2591,7 @@
    "L-STAIRS",
    "P-HOUSE"
   ],
-  "mirror_of": "SC02-SH03",
-  "take": "SC07-T",
-  "vo": "The first step, I didn’t have to hold the banister."
+  "mirror_of": "SC02-SH03"
  },
  {
   "beat": "SC07-SH03",
@@ -2843,10 +2639,7 @@
    "L-STAIRS",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "SC07-T",
-  "joins": true,
-  "vo": "Not the second. Not the third."
+  "mirror_of": null
  },
  {
   "beat": "SC07-SH04",
@@ -2893,9 +2686,7 @@
    "L-STAIRS",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "SC07-T",
-  "hold_s": 2.0
+  "mirror_of": null
  },
  {
   "beat": "SC07-SH05",
@@ -2943,9 +2734,7 @@
    "L-STAIRS",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "SC07-T",
-  "vo": "All the way down. Both feet. Forwards."
+  "mirror_of": null
  },
  {
   "beat": "SC07-SH06",
@@ -2993,11 +2782,7 @@
    "L-STAIRS",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "SC07-T",
-  "end_pos": "Her stands on the hall carpet at the foot of the stairs, turned back to look up the flight, the strap on her right knee; Barbara in the hall beside the newel post",
-  "joins": true,
-  "vo": "First step. Pain gone. Like a switch."
+  "mirror_of": null
  },
  {
   "beat": "SC08-SH01",
@@ -3047,11 +2832,7 @@
    "L-KITCHEN",
    "VOICE-C1"
   ],
-  "mirror_of": null,
-  "take": "SC08-T1",
-  "start_pos": "both seated across the pine table in their chairs, seen over Her's right shoulder; Barbara across the table with the window behind her, her mug in front of her",
-  "end_pos": "both seated in their chairs across the table, Barbara looking at Her, her hands resting on the table either side of her mug",
-  "dialogue": "Everything you’ve tried was designed to make you comfortable while your knee got worse. This one fixes why it hurts."
+  "mirror_of": null
  },
  {
   "beat": "SC08-SH02",
@@ -3099,11 +2880,7 @@
    "L-KITCHEN",
    "INFO-PLACEMENT"
   ],
-  "mirror_of": null,
-  "take": "SC08-T2",
-  "take_kind": "multi",
-  "start_pos": "both seated across the pine table; Barbara turned a little on her chair, her bare right knee with its strap just out from under the table edge",
-  "dialogue": "There’s one spot below the kneecap where every step lands."
+  "mirror_of": null
  },
  {
   "beat": "SC08-SH03",
@@ -3152,10 +2929,7 @@
    "L-KITCHEN",
    "VOICE-C1"
   ],
-  "mirror_of": null,
-  "take": "SC08-T2",
-  "end_pos": "Barbara leaning in across the table toward Her, forearms on the wood, holding Her's eyes",
-  "dialogue": "Every brace, every injection, every pill you’ve ever taken treated the whole knee. Not that spot."
+  "mirror_of": null
  },
  {
   "beat": "SC08-SH04",
@@ -3202,12 +2976,7 @@
    "N",
    "L-KITCHEN"
   ],
-  "mirror_of": null,
-  "take": "SC08-T3",
-  "take_kind": "multi",
-  "start_pos": "Her seated at the near end of the table looking down at the strap on her own right knee; Barbara across the table",
-  "split": "length",
-  "dialogue": "That’s why nothing worked. The pain is pressure. Nothing more."
+  "mirror_of": null
  },
  {
   "beat": "SC08-SH05",
@@ -3255,10 +3024,7 @@
    "L-KITCHEN",
    "VOICE-C1"
   ],
-  "mirror_of": null,
-  "take": "SC08-T3",
-  "end_pos": "Barbara's right hand resting flat on the table beside her mug after one tap, her eyes on Her",
-  "dialogue": "This sits on that spot and lifts the weight off."
+  "mirror_of": null
  },
  {
   "beat": "SC09-SH01",
@@ -3306,11 +3072,7 @@
    "PROD-FRONT",
    "INFO-PLACEMENT"
   ],
-  "mirror_of": null,
-  "take": "SC09-T1",
-  "start_pos": "in a bright sports-medicine clinic a man in shorts stands in front of a low step box facing the camera, the strap on the front of his right knee; the doctor behind him with folded arms",
-  "end_pos": "the man stands back on the floor after the step, the strap unchanged on the front of his knee; the doctor nods once",
-  "vo": "Over 200,000 people wear one now. Sports doctors recommend it. Not the pharma companies. Sports doctors."
+  "mirror_of": null
  },
  {
   "beat": "SC09-SH02",
@@ -3357,11 +3119,7 @@
    "L-GOLF",
    "PROD-FRONT"
   ],
-  "mirror_of": null,
-  "take": "SC09-T2",
-  "start_pos": "on a sunny fairway Barbara's husband stands addressed to the ball, club behind it, knees softly bent, the strap on his right knee",
-  "end_pos": "he holds a full, balanced follow-through, club over his shoulder, watching the ball go, the strap still on his right knee",
-  "vo": "Barbara’s husband wears one. He’s 76. He plays golf twice a week."
+  "mirror_of": null
  },
  {
   "beat": "SC09-SH03",
@@ -3408,11 +3166,7 @@
    "L-TENNIS",
    "PROD-FRONT"
   ],
-  "mirror_of": null,
-  "take": "SC09-T3",
-  "start_pos": "on a hard tennis court in sunshine Barbara's niece stands at the baseline, racket ready, knees bent, the strap on her right knee",
-  "end_pos": "she has hit a forehand on the run and settles back into her stance, the strap still on her right knee",
-  "vo": "Her niece wears one for tennis. She’s 22."
+  "mirror_of": null
  },
  {
   "beat": "SC10-SH01",
@@ -3461,11 +3215,7 @@
    "PROD-FRONT",
    "INFO-PLACEMENT"
   ],
-  "mirror_of": null,
-  "take": "SC10-T1",
-  "start_pos": "Her sits on the edge of her bed, her right trouser leg rolled up above the knee, the strap low on her bare right shin",
-  "end_pos": "the strap seated under her kneecap and the navy trouser leg pulled down over it, smooth, nothing showing; her hand rests on her thigh",
-  "vo": "I’ve worn mine every day for six weeks. Under my clothes. Nobody knows it’s there."
+  "mirror_of": null
  },
  {
   "beat": "SC10-SH02",
@@ -3509,11 +3259,7 @@
   "ingredients": [
    "L-KITCHEN"
   ],
-  "mirror_of": "SC03-SH04",
-  "take": "SC10-T2",
-  "start_pos": "the pine table in the morning light, seen from straight above, with one white mug of tea on it and nothing else",
-  "end_pos": "the same: the pine table with one white mug of tea, steam rising a little",
-  "vo": "No pills. No gel. No brace around my ankle by lunchtime."
+  "mirror_of": "SC03-SH04"
  },
  {
   "beat": "SC10-SH03",
@@ -3559,11 +3305,7 @@
    "N",
    "INFO-HIGHST"
   ],
-  "mirror_of": null,
-  "take": "SC10-T3",
-  "start_pos": "on the high-street pavement Her walks straight toward the camera in her camel trench, three younger women walking behind her the same way",
-  "end_pos": "Her walks on toward the camera, the three younger women several paces behind her and falling further back",
-  "vo": "Yesterday I walked into town. Two miles there. Two miles back. I outwalked three women half my age."
+  "mirror_of": null
  },
  {
   "beat": "SC10-SH04",
@@ -3610,11 +3352,7 @@
    "N",
    "L-SHOP"
   ],
-  "mirror_of": null,
-  "take": "SC10-T4",
-  "take_kind": "multi",
-  "start_pos": "Her stands square in the checkout queue, a heavily loaded shopping basket in her right hand, weight even on both feet",
-  "vo": "I stood in line for ten minutes without shifting my weight."
+  "mirror_of": null
  },
  {
   "beat": "SC10-SH05",
@@ -3662,9 +3400,7 @@
    "L-SHOP",
    "VOICE-X3"
   ],
-  "mirror_of": null,
-  "take": "SC10-T4",
-  "dialogue": "You alright carrying those, love?"
+  "mirror_of": null
  },
  {
   "beat": "SC10-SH06",
@@ -3712,10 +3448,7 @@
    "L-SHOP",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "SC10-T4",
-  "end_pos": "Her holds a full shopping bag in each hand at the end of the checkout, a small smile, the cashier smiling back from her seat",
-  "dialogue": "I am, actually."
+  "mirror_of": null
  },
  {
   "beat": "SC10-SH07",
@@ -3763,11 +3496,7 @@
    "N",
    "P-HOUSE-EXT"
   ],
-  "mirror_of": null,
-  "take": "SC10-T5",
-  "start_pos": "Her walks up her street on the pavement toward her green front door, a full bag in each hand, her back to the camera",
-  "end_pos": "Her turns in at her own gate by the privet hedge, a full bag in each hand",
-  "vo": "I carried two bags home. Nobody helped me."
+  "mirror_of": null
  },
  {
   "beat": "SC11-SH01",
@@ -3816,11 +3545,7 @@
    "P-HOUSE",
    "VOICE-C3"
   ],
-  "mirror_of": null,
-  "take": "SC11-T1",
-  "take_kind": "multi",
-  "start_pos": "the husband in the leather armchair by the fire, newspaper up; Her in the doorway with two bags at her feet",
-  "dialogue": "You were gone a long time."
+  "mirror_of": null
  },
  {
   "beat": "SC11-SH02",
@@ -3868,10 +3593,7 @@
    "P-HOUSE",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "SC11-T1",
-  "end_pos": "Her in the doorway smiling a little, the husband looking at her, newspaper lowered",
-  "dialogue": "I know."
+  "mirror_of": null
  },
  {
   "beat": "SC12-SH01",
@@ -3922,11 +3644,7 @@
    "C6",
    "L-CAFE"
   ],
-  "mirror_of": null,
-  "take": "SC12-T1",
-  "take_kind": "multi",
-  "start_pos": "Her comes in through the café door; her two friends at the window table",
-  "vo": "That was six weeks of wearing the strap. Nothing else. I’m not the one everyone waits for anymore."
+  "mirror_of": null
  },
  {
   "beat": "SC12-SH02",
@@ -3975,9 +3693,7 @@
    "L-CAFE",
    "VOICE-C5"
   ],
-  "mirror_of": null,
-  "take": "SC12-T1",
-  "dialogue": "Right. What’s changed? And don’t say a haircut."
+  "mirror_of": null
  },
  {
   "beat": "SC12-SH03",
@@ -4025,10 +3741,7 @@
    "L-CAFE",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "SC12-T1",
-  "end_pos": "the three seated at the window table, Her looking at her copper-haired friend",
-  "dialogue": "Three weeks ago I couldn’t have crossed this room like that."
+  "mirror_of": null
  },
  {
   "beat": "SC12-SH04",
@@ -4076,11 +3789,7 @@
    "L-CAFE",
    "VOICE-C6"
   ],
-  "mirror_of": null,
-  "take": "SC12-T2",
-  "take_kind": "multi",
-  "start_pos": "the three at the window table, the friend in the mustard jacket leaning forward",
-  "dialogue": "So what is it?"
+  "mirror_of": null
  },
  {
   "beat": "SC12-SH05",
@@ -4129,9 +3838,7 @@
    "PROD-FRONT",
    "INFO-PLACEMENT"
   ],
-  "mirror_of": null,
-  "take": "SC12-T2",
-  "dialogue": "It’s a strap."
+  "mirror_of": null
  },
  {
   "beat": "SC12-SH06",
@@ -4179,9 +3886,7 @@
    "L-CAFE",
    "VOICE-C5"
   ],
-  "mirror_of": null,
-  "take": "SC12-T2",
-  "dialogue": "That little thing?"
+  "mirror_of": null
  },
  {
   "beat": "SC12-SH07",
@@ -4229,10 +3934,7 @@
    "L-CAFE",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "SC12-T2",
-  "end_pos": "Her sitting back with her cup, both friends looking at her",
-  "dialogue": "That’s what I said."
+  "mirror_of": null
  },
  {
   "beat": "SC12-SH08",
@@ -4277,12 +3979,7 @@
    "L-CAFE",
    "PROD-FRONT"
   ],
-  "mirror_of": null,
-  "take": "SC12-T3",
-  "take_kind": "multi",
-  "start_pos": "one strap lying on the café table between the cups",
-  "split": "length",
-  "vo": "So I’m just going to say it here. It’s called Stryde. Patellar Force Redirection."
+  "mirror_of": null
  },
  {
   "beat": "SC12-SH09",
@@ -4333,10 +4030,7 @@
    "C6",
    "L-CAFE"
   ],
-  "mirror_of": null,
-  "take": "SC12-T3",
-  "end_pos": "the three women laughing together at the window table, the strap between them",
-  "vo": "It’s been designed for three years with orthopaedic surgeons. It’s the real thing. Not the cheap knockoffs they sell on Amazon and fake Shopify sites."
+  "mirror_of": null
  },
  {
   "beat": "SC13-SH01",
@@ -4384,11 +4078,7 @@
    "L-KITCHEN",
    "PROD-BOX"
   ],
-  "mirror_of": null,
-  "take": "SC13-T1",
-  "take_kind": "multi",
-  "start_pos": "the small black box with its lid on, on the pine table",
-  "vo": "The link’s below. Two straps for the price of one right now. 60 days to send them back if they don’t work."
+  "mirror_of": null
  },
  {
   "beat": "SC13-SH02",
@@ -4435,10 +4125,7 @@
    "N",
    "L-KITCHEN"
   ],
-  "mirror_of": null,
-  "take": "SC13-T1",
-  "end_pos": "Her looking out of the window, the open box with two straps on the table in front of her",
-  "vo": "Eleven years of knee pain. Gone the first step I took with it on. I bought a second pair for my sister the same week. She’s coming Sunday."
+  "mirror_of": null
  },
  {
   "beat": "SC13-SH03",
@@ -4488,11 +4175,7 @@
    "P-HOUSE",
    "VOICE-C4"
   ],
-  "mirror_of": null,
-  "take": "SC13-T2",
-  "take_kind": "multi",
-  "start_pos": "Her opening the green front door to her sister on the step",
-  "dialogue": "All the way up?"
+  "mirror_of": null
  },
  {
   "beat": "SC13-SH04",
@@ -4540,9 +4223,7 @@
    "P-HOUSE",
    "VOICE-N"
   ],
-  "mirror_of": null,
-  "take": "SC13-T2",
-  "dialogue": "All the way up."
+  "mirror_of": null
  },
  {
   "beat": "SC13-SH05",
@@ -4592,9 +4273,6 @@
    "L-STAIRS",
    "P-HOUSE"
   ],
-  "mirror_of": null,
-  "take": "SC13-T2",
-  "end_pos": "the sister two steps up the stairs, hands free at her sides, Her one step below her",
-  "vo": "She’ll walk up my stairs on her own."
+  "mirror_of": null
  }
 ]
