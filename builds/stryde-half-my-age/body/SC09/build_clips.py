@@ -52,9 +52,9 @@ P = {
  "10A_E": "the strap seated under her kneecap and the navy trouser leg pulled down over it, smooth, nothing showing; her hand rests on her thigh",
  "10B_S": "the pine table in the morning light, seen from straight above, with one white mug of tea on it and nothing else",
  "10B_E": "the same: the pine table with one white mug of tea, steam rising a little",
- "10C_S": "on the high-street pavement Her walks in from the left of frame in her camel trench, three younger women walking ahead of her the same way",
- "10C_E": "Her has passed all three women and walks on out to the right of frame, the three a little behind her",
- "10D_S": "Her stands square in the checkout queue, a full shopping basket in her right hand, weight even on both feet",
+ "10C_S": "on the high-street pavement Her walks straight toward the camera in her camel trench, three younger women walking behind her the same way",
+ "10C_E": "Her walks on toward the camera, the three younger women several paces behind her and falling further back",
+ "10D_S": "Her stands square in the checkout queue, a heavily loaded shopping basket in her right hand, weight even on both feet",
  "10D_E": "Her holds a full shopping bag in each hand at the end of the checkout, a small smile, the cashier smiling back from her seat",
  "10E_S": "Her walks up her street on the pavement toward her green front door, a full bag in each hand, her back to the camera",
  "10E_E": "Her turns in at her own gate by the privet hedge, a full bag in each hand",
@@ -84,9 +84,9 @@ def take(beat, scene, covers, dur, title, files, imgs, body, motion, focus, st, 
 take("SC09-T1", 9, ["SC09-SH01"], 8, "Scene 9 · T1 — the sports doctor fits the strap on a patient (SH01)",
      ["X4-DOCTOR", "PROD-FRONT"],
      [("@image1", ONEOFF("the sports doctor")), ("@image2", "is " + STRAP + ".")],
-     "MEDIUM, eye level, three-quarter, Camera on a tripod, locked: a bright, modern sports-medicine clinic, a padded treatment couch, white walls, a window of soft daylight about 5600K. "
-     "The doctor of Image1 kneels beside a fit man of about sixty who sits on the couch edge in grey shorts, his right knee bare. The strap of Image2 is ALREADY ON as a closed loop round the man's lower shin, a hand's length below the knee, the black knit band snug all the way round the leg, the shell at the front. "
-     "The doctor puts one thumb and finger on each chrome slide and, in one smooth, practised move, slides the whole strap straight UP the shin until the shell seats just under the kneecap, the bottom of the kneecap in its centre notch; "
+     "MEDIUM CLOSE, low and STRAIGHT FRONT-ON to the patient's right knee, the knee dead centre of the frame, Camera on a tripod, locked: a bright, modern sports-medicine clinic, a padded treatment couch, white walls, a window of soft daylight about 5600K. "
+     "The doctor of Image1 kneels to the side of a fit man of about sixty who sits on the couch edge in grey shorts, his right knee bare. The strap of Image2 is ALREADY ON as a closed loop round the man's lower shin, a hand's length below the knee, the black knit band snug all the way round the leg, the shell at the front. "
+     "The doctor puts one thumb and finger on each chrome slide and, in one smooth, practised move, slides the whole strap straight UP the shin until it stops high and centred: the shell's centre notch sits on the patellar tendon at the exact middle of the knee, touching the bottom edge of the kneecap, the kneecap's lower tip cupped in the notch, the two peaks either side of it, the shell level and square to the front of the knee — never lower down the shin, never off to one side; "
      "he checks it with one light press of two fingers, takes his hands away and looks up with a small reassuring nod. He never opens, unwraps, stretches or wraps the band — it stays a closed loop round the leg the whole time. "
      "THE STRAP IS SMALL: the shell is about 12 by 5 centimetres — clearly NARROWER than the man's knee, about two-thirds of the knee's width, no taller than two fingers, the knee and kneecap much bigger than it; it is about a fifth of the frame wide. Both faces calm and professional.",
      None, "FOCUS: the strap and the doctor's hands sharp, the faces a little soft. The blur is optical: soft and round, never smeared.",
@@ -94,7 +94,7 @@ take("SC09-T1", 9, ["SC09-SH01"], 8, "Scene 9 · T1 — the sports doctor fits t
      [{"risk": "the wrong product or size (FP01, FP02)", "prevented_by": "the real front photo, 12 × 5 cm, a quarter of the frame"},
       {"risk": "the strap on the kneecap (FP03)", "prevented_by": "the place card, 'just under the kneecap'"},
       {"risk": "a brand or text appears in the clinic", "prevented_by": "no lettering negatives"}],
-     "no opening the band, no wrapping the band round the leg, no long loose band, no strap as wide as the knee, no oversized strap, no strap on the kneecap, no lettering or logos anywhere, no posters with text, no second strap, no brace, no talking, no mouth moving", vo="L050")
+     "no strap low on the shin, no gap between the kneecap and the strap, no strap off-centre or turned to the side, no opening the band, no wrapping the band round the leg, no long loose band, no strap as wide as the knee, no oversized strap, no strap on the kneecap, no lettering or logos anywhere, no posters with text, no second strap, no brace, no talking, no mouth moving", vo="L050")
 
 take("SC09-T2", 9, ["SC09-SH02"], 5, "Scene 9 · T2 — Barbara's husband, 76, a full golf swing, the strap on his knee (SH02)",
      ["X5-HUSBAND", "PROD-FRONT", "INFO-KNEE-C1"],
@@ -150,30 +150,30 @@ take("SC10-T2", 10, ["SC10-SH02"], 4, "Scene 10 · T2 — the pine table, just a
 take("SC10-T3", 10, ["SC10-SH03"], 8, "Scene 10 · T3 — the high street: she outwalks three younger women (SH03)",
      ["N-FACE", "OUT-N-A2", "INFO-HIGHST"],
      [("@image1", FACE_N), ("@image2", CARD_A2), ("@image3", PLACE("the high street of the plate — the stone shopfronts, the red post box, the flagged pavement, the street running left to right"))],
-     f"FULL, eye level, in profile from across the pavement, Camera on a tripod, locked, the high street of Image3 running left to right behind: late-morning sun about 5600K. Her, {HER_ID}, in {HER_A2}, "
-     "walks in from the left edge of frame along the pavement. Ahead of her, walking the same way, three women in their thirties chatting with shopping bags, strolling slowly. "
-     "She comes up behind them and passes all three on the outside, one by one, without changing her pace, and walks on out of the right edge of frame, the three a little behind her. " + BRISK,
-     "MOVE: she travels left to right across the frame on the pavement; the camera never moves and never follows her.",
+     f"FULL, eye level, front-on down the pavement, Camera on a tripod, locked, the shopfronts of Image3 running along one side and the red post box at the kerb: late-morning sun about 5600K. Her, {HER_ID}, in {HER_A2}, "
+     "walks straight toward the camera along the pavement, IN FRONT of three women in their thirties in casual jeans and light jackets (none of them in a trench coat), who walk the same way BEHIND her, chatting with shopping bags. "
+     "She leads; with every step the gap grows — the three fall further and further behind her while she keeps her easy pace toward the camera. Nobody walks beside her. " + BRISK,
+     "MOVE: she travels straight toward the camera down the pavement and grows larger in the frame; the three women behind her travel more slowly; the camera never moves.",
      "FOCUS: deep — her and the shopfronts sharp. The blur is optical: soft and round, never smeared.",
      (P["10C_S"], P["10C_E"], ("HER", "on the high street in her A2 outfit", "she has passed the three women")),
      [{"risk": "her walk turns into a jog or a limp", "prevented_by": "BRISK: two steps a second, never running, never limping"},
       {"risk": "the street flips direction (HT22)", "prevented_by": "left to right named, the plate, camera locked"},
       {"risk": "lettering on the shops", "prevented_by": "blank signs in the plate, lettering negative"}],
-     "no running, no jogging, no limping, no bumping into the women, no camera following, no lettering or logos, no strap visible, no talking, no mouth moving", vo="L053")
+     "no one walking beside her, no woman ahead of her, no other trench coats, no running, no jogging, no limping, no camera following, no lettering or logos, no strap visible, no talking, no mouth moving", vo="L053")
 
 take("SC10-T4", 10, ["SC10-SH04", "SC10-SH05", "SC10-SH06"], 10, "Scene 10 · T4 — the checkout: You alright carrying those, love? / I am, actually. (SH04–SH06)",
      ["N-FACE", "X3-CASHIER", "OUT-N-A2", "L-SHOP"],
      [("@image1", FACE_N), ("@image2", ONEOFF("the cashier")), ("@image3", CARD_A2), ("@image4", PLACE("the supermarket checkout lane of the plate — the conveyor, the till, the bagging area, the chrome queue rail")), ("@audio1", VOICE("Her"))],
-     f"SHOT 1, [0s-4s]: MEDIUM, low three-quarter, Camera on a tripod, locked: Her, {HER_ID}, in {HER_A2}, stands square in the checkout queue, a full shopping basket in her right hand, weight even on both feet, completely still and easy, waiting her turn; nobody speaks in this shot. "
-     "SHOT 2, [4s-7s]: MCU over Her's shoulder onto the young cashier of Image2 in her seat at the till, Camera on a tripod, locked: the cashier nods at the two full shopping bags packed at the end of the counter, half-reaches toward them to help and, only now, says kindly: " + L055 + " "
-     "SHOT 3, [7s-10s]: CU, eye level, three-quarter on Her, Camera on a tripod, locked: her basket is already set down empty on the floor; she takes the two full shopping bags from the end of the counter, one in her right hand and one in her left, lifts both easily to her sides, and says with a small smile: " + L056 + " "
+     f"SHOT 1, [0s-4s]: MEDIUM, low three-quarter, Camera on a tripod, locked: Her, {HER_ID}, in {HER_A2}, stands square at the front of the checkout queue, weight even on both feet, holding a shopping basket piled high with a full week's groceries — a big bottle of milk, a loaf, apples, tins, pasta, vegetables, enough to fill two big bags; it is her turn: she steps up and lifts the heavy basket onto the counter easily with one hand and sets it down; nobody speaks in this shot. "
+     "SHOT 2, [4s-7s]: MCU over Her's shoulder onto the young cashier of Image2 in her seat at the till, Camera on a tripod, locked: her groceries now packed into two full brown paper shopping bags at the end of the counter, the empty basket stacked aside, the cashier nods at the bags, half-reaches toward them to help and, only now, says kindly: " + L055 + " "
+     "SHOT 3, [7s-10s]: CU, eye level, three-quarter on Her, Camera on a tripod, locked: she takes the two full shopping bags from the end of the counter, one in her right hand and one in her left, lifts both easily to her sides, and says with a small smile: " + L056 + " "
      "Each cut lands on a completed action. The eyelines match across the counter. Nobody looks into the lens.",
      None, "FOCUS: SHOT 1 her eyes; SHOT 2 the cashier's eyes; SHOT 3 Her's nearest eye. The blur is optical: soft and round, never smeared.",
      (P["10D_S"], P["10D_E"], ("HER", "at the checkout in her A2 outfit", "she has lifted both bags herself")),
      [{"risk": "the voices swap", "prevented_by": "Audio1 is Her; the cashier's line named with her; speakers in order"},
       {"risk": "lettering or logos on packaging", "prevented_by": "the plate's blank labels, lettering negative"},
       {"risk": "she shifts her weight in the queue (the line says she didn't)", "prevented_by": "'completely still, weight even on both feet'"}],
-     "no line spoken before 4 seconds, no basket in her hands in SHOT 3, no lettering or logos on any packaging or sign, no Her shifting her weight or leaning, no cashier carrying the bags, no strap visible, no word left out, no voices swapped",
+     "no half-empty basket, no basket left on the floor in SHOT 1, no line spoken before 4 seconds, no basket in her hands in SHOT 3, no lettering or logos on any packaging or sign, no Her shifting her weight or leaning, no cashier carrying the bags, no strap visible, no word left out, no voices swapped",
      line=L055 + " " + L056, audios=["N-STOOD"], vo="L054", kind="multi",
      dlg=["THE EXCHANGE, word for word and in this order: " + L055 + " " + L056 + " — the cashier says the first line, Her answers with the second; nobody else speaks.",
           "Audio1 is only Her's voice: its words are never spoken in this clip.",
@@ -195,10 +195,14 @@ take("SC10-T5", 10, ["SC10-SH07"], 5, "Scene 10 · T5 — up her street to the f
       {"risk": "a limp or slow walk", "prevented_by": "BRISK"}],
      "no third or fourth bag, no two bags in one hand, no dropping the bags, no limping, no running, no house numbers or lettering, no strap visible, no talking, no mouth moving", vo="L057")
 
-GEN2 = {"SC09-T1": 2, "SC10-T4": 2, "SC10-T5": 2}
-FIX2 = {"SC09-T1": "the user (board Fix): wrong way of putting it and also its so big → the strap already a closed loop round the lower shin, the doctor slides it straight up by the two slides in one move (FP10), never opening or wrapping the band; the shell narrower than the knee, about two-thirds of its width, a fifth of the frame; the enlarged knee card dropped (FP02, FP05)",
-        "SC10-T4": "agent's check of v1 (not put up, L16): the cashier spoke in SHOT 1 and Her answered still holding her basket, never lifting the bags → the cashier speaks only in SHOT 2; in SHOT 3 the basket is down and she lifts the two bags herself",
+GEN2 = {"SC09-T1": 3, "SC10-T4": 3, "SC10-T5": 2, "SC10-T3": 2}
+FIX2 = {"SC09-T1": "the user (board Fix): its not centered to the patellar tendon and its too low the product placement → straight front-on, knee centred; the notch on the tendon at the knee's midline, touching the kneecap's lower edge, never lower or off to the side; earlier: wrong way of putting it and also its so big → the strap already a closed loop round the lower shin, the doctor slides it straight up by the two slides in one move (FP10), never opening or wrapping the band; the shell narrower than the knee, about two-thirds of its width, a fifth of the frame; the enlarged knee card dropped (FP02, FP05)",
+        "SC10-T3": "the user (board Fix): she should be walking infront of 3 womans not at the side → front-on, she walks toward the camera in front of them, the three behind her falling back, nobody beside her, no other trench coats",
+        "SC10-T4": "the user (board Fix): the basket should have so many things that will fit the two bags and in first scene she should put the basket to the counter cause she is going to checkout → the basket piled high with a week's groceries, SHOT 1 she lifts it onto the counter; earlier (agent) v1 (not put up, L16): the cashier spoke in SHOT 1 and Her answered still holding her basket, never lifting the bags → the cashier speaks only in SHOT 2; in SHOT 3 the basket is down and she lifts the two bags herself",
         "SC10-T5": "agent's check of v1 (not put up, L16): she carried four bags, two in each hand — the line is two bags → exactly two bags, one in each hand"}
+GO3 = "board Fix notes + chat \"fix those\" (2026-10-02) — the user's go for SC09-T1 and SC10-T4 gen 3"
+NOTES_ALL = {"SC09-T1": ["v1 (user): wrong way of putting it and also its so big", "v2 (user): its not centered to the patellar tendon and its too low the product placement"],
+             "SC10-T4": ["v1 (agent): the cashier spoke early and Her never lifted the bags", "v2 (user): the basket should have so many things that will fit the two bags and in first scene she should put the basket to the counter"]}
 FILES = {"X4-DOCTOR": "body/SC09/ingredients/X4-DOCTOR_v1.png", "X5-HUSBAND": "body/SC09/ingredients/X5-HUSBAND_v1.png", "X6-NIECE": "body/SC09/ingredients/X6-NIECE_v1.png",
          "X3-CASHIER": "body/SC09/ingredients/X3-CASHIER_v1.png", "OUT-N-A2": "body/SC09/ingredients/OUT-N-A2_v1.png", "INFO-HIGHST": "body/SC09/ingredients/INFO-HIGHST_v1.png",
          "P-HOUSE-EXT": "body/SC09/ingredients/P-HOUSE-EXT_v1.png", "PROD-FRONT": "../../products/stryde/stryde_refs/front.webp", "INFO-KNEE-C1": "body/SC05/ingredients/INFO-KNEE-C1_v3.png",
@@ -216,7 +220,7 @@ if __name__ == "__main__":
                 "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16", "start_image": None,
                 "ingredients_approved": True, "files": [FILES[f] for f in s["files"]], "audios": [AUDIO[a] for a in s["audios"]],
                 "generate_audio": bool(s["line"]), "dialogue": s["line"] or None, "script_line": s["line"] or None, "pace": "unhurried",
-                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": GEN2.get(s["beat"], 1), "user_go": GO, "fix_note": FIX2.get(s["beat"], FIX),
+                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": GEN2.get(s["beat"], 1), "user_go": GO3 if GEN2.get(s["beat"], 1) >= 3 else GO, "fix_notes_all": NOTES_ALL.get(s["beat"], []), "fix_note": FIX2.get(s["beat"], FIX),
                 "risks": s["risks"], "vo": s.get("vo"), "scene": s["scene"], "title": s["title"],
                 "taste": ["HT02", "HT17", "HT18", "HT22", "HT23", "HT26", "FP01", "FP02", "FP03", "FP10", "FP11", "FP12", "FP15", "FP17", "FP18", "FP19"]}
         (H / f"{s['beat']}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
