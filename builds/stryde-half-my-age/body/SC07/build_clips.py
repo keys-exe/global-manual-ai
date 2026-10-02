@@ -68,17 +68,18 @@ P["S8C_END"] = "Barbara's right hand resting flat on the table beside her mug af
 
 SHOTS = []
 SHOTS.append(dict(beat="SC07-T1", take="SC07-T1", kind="multi", covers=["SC07-SH01", "SC07-SH02", "SC07-SH03"], duration=10, line="", vo="L042", subject_motion="travels", scene=7,
-    files=["N-FACE", "INFO-KNEE-N", "PROD-FRONT", "L-STAIRS", "OUT-N-B5"], audios=[],
+    files=["N-FACE", "INFO-KNEE-N", "PROD-FRONT", "L-STAIRS", "OUT-N-B5", "P-HOUSE"], audios=[],
     title="Scene 7 · T1 — on the landing she seats the strap, then the first steps down without the banister (SH01–SH03)", start_pos=P["S7A_START"], end_pos=P["S7A_END"],
     prompt=" ".join([
-        manifest([("@image1", FACE_N), ("@image2", KNEE_N), ("@image3", "is " + STRAP + "."), ("@image4", STAIRS), ("@image5", CARD_N)]),
+        manifest([("@image1", FACE_N), ("@image2", KNEE_N), ("@image3", "is " + STRAP + "."), ("@image4", STAIRS), ("@image5", CARD_N), ("@image6", HALL)]),
         SERIES, LOOK, INHERIT, HOUSE, B5_STAIRS, NOMOUTH, STRAP_ON,
+        "SHE ONLY EVER GOES DOWN: she starts upstairs on the first-floor landing and comes DOWN the stairs facing forwards, toward the hall and toward the camera, in every shot; she is never seen from behind walking away, and never goes up.",
         "One scene covered in 3 shots within a single take, all on the same side of the action line, with the same light, look and wardrobe throughout. Frame 1: " + P["S7A_START"] + ". "
         "The action carries straight across every cut: each shot picks up the movement exactly where the last one left it, in the same direction, and she is where the last shot left her. "
-        "SHOT 1, [0s-3s]: ECU low and front-on at knee height on the landing, Camera on a tripod, locked, her head and shoulders out of frame: her right hand slides the small strap up her bare right shin in one smooth move until it seats just under the kneecap, "
+        "SHOT 1, [0s-3s]: ECU low and front-on at knee height on the landing, Camera on a tripod, locked, her head and shoulders out of frame, behind her leg only the landing's oatmeal carpet, the white skirting and the dark banister spindles — no chair, no stool, no furniture of any kind: the strap starts low on her bare right shin, a hand's length below the knee; her right hand holds the shell and PULLS IT UPWARDS along the shin in one smooth, clearly visible move, about fifteen centimetres, until it seats just under the kneecap, "
         "the bottom of the kneecap settling into the shell's notch exactly as in Image2; her hand lets go and drops to her side. The strap is about a third of the frame wide. "
-        f"SHOT 2, [3s-6.5s]: FULL, high and from behind her at the top of the stairs, looking down the flight exactly as Image4 shows it, Camera on a tripod, locked: Her, {HER_ID}, in {HER_B5}, stands at the top step facing DOWN the stairs; "
-        "she walks down the middle of the treads, a body's width away from the banister, both arms relaxed at her sides the whole time, her hands never near the rail; she glances at the rail once, does not take it, and takes the first step down. " + STEPS_DOWN + " "
+        f"SHOT 2, [3s-6.5s]: FULL, low and front-on from the hall at the foot of the stairs, looking UP the whole flight to the first-floor landing as Image6 shows the staircase, Camera on a tripod, locked: Her, {HER_ID}, in {HER_B5}, stands at the top of the stairs on the landing, facing DOWN the stairs and toward the camera, her face visible; "
+        "she starts down, walking down the middle of the treads toward the camera, a body's width away from the banister, both arms relaxed at her sides the whole time, her hands never near the rail; she glances at the rail once, does not take it, and takes the first step down. " + STEPS_DOWN + " "
         "SHOT 3, [6.5s-10s]: MEDIUM, low and front-on from lower down the flight, Camera on a tripod, locked: she comes down the second and third steps toward the camera, facing forwards, both hands at her sides, eyes on the steps, "
         "her face calm and concentrated, the strap visible on her right knee under the dress hem. Last frame: " + P["S7A_END"] + ".",
         "MOVE: she travels only down the stairs, one tread per step, toward the bottom of the frame; the camera never moves with her.",
@@ -86,7 +87,7 @@ SHOTS.append(dict(beat="SC07-T1", take="SC07-T1", kind="multi", covers=["SC07-SH
         state("HER", "in the outfit of her card on the stairs, the strap on her right knee", "she is three steps down, the banister untouched"),
         "FOCUS: SHOT 1 the strap and kneecap sharp; SHOT 2 deep, the whole flight sharp; SHOT 3 her eyes sharp. The blur is optical: soft and round, never smeared.",
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, "no hand on the banister, no hand resting on the rail, no fingers touching the rail, no facing up the stairs, no stepping backwards, no second strap, no strap on the left knee, no oversized strap, no strap over the kneecap or low on the shin, no cardigan, no talking, no mouth moving", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+        negs(NEG_EQUIP, NEG_MORPH, NEG_STAIRS, "no view from behind her, no back of her walking away, no going up the stairs, no chair, no stool, no furniture behind her leg, no hand on the banister, no hand resting on the rail, no fingers touching the rail, no facing up the stairs, no stepping backwards, no second strap, no strap on the left knee, no oversized strap, no strap over the kneecap or low on the shin, no cardigan, no talking, no mouth moving", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "she grips the banister (the line says she didn't)", "prevented_by": "hand hovers then drops to her side, both hands at her sides, banister negatives"},
            {"risk": "feet skip or shuffle on the treads (FP16)", "prevented_by": "each step spelled foot by foot, one tread per step, stairs negatives"},
            {"risk": "the strap in the wrong place or size (FP02, FP03, FP18)", "prevented_by": "her knee card as Image2, the strap photo, right knee only, size and place negatives"}]))
@@ -170,16 +171,17 @@ SHOTS.append(dict(beat="SC08-T2", take="SC08-T2", kind="multi", covers=["SC08-SH
            {"risk": "the voice ref's words leak (L33)", "prevented_by": "voice only, its words negated"}]))
 
 SHOTS.append(dict(beat="SC08-T3", take="SC08-T3", kind="multi", covers=["SC08-SH04", "SC08-SH05"], duration=12, line=L048 + " " + L049, vo=None, subject_motion="in_place", scene=8,
-    files=["N-FACE", "C1", "L-KITCHEN", "OUT-N-B5", "INFO-ROUTINE"], audios=["C1-L049"],
+    files=["N-FACE", "C1", "L-KITCHEN", "OUT-N-B5", "INFO-ROUTINE", "PROD-FRONT", "INFO-KNEE-N"], audios=["C1-L049"],
     title="Scene 8 · T3 — That’s why nothing worked… This sits on that spot and lifts the weight off. (SH04–SH05; no box — she taps the table by her mug)", start_pos=P["S8C_START"], end_pos=P["S8C_END"],
     prompt=" ".join([
-        manifest([("@image1", FACE_N), ("@image2", SHEET("Barbara", BARB_B5)), ("@image3", KITCHEN), ("@image4", CARD_N), ("@image5", CARD_ROUTINE), ("@audio1", VOICE("Barbara"))]),
+        manifest([("@image1", FACE_N), ("@image2", SHEET("Barbara", BARB_B5)), ("@image3", KITCHEN), ("@image4", CARD_N), ("@image5", CARD_ROUTINE), ("@image6", "is " + STRAP + "."), ("@image7", KNEE_N), ("@audio1", VOICE("Barbara"))]),
         SERIES, LOOK, INHERIT, B5_TABLE, SEATS, NOSPK,
-        "No strap is seen anywhere in this clip: both women's knees are under the table, out of frame. THE LINES, word for word and in this order: " + L048 + " " + L049 + " — Barbara says both; Her says nothing.",
+        "The strap is seen only in SHOT 2, on Her's right knee exactly as Image7 shows it — never on an arm, a wrist or the table. THE LINES, word for word and in this order: " + L048 + " " + L049 + " — Barbara says both; Her says nothing.",
         "One scene covered in 2 shots within a single take, all on the same side of the action line, with the same light, look and wardrobe throughout. Frame 1: " + P["S8C_START"] + ". "
         "The action carries straight across the cut: the second shot picks up the movement exactly where the last one left it, and everyone is where it left them. "
         f"SHOT 1, [0s-6s]: CU in profile on Her, {HER_ID}, in {HER_B5}, Camera on a tripod, locked: she listens, looking down at the strap on her own right knee, lips sealed and jaw still, while Barbara's voice says, off-screen: " + L048 + " "
-        f"SHOT 2, [6s-12s]: MCU over Her's right shoulder onto Barbara, {BARB_ID}, in {BARB_B5}, sitting ACROSS the table facing the camera, the window behind her, Her only the soft back of her head and shoulder at the near left edge, nothing of Her's arms in frame, Camera on a tripod, locked: she taps the table once with two fingers beside her mug, sure, and says: " + L049 + " "
+        "SHOT 2, [6s-12s]: ECU, low and front-on at knee height beside her chair, Camera on a tripod, locked: Her's bare right knee, turned a little out from under the table, the strap of Image6 seated on it exactly as in Image7 — the bottom of the kneecap in the shell's notch, the wordmark toward us, the strap about a third of the frame wide, her dress hem above it; "
+        "Barbara's hand reaches in from the right of frame and her index finger touches the shell once, right on the spot under the kneecap, then rests there, while Barbara's voice says, off-screen: " + L049 + " "
         "The eyelines match across the table. Nobody looks into the lens. Last frame: " + P["S8C_END"] + ".",
         F2, PHYS,
         "While the lines are spoken, Barbara keeps doing one thing with her hands: one tap beside her mug, then her hand resting flat on the table. It is ordinary and unhurried, and the hands never stop to gesture.",
@@ -189,16 +191,21 @@ SHOTS.append(dict(beat="SC08-T3", take="SC08-T3", kind="multi", covers=["SC08-SH
                  "settles it, quiet and certain. Opens soft on 'That’s why nothing worked'; turns on 'pressure'; exits sure on 'lifts the weight off'. Stress on 'pressure' and 'lifts'.",
                  "quiet, certain and warm, matching the face in this shot.", "she is glad, which leaks only through how gently she says it."),
         AUD,
-        negs(NEG_EQUIP, NEG_MORPH, "no strap anywhere in frame, nothing on any arm or wrist, no box, no packaging, no one changing seats, no swapped sides, no women side by side, no cardigan, no Her speaking, no word left out", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+        negs(NEG_EQUIP, NEG_MORPH, "no strap on any arm or wrist, no strap on the table, no strap on the left knee, no oversized strap, no strap over the kneecap, no box, no packaging, no one changing seats, no swapped sides, no women side by side, no cardigan, no Her speaking, no word left out", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "a box appears for the tap (FP19)", "prevented_by": "'beside her mug', box negatives"},
            {"risk": "Her mouths Barbara's off-screen line", "prevented_by": "her lips sealed in SHOT 1, 'Barbara's voice says, off-screen', Her-speaking negative"},
            {"risk": "the strap on the wrong knee (FP18)", "prevented_by": "her knee card, 'her own right knee', left-knee negative"}]))
 
-GEN2 = {"SC07-T2": 2, "SC07-T1": 2, "SC08-T1": 2, "SC08-T3": 2}
+GEN2 = {"SC07-T2": 2, "SC07-T1": 4, "SC08-T1": 2, "SC08-T3": 4}
 FIX2 = {"SC07-T2": "agent's check of v1 (not put up, L16): the strap slid down her shin and round the side of the knee as she walked → the strap fixed to the knee like part of it, never moving on the leg; SHOT 2 framed front-on at knee height so it stays under the kneecap on every step",
         "SC07-T1": "agent's check of v1 (not put up, L16): in SHOT 2 her hand rests on the banister — the line says she didn't need it → she walks the middle of the treads, a body's width from the rail, arms at her sides, never near it",
         "SC08-T1": "agent's check of v1 (not put up, L16): the two women sat side by side, not across the table (the user's positions note) → over Her's shoulder onto Barbara across the table, as SC08-T2, no sit-down move",
         "SC08-T3": "agent's check of v1 (not put up, L16): a strap appeared on a forearm in the foreground of SHOT 2 → no strap refs in this take, no strap in frame, SHOT 2 over Her's shoulder as SC08-T2"}
+GO3 = "board Fix notes + chat \"fix those\" (2026-10-02) — the user's go for SC07-T1 and SC08-T3 gen 4"
+FIX2["SC07-T1"] = "the user (board Fix): wearing it should be the pulling it up wards and remove that going up backwards it should be from the 2nd floor going down the stairs → SHOT 1 the strap pulled clearly upwards from low on the shin; SHOT 2 from the hall below, she starts on the first-floor landing and comes down toward the camera, never seen from behind; earlier (agent, v3 not used): v2's knee close-up showed a wooden chair behind her leg, not the landing → only the landing carpet, skirting and spindles behind it, chair negatives; earlier: " + FIX2["SC07-T1"]
+FIX2["SC08-T3"] = "the user (board Fix): this sits on that spot and lifts the weight off, this should be the stryde strap here → SHOT 2 is the strap on Her's right knee, Barbara's finger touching the spot, her voice off-screen; earlier (agent, v3 not used): in v2 Barbara tapped the folded knee sleeve, not the table beside her mug → she taps the bare wood beside the mug, nothing under her fingers; earlier: " + FIX2["SC08-T3"]
+NOTES_ALL = {"SC07-T1": ["v1 (agent): her hand rested on the banister", "v2 (user): wearing it should be the pulling it up wards and remove that going up backwards it should be from the 2nd floor going down the stairs", "v3 (agent): a chair behind her knee — no furniture behind the leg"],
+             "SC08-T3": ["v1 (agent): a strap on a forearm in SHOT 2", "v2 (user): this sits on that spot and lifts the weight off, this should be the stryde strap here", "v3 (agent): she tapped the knee sleeve — nothing tapped on the table"]}
 FILES = dict(S5.FILES)
 FILES.update({"INFO-KNEE-N": "body/SC07/ingredients/INFO-KNEE-N_v1.png", "P-HOUSE": "plates/P-HOUSE_v1.png", "L-STAIRS": "plates/L-STAIRS_v4.png"})
 AUDIO = {"C1-L049": "voice/C1_line_L049.mp3"}
@@ -213,7 +220,7 @@ if __name__ == "__main__":
                 "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16", "start_image": None,
                 "ingredients_approved": True, "files": [FILES[f] for f in s["files"]], "audios": [AUDIO[a] for a in s["audios"]],
                 "generate_audio": bool(s["line"]), "dialogue": s["line"] or None, "script_line": s["line"] or None, "pace": "unhurried",
-                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": GEN2.get(s["beat"], 1), "user_go": GO, "fix_note": FIX2.get(s["beat"], FIX),
+                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": GEN2.get(s["beat"], 1), "user_go": GO3 if GEN2.get(s["beat"], 1) >= 3 else GO, "fix_note": FIX2.get(s["beat"], FIX), "fix_notes_all": NOTES_ALL.get(s["beat"], []),
                 "risks": s["risks"], "vo": s.get("vo"), "scene": s["scene"], "title": s["title"],
                 "taste": ["HT02", "HT17", "HT18", "HT22", "HT23", "HT26", "FP01", "FP02", "FP03", "FP10", "FP11", "FP12", "FP15", "FP16", "FP18", "FP19"]}
         out = H / f"{s['beat']}.call.json"
