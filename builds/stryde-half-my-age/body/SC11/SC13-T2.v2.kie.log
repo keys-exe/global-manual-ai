@@ -1,1 +1,11 @@
 {"taskId": "f9fd56058711d797aac6fa03b2f3e8bd", "created": true}
+{
+  "taskId": "f9fd56058711d797aac6fa03b2f3e8bd",
+  "state": "success",
+  "credits": 693.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/seedance/1790955702260-h56cj78p3vp.mp4"
+  ],
+  "saved": "body/SC11/SC13-T2_v2.mp4"
+}

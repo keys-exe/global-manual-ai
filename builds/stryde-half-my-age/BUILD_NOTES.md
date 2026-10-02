@@ -194,3 +194,4 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
   - SC09-T1 v5: the model drew a big hinged brace, not the strap.
   
   SC12-T1 v2 and SC13-T2 v2 are rendering (the jackets named per friend; Her inside the hall, the sister outside). SC09-T1 is back on regenerate and v4 stays current until a good render lands. A sixth generation needs the user's go. Planned fix: name the strap exactly, attach INFO-KNEE-N, and add a negative for "no hinged brace".
+- 2026-10-02 — SC12-T1 v2 (882 cr) and SC13-T2 v2 (693 cr) passed my check: the jackets are right, Her is inside and the sister outside, and the lines are verbatim. Both are on the board To check. All of SC11–SC13 is now To check. SC09-T1 waits for the user's go on a sixth generation.
