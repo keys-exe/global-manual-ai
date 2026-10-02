@@ -1,0 +1,4 @@
+L-SHELF https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261002_180003_5e50168c-4821-486c-8813-a7e869964a0d.png
+L-WALL https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261002_180003_fadbbc44-9a7b-4a42-9100-2c09470fe11c.png
+PROP-BOTTLE https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261002_180004_a7db8e98-d41f-4ded-8956-6a1a477a883b.png
+PROP-PAINT https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261002_180004_06e22e8a-3350-4c4f-b891-0af957a784bf.png

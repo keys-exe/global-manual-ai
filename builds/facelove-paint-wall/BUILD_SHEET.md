@@ -162,3 +162,6 @@ Wardrobe (one recording day, §19 talking-head lock): the avatar's oatmeal textu
 | F10 | Offer: 2 sticks for almost the price of 1 + free primer + mystery gift + free shipping + 30-day guarantee must match the live offer | as written |
 | F11 | The brief says "glowing / radiant"; the product sheet bans those words in prompts (they render as shine) | written as an even, matched, natural finish |
 | F12 | The avatar wears lashes, eyeliner and lip gloss; the after sheet wears only the matched foundation | presenter scenes in the after look (foundation only) — say if she should keep the avatar's eye makeup and lip colour |
+| F13 | Face arc: the script has her "honest and tired" in Scene 2 and "glowing" from Scene 8; one face can't be both in one sitting | bare (N-BEFORE) from the hook through the demonstration, the stick goes on in the Scene 7 macro, finished (N-AFTER) from Scene 8 — say if she should wear it from the start |
+| F14 | The hook shows the stick closed in her hand (VN01), but the music turns on the product's first frame (§40A) | the music turns on the stick's reveal in Scene 6 (B19) |
+
