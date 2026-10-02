@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.90.3 — supersedes all prior versions.** *(V7.90.3: in a Pixar build "normal anatomy" is the Pixar S3; `ANAT-PIX` and the style line merge into one look paragraph inside the §6A budget; no scene frame as the style on an anatomy beat; `pixar_anatomy: true` runs the Pixar checks on a build from before V7.90 — §12A-1, §24O, `preflight.py`, LESSONS L36. V7.90.2: the Pixar S3 "normal anatomy" is the team's no-muscle pick (`references/anatomy/S3_pixar_locked.jpg`): ivory bones, white tendons and ligaments in a see-through leg outline on grey; the muscle version is `S3-MUSCLE`, only when the line names a muscle — §12A-1. V7.90.0: Pixar anatomy, each realistic style's Pixar version one for one)*
+**Version 7.90.6 — supersedes all prior versions.** *(V7.90.6: only the owner's Fix notes teach the system — boards mark each Fix with `imageFaultOwner` / `faultOwner`, the agent carries it as `noteOwner`, and `fix_patterns.py` counts only those; V7.90.5: learning from mistakes runs only on the owner's account — §34A, §34B)*
 
 ---
 
@@ -639,7 +639,7 @@ Frame with headroom, lead room, and empty space where the movement is going. **A
 | **1** | **Every reference is numbered and given a role**, in one line right after the framing, in attach order: `Image 1 is the product. Image 2 is the woman. Image 3 is the room.` The prose then uses them by number and asks for **fidelity, not resemblance**: `the product in Image 1 copied exactly — same shape, same parts, same markings, nothing redesigned`. **The photo attached is the one whose angle matches the shot's angle** (a front photo for a front-on shot, the three-quarter photo for a three-quarter shot, the back photo from behind); a reference at the wrong angle is the main way the product melts into a generic one. | step 3 | wrong product, blended references |
 | **2** | **Scale floor.** The thing the beat is about — the product, the named body structure, the hands, the object — is **at least a quarter of the frame's width** (the boards' fail line is a fifth: below it the product comes back generic). Said as a fraction of the frame, beside the true-size anchor: `the strap about a third of the frame wide, 12 × 5 cm on her knee`. If the line's framing cannot give that, the beat is reframed closer or split into a wide plus an insert (§34A HT10) — never one wide frame carrying a small product. | step 2 | generic product, lost detail |
 | **3** | **Match a picture = edit that picture.** A shot that must match a plate or a confirmed earlier beat exactly (the same stairs, the same table, the same outfit and props, §30C/§34A HT08–HT09) is generated as an **image edit of that picture** — image-to-image with the plate or frame as Image 1 and the prompt opening as an edit: `Keep this photo exactly as it is — the room, the camera, the light. Add …` — never a new text-to-image with the plate attached as a reference. The camera stays where the plate's camera is, so the framing rule for the person bends to the plate, not the plate to the person. | step 3 | wrong room, wrong position, drifting continuity |
-| **4** | **Counted inventory, placed limbs.** The prompt says what is in the frame and closes the list, positively: `In the frame: one woman, one kitchen chair, one glass. Every other surface bare.` Every person's **every visible hand and foot has a stated place and job** — `right hand on the rail, left hand loose at her side, weight on the right foot` — and a position in a space is **counted, not named**: `on the 7th of 14 steps, six steps above her`, never "in the middle of the stairs". A hand with no job is drawn holding something; a limb with no place is drawn twice. | step 4 | extra hands, covered product, props, wrong place |
+| **4** | **Counted inventory, placed limbs.** The prompt says what is in the frame and closes the list, positively: `In the frame: one woman, one kitchen chair, one glass. Every other surface bare.` Every person's **every visible hand and foot has a stated place and job** — `right hand on the rail, left hand loose at her side, weight on the right foot` — and a position in a space is **counted, not named**: `on the 7th of 14 steps, six steps above her`, never "in the middle of the stairs". A hand with no job is drawn holding something; a limb with no place is drawn twice. **The product is counted in that list too** *(V7.90.4, L41)*: `In frame: her, exactly one strap on her right knee, her left leg bare…` — a product named only in the shot line, never counted, is drawn twice (PR-04a: two straps on one leg, twice). `preflight.py` fails a product shot whose `In frame` list doesn't count the product. | step 4 | extra hands, covered product, props, wrong place |
 | **5** | **Plain surfaces.** One clause on every beat: `clothing, footwear, bags, packaging, walls and signs plain — no lettering, logos or labels anywhere except the product's own wordmark, exactly as in Image 1`. Generators fill every plain surface with garbled text and a swoosh unless told the surfaces are plain. Counts as one of the five negatives. **No speech marks anywhere in the prompt** *(V7.88.1, L28)*: a line that quotes speech goes in without its speech marks — quoted words are printed on the frame as a caption. | step 6 | garbled text, brand logos |
 | **6** | **Gaze and face.** Where the face shows, the prompt says where the face turns and where the eyes look: `square to the lens, both eyes on it, mouth closed` or `looking down at the next step`. An unstated gaze is a three-quarter turn away. | step 4 | face turned away, mid-syllable mouth |
 | **7** | **The camera is a viewpoint, never an object; nothing outside the frame is named.** The register line describes the capture (`an ordinary iPhone photo, 1x lens, daylight`), never the phone, tripod or the mug it leans on — every named device gets drawn. Nothing the prompt names is outside the picture ("a tap running out of frame" drew a tap): write only what the frame holds. The one exception is a body part cut by the frame edge, said as a positive fact (`the left leg out of frame`). | step 5 | phones, tripods and props in shot, invented objects |
@@ -6237,8 +6237,10 @@ When the user flags a problem with a specific shot:
 
 **Origin:** user, 2026-09-29 — "you should learn what are the things getting fixed on the board, learn the pattern so you know what type of image or videos we want". A Fix note is the user saying what they want. One note fixes one beat; the same note twice is a rule, and it is applied before the next render, not after the next Fix.
 
+**Only the owner's Fix notes count** *(V7.90.6 (user, 2026-10-02 — "only my fix notes should count"))*. A Fix note teaches the system only when the board marked it as written by its owner, the `keys-exe` owner's account that publishes the boards. A board from template V7.90.6 writes `imageFaultOwner` / `faultOwner` (`true` or `false`) with every Fix. When the agent answers that Fix, it copies the flag onto the new version entry as `noteOwner`. Notes from anyone else (teammates on the board, another account), and unmarked notes on older boards, are still answered for their build exactly as before. They never become a House Taste or fix-pattern rule, and `fix_patterns.py` lists them apart as "not counted". Fix requests the owner types in chat on the owner's account count as the owner's.
+
 **The loop — both run modes, every build:**
-1. **Harvest.** After every Fix round (and when a build starts or resumes), dump the build's boards (Current and Old, `ArtifactData list` with `out_dir`) and run `scripts/fix_patterns.py <dirs> --md <out>`: every user Fix note, by build, beat, step, model, with a rough class. Agent bookkeeping and agent verdicts are kept apart.
+1. **Harvest.** After every Fix round (and when a build starts or resumes), dump the build's boards (Current and Old, `ArtifactData list` with `out_dir`) and run `scripts/fix_patterns.py <dirs> --md <out>`: every Fix note the owner wrote, by build, beat, step, model, with a rough class (others listed apart, never counted). Agent bookkeeping and agent verdicts are kept apart.
 2. **Read and generalise.** A note that repeats — on two beats, or in two builds — becomes a rule, written as what to do, positively. **Generic** rules (any product, any build) go in the House Taste table below; **product-specific** ones (its shape, size, back, placement, packaging, copies) go in `products/<product>/fix_patterns.md`. Each rule carries its source count and the builds it came from. A one-off note stays a beat fix.
 3. **Apply.** Before writing any beat image or video prompt, read the House Taste and the product's `fix_patterns.md`. The §6A step 4 / §35A step 4 facts come from them first; the act map (§18 step 5) is checked against HT01–HT05 and HT10 before it is approved. `preflight.py` wants the rules applied listed on the call (`"taste": ["HT03", "FP02", …]`).
 4. **Report.** New or changed rules are listed to the user in one line at the next delivery; the user's notes are the authority, so a learned rule is written in the same turn (like a §34 correction), and the user can strike it. A system rule learned here never re-cuts an existing build (§34).
@@ -6282,6 +6284,8 @@ When the user flags a problem with a specific shot:
 **Origin:** user, 2026-10-01 — "you should always learn from your mistake to improve the things". §34 makes the user's corrections to a *render* permanent, and §34A learns from the board's Fix notes. Neither caught the agent's own process mistakes: a rule that contradicted another (republishing boards against "never touch existing builds"), a fix kept to one build that belonged in the system, a default changed without updating what depends on it, a claim written before it was checked. Those repeated until the user caught them.
 
 **The log is `LESSONS.md` at the repo root** — one numbered row per mistake, newest first, never deleted: what went wrong · how it was caught (the user's words, or the agent's own check) · the cause · **the rule from now on** · where the fix lives.
+
+**Only the owner's account runs it** *(V7.90.5 (user, 2026-10-02 — "specially the learn from your mistake i should be the only one who can do that, the others are just users only i can use that learn from your mistake"))*. Before anything below, the session checks the GitHub account it runs as (`get_me`). **Only on `keys-exe`** do corrections, repeats and the agent's own errors become lessons and rule changes. On every other account the people are users of the system: the session stops or undoes and redoes the build's work as asked, and that is all. No `LESSONS.md` row, no rule or check changed, no House Taste or fix-pattern rule, no note for the owner. Their corrections stay inside that build.
 
 **When:** the same turn the user corrects, stops or undoes something the agent did, says "I said…", repeats a request, or the agent finds its own error (a wrong claim, a check it skipped, something it shipped broken).
 
@@ -9441,6 +9445,40 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
 
 **Camera numbers and the LUT — measure on the first film build (2026-09-28).** (a) Same frame, same seed: T2.0 vs T5.6 and 35mm vs 85mm in `CAM-FILM` — does depth or perspective change, or only the scale wording? (b) The shutter wording on Seedance and Kling — any motion-blur difference? (c) `COLOUR-KEY` with and without `[KELVIN]` across a five-shot scene — `light_check.py colour` warmth spread. (d) CapCut desktop vs `lut.py apply` on the same clip with the same `LUT-[BUILD].cube` — identical within ±2 levels?
+
+---
+
+# CHANGELOG — V7.90.5 → V7.90.6 *(patch — the owner's call)*
+
+| § | Change |
+|---|---|
+| **34A** | Only the owner's Fix notes count. The board marks each Fix (`imageFaultOwner` / `faultOwner`, from the viewer's `isOwner()`), and the agent copies the flag to the version entry as `noteOwner`. Others' notes and unmarked older notes are answered for their build but never become a rule. `fix_patterns.py` counts only marked notes and lists the rest as "not counted" |
+| **16A** template | `setVerdict` writes `<fault>Owner` on every Fix (new boards only, L05) |
+| Files | `dashboard/generation_board.html`, `scripts/fix_patterns.py` (`--all-authors` to read the rest), both skills, CLAUDE.md |
+
+**Origin:** user, 2026-10-02 — "only my fix notes should count". Tested: a dump with two owner-marked notes and two unmarked ones counts two, and lists the other two as "not counted"; the board's script parses (`node --check`).
+
+---
+
+# CHANGELOG — V7.90.4 → V7.90.5 *(patch — the owner's call)*
+
+| § | Change |
+|---|---|
+| **34B** | "Only the owner's account runs it": the session checks its GitHub account (`get_me`). Only `keys-exe` turns corrections, repeats and the agent's own errors into lessons and rule changes. On any other account a correction is fixed in that build's work only: no `LESSONS.md` row, no rule or check, no House Taste or fix-pattern rule, no note for the owner |
+| Files | CLAUDE.md, AGENTS.md, both skills, the `LESSONS.md` header |
+
+**Origin:** user, 2026-10-02 — "specially the learn from your mistake i should be the only one who can do that, the others are just users only i can use that learn from your mistake".
+
+---
+
+# CHANGELOG — V7.90.3 → V7.90.4 *(patch — the agent's own render check, fixed at its source, §34B)*
+
+| § | Change |
+|---|---|
+| **6A** rule 4 | The product is counted in the frame inventory (`exactly one strap on her right knee`, the other leg bare); an uncounted product is drawn twice |
+| Files | `preflight.py` (a product shot whose `In frame` list doesn't count the product fails), both skills, CLAUDE.md, LESSONS L41 |
+
+**Origin:** the agent's own render check on `stryde-71-stairs-pixar-song` PR-04a, 2026-10-02: v1 A and its same-prompt re-render each drew two straps on one leg; the prompt's `In frame` list named her, the lanes and the grass but never counted the strap. New prompts only; no confirmed render is redone.
 
 ---
 

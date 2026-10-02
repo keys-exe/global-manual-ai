@@ -1,0 +1,61 @@
+{
+ "beat": "M-02a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"while your knee got worse. This one fixes why it hurts.\": From this frame: a slow soft warm glow settles behind the strap on the right knee's spot — about two seconds; camera locked, the frame holds still. Only the light changes: a soft warm glow builds behind the strap's shell on the right knee model and holds; the strap is one rigid solid object, its outline identical in every frame — the black shell with its two pointed peaks round the notch, a chrome slide at each end, the band the same width; the left knee's sleeve outline and amber haze stay as they are; the bones, the white tendon ribbons, the see-through peach outline and the pale grey backdrop stay exactly as in the frame; nobody in the frame, nobody speaks. Stylized 3D animated anatomy, exactly on model from the frame. The camera does not move; no zoom; no cut.",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_111200_e2148ba2-e154-4ae6-8720-59489dc01597.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "while your knee got worse. This one fixes why it hurts.\"",
+ "motion_plan": "From this frame: a slow soft warm glow settles behind the strap on the right knee's spot — about two seconds; camera locked, the frame holds still",
+ "motion_confirmed": true,
+ "pace": "about two seconds",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "user_go": null,
+ "fix_note": "user Fix \"dont change the shape of the product\" → clip v1 pushed in and Kling redrew the growing strap (shell flattened, slides changed, a light line on its edge); now a locked camera, only the light changes, the strap one rigid object identical in every frame",
+ "fix_notes_all": [
+  "user Fix \"dont change the shape of the product\" → clip v1 pushed in and Kling redrew the growing strap (shell flattened, slides changed, a light line on its edge); now a locked camera, only the light changes, the strap one rigid object identical in every frame"
+ ],
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v2 of this beat (from the confirmed image M-02a@v6A2, job e2148ba2-e154-4ae6-8720-59489dc01597)"
+}

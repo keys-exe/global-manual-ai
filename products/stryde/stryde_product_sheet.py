@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.39
+STRYDE PRECISION STRAP — PRODUCT SHEET, SINGLE FILE.  V7.49.38
 
 One artefact for §18 step 2. Attach this file alone when absorbing the
 product; it carries everything that step needs.
@@ -511,10 +511,10 @@ WORDMARK_EXPECTED = {
 PAD_BACK_SHOT = (
 "The strap turned round so the back of the shell faces the camera: the inside of the shell, the pad that "
 "sits against the skin, fills the frame -- a mid-grey soft-touch pad insert filling the shell's two-peaked "
-"outline inside a thin matte-black rim, the same shape left and right, one smooth ungrooved raised ridge "
-"lying level across the middle of the pad like a short dog bone -- rounded ends swelling slightly under each "
-"peak, a gently narrower waist beneath the notch -- with fine shallow parallel grooves in curved rows following "
-"the pad's outline on both sides, meeting in a small point on the centre line -- the two "
+"outline inside a thin matte-black rim, one smooth ungrooved raised ridge running through it like the midrib "
+"of a leaf -- a long rounded comma, narrow just below one peak, running diagonally down beneath the notch and "
+"swelling into a broad low bulb above the bottom edge -- with fine shallow grooves fanning out from it on both "
+"sides in curved rows like leaf veins -- the two "
 "peaks rising along its top edge, a chrome slide at each end, the band running away from the slides behind "
 "it. No wordmark is visible from this side.")
 
@@ -543,14 +543,7 @@ ANAT_A_POINT_TIGHT = (
 "The glow is one tight, bright spot on the patellar tendon just below the kneecap, sharp-edged and small, "
 "never spreading down onto the shin bone or across the joint; the bones and muscles around it stay calm.")
 
-# --- the inner pad (V7.49.23, redrawn V7.49.33, redrawn again V7.49.39) ------
-# V7.49.39 (user, 2026-10-02: "the back_ref_v2 should be the correct shape of
-# that"): the inside is now read off the user's two studio photos stored as
-# stryde_refs/back_ref_v2.png (flat, pad to the lens) and back_ref_v2_band.webp
-# (the band looped round). A symmetric bowtie pad with a level dog-bone ridge.
-# The comma-ridge reading below (inner_face.jpg, back_inner.jpg, the old
-# back_ref_v2 now in retired/, back_silicone.webp) is superseded for the pad's
-# shape -- never attach those for the inside again.
+# --- the inner pad (V7.49.23, redrawn V7.49.33) ------------------------------
 # V7.49.33 (user, 2026-09-29: "this is the inside of the strap"): read off the
 # user's photo and clip of the real strap, stryde_refs/inner_face.jpg and
 # inner_face_clip.mp4 (layer 1). They outrank back.webp, whose inside reads
@@ -560,18 +553,17 @@ ANAT_A_POINT_TIGHT = (
 # the photo is hand-held and partly covered by a thumb; a flat-on photo of the
 # inside would lock it.
 INNER_PAD = (
-"The inside of the shell is a mid-grey soft-touch pad insert that fills the shell's two-peaked bowtie outline "
-"inside a thin matte-black rim, the same shape on the left and the right. One smooth ungrooved raised ridge lies "
-"level across the middle of the pad like a short dog bone: rounded ends swelling slightly under each peak and a "
-"gently narrower waist beneath the notch, centred left to right. The rest of the pad is covered in fine shallow "
-"parallel grooves in curved rows that follow the pad's outline on both sides and meet in a small point on the "
-"centre line above and below the ridge. No markings and no wordmark on this side.")
+"The inside of the shell is a mid-grey soft-touch pad insert that fills the shell's two-peaked outline inside "
+"a thin matte-black rim. One smooth ungrooved raised ridge runs through it like the midrib of a leaf: a long "
+"rounded comma that starts narrow just below one peak, runs diagonally down beneath the notch and swells into "
+"a broad, low rounded bulb above the bottom edge. The rest of the pad is covered in fine shallow parallel "
+"grooves fanning out from the ridge on both sides in curved rows, like the veins of a leaf. No markings and no "
+"wordmark on this side.")
 
 # I2V / T2I negatives for any view of the inside (V7.49.33).
 NEG_INNER_PAD = (
 "no plain featureless black inside, no smooth ungrooved pad, no pad without its raised ridge, no second ridge, "
-"no diagonal comma-shaped ridge, no ridge running from one peak down to the bottom edge, no lopsided pad with "
-"one lobe larger than the other, no crescent ridge hugging the notch, "
+"no ridge running straight across the shell, no crescent ridge hugging the notch, "
 "no blue or coloured gel, no glossy wet-look pad, no pad spilling past the shell's rim, no text or logo on the "
 "inside")
 
@@ -762,7 +754,7 @@ PRODUCT_SET_VIEWS = {
     "back_view": ("Seen exactly straight-on from the back, level with the product, no turn and no tilt, as in "
                   "the attached back product photo: the band crossing the front of the frame with its two black "
                   "keeper loops side by side at the centre, the shell's inner face behind it -- the mid-grey grooved "
-                  "pad insert with its level dog-bone ridge inside a thin black rim -- with both peaks "
+                  "pad insert with its raised comma-shaped ridge inside a thin black rim -- with both peaks "
                   "rising above the band, a chrome slide at each end, no wordmark visible."),
     "side_view": ("Seen exactly from the side at ninety degrees, level with the product, looking straight at "
                   "one end: that end's chrome slide faces the camera flat with its three dotted chevrons and the "
@@ -849,7 +841,7 @@ REFS_USE = {
     "worn_rear":  ("stryde_refs/worn_rear.jpg",),
     "package_closed": ("stryde_refs/package_closed.jpg",),   # V7.49.27, locked
     "package_open":   ("stryde_refs/package_open.jpg",),
-    "inner":          ("stryde_refs/back_ref_v2.png",),      # V7.49.39 (user, 2026-10-02), the inside of the shell
+    "inner":          ("stryde_refs/back_inner.jpg",),       # V7.49.38 (user-confirmed), the inside of the shell
 }
 REFS_USE_STATUS = "LOCKED V7.49.23 by the user"
 HELD_EXAMPLE = "stryde_refs/product_held.jpg"   # an example of grip 1 only -- never locked, optional
@@ -1306,8 +1298,7 @@ UNSETTLED = {
     "inner_face_script_RESOLVED_7_49_33":
         "RESOLVED V7.49.33 by the user's photo and clip of the real strap (inner_face.jpg, "
         "inner_face_clip.mp4): the inside is a mid-grey pad insert with fine curved grooves and one "
-        "raised comma-shaped ridge like a leaf midrib, in a thin black rim. SUPERSEDED V7.49.39 for the shape: "
-        "a symmetric bowtie pad with a level dog-bone ridge, back_ref_v2.png (INNER_PAD, NEG_INNER_PAD). "
+        "raised comma-shaped ridge like a leaf midrib, in a thin black rim (INNER_PAD, NEG_INNER_PAD). "
         "Was: V7.49.23 plain matte black, read off back.webp -- wrong for the inside. Prompts still say "
         "'the pad' and never 'silicone' (the word renders the soft glossy fake shell). Open: the "
         "ridge's exact ends (hand-held photo, thumb over part of it).",
@@ -1399,23 +1390,12 @@ PRODUCT_PHOTOS = {
     "back.webp": ("rear view: the band doubled through the slides and running round the back, two "
                   "black moulded keeper loops side by side at the centre of the band's outer face, the "
                   "peaks rising behind. Its inside reads plain black -- SUPERSEDED V7.49.33 by "
-                  "back_ref_v2.png for the inside. 2026-10-02 (LESSONS L37, then L38): the shell's bowtie "
-                  "outline matches the corrected back_ref_v2.png (V7.49.39); still never edit back.webp, and "
-                  "take the inside from back_ref_v2.png. It stands for the band, slides and keepers"),
-    "back_ref_v2.png": ("V7.49.39 (user, 2026-10-02: 'the back_ref_v2 should be the correct shape of that'): "
-                        "the user's studio photo, lying flat, pad to the lens -- the black shell's symmetric "
-                        "bowtie (two peaks, bottom edge curving up), the grey grooved pad in the same outline "
-                        "inside a thin black rim, one level dog-bone ridge across its middle, a chrome slide "
-                        "at each end with the band ends through them. THE image for the shape of the back and "
-                        "the inside (REFS_USE['inner']). The earlier back_ref_v2 (lopsided pad, diagonal comma "
-                        "ridge) is retired/back_ref_v2_comma.png"),
-    "back_ref_v2_band.webp": ("V7.49.39, the user's studio photo of the same back with the band looped round "
-                              "behind it, two black keepers at the band's centre. Shows the back's shape on "
-                              "the closed strap"),
-    "back_silicone.webp": ("2026-10-02 (stryde-half-my-age SC06): the old comma-ridge back. SUPERSEDED for the "
-                           "pad's shape V7.49.39 by back_ref_v2.png -- new work never attaches it"),
-    "back_inner.jpg": ("SUPERSEDED V7.49.39 for the pad's shape by back_ref_v2.png (comma ridge, lopsided pad). "
-                       "Was V7.49.38, confirmed by the user: the studio reference of the inside, made from "
+                  "inner_face.jpg for the inside only. 2026-10-02 (user: 'the shape of the black and gray "
+                  "is not the same as the back_ref_v2'; LESSONS L37): its shell outline (a bowtie with the "
+                  "bottom edge curving up) does not match the confirmed back, back_ref_v2.png -- never use "
+                  "back.webp for the shell's shape or the inside, never edit it to fix them; take both from "
+                  "back_ref_v2.png. It still stands for the band, slides and keepers"),
+    "back_inner.jpg": ("V7.49.38, confirmed by the user: the studio reference of the inside, made from "
                        "inner_face.jpg (Kie nano-banana-pro, then one edit removing two loose band pieces). "
                        "Lying flat on seamless white, the grey grooved pad with its raised ridge in the black "
                        "rim, a chrome slide at each end with the band ends through them. THE image to attach "
@@ -1423,7 +1403,7 @@ PRODUCT_PHOTOS = {
     "inner_face.jpg": ("V7.49.33, the user's photo of the real strap: the inside of the shell -- a mid-grey "
                        "pad insert in a thin black rim, fine curved parallel grooves, one smooth raised "
                        "comma-shaped ridge like a leaf's midrib with fine grooves fanning from it; black band ends through the chrome slides. "
-                       "SUPERSEDED V7.49.39 for the pad's shape by back_ref_v2.png"),
+                       "The authority for the inside (INNER_PAD)"),
     "inner_face_clip.mp4": ("V7.49.33, the user's 3.5s clip turning the strap in the hand: the same inside "
                             "from several angles. For reading only, never attached to a call"),
     "three_quarter_a.jpg": "three-quarter, floating: wordmark reads left of the notch in this view (yaw)",
@@ -1991,10 +1971,7 @@ def verify(verbose=False):
     if "no plain featureless black inside" not in NEG_INNER_PAD:
         fails.append("NEG_INNER_PAD lost the plain-black clause")
     if not os.path.exists(os.path.join(here, REFS_USE["inner"][0])):
-        fails.append("back_ref_v2.png (the inside reference) missing")
-    for txt, name in ((INNER_PAD, "INNER_PAD"), (PAD_BACK_SHOT, "PAD_BACK_SHOT")):
-        if "comma" in txt.lower() or "diagonal" in txt.lower() or "dog bone" not in txt.lower():
-            fails.append("%s lost the V7.49.39 shape (level dog-bone ridge, symmetric pad)" % name)
+        fails.append("inner_face.jpg missing")
     if "composite" in SEAT_REFERENCES:
         fails.append("SEAT_REFERENCES names the missing composite")
 
@@ -2103,7 +2080,7 @@ def counts():
 # ==================================================================
 SHEET_MD = r'''# Product Sheet — Stryde Precision Strap
 
-**V7.49.39.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
+**V7.49.38.** This is the prose half of `stryde_product_sheet.py`, embedded in it and emitted with `--md`. It carries the spec, the phrasing table, the claim register and the reference registry; the module around it carries the slots, the locked strings, the measured ratios and the assertions. **Never retype a string into a prompt — import it.**
 
 The geometry ratios were measured off the five V7.48 canonical renders (63, 64, 65, 66, 68) with a roll correction applied. **Since V7.49.11 the supplied product photos (`stryde_refs/`) are the product** (layer 1) and outrank those renders wherever they disagree. Where a figure is external it is marked Tier 3 and is not advertiser-held.
 
@@ -2185,7 +2162,7 @@ Stryde Precision Strap — a patellar tendon strap. A rigid moulded anterior she
 | Worn — straight, bent, rear | + `worn_front.jpg`, `worn_bent.jpg` or `worn_rear.jpg` |
 | Putting it on | + `worn_front.jpg` (the end position) |
 | Box — closed / open | + `package_closed.jpg` or `package_open.jpg` (locked V7.49.27) |
-| Inside of the shell to the lens (`pad_back`, `back_view`) | + `back_ref_v2.png` (V7.49.39 — your studio photo of the back: symmetric bowtie pad, level dog-bone ridge; `back_ref_v2_band.webp` shows it on the closed strap). `back_inner.jpg`, `inner_face.jpg` and `back_silicone.webp` show the old comma ridge — never attached for the inside again |
+| Inside of the shell to the lens (`pad_back`, `back_view`) | + `back_inner.jpg` (V7.49.38 — the confirmed studio reference of the inside, made from your photo `inner_face.jpg`; it outranks `back.webp`'s plain black inside) |
 | Held | the two originals only; `product_held.jpg` is an optional example of one grip, **not locked** — pick a grip from `HELD_GRIPS` |
 
 Never more than the two originals plus one. **Retired:** `product_front.jpg`, `product_back.jpg`, `product_profile.jpg`, `three_quarter_a.jpg`, `three_quarter_b.jpg`, and the never-stored composite `STRYDE_reference_v7_49_11.png`. Image plus names is the pair; either alone leaks.
@@ -2320,7 +2297,7 @@ A frame more than ~20% off its anchor is REGENERATE Q2. Drift found V7.49.21 and
 
 **Held is not locked** (user): there are many right ways to hold it. Choose from `HELD_GRIPS` per beat — bottom-edge pinch, open palm, fingertips behind, turned through the light, two-hand presentation — and vary them across a build. Fixed rules: on the pad or the shell's edge; never on the band, never on the slides, never across the wordmark; peaks and notch visible. I2V negatives: `NEG-HELD-P`.
 
-**The inner pad** (the user's "silicone pad") — **redrawn V7.49.39** from the user's studio photos (`stryde_refs/back_ref_v2.png`, `back_ref_v2_band.webp`; user, 2026-10-02: "the back_ref_v2 should be the correct shape of that"): a mid-grey soft-touch pad insert filling the shell's two-peaked bowtie outline inside a thin matte-black rim, the same shape left and right; one smooth ungrooved raised ridge lying level across the middle of the pad like a short dog bone -- rounded ends swelling slightly under each peak, a gently narrower waist beneath the notch; fine shallow parallel grooves in curved rows following the pad's outline on both sides, meeting in a small point on the centre line above and below the ridge. No markings, no wordmark on this side (`INNER_PAD`, negatives `NEG_INNER_PAD`). Any shot with the inside to the lens attaches `back_ref_v2.png` (`refs_for("pad_back")`). **Superseded for the pad's shape:** the V7.49.33 comma ridge running diagonally from one peak (`inner_face.jpg`, `inner_face_clip.mp4`, `back_inner.jpg`, `back_silicone.webp`, and the earlier `back_ref_v2`, now `retired/back_ref_v2_comma.png`). `back.webp` stays the reference for the band, loops and slides. Prompts say "the pad", never "silicone".
+**The inner pad** (the user's "silicone pad") — **redrawn V7.49.33** from the user's photo and clip of the real strap (`stryde_refs/inner_face.jpg`, `inner_face_clip.mp4`): a **mid-grey soft-touch pad insert** filling the shell's two-peaked outline inside a **thin matte-black rim**; **one smooth, ungrooved raised ridge** running through it like the midrib of a leaf — a long rounded comma, narrow just below one peak, running diagonally down beneath the notch and swelling into a broad, low bulb above the bottom edge; and **fine shallow grooves** fanning out from the ridge on both sides in curved rows, like leaf veins. No markings, no wordmark on this side (`INNER_PAD`, negatives `NEG_INNER_PAD`). The V7.49.23 reading — plain smooth matte black, off `back.webp` — is retired: `back.webp` stays the reference for the band, loops and slides, but not for the inside. Any shot with the inside to the lens attaches `back_inner.jpg` (`refs_for("pad_back")`, V7.49.38) — the confirmed studio reference made from `inner_face.jpg`, which stays the source photo. Prompts say "the pad", never "silicone". *Unverified:* which peak (seen from the front) the ridge's narrow end sits under.
 
 **Standing negatives from observed failures** (`NEG-OBSERVED`, dated in `NEG_OBSERVED_LOG`): V-shaped notch · crown or horn peaks · deep U or slab shell · slide on the face or on the band · invented slide frame · sideways chevrons · band out of the shell's bottom edge · product tipped · watch-strap band · buckle-shaped keeper. I2V only.
 

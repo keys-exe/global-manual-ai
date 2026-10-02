@@ -1,0 +1,62 @@
+{
+ "beat": "R-03b",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"She pulled up her pant leg. She had on a little black strap,\": From this frame: she holds the pose, the strap to the lens, and gives one small proud lift of her chin — about two seconds; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay sealed and her jaw still from the first frame to the last, her face holding the expression of the frame — a silent clip, nobody speaks or sings. Seated on the kitchen chair, her right leg stretched toward the lens, she holds the pose with both hands open beside the strap and lifts her chin once with a proud closed-mouth grin; on her right knee the strap stays rigid and exactly as in the frame — black shell, two peaks, chrome slides; the kitchen stays exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut; the strap never slides.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_103445_62bfbf64-6979-4f4b-86d8-750753fee73d.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "She pulled up her pant leg. She had on a little black strap,",
+ "motion_plan": "From this frame: she holds the pose, the strap to the lens, and gives one small proud lift of her chin — about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one pull",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 3,
+ "user_go": "user 2026-10-02: \"R-03b video of this\"",
+ "fix_note": "user Fix \"make her look like she is showing the stryde strap like flexing it\" → the new picked frame (v3), the pose held, one proud chin lift, mouth sealed",
+ "fix_notes_all": [
+  "clip v1 rolled the hem down over the strap → user Fix \"she should be showing it not hiiding\"",
+  "user Fix \"make her look like she is showing the stryde strap like flexing it\" → the new picked frame (v3), the pose held, one proud chin lift, mouth sealed"
+ ],
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v3 of this beat (from the confirmed image R-03b@v4A, job 62bfbf64-6979-4f4b-86d8-750753fee73d)"
+}
