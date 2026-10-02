@@ -31,8 +31,8 @@ Drive task folder `1_OhMLzSEs_ftxQG1Np6NDBy2npGQ_iCP`
 - Earrings left off the sheets (sheet standard bans jewellery).
 
 ## For the owner (keys-exe) — not made from this account
-- Add this build's row to the CLAUDE.md board table (four links above) and the Routine line (`trig_01X9WrHvy3AgGLeCqM9cSkRV`, :24 UTC).
+- Add this build's row to the CLAUDE.md board table (four links above) (its Routine is switched off per V7.92.3).
 - `fetch_drive.py` takes a script docx whose brief comes before a `Script` heading as the whole script; it could start at that heading.
 
 ## Next (on the user's go)
-Voice stage (§22U) — the voice frames N-VOICE-SHELF-B, N-VOICE-WALL-B, N-VOICE-SHELF-A, Kling voice-source takes, clone, VO, HeyGen talking heads, trim; then placement and the hooks (step 6). (Done: steps 4–5: plates at 16:9 — the bright clean presenter room with the shelf of generic foundations (Scenes 1, 9, 10), the paint wall set (Scenes 4–5), her mirror/vanity corner (Scene 2); product info cards; act map by phrase with the Visual Pitch (the Scene 5 wall/cheek matched pair, the Scene 7 one-take macro); angles, wardrobe (one recording day + the before day), music register map, placement — then the voice (§22U) and the talking heads.)
+Voice stage (§22U) — the voice frames N-VOICE-SHELF-B, N-VOICE-WALL-B, N-VOICE-SHELF-A, Kling voice-source takes, clone, VO, HeyGen talking heads, trim; then placement and the hooks (step 6).
