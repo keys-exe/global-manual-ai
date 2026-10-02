@@ -527,11 +527,11 @@ Waiting on: picks or Fix notes on the seven Act 2 pairs (v3/v4). Confirm or Fix 
     - R-07a has her low on the flight, not at the top as the act map has it.
     - R-07c has a teal sleeve (Loretta) soft at the right edge.
 - Act map rows changed in `work/actmap.py`: T-02a (Loretta leads the line), R-03b (close from low), R-06a (on her palm), R-07a (from three steps below), R-07c (three-quarter, not profile). `angles.py` PASS. The rows are synced to `STEP4_5.md` and `docs/actmap` v29 (Current and Plan).
-- **System (V7.87.1, LESSONS L26):**
+- **System (V7.88.1, LESSONS L28):**
   - No speech marks in a picture prompt (§6A rule 5, `preflight.py` check). It was tested on the empty case and on known-good prompts.
   - The day's clothes never come from a sheet or the style frame (§24O rule 9, HT26 extended).
   - From the Fix-note patterns (three "wrong person" notes): HT27, every cast member in the frame goes in by a picture, feet-only shots too.
-  - Merged over the default branch's V7.87.0 (the other session's V7.86.1 S1 Ghost and L25 kept). Ours was renumbered to V7.87.1 / L26.
+  - Merged over the default branch twice (V7.87.0, then V7.88.0 with its L26–L27); ours is V7.88.1 / L28.
 - Balances: Higgsfield 6487.15 · Kling 39093.
 
 Waiting on:
