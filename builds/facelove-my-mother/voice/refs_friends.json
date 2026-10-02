@@ -1,0 +1,23 @@
+{
+ "FaceloveFriendA": {
+  "voice_id": "tUfvpAlFQm6euFy0WBct",
+  "source": "voice/C5_clone_source.mp3 (C5 master looped whole to 35.2 s)"
+ },
+ "FaceloveFriendB": {
+  "voice_id": "000KR2tcs0eohG8JMMx1",
+  "source": "voice/C6_clone_source.mp3 (C6 master looped whole to 34.0 s)"
+ },
+ "C5_ref_L006.mp3": {
+  "line": "…that was awful of him.",
+  "speed": 0.9,
+  "padded_to_s": 3.0,
+  "higgsfield_media": "10388ea9-b8d1-4dd1-a246-67305f8bae73",
+  "heard": "That was awful of him."
+ },
+ "C6_ref_L007.mp3": {
+  "line": "…I mean, though. She did kind of stop trying. It's just sad to watch.",
+  "speed": 0.9,
+  "higgsfield_media": "cb3fffd0-e4f7-4a31-9d0e-4c7dd3a802da",
+  "heard": "I mean though, she did kind of stop trying, it's just sad to watch."
+ }
+}

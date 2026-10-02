@@ -1,0 +1,1903 @@
+[
+  {
+    "link": "builds/stryde-her-dad/intake/inspo.mp4",
+    "role": "primary",
+    "status": "OK",
+    "file": "builds/stryde-her-dad/intake/inspo.mp4",
+    "duration_s": 407.39,
+    "resolution": "360x640",
+    "aspect": "9:16",
+    "fps": 30.0,
+    "has_audio": true,
+    "shot_count": 121,
+    "mean_shot_s": 3.37,
+    "cut_times_s": [
+      12.4,
+      21.73,
+      23.73,
+      25.9,
+      28.77,
+      55.6,
+      58.5,
+      61.1,
+      64.5,
+      71.43,
+      74.77,
+      79.77,
+      83.53,
+      86.7,
+      90.2,
+      92.17,
+      96.23,
+      99.8,
+      104.23,
+      107.87,
+      110.47,
+      113.13,
+      118.67,
+      121.8,
+      123.97,
+      128.8,
+      130.87,
+      134.87,
+      136.1,
+      138.7,
+      141.97,
+      145.43,
+      147.2,
+      148.67,
+      149.83,
+      151.6,
+      153.87,
+      155.97,
+      157.07,
+      161.23,
+      164.23,
+      165.9,
+      168.77,
+      170.23,
+      174.47,
+      176.6,
+      178.27,
+      180.5,
+      193.83,
+      197.87,
+      200.07,
+      204.9,
+      206.57,
+      210.13,
+      215.4,
+      217.7,
+      223.9,
+      226.3,
+      229.87,
+      232.97,
+      239.53,
+      240.27,
+      247.03,
+      248.0,
+      249.43,
+      253.2,
+      253.33,
+      253.4,
+      256.17,
+      258.43,
+      261.33,
+      263.17,
+      266.43,
+      269.47,
+      273.57,
+      275.37,
+      279.77,
+      283.37,
+      286.37,
+      295.37,
+      300.43,
+      305.67,
+      308.87,
+      318.27,
+      318.33,
+      318.43,
+      318.53,
+      323.4,
+      328.33,
+      328.4,
+      331.73,
+      334.1,
+      336.07,
+      337.93,
+      339.17,
+      341.63,
+      343.8,
+      346.67,
+      348.97,
+      351.27,
+      353.57,
+      358.57,
+      361.23,
+      367.23,
+      371.47,
+      377.1,
+      377.2,
+      377.23,
+      380.6,
+      382.57,
+      384.6,
+      386.43,
+      390.0,
+      392.33,
+      394.17,
+      396.57,
+      398.1,
+      400.67,
+      401.9,
+      404.73
+    ],
+    "silences_-40dB": [
+      [
+        57.41,
+        57.78
+      ],
+      [
+        139.57,
+        140.01
+      ],
+      [
+        140.89,
+        141.27
+      ],
+      [
+        159.44,
+        160.06
+      ],
+      [
+        164.26,
+        164.63
+      ],
+      [
+        170.32,
+        170.93
+      ],
+      [
+        171.87,
+        172.28
+      ],
+      [
+        172.85,
+        173.22
+      ],
+      [
+        177.93,
+        178.31
+      ],
+      [
+        191.3,
+        192.09
+      ],
+      [
+        206.92,
+        207.5
+      ],
+      [
+        208.77,
+        209.33
+      ],
+      [
+        209.47,
+        209.87
+      ],
+      [
+        249.49,
+        249.89
+      ],
+      [
+        250.46,
+        250.84
+      ],
+      [
+        269.06,
+        269.37
+      ],
+      [
+        308.97,
+        309.38
+      ],
+      [
+        309.73,
+        311.31
+      ],
+      [
+        311.62,
+        311.92
+      ],
+      [
+        398.87,
+        399.23
+      ]
+    ],
+    "silences_-30dB": [
+      [
+        5.04,
+        5.39
+      ],
+      [
+        8.37,
+        9.25
+      ],
+      [
+        16.56,
+        16.9
+      ],
+      [
+        17.21,
+        17.63
+      ],
+      [
+        17.64,
+        18.24
+      ],
+      [
+        18.49,
+        19.13
+      ],
+      [
+        29.36,
+        31.13
+      ],
+      [
+        32.06,
+        32.85
+      ],
+      [
+        34.53,
+        35.31
+      ],
+      [
+        35.89,
+        36.34
+      ],
+      [
+        37.77,
+        38.79
+      ],
+      [
+        41.24,
+        42.88
+      ],
+      [
+        43.76,
+        45.67
+      ],
+      [
+        46.8,
+        48.53
+      ],
+      [
+        49.2,
+        50.94
+      ],
+      [
+        53.72,
+        54.25
+      ],
+      [
+        55.63,
+        56.02
+      ],
+      [
+        56.02,
+        56.82
+      ],
+      [
+        57.33,
+        57.8
+      ],
+      [
+        57.88,
+        58.48
+      ],
+      [
+        59.38,
+        59.75
+      ],
+      [
+        61.03,
+        61.42
+      ],
+      [
+        62.57,
+        63.04
+      ],
+      [
+        64.39,
+        64.91
+      ],
+      [
+        66.74,
+        67.19
+      ],
+      [
+        69.1,
+        70.44
+      ],
+      [
+        70.93,
+        71.83
+      ],
+      [
+        71.83,
+        72.17
+      ],
+      [
+        77.2,
+        77.89
+      ],
+      [
+        79.65,
+        79.96
+      ],
+      [
+        83.34,
+        85.49
+      ],
+      [
+        86.28,
+        86.77
+      ],
+      [
+        90.02,
+        90.42
+      ],
+      [
+        90.53,
+        91.08
+      ],
+      [
+        91.22,
+        92.25
+      ],
+      [
+        97.47,
+        97.89
+      ],
+      [
+        97.96,
+        98.5
+      ],
+      [
+        98.5,
+        99.01
+      ],
+      [
+        100.33,
+        100.63
+      ],
+      [
+        100.8,
+        101.12
+      ],
+      [
+        101.2,
+        101.71
+      ],
+      [
+        101.79,
+        102.28
+      ],
+      [
+        102.36,
+        102.82
+      ],
+      [
+        104.16,
+        104.67
+      ],
+      [
+        105.36,
+        105.74
+      ],
+      [
+        107.58,
+        107.96
+      ],
+      [
+        109.7,
+        110.14
+      ],
+      [
+        110.94,
+        111.35
+      ],
+      [
+        112.95,
+        113.81
+      ],
+      [
+        119.96,
+        120.59
+      ],
+      [
+        121.75,
+        123.12
+      ],
+      [
+        125.23,
+        125.58
+      ],
+      [
+        127.38,
+        127.76
+      ],
+      [
+        128.73,
+        130.13
+      ],
+      [
+        132.03,
+        132.57
+      ],
+      [
+        132.98,
+        133.48
+      ],
+      [
+        134.74,
+        135.13
+      ],
+      [
+        135.13,
+        135.57
+      ],
+      [
+        135.81,
+        136.24
+      ],
+      [
+        138.52,
+        139.48
+      ],
+      [
+        139.51,
+        140.03
+      ],
+      [
+        140.05,
+        140.4
+      ],
+      [
+        140.85,
+        141.27
+      ],
+      [
+        142.6,
+        142.9
+      ],
+      [
+        147.91,
+        148.72
+      ],
+      [
+        149.49,
+        149.82
+      ],
+      [
+        155.7,
+        156.01
+      ],
+      [
+        159.36,
+        160.07
+      ],
+      [
+        164.26,
+        164.64
+      ],
+      [
+        170.28,
+        170.94
+      ],
+      [
+        171.82,
+        172.36
+      ],
+      [
+        172.82,
+        173.23
+      ],
+      [
+        177.88,
+        178.33
+      ],
+      [
+        181.55,
+        182.08
+      ],
+      [
+        182.98,
+        183.58
+      ],
+      [
+        185.12,
+        185.73
+      ],
+      [
+        187.54,
+        188.19
+      ],
+      [
+        190.61,
+        191.2
+      ],
+      [
+        191.22,
+        192.1
+      ],
+      [
+        193.11,
+        194.92
+      ],
+      [
+        195.7,
+        196.93
+      ],
+      [
+        197.47,
+        197.92
+      ],
+      [
+        204.89,
+        205.54
+      ],
+      [
+        206.04,
+        207.52
+      ],
+      [
+        207.76,
+        208.48
+      ],
+      [
+        208.76,
+        209.87
+      ],
+      [
+        210.02,
+        210.54
+      ],
+      [
+        211.22,
+        211.89
+      ],
+      [
+        212.49,
+        212.99
+      ],
+      [
+        214.14,
+        214.46
+      ],
+      [
+        215.06,
+        215.47
+      ],
+      [
+        217.32,
+        218.0
+      ],
+      [
+        219.51,
+        219.85
+      ],
+      [
+        221.41,
+        221.86
+      ],
+      [
+        223.77,
+        224.51
+      ],
+      [
+        224.96,
+        225.52
+      ],
+      [
+        226.02,
+        226.44
+      ],
+      [
+        226.47,
+        226.8
+      ],
+      [
+        227.15,
+        227.64
+      ],
+      [
+        228.47,
+        228.97
+      ],
+      [
+        229.8,
+        230.53
+      ],
+      [
+        231.13,
+        231.95
+      ],
+      [
+        232.89,
+        233.62
+      ],
+      [
+        234.45,
+        235.75
+      ],
+      [
+        235.99,
+        236.65
+      ],
+      [
+        237.63,
+        238.28
+      ],
+      [
+        239.08,
+        240.39
+      ],
+      [
+        243.25,
+        244.52
+      ],
+      [
+        246.8,
+        248.31
+      ],
+      [
+        249.13,
+        251.98
+      ],
+      [
+        252.07,
+        253.57
+      ],
+      [
+        253.61,
+        254.07
+      ],
+      [
+        254.18,
+        254.56
+      ],
+      [
+        254.95,
+        256.33
+      ],
+      [
+        256.36,
+        257.49
+      ],
+      [
+        258.03,
+        258.94
+      ],
+      [
+        259.1,
+        259.55
+      ],
+      [
+        261.1,
+        262.1
+      ],
+      [
+        264.54,
+        265.36
+      ],
+      [
+        266.17,
+        268.72
+      ],
+      [
+        268.77,
+        269.46
+      ],
+      [
+        269.77,
+        270.23
+      ],
+      [
+        270.47,
+        270.85
+      ],
+      [
+        271.62,
+        271.95
+      ],
+      [
+        272.02,
+        272.48
+      ],
+      [
+        273.58,
+        273.9
+      ],
+      [
+        274.38,
+        274.7
+      ],
+      [
+        275.13,
+        275.44
+      ],
+      [
+        275.88,
+        276.43
+      ],
+      [
+        277.29,
+        278.53
+      ],
+      [
+        279.45,
+        279.82
+      ],
+      [
+        291.44,
+        295.53
+      ],
+      [
+        308.9,
+        313.0
+      ],
+      [
+        313.72,
+        314.57
+      ],
+      [
+        314.85,
+        316.47
+      ],
+      [
+        316.5,
+        316.84
+      ],
+      [
+        316.99,
+        318.4
+      ],
+      [
+        318.4,
+        318.75
+      ],
+      [
+        319.36,
+        319.73
+      ],
+      [
+        321.05,
+        321.51
+      ],
+      [
+        322.62,
+        323.46
+      ],
+      [
+        324.11,
+        324.52
+      ],
+      [
+        326.22,
+        326.6
+      ],
+      [
+        326.8,
+        327.2
+      ],
+      [
+        327.33,
+        327.78
+      ],
+      [
+        327.91,
+        328.27
+      ],
+      [
+        334.16,
+        334.51
+      ],
+      [
+        334.64,
+        335.08
+      ],
+      [
+        341.04,
+        341.64
+      ],
+      [
+        342.77,
+        343.18
+      ],
+      [
+        344.13,
+        344.49
+      ],
+      [
+        344.54,
+        345.89
+      ],
+      [
+        345.9,
+        347.35
+      ],
+      [
+        349.96,
+        350.3
+      ],
+      [
+        350.33,
+        350.89
+      ],
+      [
+        361.99,
+        363.96
+      ],
+      [
+        364.7,
+        365.17
+      ],
+      [
+        365.24,
+        366.97
+      ],
+      [
+        367.06,
+        367.49
+      ],
+      [
+        367.62,
+        368.2
+      ],
+      [
+        368.29,
+        368.86
+      ],
+      [
+        369.03,
+        369.6
+      ],
+      [
+        369.78,
+        370.3
+      ],
+      [
+        370.42,
+        370.95
+      ],
+      [
+        372.32,
+        372.85
+      ],
+      [
+        373.27,
+        374.01
+      ],
+      [
+        374.02,
+        376.21
+      ],
+      [
+        376.22,
+        377.65
+      ],
+      [
+        377.73,
+        378.15
+      ],
+      [
+        389.79,
+        390.09
+      ],
+      [
+        397.65,
+        399.76
+      ],
+      [
+        400.29,
+        400.75
+      ],
+      [
+        401.03,
+        401.99
+      ],
+      [
+        406.88,
+        407.24
+      ]
+    ],
+    "shots": [
+      {
+        "shot": "S01",
+        "t_in": 0.0,
+        "t_out": 12.4,
+        "len_s": 12.4,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S01_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S01_mid.jpg"
+      },
+      {
+        "shot": "S02",
+        "t_in": 12.4,
+        "t_out": 21.73,
+        "len_s": 9.33,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S02_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S02_mid.jpg"
+      },
+      {
+        "shot": "S03",
+        "t_in": 21.73,
+        "t_out": 23.73,
+        "len_s": 2.0,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S03_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S03_mid.jpg"
+      },
+      {
+        "shot": "S04",
+        "t_in": 23.73,
+        "t_out": 25.9,
+        "len_s": 2.17,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S04_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S04_mid.jpg"
+      },
+      {
+        "shot": "S05",
+        "t_in": 25.9,
+        "t_out": 28.77,
+        "len_s": 2.87,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S05_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S05_mid.jpg"
+      },
+      {
+        "shot": "S06",
+        "t_in": 28.77,
+        "t_out": 55.6,
+        "len_s": 26.83,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S06_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S06_mid.jpg"
+      },
+      {
+        "shot": "S07",
+        "t_in": 55.6,
+        "t_out": 58.5,
+        "len_s": 2.9,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S07_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S07_mid.jpg"
+      },
+      {
+        "shot": "S08",
+        "t_in": 58.5,
+        "t_out": 61.1,
+        "len_s": 2.6,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S08_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S08_mid.jpg"
+      },
+      {
+        "shot": "S09",
+        "t_in": 61.1,
+        "t_out": 64.5,
+        "len_s": 3.4,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S09_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S09_mid.jpg"
+      },
+      {
+        "shot": "S10",
+        "t_in": 64.5,
+        "t_out": 71.43,
+        "len_s": 6.93,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S10_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S10_mid.jpg"
+      },
+      {
+        "shot": "S11",
+        "t_in": 71.43,
+        "t_out": 74.77,
+        "len_s": 3.34,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S11_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S11_mid.jpg"
+      },
+      {
+        "shot": "S12",
+        "t_in": 74.77,
+        "t_out": 79.77,
+        "len_s": 5.0,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S12_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S12_mid.jpg"
+      },
+      {
+        "shot": "S13",
+        "t_in": 79.77,
+        "t_out": 83.53,
+        "len_s": 3.76,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S13_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S13_mid.jpg"
+      },
+      {
+        "shot": "S14",
+        "t_in": 83.53,
+        "t_out": 86.7,
+        "len_s": 3.17,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S14_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S14_mid.jpg"
+      },
+      {
+        "shot": "S15",
+        "t_in": 86.7,
+        "t_out": 90.2,
+        "len_s": 3.5,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S15_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S15_mid.jpg"
+      },
+      {
+        "shot": "S16",
+        "t_in": 90.2,
+        "t_out": 92.17,
+        "len_s": 1.97,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S16_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S16_mid.jpg"
+      },
+      {
+        "shot": "S17",
+        "t_in": 92.17,
+        "t_out": 96.23,
+        "len_s": 4.06,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S17_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S17_mid.jpg"
+      },
+      {
+        "shot": "S18",
+        "t_in": 96.23,
+        "t_out": 99.8,
+        "len_s": 3.57,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S18_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S18_mid.jpg"
+      },
+      {
+        "shot": "S19",
+        "t_in": 99.8,
+        "t_out": 104.23,
+        "len_s": 4.43,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S19_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S19_mid.jpg"
+      },
+      {
+        "shot": "S20",
+        "t_in": 104.23,
+        "t_out": 107.87,
+        "len_s": 3.64,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S20_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S20_mid.jpg"
+      },
+      {
+        "shot": "S21",
+        "t_in": 107.87,
+        "t_out": 110.47,
+        "len_s": 2.6,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S21_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S21_mid.jpg"
+      },
+      {
+        "shot": "S22",
+        "t_in": 110.47,
+        "t_out": 113.13,
+        "len_s": 2.66,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S22_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S22_mid.jpg"
+      },
+      {
+        "shot": "S23",
+        "t_in": 113.13,
+        "t_out": 118.67,
+        "len_s": 5.54,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S23_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S23_mid.jpg"
+      },
+      {
+        "shot": "S24",
+        "t_in": 118.67,
+        "t_out": 121.8,
+        "len_s": 3.13,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S24_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S24_mid.jpg"
+      },
+      {
+        "shot": "S25",
+        "t_in": 121.8,
+        "t_out": 123.97,
+        "len_s": 2.17,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S25_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S25_mid.jpg"
+      },
+      {
+        "shot": "S26",
+        "t_in": 123.97,
+        "t_out": 128.8,
+        "len_s": 4.83,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S26_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S26_mid.jpg"
+      },
+      {
+        "shot": "S27",
+        "t_in": 128.8,
+        "t_out": 130.87,
+        "len_s": 2.07,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S27_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S27_mid.jpg"
+      },
+      {
+        "shot": "S28",
+        "t_in": 130.87,
+        "t_out": 134.87,
+        "len_s": 4.0,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S28_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S28_mid.jpg"
+      },
+      {
+        "shot": "S29",
+        "t_in": 134.87,
+        "t_out": 136.1,
+        "len_s": 1.23,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S29_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S29_mid.jpg"
+      },
+      {
+        "shot": "S30",
+        "t_in": 136.1,
+        "t_out": 138.7,
+        "len_s": 2.6,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S30_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S30_mid.jpg"
+      },
+      {
+        "shot": "S31",
+        "t_in": 138.7,
+        "t_out": 141.97,
+        "len_s": 3.27,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S31_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S31_mid.jpg"
+      },
+      {
+        "shot": "S32",
+        "t_in": 141.97,
+        "t_out": 145.43,
+        "len_s": 3.46,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S32_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S32_mid.jpg"
+      },
+      {
+        "shot": "S33",
+        "t_in": 145.43,
+        "t_out": 147.2,
+        "len_s": 1.77,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S33_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S33_mid.jpg"
+      },
+      {
+        "shot": "S34",
+        "t_in": 147.2,
+        "t_out": 148.67,
+        "len_s": 1.47,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S34_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S34_mid.jpg"
+      },
+      {
+        "shot": "S35",
+        "t_in": 148.67,
+        "t_out": 149.83,
+        "len_s": 1.16,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S35_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S35_mid.jpg"
+      },
+      {
+        "shot": "S36",
+        "t_in": 149.83,
+        "t_out": 151.6,
+        "len_s": 1.77,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S36_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S36_mid.jpg"
+      },
+      {
+        "shot": "S37",
+        "t_in": 151.6,
+        "t_out": 153.87,
+        "len_s": 2.27,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S37_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S37_mid.jpg"
+      },
+      {
+        "shot": "S38",
+        "t_in": 153.87,
+        "t_out": 155.97,
+        "len_s": 2.1,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S38_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S38_mid.jpg"
+      },
+      {
+        "shot": "S39",
+        "t_in": 155.97,
+        "t_out": 157.07,
+        "len_s": 1.1,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S39_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S39_mid.jpg"
+      },
+      {
+        "shot": "S40",
+        "t_in": 157.07,
+        "t_out": 161.23,
+        "len_s": 4.16,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S40_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S40_mid.jpg"
+      },
+      {
+        "shot": "S41",
+        "t_in": 161.23,
+        "t_out": 164.23,
+        "len_s": 3.0,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S41_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S41_mid.jpg"
+      },
+      {
+        "shot": "S42",
+        "t_in": 164.23,
+        "t_out": 165.9,
+        "len_s": 1.67,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S42_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S42_mid.jpg"
+      },
+      {
+        "shot": "S43",
+        "t_in": 165.9,
+        "t_out": 168.77,
+        "len_s": 2.87,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S43_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S43_mid.jpg"
+      },
+      {
+        "shot": "S44",
+        "t_in": 168.77,
+        "t_out": 170.23,
+        "len_s": 1.46,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S44_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S44_mid.jpg"
+      },
+      {
+        "shot": "S45",
+        "t_in": 170.23,
+        "t_out": 174.47,
+        "len_s": 4.24,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S45_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S45_mid.jpg"
+      },
+      {
+        "shot": "S46",
+        "t_in": 174.47,
+        "t_out": 176.6,
+        "len_s": 2.13,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S46_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S46_mid.jpg"
+      },
+      {
+        "shot": "S47",
+        "t_in": 176.6,
+        "t_out": 178.27,
+        "len_s": 1.67,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S47_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S47_mid.jpg"
+      },
+      {
+        "shot": "S48",
+        "t_in": 178.27,
+        "t_out": 180.5,
+        "len_s": 2.23,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S48_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S48_mid.jpg"
+      },
+      {
+        "shot": "S49",
+        "t_in": 180.5,
+        "t_out": 193.83,
+        "len_s": 13.33,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S49_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S49_mid.jpg"
+      },
+      {
+        "shot": "S50",
+        "t_in": 193.83,
+        "t_out": 197.87,
+        "len_s": 4.04,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S50_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S50_mid.jpg"
+      },
+      {
+        "shot": "S51",
+        "t_in": 197.87,
+        "t_out": 200.07,
+        "len_s": 2.2,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S51_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S51_mid.jpg"
+      },
+      {
+        "shot": "S52",
+        "t_in": 200.07,
+        "t_out": 204.9,
+        "len_s": 4.83,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S52_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S52_mid.jpg"
+      },
+      {
+        "shot": "S53",
+        "t_in": 204.9,
+        "t_out": 206.57,
+        "len_s": 1.67,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S53_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S53_mid.jpg"
+      },
+      {
+        "shot": "S54",
+        "t_in": 206.57,
+        "t_out": 210.13,
+        "len_s": 3.56,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S54_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S54_mid.jpg"
+      },
+      {
+        "shot": "S55",
+        "t_in": 210.13,
+        "t_out": 215.4,
+        "len_s": 5.27,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S55_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S55_mid.jpg"
+      },
+      {
+        "shot": "S56",
+        "t_in": 215.4,
+        "t_out": 217.7,
+        "len_s": 2.3,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S56_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S56_mid.jpg"
+      },
+      {
+        "shot": "S57",
+        "t_in": 217.7,
+        "t_out": 223.9,
+        "len_s": 6.2,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S57_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S57_mid.jpg"
+      },
+      {
+        "shot": "S58",
+        "t_in": 223.9,
+        "t_out": 226.3,
+        "len_s": 2.4,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S58_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S58_mid.jpg"
+      },
+      {
+        "shot": "S59",
+        "t_in": 226.3,
+        "t_out": 229.87,
+        "len_s": 3.57,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S59_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S59_mid.jpg"
+      },
+      {
+        "shot": "S60",
+        "t_in": 229.87,
+        "t_out": 232.97,
+        "len_s": 3.1,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S60_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S60_mid.jpg"
+      },
+      {
+        "shot": "S61",
+        "t_in": 232.97,
+        "t_out": 239.53,
+        "len_s": 6.56,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S61_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S61_mid.jpg"
+      },
+      {
+        "shot": "S62",
+        "t_in": 239.53,
+        "t_out": 240.27,
+        "len_s": 0.74,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S62_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S62_mid.jpg"
+      },
+      {
+        "shot": "S63",
+        "t_in": 240.27,
+        "t_out": 247.03,
+        "len_s": 6.76,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S63_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S63_mid.jpg"
+      },
+      {
+        "shot": "S64",
+        "t_in": 247.03,
+        "t_out": 248.0,
+        "len_s": 0.97,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S64_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S64_mid.jpg"
+      },
+      {
+        "shot": "S65",
+        "t_in": 248.0,
+        "t_out": 249.43,
+        "len_s": 1.43,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S65_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S65_mid.jpg"
+      },
+      {
+        "shot": "S66",
+        "t_in": 249.43,
+        "t_out": 253.2,
+        "len_s": 3.77,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S66_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S66_mid.jpg"
+      },
+      {
+        "shot": "S67",
+        "t_in": 253.2,
+        "t_out": 253.33,
+        "len_s": 0.13,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S67_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S67_mid.jpg"
+      },
+      {
+        "shot": "S68",
+        "t_in": 253.33,
+        "t_out": 253.4,
+        "len_s": 0.07,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S68_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S68_mid.jpg"
+      },
+      {
+        "shot": "S69",
+        "t_in": 253.4,
+        "t_out": 256.17,
+        "len_s": 2.77,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S69_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S69_mid.jpg"
+      },
+      {
+        "shot": "S70",
+        "t_in": 256.17,
+        "t_out": 258.43,
+        "len_s": 2.26,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S70_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S70_mid.jpg"
+      },
+      {
+        "shot": "S71",
+        "t_in": 258.43,
+        "t_out": 261.33,
+        "len_s": 2.9,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S71_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S71_mid.jpg"
+      },
+      {
+        "shot": "S72",
+        "t_in": 261.33,
+        "t_out": 263.17,
+        "len_s": 1.84,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S72_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S72_mid.jpg"
+      },
+      {
+        "shot": "S73",
+        "t_in": 263.17,
+        "t_out": 266.43,
+        "len_s": 3.26,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S73_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S73_mid.jpg"
+      },
+      {
+        "shot": "S74",
+        "t_in": 266.43,
+        "t_out": 269.47,
+        "len_s": 3.04,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S74_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S74_mid.jpg"
+      },
+      {
+        "shot": "S75",
+        "t_in": 269.47,
+        "t_out": 273.57,
+        "len_s": 4.1,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S75_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S75_mid.jpg"
+      },
+      {
+        "shot": "S76",
+        "t_in": 273.57,
+        "t_out": 275.37,
+        "len_s": 1.8,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S76_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S76_mid.jpg"
+      },
+      {
+        "shot": "S77",
+        "t_in": 275.37,
+        "t_out": 279.77,
+        "len_s": 4.4,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S77_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S77_mid.jpg"
+      },
+      {
+        "shot": "S78",
+        "t_in": 279.77,
+        "t_out": 283.37,
+        "len_s": 3.6,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S78_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S78_mid.jpg"
+      },
+      {
+        "shot": "S79",
+        "t_in": 283.37,
+        "t_out": 286.37,
+        "len_s": 3.0,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S79_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S79_mid.jpg"
+      },
+      {
+        "shot": "S80",
+        "t_in": 286.37,
+        "t_out": 295.37,
+        "len_s": 9.0,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S80_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S80_mid.jpg"
+      },
+      {
+        "shot": "S81",
+        "t_in": 295.37,
+        "t_out": 300.43,
+        "len_s": 5.06,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S81_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S81_mid.jpg"
+      },
+      {
+        "shot": "S82",
+        "t_in": 300.43,
+        "t_out": 305.67,
+        "len_s": 5.24,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S82_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S82_mid.jpg"
+      },
+      {
+        "shot": "S83",
+        "t_in": 305.67,
+        "t_out": 308.87,
+        "len_s": 3.2,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S83_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S83_mid.jpg"
+      },
+      {
+        "shot": "S84",
+        "t_in": 308.87,
+        "t_out": 318.27,
+        "len_s": 9.4,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S84_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S84_mid.jpg"
+      },
+      {
+        "shot": "S85",
+        "t_in": 318.27,
+        "t_out": 318.33,
+        "len_s": 0.06,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S85_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S85_mid.jpg"
+      },
+      {
+        "shot": "S86",
+        "t_in": 318.33,
+        "t_out": 318.43,
+        "len_s": 0.1,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S86_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S86_mid.jpg"
+      },
+      {
+        "shot": "S87",
+        "t_in": 318.43,
+        "t_out": 318.53,
+        "len_s": 0.1,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S87_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S87_mid.jpg"
+      },
+      {
+        "shot": "S88",
+        "t_in": 318.53,
+        "t_out": 323.4,
+        "len_s": 4.87,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S88_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S88_mid.jpg"
+      },
+      {
+        "shot": "S89",
+        "t_in": 323.4,
+        "t_out": 328.33,
+        "len_s": 4.93,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S89_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S89_mid.jpg"
+      },
+      {
+        "shot": "S90",
+        "t_in": 328.33,
+        "t_out": 328.4,
+        "len_s": 0.07,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S90_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S90_mid.jpg"
+      },
+      {
+        "shot": "S91",
+        "t_in": 328.4,
+        "t_out": 331.73,
+        "len_s": 3.33,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S91_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S91_mid.jpg"
+      },
+      {
+        "shot": "S92",
+        "t_in": 331.73,
+        "t_out": 334.1,
+        "len_s": 2.37,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S92_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S92_mid.jpg"
+      },
+      {
+        "shot": "S93",
+        "t_in": 334.1,
+        "t_out": 336.07,
+        "len_s": 1.97,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S93_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S93_mid.jpg"
+      },
+      {
+        "shot": "S94",
+        "t_in": 336.07,
+        "t_out": 337.93,
+        "len_s": 1.86,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S94_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S94_mid.jpg"
+      },
+      {
+        "shot": "S95",
+        "t_in": 337.93,
+        "t_out": 339.17,
+        "len_s": 1.24,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S95_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S95_mid.jpg"
+      },
+      {
+        "shot": "S96",
+        "t_in": 339.17,
+        "t_out": 341.63,
+        "len_s": 2.46,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S96_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S96_mid.jpg"
+      },
+      {
+        "shot": "S97",
+        "t_in": 341.63,
+        "t_out": 343.8,
+        "len_s": 2.17,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S97_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S97_mid.jpg"
+      },
+      {
+        "shot": "S98",
+        "t_in": 343.8,
+        "t_out": 346.67,
+        "len_s": 2.87,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S98_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S98_mid.jpg"
+      },
+      {
+        "shot": "S99",
+        "t_in": 346.67,
+        "t_out": 348.97,
+        "len_s": 2.3,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S99_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S99_mid.jpg"
+      },
+      {
+        "shot": "S100",
+        "t_in": 348.97,
+        "t_out": 351.27,
+        "len_s": 2.3,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S100_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S100_mid.jpg"
+      },
+      {
+        "shot": "S101",
+        "t_in": 351.27,
+        "t_out": 353.57,
+        "len_s": 2.3,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S101_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S101_mid.jpg"
+      },
+      {
+        "shot": "S102",
+        "t_in": 353.57,
+        "t_out": 358.57,
+        "len_s": 5.0,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S102_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S102_mid.jpg"
+      },
+      {
+        "shot": "S103",
+        "t_in": 358.57,
+        "t_out": 361.23,
+        "len_s": 2.66,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S103_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S103_mid.jpg"
+      },
+      {
+        "shot": "S104",
+        "t_in": 361.23,
+        "t_out": 367.23,
+        "len_s": 6.0,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S104_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S104_mid.jpg"
+      },
+      {
+        "shot": "S105",
+        "t_in": 367.23,
+        "t_out": 371.47,
+        "len_s": 4.24,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S105_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S105_mid.jpg"
+      },
+      {
+        "shot": "S106",
+        "t_in": 371.47,
+        "t_out": 377.1,
+        "len_s": 5.63,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S106_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S106_mid.jpg"
+      },
+      {
+        "shot": "S107",
+        "t_in": 377.1,
+        "t_out": 377.2,
+        "len_s": 0.1,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S107_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S107_mid.jpg"
+      },
+      {
+        "shot": "S108",
+        "t_in": 377.2,
+        "t_out": 377.23,
+        "len_s": 0.03,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S108_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S108_mid.jpg"
+      },
+      {
+        "shot": "S109",
+        "t_in": 377.23,
+        "t_out": 380.6,
+        "len_s": 3.37,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S109_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S109_mid.jpg"
+      },
+      {
+        "shot": "S110",
+        "t_in": 380.6,
+        "t_out": 382.57,
+        "len_s": 1.97,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S110_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S110_mid.jpg"
+      },
+      {
+        "shot": "S111",
+        "t_in": 382.57,
+        "t_out": 384.6,
+        "len_s": 2.03,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S111_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S111_mid.jpg"
+      },
+      {
+        "shot": "S112",
+        "t_in": 384.6,
+        "t_out": 386.43,
+        "len_s": 1.83,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S112_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S112_mid.jpg"
+      },
+      {
+        "shot": "S113",
+        "t_in": 386.43,
+        "t_out": 390.0,
+        "len_s": 3.57,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S113_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S113_mid.jpg"
+      },
+      {
+        "shot": "S114",
+        "t_in": 390.0,
+        "t_out": 392.33,
+        "len_s": 2.33,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S114_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S114_mid.jpg"
+      },
+      {
+        "shot": "S115",
+        "t_in": 392.33,
+        "t_out": 394.17,
+        "len_s": 1.84,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S115_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S115_mid.jpg"
+      },
+      {
+        "shot": "S116",
+        "t_in": 394.17,
+        "t_out": 396.57,
+        "len_s": 2.4,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S116_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S116_mid.jpg"
+      },
+      {
+        "shot": "S117",
+        "t_in": 396.57,
+        "t_out": 398.1,
+        "len_s": 1.53,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S117_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S117_mid.jpg"
+      },
+      {
+        "shot": "S118",
+        "t_in": 398.1,
+        "t_out": 400.67,
+        "len_s": 2.57,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S118_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S118_mid.jpg"
+      },
+      {
+        "shot": "S119",
+        "t_in": 400.67,
+        "t_out": 401.9,
+        "len_s": 1.23,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S119_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S119_mid.jpg"
+      },
+      {
+        "shot": "S120",
+        "t_in": 401.9,
+        "t_out": 404.73,
+        "len_s": 2.83,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S120_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S120_mid.jpg"
+      },
+      {
+        "shot": "S121",
+        "t_in": 404.73,
+        "t_out": 407.39,
+        "len_s": 2.66,
+        "frame_in": "builds/stryde-her-dad/intake/frames/inspo/S121_in.jpg",
+        "frame_mid": "builds/stryde-her-dad/intake/frames/inspo/S121_mid.jpg"
+      }
+    ],
+    "second_sheets": [
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_01.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_02.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_03.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_04.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_05.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_06.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_07.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_08.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_09.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_10.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_11.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_12.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_13.jpg",
+      "builds/stryde-her-dad/intake/frames/inspo/sheet_14.jpg"
+    ]
+  }
+]

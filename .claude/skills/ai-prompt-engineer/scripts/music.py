@@ -226,7 +226,7 @@ def vocals(path):
 
 def transcribe(path):
     from faster_whisper import WhisperModel
-    # V7.91.4 (L56): the cut words are timed with medium.en, as assemble.py (V7.80.0) — base.en placed sung words up to 0.7 s off
+    # V7.91.4 (L57): the cut words are timed with medium.en, as assemble.py (V7.80.0) — base.en placed sung words up to 0.7 s off
     m = WhisperModel("medium.en", device="cpu", compute_type="int8")
     segs, _ = m.transcribe(str(path), vad_filter=False, word_timestamps=True)
     return [{"w": w.word.strip(), "t": round(w.start, 3), "end": round(w.end, 3), "p": round(w.probability, 2)}
@@ -383,7 +383,7 @@ TAIL = 0.15        # sung words run legato: the transcript ends a word where the
 
 
 def lyric_cuts(rows, g, heard, skip=0.4, handle=0.5):
-    """§3C sung (V7.91.4, L56): each row cuts on the first sung word of its `phrase`, 2 frames ahead of it, or on a
+    """§3C sung (V7.91.4, L57): each row cuts on the first sung word of its `phrase`, 2 frames ahead of it, or on a
     beat at most 0.25 s before that word — never a full beat early — and never while the previous line's last sung
     word is still sounding (EARLY). It holds to the next row's cut; the first row starts at 0, the last ends with
     the track. The old rule (the beat at or before the word) brought the picture in up to one beat early (0.8 s at
