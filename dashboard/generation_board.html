@@ -1199,7 +1199,12 @@ function hydrate(root){
   });
   r.querySelectorAll("video").forEach(v=>{
     if(v.dataset.bound) return; v.dataset.bound="1";
-    v.addEventListener("error",()=>{const w=v.parentElement;if(w&&!w.querySelector(".vload")){const n=document.createElement("span");n.className="vload";n.textContent="This video can't play here. Use Download.";w.appendChild(n)}diag("videoError",v.dataset.parts?"joined":"direct")});
+    v.addEventListener("error",()=>{
+      // a single-file video that fails from memory (seen in Chrome once the sound is on) falls back to the file's own link and keeps playing
+      const ids=(v.dataset.parts||"").split(",").filter(Boolean);
+      if(ids.length===1&&!v.dataset.direct){diag("videoError","joined");v.dataset.direct="1";const t=v.currentTime||0,snd=!v.muted;
+        v.removeAttribute("data-parts");v.src="/_blob/"+ids[0];v.addEventListener("loadedmetadata",()=>{try{v.currentTime=t}catch(e){}v.muted=!snd;const pp=v.play();if(pp&&pp.catch) pp.catch(()=>{})},{once:true});return}
+      const w=v.parentElement;if(w&&!w.querySelector(".vload")){const n=document.createElement("span");n.className="vload";n.textContent="This video can't play here. Use Download.";w.appendChild(n)}diag("videoError",v.dataset.direct?"direct-fallback":v.dataset.parts?"joined":"direct")});
     v.addEventListener("playing",()=>diag("videoPlaying",v.dataset.parts?"joined":"direct"),{once:true});
     if(v.closest(".viewer")) loadVideo(v); else if(vis) vis.observe(v); else loadVideo(v);
   });
@@ -2308,7 +2313,7 @@ document.addEventListener("click",e=>{
   if(ds.promoteCancel){const gg=state.gens.find(x=>x.id===ds.promoteCancel);if(gg) cancelPromote(gg);return}
   if(ds.vrestore){const x=state.gens.find(y=>y.id===state.viewer.id);if(x) restoreVersion(x,state.viewer.step,Number(ds.vrestore));return}
   if(state.viewer&&state.viewer.menu&&!e.target.closest(".v-menu")){state.viewer.menu=false;renderViewer()}
-  if(ds.sound){const v=document.querySelector(".viewer video");if(v){v.muted=false;v.dataset.sound="1";tryPlay(v)}t.remove();return}
+  if(ds.sound){const v=document.querySelector(".viewer video");if(v){v.muted=false;v.dataset.sound="1";v.volume=1;const pp=v.play();if(pp&&pp.catch) pp.catch(()=>{v.muted=false})}t.remove();return}
   if(ds.vpair){openViewer(ds.vpair,"image");state.viewer.ver=Number(ds.v);renderViewer();return}
   if(ds.pick){state.faultOpen=null;pickImage(ds.pick,Number(ds.v));return}
   if(ds.viewm){openViewer(ds.viewm,ds.step)}
