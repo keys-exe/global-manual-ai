@@ -1,0 +1,1229 @@
+{
+ "build": "facelove-paint-wall",
+ "hooks": [],
+ "groups": [
+  {
+   "group": "Act 1",
+   "role": "problem",
+   "idea": "the years of foundations: her honest bare face, the shelf growing, and every bottle caking in her lines",
+   "rows": [
+    {
+     "beat": "B01",
+     "line": "And for years I felt like my own face",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "from behind her shoulder she runs her eyes along forty unlabelled bottles on her shelf, one hand on the dresser",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "her face in close-up, looking down",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "a calendar of years",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B02",
+     "line": "had quietly turned on me.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "over her shoulder into a round hand mirror: her bare tired face looking back at her",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "her face turning away from the lens",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "an old photo of her younger face beside the mirror",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B03",
+     "line": "The dull, tired skin.",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "in the mirror glass, her bare cheek and eye: dull, sallow, matte skin, one slow blink",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a macro of skin texture alone",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "her sighing at the mirror",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B04",
+     "line": "The deep lines.",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "side-on macro: her deep crow's feet hold their shadows as her eyes narrow, then relax",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "her forehead lines front-on",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "cracked dry earth",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 0,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B05",
+     "line": "The dark circles that made me look worn out",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "from just below, her eyes lift from the mirror to the lens, the dark circles under both eyes plain in the window light",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a macro of one dark circle",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "her rubbing her eyes",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B06",
+     "line": "I bought the next foundation, then the next,",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "square on the shelf, her hand sets one more unlabelled bottle at the end of a row, then a second beside it",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "a pile of shopping bags on the floor",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "one bottle on a counter",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B07",
+     "line": "then the two hundred dollar one,",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "from above, her hands lift a heavy faceted glass bottle with a gold cap out of white tissue in a cream box",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "a receipt with a big total",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the bottle on the shelf",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B08",
+     "line": "always sure the next one would finally fix it.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "at the hand mirror she dots the new foundation on her cheek with one fingertip and looks, hopeful",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "her fingers crossed",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 0,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the new bottle's pump pressed",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B09",
+     "line": "It sat on top, sank into my lines,",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "side-on macro: a flat beige foundation sits cakey on her skin and has settled into every crow's foot, each crease a darker line of product",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "half her cheek bare, half caked",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "foundation on a fingertip",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "B10",
+     "line": "oxidized, and left me looking more tired than my bare face.",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "over her shoulder into the hand mirror: her caked face gone patchy and orange along the jaw against a paler neck; she lowers the mirror",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "a macro of the orange line at the jaw",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "her frowning",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 0,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "Act 2",
+   "role": "mechanism",
+   "idea": "the paint wall: a factory colour rolled on sits as a coat and sinks into the cracks — exactly as foundation does in her lines",
+   "rows": [
+    {
+     "beat": "B11",
+     "line": "Think of your skin like a wall",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "low and wide: she steps beside the bare warm plaster wall, bottle in one hand, and lays her other palm flat on it",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a close-up of a plaster wall",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "a hardware store paint aisle",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "B12",
+     "line": "Every foundation you have ever bought",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "at the wall she raises the beige foundation bottle to shoulder height like an exhibit, eyes on the lens",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "her shelf of forty bottles again",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a bottle on a white table",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B13",
+     "line": "works exactly like a pre-mixed can of paint from a factory,",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "top-down: the open can of flat pinkish-beige paint, and her hand sets the beige foundation bottle right beside it — the same colour",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "a paint factory line filling cans",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 0
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a closed paint can",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B14",
+     "line": "You bring it home, put it on,",
+     "candidates": [
+      {
+       "route": "LITERAL",
+       "picture": "from behind her shoulder she rolls the beige paint up the bare wall in one long slow stroke",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "the roller's nap pressing into the wall",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "carrying the can in from the car",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B15",
+     "line": "and it is never quite your color.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "low and square: she steps back and tilts her head at the flat pinkish stripe, plainly wrong against the warm plaster",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "the stripe's colour next to the bare wall, close",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "her wince",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B16",
+     "line": "It sits there as an obvious coat.",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "macro across the stripe's edge: a flat ridge of beige sitting on top of the plaster with a hard edge",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "the coated and bare wall side by side",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a wet paint sign",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 0,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B17",
+     "line": "And on a wall with any texture or fine cracks,",
+     "candidates": [
+      {
+       "route": "MECHANISM",
+       "picture": "square macro: the beige coat slides over fine hairline cracks and sinks in, each crack turning to a darker line",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the bare cracks alone",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "a fingertip tracing one crack",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B18",
+     "line": "like skin over fifty, it sinks straight into them and makes them worse.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "the same square macro on her cheek: beige foundation sinks into her fine lines in the same pattern as the wall's cracks",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "her whole caked face in the mirror again",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a macro of fine lines, bare",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "Act 3",
+   "role": "solution",
+   "idea": "the opposite: no shade at all — white that becomes her shade on her face, in one unbroken shot",
+   "rows": [
+    {
+     "beat": "B19",
+     "line": "This does the opposite. It does not come in a shade.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "at the wall she sets the beige bottle down by the paint can and holds up the closed violet stick beside her face, wordmark to the lens",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "the paint can and the stick side by side on the drop cloth",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the stick on a white table",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B20",
+     "line": "It comes out pure white. I know what you are thinking. Stay with me.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "a little low: she draws the cap off and turns the white balm to the lens, the corner of her mouth lifting, knowing",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "a macro of the white crest",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "her eyebrow raised to the lens",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B21",
+     "line": "It reads the warmth of your own skin and becomes your exact shade, right there on your face. No shade to pick. No wrong match. It adapts as it goes on.",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "one unbroken side-on macro of her bare cheek: a white stripe goes on, the brush circles through it — white ahead of the crown, her own shade behind — until the cheek is one even tone, every line still there",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "white stripe, then the blended cheek, cut together",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the stick turning on a table",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    }
+   ]
+  },
+  {
+   "group": "Act 4",
+   "role": "proof",
+   "idea": "the result on the same face: even, matched, every line still hers — and the factory bottle goes back on the shelf",
+   "rows": [
+    {
+     "beat": "B22",
+     "line": "It covers the lines, the dark circles, the tired.",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "she turns her finished face slowly from profile to the lens in the window light: even tone, the circles gone, every line still there",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "her bare face cut to her finished face",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a macro of her finished under-eye",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "B23",
+     "line": "My skin, on its best day. Finally the right match,",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "she holds the beige bottle up beside her finished cheek: the flat factory beige next to her even, matched skin",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PROOF",
+       "picture": "a macro of her cheek, pores and lines, the tone even",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "her looking at her reflection, pleased",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B24",
+     "line": "instead of a guess from a factory.",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "from above her shoulder she sets the beige bottle back on the shelf among the forty others and lets go",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PRODUCT",
+       "picture": "the stick set down in front of the shelf",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a factory conveyor of bottles",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 0
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "Act 5",
+   "role": "offer",
+   "idea": "the deal on her dresser, then the stick alone in soft light",
+   "rows": [
+    {
+     "beat": "B25",
+     "line": "two Foundation Sticks for almost the price of one,",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "from above the dresser her hand sets a second stick upright beside the first, both wordmarks to the lens",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "one stick, then two",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "two sticks on a white background",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B26",
+     "line": "plus a free primer, a mystery gift,",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "level with the dresser her hand sets the primer and then the small gift box beside the two sticks",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "level with the dresser her hand sets the primer and then the small gift box beside the two sticks, the box lid ajar on a fold of white tissue",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the primer alone",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 1,
+     "hero": false
+    },
+    {
+     "beat": "B27",
+     "line": "Stop paying for a color that was never yours.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "the closed violet stick stands on the white dresser and turns a quarter turn in soft window light, the wordmark coming round, the shelf of bottles soft behind",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "the stick in front, forty bottles behind it in focus",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a price tag",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 0,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    }
+   ]
+  }
+ ]
+}
