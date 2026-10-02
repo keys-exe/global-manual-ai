@@ -42,8 +42,12 @@ SPLIT = {"L019": [("Six", "SC02-SH03"), ("one", "SC02-SH04")],
          "L035": [("Barbara", "SC05-SH01"), ("She", "SC05-SH02")],
          "L051": [("Barbara's", "SC09-SH02"), ("Her", "SC09-SH03")],
          "L052": [("I've", "SC10-SH01"), ("No", "SC10-SH02")],
-         "L068": [("So", "SC12-SH08"), ("It's", "SC12-SH09", 3)]}   # the third "It's": "It's been designed…"
-OFF = {"L034": 10.0}       # SC04-T2 marks its beats by time: L034 on its silent beat [10s-14s]
+         "L068": [("So", "SC12-SH08"), ("It's", "SC12-SH09", 2)]}   # the second "It's": "It's been designed…"
+OFF = {"L034": 10.0}
+# L039 "It looked absurd. Too small." follows L037 straight on, on the strap shot, before Barbara's "They come in twos":
+# the take leaves 0.8 s between her line and Her reply — too little to slow — and the two VO lines are one thought
+# (the one swap of script order in the cut; told to the user)
+FOLLOW_ON = {"L039"}       # SC04-T2 marks its beats by time: L034 on its silent beat [10s-14s]
 # off-screen lines: (line, file, in, out, row, filter, offset in the row's shot or None = after the line before, vo_in)
 OFFSCREEN = [("L027", B / "voice" / "C4_voice_master.m4a", 0.0, 5.41, "SC03-SH09", "phone", 0.0, 0.25)]
 # L009 is cut at its own pause around the commuter's reaction: "…the escalator is out of service." — "You're joking." —
@@ -93,27 +97,30 @@ def place_items(takes, fixed=None, offscreen=()):
     row_take = {}
     for k in takes:
         for i, r in enumerate(k["covers"]):
-            row_take[r] = (k, k["starts"].get(i + 1, 0.0))
+            row_take[r] = (k, k["starts"].get(i + 1, 0.0 if i == 0 else None))
     items, last = [], None
 
     def add(line, f, a, b, row, flt=None, off=None, vo_in=VO_IN):
         nonlocal last
         k, o = row_take.get(row, (None, None)) if row else (None, None)
+        if k is not None and o is None and last and last["take"] is not k:
+            o = 0.0  # a take's first line with no shot timing starts on the take
         if k is None:
             k, o = (last["take"], None) if last else (takes[0], 0.0)
         if off is not None:
             o = off if row is None else o + off
         after = False
-        if o is None and last:  # a line that follows another: after any on-screen line spoken between them
+        if o is None and last and line.split("#")[0] not in FOLLOW_ON:  # after any on-screen line spoken between them
             L0, L1 = last["line"].split("#")[0], line.split("#")[0]
             between = [x for x, _ in inv if L0 < x < L1]
             after = any(spk[x] not in ("VO",) for x in between)
         it = {"line": line, "file": f, "a": a, "b": b, "dur": b - a, "take": k, "off": o, "row": row, "flt": flt, "vo_in": vo_in,
-              "after_span": after}
+              "after_span": after, "follow_on": line.split("#")[0] in FOLLOW_ON}
         k["items"].append(it); items.append(it); last = it
 
     if fixed is not None:
-        for line, f, beat, off in fixed:
+        for f, beat, off in fixed:
+            line = Path(f).stem
             k = next(x for x in takes if x["beat"] == beat)
             it = {"line": line, "file": Path(f), "a": 0.0, "b": H.info(f)[0], "dur": H.info(f)[0], "take": k, "off": off,
                   "row": beat, "flt": None, "vo_in": VO_IN}
@@ -152,9 +159,9 @@ class Warp:
         self.st = []
 
     def add(self, a, b, extra):
-        for s in self.st:
-            if abs(s[0] - a) < 1e-6 and abs(s[1] - b) < 1e-6:
-                s[2] += extra
+        for s in self.st:  # an overlapping stretch becomes one wider stretch carrying both extras
+            if a < s[1] - 1e-6 and b > s[0] + 1e-6:
+                s[0], s[1], s[2] = min(s[0], a), max(s[1], b), s[2] + extra
                 return
         self.st.append([a, b, extra]); self.st.sort()
 
@@ -182,6 +189,9 @@ def stretch(w, k, lo, hi, need, report):
     lo, hi = max(0.0, lo), min(k["dur"], hi)
     if hi - lo < 0.3:
         lo = max(0.0, hi - 0.3)
+    for st in w.st:  # cap against the interval this stretch will merge into
+        if lo < st[1] - 1e-6 and hi > st[0] + 1e-6:
+            lo, hi = min(lo, st[0]), max(hi, st[1])
     have = w.out(hi) - w.out(lo)
     cap = (hi - lo) / MIN_SPEED - have
     x = min(need, max(0.0, cap))
@@ -192,7 +202,7 @@ def stretch(w, k, lo, hi, need, report):
 
 
 def plan(takes, ending=True):
-    t, prev_end, report = 0.0, -10.0, []
+    t, prev_end, report, prev_item = 0.0, -10.0, [], None
     for i, k in enumerate(takes):
         w = Warp(); k["warp"] = w; k["at"] = t
         sp = k.get("spans", [])
@@ -208,13 +218,16 @@ def plan(takes, ending=True):
                 for a, b in sorted(sp):
                     if b <= ts0 - 0.05:
                         continue
-                    if grp is None or a - last_b < 0.6:
+                    if grp is None or a - last_b < 1.0:
                         grp, last_b = a if grp is None else grp, b
                     else:
                         break
                 if last_b is not None:
                     s = max(s, t + w.out(last_b) + CLEAR)
-            moved = True
+            ref = None
+            if it.get("follow_on") and prev_item is not None and prev_item["take"] is k:
+                s = prev_end + VO_GAP; ref = w.inv(prev_item["at"] - t)   # one block with the line before it
+            moved = ref is None
             while moved:  # never starts on top of a spoken clip line: after it
                 moved = False
                 ts = w.inv(s - t)
@@ -223,15 +236,15 @@ def plan(takes, ending=True):
                         s = t + w.out(b) + CLEAR + 0.01; moved = True
             ts = w.inv(s - t)
             e = s + it["dur"]
-            nxt = [a for a, b in sp if a > ts]
+            nxt = [a for a, b in sp if a > (ref if ref is not None else ts)]
             if nxt:
                 na = min(nxt)
                 gap_end = t + w.out(na)
                 if e + CLEAR > gap_end:  # the next spoken line would start under it: slow the speech-free picture before it
                     prev_b = max([b for a, b in sp if b <= na] + [0.0])
-                    lo = max(prev_b, min(ts, it["off"] if it["off"] is not None else ts))
+                    lo = max(prev_b, min(ref if ref is not None else ts, it["off"] if it["off"] is not None else ts))
                     stretch(w, k, lo, na - 0.05, e + CLEAR - gap_end, report)
-            it["at"] = s; prev_end = e
+            it["at"] = s; prev_end = e; prev_item = it
             report.append(f"{it['line']:8} {k['beat']:13} at {s:7.2f}s ({it['dur']:.2f}s)" + (f"  +{s - want:.2f}s after its mark" if s - want > 0.05 else ""))
         end = t + w.out(k["dur"])
         if i + 1 < len(takes):
