@@ -101,14 +101,14 @@ SHOTS.append(dict(beat="SC01-T1", kind="multi", covers=["SC01-SH01", "SC01-SH02"
     title="Hook 1 · T1 — the toast begins: Thirty years (SH01–SH03)", start_pos=R["SC01-SH01"]["start_pos"], end_pos=R["SC01-SH03"]["end_pos"],
     prompt=" ".join([
         manifest([("@image1", SHEET("Greg", GREG_D1)), ("@image2", SHEET("Susan", SUSAN_D1)), ("@image3", SHEET("Paula", PAULA_D1)),
-                  ("@image4", SHEET("Friend A", FA_D1)), ("@image5", SHEET("Friend B", FB_D1)), ("@image6", YARD), ("@image7", CAKE), ("@audio1", VOICE("Greg"))]),
-        SERIES, LOOK, INHERIT, GEO, NOSPK,
+                  ("@image4", SHEET("Friend A", FA_D1)), ("@image5", SHEET("Friend B", FB_D1)), ("@image6", YARD), ("@image7", CAKE), ("@video1", SEATV), ("@audio1", VOICE("Greg"))]),
+        SERIES, LOOK, INHERIT, GEO, SEAT, NOSPK,
         "One scene covered in 3 shots within a single take, all on the same side of the action line, with the same light, look and wardrobe throughout. Frame 1: " + R["SC01-SH01"]["start_pos"] + ". "
         "Everyone stays in their place. The action carries straight across every cut: each shot picks up the movement exactly where the last one left it, and everyone is where the last shot left them. "
         f"SHOT 1, [0s-4s]: WIDE from the garden end of the table at eye height, three-quarter, Camera on a tripod, locked: the whole long table under the bulbs, the friends mid-laugh; halfway down on the left, "
         f"Greg, {GREG_ID}, in {GREG_D1}, pushes up from his chair, sways a little and taps his wine glass twice with a fork; heads turn to him, smiling. "
-        f"SHOT 2, [4s-9s]: MEDIUM from low across the table, three-quarter on Greg standing over the table, glass raised, a warm wide grin, the bulbs behind him; he says to the table, warm and loud: {L001} "
-        f"SHOT 3, [9s-12s]: MCU at eye level from across the table, straight on Susan, {SUSAN_ID}, in {SUSAN_D1}, seated beside him: glasses rise all around her; she almost smiles and lifts her glass an inch off the table, her lips sealed. "
+        f"SHOT 2, [4s-9s]: MEDIUM from low across the table, three-quarter on Greg standing over the table beside his own chair, glass raised, a warm wide grin, the bulbs behind him; Susan sits in her chair right beside him, at frame left of him, in the dusty-blue blouse, exactly her seat in @video1, the garden and trees behind them both; Paula sits across the table, behind the camera, never beside him. He says to the table, warm and loud: {L001} "
+        f"SHOT 3, [9s-12s]: MCU at eye level from Paula's side of the table, straight on Susan, {SUSAN_ID}, in {SUSAN_D1}, framed exactly as @video1 frames her — in her seat on the long side, the garden, trees and low sun behind her; Greg's navy sleeve, standing beside her, just at the right edge of frame, and nobody else beside her: glasses rise all around her; she almost smiles and lifts her glass an inch off the table, her lips sealed. "
         "Each cut lands on a completed action. The eyelines match across the table. Nobody looks into the lens. Last frame: " + R["SC01-SH03"]["end_pos"] + ".",
         F2, PHYS,
         "While the line is spoken, Greg keeps doing one thing with his hands: his right hand holding his wine glass raised at chest height, at one steady hold through the line. It is ordinary and loose, and the hand never stops to gesture.",
@@ -118,10 +118,13 @@ SHOTS.append(dict(beat="SC01-T1", kind="multi", covers=["SC01-SH01", "SC01-SH02"
                  "charms the table. Opens big and warm; turns on 'medal', a grin at his own joke; exits on 'right?' looking round for the laugh. Stress on 'Thirty'.",
                  "warm, loud, loose with drink, matching the face in this shot.", "the joke is half true and he knows it, which leaks only through not looking at Susan."),
         AUD,
-        negs(NEG_EQUIP, NEG_MORPH, NEG_CAKE, "no one in red, no Susan speaking", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+        negs(NEG_EQUIP, NEG_MORPH, NEG_CAKE, "no one in red, no Susan speaking, no Paula beside Greg, no one seated between Susan and Greg", NEG_SEAT, NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "the cake gets writing or is cut", "prevented_by": "the cake card as Image7, 'nothing written on it, uncut', cake negatives"},
            {"risk": "the wrong person gives the toast or Susan speaks", "prevented_by": "the voice ref is Greg's own words only; NOSPK; 'no Susan speaking'"},
-           {"risk": "the table layout drifts", "prevented_by": "GEO block: who sits where, left/right named from the plate's own view (HT22)"}]))
+           {"risk": "the table layout drifts", "prevented_by": "GEO block: who sits where, left/right named from the plate's own view (HT22)"},
+           {"risk": "Paula in Susan's seat beside Greg, Susan seated beside a friend (v1 fault)", "prevented_by": "@video1 = T2 for her seat, SEAT clause, SHOT 2 names Susan beside him and Paula across, SHOT 3 framed as @video1 with Greg's sleeve at her side, seat negatives"}],
+    videos=["T2"], fix="change the seating location of susan use the 2nd video as reference where susan located",
+    fix_note="prompt fault: SHOT 2 never said who sits beside Greg, so Paula took Susan's chair; SHOT 3 'seated beside him' with no seat named put Susan next to Friend B → T2 attached as @video1 for her seat, SEAT clause, SHOT 2 names Susan in the chair beside him (frame left) and Paula across the table, SHOT 3 framed from Paula's side exactly as @video1 with Greg's sleeve at her side, NEG_SEAT + 'no Paula beside Greg'"))
 
 SHOTS.append(dict(beat="SC01-T2", kind="take", covers=["SC01-SH04"], duration=13, line=L002 + " " + L003, subject_motion="still",
     files=["N", "L-YARD", "CAKE"], audios=["C1-L001"],
