@@ -1174,11 +1174,18 @@ function joinParts(ids,type,onProgress){
   }
   return joined[key];
 }
-// Card videos play muted while on screen; the viewer plays with controls.
+// Card videos play muted while on screen; the viewer plays with sound by default (V7.90.8) — muted only when the
+// browser refuses sound (then a Sound on button shows) or the viewer muted it themselves (remembered on this device).
 const vis=("IntersectionObserver" in window)?new IntersectionObserver(es=>es.forEach(e=>{
   const v=e.target; if(e.isIntersecting){loadVideo(v)} else if(!v.paused) v.pause();
 }),{rootMargin:"200px"}):null;
-function tryPlay(v){if(v.dataset.noauto) return;v.muted=v.muted||!v.dataset.sound;const p=v.play();if(p&&p.catch) p.catch(()=>{})}
+state.viewerMuted=lsGet("gb.viewerMuted")==="1";
+function soundButton(v){const w=v.parentElement;if(!w||w.querySelector(".v-sound")) return;
+  const b=document.createElement("button");b.className="btn small v-sound";b.type="button";b.dataset.sound="1";b.textContent="🔊 Sound on";v.after(b)}
+function tryPlay(v){if(v.dataset.noauto) return;const want=!!v.dataset.sound&&!state.viewerMuted;v.muted=!want;
+  const p=v.play();if(p&&p.catch) p.catch(err=>{
+    // the browser blocks sound without a fresh tap: play muted and offer Sound on
+    if(want&&err&&err.name==="NotAllowedError"){v.dataset.autoMute="1";v.muted=true;soundButton(v);const p2=v.play();if(p2&&p2.catch) p2.catch(()=>{})}})}
 function loadVideo(v){
   if(v.dataset.parts&&!v.getAttribute("src")){
     if(v.dataset.loading) return; v.dataset.loading="1";
@@ -1206,6 +1213,9 @@ function hydrate(root){
         v.removeAttribute("data-parts");v.src="/_blob/"+ids[0];v.addEventListener("loadedmetadata",()=>{try{v.currentTime=t}catch(e){}v.muted=!snd;const pp=v.play();if(pp&&pp.catch) pp.catch(()=>{})},{once:true});return}
       const w=v.parentElement;if(w&&!w.querySelector(".vload")){const n=document.createElement("span");n.className="vload";n.textContent="This video can't play here. Use Download.";w.appendChild(n)}diag("videoError",v.dataset.direct?"direct-fallback":v.dataset.parts?"joined":"direct")});
     v.addEventListener("playing",()=>diag("videoPlaying",v.dataset.parts?"joined":"direct"),{once:true});
+    // the viewer's own mute / unmute is remembered for the next video; a mute forced by the browser is not
+    if(v.dataset.sound) v.addEventListener("volumechange",()=>{if(v.dataset.autoMute){if(!v.muted) delete v.dataset.autoMute;return}
+      state.viewerMuted=v.muted;lsSet("gb.viewerMuted",v.muted?"1":"0")});
     if(v.closest(".viewer")) loadVideo(v); else if(vis) vis.observe(v); else loadVideo(v);
   });
 }
@@ -1836,7 +1846,7 @@ function renderViewer(){
   const isAud=type.startsWith("audio/");
   const media=ingV?(one&&one.asset?`<div class="v-ing1">${one.audio?`<div class="v-audio"><span class="lbl">${esc(one.label)}</span><audio ${srcFrom(one.asset,one.parts,one.type)} controls></audio></div>`:`<img ${srcFrom(one.asset,one.parts,one.type)} alt="${esc(one.label)}">`}<button class="btn small" type="button" ${seed?`data-ving="all"`:`data-vstep="${k}"`}>${I.l} ${seed?"All ingredients":"Back to the "+d.label.toLowerCase()} · ${esc(one.label)}</button></div>`:
       ings.length?`<div class="v-ing">${ings.map(x=>ingTile(g,x,"viewer")).join("")}</div>`:`<div class="v-empty">No ingredients listed yet</div>`):
-    pending(g,k)&&!older?genPanel(g,k):asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls muted autoplay loop playsinline></video><button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
+    pending(g,k)&&!older?genPanel(g,k):asset&&isAud?`<div class="v-audio"><span class="lbl">Audio</span><audio ${src} controls autoplay></audio></div>`:asset?(isVid?`<video ${src} controls loop playsinline data-sound="1"${state.viewerMuted?" muted":""}></video>${state.viewerMuted?`<button class="btn small v-sound" type="button" data-sound="1">🔊 Sound on</button>`:""}`:`<img ${src} alt="${esc(g.beat)} ${d.label} v${shown.v}">`):
     moved?`<div class="v-empty"><div style="display:grid;gap:12px;justify-items:center">${I.box}<span>v${shown.v} is on the Old versions board, kept at full quality. Nothing was shrunk or deleted.</span>${archiveLink(shown)?`<a class="btn" href="${esc(archiveLink(shown))}" target="_blank" rel="noopener">Open in Old versions ↗</a>`:""}</div></div>`:
     `<div class="v-empty">${locked?`🔒 Confirm the ${seed?"ingredients":"image"} first`:`No ${d.label.toLowerCase()} yet`}</div>`;
   const s=stepState(g,k);
@@ -2321,7 +2331,7 @@ document.addEventListener("click",e=>{
   if(ds.promoteCancel){const gg=state.gens.find(x=>x.id===ds.promoteCancel);if(gg) cancelPromote(gg);return}
   if(ds.vrestore){const x=state.gens.find(y=>y.id===state.viewer.id);if(x) restoreVersion(x,state.viewer.step,Number(ds.vrestore));return}
   if(state.viewer&&state.viewer.menu&&!e.target.closest(".v-menu")){state.viewer.menu=false;renderViewer()}
-  if(ds.sound){const v=document.querySelector(".viewer video");if(v){v.muted=false;v.dataset.sound="1";v.volume=1;const pp=v.play();if(pp&&pp.catch) pp.catch(()=>{v.muted=false})}t.remove();return}
+  if(ds.sound){const v=document.querySelector(".viewer video");if(v){delete v.dataset.autoMute;state.viewerMuted=false;lsSet("gb.viewerMuted","0");v.muted=false;v.dataset.sound="1";v.volume=1;const pp=v.play();if(pp&&pp.catch) pp.catch(()=>{v.muted=false})}t.remove();return}
   if(ds.vpair){openViewer(ds.vpair,"image");state.viewer.ver=Number(ds.v);renderViewer();return}
   if(ds.pick){state.faultOpen=null;pickImage(ds.pick,Number(ds.v));return}
   if(ds.viewm){openViewer(ds.viewm,ds.step)}

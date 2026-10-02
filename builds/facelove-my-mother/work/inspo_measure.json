@@ -1,0 +1,859 @@
+[
+  {
+    "link": "builds/facelove-my-mother/intake/VIDEO INSPO.mp4",
+    "role": "primary",
+    "status": "OK",
+    "file": "builds/facelove-my-mother/intake/VIDEO INSPO.mp4",
+    "duration_s": 266.07,
+    "resolution": "720x1280",
+    "aspect": "9:16",
+    "fps": 24.0,
+    "has_audio": true,
+    "shot_count": 92,
+    "mean_shot_s": 2.89,
+    "cut_times_s": [
+      3.25,
+      15.12,
+      20.54,
+      23.88,
+      27.46,
+      32.75,
+      37.83,
+      46.75,
+      51.42,
+      53.54,
+      57.12,
+      64.62,
+      74.54,
+      75.83,
+      79.21,
+      81.54,
+      83.46,
+      91.5,
+      94.0,
+      96.12,
+      98.25,
+      100.42,
+      101.12,
+      104.0,
+      106.79,
+      108.08,
+      109.79,
+      111.04,
+      113.62,
+      116.75,
+      117.62,
+      119.88,
+      121.42,
+      122.25,
+      127.08,
+      129.96,
+      132.46,
+      134.21,
+      135.83,
+      137.46,
+      139.83,
+      142.0,
+      144.46,
+      147.29,
+      150.17,
+      151.54,
+      153.38,
+      154.75,
+      157.46,
+      160.0,
+      161.62,
+      168.79,
+      171.75,
+      174.67,
+      177.5,
+      181.33,
+      183.38,
+      185.62,
+      188.17,
+      194.12,
+      195.92,
+      197.75,
+      200.54,
+      201.88,
+      203.04,
+      208.62,
+      209.67,
+      211.71,
+      213.67,
+      215.08,
+      216.58,
+      217.79,
+      223.0,
+      226.75,
+      228.33,
+      229.46,
+      231.0,
+      232.25,
+      234.25,
+      235.38,
+      236.67,
+      237.83,
+      241.04,
+      241.62,
+      245.21,
+      256.12,
+      260.25,
+      261.62,
+      263.04,
+      264.33,
+      265.12
+    ],
+    "silences_-40dB": [],
+    "silences_-30dB": [],
+    "shots": [
+      {
+        "shot": "S01",
+        "t_in": 0.0,
+        "t_out": 3.25,
+        "len_s": 3.25,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S01_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S01_mid.jpg"
+      },
+      {
+        "shot": "S02",
+        "t_in": 3.25,
+        "t_out": 15.12,
+        "len_s": 11.87,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S02_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S02_mid.jpg"
+      },
+      {
+        "shot": "S03",
+        "t_in": 15.12,
+        "t_out": 20.54,
+        "len_s": 5.42,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S03_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S03_mid.jpg"
+      },
+      {
+        "shot": "S04",
+        "t_in": 20.54,
+        "t_out": 23.88,
+        "len_s": 3.34,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S04_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S04_mid.jpg"
+      },
+      {
+        "shot": "S05",
+        "t_in": 23.88,
+        "t_out": 27.46,
+        "len_s": 3.58,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S05_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S05_mid.jpg"
+      },
+      {
+        "shot": "S06",
+        "t_in": 27.46,
+        "t_out": 32.75,
+        "len_s": 5.29,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S06_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S06_mid.jpg"
+      },
+      {
+        "shot": "S07",
+        "t_in": 32.75,
+        "t_out": 37.83,
+        "len_s": 5.08,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S07_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S07_mid.jpg"
+      },
+      {
+        "shot": "S08",
+        "t_in": 37.83,
+        "t_out": 46.75,
+        "len_s": 8.92,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S08_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S08_mid.jpg"
+      },
+      {
+        "shot": "S09",
+        "t_in": 46.75,
+        "t_out": 51.42,
+        "len_s": 4.67,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S09_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S09_mid.jpg"
+      },
+      {
+        "shot": "S10",
+        "t_in": 51.42,
+        "t_out": 53.54,
+        "len_s": 2.12,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S10_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S10_mid.jpg"
+      },
+      {
+        "shot": "S11",
+        "t_in": 53.54,
+        "t_out": 57.12,
+        "len_s": 3.58,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S11_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S11_mid.jpg"
+      },
+      {
+        "shot": "S12",
+        "t_in": 57.12,
+        "t_out": 64.62,
+        "len_s": 7.5,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S12_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S12_mid.jpg"
+      },
+      {
+        "shot": "S13",
+        "t_in": 64.62,
+        "t_out": 74.54,
+        "len_s": 9.92,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S13_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S13_mid.jpg"
+      },
+      {
+        "shot": "S14",
+        "t_in": 74.54,
+        "t_out": 75.83,
+        "len_s": 1.29,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S14_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S14_mid.jpg"
+      },
+      {
+        "shot": "S15",
+        "t_in": 75.83,
+        "t_out": 79.21,
+        "len_s": 3.38,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S15_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S15_mid.jpg"
+      },
+      {
+        "shot": "S16",
+        "t_in": 79.21,
+        "t_out": 81.54,
+        "len_s": 2.33,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S16_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S16_mid.jpg"
+      },
+      {
+        "shot": "S17",
+        "t_in": 81.54,
+        "t_out": 83.46,
+        "len_s": 1.92,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S17_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S17_mid.jpg"
+      },
+      {
+        "shot": "S18",
+        "t_in": 83.46,
+        "t_out": 91.5,
+        "len_s": 8.04,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S18_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S18_mid.jpg"
+      },
+      {
+        "shot": "S19",
+        "t_in": 91.5,
+        "t_out": 94.0,
+        "len_s": 2.5,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S19_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S19_mid.jpg"
+      },
+      {
+        "shot": "S20",
+        "t_in": 94.0,
+        "t_out": 96.12,
+        "len_s": 2.12,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S20_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S20_mid.jpg"
+      },
+      {
+        "shot": "S21",
+        "t_in": 96.12,
+        "t_out": 98.25,
+        "len_s": 2.13,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S21_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S21_mid.jpg"
+      },
+      {
+        "shot": "S22",
+        "t_in": 98.25,
+        "t_out": 100.42,
+        "len_s": 2.17,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S22_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S22_mid.jpg"
+      },
+      {
+        "shot": "S23",
+        "t_in": 100.42,
+        "t_out": 101.12,
+        "len_s": 0.7,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S23_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S23_mid.jpg"
+      },
+      {
+        "shot": "S24",
+        "t_in": 101.12,
+        "t_out": 104.0,
+        "len_s": 2.88,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S24_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S24_mid.jpg"
+      },
+      {
+        "shot": "S25",
+        "t_in": 104.0,
+        "t_out": 106.79,
+        "len_s": 2.79,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S25_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S25_mid.jpg"
+      },
+      {
+        "shot": "S26",
+        "t_in": 106.79,
+        "t_out": 108.08,
+        "len_s": 1.29,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S26_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S26_mid.jpg"
+      },
+      {
+        "shot": "S27",
+        "t_in": 108.08,
+        "t_out": 109.79,
+        "len_s": 1.71,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S27_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S27_mid.jpg"
+      },
+      {
+        "shot": "S28",
+        "t_in": 109.79,
+        "t_out": 111.04,
+        "len_s": 1.25,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S28_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S28_mid.jpg"
+      },
+      {
+        "shot": "S29",
+        "t_in": 111.04,
+        "t_out": 113.62,
+        "len_s": 2.58,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S29_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S29_mid.jpg"
+      },
+      {
+        "shot": "S30",
+        "t_in": 113.62,
+        "t_out": 116.75,
+        "len_s": 3.13,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S30_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S30_mid.jpg"
+      },
+      {
+        "shot": "S31",
+        "t_in": 116.75,
+        "t_out": 117.62,
+        "len_s": 0.87,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S31_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S31_mid.jpg"
+      },
+      {
+        "shot": "S32",
+        "t_in": 117.62,
+        "t_out": 119.88,
+        "len_s": 2.26,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S32_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S32_mid.jpg"
+      },
+      {
+        "shot": "S33",
+        "t_in": 119.88,
+        "t_out": 121.42,
+        "len_s": 1.54,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S33_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S33_mid.jpg"
+      },
+      {
+        "shot": "S34",
+        "t_in": 121.42,
+        "t_out": 122.25,
+        "len_s": 0.83,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S34_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S34_mid.jpg"
+      },
+      {
+        "shot": "S35",
+        "t_in": 122.25,
+        "t_out": 127.08,
+        "len_s": 4.83,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S35_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S35_mid.jpg"
+      },
+      {
+        "shot": "S36",
+        "t_in": 127.08,
+        "t_out": 129.96,
+        "len_s": 2.88,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S36_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S36_mid.jpg"
+      },
+      {
+        "shot": "S37",
+        "t_in": 129.96,
+        "t_out": 132.46,
+        "len_s": 2.5,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S37_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S37_mid.jpg"
+      },
+      {
+        "shot": "S38",
+        "t_in": 132.46,
+        "t_out": 134.21,
+        "len_s": 1.75,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S38_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S38_mid.jpg"
+      },
+      {
+        "shot": "S39",
+        "t_in": 134.21,
+        "t_out": 135.83,
+        "len_s": 1.62,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S39_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S39_mid.jpg"
+      },
+      {
+        "shot": "S40",
+        "t_in": 135.83,
+        "t_out": 137.46,
+        "len_s": 1.63,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S40_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S40_mid.jpg"
+      },
+      {
+        "shot": "S41",
+        "t_in": 137.46,
+        "t_out": 139.83,
+        "len_s": 2.37,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S41_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S41_mid.jpg"
+      },
+      {
+        "shot": "S42",
+        "t_in": 139.83,
+        "t_out": 142.0,
+        "len_s": 2.17,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S42_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S42_mid.jpg"
+      },
+      {
+        "shot": "S43",
+        "t_in": 142.0,
+        "t_out": 144.46,
+        "len_s": 2.46,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S43_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S43_mid.jpg"
+      },
+      {
+        "shot": "S44",
+        "t_in": 144.46,
+        "t_out": 147.29,
+        "len_s": 2.83,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S44_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S44_mid.jpg"
+      },
+      {
+        "shot": "S45",
+        "t_in": 147.29,
+        "t_out": 150.17,
+        "len_s": 2.88,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S45_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S45_mid.jpg"
+      },
+      {
+        "shot": "S46",
+        "t_in": 150.17,
+        "t_out": 151.54,
+        "len_s": 1.37,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S46_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S46_mid.jpg"
+      },
+      {
+        "shot": "S47",
+        "t_in": 151.54,
+        "t_out": 153.38,
+        "len_s": 1.84,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S47_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S47_mid.jpg"
+      },
+      {
+        "shot": "S48",
+        "t_in": 153.38,
+        "t_out": 154.75,
+        "len_s": 1.37,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S48_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S48_mid.jpg"
+      },
+      {
+        "shot": "S49",
+        "t_in": 154.75,
+        "t_out": 157.46,
+        "len_s": 2.71,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S49_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S49_mid.jpg"
+      },
+      {
+        "shot": "S50",
+        "t_in": 157.46,
+        "t_out": 160.0,
+        "len_s": 2.54,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S50_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S50_mid.jpg"
+      },
+      {
+        "shot": "S51",
+        "t_in": 160.0,
+        "t_out": 161.62,
+        "len_s": 1.62,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S51_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S51_mid.jpg"
+      },
+      {
+        "shot": "S52",
+        "t_in": 161.62,
+        "t_out": 168.79,
+        "len_s": 7.17,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S52_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S52_mid.jpg"
+      },
+      {
+        "shot": "S53",
+        "t_in": 168.79,
+        "t_out": 171.75,
+        "len_s": 2.96,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S53_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S53_mid.jpg"
+      },
+      {
+        "shot": "S54",
+        "t_in": 171.75,
+        "t_out": 174.67,
+        "len_s": 2.92,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S54_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S54_mid.jpg"
+      },
+      {
+        "shot": "S55",
+        "t_in": 174.67,
+        "t_out": 177.5,
+        "len_s": 2.83,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S55_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S55_mid.jpg"
+      },
+      {
+        "shot": "S56",
+        "t_in": 177.5,
+        "t_out": 181.33,
+        "len_s": 3.83,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S56_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S56_mid.jpg"
+      },
+      {
+        "shot": "S57",
+        "t_in": 181.33,
+        "t_out": 183.38,
+        "len_s": 2.05,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S57_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S57_mid.jpg"
+      },
+      {
+        "shot": "S58",
+        "t_in": 183.38,
+        "t_out": 185.62,
+        "len_s": 2.24,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S58_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S58_mid.jpg"
+      },
+      {
+        "shot": "S59",
+        "t_in": 185.62,
+        "t_out": 188.17,
+        "len_s": 2.55,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S59_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S59_mid.jpg"
+      },
+      {
+        "shot": "S60",
+        "t_in": 188.17,
+        "t_out": 194.12,
+        "len_s": 5.95,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S60_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S60_mid.jpg"
+      },
+      {
+        "shot": "S61",
+        "t_in": 194.12,
+        "t_out": 195.92,
+        "len_s": 1.8,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S61_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S61_mid.jpg"
+      },
+      {
+        "shot": "S62",
+        "t_in": 195.92,
+        "t_out": 197.75,
+        "len_s": 1.83,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S62_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S62_mid.jpg"
+      },
+      {
+        "shot": "S63",
+        "t_in": 197.75,
+        "t_out": 200.54,
+        "len_s": 2.79,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S63_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S63_mid.jpg"
+      },
+      {
+        "shot": "S64",
+        "t_in": 200.54,
+        "t_out": 201.88,
+        "len_s": 1.34,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S64_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S64_mid.jpg"
+      },
+      {
+        "shot": "S65",
+        "t_in": 201.88,
+        "t_out": 203.04,
+        "len_s": 1.16,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S65_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S65_mid.jpg"
+      },
+      {
+        "shot": "S66",
+        "t_in": 203.04,
+        "t_out": 208.62,
+        "len_s": 5.58,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S66_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S66_mid.jpg"
+      },
+      {
+        "shot": "S67",
+        "t_in": 208.62,
+        "t_out": 209.67,
+        "len_s": 1.05,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S67_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S67_mid.jpg"
+      },
+      {
+        "shot": "S68",
+        "t_in": 209.67,
+        "t_out": 211.71,
+        "len_s": 2.04,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S68_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S68_mid.jpg"
+      },
+      {
+        "shot": "S69",
+        "t_in": 211.71,
+        "t_out": 213.67,
+        "len_s": 1.96,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S69_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S69_mid.jpg"
+      },
+      {
+        "shot": "S70",
+        "t_in": 213.67,
+        "t_out": 215.08,
+        "len_s": 1.41,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S70_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S70_mid.jpg"
+      },
+      {
+        "shot": "S71",
+        "t_in": 215.08,
+        "t_out": 216.58,
+        "len_s": 1.5,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S71_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S71_mid.jpg"
+      },
+      {
+        "shot": "S72",
+        "t_in": 216.58,
+        "t_out": 217.79,
+        "len_s": 1.21,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S72_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S72_mid.jpg"
+      },
+      {
+        "shot": "S73",
+        "t_in": 217.79,
+        "t_out": 223.0,
+        "len_s": 5.21,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S73_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S73_mid.jpg"
+      },
+      {
+        "shot": "S74",
+        "t_in": 223.0,
+        "t_out": 226.75,
+        "len_s": 3.75,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S74_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S74_mid.jpg"
+      },
+      {
+        "shot": "S75",
+        "t_in": 226.75,
+        "t_out": 228.33,
+        "len_s": 1.58,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S75_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S75_mid.jpg"
+      },
+      {
+        "shot": "S76",
+        "t_in": 228.33,
+        "t_out": 229.46,
+        "len_s": 1.13,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S76_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S76_mid.jpg"
+      },
+      {
+        "shot": "S77",
+        "t_in": 229.46,
+        "t_out": 231.0,
+        "len_s": 1.54,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S77_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S77_mid.jpg"
+      },
+      {
+        "shot": "S78",
+        "t_in": 231.0,
+        "t_out": 232.25,
+        "len_s": 1.25,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S78_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S78_mid.jpg"
+      },
+      {
+        "shot": "S79",
+        "t_in": 232.25,
+        "t_out": 234.25,
+        "len_s": 2.0,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S79_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S79_mid.jpg"
+      },
+      {
+        "shot": "S80",
+        "t_in": 234.25,
+        "t_out": 235.38,
+        "len_s": 1.13,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S80_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S80_mid.jpg"
+      },
+      {
+        "shot": "S81",
+        "t_in": 235.38,
+        "t_out": 236.67,
+        "len_s": 1.29,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S81_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S81_mid.jpg"
+      },
+      {
+        "shot": "S82",
+        "t_in": 236.67,
+        "t_out": 237.83,
+        "len_s": 1.16,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S82_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S82_mid.jpg"
+      },
+      {
+        "shot": "S83",
+        "t_in": 237.83,
+        "t_out": 241.04,
+        "len_s": 3.21,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S83_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S83_mid.jpg"
+      },
+      {
+        "shot": "S84",
+        "t_in": 241.04,
+        "t_out": 241.62,
+        "len_s": 0.58,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S84_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S84_mid.jpg"
+      },
+      {
+        "shot": "S85",
+        "t_in": 241.62,
+        "t_out": 245.21,
+        "len_s": 3.59,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S85_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S85_mid.jpg"
+      },
+      {
+        "shot": "S86",
+        "t_in": 245.21,
+        "t_out": 256.12,
+        "len_s": 10.91,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S86_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S86_mid.jpg"
+      },
+      {
+        "shot": "S87",
+        "t_in": 256.12,
+        "t_out": 260.25,
+        "len_s": 4.13,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S87_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S87_mid.jpg"
+      },
+      {
+        "shot": "S88",
+        "t_in": 260.25,
+        "t_out": 261.62,
+        "len_s": 1.37,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S88_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S88_mid.jpg"
+      },
+      {
+        "shot": "S89",
+        "t_in": 261.62,
+        "t_out": 263.04,
+        "len_s": 1.42,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S89_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S89_mid.jpg"
+      },
+      {
+        "shot": "S90",
+        "t_in": 263.04,
+        "t_out": 264.33,
+        "len_s": 1.29,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S90_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S90_mid.jpg"
+      },
+      {
+        "shot": "S91",
+        "t_in": 264.33,
+        "t_out": 265.12,
+        "len_s": 0.79,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S91_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S91_mid.jpg"
+      },
+      {
+        "shot": "S92",
+        "t_in": 265.12,
+        "t_out": 266.07,
+        "len_s": 0.95,
+        "frame_in": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S92_in.jpg",
+        "frame_mid": "builds/facelove-my-mother/intake/frames/VIDEO INSPO/S92_mid.jpg"
+      }
+    ],
+    "second_sheets": [
+      "builds/facelove-my-mother/intake/frames/VIDEO INSPO/sheet_01.jpg",
+      "builds/facelove-my-mother/intake/frames/VIDEO INSPO/sheet_02.jpg",
+      "builds/facelove-my-mother/intake/frames/VIDEO INSPO/sheet_03.jpg",
+      "builds/facelove-my-mother/intake/frames/VIDEO INSPO/sheet_04.jpg",
+      "builds/facelove-my-mother/intake/frames/VIDEO INSPO/sheet_05.jpg",
+      "builds/facelove-my-mother/intake/frames/VIDEO INSPO/sheet_06.jpg",
+      "builds/facelove-my-mother/intake/frames/VIDEO INSPO/sheet_07.jpg",
+      "builds/facelove-my-mother/intake/frames/VIDEO INSPO/sheet_08.jpg",
+      "builds/facelove-my-mother/intake/frames/VIDEO INSPO/sheet_09.jpg"
+    ]
+  }
+]

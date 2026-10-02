@@ -1,0 +1,56 @@
+{
+ "beat": "PR-05b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — Under my clothes. Don't nobody know it's there. —: Keep this photo exactly as it is — her own staircase, the runner, the brass rods, the newel post, the photo wall, the front door, the light, and where she stands on the flight — and change only her clothes and her hands. Image 1 is the photo.\nToday she wears a pale-yellow cotton top and navy cotton trousers that fall smooth and straight over both knees to her tan slippers, nothing showing under them. She comes down facing the lens, mid-step, both hands holding a full laundry basket of folded towels at her waist, hands off the rail, four chunky fingers and a thumb on each, a calm closed-mouth smile, looking ahead down the stairs. Scale true to the set: the basket as wide as her hips.\nIn frame: her, the basket, the staircase and hall of Image 1; nothing else.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun from the door. No lettering, logos or labels but its wordmark.",
+ "script_line": "Under my clothes. Don't nobody know it's there.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "R-07a frame v8 A (confirmed) — her own staircase from the hall, she coming down (the picture this edit keeps)",
+   "kind": "frame"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "11b8a6bb-8c4a-4739-86ce-0c779f413c53",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pixar_anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user Fix \"should show productive broll not showing the product\" → she carries a laundry basket down her own stairs in the day-five navy trousers; the strap hidden under them",
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "11b8a6bb-8c4a-4739-86ce-0c779f413c53"
+ ],
+ "board_refs": [
+  {
+   "label": "R-07a frame v8 A (confirmed) — her own staircase from the hall, she coming down (the picture this edit keeps)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__R-07a",
+   "role": "Image 1"
+  }
+ ]
+}
