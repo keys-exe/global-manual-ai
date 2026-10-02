@@ -68,6 +68,11 @@
     - the INFO-TABLE layout card is dropped, because it shows the earlier plan with the near-end chair empty.
   - The third generation of each; the go is the board Fix plus the chat message (§22X).
   - The hourly Routine `trig_01QYbXK5CcpCVJ8G5fXhgBfx` was switched off (L60: Routines only on the user's ask).
+  - **v3 rendered:** 2,142 Kie cr (T2 693, T3 882, T4 567). All three CLEAN on the music check. They went on as `review`, and the v2s moved to Old. What I saw is written on each card as `seen`:
+    - **T2:** the seats match T1. One slip: food on Dan's plate in the wides.
+    - **T3:** the closing shot holds the layout. But Dan's close has the doorway behind him, and Oscar's close has the fireplace behind him.
+    - **T4:** Roy is right, with the doorway behind him. But food is back on the plates, and Hazel's front close has the sideboard behind her.
+  - Any further fix is a fourth generation and waits for the user's go.
 
 ## Open (Flags in BUILD_SHEET.md)
 F1 price (£30 for two) · F2 "two centimetres" · F3 "replace them at seventy-one" · F6 "Facebook copies" · F7 getstryde.co · F11 strap on under trousers vs FP13 (proposed: bare knee in her nightdress, trousers on after) · F12 one hook → one film · F15 close without the product in hand.
