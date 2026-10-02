@@ -1,0 +1,59 @@
+{
+ "beat": "M-06a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"First step. Pain gone. Just like that.\": From this frame: one foot lands on the step — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels. Her right slipper lands flat on the step's carpet runner and her weight settles onto it, once; on her bare right knee the strap stays rigid and exactly as in the frame — black shell, two peaks, chrome slides; the brass rod and the stairs stay exactly as in the frame; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut; the strap never slides.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_101338_a81301f9-5638-4820-b3f8-37e3afeaed69.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "First step. Pain gone. Just like that.",
+ "motion_plan": "From this frame: one foot lands on the step — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one step",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image M-06a@v1C, job a81301f9-5638-4820-b3f8-37e3afeaed69)"
+}

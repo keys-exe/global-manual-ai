@@ -77,6 +77,42 @@ J["M-06a"] = (H, "v1", f'''For the line "{L("M-06a")}": Staircase of Image 3, ta
 Close-up from the step below at ground level, looking up, sharp on the strap: her right foot in a tan slipper landing flat on the top step's carpet runner, a brass rod beside it; above it her bare right shin and knee with {SHAPE} 12 × 5 cm, a third of the frame wide, the kneecap's lower edge in its notch, the hem of the denim skirt just above; her arms at her sides above the frame, each hand four chunky fingers and a thumb; the family photos soft and small far behind. Scale true to the set: the slipper as long as the tread is deep, her shin facing the lens.
 In frame: one foot, one leg, the strap, the top step; the rest as Image 3, soft.
 {HALL} {SPLIT} {PLAIN}''', [FRONT, WORN, P0, N_FR, STH], False, True, True, True, None, False, None, None)
+J["M-02a"] = (H, "v2", f'''For the line "{L("M-02a")}": An X-ray card in the film's world, tall 9:16. Image 1 is the strap, Image 2 it worn front-on — copy its shape and where it sits exactly. Image 3 is the style — the film's X-ray look.
+Two knees side by side, front-on, level, blue-white bone on a black field, each knee a third of the frame wide. The LEFT knee wears a full knee sleeve, a faint grey outline over the whole joint, a soft amber haze across all of it. On the RIGHT knee, drawn solid in real materials over the X-ray, {SHAPE} 12 × 5 cm, as wide as the knee, its front to the lens, the wordmark level: the kneecap's lower edge sits in its notch, the shell on the tendon just under the kneecap, the band round the back of the leg; one small warm glow under the shell.
+In frame: two knees, the sleeve outline, one strap; every other area plain dark.
+{ANIM} {SPLIT} Film plain — no lettering, labels or measurement marks.''', [FRONT, WORN, XR], False, False, False, True, None, True, "S2",
+ 'user Fix "fix the product and palcement" → the worn-strap photo as Image 2 for its placement, the strap drawn solid in real materials over the X-ray, the kneecap\'s lower edge in its notch, the shell on the tendon just under the kneecap')
+# ---- user 2026-10-02: "about all the anatomy here we will use the normal anatomy" → every anatomy beat is the S3 natural-colour anatomical model
+NORM = "A clean 3D medical anatomy model of the right knee on a pale grey seamless background, in natural tissue colours — red muscle, white tendons and ligaments, ivory bone — soft even light, textbook clarity."
+NA = 'user 2026-10-02: "about all the anatomy here we will use the normal anatomy" → the natural-colour anatomical model (S3) on a pale grey background'
+J["M-02a"] = (H, "v3", f'''For the line "{L("M-02a")}": {NORM} Image 1 is the strap, Image 2 it worn front-on — copy its shape and where it sits exactly. Image 3 sets the light only.
+Two knee models side by side, front-on, level, each a third of the frame wide. The LEFT knee wears a full knee sleeve, a faint grey outline with a soft amber haze over the whole joint. On the RIGHT knee, {SHAPE} 12 × 5 cm, as wide as the knee, its front to the lens, the wordmark level: the kneecap's lower edge sits in its notch, the shell on the tendon just under the kneecap, the band round the back; one small warm glow under the shell.
+In frame: two knee models, the sleeve outline, one strap; every other area plain grey.
+{ANIM} {SPLIT} No lettering, labels or arrows.''', [FRONT, WORN, STH], False, False, False, True, None, True, "S3",
+ NA + ' · and the earlier Fix "fix the product and palcement": the worn-strap photo for its placement, the kneecap\'s lower edge in its notch')
+J["M-02a"] = (H, "v4", f'''For the line "{L("M-02a")}": {NORM} Image 1 is the strap. Image 2 sets the light only.
+Two knee models side by side, front-on, level, each cut just above and below the joint, each a third of the frame wide. The LEFT knee wears a full knee sleeve, a faint grey outline with a soft amber haze over the whole joint. On the RIGHT knee, {SHAPE} 12 × 5 cm, as wide as the knee, its front to the lens, the wordmark level: the kneecap's lower edge sits in its notch, the shell on the white tendon just under the kneecap, the band round the back; one small warm glow under the shell.
+In frame: two knee models, the sleeve outline, one strap; every other area plain grey, no skin.
+{ANIM} {SPLIT} No lettering, labels or arrows.''', [FRONT, STH], False, False, False, True, None, True, "S3",
+ NA + ' · v3 kept off: the worn-strap photo printed a real hairy leg and a room under both models → the worn photo dropped, each model cut above and below the joint on plain grey')
+J["M-03a"] = (H, "v2", f'''For the line "{L("M-03a")}": {NORM} Image 1 sets the light only.
+Close-up in true side profile from a little below the joint, the leg running up the frame, sharp on the tendon under the kneecap: the thigh muscles, the kneecap, the thigh-bone end, the shin-bone top and the white patellar tendon between them; on that tendon, a finger's width under the kneecap, one small round red point glowing, the size of a coin. Scale: the kneecap about a quarter of the frame wide.
+In frame: the knee model, the red point; every other area plain grey.
+{ANIM} No lettering, labels or arrows.''', [STH], False, False, False, False, None, True, "S3", NA)
+J["M-05a"] = (H, "v2", f'''For the line "{L("M-05a")}": {NORM} Image 1 sets the light only.
+Medium shot in true side profile, the whole leg from mid-thigh to mid-shin running up the frame, sharp on the tendon under the kneecap: a knee sleeve drawn as a faint grey outline round the whole joint; one small red point glowing on the white tendon just under the kneecap, shining through the sleeve; three soft red pressure lines running down the thigh muscles into that point. Scale: the knee about a third of the frame wide.
+In frame: the leg model, the sleeve outline, the red point and lines; every other area plain grey.
+{ANIM} No lettering, labels or arrows.''', [STH], False, False, False, False, None, True, "S3", NA)
+J["M-05b"] = (H, "v2", f'''For the line "{L("M-05b")}": {NORM} Image 1 is the strap, Image 2 it worn. Image 3 sets the light only.
+Close-up from a low three-quarter angle, sharp on the strap: {SHAPE} 12 × 5 cm, a third of the frame wide, its pad pressed on the white patellar tendon just under the kneecap, the kneecap's lower edge in its notch; under the pad the last of a red glow fading into a calm soft blue spreading along the tendon. Scale: the kneecap the width of the shell.
+In frame: the knee model, the strap; every other area plain grey.
+{ANIM} {SPLIT} {PLAIN}''', [FRONT, WORN, STH], False, False, False, True, None, True, "S3", NA)
+L_ED = ref("R-03b frame v1 A (confirmed) — Loretta at the kitchen table, the strap on her right knee", "frame", "179dfe8a-7ef0-4b2e-8ebd-f8558f58a15f", ID + "R-03b")
+J["R-03b"] = (B3, "v4", f'''For the line "{L("R-03b")}": Keep this photo exactly as it is — the kitchen, chair, woman, teal blouse, rolled khaki trousers — change only her pose: she shows the strap off. Image 1 is the photo. Image 2 is the strap. Image 3 is the style.
+Medium shot, sharp on the strap: the same woman as Image 1 — her face, skin and silver bob exactly as in Image 1 — seated, her right leg, on the left of the frame, stretched out toward the lens, heel down in its white slipper; on that right knee the strap of Image 2 copied exactly — a black shell, two pointed peaks round a notch, a chrome slide at each end — 12 × 5 cm, a quarter of the frame wide, its front to the lens; her left knee, on the right of the frame, bare; both hands open beside it, presenting it, four chunky fingers and a thumb on each; a proud closed-mouth grin, eyes on the lens. Scale: the chair seat level with her knee.
+In frame: her, the chair, one strap; the rest as Image 1.
+{KIT} {SPLIT} {PLAIN}''', [L_ED, FRONT, STH], True, True, True, True, L_ED, False, None,
+ 'user Fix "make her look like she is showing the stryde strap like flexing it" → an edit of her confirmed R-03b frame: the right leg (frame left) stretched toward the lens, both hands presenting the strap, a proud grin · v3 kept off: A a different woman, B the strap on her left knee (FP18) → her face named from Image 1, the sides named in the frame')
 fails = 0
 ONLY = [x for x in sys.argv[1:]]
 for b, (d, tag, pr, refs, face, body, room, prod, eo, anat, st, fn) in J.items():

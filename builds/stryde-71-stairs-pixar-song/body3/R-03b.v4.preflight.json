@@ -1,0 +1,86 @@
+{
+ "beat": "R-03b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"She pulled up her pant leg. She had on a little black strap,\": Keep this photo exactly as it is — the kitchen, chair, woman, teal blouse, rolled khaki trousers — change only her pose: she shows the strap off. Image 1 is the photo. Image 2 is the strap. Image 3 is the style.\nMedium shot, sharp on the strap: the same woman as Image 1 — her face, skin and silver bob exactly as in Image 1 — seated, her right leg, on the left of the frame, stretched out toward the lens, heel down in its white slipper; on that right knee the strap of Image 2 copied exactly — a black shell, two pointed peaks round a notch, a chrome slide at each end — 12 × 5 cm, a quarter of the frame wide, its front to the lens; her left knee, on the right of the frame, bare; both hands open beside it, presenting it, four chunky fingers and a thumb on each; a proud closed-mouth grin, eyes on the lens. Scale: the chair seat level with her knee.\nIn frame: her, the chair, one strap; the rest as Image 1.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "She pulled up her pant leg. She had on a little black strap,",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "R-03b frame v1 A (confirmed) — Loretta at the kitchen table, the strap on her right knee",
+   "kind": "frame"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "179dfe8a-7ef0-4b2e-8ebd-f8558f58a15f",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user Fix \"make her look like she is showing the stryde strap like flexing it\" → an edit of her confirmed R-03b frame: the right leg (frame left) stretched toward the lens, both hands presenting the strap, a proud grin · v3 kept off: A a different woman, B the strap on her left knee (FP18) → her face named from Image 1, the sides named in the frame",
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "179dfe8a-7ef0-4b2e-8ebd-f8558f58a15f",
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "R-03b frame v1 A (confirmed) — Loretta at the kitchen table, the strap on her right knee",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__R-03b",
+   "role": "Image 1"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 2"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 3"
+  }
+ ]
+}

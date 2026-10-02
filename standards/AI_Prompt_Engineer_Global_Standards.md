@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.89.2 — supersedes all prior versions.** *(V7.89.2: S1 Ghost keeps the house picture's look but never attaches the picture — the look in words on every S1 call, the picture the bar each render is judged against; `preflight.py` refuses an S1 call that attaches it — §12A-1, LESSONS L32)*
+**Version 7.89.3 — supersedes all prior versions.** *(V7.89.3: the team's anatomy look call wins over the style-range rule — `anat.lock`, `angles.py` (§12A-1 rule 7); only the product photo on an anatomy beat, never a worn photo (rule 8); on an image edit the product photo comes right after the picture being edited — `preflight.py` (§6A) — LESSONS L34, L35. V7.89.2: S1 Ghost keeps the house picture's look but never attaches the picture — the look in words on every S1 call, the picture the bar each render is judged against; `preflight.py` refuses an S1 call that attaches it — §12A-1, LESSONS L32)*
 
 ---
 
@@ -626,7 +626,7 @@ Frame with headroom, lead room, and empty space where the movement is going. **A
 5. **The register in one line:** Mode 1 `An ordinary iPhone photo, 1x lens, daylight, nothing staged or retouched.` (the `CAM-LOCK` and `CAP-*` intent); the light side and scene colour in a phrase when a location shows (§30K/§30L).
 6. **At most five "no …" items**, only for faults that keep recurring on this beat class and cannot be said positively. Never an `AVOID:` list.
 
-**Checks:** `scripts/preflight.py` with `"kind": "image"` (≤ 1,200 characters, the line present, ≤ 5 negatives, no face block or cast sheet on a no-face shot, no plate on a no-room shot, product photo first with a size anchor, the A/B pair routed by §18A — two Sunburst renders on realistic work, two Nano Banana Pro renders on anatomy and in Modes 2, 3 and 5). Any FAIL → not sent. A Fix note is applied by rewriting the prompt in this form, never by appending another paragraph or another "no …".
+**Checks:** `scripts/preflight.py` with `"kind": "image"` (≤ 1,200 characters, the line present, ≤ 5 negatives, no face block or cast sheet on a no-face shot, no plate on a no-room shot, product photo first with a size anchor — on an image edit (rule 3) right after the picture being edited, which is Image 1 (V7.89.3, L35) — the A/B pair routed by §18A — two Sunburst renders on realistic work, two Nano Banana Pro renders on anatomy and in Modes 2, 3 and 5). Any FAIL → not sent. A Fix note is applied by rewriting the prompt in this form, never by appending another paragraph or another "no …".
 
 **Unverified:** the hit-rate gain is not yet measured — the A/B picks on the board are the measurement (Open Decisions).
 
@@ -1222,6 +1222,8 @@ Every anatomy or mechanism beat names its **style** on the act-map row (`anat.st
 4. **What never changes across styles:** the same body (left or right as cast, the same `[REGION]`), the same `[SITE]` and product placement (§9A-P), the colour language (§11 — pain warm, relief cool — each style says it its own way: a warm glow on the X-ray film, the accent on the scan), the product at hero scale and true materials, the safety vocabulary, `NEG-FLOW` and `NEG-EXTERNAL`. `ANAT-LIGHT` and `ANAT-FIELD` belong to S1 (and S7's field); every other style carries its own light in its register line.
 5. **Modes 2, 3 and 5** render the same seven styles in the mode's own look (a Pixar-styled X-ray, a clay cross-section, `CLAY-DIAGRAM` for S7 in Mode 3) — never photoreal. Mode 4 enters any style through the world (§24G `MECH-SCREEN`: an X-ray on a lightbox, a scan on a monitor).
 6. **Routing (§18A):** anatomy styles S1–S4, S6, S7 are the anatomy route (two Nano Banana Pro renders); S5 is a Mode 1 capture (two Sunburst renders).
+7. **The team's look call wins** *(V7.89.3, user 2026-10-02 — "about all the anatomy here we will use the normal anatomy"; LESSONS L34)*. When the team names one look for a build's anatomy, every anatomy and mechanism beat of that build takes it — confirmed ones too, which move to Old with "Use this" to bring them back — and rule 1's style count is set aside for that build. The act map writes it on each anatomy row as `anat.lock` (the team's words); `angles.py` then skips the style checks and still checks the angles and moves. "Normal anatomy" is S3, the clinical studio model: natural tissue colours (red muscle, white tendons and ligaments, ivory bone) on a plain pale grey field. A look the agent picks never overrides a call the team made.
+8. **Only the product photo goes on an anatomy beat** *(V7.89.3, LESSONS L34)*. A worn photo of the product shows a real leg; attached to a model shot, it printed a real hairy leg and a room under the knee models. An anatomy image attaches the product photo (and a style or light frame), never a worn or lifestyle photo; the placement is written in words (the kneecap's lower edge in its notch). `preflight.py` fails an anatomy call that attaches a worn photo.
 
 ### Anatomy and mechanism camera — a range of angles and moves *(V7.81.0)*
 
@@ -9394,6 +9396,18 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
 
 **Camera numbers and the LUT — measure on the first film build (2026-09-28).** (a) Same frame, same seed: T2.0 vs T5.6 and 35mm vs 85mm in `CAM-FILM` — does depth or perspective change, or only the scale wording? (b) The shutter wording on Seedance and Kling — any motion-blur difference? (c) `COLOUR-KEY` with and without `[KELVIN]` across a five-shot scene — `light_check.py colour` warmth spread. (d) CapCut desktop vs `lut.py apply` on the same clip with the same `LUT-[BUILD].cube` — identical within ±2 levels?
+
+---
+
+# CHANGELOG — V7.89.2 → V7.89.3 *(patch — the user's call and the agent's own errors fixed at their source, §34B)*
+
+| § | Change |
+|---|---|
+| **12A-1** | Rule 7: the team's look call for a build's anatomy wins over the style-range rule — every anatomy beat takes it (confirmed ones too, moved to Old with "Use this"), written as `anat.lock` on the act map; "normal anatomy" = S3. Rule 8: only the product photo on an anatomy beat — a worn photo printed a real leg under the models |
+| **6A** | Checks: on an image edit the edited picture is Image 1 and the product photo comes right after it (the two checks could never both pass) |
+| Files | `preflight.py` (product-after-edit; anatomy + worn photo fails), `angles.py` (ANAT style checks skipped under `anat.lock`), both skills, LESSONS L34, L35 |
+
+**Origin:** user, 2026-10-02 — "about all the anatomy here we will use the normal anatomy" on `stryde-71-stairs-pixar-song` Act 4; the agent's own render check (M-02a printed a real leg) and preflight run (R-03b flex edit could not pass). Existing builds keep what they made.
 
 ---
 
