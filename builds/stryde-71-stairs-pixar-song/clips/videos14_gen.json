@@ -1,0 +1,42 @@
+{
+ "C-02a": {
+  "generationId": "ASIJV4FEVPkzr9FRFLhaiAtGEf17XhCJ1Rt4kYgp31FoPUcqmDumkrHT7ldqg8jEwGLJ_P9S",
+  "credits": 32,
+  "duration": 4,
+  "cv": 1,
+  "fromImage": 5,
+  "file": "C-02a_v1.mp4"
+ },
+ "C-02b": {
+  "generationId": "AZDzUtw2uoEKv9wfm5al_pcS7BCavfJjtr2eNWtUZn7haBacbxumwblUsYiyjnDwrkPDxUz4",
+  "credits": 40,
+  "duration": 5,
+  "cv": 1,
+  "fromImage": 5,
+  "file": "C-02b_v1.mp4"
+ },
+ "C-07a": {
+  "generationId": "AblD-BU4KAqejT_BMLPg1HG4NhcuyG3u37cRTD8uF0jfcr8YzgQtbE757K5EErnm3Q2F3yuC",
+  "credits": 32,
+  "duration": 4,
+  "cv": 1,
+  "fromImage": 3,
+  "file": "C-07a_v1.mp4"
+ },
+ "C-08a": {
+  "generationId": "AYkfuWTkRBdcoaJY3-0JFd_pNF_Xcs2hg8ywtUCcFyx_JCAaM2KGuci2w9bkG-ICDfEMS3tL",
+  "credits": 32,
+  "duration": 4,
+  "cv": 1,
+  "fromImage": 3,
+  "file": "C-08a_v1.mp4"
+ },
+ "PR-06a": {
+  "generationId": "ASOt_4NASON6zNjhCivD97T8h7OXU1saqcVmvmLUHr7rblMSXM_u6BuWVGXaAJJG_C0qvgDf",
+  "credits": 56,
+  "duration": 7,
+  "cv": 2,
+  "fromImage": 7,
+  "file": "PR-06a_v2.mp4"
+ }
+}

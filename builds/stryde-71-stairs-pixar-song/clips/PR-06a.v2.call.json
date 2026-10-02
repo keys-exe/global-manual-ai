@@ -1,0 +1,62 @@
+{
+ "beat": "PR-06a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"No pills. No gel. No brace around my ankle by lunchtime.\": From this frame: steam rises from the mug — about two seconds; camera R4 — slow single-axis push on a stabilised virtual rig. Nobody in the frame, nobody speaks. Only the steam moves: a thin curl of steam rises from the coffee mug and drifts, about two seconds; beside it the strap stays rigid and exactly as in the frame — black shell, two peaks together at its middle, chrome slides, exactly one strap lying still, a little longer than the mug is tall, its band as short as in the frame; the table stays exactly as in the frame. Stylized 3D animation, exactly on model from the frame. The camera pushes in slowly on one straight axis, nothing more; no cut.",
+ "duration": 7,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_142838_630351e6-7102-417e-a679-68ea52f670c2.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "No pills. No gel. No brace around my ankle by lunchtime.",
+ "motion_plan": "From this frame: steam rises from the mug — about two seconds; camera R4 — slow single-axis push on a stabilised virtual rig",
+ "motion_confirmed": true,
+ "pace": "about two seconds",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "user_go": null,
+ "fix_note": "image Fix \"the strap is too big\" → new start frame (image v7, the strap at true size beside the mug); same confirmed motion plan, the strap's size held from the frame",
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "pilot_ref": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18",
+  "FP21",
+  "FP22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model / the strap redrawn",
+   "prevented_by": "exactly on model from the frame; the strap rigid"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "the camera stays where it is / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v2 of this beat (from the confirmed image v7)"
+}

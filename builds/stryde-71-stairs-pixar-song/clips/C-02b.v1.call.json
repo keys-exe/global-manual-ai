@@ -1,0 +1,62 @@
+{
+ "beat": "C-02b",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"after they watched me come down the church steps. So I'ma just say it right here.\": From this frame: one step down, facing forwards — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels. All four women keep their lips sealed and jaws still from the first frame to the last, each face holding the expression of the frame — a silent clip, nobody speaks or sings. The woman in green takes one easy step down onto the next church step, facing forwards; as she steps, her left hand leaves the rail and swings loose at her side, her right hand free, and she never takes hold of the rail again, then she stands still; the three women in lilac, coral and cream stay still on the pavement, each exactly as in the frame; the steps, rail, brick and street stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. The camera stays where it is; no cut.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_143848_08331be1-2e62-4fca-ac76-9cc7bf362bdf.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "after they watched me come down the church steps. So I'ma just say it right here.",
+ "motion_plan": "From this frame: one step down, facing forwards — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one step",
+ "subject_motion": "travel",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "stairs",
+ "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
+ "pilot": "confirmed",
+ "pilot_ref": "HK-01a/HK-02a stairs clips (confirmed)",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18",
+  "FP21",
+  "FP22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model / the strap redrawn",
+   "prevented_by": "exactly on model from the frame; the strap rigid"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "the camera stays where it is / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image v5)"
+}
