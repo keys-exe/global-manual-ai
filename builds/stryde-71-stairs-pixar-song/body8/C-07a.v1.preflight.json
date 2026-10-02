@@ -1,0 +1,87 @@
+{
+ "beat": "C-07a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — Sixty days to send them back if they don't work. —: Keep this photo exactly as it is — the round wooden table, the light, the view from above — and clear the table. Image 1 is the photo. Image 2 is the box. Image 3 is the strap.\nFrom directly above, sharp on the box: on the bare table the open black box of Image 2 copied exactly, two straps side by side in its tray, fronts up, each the strap of Image 3 copied exactly — a black shell, two matching peaks close together at the middle of its top edge, a chrome slide at each end — 12 × 5 cm — the box a third of the frame wide; her right hand reaches in from the bottom edge, its back to the lens, a mustard sleeve at the wrist, setting the black lid down flat beside the box, four chunky fingers and a thumb. Scale true to the set: the box as long as her forearm.\nIn frame: the table, one open box, exactly two straps, the lid, one hand; nothing else.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "Sixty days to send them back if they don't work.",
+ "face": false,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P-04a frame v3 (confirmed) — the routine laid out on her kitchen table, from above",
+   "kind": "frame"
+  },
+  {
+   "label": "package_open.jpg — the box, open, two straps in the tray (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "e05783fd-e5e1-4e31-b247-3a8c950954b6",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "one_offs": null,
+ "medias": [
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6",
+  "33cf39f6-2945-410f-8ccf-d11e91538148",
+  "7dcc7c34-651e-45ae-87af-ea18884ec474"
+ ],
+ "board_refs": [
+  {
+   "label": "P-04a frame v3 (confirmed) — the routine laid out on her kitchen table, from above",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 1"
+  },
+  {
+   "label": "package_open.jpg — the box, open, two straps in the tray (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/package_open.jpg",
+   "role": "Image 2"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 3"
+  }
+ ]
+}

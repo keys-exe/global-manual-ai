@@ -1,0 +1,70 @@
+{
+ "beat": "C-02a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — Three ladies from church already ordered one —: Keep this photo exactly as it is — the red-brick church, its white columns, the wide steps with the black centre rail, the hedges, the sidewalk, the afternoon sun — a tall 9:16 crop at the foot of the steps, and add three women. Image 1 is the church. Image 2 is the style — the same render and character proportions as its runner.\nMedium close-up at eye level from the sidewalk, sharp on them: three Black church ladies of seventy, each about 5.5 heads tall, big round heads, soft round bodies, big eyes, in Sunday dresses and wide hats — lilac, coral, cream — stand side by side at the foot of the steps facing the lens; the middle one nudges the lady on her left and nods up the steps, all three eyes up the steps with knowing closed-mouth smiles, a small handbag in each near hand, four chunky fingers and a thumb on each. Scale true to the set: the bottom step at their ankles.\nIn frame: three women, the steps, the hedges; nobody else.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun. No lettering, logos or labels but its wordmark.",
+ "script_line": "Three ladies from church already ordered one",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P5-CHURCH plate (confirmed) — the church and its steps",
+   "kind": "location"
+  },
+  {
+   "label": "PR-04a frame v2 B (confirmed) — a full-body Pixar character, the build's body proportions (§24O rule 10)",
+   "kind": "style",
+   "people": true
+  }
+ ],
+ "match": "plate",
+ "edit_of": "020f7d83-d6e2-4744-9595-bef39ecf8f9f",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user image Fix \"not a pixar\" → the ladies drawn to the Pixar elder ladder (about 5.5 heads, big round heads, soft rounded bodies) with a full-body Pixar character as the style frame (§24O rule 10)",
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "one_offs": [
+  "three church ladies"
+ ],
+ "medias": [
+  "020f7d83-d6e2-4744-9595-bef39ecf8f9f",
+  "027d407e-ad54-4f9a-9594-32cb4c047765"
+ ],
+ "board_refs": [
+  {
+   "label": "P5-CHURCH plate (confirmed) — the church and its steps",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P5-CHURCH",
+   "role": "Image 1"
+  },
+  {
+   "label": "PR-04a frame v2 B (confirmed) — a full-body Pixar character, the build's body proportions (§24O rule 10)",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__PR-04a",
+   "role": "Image 2"
+  }
+ ]
+}

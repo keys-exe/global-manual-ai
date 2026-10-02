@@ -813,3 +813,44 @@ What moved to Old 2:
 **Waiting on:**
 - Picks on PR-05b, PR-06a and the six Act 7 pairs.
 - Confirm or Fix on the eight new clips: M-05a, L-01a, L-01b, L-02a, L-02b, L-03a, M-06a, PR-03a.
+
+### 2026-10-02 ~13:40–14:10 UTC — "fix those and generate the next act" (Act 8)
+
+**Board read first (L49):** two cards on `regenerate`, C-02a and C-02b (image Fix "not a pixar" on both). Clips were owed on the picks C-01a, C-03b, C-04a, C-05a (v1), PR-05b and PR-06a (v5).
+
+**Fixes, "not a pixar" — new pairs To check:**
+- Cause: the church ladies have no cast sheet. They were written in words only, and the one style frame was hands on a table (P-04a), so the model drew realistic small-headed bodies.
+- Fix: every woman's build is given in heads from the §24A elder ladder ("about 5.5 heads tall, big round heads, soft round bodies, big eyes"). The style frame is the PR-04a jogger, a confirmed full-body Pixar character who is not Loretta.
+- C-02a v3/v4.
+- C-02b v3/v4. The first B printed the line as a caption ("SO I'MA JUST SAY IT RIGHT HERE"), so it was kept off (L16), stored on Old 3 and re-rendered once with a no-captions clause.
+
+**System (owner account, V7.91.1):**
+- §24O rule 10: people with no sheet are drawn to the proportion ladder in words, and the style frame shows full-body Pixar people (`one_offs` on the call, `people: true` on that ref). `preflight.py` checks it.
+- L52.
+- `preflight.py` also counts a two-unit product ("exactly two straps").
+
+**Clips on the picks (Kling 3.0, 1080p, silent; To check):**
+- C-01a 5 s. Flagged: her hand pats more than once.
+- C-03b 5 s: blue glow along the tendon, slow push-in.
+- C-04a 6 s: the surgeon presses the strap.
+- C-05a 5 s: the cheap copy stretched and sagging.
+- PR-05b 5 s: stairs class, end frame waived by the user, stairs pilot confirmed. Flagged: she takes several steps, not one.
+- PR-06a 7 s: steam and a slow push.
+- The unused images of the picked pairs are on Old 3.
+
+**Act 8 (C-06a, C-07a, C-08a, C-08b, C-09a, C-09c), first pairs To check:**
+- C-06a, N-D5 sheet outfit: she holds up two straps on the sofa. The house comes from P0.
+  - The first B drew another woman (the jogger style frame's face), so it was kept off (L16) and re-rendered once with the hands-only style frame.
+  - Flagged: the re-render's straps look like luggage straps with metal clips.
+- C-07a: an edit of P-04a from above, the open product box (`package_open.jpg`, newly imported to Higgsfield) with two straps, her hand setting the lid.
+- C-08a, N-D0: an edit of R-07a v8 A, the old way — plum top, grey skirt, side-on, both hands on the rail, grey morning light.
+- C-08b, N-D3: the same frame edited, with her on the 3rd step from the bottom facing the lens, hands free, strap on.
+- C-09a: her hands tie a red bow on the closed box.
+- C-09c, N-D7: an edit of the old HK-03a v7 A (the view down from the landing, her mustard shoulder in front). The climber is replaced by the sister (68, navy dress, the ribboned box), drawn to the ladder with the jogger as the style frame (rule 10).
+
+**Balances:** Higgsfield 5913.65 · Kling 37069.
+
+**Waiting on:**
+- Picks on C-02a, C-02b and the six Act 8 pairs.
+- Confirm or Fix on the six new clips.
+- After Act 8's clips, every beat has its picture. The edit (CapCut / `music.py render`) comes next.
