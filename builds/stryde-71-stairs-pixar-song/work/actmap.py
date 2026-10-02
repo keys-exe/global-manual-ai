@@ -181,14 +181,10 @@ R("R-06b", A, (42, 43), "put", "SEAT (FP10)", "N", "L-N-KITCHEN", "N-D3",
   "CU seated: both hands slide the strap up her right shin to seat it under the kneecap — one move up to the tendon",
   "slides up the last few centimetres and stops at contact", "one slide, about a second", "hands: start mid-movement, end on contact", "seated", "VISIBLE",
   "high", TQ, "clean", "CU", "high = her own view of her knee", "product", "medium", *KIT, "morning", "turn", False, "MUS-TURN")
-R("R-07a", A, (44, 46), "rail", "payoff (HT03, HT04)", "N", "L-N-STAIRS", "N-D3",
-  "MEDIUM from three steps below, looking up: N steps down from the top step facing forwards, hands at her sides, the strap on her bare right knee a quarter of the frame wide (FP11)",
-  "one step down, facing forwards", "one step, about a second", "stairs: camera on the flight below, subject 1 step, hands free", "worn", "VISIBLE",
-  "low", FR, "clean", "MEDIUM", "low from below on the flight = resolve, the strap large on the near knee", "deep", "deep", *STAIR_PM, "afternoon", "after: sun through the sidelights", True, "MUS-TURN", mirror="P-01a")
-R("R-07c", A, (47, 49), "Forwards", "payoff", "N", "L-N-STAIRS", "N-D3",
-  "MEDIUM three-quarter from the hall floor: N comes down the last steps into the hall facing forwards, hands free, the strap on her bare right knee a quarter of the frame wide, Loretta's shoulder soft in the foreground (FP11; FP12: never a worn strap in profile)",
-  "three steps down to the hall floor, one foot per step", "one step per second", "stairs: three-quarter, waist-up, camera still, 3 steps", "worn", "VISIBLE",
-  "eye", TQ, "through", "MEDIUM", "past Loretta's shoulder = her view, watching her do it", "deep", "deep", *STAIR_PM, "afternoon", "after: sun", True, "MUS-TURN")
+R("R-07a", A, (44, 49), "rail", "payoff (HT03, HT04) — one take for both lines (user 2026-10-02: R-07c \"should be part of the r07a so it should be one take only\"; \"wrong stairs\" → an edit of the P0-PROP-N plate)", "N", "L-N-STAIRS", "N-D3",
+  "FULL from the hall floor at the plate's own viewpoint, a tall crop on her staircase (carpet runner, brass rods, white balusters, oak rail, square newel, photo wall): N on the ninth step up coming down in three-quarter toward the lens, hands free off the rail, the strap on her bare right knee at true size",
+  "comes down the flight, one step a second, facing forwards, hands off the rail", "one step per second", "stairs: three-quarter, full body, camera still at the foot", "worn", "VISIBLE",
+  "eye", TQ, "clean", "FULL", "three-quarter from the hall = the whole descent, her own stairs, done on her own", "deep", "deep", *STAIR_PM, "afternoon", "after: sun through the sidelights", True, "MUS-TURN", mx=10)
 
 # ---------------- Act 4 — Pure Mechanism (106.6–134.2 s)
 A = "Act 4"

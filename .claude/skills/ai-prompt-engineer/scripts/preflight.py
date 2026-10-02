@@ -282,6 +282,10 @@ def run_beat_video(c, p, check):
     check("no retired boilerplate (§35A)", not hits, "; ".join(hits))
     # L15 (2026-10-01, user: "you should never talk the lyrics/script in broll") — a B-roll is pictures under the voice; the prompt says so.
     check("nobody mouths the line (§35A rule 6, HT25)", bool(NOSPEAK.search(p)), "e.g. 'mouth closed, she never speaks or sings' or 'nobody speaks'")
+    # L30 (V7.89.1): a quoted line in a clip prompt invites a talking mouth — the line goes in without its speech marks
+    ml = re.match(r'\s*For the line "(.*?)":\s', p, re.S)
+    qm = bool(ml and re.search(r'["“”]', ml.group(1)))
+    check("no speech marks inside the clip's line (§35A rule 6, L30)", not qm, "write the line without its speech marks: For the line \"…she said, Baby, can I…?\":" if qm else "")
     rc = (c.get("risk_class") or "").lower() or None
     if rc in RISKY:
         check(f"{rc}: end frame pinned (§27G)", bool(c.get("pinned")) or bool((c.get("pin_waived") or "").strip()), "first-and-last frame, or the user's words in pin_waived")
