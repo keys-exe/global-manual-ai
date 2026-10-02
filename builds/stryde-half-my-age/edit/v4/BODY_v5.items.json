@@ -1,0 +1,392 @@
+[
+ {
+  "line": "L019#1",
+  "at": 11.4,
+  "dur": 4.1,
+  "take": "SC02-SH03",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L019.mp4",
+  "a": 0.0,
+  "b": 4.1,
+  "flt": null
+ },
+ {
+  "line": "L019#2",
+  "at": 17.44,
+  "dur": 2.07,
+  "take": "SC02-SH04",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L019.mp4",
+  "a": 4.1,
+  "b": 6.17,
+  "flt": null
+ },
+ {
+  "line": "L022",
+  "at": 29.58,
+  "dur": 6.74,
+  "take": "SC02-SH07",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L022.mp4",
+  "a": 0.0,
+  "b": 6.74,
+  "flt": null
+ },
+ {
+  "line": "L023#1",
+  "at": 36.62,
+  "dur": 2.93,
+  "take": "SC03-SH01",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L023.mp4",
+  "a": 0.0,
+  "b": 2.93,
+  "flt": null
+ },
+ {
+  "line": "L023#2",
+  "at": 40.66,
+  "dur": 4.34,
+  "take": "SC03-SH02",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L023.mp4",
+  "a": 2.93,
+  "b": 7.27,
+  "flt": null
+ },
+ {
+  "line": "L023#3",
+  "at": 45.3,
+  "dur": 1.24,
+  "take": "SC03-SH03",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L023.mp4",
+  "a": 7.27,
+  "b": 8.51,
+  "flt": null
+ },
+ {
+  "line": "L023#4",
+  "at": 49.34,
+  "dur": 1.07,
+  "take": "SC03-SH04",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L023.mp4",
+  "a": 8.51,
+  "b": 9.58,
+  "flt": null
+ },
+ {
+  "line": "L023#5",
+  "at": 55.38,
+  "dur": 1.59,
+  "take": "SC03-SH05",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L023.mp4",
+  "a": 9.58,
+  "b": 11.17,
+  "flt": null
+ },
+ {
+  "line": "L023#6",
+  "at": 59.42,
+  "dur": 2.6,
+  "take": "SC03-SH06",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L023.mp4",
+  "a": 11.17,
+  "b": 13.77,
+  "flt": null
+ },
+ {
+  "line": "L024",
+  "at": 62.32,
+  "dur": 5.12,
+  "take": "SC03-SH06",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L024.mp4",
+  "a": 0.0,
+  "b": 5.12,
+  "flt": null
+ },
+ {
+  "line": "L027",
+  "at": 75.86,
+  "dur": 5.93,
+  "take": "SC03-SH09-10",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/voice/C4_voice_master_raw.m4a",
+  "a": 3.62,
+  "b": 9.55,
+  "flt": "phone"
+ },
+ {
+  "line": "L029",
+  "at": 84.018,
+  "dur": 5.23,
+  "take": "SC03-SH09-10",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L029.mp4",
+  "a": 0.0,
+  "b": 5.23,
+  "flt": null
+ },
+ {
+  "line": "L030#1",
+  "at": 90.418,
+  "dur": 4.33,
+  "take": "SC04-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L030.mp4",
+  "a": 0.0,
+  "b": 4.33,
+  "flt": null
+ },
+ {
+  "line": "L030#2",
+  "at": 95.418,
+  "dur": 4.08,
+  "take": "SC04-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L030.mp4",
+  "a": 4.33,
+  "b": 8.41,
+  "flt": null
+ },
+ {
+  "line": "L034",
+  "at": 110.458,
+  "dur": 6.51,
+  "take": "SC04-T2",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L034.mp4",
+  "a": 0.0,
+  "b": 6.51,
+  "flt": null
+ },
+ {
+  "line": "L035#1",
+  "at": 117.268,
+  "dur": 2.28,
+  "take": "SC05-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L035.mp4",
+  "a": 0.0,
+  "b": 2.28,
+  "flt": null
+ },
+ {
+  "line": "L035#2",
+  "at": 122.268,
+  "dur": 2.84,
+  "take": "SC05-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L035.mp4",
+  "a": 2.28,
+  "b": 5.12,
+  "flt": null
+ },
+ {
+  "line": "L037",
+  "at": 127.068,
+  "dur": 3.68,
+  "take": "SC0506-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L037.mp4",
+  "a": 0.0,
+  "b": 3.68,
+  "flt": null
+ },
+ {
+  "line": "L039",
+  "at": 131.048,
+  "dur": 2.98,
+  "take": "SC0506-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L039.mp4",
+  "a": 0.0,
+  "b": 2.98,
+  "flt": null
+ },
+ {
+  "line": "L042",
+  "at": 148.596,
+  "dur": 3.37,
+  "take": "SC07-T",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L042.mp4",
+  "a": 0.0,
+  "b": 3.37,
+  "flt": null
+ },
+ {
+  "line": "L043",
+  "at": 152.266,
+  "dur": 3.06,
+  "take": "SC07-T",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L043.mp4",
+  "a": 0.0,
+  "b": 3.06,
+  "flt": null
+ },
+ {
+  "line": "L044",
+  "at": 155.626,
+  "dur": 4.18,
+  "take": "SC07-T",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L044.mp4",
+  "a": 0.0,
+  "b": 4.18,
+  "flt": null
+ },
+ {
+  "line": "L045",
+  "at": 160.106,
+  "dur": 3.84,
+  "take": "SC07-T",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L045.mp4",
+  "a": 0.0,
+  "b": 3.84,
+  "flt": null
+ },
+ {
+  "line": "L050",
+  "at": 203.021,
+  "dur": 8.02,
+  "take": "SC09-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L050.mp4",
+  "a": 0.0,
+  "b": 8.02,
+  "flt": null
+ },
+ {
+  "line": "L051#1",
+  "at": 211.341,
+  "dur": 5.4,
+  "take": "SC09-T2",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L051.mp4",
+  "a": 0.0,
+  "b": 5.4,
+  "flt": null
+ },
+ {
+  "line": "L051#2",
+  "at": 217.041,
+  "dur": 3.33,
+  "take": "SC09-T3",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L051.mp4",
+  "a": 5.4,
+  "b": 8.73,
+  "flt": null
+ },
+ {
+  "line": "L052#1",
+  "at": 222.081,
+  "dur": 5.68,
+  "take": "SC10-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L052.mp4",
+  "a": 0.0,
+  "b": 5.68,
+  "flt": null
+ },
+ {
+  "line": "L052#2",
+  "at": 228.121,
+  "dur": 4.33,
+  "take": "SC10-T2",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L052.mp4",
+  "a": 5.68,
+  "b": 10.01,
+  "flt": null
+ },
+ {
+  "line": "L053",
+  "at": 232.751,
+  "dur": 7.37,
+  "take": "SC10-T3",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L053.mp4",
+  "a": 0.0,
+  "b": 7.37,
+  "flt": null
+ },
+ {
+  "line": "L054",
+  "at": 240.791,
+  "dur": 3.76,
+  "take": "SC10-T4",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L054.mp4",
+  "a": 0.0,
+  "b": 3.76,
+  "flt": null
+ },
+ {
+  "line": "L057",
+  "at": 250.331,
+  "dur": 3.53,
+  "take": "SC10-T5",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L057.mp4",
+  "a": 0.0,
+  "b": 3.53,
+  "flt": null
+ },
+ {
+  "line": "L060",
+  "at": 261.451,
+  "dur": 3.68,
+  "take": "SC12-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L060.mp4",
+  "a": 0.0,
+  "b": 3.68,
+  "flt": null
+ },
+ {
+  "line": "L061",
+  "at": 265.431,
+  "dur": 2.82,
+  "take": "SC12-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L061.mp4",
+  "a": 0.0,
+  "b": 2.82,
+  "flt": null
+ },
+ {
+  "line": "L068#1",
+  "at": 286.737,
+  "dur": 6.02,
+  "take": "SC12-T3",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L068.mp4",
+  "a": 0.0,
+  "b": 6.02,
+  "flt": null
+ },
+ {
+  "line": "L068#2",
+  "at": 293.057,
+  "dur": 9.18,
+  "take": "SC12-T3",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L068.mp4",
+  "a": 6.02,
+  "b": 15.2,
+  "flt": null
+ },
+ {
+  "line": "L069",
+  "at": 302.537,
+  "dur": 6.32,
+  "take": "SC13-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L069.mp4",
+  "a": 0.0,
+  "b": 6.32,
+  "flt": null
+ },
+ {
+  "line": "L070",
+  "at": 309.157,
+  "dur": 5.04,
+  "take": "SC13-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L070.mp4",
+  "a": 0.0,
+  "b": 5.04,
+  "flt": null
+ },
+ {
+  "line": "L071",
+  "at": 314.497,
+  "dur": 4.49,
+  "take": "SC13-T1",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L071.mp4",
+  "a": 0.0,
+  "b": 4.49,
+  "flt": null
+ },
+ {
+  "line": "L074",
+  "at": 324.077,
+  "dur": 2.74,
+  "take": "SC13-T2",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/body/vo/L074.mp4",
+  "a": 0.0,
+  "b": 2.74,
+  "flt": null
+ }
+]
