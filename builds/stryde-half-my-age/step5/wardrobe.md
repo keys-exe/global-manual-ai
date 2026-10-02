@@ -52,8 +52,8 @@ One block per story day, in story order: the event, what makes it a day, each pe
 
 | Who | Outfit |
 |---|---|
-| HER | dusty-rose dress, cream bouclé jacket (OUT-N-B4) |
-| Barbara | royal-blue wrap dress, silver cardigan, silver shoes (OUT-C1-B4) |
+| HER | dusty-rose silk-chiffon midi dress with flutter sleeves and a thin belt, nude satin courts, pearl drops (OUT-N-B4 v2, no jacket) |
+| Barbara | royal-blue lace midi dress with sheer lace sleeves, silver satin dancing shoes (OUT-C1-B4 v2, no cardigan) |
 | Husband | navy suit, pale-blue shirt, burgundy tie (OUT-C3-B4) |
 
 | Event | Place | Beats |

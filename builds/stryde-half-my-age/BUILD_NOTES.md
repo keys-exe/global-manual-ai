@@ -138,3 +138,4 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
 - Husband B3 now lists the brown lace-ups from OUT-C3-B3 v2; B4 matches the SC04 outfit cards (bouclé jacket, burgundy tie, Barbara's wrap dress and silver shoes).
 - `docs/wardrobe` rewritten on Plan (`HbGWTaJaW2wM8kpnutR922`) and Current (`H6zyYUirdmHdP4p5vwNAcU`, text only), v4 each. STEP4_5.md section replaced; no render, card or outfit changed.
 - Open for the team: the husband wears the same outfit on B1 (evening) and B2 (next morning), against §14A W2.
+- 2026-10-02 — User: "i want more elegeant like a dress to to the 2 woman" → OUT-N-B4 v2 (dusty-rose silk-chiffon midi dress, flutter sleeves, thin belt, nude satin courts, pearl drops, beige clutch — no jacket) and OUT-C1-B4 v2 (royal-blue lace midi dress, sheer lace sleeves, flared skirt, silver satin dancing shoes — no cardigan), 10 cr each, To check; v1s on Old. Wardrobe map B4 updated (STEP4_5.md, make_doc.py).
