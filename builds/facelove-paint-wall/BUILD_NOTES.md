@@ -1,0 +1,43 @@
+# BUILD_NOTES — facelove-paint-wall
+
+**FACELOVE Changing Foundation Stick · "The paint wall" (analogy demonstration)** · Mode 1 Photorealistic · UGC Ad (to-lens narrator in clean bright sets: talking heads + demonstration B-roll) · **RUN: MANUAL** · started 2026-10-02 (standards V7.92.2) · GitHub account of the session: `Chicknben` (not the owner — no system changes, no lessons)
+
+Drive task folder `1_OhMLzSEs_ftxQG1Np6NDBy2npGQ_iCP`
+
+## Boards
+- Current https://claude.ai/artifact/UnrHuRnaF86L7SNs4E2BX5
+- Old https://claude.ai/artifact/7ZBom126noUB8XknY5bNoq
+- Final https://claude.ai/artifact/7Do26Wwn8PBN3v9YUG6VZu
+- Plan https://claude.ai/artifact/FFh624b555mGJhZmNDk73Q
+- Hourly Fix check `trig_01X9WrHvy3AgGLeCqM9cSkRV` **switched off** (V7.92.3: no hourly Routines by default) — Fix notes are worked when the user says fix / check the board.
+
+## Where it stands (2026-10-02)
+- Steps 1–3 delivered: Absorption Sheet (inspo 5:05, 24 shots, ~124 wpm, a continuous music bed, captions every word), phrase inventory + Visual Instruction Ledger (VN01–VN10 from the script's VISUAL notes, ED01–ED06 from the editor brief), claims pass, Mode & Model Lock → `BUILD_SHEET.md`; board docs `absorption`, `connectors` on Plan + Current.
+- 2 cast sheets on Sunburst high 2k via Higgsfield ODAQ B.V., `AVATAR.png` attached as Image 1 (Higgsfield media 235d8afa; F1): **N-BEFORE** bare tired face (job 4df6f05b), **N-AFTER** the stick blended in, lines kept (job 617d89a7); ~2.75 cr each. On the Current board **To check** (assets 3a764057… / baf9890c…; avatar asset eabf276d…).
+- ODAQ B.V. balance 1,487.19 after the sheets (shared — other sessions spend on it).
+- **Avatar review (user: "FIX THOSE", 2026-10-02):** N-AFTER v1 confirmed. N-BEFORE Fix round 1 (owner-marked note "make more old looking, make the dark circle visible, put some wrinkles and dull tired skin"). Cause: the face line kept Image 1's age ("the same age… nothing made younger") and the avatar is a glossy made-up photo that reads younger; SKIN-T's greasy forehead added shine. Fixed in `cast/build_sheets.py` (N-BEFORE only): FACE_REF_OLDER (bone structure only, older and more tired than the photo, never its smooth skin or glow), AGE_V2 (dark circles visible from across the room, bags, marionette lines, hooded lids, jowls, crepey neck, grey-sallow dull skin), the forehead dry and matte, negatives no glowing / dewy / smooth young skin. v2 (job e6cb0170, ~2.75 cr) To check; v1 on the Old board (asset 80c7418c…) and removed from Current.
+- **N-BEFORE Fix round 2 (user: "FIX THOSE", owner-marked note "make the dark circle around the eyes visible"):** cause — the dark circles were one item mid-list in AGE_V2 and the bright 45° window + Smart HDR lifted the under-eye shadow. v2 was otherwise as asked, so v3 is an image edit of v2 (`EDIT_DARK_CIRCLES` in `cast/build_sheets.py`, `cast/N-BEFORE.v3.edit.prompt.txt`): only the eye area changed — a brownish-plum band under each eye, grey-violet inner corners, darker upper lids, bags, held on the lit side. v3 (job a5a7819c, ~2.75 cr) To check; v2 on the Old board (asset d1168460…) and removed from Current.
+- **N-BEFORE Fix round 3 (user: "FIX THOSE", owner-marked note "put wrinkles"):** v3's dark circles read but its lines were fine and shallow — described, never made deep enough to carry a shadow. v4 is an image edit of v3 (`EDIT_WRINKLES`, `cast/N-BEFORE.v4.edit.prompt.txt`): only the creases changed, each a real crease with a shadow in it (forehead, frown, crow's feet at rest, under-eye, nose-to-mouth, marionette, upper lip, chin, neck rings), the dark circles kept. v4 (job f0b94b2d, ~2.75 cr) To check; v3 on the Old board (asset 2176ed6a…) and removed from Current.
+- **Avatars confirmed (user: "CONFIRM AND PROCEED", 2026-10-02):** N-BEFORE v4 · N-AFTER v1.
+- **Steps 4–5 (`STEP4_5.md`):** one room, two plates (16:9) — L-SHELF (the shelf of ~40 unlabelled foundation bottles, window left, job 5e50168c) and L-WALL (the reverse: bare warm peach-beige plaster wall with fine cracks, drop cloth, paint can + tray + roller, window right, fadbbc44) — plus prop cards PROP-BOTTLE (a7db8e98) and PROP-PAINT (06e22e8a); Sunburst high 2k, ODAQ B.V., ~2.75 cr each; on the Current board To check. Act map 39 rows (27 B-roll, 12 TH; hooks at step 6), face arc F13 (bare to the Scene 7 macro, finished after), the ED02 wall/cheek pair B17 → B18 (`mirror_of`), the ED03 one-take macro B21; wardrobe 2 story days (PAST, REC); Visual Pitch heroes B09, B11, B21, B22, B27; music register map with one continuous bed (MUS-OPEN → EDU → TURN on B19 → AFTER → OFFER). `angles.py` / `wardrobe.py` / `visual_plan.py` PASS. Plan docs locations, actmap, wardrobe, visualplan, music on Plan + Current; 39 planned beat cards on Current.
+- ODAQ B.V. balance **260.34** (shared — other sessions spend on it heavily); images need ~2.75 each, Kling clips far more. No Kie key on this account, so when ODAQ runs dry the next rung is the user's call.
+- **Plates and prop cards confirmed (user: "CONFIRM AND PROCEED", 2026-10-02).** Merged the default branch (V7.93.0 — Seedance film takes; nothing changes for this Mode 1 build).
+- **Voice stage (§22U), started 2026-10-02:** three talking-head frames (`voice/build_voice_img.py`; phone on a tripod at chest height, waist-up, Image 1 the plate + Image 2 her sheet, Sunburst high 2k, ODAQ B.V., ~2.75 cr each): **N-VOICE-SHELF-B** bare at the shelves (job e5dbc0bc — hook, Act 1, and the voice-source start frame), **N-VOICE-WALL-B** bare at the plaster wall (6987f22e — Acts 2–3), **N-VOICE-SHELF-A** finished at the shelves (597f8559 — Acts 4–5); on the Current board To check.
+- Enhance text for Hook 1 + body in one request: `vo/ALL.enhanced.txt` (2,726 chars, `tts_budget.py` verbatim PASS; tags from the library — confident, tired, sigh, frustrated, curious, playful, amused, calm, warm, sincere — plus [slowly] per paragraph, [pause] at sentence ends).
+- Kling voice takes written (`voice/build_takes.py`, kling3_0 via Higgsfield, pro, 10 s, sound on): G1 "You could throw out every expensive foundation…" (19 words), G2 "I am fifty seven. And for years…" (18 words); `preflight.py` PASS except the start image — waiting on the Confirm of N-VOICE-SHELF-B.
+- **Credits:** ODAQ B.V. is down to **12.09** (shared; other sessions are spending it). Two Kling takes need ~50, and the HeyGen talking heads and the B-roll far more. Per the workspace rule nothing is billed to Team 1 or the private workspace; the Kling ladder has no other rung on this account (no Kie key). The user tops up ODAQ B.V. or names another route.
+- Waiting: Confirm/Fix on the three voice frames; ODAQ credits; flags F13/F14. (Confirm / Fix on the board) and answers to flags F1–F12 (defaults held).
+
+## Decisions
+- Mode 1 + UGC Ad from the brief ("TOFU AI UGC testimonial") and the inspo (no MODE/FORMAT in the message) — F2. Hooks 3 by default — F3.
+- Only the text under the docx's `Script` heading is voiced (`work/script.txt` → `work/script.lines.txt`, 443 words); the brief above it is the visual notes — F4.
+- Product sheet byte-identical to `facelove-my-mother`'s (`product/`).
+- Connectors (`connectors.md`): images Higgsfield ODAQ B.V.; Kling via Higgsfield (rung 3); ElevenLabs API key present; HeyGen connected.
+- Earrings left off the sheets (sheet standard bans jewellery).
+
+## For the owner (keys-exe) — not made from this account
+- Add this build's row to the CLAUDE.md board table (four links above) (its Routine is switched off per V7.92.3).
+- `fetch_drive.py` takes a script docx whose brief comes before a `Script` heading as the whole script; it could start at that heading.
+
+## Next (on the user's go)
+Voice stage (§22U) — the voice frames N-VOICE-SHELF-B, N-VOICE-WALL-B, N-VOICE-SHELF-A, Kling voice-source takes, clone, VO, HeyGen talking heads, trim; then placement and the hooks (step 6).

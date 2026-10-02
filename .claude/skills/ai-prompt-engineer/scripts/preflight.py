@@ -420,16 +420,23 @@ def film_shot(c, p, conn, mode, kind, film, check):
         check("take named — connected shots are one call (§24K part 5, takes.py)", bool(c.get("take")), "missing take")
     if kind in ("take", "multi"):
         cov = c.get("covers") or []
-        check("take covers 1–4 act-map rows", 1 <= len(cov) <= 4, f"{len(cov)} rows")
+        # V7.93.0: rows past four shots join the shot before (`joins` = the rows played inside the shot before them),
+        # so a take counts SHOTS, never rows; a conversation take holds up to 30 s (Seedance's longest call)
+        nshots = len(cov) - len(c.get("joins") or [])
+        check("take ≤ 4 shots — rows past four join the shot before (§24K part 5, V7.93.0)", 1 <= nshots <= 4, f"{nshots} shots, {len(cov)} rows")
         check("take on Seedance", conn == "seedance", conn)
         d = c.get("duration")
-        check("take ≤ 15s (§24K part 5)", isinstance(d, (int, float)) and d <= 15, str(d))
+        cap = 30 if c.get("conversation") else 15
+        check(f"take ≤ {cap}s (§24K part 5{', a conversation' if cap == 30 else ''})", isinstance(d, (int, float)) and d <= cap, str(d))
+        if c.get("vo_seconds") is not None:  # V7.93.0: a narrated film's take is as long as the VO it carries (takes.py --vo)
+            check("take as long as its VO + holds (takes.py --vo, §24K part 5A)", isinstance(d, (int, float)) and d + 1e-6 >= float(c["vo_seconds"]),
+                  f"duration {d} < VO {c['vo_seconds']}")
         for k in ("start_pos", "end_pos"):
             v = (c.get(k) or "").strip()
             check(f"{k} written into the prompt word for word", bool(v) and v in p, v or f"missing {k}")
     if kind == "take":
         check("TAKE-FILM", SIG["TAKE-FILM"] in p)
-        check("one-take covers ≤ 3 rows", len(c.get("covers") or []) <= 3, str(len(c.get("covers") or [])))
+        check("one-take covers ≤ 3 shots", len(c.get("covers") or []) - len(c.get("joins") or []) <= 3, str(len(c.get("covers") or [])))
     if kind == "multi" and sm != "still":
         check("moving MULTI-SHOT carries the action across the cut (MULTI-FILM MOVE)", SIG["MULTI-MOVE"] in p, f"subject {sm}")
 

@@ -9,7 +9,7 @@ Drive task folder `1PvwdhVU13RI6M1GQi9GKy-aEdx_4XZSa`
 - Old https://claude.ai/artifact/TtJDHH94bKokmwcYsVCgqK
 - Final https://claude.ai/artifact/Ryuk4diTvt4cmAkjn6kKss
 - Plan https://claude.ai/artifact/7HqDH14C4dtjNtJSddmF1C
-- Hourly Fix check: `trig_014eDNABLMENQ1wepZFirNg6`, :04 UTC, session_0122FPw9TWDcn1Mf8QgSiudw
+- Hourly Fix check: removed 2026-10-02 (V7.92.3 — Routines only on the user's ask; Fix notes are read when the session runs)
 
 ## Where it stands (2026-10-02)
 - Steps 1–3 delivered: Absorption Sheet, phrase inventory + Visual Instruction Ledger (VN00–VN05, scene labels only), claims pass, Mode & Model Lock → `BUILD_SHEET.md`; board docs `absorption`, `connectors` on Plan + Current.
@@ -36,6 +36,13 @@ Drive task folder `1PvwdhVU13RI6M1GQi9GKy-aEdx_4XZSa`
 - **Talking heads (user: "confirm and proceed" — G1/G2 confirmed, VO T1 and the clone source already confirmed on the board):** TH-HK1 (13.35 s → trimmed 13.15 s, 182.5 wpm) and TH-BODY (77.0 s → trimmed 75.6 s, 195.1 wpm), `trim.py` natural PASS both; HeyGen ~75 credits (3,823 → 3,748). On the board To check (v1 untrimmed, v2 trimmed). Voice locked.
 - **Placement (§30H) on the trimmed body:** first pass failed B04 FLASH (1.58 s) and B14 LONG (6.33 s). Act map fixed: B04 → talking head TH-01 ("Even the woman at the makeup counter"), B05 now carries the counter picture; B08 split (+B08b), B14 split (+B14b "…guarantee"), B15 FLASH 1.96 s → TH-06 on the face, B15b the delivery box on her doorstep (new story day D3). TH rows covered by B-roll removed (old TH-02, TH-03, TH-07). Now 22 rows (17 B-roll, 5 TH): `assemble.py --lengths` no failures, `angles.py` / `wardrobe.py` (5 days) / `visual_plan.py` PASS; clip lengths 4–6 s in `step5/act_map.json`. Board docs placement, actmap, wardrobe, visualplan updated.
 - **Hooks (step 6) — the gate:** `step6/hooks.md` — HK1 the script's Scene 1; HK2 and HK3 written for approval; five cold-open concepts each, `visual_plan.py` PASS (picks HK1-A carton tap at the vanity, HK2-A taping the return mailer, HK3-A the makeup-counter head shake). `docs/hooks` on Plan + Current. **Waiting for the user's approval of the hooks** before voicing HK2/HK3 and any hook image.
+
+- **Hooks approved (user: "confirm and proceed"; TH-HK1 and TH-BODY confirmed, stale B15 card deleted):** HK2 + HK3 voiced in one request (`vo/HK23.enhanced.txt`, verbatim PASS, eleven_v4 speed 0.9 × 4: 152–161 wpm, all words present; T1 working take, split at 9.99 s). HeyGen bare face: TH-HK2 (db3aa9e7, 9.96 s → trimmed 156.5 wpm), TH-HK3 (894978a4, 8.30 s → 164.2 wpm), trim.py PASS; HeyGen 3,748 → 3,714.
+- **Hook cold-open frames (A/B, Sunburst, preflight PASS):** HK1-01 the closed stick held up beside her bare face (refs CLOSED + N-VOICE-IMG-B); HK2-01 taping the FACELOVE bubble mailer shut (PACKAGING is a white bubble mailer with the violet wordmark — not a carton; refs PACKAGING + N-VOICE-IMG-B); HK3-01 an edit of the L-COUNTER plate with C1 and N-BEFORE. Jobs in `hooks/jobs.json`. On the board To check (Use A / Use B / Fix); their videos wait on the pick.
+- Higgsfield ODAQ B.V. (shared) at 862.39 credits — other sessions draining it; the body B-roll (17 A/B pairs + 20 Kling clips) needs roughly 350.
+
+- **Hook frames (user: "confirm and proceed", no pick on the board → A taken for all three; B moved to Old):** TH-HK2 / TH-HK3 confirmed. HK3-01 clip v1 on Kling 3.0 via Higgsfield (pro, 4 s, silent, 7 cr, job 9c6ebeae, preflight PASS) — To check. HK1-01 and HK2-01 are hand-on-product shots (§35A) → pinned: end frames HK1-01-END (stick down onto her open palm) and HK2-01-END (mailer taped, hands flat, eyes up), A/B edits of the confirmed start frames, preflight PASS — To check; their clips wait on the pick. HK1-01 motion plan changed to end on the palm so start and end differ.
+- Higgsfield ODAQ B.V. 678.84 credits (shared).
 
 ## Decisions
 - Mode 1 + UGC Ad from the inspo (no MODE/FORMAT in the message) — F2. Hooks 3 by default — F3.

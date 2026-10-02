@@ -15,23 +15,29 @@ NAME = {"N": "Hazel", "C1": "Roy", "C2": "Emma", "C3": "Dan", "C4": "Oscar"}
 SHEETF = {"N": "cast/N-HAZEL_v1.png", "C1": "cast/C1-ROY_v1.png", "C2": "cast/C2-EMMA_v1.png", "C3": "cast/C3-DAN_v1.png", "C4": "cast/C4-OSCAR_v1.png"}
 VM = {k: f"voice/{k}_voice_master.mp3" for k in NAME}
 VOICES = {k: json.load(open(B / f"voice/VOICE-{k}.call.json"))["prompt"].split("Delivery: ")[1].split(" Level, even")[0] for k in NAME}
-ROOM = ("THE ROOM, fixed in every shot, exactly as in the place reference: the front room of a Victorian stone terraced house used as the dining room, seen from its doorway — "
-        "the long dark oak table runs AWAY from the doorway down the middle of the room, a cream cloth on it, cleared after Sunday lunch: a jug of water, glasses, a gravy-stained serving spoon on a plate; "
-        "the dark oak sideboard along the LEFT wall with a clear strip of carpet between it and the chair backs; the tiled fireplace with a clock on its mantel on the RIGHT wall; "
-        "the bay window with net curtains at the FAR end. THE SEATS NEVER CHANGE: Hazel at the far end of the table with her back to the bay window; on the left side of the table, nearest her, an empty chair, "
-        "then Emma, then Oscar's chair nearest the doorway; on the right side, nearest Hazel, Roy, then Dan nearest the doorway. "
-        "THE LIGHT: overcast May afternoon daylight, about 6000K, through the bay window behind Hazel, soft and cool, with one warm pendant lamp over the table; a soft shadow side on every face.")
+ROOM = ("THE ROOM, fixed in every shot, exactly as in the place reference (Image of the dining room) and the layout card (Image of the table from above): the front room of a Victorian stone terraced house used as the dining room, seen from its doorway — "
+        "the long dark oak table runs straight AWAY from the doorway down the middle of the room under a cream cloth; the dark oak sideboard with a table lamp, a fruit bowl and framed photographs along the LEFT wall, a strip of carpet between it and the left-hand chair backs; "
+        "the tiled Victorian fireplace with a wooden clock on its mantel and bookshelves in the corner on the RIGHT wall; the bay window with net curtains and green velvet curtains at the FAR end. "
+        "THE TABLE, exactly as the layout card shows it, the same in every shot: the Sunday meal is over and cleared of food — one empty white plate with its knife and fork laid together at each of the five places, a clear water glass by each plate, one white china jug in the middle; "
+        "no food anywhere, no serving dishes, nothing else on the cloth, and nothing on it changes from shot to shot. "
+        "THE SEATS NEVER CHANGE, exactly as in the plate's six chairs: Hazel in the single chair at the FAR end, her back to the bay window; on the LEFT side (the sideboard side) Emma in the far chair next to Hazel and Oscar's chair nearest the doorway; "
+        "on the RIGHT side (the fireplace side) Roy in the far chair next to Hazel and Dan in the chair nearest the doorway; the chair at the NEAR end, by the doorway, stays empty. "
+        "WHAT IS BEHIND EACH PERSON in their own close shots, every time: behind Hazel the bay window and net curtains with the grey street beyond; behind Roy the fireplace wall, the clock on the mantel and the corner bookshelves; "
+        "behind Dan the near end of the fireplace wall; behind Emma the oak sideboard, its lamp and framed photographs; behind Oscar the near end of the sideboard with the fruit bowl. "
+        "THE LIGHT: overcast May afternoon daylight, about 6000K, through the bay window at the far end, soft and cool, with the warm cream pendant shade over the table lit; a soft shadow side on every face.")
 WALK = ("Oscar does an impression of his nana's walk, earnest, not mocking: on every step his right leg swings stiff and hitches out to the side, his left shoulder dips, "
-        "and a small hand reaches out and rests on each ladder-back chair back as he passes it, one chair back about every second.")
+        "and a small hand reaches out and rests on each ladder-back chair back as he passes it, one chair back about every second. HIS ROUTE, the only route: along the strip of carpet between the LEFT-hand chair backs and the sideboard, never across the front of the table, never round the far end.")
 
 def mf(ids):
     return [("@image" + str(i + 1), x) for i, x in enumerate(ids)]
 
+CARD = "film/cards/INFO-TABLE-SC01_v1.png"
 def files_for(cast):
-    return [SHEETF[c] for c in cast] + ["plates/L-DINING_v1.png"]
+    return [SHEETF[c] for c in cast] + ["plates/L-DINING_v1.png", CARD]
 
 def pack(cast, speakers):
-    imgs = [SHEET(WHO[c], OUT[c]) for c in cast] + [PLACE("the dining room of the house, the Sunday table")]
+    imgs = [SHEET(WHO[c], OUT[c]) for c in cast] + [PLACE("the dining room of the house, the Sunday table"),
+            "is the layout card: the same table from directly above — where the five empty plates, the glasses and the jug sit and which chair is empty; copy the table exactly as it shows, and never cut to this top view."]
     aud = [VOICE(NAME[s]) for s in speakers]
     items = [(f"@image{i+1}", x) for i, x in enumerate(imgs)] + [(f"@audio{i+1}", x) for i, x in enumerate(aud)]
     return manifest(items)
@@ -59,21 +65,25 @@ def make(beat, covers, cast, speakers, shots, rhythm, start, end, motion, state_
     auds = [VM[s] for s in speakers] if len(speakers) < 3 else [f"voice/{s}_voice_ref10.mp3" for s in speakers]
     c = call(beat, 1, covers, d, title, files_for(cast), auds, p, start, end, dl, risks, motion, TASTE, GO,
              ingredients=[{"label": NAME[c] + " (cast sheet)", "role": f"@image{i+1}", "kind": "character", "ref": f"stryde-the-impression__{pathlib.Path(SHEETF[c]).stem.replace('_v1','')}"} for i, c in enumerate(cast)]
-                        + [{"label": "L-DINING", "role": f"@image{len(cast)+1}", "kind": "location", "ref": "stryde-the-impression__L-DINING"}]
+                        + [{"label": "L-DINING", "role": f"@image{len(cast)+1}", "kind": "location", "ref": "stryde-the-impression__L-DINING"},
+                           {"label": "INFO-TABLE-SC01 — the cleared table from above", "role": f"@image{len(cast)+2}", "kind": "info", "note": "the meal over: five empty plates, glasses, one jug, no food; near-end chair empty", "ref": "stryde-the-impression__INFO-TABLE-SC01"}]
                         + [{"label": f"{NAME[s]}'s voice master", "role": f"@audio{i+1}", "kind": "voice", "ref": f"stryde-the-impression__VOICE-{s}"} for i, s in enumerate(speakers)])
-    c["act"] = "Hook 1"; c["hook"] = 1
+    c["act"] = "Hook 1"; c["hook"] = 1; c["generation"] = GEN; c["fix_note"] = FIXN
     CALLS.append(c)
 
 HZ = "Hazel, at the far end of the table, both hands flat on the cloth, still, her face her own age, 67, never aged"
+GEN, FIXN = 2, ('chat (user, 2026-10-02): "make the hook consistent review the script guide" — v1 changed the table (food in T1/T4, cleared in T2), the seats (each wide put the family elsewhere), '
+                 "Oscar's route (across the front in T1, the far side in T2) and Hazel's background (window, then bookshelves); the script: 'Sunday, the table cleared… crosses the room the way Nana does: the hitch, a hand on every chair back'. "
+                 "→ a top-down layout card of the cleared table in every take, the seats fixed to the plate's six chairs, what is behind each person named, one route for Oscar along the sideboard")
 make("SC01-T1", ["SC01-SH01", "SC01-SH02", "SC01-SH03", "SC01-SH04"], ["C4", "C3", "C2", "C1", "N"], ["C2", "N"],
-     [(0, 4, "WIDE, from the doorway end past the near corner of the table, the cloth's edge soft in the near foreground: Oscar slides off his chair and walks along the strip of carpet between the left-hand chair backs and the sideboard, toward his nana at the far end. " + WALK + " Dan laughs first, a short surprised laugh; then Emma laughs."),
-      (4, 5, "MCU, from above Roy's eye line on the right side of the table: Roy, the only one not laughing, looks down at his plate and moves one pea with his fork."),
+     [(0, 4, "WIDE, from the doorway end past the near corner of the table, the cloth's edge soft in the near foreground: Oscar slides off his chair (the left side, nearest the doorway) and walks away from the camera along the strip of carpet between the left-hand chair backs and the sideboard, toward his nana at the far end. " + WALK + " Dan laughs first, a short surprised laugh; then Emma laughs."),
+      (4, 5, "MCU, from above Roy's eye line on the right side of the table: Roy, the only one not laughing, looks down at his empty plate and turns his fork over once."),
       (5, 7, "MCU, three-quarter on Emma: her laugh stops in her throat; she turns toward Oscar and says, low and firm: \"Oscar. That’s enough.\""),
       (7, 10, "CU, low and straight on Hazel at the far end, the bay window soft behind her: very still, hands flat on the cloth, her eyes on the boy, she says, quietly: \"No. Let him. Do it again, Oscar.\"")],
      "cutting in quickly on the laugh, then a beat held on Roy, then Emma's line and Hazel's answer close on it",
-     "the table cleared after Sunday lunch: Hazel seated at the far end by the bay window, Roy on her left, Emma and Dan on the near side, Oscar sliding off his chair beside Emma",
+     "the table cleared after Sunday lunch: Hazel seated at the far end by the bay window; Emma and Oscar on the left side by the sideboard, Roy and Dan on the right side by the fireplace; Oscar sliding off his chair nearest the doorway",
      "Oscar standing at the end of the room by the sideboard, everyone else seated; Hazel at the head of the table, hands flat on the cloth", "travels",
-     [state("OSCAR", "his striped T-shirt, both hands free, walking his impression along the sideboard side"), state("HAZEL", "seated at the far end, hands flat on the cloth, face still")],
+     [state("OSCAR", "his striped T-shirt, both hands free, walking his impression along the sideboard side"), state("THE TABLE", "the five empty plates, glasses and one jug exactly as the layout card shows; no food"), state("HAZEL", "seated at the far end, hands flat on the cloth, face still")],
      [delivery(VOICES["C2"], "she has been laughing at her son and catches her mother's face", "Oscar", "a mother stopping a game that has gone too far", "stops",
                "mid-laugh, shoulders still shaking", "enough", "the laugh is gone from her face", "firm and quiet", "enough", "low and firm, a little breath still in it from laughing",
                "embarrassment for her mother", "a glance at Hazel as she says it"),
@@ -81,7 +91,7 @@ make("SC01-T1", ["SC01-SH01", "SC01-SH02", "SC01-SH03", "SC01-SH04"], ["C4", "C3
                "very still, hands flat on the cloth", "again", "her chin lifts a little", "steady, looking at the boy", "again", "quiet, level, a little dry",
                "she wants to see it, however much it hurts", "her thumb pressing once into the tablecloth"),
       listen("Roy", "the laughter", "he knows exactly whose walk it is; his eyes stay on his plate"),
-      business("Roy", "the room laughs", "moving one pea on his plate with his fork", "one small push")],
+      business("Roy", "the room laughs", "turning his fork over once on his empty plate", "one small turn")],
      "FOCUS: the nearest eye of whoever speaks is sharp; on the wide, Oscar and the table are sharp and the bay window soft. The blur is optical: soft and round, never smeared.",
      "no child running, no child falling, no exaggerated limp, no crutch, no stick, no food on the plates moving by itself, no extra chairs, no extra people, no pets, no lettering or logos",
      "Hook A · T1 — Oscar does Nana's walk; Dan laughs, then Emma; Roy looks at his plate; 'That's enough.' / 'No. Let him. Do it again, Oscar.' (SH01–SH04)",
@@ -91,7 +101,7 @@ make("SC01-T1", ["SC01-SH01", "SC01-SH02", "SC01-SH03", "SC01-SH04"], ["C4", "C3
      ["L001", "L002"])
 
 make("SC01-T2", ["SC01-SH05", "SC01-SH06", "SC01-SH07", "SC01-SH08"], ["C4", "C2", "C3", "N"], ["N", "C2"],
-     [(0, 4, "FULL, in profile from the fireplace side: Oscar does it again, slower, from the sideboard end back toward his chair along the same strip of carpet. " + WALK + " Nobody laughs; the room is silent."),
+     [(0, 4, "FULL, in profile from across the table on the fireplace side, the sideboard behind him: Oscar does it again, slower, coming back from the far end toward his own chair along the same strip of carpet by the sideboard. " + WALK + " Nobody laughs; the room is silent."),
       (4, 6, "CU, straight on Hazel at the far end: she has watched him all the way; she asks it quietly: \"Is that what I look like?\""),
       (6, 9, "MCU, from slightly above Emma: she puts a hand on Oscar's back as he climbs back onto his chair and says, too quickly: \"He’s four, Mum. He doesn’t see it.\""),
       (9, 11, "MCU, over Emma's shoulder onto Hazel: Hazel turns her head from Emma to Dan and says only: \"Dan?\"")],
@@ -150,7 +160,7 @@ make("SC01-T4", ["SC01-SH12", "SC01-SH13", "SC01-SH14", "SC01-SH15"], ["N", "C2"
      [state("HAZEL", "seated at the far end, hands flat on the cloth, the same stillness, now resolved")],
      [delivery(VOICES["N"], "she has decided, in front of everyone", "the family", "a grandmother being managed by her own children", "claims", "still", "walk", "her chin comes up",
                "louder the second time", "said", "level, then firmer and louder", "fear she can't", "her hands pressing flat"),
-      business("Roy", "the others speak", "moving one pea on his plate with his fork", "one small push, then still"),
+      business("Roy", "the others speak", "turning his fork over once on his empty plate", "one small turn, then still"),
       delivery(VOICES["C2"], "she doesn't want her mother to promise what she can't do", "Hazel", "daughter to mother", "warns", "sitting forward", "Mum", "nothing", "a single word", "Mum", "low, a warning", "worry", "her eyes going to Roy"),
       delivery(VOICES["C1"], "he loves her and knows the hill", "Hazel", "husband to wife", "warns", "eyes on his plate", "hill", "he looks up at the last word", "gentle", "hill", "soft, kind", "he has been driving her for three years", "the fork going still")],
      "FOCUS: the nearest eye of whoever speaks is sharp. The blur is optical: soft and round, never smeared.",

@@ -1177,7 +1177,7 @@
   "pace": "still",
   "end_pos": "Susan on the end of the bed, Beth inside the door with the garment bag",
   "cut": "on 'Everyone saw it.'",
-  "duration": 6,
+  "duration": 9,
   "music": "MUS-EDU",
   "mirror_of": null,
   "ingredients": [
@@ -1200,7 +1200,7 @@
    "key_side": "L"
   },
   "split": "length",
-  "take_kind": "multi",
+  "take_kind": "take",
   "subject": "C3",
   "cast": [
    "C3"
@@ -1231,19 +1231,20 @@
   "pace": "one lay-down",
   "start_pos": "Beth standing by the bed with the garment bag; Susan on the end of the bed",
   "cut": "on 'in twelve weeks.'",
-  "duration": 9,
+  "duration": 13,
   "music": "MUS-EDU",
   "mirror_of": null,
   "ingredients": [
    "C3",
    "L-VANITY"
-  ]
+  ],
+  "end_pos": "Beth beside the bed, the garment bag laid flat across the quilt; Susan on the end of the bed looking up at her"
  },
  {
   "beat": "SC05-SH04",
   "group": "SC05",
   "scene": "SC05",
-  "take": "SC05-T2",
+  "take": "SC05-T3",
   "type": "SHOT",
   "mode": 4,
   "light": {
@@ -1284,20 +1285,23 @@
   "pace": "one pull, Susan three steps",
   "end_pos": "Susan seated on the stool facing the mirror; Beth standing at her left shoulder",
   "cut": "on 'Watch this.'",
-  "duration": 5,
+  "duration": 8,
   "music": "MUS-EDU",
   "mirror_of": null,
   "ingredients": [
    "C3",
    "L-VANITY",
    "N"
-  ]
+  ],
+  "split": "length",
+  "take_kind": "take",
+  "start_pos": "Beth beside the bed by the laid-down garment bag; Susan on the end of the bed looking up at her"
  },
  {
   "beat": "SC05-SH05",
   "group": "SC05",
   "scene": "SC05",
-  "take": "SC05-T3",
+  "take": "SC05-T4",
   "type": "SHOT",
   "mode": 4,
   "light": {
@@ -1308,7 +1312,7 @@
    "key_side": "R"
   },
   "split": "length",
-  "take_kind": "multi",
+  "take_kind": "take",
   "subject": "C3",
   "cast": [
    "C3",
@@ -1349,7 +1353,7 @@
    "PROD-BALM",
    "PROD-HAND-CARD"
   ],
-  "duration": 10,
+  "duration": 15,
   "music": "MUS-TURN",
   "mirror_of": null
  },
@@ -1357,7 +1361,7 @@
   "beat": "SC05-SH06",
   "group": "SC05",
   "scene": "SC05",
-  "take": "SC05-T4",
+  "take": "SC05-T5",
   "type": "INSERT",
   "mode": 4,
   "light": {
@@ -1407,7 +1411,7 @@
    "COLOUR-FRONT-CARD"
   ],
   "note": "Beth heard (off) — her mouth not in frame",
-  "duration": 3,
+  "duration": 4,
   "music": "MUS-AFTER",
   "mirror_of": null
  },
@@ -1415,7 +1419,7 @@
   "beat": "SC05-SH07",
   "group": "SC05",
   "scene": "SC05",
-  "take": "SC05-T5",
+  "take": "SC05-T6",
   "type": "INSERT",
   "mode": 4,
   "light": {
@@ -1465,7 +1469,7 @@
    "COLOUR-FRONT-CARD"
   ],
   "note": "one continuous take, no speed change; Beth heard (off)",
-  "duration": 8,
+  "duration": 13,
   "music": "MUS-AFTER",
   "mirror_of": null
  },
@@ -1473,7 +1477,7 @@
   "beat": "SC05-SH08",
   "group": "SC05",
   "scene": "SC05",
-  "take": "SC05-T6",
+  "take": "SC05-T7",
   "type": "SHOT",
   "mode": 4,
   "light": {
@@ -1529,7 +1533,7 @@
   "beat": "SC05-SH09",
   "group": "SC05",
   "scene": "SC05",
-  "take": "SC05-T6",
+  "take": "SC05-T7",
   "type": "SHOT",
   "mode": 4,
   "light": {
@@ -1568,19 +1572,20 @@
   "action": "Susan leans an inch toward the mirror and looks at her cheek",
   "pace": "one lean",
   "cut": "on 'Thirty seconds.'",
-  "duration": 6,
+  "duration": 8,
   "music": "MUS-AFTER",
   "mirror_of": null,
   "ingredients": [
    "L-VANITY",
    "N"
-  ]
+  ],
+  "end_pos": "Susan seated at the mirror, leaning an inch toward it, looking at her cheek; Beth one step behind her left shoulder"
  },
  {
   "beat": "SC05-SH10",
   "group": "SC05",
   "scene": "SC05",
-  "take": "SC05-T6",
+  "take": "SC05-T8",
   "type": "SHOT",
   "mode": 4,
   "light": {
@@ -1620,19 +1625,22 @@
   "pace": "one turn",
   "end_pos": "Susan turned a little toward Beth",
   "cut": "on 'all you did?'",
-  "duration": 2,
+  "duration": 3,
   "music": "MUS-AFTER",
   "mirror_of": null,
   "ingredients": [
    "L-VANITY",
    "N"
-  ]
+  ],
+  "split": "length",
+  "take_kind": "multi",
+  "start_pos": "Susan seated at the mirror, leaning an inch toward it, looking at her cheek; Beth one step behind her left shoulder"
  },
  {
   "beat": "SC05-SH11",
   "group": "SC05",
   "scene": "SC05",
-  "take": "SC05-T7",
+  "take": "SC05-T8",
   "type": "SHOT",
   "mode": 4,
   "light": {
@@ -1673,7 +1681,7 @@
   "start_pos": "Susan seated at the mirror turned a little toward Beth behind her left shoulder",
   "end_pos": "Susan seated at the mirror, Beth standing behind her left shoulder",
   "cut": "on 'all I did.'",
-  "duration": 2,
+  "duration": 3,
   "music": "MUS-AFTER",
   "mirror_of": null,
   "ingredients": [

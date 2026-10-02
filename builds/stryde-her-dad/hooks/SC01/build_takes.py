@@ -77,9 +77,14 @@ def dialogue(who, line, voice, moment, playing, now, under):
 GO = "chat: \"confirm and proceed\" (2026-10-02) — voices confirmed, on to the hook; ingredient cards OUT-C1-D1 / OUT-C2-D1 wait for the user's Confirm"
 SHOTS = []
 
-T1_START = ROWS["SC01-SH01"]["start_pos"]
-T1_END = ROWS["SC01-SH04"]["end_pos"]
-SHOTS.append(dict(beat="SC01-T1", kind="multi", covers=["SC01-SH01", "SC01-SH02", "SC01-SH03", "SC01-SH04"], duration=10, line=L001, subject_motion="in_place",
+T1_START = ("Sue at the open boot of the silver hatchback, back to the van, lifting a potted plant in; Tony ten feet behind her on the tarmac, facing her, "
+            "a potted plant held in both hands at his waist, his back to the white van, which stands further back behind him across the lane, its back doors toward him")
+SPOT = ("down on his right knee, upright from the hips, his left foot flat in front of him, his right hand flat on the tarmac, kneeling right ON the second white bay line "
+        "behind him — counting back from the hatchback, past the first white line, the second line runs under his right knee")
+T1_END = ("the lad holding Sue by both upper arms beside the hatchback's rear wheel, both facing each other; the van stopped a metre short of the open boot; "
+          "Tony " + SPOT + ", ten feet away, the cracked pot beside him")
+SHOTS.append(dict(beat="SC01-T1", kind="multi", gen=2, note_owner=True,
+    fix="board Fix (owner): make him look at his back before he react → v1 had Tony shout the moment the van moved, never seeing it behind him; v2 SHOT 2 has him turn and look back over his right shoulder at the van first, then whip round and shout (the shout after the look, negatives); he falls onto the second white bay line and stays up on one knee, so T2 starts where T1 ends", covers=["SC01-SH01", "SC01-SH02", "SC01-SH03", "SC01-SH04"], duration=10, line=L001, subject_motion="in_place",
     start_pos=T1_START, end_pos=T1_END, files=["C2-FACE", "C1-FACE", "C4", "L-CARPARK", "OUT-C2-D1", "OUT-C1-D1"], audios=["C1"],
     title="Hook · SC01-T1 — the van backs at Sue; Tony shouts, his knee goes, the lad gets there (SH01–SH04)",
     prompt=" ".join([
@@ -92,9 +97,10 @@ SHOTS.append(dict(beat="SC01-T1", kind="multi", covers=["SC01-SH01", "SC01-SH02"
         MULTI_HEAD(4, T1_START, False),
         f"SHOT 1, [0s-2.5s]: WIDE from high above the car park, three-quarter on, the whole lane in frame; Camera on a tripod, locked: Sue lifts {POT} into the open boot of the silver hatchback, her back to the lane; "
         f"Tony stands about ten feet behind her on the wet tarmac, facing her, {POT} held in both hands at his waist; across the lane {VAN} — its reversing lights come on and it starts to roll back toward her at walking pace. "
-        "SHOT 2, [2.5s-5s]: MEDIUM CLOSE-UP on Tony at eye height, three-quarter, the plant still in his hands: he sees the van and shouts her name, sudden and raw: \"" + L001 + "\" "
+        "SHOT 2, [2.5s-5s]: MEDIUM CLOSE-UP on Tony at eye height, three-quarter, the plant still in his hands: hearing the engine behind him, he first turns his head and looks back over his right shoulder at the van rolling back behind him, "
+        "sees it is heading for Sue, and only then whips his head round to her and shouts her name, sudden and raw: \"" + L001 + "\" The shout comes after the look, never before it. "
         "SHOT 3, [5s-7.5s]: FULL, low at knee height in clean profile: carrying straight on, he lets the pot fall — it cracks on the tarmac — and lunges one step toward her with his right foot; "
-        "on that step his right knee gives and he goes down onto that knee on the wet tarmac, his right hand flat to the ground. "
+        "on that step his right knee gives and he goes down onto that knee on the wet tarmac, right on the second white bay line behind him, his right hand flat to the ground; he stays up on one knee, never on all fours. "
         "SHOT 4, [7.5s-10s]: FULL at eye height, front-on to the boot: the lad runs in past Tony from behind him, four strides, takes Sue by both upper arms and pulls her two steps clear "
         "to the side of the hatchback's rear wheel as the van stops short with a jolt a metre from the open boot, its brake lights flaring. "
         "Each cut lands on a completed action. Nobody looks into the lens. Last frame: " + T1_END + ".",
@@ -109,15 +115,16 @@ SHOTS.append(dict(beat="SC01-T1", kind="multi", covers=["SC01-SH01", "SC01-SH02"
                  "he knows before he moves that he will not get there, which leaks only through how his hands tighten on the pot."),
         AUD,
         negs(NEG_EQUIP, NEG_MORPH, "no collision, no one hit by the van, no van touching the car, no blood, no slow motion, no shorts, no bare knees, no camel coat, no writing on the van, "
-             "no logo on the uniform, no second van, no driver visible, no one else speaking, no lad's lines in this clip, no hand on any rail", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+             "no logo on the uniform, no second van, no driver visible, no one else speaking, no lad's lines in this clip, no hand on any rail, no shout before he has looked back at the van, no Tony on all fours", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "the van hits her or the car (the near miss reads as a crash)", "prevented_by": "it stops short a metre from the boot, collision negatives"},
            {"risk": "Tony's knee drop reads as a stumble or a dive", "prevented_by": "one step with the right foot, the right knee gives, down onto that knee, hand flat — SHOT 3 low profile"},
            {"risk": "the sheet clothes return (shorts, camel coat)", "prevented_by": "face crops + D1 outfit cards (HT26), shorts/coat negatives"},
            {"risk": "the shots restart the action", "prevented_by": "MULTI-FILM MOVE, start and end positions written"}]))
 
-T2_START = ROWS["SC01-SH05"]["start_pos"]
+T2_START = ("the lad holding Sue by both upper arms beside the hatchback's rear wheel, facing each other; Tony " + SPOT + ", ten feet away behind the lad")
 T2_END = ROWS["SC01-SH07"]["end_pos"]
-SHOTS.append(dict(beat="SC01-T2", kind="multi", covers=["SC01-SH05", "SC01-SH06a", "SC01-SH06b", "SC01-SH07"], duration=13, line=" ".join([L002, L003, L004]),
+SHOTS.append(dict(beat="SC01-T2", kind="multi", gen=2, note_owner=True,
+    fix="board Fix (owner): make the position of the man on the second white line of his back → v1's wide had Tony on all fours by the hatchback's bumper; v2 places him up on his right knee right ON the second white bay line behind him (the same spot T1 now ends on), never on all fours", covers=["SC01-SH05", "SC01-SH06a", "SC01-SH06b", "SC01-SH07"], duration=13, line=" ".join([L002, L003, L004]),
     subject_motion="still", start_pos=T2_START, end_pos=T2_END, files=["C4", "C2-FACE", "C1-FACE", "L-CARPARK", "OUT-C2-D1", "OUT-C1-D1"], audios=["C4", "C2"],
     title="Hook · SC01-T2 — \"I’ve got you.\" · \"Is your dad alright?\" · \"He’s fine. Thanks, love.\" (SH05–SH07)",
     prompt=" ".join([
@@ -132,15 +139,15 @@ SHOTS.append(dict(beat="SC01-T2", kind="multi", covers=["SC01-SH05", "SC01-SH06a
         "THE EXCHANGE, word for word and in this order: " + L002 + " " + L003 + " " + L004 + " — the lad says the first two lines, Sue answers with the third; Tony says nothing. "
         "SHOT 1, [0s-3.5s]: MEDIUM CLOSE-UP over Sue's shoulder onto the lad, eye height, her shoulder soft in the near frame; Camera on a tripod, locked: breathless, holding her by both upper arms, he says gently: \"" + L002 + "\" "
         "SHOT 2, [3.5s-7s]: MEDIUM CLOSE-UP on the lad, three-quarter, eye height: still holding her arms, he glances past her toward Tony on the ground, kind and concerned, and asks her: \"" + L003 + "\" "
-        "SHOT 3, [7s-10s]: WIDE from high past the lad's shoulder, his shoulder soft in the near frame: ten feet away, Tony is still down on his right knee on the wet tarmac beside the cracked pot, "
-        "his right hand flat on the ground, getting ready to push himself up; the lad's question finishes over this shot. "
+        "SHOT 3, [7s-10s]: WIDE from high past the lad's shoulder, his shoulder soft in the near frame: ten feet away, Tony is " + SPOT + ", the cracked pot beside him, "
+        "getting ready to push himself up; he is up on one knee, never on all fours; the lad's question finishes over this shot. "
         "SHOT 4, [10s-13s]: CLOSE-UP on Sue, front-on, eye height: shaken, she glances toward Tony, a beat, then back to the lad, and says quietly: \"" + L004 + "\" "
         "The lines land on each other in the rhythm this scene needs: cutting in close, a beat held on Tony, a beat before Sue answers. Each cut lands on a completed line, action or reaction. "
         "The eyelines match across every reverse. Nobody looks into the lens. Last frame: " + T2_END + ".",
         F2, PHYS,
         business("the lad", "both hands holding Sue's upper arms, steadying her, at one even grip through the line, letting go only on the last frame"),
         state("SUE", "shaken, in the outfit of her card, held by both arms beside the hatchback's rear wheel", "the lad lets go of her arms at the end"),
-        state("TONY", "in the outfit of his card, down on his right knee ten feet away, the cracked pot and spilled soil beside him", "nothing"),
+        state("TONY", "in the outfit of his card, " + SPOT + ", ten feet away, the cracked pot and spilled soil beside him", "nothing"),
         focus("the nearest eye of whoever is speaking", "the car park behind falls to a soft, recognisable shape; in the wide past the lad, Tony on the ground is sharp"),
         dialogue("the lad", L002 + " … " + L003, VOICE_C4, "he has just pulled a stranger out of a van's way and is still breathing hard. Speaking to Sue, close, steadying her.",
                  "reassures Sue. Opens breathless and quick; turns on the exact word 'dad', where his voice softens with concern as he looks past her; exits gentle, waiting for her answer. Stress on 'dad'.",
@@ -152,7 +159,7 @@ SHOTS.append(dict(beat="SC01-T2", kind="multi", covers=["SC01-SH05", "SC01-SH06a
                  "she will not say 'husband' in front of the boy, which leaks only through a glance away from Tony before she speaks."),
         AUD,
         negs(NEG_EQUIP, NEG_MORPH, "no Tony speaking, no Tony standing up, no Sue saying 'husband', no lad saying Sue's line, no van moving, no shorts, no bare knees, no camel coat, "
-             "no logo on the uniform, no crowd gathering", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+             "no logo on the uniform, no crowd gathering, no Tony on all fours, no Tony by the car's bumper", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "the voices swap or Tony speaks", "prevented_by": "Audio1 the lad, Audio2 Sue, every line named with its speaker, Tony-speaking negative"},
            {"risk": "Tony gets up or moves in the wide", "prevented_by": "STILL head, state-carry: still on his right knee, 'getting ready to push himself up'"},
            {"risk": "the sheet clothes return", "prevented_by": "face crops + D1 outfit cards (HT26)"}]))
@@ -192,7 +199,7 @@ if __name__ == "__main__":
                 "take": s["beat"], "covers": s["covers"], "start_pos": s["start_pos"], "end_pos": s["end_pos"], "duration": s["duration"], "resolution": "720p",
                 "aspect_ratio": "9:16", "start_image": None, "ingredients_approved": approved, "files": [FILES[f] for f in s["files"]],
                 "audios": [AUDIO[a] for a in s["audios"]], "generate_audio": bool(s["line"]), "dialogue": s["line"] or None, "script_line": s["line"] or None,
-                "pace": "unhurried", "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": 1, "user_go": GO,
+                "pace": "unhurried", "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": s.get("gen", 1), "user_go": GO, "fix_note": s.get("fix"), "noteOwner": s.get("note_owner"),
                 "risks": s["risks"], "vo": s.get("vo"), "scene": 1, "title": s["title"],
                 "taste": ["HT02", "HT17", "HT18", "HT22", "HT23", "HT26", "HT27"]}
         (H / f"{s['beat']}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))

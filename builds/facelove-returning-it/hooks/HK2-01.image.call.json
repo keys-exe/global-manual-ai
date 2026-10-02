@@ -1,0 +1,39 @@
+{
+ "beat": "HK2-01",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "For the line — Okay, I need to vent. I finally found a foundation that actually matches my redness, and I am sending it back. Here is why. —: she tapes the FACELOVE mailer shut to send it back. Seen from the propped phone on her vanity, slightly above, her hands and face both in frame. Image 1 is the product mailer, copied exactly — the same white bubble mailer with the same violet wordmark, nothing redesigned; the size of a hardback book, lying flat on the white vanity, about a third of the frame wide. Image 2 is her: the same woman, bare face with the redness and brown patches, the same cream robe, the same bedroom behind her. Exactly one mailer; her left hand holds its flap down, her right hand pulls a strip of clear tape across it; her eyes lifted to the lens, mouth closed, fed up. A real phone photo, soft late-afternoon window light from the left. No lettering but the mailer's own wordmark, bare vanity top, no other products, no makeup, no phone in frame.",
+ "script_line": "Okay, I need to vent. I finally found a foundation that actually matches my redness, and I am sending it back. Here is why.",
+ "face": true,
+ "room": true,
+ "product": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "FACELOVE bubble mailer (PACKAGING.jpg)",
+   "kind": "product"
+  },
+  {
+   "label": "N-VOICE-IMG-B (confirmed)",
+   "kind": "character"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT18",
+  "HT19",
+  "HT20",
+  "HT21"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: her hands pull the tape strip across the mailer flap and press it flat, then she looks up at the lens — one pull, about 2 s; phone propped, no camera move.",
+ "media": [
+  "10c828e4-ae8f-42ab-8b07-596e23f8a323",
+  "99d3f3a6-e596-4487-9370-82bdbb4ce912"
+ ]
+}
