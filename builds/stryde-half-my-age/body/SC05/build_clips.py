@@ -167,6 +167,55 @@ SHOTS.append(dict(beat="SC06-T1", take="SC06-T1", kind="multi", covers=["SC06-SH
            {"risk": "the voices swap", "prevented_by": "Audio1 Her, Audio2 Barbara, every line named with its speaker, negative"},
            {"risk": "the strap too big for her palm (FP02)", "prevented_by": "12 × 5 cm, 'no longer than the hand', oversized negative"}]))
 
+# The user (2026-10-02): "make the sc05t2 and scene 6 in one clip only so the positon of the two is consistent" — one take, 4 shots, 15 s.
+# Rows merged (act map): SC05-SH04 knee · SC05-SH06+SH07 hand-over + L038 · SC05-SH05+SC06-SH01+SH02 Her with the strap + L040 · SC06-SH03 L041.
+GO6 = "chat (2026-10-02): \"make the sc05t2 and scene 6 in one clip only so the positon of the two is consistent\" — the user's go for one combined take"
+GEN["SC0506-T1"] = 5
+NOTES_ALL["SC0506-T1"] = NOTES_ALL["SC05-T2"] + NOTES_ALL["SC06-T1"] + ["v4 (SC05-T2): the product strap is too long (kept: short flat strap)", "v4 (SC06-T1): the strap is too big (kept: smaller than her hand)", "the user: make SC05-T2 and scene 6 one clip so the two women's positions stay consistent"]
+FIX["SC0506-T1"] = ("the user: make the sc05t2 and scene 6 in one clip only so the positon of the two is consistent → one take on one camera side: Barbara across the table with her back to the side window, Her at the near end side-on to it, "
+                    "both seated in the same chairs from the first frame to the last; every earlier fix kept — Barbara shows the strap on her knee (moving, never a still), one short flat strap from her gilet pocket, smaller than Her's palm, front side up, never turned over, held resting in her hand on the table edge")
+P["C_START"] = P["T2_START"]
+P["C_END"] = P["T3_END"]
+SHOTS.append(dict(beat="SC0506-T1", take="SC0506-T1", kind="multi", covers=["SC05-SH04", "SC05-SH06", "SC06-SH02", "SC06-SH03"], duration=15, line=L038 + " " + L040 + " " + L041, vo="L037", subject_motion="in_place",
+    files=["PROD-FRONT", "INFO-KNEE-C1", "C1", "N-FACE", "L-KITCHEN", "OUT-N-B5", "INFO-ROUTINE"], audios=["C1-L038", "N-STOOD"],
+    title="Scenes 5–6 · one take — Barbara shows the strap, hands Her one; They come in twos / Barbara. This can't possibly work… / Just put it on and walk down the stairs", start_pos=P["C_START"], end_pos=P["C_END"],
+    prompt=" ".join([
+        manifest([("@image1", "is " + STRAP + " — it fits inside one palm."), ("@image2", CARD_KNEE),
+                  ("@image3", SHEET("Barbara", BARB_B5)), ("@image4", FACE_N), ("@image5", KITCHEN), ("@image6", CARD_N), ("@image7", CARD_ROUTINE),
+                  ("@audio1", VOICE("Barbara")), ("@audio2", VOICE("Her"))]),
+        SERIES, LOOK, INHERIT, B5_MORNING, NOSPK,
+        "THE POSITIONS NEVER CHANGE: from the first frame to the last, Her sits in the same chair at the near end of the table, side-on to the window, and Barbara sits in the same chair across the table from her with her back to the side window. "
+        "Nobody stands, moves chairs or swaps sides; every shot is taken from the same side of the table, so Her is always on the left of frame and Barbara on the right.",
+        "THE EXCHANGE, word for word and in this order: " + L038 + " " + L040 + " " + L041 + " — Barbara says the first line, Her the second, Barbara answers with the third; nobody else speaks.",
+        "One scene covered in 4 shots within a single take, all on the same side of the action line, with the same light, look and wardrobe throughout. Frame 1: " + P["C_START"] + ". "
+        "The action carries straight across every cut: each shot picks up the movement exactly where the last one left it — the same hand, the same object, the same direction — and everyone is where the last shot left them. "
+        f"SHOT 1, [0s-3s]: MEDIUM CLOSE at knee height from beside the table end, Camera on a tripod with one small pan to follow the knee: Barbara, {BARB_ID}, in {BARB_B5}, SHOWS it to Her — she swivels on her chair, swings her bare right leg out from under the table toward Her, "
+        "points down at it with her right index finger and taps the shell once, looking across at Her, a small knowing smile, lips sealed. The strap of Image1 sits on that knee exactly as in Image2, the bottom of her kneecap in the shell's notch, the wordmark toward us. The knee keeps moving until she taps it — never a still picture. "
+        "SHOT 2, [3s-7s]: MEDIUM across the table at hand height, both women in frame, Her on the left, Barbara on the right: Barbara takes one spare strap out of her gilet pocket, lays it in Her's open right palm and says, matter-of-fact: " + L038 + " "
+        "THE SPARE STRAP IS SMALL AND FLAT, exactly Image1: the black shell about 12 centimetres long and 5 tall — shorter than Her's palm, her fingertips showing beyond it — a slim chrome slide at each end, its knit band one small loop folded under it, never a long tail. Just the one strap, hand to hand. "
+        f"SHOT 3, [7s-11.5s]: MCU, three-quarter over Barbara's shoulder onto Her, {HER_ID}, in {HER_B5}: her right hand rests on the table edge with the small strap lying in it, front side up, smaller than her hand; she glances down at it, then up at Barbara, sceptical, and says the whole line, beginning with the name — Barbara. — a short pause, then: This can’t possibly work on knees like mine. Every word is said. "
+        f"SHOT 4, [11.5s-15s]: CU, low three-quarter over Her's shoulder onto Barbara: she leans in across the table toward Her, forearms on the wood, and says, certain and simple: " + L041 + " "
+        "Each cut lands on a completed action or line. The eyelines match across the table. Nobody looks into the lens. Last frame: " + P["C_END"] + ".",
+        F2, PHYS,
+        "THE STRAP, every time it is seen: exactly Image1 and small — the rigid black shell keeps its shape and size, never bends, never stretches, never turns into a sleeve or a brace; only the knit band is soft. In Her's hand it stays front side up and is never turned over.",
+        "While the lines are spoken, each speaker keeps doing one thing with their hands: Barbara's hands resting on the table, Her's right hand resting on the table edge with the strap lying in it, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
+        state("BOTH", "seated across the pine table in the same chairs throughout, Her at the near end, Barbara with her back to the window", "Barbara has given Her the spare strap; it lies in Her's hand, front side up"),
+        "FOCUS: SHOT 1 the strap and kneecap sharp; SHOT 2 the strap passing hand to hand sharp; SHOT 3 Her's nearest eye; SHOT 4 Barbara's eyes. The blur is optical: soft and round, never smeared.",
+        dialogue("Barbara", L038, VOICE_C1, "she has shown Her the strap on her own knee and puts the spare in her hand. Speaking across the table to Her.",
+                 "states it plainly, a fact not a sale. Opens matter-of-fact; turns on 'spare', a small shrug in the voice. Stress on 'never'.",
+                 "plain and certain, conversational, matching the face in this shot.", "she wants Her to try it, which leaks only through not taking it back."),
+        dialogue("Her", L040, VOICE_N, "she has been handed a small strap after years of braces and pills. Speaking across the table to Barbara.",
+                 "dismisses it, dry. Opens on the name as a sigh; turns on 'possibly'; exits looking at the strap. Stress on 'possibly'.",
+                 "dry and flat, a little tired, matching the face in this shot.", "part of her wants it to work, which leaks only through her not putting it down."),
+        dialogue("Barbara", L041, VOICE_C1, "her cousin has dismissed it, as she once did. Leaning in across the table.",
+                 "a simple instruction, no argument. Opens level; turns on 'stairs', a single nod. Stress on 'walk'.",
+                 "certain and simple, a little lower, matching the face in this shot.", "she knows the stairs will do the arguing, which leaks only through how calm she is."),
+        AUD,
+        negs(NEG_EQUIP, NEG_MORPH, "no one changing seats or standing, no swapped sides, no long or oversized strap, no strap longer than her palm, no back of the strap shown, no box or packaging, no neoprene sleeve, no strap over the kneecap, no cardigan, no voices swapped, no word left out", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    risks=[{"risk": "the two women change places between shots (the user's note)", "prevented_by": "one take, the positions block, Her always left and Barbara right, one side of the table, seat negatives"},
+           {"risk": "the strap too big or too long (FP02, FP05)", "prevented_by": "the real front photo first, 12 × 5 cm against her palm, band folded under, oversized/long negatives"},
+           {"risk": "the voices swap or a line is cut", "prevented_by": "Audio1 Barbara, Audio2 Her, the exchange written in order with speakers, every word said"}]))
+
 FILES = {"N-FACE": "cast/N-HER_face.png", "C1": "cast/C1-BARBARA_v1.png", "L-KITCHEN": "plates/L-KITCHEN_v1.png",
          "OUT-N-B5": "body/SC05/ingredients/OUT-N-B5_v2.png", "INFO-ROUTINE": "body/SC05/ingredients/INFO-ROUTINE_v2.png", "INFO-KNEE-C1": "body/SC05/ingredients/INFO-KNEE-C1_v3.png", "PROD-BACK": "../../products/stryde/stryde_refs/back_silicone.webp",
          "PROD-FRONT": "../../products/stryde/stryde_refs/front.webp", "INFO-PLACEMENT": "../../products/stryde/stryde_refs/worn_front.jpg",
@@ -183,7 +232,7 @@ if __name__ == "__main__":
                 "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16", "start_image": None,
                 "ingredients_approved": True, "files": [FILES[f] for f in s["files"]], "audios": [AUDIO[a] for a in s["audios"]],
                 "generate_audio": bool(s["line"]), "dialogue": s["line"] or None, "script_line": s["line"] or None, "pace": "unhurried",
-                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": GEN.get(s["beat"], 2), "user_go": GO5 if s["beat"] == "SC05-T2" else (GO4 if s["beat"] == "SC06-T1" else GO2), "fix_note": FIX[s["beat"]], "fix_notes_all": NOTES_ALL.get(s["beat"], [FIX[s["beat"]]]),
+                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": GEN.get(s["beat"], 2), "user_go": GO6 if s["beat"] == "SC0506-T1" else GO5 if s["beat"] == "SC05-T2" else (GO4 if s["beat"] == "SC06-T1" else GO2), "fix_note": FIX[s["beat"]], "fix_notes_all": NOTES_ALL.get(s["beat"], [FIX[s["beat"]]]),
                 "risks": s["risks"], "vo": s.get("vo"), "scene": int(s["beat"][2:4]), "title": s["title"],
                 "taste": ["HT02", "HT17", "HT18", "HT22", "HT23", "HT26", "FP01", "FP02", "FP03", "FP11", "FP12", "FP15"]}
         out = H / f"{s['beat']}.call.json"
