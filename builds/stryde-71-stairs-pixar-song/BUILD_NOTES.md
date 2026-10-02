@@ -902,3 +902,20 @@ Clips were owed on the confirmed picks C-06a (v1), C-08b (v2), C-09a (v1) and C-
 - **C-02b** image Fix "use the c02a as rerefence for all of them" → v5/v6. The new C-02a A frame is attached as the ladies to copy; her face crop is kept and there are no captions. Flagged: in B the lady in cream is cut at the right edge. If you pick C-02a B instead of A, the ladies match anyway (A and B carry the same three women).
 - **C-04a** clip Fix "she should not stretch it" → clip v2, the second generation. Diagnosis: v1 had her pulling the band. Now it's a thumb press on the shell only, the band never pulled, and the strap keeps its length. v1 is on Old 3.
 - Balances after: Higgsfield 5869.65 · Kling 36805. Waiting on: picks on C-02a, C-02b, C-07a, C-08a, PR-06a; Confirm/Fix on C-04a clip v2 and the other open clips.
+
+### 2026-10-02 ~15:00 UTC — "generate the videos"
+
+You picked A on all five open pairs, and none of the cards had a Fix note waiting. Five clips are on the board as To check (Kling 3.0, 1080p, silent, lengths from the act map, `clips/build_videos14_clips.py`, preflight PASS):
+- **C-02a v1**, 4 s: the woman in coral nudges the woman in lilac, who nods. The three stay three different women.
+- **C-02b v1**, 5 s: stairs class, end frame waived by your 2026-10-01 words. It's an after-state shot, so her hand is named leaving the rail. Flagged: she comes down a few steps onto the pavement, not one.
+- **C-07a v1**, 4 s: her hand slides the lid and lifts away. Flagged: mid-clip her fingers pass over part of the wordmark, though it's clear at the end.
+- **C-08a v1**, 4 s: stairs class, the struggle line, so both hands stay on the rail. Flagged: by the end the view has turned toward her front.
+- **PR-06a clip v2**, 7 s: the clip from your new pick (image v7, after the Fix "the strap is too big"). Same motion plan; the strap held at its size beside the mug. Clip v1 was made from the replaced frame and is now on Old 3.
+- The unused B images (C-02a v6, C-02b v6, C-07a v4, C-08a v4, PR-06a v8) are on Old 3 and deleted from Current.
+- `fix_patterns.py`: 0 notes from the owner (the boards are V7.79.1, which doesn't mark them), so no new rule this round.
+
+**Balances:** Higgsfield 5869.65 · Kling 36613 (192 spent this round).
+
+**Waiting on:**
+- Confirm or Fix on the open clips: C-02a, C-02b, C-03b, C-04a v2, C-05a, C-06a, C-07a, C-08a, C-08b, C-09a, C-09c, PR-05b v2, PR-06a v2.
+- Every beat now has its picture and clip. Once they're confirmed, the edit comes next (`music.py cuts --words` / `render`).

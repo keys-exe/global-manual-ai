@@ -1,0 +1,62 @@
+{
+ "C-02a": {
+  "generationId": "ASIJV4FEVPkzr9FRFLhaiAtGEf17XhCJ1Rt4kYgp31FoPUcqmDumkrHT7ldqg8jEwGLJ_P9S",
+  "credits": 32,
+  "duration": 4,
+  "cv": 1,
+  "fromImage": 5,
+  "file": "C-02a_v1.mp4",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/3b79393f-ab9d-4397-8900-0695862fd089-5k6ce4OoGHWPllvhHx2IEQ-output.mp4?x-kcdn-pid=112372",
+  "at": 1790953078697,
+  "res": "1072\u00d71928",
+  "asset": "b81bed11dcffde3a76c119901af82398"
+ },
+ "C-02b": {
+  "generationId": "AZDzUtw2uoEKv9wfm5al_pcS7BCavfJjtr2eNWtUZn7haBacbxumwblUsYiyjnDwrkPDxUz4",
+  "credits": 40,
+  "duration": 5,
+  "cv": 1,
+  "fromImage": 5,
+  "file": "C-02b_v1.mp4",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/8fb4fbdf-c4ea-40d6-8b80-d92b208c8782-8vEYbBAGlMGwGvVIxLPDTw-output.mp4?x-kcdn-pid=112372",
+  "at": 1790953092664,
+  "res": "1072\u00d71928",
+  "asset": "7cc6dc9cc0d63116561a32058e94369b"
+ },
+ "C-07a": {
+  "generationId": "AblD-BU4KAqejT_BMLPg1HG4NhcuyG3u37cRTD8uF0jfcr8YzgQtbE757K5EErnm3Q2F3yuC",
+  "credits": 32,
+  "duration": 4,
+  "cv": 1,
+  "fromImage": 3,
+  "file": "C-07a_v1.mp4",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/155c06a3-8649-4625-a974-1c49dd20250e-XgFpeD_ZhwIETZDQPua9bQ-output.mp4?x-kcdn-pid=112372",
+  "at": 1790953103606,
+  "res": "1072\u00d71928",
+  "asset": "0438fc40e86961e37d2a709d1ba49b5f"
+ },
+ "C-08a": {
+  "generationId": "AYkfuWTkRBdcoaJY3-0JFd_pNF_Xcs2hg8ywtUCcFyx_JCAaM2KGuci2w9bkG-ICDfEMS3tL",
+  "credits": 32,
+  "duration": 4,
+  "cv": 1,
+  "fromImage": 3,
+  "file": "C-08a_v1.mp4",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/4b82cbdc-8431-43e9-a356-66abe4a97924-ALjZ8T945CM0Qz-lw_wUhw-output.mp4?x-kcdn-pid=112372",
+  "at": 1790953100654,
+  "res": "1072\u00d71928",
+  "asset": "d6455349ae71a9f05666e3181eb95ec7"
+ },
+ "PR-06a": {
+  "generationId": "ASOt_4NASON6zNjhCivD97T8h7OXU1saqcVmvmLUHr7rblMSXM_u6BuWVGXaAJJG_C0qvgDf",
+  "credits": 56,
+  "duration": 7,
+  "cv": 2,
+  "fromImage": 7,
+  "file": "PR-06a_v2.mp4",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/05a0b8e1-7828-4836-b2a6-95dc77af9806-fcZeCXUng-5gvxbzbamWkw-output.mp4?x-kcdn-pid=112372",
+  "at": 1790953127307,
+  "res": "1072\u00d71928",
+  "asset": "2f43f6d80b15be0991bac0c1725b705c"
+ }
+}

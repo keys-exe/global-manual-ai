@@ -1,0 +1,62 @@
+{
+ "beat": "C-02a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Three ladies from church already ordered one\": From this frame: one nudge and a nod — one movement, about a second; camera RV sway — the virtual camera breathes in place, never travels. All three women keep their lips sealed and jaws still from the first frame to the last, each face holding the expression of the frame — a silent clip, nobody speaks or sings. At the foot of the church steps, the woman in coral in the middle gives the woman in lilac one gentle nudge with the hand already on her shoulder, and the woman in lilac nods once, then all three stand still; the woman in cream on the right stays still, her bag in her right hand; each woman keeps her own face, build, hat and suit exactly as in the frame, three different women. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_143722_e2b5d84f-a062-4a71-96b1-07a654cb631f.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Three ladies from church already ordered one",
+ "motion_plan": "From this frame: one nudge and a nod — one movement, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one movement",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "pilot_ref": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18",
+  "FP21",
+  "FP22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model / the strap redrawn",
+   "prevented_by": "exactly on model from the frame; the strap rigid"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "the camera stays where it is / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image v5)"
+}
