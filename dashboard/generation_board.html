@@ -1727,6 +1727,13 @@ async function uploadTo(gid,k,file){
     toast(c==="too_large"?"That file is too large to store":c==="unsupported_type"?"That file type can't be stored":c==="quota_exceeded"?"Board storage is full":"Upload failed. Try again.");
   }finally{delete state.busy[gid+":"+k];render()}
 }
+// V7.90.6 (§34A): is the person pressing Fix this board's owner? isOwner() needs no declared capability; absent -> false
+async function viewerIsOwner(){
+  if(state.isOwner!==undefined) return state.isOwner;
+  try{const u=window.claude&&window.claude.use?await window.claude.use("user"):null;state.isOwner=u?!!(await u.isOwner()):false}
+  catch(e){state.isOwner=false}
+  return state.isOwner;
+}
 async function setVerdict(gid,k,ok,fault){
   const g=state.gens.find(x=>x.id===gid); if(!g||!state.db) return;
   const d=STEP[k], patch={updatedAt:Date.now()};
@@ -1735,6 +1742,7 @@ async function setVerdict(gid,k,ok,fault){
     if(k==="image") patch.status=flow(g).length===1?"use":"ready";
   } else {
     patch[d.st]="regenerate"; patch[d.fault]=fault; patch[d.regens]=(Number(g[d.regens])||0)+1;
+    patch[d.fault+"Owner"]=await viewerIsOwner();   // V7.90.6: only the board owner's Fix notes teach the system (§34A)
     if(k==="image") patch.status="regenerate";
   }
   try{await state.db.doc("generations/"+gid).update(patch);toast(ok?(k==="image"&&flow(g).includes("video")?"Image confirmed. Its video is unlocked.":"Confirmed"):"Sent back to regenerate");
