@@ -30,7 +30,7 @@ for g, t in TAKES.items():
          "style": "As in the start frame.", "negatives": NEGS}
     prompt = json.dumps(j, ensure_ascii=False, separators=(",", ":"))
     call = {"beat": f"N-VOICE-{g}", "connector": "kling", "mode": 1, "kind": "dialogue", "duration": 10, "resolution": "1080p", "aspect_ratio": "9:16",
-            "start_image": "N-VOICE-SHELF-B v1 (Higgsfield job e5dbc0bc)", "start_approved": False, "pinned": False, "end_image": None, "end_approved": False,
+            "start_image": "N-VOICE-SHELF-B v1 (Higgsfield job e5dbc0bc)", "start_approved": True, "pinned": False, "end_image": None, "end_approved": False,
             "dialogue": t["line"], "script_line": t["line"], "pace": "brisk", "subject_motion": "in_place", "prefer_multi_shots": "false", "generation": 1,
             "risks": [{"risk": "hands distort when they come up into frame", "prevented_by": "arms stay relaxed at her sides, hands out of frame; a head movement carries the stress"},
                       {"risk": "late first word / dead air eats the 10s budget", "prevented_by": "first word lands within the first half second of the clip, no settle"},

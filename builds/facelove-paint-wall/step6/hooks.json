@@ -1,0 +1,251 @@
+[
+ {
+  "hook": 1,
+  "source": "script (Scene 1), verbatim",
+  "line": "You could throw out every expensive foundation on your shelf right now, and you would not lose a thing. Because not one of them was ever going to work on your skin. And I can show you exactly why in about thirty seconds.",
+  "concepts": [
+   {
+    "id": "A",
+    "frame1": "she stands square to the lens holding a plain beige foundation bottle in one hand and the closed violet FACELOVE stick in the other, two shelves of forty unlabelled bottles behind her",
+    "stakes": "every bottle behind her was a waste",
+    "where": "her dressing room, at the shelves",
+    "turn": "'…not one of them was ever going to work' — her eyes flick to the shelf",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 2,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "B",
+    "frame1": "she pulls one bottle off the crowded shelf and drops it into a wastebasket at her feet without looking",
+    "stakes": "throwing money away",
+    "where": "her dressing room, at the shelves",
+    "turn": "she turns to the lens: 'You could throw out every…'",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 2,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 1
+    }
+   },
+   {
+    "id": "C",
+    "frame1": "a slow slide along the row of forty bottles, each a slightly different wrong beige",
+    "stakes": "years of failed matches",
+    "where": "the shelf, close",
+    "turn": "it ends on her face",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 1,
+     "specific": 2,
+     "fresh": 1,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "D",
+    "frame1": "close on her bare tired face, then she lifts the stick into frame",
+    "stakes": "her face is the problem",
+    "where": "her dressing room",
+    "turn": "the stick in frame on 'thirty seconds'",
+    "score": {
+     "stop": 2,
+     "line": 1,
+     "feel": 2,
+     "specific": 1,
+     "fresh": 1,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "E",
+    "frame1": "a department-store beauty counter, her bag full of bottles",
+    "stakes": "another expensive purchase",
+    "where": "a mall beauty hall",
+    "turn": "cut to the shelf at home",
+    "score": {
+     "stop": 1,
+     "line": 1,
+     "feel": 1,
+     "specific": 1,
+     "fresh": 2,
+     "makeable": 1
+    }
+   }
+  ],
+  "pick": "A"
+ },
+ {
+  "hook": 2,
+  "source": "written for this build — needs your approval",
+  "line": "I spent years blaming my skin for every foundation on this shelf. It turns out it was never my skin at all.",
+  "concepts": [
+   {
+    "id": "A",
+    "frame1": "close on her fingertip running along the crowded shelf, tapping bottle after bottle, every one a slightly different wrong beige, until it stops on the last and she looks up at the lens",
+    "stakes": "years and money on the wrong shades",
+    "where": "along the shelf, close",
+    "turn": "'…never my skin at all' — straight into 'I am fifty seven'",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 2,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "B",
+    "frame1": "her bare tired face in the hand mirror, the shelf behind her reflected",
+    "stakes": "she has blamed herself",
+    "where": "the hand mirror",
+    "turn": "she lowers the mirror to the lens",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 2,
+     "specific": 2,
+     "fresh": 1,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "C",
+    "frame1": "an armful of bottles tipped onto the white dresser",
+    "stakes": "the pile of failures",
+    "where": "the dresser",
+    "turn": "she picks the stick out of the pile",
+    "score": {
+     "stop": 2,
+     "line": 1,
+     "feel": 1,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 1
+    }
+   },
+   {
+    "id": "D",
+    "frame1": "she shakes her head at the shelf, arms folded",
+    "stakes": "fed up",
+    "where": "her dressing room",
+    "turn": "she turns to the lens",
+    "score": {
+     "stop": 1,
+     "line": 2,
+     "feel": 2,
+     "specific": 1,
+     "fresh": 1,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "E",
+    "frame1": "a receipt pinned to the shelf edge",
+    "stakes": "what it cost",
+    "where": "the shelf",
+    "turn": "the stick set beside it",
+    "score": {
+     "stop": 1,
+     "line": 1,
+     "feel": 1,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 1
+    }
+   }
+  ],
+  "pick": "A"
+ },
+ {
+  "hook": 3,
+  "source": "written for this build — needs your approval",
+  "line": "Watch what happens when I paint this wall with one factory color. Because this is exactly what your foundation is doing to your face.",
+  "concepts": [
+   {
+    "id": "A",
+    "frame1": "low and wide: the roller drags one long stripe of flat pinkish beige up the bare warm plaster wall, plainly the wrong colour, and she turns to the lens with the roller in hand",
+    "stakes": "the wrong colour, plain as day",
+    "where": "the plaster wall",
+    "turn": "'…what your foundation is doing to your face' — cut to the caked macro",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 2,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "B",
+    "frame1": "macro: beige paint sinking into the wall's hairline cracks",
+    "stakes": "it makes the lines worse",
+    "where": "the wall, macro",
+    "turn": "the same pattern on her cheek",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 2,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 1
+    }
+   },
+   {
+    "id": "C",
+    "frame1": "she pops the lid off the plain paint can and holds it up beside her face",
+    "stakes": "the colour is wrong for her",
+    "where": "the drop cloth",
+    "turn": "she dips the roller",
+    "score": {
+     "stop": 2,
+     "line": 2,
+     "feel": 1,
+     "specific": 2,
+     "fresh": 2,
+     "makeable": 1
+    }
+   },
+   {
+    "id": "D",
+    "frame1": "the paint can and the foundation bottle side by side on the drop cloth",
+    "stakes": "the same thing",
+    "where": "the drop cloth from above",
+    "turn": "she picks up the bottle",
+    "score": {
+     "stop": 1,
+     "line": 2,
+     "feel": 1,
+     "specific": 2,
+     "fresh": 1,
+     "makeable": 2
+    }
+   },
+   {
+    "id": "E",
+    "frame1": "she stands beside the wall, arms folded, unimpressed",
+    "stakes": "a demonstration is coming",
+    "where": "the plaster wall",
+    "turn": "she picks up the roller",
+    "score": {
+     "stop": 1,
+     "line": 1,
+     "feel": 1,
+     "specific": 1,
+     "fresh": 1,
+     "makeable": 2
+    }
+   }
+  ],
+  "pick": "A"
+ }
+]
