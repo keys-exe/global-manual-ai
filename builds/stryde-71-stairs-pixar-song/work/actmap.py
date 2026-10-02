@@ -20,13 +20,14 @@ def snap(t):
 ROWS = []
 def R(beat, act, lines, key, fn, subj, loc, day, framing, action, pace, staging, prod, vis,
       h, side, fg, scale, why, plane, dof, src, kelvin, time, arc, face, music, ledger="", layout="full", eg="",
-      pin="no", camera="RV sway — the virtual camera breathes in place, never travels", mx=6, mirror=None, moving=False, ks=None, tin=0.0):
+      pin="no", camera="RV sway — the virtual camera breathes in place, never travels", mx=6, mirror=None, moving=False, ks=None, tin=0.0,
+      sub=None, t0=None):
     pin_waived = None
     if staging.startswith("stairs"):
         # §27G rule 10 would pin every stairs clip; the user waived it: "we dont need end frame" (2026-10-01) — recorded as pin_waived
         pin = "no"; pin_waived = "user 2026-10-01: \"we dont need end frame\""
     a, b = lines
-    line = " ".join(LYR[i]["line"] for i in range(a, b + 1))
+    line = sub or " ".join(LYR[i]["line"] for i in range(a, b + 1))   # sub: one phrase of a line that has its own picture (user 2026-10-02)
     if vis in ("VISIBLE", "REVEAL", "REVEAL→CONCEALED") or prod.startswith(("worn (anatomical)", "held", "box", "seated")):
         plane = "product"
     ks = ks or {"front": "L", "three-quarter": "R", "profile": "L", "behind": "L", "three-quarter-back": "R", "ots": "R"}[side]
@@ -35,7 +36,7 @@ def R(beat, act, lines, key, fn, subj, loc, day, framing, action, pace, staging,
         product=prod, visibility=vis, model="NBP", layout=layout, eg=eg, ledger=ledger, music=music,
         angle=dict(height=h, side=side, fg=fg, scale=scale, why=why), mirror_of=mirror,
         focus=dict(plane=plane, dof=dof, rack=None, moving_subject=moving),
-        light=dict(source=src, key_side=ks, time=time, arc=arc, kelvin=kelvin), face=face, speaking=False, tin=tin))
+        light=dict(source=src, key_side=ks, time=time, arc=arc, kelvin=kelvin), face=face, speaking=False, tin=tin, t0=t0))
 
 E, TQ, PR, FR, BH, OT, TQB = "eye", "three-quarter", "profile", "front", "behind", "ots", "three-quarter-back"
 STAIR_AM = ("landing window at the top of the stairs, south wall", 6500)
@@ -97,7 +98,20 @@ R("P-04a", A, (14, 14), "everything", "failed fix (HT10)", "N hands", "L-N-KITCH
 R("P-04b", A, (15, 15), "therapy", "failed fix", "N + one-off PT", "L-CLINIC", "N-D1b",
   "MEDIUM: N lying on a PT treatment table, a therapist's hands bending her right knee",
   "the therapist bends the knee a little further", "one slow bend, about two seconds", "hands: one movement, subject lying still", "absent", "—",
-  "high", TQ, "clean", "MEDIUM", "high = done to her, passive", "hands", "medium", *CLIN, "afternoon", "problem: clinical", False, "MUS-EXPOSE")
+  "high", TQ, "clean", "MEDIUM", "high = done to her, passive", "hands", "medium", *CLIN, "afternoon", "problem: clinical", False, "MUS-EXPOSE",
+  sub="Physical therapy.")
+# Line 15 split into three pictures on the user's ask (2026-10-02: "Pain pills. Cortisone shots. we need brolls for these 2") — one per phrase,
+# each cut on its own first sung word (medium.en: "Pain" 36.96 s, "Cortisone" 38.14 s); short by the song's own speed, the user's call
+R("P-04c", A, (15, 15), "pills", "failed fix — the pills (user 2026-10-02: a B-roll each for 'Pain pills.' and 'Cortisone shots.')", "N hands", "L-N-KITCHEN", "N-D1c",
+  "CU at table height from the side: two white pills tip out of a plain amber bottle into her open palm, a glass of water beside on the kitchen table",
+  "two pills tip into her palm", "one tip, about a second", "hands: large in frame", "absent (generic, §10)", "—",
+  "eye", PR, "clean", "CU", "eye at table height = the daily dose up close", "hands", "medium", *KIT, "morning", "problem: grey", False, "MUS-EXPOSE",
+  mx=3, sub="Pain pills.", t0=36.96)
+R("P-04d", A, (15, 15), "Cortisone", "failed fix — the shot (user 2026-10-02)", "N knee + one-off doctor (hands)", "L-CLINIC", "N-D1b",
+  "CU on her bare right knee as she lies on the treatment table: a doctor's gloved hand holds a syringe, its needle at the side of the knee, the other gloved hand steadying the knee; her own hand grips the paper sheet at the table edge",
+  "the doctor's thumb presses the plunger", "one slow press, about a second", "hands: one movement, subject lying still", "absent", "—",
+  "low", PR, "clean", "CU", "low = the needle looming over the knee, the fear of it", "hands", "medium", *CLIN, "afternoon", "problem: clinical", False, "MUS-EXPOSE",
+  mx=3, sub="Cortisone shots.", t0=38.14)
 # P-05 split into three B-rolls on the user's Fix (board, 2026-10-01: "make this into 3 brolls") — one line each; the push, the heap, her face
 R("P-05a", A, (16, 16), "Every", "low — the push (user 2026-10-01: three B-rolls, one per line)", "N", "L-N-KITCHEN", "N-D1c",
   "MEDIUM across the table: N pushes the heap of braces, sleeves and bottles away from her with the back of her hand",
@@ -328,7 +342,7 @@ R("C-09c", A, (107, 108), "stairs", "close (HT03)", "one-off sister + N", "L-N-S
 def e6():
     """song-clocked spans (E6): cut = first lyric word onset − 0.25 s; on-screen to the next beat's cut; call = ceil(on + 0.4 + 0.5), 3–15, split over `max`."""
     for i, r in enumerate(ROWS):
-        a = r["lines"][0]; lyric_cut = max(0.0, LYR[a]["start"] - LEAD + r["tin"]); r["lyric_cut"] = round(lyric_cut, 2); r["t_in"] = snap(lyric_cut) if i else 0.0
+        a = r["lines"][0]; lyric_cut = max(0.0, (r["t0"] if r.get("t0") is not None else LYR[a]["start"]) - LEAD + r["tin"]); r["lyric_cut"] = round(lyric_cut, 2); r["t_in"] = snap(lyric_cut) if i else 0.0
     for i, r in enumerate(ROWS):
         nxt = ROWS[i + 1]["t_in"] if i + 1 < len(ROWS) else VOCAL_END
         on = round(nxt - r["t_in"], 2); r["t_out"] = round(nxt, 2); r["on_screen"] = on

@@ -13,6 +13,7 @@ CALL.json describes one paid video call exactly as it will be sent:
                                        # take = a §24K part 5 one-take (TAKE-FILM): one continuous action, one call;
                                        # multi = a MULTI-SHOT take (MULTI-FILM) — both V7.88.0
     "take": "SC07-T1",                 # film (Modes 4–5) on Seedance: the act map's take (takes.py) — connected shots are one call
+    "rail_ok": false,                  # true only when the script line or the user puts a hand on the banister (a Before shot); otherwise RAIL fails any hand on a rail (L56)
     "legacy_build": false,             # true on a build started before V7.88.0 (set automatically for the PRE_TAKES builds,
                                        # by "build" or the call's path): its shots stay as planned, no take required
     "covers": ["SC07-SH02", "SC07-SH03"],   # take / multi: the act-map rows this call generates (≤ 4)
@@ -57,6 +58,7 @@ Beat images (§6A, V7.70.0; first-render rules V7.74.0) — a B-roll or hook sta
     "taste": ["HT03", "FP02"],         # House Taste / product fix-pattern rules applied (§34A)
     "anatomy": false,                  # an anatomy / mechanism beat (Nano Banana)
     "first_frame": false,              # Modes 2/3/5 (§24O): the build's first beat image — every later one attaches a confirmed frame as kind "style"
+    "one_offs": ["three church ladies"], # Modes 2/5 (§24O rule 10): people with no cast sheet — proportion ladder in words + a style ref with people: true
     "anat_lock": null | "the team's look call for the build's anatomy, in their words (§12A-1 rule 7)",
     "pixar_anatomy": false,            # a build from before V7.90 whose team asked for the Pixar anatomy: the Pixar anatomy checks run despite legacy_build (V7.90.3)
     "anat_style": null | "S1".."S7",   # anatomy beats: the act-map row's style (§12A-1, V7.81.0); S5 (physical model) routes as realistic
@@ -111,6 +113,7 @@ NOT_IN_PLACE = {"F1", "F4", "F5", "F6", "F7", "F9", "F10"}         # subject sit
 NOT_TRAVELS = {"F1", "F3", "F4", "F6", "F7", "F8", "F10"}          # subject walks: only F2, F5, F9
 MUSIC = re.compile(r"\b(?:music(?:al)?|score|soundtrack|bgm|background music|song|melody|instrumental|orchestra(?:l)?|underscore|theme tune)\b", re.I)
 NEG_CLAUSE = re.compile(r"\b(?:no|never|without)\b[^,.;:\n]*", re.I)   # negative clauses may name music ("no music, no score")
+RAIL_HOLD = re.compile(r"(?<![-\w])(?<!left )(?<!right )(?:hands?|grips?|gripping|holds?|holding|clutch(?:es|ing)?|leans? on|leaning on)\b[^.;,]{0,30}\b(?:banister|bannister|hand ?rail|stair ?rail|railing)\b", re.I)
 MUSIC_FILE = re.compile(r"(?:music|bgm|score|soundtrack|MUS-SC)", re.I)
 SEEDANCE_ONLY = {"F6", "F7", "F8", "F9", "F10"}
 STREAMERS = re.compile(r"\b(netflix|hbo|max original|prime video|amazon original|apple tv|disney\+?|hulu|paramount\+?|peacock)\b", re.I)
@@ -167,6 +170,12 @@ OUT_OF_FRAME = re.compile(r"(\b\w+\b)\s+(?:is |are |kept |cut |partly |just |hal
 # §24O — right first time in the stylised modes (V7.86.0)
 STYLE_PHOTO = re.compile(r"\b(?:i?phone|smartphone photo|photograph(?:ic|ed|y)?|photo-?real(?:istic)?|hyper-?real(?:istic)?|dslr|35 ?mm|film grain|skin pores|raw photo|documentary photo|candid photo)\b", re.I)
 STYLE_SCALE = re.compile(r"\b(?:level with|reaches?|comes? (?:up )?to|(?:at|to|below|above) (?:her|his|their|its) (?:hip|waist|chest|shoulder|knee|elbow)s?|(?:a |half a )?heads? (?:taller|shorter)|as tall as|taller than|shorter than|the height of|\d+ (?:steps?|treads?) (?:tall|high)|scale (?:matches|of)|true to (?:the )?(?:set|scale))\b", re.I)
+# §24O rule 10 (V7.91.1, L52): people with no cast sheet in a Pixar frame are drawn by the proportion ladder in words and copy
+# a style frame that shows Pixar people full-body — a hands or set frame gives no body to copy ("not a pixar": realistic ladies)
+ONE_OFF_GROUP = re.compile(r"\b(?:two|three|four|five|six|seven|eight|\d+)\s+(?:[\w-]+\s+){0,4}?(?:women|men|ladies|people|guests|kids|children|girls|boys|friends|neighbou?rs|nurses|patients)\b", re.I)
+PIX_PROPORTION = re.compile(r"\b\d(?:\.\d)?(?:\s?[–-]\s?\d(?:\.\d)?)?\s+heads?\s+(?:tall|high)\b", re.I)
+# §24O rule 7 (V7.91.2, L54): an edit that changes a cast member's clothes or pose redraws her face unless her face crop is attached ("wrong avatar")
+RESTYLE = re.compile(r"\bchange only (?:her|him|his)\b|\b(?:she|he) (?:now )?wears\b|\bher clothes\b", re.I)
 STYLE_FACING = re.compile(r"\b(?:facing|faces|back to (?:the )?(?:lens|camera|viewer)|toward(?:s)? the (?:lens|camera)|away from (?:the )?(?:lens|camera)|turned (?:toward|towards|away|to)|side-on|in profile|three-quarter (?:view|back|front))\b", re.I)
 STYLE_HANDS = re.compile(r"\b(?:four (?:chunky |simple |round(?:ed)? )?fingers and a thumb|five (?:chunky |simple )?fingers|fingers and (?:a|one) thumb)\b", re.I)
 
@@ -206,9 +215,21 @@ def run_image(c):
                   "e.g. 'her head level with the 6th baluster, the door handle at her hip; the daughter a head taller' — 'too big' is this mode's most repeated Fix")
             check("which way each character faces, in picture terms (§24O rule 4)", bool(STYLE_FACING.search(p)),
                   "e.g. 'her back to the lens, facing the church doors' or 'in profile, facing frame left'")
+            if mode in (2, 5) and (c.get("one_offs") or (ONE_OFF_GROUP.search(NEG_CLAUSE.sub(" ", p)) and not c.get("legacy_build"))):
+                check("people with no sheet drawn to the Pixar proportion ladder (§24O rule 10)", bool(PIX_PROPORTION.search(p)),
+                      "name their build in heads, e.g. 'each about 5.5 heads tall, big round heads, soft rounded bodies, large eyes' (§24A ladder)")
+                grp = ONE_OFF_GROUP.search(NEG_CLAUSE.sub(" ", p))
+                if grp and re.search(r"\beach (?:about|with|in)\b", p, re.I) and not re.search(r"\b(?:on the left|on the right|in the middle|the first|the second|the third|nearest|furthest)\b", p, re.I):
+                    check("each one-off in a group is her own person (§24O rule 10, L55)", False,
+                          "write each person in her own clause — face shape, skin tone, hair, build and where she stands — never one shared 'each…' description")
+                check("the style frame shows Pixar people full-body (§24O rule 10)", any(str(r.get("kind", "")).lower() == "style" and r.get("people") for r in refs),
+                      "attach a confirmed frame with full-body characters as kind 'style' and set people: true on it — a hands or set frame gives the model no body to copy")
             no_hands = re.search(r"\b(?:no hands?|(?:both )?hands? (?:are )?(?:out of|outside the) frame)\b", p, re.I)
             if HANDS.search(NEG_CLAUSE.sub("", p)) and not no_hands:   # "no hands in frame" names hands only to keep them out
                 check("stylised hands spelled out (§24O rule 5)", bool(STYLE_HANDS.search(p)), "e.g. 'each hand four chunky fingers and a thumb'")
+    if c.get("edit_of") and c.get("face") and mode in (2, 3, 5) and RESTYLE.search(p) and not c.get("legacy_restyle_ok"):
+        check("an edit that changes her clothes or pose attaches her face crop (§24O rule 7, L54)", "character" in kinds,
+              "attach the cast member's face-and-hair crop as kind 'character' and say she is the woman of both pictures")
     sl = c.get("script_line")
     check("the spoken line is in the prompt (§6A)", bool(sl) and norm(sl) in norm(p), "script_line missing" if not sl else "")
     negs = NEG_WORD.findall(p)
@@ -256,7 +277,7 @@ def run_image(c):
     pns = [m for m in re.findall(r"Image \d+ is the ([a-z]+)", p) if m not in NOTPROD] if c.get("product") else []
     if inv and pns:
         noun = pns[0]
-        counted = re.search(rf"\b(one|a single|exactly one)\s+(?:\w+\s+){{0,2}}{noun}", inv.group(1))
+        counted = re.search(rf"\b(one|a single|exactly one|two|exactly two|three|exactly three)\s+(?:\w+\s+){{0,2}}{noun}", inv.group(1))   # two-unit offers count too (V7.91.1)
         check("the product counted in the frame inventory (§6A rule 4, L41)", bool(counted), f"name it once with its count in the In frame list — 'exactly one {noun} on her right knee'" if not counted else "")
     # L28 (V7.88.1): speech marks inside an image prompt are printed on the frame as a caption — the line goes in without them
     # V7.90.7 (L46): the opener's own marks print too — "For the line — … —:" on a picture prompt, never "For the line \"…\":"
@@ -454,6 +475,11 @@ def run(c):
     # 1. Generation budget
     go = (c.get("user_go") or "").strip()
     check("generation ≤ 2, or the user's go", gen <= 2 or bool(go), f"generation {gen}; a third call on the same shot needs the user (§22X)")
+
+    # 1b. Stairs with no hand on the rail (L56): a hand on the banister reads as the knee failing — only a Before shot the script or the user asks for sets rail_ok
+    rail = RAIL_HOLD.findall(NEG_CLAUSE.sub(" ", p.split("NEGATIVES:")[0]))
+    if rail and not c.get("rail_ok"):
+        check("RAIL: nobody holds the banister (L56)", False, f"{rail[0]!r} — hands free on the stairs; set rail_ok: true only when the script line or the user puts the hand on it")
     if gen >= 2:
         fn = c.get("fix_note", "")
         check("gen 2 has a diagnosed fix", "→" in fn or "->" in fn, fn or "missing fix_note")

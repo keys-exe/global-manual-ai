@@ -1,0 +1,11 @@
+{"taskId": "a79066aab0d67cb6de42474fbda29901", "created": true}
+{
+  "taskId": "a79066aab0d67cb6de42474fbda29901",
+  "state": "success",
+  "credits": 10.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/gpt-image-2-kie/1790950598262-wlkd19fnxu.png"
+  ],
+  "saved": "body/SC09/ingredients/INFO-HIGHST_v1.png"
+}

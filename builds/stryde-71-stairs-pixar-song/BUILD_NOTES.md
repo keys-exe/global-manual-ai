@@ -813,3 +813,147 @@ What moved to Old 2:
 **Waiting on:**
 - Picks on PR-05b, PR-06a and the six Act 7 pairs.
 - Confirm or Fix on the eight new clips: M-05a, L-01a, L-01b, L-02a, L-02b, L-03a, M-06a, PR-03a.
+
+### 2026-10-02 ~13:40–14:10 UTC — "fix those and generate the next act" (Act 8)
+
+**Board read first (L49):** two cards on `regenerate`, C-02a and C-02b (image Fix "not a pixar" on both). Clips were owed on the picks C-01a, C-03b, C-04a, C-05a (v1), PR-05b and PR-06a (v5).
+
+**Fixes, "not a pixar" — new pairs To check:**
+- Cause: the church ladies have no cast sheet. They were written in words only, and the one style frame was hands on a table (P-04a), so the model drew realistic small-headed bodies.
+- Fix: every woman's build is given in heads from the §24A elder ladder ("about 5.5 heads tall, big round heads, soft round bodies, big eyes"). The style frame is the PR-04a jogger, a confirmed full-body Pixar character who is not Loretta.
+- C-02a v3/v4.
+- C-02b v3/v4. The first B printed the line as a caption ("SO I'MA JUST SAY IT RIGHT HERE"), so it was kept off (L16), stored on Old 3 and re-rendered once with a no-captions clause.
+
+**System (owner account, V7.91.1):**
+- §24O rule 10: people with no sheet are drawn to the proportion ladder in words, and the style frame shows full-body Pixar people (`one_offs` on the call, `people: true` on that ref). `preflight.py` checks it.
+- L52.
+- `preflight.py` also counts a two-unit product ("exactly two straps").
+
+**Clips on the picks (Kling 3.0, 1080p, silent; To check):**
+- C-01a 5 s. Flagged: her hand pats more than once.
+- C-03b 5 s: blue glow along the tendon, slow push-in.
+- C-04a 6 s: the surgeon presses the strap.
+- C-05a 5 s: the cheap copy stretched and sagging.
+- PR-05b 5 s: stairs class, end frame waived by the user, stairs pilot confirmed. Flagged: she takes several steps, not one.
+- PR-06a 7 s: steam and a slow push.
+- The unused images of the picked pairs are on Old 3.
+
+**Act 8 (C-06a, C-07a, C-08a, C-08b, C-09a, C-09c), first pairs To check:**
+- C-06a, N-D5 sheet outfit: she holds up two straps on the sofa. The house comes from P0.
+  - The first B drew another woman (the jogger style frame's face), so it was kept off (L16) and re-rendered once with the hands-only style frame.
+  - Flagged: the re-render's straps look like luggage straps with metal clips.
+- C-07a: an edit of P-04a from above, the open product box (`package_open.jpg`, newly imported to Higgsfield) with two straps, her hand setting the lid.
+- C-08a, N-D0: an edit of R-07a v8 A, the old way — plum top, grey skirt, side-on, both hands on the rail, grey morning light.
+- C-08b, N-D3: the same frame edited, with her on the 3rd step from the bottom facing the lens, hands free, strap on.
+- C-09a: her hands tie a red bow on the closed box.
+- C-09c, N-D7: an edit of the old HK-03a v7 A (the view down from the landing, her mustard shoulder in front). The climber is replaced by the sister (68, navy dress, the ribboned box), drawn to the ladder with the jogger as the style frame (rule 10).
+
+**Balances:** Higgsfield 5913.65 · Kling 37069.
+
+**Waiting on:**
+- Picks on C-02a, C-02b and the six Act 8 pairs.
+- Confirm or Fix on the six new clips.
+- After Act 8's clips, every beat has its picture. The edit (CapCut / `music.py render`) comes next.
+
+### 2026-10-02 ~14:25–15:00 UTC — "fix those and generate the clips"
+
+**Board read first (L49).** Fix notes on the board:
+- C-07a image "dont cover the box stryde logo"
+- C-08a image "wrong avatar"
+- PR-06a image "the strap is too big"
+- PR-05b clip "she should not touch the hand rail"
+
+Clips were owed on the confirmed picks C-06a (v1), C-08b (v2), C-09a (v1) and C-09c (v1). C-02a and C-02b still wait on your pick.
+
+**Image Fixes (new pairs, To check):**
+- **C-07a v3/v4:** an edit of your picked v1 A frame. Her hand is off the lid and the stryde wordmark on the lid is in full view.
+- **C-08a v3/v4:** the same edit of R-07a v8 A, now with her face-and-hair crop attached and her face named ("the same round face, dark brown skin and silver twist-out"). Cause: an edit that changed her clothes and pose redrew a thinner, lighter-skinned woman.
+- **PR-06a v7/v8:** an edit of your picked v5 frame. Only the strap's size changes, to true size against the mug ("a little longer than the mug is tall"). Cause: my prompt asked for "a quarter of the frame wide" in a wide overhead, which enlarged the strap.
+  - Flagged: B is still on the large side.
+  - The PR-06a clip v1 (made from the replaced v5 frame) stays as a version until the new pick has its clip.
+
+**System (owner account, V7.91.2):**
+- §6A rule 2: the frame fraction never enlarges the product past true size beside known objects; reframe closer instead (L53).
+- §24O rule 7: an edit that changes a cast member's clothes or pose attaches her face crop. `preflight.py` checks it (L54).
+
+**Clips (Kling 3.0, 1080p, silent; To check):**
+- **PR-05b clip v2**, 5 s, your Fix "she should not touch the hand rail". Diagnosis: in v1 her right hand left the basket for the rail. Now both hands are named on the basket handles from the first frame to the last, she walks in the middle of the runner, and it's one step. The second generation of this shot; v1 is on Old 3. Flagged: she still walks a few steps.
+- **C-06a v1**, 6 s: she lifts the two straps on the sofa.
+- **C-08b v1**, 6 s: stairs class, end frame waived by your 2026-10-01 words, hands named off the rail. Flagged: several steps, not one.
+- **C-09a v1**, 5 s: she pulls the bow tight.
+- **C-09c v1**, 5 s: the sister climbs toward the lens with the gift.
+- The unused images of the picked pairs (C-06a v2, C-08b v1, C-09a v2, C-09c v2) are on Old 3.
+
+**Balances:** Higgsfield 5877.65 · Kling 36853.
+
+**Waiting on:**
+- Picks on C-02a, C-02b, C-07a, C-08a and PR-06a.
+- Confirm or Fix on the clips: C-03b, C-04a, C-05a, C-06a, C-08b, C-09a, C-09c, PR-05b v2.
+- Clips for C-07a, C-08a and PR-06a after their picks. Then every beat has its picture and the edit comes next.
+
+### 2026-10-02 ~14:35–14:45 UTC — hourly Fix check (three new Fix notes)
+
+- **C-02a** image Fix "make a new one the face looks the same" → v5/v6. Three different women, each written in her own clause:
+  - lilac: short, plump, round glasses, white curls
+  - coral: tall, slim, freckles, grey bun
+  - cream: broad, very dark skin, silver braids
+
+  Same Pixar ladder and jogger style frame. Cause: one shared description for the group. Fixed in V7.91.3 (§24O rule 10, L55, `preflight.py`).
+- **C-02b** image Fix "use the c02a as rerefence for all of them" → v5/v6. The new C-02a A frame is attached as the ladies to copy; her face crop is kept and there are no captions. Flagged: in B the lady in cream is cut at the right edge. If you pick C-02a B instead of A, the ladies match anyway (A and B carry the same three women).
+- **C-04a** clip Fix "she should not stretch it" → clip v2, the second generation. Diagnosis: v1 had her pulling the band. Now it's a thumb press on the shell only, the band never pulled, and the strap keeps its length. v1 is on Old 3.
+- Balances after: Higgsfield 5869.65 · Kling 36805. Waiting on: picks on C-02a, C-02b, C-07a, C-08a, PR-06a; Confirm/Fix on C-04a clip v2 and the other open clips.
+
+### 2026-10-02 ~15:00 UTC — "generate the videos"
+
+You picked A on all five open pairs, and none of the cards had a Fix note waiting. Five clips are on the board as To check (Kling 3.0, 1080p, silent, lengths from the act map, `clips/build_videos14_clips.py`, preflight PASS):
+- **C-02a v1**, 4 s: the woman in coral nudges the woman in lilac, who nods. The three stay three different women.
+- **C-02b v1**, 5 s: stairs class, end frame waived by your 2026-10-01 words. It's an after-state shot, so her hand is named leaving the rail. Flagged: she comes down a few steps onto the pavement, not one.
+- **C-07a v1**, 4 s: her hand slides the lid and lifts away. Flagged: mid-clip her fingers pass over part of the wordmark, though it's clear at the end.
+- **C-08a v1**, 4 s: stairs class, the struggle line, so both hands stay on the rail. Flagged: by the end the view has turned toward her front.
+- **PR-06a clip v2**, 7 s: the clip from your new pick (image v7, after the Fix "the strap is too big"). Same motion plan; the strap held at its size beside the mug. Clip v1 was made from the replaced frame and is now on Old 3.
+- The unused B images (C-02a v6, C-02b v6, C-07a v4, C-08a v4, PR-06a v8) are on Old 3 and deleted from Current.
+- `fix_patterns.py`: 0 notes from the owner (the boards are V7.79.1, which doesn't mark them), so no new rule this round.
+
+**Balances:** Higgsfield 5869.65 · Kling 36613 (192 spent this round).
+
+**Waiting on:**
+- Confirm or Fix on the open clips: C-02a, C-02b, C-03b, C-04a v2, C-05a, C-06a, C-07a, C-08a, C-08b, C-09a, C-09c, PR-05b v2, PR-06a v2.
+- Every beat now has its picture and clip. Once they're confirmed, the edit comes next (`music.py cuts --words` / `render`).
+
+### 2026-10-02 ~15:10–15:35 UTC — "all are locked finish this": the finished video
+
+All 61 act-map beats are confirmed (`use`). Their clips on disk match the board's current versions byte for byte.
+
+**FINAL-HK1** is on the Final board as To check (status `review`; the final review is yours). It's 3:48 (228.04 s), 1080×1920, 24 fps, 123 MB, uploaded as 9 × 15 MB parts that the board joins back into the exact file. It was made with `edit/build_final.py`; the cut list is `edit/cutlist_HK1.json` and the captions are `edit/captions_HK1.ass`.
+- **Picture:** the 61 confirmed clips cut on the act map's beat-snapped lyric cuts (`work/actmap_rows.json` t_in/t_out = `docs/actmap`), frame-exact on the 24 fps grid. Each clip enters 0.4 s in, except HK-01a (0.03 s) and HK-02a (0.11 s), whose clips are only a fraction longer than their slots. No speed change, nothing slowed.
+- **Sound:** the song, whole and untouched (the only soundtrack, §3C).
+- **Captions (EG01):** the 108 lyric lines verbatim, black on white boxes, one or two rows at ~72 % height, a long line split at its comma or into even halves. Line 37 "Stryde." is captioned at 84.5–86.3 s (F4).
+- **End card (F16):** the 5.3 s instrumental outro (222.7–228.0 s) shows the last frame of the C-07a clip (two straps in the box, the lid aside, the wordmark clear) with a slow 6 % push. The overlays are "Buy 1 Get 1 Free" and "60-day money-back guarantee", both held claims (§17), never generated.
+- Flagged: P-05a (1.6 s) and P-05c (0.8 s) run under the 2.0 s floor. This is the three-shot P-05 you asked for on 2026-10-01.
+- **This build's spend** (`build_spend.py` over the Current, Old, Old 2 and Old 3 boards; written as `buildSpend` on the Current and Final build docs): Kling 3,928 credits / 99 clips · Higgsfield 855.76 / 401 images · Kie AI 963 / 1 image. Total 5,746.76 credits over 501 renders.
+- **Balances:** Higgsfield 5869.65 · Kling 36613 (no generation this turn).
+
+**Waiting on:** your Confirm or Fix on FINAL-HK1 on the Final board.
+
+### 2026-10-02 ~15:40–16:10 UTC — FINAL-HK1 v2 ("the p01a reverse it to look walking backwards and slow it down, fix the broll placement also use a caption fitting for a music video and not the plain one")
+
+- **Placement.** Measured on v1 against medium.en sung word times (`edit/words_medium.py`, `edit/align_words.py`: 585 of the 615 lyric words matched; the rest are placed between their matched neighbours): v1 cut on average **0.77 s before** each line, and in 54 of 60 rows the new picture came in under the end of the previous line. Cause: §3C's "the beat at or before the word", plus small-model word times. Fixed at the source, **V7.91.4 / L57**: `music.py lyric_cuts` now cuts 2 frames before the first sung word, or on a beat ≤ 0.25 s before it. It never cuts under the line before (EARLY), times words with medium.en, and searches forward so a repeated phrase finds its own line (T-04b "I always figured…" had matched T-04a's line). The re-cut sheet `edit/cuts_v2.json` PASSes; the placement table is `edit/placement_HK1.md` and `docs/placement` on the Plan and Current boards.
+- **Short rows.** P-01b (1.34 s), L-01b (1.82 s) and T-03a (1.97 s) are under 2.0 s because their sung lines are; each picture holds exactly its line. P-05a and P-05c stay short, as before (your three P-05 shots).
+- **P-01a:** played in reverse, so she comes down the stairs backwards toward the lens (the clip was rendered climbing away). It runs at 0.65x, motion-interpolated.
+- **HK-01a** is 0.6 s shorter than its now-correct 8.64 s slot, so it plays at 0.93x, interpolated, with no frozen frame. C-05a runs at 0.998x.
+- **Lyrics:** music-video captions (§3C V7.91.4). Poppins ExtraBold (OFL, `edit/fonts/`), dark outline and soft shadow, no box. Each word fills gold as it is sung (ASS `\kf` on the aligned word times), and each line pops in. The end-card offer and guarantee use the same style.
+- **On the board:** FINAL-HK1 v2 is on the Final board as To check: 128 MB in 9 parts, 3:48. v1 was copied to Old 3 (FINAL-HK1 doc there) and its parts were deleted from Final.
+
+**Waiting on:** your Confirm or Fix on FINAL-HK1 v2.
+
+### 2026-10-02 ~16:20 UTC — "Pain pills. Cortisone shots. we need brolls for these 2"
+
+Line 15 is now three pictures, one per phrase (`work/actmap.py`: the new `sub` / `t0` fields cut a row on its own first sung word; 63 rows, all 108 lines covered, `angles.py` PASS; `docs/actmap` re-synced on Plan and Current):
+- **P-04b** keeps "Physical therapy." (its card's `line` is updated; its confirmed image and clip are unchanged).
+- **P-04c — "Pain pills."** At her kitchen table (N-D1c), close at table height: her right hand tips an amber bottle and two pills fall into her open left palm, with a glass of water beside. The confirmed P-04a frame is Image 1 (her table, her hands and cardigan cuffs). Motion plan: the pills tip into her palm, one tip, about a second.
+- **P-04d — "Cortisone shots."** In the clinic (N-D1b), close from low at the side of the table: a doctor's gloved hands, one steadying her knee and one holding a syringe at the side of the knee, her hand on the paper sheet. The confirmed P-04b frame is Image 1. Motion plan: the thumb presses the plunger, one slow press. Flagged: in both renders she sits on the edge of the table rather than lying as in P-04b.
+- Both are A/B pairs on Higgsfield, nano_banana_pro requested and logged as nano_banana_2, as on every image of this build. Preflight PASS (`body9/build_split15.py`). On the Current board as To check.
+- **Timing:** sung, "Pain pills." runs 36.96–37.92 s and "Cortisone shots." runs 38.14–38.84 s. On the V7.91.4 clock, P-04b, P-04c and P-04d are each on screen about 0.8–1.2 s (under the 2.0 s floor; your call, the song sings them that fast). The finished video takes them in once their clips are confirmed.
+- Credits: Higgsfield 5699.65 → 5667.65 (32 for 4 renders, measured; written as 8 per render). Kling unchanged at 36613.
+
+**Waiting on:** Use A / Use B (or Fix) on P-04c and P-04d. Then their clips, then FINAL-HK1 v3 with the three line-15 pictures.
