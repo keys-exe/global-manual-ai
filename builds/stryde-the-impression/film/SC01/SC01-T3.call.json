@@ -1,0 +1,119 @@
+{
+ "beat": "SC01-T3",
+ "build": "stryde-the-impression",
+ "connector": "seedance",
+ "model": "bytedance/seedance-2-5",
+ "mode": 4,
+ "kind": "multi",
+ "take": "SC01-T3",
+ "covers": [
+  "SC01-SH09",
+  "SC01-SH10",
+  "SC01-SH11"
+ ],
+ "start_pos": "everyone seated as before, Dan holding his water glass",
+ "end_pos": "everyone seated; Emma and Dan holding a look across the table",
+ "duration": 14,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "cast/C3-DAN_v1.png",
+  "cast/C4-OSCAR_v1.png",
+  "cast/C2-EMMA_v1.png",
+  "cast/N-HAZEL_v1.png",
+  "plates/L-DINING_v1.png"
+ ],
+ "audios": [
+  "voice/C3_voice_ref10.mp3",
+  "voice/C4_voice_ref10.mp3",
+  "voice/C2_voice_ref10.mp3"
+ ],
+ "generate_audio": true,
+ "dialogue": "...A bit. Nana. Will you walk me to school? When I’m big. Nana’ll wait in the car, love. Nana’ll see you at the gate.",
+ "script_line": "...A bit. Nana. Will you walk me to school? When I’m big. Nana’ll wait in the car, love. Nana’ll see you at the gate.",
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": "chat: \"CONFIRMED ALL PROCEED\" (2026-10-02) — cast, plates and the step-5 plan confirmed",
+ "fix_note": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "Oscar's voice or face drifts from his sheet",
+   "prevented_by": "his sheet + his own voice master, 'four' stated"
+  },
+  {
+   "risk": "the look between Emma and Dan is lost",
+   "prevented_by": "named as the shot's last beat, held, in the end position"
+  },
+  {
+   "risk": "three voices blur into one",
+   "prevented_by": "three voice masters, each line named to its speaker, ONLY_SPEAKER"
+  }
+ ],
+ "scene": 1,
+ "title": "Hook A · T3 — '…A bit.' / 'Nana. Will you walk me to school?' / 'Nana'll wait in the car…' + the look (SH09–SH11)",
+ "taste": [
+  "HT22",
+  "HT23",
+  "HT24",
+  "HT25",
+  "HT27"
+ ],
+ "prompt": "INGREDIENTS. @image1 is Dan, forty-one, Emma's husband: face, age, hair and build only, wearing a dark green half-zip jumper over a white T-shirt and charcoal chinos, exactly as on his sheet. @image2 is Oscar, four, Emma and Dan's son: face, age, hair and build only, wearing a red-and-navy striped long-sleeve T-shirt and navy shorts, exactly as on his sheet. @image3 is Emma, thirty-nine, their daughter: face, age, hair and build only, wearing a grey marl sweatshirt, dark jeans and a thin gold chain, exactly as on her sheet. @image4 is Hazel, sixty-seven: face, age, hair and build only, wearing an oatmeal cable-knit cardigan buttoned over a navy round-neck top and a mid-grey wool skirt, exactly as on her sheet. @image5 is the place: the dining room of the house, the Sunday table, its walls, windows, furniture and light side exactly as shown. @audio1 is Dan's voice, its timbre, pitch, accent and pace, for every line Dan speaks; it sets who they sound like, never how they feel in this shot. @audio2 is Oscar's voice, its timbre, pitch, accent and pace, for every line Oscar speaks; it sets who they sound like, never how they feel in this shot. @audio3 is Emma's voice, its timbre, pitch, accent and pace, for every line Emma speaks; it sets who they sound like, never how they feel in this shot. These references set who, where and what things ARE; the prose below sets the shot and what HAPPENS, and nothing in them is a shot to cut to. The look of a high-end live-action drama series: shot on a large-format digital cinema camera with spherical prime lenses, 24 frames per second with natural motion blur. Motivated low-key light from real sources in the scene — a window, a practical lamp, an overhead fixture — with a shadow side on every face, deep shadows that still hold detail and highlights that roll off softly; never flat and never evenly lit. Shallow depth of field on close shots, the room layered in depth behind. Natural, rich, restrained colour straight from the camera, real skin texture, worn costumes and a lived-in set. Restrained, specific performances. THE LOOK OF THIS FILM: A British family drama shot like a prestige drama series — a stone terraced house on a steep Yorkshire hill, a Sunday lunch, a high-street chemist, a primary-school gate at the top of the hill, watched with warmth and restraint. Lived-in domestic colour: overcast grey-blue daylight and warm tungsten lamps in the rooms of the Before; muted sage, navy, oatmeal, gritstone and brick, one pillar-box red on the hill; warming to clear summer daylight, soft greens, cream and honey in the After. Highlights roll off softly with a faint warm halation around bulbs and bright windows; clean modern glass with a gentle fall-off toward the frame edges. Captured with natural, neutral colour and a gentle contrast, ungraded — the grade is added later in the edit. Every frame of this film shares exactly this look. The look exactly as set out here, from the first frame to the last: same lens, same depth of field, same colours, same light direction and same optical texture. Nothing about the look changes across the clip. 24 frames per second with a 180-degree shutter, so moving hands and objects carry natural motion blur. THE ROOM, fixed in every shot, exactly as in the place reference: the front room of a Victorian stone terraced house used as the dining room, seen from its doorway — the long dark oak table runs AWAY from the doorway down the middle of the room, a cream cloth on it, cleared after Sunday lunch: a jug of water, glasses, a gravy-stained serving spoon on a plate; the dark oak sideboard along the LEFT wall with a clear strip of carpet between it and the chair backs; the tiled fireplace with a clock on its mantel on the RIGHT wall; the bay window with net curtains at the FAR end. THE SEATS NEVER CHANGE: Hazel at the far end of the table with her back to the bay window; on the left side of the table, nearest her, an empty chair, then Emma, then Oscar's chair nearest the doorway; on the right side, nearest Hazel, Roy, then Dan nearest the doorway. THE LIGHT: overcast May afternoon daylight, about 6000K, through the bay window behind Hazel, soft and cool, with one warm pendant lamp over the table; a soft shadow side on every face. One scene covered in 3 shots within a single take, all on the same side of the action line, with the same light, look and wardrobe throughout. Frame 1: everyone seated as before, Dan holding his water glass. STILL: Everyone stays in place, seated or standing; the only movement in each shot is its business and the performance. SHOT 1, [0s-2s]: MCU, from low on Dan across the table: he holds Hazel's look, puts his water glass down, and says it honestly: \"...A bit.\" SHOT 2, [2s-6s]: MCU, at Oscar's eye level: Oscar, leaning on the table on his elbows, looks up the table at his nana and asks: \"Nana. Will you walk me to school? When I’m big.\" SHOT 3, [6s-12s]: MCU, over Dan's shoulder onto Emma: Emma answers for her mother, bright: \"Nana’ll wait in the car, love. Nana’ll see you at the gate.\" Then she and Dan share a look across the table. The lines land on each other in the rhythm this scene needs: a pause before Dan's two words, the boy straight in, Emma quick and bright, then the silent look held. Each cut lands on a completed line, action or reaction. The eyelines match across every reverse. Nobody looks into the lens. Last frame: everyone seated; Emma and Dan holding a look across the table. THE EXCHANGE, word for word and in this order: ...A bit. Nana. Will you walk me to school? When I’m big. Nana’ll wait in the car, love. Nana’ll see you at the gate. — Dan says the first line, Oscar says the second line, Emma says the third line. Camera on a tripod, framed and locked for each shot, with no drift, no sway and no reframe. The only camera life is one small operator pan or tilt of a few degrees to keep the subject in frame as they shift. It arrives a beat late and corrects only part of the way. The people and the room carry all the other movement. Weight and support everywhere: body load visibly on one foot or braced hand, fabric hanging from contact points and creasing at joints, every object resting on something with a tight contact shadow, soft deforming under hard, liquids level with gravity, nothing floating. THE FAMILY still carries exactly what this scene has done to them so far: all seated in the same places, the cleared table between them, Hazel still at the far end. None of it resets: it is the same as in the previous shot, except nothing. It holds in every frame. A British Indian man of forty-one, born and raised in Leeds: an easy, warm, mid-low Leeds voice, unhurried, careful and honest when he has to be; plain Yorkshire vowels. IN THIS MOMENT: he has been asked straight and won't lie to her. Speaking to Hazel, a son-in-law she trusts. PLAYING: admits Hazel. Opens holding his glass; turns on the exact word 'bit', where he puts the glass down; exits gentle and plain. Stress on 'bit'. VOICE NOW: low and careful, continuing from how they sounded on the previous line, and matching the face in this shot. UNDER THE LINE: he wishes he'd been asked anything else, which leaks only through the glass set down slowly. Played small and true, for a camera close enough to see a thought. Never theatrical, never pushed, never performed to the lens. A boy of four from West Yorkshire: a small, clear child's voice, matter-of-fact, the words a little slow and careful the way a four-year-old says them, Yorkshire vowels. IN THIS MOMENT: he wants Nana to walk him to school. Speaking to Hazel, a grandson who adores her. PLAYING: asks Hazel. Opens leaning on his elbows; turns on the exact word 'big', where he sits up; exits hopeful. Stress on 'walk'. VOICE NOW: small and clear, continuing from how they sounded on the previous line, and matching the face in this shot. UNDER THE LINE: nothing — he means it simply, which leaks only through his fingers drumming once on the table. Played small and true, for a camera close enough to see a thought. Never theatrical, never pushed, never performed to the lens. An English woman of thirty-nine, Yorkshire softened by years in Leeds: a quick, bright mid-range voice with her mother's northern vowels, a little faster and higher, brightness covering worry. IN THIS MOMENT: she is making the plan for everyone, kindly. Speaking to Oscar, a mother managing a hard truth. PLAYING: manages Oscar. Opens bright; turns on the exact word 'car', where her eyes go to Dan; exits the look to Dan held. Stress on 'gate'. VOICE NOW: light, brisk, continuing from how they sounded on the previous line, and matching the face in this shot. UNDER THE LINE: she thinks her mother can't do it, which leaks only through the look to Dan. Played small and true, for a camera close enough to see a thought. Never theatrical, never pushed, never performed to the lens. While listening, Dan keeps doing one thing with their hands: turning his water glass a quarter turn on the cloth, at one turn. It is ordinary and unhurried, and the hands never stop to gesture. Hazel is listening, not waiting to speak. As Emma talks, Hazel takes it in: she sees the look pass between Emma and Dan. The reaction arrives a beat after the words that cause it, never before them. Mouth closed, face alive and never frozen, eyes on Emma. FOCUS: the nearest eye of whoever speaks is sharp, the rest of the table softly behind. The blur is optical: soft and round, never smeared. Only the person whose line it is speaks; everyone else keeps their mouth closed and listens. Audio is clean, close production dialogue sound: clear and even, with a little of the room's natural tone behind the voice. Breath and mouth detail are present but never exaggerated. No phone-microphone proximity, no compression pumping, no music and no sound effects anywhere in the clip — dialogue only. NEGATIVES: no microphone in frame, no boom pole, no film equipment, no crew in frame, no morphing, no warping, no melting, no merging, no splitting, no duplicate people, no background bending, no texture swimming, no flickering geometry, no laughing, no extra people, no lettering or logos, no phone camera look, no smartphone processing, no HDR tone-mapping, no flat lifted shadows, no over-sharpening halos, no selfie framing, no front-camera distortion, no handheld phone jitter, no digital video look, no CGI look, no plastic skin, no beauty retouch, no diffusion filter glow on skin, no soft-focus beauty lighting, no flat frontal key, no unmotivated light, no applied vignette oval, no letterbox bars, no generated film grain, no slow motion, no speed ramp, no stock footage look, no commercial gloss, no perfect symmetrical face, no actor looking into the lens, no light direction changing within the scene, no colour changing between shots, no graded look, no wardrobe changing within the scene, no prop moving between shots unless shown moving, no character changing position between shots, no camera crossing the action line, no eyeline pointing the wrong way, no time of day changing within the scene, no different room, no extra people, no missing people, no tears, redness or sweat appearing or vanishing between shots, no hair or clothing state resetting between shots, no prop jumping to the other hand, no theatrical acting, no mugging, no soap-opera reactions, no exaggerated crying, no streaming tears, no glycerin tears, no frozen listener, no blank face while being spoken to, no reaction arriving before the line that causes it, no emotion resetting between shots, no two characters speaking at once unless the script overlaps them, no speech directed at the camera, no performing to the lens, no expression held for effect, no nodding along while speaking, no constant half-smile, no eyebrows rising on every stressed word, no hand gesture on every phrase, no head tilt on every line, no voice steadier or brighter than the face, no voice resetting between lines, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack.",
+ "ingredients": [
+  {
+   "label": "Dan (cast sheet)",
+   "role": "@image1",
+   "kind": "character",
+   "ref": "stryde-the-impression__C3-DAN"
+  },
+  {
+   "label": "Oscar (cast sheet)",
+   "role": "@image2",
+   "kind": "character",
+   "ref": "stryde-the-impression__C4-OSCAR"
+  },
+  {
+   "label": "Emma (cast sheet)",
+   "role": "@image3",
+   "kind": "character",
+   "ref": "stryde-the-impression__C2-EMMA"
+  },
+  {
+   "label": "Hazel (cast sheet)",
+   "role": "@image4",
+   "kind": "character",
+   "ref": "stryde-the-impression__N-HAZEL"
+  },
+  {
+   "label": "L-DINING",
+   "role": "@image5",
+   "kind": "location",
+   "ref": "stryde-the-impression__L-DINING"
+  },
+  {
+   "label": "Dan's voice master",
+   "role": "@audio1",
+   "kind": "voice",
+   "ref": "stryde-the-impression__VOICE-C3"
+  },
+  {
+   "label": "Oscar's voice master",
+   "role": "@audio2",
+   "kind": "voice",
+   "ref": "stryde-the-impression__VOICE-C4"
+  },
+  {
+   "label": "Emma's voice master",
+   "role": "@audio3",
+   "kind": "voice",
+   "ref": "stryde-the-impression__VOICE-C2"
+  }
+ ],
+ "act": "Hook 1",
+ "hook": 1
+}
