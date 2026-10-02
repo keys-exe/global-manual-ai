@@ -13,6 +13,7 @@ CALL.json describes one paid video call exactly as it will be sent:
                                        # take = a §24K part 5 one-take (TAKE-FILM): one continuous action, one call;
                                        # multi = a MULTI-SHOT take (MULTI-FILM) — both V7.88.0
     "take": "SC07-T1",                 # film (Modes 4–5) on Seedance: the act map's take (takes.py) — connected shots are one call
+    "rail_ok": false,                  # true only when the script line or the user puts a hand on the banister (a Before shot); otherwise RAIL fails any hand on a rail (L56)
     "legacy_build": false,             # true on a build started before V7.88.0 (set automatically for the PRE_TAKES builds,
                                        # by "build" or the call's path): its shots stay as planned, no take required
     "covers": ["SC07-SH02", "SC07-SH03"],   # take / multi: the act-map rows this call generates (≤ 4)
@@ -112,6 +113,7 @@ NOT_IN_PLACE = {"F1", "F4", "F5", "F6", "F7", "F9", "F10"}         # subject sit
 NOT_TRAVELS = {"F1", "F3", "F4", "F6", "F7", "F8", "F10"}          # subject walks: only F2, F5, F9
 MUSIC = re.compile(r"\b(?:music(?:al)?|score|soundtrack|bgm|background music|song|melody|instrumental|orchestra(?:l)?|underscore|theme tune)\b", re.I)
 NEG_CLAUSE = re.compile(r"\b(?:no|never|without)\b[^,.;:\n]*", re.I)   # negative clauses may name music ("no music, no score")
+RAIL_HOLD = re.compile(r"(?<![-\w])(?<!left )(?<!right )(?:hands?|grips?|gripping|holds?|holding|clutch(?:es|ing)?|leans? on|leaning on)\b[^.;,]{0,30}\b(?:banister|bannister|hand ?rail|stair ?rail|railing)\b", re.I)
 MUSIC_FILE = re.compile(r"(?:music|bgm|score|soundtrack|MUS-SC)", re.I)
 SEEDANCE_ONLY = {"F6", "F7", "F8", "F9", "F10"}
 STREAMERS = re.compile(r"\b(netflix|hbo|max original|prime video|amazon original|apple tv|disney\+?|hulu|paramount\+?|peacock)\b", re.I)
@@ -473,6 +475,11 @@ def run(c):
     # 1. Generation budget
     go = (c.get("user_go") or "").strip()
     check("generation ≤ 2, or the user's go", gen <= 2 or bool(go), f"generation {gen}; a third call on the same shot needs the user (§22X)")
+
+    # 1b. Stairs with no hand on the rail (L56): a hand on the banister reads as the knee failing — only a Before shot the script or the user asks for sets rail_ok
+    rail = RAIL_HOLD.findall(NEG_CLAUSE.sub(" ", p.split("NEGATIVES:")[0]))
+    if rail and not c.get("rail_ok"):
+        check("RAIL: nobody holds the banister (L56)", False, f"{rail[0]!r} — hands free on the stairs; set rail_ok: true only when the script line or the user puts the hand on it")
     if gen >= 2:
         fn = c.get("fix_note", "")
         check("gen 2 has a diagnosed fix", "→" in fn or "->" in fn, fn or "missing fix_note")

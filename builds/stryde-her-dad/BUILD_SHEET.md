@@ -252,20 +252,20 @@ Everyone with two or more beats gets a sheet. **Five:** Tony (hero, every scene)
 
 | Sheet | Job | File | Board |
 |---|---|---|---|
-| C1-TONY | `6e014a08-ef90-4fdf-ad91-6922c6faee59` | `cast/C1-TONY_v1.png` | To check |
-| C2-SUE | `eea15f20-f918-45a8-bea6-06749429e7cc` | `cast/C2-SUE_v1.png` | To check |
-| C3-GARY | `94bdab0e-7d42-4c7f-b260-99a7504d5621` | `cast/C3-GARY_v1.png` | To check |
-| C4-LAD | `80c2158b-4f43-42db-a43b-2b4cc771c5c9` | `cast/C4-LAD_v1.png` | To check |
-| C5-GP | `36504e3c-bad4-476c-934b-ed7e2939c330` | `cast/C5-GP_v1.png` | To check |
+| C1-TONY | `6e014a08-ef90-4fdf-ad91-6922c6faee59` | `cast/C1-TONY_v1.png` | **Confirmed** |
+| C2-SUE | v1 `eea15f20-f918-45a8-bea6-06749429e7cc` (Old — your Fix "change the avatar") · **v2 `1ad76bc3-bf89-4c32-9bcf-793e4d9aa140`** | `cast/C2-SUE_v2.png` | To check (v2) |
+| C3-GARY | `94bdab0e-7d42-4c7f-b260-99a7504d5621` | `cast/C3-GARY_v1.png` | **Confirmed** |
+| C4-LAD | `80c2158b-4f43-42db-a43b-2b4cc771c5c9` | `cast/C4-LAD_v1.png` | **Confirmed** |
+| C5-GP | `36504e3c-bad4-476c-934b-ed7e2939c330` | `cast/C5-GP_v1.png` | **Confirmed** |
 
-Manual run: **not checked by me** (§18B step 3) — Confirm or Fix each on the board. Prompts `cast/<ID>.prompt.txt` (9,287–10,167 chars), built from Appendix A by ID in `cast/build_sheets.py`: `CAM-FILM` (Alexa Mini LF + Signature Prime 50mm T4, tripod) → `AVATAR-SHEET` + `SHEET-GRID` → `SKIN-T` (Tony, Gary, GP) / `SKIN-A` (Sue — the script's "looks 45 to 48"; the Lad, 19) → `LOOK-HERDAD` → `CAP-FILM` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILM` (lens clause dropped — the close-up looks at the lens) + `NEG-DEFAULT-FACE`. The two men who wear the strap (Tony, Gary) wear work shorts on the sheet so the knee shows (§19, §9D). Spend: 5 Sunburst jobs, one render each — **13.75 Higgsfield credits** (5,869.65 → 5,855.90).
+Manual run: **not checked by me** (§18B step 3) — Confirm or Fix each on the board. Prompts `cast/<ID>.prompt.txt` (9,287–10,167 chars), built from Appendix A by ID in `cast/build_sheets.py`: `CAM-FILM` (Alexa Mini LF + Signature Prime 50mm T4, tripod) → `AVATAR-SHEET` + `SHEET-GRID` → `SKIN-T` (Tony, Gary, GP) / `SKIN-A` (Sue — the script's "looks 45 to 48"; the Lad, 19) → `LOOK-HERDAD` → `CAP-FILM` → `NEG-SHEET` + `NEG-GRID` + `NEG-FILM` (lens clause dropped — the close-up looks at the lens) + `NEG-DEFAULT-FACE`. The two men who wear the strap (Tony, Gary) wear work shorts on the sheet so the knee shows (§19, §9D). Spend: 5 Sunburst jobs, one render each — **13.75 Higgsfield credits** (5,869.65 → 5,855.90); Sue v2 2.75 more (→ 5,853.15).
 
 ### Identity strings — read off the renders (§7)
 
 | ID | Identity string |
 |---|---|
 | C1 | white English man, 64, broad-shouldered, solid; broad weathered square face, heavy brow, grey-blue eyes, a broad nose, thin-lipped wide mouth, grey stubble, deep forehead and eye creases; short salt-and-pepper hair, side-parted, greyer at the temples; navy crew-neck sweatshirt (sleeves down) over a grey T-shirt, faded olive cargo work shorts above the knee, grey socks, tan leather work boots |
-| C2 | white English woman, 52 reading mid-to-late 40s, slim, medium height; heart-shaped face, green-hazel eyes, straight nose, full mouth; a small dark mole on the cheek below the eye (her left — the prompt said right); chestnut-brown shoulder-length layered hair with caramel lights; **dark olive** quilted jacket (prompt: sage green) over a cream jumper, dark indigo straight jeans, white trainers |
+| C2 | **v2** white English woman, 52 reading mid-40s, tall, lean and athletic; long oval face, strong jaw, light-blue eyes, fair straight brows, freckles across the nose and cheekbones, deep smile lines; honey-blonde jaw-length straight bob with darker roots and a side-swept fringe; camel wool coat open over a charcoal roll-neck, black slim ankle trousers, tan suede ankle boots (the chin scar doesn't read at this size). (v1, chestnut layered hair and an olive quilted jacket, moved to Old)
 | C3 | white English man, 70, tall, lean, wiry; long lean face, strong nose, pale blue eyes, bushy white brows, short white beard; shaved bald head; red-and-black buffalo-check overshirt, sleeves rolled, over a charcoal T-shirt, navy cargo work shorts, grey socks, brown leather work boots (the ear notch doesn't read at this size) |
 | C4 | mixed-race British young man, 19, tall and lanky; narrow oval face, brown eyes, thick dark brows, broad nose, full lips, a light moustache; short dark tight curls, faded sides; a small dark mole on the left side of his neck; dark-green zip fleece over a bottle-green polo, black cargo work trousers, black trainers |
 | C5 | British Indian woman, 48, slim, medium height; oval face, dark brown eyes, straight brows, long straight nose; a small dark mole on the jaw below the mouth (her right — the prompt said left); black hair with grey threads in a low bun, centre parting; navy cardigan over a pale-blue collared blouse, charcoal trousers, black loafers |
@@ -274,12 +274,12 @@ Manual run: **not checked by me** (§18B step 3) — Confirm or Fix each on the 
 
 | Axis | C1 Tony | C2 Sue | C3 Gary | C4 Lad | C5 GP |
 |---|---|---|---|---|---|
-| Face | broad weathered square | heart-shaped | long lean, hooked nose | narrow oval | oval, long nose |
-| Hair | salt-and-pepper, side part | chestnut, caramel lights | shaved bald | short tight curls | black low bun |
+| Face | broad weathered square | long oval, strong jaw | long lean, hooked nose | narrow oval | oval, long nose |
+| Hair | salt-and-pepper, side part | honey-blonde jaw bob, fringe | shaved bald | short tight curls | black low bun |
 | Age | 64 | 52 (looks ~46) | 70 | 19 | 48 |
-| Build | broad, solid | slim, toned | tall, wiry | tall, lanky | slim |
-| Wardrobe key | navy / olive | olive / cream / indigo | red check / navy | bottle green / black | navy / pale blue |
-| Marker | scar through left eyebrow | mole on cheekbone | notch in right ear | mole on left neck | mole on jaw |
+| Build | broad, solid | tall, lean, athletic | tall, wiry | tall, lanky | slim |
+| Wardrobe key | navy / olive | camel / charcoal / black | red check / navy | bottle green / black | navy / pale blue |
+| Marker | scar through left eyebrow | scar on the chin | notch in right ear | mole on left neck | mole on jaw |
 | Voice | south-east English, gruff (below) | south-east English, quick | Essex, dry, amused | south London, quick, kind | Midlands, calm, measured |
 
 **Clearance:** every pair differs on ≥ 6 axes. ✓ Against the STRYDE roster (identity, 71-stairs, three-regrets, half-my-age, failed-alternatives, what-changed…): no repeat of a face architecture; the nearest is failed-alternatives' 63-year-old salt-and-pepper man (round face, pot belly, unibrow, fringe) — different face, build, hair cut and marker. The salt-and-pepper is the script's own casting (VN01).
@@ -315,7 +315,7 @@ An Englishman of sixty-four from the south-east of England, Kent, a builder all 
 | F6 | side | the script never says which knee | **right knee** throughout (`SIDE_RULE`) — the knee that gives out in SC01 and wears the strap |
 | F7 | L060 | "It goes on under your trousers and nobody knows it's there" vs FP13 (worn on screen: bare knee) | Tony and Gary are builders — work shorts on their strap days show it bare (FP13); the L060 picture is Tony in trousers, the strap hidden (nothing to show) |
 | F8 | length | 702 words at the inspo's 105 wpm + the silent action beats → **~7:00–7:30** (inspo 6:47) | film pace, no trimming (§24L) |
-| F9 | cast | read off the renders: Sue's jacket came out dark olive (prompt sage green) and her mole on the other cheek; the GP's mole on the other side; Gary's ear notch doesn't read; Tony's sleeves are down | on the board for your check — Confirm keeps them (the identity strings above follow the renders); Fix regenerates |
+| F9 | cast | **Tony, Gary, the Lad and the GP confirmed; Sue regenerated (v2) on your Fix.** Read off the renders: the GP's mole on the other side; Gary's ear notch doesn't read; Tony's sleeves are down | on the board for your check — Confirm keeps them (the identity strings above follow the renders); Fix regenerates |
 | F10 | SC05 | the mentor scene runs 21 lines (~2:20) in one place — §3B caps a scene at ~45s | staged as three beats in the yard: the slabs and "How?" → the spot (Gary sits Tony on a pallet of slabs, "Press there") → the strap named; each its own takes (§24K part 5) |
 | F11 | mechanism | the script has no picture for "seventeen times your bodyweight… a spot the size of a coin" — Gary says it | kept in the scene (Tony's two fingers on the spot); a §12A-1 anatomy insert (the tendon, the glow on the spot) can be added on request |
 | F12 | SC01, SC09 | the van and the car moving at Sue are risky for the video model (vehicles + a person pulled clear) | staged safely at step 5: the van reverses slowly and stops short, the lad's pull is one move across the frame, never contact; the car "pulls out fast" is shown by the car's nose in frame and Tony's three strides — no near miss in one shot |

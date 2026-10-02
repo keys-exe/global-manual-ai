@@ -934,3 +934,26 @@ All 61 act-map beats are confirmed (`use`). Their clips on disk match the board'
 - **Balances:** Higgsfield 5869.65 · Kling 36613 (no generation this turn).
 
 **Waiting on:** your Confirm or Fix on FINAL-HK1 on the Final board.
+
+### 2026-10-02 ~15:40–16:10 UTC — FINAL-HK1 v2 ("the p01a reverse it to look walking backwards and slow it down, fix the broll placement also use a caption fitting for a music video and not the plain one")
+
+- **Placement.** Measured on v1 against medium.en sung word times (`edit/words_medium.py`, `edit/align_words.py`: 585 of the 615 lyric words matched; the rest are placed between their matched neighbours): v1 cut on average **0.77 s before** each line, and in 54 of 60 rows the new picture came in under the end of the previous line. Cause: §3C's "the beat at or before the word", plus small-model word times. Fixed at the source, **V7.91.4 / L57**: `music.py lyric_cuts` now cuts 2 frames before the first sung word, or on a beat ≤ 0.25 s before it. It never cuts under the line before (EARLY), times words with medium.en, and searches forward so a repeated phrase finds its own line (T-04b "I always figured…" had matched T-04a's line). The re-cut sheet `edit/cuts_v2.json` PASSes; the placement table is `edit/placement_HK1.md` and `docs/placement` on the Plan and Current boards.
+- **Short rows.** P-01b (1.34 s), L-01b (1.82 s) and T-03a (1.97 s) are under 2.0 s because their sung lines are; each picture holds exactly its line. P-05a and P-05c stay short, as before (your three P-05 shots).
+- **P-01a:** played in reverse, so she comes down the stairs backwards toward the lens (the clip was rendered climbing away). It runs at 0.65x, motion-interpolated.
+- **HK-01a** is 0.6 s shorter than its now-correct 8.64 s slot, so it plays at 0.93x, interpolated, with no frozen frame. C-05a runs at 0.998x.
+- **Lyrics:** music-video captions (§3C V7.91.4). Poppins ExtraBold (OFL, `edit/fonts/`), dark outline and soft shadow, no box. Each word fills gold as it is sung (ASS `\kf` on the aligned word times), and each line pops in. The end-card offer and guarantee use the same style.
+- **On the board:** FINAL-HK1 v2 is on the Final board as To check: 128 MB in 9 parts, 3:48. v1 was copied to Old 3 (FINAL-HK1 doc there) and its parts were deleted from Final.
+
+**Waiting on:** your Confirm or Fix on FINAL-HK1 v2.
+
+### 2026-10-02 ~16:20 UTC — "Pain pills. Cortisone shots. we need brolls for these 2"
+
+Line 15 is now three pictures, one per phrase (`work/actmap.py`: the new `sub` / `t0` fields cut a row on its own first sung word; 63 rows, all 108 lines covered, `angles.py` PASS; `docs/actmap` re-synced on Plan and Current):
+- **P-04b** keeps "Physical therapy." (its card's `line` is updated; its confirmed image and clip are unchanged).
+- **P-04c — "Pain pills."** At her kitchen table (N-D1c), close at table height: her right hand tips an amber bottle and two pills fall into her open left palm, with a glass of water beside. The confirmed P-04a frame is Image 1 (her table, her hands and cardigan cuffs). Motion plan: the pills tip into her palm, one tip, about a second.
+- **P-04d — "Cortisone shots."** In the clinic (N-D1b), close from low at the side of the table: a doctor's gloved hands, one steadying her knee and one holding a syringe at the side of the knee, her hand on the paper sheet. The confirmed P-04b frame is Image 1. Motion plan: the thumb presses the plunger, one slow press. Flagged: in both renders she sits on the edge of the table rather than lying as in P-04b.
+- Both are A/B pairs on Higgsfield, nano_banana_pro requested and logged as nano_banana_2, as on every image of this build. Preflight PASS (`body9/build_split15.py`). On the Current board as To check.
+- **Timing:** sung, "Pain pills." runs 36.96–37.92 s and "Cortisone shots." runs 38.14–38.84 s. On the V7.91.4 clock, P-04b, P-04c and P-04d are each on screen about 0.8–1.2 s (under the 2.0 s floor; your call, the song sings them that fast). The finished video takes them in once their clips are confirmed.
+- Credits: Higgsfield 5699.65 → 5667.65 (32 for 4 renders, measured; written as 8 per render). Kling unchanged at 36613.
+
+**Waiting on:** Use A / Use B (or Fix) on P-04c and P-04d. Then their clips, then FINAL-HK1 v3 with the three line-15 pictures.
