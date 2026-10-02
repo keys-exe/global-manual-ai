@@ -236,9 +236,14 @@ def run_image(c):
     if anatomy:   # §12A-1 (V7.81.0): a style per anatomy beat, never the glass body by habit
         st = c.get("anat_style")
         check("anatomy style named (S1-S7, §12A-1 V7.81.0)", st in {f"S{n}" for n in range(1, 8)}, f"anat_style {st!r}")
-        if st == "S1":   # V7.86.1 (user: "this style"): S1 Ghost is made against its reference picture, never from words alone (L25)
-            check("S1 Ghost reference attached as the style (§12A-1 V7.86.1)", "style" in kinds,
-                  "attach .claude/skills/ai-prompt-engineer/references/anatomy/S1_ghost.webp as kind 'style' — 'Image n is the style — copy its look exactly'")
+        if st == "S1":   # V7.89.2 (user: "i just want the style but i dont want the image to be the reference image", L32):
+            # the house picture's look travels in words; the picture itself is never attached
+            house = [r for r in refs if re.search(r"S1_ghost", json.dumps(r), re.I)]
+            check("S1 Ghost: the house picture is never attached (§12A-1 V7.89.2)", not house,
+                  "remove references/anatomy/S1_ghost.webp from the refs — write its look in words (ANAT-BASE + ANAT-STYLE-S1)" if house else "")
+            miss = [w for w, rx in (("smoky see-through outline", r"smoky see-through outline"), ("ivory-peach bones", r"ivory-peach"),
+                                    ("navy-black field", r"navy-black")) if not re.search(rx, p, re.I)]
+            check("S1 Ghost: the look in words (ANAT-BASE + ANAT-STYLE-S1)", not miss, ", ".join(miss))
         if st and st != "S1":
             s1 = re.search(r"Premium 3D anatomical visuali[sz]ation|near-black (field|background)|navy-black (field|background)|glass-like (body|outer|shell)|smoky see-through outline", p, re.I)
             check(f"no S1 Ghost world on an {st} beat (§12A-1)", not s1, s1.group(0) if s1 else "")
@@ -282,6 +287,10 @@ def run_beat_video(c, p, check):
     check("no retired boilerplate (§35A)", not hits, "; ".join(hits))
     # L15 (2026-10-01, user: "you should never talk the lyrics/script in broll") — a B-roll is pictures under the voice; the prompt says so.
     check("nobody mouths the line (§35A rule 6, HT25)", bool(NOSPEAK.search(p)), "e.g. 'mouth closed, she never speaks or sings' or 'nobody speaks'")
+    # L30 (V7.89.1): a quoted line in a clip prompt invites a talking mouth — the line goes in without its speech marks
+    ml = re.match(r'\s*For the line "(.*?)":\s', p, re.S)
+    qm = bool(ml and re.search(r'["“”]', ml.group(1)))
+    check("no speech marks inside the clip's line (§35A rule 6, L30)", not qm, "write the line without its speech marks: For the line \"…she said, Baby, can I…?\":" if qm else "")
     rc = (c.get("risk_class") or "").lower() or None
     if rc in RISKY:
         check(f"{rc}: end frame pinned (§27G)", bool(c.get("pinned")) or bool((c.get("pin_waived") or "").strip()), "first-and-last frame, or the user's words in pin_waived")

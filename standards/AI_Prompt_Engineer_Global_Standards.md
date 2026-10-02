@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.89.0 — supersedes all prior versions.** *(the wardrobe follows the day and its events, never the act: story days come from the script's events with their source, never one per act; talking heads are locked per recording day; the wardrobe map is written in story order, one block per day with its event, source, outfits and capture events, never grouped by act; `wardrobe.py` checks it — §14A, §19, §21, §30, V7.89.0)*
+**Version 7.89.2 — supersedes all prior versions.** *(V7.89.2: S1 Ghost keeps the house picture's look but never attaches the picture — the look in words on every S1 call, the picture the bar each render is judged against; `preflight.py` refuses an S1 call that attaches it — §12A-1, LESSONS L32)*
 
 ---
 
@@ -1205,7 +1205,7 @@ Every anatomy or mechanism beat names its **style** on the act-map row (`anat.st
 
 | Style | What it looks like | Pick it for lines that… |
 |---|---|---|
-| **S1 Ghost** *(the house look, locked to its reference image — V7.86.1)* | **Copied from the reference `.claude/skills/ai-prompt-engineer/references/anatomy/S1_ghost.webp`** (user, 2026-10-02 — "this style"): a smoky see-through outline of the limb like soft mist with a pale blue-white edge, no skin or muscle inside, warm ivory-peach bones with a soft inner glow, pearly white tendons and ligaments with a fine fibrous sheen, a deep navy-black field with faint drifting particles; the sensation glowing at `[SITE]` (`ANAT-BASE` world, density B by default — muscle (`ANAT-A`) only when the line names one, still in this look; `ANAT-LIGHT`, `ANAT-FIELD`) | name a felt sensation — it throbs, burns, catches — and the relief under the product |
+| **S1 Ghost** *(the house look, written from its picture — V7.86.1; never attached, V7.89.2)* | **The look of the house picture `.claude/skills/ai-prompt-engineer/references/anatomy/S1_ghost.webp`, made from words** (user, 2026-10-02 — "this style", then "i just want the style but i dont want the image to be the reference image"): a smoky see-through outline of the limb like soft mist with a pale blue-white edge, no skin or muscle inside, warm ivory-peach bones with a soft inner glow, pearly white tendons and ligaments with a fine fibrous sheen, a deep navy-black field with faint drifting particles; the sensation glowing at `[SITE]` (`ANAT-BASE` world, density B by default — muscle (`ANAT-A`) only when the line names one, still in this look; `ANAT-LIGHT`, `ANAT-FIELD`) | name a felt sensation — it throbs, burns, catches — and the relief under the product |
 | **S2 X-ray** | A real-looking radiograph or fluoroscope frame: bone bright blue-white on black, soft tissue faint grey, the pain as a warm glow on the film, the product a crisp radiopaque outline | talk about wear, narrowing, "bone on bone", what the scan or the doctor showed |
 | **S3 Clinical studio model** | A clean photoreal 3D medical model on a pale grey seamless background, natural tissue colours, soft even studio daylight — bright, never the dark field | explain *what* a structure is and *where* it is ("the patellar tendon is the band just below…") |
 | **S4 On-body window** | The real person's leg in the build's own location, photoreal, with a soft translucent window on the skin showing the joint inside at the true spot, its edge a thin glowing line, like an augmented-reality overlay; the product on the skin | say "your knee", the viewer's own body in daily life, the product working mid-task, the after-state |
@@ -1213,7 +1213,7 @@ Every anatomy or mechanism beat names its **style** on the act-map row (`anat.st
 | **S6 Scan** | A medical-imaging slice — greyscale MRI cross-section of the region with `[TARGET]` picked out in one accent colour, or a cyan wireframe scan of the limb | carry a number, a study, a measurement ("34 percent less strain") |
 | **S7 Cross-section** | A clean 3D cross-section — the limb cut along one plane like a layered cake on a neutral field: outer contour, fat, tendon, bone in order, `[TARGET]` lit | say *deep*, *under*, *inside*, *layer*, how far down something sits |
 
-**S1 is made against its picture, never from words alone** *(V7.86.1, user 2026-10-02 — "we have the styles but you are giving me a different one on the ghost"; LESSONS L25)*. Every S1 image attaches the reference `.claude/skills/ai-prompt-engineer/references/anatomy/S1_ghost.webp` as `Image n is the style — copy its look exactly: the smoky outline, the ivory-peach bones, the white tendons, the navy field and particles; change only the angle, the region and what the line shows`, with `kind: "style"` on the call; `preflight.py` refuses an S1 call without it. Once the build has a confirmed S1 frame, that frame may be attached as well — never instead. A style that drifts from its reference is a Fix on the image, not a new look.
+**S1 is the picture's look in words; the picture is never attached** *(V7.89.2, user 2026-10-02 — "i just want the style but i dont want the image to be the reference image"; was V7.86.1 "made against its picture", LESSONS L25, L32)*. The house picture `.claude/skills/ai-prompt-engineer/references/anatomy/S1_ghost.webp` is the look the team wants. It is the target the words describe and the bar each render is judged against, **never an input to a generation**. No S1 image or clip attaches it, nor any picture copied from it, so its pose, angle and crop never come back in the renders. The look travels in the words, in full on every S1 call: `ANAT-BASE` and `ANAT-STYLE-S1` (the smoky see-through outline like soft mist with a pale blue-white edge, no skin or muscle, warm ivory-peach bones with a soft inner glow, pearly white tendons and ligaments, the deep navy-black field with faint particles). The beat's own angle (`ANAT-ANGLE-*`) and region change every time. **Before an S1 render goes up, the agent looks at it beside the house picture**: a misty outline (never a glass shell), no red muscle unless the line names one, ivory-peach bones, white tendons, the navy field. A render that misses is fixed at the words and re-rendered, never put up (L16). `preflight.py` refuses an S1 call that attaches the house picture or leaves out the look's words.
 
 **The range rules** (`angles.py` ANAT, §30I):
 1. **More than one style.** A build with 3–5 anatomy or mechanism beats uses at least two styles; with 6 or more, at least three. No style on more than half of them; never one style three times in a row.
@@ -4136,7 +4136,7 @@ Each row of the shot list names its **cut cue**: a completed line, a look (the e
 
 **Cutting a take.** The act map's rows keep their beat IDs, cut cues and lengths (part 4): the take is laid in the edit and cut at those cues, the way a film editor cuts a take. The film can still cut between shots inside a take (a reverse, a reaction), but the people and the room on both sides of the cut come from the same generation. A row shorter than the generator's minimum needs no padding; it is cut from inside its take.
 
-**On the board** a take is one card: `generations/<build-id>__<TAKE>` (e.g. `SC07-T1`), `covers: [the rows' beat IDs]`, `title` naming them, `line` the lines it carries, and its ingredients being everyone and everything in any of its rows. **A Fix regenerates the whole take** as one call; its §22X generation count is per take. Only the user's explicit ask makes one shot of a take its own call (`split: "user"`).
+**On the board** a take is one card, written as `planned` the turn its scene starts — every scene being worked shows on the board from its first card, even while its ingredients wait (LESSONS L31): `generations/<build-id>__<TAKE>` (e.g. `SC07-T1`), `covers: [the rows' beat IDs]`, `title` naming them, `line` the lines it carries, and its ingredients being everyone and everything in any of its rows. **A Fix regenerates the whole take** as one call; its §22X generation count is per take. Only the user's explicit ask makes one shot of a take its own call (`split: "user"`).
 
 **`scripts/takes.py <act_map.json>` checks it before any clip is written:** every film row has its take; no connected row starts a new take without a reason, and the reason holds (`length` only when the two takes don't fit in one); a take is consecutive, in one scene, place and story day, at most four shots and 15 s (where rows carry `duration`), with a pinned shot alone; `take_kind` is set on a take of 2+ rows, and a one-take covers at most three rows; `start_pos` and `end_pos` are written. `--suggest` proposes the takes for an act map without them, and `--md` writes the take table for the Plan board (`docs/takes`). `preflight.py` checks each call: `kind: "take"` needs `TAKE-FILM` and its two positions, a moving `multi` needs the MOVE clause, at most four shots (`covers`) and 15 s. **New builds only:** the builds that existed at V7.88.0 keep their shot-by-shot plans. `preflight.py` recognises them by the call's `build` or its path (`PRE_TAKES`) and asks them for no take, and none is re-cut into takes without its team's ask. *(On `stryde-half-my-age`'s act map, measured and not changed: 89 shots → 42 takes. Unverified: that Seedance 2.5 holds a 15-second take with a walk as steadily as one shot. Checked on the first film take, in Open Decisions.)*
 
@@ -4419,6 +4419,7 @@ Never create one generic B-roll per full script line. Break the line to the **sm
 **Phrases, never whole sentences** *(V7.84.0, user 2026-10-01 — "the B-roll picking: you have been picking long sentences instead of what we used back then")*. An act-map row is **one phrase**: about 2–3 s on screen, roughly 4–8 spoken words, cut at its shift (a comma, a new clause — "and", "but", "because", "so" — a new noun or a turn). Measured in the repo: the early builds' act maps ran a median of about 6 words a B-roll (stryde-identity, stryde-lost-moments); the later ones 8–10 (stryde-thirty-years, stryde-71-stairs-pixar-song), and stryde-cascade's phrases were widened from 7 to 9.5 words to whole sentences. **Two rules hold it, both checked by `assemble.py` on the final track before any B-roll call:**
 1. **LONG** — a B-roll on screen over **3.5 s** fails, and the report names the split at its next shift (`'A hinged brace stops your knee going sideways,' | 'and your knee was never going sideways.'`), the words it runs on over included. Exempt: a row with no shift inside it (`"whole": "<why>"`, the "no internal shift" case below), mechanism and anatomy rows (§12A — they fill their line), and `"span": "hold"`. A row that cannot be split without leaving a picture under 2.0 s passes as it is.
 2. **A phrase too short to hold a picture** (under 2.0 s, §30H rule 5 FLASH) is joined to the **neighbouring phrase** — the next phrase of the same sentence, or the previous row — never widened to the whole sentence or the next one.
+3. **One continuous action is one clip** *(V7.89.1, user 2026-10-02 — R-07c "should be part of the r07a so it should be one take only"; LESSONS L30)*: when consecutive lines continue one action in one place — a walk down the whole flight, one gesture carried over two lines — they are **one act-map row and one Kling clip** (up to 15 s; `"whole": "one continuous action"`), never split by the phrase rule into two clips that restart the move; the phrase rule splits pictures, not a movement. This is the §24K part 5 one-take, for Modes 1–3.
 
 A new B-roll beat is triggered by **any** of the following, even within the same phrase:
 
@@ -6327,7 +6328,7 @@ The log is generic — process lessons only. A product's lesson goes in its `fix
 3. **The camera in one clause:** Mode 1 `Handheld phone, a gentle breath sway, the camera stays where it is.`; a push-in only on a still subject.
 4. **Two or three facts that decide right or wrong for this shot** — from the House Taste (§34A) and the product's `fix_patterns.md` first — positive: `the same staircase, the same number of steps, every step whole`, `both hands stay clear of the banister`, `the strap stays rigid and in place just below the right kneecap` (§27G rule 6).
 5. **At most five "no …" items**, for faults this shot class keeps producing.
-6. **Nobody mouths the line** *(V7.83.3, user 2026-10-01 — "you should never talk the lyrics/script in broll")*: a B-roll is pictures under the voice — the VO or the song — so every beat video prompt states it in words (`mouth closed, she never speaks or sings` / `nobody speaks`), whether or not a face is in frame, and the model never gets the line as something to say. `preflight.py` fails a B-roll call without the clause. A talking head is the only clip that speaks (§36).
+6. **Nobody mouths the line** *(V7.83.3, user 2026-10-01 — "you should never talk the lyrics/script in broll")*: a B-roll is pictures under the voice — the VO or the song — so every beat video prompt states it in words (`mouth closed, she never speaks or sings` / `nobody speaks`), whether or not a face is in frame, and the model never gets the line as something to say. `preflight.py` fails a B-roll call without the clause. A talking head is the only clip that speaks (§36). **The line goes in without its speech marks** *(V7.89.1, LESSONS L30)*: a line that quotes speech (`she said, "Baby…"`) is written `For the line "After a minute she said, Baby, can I show you something?":` — a quote in a clip prompt invited a talking mouth on three of seven clips (stryde-71-stairs-pixar-song R-02a, R-03a, R-06a, 2026-10-02), as it printed a caption on a picture (§6A rule 5, L28); and on a face shot the clause reads `lips sealed and jaw still from the first frame to the last, the face holding the expression of the frame`. `preflight.py` fails speech marks inside the line.
 
 **Calls:** `prefer_multi_shots: false`, E6 length (3–15s), pinned shots first-and-last frame (§27G rule 10, E7). **Checks:** `preflight.py` (≤ 1,000 characters, the line and the confirmed `motion_plan` in the prompt, `motion_confirmed`, ≤ 5 negatives, none of the retired boilerplate, risky classes pinned and piloted, no fast words on stairs or travel). A video Fix (§22X) rewrites the prompt in this form — never adds a paragraph.
 
@@ -7377,7 +7378,7 @@ Virtual camera already moving fast on the first frame. Rapid push toward the tar
 
 Substitute `[REGION]`, `[STACK]`, `[BONES]`, `[TARGET]` from the Product Sheet.
 
-**`ANAT-BASE`** — prepend to every **S1 Ghost** beat, with the S1 reference image attached as the style (V7.86.1) (V7.81.0: the world of one style, no longer of every anatomy beat). **`[ANAT-ANGLE]` takes the beat's angle clause** (V7.81.0 — was fixed at the low three-quarter). **Composition is part of the spec** — centred and symmetrical reads as a textbook plate. *(561)*
+**`ANAT-BASE`** — prepend to every **S1 Ghost** beat; the house picture is never attached, the words carry its look (V7.89.2) (V7.81.0: the world of one style, no longer of every anatomy beat). **`[ANAT-ANGLE]` takes the beat's angle clause** (V7.81.0 — was fixed at the low three-quarter). **Composition is part of the spec** — centred and symmetrical reads as a textbook plate. *(561)*
 ```
 Premium 3D anatomical visualisation for medical education, broadcast-quality CGI render, cinematic and clean. Vertical composition. A stylised anatomical model of a single [REGION] viewed [ANAT-ANGLE], [TARGET JOINT] sitting slightly off-centre and dominating the frame, the limb falling away out of frame at both ends. Deep navy-black background with faint drifting particles. The outer body contour is a soft smoky see-through outline like mist, with a pale blue-white edge, so the silhouette reads clearly as human. Rich, premium, cinematic.
 ```
@@ -7426,7 +7427,7 @@ A plastic anatomical model on a worn wooden worktop in warm domestic light. Hand
 
 **`ANAT-STYLE-S1` … `ANAT-STYLE-S7`** — the style's one-line register (§12A-1 anatomy styles, V7.81.0), §6A item 5 of every anatomy beat image; the video prompt keeps it word for word.
 ```
-S1  Premium 3D anatomical visualisation, copied from the style image: a smoky see-through outline of the [REGION] like soft mist, no skin or muscle, warm ivory-peach bones with a soft inner glow, pearly white tendons and ligaments, a deep navy-black field with faint particles.
+S1  Premium 3D anatomical visualisation: a smoky see-through outline of the [REGION] like soft mist with a pale blue-white edge, no skin or muscle, warm ivory-peach bones with a soft inner glow, pearly white tendons and ligaments, a deep navy-black field with faint particles.
 S2  A real medical X-ray of the [REGION]: bone bright blue-white on black, soft tissue faint grey, clean film grain, the product's outline crisp and radiopaque.
 S3  A clean photoreal 3D medical model of the [REGION] on a pale grey seamless studio background, natural tissue colours, soft even daylight, textbook clarity.
 S4  The real person's [REGION] in the room, photoreal, with a soft translucent window on the skin showing the joint inside at the exact spot, its edge a thin glowing line.
@@ -9269,6 +9270,7 @@ Locked corrections not yet written into the document. **Empties at each version 
 
 | Date | Correction | Section affected | Status |
 |---|---|---|---|
+| 2026-10-02 | **Every scene being worked shows on the board from the start** — its take cards go on as `planned` with the scene's first cards (stryde-half-my-age: "where is the scene 6"). §24K part 5. LESSONS L31. | §24K part 5 | Applied; cut at the next version |
 | 2026-10-02 | **A short two-line exchange in one room is one continuous take** (stryde-half-my-age SC03-SH07/SH08: "MAKE IT IN ONE VIDEO SO IT IS A CONTINUES ONE" after nine SH08 renders failed to match SH07). §34A HT23. LESSONS L26. | §34A HT23 | Applied (HT23 text); generalised at V7.88.0 as §24K part 5 (one take for connected action) |
 | 2026-10-01 | **A reverse that shows the room's other side gets its own plate** (stryde-half-my-age SC03-SH08 v7: "NOT THE SAME POSITION"). §34A HT22. LESSONS L24. | §34A HT22 | Applied (HT22 text); cut at the next version |
 | 2026-10-01 | **A reverse names the wall it faces; face and eyeline agree** (stryde-half-my-age SC03-SH08 v5/v6). §34A HT22. LESSONS L22. | §34A HT22 | Applied (HT22 text); cut at the next version |
@@ -9394,6 +9396,26 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **Camera numbers and the LUT — measure on the first film build (2026-09-28).** (a) Same frame, same seed: T2.0 vs T5.6 and 35mm vs 85mm in `CAM-FILM` — does depth or perspective change, or only the scale wording? (b) The shutter wording on Seedance and Kling — any motion-blur difference? (c) `COLOUR-KEY` with and without `[KELVIN]` across a five-shot scene — `light_check.py colour` warmth spread. (d) CapCut desktop vs `lut.py apply` on the same clip with the same `LUT-[BUILD].cube` — identical within ±2 levels?
 
 ---
+
+# CHANGELOG — V7.89.1 → V7.89.2 *(patch — a mistake fixed at its source, §34B)*
+
+| § | Change |
+|---|---|
+| **12A-1** | S1 Ghost keeps the look of the house picture `references/anatomy/S1_ghost.webp`, but **the picture is never attached to a generation** (was V7.86.1: attached as `kind: "style"` on every S1 image). The look travels in `ANAT-BASE` + `ANAT-STYLE-S1` in full; the agent judges each S1 render beside the picture before it goes up |
+| **Appendix A** | `ANAT-BASE` note: no picture attached. `ANAT-STYLE-S1`: "copied from the style image" → the look in words ("with a pale blue-white edge" added) |
+| Files | `preflight.py` (S1: fails a call that attaches the house picture, or one without the look's words: smoky see-through outline, ivory-peach, navy-black), both skills, CLAUDE.md, LESSONS L32 |
+
+**Origin:** user, 2026-10-02 — "i just want the style but i dont want the image to be the reference image". Existing builds keep what they made: `stryde-71-stairs-pixar-song` M-03a and M-05b were made with the picture attached and stay as they are unless their team asks.
+
+---
+
+# CHANGELOG — V7.89.0 → V7.89.1 *(cut authorised — §34B, the user's Fix notes and the agent's own look on stryde-71-stairs-pixar-song Act 3)*
+
+| § | Change |
+|---|---|
+| **35A** rule 6 | **No speech marks in a clip prompt**: a line that quotes speech goes in without its speech marks, and a face shot's clause reads `lips sealed and jaw still… the face holding the expression of the frame` (R-02a, R-03a, R-06a clips v1 mouthed words, 2026-10-02). `preflight.py` video check |
+| **27** rule 3 *(new)* | **One continuous action is one clip**: consecutive lines that continue one action in one place are one row and one clip (≤ 15 s, `whole`), never split into two clips (R-07a + R-07c, user 2026-10-02) |
+| Files | `preflight.py` (speech marks in a clip's line — run on the three failing prompts and on the known-good Act 2 calls, L19), both skills, CLAUDE.md, `LESSONS.md` L30 |
 
 # CHANGELOG — V7.88.1 → V7.89.0 *(cut authorised)*
 

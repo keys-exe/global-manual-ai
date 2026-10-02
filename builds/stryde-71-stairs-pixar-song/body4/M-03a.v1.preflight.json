@@ -1,0 +1,47 @@
+{
+ "beat": "M-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"She said, There's one spot under the kneecap where every step lands.\": Image 1 is the style — copy its look exactly: a smoky see-through outline of the right knee like soft mist, no skin or muscle, warm ivory-peach bones with a soft inner glow, pearly white tendons and ligaments, a deep navy-black field with faint particles.\nClose-up in true side profile from a little below the joint, the leg running up the frame, sharp on the tendon under the kneecap: the kneecap, the thigh-bone end, the shin-bone top and the pearly patellar tendon between them; on that tendon, a finger's width under the kneecap, one small round red point glowing, the size of a coin, the only colour in the frame. Scale: the kneecap about a quarter of the frame wide.\nIn frame: the knee outline, the bones, the tendon, the red point; every other area plain dark.\nA final frame from a 3D animated feature film, stylized storybook render. No lettering, labels or arrows.",
+ "script_line": "She said, There's one spot under the kneecap where every step lands.",
+ "face": false,
+ "room": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "S1 Ghost reference (references/anatomy/S1_ghost.webp) — the house anatomy look",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT11",
+  "HT18",
+  "HT21",
+  "FP03",
+  "FP13"
+ ],
+ "anatomy": true,
+ "anat_style": "S1",
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "64644b4c-c8c8-47ee-bceb-d6ac81b441ab"
+ ],
+ "board_refs": [
+  {
+   "label": "S1 Ghost reference (references/anatomy/S1_ghost.webp) — the house anatomy look",
+   "kind": "style",
+   "ref": ".claude/skills/ai-prompt-engineer/references/anatomy/S1_ghost.webp",
+   "role": "Image 1"
+  }
+ ]
+}
