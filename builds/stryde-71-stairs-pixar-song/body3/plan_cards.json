@@ -1,0 +1,236 @@
+{
+ "shown": {
+  "R-01a": [
+   [
+    "A",
+    1,
+    "body3/R-01a_v1A.png",
+    "orig A"
+   ],
+   [
+    "B",
+    2,
+    "body3/R-01a_v2B.png",
+    "orig B"
+   ]
+  ],
+  "R-02a": [
+   [
+    "A",
+    1,
+    "body3/R-02a_v1A.png",
+    "orig A"
+   ],
+   [
+    "B",
+    2,
+    "body3/R-02a_v2B.png",
+    "orig B"
+   ]
+  ],
+  "R-02b": [
+   [
+    "A",
+    1,
+    "body3/R-02b_v1A.png",
+    "orig A"
+   ],
+   [
+    "B",
+    2,
+    "body3/R-02b_v2B.png",
+    "orig B"
+   ]
+  ],
+  "R-03a": [
+   [
+    "A",
+    1,
+    "body3/R-03a_v1A.fix.png",
+    "fix A"
+   ],
+   [
+    "B",
+    2,
+    "body3/R-03a_fix2B.png",
+    "fix2 B"
+   ]
+  ],
+  "R-03b": [
+   [
+    "A",
+    1,
+    "body3/R-03b_v1A.png",
+    "orig A"
+   ],
+   [
+    "B",
+    2,
+    "body3/R-03b_v2B.png",
+    "orig B"
+   ]
+  ],
+  "R-04a": [
+   [
+    "A",
+    1,
+    "body3/R-04a_v1A.fix.png",
+    "fix A"
+   ],
+   [
+    "B",
+    2,
+    "body3/R-04a_v2B.png",
+    "orig B"
+   ]
+  ],
+  "R-05a": [
+   [
+    "A",
+    1,
+    "body3/R-05a_v1A.png",
+    "orig A"
+   ],
+   [
+    "B",
+    2,
+    "body3/R-05a_v2B.png",
+    "orig B"
+   ]
+  ],
+  "R-06a": [
+   [
+    "A",
+    1,
+    "body3/R-06a_v1A.png",
+    "orig A"
+   ],
+   [
+    "B",
+    2,
+    "body3/R-06a_v2B.png",
+    "orig B"
+   ]
+  ],
+  "R-06b": [
+   [
+    "A",
+    1,
+    "body3/R-06b_v1A.fix.png",
+    "fix A"
+   ],
+   [
+    "B",
+    2,
+    "body3/R-06b_fix2B.png",
+    "fix2 B"
+   ]
+  ],
+  "R-07a": [
+   [
+    "A",
+    1,
+    "body3/R-07a_v1A.png",
+    "orig A"
+   ]
+  ],
+  "R-07c": [
+   [
+    "B",
+    1,
+    "body3/R-07c_v2B.png",
+    "orig B"
+   ]
+  ]
+ },
+ "kept": {
+  "R-03a": [
+   [
+    "A",
+    "body3/R-03a_v1A.png",
+    "orig A",
+    "the cast sheet's khaki shorts on the trouser day (wardrobe N-D3, F14)"
+   ],
+   [
+    "B",
+    "body3/R-03a_v2B.png",
+    "orig B",
+    "the cast sheet's khaki shorts on the trouser day"
+   ],
+   [
+    "B",
+    "body3/R-03a_v2B.fix.png",
+    "fix B",
+    "a light-skinned woman \u2014 wrong person"
+   ]
+  ],
+  "R-04a": [
+   [
+    "A",
+    "body3/R-04a_v1A.png",
+    "orig A",
+    "a plain rounded band, not the strap (FP01)"
+   ]
+  ],
+  "R-06b": [
+   [
+    "A",
+    "body3/R-06b_v1A.png",
+    "orig A",
+    "the lyric printed as a caption; the day-one floral dress from the style frame"
+   ],
+   [
+    "B",
+    "body3/R-06b_v2B.png",
+    "orig B",
+    "the strap drawn as a box (FP01)"
+   ],
+   [
+    "B",
+    "body3/R-06b_v2B.fix.png",
+    "fix B",
+    "a light-skinned leg \u2014 wrong person"
+   ]
+  ],
+  "R-07a": [
+   [
+    "B",
+    "body3/R-07a_v2B.png",
+    "orig B",
+    "a hinged knee brace, not the strap (FP01, FP11)"
+   ],
+   [
+    "B",
+    "body3/R-07a_v2B.fix.png",
+    "fix B",
+    "the strap fused onto an open-kneecap sleeve (FP01)"
+   ],
+   [
+    "B",
+    "body3/R-07a_fix2B.png",
+    "fix2 B",
+    "the lyric printed as a caption; the strap small"
+   ]
+  ],
+  "R-07c": [
+   [
+    "A",
+    "body3/R-07c_v1A.png",
+    "orig A",
+    "an open-kneecap sleeve brace with a label (FP01)"
+   ],
+   [
+    "A",
+    "body3/R-07c_v1A.fix.png",
+    "fix A",
+    "the strap fused onto a sleeve (FP01)"
+   ],
+   [
+    "A",
+    "body3/R-07c_fix2A.png",
+    "fix2 A",
+    "a different, light-skinned woman, and a sleeve brace"
+   ]
+  ]
+ }
+}

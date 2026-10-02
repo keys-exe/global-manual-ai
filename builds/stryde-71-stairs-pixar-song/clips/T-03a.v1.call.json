@@ -1,0 +1,55 @@
+{
+ "beat": "T-03a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Both her knees was bone on bone too.\": From this frame: the red pulses once — one pulse, about a second; camera R4 — slow single-axis push on a stabilised virtual rig. On the X-ray, the red-orange glow where bone meets bone in each knee swells brighter once and fades back, slowly; the bones stay still and rigid, the blue-white X-ray look and the dark field exactly as in the frame. Stylized 3D animation, exactly on model from the frame. The camera pushes in slowly on one straight axis, nothing more; nothing else moves; nobody speaks; no cut.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_3398f2c7-07d9-4166-bc1b-2424a8b2aad7.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Both her knees was bone on bone too.",
+ "motion_plan": "From this frame: the red pulses once — one pulse, about a second; camera R4 — slow single-axis push on a stabilised virtual rig",
+ "motion_confirmed": true,
+ "pace": "one pulse",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause first (HT25)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image T-03a@v4B, job 3398f2c7-07d9-4166-bc1b-2424a8b2aad7)"
+}

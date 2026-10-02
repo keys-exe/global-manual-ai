@@ -1,0 +1,106 @@
+{
+ "beat": "R-05a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"She handed me one. It looked ridiculous. Too small.\": At the table of Image 3, tall 9:16. Image 1 is the strap, Image 2 its back. Image 4 is the woman's face and twist-out only. Image 5 is the style.\nClose-up from high, her own view, sharp on her palm: the strap of Image 1 copied exactly, resting across the open right palm of the same woman as Image 4, front up, 12 × 5 cm, no longer than her palm, about a third of the frame wide, her thumb beside the shell, four chunky fingers and a thumb; her face soft above in a rose-pink blouse, eyebrows raised, doubtful, lips closed, eyes on the strap, facing the lens. Scale true to the set: her hand comes up to her chest.\nIn frame: her hand, the strap, her face, the lace cloth below; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. The strap alone in real materials, matte shell, chrome slides, knit band, in the same light. No lettering, logos or labels but its wordmark. Not the mustard top of Image 4.",
+ "script_line": "She handed me one. It looked ridiculous. Too small.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR sheet v2 (confirmed) — face and hair only (HT26)",
+   "kind": "character"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": true,
+ "risk_class": "hand_product",
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "72a9acfd-439d-478b-916d-b4da8b6d2836",
+  "2484470e-dbda-4935-b1f2-0897e8418066",
+  "32b8bfc2-4538-4c28-b485-3fd28fc5d489",
+  "5b40a12a-24f5-4d12-8650-016a8b0384ae"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/back.webp",
+   "role": "Image 2"
+  },
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 3"
+  },
+  {
+   "label": "N-NARR sheet v2 (confirmed) — face and hair only (HT26)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 4"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-05c",
+   "role": "Image 5"
+  }
+ ]
+}

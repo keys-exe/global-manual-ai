@@ -208,6 +208,10 @@ def run_image(c):
     if SURFACE.search(p):
         check("bare surfaces / a closed inventory (§6A rule 4)", bool(BARE.search(p)), f"'{SURFACE.search(p).group(0)}' named — say what is on it and close the list ('every other surface bare')")
     check("plain surfaces — no lettering or logos (§6A rule 5)", bool(PLAIN.search(p)), "e.g. 'clothing, packaging, walls and signs plain — no lettering, logos or labels except the product's own wordmark'")
+    # L26 (V7.87.1): speech marks inside an image prompt are printed on the frame as a caption — the line goes in without them
+    rest = re.sub(r'^\s*For the line "[^"]*":', "", p, count=1)
+    sm = re.search(r'["“”]', rest) or re.search(r'[“”]', p)
+    check("no speech marks in the picture prompt (§6A rule 5, L26)", not sm, "a quoted line or word prints as a caption — write the line without its speech marks" if sm else "")
     dev = DEVICE.search(p)
     check("no device named as an object in the picture (§6A rule 7)", not dev, dev.group(0) if dev else "")
     oof = [m for m in OUT_OF_FRAME.finditer(p) if not re.search(rf"\b{BODY_PART}\b", p[max(0, m.start() - 40):m.end()], re.I)]
