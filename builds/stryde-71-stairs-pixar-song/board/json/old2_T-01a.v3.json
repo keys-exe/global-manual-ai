@@ -1,0 +1,111 @@
+{
+ "act": "Act 2",
+ "beat": "T-01a",
+ "build": "stryde-71-stairs-pixar-song",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "imageAsset": "f91592407a1864bfcb00e6e00147f58c",
+ "imageAt": 1790890992104,
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePrompt": "For the line \"Then my grandbaby got married in June.\": Keep this photo exactly as it is — the banquet hall, the round tables and gold chairs, the string lights and chandeliers, the evening light — at a table by the dance floor, a tall 9:16 crop, and add the bride and two guests. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nMedium shot at eye level, sharp on the bride: a young Black bride in a white gown, seated at the round table in three-quarter view facing frame left toward an older guest, a wide closed-mouth smile, eyes crinkled, looking at the guest; her right hand on the guest's forearm, her left hand on the tablecloth, four chunky fingers and a thumb on each; two older guests in dark suits beside her, smiling, hands on the table. Scale true to the set: the chair back comes up to her shoulders.\nIn frame: the bride, two guests, one table with glasses and a hydrangea centrepiece, the hall of Image 1 soft beyond; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Gown and decor plain — no lettering, logos or labels.",
+ "imageStatus": "regenerate",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_e0b0ad4a-86a1-408a-8271-266ed9caf725.png",
+ "imageVersions": [
+  {
+   "asset": "4750568ea34725f5fc033eb90d2ae89a",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "ec83a101-c506-42d1-951f-9fbcc3aad14c",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: A: the bride at the table in three-quarter view, an older guest across from her · B: the bride with two older guests in suits; both closed-mouth smiles · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" (new N-D2 wardrobe, new pictures); kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214014_ec83a101-c506-42d1-951f-9fbcc3aad14c.png",
+   "v": 1
+  },
+  {
+   "asset": "f57e5c099ef302918365b9bf38ff38e3",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "26fcf4af-c31c-4e27-8105-cd590e3e9795",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: A: the bride at the table in three-quarter view, an older guest across from her · B: the bride with two older guests in suits; both closed-mouth smiles · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" (new N-D2 wardrobe, new pictures); kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_26fcf4af-c31c-4e27-8105-cd590e3e9795.png",
+   "v": 2
+  },
+  {
+   "asset": "f91592407a1864bfcb00e6e00147f58c",
+   "at": 1790891943025,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "e0b0ad4a-86a1-408a-8271-266ed9caf725",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the bride in white hugging her grandmother (silver twist-out, burgundy chiffon with flutter sleeves, gold hoops) at the edge of the dance floor, both eyes closed, lips closed — A wider with the balloon arch behind, B closer under the chandelier · not chosen (the user picked A); kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "character",
+     "label": "N-NARR sheet v2 (confirmed) — face and hair only (HT26)",
+     "ref": "stryde-71-stairs-pixar-song__N-NARR"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "res": "1536×2752",
+   "size": 7213965,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_e0b0ad4a-86a1-408a-8271-266ed9caf725.png",
+   "v": 4
+  }
+ ],
+ "key": "married",
+ "line": "Then my grandbaby got married in June.",
+ "location": "L-RECEPTION",
+ "section": "The low point and what failed — MUS-EXPOSE",
+ "stage": "broll",
+ "status": "regenerate",
+ "storyDay": "N-D2",
+ "title": "turn",
+ "updatedAt": 1790931151369
+}

@@ -1,0 +1,71 @@
+{
+ "beat": "T-02a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"and she was out on that dance floor all night.\": Keep this photo exactly as it is — the hall, the parquet dance floor, the tables, the lights — seen from a little above the floor's edge, a tall 9:16 crop, and add the dancers. Image 1 is the hall. Image 2 is Loretta — the same woman, face, silver bob, build and fuchsia satin dress as in Image 2. Image 3 is the style — the same render, materials, light and proportions.\nWide shot from high, sharp on Loretta: the same woman as Image 2, seventy-four, leads a line dance at the front of the line, nearest the lens and largest in frame, facing the lens, mid side-step to her right, a big grin with lips closed, eyes on the floor ahead; white slip-on sneakers; four guests in a row behind her step with her. Arms loose, every hand open, four chunky fingers and a thumb. Scale true to the set: she comes up to the second row of string lights.\nIn frame: Loretta, four dancers behind her, the parquet, the lights of Image 1; every other surface as in Image 1.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. No lettering, logos or labels.",
+ "script_line": "and she was out on that dance floor all night.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P3-RECEPTION plate (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "T-01b frame v3 A (confirmed) — Loretta: face, silver bob, the fuchsia dress, her build",
+   "kind": "character"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "7cdda7ff-68a8-4e54-ab1c-2d80fbe93822",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user 2026-10-02 Fix: \"this should be loreta\" → Loretta's confirmed T-01b frame as Image 2, and she leads the line at the front, nearest the lens, her face clear",
+ "product": false,
+ "medias": [
+  "7cdda7ff-68a8-4e54-ab1c-2d80fbe93822",
+  "83cdaecf-f772-4501-8f6c-1a725ed4d7b1",
+  "5b40a12a-24f5-4d12-8650-016a8b0384ae"
+ ],
+ "board_refs": [
+  {
+   "label": "P3-RECEPTION plate (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+  },
+  {
+   "label": "T-01b frame v3 A (confirmed) — Loretta: face, silver bob, the fuchsia dress, her build",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__T-01b"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-05c"
+  }
+ ]
+}

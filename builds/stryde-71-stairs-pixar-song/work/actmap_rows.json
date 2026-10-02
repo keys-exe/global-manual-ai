@@ -958,7 +958,7 @@
   "subject": "C1 + one-off guests",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "WIDE from high: the line dance seen from above the tables, Loretta in fuchsia in the middle of the line, stepping in time",
+  "framing": "WIDE from a little above: Loretta in fuchsia leads the line dance at the front, nearest the lens, her face clear, the guests stepping behind her (user Fix 2026-10-02: this should be loreta)",
   "action": "one side step with the line",
   "pace": "one step per beat, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -1525,7 +1525,7 @@
   "subject": "C1",
   "location": "L-N-KITCHEN",
   "story_day": "N-D3",
-  "framing": "MEDIUM seated across the table: Loretta pulls her right khaki pant leg up over the knee — the little black strap coming into view under her kneecap",
+  "framing": "CLOSE from low at knee height: Loretta, chair turned out from the table, rolls her right khaki pant leg up above the knee — the strap on her knee a third of the frame wide, her knowing face above (FP11: the strap big in frame)",
   "action": "one pull up past the knee",
   "pace": "one pull, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -1541,11 +1541,11 @@
   "ledger": "",
   "music": "MUS-TURN",
   "angle": {
-   "height": "eye",
-   "side": "three-quarter",
+   "height": "low",
+   "side": "front",
    "fg": "clean",
-   "scale": "MEDIUM",
-   "why": ""
+   "scale": "MCU",
+   "why": "low at the knee = the reveal is the strap, FP11"
   },
   "mirror_of": null,
   "focus": {
@@ -1556,7 +1556,7 @@
   },
   "light": {
    "source": "window over the sink, south wall",
-   "key_side": "R",
+   "key_side": "L",
    "time": "morning",
    "arc": "turn",
    "kelvin": 5600
@@ -1714,7 +1714,7 @@
   "subject": "N + C1",
   "location": "L-N-KITCHEN",
   "story_day": "N-D3",
-  "framing": "MEDIUM two-shot across the table: N holds the strap up between finger and thumb at arm's length, one eyebrow up, Loretta across from her unbothered",
+  "framing": "MEDIUM two-shot across the table: N holds the strap up on her open palm between them, its front to the lens, a quarter of the frame wide, one eyebrow up, Loretta across from her unbothered (FP06, FP11)",
   "action": "N lifts the strap and tilts her head",
   "pace": "one lift, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -1840,11 +1840,11 @@
   "subject": "N",
   "location": "L-N-STAIRS",
   "story_day": "N-D3",
-  "framing": "MEDIUM from the hall floor: N at the very top of the stairs takes the first step down facing forwards, hands at her sides, the strap on her bare right knee",
+  "framing": "MEDIUM from three steps below, looking up: N steps down from the top step facing forwards, hands at her sides, the strap on her bare right knee a quarter of the frame wide (FP11)",
   "action": "one step down, facing forwards",
   "pace": "one step, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "stairs: camera at the bottom, subject 1 step, hands free",
+  "staging": "stairs: camera on the flight below, subject 1 step, hands free",
   "pin_end": "no",
   "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
   "max": 6,
@@ -1860,7 +1860,7 @@
    "side": "front",
    "fg": "clean",
    "scale": "MEDIUM",
-   "why": "low = resolve"
+   "why": "low from below on the flight = resolve, the strap large on the near knee"
   },
   "mirror_of": "P-01a",
   "focus": {
@@ -1903,11 +1903,11 @@
   "subject": "N",
   "location": "L-N-STAIRS",
   "story_day": "N-D3",
-  "framing": "MEDIUM from the side through the balusters: N comes down the last three steps into the hall facing forwards, hands free, the strap on her bare right knee, Loretta's shoulder soft in the foreground",
+  "framing": "MEDIUM three-quarter from the hall floor: N comes down the last steps into the hall facing forwards, hands free, the strap on her bare right knee a quarter of the frame wide, Loretta's shoulder soft in the foreground (FP11; FP12: never a worn strap in profile)",
   "action": "three steps down to the hall floor, one foot per step",
   "pace": "one step per second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "stairs: side, waist-up, camera still, 3 steps",
+  "staging": "stairs: three-quarter, waist-up, camera still, 3 steps",
   "pin_end": "no",
   "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
   "max": 6,
@@ -1920,10 +1920,10 @@
   "music": "MUS-TURN",
   "angle": {
    "height": "eye",
-   "side": "profile",
+   "side": "three-quarter",
    "fg": "through",
    "scale": "MEDIUM",
-   "why": "through the balusters = Loretta's view, watching her do it"
+   "why": "past Loretta's shoulder = her view, watching her do it"
   },
   "mirror_of": null,
   "focus": {
@@ -1934,7 +1934,7 @@
   },
   "light": {
    "source": "front-door sidelights, west wall",
-   "key_side": "L",
+   "key_side": "R",
    "time": "afternoon",
    "arc": "after: sun",
    "kelvin": 5600

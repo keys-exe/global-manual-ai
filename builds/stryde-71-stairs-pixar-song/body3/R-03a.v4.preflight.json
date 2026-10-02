@@ -1,0 +1,75 @@
+{
+ "beat": "R-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"After a minute she said, Baby, can I show you something?\": Keep this photo exactly as it is — the kitchen, the round table and its lace cloth, the window light — across the table, a tall 9:16 crop, and add the visitor. Image 1 is the kitchen. Image 2 is the visitor's face and silver bob. Image 3 is the style — the same render, materials and light.\nMedium close-up from low, sharp on her face: the same Black woman as Image 2, seventy-four, deep brown skin, seated across the table in a teal three-quarter-sleeve blouse and khaki trousers to the ankle, in three-quarter view facing frame left, leaning in over the cloth with a half smile, lips closed, looking away past the lens; her right arm reaching down below the table edge toward her own knee, her left hand flat on the cloth beside a white mug, four chunky fingers and a thumb on each. Scale true to the set: the table edge comes up to her chest.\nIn frame: her from the chest up, the mug, the table edge, the kitchen of Image 1 behind; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. No lettering, logos or labels; no shorts.",
+ "script_line": "After a minute she said, Baby, can I show you something?",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "C1-LORETTA face-and-hair crop of the confirmed sheet v2 (HT26, no clothes)",
+   "kind": "character"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "2484470e-dbda-4935-b1f2-0897e8418066",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "kept off (L16): both first renders put her in the cast sheet's khaki shorts — the next beat needs the trouser leg (wardrobe map N-D3, F14) → HT26 face-and-hair crop, trousers named",
+ "product": false,
+ "risk_class": null,
+ "medias": [
+  "2484470e-dbda-4935-b1f2-0897e8418066",
+  "b686a638-9030-4e71-8602-a888c167587b",
+  "5b40a12a-24f5-4d12-8650-016a8b0384ae"
+ ],
+ "board_refs": [
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1"
+  },
+  {
+   "label": "C1-LORETTA face-and-hair crop of the confirmed sheet v2 (HT26, no clothes)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__C1-LORETTA",
+   "role": "Image 2"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-05c",
+   "role": "Image 3"
+  }
+ ]
+}

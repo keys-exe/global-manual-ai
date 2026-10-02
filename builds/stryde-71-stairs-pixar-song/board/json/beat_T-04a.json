@@ -4,7 +4,7 @@
  "bars": 1,
  "beat": "T-04a",
  "build": "stryde-71-stairs-pixar-song",
- "duration": 5,
+ "duration": 5.04,
  "eg": "",
  "flow": [
   "image",
@@ -19,10 +19,9 @@
  "imageJob": "cecea849-ec9a-4bc4-86b6-ed76c3abf53c",
  "imageMatch": "plate",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  3,
-  4
- ],
+ "imagePair": [],
+ "imageParts": [],
+ "imagePick": 3,
  "imagePrompt": "For the line \"I always figured hers wasn't as bad as mine.\": Keep this photo exactly as it is — the hall, the tables, the floor, the lights — from behind her seat, a tall 9:16 crop; add her and the dancer. Image 1 is the hall. Image 2 is the seated woman — her face and silver twist-out only. Image 3 is the style — the same render, materials, light and proportions.\nMedium shot over her right shoulder at eye level, sharp on the dancer: the same woman as Image 2, seventy-one, seated in a burgundy chiffon dress with flutter sleeves, gold hoop earrings, her back three-quarter to us, her face in lost profile facing frame right, looking at the dance floor, lips closed; her right hand on her right knee, four chunky fingers and a thumb. Beyond, in focus, an older Black woman with a silver bob in a fuchsia satin dress to the knee dancing, arms up. Scale true to the set: the table edge comes up to her waist.\nIn frame: her shoulder and hair, one table with two glasses, the dancer, the floor beyond; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render, warm evening light. No lettering, logos or labels; not the mustard top of Image 2.",
  "imageRefs": [
   {
@@ -41,8 +40,8 @@
    "ref": "stryde-71-stairs-pixar-song__P-05c"
   }
  ],
- "imageRes": "1536×2752",
- "imageStatus": "review",
+ "imageRes": 7361077,
+ "imageStatus": "confirmed",
  "imageTaste": [
   "HT03",
   "HT04",
@@ -58,9 +57,13 @@
   "HT26"
  ],
  "imageType": "image/png",
+ "imageUnused": 4,
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_cecea849-ec9a-4bc4-86b6-ed76c3abf53c.png",
  "imageVersions": [
   {
+   "archiveAsset": "0d7c1756e0c4fadf98e09b4151fb8843",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "dccebce98973f70ce57a88260a0c8530",
    "at": 1790890992104,
    "connector": "Higgsfield",
@@ -88,12 +91,12 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_6bba4932-442b-4113-9c41-e8883d553a9f.png",
-   "v": 1,
-   "archived": true,
-   "archiveAsset": "0d7c1756e0c4fadf98e09b4151fb8843",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 1
   },
   {
+   "archiveAsset": "9973081d7a1d591fdbd16b39bb3a753a",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "67fc4f87e75a8915b35acf3dd1a347e5",
    "at": 1790890992104,
    "connector": "Higgsfield",
@@ -121,24 +124,17 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_3b507b5f-6385-4616-a4e7-4bd78f67aa50.png",
-   "v": 2,
-   "archived": true,
-   "archiveAsset": "9973081d7a1d591fdbd16b39bb3a753a",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 2
   },
   {
-   "v": 3,
-   "pair": "A",
    "asset": "023b9d6be690813571d400a1936b39ff",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_cecea849-ec9a-4bc4-86b6-ed76c3abf53c.png",
+   "at": 1790891943025,
+   "connector": "Higgsfield",
+   "credits": 2.14,
    "job": "cecea849-ec9a-4bc4-86b6-ed76c3abf53c",
    "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "size": 7361077,
-   "res": "1536×2752",
-   "at": 1790891943025,
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: over her shoulder: N's silver twist-out, gold hoop and burgundy flutter sleeve in the foreground, her hand on her knee; Loretta in fuchsia dancing with her arms up beyond the table — A with N at frame left, B at frame right",
+   "pair": "A",
    "refs": [
     {
      "kind": "location",
@@ -156,21 +152,21 @@
      "ref": "stryde-71-stairs-pixar-song__P-05c"
     }
    ],
-   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: over her shoulder: N's silver twist-out, gold hoop and burgundy flutter sleeve in the foreground, her hand on her knee; Loretta in fuchsia dancing with her arms up beyond the table — A with N at frame left, B at frame right"
+   "res": "1536×2752",
+   "size": 7361077,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_cecea849-ec9a-4bc4-86b6-ed76c3abf53c.png",
+   "v": 3
   },
   {
-   "v": 4,
-   "pair": "B",
    "asset": "2dd1567ffc214e346627a681e620dc04",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_516be55c-288c-481c-a1f9-197941a003a6.png",
-   "job": "516be55c-288c-481c-a1f9-197941a003a6",
-   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "at": 1790891943025,
    "connector": "Higgsfield",
    "credits": 2.14,
-   "size": 7318268,
-   "res": "1536×2752",
-   "at": 1790891943025,
+   "job": "516be55c-288c-481c-a1f9-197941a003a6",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: over her shoulder: N's silver twist-out, gold hoop and burgundy flutter sleeve in the foreground, her hand on her knee; Loretta in fuchsia dancing with her arms up beyond the table — A with N at frame left, B at frame right · not chosen (the user picked A); kept on Old versions 2",
+   "pair": "B",
    "refs": [
     {
      "kind": "location",
@@ -188,7 +184,14 @@
      "ref": "stryde-71-stairs-pixar-song__P-05c"
     }
    ],
-   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: over her shoulder: N's silver twist-out, gold hoop and burgundy flutter sleeve in the foreground, her hand on her knee; Loretta in fuchsia dancing with her arms up beyond the table — A with N at frame left, B at frame right"
+   "res": "1536×2752",
+   "size": 7318268,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_516be55c-288c-481c-a1f9-197941a003a6.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "2a1cdf3d0d48f857db155b318c1bb6a6",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
   }
  ],
  "key": "mine",
@@ -197,7 +200,7 @@
  "light": "warm string lights and chandeliers · key R · evening · turn: warm party light · 3200K",
  "line": "I always figured hers wasn't as bad as mine.",
  "location": "L-RECEPTION",
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: she looks from the dance floor down to her knee — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
  "music": "MUS-TURN",
  "onScreen": 3.25,
@@ -208,9 +211,44 @@
  "songOut": 60.04,
  "stage": "broll",
  "staging": "none",
- "status": "ready",
+ "status": "review",
  "storyDay": "N-D2",
  "title": "turn — her doubt",
- "updatedAt": 1790891943025,
- "imageParts": []
+ "updatedAt": 1790931957895,
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "a3c5f5f732b62fab27ff3246266f7092",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/d4087315-5cf0-4160-a876-ab18bbe67f8b-oroMmiKL9j8L0pvpHShSOQ-output.mp4?x-kcdn-pid=112372",
+   "job": "Ac_g4tlzdMoqu-u84v6INQHITgt9z84k4gxLwViYBiGBgvkJFRZuKDuPrk5--O6pECGE-3rK",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "res": "1072×1928",
+   "size": 4888731,
+   "fromImage": 3,
+   "at": 1790931957895,
+   "note": "the first clip on the picked frame v3 · what I see: over her shoulder she watches Loretta dance, then lowers her eyes and head to her knee, lips closed; Loretta keeps dancing beyond"
+  }
+ ],
+ "videoAsset": "a3c5f5f732b62fab27ff3246266f7092",
+ "videoParts": [],
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/d4087315-5cf0-4160-a876-ab18bbe67f8b-oroMmiKL9j8L0pvpHShSOQ-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "Ac_g4tlzdMoqu-u84v6INQHITgt9z84k4gxLwViYBiGBgvkJFRZuKDuPrk5--O6pECGE-3rK",
+ "videoConnector": "Kling",
+ "videoAt": 1790931957895,
+ "videoRes": "1072×1928",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25"
+ ],
+ "prompt": "For the line \"I always figured hers wasn't as bad as mine.\": From this frame: she looks from the dance floor down to her knee — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay closed and still from the first frame to the last — a silent clip, nobody speaks or sings. She watches Loretta dancing beyond, then lowers her eyes and her head a little toward her own right knee, her hand resting on it; beyond the table, Loretta keeps dancing in place, arms up; the table, the glasses and the hall stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut; she never turns to the lens.",
+ "credits": 40
 }
