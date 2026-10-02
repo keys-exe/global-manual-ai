@@ -901,3 +901,4 @@ Clips were owed on the confirmed picks C-06a (v1), C-08b (v2), C-09a (v1) and C-
   Same Pixar ladder and jogger style frame. Cause: one shared description for the group. Fixed in V7.91.3 (§24O rule 10, L55, `preflight.py`).
 - **C-02b** image Fix "use the c02a as rerefence for all of them" → v5/v6. The new C-02a A frame is attached as the ladies to copy; her face crop is kept and there are no captions. Flagged: in B the lady in cream is cut at the right edge. If you pick C-02a B instead of A, the ladies match anyway (A and B carry the same three women).
 - **C-04a** clip Fix "she should not stretch it" → clip v2, the second generation. Diagnosis: v1 had her pulling the band. Now it's a thumb press on the shell only, the band never pulled, and the strap keeps its length. v1 is on Old 3.
+- Balances after: Higgsfield 5869.65 · Kling 36805. Waiting on: picks on C-02a, C-02b, C-07a, C-08a, PR-06a; Confirm/Fix on C-04a clip v2 and the other open clips.
