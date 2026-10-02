@@ -338,17 +338,17 @@ The script's dialogue section has three parentheticals (VN01–VN03). Its STORY 
 
 | Line | Claim | Register | Status |
 |---|---|---|---|
-| L058, L114 | "seventeen times what you weigh goes through it" (every step down) | 17× bodyweight every step, user-confirmed V7.49.29 | ✓ held. The number is never generated on screen (§17) |
+| L056, L113 | "seventeen times what you weigh goes through it" (every step down) | 17× bodyweight every step, user-confirmed V7.49.29 | ✓ held. The number is never generated on screen (§17) |
 | L062 | "Three years with orthopaedic surgeons" | user-confirmed V7.49.29 | ✓ held |
-| L053 | "Mine were bone on bone. Both." | built for bone on bone, user-confirmed | ✓ held. Wendy's "They wanted to replace them at seventy-one" implies surgery was avoided — **F3** |
+| L054 | "Mine were bone on bone. Both." | built for bone on bone, user-confirmed | ✓ held. Wendy's "They wanted to replace them at seventy-one" implies surgery was avoided — **F3** |
 | L064 | "This has a pad. It stays on the spot." | the pad, user-confirmed (prompts say "the pad", never "silicone") | ✓ held |
-| L072, L115 | "Sixty days. They take it back." / "Sixty days to send them back. No awkward questions." | 60-day guarantee, user-confirmed | ✓ held; "no awkward questions" is new wording — **F4** |
+| L074, L115 | "Sixty days. They take it back." / "Sixty days to send them back. No awkward questions." | 60-day guarantee, user-confirmed | ✓ held; "no awkward questions" is new wording — **F4** |
 | L068, L115 | "Thirty pounds. For two." / "Two straps, under thirty pounds" | **no price in the register**; two straps = the B1G1 offer ✓ | **F1** |
-| L057 | "One spot. Two centimetres under the kneecap." | site: the patellar tendon immediately below the kneecap; **2 cm is not advertiser-held** | **F2** |
-| L060, L114 | "This takes the weight before it gets there" / "before it lands" | load-path wording; **the locked mechanism claim is protection** (load-path retired for this product) | voiced as written; pictured as protection — **F5** |
+| L056 | "One spot. Two centimetres under the kneecap." | site: the patellar tendon immediately below the kneecap; **2 cm is not advertiser-held** | **F2** |
+| L060, L113 | "This takes the weight before it gets there" / "before it lands" | load-path wording; **the locked mechanism claim is protection** (load-path retired for this product) | voiced as written; pictured as protection — **F5** |
 | L064 | "The Facebook copies slide." | names a platform (§10A) + a comparative knock-off claim | voiced verbatim, never pictured — **F6** |
 | L115 | "today at getstryde.co" | URL not in the sheet | **F7** |
-| L087, L110 | "Five weeks ago" / "That's just walking" | story outcomes, a character's own experience | voiced as written |
+| L085, L112 | "Five weeks ago" / "That's just walking" | story outcomes, a character's own experience | voiced as written |
 
 ### Mode & Model Lock (§18A)
 
@@ -461,13 +461,13 @@ An English woman of sixty-seven from West Yorkshire, Halifax: a warm, plain, mid
 | # | Where | Finding | Recommendation |
 |---|---|---|---|
 | **F1** | L068, L115 | "Thirty pounds. For two." / "Two straps, under thirty pounds": **the price is not in the claim register** | voiced as written; **please confirm the price** |
-| **F2** | L057 | "Two centimetres under the kneecap": the register says "immediately below the kneecap", and 2 cm is not advertiser-held | voiced as written; please confirm |
-| **F3** | L053 | "They wanted to replace them at seventy-one": implies the strap avoided surgery | voiced as written; please confirm the advertiser is happy with it |
+| **F2** | L056 | "Two centimetres under the kneecap": the register says "immediately below the kneecap", and 2 cm is not advertiser-held | voiced as written; please confirm |
+| **F3** | L054 | "They wanted to replace them at seventy-one": implies the strap avoided surgery | voiced as written; please confirm the advertiser is happy with it |
 | F4 | L115 | "No awkward questions": guarantee wording beyond "sixty-day money-back" | voiced; confirm it matches the terms |
-| F5 | L060, L114 | "takes the weight before it gets there / lands": load-path wording, while the locked claim is **protection** | voiced as written; pictured as protection |
+| F5 | L060, L113 | "takes the weight before it gets there / lands": load-path wording, while the locked claim is **protection** | voiced as written; pictured as protection |
 | **F6** | L064 | "The Facebook copies slide": names a platform (§10A) and makes a comparative knock-off claim | voiced verbatim, never pictured; confirm |
 | **F7** | L115 | "getstryde.co": not in the product sheet | voiced; **confirm the domain** (and whether it is shown as an end card in the edit) |
-| F8 | L082–L083, L087 | "Five weeks of mornings" (the August hill) and "Five weeks ago" (end of August): the same count on two dates | voiced as written; the hill scene sits late in August, just before the hall scene |
+| F8 | L083, L085 | "Five weeks of mornings" (the August hill) and "Five weeks ago" (end of August): the same count on two dates | voiced as written; the hill scene sits late in August, just before the hall scene |
 | F9 | Roy's day | "The March your knee went… three years": a flashback is possible but not in the script | dialogue only (no flashback) unless you want one |
 | **F10** | B08 vs FP23 | the script puts her hand on the rail for steps 1–2 (VN27), and FP23 says nobody holds the banister | kept: the script's own action. `rail_ok` on those two steps only; the hand comes off on the third; every other stairs shot is hands free |
 | **F11** | B08 vs FP13 | "The strap goes on bare skin, just under the kneecap, trousers over it". FP13: worn on screen the knee is bare, never trousers over or pushed up round the strap | **my read:** she sits on the edge of the bed in her nightdress (bare knee) and slides it up to the tendon (FP10), then pulls her trousers on over it with the strap no longer in shot. The insert shows the bare knee only. Confirm |
