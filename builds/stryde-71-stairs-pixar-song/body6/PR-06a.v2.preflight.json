@@ -1,0 +1,76 @@
+{
+ "beat": "PR-06a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"No pills. No gel. No brace around my ankle by lunchtime.\": Keep this photo exactly as it is — the round wooden kitchen table, the chairs, the floor, the morning light, the view from above — and change only what is on the table: clear it. Image 1 is the photo. Image 2 is the strap.\nOn the bare table, seen from directly above: one white coffee mug with a thin curl of steam, and beside it the strap of Image 2 copied exactly — a black shell with two matching pointed peaks close together at the middle of its top edge, a notch between them, sloping down to a chrome slide at each end — with its wordmark, the black band laid out straight to each side exactly as Image 2 shows it, never coiled or looped — 12 × 5 cm, lying flat front up, a quarter of the frame wide.\nIn frame: the table, one mug, exactly one strap; the rest as Image 1.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "No pills. No gel. No brace around my ankle by lunchtime.",
+ "face": false,
+ "room": true,
+ "body": false,
+ "refs": [
+  {
+   "label": "P-04a frame v3 (confirmed) — the routine laid out on her kitchen table, from above",
+   "kind": "frame"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "e05783fd-e5e1-4e31-b247-3a8c950954b6",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user Fix \"wrong product\" → the band was drawn coiled and the peaks at the ends; now the strap lies flat as front.webp shows it, the band straight out to each side, the peaks together at the middle",
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6",
+  "7dcc7c34-651e-45ae-87af-ea18884ec474"
+ ],
+ "board_refs": [
+  {
+   "label": "P-04a frame v3 (confirmed) — the routine laid out on her kitchen table, from above",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 1"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 2"
+  }
+ ],
+ "sent_note": "sent 12:26 UTC with the V7.90.4 opener For the line \"…\":"
+}

@@ -1,0 +1,78 @@
+{
+ "beat": "L-01a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Yesterday I walked to the store. Two miles there. Two miles back.\": Keep this photo exactly as it is — the tree-lined street, the sidewalk, the mailboxes, the red-brick house, the afternoon sun — a tall 9:16 crop looking down the sidewalk, and add her walking away. Image 1 is the street. Image 2 is the woman — her silver twist-out only. Image 3 is the style.\nMedium shot from behind at eye level, sharp on her: her back to the lens, facing down the sidewalk, she walks away down its middle, mid-stride, her left foot forward, in a coral windbreaker over a white T-shirt, light-blue straight jeans, white walking sneakers, a canvas tote on her right shoulder, her right hand on its strap, her left arm swinging, four chunky fingers and a thumb on each hand. Scale true to the set: her head level with the top of the mailbox post's box.\nIn frame: her, the sidewalk, two trees, the street; nobody else; every other surface as in Image 1.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun. No lettering, logos or labels but its wordmark.",
+ "script_line": "Yesterday I walked to the store. Two miles there. Two miles back.",
+ "face": false,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P6-STREET plate (confirmed) — her tree-lined street",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR face-and-hair crop of the confirmed sheet v2 — her hair from behind (HT26, HT27)",
+   "kind": "frame"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "0de1960b-34b2-44bd-b2f5-cc6e1f98cd60",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "0de1960b-34b2-44bd-b2f5-cc6e1f98cd60",
+  "d95762a8-ca34-4115-96ef-72a0279b4cd1",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "P6-STREET plate (confirmed) — her tree-lined street",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P6-STREET",
+   "role": "Image 1"
+  },
+  {
+   "label": "N-NARR face-and-hair crop of the confirmed sheet v2 — her hair from behind (HT26, HT27)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 3"
+  }
+ ],
+ "sent_note": "sent 12:26 UTC with the V7.90.4 opener For the line \"…\":"
+}
