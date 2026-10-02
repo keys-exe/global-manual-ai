@@ -38,5 +38,17 @@
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_170214_e2a89b64-e09b-4687-9303-5032bdcd24bd.png",
   "job": "e2a89b64-e09b-4687-9303-5032bdcd24bd",
   "file": "T-04a_v4B.png"
+ },
+ "M-06a@v7A": {
+  "url": "https://tempfile.aiquickdraw.com/workers/images/image_c40a4a3e59e596552d13cd347e7108e9.png",
+  "task": "9e5a4efac300fedd3b3a4fce51343f4b",
+  "connector": "Kie AI",
+  "credits": 18.0
+ },
+ "M-06a@v7B": {
+  "url": "https://tempfile.aiquickdraw.com/workers/images/image_0938340e2b69af57b7b77d9eef174e26.png",
+  "task": "b4292adc773ef9aa4b8a2446e7bba902",
+  "connector": "Kie AI",
+  "credits": 18.0
  }
 }
