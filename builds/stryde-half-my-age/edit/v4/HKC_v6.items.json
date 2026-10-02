@@ -1,0 +1,32 @@
+[
+ {
+  "line": "L004_v2",
+  "at": 20.627,
+  "dur": 6.24,
+  "take": "HKC-SH05",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/edit/vo/L004_v2.m4a",
+  "a": 0.0,
+  "b": 6.24,
+  "flt": null
+ },
+ {
+  "line": "L009#1",
+  "at": 0.05,
+  "dur": 3.8,
+  "take": "HKC-SH01",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/voice/X1_voice_master_raw.mp4",
+  "a": 0.5,
+  "b": 4.3,
+  "flt": "pa"
+ },
+ {
+  "line": "L009#2",
+  "at": 4.15,
+  "dur": 2.45,
+  "take": "HKC-SH01",
+  "file": "/home/user/global-manual-ai/builds/stryde-half-my-age/voice/X1_voice_master_raw.mp4",
+  "a": 4.4,
+  "b": 6.85,
+  "flt": "pa"
+ }
+]
