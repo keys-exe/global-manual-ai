@@ -101,3 +101,17 @@ EDIT_DARK_CIRCLES = (
  "No other change anywhere: no younger face, no smoothing, no new lines removed, no change of expression, no change of colour elsewhere.")
 if __name__ == "__main__" and "--edit-v3" in __import__("sys").argv:
     (pathlib.Path(__file__).parent / "N-BEFORE.v3.edit.prompt.txt").write_text(EDIT_DARK_CIRCLES); print(len(EDIT_DARK_CIRCLES))
+
+# Fix round 3 (user's board Fix on N-BEFORE v3, 2026-10-02, owner-marked: "PUT WRINGKLES"). v3's dark circles read; its lines were still
+# fine and shallow (they were described, never made deep enough to carry a shadow). v4 is an image edit of v3 changing only the creases.
+EDIT_WRINKLES = (
+ "Image 1 is a character sheet of one woman. Keep this picture exactly as it is — the same five panels, the same face, the same dark circles under her eyes, "
+ "hair, clothes, pose, light, wall and floor, nothing moved, nothing redrawn — and change only the lines in her skin, in every panel where her face or neck shows. "
+ "Make her wrinkles deep and plainly visible, each one a real crease with a dark shadow inside it: four deep furrows across the forehead, "
+ "two deep vertical frown lines between the brows, crow's feet cut in four or five deep creases from each outer eye even with her face at rest, "
+ "creased crepey skin under the eyes below the dark circles, deep folds from the nose to the mouth corners, deep marionette lines from the mouth corners to the chin, "
+ "fine vertical lines all along the upper lip, a crease across the chin, and three deep rings around the neck. "
+ "They read as a tired fifty-seven-year-old face in the face close-up and can be seen in the front view. Bare skin, no makeup. "
+ "No other change anywhere: the dark circles stay as they are, no younger face, no smoothing, no change of expression, no change of colour elsewhere.")
+if __name__ == "__main__" and "--edit-v4" in __import__("sys").argv:
+    (pathlib.Path(__file__).parent / "N-BEFORE.v4.edit.prompt.txt").write_text(EDIT_WRINKLES); print(len(EDIT_WRINKLES))
