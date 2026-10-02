@@ -22,6 +22,7 @@ VERSION = 3
 HOOK_LINES = {"HKA": ["L001", "L002", "L003", "L004"], "HKB": ["L005", "L006", "L007", "L008"],
               "HKC": ["L009", "L010", "L011", "L012", "L013"], "HKE": ["L014", "L015", "L016"]}
 BODY_LINES = [f"L{n:03d}" for n in range(17, 75)]
+BODY_LINES[BODY_LINES.index("L038")], BODY_LINES[BODY_LINES.index("L039")] = "L039", "L038"  # the cut's one swap (FOLLOW_ON)
 
 
 def inventory():
