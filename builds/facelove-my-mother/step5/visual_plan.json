@@ -1,0 +1,2264 @@
+{
+ "build": "facelove-my-mother",
+ "hooks": [
+  {
+   "hook": 1,
+   "line": "Thirty years. Thirty. Somebody get this woman a medal for putting up with me, right?",
+   "concepts": [
+    {
+     "id": "A",
+     "frame1": "the long table under the bulbs, thirty friends mid-laugh, Greg pushing up from his chair tapping his glass",
+     "stakes": "a toast in front of everyone she knows — it's about to turn",
+     "where": "the hosts' back yard at golden hour",
+     "turn": "his face changes; we stay on hers",
+     "score": {
+      "stop": 2,
+      "line": 2,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 2,
+      "makeable": 2
+     }
+    },
+    {
+     "id": "B",
+     "frame1": "close on Susan's face, the soft white cake between her and the lens, his voice off: 'You look like my mother'",
+     "stakes": "the insult lands before we know who she is",
+     "where": "the same table, tight",
+     "turn": "pull back to reveal thirty silent friends",
+     "score": {
+      "stop": 2,
+      "line": 2,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 1,
+      "makeable": 2
+     }
+    },
+    {
+     "id": "C",
+     "frame1": "two friends at the drinks table whispering 'She did kind of stop trying' as Susan walks past",
+     "stakes": "her friends have written her off",
+     "where": "the drinks table by the deck",
+     "turn": "cut back to the toast that caused it",
+     "score": {
+      "stop": 2,
+      "line": 2,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 2,
+      "makeable": 1
+     }
+    },
+    {
+     "id": "D",
+     "frame1": "Susan at the mirror, the old foundation cracking grey in her smile line, the sponge stopping",
+     "stakes": "the face he named, every morning",
+     "where": "her bedroom dressing table",
+     "turn": "VO: 'until I looked exactly like the word he used'",
+     "score": {
+      "stop": 2,
+      "line": 1,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 1,
+      "makeable": 2
+     }
+    },
+    {
+     "id": "E",
+     "frame1": "Paula crossing a lawn with both hands out: 'You look incredible, what are you doing?'",
+     "stakes": "the woman she was compared to asking her",
+     "where": "the same yard, months later",
+     "turn": "'Funny. Greg told me to come ask you.' — then flash back",
+     "score": {
+      "stop": 2,
+      "line": 1,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 2,
+      "makeable": 1
+     }
+    }
+   ],
+   "pick": "A"
+  }
+ ],
+ "groups": [
+  {
+   "group": "SC01",
+   "role": "problem",
+   "idea": "the toast turns: warm and loud, then a quiet verdict landing on her still face in front of thirty friends",
+   "rows": [
+    {
+     "beat": "SC01-SH01",
+     "line": "Thirty years. Thirty. Somebody get this woman a medal for putting up w",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "the whole long table under the bulbs, thirty friends mid-laugh, Greg pushing up from his chair tapping his glass",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a fork tapping a wine glass, close",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "the uncut white anniversary cake among the candles",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH02",
+     "line": "Thirty years. Thirty. Somebody get this woman a medal for putting up w",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Greg standing low over the table, glass up, grin wide, the room laughing back at him",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Greg raising his glass",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the guests' raised glasses filling the frame",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH03",
+     "line": "Thirty years. Thirty. Somebody get this woman a medal for putting up w",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Susan seated beside him, almost letting herself enjoy it, her glass lifting an inch",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "her hand round the stem of her glass",
+       "score": {
+        "stop": 1,
+        "line": 0,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "a wide of glasses going up all down the table",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH04",
+     "line": "…thirty years. And I look at you lately and I just, I don't know. / You look like my mother, Susan. When did that happen?",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "close on Susan through the soft white cake, pushing in as his words land — her face the only thing that moves, and it doesn't",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Greg's face as he says it",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the table hearing it, forks stopping",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC01-SH05",
+     "line": "Greg. Sit down.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "her profile, turned up to him, two words low: 'Greg. Sit down.'",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "her hand on his sleeve",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "her jaw tightening, extreme close",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH06",
+     "line": "Paula's the same age as you. Exact same. Look at her, then look at you",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "Paula from above, staring at her plate as his hand points across at her — named in front of everyone",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "the guests turning to look at Paula",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Greg pointing at Paula",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH07",
+     "line": "Paula's the same age as you. Exact same. Look at her, then look at you",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "back on Susan, held too long, one breath, eyes level",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "her napkin crumpling in her lap",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the table frozen around her",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH08",
+     "line": "(no line — Greg drops back into his chair and reaches past the cake for)",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "high behind her: Greg drops into his chair, reaches past the cake for his drink, thirty people not moving",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Greg sitting down",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "his hand around the drink",
+       "score": {
+        "stop": 1,
+        "line": 0,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH09",
+     "line": "(no line — nothing moves; the bulb light flickers faintly on the white )",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "the untouched anniversary cake, a fork resting beside it, the title landing",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the whole silent table",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "a candle guttering",
+       "score": {
+        "stop": 1,
+        "line": 0,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC02",
+   "role": "agitate",
+   "idea": "the deeper cut: her friends' quiet verdict, said behind her back as she keeps walking",
+   "rows": [
+    {
+     "beat": "SC02-SH01",
+     "line": "(no line — Susan stands, folds her napkin once and sets it beside the c)",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "her hands folding the napkin once and laying it beside the cake",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Susan standing up",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the table watching her stand",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC02-SH02",
+     "line": "…that was awful of him.",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "two friends in profile at the drinks table, heads together, Susan passing soft behind them mid-step",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "two women whispering",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Susan's ear catching it",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC02-SH03",
+     "line": "…I mean, though. She did kind of stop trying. It's just sad to watch.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "her face walking toward us, eyes flicking once, never breaking stride",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "her feet not slowing on the grass",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the party going on behind her",
+       "score": {
+        "stop": 1,
+        "line": 0,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC02-SH04",
+     "line": "(no line — Susan climbs the three deck steps, opens the glass-paned bac)",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "low from the lawn: she climbs the three deck steps and the door clicks shut on the party",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the door closing, the glass showing the lights",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Susan walking inside",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC03",
+   "role": "scene",
+   "idea": "alone against the shut door, the party glowing behind the glass",
+   "rows": [
+    {
+     "beat": "SC03-SH01",
+     "line": "He humiliated me in front of everyone we know. But that wasn't the par",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "her back to the lit glass, the party glowing behind her head, her in the dark hall",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Susan alone in a hallway",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the party through the window",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC03-SH02",
+     "line": "He humiliated me in front of everyone we know. But that wasn't the par",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "half her face in shadow, eyes opening on nothing — they'd already decided",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "her fingers pressed flat against the door",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "the party laughter faintly through the glass",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC04",
+   "role": "problem",
+   "idea": "the disappearing: she makes it true — the invite down, the photo she's not in, the mirror that agrees",
+   "rows": [
+    {
+     "beat": "SC04-SH01",
+     "line": "So I made it true. I stopped going. Muted the group chat. Skipped the ",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "her hand turning the party invite face-down on the granite and laying her phone on top",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a phone muting a chat",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "an invite in a bin",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC04-SH02",
+     "line": "So I made it true. I stopped going. Muted the group chat. Skipped the ",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "behind her: the family on the sofa round the cake in her phone screen, and her one step outside the picture",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "an empty chair at a party",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "a birthday going on without her",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC04-SH03",
+     "line": "So I made it true. I stopped going. Muted the group chat. Skipped the ",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "in the mirror: the morning ritual, foundation dabbed on, eyes flat",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a foundation bottle",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "her bathroom",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC04-SH04",
+     "line": "So I made it true. I stopped going. Muted the group chat. Skipped the ",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "macro: the old foundation sitting grey and dry in the line beside her mouth, flaking",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "MECHANISM",
+       "picture": "a cutaway of skin with product in the crease",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "her face in the mirror",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC04-SH05",
+     "line": "So I made it true. I stopped going. Muted the group chat. Skipped the ",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "the sponge stopping halfway; she lowers it and just looks",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the sponge dropped on the dressing table",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a woman sad at a mirror",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 0,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC05",
+   "role": "solution",
+   "idea": "a friend concedes the truth, then does her face with her own hands — white, then her own skin",
+   "rows": [
+    {
+     "beat": "SC05-SH01",
+     "line": "There's a thing Saturday. Whole group. You're coming.",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Beth walking straight in without knocking, garment bag on her shoulder, Susan on the end of the bed",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a door opening",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Susan looking up",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH02",
+     "line": "So everyone can compare me to Paula again? She looks ten years younger",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Susan small on the end of the bed, saying it to her hands",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "a photo of Paula on her phone",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Susan sitting",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH03",
+     "line": "Paula had Botox last month. Of course she looks like that. That's need",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Beth laying the garment bag down while she says it plainly — the honest friend, not a salesperson",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a syringe",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "a clinic receipt",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH04",
+     "line": "I'm not saying you go do that. You don't need to. Come sit. Watch this",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Beth pulling the stool out with one hand and nodding her to it",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a stool",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the bedroom",
+       "score": {
+        "stop": 1,
+        "line": 0,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH05",
+     "line": "Everything you've been wearing was built for a thirty year old, so it ",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "Beth tilting her chin to the window, the violet stick coming out under her palm like a secret, cap off",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the stick on the table",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "the cap coming off",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH06",
+     "line": "Everything you've been wearing was built for a thirty year old, so it ",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "macro in profile: the balm draws one white stripe up her cheekbone",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a white swatch on skin",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Susan flinching at the white",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH07",
+     "line": "It reads your skin and becomes your exact shade. The niacinamide takes",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "one continuous take: the brush circles and behind it the white turns to her own skin, every line still there",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "MECHANISM",
+       "picture": "pigment diagram",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "split screen before/after",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC05-SH08",
+     "line": "It won't erase a wrinkle, no. Nothing does, not even what Paula paid f",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Beth stepping back behind her, the mirror showing the evened cheek next to the other",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Beth talking",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PROOF",
+       "picture": "a magnified wrinkle unchanged",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH09",
+     "line": "It won't erase a wrinkle, no. Nothing does, not even what Paula paid f",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "in the mirror, Susan leaning an inch in, looking at her cheek — evened, real, lines still there",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "her hand touching her cheek",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a mirror",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH10",
+     "line": "…and this is all you did?",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "low and close: quiet disbelief turning to Beth",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "her eyes in the mirror",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Susan asking",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH11",
+     "line": "This is all I did.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Beth's one nod, plain",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PRODUCT",
+       "picture": "the stick in Beth's hand",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Beth answering",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC06",
+   "role": "scene",
+   "idea": "the mirror, her enemy all film, gives her back",
+   "rows": [
+    {
+     "beat": "SC06-SH01",
+     "line": "…there she is.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "her eyes holding her own in the mirror, not flinching for the first time",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the mirror light",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Susan at the mirror",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC06-SH02",
+     "line": "She never left. You just needed one person who didn't believe them.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "over her shoulder: Beth's hand on her shoulder in the reflection, the two of them in the glass",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Beth's face",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "two women in a bedroom",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC07",
+   "role": "after",
+   "idea": "the same yard: the group that saw her fall sees her come back, and Paula asks her",
+   "rows": [
+    {
+     "beat": "SC07-SH01",
+     "line": "Saturday. The same yard I'd been hiding from for months. I almost turn",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "across the street: her car at the curb, engine off, white balloons on the mailbox, nobody getting out",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a car parking",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the balloons",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC07-SH02",
+     "line": "Saturday. The same yard I'd been hiding from for months. I almost turn",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "through the driver's window: her hands tight on the wheel, Beth's hand on her arm, one breath out",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "keys in the ignition",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "the party seen through the windshield",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC07-SH03",
+     "line": "(no line — Susan and Beth walk in from the side of the house onto the l)",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "the same table, the same lights: heads turning, the talk stopping, then Friend A lighting up",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the party in full swing",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Susan arriving",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC07-SH04",
+     "line": "Susan. Look at you. You look incredible, what are you doing?",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "Paula crossing the lawn to her first, both hands out",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Paula's surprised face",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "two women hugging",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 0,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC07-SH05",
+     "line": "Funny. Greg told me to come ask you.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Susan, easy, the corner of her mouth lifting as she says it",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "Greg in the background",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Susan talking",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC07-SH06",
+     "line": "(no line — Paula catches it, a surprised breath, then a real laugh, the)",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "the two women laughing in profile; far behind, Greg small and going still",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Greg's face alone",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the party laughing",
+       "score": {
+        "stop": 1,
+        "line": 0,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC07-SH07",
+     "line": "(no line — a knife cuts a slice from the white sheet cake and a hand pa)",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "the same cake shot: now a knife cuts a slice and a hand passes the plate along",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "people eating cake",
+       "score": {
+        "stop": 1,
+        "line": 0,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a slice of cake",
+       "score": {
+        "stop": 1,
+        "line": 0,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC08",
+   "role": "after",
+   "idea": "the redirect: he's sorry, she's kind and done, and the group closes around her",
+   "rows": [
+    {
+     "beat": "SC08-SH01",
+     "line": "Susan. You look… I was wrong. You never gave up. Maybe we could talk—",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "over her shoulder: Greg at her shoulder, quiet, his hand half lifting and dropping",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Greg talking",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "his wedding ring",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC08-SH02",
+     "line": "Go enjoy the party, Greg.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "her face, kind and done: 'Go enjoy the party, Greg.'",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "her turning away",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Susan answering",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC08-SH03",
+     "line": "I didn't get younger. I didn't take him back. I never gave up. I just ",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "she turns back to Beth and Paula, laughing before he's finished; Greg left standing",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Greg alone",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "women laughing",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 0,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC08-SH04",
+     "line": "I didn't get younger. I didn't take him back. I never gave up. I just ",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "high wide, the rhyme of the frozen table: Susan in the middle of her friends under the bulbs, Greg alone at the edge",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the party at dusk",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Greg standing",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC09",
+   "role": "offer",
+   "idea": "the life she walked back into, then the stick and the primer",
+   "rows": [
+    {
+     "beat": "SC09-SH01",
+     "line": "It's the Facelove Changing Foundation Stick, made for the skin we have",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "a plate of cake passed to her past a friend's shoulder, Susan laughing at Beth",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PRODUCT",
+       "picture": "the stick on the party table",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Susan eating cake",
+       "score": {
+        "stop": 1,
+        "line": 0,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC09-SH02",
+     "line": "It's the Facelove Changing Foundation Stick, made for the skin we have",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "from the deck down the full table into the dusk, the whole group, Susan in the middle",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PROOF",
+       "picture": "many women's faces",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a crowd",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 0,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC09-SH03",
+     "line": "It's the Facelove Changing Foundation Stick, made for the skin we have",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "two closed violet sticks standing beside the white primer tube on pale stone, slow push-in",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a shipping box",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PROOF",
+       "picture": "a guarantee badge",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC09-SH04",
+     "line": "It's the Facelove Changing Foundation Stick, made for the skin we have",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "low and close, the bulbs behind her: she glances down at the table, lit up among her friends",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PRODUCT",
+       "picture": "the stick in her bag",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Susan at the party",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  }
+ ]
+}

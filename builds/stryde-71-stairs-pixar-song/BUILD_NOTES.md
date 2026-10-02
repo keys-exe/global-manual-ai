@@ -824,9 +824,9 @@ What moved to Old 2:
 - C-02a v3/v4.
 - C-02b v3/v4. The first B printed the line as a caption ("SO I'MA JUST SAY IT RIGHT HERE"), so it was kept off (L16), stored on Old 3 and re-rendered once with a no-captions clause.
 
-**System (owner account, V7.90.9):**
+**System (owner account, V7.91.1):**
 - §24O rule 10: people with no sheet are drawn to the proportion ladder in words, and the style frame shows full-body Pixar people (`one_offs` on the call, `people: true` on that ref). `preflight.py` checks it.
-- L50.
+- L52.
 - `preflight.py` also counts a two-unit product ("exactly two straps").
 
 **Clips on the picks (Kling 3.0, 1080p, silent; To check):**

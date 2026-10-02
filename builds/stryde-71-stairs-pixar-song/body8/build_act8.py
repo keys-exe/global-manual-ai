@@ -2,7 +2,7 @@
 """Fix round 2026-10-02 ~14:00 ("fix those and generate the next act") + Act 8 first pairs.
  - C-02a / C-02b "not a pixar" (user image Fix on both): the church ladies had no sheet and the only style frame showed hands on a table,
    so they came back with realistic proportions. Now their build is given in heads from the §24A elder ladder and the style frame is the
-   PR-04a jogger — a confirmed full-body Pixar character, not Loretta (§24O rule 10, V7.90.9, L50).
+   PR-04a jogger — a confirmed full-body Pixar character, not Loretta (§24O rule 10, V7.91.1, L52).
  - Act 8: C-06a, C-07a, C-08a, C-08b, C-09a, C-09c. Wardrobe by story day (STEP4_5 map): C-06a/C-07a/C-09a N-D5 sheet outfit (mustard top,
    denim skirt), C-08a N-D0 (plum knit top, long grey skirt, pink slippers), C-08b N-D3 (R-07a frame), C-09c N-D7 (sheet outfit; the sister, navy).
 Picture prompts open "For the line — … —:" (V7.90.7, L46). Constants from body4/build_act4.py's header."""
