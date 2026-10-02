@@ -1,13 +1,21 @@
 #!/usr/bin/env python3
-"""§24K part 5 — one take for connected action (V7.88.0).
+"""§24K part 5 — one take for connected action (V7.88.0); one scene, one take, and the VO sets the length (V7.93.0).
 
 A film scene's connected shots are generated in ONE Seedance call, never as separate clips: a continuous
 movement (a walk, a climb, a stand-up) is one continuous take, and coverage of one moment in one place
 (a wide, a reverse, a reaction) is one MULTI-SHOT take. Separate clips of one moment come back with people
 in different places, the room changed and the movement restarting at every cut (LESSONS L12, L17, L22, L24).
 
+V7.93.0 (user 2026-10-02 — "it doesnt need the clip to be one only if the clips is just one scene… make it 1 clip
+only instead of splitting them specially when its a conversation where the position is critical", "the video duration
+should depends on the vo"): a scene in one place and one story day is ONE take whenever its running time fits; the row
+count never splits it (rows past four shots join the shot before: `joins: true`); a conversation take holds up to
+--max-talk-seconds (30, Seedance's longest call) so the people never move between calls; `length` is time only. With a
+narration master (--vo / --vo-words) every take's duration is measured from the VO it carries, never a default.
+
 Usage:
   takes.py ACT_MAP.json [--suggest] [--write OUT.json] [--md takes.md] [--json] [--max-shots 4] [--max-seconds 15]
+           [--max-talk-seconds 30] [--vo MASTER.mp3 [--script LINES.txt] | --vo-words WORDS.json] [--model medium.en]
 
 ACT_MAP.json: the step-5 act map — a list of rows, or {"rows": [...]}. Film rows (type SHOT / INSERT, Modes 4
 and 5) carry, on top of their usual fields:
@@ -24,6 +32,13 @@ and 5) carry, on top of their usual fields:
                                      a story-day change split by themselves)
   "pinned": true                     a pinned shot (product turn, exact end frame) — Kling first-and-last frame,
                                      always its own take
+  "joins": true                      (V7.93.0) this row continues the shot before it — same camera, no cut (a reaction
+                                     or a follow-on step played inside the shot before). Shots = rows without joins.
+  "dialogue": "..."                  the words spoken on screen in this row (verbatim) — a take with dialogue from
+                                     2+ rows, or a row with "conversation": true, is a CONVERSATION take
+  "vo": "..."                        (V7.93.0) the narration phrase played over this row, verbatim from the script
+  "hold_s": 2.5                      (V7.93.0) seconds the row needs beyond its VO: silent action, a look, on-screen
+                                     dialogue (default: the dialogue's E6 estimate, else 0)
 
 Connected: two rows in a row with the same scene (`scene` or `group`), the same `location` (unknown counts as
 the same) and the same `story_day`. Connected rows share a take unless the second names a split reason.
@@ -31,14 +46,21 @@ the same) and the same `story_day`. Connected rows share a take unless the secon
 Checks (any FAIL -> exit 1):
   TAKE   every film row names its take
   JOIN   a connected row starts a new take with no split reason — merge it into the take before
-  SPLIT  the reason is unknown, or does not hold (length when the takes together fit; pinned on a row that
-         is not pinned)
-  TAKE+  a take's rows are consecutive, in one scene, one place and one story day; at most --max-shots rows
-         and, where rows carry `duration`, at most --max-seconds; a pinned row is alone
-  KIND   a take of 2+ rows names take_kind; a one-take covers one continuous action (<= 3 rows)
+  SPLIT  the reason is unknown, or does not hold: `length` only when the two takes' running time together is over
+         the ceiling (15 s; a conversation 30 s) — never for the row count (V7.93.0, L51/L61); `length` needs
+         durations; pinned on a row that is not pinned
+  TAKE+  a take's rows are consecutive, in one scene, one place and one story day; at most --max-shots SHOTS
+         (rows without joins) and, where rows carry `duration`, at most --max-seconds (a conversation take
+         --max-talk-seconds); a pinned row is alone
+  KIND   a take of 2+ rows names take_kind; a one-take covers one continuous action (<= 3 shots)
   POS    every take has start_pos on its first row and end_pos on its last
+  VO     (with --vo / --vo-words) every `vo` phrase is found on the master in order; each take's duration is the
+         VO it carries + its rows' hold_s + the master's own pause before the next take, rounded up (Seedance 4–30);
+         a row whose stated duration is under its measured VO fails VO_SHORT; a take whose measured time is over its
+         ceiling fails VO_LONG and names the sentence end to split at. --write writes the measured durations.
 
---suggest proposes the takes for an act map that has none (connected runs, cut at --max-shots, balanced),
+--suggest proposes the takes for an act map that has none (connected runs, one take per run while it fits the
+seconds ceiling, rows past --max-shots joined to the shot before — never split for the row count),
 prints the calls before and after, and with --write writes the act map with `take` / `take_kind` filled and
 start_pos / end_pos left as "?" for the planner to write. The proposal is a starting point: the planner
 still checks every take against the action.
@@ -48,7 +70,7 @@ from pathlib import Path
 
 FILM_TYPES = {"SHOT", "INSERT"}
 REASONS = {
-    "length": "the connected run is longer than one take holds (--max-shots rows)",
+    "length": "the connected run's running time is over one take's ceiling (15 s; a conversation 30 s) — never the row count",
     "pinned": "a pinned shot — Kling first-and-last frame (§24K part 1)",
     "insert": "a product or label close-up the take's camera cannot reach crisply — its own info card",
     "intercut": "the scene cuts away to another place and back (a phone call, a memory)",
@@ -73,6 +95,31 @@ def connected(a, b):
     return None
 
 
+WPS = 2.4          # E6: on-screen dialogue at an unhurried pace, words a second
+LINE_AIR = 0.6     # E6: a breath before and after a spoken line
+
+
+def is_talk(rs):
+    """A conversation take: dialogue on 2+ rows, or a row marked conversation (V7.93.0)."""
+    return sum(1 for r in rs if str(r.get("dialogue") or "").strip()) >= 2 or any(r.get("conversation") for r in rs)
+
+
+def ceiling(rs, max_seconds, max_talk):
+    return max_talk if is_talk(rs) else max_seconds
+
+
+def shots(rs):
+    """Shots in a take: rows that cut (a row with joins: true plays inside the shot before)."""
+    return sum(1 for j, r in enumerate(rs) if j == 0 or not r.get("joins"))
+
+
+def hold(r):
+    if r.get("hold_s") is not None:
+        return float(r["hold_s"])
+    d = str(r.get("dialogue") or "").split()
+    return round(len(d) / WPS + LINE_AIR, 2) if d else 0.0
+
+
 def film_rows(rows):
     return [r for r in rows if str(r.get("type", "SHOT")).upper() in FILM_TYPES and int(r.get("mode") or 4) in (4, 5)]
 
@@ -92,16 +139,25 @@ def dur(r):
     return float(r.get("duration") or 0)
 
 
-def suggest(rows, max_shots, max_seconds=15):
+def suggest(rows, max_shots, max_seconds=15, max_talk=30):
     takes = []
     for run in runs(rows):
-        n = math.ceil(len(run) / max_shots)
-        while True:  # the fewest balanced takes that each fit the shot and second limits
+        cap = ceiling(run, max_seconds, max_talk)
+        n = 1
+        while True:  # the fewest balanced takes that fit the SECONDS ceiling — the row count never splits (V7.93.0)
             size = math.ceil(len(run) / n)
             parts = [run[i:i + size] for i in range(0, len(run), size)]
-            if n >= len(run) or all(sum(dur(r) for r in p) <= max_seconds for p in parts):
+            if n >= len(run) or all(sum(dur(r) for r in p) <= ceiling(p, max_seconds, max_talk) for p in parts):
                 break
             n += 1
+        for p in parts:  # rows past max_shots join the shot before: the shortest follow-on rows first
+            extra = shots(p) - max_shots
+            for r in sorted(p[1:], key=lambda r: (bool(str(r.get("dialogue") or "").strip()), dur(r))):
+                if extra <= 0:
+                    break
+                if not r.get("joins"):
+                    r["joins"] = True
+                    extra -= 1
         takes += parts
     count = {}
     for t in takes:
@@ -109,7 +165,7 @@ def suggest(rows, max_shots, max_seconds=15):
         count[sc] = count.get(sc, 0) + 1
         tid = f"{sc}-T{count[sc]}"
         subjects = {tuple(sorted(r.get("cast") or [r.get("subject")])) for r in t}
-        kind = "one-take" if len(t) <= 3 and len(subjects) == 1 and len(next(iter(subjects))) == 1 else "multi"
+        kind = "one-take" if shots(t) <= 3 and len(subjects) == 1 and len(next(iter(subjects))) == 1 else "multi"
         for j, r in enumerate(t):
             r["take"] = tid
             if j == 0:
@@ -124,7 +180,7 @@ def suggest(rows, max_shots, max_seconds=15):
     return takes
 
 
-def check(rows, max_shots, max_seconds=15):
+def check(rows, max_shots, max_seconds=15, max_talk=30):
     out = []
 
     def fail(kind, beats, detail):
@@ -148,19 +204,22 @@ def check(rows, max_shots, max_seconds=15):
             why = connected(a, b)
             if why:
                 fail("TAKE+", [a.get("beat"), b.get("beat")], f"take {t} crosses a {why} change — a take is one moment in one place")
-        if len(rs) > max_shots:
-            fail("TAKE+", beats, f"take {t} has {len(rs)} shots (> {max_shots}) — split it with split: \"length\"")
-        secs = sum(float(r.get("duration") or 0) for r in rs)
-        if secs > max_seconds:
-            fail("TAKE+", beats, f"take {t} runs {secs:g}s (> {max_seconds:g}s) — split it with split: \"length\"")
+        if shots(rs) > max_shots:
+            fail("TAKE+", beats, f"take {t} has {shots(rs)} shots (> {max_shots}) — join the follow-on rows to the shot before "
+                                 f"(joins: true: a reaction or a next step played inside it); the row count never splits a take")
+        secs = float(rs[0].get("take_duration") or sum(float(r.get("duration") or 0) for r in rs))
+        cap = ceiling(rs, max_seconds, max_talk)
+        if secs > cap:
+            fail("TAKE+", beats, f"take {t} runs {secs:g}s (> {cap:g}s{' — a conversation' if is_talk(rs) else ''}) — "
+                                 f"split it with split: \"length\" where nobody moves, end_pos -> start_pos")
         if len(rs) > 1 and any(r.get("pinned") for r in rs):
             fail("TAKE+", beats, f"take {t} holds a pinned shot — a pinned shot is its own take on Kling")
         if len(rs) > 1:
             k = rs[0].get("take_kind")
             if k not in ("one-take", "multi"):
                 fail("KIND", beats[:1], f"take {t}: take_kind must be one-take or multi")
-            elif k == "one-take" and len(rs) > 3:
-                fail("KIND", beats, f"take {t}: a one-take of {len(rs)} shots — one continuous action covers at most 3 rows; use multi")
+            elif k == "one-take" and shots(rs) > 3:
+                fail("KIND", beats, f"take {t}: a one-take of {shots(rs)} shots — one continuous action covers at most 3; use multi")
         if not str(rs[0].get("start_pos") or "").strip("? "):
             fail("POS", beats[:1], f"take {t}: no start_pos — where everyone is at frame 1, facing, hands")
         if not str(rs[-1].get("end_pos") or "").strip("? "):
@@ -178,12 +237,107 @@ def check(rows, max_shots, max_seconds=15):
                      f"put it in take {a['take']}, or name the split reason ({' · '.join(REASONS)})")
             elif sp not in REASONS:
                 fail("SPLIT", [b.get("beat")], f"split {sp!r} is not a reason — one of {' · '.join(REASONS)}")
-            elif sp == "length" and len(takes[a["take"]]) + len(takes[b["take"]]) <= max_shots:
-                fail("SPLIT", [a.get("beat"), b.get("beat")],
-                     f"split \"length\" but takes {a['take']} and {b['take']} fit in one ({len(takes[a['take']]) + len(takes[b['take']])} shots)")
+            elif sp == "length":
+                both = takes[a["take"]] + takes[b["take"]]
+                secs = sum(float(takes[x][0].get("take_duration") or sum(float(r.get("duration") or 0) for r in takes[x]))
+                           for x in (a["take"], b["take"]))
+                cap = ceiling(both, max_seconds, max_talk)
+                if not all(r.get("duration") for r in both):
+                    fail("SPLIT", [a.get("beat"), b.get("beat")],
+                         f"split \"length\" with no durations on takes {a['take']} / {b['take']} — length is time, never the row count "
+                         f"(V7.93.0): give the rows their durations (--vo measures them) or merge the takes")
+                elif secs <= cap:
+                    fail("SPLIT", [a.get("beat"), b.get("beat")],
+                         f"split \"length\" but takes {a['take']} and {b['take']} together run {secs:g}s (<= {cap:g}s"
+                         f"{', a conversation' if is_talk(both) else ''}) — one scene in one place is one take: merge them "
+                         f"(rows past {max_shots} shots join the shot before)")
         if sp == "pinned" and not b.get("pinned"):
             fail("SPLIT", [b.get("beat")], "split \"pinned\" on a row that is not pinned — set pinned: true or merge it")
     return out, takes
+
+
+def _norm(t):
+    import re
+    return re.sub(r"[^a-z0-9']", "", t.lower())
+
+
+def vo_words(a):
+    """Word timings of the narration master: [(start, end, word)] — from --vo-words JSON or Whisper on --vo."""
+    if a.vo_words:
+        return [tuple(w) if isinstance(w, (list, tuple)) else (w["start"], w["end"], w["word"])
+                for w in json.loads(Path(a.vo_words).read_text())]
+    sys.path.insert(0, str(Path(__file__).parent))
+    from trim import words  # noqa: E402
+    ws = words(a.vo, a.model)
+    if a.script:
+        from assemble import align  # noqa: E402  (the script's words, timed on the transcript — V7.79.0)
+        ws = align(Path(a.script).read_text(encoding="utf-8").split(), ws)
+    return ws
+
+
+def measure(rows, ws, max_seconds, max_talk, lead=0.25, tail=0.5):
+    """V7.93.0: each take's duration from the VO it carries. Rows carry `vo` (verbatim). The VO is never cut or
+    sped (§24L): a take runs from its first VO word (minus the lead) to the next take's first VO word, plus its
+    rows' hold_s (silent action, on-screen dialogue — the narration waits for them). Returns fails and timings."""
+    toks = [_norm(w[2]) for w in ws]
+    fails, at = [], 0
+    for r in rows:
+        if not str(r.get("vo") or "").strip():
+            continue
+        tgt = [_norm(t) for t in r["vo"].split() if _norm(t)]
+        hit = next((i for i in range(at, len(toks) - len(tgt) + 1) if toks[i:i + len(tgt)] == tgt), None)
+        if hit is None:
+            fails.append({"check": "VO", "beats": [r.get("beat")], "detail": f"vo {r['vo']!r} not found on the master after the "
+                          "previous row — copy it verbatim from the script, in order"})
+            continue
+        r["_vo"] = (ws[hit][0], ws[hit + len(tgt) - 1][1], hit, hit + len(tgt) - 1)
+        at = hit + len(tgt)
+    order = []
+    for r in rows:
+        if r.get("take") and (not order or order[-1][0] != r["take"]):
+            order.append((r["take"], []))
+        if r.get("take"):
+            order[-1][1].append(r)
+    starts = [min((r["_vo"][0] for r in rs if "_vo" in r), default=None) for _, rs in order]
+    timing = []
+    for k, (t, rs) in enumerate(order):
+        s0 = starts[k]
+        nxt = next((x for x in starts[k + 1:] if x is not None), None)
+        if s0 is None:
+            vo_s = 0.0
+        else:
+            end = (nxt - lead) if nxt is not None else max(r["_vo"][1] for r in rs if "_vo" in r) + tail
+            vo_s = max(end - (s0 - lead), 0.0)
+        need = vo_s + sum(hold(r) for r in rs)
+        call = max(4, math.ceil(need - 1e-6))
+        cap = ceiling(rs, max_seconds, max_talk)
+        for r in rs:  # each row on screen for its own VO (+ its hold), the take's last row to the next take's cut
+            if "_vo" in r:
+                m = r["_vo"][1] - r["_vo"][0] + hold(r)
+                if r.get("duration") and float(r["duration"]) + 1e-6 < m:
+                    fails.append({"check": "VO_SHORT", "beats": [r.get("beat")], "detail": f"duration {r['duration']}s but its VO "
+                                  f"runs {m:.2f}s on the master — the picture would leave mid-line; set it from the VO (--write)"})
+        if need > cap:
+            # the last sentence end inside the ceiling: where the take splits (split: "length", end_pos -> start_pos)
+            limit, cut = (s0 or 0) - lead + cap - sum(hold(r) for r in rs), None
+            for i, w in enumerate(ws):
+                if s0 is not None and s0 <= w[1] <= limit and w[2].rstrip().endswith((".", "!", "?")):
+                    cut = w
+            fails.append({"check": "VO_LONG", "beats": [r.get("beat") for r in rs], "detail": f"take {t} needs {need:.1f}s for its "
+                          f"VO and holds (> {cap:g}s) — split it with split: \"length\" at the sentence end"
+                          + (f" after {cut[2]!r} ({cut[1]:.2f}s)" if cut else " (no sentence end inside — split the row)")
+                          + ", end_pos -> start_pos"})
+        timing.append({"take": t, "vo_s": round(vo_s, 2), "hold_s": round(sum(hold(r) for r in rs), 2),
+                       "duration": call, "conversation": is_talk(rs)})
+        rs[0]["take_duration"] = call
+        for r in rs:
+            if "_vo" in r:
+                r["duration"] = round(r["_vo"][1] - r["_vo"][0] + hold(r), 2)
+            elif r.get("hold_s") is not None or r.get("dialogue"):
+                r["duration"] = round(hold(r), 2)
+    for r in rows:
+        r.pop("_vo", None)
+    return fails, timing
 
 
 def main():
@@ -195,6 +349,11 @@ def main():
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--max-shots", type=int, default=4)
     ap.add_argument("--max-seconds", type=float, default=15)
+    ap.add_argument("--max-talk-seconds", type=float, default=30, help="a conversation take's ceiling (V7.93.0): Seedance's longest call")
+    ap.add_argument("--vo", help="the narration master — each take's duration is measured from the VO it carries (V7.93.0)")
+    ap.add_argument("--vo-words", help="word timings JSON instead of --vo: [[start, end, word], ...]")
+    ap.add_argument("--script", help="with --vo: the verbatim script lines (script_lines.py), aligned onto the transcript")
+    ap.add_argument("--model", default="medium.en")
     a = ap.parse_args()
     data = json.loads(Path(a.plan).read_text())
     rows_all = data if isinstance(data, list) else data.get("rows", [])
@@ -202,21 +361,42 @@ def main():
     if not rows:
         print("TAKES PASS (no film shots)")
         sys.exit(0)
+    vo_fails, timing = [], []
+    if a.vo or a.vo_words:  # measure first, so --suggest groups on the VO's real seconds
+        ws = vo_words(a)
+        for r in rows:
+            r.setdefault("take", r.get("beat"))  # provisional: one row per take, to time each row
+        provisional = not any(r.get("take") != r.get("beat") for r in rows)
+        vo_fails, timing = measure(rows, ws, a.max_seconds, a.max_talk_seconds)
+        if provisional and a.suggest:
+            for r in rows:
+                r.pop("take", None); r.pop("take_duration", None)
     if a.suggest:
-        takes = suggest(rows, a.max_shots, a.max_seconds)
-        print(f"{len(rows)} shots -> {len(takes)} takes (Seedance calls)")
+        takes = suggest(rows, a.max_shots, a.max_seconds, a.max_talk_seconds)
+        print(f"{len(rows)} rows -> {len(takes)} takes (Seedance calls)")
         for t in takes:
-            print(f"  {t[0]['take']:10} {t[0].get('take_kind', 'single'):8} {', '.join(r.get('beat') for r in t)}"
+            print(f"  {t[0]['take']:10} {t[0].get('take_kind', 'single'):8} {', '.join(r.get('beat') + ('+' if r.get('joins') else '') for r in t)}"
                   f"{'  [split: ' + t[0]['split'] + ']' if t[0].get('split') else ''}")
-        if a.write:
-            Path(a.write).write_text(json.dumps(data, indent=1, ensure_ascii=False))
-    out, takes = check(rows, a.max_shots, a.max_seconds)
+        if a.vo or a.vo_words:
+            vo_fails, timing = measure(rows, ws, a.max_seconds, a.max_talk_seconds)
+    if timing:
+        total = sum(x["duration"] for x in timing)
+        print(f"VO-timed takes (V7.93.0): film runs {total}s in {len(timing)} takes")
+        for x in timing:
+            print(f"  {x['take']:10} {x['duration']:>3}s  (VO {x['vo_s']}s + holds {x['hold_s']}s){'  conversation' if x['conversation'] else ''}")
+    if a.write:
+        Path(a.write).write_text(json.dumps(data, indent=1, ensure_ascii=False))
+    out, takes = check(rows, a.max_shots, a.max_seconds, a.max_talk_seconds)
+    out = vo_fails + out
     if a.md:
-        md = ["### Takes", "", "Connected shots are generated in one take — one Seedance call (§24K part 5). "
-              f"{len(rows)} shots in {len(takes)} takes.", "",
-              "| Take | Kind | Shots | Starts | Ends | Split |", "|---|---|---|---|---|---|"]
+        md = ["### Takes", "", "One scene in one place is one take — one Seedance call (§24K part 5, V7.93.0); "
+              "a row marked + plays inside the shot before. "
+              f"{len(rows)} rows in {len(takes)} takes.", "",
+              "| Take | Kind | Rows | Length | Starts | Ends | Split |", "|---|---|---|---|---|---|---|"]
         for t, rs in takes.items():
-            md.append(f"| {t} | {rs[0].get('take_kind', 'single')} | {', '.join(r.get('beat', '') for r in rs)} | "
+            ln = rs[0].get("take_duration") or (sum(float(r.get("duration") or 0) for r in rs) or "")
+            md.append(f"| {t} | {rs[0].get('take_kind', 'single')}{' · conversation' if is_talk(rs) else ''} | "
+                      f"{', '.join(r.get('beat', '') + ('+' if r.get('joins') else '') for r in rs)} | {ln}{'s' if ln else ''} | "
                       f"{rs[0].get('start_pos', '')} | {rs[-1].get('end_pos', '')} | {rs[0].get('split', '')} |")
         Path(a.md).write_text("\n".join(md) + "\n", encoding="utf-8")
     if a.json:
