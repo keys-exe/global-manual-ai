@@ -1,0 +1,86 @@
+{
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Hook 1",
+ "stage": "broll",
+ "beat": "P-01a-END",
+ "title": "P-01a — pinned end frame (one step lower)",
+ "line": "Six weeks ago, I was going down my stairs backwards.",
+ "flow": [
+  "image"
+ ],
+ "endFrameFor": "P-01a",
+ "location": "L-N-STAIRS",
+ "lines": [
+  6,
+  6
+ ],
+ "key": "backwards",
+ "framing": "the P-01a start frame with her one step lower — both feet on the second step from the top, her back to the lens, hands on the rail (§27G rule 10: the end frame that pins the clip's direction)",
+ "shot": "low · behind · clean · MEDIUM",
+ "imagePrompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": Keep this photo exactly as it is — the hall floor, the whole flight, the oak rail and newel, the photo wall, the light — and only move the woman one step down. Image 1 is the picture; nothing in it changes but her place on the stairs.\nMedium shot from the hall floor looking up the whole flight, sharp on her. The woman of Image 1, seventy-one, now standing with both feet on the second step from the top, one step lower, a little larger in the frame, her back to the lens facing the landing, both hands gripping the oak rail a little lower, faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman from behind near the top of the flight of Image 1, two steps above her to the landing, every step between her and the lens, the rail, the newel, the photo wall; every other surface bare. Two hands on the rail, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Clothing and frames plain — no lettering, logos or labels; no second person.",
+ "imageMatch": "frame",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageRefs": [
+  {
+   "label": "P-01a frame v12 B (confirmed) — the start frame",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__P-01a",
+   "role": "Image 1 · edited (§6A rule 3, HT17, FP14)"
+  }
+ ],
+ "imageFault": "user Fix on the P-01a clip: SHOULD BE GOING BACK WARDS NOT UP → three clips from the start frame alone climbed; this is the pinned end frame — pick A or B and the clip is made start-to-end",
+ "imageTaste": [
+  "HT02",
+  "HT03",
+  "HT17",
+  "FP14"
+ ],
+ "status": "ready",
+ "createdAt": 1790883993227,
+ "updatedAt": 1790884048040,
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "6697783f2def196514659b18afda3668",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194553_f8a4e603-4af4-40fe-80fd-18646cd781f1.png",
+   "job": "f8a4e603-4af4-40fe-80fd-18646cd781f1",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7274117,
+   "res": "1536×2752",
+   "at": 1790884048040,
+   "note": "the pinned end frame for P-01a: the confirmed start frame with her one step lower"
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "d7a82998a80b7f7168d8c5601d5d1c8f",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194552_396928e7-aa36-4b58-bafe-b66de9489313.png",
+   "job": "396928e7-aa36-4b58-bafe-b66de9489313",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7309418,
+   "res": "1536×2752",
+   "at": 1790884048040,
+   "note": "the pinned end frame for P-01a: the confirmed start frame with her one step lower"
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageAsset": "6697783f2def196514659b18afda3668",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194553_f8a4e603-4af4-40fe-80fd-18646cd781f1.png",
+ "imageJob": "f8a4e603-4af4-40fe-80fd-18646cd781f1",
+ "imageAt": 1790884048040,
+ "imageStatus": "review"
+}

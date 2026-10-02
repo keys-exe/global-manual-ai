@@ -1,0 +1,38 @@
+{
+ "beat": "P-05b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Nothing worked. Nothing lasted.\": Keep this photo exactly as it is — this kitchen, its sage-green cabinets with brass pulls, the row of three drawers under the counter to the right of the cream stove, the tiled splashback, the light — in close on the middle drawer of that row, a tall 9:16 crop, and pull it open. Image 1 is the kitchen.\nClose-up at eye level with the drawer, sharp on it: the middle drawer of Image 1 pulled half open, stuffed to the brim with two grey knee sleeves, a folded black hinged knee brace, three plain pill bottles and a blue ice pack; an older Black woman's right hand, brown, flat on the drawer front pushing it shut, a grey cardigan cuff at her wrist; her left hand and the rest of her out of frame; the stove edge at the left of the frame.\nIn frame: the open drawer and its contents, one hand placed, the cabinet fronts, counter edge and stove edge of Image 1; every other surface bare, nothing on the counter.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Sleeves, bottles and cabinets plain — no lettering, logos or labels; nobody else.",
+ "script_line": "Nothing worked. Nothing lasted.",
+ "face": false,
+ "room": true,
+ "body": false,
+ "refs": [
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "cc6ec5031226aadf6d5a46725855adea",
+ "taste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "WRONG DRAWER AND LOCATION",
+ "product": false
+}

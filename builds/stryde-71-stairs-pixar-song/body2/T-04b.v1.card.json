@@ -1,0 +1,99 @@
+{
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "43360f814df5a11db6af7e87d1267d10",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214030_41f9bcc8-d626-46c7-a1d0-4bd60c18bc1c.png",
+   "job": "41f9bcc8-d626-46c7-a1d0-4bd60c18bc1c",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "at": 1790890992104,
+   "refs": [
+    {
+     "label": "P3-RECEPTION plate (confirmed)",
+     "kind": "location",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "kind": "style",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "first pair · what I see: a close-up under the table edge: her brown hand on her knee through the lavender dress, the tablecloth hanging a little oddly over the knee, dancing feet soft beyond"
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "35ac26e169cf663115dd6768d71f73d5",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214030_31c7e1d7-184e-413c-bcd4-eddebaebe691.png",
+   "job": "31c7e1d7-184e-413c-bcd4-eddebaebe691",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "at": 1790890992104,
+   "refs": [
+    {
+     "label": "P3-RECEPTION plate (confirmed)",
+     "kind": "location",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "kind": "style",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "first pair · what I see: a close-up under the table edge: her brown hand on her knee through the lavender dress, the tablecloth hanging a little oddly over the knee, dancing feet soft beyond"
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageStatus": "review",
+ "status": "ready",
+ "imageAsset": "43360f814df5a11db6af7e87d1267d10",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214030_41f9bcc8-d626-46c7-a1d0-4bd60c18bc1c.png",
+ "imageJob": "41f9bcc8-d626-46c7-a1d0-4bd60c18bc1c",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790890992104,
+ "imagePrompt": "For the line \"I always figured mine was past fixing.\": Keep this photo exactly as it is — the parquet floor, the gold chair legs, the evening light — low under a table edge, a tall 9:16 crop, and add her knee and hand. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nClose-up low, in profile facing frame left, sharp on the knee: an older Black woman's right knee under the lavender chiffon of her dress, her brown right hand rubbing the knee through the fabric, four chunky fingers and a thumb; her left hand resting in her lap at the top edge; beyond, soft and out of focus, dancing feet on the parquet. Scale true to the set: the tablecloth hem comes up to her knee.\nIn frame: one knee, one hand on it, the tablecloth edge, a chair leg, the dancers soft beyond; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Dress and tablecloth plain — no lettering, logos or labels.",
+ "imageMatch": "plate",
+ "imageRefs": [
+  {
+   "label": "P3-RECEPTION plate (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-05c"
+  }
+ ],
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "motionPlan": "From this frame: her hand rubs the knee once — one slow rub, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "framing": "CU under the table edge: N's hand rubbing her right knee through the lavender dress, the parquet and dancing feet soft beyond",
+ "updatedAt": 1790890992104
+}

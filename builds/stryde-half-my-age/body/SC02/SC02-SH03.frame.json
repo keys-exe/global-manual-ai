@@ -1,0 +1,48 @@
+{
+ "beat": "SC02-SH03",
+ "kind": "image",
+ "mode": 4,
+ "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards. One step at a time.\": each step down her own stairs costs her. A close-up from the landing above and to her side, 85mm lens, shallow focus on her face and hands. the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in a pale-blue quilted dressing gown, is going down backwards: she faces up the stairs, two steps below the camera. Both hands grip the dark banister rail beside her face, knuckles pale; her head is bowed, eyes down on the step at her feet, brow tight, lips pressed, a held breath. Image 1 is this staircase: below her, out of focus, the oatmeal stair carpet and brass rods drop away toward the hall. Cold grey morning light from the frosted landing window, 6500K, from frame left, lights her face and hands; the far side in soft shadow. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
+ "script_line": "Six weeks ago, I was going down my stairs backwards. One step at a time.",
+ "refs": [
+  {
+   "kind": "location",
+   "label": "Her stairs from the landing (v4)",
+   "ref": "stryde-half-my-age__L-STAIRS",
+   "job": "73351f73-d511-45c9-839f-4aec7c451868",
+   "role": "Image 1"
+  },
+  {
+   "kind": "character",
+   "label": "Her — cast sheet (face, hair, build)",
+   "ref": "stryde-half-my-age__N-HER",
+   "job": "30fd2bc8-17e3-4e27-b2cf-8225e00b088c",
+   "role": "Image 2"
+  }
+ ],
+ "face": true,
+ "body": true,
+ "room": true,
+ "product": false,
+ "match": null,
+ "edit_of": null,
+ "pair": [
+  "gpt_image_2",
+  "gpt_image_2"
+ ],
+ "model": "gpt-image-2 image-to-image · 9:16 (Kie AI)",
+ "model_override": "user 2026-10-01: \"use gpt image 2 and not sunburst, re do all the scene 2\" — overrides the §18A Sunburst routing for this build's body frames",
+ "role": "key",
+ "motion_plan": "From this frame: she lowers her weight down one step backwards, both hands sliding a little down the banister, and breathes out through her mouth; one step in the clip.",
+ "scene": 2,
+ "taste": [
+  "HT02",
+  "HT04",
+  "HT09",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "generation": 3,
+ "fix_note": "i want new ones the all of theme are not good (scene 2)"
+}

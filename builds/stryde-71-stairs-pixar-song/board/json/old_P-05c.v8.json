@@ -1,0 +1,81 @@
+{
+ "imageVersions": [
+  {
+   "asset": "338908cdab95f2369f40d8dc93efd194",
+   "at": 1790879352102,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "58243361-f630-4185-97d1-fec7bd89b76c",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front · replaced on the user's Fix",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7158995,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182542_58243361-f630-4185-97d1-fec7bd89b76c.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "338908cdab95f2369f40d8dc93efd194"
+  },
+  {
+   "asset": "3aab874af807455bbf2ebc29a96d12ca",
+   "at": 1790879352102,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "1f776e47-cd64-4151-97ed-df6d215a7875",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front · replaced on the user's Fix",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7054645,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182544_1f776e47-cd64-4151-97ed-df6d215a7875.png",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "3aab874af807455bbf2ebc29a96d12ca"
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageAsset": "3aab874af807455bbf2ebc29a96d12ca",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182544_1f776e47-cd64-4151-97ed-df6d215a7875.png",
+ "imageJob": "1f776e47-cd64-4151-97ed-df6d215a7875",
+ "imagePrompt": "For the line \"Nothing gave me my life back.\": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chair, the cabinets, the light — in close across the table, a tall 9:16 crop, and add the woman. Image 1 is the kitchen. Image 2 is the woman.\nClose-up from across the table at her eye level, the heap of braces, sleeves and pill bottles soft in the near foreground at the table's far edge, sharp on her face. The same woman as Image 2, seventy-one, sat back in the chair, shoulders down, eyes on nothing past the lens, mouth closed; faded blue floral knee-length house dress, grey cardigan, pink terry slippers; both hands slack in her lap, out of frame below the table edge. Nobody else.\nIn the frame: her face and shoulders, the chair back, the heap soft in front, the cabinets of Image 1 behind; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink, a catchlight in each eye. Clothing and bottles plain — no lettering, logos or labels; no second person.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "kind": "character",
+   "label": "N-NARR sheet v2",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  }
+ ],
+ "imageFault": "I NEED A DIFFERENT ONES HERE",
+ "title": "low — her face, sat back (user 2026-10-01: three B-rolls)",
+ "shot": "eye · three-quarter · through · CU",
+ "framing": "CU across the table at her eye level: N sat back in the chair, shoulders down, eyes on nothing past the lens, the heap soft in the foreground at the table's far edge",
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "updatedAt": 1790882998753,
+ "flow": [
+  "image"
+ ],
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Hook 1",
+ "stage": "broll",
+ "beat": "P-05c",
+ "line": "Nothing gave me my life back.",
+ "location": "L-N-KITCHEN",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair"
+}

@@ -1,0 +1,47 @@
+{
+ "archiveUrl": "https://claude.ai/artifact/3pEQz2pWLJwTNX5TuBdccV",
+ "aspect": "9:16",
+ "balances": {
+  "Higgsfield": 7897.15,
+  "Kie AI": 261969.8,
+  "Kling": 41127
+ },
+ "balancesAt": 1790887700000,
+ "boards": {
+  "current": "https://claude.ai/artifact/NPMPgJeXr6cgTvtuFGhkZc",
+  "final": "https://claude.ai/artifact/FYK7PCvgLG4SLzj72YdBPn",
+  "old": "https://claude.ai/artifact/3pEQz2pWLJwTNX5TuBdccV",
+  "plans": "https://claude.ai/artifact/VEE8gmwPVbvhVMNSC5rBLY",
+  "old2": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+ },
+ "folders": {
+  "task": "1VZ709_1L6_cNjSadgDKn-BIKDGy89a5C"
+ },
+ "format": "Music Video (§3C, V7.76.0) — the script sung word for word; the team's Suno track is the music master",
+ "hooks": 1,
+ "kind": "music",
+ "mode": "Mode 2 — 3D Pixar",
+ "music": {
+  "beat": "MUS-BODY",
+  "bpm": 73.8,
+  "driveId": "1rhxdeX9SvB_xoMrSa1HlJGG33agxHu_H",
+  "duration": 228.02,
+  "file": "71 Stairs Afro American Woman.mp3",
+  "sung": true,
+  "supplied": true,
+  "vocalEnd": 222.68
+ },
+ "name": "STRYDE · 71 Stairs Pixar Song",
+ "product": "STRYDE Precision Strap",
+ "run": "manual",
+ "song": {
+  "bpmEstimate": 73.8,
+  "driveId": "1rhxdeX9SvB_xoMrSa1HlJGG33agxHu_H",
+  "duration": 228.02,
+  "file": "71 Stairs Afro American Woman.mp3",
+  "vocalEnd": 222.68
+ },
+ "talkingHeads": false,
+ "updatedAt": 1790887700000,
+ "boardsNote": "Old 2 = overflow Old board (2026-10-01): the first Old board's 1 GB store is full; replaced and unchosen renders from the FIC THESE round on go here"
+}

@@ -1,0 +1,105 @@
+{
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "1248995b7a7627d8725e2a48adbc4c6f",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182542_58243361-f630-4185-97d1-fec7bd89b76c.png",
+   "job": "58243361-f630-4185-97d1-fec7bd89b76c",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7158995,
+   "res": "1536×2752",
+   "at": 1790879352102,
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front"
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "0d2406fbeaa7d8d11fada17a750f6134",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182544_1f776e47-cd64-4151-97ed-df6d215a7875.png",
+   "job": "1f776e47-cd64-4151-97ed-df6d215a7875",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7054645,
+   "res": "1536×2752",
+   "at": 1790879352102,
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front"
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageAsset": "1248995b7a7627d8725e2a48adbc4c6f",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182542_58243361-f630-4185-97d1-fec7bd89b76c.png",
+ "imageJob": "58243361-f630-4185-97d1-fec7bd89b76c",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790879352102,
+ "imageStatus": "review",
+ "imagePrompt": "For the line \"Nothing gave me my life back.\": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chair, the cabinets, the light — in close across the table, a tall 9:16 crop, and add the woman. Image 1 is the kitchen. Image 2 is the woman.\nClose-up from across the table at her eye level, the heap of braces, sleeves and pill bottles soft in the near foreground at the table's far edge, sharp on her face. The same woman as Image 2, seventy-one, sat back in the chair, shoulders down, eyes on nothing past the lens, mouth closed; faded blue floral knee-length house dress, grey cardigan, pink terry slippers; both hands slack in her lap, out of frame below the table edge. Nobody else.\nIn the frame: her face and shoulders, the chair back, the heap soft in front, the cabinets of Image 1 behind; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink, a catchlight in each eye. Clothing and bottles plain — no lettering, logos or labels; no second person.",
+ "imageFault": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front",
+ "imageMatch": "plate",
+ "imageRefs": [
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  }
+ ],
+ "status": "ready",
+ "shot": "eye · three-quarter · through · CU",
+ "angle": "eye · three-quarter · through · CU — through the heap in the foreground = what she is left with between her and us",
+ "framing": "CU across the table at her eye level: N sat back in the chair, shoulders down, eyes on nothing past the lens, the heap soft in the foreground at the table's far edge",
+ "motionPlan": "From this frame: her eyes drop to the table, one slow blink — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "location": "L-N-KITCHEN",
+ "line": "Nothing gave me my life back.",
+ "title": "low — her face, sat back (user 2026-10-01: three B-rolls)",
+ "act": "Hook 1",
+ "imageTaste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "updatedAt": 1790879352102,
+ "build": "stryde-71-stairs-pixar-song",
+ "stage": "broll",
+ "beat": "P-05c",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "duration": 3,
+ "key": "life",
+ "lines": [
+  18,
+  18
+ ],
+ "body": 1,
+ "bars": 0.0,
+ "focus": "eyes · shallow",
+ "eg": "",
+ "createdAt": 1790879352102
+}

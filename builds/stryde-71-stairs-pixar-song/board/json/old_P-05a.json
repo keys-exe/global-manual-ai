@@ -1,0 +1,76 @@
+{
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Hook 1",
+ "stage": "broll",
+ "beat": "P-05a",
+ "title": "low — v1 pair (photoreal, replaced)",
+ "line": "Every brace and sleeve they make. Nothing worked. Nothing lasted. Nothing gave me my life back.",
+ "flow": [
+  "image"
+ ],
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "a4e5d66db5a9794dbccd1f440d0ee2f2",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_f5869146-7f00-4920-94dc-1d7342fdf9bb.png",
+   "job": "f5869146-7f00-4920-94dc-1d7342fdf9bb",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7619624,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "e433e1a92d4bda94ad6bb33591505c9a",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_f55d8249-5d7d-4054-8af9-63806391ba6f.png",
+   "job": "f55d8249-5d7d-4054-8af9-63806391ba6f",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6973644,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageAsset": "a4e5d66db5a9794dbccd1f440d0ee2f2",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_f5869146-7f00-4920-94dc-1d7342fdf9bb.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePrompt": "For the line \"Every brace and sleeve they make. Nothing worked. Nothing lasted. Nothing gave me my life back.\": Keep this photo exactly as it is — the kitchen, its table and chairs, the cabinets, the light — from across the table at its edge, a tall 9:16 crop, and add the woman. Image 1 is the kitchen. Image 2 is the woman.\nMedium shot from low across the table, the table edge in the near foreground, sharp on her face. The same woman as Image 2, seventy-one, seated at the table, the heap of braces, sleeves and pill bottles pushed to the far side with the back of her right hand, her left hand slack in her lap, sitting back in the chair, eyes on nothing past the lens; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn frame: the woman, the heap on the table, the table and chair of Image 1, the cabinets behind; every other surface bare. Two hands placed, two legs under the table.\nThe render of Image 1 in grey morning light from the window over the sink, a catchlight in each eye. Clothing and bottles plain — no lettering, logos or labels; no second person.",
+ "imageRefs": [
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  }
+ ],
+ "imageFault": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+ "location": "L-N-KITCHEN",
+ "updatedAt": 1790876674688
+}

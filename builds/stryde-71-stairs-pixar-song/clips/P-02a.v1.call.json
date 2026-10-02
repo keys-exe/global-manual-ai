@@ -1,0 +1,49 @@
+{
+ "beat": "P-02a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": From this frame: she looks down the stairs and looks away — one turn of the head, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the hall floor looking up the flight, she looks down the stairs toward the lens, holds, then turns her face away to the side; her hand stays on the newel, her body stays seated on the top step; the whole staircase stays exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut; she never stands.",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180142_04e4ff58-b639-4064-accc-908bc636261e.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.",
+ "motion_plan": "From this frame: she looks down the stairs and looks away — one turn of the head, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one turn of the head",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image v6 B, job 04e4ff58-b639-4064-accc-908bc636261e)"
+}

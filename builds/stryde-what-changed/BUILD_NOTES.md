@@ -462,3 +462,44 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Higgsfield is holding every job in "queued" (B22a/B23a videos for 45+ min, now B10d too) while the shared account's balance keeps falling — other builds' jobs are running; ours wait for a slot.
 - **B22a** user "GIVE ME ANOTHER DIFFERENT BROLL HERE" (mid-turn): new image — Maureen sitting on the edge of her bed, both knees bent towards the camera, a strap below each, hands on her thighs; an edit of the approved B22a v4 so its straps carry over (NBP, job 84a4eae4…). Act map row updated (L-BEDROOM). The queued B22a video (3691e67d…) is now moot → Old 2 when it lands.
 - User "USE KEI AI FOR TEMPORARY" on B22a: **B22a v5** made on Kie AI (nano-banana-pro, 18 cr, refs: B22a v4 + R1 sheet, same prompt) — seated on the edge of her bed, both knees towards the camera, lowercase "stryde" on both straps, hands on thighs. Flaw: both straps sit a little low — a gap between each kneecap and its notch. To check; v4 → Old 2. Kie balance 256,298.8 (topped up). The Higgsfield B22a image job 84a4eae4… is now redundant → Old 2 if it ever lands.
+- **B10d v2** (Higgsfield NB2, finally ran): her finger pressing a plain white smoke alarm with its red light on, gold ring and striped sleeve, duck-egg wall below — clean. To check; image v1 + video v1 → Old 2 (new Old 2 doc).
+- Higgsfield: the two queued Kling videos (B22a 3691e67d…, B23a 376f4a2b…) **failed** after ~1 h; the B22a NBP image 84a4eae4… still queued (redundant).
+- User "GO CONFIRM" on B22a v5 → image confirmed, **video v4 on Kie AI Kling 3.0** (5 s, 150 cr): she pats her thighs, straps on. Flaw: mid-clip her hands slide to her knees and the straps shrink a little, recovering by the end.
+- **B23a video v3 on Kie AI Kling 3.0** (re-run of the user's go after the Higgsfield failure, 5 s, 150 cr): the first ~3 s are good (one step down, strap exact); in the last 1.5 s her leg comes right up to the lens and leaves frame — "Use only up to here" ≈ 3 s would fix it.
+- Kie AI 255,998.8 · Higgsfield 10,085.15.
+
+### 2026-10-01 — "FIX" (B10d "DIFFERENT BROLL HERE" — the smoke alarm turned down too)
+- **B10d v3** (Kie AI nano-banana-2 — Higgsfield still slow): Maureen at the kitchen worktop, side-on, pink cardigan, eyes closed, swallowing a painkiller with a glass of water, the blister pack by her hand. Flaw: the worktop reads as grey speckled stone, not the pale oak. To check; v2 (smoke alarm) → Old 2. Act map row → R1, L-KITCHEN, EYE PRO MEDIUM; angles: only the known B19b/B19-BR2 jump.
+- Kie balance 255,872.8 (shared — it moved 126 during this one call, so the card's 8 cr is an estimate).
+- User "CONFIRM" B10d v3 → **video v2 on Kie AI Kling 3.0** (5 s, ~150 cr): she swallows, lowers the glass, a tired breath, hand on the worktop — clean. To check. Kie 255,710.8.
+
+### 2026-10-01 — Hook 1 first line: new multiple B-roll ("GIVE ME NEW MULTIPLE DIFFERENT BROLL HERE")
+- Line "Your knees have been taking seventeen times your bodyweight on every step for forty years, and you never felt a thing." now cut as four shots: HK1-a (Desmond up his stairs with two heavy shopping bags, low side-on, R2+P2), HK1-a2 (Maureen's plimsoll landing on the stone step, ground ECU, R1+P3), HK1-b (Maureen's hand holding a 1980s photo of herself hiking, high three-quarter CU, R1+P4), HK1-b2 (Maureen walking towards camera with a tote bag, smiling, R1+P3). Act map rewritten; angles pass (only the known B19b/B19-BR2 jump).
+- Images on Kie nano-banana-2 (Higgsfield still stuck), on Current 2 as `review`. Flaws reported: HK1-a trainer shows a Nike swoosh; HK1-a2 is a kerb on the pavement, not her front-door step; HK1-b2 is on the pavement, not up her front path. Videos after the user confirms.
+- Old HK1-a / HK1-b (image + video, both confirmed) moved to Old 2 (images 811caf95…, 8f31e6c4…; videos a427f0da…, baf1a632…) and removed from Current.
+
+### 2026-10-01 — "FIX THOSE" on the new Hook 1 shots (+ board notes HK1-a "FIX BROLL", HK1-b "DIFFERENT BROLL")
+- HK1-a v2: edit of v1 on Kie, swoosh gone (plain white trainers, navy heel tab). The bags changed a little in the edit.
+- HK1-a2 v2: her stone front-door step with the open front door and coir mat behind. Heel lifting rather than landing.
+- HK1-b v2: new shot for "for forty years": her stair carpet worn thin down the middle of the treads, her plimsoll on it (act map row changed to L-M-STAIRS). Flaws: reads as looking UP the flight, not down; the flight runs along the left wall (plate has it on the right); the wear is subtle.
+- HK1-b2 v2: shot from her doorstep down the garden path, gate and bins behind. Flaw: she looks into the lens.
+- All v1s moved to Old 2 (new HK1-a2 / HK1-b2 Old docs; HK1-a / HK1-b appended as v2 there) and deleted from Current 2.
+
+### 2026-10-01 — "MAKE ME A DIFFERENT BROLLS FOR OUR HOOK 1, WITH ANATOMY"
+- Hook 1's first line is now four anatomy shots, one per phrase, on the same cards (v3), on Kie nano-banana-2, as `review`:
+  HK1-a: the translucent figure, waist-down, stepping up the stairs, the leading knee glowing · HK1-a2 (meant to be overhead on the knee
+  landing on a step) · HK1-b: cutaway of the joint, the worn cartilage · HK1-b2: a whole translucent figure walking calmly, one spot glowing.
+- Flaws reported: HK1-a2 came out front-on with red muscles and the TEXT "PATELLAR TENDINOPATHY / PAIN POINT" (needs a Fix);
+  HK1-b's cartilage looks smooth and healthy, not worn, and the glow sits on the shin bone; HK1-a's front foot is cut by the frame edge.
+- The live-action v2s moved to Old 2 (appended there) and deleted from Current 2. Act map rows changed to ANAT.
+
+### 2026-10-01 — FIX round (board notes)
+- Merged the default branch (standards V7.81.0). This build keeps its V7.79 locks; the new `angles.py` ANAT style check ("0 anatomy beats in 0 styles") reads this build's act map, which has no style fields, so that FAIL is not acted on here.
+- B18b "GIVE ME DIFFERENT BROLL HERE, MAKE SURE PRODUCT IS RIGHT" → new shot (v5): knee-level front-on from the bottom stairs, Maureen walking straight onto the stairs; built as an edit of the confirmed B22a v4 on Kie nano-banana-pro. **The product came out WRONG**: the edit redrew both straps as plain black neoprene bands with a small wordmark (no shell, no peaks, no chrome slides). Her hands are also in frame, and she's on a landing, not stepping onto the bottom stair. Lesson: changing the camera angle of the approved image still makes the model redraw the strap — keep Image 1's camera and change only the feet/room. v4 image + v2 video moved to Old 2.
+- B08-BR "WRONG WOMAN, FIX THIS" (Current board) → v2, edit of v1 on Kie nano-banana-2: now the R1 back view (short white crop, slight build). Flaw: she stands with both feet planted rather than mid-stride. v1 image + video moved to Old 2.
+
+### 2026-10-01 — "CONFIRM AND FIX"
+- B08-BR image v2 confirmed on the board → clip gen 2 on Kie AI Kling (5 s, preflight PASS): she starts the walk from standing and walks away down the hall. Flaw: she covers more ground than three steps and the hall looks a touch longer by the end.
+- B18b Fix "WRONG PRODUCT AND SHOULD BE GOING DOWN TO STAIR" → v6: edit of the confirmed B22a v4 that keeps its camera, framing and both straps, changing ONLY the step (right foot down onto the stair below). The straps came through right (shells, peaks, notch, chrome slides, lowercase wordmark). Confirms the lesson: keep the approved image's camera; change only the pose/room. v5 moved to Old 2.
+- B08-BR clip gen 2 confirmed (use). B18b image v6 confirmed + "CONFIRM GO" → clip gen 3 on Kie AI Kling (5 s, preflight PASS, 18.5 MB split in two on the board). Straps hold to about 2.8 s; from about 3.1 s the strap on the left of frame twists and flips (peaks pointing down) as she keeps walking down several stairs — suggested "Use only up to here" ≈ 2.8 s.
+- B18b video Fix "FAST WALKING DOWN TO STAIR NOT STOPPING" → gen 4 prompt ready (brisk, one step per 0.8 s, no pause, straps rigid, 4 s; speed finished in the edit per §27G rule 9). Preflight holds it for the user's GO (4th generation). Card left on `regenerate`.

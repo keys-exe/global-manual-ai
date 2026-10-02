@@ -138,7 +138,7 @@ def anat(state, view=None, stack="ANAT-A", slots=None):
 
 
 NBP, NB2 = "nano_banana_pro", "nano_banana_2"
-REFS = {"R1": ("R1-MAUREEN sheet", "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"), "R2": ("R2-DESMOND sheet", "9f0903d2-b148-4273-93b6-e4227a87d9f6"),
+REFS = {"HK1AV1": ("HK1-a v1 (Kie)", "c3060a68e72e48f949418fe86d0c204d"), "R1": ("R1-MAUREEN sheet", "fd75b478-6a1b-4a8f-ba80-d20f272f65b0"), "R2": ("R2-DESMOND sheet", "9f0903d2-b148-4273-93b6-e4227a87d9f6"),
         "P1": ("P1-PROP-M plate", "520de2e7-e577-4afe-b18c-b79dbed0acf0"), "P2": ("P2-PROP-D plate", "68ddef76-e5b0-4947-966f-cda7e00335c2"),
         "P3": ("P3-STREET plate", "c19e14a9-5146-4444-8b83-e765dfdc3f8f"),
         "P4": ("P4-KITCHEN plate", "0bedfad5-bf20-4ebd-a862-fed90b55601a"),
@@ -2001,6 +2001,197 @@ B["B22a"] = (NBP, ["B22AV4H", "R1"], (
     "both straps read front-on and large. Soft morning light from the bedroom window. A real phone photo.\n\n"
     "AVOID: no redrawn straps, no hand on a strap, no capital letters, " + P.NEG_WORDMARK + ", no third strap, no face, no stairs, no "
     "extra legs, no extra hands"))
+
+# B10d Fix "DIFFERENT BROLL HERE" (v1 thumb popping a tablet, v2 smoke alarm — both turned down) — "A painkiller turns the alarm off":
+# Maureen at her kitchen counter, side-on, swallowing a painkiller with a glass of water, eyes closed — relief, nothing fixed.
+B["B10d"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone at eye level in her kitchen, side-on. Maureen stands at the worktop, head tipped back a little, eyes "
+    "closed, a plain glass of water at her lips as she swallows a painkiller; her other hand rests flat on the worktop beside a plain "
+    "silver blister pack. A small, tired look of relief. Medium: her from the waist up in profile, the kitchen window soft behind.",
+    R1 + " Wearing the dusty-pink cardigan over a white top.",
+    KITCHEN,
+    angle("B10d", "her at the worktop"),
+    focus("the nearest eye of the woman", deep=False).replace("the room behind", "the kitchen behind"),
+    light("KITCH-L", "her face and the glass"), colour("KITCH-AM").replace("a dusty-pink cardigan cuff and a yellowed photo album", "a dusty-pink cardigan and a white top").replace("the faded orange of the old photograph", "the glass of water")],
+    "no looking into the lens, no smile, no product anywhere, no knee strap, no printing on the blister pack, no pharmacy box, "
+    "no brand names, no readable text, no logos, no second person, no extra hands, no extra fingers"))
+
+# ── 2026-10-01 user "GIVE ME NEW MULTIPLE DIFFERENT BROLL HERE" on Hook 1's first line — four new shots, phrase by phrase. No product
+# (the hook is before the product). Made for Current 2 (Current's store is full).
+B["HK1-a"] = (NB2, ["R2", "P2"], photo([
+    "A snapshot from a phone held low at the side of his staircase, side-on, waist-down. Desmond climbs his stairs carrying two heavy, "
+    "full plastic shopping bags, one in each hand, his front knee deeply bent as it takes his weight on the next stair, the bags pulling "
+    "his arms straight down. Medium: from his waist to his feet, the stairs and the heavy bags filling the frame.",
+    "His legs and hands: THE SAME MAN as in the attached character sheet — dark brown older skin, khaki shorts, white trainers with navy trim.",
+    D_STAIRS,
+    angle("HK1-a", "his legs and the bags on the stairs"),
+    focus("the hands and what they hold", deep=False).replace("the hands and what they hold", "his front knee and the bags").replace("the room behind", "the hall behind"),
+    "Grey morning daylight from the hall window on the left."],
+    NO_FACE + ", no torso above the waist, no product anywhere, no knee strap, no brace, no text on the bags, no logos, no "
+    "supermarket names, no second person, no extra legs, no extra hands"))
+B["HK1-a2"] = (NB2, ["R1", "P3"], photo([
+    "A snapshot from a phone resting on the ground beside her front door, three-quarter on. Maureen's white canvas plimsoll is just "
+    "landing on the worn grey stone of her front-door step, the weight coming down onto it; the hem of her denim skirt and her bare "
+    "ankle just in frame above. Extreme close-up: the plimsoll and the stone step fill the frame, the front path soft beyond.",
+    "Her foot: THE SAME WOMAN as in the attached character sheet — pale older skin, a white canvas plimsoll.",
+    "Her terraced house front from the attached street plate (Image 2), soft beyond.",
+    angle("HK1-a2", "her foot on the step"),
+    focus("the foreground"),
+    "Grey morning daylight, soft and even."],
+    NO_FACE + ", no knee strap, no product anywhere, no logos on the plimsoll, no second foot in focus, no extra feet, no extra toes"))
+B["HK1-b"] = (NB2, ["R1", "P4"], photo([
+    "A snapshot from a phone held just above and behind her shoulder, looking down. Maureen's older hand holds a small faded 1980s "
+    "colour photograph: in it, her younger self — about thirty, the same face, dark hair — striding out on a green hillside in walking "
+    "boots, laughing. Her thumb rests on the photo's white border. Close: her hand and the photograph fill the frame, the pale oak "
+    "kitchen table soft below.",
+    "Her hand: THE SAME WOMAN as in the attached character sheet — slim, pale, faintly freckled older skin, a plain gold wedding ring, "
+    "a dusty-pink cardigan cuff.",
+    angle("HK1-b", "her hand and the photograph"),
+    focus("the hands and what they hold", deep=False).replace("the room behind", "the table below"),
+    "Soft overcast daylight from the kitchen window on the left."],
+    NO_FACE + " of the older woman, no product anywhere, no knee strap, no text on the photograph, no date stamp, no second photograph, "
+    "no extra fingers"))
+B["HK1-b2"] = (NB2, ["R1", "P3"], photo([
+    "A snapshot from a phone at eye level on the pavement, looking straight up her short front path. Maureen comes up the path towards "
+    "the camera with a full cotton shopping bag over one arm, mid-stride, smiling easily, relaxed and unhurried, as if nothing in the "
+    "world is wrong. Medium: her from the knees up, her terraced house and front door behind her.",
+    R1 + " Wearing a dusty-pink cardigan over a white top and a mid-blue denim skirt.",
+    "Her terraced house front from the attached street plate (Image 2).",
+    angle("HK1-b2", "her coming up the path"),
+    focus("everything"),
+    "Soft grey morning daylight."],
+    "no looking into the lens, no knee strap, no product anywhere, no text on the bag, no logos, no second person, no extra hands"))
+
+# ── 2026-10-01 "FIX THOSE" + board notes (HK1-a "FIX BROLL", HK1-b "DIFFERENT BROLL"). HK1-a: edit of its v1 — only the trainers' logo
+# goes. HK1-a2: the step is her front-door step (door + mat behind), not a kerb. HK1-b: new shot for "for forty years" — her stair carpet
+# worn thin down the middle of every tread. HK1-b2: shot from her doorstep so the frame is her front path, not the pavement.
+B["HK1-a"] = (NB2, ["HK1AV1"], (
+    "Edit Image 1. Keep everything in Image 1 exactly as it is — the same man, his khaki shorts, his hands, the two shopping bags, the "
+    "stairs, the carpet, the photos on the wall, the light, the framing and the angle. Change one thing only: his white trainers become "
+    "plain white leather trainers with a navy heel tab and navy laces, with NO logo, no swoosh, no stripe and no marking of any kind on "
+    "the sides. Nothing else changes.\n\nAvoid: any logo or brand mark on the shoes, any change to the bags, legs, stairs or framing, "
+    "text, extra hands, extra legs."))
+B["HK1-a2"] = (NB2, ["R1", "P3"], photo([
+    "A snapshot from a phone resting on the ground on her front path, three-quarter on, looking at her front door. Maureen's white canvas "
+    "plimsoll is just landing on the worn grey stone doorstep of her house, the weight coming down onto it; the hem of her denim skirt and "
+    "her bare ankle just in frame above. Directly behind the step: the bottom of her open white front door, and a brown "
+    "coir doormat inside. Extreme close-up: the plimsoll and the stone doorstep fill the frame, the door soft behind.",
+    "Her foot: THE SAME WOMAN as in the attached character sheet — pale older skin, a white canvas plimsoll.",
+    "Her house front from the attached street plate (Image 2).",
+    angle("HK1-a2", "her foot on the doorstep"),
+    focus("the foreground"),
+    "Grey morning daylight, soft and even."],
+    NO_FACE + ", no pavement, no kerb, no road, no knee strap, no product anywhere, no logos on the plimsoll, no second foot in focus, "
+    "no extra feet, no extra toes"))
+B["HK1-b"] = (NB2, ["R1", "P1"], photo([
+    "A snapshot from a phone held high on the stairs, looking down the flight at a three-quarter angle. The oatmeal wool stair carpet is "
+    "worn thin and greyish down the middle of every tread, a pale flattened path where forty years of footsteps have gone. Maureen's white canvas plimsoll is settling onto the worn patch of the stair just below the "
+    "camera, her bare ankle and the hem of her denim skirt above it. Close: two or three treads and her foot fill the frame.",
+    "Her foot: THE SAME WOMAN as in the attached character sheet — pale older skin, a white canvas plimsoll.",
+    "THE SAME STAIRS as the attached house plate: pale duck-egg blue walls, white skirting, white spindles, a honey oak handrail.",
+    angle("HK1-b", "her foot on the worn stair"),
+    focus("the foreground"),
+    "Grey morning daylight from the half-landing window above."],
+    NO_FACE + ", no knee strap, no product anywhere, no holes in the carpet, no stains, no logos, no text, no second person, no extra feet"))
+B["HK1-b2"] = (NB2, ["R1", "P3"], photo([
+    "From her doorstep at eye level, down her short front-garden path. Maureen walks up the path towards the camera, a cotton "
+    "shopping bag on one arm, smiling. Garden paving under her, a lawn beside; the open gate and street behind. Medium, knees up.",
+    R1 + " Wearing a dusty-pink cardigan over a white top and a mid-blue denim skirt.",
+    "Image 2 is the street behind her.",
+    angle("HK1-b2", "her coming up the path"),
+    focus("everything"),
+    "Soft grey morning daylight."],
+    "no pavement under her feet, no looking into the lens, no knee strap, no product anywhere, no text on the bag, no second "
+    "person, no extra hands"))
+
+# ── 2026-10-01 user "MAKE ME A DIFFERENT BROLLS FOR OUR HOOK 1, WITH ANATOMY": the four Hook 1 shots become anatomy, one per phrase,
+# each a different view from the body's anatomy beats (B04c down the stairs, B05 cartilage profile, B06 effects, HK2-a tendon ECU).
+FIG = lambda t: (t.replace("A stylised anatomical model of a single knee", "A stylised anatomical model of a figure from the waist down")
+                  .replace("no second limb, ", "").replace("no people, ", "")
+                  .replace(", the limb falling away out of frame at both ends", ", the feet on the steps"))
+B["HK1-a"] = (NB2, [], FIG(anat(
+    "Seen from low at the side, in profile: a translucent anatomical figure from the waist down STEPPING UP A SHORT FLIGHT OF STAIRS — "
+    "four simple dark translucent steps rising across the frame from left to right, faintly edge-lit so each step reads clearly. The "
+    "leading foot is planted flat on the higher step and that knee is bent deeply, close to a right angle, taking the whole body's weight "
+    "as it drives up; the trailing leg is straightening on the step below, its heel lifting. Both legs are dark translucent silhouettes with "
+    "only the leading knee's patellar tendon legible inside, glowing hard where the weight comes onto it. " + S("ANAT-HOT") + " "
+    + P.ANAT_A_POINT_TIGHT,
+    view="viewed from low at the side, in profile, a figure from the waist down stepping up a short flight of steps, both legs in frame, "
+         "the deeply bent leading knee in the middle of the frame", stack="ANAT-C", slots={"[STACK]": "the surrounding soft tissue"})))
+B["HK1-a2"] = (NB2, [], anat(
+    "Seen from directly above, looking straight down: one knee bent over the edge of a single simple dark translucent step, the foot just "
+    "landing flat on the step below the knee, the step's front edge a thin clean line of edge-light across the lower frame. The rounded "
+    "kneecap sits in the middle of the frame with the patellar tendon running down from its lower edge towards the shin; the tendon is "
+    "drawn taut as the foot lands and the spot just below the kneecap is glowing. " + S("ANAT-HOT") + " " + P.ANAT_A_POINT_TIGHT,
+    view="viewed from directly above, looking straight down onto the front of the bent knee, the kneecap in the middle of the frame, the "
+         "thigh running up out of the top of the frame and the shin down to the foot on the step"))
+B["HK1-b"] = (NB2, [], anat(
+    "Seen from the front three-quarter, close, the joint opened in a clean cutaway: the rounded end of the thigh bone filling the upper "
+    "frame, and on it the cartilage layer that should be smooth and pearly is WORN — dulled to a tired yellow-grey, thinned to almost "
+    "nothing in a patch at the front where the load lands, its surface roughened and finely pitted like old worn stone, the edges of the "
+    "patch frayed. The top of the shin bone sits below with its own thin, worn lining. Just in front of the joint, at the patellar tendon "
+    "below the kneecap, one small low ember of warm light, dim and steady, as if it has been glowing quietly for years. Everything else "
+    "is calm; no bright emission anywhere.",
+    view="viewed from the front three-quarter, close, the knee joint cut away cleanly so the worn cartilage on the end of the thigh bone "
+         "fills the upper middle of the frame", stack="ANAT-B",
+    slots={"[TARGET]": "the cartilage lining the joint surfaces"}).replace("the patellar tendon crisp", "the cartilage crisp"))
+B["HK1-b2"] = (NB2, [], anat(
+    "Seen straight from the front at eye level, wide: a WHOLE translucent anatomical human figure, head to toe, walking calmly towards "
+    "the camera mid-stride on a flat dark floor, arms swinging loosely, shoulders relaxed, an easy unhurried walk. The figure is a faint "
+    "glass-like silhouette with the skeleton dimly legible inside, everything calm and cool — except ONE small tight spot just below the "
+    "kneecap of the leading leg, glowing warm and bright, the only warm light in the whole frame. The figure carries on as if nothing is "
+    "there. " + P.ANAT_A_POINT_TIGHT,
+    view="viewed straight from the front at eye level, wide, a whole figure from head to toe walking towards the camera, the glowing knee "
+         "in the lower middle of the frame", stack="ANAT-C", slots={"[STACK]": "the surrounding soft tissue"})
+    .replace("A stylised anatomical model of a single knee", "A stylised anatomical model of a whole human figure, head to toe")
+    .replace("no second limb, ", "").replace("no people, ", "")
+    .replace(", the limb falling away out of frame at both ends", ", the feet on the floor").replace("no hands, ", ""))
+
+# ── 2026-10-01 B18b board Fix "GIVE ME DIFFERENT BROLL HERE, MAKE SURE PRODUCT IS RIGHT" (v4: wide, coming down, straps small and
+# redrawn). New shot for "They stop planning the stairs before they get to them.": built from the confirmed B22a v4 so its two approved
+# straps carry over, front-on and large — she walks straight onto the bottom stair mid-stride, no pause, no hand on the banister.
+REFS.update({"B22AV4L": ("B22a v4 — confirmed, the approved straps (Image 1)", "../broll/B22a_v4.png")})
+B["B18b"] = (NBP, ["B22AV4L", "R1", "P1"], (
+    "Edit Image 1. Keep BOTH straps EXACTLY as they are in Image 1 — the approved product: the same matte-black shells, the two "
+    "pointed peaks and crisp notch on each with the kneecap seated in it, the chrome slides, the grey lowercase \"stryde\" on each, "
+    "the same size on the leg, one just below EACH kneecap, front-on to the camera, nothing redrawn. Keep her pale legs, the mid-blue "
+    "denim skirt and the white canvas plimsolls. Change the moment: the camera now sits on her staircase a couple of stairs up, level "
+    "with her knees, looking straight out at her as she walks towards it from the hall — mid-stride, not slowing, her right foot already landing "
+    "on the bottom stair and her left heel lifting off the hall floor behind, both knees still front-on with their straps large in "
+    "the middle of the frame. Framed from the skirt hem to her feet, the bottom two stairs and the hall floor around her. She is the "
+    "same woman as in Image 2; her hall and stairs are the ones in Image 3 — oatmeal carpet, white spindles, warm afternoon light. Her "
+    "hands are not in frame. A real phone photo.\n\n"
+    "AVOID: no redrawn straps, no band showing through the notch, no flat peaks, no gap between kneecap and notch, " + P.NEG_WORDMARK +
+    ", no capital letters, no small straps, no third strap, no hand on the banister, no hand in frame, no face, no pausing, no looking "
+    "down at the stairs, no extra legs"))
+
+# ── 2026-10-01 B08-BR board Fix "WRONG WOMAN, FIX THIS" (v1: a longer blonde-white bob, a bigger build — not Maureen). Edit of v1: the
+# hall, framing and pose stay; the woman becomes the R1 cast sheet seen from behind (short white layered crop, slight build, rounded back).
+REFS.update({"B08BRV1L": ("B08-BR v1 — the shot to edit (Image 1)", "../broll/B08-BR_v1.png")})
+B["B08-BR"] = (NB2, ["B08BRV1L", "R1"], (
+    "Edit Image 1. Keep the hall, the stairs, the light, the camera, the framing and her walking pose exactly as they are. Change ONLY "
+    "the woman so she is THE SAME WOMAN as in Image 2 (her character sheet), seen from behind exactly as in the sheet's back view: a "
+    "white British woman of sixty-nine, SHORT AND SLIGHT with narrow shoulders and a small rounded upper back; soft pure-white hair in a "
+    "SHORT LAYERED CROP lifted at the crown, the nape short and showing her neck — no bob, no blonde, no hair over the collar; thin pale "
+    "legs with bony knees. She keeps the same clothes as in Image 2: a dusty-pink cardigan, the navy-and-white striped hem showing below "
+    "it, the navy A-line skirt above the knee, white canvas plimsolls. Her face is not visible. A real phone photo.\n\n"
+    "AVOID: no bob haircut, no blonde or yellow hair, no hair touching the collar, no broad shoulders, no tall build, no face, no change "
+    "to the hall, no second person"))
+
+# ── 2026-10-01 B18b Fix "WRONG PRODUCT AND SHOULD BE GOING DOWN TO STAIR" (v5: changing the camera made the model redraw both straps
+# as plain bands). B22a v4 already shows her standing on her stairs facing down the flight, front-on, both approved straps large —
+# so keep its camera, framing and straps untouched and change ONLY her step: one foot coming down onto the stair below.
+B["B18b"] = (NBP, ["B22AV4L"], (
+    "Edit Image 1. Keep EVERYTHING in Image 1 exactly as it is — the camera, the framing, the light, the carpeted stairs and white "
+    "spindles, the denim skirt, her pale legs and BOTH STRAPS. The two straps are the real product: keep them pixel for pixel — the "
+    "matte-black shells with two pointed peaks and the crisp notch under each kneecap, the chrome slides, the grey lowercase "
+    "\"stryde\" on each, the same size and the same place just below each kneecap. Do not redraw them. Change ONLY her step: she is "
+    "walking DOWN the stairs towards the camera — her right foot (on the left of the frame) is coming down onto the stair below, its "
+    "white plimsoll just landing on the edge of that stair, that knee bending a little; her left foot stays on the stair above, taking "
+    "her weight. Both knees stay front-on with their straps facing the camera. A real phone photo.\n\n"
+    "AVOID: no redrawn straps, no plain bands, no neoprene, no straps without peaks, no band showing through the notch, "
+    + P.NEG_WORDMARK + ", no capital letters, no small straps, no third strap, no change of camera angle, no hands in frame, no face, "
+    "no extra legs"))
 
 if __name__ == "__main__":
     out = HERE / "prompts"; out.mkdir(exist_ok=True)

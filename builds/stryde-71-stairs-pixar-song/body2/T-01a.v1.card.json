@@ -1,0 +1,99 @@
+{
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "3d47315c864ff0dfbd4087a2d1fc770e",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214014_ec83a101-c506-42d1-951f-9fbcc3aad14c.png",
+   "job": "ec83a101-c506-42d1-951f-9fbcc3aad14c",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "at": 1790890992104,
+   "refs": [
+    {
+     "label": "P3-RECEPTION plate (confirmed)",
+     "kind": "location",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "kind": "style",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "first pair · what I see: A: the bride at the table in three-quarter view, an older guest across from her · B: the bride with two older guests in suits; both closed-mouth smiles"
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "12d092069fcaf5578980cda851107d17",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_26fcf4af-c31c-4e27-8105-cd590e3e9795.png",
+   "job": "26fcf4af-c31c-4e27-8105-cd590e3e9795",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "at": 1790890992104,
+   "refs": [
+    {
+     "label": "P3-RECEPTION plate (confirmed)",
+     "kind": "location",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "kind": "style",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "first pair · what I see: A: the bride at the table in three-quarter view, an older guest across from her · B: the bride with two older guests in suits; both closed-mouth smiles"
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageStatus": "review",
+ "status": "ready",
+ "imageAsset": "3d47315c864ff0dfbd4087a2d1fc770e",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214014_ec83a101-c506-42d1-951f-9fbcc3aad14c.png",
+ "imageJob": "ec83a101-c506-42d1-951f-9fbcc3aad14c",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790890992104,
+ "imagePrompt": "For the line \"Then my grandbaby got married in June.\": Keep this photo exactly as it is — the banquet hall, the round tables and gold chairs, the string lights and chandeliers, the evening light — at a table by the dance floor, a tall 9:16 crop, and add the bride and two guests. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nMedium shot at eye level, sharp on the bride: a young Black bride in a white gown, seated at the round table in three-quarter view facing frame left toward an older guest, a wide closed-mouth smile, eyes crinkled, looking at the guest; her right hand on the guest's forearm, her left hand on the tablecloth, four chunky fingers and a thumb on each; two older guests in dark suits beside her, smiling, hands on the table. Scale true to the set: the chair back comes up to her shoulders.\nIn frame: the bride, two guests, one table with glasses and a hydrangea centrepiece, the hall of Image 1 soft beyond; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Gown and decor plain — no lettering, logos or labels.",
+ "imageMatch": "plate",
+ "imageRefs": [
+  {
+   "label": "P3-RECEPTION plate (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-05c"
+  }
+ ],
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "motionPlan": "From this frame: the bride throws her head back laughing — one laugh, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "framing": "MEDIUM: the bride in white laughing with guests at a reception table, string lights overhead",
+ "updatedAt": 1790890992104
+}

@@ -1,0 +1,80 @@
+{
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Hook 1",
+ "stage": "broll",
+ "beat": "P-03a",
+ "title": "failed fix",
+ "line": "That big knee brace I bought slid right down my leg.",
+ "location": "L-N-KITCHEN",
+ "shot": "low · profile · clean · CU",
+ "angle": "low · profile · clean · CU — low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14)",
+ "framing": "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a short black hinged knee brace — a hand's length above and below the knee — sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new; the brace a bit more short)",
+ "motionPlan": "From this frame: her hand pulls the brace up once and it slips back — one pull, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "imagePrompt": "For the line \"That big knee brace I bought slid right down my leg.\": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chairs, the floor, the light — in close at the near chair from the side, a tall 9:16 crop, and add the seated woman. Image 1 is the kitchen.\nMedium close-up from the side at knee height, sharp on the brace: an older Black woman sitting on the chair, her right leg out a little, a short black hinged knee brace — a hand's length above and below the knee, two wide straps, a small round hinge each side — slid down below the kneecap, sagging at her shin, her right hand hauling its top strap back up, her left hand flat on the chair seat; a faded blue floral house dress at mid-thigh, pink terry slippers flat on the floor; her head and shoulders out of frame above.\nIn frame: the seated woman from the shoulders down, two hands placed, the brace, two slippers, the chair and table edge of Image 1; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Brace and dress plain — no lettering, logos or labels; nobody else.",
+ "imageModel": "nano_banana_pro → logged nano_banana_2",
+ "imageConnector": "Higgsfield",
+ "imageRes": 7664316,
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  }
+ ],
+ "flow": [
+  "image",
+  "video"
+ ],
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "imageVersions": [
+  {
+   "asset": "185b07ceefb5019858b4016428c40ed1",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "3badbfc6-55a7-4f86-867f-2e548dff448a",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW\" → a short hinged brace, a hand's length above and below the knee, same seat and side · replaced on the user's Fix (THE BRACE SHOULD BE IN SHOULD ONE KNEE — the lower cuff read as sitting on the other leg); kept on Old versions 2",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7664316,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_3badbfc6-55a7-4f86-867f-2e548dff448a.png",
+   "v": 7
+  }
+ ],
+ "imageAsset": "185b07ceefb5019858b4016428c40ed1",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_3badbfc6-55a7-4f86-867f-2e548dff448a.png",
+ "videoVersions": [
+  {
+   "asset": "4fe789429962df5d7a513a0163fc95c2",
+   "at": 1790883912351,
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "fromImage": 7,
+   "job": "AfszUQXa2NJvQMWZiLir0TVIBk3DrIp085kuSgXLfsHogrVLLTq06OCdS-TH_bQJkRbMTioF",
+   "model": "kling-video-v3_0",
+   "note": "from the confirmed image v7 A · what I see: the hand pulls the short brace's strap up, it sags back; seated, nobody speaks · its image was replaced on the user's Fix; kept on Old versions 2",
+   "res": "1072×1928",
+   "size": 5413890,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/811ec0a2-9b44-4851-b90a-1101445c2500-wt3OGYe2W1EDPuCoTQi0Zg-output.mp4?x-kcdn-pid=112372",
+   "v": 2
+  }
+ ],
+ "videoAsset": "4fe789429962df5d7a513a0163fc95c2",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/811ec0a2-9b44-4851-b90a-1101445c2500-wt3OGYe2W1EDPuCoTQi0Zg-output.mp4?x-kcdn-pid=112372",
+ "credits": 40,
+ "duration": 5.04,
+ "videoConnector": "Kling",
+ "model": "kling-video-v3_0",
+ "prompt": "For the line \"That big knee brace I bought slid right down my leg.\": From this frame: her hand pulls the brace up once and it slips back — one pull, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the side at knee height, her right hand hauls the short brace's top strap up over the kneecap in one pull, holds a moment, and the brace sags back down below the kneecap as the hand eases; her left hand stays on the chair seat; she stays seated, nobody speaks; the chair, the slippers and the kitchen behind stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame, the brace rigid in shape. No camera travel; nobody else; no cut; the brace never changes design.",
+ "imageFault": "user 2026-10-01: THE BRACE SHOULD BE IN SHOULD ONE KNEE",
+ "note": "Old versions 2 (overflow board): P-03a image v7 A (the user's earlier pick) and the clip v2 made from it; v1–v6 / v8 and clip v1 are on the first Old board.",
+ "updatedAt": 1790886305163
+}

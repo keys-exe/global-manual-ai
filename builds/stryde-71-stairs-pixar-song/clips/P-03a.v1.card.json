@@ -1,0 +1,41 @@
+{
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "95875f4ed089d74ac741bb61b17982f1",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1017ce2d-ffc8-428b-b69b-20a9ed73df62-e-nEESpF53HY1t_krqSZMw-output.mp4?x-kcdn-pid=112372",
+   "job": "ASsv-c2Z7kgWhoKQ7Qb6ejvwDkji5hJh8wpYyXvGn45-zYb2kZubVdDvifu4LpSJv9tlKWI7",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 40,
+   "size": 7243594,
+   "res": "1072×1928",
+   "duration": 5.04,
+   "at": 1790878081408,
+   "fromImage": 3,
+   "note": "from the confirmed image v3 A (job 549092c2) · what I see: one pull up, the brace sags back; the kitchen holds"
+  }
+ ],
+ "videoAsset": "95875f4ed089d74ac741bb61b17982f1",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1017ce2d-ffc8-428b-b69b-20a9ed73df62-e-nEESpF53HY1t_krqSZMw-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "ASsv-c2Z7kgWhoKQ7Qb6ejvwDkji5hJh8wpYyXvGn45-zYb2kZubVdDvifu4LpSJv9tlKWI7",
+ "videoConnector": "Kling",
+ "model": "kling-video-v3_0",
+ "credits": 40,
+ "duration": 5.04,
+ "videoRes": "1072×1928",
+ "videoAt": 1790878081408,
+ "prompt": "For the line \"That big knee brace I bought slid right down my leg.\": From this frame: her hand pulls the brace up once and it slips back — one pull, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. In close on her knee, her right hand hauls the brace's top strap up over the kneecap in one pull, holds a moment, and the brace sags back down below the kneecap as the hand eases; her left hand stays on the table edge; the knee, the slipper and the kitchen behind stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame, the brace rigid in shape. No camera travel; nobody else; no cut; the brace never changes design.",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "videoNote": "first clip of this beat, from the confirmed v3 A · what I see: one pull up, the brace sags back; the kitchen holds",
+ "status": "review",
+ "updatedAt": 1790878081408
+}

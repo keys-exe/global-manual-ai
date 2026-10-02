@@ -1,1 +1,191 @@
-{"build": "stryde-71-stairs-pixar-song", "act": "Act 2", "stage": "broll", "beat": "T-02a", "title": "turn", "line": "and she was out on that dance floor all night.", "status": "planned", "flow": ["image", "video"], "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION", "imageModel": "nano_banana_pro · 2k · 9:16 · A/B pair", "duration": 5, "songIn": 48.66, "songOut": 51.91, "onScreen": 3.25, "section": "The turn — MUS-TURN", "bars": 1.0, "key": "floor", "location": "L-RECEPTION", "storyDay": "N-D2", "framing": "WIDE: a line of guests doing a line dance, Loretta in the middle of the line, stepping in time", "motionPlan": "From this frame: one side step with the line — one step per beat, about a second; camera RV sway — the virtual camera breathes in place, never travels", "staging": "dancing: wide, side step, camera still", "pinEnd": "no", "angle": "eye · front · through · WIDE — through the guests = we're watching from our table", "focus": "deep · deep", "light": "warm string lights and chandeliers · key L · evening · turn: warm party light · 3200K", "product": "worn (under her dress, hidden) · HIDDEN", "layout": "full", "eg": "", "music": "MUS-TURN", "ledger": "VN05", "updatedAt": 1790851958758}
+{
+ "act": "Act 2",
+ "angle": "high · front · clean · WIDE — high over the floor = the whole line moving as one, her in the middle of it",
+ "bars": 1,
+ "beat": "T-02a",
+ "build": "stryde-71-stairs-pixar-song",
+ "duration": 5,
+ "eg": "",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "focus": "deep · deep",
+ "framing": "WIDE from high: the line dance seen from above the tables, Loretta in fuchsia in the middle of the line, stepping in time",
+ "imageAsset": "d218befd4be6398d8e714ae7f0eb79f9",
+ "imageAt": 1790891943025,
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageJob": "6a70a99a-bb3e-4968-8c4e-ea129e3cd76d",
+ "imageMatch": "plate",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  3,
+  4
+ ],
+ "imagePrompt": "For the line \"and she was out on that dance floor all night.\": Keep this photo exactly as it is — the hall, the parquet dance floor, the tables, the string lights and chandeliers, the evening light — seen from high above the tables, a tall 9:16 crop, and add the dancers. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nWide shot from high, looking down on the floor, sharp on the line: seven wedding guests in a line on the parquet, all facing the lens, mid side-step to their right in unison; in the middle an older Black woman with a silver bob in a fuchsia satin dress to the knee and white slip-on sneakers; arms loose, every hand open, four chunky fingers and a thumb. Scale true to the set: the dancers come up to the bottom of the string lights.\nIn frame: seven dancers, the dance floor, the edge of the round tables and the lights of Image 1; every other surface as in Image 1.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Clothing and decor plain — no lettering, logos or labels.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P3-RECEPTION plate (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+  },
+  {
+   "kind": "style",
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "ref": "stryde-71-stairs-pixar-song__P-05c"
+  }
+ ],
+ "imageRes": "1536×2752",
+ "imageStatus": "review",
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17",
+  "HT26"
+ ],
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_6a70a99a-bb3e-4968-8c4e-ea129e3cd76d.png",
+ "imageVersions": [
+  {
+   "asset": "65334c609f4fba0eb7774350cca40671",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "ef04c94b-37c7-4828-b4e5-2ba9325aad8a",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: a line of guests mid side-step on the parquet, Loretta in royal blue and white slip-ons in the middle, chair backs in the foreground · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_ef04c94b-37c7-4828-b4e5-2ba9325aad8a.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "0da332385d9ceace73d198838bb2eb58",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "asset": "d6aaa6c949496cd7939c6cbde199d454",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "5f0b48ab-f3c6-4f78-93db-8e26a034a283",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: a line of guests mid side-step on the parquet, Loretta in royal blue and white slip-ons in the middle, chair backs in the foreground · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_5f0b48ab-f3c6-4f78-93db-8e26a034a283.png",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "a84ec499f85a071643b980ff22b0e6e6",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "d218befd4be6398d8e714ae7f0eb79f9",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_6a70a99a-bb3e-4968-8c4e-ea129e3cd76d.png",
+   "job": "6a70a99a-bb3e-4968-8c4e-ea129e3cd76d",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 9201982,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the line dance from high above the tables, Loretta in fuchsia and white slip-ons in the middle of the line — A six dancers, B seven (one more older woman in pale blue)"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "1dd72107078ac6875a3a0a80e99e7441",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_c7a5b0cb-f63a-4220-8b90-8f0467781ba6.png",
+   "job": "c7a5b0cb-f63a-4220-8b90-8f0467781ba6",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 9058868,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the line dance from high above the tables, Loretta in fuchsia and white slip-ons in the middle of the line — A six dancers, B seven (one more older woman in pale blue)"
+  }
+ ],
+ "key": "floor",
+ "layout": "full",
+ "ledger": "VN05",
+ "light": "warm string lights and chandeliers · key L · evening · turn: warm party light · 3200K",
+ "line": "and she was out on that dance floor all night.",
+ "location": "L-RECEPTION",
+ "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "motionPlan": "From this frame: one side step with the line — one step per beat, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "music": "MUS-TURN",
+ "onScreen": 3.25,
+ "pinEnd": "no",
+ "product": "worn (under her dress, hidden) · HIDDEN",
+ "section": "The turn — MUS-TURN",
+ "songIn": 48.66,
+ "songOut": 51.91,
+ "stage": "broll",
+ "staging": "dancing: wide, side step, camera still",
+ "status": "ready",
+ "storyDay": "N-D2",
+ "title": "turn",
+ "updatedAt": 1790891943025,
+ "imageParts": []
+}

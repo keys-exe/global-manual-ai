@@ -1,0 +1,76 @@
+{
+ "imageVersions": [
+  {
+   "asset": "185b07ceefb5019858b4016428c40ed1",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "3badbfc6-55a7-4f86-867f-2e548dff448a",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"MAKE THE BRACE A BIT MORE SHORT MUCH EASIER TO SHOW\" → a short hinged brace, a hand's length above and below the knee, same seat and side · replaced on the user's Fix (THE BRACE SHOULD BE IN SHOULD ONE KNEE — the lower cuff read as sitting on the other leg); kept on Old versions 2",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7664316,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_3badbfc6-55a7-4f86-867f-2e548dff448a.png",
+   "v": 7
+  },
+  {
+   "asset": "18284a810e06de8400db2c9a9cc13ebe",
+   "at": 1790886423728,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "46dcac67-28db-46a0-b11f-eb05c012dee2",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"THE BRACE SHOULD BE IN SHOULD ONE KNEE\" → an edit of the confirmed v7 A frame changing only the brace: one short hinged brace on her right leg alone, top cuff on the thigh and bottom cuff on the shin of that one leg, her left leg bare and set apart behind it · replaced on the user's Fix (FIX THE IMAGE AND USE THE P03B AS REFERENCE FOR THE BRACE); kept on Old versions 2",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7154317,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_202503_46dcac67-28db-46a0-b11f-eb05c012dee2.png",
+   "v": 9
+  },
+  {
+   "asset": "0be6c808645469a2e088ca6523929b22",
+   "at": 1790886423728,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "5499394b-d0b3-4574-85da-8b6348b3e63d",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"THE BRACE SHOULD BE IN SHOULD ONE KNEE\" → an edit of the confirmed v7 A frame changing only the brace: one short hinged brace on her right leg alone, top cuff on the thigh and bottom cuff on the shin of that one leg, her left leg bare and set apart behind it · replaced on the user's Fix (FIX THE IMAGE AND USE THE P03B AS REFERENCE FOR THE BRACE); kept on Old versions 2",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7161792,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_202502_5499394b-d0b3-4574-85da-8b6348b3e63d.png",
+   "v": 10
+  },
+  {
+   "asset": "be36efa5afa24a1446b0d06b67d2aff5",
+   "at": 1790887275688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "6eb3eafc-8f42-4da4-a9a2-0bb46b840118",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user Fix: \"FIX THE IMAGE AND USE THE P03B AS REFERNCE FOR THE BRACE\" → an edit of the v9 A frame with the confirmed P-03b frame attached as Image 2: the same short black hinged brace — straps, round side hinge and size copied — worn on her right knee only, slid below the kneecap · not chosen (the user picked A); kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "edited": "§6A rule 3, HT17, FP14",
+     "kind": "frame",
+     "label": "P-03a frame v9 A — seated from the side, one brace on the right leg",
+     "ref": "stryde-71-stairs-pixar-song__P-03a"
+    },
+    {
+     "kind": "frame",
+     "label": "P-03b frame v11 A (confirmed) — the brace at her ankle: the brace to copy",
+     "ref": "stryde-71-stairs-pixar-song__P-03b"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_203935_6eb3eafc-8f42-4da4-a9a2-0bb46b840118.png",
+   "v": 12
+  }
+ ],
+ "updatedAt": 1790888310210
+}

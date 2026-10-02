@@ -1,0 +1,49 @@
+{
+ "beat": "P-01a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": From this frame: one careful step down backwards, her back to the lens — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the hall floor looking up the flight, she comes DOWN toward the lens, backwards: her right foot reaches back and lowers onto the step below, her weight follows it, the left foot joins it on that same step — she ends one step lower, a little larger in the frame, farther from the landing, both hands on the rail, her back to the lens; she never climbs, never rises toward the landing; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_185749_c5f6bfae-2afa-42de-bc4c-d7063c3c5646.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Six weeks ago, I was going down my stairs backwards.",
+ "motion_plan": "From this frame: one careful step down backwards, her back to the lens — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one step",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 3,
+ "user_go": "user 2026-10-01: \"FIX THOSE\" on the board Fix \"SHOULD BE GOING BACK WARDS NOT UP\"",
+ "fix_note": "user Fix: SHOULD BE GOING BACKWARDS NOT UP (v2 read as climbing) → the direction named three ways: down toward the lens, larger in the frame, farther from the landing; never climbs (§22X)",
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  }
+ ],
+ "note": "clip v3 of this beat (from the confirmed image v12 B, job c5f6bfae-2afa-42de-bc4c-d7063c3c5646)"
+}

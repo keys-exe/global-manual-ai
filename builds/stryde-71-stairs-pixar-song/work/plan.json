@@ -5,25 +5,14 @@
  "broll": [
   {
    "beat": "HK-01a",
-   "phrase": "I'm seventy-one, and I take the stairs",
+   "phrase": "I'm seventy-one, and I take the stairs faster than women half my age.",
    "key": "stairs",
-   "max": 6,
+   "max": 10,
    "layout": "full",
    "in_cut": 0.0,
    "section": "Hook — MUS-OPEN",
-   "bars": 1.0,
+   "bars": 2.5,
    "clip": "renders/HK-01a.mp4"
-  },
-  {
-   "beat": "HK-01b",
-   "phrase": "faster than women half my age.",
-   "key": "faster",
-   "max": 6,
-   "layout": "full",
-   "in_cut": 3.95,
-   "section": "Hook — MUS-OPEN",
-   "bars": 1.0,
-   "clip": "renders/HK-01b.mp4"
   },
   {
    "beat": "HK-02a",
@@ -126,14 +115,36 @@
   },
   {
    "beat": "P-05a",
-   "phrase": "Every brace and sleeve they make. Nothing worked. Nothing lasted. Nothing gave me my life back.",
-   "key": "Nothing",
-   "max": 6,
+   "phrase": "Every brace and sleeve they make.",
+   "key": "Every",
+   "max": 3,
    "layout": "full",
    "in_cut": 38.09,
    "section": "The low point and what failed — MUS-EXPOSE",
-   "bars": 1.5,
+   "bars": 0.5,
    "clip": "renders/P-05a.mp4"
+  },
+  {
+   "beat": "P-05b",
+   "phrase": "Nothing worked. Nothing lasted.",
+   "key": "worked",
+   "max": 3,
+   "layout": "full",
+   "in_cut": 39.72,
+   "section": "The low point and what failed — MUS-EXPOSE",
+   "bars": 1.0,
+   "clip": "renders/P-05b.mp4"
+  },
+  {
+   "beat": "P-05c",
+   "phrase": "Nothing gave me my life back.",
+   "key": "life",
+   "max": 3,
+   "layout": "full",
+   "in_cut": 42.16,
+   "section": "The low point and what failed — MUS-EXPOSE",
+   "bars": 0.0,
+   "clip": "renders/P-05c.mp4"
   },
   {
    "beat": "T-01a",

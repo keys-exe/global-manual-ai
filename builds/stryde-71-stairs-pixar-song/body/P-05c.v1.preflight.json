@@ -1,0 +1,42 @@
+{
+ "beat": "P-05c",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Nothing gave me my life back.\": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chair, the cabinets, the light — in close across the table, a tall 9:16 crop, and add the woman. Image 1 is the kitchen. Image 2 is the woman.\nClose-up from across the table at her eye level, the heap of braces, sleeves and pill bottles soft in the near foreground at the table's far edge, sharp on her face. The same woman as Image 2, seventy-one, sat back in the chair, shoulders down, eyes on nothing past the lens, mouth closed; faded blue floral knee-length house dress, grey cardigan, pink terry slippers; both hands slack in her lap, out of frame below the table edge. Nobody else.\nIn the frame: her face and shoulders, the chair back, the heap soft in front, the cabinets of Image 1 behind; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink, a catchlight in each eye. Clothing and bottles plain — no lettering, logos or labels; no second person.",
+ "script_line": "Nothing gave me my life back.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "cc6ec5031226aadf6d5a46725855adea",
+ "taste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "make this into 3 brolls (P-05a split)",
+ "product": false
+}

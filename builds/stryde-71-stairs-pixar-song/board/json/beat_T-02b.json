@@ -1,1 +1,191 @@
-{"build": "stryde-71-stairs-pixar-song", "act": "Act 2", "stage": "broll", "beat": "T-02b", "title": "turn", "line": "Electric Slide, Cupid Shuffle, all of it.", "status": "planned", "flow": ["image", "video"], "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION", "imageModel": "nano_banana_pro · 2k · 9:16 · A/B pair", "duration": 4, "songIn": 51.91, "songOut": 54.35, "onScreen": 2.44, "section": "The turn — MUS-TURN", "bars": 1.0, "key": "Slide", "location": "L-RECEPTION", "storyDay": "N-D2", "framing": "CU at floor level: a row of dancing feet on the parquet, Loretta's white slip-ons among them, stepping together", "motionPlan": "From this frame: one step back in unison — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels", "staging": "feet only, one step", "pinEnd": "no", "angle": "ground · front · clean · CU — ground = the steps", "focus": "foreground · medium", "light": "warm string lights and chandeliers · key L · evening · turn: warm party light · 3200K", "product": "absent · —", "layout": "full", "eg": "", "music": "MUS-TURN", "ledger": "VN05", "updatedAt": 1790851958758}
+{
+ "act": "Act 2",
+ "angle": "ground · profile · clean · CU — ground from the side = the step reads as a step",
+ "bars": 1,
+ "beat": "T-02b",
+ "build": "stryde-71-stairs-pixar-song",
+ "duration": 4,
+ "eg": "",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "focus": "foreground · medium",
+ "framing": "CU at floor level from the side: the line's feet in profile on the parquet, Loretta's white slip-ons under a fuchsia hem, stepping together",
+ "imageAsset": "636a90a686c4658ffe86a097367b0d0b",
+ "imageAt": 1790891943025,
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageJob": "910ae0d0-d92f-4feb-92e2-9e22fd82e823",
+ "imageMatch": "plate",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  3,
+  4
+ ],
+ "imagePrompt": "For the line \"Electric Slide, Cupid Shuffle, all of it.\": Keep this photo exactly as it is — the parquet dance floor, the evening light of the string lights — in close at floor level on the dance floor, a tall 9:16 crop, and add the feet. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nClose-up at floor level from the side, sharp on the white sneakers: a row of dancers' feet in profile on the parquet, all pointing frame right, stepping forward together in unison — black dress shoes, gold heels, and nearest the lens a pair of white slip-on sneakers under the hem of a fuchsia satin dress to the knee, brown ankles; legs from the knee down, every foot whole on the floor. Scale true to the set: the fuchsia hem comes up to her knee.\nIn frame: the row of feet, the parquet, the lights soft behind; nothing else on the floor.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Shoes and dress plain — no lettering, logos or labels.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P3-RECEPTION plate (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+  },
+  {
+   "kind": "style",
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "ref": "stryde-71-stairs-pixar-song__P-05c"
+  }
+ ],
+ "imageRes": "1536×2752",
+ "imageStatus": "review",
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17",
+  "HT26"
+ ],
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215353_910ae0d0-d92f-4feb-92e2-9e22fd82e823.png",
+ "imageVersions": [
+  {
+   "asset": "606ccb495443c3db7154beac1d8ed528",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "ecf744f1-2c4e-4301-b419-bd7acab70760",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: a row of feet on the parquet — Loretta's white slip-ons under the royal-blue hem among dress shoes and heels · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_ecf744f1-2c4e-4301-b419-bd7acab70760.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "35cfdb7dff3be5a34bcd04c82d6fffba",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "asset": "f142e65ec8eb2a4bb98e55239b0995ba",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "95b6b9ab-1ac3-470d-8988-745f8d15cf0a",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: a row of feet on the parquet — Loretta's white slip-ons under the royal-blue hem among dress shoes and heels · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214016_95b6b9ab-1ac3-470d-8988-745f8d15cf0a.png",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "ca1bca919995a6873e7d6fda8bfd2f85",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "636a90a686c4658ffe86a097367b0d0b",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215353_910ae0d0-d92f-4feb-92e2-9e22fd82e823.png",
+   "job": "910ae0d0-d92f-4feb-92e2-9e22fd82e823",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6982715,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: her white slip-ons under the fuchsia hem at floor level, dress shoes and gold heels in the row beside her — A three-quarter from the side, B closer from the side"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "2beb68a2cdb51877da2fcb4d606c67f6",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_71c310ea-7ab8-4030-bd85-1694b3cd439f.png",
+   "job": "71c310ea-7ab8-4030-bd85-1694b3cd439f",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7113795,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: her white slip-ons under the fuchsia hem at floor level, dress shoes and gold heels in the row beside her — A three-quarter from the side, B closer from the side"
+  }
+ ],
+ "key": "Slide",
+ "layout": "full",
+ "ledger": "VN05",
+ "light": "warm string lights and chandeliers · key L · evening · turn: warm party light · 3200K",
+ "line": "Electric Slide, Cupid Shuffle, all of it.",
+ "location": "L-RECEPTION",
+ "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "motionPlan": "From this frame: one step forward in unison — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "music": "MUS-TURN",
+ "onScreen": 2.44,
+ "pinEnd": "no",
+ "product": "absent · —",
+ "section": "The turn — MUS-TURN",
+ "songIn": 51.91,
+ "songOut": 54.35,
+ "stage": "broll",
+ "staging": "feet only, one step",
+ "status": "ready",
+ "storyDay": "N-D2",
+ "title": "turn",
+ "updatedAt": 1790891943025,
+ "imageParts": []
+}

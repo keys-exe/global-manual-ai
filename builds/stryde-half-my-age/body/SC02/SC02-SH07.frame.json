@@ -1,0 +1,48 @@
+{
+ "beat": "SC02-SH07",
+ "kind": "image",
+ "mode": 4,
+ "prompt": "For the line \"If I’m being honest, some days I wasn’t going down them at all. I’d just stay upstairs.\": some days she gives up and stays upstairs. A close profile shot at her eye level, 85mm lens, very shallow focus on her eye; her face fills the left half of the frame, the right half open toward the window. the woman from Image 2 — face, steel-grey bob with its heavy fringe and small slight build copied exactly, in a pale-blue quilted dressing gown, sits on the edge of her bed. Her hands rest in her lap, one thumb over the other hand; her eyes on the window and the grey garden, wet but no tears, mouth still. Image 1 is this bedroom: behind her, far out of focus, the net curtains and the dark-wood chest of drawers. Flat grey afternoon daylight through the nets, 6500K, falls on the front of her face; the back of her head in shadow. Clothing and bags plain and unbranded. A still from a British prestige drama, ARRI Alexa, natural colour, real texture.",
+ "script_line": "If I’m being honest, some days I wasn’t going down them at all. I’d just stay upstairs.",
+ "refs": [
+  {
+   "kind": "location",
+   "label": "Her bedroom from the doorway",
+   "ref": "stryde-half-my-age__L-BEDROOM",
+   "job": "1af15221-e405-4725-9b43-e006f801af2e",
+   "role": "Image 1"
+  },
+  {
+   "kind": "character",
+   "label": "Her — cast sheet (face, hair, build)",
+   "ref": "stryde-half-my-age__N-HER",
+   "job": "30fd2bc8-17e3-4e27-b2cf-8225e00b088c",
+   "role": "Image 2"
+  }
+ ],
+ "face": true,
+ "body": true,
+ "room": true,
+ "product": false,
+ "match": null,
+ "edit_of": null,
+ "pair": [
+  "gpt_image_2",
+  "gpt_image_2"
+ ],
+ "model": "gpt-image-2 image-to-image · 9:16 (Kie AI)",
+ "model_override": "user 2026-10-01: \"use gpt image 2 and not sunburst, re do all the scene 2\" — overrides the §18A Sunburst routing for this build's body frames",
+ "role": "key",
+ "motion_plan": "From this frame: she sits still, eyes on the window; she blinks once and her thumb moves over her other hand; nothing else moves.",
+ "scene": 2,
+ "taste": [
+  "HT02",
+  "HT04",
+  "HT09",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "generation": 3,
+ "fix_note": "i want new ones the all of theme are not good (scene 2)"
+}

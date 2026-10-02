@@ -1,0 +1,56 @@
+{
+ "beat": "HK-01a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"I'm seventy-one, and I take the stairs faster than women half my age.\": From this frame: three quick steps up, N pulling away; the two women behind her climb slowly and fall further back — one step per second for N, half that for the women; camera RV sway — the virtual camera breathes in place, never travels. Seen from the foot of the flight, the older woman in the green dress and hat climbs three steps, one per second, hands free and clear of the rails, her head up toward the doors; the two younger women below her take one slow step each, the gap between them and her widening. The viewpoint stays at the foot; the flight, the rails and the doors stay exactly as in the frame. Stylized 3D animation, all three exactly on model from the frame, the green hem swinging with each step. No camera travel; no fourth person; no cut; nobody turns to the lens.",
+ "duration": 8,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_163540_6423cc60-d482-430e-a5b9-c41b1fd73906.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "I'm seventy-one, and I take the stairs faster than women half my age.",
+ "motion_plan": "From this frame: three quick steps up, N pulling away; the two women behind her climb slowly and fall further back — one step per second for N, half that for the women; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "brisk",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "risk_class": "stairs",
+ "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
+ "pilot": "confirmed",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT09",
+  "HT12",
+  "HT13",
+  "HT22",
+  "HT24"
+ ],
+ "risks": [
+  {
+   "risk": "legs and steps blend",
+   "prevented_by": "one step per second, three steps, camera still, every step whole"
+  },
+  {
+   "risk": "a hand lands on the rail (HT03)",
+   "prevented_by": "hands free and clear of the rails"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "a woman turns to the lens",
+   "prevented_by": "nobody turns to the lens; backs to the lens as in the frame"
+  }
+ ],
+ "note": "new frame (v13 A, the plaza) — the two earlier clips were from the home-stairs frames"
+}

@@ -1,0 +1,48 @@
+{
+ "beat": "HK-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Mama, when did that happen?\": at the top of the great flight, over the mother's near shoulder, the daughter arriving on the top step below, face up to her, mouth open mid-word, the city dropping away behind her. Image 1 is the mother. Image 2 is her daughter. Image 3 is the plaza steps.\nMedium close-up from the top landing over the mother's right shoulder: the same woman as Image 1 stands on the landing back to the lens, her green shoulder and black hat brim soft in the near right foreground. The same woman as Image 2 on the 30th and top step, one step down, right hand on the steel handrail, left hand on her chest, face up to her mother, both eyes on her, mouth open mid-word; olive-green crewneck sweatshirt, black denim shorts, white trainers; sharp. Behind her the flight of Image 3 falls away to the plaza and the towers.\nIn the frame: the two women, the one flight, the handrails, the plaza and towers below; every other surface bare. Two hands on the daughter, two legs.\nA final frame from a 3D animated feature film, stylized storybook render, hard afternoon sun from the right, a catchlight in each eye. Clothing plain — no lettering, logos or labels; no third person.",
+ "script_line": "Mama, when did that happen?",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character"
+  },
+  {
+   "label": "C2-DAUGHTER sheet v2",
+   "kind": "character"
+  },
+  {
+   "label": "P8-PLAZA plate",
+   "kind": "location"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT05",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22",
+  "HT05",
+  "HT23"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user: new, more powerful hooks — the plaza"
+}

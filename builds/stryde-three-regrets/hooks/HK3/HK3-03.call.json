@@ -3,28 +3,38 @@
  "connector": "kling",
  "mode": 1,
  "kind": "broll",
- "prompt": "{\"shot\":\"hk3_joan_clock\",\"subject\":\"THE SAME WOMAN as in the start frame, 79, small and slight, thick white pixie crop, heather-purple twinset, in the rose-pink wing chair; exactly as in the start frame, unchanged in every respect.\",\"camera\":{\"movement\":\"Already drifting on frame one. Low breath sway throughout, vertical with slight roll. Brief focus hunt at entry. One late partial reframe. Camera lags the subject, never anticipates. Still drifting at the cut.\",\"framing\":\"MCU as in the start frame: eye height, three-quarter, chest-up in the chair. FOCUS: the nearest eye is sharp; the room falls soft.\"},\"motion\":\"CONTINUING: her eyes are already lifting to the carriage clock on the mantel, off frame right. COMPLETING: one look, about two seconds — her head finishes rising, her eyes rest on the clock, a slow blink, the faintest patient breath out. UNRESOLVED: she keeps looking at the clock, hands still in her lap. The net curtain behind her stirs once. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. One small movement, completing inside the clip, subject fully in frame throughout, nothing leaving frame and returning. Mass and momentum in all movement: heavy starts and settles slow, nothing at uniform speed, nothing stops instantly — motions decelerate into a settle or small overshoot; actions travel through the body, weight transferring first, hands arriving last; hair, fabric and straps lag and keep moving after the body stops; objects drag with friction, never glide.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"Unremarkable phone clip, grey even afternoon light through the nets from the left, no grade.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no flickering light, no exposure pumping, no changed face, no glancing at the lens, no smiling at the camera, no crying, no standing up, no talking, no slow motion, no music\"}",
  "duration": 3,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260928_145712_c899337a-52cb-4e87-acc9-7f1cf275d44d.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20260930_174142_1a496eff-2af5-4884-8baa-2ee7bded827c.png",
  "start_approved": true,
  "pinned": false,
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
- "generation": 1,
+ "audio": false,
+ "prompt": "For the line \"The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.\": from this frame, she pushes once on the armchair seat with her right hand, lifts a few centimetres, winces harder and sinks back onto the carpet, her left hand still on her knee — one small effort, about three seconds, slow — ending seated as she was. Handheld phone, a gentle breath sway, the camera stays where it is, high in the doorway. She stays on the floor; the armchair, side table and telephone stay put; one slipper stays on the carpet; two hands, every finger whole. No standing up, no second person, no furniture moving, no extra fingers, no sound.",
+ "script_line": "The most common regret I read is not about surgery. It is not about painkillers. It is not about waiting too long. It is about two centimetres.",
+ "motion_plan": "she pushes once on the armchair seat with her right hand, lifts a few centimetres, winces harder and sinks back onto the carpet, her left hand still on her knee — one small effort, about three seconds, slow — ending seated as she was",
+ "motion_confirmed": true,
+ "taste": [
+  "HT02",
+  "HT12",
+  "HT13"
+ ],
+ "generation": 2,
+ "fix_note": "frame fault: v1 clip was made from the armchair/clock frame (user Fixes: fallen and waiting for help → in pain) → new confirmed start frame v3; one failed push up, sound off",
  "risks": [
   {
-   "risk": "her face drifts from the cast sheet",
-   "prevented_by": "subject clause unchanged in every respect; NEG no changed face"
+   "risk": "she stands up fully (breaks the line's helplessness)",
+   "prevented_by": "lifts a few centimetres and sinks back; she never stands up"
   },
   {
-   "risk": "she looks into the lens",
-   "prevented_by": "eyes rest on the clock off frame right; negative no glancing at the lens"
+   "risk": "the armchair slides or deforms under her hand",
+   "prevented_by": "the armchair, side table and telephone stay put; no furniture moving"
   },
   {
-   "risk": "overacted sadness or tears",
-   "prevented_by": "one slow blink and breath only; negatives no crying"
+   "risk": "hands fuse into the knee or seat",
+   "prevented_by": "two hands, every finger whole"
   }
  ]
 }

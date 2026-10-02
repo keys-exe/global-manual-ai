@@ -3,11 +3,11 @@
  "connector": "kling",
  "mode": 2,
  "kind": "broll",
- "prompt": "For the line \"I'm seventy-one, and I take the stairs\": From this frame: two steps up, N pulling ahead — one step per second, brisk; camera RV sway — the virtual camera breathes in place, never travels. The older woman in the green dress climbs two steps, one step per second, and ends two steps higher with her weight settling onto the upper foot, both hands free and clear of the rail the whole way; her daughter behind her climbs two steps at the same pace, right hand sliding along the oak handrail, and ends still two steps below her mother. The same staircase as the frame, every step whole, the beige runner and brass rods in place, the photo wall still; exactly one staircase, both women climbing away from the camera and up. Stylized 3D animation, the two characters exactly on model from the frame, hair and the dress hem following through after each step. No camera travel; no extra people; no cut.",
+ "prompt": "For the line \"I'm seventy-one, and I take the stairs\": From this frame: two steps up, N pulling ahead — one step per second, brisk; camera RV sway — the virtual camera breathes in place, never travels. The older woman in the green dress climbs two steps up the flight above us, one step per second, ending two steps higher with her weight settling onto the upper foot, both hands free and clear of the rail the whole way; her daughter behind her climbs two steps at the same pace, right hand sliding along the oak handrail, ending still two steps below. The low viewpoint at the newel stays where it is; the same staircase, every step whole, balusters and photo wall still; exactly one staircase, both women climbing up and away. Stylized 3D animation, both characters exactly on model from the frame, the dress hem following through after each step. No camera travel; no extra people; no cut.",
  "duration": 5,
  "resolution": "1080p",
  "aspect_ratio": "9:16",
- "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_123854_c5ffa422-de72-43c1-9e9a-5f11d1559545.png",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_150921_1c7c2fb2-b37f-4843-aa7d-37007a8ccc44.png",
  "start_approved": true,
  "pinned": false,
  "end_image": null,
@@ -23,21 +23,7 @@
  "fix_note": null,
  "risk_class": "stairs",
  "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
- "pilot": "first",
- "risks": [
-  {
-   "risk": "legs and steps blend on the climb",
-   "prevented_by": "one step per second, two steps only, camera breathes in place, every step whole"
-  },
-  {
-   "risk": "a hand lands on the rail (HT03)",
-   "prevented_by": "both hands free and clear of the rail the whole way"
-  },
-  {
-   "risk": "the characters drift off model",
-   "prevented_by": "exactly on model from the frame; 5 s clip"
-  }
- ],
+ "pilot": "confirmed",
  "taste": [
   "HT03",
   "HT04",
@@ -45,5 +31,20 @@
   "HT12",
   "HT13",
   "HT22"
- ]
+ ],
+ "risks": [
+  {
+   "risk": "legs and steps blend",
+   "prevented_by": "one step per second, few steps, camera still, every step whole"
+  },
+  {
+   "risk": "a hand lands on the rail (HT03)",
+   "prevented_by": "hands free and clear of the rail"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  }
+ ],
+ "note": "first generation from image v3 (the user's pick after the re-angle); clip v1 from image v1 A stays as a version — not a §22X fix of that clip"
 }

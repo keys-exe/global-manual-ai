@@ -1,0 +1,42 @@
+{
+ "beat": "P-01a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": Keep this photo exactly as it is — the top of the staircase, the landing, the oak rail, the photo wall, the light — a tall 9:16 crop on the landing and the top steps, and add the woman. Image 1 is the top of the staircase and the landing. Image 2 is the woman.\nMedium shot from below, sharp on her. The same woman as Image 2, seventy-one, starting from the top: standing on the top step at the head of the stairs, going down backwards — her back to the lens, face turned up to the landing, eyes on its floor, both hands gripping the oak rail, her right foot reaching back and down to the step below; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman from behind on the top step of Image 1, the landing above her, a few steps below her, the rail, the photo wall; every other surface bare. Two hands on the rail, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Clothing and frames plain — no lettering, logos or labels; no second person.",
+ "script_line": "Six weeks ago, I was going down my stairs backwards.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P0-PROP-N plate (confirmed) — cropped to the landing and the top of the flight",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "692d9e49-493e-4792-92c1-4f362f6961d5",
+ "taste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "she should be starting from the top to show case the moving backwards",
+ "product": false
+}

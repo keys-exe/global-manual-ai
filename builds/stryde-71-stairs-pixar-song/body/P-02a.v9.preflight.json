@@ -1,0 +1,38 @@
+{
+ "beat": "P-02a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": Keep this photo exactly as it is — the staircase, its runner, the oak rail and newel, the photo wall, the woman sitting on the top step — but closer: from mid-flight. Image 1 is the picture; nothing in it changes but the crop.\nMedium shot from mid-flight, the lens low at step height looking up at the top step, sharp on her face. The same woman of Image 1, seventy-one, sitting on the top step as she sits, her right hand on the newel post, her left hand in her lap, looking down the flight toward the lens, eyes on the steps below, mouth closed; faded blue floral knee-length house dress, grey cardigan, pink terry slippers; six steps between her and the lens. Nobody else.\nIn the frame: the woman at the top of the flight of Image 1, the top steps, the rail, the photo wall; every other surface bare. Two hands placed, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window above, a catchlight in each eye. Clothing and frames plain — no lettering, logos or labels; no second person.",
+ "script_line": "I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P-02a frame v6 B (confirmed) — her on the top step, the whole flight",
+   "kind": "frame"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "04e4ff58-b639-4064-accc-908bc636261e",
+ "taste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "WRONG LOCATION",
+ "product": false
+}

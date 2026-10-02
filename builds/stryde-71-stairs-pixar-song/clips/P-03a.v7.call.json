@@ -1,0 +1,56 @@
+{
+ "beat": "P-03a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"That big knee brace I bought slid right down my leg.\": From this frame: the brace drifts down her shin, then her hand pulls it back up over the knee — one slide down, one pull up, about four seconds; camera RV sway — the virtual camera breathes in place, never travels. Her head and shoulders stay out of frame above the whole time, she sits upright and never leans into the frame, nobody speaks. From the side at knee height, the short brace slips loose and drifts down her shin under its own weight to the middle of the shin; then her right hand reaches down to it, grips its top strap and hauls it back up over her kneecap in one pull, and holds it there; her left hand stays on the chair seat; the chair, the slippers and the kitchen behind stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame, the brace rigid in shape. No camera travel; nobody else; no cut; the brace never changes design.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_203935_a5860844-7d29-4f9b-8e9c-6019f6b22e0f.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "That big knee brace I bought slid right down my leg.",
+ "motion_plan": "From this frame: the brace drifts down her shin, then her hand pulls it back up over the knee — one slide down, one pull up, about four seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one slide down",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 5,
+ "user_go": "user 2026-10-01: \"FIX THOSE\" on the board Fix \"THE KNEE BRACE DRIFTS DOWN THEN PULL IT UP AGAIN\" — v6 failed the standing no-speech note and was kept off the board (L16)",
+ "fix_note": "§22X / L16 on v6 (never shown): to reach the brace at her ankle she bent forward into frame and her mouth opened in a smile — the standing note never talk the lyrics in B-roll broken → the brace drifts only to mid-shin so the pull needs no lean; head and shoulders out of frame, upright, the no-speech clause first (HT25)",
+ "fix_notes_all": [
+  "v1–v2 (earlier frames): never talk the lyrics/script in B-roll; the brace short, on one knee",
+  "v3: IT SHOULD FEELING DRIFTING DOWN",
+  "v4: SHOULD BE FALLING WHILE DRIFTING DOWN",
+  "v5: THE KNEE BRACE DRIFTS DOWN THEN PULL IT UP AGAIN",
+  "v6 (never shown): her head bent into frame, mouth open — the no-speech note kept"
+ ],
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  }
+ ],
+ "note": "clip v7 of this beat (from the confirmed image v11 A, job a5860844-7d29-4f9b-8e9c-6019f6b22e0f)"
+}

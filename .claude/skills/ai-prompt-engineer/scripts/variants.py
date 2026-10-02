@@ -67,8 +67,10 @@ def main():
         pfile = root / f"_plan_{h['id']}.json"
         pfile.write_text(json.dumps(plan, indent=2))
         out = outdir / f"{a.build}_{h['id']}.mp4"
+        sheet = out.with_suffix(".placement.md")   # V7.80.0: every variant's placement sheet beside it
         r = subprocess.run([sys.executable, str(HERE / "assemble.py"), str(pfile), "--out", str(out),
-                            "--min-th", str(a.min_th), "--fps", str(a.fps)], capture_output=True, text=True)
+                            "--min-th", str(a.min_th), "--fps", str(a.fps), "--sheet", str(sheet)],
+                           capture_output=True, text=True)
         try:
             rep = json.loads(r.stdout)
         except json.JSONDecodeError:
@@ -84,7 +86,7 @@ def main():
                      for s in rep["timeline"] if s.get("beat") in body_beats]
         body_edls.append(body_part)
         ok = rep.get("status") == "PASS" and got is not None and abs(got - expect) <= 2 / a.fps
-        results.append({"hook": h["id"], "file": str(out), "status": "PASS" if ok else "FAIL",
+        results.append({"hook": h["id"], "file": str(out), "sheet": str(sheet), "status": "PASS" if ok else "FAIL",
                         "hook_s": round(hook_len, 3), "body_s": round(body_len, 3),
                         "duration_s": got, "expected_s": round(expect, 3),
                         "fixes": rep.get("fixes", []), "failures": rep.get("failures", []),

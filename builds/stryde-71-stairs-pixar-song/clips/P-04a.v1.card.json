@@ -1,0 +1,41 @@
+{
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "7fccbb3b01ee6fe1ce18a02caa07754d",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/8313b9d4-2c57-4d10-be56-950ed4456140-cTb0ZIX1Gj0ubXoLDAVXfw-output.mp4?x-kcdn-pid=112372",
+   "job": "ARp22A1GeynGKf3P2rT8O1OCC-MUWKC0yberPmfl9sZ6enCuNNTv3Xr8RYC4AV1MlelKNmPW",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 32,
+   "size": 6703523,
+   "res": "1072×1928",
+   "duration": 4.04,
+   "at": 1790878081408,
+   "fromImage": 3,
+   "note": "from the confirmed image v3 A (job e05783fd) · what I see: the hands push the pile apart, but the framing drifts a little and the top of her head comes in at the bottom edge"
+  }
+ ],
+ "videoAsset": "7fccbb3b01ee6fe1ce18a02caa07754d",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/8313b9d4-2c57-4d10-be56-950ed4456140-cTb0ZIX1Gj0ubXoLDAVXfw-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "ARp22A1GeynGKf3P2rT8O1OCC-MUWKC0yberPmfl9sZ6enCuNNTv3Xr8RYC4AV1MlelKNmPW",
+ "videoConnector": "Kling",
+ "model": "kling-video-v3_0",
+ "credits": 32,
+ "duration": 4.04,
+ "videoRes": "1072×1928",
+ "videoAt": 1790878081408,
+ "prompt": "For the line \"I done tried everything.\": From this frame: both hands push the pile apart — one push, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. Overhead on the table, her two hands push outward once and the heap slides apart a little across the wood — a bottle tips and rolls a few centimetres, a sleeve slips — then the hands rest flat on the table; nothing new appears on it. Stylized 3D animation, every object exactly as in the frame, rigid in shape. No camera travel; nobody else; no cut; the hands stay in frame.",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "videoNote": "first clip of this beat, from the confirmed v3 A · what I see: the hands push the pile apart, but the framing drifts a little and the top of her head comes in at the bottom edge",
+ "status": "review",
+ "updatedAt": 1790878081408
+}

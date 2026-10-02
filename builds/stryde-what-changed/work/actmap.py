@@ -55,15 +55,23 @@ def BB(beat, act, line, key, fn, subj, loc, day, framing, action, pace, camera, 
       h, side, fg, scale, why, plane, dof, light["src"], light["ks"], light["time"], light["arc"], light["kelvin"], face, **kw)
 
 # ============================================================ HOOKS (VN01: line 1 as VO over full-screen B-roll, the host on camera for the last line)
-BB("HK1-a", HOOK[1], "Your knees have been taking seventeen times your bodyweight on every step", "step", "hook — the hidden number (VN01, EG03)",
-   "R1", "L-M-STAIRS", "M-D1", "ECU her feet and bare right knee from the side, coming down one stair", "one step down onto the next stair, weight onto the right leg",
-   "one step, about a second and a half", STILL, "stairs: side, waist-down, camera still, hand on the rail visible", "no", "absent", "—", "NB2",
-   GROUND, PRO, "through", "CU", "ground through the spindles = steps and knees, watched", "foreground", "medium", L(M_GREY, "L"), False,
+BB("HK1-a", HOOK[1], "Your knees have been taking seventeen times your bodyweight", "seventeen", "hook — the hidden number (VN01, EG03) · anatomy (user 2026-10-01 'MAKE ME A DIFFERENT BROLLS FOR OUR HOOK 1, WITH ANATOMY')",
+   "ANAT", "—", "—", "ANAT-C side-on: the translucent figure, waist-down, stepping UP a flight of steps, the leading knee bent deep on the higher step and taking the whole body's weight, the tendon spot blazing", "the knee drives up, the spot flares as the weight comes on",
+   "one step up, about a second and a half", STILL, "none", "no", "absent", "—", "NB2",
+   LOW, PRO, "clean", "MEDIUM", "low profile = the whole weight coming down through one knee", "deep", "deep", L(ANAT, "R"), False,
    ledger="VN01", eg="EG03 full screen · EG04 caption red box 'seventeen times'")
-BB("HK1-b", HOOK[1], "for forty years, and you never felt a thing.", "never", "hook — the hidden number (VN01)",
-   "ANAT", "—", "—", "ANAT-A: the knee in profile, a soft pulse of load arriving at the spot just below the kneecap with each step", "one pulse per step",
-   "one pulse a second", STILL, "none", "no", "absent", "—", "NB2",
-   EYE, PRO, "clean", "CU", "profile shows the load path down the leg", "deep", "deep", L(ANAT, "L"), False, ledger="VN01", eg="EG05 anatomy")
+BB("HK1-a2", HOOK[1], "on every step", "every", "hook — the hidden number (VN01) · anatomy",
+   "ANAT", "—", "—", "ANAT-A overhead: looking straight down at the knee as the foot lands on a step edge, the kneecap and tendon below, the spot pulsing on the landing", "one landing, the spot pulses once",
+   "one pulse, about a second", STILL, "none", "no", "absent", "—", "NB2",
+   OVER, FRO, "clean", "CU", "overhead = the repeat, step after step", "deep", "deep", L(ANAT, "R"), False, ledger="VN01")
+BB("HK1-b", HOOK[1], "for forty years,", "forty", "hook — the hidden number (VN01) · anatomy",
+   "ANAT", "—", "—", "ANAT-B cutaway, front three-quarter: the cartilage on the end of the thigh bone worn, dulled and pitted from years of use, a low ember at the tendon", "the camera holds; the ember breathes once",
+   "one slow breath of glow, about two seconds", STILL, "none", "no", "absent", "—", "NB2",
+   EYE, THR, "clean", "ECU", "close on the worn surface = years of wear", "deep", "deep", L(ANAT, "R"), False, ledger="VN01")
+BB("HK1-b2", HOOK[1], "and you never felt a thing.", "never", "hook — the hidden number (VN01) · anatomy",
+   "ANAT", "—", "—", "ANAT-C wide, front-on: a whole translucent figure walking calmly towards camera, relaxed, only one small spot glowing hot at the knee — the body unaware", "two easy steps, the spot glows quietly the whole time",
+   "two steps, about two seconds", STILL, "none", "no", "absent", "—", "NB2",
+   EYE, FRO, "clean", "WS", "wide and calm = she never felt it", "deep", "deep", L(ANAT, "R"), False, ledger="VN01")
 TH("HK1-TH", HOOK[1], "Here is what changed.")
 
 BB("HK2-a", HOOK[2], "There is a band under your kneecap about as wide as your thumb,", "band", "hook — the flattering fact (VN01)",
@@ -194,9 +202,9 @@ BB("B10c", A2, "Gel sits on the skin.", "Gel", "the mistake (F6)",
    "one smoothing stroke, about a second", STILL, "seated: knee and hand only, camera still", "no", "absent", "—", "NB2",
    EYE, PRO, "clean", "CU", "profile: the gel lying on the surface of the skin", "hands", "shallow", L(KITCH, "R"), False, ledger="F6", notes="unbranded, no label; user 2026-09-30 'BROLLS HERE' — gel on the knee, not on fingertips")
 BB("B10d", A2, "A painkiller turns the alarm off", "painkiller", "the mistake (F6)",
-   "hands", "L-M-STAIRS", "M-D1", "CU looking up at her hall ceiling: a plain white smoke alarm flashing red, her hand reaching up and pressing its button, the red light going out (fix: 'GIVE ME DIFFERENT BROLL HERE'; v1 a thumb popping a tablet)", "her thumb presses the button and the red light goes out",
-   "one press, about a second", STILL, "hand and alarm only, camera still", "no", "absent", "—", "NB2",
-   LOW, THR, "clean", "CU", "low looking up = the alarm silenced, the cause untouched", "hands", "shallow", L(KITCH, "L"), False, ledger="F6", notes="the metaphor of the line, literal; unbranded alarm, no text")
+   "R1", "L-KITCHEN", "K-D1", "MEDIUM side-on: Maureen at the kitchen worktop swallowing a painkiller with a glass of water, eyes closed, a tired look of relief (fix: 'DIFFERENT BROLL HERE'; v1 tablet, v2 smoke alarm)", "she swallows and lowers the glass",
+   "one swallow, about two seconds", STILL, "standing at the worktop, camera still", "no", "absent", "—", "NB2",
+   EYE, PRO, "clean", "MEDIUM", "profile = the private moment of masking it", "face", "shallow", L(KITCH, "L"), False, ledger="F6", notes="unbranded blister, no print")
 BB("B10d2", A2, "and leaves the load exactly where it was.", "load", "the load is still there (F6)",
    "R2", "L-D-STAIRS", "D-D1", "low side-on: Desmond getting up off his bottom stair, hands pressed on his thighs, both knees bent hard under his whole weight", "he pushes up to standing",
    "one push up, about two seconds, ordinary pace", STILL, "stairs: low side-on, legs only, camera still", "no", "absent", "—", "NB2",
@@ -276,9 +284,9 @@ BB("B18a", A4, "It is that the knee stops feeling like a rusty hinge.", "hinge",
    "one pull, about a second", STILL, "crouched, hands at the laces, camera still", "no", "worn", "VISIBLE", "NBP",
    LOW, FRO, "clean", "MEDIUM", "low = at his knee, the bend is the point", "product", "medium", L(D_SUN, "R"), True, ledger="F9", mx=3)
 BB("B18b", A4, "They stop planning the stairs before they get to them.", "stairs", "outcome (F9)",
-   "R1", "L-M-STAIRS", "M-D2", "WIDE from the foot of the stairs: Maureen coming down facing forwards, Stryde on both knees, both hands down and empty, an easy bright smile (fixes: both knees; positive, no banister; 'keep her hands down, don't hold anything')", "one step down, facing forwards",
-   "one step, about a second and a half", STILL, "stairs: facing forwards, full figure small in frame, camera still at the foot", "no", "worn", "VISIBLE", "NBP",
-   LOW, FRO, "clean", "WIDE", "low from the foot = she comes down to us, resolve", "deep", "deep", L(M_SUN, "L"), True, ledger="F9")
+   "R1", "L-M-STAIRS", "M-D2", "knee-level, front-on: Maureen walking DOWN her stairs towards camera, one foot landing on the stair below, Stryde front-on and large on both knees (Fixes 2026-10-01 'MAKE SURE PRODUCT IS RIGHT', 'WRONG PRODUCT AND SHOULD BE GOING DOWN TO STAIR'; edit of the confirmed B22a v4, camera and straps kept)", "one easy step down, without looking at her feet",
+   "one step, about a second and a half", STILL, "stairs: going down, front-on, skirt hem to feet, camera still", "no", "worn", "VISIBLE", "NBP",
+   EYE, FRO, "clean", "MS", "level with her knees = she comes down to us without a second thought", "deep", "deep", L(M_SUN, "L"), True, ledger="F9")
 TH("B19-TH", A4, "And you do not have to take my word for any of it.")
 BB("B19a", A4, "Put one on one knee only. Leave the other bare.", "bare", "the self-test",
    "R1", "L-M-STAIRS", "M-D2", "CU seated on the bottom stair: both knees side by side, the strap on the right, the left bare", "her hands rest on her thighs; she breathes out",
@@ -421,7 +429,7 @@ BB("B22-BR", A4, "Sixty days, and you keep the straps. From the Stryde site.", "
    "two steps, about two seconds", STILL, "park path: whole figure, camera still", "no", "worn", "VISIBLE", "NBP",
    LOW, FRO, "clean", "WIDE", "high = looking down at what arrived", "product", "medium", L(M_SUN, "L"), False, eg="EG04 '60 days' (post)", notes="covers B22-TH; WORDMARK-LOCK")
 
-HOOKS = {1: ["HK1-a", "HK1-b", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
+HOOKS = {1: ["HK1-a", "HK1-a2", "HK1-b", "HK1-b2", "HK1-TH"], 2: ["HK2-a", "HK2-b", "HK2-TH"], 3: ["HK3-a", "HK3-b", "HK3-TH"]}
 BODY = ['B01a', 'B01b', 'B01c', 'B01-TH', 'B01-BR', 'B02', 'B03-TH', 'B03a', 'B03b', 'B03c', 'B04a', 'B04b', 'B04c', 'B05', 'B06-TH', 'B06-BR', 'B06-BR2', 'B06', 'B06a2', 'B06b', 'B07-TH', 'B07-BRa', 'B07-BRb', 'B07', 'B08-TH', 'B08-BR', 'B08-BRb', 'B08-BRc', 'B08a', 'B08b', 'B08-TH2', 'B08-BR2', 'B08-BR3', 'B08c', 'B09-TH', 'B09-BR', 'B10a', 'B10a2', 'B10b', 'B10b2', 'B10c', 'B10d', 'B10d2', 'B11-TH', 'B11-BR', 'B12', 'B12b', 'B13', 'B14a', 'B14b', 'B14c', 'B15-TH', 'B15-BR', 'B15', 'B16a', 'B16b', 'B16c', 'B16c2', 'B16c3', 'B17a', 'B17b', 'B17c', 'B18-TH', 'B18-BR', 'B18a', 'B18b', 'B19-TH', 'B19-BR', 'B19a', 'B19b', 'B19-TH2', 'B19-BR2', 'B19-BR2b', 'B19-BR2c', 'B20', 'B21-TH', 'B21-BR', 'B21', 'B22a', 'B22-TH', 'B22-BR', 'B22c', 'B23a', 'B23b']
 
 def angles_rows(order):

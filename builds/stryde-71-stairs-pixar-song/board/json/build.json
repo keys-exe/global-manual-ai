@@ -10,8 +10,9 @@
  "hooks": 1,
  "boards": {
   "current": "https://claude.ai/artifact/NPMPgJeXr6cgTvtuFGhkZc",
-  "old": "https://claude.ai/artifact/3pEQz2pWLJwTNX5TuBdccV",
   "final": "https://claude.ai/artifact/FYK7PCvgLG4SLzj72YdBPn",
+  "old": "https://claude.ai/artifact/3pEQz2pWLJwTNX5TuBdccV",
+  "old2": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
   "plans": "https://claude.ai/artifact/VEE8gmwPVbvhVMNSC5rBLY"
  },
  "archiveUrl": "https://claude.ai/artifact/3pEQz2pWLJwTNX5TuBdccV",
@@ -19,10 +20,11 @@
   "task": "1VZ709_1L6_cNjSadgDKn-BIKDGy89a5C"
  },
  "balances": {
-  "Higgsfield": 10265.4,
-  "Kling": 44523.0
+  "Higgsfield": 7523.15,
+  "Kie AI": 261969.8,
+  "Kling": 39629
  },
- "balancesAt": 1790860729130,
+ "balancesAt": 1790891943025,
  "voices": [
   {
    "id": "N",
@@ -40,5 +42,6 @@
   "vocalEnd": 222.68,
   "bpmEstimate": 73.8
  },
- "updatedAt": 1790849941280
+ "updatedAt": 1790849941280,
+ "version": 35
 }

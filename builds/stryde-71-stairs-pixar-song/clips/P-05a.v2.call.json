@@ -1,0 +1,49 @@
+{
+ "beat": "P-05a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Every brace and sleeve they make.\": From this frame: one push away across the table — one push, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. The back of her right hand pushes the heap once across the table to its far edge — every bottle, sleeve and brace slides and stays on the table, nothing vanishes — then she sits back in the chair, shoulders dropping, mouth closed, eyes on nothing past the lens, her left hand slack in her lap. Stylized 3D animation, exactly on model from the frame, every object rigid and present to the last frame. No camera travel; nobody else; no cut; she never speaks.",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_8545c58b-ddab-447e-a0ca-a18a56e716f0.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Every brace and sleeve they make.",
+ "motion_plan": "From this frame: one push away across the table — one push, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one push",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "user_go": null,
+ "fix_note": "user: make this into 3 brolls (the beat split; this clip re-cut to its own line) · §22X on v1: the heap vanished and her mouth moved → prompt: every object stays on the table to the last frame, mouth closed, she never speaks",
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  }
+ ],
+ "note": "clip v2 of this beat (from the confirmed image v3 A, job 8545c58b-ddab-447e-a0ca-a18a56e716f0)"
+}

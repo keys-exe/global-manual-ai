@@ -1,0 +1,42 @@
+{
+ "beat": "P-02a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": Keep this photo exactly as it is — the hall, the whole staircase rising to the right, its rail and newel, the photo wall, the light — a tall 9:16 crop on the full flight, and add the woman. Image 1 is the hall and staircase. Image 2 is the woman.\nMedium shot from the hall floor, the lens low looking up the whole flight, sharp on her. The same woman as Image 2, seventy-one, sitting on the top step at the head of the stairs, her right hand on the newel post, her left hand in her lap, looking down the flight toward the lens, eyes on the hall floor far below, not going; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman at the top of the flight of Image 1, every step between her and the lens, the rail, the photo wall; every other surface bare. Two hands placed, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window above, a catchlight in each eye. Clothing and frames plain — no lettering, logos or labels; no second person.",
+ "script_line": "I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P0-PROP-N plate (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "973904c55f316a52570c8bff44ef7a07",
+ "taste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "this should be her at the top of the stairs looking down",
+ "product": false
+}

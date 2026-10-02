@@ -1,0 +1,104 @@
+{
+ "imageVersions": [
+  {
+   "archived": true,
+   "asset": "9efe426c4826fa5171b2e00edcd7b702",
+   "at": 1790873674660,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "a401e32e-dbdc-4770-9622-045a6ba04a46",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7911309,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_a401e32e-dbdc-4770-9622-045a6ba04a46.png",
+   "v": 1
+  },
+  {
+   "archived": true,
+   "asset": "09837dc92e83eba5ae3826cfd4984210",
+   "at": 1790873674660,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "5e7b9fb2-8d81-42d0-9363-d30c2b7ad565",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6106311,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_5e7b9fb2-8d81-42d0-9363-d30c2b7ad565.png",
+   "v": 2
+  },
+  {
+   "asset": "cfc3b2e15d01fc9898960e2a89726fa8",
+   "at": 1790876674688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "34a4e086-d516-4570-af05-3bcb361ab1aa",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · replaced by the v3 pair on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7436671,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174004_34a4e086-d516-4570-af05-3bcb361ab1aa.png",
+   "v": 3,
+   "archived": true,
+   "archiveAsset": "cfc3b2e15d01fc9898960e2a89726fa8"
+  },
+  {
+   "asset": "d58e8be1156fcb062d2f4809db0b78aa",
+   "at": 1790876674688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "979a33d3-1057-491f-8304-8f29d86fc5e1",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · replaced by the v3 pair on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7989378,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174004_979a33d3-1057-491f-8304-8f29d86fc5e1.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "d58e8be1156fcb062d2f4809db0b78aa"
+  }
+ ],
+ "imagePair": [
+  3,
+  4
+ ],
+ "imageAsset": "d58e8be1156fcb062d2f4809db0b78aa",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174004_979a33d3-1057-491f-8304-8f29d86fc5e1.png",
+ "imageJob": "979a33d3-1057-491f-8304-8f29d86fc5e1",
+ "imageAt": 1790876674688,
+ "imagePrompt": "For the line \"I ain't gonna lie, some days I wasn't going down them at all. I'd just stay upstairs.\": Keep this photo exactly as it is — the staircase, the landing, the oak newel and balusters, the photo wall, the light — seen from the landing through the balusters, a tall 9:16 crop, and add the woman. Image 1 is the hall and staircase. Image 2 is the woman.\nMedium shot at eye level from the landing, the top balusters soft in the near foreground, sharp on her. The same woman as Image 2, seventy-one, sitting on the top step, her right hand on the newel post, her left hand in her lap, looking down the flight, eyes on the hall floor below, not going; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman, the top of the flight of Image 1, the newel and balusters, the photo wall, the hall below; every other surface bare. Two hands placed, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window at her side, a catchlight in each eye. Clothing and frames plain — no lettering, logos or labels; no second person.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P0-PROP-N plate (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "kind": "character",
+   "label": "N-NARR sheet v2",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  }
+ ],
+ "imageFault": "replaced by the v3 pair on the user's Fix",
+ "title": "problem (edit of P0: the top of the flight, HT17)",
+ "shot": "eye · three-quarter · through · MEDIUM",
+ "framing": "MEDIUM from the landing: N sitting on the top step in her house dress, looking down the flight, one hand on the newel, not going",
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "updatedAt": 1790877932602,
+ "flow": [
+  "image"
+ ]
+}

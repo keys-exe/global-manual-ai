@@ -1,0 +1,16 @@
+[
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-01b",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/body/patch/P-01b.v10done.json",
+  "if_version": 23
+ },
+ {
+  "op": "update",
+  "collection": "generations",
+  "doc_id": "stryde-71-stairs-pixar-song__P-05b",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-71-stairs-pixar-song/body/patch/P-05b.v10done.json",
+  "if_version": 9
+ }
+]

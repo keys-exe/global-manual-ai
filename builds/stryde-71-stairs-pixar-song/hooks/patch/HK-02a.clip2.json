@@ -1,0 +1,57 @@
+{
+ "videoVersions": [
+  {
+   "asset": "e116c450024a8eb9b20b27a251f746ea",
+   "at": 1790868925077,
+   "connector": "Kling",
+   "credits": 48,
+   "duration": 6.04,
+   "job": "AcQ4ZqPHoZy4XdDADlxlXUYQmfGVwf_SeKqh9OmOjZD-1665vhSjgmjKbiyFQolaReMsuOkw",
+   "model": "kling-video-v3_0",
+   "note": "from the picked image v7 A (re-angled)",
+   "res": "1072×1928",
+   "size": 5829192,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/b96318de-697b-486e-9219-82625fec3be6-HAAAXSWLWW4hgpp89y-0AQ-output.mp4?x-kcdn-pid=112372",
+   "v": 1
+  },
+  {
+   "v": 2,
+   "asset": "cbed03a28480a3c4fc0258bf21fbe6e6",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/798f579b-b9be-472f-86de-bc5b6908171a-qT97doMq9430B53XunL_DQ-output.mp4?x-kcdn-pid=112372",
+   "job": "AfY-sZ642u8Jq_6Jn0pWsEuE0SLsKrfXKUdKQ5mV33kNP0g_eLMX7MQ3aYtJv1KxYuaFv3LY",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 40,
+   "size": 8107763,
+   "duration": 5.04,
+   "res": "1072×1928",
+   "at": 1790877000000,
+   "note": "from the confirmed image v13 A (the church steps from the sidewalk, the daughter walking behind her); clip v1 was from the home-stairs frame",
+   "fromImage": 13
+  }
+ ],
+ "videoAsset": "cbed03a28480a3c4fc0258bf21fbe6e6",
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/798f579b-b9be-472f-86de-bc5b6908171a-qT97doMq9430B53XunL_DQ-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AfY-sZ642u8Jq_6Jn0pWsEuE0SLsKrfXKUdKQ5mV33kNP0g_eLMX7MQ3aYtJv1KxYuaFv3LY",
+ "videoConnector": "Kling",
+ "model": "kling-video-v3_0",
+ "credits": 40,
+ "duration": 5.04,
+ "videoRes": "1072×1928",
+ "videoAt": 1790877000000,
+ "prompt": "For the line \"Last Sunday, my daughter walked behind me the whole way up and said,\": From this frame: two steps up, the daughter following two steps behind — one step per second; camera RV sway — the virtual camera breathes in place, never travels. Seen from the sidewalk, the older woman in the green dress and hat climbs two steps toward the church doors, one per second, hands free and clear of the rail; her daughter climbs two steps behind her at the same pace, right hand sliding up the black handrail, eyes on her mother's back. The viewpoint stays on the sidewalk; the church, the steps, the rail and the hedges stay exactly as in the frame. Stylized 3D animation, both exactly on model from the frame. No camera travel; no third person; no cut; nobody turns to the lens.",
+ "videoPreflight": "PASS",
+ "status": "review",
+ "fault": null,
+ "videoNote": "from the confirmed image v13 A (the church steps from the sidewalk, the daughter walking behind her); clip v1 was from the home-stairs frame",
+ "videoOut": {
+  "__delete__": true
+ },
+ "videoOutV": {
+  "__delete__": true
+ },
+ "updatedAt": 1790877000000
+}

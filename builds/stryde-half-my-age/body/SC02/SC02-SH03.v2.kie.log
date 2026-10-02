@@ -1,0 +1,13 @@
+{"taskId": "4c75b151cae6ed122806be6f13033548", "created": true, "audio": false}
+{"taskId": "4c75b151cae6ed122806be6f13033548", "created": true}
+{
+  "taskId": "4c75b151cae6ed122806be6f13033548",
+  "state": "success",
+  "credits": 151.2,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/wan30-video-prime-alibaba/1790876544897-ly5pijjan6.mp4"
+  ],
+  "saved": "body/SC02/SC02-SH03_v2.mp4",
+  "model": "wan/3-0-video-prime"
+}

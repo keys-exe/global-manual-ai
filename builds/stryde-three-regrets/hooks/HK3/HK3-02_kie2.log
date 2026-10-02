@@ -1,0 +1,12 @@
+{"taskId": "b808ee9a8bcacd154999fc8d63e0000a", "created": true}
+{
+  "taskId": "b808ee9a8bcacd154999fc8d63e0000a",
+  "state": "success",
+  "credits": 54.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/k/b808ee9a8bcacd154999fc8d63e0000a_1_1790789720_4116.mp4"
+  ],
+  "saved": "hooks/HK3/HK3-02_clip_v2.mp4",
+  "model": "kling-3.0-omni/image-to-video"
+}

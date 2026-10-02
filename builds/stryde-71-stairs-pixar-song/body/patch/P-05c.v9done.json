@@ -1,0 +1,164 @@
+{
+ "imageVersions": [
+  {
+   "archiveAsset": "338908cdab95f2369f40d8dc93efd194",
+   "archived": true,
+   "asset": "1248995b7a7627d8725e2a48adbc4c6f",
+   "at": 1790879352102,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "58243361-f630-4185-97d1-fec7bd89b76c",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front · replaced on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7158995,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182542_58243361-f630-4185-97d1-fec7bd89b76c.png",
+   "v": 1
+  },
+  {
+   "archiveAsset": "3aab874af807455bbf2ebc29a96d12ca",
+   "archived": true,
+   "asset": "0d2406fbeaa7d8d11fada17a750f6134",
+   "at": 1790879352102,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "1f776e47-cd64-4151-97ed-df6d215a7875",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front · replaced on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7054645,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182544_1f776e47-cd64-4151-97ed-df6d215a7875.png",
+   "v": 2
+  },
+  {
+   "asset": "9bbcd385146792a55c13dff4d825d60a",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "35250036-f365-4846-94ec-f1c0d86ba537",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I NEED A DIFFERENT ONES HERE\" → a different picture: from behind her shoulder, high, her head bowed over the heap on the table · replaced on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 8170271,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_35250036-f365-4846-94ec-f1c0d86ba537.png",
+   "v": 3,
+   "archived": true,
+   "archiveAsset": "238f0ab099ba26d0de6d9a199eaec454"
+  },
+  {
+   "asset": "ccda2b89229e0b6416adbe3a761b626c",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "37be9669-e4cd-4806-b91f-61d4e05e0fa1",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I NEED A DIFFERENT ONES HERE\" → a different picture: from behind her shoulder, high, her head bowed over the heap on the table · replaced on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6426503,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_37be9669-e4cd-4806-b91f-61d4e05e0fa1.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "0d0bde6a3c79ef28d67900ce0fd25e4a"
+  },
+  {
+   "v": 5,
+   "pair": "A",
+   "asset": "f360966ae0b85a56e219fbdadad90245",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194106_5b40a12a-24f5-4d12-8650-016a8b0384ae.png",
+   "job": "5b40a12a-24f5-4d12-8650-016a8b0384ae",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 4978228,
+   "res": "1536×2752",
+   "at": 1790883833026,
+   "note": "user Fix: \"WRONG PERSON ALSO SHOULD USE DIFFERENT TYPE OF BROLL\" → a different kind of B-roll with her cast sheet attached: N at the kitchen window in profile, looking out"
+  },
+  {
+   "v": 6,
+   "pair": "B",
+   "asset": "47aa429b4dc68e64d35bdc5e017dcaf0",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194104_0ecfccc3-53c5-4ed7-9fca-32873f556c56.png",
+   "job": "0ecfccc3-53c5-4ed7-9fca-32873f556c56",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7005247,
+   "res": "1536×2752",
+   "at": 1790883833026,
+   "note": "user Fix: \"WRONG PERSON ALSO SHOULD USE DIFFERENT TYPE OF BROLL\" → a different kind of B-roll with her cast sheet attached: N at the kitchen window in profile, looking out"
+  }
+ ],
+ "imagePair": [
+  5,
+  6
+ ],
+ "imageAsset": "f360966ae0b85a56e219fbdadad90245",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_194106_5b40a12a-24f5-4d12-8650-016a8b0384ae.png",
+ "imageJob": "5b40a12a-24f5-4d12-8650-016a8b0384ae",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790883833026,
+ "imageStatus": "review",
+ "imagePick": {
+  "__delete__": true
+ },
+ "imageUnused": {
+  "__delete__": true
+ },
+ "imagePrompt": "For the line \"Nothing gave me my life back.\": Keep this photo exactly as it is — the kitchen, the sink under the window, the lace curtain, the counter, the light — in close at the window from the side, a tall 9:16 crop, and add the woman. Image 1 is the kitchen. Image 2 is the woman.\nMedium shot from the side at eye level, sharp on her face. The same woman as Image 2, seventy-one, standing at the sink in profile, both hands on its edge, looking out of the window at the street beyond, eyes on it, mouth closed; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman in profile, the sink and window of Image 1, the counter; every other surface bare. Two hands placed, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window on her face, a catchlight in her eye. Clothing and counter plain — no lettering, logos or labels; no second person.",
+ "imageFault": "user Fix: \"WRONG PERSON ALSO SHOULD USE DIFFERENT TYPE OF BROLL\" → a different kind of B-roll with her cast sheet attached: N at the kitchen window in profile, looking out",
+ "imageNote": {
+  "__delete__": true
+ },
+ "imageMatch": "plate",
+ "imageRefs": [
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  }
+ ],
+ "status": "ready",
+ "shot": "eye · profile · clean · MEDIUM",
+ "angle": "eye · profile · clean · MEDIUM — profile at the window = the life outside she is not in",
+ "framing": "MEDIUM at the kitchen window: N in profile at the sink, both hands on its edge, looking out of the window at the street, the light on her face (a different kind of B-roll with her cast sheet — user Fix 2026-10-01: 'wrong person, a different type of broll')",
+ "motionPlan": "From this frame: she looks out, then her eyes drop to the sink — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "location": "L-N-KITCHEN",
+ "line": "Nothing gave me my life back.",
+ "title": "low — her face, sat back (user 2026-10-01: three B-rolls)",
+ "act": "Hook 1",
+ "imageTaste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "updatedAt": 1790883833026
+}
