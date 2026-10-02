@@ -24,6 +24,12 @@ Drive task folder `1PvwdhVU13RI6M1GQi9GKy-aEdx_4XZSa`
 - Checks: angles.py PASS · wardrobe.py PASS · visual_plan.py PASS. Board: 24 planned beat cards; Plan docs locations, actmap, wardrobe, visualplan, music.
 - Flags F3/F7/F8/F9 unanswered — held on the defaults (3 hooks, voiced as written, avatar hair).
 
+## Voice stage (§22U) — started 2026-10-02
+- Talking-head frames (step 1), propped on the vanity = the L-VANITY plate's viewpoint, refs L-VANITY + her sheet: **N-VOICE-IMG** (finished face, the body; job f93cb289) and **N-VOICE-IMG-B** (bare face, the hooks; job 99d3f3a6). Sunburst 2k. On the board To check.
+- Enhance text for Hook 1 + body in one request: `vo/ALL.enhanced.txt` (1,715 chars, `tts_budget.py` verbatim PASS, 30 tags, [slowly] per paragraph, [pause] at sentence ends). ElevenLabs check PASS (1,425 free slots).
+- Kling voice takes built (`voice/N_G1.call.json` "I am so mad…" 18 words, `N_G2` "And it is not because it goes on pure white…" 17 words; kling3_0 via Higgsfield, pro, 10 s, sound on): `preflight.py` PASS except **start image approved** — §22X: no paid video call before the user's Confirm of N-VOICE-IMG. Stopped there.
+- Higgsfield ODAQ B.V. balance 3,828.24 (shared — other sessions spend on it).
+
 ## Decisions
 - Mode 1 + UGC Ad from the inspo (no MODE/FORMAT in the message) — F2. Hooks 3 by default — F3.
 - The inspo file came with no extension (`inspo video`) — renamed `intake/inspo.mp4` and measured as the primary.
