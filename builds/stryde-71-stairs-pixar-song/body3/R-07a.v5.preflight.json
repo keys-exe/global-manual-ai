@@ -1,0 +1,107 @@
+{
+ "beat": "R-07a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"I did. Chile, the first step, I didn't even have to hold the rail. Not the second. Not the third. All the way down. Both feet. Forwards.\": Keep this photo exactly as it is — the staircase, its carpet runner and brass rods, balusters, oak rail, square newel and photo wall — same viewpoint, a tall 9:16 crop from the newel to the top step; add her. Image 1 is the hall. Image 2 is the strap, Image 3 its back. Image 4 is the woman: her face and pink blouse; a denim skirt. Image 5 is the style.\nFull shot, sharp on her: the woman of Image 4 on the ninth step up, coming down three-quarter toward the lens, right foot onto the next step, hands loose off the rail, four chunky fingers and a thumb; on her bare right knee the strap of Image 2 copied exactly, 12 × 5 cm, the kneecap's lower edge in its notch; a proud closed-mouth smile, looking down at the next step. Scale: her head level with the lowest photo frame.\nIn frame: her, the flight; the rest as Image 1.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun from the door. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "I did. Chile, the first step, I didn't even have to hold the rail. Not the second. Not the third. All the way down. Both feet. Forwards.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P0-PROP-N plate (confirmed) — her hall and staircase",
+   "kind": "location"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "R-06a frame v2 B (confirmed) — N in the day's rose-pink blouse (HT27)",
+   "kind": "character"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "377f63fd-7b11-4db2-a663-052e8c0637e8",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user Fix \"wrong stairs\" + R-07c \"this should be part of the r07a so it should be one take only\" → an image edit of the confirmed P0-PROP-N plate (her own staircase), N from her R-06a frame, one take for both lines",
+ "product": false,
+ "risk_class": "stairs",
+ "medias": [
+  "377f63fd-7b11-4db2-a663-052e8c0637e8",
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "72a9acfd-439d-478b-916d-b4da8b6d2836",
+  "37cf0d7a-06aa-4d40-ad45-821191a13086",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "P0-PROP-N plate (confirmed) — her hall and staircase",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 2"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/back.webp",
+   "role": "Image 3"
+  },
+  {
+   "label": "R-06a frame v2 B (confirmed) — N in the day's rose-pink blouse (HT27)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__R-06a",
+   "role": "Image 4"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 5"
+  }
+ ]
+}

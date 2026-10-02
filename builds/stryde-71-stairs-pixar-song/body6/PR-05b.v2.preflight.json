@@ -1,0 +1,87 @@
+{
+ "beat": "PR-05b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Under my clothes. Don't nobody know it's there.\": Her bedroom in the morning, tall 9:16. Image 1 is the strap. Image 2 is the woman — her deep brown skin exactly as in Image 2. Image 3 is the style.\nClose-up at knee height from her right side, her right leg in profile with her toes to frame left, sharp on the knee: she sits on her bed's edge, her navy cotton trouser leg falling from above the knee, its hem halfway down over the strap of Image 1 copied exactly — a black shell with two matching pointed peaks close together at the middle of its top edge, a notch between them, sloping down to a chrome slide at each end — 12 × 5 cm, a third of the frame wide, its notch cupping the bottom of the kneecap, on the tendon, never lower on the shin; her hands out of frame; the quilt edge behind. Scale true to the set: her knee a third of the frame wide.\nIn frame: one leg, the trouser leg, exactly one strap, the quilt edge; every other surface plain.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "Under my clothes. Don't nobody know it's there.",
+ "face": false,
+ "room": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "R-07a frame v8 A (confirmed) — N's skin and hands (HT27); the day's clothes are written in words",
+   "kind": "frame"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user Fix \"product placemetn is too low\" → the notch cups the bottom of the kneecap, on the tendon, never lower on the shin",
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "11b8a6bb-8c4a-4739-86ce-0c779f413c53",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "R-07a frame v8 A (confirmed) — N's skin and hands (HT27); the day's clothes are written in words",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__R-07a",
+   "role": "Image 2"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 3"
+  }
+ ],
+ "sent_note": "sent 12:26 UTC with the V7.90.4 opener For the line \"…\":"
+}

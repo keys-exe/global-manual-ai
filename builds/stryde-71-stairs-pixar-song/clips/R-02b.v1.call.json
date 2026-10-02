@@ -1,0 +1,57 @@
+{
+ "beat": "R-02b",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Two anti-inflammatories, the gel, the brace, an ice pack on my right knee.\": From this frame: one squeeze — about a second; camera RV sway — the virtual camera breathes in place, never travels. Seen from above, her right hand squeezes the white tube once and a short line of clear gel lands on the fingertips of her other hand, then both hands hold still; the tablets, the glass, the ice packs and the old brace on the lace stay exactly as in the frame; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut; the tube keeps its shape.",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_090311_99a57762-51ca-4c3a-a3a7-2e3df09146ab.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Two anti-inflammatories, the gel, the brace, an ice pack on my right knee.",
+ "motion_plan": "From this frame: one squeeze — about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "about a second",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause first (HT25)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image R-02b@v2B, job 99a57762-51ca-4c3a-a3a7-2e3df09146ab)"
+}

@@ -4,7 +4,7 @@
  "bars": 1,
  "beat": "T-01b",
  "build": "stryde-71-stairs-pixar-song",
- "duration": 5,
+ "duration": 5.04,
  "eg": "",
  "flow": [
   "image",
@@ -19,10 +19,9 @@
  "imageJob": "83cdaecf-f772-4501-8f6c-1a725ed4d7b1",
  "imageMatch": "plate",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  3,
-  4
- ],
+ "imagePair": [],
+ "imageParts": [],
+ "imagePick": 3,
  "imagePrompt": "For the line \"My cousin Loretta was there. She's seventy-four,\": Keep this photo exactly as it is — the hall, the parquet dance floor, the string lights and chandeliers, the evening light — out on the dance floor, a tall 9:16 crop, and add the woman. Image 1 is the hall. Image 2 is the woman — her face and silver bob only. Image 3 is the style — the same render, materials, light and proportions.\nMedium close-up from low, sharp on her face: the same woman as Image 2, seventy-four, in a fuchsia satin dress to the knee, in three-quarter view facing frame left, both arms raised above her head, hands open and waving to the beat, four chunky fingers and a thumb on each, a big grin with lips closed, looking at the dancers beside her. Scale true to the set: the chandelier behind her is no bigger than her head.\nIn frame: the woman from the waist up, her raised hands, the string lights of Image 1 soft behind her; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Dress and decor plain — no lettering, logos or labels; not the teal blouse or khaki shorts of Image 2.",
  "imageRefs": [
   {
@@ -41,8 +40,8 @@
    "ref": "stryde-71-stairs-pixar-song__P-05c"
   }
  ],
- "imageRes": "1536×2752",
- "imageStatus": "review",
+ "imageRes": 7346153,
+ "imageStatus": "confirmed",
  "imageTaste": [
   "HT03",
   "HT04",
@@ -58,9 +57,13 @@
   "HT26"
  ],
  "imageType": "image/png",
+ "imageUnused": 4,
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_83cdaecf-f772-4501-8f6c-1a725ed4d7b1.png",
  "imageVersions": [
   {
+   "archiveAsset": "195dbd92fd110229b8f0f96654cb93c2",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "7be97d68969775f42466ba68870142ba",
    "at": 1790890992104,
    "connector": "Higgsfield",
@@ -88,12 +91,12 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_721f6c64-afa0-426d-99ba-99cc16250afc.png",
-   "v": 1,
-   "archived": true,
-   "archiveAsset": "195dbd92fd110229b8f0f96654cb93c2",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 1
   },
   {
+   "archiveAsset": "cdcb62f98511097fed38e8c2ba676e2c",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "4f5c5614dae25e0bf08101c25aca8068",
    "at": 1790890992104,
    "connector": "Higgsfield",
@@ -121,24 +124,17 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214016_d6f413d0-c55a-496f-9efe-d8f3734063a5.png",
-   "v": 2,
-   "archived": true,
-   "archiveAsset": "cdcb62f98511097fed38e8c2ba676e2c",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 2
   },
   {
-   "v": 3,
-   "pair": "A",
    "asset": "c0edb855f84f45291cea7f33e4a1b24e",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_83cdaecf-f772-4501-8f6c-1a725ed4d7b1.png",
+   "at": 1790891943025,
+   "connector": "Higgsfield",
+   "credits": 2.14,
    "job": "83cdaecf-f772-4501-8f6c-1a725ed4d7b1",
    "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "size": 7346153,
-   "res": "1536×2752",
-   "at": 1790891943025,
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: Loretta in fuchsia satin, silver bob, both hands up waving, a closed-mouth grin, the chandelier behind — A has a stray guest's back at the left edge; B clean",
+   "pair": "A",
    "refs": [
     {
      "kind": "location",
@@ -156,21 +152,21 @@
      "ref": "stryde-71-stairs-pixar-song__P-05c"
     }
    ],
-   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: Loretta in fuchsia satin, silver bob, both hands up waving, a closed-mouth grin, the chandelier behind — A has a stray guest's back at the left edge; B clean"
+   "res": "1536×2752",
+   "size": 7346153,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_83cdaecf-f772-4501-8f6c-1a725ed4d7b1.png",
+   "v": 3
   },
   {
-   "v": 4,
-   "pair": "B",
    "asset": "1284d3fa830f768f08171f62749a7fb9",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_72334911-7619-4138-929e-9dbf479c2b95.png",
-   "job": "72334911-7619-4138-929e-9dbf479c2b95",
-   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "at": 1790891943025,
    "connector": "Higgsfield",
    "credits": 2.14,
-   "size": 7276336,
-   "res": "1536×2752",
-   "at": 1790891943025,
+   "job": "72334911-7619-4138-929e-9dbf479c2b95",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: Loretta in fuchsia satin, silver bob, both hands up waving, a closed-mouth grin, the chandelier behind — A has a stray guest's back at the left edge; B clean · not chosen (the user picked A); kept on Old versions 2",
+   "pair": "B",
    "refs": [
     {
      "kind": "location",
@@ -188,7 +184,14 @@
      "ref": "stryde-71-stairs-pixar-song__P-05c"
     }
    ],
-   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: Loretta in fuchsia satin, silver bob, both hands up waving, a closed-mouth grin, the chandelier behind — A has a stray guest's back at the left edge; B clean"
+   "res": "1536×2752",
+   "size": 7276336,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_72334911-7619-4138-929e-9dbf479c2b95.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "accfe6d2cd9c34a235e6facd17093054",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
   }
  ],
  "key": "Loretta",
@@ -197,7 +200,7 @@
  "light": "warm string lights and chandeliers · key R · evening · turn: warm party light · 3200K",
  "line": "My cousin Loretta was there. She's seventy-four,",
  "location": "L-RECEPTION",
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: her raised hands wave once on the beat — one wave, about a second; camera RV sway — the virtual camera breathes in place, never travels",
  "music": "MUS-TURN",
  "onScreen": 3.25,
@@ -208,9 +211,44 @@
  "songOut": 48.66,
  "stage": "broll",
  "staging": "hands: one movement",
- "status": "ready",
+ "status": "review",
  "storyDay": "N-D2",
  "title": "turn",
- "updatedAt": 1790891943025,
- "imageParts": []
+ "updatedAt": 1790931957895,
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "64ec34e18346fab24994d456a83d45fd",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/d02a3558-2486-46b4-963b-19229f2f3662-4lpeTe7ptGIDPuCoTQi0Zg-output.mp4?x-kcdn-pid=112372",
+   "job": "AdWozUb1zQp67LysXeJS22WYg3AHiVu_b0eU1553lE7sn3uXt4Xl4vLOhn-R7ICsmL1T3qr6",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "res": "1072×1928",
+   "size": 5896345,
+   "fromImage": 3,
+   "at": 1790931957895,
+   "note": "the first clip on the picked frame v3 · what I see: Loretta's raised hands wave side to side on the beat, a closed-lipped grin throughout; the guest at the left edge stays still"
+  }
+ ],
+ "videoAsset": "64ec34e18346fab24994d456a83d45fd",
+ "videoParts": [],
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/d02a3558-2486-46b4-963b-19229f2f3662-4lpeTe7ptGIDPuCoTQi0Zg-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AdWozUb1zQp67LysXeJS22WYg3AHiVu_b0eU1553lE7sn3uXt4Xl4vLOhn-R7ICsmL1T3qr6",
+ "videoConnector": "Kling",
+ "videoAt": 1790931957895,
+ "videoRes": "1072×1928",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25"
+ ],
+ "prompt": "For the line \"My cousin Loretta was there. She's seventy-four,\": From this frame: her raised hands wave once on the beat — one wave, about a second; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay closed in a grin from the first frame to the last — a silent clip, she never speaks or sings. Her two raised hands wave once side to side above her head on the beat and stay up, her eyes on the dancers beside her; the guest at the left edge and the hall behind stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut; she never turns to the lens.",
+ "credits": 40
 }

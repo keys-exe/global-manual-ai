@@ -1,0 +1,48 @@
+{
+ "beat": "M-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"She said, There's one spot under the kneecap where every step lands.\": Keep this picture exactly as it is — the knee model, bones, kneecap, see-through outline and grey backdrop, the same side view — and change only the tendon and the glow. Image 1 is the picture, its anatomy drawn the way this film's own animators would draw it: simple, rounded, readable shapes, no muscle anywhere.\nAt the front of the knee, the patellar tendon, drawn as a broad white ribbon from the bottom tip of the kneecap straight down to the bump at the front of the shin bone, about as long as the kneecap, with one small soft warm glow on the middle of that ribbon, below the kneecap and above the bump. The kneecap itself plain ivory with no glow on it; the joint line between the two big bones plain, no glow there.\nIn frame: the knee model, the tendon ribbon, the one glow; the rest as Image 1. Warm key, cool fill, rim. A final frame from a 3D animated feature film, stylized storybook render. No lettering, labels or arrows.",
+ "script_line": "She said, There's one spot under the kneecap where every step lands.",
+ "face": false,
+ "room": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "M-03a v5 A (your pick) — the Pixar anatomy frame, side profile",
+   "kind": "frame"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "19b8bce7-3e00-47e1-ac1d-d8b96ff50188",
+ "taste": [
+  "HT11",
+  "HT18",
+  "HT21",
+  "FP03",
+  "FP13"
+ ],
+ "anatomy": true,
+ "anat_style": "S3",
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user Fix \"the poin is the patellar tendon\" (on the pick v5) → an edit of v5: the tendon drawn as a broad ribbon from the kneecap tip to the shin bump, the glow on its middle, none on the kneecap (FP21)",
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "pixar_anatomy": true,
+ "medias": [
+  "19b8bce7-3e00-47e1-ac1d-d8b96ff50188"
+ ],
+ "board_refs": [
+  {
+   "label": "M-03a v5 A (your pick) — the Pixar anatomy frame, side profile",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__M-03a",
+   "role": "Image 1"
+  }
+ ]
+}

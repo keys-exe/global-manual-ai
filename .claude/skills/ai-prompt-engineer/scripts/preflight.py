@@ -9,7 +9,14 @@ CALL.json describes one paid video call exactly as it will be sent:
     "beat": "BF-SC02-SH03",
     "connector": "seedance" | "kling",
     "mode": 1-5,                       # §18A mode lock
-    "kind": "dialogue" | "listener" | "insert" | "broll" | "multi" | "voice_master",
+    "kind": "dialogue" | "listener" | "insert" | "broll" | "multi" | "take" | "voice_master",
+                                       # take = a §24K part 5 one-take (TAKE-FILM): one continuous action, one call;
+                                       # multi = a MULTI-SHOT take (MULTI-FILM) — both V7.88.0
+    "take": "SC07-T1",                 # film (Modes 4–5) on Seedance: the act map's take (takes.py) — connected shots are one call
+    "legacy_build": false,             # true on a build started before V7.88.0 (set automatically for the PRE_TAKES builds,
+                                       # by "build" or the call's path): its shots stay as planned, no take required
+    "covers": ["SC07-SH02", "SC07-SH03"],   # take / multi: the act-map rows this call generates (≤ 4)
+    "start_pos": "...", "end_pos": "...",   # take / multi: where everyone is on frame 1 / the last frame, in the prompt word for word
                                        # voice_master = a §24I part 7 neutral film voice master (Seedance, 10s, the
                                        # face-only sheet crop as the one ingredient, no audio in): the film-shot strings
                                        # (rig, SERIES-LOOK, drama, state, business) do not apply — the §24I recipe does
@@ -50,6 +57,8 @@ Beat images (§6A, V7.70.0; first-render rules V7.74.0) — a B-roll or hook sta
     "taste": ["HT03", "FP02"],         # House Taste / product fix-pattern rules applied (§34A)
     "anatomy": false,                  # an anatomy / mechanism beat (Nano Banana)
     "first_frame": false,              # Modes 2/3/5 (§24O): the build's first beat image — every later one attaches a confirmed frame as kind "style"
+    "anat_lock": null | "the team's look call for the build's anatomy, in their words (§12A-1 rule 7)",
+    "pixar_anatomy": false,            # a build from before V7.90 whose team asked for the Pixar anatomy: the Pixar anatomy checks run despite legacy_build (V7.90.3)
     "anat_style": null | "S1".."S7",   # anatomy beats: the act-map row's style (§12A-1, V7.81.0); S5 (physical model) routes as realistic
     "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = two NB Pro
     "alt_reason": null | "why nano_banana_2 runs instead of Pro (the alternative, V7.72.1)"
@@ -84,6 +93,8 @@ SIG = {
     "NEG-FILM": "no phone camera look",
     "NEG-ANIMFILM": "no concept art",
     "MULTI-FILM": "within a single take",
+    "MULTI-MOVE": "picks up the movement exactly where the last one left it",
+    "TAKE-FILM": "One continuous shot, never cut and never restarted",
     "NEG-SOUND": "no music, no score, no sound effects",
     "SERIES-LOOK": "The look of a high-end live-action drama series",
 }
@@ -105,6 +116,14 @@ STREAMERS = re.compile(r"\b(netflix|hbo|max original|prime video|amazon original
 WALK = re.compile(r"\b(walks?|walking|steps? (?:toward|into|across|down|up)|crosses|climbs?|stairs|runs?|running)\b", re.I)
 PLACEHOLDER = re.compile(r"\[(?:[A-Z][A-Z0-9 ,:/'’\-]{2,}|NAME|WHO|WORD|STATE|PACE|SIDE|FOCAL)[^\]]*\]")
 BANNED = re.compile(r"\bcinematic\b", re.I)
+# §12A-1 Pixar anatomy (V7.90.0): words that pull a Mode 2 / 5 anatomy frame back to medical CGI
+PIX_ANAT_BAN = re.compile(r"premium 3D anatomical visuali[sz]ation|medical education|broadcast-quality|photo-?real(?:istic)?|natural tissue colou?rs|fibrous|fibre detail|textbook|seamless (?:studio|background)|pale grey seamless", re.I)
+# Builds started before V7.88.0 keep their shot-by-shot plan: no take is required on their calls (a system update never
+# touches existing builds; re-cutting one into takes is its team's call). Recognised by the call's "build" field or its path.
+PRE_TAKES = {"identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "stryde-71-stairs-pixar-song", "stryde-71-stairs",
+             "stryde-cascade", "stryde-failed-alternatives", "stryde-half-my-age", "stryde-identity", "stryde-lost-moments",
+             "stryde-not-your-cartilage", "stryde-regrets", "stryde-thirty-years", "stryde-three-regrets", "stryde-too-bad",
+             "stryde-what-changed", "demo-ad"}
 
 
 def words(t):
@@ -126,7 +145,7 @@ SUNBURST = {"gpt_image_2_5", "gpt_image_2_5_sunburst", "gpt-image-2-5-sunburst-i
 # §6A Part 2 — right on the first render (V7.74.0)
 FRACTION = re.compile(r"\b(?:a |one |two |three |about a |about two |about three |roughly a |at least a |over a |nearly a )?(?:half|third|quarter|fifth|thirds|quarters|fifths|\d{2}\s?(?:%|percent))\s+(?:of\s+)?(?:the\s+)?frame(?:'s)?\b|\bfills?\s+(?:most of\s+)?the\s+frame\b|\bframe[- ]filling\b", re.I)
 FIDELITY = re.compile(r"\b(?:copied|reproduced|matched|exactly as|identical to|the same as)\b[^.]{0,80}\bexactly\b|\bexactly\b[^.]{0,40}\b(?:as|in|from)\s+Image\s*\d|\bcopied exactly\b|\bnothing redesigned\b", re.I)
-EDIT_OPEN = re.compile(r"^\s*(?:For the line \"[^\"]*\":\s*)?(?:keep|edit|using|take|leave|start from|starting from)\b[^.]{0,120}\b(?:this photo|this picture|this image|this frame|the plate|image\s*1)\b", re.I)
+EDIT_OPEN = re.compile(r"^\s*(?:For the line (?:\"[^\"]*\"|— .*? —):\s*)?(?:keep|edit|using|take|leave|start from|starting from)\b[^.]{0,120}\b(?:this photo|this picture|this image|this frame|the plate|image\s*1)\b", re.I)
 HANDS = re.compile(r"\b(?:hands?|palms?|fingers?|fingertips?|thumbs?|wrists?|arms? (?:at|by|folded|crossed))\b", re.I)
 GAZE = re.compile(r"\b(?:both eyes|eyes (?:on|to|toward|down|up|closed|fixed|level)|looking (?:at|down|up|ahead|away|into|toward|straight)|gaze|square to the lens|to the lens|into the lens|at the camera|to camera|face (?:to|turned|toward|square))\b", re.I)
 SURFACE = re.compile(r"\b(?:table|desk|counter|worktop|countertop|shelf|shelves|bench|dresser|sideboard|nightstand|floor)\b", re.I)
@@ -165,14 +184,22 @@ def run_image(c):
         pos = NEG_CLAUSE.sub(" ", p)   # what the prompt asks for, negatives removed
         ph = STYLE_PHOTO.search(pos)
         check("no photograph words in a stylised render (§24O rule 1)", not ph, ph.group(0) if ph else "")
-        check("a style reference attached (§24O rule 2)", c.get("first_frame") is True or any(k in ("style", "frame") for k in kinds),
-              "attach one confirmed frame of this build as kind 'style' ('Image n is the style — same render, materials, light and proportions'); the build's first beat image sets first_frame: true")
+        if mode in (2, 5) and c.get("anatomy") and not c.get("anat_lock") and (not c.get("legacy_build") or c.get("pixar_anatomy")):
+            # V7.90.3 (LESSONS L36): a scene frame as the style on a set-less Pixar anatomy shot paints its scene in (3 of 12 renders
+            # drew the kitchen table, hands and brace). The look travels in ANAT-PIX; only a confirmed anatomy frame may be the style.
+            scene = [r.get("label", "") for r in refs if str(r.get("kind", "")).lower() in ("style", "frame") and not re.search(r"anatom", r.get("label", ""), re.I)]
+            check("Pixar anatomy: no scene frame as the style (§24O rule 2, §12A-1 V7.90.3)", not scene,
+                  f"drop {scene[0][:60]!r} — attach only a confirmed anatomy frame (label it 'anatomy'), or none" if scene else "")
+        else:
+            check("a style reference attached (§24O rule 2)", c.get("first_frame") is True or any(k in ("style", "frame") for k in kinds),
+                  "attach one confirmed frame of this build as kind 'style' ('Image n is the style — same render, materials, light and proportions'); the build's first beat image sets first_frame: true")
         if c.get("body") or c.get("face"):
             check("scale against the set and each other (§24O rule 3)", bool(STYLE_SCALE.search(p)),
                   "e.g. 'her head level with the 6th baluster, the door handle at her hip; the daughter a head taller' — 'too big' is this mode's most repeated Fix")
             check("which way each character faces, in picture terms (§24O rule 4)", bool(STYLE_FACING.search(p)),
                   "e.g. 'her back to the lens, facing the church doors' or 'in profile, facing frame left'")
-            if HANDS.search(p):
+            no_hands = re.search(r"\b(?:no hands?|(?:both )?hands? (?:are )?(?:out of|outside the) frame)\b", p, re.I)
+            if HANDS.search(NEG_CLAUSE.sub("", p)) and not no_hands:   # "no hands in frame" names hands only to keep them out
                 check("stylised hands spelled out (§24O rule 5)", bool(STYLE_HANDS.search(p)), "e.g. 'each hand four chunky fingers and a thumb'")
     sl = c.get("script_line")
     check("the spoken line is in the prompt (§6A)", bool(sl) and norm(sl) in norm(p), "script_line missing" if not sl else "")
@@ -187,8 +214,15 @@ def run_image(c):
         hit = re.search(r"location plate", p, re.I)
         check("no room block on a no-room shot (§6A)", not hit and "location" not in kinds, hit.group(0) if hit else ("location ref attached" if "location" in kinds else ""))
     if c.get("product"):
-        check("product photo attached first (§6A)", bool(kinds) and kinds[0] == "product", f"first ref: {kinds[0] if kinds else 'none'}")
+        # an image edit (§6A rule 3) takes the picture being edited as Image 1, so the product photo comes right after it
+        pi = 1 if (c.get("match") or "").strip() else 0
+        check("product photo attached first (§6A)" if not pi else "product photo attached right after the picture being edited (§6A rules 1, 3)",
+              len(kinds) > pi and kinds[pi] == "product", f"ref {pi + 1}: {kinds[pi] if len(kinds) > pi else 'none'}")
         check("true-size anchor for the product (§6A)", bool(SIZE_ANCHOR.search(p)), "e.g. '12 × 5 cm, the size of a matchbox'")
+    if c.get("anatomy"):
+        # §12A-1 rule 8 (V7.89.3, LESSONS L34): a worn photo shows a real leg — it printed one under the knee models
+        worn = [r.get("label", "") for r in refs if re.search(r"\bworn\b", r.get("label", ""), re.I)]
+        check("only the product photo on an anatomy beat (§12A-1 rule 8)", not worn, f"worn photo attached: {worn[0][:60]}" if worn else "")
     # §6A Part 2 — right on the first render (V7.74.0)
     if refs:
         missing = [i + 1 for i in range(len(refs)) if not re.search(rf"\b(?:Image|Photo|Picture)\s*{i + 1}\b", p, re.I)]
@@ -208,6 +242,18 @@ def run_image(c):
     if SURFACE.search(p):
         check("bare surfaces / a closed inventory (§6A rule 4)", bool(BARE.search(p)), f"'{SURFACE.search(p).group(0)}' named — say what is on it and close the list ('every other surface bare')")
     check("plain surfaces — no lettering or logos (§6A rule 5)", bool(PLAIN.search(p)), "e.g. 'clothing, packaging, walls and signs plain — no lettering, logos or labels except the product's own wordmark'")
+    # L41 (V7.90.4): a product shot's frame inventory counts the product — an uncounted product is drawn twice (PR-04a: two straps on one leg, twice)
+    inv = re.search(r"In (?:the )?frame:([^\n]*)", p)
+    NOTPROD = ("photo", "picture", "style", "woman", "man", "girl", "boy", "plate", "room", "frame", "doctor", "visitor")
+    pns = [m for m in re.findall(r"Image \d+ is the ([a-z]+)", p) if m not in NOTPROD] if c.get("product") else []
+    if inv and pns:
+        noun = pns[0]
+        counted = re.search(rf"\b(one|a single|exactly one)\s+(?:\w+\s+){{0,2}}{noun}", inv.group(1))
+        check("the product counted in the frame inventory (§6A rule 4, L41)", bool(counted), f"name it once with its count in the In frame list — 'exactly one {noun} on her right knee'" if not counted else "")
+    # L28 (V7.88.1): speech marks inside an image prompt are printed on the frame as a caption — the line goes in without them
+    # V7.90.7 (L46): the opener's own marks print too — "For the line — … —:" on a picture prompt, never "For the line \"…\":"
+    sm = re.search(r'["“”]', p)
+    check("no speech marks in the picture prompt (§6A rule 5, L28)", not sm, "a quoted line or word prints as a caption — open with For the line — … —: and write the line without speech marks" if sm else "")
     dev = DEVICE.search(p)
     check("no device named as an object in the picture (§6A rule 7)", not dev, dev.group(0) if dev else "")
     oof = [m for m in OUT_OF_FRAME.finditer(p) if not re.search(rf"\b{BODY_PART}\b", p[max(0, m.start() - 40):m.end()], re.I)]
@@ -217,14 +263,28 @@ def run_image(c):
     if anatomy:   # §12A-1 (V7.81.0): a style per anatomy beat, never the glass body by habit
         st = c.get("anat_style")
         check("anatomy style named (S1-S7, §12A-1 V7.81.0)", st in {f"S{n}" for n in range(1, 8)}, f"anat_style {st!r}")
-        if st == "S1":   # V7.86.1 (user: "this style"): S1 Ghost is made against its reference picture, never from words alone (L25)
-            check("S1 Ghost reference attached as the style (§12A-1 V7.86.1)", "style" in kinds,
-                  "attach .claude/skills/ai-prompt-engineer/references/anatomy/S1_ghost.webp as kind 'style' — 'Image n is the style — copy its look exactly'")
-        if st and st != "S1":
+        if st == "S1":   # V7.89.2 (user: "i just want the style but i dont want the image to be the reference image", L32):
+            # the house picture's look travels in words; the picture itself is never attached
+            house = [r for r in refs if re.search(r"S1_ghost", json.dumps(r), re.I)]
+            check("S1 Ghost: the house picture is never attached (§12A-1 V7.89.2)", not house,
+                  "remove references/anatomy/S1_ghost.webp from the refs — write its look in words (ANAT-BASE + ANAT-STYLE-S1)" if house else "")
+            miss = [w for w, rx in (("smoky see-through outline", r"smoky see-through outline"), ("ivory-peach bones", r"ivory-peach"),
+                                    ("navy-black field", r"navy-black")) if not re.search(rx, p, re.I)]
+            check("S1 Ghost: the look in words (ANAT-BASE + ANAT-STYLE-S1)", not miss, ", ".join(miss))
+        if mode in (2, 5) and not c.get("anat_lock") and (not c.get("legacy_build") or c.get("pixar_anatomy")):
+            # V7.90.0 (user: "lets make one" / "create the pixar version of that"): Pixar anatomy — each realistic style drawn
+            # by the film. Steps aside for the team's look call (anat_lock, §12A-1 rule 7) and builds that existed at the cut.
+            head = p[:400]
+            check("Pixar anatomy: ANAT-PIX opens the prompt (§12A-1 V7.90.0)",
+                  "drawn the way this film's own animators would draw it" in head,
+                  "" if "drawn the way this film's own animators would draw it" in head else "start with the line, then ANAT-PIX (render line + the film's anatomy), then the style's ANAT-PIX-S<n> line")
+            med = PIX_ANAT_BAN.findall(NEG_CLAUSE.sub("", p.split("NEGATIVES:")[0]))
+            check("Pixar anatomy: no medical-CGI words (§12A-1 V7.90.0)", not med, ", ".join(sorted(set(m.lower() for m in med))))
+        if st and st != "S1" and (mode not in (2, 5) or c.get("anat_lock") or c.get("legacy_build")):
             s1 = re.search(r"Premium 3D anatomical visuali[sz]ation|near-black (field|background)|navy-black (field|background)|glass-like (body|outer|shell)|smoky see-through outline", p, re.I)
             check(f"no S1 Ghost world on an {st} beat (§12A-1)", not s1, s1.group(0) if s1 else "")
-        if st == "S5":
-            anatomy = False   # a physical model is a Mode 1 capture: routed like realistic work
+        if st == "S5" and mode not in (2, 3, 5):
+            anatomy = False   # a physical model is a Mode 1 capture: routed like realistic work (stylised modes keep the stylised route, V7.90.0)
     check("A/B pair: two renders (§5)", len(pair) == 2, f"pair {pair}")
     if anatomy or mode in (2, 3, 5):
         why = "anatomy" if anatomy else f"Mode {mode}"
@@ -263,6 +323,10 @@ def run_beat_video(c, p, check):
     check("no retired boilerplate (§35A)", not hits, "; ".join(hits))
     # L15 (2026-10-01, user: "you should never talk the lyrics/script in broll") — a B-roll is pictures under the voice; the prompt says so.
     check("nobody mouths the line (§35A rule 6, HT25)", bool(NOSPEAK.search(p)), "e.g. 'mouth closed, she never speaks or sings' or 'nobody speaks'")
+    # L30 (V7.89.1): a quoted line in a clip prompt invites a talking mouth — the line goes in without its speech marks
+    ml = re.match(r'\s*For the line "(.*?)":\s', p, re.S)
+    qm = bool(ml and re.search(r'["“”]', ml.group(1)))
+    check("no speech marks inside the clip's line (§35A rule 6, L30)", not qm, "write the line without its speech marks: For the line \"…she said, Baby, can I…?\":" if qm else "")
     rc = (c.get("risk_class") or "").lower() or None
     if rc in RISKY:
         check(f"{rc}: end frame pinned (§27G)", bool(c.get("pinned")) or bool((c.get("pin_waived") or "").strip()), "first-and-last frame, or the user's words in pin_waived")
@@ -301,8 +365,24 @@ def film_shot(c, p, conn, mode, kind, film, check):
     if not film:
         check("ads stay phone style: no SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] not in p)
         check("ads stay phone style: no F6–F10 (§24N)", not any(sig in p for r, sig in RIGS.items() if r in SEEDANCE_ONLY))
-    if kind == "multi":
-        check("MULTI-SHOT only when nobody moves", sm == "still", f"subject {sm}")
+    # 5a. One take for connected action (§24K part 5, V7.88.0)
+    if conn == "seedance" and kind != "voice_master" and not c.get("legacy_build"):
+        # legacy_build: true — a build started before V7.88.0 keeps its shot-by-shot plan (never re-cut into takes without its team's ask)
+        check("take named — connected shots are one call (§24K part 5, takes.py)", bool(c.get("take")), "missing take")
+    if kind in ("take", "multi"):
+        cov = c.get("covers") or []
+        check("take covers 1–4 act-map rows", 1 <= len(cov) <= 4, f"{len(cov)} rows")
+        check("take on Seedance", conn == "seedance", conn)
+        d = c.get("duration")
+        check("take ≤ 15s (§24K part 5)", isinstance(d, (int, float)) and d <= 15, str(d))
+        for k in ("start_pos", "end_pos"):
+            v = (c.get(k) or "").strip()
+            check(f"{k} written into the prompt word for word", bool(v) and v in p, v or f"missing {k}")
+    if kind == "take":
+        check("TAKE-FILM", SIG["TAKE-FILM"] in p)
+        check("one-take covers ≤ 3 rows", len(c.get("covers") or []) <= 3, str(len(c.get("covers") or [])))
+    if kind == "multi" and sm != "still":
+        check("moving MULTI-SHOT carries the action across the cut (MULTI-FILM MOVE)", SIG["MULTI-MOVE"] in p, f"subject {sm}")
 
     # 5b. Focus (§30J)
     rk = c.get("rack")
@@ -324,12 +404,12 @@ def film_shot(c, p, conn, mode, kind, film, check):
         check("NEG-SCENECUT", SIG["NEG-SCENECUT"] in p)
         check("NEG-FILM / NEG-ANIMFILM", SIG["NEG-FILM" if mode == 4 else "NEG-ANIMFILM"] in p)
         check("NEG-SOUND (clips carry dialogue only, §24M)", SIG["NEG-SOUND"] in p)
-        if kind in ("dialogue", "listener", "multi", "broll") and kind != "insert":
+        if kind in ("dialogue", "listener", "multi", "take", "broll") and kind != "insert":
             check("STATE-CARRY", SIG["STATE-CARRY"] in p)
             check("NEG-DRAMA", SIG["NEG-DRAMA"] in p)
-        if kind in ("dialogue", "listener", "multi"):
+        if kind in ("dialogue", "listener") or (kind == "multi" and sm == "still"):
             check("BUSINESS-LINE", SIG["BUSINESS-LINE"] in p)
-        if kind in ("dialogue", "multi"):
+        if kind == "dialogue" or (kind in ("multi", "take") and c.get("dialogue")):   # a silent take of movement has no dialogue strings (V7.88.0)
             for k in ("DRAMA-DELIVERY", "PLAYING", "VOICE NOW"):
                 check(k, SIG[k] in p)
             check("AUD string", SIG["AUD-FILM" if mode == 4 else "AUD-ANIM"] in p)
@@ -466,6 +546,11 @@ def main():
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
     c = json.loads(Path(a.call).read_text())
+    def build_of(path):
+        parts = path.parts
+        return parts[parts.index("builds") + 1] if "builds" in parts[:-1] else None
+    if c.get("build") in PRE_TAKES or {build_of(Path(a.call).resolve()), build_of(Path.cwd())} & PRE_TAKES:
+        c.setdefault("legacy_build", True)
     res = run(c)
     fails = [r for r in res if r["result"] == "FAIL"]
     if a.json:

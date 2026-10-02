@@ -123,7 +123,7 @@ R("T-01b", A, (20, 21), "Loretta", "turn", "C1", "L-RECEPTION", "N-D2",
   "her raised hands wave once on the beat", "one wave, about a second", "hands: one movement", "absent", "—",
   "low", TQ, "clean", "MCU", "low = she's the one with the strength", "eyes", "deep", *REC, "evening", "turn: warm party light", True, "MUS-TURN", ledger="VN05")
 R("T-02a", A, (22, 22), "floor", "turn", "C1 + one-off guests", "L-RECEPTION", "N-D2",
-  "WIDE from high: the line dance seen from above the tables, Loretta in fuchsia in the middle of the line, stepping in time",
+  "WIDE from a little above: Loretta in fuchsia leads the line dance at the front, nearest the lens, her face clear, the guests stepping behind her (user Fix 2026-10-02: this should be loreta)",
   "one side step with the line", "one step per beat, about a second", "dancing: wide, side step, camera still", "worn (under her dress, hidden)", "HIDDEN",
   "high", FR, "clean", "WIDE", "high over the floor = the whole line moving as one, her in the middle of it", "deep", "deep", *REC, "evening", "turn: warm party light", False, "MUS-TURN", ledger="VN05")
 R("T-02b", A, (23, 23), "Slide", "turn", "C1 feet + line", "L-RECEPTION", "N-D2",
@@ -162,9 +162,9 @@ R("R-03a", A, (32, 33), "said", "reveal", "C1", "L-N-KITCHEN", "N-D3",
   "she leans in and reaches down", "one lean, about two seconds", "none", "absent", "—",
   "low", TQ, "clean", "MCU", "low = she has the answer", "eyes", "deep", *KIT, "morning", "turn", True, "MUS-TURN")
 R("R-03b", A, (34, 35), "leg", "reveal (§9D)", "C1", "L-N-KITCHEN", "N-D3",
-  "MEDIUM seated across the table: Loretta pulls her right khaki pant leg up over the knee — the little black strap coming into view under her kneecap",
+  "CLOSE from low at knee height: Loretta, chair turned out from the table, rolls her right khaki pant leg up above the knee — the strap on her knee a third of the frame wide, her knowing face above (FP11: the strap big in frame)",
   "one pull up past the knee", "one pull, about two seconds", "hands: one movement, seated", "worn", "REVEAL",
-  "eye", TQ, "clean", "MEDIUM", "", "hands", "medium", *KIT, "morning", "turn", True, "MUS-TURN")
+  "low", FR, "clean", "MCU", "low at the knee = the reveal is the strap, FP11", "hands", "medium", *KIT, "morning", "turn", True, "MUS-TURN")
 R("R-04a", A, (36, 37), "strap", "product first appearance (PIX-SPLIT, FP01, FP03, FP11)", "C1 knee", "L-N-KITCHEN", "N-D3",
   "ECU her right knee, front-on, the strap at least a quarter of the frame wide: the little black strap seated just under the kneecap, her fingertip tapping the shell once",
   "one tap on the strap", "one tap, about a second", "hands: large in frame", "worn", "VISIBLE",
@@ -174,21 +174,17 @@ R("R-05a", A, (38, 39), "handed", "held product (FP02, FP06)", "N hands", "L-N-K
   "she turns her hand a little to look at it", "one small tilt, about a second", "hands: product rigid", "held", "VISIBLE",
   "high", FR, "clean", "CU", "high = her own view of it in her hand", "product", "medium", *KIT, "morning", "turn", True, "MUS-TURN")
 R("R-06a", A, (40, 41), "Loretta", "reveal — the doubt", "N + C1", "L-N-KITCHEN", "N-D3",
-  "MEDIUM two-shot across the table: N holds the strap up between finger and thumb at arm's length, one eyebrow up, Loretta across from her unbothered",
+  "MEDIUM two-shot across the table: N holds the strap up on her open palm between them, its front to the lens, a quarter of the frame wide, one eyebrow up, Loretta across from her unbothered (FP06, FP11)",
   "N lifts the strap and tilts her head", "one lift, about two seconds", "hands: product rigid", "held", "VISIBLE",
   "eye", PR, "clean", "MEDIUM", "profile = the two of them face to face, the strap between", "product", "deep", *KIT, "morning", "turn", True, "MUS-TURN")
 R("R-06b", A, (42, 43), "put", "SEAT (FP10)", "N", "L-N-KITCHEN", "N-D3",
   "CU seated: both hands slide the strap up her right shin to seat it under the kneecap — one move up to the tendon",
   "slides up the last few centimetres and stops at contact", "one slide, about a second", "hands: start mid-movement, end on contact", "seated", "VISIBLE",
   "high", TQ, "clean", "CU", "high = her own view of her knee", "product", "medium", *KIT, "morning", "turn", False, "MUS-TURN")
-R("R-07a", A, (44, 46), "rail", "payoff (HT03, HT04)", "N", "L-N-STAIRS", "N-D3",
-  "MEDIUM from the hall floor: N at the very top of the stairs takes the first step down facing forwards, hands at her sides, the strap on her bare right knee",
-  "one step down, facing forwards", "one step, about a second", "stairs: camera at the bottom, subject 1 step, hands free", "worn", "VISIBLE",
-  "low", FR, "clean", "MEDIUM", "low = resolve", "deep", "deep", *STAIR_PM, "afternoon", "after: sun through the sidelights", True, "MUS-TURN", mirror="P-01a")
-R("R-07c", A, (47, 49), "Forwards", "payoff", "N", "L-N-STAIRS", "N-D3",
-  "MEDIUM from the side through the balusters: N comes down the last three steps into the hall facing forwards, hands free, the strap on her bare right knee, Loretta's shoulder soft in the foreground",
-  "three steps down to the hall floor, one foot per step", "one step per second", "stairs: side, waist-up, camera still, 3 steps", "worn", "VISIBLE",
-  "eye", PR, "through", "MEDIUM", "through the balusters = Loretta's view, watching her do it", "deep", "deep", *STAIR_PM, "afternoon", "after: sun", True, "MUS-TURN")
+R("R-07a", A, (44, 49), "rail", "payoff (HT03, HT04) — one take for both lines (user 2026-10-02: R-07c \"should be part of the r07a so it should be one take only\"; \"wrong stairs\" → an edit of the P0-PROP-N plate)", "N", "L-N-STAIRS", "N-D3",
+  "FULL from the hall floor at the plate's own viewpoint, a tall crop on her staircase (carpet runner, brass rods, white balusters, oak rail, square newel, photo wall): N on the ninth step up coming down in three-quarter toward the lens, hands free off the rail, the strap on her bare right knee at true size",
+  "comes down the flight, one step a second, facing forwards, hands off the rail", "one step per second", "stairs: three-quarter, full body, camera still at the foot", "worn", "VISIBLE",
+  "eye", TQ, "clean", "FULL", "three-quarter from the hall = the whole descent, her own stairs, done on her own", "deep", "deep", *STAIR_PM, "afternoon", "after: sun through the sidelights", True, "MUS-TURN", mx=10)
 
 # ---------------- Act 4 — Pure Mechanism (106.6–134.2 s)
 A = "Act 4"

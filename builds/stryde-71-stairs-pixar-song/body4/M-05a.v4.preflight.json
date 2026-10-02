@@ -1,0 +1,34 @@
+{
+ "beat": "M-05a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Not that spot. That's why ain't nothing worked. The pain is pressure. That's all it is.\": A final frame from a 3D animated feature film, stylized storybook render. The anatomy is drawn the way this film's own animators would draw it: simple, rounded, readable shapes. A clean model of the right knee on a soft plain pale grey backdrop, no muscle anywhere: smooth ivory bones with a soft inner glow, white ribbon tendons and ligaments, the kneecap, inside a soft see-through peach outline of the leg with a cool blue rim on one side; warm key, cool fill, rim.\nMedium shot in true side profile, the leg from mid-thigh to mid-shin running up the frame, the knee a third of the frame wide, sharp on the tendon: a knee sleeve drawn as a faint grey outline round the whole joint; one small soft warm glow on the tendon just under the kneecap, shining through the sleeve; three thin soft warm lines running down the thigh into it.\nIn frame: the leg model, the sleeve outline, the glow and lines; the rest plain grey. No lettering, labels or arrows.",
+ "script_line": "Not that spot. That's why ain't nothing worked. The pain is pressure. That's all it is.",
+ "face": false,
+ "room": false,
+ "body": false,
+ "refs": [],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT11",
+  "HT18",
+  "HT21",
+  "FP03",
+  "FP13"
+ ],
+ "anatomy": true,
+ "anat_style": "S3",
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user 2026-10-02: \"use the new pixar anatomy for all the anatomy / lets re do all the anatomy\" → the Pixar S3 normal anatomy (no muscle, the team’s locked pick) · kept off: the P-04a frame attached to set the light drew its kitchen table, hands and brace around the models → that frame dropped, the look in words only",
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "pixar_anatomy": true,
+ "medias": [],
+ "board_refs": []
+}

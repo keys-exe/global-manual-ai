@@ -1390,7 +1390,17 @@ PRODUCT_PHOTOS = {
     "back.webp": ("rear view: the band doubled through the slides and running round the back, two "
                   "black moulded keeper loops side by side at the centre of the band's outer face, the "
                   "peaks rising behind. Its inside reads plain black -- SUPERSEDED V7.49.33 by "
-                  "inner_face.jpg for the inside only; everything else in it stands"),
+                  "inner_face.jpg for the inside only. 2026-10-02 (user: 'the shape of the black and gray "
+                  "is not the same as the back_ref_v2'; LESSONS L37): its shell outline (a bowtie with the "
+                  "bottom edge curving up) does not match the confirmed back, back_ref_v2.png -- never use "
+                  "back.webp for the shell's shape or the inside, never edit it to fix them; take both from "
+                  "back_ref_v2.png. It still stands for the band, slides and keepers"),
+    "back_ref_v2_band.png": ("2026-10-02, the user's pick ('i want this'): the back with the band closed into a "
+                             "loop -- the shell and grey pad from behind, a chrome slide at each end, the band "
+                             "running round to two black keepers at its centre. THE image for the back on the closed "
+                             "strap; back_ref_v2.png stays the flat back. 2222x2160 (Higgsfield 2K upscale of the user's "
+                             "431x417 pick, shape unchanged; the original is retired/back_ref_v2_band_431px.png). Attach it "
+                             "only when the back is shown (FP20)"),
     "back_inner.jpg": ("V7.49.38, confirmed by the user: the studio reference of the inside, made from "
                        "inner_face.jpg (Kie nano-banana-pro, then one edit removing two loose band pieces). "
                        "Lying flat on seamless white, the grey grooved pad with its raised ridge in the black "

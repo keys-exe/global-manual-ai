@@ -1,0 +1,59 @@
+{
+ "beat": "M-05b",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"This strap sits right on that spot and takes the weight off.\": From this frame: the warm glow under the pad fades to a soft cool blue as the pad takes the load — one fade, about two seconds; camera R4 — slow single-axis push on a stabilised virtual rig. Under the strap's pad the warm glow fades into a soft cool blue that spreads down the tendon ribbon, once; the strap stays rigid and exactly as in the frame — black shell, two peaks, chrome slides, seated under the kneecap; the bones, the white tendon ribbons, the see-through peach outline and the pale grey backdrop stay exactly as in the frame; nobody in the frame, nobody speaks. Stylized 3D animated anatomy, exactly on model from the frame. The camera pushes in slowly on one straight axis, nothing more; no cut; the strap never bends.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_110750_c97a3ad0-ad6c-455a-959d-3e6594eb62cb.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "This strap sits right on that spot and takes the weight off.\"",
+ "motion_plan": "From this frame: the warm glow under the pad fades to a soft cool blue as the pad takes the load — one fade, about two seconds; camera R4 — slow single-axis push on a stabilised virtual rig",
+ "motion_confirmed": true,
+ "pace": "one fade",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image M-05b@v3A, job c97a3ad0-ad6c-455a-959d-3e6594eb62cb)"
+}

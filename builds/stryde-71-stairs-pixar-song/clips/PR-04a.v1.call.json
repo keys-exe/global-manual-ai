@@ -1,0 +1,60 @@
+{
+ "beat": "PR-04a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Her niece wears one when she runs track. She's twenty-two.\": From this frame: three jogging strides past the lens — about two strides per second; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay sealed and her jaw still from the first frame to the last, her face holding the expression of the frame — a silent clip, nobody speaks or sings. She jogs three easy strides across the frame on the red track, arms bent, a steady jog; on her right knee the strap stays rigid and exactly as in the frame — black shell, two peaks together at its middle, chrome slides, exactly one strap; the track lanes and the grass stay as in the frame. Stylized 3D animation, exactly on model from the frame. The camera stays where it is; no cut.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_113515_027d407e-ad54-4f9a-9594-32cb4c047765.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Her niece wears one when she runs track. She's twenty-two.",
+ "motion_plan": "From this frame: three jogging strides past the lens — about two strides per second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "about two strides per second",
+ "subject_motion": "travel",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18",
+  "FP21"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model / the strap redrawn",
+   "prevented_by": "exactly on model from the frame; the strap rigid"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel / one straight push / locked"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image v2)"
+}
