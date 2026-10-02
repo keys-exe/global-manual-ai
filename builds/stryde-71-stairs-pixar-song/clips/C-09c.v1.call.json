@@ -1,0 +1,62 @@
+{
+ "beat": "C-09c",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"She coming Sunday. She gon' walk up my stairs on her own.\": From this frame: two steps up, hands free — one step per second; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay sealed and her jaw still from the first frame to the last, her face holding the expression of the frame — a silent clip, nobody speaks or sings. Her sister climbs two easy steps toward the lens at one step per second, the ribboned box steady under her left arm, her right hand free and never on the rail, then she stands still; the silver hair and mustard shoulder in the near foreground stay still; the runner, rods and photo wall stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. The camera stays where it is; no cut.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_134650_2908e4c7-9b56-44fa-b52c-b2ccb78d07b0.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "She coming Sunday. She gon' walk up my stairs on her own.",
+ "motion_plan": "From this frame: two steps up, hands free — one step per second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one step per second",
+ "subject_motion": "travel",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "stairs",
+ "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
+ "pilot": "confirmed",
+ "pilot_ref": "HK-01a/HK-02a stairs clips (confirmed)",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18",
+  "FP21",
+  "FP22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model / the strap redrawn",
+   "prevented_by": "exactly on model from the frame; the strap rigid"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "the camera stays where it is / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image v1)"
+}

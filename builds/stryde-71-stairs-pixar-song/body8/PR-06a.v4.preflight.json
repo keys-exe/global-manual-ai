@@ -1,0 +1,76 @@
+{
+ "beat": "PR-06a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — No pills. No gel. No brace around my ankle by lunchtime. —: Keep this photo exactly as it is — the round wooden table, the white mug and its steam, the morning light, the view from above — and change only the strap's size: make it smaller, its true size. Image 1 is the photo. Image 2 is the strap.\nBeside the mug lies the strap of Image 2 copied exactly — a black shell, two matching peaks close together at the middle of its top edge, a chrome slide at each end — the normal strap as Image 2 shows it, a short stub of band past each slide, lying flat front up: 12 × 5 cm, its whole length only a little longer than the mug is tall and its height half the mug's, about a fifth of the frame wide.\nIn frame: the table, one mug, exactly one strap; the rest as Image 1.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "No pills. No gel. No brace around my ankle by lunchtime.",
+ "face": false,
+ "room": true,
+ "body": false,
+ "refs": [
+  {
+   "label": "PR-06a frame v5 (your pick) — the mug and strap on the table from above (the picture this edit keeps)",
+   "kind": "frame"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "bff302b8-80ad-40ab-815d-4ce947fe34f4",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user image Fix \"the strap is too big\" → an edit of the picked v5 frame: the strap at true size against the mug (§6A rule 2, L53); earlier Fixes in force: \"wrong product\", \"should be the normal and not the long strap\"",
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "one_offs": null,
+ "medias": [
+  "bff302b8-80ad-40ab-815d-4ce947fe34f4",
+  "7dcc7c34-651e-45ae-87af-ea18884ec474"
+ ],
+ "board_refs": [
+  {
+   "label": "PR-06a frame v5 (your pick) — the mug and strap on the table from above (the picture this edit keeps)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__PR-06a",
+   "role": "Image 1"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 2"
+  }
+ ]
+}
