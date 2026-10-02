@@ -1,0 +1,107 @@
+{
+ "beat": "R-04a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"right under her kneecap. Stryde.\": A tall 9:16 frame. Image 1 is the strap, Image 2 its back, Image 3 it worn front-on. Image 4 is the visitor — her knee, deep brown skin, rolled khaki trouser leg and teal blouse exactly as in Image 4. Image 5 is the style.\nExtreme close-up front-on at knee height, seated, the knee facing the lens, sharp on the strap: the visitor's bare right knee from Image 4, filling the frame, her khaki trouser leg rolled above it exactly as in Image 4; on it the strap of Image 1 copied exactly — a black shell, two pointed peaks round a notch, a chrome slide at each end — 12 × 5 cm, the shell half the frame wide, the kneecap's lower edge in its notch, the wordmark level; her right fingertip taps the top of the shell, four chunky fingers and a thumb, the teal sleeve at the top edge. Scale true to the set: the shell's top edge is level with the kneecap's lower edge.\nIn frame: the knee, the strap, one hand; every other surface plain.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "right under her kneecap. Stryde.",
+ "face": false,
+ "room": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "R-03b frame v1 A (confirmed) — Loretta's knee, skin, rolled khaki trouser and teal blouse (HT27)",
+   "kind": "frame"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user Fix \"this should be loreta same clothes too\" → her confirmed R-03b frame as Image 4 (skin, rolled khaki trouser, teal blouse), HT27",
+ "product": true,
+ "risk_class": "hand_product",
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "72a9acfd-439d-478b-916d-b4da8b6d2836",
+  "e5f263f1-108c-4084-bf56-035f7cf76409",
+  "179dfe8a-7ef0-4b2e-8ebd-f8558f58a15f",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/back.webp",
+   "role": "Image 2"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/worn_front.jpg",
+   "role": "Image 3"
+  },
+  {
+   "label": "R-03b frame v1 A (confirmed) — Loretta's knee, skin, rolled khaki trouser and teal blouse (HT27)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__R-03b",
+   "role": "Image 4"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 5"
+  }
+ ]
+}

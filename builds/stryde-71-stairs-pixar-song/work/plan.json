@@ -324,25 +324,14 @@
   },
   {
    "beat": "R-07a",
-   "phrase": "I did. Chile, the first step, I didn't even have to hold the rail.",
+   "phrase": "I did. Chile, the first step, I didn't even have to hold the rail. Not the second. Not the third. All the way down. Both feet. Forwards.",
    "key": "rail",
-   "max": 6,
+   "max": 10,
    "layout": "full",
    "in_cut": 98.25,
    "section": "The reveal and payoff — MUS-TURN",
-   "bars": 1.0,
+   "bars": 2.5,
    "clip": "renders/R-07a.mp4"
-  },
-  {
-   "beat": "R-07c",
-   "phrase": "Not the second. Not the third. All the way down. Both feet. Forwards.",
-   "key": "Forwards",
-   "max": 6,
-   "layout": "full",
-   "in_cut": 101.51,
-   "section": "The reveal and payoff — MUS-TURN",
-   "bars": 1.0,
-   "clip": "renders/R-07c.mp4"
   },
   {
    "beat": "M-01a",
