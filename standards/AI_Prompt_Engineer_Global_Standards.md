@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.91.0 — supersedes all prior versions.** *(V7.91.0: a build's anatomy varies in style and in what the picture holds — a team's look call leads, never the only look unless they say "only"; every anatomy beat names its scope (one joint close, both sides, walking, on the stairs) — §12A-1. V7.90.8: a video opened on the board plays with sound by default — §16A, new boards only. V7.90.7: a picture prompt's opener carries the line in dashes, never in speech marks — `For the line — … —:` (L46). V7.90.6: only the owner's Fix notes teach the system — boards mark each Fix with `imageFaultOwner` / `faultOwner`, the agent carries it as `noteOwner`, and `fix_patterns.py` counts only those; V7.90.5: learning from mistakes runs only on the owner's account — §34A, §34B)*
+**Version 7.91.1 — supersedes all prior versions.** *(V7.91.1: people with no cast sheet in a Pixar frame are drawn to the proportion ladder in words and copy a style frame that shows Pixar people full-body — §24O rule 10 (L52). V7.91.0: a build's anatomy varies in style and in what the picture holds — a team's look call leads, never the only look unless they say "only"; every anatomy beat names its scope (one joint close, both sides, walking, on the stairs) — §12A-1. V7.90.8: a video opened on the board plays with sound by default — §16A, new boards only. V7.90.7: a picture prompt's opener carries the line in dashes, never in speech marks — `For the line — … —:` (L46). V7.90.6: only the owner's Fix notes teach the system — boards mark each Fix with `imageFaultOwner` / `faultOwner`, the agent carries it as `noteOwner`, and `fix_patterns.py` counts only those; V7.90.5: learning from mistakes runs only on the owner's account — §34A, §34B)*
 
 ---
 
@@ -4434,7 +4434,9 @@ Every shot row names, and the prompt writes, in this order: `ING-MANIFEST` → `
 8. **Counted, simple sets.** Big readable shapes and a counted inventory (§6A rule 4): the number of steps, the frames on the wall and where they hang, what stands on the landing — set pieces named once and kept (HT22), nothing extra the eye has to sort.
 9. **The day's clothes never come from a sheet or the style frame** *(V7.88.1, HT26, L28)*. When a character's day outfit differs from the sheet's, the sheet goes in as a **face-and-hair crop** of its close-up panel (no clothes in it) and the prompt names the day's clothes; the style frame (rule 2) never shows a character of the shot in another day's outfit — pick a confirmed frame of hands, a set or that same day. On Nano Banana as on Seedance, a full sheet's outfit wins over the words "face only".
 
-**Checked by `preflight.py`** on every Mode 2, 3 and 5 image call: the render line (L10), no photograph words outside the negatives, a style reference attached (`kind: "style"`, or `first_frame: true` on the build's first beat image), and on a body shot the scale-against-the-set clause, the facing clause and, where hands show, the stylised hands. **Measured:** six real HK-03a prompts from stryde-71-stairs-pixar-song, written before this rule, fail it — none ties her size to the set or spells out the hands, and three of the six never say which way she faces (the style reference is a new attachment, so it is checked on new calls only). **Unverified:** the drop in Fix notes; the next Mode 2 build's board is the measurement.
+10. **People with no cast sheet are drawn to the ladder, from a frame with Pixar people in it** *(V7.91.1, L52 — user Fix "not a pixar" on two beats, 71 Stairs Pixar Song C-02a / C-02b: three church ladies, written in words, came back with realistic proportions — small heads on long thin bodies — because the only style frame attached showed hands on a table)*. One-off characters — extras, onlookers, a husband, a surgeon — have no sheet, so nothing in the call carries a Pixar body unless the prompt and the style frame do: the prompt gives their build in heads from the §24A ladder with the shape words ("each about 5.5 heads tall, big round heads, soft rounded bodies, large eyes, short limbs"), and the style reference (rule 2) is a confirmed frame of this build **showing full-body Pixar people** — still never a cast member of the shot in another day's outfit (rule 9). The call lists them as `one_offs` and marks that style ref `people: true`.
+
+**Checked by `preflight.py`** on every Mode 2, 3 and 5 image call: the render line (L10), no photograph words outside the negatives, a style reference attached (`kind: "style"`, or `first_frame: true` on the build's first beat image), and on a body shot the scale-against-the-set clause, the facing clause and, where hands show, the stylised hands; in Modes 2 and 5, with people the shot has no sheet for (`one_offs`, or a counted group of people in a new build), the heads-tall proportion clause and a style ref marked `people: true` (rule 10). **Measured:** six real HK-03a prompts from stryde-71-stairs-pixar-song, written before this rule, fail it — none ties her size to the set or spells out the hands, and three of the six never say which way she faces (the style reference is a new attachment, so it is checked on new calls only). **Unverified:** the drop in Fix notes; the next Mode 2 build's board is the measurement.
 
 ## 25. Style Lock Rule
 
@@ -9464,6 +9466,14 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 ---
 
+# CHANGELOG — V7.91.0 → V7.91.1 *(patch — the user's Fix notes, fixed at their source, §34B)*
+
+| § | Change |
+|---|---|
+| **24O** rule 10 | People with no cast sheet in a Mode 2 / 5 frame: their build in heads from the §24A ladder with the shape words, and a style frame that shows full-body Pixar people (`one_offs` on the call, `people: true` on that ref) |
+| Files | `preflight.py` (§24O rule 10 checks), both skills, CLAUDE.md, LESSONS L52 |
+
+**Origin:** user Fix notes 2026-10-02, stryde-71-stairs-pixar-song C-02a and C-02b — "not a pixar". New calls only; no confirmed render is redone.
 # CHANGELOG — V7.90.8 → V7.91.0 *(minor — the user's correction, a rule fixed at its source, §34B)*
 
 | § | Change |
