@@ -1,0 +1,147 @@
+89 rows -> 36 takes (Seedance calls)
+  HKA-T1     multi    HKA-SH01, HKA-SH02, HKA-SH03
+  HKA-T2     multi    HKA-SH04, HKA-SH05
+  HKB-T1     multi    HKB-SH01, HKB-SH02+, HKB-SH03, HKB-SH04, HKB-SH05
+  HKC-T1     multi    HKC-SH01, HKC-SH02, HKC-SH03+, HKC-SH04, HKC-SH05
+  HKE-T1     multi    HKE-SH01, HKE-SH02, HKE-SH03+, HKE-SH04, HKE-SH05
+  SC02-T1    multi    SC02-SH01, SC02-SH02
+  SC02-T2    one-take SC02-SH03, SC02-SH04
+  SC02-T3    multi    SC02-SH05, SC02-SH06
+  SC02-T4    single   SC02-SH07
+  SC03-T1    one-take SC03-SH01, SC03-SH02
+  SC03-T2    single   SC03-SH03
+  SC03-T3    single   SC03-SH04
+  SC03-T4    single   SC03-SH05
+  SC03-T5    multi    SC03-SH06, SC03-SH07, SC03-SH08, SC03-SH09, SC03-SH10+
+  SC04-T1    multi    SC04-SH01, SC04-SH02+, SC04-SH03, SC04-SH04, SC04-SH05
+  SC05-T1    multi    SC05-SH01, SC05-SH02, SC05-SH03, SC05-SH04+, SC05-SH05+, SC05-SH06, SC05-SH07+
+  SC06-T1    multi    SC06-SH01, SC06-SH02, SC06-SH03
+  SC07-T1    one-take SC07-SH01, SC07-SH02, SC07-SH03
+  SC07-T2    multi    SC07-SH04, SC07-SH05, SC07-SH06  [split: length]
+  SC08-T1    multi    SC08-SH01, SC08-SH02, SC08-SH03
+  SC08-T2    multi    SC08-SH04, SC08-SH05  [split: length]
+  SC09-T1    single   SC09-SH01
+  SC09-T2    single   SC09-SH02
+  SC09-T3    single   SC09-SH03
+  SC10-T1    single   SC10-SH01
+  SC10-T2    single   SC10-SH02
+  SC10-T3    single   SC10-SH03
+  SC10-T4    multi    SC10-SH04, SC10-SH05, SC10-SH06
+  SC10-T5    single   SC10-SH07
+  SC11-T1    multi    SC11-SH01, SC11-SH02
+  SC12-T1    multi    SC12-SH01, SC12-SH02, SC12-SH03, SC12-SH04, SC12-SH05+
+  SC12-T2    multi    SC12-SH06, SC12-SH07, SC12-SH08, SC12-SH09  [split: length]
+  SC13-T1    single   SC13-SH01
+  SC13-T2    single   SC13-SH02  [split: length]
+  SC13-T3    multi    SC13-SH03, SC13-SH04
+  SC13-T4    single   SC13-SH05
+VO-timed takes (V7.93.0): film runs 370s in 36 takes
+  HKA-T1      11s  (VO 0.0s + holds 10.03s)  conversation
+  HKA-T2       9s  (VO 6.6s + holds 2.27s)
+  HKB-T1      17s  (VO 6.6s + holds 10.22s)  conversation
+  HKC-T1      20s  (VO 6.6s + holds 13.14s)  conversation
+  HKE-T1      17s  (VO 5.22s + holds 10.87s)  conversation
+  SC02-T1      8s  (VO 0.0s + holds 7.45s)  conversation
+  SC02-T2      7s  (VO 6.34s + holds 0.0s)
+  SC02-T3      4s  (VO 0.0s + holds 2.86s)  conversation
+  SC02-T4      7s  (VO 6.68s + holds 0.0s)
+  SC03-T1      6s  (VO 5.88s + holds 0.0s)
+  SC03-T2      4s  (VO 2.9s + holds 0.0s)
+  SC03-T3      4s  (VO 1.04s + holds 0.0s)
+  SC03-T4      4s  (VO 1.66s + holds 0.0s)
+  SC03-T5     25s  (VO 13.32s + holds 10.96s)  conversation
+  SC04-T1     23s  (VO 15.24s + holds 7.64s)  conversation
+  SC05-T1     18s  (VO 9.16s + holds 8.03s)  conversation
+  SC06-T1     12s  (VO 3.1s + holds 8.7s)  conversation
+  SC07-T1     10s  (VO 6.64s + holds 2.5s)
+  SC07-T2     11s  (VO 8.32s + holds 2.0s)
+  SC08-T1     21s  (VO 0.0s + holds 20.97s)  conversation
+  SC08-T2     10s  (VO 0.0s + holds 9.54s)  conversation
+  SC09-T1      9s  (VO 8.12s + holds 0.0s)
+  SC09-T2      6s  (VO 5.7s + holds 0.0s)
+  SC09-T3      4s  (VO 3.0s + holds 0.0s)
+  SC10-T1      6s  (VO 5.92s + holds 0.0s)
+  SC10-T2      5s  (VO 4.36s + holds 0.0s)
+  SC10-T3      8s  (VO 7.66s + holds 0.0s)
+  SC10-T4      9s  (VO 3.88s + holds 4.53s)  conversation
+  SC10-T5      4s  (VO 3.82s + holds 0.0s)
+  SC11-T1      5s  (VO 0.0s + holds 4.53s)  conversation
+  SC12-T1     20s  (VO 6.76s + holds 13.23s)  conversation
+  SC12-T2     20s  (VO 15.46s + holds 4.12s)  conversation
+  SC13-T1      7s  (VO 6.58s + holds 0.0s)
+  SC13-T2     10s  (VO 9.96s + holds 0.0s)
+  SC13-T3      5s  (VO 0.0s + holds 4.54s)  conversation
+  SC13-T4      4s  (VO 3.11s + holds 0.0s)
+FAIL  POS   HKA-SH01  — take HKA-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   HKA-SH03  — take HKA-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   HKA-SH04  — take HKA-T2: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   HKA-SH05  — take HKA-T2: no end_pos — where everyone is on the last frame
+FAIL  POS   HKB-SH01  — take HKB-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   HKB-SH05  — take HKB-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   HKC-SH01  — take HKC-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   HKC-SH05  — take HKC-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   HKE-SH01  — take HKE-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   HKE-SH05  — take HKE-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC02-SH01  — take SC02-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC02-SH02  — take SC02-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC02-SH03  — take SC02-T2: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC02-SH04  — take SC02-T2: no end_pos — where everyone is on the last frame
+FAIL  POS   SC02-SH05  — take SC02-T3: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC02-SH06  — take SC02-T3: no end_pos — where everyone is on the last frame
+FAIL  POS   SC02-SH07  — take SC02-T4: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC02-SH07  — take SC02-T4: no end_pos — where everyone is on the last frame
+FAIL  POS   SC03-SH01  — take SC03-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC03-SH02  — take SC03-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC03-SH03  — take SC03-T2: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC03-SH03  — take SC03-T2: no end_pos — where everyone is on the last frame
+FAIL  POS   SC03-SH04  — take SC03-T3: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC03-SH04  — take SC03-T3: no end_pos — where everyone is on the last frame
+FAIL  POS   SC03-SH05  — take SC03-T4: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC03-SH05  — take SC03-T4: no end_pos — where everyone is on the last frame
+FAIL  POS   SC03-SH06  — take SC03-T5: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC03-SH10  — take SC03-T5: no end_pos — where everyone is on the last frame
+FAIL  POS   SC04-SH01  — take SC04-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC04-SH05  — take SC04-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC05-SH01  — take SC05-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC05-SH07  — take SC05-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC06-SH01  — take SC06-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC06-SH03  — take SC06-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC07-SH01  — take SC07-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC07-SH03  — take SC07-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC07-SH04  — take SC07-T2: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC07-SH06  — take SC07-T2: no end_pos — where everyone is on the last frame
+FAIL  POS   SC08-SH01  — take SC08-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC08-SH03  — take SC08-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC08-SH04  — take SC08-T2: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC08-SH05  — take SC08-T2: no end_pos — where everyone is on the last frame
+FAIL  POS   SC09-SH01  — take SC09-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC09-SH01  — take SC09-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC09-SH02  — take SC09-T2: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC09-SH02  — take SC09-T2: no end_pos — where everyone is on the last frame
+FAIL  POS   SC09-SH03  — take SC09-T3: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC09-SH03  — take SC09-T3: no end_pos — where everyone is on the last frame
+FAIL  POS   SC10-SH01  — take SC10-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC10-SH01  — take SC10-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC10-SH02  — take SC10-T2: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC10-SH02  — take SC10-T2: no end_pos — where everyone is on the last frame
+FAIL  POS   SC10-SH03  — take SC10-T3: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC10-SH03  — take SC10-T3: no end_pos — where everyone is on the last frame
+FAIL  POS   SC10-SH04  — take SC10-T4: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC10-SH06  — take SC10-T4: no end_pos — where everyone is on the last frame
+FAIL  POS   SC10-SH07  — take SC10-T5: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC10-SH07  — take SC10-T5: no end_pos — where everyone is on the last frame
+FAIL  POS   SC11-SH01  — take SC11-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC11-SH02  — take SC11-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC12-SH01  — take SC12-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC12-SH05  — take SC12-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC12-SH06  — take SC12-T2: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC12-SH09  — take SC12-T2: no end_pos — where everyone is on the last frame
+FAIL  POS   SC13-SH01  — take SC13-T1: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC13-SH01  — take SC13-T1: no end_pos — where everyone is on the last frame
+FAIL  POS   SC13-SH02  — take SC13-T2: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC13-SH02  — take SC13-T2: no end_pos — where everyone is on the last frame
+FAIL  POS   SC13-SH03  — take SC13-T3: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC13-SH04  — take SC13-T3: no end_pos — where everyone is on the last frame
+FAIL  POS   SC13-SH05  — take SC13-T4: no start_pos — where everyone is at frame 1, facing, hands
+FAIL  POS   SC13-SH05  — take SC13-T4: no end_pos — where everyone is on the last frame
+TAKES FAIL (72)

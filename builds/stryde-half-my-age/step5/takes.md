@@ -1,0 +1,63 @@
+### Takes
+
+One scene in one place is one take — one Seedance call (§24K part 5, V7.93.0); a row marked + plays inside the shot before. 89 rows in 57 takes.
+
+| Take | Kind | Rows | Length | Starts | Ends | Split |
+|---|---|---|---|---|---|---|
+| HKA-SH01 | single | HKA-SH01 | 5s | the daughter at the top of the station steps, hand reaching for the rail; Her three steps below, bag in hand | Her a step lower, the daughter still at the top by the rail |  |
+| HKA-SH02 | single | HKA-SH02 | 4s | Her three steps down, bag in her right hand, turning her head back up to her daughter | Her facing down the steps again, still walking, left hand free of the rail |  |
+| HKA-SH03 | single | HKA-SH03 | 4s | Her on the last steps, brisk, in profile | Her stepping in through the open train doors |  |
+| HKA-SH04 | single | HKA-SH04 | 4s | the daughter dropping into the seat opposite, catching her breath | the daughter seated, staring across the table at her mother |  |
+| HKA-SH05 | single | HKA-SH05 | 7s | Her settled by the window, bag on her lap | Her looking out of the window with a small private smile |  |
+| HKB-SH01 | single | HKB-SH01 | 4s | the daughter with shopping bags on both arms, by the glass lift and its queue | the daughter nodding at the lift |  |
+| HKB-SH02 | single | HKB-SH02 | 4s | Her three steps up the wide staircase, a full bag in each hand | Her climbing on, glancing back over her shoulder |  |
+| HKB-SH03 | single | HKB-SH03 | 4s | Her mid-climb, bags in hand, looking back over her shoulder | Her climbing on without breaking stride |  |
+| HKB-SH04 | single | HKB-SH04 | 4s | the daughter on the last steps, puffing, bags sagging | the daughter at the top step looking at her mother |  |
+| HKB-SH05 | single | HKB-SH05 | 7s | Her at the top rail, bags down by her feet | Her breathing easily, eyebrows up, the daughter beside her |  |
+| HKC-SH01 | single | HKC-SH01 | 6s | a commuter in his 20s by the stopped escalator, looking at his phone | the commuter looking up, groaning |  |
+| HKC-SH02 | single | HKC-SH02 | 4s | Her walking past the commuter toward the fixed stairs, handbag on her shoulder | Her foot on the first step, hands free |  |
+| HKC-SH03 | single | HKC-SH03 | 4s | Her low on the long fixed staircase, commuters bunching at the foot | Her well ahead, climbing at an even pace |  |
+| HKC-SH04 | single | HKC-SH04 | 4s | the daughter at the bottom of the stairs, coffee in hand | the daughter staring up after her mother |  |
+| HKC-SH05 | single | HKC-SH05 | 7s | Her on the last steps near the top | Her at the top, turned back to look down at her daughter |  |
+| HKE-SH01 | single | HKE-SH01 | 4s | Her kneeling on the living-room carpet picking up jigsaw pieces | Her kneeling, the jigsaw box in her hands |  |
+| HKE-SH02 | single | HKE-SH02 | 4s | the daughter coming through the doorway | the daughter reaching a hand down toward her mother |  |
+| HKE-SH03 | single | HKE-SH03 | 4s | Her kneeling with one foot flat, the box in her hands | Her standing at full height, box in hand, before the hand arrives |  |
+| HKE-SH04 | single | HKE-SH04 | 4s | the daughter with her hand outstretched | the daughter, hand still out, staring |  |
+| HKE-SH05 | single | HKE-SH05 | 6s | Her holding the jigsaw box by the mantel | the box on the mantel, Her giving her daughter a small look |  |
+| SC02-SH01 | single | SC02-SH01 | 6s | Her at the top of the stairs holding the newel post | Her still at the top, calling down |  |
+| SC02-SH02 | single | SC02-SH02 | 4s | the husband in the hall by the bottom step, two shopping bags at his feet | the husband with both bags in his hands |  |
+| SC02-SH03 | single | SC02-SH03 | 5s | Her at the top of the stairs facing up the flight, both hands on the banister | Her a few steps down, backwards, both feet together |  |
+| SC02-SH04 | single | SC02-SH04 | 4s | Her mid-flight, facing up the stairs, both hands on the banister | Her one step lower, both feet together, breathing out |  |
+| SC02-SH05 | single | SC02-SH05 | 4s | the husband in the kitchen with a mug of tea | the husband holding the mug out, not quite looking at her |  |
+| SC02-SH06 | single | SC02-SH06 | 4s | Her just in from the hall in her dressing gown, the husband holding out the mug | Her holding the tea, a small tight smile |  |
+| SC02-SH07 | single | SC02-SH07 | 7s | Her on the edge of the bed, hands in her lap | Her still on the bed edge, looking out of the window |  |
+| SC03-SH01 | single | SC03-SH01 | 4s | Her standing on the landing, the hinged brace on her knee | the brace slid down her shin |  |
+| SC03-SH02 | single | SC03-SH02 | 4s | the hinged brace bunched round her ankle above her slipper | the same, still |  |
+| SC03-SH03 | single | SC03-SH03 | 4s | Her lying on the physio couch, the physio's hands on her right knee | her knee bent by the physio's hands |  |
+| SC03-SH04 | single | SC03-SH04 | 4s | her hand on a blister strip beside a mug on the pine table | two painkillers pushed out on the table |  |
+| SC03-SH05 | single | SC03-SH05 | 4s | a gloved hand at the side of her right knee | the knee swabbed, the syringe out of focus |  |
+| SC03-SH06 | single | SC03-SH06 | 8s | Her at the open bottom drawer, the brace in her hand | the drawer pushed shut with her foot, still proud |  |
+| SC03-SH07-08 | one-take · conversation | SC03-SH07, SC03-SH08+ | 5s | the husband in the bedroom doorway, a hand on the frame; Her at the chest of drawers with her back to him | Her still facing the drawer, the husband in the doorway |  |
+| SC03-SH09-10 | one-take | SC03-SH09, SC03-SH10+ | 13s | Her on the bed edge, the phone to her ear | Her sitting still on the bed edge, the phone lowered to her lap |  |
+| SC04-T1 | multi | SC04-SH01, SC04-SH02 | 9s | Barbara dances in the middle of the parquet floor among the guests, mid-step, facing the camera, arms loose; the bride in ivory dances beside her on her left; the near-left table with its candle jar, glasses and flowers soft in the foreground; nobody at that table | Barbara has turned once on the beat and faces the camera again, knees bent, laughing, in the middle of the floor where she started; the bride still dancing just behind her |  |
+| SC04-T2 | one-take · conversation | SC04-SH03, SC04-SH04+, SC04-SH05+ | 15s | Her sits on the right-hand chair of the near-left table in clean profile facing RIGHT, toward the dance floor, her hands in her lap; her husband sits on the chair to her left, nearer the camera, his face in three-quarter turned toward her, his right hand round his pint on the cloth; Barbara dances soft in the background on the floor | a close shot of Her's face in profile facing RIGHT, still watching the dance floor, the fairy-light glow moving on her cheek; her husband's shoulder soft at the left edge of frame |  |
+| SC05-T1 | multi | SC05-SH01, SC05-SH02, SC05-SH03 | 8s | the wide view from the hall doorway: Her at the pine table with her five things laid out in front of her, pressing a tablet out of the strip; Barbara across the table, both hands round her mug, watching her | Barbara has set her mug down on the table and looks across at Her, her hands flat on the table either side of it; Her looks up at her, the tablet taken, the glass of water back on the table |  |
+| SC0506-T1 | multi · conversation | SC05-SH04, SC05-SH05+, SC05-SH06, SC05-SH07+, SC06-SH01+, SC06-SH02, SC06-SH03 | 22s | Barbara, seated across the table, has just put her mug down and is turning on her chair toward Her, her bare right knee still under the table edge, the strap on it just under the kneecap; Her watches from her chair | Barbara leans in across the table toward Her, forearms on the table, her face close and certain; Her's hand rests on the table with the strap lying in it, front side up |  |
+| SC07-T | multi | SC07-SH01, SC07-SH02, SC07-SH03+, SC07-SH04, SC07-SH05, SC07-SH06+ | 20s | on the landing at the top of the stairs, Her stands with the strap at the middle of her bare right shin, her right hand on it, about to slide it up | Her stands on the hall carpet at the foot of the stairs, turned back to look up the flight, the strap on her right knee; Barbara in the hall beside the newel post |  |
+| SC08-T1 | single | SC08-SH01 | 9s | both seated across the pine table in their chairs, seen over Her's right shoulder; Barbara across the table with the window behind her, her mug in front of her | both seated in their chairs across the table, Barbara looking at Her, her hands resting on the table either side of her mug |  |
+| SC08-T2 | multi · conversation | SC08-SH02, SC08-SH03 | 13s | both seated across the pine table; Barbara turned a little on her chair, her bare right knee with its strap just out from under the table edge | Barbara leaning in across the table toward Her, forearms on the wood, holding Her's eyes |  |
+| SC08-T3 | multi · conversation | SC08-SH04, SC08-SH05 | 10s | Her seated at the near end of the table looking down at the strap on her own right knee; Barbara across the table | Barbara's right hand resting flat on the table beside her mug after one tap, her eyes on Her | length |
+| SC09-T1 | single | SC09-SH01 | 9s | in a bright sports-medicine clinic a man in shorts stands in front of a low step box facing the camera, the strap on the front of his right knee; the doctor behind him with folded arms | the man stands back on the floor after the step, the strap unchanged on the front of his knee; the doctor nods once |  |
+| SC09-T2 | single | SC09-SH02 | 6s | on a sunny fairway Barbara's husband stands addressed to the ball, club behind it, knees softly bent, the strap on his right knee | he holds a full, balanced follow-through, club over his shoulder, watching the ball go, the strap still on his right knee |  |
+| SC09-T3 | single | SC09-SH03 | 4s | on a hard tennis court in sunshine Barbara's niece stands at the baseline, racket ready, knees bent, the strap on her right knee | she has hit a forehand on the run and settles back into her stance, the strap still on her right knee |  |
+| SC10-T1 | single | SC10-SH01 | 6s | Her sits on the edge of her bed, her right trouser leg rolled up above the knee, the strap low on her bare right shin | the strap seated under her kneecap and the navy trouser leg pulled down over it, smooth, nothing showing; her hand rests on her thigh |  |
+| SC10-T2 | single | SC10-SH02 | 5s | the pine table in the morning light, seen from straight above, with one white mug of tea on it and nothing else | the same: the pine table with one white mug of tea, steam rising a little |  |
+| SC10-T3 | single | SC10-SH03 | 8s | on the high-street pavement Her walks straight toward the camera in her camel trench, three younger women walking behind her the same way | Her walks on toward the camera, the three younger women several paces behind her and falling further back |  |
+| SC10-T4 | multi · conversation | SC10-SH04, SC10-SH05, SC10-SH06 | 9s | Her stands square in the checkout queue, a heavily loaded shopping basket in her right hand, weight even on both feet | Her holds a full shopping bag in each hand at the end of the checkout, a small smile, the cashier smiling back from her seat |  |
+| SC10-T5 | single | SC10-SH07 | 4s | Her walks up her street on the pavement toward her green front door, a full bag in each hand, her back to the camera | Her turns in at her own gate by the privet hedge, a full bag in each hand |  |
+| SC11-T1 | multi · conversation | SC11-SH01, SC11-SH02 | 5s | the husband in the leather armchair by the fire, newspaper up; Her in the doorway with two bags at her feet | Her in the doorway smiling a little, the husband looking at her, newspaper lowered |  |
+| SC12-T1 | multi · conversation | SC12-SH01, SC12-SH02, SC12-SH03 | 16s | Her comes in through the café door; her two friends at the window table | the three seated at the window table, Her looking at her copper-haired friend |  |
+| SC12-T2 | multi · conversation | SC12-SH04, SC12-SH05, SC12-SH06, SC12-SH07 | 9s | the three at the window table, the friend in the mustard jacket leaning forward | Her sitting back with her cup, both friends looking at her |  |
+| SC12-T3 | multi | SC12-SH08, SC12-SH09 | 16s | one strap lying on the café table between the cups | the three women laughing together at the window table, the strap between them | length |
+| SC13-T1 | multi | SC13-SH01, SC13-SH02 | 17s | the small black box with its lid on, on the pine table | Her looking out of the window, the open box with two straps on the table in front of her |  |
+| SC13-T2 | multi · conversation | SC13-SH03, SC13-SH04, SC13-SH05 | 8s | Her opening the green front door to her sister on the step | the sister two steps up the stairs, hands free at her sides, Her one step below her |  |
