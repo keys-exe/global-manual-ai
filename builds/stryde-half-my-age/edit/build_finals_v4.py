@@ -124,9 +124,9 @@ def final(h):
     subprocess.run([FF, "-y", "-hide_banner", "-loglevel", "error", "-i", str(hook), "-i", str(body), "-filter_complex",
                     "[0:v]setsar=1[v0];[1:v]setsar=1[v1];[0:a]aresample=48000[a0];[1:a]aresample=48000[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]",
                     "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-c:a", "aac", "-b:a", "256k", str(joined)], check=True)
-    a_len = min(pa, 119.6)
+    a_len = min(pa, 125.4)  # MUS-BODY-A v3 (re-timed to v4) falls silent at 125.4 s, a short breath before the product
     tracks = [(MUSIC / "MUS-HK_v1.mp3", 0.0, 0.0, hook_len, 0.5, 0.5),
-              (MUSIC / "MUS-BODY-A_v1.mp3", hook_len, 0.0, a_len, 0.5, 0.3),
+              (MUSIC / "MUS-BODY-A_v3.mp3", hook_len, 0.0, a_len, 0.5, 0.3),
               (MUSIC / "MUS-BODY-B_v1.mp3", hook_len + pa, 1.45, body_len - pa, 0.08, V.END_FADE)]
     args, fc, lab = ["-i", str(joined)], [], []
     for i, (p, at, inp, d, fi, fo) in enumerate(tracks, 1):
