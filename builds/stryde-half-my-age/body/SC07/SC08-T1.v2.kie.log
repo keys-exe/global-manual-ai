@@ -1,1 +1,11 @@
 {"taskId": "7b8e71c397c6d7b4e9da2ed80520a10c", "created": true}
+{
+  "taskId": "7b8e71c397c6d7b4e9da2ed80520a10c",
+  "state": "success",
+  "credits": 756.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/seedance/1790947492294-2q6hbriflh2.mp4"
+  ],
+  "saved": "body/SC07/SC08-T1_v2.mp4"
+}
