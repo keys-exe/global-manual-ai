@@ -1,0 +1,86 @@
+{
+ "beat": "PR-04a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Her niece wears one when she runs track. She's twenty-two.\": A running track, tall 9:16. Image 1 is the strap, Image 2 it worn. Image 3 is the style.\nMedium-full shot at eye level from a three-quarter front angle, she jogs toward frame left past the lens, sharp on her: a young Black woman of twenty-two, hair in a high puff, white running top, black shorts, white trainers, mid-stride on a red track with white lane lines — her right foot just landing, left foot lifting behind, arms bent at her sides, four chunky fingers and a thumb on each loose hand, a bright closed-mouth smile, looking ahead down the lane; on her bare right knee the strap of Image 1 copied exactly — a black shell, two pointed peaks round a notch, a chrome slide at each end — 12 × 5 cm, a fifth of the frame wide. Scale true to the set: she fills two thirds of the frame height, her stride as long as a lane is wide.\nIn frame: her, two lanes, the infield grass soft behind; no other runners.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "Her niece wears one when she runs track. She's twenty-two.",
+ "face": true,
+ "room": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "e5f263f1-108c-4084-bf56-035f7cf76409",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/worn_front.jpg",
+   "role": "Image 2"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 3"
+  }
+ ]
+}
