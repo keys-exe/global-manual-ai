@@ -782,3 +782,34 @@ What moved to Old 2:
 **Waiting on:**
 - Picks on M-06a, PR-03a, PR-05b, PR-06a and the five Act 6 pairs.
 - Confirm or Fix on the six new clips.
+
+### 2026-10-02 ~13:00–13:40 UTC — "fix those and generate the next act" (Act 7)
+
+**Fixes:**
+- **M-05a clip v2** (Fix "should showcase the patellartendon is the one getting that animatuon"), 5 s: the glow now runs down the patellar tendon ribbon and pulses on it. The thigh lines stay still. Clip v1 is on Old 3.
+- **PR-05b image v3 pair** (Fix "should show productive broll not showing the product"):
+  - An edit of her R-07a v8 A staircase. She comes down facing the lens with a basket of folded towels, in a pale-yellow top and navy trousers, the strap hidden under them.
+  - Act map row changed to L-N-STAIRS, CONCEALED, one step toward the lens (pin waived per the user's 2026-10-01 words). Card motion plan updated to match.
+- **PR-06a image v3 pair** (Fix "should be the normal and not the long strap"): the normal strap lies by the mug with only a short stub of band past each slide. B shows her lap at the bottom edge, as the P-04a frame does. FP22 is amended and L48 written (below).
+
+**Clips on the picks** (Kling 3.0, 1080p, silent; To check):
+- L-01a, L-01b, L-02a, L-02b, L-03a.
+- M-06a v2: the clip on the new v9 frame. Clip v1, made from the old v2 frame, is on Old 3.
+- PR-03a. Flagged: mid-clip the golfer snaps back to address the ball and swings again, which reads as a jump.
+
+**Act 7 (C-01a, C-02a, C-02b, C-03b, C-04a, C-05a), first pairs To check:**
+- C-02a and C-02b are edits of P5. C-04a is an edit of P7. C-05a is an edit of P04A with the cheap copies.
+- C-03b is Pixar anatomy S3 (`pixar_anatomy: true`, the M-05b look as style).
+- C-02b v1 A and B each printed a film-style title ("Storybook in the Future", "PROUD STEPS"). Both were kept off (L16), copied to Old 3, and re-rendered once with the no-lettering clause. Flagged: the new C-02b A shows four watching ladies instead of three.
+
+**Old 3 board created:** Old 2 hit its 1 GB store. https://claude.ai/artifact/NzdjptHWkDLzvNkmMzn78k
+- `boards.old3` is set on the build doc on every board.
+- 13 replaced or unused files were moved to Old 3 (copies confirmed) and deleted from Current.
+
+**System (owner account):** FP22 is amended. A loose strap is written as "only a short stub of black band past each slide, not stretched long, never coiled", never "the band laid out straight" (L48).
+
+**Balances:** Higgsfield 5949.65 · Kling 37333.
+
+**Waiting on:**
+- Picks on PR-05b, PR-06a and the six Act 7 pairs.
+- Confirm or Fix on the eight new clips: M-05a, L-01a, L-01b, L-02a, L-02b, L-03a, M-06a, PR-03a.
