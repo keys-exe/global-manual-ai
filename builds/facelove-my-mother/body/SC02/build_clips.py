@@ -38,14 +38,14 @@ PROMPT = " ".join([
     "The action carries straight across every cut: each shot picks up the movement exactly where the last one left it, and everyone is where the last shot left them. "
     f"SHOT 1, [0s-3s]: MEDIUM, three-quarter at eye level from Paula's side of the table, Susan, {S1.SUSAN_ID}, in {S1.SUSAN_D1}, in her seat exactly as @video1 shows it, "
     "Greg's navy sleeve and his hand round his drink at the right edge of frame: she stands, folds her napkin once and sets it on the table beside the cake. "
-    f"SHOT 2, [3s-6s]: MEDIUM in profile at eye level at the drinks table: {FA_ID} and {FB_ID} stand with their heads close together, glasses in hand; "
+    f"SHOT 2, [3s-6s]: MEDIUM WIDE at eye level, three-quarter, a few metres back from the drinks table, both women seen from the knees up with the drinks table and the party around them: {FA_ID} and {FB_ID} stand side by side about half a metre apart, glasses in hand, turned a little toward each other; Friend A leans in only slightly to keep her voice down; their heads stay well apart at a normal talking distance and never touch; "
     f"Friend A says it low, just to Friend B: {L006} Behind them, soft and out of focus, Susan walks past toward the house, one step a second. "
     "SHOT 3, [6s-11s]: MEDIUM, waist-up, at eye level beside the long table: Susan walks into the locked frame from the right and across it toward the house end of the yard, "
     "one step a second, four steps; Friend B's voice, unseen, carries over her; on 'stop trying' her eyes flick once to the side and she keeps walking, never breaking stride. "
     "SHOT 4, [11s-15s]: WIDE from low on the lawn behind her: Susan climbs the three wooden deck steps, opens the glass-paned back door, goes in and closes it behind her. "
     "Each cut lands on a completed action. Nobody looks into the lens. Last frame: " + END + ".",
     S1.F2, S1.PHYS,
-    "LISTENING: Friend B takes Friend A's line with a small wince and answers it; Susan hears it and does not turn her head; nothing on any face arrives before the word that causes it.",
+    "LISTENING: Friend B takes Friend A's line with a small wince, eyes down at her glass, and answers it without leaning closer; Susan hears it and does not turn her head; nothing on any face arrives before the word that causes it.",
     S1.state("SUSAN", "the dusty-blue blouse, composed, her face very still after the toast", "standing and walking away"),
     "FOCUS: SHOT 1 her hands and the napkin sharp; SHOT 2 the friends' eyes sharp, Susan soft behind; SHOT 3 Susan's eyes sharp; SHOT 4 deep. The blur is optical: soft and round, never smeared.",
     S1.dialogue("Friend A", L006, VOICE_C5, "Greg has just humiliated his wife in front of everyone. Head close to Friend B, low.",
@@ -55,7 +55,7 @@ PROMPT = " ".join([
                 "says the unkind thing kindly. Opens hesitant on 'I mean, though'; turns on 'stop trying'; exits on 'sad to watch', soft. Stress on 'stop'.",
                 "soft, gentle, hushed, continuing at Friend A's level.", "she believes it, which leaks only through how gentle it sounds."),
     S1.AUD,
-    S1.negs(S1.NEG_EQUIP, S1.NEG_MORPH, S1.NEG_CAKE, "no Greg's face in frame, no Susan speaking, no Susan crying, no tears, no running, no one following Susan",
+    S1.negs(S1.NEG_EQUIP, S1.NEG_MORPH, S1.NEG_CAKE, "no Greg's face in frame, no Susan speaking, no Susan crying, no tears, no running, no one following Susan, no foreheads touching, no heads pressed together, no faces close to the lens, no tight close-up on the friends",
             S1.NEG_SEAT, S1.NEG_FILM, S1.NEG_SCENECUT, S1.NEG_DRAMA, S1.NEG_SOUND)])
 
 FILES = ["cast/N-SUSAN_v1.png", "cast/C5-FRIEND-A_v1.png", "cast/C6-FRIEND-B_v1.png", "cast/C1-GREG_v1.png", "plates/L-YARD_v1.png",
@@ -69,10 +69,13 @@ if __name__ == "__main__":
             "resolution": "720p", "aspect_ratio": "9:16", "start_image": None, "ingredients_approved": True,
             "files": FILES + list(AUDIO_MEDIA), "audios": list(AUDIO_MEDIA), "generate_audio": True,
             "dialogue": L006 + " " + L007, "script_line": L006 + " " + L007, "pace": "unhurried", "subject_motion": "travels", "prefer_multi_shots": "false",
-            "generation": 1, "user_go": "chat: \"CONFIRMED ALL VIDEO. PROCEED\" (user, 2026-10-02) — SC01-T1..T4 confirmed on the board",
+            "generation": 2, "user_go": "board Fix (user, 2026-10-02): REVISE THE SCENE OF FREIND A AND FRIEND B DONT MAKE  THE FACE TOO CLOSE",
+            "fault": "REVISE THE SCENE OF FREIND A AND FRIEND B DONT MAKE  THE FACE TOO CLOSE",
+            "fix_note": "prompt fault: SHOT 2 asked for a MEDIUM in profile with the friends standing 'with their heads close together', so the model pressed their foreheads almost together in a tight two-shot → SHOT 2 now a MEDIUM WIDE from a few metres back, knees up, the two side by side half a metre apart, heads well apart at a normal talking distance, Friend A only leaning in slightly; negatives for touching heads and tight close-ups",
             "risks": [{"risk": "Susan's seat drifts from SC01", "prevented_by": "@video1 = SC01-T2, SEAT clause, NEG_SEAT"},
                       {"risk": "the voices swap or Susan speaks", "prevented_by": "Audio1 Friend A's own line, Audio2 Friend B's own line; THE EXCHANGE names who says what; 'no Susan speaking'"},
-                      {"risk": "the camera follows her walk", "prevented_by": "F2 locked for the whole take, she walks through the frame"}],
+                      {"risk": "the camera follows her walk", "prevented_by": "F2 locked for the whole take, she walks through the frame"},
+                      {"risk": "the friends' faces pressed close together / too close to the lens (v1 fault)", "prevented_by": "SHOT 2 MEDIUM WIDE, half a metre apart, heads never touch, negatives"}],
             "scene": 2, "title": "Scene 2 · T1 — the walk-out: napkin down, the whisper, the deck door (SH01–SH04)",
             "taste": ["HT17", "HT18", "HT22", "HT23", "HT25"], "jobs": JOBS, "video_jobs": [S1.T2_JOB],
             "audio_media": list(AUDIO_MEDIA.values())}

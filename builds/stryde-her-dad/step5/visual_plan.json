@@ -1,0 +1,1611 @@
+{
+ "build": "stryde-her-dad",
+ "hooks": [
+  {
+   "hook": 1,
+   "line": "Sue! SUE!",
+   "pick": "A",
+   "concepts": [
+    {
+     "id": "A",
+     "frame1": "high wide: Sue lifting a plant into the boot, the van's reversing lights coming on behind her, Tony ten feet off with a pot in his hands",
+     "stakes": "she can't see it; he can — and can't reach her",
+     "where": "a garden-centre car park on a grey Saturday",
+     "turn": "his shout, then his knee goes on the first step",
+     "score": {
+      "stop": 2,
+      "line": 2,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 2,
+      "makeable": 2
+     }
+    },
+    {
+     "id": "B",
+     "frame1": "Tony's face, mid-shout, the pot already falling from his hands",
+     "stakes": "something terrible behind the camera",
+     "where": "the car park, tight on him",
+     "turn": "cut wide: the van, the lad running",
+     "score": {
+      "stop": 2,
+      "line": 2,
+      "feel": 1,
+      "specific": 2,
+      "fresh": 2,
+      "makeable": 1
+     }
+    },
+    {
+     "id": "C",
+     "frame1": "the van's back doors filling the frame, rolling toward the lens, a woman's legs at the boot beyond",
+     "stakes": "a body about to be hit",
+     "where": "the car park at bumper height",
+     "turn": "the shout off-screen",
+     "score": {
+      "stop": 2,
+      "line": 1,
+      "feel": 2,
+      "specific": 1,
+      "fresh": 2,
+      "makeable": 1
+     }
+    },
+    {
+     "id": "D",
+     "frame1": "the cracked pot on the wet tarmac, soil spilling, a man's knee coming down beside it",
+     "stakes": "a fall — whose?",
+     "where": "the car park at ground level",
+     "turn": "the lad's 'You're alright' over it",
+     "score": {
+      "stop": 1,
+      "line": 2,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 2,
+      "makeable": 2
+     }
+    },
+    {
+     "id": "E",
+     "frame1": "the lad's face, close, asking 'Is your dad alright?'",
+     "stakes": "the humiliation first, the accident after",
+     "where": "the car park, after the near miss",
+     "turn": "rewind to the van",
+     "score": {
+      "stop": 1,
+      "line": 2,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 1,
+      "makeable": 1
+     }
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "group": "SC01",
+   "role": "problem",
+   "idea": "the one moment his body fails her, in front of a younger man",
+   "rows": [
+    {
+     "beat": "SC01-SH01",
+     "line": "(the van starts back)",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "high wide: Sue at the boot, the van rolling back at her, Tony ten feet off",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the busy car park, trolleys and shoppers, the van among them",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "POV",
+       "picture": "Tony's eyes: the van and Sue lining up",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC01-SH03",
+     "line": "(his knee goes)",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "low profile: his first step, the knee buckles, the pot cracks",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "macro on the knee hitting wet tarmac",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Tony falling over, wide",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH04",
+     "line": "(the lad gets there)",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "the lad sprints past the man on the ground and pulls her clear",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "shoppers turning at the sound",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Sue's face as she's pulled",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH06b",
+     "line": "He looked like he was going to go over.",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "past the lad's shoulder: Tony still down on one knee, ten feet away",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Sue glancing at Tony",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the lad pointing",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH08",
+     "line": "I'm her husband. And I couldn't get ten feet to my own wife.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "low close on Tony on one knee, watching them; his inner voice over his face",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the cracked pot beside his hand",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "the ten feet of tarmac between them, wide",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC02",
+   "role": "scene",
+   "idea": "two people side by side who can't look at each other",
+   "rows": [
+    {
+     "beat": "SC02-SH01",
+     "line": "He has no idea what I saw from behind that van.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "profile: Sue at the wheel, key not turned, staring ahead",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "her hand frozen on the key",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "POV",
+       "picture": "the windscreen view of the garden centre",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC02-SH11",
+     "line": "(the silence after)",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "from the back seat: two heads, the windscreen, the garden centre",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "his dirty trouser knee",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Tony's jaw",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC03",
+   "role": "problem",
+   "idea": "the life he's been reduced to, room by room",
+   "rows": [
+    {
+     "beat": "SC03-SH01",
+     "line": "Sixty-four. Thirty years laying patios.",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "the drawer packed with knee supports that won't shut, his palm forcing it",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Tony getting dressed",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "a sleeve's frayed edge",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC03-SH02",
+     "line": "I've knelt on every drive in this street.",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "high behind: down his own stairs sideways, both hands on the rail",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "a photo of him laying a drive young",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 0
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a driveway",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC03-SH03",
+     "line": "Now I can't get across a car park to my own wife.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "low from the hall: his face tight on each step",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "his feet meeting on each step",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the street outside through the door glass",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC03-SH04",
+     "line": "Now I wait in the car while she loads the boot.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Tony in the passenger seat; behind him through the rear window Sue lifting the bags alone",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "shopping bags",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Sue's look at him",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC04",
+   "role": "problem",
+   "idea": "told it's normal",
+   "rows": [
+    {
+     "beat": "SC04-SH06",
+     "line": "(after 'That works for most people.')",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "high wide: Tony small in the patient chair, alone with his knee, the GP typing",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the leaflet rack",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "his hand on his knee",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    }
+   ]
+  },
+  {
+   "group": "SC05",
+   "role": "mechanism",
+   "idea": "the one spot, found under his own fingers, and the strap that sits on it",
+   "rows": [
+    {
+     "beat": "SC05-SH01",
+     "line": "(Gary carries a slab alone)",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "low wide: a man of 70 carrying a paving slab on his own",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the busy yard",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Gary's face",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH12",
+     "line": "There.",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "straight down onto the knee: his two fingers pressing the spot just under the kneecap",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Tony's wince",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "MECHANISM",
+       "picture": "an anatomy cut-away",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 0,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH15b",
+     "line": "A spot the size of a coin.",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "his forefinger resting on the spot, the coin-sized patch under it",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "a coin in Gary's fingers",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "MECHANISM",
+       "picture": "the tendon under load",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 0,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH22",
+     "line": "Sits right on that spot, two centimetres under the kneecap.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "front-on at knee height: the strap on Gary's knee, the notch at the kneecap's edge, his fingers tapping it",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PROOF",
+       "picture": "Gary squatting with it on",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the strap in its box",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC05-SH27",
+     "line": "(after 'You'll know in a minute.')",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "high wide: Gary back to work with a slab, Tony alone on the pallet looking at his knee",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Tony's face",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the yard going on around them",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC06",
+   "role": "scene",
+   "idea": "the doubt — 'you've said that before'",
+   "rows": [
+    {
+     "beat": "SC06-SH01",
+     "line": "What's that?",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "Sue at the table with the strap flat in her palm, looking up at him",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the strap on the pile of post",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Tony caught in the doorway",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    }
+   ]
+  },
+  {
+   "group": "SC07",
+   "role": "after",
+   "idea": "the change others see before she does",
+   "rows": [
+    {
+     "beat": "SC07-SH01",
+     "line": "First time in two years, I came down my own stairs forwards.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "the same high angle as SC03: forwards, hands off the rail",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PROOF",
+       "picture": "his feet one per step",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the staircase",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC07-SH02",
+     "line": "I didn't tell her.",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "low from the hall: coming down into the light, the strap on his knee",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "his private look",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the kitchen door shut",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC07-SH03",
+     "line": "You're quick today, Tone.",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "Tony striding across the yard with a slab, the labourer calling after him",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the yard at work",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "the labourer grinning",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC07-SH04",
+     "line": "Didn't recognise you from the back.",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "tracking beside him down his street, a neighbour turning at her gate",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PROOF",
+       "picture": "his stride from behind",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the neighbour",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC07-SH05",
+     "line": "That was the first time I felt it.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "close on Tony walking, the corner of his mouth lifting, a look he keeps to himself",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the post box he passes",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "his boots on the pavement",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC08",
+   "role": "after",
+   "idea": "the man she married, back on his knees in his trade",
+   "rows": [
+    {
+     "beat": "SC08-SH01",
+     "line": "Tony…",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "high past Sue in the doorway: Tony kneeling on the patio he's laying, tapping a flag level",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "the mallet on the flag",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the garden",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC08-SH02",
+     "line": "(Sue watching)",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Sue in the doorway, her eyes filling",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "her hand on the door frame",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "POV",
+       "picture": "her view of him",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC08-SH03",
+     "line": "The man on his knees in that garden was someone I used to know.",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "low wide pulling back: him kneeling, her in the doorway, the whole patio",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PRODUCT",
+       "picture": "the strap on the kneeling knee",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "the empty half of the patio",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    }
+   ]
+  },
+  {
+   "group": "SC09",
+   "role": "after",
+   "idea": "the same car park, the opposite outcome",
+   "rows": [
+    {
+     "beat": "SC09-SH03",
+     "line": "(a car backs out at her)",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "the same high wide as the hook: Sue at the boot, a car reversing, Tony ten feet off",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "the car's lights",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the busy car park",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC09-SH04",
+     "line": "(three strides)",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "the same low profile as the hook: three strides, his arm round her, no fall",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "his boots on the tarmac",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Sue looking up at him",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC09-SH07",
+     "line": "(25 kilos into the boot)",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "low: he swings the compost bag into the boot in one move",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "the bag landing",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a garden centre trolley",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC09-SH08",
+     "line": "(the kiss)",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "in the car: she leans over and kisses his cheek, he keeps his eyes on the windscreen, pleased",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "Tony at the wheel now",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the car pulling out",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC10",
+   "role": "offer",
+   "idea": "it's not your age — it's one spot, and this sits on it",
+   "rows": [
+    {
+     "beat": "SC10-SH01",
+     "line": "If your knees won't come right… It's not your age.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "front-on at knee height in the garden: the strap on his kneeling knee, the sun on the shell",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PROOF",
+       "picture": "him standing up off the patio",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a knee",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC10-SH02",
+     "line": "It goes on under your trousers and nobody knows it's there.",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "from behind: Tony in jeans walking up his street, just a man",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "a jeans leg",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "PRODUCT",
+       "picture": "the strap under rolled jeans",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC10-SH03",
+     "line": "Buy one, get one free right now. One for each knee.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "the open box on the kitchen table: two straps side by side",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a price tag",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "two knees",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  }
+ ]
+}

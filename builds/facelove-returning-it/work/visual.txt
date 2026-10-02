@@ -1,0 +1,2 @@
+usage: script_lines.py [-h] [--out OUT] [--visual VISUAL] script
+script_lines.py: error: argument --visual: expected one argument
